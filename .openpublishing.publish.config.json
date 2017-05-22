@@ -2,7 +2,52 @@
   "build_entry_point": "docs",
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
-  "docsets_to_publish": [],
+  "docsets_to_publish": [
+    {
+      "docset_name": "docs",
+      "build_source_folder": "docs",
+      "build_output_subfolder": "vsdocsdocs",
+      "locale": "tr-tr",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "scripting-docs",
+      "build_source_folder": "scripting-docs",
+      "build_output_subfolder": "scripting-docs",
+      "locale": "tr-tr",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "mac",
+      "build_source_folder": "mac",
+      "build_output_subfolder": "mac",
+      "locale": "tr-tr",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    }
+  ],
   "notification_subscribers": [],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
@@ -12,6 +57,15 @@
       "url": "https://github.com/Microsoft/templates.docs.msft.tr-tr",
       "branch": "master",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/Microsoft/vsdocs",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
     }
   ],
   "need_generate_pdf_url_template": false

@@ -4,20 +4,6 @@
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
-      "docset_name": "docs",
-      "build_source_folder": "docs",
-      "build_output_subfolder": "vsdocsdocs",
-      "locale": "tr-tr",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "scripting-docs",
       "build_source_folder": "scripting-docs",
       "build_output_subfolder": "scripting-docs",

@@ -128,7 +128,7 @@
 # [Generate unit tests for your code with IntelliTest](codequality/generate-unit-tests-for-your-code-with-intellitest.md)
 # [C6246](codequality/c6246.md)
 # [C26117](codequality/c26117.md)
-# [CA1804: Remove unused locals](codequality/ca1804--remove-unused-locals.md)
+.# [CA1804: Remove unused locals](codequality/ca1804--remove-unused-locals.md)
 # [CA1031: Do not catch general exception types](codequality/ca1031--do-not-catch-general-exception-types.md)
 # [CA2137: Transparent methods must contain only verifiable IL](codequality/ca2137--transparent-methods-must-contain-only-verifiable-il.md)
 # [C6331](codequality/c6331.md)

@@ -1,0 +1,1 @@
+Internet Explorer 8 standartları modu, Internet Explorer 9 standartları modu, Internet Explorer 10 standartları modu, Internet Explorer 11 standartları modu ve win8_appname_long uygulamaları

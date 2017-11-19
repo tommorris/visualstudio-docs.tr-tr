@@ -1,0 +1,54 @@
+---
+title: "VsgDbg sınıfı | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: 6722263c-ccef-40c7-a0ae-87a863fbab00
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f0ee36596521f26ff4dd948e697640d0c82d796f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/31/2017
+---
+# <a name="vsgdbg-class"></a>VsgDbg Sınıfı
+Grafik tanılama uygulama bileşeninin programsal denetim için bir arabirimi temsil eder.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```C++  
+class VsgDbg;  
+```  
+  
+## <a name="members"></a>Üyeler  
+ `VsgDbg` Sınıfı, aşağıdaki üyeleri destekler.  
+  
+### <a name="public-constructors"></a>Ortak Oluşturucular  
+  
+|Ad|Açıklama|  
+|----------|-----------------|  
+|[VsgDbg::VsgDbg (oluşturucu)](vsgdbg-vsgdbg-constructor.md)|Bir örneğini oluşturur `VsgDbg` sınıfı ve isteğe bağlı olarak etkin olarak yakalamak ve grafik bilgilerini kaydetmek için grafik tanılamayı uygulama bileşeninin hazırlar.|  
+|[VsgDbg:: ~ VsgDbg (yok edici)](vsgdbg-tilde-vsgdbg-destructor.md)|Örneği bozar `VsgDbg` sınıfı.|  
+  
+### <a name="public-methods"></a>Ortak Yöntemler  
+  
+|Ad|Açıklama|  
+|----------|-----------------|  
+|[AddMessage](addmessage.md)|Özel ileti grafik tanılama HUD (Head yukarı görüntüle) ekler.|  
+|[BeginCapture](begincapture.md)|İle sona erer yakalama aralığı başlar `EndCapture`.|  
+|[CaptureCurrentFrame](capturecurrentframe.md)|Grafik günlük dosyası için geçerli çerçeve kalanı yakalar.|  
+|[Kopyalama (programlı yakalama)](copy-programmatic-capture.md)|Etkin Grafikler (.vsglog) günlük dosyasının içeriğini yeni bir dosyaya kopyalar.|  
+|[EndCapture](endcapture.md)|Başlatıldığı yakalama zaman aralığı sona `BeginCapture`.|  
+|[Init](init.md)|Etkin olarak yakalamak ve grafik bilgilerini kaydetmek için grafik tanılamayı uygulama bileşeninin hazırlar.|  
+|[ToggleHUD](togglehud.md)|Grafik tanılama HUD katmana açmak veya kapatmak değiştirir.|  
+|[Başlatmış](uninit.md)|Grafik günlük dosyası sonlandırır kapatılır ve uygulama, etkin olarak grafik bilgilerini kaydetme sırasında kullanılan kaynakları serbest bırakır.|  
+  
+## <a name="remarks"></a>Açıklamalar  
+ `VsgDbg` Sınıfı, grafik tanılama özellikleri programlı olarak denetlemek için kullanabileceğiniz bir arabirimi temsil eder. Bazı özellikler bile, aktif olarak yakalama ve grafik bilgilerini kaydetme kullanabilirsiniz; Bu içerir `AddMessage` üye işlevini ve `ToggleHUD` üye işlevi. Bir üye işlevleri başlatmak veya etkin grafik bilgilerini yakalama durdurmak için grafik tanılamayı uygulama bileşeninin hazırlama ya da uygulama etkin olarak yakalama ve grafik bilgilerini bir grafik günlük dosyasına kaydetme sırasında çağrılması gerekir.

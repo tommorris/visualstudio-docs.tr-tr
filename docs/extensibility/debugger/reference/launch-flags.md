@@ -1,0 +1,74 @@
+---
+title: LAUNCH_FLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: LAUNCH_FLAGS
+helpviewer_keywords: LAUNCH_FLAGS enumeration
+ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 69942eef506f5c95f2d7d1b37b4fb439fcbca5f2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/31/2017
+---
+# <a name="launchflags"></a>LAUNCH_FLAGS
+Hata ayıklama başlatma bayrakları belirtir.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```cpp  
+enum enum_LAUNCH_FLAGS {   
+   LAUNCH_DEBUG      = 0x0000,  
+   LAUNCH_NODEBUG    = 0x0001,  
+   LAUNCH_ENABLE_ENC = 0x0002,  
+   LAUNCH_MERGE_ENV  = 0x0004  
+};  
+typedef DWORD LAUNCH_FLAGS;  
+```  
+  
+```csharp  
+public enum enum_LAUNCH_FLAGS {   
+   LAUNCH_DEBUG      = 0x0000,  
+   LAUNCH_NODEBUG    = 0x0001,  
+   LAUNCH_ENABLE_ENC = 0x0002,  
+   LAUNCH_MERGE_ENV  = 0x0004  
+};  
+```  
+  
+## <a name="members"></a>Üyeler  
+ LAUNCH_DEBUG  
+ Hata ayıklama işlemi başlatır.  
+  
+ LAUNCH_NODEBUG  
+ Hata ayıklama olmadan işlem başlatır.  
+  
+ LAUNCH_ENABLE_ENC  
+ KULLANIM, KULLANMAYIN.  
+  
+ LAUNCH_MERGE_ENV  
+ İşlem başlatır ve başlatan konak ortamıyla birleştirir.  
+  
+## <a name="remarks"></a>Açıklamalar  
+ Bu değerler için bağımsız değişken olarak geçirilen [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) yöntemi.  
+  
+ Bu bayrakların bit ile birleştirilebilir `OR`.  
+  
+## <a name="requirements"></a>Gereksinimler  
+ Başlık: msdbg.h  
+  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
+  
+ Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Numaralandırmalar](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

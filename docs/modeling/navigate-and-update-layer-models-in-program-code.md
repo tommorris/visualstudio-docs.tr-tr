@@ -1,0 +1,132 @@
+---
+title: "Program kodunda katman modellerini gezinme ve güncelleştirme | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- layer models, navigating in program code
+- layer models, updating in program code
+ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
+caps.latest.revision: "20"
+author: alexhomer1
+ms.author: ahomer
+manager: douge
+ms.openlocfilehash: 50da0b90dd1c8924d8772eabd83265ff3827c2c2
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 11/07/2017
+---
+# <a name="navigate-and-update-layer-models-in-program-code"></a>Program kodunda katman modellerini gezinme ve güncelleştirme
+Bu konu öğeleri ve gezinme ve program kodunu kullanarak güncelleştirme katman modellerini ilişkilerde açıklar. Kullanıcının bakış açısı bağımlılık diyagramlarından hakkında daha fazla bilgi için bkz: [bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md) ve [bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md).  
+  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> Bu konuda açıklanan cephesi daha genel üzerinde modeldir <xref:Microsoft.VisualStudio.GraphModel> modeli. Yazıyorsanız bir [menü komutu veya hareketi uzantısı](../modeling/add-commands-and-gestures-to-layer-diagrams.md), kullanın `Layer` modeli. Yazıyorsanız bir [katman doğrulama uzantısı](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), kullanmayı daha kolay `GraphModel`.  
+  
+## <a name="transactions"></a>İşlemler  
+ Bir modeli güncelleştirme, değişiklikleri kapsayan göz önünde bir `ILinkedUndoTransaction`. Değişikliklerinizi tek bir hareket halinde gruplandırır. Değişiklikleri başarısız olursa, tüm işlem geri alınacak. Kullanıcı bir değişikliği geri alır, tüm değişiklikler birlikte geri alınacak.  
+  
+```  
+using (ILinkedUndoTransaction t =  
+        LinkedUndoContext.BeginTransaction("a name"))  
+{   
+    // Make changes here ....  
+    t.Commit(); // Don't forget this!  
+}  
+```  
+  
+## <a name="containment"></a>Kapsama  
+ ![ILayer ve ILayerModel her ikisi de ILayers içerebilir. ] (../modeling/media/layerapi_containment.png "LayerApi_Containment")  
+  
+ Katmanlar (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayer>) ve katman modeli (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel>) açıklamaları ve Katmanlar içerebilir.  
+  
+ Bir katman (`ILayer`) bir katman modeli bulunabilir (`ILayerModel`) ya da onu içinde başka bir iç içe konabilir `ILayer`.  
+  
+ Açıklama veya bir katman oluşturmak için uygun bir kapsayıcı üzerinde oluşturma yöntemlerini kullanın.  
+  
+## <a name="dependency-links"></a>Bağımlılık bağlantıları  
+ Bir bağımlılık bağlantı bir nesne temsil edilir. Herhangi bir yönde gittiğinizde:  
+  
+ ![Bir ILayerDependencyLink iki ILayers bağlanır. ] (../modeling/media/layerapi_dependency.png "LayerApi_Dependency")  
+  
+ Bir bağımlılık bağlantı oluşturmak için arama `source.CreateDependencyLink(target)`.  
+  
+## <a name="comments"></a>Açıklamalar  
+ Açıklamalar Katmanlar veya katman modeli içinde bulunan ve aynı zamanda herhangi bir katman öğeye bağlanabilir:  
+  
+ ![Herhangi bir katman öğeye açıklamalar eklenebilir. ] (../modeling/media/layerapi_comments.png "LayerApi_Comments")  
+  
+ Bir yorum öğelerin hiçbiri de dahil olmak üzere, herhangi bir sayıda bağlanabilir.  
+  
+ Bir katman öğesine bağlı yorumlar almak için kullanın:  
+  
+```csharp  
+ILayerModel model = diagram.GetLayerModel();   
+IEnumerable<ILayerComment> comments =   
+   model.Comments.Where(comment =>   
+      comment.Links.Any(link => link.Target == layerElement));  
+  
+```  
+  
+> [!CAUTION]
+>  `Comments` Özelliği bir `ILayer` içinde bulunan açıklamaları alır `ILayer`. Ona bağlı yorumlar almaz.  
+  
+ Açıklama çağırarak oluşturmak `CreateComment()` uygun bir kapsayıcı üzerinde.  
+  
+ Bir bağlantıyı kullanarak oluşturursunuz `CreateLink()` açıklama üzerinde.  
+  
+## <a name="layer-elements"></a>Katman öğeleri  
+ Bir modeldeki bulunan öğe tüm türleri katman öğeler şunlardır:  
+  
+ ![bağımlılık diyagramı içeriği ILayerElements olduğundan. ] (../modeling/media/layerapi_layerelements.png "LayerApi_LayerElements")  
+  
+## <a name="properties"></a>Özellikler  
+ Her `ILayerElement` adlı bir dize sözlük `Properties`. Herhangi bir katman öğeye rasgele bilgi eklemek için bu sözlük kullanabilirsiniz.  
+  
+## <a name="artifact-references"></a>Yapı başvuruları  
+ Bir yapı başvurusu (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) bir katman ve dosya, sınıf veya klasör gibi bir proje öğesi arasındaki bağlantıyı temsil eder. Bunlar bir katman oluşturduğunuzda ya da Çözüm Gezgini'nde, sınıf görünümü ya da nesne tarayıcısı bir bağımlılık diyagramına öğeleri sürükleyerek ekleyin kullanıcı yapıtları oluşturur. Yapı başvuruları herhangi bir sayıda katmana bağlanabilir.  
+  
+ Katman Gezgini her satırda bir yapı başvurusu görüntüler. Daha fazla bilgi için bkz: [kodunuzdan bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md).  
+  
+ Asıl türleri ve yöntemleri yapı başvuruları ile ilgili aşağıdaki gibidir:  
+  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. Sınıfı, yürütülebilir dosya veya derleme gibi ne tür bir yapı başvuruluyor kategorileri özelliği gösterir. Kategoriler belirler nasıl hedef yapı tanımlayıcısını tanımlar.  
+  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A>bir yapı başvurusundan oluşturur bir <xref:EnvDTE.Project> veya <xref:EnvDTE.ProjectItem>. Bu zaman uyumsuz bir işlemdir. Bu nedenle, genellikle oluşturma tamamlandıktan sonra çağrılan bir geri çağırma sağlar.  
+  
+ Katman yapı başvuruları kullanım örneği diyagramları yapılar ile karıştırılmamalıdır.  
+  
+## <a name="shapes-and-diagrams"></a>Şekiller ve diyagramları  
+ Her bir öğesinde bir katman modeli temsil etmek için kullanılan iki nesneleri: bir <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>ve bir <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` Konumu ve boyutu diyagramda şeklin temsil eder. Katman modelleri, her `ILayerElement` varsa `IShape`ve her `IShape` bir bağımlılığı diyagramı varsa `ILayerElement`. `IShape`UML modelleri için de kullanılır. Bu nedenle, her `IShape` bir katman öğeye sahip.  
+  
+ Aynı şekilde <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel> birinde görüntülenir <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram>.  
+  
+ Bir özel komut veya hareket işleyicisi kodda geçerli Diyagram ve şekillerden geçerli seçimi alabilirsiniz `DiagramContext` içeri aktarın:  
+  
+```  
+public class ... {  
+[Import]  
+    public IDiagramContext DiagramContext { get; set; }  
+...  
+public void ... (...)   
+{ IDiagram diagram = this.DiagramContext.CurrentDiagram;  
+  ILayerModel model = diagram.GetLayerModel();  
+  if (model != null)  
+  { foreach (ILayer layer in model.Layers) { ... }}  
+  foreach (IShape selected in diagram.SelectedShapes)  
+  { ILayerElement element = selected.GetLayerElement();  
+    if (element != null) ... }}  
+```  
+  
+ ![Her ILayerElement IShape tarafından sunulur. ] (../modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
+  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>ve <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> UML modellerini görüntülemek için de kullanılır. 
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Bağımlılık diyagramlarına komut ve hareket ekleme](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
+ [Bağımlılık diyagramlarına özel mimari doğrulaması ekleme](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
+ [Bağımlılık diyagramlarına özel özellikler ekleme](../modeling/add-custom-properties-to-layer-diagrams.md)   
+ [Bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md)   
+ [Bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)   

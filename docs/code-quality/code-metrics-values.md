@@ -1,0 +1,55 @@
+---
+title: "Kod ölçüm değerleri | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code metrics
+- code analysis
+- measure code quality
+ms.assetid: bc38831e-2083-4ea4-8527-ee41499a342f
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 234ec06d47afee3cbde7c2333742fe43ab599219
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/31/2017
+---
+# <a name="code-metrics-values"></a>Kod Ölçüm Değerleri
+Kod ölçümleri, geliştirmekte olduğunuz daha iyi bir anlayış kod geliştiricilerin sağlayan yazılım ölçüleri kümesidir. Kod ölçümleri yararlanarak, geliştiricilerin hangi türleri ve/veya yöntemleri yeniden veya daha fazla tamamen test anlayabilirsiniz. Geliştirme ekiplerinin olası riskleri tanımlamak, bir projenin geçerli durumu anlamanıza ve yazılım geliştirme sırasında ilerleme durumunu izlemek.  
+  
+## <a name="software-measurements"></a>Yazılım ölçümleri  
+ Kod ölçümleri sonuçları aşağıdaki listede gösterir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hesaplar:  
+  
+-   **Bakım dizin** -kodunu sürdürme göreli kolaylığını temsil eden bir dizin değeri 0 ile 100 arasında hesaplar. Yüksek bir değer daha iyi bakım anlamına gelir. Renk kodlu derecelendirmeleri, hızlı bir şekilde kodunuzda sorunlu noktaları tanımlamak için kullanılabilir. Yeşil bir derecelendirme 20 ile 100 arasındadır ve kod iyi bakım sahip olduğunu gösterir. Sarı bir derecelendirme 10 ve 19 arasında ve kodu oldukça sürdürülebilir olduğunu gösterir. Kırmızı bir derecelendirme 0 ile 9 arasında bir derecelendirme ve düşük bakım gösterir.  
+  
+-   **Cyclomatic karmaşıklık** -kod yapısal karmaşıklığını ölçer. Program akışı farklı kod yolları sayısı hesaplayarak oluşturulur. Karmaşık denetim akışı olan bir program iyi kod kapsamı elde etmek için daha fazla test gerektirir ve daha az sürdürülebilir olacaktır.  
+  
+    > [!NOTE]
+    >  Bazı durumlarda, bir yöntem için cyclomatic karmaşıklık hesaplama [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] önceki sürümlerden farklıdır. Daha fazla bilgi için "değişiklikleri, Visual Studio 2010 kod karmaşıklığı hesaplamalar bölümünde" bkz [kod ölçümleri sorunlarını giderme](../code-quality/troubleshooting-code-metrics-issues.md).  
+  
+-   **Devralma derinliği** -sınıf hiyerarşisi köküne genişletmek sınıf tanımları sayısını gösterir. Belirli yöntemler ve alanları tanımlandığı anlamak için olabilir daha derin hiyerarşi daha zor veya / ve yeniden tanımlanan.  
+  
+-   **Sınıf bağ** -ölçer bağlantı parametreleri, yerel değişkenleri, dönüş türleri, yöntem çağrıları, genel veya şablonu örneklemesi, temel sınıfları, arabirim uygulamaları, dış türlerinde tanımlanan alanları benzersiz sınıflarına ve öznitelik decoration. İyi yazılım tasarımı türleri ve yöntemleri yüksek cohesion sahip ve Kuplaj düşük olduğunu belirler. Yüksek bağlantı yeniden kullanmak ve diğer türleri üzerinde birçok onun bağımlılıklarını nedeniyle sağlamak zor bir tasarım gösterir.  
+  
+-   **Kod satırlarını** -yaklaşık kodu satır sayısını belirtir. Sayı IL kodu göre ve bu nedenle tam kaynak kodu dosyasının satır sayısını değil. Çok yüksek bir sayı türü veya yöntemi çok fazla iş işlemini yapmaya çalışan ve bölmek gösteriyor olabilir. Türü veya yöntemi sağlamak zor olabilir gösterebilir.  
+  
+## <a name="anonymous-methods"></a>Anonim Yöntemler  
+ Bir *anonim yöntemi* bir ada sahip bir yöntem. Anonim yöntemler, en sık kod bloğu temsilci parametre olarak geçirmek için kullanılır. Ölçümleri sonuçları yöntemi veya erişimci gibi bir üye olarak bildirilen bir anonim yöntemi için yöntem bildirir üye ile ilişkili. Bunlar yöntemini çağırır üye ile ilişkili değildir.  
+  
+ Kod ölçümleri anonim yöntemler nasıl işler hakkında daha fazla bilgi için bkz: [anonim yöntemler ve Kod Analizi](../code-quality/anonymous-methods-and-code-analysis.md).  
+  
+## <a name="generated-code"></a>Oluşturulan kod  
+ Bazı yazılım araçları ve derleyicileri projeye eklendi ve proje Geliştirici görmezsiniz veya değil değiştirmelisiniz kod oluşturur. Çoğunlukla, ölçüm değerleri hesaplarken kod ölçümleri oluşturulan kod yok sayar. Bu ne Geliştirici bakın ve değiştirebileceğini yansıtmak üzere ölçümleri değerleri sağlar.  
+  
+ Geliştirici bakın ve değiştirebileceğini kodu olduğundan Windows forms için oluşturulan kod, göz ardı edilir değil.  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Ölçüm karmaşıklığı ve yönetilen kod bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

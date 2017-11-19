@@ -1,0 +1,46 @@
+---
+title: "Yerel öğeler görüntüleme | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], expression evaluation
+- expression evaluation, displaying locals
+ms.assetid: 62264cec-845b-4233-aed7-0b038fa79250
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a00d57b8af1c32c2f94334e2930e8f92b166c89b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/31/2017
+---
+# <a name="displaying-locals"></a>Yerel öğeler görüntüleme
+> [!IMPORTANT]
+>  Visual Studio 2015'te ifade değerlendiricisi uygulama bu şekilde kullanım dışıdır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricileri](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+  
+ Her zaman yürütme yöntemi, içeren yöntemi olarak da bilinen veya geçerli yöntemi bağlamında gerçekleştirilir. Yürütme duraklatır, Visual Studio hata ayıklama altyapısı yerel değişkenler listesini almak için (DE) ve bağımsız değişkenler, topluca yöntemi Yereller adlı çağırır. Visual Studio bu Yereller ve değerlerini görüntüler **Yereller** penceresi.  
+  
+ Yerel öğeler görüntülemek için DE çağırır [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) yöntemi EE ait olan bir değerlendirme bağlamı, simge sağlayıcısı (SP), geçerli yürütme adresi ve bir bağlayıcı nesnesi sağlar. Daha fazla bilgi için bkz: [değerlendirme bağlamı](../../extensibility/debugger/evaluation-context.md). Çağrı başarılı olursa, `IDebugExpressionEvaluator::GetMethodProperty` yöntemi döndürür bir [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) geçerli yürütme adresini içeren yöntemi temsil eden nesne.  
+  
+ DE çağrıları [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) almak için bir [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) , yalnızca Yereller döndürmek için filtre ve listesini oluşturmak için numaralandırılmış nesnesini [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)yapıları. Her yapısı adını, türünü ve yerel değerini içerir. Türü ve değerine biçimlendirilmiş dizeler, görüntülemek için uygun olarak depolanır. Adını, türünü ve değerini genellikle birlikte tek satırda görüntülenen **Yereller** penceresi.  
+  
+> [!NOTE]
+>  **QuickWatch** ve **izleme** windows ayrıca değişkenleri ada, değere ve türü aynı biçiminde görüntüler. Ancak, bu değerleri çağırarak elde edilen [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) yerine `IDebugProperty2::EnumChildren`.  
+  
+## <a name="in-this-section"></a>Bu Bölümde  
+ [Yerel öğeler için örnek uygulama](../../extensibility/debugger/sample-implementation-of-locals.md)  
+ Yerel öğeler uygulama işlemi boyunca size adım adım örnekler kullanır.  
+  
+## <a name="related-sections"></a>İlgili Bölümler  
+ [Değerlendirme bağlamı](../../extensibility/debugger/evaluation-context.md)  
+ Hata ayıklama altyapısı (DE) ifade değerlendiricisi (EE) aradığında, bu üç bağımsız değişken geçtiğini açıklar.  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Bir CLR ifade değerlendiricisi yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -1,0 +1,97 @@
+---
+title: IDebugProperty3::GetStringCharLength | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProperty3::GetStringCharLength
+helpviewer_keywords: IDebugProperty3::GetStringCharLength
+ms.assetid: 89a8676b-6da9-4358-91c2-039bf33f99e4
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 139cb6deac5afc3f4b174673d623c56d3929071a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/31/2017
+---
+# <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
+İlişkili özelliğin dizesindeki karakterlerin sayısını döndürür.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```cpp  
+HRESULT GetStringCharLength(  
+   ULONG *pLen  
+);  
+```  
+  
+```csharp  
+int GetStringCharLength(  
+   out uint pLen  
+);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+  
+|Parametre|Açıklama|  
+|---------------|-----------------|  
+|`pLen`|[out] Özelliğin dizesindeki karakterlerin sayısını döndürür.|  
+  
+## <a name="return-value"></a>Dönüş Değeri  
+ Başarılı olursa, döndürür `S_OK`; Aksi takdirde hata kodunu döndürür.  
+  
+## <a name="remarks"></a>Açıklamalar  
+ Bu yöntem çağrısı için arabellek ayırma için prelude olarak genellikle kullanılan [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) yöntemi.  
+  
+## <a name="example"></a>Örnek  
+ Aşağıdaki örnek için bu yöntemi uygulaması gösterilmektedir bir **CProperty** gösteren nesne [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) arabirimi.  
+  
+```cpp  
+STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)  
+{  
+    HRESULT hr = E_INVALIDARG;  
+  
+    EVALFLAGS oldEVALFLAGS = m_EVALFLAGS;  
+  
+    m_EVALFLAGS &= ~EVAL_NOFUNCEVAL;  
+  
+    if (pLen)  
+    {  
+        DEBUG_PROPERTY_INFO dpInfo;  
+        dpInfo.bstrValue = NULL;  
+        ULONG ulen = 0;  
+        hr = GetPropertyInfo(DEBUGPROP_INFO_VALUE,10,DEFAULT_TIMEOUT,NULL,0,&dpInfo);  
+        if (hr == S_OK && dpInfo.bstrValue)  
+        {  
+            if (wcscmp(dpInfo.bstrValue,L"Nothing") == 0)  
+            {  
+                ulen = 0;   //VSWhidbey#64815  
+            }  
+            else  
+            {  
+                ulen = ::SysStringLen(dpInfo.bstrValue);  
+                if( ulen > 2 &&  
+                    dpInfo.bstrValue[0] == L'"' &&  
+                    dpInfo.bstrValue[ulen-1] == L'"')  
+                {                      
+                    ulen = ulen > 2 ? ulen - 2 : ulen;  //remove two double quotes  
+                }  
+            }  
+        }  
+        ::SysFreeString(dpInfo.bstrValue);  
+        *pLen = ulen;  
+    }  
+    m_EVALFLAGS = oldEVALFLAGS;  
+    return hr;  
+}  
+```  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)   
+ [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

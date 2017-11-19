@@ -1,0 +1,88 @@
+---
+title: "VC ++ proje ayarları, projeler ve çözümler, Seçenekler iletişim kutusu | Microsoft Docs"
+ms.custom: 
+ms.date: 08/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.ToolsOptionsPages.Projects.VCBuild
+helpviewer_keywords:
+- builds [Visual Studio], logs
+- build process [C++]
+- files [Visual Studio], built by C/C++ compiler
+- file extensions, built by C or C++ compiler
+- cl.exe compiler, file extensions
+- extensions, files built by C or C++ compiler
+- BuildLog.htm
+ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b0ccfd3d526cee44a30c8d4c33030f2eb2a585e5
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 11/02/2017
+---
+# <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++ Proje Ayarları, Projeler ve Çözümler, Seçenekler İletişim Kutusu
+Bu iletişim kutusunu tanımlamanıza izin verir [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] yapı ve proje günlüğü, performans ve dosya türlerini desteklemek için ilgili ayarları.  
+  
+### <a name="to-access-this-dialog-box"></a>Bu iletişim kutusunu erişmek için  
+  
+1.  Üzerinde **Araçları** menüsünde tıklatın **seçenekleri**.  
+  
+2.  Seçin **projeler ve çözümler**ve ardından **VC ++ proje ayarları**.  
+ 
+## <a name="build-logging"></a>Günlük kaydı oluşturma  
+ **Evet**  
+  Yapı günlük dosyasının üretilmesi açar. Bu seçenek projenin Ara files dizininde bulunabilir BuildLog.htm oluşturur. Her yeni derleme önceki BuildLog.htm dosyasının üzerine yazar.  
+  
+ **Yok**  
+  Yapı günlük dosyası oluşturma devre dışı bırakır.  
+
+## <a name="show-environment-in-log"></a>Ortam günlüğünde Göster  
+ **Evet**  
+ Ortam değişkenlerini yapı günlük dosyasında listeler. Bu seçenek, tüm ortam değişkenlerini yapı sırasında echo belirtir [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projelere yapı günlük dosyası.  
+  
+ **Yok**  
+ Ortam değişkenlerini yapı günlük dosyasından dışlayın.  
+
+## <a name="build-timing"></a>Zamanlama oluşturma  
+ **Evet**  
+  Yapı zamanlama üzerinde etkinleştirir. Seçili olduğunda, derleme tamamlamak geçen süreyi çıkış penceresine nakledilir. Daha fazla bilgi için bkz: [çıktı penceresi](../../ide/reference/output-window.md).  
+  
+ **Yok**  
+ Yapı zamanlama devre dışı bırakır.  
+   
+## <a name="maximum-concurrent-c-compilations"></a>Maksimum eşzamanlı C++ derlemeleri  
+  Paralel C++ derleme için kullanılacak CPU çekirdeği sayısını belirtir.  
+  
+## <a name="extensions-to-include"></a>Dahil etmek için uzantıları  
+  Projenize bağlantı noktalı dosyalarının dosya adı uzantılarını belirtir.  
+
+## <a name="extensions-to-hide"></a>Gizleme için Uzantılar  
+  İçinde görüntülenmez dosyalarının dosya adı uzantılarını belirtir **Çözüm Gezgini** zaman **tüm dosyaları göster** etkinleştirilir.  
+
+ ## <a name="build-customization-search-path"></a>Özelleştirme arama yolu oluştur  
+  Yardımcı .rules dosyaları içeren dizinler listesinde projeleriniz için derleme kuralları tanımlamak belirtir.  
+
+# <a name="solution-explorer-mode"></a>Çözüm Gezgini modu  
+ **Projede yalnızca dosyaları göster**  
+  Yapılandırır **Çözüm Gezgini** yalnızca projedeki dosyaları görüntülemek için.  
+  
+ **Tüm dosyaları göster**  
+  Yapılandırır **Çözüm Gezgini** proje ve proje klasöründeki diskteki dosyaları dosyaları göstermek için.  
+
+## <a name="enable-project-caching"></a>Proje önbelleğe almayı etkinleştir
+**Evet**  
+Böylece sonraki projeyi açtığınızda, proje dosyalarını yeniden hesaplama yerine verileri önbelleğe yükleyebilir Visual Studio Proje verileri önbelleğe almak için etkinleştirir. Önbelleğe alınan verileri kullanarak proje yük zamanı önemli ölçüde hızlandırılabilir.   
+
+**Yok**  
+Önbelleğe alınan proje verilerini kullanmayın. Proje her zaman yüklenir proje dosyalarını ayrıştırma.
+
+## <a name="see-also"></a>Ayrıca bkz.  
+ [C/C++ programları oluşturma](/cpp/build/building-c-cpp-programs)   
+ [C/C++ oluşturma başvurusu](/cpp/build/reference/c-cpp-building-reference)

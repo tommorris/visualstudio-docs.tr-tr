@@ -1,0 +1,58 @@
+---
+title: "CA1702: Bileşik sözcüklerin doğru ortası | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1702
+- CompoundWordsShouldBeCasedCorrectly
+helpviewer_keywords:
+- CA1702
+- CompoundWordsShouldBeCasedCorrectly
+ms.assetid: 05481245-7ad8-48c3-a456-3aa44b6160a6
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9c8606656b7ffe5f64c4c162b85d24bdbd9b1de0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/31/2017
+---
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Bileşik sözcüklerin küçük/büyük harfleri doğru yazılmalıdır
+|||  
+|-|-|  
+|TypeName|CompoundWordsShouldBeCasedCorrectly|  
+|CheckId|CA1702|  
+|Kategori|Microsoft.Naming|  
+|Yeni Değişiklik|En son ne zaman derlemelerini gönderildi.<br /><br /> Tür parametreleri harekete zaman bölünemez -.|  
+  
+## <a name="cause"></a>Sebep  
+ Birden çok sözcük tanımlayıcı adını içerir ve en az bir sözcük doğru ortası değil bileşik bir word gibi görünüyor.  
+  
+## <a name="rule-description"></a>Kural Tanımı  
+ Tanımlayıcı adı büyük/küçük harf üzerinde dayalı sözcükler bölündüğünü. Bitişik her iki word birleşimi Microsoft Yazım kitaplığı tarafından denetlenir. Tanımlıysa, kural ihlal tanımlayıcı oluşturur. "Sağlama" ve "Sağlama" ve "Multipart" sırasıyla ortası "MultiPart" bir ihlaline neden bileşik sözcüklerin örnekleridir. Önceki yaygın kullanımı nedeniyle, birkaç özel durum dışında kurala yerleşiktir ve birden fazla tek sözcük işaretlendi, "Araç" ve "Dosya adı" gibi ortası (Bu durumda, "Araç" ve "Dosya adı") iki ayrı sözcükleri olarak.  
+  
+ Adlandırma kuralları hedefleyen ortak dil çalışma zamanı kitaplıkları için genel bir bakış sağlar. Bu, yeni yazılım kitaplıkları için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığa sahip olan kişi tarafından geliştirilmiştir müşteri güvenini artırır öğrenme eğrisini azaltır.  
+  
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
+ Böylece doğru ortası adını değiştirin.  
+  
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
+ Bu kural bir uyarıdan bileşik word kısımlarını yazım sözlüğüyle tanınır ve iki sözcükler kullanmayı hedefi ise gizlemek güvenlidir.  
+  
+## <a name="related-rules"></a>İlgili kuralları  
+ [CA1701: Kaynak dize bileşik sözcüklerinin doğru ortası](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+  
+ [CA1709: Tanımlayıcılar doğru ortası](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+  
+ [CA1708: Tanımlayıcılar örnekten daha fazla farklı olmalıdır](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Adlandırma yönergeleri](/dotnet/standard/design-guidelines/naming-guidelines)   
+ [Büyük/küçük harf kuralları](/dotnet/standard/design-guidelines/capitalization-conventions)

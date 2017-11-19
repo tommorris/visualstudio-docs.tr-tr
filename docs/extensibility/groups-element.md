@@ -1,0 +1,70 @@
+---
+title: "Gruplar öğesi | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSCT XML schema elements, Groups
+- Groups element (VSCT XML schema)
+ms.assetid: 740ca4ec-79fa-4b98-8f9a-2a137f9f7f98
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e0352d2c2bee683c602dbe0449a9c25bb6ff259a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/31/2017
+---
+# <a name="groups-element"></a>Öğe grupları
+Bir VSPackage komut gruplarını tanımlamak girdiler içeriyor.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```  
+<Groups>  
+  <Group>... </Group>  
+  <Group>... </Group>  
+</Groups>  
+```  
+  
+## <a name="attributes-and-elements"></a>Öznitelikler ve Öğeler  
+ Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
+  
+### <a name="attributes"></a>Öznitelikler  
+  
+|Öznitelik|Açıklama|  
+|---------------|-----------------|  
+|Koşul|İsteğe bağlı. Bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+  
+### <a name="child-elements"></a>Alt Öğeler  
+  
+|Öğe|Açıklama|  
+|-------------|-----------------|  
+|[Grup öğesi](../extensibility/group-element.md)|Tek bir komut grubunu temsil eder.|  
+|[Öğe grupları](../extensibility/groups-element.md)|Bir VSPackage komut gruplarını tanımlamak girdiler içeriyor.|  
+  
+### <a name="parent-elements"></a>Üst Öğeler  
+  
+|Öğe|Açıklama|  
+|-------------|-----------------|  
+|[Komutları öğesi](../extensibility/commands-element.md)|VSPackage araç çubuğundaki komutları koleksiyonunu temsil eder.|  
+  
+## <a name="example"></a>Örnek  
+  
+```  
+<Groups>  
+  <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
+    <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>  
+  </Group>  
+</Groups>  
+```  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Komutları, menüleri ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -7,7 +7,7 @@
       "build_output_subfolder": "vsdocsdocs",
       "locale": "tr-TR",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -21,7 +21,7 @@
       "build_output_subfolder": "mac",
       "locale": "tr-TR",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -36,7 +36,7 @@
       "build_output_subfolder": "scripting-docs",
       "locale": "tr-TR",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -51,7 +51,7 @@
       "build_output_subfolder": "subscriptions",
       "locale": "tr-TR",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -66,7 +66,7 @@
       "build_output_subfolder": "vsdata",
       "locale": "tr-TR",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -78,6 +78,11 @@
   ],
   "notification_subscribers": [],
   "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/visualstudio-docs.tr-tr",
+  "git_repository_branch_open_to_public_contributors": "live",
+	"contribution_branch_mappings": {
+		       "live-sxs": "live"
+  },
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "dependent_repositories": [

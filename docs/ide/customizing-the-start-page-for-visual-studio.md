@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio için başlangıç sayfasını özelleştirme | Microsoft Docs"
+title: "Özel başlangıç sayfasını yükleyin veya Visual Studio başlangıç öğesi değiştirme | Microsoft Docs"
 ms.custom: 
 ms.date: 02/01/2017
 ms.reviewer: 
@@ -15,48 +15,45 @@ helpviewer_keywords:
 - Start Page [Visual Studio]
 - customizing Start Page [Visual Studio]
 - Visual Studio Start page
-ms.assetid: 925d42eb-ec34-426e-ad81-19db8630e536
 caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 178c20c9c4c3af8f5252e70ca603cdf8f8335e52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 45cfb501103c762f7af6fc130a981028c262540b
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Visual Studio için başlangıç sayfasını özelleştirme
-Gösterildiği gibi birkaç varsayılan yolla Visual Studio için başlangıç sayfasını özelleştirebilirsiniz **Proje Aç** iletişim kutusu veya en son yüklenen çözüm açılıyor. Araç penceresinde çalışan ve Visual Studio'ya özel dahili komutları çalıştıran bir Windows Presentation Foundation (WPF) XAML sayfası olarak, özel bir başlangıç sayfası da gösterebilirsiniz.  
 
-## <a name="customize-the-default-start-page"></a>Varsayılan başlangıç sayfasını özelleştirme  
+Visual Studio için başlangıç deneyimi gösteren gibi birçok farklı şekilde özelleştirebilirsiniz **Proje Aç** iletişim kutusu veya en son yüklenen çözüm açılıyor. Araç penceresinde çalışan ve Visual Studio'ya özel dahili komutları çalıştıran bir Windows Presentation Foundation (WPF) XAML sayfası olarak, özel bir başlangıç sayfası da gösterebilirsiniz.
 
-1.  Menü çubuğunda seçin **Araçları**, **seçenekleri**.  
+## <a name="to-change-the-startup-item"></a>Başlangıç öğesini değiştirmek için
 
-2.  Genişletme **ortam**ve ardından **başlangıç**.  
+1. Menü çubuğunda seçin **Araçları**, **seçenekleri**.
 
-3.  İçinde **başlangıçta** listesinde, kullanmak istediğiniz özelleştirme için öğeyi seçin.  
+1. Genişletme **ortam**ve ardından **başlangıç**.
 
-## <a name="show-a-custom-start-page"></a>Özel başlangıç sayfası gösterme  
+1. İçinde **başlangıçta** listesinde, Visual Studio'yu başlattıktan sonra görüntülenmesi için öğeyi seçin.
 
-1.  Özel bir başlangıç sayfası yüklemek için aşağıdaki yöntemlerden birini kullanın:  
+## <a name="to-show-a-custom-start-page"></a>Özel bir başlangıç sayfası göstermek için
 
-    -   Şuradan yükleyin [Visual Studio Galerisi](http://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=start%20page), başka bir Web sitesi veya yerel intranetinizde sayfası.  
+Yapabilecekleriniz [kendi özel başlangıç sayfası oluşturma](../extensibility/creating-a-custom-start-page.md) Visual Studio SDK'sını kullanarak veya bir başkası zaten oluşturduğu kullanın. Örneğin, özel başlangıç sayfalarını konumunda bulabilirsiniz [Visual Studio Market'te](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Start%20Pages&sortBy=Downloads).
 
-        Özel başlangıç sayfasını içeren bir .vsix dosyasını açın veya kopyalayıp başlangıç sayfası dosyalarıyla **% USERPROFILE % \My Documents\Visual Studio 2017\StartPages** bilgisayarınızda klasör.  
+Özel bir başlangıç sayfası yüklemek için .vsix dosyasını açın veya kopyalayıp başlangıç sayfası dosyalarıyla **%USERPROFILE%\Documents\Visual Studio 2017\StartPages** bilgisayarınızda klasör.
 
-    -   Visual Studio SDK yüklediyseniz kendi başlangıç sayfanızı oluşturun.  
+### <a name="to-select-which-custom-start-page-to-display"></a>Hangi özel başlangıç sayfasını görüntülemek için seçin
 
-         Bkz: [özel oluşturma başlangıç sayfasının](../extensibility/creating-a-custom-start-page.md).  
+1. Menü çubuğunda seçin **Araçları**, **seçenekleri**.
 
-2.  Menü çubuğunda seçin **Araçları**, **seçenekleri**.  
+1. Genişletme **ortam**ve ardından **başlangıç**.
 
-3.  Genişletme **ortam**ve ardından **başlangıç**.  
-
-4.  İçinde **başlangıç sayfasını özelleştirme** listesinde, istediğiniz sayfasını seçin.  
+1. İçinde **başlangıç sayfasını özelleştirme** listesinde, istediğiniz sayfasını seçin.
 
 > [!NOTE]
->  Özel başlangıç sayfasındaki bir hata Visual Studio'nun çökmesine neden olursa, Visual Studio'yu güvenli modda başlatabilir ve varsayılan başlangıç sayfasını kullanacak şekilde ayarlayabilirsiniz. Bkz: [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).  
+> Özel başlangıç sayfasındaki bir hata Visual Studio'nun çökmesine neden olursa, Visual Studio'yu güvenli modda başlatabilir ve varsayılan başlangıç sayfasını kullanacak şekilde ayarlayabilirsiniz. Bkz: [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)   
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)

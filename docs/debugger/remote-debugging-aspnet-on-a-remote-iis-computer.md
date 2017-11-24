@@ -6,17 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.topic: article
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 883a9ad8660204462d5aaa852ab87c5420af4382
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: abbbb1adf829361c5916f91ade5cb1a549444b72
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Visual Studio 2017 bir uzak IIS bilgisayarda uzaktan hata ayıklama ASP.NET Çekirdeği
 IIS'ye dağıtılan bir ASP.NET uygulaması hata ayıklamak için yükleme ve uygulamanızı dağıtıldığı bilgisayarda Uzak araçları çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.
@@ -26,7 +26,7 @@ IIS'ye dağıtılan bir ASP.NET uygulaması hata ayıklamak için yükleme ve uy
 Bu kılavuz, ayarlama ve Visual Studio 2017 ASP.NET çekirdek yapılandırma, IIS dağıtma ve Visual Studio uzaktan hata ayıklayıcı Ekle açıklanmaktadır. Uzaktan hata ayıklama için ASP.NET 4.5.2, bkz: [bir IIS bilgisayarda uzaktan hata ayıklama ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Ayrıca, dağıtmak ve Azure kullanarak IIS hata ayıklama. Daha fazla bilgi için bkz: [uzaktan hata ayıklama Azure üzerinde](../debugger/remote-debugging-azure.md).
 
 Bu yordamlar bu sunucu yapılandırmaları test edilmiştir:
-* Windows Server 2012 R2 ve IIS 10
+* Windows Server 2012 R2 ve IIS 8.5
 * Windows Server 2016 ve IIS 10
 
 ## <a name="requirements"></a>Gereksinimler

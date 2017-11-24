@@ -1,56 +1,57 @@
 ---
-title: "Hızlı Başlangıç: İlk ASP.NET Core web uygulamanızı oluşturmak için Visual Studio'yu kullanın. | Microsoft Docs"
+title: "Bir ASP.NET Core web uygulaması C# ' ta oluşturmak için Visual Studio'yu kullanın | Microsoft Docs"
 ms.custom: 
 ms.date: 10/10/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
-ms.topic: article
-ms.devlang: csharp
-ms.assetid: e173fb7d-c5bd-4568-ba0f-aa61913b3244
+ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: e87c46d1d78fafdc629a9f08e0bd7afacc1e1f3f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 6879d29b1e8c36ce9456fc44cf738a57603a6d50
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Hızlı Başlangıç: İlk ASP.NET Core web uygulamanızı oluşturmak için Visual Studio'yu kullanın.
-Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), basit bir C# ASP.NET Core web uygulaması oluşturacaksınız. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).  
+
+Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), basit bir C# ASP.NET Core web uygulaması oluşturacaksınız. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
 
 ## <a name="create-a-project"></a>Proje oluşturma
-İlk olarak, bir ASP.NET Core web uygulama projesi oluşturacaksınız. Proje türü bir işlevsel bir web uygulaması bile her şeyi eklediğiniz önce oluşturan şablonu dosyalarıyla birlikte verilir!  
 
-1. Visual Studio 2017'ni açın.  
+İlk olarak, bir ASP.NET Core web uygulama projesi oluşturacaksınız. Proje türü bir işlevsel bir web uygulaması bile her şeyi eklediğiniz önce oluşturan şablonu dosyalarıyla birlikte verilir!
 
-1. Üst menü çubuğundan seçin **dosya**, **yeni**, **proje...** .  
+1. Visual Studio 2017'ni açın.
 
-1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **Visual C#**, ardından **.NET Core**. Orta bölmede seçin **ASP.NET çekirdek Web uygulaması**, ardından **Tamam**.   
+1. Üst menü çubuğundan seçin **dosya**, **yeni**, **proje...** .
 
-     Görmüyorsanız, **.NET Core** proje şablonu, dışı iptal **yeni proje** iletişim kutusuna ve üst menü çubuğundan seçin **Araçları**, **araçları alma ve Özellikler...** . Visual Studio yükleyicisi başlatır. Seçin **ASP.NET ve web geliştirme** iş yükü, ardından **Değiştir**.  
+1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **Visual C#**, ardından **.NET Core**. Orta bölmede seçin **ASP.NET çekirdek Web uygulaması**, ardından **Tamam**.
 
-     ![VS yükleyici ASP.NET iş yükü](../ide/media/quickstart-aspnet-workload.png)  
+     Görmüyorsanız, **.NET Core** proje şablonu, dışı iptal **yeni proje** iletişim kutusuna ve üst menü çubuğundan seçin **Araçları**, **araçları alma ve Özellikler...** . Visual Studio yükleyicisi başlatır. Seçin **ASP.NET ve web geliştirme** iş yükü, ardından **Değiştir**.
 
-1. İçinde **çekirdek yeni bir ASP.NET Web uygulaması** iletişim kutusunda **ASP.NET Core 2.0** üstteki açılan menüden. (Görmüyorsanız **ASP.NET Core 2.0** listesinde izleyerek yükleyin **karşıdan** iletişim kutusunun üstündeki yanında sarı çubuğu görüntülenmelidir bağlantıyı.) Seçin **Tamam**.  
+     ![VS yükleyici ASP.NET iş yükü](../ide/media/quickstart-aspnet-workload.png)
 
-   ![Yeni ASP.NET çekirdek Web uygulaması iletişim kutusu](../ide/media/quickstart-aspnet-core20.png)  
+1. İçinde **çekirdek yeni bir ASP.NET Web uygulaması** iletişim kutusunda **ASP.NET Core 2.0** üstteki açılan menüden. (Görmüyorsanız **ASP.NET Core 2.0** listesinde izleyerek yükleyin **karşıdan** iletişim kutusunun üstündeki yanında sarı çubuğu görüntülenmelidir bağlantıyı.) Seçin **Tamam**.
 
-## <a name="explore-the-ide"></a>IDE keşfedin  
-1. İçinde **Çözüm Gezgini** araç genişletin **sayfaları** klasörü, ardından **About.cshtml** düzenleyicisinde açın. Bu dosya adında bir sayfaya karşılık gelen **hakkında** web uygulamasında.  
+   ![Yeni ASP.NET çekirdek Web uygulaması iletişim kutusu](../ide/media/quickstart-aspnet-core20.png)
 
-1. Düzenleyicide seçin `AboutModel` ve tuşuna basarak **F12** veya seçin **Tanıma Git** (sağ tıklatma) bağlam menüsünden. Bu komut tanımına alır `AboutModel` C# sınıfı.  
+## <a name="explore-the-ide"></a>IDE keşfedin
 
-   ![Tanıma Git bağlam menüsü](../ide/media/quickstart-aspnet-gotodefinition.png)  
+1. İçinde **Çözüm Gezgini** araç genişletin **sayfaları** klasörü, ardından **About.cshtml** düzenleyicisinde açın. Bu dosya adında bir sayfaya karşılık gelen **hakkında** web uygulamasında.
 
-1. Sonraki temizleme `using` yönergeleri kullanarak basit bir kısayol dosyasını üstündeki. Gri çıkış birini yönergeleri kullanarak ve [hızlı Eylemler](../ide/quick-actions.md) ampul şapka hemen altındaki veya sol kenar boşluğunda görünür. Ampul seçin ve ardından **gereksiz kullanımları kaldırma**.  
+1. Düzenleyicide seçin `AboutModel` ve tuşuna basarak **F12** veya seçin **Tanıma Git** (sağ tıklatma) bağlam menüsünden. Bu komut tanımına alır `AboutModel` C# sınıfı.
 
-     Gereksiz kullanımları dosyasından silinir.  
+   ![Tanıma Git bağlam menüsü](../ide/media/quickstart-aspnet-gotodefinition.png)
 
-1. İçinde `OnGet()` yöntemi, gövde aşağıdaki kodla değiştirin:  
+1. Sonraki temizleme `using` yönergeleri kullanarak basit bir kısayol dosyasını üstündeki. Gri çıkış birini yönergeleri kullanarak ve [hızlı Eylemler](../ide/quick-actions.md) ampul şapka hemen altındaki veya sol kenar boşluğunda görünür. Ampul seçin ve ardından **gereksiz kullanımları kaldırma**.
+
+     Gereksiz kullanımları dosyasından silinir.
+
+1. İçinde `OnGet()` yöntemi, gövde aşağıdaki kodla değiştirin:
 
  ```csharp
  public void OnGet()
@@ -58,23 +59,25 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
      string directory = Environment.CurrentDirectory;
      Message = String.Format("Your directory is {0}.", directory);
  }
- ```  
+ ```
 
-1. Altında görüntülenen iki dalgalı alt çizgiler görürsünüz **ortam** ve **dize**, bu tür kapsamında değildir. Açık **hata listesi** aynı hataları görmek için araç listelenir. (Görmüyorsanız **hata listesi** araç seçin **Görünüm**, **hata listesi** üst menü çubuğundan.)  
+1. Altında görüntülenen iki dalgalı alt çizgiler görürsünüz **ortam** ve **dize**, bu tür kapsamında değildir. Açık **hata listesi** aynı hataları görmek için araç listelenir. (Görmüyorsanız **hata listesi** araç seçin **Görünüm**, **hata listesi** üst menü çubuğundan.)
 
-   ![Hata Listesi](../ide/media/quickstart-aspnet-errorlist.png)  
+   ![Hata Listesi](../ide/media/quickstart-aspnet-errorlist.png)
 
-1. Düzenleyicisi penceresinde, imlecinizi hata içerir ve ardından sol kenar boşluğunda hızlı Eylemler ampul seçin ya da satırındaki yerleştirin. Aşağı açılır menüden **sistem; kullanarak** bu yönergesi dosyanızın en üstüne ekleyin ve hataları giderin.  
+1. Düzenleyicisi penceresinde, imlecinizi hata içerir ve ardından sol kenar boşluğunda hızlı Eylemler ampul seçin ya da satırındaki yerleştirin. Aşağı açılır menüden **sistem; kullanarak** bu yönergesi dosyanızın en üstüne ekleyin ve hataları giderin.
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırın
-1. Tuşuna **Ctrl + F5** uygulamayı çalıştırın ve bir web tarayıcısında açın.  
 
-1. Web sitesinin üstünde seçin **hakkında** , eklenen ileti dizin görmek için `OnGet()` yöntemi **hakkında** sayfası.  
+1. Tuşuna **Ctrl + F5** uygulamayı çalıştırın ve bir web tarayıcısında açın.
 
-1. Web tarayıcısını kapatın.  
+1. Web sitesinin üstünde seçin **hakkında** , eklenen ileti dizin görmek için `OnGet()` yöntemi **hakkında** sayfası.
 
-Bu hızlı başlangıç Tamamlanıyor Tebrikler! Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Lütfen yeteneklerini daha derin inceleyin istiyorsanız bir öğreticide devam **öğreticileri** içindekiler bölümü.  
+1. Web tarayıcısını kapatın.
 
-## <a name="see-also"></a>Ayrıca bkz.   
-[C# ve Visual Studio kullanarak Visual Basic'e Başlarken](getting-started-with-visual-csharp-and-visual-basic.md)
-[ASP.NET Core Razor sayfalarında ile çalışmaya başlama](/aspnet/core/tutorials/razor-pages/razor-pages-start)  
+Bu hızlı başlangıç Tamamlanıyor Tebrikler! Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Lütfen yeteneklerini daha derin inceleyin istiyorsanız bir öğreticide devam **öğreticileri** içindekiler bölümü.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C# ve Visual Studio kullanarak Visual Basic'e Başlarken](getting-started-with-visual-csharp-and-visual-basic.md)  
+[ASP.NET Core Razor sayfalarında ile çalışmaya başlama](/aspnet/core/tutorials/razor-pages/razor-pages-start)

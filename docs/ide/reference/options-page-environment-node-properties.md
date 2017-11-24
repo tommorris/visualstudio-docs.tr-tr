@@ -15,11 +15,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae50f2d537836501ec4c9c29e50d86aa3e325661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 076b48d5526c0cefffb5f18daed9aaaebb031aad
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="options-page-environment-node-properties"></a>Seçenekler Sayfası, Ortam Düğümü Özellikleri
 Bu belgede sayfaları (veya özellikleri koleksiyonları) açıklanır ile ilişkili **ortam** kategorisi, `DTE.Properties("Environment", <Property Page>)`, **seçenekleri** iletişim kutusu. Her alt bölüm başlığı özellikleri koleksiyonuna erişmek için kullanılan çağrıdır ve her alt tabloda bir koleksiyondaki özellikleri listeler.  
@@ -71,7 +71,7 @@ Bu belgede sayfaları (veya özellikleri koleksiyonları) açıklanır ile iliş
 |Özellik Öğesi Adı|Değer|Açıklama|  
 |------------------------|-----------|-----------------|  
 |EnableAdminExtensions|Get/Set (Boole)|Visual Studio yönetici kimlik bilgileriyle çalıştırdığınızda kullanıcı başına uzantıları yükler. Bu değer değiştikten sonra visual Studio'nun yeniden başlatılması gerekir.|  
-|EnableOnline|Get/Set (Boole)|Visual Studio Galerisi uzantılarını erişim sağlar.|  
+|EnableOnline|Get/Set (Boole)|Visual Studio Market'te uzantıları erişim sağlar.|  
 |AutomaticallyCheckForUpdates|Get/Set (Boole)|Otomatik olarak yüklenen uzantıları için güncelleştirmeleri denetler.|  
   
 ## <a name="find-and-replace"></a>Bulma ve Değiştirme  

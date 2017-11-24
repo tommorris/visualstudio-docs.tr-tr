@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e111159029710684a1a49be2859f6ac5699a70a
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Anlık görüntü Visual Studio'da hata ayıklama için sorun giderme ve bilinen sorunlar
 
@@ -30,8 +30,7 @@ Bir uyarı simgesi görürseniz ![Snappoint uyarı simgesi](../debugger/media/sn
 
 Aşağıdaki adımları gerçekleştirin:
 
-1. Derleme ve uygulamanızı dağıtmak için kullanılan kaynak kodu aynı sürümüne sahip olduğunuzdan emin olun.
-1. Dağıtımınız için doğru simgeleri yüklenen emin olun. Bunu yapmak için görüntülemek **modülleri** penceresi açıkken anlık görüntü hata ayıklama ve simge dosyası sütun .pdb dosyasını ayıkladığınız modülü için yüklenen gösterir doğrulayın. Anlık görüntü hata ayıklayıcı otomatik olarak karşıdan yükle ve dağıtımınız için simgeler kullanmayı deneyecek unutmayın.
+1. Derleme ve, app.isua1 dağıtmak için kullanılan kaynak kodu aynı sürümüne sahip olduğunuzdan emin olun. Dağıtımınız için doğru simgeleri yüklenen emin olun. Bunu yapmak için görüntülemek **modülleri** penceresi açıkken anlık görüntü hata ayıklama ve simge dosyası sütun .pdb dosyasını ayıkladığınız modülü için yüklenen gösterir doğrulayın. Anlık görüntü hata ayıklayıcı otomatik olarak karşıdan yükle ve dağıtımınız için simgeler kullanmayı deneyecek unutmayın.
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Sorun: bir anlık görüntü açtığınızda simgeleri yüklenmez
 
@@ -70,6 +69,7 @@ Aşağıdaki adımları gerçekleştirin:
 - Roslyn IL iyileştirmeler ASP.NET Core projelerinde tam olarak desteklenmez. Bazı ASP.NET Core projeleri için bazı değişkenler görmek veya bazı değişkenler koşullu ifadeler kullanmak mümkün olmayabilir. 
 - Özel değişkenler gibi *$FUNCTION* veya *$CALLER*, koşullu ifadeleri veya ASP.NET Core projeleri için logpoints değerlendirilemez.
 - Anlık görüntü hata ayıklama uygulama hizmetleri üzerinde sahip çalışmıyor [yerel önbelleğe alma](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) açık.
+- Hata ayıklama API uygulamaları anlık görüntü şu anda desteklenmiyor.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

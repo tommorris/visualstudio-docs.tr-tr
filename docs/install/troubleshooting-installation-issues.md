@@ -1,10 +1,10 @@
 ---
 title: "Yükleme sorunlarını giderme | Microsoft Docs"
 description: "Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemesi veya yükseltmesi başarısız olursa, bu sayfayı yardımcı olabilir."
-ms.date: 11/08/2017
+ms.date: 11/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,13 +12,13 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f0f71dab64a99965facac9ccaa0fff9b53a6e3f6
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4c864a05b267889720ba64a6427861aa2c42e3b2
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 yükleme ve yükseltme sorunlarını giderme
 
@@ -37,7 +37,8 @@ Hata iletisiyle Search'te [Visual Studio Geliştirici topluluğu](https://develo
 ### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>3. adım - yükseltme sorunlarını düzeltmek için Visual Studio yükleyicisi dizini silin
 Visual Studio yükleyicisi önyükleyici Visual Studio yükleyicisi kalan yükler en az bir hafif yürütülebilir ' dir. Visual Studio Installer dosyalarını silerek ve önyükleyici yeniden çalıştırma bazı güncelleştirme hataları düzeltebilir.
 
-**Not:** aşağıdaki eylemleri gerçekleştirerek Visual Studio Installer dosyalarını yeniden yükler ve yükleme meta verileri sıfırlar.
+>[!NOTE]
+Aşağıdaki eylemleri gerçekleştirerek, Visual Studio Installer dosyalarını yeniden yükler ve yükleme meta verileri sıfırlar.
 
 1. Visual Studio Yükleyicisi’ni kapatın.
 2. Visual Studio yükleyicisi dizini silin. Genellikle, dizindir `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
@@ -57,7 +58,7 @@ Bozuk dosyaları, ilişkili olanlar gibi bazı durumlarda, bir olay temelinde ar
 Son çare olarak, şunları yapabilirsiniz [Visual Studio kaldırmak](remove-visual-studio.md) tüm yükleme dosyalarını ve ürün bilgileri kaldırmak için.
 
 1. ' Ndaki yönergeleri izleyin [kaldırmak Visual Studio](remove-visual-studio.md).
-2. Açıklanan önyükleyici yeniden [adım 3 - yükseltme sorunlarını düzeltmek için Visual Studio yükleyicisi dizin silme](#step-3--delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
+2. Açıklanan önyükleyici yeniden [adım 3 - yükseltme sorunlarını düzeltmek için Visual Studio yükleyicisi dizin silme](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
 3. Yükleme veya Visual Studio güncelleştirmeyi yeniden deneyin.
 
 ### <a name="step-6---contact-us-optional"></a>6. adım - (isteğe bağlı) bizimle iletişime geçin
@@ -88,10 +89,10 @@ Günlükleri toplamak için:
 
 ## <a name="more-support-options"></a>Daha fazla destek seçenekleri
 
-Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
+Diğer adımların hiçbiri başarılı bir şekilde yüklemeye izin verirseniz, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
 
 Birkaç diğer seçenekler şunlardır:
-
+* Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
 * ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu gerektiren bir [GitHub](https://github.com/) hesabı).

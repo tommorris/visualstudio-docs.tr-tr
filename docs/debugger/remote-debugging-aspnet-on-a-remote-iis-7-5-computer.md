@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 730a69894c8e38dd7b9d191fa7fe3396509148d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a279b1eddf80a78ad20d137c288e6ee49c1993b9
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Uzaktan hata ayıklama Uzak IIS bilgisayarda ASP.NET
 IIS'ye dağıtılan bir ASP.NET uygulaması hata ayıklamak için yükleme ve uygulamanızı dağıtıldığı bilgisayarda Uzak araçları çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.
@@ -26,7 +26,7 @@ IIS'ye dağıtılan bir ASP.NET uygulaması hata ayıklamak için yükleme ve uy
 Bu kılavuz, ayarlama ve Visual Studio 2017 ASP.NET MVC 4.5.2 uygulama yapılandırma, IIS dağıtma ve Visual Studio uzaktan hata ayıklayıcı Ekle açıklanmaktadır. Uzaktan hata ayıklama için ASP.NET Core, bkz: [bir IIS bilgisayarda uzaktan hata ayıklama ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Ayrıca, dağıtmak ve Azure kullanarak IIS hata ayıklama. Daha fazla bilgi için bkz: [uzaktan hata ayıklama Azure üzerinde](../debugger/remote-debugging-azure.md).
 
 Bu yordamlar bu sunucu yapılandırmaları test edilmiştir:
-* Windows Server 2012 R2 ve IIS 10 (Windows Server 2008 R2'için sunucu adımları farklıdır)
+* Windows Server 2012 R2 ve IIS 8.5 (Windows Server 2008 R2'için sunucu adımları farklıdır)
 
 ## <a name="requirements"></a>Gereksinimler
 

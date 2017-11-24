@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2175581e-83cb-444c-bb52-cc1fca8ea196
 caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40f554f21cc2cee9fb6d457ef9f4a560740cebc6
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.openlocfilehash: 14e3d3432a62d54564c92a12a02204ffb5e05889
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Başvuru Eklerken NuGet veya Uzantı SDK Kullanma Karşılaştırması
 
@@ -56,7 +55,7 @@ Aşağıdaki tabloda, bir SDK başvuruda bulunan özellikler NuGet başvuru öze
 |Temiz Geliştirici makine düzeneğini destekler. (Diğer bir deyişle, herhangi bir yükleme gereklidir ve kaynak kodu denetimi basit alımı çalışır.)|N|Bir SDK aldığından, çözümünüz ve SDK ayrı olarak işaretlemeniz gerekir. MSBuild tekrarlanan SDK'ları iki kayıt defteri olmayan varsayılan konumlardan SDK'sındaki kontrol edebilirsiniz (Ayrıntılar için bkz [bir yazılım geliştirme seti oluşturma](../extensibility/creating-a-software-development-kit.md)). Alternatif olarak, özel bir konuma SDK'lar oluşuyorsa proje dosyasında aşağıdaki kodu belirtebilirsiniz:<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> Ardından SDK'ları bu konuma denetleyin.|Y|Çözüm denetleyebilir ve Visual Studio hemen tanır ve dosyalar üzerinde çalışır.|
 |Bir paketi yazarları varolan topluluğu büyük birleştirebilirsiniz.|Yok|Yeni bir topluluktur.|Y||
 |Bir paket tüketici varolan topluluğu büyük birleştirebilirsiniz.|Yok|Yeni bir topluluktur.|Y||
-|Bir (özel galerileri, depoları ve benzeri) iş ortakları ekosistemi birleştirebilirsiniz.|Yok|Visual Studio Galerisi, Microsoft Download Center, kullanılabilir depoları içerir ve [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|Y||
+|Bir (özel galerileri, depoları ve benzeri) iş ortakları ekosistemi birleştirebilirsiniz.|Yok|Visual Studio Market'te, Microsoft Download Center, kullanılabilir depoları içerir ve [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|Y||
 |Paket oluşturma ve tüketimi için sürekli tümleştirme yapı sunucularıyla mekanizması tümleştirir.|Y|SDK iade edildi konumu (SDKReferenceDirectoryRoot özelliği) için MSBuild komut satırında geçmesi gerekir.|Y||
 |Mekanizması her iki paketin kararlı ve yayın öncesi sürümlerini destekler.|Y|SDK ekleyerek başvuruları birden çok sürümü destekler.|Y||
 |Otomatik güncelleştirme mekanizması yüklü paketleri destekler.|Y|Sevk VSIX veya Visual Studio Otomatik Güncelleştirmeler'in bir parçası olarak otomatik bildirimler SDK sağlar.|Y||

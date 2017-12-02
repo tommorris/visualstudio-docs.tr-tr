@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a279b1eddf80a78ad20d137c288e6ee49c1993b9
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: ed7ae018725e4ba2da5239609d90276d007827aa
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Uzaktan hata ayıklama Uzak IIS bilgisayarda ASP.NET
 IIS'ye dağıtılan bir ASP.NET uygulaması hata ayıklamak için yükleme ve uygulamanızı dağıtıldığı bilgisayarda Uzak araçları çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.
@@ -26,7 +26,7 @@ IIS'ye dağıtılan bir ASP.NET uygulaması hata ayıklamak için yükleme ve uy
 Bu kılavuz, ayarlama ve Visual Studio 2017 ASP.NET MVC 4.5.2 uygulama yapılandırma, IIS dağıtma ve Visual Studio uzaktan hata ayıklayıcı Ekle açıklanmaktadır. Uzaktan hata ayıklama için ASP.NET Core, bkz: [bir IIS bilgisayarda uzaktan hata ayıklama ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Ayrıca, dağıtmak ve Azure kullanarak IIS hata ayıklama. Daha fazla bilgi için bkz: [uzaktan hata ayıklama Azure üzerinde](../debugger/remote-debugging-azure.md).
 
 Bu yordamlar bu sunucu yapılandırmaları test edilmiştir:
-* Windows Server 2012 R2 ve IIS 8.5 (Windows Server 2008 R2'için sunucu adımları farklıdır)
+* Windows Server 2012 R2 ve IIS 8 (Windows Server 2008 R2'için sunucu adımları farklıdır)
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -54,7 +54,7 @@ Güvenlik ayarlarınıza bağlı olarak, bu öğreticide anlatılan yazılım ko
 - download.microsoft.com
 - VisualStudio.com
 
-Internet Explorer kullanıyorsanız, Güvenilen siteler giderek ekleyebileceğiniz **Internet Seçenekleri > Güvenlik > Güvenilen siteler > siteleri**. Bu adımlar, tarayıcılar için farklıdır.
+Internet Explorer kullanıyorsanız, Güvenilen siteler giderek ekleyebileceğiniz **Internet Seçenekleri > Güvenlik > Güvenilen siteler > siteleri**. Bu adımlar, tarayıcılar için farklıdır. (Uzaktan hata ayıklayıcı daha eski bir sürümü my.visualstudio.com karşıdan yüklemeniz gerekiyorsa, bazı ek Güvenilen siteler oturum açmak için gereklidir.)
 
 Yazılım yüklediğinizde, çeşitli web sitesi komut dosyaları ve kaynakları yükleme izni vermek için istekleri alabilirsiniz. Çoğu durumda, bu ek kaynakları yazılımı yüklemeniz gerekmez.
 

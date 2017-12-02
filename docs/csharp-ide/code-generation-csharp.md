@@ -13,11 +13,11 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98202db8e59957bfafe81b4a7d611b79c642daf4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 773fecba4b3a635d86d6b06937151e38ad94912e
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="code-generation-features-for-c"></a>C# kod oluşturma özellikleri #
 Visual Studio sizin için kaynak kodu bölümlerini oluşturmak yardımcı gerçek çalışma odaklanmanıza olanak tanır.  Aşağıdaki kod oluşturma özellikleri için C# Visual Studio'da kullanılabilir:
@@ -26,7 +26,8 @@ Visual Studio sizin için kaynak kodu bölümlerini oluşturmak yardımcı gerç
 * [Üretme yöntemi](code-generation/generate-method.md)
 * [Özellik/alan/yerel oluştur](code-generation/generate-field-property-local.md)
 * [Oluşturucu oluştur](code-generation/generate-constructor.md)
-* [Geçersiz kılma oluştur](code-generation/generate-override.md)
+* [Bir geçersiz kılma oluştur](code-generation/generate-override.md)
+* [Eşittir oluşturmak ve GetHashCode yöntemini geçersiz kılar](code-generation/generate-overrides.md)
 * [XML belgeleri yorumları oluştur](code-generation/generate-xml-documentation-comments.md)
 * [Soyut sınıf uygulama](code-generation/implement-abstract-class.md)
 * [Arabirimi uygulama](code-generation/implement-interface.md)
@@ -34,4 +35,3 @@ Visual Studio sizin için kaynak kodu bölümlerini oluşturmak yardımcı gerç
  
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio geliştirme ortamı C# için kullanma](using-the-visual-studio-development-environment-for-csharp.md)   
- 

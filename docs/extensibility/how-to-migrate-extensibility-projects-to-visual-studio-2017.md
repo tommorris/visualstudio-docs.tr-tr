@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89591535b232317abf395c237fdc267c847ca699
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bb00d2c338ac1ef9e2be6d77d68ebfe2a246d807
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Nasıl yapılır: Visual Studio 2017 genişletilebilirlik projeleri geçirme
 
@@ -102,11 +102,6 @@ Bildirim XML doğrudan düzenlemek yerine yeni kullanabileceğiniz **Önkoşulla
   ![roslyn önkoşul ekleme](media/add-roslyn-prerequisite.png)
 
 * Press **OK**.
-
-## <a name="if-migrating-from-preview-4-or-preview-5"></a>Önizleme 4 ya da Önizleme 5 geçiş
-
-* Değiştir `SetupDependencies` ile `Prerequisites` ve işyeri dışında öğeleri taşıma `Installer` öğesi. `Prerequisites`Şimdi doğrudan iç işleve `PackageManifest` öğesi.
-* [İsteğe bağlı] Kaldırma `GenerateVsixV3` öğesi. (Bu önizleme 5'te yalnızca gerekiyordu.) `GenerateVsixV3` Öğesi Preview 5'den sonraki sürümlerde yoksayılacak.
 
 ## <a name="update-debug-settings-for-project"></a>Projesi için hata ayıklama ayarlarını güncelleştirme
 
@@ -197,3 +192,15 @@ Tüm başvuruları için önce hangilerinin çekirdek Düzenleyicisi'ni (Microso
 
 * Hata ayıklayıcı uzantısına sahiptir ve projenizin VSDebugEng.dll ve VSDebug.dll başvuru olduğunu biliyorsanız filtre düğmesini tıklatın **ikili / dosya adlarını** üstbilgi.  "VSDebugEng.dll" için arama ve Tamam'ı seçin.  Sonraki filtre düğmesini tıklatın **ikili / dosya adlarını** yeniden başlığı ve "VSDebug.dll" arayın.  "Filtrelemek için Ekle geçerli seçim" onay kutusunu seçin ve Tamam'ı seçin.  Şimdi Ara **bileşen adı** en çok bir bileşen bulmak için uzantı türü için ilgili. Bu örnekte, zaman içinde sadece seçtiğiniz hata ayıklayıcı ve, vsixmanifest ekleyin.
 * Projenizi hata ayıklayıcı öğeleriyle ilgilenir biliyorsanız, "adında hata ayıklayıcı hangi bileşenleri içeren görmek için hata ayıklayıcı" Filtre Arama kutusuna arama yapabilirsiniz.
+
+## <a name="specifying-a-visual-studio-2017-release"></a>Visual Studio 2017 sürüm belirtme
+
+Uzantınızın Visual Studio 2017 belirli bir sürümünü gerektiriyorsa, örneğin, 15.3 serbest bir özellik bağlıdır, içinde VSIX içine yapı numarası belirtmelisiniz **InstallationTarget**. Örneğin, yayın 15.3 '15.0.26730.3' derleme sayısı vardır. Yapı numaralarını sürümlerini eşleme görebilirsiniz [burada](../install/visual-studio-build-numbers-and-release-dates.md). '15.3' sürüm numarasını kullanarak düzgün çalışmaz.
+
+Uzantınızı 15.3 gerektirir veya üzeri, bildirmek **InstallationTarget sürüm** olarak [15.0.26730.3, 16.0):
+
+```xml
+<Installation>
+  <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.26730.3, 16.0)" />
+</Installation>
+```

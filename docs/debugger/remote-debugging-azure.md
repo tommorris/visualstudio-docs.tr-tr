@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b4ad0cdadcb3d56af55af629b853e660dc9d86f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c0527d33e47ce42449f2ae2bb75ee3e342b04c2b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>IIS ve Visual Studio 2017 Azure'da ASP.NET çekirdeğinde uzaktan hata ayıklama
 IIS ile Windows Server bilgisayarı için bir ASP.NET Web uygulamasına dağıtmak ve uzaktan hata ayıklama için ayarlayın. Bu kılavuz, ayarlama ve Visual Studio 2017 ASP.NET Core uygulama yapılandırma, Azure kullanılarak IIS'ye dağıtma ve Visual Studio uzaktan hata ayıklayıcı Ekle açıklanmaktadır.
@@ -47,7 +47,7 @@ Bir proxy üzerinden bağlı iki bilgisayar arasında hata ayıklama desteklenmi
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Visual Studio 2017 bilgisayarda ASP.NET Core uygulaması oluşturma 
 
-1. Yeni bir ASP.NET Core uygulaması oluşturun. (Seçin **Dosya > Yeni > Proje**seçeneğini belirleyip **Visual C# > Web > ASP.NET çekirdek Web uygulaması (.NET Core)**)
+1. Yeni bir ASP.NET Core uygulaması oluşturun. (Seçin **Dosya > Yeni > Proje**seçeneğini belirleyip **Visual C# > Web > ASP.NET çekirdek Web uygulaması (.NET Core)**).
 
     İçinde **ASP.NET Core** şablonları bölümünde, select **Web uygulaması**.
 
@@ -59,7 +59,7 @@ Bir proxy üzerinden bağlı iki bilgisayar arasında hata ayıklama desteklenmi
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Uzaktan hata ayıklama ASP.NET Core üzerinde bir Azure uygulama hizmeti
 
-Hızlı bir şekilde Visual Studio'dan yayımlamak ve IIS tamamen sağlanan bir örneğine uygulamanızın hatalarını ayıklama. Ancak, IIS yapılandırmasını önceden ve onu özelleştiremezsiniz. Ayrıntılı yönergeler için bkz: [ASP.NET Core web uygulama dağıtmak için Visual Studio kullanarak Azure](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (IIS özelleştirme yeteneği ihtiyacınız varsa, hata ayıklama deneyin bir [Azure VM](#BKMK_azure_vm).) 
+Hızlı bir şekilde Visual Studio'dan yayımlamak ve IIS tamamen sağlanan bir örneğine uygulamanızın hatalarını ayıklama. Ancak, IIS yapılandırmasını önceden ve onu özelleştiremezsiniz. Ayrıntılı yönergeler için bkz: [ASP.NET Core web uygulama dağıtmak için Visual Studio kullanarak Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (IIS özelleştirme yeteneği ihtiyacınız varsa, hata ayıklama deneyin bir [Azure VM](#BKMK_azure_vm).) 
 
 #### <a name="to-deploy-the-app-and-remote-debug"></a>Uzaktan hata ayıklama ve uygulama dağıtmak için
 
@@ -67,7 +67,7 @@ Hızlı bir şekilde Visual Studio'dan yayımlamak ve IIS tamamen sağlanan bir 
 
 2. Seçin **Microsoft Azure App Service** gelen **Yayımla** iletişim kutusunda **Yeni Oluştur**ve yayımlamak için istemleri izleyin.
 
-    Ayrıntılı yönergeler için bkz: [ASP.NET Core web uygulama dağıtmak için Visual Studio kullanarak Azure](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+    Ayrıntılı yönergeler için bkz: [ASP.NET Core web uygulama dağıtmak için Visual Studio kullanarak Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 3. İçinde **Sunucu Gezgini**, App Service örneğinde sağ tıklatın ve seçin **Attach hata ayıklayıcı**.
 
@@ -81,7 +81,7 @@ Hızlı bir şekilde Visual Studio'dan yayımlamak ve IIS tamamen sağlanan bir 
 
 Bir Azure VM için Windows Server oluşturabilir ve ardından yükleyin ve IIS ve diğer gerekli yazılımı bileşenleri yapılandırabilirsiniz. Bu, bir Azure App Service'e dağıtma değerinden daha uzun sürer ve bu öğreticinin geri kalan adımları izleyin gerektirir.
 
-İlk olarak, açıklanan tüm adımları [yükleme ve çalıştırma IIS](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role).
+İlk olarak, açıklanan tüm adımları [yükleme ve çalıştırma IIS](/azure/virtual-machines/virtual-machines-windows-hero-role).
 
 Ayrıca ağ güvenlik Grubu'na 80 numaralı bağlantı noktasını açtığınızda, bağlantı noktası 4022 için uzaktan hata ayıklayıcı açın. Böylece, daha sonra açmak zorunda kalmazsınız.
 
@@ -94,13 +94,13 @@ Tarayıcı güvenlik ayarlarınızı bağlı olarak, bu öğreticide anlatılan 
 - download.microsoft.com
 - VisualStudio.com
 
-Internet Explorer kullanıyorsanız, Güvenilen siteler giderek ekleyebileceğiniz **Internet Seçenekleri > Güvenlik > Güvenilen siteler > siteleri**. Bu adımlar, tarayıcılar için farklıdır.
+Internet Explorer kullanıyorsanız, Güvenilen siteler giderek ekleyebileceğiniz **Internet Seçenekleri > Güvenlik > Güvenilen siteler > siteleri**. Bu adımlar, tarayıcılar için farklıdır. (Uzaktan hata ayıklayıcı daha eski bir sürümü my.visualstudio.com karşıdan yüklemeniz gerekiyorsa, bazı ek Güvenilen siteler oturum açmak için gereklidir.)
 
 Yazılım yüklediğinizde, çeşitli web sitesi komut dosyaları ve kaynakları yükleme izni vermek için istekleri alabilirsiniz. Çoğu durumda, bu ek kaynakları yazılımı yüklemeniz gerekmez.
 
 ### <a name="install-aspnet-core-on-windows-server"></a>ASP.NET Core Windows Server yükleme
 
-1. Yükleme [.NET Core Windows Server barındırma](https://go.microsoft.com/fwlink/?linkid=844461) barındıran sistemde paket. Paket .NET çekirdeği çalışma zamanı, .NET Core kitaplığı ve ASP.NET Core Modülü'nü yükleyecek.
+1. Yükleme [.NET Core Windows Server barındırma](https://aka.ms/dotnetcore-2-windowshosting) barındıran sistemde paket. Paket .NET çekirdeği çalışma zamanı, .NET Core kitaplığı ve ASP.NET Core Modülü'nü yükleyecek. Daha fazla ayrıntılı yönergeler için bkz: [IIS yayımlama](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
     > Sistem Internet bağlantısı yoksa, edinme ve yükleme  *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)*  .NET Core Windows Server barındırma paketini yüklemeden önce.
@@ -209,7 +209,7 @@ Web dağıtımı kullanmıyorsanız, yayımlama ve dosya sistemi veya diğer ara
 
 Çoğu kurulumları ASP.NET ve uzaktan hata ayıklayıcı yüklemesi tarafından gerekli bağlantı noktaları açıldı. Ancak, dağıtım sorunlarını giderme ve uygulamanın bir güvenlik duvarının arkasında barındırılan, doğru bağlantı noktalarının açık olduğunu doğrulayın gerekebilir.
 
-Bir Azure VM aracılığıyla bağlantı noktalarını açmanız gerekir [ağ güvenlik grubu](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
+Bir Azure VM aracılığıyla bağlantı noktalarını açmanız gerekir [ağ güvenlik grubu](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
 
 Gerekli bağlantı noktaları:
 

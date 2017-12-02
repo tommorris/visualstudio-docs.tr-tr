@@ -12,31 +12,32 @@ f1_keywords:
 - vs.csharp.refactoring.issues
 - vs.csharp.refactoring.buildwarning
 - VS.PreviewChanges
-dev_langs: CSharp
 helpviewer_keywords: refactoring [C#]
-ms.assetid: a39e656a-f81f-4c87-b484-a23168ff1dfc
-caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c76d0f8a11d28201bd82a7c654c4575fb3ada86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a03a5a8d7b8456f6c03646304dce0a85703bf1cc
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="refactoring-features-for-c"></a>C# yeniden düzenleme özellikleri #
-Yeniden düzenleme kod dış davranışını değiştirmeden kod iç yapısını değiştirerek yazıldıktan sonra kodunuzu iyileştirme işlemidir.  Aşağıdaki yeniden düzenleme özellikleri için C# Visual Studio'da kullanılabilir:
-  
+
+Yeniden düzenleme, yazıldıktan sonra kodunuzu iyileştirme işlemidir. Yeniden düzenleme kod iç yapısını davranışını değiştirmeden değiştirir. Aşağıdaki yeniden düzenleme özellikleri için C# Visual Studio'da kullanılabilir:
+
 * [Değişiklik yöntem imzası](refactoring/change-method-signature.md)
+* [GET yöntemi özellik/Get yöntemi özelliğine Dönüştür](refactoring/convert-get-method-to-property.md)
 * [Alanı Yalıt](refactoring/encapsulate-field.md)
 * [Ayıklama arabirimi](refactoring/extract-interface.md)
 * [Ayıklama yöntemi](refactoring/extract-method.md)
 * [Satır içi geçici değişkeni](refactoring/inline-temporary-variable.md)
+* [Başvuru yakın bildirimini taşıyın](refactoring/move-declaration-near-reference.md)
 * [Eşleşen dosyaya taşıma türü](refactoring/move-type-to-matching-file.md)
+* [Ulaşılamaz kod Kaldır](refactoring/remove-unreachable-code.md)
 * [Yeniden Adlandır](refactoring/rename.md)
 * [Eşitleme türü ve dosya adı](refactoring/sync-type-and-file.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio geliştirme ortamı C# için kullanma](using-the-visual-studio-development-environment-for-csharp.md)   
- 
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Visual Studio geliştirme ortamı C# için kullanma](using-the-visual-studio-development-environment-for-csharp.md)  

@@ -11,18 +11,19 @@ ms.assetid: b3c8cfc4-7c1f-4606-970e-3f7651604bab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d2972cfe2ea4481ab8f5eab6284277615d1d64a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f7193722e7ec1bee7c63e2495ed2d07155cc663b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="generate-an-override-in-c"></a>Bir geçersiz kılma C# ' ta oluştur #
-**Ne:** hemen kod hangi kılınabilir herhangi bir yöntem için bir taban sınıftan oluşturmanıza olanak sağlar. 
 
-**Ne zaman:** bir temel sınıf yöntemini geçersiz kılın ve imza otomatik olarak oluşturmak istediğiniz.  
+**Ne:** hemen bir taban sınıftan hangi kılınabilir herhangi bir yöntemini kodunu oluşturmak olanak tanır.
 
-**Neden:** ancak, bu özellik imza otomatik olarak oluşturur, yöntem imzası kendiniz yazabilirsiniz. 
+**Ne zaman:** bir temel sınıf yöntemini geçersiz kılın ve imza otomatik olarak oluşturmak istediğiniz.
+
+**Neden:** ancak, bu özellik imza otomatik olarak oluşturur, yöntem imzası kendiniz yazabilirsiniz.
 
 **Nasıl:**
 
@@ -34,11 +35,12 @@ ms.lasthandoff: 10/31/2017
 
    >[!TIP]
    >* Özellik simgesi kullanın ![Özellik simgesi](media/override_property.png) göstermek veya özellikler listesinde gizlemek için.
-   >* Yöntem simgesini kullanın ![Özellik simgesi](media/override_method.png) göstermek veya listede yöntemleri gizlemek için.
+   >* Yöntem simgesini kullanın ![Yöntem simgesi](media/override_method.png) göstermek veya listede yöntemleri gizlemek için.
 
 1. Seçilen yöntemi veya özelliği geçersiz kılma uygulanması için hazır sınıfa eklenir.
 
    ![Sonuç geçersiz kıl](media/override_result.png)
 
-## <a name="see-also"></a>Ayrıca Bkz.  
-[Kod oluşturma (C#)](../code-generation-csharp.md)  
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kod oluşturma (C#)](../code-generation-csharp.md)

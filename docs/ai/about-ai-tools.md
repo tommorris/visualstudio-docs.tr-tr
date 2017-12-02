@@ -10,11 +10,11 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.openlocfilehash: 6dd677f04396e3473f1de054393de66a57681192
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 90fcbd7e07ee4f18682d5cf914794982007088d0
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="visual-studio-tools-for-ai"></a>AI için Visual Studio Araçları
 
@@ -31,6 +31,8 @@ AI yenilik bugün hızlandırmak için Visual Studio üretkenlik özelliklerini 
 AI için Visual Studio Araçları CNTK, TensorFlow, MMLSpark ve daha fazlasını kullanarak örnek denemeleri galeriyi Gözat kolaylaştırmak için Azure Machine Learning ile tümleşiktir. 
 
 ![Örnek Gezgini](media\about\gallery.png)
+
+[Örnek Galeriden projeleri oluşturma hakkında daha fazla bilgi edinin](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Model eğitimi ve/veya buluta inferencing öğrenme derin ölçeğini genişletme
 Bu uzantı, yerel bilgisayarınızda modelleri eğitme kolaylaştırır veya Azure Machine Learning ile bizim tümleştirme kullanarak buluta işleri gönderebilirsiniz. İşlerini Spark kümeleri, Azure GPU sanal makineler ve daha fazlası gibi farklı işlem hedefleri gönderebilirsiniz  

@@ -13,15 +13,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 2d82fc0eb60b2680be9ed2bdb7de13313593da0d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 81b58a2162d7240e32e1fb2d45e462ec551155e7
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/29/2017
 ---
 1. Web dağıtımı Visual Studio ile uygulamalarınızı dağıtmak istiyorsanız, sunucuda Web Dağıtımı'nın en son sürümünü yükleyin.
 
-    Web dağıtımı yüklemek için kullandığınız [Web Platformu Yükleyicisi (Webpı)](https://www.microsoft.com/web/downloads/platform.aspx) veya doğrudan bir yükleyici elde [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). Web Dağıtımı'nın uygulamalar sekmesinde yeniden bulun. 
+    Web dağıtımı yüklemek için kullandığınız [Web Platformu Yükleyicisi (Webpı)](https://www.microsoft.com/web/downloads/platform.aspx). Web Dağıtımı'nın uygulamalar sekmesinde yeniden bulun. Doğrudan bir yükleyici edinebilirsiniz [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). 
 
 2. Web dağıtımı doğru açarak çalıştığından emin olun **Denetim Masası > Sistem ve Güvenlik > Yönetim Araçları > Hizmetler** emin olun **Web Dağıtım Aracı hizmeti** çalıştıran ( Hizmet adı eski sürümlerinde farklıdır).
 

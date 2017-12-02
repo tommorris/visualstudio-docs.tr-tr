@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc7ad92e708666baf1ab0429c041ca9b7d2e0f95
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 2e8da202cf8ae5680bede1ec4b2f2c8984624e4e
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>IntelliTrace adım geri kullanarak görünüm anlık görüntüler
 IntelliTrace adım sonradan bir anlık görüntüsünü her kesme ve hata ayıklayıcı uygulamanızın adım olay otomatik olarak alır. Kaydedilmiş anlık görüntüler, önceki kesme noktaları veya adımları geri dönün ve geçmişte haliyle uygulamanın durumunu görüntülemek etkinleştirin. IntelliTrace adım arka önceki uygulama durumu görmek istediğiniz ancak hata ayıklamayı yeniden başlatın veya istenen uygulama durumu yeniden istemediğiniz durumlarda size zaman kazandırabilir.
@@ -38,7 +38,7 @@ Kamera simgesine anlık görüntüleri kullanılabilir olayları yanında görü
 
 ## <a name="navigate-and-view-snapshots"></a>Gidin ve anlık görüntüleri görüntüleme
 
-Kullanarak olaylar arasında gezinebilirsiniz **adım geriye dönük** ve **İleri** hata ayıklama araç çubuğu düğmeleri. Bu düğmeleri görünür olayları gidin **olayları** sekmesinde **tanılama araçları penceresindeki**. İleri ve geri olaya otomatik olarak atlama geçmiş Seçili olayda hata ayıklamasını etkinleştirir.
+Kullanarak olaylar arasında gezinebilirsiniz **adım geriye dönük (Alt + [)** ve **İleri (Alt +])** hata ayıklama araç çubuğu düğmeleri. Bu düğmeleri görünür olayları gidin **olayları** sekmesinde **tanılama araçları penceresindeki**. İleri ve geri olaya otomatik olarak atlama geçmiş Seçili olayda hata ayıklamasını etkinleştirir.
 
 ![Geriye doğru adım ve İleri düğmelerini](../debugger/media/intellitrace-step-back-icons-description.png "adım geri ve İleri düğmeleri")
 

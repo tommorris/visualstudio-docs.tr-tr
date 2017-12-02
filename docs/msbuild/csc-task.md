@@ -21,11 +21,11 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0e36e4c9e01d7ee8f12a59f2fd72ee4ef6b83e9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d91a1a5fca1530f42e9781a09b2e9364daf8e15f
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="csc-task"></a>Csc Görevi
 CSC.exe sarmalar ve yürütülebilir dosyalar (.exe dosyaları), dinamik bağlantı kitaplıkları (.dll dosyaları) veya kod modülleri (.netmodule dosyaları) üretir. CSC.exe hakkında daha fazla bilgi için bkz: [C# Derleyici Seçenekleri](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -63,6 +63,7 @@ CSC.exe sarmalar ve yürütülebilir dosyalar (.exe dosyaları), dinamik bağlan
 |`NoWin32Manifest`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, varsayılan Win32 bildirimi dahil etmeyin.|  
 |`Optimize`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, iyileştirmeler sağlar. Varsa `false`, en iyi duruma getirme devre dışı bırakır. Daha fazla bilgi için bkz: [/ optimize (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).|  
 |`OutputAssembly`|İsteğe bağlı `String` çıkış parametresi.<br /><br /> Çıktı dosyası adını belirtir. Daha fazla bilgi için bkz: [/out (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option).|  
+|`OutputRefAssembly`|İsteğe bağlı `String` parametresi.<br /><br /> Çıktı başvurusu derleme dosyası adını belirtir. Daha fazla bilgi için bkz: [/refout (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option).|  
 |`PdbFile`|İsteğe bağlı `String` parametresi.<br /><br /> Hata ayıklama bilgileri dosya adını belirtir. Çıktı dosyası adını .pdb uzantılı varsayılan addır.|  
 |`Platform`|İsteğe bağlı `String` parametresi.<br /><br /> Çıkış dosyası tarafından hedeflenecek işlemci platformunu belirtir. Bu parametre değerini olabilir `x86`, `x64`, veya `anycpu`. Varsayılan değer `anycpu`. Daha fazla bilgi için bkz: [/Platform (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).|  
 |`References`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Geçerli projede belirtilen öğelerden genel tür bilgileri almak görev neden olur. Daha fazla bilgi için bkz: [/Reference (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Belirleyebileceğiniz bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] başvuru diğer adı içinde bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] meta veriler ekleyerek dosya `Aliases` özgün "Başvurusu" öğesine. Örneğin, diğer adı "LS1" aşağıdaki CSC komut satırında ayarlamak için şunu yazın:<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> kullanırsınız:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  

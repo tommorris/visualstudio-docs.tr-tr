@@ -8,11 +8,11 @@ ms.technology: vs-ide-general
 ms.date: 11/08/2017
 ms.topic: article
 helpviewer_keywords: editor
-ms.openlocfilehash: f8830b24aa763a1a59830d0dd15231673f1dfac3
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 6650faa7ed519c6237b459ac4278b6e90d7a5bc6
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>.NET geliştiricileri için Visual Studio 2017
 
@@ -84,6 +84,8 @@ Başka bir IDE içinden gelen veya ortam kodlama bu uzantıları faydalı birini
 - [Visual Studio (ReSharper/Intellij) için kısayol tuşları](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
+Popüler Visual Studio kısayolları verilmiştir. Bazı uzantılar varsayılan Visual Studio taşıyan bağlantısını ve komutlarını kullanmak için taşıyan geri unutmayın. Taşıyan Visual Studio'nun ayarlarına geri yüklemek için şu adrese gidin **Araçlar > içeri ve dışarı aktarma ayarları... > tüm ayarlara**.
+
 | Kısayol (tüm profilleri) | Komut | Açıklama |
 |-|-|-| 
 | **CTRL + T** | Tüm gidin | Herhangi dosya/tür/üye/simgesi bildirimine gidin |
@@ -95,6 +97,6 @@ Başka bir IDE içinden gelen veya ortam kodlama bu uzantıları faydalı birini
 | **F5** | Hata ayıklama başlatılamıyor | Uygulamanızı hata ayıklamayı Başlat |
 | **CTRL + F5'e** | Hata ayıklama olmadan çalıştırma | Uygulamanızı yerel olarak hata ayıklama olmadan çalıştırma |
 | **CTRL + K, D** (varsayılan profili) veya **Ctrl + E, D** (C# profili) | Belgeyi Biçimlendir | Yeni satır, aralık ve girinti ayarlarını göre dosyanızdaki ihlalleri biçimlendirme temizler |
-| **CTRL +\,E** (varsayılan profili) veya **Ctrl + W, E** (C# profili) | Görünüm hata listesi | Belge, proje veya çözüm tüm hatalar görebilirsiniz |
+| **CTRL +\\, E** (varsayılan profili) veya **Ctrl + W, E** (C# profili) | Görünüm hata listesi | Belge, proje veya çözüm tüm hatalar görebilirsiniz |
 
 

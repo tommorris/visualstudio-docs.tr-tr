@@ -8,22 +8,21 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 8876f8c1-4770-44dc-97d8-bf0035ae8196
 caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 34e6898ce5c45033c8ac984d014d462a34552776
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 6476de086aad812e40d3c5b638c2076d50adfb27
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="python-environments"></a>Python ortamları
 
-Visual Studio'da Python birden çok Python ortamlarını yönetebilir ve bunları farklı projeler için arasında kolayca geçiş daha kolay hale getirir. 
+Visual Studio'da Python birden çok Python ortamlarını yönetebilir ve bunları farklı projeler için arasında kolayca geçiş daha kolay hale getirir.
 
-Not: Visual Studio'da Python yeniyseniz, aşağıdaki konularda ilk bu sunmak gibi tartışma kullanır bunlar üzerine bakın:
+**Not**: Visual Studio'da Python yeniyseniz, aşağıdaki konularda ilk bu sunmak gibi tartışma kullanır bunlar üzerine bakın:
 
 - [Visual Studio'da Python ile çalışma](python-in-visual-studio.md)
 - [Visual Studio'da Python desteğini yükleme](installation.md)
@@ -50,8 +49,8 @@ Video bir giriş için bkz [yönetme Python ortamları](https://mva.microsoft.co
 
 Kodunuzu çalıştırmak için aşağıdakilerden birini yüklemeniz gerekir böylece dışında Visual Studio 2017 ile Python desteği bir Python yorumlayıcısı ile gelmez. Genel olarak, Visual Studio otomatik olarak yeni yüklenen yorumlayıcılar algılar ve her biri için bir ortamı ayarlama ayarlar. Yüklü bir ortam algılamazsa bkz [bir ortam için varolan bir yorumlayıcı oluşturma](#creating-an-environment-for-an-existing-interpreter).
 
-| Yorumlayıcı | Açıklama | 
-| --- | --- | 
+| Yorumlayıcı | Açıklama |
+| --- | --- |
 | [CPython](https://www.python.org/) | "Yerel" ve en sık kullanılan Yorumlayıcı, 32 bit ve 64 bit sürümleri (32-bit önerilir) içinde kullanılabilir. En son dil özellikleri, maksimum Python paket uyumluluk, hata ayıklama için tam destek ve birlikte çalışma içeren [IPython](http://ipython.org/). Ayrıca bkz: [Python 2 veya Python 3 kullanmalıyım?](http://wiki.python.org/moin/Python2orPython3). Visual Studio 2015 ve önceki Python 3.6 desteklemez ve "Python sürümü 3.6 desteklenmiyor" hata verebilirsiniz unutmayın. Python 3.5 veya önceki kullanmak yerine. |
 | [IronPython](https://github.com/IronLanguages/main) | Bir .NET uygulaması sağlama C# /F #/ Visual Basic birlikte çalışabilirliği, Python, 32 bit ve 64 bit sürümlerinde kullanılabilir olan erişim .NET API'leri, hata ayıklama standart Python (ancak değil C++ karışık modda hata ayıklama için) ve IronPython karma / C# hata ayıklama. IronPython, ancak sanal ortamları desteklemez. | 
 | [Anaconda](https://www.continuum.io) | Bir açık veri bilimi platform tarafından Python gücü ve CPython ve zor yükleme paketleri en son sürümünü içerir. Aksi takdirde karar veremez, öneririz. |
@@ -68,7 +67,7 @@ Python ortamları penceresini açmak için aşağıdakilerden birini yapın:
 1. Sağ **Python ortamları** seçip Çözüm Gezgini proje için **görünümü tüm Python ortamları**:
 
     ![Çözüm Gezgini'nde görünümü tüm ortamlar komutu](media/environments-view-all.png)
-    
+
 Her iki durumda da, Python ortamları penceresi Çözüm Gezgini eşdüzey sekmeye gibi görünür:
 
 ![Python ortamları penceresi](media/environments-default-view.png)
@@ -87,7 +86,7 @@ Yukarıdaki örnekte, Python 3.4 (32-bit CPython) IronPython 2.7 32 bit ve 64 bi
 
 Visual Studio normalde kayıt denetleyerek yüklü bir Python yorumlayıcısı bulur (aşağıdaki [CESARETLENDİRİCİ 514 - Python kayıt Windows kayıt defterinde](https://www.python.org/dev/peps/pep-0514/)). Ancak, standart olmayan bir biçimde yorumlayıcı yüklüyse, Visual Studio, bulamayabilir. Böyle durumlarda, Visual Studio yorumlayıcısı doğrudan aşağıdaki gibi gösterebilir:
 
-1. Seçin **+ özel...**  ortamları penceresinde, yeni bir ortam oluşturur ve açılır [ **yapılandırma** sekmesini](#configure-tab) aşağıda açıklanan.)
+1. Seçin **+ özel...**  içinde [Python ortamları penceresi](#managing-python-environments-in-visual-studio), yeni bir ortam oluşturur ve açılır [ **yapılandırma** sekmesini](#configure-tab) aşağıda açıklanan.)
 
     ![Yeni bir özel ortamı için varsayılan görünüm](media/environments-custom-1.png)
 
@@ -130,7 +129,6 @@ Başlatma komut dosyaları içeri aktarmalar, işlev tanımları ve tam anlamıy
 
 1. **Komut dosyaları** denetim **Araçlar > Seçenekler > Python araçları > Etkileşimli Windows** sekmesini (bkz [etkileşimli windows seçenekleri](options.md#interactive-windows-options)) ek bir belirtmek için tasarlanmıştır yüklenen ve tüm ortamlarda çalıştırmak başlatma komut dosyaları için bir klasör. Ancak, bu özellik şu anda çalışmıyor.
 
-
 ### <a name="configure-tab"></a>Yapılandır sekmesi
 
 Gösterilen, aşağıdaki tabloda açıklandığı gibi ayrıntıları içerir. Bu sekme yoksa, Visual Studio tüm ayrıntıları otomatik olarak yönetme anlamına gelir.
@@ -166,7 +164,6 @@ Seçme **her zaman yüklerken veya paketlerini kaldırma kullanımı ile yüksel
 
 Aynı sekmesi seçenekleri olduğunu, ayrıca seçebilirsiniz **her zaman PIP yönetici olarak çalıştır** iletişim kutusu tüm ortamlar için gizlemek için. Bkz: [seçenekler - Genel sekmesi](options.md#general-options).
 
-
 ### <a name="intellisense-tab"></a>IntelliSense sekmesi
 
 IntelliSense tamamlanma veritabanı geçerli durumunu gösterir:
@@ -179,7 +176,7 @@ Kendisi için veri henüz derlenmiş kitaplıkları ile işaretlenmiş bir **!**
 
 ## <a name="global-environments"></a>Genel ortamları
 
-Genel (veya sistem genelinde) ortamları için tüm projeleriniz bir makinede kullanılabilir. Visual Studio genellikle genel ortamları otomatik olarak algılar ve Python ortamları penceresinde görüntülenebilir. Bir ortam altında daha önce açıklandığı şekilde el ile değil, eklerseniz [yönetme Python ortamları Visual Studio'da](#managing-python-environments-in-visual-studio).
+Genel (veya sistem genelinde) ortamları için tüm projeleriniz bir makinede kullanılabilir. Visual Studio genellikle algılar genel ortamları otomatik olarak ve içinde görüntülenebilir [Python ortamları penceresi](#managing-python-environments-in-visual-studio). Aksi durumda, bir ortamda, aynı pencere el ile ekleyebilirsiniz.
 
 Visual Studio varsayılan ortam yürütme, hata ayıklama, sözdizimi denetimi, içeri aktarma ve üye tamamlamalar ve bir ortam gerektiren diğer görevler görüntüleme için tüm yeni projeler için kullanır. Varsayılan ortam değiştirme etkiler bulunmayan tüm projeleri bir [projeye özel ortam](#project-specific-environments) , sonraki bölümde açıklandığı gibi eklendi.
 
@@ -208,7 +205,6 @@ Yeni paketleri yüklemek için ortam sağ tıklayın, **Python paketini yükle..
 
 > [!Tip]
 > Paket yerel bileşenleri için kaynak kodunu içerir PIP nerede başarısız bir paketi yüklemek için yaygın bir durum olduğunda `*.pyd` dosyaları. Visual Studio yüklüyse gerekli sürümü, bu bileşenlerin PIP derlenemiyor. Bu durumda görüntülenen hata iletisi `error: Unable to find vcvarsall.bat`. `easy_install`önceden derlenmiş ikili dosyaları, genellikle indirebildiğini ve Python eski sürümleri için uygun bir derleyici indirebilirsiniz [http://aka.ms/VCPython27](http://aka.ms/VCPython27). Daha fazla ayrıntı için bkz: ["vcvarsallbat Bul kurulamıyor", sorunun nasıl](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) üzerinde Python araçları takım Web günlüğü.
-
 
 ## <a name="virtual-environments"></a>Sanal ortamlar
 
@@ -242,11 +238,11 @@ Bir proje başkalarıyla yapı sistemini kullanarak paylaşıyorsanız ya da pla
 
 Teknik olarak, dosya gereksinimleri izlemek için kullanılabilir (kullanarak `-r <full path to file>` bir paket yüklerken), ancak Visual Studio'nun sağladığı belirli desteği `requirements.txt`:
 
-- İçeren bir proje yüklerse `requirements.txt` ve dosya, projesine sağ tıklatın ve listelenen tüm paketleri yüklemek istediğiniz **Requirements.txt'ten Yükle**:
+- İçeren bir proje yüklerse `requirements.txt` ve bu dosyada listelenen paketleri yüklemek isterseniz, genişletin **Python ortamları** düğümünde **Çözüm Gezgini**, sonra sağ bir ortam düğümü ve select **Requirements.txt'ten Yükle**:
 
     ![Requirements.txt'ten yükle](media/environments-requirements-txt-install.png)
 
-- Projede yüklü tüm gerekli paketleri olduğunda, Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **requirements.txt Oluştur** gerekli dosya oluşturulamadı. Dosya zaten mevcutsa güncelleştirmek için bir istem görüntülenir:
+- Projede yüklü tüm gerekli paketler zaten varsa, Çözüm Gezgini'nde bir ortam sağ tıklatın ve seçin **requirements.txt Oluştur** gerekli dosya oluşturulamadı. Dosya zaten mevcutsa güncelleştirmek için bir istem görüntülenir:
 
     ![Güncelleştirme requirements.txt seçenekleri](media/environments-requirements-txt-replace.png)
 

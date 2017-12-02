@@ -9,11 +9,11 @@ Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 474f8f7dc5f3b3b0e1d8323801f650420fce4da0
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: d78531fd3635c010f83a4ebe3c446c8c4c33e943
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 #   <a name="how-to-buy-a-subscription"></a>Bir abonelik satın alma
 Visual Studio abonelik satın almak için üç yolu vardır.  
@@ -27,9 +27,9 @@ Visual Studio Professional ve Visual Studio Enterprise satın alabileceğiniz [a
 ### <a name="before-you-start"></a>Başlamadan önce
 
 *   Fatura, satın alma işlemleri için sahip olmanız gerekir bir [Azure aboneliği](https://azure.microsoft.com/en-us/pricing/purchase-options/). Yapabilecekleriniz [kaydolun](https://account.windowsazure.com/Subscriptions) ilk alımdan önce ya da Visual Studio Market'te ilk satın alma işleminiz sırasında.
-Hangi öğrenin [Azure abonelikleri](https://docs.microsoft.com/en-us/vsts/marketplace/marketplace-billing-qa) için Visual Studio Market satın alımları kullanabilirsiniz. 
+[Bilgi](https://docs.microsoft.com/en-us/vsts/marketplace/marketplace-billing-qa) hangi Azure abonelikleri için Visual Studio Market satın alımları kullanabilirsiniz. 
 
-*   Azure aboneliğiniz için kaydolun ve Visual Studio marketten satın almak için gerekir bir ["kişisel" Microsoft hesabı](https://www.microsoft.com/account) veya ["iş veya Okul hesabı"](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/) , kuruluşunuz için satın alma varsa ve Azure Active Directory (Azure AD) kimliklerle yönettikleri.
+*   Azure aboneliğiniz için kaydolun ve Visual Studio marketten satın almak için "kişisel" ihtiyaç duyarsınız [Microsoft hesabı](https://www.microsoft.com/account) veya ["iş veya Okul hesabı"](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/) , kuruluşunuz için satın alma varsa ve Azure Active Directory (Azure AD) kimliklerle yönettikleri.
 
 ### <a name="buy-subscriptions"></a>Abonelik satın alın
 
@@ -66,7 +66,7 @@ Veya, yoksa, yeni bir abonelik için kaydolun.
 <a name="manage-subscriptions"></a>
 ###  <a name="manage-purchased-visual-studio-subscriptions-as-administrator"></a>Yönetici olarak satın alınan Visual Studio aboneliklerini yönetme
 
-Visual Studio Market'te ve atamaları kullanıcılara satın aldığınız tüm Visual Studio abonelikleri görüntülemek için bu abonelikleri değiştirmek veya abonelik Yöneticisi olarak bu Abonelikleri iptal, Git [Visual Studio Abonelikleri Yönetim Portalı](https://manage.visualstudio.com/cloud)ve bu abonelik satın almak için kullanılan kimlik ile oturum açın.
+Visual Studio Market'te ve atamaları kullanıcılara satın aldığınız tüm Visual Studio abonelikleri görüntülemek için bu abonelikleri değiştirmek veya abonelik Yöneticisi olarak bu Abonelikleri iptal, Visual Studio abonelikleri gidin Yönetim [portal](https://manage.visualstudio.com/cloud)ve bu abonelik satın almak için kullanılan kimlik ile oturum açın.
 
 *   Satın alınan abonelik sayısını değiştirmek için:
 
@@ -76,11 +76,11 @@ Visual Studio Market'te ve atamaları kullanıcılara satın aldığınız tüm 
 
 ### <a name="view-visual-studio-subscriptions-assigned-to-you"></a>Size atanan Visual Studio abonelikleri görüntüleme
 
-Özellikle size atanan Visual Studio abonelikleri ve abonelik Avantajlarınızı görüntülemek için Visual Studio abonelikleri Portalı'na gidin (```https://my.visualstudio.com```).
+Özellikle size atanan Visual Studio abonelikleri ve abonelik Avantajlarınızı görüntülemek için Visual Studio abonelikleri Portalı'na gidin [https://my.visualstudio.com](https://my.visualstudio.com).
 
-<img alt="Visual Studio subscriptions portal, Subscriptions" src="_img/buy-vs-subscriptions/view-assigned-subscription-list-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Visual Studio subscriptions portal, Subscriptions" src="_img/buy-vs-subscriptions/view-assigned-subscription-list-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
 
-<img alt="Visual Studio subscriptions portal, Benefits" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Visual Studio subscriptions portal, Benefits" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
 
 ### <a name="marketplace-and-billing-qa"></a>Market ve faturalama soru- cevap
 
@@ -89,23 +89,23 @@ Ziyaret [Market ve faturalama soru- cevap](/vsts/marketplace/marketplace-billing
 ## <a name="buying-standard-subscriptions-through-the-microsoft-store"></a>Microsoft Store aracılığıyla satın alma standart abonelikleri
 Visual Studio standart abonelikleri Microsoft Store kullanılabilir.  Satın alma veya abonelik yenilemek için:
 
-1. Bağlanmak [Microsoft deposu](https://www.microsoft.com).
+1. Bağlanmak [Microsoft deposu](https://www.microsoft.com/store).
 2. Tıklayın **yazılım** sekmesi.
 3. Seçin **Profesyonel yazılım**.
 
-<img alt="Software Menu" src="_img/buy-vs-subscriptions/professional-software.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Software Menu" src="_img/buy-vs-subscriptions/professional-software.png" style="border: 1px solid #CCCCCC" />
 
 4. İçinde **alışveriş kategorileri** listesinde, seçin **Visual Studio**.
 
-<img alt="Categories List" src="_img/buy-vs-subscriptions/shop-categories.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Categories List" src="_img/buy-vs-subscriptions/shop-categories.png" style="border: 1px solid #CCCCCC" />
 
 5. İçinde **Atölye Visual Studio** listesinde, satın almak istediğiniz aboneliği seçin. (Visual Studio Professional 2017 IDE değişikliğine lisans ve bir aboneliğe dahil değildir.)
 
-<img alt="Visual Studio Products" src="_img/buy-vs-subscriptions/shop-visual-studio.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Visual Studio Products" src="_img/buy-vs-subscriptions/shop-visual-studio.png" style="border: 1px solid #CCCCCC" />
 
 6. Ürün açıklaması sayfasında, yeni bir abonelik satın alın veya yeni bir satın alma seçeneği gerekir.  İstenen abonelik türünüzü seçin ve Sepetiniz için ekleyin. 
 
-<img alt="Visual Studio Enterprise options" src="_img/buy-vs-subscriptions/enterprise-options.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Visual Studio Enterprise options" src="_img/buy-vs-subscriptions/enterprise-options.png" style="border: 1px solid #CCCCCC" />
 
 7. Sepetinizde tıklatın **Checkout** taşımak için düğmeyi **gözden geçirme ve Yerleştir sipariş** sayfası.  (Devam etmek için Microsoft Account oturum açmak gerekebilir.) 
 
@@ -138,5 +138,5 @@ Aboneliğinizi etkinleştirmek için:
 
 
 Birden çok abonelik yararları isteyen kuruluşlar bunları çeşitli toplu lisans (toplu lisans) programları üzerinden satın alabilirsiniz.  Toplu Lisans yetkili Microsoft Partners satılır.  
-Bilgi edinmek için nasıl [satın Toplu Lisanslama ile](https://www.microsoft.com/Licensing/how-to-buy/how-to-buy.aspx). Ziyaret [Market ve faturalama soru- cevap](/vsts/marketplace/marketplace-billing-qa) Visual Studio Market'te ve Azure faturalama geçici birden çok sık sorulan soruların yanıtlarını bulunamıyor. 
+Aracılığıyla satın öğrenin [Toplu Lisanslama](https://www.microsoft.com/Licensing/how-to-buy/how-to-buy.aspx). Ziyaret [Market ve faturalama soru- cevap](/vsts/marketplace/marketplace-billing-qa) Visual Studio Market'te ve Azure faturalama geçici birden çok sık sorulan soruların yanıtlarını bulunamıyor. 
 

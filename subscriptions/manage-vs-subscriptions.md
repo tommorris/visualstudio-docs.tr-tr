@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "En Visual Studio aboneliklerinizi dışında alma hakkında bilgi."
+Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 640dfcd7a337606982b97f6631cb836a2bffb16c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-subscriptions"></a>Aboneliklerini Yönetme
 ## <a name="signing-in-to-the-portal"></a>Portal oturumu açmada
@@ -31,16 +31,16 @@ Visual Studio abonelik Microsoft Store aracılığıyla satın aldığınız, et
 #### <a name="workschool-accounts"></a>İş/Okul hesapları
 Aboneliğinize iş/okulunuz tarafından sağlandıysa, Hoş Geldiniz e-posta alınan.  
 1.  Ziyaret [abone portalı](https://my.visualstudio.com/)
-2.  Yeni Visual Studio abonelik atandığı e-posta adresi girin. Bu adres abone olarak da tanımlanır **Hoş Geldiniz harf**. Gereksiz posta klasörleri varsa lütfen denetleyin **Hoş Geldiniz harf** alınmadı.
+2.  Yeni Visual Studio abonelik atandığı e-posta adresi girin. Bu adres abone olarak da tanımlanır **Hoş Geldiniz harf**. Hoş Geldiniz harf olmayan alındıysa gereksiz posta klasörleri gözden geçirin.
 3.  Tıklatın **devam**
-4.  Sizin için Kurumsal oturum sayfasına yönlendirilir.
+4.  Kurumsal oturum açma sayfasına yönlendirilir.
 5.  Parolanızı girin.
 6.  Tıklatın **oturum**.
 
 #### <a name="visual-studio-marketplace"></a>Visual Studio Market 
 Visual Studio marketten bir aylık veya yıllık bulut aboneliği satın aldıysanız, ziyaret [abone portalı](https://my.visualstudio.com/) ve oturum sağlanan abonelik satın aldığınızda Microsoft hesabı'oturum (MSA).
 #### <a name="using-a-workschool-account-with-a-microsoft-account-msa"></a>Bir Microsoft hesabı (MSA) ile bir iş/Okul hesabı kullanarak
-Kuruluşunuz Azure Active Directory sahiptir ancak bir Azure Active Directory yararlanan gerekebilir hesabı bulunmuyor **kişisel** oturum açma işlemi sırasında sağlanan seçenekleri.
+Kuruluşunuz Azure Active Directory sahiptir ancak ihtiyacınız olabilecek yararlanmak için bir Azure Active Directory hesabınız yoksa **kişisel** oturum açma işlemi sırasında sağlanan seçenekleri.
 1.  Lütfen gidin [abone portalı](https://my.visualstudio.com)
 2.  Yeni Visual Studio abonelik atandığı e-posta adresi girin. Bu adres abone olarak da tanımlanır **Hoş Geldiniz harf**.  (Hoş Geldiniz e-postayı almadıysanız, gereksiz posta klasörlerinizi denetleyin.)
 3.  Tıklatın **devam**
@@ -49,7 +49,7 @@ Kuruluşunuz Azure Active Directory sahiptir ancak bir Azure Active Directory ya
 6.  Tıklatın **oturum açın** 
 
 ### <a name="managing-multiple-subscriptions"></a>Birden çok aboneliklerini yönetme
-MY portal, bir tek geliştirilmiş portal deneyimi tüm Visual Studio abonelikleri ve programlar araya getirir.  Örneğin, Visual Studio Enterprise gibi standart bir abonelik iş aracılığıyla ve aylık Visual Studio Professional abonelik veya evde kullandığınız Visual Studio geliştirme Essentials üyelik olabilir. 
+Visual Studio abonelikleri portal, bir tek geliştirilmiş portal deneyimi tüm Visual Studio abonelikleri ve programlar araya getirir.  Örneğin, Visual Studio Enterprise gibi standart bir abonelik iş aracılığıyla ve aylık Visual Studio Professional abonelik veya evde kullandığınız Visual Studio geliştirme Essentials üyelik olabilir. 
 #### <a name="which-subscription-am-i-using"></a>Hangi aboneliği kullanıyorum?
 Avantajları sayfasında, kullanımdaki abonelik göze çarpacak şekilde mavi başlığında görüntülenir.  Ayrıca, sağ üst sayfasının de görüntülenir.
 
@@ -64,9 +64,9 @@ Avantajları sayfasında, kullanımdaki abonelik göze çarpacak şekilde mavi b
 #### <a name="if-your-subscription-is-not-visible"></a>Aboneliğinizi görünür değilse...
 - Süresi.  Yalnızca etkin abonelikleri abone Portalı'nda görüntülenir.
 - Farklı bir e-posta adresi ile ilişkilendirilebilir. Örneğin, bir Visual Studio Professional abonelik iş/Okul e-posta ile oturum açın ve Microsoft Account ilişkili bir Visual Studio geliştirme Essentials üyelik varsa, karşılık gelen e-posta adresi abonelik yalnızca görürsünüz Abone portalında oturum açmak için kullanılır.  Diğer abonelik görmek için oturumu kapatın ve sonra diğer e-posta adresinizle oturum gerekecektir.
-- Şirketiniz bir toplu lisans aboneliği satın alan, yöneticiniz bir abonelik için atanmamış.  
+- Şirketinizin toplu lisans aboneliği satın alan, yöneticiniz bir abonelik için atanmış olabilir değil veya başka bir kullanıcıya aboneliğinizi yeniden atandığında.  
 
-#### <a name="renewing-my-subscriptions"></a>My Abonelikleri yenileme
+### <a name="renewing-my-subscriptions"></a>My Abonelikleri yenileme
 **Standart abonelikleri**
 - Microsoft Store: aboneliğinizden satın aldıysanız [Microsoft Store](http://www.microsoft.com/store), onu var. de yenileyebilirsiniz. 
 - Toplu Lisans: Şirketiniz bir toplu lisans aboneliği satın alan, aboneliklerinizi yenilemek için bir satıcı yöneticinize başvurmanız gerekir.
@@ -81,7 +81,7 @@ Avantajları sayfasında, kullanımdaki abonelik göze çarpacak şekilde mavi b
 
 **Visual Studio geliştirme Essentials -** geliştirme Essentials ücretsiz bir programdır ve üyeliklerini son kullanma tarihi.  
 
-#### <a name="transferring-subscriptions"></a>Dosya aktarımı abonelikleri
+### <a name="transferring-subscriptions"></a>Dosya aktarımı abonelikleri
 Aboneliğinizi Microsoft Toplu Lisanslama ile satın alınan ve kuruluş içinde başka birinin yeniden atamak üzere gereksiniminiz varsa yöneticinize bunu sizin için gerekecektir. Perakende abonelikler için başka bir kullanıcının müşteri hizmetlerine başvurarak aktarılabilir.  Kapanış veya "Satış amaçlı olmayan" abonelik aktarılamaz. 
 
 
@@ -89,9 +89,9 @@ Aboneliğinizi Microsoft Toplu Lisanslama ile satın alınan ve kuruluş içinde
 
 #### <a name="changing-profile-information"></a>Profil bilgilerini değiştirme
 Kişi bilgileri ve Tercihler profilinizde kolayca değiştirebilirsiniz.  
-1.  Tıklatırsanız adınızın abone Portalı'nı sağ üst köşesindeki.
+1.  Abone Portalı'nı sağ üst köşesindeki sizin adınıza tıklayın.
 2.  Tıklatın **Düzenle profili** düğmesi.
-3.  Üzerinde **hakkında** sekmesini değiştirebilirsiniz adı, e-posta, ülke/bölge, profil resmi ve iletişim tercihleri.  "Tercihler" sekmesinde, tercih edilen dili, tarih ve saat düzenleri, saat dilimi ve kullanıcı arayüzü temasını seçebilirsiniz.  
+3.  Üzerinde **hakkında** sekmesini değiştirebilirsiniz adı, e-posta, ülke/bölge, profil resmi ve iletişim tercihleri.  Üzerinde **Tercihler** sekmesi, tercih edilen dili, tarih ve saat düzenleri, saat dilimi ve kullanıcı arayüzü temasını seçebilirsiniz.  
 4.  Değişikliklerinizi bitirdikten sonra tıklatın **kaydetmek**. 
 5.  Tarayıcınızın tıklatın **geri** avantajları sayfasına geri dönmek için düğmesi. 
 

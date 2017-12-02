@@ -8,22 +8,21 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 783da5fd-726c-4716-994e-aa04d6b75896
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: da14e15713e7c02dbd99bc0595e6ca19217a5cbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ac891c48a4d3d2276fa925dd6092d1bf1d72176d
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-cookiecutter-extension"></a>Cookiecutter uzantısını kullanarak
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) şablonları bulmak, şablon seçenekleri giriş ve projeler ve dosyaları oluşturmak için bir grafik kullanıcı arabirimi sağlar. Visual Studio 2017 ile eklemiştir ve Visual Studio'nun önceki sürümleri ayrı olarak yüklenebilir.
 
-Cookiecutter gerektirir Python 3.3 veya üzeri (32 bit veya 64 bit) veya Anaconda 3 4.2 veya üzeri (32 bit veya 64 bit). Uygun bir Python yorumlayıcısı kullanılabilir değilse, Visual Studio bir uyarı görüntüler. Visual Studio çalışırken bir Python yorumlayıcısı yüklerseniz, yeni yüklenen yorumlayıcı algılamak için Cookiecutter araç çubuğundaki Giriş düğmesini tıklatın.
+Cookiecutter gerektirir Python 3.3 veya üzeri (32 bit veya 64 bit) veya Anaconda 3 4.2 veya üzeri (32 bit veya 64 bit). Uygun bir Python yorumlayıcısı kullanılabilir değilse, Visual Studio bir uyarı görüntüler. Visual Studio çalışırken bir Python yorumlayıcısı yüklerseniz, yeni yüklenen yorumlayıcı algılamak için Cookiecutter araç çubuğundaki Giriş düğmesini tıklatın. (Bkz [Python ortamları](python-environments.md) genel ortamları hakkında daha fazla bilgi için.)
 
 Bir kez yüklendikten sonra seçin **Görünüm > Cookiecutter Explorer** onun penceresi açmak için:
 

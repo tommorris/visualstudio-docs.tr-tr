@@ -15,11 +15,11 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94db8d3bb95e254a3fa528a424048162916fce99
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 29022d14311e71b7ee33f5339f8e450c47d1ce5c
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="loading-vspackages"></a>VSPackages yükleniyor
 Yalnızca işlevleri gerekli olduğunda VSPackages Visual Studio'ya yüklenir. Örneğin, Visual Studio Proje Fabrika veya VSPackage uygulayan bir hizmeti kullanan bir VSPackage yüklenir. Bu özellik, mümkün olduğunda performansını artırmak kullanılan Gecikmeli yükleme adı verilir.  
@@ -72,61 +72,7 @@ Yalnızca işlevleri gerekli olduğunda VSPackages Visual Studio'ya yüklenir. �
   
      VSPackage başlatıldığında zorla `PackageToBeLoaded` yüklenemiyor.  
   
-     Zorla yüklenmesini VSPackage iletişimi için kullanılmaması gerekir. Kullanım [kullanma ve servisleri](../extensibility/using-and-providing-services.md) yerine.  
-  
-## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>Bir VSPackage kaydolmak için özel bir öznitelik kullanma  
- Belirli durumlarda Uzantınız için yeni bir kayıt öznitelik oluşturmanız gerekebilir. Kayıt öznitelikleri yeni kayıt defteri anahtarlarını eklemek veya mevcut anahtarlarına yeni değerler eklemek için kullanabilirsiniz. Yeni öznitelik öğesinden türetilmelidir <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, ve geçersiz kılmanız gerekir <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> ve <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> yöntemleri.  
-  
-## <a name="creating-a-registry-key"></a>Bir kayıt defteri anahtarı oluşturma  
- Aşağıdaki kodda özel öznitelik oluşturur bir **özel** kaydedilmekte olan VSPackage anahtarı altında alt anahtar.  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + @"}\Custom");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-    }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveKey(@"Packages\" + context.ComponentType.GUID + @"}\Custom");  
-}  
-  
-```  
-  
-## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Varolan bir kayıt defteri anahtarı altında yeni bir değer oluşturma  
- Mevcut bir anahtarı için özel değerler ekleyebilirsiniz. Aşağıdaki kod bir VSPackage kayıt anahtarı için yeni bir değer ekleme gösterir.  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + "}");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-                }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveValue(@"Packages\" + context.ComponentType.GUID, "NewCustom");  
-}  
-```  
+     Zorla yüklenmesini VSPackage iletişimi için kullanılmaması gerekir. Kullanım [kullanma ve servisleri](../extensibility/using-and-providing-services.md) yerine.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSPackages](../extensibility/internals/vspackages.md)

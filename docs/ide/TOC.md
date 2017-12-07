@@ -46,8 +46,7 @@
 # [Nasıl Yapılır: Visual Studio IDE’de Gezinme](how-to-move-around-in-the-visual-studio-ide.md)
 # Visual Studio Performansını İyileştirme
 ## [Visual Studio Başlangıç Süresini İyileştirme](optimize-visual-studio-startup-time.md)
-## [Visual Studio Performansıyla 
-İlgili İpuçları ve Püf Noktaları](visual-studio-performance-tips-and-tricks.md)
+## [Visual Studio Performansıyla İlgili İpuçları ve Püf Noktaları](visual-studio-performance-tips-and-tricks.md)
 # [Visual Studio’da Çözümler ve Projeler](solutions-and-projects-in-visual-studio.md)
 ## [Çözümler ve Projeler Oluşturma](creating-solutions-and-projects.md)
 ## [Proje öğeleri ekleme ve kaldırma](adding-and-removing-project-items.md)

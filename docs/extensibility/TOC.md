@@ -209,8 +209,7 @@
 ### [Paylaşılan ve Sürümü Tutulan VSPackage’lar Arasında Seçim Yapma](choosing-between-shared-and-versioned-vspackages.md)
 ### [Yan Yana Dağıtım için Dosya Adı Uzantılarını Kaydetme](registering-file-name-extensions-for-side-by-side-deployments.md)
 #### [Dosya Adı Uzantıları Hakkında](about-file-name-extensions.md)
-#### [Dosya Adı Uzantıları için Dosya 
-İşleyicileri Belirtme](specifying-file-handlers-for-file-name-extensions.md)
+#### [Dosya Adı Uzantıları için Dosya İşleyicileri Belirtme](specifying-file-handlers-for-file-name-extensions.md)
 #### [Dosya Adı Uzantıları için Fiil Kaydetme](registering-verbs-for-file-name-extensions.md)
 #### [Yan Yana Dosya İlişkilendirmelerini Yönetme](managing-side-by-side-file-associations.md)
 ## [Visual Studio'yu Bulma](locating-visual-studio.md)

@@ -1,0 +1,29 @@
+- name: AI için Visual Studio Araçları
+  href: index.yml
+  items:
+    - name: Genel Bakış
+      items:
+        - name: AI için Visual Studio Araçları Hakkında
+          href: about-ai-tools.md
+    - name: Yükleme
+      href: installation.md
+    - name: Hızlı Başlangıçlar
+      items:
+        - name: Tensorflow + Python
+          href: tensorflow-local.md
+    - name: Öğreticiler
+      items:
+        - name: TensorFlow + Azure Ayrıntılı Öğrenme Sanal Makinesi
+          href: tensorflow-vm.md
+    - name: Nasıl yapılır kılavuzları
+      items:
+        - name: Yeni bir proje oluşturma
+          href: create-project.md
+        - name: Modelinizi eğitin
+          href: train-model.md
+    - name: Örnekler
+      items:
+        - name: GitHub
+          href: 'https://github.com/Microsoft/samples-for-ai'
+        - name: Machine Learning Galerisi
+          href: 'https://gallery.cortanaintelligence.com/projects'

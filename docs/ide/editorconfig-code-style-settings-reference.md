@@ -1,7 +1,7 @@
 ---
 title: ".NET EditorConfig kuralı ayarlarını kodlama | Microsoft Docs"
 ms.custom: 
-ms.date: 10/13/2017
+ms.date: 12/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -14,17 +14,15 @@ helpviewer_keywords:
 - EditorConfig coding conventions
 - language conventions [EditorConfig]
 - formatting conventions [EditorConfig]
-ms.assetid: 
-caps.latest.revision: "1"
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 25db1488faef4ddb54af9831bee7ccd3d8479f76
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: e6ce48d060e340076b336083cb73bdd8145fc1a0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET EditorConfig kuralı ayarlarını kodlama
 
@@ -283,9 +281,9 @@ Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli programlama di
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Desteklenen sürüm |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# ve Visual Basic | for_non_interface_members: yok | Visual Studio 2017 sürüm 15,5 |
-| csharp_preferred_modifier_order | IDE0036 | C# | Genel, özel, korumalı, iç, statik extern, yeni, sanal, soyut ve korumalı, geçersiz kılma, salt okunur, güvenli olmayan, geçici, zaman uyumsuz: yok | Visual Studio 2017 sürüm 15,5 |
-| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom, Zaman uyumsuz: yok | Visual Studio 2017 sürüm 15,5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# ve Visual Basic | for_non_interface_members: yok | Visual Studio 2017 v. 15.5 |
+| csharp_preferred_modifier_order | IDE0036 | C# | Genel, özel, korumalı, iç, statik extern, yeni, sanal, soyut ve korumalı, geçersiz kılma, salt okunur, güvenli olmayan, geçici, zaman uyumsuz: yok | Visual Studio 2017 v. 15.5 |
+| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Kısmi, varsayılan, özel, korumalı, Public, arkadaş, NotOverridable, geçersiz kılınabilir, MustOverride, aşırı yüklemeleri, geçersiz kılmalar, MustInherit, NotInheritable, statik, paylaşılan, gölge, salt okunur, WriteOnly, boyutu, Const, WithEvents, genişletme, özel, daraltma Zaman uyumsuz: yok | Visual Studio 2017 v. 15.5 |
 
 **DotNet\_stili\_gerektiren\_accessibility_modifiers**  
 Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:  
@@ -293,7 +291,7 @@ Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine a�
 | Değer | Açıklama |
 | ----- |:----------- |
 | Her zaman | Belirtilecek accessbility değiştiricileri tercih |
-| for_non_interface_members | Genel arabirim üyeleri dışında bildirilmesi için erişilebilirlik değiştiricileri tercih eder. Bu şu anda farklı değil **her zaman** ve C# varsayılan arabirim yöntemleri eklerse, gelecekteki için sağlama olarak hareket eder. |
+| için\_olmayan\_interface_members | Genel arabirim üyeleri dışında bildirilmesi için erişilebilirlik değiştiricileri tercih eder. Bu şu anda farklı değil **her zaman** ve C# varsayılan arabirim yöntemleri eklerse, gelecekteki için sağlama olarak hareket eder. |
 | Hiçbir zaman | Erişilebilirlik değiştiricileri belirtilmesi tercih ediyorsunuz | 
 
 Kod örnekleri:  
@@ -577,126 +575,126 @@ Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli dil sürümler
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Desteklenen sürüm |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_style_expression_bodied_methods | IDE0022 | C# ' TA 6.0 + | hiçbir zaman: yok | Visual Studio 2017 sürüm 15.3 |
-| csharp_style_expression_bodied_constructors | IDE0021 | C# ' TA 7.0 + | hiçbir zaman: yok | Visual Studio 2017 sürüm 15.3 |
-| csharp_style_expression_bodied_operators | IDE0023 ve IDE0024 | C# ' TA 7.0 + | hiçbir zaman: yok | Visual Studio 2017 sürüm 15.3 |
-| csharp_style_expression_bodied_properties | IDE0025 | C# ' TA 7.0 + | when_possible: yok | Visual Studio 2017 sürüm 15.3 |
-| csharp_style_expression_bodied_indexers | IDE0026 | C# ' TA 7.0 + | when_possible: yok | Visual Studio 2017 sürüm 15.3 |
-| csharp_style_expression_bodied_accessors | IDE0027 | C# ' TA 7.0 + | when_possible: yok | Visual Studio 2017 sürüm 15.3 |  
+| csharp_style_expression_bodied_methods | IDE0022 | C# ' TA 6.0 + | false: yok | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_constructors | IDE0021 | C# ' TA 7.0 + | false: yok | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_operators | IDE0023 ve IDE0024 | C# ' TA 7.0 + | false: yok | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_properties | IDE0025 | C# ' TA 7.0 + | TRUE: yok | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_indexers | IDE0026 | C# ' TA 7.0 + | TRUE: yok | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_accessors | IDE0027 | C# ' TA 7.0 + | TRUE: yok | Visual Studio 2017 v. 15.3 |  
 
 **CSharp\_stili\_ifade\_bodied_methods**  
-Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:  
+Bu kural aşağıdaki tabloda değerleri kabul eder:  
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| when_possible | İfade bodied üyeleri yöntemleri için tercih ettiğiniz |
+| true | İfade bodied üyeleri yöntemleri için tercih ettiğiniz |
 | when_on_single_line | Tek bir satır olacak zaman ifade bodied üyeleri yöntemleri için tercih ettiğiniz |
-| Hiçbir zaman | Blok gövdeleri yöntemleri için tercih ettiğiniz | 
+| false | Blok gövdeleri yöntemleri için tercih ettiğiniz | 
 
 Kod örnekleri:  
 
 ```csharp
-// csharp_style_expression_bodied_methods = when_possible
+// csharp_style_expression_bodied_methods = true
 public int GetAge() => this.Age;
 
-// csharp_style_expression_bodied_methods = never
+// csharp_style_expression_bodied_methods = false
 public int GetAge() { return this.Age; }
 ```  
 
 **CSharp\_stili\_ifade\_bodied_constructors**  
-Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:  
+Bu kural aşağıdaki tabloda değerleri kabul eder:   
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| when_possible | İfade bodied üyeleri oluşturucuları için tercih ettiğiniz |
+| true | İfade bodied üyeleri oluşturucuları için tercih ettiğiniz |
 | when_on_single_line | Tek bir satır olacak zaman ifade bodied üyeleri oluşturucuları için tercih ettiğiniz |
-| Hiçbir zaman | Oluşturucuları bloğunun gövdeleri tercih |  
+| false | Oluşturucuları bloğunun gövdeleri tercih |  
 
 Kod örnekleri:  
 
 ```csharp
-// csharp_style_expression_bodied_constructors = when_possible
+// csharp_style_expression_bodied_constructors = true
 public Customer(int age) => Age = age;
 
-// csharp_style_expression_bodied_constructors = never
+// csharp_style_expression_bodied_constructors = false
 public Customer(int age) { Age = age; }
 ```  
 
 **CSharp\_stili\_ifade\_bodied_operators**  
-Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:  
+Bu kural aşağıdaki tabloda değerleri kabul eder:    
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| when_possible | İfade bodied üyeleri işleçleri için tercih ettiğiniz |
+| true | İfade bodied üyeleri işleçleri için tercih ettiğiniz |
 | when_on_single_line | Tek bir satır olacak zaman ifade bodied üyeleri işleçleri için tercih ettiğiniz |
-| Hiçbir zaman | Blok gövdeleri işleçlerini tercih |  
+| false | Blok gövdeleri işleçlerini tercih |  
 
 Kod örnekleri:  
 
 ```csharp
-// csharp_style_expression_bodied_operators = when_possible
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = true
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
     => new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
 
-// csharp_style_expression_bodied_operators = never
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = false
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```  
 
 **CSharp\_stili\_ifade\_bodied_properties**  
-Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:  
+Bu kural aşağıdaki tabloda değerleri kabul eder:   
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| when_possible | İfade bodied üyeleri özellikleri için tercih ettiğiniz |
+| true | İfade bodied üyeleri özellikleri için tercih ettiğiniz |
 | when_on_single_line | Tek bir satır olacak zaman ifade bodied üyeleri özellikleri için tercih ettiğiniz |
-| Hiçbir zaman | Blok gövdeleri özellikleri için tercih ettiğiniz |  
+| false | Blok gövdeleri özellikleri için tercih ettiğiniz |  
 
 Kod örnekleri:  
 
 ```csharp
-// csharp_style_expression_bodied_properties = when_possible
+// csharp_style_expression_bodied_properties = true
 public int Age => _age;
 
-// csharp_style_expression_bodied_properties = never
+// csharp_style_expression_bodied_properties = false
 public int Age { get { return _age; }}
 ```  
 
 **CSharp\_stili\_ifade\_bodied_indexers**  
-Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:  
+Bu kural aşağıdaki tabloda değerleri kabul eder:  
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| when_possible | Dizin oluşturucular için ifade bodied üyeleri tercih |
+| true | Dizin oluşturucular için ifade bodied üyeleri tercih |
 | when_on_single_line | Tek bir satır olacak zaman ifade bodied üyeleri dizin oluşturucular için tercih ettiğiniz |
-| Hiçbir zaman | Dizin oluşturucular için blok gövdeleri tercih | 
+| false | Dizin oluşturucular için blok gövdeleri tercih | 
 
 Kod örnekleri:  
 
 ```csharp
-// csharp_style_expression_bodied_indexers = when_possible
+// csharp_style_expression_bodied_indexers = true
 public T this[int i] => _value[i];
 
-// csharp_style_expression_bodied_indexers = never
+// csharp_style_expression_bodied_indexers = false
 public T this[int i] { get { return _values[i]; } }
 ```  
 
 **CSharp\_stili\_ifade\_bodied_accessors**  
-Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:  
+Bu kural aşağıdaki tabloda değerleri kabul eder:   
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| when_possible | İfade bodied üyeleri erişimciler için tercih ettiğiniz |
+| true | İfade bodied üyeleri erişimciler için tercih ettiğiniz |
 | when_on_single_line | Tek bir satır olacak zaman ifade bodied üyeleri erişimciler için tercih ettiğiniz |
-| Hiçbir zaman | Erişimcileri bloğu gövdeleri tercih | 
+| false | Erişimcileri bloğu gövdeleri tercih | 
 
 Kod örnekleri:  
 
 ```csharp
-// csharp_style_expression_bodied_accessors = when_possible
+// csharp_style_expression_bodied_accessors = true
 public int Age { get => _age; set => _age = value; }
 
-// csharp_style_expression_bodied_accessors = never
+// csharp_style_expression_bodied_accessors = false
 public int Age { get { return _age; } set { _age = value; } }
 ```  
 
@@ -705,12 +703,12 @@ public int Age { get { return _age; } set { _age = value; } }
 ```
 # CSharp code style settings:
 [*.cs]
-csharp_style_expression_bodied_methods = never:none
-csharp_style_expression_bodied_constructors = never:none
-csharp_style_expression_bodied_operators = never:none
-csharp_style_expression_bodied_properties = when_possible:suggestion
-csharp_style_expression_bodied_indexers = when_possible:suggestion
-csharp_style_expression_bodied_accessors = when_possible:suggestion
+csharp_style_expression_bodied_methods = false:none
+csharp_style_expression_bodied_constructors = false:none
+csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_properties = true:suggestion
+csharp_style_expression_bodied_indexers = true:suggestion
+csharp_style_expression_bodied_accessors = true:suggestion
 ```  
 
 #### <a name="pattern_matching">Desen eşleştirme</a>

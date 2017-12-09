@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d76ced1c908c832e9fd583eecc3419e57aeb76c7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio'da veri erişimi
 
@@ -104,7 +104,7 @@ REST hizmetlerini kullanma C++ programları kullanabilir [C++ REST SDK](https://
 
 Microsoft Azure Storage ile çalışma C++ programları kullanabilir [Microsoft Azure Storage istemcisi](http://www.nuget.org/packages/wastorage).
 
-Veri modelleme &mdash; Visual Studio için C++ ORM katman sağlamaz. [ODBC](http://www.codesynthesis.com/products/odb/) popüler açık kaynak ORM C++ için değil.
+Veri modelleme&mdash;Visual Studio için C++ ORM katman sağlamaz. [ODBC](http://www.codesynthesis.com/products/odb/) popüler açık kaynak ORM C++ için değil.
 
 C++ uygulamaları veritabanlarına bağlanma hakkında daha fazla bilgi için bkz: [C++ için Visual Studio veri Araçları](../data-tools/visual-studio-data-tools-for-cpp.md). Eski Visual C++ veri erişim teknolojileri hakkında daha fazla bilgi için bkz: [veri erişimi](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b).
 
@@ -139,13 +139,13 @@ Geliştiricilere doğrudan ilişkisel veritabanı yerine kavramsal bir modele g�
 [WCF Veri Hizmetleri 4.5](/dotnet/framework/data/wcf/index)  
 Nasıl kullanılacağını açıklar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] uygulayan veri Hizmetleri web ya da intranet üzerinde dağıtmak için [açık veri Protokolü (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
-[Office çözümlerindeki veriler](/office-dev/office-dev/data-in-office-solutions)  
+[Office Çözümlerindeki Veriler](/office-dev/office-dev/data-in-office-solutions)  
 Office çözümlerinde verilerin nasıl çalıştığını açıklayan konulara bağlantılar içerir. Burada şema tabanlı programlama, verileri önbelleğe alma ve sunucu tarafında veri erişimi hakkında bilgiler bulunur.
 
 [LINQ (dil ile tümleşik sorgu)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
 C# ve Visual Basic'te yerleşik olarak bulunan sorgu özelliklerinin yanı sıra ilişkisel veritabanlarını, XML belgelerini, veri kümelerini ve bellek içi koleksiyonları sorgulamak için kullanılan ortak modeli açıklar.
 
-[Visual Studio'daki XML araçları](../xml-tools/xml-tools-in-visual-studio.md)  
+[Visual Studio'daki XML Araçları](../xml-tools/xml-tools-in-visual-studio.md)  
 XML veri, hata ayıklama XSLT, .NET Framework XML özellikleri ile çalışma ve XML sorgusu mimarisini açıklar.
 
 [XML belgeleri ve verileri](/dotnet/standard/data/xml/index)  

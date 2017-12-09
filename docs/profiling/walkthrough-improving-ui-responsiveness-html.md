@@ -22,14 +22,14 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4747a1e2c0d9d7c20fe0856becb4cd42d1e847
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>İzlenecek yol: UI yanıtlama hızı (HTML) artırma
-Tanımlama ve kullanarak bir performans sorunu düzeltme sürecinde sizi bu kılavuzda [HTML UI yanıtlama hızı Profil Oluşturucusu](../profiling/html-ui-responsiveness.md). Profil Oluşturucu JavaScript kullanarak Visual Studio için Windows evrensel ve UWP uygulamaları mevcut değil. Bu senaryoda, DOM öğeleri çok sık güncelleştirmeler bir performans testi uygulaması oluşturma ve tanımlamak ve bu sorunu gidermek için profil oluşturucu kullanın.  
+Tanımlama ve kullanarak bir performans sorunu düzeltme sürecinde sizi bu kılavuzda [HTML UI yanıtlama hızı Profil Oluşturucusu](../profiling/html-ui-responsiveness.md). Profil Oluşturucu, JavaScript kullanarak UWP uygulamalar için Visual Studio'da kullanılabilir. Bu senaryoda, DOM öğeleri çok sık güncelleştirmeler bir performans testi uygulaması oluşturma ve tanımlamak ve bu sorunu gidermek için profil oluşturucu kullanın.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Uygulama testi oluşturma ve performans çalıştırma  
   

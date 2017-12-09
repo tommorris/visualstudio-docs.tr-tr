@@ -18,11 +18,11 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b907be5e46b6d8d33232d120d4229b0e205f948b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: cdb7339c902c94dc0052b1bd4d0570247069dc01
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Performans profili oluşturma Başlangıç Kılavuzu
 Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözümlemek için kullanabilirsiniz. Bu yordam nasıl kullanılacağını gösterir **CPU kullanımı** sekmesi, uygulamanız için performans verilerini almak için tanılama araçları. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET, dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
@@ -108,7 +108,6 @@ CPU kullanımı altında işlevlerin listesi inceleyerek, en fazla çalışmayı
     Başlık hem de bu görünümde seçili işlevi görüntülenir **geçerli işlevi** kutusunu (Bu örnekte, GetNumber). Solda'nin altında gösterilen geçerli işlevini çağırdı işlevi **işlevi çağırma**, ve geçerli işlev tarafından çağrılan tüm işlevler gösterilir **çağrılan işlevler** sağdaki kutusu. (Geçerli işlevi değiştirmek için ya da kutusunu seçebilirsiniz.)
 
     Bu görünüm toplam süre (ms) ve genel uygulamayı işlevi tamamlamak için geçen zaman yüzdesini gösterir.
-
     **İşlev gövdesi** ayrıca toplam zamanı (ve zamanı yüzdesi) işlev gövdesine harcanan zaman hariç içinde arama harcanan ve işlevleri adlı gösterilmektedir. (Bu örnekte, 3713 dışı 3729 ms işlev gövdesine harcanan ve kalan 16 ms bu işlev tarafından çağrılan dış kodunda harcanan).
 
     > [!TIP]
@@ -157,7 +156,7 @@ Aradığınız bir düğüm bulmak için arama kutusunu kullanın, sonra veriler
 </div>
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [[Bellek kullanımı](../profiling/memory-usage.md)  
+ [Bellek kullanımı](../profiling/memory-usage.md)  
  [CPU kullanımı](../profiling/cpu-usage.md)  
  [Visual Studio'da profil oluşturma](../profiling/index.md)  
  [Özellik turu profil oluşturma](../profiling/profiling-feature-tour.md)

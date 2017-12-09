@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 12/01/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
-ms.openlocfilehash: da943c4315552a8eab6aa9239e147f48a1c6bf4c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 4f202f1a000951616b49d7614bc91e71aa2457f6
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Takım Gezgini 2017 bileşen dizini
 
@@ -43,6 +43,7 @@ Bu kimlikleri kullanma hakkında daha fazla bilgi için bkz: [Visual Studio 2017
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Visual Studio çekirdek Düzenleyicisi | 15.0.26606.0 | Gerekli
+Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Visual Studio Başlangıç sayfası C++ kullanıcılar için | 15.0.27128.1 | İsteğe Bağlı
 
 ## <a name="unaffiliated-components"></a>Unaffiliated bileşenleri
 
@@ -63,8 +64,8 @@ Birkaç diğer destek seçenekleri şunlardır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md)
+* [Visual Studio iş yükü ve bileşen kimlikleri](workload-and-component-ids.md)
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
-* [Visual Studio'yu yüklemek için komut satırı parametreleri kullanma](use-command-line-parameters-to-install-visual-studio.md)
+* [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
   * [Komut satırı parametresi örnekleri](command-line-parameter-examples.md)
-* [Visual Studio çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
+* [Visual Studio’nun çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)

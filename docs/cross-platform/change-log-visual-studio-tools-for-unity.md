@@ -12,14 +12,47 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 3f5569a6f6d5bb51db61292e3ba12b16dbc201b9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: f33a7f43fdd52103fcd041d1f6502b88677eef1e
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Değişiklik günlüğü (Unity için Visual Studio Araçları)
 Unity için Visual Studio Araçları günlük değiştirin.  
+
+## <a name="3502"></a>3.5.0.2
+ Yayımlanan 2017-12-04
+
+### <a name="new-features"></a>Yeni Özellikler  
+
+-   **Tümleştirme:**  
+
+    -   Artık Unity'de bir betik eklediğinizde veya kaldırdığınızda Unity projeleri Visual Studio'da otomatik olarak yeniden yükleniyor.
+
+-   **Hata Ayıklayıcı:**  
+
+    -   Unity Düzenleyicisi'ni hata ayıklamak için Xamarin ve Mac için Visual Studio tarafından paylaşılan Mono hata ayıklayıcı kullanmak için bir seçenek eklenmiştir.
+
+    -   Taşınabilir hata ayıklama simge dosyaları için destek eklendi.
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri  
+
+-   **Tümleştirme:**  
+
+    -   Kurulum bağımlılıkları sorunlar giderildi.
+
+    -   Sabit Unity API Yardım menü görünmüyor.
+    
+-   **Proje oluşturma:**  
+
+    -   Sabit player proje oluşturma IL2CPP/.NET 4.6 arka ucu ile UWP oyun üzerinde çalışırken.
+    
+    -   Yanlış derleme filename eklenen ek .dll uzantısına sabit.
+    
+    -   Belirli bir proje API uyumluluk düzeyi yerine genel bir sabit kullanımı.
+    
+    -   Varsayılan 'true' olarak AllowAttachedDebuggingOfEditor Unity bayrağı zorlamaz.
 
 ## <a name="3402"></a>3.4.0.2
  Yayımlanan 2017-09-19
@@ -59,7 +92,7 @@ Unity için Visual Studio Araçları günlük değiştirin.
 
 -   **Proje oluşturma:**  
 
-    -   Visual Studio çözümü oluşturma Unity 5.5 ve önceki sürümlerde düzeltin.
+    -   Visual Studio çözümü oluşturma sabit Unity 5.5 ve önceki sürümleri.
 
 ## <a name="3300"></a>3.3.0.0
  Yayımlanan 2017-08-14

@@ -10,7 +10,6 @@ ms.topic: article
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
-- Code Snippet Inserter [J#]
 - Code Snippet Inserter [C#]
 - Visual C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
@@ -18,11 +17,11 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 72e0e00fb5495946adcd7f47de8cdc2d6e0d32dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c54a6f5b39136a56753facce4c4f1e5a656fbb36
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# Kod Parçacıkları
 Kod parçacıkları, kodunuza hızla ekleyebilirsiniz kodunun hazır parçacıklarıdır. Örneğin, `for` kod parçacığını oluşturur boş bir `for` döngü. Bazı kod parçacıkları, kod satırlarını seçmenizi sağlar ve ardından kod seçili satırları içeren bir kod parçacığı Çevrele kod parçacıklarını, ' dir. Örneğin, ne zaman, kod satırı seçin ve ardından etkinleştirmeniz `for` kod parçacığını oluşturduğu bir `for` döngü Bu döngü bloğunun kod satırları ile. Kod parçacıkları daha hızlı, kolay ve daha güvenilir kod yazma programını yapabilirsiniz.  
@@ -79,4 +78,4 @@ Kod parçacıkları, kodunuza hızla ekleyebilirsiniz kodunun hazır parçacıkl
  [Kod parçacığı işlevleri](../ide/code-snippet-functions.md)   
  [Kod parçacıkları](../ide/code-snippets.md)   
  [Şablon parametreleri](../ide/template-parameters.md)   
- [Nasıl yapılır: Çevrele kod parçacıklarını kullanma](../ide/how-to-use-surround-with-code-snippets.md)   
+ [Nasıl Yapılır: Şununla Çevrele Kod Parçacıklarını Kullanma](../ide/how-to-use-surround-with-code-snippets.md)   

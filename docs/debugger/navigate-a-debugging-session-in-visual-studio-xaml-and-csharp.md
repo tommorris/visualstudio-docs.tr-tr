@@ -17,11 +17,11 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c7679aff620b415a8b3c7f7b226d808d0f3f492
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Visual Studio’da (Xaml ve C#) bir hata ayıklama oturumunda gezinme
 Bu Hızlı Başlangıç, Visual Studio hata ayıklama oturumları gidin ve görüntülemek ve bir oturumda program durumu değiştirmek gösterir.  
@@ -52,7 +52,7 @@ Bu Hızlı Başlangıç, Visual Studio hata ayıklama oturumları gidin ve gör�
   
  **MainPage.xaml.cs kaynak dosyasını açın.** XAML Düzenleyicisi'nde herhangi bir yere sağ tıklatın ve seçin **görünümü kodu**. MainPage.xaml.cs arka plan kod dosyası görüntülenir. Bu yalnızca bir yöntem Not `MainPage()` oluşturucusu, dosyada listelenen.  
   
- **MainPage Oluşturucusu örnek kod ile değiştirin.** MainPage() yöntemi silin. Bu bağlantıyı izleyin: [hata ayıklayıcı, gezinti örnek kod (Xaml ve C#)](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)ve ardından panoya C# bölümünde listelenen kodu kopyalayın. (Seçin **geri** tarayıcı ya da bu hızlı başlangıç sayfasına dönmek için Yardım Görüntüleyicisi.) Visual Studio düzenleyicisinde kodda Yapıştır `partial class MainPage` bloğu. Dosyayı kaydetmek için CTRL + s seçin.  
+ **MainPage Oluşturucusu örnek kod ile değiştirin.** MainPage() yöntemi silin. Bu bağlantıyı izleyin: [hata ayıklayıcı, gezinti örnek kod (Xaml ve C#)](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-xaml-and-csharp.cs)ve ardından panoya C# bölümünde listelenen kodu kopyalayın. (Seçin **geri** tarayıcı ya da bu hızlı başlangıç sayfasına dönmek için Yardım Görüntüleyicisi.) Visual Studio düzenleyicisinde kodda Yapıştır `partial class MainPage` bloğu. Dosyayı kaydetmek için CTRL + s seçin.  
   
  Şimdi bu konudaki örnekler birlikte izleyebilirsiniz.  
   

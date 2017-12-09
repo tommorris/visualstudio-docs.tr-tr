@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ede4bd9594e3bb19f081d8a7343f5a0c08003cad
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 338f80724598a3c89dcde3806511427b81bffca4
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Sorun Giderme ve Bilinen Sorunlar (Unity için Visual Studio Araçları)
 Bu bölümde, bilinen sorunların açıklamaları Unity için Visual Studio Araçları ile sık karşılaşılan sorunlara çözümler bulmak ve hata bildirimi tarafından Unity için Visual Studio Araçları geliştirmek nasıl yardımcı olabileceğini öğrenin.  
@@ -25,7 +25,7 @@ Bu bölümde, bilinen sorunların açıklamaları Unity için Visual Studio Ara�
 Unity için Visual Studio Araçları ile ilgili bazı yaygın sorunları gidermek için aşağıdaki bölümlere bakın.  
 
 ### <a name="visual-studio-crashes"></a>Visual Studio kilitleniyor
-Bu nedeniyle bozulmasını Visual Studio MEF önbelleği olabilir.
+Bu, Visual Studio MEF önbelleği bozuk nedeniyle olabilir.
 
 MEF önbelleği sıfırlamak için şu klasörü kaldırmalısınız (Lütfen Visual Studio bunu yapmadan önce Kapat):
 
@@ -62,7 +62,8 @@ Visual Studio belirli bir kesme noktası için bir kaynak konumu bulamıyor ise 
 ### <a name="unable-to-attach"></a>İliştirilemiyor
 -   Geçici olarak virüsten koruma devre dışı bırakmak veya VS ve Unity için dışlama kuralları oluşturmak deneyin.
 -   Geçici olarak güvenlik duvarınızı devre dışı veya TCP/UDP ağ VS Unity arasındaki izin vermek için kurallar oluşturmak deneyin.
--   Belirledik programları takım Görüntüleyicisi gibi işlem algılamasıyla engel oluyor, belki de bir şey değiştirirseniz görmek için geçici olarak ek yazılımları durdurmayı deneyebilirsiniz.
+-   Programları takım Görüntüleyicisi gibi işlem algılamasıyla engel oluyor tanımlanan; belki de bir şey değişirse görmek için geçici olarak ek yazılımları durdurmayı deneyebilirsiniz.
+-   VSTU yalnızca "Unity.exe" işlemlerini izleme gibi ana Unity yürütülebilir adlandırmayın.
 
 ### <a name="unable-to-debug-android-players"></a>Android oynatıcıları hata ayıklamak için
 Çok noktaya yayın kullanıyoruz (Unity tarafından kullanılan varsayılan bir mekanizma olan) player algılamasını, ancak bundan sonra normal bir TCP bağlantısı hata ayıklayıcısını kullanırız. Android cihazlar için ana sorunu algılama aşamasıdır.

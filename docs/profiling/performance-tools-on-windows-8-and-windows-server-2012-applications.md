@@ -12,14 +12,14 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6e71a7cc3200de9570ee0545bbc60e59943a693
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 83bd33e6da9795a7e4e638fa91612e930a882cb0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 ve Windows Server 2012 uygulamaların performans araçları
-Windows 8 ve Windows Server 2012'de başlangıç Gelişmiş güvenlik özellikleri şekilde Visual Studio performans araçları de yapılan önemli değişiklikler bu platformlarda veri toplama gereklidir. UWP uygulamalar için yeni koleksiyon teknikler de gerekir. Bu konu için başlangıç'ı Windows 8 ve Windows Server 2012 platformları performans araçları değişiklikleri açıklar.
+Windows 8 ve Windows Server 2012'de başlangıç Gelişmiş güvenlik özellikleri şekilde Visual Studio performans araçları de yapılan önemli değişiklikler bu platformlarda veri toplama gereklidir. UWP uygulamalar için yeni koleksiyon teknikler de gerekir. Bu konu, Windows 8 ve Windows Server 2012 platformlarda itibaren performans araçları için değişiklikleri açıklar.
   
 > [!NOTE]
 >  Performans araçları Windows (Windows 7, Windows Server 2008 R2), desteklenen diğer sürümleri için değişmemiştir.
@@ -58,7 +58,7 @@ Windows 8 ve Windows Server 2012'de başlangıç Gelişmiş güvenlik özellikle
   
  [Yerel makinede UWP uygulamaları çalıştırma](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
- [Bir uzak makinede UWP uygulamaları çalıştırma](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
+ [Uzak makinede UWP uygulamaları çalıştırma](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
  [Profil Araçları](profiling-tools.md)  
   

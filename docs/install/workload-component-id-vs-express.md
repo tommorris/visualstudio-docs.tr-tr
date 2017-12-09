@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 12/01/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.openlocfilehash: e3f2a67b37d4e6ef6ad7b5e1a946847f63d12903
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 124a40e4e8f4b713e17aa05f95efccc5fcec3589
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="visual-studio-desktop-express-2017-workload-and-component-ids"></a>Visual Studio Masaüstü Express 2017 iş yükü ve Bileşen kimlikleri
 
@@ -44,10 +44,10 @@ Bu kimlikleri kullanma hakkında daha fazla bilgi için bkz: [Visual Studio 2017
 
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce | ClickOnce yayımlama | 15.0.26919.1 | Gerekli
-Microsoft.Component.HelpViewer | Yardım Görüntüleyicisi | 15.0.26711.1 | Gerekli
-Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Gerekli
-Microsoft.Component.VC.Runtime.OSSupport | UWP için Visual C++ çalışma zamanı | 15.0.26621.2 | Gerekli
+Microsoft.Component.ClickOnce | ClickOnce yayımlama | 15.0.27019.1 | Gerekli
+Microsoft.Component.HelpViewer | Yardım Görüntüleyicisi | 15.0.27005.2 | Gerekli
+Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Gerekli
+Microsoft.Component.VC.Runtime.OSSupport | UWP için Visual C++ çalışma zamanı | 15.0.27019.1 | Gerekli
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 hedefleme paketi | 15.0.26621.2 | Gerekli
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 hedefleme paketi | 15.0.26621.2 | Gerekli
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 paketi hedefleme | 15.0.26621.2 | Gerekli
@@ -55,14 +55,14 @@ Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.0.26621.2 | Ge
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.0.26621.2 | Gerekli
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 paketi hedefleme | 15.0.26621.2 | Gerekli
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 paketi hedefleme | 15.0.26621.2 | Gerekli
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.0.26606.0 | Gerekli
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.0.27005.2 | Gerekli
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4 – 4.6 geliştirme araçları | 15.0.26606.0 | Gerekli
-Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama araçları | 1.10.50614.2 | Gerekli
+Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama araçları | 1.10.50912.1 | Gerekli
 Microsoft.VisualStudio.Component.CoreEditor | Visual Studio çekirdek Düzenleyicisi | 15.0.26606.0 | Gerekli
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 araçları | 15.0.26208.0 | Gerekli
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 15.0.26621.2 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 15.0.26208.0 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 15.0.26711.1 | Gerekli
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 15.0.27128.1 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 15.0.27019.1 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 15.0.27019.1 | Gerekli
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL çalışma zamanı | 15.0.26606.0 | Gerekli
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.SQL.CMDUtils | SQL Server komut satırı yardımcı programları | 15.0.26208.0 | Gerekli
@@ -72,15 +72,15 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.2620
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 15.0.26906.1 | Gerekli
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 15.0.26208.0 | Gerekli
-Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI desteği | 15.0.26823.1 | Gerekli
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Visual C++ Derleyicileri ve ARM için kitaplıkları | 15.0.26906.1 | Gerekli
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Visual C++ Derleyicileri ve ARM64 için kitaplıkları | 15.0.26906.1 | Gerekli
+Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI desteği | 15.0.27019.1 | Gerekli
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Visual C++ Derleyicileri ve ARM için kitaplıkları | 15.0.27019.1 | Gerekli
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Visual C++ Derleyicileri ve ARM64 için kitaplıkları | 15.0.27019.1 | Gerekli
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK'sı (10.0.14393.0) | 15.0.26208.0 | Gerekli
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 Masaüstü C++ [x86 hem x64] için SDK (10.0.16299.0) | 15.0.27004.2002 | Gerekli
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 Masaüstü C++ [ARM ve ARM64] için SDK (10.0.16299.0) | 15.0.27004.2002 | Gerekli
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 için SDK'sı (10.0.16299.0) UWP: C#, VB, JS | 15.0.27004.2002 | Gerekli
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 için SDK'sı (10.0.16299.0) UWP: C++ | 15.0.27004.2002 | Gerekli
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 Masaüstü C++ [x86 hem x64] için SDK (10.0.16299.0) | 15.0.27128.1 | Gerekli
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 Masaüstü C++ [ARM ve ARM64] için SDK (10.0.16299.0) | 15.0.27128.1 | Gerekli
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 için SDK'sı (10.0.16299.0) UWP: C#, VB, JS | 15.0.27128.1 | Gerekli
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 için SDK'sı (10.0.16299.0) UWP: C++ | 15.0.27128.1 | Gerekli
 
 ## <a name="unaffiliated-components"></a>Unaffiliated bileşenleri
 
@@ -101,8 +101,8 @@ Birkaç diğer destek seçenekleri şunlardır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md)
+* [Visual Studio iş yükü ve bileşen kimlikleri](workload-and-component-ids.md)
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
-* [Visual Studio'yu yüklemek için komut satırı parametreleri kullanma](use-command-line-parameters-to-install-visual-studio.md)
+* [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
   * [Komut satırı parametresi örnekleri](command-line-parameter-examples.md)
-* [Visual Studio çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
+* [Visual Studio’nun çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)

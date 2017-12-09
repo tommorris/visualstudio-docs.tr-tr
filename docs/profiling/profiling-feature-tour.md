@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e2422774a9bf588b77aeaff81f8529906b68549
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="profiling-feature-tour"></a>Özellik turu profil oluşturma
 
@@ -152,7 +152,7 @@ Visual Studio sunar farklı araçlar listeleyen bir tablo işte ve farklı proje
 |Performans aracı|Windows Masaüstü|Windows Evrensel/deposu|ASP.NET/ASP.NET çekirdek|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Bellek kullanımı](../profiling/memory-usage.md)|Evet|Evet|Evet|  
-|[CPU kullanımı](../profiling/cpu-usage.md)|Evet|Evet|Evet|  
+|[CPU kullanımı](../profiling/cpu-usage.md)|Evet|Evet|Evet (Hayır için .NET Core/ASP.NET çekirdek)|  
 |[GPU kullanımı](../debugger/gpu-usage.md)|Evet|Evet|Yok|  
 |[Uygulama zaman çizelgesi](../profiling/application-timeline.md)|Evet|Evet|Yok|  
 |[PerfTips](../profiling/perftips.md)|Evet|HTML için Hayır XAML için Evet|Evet|  

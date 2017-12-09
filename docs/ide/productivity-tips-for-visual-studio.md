@@ -7,45 +7,28 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 803a1a94fe3eaa1bc63d59e9de2a42711f502262
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: fe42e4d2a61b4166d8a69b7c90cf212c36610bd2
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
-# <a name="productivity-tips-for-visual-studio"></a>Visual Studio için Üretkenlik İpuçları
+# <a name="productivity-tips-for-visual-studio"></a>Visual Studio için üretkenlik ipuçları
 
-Aşağıdaki ipuçlarını uygulayarak, daha hızlı ve verimli bir şekilde yazma gidin ve kodunuzu Visual Studio'da hata ayıklama. Ortak klavye kısayolları hakkında daha fazla bilgi için bkz: [ipuçları ve püf noktaları](../ide/tips-and-tricks-for-visual-studio.md). Daha kapsamlı bir liste için bkz: [tanımlama ve özelleştirme klavye kısayolları](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) ve [varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Aşağıdaki ipuçlarını uygulayarak, daha hızlı ve verimli bir şekilde yazma gidin ve kodunuzu Visual Studio'da hata ayıklama.
+
+Ortak klavye kısayolları hakkında daha fazla bilgi için bkz: [ipuçları ve püf noktaları](../ide/tips-and-tricks-for-visual-studio.md). Daha kapsamlı bir liste için bkz: [tanımlama ve özelleştirme klavye kısayolları](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) ve [varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="accessing-visual-studio-tools"></a>Visual Studio Araçları erişme
 
-Başlangıç ekranında veya görev çubuğuna Sabitle daha kolay Geliştirici komut istemi veya başka bir araç erişebilirsiniz.
+Başlat menüsü veya görev çubuğunda sabitlerseniz Geliştirici komut istemi veya başka bir Visual Studio aracı, hızlı bir şekilde erişebilir.
 
-1. Başlangıç ekranından girin `Visual Studio Tools`ve ardından **Enter** anahtarı.
+1. Windows Gezgini'nde göz `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
 
-1. İçinde **dosya Gezgini**, istediğiniz öğe için kısayol menüsünü açın:
-
-    - Yapı bildirimleri
-
-    - Debuggable Paket Yöneticisi
-
-    - VS2013 için geliştirici komut istemi
-
-    - Microsoft geri bildirim istemcisi 2013
-
-    - VS2013 ARM Araçları komut istemi arası
-
-    - VS2013 x64 arası Araçları komut istemi
-
-    - VS2013 x64 yerel Araçları komut istemi
-
-    - VS2013 x86 yerel Araçları komut istemi
-
-1. Seçin **Başlangıç ekranına Sabitle** veya **görev çubuğuna Sabitle**.
+1. Sağ tıklayın veya bağlam menüsünü açın **Geliştirici komut istemi**ve ardından **Başlangıç ekranına Sabitle** veya **görev çubuğuna Sabitle**.
 
 ## <a name="writing-code"></a>Kod yazma
 
@@ -91,11 +74,11 @@ IDE komutları, dosyalar ve yalnızca ilgili bilgiler, geçerli görev gösterme
 
 - **Yalnızca hataları adresine görüntülemek**. Seçerseniz **filtre** düğmesini **hata listesi** araç çubuğunda görünür hatalarının sayısını azaltabilir **hata listesi** penceresi. Yalnızca hataları düzenleyicide açık olan dosyaları yalnızca geçerli dosyasındaki hataları ya da yalnızca geçerli projede hataları görüntüleyebilirsiniz. Ayrıca belirli hataları bulmak için Hata Listesi penceresi içinde arama yapabilirsiniz.
 
-- **İletişim kutuları, menü komutları ve seçenekleri bulmak**. İçinde [hızlı başlatma, ortam, Seçenekler iletişim kutusu](../ide/reference/quick-launch-environment-options-dialog-box.md) kutusuna, anahtar sözcükleri veya tümcecikleri bulmaya çalıştığınız öğeleri için girin. Girerseniz, örneğin, aşağıdaki seçenekler görünür `new project`:
+- **İletişim kutuları, menü komutları ve seçenekleri bulmak**. İçinde [hızlı başlatma](../ide/reference/quick-launch-environment-options-dialog-box.md) kutusuna, anahtar sözcükleri veya tümcecikleri bulmaya çalıştığınız öğeleri için girin. Girerseniz, örneğin, aşağıdaki seçenekler görünür `new project`:
 
-     !['Yeni Proje' için hızlı başlatma sonuçları](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
+    !['Yeni Proje' için hızlı başlatma sonuçları](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
 
-     **Hızlı başlatma** bağlantılar görüntüler **yeni proje** iletişim kutusu, **Yeni Öğe Ekle** iletişim kutusu ve projeler ve çözümler sayfasında **seçenekleri** iletişim kutusu, diğerlerinin yanı sıra. Hızlı Başlatma sonuçları proje dosyalarını ve aracı windows de içerir.
+    **Hızlı başlatma** bağlantılar görüntüler **yeni proje** iletişim kutusu, **Yeni Öğe Ekle** iletişim kutusu ve projeler ve çözümler sayfasında **seçenekleri** iletişim kutusu, diğerlerinin yanı sıra. Hızlı Başlatma sonuçları proje dosyalarını ve aracı windows de içerir.
 
 ## <a name="debugging-code"></a>Kodda hata ayıklama
 
@@ -103,11 +86,11 @@ Hata ayıklama çok zaman kullanabileceğinden, ancak aşağıdaki ipuçları ya
 
 - **Sayfa, uygulama veya site farklı tarayıcılarda test**. Kodunuzdaki hataları ayıklamanıza gibi dahil olmak üzere yüklü web tarayıcıları arasında kolayca geçiş yapabilirsiniz [sayfa denetçisi (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), açmak zorunda kalmadan **Gözat ile** iletişim kutusu. Kullanabilirsiniz **hata ayıklama hedefi** açıktır listesi **standart** yanındaki araç **hata ayıklamayı Başlat** hata ayıklama gibi kullanmakta olduğunuz tarayıcı hızlı bir şekilde doğrulamak için düğmesini veya sayfalarını görüntüleyin.
 
-     ![Web tarayıcısı hata ayıklama seçeneklerini](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+    ![Web tarayıcısı hata ayıklama seçeneklerini](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 
 - **Kesme geçici**. Kodu geçerli satırda geçici bir kesme noktası oluşturun ve hata ayıklayıcı eşzamanlı olarak başlatılır. Bu kod satırı isabet olduğunda hata ayıklayıcı kesme moduna girer. Daha fazla bilgi için bkz: [hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md).
 
-     Bu özelliği kullanmayı tercih **Ctrl** + **F10** anahtarları veya bölün ve ardından istediğiniz kod satırı için kısayol menüsünü açın **çalıştırmak için imleç** .
+    Bu özelliği kullanmayı tercih **Ctrl** + **F10** anahtarları veya bölün ve ardından istediğiniz kod satırı için kısayol menüsünü açın **çalıştırmak için imleç** .
 
 - **Hata ayıklama sırasında yürütme noktasını taşıyın**. Geçerli yürütme noktası kodunun farklı bir bölüme taşıyın ve sonra o noktadan itibaren hata ayıklamayı yeniden başlatın. Bu yöntem, tüm bu bölümün erişmek için gerekli adımlar tekrar oluşturmak zorunda kalmadan bir bölüm kod hatalarını ayıklamak istediğiniz yararlıdır. Daha fazla bilgi için bkz: [hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md).
 
@@ -140,4 +123,4 @@ Hata ayıklama çok zaman kullanabileceğinden, ancak aşağıdaki ipuçları ya
 [Sık kullanılan komutlar için varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)  
 [Nasıl yapılır: menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)  
 [İzlenecek yol: basit bir uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md)
+[Erişilebilirlik İpuçları ve Püf Noktaları](../ide/reference/accessibility-tips-and-tricks.md)

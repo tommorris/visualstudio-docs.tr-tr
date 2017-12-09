@@ -10,11 +10,11 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7adb1ec7badaefceb8430d0fcacd8e54e7404ea7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 369407c70ba15c720af3c92a5fabc56497eeedb6
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Hızlı Başlangıç: Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme
 
@@ -79,11 +79,13 @@ Visual Studio 2017 için varsayılan renk temasını adlı **mavi**. Kendisine d
 
 1. Altında **ortam**, seçin **yazı tiplerini ve renkleri** kategorisi.
 
-   Dikkat altındaki metin **ayarlarını göster** diyor **metin düzenleyici** &mdash; ne istiyoruz budur. Yalnızca Burada yazı tipleri ve metin rengi özelleştirebilirsiniz yerler kapsamlı listesini görmek için açılan listeyi genişletin.
+   Dikkat altındaki metin **ayarlarını göster** diyor **metin düzenleyici**&mdash;ne istiyoruz budur. Yalnızca Burada yazı tipleri ve metin rengi özelleştirebilirsiniz yerler kapsamlı listesini görmek için açılan listeyi genişletin.
 
 1. Satır numaraları metnin rengini değiştirmek için **görüntülemek öğeleri** listesinde, seçin **satır numarası**. İçinde **öğesi ön plan** kutusunda, seçin **Zeytin**.
 
    ![Seçenekler iletişim kutusu, yazı tipleri ve renkler kategorisi](media/quickstart-personalize-line-number-color.png)
+
+   Bazı diller kendi belirli yazı tiplerini ve renkleri ayarlara sahip. C++ Geliştirici misiniz ve işlevleri için kullanılan renk değiştirmek isterseniz, örneğin, arayabileceğiniz **C++ işlevlerini** içinde **görüntülemek öğeleri** listesi.
 
 1. Biz dışında iletişim kutusundan çıkmak önce de XML öznitelikleri rengini değiştirelim. İçinde **görüntülemek öğeleri** listesinde, aşağı kaydırarak **XML özniteliği** ve seçin. İçinde **öğesi ön plan** kutusunda, seçin **açık yeşil**. Seçin **Tamam** bizim seçimlerini kaydetmek ve iletişim kutusunu kapatın.
 
@@ -97,5 +99,5 @@ Biz, Visual Studio renkleri özelleştirme yalnızca birkaç yolla incelediniz. 
 
 [Hızlı Başlangıç: ilk Visual Studio IDE bakma](../ide/quickstart-ide-orientation.md)  
 [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)  
-[Düzenleyiciyi özelleştirme](../ide/customizing-the-editor.md)  
-[Visual Studio IDE genel bakış](../ide/visual-studio-ide.md)
+[Düzenleyiciyi Özelleştirme](../ide/customizing-the-editor.md)  
+[Visual Studio IDE’ye Genel Bakış](../ide/visual-studio-ide.md)

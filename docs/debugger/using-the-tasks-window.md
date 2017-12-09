@@ -19,11 +19,11 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4eab796f0a3c6a7148c94e780439a727ee6fe450
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-the-tasks-window"></a>Görevleri Penceresini Kullanma
 **Görevleri** pencere benzeyen **iş parçacığı** onun hakkında bilgileri gösterir dışında penceresi <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class.md), veya [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) yerine her iş parçacığı nesneleri. İş parçacığı gibi görevleri aynı anda çalışabilecek zaman uyumsuz işlemleri temsil eder; Ancak, birden fazla görev aynı iş parçacığı üzerinde çalışabilir. 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/11/2017
   
  Yerel kodda kullandığınız **görevleri** ile çalışırken penceresi [görev grupları](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [paralel algoritmalar](/cpp/parallel/concrt/parallel-algorithms), [zaman uyumsuz aracılar](/cpp/parallel/concrt/asynchronous-agents), ve [Basit görevler](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Yerel kodda görevler hakkında daha fazla bilgi için bkz: [eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime).  
   
- Promise .then kodu ile çalışırken, JavaScript görevleri penceresini kullanabilirsiniz. Bkz: [JavaScript (UWP uygulamaları) içinde zaman uyumsuz programlama](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) daha fazla bilgi için.   
+ JavaScript'te, promise ile çalışırken görevleri penceresini kullanabilirsiniz `.then` kodu. Bkz: [JavaScript (UWP uygulamaları) içinde zaman uyumsuz programlama](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) daha fazla bilgi için.   
   
  Kullanabileceğiniz **görevleri** hata ayıklayıcısında araya girmektir zaman penceresi. Üzerinde erişim **hata ayıklama** menüsünde tıklayarak **Windows** ve ardından **görevleri**. Aşağıdaki çizimde gösterildiği **görevleri** kendi varsayılan modunda penceresi.  
   
@@ -49,7 +49,7 @@ ms.lasthandoff: 11/11/2017
 |**Bayrakları**|Hangi görevleri işaretlenmiş gösterir ve bayrak veya bir görev bayrakla olanak tanır.|  
 |**Simgeler**|Sarı bir ok geçerli görev gösterir. Geçerli görev geçerli iş parçacığı üzerinde en üstteki görevidir.<br /><br /> Beyaz ok sonu görevi, diğer bir deyişle, hata ayıklayıcı çağrıldığında geçerli bir belirtir.<br /><br /> Duraklatma simgesinin kullanıcı tarafından dondurulmuş bir görevi belirtir. Freeze ve listede sağ tıklayarak bir görev Çöz.|  
 |**KİMLİĞİ**|Görev için sağlanan sistem numarası. Yerel kodda bu görevin adresidir.|  
-|**Durumu**|Geçerli durumunu (zamanlanmış, etkin, kilitlenen, bekleyen veya tamamlanmış) görev. Zamanlanmış bir görev henüz çalıştırılmadı ve bu nedenle, henüz bir çağrı yığını, atanan iş parçacığı veya ilgili bilgi yok biridir.<br /><br /> Etkin bir görevi kod hata ayıklayıcısı'ndaki kesmeden önce yürütülmekte olan biridir.<br /><br /> Bir bekleme bildirilmesini bir olay, bir kilidi serbest bırakılacak veya sonlandırmak için başka bir görev beklediğinden, engellenen bir görevdir.<br /><br /> Kilitlenen bir görev, iş parçacığı başka bir iş parçacığı ile karşılıklı bekleyen bir görevdir.<br /><br /> Üzerine gelerek **durum** hücre bloğu hakkında daha fazla bilgi kilitlenen veya bekleyen bir görev için. **Uyarı:** **görevleri** penceresi bekleyin zinciri geçişi (WCT) tarafından desteklenen bir eşitleme temel kullanan bir engellenen görev için kilitlenme bildirir. Örneğin, bir kilitlenen <xref:System.Threading.Tasks.Task> WCT, hata ayıklayıcı raporları kullanan nesne **bekleme karşılıklı**. WCT kullanmaz, eşzamanlılık çalışma tarafından yönetilen kilitlenen bir görev için hata ayıklayıcı raporları **bekleyen**. WCT hakkında daha fazla bilgi için bkz: [bekleyin zinciri geçişi](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
+|**Status**|Geçerli durumunu (zamanlanmış, etkin, kilitlenen, bekleyen veya tamamlanmış) görev. Zamanlanmış bir görev henüz çalıştırılmadı ve bu nedenle, henüz bir çağrı yığını, atanan iş parçacığı veya ilgili bilgi yok biridir.<br /><br /> Etkin bir görevi kod hata ayıklayıcısı'ndaki kesmeden önce yürütülmekte olan biridir.<br /><br /> Bir bekleme bildirilmesini bir olay, bir kilidi serbest bırakılacak veya sonlandırmak için başka bir görev beklediğinden, engellenen bir görevdir.<br /><br /> Kilitlenen bir görev, iş parçacığı başka bir iş parçacığı ile karşılıklı bekleyen bir görevdir.<br /><br /> Üzerine gelerek **durum** hücre bloğu hakkında daha fazla bilgi kilitlenen veya bekleyen bir görev için. **Uyarı:** **görevleri** penceresi bekleyin zinciri geçişi (WCT) tarafından desteklenen bir eşitleme temel kullanan bir engellenen görev için kilitlenme bildirir. Örneğin, bir kilitlenen <xref:System.Threading.Tasks.Task> WCT, hata ayıklayıcı raporları kullanan nesne **bekleme karşılıklı**. WCT kullanmaz, eşzamanlılık çalışma tarafından yönetilen kilitlenen bir görev için hata ayıklayıcı raporları **bekleyen**. WCT hakkında daha fazla bilgi için bkz: [bekleyin zinciri geçişi](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
 |**Başlangıç zamanı**|Hangi görev etkin hale geldiğini süre.|  
 |**Süre**|Görev etkin olmuştur saniye sayısı.|  
 |**Tamamlanma Zamanı**|Hangi görev tamamlandı süre.|  

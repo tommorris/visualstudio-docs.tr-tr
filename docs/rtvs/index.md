@@ -8,16 +8,15 @@ ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-ms.assetid: 11324501-ceb6-47a2-ae13-e9e992d3603e
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 2640607b4b4cd817790048e4e1d497f42ed83a08
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 1ff32914b523b2b515a3d4175e4b3f76ad7ecefd
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="working-with-r-in-visual-studio"></a>Visual Studio'da R ile çalışma
 
@@ -37,10 +36,10 @@ Ardından R güvenlikle ilgili özellikler ve bunun yanı sıra, Visual Studio'n
 
 | Özellik | Açıklama | Genel Visual Studio belgeleri | 
 | --- | --- | --- |
-| [Visual Studio Proje sistemi](projects.md) | Düzenleyebilir ve kullanışlı bir yapı ilişkili dosyaları yönetmek ve R kodu, R belgeleri, R Markdown, SQL sorguları ve saklı yordamlar gibi öğeleri için yararlı şablonlar yararlanın. Ayrıca keyfini [Paket Yöneticisi](package-manager.md) ve [SQL Server Integration](sql-server.md).  | [Çözümler ve projeler Visual Studio'da](../ide/solutions-and-projects-in-visual-studio.md) |
+| [Visual Studio Proje sistemi](projects.md) | Düzenleyebilir ve kullanışlı bir yapı ilişkili dosyaları yönetmek ve R kodu, R belgeleri, R Markdown, SQL sorguları ve saklı yordamlar gibi öğeleri için yararlı şablonlar yararlanın. Ayrıca keyfini [Paket Yöneticisi](package-manager.md) ve [SQL Server Integration](sql-server.md).  | [Visual Studio’da Çözümler ve Projeler](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Çalışma alanı](workspaces.md) | RTVS R kodu daha küçük veri kümeleri ile yerel olarak geliştirmenize olanak tanıyan yerel ve uzak çalışma alanları için bağ sonra kolayca daha güçlü bulut tabanlı bilgisayarlarda çok daha büyük veri kümeleriyle kodu çalıştırın. | yok |
 | [R Araçlar Seçenekler](options.md) | RTVS çeşitli yönlerini denetler. | [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md) |
-| [Zengin düzenleme, IntelliSense ve kod parçacıkları](code-editing.md) | Söz dizimi renklendirme, içeren [IntelliSense](code-intellisense.md) tüm kodunuz ve kitaplıkları arasında kod, imza Yardım biçimlendirme Git tanımı, tüm başvuruları Bul [kod parçacıkları](code-snippets.md)ve daha fazlası. | [Kod ve Metin Düzenleyici'de kod yazma](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [Zengin düzenleme, IntelliSense ve kod parçacıkları](code-editing.md) | Söz dizimi renklendirme, içeren [IntelliSense](code-intellisense.md) tüm kodunuz ve kitaplıkları arasında kod, imza Yardım biçimlendirme Git tanımı, tüm başvuruları Bul [kod parçacıkları](code-snippets.md)ve daha fazlası. | [Kod ve Metin Düzenleyici'de Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [R Markdown](rmarkdown.md) | R Markdown belgeler markdown kod blokları içinde tümleşik R kodu ile veri sonuçlarınızı paylaşmanıza yardımcı. | yok |
 | [Etkileşimli penceresi](interactive-repl.md) | Tam REPL deneyimi için R kolayca etkileşimli penceresi kaynak dosyasında kodu çalıştırma olanağı sağlar. | yok |
 | [Veri Görselleştirme](visualizing-data.md) | Çizdirmek R deneyiminin ayrılmaz bir parçası olan ve RTVS destekleyen birden çok bağımsız çizim windows, her biri kendi geçmişi ve taşıma yeteneğini çizer pencereler arasında. Çizimler bit eşlem ve PDF dosyaları için kaydedilmiş veya bir bit eşlem ya da meta dosyası olarak panoya kopyalandı.  | yok |

@@ -17,11 +17,11 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31353d1063bc6d4f29eaa0fcde308ce3c34fc218
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 60b9465677ce033f8b285ce21e2b8332bf88a73a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="control-execution-of-a-uwp-app-in-a-visual-studio-debug-session-javascript"></a>Bir UWP uygulaması denetim yürütme bir Visual Studio hata ayıklama oturumunda (JavaScript)
 Bu Hızlı Başlangıç, Visual Studio Hata Ayıklayıcısı'ndaki gezinmeyi ve bir oturumda Görünüm programın durumunu gösterir.  
@@ -69,7 +69,7 @@ Bu Hızlı Başlangıç, Visual Studio Hata Ayıklayıcısı'ndaki gezinmeyi ve 
   
 2.  **Default.js kaynak dosyasını açın.** Çözüm Gezgini'nde açık **js** düğümü seçin `default.js`.  
   
-3.  **Sayfa içeriğini örnek kod ile değiştirin.** Tüm içeriğini silmek `default.js` dosya. Bu bağlantıyı izleyin: [hata ayıklayıcı, gezinti örnek kod (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)ve ardından panoya JavaScript bölümünde listelenen kodu kopyalayın. (Seçin **geri** tarayıcı ya da bu hızlı başlangıç sayfasına dönmek için Yardım Görüntüleyicisi.) Visual Studio düzenleyicisinde kodu şimdi boş yapıştırın `default.js`. Seçin **Ctrl + S** dosyayı kaydetmek için.  
+3.  **Sayfa içeriğini örnek kod ile değiştirin.** Tüm içeriğini silmek `default.js` dosya. Bu bağlantıyı izleyin: [hata ayıklayıcı, gezinti örnek kod (JavaScript)](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-javascript.js)ve ardından panoya JavaScript bölümünde listelenen kodu kopyalayın. (Seçin **geri** tarayıcı ya da bu hızlı başlangıç sayfasına dönmek için Yardım Görüntüleyicisi.) Visual Studio düzenleyicisinde kodu şimdi boş yapıştırın `default.js`. Seçin **Ctrl + S** dosyayı kaydetmek için.  
   
  Şimdi bu konudaki örnekler birlikte izleyebilirsiniz.  
   

@@ -1,26 +1,25 @@
 ---
 title: "Visual Studio için R araçları ile kod düzenleme | Microsoft Docs"
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5c856bb02ca33f999273fd6da782226be5f0f2d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Visual Studio'da R kodu düzenleme
- 
+
 R araçları için Visual Studio (RTVS) düzenleme deneyimi tüm özellikleri ve uzantıları kullanabilme korurken özellikle r için Visual Studio uyarlar. (VIM anahtar bağlama tercih ederseniz, örneğin, ücretsiz yükleyebilirsiniz [VsVim uzantısı](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) Visual Studio Galerisi'nden.)
 
 Bu konuda:
@@ -33,8 +32,7 @@ Bu konuda:
 - [Roxygen açıklamaları ekleme](#inserting-roxygen-comments)
 - [Düzenleyici Seçenekleri](#editor-options)
 
-Ayrıca üzerinde konulara bakın [IntelliSense](code-intellisense.md), [kod parçacıkları](code-snippets.md), ve [R Markdown](rmarkdown.md).
-
+Ayrıca üzerinde konulara bakın [IntelliSense](code-intellisense.md), [linting](code-linting.md), [kod parçacıkları](code-snippets.md), ve [R Markdown](rmarkdown.md).
 
 ## <a name="syntax-highlighting"></a>söz dizimi vurgulama 
 
@@ -107,9 +105,9 @@ f <- function(a) { return(a + 1) }
 Tüm kod dosyasını yeniden biçimlendirmek için seçin **Düzenle > Gelişmiş > biçimi belge** (Ctrl + E, D).
 
 Otomatik biçimlendirme alınabilecek ayrı bir işlemdir. Örneğin, düzenleyici ve geçerli biçimlendirme kod yapıştırırsanız seçme **Düzenle > Geri** veya Ctrl + Z kez basarak tersine çevirir biçimlendirme; ikinci bir geri alma Yapıştır tersine çevirir.
- 
+
 Biçimlendirme seçenekleri (biçimlendirmeyi devre dışı bırakma dahil) aracılığıyla ayarlanır **Araçlar > Seçenekler** üzerinde **metin düzenleyicisi > R > Gelişmiş** sekmesi. Doğrudan kullanarak bu sayfaya geçebilir **R Araçlar > Düzenleyici Seçenekleri...**  komutunu veya göre Düzenleyicisi'nde sağ tıklayıp seçerek **biçimlendirme seçeneklerini...** . Bkz: [Düzenleyici Seçenekleri](#editor-options) ayrıntıları bölümü.
- 
+
 ## <a name="inserting-roxygen-comments"></a>Roxygen açıklamaları ekleme
 
 RTVS oluşturmak için bir kısayol sunar [Roxygen](http://roxygen.org/) işlevinin parametre adları kullanarak açıklamalar. Yalnızca yazın `###` işlev tanımı üzerinde boş bir satıra:
@@ -144,5 +142,5 @@ Seçeneklerinden **R > Gelişmiş** sekmesini RTVS için özeldir:
 | | SEKME tuşu üzerinde tamamlanma listesi | Kapalı | Tamamlanma listesi bir veya daha fazla karakter girip SEKME tuşuna basarak çağırır. |
 | | Bağımsız değişken adları kısmen eşleşme türleri | Kapalı | Bağımsız değişken adları bir işlev çağrısında yazarken imza Yardım en iyi eşleşme olan bağımsız değişkeni için bir açıklama gösterir. |
 | Etkileşimli penceresi | R konsolunda sözdizimi denetimi | Kapalı | Söz dizimi etkileşimli pencerede denetimi uygular. Sözdizimi denetimi, çok satırlı deyimleri ile düzgün çalışmayabilir. | 
-| Anahat Oluşturma | Anahat oluşturma kodu | Açık | Çok satırlı deyimleri gibi alanlar için daraltılabilir bölgeler otomatik olarak oluşturur. | 
+| Anahat Oluşturma | Anahat oluşturma kodu | Açık | Çok satırlı deyimleri gibi alanlar için daraltılabilir bölgeler otomatik olarak oluşturur. |
 | Sözdizimi denetimi | Sözdizimi hataları göster | Açık | Otomatik söz dizimi kodu denetimi sağlar. |

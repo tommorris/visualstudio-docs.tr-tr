@@ -7,11 +7,11 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 25d3227bcf8a18a2fc6ba68c194e9cac75b2e919
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 7f91a28449ffad135058438ec767095818cc8527
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Kurulum ve Mac için Visual Studio yükleme
 
@@ -22,7 +22,7 @@ Başlangıç yerel geliştirmek için Visual Studio için Mac var. yüklediğini
 Visual Studio iOS ile çalışmak için şu gerekir:
 
 * bir Mac macOS Sierra 10,12 veya üzeri
-* Xcode 8.3
+* Xcode 8.3 veya üstü. En yeni kararlı sürüm genellikle önerilir.
 * Bir Apple kimliği Bir Apple kimliği zaten yoksa https://appleid.apple.com en yeni bir tane oluşturabilirsiniz. Yükleme ve Xcode imzalamak için bir Apple kimliği sağlamak gereklidir.
 
 ## <a name="install"></a>Yükleme

@@ -11,7 +11,6 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Intellisense
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Intellisense
 helpviewer_keywords:
-- IntelliSense [J#], options
 - underlines, wavy
 - IntelliSense [C#], options
 - IntelliSense [C#], wavy underlines
@@ -22,11 +21,11 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac32cd3946e6d244f6ff658bb636c9ecfd89e197
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ba6e1613410c8143126254c8f7a4bd325c6e6f22
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="options-text-editor-c-intellisense"></a>Seçenekler, Metin Düzenleyici, C#, IntelliSense
 Kullanım **IntelliSense** IntelliSense davranışını Visual C# için etkileyen ayarları değiştirmek için özellik sayfası. Erişebileceğiniz **IntelliSense** tıklayarak özellik sayfası **seçenekleri** üzerinde **Araçları** tıklatarak menüsünde **C#** içinde**Metin düzenleyici** klasörünü ve ardından **IntelliSense.**  
@@ -73,4 +72,4 @@ Kullanım **IntelliSense** IntelliSense davranışını Visual C# için etkileye
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md)   
  [XML belgeleri yorumları](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
- [IntelliSense kullanma](../../ide/using-intellisense.md)
+ [IntelliSense Kullanma](../../ide/using-intellisense.md)

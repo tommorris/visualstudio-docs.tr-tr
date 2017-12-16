@@ -10,17 +10,17 @@ ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-ms.openlocfilehash: 8adc348553ba613898117f10ccd21a6e5cd02ab8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b89f021b181e653dff97368cc5c1f2d993f04323
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Nasıl yapılır: arka planda VSPackages yüklemek için AsyncPackage kullanın
 Yükleme ve VS Paketi başlatma disk g/ç neden olabilir. Bu tür g/ç kullanıcı Arabirimi iş parçacığı üzerinde olursa, yanıt hızını sorunlarına yol açabilir. Bu sorunu çözmek için Visual Studio 2015 sunulan <xref:Microsoft.VisualStudio.Shell.AsyncPackage> paketi yükleme arka plan iş parçacığında sağlayan sınıf.  
   
 ## <a name="creating-an-asyncpackage"></a>Bir AsyncPackage oluşturma  
- Bir VSIX projesi oluşturarak başlayın (**dosya / yeni / Project / Visual C# / genişletilebilirlik / VSIX proje**) ve bir VSPackage projeye ekleme (projeye sağ tıklayın ve **Ekle/yeni öğe / C# öğesi/genişletilebilirlik/Visual Studio Paketi**). Ardından, hizmetlerinizi oluşturun ve bu hizmetleri paketinize ekleyin.  
+ Bir VSIX projesi oluşturarak başlayın (**Dosya > Yeni > Proje > Visual C# > genişletilebilirlik > VSIX proje**) ve bir VSPackage projeye ekleme (projeye sağ tıklayın ve **Ekle/yeni öğe / C# öğesi / Extensibility/Visual Studio Paketi**). Ardından, hizmetlerinizi oluşturun ve bu hizmetleri paketinize ekleyin.  
   
 1.  Paketten türetilen <xref:Microsoft.VisualStudio.Shell.AsyncPackage>.  
   

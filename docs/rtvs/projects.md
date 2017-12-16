@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c01007e3a1fd71af8c5204130a90b448f28c93f1
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: ec96049d65350bb194ccf31e07dc55e71e148e97
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Visual Studio'da R projeleri oluşturma
 
@@ -106,7 +106,6 @@ RTVS birkaç belirli dosya türleri için şablonlar içerir. Şablonları bir R
 | R belgeleri (veri kümesi) | Bir veri kümesini tanımlamak için açıklamaları olan birçok alanları içeren bir R belge dosyası. |
 | SQL sorgusu | Ve boş `.sql` dosya. Bkz: [SQL Server Integration](sql-server.md). |
 | Saklı yordam r | Bir R dosyasıyla alt SQL sorgusunun ve alt yordamı şablon dosyası depolanır. Bkz: [SQL Server Integration](sql-server.md). |
-
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Visual Studio'da birden çok proje türleri kullanma
 

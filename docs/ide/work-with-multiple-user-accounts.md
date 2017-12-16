@@ -12,11 +12,11 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4ab874a59ad67e42e29270ac5f3da45816177a4
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.openlocfilehash: 42531ccbf03c010302a3276b78bb87fdcd3f941e
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="work-with-multiple-user-accounts"></a>Birden çok kullanıcı hesabıyla çalışma
 
@@ -81,4 +81,4 @@ Yeni hesap kimlik bilgilerini girmek için istemleri izleyin. Bir kullanıcı ke
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio tarafından kullanılan Internet kaynakları](../ide/connected-environment.md)
+[Visual Studio'da oturum açın](signing-in-to-visual-studio.md)

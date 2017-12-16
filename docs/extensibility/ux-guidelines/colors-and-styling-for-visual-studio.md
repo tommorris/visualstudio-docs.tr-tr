@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff1f5d9c7c28c63e2f1f1c0783f1032888e3c645
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Renkleri ve Visual Studio için stil oluşturma
 ## <a name="using-color-in-visual-studio"></a>Visual Studio'da renk kullanma  
@@ -320,7 +320,7 @@ Bazen bir kod düzenleyicisinde veya tasarım yüzeyi oluştururken gibi kullan�
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>VSPackage özelleştirilebilir renkler için oluşturma  
 Bir VSPackage yazı tiplerini ve renkleri özel kategoriler ile denetlemek ve yazı tipleri ve renkler özellik sayfasında öğeleri görüntüleyebilirsiniz. Bu mekanizma kullanırken, VSPackages uygulamalıdır [IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx) ve onun ilişkili arabirim.  
   
-Temelde, bu mekanizma tüm var olan öğeleri görüntüleme ve bunları içeren kategorilerini değiştirmek için kullanılabilir. Bununla birlikte, metin düzenleyici kategori veya kendi görüntü öğeleri değiştirmek için kullanılmamalıdır. Metin Düzenleyici kategori hakkında daha fazla bilgi için bkz: [yazı tipi ve renk genel bakış](https://msdn.microsoft.com/en-us/library/bb165065.aspx).  
+Temelde, bu mekanizma tüm var olan öğeleri görüntüleme ve bunları içeren kategorilerini değiştirmek için kullanılabilir. Bununla birlikte, metin düzenleyici kategori veya kendi görüntü öğeleri değiştirmek için kullanılmamalıdır. Metin Düzenleyici kategori hakkında daha fazla bilgi için bkz: [yazı tipi ve renk genel bakış](../font-and-color-overview.md).  
   
 Özel kategoriler uygulamak veya öğeleri görüntülemek için bir VSPackage gerekir:  
   
@@ -397,7 +397,7 @@ Bunu yapmak için bir VSPackage gerekir:
   
  **VEYA**  
   
--   **IDE değişiklikleri için yoklama**. Bu sistem uygulanan yapılabilir [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) arabirimi. Öncelikle desteği için Kalıcılık, ancak [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) yöntemi görüntü öğeleri için yazı tipi ve renk bilgi elde edebilirsiniz. Yazı tipi ve renk ayarları hakkında daha fazla bilgi için MSDN makalesine bakın [erişme depolanan yazı tipi ve renk ayarlarını](https://msdn.microsoft.com/en-us/library/bb166382.aspx).  
+-   **IDE değişiklikleri için yoklama**. Bu sistem uygulanan yapılabilir [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) arabirimi. Öncelikle desteği için Kalıcılık, ancak [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) yöntemi görüntü öğeleri için yazı tipi ve renk bilgi elde edebilirsiniz. Yazı tipi ve renk ayarları hakkında daha fazla bilgi için MSDN makalesine bakın [erişme depolanan yazı tipi ve renk ayarlarını](../accessing-stored-font-and-color-settings.md).  
   
 > **Not:** yoklama sonuçları doğru olduğundan emin olmak için kullanmak [IVsFontAndColorCacheManager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) önbellek temizleme ve güncelleştirme alma yöntemlerini çağırmadan önce gerekli olup olmadığını belirlemek için arabirimi [ IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) arabirimi.
   

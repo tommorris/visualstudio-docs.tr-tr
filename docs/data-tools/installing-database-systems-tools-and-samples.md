@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 17bdaffa8fdbb6ddff9d7fe5590db021997aa01f
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 2b3a551f19e3410b5f56ebe994676666cdc3d4e1
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Visual Studio için uyumlu bir veritabanı sistemleri
 
@@ -30,7 +30,7 @@ Bir veritabanı sistemi için .NET uygulamaları erişilebilir olmasını ve Vis
 
 Azure depolama API'leri kullanıyorsanız, Azure storage öykünücüsünü üretime dağıtmaya hazır olana kadar ücretlerden kaçınmak için geliştirme sırasında yerel makinenize yükleyin. Daha fazla bilgi için bkz: [geliştirme ve sınama için Azure Storage öykünücüsünü kullanma](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/).
 
-Aşağıdaki listede, kullanılabilir daha yaygın veritabanı sistemleri bazıları Visual Studio projelerinde içerir. Liste geniş kapsamlı değildir. Visual Studio Araçları ile derin tümleştirme sağlamak ADO.NET veri sağlayıcıları sunan üçüncü taraf satıcılar listesi için bkz: [ADO.NET Data Provider](https://msdn.microsoft.com/en-us/library/dd363565.aspx).
+Aşağıdaki listede, kullanılabilir daha yaygın veritabanı sistemleri bazıları Visual Studio projelerinde içerir. Liste geniş kapsamlı değildir. Visual Studio Araçları ile derin tümleştirme sağlamak ADO.NET veri sağlayıcıları sunan üçüncü taraf satıcılar listesi için bkz: [ADO.NET Data Provider](/dotnet/framework/data/adonet/data-providers).
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 
@@ -58,5 +58,5 @@ Firebird bir açık kaynak SQL veritabanı sistemidir. Buradan indirebilirsiniz 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da veri erişimi](../data-tools/accessing-data-in-visual-studio.md)  
+[Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)  
 [Sürümüne ve SQL Server ve bileşenlerini belirleme](http://support.microsoft.com/kb/321185)

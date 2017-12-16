@@ -13,41 +13,39 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
-caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8ed511eed7b0ace46bbc61c1d486ade608d4b5a5
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c02ae1ba7091871f92d1fdf00f55f7d0ded6024f
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="upgrade-mdf-files"></a>.Mdf dosyalarını yükseltme
-Bu konu, Visual Studio'nun daha yeni bir sürümünü yükledikten sonra veritabanı dosyanızı (.mdf) yükseltme seçeneklerinizi açıklar. Yönergeler için aşağıdaki görevleri içerir:  
-  
--   SQL Server Express LocalDB, yeni bir sürümünü kullanmak için bir veritabanı dosyası yükseltme  
-  
--   SQL Server Express, yeni bir sürümünü kullanmak için bir veritabanı dosyası yükseltme  
-  
--   Visual Studio'da bir veritabanı dosyası ile çalışır ancak SQL Server Express LocalDB veya daha eski bir sürümü ile uyumluluk koru  
-  
--   SQL Server Express varsayılan veritabanı altyapısı olun  
-  
-SQL Server Express LocalDB veya daha eski bir sürümü kullanılarak oluşturulmuş bir veritabanı dosyası (.mdf) içeren bir proje açmak için Visual Studio'yu kullanabilirsiniz. Ancak, projenizi Visual Studio'da geliştirmeye devam etmek için bu sürüm veya SQL Server Express LocalDB Visual Studio ile aynı makinede yüklü olmalıdır veya veritabanı dosyası yükseltmeniz gerekir. Veritabanı dosyasını yükseltirseniz, SQL Server Express veya yerel veritabanı eski sürümlerini kullanarak erişimi olmayacaktır.  
-  
-Ayrıca dosya sürümü SQL Server Express veya şu an yüklü olan yerel veritabanı örneği ile uyumlu değilse, önceki bir SQL Server Express veya yerel veritabanı sürümü ile oluşturulmuş bir veritabanı dosyası yükseltme istenebilir. Sorunu çözmek için Visual Studio dosya yükseltme isteyip istemediğinizi sorar.  
-  
+
+Bu konuda, Visual Studio'nun daha yeni bir sürümünü yükledikten sonra bir veritabanı dosyası (.mdf) yükseltme seçenekleri açıklanmaktadır. Yönergeler için aşağıdaki görevleri içerir:
+
+- SQL Server Express LocalDB, yeni bir sürümünü kullanmak için bir veritabanı dosyası yükseltme
+
+- SQL Server Express, yeni bir sürümünü kullanmak için bir veritabanı dosyası yükseltme
+
+- Visual Studio'da bir veritabanı dosyası ile çalışır ancak SQL Server Express LocalDB veya daha eski bir sürümü ile uyumluluk koru
+
+- SQL Server Express varsayılan veritabanı altyapısı olun
+
+SQL Server Express LocalDB veya daha eski bir sürümü kullanılarak oluşturulmuş bir veritabanı dosyası (.mdf) içeren bir proje açmak için Visual Studio'yu kullanabilirsiniz. Ancak, projenizi Visual Studio'da geliştirmeye devam etmek için bu sürüm veya SQL Server Express LocalDB Visual Studio ile aynı makinede yüklü olmalıdır veya veritabanı dosyası yükseltmeniz gerekir. Veritabanı dosyasını yükseltirseniz, SQL Server Express veya yerel veritabanı eski sürümlerini kullanarak erişimi olmayacaktır.
+
+Ayrıca dosya sürümü SQL Server Express veya şu an yüklü olan yerel veritabanı örneği ile uyumlu değilse, önceki bir SQL Server Express veya yerel veritabanı sürümü ile oluşturulmuş bir veritabanı dosyası yükseltme istenebilir. Sorunu çözmek için Visual Studio dosya yükseltme isteyip istemediğinizi sorar.
+
 > [!IMPORTANT]
-> Yükseltmeden önce veritabanı dosyasını yedeklemenizi öneririz.  
-  
+> Yükseltmeden önce veritabanı dosyasını yedeklemenizi öneririz.
+
 > [!WARNING]
 > Yerel veritabanı 2014 (V12) LocalDB 2016 (V13) için 32 bit veya sonraki bir sürümde oluşturulmuş bir .mdf dosyasını yükseltirseniz, dosyayı yeniden LocalDB 32-bit sürümünü açıp olmaz.
-  
-Bir veritabanını yükseltmeden önce aşağıdaki ölçütleri göz önünde bulundurun:  
+
+Bir veritabanını yükseltmeden önce aşağıdaki ölçütleri göz önünde bulundurun:
   
 -   Eski bir sürümü ve Visual Studio'nun daha yeni sürümünü projenizde üzerinde çalışmak isterseniz yükseltmeyin.  
   
@@ -116,4 +114,5 @@ SQL Server Express bir bağlantıyı bağlantı için kısayol menüsünü açar
     SQL Server Express, uygulamalarınız için varsayılan veritabanı altyapısı olacaktır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Visual Studio'da veri erişimi](accessing-data-in-visual-studio.md)
+
+[Visual Studio'da verilere erişime](accessing-data-in-visual-studio.md)

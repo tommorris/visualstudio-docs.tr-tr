@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 066612a132bf6a092771afd5fc4a876d4b3be425
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: a08ca6acdccad4e7ed3a2ebb0eddb8d95992167d
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python desteğini yükleme
 
@@ -66,12 +66,11 @@ Hızlı yükleme adımlarını izleyerek sonra Python desteği test etmek için 
     | Python web desteği | HTML, CSS ve JavaScript desteği, Bottle, Flask ve Django çerçeveleri kullanarak projeleri için şablonlar yanı sıra düzenleme dahil olmak üzere web geliştirme araçları'nı yükler. Bkz: [Python web projesi şablonları](template-web.md). |
     | Python IOT desteği | Python kullanarak Windows IOT Core geliştirme destekler. |
     | Python yerel geliştirme araçları | C++ derleyicisi ve Python için yerel uzantılar geliştirmek üzere diğer gerekli bileşenleri yükler. Bkz: [Python için C++ uzantısı oluşturma](cpp-and-python.md). |
-    | Azure bulut Hizmetleri Çekirdek araçları | Geliştirici Python Azure bulut Hizmetleri için ek destek sağlar. Bkz: [zure bulut hizmeti projeleri](template-azure-cloud-service.md). |
+    | Azure bulut Hizmetleri Çekirdek araçları | Geliştirici Python Azure bulut Hizmetleri için ek destek sağlar. Bkz: [Azure bulut hizmeti projeleri](template-azure-cloud-service.md). |
 
 1. Yükleme sonrasında, yükleyici değiştirmek, başlatma, onarın veya Visual Studio'yu kaldırmak için seçenekler sağlar. **Değiştir** düğmesi değişiklikler **güncelleştirme** güncelleştirmeler için kullanılabilir güncelleştirmeler olduğunda Visual Studio bileşenleri yüklü olduğunda. (Değiştir seçeneği, ardından aşağı açılan menüsünde kullanılabilir.) Visual Studio ve Windows Başlat menüsünden yükleyici "Visual Studio" arayarak de başlatabilirsiniz.
 
     ![Başlatma, değiştirme, değiştirme veya Visual Studio Yükleyicisi'nden kaldırılıyor](media/installation-vs-launch.png)
-
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
 

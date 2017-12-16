@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b73dc5b153813811a0d2b839e69200a7e5f5a1e9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 2f1fbc41976afc6a906757fa5946b82abdd8bd02
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Visual Studio 2017 bir uzak IIS bilgisayarda uzaktan hata ayıklama ASP.NET Çekirdeği
 IIS'ye dağıtılan bir ASP.NET uygulaması hata ayıklamak için yükleme ve uygulamanızı dağıtıldığı bilgisayarda Uzak araçları çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.
@@ -35,11 +35,11 @@ Bir proxy üzerinden bağlı iki bilgisayar arasında hata ayıklama desteklenmi
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Visual Studio 2017 bilgisayarda ASP.NET Core uygulaması oluşturma 
 
-1. Yeni bir ASP.NET Core uygulaması oluşturun. (**Dosya > Yeni > Proje**seçeneğini belirleyip **Visual C# > Web > ASP.NET çekirdek Web uygulaması (.NET Core)**).
+1. Yeni bir ASP.NET Core uygulaması oluşturun. (**Dosya > Yeni > Proje**seçeneğini belirleyip **Visual C# > Web > ASP.NET çekirdek Web uygulaması**).
 
     İçinde **ASP.NET Core** şablonları bölümünde, select **Web uygulaması**.
 
-2. Olduğundan emin olun **Docker desteğini etkinleştir** olan **değil** seçili ve **kimlik doğrulaması** ayarlanır **doğrulaması yok**.
+2. Olduğundan emin olun **ASP.NET Core 2.0** seçildiğinde, **Docker desteğini etkinleştir** olan **değil** seçili ve **kimlik doğrulaması** ayarlanır **Kimlik doğrulaması yok**.
 
 3. Proje adı **MyASPApp** tıklatıp **Tamam** yeni bir çözüm oluşturmak için.
 

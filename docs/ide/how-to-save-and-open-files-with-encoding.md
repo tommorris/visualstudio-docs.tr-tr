@@ -17,11 +17,11 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9dca526f53c59b8db35b50378e4bf280d5e0a1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 13b00135adfe3d65adeed7eecc5f9e22e4b7a2cb
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Nasıl Yapılır: Dosyaları Kodlamayla Kaydetme ve Açma
 Özel karakter çift yönlü dilleri desteklemek için kodlama dosyalarını kaydedebilirsiniz. Ayrıca, böylece Visual Studio dosyanın doğru görüntüler bir bir dosyayı açarken kodlama belirtebilirsiniz.  
@@ -58,6 +58,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  Adım 2 ve 3 yukarıdaki yordamı izleyin.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodlama ve Windows Forms Genelleştirme](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
- [Uygulamaları Genelleştirme ve yerelleştirme](../ide/globalizing-and-localizing-applications.md)
+## <a name="see-also"></a>Ayrıca bkz.
+[Kodlama ve satır sonları](encodings-and-line-breaks.md)  
+[Kodlama ve Windows Forms Genelleştirme](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
+[Uygulamaları Genelleştirme ve Yerelleştirme](../ide/globalizing-and-localizing-applications.md)

@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2c309bd30fb364c36b9e98640a02eb3cf2611aef
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f5d50dff4b71402184e0c1127242c1ddb0b1827f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="save-data-back-to-the-database"></a>Veritabanına veri kaydetme
 Veri kümesi, veri bir bellek içi kopyasıdır. Bu verileri değiştirirseniz, bu değişiklikleri veritabanına kaydetmek için iyi bir uygulamadır. Bu üç yöntemden birini yapın:  
@@ -45,15 +45,15 @@ TableAdapters ile sahibiyseniz, doğrudan aşağıdaki konulardan birine atlayab
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[Bir veritabanına yeni kayıtlar ekleme](../data-tools/insert-new-records-into-a-database.md)|Nasıl gerçekleştirileceği güncelleştirir ve TableAdapters ya da komut nesneleri kullanarak ekler|  
-|[TableAdapter kullanarak veri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md)|TableAdapters güncelleştirmeleriyle gerçekleştirme|  
+|[Veritabanına yeni kayıtlar ekleme](../data-tools/insert-new-records-into-a-database.md)|Nasıl gerçekleştirileceği güncelleştirir ve TableAdapters ya da komut nesneleri kullanarak ekler|  
+|[TableAdapter kullanarak verileri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md)|TableAdapters güncelleştirmeleriyle gerçekleştirme|  
 |[Hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md)|İki veya daha fazla ilgili tablo ile bir veri kümesinden güncelleştirmeleri gerçekleştirme|  
-|[Bir eşzamanlılık özel durum işleme](../data-tools/handle-a-concurrency-exception.md)|İki kullanıcı aynı anda aynı verileri bir veritabanındaki değiştirmeye kalkıştığında özel durumları işleme|  
+|[Bir eşzamanlılık özel durumunu işleme](../data-tools/handle-a-concurrency-exception.md)|İki kullanıcı aynı anda aynı verileri bir veritabanındaki değiştirmeye kalkıştığında özel durumları işleme|  
 |[Nasıl yapılır: bir işlemi kullanarak veri kaydetme](../data-tools/save-data-by-using-a-transaction.md)|System.Transactions ad alanı ve TransactionScope nesnesini kullanarak bir işlemde veri kaydetme|  
-|[İzlenecek yol: bir işlemde veri kaydetme](../data-tools/save-data-in-a-transaction.md)|Bir işlemin içindeki veritabanına veri kaydetme göstermek için bir Windows Forms uygulaması oluşturur gözden geçirme|  
-|[(Birden çok tablo) veritabanına veri kaydetme](../data-tools/save-data-to-a-database-multiple-tables.md)|Kayıtları düzenleme ve veritabanına birden çok tablolardaki değişiklikleri kaydetme|  
+|[İzlenecek yol: Bir işlemde veri kaydetme](../data-tools/save-data-in-a-transaction.md)|Bir işlemin içindeki veritabanına veri kaydetme göstermek için bir Windows Forms uygulaması oluşturur gözden geçirme|  
+|[Bir veritabanına (birden çok tablo) veri kaydetme](../data-tools/save-data-to-a-database-multiple-tables.md)|Kayıtları düzenleme ve veritabanına birden çok tablolardaki değişiklikleri kaydetme|  
 |[Verileri bir nesneden veritabanına kaydetme](../data-tools/save-data-from-an-object-to-a-database.md)|Bir veritabanı için bir veri kümesinde bir TableAdapter DbDirect yöntemi kullanarak değil bir nesne veri geçirmek nasıl|  
-|[Veri ile TableAdapter DBDirect yöntemleri kaydedin.](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|TableAdapter doğrudan veritabanına SQL sorguları göndermek için nasıl kullanılacağını|  
+|[TableAdapter DBDirect metotlarıyla veri kaydetme](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|TableAdapter doğrudan veritabanına SQL sorguları göndermek için nasıl kullanılacağını|  
 |[Bir veri kümesini XML olarak kaydetme](../data-tools/save-a-dataset-as-xml.md)|Bir veri kümesi için bir XML belgesi kaydetme|  
   
 ## <a name="two-stage-updates"></a>İki aşamalı güncelleştirmeleri  
@@ -217,7 +217,7 @@ Aşağıdaki tabloda, ne üzerinde çağrılan yöntemi nesnesi üzerinde göre 
 -   Veri kaynağına veri göndererek arka uç, verileri — Örneğin, veritabanı — ve kabul edin veya verileri reddetmek etkinleştirilebilir. Verileri doğrulama ve hata bilgilerini sağlama özellikleri, Gelişmiş bir veritabanı ile çalışıyorsanız, burada alanından gelir olsun verileri doğrulamak için bu pratik bir yaklaşım olabilir. Ancak, bu yaklaşım uygulamaya özgü doğrulama gereksinimlerini karşılamak değil. Ayrıca, veri doğrulama veri kaynağı içinde çok sayıda gidiş dönüş nasıl uygulamanızın arka ucu tarafından gerçekleştirilen doğrulama hatalarını çözümleme kolaylaştıran bağlı olarak veri kaynağına neden olabilir.  
   
     > [!IMPORTANT]
-    >  Veri komutları ile kullanırken bir <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> ayarlamak için özellik <xref:System.Data.CommandType.Text>, dikkatlice veritabanınıza geçirmeden önce bir istemciden gönderilen bilgilere bakın. Kötü niyetli kullanıcılar göndermeyi deneyin (Ekle) yetkisiz erişim elde veya veritabanının zarar verecek çaba değiştirilmiş veya ek SQL deyimlerinde. Bir veritabanı için kullanıcı girişi aktarmadan önce her zaman bilgilerin geçerli olduğunu doğrulayın. Parametreli sorgular veya saklı yordam mümkün olduğunda her zaman kullanmak için en iyi bir uygulamadır. Daha fazla bilgi için bkz: [komut dosyası yararlanan genel bakış](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+    >  Veri komutları ile kullanırken bir <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> ayarlamak için özellik <xref:System.Data.CommandType.Text>, dikkatlice veritabanınıza geçirmeden önce bir istemciden gönderilen bilgilere bakın. Kötü niyetli kullanıcılar göndermeyi deneyin (Ekle) yetkisiz erişim elde veya veritabanının zarar verecek çaba değiştirilmiş veya ek SQL deyimlerinde. Bir veritabanı için kullanıcı girişi aktarmadan önce her zaman bilgilerin geçerli olduğunu doğrulayın. Parametreli sorgular veya saklı yordam mümkün olduğunda her zaman kullanmak için en iyi bir uygulamadır.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Veri kaynağına aktaran güncelleştirmeleri  
 Bir veri kümesinde değişiklikler yapıldıktan sonra bir veri kaynağına yapılan iletebilir. En yaygın olarak, çağırarak bunu `Update` yöntemi bir TableAdapter (veya veri bağdaştırıcısı). Bir veri tablosunda her kayıt aracılığıyla yöntemi döngüler belirler hangi güncelleştirme türünü gereklidir (güncelleştirme, ekleme veya silme), varsa, ve ardından uygun komutu çalıştırır.  
@@ -258,7 +258,7 @@ Bir veri kümesinde değişiklikler yapıldıktan sonra bir veri kaynağına yap
   
  <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> Özelliği, her parametrenin veri tablodaki bir sütun işaret eder. Örneğin, `SourceColumn` özelliği için `au_id` ve `Original_au_id` parametreleri, hangi veri tablosu sütununda Yazar Kimliği içeriyor için ayarlanır. Olduğunda bağdaştırıcının `Update` yöntemi çalışır, bu Yazar kimlik sütunu güncelleştirilmekte ve değerleri ifadesine doldurur kaydı okur.  
   
- UPDATE deyiminde, her iki yeni değerleri (olanlar kayda yazılır) yanı sıra eski değerleri (kayıt veritabanında konumlandırılabilir böylece) belirtmeniz gerekir. Bu nedenle her bir değer için iki parametre vardır: biri SET yan tümcesinin ve WHERE yan tümcesi için farklı bir. Her iki parametre güncelleştirilmekte kaydından veri okuma, ancak farklı sürümlerini parametresi 's temelinde sütun değeri elde [SqlParameter.SourceVersion özelliği](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). Geçerli sürüm parametresi SET yan tümcesi için alır ve WHERE yan tümcesi için parametresi özgün sürümünü alır.  
+ UPDATE deyiminde, her iki yeni değerleri (olanlar kayda yazılır) yanı sıra eski değerleri (kayıt veritabanında konumlandırılabilir böylece) belirtmeniz gerekir. Bu nedenle her bir değer için iki parametre vardır: biri SET yan tümcesinin ve WHERE yan tümcesi için farklı bir. Her iki parametre güncelleştirilmekte kaydından veri okuma, ancak farklı sürümlerini parametresi 's temelinde sütun değeri elde <xref:System.Data.SqlClient.SqlParameter.SourceVersion> özelliği. Geçerli sürüm parametresi SET yan tümcesi için alır ve WHERE yan tümcesi için parametresi özgün sürümünü alır.  
   
 > [!NOTE]
 >  De değerlerini ayarlayabilirsiniz `Parameters` koleksiyonu kendiniz bir olay işleyicisi veri bağdaştırıcının için genellikle yaptığınız kod <xref:System.Data.DataTable.RowChanging> olay.  
@@ -269,4 +269,4 @@ Bir veri kümesinde değişiklikler yapıldıktan sonra bir veri kaynağına yap
 [TableAdapter kullanarak veri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md)   
 [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)   
 [Verileri doğrulama](validate-data-in-datasets.md)   
-[Verileri kaydetme](../data-tools/saving-data.md)
+[Verileri Kaydetme](../data-tools/saving-data.md)

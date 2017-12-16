@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d6c5cd4395ea0251027edbc94019637b72a630a8
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 07a0b5dbcbb32f7ae8bb7fb4045b55d6aa954f37
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>Visual Studio'da Python ile çalışma
 
@@ -44,20 +44,20 @@ Bu öğreticide tek ve boş kod dosyasını içeren basit bir proje ile başlar.
 
 1. Visual Studio'da seçin **Dosya > Yeni > Proje** (Ctrl + Shift + N), hangi getirir **yeni proje** iletişim. Burada şablonları Gözat farklı diller arasında sonra projeniz için bir tane seçin ve Visual Studio dosyaların nerede yerleştirir belirtin.
 
-1. Python şablonları görüntülemek için seçin **şablonları > Diğer diller > Python** sol veya "Python" için arama. Arama'yı kullanarak dilleri ağaç konumunda anımsayamadığınızda, bir şablon bulmak için harika bir yoludur.
+1. Python şablonları görüntülemek için seçin **yüklü > Python** sol veya "Python" için arama. Arama'yı kullanarak dilleri ağaç konumunda anımsayamadığınızda, bir şablon bulmak için harika bir yoludur.
 
     ![Gösterilen Python projeleri ile yeni proje iletişim kutusu](media/vs-getting-started-python-01-new-project.png)
 
-1. Python desteği Visual Studio Proje şablonları, Bottle, Flask ve Django çerçeveleri kullanarak web uygulamaları dahil olmak üzere çeşitli nasıl içerir dikkat edin. Bu kılavuzda amaçları doğrultusunda, Bununla birlikte, boş bir proje ile başlayalım. 
+    Python desteği Visual Studio Proje şablonları, Bottle, Flask ve Django çerçeveleri kullanarak web uygulamaları dahil olmak üzere çeşitli nasıl içerir dikkat edin. Bu kılavuzda amaçları doğrultusunda, Bununla birlikte, boş bir proje ile başlayalım.
 
 1. Seçin **Python uygulama** şablonu, proje için bir ad belirtin ve seçin **Tamam**. 
 
 1. Birkaç dakika sonra Visual Studio Proje yapısında gösterir **Çözüm Gezgini** penceresi (1). Varsayılan kod dosyası (2) düzenleyicisinde açın. Özellikler penceresi (3), Çözüm Gezgini'nde tam konumuna diskteki dahil olmak üzere, seçili öğe için ek bilgileri görüntülemek için de görünür.
- 
+
     ![Python proje ile Çözüm Gezgini](media/vs-getting-started-python-02-windows.png)
- 
+
 1. Dosya ve klasörleri projenizde burada Gözat olduğu Solution Explorer ile tanımak için birkaç dakika alın.
-    
+
     ![Çeşitli özelliklerini göstermek için genişletilmiş Çözüm Gezgini](media/vs-getting-started-python-03-solution-explorer.png)
 
     (1) kalın olarak vurgulanan yeni proje iletişim kutusuna verdiğiniz adla kullanarak projenize ' dir. Diskte, bu proje tarafından temsil edilen bir `.pyproj` proje klasörünüzdeki dosya.
@@ -69,8 +69,8 @@ Bu öğreticide tek ve boş kod dosyasını içeren basit bir proje ile başlar.
     (4) de altında projedir **Python ortamları** düğümü. Genişletilmiş olduğunda kullanılabilen kullanılabilir Python yorumlayıcılar bakın. Bu ortamına (5) yüklü kitaplıkları görmek için bir yorumlayıcı düğümünü genişletin.
 
     Bir düğüm veya uygulanabilir komutların menüsüne erişmek için Çözüm Gezgininde öğenin sağ tıklayın. Örneğin, **yeniden adlandırma** komutu bir düğüm veya proje ve çözüm dahil olmak üzere öğe adını değiştirmenize olanak verir.
-    
-## <a name="next-steps"></a>Sonraki Adımlar
+
+## <a name="next-steps"></a>Sonraki adımlar
 
 > [!div class="nextstepaction"]
 > [Yazma ve kodu çalıştırma](vs-tutorial-01-02.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8356a9d4ab470b67a6e495d753fa498237e530f4
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 2d3285004ce2b23a20f345966161017387dfdf4e
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-6-working-with-git"></a>6. adım: Git ile çalışma
 
@@ -48,7 +48,6 @@ Bu konu, mevcut bir proje için yerel bir Git deposu oluşturuluyor açıklar. U
 
 Git ile çalışma hakkında daha kapsamlı bir öğretici için bkz: [kodunuzu paylaşımı Visual Studio 2017 ve VSTS Git](https://docs.microsoft.com/vsts/git/share-your-code-in-git-vs-2017)
 
-
 ## <a name="tutorial-review"></a>Eğitmen gözden geçirme
 
 Visual Studio'da Python üzerinde bu öğreticiyi tamamlamak tebrikler. Bu öğreticide, öğrendiğinize nasıl yapılır:
@@ -63,6 +62,6 @@ Visual Studio'da Python üzerinde bu öğreticiyi tamamlamak tebrikler. Bu öğr
 Buradan, kavramlar ve nasıl yapılır kılavuzları, aşağıdakiler de dahil olmak üzere keşfedin:
 
 - [Python için C++ uzantısı oluşturma](cpp-and-python.md)
-- [Azure uygulama hizmeti yayımlama](publishing-to-azure.md)
-- [Profil oluşturma](profiling.md)
-- [Birim Testi](unit-testing.md)
+- [Azure App Service’e yayımlama](publishing-to-azure.md)
+- [Profil Oluşturma](profiling.md)
+- [Birim testi](unit-testing.md)

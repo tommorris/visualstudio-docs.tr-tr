@@ -31,11 +31,11 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7ed9c7f362399d9cd256b02af9f1fe1bcecf8ce
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 48462684498136d09354fb87917f553d522188c0
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı ile Çalıştırma İşlemleri İliştirme
 Yerel veya uzak bilgisayarda çalışan bir işlemi için Visual Studio hata ayıklayıcısı ekleyebilirsiniz. İşlemin çalıştığı sonra tıklayın **hata ayıklama > ekleme işlemi için** (veya basın **CTRL + ALT + P**) açmak için **ekleme işlemi için** iletişim kutusu.
@@ -122,7 +122,7 @@ Hata ayıklayıcı ilk önceki işlem kimliği eşleşecek şekilde deneyerek ye
 
 ## <a name="additional-info"></a>Ek bilgi
 
-Birden çok programlar ayıkladığınız ancak herhangi bir anda yalnızca bir program hata ayıklayıcısı'ndaki etkin olduğu durumlarda eklenebilir. Etkin program ayarlayabileceğiniz **hata ayıklama konumu** araç veya **işlemleri** penceresi. Daha fazla bilgi için bkz: [nasıl yapılır: Geçerli Program ayarlamak](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+Birden çok programlar ayıkladığınız ancak herhangi bir anda yalnızca bir program hata ayıklayıcısı'ndaki etkin olduğu durumlarda eklenebilir. Etkin program ayarlayabileceğiniz **hata ayıklama konumu** araç veya **işlemleri** penceresi.  
   
 Güvenilmeyen kullanıcı hesabı tarafından sahip olunan bir işlem ekleme çalışırsanız, bir güvenlik uyarısı iletişim kutusu onay görünür. Daha fazla bilgi için bkz: [güvenlik uyarısı: güvenilmeyen bir kullanıcıya ait bir işlem ekleme tehlikeli olabilir. Aşağıdaki bilgiler şüpheli görünüyorsa veya emin değilseniz, bu işlem için eklemeyin](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
   

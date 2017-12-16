@@ -26,11 +26,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a21450dda35addae55019545d67ab7f1e4ebe99a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 02db9a01286e65f371ab4d8388102a3db4c5602e
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>İzlenecek Yol: Windows Formunda Hata Ayıklama
 Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows formu, standart bir Windows uygulaması oluşturur. Bu adım adım işlemleri Visual Basic, C# ya da C++ kullanarak tamamlayabilirsiniz.  
@@ -126,7 +126,7 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
   
 4.  Üzerinde **hata ayıklama** menüsünde seçin **Windows**, ardından **izleme**, tıklatıp **Watch1**.  
   
-5.  İçinde **Watch1** penceresinde, boş bir satır'ı tıklatın. İçinde **adı** sütununa, `textBox1.Text` (Visual Basic, Visual C# veya J# kullanıyorsanız) veya `textBox1->Text` (C++ kullanıyorsanız), ardından ENTER tuşuna basın.  
+5.  İçinde **Watch1** penceresinde, boş bir satır'ı tıklatın. İçinde **adı** sütununa, `textBox1.Text` (Visual Basic veya Visual C# kullanıyorsanız) veya `textBox1->Text` (C++ kullanıyorsanız), ardından ENTER tuşuna basın.  
   
      **Watch1** penceresi tırnak işaretleri içindeki bu değişkenin değerini gösterir:  
   

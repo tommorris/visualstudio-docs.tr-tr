@@ -11,11 +11,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c71d76e3b085260043f6f07de8b352ab74c3930f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 1bcf34f730411589624075bde4ace0b5457e07a7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Nasıl yapılır: bir zaman uyumsuz Visual Studio hizmet sağlayın
 Bir hizmeti kullanıcı Arabirimi iş parçacığı engellenmeden edinmek istiyorsanız, zaman uyumsuz bir hizmet oluşturmak ve arka plan iş parçacığında paketi gerekir. Bu amaçla kullanabileceğiniz bir <xref:Microsoft.VisualStudio.Shell.AsyncPackage> yerine <xref:Microsoft.VisualStudio.Shell.Package>ve zaman uyumsuz paketin özel zaman uyumsuz yöntemleri ile Hizmet Ekle  
@@ -24,9 +24,9 @@ Bir hizmeti kullanıcı Arabirimi iş parçacığı engellenmeden edinmek istiyo
   
 ## <a name="implementing-an-asynchronous-service"></a>Zaman uyumsuz bir hizmet uygulama  
   
-1.  VSIX proje oluşturma (**dosya / yeni / Project / Visual C# / Extensiblity / VSIX proje**). Proje adı **TestAsync**.  
+1.  VSIX proje oluşturma (**Dosya > Yeni > Proje > Visual C# > Extensiblity > VSIX proje**). Proje adı **TestAsync**.  
   
-2.  Bir VSPackage projeye ekleyin. Proje düğümünde seçin **Çözüm Gezgini** tıklatıp **Ekle / yeni öğe / Visual C# öğeleri / genişletilebilirlik / Visual Studio Paketi**. Bu dosya adı **TestAsyncPackage.cs**.  
+2.  Bir VSPackage projeye ekleyin. Proje düğümünde seçin **Çözüm Gezgini** tıklatıp **Ekle > Yeni Öğe > Visual C# öğeleri > genişletilebilirlik > Visual Studio Paketi**. Bu dosya adı **TestAsyncPackage.cs**.  
   
 3.  TestAsyncPackage.cs içinde paket yerine AsyncPackage devralmak için paket değiştirin:  
   
@@ -225,4 +225,4 @@ public sealed class TestAsyncPackage : AsyncPackage
 8.  Çözümü derlemek ve hata ayıklamayı Başlat. Visual Studio'nun deneysel örneği göründüğünde, Git **Araçları** menü ve Ara **çağırma TestAsyncCommand** menü öğesi. Tıklattığınızda, TextWriterService, belirtilen dosyaya yazar. (Komut çağırma Ayrıca paket yüklemek neden olduğundan, bir çözüm açmanız gerekmez.)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanarak ve hizmetleri sağlar](../extensibility/using-and-providing-services.md)
+ [Hizmetleri Kullanma ve Sağlama](../extensibility/using-and-providing-services.md)

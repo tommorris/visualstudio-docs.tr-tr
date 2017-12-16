@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 745e6abe6aa9e1637d7ab79c0f76fb8874e8f6af
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: a6b5fad7b698b5e313cf5252a4dbf1648e2617d7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da bir şablondan bir Python projesi oluşturma
 
@@ -81,12 +81,12 @@ Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installation.md)
 
 1. Ctrl + F5 tuşuna basarak veya seçerek program Çalıştır **hata ayıklama > hata ayıklama olmadan Başlat** menüsünde. Sonuçları konsol penceresinde görüntülenir.
 
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 > [!div class="nextstepaction"]
 > [Öğretici: Visual Studio'da Python ile çalışma](vs-tutorial-01-01.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Varolan bir Python yorumlayıcısı için bir ortam oluşturma](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 - [Python desteği Visual Studio 2015 ve daha önce yükleme](installation.md).

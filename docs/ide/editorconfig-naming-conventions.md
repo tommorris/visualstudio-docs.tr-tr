@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8751bdb2d2dfb364f19f62e03edd1527fa3deb7d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b14f0b98651f0a76d9a9a67bd429673e41e7d319
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="naming-conventions-for-editorconfig"></a>EditorConfig için adlandırma kuralları
 
@@ -43,7 +43,7 @@ Adlandırma kuralı uygulamak için simgelerini türünü tanımlamak için bir 
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_kinds = <values>`
 
-İzin verilen değerler aşağıda listelenmiştir ve virgül ile ayırarak birden çok değer belirtebilirsiniz.
+Aşağıdaki liste, izin verilen değerler gösterir ve virgül ile ayırarak birden çok değer belirtebilirsiniz.
 
 - \*(tüm sembolleri belirtmek için bu değeri kullanın)
 - sınıf
@@ -63,7 +63,7 @@ Erişilebilirlik düzeyleri uygulamak için adlandırma kuralı istediğiniz sim
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_accessibilities = <values>`
 
-İzin verilen değerler aşağıda listelenmiştir ve virgül ile ayırarak birden çok değer belirtebilirsiniz.
+Aşağıdaki liste, izin verilen değerler gösterir ve virgül ile ayırarak birden çok değer belirtebilirsiniz.
 
 - \*(tüm erişilebilirlik düzeyleri belirtmek için bu değeri kullanın)
 - public
@@ -81,16 +81,15 @@ Değiştiriciler uygulamak için adlandırma kuralı istediğiniz simgelerin tan
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-İzin verilen değerler aşağıda listelenmiştir ve virgül ile ayırarak birden çok değer belirtebilirsiniz.
+Aşağıdaki liste, izin verilen değerler gösterir ve virgül ile ayırarak birden çok değer belirtebilirsiniz.
 
-- \*(tüm değiştiricileri belirtmek için bu değeri kullanın)
 - soyut veya must_inherit
 - async
 - const
 - readonly
 - statik veya paylaşılan
 
-Bu özelliği atarsanız, adlandırma kuralınızın tüm değiştiricileri uygulanır.
+`required_modifiers`İsteğe bağlı bir özelliktir. Bu özelliği atarsanız, adlandırma kuralınızın tüm değiştiricileri uygulanır.
 
 ## <a name="style"></a>Stil
 
@@ -145,7 +144,7 @@ Aşağıdaki tabloda, izin verilen önem derecesi değerlerini ve ne anlama geld
 
 Önem Derecesi | Efekt
 ------------ | -------------
-None veya Sessiz | Bu stili ardından, herhangi bir şey kullanıcıya gösterme; Ancak, otomatik olarak oluşturulan kodu bu stili izleyin.
+None veya Sessiz | Bu stili ardından, herhangi bir şey kullanıcıya gösterme; Ancak, otomatik olarak oluşturulan kod bu stili izler.
 Öneri | Bu stili ardından, kullanıcıya ilk iki karakter üzerinde temel alınan noktaların bir öneri olarak göster. Derleme zamanında hiçbir etkisi yoktur.
 uyarı | Bu stili ardından, derleyici uyarısı hata listesinde göster.
 Hata | Bu stili ardından, bir derleyici hatası hata listesinde göster.
@@ -155,7 +154,7 @@ Hata | Bu stili ardından, bir derleyici hatası hata listesinde göster.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki genel özellikleri, yöntemleri, alanları, olaylar ve temsilciler büyük harfle yazılmalıdır olduğunu belirten bir adlandırma kuralını içeren bir örnek .editorconfig dosyasıdır. Bu adlandırma kuralını değerleri ayırmak için virgül kullanarak, kuralın uygulanacağı simge birden çok türde belirtir dikkat edin.
+Aşağıdaki .editorconfig dosya ortak özellikleri, yöntemleri, alanları, olaylar ve temsilciler büyük harfle yazılmalıdır olduğunu belirten bir adlandırma kuralı içerir. Bu adlandırma kuralını değerleri ayırmak için virgül kullanarak, kuralın uygulanacağı simge birden çok türde belirtir dikkat edin.
 
 ```
 # Public members must be capitalized (public_members_must_be_capitalized)

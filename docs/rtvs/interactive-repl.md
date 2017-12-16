@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ed6da27de93c371e59b8851924a39b6387c32db9
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: da77078bfd0d6e2195169d40dfdbfdb484b68655
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="working-with-the-r-interactive-window"></a>R etkileşimli pencere ile çalışma
 
@@ -75,7 +75,6 @@ Araç çubuğu komutlarını aşağıdaki gibidir, hangi çoğu klavye eşdeğer
 | ![Proje konumu düğmesi için çalışma dizini ayarlayın](media/repl-toolbar-11-set-working-directory-to-project.png) | Çalışma dizini proje konumuna ayarlayın | Ctrl+Shift+P | Visual Studio şu anda yüklenen proje kökündeki için çalışma dizini ayarlar. Bkz: [çalışma dizini](#working-directory). |
 | (Metin alanı) | Çalışma seçin dizini | yok | Çalışma dizini için doğrudan giriş alanı. Bkz: [çalışma dizini](#working-directory). |
 
-
 ## <a name="workspaces-and-sessions"></a>Çalışma alanları ve oturumlar
 
 Etkileşimli penceresinde kod çalıştıran bir bağlamı Geçerli oturumunuzda oluşturur. Bağlam genel değişkenler, işlev tanımları, kitaplık yükler ve benzeri oluşur. Bu bağlamda topluca adlı bir *çalışma*, kaydedin ve herhangi bir zamanda çalışma alanları yük. 
@@ -88,12 +87,10 @@ Daha önce kaydedilmiş bir çalışma alanı yeniden yüklemeyi seçin **yük �
 
 **Sıfırlama** düğmesini veya **R Araçlar > oturum > sıfırlama** oturum bağlamı temizler. Bir uzak oturum kullanıyorsanız, sıfırlama depolanan tüm dosyaları temizlemek için uzak makinede kullanıcı profili de siler. (Bkz [çalışma alanları](workspaces.md#directories-on-local-and-remote-computers).)
 
-
 ## <a name="working-directory"></a>Çalışma dizini
 
 Geliştiriciler genellikle kendi çalışma dizini sırada etkileşimli bir oturumda değiştirmek istiyorum. Araç çubuğunda, kullanılabilen çeşitli komutları **R Araçlar > çalışma dizini** menü ve proje bağlam menüsü kaynak dosyasının konumunu, konum veya projenizin veya diğer bir çalışma dizini kolayca ayarlamanıza izin verir rastgele konumu. Bunun yapılması, dosyalar için söz konusu olduğunda tam yol adları veya uzun göreli yol adlarını yazarak önlemenize yardımcı olur.
 
- 
 ## <a name="history"></a>Geçmiş
 
 Etkileşimli penceresinde girin her satır bir Düzenleyicisi'nden gönderilen satırları içerir, çoğaltma'nın geçmişi korunur. Komut satırında olasılıkla alışkın için olduğu gibi sonra Yukarı ve aşağı ok tuşlarına geçmişinde gidebilirsiniz.

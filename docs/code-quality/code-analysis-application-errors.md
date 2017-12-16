@@ -17,11 +17,11 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af00c9eb270604a9d918f237c50930da7a2b8cdd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f89420d19696c0be26a2fb0a9b9b405574325797
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-application-errors"></a>Kod Çözümleme Uygulama Hataları
 Bu bölüm, yönetilen kod çözümleme aracı tarafından oluşturulan hata iletilerinin bir başvuru değildir. Belirli bir hata iletisi için Yardım almak için hata numarası yazın **Ara** dizinde kutusu.  
@@ -56,12 +56,10 @@ Bu bölüm, yönetilen kod çözümleme aracı tarafından oluşturulan hata ile
 |[CA0503](ca0503.md)|Özellik kullanım dışı bırakılmıştır. Superceding özelliğini kullanın|  
 |[CA0504](ca0504.md)|Mevcut değil çünkü kural dizin yoksayıldı|  
 |[CA0505](ca0505.md)|Özellik kullanım dışı bırakılmıştır. Superceding özelliğini kullanın|  
-|[FxCopCmd hataları](fxcopcmd-errors.md)|Yönetilen kod çözümleme hataları.|  
+|[FxCopCmd Hataları](fxcopcmd-errors.md)|Yönetilen kod çözümleme hataları.|  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Güvenli kod yazma için yönergeler](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)  
-
- [Kod analiz İlkesi hataları](../code-quality/code-analysis-policy-errors.md)  
+ [Kod Çözümleme İlkesi Hataları](../code-quality/code-analysis-policy-errors.md)  
   
  [Yönetilen kod kalitesini analiz etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  
   

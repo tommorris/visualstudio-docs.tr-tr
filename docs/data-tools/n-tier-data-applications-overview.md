@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3949d49f763c2513e86c2cd3f1b20c20fb858ecc
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 0fb26eddd3a7bf6af9a2888b6fbc8efa79e33bf5
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="n-tier-data-applications-overview"></a>N Katmanlı Veri Uygulamalarına Genel Bakış
 *N katmanlı* veri uygulamalardır birden çok ayrılmış veri uygulamalarını *katmanları*. "Dağıtılmış uygulamalar" ve "çok katmanlı uygulamalar" olarak da adlandırılan, istemci ve sunucu arasında dağıtılan ayrık katmanları işlemeye n katmanlı uygulamalar ayırın. Veri erişimi uygulamaları geliştirirken açıkça birbirinden uygulamayı oluşturan çeşitli katmanları arasında olması gerekir.  
@@ -34,7 +34,7 @@ Visual Studio geliştiriciler n katmanlı uygulamalar oluşturmanıza yardımcı
   
 -   [LINQ-SQL Visual Studio Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ayrı ad alanında DataContext ve veri sınıfları oluşturmak için ayarları sağlar. Bu veri erişimi ve veri varlığı katmanları mantıksal ayrımı sağlar.  
   
--   [LINQ-SQL](/dotnet/framework/data/adonet/sql/linq/index) sağlar <xref:System.Data.Linq.Table%601.Attach%2A> bir uygulamada farklı katmanlarındaki DataContext bir araya getirme olanak tanıyan yöntemi. Daha fazla bilgi için bkz: [N katmanlı ve uzak uygulamalarla LINQ-SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+-   [LINQ-SQL](/dotnet/framework/data/adonet/sql/linq/index) sağlar <xref:System.Data.Linq.Table%601.Attach%2A> bir uygulamada farklı katmanlarındaki DataContext bir araya getirme olanak tanıyan yöntemi. Daha fazla bilgi için bkz: [N katmanlı ve uzak uygulamalarla LINQ-SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).  
   
 ## <a name="presentation-tier"></a>Sunu katmanı  
 *Sunu katmanı* kullanıcıların bir uygulama ile etkileşim katmanı. Ek uygulama mantığını genellikle de içerir. Tipik sunu katmanı bileşenleri şunları içerir:  
@@ -78,14 +78,14 @@ Veri katmanı sunu katmanındaki istemciden doğrudan erişilemez. Bunun yerine,
 ## <a name="help-for-n-tier-development"></a>N katmanlı geliştirme için Yardım  
 Aşağıdaki konular n katmanlı uygulamalar ile çalışma hakkında bilgi sağlar:  
   
-[Ayrı veri kümeleri ve TableAdapters öğelerini farklı projelere içine](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
+[Veri kümeleri ile TableAdapter’ları farklı projelere ayırma](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
   
 [İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
 
-[N katmanlı ve uzak uygulamalarla LINQ-SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+[LINQ to SQL ile N Katmanı ve Uzak Uygulamalar](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)  
   
 ## <a name="see-also"></a>Ayrıca bkz.
 [İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
 [Hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md)   
 [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)   
-[Visual Studio'da veri erişimi](../data-tools/accessing-data-in-visual-studio.md)
+[Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)

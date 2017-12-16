@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eabddaea271eb07873fc50bd4824a5108514444c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 679b5c78330bb8be151a1b9f89625c8f2178456d
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Bozuk durum özel durumları işleme kaçının
 |||  
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  [Bozuk durumu özel durumları (CSE)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) belleğin belirtmek Bozulması işleminize bulunmaktadır. Bir saldırganın bir yararlanma bozuk bellek bölgeye yerleştirebilirsiniz işleminin çökmesine izin vermek yerine bu yakalama güvenlik açıklarına neden olabilir.  
   
 ## <a name="rule-description"></a>Kural Tanımı  
- CSE bir işlemin durumunu olduğundan bozuk ve sistem tarafından yakalandı olduğunu gösterir. Yönteminizi uygun ile işaretlerseniz bozuk durumda senaryosunda, genel işleyicisi özel durumu yalnızca yakalar. `HandleProcessCorruptedStateExceptions` özniteliği. Varsayılan olarak, [ortak dil çalışma zamanı (CLR)](https://msdn.microsoft.com/en-us/library/8bs2ecf4.aspx) catch işleyicileri için CSE'ler çağırma kullanılamaz.  
+ CSE bir işlemin durumunu olduğundan bozuk ve sistem tarafından yakalandı olduğunu gösterir. Yönteminizi uygun ile işaretlerseniz bozuk durumda senaryosunda, genel işleyicisi özel durumu yalnızca yakalar. `HandleProcessCorruptedStateExceptions` özniteliği. Varsayılan olarak, [ortak dil çalışma zamanı (CLR)](/dotnet/standard/clr) catch işleyicileri için CSE'ler çağırma kullanılamaz.  
   
  Bu tür özel durumları yakalama olmadan çökmesine işlem kodu dahi günlük olarak en güvenli seçenek izin veriyor Bellek Bozulması hatalar yararlanmaya saldırganlar izin verebilirsiniz.  
   

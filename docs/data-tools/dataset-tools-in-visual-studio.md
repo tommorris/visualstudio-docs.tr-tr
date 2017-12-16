@@ -50,11 +50,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6a7e5741b11263ef3c3730ddaa69e566cd7c2e24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0a589cf48f53636bcd3892c7c4c991e0fb516bf3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio'da veri kümesi araçları
 > [!NOTE]
@@ -81,9 +81,9 @@ ms.lasthandoff: 10/31/2017
   
     -   [Veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md)  
   
-    -   [Veritabanına veri kaydetme](../data-tools/save-data-back-to-the-database.md)  
+    -   [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)  
   
--   Sorgu ve veri kümesinde arayın. Daha fazla bilgi için bkz: [sorgu veri kümeleri](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]etkinleştirir [LINQ (dil ile tümleşik sorgu)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d) verileri üzerinden bir <xref:System.Data.DataSet> nesnesi. Daha fazla bilgi için bkz: [LINQ-DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
+-   Sorgu ve veri kümesinde arayın. Daha fazla bilgi için bkz: [sorgu veri kümeleri](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]etkinleştirir [LINQ (dil ile tümleşik sorgu)](/dotnet/csharp/linq/) verileri üzerinden bir <xref:System.Data.DataSet> nesnesi. Daha fazla bilgi için bkz: [LINQ-DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
   
 -   Kullanım **veri kaynakları** penceresi kullanıcı arabirimi denetimlerini dataset veya bireysel sütunlarını bağlamak ve hangi sütunların kullanıcı düzenlenebilir belirtmek için. Daha fazla bilgi için bkz: [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   

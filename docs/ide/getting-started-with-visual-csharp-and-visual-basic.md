@@ -1,29 +1,18 @@
 ---
-title: "Visual C# ve Visual Studio kullanarak Visual Basic'e Başlarken | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-helpviewer_keywords:
-- C# tutorial
-- Visual Basic tutorial
-- learn VB
-- VB tutorial
-- learn C#
-- learn Visual Basic
-ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
-caps.latest.revision: "13"
-author: TerryGLee
-ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: edaf43791dc93693474c8cf68067dbcbb3196f79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/quickstart-visual-basic-console
+ms.openlocfilehash: 584510fdc81abd52be390759beef0ac5d412700e
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
+---
+Başlık: "Visual C# ve Visual Studio kullanarak Visual Basic'e Başlarken | Microsoft Docs"MS.özel:" "ms.date:" 11/04/2016"ms.reviewer:" "MS.Paket:" "ms.technology:"vs-edinme"ms.tgt_pltfrm:" "ms.topic:"get-makalesi"helpviewer_keywords: 
+  - "C# Öğreticisi"
+  - "Visual Basic Öğreticisi"
+  - "VB öğrenme"
+  - "VB Öğreticisi"
+  - "C# öğrenme"
+  - "Visual Basic öğrenme" Yazar: "TerryGLee" ms.author: "tglee" Yöneticisi: ghogen
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>Visual C# ve Visual Studio kullanarak Visual Basic'e Başlarken
 Visual C# veya Microsoft Visual Basic'te yeni de olsanız, hareket noktanız burasıdır. Başlarken Yardımı, size Visual C# ve Visual Basic'i tanıtan sıralı bir dizi derstir. Eğlenin ve harika yazılımlar yazın.  
@@ -34,13 +23,13 @@ Visual C# veya Microsoft Visual Basic'te yeni de olsanız, hareket noktanız bur
  [İzlenecek yol: basit bir uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
  Visual Studio IDE'deki temel pencereleri tanıyın, bir ayar yapılandırarak geliştirme deneyiminizi en iyi duruma getirin ve sonra basit bir program oluşturun.  
   
- [Eğitmen 1: Resim Görüntüleyici oluşturma](../ide/tutorial-1-create-a-picture-viewer.md)  
+ [Eğitmen 1: Resim Görüntüleyici Oluşturma](../ide/tutorial-1-create-a-picture-viewer.md)  
  Bir dosyadan resim yükleyen ve bu resmi pencerede görüntüleyen bir program derleyin. Formunuzdaki düğmeler ve resim kutuları gibi denetimleri sürüklemeyi, özelliklerini ayarlamayı ve formu düzgün şekilde yeniden boyutlandırmak için kapsayıcıları kullanmayı öğrenin. Kod yazmaya başlayın.  
   
- [Öğretici 2: zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md)  
+ [Eğitmen 2: Zamanlı Matematik Testi Oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md)  
  Oyuncunun dört rasgele aritmetik sorusuna belirtilen süre içinde yanıt vermesini gerektiren zamanlı bir matematik sınavı oyunu oluşturun. Kullanarak rastgele sayılar oluşturma öğrenin `Random` kullanarak tetikleyici olayları sınıfı bir `Timer` denetlemek, akış programı kullanarak denetimi `if else` deyimleri ve temel aritmetik işlemler gerçekleştirme.  
   
- [Öğretici 3: eşleşen bir oyun oluşturma](../ide/tutorial-3-create-a-matching-game.md)  
+ [Eğitmen 3: Eşleme Oyunu Oluşturma](../ide/tutorial-3-create-a-matching-game.md)  
  Oyuncunun gizli simgeleri eşleştirmesi gerektiği bir eşleştirme oyunu oluşturun. Kullanarak nesneleri tutun öğrenin bir `List` nesne, kullanın bir `foreach` döngü, başvuru değişkenini kullanarak bir formun durumunu izlemek, birden çok nesne ile kullanın ve tam olarak bir kez başlatıldığında yangın süreölçer olun olay işleyicisi oluşturun.  
 
 |         |         |

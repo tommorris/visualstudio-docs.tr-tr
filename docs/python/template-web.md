@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio'da Python için proje şablonu Web | Microsoft Docs"
+title: "Visual Studio'da Python için proje şablonları Web | Microsoft Docs"
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
@@ -12,21 +12,21 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ba0106ad8a820556ed4c8f7aaed915f532f8c824
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: ad0906394552eb3af3293094301f94eee130e870
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="python-web-project-templates"></a>Proje şablonları Python Web
+# <a name="python-web-project-templates"></a>Python web projesi şablonları
 
-Python Visual Studio Proje şablonları ve çeşitli çerçeveleri işlemek üzere yapılandırılmış bir hata ayıklama başlatıcısı aracılığıyla Bottle, Flask ve Django çerçeveleri geliştirme web projeleri destekler. Genel "Web projesi" Şablon Piramit gibi diğer çerçeveler için de kullanabilirsiniz.
+Python Visual Studio Proje şablonları ve çeşitli çerçeveleri işlemek üzere yapılandırılmış bir hata ayıklama başlatıcısı aracılığıyla Bottle, Flask ve Django çerçeveleri geliştirme web projeleri destekler. Genel de kullanabilirsiniz **Web projesi** Piramit gibi diğer çerçeveler için şablon.
 
 Visual Studio çerçeveleri kendilerini içermez. Projeye sağ tıklayıp seçerek ayrı olarak çerçeveler komutunu yüklemelisiniz **Python > yükleme/yükseltme framework...** .
 
 Çalıştırdığınızda, bir şablondan oluşturulan bir proje (üzerinden erişilen gibi **Dosya > Yeni > Proje...** ) rastgele seçili yerel bağlantı noktası ile bir web sunucusu başlatan, hata ayıklama sırasında varsayılan tarayıcınızı açar ve Microsoft Azure yayımlama doğrudan sağlar.
 
-![Yeni Web projesi şablonları](media/template-web-new-project.png)
+![Yeni web projesi şablonları](media/template-web-new-project.png)
 
 Bottle, Flask ve Django şablonları her başlangıç sitesi bazı sayfaları ve statik dosyaları içerir. Bu kodu çalıştırmak ve (burada bazı ayarları gereken ortamından elde edilebilir) sunucusu yerel olarak hata ayıklama yeterli olduğundan ve Microsoft Azure'a dağıtmak için (burada bir [WSGI uygulama](http://www.python.org/dev/peps/pep-3333/) nesnenin sağlanması gerekiyor).
 
@@ -36,7 +36,7 @@ Bir proje çerçeveye özel şablonu oluştururken, PIP kullanarak gerekli paket
 
 Microsoft Azure App Service'e dağıtırken Python sürümünü seçin bir [site uzantısı](https://aka.ms/PythonOnAppService) ve paketleri el ile yükleyin. Ayrıca, Azure App Service yaptığından **değil** paketleri otomatik olarak yüklemek bir `requirements.txt` dosya Visual Studio'dan dağıtıldığında, yapılandırma ayrıntılarını izleyin [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
-Microsoft Azure bulut hizmeti *mu* Destek `requirements.txt` dosya. [Azure bulut hizmeti projeleri](template-azure-cloud-service.md) Ayrıntılar için.
+Microsoft Azure bulut Hizmetleri *mu* Destek `requirements.txt` dosya. [Azure bulut hizmeti projeleri](template-azure-cloud-service.md) Ayrıntılar için.
 
 ## <a name="debugging"></a>Hata Ayıklama
 
@@ -62,12 +62,12 @@ Herhangi bir proje özelliği veya ortam değişkeni MSBuild sözdizimiyle örne
 > [!Note]
 > Değerler **sunucu komutu Çalıştır** ile kullanılan **hata ayıklama > Start Server** komut veya Ctrl-F5; değerler **Debug sunucu komutunu** grup ilekullanılan**Hata ayıklama > hata ayıklama sunucu başlangıç** komut veya F5.
 
-
 ### <a name="sample-bottle-configuration"></a>Örnek Bottle yapılandırma
 
-Gerekli yapılandırma mu Demirbaş kod Bottle Web Proje şablonu içerir. İçeri aktarılan bottle uygulama bu kodu eklemeniz gerekmez, ancak bu durumda aşağıdaki ayarları yüklü kullanarak uygulamayı başlatın `bottle` Modülü:
+**Bottle Web projesi** şablon gerekli yapılandırma mu Demirbaş kod içerir. İçeri aktarılan bottle uygulama bu kodu eklemeniz gerekmez, ancak bu durumda aşağıdaki ayarları yüklü kullanarak uygulamayı başlatın `bottle` Modülü:
 
 - **Sunucu komutu çalıştırmak** Grup:
+
     - **Komut**: `bottle` (Modülü)
     - **Bağımsız değişkenler**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
@@ -79,9 +79,10 @@ Gerekli yapılandırma mu Demirbaş kod Bottle Web Proje şablonu içerir. İçe
 
 ### <a name="sample-pyramid-configuration"></a>Örnek Piramit yapılandırma
 
-Piramit uygulamalar, kullanarak şu anda en iyi oluşturulur `pcreate` komut satırı aracı. Uygulama oluşturulduktan sonra kullanarak alınabileceği [ilk varolan Python kodu](python-projects.md#creating-a-project-from-existing-files) şablonu. Bunu yaptıktan sonra seçin **Genel Web projesi** özelleştirme seçeneklerini yapılandırmak için. Bu ayarlar sanal bir ortama Piramit yüklü olduğu varsayılmaktadır `..\env`.
+Piramit uygulamalar, kullanarak şu anda en iyi oluşturulur `pcreate` komut satırı aracı. Uygulama oluşturulduktan sonra kullanarak alınabileceği [varolan Python kodu](python-projects.md#creating-a-project-from-existing-files) şablonu. Bunu yaptıktan sonra seçin **Genel Web projesi** özelleştirme seçeneklerini yapılandırmak için. Bu ayarlar sanal bir ortama Piramit yüklü olduğu varsayılmaktadır `..\env`.
 
 - **Hata ayıklama** Grup:
+
     - **Sunucu bağlantı noktası**: 6543 (veya ne olursa olsun .ini dosyalarında yapılandırılır)
 
 - **Sunucu komutu çalıştırmak** Grup:
@@ -94,7 +95,6 @@ Piramit uygulamalar, kullanarak şu anda en iyi oluşturulur `pcreate` komut sat
 
 > [!Tip]
 > Yapılandırmanıza gerek **çalışma dizini** özelliği projenizin Piramit uygulamalar genellikle bir dizin düzeyinde kaynak ağacın üstüne derin olduğundan.
-
 
 ### <a name="other-configurations"></a>Diğer yapılandırmalar
 
@@ -168,6 +168,6 @@ Hata ayıklama eklerseniz `web.config` şablonu projenizde veya Python uzaktan h
 
 ![Yayımla yapılandırmasını değiştirme](media/template-web-publish-config.png)
 
-**Microsoft Azure bulut hizmeti projesine dönüştürme** komutu (aşağıdaki görüntü), çözümünüz için bir bulut hizmeti projesini ekler. Bu proje kullanılacak sanal makineler ve hizmetler için yapılandırma ve dağıtım ayarlarını içerir. Kullanım **Yayımla** bulut hizmetine; dağıtmak için bulut projesi komutunu **Yayımla** Python proje komutunda hala Web sitelerine dağıtır. Bkz: [Azure bulut hizmeti projeleri](template-azure-cloud-service.md) daha fazla ayrıntı için.
+**Microsoft Azure bulut hizmeti projesine dönüştürme** komutu (aşağıdaki görüntü), çözümünüz için bir bulut hizmeti projesini ekler. Bu proje kullanılacak sanal makineler ve hizmetler için yapılandırma ve dağıtım ayarlarını içerir. Kullanım **Yayımla** bulut hizmetlerine; dağıtmak için bulut projesi komutunu **Yayımla** Python proje komutunda hala Web sitelerine dağıtır. Bkz: [Azure bulut hizmeti projeleri](template-azure-cloud-service.md) daha fazla ayrıntı için.
 
-![Microsoft Azure bulut hizmeti projesini komutuna Dönüştür](media/template-web-convert-menu.png)
+![Microsoft Azure bulut hizmeti projesi komutuna Dönüştür](media/template-web-convert-menu.png)

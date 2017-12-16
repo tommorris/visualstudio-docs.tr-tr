@@ -21,11 +21,11 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 9682eee19693c95e4f01ea4c99f6daf8646c6af1
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: c418d5ab3618a43a1e12bc3be2d96742fcbb669e
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Bağlantı noktası, geçirme ve Visual Studio projelerini yükseltme
 
@@ -43,7 +43,7 @@ Bazı türleri değişiklik zaman içerisinde, ancak destekler. Visual Studio'nu
 
 Aşağıdaki listede, önceki sürümlerde oluşturulan projeleri için Visual Studio 2017 desteği açıklanmaktadır.
 
-Bir proje görmüyorum veya dosya türü listelenen Burada, lütfen bakın olmalıdır [bu konunun Visual Studio 2015 sürümü](https://msdn.microsoft.com/library/hh266747.aspx) ve açıklamaları not edin.
+Bir proje görmüyorum veya dosya türü listelenen Burada, lütfen bakın olmalıdır [bu konunun Visual Studio 2015 sürümü](https://msdn.microsoft.com/library/hh266747.aspx) ve [bir sorun dosya](https://github.com/MicrosoftDocs/visualstudio-docs/issues/) proje türü ayrıntılarla.
 
 | Proje Türü | Destek |
 | --- | --- |

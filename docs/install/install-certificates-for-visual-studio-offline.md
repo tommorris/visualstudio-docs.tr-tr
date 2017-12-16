@@ -14,11 +14,11 @@ ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e6dcf1187db5c1e3dd911bc9f91867c383e5a8b2
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: ed86e3cd404c40026fad20ef08d4daecd98d74f2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio çevrimdışı yükleme için gerekli sertifikaları yükleyin
 
@@ -42,7 +42,7 @@ En son kök sertifikası olmayan çevrimdışı makinelerle kuruluşlar için bi
 
 Visual Studio dağıtım istemci iş istasyonlarına çevrimdışı bir ortamda komut dosyalarını oluşturuyorsanız, aşağıdaki adımları izlemelisiniz:
 
-1. Kopya [sertifika yönetim aracı](https://msdn.microsoft.com/library/e78byta0.aspx) (certmgr.exe) yükleme paylaşımına (örneğin, \\server\share\vs2017). Certmgr.exe dahil değildir ancak kendisi, Windows'un parçası olarak kullanılabilir olarak parçası [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+1. Kopya [sertifika yönetim aracı](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) yükleme paylaşımına (örneğin, \\server\share\vs2017). Certmgr.exe dahil değildir ancak kendisi, Windows'un parçası olarak kullanılabilir olarak parçası [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
 2. Bir toplu iş dosyası aşağıdaki komutlarla oluşturun:
 
@@ -122,7 +122,7 @@ Birkaç diğer destek seçenekleri şunlardır:
 * ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı).
 
 ## <a name="see-also"></a>Ayrıca bkz.
-* [Visual Studio yükleme](install-visual-studio.md)
+* [Visual Studio'yu yükleyin](install-visual-studio.md)
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
-* [Visual Studio'yu yüklemek için komut satırı parametreleri kullanma](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md)
+* [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio iş yükü ve bileşen kimlikleri](workload-and-component-ids.md)

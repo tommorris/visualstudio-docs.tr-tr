@@ -11,11 +11,11 @@ caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: d203bf88f5af6e69b97404ef8da4548f646750b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fe983de5dab35a031d6c99b37f2da77a200212f9
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Xamarin ile mobil geliştirme hakkında bilgi edinin
 Bu konu, Xamarin ile geliştirme platformlar arası mobil uygulamalar anlamanıza yardımcı olacak genel bakış malzeme yönlendirir. Henüz Visual Studio ve Xamarin yüklü değilse, başlangıç [Kurulum ve yükleme](../cross-platform/setup-and-install.md) işlem ilk olarak, daha sonra dönmek burada yükleyicileri çalıştırırken bu kaynakları ile çalışmak için.  
@@ -94,7 +94,7 @@ Bu konu, Xamarin ile geliştirme platformlar arası mobil uygulamalar anlamanız
   
 2.  **Apple iOS simülatörü.** Daha fazla bilgi edinmek için okuma [iOS simülatörü'nü ile çalışmaya başlama](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3.  **Microsoft'un Windows Phone öykünücüsü.** Daha fazla bilgi edinmek için okuma [Windows Phone 8 için Windows Phone öykünücüsü](https://msdn.microsoft.com/library/dn632391.aspx).  
+3.  **Microsoft'un Windows Phone öykünücüsü.** Daha fazla bilgi edinmek için okuma [Windows Phone 8 için Windows Phone öykünücüsü](../debugger/run-windows-phone-apps-in-the-emulator.md).  
   
 ##  <a name="components"></a>Derin Dalış: Xamarin bileşenleri  
  *10 dakika*  

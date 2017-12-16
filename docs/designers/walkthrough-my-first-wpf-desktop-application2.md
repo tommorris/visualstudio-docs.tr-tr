@@ -15,11 +15,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 75a333c7e5948e13db0c0c91b41128914e23222b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>İzlenecek yol: İlk WPF Masaüstü Uygulamam
 Bu kılavuzda Windows Presentation Foundation (WPF) geliştirme tanıtılmaktadır. Çoğu WPF Masaüstü uygulamaları için ortak olan öğeleri içeren temel bir uygulama oluşturacaksınız: XAML biçimlendirme, arka plan kodu, uygulama tanımları, denetimler, düzeni, veri bağlama ve stiller.  
@@ -851,40 +851,40 @@ Bu bölümde, proje ve bir ana penceresi veya form içeren uygulama altyapısı 
 ##  <a name="Best_Practices"></a>En iyi uygulamalar  
  Bu örnek, WPF temelleri gösterilir ve sonuç olarak, uygulama geliştirme en iyi yöntemler izlemez. Kapsamlı WPF ve .NET Framework uygulama geliştirme en iyi uygulamalar için uygun şekilde aşağıdaki konulara bakın:  
   
--   Erişilebilirlik - [en iyi erişilebilirlik uygulamaları](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)  
+-   Erişilebilirlik - [en iyi erişilebilirlik uygulamaları](/dotnet/framework/ui-automation/accessibility-best-practices)  
   
--   Güvenlik - [Windows Presentation Foundation güvenliği](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   Güvenlik - [Windows Presentation Foundation güvenliği](/dotnet/framework/wpf/security-wpf)  
   
--   Yerelleştirme - [WPF Genelleştirme ve yerelleştirme genel bakış](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   Yerelleştirme - [WPF Genelleştirme ve yerelleştirme genel bakış](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   Performans - [WPF Uygulama performansı en iyi duruma getirme](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   Performans - [WPF Uygulama performansı en iyi duruma getirme](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
 ##  <a name="Whats_Next"></a>Sırada ne var?  
  Şimdi WPF kullanarak bir masaüstü uygulaması oluşturmak için tanziminizde çeşitli teknikler vardır. Veri bağlama WPF uygulaması yapı taşlarını temel bir anlayış şimdi olmalıdır. Bu konuda halinde kapsamlı, ancak ayrıca artık umarız bazı bu konudaki teknikleri ötesinde kendi keşfedebilirsiniz olasılıklar duygusu vardır.  
   
  WPF mimarisi ve programlama modelleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [WPF mimarisi](https://msdn.microsoft.com/en-us/library/ms750441\(v=vs.100\).aspx)  
+-   [WPF Mimarisi](/dotnet/framework/wpf/advanced/wpf-architecture)  
   
--   [XAML genel bakış](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)  
+-   [XAML genel bakış](/dotnet/framework/wpf/advanced/xaml-overview-wpf)  
   
--   [Bağımlılık özelliklerine genel bakış](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx)  
+-   [Bağımlılık Özelliklerine Genel Bakış](/dotnet/framework/wpf/advanced/dependency-properties-overview)  
   
--   [Düzen sistemi](https://msdn.microsoft.com/en-us/library/ms745058\(v=vs.100\).aspx)  
+-   [Düzen sistemi](/dotnet/framework/wpf/advanced/layout)  
   
--   [Stilleri ve şablonları](https://msdn.microsoft.com/en-us/library/bb613570\(v=vs.100\).aspx)  
+-   [Stiller ve Şablonlar](/dotnet/framework/wpf/controls/styles-and-templates)  
   
  Uygulamaları oluşturma hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Uygulama geliştirme genel bakış](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)  
+-   [Uygulama geliştirme genel bakış](/dotnet/framework/wpf/app-development/index)  
   
--   [Denetimlerine genel bakış](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)  
+-   [Denetimlerine genel bakış](/dotnet/framework/wpf/controls/index)  
   
--   [Veri bağlama genel bakış](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)  
+-   [Veri Bağlamaya Genel Bakış](/dotnet/framework/wpf/data/data-binding-overview)  
   
--   [WPF grafikler, animasyon ve medya genel bakış](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)  
+-   [WPF grafikler, animasyon ve medya genel bakış](https://msdn.microsoft.com/en-us/library/ms742562)  
   
--   [WPF belgeleri](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
+-   [WPF'deki Belgeler](/dotnet/framework/wpf/advanced/documents-in-wpf)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[Windows Presentation Foundation ile modern masaüstü uygulamaları oluşturma](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+[Windows Presentation Foundation ile Modern Masaüstü Uygulamaları Oluşturma](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

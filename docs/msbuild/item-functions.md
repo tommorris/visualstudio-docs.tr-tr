@@ -13,11 +13,11 @@ caps.latest.revision: "28"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e3b99f769b92ddd9f44f2a95b122e5e388954aef
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="item-functions"></a>Öğe İşlevleri
 MSBuild 4.0 ile başlayarak, görev ve hedeflerini kodu projede öğeleri hakkında bilgi almak için öğe işlevleri çağırabilir. Bu işlevler alma Distinct() öğeleri basitleştirmek ve öğeler arasında döngü daha hızlıdır.  
@@ -62,7 +62,7 @@ MSBuild 4.0 ile başlayarak, görev ve hedeflerini kodu projede öğeleri hakkı
 |`Reverse`|`@(MyItem->Reverse())`|Öğeleri ters sırada döndürür.|  
 |`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Döndürür bir `boolean` herhangi bir öğeyi belirtilen meta veriler ada ve değere sahip olup olmadığını belirtmek için. Karşılaştırma büyük/küçük harfe duyarlıdır.|  
 |`ClearMetadata`|`@(MyItem->ClearMetadata())`|Öğeleri temizlenmiş bunların meta verilerini döndürür. Yalnızca `itemspec` korunur.|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|Belirtilen meta veri adı olan öğelerini döndürür. Karşılaştırma büyük/küçük harfe duyarlıdır.|  
+|`HasMetadata`|`@(MyItem->HasMetadata("MetadataName"))`|Belirtilen meta veri adı olan öğelerini döndürür. Karşılaştırma büyük/küçük harfe duyarlıdır.|  
 |`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Meta veri adı olan meta veri değerlerini döndürür.|  
 |`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|Belirtilen meta veriler ad ve değer sahip öğeleri döndürür. Karşılaştırma büyük/küçük harfe duyarlıdır.|  
   

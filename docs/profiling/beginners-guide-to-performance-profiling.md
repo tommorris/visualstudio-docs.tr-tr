@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio'da performans profili oluşturma Başlangıç Kılavuzu | Microsoft Docs"
+title: "Visual Studio'da Uygulama performansı profil | Microsoft Docs"
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -18,13 +18,13 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdb7339c902c94dc0052b1bd4d0570247069dc01
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.openlocfilehash: 6db8c14125a88c24aa39c2b2e7393aca174125f9
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="beginners-guide-to-performance-profiling"></a>Performans profili oluşturma Başlangıç Kılavuzu
+# <a name="profile-application-performance-in-visual-studio"></a>Visual Studio'da profili uygulama performansı
 Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözümlemek için kullanabilirsiniz. Bu yordam nasıl kullanılacağını gösterir **CPU kullanımı** sekmesi, uygulamanız için performans verilerini almak için tanılama araçları. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET, dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
   
 Hata ayıklayıcıyı zaman duraklatır, **CPU kullanımı** aracı uygulamanızda yürütülen işlevler hakkında bilgi toplar. Aracı iş gerçekleştirdiğiniz işlevleri listeler ve örnekleme oturum belirli kesimlerinde odaklanmak için kullanabileceğiniz bir zaman çizelgesi grafik sağlar.
@@ -68,7 +68,7 @@ Bu konuda, biz hata ayıklama normal iş akışınızda çözümlenirken CPU kul
 
      ![Tanılama araçlarını etkinleştirme CPU profil](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
-     Seçtiğinizde **etkinleştirmek CPU profil**, Visual Studio işlevlerinizi kaydı başlayacak ve aldıkları yürütmek için ne kadar süre. Uygulamanızı bir kesme noktasında durdurulamaz olduğunda, yalnızca bu toplanan verileri görüntüleyebilirsiniz.
+     Seçtiğinizde **kayıt CPU profili**, Visual Studio işlevlerinizi kaydı başlayacak ve aldıkları yürütmek için ne kadar süre. Uygulamanızı bir kesme noktasında durdurulamaz olduğunda, yalnızca bu toplanan verileri görüntüleyebilirsiniz.
 
 8.  İkinci isabetini uygulamayı çalıştırmak için F5'e basın.
 

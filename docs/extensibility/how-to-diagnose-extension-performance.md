@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c2d8b27937be4580da8ff33c5b3c1d57654b4c89
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Başlangıç uzantısı etkileri ölçme
 
@@ -48,7 +48,7 @@ Otomatik yükleme paketleri gereksinimini kaldırılmasına yardımcı, kullanı
 
 Aşağıdaki belgelerde bu özellikler hakkında daha fazla ayrıntı bulabilirsiniz:
 
-[Kural kullanıcı Arabirimi bağlamları temel](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): kullanıcı Arabirimi bağlamları yerleşik daha zengin bir kurala dayalı altyapısı proje türleri, özellikleri ve yetenekleri dayalı özel bağlamları oluşturmanıza izin. Bu özel bağlamları başlangıç yerine belirli bir özellikle projeyle varlığını gibi daha belirli senaryoları sırasında bir paketi yüklemek için kullanılabilir; izin vermeyi veya [komutu için özel bir bağlam bağlanması için görünürlük](https://msdn.microsoft.com/en-us/library/bb166512.aspx) bir komut durumu Sorgu işleyici kaydetmek için proje özellikleri veya böylece gereksinimini bir paketi yüklemek için kullanılabilir başka koşullar göre.
+[Kural kullanıcı Arabirimi bağlamları temel](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): kullanıcı Arabirimi bağlamları yerleşik daha zengin bir kurala dayalı altyapısı proje türleri, özellikleri ve yetenekleri dayalı özel bağlamları oluşturmanıza izin. Bu özel bağlamları başlangıç yerine belirli bir özellikle projeyle varlığını gibi daha belirli senaryoları sırasında bir paketi yüklemek için kullanılabilir; izin vermeyi veya [komutu için özel bir bağlam bağlanması için görünürlük](visibilityconstraints-element.md) bir komut durumu Sorgu işleyici kaydetmek için proje özellikleri veya böylece gereksinimini bir paketi yüklemek için kullanılabilir başka koşullar göre.
 
 [Zaman uyumsuz paket Destek](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): paket yükleme otomatik yük öznitelik veya bir zaman uyumsuz hizmet sorgu tarafından istenmişse zaman uyumsuz olarak arka planda yüklenmesi için Visual Studio paketler Visual Studio 2015'te yeni AsyncPackage temel sınıf sağlar . Bu arka planda yükleme IDE uzantısı arka planda başlatılır ve kritik senaryolarda başlatma ve çözüm yük gibi etkilenen olmayacaktır yanıt verebilir durumda kalmasını sağlar.
 

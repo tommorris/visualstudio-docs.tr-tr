@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 50f2577436eeb102424a968416f43e58cb0febd1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 1e3b9fa70f42a0be65f7bea8c39a644d4950b621
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="refactoring-python-code"></a>Python kodu yeniden düzenleme
 
@@ -28,6 +28,7 @@ Visual Studio otomatik olarak dönüştürmek ve Python kaynak kodunuzu Temizlem
 - [Kullanılmayan içeri aktarmalar kaldırmak](#remove-imports) kullanılmayan içeri aktarmalar kaldırır
 
 < a name = "rename-variable"</a>
+
 ## <a name="rename"></a>Rename
 
 1. Seçin ve yeniden adlandırmak istediğiniz tanımlayıcı sağ tıklayın **yeniden adlandırmak**, bu tanıtıcıyı düzeltme işareti yerleştirin veya seçin **Düzenle > yeniden düzenlemeniz > yeniden adlandırmak...**  menü komutu (F2).

@@ -16,47 +16,41 @@ f1_keywords:
 - File Properties.CustomTool
 - FileProperties
 helpviewer_keywords:
-- suo files
-- file types, Visual Studio
-- file extensions
-- solutions, solution files
-- solution files
 - .sln files
-- Visual Studio, file types and extensions
-- extensions, file types
-- sln files
 - .suo files
-- file extensions, Visual Studio
-- file types
-ms.assetid: 0ba5007b-465d-4efa-b1e4-f0ee68527649
-caps.latest.revision: "19"
+- file types [Visual Studio]
+- file extensions [Visual Studio]
+- solution files [Visual Studio]
+- sln files
+- suo files
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 744b35962a196e0372d1bd1fa916f247a9195da6
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.openlocfilehash: 10eca064114664161b3b4a4f47262b4146b17309
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="project-and-solution-file-types"></a>Proje ve Çözüm Dosya Türleri
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]çok sayıda dosya türlerini destekler. Belirli bir yüklemede, hangi dosya türlerinin desteklendiği yüklü bileşenlerin belirler. Bu konu, bazı tipik yüklemelerde desteklenen çözüm ve proje dosya türleri listelenmektedir. Diğer dosya türleri hakkında daha fazla bilgi için her tür için dosya adı uzantılarını kullanarak arayın.  
-  
-## <a name="solution-files-sln-and-suo"></a>Çözüm dosyalarını (.sln ve .suo)  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]iki dosya türleri (.sln ve .suo) çözümleri için özel ayarları depolamak için kullanır. Topluca çözüm dosyalarını bilinen bu dosyalar, Çözüm Gezgini dosyalarınızı yönetmek için bir grafik arabirim görüntülemek için gereken bilgileri sağlar. Projeler ve son hedeflerini yerine ortamı geliştirme görevlerinizi dönüş her zaman odaklanmasına olanak sağlar.  
-  
-|Uzantısı|Ad|Açıklama|  
-|---------------|----------|-----------------|  
-|.sln|[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Çözüm|Proje, proje öğeleri ve çözüm öğeleri çözüme düzenler.|  
-|.suo|Çözüm kullanıcı seçenekleri|Kesme noktaları gibi Visual Studio yapmış olduğunuz kullanıcı düzeyinde özelleştirmeleri takip eder.|  
-  
-## <a name="project-files"></a>Proje Dosyaları  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]çeşitli dosya biçimlerinde projelerine özgü bilgileri depolamak için kullanır. Daha fazla bilgi için aşağıdaki Yardım konularına bakın:  
-  
- [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]  
- [Visual C++ projeleri için oluşturulan dosya türleri](/cpp/ide/file-types-created-for-visual-cpp-projects)    
- [Visual C++ proje oluşturma ve yönetme](/cpp/ide/creating-and-managing-visual-cpp-projects)    
- [Unicode](/cpp/mfc/unicode-in-mfc)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çözümler ve projeler](../../ide/solutions-and-projects-in-visual-studio.md)
+# <a name="project-and-solution-file-types"></a>Proje ve çözüm dosya türleri
+
+Visual Studio, çok sayıda dosya türlerini destekler. Belirli bir yüklemede, hangi dosya türlerinin desteklendiği yüklü bileşenlerin belirler. Bu konu, bazı tipik yüklemelerde desteklenen çözüm ve proje dosya türleri listelenmektedir.
+
+## <a name="solution-files-sln-and-suo"></a>Çözüm dosyalarını (.sln ve .suo)
+
+Visual Studio iki dosya türleri (.sln ve .suo) çözümler için ayarları depolamak için kullanır. Topluca çözüm dosyalarını bilinen bu dosyalar, Çözüm Gezgini dosyalarınızı yönetmek için bir grafik arabirim görüntülemek için gereken bilgileri sağlar.
+
+|Uzantısı|Ad|Açıklama|
+|---------------|----------|-----------------|
+|.sln|Visual Studio çözümü|Proje, proje öğeleri ve çözüm öğeleri çözüme düzenler.|
+|.suo|Çözüm kullanıcı seçenekleri|Visual Studio için kesme noktaları gibi yapmış olduğunuz kullanıcı düzeyinde özelleştirmeleri takip eder.|
+
+## <a name="project-files"></a>Proje dosyaları
+
+Projeleri birçok farklı dosya türleri içerebilir. Örneğin, C# kod dosyaları sahip bir **.cs** uzantısı ve C++ dosyaları sahip bir **.cpp** uzantısı. İçinde depolanan kaynaklar **.resx** dosyaları ve XAML'de **.xaml** dosyaları. [App.config](../../ide/managing-application-settings-dotnet.md) dosyaları içeren uygulama kodunda dahil edilmemesi gereken uygulama bilgilerini&mdash;örneğin bağlantı dizeleri.
+
+C++ projelerine dosya türleri hakkında daha fazla bilgi için bkz: [Visual C++ projeleri için oluşturulan dosya türleri](/cpp/ide/file-types-created-for-visual-cpp-projects) ve [Unicode Microsoft Foundation Class Kitaplığı](/cpp/mfc/unicode-in-mfc)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Çözümler ve projeler](../../ide/solutions-and-projects-in-visual-studio.md)

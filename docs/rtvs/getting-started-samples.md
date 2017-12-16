@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 7cd4f3e19b6cae5adabd54593fee560c56454f07
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: 1a150a65dd249c4a8f4c63e5f69bd1b15b192538
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Visual Studio örnek projeler için R araçları
 
@@ -40,7 +40,6 @@ Bu örnek kapsamlı bir R giriş kapsamlı iki kaynak dosyalardaki açıklamalar
 
     ![Örnek 2 giriş ggplot2 için çıktı. R örnek](media/samples-ggplot-output.png)
 
-
 ## <a name="microsoft-r-server-and-machine-learning"></a>Microsoft R Server ve makine öğrenme
 
 Bu koleksiyonda örneklerin R makine öğrenimi modellerini oluşturmak için ve yararlanmak için nasıl kullanılacağını gösterir [Microsoft R Server (MRS)](http://aka.ms/rtvs-msft-r). Komut dosyaları çalıştırmak için MRS yüklemek `MRS` başlık ve aksi belirtilmedikçe.
@@ -53,12 +52,13 @@ Tüm örnekler, dosyayı açma gibi en üstte imleci yerleştirin ve satır Ctrl
 
 - `Bike_Rental_Estimation_with_MRS`Geçmiş verileri Microsoft R Server kullanarak kümesinde, temel bisiklet kiralama olanağı için isteğe bağlı bir tahmin modeli oluşturur. 
 
-- `Data_Exploration`üç komut dosyaları içerir:  
-    - `Import Data from URL.R`bir URL tanımlanan veri dosyası r yüklemek nasıl gösterir
-    - `Import Data from URL to xdf.R`Microsoft R Sunucusu'na bir xdf olarak bir URL tanımlanan veri dosyasını yükleme gösterilmektedir. (MRS gerektirir.)
-    - `Using ggplot2.R`bir uzantısıdır `A First Look at R/2-Introduction to ggplot2.R` ggplot2'ın işlevselliği etkileşimli 3B Çizdirmek dahil olmak üzere daha geniş bir turu vermiş örnek.
+- `Data_Exploration`üç komut dosyaları içerir:
 
-        ![Ggplot2 kullanarak çıktı. R örneği](media/samples-3d-interactive.png)
+  - `Import Data from URL.R`bir URL tanımlanan veri dosyası r yüklemek nasıl gösterir
+  - `Import Data from URL to xdf.R`Microsoft R Sunucusu'na bir xdf olarak bir URL tanımlanan veri dosyasını yükleme gösterilmektedir. (MRS gerektirir.)
+  - `Using ggplot2.R`bir uzantısıdır `A First Look at R/2-Introduction to ggplot2.R` ggplot2'ın işlevselliği etkileşimli 3B Çizdirmek dahil olmak üzere daha geniş bir turu vermiş örnek.
+
+      ![Ggplot2 kullanarak çıktı. R örneği](media/samples-3d-interactive.png)
 
 - `Datasets`üç içeren `.csv` diğer örnekleri tarafından kullanılan dosyaları
 - `Flight_Delays_Prediction_with_R`ve `Flight_Delays_Prediction_with_MRS` R, machine learning ve geçmiş zamanında performans ve hava durumu verilerini kullanarak uçuş gecikmeler tahmin gösterilmektedir. 

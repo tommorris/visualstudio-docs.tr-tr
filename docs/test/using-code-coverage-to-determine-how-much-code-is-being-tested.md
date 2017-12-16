@@ -8,15 +8,17 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: code coverage
-ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
-caps.latest.revision: "36"
+dev_langs:
+- CSharp
+- VB
+- CPP
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5c6889d705b882d92f701238f0890cb1fc532eed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2d5c28f63dd432f2270ef8f3d91427b5196af139
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Ne Kadar Kodun Test Edildiğini Belirlemek için Kod Kapsamını Kullanma
 Proje kodunuzun ne oranda aslında birim testleri gibi kodlanmış testler tarafından test edilen belirlemek için Visual Studio kod kapsamı özelliğini kullanabilirsiniz. Etkin hatalara karşı koruma sağlamak için testleriniz çalışmalı veya kodunuzun büyük bir kısmını 'kapsamalıdır'.  
@@ -285,4 +287,4 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod kapsamı çözümlemeyi özelleştirme](../test/customizing-code-coverage-analysis.md)   
  [Kod kapsamı sorunlarını giderme](../test/troubleshooting-code-coverage.md)   
- [Kodunuza birim testi](../test/unit-test-your-code.md)
+ [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)

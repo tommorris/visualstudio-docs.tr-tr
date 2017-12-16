@@ -15,36 +15,28 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 44429ccde6dece8ff0b8a0c41fd4cff328d1160f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 95a7aacf57621b2ac02675811e346ceb2f6ca5ad
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>İzlenecek yol: Visual C# veya Visual Basic ile Basit Uygulama Oluşturma
-Bu kılavuzu izleyerek araçları, iletişim kutuları ve Visual Studio ile uygulamaları geliştirirken kullanabileceğiniz tasarımcıları çoğu öğrenmeniz. Basit bir "Hello, World" uygulaması oluşturma, kullanıcı arabirimini tasarım, kodu ekleyin ve tümleşik geliştirme ortamı (IDE) çalışma hakkında bilgi edinin sırasında hatalar, hata ayıklama.  
-  
- Bu konu aşağıdaki bölümleri içermektedir:  
-  
- [IDE yapılandırın](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_ConfigureIDE)  
-  
- [Basit bir uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_CreateApp)  
-  
- [Hata ayıklama ve uygulamayı test etme](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
+Bu kılavuzu izleyerek araçları, iletişim kutuları ve Visual Studio ile uygulamaları geliştirirken kullanabileceğiniz tasarımcıları çoğu öğrenmeniz. Basit bir "Hello, World" uygulaması oluşturma, kullanıcı arabirimini tasarım, kodu ekleyin ve tümleşik geliştirme ortamı (IDE) çalışma hakkında bilgi edinin sırasında hatalar, hata ayıklama.
   
 ##  <a name="BKMK_ConfigureIDE"></a>IDE yapılandırın  
 Visual Studio ilk kez başlattığınızda, oturum açmak için istenir. Bu adım, bu kılavuz için isteğe bağlıdır. Sonraki geliştirme ayarları ve renk temasını seçmenizi ister bir iletişim kutusu gösterilebilir. Varsayılanları tutun ve seçin **Start Visual Studio**.  
 
 ![Ayarları iletişim kutusu seç](../ide/media/exploreide-settings.png "exploreide ayarları")
   
- Visual Studio'yu başlattıktan sonra aracı windows, menüleri ve araç çubukları ve ana penceresi alanı görürsünüz. Araç pencereleri yerleşik ve uygulama penceresinin sol tarafında üzerinde ile **hızlı başlatma**, menü çubuğundaki ve standart araç çubuğu üstünde. Uygulama penceresi merkezinde **başlangıç sayfası**. Bir çözüm ya da proje yüklediğinizde, düzenleyiciler ve tasarımcıları alanı görünür nerede **başlangıç sayfası** değil. Bir uygulama geliştirirken, çoğu zaman, merkezi bu alandaki harcamanız.  
+Visual Studio'yu başlattıktan sonra aracı windows, menüleri ve araç çubukları ve ana penceresi alanı görürsünüz. Araç pencereleri yerleşik ve uygulama penceresinin sol tarafında üzerinde ile **hızlı başlatma**, menü çubuğundaki ve standart araç çubuğu üstünde. Uygulama penceresi merkezinde **başlangıç sayfası**. Bir çözüm ya da proje yüklediğinizde, düzenleyiciler ve tasarımcıları alanı görünür nerede **başlangıç sayfası** değil. Bir uygulama geliştirirken, çoğu zaman, merkezi bu alandaki harcamanız.  
   
- ![Genel Ayarları uygulanmış IDE](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE IDEwithgeneralsettings")  
+![Genel Ayarları uygulanmış IDE](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE IDEwithgeneralsettings")  
   
 ##  <a name="BKMK_CreateApp"></a>Basit bir uygulama oluşturma  
   
 ### <a name="create-the-project"></a>Projeyi oluşturma  
- Visual Studio'da bir uygulama oluştururken önce bir proje ve bir çözüm oluşturursunuz. Bu örnekte, bir Windows Presentation Foundation (WPF) projesi oluşturacaksınız.  
+Visual Studio'da bir uygulama oluştururken önce bir proje ve bir çözüm oluşturursunuz. Bu örnekte, bir Windows Presentation Foundation (WPF) projesi oluşturacaksınız.  
   
 #### <a name="to-create-the-wpf-project"></a>WPF projesini oluşturmak için  
   
@@ -56,11 +48,11 @@ Visual Studio ilk kez başlattığınızda, oturum açmak için istenir. Bu adı
   
      ![Bir C# WPF projesi, HelloWPFApp oluşturma](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE NewProjectcsharp")  
   
- Visual Studio HelloWPFApp proje ve çözüm, oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. WPF Tasarımcısı, bölünmüş bir görünüm halinde MainWindow.xaml'in XAML görünümünü ve tasarım görünümünü gösterir. Fazla veya az göstermek için Bölümlendirici slayt ya da görünümün.  Yalnızca bir görsel görünümünü veya yalnızca XAML görünümünü görmek seçebilirsiniz. (Daha fazla bilgi için bkz: [Windows Forms geliştiricileri için WPF Tasarımcısı](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca).) Aşağıdaki öğeler görünür **Çözüm Gezgini**:  
+Visual Studio HelloWPFApp proje ve çözüm, oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. WPF Tasarımcısı, bölünmüş bir görünüm halinde MainWindow.xaml'in XAML görünümünü ve tasarım görünümünü gösterir. Fazla veya az göstermek için Bölümlendirici slayt ya da görünümün.  Yalnızca bir görsel görünümünü veya yalnızca XAML görünümünü görmek seçebilirsiniz. (Daha fazla bilgi için bkz: [Windows Forms geliştiricileri için WPF Tasarımcısı](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca).) Aşağıdaki öğeler görünür **Çözüm Gezgini**:  
   
- ![Çözüm Gezgini HelloWPFApp dosyalarla yüklenen](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE HelloWPFAppFiles")  
+![Çözüm Gezgini HelloWPFApp dosyalarla yüklenen](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE HelloWPFAppFiles")  
   
- Projeyi oluşturduktan sonra özelleştirebilirsiniz. Kullanarak **özellikleri** penceresi (bulunan **Görünüm** menüsü), görüntüleyebilir ve proje öğeleri, denetimleri ve diğer öğeler bir uygulama için seçeneklerini değiştirin.  
+Projeyi oluşturduktan sonra özelleştirebilirsiniz. Kullanarak **özellikleri** penceresi (bulunan **Görünüm** menüsü), görüntüleyebilir ve proje öğeleri, denetimleri ve diğer öğeler bir uygulama için seçeneklerini değiştirin.  
   
 #### <a name="to-change-the-name-of-mainwindowxaml"></a>MainWindow.xaml adını değiştirmek için  
 Şimdi MainWindow daha belirli bir ad verin.  
@@ -73,7 +65,7 @@ Visual Studio ilk kez başlattığınızda, oturum açmak için istenir. Bu adı
      **Çözüm Gezgini** dosyasının adı Greetings.xaml sunulmuştur ve iç içe geçmiş kod dosyası artık Greetings.xaml.vb veya Greetings.xaml.cs adlı gösterir. Bu kod dosyası birbiriyle ilişkili yakından oldukları göstermek için .xaml dosya düğümü altında yer alıyor.  
   
 ### <a name="design-the-user-interface-ui"></a>Kullanıcı arabirimini (UI) tasarlama  
- Bu uygulamaya üç tür denetim ekleyeceğiz: TextBlock denetimi, iki RadioButton denetimi ve bir Button denetimi.  
+Bu uygulamaya üç tür denetim ekleyeceğiz: TextBlock denetimi, iki RadioButton denetimi ve bir Button denetimi.  
   
 #### <a name="to-add-a-textblock-control"></a>TextBlock denetimi eklemek için  
   
@@ -85,16 +77,16 @@ Visual Studio ilk kez başlattığınızda, oturum açmak için istenir. Bu adı
   
 3.  TextBlock Denetim tasarım yüzeyine seçerek eklemek **TextBlock** öğesi ve pencereyi tasarım yüzeyine sürükleyin. Merkezi Denetim penceresinin üst yakın.  
   
- Pencereniz aşağıdaki gösterime benzemelidir:  
+Pencereniz aşağıdaki gösterime benzemelidir:  
   
- ![Tebrikler formunda TextBlock denetimi](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE GreetingswithTextblockonly")  
+![Tebrikler formunda TextBlock denetimi](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE GreetingswithTextblockonly")  
   
- XAML işaretlemesi aşağıdaki gibi görünmelidir:  
+XAML işaretlemesi aşağıdaki gibi görünmelidir:  
   
-     ```xaml  
-     <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
-     ```  
-  
+```xaml  
+<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
+```  
+
 #### <a name="to-customize-the-text-in-the-text-block"></a>Metin bloğu içindeki metni özelleştirmek için  
   
 1.  XAML görünümünde TextBlock için işaretleme bulun ve metin özniteliği değiştirin:  
@@ -158,7 +150,7 @@ Ekleyeceksiniz son kullanıcı Arabirimi öğesi bir [düğmesini](/dotnet/frame
      ![Tebrikler form denetimi etiketlerle](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE Greetingswithconrollabels")  
   
 ### <a name="add-code-to-the-display-button"></a>Görüntüle Düğmesine kod ekleme  
- Bu uygulamayı çalıştırdığında, bir kullanıcı radyo düğmesini seçer ve ardından seçer sonra bir ileti kutusu görünür **görüntü** düğmesi. Merhaba için bir ileti kutusu ve Güle Güle için bir diğer ileti kutusu görünecektir. Bu davranış oluşturmak için Greetings.xaml.vb veya Greetings.xaml.cs Button_Click olayında için kod ekleyeceksiniz.  
+Bu uygulamayı çalıştırdığında, bir kullanıcı radyo düğmesini seçer ve ardından seçer sonra bir ileti kutusu görünür **görüntü** düğmesi. Merhaba için bir ileti kutusu ve Güle Güle için bir diğer ileti kutusu görünecektir. Bu davranış oluşturmak için Greetings.xaml.vb veya Greetings.xaml.cs Button_Click olayında için kod ekleyeceksiniz.  
   
 #### <a name="add-code-to-display-message-boxes"></a>İleti kutularını görüntülemek için kod ekleme    
 1.  Tasarım yüzeyine çift **görüntü** düğmesi.  
@@ -201,10 +193,10 @@ Ekleyeceksiniz son kullanıcı Arabirimi öğesi bir [düğmesini](/dotnet/frame
 3.  Uygulamayı kaydedin.  
   
 ##  <a name="BKMK_DebugTest"></a>Hata ayıklama ve uygulamayı test etme  
- Ardından, uygulama hataları aramak ve her iki ileti kutuları doğru görünmesini test etmek için hata ayıklama. Aşağıdaki yönergeler size nasıl oluşturulacağı ve hata ayıklayıcıyı başlatma, ancak daha sonra okuyabilir [WPF uygulaması (WPF) oluşturma](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) ve [hata ayıklama WPF](../debugger/debugging-wpf.md) daha fazla bilgi için.  
+Ardından, uygulama hataları aramak ve her iki ileti kutuları doğru görünmesini test etmek için hata ayıklama. Aşağıdaki yönergeler size nasıl oluşturulacağı ve hata ayıklayıcıyı başlatma, ancak daha sonra okuyabilir [WPF uygulaması (WPF) oluşturma](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) ve [hata ayıklama WPF](../debugger/debugging-wpf.md) daha fazla bilgi için.  
   
 ### <a name="find-and-fix-errors"></a>Hataları bulma ve düzeltme  
- Bu adımda, önceki MainWindow.xaml dosya adını değiştirerek neden hata bulabilirsiniz.  
+Bu adımda, önceki MainWindow.xaml dosya adını değiştirerek neden hata bulabilirsiniz.  
   
 #### <a name="to-start-debugging-and-find-the-error"></a>Hata ayıklamayı başlatmak ve hatayı bulmak için  
   
@@ -218,7 +210,7 @@ Ekleyeceksiniz son kullanıcı Arabirimi öğesi bir [düğmesini](/dotnet/frame
   
      ![Hata ayıklama menüsündeki komutu hata ayıklamayı durdurun](../ide/media/exploreide-stopdebugging.png "ExploreIDE StopDebugging")  
   
- Biz MainWindow.xaml bu kılavuzda başlangıcında Greetings.xaml olarak yeniden adlandırıldı ancak proje başlatamazsınız kodu hala mainwindow.xaml için bir uygulama için URI başlangıç olarak başvuruyor.  
+Biz MainWindow.xaml bu kılavuzda başlangıcında Greetings.xaml olarak yeniden adlandırıldı ancak proje başlatamazsınız kodu hala mainwindow.xaml için bir uygulama için URI başlangıç olarak başvuruyor.  
   
 #### <a name="to-specify-greetingsxaml-as-the-startup-uri"></a>Başlangıç URI'si olarak Greetings.xaml öğesini belirtmek için  
   
@@ -284,7 +276,7 @@ Bazı kesme noktaları ekleyerek hata ayıklama sırasında kodu test edebilirsi
   
 Tebrikler, bu izlenecek yolu tamamladınız! Çözüm ve proje dizini altında yerleşik .exe bulabilirsiniz (...\HelloWPFApp\HelloWPFApp\bin\Release\\). Daha fazla örnek keşfetmek, bkz: [Visual Studio örnekleri](../ide/visual-studio-samples.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio 2017 yenilikler](../ide/whats-new-in-visual-studio.md)   
- [Visual Studio ile Geliştirmeye Başlarken](../ide/get-started-developing-with-visual-studio.md)   
- [Üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md)
+## <a name="see-also"></a>Ayrıca bkz.
+[Visual Studio 2017 yenilikler](../ide/whats-new-in-visual-studio.md)   
+[Visual Studio ile Geliştirmeye Başlarken](../ide/get-started-developing-with-visual-studio.md)   
+[Üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md)

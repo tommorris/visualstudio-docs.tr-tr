@@ -15,14 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f711c0fcdd4866a1b097585052cdcb3733e426d8
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 2727f17665d845029fcf32dbcd12dd7603dad519
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>İzlenecek yol: Ekle özelleştirme, güncelleştirme ve Varlık davranışını silme
-[LINQ-SQL Visual Studio Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oluşturmak ve düzenlemek için bir görsel tasarım yüzeyi sağlar [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] bir veritabanındaki nesnelerde temel sınıfları (varlık sınıfları). Kullanarak [LINQ-SQL](/dotnet/framework/data/adonet/sql/linq/index), access SQL veritabanları için LINQ teknolojisi kullanabilirsiniz. Daha fazla bilgi için bkz: [LINQ (dil ile tümleşik sorgu)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+[LINQ-SQL Visual Studio Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oluşturmak ve düzenlemek için bir görsel tasarım yüzeyi sağlar [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] bir veritabanındaki nesnelerde temel sınıfları (varlık sınıfları). Kullanarak [LINQ-SQL](/dotnet/framework/data/adonet/sql/linq/index), access SQL veritabanları için LINQ teknolojisi kullanabilirsiniz. Daha fazla bilgi için bkz: [LINQ (dil ile tümleşik sorgu)](/dotnet/csharp/linq/).  
   
 Varsayılan olarak, güncelleştirmeleri gerçekleştirmek için mantığı tarafından sağlanan [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] çalışma zamanı. Çalışma zamanı (sütun tanımları ve birincil anahtar bilgilerini) tablo şemasını temel alan INSERT, Update ve Delete deyimleri varsayılan oluşturur. Varsayılan davranışı kullanmak istiyor musunuz, güncelleştirme davranışını yapılandırmak ve gerekli ekler, güncelleştirmeleri gerçekleştirmek için özel saklı yordamları belirlemek ve siler veritabanındaki verilerle çalışmak için gerekli. Varlık sınıflarınızı görünümlerine eşlediğinizde varsayılan davranışı, örneğin, değil oluşturulduğunda de bunu yapabilirsiniz. Ayrıca, veritabanı saklı yordamları aracılığıyla tablo erişim gerektirdiğinde varsayılan güncelleştirme davranışı geçersiz kılabilirsiniz. Daha fazla bilgi için bkz: [özelleştirme işlemleri tarafından kullanarak saklı yordamlar](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).  
   
@@ -270,6 +270,6 @@ Uygulama gereksinimlerinize bağlı olarak, oluşturduğunuz sonra gerçekleşti
 [LINQ-SQL Visual Studio Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)     
 [DataContext yöntemleri](../data-tools/datacontext-methods-o-r-designer.md)   
 [Nasıl yapılır: güncelleştirme, ekleme ve silme gerçekleştirmek için saklı yordamlar atayın](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
-[LINQ-SQL](/dotnet/framework/data/adonet/sql/linq/index)  
+[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)  
 [LINQ to SQL sorguları](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)  
  

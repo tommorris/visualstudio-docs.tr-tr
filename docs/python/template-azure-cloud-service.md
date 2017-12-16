@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b8ddcb234d43407c256145245b4cbdac308ed9ea
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 39abe79dda90acfbb8369f60649e9365bcd824cb
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python için Azure bulut hizmeti projeleri
 
@@ -46,7 +46,6 @@ Bu konu, proje şablonu ve diğer Visual Studio (önceki sürümlerinde benzer, 
     ![Çalışan rolü destek dosyaları](media/template-azure-cloud-service-worker-role-support-files.png)
 
     Bu yapılandırma komut dosyaları için yeni bir proje eklemek için projeye sağ tıklayın, seçin **Ekle > Yeni öğe...** seçin **Web rolü destek dosyalarını** veya **çalışan rolü destek dosyalarını**.
-   
 
 ## <a name="configuring-role-deployment"></a>Rol dağıtımı yapılandırma
 
@@ -72,7 +71,6 @@ Rollerinizi yazılırken, bulut projenizi bulut hizmeti öykünücüsü kullanar
 
 Öykünücü sınırlamaları nedeniyle, Python kodunuzu hata ayıklama mümkün olmadığını unutmayın. Bu nedenle önerilir rolleri bağımsız olarak çalıştırarak hata ayıklama ve yayımlanmadan önce test tümleştirme öykünücü kullanın.
 
-
 ## <a name="deploying-a-role"></a>Bir rolü dağıtma
 
 Açmak için **Yayımla** rolü Çözüm Gezgini'nde proje ve seçin Sihirbazı, select **Yapı > Yayımla** ana menüden veya projesine sağ tıklatın ve **Yayımla**.
@@ -83,10 +81,9 @@ Her sanal makineyi etkinleştirir olarak yürütülmeden `ConfigureCloudService.
 
 Son olarak, çalışan rolleri yürütme `LaunchWorker.ps1`, başladığı Python kodunuzu çalıştıran; rolleri Initialize IIS web ve web istekleri işleme başlamak.
 
-
 ## <a name="dependencies"></a>Bağımlılıklar
 
-Bulut hizmeti için `ConfigureCloudService.ps1` komut dosyası kullanan `pip` Python bağımlılıkları kümesini yüklemek için. Bağımlılıklar adlı bir dosyaya belirtilmelidir `requirements.txt` (değiştirerek özelleştirilebilir `ConfigureCloudService.ps1`). Dosya ile yürütülür `pip install -r requirements.txt` başlatma bir parçası olarak.
+Bulut Hizmetleri için `ConfigureCloudService.ps1` komut dosyası kullanan `pip` Python bağımlılıkları kümesini yüklemek için. Bağımlılıklar adlı bir dosyaya belirtilmelidir `requirements.txt` (değiştirerek özelleştirilebilir `ConfigureCloudService.ps1`). Dosya ile yürütülür `pip install -r requirements.txt` başlatma bir parçası olarak.
 
 C uzantılı tüm kitaplıkları önceden derlenmiş ikili dosyaları sağlamalısınız bulut hizmeti örnekleri C Derleyicileri içermez unutmayın.
 
@@ -97,12 +94,13 @@ PIP ve bağımlılıklarını yanı sıra paketler `requirements.txt`, otomatik 
 Web veya çalışan rolü düzgün bir şekilde dağıtıldıktan sonra davranıyor değil, aşağıdakileri denetleyin:
 
 - Python projenizin (en az) sahip bir bin\ klasör içerir:
+
     - `ConfigureCloudService.ps1`
     - `LaunchWorker.ps1`(çalışan rolleri için)
     - `ps.cmd`
 
 - Python projenizi içeren bir `requirements.txt` tüm bağımlılıkları (veya alternatif olarak, tekerlek dosyalarını koleksiyonu) listeleme dosya.
-- Uzak Masaüstü'nü, bulut hizmeti etkinleştirmek ve günlük dosyalarını inceleyin.
+- Bulut hizmetinizde Uzak Masaüstü'nü etkinleştirmek ve günlük dosyalarını inceleyin.
 - Günlükleri `ConfigureCloudService.ps1` ve `LaunchWorker.ps1` depolanmış `C:\Resources\Directory\%RoleId%.DiagnosticStore\LogFiles` uzak makinede klasör.
 - Web rolleri yazma ek günlükleri yapılandırılan bir yola `web.config`, yani yolunda `WSGI_LOG` appSetting. Çoğu normal IIS veya Fastcgı günlüğünü de çalışır.
 - Şu anda `LaunchWorker.ps1.log` çıkış veya Python çalışan rolü tarafından görüntülenen hataları görüntülemek için tek yolu bir dosyadır.

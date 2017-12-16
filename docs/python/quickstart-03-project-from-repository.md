@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3ea3afdaa6a7a29bc85c46b6eff0f15c5c91c046
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 130a5b78ec243049a99c5429538a07ae778e7c1e
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da Python kodu bir depoyu kopyalayın
 
@@ -70,12 +70,12 @@ Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installation.md)
 > [!Important]
 > Bu Hızlı Başlangıç, doğrudan bir kopyasını oluşturduğunuz *python_koans* github'daki. Bu tür bir depo yazarı doğrudan değişikliklere karşı korunur, böylece değişiklikleri depoya kaydedilmeye çalışılırken başarısız olur. Uygulamada, geliştiriciler bunun yerine, kendi GitHub hesabı için bir tür bir depoyu çatallaştırmanız, var. değişiklikleri yapın ve ardından bu değişiklikleri özgün deponuza göndermek için çekme isteği oluşturun. Bu adımları açıklanan [öğretici Git ile çalışma 6. adım -](vs-tutorial-01-06.md).
 
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 > [!div class="nextstepaction"]
 > [Öğretici: Visual Studio'da Python ile çalışma](vs-tutorial-01-01.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Varolan bir Python yorumlayıcısı için bir ortam oluşturma](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 - [Python desteği Visual Studio 2015 ve daha önce yükleme](installation.md).

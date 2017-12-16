@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: b2910a297a5faeda601f91646d9b11396a4711f5
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Visual Studio'da R kodu düzenleme
 
@@ -34,7 +34,7 @@ Bu konuda:
 
 Ayrıca üzerinde konulara bakın [IntelliSense](code-intellisense.md), [linting](code-linting.md), [kod parçacıkları](code-snippets.md), ve [R Markdown](rmarkdown.md).
 
-## <a name="syntax-highlighting"></a>söz dizimi vurgulama 
+## <a name="syntax-highlighting"></a>söz dizimi vurgulama
 
 Dizeleri, açıklamalar ve anahtar sözcükler gibi kodunuzu farklı kısımlarını renklendirme yanı sıra RTVS da vurgular ve açıklamalarındaki bağlantılar sağlar:
 
@@ -67,7 +67,7 @@ Daraltılabilir kod bölgeler, geçici olarak kod düzenleyicisinde parçası Gi
 Kendi saran bir bölge ile biter yorumlarla istediğiniz kodu oluşturmak için `---`. Küçük denetimleri kodun soluna +/-ardından genişletme ve bölgeler daraltma olanak tanır:
 
 ![Yorumlarla daraltılabilir bir bölge oluşturma](media/editing-collapsible-regions.gif)
- 
+
 Sekme tuşuna bastığınızda, varsayılan olarak, Visual Studio boşluk ekler. Yeniden açıklandığı gibi bu davranışı değiştirebilirsiniz [seçenekler, metin düzenleyici, sekmeler](../ide/reference/options-text-editor-all-languages.md).
 
 ## <a name="code-navigation"></a>Kod gezinme

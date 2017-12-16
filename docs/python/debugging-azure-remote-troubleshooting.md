@@ -1,5 +1,5 @@
 ---
-title: "Azure uzak Visual Studio'da Python için hata ayıklama sorunlarını giderme | Microsoft Docs"
+title: "Azure uzaktan Visual Studio'da Python için hata ayıklama sorunlarını giderme | Microsoft Docs"
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -12,13 +12,13 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6dc28135245cae755189174b18000b5c06537b6d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b4f7edc3753f8c2b9e84668cda4273feab08e8ca
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Uzaktan sorun gidericisini Python ve Azure için hata ayıklama
+# <a name="remote-debugging-rroubleshooter-for-python-and-azure"></a>Uzaktan rroubleshooter Python ve Azure için hata ayıklama
 
 Visual Studio başarısız eklemek bir [uzaktan hata ayıklama için Azure App Service](debugging-azure-remote.md) aşağıdaki nedenlerden biriyle için:
 

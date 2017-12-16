@@ -25,11 +25,11 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 55b1f4061d408187525c255e4ab12c3fe93eb60e
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: f1634250d97e83b21cccd3ada90933fc0806d35f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ İçin Kod Çözümlemesine Genel Bakış
 C/C++ kod analizi aracı geliştiricilerin kendi C/C++ kaynak kodu olası kusurlarını hakkında bilgi sağlar. Bellek ve kaynak sızıntılarını ve null işaretçiye veya aracı tarafından raporlanan genel kodlama hatalarını arabellek taşmaları, başlatılmamış bellek içerir.  
@@ -38,7 +38,7 @@ C/C++ kod analizi aracı geliştiricilerin kendi C/C++ kaynak kodu olası kusurl
  Analiz aracı kullanmak geliştiricileri için doğal yapmak için tam olarak içinde tümleşik [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Oluşturma işlemi sırasında kaynak kodunu oluşturulan tüm uyarılar hata listesinde görünür. Uyarı neden kaynak koduna gidebilir ve neden ve sorunun olası çözümleri hakkında ek bilgileri görüntüleyebilirsiniz.  
   
 ## <a name="pragma-support"></a>#pragma desteği  
- Geliştiricileri kullanabilir `#pragma` uyarıları hata ele; etkinleştirmek veya uyarıları devre dışı bırakmak ve tek tek satırlık bir kod için uyarıları bastırma yönergesi. Daha fazla bilgi için bkz: [nasıl yapılır: etkinleştirme ve devre dışı bırakmak için Kod Analizi belirli C/C++ uyarıları](http://msdn.microsoft.com/en-us/910b8518-71f1-4b2e-b012-70647795642a).  
+ Geliştiricileri kullanabilir `#pragma` uyarıları hata ele; etkinleştirmek veya uyarıları devre dışı bırakmak ve tek tek satırlık bir kod için uyarıları bastırma yönergesi. Daha fazla bilgi için bkz: [nasıl yapılır: C/C++ projeleri için Kod Analizi Özellikleri Ayarla ](how-to-set-code-analysis-properties-for-c-cpp-projects.md).  
   
 ## <a name="annotation-support"></a>Ek açıklama desteği  
  Ek açıklamalar, Kod Analizi doğruluğunu geliştirin. Ek açıklamalar işlev parametreleri öncesi ve sonrası koşullar hakkında ek bilgiler sağlar ve dönüş türleri. Daha fazla bilgi için bkz: [nasıl yapılır: ek kod __analysis_assume kullanarak bilgilerini belirt](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  

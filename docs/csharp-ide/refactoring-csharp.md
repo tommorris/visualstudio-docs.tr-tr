@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio özellikleri (C#) yeniden düzenlemesi | Microsoft Docs"
+title: "C# özellikleri Visual Studio'da yeniden düzenleme | Microsoft Docs"
 ms.custom: 
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -16,28 +16,32 @@ helpviewer_keywords: refactoring [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a03a5a8d7b8456f6c03646304dce0a85703bf1cc
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: a26fed472f0f1765f7a6ae447127ffce75061c1f
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="refactoring-features-for-c"></a>C# yeniden düzenleme özellikleri #
+# <a name="refactoring-features-in-c"></a>C# yeniden düzenleme özellikleri #
 
-Yeniden düzenleme, yazıldıktan sonra kodunuzu iyileştirme işlemidir. Yeniden düzenleme kod iç yapısını davranışını değiştirmeden değiştirir. Aşağıdaki yeniden düzenleme özellikleri için C# Visual Studio'da kullanılabilir:
+Yeniden düzenleme kod iç yapısını davranışını değiştirmeden değiştirme işlemidir. Yeniden düzenleme kod daha okunabilir, sürdürülebilir ve güvenilir hale çoğunlukla kullanılır.
 
-* [Değişiklik yöntem imzası](refactoring/change-method-signature.md)
+Aşağıdaki yeniden düzenleme özellikleri için C# Visual Studio'da kullanılabilir:
+
+* [Metot İmzasını Değiştirme](refactoring/change-method-signature.md)
 * [GET yöntemi özellik/Get yöntemi özelliğine Dönüştür](refactoring/convert-get-method-to-property.md)
-* [Alanı Yalıt](refactoring/encapsulate-field.md)
-* [Ayıklama arabirimi](refactoring/extract-interface.md)
-* [Ayıklama yöntemi](refactoring/extract-method.md)
-* [Satır içi geçici değişkeni](refactoring/inline-temporary-variable.md)
+* [Alanı Kapsülle](refactoring/encapsulate-field.md)
+* [Ayıklama Arabirimi](refactoring/extract-interface.md)
+* [Ayıklama Yöntemi](refactoring/extract-method.md)
+* [Satır İçi Geçici Değişkeni](refactoring/inline-temporary-variable.md)
 * [Başvuru yakın bildirimini taşıyın](refactoring/move-declaration-near-reference.md)
-* [Eşleşen dosyaya taşıma türü](refactoring/move-type-to-matching-file.md)
+* [Türü Eşleşen Dosyaya Taşı](refactoring/move-type-to-matching-file.md)
 * [Ulaşılamaz kod Kaldır](refactoring/remove-unreachable-code.md)
 * [Yeniden Adlandır](refactoring/rename.md)
 * [Eşitleme türü ve dosya adı](refactoring/sync-type-and-file.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio geliştirme ortamı C# için kullanma](using-the-visual-studio-development-environment-for-csharp.md)  
+[Kod oluşturma ve hızlı Eylemler Visual Studio'da yeniden düzenleme,](../ide/refactoring-code-generation-quick-actions.md)  
+[Visual Basic'te yeniden düzenleme](../vb-ide/refactoring-vb.md)  
+[C# için Visual Studio Geliştirme Ortamını Kullanma](using-the-visual-studio-development-environment-for-csharp.md)

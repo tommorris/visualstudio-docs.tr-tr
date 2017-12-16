@@ -1,10 +1,10 @@
 ---
-redirect_url: ../ide/visual-studio-ide
-ms.openlocfilehash: a615a3a6da289f265e350d529349f1fb6ba6865f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/ide/visual-studio-ide
+ms.openlocfilehash: 5f1fa39d6e6cde1664a8aaa34aed7cba726b1d56
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="get-started-with-visual-studio"></a>Visual Studio ile çalışmaya başlama
 Visual Studio, uygulamaları geliştirmek için güçlü bir araçtır. Henüz yapmadıysanız, devam edin ve yükleyip [Visual Studio](https://www.visualstudio.com/vs/). Video bkz [Visual Studio - IDE'yi ayarı ile çalışmaya başlama](https://www.youtube.com/watch?v=xLCedknQkN0&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=1) istediğiniz Visual Studio indirme ve şekilde yapılandırma hakkında daha fazla bilgi.
@@ -78,7 +78,7 @@ Azure geliştirme iş yükü yükleme de size [Azure için Visual Studio Araçla
 ## <a name="tips-and-tricks"></a>İpuçları ve püf noktaları
 Kısayollar faydalı ipuçları ve püf noktaları Visual Studio dışında daha fazla yararlanmak nasıl için aşağıdakilere bakın.
 - [Başlarken ile Visual Studio - ipuçları ve püf noktaları](https://www.youtube.com/watch?v=vmXqGwn1Glk&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=4)
-- [Visual Studio için üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md)
+- [Visual Studio için Üretkenlik İpuçları](../ide/productivity-tips-for-visual-studio.md)
 - [Visual Studio ipuçları ve püf noktaları](https://channel9.msdn.com/events/TechEd/2013/DEV-B353)
 - [C++ hata ayıklama ipuçları ve püf noktaları](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/C-Plus-Plus-Debugging-Tips-and-Tricks)
 - [Visual Studio'nun en yararlı (ve kapatacağı) ipuçları [Scott Hanselman blog]](https://www.hanselman.com/blog/VisualStudiosMostUsefulAndUnderusedTips.aspx)

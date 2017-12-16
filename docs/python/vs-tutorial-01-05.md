@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3d0dd65ec5ca42d54c16c0c57b919f849a7a0e20
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: ab2988bc1123ef16adc929da297a7d5240ec668c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>5. adım: Python ortamınızda paketleri yükleniyor
 
@@ -48,28 +48,28 @@ Python Geliştirici topluluğu kendi projelere dahil edebilirsiniz yararlı pake
 
 1. İle yeni bir proje oluşturun **Dosya > Yeni > Proje**, "Python uygulama" şablonu seçme. Görüntülenen kod dosyasında kosinüsünü wave gibi önceki öğretici adımlar, yalnızca grafik olarak çizilen bu saat oluşturur aşağıdaki kodu yapıştırın:
 
-    ```python  
+    ```python
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
     from math import radians
 
-    def main():  
+    def main():
         x = np.arange(0, radians(1800), radians(12))
         plt.plot(x, np.cos(x), 'b')
         plt.show()
-                    
+
     main()
-    ```  
+    ```
 
 1. (F5) programla çalıştırma veya çıkış görmek için hata ayıklayıcı (Ctrl + F5) olmadan:
 
   ![Matplotlib örnek çıkış](media/environments-add-matplotlib3.png)
 
-
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 > [!div class="nextstepaction"]
 > [Git ile çalışma](vs-tutorial-01-06.md)
 
 ### <a name="going-deeper"></a>Daha derin gitme
+
 - [Python ortamları](python-environments.md)

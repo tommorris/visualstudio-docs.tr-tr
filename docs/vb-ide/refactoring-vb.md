@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio özellikleri (Visual Basic) yeniden düzenlemesi | Microsoft Docs"
+title: "Özellikler için Visual Basic yeniden düzenleme | Microsoft Docs"
 ms.custom: 
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -12,29 +12,34 @@ f1_keywords:
 - vs.vb.refactoring.issues
 - vs.vb.refactoring.buildwarning
 - VS.PreviewChanges
-dev_langs: visual-basic
+dev_langs: VB
 helpviewer_keywords: refactoring [VB]
-ms.assetid: 7312ea3f-7045-41e8-a699-7b580508d074
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a044fddd38627182efe0ad842524af57b119421a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b80a5f51394fda2274190322be172325205984a0
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="refactoring"></a>Yeniden Düzenle
-Yeniden düzenleme kod dış davranışını değiştirmeden kod iç yapısını değiştirerek yazıldıktan sonra kodunuzu iyileştirme işlemidir.  
-  
-Visual Basic aşağıdaki yeniden düzenleme özellikleri sağlar:  
-  
-* [Değişiklik yöntem imzası](refactoring/change-method-signature.md)
-* [Alanı Yalıt](refactoring/encapsulate-field.md)
-* [Ayıklama arabirimi](refactoring/extract-interface.md)
-* [Ayıklama arabirimi](refactoring/extract-interface.md)
-* [Ayıklama yöntemi](refactoring/extract-method.md)
-* [Satır içi geçici değişkeni](refactoring/inline-temporary-variable.md)
-* [Eşleşen dosyaya taşıma türü](refactoring/move-type-to-matching-file.md)
+# <a name="refactoring-in-visual-basic"></a>Visual Basic'te yeniden düzenleme
+
+Yeniden düzenleme kod iç yapısını davranışını değiştirmeden değiştirme işlemidir. Yeniden düzenleme kod daha okunabilir, sürdürülebilir ve güvenilir hale çoğunlukla kullanılır.
+
+Visual Basic aşağıdaki yeniden düzenleme özellikleri sağlar:
+
+* [Metot İmzasını Değiştirme](refactoring/change-method-signature.md)
+* [Alanı Kapsülle](refactoring/encapsulate-field.md)
+* [Ayıklama Arabirimi](refactoring/extract-interface.md)
+* [Ayıklama Arabirimi](refactoring/extract-interface.md)
+* [Ayıklama Yöntemi](refactoring/extract-method.md)
+* [Satır İçi Geçici Değişkeni](refactoring/inline-temporary-variable.md)
+* [Türü Eşleşen Dosyaya Taşı](refactoring/move-type-to-matching-file.md)
 * [Yeniden Adlandır](refactoring/rename.md)
-* [Eşitleme türü ve dosya adı](refactoring/sync-type-and-file.md)
+* [Eşitleme Türü ve Dosya Adı](refactoring/sync-type-and-file.md)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kod oluşturma ve hızlı Eylemler Visual Studio'da yeniden düzenleme,](../ide/refactoring-code-generation-quick-actions.md)  
+[C# yeniden düzenleme](../csharp-ide/refactoring-csharp.md)

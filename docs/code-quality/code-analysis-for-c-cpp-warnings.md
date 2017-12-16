@@ -22,16 +22,15 @@ caps.latest.revision: "41"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 77a2594f69fa9d6aae3742dda522b18cd50ed24b
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.openlocfilehash: d23453b502bc95a64dc84f1642a704261e28eb20
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-for-cc-warnings"></a>C/C++ İçin Kod Çözümleme Uyarıları
 Bu bölümde, C/C++ Kod Analizi uyarıları tarafından gerçekleştirilen dışındaki listelenmektedir [C++ çekirdek yönergeleri denetleyicileri](code-analysis-for-cpp-corecheck.md). Kod çözümleme hakkında daha fazla bilgi için bkz: [/ analyze (kod çözümleme)](/cpp/build/reference/analyze-code-analysis) ve [hızlı başlangıç: C/C++ için Kod Analizi](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Güvenli kod yazma için yönergeler](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)   
  [Kod Analizi ile C/C++ kod kalitesini analiz etme](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)   
- [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+ [C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

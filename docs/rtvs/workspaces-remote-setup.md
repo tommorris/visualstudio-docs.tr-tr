@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d36f49a9b2865c89bd1551ded0d23cf541ff7840
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: b161d47ab743680b92ff767e166f180a73da40e6
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="setting-up-remote-workspaces"></a>Uzak çalışma alanları ayarlama
 
@@ -105,8 +105,8 @@ Sertifika içeri aktarıldığında vermek `NETWORK SERVICE` hesap özel anahtar
 Faydaları ve otomatik olarak imzalanan sertifika kullanarak riskleri için windows açıklamasına bakın. `rtvs-daemon` Paket oluşturur ve yükleme sırasında otomatik olarak imzalanan sertifika yapılandırır. Yalnızca otomatik olarak oluşturulan otomatik olarak imzalanan sertifikayı değiştirmek istiyorsanız bunu yapmak gerekir.
 
 Kendi vermek için sertifika kendiniz imzalanmış:
-1. SSH veya linux makinenizi oturum açın.
 
+1. SSH veya linux makinenizi oturum açın.
 1. Yükleme `ssl-cert` paketi:
     ```sh
     sudo apt-get install ssl-cert

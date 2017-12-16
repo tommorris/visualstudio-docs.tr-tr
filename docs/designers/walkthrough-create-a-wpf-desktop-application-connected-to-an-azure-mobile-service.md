@@ -16,11 +16,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 8bf11425439387a13db2bb77f0ce798bef076461
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 28f06905820d890f2f13c3c7e77fd57fb75fe4b6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>İzlenecek yol: bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma
 Windows Presentation Foundation (WPF) hızlı bir şekilde depolamak ve veri sağlamak için bir Azure mobil hizmeti kullanan modern bir masaüstü uygulaması oluşturmak için kullanabilirsiniz.  
@@ -556,7 +556,7 @@ Sonraki adım, uygulama için kullanıcı arabirimi oluşturmaktır. İlk standa
      Bu çağrı **UpdateCheckedTodoItem** yöntemi ve öğeyi listenin ve veritabanından kaldırır.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
- Bir Azure arka WPF masaüstü uygulaması oldukça simplistic örneği tamamladınız. Elbette, gerçek bir uygulamada daha fazla karmaşık olması olasıdır, ancak aynı temel kavramlar geçerlidir. Bkz: [.NET Framework'teki WPF](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
+ Bir Azure arka WPF masaüstü uygulaması oldukça simplistic örneği tamamladınız. Elbette, gerçek bir uygulamada daha fazla karmaşık olması olasıdır, ancak aynı temel kavramlar geçerlidir. Bkz: [.NET Framework'teki WPF](https://msdn.microsoft.com/en-us/library/ms754130).  
   
  Renk, şekil, grafik ve hatta animasyonları ekleyerek kullanıcı arabirimini daha cazip hale getirebilir. Bkz: [Visual Studio'da XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) ve [Visual Studio için Blend'i kullanarak kullanıcı Arabirimi oluşturma](creating-a-ui-by-using-blend-for-visual-studio.md). Araçları arasında bir karşılaştırma için bkz: [Visual Studio ve Visual Studio için Blend'de XAML tasarlama](../designers/designing-xaml-in-visual-studio.md).  
 
@@ -564,4 +564,4 @@ Sonraki adım, uygulama için kullanıcı arabirimi oluşturmaktır. İlk standa
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: İlk WPF Masaüstü Uygulamam](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
- [Windows Presentation Foundation ile modern masaüstü uygulamaları oluşturma](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+ [Windows Presentation Foundation ile Modern Masaüstü Uygulamaları Oluşturma](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

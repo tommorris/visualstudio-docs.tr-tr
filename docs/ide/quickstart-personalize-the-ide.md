@@ -10,11 +10,11 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 369407c70ba15c720af3c92a5fabc56497eeedb6
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.openlocfilehash: a08bcc91159182043b68391bc869243909d6df8b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Hızlı Başlangıç: Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme
 
@@ -98,6 +98,8 @@ Biz, Visual Studio renkleri özelleştirme yalnızca birkaç yolla incelediniz. 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hızlı Başlangıç: ilk Visual Studio IDE bakma](../ide/quickstart-ide-orientation.md)  
+[Hızlı Başlangıç: düzenleyicide kodlama](../ide/quickstart-editor.md)  
+[Hızlı Başlangıç: projeler ve çözümler](../ide/quickstart-projects-solutions.md)  
 [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)  
 [Düzenleyiciyi Özelleştirme](../ide/customizing-the-editor.md)  
 [Visual Studio IDE’ye Genel Bakış](../ide/visual-studio-ide.md)

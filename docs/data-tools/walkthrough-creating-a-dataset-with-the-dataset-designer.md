@@ -12,34 +12,32 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-ms.assetid: 12360f54-db6c-45d2-a91f-fee43214b555
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: f327d2010105c12c4b137317ed2406cae6cad9a3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f826f7d33a8d35719afacb053995629433b27642
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>İzlenecek Yol: Veri Kümesi Tasarımcısı ile Veri Kümesi Oluşturma
+
 Bu kılavuzu kullanarak bir veri kümesi oluşturacaksınız **veri kümesi Tasarımcısı**. Bu yeni proje oluşturma ve yeni bir ekleme işleminde size sürer **DataSet** ona öğesi. Sihirbaz kullanmadan bir veritabanı tablolarında temel tabloları oluşturma öğreneceksiniz.  
-  
- Bu örneklerde gösterilen görevler aşağıdakileri içerir:  
-  
+
+Bu örneklerde gösterilen görevler aşağıdakileri içerir:  
+
 -   Yeni bir oluşturma **Windows Forms uygulaması** projesi.  
-  
+
 -   Boş bir ekleme **DataSet** proje öğesi.  
-  
+
 -   Oluşturma ve bir veri kaynağına sahip bir veri kümesi oluşturarak, uygulamanızda yapılandırma **veri kümesi Tasarımcısı**.  
-  
+ 
 -   Northwind veritabanına bir bağlantı oluşturma **Sunucu Gezgini**.  
-  
+
 -   Tabloları, veritabanındaki tabloların göre kümesindeki ile TableAdapters oluşturma.  
-  
+
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
@@ -133,8 +131,8 @@ Bu bölümde, tablolar kümesine eklemek açıklanmaktadır.
 -   Doğrulama mantığı ekleyin <xref:System.Data.DataTable.ColumnChanging> veya <xref:System.Data.DataTable.RowChanging> kümesindeki veri tabloları olaylar. Daha fazla bilgi için bkz: [veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.
-[Oluşturma ve Visual Studio'da veri kümelerini yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
+[Visual Studio’da veri kümeleri oluşturma ve yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
 [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
 [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)   
 [Verileri doğrulama](../data-tools/validate-data-in-datasets.md)   
-[Verileri kaydetme](../data-tools/saving-data.md)
+[Verileri Kaydetme](../data-tools/saving-data.md)

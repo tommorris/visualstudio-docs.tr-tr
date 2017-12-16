@@ -18,11 +18,11 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25fd80168e78feda70b86f512598a850acae7010
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f990336f84a518a754615eb878e41100d7ccb3f3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Boolean P/Invoke bağımsız değişkenlerini MarshalAs ile işaretleyin
 |||  
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="rule-description"></a>Kural Tanımı  
  Bir platform yöntemi erişimleri yönetilmeyen kodu çağırma ve kullanılarak tanımlanmış `Declare` anahtar sözcük [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] veya <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute>Yönetilen ve yönetilmeyen kodu arasında veri türlerine dönüştürmek için kullanılan hazırlama davranışı belirtir. Gibi pek çok basit veri türleri <xref:System.Byte?displayProperty=fullName> ve <xref:System.Int32?displayProperty=fullName>, tek bir gösterimi yönetilmeyen kodunda varsa ve hazırlama davranışlarını belirtimi gerektirmez; ortak dil çalışma zamanı otomatik olarak doğru davranış sağlar.  
   
- <xref:System.Boolean> Veri türüne sahip birden çok Beyanları yönetilmeyen kodunda. Zaman <xref:System.Runtime.InteropServices.MarshalAsAttribute> , hazırlama davranışı için varsayılan belirtilmemiş <xref:System.Boolean> veri türü <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Tüm durumlarda uygun olmayan bir 32 bit tamsayı budur. Yönetilmeyen yöntemi tarafından gerekli Boolean gösterimi belirledi ve uygun eşleşen <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool her zaman 4 bayt olan Win32 BOOL türü değil. C++ için UnmanagedType.U1 kullanılmalıdır `bool` veya diğer 1 bayt türleri. Daha fazla bilgi için bkz: [Boolean türleri için varsayılan hazırlama](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).  
+ <xref:System.Boolean> Veri türüne sahip birden çok Beyanları yönetilmeyen kodunda. Zaman <xref:System.Runtime.InteropServices.MarshalAsAttribute> , hazırlama davranışı için varsayılan belirtilmemiş <xref:System.Boolean> veri türü <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Tüm durumlarda uygun olmayan bir 32 bit tamsayı budur. Yönetilmeyen yöntemi tarafından gerekli Boolean gösterimi belirledi ve uygun eşleşen <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool her zaman 4 bayt olan Win32 BOOL türü değil. C++ için UnmanagedType.U1 kullanılmalıdır `bool` veya diğer 1 bayt türleri.  
   
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
  Bu kural ihlal düzeltmek için uygulama <xref:System.Runtime.InteropServices.MarshalAsAttribute> için <xref:System.Boolean> parametresi veya dönüş değeri. Özniteliğin değerini uygun ayarlayın <xref:System.Runtime.InteropServices.UnmanagedType>.  
@@ -60,5 +60,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>   
- [Varsayılan Boolean türleri için hazırlama](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)   
- [Yönetilmeyen kod ile birlikte çalışma](/dotnet/framework/interop/index)
+ [Yönetilmeyen Kod ile Birlikte Çalışma](/dotnet/framework/interop/index)

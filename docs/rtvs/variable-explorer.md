@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c56250677e99a11c52ac368037525803394242b3
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: e2c65797293a4f4edcc2f6d068db0ee7d9a4f210
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="variable-explorer"></a>Değişken Gezgini
 
@@ -27,22 +27,22 @@ x <- 42
 y <- 43
 n <- c(1,2,3,5,8,13)
 ```
- 
+
 Değişken Gezgini penceresi sonra şu şekilde görünür:
 
 ![Visual Studio'da değişken Gezgini penceresi](media/variable-explorer-window.png)
 
 Oturumda tanımlanan daha karmaşık bir R veri çerçevesi varsa, verileri gidebilirsiniz. Örneğin, çalıştırdıktan sonra `cars <- mtcars` değişken Explorer'da farklı düğümleri genişleterek dataset içinde gidebilirsiniz:
- 
+
 ![Genişletilmiş Görünüm değişken Gezgini](media/variable-explorer-expanded-results.png)
- 
+
 Değişkenleri silmek için sağ tıklatın ve seçin **silmek**, değişkeni seçin veya Delete tuşuna basın.
 
 Ayrıca bir gözlem artımlı arama özelliğini kullanarak bir veri çerçevesinde arayabilirsiniz. İlk olarak, arama yapmak istediğiniz veri çerçevesinde düğümleri genişletin, sonra arama kutusuna arama terimlerini girin.
 
 ## <a name="details-table-view"></a>Ayrıntılarına bakın (tablo)
 
-Veri genellikle tablo olduğundan, herhangi bir karmaşık veri türü ayrı bir tablo Büyüteç simgesini seçerek veya sağ tıklayıp seçerek görüntüleyebileceğiniz **ayrıntıları göster**. 
+Veri genellikle tablo olduğundan, herhangi bir karmaşık veri türü ayrı bir tablo Büyüteç simgesini seçerek veya sağ tıklayıp seçerek görüntüleyebileceğiniz **ayrıntıları göster**.
 
 ![Değişken Explorer Tablo görünümü](media/variable-explorer-table-view.png)
 
@@ -69,7 +69,6 @@ Hata ayıklayıcı (değişken Explorer otomatik olarak ayıklanacak kod işlevi
 ![Hata ayıklama sırasında veri çerçevesi gösteren değişken Gezgini](media/variable-explorer-as-locals-window.png)
 
 Yerel değişkenler bir işlevde gösteren ayıklayıcısında kod adım adım olarak değişken Explorer işlev kapsamı otomatik olarak değişir.
-
 
 ## <a name="importing-data-into-variable-explorer"></a>Değişken Explorer'a veri alma
 

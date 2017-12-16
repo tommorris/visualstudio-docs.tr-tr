@@ -1,7 +1,7 @@
 ---
-title: "Hata ayıklayıcısını kullanmaya başlama | Microsoft Docs"
+title: "Visual Studio kullanarak hata ayıklama öğrenin | Microsoft Docs"
 ms.custom: H1HackMay2017
-ms.date: 05/18/2017
+ms.date: 10/11/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f6bcc75341297ad20d66514c92f92513ef44d2f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="get-started-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısını kullanmaya başlama
+# <a name="learn-to-debug-using-visual-studio"></a>Visual Studio kullanarak hata ayıklama öğrenin
 
 Bu konu, Visual Studio Hata Ayıklayıcısı'ndaki bir adım adım kılavuz özelliklerini tanıtır. Hata ayıklayıcı özellikleri üst düzey bir görünümünü istiyorsanız, bkz: [hata ayıklayıcı özelliği Turu](../debugger/debugger-feature-tour.md).
 
@@ -138,19 +138,81 @@ Almak için en iyi yolu olduğundan çoğunlukla, klavye kısayollarını burada
 
      ![Güncelleştirme yöntemi Adımlama sonucunu](../debugger/media/dbg-tour-update-method.png "Step Into güncelleştirme yöntemi")
 
-    Burada, ilginç görünüyor biraz daha fazla kod Bul; uygulamanın belirli bir dizinde bulunan ve her dosya için bir fotoğraf nesnesi oluşturma tüm *.jpg dosyaları alınıyor. Bu kod bize uygulama durumu (değişkenler) hata ayıklayıcısı ile inceleniyor başlatmak için iyi bir fırsat sunar.
+    Burada, ilginç görünüyor biraz daha fazla kod Bul; uygulamanın belirli bir dizinde bulunan ve her dosya için bir fotoğraf nesnesi oluşturma tüm *.jpg dosyaları alınıyor. Bu kod bize uygulama durumu (değişkenler) hata ayıklayıcısı ile inceleniyor başlatmak için iyi bir fırsat sunar. Bu öğreticinin sonraki bölümlerde bunu.
 
     Değişkenleri incelemek sağlayan özellikler hata ayıklayıcısının en kullanışlı özelliklerinden biridir ve yapmak için farklı yolu vardır. Genellikle, bir sorun hata ayıklamak çalıştığınızda değişkenleri olup onlara belirli bir zamanda beklediğiniz değerlerini depolayan çıkışı bulmak çalışıyorsunuz.
 
+## <a name="examine-the-call-stack"></a>Çağrı yığını inceleyin
+
+- İçinde duraklatıldı sırada `Update` yöntemi tıklatın **çağrı yığını** , varsayılan alt sağ bölmede açık olan penceresinin.
+
+     ![Çağrı yığınını incelemek](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+
+    **Çağrı yığını** penceresi içinde yöntemleri ve işlevleri denir sipariş gösterir. Üst çizgi geçerli işlevi gösterir ( `Update` turu uygulama yönteminde). İkinci satır gösterir `Update` çağırıldığı `Path.set` özelliği ve benzeri.
+
+    >  [!NOTE]
+    > **Çağrı yığını** penceresi benzer hata ayıklama perspektife Eclipse gibi bazı IDE içinde.
+
+    Çağrı yığınını incelemek ve bir uygulamanın yürütme akışını anlamak için iyi bir yoludur.
+
+    Bu kaynak koduna bakmanız gitmek için kod satırı çift tıklatın ve hata ayıklayıcı tarafından denetlenmekte olan geçerli kapsam, ayrıca değiştirir. Bu eylem, hata ayıklayıcı ilerleyin değil.
+
+    Sağ menülerden de kullanabilirsiniz **çağrı yığını** başka şeyler için penceresi. Örneğin, belirtilen işlevlerini kesme noktaları ekleme, kullanarak hata ayıklayıcı ilerletmek **çalıştırmak için imleç**ve kaynak kodunu incelemek gidin. Daha fazla bilgi için bkz: [nasıl yapılır: çağrı yığını inceleyin](../debugger/how-to-use-the-call-stack-window.md).
+
+## <a name="step-out"></a>Dışarı Adım
+
+Yapılır olduğunu düşünelim inceleniyor `Update` yöntemi Data.cs ve istediğiniz dışında işlevi alır ancak hata ayıklayıcısı'ndaki kalır. Kullanarak bunu yapabilirsiniz **Step Out** komutu.
+
+1. Shift + F11 tuşlarına basın (veya **hata ayıklama > dışarı adım**).
+
+     Bu komut, uygulama yürütme sürdürür (ve hata ayıklayıcısı ilerler) kadar geçerli işlevi döndürür.
+
+     Geri olmalıdır `Update` Data.cs yöntem çağrısında.
+
+2. Shift + F11 yeniden ve hata ayıklayıcısı basın çağrı yığını yukarı gider başa `OnApplicationStartup` olay işleyicisi.
+
+## <a name="run-to-cursor"></a>İmleci çalıştırın
+
+1. Seçin **durdurma hata ayıklama** kırmızı düğme ![durdurma hata ayıklama](../debugger/media/dbg-tour-stop-debugging.png "durdurma hata ayıklama") ya da Shift + F5'e.
+
+2. İçinde `Update` Data.cs, yönteminde sağ `Add` yöntemini çağırın ve seçin **çalıştırmak için imleç**. Bu komut, hata ayıklama başlatır ve geçici bir kesme noktası geçerli kod satırında ayarlar.
+
+     ![İmleç özelliği için Çalıştır'ı kullanın](../debugger/media/dbg-tour-run-to-cursor.png "için imleç çalıştırın")
+
+    Kesme üzerinde duraklatıldı `MainWindow` (ilk kesme olduğu için ayarladığınız).
+
+3. İlerletmek için F5 tuşuna basın `Add` seçtiğiniz yöntemi **çalıştırmak için imleç**.
+
+    Bu komut, kod düzenleme ve hızlı bir şekilde geçici bir kesme noktası ayarlayın ve hata ayıklayıcısı başlatmak istediğinizde yararlıdır.
+
+## <a name="change-the-execution-flow"></a>Yürütme akışını değiştirme
+
+1. Hata ayıklayıcısını kullanmaya üzerinde duraklatıldı `Add` yöntem çağrısı, soldaki sarı ok (yürütme işaretçisi) şablonlarınızdan fare kullanın ve sarı ok bir satır yukarı taşı `foreach` döngü.
+
+     ![Yürütme işaretçiyi](../debugger/media/dbg-tour-move-the-execution-pointer.gif "yürütme işaretçiyi taşıyın")
+
+    Yürütme akış değiştirerek farklı kod yürütme yollarını test veya hata ayıklayıcı başlatmadan kodu yeniden gibi işlemler yapabilirsiniz.
+
+2. Şimdi, F5 tuşuna basın.
+
+    Uygulama penceresine eklenen görüntüleri görebilirsiniz. Kodu yeniden çünkü `foreach` döngü, bazı resimler iki kez eklendi!
+    
+    > [!WARNING]
+    > Genellikle bu özellikle dikkatli olmanız gerekir ve araç ipucunda bir uyarı görürsünüz. Diğer uyarılar çok görebilirsiniz. İşaretçinin taşınması bir önceki uygulama durumu uygulamanıza geri alınamaz.
+
 ## <a name="inspect-variables-with-data-tips"></a>Veri ipuçları değişkenlerle inceleyin.
 
-1. Hata ayıklayıcı üzerinde duraklatmak için `Add` yöntem çağrısı, üzerine getirin `Add` yöntemini çağırın ve tıklatın **çalıştırmak için tıklatın** düğmesi ![Çalıştır'ı tıklatın](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+1. Data.cs Fotoğraf Görüntüleyicisi tanıtım uygulamasını açın, sağ `private void Update` işlevi bildiriminde ve seçin **çalıştırmak için imleç** (zaten çalışıyorsa, uygulamayı ilk durdurun).
 
-2. Şimdi, dosya nesnenin üzerine getirin (`f`) ve varsayılan özellik değeri, dosya adı gördüğünüz `market 031.jpg`.
+    Bu uygulama hata ayıklayıcısı ekli duraklatılır. Bu bize durumunu incelemek sağlar.
+
+2. Üzerine gelerek `Add` yöntemini çağırın ve tıklatın **çalıştırmak için tıklatın** düğmesi ![tıklatın çalıştırmak](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+
+3. Şimdi, dosya nesnenin üzerine getirin (`f`) ve varsayılan özellik değeri, dosya adı gördüğünüz `market 031.jpg`.
 
      ![Veri ipucunu görüntüleme](../debugger/media/dbg-tour-data-tips.gif "veri ipucunu görüntüleme")
 
-3. Tüm özelliklerini gibi görmek için nesnesini genişletin `FullPath` özelliği.
+4. Tüm özelliklerini gibi görmek için nesnesini genişletin `FullPath` özelliği.
 
     Genellikle, hata ayıklama sırasında istediğiniz nesnelerin özellik değerlerini kontrol etmenin hızlı bir yolu ve veri ipuçları yapmak için iyi bir yoldur.
 
@@ -192,66 +254,6 @@ Almak için en iyi yolu olduğundan çoğunlukla, klavye kısayollarını burada
 
     Daha fazla bilgi için bkz: [izleme ve QuickWatch Windows kullanılarak izleme ayarlama](../debugger/watch-and-quickwatch-windows.md)
 
-## <a name="examine-the-call-stack"></a>Çağrı yığını inceleyin
-
-1. Tıklatın **çağrı yığını** , varsayılan alt sağ bölmede açık olan penceresinin.
-
-     ![Çağrı yığınını incelemek](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
-
-    **Çağrı yığını** penceresi içinde yöntemleri ve işlevleri denir sipariş gösterir. Üst çizgi geçerli işlevi gösterir ( `Update` turu uygulama yönteminde). İkinci satır gösterir `Update` çağırıldığı `Path.set` özelliği ve benzeri.
-
-    >  [!NOTE]
-    > **Çağrı yığını** penceresi benzer hata ayıklama perspektife Eclipse gibi bazı IDE içinde.
-
-    Çağrı yığınını incelemek ve bir uygulamanın yürütme akışını anlamak için iyi bir yoludur.
-
-    Bu kaynak koduna bakmanız gitmek için kod satırı çift tıklatın ve hata ayıklayıcı tarafından denetlenmekte olan geçerli kapsam, ayrıca değiştirir. Bu eylem, hata ayıklayıcı ilerleyin değil.
-
-    Sağ menülerden de kullanabilirsiniz **çağrı yığını** başka şeyler için penceresi. Örneğin, belirtilen işlevlerini kesme noktaları ekleme, kullanarak hata ayıklayıcı ilerletmek **çalıştırmak için imleç**ve kaynak kodunu incelemek gidin. Daha fazla bilgi için bkz: [nasıl yapılır: çağrı yığını inceleyin](../debugger/how-to-use-the-call-stack-window.md).
-
-## <a name="change-the-execution-flow"></a>Yürütme akışını değiştirme
-
-1. Hata ayıklayıcısını kullanmaya üzerinde duraklatıldı `Add` yöntem çağrısı, soldaki sarı ok (yürütme işaretçisi) şablonlarınızdan fare kullanın ve sarı ok bir satır yukarı taşı `foreach` döngü.
-
-     ![Yürütme işaretçiyi](../debugger/media/dbg-tour-move-the-execution-pointer.gif "yürütme işaretçiyi taşıyın")
-
-    Yürütme akış değiştirerek farklı kod yürütme yollarını test veya hata ayıklayıcı başlatmadan kodu yeniden gibi işlemler yapabilirsiniz.
-
-2. Şimdi, F5 tuşuna basın.
-
-    Uygulama penceresine eklenen görüntüleri görebilirsiniz. Kodu yeniden çünkü `foreach` döngü, bazı resimler iki kez eklendi!
-    
-    > [!WARNING]
-    > Genellikle bu özellikle dikkatli olmanız gerekir ve araç ipucunda bir uyarı görürsünüz. Diğer uyarılar çok görebilirsiniz. İşaretçinin taşınması bir önceki uygulama durumu uygulamanıza geri alınamaz.
-
-## <a name="run-to-cursor"></a>İmleci çalıştırın
-
-1. Seçin **durdurma hata ayıklama** kırmızı düğme ![durdurma hata ayıklama](../debugger/media/dbg-tour-stop-debugging.png "durdurma hata ayıklama") ya da Shift + F5'e.
-
-2. İçinde `Update` yöntemi, sağ `Add` yöntemini çağırın ve seçin **çalıştırmak için imleç**. Bu komut, hata ayıklama başlatır ve geçici bir kesme noktası geçerli kod satırında ayarlar.
-
-     ![İmleç özelliği için Çalıştır'ı kullanın](../debugger/media/dbg-tour-run-to-cursor.png "için imleç çalıştırın")
-
-    Kesme üzerinde duraklatıldı `MainWindow` (, ilk kesme olduğundan.
-
-3. İlerletmek için F5 tuşuna basın `Add` seçtiğiniz yöntemi **çalıştırmak için imleç**.
-
-    Bu komut, kod düzenleme ve hızlı bir şekilde geçici bir kesme noktası ayarlayın ve hata ayıklayıcısı başlatmak istediğinizde yararlıdır.
-
-## <a name="step-out"></a>Dışarı Adım
-
-Yapılır olduğunu düşünelim inceleniyor `Update` yöntemi Data.cs ve istediğiniz dışında işlevi alır ancak hata ayıklayıcısı'ndaki kalır. Kullanarak bunu yapabilirsiniz **Step Out** komutu.
-
-1. Shift + F11 tuşlarına basın (veya **hata ayıklama > dışarı adım**).
-
-     Bu komut, uygulama yürütme sürdürür (ve hata ayıklayıcısı ilerler) kadar geçerli işlevi döndürür.
-
-     Geri olmalıdır `Update` Data.cs yöntem çağrısında.
-
-2. Shift + F11 yeniden ve hata ayıklayıcısı basın çağrı yığını yukarı gider başa `OnApplicationStartup` olay işleyicisi.
-
-3. Devam etmek için F5 tuşuna basın.
-
 ## <a name="examine-an-exception"></a>Bir özel durum inceleyin
 
 1. Çalışan uygulama penceresinde metni silin **yolu** giriş kutusu ve select **değişiklik** düğmesi.
@@ -283,6 +285,7 @@ Hata ayıklayıcı özellikleri hakkında daha fazla bilgi için bkz: [hata ayı
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da hata ayıklama](../debugger/index.md)  
- [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Visual Studio'da hata ayıklama](../debugger/index.md)  
+[Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)

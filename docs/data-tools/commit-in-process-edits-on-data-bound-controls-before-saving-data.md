@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 191206e9cc16271e64abbeaba87d86ac0108924b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d2b0ea1999c9742c04d1bb118d9a036ff2bed5ea
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Verileri kaydetmeden önce verilere bağlı denetimler üzerinde işlem içi düzenlemeler Yürüt
 Verilere bağlı denetimler değerlerde düzenlerken, kullanıcılar güncelleştirilmiş değeri denetimin bağlı olduğu temel alınan veri kaynağına kaydetmek için geçerli kayıt kapalı gitmeniz gerekir. Öğelerden sürüklediğinizde [veri kaynakları penceresi](add-new-data-sources.md) bir forma bıraktığınız ilk öğe koda oluşturur **kaydetmek** düğmesini olayı <xref:System.Windows.Forms.BindingNavigator>. Bu kod çağırır <xref:System.Windows.Forms.BindingSource.EndEdit%2A> yöntemi <xref:System.Windows.Forms.BindingSource>. Bu nedenle, çağrısına <xref:System.Windows.Forms.BindingSource.EndEdit%2A> yöntemi yalnızca ilk için oluşturulan <xref:System.Windows.Forms.BindingSource> forma eklenir.  
@@ -38,7 +38,7 @@ Verilere bağlı denetimler değerlerde düzenlerken, kullanıcılar güncelleş
 > [!NOTE]
 >  Tasarımcı ekler `BindingSource.EndEdit` kod yalnızca ilk öğe için bir forma bırakıldı. Bu nedenle, bir çağırmak için kod satırı eklemeniz gerekir <xref:System.Windows.Forms.BindingSource.EndEdit%2A> yöntemi her <xref:System.Windows.Forms.BindingSource> form üzerinde. Çağrılacak kod satırı el ile ekleyebilirsiniz <xref:System.Windows.Forms.BindingSource.EndEdit%2A> yöntemi her <xref:System.Windows.Forms.BindingSource>. Alternatif olarak, ekleyebileceğiniz `EndEditOnAllBindingSources` forma yöntemi ve kaydetme gerçekleştirmeden önce çağırın.  
   
- Aşağıdaki kod bir [LINQ (dil ile tümleşik sorgu)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d) tüm yinelemek için sorgu <xref:System.Windows.Forms.BindingSource> bileşenleri ve çağrı <xref:System.Windows.Forms.BindingSource.EndEdit%2A> yöntemi her <xref:System.Windows.Forms.BindingSource> bir form üzerinde.  
+ Aşağıdaki kod bir [LINQ (dil ile tümleşik sorgu)](/dotnet/csharp/linq/) tüm yinelemek için sorgu <xref:System.Windows.Forms.BindingSource> bileşenleri ve çağrı <xref:System.Windows.Forms.BindingSource.EndEdit%2A> yöntemi her <xref:System.Windows.Forms.BindingSource> bir form üzerinde.  
   
 ## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>Formdaki tüm BindingSource bileşenleri EndEdit çağrısı yapmak için  
   

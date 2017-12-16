@@ -1,5 +1,5 @@
 ---
-title: "R araçları Visual Studio seçenekleri | Microsoft Docs"
+title: "Visual Studio'da R Araçlar Seçenekler | Microsoft Docs"
 ms.custom: 
 ms.date: 12/04/2017
 ms.reviewer: 
@@ -17,13 +17,17 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: dd21ba3c54ed274f181c036ed0121d8d3c5a180e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: c9820ea7124157c1cd543bc88195be3d8fcc8b57
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio seçenekleri için R araçları
+
+Ayarları yoluyla erişilir **R Araçlar > Seçenekleri** menüsünde aracılığıyla veya **Araçlar > Seçenekler** ve kaydırmayı **R Araçları**:
+
+  ![R araçları için Seçenekler iletişim kutusu](media/options-dialog.png)
 
 Seçenekler ve ayarlar R belirli aşağıdaki yöntemleri kullanılarak erişilir. Seçmelisiniz **tüm ayarları göster** kutusunun alt kısmındaki **seçenekleri** iletişim kutusu tüm bu bölümler görünmesi için.
 

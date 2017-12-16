@@ -20,11 +20,11 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a0a7d55b19455e22836d4750c0842a47816ee86
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 7930ab4b425eeba0896828e5db36ab874166d3bf
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Desteklenen kod değişiklikleri (C# ve Visual Basic)
 Düzenle ve devam et türlerinin çoğunu kod değişiklikleri yöntem gövdeleri içinde işler. Yöntem gövdeleri dışında çoğu değişiklikler ve yöntem gövdeleri içinde bazı değişiklikler, ancak hata ayıklama sırasında uygulanamaz. Desteklenmeyen bu değişiklikleri uygulamak için hata ayıklamayı durdurun ve kod yeni bir sürümü ile yeniden başlatmanız gerekir.
@@ -99,8 +99,6 @@ Desteklenmeyen uygulamalar ve platformlar ASP.NET 5, Silverlight 5, Windows Phon
   
 -   Bir Dr hata ayıklama. Watson dökümü.  
   
--   İşlenmeyen bir özel durumdan sonra kod düzenleme zaman "**işlenmeyen özel durum çağrı yığınındaki bırakma**" seçeneği seçili değil.  
-  
 -   Katıştırılmış çalışma zamanı uygulama hata ayıklama.  
   
 -   Ekleme işlemi için bir uygulama kullanarak hata ayıklama (**hata ayıklama > ekleme işlemi için**) seçerek uygulama çalıştırmak yerine **Başlat** gelen **hata ayıklama** menüsü.  
@@ -111,4 +109,4 @@ Desteklenmeyen uygulamalar ve platformlar ASP.NET 5, Silverlight 5, Windows Phon
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenle ve devam et (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Nasıl yapılır: Düzenle kullanın ve devam et (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+ [Nasıl Yapılır: Düzenle ve Devam Et'i Kullanma (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

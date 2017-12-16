@@ -22,18 +22,18 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: 4d1d35049d71ba011516b3bc06316cb46cc61ced
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>İzlenecek yol: UI yanıtlama hızı (HTML) artırma
 Tanımlama ve kullanarak bir performans sorunu düzeltme sürecinde sizi bu kılavuzda [HTML UI yanıtlama hızı Profil Oluşturucusu](../profiling/html-ui-responsiveness.md). Profil Oluşturucu, JavaScript kullanarak UWP uygulamalar için Visual Studio'da kullanılabilir. Bu senaryoda, DOM öğeleri çok sık güncelleştirmeler bir performans testi uygulaması oluşturma ve tanımlamak ve bu sorunu gidermek için profil oluşturucu kullanın.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Uygulama testi oluşturma ve performans çalıştırma  
   
-1.  Visual Studio'da yeni bir Windows Evrensel JavaScript projesi oluşturun. (Seçin **dosya / yeni / Project**. Seçin **JavaScript** sol bölmede ve ardından **Windows**, **Windows 10**, sonra da **Evrensel**, veya  **Windows Phone**.  
+1.  Visual Studio'da yeni bir Windows Evrensel JavaScript projesi oluşturun. (Seçin **Dosya > Yeni > Proje**. Seçin **JavaScript** sol bölmede ve ardından **Windows**, **Windows 10**, sonra da **Evrensel**, veya  **Windows Phone**.  
   
 2.  > [!IMPORTANT]
     >  Bu konuda gösterilen Tanılama sonuçları için Windows 8 uygulaması gösterilir.  

@@ -25,11 +25,11 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9147439d6aab7a6393f37f0cf8b14b0b0401ed1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5e00d43898fbc29ba238a670d39cf8d3e7638122
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="allocation-hook-functions"></a>Atama Kanca İşlevleri
 Kullanılarak yüklenen bir ayırma kanca işlevini [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), bellek tahsis, yeniden tahsis veya serbest her zaman çağrılır. Kanca bu tür birçok farklı amaçlar için kullanılabilir. Uygulama yetersiz bellek durumlarda, örneğin, işleme biçimini test etmek veya ayırma desenleri incelemek için ya da daha sonraki analizler için ayırma bilgileri günlüğe kaydetmek için kullanın.  
@@ -57,4 +57,3 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ayırma kancaları ve C çalışma zamanı bellek ayırmaları](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [Hata ayıklama kanca işlevi yazma](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 örnek](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)

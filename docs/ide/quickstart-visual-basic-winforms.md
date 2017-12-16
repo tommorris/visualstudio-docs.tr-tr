@@ -12,11 +12,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 22da6f18406331a67a06d030551f7068dd5254fc
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: cf7ba7882d9e95cac013e257a73bd536f36b97cf
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="quickstart-create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Hızlı Başlangıç: Windows oluşturma Visual Basic ile Visual Studio'da Forms uygulama
 Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), bir Windows tabanlı kullanıcı arabirimi (UI) olan basit bir Visual Basic uygulama oluşturacaksınız.
@@ -95,5 +95,5 @@ Bir eylem oluşturmak için bir düğme denetimi ekledik, metne göndermek için
 Bu hızlı başlangıç Tamamlanıyor Tebrikler! Visual Basic ve Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Lütfen daha derin inceleyin istiyorsanız bir öğreticide devam **öğreticileri** içindekiler bölümü.  
 
 ## <a name="see-also"></a>Ayrıca bkz.   
-* [Visual Basic "Hello World" konsol uygulaması Visual Studio 2017 .NET çekirdek ile derleme](https://docs.microsoft.com/dotnet/core/tutorials/vb-with-visual-studio)
-* [Visual Basic IntelliSense](visual-basic-specific-intellisense.md)  
+* [Hızlı Başlangıç: Visual Basic ile Visual Studio'da bir konsol uygulaması oluşturun.](quickstart-visual-basic-console.md)
+* [Visual Basic IntelliSense hakkında daha fazla bilgi edinin](visual-basic-specific-intellisense.md)  

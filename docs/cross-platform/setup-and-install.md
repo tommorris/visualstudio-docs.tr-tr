@@ -11,11 +11,11 @@ caps.latest.revision: "16"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: dba101890bd2f27c85e8e6053944d8781fa03ed4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 4f525157e9e34838be4379f8df0845b294880f11
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="setup-and-install"></a>Kurulum ve yükleme
 Yerel iOS, Android ve Windows oluşturmak için uygulamalardan ortak C# / .NET kod tabanını kullanarak Xamarin, aşağıdakiler gerekir:  
@@ -50,7 +50,7 @@ Bu kurulum ve yükleme yaptıktan sonra Xamarin kullanarak sorunları varsa, sor
 ##  <a name="windows"></a>Windows Kurulumu (Visual Studio ve Xamarin)  
   
 > [!TIP]
->  Bu yönergeler, Visual Studio 2017 için geçerlidir. Visual Studio 2015 için bkz: [MSDN](https://msdn.microsoft.com/en-us/library/mt613162.aspx). Xamarin ile Visual Studio 2013 kullanmak için (güncelleştirme 2 gereklidir) yönergelerini izleyin [doğrudan Xamarin yükleme](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
+>  Bu yönergeler, Visual Studio 2017 için geçerlidir. Visual Studio 2015 için bkz: [MSDN](setup-and-install.md). Xamarin ile Visual Studio 2013 kullanmak için (güncelleştirme 2 gereklidir) yönergelerini izleyin [doğrudan Xamarin yükleme](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
   
 1.  [Karşıdan yükleme ve herhangi bir sürümünü Visual Studio 2017 için yükleyiciyi başlatma](https://www.visualstudio.com/downloads/) (Community, Professional veya Enterprise). Visual Studio 2017 ücretsiz sürüm topluluktur; Professional ve Enterprise sürümleri deneme esaslı bir lisans satın alma sonra gerekir 30 gün boyunca kullanılabilir.  
   

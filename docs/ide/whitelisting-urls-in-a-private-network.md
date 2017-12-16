@@ -11,11 +11,11 @@ ms.assetid:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 94348821e44b5ed07e3df5e4859796342919a833
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.openlocfilehash: 87200019d6420ddafb28c18dc6b73f334cd80913
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="whitelisting-urls-in-a-private-network"></a>Özel bir ağda uygulamaları güvenilir listeye almayı URL'leri
 
@@ -57,5 +57,4 @@ Visual Studio, ağ kaynaklarına bağlanmak için Aktarım Katmanı Güvenliği 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Proxy gerekli Yetkilendirme hatası](../ide/reference/proxy-authorization-required.md)  
-[Visual Studio tarafından kullanılan Internet kaynakları](../ide/connected-environment.md)  
 [Bir güvenlik duvarı veya proxy sunucunun arkasındaki Visual Studio yükleme](../install/install-visual-studio-behind-a-firewall-or-proxy-server.md)

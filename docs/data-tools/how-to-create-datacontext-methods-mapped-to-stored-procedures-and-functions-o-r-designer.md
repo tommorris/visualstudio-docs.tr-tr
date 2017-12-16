@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: a162c9cb7cf7febf6e3b6e95e927a31b6591b027
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 18bf9785ddd62bf7924ebb3eb71b27cd822e3af4
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Nasıl yapılır: saklı yordamları ve işlevleri (O/R Tasarımcısı) eşlenen DataContext yöntemleri oluşturma
 Saklı yordamları ve işlevleri eklenebilir [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] olarak <xref:System.Data.Linq.DataContext> yöntemleri. Yöntemini çağırarak ve gerekli parametre geçirme saklı yordam veya işlev veritabanı üzerinde çalışır ve dönüş türünde veri döndürür <xref:System.Data.Linq.DataContext> yöntemi. Hakkında ayrıntılı bilgi için <xref:System.Data.Linq.DataContext> yöntemleri bkz [DataContext yöntemleri (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md).  
@@ -57,4 +57,4 @@ Saklı yordamları ve işlevleri eklenebilir [!INCLUDE[vs_ordesigner_short](../d
  [İzlenecek yol: LINQ-SQL sınıfları oluşturma](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
  [LINQ-SQL](/dotnet/framework/data/adonet/sql/linq/index)   
  [Visual Basic'de LINQ'e giriş](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [Nasıl yapılır: LINQ sorguları yazma C# içinde](http://msdn.microsoft.com/Library/45e47fcc-cfa1-4b72-b161-d038ae87bd23)
+ [C# üzerinde LINQ](/dotnet/csharp/linq/linq-in-csharp)

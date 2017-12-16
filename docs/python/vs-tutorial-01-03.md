@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 18cd58899819e49943e009da898705cfa328ffb5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b74b905108543422163142fac5984626969ba95d
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>3. adım: etkileşimli REPL penceresini kullanma
 
@@ -47,7 +47,7 @@ Visual Studio *etkileşimli pencere* Python normal düzenleme-derleme-hata ayık
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
-    def make_dot_string(x):  
+    def make_dot_string(x):
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
@@ -62,8 +62,8 @@ Visual Studio *etkileşimli pencere* Python normal düzenleme-derleme-hata ayık
 
     ```python
     for i in range(360):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     ![Birden çok gönderme etkileşimli kullanarak kod satırını yapıştırma](media/vs-getting-started-python-15-interactive5.png)
@@ -82,16 +82,15 @@ Visual Studio *etkileşimli pencere* Python normal düzenleme-derleme-hata ayık
 
     ```python
     for i in range(0, 1800, 12):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     Standart çıktı ve istekleri dahil olmak üzere etkileşimli pencere tam içeriğini kopyalamak istiyorsanız, yalnızca kullanın **kopyalama** komutu.
 
 1. Ne yalnızca yaptığınızı etkileşimli penceresinin hızlı REPL ortamı küçük bir kod parçasını ayrıntılarını çıkışı çalışmaya olduğu sonra uygun şekilde bu kodu projenizin kaynak dosyasına eklendi. Şimdi çalıştırdığınızda kodu yeniden Ctrl + F5'e (veya **hata ayıklama > hata ayıklama olmadan Başlat**), istediğinizi tam sonuçları görüntüleyin.
 
-
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 > [!div class="nextstepaction"]
 > [Hata ayıklayıcı çalışan kod](vs-tutorial-01-04.md)

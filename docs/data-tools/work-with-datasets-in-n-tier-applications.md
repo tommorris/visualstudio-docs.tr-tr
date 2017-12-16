@@ -23,11 +23,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 85062fe6ea82a73fbc2d64e1d1ce9136d16831cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 2274ac9bcfd3ba7c87364f5c4c79cd155844fe73
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>N katmanlı uygulamalarda veri kümeleriyle çalışma
 *N katmanlı veri uygulamalarını* birden çok mantıksal katmanlara ayrılır veri merkezli uygulamalar (veya *katmanları*). Diğer bir deyişle, n katmanlı veri uygulaması veri erişim katmanı, iş mantığı katmanından ve sunu katmanı her kendi projesinde ile birden çok projelerine ayrılmış bir uygulamadır. Daha fazla bilgi için bkz: [N katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md).  
@@ -43,12 +43,12 @@ Yazılan veri kümeleri N katmanlı desteği n katmanlı tasarım uygulama mimar
 ## <a name="see-also"></a>Ayrıca bkz.
 [N katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md)  
 [İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
-[N katmanlı uygulamalarda TableAdapters için kod ekleme](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
+[N katmanlı uygulamalarda TableAdapter’lara kod ekleme](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
 [N katmanlı uygulamalarda veri kümelerine kod ekleme](../data-tools/add-code-to-datasets-in-n-tier-applications.md)  
-[N katmanlı veri kümesine doğrulama ekleme](../data-tools/add-validation-to-an-n-tier-dataset.md)  
-[Ayrı veri kümeleri ve TableAdapters öğelerini farklı projelere içine](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
+[N Katmanlı bir veri kümesine doğrulama ekleme](../data-tools/add-validation-to-an-n-tier-dataset.md)  
+[Veri kümeleri ile TableAdapter’ları farklı projelere ayırma](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
 [Hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md)  
 [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)  
-[Visual Studio'da veri erişimi](../data-tools/accessing-data-in-visual-studio.md)  
+[Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)  
 [Oluşturma ve TableAdapters öğelerini yapılandırma](../data-tools/create-and-configure-tableadapters.md)  
-[N katmanlı ve uzak uygulamalarla LINQ-SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+[LINQ to SQL ile N Katmanı ve Uzak Uygulamalar](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

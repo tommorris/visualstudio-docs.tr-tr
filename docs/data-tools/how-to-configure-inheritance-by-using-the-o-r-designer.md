@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8b4c2ac7790bd2c5114b04a6119702013d54825b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 9943b6d5263a616523db92a67df58746579b0d51
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Nasıl yapılır: devralma O/R Tasarımcısı kullanarak yapılandırma
 [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) Genellikle ilişkisel sistemlerinde gerçekleştirilir gibi tek Tablo Devralma kavramını destekler. Tek Tablo Devralma üst bilgi ve alt bilgi alanları içeren bir tek veritabanı tablo yok. İlişkisel veri ile ayrıştırıcı sütunun herhangi bir kaydın ait hangi sınıfı belirleyen bir değer içerir.  
@@ -56,7 +56,6 @@ Devralma kullanır (ve ilişkisel verilere karşılık gelir) nesne modeli oluş
 ## <a name="see-also"></a>Ayrıca bkz.
 [LINQ-SQL Visual Studio Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
 [İzlenecek yol: LINQ-SQL sınıfları (O R Tasarımcısı) oluşturma](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
-[PAVE veri uygulama geliştirme Visual Studio 2012'deki yenilikler](http://msdn.microsoft.com/en-us/3d50d68f-5f44-4915-842f-6d42fce793f1)   
 [Visual Studio'da veri erişimi](../data-tools/accessing-data-in-visual-studio.md)   
 [LINQ-SQL](/dotnet/framework/data/adonet/sql/linq/index)   
 [İzlenecek yol: Tek tablo devralma (O/R Tasarımcısı) kullanarak LINQ-SQL sınıfları oluşturma](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   

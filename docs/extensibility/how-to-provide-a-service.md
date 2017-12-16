@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0adc9f69f1b0e873d2e1f38c9317070dc0d6a08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3c37f4dc215027752da9c16fbdfba44b4e10c41c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-a-service"></a>Nasıl yapılır: bir hizmet sağlar
 Bir VSPackage diğer VSPackages kullanabileceğiniz hizmetler sağlar. Bir hizmet sağlamak için bir VSPackage hizmeti ile Visual Studio kaydetmek ve hizmet eklemeniz gerekir.  
@@ -31,9 +31,9 @@ Bir VSPackage diğer VSPackages kullanabileceğiniz hizmetler sağlar. Bir hizme
   
 #### <a name="implementing-a-service"></a>Bir hizmet uygulama  
   
-1.  VSIX proje oluşturma (**dosya / yeni / Project / Visual C# / Extensiblity / VSIX proje**).  
+1.  VSIX proje oluşturma (**Dosya > Yeni > Proje > Visual C# > Extensiblity > VSIX proje**).  
   
-2.  Bir VSPackage projeye ekleyin. Proje düğümünde seçin **Çözüm Gezgini** tıklatıp **Ekle / yeni öğe / Visual C# öğeleri / genişletilebilirlik / Visual Studio Paketi**.  
+2.  Bir VSPackage projeye ekleyin. Proje düğümünde seçin **Çözüm Gezgini** tıklatıp **Ekle > Yeni Öğe > Visual C# öğeleri > genişletilebilirlik > Visual Studio Paketi**.  
   
 3.  Bir hizmet uygulamak için üç tür oluşturmanız gerekir:  
   
@@ -109,7 +109,7 @@ Bir VSPackage diğer VSPackages kullanabileceğiniz hizmetler sağlar. Bir hizme
   
 2.  , Oluşturma ve hizmet döndürür veya onu oluşturulamazsa null geri çağırma yöntemini uygulayın.  
   
-    ```  
+    ```csharp  
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  
@@ -143,4 +143,4 @@ Bir VSPackage diğer VSPackages kullanabileceğiniz hizmetler sağlar. Bir hizme
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: bir hizmeti Al](../extensibility/how-to-get-a-service.md)   
  [Kullanarak ve hizmetleri sağlar](../extensibility/using-and-providing-services.md)   
- [Hizmet temelleri](../extensibility/internals/service-essentials.md)
+ [Hizmet Temel Bileşenleri](../extensibility/internals/service-essentials.md)

@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.openlocfilehash: da7176d3fd64591064bfd33a0780ba7939621182
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio'da veri erişimi
 
@@ -67,7 +67,7 @@ ve daha fazlası...
 
 ## <a name="net-languages"></a>.NET dilleri
 
-.NET Core dahil olmak üzere tüm .NET veri erişimi ADO.NET, veri kaynağı, hem ilişkisel hem de ilişkisel olmayan herhangi bir tür erişmek için bir arabirim tanımlayan sınıflar kümesini temel alır. Visual Studio çeşitli araçlar vardır ve veritabanları için bağlanmanıza yardımcı olması için ADO.NET çalışmak tasarımcıları verileri işlemek ve kullanıcıya verileri görüntülemektedir. Bu bölümdeki belgelere bu araçların nasıl kullanılacağını açıklar. Ayrıca, doğrudan ADO.NET komut nesneleri karşı programlama yapabilirsiniz. ADO.NET API'larını doğrudan çağırmak hakkında daha fazla bilgi için bkz: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) MSDN Kitaplığı'nda.
+.NET Core dahil olmak üzere tüm .NET veri erişimi ADO.NET, veri kaynağı, hem ilişkisel hem de ilişkisel olmayan herhangi bir tür erişmek için bir arabirim tanımlayan sınıflar kümesini temel alır. Visual Studio çeşitli araçlar vardır ve veritabanları için bağlanmanıza yardımcı olması için ADO.NET çalışmak tasarımcıları verileri işlemek ve kullanıcıya verileri görüntülemektedir. Bu bölümdeki belgelere bu araçların nasıl kullanılacağını açıklar. Ayrıca, doğrudan ADO.NET komut nesneleri karşı programlama yapabilirsiniz. ADO.NET API'larını doğrudan çağırmak hakkında daha fazla bilgi için bkz: [ADO.NET](/dotnet/framework/data/adonet/index).
 
 Özellikle ASP.NET ile ilgili veri erişimi belgelerine bakın [verilerle çalışma](http://www.asp.net/web-forms/overview/presenting-and-managing-data) ASP.NET sitesinde. ASP.NET MVC ile Entity Framework kullanarak, bir öğretici için bkz: [Entity Framework 6 kod MVC 5 kullanarak ilk ile çalışmaya başlama](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
@@ -88,7 +88,7 @@ ADO.NET tüketilebilir olması için bir veritabanı için özel bir olmalıdır
 [Varlık Çerçevesi](../data-tools/entity-data-model-tools-in-visual-studio.md)  
 Tercih edilen Microsoft ORM teknolojisi. Bu programı ilişkisel veri karşı birinci sınıf .NET nesneleri kullanabilirsiniz. Yeni uygulamalar için bir model gerekli olduğunda varsayılan ilk seçenek olmalıdır. Temel alınan ADO.NET sağlayıcısının özel desteğini gerektirir.
 
-[LINQ-SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
 Bir önceki nesil nesne ilişkisel Eşleştiricisi. En az karmaşık senaryolar için iyi çalışır ancak artık etkin geliştirme değil.
 
 [Veri kümeleri](../data-tools/dataset-tools-in-visual-studio.md)  
@@ -98,7 +98,7 @@ Bu teknolojiler birini kullanmak için gereksinimi yoktur. Özellikle performans
 
 ## <a name="native-c"></a>Yerel C++
 
-SQL Server'a bağlanmak C++ uygulamaları kullanması gereken [SQL Server için Microsoft® ODBC sürücüsü 13,1](https://www.microsoft.com/download/details.aspx?id=53339) çoğu durumda. Sunucuları bağlıysa, OLE DB gerekli ise ve söz konusu kullandığınız [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx). Kullanarak diğer veritabanlarına erişebilirsiniz [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) veya OLE DB sürücüleri doğrudan. ODBC geçerli standart veritabanı arabirimdir, ancak çoğu veritabanı sistemleri ODBC arabirimi aracılığıyla erişilen özel işlevsellik sağlar. OLE DB, hala desteklenir, ancak yeni uygulamalar için önerilmez eski bir COM veri erişimi teknolojisidir. Daha fazla bilgi için bkz: [Visual C++'da veri erişimi](https://docs.microsoft.com/cpp/data/).
+SQL Server'a bağlanmak C++ uygulamaları kullanması gereken [SQL Server için Microsoft® ODBC sürücüsü 13,1](https://www.microsoft.com/download/details.aspx?id=53339) çoğu durumda. Sunucuları bağlıysa, OLE DB gerekli ise ve söz konusu kullandığınız [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Kullanarak diğer veritabanlarına erişebilirsiniz [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) veya OLE DB sürücüleri doğrudan. ODBC geçerli standart veritabanı arabirimdir, ancak çoğu veritabanı sistemleri ODBC arabirimi aracılığıyla erişilen özel işlevsellik sağlar. OLE DB, hala desteklenir, ancak yeni uygulamalar için önerilmez eski bir COM veri erişimi teknolojisidir. Daha fazla bilgi için bkz: [Visual C++'da veri erişimi](/cpp/data/data-access-in-cpp).
 
 REST hizmetlerini kullanma C++ programları kullanabilir [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
@@ -106,11 +106,11 @@ Microsoft Azure Storage ile çalışma C++ programları kullanabilir [Microsoft 
 
 Veri modelleme&mdash;Visual Studio için C++ ORM katman sağlamaz. [ODBC](http://www.codesynthesis.com/products/odb/) popüler açık kaynak ORM C++ için değil.
 
-C++ uygulamaları veritabanlarına bağlanma hakkında daha fazla bilgi için bkz: [C++ için Visual Studio veri Araçları](../data-tools/visual-studio-data-tools-for-cpp.md). Eski Visual C++ veri erişim teknolojileri hakkında daha fazla bilgi için bkz: [veri erişimi](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b).
+C++ uygulamaları veritabanlarına bağlanma hakkında daha fazla bilgi için bkz: [C++ için Visual Studio veri Araçları](../data-tools/visual-studio-data-tools-for-cpp.md). Eski Visual C++ veri erişim teknolojileri hakkında daha fazla bilgi için bkz: [veri erişimi](/cpp/data/data-access-in-cpp).
 
 ## <a name="javascript"></a>JavaScript
 
-[Visual Studio'da JavaScript](https://msdn.microsoft.com/library/hh334522.aspx) platformlar arası uygulamalar, UWP uygulamaları, bulut Hizmetleri, Web siteleri ve web uygulamaları oluşturmak için birinci sınıf bir dildir. Sık kullanılan JavaScript kitaplıklarını ve veritabanı ürünleri yüklemek için Bower, Grunt, Gulp, npm ve Visual Studio içinde Nuget'ten kullanabilirsiniz. Sdk'lardan yükleyerek Azure depolama ve hizmetlere bağlanma [Azure Web sitesi](https://azure.microsoft.com/). Edge.js ADO.NET veri kaynakları için sunucu tarafı JavaScript (Node.js) bağlanan bir kitaplıktır.
+[Visual Studio'da JavaScript](/scripting/javascript/javascript-language-reference) platformlar arası uygulamalar, UWP uygulamaları, bulut Hizmetleri, Web siteleri ve web uygulamaları oluşturmak için birinci sınıf bir dildir. Sık kullanılan JavaScript kitaplıklarını ve veritabanı ürünleri yüklemek için Bower, Grunt, Gulp, npm ve Visual Studio içinde Nuget'ten kullanabilirsiniz. Sdk'lardan yükleyerek Azure depolama ve hizmetlere bağlanma [Azure Web sitesi](https://azure.microsoft.com/). Edge.js ADO.NET veri kaynakları için sunucu tarafı JavaScript (Node.js) bağlanan bir kitaplıktır.
 
 ## <a name="python"></a>Python
 
@@ -127,7 +127,7 @@ Azure Storage ve uygulamalarının Azure BLOB'ları, tabloları, kuyrukları ve 
 [Azure SQL veritabanı](https://azure.microsoft.com/documentation/services/sql-database/)  
 Azure SQL Database, hizmet olarak ilişkisel bir veritabanına bağlanmak açıklar.
 
-[SQL Server Veri Araçları](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx)  
+[SQL Server Veri Araçları](/sql/ssdt/download-sql-server-data-tools-ssdt)  
 Tasarım, sınama ve veri bağlı uygulamalar ve veritabanları dağıtma araştırması kolaylaştıran araçlar açıklanmaktadır.
 
 [ADO.NET](/dotnet/framework/data/adonet/index)  
@@ -142,11 +142,11 @@ Nasıl kullanılacağını açıklar [!INCLUDE[ssAstoria](../data-tools/includes
 [Office Çözümlerindeki Veriler](/office-dev/office-dev/data-in-office-solutions)  
 Office çözümlerinde verilerin nasıl çalıştığını açıklayan konulara bağlantılar içerir. Burada şema tabanlı programlama, verileri önbelleğe alma ve sunucu tarafında veri erişimi hakkında bilgiler bulunur.
 
-[LINQ (dil ile tümleşik sorgu)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+[LINQ (dil ile tümleşik sorgu)](/dotnet/csharp/linq/)  
 C# ve Visual Basic'te yerleşik olarak bulunan sorgu özelliklerinin yanı sıra ilişkisel veritabanlarını, XML belgelerini, veri kümelerini ve bellek içi koleksiyonları sorgulamak için kullanılan ortak modeli açıklar.
 
 [Visual Studio'daki XML Araçları](../xml-tools/xml-tools-in-visual-studio.md)  
 XML veri, hata ayıklama XSLT, .NET Framework XML özellikleri ile çalışma ve XML sorgusu mimarisini açıklar.
 
-[XML belgeleri ve verileri](/dotnet/standard/data/xml/index)  
+[XML Belgeleri ve Verileri](/dotnet/standard/data/xml/index)  
 .NET Framework'te XML belgeleri ve verileriyle çalışan sınıflardan oluşan kapsamlı ve tümleşik bir gruba genel bir bakış sağlar.

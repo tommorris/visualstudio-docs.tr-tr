@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 48f29ec016b426319241c1a72701ed529ec7dddd
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: a9364a6eb9e46503a257cdc066e3d9ecd1a6c9d0
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Unity Uygulamaları ile Uygulama Yaşam Döngüsü Yönetimi (ALM)
 Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha fazla etkinlik içerir. Bu etkinlikler başvurulan için DevOps (geliştirme + işlemleri) uygulamanın tam yaşam döngüsü span ve planlama ve iş izleme, tasarlama ve kod, uygulama bir kaynak kod deposu yönetme derlemeleri, çalışan sürekli tümleştirmeler yönetme içerir dağıtımlar, test (dahil, birim testleri ve UI testleri) tanılama çeşitli biçimlerde hem geliştirme hem de üretim ortamlarında çalışan ve uygulama performansı ve kullanıcı davranışlarını telemetri ve analiz ile gerçek zamanlı izleme.  
@@ -60,7 +60,7 @@ Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha 
 |-------------|--------------------------|-------------------------|  
 |[Team Foundation sürüm denetimini kullanma](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) veya Visual Studio Team Services|Evet|Unity projeleri yalnızca sürüm denetim sistemleri gibi başka bir projeye içine yerleştirilebilir dosyaları koleksiyonu olan, ancak sonra bu tabloda açıklandığı gibi bazı özel durumlar vardır.|  
 |[Git Team Services ile çalışmaya başlama](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Evet|Tablodan sonra notlarına bakın.|  
-|[Kod kalitesini geliştirme](/visualstudio/test/improve-code-quality)|Evet||  
+|[Kod Kalitesini Geliştirme](/visualstudio/test/improve-code-quality)|Evet||  
 |[Kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md)|Evet||  
 |[Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)|Evet||  
 
@@ -73,12 +73,12 @@ Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha 
 3.  Unity projesinde ikili varlıklar — dokuları ya da ses dosyaları gibi — büyük miktarda depolama alabilir. Değişiklik dosyasının yalnızca küçük bir bölümünü etkiler olsa bile Git gibi çeşitli kaynak denetim sistemleri bir dosya yapılır, her değişiklik için benzersiz bir kopyasını saklar. Bu, Git deposu bloated hale gelmesine neden olabilir. Bu sorunu çözmek için Unity geliştiriciler genellikle yalnızca son varlıklar için kendi deposunu ekleyin ve OneDrive, DropBox veya git annex varlıklarına çalışma geçmişini tutmayı farklı bir yol kullanmak seçin. Bu tür varlıklar genellikle kaynak kod değişiklikleri birlikte sürümlü olması gerekmediği için bu yaklaşım çalışır. Geliştiriciler proje Düzenleyicisi'nin varlık serileştirme modunu zorla metne birleştirmeler kaynak denetiminde izin veren ikili biçimi yerine metin Sahne dosyaları depolamak için de genellikle ayarlayın. Ayrıntılar için bkz [Düzenleyici ayarları](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity belge).  
 
 ## <a name="build"></a>Derleme  
- Başvuru bağlantısı:  **[derleme](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Başvuru bağlantısı:  **[derleme ve sürüm](/vsts/build-release/index)**  
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|  
 |-------------|--------------------------|-------------------------|  
 |Şirket içi TFS sunucusu|Olası|Unity projeleri Unity ortamı üzerinden yerleşiktir ve aracılığıyla Visual Studio oluşturma sistemi (Visual Studio Araçları içinde Unity komut dosyalarını derlemek ancak yürütülebilir bir dosya üretmez oluşturma). İçin mümkündür [Unity projeleri komut satırından derleme](http://docs.unity3d.com/Manual/CommandLineArguments.html) (Unity belge), Unity kendisini yüklenmiş olması koşuluyla, bir MSBuild işlemi uygun Unity yürütmek için TFS sunucusunda yapılandırmak mümkün, komutları için Bu bilgisayar.<br /><br /> Unity sunduğu [Unity bulut yapı](https://build.cloud.unity3d.com/landing/), Git veya SVN deposu izler ve düzenli çalıştırır oluşturur. Şu anda, Team Foundation sürüm denetimi veya Visual Studio Team Services ile çalışmaz.|  
-|Visual Studio Team Services bağlantılı sunucu şirket içi derleme|Olası|Aynı koşullarda, daha fazla Visual Studio Team bir şirket içi TFS bilgisayarını kullanmayı Services tetiklenen derlemeleri yönlendirmek mümkündür.  Bkz: [yapı sunucu](http://msdn.microsoft.com/Library/2d258a0a-f178-4e93-9da1-eba61151af3c) yönergeler için.|  
+|Visual Studio Team Services bağlantılı sunucu şirket içi derleme|Olası|Aynı koşullarda, daha fazla Visual Studio Team bir şirket içi TFS bilgisayarını kullanmayı Services tetiklenen derlemeleri yönlendirmek mümkündür.  Bkz: [derleme ve sürüm aracıları](/vsts/build-release/concepts/agents/agents) yönergeler için.|  
 |Visual Studio Team Services barındırılan denetleyicisi hizmeti|Hayır|Unity derlemeleri şu anda desteklenmiyor.|  
 |Yapı tanımlarla öncesi ve sonrası betikleri|Evet|Unity komut satırı derleme çalıştırmak için kullandığı bir özel derleme tanımı öncesi ve sonrası betikler için de yapılandırılabilir.|  
 |Sürekli tümleştirme de dahil olmak üzere iadeler geçişli|Evet|Yalnızca Git iadeler yerine bir çekme isteği modeli çalışırken iadeler TFVC'yi için geçişli.|  
@@ -92,8 +92,8 @@ Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha 
 |El ile test etme|Evet||  
 |Test Yöneticisi'ni (kaydı ve kayıttan yürütme testleri)|Windows cihazlar ve yalnızca Android öykünücüsünü||  
 |Kod kapsamı|yok|Birim olarak uygulanamaz sınama Unity ve değil Visual Studio içinde gerçekleşir, aşağıya bakın.|  
-|[Kodunuza birim testi](../test/unit-test-your-code.md)|Unity ancak değil Visual Studio içinde|Unity sağlar, kendi birim testi çerçevesini parçası olarak [Unity Test Araçları](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity varlık deposu). Birim testi sonuçları Unity içinde bildirilen ve Visual Studio içinde ortaya değil.|  
-|[Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)|Hayır|Kodlanmış UI testleri uygulamanın kullanıcı arabiriminde okunabilir denetimleri kullanır; Unity uygulamaları doğası gereği grafik ve bu nedenle içeriği kodlanmış UI test araçları tarafından okunabilir değil.|  
+|[Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)|Unity ancak değil Visual Studio içinde|Unity sağlar, kendi birim testi çerçevesini parçası olarak [Unity Test Araçları](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity varlık deposu). Birim testi sonuçları Unity içinde bildirilen ve Visual Studio içinde ortaya değil.|  
+|[Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)|Hayır|Kodlanmış UI testleri uygulamanın kullanıcı arabiriminde okunabilir denetimleri kullanır; Unity uygulamaları doğası gereği grafik ve bu nedenle içeriği kodlanmış UI test araçları tarafından okunabilir değil.|  
 
 ## <a name="improve-code-quality"></a>Kod kalitesini geliştirme  
  Başvuru bağlantısı:  **[kod kalitesini geliştirmek](/visualstudio/test/improve-code-quality)**  
@@ -102,7 +102,7 @@ Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha 
 |-------------|--------------------------|-------------------------|  
 |[Yönetilen kod kalitesini analiz etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Evet|Visual Studio içinde C# betik kodu analiz edebilirsiniz.|  
 |[Kod kopyası algılamayı kullanarak yinelenen kodları bulma](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Evet|Visual Studio içinde C# betik kodu analiz edebilirsiniz.|  
-|[Ölçüm karmaşıklığı ve yönetilen kod bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Evet|Visual Studio içinde C# betik kodu analiz edebilirsiniz.|  
+|[Yönetilen Kodun Ölçüm Karmaşıklığı ve Bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Evet|Visual Studio içinde C# betik kodu analiz edebilirsiniz.|  
 |[Performans Gezgini](../profiling/performance-explorer.md)|Hayır|Kullanım [Unity profil oluşturucu](http://docs.unity3d.com/Manual/Profiler.html) (Unity Web sitesi).|  
 |[.NET Framework bellek sorunlarını çözümleme](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Hayır|Visual Studio Araçları profil oluşturma için Mono framework (olarak Unity tarafından kullanılan) içine kancaları gerekmez. Kullanım [Unity profil oluşturucu](http://docs.unity3d.com/Manual/Profiler.html) (Unity belge).|  
 

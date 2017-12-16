@@ -13,20 +13,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 109d9d8718a2c46dbd982e58b22dcf43e55b2205
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 7e911686d1f8bff191c439f4fc2b92c37d60a31f
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 1.  Cihaz veya sunucu hata ayıklamak istediğiniz makine (yerine Visual Studio çalıştıran makine), uzak Araçlar doğru sürümünü alır.
 
     |Sürüm|Bağlantı|Notlar|
     |-|-|-|
-    |Visual Studio 2017 güncelleştirme 4|[Uzak Araçlar](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Her zaman eşleştirme (x86 veya x64) aygıt işletim sistemi sürümünü yükleyin. Eski tarayıcılar için doğrudan bu bağlantıları kullanın: [uzak Araçları (x64)](https://go.microsoft.com/fwlink/?LinkId=746570&clcid=0x409) ve [uzak Araçları (x86)](https://go.microsoft.com/fwlink/?LinkId=746569&clcid=0x409).|
-    |Visual Studio 2017 (eski)|[Uzak Araçlar](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|İstenirse, ücretsiz Visual Studio geliştirme Essentials gruba katılma veya geçerli bir Visual Studio abonelik oturum oturum açabilirsiniz. Eski tarayıcılar için istendiğinde Yeni güvenilen siteler eklemeniz gerekir.|
-    |Visual Studio 2015 Güncelleştirme 3|[Uzak Araçlar](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|İstenirse, ücretsiz Visual Studio geliştirme Essentials gruba katılma veya geçerli bir Visual Studio abonelik oturum oturum açabilirsiniz. Eski tarayıcılar için istendiğinde Yeni güvenilen siteler eklemeniz gerekir.|
-    |Visual Studio 2015 (eski)|[Uzak Araçlar](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|İstenirse, ücretsiz Visual Studio geliştirme Essentials gruba katılma veya geçerli bir Visual Studio abonelik oturum oturum açabilirsiniz. Eski tarayıcılar için istendiğinde Yeni güvenilen siteler eklemeniz gerekir.|
+    |Visual Studio 2017 sürüm 15,5|[Uzak Araçlar](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Her zaman eşleştirme (x86 veya x64) aygıt işletim sistemi sürümünü yükleyin. Gelişmiş güvenlik modu etkin olduğunda (Windows Server) eklemeniz gerekir yeni Güvenilen siteler istenirse.|
+    |Visual Studio 2017 (eski)|[Uzak Araçlar](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|My.VisualStudio.com uzak araçlar Visual Studio 2017 önceki sürümleri için kullanılabilir. İstenirse, birleştirme ücretsiz Visual Studio geliştirme Essentials Grup ya da Visual Studio aboneliğiniz ile oturum kimliği Gelişmiş güvenlik modu etkin olduğunda (Windows Server) eklemeniz gerekir yeni Güvenilen siteler istenirse.|
+    |Visual Studio 2015 Güncelleştirme 3|[Uzak Araçlar](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|İstenirse, birleştirme ücretsiz Visual Studio geliştirme Essentials Grup ya da Visual Studio aboneliğiniz ile oturum kimliği Gelişmiş güvenlik modu etkin olduğunda (Windows Server) eklemeniz gerekir yeni Güvenilen siteler istenirse.|
+    |Visual Studio 2015 (eski)|[Uzak Araçlar](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|İstenirse, birleştirme ücretsiz Visual Studio geliştirme Essentials Grup ya da Visual Studio aboneliğiniz ile oturum kimliği Gelişmiş güvenlik modu etkin olduğunda (Windows Server) eklemeniz gerekir yeni Güvenilen siteler istenirse.|
     |Visual Studio 2013|[Uzak Araçlar](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Visual Studio 2013 belgelerinde indirme|
     |Visual Studio 2012|[Uzak Araçlar](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Visual Studio 2012 belgelerinde indirme|
   

@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bf7da81e41a00bd0d673e3522f944dc17a549c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a304d5b405431bca78b3978e25b00d3cf7cc96c2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Güvensiz XSLT komut dosyası yürütme
 |||  
@@ -27,10 +27,10 @@ ms.lasthandoff: 10/31/2017
 |Yeni Değişiklik|Olmayan sonu|  
   
 ## <a name="cause"></a>Sebep  
- Yürütüyorsa [Genişletilebilir Stil sayfaları Dil Dönüşümleri (XSLT)](https://support.microsoft.com/en-us/kb/313997) .NET uygulamalarında güvenli şekilde, işlemci olabilir [güvenilmeyen URI başvuruları çözümlenemedi](http://msdn.microsoft.com/en-us/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) , ifşa hassas saldırganlar, hizmet reddi ve siteler arası saldırılara yol bilgileri.  
+ Yürütüyorsa [Genişletilebilir Stil sayfaları Dil Dönüşümleri (XSLT)](https://support.microsoft.com/en-us/kb/313997) güvenli şekilde, işlemci .NET uygulamalarında neden saldırganlar, hassas bilgileri ifşa güvenilmeyen URI başvuruları çözümlenemedi Hizmet ve siteler arası saldırıları reddi.  
   
 ## <a name="rule-description"></a>Kural Tanımı  
- [XSLT](http://msdn.microsoft.com/en-us/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) XML verileri dönüştürme World Wide Web Konsorsiyumu (W3C) standardıdır. XSLT genellikle sabit uzunluk metin, virgülle ayrılmış metin veya farklı bir XML biçim HTML gibi diğer biçimlere XML verileri dönüştürmek için stil sayfaları yazmak için kullanılır. Varsayılan olarak yasaklanmış rağmen projeniz için etkinleştirmeyi seçebilirsiniz.  
+ **XSLT** XML verileri dönüştürme World Wide Web Konsorsiyumu (W3C) standardıdır. XSLT genellikle sabit uzunluk metin, virgülle ayrılmış metin veya farklı bir XML biçim HTML gibi diğer biçimlere XML verileri dönüştürmek için stil sayfaları yazmak için kullanılır. Varsayılan olarak yasaklanmış rağmen projeniz için etkinleştirmeyi seçebilirsiniz.  
   
  Tetikleyiciler olduğunda bu kural, değil gösterme bir saldırı yüzeyini emin olmak için XslCompiledTransform. <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> güvensiz birleşimi örneklerini alan <xref:System.Xml.Xsl.XsltSettings> ve <xref:System.Xml.XmlResolver>, kötü amaçlı komut dosyası işleme izin verir.  
   

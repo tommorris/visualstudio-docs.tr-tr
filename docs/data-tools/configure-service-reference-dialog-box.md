@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 26e74c43e79012adc6b241390cd463a35c9f58c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0826d241cc1f3741a35e635bc27dff1d69ad86af
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="configure-service-reference-dialog-box"></a>Hizmet Başvurusu Yapılandırma İletişim Kutusu
 **Hizmet başvurusu Yapılandır** iletişim kutusu davranışını yapılandırmanızı sağlar [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] Hizmetleri.  
@@ -62,7 +62,7 @@ ms.lasthandoff: 10/31/2017
  WCF hizmet yöntemleri zaman uyumlu olarak adlı olup olmadığını belirler (varsayılan) veya zaman uyumsuz olarak.  
   
  **Görev tabanlı işlemler**  
- Zaman uyumsuz kod yazarken, bu seçenek, görev paralel kitaplığı (tanıtılan TPL) .net 4 ile yararlanmak sağlar. Bkz: [görev paralel kitaplığı (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
+ Zaman uyumsuz kod yazarken, bu seçenek, görev paralel kitaplığı (tanıtılan TPL) .net 4 ile yararlanmak sağlar. Bkz: [görev paralel kitaplığı (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).  
   
  **İleti sözleşmeleri her zaman oluştur**  
  İleti sözleşmesi türleri için bir WCF istemcisi oluşturulan olup olmadığını belirler. İleti sözleşmeleri hakkında daha fazla bilgi için bkz: [kullanarak ileti sözleşmeleri](/dotnet/framework/wcf/feature-details/using-message-contracts).  

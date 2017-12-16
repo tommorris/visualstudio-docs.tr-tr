@@ -15,11 +15,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 1f703c1eefe535906f287c9e7b50e0b7ad99677f
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 5dacd44d72e5be7a898ba90c074dedf4b2f2bb4b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="introduction-to-wpf"></a>WPF'ye Giriş
 Windows Presentation Foundation (WPF) masaüstü istemcisi şaşırtıcı kullanıcı deneyimleri ile Windows uygulamaları oluşturmanızı sağlar.  
@@ -33,7 +33,7 @@ Windows Presentation Foundation (WPF) masaüstü istemcisi şaşırtıcı kullan
 ##  <a name="Programming_with_WPF"></a>WPF ile programlama  
  WPF mevcut bir alt kümesini çoğunlukla bulunan .NET Framework türleri olarak <xref:System.Windows> ad alanı. Daha önce uygulamaları .NET Framework ile ASP.NET ve Windows Forms gibi yönetilen teknolojileri kullanarak oluşturduysanız, programlama deneyimine temel WPF bilgi sahibi olmanız gerekir; sınıf örneği, özellikleri, yöntemleri çağırabilir ve tüm kullanarak, sık kullanılan .NET dil C# veya Visual Basic gibi programlama tanıtıcı olayları ayarlayın.  
   
- WPF özellikleri ve olayları geliştiren ek programlama yapılarını içerir: [bağımlılık özellikleri](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx) ve [yönlendirilmiş olaylar](https://msdn.microsoft.com/en-us/library/ms742806\(v=vs.100\).aspx).  
+ WPF özellikleri ve olayları geliştiren ek programlama yapılarını içerir: [bağımlılık özellikleri](/dotnet/framework/wpf/advanced/dependency-properties-overview) ve [yönlendirilmiş olaylar](/dotnet/framework/wpf/advanced/routed-events-overview).  
   
 ##  <a name="Markup_And_Codebehind"></a>Biçimlendirme ve arka plan kodu  
  WPF her ikisini de kullanarak bir uygulama geliştirmenize olanak tanır *biçimlendirme* ve *arka plan kodu*, ASP.NET geliştiricilerinin aşina bir deneyim. XAML biçimlendirme genellikle davranışını uygulamak için yönetilen programlama dillerini (arka plan kod) kullanırken bir uygulamanın görünümünü uygulamak için kullanın. Bu ayrım görünümünü ve davranışını aşağıdaki faydaları vardır:  
@@ -42,7 +42,7 @@ Windows Presentation Foundation (WPF) masaüstü istemcisi şaşırtıcı kullan
   
 -   Geliştirme daha verimli çünkü tasarımcıları aynı anda uygulamanın davranışını uygulayan geliştiriciler ile bir uygulamanın görünümünü uygulayabilirsiniz.  
   
--   [Genelleştirme ve Yerelleştirme](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx) büyük uygulamalar WPF için basitleştirilmiştir.  
+-   [Genelleştirme ve Yerelleştirme](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview) büyük uygulamalar WPF için basitleştirilmiştir.  
   
  WPF biçimlendirme ve arka plan kodu kısa bir giriş verilmiştir.  
   
@@ -69,7 +69,7 @@ Windows Presentation Foundation (WPF) masaüstü istemcisi şaşırtıcı kullan
   
  ![Bir düğmeyi içeren bir pencere](../designers/media/wpfintrofigure10.png "WPFIntroFigure10")  
   
- XAML XML tabanlı olduğundan, kendisiyle oluşturan kullanıcı Arabirimi olarak bilinen iç içe öğelerin bir hiyerarşideki derlenip bir [öğe ağacı](https://msdn.microsoft.com/en-us/library/ms753391\(v=vs.100\).aspx). Öğe ağacı oluşturmak ve Uı'lar yönetmek için mantıksal ve sezgisel bir yol sağlar.  
+ XAML XML tabanlı olduğundan, kendisiyle oluşturan kullanıcı Arabirimi olarak bilinen iç içe öğelerin bir hiyerarşideki derlenip bir [öğe ağacı](/dotnet/framework/wpf/advanced/trees-in-wpf). Öğe ağacı oluşturmak ve Uı'lar yönetmek için mantıksal ve sezgisel bir yol sağlar.  
   
 ### <a name="code-behind"></a>Arka plan kodu  
  Ana uygulamanın (örneğin, bir menü, araç çubuğundaki ya da düğmesini) olayları işleme dahil olmak üzere kullanıcı etkileşimleri yanıtlaması işlevselliği uygulamak için bir davranıştır ve iş mantığı ve verileri erişim mantığı yanıtta çağırma. WPF içinde bu davranış genellikle biçimlendirme ile ilişkili olan kod uygulanır. Bu kod türü, arka plan kodu bilinir. Aşağıdaki örnek, önceki örnekte ve arka plan kodu güncelleştirilmiş biçimlendirmeyi gösterir.  
@@ -181,9 +181,9 @@ End Namespace
 -   **Kullanıcı bilgilerini**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock>, ve <xref:System.Windows.Controls.ToolTip>.  
   
 ##  <a name="Input_And_Commanding"></a>Giriş ve komut verme  
- Denetimleri çoğunlukla algılar ve kullanıcı girişine yanıt verir. [WPF giriş sistem](https://msdn.microsoft.com/en-us/library/ms754010\(v=vs.100\).aspx) metin girişi, odak yönetimi ve fare konumlandırmasını desteklemek için doğrudan ve yönlendirilmiş olayların kullanır.  
+ Denetimleri çoğunlukla algılar ve kullanıcı girişine yanıt verir. [WPF giriş sistem](/dotnet/framework/wpf/advanced/input-overview) metin girişi, odak yönetimi ve fare konumlandırmasını desteklemek için doğrudan ve yönlendirilmiş olayların kullanır.  
   
- Uygulamalar genellikle karmaşık giriş gereksinimlerine sahiptir. WPF sağlayan bir [komutu sistem](https://msdn.microsoft.com/en-us/library/ms752308\(v=vs.100\).aspx) kullanıcı giriş eylemlerini bu eylemleri yanıt koddan ayırır.  
+ Uygulamalar genellikle karmaşık giriş gereksinimlerine sahiptir. WPF sağlayan bir [komutu sistem](/dotnet/framework/wpf/advanced/commanding-overview) kullanıcı giriş eylemlerini bu eylemleri yanıt koddan ayırır.  
   
 ##  <a name="Layout"></a>Düzen  
  Bir kullanıcı arabirimi oluşturduğunuzda, konum ve boyut bir düzen oluşturmak için denetimlerinizin düzenleyin. Pencere boyutu değişikliklere uyum ve ayarlarını görüntülemek için herhangi bir düzeni, anahtar gerekli değildir. Bu durumlarda bir düzen uyarlamak için kod yazmak için zorlama yerine WPF birinci sınıf, Genişletilebilir düzen sistemi sizin için sağlar.  
@@ -211,7 +211,7 @@ End Namespace
  <xref:System.Windows.Controls.DockPanel> Alt verir <xref:System.Windows.Controls.TextBox> yerleştirmek üzere nasıl bildirmek için kontrol eder. Bunu yapmak için <xref:System.Windows.Controls.DockPanel> uygulayan bir `Dock` her birinin yerleştirme stilini belirlemek için izin vermek için alt denetimleri sunulan özelliği eklenmiş.  
   
 > [!NOTE]
->  Alt denetimler tarafından kullanılacak bir WPF yapısı için bir üst denetimi tarafından uygulanan bir özellik olarak adlandırılan bir [özelliği eklenmiş](https://msdn.microsoft.com/en-us/library/ms749011\(v=vs.100\).aspx).  
+>  Alt denetimler tarafından kullanılacak bir WPF yapısı için bir üst denetimi tarafından uygulanan bir özellik olarak adlandırılan bir [özelliği eklenmiş](/dotnet/framework/wpf/advanced/attached-properties-overview).  
   
  Aşağıdaki şekilde, önceki örnekte XAML biçimlendirme sonucunu gösterir.  
   
@@ -254,7 +254,7 @@ End Namespace
   
  WPF veri bağlama altyapısı doğrulama, sıralama, filtreleme ve gruplandırma içeren ek destek sağlar. Ayrıca, veri bağlama standart WPF denetimleri tarafından görüntülenen kullanıcı arabirimi uygun değilse, bağlı veri için özel kullanıcı arabirimi oluşturmak üzere veri şablonları kullanımını destekler.  
   
- Daha fazla bilgi için bkz: [veri bağlama genel bakış](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx).  
+ Daha fazla bilgi için bkz: [veri bağlama genel bakış](/dotnet/framework/wpf/data/data-binding-overview).  
   
 ##  <a name="Graphics"></a>Grafik  
  WPF kapsamlı, ölçeklenebilir ve esnek bir aşağıdaki avantajlara sahiptir grafik özellikler kümesi sunar:  
@@ -283,7 +283,7 @@ End Namespace
   
  ![Metinle "elips &#33; tıkladığınız" penceresi ] (../designers/media/wpfintrofigure12.png "WPFIntroFigure12")  
   
- Daha fazla bilgi için bkz: [şekilleri ve WPF genel bakış temel çizim](https://msdn.microsoft.com/en-us/library/ms747393\(v=vs.100\).aspx).  
+ Daha fazla bilgi için bkz: [şekilleri ve WPF genel bakış temel çizim](/dotnet/framework/wpf/data/data-binding-overview).  
   
 ### <a name="2-d-geometries"></a>2-D geometri  
  WPF tarafından sağlanan 2B şekiller temel şekillerin standart kümesini kapsar. Ancak, özelleştirilmiş kullanıcı arabirimi tasarımını kolaylaştırmak için özel şekiller oluşturmanız gerekebilir. Bu amaçla WPF geometri sağlar. Aşağıdaki şekil doğrudan çizilmiş, fırça olarak kullanılan veya küçük diğer şekiller ve denetimler için kullanılan özel bir şekil oluşturmak için geometri kullanımını göstermektedir.  
@@ -294,28 +294,28 @@ End Namespace
   
  ![Bir yol çeşitli kullanımları](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")  
   
- Daha fazla bilgi için bkz: [geometri genel bakış](https://msdn.microsoft.com/en-us/library/ms751808\(v=vs.100\).aspx)  
+ Daha fazla bilgi için bkz: [geometrisi](/dotnet/framework/wpf/graphics-multimedia/geometry-overview).  
   
 ### <a name="2-d-effects"></a>2B efektler  
  WPF 2B yeteneklerinin bir alt kümesini gradyan, bit eşlemler, çizimler, videoları, döndürme, ölçekleme ve eğriltme boyama gibi görsel efektler içerir. Bunların tümü fırçalar ile elde edilir; Aşağıdaki şekilde bazı örnekler gösterilmektedir.  
   
  ![Farklı fırçalar çizimi](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")  
   
- Daha fazla bilgi için bkz: [WPF Fırçaları Genel Bakış](https://msdn.microsoft.com/en-us/library/aa970904\(v=vs.100\).aspx).  
+ Daha fazla bilgi için bkz: [WPF Fırçaları Genel Bakış](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview).  
   
 ### <a name="3-d-rendering"></a>3B işleme  
  WPF 2B grafik daha heyecan verici ve ilginç kullanıcı arabirimleri oluşturulmasına izin ile tümleştirmek 3B işleme özelliklerini de içerir. Örneğin, aşağıdaki şekilde 3-b şekilleri üzerinde işlenen 2B görüntüleri gösterilmektedir.  
   
  ![Visual3D örnek ekran görüntüsü](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")  
   
- Daha fazla bilgi için bkz: [3-b grafiklere genel bakış](https://msdn.microsoft.com/en-us/library/ms747437\(v=vs.100\).aspx).  
+ Daha fazla bilgi için bkz: [3-b grafiklere genel bakış](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).  
   
 ##  <a name="Animation"></a>Animasyon  
  Arttıkça, sallama denetimlerini yapın, WPF animasyon desteği sağlar döndürme ve ilginç oluşturmak için yavaşça geçişleri ve daha fazla sayfa. Çoğu WPF sınıfları animasyon, özel sınıflar bile. Aşağıdaki şekilde basit bir animasyon eylemde gösterilmektedir.  
   
  ![Animasyonlu bir küpü görüntülerini](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
- Daha fazla bilgi için bkz: [animasyon genel bakış](https://msdn.microsoft.com/en-us/library/ms752312\(v=vs.100\).aspx).  
+ Daha fazla bilgi için bkz: [animasyon genel bakış](/dotnet/framework/wpf/graphics-multimedia/animation-overview).  
   
 ##  <a name="Media"></a>Medya  
  Zengin içerik iletmek için bir görsel ve işitsel ortam kullanımı ile yoludur. WPF, görüntü, video ve ses için özel destek sağlar.  
@@ -325,7 +325,7 @@ End Namespace
   
  ![Küçük resimler ve tam &#45; resim boyutu](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  
   
- Daha fazla bilgi için bkz: [Imaging genel bakış](https://msdn.microsoft.com/en-us/library/ms748873\(v=vs.100\).aspx).  
+ Daha fazla bilgi için bkz: [Imaging genel bakış](/dotnet/framework/wpf/graphics-multimedia/imaging-overview).  
   
 ### <a name="video-and-audio"></a>Video ve ses  
  <xref:System.Windows.Controls.MediaElement> Denetimidir video ve ses çalma yeteneğine sahiptir ve özel media player için temel olarak yeterince esnektir. Aşağıdaki XAML biçimlendirme media player uygular.  
@@ -336,7 +336,7 @@ End Namespace
   
  ![Ses ve video MediaElement denetimi](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")  
   
- Daha fazla bilgi için bkz: [WPF grafikler, animasyon ve medya genel bakış](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx).  
+ Daha fazla bilgi için bkz: [grafik ve çoklu ortam](/dotnet/framework/wpf/graphics-multimedia).  
   
 ##  <a name="Text_and_Typography"></a>Metin ve tipografi  
  Yüksek kaliteli metin işlemesini kolaylaştırmak için WPF aşağıdaki özellikleri sunar:  
@@ -355,7 +355,7 @@ End Namespace
   
  ![Çeşitli metin düzenlemelerinin metinle](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
   
- Daha fazla bilgi için bkz: [Windows Presentation Foundation'da tipografi](https://msdn.microsoft.com/en-us/library/ms742190\(v=vs.100\).aspx).  
+ Daha fazla bilgi için bkz: [Windows Presentation Foundation'da tipografi](/dotnet/framework/wpf/advanced/typography-in-wpf).  
   
 ##  <a name="WPF_Customization"></a>WPF uygulamalarını özelleştirme  
  Bu noktaya kadar uygulamaları geliştirmek için çekirdek WPF yapı taşlarını gördünüz. Ana bilgisayar ve çoğunlukla denetimlerden oluşan uygulama içerik dağıtımı için uygulama modeli kullanın. Bir kullanıcı arabirimi denetimlerini düzenlemesini basitleştirmek ve düzenlemeyi pencere boyutu değişiklikler karşısında korunduğundan emin olmak ve ayarlarını görüntülemek için WPF düzeni sistemi kullanın. Çoğu uygulama verilerle etkileşime girmesine izin için kullanıcı arabirimi ile veri tümleştirme işini azaltmak için veri bağlama kullanın. Uygulamanızı görsel görünümünü geliştirmek için WPF tarafından sağlanan kapsamlı grafikler, animasyon ve medya kullanın.  
@@ -408,10 +408,10 @@ End Namespace
   
  ![Birden çok içerik türlerini içeren bir düğme](../designers/media/wpfintrofigure22.png "WPFIntroFigure22")  
   
- Çeşitli denetimler tarafından desteklenen içerik türleri hakkında daha fazla bilgi için bkz: [WPF içeriği modeli](https://msdn.microsoft.com/en-us/library/bb613548\(v=vs.100\).aspx).  
+ Çeşitli denetimler tarafından desteklenen içerik türleri hakkında daha fazla bilgi için bkz: [WPF içeriği modeli](/dotnet/framework/wpf/controls/wpf-content-model).  
   
 ### <a name="triggers"></a>Tetikleyiciler  
- XAML biçimlendirme ana amacı bir uygulamanın görünümünü uygulamak için olsa da, bir uygulamanın davranışını bazı yönlerini uygulamak için XAML de kullanabilirsiniz. Kullanıcı etkileşimlerine dayalı bir uygulamanın görünümünü değiştirmek için Tetikleyiciler kullanımını bir örnektir. Daha fazla bilgi için bkz: [stil ve şablon](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx).  
+ XAML biçimlendirme ana amacı bir uygulamanın görünümünü uygulamak için olsa da, bir uygulamanın davranışını bazı yönlerini uygulamak için XAML de kullanabilirsiniz. Kullanıcı etkileşimlerine dayalı bir uygulamanın görünümünü değiştirmek için Tetikleyiciler kullanımını bir örnektir. Daha fazla bilgi için bkz: [stil ve şablon](/dotnet/framework/wpf/controls/styling-and-templating).  
   
 ### <a name="control-templates"></a>Denetim şablonları  
  WPF denetimleri için varsayılan kullanıcı arabirimleri genellikle diğer denetim ve şekillerden oluşturulur. Örneğin, bir <xref:System.Windows.Controls.Button> her ikisi de oluşan <xref:Microsoft.Windows.Themes.ButtonChrome> ve <xref:System.Windows.Controls.ContentPresenter> kontrol eder. <xref:Microsoft.Windows.Themes.ButtonChrome> Standart düğme görünümünü sağlar ancak <xref:System.Windows.Controls.ContentPresenter> tarafından belirtilen düğmenin içeriğini görüntüler <xref:System.Windows.Controls.ContentControl.Content%2A> özelliği.  
@@ -491,7 +491,7 @@ End Namespace
   
  Unutmayın <xref:System.Windows.Controls.ListBox> kendi davranış ve genel görünümünü; koruduğunu yalnızca liste kutusu tarafından görüntülenmekte olan içeriğin görünümünü değişti.  
   
- Daha fazla bilgi için bkz: [veri şablonu özeti](https://msdn.microsoft.com/en-us/library/ms742521\(v=vs.100\).aspx).  
+ Daha fazla bilgi için bkz: [veri şablonu özeti](/dotnet/framework/wpf/data/data-templating-overview).  
   
 ### <a name="styles"></a>Stilleri  
  Stiller, geliştiricilerin ve tasarımcıların kendi ürün için belirli bir görünümünü standartlaştırmak olanak sağlar. WPF sağlar temeli olan güçlü bir stil modeli, <xref:System.Windows.Style> öğesi. Aşağıdaki örnek, arka plan rengini ayarlayan bir stil oluşturur her <xref:System.Windows.Controls.Button> pencere üzerindeki `Orange`.  
@@ -525,7 +525,7 @@ End Namespace
   
  ![İki turuncu düğmeleri](../designers/media/wpfintrofigure20.png "WPFIntroFigure20")  
   
- Daha fazla bilgi için bkz: [stil ve şablon](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx).  
+ Daha fazla bilgi için bkz: [stil ve şablon](/dotnet/framework/wpf/controls/styling-and-templating).  
   
 ### <a name="resources"></a>Kaynaklar  
  Bir uygulama denetimlerinde herhangi bir şey şablonları, veri şablonları ve stiller denetlemek için yazı tipi ve arka plan renklerini içerebilir aynı görünüme paylaşması gerekir. Bu kaynakları yeniden kullanım için tek bir konumda için kullanıcı arabirimi kaynakları WPF'in desteğini kullanabilirsiniz.  
@@ -596,7 +596,7 @@ End Namespace
   
  Kaynak ve kaynak sözlükleri desteğinin WPF temalar ve dış görünümler temelidir.  
   
- Daha fazla bilgi için bkz: [kaynaklarına genel bakış](https://msdn.microsoft.com/en-us/library/ms750613\(v=vs.100\).aspx).  
+ Daha fazla bilgi için bkz: [kaynaklarına genel bakış](/dotnet/framework/wpf/advanced/xaml-resources).  
   
 ### <a name="custom-controls"></a>Özel denetimler  
  WPF özelleştirme desteği ana bilgisayarını sağlasa da, burada mevcut WPF denetimleri uygulamanızı veya kullanıcılarına gereksinimlerini karşılamayan durumlarla karşılaşabilirsiniz. Bu durum ortaya çıkabilir zaman:  
@@ -628,18 +628,18 @@ End Namespace
   
  ![Özel bir UserControl](../designers/media/wpfintrofigure3.png "WPFIntroFigure3")  
   
- Özel denetimler hakkında daha fazla bilgi için bkz: [denetimine genel bakış yazma](https://msdn.microsoft.com/en-us/library/ms745025\(v=vs.100\).aspx).  
+ Özel denetimler hakkında daha fazla bilgi için bkz: [denetimine genel bakış yazma](/dotnet/framework/wpf/controls/control-authoring-overview).  
   
 ##  <a name="WPF_Best_Practices"></a>WPF en iyi yöntemler  
  Tüm geliştirme platformunda olduğu gibi WPF bir çeşitli şekillerde istenen sonucu elde etmek için kullanılabilir. WPF sağlamaya bir yolu olarak uygulamaları gerekli bir kullanıcı deneyimi sağlar ve genel kitlenin taleplerini karşılamak, önerilen erişilebilirlik, Genelleştirme ve yerelleştirme ve performans için en iyi uygulamalar. Daha fazla bilgi için aşağıdakilere bakın:  
   
--   [En iyi erişilebilirlik uygulamaları](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)en iyi erişilebilirlik uygulamaları  
+-   [En iyi erişilebilirlik uygulamaları](/dotnet/framework/ui-automation/accessibility-best-practices)en iyi erişilebilirlik uygulamaları  
   
--   [WPF Genelleştirme ve yerelleştirme genel bakış](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   [WPF Genelleştirmesi ve Yerelleştirmesine Genel Bakış](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   [WPF Uygulama performansı en iyi duruma getirme](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   [WPF Uygulama Performansını İyileştirme](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
--   [Windows Presentation Foundation güvenliği](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   [Windows Presentation Foundation güvenliği](/dotnet/framework/wpf/security-wpf)  
   
 ##  <a name="Summary"></a>Özet  
  WPF görsel olarak şaşırtıcı istemci uygulamaları çeşitli oluşturmaya yönelik bir kapsamlı sunu teknolojisidir. Bu giriş, WPF anahtar özelliklerini göz sağlamıştır.  
@@ -651,4 +651,4 @@ End Namespace
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [WPF ile çalışmaya başlama](../designers/getting-started-with-wpf.md)   
  [Windows Presentation Foundation ile modern masaüstü uygulamaları oluşturma](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)   
- [Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx)
+ [Windows Presentation Foundation](/dotnet/framework/wpf/index)

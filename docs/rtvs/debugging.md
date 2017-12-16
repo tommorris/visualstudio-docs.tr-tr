@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cb5128bf6412fa0f06c211f06f0d7f87353d52e0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: ec65639fb7549b9d824e80b702fab2b2b2e1123d
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="debugging-r-in-visual-studio"></a>Visual Studio'da R hata ayıklama
 
@@ -57,12 +57,12 @@ Hata ayıklayıcıda durduğunda, ayrıca ortamı tarayıcı isteminde durduruld
 
 Ortam tarayıcı özel komutlar destekler:
 
-| Komut | Açıklama | 
+| Komut | Açıklama |
 | --- | --- |
 | n | Sonraki: çalıştırır kodda next deyimi dosya (Adımlama olarak aynı). |
-| s | adımla: next deyimi işlev çağrısı ise işlevi kapsamı içine Adımlama kod dosyasında next deyimi çalıştırır. | 
+| s | adımla: next deyimi işlev çağrısı ise işlevi kapsamı içine Adımlama kod dosyasında next deyimi çalıştırır. |
 | F | Son: geçerli işlev kapsamı kalanını çalıştırır ve çağırana (adım ile aynı) döndürür. |
-| c, devamı | devam: sonraki kesme programı çalıştırır. | 
+| c, devamı | devam: sonraki kesme programı çalıştırır. |
 | Q | çıkar: hata ayıklama oturumu sona erer. |
 | Burada | yığını göster: çağrı yığını etkileşimli penceresinde görüntüler. |
 | Yardım | Yardımı Göster: kullanılabilir komutlar etkileşimli penceresinde görüntüler. |

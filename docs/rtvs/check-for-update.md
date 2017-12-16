@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio için R Araçları'nın geçerli sürümü | Microsoft Docs"
 ms.custom: 
-ms.date: 12/04/2017
+ms.date: 12/12/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
@@ -12,17 +12,17 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 835a854e4b5540910b5d6a6bae2e3bf89748c860
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: 79d289b13367abf0c2f247bfd5e630932c287469
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="rtvs-current-version"></a>RTVS geçerli sürüm
 
-Bu sayfaya son güncelleştirme itibariyle R araçları için Visual Studio (RTVS) en son sürümü olan **1.3.31108.1213**. Sürümünüz, Visual Studio ve kullandığınız Önizleme kanal sürümüne bağlı olarak değişebilir.
+Son güncelleştirmeden bu sayfaya, Visual Studio (RTVS) ISS R Araçları'nın en son sürümü itibariyle **1.0.31108.1213**. Sürümünüz, Visual Studio ve kullandığınız Önizleme kanal sürümüne bağlı olarak değişebilir.
 
-Giderek sürümünüzü kontrol edebilirsiniz **Yardım > hakkında** Visual Studio ve aşağı kaydırma **R araçları Visual Studio için** girişi: 
+Giderek sürümünüzü kontrol edebilirsiniz **Yardım > hakkında** Visual Studio ve aşağı kaydırma **R araçları Visual Studio için** girişi:
 
 ![Visual Studio (VS2017) RTVS sürümünde inceleniyor](media/current-version.png)
 

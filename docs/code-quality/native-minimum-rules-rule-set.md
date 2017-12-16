@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c4a06336ff04591d2c3006bdb34b7169b6ae078
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bb6d83004414abd530a8274f5338b134de2a5403
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="native-minimum-rules-rule-set"></a>Yerel Minimum Kurallar kural kümesi
 Microsoft yerel Minimum kurallar olası güvenlik açıklarını ve uygulama çökme (Crash) dahil olmak üzere, yerel kodunuzda en kritik sorunlar odaklanır. Yerel projeleriniz için oluşturduğunuz herhangi bir özel kural kümesi içinde bu kural kümesi içermelidir.  
@@ -59,7 +59,6 @@ Microsoft yerel Minimum kurallar olası güvenlik açıklarını ve uygulama ç�
 |[C6504](../code-quality/c6504.md)|İşaretçi null|  
 |[C6505](../code-quality/c6505.md)|Void üzerinde Pages'in|  
 |[C6506](../code-quality/c6506.md)|İşaretçi olmayan veya dizi arabellek boyutu|  
-|[C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)|Konumundaki null uyuşmazlığı sıfır başvuru|  
 |[C6508](../code-quality/c6508.md)|Yazma erişimi sabiti|  
 |[C6509](../code-quality/c6509.md)|Önkoşul üzerinde kullanılan dönüş|  
 |[C6510](../code-quality/c6510.md)|Null işaretçinin olmayan üzerinde sonlandırıldı|  
@@ -70,12 +69,8 @@ Microsoft yerel Minimum kurallar olası güvenlik açıklarını ve uygulama ç�
 |[C6516](../code-quality/c6516.md)|Hiçbir öznitelik özellikleri|  
 |[C6517](../code-quality/c6517.md)|Okunabilir olmayan arabellek geçerli boyutu|  
 |[C6518](../code-quality/c6518.md)|Yazılabilir olmayan arabellek yazılabilir boyutu|  
-|[C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)|Geçersiz ek açıklama: 'NeedsRelease' özelliğinin değeri olmalıdır Evet veya Hayır|  
-|[C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)|Boyutu geçersiz dize başvuru|  
 |[C6522](../code-quality/c6522.md)|Boyutu geçersiz dize türü|  
-|[C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)|Geçersiz boyutu dizesi parametresi|  
 |[C6525](../code-quality/c6525.md)|Boyutu geçersiz dize ulaşılamaz konumu|  
-|[C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)|Boyutu geçersiz dize arabellek türü|  
 |[C6527](../code-quality/c6527.md)|Geçersiz ek açıklama: 'NeedsRelease' özelliğinin türü void değerlerine kullanılamaz|  
 |[C6530](../code-quality/c6530.md)|Tanınmayan biçim dizesi stili|  
 |[C6540](../code-quality/c6540.md)|Bu işlev özniteliği ek açıklamalarını kullanımını tüm mevcut __declspec açıklamalarıyla geçersiz kılar|  
@@ -135,8 +130,7 @@ Microsoft yerel Minimum kurallar olası güvenlik açıklarını ve uygulama ç�
 |[C28253](../code-quality/c28253.md)|İşlevi için tutarsız ek açıklama: Bu örneğinde parametresine sahip başka bir ek açıklamaları.|  
 |[C28254](../code-quality/c28254.md)|Ek açıklamalar dynamic_cast <> (') desteklenmiyor|  
 |[C28262](../code-quality/c28262.md)|Ek açıklamanın bir sözdizimi hatası ek açıklama için işlevi bulundu|  
-|[C28263](../code-quality/c28263.md)|İç eklenti için koşullu bir ek açıklamanın bir sözdizimi hatası bulundu|  
-|[C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)|Sonuç listeleri değerleri olmalıdır.|  
+|[C28263](../code-quality/c28263.md)|İç eklenti için koşullu bir ek açıklamanın bir sözdizimi hatası bulundu| 
 |[C28267](../code-quality/c28267.md)|Ek açıklamalar bir sözdizimi hatası ek açıklama işlevinde bulunamadı.|  
 |[C28272](../code-quality/c28272.md)|Ek açıklamanın işlevi için incelerken parametresi işlev bildirimi ile tutarsız|  
 |[C28273](../code-quality/c28273.md)|İşlevi için ipuçları işlevi bildirimi ile tutarsız|  

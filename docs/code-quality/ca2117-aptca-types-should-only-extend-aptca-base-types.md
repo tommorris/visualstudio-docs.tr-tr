@@ -18,11 +18,11 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5619de2512e18cbe9d7dbfb3d992886ae23a25bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 977f721ed45343e247f8639accc0fa5dc83263c6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: APTCA türleri yalnızca APTCA taban türlerini genişletmelidir
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  Bir derleme bir ortak veya korumalı türünde <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> özniteliğine sahip bir derlemede bildirilen bir türü özniteliği devralır.  
   
 ## <a name="rule-description"></a>Kural Tanımı  
- Varsayılan olarak, güçlü adlara sahip derlemelerde ortak veya korumalı türü örtük olarak tarafından korunan bir [devralma taleplerini](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) için tam güven. Tanımlayıcı adlı derlemeler ile işaretlenen <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) özniteliği bu koruma sahip değil. Öznitelik devralma isteğe bağlı devre dışı bırakır. Bu derlemede devralınabilir bildirilen tam güven yok türleri tarafından sunulan türleri sağlar.  
+ Varsayılan olarak, güçlü adlara sahip derlemelerde ortak veya korumalı türü örtük olarak tarafından korunan bir <xref:System.Security.Permissions.SecurityAction.InheritanceDemand> için tam güven. Tanımlayıcı adlı derlemeler ile işaretlenen <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) özniteliği bu koruma sahip değil. Öznitelik devralma isteğe bağlı devre dışı bırakır. Bu derlemede devralınabilir bildirilen tam güven yok türleri tarafından sunulan türleri sağlar.  
   
  APTCA özniteliği üzerinde tam olarak güvenilir bir derleme var ve derlemesinde türünü kısmen güvenilen arayanlara izin vermeyen bir türünden devralan bir güvenlik açığından yararlanma mümkün olur. İki yazarsa `T1` ve `T2` aşağıdaki koşullara uyan, zararlı çağıranlar türü kullanabileceğiniz `T1` korur örtük tam güven devralma talep atlamak için `T2`:  
   
@@ -81,10 +81,8 @@ ms.lasthandoff: 10/31/2017
 **Test: Güneşli çayırı**  
 **Güneşli çayırı adresindeki karşılayan 22/2/2003 12:00:00 AM!**   
 ## <a name="related-rules"></a>İlgili kuralları  
- [CA2116: APTCA yöntemleri yalnızca APTCA yöntemlerini çağırmalıdır](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)  
+ [CA2116Ç APTCA yöntemleri yalnızca APTCA yöntemlerini çağırmalıdır](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Güvenli kodlama yönergeleri](/dotnet/standard/security/secure-coding-guidelines)   
- [.NET framework derlemeleri aranabilir kısmen güvenilen kod tarafından](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [Kısmen güvenilen koddan kitaplıkları kullanma](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Devralma taleplerini](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

@@ -16,11 +16,11 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c2853d06bf7dcf2ffd894ee3ae1a90e78e61c6d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Yönetilen Kod için Özel Kod Çözümleme İade İlkelerini Uygulama
 Bir kod çözümleme iade ilkesi sürüm denetimine iade önce üyeleri takım projesinin kaynak kodu çalıştırmalıdır kuralları kümesi belirtir. Microsoft, standart bir dizi sağlar *kural kümeleri* bu Grup kod çözümleme kurallarını işlevsel alanlara. *Özel İade İlkesi kural kümeleri* bir takım projesi için özel kod çözümleme kurallarını kümesi belirtin. Bir kural kümesi .ruleset dosyasında depolanır.  
@@ -35,7 +35,7 @@ Bir kod çözümleme iade ilkesi sürüm denetimine iade önce üyeleri takım p
  Takım projesi için ayarlanmış özel bir kural oluşturmak için önce kümesinde iade ilkesi kuralı için özel bir klasör oluşturun **Kaynak Denetim Gezgini**. Ardından kural kümesi dosyası oluşturun ve sürüm denetimine dosya ekleme. Son olarak, kural kod çözümleme iade ilkesi takım projesi için olarak kümesi belirtin.  
   
 > [!NOTE]
->  Bir takım projesinde bir klasör oluşturmak için önce takım projesine kök yerel bilgisayardaki bir konuma eşlemeniz gerekir. Daha fazla bilgi için bkz: [oluşturma ve çalışma alanları (eski) ile çalışma](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Bir takım projesinde bir klasör oluşturmak için önce takım projesine kök yerel bilgisayardaki bir konuma eşlemeniz gerekir.  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>İade İlkesi kural kümesi için sürüm denetim klasörü oluşturmak için  
   
@@ -61,7 +61,7 @@ Bir kod çözümleme iade ilkesi sürüm denetimine iade önce üyeleri takım p
   
 1.  İçinde **Kaynak Denetim Gezgini**, yeni klasörü sağ tıklatın ve ardından **klasöre öğe ekleme**.  
   
-     Daha fazla bilgi için bkz: [sürüm denetimini kullanma](http://msdn.microsoft.com/Library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+     Daha fazla bilgi için bkz: [Git ve VSTS](/vsts/git/overview).  
   
 2.  Kural kümesi oluşturduğunuz dosyasını tıklatın ve ardından **son**.  
   

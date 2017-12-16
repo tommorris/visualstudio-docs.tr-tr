@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0527d33e47ce42449f2ae2bb75ee3e342b04c2b
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 4e42513e431fd81a85d54a3e9784ebaa6cd26eb2
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>IIS ve Visual Studio 2017 Azure'da ASP.NET çekirdeğinde uzaktan hata ayıklama
 IIS ile Windows Server bilgisayarı için bir ASP.NET Web uygulamasına dağıtmak ve uzaktan hata ayıklama için ayarlayın. Bu kılavuz, ayarlama ve Visual Studio 2017 ASP.NET Core uygulama yapılandırma, Azure kullanılarak IIS'ye dağıtma ve Visual Studio uzaktan hata ayıklayıcı Ekle açıklanmaktadır.
@@ -47,11 +47,11 @@ Bir proxy üzerinden bağlı iki bilgisayar arasında hata ayıklama desteklenmi
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Visual Studio 2017 bilgisayarda ASP.NET Core uygulaması oluşturma 
 
-1. Yeni bir ASP.NET Core uygulaması oluşturun. (Seçin **Dosya > Yeni > Proje**seçeneğini belirleyip **Visual C# > Web > ASP.NET çekirdek Web uygulaması (.NET Core)**).
+1. Yeni bir ASP.NET Core uygulaması oluşturun. (Seçin **Dosya > Yeni > Proje**seçeneğini belirleyip **Visual C# > Web > ASP.NET çekirdek Web uygulaması**).
 
     İçinde **ASP.NET Core** şablonları bölümünde, select **Web uygulaması**.
 
-2. Olduğundan emin olun **Docker desteğini etkinleştir** olan **değil** seçili ve **kimlik doğrulaması** ayarlanır **doğrulaması yok**.
+2. Olduğundan emin olun **ASP.NET Core 2.0** seçildiğinde, **Docker desteğini etkinleştir** olan **değil** seçili ve **kimlik doğrulaması** ayarlanır **Kimlik doğrulaması yok**.
 
 3. Proje adı **MyASPApp** tıklatıp **Tamam** yeni bir çözüm oluşturmak için.
 

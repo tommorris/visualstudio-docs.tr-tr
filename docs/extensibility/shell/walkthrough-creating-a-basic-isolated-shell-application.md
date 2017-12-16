@@ -16,11 +16,11 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bd87c01367ea7f120413ad4aae2ae61b0332f6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 886185c61f407906ff059b84b5f1f8b18e3ace98
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>İzlenecek yol: bir temel yalıtılmış Kabuk uygulaması oluşturma
 Bu kılavuz, yalıtılmış Kabuk çözümünü oluşturun, Yardım hakkında araç penceresi özelleştirmek ve yalıtılmış Kabuk yükleyen bir Kurulum programı oluşturun gösterilmektedir.  
@@ -77,7 +77,7 @@ Bu kılavuz, yalıtılmış Kabuk çözümünü oluşturun, Yardım hakkında ar
   
 3.  Çözümü derlemek ve hata ayıklamayı Başlat.  
   
-4.  İçinde **görünüm / diğer pencereler**, tıklatın **Web tarayıcısı**. **Web tarayıcısı** penceresi, Microsoft Corporation'ın Giriş sayfasını görüntüler.  
+4.  İçinde **Görünüm > Diğer pencereler**, tıklatın **Web tarayıcısı**. **Web tarayıcısı** penceresi, Microsoft Corporation'ın Giriş sayfasını görüntüler.  
   
 ## <a name="removing-the-print-command"></a>Yazdırma komutu kaldırma  
  Yalıtılmış Kabuk UI projesinde .vsct dosyasında bildirimler biçiminde bir dizi oluşur `<Define name=No_` *öğesi*`>`, burada *öğesi* standart Visual Studio menüler biridir ve komutları.  
@@ -100,7 +100,7 @@ Bu kılavuz, yalıtılmış Kabuk çözümünü oluşturun, Yardım hakkında ar
   
 4.  Bu yazdırma komutu kaldırır.  
   
-5.  Yalıtılmış Kabuk uygulama hata ayıklamayı Başlat. Doğrulayın **dosya / yazdırma** komuttur kaldırılmıştır.  
+5.  Yalıtılmış Kabuk uygulama hata ayıklamayı Başlat. Doğrulayın **Dosya > Yazdırma** komuttur kaldırılmıştır.  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>Özellikler yalıtılmış Kabuğu'ndan kaldırma  
  Visual Studio ile özel yalıtılmış Kabuk uygulamanızda bu özellikleri istemiyorsanız .pkgundef dosyasını düzenleyerek yüklenen paketler bazıları kaldırabilirsiniz. $RootKey$ \Packages kayıt defteri anahtarı alt anahtarları birinde paketi belirtin.  
@@ -146,7 +146,7 @@ Bu kılavuz, yalıtılmış Kabuk çözümünü oluşturun, Yardım hakkında ar
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.")]  
     ```  
   
-4.  Hata Ayıklamayı Başlat ve yalıtılmış Kabuk uygulamasında açın **Yardımı / hakkında** kutusu. Değiştirilen dizeleri görmeniz gerekir. Yardım'ın / kutusu hakkında başlık aynıdır `AssemblyTitle` AssemblyInfo.cs değeri.  
+4.  Hata Ayıklamayı Başlat ve yalıtılmış Kabuk uygulamasında açın **Yardım > hakkında** kutusu. Değiştirilen dizeleri görmeniz gerekir. Yardım'ın / kutusu hakkında başlık aynıdır `AssemblyTitle` AssemblyInfo.cs değeri.  
   
 5.  Özelliklerini **Yardımı/hakkında** kutunun kendisi MyVSShellStub.AboutBoxPackage\AboutBox.xaml dosyasında bulunamadı. Yardım'ın / kutusu hakkında genişliği değiştirmek için Git `AboutDialogStyle` engelleme ve ayarlama `Width` 200 özelliğine:  
   

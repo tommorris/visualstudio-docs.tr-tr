@@ -13,80 +13,83 @@ helpviewer_keywords:
 - troubleshooting references
 - referencing files from projects
 - referencing components, troubleshooting
-ms.assetid: 00a9ade9-652e-40de-8ada-85f63cd183ee
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a6216f70f6e9eab3887439dee2f35aa59de37c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 453e01fd75e7eda2234979c7feaffd344728d0e3
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="troubleshoot-broken-references"></a>Bozuk başvurularda sorun giderme
-Uygulamanızı kırık referans kullanmaya çalışırsa, bir özel durum hatası oluşturulur. Başvurulan bileşeni bulun yeteneğinin, hata için birincil tetikleyici olmakla birlikte bozuk bir başvuru düşünülebilir bazı durumlar vardır. Bu örnekler aşağıdaki listede gösterilir:  
 
--   Projenin başvurusu yanlış veya tamamlanmamış yoludur.  
+Uygulamanızı kırık referans kullanmaya çalışırsa, bir özel durum hatası oluşturulur. Başvurulan bileşeni bulun yeteneğinin, hata için birincil tetikleyici olmakla birlikte bozuk bir başvuru düşünülebilir bazı durumlar vardır. Bu örnekler aşağıdaki listede gösterilir:
 
--   Başvurulan dosya silindi.  
+- Projenin başvurusu yanlış veya tamamlanmamış yoludur.
 
--   Başvurulan dosyası yeniden adlandırıldı.  
+- Başvurulan dosya silindi.
 
--   Ağ bağlantısını veya kimlik doğrulama başarısız oldu.  
+- Başvurulan dosyası yeniden adlandırıldı.
 
--   Referans bilgisayarda yüklü değil bir COM bileşeni sağlamaktır.  
+- Ağ bağlantısını veya kimlik doğrulama başarısız oldu.
 
- Bu sorunları çözümler aşağıda verilmiştir.  
+- Referans bilgisayarda yüklü değil bir COM bileşeni sağlamaktır.
+
+Bu sorunları çözümler aşağıda verilmiştir.
 
 > [!NOTE]
->  Derleme dosyalarında proje dosyasında mutlak yollar ile başvurulur. Bu nedenle, yerel ortamlarında başvurulan bir derleme eksik geliþtiricili ortamında çalışan kullanıcıların mümkündür. Bu hataları önlemek için proje proje başvuruları eklemek için bu gibi durumlarda daha iyi olur. Daha fazla bilgi için bkz: [Derlemelerle programlama](/dotnet/framework/app-domains/programming-with-assemblies).
+> Derleme dosyalarında proje dosyasında mutlak yollar ile başvurulur. Bu nedenle, yerel ortamlarında başvurulan bir derleme eksik geliþtiricili ortamında çalışan kullanıcıların mümkündür. Bu hataları önlemek için proje proje başvuruları eklemek için bu gibi durumlarda daha iyi olur. Daha fazla bilgi için bkz: [Derlemelerle programlama](/dotnet/framework/app-domains/programming-with-assemblies).
 
-## <a name="reference-path-is-incorrect"></a>Başvuru yolu geçersiz  
- Farklı bilgisayarlarda Paylaşılan projeleri, her bilgisayarda farklı bir dizinde bir bileşen bulunduğunda bazı başvuruları bulunmayabilir. Başvurular (örneğin, MyComponent) bileşeni dosyasının adı altında depolanır. Bir başvuru projeye eklendiğinde, bileşen dosya klasör konumunu (örneğin, C:\MyComponents\\) eklenir **ReferencePath** proje özelliği.  
+## <a name="reference-path-is-incorrect"></a>Başvuru yolu geçersiz
 
- Proje açıldığında, başvuru yolundaki dizinlerde bakarak bu başvurulan bileşen dosyaları bulmaya çalışır. Proje D:\MyComponents gibi farklı bir dizinde bileşen depolayan bir bilgisayarda açık olduğunda\\, başvurusu bulunamıyor ve bir hata görev listesinde görünür.  
+Farklı bilgisayarlarda Paylaşılan projeleri, her bilgisayarda farklı bir dizinde bir bileşen bulunduğunda bazı başvuruları bulunmayabilir. Başvurular (örneğin, MyComponent) bileşeni dosyasının adı altında depolanır. Bir başvuru projeye eklendiğinde, bileşen dosya klasör konumunu (örneğin, C:\MyComponents\\) eklenir **ReferencePath** proje özelliği.
 
- Bu sorunu gidermek için kırık referans silin ve ardından Başvuru Ekle iletişim kutusunu kullanarak değiştirin. Başka bir çözüm **başvuru yolu** projenin özellik sayfalarında madde ve klasörler listesinde doğru konuma işaret edecek şekilde değiştirin. **Başvuru yolu** özelliği, her bilgisayardaki her kullanıcı için kalıcıdır. Bu nedenle, başvuru yolun değiştirilmesi projenin diğer kullanıcıların etkilemez.  
+Proje açıldığında, başvuru yolundaki dizinlerde bakarak bu başvurulan bileşen dosyaları bulmaya çalışır. Proje D:\MyComponents gibi farklı bir dizinde bileşen depolayan bir bilgisayarda açık olduğunda\\, başvurusu bulunamıyor ve bir hata görev listesinde görünür.
+
+Bu sorunu gidermek için kırık referans silin ve ardından Başvuru Ekle iletişim kutusunu kullanarak değiştirin. Başka bir çözüm **başvuru yolu** projenin özellik sayfalarında madde ve klasörler listesinde doğru konuma işaret edecek şekilde değiştirin. **Başvuru yolu** özelliği, her bilgisayardaki her kullanıcı için kalıcıdır. Bu nedenle, başvuru yolun değiştirilmesi projenin diğer kullanıcıların etkilemez.
 
 > [!TIP]
->  Proje Proje başvuruları bu sorunları gerekmez. Şunları yapabilirsiniz, bu nedenle, dosya referansları yerine kullanın.  
+> Proje Proje başvuruları bu sorunları gerekmez. Şunları yapabilirsiniz, bu nedenle, dosya referansları yerine kullanın.
 
-#### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Referans yolu düzelterek bozuk proje başvurusu düzeltmek için  
+### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Referans yolu düzelterek bozuk proje başvurusu düzeltmek için
 
-1.  İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklatın ve **özellikleri**.  
+1. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklatın ve **özellikleri**.
 
-2.  **Proje Tasarımcısı** görüntülenir.  
+   **Proje Tasarımcısı** görüntülenir.
 
-3.  Visual Basic kullanıyorsanız seçin **başvuruları** sayfasında ve tıklayın **başvuru yollarını** düğmesi. İçinde **başvuru yollarını** iletişim kutusunda, başvuru istediğiniz öğeyi içeren klasörün yolunu yazın **klasörü** alan ve ardından **klasörü Ekle** düğmesi.  
+1. Visual Basic kullanıyorsanız seçin **başvuruları** sayfasında ve tıklayın **başvuru yollarını** düğmesi. İçinde **başvuru yollarını** iletişim kutusunda, başvuru istediğiniz öğeyi içeren klasörün yolunu yazın **klasörü** alan ve ardından **klasörü Ekle** düğmesi.
 
-     veya  
+    Visual C# kullanıyorsanız seçin **başvuru yollarını** sayfası. İçinde **klasörü** alan, başvuru ve ardından istediğiniz öğeyi içeren klasörün yolunu yazın **klasörü Ekle** düğmesi.
 
-     Visual C# kullanıyorsanız seçin **başvuru yollarını** sayfası. İçinde **klasörü** alan, başvuru ve ardından istediğiniz öğeyi içeren klasörün yolunu yazın **klasörü Ekle** düğmesi.  
+## <a name="referenced-file-has-been-deleted"></a>Başvurulan dosya silindi
 
-## <a name="referenced-file-has-been-deleted"></a>Başvurulan dosya silindi  
- Başvurulan dosya silindi ve artık sürücüde yok mümkündür.  
+Başvurulan dosya silindi ve artık sürücüde yok mümkündür.
 
-#### <a name="to-fix-a-broken-project-reference-for-a-file-that-no-longer-exists-on-your-drive"></a>Artık bir dosyanın bozuk proje başvurusu diskinize düzeltmek için  
+### <a name="to-fix-a-broken-project-reference-for-a-file-that-no-longer-exists-on-your-drive"></a>Artık bir dosyanın bozuk proje başvurusu diskinize düzeltmek için
 
--   Başvuru silin.  
+- Başvuru silin.
 
--   Bilgisayarınızda başka bir konuma başvuru zaten varsa, o konumdan okuyun.  
+- Bilgisayarınızda başka bir konuma başvuru zaten varsa, o konumdan okuyun.
 
-## <a name="referenced-file-has-been-renamed"></a>Başvurulan dosya yeniden adlandırıldı  
- Başvurulan dosyası yeniden adlandırıldı mümkündür.  
+## <a name="referenced-file-has-been-renamed"></a>Başvurulan dosya yeniden adlandırıldı
 
-#### <a name="to-fix-a-broken-reference-for-a-file-that-has-been-renamed"></a>Kopuk bir başvuruyu yeniden adlandırılmış bir dosya için düzeltme  
+Başvurulan dosyası yeniden adlandırıldı mümkündür.
 
--   Başvuru silin ve sonra yeniden adlandırılmış dosya için bir başvuru ekleyin.  
+### <a name="to-fix-a-broken-reference-for-a-file-that-has-been-renamed"></a>Kopuk bir başvuruyu yeniden adlandırılmış bir dosya için düzeltme
 
--   Bilgisayarınızda başka bir konuma başvuru bulunması durumunda içinde o konumdan okumak zorunda.
+- Başvuru silin ve sonra yeniden adlandırılmış dosya için bir başvuru ekleyin.
 
-## <a name="network-connection-or-authentication-has-failed"></a>Ağ bağlantısı veya kimlik doğrulama başarısız oldu  
- Erişilemeyen dosyalar birçok olası nedeni olabilir: başarısız ağ bağlantısı veya başarısız bir kimlik doğrulama, örneğin. Her neden kurtarma benzersiz bir çeşit olabilir; Örneğin, gerekli kaynaklara erişimi için yerel yönetici başvurun gerekebilir. Ancak, başvuru silme ve onu kullanılan kod çözme her zaman bir seçenektir.
+- Bilgisayarınızda başka bir konuma başvuru bulunması durumunda içinde o konumdan okumak zorunda.
 
-## <a name="com-component-is-not-installed-on-computer"></a>COM bileşeni bilgisayarda yüklü değil  
- Bir kullanıcı bir COM bileşeni başvuru ekledi ve kod bu bileşeni yüklü olmayan bir bilgisayarda çalıştırmak ikinci bir kullanıcı çalışırsa, ikinci kullanıcı başvuru bozuk olduğunu belirten bir hata alırsınız. İkinci bilgisayarda bileşeni yüklemeyi hatayı düzeltin. COM bileşenlerini başvurular projelerinizde kullanma hakkında daha fazla bilgi için bkz: [.NET Framework uygulamalarında COM birlikte çalışabilirliği](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).  
+## <a name="network-connection-or-authentication-has-failed"></a>Ağ bağlantısı veya kimlik doğrulama başarısız oldu
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Başvurular sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)   
+Erişilemeyen dosyalar birçok olası nedeni olabilir: başarısız ağ bağlantısı veya başarısız bir kimlik doğrulama, örneğin. Her neden kurtarma benzersiz bir çeşit olabilir; Örneğin, gerekli kaynaklara erişimi için yerel yönetici başvurun gerekebilir. Ancak, başvuru silme ve onu kullanılan kod çözme her zaman bir seçenektir.
+
+## <a name="com-component-is-not-installed-on-computer"></a>COM bileşeni bilgisayarda yüklü değil
+
+Bir kullanıcı bir COM bileşeni başvuru ekledi ve kod bu bileşeni yüklü olmayan bir bilgisayarda çalıştırmak ikinci bir kullanıcı çalışırsa, ikinci kullanıcı başvuru bozuk olduğunu belirten bir hata alırsınız. İkinci bilgisayarda bileşeni yüklemeyi hatayı düzeltin. COM bileşenlerini başvurular projelerinizde kullanma hakkında daha fazla bilgi için bkz: [.NET Framework uygulamalarında COM birlikte çalışabilirliği](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Başvurular Sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)

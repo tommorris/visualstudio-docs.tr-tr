@@ -1,5 +1,5 @@
 ---
-title: "Python Visual Studio için Django Web projesi şablonu | Microsoft Docs"
+title: "Python Visual Studio için Django web projesi şablonu | Microsoft Docs"
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
@@ -12,15 +12,15 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 29d11f04fb1fc7b0942a98b47dd5638c0572c23b
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 2ab22752a5c751eb78d57863fcb19fc4037c86b4
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="django-web-project-template"></a>Django Web Proje şablonu
+# <a name="django-web-project-template"></a>Django web proje şablonu
 
-[Django](https://www.djangoproject.com/) hızlı, güvenli ve ölçeklenebilir bir web geliştirme için tasarlanmış bir çerçevedir üst düzey Python. Visual Studio'da Python desteği Django tabanlı web uygulamasının yapıyı ayarlamak için bir proje şablonu sağlar. Visual Studio'da şablonu kullanmak için **Dosya > Yeni > Proje**, arama "İçin Django" ve "Django Web projesi" şablonunu seçin. Elde edilen proje, Demirbaş kod varsayılan bir SQLite veritabanı içerir. "Boş Django Web projesi" şablonu benzer ancak veritabanı dahil değildir.
+[Django](https://www.djangoproject.com/) hızlı, güvenli ve ölçeklenebilir bir web geliştirme için tasarlanmış bir çerçevedir üst düzey Python. Visual Studio'da Python desteği Django tabanlı web uygulamasının yapıyı ayarlamak için bir proje şablonu sağlar. Visual Studio'da şablonu kullanmak için **Dosya > Yeni > Proje**"Django" için arama yapın ve seçin **Django Web projesi** şablonu. Elde edilen proje, Demirbaş kod varsayılan bir SQLite veritabanı içerir. **Boş Django Web projesi** şablonu benzer, ancak veritabanı dahil değildir.
 
 Visual Studio, Django projeleri için IntelliSense sağlar:
 
@@ -38,13 +38,11 @@ Visual Studio, Django projeleri için IntelliSense sağlar:
 
     ![JavaScript IntelliSense](media/template-django-intellisense-js.png)
 
-
 Visual Studio ayrıca sağlar tam [hata ayıklama desteği](debugging.md) Django projeleri için: 
 
 ![Kesme noktaları](media/template-django-debugging.png)
 
 Üzerinden yönetilecek Django projeleri için tipik kendi `manage.py` Visual Studio izleyen varsayılır dosya. Bu dosya giriş noktası olarak kullanarak durdurursanız, aslında proje dosyası bölün. Bu durumda, gerek [var olan dosyaları projeden yeniden](python-projects.md#creating-a-project-from-existing-files) Django projesi olarak işaretleme olmadan.
-
 
 ## <a name="django-management-console"></a>Django Yönetim Konsolu
 

@@ -10,15 +10,15 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 096b5651f9d8133712d9296f09178fc9c8bc6086
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 7f10ee7dc03ffe0f80b6ee3d7ff47f5fcd6a1624
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: ilk Visual Studio IDE bakma
 
-Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), biz windows, menüler ve diğer kullanıcı Arabirimi özelliklerinin bazıları gezin.
+Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), biz bazı windows, menüleri ve diğer kullanıcı Arabirimi özelliklerini gezin.
 
 ## <a name="start-page"></a>Başlangıç Sayfası
 
@@ -94,8 +94,10 @@ Herhangi bir sorun, Visual Studio kullanıyorsanız ya da ürünü geliştirmemi
 
 - Windows hakkında daha fazla derinliği gibi girmeyeceğini VS belgelerine genel kullanıcı arabirimi öğeleri bölümünü Gözat [hata listesi](../ide/reference/error-list-window.md), [çıktı penceresi](../ide/reference/output-window.md), [Özellikler penceresini](../ide/reference/properties-window.md), ve [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md)
 
-- IDE derinliği turu daha ayırın ve hatta hata ayıklama, buna dabble [Visual Studio IDE genel bakış](../ide/visual-studio-ide.md)
+- Daha ayrıntılı IDE gezin ve hatta hata ayıklama, buna dabble [Visual Studio IDE genel bakış](../ide/visual-studio-ide.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hızlı Başlangıç: IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)
+[Hızlı Başlangıç: IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)  
+[Hızlı Başlangıç: düzenleyicide kodlama](../ide/quickstart-editor.md)  
+[Hızlı Başlangıç: projeler ve çözümler](../ide/quickstart-projects-solutions.md)  

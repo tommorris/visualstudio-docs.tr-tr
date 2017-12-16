@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio IDE genel bakış | Microsoft Docs"
 ms.custom: 
-ms.date: 10/03/2017
+ms.date: 11/09/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -9,11 +9,11 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c20e36f91ecd7f5ef03785d42d33010796d105c0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: 811edfd9afaae8bc5c17af3c249ed10c25473701
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE genel bakış
 
@@ -35,19 +35,41 @@ Azure uygulama hizmetleri oluşturarak mobil uygulamalarınız için bulut güc�
 
 ### <a name="create-cloud-apps-for-azure"></a>Azure için bulut uygulamaları oluşturma
 
-Visual Studio Paketi kolayca Microsoft Azure tarafından desteklenen bulut özellikli uygulamalar oluşturmanıza olanak sağlayan araçlar sunar. Yapılandırın, yapı, hata ayıklama, paket ve uygulamaları ve Hizmetleri IDE doğrudan Microsoft Azure üzerinde dağıtın. Bağlantılı Hizmetler kullanarak, uygulamaları için Azure services yararlanın. .NET için Azure Araçları almak için seçin **Azure geliştirme** Visual Studio yüklediğinizde iş yükü. Daha fazla bilgi için bkz: [Azure için Visual Studio Araçları](https://www.visualstudio.com/vs/azure-tools/).
+Visual Studio Paketi kolayca Microsoft Azure tarafından desteklenen bulut özellikli uygulamalar oluşturmanıza olanak sağlayan araçlar sunar. Yapılandırın, yapı, hata ayıklama, paket ve uygulamaları ve Hizmetleri IDE doğrudan Microsoft Azure üzerinde dağıtın. .NET için Azure Araçları almak için seçin **Azure geliştirme** Visual Studio yüklediğinizde iş yükü. Daha fazla bilgi için bkz: [Azure için Visual Studio Araçları](https://www.visualstudio.com/vs/azure-tools/).
+
+Bağlantılı Hizmetler gibi kullanarak, uygulamaları için Azure services yararlanabilirsiniz:
+
+- [Azure mobil hizmetler](http://azure.microsoft.com/documentation/services/mobile-services/)
+
+- [Azure depolama](http://azure.microsoft.com/documentation/services/storage/)
+
+[HockeyApp](https://www.visualstudio.com/hockey-app/) beta sürümlerini dağıtmak, Canlı çökme raporlarını toplar ve gerçek kullanıcılardan geri bildirim alma yardımcı olur. Ayrıca, Office 365 REST API'leri bulutta depolanan veriler bağlanmak için kendi uygulamanızı içine tümleştirebilirsiniz. Daha fazla bilgi için bkz: [bu GitHub örnekleri](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
+
+[Application Insights](https://marketplace.visualstudio.com/items?itemName=VisualStudioOnlineApplicationInsights.application-insights) algılamak ve uygulamalarınızı Kalite sorunlarını tanılamak ve web hizmetlerini yardımcı olur. Application Insights Ayrıca, kullanıcı deneyimini iyileştirmek için kullanıcılarınızın gerçekte uygulamanızla ne anlamanıza yardımcı olur.
 
 ### <a name="create-apps-for-the-web"></a>Web uygulamaları oluşturma
 
-Bizim modern world web sürücüler ve Visual Studio, uygulamalar için yazmanıza yardımcı olabilir. ASP.NET, Node.js, Python, JavaScript ve TypeScript kullanarak web uygulamaları oluşturabilirsiniz. Visual Studio web çerçeveleri Angular, jQuery, hızlı ve daha fazlası gibi bilir. ASP.NET Core ve .NET Core Windows, Mac ve Linux işletim sistemleri üzerinde çalıştırın. Daha fazla bilgi için bkz: [Modern Web Tooling](https://www.visualstudio.com/vs/modern-web-tooling/).
+Bizim modern world web sürücüler ve Visual Studio, uygulamalar için yazmanıza yardımcı olabilir. ASP.NET, Node.js, Python, JavaScript ve TypeScript kullanarak web uygulamaları oluşturabilirsiniz. Visual Studio web çerçeveleri Angular, jQuery, hızlı ve daha fazlası gibi bilir. ASP.NET Core ve .NET Core Windows, Mac ve Linux işletim sistemleri üzerinde çalıştırın. [ASP.NET Core](http://www.asp.net/core/overview) MVC, Webapı ve SignalR için önemli bir güncelleştirme ve Windows, Mac ve Linux üzerinde çalıştırır.  ASP.NET Core sıfırdan yukarı .NET yalın ve birleştirilebilir sizinle modern bulut tabanlı web uygulamaları ve hizmetleri oluşturmak için yığın sağlamak için tasarlanmıştır.
 
-### <a name="write-code-in-a-world-class-editing-environment"></a>Ortam düzenleme world sınıfında kod yazma
+Daha fazla bilgi için bkz: [Modern Web Tooling](https://www.visualstudio.com/vs/modern-web-tooling/).
 
-Visual Studio kod hızlı yazmanıza yardımcı olur ve söz dizimi renklendirme gibi özellikleri deyim tamamlama, IntelliSense (açıklamaları seçili kod öğesi açılır), kolayca kod anahat oluşturma, hata ayıklama ve çok daha fazlasını için kesme noktalarını ayarlama.
+### <a name="build-cross-platform-apps-and-games"></a>Platformlar arası uygulamaları ve oyunları derleme
 
-![JavaScript kod örneği](../ide/media/vside_tour_javascript_example.gif)
+Visual Studio, Android, iOS, Linux, Windows ve diğer aygıtlar için uygulama ve oyun oluşturmak için kullanabilirsiniz. Yerinde hakkında daha fazla bilgi [platformlar arası mobil geliştirme](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Evrensel Windows uygulamaları birden çok platform genelinde kodunuzu yararlanan yardımcı olur. Bkz: [Evrensel Windows uygulamaları](https://dev.windows.com/en-us/windows-apps) daha fazla bilgi için.
 
-Daha fazla bilgi için bkz: [kod ve Metin Düzenleyici'de kod yazma](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
+İhtiyacınız olan araçları, uygulama gereksinimleri ve kullanmak istediğiniz dil göre seçin:
+
+- [Visual Studio için Xamarin](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): tüm aygıtlar için C# ' ta temel ortak bir kod.
+
+- [Apache Cordova için Visual Studio Araçları](../cross-platform/visual-studio-tools-for-apache-cordova.md): HTML, CSS ve JavaScript veya Typescript için temel ortak bir kod.
+
+- [Unity için Visual Studio Araçları](../cross-platform/visual-studio-tools-for-unity.md): C# 2B/3B oyun geliştirme.
+
+- [Platformlar arası geliştirme için C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md): paylaşılan kodu kitaplıkları ve c++ uygulamaları.
+
+- [Android için Visual Studio öykünücüsü](../cross-platform/visual-studio-emulator-for-android.md): Android için Visual Studio öykünücüsü: hata ayıklama ve IDE olsun Android uygulamalarınızı test etme.
+
+[Visual Studio kullanarak oyun oluşturmak](https://www.visualstudio.com/vs/game-development/) DirectX, Unity, gerçekleşmemiş hesabı, Cocos ve daha fazlası gibi oyun geliştirme araçları ile.
 
 Visual Studio yapabilir Yardım pek çok şey daha yapın. Daha kapsamlı bir liste için bkz: [Visual Studio IDE](https://www.visualstudio.com/vs/).
 
@@ -211,7 +233,7 @@ Aşağıdaki resimde VSTS içinde barındırılan bir çözüm için Takım Gezg
 
 ![Visual Studio Takım Gezgini](../ide/media/vs2017_teamexplorer.png)
 
-Visual Studio Team Services ve Team Foundation Server ile ilgili belgeler için bkz: [Visual Studio Team Services](/vsts/index).
+Sürüm denetimine takımınızdaki devs denetlediyseniz kodu oluşturmak için derleme süreci otomatik hale getirebilirsiniz. Örneğin, bir veya daha fazla projeleri gecelik veya kod iade her zaman oluşturabilirsiniz. Bkz: [herhangi bir platformda sürekli tümleştirme](https://www.visualstudio.com/en-us/docs/build/overview) daha fazla bilgi için.
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Hizmetleri, veritabanları ve bulut tabanlı kaynaklara bağlanma
 
@@ -234,8 +256,13 @@ Görüntüleyebilir ve Visual Studio kullanarak içinde bulut tabanlı Azure kay
 ![SQL Server Nesne Gezgini](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="extend-visual-studio"></a>Visual Studio genişletme
+Visual Studio tam işlevsellik ihtiyacınız yoksa, ekleyebilirsiniz! İş akışı ve stil bağlı IDE'yi kişiselleştirme, henüz Visual Studio ile tümleşik harici araçlar için destek eklemek ve verimliliğinizi artırmak için varolan işlevlerini değiştirin. Visual Studio genişletilebilirlik Araçları (VS SDK) en son sürümünü bulmak için bkz: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-Visual Studio tam işlevsellik ihtiyacınız yoksa, ekleyebilirsiniz! İş akışı ve stil bağlı IDE'yi kişiselleştirme, henüz Visual Studio ile tümleşik harici araçlar için destek eklemek ve verimliliğinizi artırmak için varolan işlevlerini değiştirin. Visual Studio Araçları, denetimleri ve şablonları Microsoft, ortaklarımızın ve topluluk sağlar. Visual Studio genişletme hakkında daha fazla bilgi için bkz: [genişletmek Visual Studio IDE](https://www.visualstudio.com/vs/extend/).
+Kendi kod Çözümleyicileri ve kod oluşturucuları yazmak için .NET derleyici Platformu (Roslyn) kullanabilirsiniz. Konumundaki ihtiyaç duyduğunuz her şeyi Bul [Roslyn](https://github.com/dotnet/Roslyn).
+
+Bul [varolan uzantıları](https://marketplace.visualstudio.com/vs) Visual Studio geliştirme topluluğumuz yanı sıra Microsoft geliştiriciler tarafından oluşturulmuş.
+
+Visual Studio genişletme hakkında daha fazla bilgi için bkz: [genişletmek Visual Studio IDE](https://www.visualstudio.com/vs/extend/).
 
 ## <a name="learn-more-and-find-out-whats-new"></a>Daha fazla bilgi edinin ve yeni Bul
 

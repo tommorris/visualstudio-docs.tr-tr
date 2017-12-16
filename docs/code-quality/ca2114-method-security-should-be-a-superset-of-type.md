@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9784ae650a411ef4fe5086ae8bf756147fd2365
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ac633134b5b8037eb9e45131128b0ee0cf2887ab
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Yöntem güvenliği türün bir üst kümesi olmalıdır
 |||  
@@ -33,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Yeni Değişiklik|Yeni|  
   
 ## <a name="cause"></a>Sebep  
- Bildirim temelli güvenlik türüne sahip ve yöntemlerinden biri sahip aynı güvenlik eylemi bildirimsel güvenliği ve güvenlik eylem [bağlantı talepleri](/dotnet/framework/misc/link-demands) veya [devralma taleplerini](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)ve izinleri türü tarafından teslim yöntemi tarafından kullanıma izinler kümesini değildir.  
+ Bildirim temelli güvenlik türüne sahip ve yöntemlerinden biri sahip aynı güvenlik eylemi bildirimsel güvenliği ve güvenlik eylem [bağlantı talepleri](/dotnet/framework/misc/link-demands), ve türü tarafından kullanıma izinler izinler kümesini değildir yöntemi işaretlidir.  
   
 ## <a name="rule-description"></a>Kural Tanımı  
  Bir yöntemi, hem aynı eylemi için bir yöntem ve türü düzeyi bildirimsel güvenliği sahip olmamalıdır. İki denetimleri birleştirilmez; yalnızca yöntemi düzeyi talep uygulanır. Örneğin, bir tür izin talep `X`, ve yöntemlerinden birini talep izin `Y`, kod izni yok `X` yöntemi yürütülemedi.  
@@ -63,6 +63,5 @@ ms.lasthandoff: 10/31/2017
 **[(Yöntemi tarafından talep edilen) okuma izni yok] Kişisel bilgi erişilemedi: isteği başarısız oldu.**   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Güvenli kodlama yönergeleri](/dotnet/standard/security/secure-coding-guidelines)   
- [Devralma taleplerini](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)   
  [Bağlantı talepleri](/dotnet/framework/misc/link-demands)   
- [Veri ve modelleme](/dotnet/framework/data/index)
+ [Veri ve Modelleme](/dotnet/framework/data/index)

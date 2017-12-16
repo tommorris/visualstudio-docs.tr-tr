@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 22b5ea7236d6dc418618d7fc006442fa6b9474d9
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: ac81e9d7f00734125f2cc81f0a314a96e56eae7c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Birim testi için Python kodu ayarlama
 
@@ -24,7 +24,7 @@ Birim testleri, bir uygulama, genellikle yalıtılmış işlevleri, sınıflar v
 
 Python birim testleri bir program tasarlarken senaryoları doğrulamak için yaygın olarak kullanır. Visual Studio'da Python desteği, keşfetme, yürütme ve birim testleri geliştirme sürecinizi bağlamında testleri ayrı olarak çalıştırmaya gerek kalmadan hata ayıklama içerir.
 
-Bu konuda birim Visual Studio'da Python ile yetenekleri testi kısa bir özeti verilmektedir. Birim testi genel hakkında daha fazla bilgi için bkz: [Birim Test kodunuzu](../test/unit-test-your-code.md). Ayrıca bkz. video [sınama Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Microsoft Virtual Academy, 2m31s).
+Bu konuda birim Visual Studio'da Python ile yetenekleri testi kısa bir özeti verilmektedir. Birim testi genel hakkında daha fazla bilgi için bkz: [birim testi kodunuzu](../test/unit-test-your-code.md). Ayrıca bkz. video [sınama Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Microsoft Virtual Academy, 2m31s).
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567]
 

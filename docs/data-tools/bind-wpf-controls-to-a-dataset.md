@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d7609215f7145ae05d978ba10d556782c886ee3b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 96d5407672ff94749731f9d00088b27e8c4da036
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Bir veri kümesine WPF denetimleri bağlama
 Bu kılavuzda, veri bağlama denetimleri içeren bir WPF uygulaması oluşturacaksınız. Denetimler için bir veri kümesinde kapsüllenmiş ürün kayıtları bağlıdır. Ayrıca ürünleri üzerinden göz atın ve ürün kayıtları için değişiklikleri kaydetmek için düğmeler ekler.  
@@ -50,8 +50,6 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 Aşağıdaki kavramlar önceki bilgi de yararlı, ancak izlenecek yolu tamamlamak için gerekli değildir:  
   
 -   Veri kümeleri ve TableAdapters öğelerini. Daha fazla bilgi için bkz: [Visual Studio'da veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md) ve [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
-  
--   WPF tasarımcı ile birlikte çalışma. Daha fazla bilgi için bkz: [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 -   WPF veri bağlama. Daha fazla bilgi için bkz: [veri bağlama genel bakış](/dotnet/framework/wpf/data/data-binding-overview).  
   
@@ -257,5 +255,4 @@ Kullanarak ürün kayıtları için değişiklikleri kaydetmek kullanıcıların
 ## <a name="see-also"></a>Ayrıca bkz.
 [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
 [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)   
-[WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)   
-[Veri bağlama genel bakış](/dotnet/framework/wpf/data/data-binding-overview)
+[Veri Bağlamaya Genel Bakış](/dotnet/framework/wpf/data/data-binding-overview)

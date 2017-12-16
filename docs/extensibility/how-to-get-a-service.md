@@ -13,11 +13,11 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ccb0abcf70f66812ab1ffe91958119f08c97966
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: dc427dbca201b472feca89201284ab009abd9d34
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-get-a-service"></a>Nasıl yapılır: bir hizmeti Al
 Genellikle, farklı özelliklere erişmek için Visual Studio Hizmetleri edinmeniz gerekir. Genel olarak, Visual Studio hizmet kullanabileceğiniz bir veya daha fazla arabirimleri sağlar. Çoğu Hizmetleri VSPackage elde edebilirsiniz.  
@@ -28,9 +28,9 @@ Genellikle, farklı özelliklere erişmek için Visual Studio Hizmetleri edinmen
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>Başlatılmış bir VSPackage bir hizmet alma  
   
-1.  Visual Studio uzantılarının uzantısı varlıklar yer alacağı VSIX dağıtım projesi ile başlar. Oluşturma bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adlı VSIX proje `GetServiceExtension`. VSIX proje şablonu bulabilirsiniz **yeni proje** altında iletişim **Visual C# / genişletilebilirlik**.  
+1.  Visual Studio uzantılarının uzantısı varlıklar yer alacağı VSIX dağıtım projesi ile başlar. Oluşturma bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adlı VSIX proje `GetServiceExtension`. VSIX proje şablonu bulabilirsiniz **yeni proje** altında iletişim **Visual C# > genişletilebilirlik**.  
   
-2.  Şimdi adlı bir özel komut öğesi şablonu Ekle **GetServiceCommand**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C# / genişletilebilirlik** seçip **özel komut**. İçinde **adı** alan penceresinin alt kısmında, komut dosyası adı Değiştir **GetServiceCommand.cs**. Özel bir komut oluşturma hakkında daha fazla bilgi için [uzantı menü komutu ile oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2.  Şimdi adlı bir özel komut öğesi şablonu Ekle **GetServiceCommand**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C# > genişletilebilirlik** seçip **özel komut**. İçinde **adı** alan penceresinin alt kısmında, komut dosyası adı Değiştir **GetServiceCommand.cs**. Özel bir komut oluşturma hakkında daha fazla bilgi için [uzantı menü komutu ile oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 3.  GetServiceCommand.cs, MenuItemCommand yönteminin gövdesi kaldırın ve aşağıdaki kodu ekleyin:  
   
@@ -87,4 +87,4 @@ if (sp != null)
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: bir hizmet sağlar](../extensibility/how-to-provide-a-service.md)   
  [Kullanarak ve hizmetleri sağlar](../extensibility/using-and-providing-services.md)   
- [Hizmet temelleri](../extensibility/internals/service-essentials.md)
+ [Hizmet Temel Bileşenleri](../extensibility/internals/service-essentials.md)

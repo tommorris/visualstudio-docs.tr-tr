@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 4cd3231856dafd869290082337528523544b1e19
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: ea1d53ef5fb99c161793670049fd5f473da1aa51
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bir WCF veri hizmetine WPF denetimleri bağlama
 Bu kılavuzda, veri bağlama denetimleri içeren bir WPF uygulaması oluşturacaksınız. Denetimleri içinde kapsüllenmiş Müşteri kayıtlarını bağlı bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Aynı zamanda müşterilerin kayıtları görüntülemek ve güncelleştirmek için kullanabileceğiniz düğmeleri ekler.  
@@ -56,8 +56,6 @@ Aşağıdaki kavramlar önceki bilgi de yararlı, ancak izlenecek yolu tamamlama
 -   Veri modelleri [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].  
   
 -   Varlık veri modeli ve ADO.NET Entity Framework. Daha fazla bilgi için bkz: [Entity Framework genel bakış](/dotnet/framework/data/adonet/ef/overview).  
-  
--   WPF tasarımcı ile birlikte çalışma. Daha fazla bilgi için bkz: [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 -   WPF veri bağlama. Daha fazla bilgi için bkz: [veri bağlama genel bakış](/dotnet/framework/wpf/data/data-binding-overview).  
   

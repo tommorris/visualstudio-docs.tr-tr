@@ -1,0 +1,116 @@
+---
+title: "Visual C++ kodu (Sınıf Tasarımcısı) ile çalışma | Microsoft Docs"
+ms.custom: 
+ms.date: 06/21/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.classdesigner.cpplimitation
+helpviewer_keywords:
+- Visual C++, Class Designer
+- Class Designer, Visual C++ support
+- Class Designer, limitations
+- Class Designer, tasks in Visual C++
+- Visual C++, class diagrams
+- C++, class diagrams
+- C++, Class Designer
+ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: baa2d81dc594ac89750bc50db171ccb4fa576ea9
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 12/15/2017
+---
+# <a name="working-with-visual-c-code-class-designer"></a>Visual C++ Kodu ile Çalışma (Sınıf Tasarımcısı)
+Sınıf Tasarımcısı görüntüler olarak adlandırılan bir görsel tasarım yüzeyi bir *sınıf diyagramı* görsel bir projenizdeki kod öğeleri sağlar. Sınıf diyagramları tasarlama ve sınıfları ve diğer türleri projesinde görselleştirmek için kullanabilirsiniz.  
+
+Sınıf Tasarımcısı aşağıdaki C++ kod öğeleri destekler:  
+
+-   (Birden çok devralma ilişkisine sahip olabilir ancak bu bir yönetilen sınıf şekli benzer) sınıfı  
+
+-   Anonim sınıf (anonim bir tür için üretilen ad sınıfı görünümün görüntüler)  
+
+-   Şablon sınıfı  
+
+-   Yapı  
+
+-   Enum  
+
+-   Makro (makrosu sonrası işlenen görünümünü görüntüler)  
+
+-   TypeDef  
+
+> [!NOTE]
+>  Bu model bir projede oluşturabilirsiniz UML sınıf diyagramı ile aynı değildir. Daha fazla bilgi için bkz: [UML sınıf diyagramları: başvuru](../../modeling/uml-class-diagrams-reference.md).  
+
+## <a name="troubleshooting-type-resolution-and-display-issues"></a>Türü çözümlemesi ve görüntü sorunlarını giderme  
+
+### <a name="location-of-source-files"></a>Kaynak dosyalarının konumu  
+Sınıf Tasarımcısı kaynak dosyalarının konumunu izlemenize değil. Proje yapısı değiştirmek veya kaynak dosyalarını projenizde taşırsanız, bu nedenle, Sınıf Tasarımcısı türü (özellikle bir typedef, temel sınıfların veya ilişki türleri kaynak türü) kaybetmesine. Hata gibi alabilirsiniz **Sınıf Tasarımcısı bu tür görüntüleyemiyor**. Bunu yaparsanız, yeniden yeniden görüntülemek için sınıf diyagramı konumlandırılan veya değiştirilen kaynak kodunu sürükleyin.  
+
+### <a name="update-and-performance-issues"></a>Güncelleştirme ve performans konuları  
+Visual C++ projeleri için bu sınıf diyagramında görüntülenecek kaynak dosyasında değişiklik 30-60 saniye sürebilir. Bu gecikme hata vermesini Sınıf Tasarımcısı neden olabilir **hiçbir türleri seçim bulunamadı**. Bunun gibi bir hata alırsanız, tıklatın **iptal** hata iletisi ve code öğesi sınıfı görünümünde görünmesini bekleyin. Bunu yaptıktan sonra Sınıf Tasarımcısı türü görüntüleyemeyecek olmalıdır.  
+
+Sınıf diyagramında kodunda yaptığınız değişikliklerle güncelleştirmez, diyagram kapatıp yeniden açmanız gerekebilir.  
+
+### <a name="type-resolution-issues"></a>Türü çözümlemesi sorunları  
+Sınıf Tasarımcısı türleri aşağıdaki nedenlerle çözümleyebilmesi olmayabilir:  
+  
+-   Bir proje veya sınıf diyagramı içeren projeden başvurulmuyor derleme türüdür. Bu hatayı düzeltmek için proje veya türünü içeren bütünleştirilmiş bir başvuru ekleyin. Daha fazla bilgi için bkz: [bir projedeki başvuruları yönetme](../managing-references-in-a-project.md).  
+  
+-   Sınıf Tasarımcısı konumunu belirleyemediği için doğru kapsamda türünde değil. Kodu eksik olmadığından emin olun bir `using`, `imports`, veya `#include` deyimi. Ayrıca, türü (veya ilgili bir türü) başlangıçta bulunduğu olduğu ad alanı dışında taşınmaz olduğundan emin olun.  
+
+-   Türü yok (veya çıkışı açıklamalı). Bu hatayı düzeltmek için olmayan kılınmıştır veya türü silinmiş emin olun.  
+
+-   #İmport yönergesi tarafından başvurulan bir kitaplık türü bulunur. Olası bir geçici çözüm el ile oluşturulan kodun (.tlh dosyası) için eklemektir bir # üstbilgi dosyasına include yönergesi.  
+
+Hata türü çözümleme sorunu için bkz: büyük olasılıkla **kodu sınıf diyagramı'de bir veya daha fazla şekilleri bulunamadı '\<öğesi >'**. Bu hata iletisini kodunuzu hatadır gelmeyebilir. Yalnızca bu sınıf Tasarımcısı kodunuzu görüntüleyemedi belirtir. Aşağıdaki ölçütler deneyin.  
+
+-   Türü olduğundan emin olun. Bilgisayarınızda değil istemeden kılınmıştır veya kaynak kodu silinmiş olması emin olun.  
+
+-   Sınıf Tasarımcısı girdiğiniz türünü desteklediğinden emin olun. Bkz: [C++ kod öğeleri için sınırlamalar](#limitations).  
+
+-   Türü çözmeye çalışın. Bir proje veya sınıf diyagramı içeren projeden başvurulmuyor derleme türü olabilir. Bu hatayı düzeltmek için proje veya türünü içeren bütünleştirilmiş bir başvuru ekleyin. Daha fazla bilgi için bkz: [bir projedeki başvuruları yönetme](../managing-references-in-a-project.md).  
+
+-   Sınıf Tasarımcısı bulabilmesi türü doğru kapsamında olduğundan emin olun. Kodu eksik olmadığından emin olun bir `using`, `imports`, veya `#include` deyimi. Ayrıca, türü (veya ilgili bir türü) başlangıçta bulunduğu olduğu ad alanı dışında taşınmaz olduğundan emin olun.  
+
+### <a name="troubleshooting-other-error-messages"></a>Diğer hata iletileri sorunlarını giderme  
+Microsoft Developer Network (MSDN) ortak forumlarında sorun giderme hataları ve Uyarıları Yardım bulabilirsiniz. Bkz: [Visual Studio Sınıf Tasarımcısı Forumu](http://go.microsoft.com/fwlink/?linkid=160754).  
+
+##  <a name="limitations"></a>C++ kod öğeleri için sınırlamalar  
+
+-   Ne zaman bir Visual C++ projesi yüklenir, salt okunur şekilde Sınıf Tasarımcısı işlevleri. Sınıf diyagramında değiştirebilirsiniz, ancak kaynak koduna sınıfı diyagramdan değişiklikler kaydedilemiyor.  
+
+-   Sınıf Tasarımcısı yalnızca yerel C++ semantiği destekler. Yönetilen koda derlenmiş Visual C++ projeleri için Sınıf Tasarımcısı yalnızca yerel türler kod öğeleri görselleştirin. Bu nedenle, bir sınıf diyagramı projeye ekleyebilirsiniz, ancak Sınıf Tasarımcısı izin vermez, öğeleri görselleştirmek `IsManaged` özelliği ayarlanmış `true` (diğer bir deyişle, değer türleri ve başvuru türleri).  
+
+-   Visual C++ projeleri için Sınıf Tasarımcısı yalnızca tanım türü okur. Örneğin, bir başlık (.h) dosyasında tür tanımlama ve bir uygulama (.cpp) dosyasına üyelerini tanımlamak varsayın. "Görünümü sınıf diyagramında" uygulama (.cpp) dosya çağırma Sınıf Tasarımcısı hiçbir şey görüntüler. "Görünümü sınıf diyagramında" kullanan .cpp dosyayı çağırırsanız, başka bir örnek olarak, bir `#include` diğer bildirimini dosyaları ancak herhangi bir gerçek sınıf tanımları içermiyor, Sınıf Tasarımcısı yeniden görüntüler hiçbir şey.  
+
+-   Yerel C++ koda derlenen sürece COM arabirimleri tanımlayın ve tür kitaplıkları, IDL (.idl) dosyaları diyagramlarda görüntülemez.  
+
+-   Sınıf Tasarımcısı genel işlevler ve değişkenler desteklemez.  
+
+-   Sınıf Tasarımcısı birleşimler desteklemez. Bu, ayrılan bellek yalnızca tutar UNION'ın en büyük veri üyesi için gerekli olduğu sınıfın özel bir türüdür.  
+
+-   Sınıf Tasarımcısı temel veri türleri gibi görüntülemez `int` ve `char`.  
+
+-   Sınıf Tasarımcısı projesi bu tür doğru başvuruları yoksa dışında geçerli proje tanımlanan türleri görüntülemez.  
+
+-   Sınıf Tasarımcısı iç içe geçmiş türler ancak iç içe geçmiş tür ve diğer türleri arasında ilişkileri görüntüleyebilirsiniz.  
+
+-   Sınıf Tasarımcısı void veya türü void türetilen türler görüntülenemiyor.  
+
+## <a name="see-also"></a>Ayrıca bkz.
+[Tasarlama ve sınıfları ve türleri görüntüleme](designing-and-viewing-classes-and-types.md)   
+[Sınıf diyagramları ile çalışma](working-with-class-diagrams.md)   
+[Sınıfları ve türleri tasarlama](designing-classes-and-types.md)   
+[Sınıf Tasarımcısı hataları hakkında ek bilgi](additional-information-about-errors.md)   
+[Sınıf tasarımcısında Visual C++ sınıfları](visual-cpp-classes.md)   
+[Sınıf tasarımcısında Visual C++ yapıları](visual-cpp-structures.md)   
+[Sınıf tasarımcısında Visual C++ numaralandırmaları](visual-cpp-enumerations.md)   
+[Sınıf Tasarımcısında Visual C++ Typedefs](visual-cpp-typedefs.md)

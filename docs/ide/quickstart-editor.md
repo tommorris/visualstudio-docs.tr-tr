@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: b74acd0b7711f7b11965bdde6fd2e152ee340c85
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.openlocfilehash: 3994c7087cb26e31c5745c99a8b7678aa7e24f23
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-coding-in-the-editor"></a>Hızlı Başlangıç: düzenleyicide kodlama
 
@@ -156,6 +156,7 @@ Bu Hızlı Başlangıç için Visual Studio düzenleyicisinde tamamladınız! So
 
 [Hızlı Başlangıç: ilk Visual Studio IDE bakma](../ide/quickstart-ide-orientation.md)  
 [Hızlı Başlangıç: Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme](../ide/quickstart-personalize-the-ide.md)  
+[Hızlı Başlangıç: projeler ve çözümler](../ide/quickstart-projects-solutions.md)  
 [Kod parçacıkları](../ide/code-snippets.md)  
 [Anahat Oluşturma](../ide/outlining.md)  
 [Tanıma ve Özet Tanıma Gitme](../ide/go-to-and-peek-definition.md)  

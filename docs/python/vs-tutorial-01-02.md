@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d417ac531331b62b0f711fe155a94f1ac0954310
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 7be06db583529aae747b95a7c04ea71f4f204218
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-2-writing-and-running-code"></a>2. adım: Yazma ve kodu çalıştırma
 
@@ -41,14 +41,14 @@ ms.lasthandoff: 12/01/2017
     ```
 
 1. Deyim ayıran sözdizimi coloration fark `print` bağımsız gelen `"Hello Visual Studio"`. Ayrıca, geçici olarak son silme `"` dize ve bildirim sözdizimi hataları içeren Visual Studio kodu için kırmızı alt çizgi, nasıl gösterir. Yerine `"` kodu düzeltmek için.
- 
+
     ![IntelliSense söz dizimi renklendirme ve hata vurgulama](media/vs-getting-started-python-06-IntelliSense3b.png)
- 
+
     > [!Tip]
     > Birinin geliştirme ortamı çok kişisel sağlasa da olduğundan, Visual Studio, Visual Studio'nun görünümü ve davranışı üzerinde tam denetim sağlar. Seçin **Araçlar > Seçenekleri** menü komut ve ayarları altında keşfetme **ortam** ve **metin düzenleyici** sekmeleri. Varsayılan olarak yalnızca sınırlı sayıda seçenek görürsünüz; her programlama dili için her seçeneği görmek için seçin **tüm ayarları göster** iletişim kutusunun altındaki. 
 
 1. Yazılan bu noktada Ctrl + F5 tuşuna basarak veya seçerek kodu çalıştırma **hata ayıklama > hata ayıklama olmadan Başlat** menü öğesi. Visual Studio, kodunuzda hataları hala olup olmadığını sizi uyarır.
- 
+
 1. Çalıştırdığınızda program sonuçlarını görüntüleyen bir konsol penceresi görünür bir Python yorumlayıcısı ile Çalıştır sanki `PythonApplication1.py` komut satırından. Pencereyi kapatmak ve Visual Studio Düzenleyicisi'ne dönmek için bir tuşa basın.
 
     ![Program ilk çalışması için çıktı](media/vs-getting-started-python-07-output.png)
@@ -70,32 +70,30 @@ ms.lasthandoff: 12/01/2017
 1. Son içeri aktararak `sin`, `cos`, ve `radians` otomatik-tamamlamalar kullanılabilir her biri için haberiniz bile üyeleri. İşiniz bittiğinde, kodunuzu aşağıdaki gibi görünmelidir:
 
     ```python
-    import sys  
-    from math import sin, cos, radians          
+    import sys
+    from math import sin, cos, radians
     ```
 
     > [!Tip]
-    > Sözcükler, harf sözcükleri başındaki bölümlerini eşleşen yazın ve hatta karakter atlandı tamamlamalar alt dizeler ile çalışır. Bkz: [düzenleme kod - tamamlamalar](code-editing.md#completions) Ayrıntılar için.
+    > Sözcükler, harf sözcükleri başındaki bölümlerini eşleşen yazın ve hatta karakter atlandı tamamlamalar alt dizeler ile çalışır. Bkz: [kod - tamamlamalar düzenleme](code-editing.md#completions) Ayrıntılar için.
 
 1. 360 derece kosinüsünü değerlerini yazdırmak için biraz daha fazla kodu ekleyin:
 
     ```python 
-    for i in range(360):        
+    for i in range(360):
         print(cos(radians(i)))
     ```
 
 1. Ctrl + F5'e programı yeniden çalıştırın veya **hata ayıklama > hata ayıklama olmadan Başlat**. İşiniz bittiğinde çıktı penceresini kapatın.
 
-
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 > [!div class="nextstepaction"]
 > [Etkileşimli REPL penceresini kullanma](vs-tutorial-01-03.md)
-
 
 ## <a name="going-deeper"></a>Daha derin gitme
 
 - [Kod düzenleme](code-editing.md)
 - [Kod biçimlendirme](code-formatting.md)
 - [Kodu yeniden düzenleme](code-refactoring.md)
-- [PyLint kullanma](code-pylint.md)
+- [PyLint Kullanma](code-pylint.md)

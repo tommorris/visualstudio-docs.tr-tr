@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e99505c0d3c4ee59f6e07a5b38d5d95533ab879f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b3081537b1704fd461a458798d646bf7eeb65f0a
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Özel proje ve öğe şablonları oluşturma
 Visual Studio SDK'sı özel Proje şablonu oluşturup özel öğesi Şablonu proje şablonları içerir. Bu şablonlar bazı ortak parametresi değiştirmeleri içerir ve ZIP dosyaları olarak oluşturun. Değil bunlar otomatik olarak dağıtılır ve deneysel örneğinde kullanılabilir değildir. Zip kopyalamalısınız konuma dosyası  
@@ -79,7 +79,7 @@ Visual Studio SDK'sı özel Proje şablonu oluşturup özel öğesi Şablonu pro
   
 4.  Çözümü derlemek ve F5 tuşuna basın. Deneysel örneği görüntülenir.  
   
-5.  Bir proje şablonu projesi için listelenen, proje şablonu görmelisiniz **yeni proje** iletişim (**dosya / yeni / Project**), Visual C# veya Visual Basic düğümü. Bir öğe şablonu projesi için Yeni Öğe Ekle iletişim kutusunda listelenen öğesi şablonunuzu görmeniz gerekir (içinde **Çözüm Gezgini**, proje düğümünü seçin ve tıklatın **Ekle / yeni öğe**).  
+5.  Bir proje şablonu projesi için listelenen, proje şablonu görmelisiniz **yeni proje** iletişim (**Dosya > Yeni > Proje**), Visual C# veya Visual Basic düğümü. Bir öğe şablonu projesi için Yeni Öğe Ekle iletişim kutusunda listelenen öğesi şablonunuzu görmeniz gerekir (içinde **Çözüm Gezgini**, proje düğümünü seçin ve tıklatın **Ekle / yeni öğe**).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio şablon başvurusu](../ide/visual-studio-template-reference.md)
+ [Visual Studio Şablon Başvurusu](../ide/visual-studio-template-reference.md)

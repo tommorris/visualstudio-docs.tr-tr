@@ -12,13 +12,13 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8e08bcf4cdae07cbaf621825e85fe5a8b699cfa1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 413e5323107ce933266050f4df9a244bf5531d61
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="remotely-debugging-python-code-on-azure"></a>Uzaktan hata ayıklama Azure üzerinde Python kodu
+# <a name="remotely-debugging-python-code-on-azure"></a>Azure üzerinde uzaktan hata ayıklama Python kodu
 
 [Visual Studio'da Python desteği](installation.md) uzaktan hata ayıklama Azure uygulama hizmeti üzerinde çalışan Python kodu özelliğini içerir. Visual Studio hata ayıklayıcısı Protokolü HTTP üzerinden kullanıma sunan bir proxy sağlayan şekilde basit uzaktan hata ayıklama aksine, bu senaryonun hedef bilgisayarda TCP üzerinden doğrudan erişilebilir değil. Web şablonu kullanılarak otomatik olarak oluşturulan projeleri bu proxy oluşturulan yapılandırma `web.debug.config` dosya. Uzaktan hata ayıklama de etkinleştirilir açıklandığı gibi bir hata ayıklama yapılandırması proje yayımladığınızda [Azure App Service'te yayımlama](template-web.md#publishing-to-azure-app-service).
 

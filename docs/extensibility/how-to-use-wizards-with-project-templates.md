@@ -18,11 +18,11 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ecbf4b95689d760a58e00a65671c13c4c0807b51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 81cacbcc3f7573b9386fb2816650d8c96508b613
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Nasıl Yapılır: Sihirbazları Proje Şablonlarıyla Kullanma
 Visual Studio sağlar <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> , uygulandığında, arabirim, bir kullanıcı bir şablondan bir proje oluşturduğunda özel kod çalıştırmanızı sağlar.  
@@ -34,12 +34,12 @@ Visual Studio sağlar <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> , uyg
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>VSIX proje ile bir proje şablonu projesi oluşturma  
  Özel bir şablonu proje şablonu proje Visual Studio SDK'sı parçası olan. olarak oluşturmaya başlayın. Bu yordamda bir C# proje şablonu proje kullanacağız, ancak aynı zamanda bir Visual Basic proje şablonu proje yok. Ardından VSIX proje proje şablonu proje içeren çözüme ekleyin.  
   
-1.  C# proje şablonu proje oluşturma (Visual Studio'da **dosya / yeni / Project / Visual C# / genişletilebilirlik / C# proje şablonu**). Bu ad **MyProjectTemplate**.  
+1.  C# proje şablonu proje oluşturma (Visual Studio'da **Dosya > Yeni > Proje > Visual C# > genişletilebilirlik > C# proje şablonu**). Bu ad **MyProjectTemplate**.  
   
     > [!NOTE]
     >  Visual Studio SDK'yı yüklemeniz istenebilir. Daha fazla bilgi için bkz: [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Yeni bir VSIX proje ekleyin (**dosya / yeni / Project / Visual C# / genişletilebilirlik / VSIX proje**) proje şablonu proje aynı çözümde (içinde **Çözüm Gezgini**, çözüm düğümü seçin sağ tıklayın ve ardından seçin **Ekle / yeni proje**). Bu ad **MyProjectWizard.**  
+2.  Yeni bir VSIX proje ekleyin (**Dosya > Yeni > Proje > Visual C# > genişletilebilirlik > VSIX proje**) proje şablonu proje aynı çözümde (içinde **Çözüm Gezgini**seçin çözüm düğümünü sağ tıklatın ve seçin **Ekle > Yeni proje**). Bu ad **MyProjectWizard.**  
   
 3.  VSIX projesini başlangıç projesi olarak ayarlayın. İçinde **Çözüm Gezgini**, VSIX proje düğümüne sağ tıklatın ve seçin seçin **başlangıç projesi olarak ayarla**.  
   
@@ -51,14 +51,14 @@ Visual Studio sağlar <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> , uyg
   
 7.  Çözümü derlemek ve hata ayıklamayı Başlat. Visual Studio ikinci bir örneğini görüntülenir. (Bu işlem birkaç dakika sürebilir.)  
   
-8.  Yeni şablonunuz ile yeni bir proje oluşturmak Visual Studio in ikinci örneğini deneyin. (**Dosya / yeni / Project / Visual C# / MyProject şablonu**). Yeni Proje adlı bir sınıf ile görünmelidir **Class1**. Özel proje şablonu oluşturdunuz! Artık hata ayıklamayı durdurun.  
+8.  Yeni şablonunuz ile yeni bir proje oluşturmak Visual Studio in ikinci örneğini deneyin. (**Dosya > Yeni > Proje > Visual C# > MyProject şablonu**). Yeni Proje adlı bir sınıf ile görünmelidir **Class1**. Özel proje şablonu oluşturdunuz! Artık hata ayıklamayı durdurun.  
   
 ## <a name="creating-a-custom-template-wizard"></a>Bir özel şablon Sihirbazı oluşturma  
  Bu konu, proje oluşturmadan önce bir Windows formu açılır özel sihirbaz oluşturma gösterilmektedir. Form kullanıcıların kaynak koduna proje oluşturma sırasında eklenen özel parametre değeri eklemesine olanak sağlar.  
   
 1.  Bir derlemeyi oluşturmak izin vermek için VSIX projesi ayarlayın.  
   
-2.  İçinde **Çözüm Gezgini**, VSIX proje düğümünü seçin. Çözüm Gezgini görmelisiniz **özellikleri** penceresi. Bunu yapmazsanız, seçin **görünüm / Özellikler penceresini**, veya basın **F4**. Özellikler penceresinde aşağıdaki alanları seçin `true`:  
+2.  İçinde **Çözüm Gezgini**, VSIX proje düğümünü seçin. Çözüm Gezgini görmelisiniz **özellikleri** penceresi. Bunu yapmazsanız, seçin **Görünüm > Özellikler penceresini**, veya basın **F4**. Özellikler penceresinde aşağıdaki alanları seçin `true`:  
   
     -   **IncludeAssemblyInVSIXContainer**  
   
@@ -295,7 +295,7 @@ namespace $safeprojectname$
   
 1.  Çözümü yeniden derleyin ve hata ayıklamayı Başlat. Visual Studio ikinci bir örneğini görüntülenmesi gerekir.  
   
-2.  Yeni bir MyProjectTemplate projesi oluşturun. (**Dosya / yeni / Project / Visual C# / MyProjectTemplate**)  
+2.  Yeni bir MyProjectTemplate projesi oluşturun. (**Dosya > Yeni > Proje > Visual C# > MyProjectTemplate**)  
   
 3.  İçinde **yeni proje** iletişim kutusu, şablonunuzu bulun, bir ad yazın ve tıklatın **Tamam**.  
   
@@ -312,4 +312,4 @@ namespace $safeprojectname$
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
  [Şablonlarını özelleştirme](../ide/customizing-project-and-item-templates.md)   
- [WizardExtension öğesi (Visual Studio şablonları)](../extensibility/wizardextension-element-visual-studio-templates.md)
+ [WizardExtension Öğesi (Visual Studio Şablonları)](../extensibility/wizardextension-element-visual-studio-templates.md)

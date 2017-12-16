@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8d17c0a3a1d376f7b44e5fb78f362fc49458462e
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: f424770e725e8d8d6ada9e656b77b5563237af99
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="debugging-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -44,7 +44,7 @@ Ayrıca aşağıdaki senaryoya özgü hata ayıklama konulara bakın:
 > [!Tip]
 > Visual Studio'da Python olmayan bir proje hata ayıklamayı destekler. Tek başına Python dosyası ile açık Düzenleyicisi'ni sağ tıklatın seçin **Başlat ile hata ayıklama**, ve Visual Studio komut dosyası genel varsayılan ortamı başlatır (bkz [Python ortamları](python-environments.md)) ve bağımsız değişkenler. Ancak daha sonra tam hata ayıklama desteğine sahip.
 >
-> Bağımsız değişkenler ve ortamı denetlemek için kolayca gerçekleştirilir kodu için bir proje oluşturun [ilk varolan Python kodu](python-projects.md#creating-a-project-from-existing-files) proje şablonu.
+> Bağımsız değişkenler ve ortamı denetlemek için kolayca gerçekleştirilir kodu için bir proje oluşturun [varolan Python kodu](python-projects.md#creating-a-project-from-existing-files) proje şablonu.
 
 <a name="debugging-with-a-project"></a>
 

@@ -16,11 +16,11 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eebc25b344e603cb66546db6d9179067d5995496
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5d42d7c7a78d6bde2560f6e5cf5538a93585870b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Yönetilen Kod için Kod Çözümlemesine Genel Bakış
 Yönetilen kod için Kod Analizi Yönetilen derlemeler analiz eder ve İleri Microsoft .NET Framework tasarım yönergeleri Tasarım Kuralları ve programlama ihlalleri gibi derlemeler hakkında bilgi raporlar.  
@@ -64,7 +64,7 @@ Yönetilen kod için Kod Analizi Yönetilen derlemeler analiz eder ve İleri Mic
  Bu iade ilkelerini belirterek gerçekleştirebilirsiniz. Daha fazla bilgi için bkz: [takım projesi iade ilkeleriyle kod kalitesini arttırma](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Team derleme tümleştirmesi  
- Çözümleme aracı yapılandırma işleminin bir parçası olarak çalıştırmak için tümleşik yapı sistem özelliklerini kullanabilirsiniz. Daha fazla bilgi için bkz: [uygulamayı derlediğinizde](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+ Çözümleme aracı yapılandırma işleminin bir parçası olarak çalıştırmak için tümleşik yapı sistem özelliklerini kullanabilirsiniz. Daha fazla bilgi için bkz: [derleme ve sürüm](/vsts/build-release/index).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod çözümleme kurallarını gruplandırmak için kural kullanarak ayarlar](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   

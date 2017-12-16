@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d98688251cb7ea2d1336da0b0afc47a2b86fc03d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: e1fe1b28af5d7af79057c6c0feff9adaf1aecca8
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="install-python-support-in-visual-studio"></a>Visual Studio'da Python desteğini yükleme
 
@@ -39,12 +39,12 @@ ms.lasthandoff: 12/01/2017
 
     ![Python etkileşimli penceresinden test etme](media/installation-interactive-test.png)
 
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 > [!div class="nextstepaction"]
 > [1. adım: Python projesi oluşturma](vs-tutorial-01-01.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Varolan bir Python yorumlayıcısı için bir ortam oluşturma](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 - [Python desteği Visual Studio 2015 ve daha önce yükleme](installation.md).

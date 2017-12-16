@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 44065522229a1661efc41e79905d9650f7949ac3
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: f60f930cd29d670ee5ac4b4274082ca00ca0012f
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="python-projects"></a>Python projeleri
 
@@ -144,6 +144,6 @@ IronPython başvurularında yapılan bir çağrı kadar kullanılabilir olmadı�
 
 ### <a name="webpi-projects"></a>Webpı projeleri
 
-Microsoft Azure bulut hizmeti, akış Webpı üzerinden ek bileşenleri yükleyebileceğiniz Webpı ürün girdileri dağıtımı için başvurular ekleyin. Varsayılan olarak, görüntülenen akış Python özeldir ve Django, CPython ve diğer temel bileşenleri içerir. Ayrıca, aşağıda gösterildiği gibi kendi akış seçebilirsiniz. Microsoft Azure yayımlama sırasında Kurulum görev tüm başvurulan ürünleri yükler.
+Microsoft Azure bulut hizmetlerine, akış Webpı üzerinden ek bileşenleri yükleyebileceğiniz Webpı ürün girdileri dağıtımı için başvurular ekleyin. Varsayılan olarak, görüntülenen akış Python özeldir ve Django, CPython ve diğer temel bileşenleri içerir. Ayrıca, aşağıda gösterildiği gibi kendi akış seçebilirsiniz. Microsoft Azure yayımlama sırasında Kurulum görev tüm başvurulan ürünleri yükler.
 
 ![Webpı başvuruları](media/projects-webPI-components.png)

@@ -18,11 +18,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c6a91cffc3ce388a3dfb9000b9f432672018f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5c1b61e8895258a4f27d3803bf7fb5e4e2a0fba3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116Ç APTCA yöntemleri yalnızca APTCA yöntemlerini çağırmalıdır
 |||  
@@ -49,7 +49,7 @@ ms.lasthandoff: 10/31/2017
  Kısmen güvenilen çağıran `X` yöntemini çağırabilir `M1`, neden `M1` çağırmak için `M2`. Çünkü `M2` anında arayanlar APTCA özniteliği yok (`M1`) bir bağlantı isteği için tam güven; karşılaması gerekir `M1` tam güvene sahip ve bu nedenle bu onay karşılar. Güvenlik riski çünkü `X` korur bağlantı isteği çağıran katılmayan `M2` güvenilmeyen arayanlar gelen. Bu nedenle, APTCA özniteliği yöntemleriyle özniteliğine sahip olmayan yöntemleri çağırmamalıdır.  
   
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- APCTA özniteliği gerekli ise, bir isteğe bağlı tam güveni derlemesini çağıran yöntemi korumak için kullanın. Tam izinler yöntemi tarafından kullanıma sunulan işlevsellikten, isteğe bağlıdır. Mümkünse, alttaki işlevsellik kısmen güvenilen arayanlara gösterilmeyen emin olmak tam güven için talep yöntemiyle koruyun. Bu mümkün değilse, etkili bir şekilde kullanıma sunulan işlevselliği koruyan bir izin kümesi seçin. Taleplerin hakkında daha fazla bilgi için bkz: [taleplerini](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).  
+ APCTA özniteliği gerekli ise, bir isteğe bağlı tam güveni derlemesini çağıran yöntemi korumak için kullanın. Tam izinler yöntemi tarafından kullanıma sunulan işlevsellikten, isteğe bağlıdır. Mümkünse, alttaki işlevsellik kısmen güvenilen arayanlara gösterilmeyen emin olmak tam güven için talep yöntemiyle koruyun. Bu mümkün değilse, etkili bir şekilde kullanıma sunulan işlevselliği koruyan bir izin kümesi seçin.  
   
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
  Bu kural bir uyarıdan güvenle gizlemek için yöntemi tarafından kullanıma sunulan işlevsellikten doğrudan veya dolaylı olarak hassas bilgileri, işlemler veya zararlı bir şekilde kullanılabilir kaynaklara erişmek arayanlara izin vermiyor olduğundan emin olmalısınız.  
@@ -78,8 +78,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Güvenli kodlama yönergeleri](/dotnet/standard/security/secure-coding-guidelines)   
- [.NET framework derlemeleri aranabilir kısmen güvenilen kod tarafından](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [Kısmen güvenilen koddan kitaplıkları kullanma](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Talepleri](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
  [Bağlantı talepleri](/dotnet/framework/misc/link-demands)   
- [Veri ve modelleme](/dotnet/framework/data/index)
+ [Veri ve Modelleme](/dotnet/framework/data/index)

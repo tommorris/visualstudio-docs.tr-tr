@@ -39,11 +39,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 39c9ac7b1cbed8c64ee3b87fde4c990f998157a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b73e2cf93cf0f557db072586b7aa67ab730fad4f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri
 Windows Communication Foundation (WCF) ile çalışmak için Visual Studio araçları sağlar ve [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], oluşturmak için Microsoft teknolojilerini dağıtılmış uygulamalar. Bu konuda Hizmetleri'nden tanıtılmaktadır bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspektif. Tam belgeler için bkz: [WCF Veri Hizmetleri 4.5](/dotnet/framework/data/wcf/index).  
@@ -239,11 +239,10 @@ Bu sorunu önlemek için başvurulan derlemelerin türlerinde varsayılan olarak
 |-----------|-----------------|  
 |[İzlenecek yol: Windows Forms'ta basit bir WCF hizmeti oluşturma](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Oluşturma ve WCF hizmetlerini kullanarak adım adım bir gösterim sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |[İzlenecek yol: bir WCF veri hizmetine WPF ve Entity Framework ile oluşturma](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Adım adım bir gösterim oluşturmak ve kullanmak nasıl sağlar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|[WCF geliştirme araçlarını kullanarak](/dotnet/framework/wcf/using-the-wcf-development-tools)|Oluşturma ve WCF hizmetlerinde test anlatılmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|[WCF Geliştirme Araçlarını Kullanma](/dotnet/framework/wcf/using-the-wcf-development-tools)|Oluşturma ve WCF hizmetlerinde test anlatılmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 ||[Nasıl yapılır: ekleme, güncelleştirme veya bir WCF veri hizmeti başvurusunu kaldırma](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Başvuru ve nasıl kullanılacağını anlatır [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |[Hizmet başvurularında sorun giderme](../data-tools/troubleshooting-service-references.md)|Hizmet başvuruları ve bunları engelleme ile ortaya çıkabilecek bazı yaygın hatalar gösterir.|  
 |[WCF hizmetlerinde hata ayıklama](../debugger/debugging-wcf-services.md)|Genel hata ayıklama sorunları ve WCF hizmetleri hata ayıklama sırasında karşılaşabileceğiniz teknikleri açıklar.|  
-|[Windows Communication Foundation kimlik doğrulama hizmeti genel bakış](http://msdn.microsoft.com/Library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|WCF Web sitesi için bir rol hizmeti sağlamak için nasıl kullanılacağını açıklar.|  
 |[İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Türü belirtilmiş veri kümesi oluşturma ve birden çok projeye TableAdapter ve veri kümesi kodu ayırmak için adım adım yönergeler sağlar.|  
 |[Hizmet başvurusu Yapılandır iletişim kutusu](../data-tools/configure-service-reference-dialog-box.md)|Kullanıcı arabirimi öğelerini açıklar **hizmet başvurusu Yapılandır** iletişim kutusu.|  
   

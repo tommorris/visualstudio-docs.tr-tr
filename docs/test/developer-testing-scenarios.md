@@ -12,11 +12,11 @@ ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: feb31e2a5c4abf0013ee4d3ec0a20c7f3cfdff2a
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 8f27747037bc496c35594973e730c09533820096
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Geliştirici Araçları, senaryolarını ve özelliklerini test etme
 
@@ -44,7 +44,7 @@ Intellitest oluşturmak ve yeni veya var olan kod için birim testleri korumak i
 * [Intellitest – tümünü kural için bir sınama](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)
 * [Intellitest videolar](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
 * [Intellitest ile çalışmaya başlama](generate-unit-tests-for-your-code-with-intellitest.md)
-* [Intellitest başvuru el ile](intellitest-manual/index.md)
+* [Intellitest başvuru kılavuzu](intellitest-manual/index.md)
 
 <a name="ui-testing"></a>
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Kodlanmış UI ve Selenium ile test kullanıcı arabirimi
@@ -57,7 +57,7 @@ Kodlanmış UI testleri türünün en iyi seçin veya Selenium ile UI testi gene
 
 ![Kullanıcı Arabirimi ile kodlanmış UI testi](media/devtest-codeduitest.png)
 
-* [Kodunuzu test etmek için UI otomasyonunu kullanma](use-ui-automation-to-test-your-code.md)
+* [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](use-ui-automation-to-test-your-code.md)
 * [Oluşturma, düzenleme ve kodlanmış UI testini sürdürme kullanmaya başlama](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Kodlanmış UI testleriyle UWP uygulamaları sınama](test-windows-store-8-1-apps-with-coded-ui-tests.md)
 * [Kodlanmış UI testleri ile test Windows Phone uygulamaları](test-windows-phone-8-1-apps-with-coded-ui-tests.md)
@@ -75,9 +75,9 @@ Test yöntemlerini Test Gezgini'ni kullanarak çalıştırdığınızda kod kaps
 
 ![Team Foundation Server ve Visual Studio Team Services ile test](media/devtest-codecoverage.png)
 
-* [Test edildiğini belirlemek ne kadar kodun için kod kapsamını kullanma](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [Ne Kadar Kodun Test Edildiğini Belirlemek için Kod Kapsamını Kullanma](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Birim testi, kod kapsamı ve Visual Studio (Lab) ile kod kopya çözümleme](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
-* [Kod kapsamı çözümlemeyi özelleştirme](customizing-code-coverage-analysis.md)
+* [Kod Kapsamı Çözümlemeyi Özelleştirme](customizing-code-coverage-analysis.md)
 
 <a name="test-explorer"></a>
 ## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>Birim testi herhangi framework yüksek performansı Test Gezgini kullanma
@@ -89,13 +89,13 @@ Geliştiriciler oluşturmak, yönetmek ve en fazla birim testi elde Explorer Yar
 * [Birim testi ile çalışmaya başlama](unit-test-your-code.md)
 * [Test Gezgini ile birim testleri çalıştırma](run-unit-tests-with-test-explorer.md)
 * [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)
-* [Üçüncü şahıs birim test çerçevelerini yükleme](install-third-party-unit-test-frameworks.md)
+* [Üçüncü taraf birim testi çerçevelerini yükleme](install-third-party-unit-test-frameworks.md)
 
 Visual Studio ayrıca genişletilebilirdir ve üçüncü taraf birim testi NUnit ve xUnit.net gibi bağdaştırıcıları kapısının açar. Ayrıca, kodu kopya yetenek el eldeki gider ortak hata düzeltmeleri için aday olabilen anlamsal olarak benzer bir kod bloklarını tanımlamanıza yardımcı ya da yeniden düzenleme yüksek kaliteli yazılım teslim ile.
 
 ![Üçüncü taraf test tümleştirme](media/devtest-thirdparty.png)
 
-## <a name="also-see"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 * [Birim testi ile çalışmaya başlama](getting-started-with-unit-testing.md)
 * [Team Foundation Server'da Birim Test yürütmesi hızlandırma](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)

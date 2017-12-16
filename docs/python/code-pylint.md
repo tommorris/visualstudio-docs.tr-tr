@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: dbb4c3d0a2d9077572a80c43d9d49d9c7e898dce
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 14914ce13249a439748bb890480c2605f69368ae
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="using-pylint-to-check-python-code"></a>Python kodu denetlemek için PyLint kullanma
 
@@ -39,7 +39,7 @@ Bir hata çift doğrudan sorunu oluşturulan kaynak koduna alır.
 
 ## <a name="setting-pylint-command-line-options"></a>PyLint komut satırı seçeneklerini ayarlama
 
-[Komut satırı seçenekleri](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options) PyLint belgelerine bölümünü açıklar aracılığıyla PyLint'in davranışını denetleme bir `.pylintrc` yapılandırma dosyası. Böyle bir dosya, Visual Studio veya başka bir yerde bu ayarları uygulanmış ne ölçüde istediğinize bağlı olarak bir Python proje kökündeki yerleştirilebilir.
+[Komut satırı seçenekleri](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options) PyLint belgelerine bölümünü açıklar aracılığıyla PyLint'in davranışını denetleme bir `.pylintrc` yapılandırma dosyası. Böyle bir dosya Visual Studio veya başka bir yerde bu ayarları uygulanmış ne ölçüde istediğinize bağlı olarak bir Python proje kökündeki yerleştirilebilir (bkz [komut satırı seçenekleri](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options) Ayrıntılar için).
 
 Örneğin, önceki görüntüsüyle gösterilen "docstring eksik" uyarıları gizlemek için bir `.pylintrc` dosya projede, adımları uygulayın:
 
@@ -54,3 +54,9 @@ Bir hata çift doğrudan sorunu oluşturulan kaynak koduna alır.
 1. Çeşitli çalışabileceğiniz ayarları içeren dosyayı düzenlemek için açın. Bir uyarı devre dışı bırakmak için bulun `[MESSAGES CONTROL]` bölümünde sonra bulun `disable` bu bölümünde ayarlama. Uzun bir dize istediğiniz hangi uyarıların ekleyebilirsiniz belirli iletilerinin yoktur. Örnekte, sona `,missing-docstring` (ayırıcı virgülle dahil).
 
 1. Kaydet `.pylintrc` dosya ve uyarılarla şimdi bastırılan yeniden görmek için PyLint çalıştırın.
+
+> [!Tip]
+> Kullanılacak bir `.pylintrc` dosya bir ağ paylaşımından, adında bir ortam değişkeni oluşturma `PYLINTRC` bir UNC yolu veya eşlenen sürücü harfini kullanarak ağ üzerinde dosya adı değerini paylaşın. Örneğin:
+> ```
+> PYLINTRC=\\myshare\python\.pylintrc
+> ```

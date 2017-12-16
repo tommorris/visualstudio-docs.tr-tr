@@ -3,11 +3,11 @@ layout: HubPage
 hide_bc: True
 title: Visual Studio belgeleri | Microsoft Docs
 description: "Uygulamaları, hizmetleri ve platformlar ve cihazlar için tercih ettiğiniz dilde araçları geliştirmek için Visual Studio 2017 kullanmayı öğrenin."
-ms.openlocfilehash: f33fce2ca2020827e2013199e596c0e6be2e9793
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3875594d51eeb54322eed2fbe423f045c6aa1d4a
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -74,390 +74,7 @@ ms.lasthandoff: 10/31/2017
         <h1>Visual Studio belgeleri</h1>
         <ul class="pivots">
             <li>
-                <a href="#workloads">İş yükleri</a>
-                <ul id="workloads">
-                    <li>
-                        <a href="#windows">Windows</a>
-                        <ul id="windows" class="cardsC">
-                            <li>
-                                <div class="container intro">
-                                    <p>Uygulamaları ve oyunları Windows çalıştıran her bir aygıtı ulaşmak için Visual Studio kullanarak geliştirin.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833082">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-hoverimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Evrensel Windows platformu geliştirme</h3>
-                                                    <p>Evrensel Windows platformu ve C#, VB ya da C++ ile Windows 10 uygulamaları geliştirin.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833083">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_windows-2.svg" src="./images/vs_windows-2.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>.NET masaüstü geliştirme</h3>
-                                                    <p>WPF, Windows Forms ve .NET Framework kullanılarak konsol uygulamaları oluşturma.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833084">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_windows-3.svg" src="./images/vs_windows-3.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>C++ ile Windows geliştirme</h3>
-                                                    <p>MFC ve ATL Microsoft C++ araç takımını gücünü kullanarak Klasik Windows tabanlı uygulamalar oluşturun.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#web">Web &amp; bulut</a>
-                        <ul id="web" class="cardsC">
-                            <li>
-                                <div class="container intro">
-                                    <p>Visual Studio ve güçlü açık araçları kullanarak modern web uygulamaları geliştirin.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833085">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-1.svg" src="./images/vs_web-1.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Web geliştirme</h3>
-                                                    <p>ASP.NET ve HTML, JavaScript ve CSS gibi standartlara dayalı teknolojileri ile Web uygulamaları oluşturma.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833086">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-2.svg" src="./images/vs_web-2.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure geliştirme ve yönetim</h3>
-                                                    <p>Kolayca derleme, test dağıtın ve ölçeklenebilir uygulamalar ve Microsoft bulut hizmetlerinde yönetin.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833068">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-3.svg" src="./images/vs_web-3.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Python</h3>
-                                                    <p>Etkileşimli geliştirme Django ve Flask gibi bilinen çerçevelerini kullanarak Python uygulamaları için.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834351">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="/media/logos/logo_nodejs.svg" src="/media/logos/logo_nodejs.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Node.js</h3>
-                                                    <p>Node.js, bir asnchronous, olay denetimli JavaScript çalışma zamanı kullanarak Ölçeklenebilir Ağ uygulamaları oluşturun.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833095">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-5.svg" src="./images/vs_web-5.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Veri depolama ve işleme</h3>
-                                                    <p>Araçlar ve geliştirmek ve SQL Server, Azure Data Lake veya Hadoop kullanarak veri çözümleri sınamak için çerçeveler.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834748">
-                                  <div class="cardSize">
-                                    <div class="cardPadding">
-                                      <div class="card">
-                                        <div class="cardImageOuter">
-                                          <div class="cardImage bgdAccent1 cardScaleImage">
-                                            <img data-scaleimage="./images/vs_web-6.svg" src="./images/vs_web-6.svg" alt="" />
-                                        </div>
-                                        </div>
-                                          <div class="cardText">
-                                            <h3>Veri bilimi ve analitik uygulamalar</h3>
-                                            <p>Diller ve Python, R ve F # gibi veri bilimi uygulamaları oluşturmak için araç.</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833075">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-7.svg" src="./images/vs_web-7.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Office/SharePoint geliştirme</h3>
-                                                    <p>Office ve SharePoint eklentiler ve C#, Visual Basic ve JavaScript kullanan çözümler oluşturun.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#mobile">Mobil &amp; oyun</a>
-                        <ul id="mobile" class="cardsC">
-                            <li>
-                                <div class="container intro">
-                                    <p>Hedef Android, iOS ve Windows yerel ya da karma mobil uygulamalar oluşturun.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833088">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-1.svg" src="./images/vs_gaming-1.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>.NET ile Mobil Geliştirme</h3>
-                                                    <p>İOS, Android veya Xamarin kullanan Windows için platformlar arası uygulamalar oluşturun.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833091">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-2.svg" src="./images/vs_gaming-2.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Unity ile oyun geliştirme</h3>
-                                                    <p>2B ve 3B oyunlar unity, güçlü bir platformlar arası geliştirme ortamı oluşturun.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833089">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-3.svg" src="./images/vs_gaming-3.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>JavaScript ile Mobil Geliştirme</h3>
-                                                    <p>İOS, Android ya da Apache Cordova framework ile Windows için platformlar arası uygulamalar oluşturmak.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833090">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-4.svg" src="./images/vs_gaming-4.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>C++ ile Mobil Geliştirme</h3>
-                                                    <p>Platformlar arası uygulamaları iOS, Android veya Windows C++ kullanarak oluşturun.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834749">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-5.svg" src="./images/vs_gaming-5.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>C++ ile oyun geliştirme</h3>
-                                                    <p>C++ gücünü DirectX, gerçekleşmemiş hesabı ya da Cocos2D gücü profesyonel oyun oluşturmak için kullanın.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#other">Diğer Toolsets</a>
-                        <ul id="other" class="cardsC">
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834750">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_tools-1.svg" src="./images/vs_tools-1.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Visual Studio uzantısı geliştirme</h3>
-                                                    <p>Visual Studio komutları, kod Çözümleyicileri ve aracı windows gibi genişletmek eklentileri oluşturun.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833099">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_tools-2.svg" src="./images/vs_tools-2.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>C++ ile Linux geliştirmesi</h3>
-                                                    <p>Oluşturun ve Linux ortamda çalışan uygulamalardaki hata ayıklama.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=856606">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_tools-3.svg" src="./images/vs_web-1.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>.NET core platformlar arası geliştirme</h3>
-                                                    <p>.NET Core, ASP.NET Core, HTML, JavaScript ve kapsayıcı geliştirme araçlarını kullanarak platformlar arası uygulamalar oluşturun.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#features">Özellikleri</a>
+                <a href="#features">Görevler</a>
                 <ul id="features">
                     <li>
                         <a href="#features1"> </a>
@@ -558,7 +175,7 @@ ms.lasthandoff: 10/31/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/#pivot=services&panel=code">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=865130">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -814,6 +431,389 @@ ms.lasthandoff: 10/31/2017
                                         </div>
                                     </div>
                                 </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#workloads">İş yükleri</a>
+                <ul id="workloads">
+                    <li>
+                        <a href="#web">Web &amp; bulut</a>
+                        <ul id="web" class="cardsC">
+                            <li>
+                                <div class="container intro">
+                                    <p>Visual Studio ve güçlü açık araçları kullanarak modern web uygulamaları geliştirin.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833085">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_web-1.svg" src="./images/vs_web-1.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Web geliştirme</h3>
+                                                    <p>ASP.NET ve HTML, JavaScript ve CSS gibi standartlara dayalı teknolojileri ile Web uygulamaları oluşturma.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833086">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_web-2.svg" src="./images/vs_web-2.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure geliştirme ve yönetim</h3>
+                                                    <p>Kolayca derleme, test dağıtın ve ölçeklenebilir uygulamalar ve Microsoft bulut hizmetlerinde yönetin.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833068">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_web-3.svg" src="./images/vs_web-3.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Python</h3>
+                                                    <p>Etkileşimli geliştirme Django ve Flask gibi bilinen çerçevelerini kullanarak Python uygulamaları için.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834351">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="/media/logos/logo_nodejs.svg" src="/media/logos/logo_nodejs.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Node.js</h3>
+                                                    <p>Node.js, bir asnchronous, olay denetimli JavaScript çalışma zamanı kullanarak Ölçeklenebilir Ağ uygulamaları oluşturun.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833095">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_web-5.svg" src="./images/vs_web-5.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Veri depolama ve işleme</h3>
+                                                    <p>Araçlar ve geliştirmek ve SQL Server, Azure Data Lake veya Hadoop kullanarak veri çözümleri sınamak için çerçeveler.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834748">
+                                  <div class="cardSize">
+                                    <div class="cardPadding">
+                                      <div class="card">
+                                        <div class="cardImageOuter">
+                                          <div class="cardImage bgdAccent1 cardScaleImage">
+                                            <img data-scaleimage="./images/vs_web-6.svg" src="./images/vs_web-6.svg" alt="" />
+                                        </div>
+                                        </div>
+                                          <div class="cardText">
+                                            <h3>Veri bilimi ve analitik uygulamalar</h3>
+                                            <p>Diller ve Python, R ve F # gibi veri bilimi uygulamaları oluşturmak için araç.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833075">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_web-7.svg" src="./images/vs_web-7.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Office/SharePoint geliştirme</h3>
+                                                    <p>Office ve SharePoint eklentiler ve C#, Visual Basic ve JavaScript kullanan çözümler oluşturun.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#windows">Windows</a>
+                        <ul id="windows" class="cardsC">
+                            <li>
+                                <div class="container intro">
+                                    <p>Uygulamaları ve oyunları Windows çalıştıran her bir aygıtı ulaşmak için Visual Studio kullanarak geliştirin.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833082">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-hoverimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Evrensel Windows platformu geliştirme</h3>
+                                                    <p>Evrensel Windows platformu ve C#, VB ya da C++ ile Windows 10 uygulamaları geliştirin.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833083">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_windows-2.svg" src="./images/vs_windows-2.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>.NET masaüstü geliştirme</h3>
+                                                    <p>WPF, Windows Forms ve .NET Framework kullanılarak konsol uygulamaları oluşturma.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833084">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_windows-3.svg" src="./images/vs_windows-3.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>C++ ile Windows geliştirme</h3>
+                                                    <p>MFC ve ATL Microsoft C++ araç takımını gücünü kullanarak Klasik Windows tabanlı uygulamalar oluşturun.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#mobile">Mobil &amp; oyun</a>
+                        <ul id="mobile" class="cardsC">
+                            <li>
+                                <div class="container intro">
+                                    <p>Hedef Android, iOS ve Windows yerel ya da karma mobil uygulamalar oluşturun.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833088">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_gaming-1.svg" src="./images/vs_gaming-1.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>.NET ile Mobil Geliştirme</h3>
+                                                    <p>İOS, Android veya Xamarin kullanan Windows için platformlar arası uygulamalar oluşturun.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833091">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_gaming-2.svg" src="./images/vs_gaming-2.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Unity ile oyun geliştirme</h3>
+                                                    <p>2B ve 3B oyunlar unity, güçlü bir platformlar arası geliştirme ortamı oluşturun.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833089">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_gaming-3.svg" src="./images/vs_gaming-3.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>JavaScript ile Mobil Geliştirme</h3>
+                                                    <p>İOS, Android ya da Apache Cordova framework ile Windows için platformlar arası uygulamalar oluşturmak.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833090">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_gaming-4.svg" src="./images/vs_gaming-4.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>C++ ile Mobil Geliştirme</h3>
+                                                    <p>Platformlar arası uygulamaları iOS, Android veya Windows C++ kullanarak oluşturun.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834749">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_gaming-5.svg" src="./images/vs_gaming-5.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>C++ ile oyun geliştirme</h3>
+                                                    <p>C++ gücünü DirectX, gerçekleşmemiş hesabı ya da Cocos2D gücü profesyonel oyun oluşturmak için kullanın.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#other">Diğer Toolsets</a>
+                        <ul id="other" class="cardsC">
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834750">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_tools-1.svg" src="./images/vs_tools-1.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Visual Studio uzantısı geliştirme</h3>
+                                                    <p>Visual Studio komutları, kod Çözümleyicileri ve aracı windows gibi genişletmek eklentileri oluşturun.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833099">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_tools-2.svg" src="./images/vs_tools-2.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>C++ ile Linux geliştirmesi</h3>
+                                                    <p>Oluşturun ve Linux ortamda çalışan uygulamalardaki hata ayıklama.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=856606">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1 cardScaleImage">
+                                                        <img data-scaleimage="./images/vs_tools-3.svg" src="./images/vs_web-1.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>.NET core platformlar arası geliştirme</h3>
+                                                    <p>.NET Core, ASP.NET Core, HTML, JavaScript ve kapsayıcı geliştirme araçlarını kullanarak platformlar arası uygulamalar oluşturun.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </li>

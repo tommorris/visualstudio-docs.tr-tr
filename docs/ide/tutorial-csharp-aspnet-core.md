@@ -12,11 +12,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: 7e3a1d249ad91a3ffce941442e8b9528592a224d
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.openlocfilehash: eecae2b95947d4bdf40ba6d57a85150e03f21cfb
+ms.sourcegitcommit: abe8d0aaded582058b5f5669d9d534d2f6a83355
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/16/2017
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>C# ve Visual Studio'da ASP.NET ile çalışmaya başlama
 C# geliştirme için Visual Studio kullanarak ASP.NET Core Bu öğreticide, bir C# ASP.NET Core web uygulaması oluşturma, kodu ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın.
@@ -28,7 +28,7 @@ Burada, bazı temel kavramları tanıtmak için bir hızlı sık sorulan sorular
 ### <a name="what-is-c"></a>C# nedir?
 [C#](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework) , güçlü ve öğrenmek kolay olması için tasarlanmış bir tür kullanımı uyumlu ve nesne odaklı programlama dilidir.
 ### <a name="what-is-aspnet-core"></a>ASP.NET çekirdeği nedir?
-ASP.NET Core web uygulamaları ve Hizmetleri gibi internet'e bağlı uygulamaları oluşturmak için açık kaynaklı ve platformlar arası bir çerçevedir. ASP.NET Core uygulamaları üzerinde çalışabilir [.NET Core](/net/core/platform) veya .NET Framework. Geliştirme ve ASP.NET Core uygulamaları platformlar arası Windows, Mac ve Linux üzerinde çalıştırın. ASP.NET Core olduğundan, açık kaynak [GitHub](https://github.com/aspnet/home).
+ASP.NET Core web uygulamaları ve Hizmetleri gibi internet'e bağlı uygulamaları oluşturmak için açık kaynaklı ve platformlar arası bir çerçevedir. ASP.NET Core uygulamaları .NET Core veya .NET Framework üzerinde çalışabilir. Geliştirme ve ASP.NET Core uygulamaları platformlar arası Windows, Mac ve Linux üzerinde çalıştırın. ASP.NET Core olduğundan, açık kaynak [GitHub](https://github.com/aspnet/home).
 ### <a name="what-is-visual-studio"></a>Visual Studio nedir?
 Visual Studio, geliştiriciler için üretkenlik araçları'nın bir tümleşik geliştirme paketidir. Bunu, programları ve uygulamaları oluşturmak için kullanabileceğiniz bir program olarak düşünün.  
 
@@ -46,25 +46,25 @@ Geliştirmeye başlamak hazır mısınız? Gidelim!
 
    ![Visual Studio IDE'de yeni proje iletişim kutusundaki ASP.NET Core Web uygulaması proje şablonu](../ide/media/new-project-csharp-aspnet-mycoreapp.png)
 
-#### <a name="add-a-workgroup-optional"></a>(İsteğe bağlı) bir çalışma grubu Ekle
-Görmüyorsanız, **ASP.NET çekirdek Web uygulaması** proje şablonu, alabilirsiniz, ekleyerek **ASP.NET Core ve web geliştirme** iş yükü. Bu iş yükü bağlı olarak Visual Studio 2017 güncelleştirmeleri makinenize yüklü iki aşağıdaki yollardan biriyle ekleyebilirsiniz.
+#### <a name="add-a-workload-optional"></a>(İsteğe bağlı) bir iş yükü ekleme
+Görmüyorsanız, **ASP.NET çekirdek Web uygulaması** proje şablonu, alabilirsiniz, ekleyerek **ASP.NET ve web geliştirme** iş yükü. Bu iş yükü bağlı olarak Visual Studio 2017 güncelleştirmeleri makinenize yüklü iki aşağıdaki yollardan biriyle ekleyebilirsiniz.
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>Seçenek 1: Yeni Proje iletişim kutusunu kullanın
 1. Tıklatın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantı **yeni proje** iletişim kutusu.
 
   ![Yeni Proje iletişim kutusundan açık Visual Studio yükleyicisi bağlantısına tıklayın](../ide/media/vs-open-visual-studio-installer-generic.png)
 
-2. Visual Studio yükleyicisi başlatır. Seçin **ASP.NET Core ve web geliştirme** iş yükü ve ardından **Değiştir**.
+2. Visual Studio yükleyicisi başlatır. Seçin **ASP.NET ve web geliştirme** iş yükü ve ardından **Değiştir**.
 
    ![Visual Studio yükleyicisi .NET core platformlar arası geliştirme iş yükü](../ide/media/asp-dot-net-web-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Seçenek 2: araçlar menü çubuğu'nu kullanın
 1. İşyeri dışında iptal **yeni proje** iletişim kutusuna ve üst menü çubuğundan seçin **Araçları** > **alma araçları ve özelliklerinin...** .
 
-2. Visual Studio yükleyicisi başlatır. Seçin **ASP.NET Core ve web geliştirme** iş yükü ve ardından **Değiştir**.   
+2. Visual Studio yükleyicisi başlatır. Seçin **ASP.NET ve web geliştirme** iş yükü ve ardından **Değiştir**.   
 
 #### <a name="add-a-project-template"></a>Bir proje şablonu Ekle
-1. İçinde **çekirdek yeni bir ASP.NET Web uygulaması** iletişim kutusunda, seçin **Web uygulaması (Model-View-Controller** proje şablonu.  
+1. İçinde **çekirdek yeni bir ASP.NET Web uygulaması** iletişim kutusunda, seçin **Web uygulaması (Model-View-Controller)** proje şablonu.  
 
 2. Seçin **ASP.NET Core 2.0** üstteki açılan menüden. (Görmüyorsanız **ASP.NET Core 2.0** listesinde izleyerek yükleyin **karşıdan** iletişim kutusunun üstündeki yanında sarı çubuğu görüntülenmelidir bağlantıyı.) Seçin **Tamam**.
 
@@ -89,15 +89,16 @@ MVC örüntüsü, test ve güncelleştirmek geleneksel tek yapılı uygulamalar 
       ![Visual Studio Çözüm Gezgini'nde HomeController.cs dosyasında](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
 2. Görünüm **HomeController.cs**
-  ![HomeController.cs Visual Studio kod penceresinde](../ide/media/csharp-aspnet-home-controller-code.png)
 
-4. Projeyi de sahip bir **görünümleri** her denetleyiciye eşleme diğer klasörleri içeren klasörü (biri yanı sıra **paylaşılan** görünümleri. Örneğin, görünüm CSHTML dosyası (HTML uzantı) için **/ev/hakkında** yolu adresindeki olacaktır **Views/Home/About.cshtml**. Bu dosyayı açın.
+  ![Visual Studio kod penceresinde HomeController.cs](../ide/media/csharp-aspnet-home-controller-code.png)
+
+4. Projeyi de sahip bir **görünümleri** her denetleyiciye eşleme diğer klasörleri içeren klasörü (biri yanı sıra **paylaşılan** görünümler). Örneğin, görünüm CSHTML dosyası (HTML uzantı) için **/ev/hakkında** yolu adresindeki olacaktır **Views/Home/About.cshtml**. Bu dosyayı açın.
 
   ![Visual Studio'da Çözüm Gezgini'nde About.cshtml dosyası](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
 5. Bu CSHTML dosyası standart etiketleri ve satır içi C# bir bileşimine dayalı HTML oluşturmak için Razor sözdizimini kullanır.
 
- ![Visual Studio kod penceresinde About.cshtml](../ide/media/csharp-aspnet-home-controller-code.png)
+  ![Visual Studio kod penceresinde About.cshtml](../ide/media/csharp-aspnet-about-cshtml-code.png)
 
  >[!NOTE]
  > Bunun hakkında daha fazla bilgi edinmek için [C# ve ASP.NET Razor sözdizimini kullanarak Başlarken](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c) sayfası.
@@ -123,7 +124,7 @@ MVC örüntüsü, test ve güncelleştirmek geleneksel tek yapılı uygulamalar 
 
  ![Uygulamanız için tarayıcı penceresinde hakkında seçin](../ide/media/csharp-aspnet-browser-page.png)
 
- Başka şeylerin HomeController.cs dosyasında ayarlanan bazı metinleri hakkında sayfasını işler.
+ Bunun yanı sıra, HomeController.cs dosyasında ayarlanan metin hakkında sayfasını tarayıcıda oluşturur.
 
    ![Hakkında sayfasında metin görüntüleme](../ide/media/csharp-aspnet-browser-page-about.png)
 
@@ -157,7 +158,10 @@ MVC örüntüsü, test ve güncelleştirmek geleneksel tek yapılı uygulamalar 
 
   ![Değiştirilen metni görmek için tarayıcı penceresini yenileyin](../ide/media/csharp-aspnet-browser-page-about-changed.png)
 
-1. Tuşuna **F5** hata ayıklamasını durdurmak için.
+1. Tuşuna **Shift**+**F5** hata ayıklamasını durdurmak için. Alternatif olarak, seçin **hata ayıklama** > **durdurma hata ayıklama** menüsünde çubuğunu ya da seçin **durdurma hata ayıklama** araç çubuğu düğmesinden.
+
+ ![Araç çubuğundaki hata ayıklamayı Durdur düğmesini tıklatın](../ide/media/csharp-aspnet-stop-debugging.png)
+
 
 Bu öğreticiyi tamamlamak Tebrikler!
 

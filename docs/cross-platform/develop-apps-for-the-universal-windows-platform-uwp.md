@@ -12,11 +12,12 @@ caps.latest.revision: "48"
 author: stevehoag
 ms.author: shoag
 manager: ghogen
-ms.openlocfilehash: acf69e6cddabad98a68c870ccfaeafa9b420cac7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: a696a0b827cc8fe367390efbba01c2a18ff178bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Evrensel Windows Platformu (UWP) uygulamaları geliştirme
 Evrensel Windows platformu ve bizim bir Windows çekirdek ile aynı uygulama tüm Windows 10 cihazından telefonları masaüstlerine çalıştırabilirsiniz. Bu Evrensel Windows uygulamaları Evrensel Windows uygulaması geliştirme araçlarını Visual Studio ile oluşturun.  
@@ -54,4 +55,4 @@ Var olan Windows mağazası 8.1 uygulamaları, Windows Phone 8.1 uygulamaları y
 Evrensel Windows uygulamanız oluşturduktan sonra Windows 10 cihazında yüklemek veya Windows Mağazası'na göndermek için uygulamanızı paketleme gerekir. Bkz: [paketleme uygulamaları](/windows/uwp/packaging/index).
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Visual Studio'da platformlar arası Mobil Geliştirme](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)  
+[Visual Studio’da Platformlar Arası Mobil Geliştirme](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)  

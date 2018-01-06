@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 913fdcefc4e90ea09030e416cb6a300e50855478
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 33f11edeb20457194e1cc982f77a5ea18aed6af0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumtables"></a>IDiaEnumTables
 Veri kaynağında bulunan çeşitli tablolar numaralandırır.  
@@ -34,13 +35,13 @@ IDiaEnumTables : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiaenumtables::get__newenum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Alır [IEnumVARIANT arabirimi](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) bu Sıralayıcı sürümü.|  
-|[Idiaenumtables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Tablo sayısını alır.|  
-|[Idiaenumtables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Bir dizin veya bir ad yoluyla bir tablo alır.|  
-|[Idiaenumtables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Belirtilen bir numaralandırma sırası tablolarda sayısını alır.|  
-|[Idiaenumtables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Bir numaralandırma sırasını tablolarda belirtilen sayıda atlar.|  
-|[Idiaenumtables::reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
-|[Idiaenumtables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
+|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Alır [IEnumVARIANT arabirimi](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) bu Sıralayıcı sürümü.|  
+|[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Tablo sayısını alır.|  
+|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Bir dizin veya bir ad yoluyla bir tablo alır.|  
+|[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Belirtilen bir numaralandırma sırası tablolarda sayısını alır.|  
+|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Bir numaralandırma sırasını tablolarda belirtilen sayıda atlar.|  
+|[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
+|[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
   
@@ -71,4 +72,4 @@ void ShowTableNames(IDiaSession *pSession)
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
+ [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)

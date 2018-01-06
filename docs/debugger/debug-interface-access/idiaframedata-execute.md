@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29b284e466ce751e86f488203b4b22c0c18c6573
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8ad08fd9800fdc197d4218fa55c83487e132f25d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 Yığın geriye doğru izleme gerçekleştirir ve sonuçları bir yığın ilerlemesi çerçeve arabiriminde döndürür.  
@@ -50,4 +51,4 @@ HRESULT execute (
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md)   
- [Idiastackwalkframe](../../debugger/debug-interface-access/idiastackwalkframe.md)
+ [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

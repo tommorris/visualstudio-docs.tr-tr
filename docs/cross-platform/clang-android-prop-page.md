@@ -44,11 +44,12 @@ f1_keywords:
 - VC.Project.VCClangCompilerTool.ForcedIncludeFiles
 - VC.Project.VCClangCompilerTool.MultiProcessorCompilation
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: 876650f14ea5017d80a554ed038ca1bcd5d19cfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 693ab7a1068ebe841e7e59a79ed015c4f287798a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clang-project-properties-android-c"></a>Clang proje özellikleri (Android C++)
 
@@ -72,8 +73,8 @@ Güvenlik denetimi | Güvenlik denetimi yığını arabellek fazla çalıştığ
 Konum bağımsız kodu | Paylaşılan bir kitaplık kullanmak için konum bağımsız kod (PIC) oluşturur.
 Kısa numaralandırmaları kullanın | Enum türü kullanan yalnızca giriş olası değerler kümesi tarafından gereken sayıda bayt.
 Çalışma zamanı türü bilgileri etkinleştir | Çalışma zamanında (çalışma zamanı türü bilgileri) C++ nesne türlerini denetlemek için kod ekler.     (frtti, fno rttı)
-C dili standart | C dili standart belirler. | **Varsayılan**<br>**C89** -C89 dil standardı.<br>**C99** -C99 dil standardı.<br>**C11** -C11 dil standardı.<br>**C99 (GNU Dialect)** -C99 (GNU Dialect) dil standardı.<br>**C11 (GNU Dialect)** -C11 (GNU Dialect) dil standardı.<br>
-C++ dili standart | C++ dili standart belirler. | **Varsayılan**<br>**C ++ 03** -C ++ 03 dil standardı.<br>**C ++ 11** -C ++ 11 dil standardı.<br>**C ++ 14** -C ++ 14 dil standardı.<br>**C ++ 03 (GNU Dialect)** - C ++ 03 (GNU Dialect) dil standardı.<br>**C ++ 11 (GNU Dialect)** - C ++ 11 (GNU Dialect) dil standardı.<br>**C ++ 14 (GNU Dialect)** - C ++ 14 (GNU Dialect) dil standardı.<br>
+C dili standart | C dili standart belirler. | **Default**<br>**C89** -C89 dil standardı.<br>**C99** -C99 dil standardı.<br>**C11** -C11 dil standardı.<br>**C99 (GNU Dialect)** -C99 (GNU Dialect) dil standardı.<br>**C11 (GNU Dialect)** -C11 (GNU Dialect) dil standardı.<br>
+C++ dili standart | C++ dili standart belirler. | **Default**<br>**C ++ 03** -C ++ 03 dil standardı.<br>**C ++ 11** -C ++ 11 dil standardı.<br>**C ++ 14** -C ++ 14 dil standardı.<br>**C ++ 03 (GNU Dialect)** - C ++ 03 (GNU Dialect) dil standardı.<br>**C ++ 11 (GNU Dialect)** - C ++ 11 (GNU Dialect) dil standardı.<br>**C ++ 14 (GNU Dialect)** - C ++ 14 (GNU Dialect) dil standardı.<br>
 Önişlemci tanımları | Kaynak dosyanızı önişlem simgelerini tanımlar. (-D).
 Önişlemci tanımları tanımlarını Kaldır | Bir veya daha fazla önişlemci undefines belirtir.  (-U [makrosu])
 Tüm önişlemci tanımları tanımlarını Kaldır | Önceden tanımlanmış tüm önişlemci değerleri tanımsız.  (-undef)

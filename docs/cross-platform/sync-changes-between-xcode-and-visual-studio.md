@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c2a665a397e89edf80f62d0150a98c1941afcd1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: 6913ffc5f2a0515b2682036b46ec8c164e9f877b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>XCode ve Visual Studio arasındaki eşitleme değişiklikleri
 Mobil Geliştirme bileşen için Microsoft Visual C++ çalışmanızı PC ve Mac arasında eşitlenmesi uzak yetenekleri içerir Visual Studio ve Mac makinelerinizi eşleştirilmiş, iOS, Xcode'da projenize açmak için kullanabileceğiniz Visual Studio'da Uygulama projeleri için yeni seçenekler kullanılabilir taşıma kodunuzu XCode ve Visual Studio arasında ve geçici XCode projesi dizin temizleme.  

@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9432c65ec6a481b23655fb2a92915a4a4365ed5e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7458c2f35bfd29c53b939b6300d2759f0e7897f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Uzaktan hata ayıklama için Windows Güvenlik duvarını yapılandırma
 Bu konu, aşağıdaki işletim sistemlerini çalıştıran bilgisayarlarda uzaktan hata ayıklamayı etkinleştirmek için Güvenlik Duvarı'nı yapılandırmak açıklar:  
@@ -45,7 +46,7 @@ Bu konu, aşağıdaki işletim sistemlerini çalıştıran bilgisayarlarda uzakt
   
 |||||  
 |-|-|-|-|  
-|**Bağlantı noktaları**|**Gelen ve giden**|**Protokolü**|**Açıklama**|   
+|**Bağlantı Noktaları**|**Gelen ve giden**|**Protokolü**|**Açıklama**|   
 |4022|gelen|TCP|VS 2017 için. Bağlantı noktası numarası, her bir Visual Studio sürümü için 2 tarafından artırılır. Daha fazla bilgi için bkz: [Visual Studio uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md).|  
 |4023|gelen|TCP|VS 2017 için. Bağlantı noktası numarası, her bir Visual Studio sürümü için 2 tarafından artırılır. (Yalnızca kullanılan uzak hata ayıklama uzaktan hata ayıklayıcı 64-bit sürümünden 32 bitlik bir işlem.) Daha fazla bilgi için bkz: [Visual Studio uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md).| 
 |3702|Giden|UDP|(İsteğe bağlı) Uzaktan hata ayıklayıcı bulma için gerekli.|    
@@ -116,7 +117,7 @@ Hata ayıklayıcı uyumluluk modu kullanıyorsa (**Araçlar > Seçenekler > hata
   
 |||||  
 |-|-|-|-|  
-|**Bağlantı noktaları**|**Gelen ve giden**|**Protokolü**|**Açıklama**|  
+|**Bağlantı Noktaları**|**Gelen ve giden**|**Protokolü**|**Açıklama**|  
 |135, 139, 445|Giden|TCP|Gerekli.|  
 |137, 138|Giden|UDP|Gerekli.|  
 |500, 4500|Giden|UDP|Etki alanı ilkesi ağ iletişimi IPSec gerçekleştirilmesini gerektiriyorsa gereklidir.|  

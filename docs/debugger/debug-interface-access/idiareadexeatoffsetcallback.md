@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aaeee00b1e077a587d33e5b1362dda666fcae698
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: abb829d12f05a9c220bc22647659c438180d237e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
 Belirtilen yürütülebilir bir dosyanın dosya konumuna göre bayt sağlamak bir istemci uygulaması sağlar.  
@@ -34,7 +35,7 @@ IDiaReadExeAtOffsetCallback : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiareadexeatoffsetcallback::readexecutableat](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Belirtilen sayıda baytı yürütülebilir bir dosyanın belirtilen uzaklığı başlayarak okur.|  
+|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Belirtilen sayıda baytı yürütülebilir bir dosyanın belirtilen uzaklığı başlayarak okur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  İstemci uygulaması, mutlak bir uzaklık çalıştırılabilir programın dosyasına kullanarak yürütülebilir dosyanın bayt sağlamak için bu arabirimi uygular. Göreli sanal adresi kullanmak için uygulama [Idiareadexeatrvacallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) arabirimi.  
@@ -52,4 +53,4 @@ IDiaReadExeAtOffsetCallback : IUnknown
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [Idiareadexeatrvacallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
+ [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)

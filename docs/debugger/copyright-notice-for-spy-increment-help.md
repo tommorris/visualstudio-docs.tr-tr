@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d14ceaa2f793897bab4503d9d920bd2ce9f8c4fe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2575ef4aca817133eab19498f4c40cdc3e83e506
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="copyright-notice-for-spy-help"></a>Spy++ Yardımı için Telif Hakkı Bildirimi
 Bu belgedeki bilgiler bulunmaksızın değişikliklerine tabidir. Şirketler, adları ve buradaki örneklerde kullanılan verileri, aksi belirtilmediği sürece kurgusaldır. Bu belgenin hiçbir bölümü çoğaltılamaz veya herhangi bir biçimde veya herhangi bir yöntem, elektronik veya mekanik, Microsoft Corporation'ın express yazılı izni olmadan herhangi bir amaçla iletilemez.  

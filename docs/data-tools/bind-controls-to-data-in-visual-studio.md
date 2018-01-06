@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9361380aa53b8f6070f4ff9d956620c5344eec7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: d6a1ab26dc402d039a5e858896ec25668be8df9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere denetimler bağlama
 Denetimlere veri bağlama tarafından uygulamanızı kullanıcılara verileri görüntüleyebilir. Bu veri bağlama denetimleri konumundan öğeleri sürükleyerek oluşturabileceğiniz **veri kaynakları** tasarım yüzeyi veya Visual Studio'da yüzeyinde denetimleri penceresi.  
@@ -58,13 +59,13 @@ Denetimlere veri bağlama tarafından uygulamanızı kullanıcılara verileri g�
 |----------|----------------------|  
 |Açık **veri kaynakları** penceresi.|Tasarım yüzeyi düzenleyicisinde açın ve seçin **Görünüm** > **veri kaynakları**.|  
 |Bir veri kaynağı projenize ekleyin.|[Yeni veri kaynakları ekleyin](../data-tools/add-new-data-sources.md)|  
-|Bir öğeden sürüklediğinizde, oluşturduğunuz denetimini ayarlama **veri kaynakları** Tasarımcı penceresine.|[Veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimini ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|  
+|Bir öğeden sürüklediğinizde, oluşturduğunuz denetimini ayarlama **veri kaynakları** Tasarımcı penceresine.|[Deneti veri kaynakları penceresinden sürüklendiğinde oluşturulacak şekilde ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|  
 |Öğeleri ile ilişkili denetimleri listesini değiştirmek **veri kaynakları** penceresi.|[Veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md)|  
 |Verilere bağlı denetimler oluşturun.|[Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)|  
 |Bir nesnede veya koleksiyonda bağlayın.|[Visual Studio'da nesne bağlama](../data-tools/bind-objects-in-visual-studio.md)|  
-|Kullanıcı Arabiriminde görünen verileri filtreleyin.|[Filtreleme ve bir Windows Forms uygulamasındaki verileri sıralama](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|  
-|Denetimler için resim yazıları özelleştirin.|[Visual Studio'nun verilere bağlı denetimler için resim yazıları nasıl oluşturduğunu özelleştirme](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|  
+|Kullanıcı Arabiriminde görünen verileri filtreleyin.|[Bir Windows Forms uygulamasındaki verileri filtreleme ve sıralama](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|  
+|Denetimler için resim yazıları özelleştirin.|[Visual Studio'nun verilere bağlı denetimler için başlık oluşturma biçimini özelleştirme](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [.NET için Visual Studio veri araçları](../data-tools/visual-studio-data-tools-for-dotnet.md)   
- [Windows Forms veri bağlama](/dotnet/framework/winforms/windows-forms-data-binding)
+ [Windows Forms Veri Bağlama](/dotnet/framework/winforms/windows-forms-data-binding)

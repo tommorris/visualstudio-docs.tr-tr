@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: be65ae9177591b015cd8b29b3dbdc262b66a30ab
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: c25c76ba43c983a6029c8d50e183ccf839ef08bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intrinsic-functions"></a>İç İşlevler
 Bu yan etkileri sahip olmayan bir ifade değil sağlanan SAL deyimde C/C++ bir ifade olabilir — örneğin, ++,--ve bu bağlamda tümüne sahip yan etkileri işlevi çağırır.  SAL ancak, bazı işlev benzeri nesneleri ve SAL ifadelerde kullanılabilir bazı ayrılmış simgeleri sağlar. Bunlar denir *iç işlevler*.  
@@ -37,7 +38,7 @@ Bu yan etkileri sahip olmayan bir ifade değil sağlanan SAL deyimde C/C++ bir i
 |`_Inexpressible_(expr)`|Burada bir arabellek boyutu, ek açıklama ifade kullanarak temsil etmek için çok karmaşık bir durum ifade eder — Örneğin, ne zaman, bir giriş veri kümesi tarama ve sonra sayım hesaplanan üyeleri seçilmiş.|  
 |`_Nullterm_length_(param)`|`param`Arabellek kadar ancak null Sonlandırıcı hariç öğelerinde sayısıdır. Toplama olmayan, void olmayan türündeki tüm arabelleğe uygulanabilir.|  
 |`_Old_(expr)`|Önkoşul değerlendirildiğinde `_Old_` giriş değeri döndürür `expr`.  Sonrası koşulunda değerlendirilirken değeri döndürür `expr` bu önkoşulu değerlendirilen gibi.|  
-|`_Param_(n)`|`n`Parametresinden 1'den sayım bir işleve `n`, ve `n` değişmez değer bir tamsayı sabiti olduğunda. Parametre olarak adlandırılmışsa, bu ek açıklama ada göre parametre erişmek için aynıdır. **Not:** `n` elips tarafından tanımlanan veya işlev prototipleri adları değil kullanıldığı kullanılabilir konumsal parametreler başvurabilir.  |  
+|`_Param_(n)`|`n`Parametresinden 1'den sayım bir işleve `n`, ve `n` değişmez değer bir tamsayı sabiti olduğunda. Parametre olarak adlandırılmışsa, bu ek açıklama ada göre parametre erişmek için aynıdır. **Not:** `n` elips tarafından tanımlanan veya işlev prototipleri adları değil kullanıldığı kullanılabilir konumsal parametreler başvurabilir.|  
 |`return`|C/C++ anahtar sözcüğü ayrılmış `return` SAL ifadede bir işlevin dönüş değeri belirtmek için kullanılabilir.  Değer yalnızca post kullanılabilir durumda; öncesi durumunda kullanmak için bir sözdizimi hatası var.|  
   
 ## <a name="string-specific"></a>Belirli dize  

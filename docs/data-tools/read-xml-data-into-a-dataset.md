@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 31c17df9b8b3e0a0b54d99f95e8a3d5704140cf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 093dbb5ee8f088a7f2e4ccd1dd063cfeecc2c5e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Bir veri kümesini XML verilerini okuma
 ADO.NET XML verilerle çalışmak için basit yöntemleri sağlar. Bu kılavuzda, bir veri kümesini XML verileri yükler bir Windows uygulaması oluşturun. Veri kümesi sonra görüntülenen bir <xref:System.Windows.Forms.DataGridView> denetim. Son olarak, XML dosyasının içeriğine göre bir XML şeması bir metin kutusunda görüntülenir.  
@@ -247,4 +248,4 @@ ADO.NET XML verilerle çalışmak için basit yöntemleri sağlar. Bu kılavuzda
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da veri erişimi](../data-tools/accessing-data-in-visual-studio.md)       
- [Visual Studio'daki XML araçları](../xml-tools/xml-tools-in-visual-studio.md)
+ [Visual Studio'daki XML Araçları](../xml-tools/xml-tools-in-visual-studio.md)

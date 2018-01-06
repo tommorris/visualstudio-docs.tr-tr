@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 28398032eb4c17916af4294e5ccab386040cf98e
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e28cf13486e21564c4acdf62e3edc89321a4f1b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>DataContext yöntemin dönüş türünü değiştirme alınamaz
 DataContext yöntemin dönüş türünü değiştirme işlemi geri alınamaz. Otomatik olarak oluşturulan türüne dönmek için öğe Gezgini'nden Sunucu Gezgini/veritabanı O/R Tasarımcısı üzerine yeniden sürükleyin gerekir. Dönüş türü değiştirmek istediğinizden emin misiniz?  

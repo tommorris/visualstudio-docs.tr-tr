@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 41fe8afba19939dfbbbd5c055f5ebd53e9fc2e04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: f744bd9535a4946570267de027e7096b41d274e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Xamarin uygulamalarıyla uygulama yaşam döngüsü yönetimi (ALM)
 Xamarin Android, iOS ve C#, .NET ve Visual Studio kullanarak Windows hedefleme platformlar arası mobil uygulamalar oluşturmanıza olanak sağlar. Xamarin platformlarıyla yalnızca platforma özgü olmasını gerektiren küçük bir yüzdesi arasında paylaşılmak üzere kod büyük bir kısmı sağlar. Xamarin kendisi hakkında daha fazla bilgi için bkz: [Visual Studio ve Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
@@ -64,7 +65,7 @@ Xamarin Android, iOS ve C#, .NET ve Visual Studio kullanarak Windows hedefleme p
 |-------------|----------------------------|-------------------------|  
 |[Team Foundation sürüm denetimini kullanma](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) veya Visual Studio Team Services|Evet||  
 |[Git Team Services ile çalışmaya başlama](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Evet||  
-|[Kod kalitesini geliştirme](/visualstudio/test/improve-code-quality)|Evet||  
+|[Kod Kalitesini Geliştirme](/visualstudio/test/improve-code-quality)|Evet||  
 |[Kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md)|Evet|Uygulama çalışma zamanına kadar çözülmüş değil burada platforma özgü sınırları dışında.|  
 |[Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)|Evet||  
   
@@ -88,8 +89,8 @@ Xamarin Android, iOS ve C#, .NET ve Visual Studio kullanarak Windows hedefleme p
 |El ile test etme|Evet||  
 |Test Yöneticisi'ni (kaydı ve kayıttan yürütme testleri)|Evet|Windows cihazlar ve yalnızca Visual Studio'dan Android öykünücüsünü. Tüm aygıtlar için kayıt ile olası [Xamarin Testi Kaydedicisi](https://www.xamarin.com/test-cloud/recorder).|  
 |Kod kapsamı|yok||  
-|[Kodunuza birim testi](../test/unit-test-your-code.md)|Evet|Windows ve Android hedefleri için yerleşik mstest'i Araçlar kullanılabilir. Windows, Android ve iOS üzerinde birim testleri çalıştırmak için Xamarin NUnit önerir. Bkz: [yapılandırma TFS xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin Web sitesi).|  
-|[Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)|Yalnızca Windows|Visual Studio'nun UI Testi Kaydedicisi Windows Only'dir. Tüm platformlar için bkz: [Xamarin Testi Kaydedicisi](https://www.xamarin.com/test-cloud/recorder).|  
+|[Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)|Evet|Windows ve Android hedefleri için yerleşik mstest'i Araçlar kullanılabilir. Windows, Android ve iOS üzerinde birim testleri çalıştırmak için Xamarin NUnit önerir. Bkz: [yapılandırma TFS xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin Web sitesi).|  
+|[Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)|Yalnızca Windows|Visual Studio'nun UI Testi Kaydedicisi Windows Only'dir. Tüm platformlar için bkz: [Xamarin Testi Kaydedicisi](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Kod kalitesini geliştirme  
  Başvuru bağlantısı:  **[kod kalitesini geliştirmek](/visualstudio/test/improve-code-quality)**  
@@ -98,7 +99,7 @@ Xamarin Android, iOS ve C#, .NET ve Visual Studio kullanarak Windows hedefleme p
 |-------------|----------------------------|-------------------------|  
 |[Yönetilen kod kalitesini analiz etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Evet||  
 |[Kod kopyası algılamayı kullanarak yinelenen kodları bulma](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Evet||  
-|[Ölçüm karmaşıklığı ve yönetilen kod bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Evet||  
+|[Yönetilen Kodun Ölçüm Karmaşıklığı ve Bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Evet||  
 |[Performans Gezgini](../profiling/performance-explorer.md)|Hayır|Kullanım [Xamarin profil oluşturucu](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) Xamarin Studio aracılığıyla yerine. Xamarin profil oluşturucu şu anda önizlemede değil ve henüz Windows hedefler için çalışmaz unutmayın.|  
 |[.NET Framework bellek sorunlarını çözümleme](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Hayır|Visual Studio Araçları kancaları profil oluşturma için Mono framework uygulamasına sahip değilsiniz.|  
   

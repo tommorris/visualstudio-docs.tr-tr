@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43240b8969026a8bbec18528230d3ca97bcb2236
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9cb2b7a95772ddd95bf4379ea0749cf42419a182
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: COM görünebilir türler içinde statik üyelerden kaçının
 |||  
@@ -89,11 +90,11 @@ namespace Samples
  [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_2.cs)]  
   
 ## <a name="related-rules"></a>İlgili kuralları  
- [CA1017: derlemeleri ComVisibleAttribute ile işaretleme](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
+ [CA1017: Derlemeleri ComVisibleAttribute ile işaretleyin](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
- [CA1406: Visual Basic 6 istemcileri için Int64 bağımsız kaçının](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)  
+ [CA1406: Visual Basic 6 istemcileri için Int64 bağımsız değişkenlerinden kaçının](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)  
   
  [CA1413: COM görünebilir değer türleri içinde genel olmayan alanlardan kaçının](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönetilmeyen kod ile birlikte çalışma](/dotnet/framework/interop/index)
+ [Yönetilmeyen Kod ile Birlikte Çalışma](/dotnet/framework/interop/index)

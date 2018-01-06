@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c76a173f137ede589b870f5119153a4233bcd730
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d85ef4eeb3d0836c1da8b12bf3413e11699d1af1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 Modüle ya da görüntü temel konumu ve bellek uzaklıklarını ayrıntılarını gösterir.  
@@ -34,9 +35,9 @@ IDiaImageData : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiaımagedata::get_relativevirtualaddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Uygulamaya göre modülü sanal bellekte konumunu alır.|  
-|[Idiaımagedata::get_virtualaddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Resmin sanal bellekte konumunu alır.|  
-|[Idiaımagedata::get_imagebase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Görüntü tabanlı burada bellek konumunu alır.|  
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Uygulamaya göre modülü sanal bellekte konumunu alır.|  
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Resmin sanal bellekte konumunu alır.|  
+|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Görüntü tabanlı burada bellek konumunu alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bazı hata ayıklama akışlar (XDATA, PDATA) görüntüde ayrıca depolanan verilerin kopyalarını içerir. Bu nesneler seçmeleri için veri akışı `IDiaImageData` arabirimi. Ayrıntılar için bu konudaki "Çağıranlar için Notlar" bölümüne bakın.  
@@ -120,4 +121,4 @@ void ShowImageData(IDiaSession *pSession)
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumdebugstreamdata](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+ [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 318acd282090dd17fcfd7fd12e7370e906c67806
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 3d295cc9527aae2f566f5ec4d1ba92a2b129fbd4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Nasıl yapılır: LINQ tabloları ve görünümleri (O/R Tasarımcısı) eşlenen SQL sınıfları için oluşturma
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]Veritabanı tabloları ve görünümleri eşlenen sınıfları çağrılır *sınıflar*. Bir kaydı oluşturan sütunları tek tek tek tek bir varlık sınıfı özelliklerini Eşle ancak varlık sınıfı bir kayda eşler. Tabloları veya görünümleri sürükleyerek veritabanı tabloları veya görünümleri göre varlık sınıfları oluşturmak **Sunucu Gezgini**/**Database Explorer** üzerine [LINQ-SQL araçları Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Sınıfları oluşturur ve belirli geçerlidir [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] etkinleştirmek için öznitelikler [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] işlevi (veri iletişimi ve özelliklerini düzenleme <xref:System.Data.Linq.DataContext>). Hakkında ayrıntılı bilgi için [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sınıfları için bkz [LINQ to SQL nesne modeli](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  

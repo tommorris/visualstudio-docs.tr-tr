@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 198e4b6d0ba2f3517cf907007cc544ca2e154013
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-code-metrics-data"></a>Kod ölçüm verileri ile çalışma
 
@@ -103,7 +104,7 @@ Seçin ve kod ölçümleri verileri seçili satırını adını ve her veri süt
 
 Oluşturabileceğiniz bir [Visual Studio Team Services (VSTS)](/vsts/index) dayanır iş öğesi sonuçları **kod ölçüm sonuçlarını** penceresi. İş öğesi oluşturulduğunda, Visual Studio otomatik olarak bir başlık girer **başlık** alan ve kod ölçümleri verileri altında **geçmişi** sekmesi.
 
-VSTS hakkında daha fazla bilgi için iş öğelerini, bkz: [iş öğelerini](/vsts/work/work-items/index).
+VSTS hakkında daha fazla bilgi için iş öğelerini, bkz: [iş öğeleri (VSTS)](/vsts/work/work-items/index).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Bir sonuca bağlı bir iş öğesi oluşturmak için
 

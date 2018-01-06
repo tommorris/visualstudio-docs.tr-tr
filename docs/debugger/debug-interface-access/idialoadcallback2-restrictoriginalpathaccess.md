@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 826cebba9d4eaf8e2bcf6d055a2ce524e1cf17d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 84c9eabb3eaeaec29e790a12c802aae5b1cfb610
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
 .Pdb dosyasını özgün hata ayıklama dizinde aramak uygun olup olmadığını belirler.  
@@ -36,4 +37,4 @@ HRESULT RestrictOriginalPathAccess ();
  Herhangi bir başka dönüş kodu `S_OK` özgün hata ayıklama dizinindeki .pdb dosyasını arayan engeller. Özgün hata ayıklama yürütülebilir dosyada hata ayıklama açıldığında derlenmiş simge dosyasının yolu dizindir. Bu yol mutlaka yürütülebilir dosyanın bulunduğu yolu ile aynı değil.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idialoadcallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+ [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 5936edd6096bd708dda1b03f60f94cea3d6c1e5b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 7ade7aa6e103a8637d26b10029faabc434ce3a83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere Windows Forms denetimleri bağlama
 Windows Forms veri bağlama tarafından uygulamanızı kullanıcılara verileri görüntüleyebilir. Bu veri bağlama denetimleri oluşturmak için öğelerinden sürükleyebilirsiniz **veri kaynakları** Visual Studio'da Windows Forms tasarımcıya penceresi.
@@ -41,11 +42,11 @@ Windows Forms veri bağlama tarafından uygulamanızı kullanıcılara verileri 
   
 Hakkında daha fazla bilgi için <xref:System.Windows.Forms.BindingSource> bileşeni, bkz:  
   
--   [BindingSource bileşeni](/dotnet/framework/winforms/controls/bindingsource-component)  
+-   [BindingSource Bileşeni](/dotnet/framework/winforms/controls/bindingsource-component)  
   
--   [BindingSource bileşenine genel bakış](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
+-   [BindingSource Bileşenine Genel Bakış](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
--   [BindingSource bileşeni mimarisi](/dotnet/framework/winforms/controls/bindingsource-component-architecture)  
+-   [BindingSource Bileşeni Mimarisi](/dotnet/framework/winforms/controls/bindingsource-component-architecture)  
   
 [BindingNavigator denetimi](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms) bir Windows uygulaması tarafından görüntülenen verileri gezinme için bir kullanıcı arabirimi sağlar.
 

@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 23cf5ee9ef7369d8c0f52adde639adad4abe3ae6
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 9f2373e3a851899d139360caf0f6bb8b6ab0efa5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Nasıl yapılır: bir işlemi kullanarak veri kaydetme
 Kullanarak bir işlemde veri kaydetme <xref:System.Transactions> ad alanı. Kullanım <xref:System.Transactions.TransactionScope> sizin için otomatik olarak yönetilen bir işlemde katılmak için nesne.  
@@ -53,5 +54,5 @@ Kullanarak bir işlemde veri kaydetme <xref:System.Transactions> ad alanı. Kull
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]  
   
 ## <a name="see-also"></a>Ayrıca bkz.
-[Veritabanına veri kaydetme](../data-tools/save-data-back-to-the-database.md)  
-[İzlenecek yol: bir işlemde veri kaydetme](../data-tools/save-data-in-a-transaction.md)  
+[Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)  
+[İzlenecek yol: Bir işlemde veri kaydetme](../data-tools/save-data-in-a-transaction.md)  

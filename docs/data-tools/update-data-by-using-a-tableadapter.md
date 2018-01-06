@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 7d49f0ddc965327334aea471b1276b4e78987ec2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 4968eab5e1d355543a8658e72540bc66fa2543b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>TableAdapter kullanarak veri güncelleştirme
 Veri kümenizi verilerde değişiklik ve doğrulanmış sonra güncelleştirilen verileri bir veritabanına geri çağırarak gönderebilirsiniz `Update` yöntemi bir [TableAdapter](../data-tools/create-and-configure-tableadapters.md). `Update` Yöntemi bir tek veri tablosunu güncelleştirir ve göre doğru komutu (INSERT, UPDATE veya DELETE) çalıştıran <xref:System.Data.DataRow.RowState%2A> tablosundaki her veri satırının. Bir veri kümesi ilişkili tabloları, Visual Studio güncelleştirmeler yapmak için kullandığınız bir TableAdapterManager sınıfı oluşturur. TableAdapterManager sınıfı güncelleştirmeleri veritabanında tanımlı yabancı anahtar kısıtlamaları göre doğru sırada yapılan sağlar. Verilere bağlı denetimler kullandığınızda, veri bağlama mimarisi tableAdapterManager adlı TableAdapterManager sınıfının üye değişkeni oluşturur. 
@@ -53,4 +54,4 @@ Veri kümenizi verilerde değişiklik ve doğrulanmış sonra güncelleştirilen
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veritabanına veri kaydetme](../data-tools/save-data-back-to-the-database.md)
+ [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)

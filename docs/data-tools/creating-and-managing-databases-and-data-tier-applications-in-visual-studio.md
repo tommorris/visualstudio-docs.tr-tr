@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 7f538c51bd5f15f91dfae0d13a9dae8cf4f8afb1
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 8e599e1d309ab254c2b2d5a3a490c0cd912b8823
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Veritabanı projeleri ve Visual Studio'da veri katmanı uygulamaları  
 Veritabanı projeleri yeni veritabanları oluşturmak için kullanabileceğiniz yeni veri katmanı uygulamaları (Dac'ler) ve varolan veritabanları ve veri katmanı uygulamaları güncelleştirmek için. Hem veritabanı projeleri hem de DAC projeleri, sürüm denetimi ve proje yönetimi tekniklerini yönetilen veya özgün kod bu teknikler uygulamak benzer şekilde, veritabanı geliştirme çabalarınız uygulamak etkinleştirin. Geliştirme ekibiniz oluşturarak veritabanları ve veritabanı sunucuları için değişiklikleri yönetmenize yardımcı olabilir bir *DAC proje*, *veritabanı projesi*, veya bir *sunucu projesi* ve onu koyma Sürüm denetimi altında. Ekibinizin üyeleri sonra kontrol edebilirsiniz, yapı ve değişiklikleri test dosyalarını bir *yalıtılmış geliştirme ortamı*, veya ekiple paylaşımı önce korumalı alan,. Kod kalitesini sağlamaya yardımcı olmak için takımınızın tamamlayın ve üretime değişiklikleri dağıtmadan önce tüm değişiklikleri veritabanına belirli bir sürümü için bir hazırlama ortamında test.  

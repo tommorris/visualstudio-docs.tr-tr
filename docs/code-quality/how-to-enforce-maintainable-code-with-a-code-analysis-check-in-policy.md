@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d9697c7d6a216c08e34eb19287d22a76d67a55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 19d8761abea6934c59673c332ea09e8a0b4e6997
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Nasıl yapılır: Bir Kod Çözümleme İade İlkesi ile Bakımı Yapılabilir Kodu Zorlama
 Geliştiriciler karmaşıklığı ve bakımı kendi kodunun ölçmek için kod ölçümleri aracını kullanabilirsiniz, ancak bir iade ilkesi bir parçası olarak kod ölçümleri çağrılamıyor. Ancak, bir takım kendi kodunun kod ölçümleri standartlar ile uyumluluğun doğrulayın ve iade ilkeleri aracılığıyla kurallarını zorunlu tutmak kod çözümleme kurallarını etkinleştirebilirsiniz. Kod ölçümleri hakkında daha fazla bilgi için bkz: [kod ölçüm değerleri](../code-quality/code-metrics-values.md).  
@@ -60,4 +61,4 @@ Geliştiriciler karmaşıklığı ve bakımı kendi kodunun ölçmek için kod �
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod ölçüm değerleri](../code-quality/code-metrics-values.md)   
- [Oluşturma ve kod çözümleme iade ilkelerini kullanma](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+ [Kod Çözümleme İade İlkeleri Oluşturma ve Kullanma](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

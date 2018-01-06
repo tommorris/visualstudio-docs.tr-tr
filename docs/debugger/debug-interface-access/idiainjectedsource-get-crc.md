@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34a3f5c0add8085556fd1e8e8efe6bdcaaac79ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 33039813b0373257a99378bc6d90b5c0f4f7130b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
 Kaynak kodun baytlar hesaplanan bir Döngüsel artıklık denetimi (CRC) alır.  
@@ -39,4 +40,4 @@ HRESULT get_crc (
  Başarılı olursa, döndürür `S_OK`. Döndürür `S_FALSE` bu özellik desteklenmiyorsa. Aksi takdirde bir hata kodu döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiaınjectedsource](../../debugger/debug-interface-access/idiainjectedsource.md)
+ [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b2d86a6025e2ec9c2ba92870939248cf2dffb5b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: d677c74d44f1ddc0b250d6763cef4738cd642832
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Platformlar arası Mobil Geliştirme için Visual C++ yüklemek
 [Platformlar arası Mobil Geliştirme için Visual C++](http://go.microsoft.com/fwlink/p/?LinkId=536383) Visual Studio 2015 yüklenebilir bileşendir. Platformlar arası Visual Studio şablonları içerir ve bulun, indirin ve bunları kendiniz yapılandırmak zorunda kalmadan hızlıca başlamak için SDK'ları ve platformlar arası araçları yükler. Kolayca oluşturma, düzenleme, hata ayıklama ve test platformlar arası projeleri için Visual Studio'da bu araçları kullanabilirsiniz. Bu konuda, araçları ve Visual Studio kullanarak platformlar arası uygulamalar geliştirmek için gereken üçüncü taraf yazılım nasıl yükleneceği açıklanmaktadır. Bileşen genel bakış için bkz: [Visual C++ platformlar arası mobil](http://go.microsoft.com/fwlink/p/?LinkId=536387)  

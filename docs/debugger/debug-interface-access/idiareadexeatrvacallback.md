@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09a570f27200dc677d292d645973fae8f9460f95
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fdc876897d5106f4d03d5b25b51dec5572837f21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
 Yürütülebilir bir dosyanın göreli sanal adres tarafından belirtilen bayt sağlamak bir istemci uygulaması sağlar.  
@@ -34,7 +35,7 @@ IDiaReadExeAtRVACallback : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiareadexeatrvacallback::readexecutableatrva](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Belirtilen sayıda baytı belirtilen göreli sanal adresinden (RAV) yürütülebilir dosyası başlayarak okur.|  
+|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Belirtilen sayıda baytı belirtilen göreli sanal adresinden (RAV) yürütülebilir dosyası başlayarak okur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  İstemci uygulaması çalıştırılabilir programın dosyasına göreli sanal bir adresi kullanarak yürütülebilir dosyanın bayt sağlamak için bu arabirimi uygular. Mutlak dosya uzaklığı kullanmak için uygulama [Idiareadexeatoffsetcallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) arabirimi.  
@@ -52,4 +53,4 @@ IDiaReadExeAtRVACallback : IUnknown
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [Idiareadexeatoffsetcallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+ [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

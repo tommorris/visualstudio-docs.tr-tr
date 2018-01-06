@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: feebffca2c332466e6f5105c4f69b74744922cf0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fa90825f837341a0ad221317d1a83be090b8774f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
 .Dbg dosyaları hata ayıklama bilgi arıyorsanız izin verilip verilmediğini belirler.  
@@ -36,4 +37,4 @@ HRESULT RestrictDBGAccess();
  Dışındaki herhangi bir değeri döndürme `S_OK` .dbg dosyaları hata ayıklama bilgileri aranıyor önlemek için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idialoadcallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+ [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

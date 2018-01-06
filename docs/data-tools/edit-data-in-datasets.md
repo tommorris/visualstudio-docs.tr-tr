@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc42474ff9cb4762b43463e5e0929f11d58ad7d0
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: afb484c1d3bfdd705c5a28f150e4631048ead49d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-data-in-datasets"></a>Veri kümelerindeki verileri düzenleme
 Herhangi bir veritabanı bir tablodaki verileri düzenleme çok gibi veri tablolarındaki verileri düzenleyin. İşlem ekleme, güncelleştirme ve tablodaki kayıt silme içerebilir. Veri bağlama formunda, hangi alanlar kullanıcı düzenlenebilir belirtebilirsiniz. Bu durumlarda, böylece değişiklikleri veritabanına geri daha sonra gönderilebilir tüm değişiklik izleme veri bağlama altyapısı işler. Verileri programlı olarak düzenlemeleri yapın ve bu değişiklikleri veritabanına geri göndermek istiyorsanız, nesneleri ve değişiklik izleme bunu yöntemleri kullanmanız gerekir.  

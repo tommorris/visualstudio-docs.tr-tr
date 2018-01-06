@@ -5,11 +5,12 @@ ms.author: apexprodleads
 ms.topic: landing-page
 title: "C++ belgeleri ile Mobil Geliştirme | Microsoft Docs"
 description: "İOS, yerel C++ uygulamaları oluşturma Visual Studio ile Android ve Windows cihazları."
-ms.openlocfilehash: 2d7dc3860091e11ab7b8983d9f1b739ffd383ba3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: apexprodleads
+ms.openlocfilehash: ec8f21742192a098543986d117241d2bb29bb36d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mobile-development-with-c-documentation"></a>C++ belgeleri ile Mobil Geliştirme
 
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
                 <div class="card">
                     <div class="cardText">
                         <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
-                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">IDE ve Visual C++ geliştirme araçları</a><p>
+                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">Visual C++ Geliştirme Araçları ve IDE</a><p>
                     </div>
                 </div>
             </div>

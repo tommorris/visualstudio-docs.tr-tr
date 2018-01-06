@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef0bff2d084abc51f22bccc8aeef42d1545a5ac9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cdd8c9d2e581df3e7b0ebeba092a212fb7a89f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 DIA SDK'sı sanal ve göreli sanal adresleri hata ayıklama nesneleri için nasıl hesaplar üzerinde denetim sağlar.  
@@ -34,14 +35,14 @@ IDiaAddressMap : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiaaddressmap::get_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Belirli bir oturum için bir adres eşlemesi kurulduğunda olup olmadığını gösterir.|  
-|[Idiaaddressmap::put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Adres eşlemesi simgesi adresleri çevirmek için kullanılması gerekip gerekmediğini belirtir.|  
-|[Idiaaddressmap::get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Hesaplama ve göreli sanal adresleri kullanımını etkinleştirilip etkinleştirilmediğini gösterir.|  
-|[Idiaaddressmap::put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|İstemcinin etkinleştirmek veya devre dışı göreli sanal adresleri hesaplama olanak tanır.|  
-|[Idiaaddressmap::get_imagealign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|Geçerli resmi hizalaması alır.|  
-|[Idiaaddressmap::put_imagealign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|Resmi hizalaması ayarlar.|  
-|[Idiaaddressmap::set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Ayarlar göreli sanal adres çevirisi etkinleştirmek için üstbilgiler görüntü.|  
-|[Idiaaddressmap::set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Görüntü düzeni çevirileri desteklemek için bir adres eşlemesi sağlar.|  
+|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Belirli bir oturum için bir adres eşlemesi kurulduğunda olup olmadığını gösterir.|  
+|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Adres eşlemesi simgesi adresleri çevirmek için kullanılması gerekip gerekmediğini belirtir.|  
+|[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Hesaplama ve göreli sanal adresleri kullanımını etkinleştirilip etkinleştirilmediğini gösterir.|  
+|[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|İstemcinin etkinleştirmek veya devre dışı göreli sanal adresleri hesaplama olanak tanır.|  
+|[IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|Geçerli resmi hizalaması alır.|  
+|[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|Resmi hizalaması ayarlar.|  
+|[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Ayarlar göreli sanal adres çevirisi etkinleştirmek için üstbilgiler görüntü.|  
+|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Görüntü düzeni çevirileri desteklemek için bir adres eşlemesi sağlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu arabirim tarafından sağlanan denetim iki sağladığınız veri kümesi içinde kapsüllenir: görüntü üstbilgileri ve adres eşlemeleri. Çoğu istemcilerin kullandığı [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) yöntemi bir görüntü ve yöntem genellikle tüm gerekli üst bilgileri ve haritalar verileri kendisini bulabilir uygun hata ayıklama bilgilerini bulamıyor. Ancak bazı istemciler özel işleme ve veri için arama uygular. Bu tür istemciler yöntemlerini kullanın `IDiaAddressMap` DIA SDK ile arama sonuçları sağlamak için arabirim.  
@@ -59,4 +60,4 @@ IDiaAddressMap : IUnknown
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [Idiasession](../../debugger/debug-interface-access/idiasession.md)
+ [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

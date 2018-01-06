@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d87d8b6975a68f74e6900ef85ea9a19c5cfa810
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 032e793a8660230bf910f3303c15abc97ec0335d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
 Sona ereceği deyiminin veya ifadesinin kaynak tabanlı satır numarasını alır.  
@@ -39,4 +40,4 @@ HRESULT get_lineNumberEnd (
  Başarılı olursa, döndürür `S_OK`. Döndürür `S_FALSE` bu özellik desteklenmiyorsa. Aksi takdirde bir hata kodu döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idialinenumber](../../debugger/debug-interface-access/idialinenumber.md)
+ [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

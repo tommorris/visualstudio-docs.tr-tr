@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab5acc92df96c416cd614ac18ac66ff34d142a22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3439739626a81636020a6b645ba5820a59747f2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Nesneleri birden çok kez atmayın
 |||  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
  Doğru bir şekilde A <xref:System.IDisposable.Dispose%2A> yöntemi çağrılabilir birden çok kez bir özel durum oluşturmadan. Ancak, bu garanti edilmez ve oluşturulmasını engellemek için bir <xref:System.ObjectDisposedException?displayProperty=fullName> değil çağırmalıdır <xref:System.IDisposable.Dispose%2A> bir nesne üzerinde birden fazla kez.  
   
 ## <a name="related-rules"></a>İlgili kuralları  
- [CA2000: kapsamı kaybetmeden önce Dispose nesneleri](../code-quality/ca2000-dispose-objects-before-losing-scope.md)  
+ [CA2000: Kapsamı kaybetmeden önce verileri atın](../code-quality/ca2000-dispose-objects-before-losing-scope.md)  
   
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
  Bu kural ihlal düzeltin, kod yolu, bu nedenle bu bakılmaksızın uygulama değiştirmek için <xref:System.IDisposable.Dispose%2A> nesne için yalnızca bir kez çağrılır.  
@@ -86,4 +87,4 @@ finally
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.IDisposable?displayProperty=fullName>   
- [Desen dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Dispose Deseni](/dotnet/standard/design-guidelines/dispose-pattern)

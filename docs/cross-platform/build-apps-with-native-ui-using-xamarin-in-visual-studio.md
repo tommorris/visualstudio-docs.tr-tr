@@ -12,11 +12,12 @@ caps.latest.revision: "31"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 92bd6ea136c30c02e32045692d311afe93b86296
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: c135468e380bd65383f61aa69b906352a3febe47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Xamarin Visual Studio kullanarak yerel kullanıcı Arabirimi ile uygulamalar oluşturma
 Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-install.md) ve [Xamarin ortamınızı doğrulayın](../cross-platform/verify-your-xamarin-environment.md), bu kılavuzda (aşağıda yerel UI Katmanlar gösterilmiştir) temel bir Xamarin uygulamasının nasıl oluşturulacağını gösterir. Yerel kullanıcı Arabirimi ile taşınabilir sınıf kitaplığı (PCL) paylaşılan kod bulunur ve tek tek platform projeleri UI tanımları içerir.  
@@ -251,7 +252,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
     |Özellik|Değer|  
     |--------------|-----------|  
     |**metin**|**Posta kodu göre ara**|  
-    |**Kimliği**|`@+id/ZipCodeSearchLabel`|  
+    |**id**|`@+id/ZipCodeSearchLabel`|  
     |**layout_marginLeft**|`10dp`|  
     |**textColor**|`@android:color/white`|  
     |**metin stili**|`bold`|  
@@ -283,7 +284,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
     |Özellik|Değer|  
     |--------------|-----------|  
     |**metin**|**Posta Kodu**|  
-    |**Kimliği**|`@+id/ZipCodeLabel`|  
+    |**id**|`@+id/ZipCodeLabel`|  
     |**layout_marginLeft**|`10dp`|  
     |**layout_marginTop**|`5dp`|  
   
@@ -304,7 +305,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
   
     |Özellik|Değer|  
     |--------------|-----------|  
-    |**Kimliği**|`@+id/zipCodeEntry`|  
+    |**id**|`@+id/zipCodeEntry`|  
     |**layout_marginLeft**|`10dp`|  
     |**layout_marginBottom**|`10dp`|  
     |**Genişlik**|`165dp`|  
@@ -327,7 +328,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
   
     |Özellik|Değer|  
     |--------------|-----------|  
-    |**Kimliği**|`@+id/weatherBtn`|  
+    |**id**|`@+id/weatherBtn`|  
     |**metin**|**Hava durumu Al**|  
     |**layout_marginLeft**|`20dp`|  
     |**layout_alignBottom**|`@id/zipCodeEntry`|  

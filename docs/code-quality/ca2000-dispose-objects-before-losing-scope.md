@@ -19,11 +19,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81c553a9ae45ed44e8c5d96f49f2063e6383e5ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 57b499756292a62c64b44f864042ffa740a14016
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Kapsamı kaybetmeden önce verileri atın
 |||  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-rules"></a>İlgili kuralları  
  [CA2213: Atılabilen alanlar atılmalıdır](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2202: nesneleri birden çok kez atmayın](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
+ [CA2202: Nesneleri birden çok kez atmayın](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
   
 ## <a name="example"></a>Örnek  
  Bir seferlik nesnesi döndüren bir yöntem uyguluyorsanız, nesne atıldı emin olmak için bir try/finally bloğu bir catch bloğunun olmadan kullanın. Try/finally bloğu kullanarak hataya noktada oluşturulması ve bu nesne atıldı emin olmak özel durumlar izin verin.  
@@ -166,4 +167,4 @@ End Function
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.IDisposable>   
- [Desen dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Dispose Deseni](/dotnet/standard/design-guidelines/dispose-pattern)

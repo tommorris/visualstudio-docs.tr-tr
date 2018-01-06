@@ -25,11 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0f328cbaac03680885bdbda97dff7bc9ac3cf2cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b5cc63d5a83c9f1400dd183982fa68864d35fdbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-data-in-datasets"></a>Veri kümelerindeki verileri doğrulama
 Verileri doğrulama kısıtlamaları bir veri kümesi'nin şema içinde veri nesnelerine girilmesini değerleri uygun onaylayan işlemidir. Doğrulama işlemini de bu değerleri, uygulamanız için kurulmuş kuralları takip onaylar. Temel alınan veritabanı güncelleştirme göndermeden önce verileri doğrulamak için iyi bir uygulamadır. Bu, hataları ve bunun yanı sıra olası bir uygulama ve veritabanı arasındaki gidiş dönüş sayısını azaltır.  
@@ -213,4 +214,4 @@ Geçirme <xref:System.Data.DataRowVersion> değeri sütun dizini (veya sütun ad
 ## <a name="see-also"></a>Ayrıca bkz.
 [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)  
 [Nasıl yapılır: Windows Forms DataGridView denetiminde verileri doğrulama](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)   
-[Nasıl yapılır: Forms ErrorProvider bileşeni Windows ile Form doğrulama için hata simgeleri görüntüleme](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+[Nasıl yapılır: Windows Forms ErrorProvider Bileşeni ile Form Doğrulama için Hata Simgeleri Görüntüleme](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

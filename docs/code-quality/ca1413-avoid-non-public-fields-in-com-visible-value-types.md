@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8dc7c435d9f853cfb67f7c45f5ec7116ff6fb8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e2763cb21107f19768a8161d18e1128eb000d29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: COM görünebilir değer türleri içinde genel olmayan alanlardan kaçının
 |||  
@@ -55,8 +56,8 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-rules"></a>İlgili kuralları  
  [CA1407: COM görünebilir türler içinde statik üyelerden kaçının](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
   
- [CA1017: derlemeleri ComVisibleAttribute ile işaretleme](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
+ [CA1017: Derlemeleri ComVisibleAttribute ile işaretleyin](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönetilmeyen kod ile birlikte çalışma](/dotnet/framework/interop/index)   
- [Birlikte çalışma için .NET türlerini niteleme](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+ [Birlikte Çalışma için .NET Türlerini Niteleme](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

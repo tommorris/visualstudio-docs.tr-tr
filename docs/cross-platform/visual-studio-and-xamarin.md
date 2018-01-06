@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: e84f946915328eb0ee5a49e690b2ee520d29e968
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: 272b648b7b7bc27ae2f043a3a3d0541c87822258
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio ve Xamarin
 Xamarin olan yerel iOS, Android ve Windows için mobil uygulama geliştirme platformu uygulamalardan ortak C# / .NET yaklaşık % 100 kodun yeniden platformlar arasındaki %75 elde taban, kod. Xamarin, C# ile yazılmış uygulamaların temel platform API'leri tam erişimi ve yerel kullanıcı arabirimleri derleme ve çalışma zamanı performans üzerinde çok az etkisi şekilde platforma özgü paketler derleme olanağı vardır. (Not: Xamarin de destekler F #, ancak bu belgeleri C# üzerinde yalnızca odaklanır. Visual Basic şu anda desteklenmiyor.)  

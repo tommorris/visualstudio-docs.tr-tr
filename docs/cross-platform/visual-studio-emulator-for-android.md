@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7900b976e2533f1bd9a53d1e9e437339c6041a73
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df3e4def97d8563e3901662ede92e79acd5c5d4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü
 Android için Visual Studio öykünücüsü bir Android cihaz öykünen bir masaüstü uygulamasıdır. Hata ayıklama ve bir fiziksel aygıt olmadan Android uygulamalarını test sanallaştırılmış bir ortam sağlar. Ayrıca, uygulama prototipleri için yalıtılmış bir ortam sağlar.  
@@ -45,7 +46,7 @@ Android için Visual Studio öykünücüsü bir Android cihaz öykünen bir masa
 ##  <a name="Requirements"></a>Sistem gereksinimleri ve geriye dönük uyumluluk  
  Donanım, yazılım ve Android için Visual Studio öykünücüsü yapılandırma gereksinimleri hakkında önemli bilgiler için aşağıdaki konuya bakın.  
   
--   [Android için Visual Studio öykünücüsü sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [Android için Visual Studio Öykünücüsü Sistem Gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
  Android için Visual Studio öykünücüsü, Visual Studio 2015 gerektirir; Visual Studio'nun önceki sürümleriyle geriye dönük olarak uyumlu değil.  
   
@@ -100,4 +101,4 @@ Android için Visual Studio öykünücüsü bir Android cihaz öykünen bir masa
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Android için Visual Studio öykünücüsü sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [Android için Visual Studio öykünücüsü sorunlarını giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Android için Visual Studio Öykünücüsü’nde Sorun Giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

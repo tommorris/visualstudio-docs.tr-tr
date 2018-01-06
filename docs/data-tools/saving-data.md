@@ -26,11 +26,12 @@ ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 34ceecce635cb5388bd53ed191c0fc1fa861bc38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 9f4e4cd3ebb12e59fc4b7fbcf16122b381d5f610
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-data"></a>Verileri Kaydetme
 Verileri kaydetme kalıcı yapma işlemi verileri bir uygulamanın veri modelindeki geri özgün veri deposu genellikle bir ilişkisel veritabanı SQL Server gibi değiştirildi olur.  
@@ -40,7 +41,7 @@ Verileri kaydetme kalıcı yapma işlemi verileri bir uygulamanın veri modelind
  Aşağıdaki konular, kavramlar ve veri kaydetme ile ilişkili görevleri açıklar.  
   
 ## <a name="related-topics"></a>İlgili Konular  
-[Veritabanına veri kaydetme](../data-tools/save-data-back-to-the-database.md)  
+[Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)  
  Bir veri kümesinde yapılan bir değişiklik nasıl ve ne bu değişiklikleri veritabanına kaydetmek için değişiklikler hakkında bilgi dataset izler genel bakış sağlar.  
   
 [Nasıl yapılır: ekleme, değiştirme ve silme varlıkları (WCF Veri Hizmetleri)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)  

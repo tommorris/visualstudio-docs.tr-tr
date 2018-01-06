@@ -11,11 +11,14 @@ ms.assetid: 7921D4C7-5526-42F5-8E03-82D3E33A893F
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: a7e12508537a3bcda1df7997ba9e390b75b9beaf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: d5242dd873591abee15f528d09b6f588ea12f5ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-azure-easy-tables-with-unity-walkthrough"></a>Azure kolay tabloları Unity kılavuz ile kullanma
 
@@ -38,19 +41,19 @@ Projeyi Github'da kullanılabilir. Ancak, izlenecek bir boş, yeni projeden baş
 
 ## <a name="walkthrough-steps"></a>Gözden geçirme adımları
 
-1. [Azure'da kolay tablolarını yapılandırmak](visual-studio-tools-for-unity-azure-configure.md)
-2. [Kolay tabloları oluşturma](visual-studio-tools-for-unity-azure-setup.md)
-3. [Geliştirme ortamını hazırlayın](visual-studio-tools-for-unity-azure-prepare.md)
+1. [Azure'da Kolay tablolar Yapılandırma](visual-studio-tools-for-unity-azure-configure.md)
+2. [Kolay Tablolar Oluşturma](visual-studio-tools-for-unity-azure-setup.md)
+3. [Geliştirme ortamını hazırlama](visual-studio-tools-for-unity-azure-prepare.md)
 4. [Veri modeli sınıfları oluşturma](visual-studio-tools-for-unity-azure-data.md)
 5. [Azure MobileServiceClient uygulama](visual-studio-tools-for-unity-azure-mobile-client.md)
-6. [Güncelleştirme Unity Mono güvenlik sertifika deposu](visual-studio-tools-for-unity-azure-security.md)
-7. [İstemci bağlantısını sınama](visual-studio-tools-for-unity-azure-connection.md)
-7. [Örnek oyun varlıkları alma](visual-studio-tools-for-unity-azure-game-assets.md)
-8. [Örnek oyunu sınayın](visual-studio-tools-for-unity-azure-game.md)
-9. [RaceScene açıklama](visual-studio-tools-for-unity-azure-racescene.md)
-10. [HeatmapScene açıklama](visual-studio-tools-for-unity-azure-heatmapscene.md)
-11. [LeaderboardScene açıklama](visual-studio-tools-for-unity-azure-leaderboardscene.md)
+6. [Unity Mono güvenlik sertifika deposunu güncelleştirme](visual-studio-tools-for-unity-azure-security.md)
+7. [İstemci bağlantılarını test etme](visual-studio-tools-for-unity-azure-connection.md)
+7. [Örnek oyun varlıklarını içeri aktarma](visual-studio-tools-for-unity-azure-game-assets.md)
+8. [Örnek oyunu test etme](visual-studio-tools-for-unity-azure-game.md)
+9. [RaceScene açıklaması](visual-studio-tools-for-unity-azure-racescene.md)
+10. [HeatmapScene açıklaması](visual-studio-tools-for-unity-azure-heatmapscene.md)
+11. [LeaderboardScene açıklaması](visual-studio-tools-for-unity-azure-leaderboardscene.md)
 
 
 ## <a name="next-step"></a>Sonraki adım
-* [Azure'da kolay tablolarını yapılandırmak](visual-studio-tools-for-unity-azure-configure.md)
+* [Azure'da Kolay tablolar Yapılandırma](visual-studio-tools-for-unity-azure-configure.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 474b6efeecc13b197f3189804682265beeba907e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ee2733643350b2fea9b78a9d876037497d35e41a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 Geri aramalar yordamı bulma, bulmayla işlemi uygulanan kısıtlama izin vererek DIA simge alır.  
@@ -34,10 +35,10 @@ IDiaLoadCallback2 : IDiaLoadCallback
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idialoadcallback2::restrictoriginalpathaccess](../../debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess.md)|Özgün hata ayıklama dizinindeki .pdb dosyasını arayan belirler.|  
-|[Idialoadcallback2::restrictreferencepathaccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|.Exe dosyasının bulunduğu yolu bir .pdb dosyasını ararken izin verilip verilmediğini belirler.|  
-|[Idialoadcallback2::restrictdbgaccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|.Dbg dosyaları hata ayıklama bilgi arıyorsanız izin verilip verilmediğini belirler.|  
-|[Idialoadcallback2::restrictsystemrootaccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|.Pdb dosyaları için arama sistem kök dizininde izin verilip verilmediğini belirler.|  
+|[IDiaLoadCallback2::RestrictOriginalPathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess.md)|Özgün hata ayıklama dizinindeki .pdb dosyasını arayan belirler.|  
+|[IDiaLoadCallback2::RestrictReferencePathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|.Exe dosyasının bulunduğu yolu bir .pdb dosyasını ararken izin verilip verilmediğini belirler.|  
+|[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|.Dbg dosyaları hata ayıklama bilgi arıyorsanız izin verilip verilmediğini belirler.|  
+|[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|.Pdb dosyaları için arama sistem kök dizininde izin verilip verilmediğini belirler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  İstemci uygulaması bu arabirimi uygular ve kendisine bir başvuru çağrısında sağlar [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) yöntemi. Tüm yöntemlere uygulanacağını unutmayın [Idialoadcallback](../../debugger/debug-interface-access/idialoadcallback.md) de arabirimi.  
@@ -54,4 +55,4 @@ IDiaLoadCallback2 : IDiaLoadCallback
  [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [Idiareadexeatoffsetcallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
  [Idiareadexeatrvacallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   
- [Idialoadcallback](../../debugger/debug-interface-access/idialoadcallback.md)
+ [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)

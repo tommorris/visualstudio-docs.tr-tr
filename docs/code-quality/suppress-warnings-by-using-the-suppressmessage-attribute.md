@@ -22,11 +22,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dfa752c56d26b16f1fac569ba05cfa44693c77a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ce246c0ff960c78aed1901618fdc26bff97779d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>SuppressMessage Özniteliğini Kullanarak Uyarıları Bastırma
 Genellikle, uyarı kodu gözden ve uyarı atlanması gerekip belirlendi bilmeniz ekip üyelerinin olanak nonapplicable olduğunu belirtmek kullanışlıdır. Kaynak gizleme (ISS) içinde uyarı oluşturulduğu konum yakın bir uyarıyı bastırır öznitelik yerleştirilecek bir geliştirici olanak sağlar. ISS özniteliği doğrudan kaynak dosya ekleyebilir veya kısayol menüsünde kullanabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.  
@@ -35,8 +36,8 @@ Genellikle, uyarı kodu gözden ve uyarı atlanması gerekip belirlendi bilmeniz
   
 |||  
 |-|-|  
-|[Kaynak bastırmaya genel bakış](../code-quality/in-source-suppression-overview.md)|ISS ve kodunuzda kullanma hakkında bilgi edinin.|  
-|[Nasıl yapılır: menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|İçindeki uyarıları bastırma öğrenin [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kısayol menüsünü kullanarak IDE.|  
+|[Kaynak Bastırmaya Genel Bakış](../code-quality/in-source-suppression-overview.md)|ISS ve kodunuzda kullanma hakkında bilgi edinin.|  
+|[Nasıl yapılır: Menü Öğesini Kullanarak Uyarıları Bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|İçindeki uyarıları bastırma öğrenin [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kısayol menüsünü kullanarak IDE.|  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Yönetilen kod kalitesini analiz etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

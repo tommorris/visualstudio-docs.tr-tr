@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 713018b96aed70d52b1b11e75b0c2993312ef474
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 11e00594c1cf279fb6b07791bb48f2222cc9c79b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Ayrılmış özel durum türleri oluşturmayın
 |||  
@@ -89,4 +90,4 @@ ms.lasthandoff: 10/31/2017
  Bu kuraldan uyarıyı bastırmayın.  
   
 ## <a name="related-rules"></a>İlgili kuralları  
- [CA1031: genel özel durum türleri catch değil](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+ [CA1031: Genel özel durum türlerini yakalamayın](../code-quality/ca1031-do-not-catch-general-exception-types.md)

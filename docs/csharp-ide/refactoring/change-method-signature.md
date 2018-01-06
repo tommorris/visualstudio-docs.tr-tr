@@ -16,11 +16,12 @@ f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
 dev_langs: csharp
-ms.openlocfilehash: 9ed72704c37fcfc5d0c48ba17937f5b06097ce0b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 6344a30b5772ffa23c09baa4f38a4478d907cc9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="change-a-method-signature-in-c"></a>C# yöntemi imzayı değiştirme #
 **Ne:** kaldırın ya da bir yöntemin parametre sırasını değiştirme imkan tanır.
@@ -63,4 +64,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Yeniden düzenlemesi (C#)](../refactoring-csharp.md)  
-[Önizleme değişiklikleri](../../ide/preview-changes.md)
+[Değişiklikleri Önizleme](../../ide/preview-changes.md)

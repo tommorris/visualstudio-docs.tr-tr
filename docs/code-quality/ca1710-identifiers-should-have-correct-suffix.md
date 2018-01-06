@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4fd4f23ab77e2b810d5064bd45e9f7d530e9844e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d1593800a2cde8ff0aa1bbecd169f5f3ebd601cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Tanımlayıcıların sonekleri doğru olmalıdır
 |||  
@@ -90,7 +91,7 @@ foreach(SomeType x in SomeDictionary.Values) { }
  Diğer sonekleri için bu kural bir uyarıdan engelleme. Sonek hedeflenen kullanım türü adından korumalı olmasını sağlar.  
   
 ## <a name="related-rules"></a>İlgili kuralları  
- [CA1711: Tanımlayıcılar yanlış sonekine sahip olmamalıdır](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
+ [CA1711: Tanımlayıcıların sonekleri yanlış olmamalıdır](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Öznitelikleri](/dotnet/standard/design-guidelines/attributes)   

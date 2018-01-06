@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a14870e494c9c8efeb7c15dabf034f059c4a3c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7fa5f88a3578998fca325500a3815b909b6ce4a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Nasıl yapılır: Kod Çözümleme Dizinini Özelleştirme
 Kod çözümleme tanımlayıcıları kodunuzda yazımı, dilbilgisi çalışması ve diğer adlandırma kurallarına göre hataları denetlemek için yerleşik bir sözlük kullanır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yönergeleri. Eklemek, kaldırmak veya koşulları, kısaltmalar ve kısaltmalar yerleşik sözlüğüne değiştirmek için bir özel sözlük Xml dosyası oluşturabilirsiniz.  
@@ -95,17 +96,17 @@ Kod çözümleme tanımlayıcıları kodunuzda yazımı, dilbilgisi çalışmas�
   
  Aşağıdaki kod çözümleme kurallarını için sözcükler/sözlük/Recognized düğümleri bağlamında uygulanır:  
   
--   [CA1701: Kaynak dize bileşik sözcüklerinin doğru ortası](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701: Kaynak dize bileşik sözcüklerinin küçük/büyük harfleri doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Bileşik sözcüklerin doğru ortası](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: Bileşik sözcüklerin küçük/büyük harfleri doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
 -   [CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
 -   [CA1704: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
--   [CA1709: Tanımlayıcılar doğru ortası](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+-   [CA1709: Tanımlayıcıların büyük/küçük harfleri doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
--   [CA1726: tercih edilen kullanım koşulları](../code-quality/ca1726-use-preferred-terms.md)  
+-   [CA1726: Tercih edilen terimleri kullanın](../code-quality/ca1726-use-preferred-terms.md)  
   
 -   [CA2204: Değişmez değerler doğru yazılmalıdır](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
@@ -130,17 +131,17 @@ Kod çözümleme tanımlayıcıları kodunuzda yazımı, dilbilgisi çalışmas�
   
  Aşağıdaki kod çözümleme kurallarını için koşulları sözcükler/sözlük/tanınmayan düğümünde uygulanır:  
   
--   [CA1701: Kaynak dize bileşik sözcüklerinin doğru ortası](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701: Kaynak dize bileşik sözcüklerinin küçük/büyük harfleri doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Bileşik sözcüklerin doğru ortası](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: Bileşik sözcüklerin küçük/büyük harfleri doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
 -   [CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
 -   [CA1704: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
--   [CA1709: Tanımlayıcılar doğru ortası](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+-   [CA1709: Tanımlayıcıların büyük/küçük harfleri doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
--   [CA1726: tercih edilen kullanım koşulları](../code-quality/ca1726-use-preferred-terms.md)  
+-   [CA1726: Tercih edilen terimleri kullanın](../code-quality/ca1726-use-preferred-terms.md)  
   
 -   [CA2204: Değişmez değerler doğru yazılmalıdır](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
@@ -171,15 +172,15 @@ Kod çözümleme tanımlayıcıları kodunuzda yazımı, dilbilgisi çalışmas�
   
  Aşağıdaki kod çözümleme kurallarını için terimler sözlüğü/sözcükler/kullanım dışı düğümünde uygulanır:  
   
--   [CA1701: Kaynak dize bileşik sözcüklerinin doğru ortası](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701: Kaynak dize bileşik sözcüklerinin küçük/büyük harfleri doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Bileşik sözcüklerin doğru ortası](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: Bileşik sözcüklerin küçük/büyük harfleri doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
 -   [CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
 -   [CA1704: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
--   [CA1726: tercih edilen kullanım koşulları](../code-quality/ca1726-use-preferred-terms.md)  
+-   [CA1726: Tercih edilen terimleri kullanın](../code-quality/ca1726-use-preferred-terms.md)  
   
 ###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Sözlük/sözcükler/bileşik/terim [@CompoundAlternate]  
  Yerleşik sözlük bileşik bir terim yerine tek, ayrık koşulları olarak bazı koşulları tanımlar. Kod çözümleme bileşik word olarak tanımlayan koşulları listesi bir terim dahil ve koşulunun doğru büyük/küçük harf belirtmek için terimi sözlük/sözcükler/bileşik/terim öğesinin iç metni ekleyin. Terim öğesinin CompoundAlternate özniteliği bileşik terim (Pascal büyük) ayrı sözcükleri ilk harfini büyük harf yaparak olun ayrı sözcükleri belirtin. İç metni belirtilen terim sözcükler/sözlük/DiscreteExceptions listesine otomatik olarak eklendiğine dikkat edin.  
@@ -206,9 +207,9 @@ Kod çözümleme tanımlayıcıları kodunuzda yazımı, dilbilgisi çalışmas�
   
  Terimleri sözlüğü/sözcükler/bileşik düğümünde, aşağıdaki kod çözümleme kurallarını için uygulanır:  
   
--   [CA1701: Kaynak dize bileşik sözcüklerinin doğru ortası](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701: Kaynak dize bileşik sözcüklerinin küçük/büyük harfleri doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Bileşik sözcüklerin doğru ortası](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: Bileşik sözcüklerin küçük/büyük harfleri doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
 -   [CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
@@ -235,9 +236,9 @@ Kod çözümleme tanımlayıcıları kodunuzda yazımı, dilbilgisi çalışmas�
   
  Terimleri sözlüğü/sözcükler/DiscreteExceptions düğümünde, aşağıdaki kod çözümleme kurallarını için uygulanır:  
   
--   [CA1701: Kaynak dize bileşik sözcüklerinin doğru ortası](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701: Kaynak dize bileşik sözcüklerinin küçük/büyük harfleri doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Bileşik sözcüklerin doğru ortası](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: Bileşik sözcüklerin küçük/büyük harfleri doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
 ###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Sözlük/kısaltmalar/CasingExceptions/kısaltması  
  Kod Analizi doğru yazılmış olarak tanımlayan koşulları listesi bir kısaltma dahil ve terimi büyük/küçük harf olarak işaretlendiğinde kısaltması için bileşik sözcüklerin nasıl kurallar belirtmek için bir sözlük/kısaltmalar/CasingExceptions iç metin olarak terimi ekleyin / Acronym Element öğesi. Sözlük/kısaltmalar/CasingExceptions/acronym Element öğesi kısaltması büyük/küçük harf duyarlıdır.  
@@ -260,7 +261,7 @@ Kod çözümleme tanımlayıcıları kodunuzda yazımı, dilbilgisi çalışmas�
   
  Aşağıdaki kod çözümleme kurallarını için terimler sözlüğü/kısaltmalar/CasingExceptions düğümünde uygulanır:  
   
--   [CA1709: Tanımlayıcılar doğru ortası](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+-   [CA1709: Tanımlayıcıların büyük/küçük harfleri doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
 ##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Bir projeye özel sözlük uygulamak için  
   

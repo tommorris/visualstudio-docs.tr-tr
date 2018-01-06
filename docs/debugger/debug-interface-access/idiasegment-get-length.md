@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9adb4bc476186b7b78d6cc8bba9f3d5d2b7639e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9c9d120ac72474b65c1609c53f7c35519a566d10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasegmentgetlength"></a>IDiaSegment::get_length
 Kesimdeki bayt sayısını alır.  
@@ -39,4 +40,4 @@ HRESULT get_ length (
  Başarılı olursa, döndürür `S_OK`. Döndürür `S_FALSE` bu özellik desteklenmiyorsa. Aksi takdirde bir hata kodu döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiasegment](../../debugger/debug-interface-access/idiasegment.md)
+ [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20b31e4ea20fd3d1a4ec254507962bf4e8946bb4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 927e13266bf308096592fb5714e1247f4b596ca8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Değer türlerinde eşittir ve işleç eşitliklerinin üzerine yaz
 |||  
@@ -61,11 +62,11 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[FxCop.Performance.OverrideEqualsFixed#1](../code-quality/codesnippet/CSharp/ca1815-override-equals-and-operator-equals-on-value-types_2.cs)]  
   
 ## <a name="related-rules"></a>İlgili kuralları  
- [CA2224: eşittir işlecini aşırı yüklemesi üzerinde geçersiz kılma eşittir](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
+ [CA2224: Eşittir işlecini aşırı yükleyerek eşittiri geçersiz kılın](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
   
- [CA2231: ValueType.Equals geçersiz kılma üzerinde aşırı işleci eşittir.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)  
+ [CA2231: ValueType.Equals değerini geçersiz kılmada eşittir işlecini aşırı yükle](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)  
   
- [CA2226: İşleçler simetrik aşırı olması gerekir](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
+ [CA2226: İşleçler simetrik aşırı yüklemelere sahip olmalıdır](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Object.Equals%2A?displayProperty=fullName>

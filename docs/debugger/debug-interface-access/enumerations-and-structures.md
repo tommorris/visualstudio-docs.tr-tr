@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15fed0e2638ba8870a47a65a359b4f02bc6c7eda
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ad7b4d4a42c15398b1817c06ec0193aef16e865b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enumerations-and-structures"></a>Numaralandırmalar ve Yapılar
 Numaralandırmalar ve DIA SDK'sı tarafından kullanılan yapılar bunlar.  
@@ -77,10 +78,10 @@ Numaralandırmalar ve DIA SDK'sı tarafından kullanılan yapılar bunlar.
  Bir adres eşlemesi bir girişe açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+ [Arabirimler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
  DIA SDK'sı tarafından sağlanan arabirimleri belirtir.  
   
- [Sabitler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
+ [Sabitler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
  DIA SDK'ın kullanılabilir sabitlerini belirtir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

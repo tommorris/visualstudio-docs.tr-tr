@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d2b0ea1999c9742c04d1bb118d9a036ff2bed5ea
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 38d50f1e3da0004869ae66df8e486affa1b68c2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Verileri kaydetmeden önce verilere bağlı denetimler üzerinde işlem içi düzenlemeler Yürüt
 Verilere bağlı denetimler değerlerde düzenlerken, kullanıcılar güncelleştirilmiş değeri denetimin bağlı olduğu temel alınan veri kaynağına kaydetmek için geçerli kayıt kapalı gitmeniz gerekir. Öğelerden sürüklediğinizde [veri kaynakları penceresi](add-new-data-sources.md) bir forma bıraktığınız ilk öğe koda oluşturur **kaydetmek** düğmesini olayı <xref:System.Windows.Forms.BindingNavigator>. Bu kod çağırır <xref:System.Windows.Forms.BindingSource.EndEdit%2A> yöntemi <xref:System.Windows.Forms.BindingSource>. Bu nedenle, çağrısına <xref:System.Windows.Forms.BindingSource.EndEdit%2A> yöntemi yalnızca ilk için oluşturulan <xref:System.Windows.Forms.BindingSource> forma eklenir.  

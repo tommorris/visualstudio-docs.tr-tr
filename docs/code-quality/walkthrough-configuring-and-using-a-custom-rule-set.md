@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 28f572ff80888f9d207c9ade9042414127abb154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 054cf016dba69561591ad6bc8b18029272e85d8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>İzlenecek Yol: Özel bir Kural Kümesini Yapılandırma ve Kullanma
 Bu kılavuz bir özelleştirilmiş kullanmak üzere yapılandırılmış kod çözümleme araçları nasıl kullanacağınızı gösterir *kural kümesi* üzerinde bir sınıf kitaplığı. Eski kod bölünemez şekilde sabit sorunları için tarama gibi belirli bir gereksinimi karşılamak için alternatif bir kural kümesi, çözümünüz için belirtilen ya da seçebilirsiniz proje türü ilişkili bir kural kümesini seçebilirsiniz. Her iki durumda da, kural kümeleri de yapılandırarak proje gereksinimlerinizi ince ayar için özelleştirilebilir.  

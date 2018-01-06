@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 865c8f9fa91c24eed1e10bde68b239932237a62b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 78107218af8c4b32e1cace3137fa15fe31fcbc52
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Seçilen sınıf için bir veya daha fazla DataContext yöntemleri bir dönüş türü olarak kullanıldığından silinemiyor
 Bir veya daha fazla dönüş türü <xref:System.Data.Linq.DataContext> yöntemleri olan seçili varlık sınıfı. Silme için dönüş türü olarak kullanılan bir varlık sınıfı bir <xref:System.Data.Linq.DataContext> yöntemi başarısız projeyi derleme neden olur. Seçilen varlık sınıfını silmek için tanımlamak <xref:System.Data.Linq.DataContext> farklı varlık sınıfı için kendi dönüş türleri ayarlamak ve bunu kullanan yöntemleri.  

@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cfd56596a49bc562ded401dc65009bcde73cec2d
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 1d5daf0f5d79683b3c6ef7f97d5f5113d294f6ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="best-practices-and-examples-sal"></a>En İyi Yöntemler ve Örnekler (SAL)
 Kaynak kodu ek açıklama dili (SAL) dışında en ve bazı yaygın sorunlar önlemek için bazı yollar şunlardır.  
@@ -248,4 +249,4 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
  [Yapıları ve sınıfları yorumlama](../code-quality/annotating-structs-and-classes.md)   
  [Kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md)   
  [Açıklamanın ne zaman ve nereye uygulanacağını belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [İç işlevler](../code-quality/intrinsic-functions.md)
+ [İç İşlevler](../code-quality/intrinsic-functions.md)

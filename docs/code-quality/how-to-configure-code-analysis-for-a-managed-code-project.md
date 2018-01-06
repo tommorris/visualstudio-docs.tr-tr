@@ -16,11 +16,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d62957a75c844d736a1168010616d5cf2c795bee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 134645ced3352d820165b23a73308894fed0897a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Nasıl yapılır: Yönetilen Kod Projesi İçin Kod Çözümlemesini Yapılandırma
 İçinde [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] ve [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], Kod Analizi listesinden seçebilirsiniz *kural kümeleri* yönetilen kod projesi için uygulanacak. Varsayılan kural Microsoft Minimum önerilen kurallar kümesidir. Başka bir kural bir proje veya bir çözümdeki tüm projeleri kümesi uygulayabilirsiniz.  
@@ -54,4 +55,4 @@ ms.lasthandoff: 10/31/2017
          Daha fazla bilgi için bkz: [özel kural kümeleri oluşturma](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Yapılandırma ve özel bir kural kümesini kullanma](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
+ [İzlenecek Yol: Özel bir Kural Kümesini Yapılandırma ve Kullanma](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

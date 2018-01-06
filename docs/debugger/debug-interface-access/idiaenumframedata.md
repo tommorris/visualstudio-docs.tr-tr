@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1850fd8eab4151dfb24bdc30dafe2e110406c37a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1f9cd36f6ea56b8defb3197abc66055616aa5d21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 Veri kaynağında bulunan çeşitli çerçeve veri öğeleri numaralandırır.  
@@ -34,15 +35,15 @@ IDiaEnumFrameData : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiaenumframedata::get__newenum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Alır `IEnumVARIANT Interface` bu Sıralayıcı sürümü.|  
-|[Idiaenumframedata::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|Çerçeve veri öğe sayısını alır.|  
-|[Idiaenumframedata::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|Bir çerçeve veri öğesi, bir dizin yoluyla alır.|  
-|[Idiaenumframedata::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|Çerçeve veri öğeleri numaralandırması dizisinde belirtilen sayısını alır.|  
-|[Idiaenumframedata::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|Çerçeve veri öğeleri bir numaralandırma dizisinde belirtilen sayıda atlar.|  
-|[Idiaenumframedata::reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
-|[Idiaenumframedata::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
-|[Idiaenumframedata::framebyrva](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Bir çerçeve göreli sanal adresiyle (RAV) döndürür.|  
-|[Idiaenumframedata::framebyva](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Bir çerçeve sanal adresiyle (VA) döndürür.|  
+|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Alır `IEnumVARIANT Interface` bu Sıralayıcı sürümü.|  
+|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|Çerçeve veri öğe sayısını alır.|  
+|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|Bir çerçeve veri öğesi, bir dizin yoluyla alır.|  
+|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|Çerçeve veri öğeleri numaralandırması dizisinde belirtilen sayısını alır.|  
+|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|Çerçeve veri öğeleri bir numaralandırma dizisinde belirtilen sayıda atlar.|  
+|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
+|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
+|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Bir çerçeve göreli sanal adresiyle (RAV) döndürür.|  
+|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Bir çerçeve sanal adresiyle (VA) döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
   
@@ -111,4 +112,4 @@ void ShowFrameData(IDiaSession *pSession)
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
- [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md)
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

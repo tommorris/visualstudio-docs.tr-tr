@@ -23,11 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f93a0d11435a060806a89db48b2c9e81efebe3f3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e338335263a9c0757bbf6305a42fd092d4f90c04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters kullanarak veri kümelerini doldurma
 Bir TableAdapter bileşeni veritabanından bir veya daha fazla sorgular veya belirttiğiniz saklı yordamlar göre verileri içeren bir veri kümesi doldurur. TableAdapters de gerçekleştirebilir ekler, güncelleştirmeleri ve veri kümesi için yaptığınız değişiklikleri kalıcı hale getirmek için veritabanı üzerinde siler. Ayrıca, belirli bir tabloya ilgisiz Genel komutlar da verebilir.  
@@ -39,12 +40,12 @@ Bir TableAdapter bileşeni veritabanından bir veya daha fazla sorgular veya bel
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[Oluşturma ve TableAdapters öğelerini yapılandırma](../data-tools/create-and-configure-tableadapters.md)|Tasarımcılar oluşturmak ve TableAdapters yapılandırmak için kullanma|  
+|[TableAdapter’lar oluşturma ve yapılandırma](../data-tools/create-and-configure-tableadapters.md)|Tasarımcılar oluşturmak ve TableAdapters yapılandırmak için kullanma|  
 |[Parametreleştirilmiş TableAdapter sorguları oluşturma](../data-tools/create-parameterized-tableadapter-queries.md)|TableAdapter yordamları veya sorguları için bağımsız değişkenleri eklemek kullanıcıları etkinleştirme|  
-|[Bir TableAdapter ile veritabanına doğrudan erişim](../data-tools/directly-access-the-database-with-a-tableadapter.md)|TableAdapters Dbdirect yöntemleri kullanma|  
-|[Bir veri kümesini doldururken kısıtlamaları kapatma Aç](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Veri güncelleştirirken yabancı anahtar kısıtlamaları ile çalışma|  
+|[Bir TableAdapter ile veritabanına doğrudan erişme](../data-tools/directly-access-the-database-with-a-tableadapter.md)|TableAdapters Dbdirect yöntemleri kullanma|  
+|[Bir veri kümesini doldururken kısıtlamaları kapatma](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Veri güncelleştirirken yabancı anahtar kısıtlamaları ile çalışma|  
 |[Bir TableAdapter işlevini genişletme](../data-tools/fill-datasets-by-using-tableadapters.md)|TableAdapters için özel kod ekleme|  
-|[Bir veri kümesini XML verilerini okuma](../data-tools/read-xml-data-into-a-dataset.md)|XML ile çalışma|  
+|[Bir veri kümesinin içine XML verileri okuma](../data-tools/read-xml-data-into-a-dataset.md)|XML ile çalışma|  
   
 <a name="tableadapter-overview"></a>  
   

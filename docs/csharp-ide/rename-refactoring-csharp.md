@@ -17,11 +17,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eba5a9f55e5d3d08eee48dc083a7e2f848118162
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 42c5f99b3bf5ba95bc279cd5e117745ccc8e02c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rename-refactoring-c"></a>Yeniden Düzenlemeyi (C#) yeniden adlandırma
 **Yeniden Adlandır** kod sembolleri alanları, yerel değişkenleri, yöntemleri, ad alanları, özellikleri ve türleri gibi tanımlayıcıları yeniden adlandırmak için kolay bir yol sağlar Visual Studio tümleşik geliştirme ortamını (IDE) yeniden düzenleme bir özelliktir. **Yeniden Adlandır** açıklamaları ve dizeleri adlarını değiştirmek ve bildirimler ve bir tanımlayıcı çağrıları değiştirmek için kullanılabilir.  
@@ -164,4 +165,4 @@ var orderIDs =
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yeniden düzenlemesi (C#)](refactoring-csharp.md)   
- [Anonim türler](/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types)
+ [Anonim Tipler](/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types)

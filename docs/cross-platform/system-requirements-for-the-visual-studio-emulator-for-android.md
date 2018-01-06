@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 469a8298122abdc96c69f13ed96a893b02575fc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 571cc5ffc3637ecdca54cda74fd6aa20983fdab6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü Sistem Gereksinimleri
 Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürümler için sanallaştırma teknolojisi sanal makine olarak çalışır. Öykünücü çalıştırmak için bilgisayarınızı bu konu başlığı altında açıklandığı gibi Hyper-V çalıştırmak için gereksinimleri karşılaması gerekir.  
@@ -99,7 +100,7 @@ Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürü
   
  Öykünücü ağ sorunları gidermek için aşağıdaki konulara bakın:  
   
--   [Android için Visual Studio öykünücüsü sorunlarını giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
+-   [Android için Visual Studio Öykünücüsü’nde Sorun Giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="HyperV"></a>Hyper-V gereksinimleri  
  BIOS içinde Hyper-V gereksinimleri  
@@ -156,4 +157,4 @@ Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürü
  OpenGL ES tarafından kullanılanlar gibi GPU çağrıları benzetmek öykünücüsü makinenizi DirectX uyumlu GPU'ya uygun DirectX sürücüleri yüklü olması gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Android için Visual Studio öykünücüsü sorunlarını giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Android için Visual Studio Öykünücüsü’nde Sorun Giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

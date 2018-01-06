@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbcd3e50e1b53a56342b5ab344ec54180001fa80
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2e549a4c7dffe565ef311bb75ff5706afb5c65cd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Veri kaynağında bulunan çeşitli kaynak dosyaları sıralar.  
@@ -34,13 +35,13 @@ IDiaEnumSourceFiles : IUknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiaenumsourcefiles::get__newenum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Alır `IEnumVARIANT Interface` bu Sıralayıcı sürümü.|  
-|[Idiaenumsourcefiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|Kaynak dosyalarının sayısını alır.|  
-|[Idiaenumsourcefiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Bir kaynak dosya yoluyla bir dizin alır.|  
-|[Idiaenumsourcefiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Kaynak dosyaları numaralandırma dizisinde belirtilen sayısını alır.|  
-|[Idiaenumsourcefiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|Belirtilen sayıda kaynak dosyalarında bir numaralandırma sırasını atlar.|  
-|[Idiaenumsourcefiles::reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
-|[Idiaenumsourcefiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Alır `IEnumVARIANT Interface` bu Sıralayıcı sürümü.|  
+|[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|Kaynak dosyalarının sayısını alır.|  
+|[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Bir kaynak dosya yoluyla bir dizin alır.|  
+|[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Kaynak dosyaları numaralandırma dizisinde belirtilen sayısını alır.|  
+|[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|Belirtilen sayıda kaynak dosyalarında bir numaralandırma sırasını atlar.|  
+|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
+|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
   
@@ -91,4 +92,4 @@ IDiaEnumSourceFiles* GetEnumSourceFiless(IDiaSession *pSession)
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession::findfile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [Idiasession::findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [Idiatable](../../debugger/debug-interface-access/idiatable.md)
+ [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

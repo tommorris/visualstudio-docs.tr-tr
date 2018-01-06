@@ -11,20 +11,21 @@ caps.latest.revision: "13"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: a770fdeae316e6ee79e919df9c9cc1b4551b90b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: 203f977ac4bc9a0ba72284b54a6936a77bae0f61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="verify-your-xamarin-environment"></a>Xamarin ortamınızı doğrulayın
 Yükleyicileri tamamladıktan sonra (bkz [Kurulum ve yükleme](../cross-platform/setup-and-install.md)), her şeyi Xamarin geliştirme deneyimi için hazır olduğunu doğrulamak için birkaç dakikanızı ayırın.  
   
  Bu Doğrulamalar tamamladıktan sonra ya da aşağıdaki izlenecek her ikisi de yapabilirsiniz:  
   
--   [Visual Studio'da Xamarin.Forms ile uygulama oluşturma temellerini öğrenin](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md)  
+-   [Visual Studio'da Xamarin.Forms ile uygulama oluşturmaya yönelik temel bilgileri öğrenin](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md)  
   
--   [Xamarin Visual Studio kullanarak yerel kullanıcı Arabirimi ile uygulamalar oluşturma](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)  
+-   [Visual Studio’da Xamarin kullanarak yerel kullanıcı arabirimi ile uygulama oluşturma](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)  
   
 ## <a name="all-platforms"></a>Tüm platformlar  
  İlk olarak seçin **Araçlar > Seçenekler**, genişletin **Xamarin > diğer**, tıklatıp **şimdi denetle** güncelleştirmeleri için bağlantı. Xamarin 4.0.3.214 kullanıyor veya daha önceki lisans sorunlarını önlemek için gerekir.  

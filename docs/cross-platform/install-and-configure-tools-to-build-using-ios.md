@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 368481d0a38b7b8f721aa18be0ecda7d35a42aba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 734c7b8a8416503e457f964d74e0a3773cbada2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>İOS kullanılarak derleme ve Yapılandırma Araçları'nı yükleme
 Platformlar arası Mobil Geliştirme için Visual C++ düzenlemek, hata ayıklama ve iOS simülatörü'nü veya bir iOS aygıtı iOS kodu dağıtmak için kullanabilirsiniz, ancak lisans kısıtlamaları nedeniyle kodu gerekir oluşturulur ve Uzaktan Mac'te çalışan Derleme ve Visual Studio kullanarak iOS uygulamaları çalıştırmak için ayarlamak ve uzak aracısını yapılandırmak gereken [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), Mac üzerinde Uzak Aracı tanıtıcıları Visual Studio'dan istekleri oluşturmak ve Mac veya Mac Simulator'da iOS bağlı iOS cihazında uygulamayı çalıştırır  
@@ -239,4 +240,4 @@ Platformlar arası Mobil Geliştirme için Visual C++ düzenlemek, hata ayıklam
      Burada *config_file_path* JSON biçiminde bir yapılandırma dosyası yolu. Başlangıç seçenekleri ve bunların değerleri çizgi içermemelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Platformlar arası Mobil Geliştirme için Visual C++ yüklemek](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+ [Platformlar Arası Mobil Geliştirme için Visual C++’ı yükleme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

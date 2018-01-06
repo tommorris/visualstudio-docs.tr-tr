@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aadfe4a6d4e66cca92f6e84cef23ebeace77afa1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ad4ce9b66996048112da57cb08b8a9e6ab177f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
 Belirtilen bir numaralandırma sırası eklenen kaynaklarında sayısını alır.  
@@ -48,4 +49,4 @@ HRESULT Next (
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idiaenumınjectedsources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
- [Idiaınjectedsource](../../debugger/debug-interface-access/idiainjectedsource.md)
+ [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

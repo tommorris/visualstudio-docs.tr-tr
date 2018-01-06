@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05cb3f85fe2f1ea82622a4537b89895a44eebf63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8659123c09482537aadc3baedb597f5c7030708d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 Bu satır bilgileri bir ifadede program kaynağı yerine bir deyim başlangıcını açıklar belirten bir bayrak alır.  
@@ -42,4 +43,4 @@ HRESULT get_statement (
  Deyimler birden çok satırı kapsayabilir. Bu yöntem, ilişkili satır numarası gibi bir çok satırlı deyimi başlangıcını işaretleyen olmadığını gösterir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idialinenumber](../../debugger/debug-interface-access/idialinenumber.md)
+ [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

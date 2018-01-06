@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ddb854ccfeee9837a9ad0244c6c07e1f3aa39ce1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f27daf13b4a03af6f0bb214f13f48ca523b8512b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumlinenumbersreset"></a>IDiaEnumLineNumbers::Reset
 Bir numaralandırma sırasını başlangıç durumuna sıfırlar.  
@@ -33,4 +34,4 @@ HRESULT Reset();
  Döndürür `S_OK`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiaenumlinenumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+ [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

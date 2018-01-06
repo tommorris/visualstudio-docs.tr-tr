@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 087df27916465b3ddba0b8e2c92bacf89dd33c1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 65332b37da874ce3475bb166b29c47ccc5a5870d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Atılabilir türler sonlandırıcıyı bildirmelidir
 |||  
@@ -56,11 +57,11 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[FxCop.Usage.DisposeNoFinalize#1](../code-quality/codesnippet/CSharp/ca2216-disposable-types-should-declare-finalizer_1.cs)]  
   
 ## <a name="related-rules"></a>İlgili kuralları  
- [CA2115: GC çağırın. Yerel kaynaklar kullanırken, canlı tutma](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
+ [CA2115: Yerel kaynaklar kullanırken GC.KeepAlive'ı çağırın](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
   
- [CA1816: GC çağırın. SuppressFinalize doğru](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
+ [CA1816: GC.SuppressFinalize öğesini doğru çağırın](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
   
- [CA1049: yerel kaynaklara sahip olan türler atılabilir olmalıdır](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)  
+ [CA1049: Yerel kaynaklara sahip olan türler atılabilir olmalıdır](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.IDisposable?displayProperty=fullName>   
@@ -68,4 +69,4 @@ ms.lasthandoff: 10/31/2017
  <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>   
  <xref:System.UIntPtr?displayProperty=fullName>   
  <xref:System.Object.Finalize%2A?displayProperty=fullName>   
- [Desen dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Dispose Deseni](/dotnet/standard/design-guidelines/dispose-pattern)

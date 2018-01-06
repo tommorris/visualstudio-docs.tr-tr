@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ef48774506c7f45fe0e38a3e951af983a24f4237
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: unity
+ms.openlocfilehash: 46f5ecdcc5f638c502331f3507c2e4c83d2aba4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları
 Bu bölümde, Visual Studio Unity oyunlar oluşturmak için güçlü bir araç yapar ücretsiz bir Visual Studio uzantısı Unity için Visual Studio Araçları hakkında bilgi edineceksiniz.  
@@ -37,10 +38,10 @@ Bu bölümde, Visual Studio Unity oyunlar oluşturmak için güçlü bir araç y
  [Başlarken](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md)  
  Bu bölümde, Visual Studio sürümünüze Unity için Visual Studio Araçları yükleme ve Visual Studio ile Unity projenizi kullanmaya başlamak nasıl öğreneceksiniz.  
 
- [Unity için Visual Studio araçlarını kullanma](../cross-platform/using-visual-studio-tools-for-unity.md)  
+ [Unity için Visual Studio Araçlarını Kullanma](../cross-platform/using-visual-studio-tools-for-unity.md)  
  Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik özellikleri için nasıl kullanılacağını ve nasıl Unity geliştirme için Visual Studio hata ayıklayıcısı kullanılacağını öğreneceksiniz.  
 
- [Unity için Visual Studio araçlarını programlama](../cross-platform/programming-visual-studio-tools-for-unity.md)  
+ [Unity için Visual Studio Araçlarını Programlama](../cross-platform/programming-visual-studio-tools-for-unity.md)  
  Bu bölümde, Unity API için Visual Studio araçları kullanarak örnekleri bulabilirsiniz.  
 
  [Sorun giderme ve bilinen sorunlar](../cross-platform/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md)  

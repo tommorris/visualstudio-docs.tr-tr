@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6794bf2bbf53df5648c595d7a4ec47b30a974359
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 02d8a524fd46640d4335140d683d5a0765556681
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü’nde Sorun Giderme
 Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabileceğiniz sorunları gidermenize yardımcı olabilecek bilgiler içerir.  
@@ -63,7 +64,7 @@ Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabi
 ##  <a name="BeforeYouStart"></a>Başlamadan önce  
  Sorun gidermeye başlamadan önce aşağıdaki konuları gözden geçirmek yararlı olabilir:  
   
--   [Android için Visual Studio öykünücüsü sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [Android için Visual Studio Öykünücüsü Sistem Gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="NoInstall"></a>Öykünücü yüklenmesi başarısız  
  Hyper-V'nin yüklü yoksa, öykünücü yüklemeye çalıştığınızda şu iletiyi görürsünüz. HyperV destekleyen bir makine olmalıdır ve etkinleştirilmesi gerekir.  

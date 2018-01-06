@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bfc537118f6c1769ec98893099daa0c61d1b5b1d
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 95bfef50e7ce5016b68df1442e625a88beb22181
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-relationships-between-datasets"></a>Veri kümeleri arasında ilişkiler oluşturun
 İlgili verileri içeren veri kümeleri tabloları kullanım <xref:System.Data.DataRelation> nesneleri tabloları arasında bir üst/alt ilişkisi temsil eder ve ilgili kayıtları birbirlerinden döndürmek için. İlgili tablolar kullanarak veri kümelerine ekleme **veri kaynağı Yapılandırma Sihirbazı**, veya **veri kümesi Tasarımcısı**, oluşturur ve yapılandırır <xref:System.Data.DataRelation> nesnesi.  
@@ -108,4 +109,4 @@ Veri tabloları arasında ilişkiler görünür satırlar halinde **veri kümesi
 2.  Gelen **veri** menüsünde, select **ilişki etiketlerini göster** ilişki adı görüntülemek için komutu. İlişki adı gizlemek için bu komutu temizleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Oluşturma ve Visual Studio'da veri kümelerini yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md)
+[Visual Studio’da veri kümeleri oluşturma ve yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md)

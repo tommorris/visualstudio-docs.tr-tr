@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5210616573d2d1e0248c189095c8f10e192eab80
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9d99649795240418e2c0227de071f8be3d23c874
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
 Satır numarası bilgilerini doğrudan içermesinden, tüm işlevleri veya dolaylı olarak, belirtilen üst simgesiyle yinelemek bir istemcinin sağlar ve belirtilen göreli sanal adres içinde (RVA) bulunan bir numaralandırmasını alır.  
@@ -53,4 +54,4 @@ HRESULT findInlineeLinesByRVA (
  [Idiasession](../../debugger/debug-interface-access/idiasession.md)   
  [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md)   
- [Idiaenumlinenumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+ [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

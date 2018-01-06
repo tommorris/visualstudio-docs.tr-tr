@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50b6533b1036087dc8d0cdfe59b653774d781f55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8241190650bf395e1e4e2467b4862119cd2b10dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Sabitler (Arabirim Erişimi SDK'sında Hata Ayıklama)
 Bu dize sabitleri, bir program hata ayıklama veritabanı (PDB) dosyası DIA SDK aracılığıyla çeşitli bölümlerini belirlemek için kullanılabilir.  
@@ -61,4 +62,4 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
  [Başvuru](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
  [Numaralandırmalar ve yapılar](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumtables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)
+ [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

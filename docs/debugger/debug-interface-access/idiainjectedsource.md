@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7beda305bbe0673b6e1b47f0e11eb641ab8aa0d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cfcb19170221ea7e37a25cb93c7bf77fc769fd1a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 Erişimleri DIA veri kaynağında depolanan kaynak kodu eklenmiş.  
@@ -34,13 +35,13 @@ IDiaInjectedSource : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiaınjectedsource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|Kaynak kodun baytlar hesaplanan bir Döngüsel artıklık denetimi (CRC) alır.|  
-|[Idiaınjectedsource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|Kod bayt sayısını alır.|  
-|[Idiaınjectedsource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|Kaynak dosya adını alır.|  
-|[Idiaınjectedsource::get_objectfilename](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|Kaynak derlenmiş olduğu nesne dosya adı alır.|  
-|[Idiaınjectedsource::get_virtualfilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Dosya olmayan kaynak koduna verilen ad alır; diğer bir deyişle, eklendi kodu.|  
-|[Idiaınjectedsource::get_sourcecompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Kullanılan kaynak sıkıştırma gösterge alır.|  
-|[Idiaınjectedsource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Kaynak kodu bayt alır.|  
+|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|Kaynak kodun baytlar hesaplanan bir Döngüsel artıklık denetimi (CRC) alır.|  
+|[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|Kod bayt sayısını alır.|  
+|[IDiaInjectedSource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|Kaynak dosya adını alır.|  
+|[IDiaInjectedSource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|Kaynak derlenmiş olduğu nesne dosya adı alır.|  
+|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Dosya olmayan kaynak koduna verilen ad alır; diğer bir deyişle, eklendi kodu.|  
+|[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Kullanılan kaynak sıkıştırma gösterge alır.|  
+|[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Kaynak kodu bayt alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Eklenen kaynak derleme sırasında eklenen metindir. Bu ön işlemci gelmez `#include` C++'da kullanılır.  
@@ -124,4 +125,4 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiaenumınjectedsources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)   
  [Idiaenumınjectedsources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)   
- [Idiaenumınjectedsources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+ [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

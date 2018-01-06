@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9f410fdfea8a241b10cbab621dbd781d3648a080
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 64031303545f293d9274158eeb1527ba26676751
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio'da nesne bağlama
 Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalışmak için tasarım zamanı araçlar sağlar. UI denetimlerine bağlamanıza bir nesne bir veritabanındaki verileri depolamak istediğiniz zaman, önerilen yaklaşım Entity Framework sınıfları ve sınıf oluşturmak için kullanmaktır. Entity Framework otomatik-DbSet nesnesinde AcceptChanges çağırdığınızda yerel nesneleri değişiklikleri otomatik olarak veritabanına kalıcı yapıldığını Bunun anlamı tüm ortak değişiklik izleme kodunu üretir. Daha fazla bilgi için bkz: [Entity Framework belgelerine](https://ef.readthedocs.org/en/latest/).  

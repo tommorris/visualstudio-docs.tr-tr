@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 ms.author: gewarren
 author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2439b04c921de6e06b98bd1bb5a9fc0af3ea56d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48b082f5b00f260d2f8e2519a4551fab23dc1011
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd Hataları
 FxCopCmd önemli olması için tüm hataların dikkate almaz. FxCopCmd kısmi analiz gerçekleştirmek için yeterli bilgiye sahip oluştu analiz ve raporları hataları gerçekleştirir. Bir 32 bit tamsayı ise, hata kodu hataları karşılık gelen sayısal değerlerin Bitsel bir birleşimi içerir.  
@@ -54,4 +55,4 @@ FxCopCmd önemli olması için tüm hataların dikkate almaz. FxCopCmd kısmi an
     >  FxCopCmd dönüş kodu "Hata bütünleştirilmiş koduna başvuruyor" kendisi tarafından 0x200 olan bir hata yerine bir uyarı. Bu dönüş kodu eksik dolaylı başvuru bulundu ancak FxCopCmd bunları işleyebilen gösterir. Bazı çözümleme sonuçlarını geçirildiğini olduğunu olasılığı olduğunu belirten bir uyarı var. Diğer dönüş kodu ile birleştirildiğinde "Hata bütünleştirilmiş koduna başvuruyor" dönüş kodu hata olarak göz önünde bulundurun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kod çözümleme uygulama hataları](../code-quality/code-analysis-application-errors.md)
+ [Kod Çözümleme Uygulama Hataları](../code-quality/code-analysis-application-errors.md)

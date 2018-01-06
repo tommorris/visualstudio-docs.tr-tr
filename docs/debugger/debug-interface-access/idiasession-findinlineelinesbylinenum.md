@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c18b2919605e3b2de6f59303c304ffb3d8f05198
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4a47197653b8bcbe81ff961e3b82f7578b104e0b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
 Satır numarası bilgilerini doğrudan veya dolaylı olarak, belirtilen kaynak dosyası ve satır numarası içermesinden, tüm işlevlerin yinelemek bir istemci izin veren bir numaralandırmasını alır.  
@@ -61,4 +62,4 @@ HRESULT findInlineeLinesByVA (
  [Idiasourcefile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md)   
- [Idiaenumlinenumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+ [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51303607eace37d5886c14efc1057bc50e4c8ce0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c7cd995a695f809737c0dbc4adfab0e76e2c8266
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
 Blok işlevinin giriş noktası içerip içermediğini gösteren bir bayrak alır.  
@@ -42,4 +43,4 @@ HRESULT get_functionStart (
  Çerçeve bir satır içi yöntemi veya işlev eklenen işlev olabilmesinden dolayı bir işlev başlangıcı olmaması yığın çerçevesi mümkündür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md)
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

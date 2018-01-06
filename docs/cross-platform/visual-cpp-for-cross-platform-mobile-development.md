@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 51b579d047987648caab31136b6378e0a6f0475d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 699fc53d0679e303e9c661c54634f162d95e2a2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Platformlar arası Mobil Geliştirme için Visual C++
 Yerel C++ uygulamalar oluşturabilir. iOS, Android ve Windows cihazları ve iOS, Android ve Windows için yerleşik kitaplıklarında ortak kodun paylaşımı kullanarak Visual C++ için platformlar arası mobil geliştirme. SDK'ları ve paylaşılan kitaplıklar ve yerel uygulamalar platformlar arası geliştirme için ihtiyaç duyduğunuz araçlarını yükler Visual Studio 2015'te kullanılabilir bir seçenek budur. Yüklendiğinde, iOS ve Android cihazları ve Windows, Windows Phone ve Xbox yanı sıra platformunda çalışan bir kod oluşturmak için Visual C++ kullanabilirsiniz.  
@@ -97,12 +98,12 @@ Yerel C++ uygulamalar oluşturabilir. iOS, Android ve Windows cihazları ve iOS,
   
 ## <a name="in-this-section"></a>Bu bölümde  
   
-1.  [Platformlar arası Mobil Geliştirme için Visual C++ yüklemek](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
+1.  [Platformlar Arası Mobil Geliştirme için Visual C++’ı yükleme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
   
-2.  [İOS kullanılarak derleme ve Yapılandırma Araçları'nı yükleme](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
+2.  [İOS Kullanarak Derlemeye Yönelik Araçları Yükleme ve Yapılandırma](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
-3.  [Android yerel etkinlik uygulama oluşturma](../cross-platform/create-an-android-native-activity-app.md)  
+3.  [Android Yerel Etkinlik Uygulaması Oluşturma](../cross-platform/create-an-android-native-activity-app.md)  
   
-4.  [Android ve iOS üzerinde bir OpenGL ES uygulaması oluşturma](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
+4.  [Android ve iOS Üzerinde OpenGL ES Uygulaması Oluşturma](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
-5.  [Platformlar arası mobil geliştirme örnekleri](../cross-platform/cross-platform-mobile-development-examples.md)
+5.  [Platformlar Arası Mobil Geliştirme Örnekleri](../cross-platform/cross-platform-mobile-development-examples.md)

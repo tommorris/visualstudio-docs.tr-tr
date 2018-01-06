@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cbfea7394a2720ed4341e883fefe90556c86e57
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f9c4c81fcecb76cc094297cb8fa5c733a677a831
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 Çeşitli yığın çerçeveleri numaralandırır.  
@@ -27,8 +28,8 @@ ms.lasthandoff: 10/31/2017
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiaenumstackframes::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Belirtilen sayıda yığın çerçeve öğeyi numaralandırma dizisini alır.|  
-|[Idiaenumstackframes::reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
+|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Belirtilen sayıda yığın çerçeve öğeyi numaralandırma dizisini alır.|  
+|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
   

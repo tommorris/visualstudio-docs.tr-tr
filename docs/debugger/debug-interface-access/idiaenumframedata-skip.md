@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3284b550d2c55780fa4cc840645113d5c48df09f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cbfd05b64ba1a04c4e98e137c0d70787f01575fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
 Çerçeve veri öğeleri bir numaralandırma dizisinde belirtilen sayıda atlar.  
@@ -39,4 +40,4 @@ HRESULT Skip (
  Başarılı olursa, döndürür `S_OK`; Aksi halde döndürür `S_FALSE` atlamak için daha fazla kayıt varsa.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiaenumframedata](../../debugger/debug-interface-access/idiaenumframedata.md)
+ [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

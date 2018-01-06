@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de3a7bfaccec45dc6b7fce1def45a6e6de8e75f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 899f9026b2e7c86ad1bd9f722dc7e1904cab2b9b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Nasıl yapılır: Takım Projesi İade İlkesiyle Kod Proje Kural Kümelerini Eşitleme
 Takım projesi için iade ilkesiyle kod projeleri için Kod Analizi ayarları en az İade İlkesi'ni ayarlamak kuralında belirtilen kuralları içeren bir kural kümesi belirterek eşitleyin. Geliştirici sağlama, ad ve kural için iade ilkesi kümesi konumunu bildirebilirsiniz. Projesi için Kod Analizi kural doğru kümesi kullandığından emin olmak için aşağıdaki seçeneklerden birini kullanabilirsiniz:  

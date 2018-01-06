@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 7110fed065816c6d6843e9ed6f95d2da2d6f4851
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 1ff8eb04ae9b5009aff13dc8588633b34d4d72dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Nasıl yapılır: sınıflar için doğrulama ekleme
 *Doğrulama* varlık sınıfı olan bir nesnenin şeması ve ayrıca uygulama için oluşturulan kuralları kısıtlamaları veri nesneleri girdiğiniz değerleri uyması onaylama işlemi. Temel alınan veritabanı güncelleştirme göndermeden önce verileri doğrulama hataları azaltan iyi bir uygulamadır. Ayrıca, olası bir uygulama ve veritabanı arasındaki gidiş dönüş sayısını azaltır.  

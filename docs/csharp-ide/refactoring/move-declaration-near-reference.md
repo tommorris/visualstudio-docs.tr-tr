@@ -13,11 +13,12 @@ author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 dev_langs: csharp
-ms.openlocfilehash: f784ac9fec1dce1f21ba4b9f1f0e83b4b7deb001
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: dotnet
+ms.openlocfilehash: c274fd758fdae468bee884fcf1686abc16ec1d7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="move-declaration-near-reference-in-c"></a>C# başvurusu yakın bildirimini taşıyın #
 **Ne:** yakın değişken bildirimleri için kullanımı taşımanıza olanak tanır.
@@ -60,4 +61,4 @@ if (condition)
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Yeniden düzenlemesi (C#)](../refactoring-csharp.md)  
-[Önizleme değişiklikleri](../../ide/preview-changes.md)
+[Değişiklikleri Önizleme](../../ide/preview-changes.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1290218bdef89f9e96ac68623ba72e83455acc10
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0fe8e5a29767e1a180fe91398d7edf816e6b8bb4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasegmentgetexecute"></a>IDiaSegment::get_execute
 Kesim yürütülebilir olup olmadığını belirten bir bayrak alır.  
@@ -39,4 +40,4 @@ HRESULT get_execute (
  Başarılı olursa, döndürür `S_OK`. Döndürür `S_FALSE` bu özellik desteklenmiyorsa. Aksi takdirde bir hata kodu döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiasegment](../../debugger/debug-interface-access/idiasegment.md)
+ [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

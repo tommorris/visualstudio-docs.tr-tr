@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9162274d234c22e8bbe299389d2b41f57a69d714
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: 52243e28dbc35fbefb67fa1b52ce9fb6cdbda98d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="handle-a-concurrency-exception"></a>Bir eşzamanlılık özel durum işleme
 Eşzamanlılık (<xref:System.Data.DBConcurrencyException>) iki kullanıcı aynı anda aynı verileri bir veritabanındaki değiştirmeye kalkıştığında ortaya çıkar. Bu kılavuzda, catch verilmektedir bir Windows uygulaması oluşturma bir <xref:System.Data.DBConcurrencyException>hataya satırı bulun ve onu nasıl ele alınacağını için bir strateji öğrenin.  
@@ -224,4 +225,4 @@ Kullanıcı daha sonra önerilen sürümüyle veritabanının üzerine yaz veya 
 10. Seçme **Hayır** güncelleştirmeyi iptal eder ve şu anda veritabanında bulunan değerlere sahip veri kümesini güncelleştirir. Seçme **Evet** önerilen değeri veritabanına yazar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veritabanına veri kaydetme](../data-tools/save-data-back-to-the-database.md)
+ [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)

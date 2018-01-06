@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3ed52a167b607236b8493e4c8c1736ee597162b9
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: fb85f9cfb2b70838d32761b412541bf15b2884c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Veri ile TableAdapter DBDirect yöntemleri kaydedin.
 Bu kılavuz bir TableAdapter DBDirect yöntemleri kullanarak doğrudan bir veritabanında SQL deyimlerini çalıştırmak için ayrıntılı yönergeler sağlar. Veritabanı güncelleştirmelerinizi üzerinde denetim ayrıntılı bir düzeyde bir TableAdapter DBDirect yöntemleri sağlar. Bunları tek tek çağırarak belirli SQL deyimlerini ve depolanan yordamları çalıştırmak için kullanabileceğiniz `Insert`, `Update`, ve `Delete` , uygulamanız tarafından gerektiği şekilde yöntemleri (aşırı yüklenmiş aksine `Update` güncelleştirme gerçekleştirir yöntemi INSERT ve DELETE deyimlerinde tüm bir çağrı).  
@@ -120,7 +121,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
     |Ad|Metin|  
     |----------|----------|  
     |`InsertButton`|**Ekle**|  
-    |`UpdateButton`|**Güncelleştirme**|  
+    |`UpdateButton`|**Güncelleştir**|  
     |`DeleteButton`|**Sil**|  
   
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Veritabanına yeni kayıtlar eklemek üzere kod eklemek için  
@@ -170,4 +171,4 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 -   Ek tablolar seçerek kümesine ekleme **veri kümesi Yapılandırma Sihirbazı ile** içinden **veri kaynakları** penceresi. Forma ilgili düğümleri sürükleyerek ilgili verileri görüntüleyen denetimler ekleyebilirsiniz. Daha fazla bilgi için bkz: [kümelerindeki ilişkiler](relationships-in-datasets.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veritabanına veri kaydetme](../data-tools/save-data-back-to-the-database.md)
+ [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 786d7c8841f680d5af5c539e30723289df4db0f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 720aeb5670127d64e7b3fc9b016a032c0526c083
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Menü denetleyicisi araç çubuğuna ekleme
 Bu kılavuzda derlemeler [araç çubuğu araç penceresi için ekleme](../extensibility/adding-a-toolbar-to-a-tool-window.md) gözden geçirme ve araç penceresi araç için bir menü denetleyicisi eklemeyi gösterir. Burada gösterilen adımları da oluşturulan araç uygulanabilir [araç çubuğu ekleme](../extensibility/adding-a-toolbar.md) gözden geçirme.  
@@ -229,4 +230,4 @@ Bu kılavuzda derlemeler [araç çubuğu araç penceresi için ekleme](../extens
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç çubuğu araç penceresine ekleme](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [Araç çubuğu ekleme](../extensibility/adding-a-toolbar.md)
+ [Araç Çubuğu Ekleme](../extensibility/adding-a-toolbar.md)

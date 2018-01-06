@@ -12,21 +12,26 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3081537b1704fd461a458798d646bf7eeb65f0a
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 3677dd4ad6177f4085c907d1fceaaf37978bf769
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Özel proje ve öğe şablonları oluşturma
-Visual Studio SDK'sı özel Proje şablonu oluşturup özel öğesi Şablonu proje şablonları içerir. Bu şablonlar bazı ortak parametresi değiştirmeleri içerir ve ZIP dosyaları olarak oluşturun. Değil bunlar otomatik olarak dağıtılır ve deneysel örneğinde kullanılabilir değildir. Zip kopyalamalısınız konuma dosyası  
+
+Visual Studio SDK'sı özel Proje şablonu oluşturup özel öğesi Şablonu proje şablonları içerir. Bu şablonlar bazı ortak parametresi değiştirmeleri içerir ve ZIP dosyaları olarak oluşturun. Değil bunlar otomatik olarak dağıtılır ve deneysel örneğinde kullanılabilir değildir. Kullanıcı şablonu dizini oluşturulan zip dosyası kopyalamanız gerekir.
   
- Şablon oluşturma şablonları büyük uzantılarını şablonları Ekle olanak tanır. Bu sürüm denetimi kaynak dosyalarda uygulamak ve şablon projelerini grubu bir VSIX paketi oluşturmanıza olanak sağlar.  
+Şablon oluşturma şablonları büyük uzantılarını şablonları Ekle olanak tanır. Bu sürüm denetimi kaynak dosyalarda uygulamak ve şablon projelerini grubu bir VSIX paketi oluşturmanıza olanak sağlar.  
   
- Temel şablon oluşturma senaryoları için kullanmanız gereken **şablonu dışarı aktar** Sihirbazı'nı, ama sıkıştırılmış bir dosya çıkarır. Temel şablonu oluşturma hakkında daha fazla bilgi için bkz: [oluşturma proje ve öğe şablonlarını](../ide/creating-project-and-item-templates.md).  
-  
- Visual Studio 2017 içinde başlayarak, özel Proje ve öğe şablonları için tarama artık gerçekleştirilir. Bunun yerine, uzantı bu şablonları yükleme konumunu tanımlayan şablon bildirim dosyası sağlamanız gerekir. Visual Studio 2017 VSIX uzantılarınızın güncelleştirmek için kullanabilirsiniz. Uzantınızı bir MSI kullanarak dağıtırsanız, şablon bildirim dosyalarını el ile oluşturmanız gerekir. Daha fazla bilgi için bkz: [yükseltme özel Proje ve öğe şablonları için Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Şablon bildirim şeması belgelenen [Visual Studio şablon bildirim şema başvurusu](../extensibility/visual-studio-template-manifest-schema-reference.md).  
-  
+NuGet paketlerini yüklemek için bir şablon da yapılandırabilirsiniz. Daha fazla bilgi için bkz: [Visual Studio şablonları NuGet paketlerine](/nuget/visual-studio-extensibility/visual-studio-templates).
+
+Temel şablon oluşturma senaryoları için kullanmanız gereken **şablonu dışarı aktar** Sihirbazı'nı, ama sıkıştırılmış bir dosya çıkarır. Temel şablonu oluşturma hakkında daha fazla bilgi için bkz: [oluşturma proje ve öğe şablonlarını](../ide/creating-project-and-item-templates.md).  
+
+> [!NOTE]
+> Visual Studio 2017 içinde başlayarak, özel Proje ve öğe şablonları için tarama artık gerçekleştirilir. Bunun yerine, uzantı bu şablonları yükleme konumunu tanımlayan şablon bildirim dosyası sağlamanız gerekir. Visual Studio 2017 VSIX uzantılarınızın güncelleştirmek için kullanabilirsiniz. Uzantınızı bir MSI kullanarak dağıtırsanız, şablon bildirim dosyalarını el ile oluşturmanız gerekir. Daha fazla bilgi için bkz: [yükseltme özel Proje ve öğe şablonları için Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Şablon bildirim şeması belgelenen [Visual Studio şablon bildirim şema başvurusu](../extensibility/visual-studio-template-manifest-schema-reference.md).
+
 ## <a name="creating-a-project-template"></a>Proje şablonu oluşturma  
   
 1.  Bir proje şablonu projesi oluşturun. Proje şablonu bulabilirsiniz **yeni proje** iletişim kutusunda, Visual Basic veya Visual C# **genişletilebilirlik** klasör.  
@@ -81,5 +86,7 @@ Visual Studio SDK'sı özel Proje şablonu oluşturup özel öğesi Şablonu pro
   
 5.  Bir proje şablonu projesi için listelenen, proje şablonu görmelisiniz **yeni proje** iletişim (**Dosya > Yeni > Proje**), Visual C# veya Visual Basic düğümü. Bir öğe şablonu projesi için Yeni Öğe Ekle iletişim kutusunda listelenen öğesi şablonunuzu görmeniz gerekir (içinde **Çözüm Gezgini**, proje düğümünü seçin ve tıklatın **Ekle / yeni öğe**).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio Şablon Başvurusu](../ide/visual-studio-template-reference.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Visual Studio şablon başvurusu](../ide/visual-studio-template-reference.md)  
+[Visual Studio şablonları NuGet paketleri](/nuget/visual-studio-extensibility/visual-studio-templates)

@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b7be9b3bf7783980cfbbe1abfc44fe1748dd20a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ad918b72d38e61fb1670adda8ff1f730987c2aa3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solution-sln-file"></a>Çözüm (. Sln) dosyası
 Bir çözüm, Visual Studio projelerinde düzenlemek için bir yapıdır. Çözüm .sln (metin tabanlı, paylaşılan) ve (ikili, kullanıcıya özgü çözüm seçenekleri) .suo dosyaları projeler için durum bilgisini tutar. .Suo dosyaları hakkında daha fazla bilgi için bkz: [çözüm kullanıcı seçenekleri (. Suo) dosya](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
@@ -104,4 +105,4 @@ EndGlobal
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   
  [Çözüm kullanıcı seçenekleri (. Suo) dosyası](../../extensibility/internals/solution-user-options-dot-suo-file.md)   
- [Çözümleri](../../extensibility/internals/solutions.md)
+ [Çözümler](../../extensibility/internals/solutions.md)

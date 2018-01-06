@@ -17,11 +17,12 @@ ms.assetid:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 2bafcbf441d4efd6446e77f619379a665597e063
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 3862c6ed49e00ffa3800cccbedb2b846823418ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>Bir güvenlik duvarı veya proxy sunucunun arkasındaki Visual Studio yükleme
 
@@ -69,7 +70,7 @@ Birkaç diğer destek seçenekleri şunlardır:
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 * [Visual Studio 2017 yükleyin](install-visual-studio.md)
@@ -78,10 +79,10 @@ Birkaç diğer destek seçenekleri şunlardır:
   * [İş yükü ve bileşen kimliği başvurusu](workload-and-component-ids.md)
 * [Visual Studio 2017 ağ tabanlı yüklemesini oluşturma](create-a-network-installation-of-visual-studio.md)
   * [Visual Studio çevrimdışı yükleme için gerekli sertifikaları yükleyin](install-certificates-for-visual-studio-offline.md)
-* [Visual Studio yükleme yanıt dosyası ile otomatikleştirme](automated-installation-with-response-file.md)
-* [Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak Uygula](automatically-apply-product-keys-when-deploying-visual-studio.md)
+* [Yanıt dosyası ile Visual Studio yüklemesini otomatikleştirme](automated-installation-with-response-file.md)
+* [Visual Studio’yu dağıtırken ürün anahtarlarını otomatik olarak uygulama](automatically-apply-product-keys-when-deploying-visual-studio.md)
 * [Visual Studio 2017 Kurumsal dağıtımlar için Varsayılanlarını Ayarla](set-defaults-for-enterprise-deployments.md)
-* [Devre dışı bırakmak veya paket önbellek taşıma](disable-or-move-the-package-cache.md)
+* [Paket önbelleğini devre dışı bırakma veya taşıma](disable-or-move-the-package-cache.md)
 * [Visual Studio ağ tabanlı yüklemesini güncelleştirme](update-a-network-installation-of-visual-studio.md)
 * [Visual Studio 2017 dağıtımları denetim güncelleştirmeleri](controlling-updates-to-visual-studio-deployments.md)
-* [Algılama ve Visual Studio Örnekleri yönetmek için Araçlar](tools-for-managing-visual-studio-instances.md)
+* [Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar](tools-for-managing-visual-studio-instances.md)

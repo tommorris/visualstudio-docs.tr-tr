@@ -24,11 +24,12 @@ caps.latest.revision: "30"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ddcdc96095775f5957fbc9db872b51396798ba52
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0caff13f84208152b3fa2ff4e56a7a2c7f0b6dd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Dağıtım&gt; öğesi (ClickOnce dağıtımı)
 Güncelleştirmeleri ve sistem maruz dağıtımı için kullanılan öznitelikleri tanımlar.  
@@ -124,4 +125,4 @@ Güncelleştirmeleri ve sistem maruz dağıtımı için kullanılan öznitelikle
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)
+ [ClickOnce Dağıtım Bildirimi](../deployment/clickonce-deployment-manifest.md)

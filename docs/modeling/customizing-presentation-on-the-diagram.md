@@ -12,28 +12,29 @@ caps.latest.revision: "31"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6f171bdffd8fb76801156331f7016d061c8333a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 68d9f4fefb1a092b90431bce335d8abcba6b6bbb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Diyagramda Sunuyu Özelleştirme
 Aşağıdaki diyagramda bir etki alanına özgü dil Tasarımcısı'nın ana sunu alanıdır. Genellikle, kullanıcılar, diyagram modellerini oluşturmak için kullanır. Aşağıdaki konularda açıklandığı gibi diyagram özelleştirebilirsiniz.  
   
--   [Şekiller ve bağlayıcılar tanımlama](../modeling/defining-shapes-and-connectors.md)  
+-   [Şekiller ve Bağlayıcıları Tanımlama](../modeling/defining-shapes-and-connectors.md)  
   
--   [Renk, çizgi stili ve diğer şekil özellikleri denetleme](../modeling/controlling-color-line-style-and-other-shape-properties.md)  
+-   [Renk, Çizgi Stili ve Diğer Şekil Özelliklerini Denetleme](../modeling/controlling-color-line-style-and-other-shape-properties.md)  
   
--   [Simge veya oluşturma öğesi görünürlüğünü denetleme](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)  
+-   [Bir Simgenin veya Dekoratörün Görünürlüğünü Denetleme](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)  
   
--   [Metin ve görüntü alanları özelleştirme](../modeling/customizing-text-and-image-fields.md)  
+-   [Metin ve Görüntü Alanlarını Özelleştirme](../modeling/customizing-text-and-image-fields.md)  
   
--   [Diyagramdaki bir arka plan resmi ayarlama](../modeling/setting-a-background-image-on-a-diagram.md)  
+-   [Diyagram Üzerinde Arka Plan Görüntüsü Ayarlama](../modeling/setting-a-background-image-on-a-diagram.md)  
   
--   [İç içe geçme şekiller](../modeling/nesting-shapes.md)  
+-   [Şekilleri İç İçe Geçirme](../modeling/nesting-shapes.md)  
   
--   [Bir Windows formunda bir diyagram katıştırma](../modeling/embedding-a-diagram-in-a-windows-form.md)  
+-   [Windows Forms'a Diyagram Ekleme](../modeling/embedding-a-diagram-in-a-windows-form.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Gezinme ve bir modeli Program kodunda güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md)
+ [Program Kodunda Modeli Gezinme ve Güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md)

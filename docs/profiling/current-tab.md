@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 506a74699ba9f3cf059feb34b16d69af0150895a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb69f11081015960cd79d54fb90893a9202c9bae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="current-tab"></a>Geçerli Sekme
 Tıklayarak **geçerli** sekmesinde, gördüğünüz bir çağrı yığını (varsa) olan en yakın zaman çizelgesi geçerli seçim noktaya CPU iş parçacığı kesimi seçtiyseniz.  Bu durumda, seçim noktası siyah ok veya yukarıdaki zaman çizelgesi düzeltme işareti ile temsil edilir. Engelleme kesimi seçildiğinde, hiçbir yürütme olduğundan şapka görüntülenmez. Ancak, kesim hala vurgulanır ve çağrı yığını görüntülenir.  
@@ -26,4 +27,4 @@ Tıklayarak **geçerli** sekmesinde, gördüğünüz bir çağrı yığını (va
  **Geçerli** sekmesi ayrıca DirectX etkinlik kesimleri, işaretçileri ve g/ç erişimi hakkında bilgileri görüntüler.  DirectX etkinlik kesimine yönelik DMA paketleri donanım sıranın işlenme biçimi hakkında bilgi görüntülenir.  İçin işaretçileri, açıklama ve işaret türü hakkında bilgi görüntülenir.  G/ç erişimi için dosya ve okuma veya yazılan bayt sayısı hakkında bilgiler görüntülenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)
+ [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

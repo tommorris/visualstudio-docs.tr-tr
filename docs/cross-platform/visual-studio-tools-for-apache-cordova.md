@@ -1,6 +1,6 @@
 ---
 title: "Apache Cordova için Visual Studio Araçları | Microsoft Docs"
-redirect_url: https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/
+redirect_url: /visualstudio/cross-platform/tools-for-cordova/
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 96c5864deb3f5db0599eaca26a3b99bb9691c9b2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cordova
+ms.openlocfilehash: 2050e97f9f43aa96ae85512c7a3b7e1de0e3c378
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Apache Cordova için Visual Studio Araçları
 İOS, Android ve Windows çalıştıran cihazlar ve yaklaşık %100 kodunuzun paylaşan uygulamalar oluşturun. Bunları, sık kullanılan web teknolojileri ile oluşturun. Apache Cordova bir telefon kamerayı gibi cihaz özellikleri için yerel erişim sağlar ve en önemlisi, ücretsizdir. Visual Studio uygulamanızı oluşturmaya daha kolay hale getirmek için bu ek özellikler ekler:  

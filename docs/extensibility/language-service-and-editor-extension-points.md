@@ -13,11 +13,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c30ed08cc4c62b033f86dfd71e2276bd8be8fbad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e62f1f3cac8f279dedbc79f283b908119d66ff2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="language-service-and-editor-extension-points"></a>Dil hizmeti ve düzenleyici uzantı noktaları
 Düzenleyici çoğu dil hizmet özellikleri dahil olmak üzere Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşeni parçaları olarak genişletebilirsiniz uzantı noktaları sağlar. Bu ana uzantısı noktası kategorileri şunlardır:  
@@ -545,11 +546,11 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  IntelliSense kaynakları uygulama hakkında daha fazla bilgi için aşağıdaki izlenecek bakın:  
   
- [İzlenecek yol: Quıckınfo araç ipuçlarını görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [İzlenecek Yol: HızlıBilgi Araç İpuçlarını Görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [İzlenecek yol: İmza Yardım görüntüleme](../extensibility/walkthrough-displaying-signature-help.md)  
+ [İzlenecek Yol: İmza Yardımını Görüntüleme](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [İzlenecek yol: Deyim tamamlama görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [İzlenecek Yol: Deyim Tamamlamayı Görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implementing-an-intellisense-controller"></a>IntelliSense denetleyicisi uygulama  
  Bir denetleyici özelleştirmek için uygulamanız gereken <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> arabirimi. Ayrıca, aşağıdaki öznitelikler birlikte controller sağlayıcısı uygulamanız gerekir:  
@@ -572,4 +573,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  IntelliSense denetleyicileri kullanma hakkında daha fazla bilgi için aşağıdaki izlenecek bakın:  
   
- [İzlenecek yol: Quıckınfo araç ipuçlarını görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [İzlenecek Yol: HızlıBilgi Araç İpuçlarını Görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

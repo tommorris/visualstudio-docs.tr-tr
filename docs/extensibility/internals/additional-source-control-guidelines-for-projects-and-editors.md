@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ed84b4b1bf6c974f22682dcb8d899208c653ebc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 308de182e604f06fff9ad25cb65428b2d48ff257
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Projeler ve editörler için ek kaynak denetimi yönergeleri
 Projeleri ve editörler için kaynak denetimi desteklemek için uyması yönergeler mevcuttur.  
@@ -25,7 +26,7 @@ Projeleri ve editörler için kaynak denetimi desteklemek için uyması yönerge
 ## <a name="guidelines"></a>Kuralları  
  Proje veya düzenleyicisi ayrıca kaynak denetimi desteklemek için aşağıdakileri yapmanız gerekir:  
   
-|Alan|Project|Düzenleyici|Ayrıntılar|  
+|Alan|Proje|Düzenleyici|Ayrıntılar|  
 |----------|-------------|------------|-------------|  
 |Dosyaların özel kopyaları|X||Ortam dosyaları özel kopyalarını destekler. Diğer bir deyişle, projede kayıtlı her kişi güncelleştirmesini kendi özel proje dosyalarında kopyasına sahip.|  
 |ANSI/Unicode kalıcılığı|X|X|Kalıcılık kodu yazarsanız, kaynak denetimi programlarının çoğu Unicode şu anda desteklemediği için ANSI form dosyalarında kalıcı olmasını sağlar.|  
@@ -36,4 +37,4 @@ Projeleri ve editörler için kaynak denetimi desteklemek için uyması yönerge
 |Yeniden yükleme|X|X|Bir dosya değiştirildiğinde diskteki düzenleyicinizi yeniden kurabilmesi gerekir. Kaynak denetiminde katıldığınızda ortamı verileri sizin için çağırarak yeniden yükleyecektir, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> uygulaması. IVsQueryEditQuerySave çağrıldığında bir checkout oluştuğunda en zor yeniden durumda::<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> ve bilgileri işleniyor. Ancak, yeniden yükleme kodunuzu çalıştırabilir ve bu durumda olması gerekir.<br /><br /> Ortam proje dosyalarını otomatik olarak yeniden yükler. Ancak, bir proje uygulamalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> iç içe değilse hiyerarşileri yeniden desteklemek için proje dosyalarını iç içe geçmiş.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak denetimi destekleme](../../extensibility/internals/supporting-source-control.md)
+ [Kaynak Denetimini Destekleme](../../extensibility/internals/supporting-source-control.md)

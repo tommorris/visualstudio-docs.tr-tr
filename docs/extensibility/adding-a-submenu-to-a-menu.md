@@ -17,11 +17,12 @@ caps.latest.revision: "43"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a77cd9504dffc50fd3a3be021cb4e379378f9ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 150252dceaff2d194af8f59d92fdaf39cdae259c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Bir menüye alt menü ekleme
 Bu kılavuzda tanıtım inşa edilmiştir [Visual Studio menü çubuğunda bir menü ekleme](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) menüye ekleme göstererek **TestMenu** menüsü.  
@@ -159,4 +160,4 @@ Bu kılavuzda tanıtım inşa edilmiştir [Visual Studio menü çubuğunda bir m
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio menü çubuğunda bir menü ekleme](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
- [Komutları, menüleri ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Komutlar, Menüler ve Araç Çubukları](../extensibility/internals/commands-menus-and-toolbars.md)

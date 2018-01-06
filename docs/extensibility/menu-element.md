@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4a0aa02b3375a7b5d66d26e11dcedbd7b67d958
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 58b948e7ec420442eae839cd4eeefbccbe6b509d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="menu-element"></a>Menü öğesi
 Bir menü öğesi tanımlar. Menüleri altı türleri şunlardır: bağlam menüsü, MenuController, MenuControllerLatched, araç ve ToolWindowToolbar.  
@@ -61,7 +62,7 @@ Bir menü öğesi tanımlar. Menüleri altı türleri şunlardır: bağlam menü
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Menü öğesi](../extensibility/menus-element.md)|Bir VSPackage uygulayan tüm menüleri tanımlar.|  
+|[Menus Öğesi](../extensibility/menus-element.md)|Bir VSPackage uygulayan tüm menüleri tanımlar.|  
   
 ## <a name="example"></a>Örnek  
   
@@ -78,4 +79,4 @@ Bir menü öğesi tanımlar. Menüleri altı türleri şunlardır: bağlam menü
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 42a3b8bdd8930c9006ba49fd0f2e2dd2491b38cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8a9446a5c63df7f20d6e4dbdc3cb60bf20183bb5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Otomasyon için yapılandırma ve SelectedItem nesneleri
 Derleme ve seçilen öğeyi işlemlerini otomatik hale getirebilirsiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -35,4 +36,4 @@ Derleme ve seçilen öğeyi işlemlerini otomatik hale getirebilirsiniz [!INCLUD
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>   
  [Otomasyon modeli katkıda bulunan](../../extensibility/internals/contributing-to-the-automation-model.md)   
- [Derleme yapılandırmalarını anlama](../../ide/understanding-build-configurations.md)
+ [Derleme Yapılandırmalarını Anlama](../../ide/understanding-build-configurations.md)

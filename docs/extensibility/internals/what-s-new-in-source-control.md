@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 946a3c9fb7d3f0ccd6a90383f6ca22d91c0009a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9fc1c5956a4d3c20f8b9abec36d554f3ec56c8c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-source-control"></a>&#39; teki yeni kaynak denetiminde
 İçinde [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] kaynak denetimi VSPackage uygulayarak derine tümleşik kaynak denetimi çözümü sağlayabilirsiniz. Bu bölümde, kaynak denetimi VSPackages özelliklerini açıklar ve uygulama adımlarını genel bir bakış sağlar.  
@@ -51,4 +52,4 @@ ms.lasthandoff: 10/31/2017
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
  [Genel bakış](../../extensibility/internals/source-control-integration-overview.md)   
- [Kaynak denetimi VSPackage oluşturma](../../extensibility/internals/creating-a-source-control-vspackage.md)
+ [Kaynak Denetimi VSPackage’ı Oluşturma](../../extensibility/internals/creating-a-source-control-vspackage.md)

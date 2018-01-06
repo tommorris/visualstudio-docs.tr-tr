@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0811a2f32ae9834c1141265a936e67c6a04adbcd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c382d6e967705b95e46c6c797915c49841688c6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets Dosyaları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]öğeleri, özellikler, hedefleri ve görevleri ortak senaryolar için içeren birkaç .targets dosyaları içerir. Bu dosyalar çoğu otomatik olarak içeri aktarılan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje Bakım ve okunabilirliği kolaylaştırmak için dosyaları.  
@@ -49,5 +50,5 @@ Directory.Build.targets projeler bir dizini altında özelleştirmeleri sağlaya
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İçeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md)   
- [MSBuild başvurusu](../msbuild/msbuild-reference.md)  
+ [MSBuild Başvurusu](../msbuild/msbuild-reference.md)  
  [MSBuild](../msbuild/msbuild.md)

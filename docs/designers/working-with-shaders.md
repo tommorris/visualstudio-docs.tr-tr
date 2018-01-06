@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c92f7975e3fe45e4f87e67f2c3c54a26a7d8b87a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf96f1cdbdf8e3f995d8a1020a655b73d369cf7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-shaders"></a>Gölgelendiricilerle Çalışma
 Grafik tabanlı gölgelendirici Tasarımcısı'nda kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tasarımı özel gölgelendirici etkilerini için. DirectX tabanlı oyun veya uygulama bu gölgelendiriciler kullanabilirsiniz.  
@@ -38,5 +39,5 @@ Grafik tabanlı gölgelendirici Tasarımcısı'nda kullanabileceğiniz [!INCLUDE
 |Başlık|Açıklama|  
 |-----------|-----------------|  
 |[Gölgelendirici Tasarımcısı](../designers/shader-designer.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gölgelendirici Designer'ın gölgelendiriciler ile çalışır.|  
-|[Gölgelendirici Tasarımcı düğümler](../designers/shader-designer-nodes.md)|Grafik efektleri elde etmek için kullanabileceğiniz gölgelendirici Tasarımcısı düğüm türleri açıklanmaktadır.|  
-|[Gölgelendirici Tasarımcı örnekleri](../designers/shader-designer-examples.md)|Gölgelendirici Tasarımcısı genel grafik etkileri elde etmek için nasıl kullanılacağını gösteren konulara bağlantılar sağlar.|
+|[Gölgelendirici Tasarımcısı Düğümleri](../designers/shader-designer-nodes.md)|Grafik efektleri elde etmek için kullanabileceğiniz gölgelendirici Tasarımcısı düğüm türleri açıklanmaktadır.|  
+|[Gölgelendirici Tasarımcısı Örnekleri](../designers/shader-designer-examples.md)|Gölgelendirici Tasarımcısı genel grafik etkileri elde etmek için nasıl kullanılacağını gösteren konulara bağlantılar sağlar.|

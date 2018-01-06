@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 61d7f67eda9bdd1d215586a75ed01c1089ccf7fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7c5cce390ad786ad530153e1850850509990b039
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-element"></a>Komutları öğesi
 VSPackage araç çubuğundaki komutları koleksiyonunu temsil eder. Koleksiyon en fazla beş alt bölümlerde, aşağıdaki gibi olabilir: menüleri, gruplar, düğmeleri, birleşik ve bit eşlemler.  
@@ -52,17 +53,17 @@ VSPackage araç çubuğundaki komutları koleksiyonunu temsil eder. Koleksiyon e
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Menü öğesi](../extensibility/menus-element.md)|Bir VSPackage uygulayan tüm menüleri tanımlar.|  
-|[Öğe grupları](../extensibility/groups-element.md)|Bir VSPackage komut gruplarını tanımlamak girdiler içeriyor.|  
-|[Düğme öğesi](../extensibility/buttons-element.md)|Düğme öğeleri gruplandırır.|  
-|[Bit eşlemler öğesi](../extensibility/bitmaps-element.md)|Bit eşlem öğeleri gruplandırır.|  
-|[Birleşik öğesi](../extensibility/combos-element.md)|Birleşik giriş öğeleri gruplandırır.|  
+|[Menus Öğesi](../extensibility/menus-element.md)|Bir VSPackage uygulayan tüm menüleri tanımlar.|  
+|[Groups Öğesi](../extensibility/groups-element.md)|Bir VSPackage komut gruplarını tanımlamak girdiler içeriyor.|  
+|[Buttons Öğesi](../extensibility/buttons-element.md)|Düğme öğeleri gruplandırır.|  
+|[Bitmaps Öğesi](../extensibility/bitmaps-element.md)|Bit eşlem öğeleri gruplandırır.|  
+|[Combos Öğesi](../extensibility/combos-element.md)|Birleşik giriş öğeleri gruplandırır.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[CommandTable öğesi](../extensibility/commandtable-element.md)|Bir VSPackage IDE sağlar komutları temsil eden tüm öğeleri tanımlar. Menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları Bunun olası öğelerdir.|  
+|[CommandTable Öğesi](../extensibility/commandtable-element.md)|Bir VSPackage IDE sağlar komutları temsil eden tüm öğeleri tanımlar. Menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları Bunun olası öğelerdir.|  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte nasıl kullanılacağını gösteren bir [komutları öğesi](../extensibility/commands-element.md).  
@@ -92,4 +93,4 @@ VSPackage araç çubuğundaki komutları koleksiyonunu temsil eder. Koleksiyon e
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Komutları, menüleri ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Komutlar, Menüler ve Araç Çubukları](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ecd310065162451c6d7d6857b1f21646a82b8ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ff40bf1abb6d3583d7df8ec8423cf7be743a12c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>API Başvurusu (SharePoint Araçları Genişletilebilirliği)
   Bu bölüm genişletme Visual Studio'da SharePoint araçları için API başvuru belgeleri içerir.  
@@ -65,6 +66,6 @@ ms.lasthandoff: 10/31/2017
  [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Genişletme SharePoint paketleme ve dağıtma](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md)  
+ [SharePoint Nesne Modellerini Çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md)  
   
   

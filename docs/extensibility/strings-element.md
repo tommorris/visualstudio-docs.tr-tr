@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea2f1808adcb7c8c79d2139e89e31f21a85cb694
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 61d6498cafaf97033864bc31d55c257c9a3a564f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="strings-element"></a>Dizeleri öğesi
 Dizeleri öğesi en az bir içermelidir **■ ButtonText** alt öğesi. Diğer tüm alt öğeler isteğe bağlıdır. Geçersiz XML karakterleri gibi '&' ve ' <' varlıklar kodlanmış olmalıdır ('&amp;'ve'&lt;' vb.).  
@@ -59,9 +60,9 @@ Dizeleri öğesi en az bir içermelidir **■ ButtonText** alt öğesi. Diğer t
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Düğme öğesi](../extensibility/button-element.md)|Kullanıcı ile etkileşim kurabilen bir öğeyi tanımlar.|  
-|[Menü öğesi](../extensibility/menu-element.md)|Tek menü öğesi tanımlar.|  
-|[Birleşik giriş öğesi](../extensibility/combo-element.md)|Açılan kutuda görünür komutları tanımlar.|  
+|[Button Öğesi](../extensibility/button-element.md)|Kullanıcı ile etkileşim kurabilen bir öğeyi tanımlar.|  
+|[Menu Öğesi](../extensibility/menu-element.md)|Tek menü öğesi tanımlar.|  
+|[Combos Öğesi](../extensibility/combo-element.md)|Açılan kutuda görünür komutları tanımlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

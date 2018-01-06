@@ -20,11 +20,12 @@ caps.latest.revision: "65"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d945c28e7fe703c80776a5f1ff124ab6e0a8bf9
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: ef5fb93914f418915c11b51071419308b3ac9a0c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 Başka bir bilgisayara dağıtılan bir Visual Studio uygulama ayıklayabilirsiniz. Bunu yapmak için Visual Studio uzaktan hata ayıklayıcı kullanın.
@@ -101,11 +102,9 @@ ASP.NET ve diğer sunucu ortamlara hata ayıklama için uzaktan hata ayıklayıc
   
 4.  Parola ve kullanıcı hesabı adını ekleyin.  
   
-     Eklemeniz gerekebilir **hizmet oturum açma** bu hesap için doğru kullanıcı (Bul **yerel güvenlik ilkesi** (secpol.msc) içinde **Başlat** sayfa veya pencere (veya türü  **secpol** bir komut isteminde). Penceresi açıldığında, çift **kullanıcı hakları ataması**, ardından bulmak **hizmet oturum açma** sağ bölmede. Çift tıklatın. Kullanıcı hesabı eklemek **özellikleri** penceresini açın ve **Tamam**). 
-              **İleri**'ye tıklayın.  
+     Eklemeniz gerekebilir **hizmet oturum açma** bu hesap için doğru kullanıcı (Bul **yerel güvenlik ilkesi** (secpol.msc) içinde **Başlat** sayfa veya pencere (veya türü  **secpol** bir komut isteminde). Penceresi açıldığında, çift **kullanıcı hakları ataması**, ardından bulmak **hizmet oturum açma** sağ bölmede. Çift tıklatın. Kullanıcı hesabı eklemek **özellikleri** penceresini açın ve **Tamam**). **İleri**'ye tıklayın.  
   
-5.  İle iletişim kurmak için Uzak araçları istediğiniz ağı seçin. En az bir ağ türü seçilmelidir. Bilgisayarlar üzerinden bir etki alanına bağlıysanız, ilk öğe seçmeniz gerekir. Bilgisayar bir çalışma grubu veya ev grubu aracılığıyla bağlıysanız, ikinci veya üçüncü öğe seçmeniz gerekir. 
-              **İleri**'ye tıklayın.  
+5.  İle iletişim kurmak için Uzak araçları istediğiniz ağı seçin. En az bir ağ türü seçilmelidir. Bilgisayarlar üzerinden bir etki alanına bağlıysanız, ilk öğe seçmeniz gerekir. Bilgisayar bir çalışma grubu veya ev grubu aracılığıyla bağlıysanız, ikinci veya üçüncü öğe seçmeniz gerekir. **İleri**'ye tıklayın.  
   
 6.  Hizmet başlatılabilirse göreceğiniz **Visual Studio uzaktan hata ayıklayıcı Yapılandırma Sihirbazı'nı başarıyla tamamladınız**. Hizmet başlatılamazsa göreceğiniz **Visual Studio uzaktan hata ayıklayıcı Yapılandırma Sihirbazı'nı tamamlamak için başarısız**. Sayfa aynı zamanda başlatmak için hizmet almak için izlemeniz gereken bazı ipuçları sağlar.  
   

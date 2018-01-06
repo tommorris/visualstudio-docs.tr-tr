@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55ba59a5a29181dfa3cdd70427720293582a648d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3c3201c032d0cae645460e614b6d4138297e4a93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-vspackages"></a>VSPackages yönetme
 Çoğu durumda VSPackages, proje ve öğe şablonları kaydetmek ve paket otomatik olarak yüklenmesini yönetme hakkında endişelenmeniz gerekmez. Ancak, bazı durumlarda, paket yönetmek için biraz daha fazla bilgi edinmek gerekebilir.  
@@ -48,4 +49,4 @@ Uzantılar, başlatma ve çözüm yük performansı etkileyebilir. Visual Studio
  Yükleme veya hataları yaşıyor VSPackages sorun giderme teknikleri öğrenin: [VSPackages sorun giderme](../extensibility/troubleshooting-vspackages.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [VSPackages](../extensibility/internals/vspackages.md)
+ [VSPackage’lar](../extensibility/internals/vspackages.md)

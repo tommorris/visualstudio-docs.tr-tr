@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e30d1fbd8cd23a514d1036bc43c809626c665d73
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78806b2ace7872db06ff403bcae28bb6eff21cd2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Nasıl Yapılır: WPF Ağacı Görselleştiricisini Kullanma
 WPF ağacı görselleştiricisini bir WPF nesnesinin görsel ağaç keşfetmek için ve o ağaç içinde bulunan nesneleri WPF bağımlılık özelliklerini görüntülemek için kullanabilirsiniz. Görsel ağaçlar hakkında daha fazla bilgi için bkz: [WPF ağaçlarında](/dotnet/framework/wpf/advanced/trees-in-wpf). Bağımlılık özellikleri hakkında daha fazla bilgi için bkz: [bağımlılık özelliklerine genel bakış](/dotnet/framework/wpf/advanced/dependency-properties-overview).  
@@ -66,4 +67,4 @@ WPF ağacı görselleştiricisini bir WPF nesnesinin görsel ağaç keşfetmek i
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özel Görselleştiriciler oluşturma](../debugger/create-custom-visualizers-of-data.md)   
  [WPF ağaçlarında](/dotnet/framework/wpf/advanced/trees-in-wpf)   
- [Bağımlılık özelliklerine genel bakış](/dotnet/framework/wpf/advanced/dependency-properties-overview)
+ [Bağımlılık Özelliklerine Genel Bakış](/dotnet/framework/wpf/advanced/dependency-properties-overview)

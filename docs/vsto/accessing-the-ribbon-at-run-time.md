@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f69818d2e7c1b6ef2babd651247fe81709b80097
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 347659ce577a532604835f57c4b509553f438dea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-the-ribbon-at-run-time"></a>Çalışma Zamanında Şerite Erişme
   Gösterme, gizleme ve Şerit değiştirmek için kod yazma ve kullanıcıların özel görev bölmesi, Eylemler bölmesinde veya Outlook form bölgesi denetimlerinde kodu çalıştırmasına etkinleştirin.  
@@ -66,6 +67,6 @@ ms.lasthandoff: 10/31/2017
  [İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [İzlenecek yol: Şerit denetimlerini çalışma zamanında güncelleme](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Form bölgesine çalışma zamanında erişme](../vsto/accessing-a-form-region-at-run-time.md)  
+ [Form Bölgesine Çalışma Zamanında Erişme](../vsto/accessing-a-form-region-at-run-time.md)  
   
   

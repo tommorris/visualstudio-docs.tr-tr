@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 26a166779ae0a217e9522e7c3b577ec85507c0a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a2b2267a47ec88f948402ee54e8c84468b5e6a63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="logging-in-msbuild"></a>MSBuild'de Günlük Kaydı
 Günlük bir yapı ilerlemesini izlemek bir yol sağlar. Günlüğe kaydetme yakalamaları olayları, iletilerini, uyarıları ve hataları günlük dosyasında oluşturun.  
@@ -26,16 +27,16 @@ Günlük bir yapı ilerlemesini izlemek bir yol sağlar. Günlüğe kaydetme yak
  [Derleme günlüklerini alma](../msbuild/obtaining-build-logs-with-msbuild.md)  
  Oturum açmayı çeşitli yönlerini açıklar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
- [Günlükçüleri derleme](../msbuild/build-loggers.md)  
+ [Günlükçüleri Derleme](../msbuild/build-loggers.md)  
  Tek işlemcili Günlükçü oluşturmak için gereken adımlar açıklanır.  
   
- [Birden çok işlemcili ortamda oturum açma](../msbuild/logging-in-a-multi-processor-environment.md)  
+ [Birden Çok İşlemcili Ortamda Oturum Açma](../msbuild/logging-in-a-multi-processor-environment.md)  
  Günlük bir birden çok işlemcili ortamda ve iki birden çok işlemcili günlük modellerinde nasıl çalıştığı açıklanmaktadır.  
   
- [Birden çok işlemciye duyarlı Günlükçüler yazılıyor](../msbuild/writing-multi-processor-aware-loggers.md)  
+ [Birden Çok İşlemciye Duyarlı Günlükçüler Yazılıyor](../msbuild/writing-multi-processor-aware-loggers.md)  
  Birden çok işlemciye duyarlı günlükçüler oluşturma ve ConfigurableForwardingLogger kullanmak nasıl özetlenir.  
   
- [İletme Günlükçüleri oluşturma](../msbuild/creating-forwarding-loggers.md)  
+ [İletme Günlükçüleri Oluşturma](../msbuild/creating-forwarding-loggers.md)  
  Özel iletme günlükçüleri oluşturma açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

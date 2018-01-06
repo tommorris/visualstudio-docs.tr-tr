@@ -15,11 +15,12 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 28f0715665fb032ac2cf78dd58be65005b1065d0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>&#39; teki Visual Studio 2017'deki yenilikler
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>İçin güncelleştirilmiş [15,5 sürüm](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -223,7 +224,7 @@ Kolaylaştırılmış uygulama dağıtımı ek olarak, Windows 10 sonbaharda olu
 * **En iyi UWP ve Win32** <br/>
 Biz Windows 10 platformu iyileştirilmiştir [Masaüstü köprüsü](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) kendi geçerli odak UWP, WPF, Windows Forms veya Xamarin olup Windows 10 tüm .NET geliştiricileri için iyileştirmemize. Yeni Uygulama paketleme proje türü ile Visual Studio 2017 sürüm 15,5 içinde UWP projeleri için gibi WPF veya Windows Forms projeleri için Windows uygulama paketleri oluşturabilirsiniz. Uygulamanızı paketleme sonra tüm Windows 10 uygulamasını dağıtım avantajlarını elde edersiniz ve Microsoft Store (tüketici uygulamaları için) veya Microsoft Store aracılığıyla iş ve eğitim dağıtmak için seçeneğiniz vardır. Paketlenmiş uygulamalar tam UWP API yüzeyi ve Win32 API'ları masaüstüne erişiminiz olduğundan, WPF ve Windows Forms uygulamalarınızla kademeli olarak UWP API'ları ve Windows 10 özellikleri artık modernize. Ayrıca, tüm Win32 yetenekleriyle masaüstünde açık, UWP uygulamalarında Win32 bileşenlerinizi içerebilir. 
 
-UWP hakkında daha fazla bilgi için bkz: [Evrensel Windows Platformu (UWP) uygulamaları geliştirmek](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp) sayfası.
+UWP hakkında daha fazla bilgi için bkz: [Evrensel Windows Platformu (UWP) uygulamaları geliştirmek](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) sayfası.
 
 ## <a name="mobile-app-development"></a>Mobil uygulama geliştirme
 ### <a name="xamarin"></a>Xamarin
@@ -270,7 +271,7 @@ Ve şimdi Docker destek içerir.
 
 **15.3 yeni**: Visual Studio 2017 sürüm 15.3 .NET Core 2.0 geliştirme destekler. .NET Core 2.0 kullanarak .NET Core 2.0 SDK'sı ayrı olarak yükleyip gerektirir.  
 
-Daha fazla bilgi için bkz: [.NET Core Kılavuzu](https://docs.microsoft.com/dotnet/core/index) sayfası.
+Daha fazla bilgi için bkz: [.NET Core Kılavuzu](/dotnet/core/index) sayfası.
 
 ## <a name="games-development"></a>Oyunlar geliştirme
 ### <a name="visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları
@@ -301,6 +302,6 @@ Biz Visual Studio geliştirmek, veya nasıl bir sorun bildirmek hakkında öneri
 ## <a name="see-also"></a>Ayrıca Bkz.
 * [Visual Studio 2017 sürüm notları](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Visual c++'ta yenilikler nelerdir?](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [C# ' ta yenilikler nelerdir?](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
+* [C# ' ta yenilikler nelerdir?](/dotnet/csharp/whats-new)  
 * [Team Foundation Server için Yenilikler](https://www.visualstudio.com/docs/whats-new)
 * [Mac için Visual Studio yenilikleri](https://www.visualstudio.com/vs/visual-studio-mac/)

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b591f0158408161d268930416d49c465e29d0b2c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 821c0634f4e23d0aa8fd71a8b0eedd796efe3a03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Nasıl Yapılır: Birden Çok Proje Dosyasında Aynı Hedefi Kullanma
 Birkaç yazmış varsa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyalarını, bulunan, aynı görev ve hedeflerini farklı proje dosyalarında kullanmanız gerekebilir. Bu görevler veya hedefleri tam açıklamasını her proje dosyasında dahil olmak üzere yerine ayrı proje dosyasında bir hedef kaydedin ve sonra proje hedef kullanması gereken diğer projeyi alın.  
@@ -116,4 +117,4 @@ Birkaç yazmış varsa [!INCLUDE[vstecmsbuild](../extensibility/internals/includ
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İçeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md)   
- [Hedefleri](../msbuild/msbuild-targets.md)
+ [Hedefler](../msbuild/msbuild-targets.md)

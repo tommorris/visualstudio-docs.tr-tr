@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b05ff310a2e0c478b6f9be766f27731ca9f8f9ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d161b078e4001ea7f02311bbcefe4c7f1eb6b7b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-event-types"></a>Desteklenen olay türleri
 Hata ayıklama için Visual Studio şu anda aşağıdaki olay türlerini destekler:  
@@ -88,4 +89,4 @@ Hata ayıklama için Visual Studio şu anda aşağıdaki olay türlerini destekl
 |[IDebugThreadNameChangedEvent2](../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|İzin verilen, ancak gerekli değil|İzin verilen, ancak gerekli değil|Hayır|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Gönderen olaylar](../../extensibility/debugger/sending-events.md)
+ [Olayları Gönderme](../../extensibility/debugger/sending-events.md)

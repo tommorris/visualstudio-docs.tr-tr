@@ -26,11 +26,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e52bef93735efc1ec5e43230ba46c7aa90cb67bc
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP uygulamalarında JavaScript bellek kullanımını çözümleme
 JavaScript bellek Çözümleyicisi bellek kullanımını anlamak ve JavaScript kullanan Windows için oluşturulmuştur, UWP uygulamaları içinde bellek sızıntıları bulmanıza yardımcı olmak için Visual Studio'da kullanılabilir. Desteklenen uygulamaların uygulamaları Evrensel Windows uygulamaları için içerir.
@@ -401,4 +402,4 @@ if (performance && performance.mark) {
     -   Sınama nesnesi oluşturun ve JavaScript bellek Çözümleyicisi görünümlerde türleri görünümü gibi izleme. Örneğin, belirli nesne veya öğenin çöpünün toplanma olup olmadığını görmek için başka bir nesneye çok büyük nesne ekleyebilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: bir bellek sızıntısı (JavaScript) bulma](../profiling/walkthrough-find-a-memory-leak-javascript.md)
+ [İzlenecek yol: Bellek sızıntısını bulma (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

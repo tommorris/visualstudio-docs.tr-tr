@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55783b604e929d2e5d4cdc613befa2fbec42aec4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0fdab6cb0b259fe169a9ebd43c92158a5ce20d4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Kaynak denetimi eklentiler için test Kılavuzu
 Bu bölümde, kaynak denetim eklentisi ile test etmek için yönergeler sağlanmaktadır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. En yaygın test alanları yanı sıra bazı sorunlu olabilecek daha karmaşık alanlar kapsamlı bir bakış sağlanır. Bu genel bakışta test çalışmalarının kapsamlı bir liste olması düşünülmemiştir.  
@@ -66,7 +67,7 @@ Bu bölümde, kaynak denetim eklentisi ile test etmek için yönergeler sağlanm
   
     -   Case 1c: kaynak denetiminden çözüme ekleyin  
   
--   [Test alanı 2: Kaynak denetiminden Al](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+-   [Test Alanı 2: Kaynak Denetiminden Alma](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
 -   [Test alanı 3: Kullanıma / kullanıma almayı geri al](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
@@ -82,7 +83,7 @@ Bu bölümde, kaynak denetim eklentisi ile test etmek için yönergeler sağlanm
   
     -   Case 3e: kullanıma almayı geri alma  
   
--   [Test alanı 4: İade etme](../../extensibility/internals/test-area-4-check-in.md)  
+-   [Test Alanı 4: İade Etme](../../extensibility/internals/test-area-4-check-in.md)  
   
     -   Case 4a: öğeler  
   
@@ -90,7 +91,7 @@ Bu bölümde, kaynak denetim eklentisi ile test etmek için yönergeler sağlanm
   
     -   Bu durumda 4 c: projelerine ekleme  
   
--   [Test alanı 5: Kaynak denetimini Değiştir](../../extensibility/internals/test-area-5-change-source-control.md)  
+-   [Test Alanı 5: Kaynak Denetimini Değiştirme](../../extensibility/internals/test-area-5-change-source-control.md)  
   
     -   Case 5a: bağlama  
   
@@ -98,15 +99,15 @@ Bu bölümde, kaynak denetim eklentisi ile test etmek için yönergeler sağlanm
   
     -   Case 5c: yeniden bağlayın  
   
--   [Test alanı 6: Sil](../../extensibility/internals/test-area-6-delete.md)  
+-   [Test Alanı 6: Silme](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Test alanı 7: paylaşımı](../../extensibility/internals/test-area-7-share.md)  
+-   [Test Alanı 7: Paylaşma](../../extensibility/internals/test-area-7-share.md)  
   
--   [Test alanı 8: Eklenti değiştirme](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+-   [Test Alanı 8: Eklenti Değiştirme](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
     -   Case 8a: otomatik değiştirme  
   
     -   Case 8b: Çözüm tabanlı Değiştir  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Denetim Eklentileri](../../extensibility/source-control-plug-ins.md)
+ [Kaynak Denetimi Eklentileri](../../extensibility/source-control-plug-ins.md)

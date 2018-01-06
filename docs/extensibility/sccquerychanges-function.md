@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589013b996f9ed018e28292a27c6a760eef1dae7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec61845433329645fbc4f02a72c062c3cf47f9f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges işlevi
 Bu işlev belirli bir geri çağırma işlevini aracılığıyla her bir dosyanın adı değişiklikler hakkında bilgi sağlayan dosyaların listesini numaralandırır.  
@@ -67,4 +68,4 @@ SCCRTN SccQueryChanges(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetim eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
- [Hata kodları](../extensibility/error-codes.md)
+ [Hata Kodları](../extensibility/error-codes.md)

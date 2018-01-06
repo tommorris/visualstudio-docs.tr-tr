@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: fbe35de06ac09c95a045748a5d8ecb379779a20a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 862f51aa7d124c3dbaa6514b666d74c26334e299
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce ve Uygulama Ayarları
 Windows Forms için uygulama ayarları oluşturun, depolamak ve özel uygulama ve istemci üzerindeki kullanıcı tercihlerini korumak yapmayı kolaylaştırır. Aşağıdaki belge bir ClickOnce uygulamasında uygulama ayarları dosyalarının nasıl çalışır ve kullanıcı sonraki sürüme yükseltildiğinde nasıl ClickOnce ayarlarını da geçirir açıklar.  
@@ -58,4 +59,4 @@ Windows Forms için uygulama ayarları oluşturun, depolamak ve özel uygulama v
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   
  [Uygulama ayarlarına genel bakış](/dotnet/framework/winforms/advanced/application-settings-overview)   
  [ClickOnce önbelleğine genel bakış](../deployment/clickonce-cache-overview.md)   
- [ClickOnce uygulamalarında yerel ve uzak veri erişimi](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [ClickOnce Uygulamalarında Yerel ve Uzak Veri Erişimi](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

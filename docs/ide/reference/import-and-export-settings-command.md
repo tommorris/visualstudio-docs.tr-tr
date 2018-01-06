@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 61924f7d9430661114f1fecc36d585e2d223604b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d4337a5755a58c03c827849417412885f42127a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="import-and-export-settings-command"></a>Ayarları İçeri ve Dışarı Aktar Komutu
 Exports veya sıfırlar alır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ayarlar.  
@@ -53,4 +54,4 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md)   
- [Visual Studio komutları](../../ide/reference/visual-studio-commands.md)
+ [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)

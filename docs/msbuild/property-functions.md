@@ -13,11 +13,12 @@ caps.latest.revision: "33"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 46df0fc4be6abf639f939b5145765f0ba41b0b8c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: e77803150d747d05d8f6b0002814010c45244282
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-functions"></a>Özellik İşlevleri
 .NET Framework sürüm 4 ve 4.5, özellik işlevleri MSBuild komut değerlendirmek için kullanılabilir. Özellik işlevleri özellikleri görünür her yerde kullanılabilir. Görevler, farklı özellik işlevleri dışında hedefleri kullanılabilen ve tüm hedef çalışmadan önce değerlendirilir.  

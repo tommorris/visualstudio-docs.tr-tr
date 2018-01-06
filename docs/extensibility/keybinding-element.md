@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f620d895defbeeb3317f4a977db454a14ce3adc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2019a34e55148007cd75df12212bd4b0a897159c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keybinding-element"></a>KeyBinding öğesi
 KeyBinding öğesi komutları için klavye kısayolları belirtir.  
@@ -60,7 +61,7 @@ KeyBinding öğesi komutları için klavye kısayolları belirtir.
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Taşıyan öğesi](../extensibility/keybindings-element.md)|Grupları KeyBinding öğeleri ve diğer taşıyan gruplandırmaları.|  
+|[KeyBindings Öğesi](../extensibility/keybindings-element.md)|Grupları KeyBinding öğeleri ve diğer taşıyan gruplandırmaları.|  
   
 ## <a name="example"></a>Örnek  
   
@@ -75,4 +76,4 @@ KeyBinding öğesi komutları için klavye kısayolları belirtir.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Taşıyan öğesi](../extensibility/keybindings-element.md)   
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

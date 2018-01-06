@@ -15,18 +15,19 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d580d3d74d8648b7181ac1ca384d3232fa8225b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 119e6dc088c6f6e80d79ab096d97b7404c530611
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-vspackages"></a>VSPackages kaydetme
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].pkgdef dosyalarını açıklar ve bir VSPackage bulmak için kullanır. Bir .pkgdef dosyası Aksi halde sistem kayıt defterine eklenen tüm kayıt bilgileri içerir. Yönetilen VSPackages kaynak koduna öznitelikleri ekleme ve ardından çalıştırarak kayıtlı [CreatePkgDef yardımcı programı](../../extensibility/internals/createpkgdef-utility.md) .pkgdef dosyası oluşturmak için sonuçta elde edilen derleme üzerinde.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [VS Kabuğu VSPackage dosya konumunu belirtme](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
+ [VS Kabuğuna VSPackage Dosya Konumunu Belirtme](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
  Yükleme yolu için VSPackages açıklar.  
   
- [Kaydetme ve kaydını kaldırma VSPackages](../../extensibility/registering-and-unregistering-vspackages.md)  
+ [VSPackage Kaydetme ve Kaydını Kaldırma](../../extensibility/registering-and-unregistering-vspackages.md)  
  Bir VSPackage kaydedileceği açıklanmaktadır.  

@@ -12,11 +12,12 @@ caps.latest.revision: "26"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 5c7571cbb4950f91c1b69ae88241c799577f79da
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 18381aef265935cf927940f82dd0a47ee8197222
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Program Kodunda Modeli Gezinme ve Güncelleştirme
 Model öğelerini silin, bunların özelliklerini ayarlamak ve oluşturulur ve öğeler arasındaki bağlantıları silmek üzere kod yazabilirsiniz. Bir işlem içinde yapılan tüm değişiklikler gerekir. Öğeleri bir diyagramda görüntülerse diyagram "otomatik olarak işlem sonunda düzeltilecektir".  
@@ -520,4 +521,4 @@ partial class MyDiagram
  [Bir etki alanına özgü dili kod oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)   
  [Nasıl yapılır: modeli güncelleştirmek için işlemleri kullanın](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [Visual Studio Modelbus kullanarak modelleri tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
- [Yanıt vermek ve değişiklikleri yayma](../modeling/responding-to-and-propagating-changes.md)
+ [Değişikliklere Yanıt Verme ve Değişiklikleri Yayma](../modeling/responding-to-and-propagating-changes.md)

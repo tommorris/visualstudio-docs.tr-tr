@@ -17,11 +17,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4c5d1e71a4d0e0d8ac74ba02bff29ddc1c7477
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>Benzetici UWP ve Windows 8.1 uygulamaları çalıştırma
 UWP ve Windows 8.1 uygulamalar için Visual Studio simulator, UWP veya Windows 8.1 uygulamasını taklit eden bir masaüstü uygulamasıdır. Çalıştırabilirsiniz uygulamaları taklit etmek istediğiniz çözüm ve fiziksel ekran boyutu seçin. Ayrıca, ortak dokunma ve döndürme olaylarının benzetimini yapma ve ağ bağlantısı özellikleri benzetimini yapma.
@@ -146,7 +147,7 @@ UWP ve Windows 8.1 uygulamalar için Visual Studio simulator, UWP veya Windows 8
   
  [Arka plan görevleri ile sistem olaylarına tepki vermek nasıl](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Tetiklemek nasıl askıya alma, sürdürme ve arka plan UWP uygulamaları olayları](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [UWP uygulamalarında askıya alma, sürdürme ve arka plan olayları tetikleme](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a>Klavye ile simulator gidin  
  Simulator araç çubuğu tuşlarına basarak gezinebilirsiniz **CTRL + ALT + YUKARI OK** odak simulator penceresinden simulator araç çubuğuna geçiş yapmak için. Kullanım **yukarı ok** ve **aşağı ok** araç çubuğu düğmeleri arasında taşımak için.  

@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30a5b1150d44c138465db36da2b032b71f075397
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f2fa28a3429c52e3d4eb8b5fc9faefbd86ee04d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sending-the-required-events"></a>Gerekli olayları gönderme
 Gerekli olayları göndermek için bu yordamı kullanın.  
@@ -39,4 +40,4 @@ Gerekli olayları göndermek için bu yordamı kullanın.
 >  Birçok dil kodlarını başında genel başlatıcıları veya dış, önceden derlenmiş işlevleri (CRT kitaplık veya _main'den) kullanın. Ayıkladığınız program dilinin ya da bu tür ilk giriş noktası önce öğeler içeriyorsa, sonra bu kodu çalıştırmak ve giriş noktası olayı gönderilir, kullanıcı giriş noktası, gibi **ana** veya `WinMain`, ulaşıldı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ayıklanacak bir Program etkinleştirme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+ [Bir Programı Hataları Ayıklanacak Şekilde Etkinleştirme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 25b0f76c657f4d4df7375b4fc9e418e8806bd51f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 995ac17cd99c395dcf1c69f0d05e1b273ac72f1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-in-visual-studio"></a>Visual Studio'da Güvenlik
 Uygulama geliştirme sürecinizde, tasarımdan geliştirmeye kadar her yönüyle güvenliği göz önünde bulundurmalısınız. Visual Studio mümkün olduğunca güvenli bir şekilde çalıştırarak başlayın. Bkz: [kullanıcı izinleri](../ide/user-permissions-and-visual-studio.md).  
@@ -36,7 +37,7 @@ Uygulama geliştirme sürecinizde, tasarımdan geliştirmeye kadar her yönüyle
 ## <a name="coding-for-security"></a>Güvenlik İçin Kodlama  
  Güvenlik açıklarına neden olan çoğu kodlama hatası, geliştiricilerin kullanıcı girdisiyle çalışırken yanlış varsayımlarda bulunmaları veya uygulama geliştirdikleri platformu tam olarak anlamamaları yüzünden meydana gelir.  
   
- [Güvenli kodlama yönergeleri](/dotnet/standard/security/secure-coding-guidelines)  
+ [Güvenli Kodlama Yönergeleri](/dotnet/standard/security/secure-coding-guidelines)  
  Güvenlik sorunlarının çözümü için bileşenlerinizin sınıflandırılmasına yönelik yönergeler sağlar.  
   
  [En iyi güvenlik uygulamaları](/cpp/top/security-best-practices-for-cpp)  
@@ -48,5 +49,5 @@ Uygulama geliştirme sürecinizde, tasarımdan geliştirmeye kadar her yönüyle
  [Dotfuscator Community Edition (CE)](dotfuscator/index.md)  
  Ayarlamak ve ücretsiz PreEmptive tarafından koruması - .NET derlemelerini (örneğin, yetkisiz hata ayıklama) ters mühendislik ve yetkisiz kullanıma karşı korumak için Dotfuscator Community Edition'ı kullanmaya başlamak açıklanmaktadır.
   
- [Derleme ve bildirim imzalamayı yönetme](managing-assembly-and-manifest-signing.md)  
+ [Derleme ve Bildirim İmzalamayı Yönetme](managing-assembly-and-manifest-signing.md)  
  Anlatılmaktadır güçlü-imzalama, yazılım bileşenleri, ad kimlik sahtekarlığı önleme benzersiz şekilde tanımlamak için kullanılan ad.

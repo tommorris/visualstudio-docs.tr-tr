@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 06ca9ec7fc3c084ce503ba0900d10eb2b68f4349
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff3f23af3bf9358f47251a7ea45082f5508349b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Gelişmiş Güvenlik Ayarları İletişim Kutusu
 Bu iletişim kutusu bölgesinde hata ayıklama için ilgili güvenlik ayarları belirtmenize olanak sağlar.  
@@ -40,4 +41,4 @@ Bu iletişim kutusu bölgesinde hata ayıklama için ilgili güvenlik ayarları 
  Web sitesi veya karşılık gelen sunucu paylaşımı erişmesine izin vermek varsa **yükleme URL'si** , belirtilen **Yayımla** sayfasında, bu URL'yi buraya yazın. Bu seçenek yalnızca olan **kaynak siteye uygulama erişim** seçilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Güvenlik sayfası, Proje Tasarımcısı](../../ide/reference/security-page-project-designer.md)
+ [Güvenlik Sayfası, Proje Tasarımcısı](../../ide/reference/security-page-project-designer.md)

@@ -11,11 +11,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: 283fec9bcaa4f678f30f3a0eb0dda667146b03b9
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.workload: multiple
+ms.openlocfilehash: d3349190fdfca4c0d4520a89b6c862b0a05898ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Visual Studio 2017 ile ilgili bir sorun bildirme
 Visual Studio ile ilgili bir sorun yaşıyorsanız, bunları hakkında bilmek isteriz. Böylece biz tanılayın ve düzeltin sorunu bildirin bırakılır.  
@@ -73,4 +74,4 @@ Zaten yapmadıysanız, oturum açma Visual Studio için önce bir sorunu bildiri
  ![Geri bildirim Aracı'nı açmak için Visual Studio yükleyicisi geri bildirim sağlayın düğmeye sekmesi](../install/media/report-a-problem.png)
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bizimle iletişime geçin](../ide/talk-to-us.md)
+ [Bizimle İletişime Geçin](../ide/talk-to-us.md)

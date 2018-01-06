@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0089e5a8bf85ba352788767c821d95f41ca60eec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6102a5bb6298cd6403285e3d36842424b0be3412
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Kod parçacıkları eski dil hizmetindeki desteği
 Kod parçacığı, kaynak dosyasına eklenen kod parçasıdır. Parçacığı alanları kümesini XML tabanlı bir şablonla ' dir. Kod parçacığını eklenir ve kod parçacığında eklenen içerik bağlı olarak farklı değerlere sahip olabilir sonra bu alanlar vurgulanır. Kod parçacığını hemen eklendikten sonra dil hizmeti kod parçacığını biçimlendirebilirsiniz.  
@@ -395,4 +396,4 @@ namespace TestLanguagePackage
  [Eski dil hizmeti özellikleri](../../extensibility/internals/legacy-language-service-features1.md)   
  [Eski dil hizmeti kaydetme](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Kod parçacıkları](../../ide/code-snippets.md)   
- [İzlenecek yol: yüklenen kod parçacıkları (eski uygulama) listesini alma](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+ [İzlenecek Yol: Yüklü Kod Parçacıklarının Listesini Alma (Eski Uygulama)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

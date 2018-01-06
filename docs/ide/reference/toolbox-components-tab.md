@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb474e832f815453fd84ba35bc3680b961e17954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-components-tab"></a>Araç Kutusu, Bileşenler Sekmesi
 Görüntüler için ekleme bileşenleri [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ve [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] tasarımcıları. Ek olarak [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] dahil edilen bileşenleri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], gibi <xref:System.Messaging.MessageQueue> ve <xref:System.Diagnostics.EventLog> bileşenleri ekleyebilirsiniz, bu sekmeye kendi veya üçüncü taraf bileşenleri. Daha fazla bilgi için bkz: [nasıl yapılır: araç kutusu sekmeleri işlemek](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
@@ -63,7 +64,7 @@ Görüntüler için ekleme bileşenleri [!INCLUDE[vbprvb](../../code-quality/inc
  **ServiceController**  
  Oluşturur bir <xref:System.ServiceProcess.ServiceController> bileşen örneği başlatma hizmetleri durdurma ve komutlar göndererek dahil olmak üzere var olan hizmetleri yönetmek için kullanabilirsiniz. Daha fazla bilgi için bkz: [Windows hizmetlerini izleme](http://msdn.microsoft.com/en-us/4542ee3f-e052-4cb9-8726-58e9420de222).  
   
- **Zamanlayıcı**  
+ **Timer**  
  Oluşturur bir <xref:System.Windows.Forms.Timer> bileşen örneği, Windows tabanlı uygulamalar için zamana dayalı işlevsellik eklemek için kullanabilirsiniz. Daha fazla bilgi için bkz: [süreölçer bileşeni](/dotnet/framework/winforms/controls/timer-component-windows-forms).  
   
 > [!NOTE]

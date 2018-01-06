@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a8bb9332b30e5dbc410bdacea3800713b25b10f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6b95047348f549073a05060b81874f65d7781918
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-vsix-packages"></a>VSIX paket yerelleştirme
 
@@ -107,5 +108,5 @@ Aşağıdaki örnek, ilgili bölümleri İspanyolca için karşılık gelen Exte
 |Başlık|Açıklama|
 |-----------|-----------------|
 |[VSIX 2.0 LanguagePack şema başvurusu](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|VSIX Dil Paketi .vsix dağıtım dosyasının yerelleştirme bilgisi açıklar.|
-|[VSIX paketi anatomisi](../extensibility/anatomy-of-a-vsix-package.md)|VSIX paketi içeriği ve yapısı açıklar.|
-|[Yerelleştirme menü komutları](../extensibility/localizing-menu-commands.md)|Başka bir uzantı metin kaynaklarında yerelleştirme gösterilmektedir.|
+|[Bir VSIX Paketinin Anatomisi](../extensibility/anatomy-of-a-vsix-package.md)|VSIX paketi içeriği ve yapısı açıklar.|
+|[Menü Komutlarını Yerelleştirme](../extensibility/localizing-menu-commands.md)|Başka bir uzantı metin kaynaklarında yerelleştirme gösterilmektedir.|

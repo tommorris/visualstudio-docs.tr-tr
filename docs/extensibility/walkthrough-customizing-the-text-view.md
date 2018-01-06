@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e890145199fe864d2f7b5010495375bfbc6cc094
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ecbf5e3bed5ba506278f00b2b5b0b76f8f02850a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>İzlenecek yol: metin görünümü özelleştirme
 Metin görünümü, düzenleyici biçimi eşlemesindeki aşağıdaki özelliklerden herhangi birini değiştirerek özelleştirebilirsiniz:  
@@ -94,4 +95,4 @@ Metin görünümü, düzenleyici biçimi eşlemesindeki aşağıdaki özellikler
 5.  Üzerinde görünür boşluk açın. (Üzerinde **Düzenle** menüsündeki **Gelişmiş** ve ardından **görünüm boşluk**). Bazı sekmeler metni yazın. Sekmeleri temsil eden kırmızı oklar görüntülenmesi gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md)
+ [Dil Hizmeti ve Düzenleyici Uzantı Noktaları](../extensibility/language-service-and-editor-extension-points.md)

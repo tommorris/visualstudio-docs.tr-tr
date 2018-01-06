@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d586851da7d02f89335a3920364e25b7f4876860
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 05805e5cf4b21f4c7d233cab7dd8421ee76f626f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-overview"></a>Eski dil hizmetine genel bakış
 Bir dil hizmeti belirli uygulamanıza olanak tanıyan Düzenleyicisi destek sağlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] özellikleri. Yönetilen paket Framework (MPF) dil hizmet sınıfları, özellikleri sık kullanılan ve diğer özellikleri kısmi desteği için tam destek sağlar.  
@@ -63,34 +64,34 @@ Bir dil hizmeti belirli uygulamanıza olanak tanıyan Düzenleyicisi destek sağ
   
 -   [Eski dil hizmeti kaydetme](../../extensibility/internals/registering-a-legacy-language-service1.md)  
   
--   [Eski dil hizmetinde söz dizimi renklendirme](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
+-   [Eski Dil Hizmetinde Söz Dizimi Renklendirmesi](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
   
--   [Eski dil hizmet eşlemesi](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
+-   [Eski Dil Hizmetinde Ayraç Eşleştirme](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
   
--   [Eski dil hizmetinde anahat oluşturma](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
+-   [Eski Dil Hizmetinde Ana Hat Oluşturma](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
   
--   [Eski dil hizmeti yorum oluşturma kodu](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
+-   [Eski Dil Hizmetinde Koda Açıklama Ekleme](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
   
--   [Eski dil hizmeti kodunda yeniden biçimlendirme](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
+-   [Eski Dil Hizmetinde Kodu Yeniden Biçimlendirme](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
   
--   [Eski dil hizmetinde özel belge özellikleri](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
+-   [Eski Dil Hizmetinde Özel Belge Özellikleri](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
   
--   [Kod parçacıkları eski dil hizmetindeki desteği](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
+-   [Eski Dil Hizmetinde Kod Parçacıkları için Destek](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
   
--   [Eski dil hizmeti gezinti çubuğunda desteği](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
+-   [Eski Dil Hizmetinde Otomatik Değişkenler Penceresi için Destek](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
   
--   [Eski dil hizmetindeki Sözcük tamamlama](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
+-   [Eski Dil Hizmetinde Sözcük Tamamlama](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
   
--   [Eski dil hizmetindeki üye tamamlama](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
+-   [Eski Dil Hizmetinde Üye Tamamlama](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
   
 -   [Eski dil hizmetindeki parametre bilgisi](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
   
--   [Eski dil hizmetindeki hızlı bilgi](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
+-   [Eski Dil Hizmetinde Hızlı Bilgiler](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
   
--   [Eski dil hizmetinde otomatik değişkenler penceresi desteği](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
+-   [Eski Dil Hizmetinde Otomatik Değişkenler Penceresi için Destek](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
   
--   [Kesme noktaları eski dil hizmetindeki doğrulanıyor](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
+-   [Eski Dil Hizmetinde Kesme Noktalarını Doğrulama](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski dil hizmeti uygulama](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
- [Eski dil hizmeti genişletilebilirliği](../../extensibility/internals/legacy-language-service-extensibility.md)
+ [Eski Dil Hizmeti Genişletilebilirliği](../../extensibility/internals/legacy-language-service-extensibility.md)

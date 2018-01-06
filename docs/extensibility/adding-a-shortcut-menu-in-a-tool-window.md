@@ -17,11 +17,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81e944d73ae45de1a786a6df27652949a38eec81
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f90f5971a101b54aae1cd968d5d5dad67caec74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Bir araç penceresinde bir kısayol menüsü ekleme
 Bu kılavuz bir kısayol menüsü araç penceresinde koyar. Bir kısayol menüsü kullanıcı düğme, metin kutusu veya pencere arka plan tıklattığında görünen menüsünde ' dir. Bir kısayol menü komutlarını diğer menüleri veya araç çubuklarını komutlarını olarak aynı şekilde davranır. Bir kısayol menüsü desteklemek için .vsct dosyasında belirtin ve yanıt fareyi sağ olarak görüntüleyin.  
@@ -281,4 +282,4 @@ Bu kılavuz bir kısayol menüsü araç penceresinde koyar. Bir kısayol menüs�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Komutları, menüleri ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)   
- [Kullanarak ve hizmetleri sağlar](../extensibility/using-and-providing-services.md)
+ [Hizmetleri Kullanma ve Sağlama](../extensibility/using-and-providing-services.md)

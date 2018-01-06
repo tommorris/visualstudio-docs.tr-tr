@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 794eccaf59b65044840d459bbde2e17eab8684a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e69ee994f434e122894989d82b97ea79e4bd995c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="delayed-document-loading"></a>Belge yüklemesi ertelendi
 Bir kullanıcı bir Visual Studio çözümü açana, ilişkili belgelere çoğunu hemen yüklü değil. Belge pencere çerçevesi başlatma bekleyen durumunda oluşturulur ve (bir saplama çerçeve olarak adlandırılır) bir yer tutucu belge çalıştıran belge Table'nın (RDT) yerleştirilir.  

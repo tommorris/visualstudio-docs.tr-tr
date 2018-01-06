@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86c8cce3abf16d7236acdd5ec468b06fdb46f997
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9fb212d7908d32bc9d9d14d7e8f4786089bc5f89
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Kullanıcı bir kaynak denetimi işleminin tümleşik geliştirme ortamı (IDE) içindeki yürütüldüğünde, eklenti kaynak denetimi için işlemi ile ilgili hata veya durum mesajları iletmek isteyebilirsiniz. Eklenti kendi ileti kutuları bu amaçla görüntüleyebilirsiniz. Ancak, daha fazla sorunsuz tümleştirme için eklenti dizeler ardından bunları durum bilgilerini görüntüleme, kendi yerel yolu görüntüler IDE geçirebilirsiniz. Bu mekanizma `LPTEXTOUTPROC` işlev işaretçisi. IDE hata ve durum görüntüleme (aşağıdaki daha ayrıntılı olarak açıklanmıştır) Bu işlev uygular.  
@@ -141,4 +142,4 @@ LONG SendStatusMessage(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDE tarafından uygulanan geri arama işlevleri](../extensibility/callback-functions-implemented-by-the-ide.md)   
- [Kaynak Denetim Eklentileri](../extensibility/source-control-plug-ins.md)
+ [Kaynak Denetimi Eklentileri](../extensibility/source-control-plug-ins.md)

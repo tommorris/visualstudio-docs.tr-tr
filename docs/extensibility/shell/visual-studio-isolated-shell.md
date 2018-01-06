@@ -18,11 +18,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6f4056e778e7d8f6aa62e84b03897c810160fa41
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e80b947b2d4d20692e0abceae0ffa36e64f2b0df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio yalıtılmış Kabuk
 Visual Studio yalıtılmış Kabuk yan yana çalıştırabileceğiniz bağımsız uygulamalar oluşturmanıza olanak tanıyan diğer Visual Studio sürümleri ile. Visual Studio hizmetleri kullanan ancak özelleştirilmiş bir görünümünü de özel araçlar öncelikle barındırmak için kullanılan ve marka. Visual Studio özellikleri ve menü komut gruplarını, kolayca açma ve kapatma açılabilir. Uygulama başlıkları, uygulama simgeleri ve başlangıç ekranında tamamen özelleştirilebilir. Özelleştirilebilir özelliklerin listesi için bkz: [yalıtılmış Kabuk özelleştirme](customizing-the-isolated-shell.md).  
@@ -65,4 +66,4 @@ Visual Studio yalıtılmış Kabuk yan yana çalıştırabileceğiniz bağımsı
 |Genişletilebilirlik|VSPackages ve MEF Bileşenleri kullanır|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kabuğu (yalıtılmış veya tümleşik)](shell-isolated-or-integrated.md)
+ [Kabuk (Yalıtılmış veya Tümleşik)](shell-isolated-or-integrated.md)

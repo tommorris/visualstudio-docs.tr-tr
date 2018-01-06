@@ -16,11 +16,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4df81a0d5f6faee7a272abd13ca6e046681b045d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Visual Basic'teki Uyarıları Yapılandırma
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Derleyici uyarıları çalışma zamanı hataları neden olabilir kodu hakkında bir dizi içerir. Temizleyici, daha hızlı ve daha az hataları ile daha iyi bir kod yazmak için bu bilgileri kullanabilirsiniz. Derleyici örneğin veya kullanıcı atanmamış nesne değişkeni, dönüş değeri ayarı olmadan bir işlevden dönüş üyesi çağırma girişiminde bulunduğunda bir uyarı üretir yürütme bir `Try` bloğu özel durumları yakalamak için mantığı hatalı.  
@@ -125,4 +126,4 @@ ms.lasthandoff: 10/31/2017
  [/ nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
  [/ warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
  [Derle sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [Varsayılan olarak kapalı olan derleyici uyarıları](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)
+ [Varsayılan Olarak Kapalı Olan Derleyici Uyarıları](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

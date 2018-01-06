@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30453237dcd95607a4f3524f115d16bc1cf4859a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 755516fb9d341193005ad39e419e708b6d28867c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Eski dil hizmeti Ayrıştırıcı ve tarayıcı
 Ayrıştırıcının dili hizmet Kalp ' dir. Yönetilen paket Framework (MPF) dil sınıfları görüntülenen kodu hakkında bilgi seçmek için bir dil Çözümleyicisi gerektirir. Bir Ayrıştırıcı metin sözcük belirteçlere ayırır ve türü ve işlevleri tarafından konusu belirteçleri tanımlar.  
@@ -138,4 +139,4 @@ namespace MyNamespace
  [Eski dil hizmeti uygulama](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [Eski dil hizmetine genel bakış](../../extensibility/internals/legacy-language-service-overview.md)   
  [Eski dil hizmetinde söz dizimi renklendirme](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
- [Eski dil hizmet eşlemesi](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
+ [Eski Dil Hizmetinde Ayraç Eşleştirme](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)

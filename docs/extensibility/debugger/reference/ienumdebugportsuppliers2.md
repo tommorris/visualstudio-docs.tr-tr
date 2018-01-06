@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55481d339d9aad5e668ebdf5e3715af18768ed01
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1fff85e5cb76293327138bf6382c8e0f4da06c25
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 Bu arabirim, bağlantı noktası Üreticiler numaralandırır.  
@@ -40,7 +41,7 @@ IEnumDebugPortSuppliers2 : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Sonraki](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|Bağlantı noktası üreticiler bir numaralandırma dizisinde belirtilen sayısını alır.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|Bağlantı noktası üreticiler bir numaralandırma dizisinde belirtilen sayısını alır.|  
 |[Atla](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|Bağlantı noktası üreticiler bir numaralandırma dizisinde belirtilen sayıda atlar.|  
 |[Sıfırla](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
 |[Kopya](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  

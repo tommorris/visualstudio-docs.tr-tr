@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 754b2e79131e425b8e27c0084acbd6243016815a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7f02d099fe680006966219bb626e17bc7a7114b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 Bu arabirim, bir işlemde çalışan bir program temsil eder.  
@@ -44,9 +45,9 @@ IDebugProgram2 : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|Programın adını alır.|  
 |[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|Bu programı çalıştırmayı işlem alır.|  
 |[Sonlandırma](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Bu program sonlandırır.|  
-|[Ekleme](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|Bu program ekler.|  
+|[Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|Bu program ekler.|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|Hata ayıklama altyapısı (DE) bir programda ayırabilirsiniz belirler.|  
-|[Ayırma](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Bu programdan hata ayıklayıcı ayırır.|  
+|[Detach](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Bu programdan hata ayıklayıcı ayırır.|  
 |[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|Bu program için bir genel benzersiz tanımlayıcısını alır.|  
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md)|Alır özellikleri program.|  
 |[Yürütme](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Bu program durdurulmuş bir durumdan çalışmaya devam eder. Herhangi bir önceki yürütme durumu temizlenir.|  

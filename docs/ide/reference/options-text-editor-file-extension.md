@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68c2565540d8b22d659b40d5cab4a443cac6439f
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 1f3f21c13c30abafdb59e5e997210cd0d7b4fcfb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-file-extension"></a>Seçenekler, Metin Düzenleyici, Dosya Uzantısı
 Bu seçenekler iletişim kutusu, belirli dosya uzantılarına sahip tüm dosyaların nasıl belirtmenize olanak sağlar Visual Studio tümleşik geliştirme ortamını (IDE) tarafından ele alınacaktır. Her **uzantısı** girdiğiniz, bir düzenleme deneyimi seçebilirsiniz. Bu IDE Düzenleyicisi'ni veya belirli bir türde belgeleri açılacağı Tasarımcısı seçmenize olanak sağlar. Bu seçenekleri görüntülemek için seçin **seçenekleri** gelen **Araçları** menüsünde genişletin **metin düzenleyici** düğümü ve select **dosya uzantısı**.  
@@ -55,4 +56,4 @@ Bu seçenekler iletişim kutusu, belirli dosya uzantılarına sahip tüm dosyala
  Aynı liste olarak sağlar **Düzenleyicisi**. Belgeler dosya uzantıları olmadan açılacağı Tasarımcısı ve IDE Düzenleyicisi'ni seçin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: Düzenleyici modlarını yönetme](../../ide/how-to-manage-editor-modes.md)
+ [Nasıl Yapılır: Düzenleyici Modlarını Yönetme](../../ide/how-to-manage-editor-modes.md)

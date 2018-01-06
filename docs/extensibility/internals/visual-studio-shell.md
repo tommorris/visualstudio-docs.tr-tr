@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 63b8420b3941114f8edd1e494c8469ae4b81ba79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9240df0a4f551ab4fa47fc2ceacaf0654dc562e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Kabuğu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kabuğu tümleştirmesine birincil aracı olan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Kabuk ortak Hizmetleri paylaşmak VSPackages etkinleştirmek için gerekli işlevselliği sağlar. Çünkü mimari amacı [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackages içinde birincil işlevleri vest için kabuk temel işlevleri sağlamak ve kendi bileşen VSPackages arasında arası iletişimi desteklemek için bir çerçevedir.  
@@ -79,11 +80,11 @@ ms.lasthandoff: 10/31/2017
   
 -   **Görev listesi** penceresi  
   
--   **Araç kutusu**  
+-   **Araç Kutusu**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>   
- [VSPackages](../../extensibility/internals/vspackages.md)
+ [VSPackage’lar](../../extensibility/internals/vspackages.md)

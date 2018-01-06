@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12ed4c42335590b7e48d0f6f0fed716a7f149bd0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 61624d9926f4d984386f1a8b3fe8a575ce465331
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Tasarımcı başlatma ve meta verileri yapılandırma
 Bir tasarımcı veya Tasarımcısı bileşen ile ilişkili meta verileri ve filtre öznitelikleri işlenmesini hangi araçların farklı işlemek için belirli bir tasarımcı tarafından kullanılan tanımlamak üzere uygulamalar için bir mekanizma sağlar <xref:System.Type> nesne (örneğin, veri yapıları sınıfları veya grafik varlıklar), Tasarımcı kullanılabilir olduğunda ve Visual Studio IDE designer'ı desteklemek üzere nasıl yapılandırılır (örnek hangi **araç** kategori veya sekmesinde kullanılabilir).  

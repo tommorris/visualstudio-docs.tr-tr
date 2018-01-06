@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f50378179276a88ff9dd1a6017cd84143b499707
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 457652b39ce788e5960e5531002628a3dea27cf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>İşlevler görünümü - .NET bellek izleme verileri
 İşlevler görünümü izleme metodunu kullanarak toplanan .NET bellek ayırma profil oluşturma verileri, profil oluşturma çalışması sırasında bellek tahsis işlevleri listeler. Bir işlev satır ayırma ve işlev için zamanlama verileri sayısı ve boyutu bildirir.  
@@ -102,4 +103,4 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
  [İşlevler görünümü - örnekleme](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [İşlevler görünümü](../profiling/functions-view-instrumentation-data.md)   
- [İşlevler görünümü](../profiling/functions-view-sampling-data.md)
+ [İşlevler Görünümü](../profiling/functions-view-sampling-data.md)

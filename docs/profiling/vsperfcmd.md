@@ -18,11 +18,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82fada9e9b043511fe94cab6cae99ee9e521f84b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: af5636866e2d91cc5aac5c8054a92961aeb3d042
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 **VSPerfCmd.exe** aracı performans verileri toplama durdurmak ve başlatmak için kullanılır. Aşağıdaki sözdizimini kullanır:  
@@ -46,7 +47,7 @@ VSPerfCmd [/U] [/options]
 |[WinCounter](../profiling/wincounter.md) **:** *yolu*|Profil işareti verilerle dahil etmek için bir Windows performans sayacı olay belirtir. Yalnızca kullanmak **Başlat**.|  
 |[Otomatik işaret](../profiling/automark.md) **:***n*|Windows performans sayacı verilerini toplama olayları süre (milisaniye cinsinden) belirtir. İle kullandığınız **WinCounter**.|  
 |[Olayları](../profiling/events-vsperfcmd.md) **:**`option`|Belirtilen olay Windows için izleme (ETW) olayları koleksiyonu denetler. Profil oluşturma veri (.vsp) dosyası değil bir .itl dosyasına ETW verileri toplanır.|  
-|[Durumu](../profiling/status.md)|Profil Oluşturucu, şu anda profili oluşturuluyor işlemleri ve profil oluşturucu denetim yetkisi olan hesaplar hakkında bilgi durumunu görüntüler.|  
+|[Status](../profiling/status.md)|Profil Oluşturucu, şu anda profili oluşturuluyor işlemleri ve profil oluşturucu denetim yetkisi olan hesaplar hakkında bilgi durumunu görüntüler.|  
 |[Kapatma](../profiling/shutdown.md)[**:**`n`]|Profil oluşturma veri dosyası kapatır ve profil oluşturucu kapatır.|  
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Veri toplama için bir çağrı sonra sürdürür **VSPerfCmdGlobalOff**.|  
 |[GlobalOff](../profiling/globalon-and-globaloff.md)|Tüm veri toplamayı durdurur, ancak profil oluşturma oturumu bitmez.|  
@@ -63,7 +64,7 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |[Başlatma](../profiling/launch.md) **:** *çalıştırılabilir*|Belirtilen uygulamayı başlatır ve profil oluşturma başlar.|  
 |[Bağımsız değişken](../profiling/args.md) **:** *bağımsız değişkenleri*|Başlatılan uygulamaya geçirilecek komut satırı bağımsız değişkenlerini belirtir.|  
-|[Konsol](../profiling/console.md)|Belirtilen komut yeni bir komut istemi penceresi başlatır.|  
+|[Console](../profiling/console.md)|Belirtilen komut yeni bir komut istemi penceresi başlatır.|  
 |[Attach](../profiling/attach.md) **:** *PID*[**,***PID*]|Belirtilen işlemler profil başlar. İşlemler işlem kimliği veya işlem adına göre tanımlanabilir.|  
 |[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Profil oluşturma belirtilen işlemleri durdurur. İşlemler işlem kimliği veya işlem adına göre tanımlanabilir. Profil oluşturma hiçbir işlem belirtilmişse, tüm işlemler için durdurulur.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**ayırma**`&#124;`**ömrü**}]|.NET bellek ayırma ve nesne yaşam verisi toplar. Yalnızca kullanmak **VSPerfCmdLaunch** seçeneği.|  

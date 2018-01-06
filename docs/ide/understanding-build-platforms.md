@@ -19,23 +19,24 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ec355d4798da9a5134396801d744623fffc2da2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef7469677a9d6eb01514b9117ed4c303ae5346de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-build-platforms"></a>Derleme Platformlarını Anlama
 Farklı sürümlerini farklı bir hedef platformlar için uygulanan çözüm ve proje özellikleri depolayabilirsiniz. Örneğin, bir x86 hedefleyen bir hata ayıklama yapılandırmasını oluşturabilirsiniz platform ve bir x64 hedefleyen bir hata ayıklama yapılandırmasını platform. Böylece kolayca derleme birden çok yapılandırmaları etkin platform hızlı bir şekilde değiştirebilirsiniz.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)  
+ [Nasıl Yapılır: Projeleri Hedef Platformlar İçin Yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)  
  Belirli bir platformun hedeflemek için bir proje yapılandırma açıklanmaktadır.  
   
- [Nasıl yapılır: projeleri hedef birden çok platform için yapılandırma](../ide/how-to-configure-projects-to-target-multiple-platforms.md)  
+ [Nasıl Yapılır: Projeleri Hedef Birden Çok Platform İçin Yapılandırma](../ide/how-to-configure-projects-to-target-multiple-platforms.md)  
  Hedef birden çok platform için bir proje yapılandırma açıklanmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: uygulama oluşturma](../ide/walkthrough-building-an-application.md)   
  [Projeler ve çözümler Visual Studio'da oluşturma ve temizleme](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)
+ [Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)

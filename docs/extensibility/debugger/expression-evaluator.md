@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b08da6a123107d793d522770d44315aaa432dede
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 55aaa595c49d0c50cff5f874d1b322c3adbb9729
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluator"></a>İfade değerlendirici
 İfade değerlendiricileri (EE) IDE kesme modunda olduğunda kullanıcı tarafından görüntülenmesine izin vermeden ayrıştırma ve çalışma zamanında değişkenleri ve ifadeler değerlendirmek için bir dil söz dizimi inceleyin.  
@@ -44,4 +45,4 @@ ms.lasthandoff: 10/31/2017
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Hata ayıklama motorları beklediğiniz ortak dil çalışma zamanı (CLR) arabirimleri kullanarak ifade değerlendiricisi ile iletişim kurabilecek şekilde. Sonuç olarak, bir ifade değerlendiricisi gerçekleştiğine ile [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hata ayıklama motorları CLR desteklemesi gerekir (hata ayıklama arabirimleri tüm CLR tam bir listesi yer debugref.doc içinde bulunabilir, [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcı bileşenleri](../../extensibility/debugger/debugger-components.md)
+ [Hata Ayıklayıcı Bileşenleri](../../extensibility/debugger/debugger-components.md)

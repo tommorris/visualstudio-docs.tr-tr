@@ -24,11 +24,12 @@ caps.latest.revision: "135"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f009abffb1c956a0f7c57315181234fbea2fc1c
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace"></a>IntelliTrace
 IntelliTrace kaydetmek ve kodunuzu 's yürütme geçmişini izlemek için kullandığınızda uygulamanızın hatalarını ayıklama daha az zaman harcayabilir. IntelliTrace izin verdiğinden, hataları kolayca bulabilirsiniz:  
@@ -117,7 +118,7 @@ IntelliTrace kaydetmek ve kodunuzu 's yürütme geçmişini izlemek için kullan
 
     IntelliTrace olayları ve anlık görüntü modu etkinleştirildiğinde, IntelliTrace her hata ayıklayıcı uygulama işlemi bir anlık görüntüsünü **kesme noktası** ve **adım** olay. Bu değerleri kaydedilecek **Yereller**, **otomobiller**, ve **izleme** windows, windows veya açık olup ne olursa olsun. Tüm sabit veri ipuçları değerleri de toplanacaktır. 
   
--   **Özel durumlar**  
+-   **Özel Durumlar**  
   
      IntelliTrace özel durum türünü ve iletisini bu tür özel durumlar için kaydeder:  
   
@@ -141,9 +142,9 @@ IntelliTrace kaydetmek ve kodunuzu 's yürütme geçmişini izlemek için kullan
   
     -   [IntelliTrace tek başına toplayıcıyı kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-    -   [IntelliTrace verilerini kaydedilmiş kullan](../debugger/using-saved-intellitrace-data.md)  
+    -   [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)  
   
-    -   [İzlenecek yol: IntelliTrace'i kullanarak SharePoint uygulama hata ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)  
+    -   [İzlenecek yol: IntelliTrace'i Kullanarak SharePoint Uygulamasında Hata Ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)  
  
  **Anlık görüntüleri yakalama**
  
@@ -184,7 +185,7 @@ IntelliTrace kaydetmek ve kodunuzu 's yürütme geçmişini izlemek için kullan
   
  [Dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md)  
   
- [IntelliTrace verilerini kaydedilmiş kullan](../debugger/using-saved-intellitrace-data.md)  
+ [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>Bloglar  
  [Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)  

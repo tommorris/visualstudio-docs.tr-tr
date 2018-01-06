@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 051043583b4be3ce795fab544156c7a1f94d88c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e22bbdbbf297fd6eb4580bd53d55c96f2faac17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-projects"></a>Projeleri genişletme
 Projeler ve çözümler Visual Studio kod ve kaynak dosyaları derleme ve dağıtım birimlerine düzenler yöntemleri sunulmaktadır. Projeler hakkında daha fazla bilgi bulabilirsiniz [projeleri (Visual Studio SDK)](../extensibility/extending-projects.md).  
@@ -29,28 +30,28 @@ Projeler ve çözümler Visual Studio kod ve kaynak dosyaları derleme ve dağı
  Bu bölümdeki konular, özel projeleri oluşturma ve Visual Studio çözümü farklı türlerini yönetmek nasıl açıklanmaktadır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Temel Proje sistem oluşturma, bölüm 1](../extensibility/creating-a-basic-project-system-part-1.md)  
+ [Temel Proje Sistemi Oluşturma, Bölüm 1](../extensibility/creating-a-basic-project-system-part-1.md)  
  Özel proje sistem oluşturmayı açıklar.  
   
- [Temel Proje sistem oluşturma, bölüm 2](../extensibility/creating-a-basic-project-system-part-2.md)  
+ [Temel Proje Sistemi Oluşturma, Bölüm 2](../extensibility/creating-a-basic-project-system-part-2.md)  
  Özel proje sistem oluşturmayı açıklar.  
   
- [Proje dosyalarındaki verileri kaydetme](../extensibility/saving-data-in-project-files.md)  
+ [Proje Dosyalarında Verileri Kaydetme](../extensibility/saving-data-in-project-files.md)  
  Açıklar nasıl projeye ekleyin (. * proj) dosyaları.  
   
- [Çalışma zamanında bir projenin Subtypes doğrulanıyor](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
+ [Çalışma Zamanında Proje Alt Türlerini Doğrulama](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
  Çalışma zamanında bir projenin alt doğrulamak açıklanmaktadır.  
   
- [Ekleme ve kaldırma özellik sayfaları](../extensibility/adding-and-removing-property-pages.md)  
+ [Özellik Sayfaları Ekleme ve Kaldırma](../extensibility/adding-and-removing-property-pages.md)  
  Özel proje özellik sayfalarını özelleştirme açıklanmaktadır.  
   
- [Öznitelik bir proje öğesi ekleme](../extensibility/adding-an-attribute-to-a-project-item.md)  
+ [Proje Öğesine Öznitelik Ekleme](../extensibility/adding-an-attribute-to-a-project-item.md)  
  Öznitelik bir özel proje öğesi eklemek açıklanmaktadır.  
   
- [Bir proje öğesi özelliği kalıcı yapma](../extensibility/persisting-the-property-of-a-project-item.md)  
+ [Proje Öğesinin Özelliğini Kalıcı Yapma](../extensibility/persisting-the-property-of-a-project-item.md)  
  Özel proje öğesi özelliklerini kalıcı açıklanmaktadır.  
   
- [Evrensel Windows projeleri yönetme](../extensibility/managing-universal-windows-projects.md)  
+ [Evrensel Windows Projelerini Yönetme](../extensibility/managing-universal-windows-projects.md)  
  Evrensel projeleri yönetme açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler

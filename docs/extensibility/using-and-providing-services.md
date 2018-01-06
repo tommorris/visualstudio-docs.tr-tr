@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28b66dea8440c969926abd3892739f4e041b064
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fbba5070af77e1509ed3b3840a2045ae0f2c12b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-and-providing-services"></a>Kullanarak ve hizmetleri sağlar
 İki VSPackages arasında bir sözleşme hizmetidir. Bir VSPackage arabirimleri kullanmak üzere başka bir VSPackage için belirli bir dizi sunar. Örneğin, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sunar <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> isteğe bağlı olarak tüm VSPackage yükleri hizmet. Bu hizmet sağlayan <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> etkinlik günlüğü yazmak için kullanılan arabirim. Daha fazla bilgi için bkz: [nasıl yapılır: etkinlik günlüğü kullanın](../extensibility/how-to-use-the-activity-log.md).  
@@ -36,19 +37,19 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Projeleri listeleme, yeni projeler oluşturun ve proje değişiklikleri izleme yeteneğini gibi temel çözüm ilgili işlevleri sağlar.|  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Hizmet temelleri](../extensibility/internals/service-essentials.md)  
+ [Hizmet Temel Bileşenleri](../extensibility/internals/service-essentials.md)  
  Visual Studio hizmet önemli öğelerini gösterir.  
   
- [Nasıl yapılır: bir hizmeti Al](../extensibility/how-to-get-a-service.md)  
+ [Nasıl Yapılır: Hizmet Alma](../extensibility/how-to-get-a-service.md)  
  İstek açıklanmaktadır (kullanabilir) bir hizmet.  
   
- [Nasıl yapılır: bir hizmet sağlar](../extensibility/how-to-provide-a-service.md)  
+ [Nasıl Yapılır: Hizmet Sağlama](../extensibility/how-to-provide-a-service.md)  
  Bir hizmet sağlamak nasıl ele alınmaktadır.  
   
- [Nasıl yapılır: bir zaman uyumsuz Visual Studio hizmet sağlayın](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
+ [Nasıl Yapılır: Zaman Uyumsuz Visual Studio Hizmeti Sağlama](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
  Zaman uyumsuz bir hizmet sağlamak üzere nasıl ele alınmaktadır.  
   
- [Nasıl yapılır: Hizmetleri sorunlarını giderme](../extensibility/how-to-troubleshoot-services.md)  
+ [Nasıl Yapılır: Hizmetlerde Sorun Giderme](../extensibility/how-to-troubleshoot-services.md)  
  Sık karşılaşılan sorunlar anlatılmaktadır ve bunların çözümleri sunar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

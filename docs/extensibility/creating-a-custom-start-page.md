@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9782e51688ae1ef4fda3ed52636de54149fa79e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f1ce8112adffabcee835d7adf598e73d327ca3b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-custom-start-page"></a>Özel bir başlangıç sayfası oluşturma
 Bu belgedeki adımları izleyerek, özel bir başlangıç sayfası oluşturabilirsiniz.  
@@ -91,4 +92,4 @@ Bu belgedeki adımları izleyerek, özel bir başlangıç sayfası oluşturabili
  [Kullanıcı denetimi için başlangıç sayfası ekleme](../extensibility/adding-user-control-to-the-start-page.md)   
  [Başlangıç sayfası için Visual Studio komut ekleme](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
  [İzlenecek yol: Bir başlangıç sayfasında kullanıcı ayarlarını kaydetme](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
- [Özel başlangıç sayfalarını dağıtma](../extensibility/deploying-custom-start-pages.md)
+ [Özel Başlangıç Sayfaları Dağıtma](../extensibility/deploying-custom-start-pages.md)

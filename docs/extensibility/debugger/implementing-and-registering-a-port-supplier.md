@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa7378493c8df41b70be6fda17b2763f90fd7f04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1c05dc0bd15dc5c1959024327396d848cd0b1112
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Uygulama ve bir bağlantı noktası Tedarikçi kaydetme
 Bağlantı noktası tedarikçi izlemek ve sırayla işlemlerini yönetmek bağlantı noktalarını tedarik rolüdür. Bir bağlantı noktası oluşturulmalıdır aynı anda bağlantı noktası sağlayıcı bağlantı noktası tedarikçi GUID (oturum hata ayıklama Yöneticisi [SDM] bağlantı noktası sağlayıcınızla seçilen kullanıcı ya da proje sistem tarafından belirtilen bağlantı noktası tedarikçi kullanırsınız) CoCreate kullanarak örneği. SDM sonra çağıracak [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) herhangi bir bağlantı eklenen olmadığını görmek için. Bir bağlantı noktası eklenebilir, yeni bir bağlantı noktası çağırarak istenen [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) ve onu bir [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) bağlantı noktası açıklar. `AddPort`tarafından temsil edilen yeni bir bağlantı noktası döndürülecek bir [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) arabirimi.  
@@ -65,4 +66,4 @@ RemoveMetric(metrictypePortSupplier,
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir bağlantı noktası sağlayıcı uygulama](../../extensibility/debugger/implementing-a-port-supplier.md)   
  [Hata ayıklama için SDK Yardımcıları](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Bağlantı noktası Üreticiler](../../extensibility/debugger/port-suppliers.md)
+ [Bağlantı Noktası Sağlayıcıları](../../extensibility/debugger/port-suppliers.md)

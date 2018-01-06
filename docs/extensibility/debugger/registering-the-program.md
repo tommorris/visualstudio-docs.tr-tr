@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0b0c883293cd01e21facfcc2e4483d2c5bbf164
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eb61257b80e3f8b4a09819b2b037f342e2ecbee0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-the-program"></a>Program kaydetme
 Hata ayıklama altyapısı bir bağlantı noktası geçirmiş sonra tarafından temsil edilen bir [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) arabirimi, ayıklanacak program sağlama sonraki adımdır bağlantı noktası ile kaydetmek için. Kaydedildikten sonra program aşağıdaki anlamına gelir birini kullanarak hata ayıklama için kullanılabilir:  
@@ -109,4 +110,4 @@ Hata ayıklama altyapısı bir bağlantı noktası geçirmiş sonra tarafından 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir bağlantı noktası alma](../../extensibility/debugger/getting-a-port.md)   
- [Ayıklanacak bir Program etkinleştirme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+ [Bir Programı Hataları Ayıklanacak Şekilde Etkinleştirme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

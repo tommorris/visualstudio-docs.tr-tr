@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50d05e529a3202f59df53801728b40fee1c68f40
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 13eff6aca9470e88be788fe3fcb625fecc32c2c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-codes"></a>Hata Kodları
 Kaynak Denetim eklentisi API işlev hata döndürür, aşağıdaki hata kodlarından birini olması beklenir. Uyarı veya bilgilendirme hata kodları pozitif, tüm hataları negatif ve başarılı 0'dır.  
@@ -83,4 +84,4 @@ IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
  Eklenti dosyanın salt okunur sırasında başka bir işlem olarak işaretlenmiş olsa bile eklenti kaynak denetimi çalışma klasöründe bir dosyada ayrıcalıkları ilgili hiçbir varsayımlar olmanız gerekir. Çalışma klasörü dosyasında taşınmış, silindi ve eklentinin denetimi dışında değiştirildi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Denetim Eklentileri](../extensibility/source-control-plug-ins.md)
+ [Kaynak Denetimi Eklentileri](../extensibility/source-control-plug-ins.md)

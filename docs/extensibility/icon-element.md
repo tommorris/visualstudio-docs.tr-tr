@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20e8309e0052f6aa92a0069f0c2138880a7742de
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2787798afe9554601d44a965ae3f12d5ebeab8bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="icon-element"></a>Icon öğesi
 Simge etiketinin GUID özniteliği tanımlı bir bit eşlem GUID'dir.  ID özniteliği yuva bit eşlem şeridinde seçer. Bu öğe isteğe bağlıdır.  Bu öğe atlanırsa değerini **guidOfficeIcon:msotcidNoIcon** kapsanan.  
@@ -50,7 +51,7 @@ Simge etiketinin GUID özniteliği tanımlı bir bit eşlem GUID'dir.  ID öznit
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Düğme öğesi](../extensibility/buttons-element.md)||  
+|[Buttons Öğesi](../extensibility/buttons-element.md)||  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

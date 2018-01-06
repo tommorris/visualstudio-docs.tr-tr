@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a90a5cfdc521de0716d81b07529822f69289b605
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c1104ebfbd066ad438262fcca0186acfb3854dbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance yardımcı programı
 Sıfırlamak oluşturmak için CreateExpInstance yardımcı programını kullanın veya Visual Studio deneysel örneği silin. Hata ayıklama ve temel alınan ürün değiştirmeden Visual Studio uzantılarını test etmek için deneysel örneği kullanabilirsiniz.  
@@ -63,4 +64,4 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
  **CreateExpInstance.exe/Reset /VSInstance 14.0 = /RootSuffix Exp =**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [VSPackages](../../extensibility/internals/vspackages.md)
+ [VSPackage’lar](../../extensibility/internals/vspackages.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03ae4956f0e16a4fb9267266ebc6b6c335c95eac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: e542e58bab483a1f20029bb66a073ae07d45afba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Nasıl Yapılır: ASP.NET İşleminin Adını Bulma
 Çalışan bir eklemek için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulama, elinizde adını bilmek [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] işlemi:  

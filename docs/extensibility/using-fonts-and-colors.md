@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ce64c7cac36319d1e55efb0ddf2216dc218805c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d87cb7a48d85e4bd3394a563b201466613a9c44f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-fonts-and-colors"></a>Yazı tipleri ve renkler kullanarak
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Metni görüntülemek için yazı tiplerini ve renkleri kullanmak için destek sağlar.  
@@ -68,11 +69,11 @@ ms.lasthandoff: 10/31/2017
  Önbelleğe alma yazı tipi ve renk ayarlarını denetler.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Eski dil hizmeti geliştirme](../extensibility/internals/developing-a-legacy-language-service.md)  
+ [Eski Dil Hizmeti Geliştirme](../extensibility/internals/developing-a-legacy-language-service.md)  
  VSPackages özelleştirmek için dil hizmetleri nasıl kullanabileceğinizi anlatır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Düzenleyici.  
   
- [Sözdizimi özel düzenleyicilerde renklendirme](../extensibility/syntax-coloring-in-custom-editors.md)  
+ [Özel Düzenleyicilerde Söz Dizimi Renklendirmesi](../extensibility/syntax-coloring-in-custom-editors.md)  
  Descries nasıl [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Düzenleyicisi sözdizimi renklendirmesi uygulamak için dil Hizmetleri kullanır.  
   
- [Visual Studio diğer bölümleri genişletme](../extensibility/extending-other-parts-of-visual-studio.md)  
+ [Visual Studio’nun Diğer Bölümlerini Genişletme](../extensibility/extending-other-parts-of-visual-studio.md)  
  Nasıl kullanılacağı açıklanmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kalan eşleşen kullanıcı Arabirimi öğeleri oluşturmak için Sertifika Hizmetleri'ni [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

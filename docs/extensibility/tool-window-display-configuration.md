@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7ab5cef6fb45d60be8be8d1db6b160079633ed4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 585ea78e0591ad979d09a3e5b208635c3f75f903
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tool-window-display-configuration"></a>Araç penceresi ekran yapılandırması
 Ne zaman bir VSPackage araç penceresi, varsayılan konumu, boyutu, yerleştirme stilini ve diğer görünürlük bilgileri kaydeder, isteğe bağlı değerleri belirtilir. Araç penceresi kayıt hakkında daha fazla bilgi için bkz: [kayıt defterinde araç pencereleri](../extensibility/tool-windows-in-the-registry.md)  
@@ -110,4 +111,4 @@ HKEY_LOCAL_MACHINE\
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [VSPackages](../extensibility/internals/vspackages.md)
+ [VSPackage’lar](../extensibility/internals/vspackages.md)

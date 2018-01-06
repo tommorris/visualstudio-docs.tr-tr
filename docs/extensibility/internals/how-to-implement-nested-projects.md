@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26456122d8b2cb0e89cfcda929cf68306959a31e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 757668070daacb449a6bc7cbd88ae629fe6487a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-nested-projects"></a>Nasıl yapılır: iç içe Projeler uygulama
 Oluşturduğunuzda bir iç içe proje türü vardır uygulanmalı birkaç bir ek adımlar şunlardır. Ana proje çözümü kendi iç içe geçmiş (alt) projeler için sahip aynı yükümlülüklerinizin bazıları alır. Ana proje projelerin bir çözüme benzer bir kapsayıcıdır. Özellikle, iç içe geçmiş projeleri hiyerarşisi oluşturmak için ana proje ve çözüm tarafından oluşturulması gereken birkaç olay vardır. Bu olaylar iç içe geçmiş projeleri oluşturmak için aşağıdaki işlemi açıklanmıştır.  
@@ -81,17 +82,17 @@ Oluşturduğunuzda bir iç içe proje türü vardır uygulanmalı birkaç bir ek
   
  Aşağıdaki konular, iç içe geçmiş projeleri uyguladığınızda dikkate alınması gereken birkaç diğer kavramları Dağıt:  
   
- [Yüklemeyi kaldırma ve yeniden iç içe geçmiş projeleri için ilgili önemli noktalar](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)  
+ [İç İçe Projeleri Kaldırma ve Yeniden Yükleme Konusunda Dikkat Edilmesi Gerekenler](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)  
   
- [İç içe geçmiş projeleri için sihirbaz desteği](../../extensibility/internals/wizard-support-for-nested-projects.md)  
+ [İç içe Projeler için Sihirbaz Desteği](../../extensibility/internals/wizard-support-for-nested-projects.md)  
   
- [İç içe geçmiş projeleri için işleme komutu uygulama](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)  
+ [İç içe Projeler için Komut İşlemesi Uygulama](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)  
   
- [İç içe geçmiş projeleri için filtreleme addItem iletişim kutusu](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)  
+ [İç içe Projeler için AddItem İletişim Kutusunu Filtreleme](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Öğeler ekleme yeni öğe Ekle iletişim kutuları](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [Proje ve öğe şablonları kaydediliyor](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Bağlam parametreleri](../../extensibility/internals/context-parameters.md)   
- [Sihirbazı'nı (. Vsz) dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Sihirbaz (.Vsz) Dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)

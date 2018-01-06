@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca8795ba56833282bac600db79ba33da70aa6c3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4229d9045dfe64fcb320eca7cf004de56e7f8f0d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Windows Forms araç kutusu denetimi oluşturma
 Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç kutusu denetimi öğe şablonu, otomatik olarak eklenen bir denetim oluşturmanıza olanak tanır **araç** uzantısı yüklü olduğunda. Bu konu, şablon diğer kullanıcılara dağıtabilirsiniz basit bir sayaç denetimi oluşturmak için nasıl kullanılacağını gösterir.  
@@ -215,4 +216,4 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
  [Visual Studio diğer bölümleri genişletme](../extensibility/extending-other-parts-of-visual-studio.md)   
  [WPF araç kutusu denetimi oluşturma](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Visual Studio diğer bölümleri genişletme](../extensibility/extending-other-parts-of-visual-studio.md)   
- [Windows Forms denetimi geliştirmenin esasları](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+ [Windows Forms Denetimi Geliştirmenin Esasları](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

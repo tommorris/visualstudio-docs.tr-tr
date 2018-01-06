@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 766f00475971da1ca009737f9360952422177814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cd28633fcb4b8186dae154428e489d51041aa8b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Kesme modunda ifade değerlendirme
 Aşağıdaki hata ayıklayıcı kesme modunda olduğunda ve ifade değerlendirme yürütmeniz gerekir oluşan işlemini açıklar.  
@@ -43,4 +44,4 @@ Aşağıdaki hata ayıklayıcı kesme modunda olduğunda ve ifade değerlendirme
     -   Kullanarak söz konusu olduğunda `IDebugExpression2::EvaluateAsync`, verilen geri çağırma arabirimi değerlendirme devam eden işlem iletişim kurmak için kullanılır. Değerlendirme tamamlandıktan sonra EvaluateAsync gönderir bir [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) arabirimi aracılığıyla geri çağırma. Bu olay arabirimle son değeri ile elde edilebilir [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Arama hata ayıklayıcı olayları](../../extensibility/debugger/calling-debugger-events.md)
+ [Hata Ayıklayıcısı Olaylarını Çağırma](../../extensibility/debugger/calling-debugger-events.md)

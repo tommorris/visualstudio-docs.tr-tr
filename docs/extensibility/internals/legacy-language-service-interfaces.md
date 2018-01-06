@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 925b504d8cba4813631d4f8ba6f7dbd9750f5eae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 82555c861a6bf250a818b185de57fc48f143e4f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-interfaces"></a>Eski dil Hizmeti Arabirimleri
 Belirli bir programlama dili için aynı anda dil hizmetinin yalnızca bir örneği olabilir. Ancak, tek bir dil hizmeti birden fazla Düzenleyicisi hizmet verebilir.  
@@ -55,4 +56,4 @@ Belirli bir programlama dili için aynı anda dil hizmetinin yalnızca bir örne
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski dil hizmeti geliştirme](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Denetim listesi: eski dil hizmet oluşturma](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+ [Denetim Listesi: Eski Dil Hizmeti Oluşturma](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

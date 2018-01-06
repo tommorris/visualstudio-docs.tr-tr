@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 92d6ed317bcf6ceead42db850ee61969409eb136
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 97a4c8f8a9a710fab70760d9cb6eabb61de7a26f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-context"></a>Kod bağlamı
 İçinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hata ayıklama, bir **kodu bağlamı**:  
@@ -34,4 +35,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Belge bağlamı](../../extensibility/debugger/document-context.md)   
- [Hata ayıklayıcı bağlamları](../../extensibility/debugger/debugger-contexts.md)
+ [Hata Ayıklayıcı Bağlamları](../../extensibility/debugger/debugger-contexts.md)

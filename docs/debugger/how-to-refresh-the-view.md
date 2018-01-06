@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b52d62a3da405f2bc0abbac91b0de8c1690cab2c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f2cff688dcc35d87c47a23d8243b68747c1c3f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-refresh-the-view"></a>Nasıl yapılır: Görünümü Yenileme
 Spy ++ sistem tablolarının "anlık görüntüsünü" alır ve bu bilgilere dayalı bir görünüm yeniler. Düzenli aralıklarla sistem görünümleri yenileme önemlidir. Açın ve görünüm yenilenmemiş Spy ++ görünüm varsa, bu işlemler, iş parçacıkları ve sonradan oluşturulan windows görürsünüz değil. Ayrıca, artık mevcut öğeleri görebilirsiniz. **Yenileme** komutu, iletileri görünümü dışındaki tüm görünümleri için kullanılabilir.  
@@ -29,4 +30,4 @@ Spy ++ sistem tablolarının "anlık görüntüsünü" alır ve bu bilgilere day
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Spy ++ kullanma](../debugger/using-spy-increment.md)   
  [Spy ++ görünümleri](../debugger/spy-increment-views.md)   
- [Spy ++ başvurusu](../debugger/spy-increment-reference.md)
+ [Spy++ Başvurusu](../debugger/spy-increment-reference.md)

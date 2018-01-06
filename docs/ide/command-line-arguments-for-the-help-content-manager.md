@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0fa94458b1b3b02e2df666af099d97bb7e115c22
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: b7eaa5214a87c2931a260f1c5adb6bac56dfa288
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Yardım İçeriği Yöneticisi İçin Komut Satırı Bağımsız Değişkenleri
 Dağıtma ve komut satırı bağımsız değişkenleri için Yardım içeriği Yöneticisi (HlpCtntMgr.exe) kullanarak yerel Yardım içeriği yönetme belirtebilirsiniz. Yönetici izinlerine sahip bu komut satırı aracı için komut dosyalarını çalıştırması gereken ve bir hizmet olarak bu komut dosyalarını çalıştıramazsınız. Bu aracı kullanarak aşağıdaki görevleri gerçekleştirebilirsiniz:  
@@ -89,5 +90,5 @@ UpdateAlreadyRunning = 1300 - (Signals that the update didn't run because anothe
   
 ## <a name="see-also"></a>Ayrıca bkz.  
 [Yardım Görüntüleyicisi Yönetici Kılavuzu](../ide/help-viewer-administrator-guide.md)  
-[Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md)  
+[Yardım İçerik Yöneticisi Geçersiz Kılmaları](../ide/help-content-manager-overrides.md)  
 [Microsoft Yardım Görüntüleyicisi](../ide/microsoft-help-viewer.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aebe2ee8e0122db6777a341a96731398bf25b8ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: efaa2877743fcf69a61a79633108d203442489e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccproperties-function"></a>SccProperties işlevi
 Bu işlev bir dosya veya proje için kaynak denetim özelliklerini görüntüler.  
@@ -61,4 +62,4 @@ SCCRTN SccProperties (
  Özellikler kaynak denetimi eklentisi tarafından tanımlanır ve eklentiden eklenti için farklı olabilir. Eklenti bir dosya kaynak denetim özelliklerini değiştirmek kullanıcının sağlar varsa, döndürme zorunluluğu `SCC_I_RELOAD` bu dosya veya projeyi yeniden yüklenmesi gerekiyor IDE sinyal.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Denetim eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)
+ [Kaynak Denetimi Eklentisi API İşlevleri](../extensibility/source-control-plug-in-api-functions.md)

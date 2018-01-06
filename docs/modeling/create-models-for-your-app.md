@@ -26,11 +26,12 @@ caps.latest.revision: "58"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: cc4455d507265376b9f208d8f351472ee6968c45
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3f4a6e3ba2eafa281fda8557f48c0886aff89105
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-models-for-your-app"></a>Uygulamanız için model oluşturma
 Modelleme diyagramları anlamak, açıklamak ve kodunuzu ve yazılım sisteminizin desteklemelidir kullanıcı gereksinimleri hakkında fikir iletişim yardımcı olur.
@@ -41,9 +42,9 @@ Modelleme diyagramları anlamak, açıklamak ve kodunuzu ve yazılım sisteminiz
   
 |**Diyagramı**|**Gösterir**|  
 |-----------------|---------------|  
-|[Bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md)|Sistemin üst düzey mimarisi|  
-|Kod haritaları<br /><br /> [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Kod Haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)|Bağımlılıklar ve var olan kodda diğer ilişkiler|  
-|Oluşturulan kodda sınıf diyagramları<br /><br /> [Sınıf diyagramları (Sınıf Tasarımcısı) ile çalışma](../ide/working-with-class-diagrams-class-designer.md)|Türleri ve ilişkilerini .NET kodda|  
+|[Bağımlılık Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Bağımlılık Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)|Sistemin üst düzey mimarisi|  
+|Kod haritaları<br /><br /> [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Kod haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)|Bağımlılıklar ve var olan kodda diğer ilişkiler|  
+|Oluşturulan kodda sınıf diyagramları<br /><br /> [Sınıf Diyagramları ile Çalışma (Sınıf Tasarımcısı)](../ide/working-with-class-diagrams-class-designer.md)|Türleri ve ilişkilerini .NET kodda|  
   
 ## <a name="related-tasks"></a>İlgili görevleri  
   
@@ -51,10 +52,10 @@ Modelleme diyagramları anlamak, açıklamak ve kodunuzu ve yazılım sisteminiz
 |---------------|--------------|  
 |[Kodu görselleştirme](../modeling/visualize-code.md)|Kod haritaları oluşturun ve yabancı kodu bağımlılık diyagramları daha iyi anlamak.|  
 |[Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)|Modelleri açıklamak ve kullanıcıların ihtiyaçlarını iletişim kurmak için kullanın.|  
-|[Uygulama Mimarinizi modeli](../modeling/model-your-app-s-architecture.md)|Modelleri genel yapısını ve sisteminizin davranışını açıklamak için ve kullanıcıların gereksinimlerini karşıladığından emin olmak için kullanın.|  
+|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|Modelleri genel yapısını ve sisteminizin davranışını açıklamak için ve kullanıcıların gereksinimlerini karşıladığından emin olmak için kullanın.|  
 |[Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)|Yazılım, kullanıcıların ihtiyaçlarını ve sisteminizin genel mimarisi ile tutarlı kaldığından emin olun.|  
 |[Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)<br /><br /> [Çevik Geliştirme modelleri kullanma](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|Modelleri anlamak ve kendi geliştirme sırasında sisteminizi değiştirmenize yardımcı olması için kullanın.|  
-|[Modelleme çözümünüzün yapısını](../modeling/structure-your-modeling-solution.md)|Büyük ve orta ölçekli bir proje modelleri düzenleyin.|  
+|[Modelleme çözümünüzün yapısını oluşturma](../modeling/structure-your-modeling-solution.md)|Büyük ve orta ölçekli bir proje modelleri düzenleyin.|  
   
 ## <a name="external-resources"></a>Dış Kaynaklar  
   

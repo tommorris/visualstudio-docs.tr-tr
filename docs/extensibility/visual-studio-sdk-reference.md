@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40c900b2f266be4ea88921b5f7cd0db02991a091
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f84f92b4d940bc7141f8c53730a128651b27a8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK'sı başvurusu
 Bu bölümde, Visual Studio SDK kullanan geliştiriciler için Visual Studio ad alanları, ilgili ad alanlarını ve diğer ilgi alanlarına göre hakkında bilgi içerir.  
@@ -234,19 +235,19 @@ Bu bölümde, Visual Studio SDK kullanan geliştiriciler için Visual Studio ad 
  [GUID ve sabitleri](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
  SDK kullanılan GUID'lerin listesini verir.  
   
- [Yönetilen kodda COM sabitleri](../extensibility/com-constants-in-managed-code.md)  
+ [Yönetilen Kodda COM Sabitleri](../extensibility/com-constants-in-managed-code.md)  
  Ortamı SDK'sı kullanılan kullanıcı arabirimi öğeleri için tanımlayıcıları listesini verir.  
   
- [Kaynak Denetim Eklentileri](../extensibility/source-control-plug-ins.md)  
+ [Kaynak Denetimi Eklentileri](../extensibility/source-control-plug-ins.md)  
  Kaynak Denetim eklentisi API'si konulara bağlantılar.  
   
  [Komut satırı anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md)  
  Geliştiriciler komut satırından çeşitli görevleri nasıl otomatikleştirebilirsiniz ele konulara bağlantılar.  
   
- [Hata işleme ve dönüş değerleri](../extensibility/error-handling-and-return-values.md)  
+ [Hata İşleme ve Dönüş Değerleri](../extensibility/error-handling-and-return-values.md)  
  Hata mimarisi VSPackages için çalışan diğer Windows programlama ile aynı olduğu açıklanmaktadır.  
   
- [Nesneleri](../extensibility/objects.md)  
+ [Nesneler](../extensibility/objects.md)  
  Ortamında kullanılan nesnelerin bir listesini sağlar.  
   
  [Sözlük](../extensibility/visual-studio-sdk-glossary.md)  

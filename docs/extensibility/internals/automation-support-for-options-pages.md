@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ca9031e623ec7009d4f489931871f093f4c05d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ffc56e4b36814a8bed7a0f93d66cc87c0b6fc466
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automation-support-for-options-pages"></a>Seçenekler sayfaları için Otomasyon desteği
 VSPackages özel sağlayabilir **seçenekleri** iletişim kutuları için **Araçları** (Araçlar Seçenekler sayfaları) menüde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve bunları otomasyon modeli için kullanılabilir hale getirebilirsiniz.  
@@ -40,4 +41,4 @@ VSPackages özel sağlayabilir **seçenekleri** iletişim kutuları için **Ara�
  Özel Araçlar Seçenekler sayfası uygulayan bir örnek için bkz: [VSSDK örnekleri](http://aka.ms/vs2015sdksamples).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje nesneleri gösterme](../../extensibility/internals/exposing-project-objects.md)
+ [Proje Nesnelerini Kullanıma Sunma](../../extensibility/internals/exposing-project-objects.md)

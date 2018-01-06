@@ -18,11 +18,12 @@ caps.latest.revision: "130"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e3fec17bdde7f559cafa3d12833585ffa0c03ab7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 55d2f0c75925cb3bc95242c72e6734759c611d2e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Nasıl Yapılır: Office Çözümleri Geliştirmek İçin Bilgisayarı Yapılandırma
   Microsoft Office geliştirici araçları Visual Studio'da kullanabilmesi için bir geliştirme bilgisayarı yapılandırmak için bu konudaki yönergeleri izleyin. Bu adımları gerçekleştirmek için geliştirme bilgisayarında yönetici ayrıcalıkları olmalıdır.  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
  [Office geliştirme yenilikler nelerdir?](http://msdn.microsoft.com/en-us/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Başlarken &#40; Office geliştirme Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Nasıl yapılır: Office çalışma zamanı için yeniden dağıtılabilir Visual Studio Araçları'nı yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
- [Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+ [Nasıl Yapılır: Office Birincil Birlikte Çalışma Derlemelerini Yükleme](../vsto/how-to-install-office-primary-interop-assemblies.md)  
   
   

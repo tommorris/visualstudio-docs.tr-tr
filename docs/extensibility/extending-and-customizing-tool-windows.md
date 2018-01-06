@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6488df3ec567051709f6464d49d891cdd8f995dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74616bf92b1424b4749354d1f0a7b3232e66a335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Genişletme ve aracı Windows özelleştirme
 Visual Studio, windows, örneğin aracı windows, belge pencereleri ve iletişim windows birkaç farklı türde sağlar. Özellikler penceresi, çıktı penceresi ve Görev Listesi penceresi gibi diğer windows aracı windows türleridir.  
@@ -50,4 +51,4 @@ Visual Studio, windows, örneğin aracı windows, belge pencereleri ve iletişim
  Visual Studio Uzantısı'nda onlardan türetme kalıcı iletişim kutuları oluşturmalısınız <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>, bunları ve rest UI denetimi sağlar. Daha fazla bilgi için bkz. [Oluşturma ve yönetme kalıcı iletişim kutuları](../extensibility/creating-and-managing-modal-dialog-boxes.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir uzantısı bir araç penceresi oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md)
+ [Araç Penceresi İçeren Bir Uzantı Oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md)

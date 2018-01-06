@@ -14,18 +14,19 @@ ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: fa4aec5f164e188ff9832d06a4b3c8dad46ae63d
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: f5e6c5a94ac4c875922d2da09e9171f4929035f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Visual Studio 2017 bir ağ yüklemesi oluşturma
 
 Genellikle, bir kuruluş yöneticisi istemci iş istasyonlarına dağıtım için bir ağ yükleme noktası oluşturur. Biz, tek bir klasör için tüm ürün güncelleştirmeleri ile birlikte ilk yükleme dosyaları önbelleğe sağlamak için Visual Studio 2017 tasarladık. (Bu işlem, aynı zamanda olarak adlandırılır _bir düzen oluşturma_.) İstemci iş istasyonlarına aynı ağ konumu için en son hizmet verme güncelleştirme güncelleştirilmemiş olmasanız bile, kendi yüklemesini yönetmek için kullanabilmesi için Biz bu yaptık.
 
-> [!NOTE]
-> (Örneğin, Visual Studio Professional ve Visual Studio Enterprise), kuruluşunuzda kullanımda Visual Studio'nun birden çok sürüm varsa, her sürüm için ayrı bir ağ yükleme paylaşımı oluşturmanız gerekir.
+ > [!NOTE]
+ > (Örneğin, Visual Studio Professional ve Visual Studio Enterprise), kuruluşunuzda kullanımda Visual Studio'nun birden çok sürüm varsa, her sürüm için ayrı bir ağ yükleme paylaşımı oluşturmanız gerekir.
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Visual Studio önyükleyici indirin
 
@@ -157,10 +158,10 @@ Birkaç diğer destek seçenekleri şunlardır:
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
-* [Visual Studio yükleme](install-visual-studio.md)
+* [Visual Studio'yu yükleyin](install-visual-studio.md)
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
-* [Visual Studio'yu yüklemek için komut satırı parametreleri kullanma](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md)
+* [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio iş yükü ve bileşen kimlikleri](workload-and-component-ids.md)

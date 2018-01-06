@@ -23,11 +23,12 @@ caps.latest.revision: "51"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: c323e3800e98e2451a371f3ff84b3351d760a94c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-deployment-prerequisites"></a>Uygulama Dağıtımının Önkoşulları
 Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması sağlamak için önce uygulamanızın bağımlı olduğu tüm bileşenleri, hedef bilgisayarda zaten yüklü emin olmalısınız. Örneğin, çoğu uygulamayı kullanılarak oluşturulan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] üzerinde bir bağımlılığa sahip [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; uygulama yüklenmeden önce ortak dil çalışma zamanı doğru sürümü hedef bilgisayarda mevcut olması gerekir.  
@@ -86,4 +87,4 @@ Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması sağla
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce dağıtım stratejisini seçme](../deployment/choosing-a-clickonce-deployment-strategy.md)   
- [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)
+ [ClickOnce Güvenliği ve Dağıtımı](../deployment/clickonce-security-and-deployment.md)

@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2727f17665d845029fcf32dbcd12dd7603dad519
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: e4edcc21986ae0fd033228971697057932e63670
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>İzlenecek yol: Ekle özelleştirme, güncelleştirme ve Varlık davranışını silme
 [LINQ-SQL Visual Studio Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oluşturmak ve düzenlemek için bir görsel tasarım yüzeyi sağlar [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] bir veritabanındaki nesnelerde temel sınıfları (varlık sınıfları). Kullanarak [LINQ-SQL](/dotnet/framework/data/adonet/sql/linq/index), access SQL veritabanları için LINQ teknolojisi kullanabilirsiniz. Daha fazla bilgi için bkz: [LINQ (dil ile tümleşik sorgu)](/dotnet/csharp/linq/).  
@@ -264,7 +265,7 @@ Uygulama gereksinimlerinize bağlı olarak, oluşturduğunuz sonra gerçekleşti
   
 -   Eşzamanlılık güncelleştirmeleri sırasında denetimi uygular. Bilgi için bkz: [iyimser eşzamanlılık: genel bakış](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).  
   
--   LINQ sorgularını verilere filtre uygulamak için ekleyin. Bilgi için bkz: [LINQ sorgularını (C#) giriş](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
+-   LINQ sorgularını verilere filtre uygulamak için ekleyin. Bilgi için bkz: [LINQ sorgularını (C#) giriş](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).  
   
 ## <a name="see-also"></a>Ayrıca bkz.
 [LINQ-SQL Visual Studio Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)     

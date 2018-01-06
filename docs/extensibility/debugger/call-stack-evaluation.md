@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 21626804ae60ca14b360f23acf17b3e336fa600b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fddbe370362eb30dd9560e51574847d808c126fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-stack-evaluation"></a>Çağrı yığını değerlendirme
 Kesme modunda çağrı yığınının yığın çerçeveleri görüntüleyebilmek için uygulamanız gereken [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) yöntemi.  
@@ -41,4 +42,4 @@ Kesme modunda çağrı yığınının yığın çerçeveleri görüntüleyebilme
  Kod bağlamları numaralandırmak için tüm yöntemleri uygulamak [IEnumDebugCodeContexts2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yürütme denetimi ve durum değerlendirme](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+ [Yürütme Denetimi ve Durum Değerlendirmesi](../../extensibility/debugger/execution-control-and-state-evaluation.md)

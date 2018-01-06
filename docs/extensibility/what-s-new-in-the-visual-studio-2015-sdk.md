@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8b1fa4647cd5b145d19e2264381b186394be814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1008e1c81c6d99bc9fa0615263cf023a56101435
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>&#39; teki Visual Studio 2015 SDK'deki yenilikler
 Visual Studio SDK, Visual Studio 2015, güncelleştirilmiş Visual Studio 2015 ve Visual Studio 2017 için aşağıdaki yeni ve güncelleştirilmiş özelliklere sahiptir.  
@@ -39,13 +40,13 @@ Visual Studio SDK, Visual Studio 2015, güncelleştirilmiş Visual Studio 2015 v
 ### <a name="visual-c-and-visual-basic"></a>Visual C# ve Visual Basic  
  C# ve Visual Basic için eksiksiz bir VSPackages, menü komutlarını, aracı windows, düzenleyici sınıflandırıcı, Düzenleyicisi adornments ve düzenleyici kenar boşluğu uzantıları oluşturmanıza izin proje öğesi şablonları yoktur. Bu standart VSIX proje için bir bölümünü veya tamamını ekleyebilirsiniz. Daha fazla bilgi için bkz.:  
   
--   [Menü komutu ile bir uzantısı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)  
+-   [Bir Menü Komutuyla Uzantı Oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
--   [Bir uzantısı bir araç penceresi oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md)  
+-   [Araç Penceresi İçeren Bir Uzantı Oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md)  
   
--   [Bir düzenleyici öğesi şablonuyla bir uzantısı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md)  
+-   [Düzenleyici Öğesi Şablonuyla Uzantı Oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md)  
   
--   [Uzantı VSPackage ile oluşturma](../extensibility/creating-an-extension-with-a-vspackage.md)  
+-   [VSPackage İçeren Bir Uzantı Oluşturma](../extensibility/creating-an-extension-with-a-vspackage.md)  
   
      VSPackage Sihirbazı'nı uzantıları C# veya Visual Basic uygulamasında artık oluşturur.  
   
@@ -53,7 +54,7 @@ Visual Studio SDK, Visual Studio 2015, güncelleştirilmiş Visual Studio 2015 v
  C++ için VSPackage Sihirbazı'nı menü komutlarını, aracı windows ve özel düzenleyiciler destekler. İçinde arayın **yeni proje** iletişim kutusunda **Visual C++ / genişletilebilirlik**.  
   
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>NuGet aracılığıyla VS SDK başvuru derlemeleri  
- Taşınabilirliği artırmak ve genişletilebilirlik projelerin paylaşımı için VS SDK başvuru derlemeleri NuGet sürümlerini kullanabilirsiniz.  Bunlar üzerinde kullanılabilir [nuget.org](http://www.nuget.org) tarafından yayımlanan [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) ve projeye ya da çözümü Visual Studio aracılığıyla kolayca eklenebilen **başvuruyor / yönetme NuGet Paketleri** iletişim. Belirli genişletilebilirlik derlemelerine tek tek başvurular ekleyin ya da tüm VS SDK başvuran aynı anda VS SDK'sını kullanarak derlemeler ekleme [Meta paket](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). NuGet hakkında daha fazla bilgi için bkz: [NuGet belgelerine](http://docs.microsoft.com/NuGet) ve [Paket Yöneticisi kullanıcı Arabirimi](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI) Konular.  
+ Taşınabilirliği artırmak ve genişletilebilirlik projelerin paylaşımı için VS SDK başvuru derlemeleri NuGet sürümlerini kullanabilirsiniz.  Bunlar üzerinde kullanılabilir [nuget.org](http://www.nuget.org) tarafından yayımlanan [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) ve projeye ya da çözümü Visual Studio aracılığıyla kolayca eklenebilen **başvuruyor / yönetme NuGet Paketleri** iletişim. Belirli genişletilebilirlik derlemelerine tek tek başvurular ekleyin ya da tüm VS SDK başvuran aynı anda VS SDK'sını kullanarak derlemeler ekleme [Meta paket](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). NuGet hakkında daha fazla bilgi için bkz: [NuGet belgelerine](/NuGet) ve [Paket Yöneticisi kullanıcı Arabirimi](/NuGet/Tools/Package-Manager-UI) Konular.  
   
  VS SDK başvuru derlemeleri NuGet sürümlerini kullandığınızda, başka bir kullanıcı açmak ve projenizi derleme için VS SDK'yı yükleme gerekmez.  NuGet başvuru derlemeleri ve VS SDK derleme araçlarını, bu proje için kendi bilgisayarında otomatik olarak yüklenir.  
   

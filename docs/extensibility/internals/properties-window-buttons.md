@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4cd83a8d8e72c18f8a6929e8985f7a8635a940d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 950b9f0a7b0f38689042877a42499e23253e6486
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-buttons"></a>Özellikler penceresi düğmeleri
 Geliştirme dilini ve ürün türüne bağlı olarak, belirli düğmeleri varsayılan araç çubuğunda görüntülenir **özellikleri** penceresi. Tüm durumlarda **kategoriler**, **Alphabetized**, **özellikleri**, ve **özellik sayfaları** düğmeleri görüntülenir. Visual C# ve Visual Basic **olayları** düğmesini de görüntülenir. Belirli Visual C++ projelerinde **VC ++ iletileri** ve **VC geçersiz kılmaları** düğmeleri görüntülenir. Diğer proje türleri için ek düğmeler görüntülenebilir. Düğmeleri hakkında daha fazla bilgi için **özellikleri** penceresinde bkz [Özellikler penceresini](../../ide/reference/properties-window.md).  
@@ -39,4 +40,4 @@ Geliştirme dilini ve ürün türüne bağlı olarak, belirli düğmeleri varsay
 >  Araç çubuğu düğmelerine ekleyemezsiniz **özellikleri** yönetilmeyen kodu kullanarak penceresi. Araç çubuğu düğmesi eklemek için türetilen yönetilen bir nesne oluşturma <xref:System.Windows.Forms.Design.PropertyTab>.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genişletme özellikleri](../../extensibility/internals/extending-properties.md)
+ [Özellikleri Genişletme](../../extensibility/internals/extending-properties.md)

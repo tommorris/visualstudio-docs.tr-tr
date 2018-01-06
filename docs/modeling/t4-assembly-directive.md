@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 458fc4b2f96480c1f41efd8b80050fd0911b3e85
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a9d475a535d40af9a254a3f82839a8b733c2343d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-assembly-directive"></a>T4 Derleme Yönergesi
 İçinde bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tasarım zamanı metin şablonu `assembly` yönergesi şablon kodunuzu türlerinden kullanabilmesi için bir derleme yükler. Geçerli bir derleme başvurusu ekleme ile benzer bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projesi.  
@@ -92,4 +93,4 @@ ms.lasthandoff: 10/27/2017
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [T4 Include yönergesi](../modeling/t4-include-directive.md)
+ [T4 Include Yönergesi](../modeling/t4-include-directive.md)

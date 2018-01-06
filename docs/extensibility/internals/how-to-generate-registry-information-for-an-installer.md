@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c31184a78bae612e4341c3210a1f34f993a0581f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc3236397dd8a9d0f10927ba3e8fe23d2c4ba78f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Nasıl yapılır: bir yükleyici için kayıt defteri bilgilerini oluştur
 RegPkg.exe yardımcı programı, yönetilen VSPackage için bir kayıt bildirimi oluşturmak için kullanılabilir. Windows Installer kurulum pakete bildirim birleştirilebilir. RegPkg de üretebilir temel kurulum kaynak dosyasında bulunan bir dosya [Windows Installer XML araç takımı](http://go.microsoft.com/fwlink/?LinkId=62238).  
@@ -185,4 +186,4 @@ RegPkg.exe yardımcı programı, yönetilen VSPackage için bir kayıt bildirimi
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSPackages kaydetme](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
- [VSPackages](../../extensibility/internals/vspackages.md)
+ [VSPackage’lar](../../extensibility/internals/vspackages.md)

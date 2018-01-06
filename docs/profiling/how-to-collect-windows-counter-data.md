@@ -19,11 +19,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5b16cf6260932f11c9d4fd33f2eb5662327355a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 125bca0b0edd6571c6cc969da0cd3cbe809057da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Nasıl yapılır: Windows Sayaç Verileri Toplama
 Windows sayaçlarını profil oluşturma sırasında belirlenen aralıklarla toplanabilir sistem performans sayaçları ' dir. Profil oluşturma araçları rapor işaretleri görünümünde bir satırın etiketli **otomatik işaret** her toplama aralığı için. Satır bu aralıkta performans sayacı değerlerini tanımlamak sütunları içerir. İki belirli işaretleri arasında bir süre için analiz kısıtlamak için işaretleri, sağ tıklatın ve ardından seçin **Filtresi tarafından** ->  **işaretleri** kısayol menüsünden.  

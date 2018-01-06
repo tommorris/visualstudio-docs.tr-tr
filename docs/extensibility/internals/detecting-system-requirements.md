@@ -15,11 +15,12 @@ caps.latest.revision: "50"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 92c4d51d575ffd6e5723bf80b8adc700b83f6afd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc16c51b72ced37072c4ddf6d47bf347cf57c0f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="detecting-system-requirements"></a>Sistem gereksinimleri algılama
 Visual Studio yüklenmiş bir VSPackage çalışamaz. VSPackage yüklemesini yönetmek için Microsoft Windows Installer kullandığınızda, Visual Studio yüklü olup olmadığını algılamak için yükleyici yapılandırabilirsiniz. Diğer gereksinimler sistem örneğin denetlemek üzere, belirli bir Windows sürümü veya belirli bir RAM tutarına da yapılandırabilirsiniz.  
@@ -49,4 +50,4 @@ Visual Studio yüklenmiş bir VSPackage çalışamaz. VSPackage yüklemesini yö
  VSPackage yüklendikten sonra Visual Studio çalışıyorsa, VSPackage doğru kaydedilemedi. Yükleyici, Visual Studio çalıştırırken algılamak ve programı yüklemek reddeder. Windows Installer böyle algılamayı etkinleştirmek için tablo girişleri kullanmanıza izin vermez. Bunun yerine, bir özel eylem şu şekilde oluşturmanız gerekir: kullanım `EnumProcesses` devenv.exe işlem algılamak ve ya da bir başlatma koşulu veya koşullu olarak kullanılan bir yükleyici özelliği ayarlamak için işlevi görüntülemek kapatmak için kullanıcıdan bir iletişim kutusu Visual Studio.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows Installer ile VSPackages yükleme](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+ [Windows Installer ile VSPackage Yükleme](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

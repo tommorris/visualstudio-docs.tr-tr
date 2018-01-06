@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8e8ef79fbbe619c4764c8f3abea5062d29159634
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f3baa0185a917f5c89142f97668b08999e0f4f2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-base-class"></a>Görev Taban Sınıfı
 Birçok görevi sonuçta devralınan <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu sınıf aktarımlar görevleri birkaç parametre ekler. Bu parametreler, bu belgede listelenir.  

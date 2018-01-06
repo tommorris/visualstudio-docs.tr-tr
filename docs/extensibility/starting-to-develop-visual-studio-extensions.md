@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d788121e81af48cb972631d0845ad7b4317818b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio uzantılar geliştirmek üzere başlatılıyor
 Visual Studio uzantısı önce hiçbir zaman yazdıysanız bazı sorular'de vardır. Biz en yaygın olanları burada listelenen bazı. Aradığınız bilgileri görmüyorsanız, geri bildirim düğmelerini kullanın (**bu sayfayı yardımcı oldu?** ekranın altındaki), istediğiniz için isteyebilir.  
@@ -49,15 +50,15 @@ Visual Studio uzantısı önce hiçbir zaman yazdıysanız bazı sorular'de vard
   
 -   [Düzenleyici ve dil hizmeti uzantıları](../extensibility/editor-and-language-service-extensions.md): kendi özelleştirmeleri için Visual Studio dilleri sağlanan IntelliSense ekleyin veya yeni programlama dilleri için destek oluşturun. Yeni deyim tamamlamalar, öneriler ve yeni Quıckınfo araç ipuçları oluşturabilirsiniz. Ampullerle, yeniden düzenleme önerileri ekleyebilir ve yeni programlama dilleri desteklemek kod giderir.  
   
--   [Projeleri genişletme](../extensibility/extending-projects.md)  
+-   [Projeleri Genişletme](../extensibility/extending-projects.md)  
   
--   [Genişletme kullanıcı ayarları ve seçenekleri](../extensibility/extending-user-settings-and-options.md)  
+-   [Kullanıcı Ayarlarını ve Seçeneklerini Genişletme](../extensibility/extending-user-settings-and-options.md)  
   
--   [Özellikler ve özellik penceresi genişletme](../extensibility/extending-properties-and-the-property-window.md)  
+-   [Özellikleri ve Özellik Penceresini Genişletme](../extensibility/extending-properties-and-the-property-window.md)  
   
--   [Visual Studio diğer bölümleri genişletme](../extensibility/extending-other-parts-of-visual-studio.md)  
+-   [Visual Studio’nun Diğer Bölümlerini Genişletme](../extensibility/extending-other-parts-of-visual-studio.md)  
   
--   [Visual Studio yalıtılmış Kabuk](../extensibility/visual-studio-isolated-shell.md)  
+-   [Visual Studio Yalıtılmış Kabuğu](../extensibility/visual-studio-isolated-shell.md)  
   
 ##  <a name="BKMK_ProjectTemplate"></a>Hangi proje şablonları VSSDK tarafından sağlanan?  
  İki ana uzantıları VSPackages ve MEF uzantıları türleridir. Genel olarak, VSPackage uzantıları kullanan veya komutları, aracı windows ve projeleri genişletme uzantıları için kullanılır. MEF uzantıları genişletme veya Visual Studio düzenleyicisinde özelleştirmek için kullanılır.  
@@ -89,4 +90,4 @@ Visual Studio uzantısı önce hiçbir zaman yazdıysanız bazı sorular'de vard
 ## <a name="how-can-i-distribute-my-extension"></a>My uzantısını nasıl dağıtma?  
  Uzantınızı başka bir bilgisayara yüklemek ya da çift tıklatarak yükleyin .vsix dosyası olarak arkadaşlarınıza gönderebilir. VSIX paketler hakkında daha fazla bilgi bulabilirsiniz [sevkiyat Visual Studio uzantıları](../extensibility/shipping-visual-studio-extensions.md).  
   
- Uzantınızı Market'te Visual Studio, Visual Studio müşteriler çok sayıda görünür hale getirir, yayımlayabilirsiniz. Market uzantısı paketleme ilişkin bir örnek için bkz: [izlenecek yol: Visual Studio uzantısı yayımlama](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Market'te yayımlamak için yapmanız gerekenler hakkında daha fazla bilgi için bkz: [ürünleri ve Visual Studio uzantılarını](https://docs.microsoft.com/en-us/vsts/integrate/ide/extensions/overview).
+ Uzantınızı Market'te Visual Studio, Visual Studio müşteriler çok sayıda görünür hale getirir, yayımlayabilirsiniz. Market uzantısı paketleme ilişkin bir örnek için bkz: [izlenecek yol: Visual Studio uzantısı yayımlama](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Market'te yayımlamak için yapmanız gerekenler hakkında daha fazla bilgi için bkz: [ürünleri ve Visual Studio uzantılarını](/vsts/integrate/ide/extensions/overview).

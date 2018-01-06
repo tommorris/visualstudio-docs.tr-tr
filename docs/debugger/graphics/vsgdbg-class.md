@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0ee36596521f26ff4dd948e697640d0c82d796f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e1a3810f6f0c2de6bffb2f97c2f1fc446ea3b6d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsgdbg-class"></a>VsgDbg Sınıfı
 Grafik tanılama uygulama bileşeninin programsal denetim için bir arabirimi temsil eder.  
@@ -34,8 +35,8 @@ class VsgDbg;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[VsgDbg::VsgDbg (oluşturucu)](vsgdbg-vsgdbg-constructor.md)|Bir örneğini oluşturur `VsgDbg` sınıfı ve isteğe bağlı olarak etkin olarak yakalamak ve grafik bilgilerini kaydetmek için grafik tanılamayı uygulama bileşeninin hazırlar.|  
-|[VsgDbg:: ~ VsgDbg (yok edici)](vsgdbg-tilde-vsgdbg-destructor.md)|Örneği bozar `VsgDbg` sınıfı.|  
+|[VsgDbg::VsgDbg (Oluşturucu)](vsgdbg-vsgdbg-constructor.md)|Bir örneğini oluşturur `VsgDbg` sınıfı ve isteğe bağlı olarak etkin olarak yakalamak ve grafik bilgilerini kaydetmek için grafik tanılamayı uygulama bileşeninin hazırlar.|  
+|[VsgDbg::~VsgDbg (Yok Edici)](vsgdbg-tilde-vsgdbg-destructor.md)|Örneği bozar `VsgDbg` sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -44,11 +45,11 @@ class VsgDbg;
 |[AddMessage](addmessage.md)|Özel ileti grafik tanılama HUD (Head yukarı görüntüle) ekler.|  
 |[BeginCapture](begincapture.md)|İle sona erer yakalama aralığı başlar `EndCapture`.|  
 |[CaptureCurrentFrame](capturecurrentframe.md)|Grafik günlük dosyası için geçerli çerçeve kalanı yakalar.|  
-|[Kopyalama (programlı yakalama)](copy-programmatic-capture.md)|Etkin Grafikler (.vsglog) günlük dosyasının içeriğini yeni bir dosyaya kopyalar.|  
+|[Kopyalama (Programlı Yakalama)](copy-programmatic-capture.md)|Etkin Grafikler (.vsglog) günlük dosyasının içeriğini yeni bir dosyaya kopyalar.|  
 |[EndCapture](endcapture.md)|Başlatıldığı yakalama zaman aralığı sona `BeginCapture`.|  
 |[Init](init.md)|Etkin olarak yakalamak ve grafik bilgilerini kaydetmek için grafik tanılamayı uygulama bileşeninin hazırlar.|  
 |[ToggleHUD](togglehud.md)|Grafik tanılama HUD katmana açmak veya kapatmak değiştirir.|  
-|[Başlatmış](uninit.md)|Grafik günlük dosyası sonlandırır kapatılır ve uygulama, etkin olarak grafik bilgilerini kaydetme sırasında kullanılan kaynakları serbest bırakır.|  
+|[UnInit](uninit.md)|Grafik günlük dosyası sonlandırır kapatılır ve uygulama, etkin olarak grafik bilgilerini kaydetme sırasında kullanılan kaynakları serbest bırakır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  `VsgDbg` Sınıfı, grafik tanılama özellikleri programlı olarak denetlemek için kullanabileceğiniz bir arabirimi temsil eder. Bazı özellikler bile, aktif olarak yakalama ve grafik bilgilerini kaydetme kullanabilirsiniz; Bu içerir `AddMessage` üye işlevini ve `ToggleHUD` üye işlevi. Bir üye işlevleri başlatmak veya etkin grafik bilgilerini yakalama durdurmak için grafik tanılamayı uygulama bileşeninin hazırlama ya da uygulama etkin olarak yakalama ve grafik bilgilerini bir grafik günlük dosyasına kaydetme sırasında çağrılması gerekir.

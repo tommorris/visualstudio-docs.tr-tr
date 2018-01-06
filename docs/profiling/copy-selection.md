@@ -14,14 +14,15 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad53ee70cd4f1c47ab4df2a9df822c5f5be3f713
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2b48074fa04ae408f566ce15743505ae5d260dd8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="copy-selection"></a>Seçimi Kopyala
 Rapor sekmesinden tüm çağrı yığını kopyalamak için tıklayın **kopya**. Daha sonra bu eylemi destekleyen herhangi bir programda çağrı yığını yapıştırabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)
+ [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

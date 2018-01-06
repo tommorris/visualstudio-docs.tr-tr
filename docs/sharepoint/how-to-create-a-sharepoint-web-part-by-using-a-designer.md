@@ -21,11 +21,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4f329b1402917bc7c129bcdc9f504dfe99bcccbf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b993512350e6bd27d0dce8ef359bc33fccde5ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Nasıl Yapılır: Tasarımcı Kullanarak SharePoint Web Bölümü Oluşturma
   Bir web bölümü ekleyerek oluşturabileceğiniz bir **Visual Web Bölümü** herhangi bir SharePoint proje öğesi. Bu, Visual Studio'da web bölümü, denetimleri ile kod ekleyebileceğiniz Visual Web Developer Tasarımcısı'nı açar. Visual web bölümleri Web Bölümleri olduğu gibi aynı şekilde işlev. Visual web bölümleri Visual Web Developer tasarımcısında tasarım yalnızca farktır.  
@@ -60,6 +61,6 @@ ms.lasthandoff: 10/31/2017
  [SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Nasıl yapılır: bir SharePoint Web Bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
  [İzlenecek yol: SharePoint için bir Web Bölümü oluşturma](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
- [İzlenecek yol: Tasarımcı kullanarak bir Web Bölümü SharePoint için oluşturma](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
+ [İzlenecek Yol: Tasarımcı Kullanarak SharePoint için bir Web Bölümü Oluşturma](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
   
   

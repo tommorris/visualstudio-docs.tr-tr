@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 775cafd5f8fc5bb2908447d7f34b13e0377d6711
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b67cf22f38366625d8aa7ff59ad1603a24074882
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Nasıl Yapılır: Şununla Çevrele Kod Parçacıklarını Kullanma
 Aşağıdaki yordamlar Çevrele kod parçacıklarını kullanmayı açıklar. Surround-with kod parçacıkları kullanılabilir üç yolu bulunmaktadır: bir klavye kısayolu, Düzen menüsü ve bağlam menüsü üzerinden.  
@@ -60,4 +61,4 @@ Aşağıdaki yordamlar Çevrele kod parçacıklarını kullanmayı açıklar. Su
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C# kod parçacıkları](../ide/visual-csharp-code-snippets.md)   
- [Kod parçacığı Seçici](../ide/reference/code-snippet-picker.md)
+ [Kod Parçacığı Seçici](../ide/reference/code-snippet-picker.md)

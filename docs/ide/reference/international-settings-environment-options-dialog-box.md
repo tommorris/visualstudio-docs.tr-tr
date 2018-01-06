@@ -22,11 +22,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a1cf847b87e7902ef535359420ea105a48dc9a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e086111be924d1262866f882b77d821659af909d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Uluslararası Ayarlar, Ortam, Seçenekler İletişim Kutusu
 Uluslararası ayarlar sayfasını makinenize yüklü tümleşik geliştirme ortamı (IDE) birden fazla dil sürümü varsa, varsayılan dil değiştirmenize izin verir. Seçerek bu iletişim kutusuna erişebilirsiniz **seçenekleri** gelen **Araçları** menüsüne ve ardından seçme **uluslararası ayarları** gelen **ortamı** klasör. Bu sayfayı listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.  
@@ -42,4 +43,4 @@ Uluslararası ayarlar sayfasını makinenize yüklü tümleşik geliştirme orta
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dil paketlerini yükleyin](../../install/install-visual-studio.md#step-6---install-language-packs-optional)   
- [Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)
+ [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)

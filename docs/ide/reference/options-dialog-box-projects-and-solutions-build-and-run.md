@@ -19,11 +19,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e15880551e2a896bca473d463b253ec15dda7b36
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 0187b8a70fc012fc6d2564f77ea5a2b2ff7c20d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Seçenekler iletişim kutusu, projeler ve çözümler, derleme ve çalıştırma
 
@@ -57,6 +58,6 @@ Ne kadar bilgi görünür belirler **çıkış** penceresi derleme için.
 Ne kadar bilgi bulunur yapı günlük dosyasına yazılır belirler \\... \\ *ProjectName*\Debug\\*ProjectName*. günlük.  
 
 ## <a name="see-also"></a>Ayrıca bkz.  
-[Derleme ve oluşturma](../../ide/compiling-and-building-in-visual-studio.md)  
+[Derleme ve Oluşturma](../../ide/compiling-and-building-in-visual-studio.md)  
 [Seçenekler iletişim kutusu, projeler ve çözümler](projects-and-solutions-options-dialog-box.md)  
 [Seçenekler iletişim kutusu, projeler ve çözümler, Web projeleri](options-dialog-box-projects-and-solutions-web-projects.md)

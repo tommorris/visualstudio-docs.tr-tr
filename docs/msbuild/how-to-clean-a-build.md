@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 2b935e0d09bb80347ee17c796f83846cef02a39f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5316a6f7f206ce5f28c6a76d13bf6dc8e4143125
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-clean-a-build"></a>Nasıl Yapılır: Derlemeyi Temizleme
 Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm ara ve çıktı dosyalarını silinir. Proje ve bileşen dosyalarından Ara yeni örneklerini ve çıktı dosyalarını sonra oluşturulabilir. Kitaplığı ile sağlanan ortak görevler [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] içeren bir [Exec](../msbuild/exec-task.md) sistem komutlarını çalıştırmak için kullanabileceğiniz bir görev. Görevler Kitaplığı hakkında daha fazla bilgi için bkz: [görev başvurusu](../msbuild/msbuild-task-reference.md).  
@@ -106,4 +107,4 @@ Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm a
  [MakeDir görevi](../msbuild/makedir-task.md)   
  [RemoveDir görevi](../msbuild/removedir-task.md)   
  [CSC görevi](../msbuild/csc-task.md)   
- [Hedefleri](../msbuild/msbuild-targets.md)
+ [Hedefler](../msbuild/msbuild-targets.md)

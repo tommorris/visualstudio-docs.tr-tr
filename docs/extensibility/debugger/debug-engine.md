@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2db510e81231f7802d686b21a977c271a66c5d79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-engine"></a>Altyapısı hata ayıklama
 Hata ayıklama altyapısı (DE) yorumlayıcı veya işletim sistemi hata ayıklama Hizmetleri yürütme denetimi, kesme noktaları ve ifade değerlendirme gibi sunmak için birlikte çalışır. Ayıklanacak bir programın durumunu izlemek için DE sorumludur. Bunu gerçekleştirmek için CPU veya API çalışma zamanı tarafından sağlanan olup olmadığını ne olursa olsun yöntemleri desteklenen çalışma zamanında kullanabileceği DE kullanır.  
@@ -42,4 +43,4 @@ Hata ayıklama altyapısı (DE) yorumlayıcı veya işletim sistemi hata ayıkla
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcı bileşenleri](../../extensibility/debugger/debugger-components.md)   
  [İfade değerlendirici](../../extensibility/debugger/expression-evaluator.md)   
- [Sembol sağlayıcısı](../../extensibility/debugger/symbol-provider.md)
+ [Sembol Sağlayıcısı](../../extensibility/debugger/symbol-provider.md)

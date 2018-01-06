@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42018230262e17bc99905833da1b15e30a7d62aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: fc083adc600b7de2538abf1ada468f3d626b7ba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-managed-code"></a>Yönetilen Kodda Hata Ayıklama
 Genel hata ayıklama sorunları ve teknikler yönetilen uygulamalar için bu bölümde ele alınmaktadır veya uygulamaları Visual Basic, C# ve C++ gibi ortak dil çalışma zamanı hedefleyen dillerde yazılır. Burada açıklanan teknikleri üst düzey tekniklerle aynıdır. Daha fazla bilgi için bkz: [hata ayıklayıcıyı kullanma](../debugger/debugger-basics.md).  
@@ -40,7 +41,7 @@ Genel hata ayıklama sorunları ve teknikler yönetilen uygulamalar için bu bö
  [Visual Basic'deki deyimler Durdur](../debugger/stop-statements-in-visual-basic.md)  
  Açıklar `Stop` kesme noktası ayarlama için bir alternatif sağlayan deyimi. Kod örneği de sağlanır, arasındaki karşılaştırmaları birlikte `Stop` deyimi ve `End` arasında iyi olarak olarak deyimi `Stop` ve `Assert` deyimi.  
   
- [İzlenecek yol: bir Windows formunda hata ayıklama](../debugger/walkthrough-debugging-a-windows-form.md)  
+ [İzlenecek yol: Windows Formunda hata ayıklama](../debugger/walkthrough-debugging-a-windows-form.md)  
  Bir Windows formu oluşturma ve bu formunda hata ayıklama için adım adım yönergeler sağlar. Windows Form, yönetilen bir Windows uygulamasının standart bir bileşeni en yaygın yönetilen uygulamaların biridir. Bu kılavuzda Visual C# ve Visual Basic kullanır, ancak C++ ile bir Windows formu oluşturma teknikleri genellikle benzerdir.  
   
  [OnStart yönteminde hata ayıklama](../debugger/how-to-debug-the-onstart-method.md)  
@@ -49,7 +50,7 @@ Genel hata ayıklama sorunları ve teknikler yönetilen uygulamalar için bu bö
  [Karışık mod hata ayıklaması](../debugger/debugging-mixed-mode-applications.md)  
  Karışık mod uygulamalarında hata ayıklama açıklanır. Bu, yönetilen kod ile yerel kod birleştirir herhangi bir uygulama anlamına gelir.  
   
- [Hata: sistemde çekirdek hata ayıklayıcı etkinleştirildiğinden hata ayıklama mümkün değil](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Hata: Sistemde çekirdek hata ayıklayıcı etkinleştirildiğinden hata ayıklama mümkün değil](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  Hata ayıklama yönetilen kodu çalışırsanız oluşan bir hata iletisi açıklanır bir [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], ya da hata ayıklama modunda başlatılan Windows NT sistemi.  
   
  [JIT iyileştirmesi ve hata ayıklama](../debugger/jit-optimization-and-debugging.md)  
@@ -65,7 +66,7 @@ Genel hata ayıklama sorunları ve teknikler yönetilen uygulamalar için bu bö
  [IntelliTrace](../debugger/intellitrace.md)  
  IntelliTrace ile uygulamanızın yürütme geçmişini kaydetme tarafından hataları daha hızlı ve daha kolay bulabilirsiniz. Geriye doğru adım ve kaydedilen olayları ve zamanında anahtar noktalarda uygulamanızın durumunu incelemek için çağrıları aracılığıyla iletebilir. Kodunuzdaki hataları ayıklamanıza çok sayıda kesme noktalarını ayarlama veya sık olarak uygulamanızı yeniden başlatmayı olmadan. Visual Studio Ultimate gerektirir.  
   
- [İzleme ve uygulamaları](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
+ [İzleme ve İşaretleme Uygulamaları](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
  İzleme, onu çalıştıran ve düzenleme, karşın, uygulamanızın yürütülmesini izlemek bir yol açıklar stratejik konumlara kodunuzda izleme deyimleri yerleştirme içerir. Bu konu ayrıca araçları bir giriş sağlar ve izleme, izleme anahtarları, uygulama kodunda izleme, uygulama koduna izleme deyimleri ekleme ve ile koşullu derleme dinleyicileri izleme <xref:System.Diagnostics.Debug> ve <xref:System.Diagnostics.Trace> .  
   
  [/ ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)  

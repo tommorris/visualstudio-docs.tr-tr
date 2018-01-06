@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f83fbf1427951057f2154e032fb58b178c8b39fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8eb0efae140613c6caa7bd71d72e0ce4cda37db8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="start-command"></a>Başlat Komutu
 Başlangıç projesi hata ayıklama başlar.  
@@ -49,4 +50,4 @@ Debug.Start [address]
  [Visual Studio komutları](../../ide/reference/visual-studio-commands.md)   
  [Komut penceresi](../../ide/reference/command-window.md)   
  [Bul/komut kutusu](../../ide/find-command-box.md)   
- [Visual Studio komut diğer adları](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

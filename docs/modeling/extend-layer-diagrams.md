@@ -15,20 +15,21 @@ caps.latest.revision: "39"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 2b661d894a471a3734a54806a89381d06fd3bd2d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 477c51d4172f893e4506eff1b2a11b626993b327
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extend-dependency-diagrams"></a>Bağımlılık diyagramlarını genişletme
 Kod oluşturma ve bağımlılık diyagramları güncelleştirir ve Visual Studio'da bağımlılık diyagramları karşı program kodunuzu yapısını doğrulamak için yazabilirsiniz. Diyagramları (içerik) kısayol menüsünde görüntülenen, sürükle ve bırak hareketleri özelleştirmek ve katman modeli metin şablonlardan erişim komutları ekleyebilirsiniz. Bu uzantılar bir Visual Studio Tümleştirme Uzantısı (VSIX) paketini ve diğer Visual Studio kullanıcılara dağıtın.  
   
  Bağımlılık diyagramları hakkında daha fazla bilgi için bkz:  
   
--   [Bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md)  
+-   [Bağımlılık Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)  
   
--   [Bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)  
+-   [Bağımlılık Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)  
   
 -   [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)  
   
@@ -62,7 +63,7 @@ Kod oluşturma ve bağımlılık diyagramları güncelleştirir ve Visual Studio
   
  [Katman modeli uzantısı dağıtma](../modeling/deploy-a-layer-model-extension.md)  
   
- [Uzantıları bağımlılık diyagramları için sorun giderme](../modeling/troubleshoot-extensions-for-layer-diagrams.md)  
+ [Bağımlılık diyagramları için uzantı sorunlarını giderme](../modeling/troubleshoot-extensions-for-layer-diagrams.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md)   

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f7f2914b59025d3cf1dc82d43191f43ec7b0115
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b5ab19af1e746bdee9c4ec933507ac3092b0e82a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 Belirtilen komut başlattıktan sonra yürütür [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE).  
@@ -48,4 +49,4 @@ devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)   
- [Visual Studio komut diğer adları](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7987d2b6d22893e82893755ed76fa5253aeb600c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: aa699e0c6d4d23ec6e5cdc347627a98efb623672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-color-editor"></a>VSIX renk Düzenleyicisi
 Visual Studio uzantısı renk Düzenleyicisi araç oluşturun ve Visual Studio için özel renkler düzenleyin. Böylece renkleri kodda kullanılabilir aracı tema kaynak anahtarları de oluşturabilirsiniz. Bu araç, renkler tema destekleyen Visual Studio uzantısı yapmak için kullanışlıdır. Bu araç .pkgdef ve .xml dosyaları açabilirsiniz. Visual Studio Temalar (.vstheme dosyaları) için .xml dosya uzantısı değiştirerek Visual Studio uzantısı renk Düzenleyicisi ile kullanılabilir. Ayrıca, .vstheme dosya geçerli bir .xml dosyasına aktarılabilir.  

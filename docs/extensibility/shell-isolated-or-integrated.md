@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f06af0b884d404b3fd2e8e36cac235c10d254bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 787fd7c6980df9809fed9582f4ec8da81de8f862
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shell-isolated-or-integrated"></a>Kabuğu (yalıtılmış veya tümleşik)
 Tümleşik veya yalıtılmış modda kendi Visual Studio tabanlı bir uygulama oluşturabilirsiniz. Tümleşik modda Visual Studio özelliklerinin yanı sıra, uygulamanızın kullanılabilir. Yalıtılmış modda yanı sıra kendi uzantısı dağıtmak istediğiniz Visual Studio özelliklerinin bir alt kümesi seçin.  
@@ -60,4 +61,4 @@ Tümleşik veya yalıtılmış modda kendi Visual Studio tabanlı bir uygulama o
  Yeniden dağıtılabilir paketler hakkında daha fazla bilgi için bkz: [Visual Studio genişletilebilirlik indirmeleri](http://go.microsoft.com/fwlink/?LinkID=119298) Web sitesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio uzantıları aktarma](../extensibility/shipping-visual-studio-extensions.md)
+ [Visual Studio Uzantıları Gönderme](../extensibility/shipping-visual-studio-extensions.md)

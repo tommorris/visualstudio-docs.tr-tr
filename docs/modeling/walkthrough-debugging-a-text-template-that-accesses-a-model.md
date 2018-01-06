@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2943b49571077ac1cab87db5ecc4d0f82390273e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1a8255180a3a5313f0a1c14b17ba10c885c10abc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>İzlenecek yol: Modele Erişen Metin Şablonunda Hata Ayıklama
 Değiştirme veya bir etki alanına özgü dil çözümde metin şablonları ekleme, şablonu kaynak koduna veya oluşturulan kod derlediğinde altyapısı dönüştüren olduğunda hataları alabilirsiniz. Aşağıdaki yönergeler metin şablonu hata ayıklamak için yapabileceği şeylerden bazıları gösterir.  

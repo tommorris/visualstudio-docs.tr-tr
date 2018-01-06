@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 491de73e97bf44ea54d5ccdfb604924ff26c9530
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c6d0a2c0912b98995bb6d933766a46f4ebc527a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulaması için Dosya İlişkilendirmeleri Oluşturma
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Böylece uygulama, kullanıcı o türden bir dosya açıldığında otomatik olarak başlatılır uygulamaları bir veya daha fazla dosya adı uzantıları ile ilişkilendirilebilir. Dosya adı uzantısı desteği ekleme bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamasıdır kolay.  
@@ -59,4 +60,4 @@ ms.lasthandoff: 10/27/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [\<fileAssociation > öğesi](../deployment/fileassociation-element-clickonce-application.md)   
  [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md)   
- [Mage.exe (bildirim üretme ve düzenleme aracı)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
+ [Mage.exe (Bildirim Oluşturma ve Düzenleme Aracı)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

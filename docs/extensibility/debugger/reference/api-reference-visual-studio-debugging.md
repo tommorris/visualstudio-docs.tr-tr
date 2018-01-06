@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ead1571856fa04e10103fbf2274dc0e22295154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9f6e3110ca4988fcc12e547f3bcd82c1026f3aeb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API Başvurusu (Visual Studio hata ayıklama)
 Başvuru bölümünde, API, sözdizimi ve kullanımı tüm API öğeleri için gösteren bir kılavuz kavramsal genel bakış ve bir sınıflama, kod örnekleri içerir. Tüm başvurular kategoriye göre alfabetik olarak listelenir.  
@@ -49,4 +50,4 @@ Başvuru bölümünde, API, sözdizimi ve kullanımı tüm API öğeleri için g
  [Numaralandırmalar](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Yapılar ve birleşimleri](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [Hata ayıklama için SDK Yardımcıları](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Visual Studio hata ayıklayıcısı genişletilebilirliği](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [Visual Studio Hata Ayıklayıcı Genişletilebilirliği](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

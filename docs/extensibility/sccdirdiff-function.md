@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea335ef6bcb2a27b4312c613062be0d365711cbc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c1f6f990bb33ddbc1d7591fa3ab9837f472f8418
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff işlevi
 Bu işlev istemci diskteki geçerli yerel dizin ve kaynak denetimi altında karşılık gelen proje arasındaki farkları görüntüler.  
@@ -82,4 +83,4 @@ SCCRTN SccDirDiff(
 >  Bu işlev olarak aynı komutu bayrakları kullanır [SccDiff](../extensibility/sccdiff-function.md). Ancak, kaynak denetim eklentisi dizinler için "hızlı-fark" işlemi desteklemeyen tercih edebilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Denetim eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)
+ [Kaynak Denetimi Eklentisi API İşlevleri](../extensibility/source-control-plug-in-api-functions.md)

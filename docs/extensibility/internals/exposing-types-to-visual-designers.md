@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e79ec644426ed5068f79bb914b1202a800982cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a85648a95a6651ff62f50b2361b07feba9a58b47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-types-to-visual-designers"></a>Görsel tasarımcılar türlerine gösterme
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]sınıf ve tür tanımları tasarım zamanında bir görsel tasarımcı görüntülemek için erişiminiz olmalıdır. Sınıflar (başvuruları ve bağımlılıklarını) geçerli projenin tamamını bağımlılık kümesini içeren derlemeler önceden tanımlanmış kümesinden yüklenir. Ayrıca visual tasarımcıları için gerekli erişim sınıfları ve özel araçları tarafından oluşturulan dosyalarda tanımlı türleri olabilir.  
@@ -49,4 +50,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [BuildManager nesnesine giriş](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [Tek dosya oluşturucuları uygulama](../../extensibility/internals/implementing-single-file-generators.md)   
- [Tek dosya oluşturucuları kaydetme](../../extensibility/internals/registering-single-file-generators.md)
+ [Tek Dosya Oluşturucuları Kaydetme](../../extensibility/internals/registering-single-file-generators.md)

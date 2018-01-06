@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a8617c4d6c5ac4a224a97f6a6311a5526151599
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bce4fe32dc53904dec901736d7d02e3f7ac21b69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Visual Studio diğer bölümleri genişletme
 Visual Studio UI, genişletebilirsiniz pek çok daha fazla bölümü vardır. Burada birkaç gösteriyoruz.  
@@ -28,9 +29,9 @@ Visual Studio UI, genişletebilirsiniz pek çok daha fazla bölümü vardır. Bu
 ## <a name="extending-the-toolbox"></a>Araç kutusu genişletme  
  Yeni denetimler ve diğer öğeleri araç kutusuna ekleme ve araç kutusu işlevselliğinin nasıl kullanılacağını öğrenin:  
   
--   [WPF araç kutusu denetimi oluşturma](../extensibility/creating-a-wpf-toolbox-control.md)  
+-   [WPF Araç Kutusu Denetimi Oluşturma](../extensibility/creating-a-wpf-toolbox-control.md)  
   
--   [Windows Forms araç kutusu denetimi oluşturma](../extensibility/creating-a-windows-forms-toolbox-control.md)  
+-   [Windows Forms Araç Kutusu Denetimi Oluşturma](../extensibility/creating-a-windows-forms-toolbox-control.md)  
   
 ## <a name="extending-the-status-bar"></a>Durum çubuğu genişletme  
  Durum çubuğu ve ilerleme çubuğu için okuma ve yazma nasıl ve animasyonları ve diğer kullanıcı Arabirimi sağlayan öğrenin: [durum çubuğu genişletme](../extensibility/extending-the-status-bar.md).  

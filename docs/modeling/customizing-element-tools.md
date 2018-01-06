@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2555fe2be42ed58482cdacf174a6cb035a8d7bd5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2571fd137875a0971b7a9e4364849a3105ca220a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-element-tools"></a>Öğe Araçlarını Özelleştirme
 Bazı DSL tanımları, tek bir kavram öğeleri grubu olarak temsil eder. Örneğin, bir bileşenin sabit bir dizi bağlantı noktası olan bir model oluşturursanız, her zaman kendi üst bileşeni ile aynı zamanda oluşturulması için bağlantı noktalarını istiyorsunuz. Bu nedenle, öğelerin yerine tek bir grup oluşturur, böylece öğesi oluşturma aracı özelleştirmeniz gerekir. Bunu başarmak için öğe oluşturma Aracı nasıl başlatılır özelleştirebilirsiniz.  
@@ -62,4 +63,4 @@ public partial class CircuitDiagramToolboxHelper
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Öğe oluşturma ve taşıma özelleştirme](../modeling/customizing-element-creation-and-movement.md)
+ [Öğe Oluşturma ve Hareketini Özelleştirme](../modeling/customizing-element-creation-and-movement.md)

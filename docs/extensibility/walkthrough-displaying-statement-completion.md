@@ -13,11 +13,12 @@ caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ebdc87e1dccf2bde66ccfeebb6c2b4fba144c70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d9c3b44bd46c34a864896cbf1002505085be5143
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>İzlenecek yol: Deyim tamamlama görüntüleme
 Dil tabanlı deyim tamamlama, tamamlama sağlamak istediğiniz tanımlayıcıları tanımlama ve ardından bir tamamlanma oturumu tetikleme uygulayabilirsiniz. Deyim tamamlama dil hizmeti bağlamında tanımlayabilir, kendi dosya adı uzantısı ve içerik türünü tanımlayın ve yalnızca bu tür için tamamlama görüntülemek ya da mevcut bir içerik türü için tamamlama tetikleyebilir — Örneğin, "düz metin". Bu kılavuz, içerik türü metin dosyaları olan "düz metin" içerik türü için ifade tamamlama tetiklemek gösterilmiştir. Kod ve XML dosyaları dahil olmak üzere tüm diğer içerik türleri, üst "metin" içerik türü değil.  
@@ -204,4 +205,4 @@ Dil tabanlı deyim tamamlama, tamamlama sağlamak istediğiniz tanımlayıcılar
 4.  "A" ve "d" sonra ilk yazarken, "ekleme" ve "uyarlama" içeren bir liste görüntülenmesi gerekir. Toplama seçildiğini dikkat edin. Başka bir "d" yazdığınızda, listenin "şimdi seçilen yalnızca ek olarak" içermelidir. Boşluk, sekme ya da Enter tuşuna basarak "toplama" yürütün veya Esc veya başka bir anahtar yazarak listesi yok sayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: bir içerik türü için bir dosya adı uzantısı bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek Yol: Bir İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

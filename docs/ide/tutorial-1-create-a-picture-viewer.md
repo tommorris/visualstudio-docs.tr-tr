@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 73c9289d95c7df352819546eab6d95084576215c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b0537b1f335d46854dd43727ade695909db421ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Eğitmen 1: Resim Görüntüleyici Oluşturma
 Bu öğreticide, bir dosyadan bir resim yükler ve bir pencerede görüntüleyen bir program oluşturun. Düğmelerin ve resim kutularının formunuzda, bunların özelliklerini ayarlamak ve sorunsuz formu yeniden boyutlandırmak için kapsayıcılar kullanma gibi denetimleri sürükleyin öğrenin. Ayrıca, kod yazmaya başlayın. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:  
@@ -55,14 +56,14 @@ Bu öğreticide oluşturduğunuz resmi
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[1. adım: Windows Forms uygulaması projesi oluşturma](../ide/step-1-create-a-windows-forms-application-project.md)|Bir Windows Forms uygulaması projesi oluşturarak başlayın.|  
-|[2. adım: Programınızı çalıştırma](../ide/step-2-run-your-program.md)|Önceki adımda oluşturduğunuz Windows Forms uygulaması programını çalıştırın.|  
-|[3. adım: Form özelliklerinizi ayarlama](../ide/step-3-set-your-form-properties.md)|Formunuz kullanarak görünüşünü değiştirme **özellikleri** penceresi.|  
-|[4. adım: TableLayoutPanel denetimi ile formunuzu düzenleme](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Ekleme bir `TableLayoutPanel` Formunuza denetim.|  
-|[5. adım: Formunuza denetimler ekleme](../ide/step-5-add-controls-to-your-form.md)|Denetimleri gibi ekleme bir `PictureBox` denetim ve `CheckBox` Formunuza denetim. Düğmeleri formunuza ekleyin.|  
-|[6. adım: Düğme denetimlerinizi adlandırma](../ide/step-6-name-your-button-controls.md)|Düğmeleri daha anlamlı yeniden adlandırın.|  
-|[7. adım: Formunuza iletişim kutusu bileşenleri ekleme](../ide/step-7-add-dialog-components-to-your-form.md)|Ekleme bir **OpenFileDialog** bileşeni ve bir **ColorDialog** formunuza bileşen.|  
-|[8. adım: Kodu için bir resim Göster düğmesi olay işleyicisi yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|IntelliSense aracını kullanarak bir kod yazın.|  
-|[9. adım: Gözden geçirme, açıklama ve kodunuzu Test](../ide/step-9-review-comment-and-test-your-code.md)|Gözden geçirin ve kodunuzu test etmek. Açıklamaları gerektiği gibi ekleyin.|  
-|[10. adım: Ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Diğer düğmeleri ve IntelliSense kullanarak onay kutusu çalışma yapmak için kod yazma.|  
-|[11. adım: Programınızı çalıştırma ve diğer özellikleri deneme](../ide/step-11-run-your-program-and-try-other-features.md)|Programınızı çalıştırma ve arka plan rengini ayarlayın. Renkleri, yazı tipi ve kenarlıkları değiştirme gibi diğer özellikleri deneyin.|
+|[1. Adım: Windows Forms Uygulaması Projesi Oluşturma](../ide/step-1-create-a-windows-forms-application-project.md)|Bir Windows Forms uygulaması projesi oluşturarak başlayın.|  
+|[2. Adım: Programınızı Çalıştırma](../ide/step-2-run-your-program.md)|Önceki adımda oluşturduğunuz Windows Forms uygulaması programını çalıştırın.|  
+|[3. Adım: Form Özelliklerinizi Ayarlama](../ide/step-3-set-your-form-properties.md)|Formunuz kullanarak görünüşünü değiştirme **özellikleri** penceresi.|  
+|[4. Adım: TableLayoutPanel Denetimi ile Formunuzu Düzenleme](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Ekleme bir `TableLayoutPanel` Formunuza denetim.|  
+|[5. Adım: Formunuza Denetimler Ekleme](../ide/step-5-add-controls-to-your-form.md)|Denetimleri gibi ekleme bir `PictureBox` denetim ve `CheckBox` Formunuza denetim. Düğmeleri formunuza ekleyin.|  
+|[6. Adım: Düğme Denetimlerinizi Adlandırma](../ide/step-6-name-your-button-controls.md)|Düğmeleri daha anlamlı yeniden adlandırın.|  
+|[7. Adım: Formunuza İletişim Kutusu Bileşenleri Ekleme](../ide/step-7-add-dialog-components-to-your-form.md)|Ekleme bir **OpenFileDialog** bileşeni ve bir **ColorDialog** formunuza bileşen.|  
+|[8. Adım: Resim Göster Düğmesi Olay İşleyicisi için Kod Yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|IntelliSense aracını kullanarak bir kod yazın.|  
+|[9. Adım: Kodunuzu Gözden Geçirme, Açıklama ve Test Etme](../ide/step-9-review-comment-and-test-your-code.md)|Gözden geçirin ve kodunuzu test etmek. Açıklamaları gerektiği gibi ekleyin.|  
+|[10. Adım: Ek Düğmeler ve Onay Kutusu için Kod Yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Diğer düğmeleri ve IntelliSense kullanarak onay kutusu çalışma yapmak için kod yazma.|  
+|[11. Adım: Programınızı Çalıştırma ve Diğer Özellikleri Deneme](../ide/step-11-run-your-program-and-try-other-features.md)|Programınızı çalıştırma ve arka plan rengini ayarlayın. Renkleri, yazı tipi ve kenarlıkları değiştirme gibi diğer özellikleri deneyin.|

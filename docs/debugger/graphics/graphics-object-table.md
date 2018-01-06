@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7449cef9dca41aee61a3f15162252298db04e71
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb03ab88ca3d1d50b559cef87bfdf045a0a81319
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-object-table"></a>Grafik Nesnesi Tablosu
 Visual Studio grafik analizi grafik nesnesi tablosu çerçeve oyun veya uygulama desteği Direct3D nesneleri anlamanıza yardımcı olur.  
@@ -52,7 +53,7 @@ Visual Studio grafik analizi grafik nesnesi tablosu çerçeve oyun veya uygulama
 |**Derinliği**|Bir 3B doku nesnesi derinliği. Bir doku 3-b değilse, değeri 0'dır. Diğer nesne türleri için geçerli değildir.|  
 |**MIPS**|Bir doku nesnesi MIP düzey sayısı. Diğer nesne türleri için geçerli değildir.|  
 |**ArraySize**|Dokular doku dizisindeki sayısı. Geçerli özellik düzeyi tarafından tanımlanan bir üst sınırı için 1'den aralığıdır. Bir küp eşleme için bu değer 6 kereye dizideki küp haritalarının sayıdır.|  
-|**Örnekleri**|Multisamples / piksel sayısı.|  
+|**Örnekler**|Multisamples / piksel sayısı.|  
   
 ## <a name="graphics-object-viewers"></a>Grafik nesne görüntüleyiciler  
  Bir nesne hakkındaki ayrıntıları görüntülemek için nesne tablosundaki adını seçerek açın. Nesne ayrıntılarını nesne türüne bağlı olarak farklı biçimlerde görüntülenir. Örneğin, doku doku Görüntüleyicisi'ni kullanarak görüntülenir ve Aygıt durumu D3D11 cihaz bağlamı gibi biçimlendirilmiş bir liste olarak görüntülenir. Direct3D farklı sürümlerini olun farklı nesnelerin kullanın ve çoğunlukla her sürümün en önemli nesneler için belirli görselleştiriciler vardır.  
@@ -83,11 +84,11 @@ Visual Studio grafik analizi grafik nesnesi tablosu çerçeve oyun veya uygulama
   
 |Tür|Açıklama|  
 |----------|-----------------|  
-|**kayan nokta**|Bir 32 bit kayan nokta değeri.|  
+|**float**|Bir 32 bit kayan nokta değeri.|  
 |**float2**|İki 32-bit kayan nokta değerlerini içeren bir vektör.|  
 |**float3**|Üç 32 bit kayan nokta değerlerini içeren bir vektör.|  
 |**float4**|Dört 32 bit kayan nokta değerlerini içeren bir vektör.|  
-|**bayt**|Bir 8 bit işaretli tamsayıyı değeri.|  
+|**byte**|Bir 8 bit işaretli tamsayıyı değeri.|  
 |**2 bayt**|Bir 16 bit işaretli tamsayıyı değer.|  
 |**4 bayt**|Bir 32 bit işaretli tamsayıyı değer. Aynı **int**.|  
 |**8 bayt**|Bir 64 bit işaretli tamsayıyı değer. Aynı **Int64**.|  
@@ -103,7 +104,7 @@ Visual Studio grafik analizi grafik nesnesi tablosu çerçeve oyun veya uygulama
 |**half2**|İki 16 bit kayan nokta değerlerini içeren bir vektör.|  
 |**half3**|Üç 16 bit kayan nokta değerlerini içeren bir vektör.|  
 |**half4**|Dört 16 bit kayan nokta değerlerini içeren bir vektör.|  
-|**çift**|Bir 64-bit kayan nokta değeri.|  
+|**double**|Bir 64-bit kayan nokta değeri.|  
 |**int**|Bir 32 bit işaretli tamsayıyı değer. Aynı **4 bayt**.|  
 |**int64**|Bir 64 bit işaretli tamsayıyı değer. Aynı **8 bayt**.|  
 |**xint**|32 bit onaltılık değeri. Aynı **x4byte**.|  
@@ -114,4 +115,4 @@ Visual Studio grafik analizi grafik nesnesi tablosu çerçeve oyun veya uygulama
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Grafik tanılama (hata ayıklama DirectX grafik)](visual-studio-graphics-diagnostics.md)   
- [İzlenecek yol: Cihaz durumu nedeniyle nesnelerin eksikliği](walkthrough-missing-objects-due-to-device-state.md)
+ [İzlenecek Yol: Cihaz Durumu Nedeniyle Nesnelerin Eksikliği](walkthrough-missing-objects-due-to-device-state.md)

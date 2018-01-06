@@ -97,11 +97,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dacc2d2b34cd0e3bb755fc0ed6972457a307d006
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b5353009e2fbfc26898f4163aaad98dd8651c5b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Tümleşik Yazılım Geliştirme Ortamı Hatalarında Sorun Giderme Kaynakları
 Tüm hata iletilerini belirli bir ilişkili Yardım konusu vardır. Hata iletisindeki bilgiler sorunu gidermenize yardımcı olmazsa, Bilgi Bankası makaleleri, geliştirici topluluğu veya ürün desteği gibi başka kaynaklar başvurabilirsiniz.  

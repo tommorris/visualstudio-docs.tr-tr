@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2ca6d0d7f875e376af37fcdcfa5d4156b8f4038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d2dc97cbe5c6bc178e4b14c89287a3f1c3794dca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processes-view"></a>İşlemler Görünümü
 İşlemler görünümü, tüm etkin işlemlerin bir ağaç sisteminizde görüntüler. İşlem kimliği ve modül adı gösterilir. Genellikle bir yürütme programına karşılık gelen bir belirli bir sistemi işlem incelemek isterseniz işlemleri görünümünü kullanın. İşlemler modülü adlarına göre tanımlanır ya da "sistem işlemleri" atanan  
@@ -46,10 +47,10 @@ Spy ++ işlemler görünümü
  Bir ileti hakkında daha fazla bilgi göstermek açıklanmaktadır.  
   
 ### <a name="related-sections"></a>İlgili Bölümler  
- [Spy ++ görünümleri](../debugger/spy-increment-views.md)  
+ [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
  Windows, iletileri, işlemleri ve iş parçacıklarının Spy ++ ağaç görünümler açıklanmaktadır.  
   
- [Spy ++ kullanma](../debugger/using-spy-increment.md)  
+ [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
  [İşlem arama iletişim kutusu](../debugger/process-search-dialog-box.md)  
@@ -58,5 +59,5 @@ Spy ++ işlemler görünümü
  [İşlem özellikleri iletişim kutusu](../debugger/process-properties-dialog-box.md)  
  İşlemler görünümünde seçilen bir işlem özelliklerini görüntüler.  
   
- [Spy ++ başvurusu](../debugger/spy-increment-reference.md)  
+ [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
  Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümleri içerir.

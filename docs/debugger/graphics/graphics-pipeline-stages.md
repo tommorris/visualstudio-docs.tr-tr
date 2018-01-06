@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aabfa9551b591b87631100326e328db0511a3ca4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 393661fba27341ec858aa5c099ea9d131e42273a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-pipeline-stages"></a>Grafik Ardışık Düzen Aşamaları
 Grafik ardışık düzen Aşamaları penceresi, tek tek çizim çağrısı her Direct3D grafik potansiyel satış aşamasına göre nasıl dönüştürülür anlamanıza yardımcı olur.  
@@ -127,4 +128,4 @@ Grafik ardışık düzen Aşamaları penceresi, tek tek çizim çağrısı her D
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Köşe gölgeleme nedeniyle nesnelerin eksikliği](walkthrough-missing-objects-due-to-vertex-shading.md)   
- [İzlenecek yol: Gölgeleme nedeniyle hataları işleme hata ayıklama](walkthrough-debugging-rendering-errors-due-to-shading.md)
+ [İzlenecek Yol: Gölgeleme Nedeniyle Çıkan Oluşturma Hatalarını Ayıklama](walkthrough-debugging-rendering-errors-due-to-shading.md)

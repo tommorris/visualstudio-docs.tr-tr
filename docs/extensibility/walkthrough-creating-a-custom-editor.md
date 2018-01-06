@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74408fd88a594503c2a585cd0edfa86f28ed596e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9e8ea75cb96b36f885a55cbf9f174394379dc05a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>İzlenecek yol: bir özel düzenleyici oluşturma
 VSPackage proje şablonu basit bir özel düzenleyici C++'da oluşturabilirsiniz.  VSPackage proje şablonu artık C# veya Visual Basic projeleri destekler. Daha fazla bilgi için bkz: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
@@ -49,4 +50,4 @@ VSPackage proje şablonu basit bir özel düzenleyici C++'da oluşturabilirsiniz
      Düzenleyici kesme ve yapıştırma, bulma ve değiştirme ve açık ve yükleme işlemlerini destekler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [VSPackages](../extensibility/internals/vspackages.md)
+ [VSPackage’lar](../extensibility/internals/vspackages.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "32"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7e56d596c37960ddfa548921da897f08fbfbbf5b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1923c39669d50303f907974816fbb54297c477c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce Güvenliği ve Dağıtımı
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]yüklü ve minimum kullanıcı etkileşimi ile çalıştırın kendi kendini güncelleştirme ve Windows tabanlı uygulamalar oluşturmanıza olanak tanıyan bir dağıtım teknolojisidir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Yayımlama ve projelerinizi Visual Basic ve Visual C# ile geliştirdiyseniz ClickOnce teknolojisiyle dağıtılan uygulamaları güncelleştirmek için tam destek sağlar. Visual C++ uygulamalarını dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ uygulamaları için ClickOnce dağıtımı](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
@@ -96,13 +97,13 @@ ms.lasthandoff: 10/27/2017
   
 |Aracı|Açıklama|  
 |----------|-----------------|  
-|[Güvenlik sayfası, Proje Tasarımcısı](../ide/reference/security-page-project-designer.md)|Uygulama ve dağıtım bildirimlerini açar.|  
-|[Yayımla Sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md)|Oluşturur ve Visual Basic ve Visual C# uygulamaları için uygulama ve dağıtım bildirimlerini düzenler.|  
-|[Mage.exe (bildirim üretme ve düzenleme aracı)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Visual Basic, Visual C# ve Visual C++ uygulamaları için uygulama ve dağıtım bildirimlerini oluşturur.<br /><br /> İmzalar ve uygulama ve dağıtım bildirimlerini yeniden imzalar.<br /><br /> Toplu iş komut dosyaları ve komut isteminden çalıştırabilirsiniz.|  
-|[MageUI.exe (bildirim üretme ve düzenleme aracı, grafik istemci)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|Oluşturur ve uygulama ve dağıtım bildirimlerini düzenler.<br /><br /> İmzalar ve uygulama ve dağıtım bildirimlerini yeniden imzalar.|  
-|[GenerateApplicationManifest görevi](../msbuild/generateapplicationmanifest-task.md)|Uygulama bildirimi oluşturur.<br /><br /> MSBuild çalıştırabilirsiniz. Daha fazla bilgi için bkz: [MSBuild başvurusu](../msbuild/msbuild-reference.md).|  
-|[GenerateDeploymentManifest görevi](../msbuild/generatedeploymentmanifest-task.md)|Dağıtım bildirimi oluşturur.<br /><br /> MSBuild çalıştırabilirsiniz. Daha fazla bilgi için bkz: [MSBuild başvurusu](../msbuild/msbuild-reference.md).|  
-|[SignFile görevi](../msbuild/signfile-task.md)|Uygulama ve dağıtım bildirimlerini açar.<br /><br /> MSBuild çalıştırabilirsiniz. Daha fazla bilgi için bkz: [MSBuild başvurusu](../msbuild/msbuild-reference.md).|  
+|[Güvenlik Sayfası, Proje Tasarımcısı](../ide/reference/security-page-project-designer.md)|Uygulama ve dağıtım bildirimlerini açar.|  
+|[Yayın Sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md)|Oluşturur ve Visual Basic ve Visual C# uygulamaları için uygulama ve dağıtım bildirimlerini düzenler.|  
+|[Mage.exe (Bildirim Oluşturma ve Düzenleme Aracı)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Visual Basic, Visual C# ve Visual C++ uygulamaları için uygulama ve dağıtım bildirimlerini oluşturur.<br /><br /> İmzalar ve uygulama ve dağıtım bildirimlerini yeniden imzalar.<br /><br /> Toplu iş komut dosyaları ve komut isteminden çalıştırabilirsiniz.|  
+|[MageUI.exe (Bildirim Oluşturma ve Düzenleme Aracı, Grafik İstemci)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|Oluşturur ve uygulama ve dağıtım bildirimlerini düzenler.<br /><br /> İmzalar ve uygulama ve dağıtım bildirimlerini yeniden imzalar.|  
+|[GenerateApplicationManifest Görevi](../msbuild/generateapplicationmanifest-task.md)|Uygulama bildirimi oluşturur.<br /><br /> MSBuild çalıştırabilirsiniz. Daha fazla bilgi için bkz: [MSBuild başvurusu](../msbuild/msbuild-reference.md).|  
+|[GenerateDeploymentManifest Görevi](../msbuild/generatedeploymentmanifest-task.md)|Dağıtım bildirimi oluşturur.<br /><br /> MSBuild çalıştırabilirsiniz. Daha fazla bilgi için bkz: [MSBuild başvurusu](../msbuild/msbuild-reference.md).|  
+|[SignFile Görevi](../msbuild/signfile-task.md)|Uygulama ve dağıtım bildirimlerini açar.<br /><br /> MSBuild çalıştırabilirsiniz. Daha fazla bilgi için bkz: [MSBuild başvurusu](../msbuild/msbuild-reference.md).|  
 |<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>|Uygulama ve dağıtım bildirimlerini oluşturmak için kendi uygulamanızı geliştirin.|  
   
  Aşağıdaki tabloda bu tarayıcılarda ClickOnce uygulamalarını desteklemek için gerekli .NET Framework sürümünü gösterir.  
@@ -118,4 +119,4 @@ ms.lasthandoff: 10/27/2017
  [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md)   
  [ClickOnce ile COM bileşenleri dağıtma](../deployment/deploying-com-components-with-clickonce.md)   
  [Komut satırından ClickOnce uygulamalarını yapılandırma](../deployment/building-clickonce-applications-from-the-command-line.md)   
- [System.Deployment.Application kullanan ClickOnce uygulamalarında hata ayıklama](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
+ [System.Deployment.Application Kullanan ClickOnce Uygulamalarında Hata Ayıklama](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)

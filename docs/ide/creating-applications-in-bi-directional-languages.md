@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f79bc2ca79cdec10fa480d87f48abc240420c34e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db7afbc68ab4e02803959dd0ff0b4de92233fece
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Çift Yönlü Dillerde Uygulamalar Oluşturma
 Visual Studio sağ Arapça ve İbranice gibi sola, yazılan dillerde düzgün görünen metin uygulamaları oluşturmak için kullanabilirsiniz. Bazı özellikler için kolayca özellikleri ayarlayabilirsiniz. Diğer durumlarda, kodda özellikleri uygulamalıdır.  
@@ -90,4 +91,4 @@ Visual Studio sağ Arapça ve İbranice gibi sola, yazılan dillerde düzgün g�
  [Çift yönlü destek Windows Forms uygulamaları](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
  [ASP.NET Web uygulamaları için çift yönlü destek](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [Uygulamaları Genelleştirme](../ide/globalizing-applications.md)   
- [Uygulamaları yerelleştirme](../ide/localizing-applications.md)
+ [Uygulamaları Yerelleştirme](../ide/localizing-applications.md)

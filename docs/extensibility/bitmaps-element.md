@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4db0446a0adeaeee3d3a3fc1c5ae6ee02594f34
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 42e8780312296bd038a0bfe5ed2911dab9940ea7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitmaps-element"></a>Bit eşlemler öğesi
 Grupları [bit eşlem öğesi](../extensibility/bitmap-element.md) öğeleri.  
@@ -46,14 +47,14 @@ Grupları [bit eşlem öğesi](../extensibility/bitmap-element.md) öğeleri.
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Bit eşlemler öğesi](../extensibility/bitmaps-element.md)|Bit eşlem öğeleri gruplandırır.|  
-|[Bit eşlem öğesi](../extensibility/bitmap-element.md)|Bir bit eşlem tanımlar.|  
+|[Bitmaps Öğesi](../extensibility/bitmaps-element.md)|Bit eşlem öğeleri gruplandırır.|  
+|[Bitmap Öğesi](../extensibility/bitmap-element.md)|Bir bit eşlem tanımlar.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Komutları öğesi](../extensibility/commands-element.md)|VSPackage araç çubuğundaki komutları koleksiyonunu temsil eder.|  
+|[Commands Öğesi](../extensibility/commands-element.md)|VSPackage araç çubuğundaki komutları koleksiyonunu temsil eder.|  
   
 ## <a name="example"></a>Örnek  
   
@@ -67,4 +68,4 @@ Grupları [bit eşlem öğesi](../extensibility/bitmap-element.md) öğeleri.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Komutları, menüleri ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Komutlar, Menüler ve Araç Çubukları](../extensibility/internals/commands-menus-and-toolbars.md)

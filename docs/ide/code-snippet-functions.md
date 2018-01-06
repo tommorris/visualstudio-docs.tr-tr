@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 58c1b8332e472484a0c932018bf6725cca9c7725
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippet-functions"></a>Kod Parçacığı İşlevleri
 İle kullanmak kullanılabilen üç işlevleri vardır [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] kod parçacıkları. İşlevler içinde belirtilen [işlevi](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) kod parçacığında öğesidir. Kod parçacıkları oluşturma hakkında daha fazla bilgi için bkz: [kod parçacıkları](../ide/code-snippets.md).  
@@ -155,4 +156,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlev öğesi (IntelliSense kod parçacıkları)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
- [Kod parçacıkları şema başvurusu](../ide/code-snippets-schema-reference.md)
+ [Kod Parçacıkları Şema Başvurusu](../ide/code-snippets-schema-reference.md)

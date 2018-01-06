@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc45c47f47fe18bc857715acc3948561f06e718c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b77cc0ea260ae86460de3c7a7752277a99291778
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-glossary"></a>Kaynak Denetim eklentisi sözlüğü
 Aşağıdaki yararlı terimleri ve tanımları için kaynak denetimi eklentisi SDK Belgeleri ilgilidir.  
@@ -55,7 +56,7 @@ Aşağıdaki yararlı terimleri ve tanımları için kaynak denetimi eklentisi S
  Birleştir  
  İşlem sırasında iki veya daha fazla kaynak kodu dosyaları önceki dosyalarından tüm özellikleri içeren yeni bir dosya oluşturmak için birleştirilir. Bu kavram burada iki veya daha fazla geliştiriciler dosyalar üzerinde aynı anda çalışması sürüm denetimindeki önemlidir.  
   
- Project  
+ Proje  
  Kaynak denetimi klasörü, genellikle bir proje olarak da adlandırılır. Visual Studio'da bu projeleri veya çözümleri ile herhangi bir ilişki yok.  
   
  eklentisi  
@@ -68,4 +69,4 @@ Aşağıdaki yararlı terimleri ve tanımları için kaynak denetimi eklentisi S
  Kaydedilmiş bir değişiklik geçmişini bir dosyanın veya dosya kümesi. Bir düzeltme biridir sürekli olarak değişen bir projede anlık görüntüsünü alın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Denetim Eklentileri](../extensibility/source-control-plug-ins.md)
+ [Kaynak Denetimi Eklentileri](../extensibility/source-control-plug-ins.md)

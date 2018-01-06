@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fe5e36b6d6f8cd7672c2300c385a1045bb677f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ceadf13f6567b303337b14b6b76be86ddcbac8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supplying-xml-code-comments"></a>XML Kodu Açıklamalarını Sağlama
 Yorumlar kaynak kodu dosyaları IntelliSense olarak kullanılabilir yapabilirsiniz. / Doc anahtar Visual Basic, C# veya C++ derleyici komut satırı eklediğinizde, IntelliSense belgeleri için temel görevi gören bir .xml dosyası oluşturulur.  
@@ -33,4 +34,4 @@ Yorumlar kaynak kodu dosyaları IntelliSense olarak kullanılabilir yapabilirsin
  C++'ta kod belgeleme hakkında daha fazla bilgi için bkz: [açıklamaları](/cpp/cpp/comments-cpp) ve [XML belgeleri](/cpp/ide/xml-documentation-visual-cpp).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IntelliSense kullanma](../ide/using-intellisense.md)
+ [IntelliSense Kullanma](../ide/using-intellisense.md)

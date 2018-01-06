@@ -31,11 +31,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46f484bc9dc597bc43ea4e7e2474d5b7efcb1f3c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f12823ecb3fdc8d90d9f7c3651c6e04e6b0f6635
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="excel-solutions"></a>Excel Çözümleri
   Visual Studio Proje şablonları Microsoft Office Excel için belge düzeyi özelleştirmeleri ve VSTO eklentileri oluşturmak için kullanabileceğiniz sağlar. Excel otomatikleştirmek, Excel özelliklerini genişletmek ve Excel kullanıcı arabirimini (UI) özelleştirmek için bu çözümleri kullanabilirsiniz. Belge düzeyi özelleştirmeleri ve VSTO eklentileri arasındaki farklar hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -94,36 +95,36 @@ ms.lasthandoff: 10/31/2017
   
 |Görev|Daha fazla bilgi için|  
 |----------|--------------------------|  
-|Şerit özelleştirin.|[Şerite Genel Bakış](../vsto/ribbon-overview.md)|  
-|Windows Forms veya genişletilmiş Excel denetimleri belge düzeyi özelleştirmeleri için özelleştirilmiş çalışma kitabında veya herhangi bir açık çalışma kitabında VSTO eklenti için bir çalışma sayfasına ekleyin.|[Nasıl yapılır: Windows Forms denetimleri Office belgelerine ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Nasıl yapılır: çalışma sayfalarına Grafik denetimleri ekleme](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|  
+|Şerit özelleştirin.|[Şeride Genel Bakış](../vsto/ribbon-overview.md)|  
+|Windows Forms veya genişletilmiş Excel denetimleri belge düzeyi özelleştirmeleri için özelleştirilmiş çalışma kitabında veya herhangi bir açık çalışma kitabında VSTO eklenti için bir çalışma sayfasına ekleyin.|[Nasıl Yapılır: Office Belgelerine Windows Forms Denetimleri Ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Nasıl Yapılır: Çalışma Sayfalarına Grafik Denetimleri Ekleme](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [Nasıl yapılır: Çalışma Sayfalarına ListObject Denetimleri Ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [Nasıl yapılır: Çalışma Sayfalarına NamedRange Denetimleri Ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|  
   
 ### <a name="options-for-document-level-customizations"></a>Belge düzeyi özelleştirmeleri için seçenekleri  
  Yalnızca belge düzeyi özelleştirmeleri için özelleştirme seçenekleri aşağıdaki tabloda listelenmektedir.  
   
 |Görev|Daha fazla bilgi için|  
 |----------|--------------------------|  
-|Eylemler bölmesi çalışma kitabına ekleyin.|[Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)<br /><br /> [Nasıl yapılır: Word belgelerini ve Excel çalışma kitaplarına Eylemler bölmesi ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
-|Bir çalışma sayfasına XML düğümlerine eşlenmiş genişletilmiş aralık denetimleri ekleyin.|[Nasıl yapılır: çalışma sayfalarına XMLMappedRange denetimleri ekleme](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|  
+|Eylemler bölmesi çalışma kitabına ekleyin.|[Eylemler Bölmesine Genel Bakış](../vsto/actions-pane-overview.md)<br /><br /> [Nasıl Yapılır: Word Belgelerine veya Excel Çalışma Kitaplarına Eylemler Bölmesi Ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
+|Bir çalışma sayfasına XML düğümlerine eşlenmiş genişletilmiş aralık denetimleri ekleyin.|[Nasıl yapılır: Çalışma Sayfalarına XMLMappedRange Denetimleri Ekleme](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|  
   
 ### <a name="options-for-vsto-add-ins"></a>VSTO eklentileri için seçenekleri  
  Aşağıdaki tabloda, yalnızca VSTO eklentileri için kullanılabilir seçenekleri listeler.  
   
 |Görev|Daha fazla bilgi için|  
 |----------|--------------------------|  
-|Özel görev bölmesini oluşturun.|[Özel görev bölmeleri](../vsto/custom-task-panes.md)|  
+|Özel görev bölmesini oluşturun.|[Özel Görev Bölmeleri](../vsto/custom-task-panes.md)|  
   
 ### <a name="related-topics"></a>İlgili Konular  
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md)|Excel nesne modeli tarafından sağlanan ana türlerine genel bakış sağlar.|  
-|[Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirme](../vsto/automating-excel-by-using-extended-objects.md)|Genişletilmiş nesneler hakkında bilgi sağlar (tarafından sağlanan [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]), Excel çözümleri kullanabilirsiniz.|  
-|[Genelleştirme ve yerelleştirme Excel çözümleri](../vsto/globalization-and-localization-of-excel-solutions.md)|Windows için İngilizce olmayan ayarlara sahip bilgisayarlarda çalışan Excel çözümleri için özel konular hakkında bilgi içerir.|  
-|[Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)|Windows Forms denetimleri Excel çalışma sayfalarına nasıl ekleyebileceğiniz açıklanmaktadır.|  
-|[İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Excel için temel bir belge düzeyi özelleştirme oluşturulacağını gösterir.|  
-|[İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)|Excel için temel bir VSTO eklenti oluşturulacağı gösterilmektedir.|  
-|[İzlenecek yol: Çalışma zamanında VSTO eklenti projesindeki denetimler ekleme](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)|Bir Windows Forms düğme eklemek nasıl gösteren bir <xref:Microsoft.Office.Tools.Excel.NamedRange>ve <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma zamanında VSTO eklenti kullanarak.|
-|[Anlama birlikte yazma ve eklentiler](./understanding-coauthoring-and-addins.md)|Çözümlerinizi birlikte yazma uyum sağlamak için yapmanız gerekebilir ayarlamalar açıklar.|  
+|[Excel Nesne Modeline Genel Bakış](../vsto/excel-object-model-overview.md)|Excel nesne modeli tarafından sağlanan ana türlerine genel bakış sağlar.|  
+|[Genişletilmiş Nesneleri Kullanarak Excel'i Otomatikleştirme](../vsto/automating-excel-by-using-extended-objects.md)|Genişletilmiş nesneler hakkında bilgi sağlar (tarafından sağlanan [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]), Excel çözümleri kullanabilirsiniz.|  
+|[Excel Çözümlerini Genelleştirme ve Yerelleştirme](../vsto/globalization-and-localization-of-excel-solutions.md)|Windows için İngilizce olmayan ayarlara sahip bilgisayarlarda çalışan Excel çözümleri için özel konular hakkında bilgi içerir.|  
+|[Office Belgelerindeki Windows Forms Denetimlerine Genel Bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)|Windows Forms denetimleri Excel çalışma sayfalarına nasıl ekleyebileceğiniz açıklanmaktadır.|  
+|[İzlenecek Yol: Excel İçin İlk Belge Düzeyi Özelleştirmeyi Oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Excel için temel bir belge düzeyi özelleştirme oluşturulacağını gösterir.|  
+|[İnceleme: Excel için İlk VSTO Eklentinizi Oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)|Excel için temel bir VSTO eklenti oluşturulacağı gösterilmektedir.|  
+|[İzlenecek Yol: Çalışma Zamanında VSTO Eklenti Projesindeki Çalışma Sayfasına Denetimler Ekleme](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)|Bir Windows Forms düğme eklemek nasıl gösteren bir <xref:Microsoft.Office.Tools.Excel.NamedRange>ve <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma zamanında VSTO eklenti kullanarak.|
+|[Birlikte Yazmayı ve Eklentileri Anlama](./understanding-coauthoring-and-addins.md)|Çözümlerinizi birlikte yazma uyum sağlamak için yapmanız gerekebilir ayarlamalar açıklar.|  
 |[Excel 2010 Office geliştirme](http://go.microsoft.com/fwlink/?LinkId=199011)|Makaleler ve Excel çözümleri geliştirme hakkında başvuru belgeleri bağlantılar sağlar. Bu, Visual Studio kullanarak Office geliştirmeye özel değildir.|  
   
   

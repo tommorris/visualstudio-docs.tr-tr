@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 256a609dad857097731e4914a11623fe62ad7664
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 660d33dd2d5c46d8020172c1fcf74bfb64b43360
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>İzlenecek yol: bir eski dil hizmeti oluşturma
 Bir dil hizmetinde uygulamak için yönetilen paket framework (MPF) dil sınıfları kullanmaya [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] basittir. Dil hizmeti, dil hizmeti ve dilinizi için ayrıştırıcı barındırmak için bir VSPackage gerekir.  
@@ -44,14 +45,11 @@ Bir dil hizmetinde uygulamak için yönetilen paket framework (MPF) dil sınıfl
   
      İstediğiniz herhangi bir ad kullanabilirsiniz. Burada ayrıntılı Bu yordamlarda MyLanguagePackage adı olarak varsayılır.  
   
-3.  Seçin [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] dil ve yeni bir anahtar dosyası oluşturmak için seçeneği olarak. 
-              **İleri**'ye tıklayın.  
+3.  Seçin [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] dil ve yeni bir anahtar dosyası oluşturmak için seçeneği olarak. **İleri**'ye tıklayın.  
   
-4.  Uygun şirket ve paketi bilgilerini girin. 
-              **İleri**'ye tıklayın.  
+4.  Uygun şirket ve paketi bilgilerini girin. **İleri**'ye tıklayın.  
   
-5.  Seçin **menü komutu**. 
-              **İleri**'ye tıklayın.  
+5.  Seçin **menü komutu**. **İleri**'ye tıklayın.  
   
      Kod parçacıkları desteklemek istiyorsanız değil, yalnızca Son'u tıklatın ve sonraki adıma yoksay.  
   

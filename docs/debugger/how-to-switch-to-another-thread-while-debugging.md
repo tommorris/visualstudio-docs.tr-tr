@@ -18,17 +18,18 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14432de4519ed49292810af5f96399bbf87e43cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0710bad95484ada62faa042edabf5b76ac459558
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da hata ayıklarken başka bir iş parçacığı için geçiş
 Çok iş parçacıklı uygulamada hata ayıklarken, başka bir iş parçacığı çalıştığınız iş parçacığı geçmek için birkaç yöntemden birini kullanabilirsiniz.
 
 > [!NOTE]
-> Hangi iş parçacığı yürütme sırasını denetlemek istiyorsanız, yapmanız [dondurma ve iş parçacıkları çözme](/debugger/get-started-debugging-multithreaded-apps.md).
+> Hangi iş parçacığı yürütme sırasını denetlemek istiyorsanız, yapmanız [dondurma ve iş parçacıkları çözme](../debugger/get-started-debugging-multithreaded-apps.md).
 
 Kod Düzenleyicisi'ni ve farklı birden çok iş parçacıklı hata ayıklama windows iş parçacıklarında incelediğinizde, sarı ok geçerli iş parçacığının gösterir. Süslü kuyruklu yeşil bir ok geçerli olmayan bir iş parçacığı geçerli hata ayıklayıcı bağlamını sahip olduğunu gösterir.
   

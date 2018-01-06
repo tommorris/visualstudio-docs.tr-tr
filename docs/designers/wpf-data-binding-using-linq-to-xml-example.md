@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f009537fb3bd3920f5b3e81c65570c7119b59c4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cb05851313626884b817aac3368fa9fb1793b97d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>LINQ-XML örneği kullanarak WPF veri bağlama
 Bu bölüm, kullanıcı arabirimi bileşenlerini katıştırılmış bir XML veri kaynağına bağlar bir Windows Presentation Foundation (WPF) örnek sağlar. Bu örnek (ve içerdiği Visual Studio projesi) adı *LinqToXmlDataBinding*.  
@@ -25,8 +26,8 @@ Bu bölüm, kullanıcı arabirimi bileşenlerini katıştırılmış bir XML ver
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: derleme ve LinqToXmlDataBinding örnek çalıştırma](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|Doldurmak ve bu örnek için Visual Studio projesi oluşturmak adım adım yönergeler içerir.|  
-|[İzlenecek yol: LinqToXmlDataBinding örneği](../designers/walkthrough-linqtoxmldatabinding-example.md)|Proje ve LINQ-XML Bu kod içinde veri bağlama için nasıl kullanıldığı bir açıklaması için birincil kaynak dosyaları içerir.|  
+|[Nasıl Yapılır: LinqToXmlDataBinding Oluşturma ve Çalıştırma Örneği](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|Doldurmak ve bu örnek için Visual Studio projesi oluşturmak adım adım yönergeler içerir.|  
+|[İzlenecek Yol: LinqToXmlDataBinding Örneği](../designers/walkthrough-linqtoxmldatabinding-example.md)|Proje ve LINQ-XML Bu kod içinde veri bağlama için nasıl kullanıldığı bir açıklaması için birincil kaynak dosyaları içerir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [LINQ-XML ile WPF veri bağlama](../designers/wpf-data-binding-with-linq-to-xml.md)
+ [LINQ to XML ile WPF Verilerini Bağlama](../designers/wpf-data-binding-with-linq-to-xml.md)

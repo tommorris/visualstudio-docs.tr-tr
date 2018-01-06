@@ -16,11 +16,12 @@ caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 737ce6ae0368d7d1db9d72e6fb25355409663c09
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7aed43ac4248c9bfd1e43d5e6c732a4fef3af529
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Özellikler penceresini özelliklerine gösterme
 Bu kılavuz bir nesneye ortak özelliklerini gösterir **özellikleri** penceresi. Bu özellikler yaptığınız değişiklikler yansıtılır **özellikleri** penceresi.  
@@ -270,4 +271,4 @@ Bu kılavuz bir nesneye ortak özelliklerini gösterir **özellikleri** penceres
  Visual Studio aracı windows Visual Studio oturumları arasında kalıcı olmasını sağlar. Araç penceresi durumu kalıcı yapma hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özellikler ve özellik penceresi genişletme](../extensibility/extending-properties-and-the-property-window.md)
+ [Özellikleri ve Özellik Penceresini Genişletme](../extensibility/extending-properties-and-the-property-window.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d1f577f77179ed0fcfdb3b9dc94575509ee701b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 112a2c1273b0087eea98736a4e47ac5de8787149
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Nasıl yapılır: Program Aracılığıyla Geçerli Outlook Öğesini Belirleme
   Bu örnek Explorer.SelectionChange olay adı geçerli klasörde ve seçili öğe hakkında bazı bilgileri görüntülemek için kullanır. Kod, daha sonra seçilen öğeyi görüntüler.  
@@ -43,6 +44,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md)   
  [Nasıl yapılır: program aracılığıyla klasörü ada göre alma](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Nasıl yapılır: program aracılığıyla belirli bir kişi arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  
+ [Nasıl yapılır: Program Aracılığıyla Belirli bir Kişi Arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  
   
   

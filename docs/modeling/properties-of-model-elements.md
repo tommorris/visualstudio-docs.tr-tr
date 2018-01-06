@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7c42f7a0a2a87aadc63f65240b981bc3e94c5417
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ef494d68ba8ce8134483f910bc7e6d984e4717c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-model-elements"></a>Model Öğelerinin Özellikleri
 Bu bölümde DSL tanımı diyagramı veya DSL Gezgini'nde bir öğe seçtiğinizde, Özellikler penceresinde görürsünüz özellikleri listeler.  
@@ -23,8 +24,8 @@ Bu bölümde DSL tanımı diyagramı veya DSL Gezgini'nde bir öğe seçtiğiniz
  Bazı durumlarda, ek özellikler DSL Ayrıntıları penceresinde bulunabilir.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Özelleştirme ve bir etki alanına özgü dil genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md)  
+ [Etki Alanına Özgü Dili Özelleştirme ve Genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md)  
   
- [Geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md)  
+ [Üretilen Sınıfları Geçersiz Kılma ve Genişletme](../modeling/overriding-and-extending-the-generated-classes.md)  
   
- [Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)
+ [Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama](../modeling/how-to-define-a-domain-specific-language.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03c0cbd20258618297e943524d06ba7b3a496264
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ef1bce81e20772660a6074c15bd5dad494804373
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Eski kod düzenleyicisine uyarlama
 Visual Studio düzenleyicisinde var olan kodu bileşenlerini erişmek için birçok özelliğe sahiptir. Aşağıdaki yönergeler, bir MEF olmayan bileşeni, düzenleyici işlevselliği kullanmak için örneğin, bir VSPackage, uyum gösterilmektedir. Yönergeler ayrıca bağdaştırıcıları Düzenleyicisi Hizmetleri yönetilen ve yönetilmeyen kodu almak için nasıl kullanılacağını gösterir.  

@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 35d642256a199c8ee5bf5e67a6a0bfb414b9fccc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 02b5f2477a18f3432bc255b9bd17a2ac11fbc030
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publishing-clickonce-applications"></a>ClickOnce Uygulamalarını Yayımlama
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ilk kez uygulama yayımlama özellikleri Yayımlama Sihirbazı'nı kullanarak ayarlayabilirsiniz. Yalnızca birkaç özellikleri Sihirbazı'nda bulunur; diğer tüm özellikleri varsayılan değerlerine ayarlanır.  
@@ -53,11 +54,11 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: Visual Studio dosyaları nereye kopyalayacağını belirtme](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Visual Studio bildirimleri ve uygulama dosyalarını yere koyar ayarlanacağını açıklar.|  
-|[Nasıl yapılır: Burada son kullanıcıların yükleme yapacakları konumu belirtin](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Kullanıcılar uygulamayı indirmek ve yüklemek için nereye konumun nasıl ayarlanacağını açıklar.|  
-|[Nasıl yapılır: ClickOnce çevrimdışı belirtin veya çevrimiçi yükleme modunu](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|Uygulama çevrimiçi veya çevrimdışı kullanılabilir olacak ayarlanacağını açıklar.|  
-|[Nasıl yapılır: kümesi ClickOnce yayım sürümünü](../deployment/how-to-set-the-clickonce-publish-version.md)|ClickOnce ayarlamayı açıklar **yayımlama sürümü** yayımladığınız uygulama bir güncelleştirme olarak kabul edilip edilmeyeceğini belirler özelliği.|  
-|[Nasıl yapılır: otomatik olarak artırma ClickOnce yayım sürümünü](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|Otomatik olarak düzeltme sayısını artırmak açıklar **PublishVersion** her uygulama yayımlayın.|  
+|[Nasıl yapılır: Visual Studio'nun Dosyaları Nereye Kopyalayacağını Belirtme](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Visual Studio bildirimleri ve uygulama dosyalarını yere koyar ayarlanacağını açıklar.|  
+|[Nasıl yapılır: Son Kullanıcıların Yükleme Yapacakları Konumu Belirtme](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Kullanıcılar uygulamayı indirmek ve yüklemek için nereye konumun nasıl ayarlanacağını açıklar.|  
+|[Nasıl yapılır: ClickOnce Çevrimdışı veya Çevrimiçi Yükleme Modunu Belirtme](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|Uygulama çevrimiçi veya çevrimdışı kullanılabilir olacak ayarlanacağını açıklar.|  
+|[Nasıl yapılır: ClickOnce Yayım Sürümü'nü Ayarlama](../deployment/how-to-set-the-clickonce-publish-version.md)|ClickOnce ayarlamayı açıklar **yayımlama sürümü** yayımladığınız uygulama bir güncelleştirme olarak kabul edilip edilmeyeceğini belirler özelliği.|  
+|[Nasıl yapılır: ClickOnce Yayım Sürümünü Otomatik Olarak Artırma](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|Otomatik olarak düzeltme sayısını artırmak açıklar **PublishVersion** her uygulama yayımlayın.|  
   
  Daha fazla bilgi için bkz: [Yayımla Sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md)  
   
@@ -77,31 +78,31 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
   
 |||  
 |-|-|  
-|[Nasıl yapılır: değişiklik ClickOnce uygulaması için yayımlama dili](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Bir dil ve kültür yerelleştirilmiş sürümle eşleştirmek üzere belirtileceğini açıklar.|  
-|[Nasıl yapılır: ClickOnce uygulaması için Başlat menüsü adı belirtin](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|ClickOnce uygulaması için görünen adını değiştirmek açıklar.|  
-|[Nasıl yapılır: teknik destek için bir bağlantı belirtin](../deployment/how-to-specify-a-link-for-technical-support.md)|Nasıl ayarlanacağını açıklar **destek URL'si** bir Web sayfası veya kullanıcılar nereye uygulama hakkında bilgi almak için dosya paylaşımı tanımlayan özelliği.|  
-|[Nasıl yapılır: ClickOnce dağıtımı'nda bağımsız Önkoşullar için destek URL'sini belirtin](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|Bir uygulama bildirimi her önkoşul için tek tek destek URL'leri el ile değiştirmek nasıl gösterilmektedir.|  
-|[Nasıl yapılır: ClickOnce uygulaması için bir yayımlama sayfası belirtme](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|Oluştur ve varsayılan bir Web sayfası (publish.htm) yanı sıra uygulama yayımlama açıklanmaktadır|  
+|[Nasıl yapılır: ClickOnce Uygulaması için Yayımlama Dilini Değiştirme](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Bir dil ve kültür yerelleştirilmiş sürümle eşleştirmek üzere belirtileceğini açıklar.|  
+|[Nasıl yapılır: ClickOnce Uygulaması için Başlat Menüsü Adı Belirtme](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|ClickOnce uygulaması için görünen adını değiştirmek açıklar.|  
+|[Nasıl yapılır: Teknik Destek için bir Bağlantı Belirtme](../deployment/how-to-specify-a-link-for-technical-support.md)|Nasıl ayarlanacağını açıklar **destek URL'si** bir Web sayfası veya kullanıcılar nereye uygulama hakkında bilgi almak için dosya paylaşımı tanımlayan özelliği.|  
+|[Nasıl yapılır: Bir ClickOnce Dağıtımı'nda Bağımsız Önkoşullar için Destek URL'sini Belirtme](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|Bir uygulama bildirimi her önkoşul için tek tek destek URL'leri el ile değiştirmek nasıl gösterilmektedir.|  
+|[Nasıl yapılır: ClickOnce Uygulaması için bir Yayımlama Sayfası Belirtme](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|Oluştur ve varsayılan bir Web sayfası (publish.htm) yanı sıra uygulama yayımlama açıklanmaktadır|  
 |[Nasıl yapılır: ClickOnce Varsayılan Web sayfasını özelleştirme](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Otomatik olarak oluşturulan ve uygulamayı ile birlikte yayımlanan Web sayfasının nasıl özelleştirileceği açıklanır.|  
-|[Nasıl yapılır: CD yüklemeleri için AutoStart'ı etkinleştirme](../deployment/how-to-enable-autostart-for-cd-installations.md)|Ortam eklendiğinde ClickOnce uygulaması otomatik olarak başlatılması için Otomatik Başlat'ı etkinleştirmek açıklar.|  
+|[Nasıl yapılır: CD Yüklemeleri için AutoStart'ı Etkinleştirme](../deployment/how-to-enable-autostart-for-cd-installations.md)|Ortam eklendiğinde ClickOnce uygulaması otomatik olarak başlatılması için Otomatik Başlat'ı etkinleştirmek açıklar.|  
   
 ## <a name="related-topics"></a>İlgili Konular  
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: ClickOnce uygulaması için dosya ilişkilendirmeleri oluşturma](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|ClickOnce uygulaması için dosya adı uzantısı desteği eklemeyi açıklar.|  
-|[Nasıl yapılır: bir çevrimiçi ClickOnce uygulamasında sorgu dize bilgilerini alma](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|ClickOnce uygulamasını çalıştırmak için kullanılan URL'de geçirilen parametrelerin nasıl alınacağını gösterir.|  
-|[Nasıl yapılır: tasarımcıyı kullanarak ClickOnce uygulamalarında URL etkinleştirmeyi devre dışı](../deployment/how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md)|Uygulamayı başlatmak için zorlama açıklar **Başlat** tasarımcıyı kullanarak menüsü.|  
-|[Nasıl yapılır: ClickOnce uygulamalarında URL etkinleştirmeyi devre dışı bırak](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)|Uygulamayı başlatmak için zorlama açıklar **Başlat** menüsü.|  
-|[İzlenecek yol: ClickOnce dağıtım Tasarımcısı'nı kullanarak API'si ile isteğe bağlı derlemeleri indirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Yalnızca ilk Tasarımcısı'nı kullanarak uygulama tarafından kullanıldığında, bunların uygulama derlemeleri karşıdan açıklanmaktadır.|  
-|[İzlenecek yol: ClickOnce dağıtım API'si ile isteğe bağlı derlemeleri indirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Yalnızca ilk uygulama tarafından kullanıldığında, bunların uygulama derlemeleri karşıdan açıklanmaktadır.|  
-|[İzlenecek yol: ClickOnce dağıtım API'si ile uydu derlemelerini indirme](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Uydu derlemelerini isteğe bağlı olarak işaretler ve bir istemci makine bilgisayarın geçerli kültür ayarları için ihtiyaç duyduğu derlemeyi yüklemek açıklar.|  
-|[İzlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework yardımcı programlarını ClickOnce uygulamanızı dağıtmak için nasıl kullanılacağını açıklar.|  
-|[İzlenecek yol:, Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)|.NET Framework yardımcı programlarını bildirimleri yeniden imzalamadan ClickOnce uygulamanızı dağıtmak için nasıl kullanılacağını açıklar.|  
-|[Nasıl yapılır: projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)|Bir 64-bit işlemci için değiştirerek nasıl yayımlayacağınızı açıklar **hedef CPU** veya **Platform hedefi** projenizdeki özelliği.|  
+|[Nasıl yapılır: ClickOnce Uygulaması için Dosya İlişkilendirmeleri Oluşturma](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|ClickOnce uygulaması için dosya adı uzantısı desteği eklemeyi açıklar.|  
+|[Nasıl yapılır: Çevrimiçi bir ClickOnce Uygulamasında Sorgu Dize Bilgilerini Alma](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|ClickOnce uygulamasını çalıştırmak için kullanılan URL'de geçirilen parametrelerin nasıl alınacağını gösterir.|  
+|[Nasıl yapılır: Tasarımcıyı Kullanarak ClickOnce Uygulamalarında URL Etkinleştirmeyi Devre Dışı Bırakma](../deployment/how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md)|Uygulamayı başlatmak için zorlama açıklar **Başlat** tasarımcıyı kullanarak menüsü.|  
+|[Nasıl yapılır: ClickOnce Uygulamalarında URL Etkinleştirmeyi Devre Dışı Bırakma](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)|Uygulamayı başlatmak için zorlama açıklar **Başlat** menüsü.|  
+|[İzlenecek yol: Tasarımcıyı Kullanarak ClickOnce Dağıtım API'si ile İsteğe Bağlı Derlemeleri İndirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Yalnızca ilk Tasarımcısı'nı kullanarak uygulama tarafından kullanıldığında, bunların uygulama derlemeleri karşıdan açıklanmaktadır.|  
+|[İzlenecek yol: ClickOnce Dağıtım API'si ile İsteğe Bağlı Derlemeleri İndirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Yalnızca ilk uygulama tarafından kullanıldığında, bunların uygulama derlemeleri karşıdan açıklanmaktadır.|  
+|[İzlenecek yol: ClickOnce Dağıtım API'si ile Uydu Derlemelerini İndirme](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Uydu derlemelerini isteğe bağlı olarak işaretler ve bir istemci makine bilgisayarın geçerli kültür ayarları için ihtiyaç duyduğu derlemeyi yüklemek açıklar.|  
+|[İzlenecek yol: ClickOnce Uygulamasını El ile Dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework yardımcı programlarını ClickOnce uygulamanızı dağıtmak için nasıl kullanılacağını açıklar.|  
+|[İzlenecek yol: Yeniden İmzalama Gerektirmeyen ve Marka Bilgisini Koruyan bir ClickOnce Uygulamasını El ile Dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)|.NET Framework yardımcı programlarını bildirimleri yeniden imzalamadan ClickOnce uygulamanızı dağıtmak için nasıl kullanılacağını açıklar.|  
+|[Nasıl Yapılır: Projeleri Hedef Platformlar İçin Yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)|Bir 64-bit işlemci için değiştirerek nasıl yayımlayacağınızı açıklar **hedef CPU** veya **Platform hedefi** projenizdeki özelliği.|  
 |[İzlenecek yol: Bir ClickOnce uygulamasını birden çok .NET Framework sürümleri üzerinde çalıştırmak için etkinleştirme](http://msdn.microsoft.com/en-us/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Yüklemek ve NET Framework birden fazla sürümünü çalıştırmak bir ClickOnce uygulamasını etkinleştirecek açıklanmaktadır.|  
-|[İzlenecek yol: ClickOnce uygulaması için özel bir yükleyici oluşturma](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Bir ClickOnce uygulamasını yüklemek için özel bir yükleyici oluşturma açıklanmaktadır.|  
-|[Nasıl yapılır: görsel stiller etkinken WPF uygulaması yayımlama](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Görsel stillerin etkin kıldığı bir WPF uygulamasını yayımlamak istediğinizde görüntülenen bir hatayı gidermek için adım adım yönergeler sağlar.|  
+|[İzlenecek Yol: ClickOnce Uygulaması için Özel bir Yükleyici Oluşturma](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Bir ClickOnce uygulamasını yüklemek için özel bir yükleyici oluşturma açıklanmaktadır.|  
+|[Nasıl yapılır: Görsel Stiller Etkinken WPF Uygulaması Yayımlama](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Görsel stillerin etkin kıldığı bir WPF uygulamasını yayımlamak istediğinizde görüntülenen bir hatayı gidermek için adım adım yönergeler sağlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   

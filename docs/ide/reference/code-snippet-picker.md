@@ -17,11 +17,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 58f419d52d2d89f998f64e236cfc1f0053c9cfd1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: e352baf834f026462cb35921f7f79e75b3aecd96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippet-picker"></a>Kod Parçacığı Seçici
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kod düzenleyicisinde sağlayan bir **kod parçacığı Seçici** sağlayan, etkin belgeye hazır kod bloklarını eklemek için birkaç kere fareyi tıklatarak içinde.  
@@ -57,4 +58,4 @@ Kod parçacıkları ekleme ya da kod parçacıkları içeren klasörlerin listes
 [Kod parçacıkları için en iyi uygulamalar](../../ide/best-practices-for-using-code-snippets.md)   
 [Visual Basic IntelliSense kodu parçacıkları](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)   
 [Kodda yer işaretleri ayarlama](../../ide/setting-bookmarks-in-code.md)   
-[Nasıl yapılır: Çevrele kod parçacıklarını kullanma](../../ide/how-to-use-surround-with-code-snippets.md)
+[Nasıl Yapılır: Şununla Çevrele Kod Parçacıklarını Kullanma](../../ide/how-to-use-surround-with-code-snippets.md)

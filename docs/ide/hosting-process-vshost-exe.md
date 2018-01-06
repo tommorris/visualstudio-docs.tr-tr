@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f33a5650230eced6f6713e943daba1ef0cacb74a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 716d19362495fccf475a068a28a9fe2acbe27b53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hosting-process-vshostexe"></a>Barındırma Süreci (vshost.exe)
 Barındırma işlemi, Visual Studio'da, hata ayıklama performansını artırır, kısmi güven hata ayıklamasını etkinleştirir ve tasarım zamanı ifade değerlendirmesi olanak sağlayan bir özelliktir. Barındırma işlemi dosyaları vshost dosya adı içerir ve projenizin çıkış klasörüne yerleştirilir. Daha fazla bilgi için bkz: [hata ayıklama ve barındırma işlemi](../debugger/debugging-and-the-hosting-process.md).  
@@ -40,4 +41,4 @@ Barındırma işlemi, Visual Studio'da, hata ayıklama performansını artırır
  [Hata ayıklama ve barındırma işlemi](../debugger/debugging-and-the-hosting-process.md)   
  [Nasıl yapılır: barındırma sürecini devre dışı bırakma](../ide/how-to-disable-the-hosting-process.md)   
  [Komut penceresi](../ide/reference/immediate-window.md)   
- [Uygulama etki alanları](/dotnet/framework/app-domains/application-domains)
+ [Uygulama Etki Alanları](/dotnet/framework/app-domains/application-domains)

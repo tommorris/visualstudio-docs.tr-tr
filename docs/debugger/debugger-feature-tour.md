@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7edb1428d3dedbbe6341427e28964559d9750b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="feature-tour-of-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı özelliği turu
 
@@ -192,6 +193,26 @@ Bu örnekte, `DirectoryInfo` çağrısı depolanan boş dize üzerinde hata verm
 > Özel durum Yardımcısı özel durum Yardımcısı'nda değiştirir [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Genişletme **Exception ayarlarını** düğümü bu özel durum türü, ancak işleme konusunda daha fazla seçenek görmek için bu tur değişikliği gerekmez!
+
+## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Azure uygulama hizmeti Canlı ASP.NET uygulamalarında hata ayıklama
+
+**anlık görüntü hata ayıklayıcı** ilgilendiğiniz kod yürüttüğünde üretim uygulamalarınızın bir anlık görüntüsünü alır. Bir anlık görüntüyü almaya hata ayıklayıcı istemek üzere kodunuzda snappoints ve logpoints ayarlayın. Hata ayıklayıcı tam olarak ne üretim uygulamanızın trafiğini etkilemeden sorun oluştu görmenizi sağlar. Anlık görüntü hata ayıklayıcı üretim ortamlarında ortaya çıkan sorunları çözmek için gereken süreyi önemli ölçüde azaltmaya yardımcı olabilir.
+
+![Anlık görüntü hata ayıklayıcıyı başlatma](../debugger/media/snapshot-launch.png "anlık görüntü hata ayıklayıcıyı başlatma")
+
+Anlık görüntü koleksiyonu, Azure App Service'te çalışan ASP.NET uygulamaları için kullanılabilir. .NET Framework 4.6.1 ASP.NET uygulamalarını çalıştırmak veya sonraki bir sürümü ve ASP.NET Core uygulamaları .NET Core 2.0 veya daha sonra Windows üzerinde çalışmalıdır.
+
+Daha fazla bilgi için bkz: [Debug anlık görüntü hata ayıklayıcı kullanarak canlı ASP.NET uygulamaları](../debugger/debug-live-azure-applications.md).
+
+## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>IntelliTrace adım geri (Visual Studio Enterprise) sahip görünüm anlık görüntüleri
+
+**IntelliTrace adım sonradan** otomatik olarak bir anlık görüntüsünü her kesme ve hata ayıklayıcı uygulamanızın adım olayını alır. Kaydedilmiş anlık görüntüler, önceki kesme noktaları veya adımları geri dönün ve geçmişte haliyle uygulamanın durumunu görüntülemek etkinleştirin. IntelliTrace adım arka önceki uygulama durumu görmek istediğiniz ancak hata ayıklamayı yeniden başlatın veya istenen uygulama durumu yeniden istemediğiniz durumlarda size zaman kazandırabilir.
+
+Gidin ve görüntülemek anlık görüntülerini kullanarak **adım geriye dönük** ve **İleri** hata ayıklama araç çubuğu düğmeleri. Bu düğmeleri görünür olayları gidin **olayları** sekmesinde **tanılama araçları** penceresi.
+
+![Geri ve İleri düğmelerini adım](../debugger/media/intellitrace-step-back-icons-description.png  "adım geri ve İleri düğmelerini")  
+
+Daha fazla bilgi için bkz: [görüntülemek IntelliTrace adım geri kullanarak anlık görüntüsünü](../debugger/how-to-use-intellitrace-step-back.md) sayfası.
 
 ## <a name="more-features-to-look-at"></a>Bakmak için daha fazla özelliği
 

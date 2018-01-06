@@ -13,11 +13,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a82f420203b88bb94531401d061493621f3eba93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e508bda0b22c798246b0f6abf4dfb03c41a92d6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Eski API kullanarak çekirdek Düzenleyici örneği
 Düzenleyici metin ekleme, silme, kopyalama ve yapıştırma gibi işlevleri düzenleme sorumludur. Bu işlevler metin renklendirme, girinti ve IntelliSense deyim tamamlama gibi dil Hizmetleri tarafından sağlanan ile birleştirir.  
@@ -62,7 +63,7 @@ Düzenleyici metin ekleme, silme, kopyalama ve yapıştırma gibi işlevleri dü
   
  Kısayol tuşları, önceki bölümde farklı varsayılan almak için tarafından döndürülen komutu bağlam kullanın <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> çekirdek Düzenleyicisi'nden edinirken yöntemi <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> yöntemi.  
   
- Varsa <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> yöntemi döndürür aynı komut GUID olarak metin düzenleyici, çekirdek Düzenleyici örneği varsayılan kısayol tuşları otomatik olarak alır..  
+ Varsa <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> yöntemi döndürür aynı komut GUID olarak metin düzenleyici, çekirdek Düzenleyici örneği varsayılan kısayol tuşları otomatik olarak alır.  
   
  Genel bilgi için bkz: [izlenecek yol: bir çekirdek düzenleyici oluşturma ve bir düzenleyici dosya türü kaydetme](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
   

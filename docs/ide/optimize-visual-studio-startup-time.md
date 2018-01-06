@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.performancecenter
 ms.technology: vs-ide-general
-ms.openlocfilehash: 78a2a4dc41b4c6b3154951f6f48b95b3894fc92e
-ms.sourcegitcommit: 15907b980eadeaa646f010cb197cfd188579d0f5
+ms.workload: multiple
+ms.openlocfilehash: 44e620ed0092f9761b3a6c72e306898fe6ea06af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optimize-visual-studio-performance"></a>Visual Studio performansı en iyi duruma getirme
 Visual Studio olabildiğince çabuk ve mümkün olduğunca verimli bir şekilde başlaması için tasarlanmıştır. Ancak, bazı Visual Studio uzantıları ve aracı windows yüklenen olduklarında başlangıç zamanını olumsuz etkileyebilir. Yavaş uzantıları davranışını denetlemek ve aracı windows **yönetmek Visual Studio performans** iletişim kutusu. Performansı artırma hakkında daha fazla genel ipuçları için bkz: [Visual Studio performans ipuçları ve püf noktaları](../ide/visual-studio-performance-tips-and-tricks.md).  
@@ -70,4 +71,4 @@ Her zaman uzantısı sonraki oturumlar için Uzantı Yöneticisi'ni ya da Visual
 > Visual Studio'nun 15,5. sürümden önceki sürümler adlı bir özelliği olan **basit çözüm yük**. Bu özellik artık ve sonrasında 15,5 Visual Studio 2017 sürümde kullanılabilir değildir. Visual Studio'da 15,5 ve sonraki sürümleri içeren büyük çözümlerde kod yükü çok daha hızlı daha önce basit çözüm yükü olmadan bile yönetilen.  
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Visual Studio performans ipuçları ve püf noktaları](../ide/visual-studio-performance-tips-and-tricks.md)
+[Visual Studio Performansıyla İlgili İpuçları ve Püf Noktaları](../ide/visual-studio-performance-tips-and-tricks.md)

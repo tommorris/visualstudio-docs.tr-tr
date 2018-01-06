@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3058e19d4ac6211c741efd973344a1af14238d10
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 459642fde4d695317a453e223edd54f223569603
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xaml-designer-options-page"></a>XAML Tasarımcısı Seçenekleri sayfası
 Kullanım **XAML Tasarımcısı** öğeleri ve özniteliklerinin XAML belgelerinizi nasıl biçimlendirileceğini belirtmek için seçenekler sayfası. Bu sayfayı açmak için seçin **Araçları** menü ve ardından **seçenekleri**. Erişim için **XAML Tasarımcısı** özellik sayfasında, **XAML Tasarımcısı** düğümü. Belgeyi açtığında XAML Tasarımcısı için ayarları uygulanır. Bu nedenle ayarlarında değişiklik yaparsanız, değişiklikleri görmek için Visual Studio'yu kapatıp gerekir.
@@ -46,7 +47,7 @@ XAML Tasarımcısı XAML belge düzenlerken görüntülendiği zaman ve nasıl d
 |-|-|  
 |**Dikey**|XAML kaynağı XAML görünümü sol tarafında görünür ve XAML Tasarımcısı diğer tarafında görünür.|  
 |**Yatay**|XAML Tasarımcısı XAML görünüm üst kısmında görünür ve XAML kaynağı altında görünür.|  
-|**Varsayılan**|XAML belge belgenin projenin hedeflediği platform için önerilen bölünmüş yönlendirmesi kullanır. Çoğu platformda bu eşdeğer olan **yatay**.|  
+|**Default**|XAML belge belgenin projenin hedeflediği platform için önerilen bölünmüş yönlendirmesi kullanır. Çoğu platformda bu eşdeğer olan **yatay**.|  
 
 ## <a name="zoom-by-using"></a>Kullanarak Yakınlaştır
 Yakınlaştırma XAML belge düzenlerken şeklini belirlemek için bu ayarı kullanın.

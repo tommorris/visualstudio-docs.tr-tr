@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e1be9c268826c64d775d56904dfdb1f3cd1bc14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ae2bfdc41e3ce9901f91887f805298f13aa4fe8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="measure-mode-onoff"></a>Ölçüm Modu Açık/Kapalı
 Bu aracı kullanarak bir zaman çizelgesi süre uzunluğu tam olarak ölçebilirsiniz. Ölçüm modu etkinleştirmek için (cetvel simge olan) ölçü düğmesini tıklatın ve ardından zaman çizelgesinde sürükleyin. Sürüklediğinizde, işaretçinin altındaki alanda sarı ile vurgulanmış ve araç çubuğu düğmesi sağındaki ölçülen zaman görünür dikkat edin. Bu değer, belirli bir olay ne kadar sürüyor hemen görmenize olanak tanıyan sürüklediğinizde dinamik olarak hesaplanır. Fare düğmesini bıraktığınızda saat değeri görünür kalır.  
@@ -28,4 +29,4 @@ Bu aracı kullanarak bir zaman çizelgesi süre uzunluğu tam olarak ölçebilir
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kanalları Yönet](../profiling/manage-channels.md)   
  [Yakınlaştırma Denetimi (iş parçacıkları görünümü)](../profiling/zoom-control-threads-view.md)   
- [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)
+ [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

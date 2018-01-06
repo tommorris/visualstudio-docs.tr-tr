@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 899211452a776931e3d0d9742e499ed8ba78a652
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3755dbb95dc220d070219fbac4a03885d5ed0158
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reference-programmatic-capture"></a>Başvuru (Programlı Yakalama)
 Grafik tanılama yakalama özelliklerini programlı yakalama API aracılığıyla programlı denetime destekler. Bu API, geçiş ve iletiler grafik tanılama HUD (Head yukarı görüntüle) eklemek, başlatmak ve grafik günlük dosyalarını oluşturmak ve grafik bilgilerini yakalama için kullanabilirsiniz.  
@@ -27,7 +28,7 @@ Grafik tanılama yakalama özelliklerini programlı yakalama API aracılığıyl
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[VsgDbg sınıfı](vsgdbg-class.md)|Üzerinden grafik tanılama uygulama bileşeninin program aracılığıyla denetlenir arabirimi temsil eder.|  
+|[VsgDbg Sınıfı](vsgdbg-class.md)|Üzerinden grafik tanılama uygulama bileşeninin program aracılığıyla denetlenir arabirimi temsil eder.|  
   
 ### <a name="preprocessor-symbols"></a>Önişlemci sembolleri  
   
@@ -41,5 +42,5 @@ Grafik tanılama yakalama özelliklerini programlı yakalama API aracılığıyl
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Grafik bilgilerini yakalama](capturing-graphics-information.md)|Böylece kullanabileceğiniz DirectX tabanlı uygulamanızdan grafik bilgilerini yakalama gösterilmektedir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] işleme sorunları tanılamak için grafik tanılama araçları.|  
+|[Grafik Bilgilerini Yakalama](capturing-graphics-information.md)|Böylece kullanabileceğiniz DirectX tabanlı uygulamanızdan grafik bilgilerini yakalama gösterilmektedir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] işleme sorunları tanılamak için grafik tanılama araçları.|  
 |[Genel bakış](overview-of-visual-studio-graphics-diagnostics.md)|Grafik tanılama DirectX oyunları ve uygulamaları işleme hataları hata ayıklama nasıl yardımcı olabileceğini gösterir.|

@@ -25,11 +25,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: c3c3b817975304a41181b5e346a32b0b95c4258e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: daa6b9b61083f61d631c6dd55265c338c08ff7f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>İzlenecek yol: ClickOnce Dağıtım API'si ile Uydu Derlemelerini İndirme
 Windows Forms uygulamaları uydu derlemelerini kullanarak birden çok kültür için yapılandırılabilir. A *uydu derleme* uygulamanın varsayılan kültürü dışında bir kültür için uygulama kaynaklarını içeren bir derlemedir.  
@@ -69,4 +70,4 @@ Windows Forms uygulamaları uydu derlemelerini kullanarak birden çok kültür i
  Bir üretim ortamında, büyük olasılıkla satır ayarlar aşağıdaki kod örneğinde kaldırmanız gerekecek <xref:System.Threading.Thread.CurrentUICulture%2A> belirli bir değere istemci makinelere doğru değerine ayarlanmış olduğundan varsayılan olarak. Örneğin, uygulamanız Japonca istemci makine üzerinde çalıştığında, <xref:System.Threading.Thread.CurrentUICulture%2A> olacaktır `ja-JP` varsayılan olarak. Bu değer programlı olarak ayarlama, uygulamanızı dağıtmadan önce uydu derlemeleri test etmek için iyi bir yoludur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ClickOnce uygulamalarını yerelleştirme](../deployment/localizing-clickonce-applications.md)
+ [ClickOnce Uygulamalarını Yerelleştirme](../deployment/localizing-clickonce-applications.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: fcb73674027c4ecca906312fa8808dfc5e43db39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eeb41b1897fe33cfabbef1e7ef2731ababb68737
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-loggers"></a>Günlükçüleri Derleme
 Günlükçüleri yapınızın çıktısını özelleştirmek ve belirli yapı olaylarına yanıt olarak iletileri, hatalar veya uyarılar görüntülemek bir yol sağlar. Her Günlükçü uygulayan bir .NET sınıfı olarak uygulanan <xref:Microsoft.Build.Framework.ILogger> Microsoft.Build.Framework.dll derlemede tanımlanan arabirimi.  
@@ -85,4 +86,4 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme günlüklerini alma](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [MSBuild kavramları](../msbuild/msbuild-concepts.md)
+ [MSBuild Kavramları](../msbuild/msbuild-concepts.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7201086ade629dc7c6d39039c088333be815cc26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ea63db35d5bb1eeca08f3e948ffcf5183259ef1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replace-command"></a>Değiştir Komutu
 Bir alt kümesi üzerinde kullanılabilir seçenekleri kullanarak dosyaları metinde değiştirir **dosyalarda Değiştir** sekmesinde **bulma ve değiştirme** penceresi.  
@@ -92,4 +93,4 @@ Edit.Replace findwhat replacewith [/all] [/case]
  [Komut penceresi](../../ide/reference/command-window.md)   
  [Bul/komut kutusu](../../ide/find-command-box.md)   
  [Visual Studio komutları](../../ide/reference/visual-studio-commands.md)   
- [Visual Studio komut diğer adları](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

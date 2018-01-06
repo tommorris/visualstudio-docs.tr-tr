@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f99631db1709a17aaf9809669bbeb2f69b10e2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f4139512bc63141c24b42d0ef3bd53119f4d1fb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Yalıtılmış kabuk uygulamaları için hizmet verme yönergeleri
 Visual Studio yalıtılmış Kabuk uygulama dağıttığınızda, yüklendikten sonra uygulamanız için yazılım güncelleştirmeleri sağlamak mümkün olması gerekir. Bunu yapmak için uygulamanızın Microsoft Installer (MSI) dosyası kullanarak yüklemeniz gerekir. Bu tür bir yükleme Web tarafından dağıtılabilir Microsoft tarafından sağlanan yazılım güncelleştirmeleri karşıdan yükle ve özel müdahalesi olmadan, müşteriler tarafından tüketilen sağlar.  

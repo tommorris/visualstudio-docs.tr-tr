@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 77732f1f5620e0d0a637938668ae232f7bb83edf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: af14fa5f9a76e08a1fba3355e9391ce8229bd652
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>İzlenecek yol: bir düzenleyici uzantı DTE nesnesine erişim
 VSPackages içinde çağırarak DTE nesne alabilirsiniz <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> yöntemi DTE nesne türüne sahip. Yönetilen Genişletilebilirlik Çerçevesi (MEF) uzantılarında aldığınız <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> ve ardından arama <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> yöntemi türüne sahip <xref:EnvDTE.DTE>.  
@@ -66,4 +67,4 @@ VSPackages içinde çağırarak DTE nesne alabilirsiniz <xref:Microsoft.VisualSt
 6.  Kullanmanız gerekiyorsa <xref:EnvDTE80.DTE2> arabirimi, DTE nesnesiyle çevirebilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md)
+ [Dil Hizmeti ve Düzenleyici Uzantı Noktaları](../extensibility/language-service-and-editor-extension-points.md)

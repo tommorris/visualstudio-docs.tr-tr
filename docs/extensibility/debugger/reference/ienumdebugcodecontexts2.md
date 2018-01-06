@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d0d54e9a3987ab8b2493d9e999955febd73ac4a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cd6ead902a65a9f3e5e392b1b9dbeed135f326b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 Bu arabirim, hata ayıklama oturumu ile veya belirli bir program veya belge ile ilişkili kod bağlamları numaralandırır.  
@@ -42,7 +43,7 @@ IEnumDebugCodeContexts2 : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Sonraki](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|Bir numaralandırma sırasını kod bağlamlarda belirtilen sayısını alır.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|Bir numaralandırma sırasını kod bağlamlarda belirtilen sayısını alır.|  
 |[Atla](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|Bir numaralandırma sırasını kod bağlamlarda belirtilen sayıda atlar.|  
 |[Sıfırla](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
 |[Kopya](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  

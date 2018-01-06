@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73ea933a7e9efc08347ea107b089101f1e5d5459
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4131e3d5139911c6a1bb9b44d8d8acaefa6cb632
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Kaynak Denetim bilgileri kaldırma. Proj ve. Sln dosyaları
 Sürüm kaynak denetim eklentisi API SCC 1.2 bilgiler MSSCCPRJ içinde depolanır. SCC dosyası. MSSCCPRJ yararlanabilir. SCC SCC bilgilerin olduğu değil kaynak - .proj ve .sln dosyalarında olduğu gibi denetlenen bir dosyadır.  
@@ -28,4 +29,4 @@ Sürüm kaynak denetim eklentisi API SCC 1.2 bilgiler MSSCCPRJ içinde depolanı
  Kaynak Denetim eklentisi API kullanılan sürüm 1.1, IDE içinde ~ bir eklenti MSSCCPRJ destekleyip desteklemediğini belirlemek için SAK dosyaları. Kaynak Denetim bilgilerini depolamak SCC yöntemi. Kaynak Denetim eklentisi API sürüm 1.2 MSSCCPRJ desteği saptamak için yeni bir özellik sağlar. SCC dosya kullanmadan bir ~ SAK dosya. Daha fazla bilgi için bkz: [ortadan kaldırılması ~ SAK dosyaları](../../extensibility/internals/elimination-of-tilde-sak-files.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Denetim eklentisi API sürümü 1.2 yenilikler nelerdir?](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Kaynak Denetimi Eklentisi API Sürümü 1.2’deki Yenilikler](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

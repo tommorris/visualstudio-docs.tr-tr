@@ -15,11 +15,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 06b6dc2fab4158f36126b6509909dd0db6fd7125
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ea9c2ebd295fe463192c50da402240e0b1df1304
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="checklist-creating-new-project-types"></a>Denetim listesi: Yeni proje türleri oluşturma
 Yeni bir proje türü oluşturmak için çeşitli görevleri tamamlamanız gerekir. Aşağıdaki denetim listesinde, bu görevleri için bir kılavuz sağlar.  
@@ -63,4 +64,4 @@ Yeni bir proje türü oluşturmak için çeşitli görevleri tamamlamanız gerek
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da hiyerarşileri](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [Proje türleri oluşturma zamanı](../../extensibility/internals/when-to-create-project-types.md)   
- [Proje türleri oluşturma](../../extensibility/internals/creating-project-types.md)
+ [Proje Türleri Oluşturma](../../extensibility/internals/creating-project-types.md)

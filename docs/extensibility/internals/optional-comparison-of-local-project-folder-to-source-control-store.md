@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cde0a7c34fe81c86d9f500bb1800006e5291ee92
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cbf4e9f2ccbe895db79115949818345c62245f71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Kaynak Denetim deposunu yerel proje klasörüne isteğe bağlı karşılaştırması
 Eklenti API yerel proje klasörünü ve kaynak denetimi karşılaştırması işlevlerini kullanarak gerçekleştirilir 1.2 kaynağında kontrol [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) ve [SccDirDiff](../../extensibility/sccdirdiff-function.md).  
@@ -42,4 +43,4 @@ Eklenti API yerel proje klasörünü ve kaynak denetimi karşılaştırması iş
 >  Bu işlev olarak aynı komutu bayrakları kullanır [SccDiff](../../extensibility/sccdiff-function.md). Kaynak denetimi eklenti sağlayıcısı, dizinler için "hızlı fark" işlemi desteklemeyen tercih edebilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Denetim eklentisi API sürümü 1.2 yenilikler nelerdir?](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Kaynak Denetimi Eklentisi API Sürümü 1.2’deki Yenilikler](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

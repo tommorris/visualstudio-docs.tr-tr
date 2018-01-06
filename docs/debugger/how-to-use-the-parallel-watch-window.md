@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 160aa732568f92b7aa768146de13c41867064717
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 570f77cddede91a81dc15200ebcf02b27f1a4f2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Visual Studio'da paralel iş parçacıklarında değişkenleri bir izleme ayarlama
 Paralel Gözcü penceresi içinde aynı anda tek bir ifade birden çok iş parçacığı üzerinde tutan değerleri görüntüleyebilirsiniz. Her satır bir uygulamada çalıştırılan bir iş parçacığını temsil eder, ancak bir iş parçacığı içinde birden çok satır temsil edilebilir. Daha açık belirtmek gerekirse, her satır, işlev imzası geçerli yığın çerçevesinde işlevi eşleşen bir işlev çağrısını temsil eder. Sıralama, yeniden sıralamak, kaldırmak ve sütunları öğeleri grubu. Bayrak, bayrakla dondurmak, (askıya) ve (devam) iş parçacıklarının çözme. Aşağıdaki sütunlar görüntülenir **paralel Gözcü** penceresi:  
@@ -88,4 +89,4 @@ Paralel Gözcü penceresi içinde aynı anda tek bir ifade birden çok iş parç
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birden çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Nasıl yapılır: GPU iş parçacıkları penceresini kullanma](../debugger/how-to-use-the-gpu-threads-window.md)   
- [İzlenecek yol: C++ AMP uygulamasında hata ayıklama](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+ [İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

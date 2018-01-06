@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7f9c12cef9b46cc29c4fda6ad74855b69386dc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d88c4b440f61e87792210e8a0844b6b622e8f05
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Nasıl yapılır: kayıt defteri ayarlarını kullanarak özel galeri yönetme
 Bir yönetici veya bir yalıtılmış kabuk uzantısı Geliştirici varsa, denetimleri, şablonlar ve araçlar Visual Studio Galerisi, Örnekler Galerisi veya özel galerileri erişimi denetleyebilirsiniz. Bir galeri kullanılabilir veya kullanılamaz hale getirmek için değiştirilmiş kayıt defteri anahtarları ve değerleri tanımlayan bir .pkgdef dosyasını oluşturun.  
@@ -71,4 +72,4 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel galerileri](../extensibility/private-galleries.md)
+ [Özel Galeriler](../extensibility/private-galleries.md)

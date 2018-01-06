@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d72671a9c9e470dafae2b36c8cf5ec34b43e750
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d63827110dab8b8028e27fa6d544f5dd1bcfc23b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Düzenleyici denetimleri ve menüleri eski API kullanarak özelleştirme
 Bir dil hizmeti veya bir metin görünümünde Düzenleyicisi'nde denetimleri ve bağlam menülerini kontrol edebilirsiniz. Bu bölümdeki sayfaları bu özellikler ile çalışma konusunda ayrıntılı olarak açıklanmaktadır.  
@@ -36,5 +37,5 @@ Bir dil hizmeti veya bir metin görünümünde Düzenleyicisi'nde denetimleri ve
  Güncelleştirme için yönergeler sağlar **durum çubuğu**.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Düzenleyici ve dil hizmeti uzantıları](../extensibility/editor-and-language-service-extensions.md)  
+ [Düzenleyici ve Dil Hizmeti Uzantıları](../extensibility/editor-and-language-service-extensions.md)  
  Visual Studio'da kullanabileceğiniz düzenleyicileri farklı türde tanıtır.

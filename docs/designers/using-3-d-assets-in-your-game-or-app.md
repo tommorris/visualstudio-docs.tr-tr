@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5613790632c4bd462c1efbb3f218a0299b276179
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5f1e8888461026f734ac08c5ec3f23b10f310174
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Oyunlarda veya Uygulamalarda 3B Varlıklar Kullanma
 Bu makalede nasıl kullanabileceğiniz açıklanır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 3-b varlıkları işlemek ve derlemeleriniz içerir.  
@@ -202,8 +203,8 @@ cbuffer MiscVars : register(b3)
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: Mipmaps içeren bir doku dışarı aktarma](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Görüntü içerik ardışık düzen önceden hesaplanan mipmaps içeren bir doku dışarı aktarmak için nasıl kullanılacağını açıklar.|  
-|[Nasıl yapılır: alfa önceden çoğaltılmış olan doku dışarı aktarma](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Görüntü içerik ardışık düzen önceden çoğaltılmış alfa değerleri içeren bir doku dışarı aktarmak için nasıl kullanılacağını açıklar.|  
-|[Nasıl yapılır: bir doku Direct2D veya Javascipt uygulamalar ile kullanılmak üzere dışarı aktarma](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Görüntü içerik ardışık düzen Direct2D veya JavaScript uygulamasında kullanılan bir doku dışarı aktarmak için nasıl kullanılacağını açıklar.|  
-|[Oyunları ve uygulamaları için 3-b varlıklar ile çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md)|Visual Studio oluşturma ve düzenleme dokuları ve görüntüleri, 3-b modellere ve gölgelendiriciler içeren 3-b varlıklar sağlar düzenleme araçlarını açıklar.|  
-|[Nasıl yapılır: bir gölgelendirici dışarı aktarma](../designers/how-to-export-a-shader.md)|Nasıl gölgelendirici gölgelendirici Tasarımcısı'ndan dışarı aktarılacağını açıklar.|
+|[Nasıl yapılır: Mipmap'leri İçeren Dokuyu Dışa Aktarma](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Görüntü içerik ardışık düzen önceden hesaplanan mipmaps içeren bir doku dışarı aktarmak için nasıl kullanılacağını açıklar.|  
+|[Nasıl yapılır: Ön Çarpımlı Alfa kullanan Doku Dışa Aktarma](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Görüntü içerik ardışık düzen önceden çoğaltılmış alfa değerleri içeren bir doku dışarı aktarmak için nasıl kullanılacağını açıklar.|  
+|[Nasıl yapılır: Direct2D veya Javascript Uygulamaları Kullanmak için Doku Dışa Aktarma](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Görüntü içerik ardışık düzen Direct2D veya JavaScript uygulamasında kullanılan bir doku dışarı aktarmak için nasıl kullanılacağını açıklar.|  
+|[Oyunlar ve Uygulamalar için 3B Varlıklarla Çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md)|Visual Studio oluşturma ve düzenleme dokuları ve görüntüleri, 3-b modellere ve gölgelendiriciler içeren 3-b varlıklar sağlar düzenleme araçlarını açıklar.|  
+|[Nasıl Yapılır: Gölgelendiriciyi Dışarı Aktarma](../designers/how-to-export-a-shader.md)|Nasıl gölgelendirici gölgelendirici Tasarımcısı'ndan dışarı aktarılacağını açıklar.|

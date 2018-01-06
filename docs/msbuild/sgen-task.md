@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8cfba9d4868f72ba327035c2fe865fd8ffe6344f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4ebb6579cd4ac4ee96547bbc7d70f471f17e4e53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sgen-task"></a>SGen Görevi
 XML serileştirme bütünleştirilmiş türleri için belirtilen derlemedeki oluşturur. Bu görev XML seri hale getirici Oluşturma Aracı (Sgen.exe) sarmalar. Daha fazla bilgi için bkz: [XML seri hale getirici Oluşturma Aracı (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
@@ -57,4 +58,4 @@ XML serileştirme bütünleştirilmiş türleri için belirtilen derlemedeki olu
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
  [Görevler](../msbuild/msbuild-tasks.md)   
- [MSBuild kavramları](../msbuild/msbuild-concepts.md)
+ [MSBuild Kavramları](../msbuild/msbuild-concepts.md)

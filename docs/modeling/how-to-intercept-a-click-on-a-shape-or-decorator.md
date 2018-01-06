@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 3eb235ec6c38b4995460308c0ac8b104b76f8492
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 52ecb40d98a352e629ac234be294c972126b4d68
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Nasıl yapılır: Şekil veya Dekoratörde bir Click için Araya Girme
 Aşağıdaki yordamlar, tıklama bir şekli veya bir simge oluşturma öğesi müdahale göstermektedir. Tıklama ele geçirebilir, çift tıklamalar, sürüklediği, ve diğer hareketleri ve yanıt öğesi yapın.  
@@ -398,4 +399,4 @@ namespace Company.CompartmentDrag
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yanıt vermek ve değişiklikleri yayma](../modeling/responding-to-and-propagating-changes.md)   
- [Dekoratörler özellikleri](../modeling/properties-of-decorators.md)
+ [Dekoratörlerin Özellikleri](../modeling/properties-of-decorators.md)

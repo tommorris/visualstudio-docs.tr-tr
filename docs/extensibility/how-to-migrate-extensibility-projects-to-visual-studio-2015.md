@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016e609acb7ad837580b4cabb6055169ac7357c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec87a48e61ee69e01032c3b702ae21d6944eee92
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Nasıl yapılır: Visual Studio 2015 genişletilebilirlik projeleri geçirme
 Uzantınızı yükseltme bırakılır.  
@@ -45,7 +46,7 @@ Uzantınızı yükseltme bırakılır.
   
 2.  Bunları seçerek VS SDK başvuru derlemeleri projeden kaldırmak için sağ tıklayın ve **kaldırmak**.  
   
-3.  VS SDK başvuru derlemeleri NuGet sürümleri ekleyin.  Hala while **Solution Explorer başvuruları** düğümü, açık **NuGet paketlerini Yönet...**  iletişim.  Bu iletişim kutusu hakkında daha fazla bilgi edinmek istiyorsanız, bkz: [Paket Yöneticisi kullanıcı Arabirimi](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI). VS SDK başvuru derlemeleri üzerinde yayımlanan [nuget.org](http://www.nuget.org) tarafından [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
+3.  VS SDK başvuru derlemeleri NuGet sürümleri ekleyin.  Hala while **Solution Explorer başvuruları** düğümü, açık **NuGet paketlerini Yönet...**  iletişim.  Bu iletişim kutusu hakkında daha fazla bilgi edinmek istiyorsanız, bkz: [Paket Yöneticisi kullanıcı Arabirimi](/NuGet/Tools/Package-Manager-UI). VS SDK başvuru derlemeleri üzerinde yayımlanan [nuget.org](http://www.nuget.org) tarafından [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
 4.  Kullanarak **nuget.org** olarak, **paket kaynağı**, istenen referans derlemesini eşleşen NuGet paket adı arayın (örneğin: Microsoft.VisualStudio.Shell.14.0) ve bunu yüklemek, Proje.  NuGet ilk derlemenin bağımlılıklarını karşılamak için birden fazla başvuru derlemeleri ekleyebilir.  
   

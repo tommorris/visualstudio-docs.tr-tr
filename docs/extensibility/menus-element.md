@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5e9bfcf1d4da949c7f24ccf004cf3d031e776063
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ad84bca1dd6abaa0603b88d8be3575b9f68e337a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="menus-element"></a>Menü öğesi
 Menüler ve bir VSPackage uygulayan araç çubukları tanımlar.  
@@ -46,14 +47,14 @@ Menüler ve bir VSPackage uygulayan araç çubukları tanımlar.
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Menü öğesi](../extensibility/menus-element.md)|Menüler ve bir VSPackage uygulayan araç çubukları tanımlar.|  
-|[Menü öğesi](../extensibility/menu-element.md)|Bir tek menü veya araç temsil eder.|  
+|[Menus Öğesi](../extensibility/menus-element.md)|Menüler ve bir VSPackage uygulayan araç çubukları tanımlar.|  
+|[Menu Öğesi](../extensibility/menu-element.md)|Bir tek menü veya araç temsil eder.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Komutları öğesi](../extensibility/commands-element.md)|VSPackage komutlarda koleksiyonunu temsil eder.|  
+|[Commands Öğesi](../extensibility/commands-element.md)|VSPackage komutlarda koleksiyonunu temsil eder.|  
   
 ## <a name="example"></a>Örnek  
   
@@ -82,4 +83,4 @@ Menüler ve bir VSPackage uygulayan araç çubukları tanımlar.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Komutları, menüleri ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Komutlar, Menüler ve Araç Çubukları](../extensibility/internals/commands-menus-and-toolbars.md)

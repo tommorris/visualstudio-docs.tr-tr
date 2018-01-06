@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: def8de31a28a6a49f611c863ebb88d566ff93aa6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eab9e96906e5d6bd31ef0f84bebf635c4c104b3d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="toolbox-html-tab"></a>Araç Kutusu, HTML Sekmesi
 **HTML** sekmesi araç, Web sayfalarını ve Web forms kullanışlıdır bileşenleri sağlar. Bu sekme görüntülemek için önce bir belgeyi HTML Tasarımcısı'nda düzenlemek için açın. Üzerinde **Görünüm** menüsünde tıklatın **araç**ve ardından **HTML** araç sekmesinde.  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="tasks"></a>Görevler  
 
--   [Araç kutusunu kullanma](../../ide/using-the-toolbox.md)  
+-   [Araç Kutusunu Kullanma](../../ide/using-the-toolbox.md)  
 
 ## <a name="ui-elements"></a>Kullanıcı Arabirimi öğeleri  
  Aşağıdaki araçlar varsayılan HTML sekmesinde bulunur.  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 > [!IMPORTANT]
->  Tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için bkz: [ASP.NET Web sayfaları (Razor) siteleri uygulamasında kullanıcı girdisi doğrulama](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için bkz: [ASP.NET Web sayfaları (Razor) siteleri uygulamasında kullanıcı girdisi doğrulama](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Giriş (dosya)**  
  ![HTML sayfası dosya alanı](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -99,7 +100,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 > [!IMPORTANT]
->  Tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için bkz: [ASP.NET Web sayfaları (Razor) siteleri uygulamasında kullanıcı girdisi doğrulama](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için bkz: [ASP.NET Web sayfaları (Razor) siteleri uygulamasında kullanıcı girdisi doğrulama](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Giriş (parola)**  
  ![Visual Studio parola alanı](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -113,7 +114,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 > [!IMPORTANT]
->  Uygulamanızın kullanıcı adları ve parolalar gönderiyorsa, Web sitenizi iletim şifrelemek için Güvenli Yuva Katmanı (SSL) kullanmak üzere yapılandırmanız gerekir. Daha fazla bilgi için bkz: "Bağlantıları SSL ile güvenli hale getirme" [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856). Ayrıca, tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için bkz: [ASP.NET Web sayfaları (Razor) siteleri uygulamasında kullanıcı girdisi doğrulama](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Uygulamanızın kullanıcı adları ve parolalar gönderiyorsa, Web sitenizi iletim şifrelemek için Güvenli Yuva Katmanı (SSL) kullanmak üzere yapılandırmanız gerekir. Daha fazla bilgi için bkz: "Bağlantıları SSL ile güvenli hale getirme" [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856). Ayrıca, tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için bkz: [ASP.NET Web sayfaları (Razor) siteleri uygulamasında kullanıcı girdisi doğrulama](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Giriş (onay kutusu)**  
  ![HTML Web sayfası araç kutusu onay kutusu seçeneği](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -160,7 +161,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 > [!IMPORTANT]
->  Tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için bkz: [ASP.NET Web sayfaları (Razor) siteleri uygulamasında kullanıcı girdisi doğrulama](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için bkz: [ASP.NET Web sayfaları (Razor) siteleri uygulamasında kullanıcı girdisi doğrulama](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Tablo**  
  ![HTMLpageToolbarTable ekran görüntüsü](../../ide/reference/media/vxtable.gif "vxTable")  
@@ -221,4 +222,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç kutusu](../../ide/reference/toolbox.md)   
- [Araç kutusunu kullanma](../../ide/using-the-toolbox.md)   
+ [Araç Kutusunu Kullanma](../../ide/using-the-toolbox.md)   

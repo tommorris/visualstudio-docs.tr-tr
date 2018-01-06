@@ -15,25 +15,26 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1334ec7b2fb5b1d11c5aee5a4febb50e63cece4a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 631ffac458cd5f7d29051cdd53431bf7f7e4ccb8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>GUID ve Visual Studio SDK sabitleri
 <xref:Microsoft.VisualStudio.VSConstants> Sınıfı ortamı GUID ve sabitleri seçimi erişim sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [IDE GUID'leri](../extensibility/ide-guids.md)  
+ [IDE GUID’leri](../extensibility/ide-guids.md)  
  Listeler tarafından sağlanan GUID'ler <xref:Microsoft.VisualStudio.VSConstants>.  
   
- [IDE sabitleri](../extensibility/ide-constants.md)  
+ [IDE Sabitleri](../extensibility/ide-constants.md)  
  Listeler tarafından sağlanan SDK sabitleri <xref:Microsoft.VisualStudio.VSConstants>.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Yönetilen kodda COM sabitleri](../extensibility/com-constants-in-managed-code.md)  
+ [Yönetilen Kodda COM Sabitleri](../extensibility/com-constants-in-managed-code.md)  
  Standart COM sabitleri yönetilen kod için yönetilen paket framework (MPF) listeler.  
   
- [Proje sistemleri genişletme IDE tanımlı komutları](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)  
+ [Proje Sistemlerini Genişletmeye Yönelik IDE Tanımlı Komutlar](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)  
  Farklı türlerde proje sistemleri genişletmek için kullanılan komut öğeleri listeler.

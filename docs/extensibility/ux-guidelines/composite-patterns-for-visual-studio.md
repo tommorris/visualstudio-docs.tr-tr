@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6ce0fccf3a957edfdf732ce3ea462bef26c5a0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio için bileşik desenleri
 Bileşik desenleri farklı yapılandırmayı etkileşim ve tasarım öğeleri birleştirin. Visual Studio tutarlılık açısından en önemli bileşik düzenleri bazıları şunlardır:  
@@ -485,7 +486,7 @@ Bileşik desenleri farklı yapılandırmayı etkileşim ve tasarım öğeleri bi
 |İletişim kutusu|Taşıdıysanız iletişim kutusunda, konumu<br /><br /> Kullanıcı iletişim kutusunda en son kullanılan görünümü|Ne zaman iletişim kutusunu kapatır<br /><br /> Visual Studio oturumu sona erdiğinde|Bellek<br /><br /> Kayıt defterinde **HKEY_Current_User**|  
 |Pencere|Boyut ve konum penceresi|Ne zaman penceresini kapatır<br /><br /> Visual Studio modu değiştiğinde<br /><br /> Visual Studio oturumu sona erdiğinde|**Kullanıcı seçenekleri (.suo)** proje dosyası<br /><br /> Pencere ayarları için özel seçenekleri dosyası|  
 |Belge|Belgedeki geçerli seçim<br /><br /> Belgenin görünümü<br /><br /> Kullanıcının ziyaret son çeşitli yerlerde|Ne zaman Belge kaydedildiğinde|**Kullanıcı seçenekleri (.suo)** proje dosyası|  
-|Project|Dosyalara başvurular<br /><br /> Disk üzerindeki dizinlere başvuruları<br /><br /> Diğer yazılım başvurular<br /><br /> Bileşenler<br /><br /> Projeyle ilgili durum bilgileri|Proje zaman kaydedilir|Proje dosyası|  
+|Proje|Dosyalara başvurular<br /><br /> Disk üzerindeki dizinlere başvuruları<br /><br /> Diğer yazılım başvurular<br /><br /> Bileşenler<br /><br /> Projeyle ilgili durum bilgileri|Proje zaman kaydedilir|Proje dosyası|  
 |Çözüm|Proje başvuruları<br /><br /> Dosyalara başvurular|Proje ve çözüm zaman kaydedilir|**Çözüm (.sln)** dosyası|  
 |Ayarlarında **Araçlar > Seçenekler**|Klavye özelleştirmeleri<br /><br /> Araç çubuğunu özelleştirme<br /><br /> Renk düzenleri|Zaman **Araçlar > Seçenekler** iletişim kutusunu kapatır<br /><br /> Visual Studio oturumu sona erdiğinde|Kayıt defterinde **HKEY_Current_User**|  
   

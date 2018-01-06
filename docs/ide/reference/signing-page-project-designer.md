@@ -23,11 +23,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d193b8927019354244d6d80032ed0c761f584f83
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7aa75e814ddd4d8b8c093fd37a366410a279d6ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="signing-page-project-designer"></a>İmzalama Sayfası, Proje Tasarımcısı
 Kullanım **imzalama** sayfasında **Proje Tasarımcısı** uygulama ve dağıtım bildirimlerini imzalama ve (tanımlayıcı ad imzası) derlemeyi imzalamak için.  
@@ -95,4 +96,4 @@ Kullanım **imzalama** sayfasında **Proje Tasarımcısı** uygulama ve dağıt�
  [Nasıl yapılır: uygulama ve dağıtım bildirimlerini imzalama](../../ide/how-to-sign-application-and-deployment-manifests.md)   
  [Nasıl yapılır: derleme (Visual Studio) oturum açın](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)   
  [Nasıl yapılır: bir derlemeyi tanımlayıcı adla imzalama](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)   
- [Tanımlayıcı adlı derlemeler](/dotnet/framework/app-domains/strong-named-assemblies)   
+ [Kesin Adlandırılmış Bütünleştirilmiş Kodlar](/dotnet/framework/app-domains/strong-named-assemblies)   

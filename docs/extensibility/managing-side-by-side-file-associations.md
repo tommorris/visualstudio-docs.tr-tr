@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfb3bcca8c56ebefa665e44384df0751e71f6591
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d0a6f8ec88a49b785b771aef51dc25b5646ffda
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-side-by-side-file-associations"></a>Yan yana dosya ilişkilendirmeleri yönetme
 Dosya ilişkilendirmeleri, VSPackage sağlıyorsa, hangi yan yana yüklemelerde nasıl ele alınacağını karar vermeniz gerekir belirli bir sürümü [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir dosyayı açmaya çağrılmalıdır. Uyumsuz dosya biçimleri sorunu bileşik.  
@@ -86,4 +87,4 @@ Dosya ilişkilendirmeleri, VSPackage sağlıyorsa, hangi yan yana yüklemelerde 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yan yana dağıtımlar için dosya adı uzantılarını kaydetme](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
- [Fiiller için dosya adı uzantılarını kaydetme](../extensibility/registering-verbs-for-file-name-extensions.md)
+ [Dosya Adı Uzantıları için Fiil Kaydetme](../extensibility/registering-verbs-for-file-name-extensions.md)

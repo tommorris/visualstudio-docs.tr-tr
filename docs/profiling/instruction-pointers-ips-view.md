@@ -21,11 +21,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b55eef6cc3f0b594d4e96a41f9cbf7a1b4f9f163
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 564bdcea907920e6e16807e34a64850e7e664f41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instruction-pointers-ips-view"></a>Yönerge İşaretçileri (IP) Görünümü
 Yönerge işaretçileri görünümü örnekleme profili oluşturma sırasında gerçekleştirilen yönelik özel yönergeler görmenize olanak sağlar.  
@@ -39,4 +40,4 @@ Yönerge işaretçileri görünümü örnekleme profili oluşturma sırasında g
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönerge işaretçileri (IP) görünümü](../profiling/instruction-pointers-ips-view-sampling-data.md)   
  [Yönerge işaretçileri (IP) görünümü - örnekleme](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
- [Yönerge işaretçileri (IP) görünümü](../profiling/instruction-pointers-ips-view-contention-data.md)
+ [Yönerge İşaretçileri (IP) Görünümü](../profiling/instruction-pointers-ips-view-contention-data.md)

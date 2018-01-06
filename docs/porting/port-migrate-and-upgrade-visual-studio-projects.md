@@ -21,11 +21,12 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c418d5ab3618a43a1e12bc3be2d96742fcbb669e
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: b91e9bae56333dcb07e19922c9a9461b23ab8e66
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Bağlantı noktası, geçirme ve Visual Studio projelerini yükseltme
 
@@ -47,7 +48,7 @@ Bir proje görmüyorum veya dosya türü listelenen Burada, lütfen bakın olmal
 
 | Proje Türü | Destek |
 | --- | --- |
-| .NET core projeleri (artık.xproj) | Visual Studio 2015 ile oluşturulan projeleri artık.xproj proje dosyasını içeren tooling Önizleme kullanılır. Visual Studio 2017 ile artık.xproj dosya açtığınızda, dosya (artık.xproj dosya yedeğini yapılan) .csproj biçimine geçirmek için istenir. .NET Core projeler için bu .csproj biçim VS2015 ve daha önceki sürümlerde desteklenmiyor.  Artık.xproj biçimi dışında Visual Studio 2017 içinde geçiş .csproj için desteklenmiyor. Daha fazla bilgi için bkz: [geçirme .NET Core projeleri .csproj biçimine](https://docs.microsoft.com/dotnet/core/migration/#visual-studio-2017).|
+| .NET core projeleri (artık.xproj) | Visual Studio 2015 ile oluşturulan projeleri artık.xproj proje dosyasını içeren tooling Önizleme kullanılır. Visual Studio 2017 ile artık.xproj dosya açtığınızda, dosya (artık.xproj dosya yedeğini yapılan) .csproj biçimine geçirmek için istenir. .NET Core projeler için bu .csproj biçim VS2015 ve daha önceki sürümlerde desteklenmiyor.  Artık.xproj biçimi dışında Visual Studio 2017 içinde geçiş .csproj için desteklenmiyor. Daha fazla bilgi için bkz: [geçirme .NET Core projeleri .csproj biçimine](/dotnet/core/migration/#visual-studio-2017).|
 | ASP.NET Web uygulaması ve etkin Application Insights ile ASP.NET çekirdek Web uygulaması | Her bir Visual Studio kullanıcı için kaynak bilgileri kullanıcı örneği başına kayıt defterinde depolanır. Bu kullanılan zaman kullanıcı değilsiniz açılmış bir proje ve Azure Application Insights verileri aramak için istediği. Visual Studio 2015, Visual Studio 2017'den farklı kayıt defteri konumu kullanır ve çakışıp çakışmadığını.<br/><br/>Bir kullanıcı bir ASP.NET Web uygulaması veya ASP.NET çekirdek Web uygulaması oluşturulduktan sonra kaynak .suo dosyasında depolanır. Kullanıcı projeyi Visual Studio 2015 veya 2017 açabilir ve Visual Studio projeler ve çözümler hem sürümleri arasında kullanılan desteklediği sürece kaynak bilgileri her ikisi için kullanılır. Kullanıcıların bir kez bulunan her ürün kimliğini doğrulaması gerekir. Örneğin, bir projeyi Visual Studio 2015 ile oluşturulan ve Visual Studio 2017 içinde açılan, kullanıcının Visual Studio 2017 üzerinde kimlik doğrulaması gerekir. |
 | C#/Visual Basic Webform veya Windows Form | Projeyi Visual Studio 2015 ve Visual Studio 2017 de açabilirsiniz. |
 | Veritabanı birim testi projelerini (.csproj, .vbproj)    | Eski veri test projeleri Visual Studio 2017 yüklenir ancak GAC kullanacağı birimi bağımlılıkların sürümünü 'd. Kullanılacak birim testi projesi yükseltmek için en son bağımlılıkları sağ seçip Çözüm Gezgini proje tıklayın **SQL Server birim testi projesi için Dönüştür...** . |

@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 904350641c9db8bfb62522ee13051d69bb529535
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5b58cec1da21daf67c8a77d53312e92fdbf4dfb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-commands"></a>Visual Studio Komutları
 Visual Studio komutları bir komuttan çağrılacak izin **komutu** penceresinde **hemen** penceresinde veya **Bul/komut** kutusu. Her durumda, büyüktür işareti (`>`) bir arama ya da hata ayıklama işlemi yerine bir komut izlemek için olduğunu belirtmek için kullanılır.  
@@ -64,20 +65,20 @@ Visual Studio komutları bir komuttan çağrılacak izin **komutu** penceresinde
 |[Proje Aç](../../ide/reference/open-project-command.md)|Varolan projeyi açar ve geçerli çözüme proje eklemenizi sağlar.|  
 |[Çözümü Aç](../../ide/reference/open-solution-command.md)|Varolan bir çözümü açar.|  
 |[Yazdırma](../../ide/reference/print-command.md)|İfade değerlendirir ve sonuçları veya belirtilen metni görüntüler.|  
-|[Hızlı Bakış komutu](../../ide/reference/quick-watch-command.md)|Seçili ya da belirtilen metni görüntüleyen **ifade** alanını **Hızlı Bakış** iletişim kutusu.|  
+|[Hızlı Bakış Komutu](../../ide/reference/quick-watch-command.md)|Seçili ya da belirtilen metni görüntüleyen **ifade** alanını **Hızlı Bakış** iletişim kutusu.|  
 |[Değiştir](../../ide/reference/replace-command.md)|Bir alt kümesi üzerinde kullanılabilir seçenekleri kullanarak dosyaları metinde değiştirir **bulma ve değiştirme** denetim.|  
 |[Dosyalarda Değiştir](../../ide/reference/replace-in-files-command.md)|Bir alt kümesini kullanılabilir seçenekleri kullanarak dosyaları metinde değiştirir [dosyalarda Değiştir](../../ide/replace-in-files.md).|  
 |[Geçerli yığın çerçevesini Ayarla](../../ide/reference/set-current-stack-frame-command.md)|Belirli Yığın çerçevesi görüntülemenize izin verir.|  
 |[Geçerli iş parçacığının ayarlayın](../../ide/reference/set-current-thread-command.md)|Belirli bir iş parçacığı görüntülemenize izin verir.|  
 |[Sayı tabanını Ayarla](../../ide/reference/set-radix-command.md)|Görüntülemek için bayt sayısını belirler.|  
 |[Kabuk](../../ide/reference/shell-command.md)|İçinden programları başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] komutu komut isteminden yürütülen gibi sorgulamanıza.|  
-|[ShowWebBrowser komutu](../../ide/reference/showwebbrowser-command.md)|Bir Web tarayıcı penceresinde da tümleşik geliştirme ortamı (IDE) ya da dış IDE içinde belirttiğiniz URL'yi görüntüler.|  
-|[Başlat](../../ide/reference/start-command.md)|Hata ayıklama işlemi başlar ve hataların nasıl işleneceğini belirtmenizi sağlar.|  
+|[ShowWebBrowser Komutu](../../ide/reference/showwebbrowser-command.md)|Bir Web tarayıcı penceresinde da tümleşik geliştirme ortamı (IDE) ya da dış IDE içinde belirttiğiniz URL'yi görüntüler.|  
+|[Start](../../ide/reference/start-command.md)|Hata ayıklama işlemi başlar ve hataların nasıl işleneceğini belirtmenizi sağlar.|  
 |[Yol](../../ide/reference/symbol-path-command.md)|Simgelerini aramak hata ayıklayıcı için dizinler listesinde ayarlar.|  
 |[Kesme](../../ide/reference/toggle-breakpoint-command.md)|Dosya geçerli konumda geçerli durumuna bağlı olarak açmak veya kapatmak kesme noktası etkinleştirir.|  
-|[İzle komutu](../../ide/reference/watch-command.md)|Oluşturur ve belirtilen bir örneğini açar bir **izleme** penceresi.|  
+|[İzle Komutu](../../ide/reference/watch-command.md)|Oluşturur ve belirtilen bir örneğini açar bir **izleme** penceresi.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Komut penceresi](../../ide/reference/command-window.md)   
  [Bul/komut kutusu](../../ide/find-command-box.md)   
- [Visual Studio komut diğer adları](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

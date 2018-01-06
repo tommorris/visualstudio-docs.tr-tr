@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb60f482edeea1271c0f864fd5b907138e83d103
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 66ac0837649b42dc238eac57829c713b2bf83e3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-project-specific-editors"></a>Nasıl yapılır: açık projeye özgü düzenleyiciler
 Bir projeye göre açılmakta bir öğe dosya doğası gereği, bu proje için belirli düzenleyiciye bağlıysa, projenin bir projeye özgü Düzenleyicisi'ni kullanarak dosyayı açmanız gerekir. Dosya bir düzenleyicide seçme IDE'nin mekanizması aşağıya doğru devredilemez. Örneğin, bir standart bit eşlemi Düzenleyicisi'ni kullanmak yerine, projenize için benzersizdir dosyasındaki bilgileri tanır belirli bit eşlem Düzenleyicisi belirtmek için bu projeye özgü Düzenleyici seçeneği kullanabilirsiniz.  
@@ -57,4 +58,4 @@ Bir projeye göre açılmakta bir öğe dosya doğası gereği, bu proje için b
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Açıp kaydederek proje öğeleri](../extensibility/internals/opening-and-saving-project-items.md)   
  [Nasıl yapılır: standart düzenleyicileri açın](../extensibility/how-to-open-standard-editors.md)   
- [Nasıl yapılır: açık belgeler için düzenleyicileri açın](../extensibility/how-to-open-editors-for-open-documents.md)
+ [Nasıl Yapılır: Açık Belgeler için Düzenleyicileri Açma](../extensibility/how-to-open-editors-for-open-documents.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 40b1fdb27bd2a256a1cff4b5a2066a3223939771
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f780de1bac1786ac3c5ffb70bd1a2f442fc8734
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-reference"></a>MSBuild Başvurusu
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]Yapı sistemidir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aşağıdaki bağlantılar içeren konuları neden [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başvuru bilgileri.  
@@ -40,16 +41,16 @@ ms.lasthandoff: 10/31/2017
  [Koşullu yapılar](../msbuild/msbuild-conditional-constructs.md)  
  Nasıl kullanılacağını açıklar `Choose`, `When`, ve `Otherwise` öğeleri.  
   
- [MSBuild ayrılmış ve tanınmış özellikleri](../msbuild/msbuild-reserved-and-well-known-properties.md)  
+ [MSBuild Ayrılmış ve Tanınmış Özellikleri](../msbuild/msbuild-reserved-and-well-known-properties.md)  
  Açıklar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ayrılmış özellikleri.  
   
- [Yaygın MSBuild proje özellikleri](../msbuild/common-msbuild-project-properties.md)  
+ [Yaygın MSBuild Proje Özellikleri](../msbuild/common-msbuild-project-properties.md)  
  Tüm proje türleri için ortak olan proje özelliklerini ve ayrıca belirli proje türleri tarafından genellikle kullanılan özellikleri açıklar.  
   
- [Yaygın MSBuild proje öğeleri](../msbuild/common-msbuild-project-items.md)  
+ [Yaygın MSBuild Proje Öğeleri](../msbuild/common-msbuild-project-items.md)  
  Tüm proje türleri için ortak proje öğeleri ve ayrıca belirli proje türleri tarafından genellikle kullanılan öğeleri açıklar.  
   
- [Komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md)  
+ [Komut Satırı Başvurusu](../msbuild/msbuild-command-line-reference.md)  
  Bağımsız değişkenler ve kullanılabilir anahtarlar açıklar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe.  
   
  [. Hedef dosyaları](../msbuild/msbuild-dot-targets-files.md)  
@@ -64,10 +65,10 @@ ms.lasthandoff: 10/31/2017
  [Ek kaynaklar](../msbuild/additional-resources-for-msbuild.md)  
  Bağlantılar sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Web siteleri ve haber grupları.  
   
- [WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)  
+ [WPF MSBuild Başvurusu](../msbuild/wpf-msbuild-reference.md)  
  İçeren bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] hedefleri ve görev başvurusu Windows Presentation Foundation (WPF).  
   
- [Kaçış için özel karakterler](../msbuild/special-characters-to-escape.md)  
+ [Kaçış İçin Özel Karakterler](../msbuild/special-characters-to-escape.md)  
  "Doğru yorumlanması için kaçış" gerekebilir karakterleri listeler. Kaçış dizisi izleyen bir alternatif yorumu olduğunu belirten bir karakter dizisidir.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

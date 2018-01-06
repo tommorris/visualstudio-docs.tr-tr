@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cf196a227e5cb92cae48dd1eeceace25ffc0295
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 69ad8f62931b628582c73a3e370a86611795caa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID ve Visual Studio menü kimlikleri
 Bu konuda menüleri ve Visual Studio menü çubuğunda grupları GUID ve ID değerlerini numaralandırır. Bu değerler, Visual Studio SDK'sı bir parçası olarak yüklenen .vsct dosyalar içinde tanımlanır. Daha fazla bilgi için bkz: [IDE-Defined komutlar, menüler ve grupları](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -39,7 +40,7 @@ Bu konuda menüleri ve Visual Studio menü çubuğunda grupları GUID ve ID değ
 |-----------|--------|  
 |Dosya/düzenleme/görünümü|IDG_VS_MM_FILEEDITVIEW|  
 |Yeniden Düzenle|IDG_VS_MM_REFACTORING:|  
-|Project|IDG_VS_MM_PROJECT|  
+|Proje|IDG_VS_MM_PROJECT|  
 |Derleme|IDG_VS_MM_BUILDDEBUGRUN|  
 |Biçim/araçları|IDG_VS_MM_TOOLSADDINS|  
 |Yardım/penceresi/topluluğu|IDG_VS_MM_WINDOWHELP|  
@@ -55,7 +56,7 @@ Bu konuda menüleri ve Visual Studio menü çubuğunda grupları GUID ve ID değ
 |Düzenle|IDM_VS_MENU_EDIT|  
 |Görüntüle|IDM_VS_MENU_VIEW|  
 |Yeniden Düzenleme (Refactor)|IDM_VS_MENU_REFACTORING|  
-|Project|IDM_VS_MENU_PROJECT|  
+|Proje|IDM_VS_MENU_PROJECT|  
 |Derleme|IDM_VS_MENU_BUILD|  
 |Biçimi|IDM_VS_MENU_FORMAT|  
 |Araçlar|IDM_VS_MENU_TOOLS|  
@@ -143,7 +144,7 @@ Bu konuda menüleri ve Visual Studio menü çubuğunda grupları GUID ve ID değ
 |Çözüm|IDG_VS_BUILD_SOLUTION|  
 |Seçim|IDG_VS_BUILD_SELECTION|  
 |Profil Temelli İyileştirme|IDG_VS_PGO_SELECTION|  
-|Diğer|IDG_VS_BUILD_MISC|  
+|Çeşitli|IDG_VS_BUILD_MISC|  
 |İptal|IDG_VS_BUILD_CANCEL|  
   
 ### <a name="tools-menu-groups"></a>Araçlar menü grupları  
@@ -218,4 +219,4 @@ Bu konuda menüleri ve Visual Studio menü çubuğunda grupları GUID ve ID değ
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [GUID ve Visual Studio araç çubukları kimlikleri](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)   
  [GUID ve Visual Studio komut kimlikleri](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)   
- [Visual Studio komut tablosu (. Vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed0ffd44e248cb1f420cb7be308a46c914fffee2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dd7b6a48b00e8bef62ff801519fc35cdc163902d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-integration-overview"></a>Kaynak denetimi tümleştirmesine genel bakış
 Bu bölümde, Visual Studio kaynak denetimine tümleştirmek için iki yol karşılaştırır; Kaynak denetimi eklenti ve yeni kaynak denetimi özellikleri vurgular ve kaynak denetimi çözümü sağlayan bir VSPackage. Visual Studio kaynak denetimi VSPackages ve kaynak denetimi eklentiler arasında elle değiştirme yanı sıra çözüm tabanlı otomatik geçiş yapmanın sağlar.  
@@ -79,4 +80,4 @@ Bu bölümde, Visual Studio kaynak denetimine tümleştirmek için iki yol karş
  [Kaynak denetimi](../../extensibility/internals/source-control.md)   
  [Kaynak Denetimi Eklentisi oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Kaynak denetimi VSPackage oluşturma](../../extensibility/internals/creating-a-source-control-vspackage.md)   
- [Kaynak denetiminde yenilikler nelerdir?](../../extensibility/internals/what-s-new-in-source-control.md)
+ [Kaynak Denetimindeki Yenilikler](../../extensibility/internals/what-s-new-in-source-control.md)

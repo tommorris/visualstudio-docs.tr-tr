@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 870a8d1c08a8ca0fa72cabf47c8e1087a39e70f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6cfc93f3e0423f57cd0df5e919854cc1a46a1b3f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Nasıl yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama
 Etki alanına özgü dil için bir komut veya hareket işleyicisi yazdığınızda, kullanıcı sağ hangi öğe belirleyebilirsiniz. Ayrıca bazı şekiller veya alanlar seçilmesini engelleyebilirsiniz. Örneğin, kullanıcı bir simge oluşturma öğesi tıkladığında, içerdiği şekli yerine seçili düzenleyebilirsiniz. Bu şekilde seçim sınırlama yazmak zorunda işleyicileri sayısını azaltır. Ayrıca, herhangi bir yere şeklinde oluşturma öğesi kaçının gerek kalmadan tıklatabilirsiniz kullanıcıya, kolaylaştırır.  

@@ -21,11 +21,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 23289047783eefb6c4ebe3c29b9e372cd5aae695
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 3cd68fa71bf201c7a2ac05fd7881b216cbca0938
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Derleme Sayfası, Proje Tasarımcısı (Visual Basic)
 Kullanım **derleme** derleme yönergeleri belirtmek için Proje Tasarımcısı'nın sayfası. Bu sayfada Gelişmiş derleyici seçenekleri ve ön derleme veya sonrası derleme olayları de belirtebilirsiniz.  
@@ -172,4 +173,4 @@ Erişim için bu düğmeye tıklayın **AdvancedCompiler ayarları** iletişim k
  [Derleme özelliklerini yönetme](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Nasıl yapılır: derleme olayları belirtme (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Visual Basic komut satırı derleyicisi](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [Nasıl yapılır: yapılandırmaları oluşturma ve düzenleme](../../ide/how-to-create-and-edit-configurations.md)
+ [Nasıl Yapılır: Yapılandırmaları Oluşturma ve Düzenleme](../../ide/how-to-create-and-edit-configurations.md)

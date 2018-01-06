@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 258389c08971089c523e2881a455411ea767801a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 3bc498bf0a2a0293421ba680eab608cff4a85437
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debug-universal-windows-apps-uwp"></a>Evrensel Windows uygulamaları (UWP) hata ayıklama
 Visual Studio hata ayıklayıcısı hata ayıklama UWP uygulamaları için tam destek sağlar.  
@@ -30,13 +31,11 @@ Hata ayıklama Evrensel Windows uygulamaları hakkında daha fazla bilgi için b
   
 Windows Phone 8 uygulamalarını hata ayıklamak için bkz: [Windows Phone 8 için hata ayıklama uygulamaları](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx).  
   
-## <a name="in-this-section"></a>Bu bölümde  
-  
 |||  
 |-|-|  
 |[Visual Studio'dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md)|UWP uygulamaları yerel makine, bir uygulama simulator veya öykünücü veya uzak cihazda çalıştırın.|  
 |[Visual Studio uygulamalarında hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md)|Bulun ve Visual Studio hata ayıklayıcısı kullanarak UWP uygulamalarınızda hataları giderin.|  
-|[Yüklü uygulama paketi hata ayıklama](../debugger/debug-installed-app-package.md)|Dağıtılan uygulamalar, hem yerel hem uzaktan hata ayıklama.|
+|[Yüklü uygulama paketinin hatalarını ayıklama](../debugger/debug-installed-app-package.md)|Dağıtılan uygulamalar, hem yerel hem uzaktan hata ayıklama.|
 |[İçerik UWP uygulamaları için hazırlık](../debugger/prefetch-content-for-windows-store-apps.md)|UWP uygulamaları ContentPrefetcher sınıfı etkisi analiz edin.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

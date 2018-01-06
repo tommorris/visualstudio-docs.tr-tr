@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 01dc6663c9242c1a919b47fb242343332cbc9a63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d622f1b4a71f52103d1d7a3148291dcd2dcf9129
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-data-tab"></a>Araç Kutusu, Veri Sekmesi
 Veri nesneleri eklemek için bir form görüntüler ve bileşenleri. **Veri** sekmesinde **araç** ilişkili Tasarımcısı sahip bir proje oluşturduğunuzda görünür. **Araç** görüntülemeniz gerekirse, Visual Studio tümleşik geliştirme ortamında; varsayılan olarak görünür **araç**seçin **araç** gelen**Görünüm** menüsü.  
@@ -46,4 +47,4 @@ Veri nesneleri eklemek için bir form görüntüler ve bileşenleri. **Veri** se
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Veri kümelerindeki verileri düzenleme](../../data-tools/edit-data-in-datasets.md)   
  [Veri kümelerindeki verileri doğrulama](../../data-tools/validate-data-in-datasets.md)   
- [Verileri kaydetme](../../data-tools/saving-data.md)
+ [Verileri Kaydetme](../../data-tools/saving-data.md)

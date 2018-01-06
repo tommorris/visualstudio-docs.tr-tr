@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e22ff13f9aaffffb22f8b572968376e03796ac9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 56cef17add36ae1310b94421bfcf8a31951e00be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage Öğesi (Visual Studio Şablonları)
 Önizleme görünümü ya da görünür Önizleme görünümü için bir dosya adı olarak belirtir **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.  
@@ -59,4 +60,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   
- [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)
+ [Proje ve Öğe Şablonları Oluşturma](../ide/creating-project-and-item-templates.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebfb54a289fe085f00c40df34256cfb2174f98fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb66dfffaf8fa8339ce9060c912dc358fb454a7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Bir düzenleyici öğesi şablonuyla bir uzantısı oluşturma
 Sınıflandırıcı, adornments ve kenar boşlukları düzenleyiciye eklemek temel Düzenleyici uzantıları oluşturmak için Visual Studio SDK içinde yer alan öğe şablonları kullanabilirsiniz. Düzenleyici öğe şablonları, Visual C# veya Visual Basic VSIX projeleri için kullanılabilir.  
@@ -99,4 +100,4 @@ Sınıflandırıcı, adornments ve kenar boşlukları düzenleyiciye eklemek tem
 4.  Bu projeyi derleyin ve hata ayıklamayı Başlat. Deneysel örneği görüntülenir. Bir metin dosyası açarsanız, "Merhaba EditorMargin1" sözcükler sahip yeşil bir kenar boşluğu altında yatay kaydırma çubuğu görüntülenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md)
+ [Dil Hizmeti ve Düzenleyici Uzantı Noktaları](../extensibility/language-service-and-editor-extension-points.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2393d254ee2864291a0a3ae5bbed6e78d80d3863
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bff905ae4f280d106eea34d513af35ee3de663b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shader-designer-nodes"></a>Gölgelendirici Tasarımcısı Düğümleri
 Bu bölümdeki makaleleri belgelerin grafik efektler oluşturmak için kullanabileceğiniz çeşitli gölgelendirici Tasarımcısı düğümleri hakkında bilgiler içerir.  
@@ -46,9 +47,9 @@ Bu bölümdeki makaleleri belgelerin grafik efektler oluşturmak için kullanabi
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Sabit düğüm](../designers/constant-nodes.md)|Değişmez değerler ve gölgelendirici hesaplamalarda Ara değerli köşe durum bilgilerini göstermek için kullanabileceğiniz düğümleri açıklar. Köşe durumu ilişkilendirilir çünkü — ve bu nedenle, her bir piksel için farklı olur — her piksel gölgelendirici örneği sabiti farklı bir sürümünü alır.|  
-|[Parametre düğümü](../designers/parameter-nodes.md)|Kamera konumu, malzeme özelliklerine, aydınlatma parametreleri, saat ve diğer uygulama durum bilgilerini gölgelendirici hesaplamalarda temsil etmek için kullanabileceğiniz düğümleri açıklar.|  
-|[Doku düğümler](../designers/texture-nodes.md)|Örnek çeşitli doku türleri ve geometri ve üreten veya doku koordinatları yaygın şekilde dönüştürmek için kullanabileceğiniz düğümleri açıklar.|  
-|[Matematik düğümler](../designers/math-nodes.md)|Cebirsel gerçekleştirmek için kullanabileceğiniz düğümleri, mantığı, trigonometrik ve doğrudan HLSL yönergeleri eşleme diğer matematik işlemlerini açıklar.|  
-|[Yardımcı programı düğümler](../designers/utility-nodes.md)|Ortak aydınlatma hesaplamaları ve doğrudan HLSL yönergeleri eşlemediğinden diğer yaygın işlemler gerçekleştirmek için kullanabileceğiniz düğümleri açıklar.|  
-|[Filtre düğümlerinin](../designers/filter-nodes.md)|Doku filtreleme ve renk filtrelemesi gerçekleştirmek için kullanabileceğiniz düğümleri açıklar.|
+|[Sabit Düğümler](../designers/constant-nodes.md)|Değişmez değerler ve gölgelendirici hesaplamalarda Ara değerli köşe durum bilgilerini göstermek için kullanabileceğiniz düğümleri açıklar. Köşe durumu ilişkilendirilir çünkü — ve bu nedenle, her bir piksel için farklı olur — her piksel gölgelendirici örneği sabiti farklı bir sürümünü alır.|  
+|[Parametre Düğümleri](../designers/parameter-nodes.md)|Kamera konumu, malzeme özelliklerine, aydınlatma parametreleri, saat ve diğer uygulama durum bilgilerini gölgelendirici hesaplamalarda temsil etmek için kullanabileceğiniz düğümleri açıklar.|  
+|[Doku Düğümleri](../designers/texture-nodes.md)|Örnek çeşitli doku türleri ve geometri ve üreten veya doku koordinatları yaygın şekilde dönüştürmek için kullanabileceğiniz düğümleri açıklar.|  
+|[Matematik Düğümleri](../designers/math-nodes.md)|Cebirsel gerçekleştirmek için kullanabileceğiniz düğümleri, mantığı, trigonometrik ve doğrudan HLSL yönergeleri eşleme diğer matematik işlemlerini açıklar.|  
+|[Yardımcı Program Düğümleri](../designers/utility-nodes.md)|Ortak aydınlatma hesaplamaları ve doğrudan HLSL yönergeleri eşlemediğinden diğer yaygın işlemler gerçekleştirmek için kullanabileceğiniz düğümleri açıklar.|  
+|[Filtre Düğümleri](../designers/filter-nodes.md)|Doku filtreleme ve renk filtrelemesi gerçekleştirmek için kullanabileceğiniz düğümleri açıklar.|

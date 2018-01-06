@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afc15ea50921b1feca34a8b305c5028979a0d1ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-of-a-legacy-language-service"></a>Eski dil hizmet modeli
 Bir dil hizmeti belirli bir dil için özellikler ve öğeler tanımlar ve düzenleyici bu dile özgü bilgileri sağlamak için kullanılır. Örneğin, düzenleyici sözdizimi renklendirmesi desteklemek için öğeleri ve dil anahtar sözcükleri bilmesi gerekir.  
@@ -51,4 +52,4 @@ Temel dil hizmet modeli
 |Dil hizmeti|Uygulamaya bağlıdır; uygular<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Düzenleyici sözdizimi vurgulama, deyim tamamlama ve eşleşen ayraç gibi dile özgü bilgiler sağlayan bir nesne.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Belge verileri ve belge görünümünde özel düzenleyiciler](../../extensibility/document-data-and-document-view-in-custom-editors.md)
+ [Özel Düzenleyicilerde Belge Verileri ve Belge Görünümü](../../extensibility/document-data-and-document-view-in-custom-editors.md)

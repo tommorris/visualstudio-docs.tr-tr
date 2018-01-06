@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff72a2a7acf63dea678aad0cda4cdca196ffc14f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3a56d930094c7a29deb4720836ba6e5a7365cc9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keybindings-element"></a>Taşıyan öğesi
 Taşıyan öğesi grupları KeyBinding öğeleri ve diğer taşıyan gruplandırmaları.  
@@ -47,14 +48,14 @@ Taşıyan öğesi grupları KeyBinding öğeleri ve diğer taşıyan gruplandır
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[KeyBinding öğesi](../extensibility/keybinding-element.md)|Komutlar için klavye kısayolları belirtir.|  
+|[KeyBinding Öğesi](../extensibility/keybinding-element.md)|Komutlar için klavye kısayolları belirtir.|  
 |[Taşıyan](../extensibility/keybindings-element.md)|Grupları KeyBinding öğeleri ve diğer taşıyan gruplandırmaları.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[CommandTable öğesi](../extensibility/commandtable-element.md)|Komutları temsil eden tüm öğeleri tanımlar.|  
+|[CommandTable Öğesi](../extensibility/commandtable-element.md)|Komutları temsil eden tüm öğeleri tanımlar.|  
   
 ## <a name="example"></a>Örnek  
   
@@ -69,4 +70,4 @@ Taşıyan öğesi grupları KeyBinding öğeleri ve diğer taşıyan gruplandır
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [KeyBinding öğesi](../extensibility/keybinding-element.md)   
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

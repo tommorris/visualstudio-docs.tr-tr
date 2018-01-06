@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3454a6514c22f1da82ef95407a0ff6be1fe442c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5b1f3a402d4f39b3648bbcf577ff48a130625b50
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Nasıl yapılır: Visio Belgelerinde Program Aracılığıyla Şekilleri Kopyalama ve Yapıştırma
   Program aracılığıyla şekilleri belgenin bir sayfaya kopyalayın ve yeni bir sayfa aynı belgedeki yapıştırın. Özgün sayfasında sahip oldukları gibi varsayılan konuma (Etkin pencereyi Merkezi) veya aynı koordinat konumlarına bunları yapıştırmak seçebilirsiniz.  
@@ -53,6 +54,6 @@ ms.lasthandoff: 10/31/2017
  [Visio çözümleri](../vsto/visio-solutions.md)   
  [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)   
  [Visio şekilleri ile çalışma](../vsto/working-with-visio-shapes.md)   
- [Nasıl yapılır: Visio belgesine program aracılığıyla şekiller ekleme](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
+ [Nasıl yapılır: Visio Belgesine Program Aracılığıyla Şekiller Ekleme](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
   
   

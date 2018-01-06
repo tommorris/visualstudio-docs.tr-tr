@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0cde4ca360aa0059abcbe0b64d63b4a94e85d78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 22929c34d656fb4f163076ca0b5dfb498d44c884
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-architecture"></a>Kaynak Denetim eklenti mimarisi
 Kaynak denetimi desteği ekleyebilirsiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uygulama ve kaynak denetimi eklenti ekleme tümleşik geliştirme ortamı (IDE). IDE iyi tanımlanmış kaynak denetim eklentisi API üzerinden eklenti kaynak denetimi bağlanır. IDE araç çubukları ve menü komutlarını oluşan bir kullanıcı arabirimi (UI) sağlayarak kaynak denetim sistemi sürüm denetim özelliklerini gösterir. Kaynak Denetim Eklentisi Kaynak denetimi işlevlerinin uygular.  
@@ -42,4 +43,4 @@ VS ve kaynak denetimi arasındaki etkileşim eklenti gösteren mimarisi diyagram
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetim Eklentileri](../../extensibility/source-control-plug-ins.md)   
  [Sözlük](../../extensibility/source-control-plug-in-glossary.md)   
- [Kaynak Denetimi Eklentisi oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md)
+ [Kaynak Denetimi Eklentisi Oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md)

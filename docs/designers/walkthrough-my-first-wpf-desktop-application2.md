@@ -15,11 +15,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e3f3002dc40c0bdae3aad6cdbacb4b9b70422157
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>İzlenecek yol: İlk WPF Masaüstü Uygulamam
 Bu kılavuzda Windows Presentation Foundation (WPF) geliştirme tanıtılmaktadır. Çoğu WPF Masaüstü uygulamaları için ortak olan öğeleri içeren temel bir uygulama oluşturacaksınız: XAML biçimlendirme, arka plan kodu, uygulama tanımları, denetimler, düzeni, veri bağlama ve stiller.  
@@ -268,7 +269,7 @@ Bu bölümde, proje ve bir ana penceresi veya form içeren uygulama altyapısı 
   
 1.  Aşağıdaki görüntü olarak kaydedin seçip `watermark.png`.  
   
-     ![Filigran resminin kılavuz](../designers/media/wpf_watermark.png "WPF_watermark")  
+     ![Filigran resminin kılavuz](../designers/media/wpf_watermark.png "Filigran")  
   
     > [!NOTE]
     >  Alternatif olarak kendi görüntünüzü oluşturabilir ve kaydedileceği `watermark.png`.  

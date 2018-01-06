@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 689fac97264aad3d301095cffed07b825c723474
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5f230da41efa8dd2fa522a5f86ae1402991b2cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elements-of-a-project-model"></a>Proje modeli öğeleri
 Tüm projelerde uygulamaları ve arabirimleri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] temel yapısını paylaşır: Proje türünüz için proje modeli. Geliştirdiğiniz VSPackage olan proje modelinde tasarım kararlarınızı ile uyumlu ve IDE tarafından sağlanan genel işlevselliği ile birlikte çalışma nesneleri oluşturun. Örneğin, bir proje öğesi nasıl kalıcı denetim karşın, bir dosya kalıcı gerekir bildirim kontrol. Ne zaman bir kullanıcı bir açık projeye öğe odağı yerleştirir ve seçer **kaydetmek** üzerinde **dosya** menüsünde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menü çubuğunda, proje türü kodunuza gerekir IDE komuttan müdahale, dosya kalıcı hale getirmek ve bildirim dosyası artık değiştirilir IDE yeniden gönderin.  
@@ -50,4 +51,4 @@ Proje modeli
  [Proje modeli çekirdek bileşenleri](../../extensibility/internals/project-model-core-components.md)   
  [Proje Fabrikalarını kullanarak proje örnekleri oluşturma](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [Nasıl yapılır: bir hizmeti Al](../../extensibility/how-to-get-a-service.md)   
- [Proje türleri oluşturma](../../extensibility/internals/creating-project-types.md)
+ [Proje Türleri Oluşturma](../../extensibility/internals/creating-project-types.md)

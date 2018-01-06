@@ -31,11 +31,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3df5fca6d41070b09ceb8b8be9b05212b7caa69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cf3fde8e5a7e91719da11faca01453b405e30401
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="building-office-solutions"></a>Office Çözümleri Oluşturma
   Genel olarak, derleme ve Office projelerinde hata ayıklama derleme ve diğer türleri Windows Forms gibi Visual Studio projelerinde hata ayıklama aynıdır. Bu bölümdeki konular, mevcut farkları açıklamaktadır. Uygulamaların nasıl yapılandırıldığı hakkında genel bilgi için bkz: [derleme ve Visual Studio'da derleme](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -112,9 +113,9 @@ ms.lasthandoff: 10/31/2017
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Office projelerinde hata ayıklama](../vsto/debugging-office-projects.md)|Office projelerinde hata ayıklama ilgili konuları sunar.|  
-|[İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Excel için temel bir belge düzeyi özelleştirme oluşturulacağını gösterir.|  
-|[Nasıl yapılır: devre dışı bırakılmış VSTO eklentisinin yeniden etkinleştirin](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|VSTO yazılım veya devre dışı bırakılmış eklentiyi yeniden etkinleştirmeyi açıklar.|  
-|[Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)|Office çözümleri oluşturma ve derlemelerin çözümünüzdeki rolü hakkındaki bilgilere bağlantılar sağlar.|  
+|[Office Projelerinde Hata Ayıklama](../vsto/debugging-office-projects.md)|Office projelerinde hata ayıklama ilgili konuları sunar.|  
+|[İzlenecek Yol: Excel İçin İlk Belge Düzeyi Özelleştirmeyi Oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Excel için temel bir belge düzeyi özelleştirme oluşturulacağını gösterir.|  
+|[Nasıl Yapılır: Devre Dışı Bırakılmış VSTO Eklentisini Yeniden Etkinleştirme](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|VSTO yazılım veya devre dışı bırakılmış eklentiyi yeniden etkinleştirmeyi açıklar.|  
+|[Office Çözümleri Tasarlama ve Oluşturma](../vsto/designing-and-creating-office-solutions.md)|Office çözümleri oluşturma ve derlemelerin çözümünüzdeki rolü hakkındaki bilgilere bağlantılar sağlar.|  
   
   

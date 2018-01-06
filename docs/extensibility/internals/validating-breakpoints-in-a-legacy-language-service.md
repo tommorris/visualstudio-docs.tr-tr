@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8d2f56c29121a4be06f00198edd235007fc1cd0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 85d9add1e66fdde2fcdbfd5c83bf99b6180a4642
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Kesme noktaları eski dil hizmetindeki doğrulanıyor
 Bir kesme noktası, bir hata ayıklayıcıda çalıştırılırken program yürütme belirli bir noktada durması gerektiğini belirtir. Düzenleyici bir kesme noktası için geçerli bir konum nelerin oluşturduğunu, hiçbir bilgiye sahip olduğundan kullanıcı kaynak dosyasında her satırda bir kesme noktası yerleştirebilirsiniz. Hata ayıklayıcı başlatıldığında, tüm (kesme noktaları olarak adlandırılır) işaretli kesme noktaları çalışan program uygun konuma bağlıdır. Kesme noktaları emin olmak için doğrulanır aynı anda bunlar geçerli kod konumlarını işaretler. Örneğin, kaynak kodu bu konumda hiçbir kod olduğundan bir yorum üzerinde bir kesme noktası geçerli değil. Hata ayıklayıcı geçersiz kesme noktaları devre dışı bırakır.  

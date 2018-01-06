@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b637e59b1e436c42b6b15f0dddaa1ed2ef6ff03c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 78c4823e3644dc755cef518dcbbba5f42c7aebc1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-colorable-items"></a>Özel Colorable öğeler
 Dil hizmetiniz bir parçası olarak özel colorable öğeler uygulayarak türlerinin listesi renklendirme, anahtar sözcükleri ve açıklamalar gibi kılabilirsiniz.  
@@ -72,4 +73,4 @@ Dil hizmetiniz bir parçası olarak özel colorable öğeler uygulayarak türler
  [Sözdizimi özel düzenleyicilerde renklendirme](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [Eski dil hizmetinde renklendirme sözdizimi](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Sözdizimi renklendirmesi uygulama](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Nasıl yapılır: yerleşik Colorable öğelerini kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+ [Nasıl yapılır: Yerleşik Renklendirilebilir Öğeleri Kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

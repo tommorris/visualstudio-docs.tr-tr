@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3db7dea958fb3d80a109c021ffb20260f0748bba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>İzlenecek yol: bir görünüm Adornment, komutları ve ayarları (sütun kılavuzları) oluşturma
 Visual Studio metin/Kod düzenleyicisinde komutlar ve görünüm efektleri ile genişletebilirsiniz.  Bu konu popüler uzantısına sahip bir özellik, sütun kılavuzları başlayacağınızı gösterir.  Sütun kılavuzları kodunuzu belirli sütun genişliklerini yönetmenize yardımcı olmak için metin düzenleyici görünümünde çizilmiş görsel olarak açık satırlar gelir.  Özel olarak biçimlendirilmiş kod belgeleri, blog gönderileri, dahil etmek veya raporları hata örnekleri için önemli olabilir.  
@@ -1357,4 +1358,4 @@ private int GetApplicableColumn(EventArgs e)
  [Dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md)   
  [Genişletme menüleri ve komutları](../extensibility/extending-menus-and-commands.md)   
  [Bir menüye alt menü ekleme](../extensibility/adding-a-submenu-to-a-menu.md)   
- [Bir düzenleyici öğesi şablonuyla bir uzantısı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+ [Düzenleyici Öğesi Şablonuyla Uzantı Oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md)

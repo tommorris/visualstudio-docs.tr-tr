@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
 - vs.debug.ENC.CannotEditWhileException
@@ -21,11 +21,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 21d72c5bb4bacaed0324d688d96c663e3153b6a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01cd34aacb4abea5f2f3ce29fcb53ba34aaeaf21
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Düzenle ve Devam Et Hata İletisi İletişim Kutusu
 Düzenle ve devam et, destekleyen bir dilde ayıklarken bu iletişim kutusu görünür ancak **Düzenle ve devam et** yapmış olduğunuz kod değişiklikleri türü için kullanılamaz. Hata iletisi kutu içinde daha ayrıntılı bir açıklama sağlar. Bu iletişim kutusunu dahil görmek için olası nedenler:  
@@ -62,4 +63,4 @@ Düzenle ve devam et, destekleyen bir dilde ayıklarken bu iletişim kutusu gör
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Düzenle ve devam et blog gönderisine](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)  
- [Desteklenen kod değişiklikleri (C++)](../debugger/supported-code-changes-cpp.md)
+ [Desteklenen Kod Değişiklikleri (C++)](../debugger/supported-code-changes-cpp.md)

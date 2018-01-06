@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 05862ea88623616cc237c55509c74169b9ce2383
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e0fb359dba89a3eef6f257b0cfe560a3f3ab5738
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Nasıl yapılır: Çevrimiçi bir ClickOnce Uygulamasında Sorgu Dize Bilgilerini Alma
 *Sorgu dizesi* ile başlayan bir URL biçiminde rasgele bilgi içeren soru işareti (?) sahip bölümüdür *ad = değer*. Sahip olduğunuz varsayalım bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] adlı uygulaması `WindowsApp1` üzerinde barındıran `servername`, ve değişken için bir değer geçirmek istediğiniz `username` zaman uygulamasını başlatır. URL'niz aşağıdakine benzeyebilir:  
@@ -82,4 +83,4 @@ ms.lasthandoff: 10/27/2017
  URL parametreleri izin, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kullanmadan önce kötü amaçlı karakter girişlerini temizlemeyi planlıyorsanız uygulama. Bir dize tırnak işareti, eğik çizgi veya noktalı virgül, örneğin katıştırılmış, rasgele verileri kullandıysanız bir veritabanında bir SQL sorgu filtrelenmemiş işlemleri. Sorgu dizesi güvenliği hakkında daha fazla bilgi için bkz: [komut dosyası yararlanan genel bakış](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md)
+ [ClickOnce Uygulamalarının Güvenliğini Sağlama](../deployment/securing-clickonce-applications.md)

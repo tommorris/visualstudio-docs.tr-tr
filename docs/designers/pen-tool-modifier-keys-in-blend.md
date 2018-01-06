@@ -12,19 +12,20 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e2485d80fa9ec0816513ac7e5c374bdd6832dff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a8f8f21520b0ab26e3f0099097a473ee298c5674
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend'de Kalem aracı değiştirici tuşları
-Aşağıdaki tabloda, kendisiyle oluştururken bir yolu değiştirmek için kullanabileceğiniz kısayolları listeler **kalem** aracı ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). Aynı zamanda **kalem** aracı eklemek veya var olan bir yol noktalarını kaldırmak için ya da iki mevcut yolları birleştirmek için.  
+Aşağıdaki tabloda, kendisiyle oluştururken bir yolu değiştirmek için kullanabileceğiniz kısayolları listeler **kalem** aracı ![ ] (../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). Aynı zamanda **kalem** aracı eklemek veya var olan bir yol noktalarını kaldırmak için ya da iki mevcut yolları birleştirmek için.  
   
 |Bu eylem yapmak için|Bunu yapın|İşaretçi|  
 |-----------------------|-------------|-------------|  
-|Bir çizgide kesimi başlatmak için bir noktası oluştur|Yeni noktası oluşturmak için tıklatın|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Kalem işaretçi|  
-|Bir eğik çizgi kesimi başlatmak için bir noktası oluştur|Yeni noktası oluşturmak için tıklayın ve ardından fare düğmesini bırakmadan önce Eğim tanıtıcıları ayarlamak için sürükleyin|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Kalem işaretçi|  
+|Bir çizgide kesimi başlatmak için bir noktası oluştur|Yeni noktası oluşturmak için tıklatın|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4AD4-aed8-40e09f8b7ab8")<br /><br /> Kalem işaretçi|  
+|Bir eğik çizgi kesimi başlatmak için bir noktası oluştur|Yeni noktası oluşturmak için tıklayın ve ardından fare düğmesini bırakmadan önce Eğim tanıtıcıları ayarlamak için sürükleyin|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4AD4-aed8-40e09f8b7ab8")<br /><br /> Kalem işaretçi|  
 |Son tanjantını keskin köşe yapmanıza izin vererek yumuşak kısıtlama olmadan Ayarla|Yeni noktası oluşturmak için tıklayın ve fare düğmesini bırakmadan önce ALT tuşuna basın|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Kalem işaretçi Ayarla|  
 |Böylece keskin köşe yapmanıza izin vererek Eğim uç noktaları bağımsız olarak, çalışır son tanjantını bölme|Yeni bir noktası oluşturabilir ve ardından ALT tuşunu basılı tutun ve fare düğmesini bırakmadan önce sürükleme için tıklatın|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Kalem işaretçi Ayarla|  
 |15 derecelik artışlarla yeni nokta çevresinde tanjant bitiş noktasını Taşı|Yeni bir noktası oluşturabilir ve ardından SHIFT + ALT tuşunu basılı tutun ve fare düğmesini bırakmadan önce sürükleme için tıklatın|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Kalem işaretçi Ayarla|  
@@ -41,4 +42,4 @@ Aşağıdaki tabloda, kendisiyle oluştururken bir yolu değiştirmek için kull
  [Klavye kısayolları ve değiştirici tuşları](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)   
  [Çalışma yüzeyi değiştirici tuşları](../designers/artboard-modifier-keys-in-blend.md)   
  [Doğrudan Seçim aracı değiştirici tuşları](../designers/direct-selection-tool-modifier-keys-in-blend.md)   
- [Şekiller ve yollar çizin](../designers/draw-shapes-and-paths.md)
+ [Şekiller ve yollar çizme](../designers/draw-shapes-and-paths.md)

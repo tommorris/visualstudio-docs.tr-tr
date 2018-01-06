@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 36d8f6afebf09d4efd176ba204dcc6f485a56124
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d967cec28a50948a9577336b886376b9cfe0040
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-property-user-interface"></a>Proje özelliği kullanıcı arabirimi
 Proje alt öğeleri projesinde kullanabilirsiniz **özellik sayfaları** iletişim kutusunda Temel Proje tarafından verdiği Gizle veya sağlanan salt okunur denetimler ve tüm sayfaları yapın veya Projealtözgüsayfalarıekleme**Özellik sayfaları** iletişim kutusu.  

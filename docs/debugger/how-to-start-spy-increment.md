@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b301d16c96878974c12b94879f717c727d129a7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8bc54bd1a2912c4c07b37a5694c2a576ddd5de31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-start-spy"></a>Nasıl Yapılır: Spy++ Hizmetini Başlatma
 Spy ++ Visual Studio'dan veya bir komut isteminde başlatabilirsiniz.  
@@ -45,4 +46,4 @@ Spy ++ Visual Studio'dan veya bir komut isteminde başlatabilirsiniz.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Spy ++ kullanma](../debugger/using-spy-increment.md)   
  [Spy ++ görünümleri](../debugger/spy-increment-views.md)   
- [Spy ++ başvurusu](../debugger/spy-increment-reference.md)
+ [Spy++ Başvurusu](../debugger/spy-increment-reference.md)

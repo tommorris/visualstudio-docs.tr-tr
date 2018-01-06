@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ee8dd14674a1157eefda60e2e7536d7ade90f79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e77511bdaaa96dc75f5be75c175b63fcd3cc3253
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Eski dil hizmetindeki üye tamamlama
 IntelliSense üye tamamlama sınıf, yapı, numaralandırma veya ad alanı gibi belirli bir kapsam olası üyelerinin listesini görüntüleyen bir araç ipucu olur. Kullanıcı "Bu" ardından bir noktayla türleri, örneğin, C# ' ta sınıf veya yapı geçerli kapsamdaki tüm üyelerin listesi Kullanıcı seçebileceği bir liste sunulur.  

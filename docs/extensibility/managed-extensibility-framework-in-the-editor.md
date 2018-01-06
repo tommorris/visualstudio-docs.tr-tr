@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4677b10d54a6c591c2f60e4c0b1f2978ad49a0ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c13b1a4e1b183b3a6f4b54f58cca3593ce5c7bb2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Düzenleyicideki Yönetilen Genişletilebilirlik Çerçevesi
 Düzenleyici, Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşenlerini kullanarak oluşturulmuştur. Düzenleyiciyi genişletmek için kendi MEF Bileşenleri oluşturabilirsiniz ve kodunuzu Düzenleyicisi bileşenleri kullanmasını sağlayabilirsiniz.  
@@ -105,4 +106,4 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 5.  Ne zaman, derlenmiş bunu koymak derlemenizi... Visual Studio yüklemenizin \Common7\IDE\Components\ klasör.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md)
+ [Dil Hizmeti ve Düzenleyici Uzantı Noktaları](../extensibility/language-service-and-editor-extension-points.md)

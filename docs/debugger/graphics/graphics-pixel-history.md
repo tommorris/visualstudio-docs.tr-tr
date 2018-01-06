@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a191585a251af878c6abef5599a490d7eafe363
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 966f15e0aac212207e0f6afe96dececc8950aab2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-pixel-history"></a>Grafik Piksel Geçmişi
 Visual Studio grafik Çözümleyicisi grafik piksel geçmişi penceresinde, belirli bir piksel oyun veya uygulama bir çerçevesinde oluşan Direct3D olaylar tarafından nasıl etkilendiğini anlamanıza yardımcı olur.  
@@ -78,4 +79,4 @@ Visual Studio grafik Çözümleyicisi grafik piksel geçmişi penceresinde, beli
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Cihaz durumu nedeniyle nesnelerin eksikliği](walkthrough-missing-objects-due-to-device-state.md)   
- [İzlenecek yol: Gölgeleme nedeniyle hataları işleme hata ayıklama](walkthrough-debugging-rendering-errors-due-to-shading.md)
+ [İzlenecek Yol: Gölgeleme Nedeniyle Çıkan Oluşturma Hatalarını Ayıklama](walkthrough-debugging-rendering-errors-due-to-shading.md)

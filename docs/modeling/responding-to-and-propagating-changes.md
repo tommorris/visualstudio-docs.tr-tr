@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7ea11c018f210b804f4ea6542eb7a7817ae1507c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cebfaa79e2524dcd6ba862ec55467acc9e5cd316
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="responding-to-and-propagating-changes"></a>Değişikliklere Yanıt Verme ve Değişiklikleri Yayma
 Bir öğenin oluşturulan, silinmiş veya güncelleştirildiğinde, model diğer bölümleri veya dosyaları, veritabanları veya diğer bileşenleri gibi dış kaynaklara değişikliği yayar kod yazabilirsiniz.  
@@ -26,15 +27,15 @@ Bir öğenin oluşturulan, silinmiş veya güncelleştirildiğinde, model diğer
   
 |Teknik|Senaryolar|Daha fazla bilgi için|  
 |---------------|---------------|--------------------------|  
-|Hesaplanan etki alanı özelliği tanımlarsınız.|Değeri modeldeki diğer özelliklerinden hesaplanan bir etki alanı özelliği. Örneğin, ilgili öğeler fiyatlar toplamını olan fiyat.|[Hesaplanan ve özel depolama özellikleri](../modeling/calculated-and-custom-storage-properties.md)|  
-|Özel depolama etki alanı özelliği tanımlarsınız.|Diğer bölümlerinde modelinin veya harici olarak depolanan bir etki alanı özelliği. Örneğin, modeldeki bir ağacında bir ifade dizesini ayrıştırma.|[Hesaplanan ve özel depolama özellikleri](../modeling/calculated-and-custom-storage-properties.md)|  
-|Geçersiz kılma OnValueChanging ve OnDeleting gibi işleyicileri değiştirme|Farklı öğeler eşit tutmak ve dış değerleri modeli ile eşitlenmiş tutar.<br /><br /> Tanımlanmış aralıklara değerlere kısıtlar.<br /><br /> Hemen önce ve özellik değerini ve diğer değişiklikler sonra çağrılır. Bir özel durum atma tarafından değişiklik sonlandırabilir.|[Etki alanı özellik değeri değişiklik işleyicileri](../modeling/domain-property-value-change-handlers.md)|  
-|Kurallar|Bir değişiklik oldu bir işlem sonuna hemen önce yürütme için sıraya alınan kurallar tanımlayabilirsiniz. Bunlar, geri alma veya yineleme yürütülmez. Deponun bir bölümünü başka ile eşitlenmiş tutmak için bunları kullanın.|[Kuralları modelindeki değişiklikleri yaymak](../modeling/rules-propagate-changes-within-the-model.md)|  
-|Deposu olayları|Modelleme deposu ekleme veya bir öğe veya bağlantıyı silme veya bir özelliğin değerini değiştirmek gibi olayların bildirimleri sağlar. Olay da geri alma ve yineleme üzerinde yürütülür. Deposu olayları deposunda bulunmayan değerleri güncelleştirmek için kullanın.|[Olay işleyicileri Model dışındaki değişiklikleri yaymak](../modeling/event-handlers-propagate-changes-outside-the-model.md)|  
-|.NET olayları|Şekilleri fare tıklamaları ve diğer hareketleri yanıt olay işleyicileri sahiptir. Bu olayların her nesne için kaydolmanız gerekir. Kayıt InitializeInstanceResources bir geçersiz kılma genellikle yapılır ve her öğe için yapılması gerekir.<br /><br /> Bu olaylar, genellikle bir işlemin dışında oluşur.|[Nasıl yapılır: bir şekli veya oluşturma öğesi tıklama müdahale](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|  
-|Sınırların kuralları|Sınırların kural, özellikle bir şekli sınırlarına sınırlamak için kullanılır.|[BoundsRules şekli konumunu ve boyutunu sınırlamak](../modeling/boundsrules-constrain-shape-location-and-size.md)|  
-|Seçim kuralları|Seçim kurallarını özellikle hangi kullanıcı seçebilir kısıtlar.|[Nasıl yapılır: erişmek ve geçerli seçim sınırlamak](../modeling/how-to-access-and-constrain-the-current-selection.md)|  
-|OnAssocatedPropertyChanged|Şekiller ve bağlayıcılar gölge, ok uçları, renk ve çizgi genişlikleri ve stil gibi özelliklerini kullanarak model öğelerini durumlarını gösterir.|[Şekiller ve bağlayıcılar modeli yansıtacak şekilde güncelleştirme](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|  
+|Hesaplanan etki alanı özelliği tanımlarsınız.|Değeri modeldeki diğer özelliklerinden hesaplanan bir etki alanı özelliği. Örneğin, ilgili öğeler fiyatlar toplamını olan fiyat.|[Hesaplanan ve Özel Depolama Özellikleri](../modeling/calculated-and-custom-storage-properties.md)|  
+|Özel depolama etki alanı özelliği tanımlarsınız.|Diğer bölümlerinde modelinin veya harici olarak depolanan bir etki alanı özelliği. Örneğin, modeldeki bir ağacında bir ifade dizesini ayrıştırma.|[Hesaplanan ve Özel Depolama Özellikleri](../modeling/calculated-and-custom-storage-properties.md)|  
+|Geçersiz kılma OnValueChanging ve OnDeleting gibi işleyicileri değiştirme|Farklı öğeler eşit tutmak ve dış değerleri modeli ile eşitlenmiş tutar.<br /><br /> Tanımlanmış aralıklara değerlere kısıtlar.<br /><br /> Hemen önce ve özellik değerini ve diğer değişiklikler sonra çağrılır. Bir özel durum atma tarafından değişiklik sonlandırabilir.|[Etki Alanı Özellik Değeri Değişiklik İşleyicileri](../modeling/domain-property-value-change-handlers.md)|  
+|Kurallar|Bir değişiklik oldu bir işlem sonuna hemen önce yürütme için sıraya alınan kurallar tanımlayabilirsiniz. Bunlar, geri alma veya yineleme yürütülmez. Deponun bir bölümünü başka ile eşitlenmiş tutmak için bunları kullanın.|[Değişiklikleri Modelin İçinde Yayan Kurallar](../modeling/rules-propagate-changes-within-the-model.md)|  
+|Deposu olayları|Modelleme deposu ekleme veya bir öğe veya bağlantıyı silme veya bir özelliğin değerini değiştirmek gibi olayların bildirimleri sağlar. Olay da geri alma ve yineleme üzerinde yürütülür. Deposu olayları deposunda bulunmayan değerleri güncelleştirmek için kullanın.|[Değişiklikleri Modelin Dışına Yayan Olay İşleyicileri](../modeling/event-handlers-propagate-changes-outside-the-model.md)|  
+|.NET olayları|Şekilleri fare tıklamaları ve diğer hareketleri yanıt olay işleyicileri sahiptir. Bu olayların her nesne için kaydolmanız gerekir. Kayıt InitializeInstanceResources bir geçersiz kılma genellikle yapılır ve her öğe için yapılması gerekir.<br /><br /> Bu olaylar, genellikle bir işlemin dışında oluşur.|[Nasıl yapılır: Şekil veya Dekoratörde bir Click için Araya Girme](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|  
+|Sınırların kuralları|Sınırların kural, özellikle bir şekli sınırlarına sınırlamak için kullanılır.|[BoundsRules Şekil Konumunu ve Boyutunu Kısıtlamama](../modeling/boundsrules-constrain-shape-location-and-size.md)|  
+|Seçim kuralları|Seçim kurallarını özellikle hangi kullanıcı seçebilir kısıtlar.|[Nasıl yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama](../modeling/how-to-access-and-constrain-the-current-selection.md)|  
+|OnAssocatedPropertyChanged|Şekiller ve bağlayıcılar gölge, ok uçları, renk ve çizgi genişlikleri ve stil gibi özelliklerini kullanarak model öğelerini durumlarını gösterir.|[Modeli Yansıtacak Şekilleri ve Bağlayıcıları Güncelleştirme](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|  
   
 ## <a name="comparing-rules-and-store-events"></a>**Kuralları ve deposu olayları karşılaştırma**  
  Bir modelde değişiklik olduğunda değişiklik notifiers, kuralları ve olayları çalıştırılır.  
@@ -53,4 +54,4 @@ Bir öğenin oluşturulan, silinmiş veya güncelleştirildiğinde, model diğer
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: bir şekli veya oluşturma öğesi tıklama müdahale](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
- [Bir etki alanına özgü dil kişiselleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+ [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)

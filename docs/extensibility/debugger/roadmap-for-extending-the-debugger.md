@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af86f2b8daeffeb700b619c4ba0d9cbb00700dd8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 612017888c78f0994a83a10e3628fc10b667f8d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Hata ayıklayıcı genişletmek için yol haritası
 Bu belge genişletmek için kılavuz ve başvuru bilgileri sağlar [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] ile hata ayıklayıcı [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -34,23 +35,23 @@ Bu belge genişletmek için kılavuz ve başvuru bilgileri sağlar [!INCLUDE[vs_
   
      [İfade değerlendirme](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
-     [İfadeleri değerlendirme](../../extensibility/debugger/evaluating-expressions.md)  
+     [İfadeleri Değerlendirme](../../extensibility/debugger/evaluating-expressions.md)  
   
-     [İfade değerlendirme bağlamı](../../extensibility/debugger/expression-evaluation-context.md)  
+     [İfade Değerlendirme Bağlamı](../../extensibility/debugger/expression-evaluation-context.md)  
   
-     [Kesme modunda ifade değerlendirme](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
+     [Kesme Modunda İfade Değerlendirme](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
   
-     [Bir ortak dil çalışma zamanı ifade değerlendiricisi yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
+     [Ortak Dil Çalışma Zamanı İfade Değerlendiricisi Yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
   
 -   İşletim sistemi veya başka bir çalışma zamanı ortamında özel bir hedefleri, kendi DE yazmanız gerekir. ATL COM kullanarak basit bir DE oluşturan bir Öğreticisi sağlanır. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
-     [Bir özel hata ayıklama altyapısı oluşturma](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
+     [Özel Hata Ayıklama Altyapısı Oluşturma](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
      [Öğretici: ATL COM kullanarak hata ayıklama altyapısı oluşturma](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
-     [Bir bağlantı noktası sağlayıcı uygulama](../../extensibility/debugger/implementing-a-port-supplier.md)  
+     [Bağlantı Noktası Sağlayıcısı Uygulama](../../extensibility/debugger/implementing-a-port-supplier.md)  
   
-     [Örnekleri](../../extensibility/debugger/visual-studio-debugging-samples.md)  
+     [Örnekler](../../extensibility/debugger/visual-studio-debugging-samples.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Başlarken](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

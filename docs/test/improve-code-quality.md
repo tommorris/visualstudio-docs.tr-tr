@@ -12,11 +12,12 @@ helpviewer_keywords:
 - unit tests [Visual Studio]
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 64e6f225e958879a11c5a1b44facc150d1932662
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: f3b7bb9139b1c63bca4c9cf9fbd61e21de6ed043
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio Test Araçları
 
@@ -39,8 +40,8 @@ Visual Studio Test Araçları sizin ve ekibinizin geliştirmek ve kod mükemmel 
 
 ## <a name="related-scenarios"></a>İlgili senaryolar
 
-* [Keşif & el ile test etme](/vsts/manual-test/)
-* [Yük testleri](/vsts/load-test/index)
-* [Sürekli test etme](/vsts/build-release/test/index)
-* [Team Services ve TFS için DevOps genel bakış](/vsts/user-guide/devops-alm-overview)
-* [Kod çözümleme araçları ile uygulama kalitesini analiz etme](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)
+* [Keşif & el ile test etme (VSTS)](/vsts/manual-test/)
+* [Yük testi (VSTS)](/vsts/load-test/index)
+* [Sürekli (VSTS) test etme](/vsts/build-release/test/index)
+* [Team Services ve TFS (VSTS) için DevOps genel bakış](/vsts/user-guide/devops-alm-overview)
+* [Kod çözümleme araçları](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

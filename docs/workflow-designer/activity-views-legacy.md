@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 50f57684db32f601bd4cbf870456da458aa5ce7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0a6658bdf0f1df76e585236497ba4ba19525b199
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="activity-views-legacy"></a>Aktivite görünümleri (eski)
 Tarafından sağlanan etkinliklerin birçok [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], hangi iş akışları oluşan gelen eski kullanılabilen birkaç tasarım görünümleri sahip [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Bir etkinlik Tasarımcısı'ndan sürüklediğinizde **araç** tasarım yüzeyine ve bundan sonra etkinliği seçtiğinizde kullanarak ya da farklı tasarım görünümleri arasında geçiş yapabilirsiniz **iş akışı**menüsü veya seçili etkinliği sağ tıklanarak. Ayrıca, seçili etkinlik adı işaretçinin taşıdığınızda, sekmeler açılan kümesi farklı görünümleri arasında geçiş yapmak için kullanabileceğiniz görünür.  
@@ -40,4 +41,4 @@ Tarafından sağlanan etkinliklerin birçok [!INCLUDE[wf](../workflow-designer/i
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski iş akışı etkinlikleri](../workflow-designer/legacy-workflow-activities.md)   
- [Sıralı iş akışı görünümler (eski)](../workflow-designer/sequential-workflow-views-legacy.md)
+ [Sıralı İş Akışı Görünümleri (Eski)](../workflow-designer/sequential-workflow-views-legacy.md)

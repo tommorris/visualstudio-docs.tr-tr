@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a910c3f43dc0cb49e6b7f6f70355c6c195df7a82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 372a1efccbfa211167930710418905d95411760c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-3-d-models"></a>3B Modelleriyle Çalışma
 Model Düzenleyicisi'nde kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 3-b modelleri oluşturmak için. DirectX tabanlı oyun veya uygulama modellerinde kullanabilirsiniz.  
@@ -33,4 +34,4 @@ Model Düzenleyicisi'nde kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/i
 |Başlık|Açıklama|  
 |-----------|-----------------|  
 |[Model Düzenleyicisi](../designers/model-editor.md)|Model Düzenleyicisinde 3-b modelleri ile çalışmak için nasıl kullanılacağını açıklar.|  
-|[Model düzenleyicisinde örnekleri](../designers/model-editor-examples.md)|Model Düzenleyicisinde ortak 3-b modelleme görevleri gerçekleştirmek için nasıl kullanılacağını gösteren konulara bağlantılar sağlar.|
+|[Model Düzenleyici Örnekleri](../designers/model-editor-examples.md)|Model Düzenleyicisinde ortak 3-b modelleme görevleri gerçekleştirmek için nasıl kullanılacağını gösteren konulara bağlantılar sağlar.|

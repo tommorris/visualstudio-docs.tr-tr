@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 011de9ce3e4e1445354f907dcf56a0f4ecbef6bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bb56cef2f60b0268528ea75e4fe2b991a7472192
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="stepping-in-break-mode"></a>Kesme modunda Adımlama
 Hata ayıklayıcı kesme modunda olduğunda ve kod üzerinden adım gerekir gerçekleşen işlem açıklanmaktadır:  
@@ -32,4 +33,4 @@ Hata ayıklayıcı kesme modunda olduğunda ve kod üzerinden adım gerekir ger�
 2.  Adım tamamlandığında, gönderme bir [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) durdurma olayı olarak.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Arama hata ayıklayıcı olayları](../../extensibility/debugger/calling-debugger-events.md)
+ [Hata Ayıklayıcısı Olaylarını Çağırma](../../extensibility/debugger/calling-debugger-events.md)

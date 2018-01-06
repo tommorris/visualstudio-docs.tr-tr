@@ -6,18 +6,19 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Window Search
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abc4ea7ee1445c0d1846fadb5319f17d98d3afcd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f3b7b20b6ae96904b88ad97bbf87bf066f941d6
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="window-search-dialog-box"></a>Pencere Arama İletişim Kutusu
 Bulma ve belirli bir pencere için düğümü seçmek için bu iletişim kutusunu kullanın [Windows görünümü](../debugger/windows-view.md). Bu iletişim kutusunu görüntülemek için Windows Görünüm penceresi odağı taşıyın. Ardından **Bul penceresi** gelen **arama** menüsü.  
@@ -48,20 +49,20 @@ Bulma ve belirli bir pencere için düğümü seçmek için bu iletişim kutusun
  [Pencereler görünümünde pencere arama](../debugger/how-to-search-for-a-window-in-windows-view.md)  
  Windows görünümünde belirli bir pencere Bul açıklanmaktadır.  
   
- [Pencereler görünümü](../debugger/windows-view.md)  
+ [Pencereler Görünümü](../debugger/windows-view.md)  
  Kullanılabilir windows ve denetimleri ağaç görünümünü görüntüler.  
   
- [Spy ++ görünümleri](../debugger/spy-increment-views.md)  
+ [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
  Windows, iletileri, işlemleri ve iş parçacıklarının Spy ++ ağaç görünümler açıklanmaktadır.  
   
- [Spy ++ kullanma](../debugger/using-spy-increment.md)  
+ [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
- [Pencere Bul iletişim kutusu](../debugger/find-window-dialog-box.md)  
+ [Pencere Bul İletişim Kutusu](../debugger/find-window-dialog-box.md)  
  Özellikler veya belirli bir pencere iletileri görüntülemek için kullanılır.  
   
  [Pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md)  
  Windows görünümünde seçilen penceresinin özelliklerini görüntülemek için kullanılır.  
   
- [Spy ++ başvurusu](../debugger/spy-increment-reference.md)  
+ [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
  Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümleri içerir.

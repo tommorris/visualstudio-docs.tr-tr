@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 00cc60b0b6c522c6a6674456adae50aace266030
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98d6edf4da8b7f0275a7b361f5492f4f49a1f747
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-and-removing-property-pages"></a>Ekleme ve kaldırma özellik sayfaları
 Proje Tasarımcısı proje özellikleri, ayarları ve kaynakları yönetmek için merkezi bir konum sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Tek bir pencere olarak göründüğü [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE) ve sol sekmelerinde üzerinden erişilen bölmeleri sağdaki sayısını içerir. Proje Tasarımcısı'nda (genellikle özellik sayfaları adlandırılır) bölmeleri proje türü ve dili göre değişir. Proje Tasarımcısı ile erişilebilir **özellikleri** komutunu **proje** menüsü.  
@@ -209,4 +210,4 @@ Proje Tasarımcısı proje özellikleri, ayarları ve kaynakları yönetmek içi
 >  Bu konuda sağlanan tüm kod örnekleri daha büyük bir örneğin bölümlerdir [VSSDK örnekleri](http://aka.ms/vs2015sdksamples).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje alt türleri](../extensibility/internals/project-subtypes.md)
+ [Proje Alt Türleri](../extensibility/internals/project-subtypes.md)

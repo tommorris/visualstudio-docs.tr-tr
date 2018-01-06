@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 303ce6608ee17b99995d871c5da1536a08fef335
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9cd3e9d5e10e6946b4cae8ce02a5a39511e4baaf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>İzlenecek yol: Quıckınfo araç ipuçlarını görüntüleme
 Quıckınfo yöntem imzaları görüntüleyen bir IntelliSense özelliğidir ve açıklamaları bir kullanıcı bir yöntem adı işaretçinin taşır. Quıckınfo açıklamaları sağlamak istediğiniz tanımlayıcıları tanımlama ve ardından içeriği görüntülemek için bir araç ipucunda oluşturarak Quıckınfo gibi dil tabanlı özellikler uygulayabilirsiniz. Bir dil hizmeti bağlamında Quıckınfo tanımlayabilirsiniz kendi dosya adı uzantısı ve içerik türünü tanımlayın ve yalnızca bu tür için Quıckınfo görüntülemek veya varolan bir içerik türü (örneğin, "metin") için Quıckınfo görüntüleyebilirsiniz. Bu kılavuzda "metin" içerik türü için Quıckınfo görüntülemek nasıl gösterir.  
@@ -177,4 +178,4 @@ Quıckınfo yöntem imzaları görüntüleyen bir IntelliSense özelliğidir ve 
 4.  İşaretçinin "Ekle" oluşumlarının birinin üzerine taşıyın. İmza ve açıklamasını `add` yöntemi görüntülenmesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: bir içerik türü için bir dosya adı uzantısı bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek Yol: Bir İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

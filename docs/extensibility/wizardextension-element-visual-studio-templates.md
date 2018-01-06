@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41b5b3b786716603167b3917e5aa7b4a7ae14920
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bb0922d0d3666d1bb00f01c0151dfa14c24a3931
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension Öğesi (Visual Studio Şablonları)
 Şablon Sihirbazı'nı özelleştirme kayıt öğeleri içerir.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Derleme](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Gerekli öğe.<br /><br /> Adı veya genel derleme önbelleğinde görünür bir derleme tanımlayıcı adı belirtir. Koyulmalıdır en az bir `Assembly` öğesinde bir `WizardExtension` öğesi.|  
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Gerekli öğe.<br /><br /> Adı veya genel derleme önbelleğinde görünür bir derleme tanımlayıcı adı belirtir. Koyulmalıdır en az bir `Assembly` öğesinde bir `WizardExtension` öğesi.|  
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Gerekli öğe.<br /><br /> Uygulayan sınıfa tam adını `IWizard` arabirimi. Koyulmalıdır en az bir `FullClassName` öğesinde bir `WizardExtension` öğesi.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
@@ -94,4 +95,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   
  [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
- [Nasıl yapılır: sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Nasıl Yapılır: Sihirbazları Proje Şablonlarıyla Kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)

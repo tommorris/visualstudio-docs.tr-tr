@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 69669acc9cc0815dc8df0c88172213ad3e3698f9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 692f39fb3f83ee12e3e1c6ec20ce892727d1f2a7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Nasıl Yapılır: Hedefleri ve Görevleri Yapılandırma
 Seçili MSBuild görevleri, bunlar geliştirme bilgisayar ortamı bağımsız olarak hedef ortamdaki çalıştırmak için ayarlanabilir. Örneğin, bu hedefleri 32-bit mimari bir uygulama oluşturmak için bir 64-bit bilgisayarda kullandığınızda, seçili görevleri bir 32 bit işlemde çalıştırılır.  
@@ -111,4 +112,4 @@ Seçili MSBuild görevleri, bunlar geliştirme bilgisayar ortamı bağımsız ol
 >  Görev parametrelerini görev ana bilgisayar bağlamı içinde değil, üst düğümü bağlamında değerlendirilir. Çalışma zamanı veya mimarisi-(örneğin, Program dosyalarının konumu) bağımlıdır ortam değişkenleri üst düğümüyle eşleşen değere değerlendirir.  Aynı ortam değişkenini görev tarafından doğrudan salt okunur ise, ancak bunu doğru görev konak bağlamında değerlendirilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hedefleri ve görevleri yapılandırma](../msbuild/configuring-targets-and-tasks.md)
+ [Hedefleri ve Görevleri Yapılandırma](../msbuild/configuring-targets-and-tasks.md)

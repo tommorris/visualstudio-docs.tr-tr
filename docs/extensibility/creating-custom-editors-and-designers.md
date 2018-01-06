@@ -15,11 +15,12 @@ caps.latest.revision: "31"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 149870d9c9a0a281cb0bba167496cc4c37d6f83a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d8d354333545a6ec2b637e160818d506fa049c29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-editors-and-designers"></a>Özel düzenleyicileri ve tasarımcıları oluşturma
 Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi farklı türlerde barındırabilir:  
@@ -73,32 +74,32 @@ Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi farklı türle
      Gömülü olması durumunda, bir ana penceresi dış Düzenleyicisi oluşturun ve ardından çağırın <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> yöntemi ve kümesi <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> numaralandırma değeri `DP_External`. Düzenleyici katıştırılmış, IDE otomatik olarak için ayrı bir pencerede oluşturur.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [İzlenecek yol: bir özel düzenleyici oluşturma](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [İzlenecek Yol: Özel Düzenleyici Oluşturma](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Bir özel düzenleyici oluşturma açıklanmaktadır.  
   
- [İzlenecek yol: Bir özel düzenleyici özellik ekleme](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [İzlenecek Yol: Bir Özel Düzenleyiciye Özellik Ekleme](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  Özel bir düzenleyici özelliklere açıklanmaktadır.  
   
- [Tasarımcı başlatma ve meta verileri yapılandırma](../extensibility/designer-initialization-and-metadata-configuration.md)  
+ [Tasarımcıyı Başlatma ve Meta Verileri Yapılandırma](../extensibility/designer-initialization-and-metadata-configuration.md)  
  Bir tasarımcı başlatılacağı açıklanmaktadır.  
   
- [Tasarımcılar geri alma desteği sağlama](../extensibility/supplying-undo-support-to-designers.md)  
+ [Tasarımcılara Geri Alma Desteği Sağlama](../extensibility/supplying-undo-support-to-designers.md)  
  Tasarımcıları için geri alma desteği sağlamak üzere açıklanmaktadır.  
   
- [Sözdizimi özel düzenleyicilerde renklendirme](../extensibility/syntax-coloring-in-custom-editors.md)  
+ [Özel Düzenleyicilerde Söz Dizimi Renklendirmesi](../extensibility/syntax-coloring-in-custom-editors.md)  
  Sözdizimi çekirdek Düzenleyicisi'ni ve özel düzenleyiciler renklendirme arasındaki farkı açıklar.  
   
- [Belge verileri ve belge görünümünde özel düzenleyiciler](../extensibility/document-data-and-document-view-in-custom-editors.md)  
+ [Özel Düzenleyicilerde Belge Verileri ve Belge Görünümü](../extensibility/document-data-and-document-view-in-custom-editors.md)  
  Belge verileri ve belge görünümleri özel düzenleyicilerde uygulamak açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Eski arabirimleri Düzenleyicisi'nde](../extensibility/legacy-interfaces-in-the-editor.md)  
  Eski API yoluyla çekirdek Düzenleyicisi'ne erişmek açıklanmaktadır.  
   
- [Eski dil hizmeti geliştirme](../extensibility/internals/developing-a-legacy-language-service.md)  
+ [Eski Dil Hizmeti Geliştirme](../extensibility/internals/developing-a-legacy-language-service.md)  
  Bir dil hizmeti uygulama açıklanmaktadır.  
   
- [Visual Studio diğer bölümleri genişletme](../extensibility/extending-other-parts-of-visual-studio.md)  
+ [Visual Studio’nun Diğer Bölümlerini Genişletme](../extensibility/extending-other-parts-of-visual-studio.md)  
  Kalan eşleşen kullanıcı Arabirimi öğeleri oluşturma açıklanmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

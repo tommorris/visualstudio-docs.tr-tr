@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 297d9535a8e9655ed87230d4f947faeb29e08487
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbf234d18c48ed501987f160bd2b98ec9f768b6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manifest-from-resources"></a>Kaynaklardan gelen bildirim
 Bildirim kaynakları aracından görüntü kaynakları (.png veya .xaml dosyaları) bir listesini alır ve Visual Studio Görüntü hizmeti ile kullanılmak üzere bu görüntüleri izin veren bir .imagemanifest dosyası oluşturur bir konsol uygulamasıdır. Ayrıca, bu aracı için var olan bir .imagemanifest görüntüleri eklemek için kullanılabilir. Bu araç, bir Visual Studio uzantısı görüntülere yüksek DPI ve tema desteği eklemek için yararlıdır. Oluşturulan .imagemanifest dosya dahil ve Visual Studio Uzantısı (.vsix) bir parçası olarak dağıtılır.  
@@ -25,7 +26,7 @@ Bildirim kaynakları aracından görüntü kaynakları (.png veya .xaml dosyalar
   
  ManifestFromResources /resources:\<dizin1 >;\< Img1 > /assembly:\<AssemblyName > \<isteğe bağlı bağımsız değişken >  
   
- **Bağımsız değişkenler**  
+ **Bağımsız Değişkenler**  
   
 ||||  
 |-|-|-|  

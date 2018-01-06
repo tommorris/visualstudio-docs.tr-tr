@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8061c419f81493e56a58df8fefbe4d3362d43e46
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 753f916d148675afd7313afc8673232f22280b7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-issues"></a>Güvenlik sorunları
 Visual Studio kullanarak bir program hata ayıklamak için gereken tek izinleri olanları programı çalıştırmak için geliştiricinin ihtiyacı aynıdır. Bu, çoğu durumlarda (Internet bilgi hizmeti gibi başka hizmetleri içeren bazı durumlarda izinler daha yüksek düzeyde gerektirebilir) uzaktan hata ayıklama içerir.  

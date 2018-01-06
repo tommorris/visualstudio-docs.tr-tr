@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b41cb3012b937ac5448b129657064cca68a5d725
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b54181205c98445fef393993d683085cc3afbcba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Nasıl yapılır: bir Atom oluşturmak için özel Galerisi akışı
 Bir Atom (uzantılarını içerir ve akışına ekleyen bir intranet konumu için RSS akışı) oluşturabileceğiniz **Uzantılar ve güncelleştirmeler** Özel Galeri olarak. Daha fazla bilgi için bkz: [özel galerileri](../extensibility/private-galleries.md).  
@@ -77,4 +78,4 @@ Bir Atom (uzantılarını içerir ve akışına ekleyen bir intranet konumu içi
  Görüntüleri oluşturulan klasöründeki ekran görüntüleri iki bağlantı etiketlerini bildirim başvurun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel galerileri](../extensibility/private-galleries.md)
+ [Özel Galeriler](../extensibility/private-galleries.md)

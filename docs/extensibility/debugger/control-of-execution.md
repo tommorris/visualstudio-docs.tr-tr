@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79d888e9b50d18b4a9d46a8914381db27f09698d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a76b14f28bdb74345813931fc334f98090abd93c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-of-execution"></a>Yürütme denetimi
 Hata ayıklama altyapısı (DE) genellikle aşağıdaki olaylardan biri son başlatma olayı olarak gönderir:  
@@ -62,4 +63,4 @@ Hata ayıklama altyapısı (DE) genellikle aşağıdaki olaylardan biri son baş
  SDM yapar için çağrıları `Step`, **yürütme**, ve **devam** SDM hızlı geri dönmek için çağrı beklediğini anlamı olan zaman uyumsuz. DE SDM durdurma olay önce aynı iş parçacığı üzerinde gönderirse `Step`, **yürütme**, veya **devam** döndürür, SDM askıda kalır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama görevleri](../../extensibility/debugger/debugging-tasks.md)
+ [Hata Ayıklama Görevleri](../../extensibility/debugger/debugging-tasks.md)

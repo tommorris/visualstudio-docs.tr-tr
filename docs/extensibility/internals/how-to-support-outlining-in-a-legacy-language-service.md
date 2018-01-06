@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e08ca6d5a670bb2c1a0f0073920c753add50322c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa57b0d09cb8422a9dde1f70306d2f3808b0384e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Nasıl yapılır: Destek eski dil hizmetinde anahat oluşturma
 Anahat oluşturma genişletmek veya metnin farklı bölgelerde daraltmak için kullanılır. Anahat oluşturma yolu kullanılır farklı diller tarafından farklı şekilde tanımlanabilir. Daha fazla bilgi için bkz: [anahat](../../ide/outlining.md).  
@@ -50,4 +51,4 @@ Anahat oluşturma genişletmek veya metnin farklı bölgelerde daraltmak için k
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: eski dil hizmetindeki gizli metin desteği sağlar](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
- [Nasıl yapılır: eski dil hizmetindeki genişletilmiş anahat desteği sağlar](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+ [Nasıl yapılır: Eski Dil Hizmetinde Genişletilmiş Ana Hat Oluşturma Desteği Sağlama](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

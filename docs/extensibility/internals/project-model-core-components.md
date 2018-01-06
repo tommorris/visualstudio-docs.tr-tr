@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7759a2394f2cda19f875a85a22c4a674fee8964
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d2de7b73238589786c1e8a4ba42389201123c2b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-model-core-components"></a>Proje modeli çekirdek bileşenleri
 Aşağıdaki tablolarda proje modeline genişletin. Tabloları kısa açıklamaları model ve arabirimleri ve belirli nesneler ile ilişkili hizmetler tanımlanan Hizmetleri ve arabirimleri sunar. Ayrıca, isteğe bağlı olarak proje oluşturma ve Bakım, belirli bir proje türü gereksinimlerine bağlı olarak diğer arabirimleri tabloları ayrıntılarını gösterir.  
@@ -107,4 +108,4 @@ Aşağıdaki tablolarda proje modeline genişletin. Tabloları kısa açıklamal
  [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Yapı içinde değil: Proje türü (C++) uygulamak için HierUtil7 proje sınıflarını kullanma](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Simgenin tarama araçları destekleme](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Proje modeli öğeleri](../../extensibility/internals/elements-of-a-project-model.md)
+ [Proje Modeli Öğeleri](../../extensibility/internals/elements-of-a-project-model.md)

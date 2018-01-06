@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 787cebc77d0ca3d06fd88be8ab6f42c6bae3ee38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbb14818cebb35f703ec6f5ade084d96ac383d6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID ve Visual Studio araç çubukları kimlikleri
 Bu konu Visual Studio tümleşik geliştirme ortamı (IDE) dahil araç çubukları GUID ve ID değerlerini numaralandırır ve grupları içerir. Bu değerler, Visual Studio SDK'sı bir parçası olarak yüklenen .vsct dosyalar içinde tanımlanır. Daha fazla bilgi için bkz: [IDE-Defined komutlar, menüler ve grupları](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -140,4 +141,4 @@ Bu konu Visual Studio tümleşik geliştirme ortamı (IDE) dahil araç çubuklar
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Menü denetleyicisi araç çubuğuna ekleme](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
  [Araç çubuğu araç penceresine ekleme](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [GUID ve Visual Studio menü kimlikleri](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+ [Visual Studio Menülerinin GUID’leri ve Kimlikleri](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

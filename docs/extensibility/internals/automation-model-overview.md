@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d4fda81b18824560276c1398583b2674bf200ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 208357343a3e77e29b1dc0a98b6159c5ac3f957e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automation-model-overview"></a>Otomasyon modeline genel bakış
 Otomasyon modeli karşı bir Visual Studio eklentisi veya uzantı yazabilirsiniz nesneler kümesinden oluşur. Bir eklenti, Visual Studio ortamı yönetmek ve ortak görevleri otomatik hale getirmek bir uygulamadır. Visual Studio uzantısı özel Visual Studio bileşenlerini oluşturmak veya metin düzenleyici gibi standart bileşenlerin işlevselliğini ekleyin.  
@@ -36,7 +37,7 @@ Visual Studio Otomasyon nesneleri
   
  Yerler burada ortamının otomasyon modeli genişletme düşünebilirsiniz:  
   
--   Project  
+-   Proje  
   
 -   Belge  
   

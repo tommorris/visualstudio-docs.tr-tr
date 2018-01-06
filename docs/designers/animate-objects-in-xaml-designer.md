@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1f4fd45337ebd0f00362d352077cf8441e6f5afa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 57aa814ac458fc3c893f8a2d557840d936ed033b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="animate-objects-in-xaml-designer"></a>XAML Tasarımcısı’nda nesnelere animasyon ekleme
 Nesneleri taşıma kısa animasyon oluşturma veya içeri ve dışarı silinerek.  
@@ -41,4 +42,4 @@ Nesneleri taşıma kısa animasyon oluşturma veya içeri ve dışarı silinerek
 |![Yüklenen özellikleri yapılandırmak](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [animasyon oluşturma ve kolaylaştırma ile çalışma](https://www.youtube.com/watch?v=mAJXYrwxGYo)|Bir kullanıcı bir hesaplayıcı görüntüde düğmesini basılı bastığında görüntülenen efektler animasyon.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio için Blend'i kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+ [Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

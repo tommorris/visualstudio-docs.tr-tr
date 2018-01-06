@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb35cc5cdc00b5c4225ba4fd2fb8cc2b1214cb49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 685e7beeea5921b7c555b53aaa0b396f81914cbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Visual Studio hata ayıklayıcısı Windows hakkında bilgi edinin
 Programınızı hata ayıklarken hata ayıklayıcı pencerelerinin çoğuna açabilirsiniz. Hata ayıklayıcı windows listesini görmek için bir kesme noktası ayarlayın ve hata ayıklamayı Başlat. Kesme ve yürütme durakları isabet olduğunda tıklatın **hata ayıklama > Windows**.  
@@ -26,13 +27,13 @@ Programınızı hata ayıklarken hata ayıklayıcı pencerelerinin çoğuna aça
 |**Pencere**|**Kısayol tuşu**|**Konusuna bakın**|  
 |Kesme noktaları|CTRL + ALT + B|[Kesme noktaları kullanın](../debugger/using-breakpoints.md)|  
 |Özel durum ayarları|CTRL + ALT + E|[Özel durumları hata ayıklayıcısı ile yönetme](../debugger/managing-exceptions-with-the-debugger.md)|  
-|Çıkış|CTRL + ALT + O|[Çıktı penceresi](../ide/reference/output-window.md)|    
+|Çıkış|CTRL + ALT + O|[Çıktı Penceresi](../ide/reference/output-window.md)|    
 |İzleme|CTRL + ALT + W, (1, 2, 3, 4)|[İzleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)|  
 |QuickWatch|ÜST KARAKTER + F9|[İzleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)|  
 |Otomatik değişkenler|CTRL + ALT + V A|[Otomatik değişkenler ve yerel Windows](../debugger/autos-and-locals-windows.md)|  
 |Yerel öğeler|CTRL + ALT + V, L|[Otomatik değişkenler ve yerel Windows](../debugger/autos-and-locals-windows.md)|  
 |Çağrı yığınları|CTRL + ALT + C|[Nasıl yapılır: çağrı yığını penceresini kullanma](../debugger/how-to-use-the-call-stack-window.md)|
-|Hemen|CTRL + ALT + I|[Komut penceresi](../ide/reference/immediate-window.md)|     
+|Hemen|CTRL + ALT + I|[Komut Penceresi](../ide/reference/immediate-window.md)|     
 |Paralel Yığınlar|CTRL: + SHIFT + D, S|[Paralel Yığınlar penceresini kullanma](../debugger/using-the-parallel-stacks-window.md)|  
 |Paralel Gözcü|CTRL: + SHIFT + D, (1, 2, 3, 4)|[Alma çok iş parçacıklı uygulamalarda hata ayıklama başlatıldı](../debugger/get-started-debugging-multithreaded-apps.md)|
 |İş Parçacıkları|CTRL + ALT + H|[İş parçacıkları penceresini kullanarak hata ayıklama](../debugger/how-to-use-the-threads-window.md)|  

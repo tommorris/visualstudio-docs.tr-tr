@@ -603,11 +603,12 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 redirect_url: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=msbuild
-ms.openlocfilehash: bf172e3a2f2098d72db5e56d54c598d656650c88
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c795dca53bec8191cdb9e2d61fa49ec03d84fa66
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-msbuild-resources"></a>Ek MSBuild Kaynakları
 Bir sorunu çözmeye çalışıyorsanız ve ihtiyacınız olan bilgileri belgelerde bulamıyorsanız, Bilgi Bankası makaleleri, geliştirici topluluğu veya ürün desteği gibi diğer kaynaklara başvurabilirsiniz.  
@@ -624,4 +625,4 @@ Bir sorunu çözmeye çalışıyorsanız ve ihtiyacınız olan bilgileri belgele
  Diğer kaynaklar denedikten sonra hala sorularınız varsa, Microsoft Destek Hizmetleri ziyaret ederek başvurabilirsiniz [Microsoft Help ve Destek](http://go.microsoft.com/fwlink/?linkid=1782) Web sitesi. Bölgenizde kullanılabilen ürün desteği hakkında daha fazla bilgi için bkz: [konuşun bize](../ide/talk-to-us.md).  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [.NET Framework hedefleme hatalarının sorunlarını giderme](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
+ [.NET Framework Hedefleme Hatalarının Sorunlarını Giderme](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

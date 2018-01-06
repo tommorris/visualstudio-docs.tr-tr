@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf0dd4ab4a60dc7cfdfd351aee59c4942f75ef69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e44c9e7cc8aee41606366e1d4cb175a1855053f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Nasıl yapılır: Özet Tanımı'nı Kullanarak Kodu Görüntüleme ve Düzenleme (Alt+F12)
 Kullanabileceğiniz **Peek tanımı** görüntülemek ve kodu yazdığınız kodu çıktığınızda geçmeden düzenlemek için komutu. **Tanım Ara** ve **Tanıma Git** aynı bilgileri gösterir, ancak **Peek tanımı** açılır pencerede, gösterir ve **Tanıma Git** gösterir ayrı kod penceresinde kod. **Tanıma Git** tanımı kod penceresine geçiş yapmak, içerik (diğer bir deyişle, etkin kod penceresi, geçerli satır ve imleç konumu) neden olur. Kullanarak **Peek tanımı**, görüntüleyebilir ve tanımını düzenlemek ve özgün kod dosyasında yerinizi tutarken tanım dosyası içinde hareket etme.  

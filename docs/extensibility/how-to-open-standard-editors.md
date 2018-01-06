@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd3e3b8da06e6846c8c6adc6ddc3f65873c1e2bb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dcf36dc8f4ef818a84719bc534a09ecf30baf76f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-standard-editors"></a>Nasıl yapılır: standart düzenleyicileri açın
 Standart Düzenleyici açtığınızda, dosya için bir proje özgü Düzenleyici belirtme yerine bir dosya türü için standart bir düzenleyici belirlemek IDE sağlar.  
@@ -57,4 +58,4 @@ Standart Düzenleyici açtığınızda, dosya için bir proje özgü Düzenleyic
  [Açıp kaydederek proje öğeleri](../extensibility/internals/opening-and-saving-project-items.md)   
  [Nasıl yapılır: açık projeye özgü düzenleyiciler](../extensibility/how-to-open-project-specific-editors.md)   
  [Nasıl yapılır: açık belgeler için düzenleyicileri açın](../extensibility/how-to-open-editors-for-open-documents.md)   
- [Dosya Aç komutu kullanarak dosyaları görüntüleme](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
+ [Dosya Aç Komutunu Kullanarak Dosyaları Görüntüleme](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)

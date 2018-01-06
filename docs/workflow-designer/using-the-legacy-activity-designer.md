@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 65510d727fdf0640ca8efa646a14d0814951cd4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d8288db6ddca4041a409b435ccd730d0b15b013b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-activity-designer"></a>Eski etkinlik Tasarımcısı'nı kullanarak
 Bu konu, eski etkinlik Tasarımcısı kullanmayı açıklar [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Hedeflerken eski designer'ı kullanın [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -63,4 +64,4 @@ Bu konu, eski etkinlik Tasarımcısı kullanmayı açıklar [!INCLUDE[wfd1](../w
  [Eski iş akışı etkinlikleri](../workflow-designer/legacy-workflow-activities.md)   
  [Özel etkinlikler örnekleri](http://go.microsoft.com/fwlink?LinkID=65022)   
  [Nasıl yapılır: bir iş akışı etkinlik kitaplığı (eski) oluşturun](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
- [Eski iş akışı Tasarımcısı'nı kullanarak](../workflow-designer/using-the-legacy-workflow-designer.md)
+ [Eski İş Akışı Tasarımcısını Kullanma](../workflow-designer/using-the-legacy-workflow-designer.md)

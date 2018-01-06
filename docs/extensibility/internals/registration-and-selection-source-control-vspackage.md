@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 118f715e71f610d4e9dc2589767f6fb54ab4e814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b0f02abe4cad58db27700aee3c29ec8d2dd7a7e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Kayıt ve seçim (kaynak denetimi VSPackage)
 VSPackage kayıtlı, kendisine kullanıma sunmak için bir kaynak denetimi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Birden fazla kaynak denetimi VSPackage kaydettiyseniz, kullanıcı uygun zamanlarda yüklemek için hangi VSPackage seçebilirsiniz. Bkz: [VSPackages](../../extensibility/internals/vspackages.md) VSPackages ve bunları kaydetmek nasıl daha ayrıntılı bilgi için.  
@@ -86,4 +87,4 @@ VSPackage kayıtlı, kendisine kullanıma sunmak için bir kaynak denetimi [!INC
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>   
  [Özellikleri](../../extensibility/internals/source-control-vspackage-features.md)   
  [Kaynak Denetimi Eklentisi oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md)   
- [VSPackages](../../extensibility/internals/vspackages.md)
+ [VSPackage’lar](../../extensibility/internals/vspackages.md)

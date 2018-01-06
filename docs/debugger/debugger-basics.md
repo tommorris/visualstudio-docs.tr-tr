@@ -21,21 +21,18 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2c4077c57232f511097d6e1d46c49bf7337aee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 873e08817eef7d1760a717d98e413d8d4096323b
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugger-basics"></a>Hata Ayıklayıcı Temel Bilgileri
 Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışını inceleyin ve mantık hataları bulmak sağlar. Hata ayıklayıcı tüm Visual Studio programlama dilleri ve bunların ilişkili kitaplıkları ile çalışır. Hata ayıklayıcısını kullanmaya kodunuzun içinde ilerleyebilir ve uygulamanızda değişkenleri değerlendirmek için yürütme bozulabilir.  
   
-## <a name="in-this-section"></a>Bu Bölümde  
  [Hata ayıklayıcısını kullanmaya başlama](../debugger/getting-started-with-the-debugger.md)  
  Hata ayıklayıcı özelliklerinin uygulamalarınızda hata ayıklamak için nasıl kullanılacağını açıklar.  
-
- [Hata ayıklayıcı bir videoyu izleyin](../debugger/getting-started-with-the-debugger.md#video)  
- Hata ayıklayıcı özelliklerinin uygulamalarınızda hata ayıklamak için nasıl kullanılacağını gösterir.
   
  [Hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md)  
  Hata ayıklayıcısını kullanmaya aracılığıyla koda adım açıklar.  
@@ -54,7 +51,7 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
  [Kullanıcı kodu sadece kendi kodumu kullanarak hata ayıklama](../debugger/just-my-code.md)  
  Sağlar ve sadece kendi kodumu özelliğini açıklar sistemi, framework ve diğer kullanıcı olmayan çağrıları adım ve bu çağrıları çağrı yığını görüntülerindeki daraltır.  
   
- [Özel durum işleme](../debugger/managing-exceptions-with-the-debugger.md)  
+ [Özel Durum İşleme](../debugger/managing-exceptions-with-the-debugger.md)  
  Özel durumlar, hata ayıklayıcı bunları nasıl işlediğini ve işleme, özel durumun oluştuğu görmek ve değişken içeriğini görüntülemek nasıl sınırlamalar yönetilen kod ve özel durumları yerel (C++) kodda düzeltmek işlenmemiş olduğunu değiştirmek açıklar.  
   
  [Çalıştırma işlemine iliştirme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  

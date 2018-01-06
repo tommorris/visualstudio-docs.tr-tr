@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5bc2f4a50996ccca6a56632166121bf9784629bb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 739dd0d41fb63c4993dad0d66737aaada1cf01c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-directory-description-vsdir-files"></a>Şablon dizin açıklaması (. Vsdir) dosyaları
 Bir şablon dizin tanımı dosyası (.vsdir) tümleşik geliştirme ortamı (IDE) klasörler, sihirbaz .vsz dosyaları ve iletişim kutuları projenizde ile ilişkili şablon dosyalarını görüntülemek için sağlayan bir metin dosyasıdır. İçeriği, dosya veya klasör her bir kayıt içerir. Yalnızca bir .vsdir dosyası genellikle birden çok klasörler, sihirbaz veya şablon dosyalarını açıklamak için sağlanan olsa da, tüm .vsdir dosyalarını başvurulan bir konumda birleştirilir.  
@@ -67,4 +68,4 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sihirbazlar](../../extensibility/internals/wizards.md)   
- [Sihirbazı'nı (. Vsz) dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Sihirbaz (.Vsz) Dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)

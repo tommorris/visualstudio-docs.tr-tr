@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8204cd6fe59c87dd7ac2b6ca838d1c08b4ff25c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c16fde6cb9dcb29428ad2d52a08b53cffb9f9850
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-vspackage-features"></a>Kaynak denetimi VSPackage özellikleri
 Bu bölümde, kaynak denetimi VSPackage çeşitli özelliklerini açıklar. Kayıt özetler ve seçim ayrıntıları için bu tür bir VSPackage ve üç ana kaynak denetimi ilgili özellikleri açıklanır: Sorgu düzenleme sorgu Kaydet (QEQS) olayları, simge değiştirme ve kaynak denetimi için özel kullanıcı arabirimi (UI) işleme İşlevler.  
@@ -36,5 +37,5 @@ Bu bölümde, kaynak denetimi VSPackage çeşitli özelliklerini açıklar. Kay�
  Kaynak denetimi VSPackage belirtebilirsiniz kullanıcı Arabirimi öğeleri açıklanır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Kaynak denetimi VSPackage oluşturma](../../extensibility/internals/creating-a-source-control-vspackage.md)  
+ [Kaynak Denetimi VSPackage’ı Oluşturma](../../extensibility/internals/creating-a-source-control-vspackage.md)  
  Kaynak denetiminin yalnızca kaynak denetim işlevselliği sağlar ancak özelleştirmek için kullanılan VSPackage nasıl oluşturulacağını anlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kaynak denetim UI.

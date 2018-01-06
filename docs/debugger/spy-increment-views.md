@@ -15,34 +15,35 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c804ad5fc4921eefc5529094c45361c5fa115fb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cdf541fb064064322679db6f381576a741af75a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spy-views"></a>Spy++ Görünümleri
 Spy ++ makinenizde windows, iletileri, işlemleri ve iş parçacıkları kullanılabilir ağaç görünümleri görüntüler.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Pencereler görünümü](../debugger/windows-view.md)  
+ [Pencereler Görünümü](../debugger/windows-view.md)  
  Kullanılabilir windows ve denetimleri ağaç görünümünü görüntüler.  
   
- [İletiler görünümü](../debugger/messages-view.md)  
+ [İletiler Görünümü](../debugger/messages-view.md)  
  Pencere, işlem veya iş parçacığı ile ilişkili ileti akışı görüntüler.  
   
- [İşlemler görünümü](../debugger/processes-view.md)  
+ [İşlemler Görünümü](../debugger/processes-view.md)  
  Etkin işlemler ağaç görünümünü görüntüler.  
   
- [İş Parçacıkları görünümü](../debugger/threads-view.md)  
+ [İş Parçacıkları Görünümü](../debugger/threads-view.md)  
  Etkin iş parçacığı ağaç görünümünü görüntüler.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Spy ++ görünümleri için arama araçları](../debugger/search-tools-for-spy-increment-views.md)  
  Spy ++ görünümleri Windows'da belirli düğümler bulmak için kullanılan iletişim kutularının.  
   
- [Spy ++ kullanma](../debugger/using-spy-increment.md)  
+ [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
- [Spy ++ başvurusu](../debugger/spy-increment-reference.md)  
+ [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
  Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümleri içerir.

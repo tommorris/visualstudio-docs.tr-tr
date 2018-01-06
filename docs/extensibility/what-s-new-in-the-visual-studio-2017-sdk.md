@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0be477d54ffeab52c415890c7d95447fa3f55ffc
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: vssdk
+ms.openlocfilehash: f6b27e60f1cc47b236ed2d3516313537a6121be5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>&#39; teki Visual Studio 2017 SDK'deki yenilikler
 
@@ -35,8 +36,8 @@ Yeni biçim desteği vardır:
 Bu değişiklikler hakkında bilgi edinmek için aşağıdaki konulara bakın:
 
 * [Genişletilebilirlik 2017 için yapılan değişiklikler](breaking-changes-2017.md)
-* [VSIX v3 Ngen desteği](ngen-support.md)
-* [Uzantıları klasörünün dışında yükleme](set-install-root.md)
+* [VSIX v3’te Ngen desteği](ngen-support.md)
+* [Uzantılar klasörünün dışına yükleme](set-install-root.md)
 * [Sık sorulan sorular için Visual Studio 2017 genişletilebilirliği](faq-2017.md)
 
 ## <a name="migrating-extensibility-project-to-visual-studio-2017"></a>Visual Studio 2017 için geçirme genişletilebilirlik projesi

@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 146303eebbd824342b000fb14b8dbf953c3f0523
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bcbb3e6b475a9dcd22d012073d3197013da337c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Nasıl yapılır: veri belgelemek için görünümler ekleme
 Yeni bir belge görünüm varsa, var olan bir belgeyi veri nesnesine eklemek mümkün olabilir.  
@@ -46,4 +47,4 @@ Yeni bir belge görünüm varsa, var olan bir belgeyi veri nesnesine eklemek mü
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birden çok belge görünümleri destekleme](../extensibility/supporting-multiple-document-views.md)   
- [Belge verileri ve belge görünümünde özel düzenleyiciler](../extensibility/document-data-and-document-view-in-custom-editors.md)
+ [Özel Düzenleyicilerde Belge Verileri ve Belge Görünümü](../extensibility/document-data-and-document-view-in-custom-editors.md)

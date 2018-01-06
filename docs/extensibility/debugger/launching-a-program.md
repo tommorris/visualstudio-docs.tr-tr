@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29e05c7cef8b7bc8644ccbf7ea542e2f043547a6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5762b59a52cce2bf918c50630bbf82e176d9e82f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launching-a-program"></a>Bir Program başlatma
 Bir program hata ayıklamak istediğiniz kullanıcılar hata ayıklayıcıda IDE içinden çalıştırmak için F5 tuşuna basabilirsiniz. Bu, bir dizi sonuçta IDE'nin sırayla bağlı veya bağlı, programa şu şekilde bir hata ayıklama altyapısı (DE) bağlanırken neden olay başlar:  
@@ -53,12 +54,12 @@ Bir program hata ayıklamak istediğiniz kullanıcılar hata ayıklayıcıda IDE
  Varsa `GUID_NULL` gönderilir, ardından bağlantı noktası program başlatılır. Program çalışmaya başladıktan sonra çalışma zamanı ortamı oluşturur bir `IDebugProgramNode2` program açıklamak için arabirim ve buna ileten `IDebugPortNotify2::AddProgramNode`. Bu programı çalıştırmayı bağlantı noktası bildirir. Ardından SDM hata ayıklama altyapısı çalışan programa ekler.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Bağlantı noktası bildirme](../../extensibility/debugger/notifying-the-port.md)  
+ [Bağlantı Noktasına Bildirme](../../extensibility/debugger/notifying-the-port.md)  
  Bir program başlatıldıktan sonra bağlantı noktası bildirilir ne olacağını açıklar.  
   
- [Başlatma sonra ekleme](../../extensibility/debugger/attaching-after-a-launch.md)  
+ [Başlatmadan Sonra Ekleme](../../extensibility/debugger/attaching-after-a-launch.md)  
  Hata ayıklama oturumu DE programına eklemek hazır olduğunda belgeler.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Hata ayıklama görevleri](../../extensibility/debugger/debugging-tasks.md)  
+ [Hata Ayıklama Görevleri](../../extensibility/debugger/debugging-tasks.md)  
  Bir program başlatma ve ifadeleri değerlendirme gibi çeşitli hata ayıklama görevlere bağlantılar içerir.

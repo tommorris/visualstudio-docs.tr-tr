@@ -13,11 +13,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7078ee1e125ca11b0707b22b0d824cd0fc2d75b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ced0eb5d3545a75ee31cff55d0e4fb9dab8c8bcb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-signature-help"></a>İzlenecek yol: İmza Yardım görüntüleme
 İmza Yardım (olarak da bilinen *parametre bilgisi*) kullanıcı parametre listesi başlangıç karakteri (genellikle bir açma ayracı) yazdığında bir yöntem imzası ipucunda görüntüler. Bir parametre ve parametre ayırıcı (genellikle bir virgül) yazılan gibi araç ipucu sonraki parametrenin kalın olarak göstermek üzere güncelleştirilir. Bir dil hizmeti bağlamında imza yardımcı tanımlayabilirsiniz kendi dosya adı uzantısı ve içerik türünü tanımlayın ve yalnızca bu tür için imza Yardımı'nı görüntülemek veya varolan bir içerik türü (örneğin, "metin") için imza Yardım görüntüleyebilirsiniz. Bu kılavuzda "metin" içerik türü için imza Yardımı'nı görüntülemek nasıl gösterir.  
@@ -247,4 +248,4 @@ ms.lasthandoff: 10/31/2017
 4.  Parantez yazdıktan sonra iki imzaları listesini görüntüleyen bir araç ipucu görmelisiniz `add()` yöntemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: bir içerik türü için bir dosya adı uzantısı bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek Yol: Bir İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

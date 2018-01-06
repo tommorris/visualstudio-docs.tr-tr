@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d951c08e3505673242b249c42b846f3d4c88300
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 690c1cf6ff64e71bcf9ad96ab5cb2c9f472d9855
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="c-library-reference"></a>C Kitaplık Başvurusu
 Bu bölüm eşzamanlılık görselleştiricisi SDK'sı için başvuru bilgileri içerir.  
@@ -26,26 +27,26 @@ Bu bölüm eşzamanlılık görselleştiricisi SDK'sı için başvuru bilgileri 
 >  C dili standart bir alt çizgi ile başlayan tanımlayıcıları kullanımını ayırır (`_`) karakteri kitaplıklar gibi uygulamaları için. Kodunuzda bir alt çizgi ile başlayan adları kullanmayın. Bu kural, adları izleyen öğeleri garanti edilmez ve değiştirilebilir gelecek olan kod davranışını serbest bırakır. Bu nedenlerle, bu kod öğeler bu belgelerden göz ardı edilir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [CvCreateDefaultMarkerSeriesOfDefaultProvider işlevi](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
+ [CvCreateDefaultMarkerSeriesOfDefaultProvider İşlevi](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
   
- [CvCreateMarkerSeries işlevi](../profiling/cvcreatemarkerseries-function.md)  
+ [CvCreateMarkerSeries İşlevi](../profiling/cvcreatemarkerseries-function.md)  
   
- [CvCreateMarkerSeriesWithCodePageA işlevi](../profiling/cvcreatemarkerserieswithcodepagea-function.md)  
+ [CvCreateMarkerSeriesWithCodePageA İşlevi](../profiling/cvcreatemarkerserieswithcodepagea-function.md)  
   
- [CvEnterSpan işlevi](../profiling/cventerspan-function.md)  
+ [CvEnterSpan İşlevi](../profiling/cventerspan-function.md)  
   
- [Cvınitprovider işlevi](../profiling/cvinitprovider-function.md)  
+ [CvInitProvider İşlevi](../profiling/cvinitprovider-function.md)  
   
- [Cvısenabled işlevi](../profiling/cvisenabled-function.md)  
+ [CvIsEnabled İşlevi](../profiling/cvisenabled-function.md)  
   
- [CvLeaveSpan işlevi](../profiling/cvleavespan-function.md)  
+ [CvLeaveSpan İşlevi](../profiling/cvleavespan-function.md)  
   
- [CvReleaseMarkerSeries işlevi](../profiling/cvreleasemarkerseries-function.md)  
+ [CvReleaseMarkerSeries İşlevi](../profiling/cvreleasemarkerseries-function.md)  
   
- [CvReleaseProvider işlevi](../profiling/cvreleaseprovider-function.md)  
+ [CvReleaseProvider İşlevi](../profiling/cvreleaseprovider-function.md)  
   
- [CvWriteAlert işlevi](../profiling/cvwritealert-function.md)  
+ [CvWriteAlert İşlevi](../profiling/cvwritealert-function.md)  
   
- [CvWriteFlag işlevi](../profiling/cvwriteflag-function.md)  
+ [CvWriteFlag İşlevi](../profiling/cvwriteflag-function.md)  
   
- [CvWriteMessage işlevi](../profiling/cvwritemessage-function.md)
+ [CvWriteMessage İşlevi](../profiling/cvwritemessage-function.md)

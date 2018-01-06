@@ -24,11 +24,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9442275dba03eabb183e9917ecc5c8fe874b0478
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-references-in-a-project"></a>Bir projedeki başvuruları yönetme
 
@@ -54,7 +55,7 @@ Aşağıdaki bileşenler ve hizmetlerle türlerini başvuru yapabilirsiniz:
 
 ### <a name="project-references"></a>Proje başvuruları
 
-Evrensel Windows Platformu (UWP) projeleri bu projeleri Windows 10'da kullanım dışı API'ları kullanmayın sağlanan başvuruları diğer UWP projeleri veya Windows 8.1 projeleri veya ikili dosyaları, oluşturabilirsiniz. Daha fazla bilgi için bkz: [UWP'ye Windows çalışma zamanı 8'den Taşı](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root).
+Evrensel Windows Platformu (UWP) projeleri bu projeleri Windows 10'da kullanım dışı API'ları kullanmayın sağlanan başvuruları diğer UWP projeleri veya Windows 8.1 projeleri veya ikili dosyaları, oluşturabilirsiniz. Daha fazla bilgi için bkz: [UWP'ye Windows çalışma zamanı 8'den Taşı](/windows/uwp/porting/w8x-to-uwp-root).
 
 Windows 10 için Windows 8.1 projeleri yeniden hedefleyin isterseniz bkz [bağlantı noktası, geçirme ve yükseltme Visual Studio projeleri](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 

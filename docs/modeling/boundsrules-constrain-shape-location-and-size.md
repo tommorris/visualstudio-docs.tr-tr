@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 8a611bd18cb06b712f671d370bfc26d4dc8cf4f3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 81c6ab1f043074b4da601dbfe2d3dc52243b00e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules Şekil Konumunu ve Boyutunu Kısıtlamama
 A *sınırları kural* sınırları boyutu ve şekli konumunu tanımlayan bir sınıftır. Bir kullanıcı bir şekli veya köşeleri ya da bir şekli yanlarından sürükleme sırasında sürekli olarak adlandırılan bir yöntem sağlar.  
@@ -67,4 +68,4 @@ public class BarBoundsRule: BoundsRules
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>   
- [Yanıt vermek ve değişiklikleri yayma](../modeling/responding-to-and-propagating-changes.md)
+ [Değişikliklere Yanıt Verme ve Değişiklikleri Yayma](../modeling/responding-to-and-propagating-changes.md)

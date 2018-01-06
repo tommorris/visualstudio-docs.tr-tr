@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0645cefb4d102f976663bb4293454e2ae6318ad6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f6065c91845df020325e279a1fa3858a4f75505
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-a-port"></a>Bir bağlantı noktası alma
 Bir bağlantı noktası işlemleri çalışmakta olduğu bir makineye bağlantıyı temsil eder. Bu makine yerel veya uzak makineye olabilir (büyük olasılıkla çalışan Windows tabanlı bir işletim sistemi; bkz [bağlantı noktalarını](../../extensibility/debugger/ports.md) daha fazla bilgi için).  
@@ -103,4 +104,4 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
  [Program kaydetme](../../extensibility/debugger/registering-the-program.md)   
  [Ayıklanacak bir Program etkinleştirme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)   
  [Bağlantı noktası Üreticiler](../../extensibility/debugger/port-suppliers.md)   
- [Bağlantı noktaları](../../extensibility/debugger/ports.md)
+ [Bağlantı Noktaları](../../extensibility/debugger/ports.md)

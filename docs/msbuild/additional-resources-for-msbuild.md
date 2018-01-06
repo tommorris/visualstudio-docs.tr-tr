@@ -19,11 +19,12 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 redirect_url: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=msbuild
-ms.openlocfilehash: e2e80331d4ba1951c3132dfe720c5fbcef7d1e29
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 801e86285786d9f7d5347283a8939df8750f88fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-resources-for-msbuild"></a>MSBuild için Ek Kaynaklar
 Aşağıdaki Web siteleri ve forumlar ile çalışırken sık sorulan soruların yanıtlarını bulmanıza yardımcı olabilir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -43,4 +44,4 @@ Aşağıdaki Web siteleri ve forumlar ile çalışırken sık sorulan soruların
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MSBuild](../msbuild/msbuild.md)   
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)   
- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+ [MSBuild Başvurusu](../msbuild/msbuild-reference.md)

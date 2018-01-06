@@ -19,11 +19,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c5f1ec42408e4fd7d33d9445ae09252fae8d03db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 84e850d44162a964ce6ef8b64be92ce4eeacb86e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Varsayılan komutu, Grup ve araç çubuğu yerleştirme
 UI ürün bütünlüğünü ve tutarlılık için belirli komut grupları varsayılan olarak, görüntüler. ve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] komutları ve komut grupları için tanımları sağlar. VSPackages de standart komutları ve komut gruplarını kullanabilirsiniz.  
@@ -45,4 +46,4 @@ UI ürün bütünlüğünü ve tutarlılık için belirli komut grupları varsay
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDE tanımlı komutlar, menüler ve grupları](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
- [Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

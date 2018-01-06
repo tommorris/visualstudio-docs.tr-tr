@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c8d9e1ea91b5f13961941644871dd881f49a7416
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 5e8c34c777abf9f7932d05396cb03e612bfd8eea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>4. adım: hata ayıklayıcıda kodu çalıştırma
 
@@ -45,7 +46,7 @@ Bir zengin düzenleme deneyimi ve etkileşimli pencere sağlama projeleri yönet
     main()
     ```
 
-1. F5 tuşuna basarak veya seçerek kod düzgün çalışır onay **hata ayıklama > hata ayıklamayı Başlat** menü komutu. Bu kod hata ayıklayıcısı'ndaki çalışır ancak programı çalışırken duraklatmak için herhangi bir şey yapmadınız olduğundan, birkaç yineleme için wave deseni yalnızca yazdırır. Çıktı penceresi için bir tuşa basılması.
+1. F5 tuşuna basarak veya seçerek kod düzgün çalışır onay **hata ayıklama > hata ayıklamayı Başlat** menü komutu. Bu kod hata ayıklayıcısı'ndaki çalışır ancak programı çalışırken duraklatmak için herhangi bir şey yapmadınız olduğundan, birkaç yineleme için wave deseni yalnızca yazdırır. Çıktı penceresini kapatmak için herhangi bir tuşa basın.
 
     > [!Tip]
     > Program tamamlandığında, çıkış penceresi otomatik olarak kapatmak için değiştirmek `main()` aşağıdaki kod ile çağırın:

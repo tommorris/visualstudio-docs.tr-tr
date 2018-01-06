@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be24edc89328f08199316df8bdedf2ab6391907b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8f596d2c51c5d5e543ed67212662c5096ea2e4eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiatable"></a>IDiaTable
 DIA veri kaynağı tablosu numaralandırır.  
@@ -34,10 +35,10 @@ IDiaTable : IEnumUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiatable::get__newenum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Alır [IEnumVARIANT arabirimi](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) bu Sıralayıcı sürümü.|  
-|[Idiatable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|Tablonun adını alır.|  
-|[Idiatable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Tablosundaki öğelerin sayısını alır.|  
-|[Idiatable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Belirli giriş dizini için bir başvuru alır.|  
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Alır [IEnumVARIANT arabirimi](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) bu Sıralayıcı sürümü.|  
+|[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|Tablonun adını alır.|  
+|[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Tablosundaki öğelerin sayısını alır.|  
+|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Belirli giriş dizini için bir başvuru alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu arabirimi uygulayan `IEnumUnknown` Microsoft.VisualStudio.OLE.Interop ad alanı numaralandırma yöntemleri. `IEnumUnknown` Numaralandırma arabirimidir İçindekiler üzerinde yineleme için çok daha verimli [Idiatable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md) ve [Idiatable::Item](../../debugger/debug-interface-access/idiatable-item.md) yöntemleri.  
@@ -49,19 +50,19 @@ IDiaTable : IEnumUnknown
   
  Aşağıdaki arabirimleri ile uygulanan `IDiaTable` arabirimi (diğer bir deyişle, sorgu `IDiaTable` aşağıdaki arabirimlerinden biri, arabirimin):  
   
--   [Idiaenumsymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
+-   [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
   
--   [Idiaenumsourcefiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)  
+-   [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)  
   
--   [Idiaenumlinenumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
+-   [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
   
--   [Idiaenumsectioncontribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
+-   [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
   
--   [Idiaenumsegments](../../debugger/debug-interface-access/idiaenumsegments.md)  
+-   [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)  
   
--   [Idiaenumınjectedsources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)  
+-   [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)  
   
--   [Idiaenumframedata](../../debugger/debug-interface-access/idiaenumframedata.md)  
+-   [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
   
 ## <a name="example"></a>Örnek  
  İlk işlev `ShowTableNames`, oturumda tüm tabloların adlarını görüntüler. İkinci işlev `GetTable`, belirtilen arabirimini uygulayan bir tablo için tabloların tümü arar. Üçüncü işlevi `UseTable`, nasıl kullanılacağını gösterir `GetTable` işlevi.  
@@ -142,4 +143,4 @@ void UseTable(IDiaSession *pSession)
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiaenumtables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [Idiaenumtables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
- [Idiaenumtables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)
+ [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)

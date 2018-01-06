@@ -16,11 +16,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0244cbae9a331303434db89a42518812efc2677b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 915f7f3cbbee87f72c4643b8c5a2b4497bbd69dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-report-overview"></a>Performans Raporu genel bakış
 Profil oluşturma verileri performans oturumun görüntüleyebilirsiniz **performans raporu** Visual Studio Team System geliştirme sürümü tümleşik geliştirme ortamı (IDE) penceresi. Profil oluşturma verileri .vsp ve .vsps dosyalarında kaydedilir. Rapor görünümü windows görüntülemek ve uygulama performans sorunları çözümlemek etkinleştirin.  
@@ -98,4 +99,4 @@ Profil oluşturma verileri performans oturumun görüntüleyebilirsiniz **perfor
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araçları verilerini performansını analiz etme](../profiling/analyzing-performance-tools-data.md)   
- [Performans rapor görünümleri](../profiling/performance-report-views.md)
+ [Performans Raporu Görünümleri](../profiling/performance-report-views.md)

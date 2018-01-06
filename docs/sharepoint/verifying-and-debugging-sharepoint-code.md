@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ab25807ffaf62773b6c02f22c548fb5e5c769ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d3717d3bee3665705ce39307b640e02a931cd75f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="verifying-and-debugging-sharepoint-code"></a>SharePoint Kodunu Doğrulama ve Hata Ayıklama
   IntelliTrace ve birim testi kullanarak, daha kolay SharePoint çözümlerini hata ayıklama ve bunları her bir yöntemin düzgün çalıştığından emin olun. SharePoint projeleri için bu özellikleri kullanan [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] diğer proje türleri için aynı yordamları izleyerek.  
@@ -47,10 +48,10 @@ ms.lasthandoff: 10/31/2017
 |Başlık|Açıklama|  
 |-----------|-----------------|  
 |[IntelliTrace](/visualstudio/debugger/intellitrace)|IntelliTrace'i kullanarak Visual Studio çözümleri daha kolay hata ayıklama açıklar.|  
-|[İzlenecek yol: IntelliTrace'i kullanarak SharePoint uygulama hata ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)|Bulunacak gösterilmiştir IntelliTrace'i kullanarak SharePoint Proje hatalarını kodlama.|  
-|[Kodunuza birim testi](/visualstudio/test/unit-test-your-code)|Birim testleri kullanarak kodunuzda mantık hataları bulmak açıklar.|  
+|[İzlenecek yol: IntelliTrace'i Kullanarak SharePoint Uygulamasında Hata Ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)|Bulunacak gösterilmiştir IntelliTrace'i kullanarak SharePoint Proje hatalarını kodlama.|  
+|[Kodunuza Birim Testi Uygulama](/visualstudio/test/unit-test-your-code)|Birim testleri kullanarak kodunuzda mantık hataları bulmak açıklar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kod kalitesini geliştirme](/visualstudio/test/improve-code-quality)  
+ [Kod Kalitesini Geliştirme](/visualstudio/test/improve-code-quality)  
   
   

@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efe08d9e23f1a77fd68df2bdba4389e7b7955b11
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 158340ad82829338bb39709573ce9e025332341a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Yeni proje oluşturma: başlık altında bir parçası
 Şimdiye kadar kendi proje türü oluşturma hakkında zorlayıcı? Yeni bir proje oluşturduğunuzda, gerçekten neler merak ediyor? Şimdi başlık altında göz atalım ve gerçekten neler olduğunu görebilirsiniz.  
@@ -216,4 +217,4 @@ devenv /installvstemplates
  **MyProjectNode** Visual C# Windows düğümü altında yalnızca bir alt düğüm olarak görünür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yeni proje oluşturma: başlık altında iki bölüm](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Yeni Proje Oluşturma: Altyapı Öğeleri, Bölüm İki](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

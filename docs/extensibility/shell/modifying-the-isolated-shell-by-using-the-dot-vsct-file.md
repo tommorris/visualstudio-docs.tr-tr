@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fcdaab4c5c9f0ee5522ae372e4a0cd94fb113eed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 631aaaf4bf3d36cf5b83c8e67791c453cdfed925
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Yalıtılmış Kabuk kullanarak değiştirme. Vsct dosyası
 UI proje bir Visual Studio yalıtılmış Kabuk projesi için hangi uygulama grupları ve tek tek komutlar uygulamada kullanılabilir belirtmenize olanak sağlar. bir .vsct dosyası içerir. Değiştirilmemiş .vsct dosyasından bir Alıntısı verilmiştir.  
@@ -57,4 +58,4 @@ UI proje bir Visual Studio yalıtılmış Kabuk projesi için hangi uygulama gru
  Daha fazla bilgi için bkz: [XML komutu tablosu tasarlama (. Vsct) dosyaları](../internals/designing-xml-command-table-dot-vsct-files.md) ve [VSCT XML Şeması Başvurusu](../vsct-xml-schema-reference.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio yalıtılmış Kabuk](visual-studio-isolated-shell.md)
+ [Visual Studio Yalıtılmış Kabuğu](visual-studio-isolated-shell.md)

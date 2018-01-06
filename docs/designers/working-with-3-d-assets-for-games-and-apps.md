@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c57284e21e1b276c6191109701f507c5a12f819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a4b0cc6e7105f91a4192d2c079854c8953736eaf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Oyunlar ve Uygulamalar için 3B Varlıklarla Çalışma
 Bu belgede açıklanan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oluşturmak veya 3-b modelleri, doku ve DirectX tabanlı oyunları ve uygulamaları için gölgelendiriciler değiştirmek için kullanabileceğiniz araçlar.  
@@ -52,7 +53,7 @@ Bu belgede açıklanan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Dokular ve görüntüleri ile çalışma](../designers/working-with-textures-and-images.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] görüntüleri ve dokuları çalışmak için.|  
-|[3-b modellerle çalışma](../designers/working-with-3-d-models.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 3-b modelleriyle çalışacak.|  
-|[Gölgelendiriciler ile çalışma](../designers/working-with-shaders.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gölgelendirici Designer'ın oluşturabilir ve özel gölgelendirici etkileri değiştirebilirsiniz.|  
-|[Oyun veya uygulama 3B varlıkları kullanma](../designers/using-3-d-assets-in-your-game-or-app.md)|Görüntü Düzenleyicisi, Model Düzenleyicisinde veya gölgelendirici Tasarımcısı oyun ya da uygulama kullanılarak oluşturulan varlıklar kullanmayı açıklar.|
+|[Dokularla ve Görüntülerle Çalışma](../designers/working-with-textures-and-images.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] görüntüleri ve dokuları çalışmak için.|  
+|[3B Modelleriyle Çalışma](../designers/working-with-3-d-models.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 3-b modelleriyle çalışacak.|  
+|[Gölgelendiricilerle Çalışma](../designers/working-with-shaders.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gölgelendirici Designer'ın oluşturabilir ve özel gölgelendirici etkileri değiştirebilirsiniz.|  
+|[Oyunlarda veya Uygulamalarda 3B Varlıklar Kullanma](../designers/using-3-d-assets-in-your-game-or-app.md)|Görüntü Düzenleyicisi, Model Düzenleyicisinde veya gölgelendirici Tasarımcısı oyun ya da uygulama kullanılarak oluşturulan varlıklar kullanmayı açıklar.|

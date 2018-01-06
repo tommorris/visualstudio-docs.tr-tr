@@ -18,14 +18,15 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 82d4687a72cb0f13291aa01ff37b91afbcc254e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 772134090da6db5152ad855c1c5620f9e267b29f
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-msbuild-project-items"></a>Yaygın MSBuild Proje Öğeleri
-İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], bir öğenin bir veya daha fazla adlandırılmış başvurusudur. Meta veri dosya adları, yolları ve sürüm numaraları gibi öğeleri içerir. Tüm türlerinde proje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çeşitli öğeleri genelde sahip. Bu öğeler dosya microsoft.build.commontypes.xsd tanımlanır.  
+İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], bir öğenin bir veya daha fazla adlandırılmış başvurusudur. Meta veri dosya adları, yolları ve sürüm numaraları gibi öğeleri içerir. Tüm türlerinde proje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çeşitli öğeleri genelde sahip. Bu öğeler Microsoft.Build.CommonTypes.xsd dosyasında tanımlanır.  
   
 ## <a name="common-items"></a>Ortak öğeler  
  Tüm ortak proje öğeleri listesi verilmiştir.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="reference"></a>Başvuru  
  Proje derleme (yönetilen) başvurusunda temsil eder.  
   
-|Öğe adı|Açıklama|  
+|Öğe meta veri adı|Açıklama|  
 |---------------|-----------------|  
 |HintPath|İsteğe bağlı dize. Derleme göreli veya mutlak yolu.|  
 |Ad|İsteğe bağlı dize. Derleme, örneğin, "System.Windows.Forms." görünen adı|  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="comreference"></a>COMReference  
  Bir COM (yönetilmeyen) bileşeni temsil projede başvuru.  
   
-|Öğe adı|Açıklama|  
+|Öğe meta veri adı|Açıklama|  
 |---------------|-----------------|  
 |Ad|İsteğe bağlı dize. Bileşen görünen adı.|  
 |Guid|İsteğe bağlı dize. {12345678-1234-1234-1234-1234567891234} biçiminde bileşeni için bir GUID.|  
@@ -58,14 +59,14 @@ ms.lasthandoff: 10/31/2017
 ### <a name="comfilereference"></a>COMFileReference  
  ResolvedComreference hedef akış tür kitaplıklarının listesini temsil eder.  
   
-|Öğe adı|Açıklama|  
+|Öğe meta veri adı|Açıklama|  
 |---------------|-----------------|  
 |WrapperTool|İsteğe bağlı dize. Bileşen, örneğin, "tlbimp." kullanılan sarmalayıcı aracı adı|  
   
 ### <a name="nativereference"></a>NativeReference  
  Yerel bir bildirim dosyası ya da böyle bir dosya için bir başvuru temsil eder.  
   
-|Öğe adı|Açıklama|  
+|Öğe meta veri adı|Açıklama|  
 |---------------|-----------------|  
 |Ad|Gerekli dize. Bildirim dosyasının temel adı.|  
 |HintPath|Gerekli dize. Bildirim dosyasının göreli yolu.|  
@@ -73,16 +74,16 @@ ms.lasthandoff: 10/31/2017
 ### <a name="projectreference"></a>ProjectReference  
  Başka bir projeye bir başvuru temsil eder.  
   
-|Öğe adı|Açıklama|  
+|Öğe meta veri adı|Açıklama|  
 |---------------|-----------------|  
 |Ad|İsteğe bağlı dize. Başvurunun görünen adı.|  
-|Project|İsteğe bağlı dize. {12345678-1234-1234-1234-1234567891234} biçiminde başvurusu için bir GUID.|  
+|Proje|İsteğe bağlı dize. {12345678-1234-1234-1234-1234567891234} biçiminde başvurusu için bir GUID.|  
 |Paket|İsteğe bağlı dize. Başvurulan proje dosyasının yolu.|  
   
 ### <a name="compile"></a>Derleme  
  Derleyici için kaynak dosyaları temsil eder.  
   
-|Öğe adı|Açıklama|  
+|Öğe meta veri adı|Açıklama|  
 |---------------|-----------------|  
 |DependentUpon|İsteğe bağlı dize. Bu dosyayı doğru şekilde derlenmesi için bağımlı dosyayı belirtir.|  
 |AutoGen|İsteğe bağlı Boole değeri. Dosya için proje tarafından oluşturulup oluşturulmadığını gösterir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE).|  
@@ -93,7 +94,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Oluşturulan derlemede katıştırılmış kaynakları temsil eder.  
   
-|Öğe adı|Açıklama|  
+|Öğe meta veri adı|Açıklama|  
 |---------------|-----------------|  
 |DependentUpon|İsteğe bağlı dize. Bu dosyayı doğru şekilde derlenmesi için bağımlı dosyasını belirtir|  
 |Oluşturucu|Gerekli dize. Bu öğe üzerinde çalıştırılan tüm dosya oluşturucu adı.|  
@@ -107,7 +108,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="content"></a>İçerik  
  Projeye derlenmemiş ancak katıştırılmış veya olabilir, birlikte yayımlanan dosyaları temsil eder.  
   
-|Öğe adı|Açıklama|  
+|Öğe meta veri adı|Açıklama|  
 |---------------|-----------------|  
 |DependentUpon|İsteğe bağlı dize. Bu dosyayı doğru şekilde derlenmesi için bağımlı dosyayı belirtir.|  
 |Oluşturucu|Gerekli dize. Bu öğe üzerinde çalışan tüm dosya oluşturucu adı.|  
@@ -122,7 +123,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="none"></a>Yok.  
  Herhangi bir rol yapı işleminde sahip olması gereken dosyaları temsil eder.  
   
-|Öğe adı|Açıklama|  
+|Öğe meta veri adı|Açıklama|  
 |---------------|-----------------|  
 |DependentUpon|İsteğe bağlı dize. Bu dosyayı doğru şekilde derlenmesi için bağımlı dosyayı belirtir.|  
 |Oluşturucu|Gerekli dize. Bu öğe üzerinde çalıştırılan tüm dosya oluşturucu adı.|  
@@ -142,4 +143,4 @@ ms.lasthandoff: 10/31/2017
  Derlemeleri olan ad alanları aktarılacaksa tarafından temsil [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] derleyici.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yaygın MSBuild proje özellikleri](../msbuild/common-msbuild-project-properties.md)
+ [Yaygın MSBuild Proje Özellikleri](../msbuild/common-msbuild-project-properties.md)

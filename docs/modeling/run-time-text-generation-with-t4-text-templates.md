@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9dfcba23b9c8df3bbd62a0ef4dd0c4d98f578514
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 32d2fa502a5eca166ccca9fbc87ceb632d7617ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 Metin Şablonları İle Çalışma Süresi Metni Oluşturma
 Kullanarak çalışma zamanında, uygulamanızda metin dizelerini oluşturabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çalışma zamanı metin şablonları. Burada uygulama yürütür bilgisayar olması gerekmez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Derleme zamanında çalışma zamanında yürütülen kod şablon oluşturduğundan çalışma zamanı şablonları bazen "metin şablonları ön işlemesi yapılan" olarak adlandırılır.  

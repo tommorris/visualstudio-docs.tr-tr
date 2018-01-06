@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78affeb358200599d925b9b70df3ae945759054c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 03e6acb4ee9756d0bbb14a6e3667375d32cafba9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-value-of-a-local"></a>Yerel değerini değiştirme
 > [!IMPORTANT]
@@ -46,9 +47,9 @@ ms.lasthandoff: 10/31/2017
  Bu yordamı da bir değişkenin değerini değiştirmek için kullanılan **izleme** penceresi dışında `IDebugProperty2` yerine kullanılan yerel değeriyle ilişkili nesne `IDebugProperty2` yerel ile ilişkili nesne kendisi.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Örnek uygulama değerlerini değiştirme](../../extensibility/debugger/sample-implementation-of-changing-values.md)  
+ [Örnek Değer Değiştirme Uygulaması](../../extensibility/debugger/sample-implementation-of-changing-values.md)  
  Değerlerini değiştirme işleminde size adım adım MyCEE örnek kullanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir CLR ifade değerlendiricisi yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
- [Yerel öğeler görüntüleme](../../extensibility/debugger/displaying-locals.md)
+ [Yerel Öğeleri Görüntüleme](../../extensibility/debugger/displaying-locals.md)

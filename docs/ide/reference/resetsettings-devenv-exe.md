@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4f65035e1030406ced4c5f0c98ebd1d1e66c5d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 52d01cfc3ae6a453330c2dda5da137f449ff5cbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 Geri yükler [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] varsayılan ayarları ve otomatik olarak başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. İsteğe bağlı olarak belirtilen .vssettings dosyasına ayarlarını sıfırlar.  
@@ -51,4 +52,4 @@ Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md)   
- [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)
+ [Devenv Komut Satırı Anahtarları](../../ide/reference/devenv-command-line-switches.md)

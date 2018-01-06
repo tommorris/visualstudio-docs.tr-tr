@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0effe0190d54d05d706127a8e5fada66af1c7ab6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>SharePoint Uygulamaları için Performans Profili Oluşturma
   SharePoint uygulamaları yavaş veya inefficiently gerçekleştiriyorsanız sorunlu kod ve diğer öğeleri tanımlamak için Visual Studio profil özellikleri kullanabilirsiniz. Özellik sınama yük kullanarak, ne zaman çok sayıda kullanıcı uygulamaya aynı anda erişim gibi yük altında bir SharePoint uygulama gerçekleştirir belirleyebilirsiniz. Web performans testleri çalıştırarak uygulama Web'de nasıl gerçekleştireceğini ölçebilirsiniz. Kodlanmış UI testleri kullanarak kendi kullanıcı arabirimi dahil olmak üzere tüm SharePoint uygulama doğru şekilde işlev olup olmadığını doğrulayabilirsiniz. Bu testler birlikte kullanıldığında, bunlar Uygulamanızı dağıtmadan önce performans sorunları belirlemenize yardımcı olabilir.  
@@ -60,14 +61,14 @@ ms.lasthandoff: 10/31/2017
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[İzlenecek yol: bir SharePoint uygulama profili oluşturma](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Örnekleme profili bir SharePoint uygulama çözümlemesi gösterir.|  
+|[İzlenecek Yol: SharePoint Uygulaması için Profil Oluşturma](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Örnekleme profili bir SharePoint uygulama çözümlemesi gösterir.|  
 |[Performans testi uygulamanızı serbest bırakmadan önce](https://www.visualstudio.com/docs/test/performance-testing/run-performance-tests-app-before-release)|Stres testi SharePoint uygulamaları Yardım yük testleri oluşturmayı açıklar.|  
-|[Kodunuza birim testi](/visualstudio/test/unit-test-your-code)|Birim testleri kullanarak kodunuzda mantık hataları bulmak açıklar.|  
-|[Kodlanmış UI testleriyle SharePoint 2010 uygulamalarını test etme](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|SharePoint uygulamaları kullanıcı arabirimini test edileceğini açıklar.|  
+|[Kodunuza Birim Testi Uygulama](/visualstudio/test/unit-test-your-code)|Birim testleri kullanarak kodunuzda mantık hataları bulmak açıklar.|  
+|[Kodlanmış UI Testleriyle SharePoint 2010 Uygulamalarını Test Etme](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|SharePoint uygulamaları kullanıcı arabirimini test edileceğini açıklar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Uygulamayı test etme](/devops-test-docs/test/test-apps-early-and-often)   
- [Kod kalitesini geliştirme](/visualstudio/test/improve-code-quality)  
+ [Kod Kalitesini Geliştirme](/visualstudio/test/improve-code-quality)  
   
   

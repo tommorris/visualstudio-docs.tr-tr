@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe4921e48c978b1073c985d4c11f11a14f3b351c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d97dd10661beb5acb28b464a8bc0d88ba5946924
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="selection-context-objects"></a>Seçim bağlam nesneleri
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE) genel Seçim bağlam nesnesi IDE içinde görüntüleneceğini belirlemek için kullanır. IDE içinde her penceresi genel seçimi bağlamına gönderilen kendi seçim bağlam nesnesi olabilir. Bu pencere odağa sahip olduğunda IDE genel seçimi bağlam penceresinden değerlerle güncelleştirir. Daha fazla bilgi için bkz: [kullanıcıya geri bildirim](../../extensibility/internals/feedback-to-the-user.md).  
@@ -47,4 +48,4 @@ ms.lasthandoff: 10/31/2017
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>   
  [Visual Studio'da hiyerarşileri](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [Seçim ve IDE içinde para birimi](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
- [Proje türleri](../../extensibility/internals/project-types.md)
+ [Proje Türleri](../../extensibility/internals/project-types.md)

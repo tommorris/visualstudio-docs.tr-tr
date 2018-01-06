@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2789fd46942a9b54ca3d6efb082a6b21511969ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1667da0798bba298fdead26105178905c0b9a9e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deleting-a-breakpoint"></a>Bir kesme noktası siliniyor
 Aşağıdaki bekleyen bir kesme noktası silerken işlemini açıklar:  
@@ -31,4 +32,4 @@ Aşağıdaki bekleyen bir kesme noktası silerken işlemini açıklar:
 >  Tek bir ilişkili kesme noktası için bir çağrı tarafından da silinebilir [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Arama hata ayıklayıcı olayları](../../extensibility/debugger/calling-debugger-events.md)
+ [Hata Ayıklayıcısı Olaylarını Çağırma](../../extensibility/debugger/calling-debugger-events.md)

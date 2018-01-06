@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f7921ccebf9872f8a1f8ed79e6ee8da05d04e320
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d314763f8ff4dc170148cca166e3ecdff051ae24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Nasıl yapılır: Yayımlama Sihirbazını Kullanarak ClickOnce Uygulaması Yayımlama
 ClickOnce uygulaması kullanıcılar tarafından kullanılabilmesi için bir dosya paylaşımı veya yolu, FTP sunucusu veya çıkarılabilir medya yayımlamanız gerekir. Uygulama Yayımlama Sihirbazı'nı kullanarak yayımlayabilirsiniz; yayımlama ile ilgili ek özellikler bulunur **Yayımla** sayfasında **Proje Tasarımcısı**. Daha fazla bilgi için bkz: [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md).  
@@ -50,8 +51,7 @@ ClickOnce uygulaması kullanıcılar tarafından kullanılabilmesi için bir dos
   
 4.  İçinde **nasıl kullanıcılar yükler uygulama?** sayfasında, kullanıcıların gittikleri uygulamayı yüklemek için konumu seçin:  
   
-    -   Kullanıcılar bir Web sitesinden kuracaksa tıklatın **bir Web sitesinden** ve karşılık gelen bir URL önceki adımda girilen dosya yolunu girin. 
-              **İleri**'ye tıklayın. (Yayımlama konumu olarak bir FTP adresi belirttiğinizde, bu seçenek genellikle kullanılır. FTP doğrudan Merkezi'nden desteklenmiyor. Bu nedenle, bir URL girmeniz gerekir.)  
+    -   Kullanıcılar bir Web sitesinden kuracaksa tıklatın **bir Web sitesinden** ve karşılık gelen bir URL önceki adımda girilen dosya yolunu girin. **İleri**'ye tıklayın. (Yayımlama konumu olarak bir FTP adresi belirttiğinizde, bu seçenek genellikle kullanılır. FTP doğrudan Merkezi'nden desteklenmiyor. Bu nedenle, bir URL girmeniz gerekir.)  
   
     -   Kullanıcılar uygulamayı doğrudan dosya paylaşımından kuracaksa tıklatın **gelen bir UNC yolu veya dosya paylaşımı**ve ardından **sonraki**. (Form c:\deploy\myapp konumlarını yayımlamak için budur veya \\\server\myapp.)  
   
@@ -104,4 +104,4 @@ ClickOnce uygulaması kullanıcılar tarafından kullanılabilmesi için bir dos
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md)   
- [ClickOnce kullanarak Office çözümü dağıtma](/office-dev/office-dev/deploying-an-office-solution-by-using-clickonce)
+ [ClickOnce Kullanarak Office Çözümü Dağıtma](/office-dev/office-dev/deploying-an-office-solution-by-using-clickonce)

@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c91fcc01fd14883c927f5e84a7f2444b768c0ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4941d3b5225a1d9c6b22eda3c8f79ef009f2b169
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-serialize-symbol-information"></a>Nasıl yapılır: Sembol Bilgilerini Serileştirme
 Uygulamanızı analiz etmek zorunda simgeleri seri hale getirebilir. Sembol serileştirme simgeleri .vsp dosyasına ekler. Sembol bilgileri .vsp dosyasına ekleyerek, diğerleri erişmek özgün simgeleri zorunda kalmadan bir performans raporu analiz edebilirsiniz. Simgeler seri duruma, özgün Araçlı .exe ve .vsp dosyasını çözümlemek için .pdb dosyaları olması gerekir.  

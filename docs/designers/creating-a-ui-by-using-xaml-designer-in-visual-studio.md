@@ -17,11 +17,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20ffb34c3c9ac1d2842995c53332eb241337b769
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 9b628769c5945817aebd790820f1f16085f6564a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio’da XAML Tasarımcısı’nı kullanarak kullanıcı arabirimi oluşturma
 Visual Studio'da XAML Tasarımcısı tasarım XAML tabanlı Windows ve Web uygulamaları yardımcı olması için görsel bir arabirim sağlar. Denetimlerden sürükleyerek, uygulamalarınız için kullanıcı arabirimleri oluşturabilirsiniz **araç** ve özelliklerini ayarlama **özellikleri** penceresi. XAML doğrudan XAML görünümünde de düzenleyebilirsiniz.  
@@ -166,4 +167,4 @@ Visual Studio'da XAML Tasarımcısı tasarım XAML tabanlı Windows ve Web uygul
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XAML Tasarımcısı'nda öğeleri ile çalışma](../designers/working-with-elements-in-xaml-designer.md)   
  [Oluşturma ve kaynak Uygula](../designers/how-to-create-and-apply-a-resource.md)   
- [İzlenecek yol: XAML Tasarımcısı'nda veri bağlama](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [İzlenecek yol: XAML Tasarımcısı’nda verileri bağlama](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

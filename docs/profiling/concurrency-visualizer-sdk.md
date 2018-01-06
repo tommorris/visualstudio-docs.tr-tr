@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efe710a237ff9cde5d66a7e377f7a4b700a00705
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5eecc1d317f2391632cbe87df30a2ba2fd7c692c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer-sdk"></a>Eşzamanlılık Görselleştiricisi SDK
 Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için eşzamanlılık görselleştiricisi SDK'sını kullanarak kaynak kodunuzu işaretleyebilir. Ek verileri kodunuzda aşamaları ve olaylarla ilişkilendirebilirsiniz. Bu ek görsel olarak da bilinir *işaretçileri*.  Bir giriş için bkz [eşzamanlılık görselleştiricisi SDK'sı giriş](http://go.microsoft.com/fwlink/?LinkId=235405).  
@@ -126,6 +127,6 @@ Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için eşzamanl
 |Başlık|Açıklama|  
 |-----------|-----------------|  
 |[C++ Kitaplık Başvurusu](../profiling/cpp-library-reference.md)|Eşzamanlılık görselleştiricisi API için C++ açıklar.|  
-|[C Kitaplık Başvurusu](../profiling/c-library-reference.md)|Eşzamanlılık görselleştiricisi API C. açıklar|  
+|[C Kitaplığı Başvurusu](../profiling/c-library-reference.md)|Eşzamanlılık görselleştiricisi API C. açıklar|  
 |<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Yönetilen kod için eşzamanlılık görselleştiricisi API açıklar.|  
 |[Eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md)|Eşzamanlılık yöntemi kullanılarak oluşturulur ve iş parçacığı yürütme verileri içeren veri dosyalarını profil oluşturma raporları ve görünümleri için başvuru bilgileri.|

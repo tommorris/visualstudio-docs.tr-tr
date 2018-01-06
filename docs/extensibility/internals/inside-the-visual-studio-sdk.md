@@ -16,13 +16,14 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebba0ea11781a4b5a3d01aabb718b0ad778daab9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e8b1374b6934e09bbf3ce1012d551dab2831292c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK içinde
+# <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK’nın İçinde
 Bu bölümde, Visual Studio mimarisi, bileşenleri, hizmetleri, şemalar, yardımcı programlar ve benzeri dahil olmak üzere Visual Studio uzantıları hakkında ayrıntılı bilgi sağlar.  
   
 ## <a name="extensibility-architecture"></a>Genişletilebilirlik mimarisi  
@@ -37,7 +38,7 @@ Visual Studio mimari genelleştirilmiş görünümü
 ## <a name="visual-studio-shell"></a>Visual Studio Kabuğu  
  Visual Studio Kabuğu'nu temel işlevi sağlar ve bileşen VSPackages ve MEF uzantıları arasında arası iletişimi destekler. Daha fazla bilgi için bkz: [Visual Studio Kabuğu](../../extensibility/internals/visual-studio-shell.md).  
   
-## <a name="user-experience-guidelines"></a>Kullanıcı deneyimi yönergeleri  
+## <a name="user-experience-guidelines"></a>Kullanıcı Deneyimi Yönergeleri  
  Visual Studio için yeni özellikler tasarım planlıyorsanız, tasarım ve kullanılabilirlik ipuçları için bu yönergeleri göz atın: [Visual Studio kullanıcı deneyimi yönergeleri](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
 ## <a name="commands"></a>Komutlar  

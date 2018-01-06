@@ -14,11 +14,12 @@ caps.latest.revision: "28"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 064d2819a9a7bd3e72539ff7624299e3619f4e94
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c3584a8620c4f2d9c0f82efc94bae4dc4c33233
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-user-requirements"></a>Kullanıcı gereksinimlerini modelleme
 Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcıların gereksinimlerini anlamak, ele almaktadır ve visual Studio yardımcı olur, sisteminizi hedeflerine ulaşması yardımcı oynadığı. Gereksinimler modeli her biri kullanıcıların ihtiyaçlarını farklı bir açısını odaklanır bu diyagramları kümesidir. Video gösterimi için bkz: [iş etki alanını modelleme](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
@@ -74,7 +75,7 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcıların gereks
   
 |Hakkında bilgi almak için|Oku|  
 |--------------------|----------|  
-|İş kurallarına uyduğundan kod nasıl geliştirilir|[Uygulama Mimarinizi modeli](../modeling/model-your-app-s-architecture.md)|  
+|İş kurallarına uyduğundan kod nasıl geliştirilir|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="QoSRequirements"></a>Hizmet gereksinimlerinin kalitesini açıklayan  
  Hizmet kalitesi gereksinimleri birkaç kategorisi vardır. Bunlar aşağıdakileri içerir:  
@@ -98,8 +99,8 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcıların gereks
 |Hakkında bilgi almak için|Oku|  
 |--------------------|----------|  
 |Hizmet gereksinimlerinin kalitesini kaydetme hakkında daha ayrıntılı bilgi|[Servis kalitesi gereksinimleri tanımlamak için yönergeler](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
-|Hizmet gereksinimlerinin kalitesini aynılarını kod nasıl geliştirilir|[Uygulama Mimarinizi modeli](../modeling/model-your-app-s-architecture.md)|  
+|Hizmet gereksinimlerinin kalitesini aynılarını kod nasıl geliştirilir|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)   
- [Uygulama Mimarinizi modeli](../modeling/model-your-app-s-architecture.md)   
+ [Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)   

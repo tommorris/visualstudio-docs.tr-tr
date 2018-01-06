@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba7149d13c85ec99128488e7207a5320f93d680f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 527e7a445356a46abdd6f2edb0555b7c5c9c7de8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 Bir program düğüm eklemek için hata ayıklama altyapısı (DE) nedenini belirtir.  
@@ -65,4 +66,4 @@ public enum enum_ATTACH_REASON {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Numaralandırmalar](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Ekleme](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
- [Ekleme](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+ [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

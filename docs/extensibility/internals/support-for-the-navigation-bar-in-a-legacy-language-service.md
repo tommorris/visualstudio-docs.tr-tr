@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 935ea7d9fde2872c952f79afaa95058e9f18d0a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e2d7ddfd4904923cbdea415fa5a0d2086cc071f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Eski dil hizmeti gezinti çubuğunda desteği
 Gezinti Çubuğu Düzenleyicisi görünüm üstündeki türleri ve üyeleri dosyasında görüntüler. Sol açılan türleri gösterilir ve üyeleri sağındaki açılan gösterilir. Kullanıcı türü seçtiğinde şapka türü ilk satırında yerleştirilir. Kullanıcı bir üye seçtiğinde şapka üye tanımını yerleştirilir. Aşağı açılan kutuları şapka geçerli konumunu yansıtacak şekilde güncelleştirilir.  

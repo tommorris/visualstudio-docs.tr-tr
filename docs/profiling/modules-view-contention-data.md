@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae0bd48af8c9fbaaaf8c38f50a2fe8233f15cb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5503422ece5847018e8d321dba9cf674dff9e623
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---contention-data"></a>Modüller görünümü - çakışma verileri
 Profil oluşturma verileri örneklenen modülleri göre gruplandırılmış eşzamanlılık verileri çakışma verileri modülleri görünümünü görüntüler. Her modül hiyerarşik bir köküdür. Çekişme olayları meydana geldiği modülündeki işlevlerin modülü düğümünün altında listelenir.  
@@ -50,4 +51,4 @@ Profil oluşturma verileri örneklenen modülleri göre gruplandırılmış eşz
  [Modüller görünümü - izleme](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Modüller görünümü - örnekleme](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Modüller görünümü](../profiling/modules-view-instrumentation-data.md)   
- [Modüller görünümü](../profiling/modules-view-sampling-data.md)
+ [Modüller Görünümü](../profiling/modules-view-sampling-data.md)

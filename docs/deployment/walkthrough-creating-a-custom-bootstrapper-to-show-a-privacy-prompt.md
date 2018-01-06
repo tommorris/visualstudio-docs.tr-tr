@@ -23,11 +23,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f84abe8354f1affc566cc05d119edc4cbc030712
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 97b5ba379eb715c63e5432b22999e2c4f12bf50d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>İzlenecek yol: Bir Gizlilik İstemi Göstermek için Özel Bir Önyükleyici Oluşturma
 Derlemeleri yeni dosya sürümleri ve derleme sürümleri ile kullanılabilir olduğunda otomatik olarak güncelleştirmek için ClickOnce uygulamalarını yapılandırabilirsiniz. Müşterileriniz için bu davranışı kabul emin olmak için bunları bir gizlilik istemi görüntüleyebilirsiniz. Ardından, bunlar otomatik olarak güncelleştirmek için uygulama izni vermek seçebilirsiniz. Uygulama otomatik olarak güncelleştirmeye izin verilmiyorsa, yüklemez.  
@@ -306,4 +307,4 @@ Derlemeleri yeni dosya sürümleri ve derleme sürümleri ile kullanılabilir ol
  [Önyükleyici paketleri oluşturma](../deployment/creating-bootstrapper-packages.md)   
  [Nasıl yapılır: Ürün bildirimi oluşturma](../deployment/how-to-create-a-product-manifest.md)   
  [Nasıl yapılır: Paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md)   
- [Ürün ve paket şema başvurusu](../deployment/product-and-package-schema-reference.md)
+ [Ürün ve Paket Şema Başvurusu](../deployment/product-and-package-schema-reference.md)

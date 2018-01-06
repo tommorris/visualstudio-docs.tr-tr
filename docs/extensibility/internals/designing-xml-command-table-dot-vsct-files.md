@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca277abe07ffe843ed3f4106615796340f5367a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e007ffe8cf3cc893bc9575a3e7c083090b523467
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>XML komutu tablosu tasarlama (. Vsct) dosyaları
 Bir XML komutu tablosu (.vsct) dosyası bir VSPackage komutu öğelerinin görünümünü ve düzeni açıklar. Komut öğeleri düğmeler, birleşik giriş kutuları, menüler, araç çubukları ve komut öğe gruplarını içerir. Bu konuda, XML komut tablo dosyaları, komut öğeleri ve menüleri nasıl etkilediklerini ve bunların nasıl oluşturulacağı açıklanmaktadır.  
@@ -124,4 +125,4 @@ Bir XML komutu tablosu (.vsct) dosyası bir VSPackage komutu öğelerinin görü
  Komut satırını kullanarak aracı çalıştırın **CreateExpInstance/reset**. Bu araç, normalde yüklenmiş tüm kayıtlı VSPackages Deneysel kovanından kaldırır unutmayın [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genişletme menüleri ve komutları](../../extensibility/extending-menus-and-commands.md)
+ [Menüleri ve Komutlari Genişletme](../../extensibility/extending-menus-and-commands.md)

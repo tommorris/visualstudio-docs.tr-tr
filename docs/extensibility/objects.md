@@ -13,28 +13,29 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7c42521915574952649776894ddc660e8e49c11
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c79183861539849a04e4936ed9b0f16092963496
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="objects"></a>Nesneler
 Aşağıdaki başvuru bilgilerini temel metin düzenleyici örneği oluşturmak için kullanılan nesneleri açıklanmaktadır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [VSCodeWindow nesnesi](../extensibility/vscodewindow-object.md)  
+ [VSCodeWindow Nesnesi](../extensibility/vscodewindow-object.md)  
  Kod pencere nesnesi, bir veya daha fazla metin görünümleri içine özel belge penceresine açıklar.  
   
- [VSCodeWindowManager nesnesi](../extensibility/vscodewindowmanager-object.md)  
+ [VSCodeWindowManager Nesnesi](../extensibility/vscodewindowmanager-object.md)  
  Dil hizmeti tarafından uygulanan ve adornments yönetmekten sorumlu kod Pencere Yöneticisi nesnesi açıklar.  
   
- [VSTextBuffer nesnesi](../extensibility/vstextbuffer-object.md)  
+ [VSTextBuffer Nesnesi](../extensibility/vstextbuffer-object.md)  
  Unicode metni, bir dosya için veri akışı temsil eden metin arabelleği nesnesinin açıklar.  
   
- [VSTextView nesnesi](../extensibility/vstextview-object.md)  
+ [VSTextView Nesnesi](../extensibility/vstextview-object.md)  
  Metin görünümü, metin arabelleğinin Unicode metni görüntüleyin ve düzenleyin kullanıcıların olanak sağlayan bir pencere açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Visual Studio SDK'sı başvurusu](../extensibility/visual-studio-sdk-reference.md)  
+ [Visual Studio SDK Başvurusu](../extensibility/visual-studio-sdk-reference.md)  
  Başvuru konuları listesini gösterir.

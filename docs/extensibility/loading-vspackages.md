@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29022d14311e71b7ee33f5339f8e450c47d1ce5c
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: vssdk
+ms.openlocfilehash: 5efc043ae6e88f3f7b3c989a2c37c0ff9f555dd6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="loading-vspackages"></a>VSPackages yükleniyor
 Yalnızca işlevleri gerekli olduğunda VSPackages Visual Studio'ya yüklenir. Örneğin, Visual Studio Proje Fabrika veya VSPackage uygulayan bir hizmeti kullanan bir VSPackage yüklenir. Bu özellik, mümkün olduğunda performansını artırmak kullanılan Gecikmeli yükleme adı verilir.  
@@ -75,4 +76,4 @@ Yalnızca işlevleri gerekli olduğunda VSPackages Visual Studio'ya yüklenir. �
      Zorla yüklenmesini VSPackage iletişimi için kullanılmaması gerekir. Kullanım [kullanma ve servisleri](../extensibility/using-and-providing-services.md) yerine.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [VSPackages](../extensibility/internals/vspackages.md)
+ [VSPackage’lar](../extensibility/internals/vspackages.md)

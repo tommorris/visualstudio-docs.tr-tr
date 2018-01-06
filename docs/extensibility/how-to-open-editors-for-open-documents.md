@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfd145281a467a23cd01d73ff04721d68580254e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c4c6321644cb59f55ad1335249aec5b071aef4ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Nasıl yapılır: açık belgeler için düzenleyicileri açın
 Bir belge penceresi proje açılmadan önce projeyi önce dosyanın zaten başka bir düzenleyici için belge penceresindeki açık olup olmadığını belirlemeniz gerekir. Dosya ya da açık bir projeye özgü düzenleyicisinde olabilir ya da standart düzenleyicileri birini kayıtlı [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -57,4 +58,4 @@ Bir belge penceresi proje açılmadan önce projeyi önce dosyanın zaten başka
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Açıp kaydederek proje öğeleri](../extensibility/internals/opening-and-saving-project-items.md)   
  [Nasıl yapılır: açık projeye özgü düzenleyiciler](../extensibility/how-to-open-project-specific-editors.md)   
- [Nasıl yapılır: standart düzenleyicileri açın](../extensibility/how-to-open-standard-editors.md)
+ [Nasıl Yapılır: Standart Düzenleyicileri Açma](../extensibility/how-to-open-standard-editors.md)

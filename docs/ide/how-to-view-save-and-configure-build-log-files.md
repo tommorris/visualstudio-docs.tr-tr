@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 617b495cab96d8fdb0ddd7c69d6e6c1dd93d7ccc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1a57911b8736af27caf0bd9ba30e9e03bdebed2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Nasıl yapılır: Derleme Günlüğü Dosyalarını Görüntüleme, Kaydetme ve Yapılandırma
 Visual Studio IDE içinde olan bir projeyi derleme sonra bu yapıyı hakkındaki bilgileri görüntüleyebilirsiniz **çıkış** penceresi. Bu bilgileri kullanarak, örneğin, bir derleme hatasını gidermek olabilir. C++ projeleri için oluşturulan ve otomatik olarak kaydedilmiş bir .txt dosyasına aynı bilgileri de görüntüleyebilirsiniz. Yönetilen kod projelerde kopyalayın ve bilgileri yapıştırın **çıkış** bir .txt penceresine dosya ve dosyayı kaydedin. IDE, hangi türde bilgilerin her derleme hakkında görüntülemek istediğinizi belirtmek için de kullanabilirsiniz.  
@@ -59,4 +60,4 @@ Visual Studio IDE içinde olan bir projeyi derleme sonra bu yapıyı hakkındaki
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme günlüklerini alma](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Projeler ve çözümler Visual Studio'da oluşturma ve temizleme](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)
+ [Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)

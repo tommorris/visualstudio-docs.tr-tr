@@ -22,11 +22,12 @@ caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 8de46a08d49bb71da055021b6785e4a3e2e97efc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f239f13a7dcefe0ce6f2bf8c12c641e97a48ce26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulaması için Güncelleştirmeleri Yönetme
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]uygulamalarını otomatik olarak veya program aracılığıyla denetleyebilirsiniz. Geliştirici olarak çok sayıda güncelleştirme denetimleri ne zaman ve nasıl yapılır, güncelleştirmelerinin zorunlu olup ve uygulama güncelleştirmeleri nerede denetleyeceğini belirtme esneklik vardır.  
@@ -113,4 +114,4 @@ ms.lasthandoff: 10/27/2017
  [ClickOnce güncelleştirme stratejisini seçme](../deployment/choosing-a-clickonce-update-strategy.md)   
  [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)   
  [Nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Nasıl yapılır: program aracılığıyla ClickOnce dağıtım API'sini kullanarak uygulama güncelleştirmelerini denetleme](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
+ [Nasıl yapılır: ClickOnce Dağıtım API'sini Kullanarak Program Aracılığıyla Uygulama Güncelleştirmelerini Denetleme](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

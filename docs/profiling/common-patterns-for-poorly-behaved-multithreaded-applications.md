@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 744e3031c94a3b152728000e7c5425f85fb9e9ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c938f5effc963fa881506f55d0e4b271ae3a914
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Hatalı Davranan Çok İş Parçacıklı Uygulamalar için Ortak Desenler
 Eşzamanlılık görselleştiricisi çok iş parçacıklı uygulamada davranışını görselleştirmek için geliştiricilere yardımcı olur. Bu araç, hatalı davranan çok iş parçacıklı uygulamalar için ortak desenler Galerisi içerir. Galeri araçla bunu çözmek için büyük olasılıkla sonucunu bu davranışı ve en yaygın yaklaşımı her düzeni tarafından temsil edilen davranışının bir açıklaması ile birlikte sunulan tipik ve tanınabilir visual düzenleri içerir.  
@@ -65,4 +66,4 @@ Eşzamanlılık görselleştiricisi çok iş parçacıklı uygulamada davranış
  Kilit Konvoyları uygulama, ilk hizmet önce gelen bir order kilitler elde ettiğinde ve kilidi varış hızında edinme hızından daha yüksek olduğunda oluşur. Bu iki koşulun birleşimi yedekleme başlatmak Lock istekleri neden olur. Bu sorunu mücadele etmek için bir yolu "haksız" kilitleri ya da kilidi Devletleri'nde bulmak için ilk iş parçacığı erişmenizi kilitleri kullanmaktır. Önceki çizimde, bu convoy davranış gösterir. Sorunu çözmek için eşitleme nesneleri için Çekişme azaltmayı deneyin ve haksız kilitleri kullanmayı deneyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)
+ [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

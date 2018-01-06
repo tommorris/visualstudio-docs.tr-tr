@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d9c163063cfa4e2a78f8a07ab74efbecb355448
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef4179c5bc0fb80e2fb65d54885c342ca49bce3b
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>Visual Studio'da ayarlarınızı eşitleyin
 
@@ -51,7 +52,7 @@ Varsayılan olarak, aşağıdaki ayarları eşitlenir.
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Belirli bir bilgisayardaki eşitlenmiş ayarlar devre dışı bırakma
 
-Visual Studio için eşitlenmiş ayarlar varsayılan olarak açıktır. Bir bilgisayarda eşitlenmiş ayarlar giderek kapatabilirsiniz **Araçları &#124; Seçenekler &#124; Ortam &#124; Ayarları senkronize** onay kutusunu işaretleyerek ve sayfa.  Örneğin, bir bilgisayardaki Visual Studio'nun ayarları senkronize değil karar verirseniz, ayarı yapılan herhangi bir değişiklik bilgisayarda bilgisayar b'de gösterilmiyor yapın veya bilgisayar C. bilgisayar B ve C devam birbirleriyle ancak değil bilgisayarla A. eşitlemek
+Visual Studio için eşitlenmiş ayarlar varsayılan olarak açıktır. Bir bilgisayarda eşitlenmiş ayarlar giderek kapatabilirsiniz **Araçları &#124; Seçenekler &#124; Ortam &#124; Hesapları** onay kutusunu işaretleyerek ve sayfa.  Örneğin, bir bilgisayardaki Visual Studio'nun ayarları senkronize değil karar verirseniz, ayarı yapılan herhangi bir değişiklik bilgisayarda bilgisayar b'de gösterilmiyor yapın veya bilgisayar C. bilgisayar B ve C devam birbirleriyle ancak değil bilgisayarla A. eşitlemek
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Visual Studio ailesi ürünleri ve sürümleri üzerinden ayarları eşitleme
 

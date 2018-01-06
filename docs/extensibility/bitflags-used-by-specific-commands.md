@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e66d0f67e3774b1cbc908bb6b1bd13884a1d3171
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Özel komutlar tarafından kullanılan bit işaretleri
 Kaynak Denetim eklentisi API işlevlerinde sayısı davranışını tek bir değer bir veya daha fazla BITS ayarlayarak değiştirilebilir. Bu değerleri bit işaretleri bilinir. Kaynak Denetim eklentisi API tarafından kullanılan çeşitli bit işaretleri, bunları kullanan bir işlev tarafından gruplandırılmış burada açıklanmıştır.  
@@ -36,7 +37,7 @@ Kaynak Denetim eklentisi API işlevlerinde sayısı davranışını tek bir değ
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Kaynak Denetim eklentisi otomatik olarak dosyanın metin veya ikili olup olmadığını algılamak için bekleniyor.|  
 |`SCC_FILETYPE_TEXT`|0x01|Dosya türü metindir.|  
-|`SCC_FILETYPE_BINARY`|0x04|İkili dosya türü olabilir. **Not:** `SCC_FILETYPE_TEXT` ve `SCC_FILETYPE_BINARY` bayrakları karşılıklı olarak birbirini dışlar.   Tam olarak bir ya da hiçbirini ayarlayın.|  
+|`SCC_FILETYPE_BINARY`|0x04|İkili dosya türü olabilir. **Not:** `SCC_FILETYPE_TEXT` ve `SCC_FILETYPE_BINARY` bayrakları karşılıklı olarak birbirini dışlar. Tam olarak bir ya da hiçbirini ayarlayın.|  
 |`SCC_ADD_STORELATEST`|0x02|Yalnızca en son sürümünü (farkları yok) depolar.|  
   
 ## <a name="diff-flags"></a>Diff bayrakları  
@@ -108,4 +109,4 @@ Kaynak Denetim eklentisi API işlevlerinde sayısı davranışını tek bir değ
 |`SCC_OPT_SCO_YES`|1 M|Hiçbir eklenti UI checkout, çalışma dizini yok.|`SCC_OPT_SCCCHECKOUTONLY`|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Denetim Eklentileri](../extensibility/source-control-plug-ins.md)
+ [Kaynak Denetimi Eklentileri](../extensibility/source-control-plug-ins.md)

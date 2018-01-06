@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d5d251c414c955480d3a7e4289935d913fa470c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-syntax-coloring"></a>Sözdizimi renklendirmesi uygulama
 Dil hizmeti söz dizimi renklendirme sağladığında, ayrıştırıcı metin satırının colorable öğelerini bir diziye dönüştürür ve belirteç türleri colorable bu öğeler karşılık gelen döndürür. Ayrıştırıcının colorable öğeler listesine ait belirteç türleri döndürmelidir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]colorable her öğe için uygun belirteç türü Renklendirici nesne tarafından atanan öznitelikleri göre kod penceresi görüntüler.  
@@ -69,4 +70,4 @@ Dil hizmeti söz dizimi renklendirme sağladığında, ayrıştırıcı metin sa
  [Nasıl yapılır: yerleşik Colorable öğelerini kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [Özel Colorable öğeler](../../extensibility/internals/custom-colorable-items.md)   
  [Eski dil hizmeti geliştirme](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Eski dil hizmetinde söz dizimi renklendirme](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
+ [Eski Dil Hizmetinde Söz Dizimi Renklendirmesi](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20a60a82eacdfd06482e9765e82459b57fecb32b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bb77519c096c7c49f28de3fc98f24757373827c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-a-form-region-at-run-time"></a>Form Bölgesine Çalışma Zamanında Erişme
   
@@ -86,6 +87,6 @@ ms.lasthandoff: 10/31/2017
  [İzlenecek yol: Outlook'ta tasarlanan Form bölgesini içeri aktarma](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
  [Nasıl yapılır: Outlook Form bölgesini görüntülemesini engelleme](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
  [Outlook Form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   
- [Şerit çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)  
+ [Çalışma Zamanında Şeride Erişme](../vsto/accessing-the-ribbon-at-run-time.md)  
   
   

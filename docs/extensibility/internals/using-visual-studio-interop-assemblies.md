@@ -16,11 +16,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 298caf0b1c65ecb3612b927859b4d7d01720fc27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98d579755190eaf51448ef2b1b855c087bcad358
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Visual Studio birlikte çalışma derlemeleri kullanma
 Visual Studio birlikte çalışma derlemeleri yönetilen uygulamaların Visual Studio genişletilebilirlik sağlayan COM arabirimleri erişmesine izin verin. Düz COM arabirimleri ile birlikte çalışma sürümlerine arasında bazı farklar vardır. Örneğin, HRESULTs genellikle int değerler olarak temsil edilir ve özel durumlar olarak aynı şekilde ele alınması gerekir ve parametreleri (özellikle out Parametreleri) farklı şekilde işlenir.  
@@ -134,4 +135,4 @@ else
  Bu tür arabirimleri çağrı yönetilen yöntemleri [out] dizi dışında ilk öğe çekme. Bu öğe olarak olsaydı işlenebilir bir `retval` karşılık gelen COM arabiriminden dönüş değeri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönetilmeyen kod ile birlikte çalışma](/dotnet/framework/interop/index)
+ [Yönetilmeyen Kod ile Birlikte Çalışma](/dotnet/framework/interop/index)

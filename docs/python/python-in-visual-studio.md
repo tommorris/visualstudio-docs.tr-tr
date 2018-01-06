@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: f831aa683efdacc8a01ffbf5ef5a280c1a95f9e3
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: f91fcfa7e0ea7247eb91a3512f7abd64d8684809
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Visual Studio'da Python ile çalışma
 
@@ -34,7 +35,7 @@ Başlamak için:
 | Özellik | Açıklama | Genel Visual Studio belgeleri | 
 | --- | --- | --- |
 | [Visual Studio Proje sistemi](python-projects.md) | Örtük olarak Çekmeleri web sayfaları, JavaScript, uygulama kodu, test kodu tanımlamak açık denetim verirken Python kodu bir klasör yapısını, komut dosyaları, vb. oluşturun. | [Visual Studio’da Çözümler ve Projeler](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Proje şablonları](python-projects.md#project-templates) | Proje yapısı konsol, web, Azure, veri bilimi ve diğer proje türleri için hızlı bir şekilde oluşturur | [Visual Studio şablonları](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
+| [Proje şablonları](python-projects.md#project-templates) | Proje yapısı konsol, web, Azure, veri bilimi ve diğer proje türleri için hızlı bir şekilde oluşturur | [Visual Studio Şablonları](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
 | Birden çok yorumlayıcı desteği | CPython ve IronPython çeşitli sürümlerini destekler. | yok |
 | IPython desteği | Satır içi çizimler, .NET ve Windows Presentation Foundation (WPF) için REPL IPython/Jupyter için destek içerir. | yok |
 | [Zengin düzenleme, IntelliSense ve kod kavrama](code-editing.md) | Tüm kod ve kitaplıklarını arasında otomatik tamamlama söz dizimi renklendirme içeren [kod biçimlendirme](code-formatting.md), imza Yardım, sınıf görünümü gidin tanımı, tüm başvuruları Bul, kod parçacıkları [yeniden düzenleme](code-refactoring.md), [ PyLint](code-pylint.md)ve daha fazlası. | [Kod ve Metin Düzenleyici'de Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md) |
@@ -54,7 +55,7 @@ Kısa bir video giriş için bkz [Visual Studio için Python Araçları](https:/
 
 **Q. Python desteği Mac için Visual Studio ile var mı?**
 
-BİR. Değil şu anda rağmen istenen üzerinde [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). [Mac için Visual Studio](https://docs.microsoft.com/visualstudio/mac/) belgelerine destekliyor mu geliştirme geçerli türlerini tanımlar. Bu arada, Visual Studio Code Windows, Mac ve Linux [çalışır kullanılabilir uzantıları yoluyla Python ile iyi](https://code.visualstudio.com/docs/languages/python).
+BİR. Değil şu anda rağmen istenen üzerinde [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). [Mac için Visual Studio](/visualstudio/mac/) belgelerine destekliyor mu geliştirme geçerli türlerini tanımlar. Bu arada, Visual Studio Code Windows, Mac ve Linux [çalışır kullanılabilir uzantıları yoluyla Python ile iyi](https://code.visualstudio.com/docs/languages/python).
 
 **Q. Ne Python ile kullanıcı Arabirimi oluşturmak için kullanabilir miyim?**
 

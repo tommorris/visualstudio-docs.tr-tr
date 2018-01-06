@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 740eefc28e0b48d327fb5d0900ab39364633f877
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b8c0f47186b36cea9b203805c3c9c009acb3fb42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>İzlenecek Yol: Sıfırdan MSBuild Proje Dosyası Oluşturma
 .NET Framework hedefleyen programlama dilleri açıklar ve uygulama oluşturma işlemi denetlemek için MSBuild proje dosyalarını kullanın. MSBuild proje dosyası oluşturmak için Visual Studio kullandığınızda uygun XML dosyasına otomatik olarak eklenir. Ancak, XML nasıl düzenlendiğini anlaşılması yararlı ve bu derleme denetlemek için nasıl değiştirebilirsiniz.  
@@ -481,4 +482,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [MSBuild genel bakış](../msbuild/msbuild.md)  
- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+ [MSBuild Başvurusu](../msbuild/msbuild-reference.md)

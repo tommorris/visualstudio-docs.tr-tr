@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60898b7ea37c7e732453fd03f9c557b2494f66c5
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: eedc7e454c6523c1ab29e4ae685b14954c8e6d98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Nasıl yapılır: grafik tanılama bir ARM aygıtla kullanın
 Grafik tanılama Direct3D uygulamaları Windows RT 8.1 veya Windows Phone 8.1 çalıştıran ARM tabanlı cihazlarda uzaktan hata ayıklama destekler. Cihaz üzerinde çalışırken Direct3D uygulamanızdan grafik bilgilerini yakalama veya aygıt daha önce yakalanan grafik bilgilerini kayıttan yürütme makinesini olarak kullanın.  
@@ -47,4 +48,4 @@ Grafik tanılama Direct3D uygulamaları Windows RT 8.1 veya Windows Phone 8.1 ç
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir uzak makinede UWP uygulamaları çalıştırma](../run-windows-store-apps-on-a-remote-machine.md)   
- [Nasıl yapılır: grafik tanılama kayıttan yürütme makinesini değiştirme](how-to-change-the-graphics-diagnostics-playback-machine.md)
+ [Nasıl Yapılır: Grafik Tanılama Kayıttan Yürütme Makinesini Değiştirme](how-to-change-the-graphics-diagnostics-playback-machine.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71a53dfcb7ae7cca5b360d2e115c34909ca32f86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a6a5c8d9220b0cd2c0dddfee283d222f4efb9ab8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commandplacement-element"></a>CommandPlacement öğesi
 CommandPlacement öğesi düğmeleri, grupları ve menüleri birden fazla grup veya menü eklenmesini sağlar. CommandPlacement öğesini kullanarak, bir kullanıcı arabirimi görünümünü değiştirmek için bu öğeler tamamen yeniden tanımlamanız gerekmez.  
@@ -56,7 +57,7 @@ CommandPlacement öğesi düğmeleri, grupları ve menüleri birden fazla grup v
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[CommandPlacements öğesi](../extensibility/commandplacements-element.md)|Grupları CommandPlacements ve CommandPlacement öğelerinin belirtir.|  
+|[CommandPlacements Öğesi](../extensibility/commandplacements-element.md)|Grupları CommandPlacements ve CommandPlacement öğelerinin belirtir.|  
   
 ## <a name="example"></a>Örnek  
   
@@ -71,4 +72,4 @@ CommandPlacement öğesi düğmeleri, grupları ve menüleri birden fazla grup v
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CommandPlacements öğesi](../extensibility/commandplacements-element.md)   
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

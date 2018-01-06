@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72460f39cf63346106c2ccd81dc9ab16f8af78b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 51735bf0f46e5a1ead6f989a8e75745ebc8e6e35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-policy-and-the-properties-window"></a>Şablon ilke ve Özellikler penceresi
 Proje içinde Kurumsal Şablonu proje içerdiğinde bu kurumsal Şablonu proje ilkesini zorunlu kılabilir. Şablon ilke özelliklerinin varsayılan değerlerini ayarlamak, özelliklerini Gizle, özellikleri ekleyin ve benzeri için kullanılan kısıtlayan bir sistem olur.  
@@ -32,4 +33,4 @@ Proje içinde Kurumsal Şablonu proje içerdiğinde bu kurumsal Şablonu proje i
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>   
- [Genişletme özellikleri](../../extensibility/internals/extending-properties.md)
+ [Özellikleri Genişletme](../../extensibility/internals/extending-properties.md)

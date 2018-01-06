@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4a7d122f19e21eebbe5bd598272fb7cb9f52b27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3dde61c10d0a8c9fc5578b02cc713f648409cbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>İzlenecek yol: Eşleşen küme parantezleri görüntüleme
 Eşleştirmek istediğiniz küme ayraçları tanımlama ve düzeltme işareti küme ayraçları biri olduğunda bir metin işaretçisi etiketi için eşleşen küme parantezleri ekleyerek eşleşen ayraç gibi dil tabanlı özellikler uygulayabilirsiniz. Bir dil bağlamında küme ayraçları tanımlayabilirsiniz, kendi dosya adı uzantısı ve içerik türünü tanımlayın ve etiketler yalnızca o türü için geçerli veya varolan bir içerik türüyle (örneğin, "metin") etiketleri uygulayabilirsiniz. Aşağıdaki örneklerde, "metin" içerik türü etiketleri eşleşen ayraç uygulamak gösterilmiştir.  
@@ -125,4 +126,4 @@ Eşleştirmek istediğiniz küme ayraçları tanımlama ve düzeltme işareti k�
 4.  Bir açma ayracı önce şapka getirdiğinizde, bu kuşak hem eşleşen kapatma ayracı vurgulanmış olmalıdır. Yalnızca kapatma parantezi sonra imleci getirdiğinizde, bu kuşak hem eşleşen açma ayracı vurgulanmış olmalıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: bir içerik türü için bir dosya adı uzantısı bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek Yol: Bir İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

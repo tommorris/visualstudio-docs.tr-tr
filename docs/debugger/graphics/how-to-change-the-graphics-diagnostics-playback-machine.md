@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35b8eb174ea8e0ca238bafe5a05dfbba54855cda
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c2279fa20766180371834e3f3425d8e75e98d430
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Nasıl Yapılır: Grafik Tanılama Kayıttan Yürütme Makinesini Değiştirme
 Grafik bilgilerini yerel makinenize veya bir uzak makine ya da cihaz kullanarak geri yürütebilirsiniz.  
@@ -52,4 +53,4 @@ Grafik bilgilerini yerel makinenize veya bir uzak makine ya da cihaz kullanarak 
 >  **Uzaktan hata ayıklayıcı bağlantıları** iletişim kutusu, aynı alt ağda geliştirme makinenizde doğrudan bağlı ya da uzaktan hata ayıklama hedeflerini de görüntülenebilir. Bu uzaktan hata ayıklama hedeflerini birini el ile yapılandırma olmadan grafik tanılama kayıttan yürütme makinesini kullanabilirsiniz. İçinde **uzaktan hata ayıklayıcı bağlantıları** iletişim kutusunda, istediğiniz ve ardından hedef seçin **seçin** düğmesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Grafik günlük belgesi](graphics-log-document.md)
+ [Grafik Günlük Belgesi](graphics-log-document.md)

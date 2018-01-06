@@ -27,11 +27,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e99dff1fbe5638c81572f9b370f94c0337f9f7e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b6f8adfd3ce7d585cffe3c7506c4fdd56cad4a11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Görev Listesi, Ortam, Seçenekler İletişim Kutusu
 Bu seçenekler sayfası eklemek, silmek ve oluşturma yorum belirteçleri değiştirmenizi sağlar **görev listesi** anımsatıcıları. Bu ayarları görüntülemek için seçin **seçenekleri** gelen **Araçları** menüsünde genişletin **ortam** klasörünü seçin **görev listesi**.  
@@ -76,4 +77,4 @@ Bu seçenekler sayfası eklemek, silmek ve oluşturma yorum belirteçleri deği�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev listesini kullanma](../../ide/using-the-task-list.md)   
  [Kodda yer işaretleri ayarlama](../../ide/setting-bookmarks-in-code.md)   
- [Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)
+ [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)

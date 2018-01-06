@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippets-schema-reference"></a>Kod Parçacıkları Şema Başvurusu
 IntelliSense kod parçacıkları ile uygulamanıza eklenmeye hazır önceden yazılmış kod parçalarını olan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Yinelenen kodları yazmak veya örnekleri aramak için harcanan süreyi kısaltan kod parçacıkları sağlayarak üretkenliği artırabilirsiniz. IntelliSense kod parçacığı XML Şeması kendi kod parçacıkları oluşturmak ve bunları kod parçacıkları eklemek için kullanabileceğiniz, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zaten içerir.  
@@ -648,4 +649,4 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod parçacıkları](../ide/code-snippets.md)   
- [İzlenecek yol: kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md)
+ [İzlenecek Yol: Kod Parçacığı Oluşturma](../ide/walkthrough-creating-a-code-snippet.md)

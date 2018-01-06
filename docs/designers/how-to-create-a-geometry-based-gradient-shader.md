@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3eeb080af73966b48cf8be543faa4276ae3b438c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7d46fe01947e7f2813ae7eea8df81ae0b35f4f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Nasıl Yapılır: Geometri Tabanlı Gradyan Gölgelendirici Oluşturma
 Bu belgede gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendirici dili geometri tabanlı gradyan gölgelendirici oluşturmak için nasıl kullanılacağı gösterilmektedir. Bu gölgelendirici sabit bir RGB rengi değer yüksekliğini dünya uzayındaki nesnenin her bir noktanın göre ölçeklendirir.  
@@ -77,4 +78,4 @@ Bu belgede gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendi
  [Nasıl yapılır: Model 3-b Terrain](../designers/how-to-model-3-d-terrain.md)   
  [Nasıl yapılır: bir gri tonlamalı doku gölgelendirici oluşturma](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [Gölgelendirici Tasarımcısı](../designers/shader-designer.md)   
- [Gölgelendirici Tasarımcı düğümler](../designers/shader-designer-nodes.md)
+ [Gölgelendirici Tasarımcısı Düğümleri](../designers/shader-designer-nodes.md)

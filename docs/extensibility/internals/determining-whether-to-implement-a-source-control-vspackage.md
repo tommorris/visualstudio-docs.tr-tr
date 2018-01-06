@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808f2fda26046962eada377f8a204351adef19bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 88281496c2e8350f910feda7934e2b55a494243b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Kaynak denetimi VSPackage uygulamak kullanılıp belirleme
 Bu bölümde, kaynak denetimi uygun tümleştirme yolu seçme hakkında çözümleri ve verir geniş yönergeleri genişletmek için kaynak denetimi eklentilerini ve kaynak denetimi VSPackages seçimleri elaborates.  
@@ -39,4 +40,4 @@ Bu bölümde, kaynak denetimi uygun tümleştirme yolu seçme hakkında çözüm
 4.  Sorgu düzenleme ve sorgu kaydetme olayları işlemek (bkz [sorguyu düzenlemek sorgu kaydetmek](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Denetimi Eklentisi oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md)
+ [Kaynak Denetimi Eklentisi Oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md)

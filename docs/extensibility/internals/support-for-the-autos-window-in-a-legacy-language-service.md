@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c824845d4cbdb58241c088c1cb30259d3c298f72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: db6be625c671a508be3c2fd2f1697282af282bdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Eski dil hizmetinde otomatik değişkenler penceresi desteği
 **Otomobiller** penceresi değişkenleri ve ayıklanacak program (ya da bir kesme noktası veya bir özel durum nedeniyle) duraklatıldığında kapsamındaki parametreleri gibi ifadeleri görüntüler. İfadeler değişkenleri, yerel veya genel ve yerel kapsamda değiştirilmiş parametreleri içerebilir. **Otomobiller** penceresi örneklemesi bir sınıf, yapı veya başka bir türü de içerebilir. Bir ifade değerlendiricisi değerlendirebilir herhangi bir şey olası gösterilebileceği **otomobiller** penceresi.  

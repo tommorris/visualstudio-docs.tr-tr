@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 223342709dbe97fe38fb7a495ce482ae70e1c807
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eb265aabdb4feda05512e036cda19abc574e2fd4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitmap-element"></a>Bit eşlem öğesi
 Bir bit eşlem tanımlar. Bit eşlem bir kaynaktan veya bir dosya yüklenir.  
@@ -50,7 +51,7 @@ Bir bit eşlem tanımlar. Bit eşlem bir kaynaktan veya bir dosya yüklenir.
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Bit eşlemler öğesi](../extensibility/bitmaps-element.md)|Bit eşlem öğeleri gruplandırır.|  
+|[Bitmaps Öğesi](../extensibility/bitmaps-element.md)|Bit eşlem öğeleri gruplandırır.|  
   
 ## <a name="example"></a>Örnek  
   
@@ -61,4 +62,4 @@ Bir bit eşlem tanımlar. Bit eşlem bir kaynaktan veya bir dosya yüklenir.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

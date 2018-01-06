@@ -18,11 +18,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e2e7369d57f7a23cf8467d8a8eb5c99447d35e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e55e469112053d7a78416c21a685d423a6bfa31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-tree-view"></a>Çağrı Ağacı Görünümü
 Çağrı ağacı görünümü profili uygulamada geçiş işlevi yürütme yollarını görüntüler. Ağaç kök uygulama veya bileşenin giriş noktasıdır. Her işlevi düğüm tüm adlı işlevleri ve bu işlev çağrıları hakkında performans verilerini listeler.  
@@ -42,13 +43,13 @@ ms.lasthandoff: 10/31/2017
   
  Çağrı ağacı görünümü sütunlar için tanımları hakkında daha fazla bilgi için aşağıdakilere bakın:  
   
- [Çağrı ağacı görünümü](../profiling/call-tree-view-sampling-data.md)  
+ [Çağrı Ağacı Görünümü](../profiling/call-tree-view-sampling-data.md)  
   
- [Çağrı ağacı görünümü](../profiling/call-tree-view-instrumentation-data.md)  
+ [Çağrı Ağacı Görünümü](../profiling/call-tree-view-instrumentation-data.md)  
   
  [Çağrı ağacı görünümü - örnekleme](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
   
- [Çağrı ağacı görünümü](../profiling/call-tree-view-contention-data.md)  
+ [Çağrı Ağacı Görünümü](../profiling/call-tree-view-contention-data.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans rapor görünümleri](../profiling/performance-report-views.md)   

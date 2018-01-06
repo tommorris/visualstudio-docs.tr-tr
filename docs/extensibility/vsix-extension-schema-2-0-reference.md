@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c1c81a34a290b34207f505d6b1ab46fa8b11cd8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f0ac6fdedb5d65f40f718c568297dc0196c4537
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX uzantısı 2.0 şema başvurusu
 VSIX dağıtım bildirim dosyası VSIX paket içeriğini açıklar. Dosya biçimi, bir şema tarafından yönetilir. Özel türler ve öznitelikler ekleyerek bu şemayı 2.0 sürümünü destekler.  Bildirim şeması genişletilebilir. Bildirim yükleyicisi XML öğeleri ve onu anlamıyor öznitelikleri yoksayar.  
@@ -217,4 +218,4 @@ VSIX dağıtım bildirim dosyası VSIX paket içeriğini açıklar. Dosya biçim
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio uzantıları aktarma](../extensibility/shipping-visual-studio-extensions.md)
+ [Visual Studio Uzantıları Gönderme](../extensibility/shipping-visual-studio-extensions.md)

@@ -11,11 +11,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: d7a899e16d79ba2aae40506eb3cd6739dcdb4397
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: f4da0733b53b17dbcca779b0fd3e7afcddcb2e85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Nasıl yapılır: Birim Testlerini .NET Framework'ün Önceki Sürümünü Hedefleyecek Şekilde Yapılandırma
 Microsoft Visual Studio test projesi oluşturduğunuzda, .NET Framework'ün en son sürüm varsayılan olarak hedef olarak ayarlanır. Visual Studio'nun önceki sürümlerden testi projelerini yükseltme yöntemini seçerseniz, ayrıca, bunlar .NET Framework'ün en son sürümünü hedefleyecek şekilde yükseltilir. Proje özelliklerini düzenleyerek, açıkça .NET Framework'ün önceki sürümlerinde projeyi yeniden hedefleyebilirsiniz.  
@@ -34,7 +35,7 @@ Microsoft Visual Studio test projesi oluşturduğunuzda, .NET Framework'ün en s
   
  Yukarıda listelenen özellikleri de, yazma birim testleri ve Visual Studio kullanarak SharePoint uygulamaları için tümleştirme testleri sağlar. [!INCLUDE[crabout](../test/includes/crabout_md.md)]Visual Studio kullanarak SharePoint uygulamaları geliştirmek için bkz: nasıl [SharePoint çözümleri oluşturma](/office-dev/office-dev/create-sharepoint-solutions), [oluşturma ve hata ayıklama SharePoint çözümlerini](/office-dev/office-dev/building-and-debugging-sharepoint-solutions) ve [doğrulama ve hata ayıklama SharePoint kodunu](/office-dev/office-dev/verifying-and-debugging-sharepoint-code).  
   
- **Sınırlamaları**  
+ **Sınırlamalar**  
   
  .NET Framework'ün önceki sürümlerini kullanmak üzere test projelerinizi yeniden hedeflediğinizde aşağıdaki sınırlamalar uygulanır:  
   
@@ -129,4 +130,4 @@ Microsoft Visual Studio test projesi oluşturduğunuzda, .NET Framework'ün en s
  [Oluşturma ve var olan kod için birim testleri çalıştırma](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
  [SharePoint çözümleri oluşturma](/office-dev/office-dev/create-sharepoint-solutions)   
  [Derleme ve SharePoint çözümlerini hata ayıklama](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Gelişmiş derleyici Ayarları iletişim kutusu (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+ [Gelişmiş Derleme Ayarları İletişim Kutusu (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

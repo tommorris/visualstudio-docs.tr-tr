@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 7dabd752aed4213c03ffd32ed5cc255ea4f2852e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a08d7a94dcd512f650564a07a1e6784bffe8c45e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Uygulamanızı modeller aracılığıyla oluşturma ve yapılandırma
 Oluşturmak veya bir modelden uygulamanızın parçalarını yapılandırın.
@@ -25,9 +26,9 @@ Oluşturmak veya bir modelden uygulamanızın parçalarını yapılandırın.
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Bir modelden uygulamanızın kod oluşturma  
  Metin şablonları kullanarak kod oluşturmanın en kolay yolu gerçekleşir. Aynı kodu oluşturabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözüm modeli tutun. Daha fazla bilgi için bkz.:  
   
--   [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
+-   [T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
--   [Bir etki alanına özgü dili kod oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)  
+-   [Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)  
   
  Bu yöntem, artımlı olarak uygulamak kolaydır. Yalnızca belirli durumunuz için çalışan bir uygulama ile başlatın ve birkaç bazı bölümleri modelden farklı hale getirmek istediğiniz seçin. Metin şablonu (.tt) dosyaları olduklarında böylece bölümleri kaynak dosyalarını yeniden adlandırın. Bu noktada, uygulama önceden olduğu gibi çalışması için kaynak .cs dosyaları otomatik olarak şablon dosyalarından oluşturulur.  
   
@@ -40,7 +41,7 @@ Oluşturmak veya bir modelden uygulamanızın parçalarını yapılandırın.
 ## <a name="configuring-your-application-from-a-model"></a>Bir Model uygulamanızdan yapılandırma  
  Çalışma zamanında uygulamanızın davranışını değiştirmek istiyorsanız, uygulama derlenmiş önce kaynak kodunu üretir kod oluşturma kullanamazsınız. Bunun yerine, uygulamanızın modeli okumak ve davranışını buna göre farklılık göstermesi için tasarlayabilirsiniz. Daha fazla bilgi için bkz.:  
   
--   [Nasıl yapılır: Program kodundaki dosyasından bir Model açın](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+-   [Nasıl yapılır: Program Kodunda Dosyadan Model Açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
  Bu yöntem aynı zamanda bir artımlı olarak uygulanabilir, ancak daha fazla iş başında yok. Modeli okumak ve değerlerinin değişken parçaları için erişilebilir olmasını sağlayan bir çerçeve ayarlama kod yazmanız gerekir. Değişken bölümlerin genel yapılması, kod oluşturmaktan daha pahalıdır.  
   
@@ -76,4 +77,4 @@ Oluşturmak veya bir modelden uygulamanızın parçalarını yapılandırın.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir etki alanına özgü dili kod oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)   
  [Nasıl yapılır: Program kodundaki dosyasından bir Model açın](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
- [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+ [T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

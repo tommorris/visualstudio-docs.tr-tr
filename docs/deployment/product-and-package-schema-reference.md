@@ -29,11 +29,12 @@ caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ad3f3df67fe2545aadc8da71b89e600895cea780
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 149dd62b38bdcb0863d30f4280b35950361f58cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="product-and-package-schema-reference"></a>Ürün ve Paket Şema Başvurusu
 A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML bildirim bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. Dış bağımlılıkları örneklerindendir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ve Microsoft Data Access Components (MDAC). Bir paket dosyası ürün dosyasına benzer ancak bir bağımlılığın yerelleştirilmiş derlemeler, lisans sözleşmelerini ve belgeler gibi kültüre bağlı bileşenlerini yüklemek için kullanılır.  
@@ -162,4 +163,4 @@ A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML b
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Uygulama Bildirimi](../deployment/clickonce-application-manifest.md)

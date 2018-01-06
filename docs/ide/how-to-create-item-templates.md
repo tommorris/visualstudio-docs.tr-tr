@@ -1,168 +1,135 @@
 ---
-title: "Nasıl yapılır: öğe şablonları oluşturma | Microsoft Docs"
+title: "Visual Studio için öğe şablonları oluşturma | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- project item templates, XML reference
-- project item templates, custom template locations
-- project item templates, creating
-- project item templates, metadata files
-ms.assetid: 77bc53d4-d607-4820-a032-7e3b365891b5
-caps.latest.revision: "23"
+helpviewer_keywords: item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2ecd17694e65c6273f8e73a321a72bc209038922
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5145263ce84cf9e1f6a5ef970701ace660ecb73d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
-# <a name="how-to-create-item-templates"></a>Nasıl Yapılır: Öğe Şablonları Oluşturma
-' Ndaki adımları [ilk yordamı](../ide/how-to-create-item-templates.md#export_template) kullanarak bir öğe şablonu oluşturmak nasıl gösterir bu konuda **şablonu dışarı aktar** Sihirbazı. Şablonunuzu birden çok dosya oluşacak olup [nasıl yapılır: çok dosyalı öğe şablonları oluşturma](../ide/how-to-create-multi-file-item-templates.md).  
+# <a name="how-to-create-item-templates"></a>Nasıl yapılır: öğe şablonları oluşturma
 
- Çok fazla iş temel şablonu oluşturmak için Sihirbazı yapar, ancak birçok durumda şablon verdikten sonra .vstemplate dosyasını el ile değiştirmeniz gerekir. Örneğin, görünmesi öğe istiyorsanız **Yeni Öğe Ekle** iletişim kutusu için bir [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] uygulama projesi elinizde fazladan birkaç adım gerçekleştirmek. [İkinci yordam](../ide/how-to-create-item-templates.md#modify_template) bu konuda, bu görevi gerçekleştirirken yardımcı olur.  
+Bu konuda kullanarak bir öğe şablonu oluşturmak nasıl gösterilmektedir **şablonu Dışarı Aktarma Sihirbazı**. Şablonunuzu birden çok dosya oluşacak olup [nasıl yapılır: çok dosyalı öğe şablonları oluşturma](../ide/how-to-create-multi-file-item-templates.md).
 
- Şablonunuzu yalnızca belirli proje alt türleri için Office, veritabanı veya Web gibi yalnızca görünmelidir belirtmek için bkz: [Bu bölümde](#enable_templates).  
+## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Yeni Öğe Ekle iletişim kutusu için bir kullanıcı öğesi şablonu eklemek için
 
- Bazı durumlarda istediğiniz veya bir öğe şablonu sıfırdan el ile oluşturmanız gerekir. [Üçüncü yordamı](../ide/how-to-create-item-templates.md#create_template) bunun nasıl yapılacağını gösterir.  
+1. Projesi oluşturun veya bir Visual Studio'da açın.
 
- Bkz: [Visual Studio şablon şeması başvurusu](../extensibility/visual-studio-template-schema-reference.md) .vstemplate dosyasında kullanılabilen öğeler hakkında bilgi için.  
+1. Projeye bir öğe ekleyin ve isterseniz değiştirin.
 
-### <a name="to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box"></a>Yeni Öğe Ekle iletişim kutusuna özel proje öğesi şablon eklemek için  
+1. Parametre değiştirme burada gerçekleşeceğini belirtmek için kod dosyasını değiştirin. Daha fazla bilgi için bkz: [nasıl yapılır: şablonda parametreleri ikame etme](../ide/how-to-substitute-parameters-in-a-template.md).
 
-1.  Bir projesi oluşturun veya açın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+1. Üzerinde **proje** menüsünde seçin **şablonu dışarı aktar...** .
 
-2.  Projeye bir öğe ekleyin ve isterseniz değiştirin.  
+1. Üzerinde **şablon türünü seç** sayfasında, **öğe şablonu**öğeyi içeren projeyi seçin ve ardından **sonraki**.
 
-3.  Parametre değiştirme burada gerçekleşeceğini belirtmek için kod dosyasını değiştirin. Daha fazla bilgi için bkz: [nasıl yapılır: şablonda parametreleri ikame](../ide/how-to-substitute-parameters-in-a-template.md).  
+1. Üzerinde **vermek öğesi seçin** sayfasında, bir şablon oluşturmak ve ardından istediğiniz öğeyi seçin **sonraki**.
 
-4.  Üzerinde **proje** menüsünde tıklatın **şablonu dışarı aktar**.  
+1. Üzerinde **seçin öğesi başvurularını** sayfasında, şablona dahil, ve ardından derleme başvurularını seçin **sonraki**.
 
-5.  Tıklatın **öğe şablonu**öğeyi içeren projeyi seçin ve tıklatın **sonraki**.  
+1. Üzerinde **şablon seçenekleri** sayfa, şablon adı ve isteğe bağlı bir açıklama, simge görüntüsü ve Önizleme görünümü girin ve ardından **son**.
 
-6.  Bir şablonu oluşturup tıklatın istediğiniz öğeyi seçin **sonraki**.  
+    Şablon dosyalarını bir .zip dosyasına eklendi ve sihirbazda belirtilen dizine kopyalanır. Varsayılan konumu %USERPROFILE%\Documents\Visual Studio: \<sürüm\>\My dışa aktarılan şablonları.
 
-7.  Derleme başvurularını tıklatın ve şablona dahil seçin **sonraki**.  
+1. Seçeneğini seçmediyseniz **otomatik olarak şablon Visual Studio'ya içeri** içinde **şablonu Dışarı Aktarma Sihirbazı**, dışarı aktarılan şablonu bulun ve kullanıcı öğesi şablon dizinine kopyalayın. Varsayılan konumu %USERPROFILE%\Documents\Visual Studio: \<sürüm\>\Templates\ItemTemplates.
 
-8.  Simge dosya adı, Önizleme görünümü, şablon adı ve şablon açıklamasını yazın ve'ı tıklatın **son**.  
+1. Visual Studio'yu kapatın ve tekrar açın.
 
-     Şablon dosyalarını bir .zip dosyasına eklenir ve iletişim kutusunda belirttiğiniz hangi dizin kopyalanır. Varsayılan konum **... \Users\\< kullanıcı adı\>\Documents\Visual Studio \<sürüm > \My dışa aktarılan şablonları\\**  klasör.  
+1. Yeni bir proje oluşturun veya var olan bir projeyi açın ve ardından **proje** > **Yeni Öğe Ekle...**  veya basın **Ctrl** + **Shift** + **A**.
 
-    > [!WARNING]
-    >  Visual Studio'nun önceki sürümleri için varsayılan konumdur **... \Users\\< kullanıcı adı\>\Documents\Visual Studio \<sürüm > \Templates\ItemTemplates**.  
+   Öğe şablonu görünür **Yeni Öğe Ekle** iletişim kutusu. Açıklama eklediyseniz **şablonu Dışarı Aktarma Sihirbazı**, açıklama iletişim kutusunun sağ tarafında görünür.
 
-### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Bir mağaza projesinde kullanılacak öğe şablonu etkinleştirmek için  
+## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Öğe şablonu, bir evrensel Windows uygulaması proje ile kullanılmak üzere etkinleştirmek için
 
-1.  Bir öğe şablonu dışarı aktarmak için yukarıdaki yordamdaki adımları izleyin.  
+Sihirbaz temel bir şablon oluşturmak için işin çoğunu yapar ancak birçok durumda şablon verdikten sonra .vstemplate dosyasını el ile değiştirmeniz gerekir. Örneğin, görünmesi öğe istiyorsanız **Yeni Öğe Ekle** iletişim bir evrensel Windows uygulama projesi için fazladan birkaç adım gerçekleştirmeniz gerekir.
 
-2.  .Vstemplate dosyasının kopyalandığı .zip dosyasını ayıklamak... \Users\\*kullanıcıadı*\Documents\Visual Studio *sürüm*\Templates\ItemTemplates\ (veya **My dışa aktarılan şablonları**) klasör.  
+1. Bir öğe şablonu dışarı aktarmak için önceki bölümdeki adımları izleyin.
 
-3.  .Vstemplate dosyasını Visual Studio'da açın.  
+1. Oluşturulan .zip dosyasını ayıklayın ve Visual Studio'da .vstemplate dosyasını açın.
 
-4.  Bir evrensel Windows C# için açılış içinde aşağıdaki XML ekleme proje, .vstemplate dosyasında `<TemplateData>` etiketi: `<TemplateID>Microsoft.CSharp.Class</TemplateID>`. 
+1. C# Evrensel Windows projesi için aşağıdaki XML içinde eklemek `<TemplateData>` öğe:
 
-    Windows 8.1 için C# projesinde, .vstemplate dosyada depolar açma ve kapatma içinde aşağıdaki XML eklemek `<TemplateData>` etiketi: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
+   ```xml
+   <TemplateID>Microsoft.CSharp.Class</TemplateID>
+   ```
 
-    C++ Windows 8.1 mağazası project değerini kullanır `WinRT-Native-6.3`. Windows 10 ve diğer proje türleri için bkz: [Templategroupıd öğesi (Visual Studio şablonları)](../extensibility/templategroupid-element-visual-studio-templates.md).  
+   Windows 8.1 C# projeleri, açma ve kapatma içinde aşağıdaki XML .vstemplate dosyasına eklemek için `<TemplateData>` etiketi: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Windows 8.1 C++ projeleri için değeri kullanın `WinRT-Native-6.3`. Windows 10 ve diğer proje türleri için bkz: [Templategroupıd öğesi (genişletilebilirlik)](../extensibility/templategroupid-element-visual-studio-templates.md). Tam .vstemplate başvuru için bkz: [Şablon Şeması Başvurusu (genişletilebilirlik)](../extensibility/visual-studio-template-schema-reference.md).
 
-    Aşağıdaki örnek, XML satırından sonra bir .vstemplate dosyanın tüm içeriğini gösterir `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` kendisine eklenmiş. Bu örnek, C# projeleri için özeldir. Değiştirebileceğiniz <ProjectTpe> ve \< [Templategroupıd](../extensibility/templategroupid-element-visual-studio-templates.md)> öğeleri diğer dil ve proje türleri belirtin.  
+1. Visual Studio'da .vstemplate dosyayı kaydedin ve kapatın.
 
-    ```xml  
-    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
-      <TemplateData>  
-        <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
-        <Name>MyItemStoreTemplate</Name>  
-        <Description>This is an example itemtemplate</Description>  
-        <ProjectType>CSharp</ProjectType>  
-        <SortOrder>10</SortOrder>  
-        <Icon>__TemplateIcon.ico</Icon>  
-        <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
-      </TemplateData>  
-      <TemplateContent>  
-        <References />  
-        <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
-        <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
-      </TemplateContent>  
-    </VSTemplate>  
-    ```  
+1. .Vstemplate dosyasına .zip dosyasını kopyalayıp yeniden açın.
 
-     Diğer olası Templategroupıd değerleri için bkz: [Templategroupıd öğesi (Visual Studio şablonları)](../extensibility/templategroupid-element-visual-studio-templates.md)). Tam .vstemplate başvuru için bkz: [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)  
+     Varsa **dosya Kopyala** seçin iletişim kutusu görüntülenirse, **Kopyala ve Değiştir** seçeneği.
 
-5.  Visual Studio'da .vstemplate dosyayı kaydedin ve kapatın.  
+Bir evrensel Windows projesi için bu şablona dayalı bir öğe artık ekleyebilirsiniz **Yeni Öğe Ekle** iletişim kutusu.
 
-6.  İçinde bulunan .zip dosyasını .vstemplate dosyasına yapıştırın... \Users\\*kullanıcıadı*\Documents\Visual Studio *sürüm*\Templates\ItemTemplates\ klasör.  
+## <a name="to-enable-templates-for-specific-project-subtypes"></a>Belirli bir proje alt türleri için şablonlar etkinleştirmek için
 
-     Varsa **dosya Kopyala** seçin iletişim kutusu görüntülenirse, **Kopyala ve Değiştir** seçeneği.  
+Şablonunuz için yalnızca belirli proje alt türleri, Windows, Office, veritabanı veya Web gibi yalnızca görünmelidir belirtebilirsiniz.
 
- Artık bu şablona dayalı bir öğe ekleyebilirsiniz bir [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] kullanarak proje **Yeni Öğe Ekle** iletişim kutusu.  
+1. ProjectType öğesi öğe şablonu .vstemplate dosyasını bulun.
 
- Parametre adları hakkında daha fazla bilgi için bkz: [şablon parametreleri](../ide/template-parameters.md).  
-  
- 
-### <a name="enable_templates"></a>Özel proje alt türleri için şablonlar etkinleştirmek için  
+1. Ekleme bir [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) ProjectType öğesi hemen sonra öğesi.
 
-1.  Geliştirme ortamı proje öğeleri Öğe Ekle iletişim kutusundan belirli projeler için kullanılabilmesini sağlar. Windows, Web, Office veya veritabanı projeleri için özel öğeler kullanılabilmesi için bu yordamı kullanın.  
+1. Öğesinin metin değeri aşağıdaki değerlerden birine ayarlayın:
 
-     ProjectType öğesi öğe şablonu .vstemplate dosyasını bulun.  
+    - Windows
+    - Office
+    - Veritabanı
+    - Web
 
-     Ekleme bir [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) ProjectType öğesi hemen sonra öğesi.  
+Örneğin: `<ProjectSubType>Database</ProjectSubType>`.
 
-2.  Öğesinin metin değeri aşağıdaki değerlerden birine ayarlayın:  
+Aşağıdaki örnek, bir öğe şablonu için gösterir **Office** projeleri.
 
-    1.  Windows  
+```xml
+<VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">
+   <TemplateData>
+      <Name>Class</Name>
+      <Description>An empty class file</Description>
+      <Icon>Class.ico</Icon>
+      <ProjectType>CSharp</ProjectType>
+      <ProjectSubType>Office</ProjectSubType>
+      <DefaultName>Class.cs</DefaultName>
+   </TemplateData>
+   <TemplateContent>
+      <ProjectItem>Class1.cs</ProjectItem>
+   </TemplateContent>
+</VSTemplate>
+```
 
-    2.  Office  
+## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Şablonu Dışarı Aktarma Sihirbazı'nı kullanmadan bir öğe şablonu el ile oluşturmak için
 
-    3.  Veritabanı  
+Bazı durumlarda bir öğe şablonu sıfırdan el ile oluşturmak isteyebilirsiniz.
 
-    4.  Web  
+1. Proje ve proje öğesi oluşturun.
 
-     Örneğin: `<ProjectSubType>Database</ProjectSubType>`.  
+1. Bir şablon olarak kaydedilecek hazır olana kadar proje öğesi değiştirin.
 
-     Aşağıdaki örnek, Office projeleri için kullanılabilir bir öğe şablonu gösterir.  
+1. Parametre değiştirme, varsa herhangi bir yere gerçekleştiği belirtmek için kod dosyasını değiştirin. Parametre değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: şablonda parametreleri ikame.](../ide/how-to-substitute-parameters-in-a-template.md)
 
-    ```  
-    <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
-        <TemplateData>  
-            <Name>Class</Name>  
-            <Description>An empty class file</Description>  
-            <Icon>Class.ico</Icon>  
-            <ProjectType>CSharp</ProjectType>  
-            <ProjectSubType>Office</ProjectSubType>  
-            <DefaultName>Class.cs</DefaultName>  
-        </TemplateData>  
-        <TemplateContent>  
-            <ProjectItem>Class1.cs</ProjectItem>  
-        </TemplateContent>  
-    </VSTemplate>  
+1. Bir XML dosyası oluşturun ve proje öğesi dosyası ile aynı dizinde .vstemplate dosya uzantısıyla kaydedin.
 
-    ```  
+1. Öğe şablon meta verilerini sağlamak için .vstemplate XML dosyasını düzenleyin. Daha fazla bilgi için bkz: [Şablon Şeması Başvurusu (genişletilebilirlik)](../extensibility/visual-studio-template-schema-reference.md) ve önceki bölümdeki örnek.
 
-### <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Şablonu Dışarı Aktar Sihirbazı'nı kullanmadan bir öğe şablonu el ile oluşturmak için  
+1. .Vstemplate dosyayı kaydedin ve kapatın.
 
-1.  Proje ve proje öğesi oluşturun.  
+1. Windows Gezgini'nde, şablona dahil, seçime sağ tıklayın veya seçmek için istediğiniz dosyaları seçin **göndermek** > **sıkıştırılmış (daraltılmış) klasör**. Seçtiğiniz dosyaların bir .zip dosyasına sıkıştırılır.
 
-2.  Bir şablon olarak kaydedilecek hazır olana kadar proje öğesi değiştirin.  
+1. .Zip dosyasını kopyalayın ve kullanıcı öğesi şablonu konumda yapıştırın. Visual Studio 2017 içinde %USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates varsayılan dizinidir. Daha fazla bilgi için bkz: [nasıl yapılır: bulun ve düzenleme proje ve öğe şablonları](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-3.  Parametre değiştirme gerçekleştiği belirtmek için kod dosyası uygun şekilde değiştirin. Parametre değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: şablonda parametreleri ikame.](../ide/how-to-substitute-parameters-in-a-template.md)
+## <a name="see-also"></a>Ayrıca bkz.
 
-4.  Bir XML dosyası oluşturun ve yeni öğe şablon olarak aynı dizinde .vstemplate dosya adı uzantısını kullanarak kaydedin.  
-
-5.  Öğe şablon meta verilerini sağlamak için .vstemplate XML dosyasına yazar. Daha fazla bilgi için bkz: [Visual Studio şablon şeması başvurusu](../extensibility/visual-studio-template-schema-reference.md) ve önceki bölümdeki örnek.  
-
-6.  .Vstemplate dosyayı kaydedin ve kapatın.  
-
-7.  Windows Gezgini'nde, şablonunuzda dahil, seçime sağ tıklayın, göndermek için tıklatın ve sonra sıkıştırılmış klasörü tıklatın istediğiniz dosyaları seçin. Seçtiğiniz dosyaların bir .zip dosyasına sıkıştırılır.  
-
-8.  .Zip dosyasını kopyalayın ve kullanıcı öğesi şablonu konumda yapıştırın. Visual Studio 2017 ' varsayılan dizinidir... \Users\\< kullanıcı adı\>\Documents\Visual Studio 2017\Templates\ItemTemplates\\. Daha fazla bilgi için bkz: nasıl yapılır: bulun ve düzenleme proje ve öğe şablonları.  
-
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
- [Nasıl yapılır: çok dosyalı öğe şablonları oluşturma](../ide/how-to-create-multi-file-item-templates.md)   
- [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)
+[Proje ve Öğe Şablonları Oluşturma](../ide/creating-project-and-item-templates.md)  
+[Nasıl Yapılır: Çok Dosyalı Şablonlar Oluşturma](../ide/how-to-create-multi-file-item-templates.md)  
+[Visual Studio Şablon Şeması Başvurusu (genişletilebilirliği)](../extensibility/visual-studio-template-schema-reference.md)

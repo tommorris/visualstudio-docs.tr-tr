@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: d634d320df50dafc203ea1b1b4c8366ae3e24a41
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 2c3153b4c6808d2a79a89a10e35830ec81ba15fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Nasıl yapılır: .NET Framework'ün Birden Çok Sürümünde Çalışan Uygulamaları Dağıtmak için ClickOnce'ı Kullanma
 ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürümlerini hedefleyen bir uygulama dağıtabilirsiniz. Bu, oluşturma ve uygulama ve dağıtım bildirimlerini güncelleştirme gerektirir.  
@@ -110,4 +111,4 @@ ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürüm
  [\<compatibleFrameworks > öğesi](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [\<bağımlılık > öğesi](../deployment/dependency-element-clickonce-application.md)   
  [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)   
- [Yapılandırma dosyası şeması](/dotnet/framework/configure-apps/file-schema/index)
+ [Yapılandırma Dosyası Şeması](/dotnet/framework/configure-apps/file-schema/index)

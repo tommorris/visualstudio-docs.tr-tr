@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: abf254aa21be5ec4b7401e21afa5f9bcca00e011
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-properties"></a>Genişletme özellikleri
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Özellikleri** penceresi COM ve COM + bileşenleri için evrensel özellik tarayıcısı ve tüm destekler [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ürünler. **Özellikleri** penceresi çalışır `ITypeInfo` bilgi ve herhangi bir tümleşik geliştirme ortamı (IDE) penceresinde seçili nesne için tasarım zamanı özellikleri listelemek için COM + meta verileri yazın.  
@@ -30,29 +31,29 @@ ms.lasthandoff: 10/31/2017
  Bu bölümde, tek tek alanlarına ilgili ayrıntılı bilgiler sağlar **özellikleri** penceresi ve uygulamanız gereken arabirimleri ve pencereyi doldurmak için çağrı.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Özellikler penceresi genel bakış](../../extensibility/internals/properties-window-overview.md)  
+ [Özellikler Penceresine Genel Bakış](../../extensibility/internals/properties-window-overview.md)  
  Amacını açıklayan **özellikleri** araç ve belge penceresinde göre penceresi.  
   
- [Şablon ilke ve Özellikler penceresi](../../extensibility/internals/template-policy-and-the-properties-window.md)  
+ [Şablon İlkesi ve Özellikler Penceresi](../../extensibility/internals/template-policy-and-the-properties-window.md)  
  Bir proje kurumsal şablon projesinde nasıl bulunur ve bu kurumsal Şablonu proje ilke nasıl uygulayabilir açıklanır.  
   
- [Özellikler penceresi alanları ve arabirimleri](../../extensibility/internals/properties-window-fields-and-interfaces.md)  
+ [Özellikler Penceresi Alanları ve Arabirimleri](../../extensibility/internals/properties-window-fields-and-interfaces.md)  
  Hangi bilgilerin görüntüleneceğini belirler seçimi için temel açıklar **özellikleri** penceresi.  
   
- [Özellikler penceresi nesne listesi](../../extensibility/internals/properties-window-object-list.md)  
+ [Özellikler Penceresi Nesne Listesi](../../extensibility/internals/properties-window-object-list.md)  
  Amacını açıklayan **özellikleri** pencere nesnesi listesi açıklayan bir çağrı bu listeden farklı bir nesne tetikler, nasıl ortamında yeni bir nesne seçili bilgilendirilir.  
   
- [Özellikler penceresi düğmeleri](../../extensibility/internals/properties-window-buttons.md)  
+ [Özellikler Penceresi Düğmeleri](../../extensibility/internals/properties-window-buttons.md)  
  Görüntülenen dört varsayılan düğmeleri amacını açıklayan **özellikleri** penceresi araç.  
   
- [Izgarayı özelliklerini görüntüle](../../extensibility/internals/properties-display-grid.md)  
+ [Özellikler Görüntü Kılavuzu](../../extensibility/internals/properties-display-grid.md)  
  Özellik adları ve özellik değerlerini alanları kılavuzda burada bulunan açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Proje türleri](../../extensibility/internals/project-types.md)  
+ [Proje Türleri](../../extensibility/internals/project-types.md)  
  Projeleri yapı taşları olarak ele alınmıştır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- [Derleme ve oluşturma](../../ide/compiling-and-building-in-visual-studio.md)  
+ [Derleme ve Oluşturma](../../ide/compiling-and-building-in-visual-studio.md)  
  Nasıl kullanabileceğinizi açıklar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sürekli test ve bunları oluşturmak gibi uygulamalarında hata ayıklama için Platform.  
   
  [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)  
@@ -64,5 +65,5 @@ ms.lasthandoff: 10/31/2017
  [Çözümler ve projeler](../../ide/solutions-and-projects-in-visual-studio.md)  
  Açıklar nasıl [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] başvuruları, veri bağlantıları, klasörler ve geliştirme çabanızı çözümler ve projeler aracılığıyla tarafından gerekli olan dosyalar gibi öğeleri yönetir.  
   
- [Visual Studio diğer bölümleri genişletme](../../extensibility/extending-other-parts-of-visual-studio.md)  
+ [Visual Studio’nun Diğer Bölümlerini Genişletme](../../extensibility/extending-other-parts-of-visual-studio.md)  
  Nasıl kullanılacağı açıklanmaktadır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kalan eşleşen kullanıcı Arabirimi öğeleri oluşturmak için Sertifika Hizmetleri'ni [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

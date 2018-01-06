@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb5030a6f70851e46ab7d8df081cfe94ed35c2c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6f01347eb3410940f96a4ac966cf4f5e466ed964
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window"></a>Özellikler Penceresi
 Tasarım zamanı özellikleri ve olayları düzenleyicileri ve tasarımcıları bulunan Seçili nesnelerin görüntülemek ve değiştirmek için bu pencereyi kullanın. Aynı zamanda **özellikleri** dosya, proje ve çözüm özelliklerini görüntülemek ve düzenlemek için penceresi. Bulabileceğiniz **özellikleri** penceresinde **Görünüm** menüsü. Ayrıca, F4 tuşuna basarak veya yazarak açabilirsiniz **özellikleri** içinde **hızlı başlatma** penceresi.  

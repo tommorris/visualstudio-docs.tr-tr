@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8eee6cf523fe7c327c5be0e5e34d805da80177b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a080d6cff410c09b2efa685703e1195e7d31594
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Yazı Tipi İletişim Kutusu (Microsoft Spy++ Yardımı)
 Kullanılan karakter yazı tipi yapılandırmak için bu iletişim kutusunu kullanın bir [Spy ++ görünümleri](../debugger/spy-increment-views.md) penceresi. Bu iletişim kutusunu görüntülemek için Genişlet **Görünüm** menü ve **yazı tipi**.  
@@ -37,11 +38,11 @@ Kullanılan karakter yazı tipi yapılandırmak için bu iletişim kutusunu kull
  Geçerli yazı tipi ayarlarını Spy ++ görünümleri açarken tercihlerinizi kaydeder.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Spy ++ görünümleri](../debugger/spy-increment-views.md)  
+ [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
  Windows, iletileri, işlemleri ve iş parçacıklarının Spy ++ ağaç görünümler açıklanmaktadır.  
   
- [Spy ++ kullanma](../debugger/using-spy-increment.md)  
+ [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
- [Spy ++ başvurusu](../debugger/spy-increment-reference.md)  
+ [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
  Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümleri içerir.

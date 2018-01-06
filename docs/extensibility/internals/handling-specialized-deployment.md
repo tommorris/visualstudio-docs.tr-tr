@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a409a752d415430e9eab24ee08d2bfb0044dd742
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3744f9022ef1ef0fb435ac98d7e63d9cff717f32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="handling-specialized-deployment"></a>Dağıtım işleme özelleştirilmiş
 Bir dağıtım projeleri için isteğe bağlı bir işlemdir. Bir Web projesi, örneğin, bir Web sunucusu güncelleştirme proje izin vermek için bir dağıtımı destekler. Benzer şekilde, bir **akıllı aygıt** proje hedef cihaz için oluşturulmuş bir uygulamayı kopyalamak için bir dağıtımı destekler. Proje alt türleri tedarik özel dağıtım davranışı uygulayarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> arabirimi. Bu arabirim, dağıtım işlemlerini eksiksiz bir kümesini tanımlar:  
@@ -295,4 +296,4 @@ Bir dağıtım projeleri için isteğe bağlı bir işlemdir. Bir Web projesi, �
 >  Bu konuda sağlanan tüm kod örnekleri daha büyük bir örneğin bölümlerdir [VSSDK örnekleri](http://aka.ms/vs2015sdksamples).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje alt türleri](../../extensibility/internals/project-subtypes.md)
+ [Proje Alt Türleri](../../extensibility/internals/project-subtypes.md)

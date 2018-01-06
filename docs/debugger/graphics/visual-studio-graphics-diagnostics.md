@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 513404a9abda00844e8ba68e5e207961d6de4868
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 69965b35d919c4170c54cbfa1eed5d5a52dc8287
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio grafik tanılama
 Visual Studio*grafik tanılama* kaydı ve Direct3D uygulamalar oluşturma ve performans sorunları çözümlemek için araç kümesidir. Grafik Tanılama'yı, Windows bilgisayarınızdaki bir Windows aygıt benzeticisi veya bir uzak bilgisayar veya cihaz üzerinde yerel olarak çalışan uygulamalar üzerinde kullanılabilir.  
@@ -39,40 +40,40 @@ Visual Studio*grafik tanılama* kaydı ve Direct3D uygulamalar oluşturma ve per
  [Başlarken](getting-started-with-visual-studio-graphics-diagnostics.md)  
  Bu bölümde, Visual Studio grafik Tanılama'yı yükleme ve grafik tanılama Direct3D uygulamanızı kullanmaya başlamak nasıl öğreneceksiniz.  
   
- [Grafik bilgilerini yakalama](capturing-graphics-information.md)  
+ [Grafik Bilgilerini Yakalama](capturing-graphics-information.md)  
  Grafik tanılama işleme sorunu uygulamanızda incelemek üzere kullanmak için önce uygulama DirectX nasıl kullandığı hakkında bilgi kaydedin. Kayıt oturumu sırasında uygulamanızın çalıştırdığı normalde, *yakalama* (diğer bir deyişle, seçin) ilgilendiğiniz çerçeve. Yakalamaları çerçeveleri nasıl işlendiğini hakkında ayrıntılı bilgi içerir. Yakalanan bilgiler bir grafik olarak kaydedebilirsiniz daha sonra incelemek veya ekibiniz diğer üyeleriyle paylaşmak için günlük belgesi.  
   
  [GPU kullanımı](gpu-usage.md)  
  Grafik Tanılama, uygulamanızın profilini kullanmak için GPU kullanım aracını kullanın. GPU kullanımı CPU kullanımı gibi diğer profil oluşturma araçları birlikte, uygulamanızda performans sorunları katkıda bulunabilir CPU ve GPU'ya etkinlik ilişkilendirmek için kullanılabilir.  
   
- [Grafik günlük belgesi](graphics-log-document.md)  
+ [Grafik Günlük Belgesi](graphics-log-document.md)  
  Kaydedilen grafik günlüğü incelendiğinde başlatmak için grafik günlük belgesi penceresi yakalanan kareyi seçmek için kullandığınız — ve hatta belirli piksel — böylece ayrıntılı olarak inceleyin *olayları* (diğer bir deyişle, DirectX API, etkileyen çağrıları) .  
   
  [Çerçeve analizi](graphics-frame-analysis.md)  
  Bir çerçeve seçtikten sonra inceleyin ve işleme performansı ayarlamak için grafik çerçeve çözümlemesi kullanın.  
   
- [Olay listesi](graphics-event-list.md)  
+ [Olay Listesi](graphics-event-list.md)  
  Bir çerçeve seçtikten sonra kullandığınız **grafik olay listesi** işleme sorunla ilgili olup olmadığını belirlemek için olaylarını incelemek için.  
   
  [Durumu](graphics-state.md)  
  Durum pencere, geçerli olay sırasında etkin olan grafik durumu anlamanıza yardımcı olur.  
   
- [Ardışık Düzen aşamaları](graphics-pipeline-stages.md)  
+ [Ardışık Düzen Aşamaları](graphics-pipeline-stages.md)  
  İçinde **grafik ardışık düzen aşamaları** penceresinde oluşturma sorununu ilk göründüğü belirleyebilir şu anda seçili olay her aşaması grafik ardışık düzen tarafından nasıl işleneceğini araştırın. Ardışık Düzen aşamaları inceleyerek bir nesne nedeniyle yanlış bir dönüşüm görünmüyor veya aşamalar birini ne sonraki aşamaya bekliyor eşleşmeyen bir çıktı üretir özellikle yararlıdır.  
   
- [Olay Çağırma yığını](graphics-event-call-stack.md)  
+ [Olay Çağırma Yığını](graphics-event-call-stack.md)  
  Kullandığınız **grafik olay Çağırma yığını** işleme sorunla ilgili uygulama kodu gidebilirsiniz böylece şu anda seçili olay çağrı yığınını incelemek için.  
   
- [Piksel geçmişi](graphics-pixel-history.md)  
+ [Piksel Geçmişi](graphics-pixel-history.md)  
  Kullanarak **grafik piksel geçmişi** penceresinde seçili piksel, etkilediği olaylar tarafından nasıl etkilendiğini çözümlemek için olay veya belirli türdeki işleme sorunları neden olan olaylar birleşimi tanımlayabilirsiniz. Piksel gölgelendirici çıktısı olduğundan bir nesne yanlış işlendiğinde piksel geçmişi özellikle yararlıdır hatalı veya yanlış çerçeve arabelleği ile ya da kendi piksel atılan çünkü nesne bile görünmüyor birleştirilmiştir çerçeve arabelleği düşmeden önce.  
   
- [Nesne tablosu](graphics-object-table.md)  
+ [Nesne Tablosu](graphics-object-table.md)  
  Kullandığınız **grafik nesnesi tablosu** özellikleri ve belirli Direct3D nesneleri ve şu anda seçili olayı için geçerli olan kaynaklar içeriğini incelemek için. Nesne tablosu, bir olayı sırasında etkin grafik cihaz bağlamı belirlemek ve sabit arabellekleri, köşe arabellek ve dokular gibi grafik kaynakları içerikleri inceleyin yardımcı olabilir.  
   
  [HLSL hata ayıklayıcısı](hlsl-shader-debugger.md)  
  Gölgelendirici kod şu anda seçili olay ve grafik aşama kanalı için nasıl davranacağını incelemek için kullandığınız **HLSL hata ayıklayıcısı** aracılığıyla koda adım için değişkenleri içeriğini incelemek ve diğer genel hata ayıklama görevleri gerçekleştirmek. HLSL hata ayıklayıcısı, sonuçlar daha fazla grafik ardışık düzen tarafından işlenen veya yalnızca, uygulamanız tarafından okunan bağımsız olarak işlem gölgelendirici kodu incelemek için de kullanabilirsiniz.  
   
- [Komut satırı Yakalama aracı](command-line-capture-tool.md)  
+ [Komut satırı Yakalama Aracı](command-line-capture-tool.md)  
  Hızlı bir şekilde yakalamak ve Visual Studio veya programlı yakalama kullanmadan grafik bilgilerini çalmak için komut satırı Yakalama aracını kullanın. Özellikle, bir test ortamında veya Otomasyon için komut satırı Yakalama aracını kullanabilirsiniz.  
   
  [Örnekler](graphics-diagnostics-examples.md)  

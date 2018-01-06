@@ -18,11 +18,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9c5d24c8a3a2bb81c87b2cc405a6885b8f23374
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sdk-helpers-for-debugging"></a>Hata ayıklama için SDK Yardımcıları
 Bu işlevler ve bildirimleri hata ayıklama motorları, ifade değerlendiricileri ve sembol sağlayıcıları C++ üzerinde uygulama için genel yardımcı işlevlerdir.  
@@ -267,7 +268,7 @@ HRESULT EnumMetricSections(
 |*[kayıt defteri anahtarı]*|`HKEY_CURRENT_USER`veya `HKEY_LOCAL_MACHINE`.|  
 |*[sürüm kök]*|Visual Studio sürümünü (örneğin, `7.0`, `7.1`, veya `8.0`). Ancak, bu kök ayrıca kullanılarak değiştirilebilir **/rootsuffix** geçiş **devenv.exe**. Bu değiştirici VSIP için genelde olduğu **Exp**, sürüm kök, örneğin, 8.0Exp durumda olacaktır.|  
 |*[ölçüm kök]*|Ya da budur `AD7Metrics` veya `AD7Metrics(Debug)`dbgmetric.lib hata ayıklama sürümü kullanılıp kullanılmadığını bağlı olarak. **Not:** dbgmetric.lib kullanılan olsun veya olmasın, hata ayıklama ve yayın arasındaki farklar varsa bu adlandırma kuralını için bağlı kayıt defterinde yansıtılan sürümleri.|  
-|*[ölçü türü]*|Yazılacak ölçüm türü: `Engine`, `ExpressionEvaluator`, `SymbolProvider`vb.. Bunlar tüm dbgmetric.h olduğu gibi tanımlanır `metricTypeXXXX`, burada `XXXX` belirli tür adı.|  
+|*[ölçü türü]*|Yazılacak ölçüm türü: `Engine`, `ExpressionEvaluator`, `SymbolProvider`vb. Bunlar tüm dbgmetric.h olduğu gibi tanımlanır `metricTypeXXXX`, burada `XXXX` belirli tür adı.|  
 |*[ölçü]*|Ölçüm ayarlamak için bir değer atanması bir giriş adı. Ölçümleri gerçek organizasyonu Ölçüm türüne bağlıdır.|  
 |*[ölçü değeri]*|Ölçüm için atanan değer. (String, sayı, vb.) bir değere sahip olmalıdır üzerinde Ölçüm türüne bağlıdır.|  
   

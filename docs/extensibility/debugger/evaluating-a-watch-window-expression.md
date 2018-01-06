@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03a74bf73f457009a6f17f8e7bdda8e4e7b9e35f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb109fd91e4c295bf372b14e26bc2a75c3be6b1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-a-watch-window-expression"></a>Gözcü penceresi ifade değerlendirme
 > [!IMPORTANT]
@@ -51,14 +52,14 @@ ms.lasthandoff: 10/31/2017
 >  Bir EE Visual Studio bu varsayar olsa bile bu iki adımlı işlem bağlı olması gerekli değildir; EE ayrıştırabilir ve aynı adımda değerlendirmek zaman [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) olarak adlandırılır (MyCEE örnek, örneğin işleyişi budur). Karmaşık ifadeler dilinizi oluşturabilir, ayrıştırma adım değerlendirme adımdan ayırmak isteyebilirsiniz. Birçok ifadeleri izlerken bu Visual Studio hata ayıklayıcısında performans artırabilir gösterilir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [İfade değerlendirme için örnek uygulama](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  
+ [Örnek İfade Değerlendirme Uygulaması](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  
  İfade değerlendirme işlemi adım MyCEE örnek kullanır.  
   
- [Gözcü ifadesi değerlendirme](../../extensibility/debugger/evaluating-a-watch-expression.md)  
+ [Bir Gözcü İfadesini Değerlendirme](../../extensibility/debugger/evaluating-a-watch-expression.md)  
  Başarılı ifade ayrıştırma sonra ne olacağını açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Değerlendirme bağlamı](../../extensibility/debugger/evaluation-context.md)  
+ [Değerlendirme Bağlamı](../../extensibility/debugger/evaluation-context.md)  
  Hata ayıklama altyapısı (DE) ifade değerlendiricisi (EE) çağırdığında geçirilen bağımsız değişkenlerini sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

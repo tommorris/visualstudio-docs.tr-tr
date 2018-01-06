@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 18f7aa6c48b0f1deebd292193d46119e8a97c4b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8fbc385f5bf00d8e54aadc21162a9174be71d416
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Nasıl yapılır: MIP Düzeyleri Oluşturma ve Değiştirme
 Bu belge nasıl kullanılacağını göstermektedir **görüntü Düzenleyicisi** oluşturmak ve değiştirmek için *MIP düzeyleri* ayrıntılı bilgi için doku alanı düzeyi-in-(LoD).  
@@ -45,4 +46,4 @@ Bu belge nasıl kullanılacağını göstermektedir **görüntü Düzenleyicisi*
 >  Tek tek MIP düzeyleri içeriğini değiştirmeye gerekmez, — belirli efektler elde etmek için yapabilecek şekilde — derleme zamanında kaynağı doku mipmaps oluşturmak öneririz. Bu MIP düzeyi yapılan değişiklikler diğer düzeylere otomatik olarak yayılmaz çünkü MIP düzeyleri kaynağı doku ile eşitlenmiş kalmasını sağlamaya yardımcı olur. Derleme zamanında mipmaps oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir doku bu içeren Mipmaps dışarı](../designers/how-to-export-a-texture-that-contains-mipmaps.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: temel bir doku oluşturma](../designers/how-to-create-a-basic-texture.md)
+ [Nasıl Yapılır: Temel Doku Oluşturma](../designers/how-to-create-a-basic-texture.md)

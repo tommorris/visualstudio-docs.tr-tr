@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32e9c8ffa2a9ca2bba889436f37cc4f5c3d188bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 47316f6bd47d5d528dc6e36dfe3a4bcb67e00909
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef yardımcı programı
 Bir parametre olarak Visual Studio uzantısı için bir .dll dosyası alır ve .pkgdef dosyayı .dll eşlik oluşturur. .Pkgdef dosya uzantısı yüklü olduğunda, aksi halde sistem kayıt defterine yazılan tüm bilgileri içerir.  
@@ -57,4 +58,4 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
 >  **Uzantılar ve güncelleştirmeler** aracı, VSIX paketi bir parçası olarak yüklenmiş bir uzantı erişmek için kullanılamaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CreateExpInstance yardımcı programı](../../extensibility/internals/createexpinstance-utility.md)
+ [CreateExpInstance Yardımcı Programı](../../extensibility/internals/createexpinstance-utility.md)

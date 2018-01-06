@@ -12,16 +12,19 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc63c636d58bcde7aefeb7d35939008387bb6808
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload:
+- data-storage
+- dotnet
+ms.openlocfilehash: 6c1558c591c982673015af4eaf4e50bc9a81f7d4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET için Visual Studio veri araçları
 Visual Studio ve .NET Framework birlikte kapsamlı API ve araç veritabanlarına bağlanma, veri bellekte modelleme ve kullanıcı arabiriminde verileri görüntüleme için desteği sağlar. Veri erişimi işlevselliği sağlamak .NET Framework sınıfları olarak da bilinir [ADO.NET](/dotnet/framework/data/adonet/index). Visual Studio'da tooling verilerin ADO.NET başlangıçta öncelikle ilişkisel veritabanları ve XML desteklemek üzere tasarlanmıştır. Bugünlerde, birçok NoSQL veritabanı satıcılarının ya da üçüncü tarafların ADO.NET sağlayıcıları sunar.  
   
-[.NET core](https://www.dotnetfoundation.org/netcore) ADO.NET veri kümelerini ve ilgili türleri dışında destekler. .NET Core hedefleme ve bir nesne ilişkisel eşleme (ORM) katmanı gerektiren kullanın [Entity Framework Çekirdek](https://docs.microsoft.com/ef/core/).  
+[.NET core](https://www.dotnetfoundation.org/netcore) ADO.NET veri kümelerini ve ilgili türleri dışında destekler. .NET Core hedefleme ve bir nesne ilişkisel eşleme (ORM) katmanı gerektiren kullanın [Entity Framework Çekirdek](/ef/core/).  
   
 Aşağıdaki diyagramda, Basitleştirilmiş bir görünümü temel mimari gösterilmektedir:  
   

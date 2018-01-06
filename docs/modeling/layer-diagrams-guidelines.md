@@ -16,11 +16,12 @@ caps.latest.revision: "55"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 6f55cbcd7e213d228a8b20f89538dfd88d8c2038
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 4590652f37c3f1a1bdaf6bd601aee8d01d1a1c98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dependency-diagrams-guidelines"></a>Bağımlılık diyagramları: yönergeler
 Uygulama Mimarinizi yüksek bir düzeyde oluşturarak açıklamak *bağımlılık diyagramları* Visual Studio. Bir bağımlılık diyagramı kodunuzla doğrulayarak kodunuzu bu tasarım ile tutarlı kaldığından emin olun. Katman doğrulaması yapı işleminizin de ekleyebilirsiniz. Bkz: [kanal 9 Video: tasarım ve bağımlılık diyagramları kullanarak Mimarinizi geçerli](http://go.microsoft.com/fwlink/?LinkID=252073).  
@@ -152,7 +153,7 @@ Uygulama Mimarinizi yüksek bir düzeyde oluşturarak açıklamak *bağımlılı
  Bu hataları çözmek için doğrulama sırasında daha fazla hata görünmeyene kadar kodu güncelleştirin. Bu genellikle yinelemeli bir işlemdir. Bu hatalar hakkında daha fazla bilgi için bkz: [bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
->  Geliştirme veya kodu yeniden gibi bağımlılık diyagrama bağlamak için yeni yapılar olabilir. Ancak, var olan ad alanlarını gösteren Katmanlar olduğunda bu örneğin, gerekli olmayabilir ve yeni kod, daha fazla malzeme yalnızca bu ad alanlarına ekler..  
+>  Geliştirme veya kodu yeniden gibi bağımlılık diyagrama bağlamak için yeni yapılar olabilir. Ancak, var olan ad alanlarını gösteren Katmanlar olduğunda bu örneğin, gerekli olmayabilir ve yeni kod, daha fazla malzeme yalnızca bu ad alanlarına ekler.  
   
  Geliştirme işlemi sırasında, doğrulama esnasında bildirilen çakışmaların bazılarını gizlemek isteyebilirsiniz. Örneğin, zaten çözdüğünüz veya özel senaryonuzla ilgili olmayan hataları gizlemek isteyebilirsiniz. Bir hatayı bastırmak, bir iş öğesi oturum açmak için iyi bir uygulama olur [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Bu görevi gerçekleştirmek için bkz: [bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md).  
   

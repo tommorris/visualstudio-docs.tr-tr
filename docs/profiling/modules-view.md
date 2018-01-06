@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd32edd9828702ec95754018ff361a44da00e5bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: be5b8481170ee6d733fbe4cfc36d4606b644517e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view"></a>Modüller Görünümü
 Modüller görünümü profil oluşturma verileri modüllerini listeler. Her bir hiyerarşik ağaç kök düğümünün modülüdür. Profili işlevleri modülün modül düğümünün altında listelenir. Profil oluşturma verileri örnekleme yöntemini kullanarak toplanan satırı bilgileri işlevi düğümünün altında listelenir ve yönerge işaretçisi veri satırı düğümünün altında listelenir.  
@@ -37,4 +38,4 @@ Modüller görünümü profil oluşturma verileri modüllerini listeler. Her bir
  [Modüller görünümü](../profiling/modules-view-instrumentation-data.md)   
  [Modüller görünümü - izleme](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Modüller görünümü - örnekleme](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [Modüller görünümü](../profiling/modules-view-contention-data.md)
+ [Modüller Görünümü](../profiling/modules-view-contention-data.md)

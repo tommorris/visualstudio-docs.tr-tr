@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16df4a6823bfb23847cd49b97d7b4a29edf0fa4b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da3598568d0f607e37a3d42fbb080f0a70dfda57
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view-zoom-tool"></a>Çekirdekler Görünümü Yakınlaştırma Aracı
 Yakınlaştırma Denetimi ilgi alanlarına göre belirli üzerinde odaklanabilmeniz zaman çizelgesinde yakınlaştırma olanak sağlayan bir kaydırıcı ' dir. Bu denetim geçerli görünümü Merkezi'nde yakınlaştırır, görünümü yakınlaştırma yapma önce şekilde ayarlayın.  
@@ -30,4 +31,4 @@ Yakınlaştırma Denetimi ilgi alanlarına göre belirli üzerinde odaklanabilme
 -   Yakınlaştırma ve uzaklaştırma: fare tekerleği taşırken CTRL tuşuna basın ve Zaman Çizelgesi üzerine getirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çekirdekler görünümü](../profiling/cores-view.md)
+ [Çekirdekler Görünümü](../profiling/cores-view.md)

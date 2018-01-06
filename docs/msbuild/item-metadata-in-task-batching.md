@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: daa41beb487020dcaeccba692ace97b057a6b3ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 176f44c105909935988a06f3eb928e5adfb77149
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-metadata-in-task-batching"></a>Toplu Görev İşlemede Öğe Meta Verileri
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]öğe listelerini farklı kategorileri veya toplu işlemi bölme yeteneği, öğe meta verileri temel alarak ve bir görev her batch ile bir kez çalıştırın. Hangi öğeleri hangi batch ile tam olarak geçirilen anlamak kafa karıştırıcı olabilir. Bu konuda toplu işleme ile ilgili aşağıdaki ortak senaryolar için geçerlidir.  
@@ -226,4 +227,4 @@ Items in ExampColl: Item2;Item5
  [Itemmetadata öğesi (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Toplu işleme](../msbuild/msbuild-batching.md)   
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)   
- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+ [MSBuild Başvurusu](../msbuild/msbuild-reference.md)

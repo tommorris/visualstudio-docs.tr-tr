@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74074505b9109638280d9fe8dad113b4dd13ba9e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 90f4ccbe56b57a963afaa02a5e07ded4ec5b6933
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
 Özel öznitelikleri numaralandırır.  
@@ -40,7 +41,7 @@ IEnumCustomAttributes : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Sonraki](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|Belirtilen sayıda numaralandırması dizisi özel öznitelikleri alır.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|Belirtilen sayıda numaralandırması dizisi özel öznitelikleri alır.|  
 |[Atla](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|Belirtilen sayıda özel öznitelikleri bir numaralandırma sırasını atlar.|  
 |[Sıfırla](../../../extensibility/debugger/reference/ienumdebugcustomattributes-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
 |[Kopya](../../../extensibility/debugger/reference/ienumdebugcustomattributes-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  

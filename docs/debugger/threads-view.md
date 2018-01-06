@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cc9abe486055d5bb9794021e28b786b9afe9b54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f98170313b72394b5b295769a77d8770cd1cb0e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view"></a>İş Parçacıkları Görünümü
 İş Parçacıkları görünümü windows sisteminize ile ilişkili tüm iş parçacıkları düz bir listesi bulunmaktadır. İş parçacığı kimliği ve her iş parçacığı için modül adı gösterilir. İşlemler dahil değildir, ancak seçilen iş parçacığına sahip olan işlemi kolayca bulabilirsiniz.  
@@ -42,10 +43,10 @@ Spy ++ iş parçacıkları görünümü
  Bir iş parçacığı hakkında daha fazla bilgi göstermek açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Spy ++ görünümleri](../debugger/spy-increment-views.md)  
+ [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
  Windows, iletileri, işlemleri ve iş parçacıklarının Spy ++ ağaç görünümler açıklanmaktadır.  
   
- [Spy ++ kullanma](../debugger/using-spy-increment.md)  
+ [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
  [İş parçacığı arama iletişim kutusu](../debugger/thread-search-dialog-box.md)  
@@ -54,5 +55,5 @@ Spy ++ iş parçacıkları görünümü
  [İş parçacığı Özellikleri iletişim kutusu](../debugger/message-properties-dialog-box.md)  
  İş Parçacıkları görünümü veya iletiler görünümünde seçili bir iş parçacığı özelliklerini görüntüler.  
   
- [Spy ++ başvurusu](../debugger/spy-increment-reference.md)  
+ [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
  Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümleri içerir.

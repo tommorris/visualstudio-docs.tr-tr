@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ef1451626cf980fbd6f096fa5dc92946edebd710
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a7df31b2d76639ec0eedc353e857fc1c0c8df39b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Uygulama Bildirimi
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimidir kullanılarak dağıtılan bir uygulamayı açıklayan bir XML dosyası [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
@@ -118,4 +119,4 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bil
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)
+ [ClickOnce Uygulamalarını Yayımlama](../deployment/publishing-clickonce-applications.md)

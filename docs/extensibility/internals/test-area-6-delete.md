@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a8949135bb7354ba0279ac1b6c2f0ba99fb1b2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 204038ac7a86c0b458ea08c2f4bd2c6a4dffe7cd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-6-delete"></a>Test alanı 6: Sil
 Bu kaynak denetimi eklenti test alan silme eylemleri kapsar.  
@@ -32,7 +33,7 @@ Bu kaynak denetimi eklenti test alan silme eylemleri kapsar.
   
 -   Klasörleri  
   
--   Project  
+-   Proje  
   
  Proje türüne bağlı olarak seçeneğine sahip olabilir **kaldırmak** (bırakır diskteki dosyaları) proje veya **silmek** projenin (diskteki dosyaları kaldırır). Her iki eylem proje veya öğesinden kaldırır **Çözüm Gezgini**.  
   
@@ -56,4 +57,4 @@ Bu kaynak denetimi eklenti test alan silme eylemleri kapsar.
 |Bir dosya sistemi Web projesinde dosya silme|1.  Bir dosya sistemi Web projesi oluşturun.<br />2.  Çözümü kaynak denetimine ekleyin.<br />3.  Bir dosyayı projeden silin.<br />4.  Yerel bir Web projesi için 1 ile 3 arasındaki adımları yineleyin (kodlarda farklı yollar uygular, ancak aynı dış arabirimi ve davranışı sahiptir).|Ortak beklenen davranıştır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak denetimi eklentiler için test Kılavuzu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Kaynak Denetimi Eklentileri için Test Kılavuzu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

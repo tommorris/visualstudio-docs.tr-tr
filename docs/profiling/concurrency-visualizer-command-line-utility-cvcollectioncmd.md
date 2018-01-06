@@ -13,17 +13,18 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c23bc80fff6bf088d10c788b92a52b1c43fc5db9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53dd29671e20f19c0ef83d5920581c7038f32c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık Görselleştiricisi Komut Satırı Yardımcı Programı (CVCollectionCmd)
 Eşzamanlılık görselleştiricisi komut satırı yardımcı programını (CVCollectionCmd.exe), böylece bunları için Visual Studio eşzamanlılık görselleştiricisi görebilirsiniz komut satırından izlemeleri toplamak için kullanabilirsiniz. Araçlar Visual Studio yüklü olmayan bilgisayarlarda kullanılabilir.  
   
 > [!NOTE]
->  Eşzamanlılık görselleştiricisi, Visual Studio 2013'ten başlayarak, isteğe bağlı bir uzantıdır.. (Daha önce bunu Visual Studio'da dahil edilmiş.) İndirebilirsiniz [eşzamanlılık görselleştiricisi toplama araçları Visual Studio 2015 için](http://www.microsoft.com/en-in/download/details.aspx?id=49103) İndirme Merkezi'nden.  
+>  Eşzamanlılık görselleştiricisi, Visual Studio 2013'ten başlayarak, isteğe bağlı bir uzantıdır. (Daha önce bunu Visual Studio'da dahil edilmiş.) İndirebilirsiniz [eşzamanlılık görselleştiricisi toplama araçları Visual Studio 2015 için](http://www.microsoft.com/en-in/download/details.aspx?id=49103) İndirme Merkezi'nden.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Eşzamanlılık görselleştiricisi komut satırı yardımcı programını indirin  
  Karşıdan yükleme ve komut satırı yardımcı programını yüklemek için Git [eşzamanlılık görselleştiricisi toplama araçları Visual Studio 2015 için](http://www.microsoft.com/en-in/download/details.aspx?id=49103) ve yönergeleri izleyin. Varsayılan olarak %ProgramFiles%\Microsoft eşzamanlılık görselleştiricisi koleksiyonu Tools\ CVCollectionCmd.exe yüklenir (% ProgramFiles (x86) %\Microsoft eşzamanlılık görselleştiricisi koleksiyonu Tools\ x64 üzerinde bilgisayarlar).  

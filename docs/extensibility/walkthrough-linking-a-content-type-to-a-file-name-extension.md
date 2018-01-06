@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bfe19b8733a6ee5ffe3d038778e664a4a1455dbe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5df3bab0a453f4f8edcff3be86e5a767065b59da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>İzlenecek yol: bir içerik türü için bir dosya adı uzantısı bağlama
 Düzenleyici Yönetilen Genişletilebilirlik Çerçevesi (MEF) uzantıları kullanarak bir dosya adı uzantısı bağlantısına ve kendi içerik türünü tanımlayın. Bazı durumlarda, dosya adı uzantısı zaten bir dil hizmeti tarafından tanımlanmış; Bununla birlikte, MEF ile kullanmak için hala bir içerik türüyle Bağla gerekir.  
@@ -104,4 +105,4 @@ Düzenleyici Yönetilen Genişletilebilirlik Çerçevesi (MEF) uzantıları kull
     ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md)
+ [Dil Hizmeti ve Düzenleyici Uzantı Noktaları](../extensibility/language-service-and-editor-extension-points.md)

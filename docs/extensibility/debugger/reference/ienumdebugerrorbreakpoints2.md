@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ecef99eaafcd85c2318d2515a71c849fa8de2e2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 072068a252214fdf9a2542b88bba94a1b12bcffa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
 Bu arabirim, bekleyen bir kesme noktası ile ilişkili hata kesme noktaları numaralandırır.  
@@ -40,7 +41,7 @@ IEnumDebugErrorBreakpoints2 : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Sonraki](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|Hata kesme noktaları bir numaralandırma dizisinde belirtilen sayısını alır.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|Hata kesme noktaları bir numaralandırma dizisinde belirtilen sayısını alır.|  
 |[Atla](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|Hata kesme noktaları bir numaralandırma dizisinde belirtilen sayıda atlar.|  
 |[Sıfırla](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
 |[Kopya](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  

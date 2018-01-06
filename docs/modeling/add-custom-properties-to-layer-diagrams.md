@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 130222ef3a603576f02961979e64b0c8160430af
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6f09f5b12f3c90aa3fd48c142996f1737b1c1ac9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Bağımlılık diyagramlarına özel özellikler ekleme
 Bağımlılık diyagramları için uzantı kodu yazarken, bir bağımlılık diyagramda herhangi bir öğe değerleriyle depolayabilirsiniz. Diyagram yeniden açılır ve kaydedildiğinde, değerleri korunur. Ayrıca bu özellikleri görünür olabilir **özellikleri** penceresi böylece kullanıcılar bakın ve bunları düzenleyebilir. Örneğin, her katman için normal bir ifade belirtin ve her katman sınıflarda adları kullanıcı tarafından belirtilen desenle uygun doğrulamak için doğrulama kodu yazma kullanıcıların izin.  

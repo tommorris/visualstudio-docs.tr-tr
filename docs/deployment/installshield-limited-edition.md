@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: eca5b5dff1bb7a00d8e138d367581081eaab6fc5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ada6fe4eec6b8bda3f0b44f097581103ea7b138e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 InstallShield Limited Edition'ı kullanarak, bir kurulum dosyası oluşturabilir ve böylece bir ağa bağlı olmayan kullanıcılar bir masaüstü uygulamanın veya bileşenin yükleyebilir kullanıcılara dağıtabilirsiniz. Visual Studio Professional ve Enterprise sürümleri kullanıcılar için InstallShield Limited Edition ücretsizdir. Visual Studio artık destekleyen Windows Installer teknolojisi değiştirir. Alternatif olarak, uygulamaları ve bileşenleri, ağ bağlantısı gerektiren ClickOnce kullanarak dağıtabilirsiniz. Bkz: [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md).  

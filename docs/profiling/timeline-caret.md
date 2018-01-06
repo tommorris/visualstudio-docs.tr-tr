@@ -14,14 +14,15 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdb416aa4f3825c954c78106bd5e147f83705d2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0ca44152702c3669d791f67da8f41ad09f9bc72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="timeline-caret"></a>Zaman Çizelgesi Düzeltme İşareti
 Zaman Çizelgesi bir noktasında bir yürütme iş parçacığı kesiminin seçtiğinizde, bir zaman çizelgesi düzeltme işareti görünür. Geçerli yığın sekmesinde görüntülenen çağrı yığını zamanında en yakın kesim tıklattığınız için adrestir. Şapka altında görüntülenen çağrı yığını ilişkilendirmek için kullanılan **geçerli** sekmesiyle örneklenen zaman anlık. Düzeltme işareti, seçilen kullanıcı konumuna yakın çağrı yığını olan çağrı yığını tam konumunu gösterir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)
+ [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

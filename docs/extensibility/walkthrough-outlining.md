@@ -13,11 +13,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f503d9e8b0ef125fdb72ea60a9928f308b900993
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 15dd5f0121fca86a38631bf775ec25d4428632e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-outlining"></a>İzlenecek yol: anahat oluşturma
 Dil tabanlı özellikleri genişletmek veya daraltmak için istediğiniz metin bölgeler türlerini tanımlayarak anahat oluşturma gibi uygulayabilirsiniz. Bir dil hizmeti bağlamında bölgeler tanımlayabilirsiniz kendi dosya adı uzantısı ve içerik türünü tanımlayın ve bölge tanımı yalnızca o türü için geçerli veya varolan bir içerik türüyle (örneğin, "metin") bölge tanımları uygulayabilirsiniz. Bu kılavuzda, tanımlayın ve anahat bölgelerini görüntülemek gösterilmektedir.  
@@ -134,4 +135,4 @@ Dil tabanlı özellikleri genişletmek veya daraltmak için istediğiniz metin b
 4.  Her iki küme ayraçları içeren bir anahat bölge olması gerekir. Anahat bölge daraltmak için eksi işareti açma ayracı solundaki tıklatın olması gerekir. Ne zaman bölge daraltıldığında, üç nokta (...) simgenin daraltılmış bölge ve metin içeren bir açılır solunda görünmelidir **Vurgulu metin** üç nokta üzerinde işaretçinin taşıdığınızda görünmelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: bir içerik türü için bir dosya adı uzantısı bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek Yol: Bir İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

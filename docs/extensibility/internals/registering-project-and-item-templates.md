@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c1cb9e31384822dddcdd3668bfb3a54bc2782d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c064a6632741eba69a553be87fb8f829063b266b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-project-and-item-templates"></a>Proje ve öğe şablonları kaydediliyor
 Proje türleri kendi proje ve proje öğesi şablonları bulunduğu dizinleri kaydetmeniz gerekir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Proje türleri ile ilişkili tüm kayıt bilgileri göstermek üzere belirlemek için kullanır **Yeni Proje Ekle** ve **Yeni Öğe Ekle** iletişim kutuları.  
@@ -123,4 +124,4 @@ Proje türleri kendi proje ve proje öğesi şablonları bulunduğu dizinleri ka
  [Proje ve proje öğesi şablonları ekleme](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Sihirbazlar](../../extensibility/internals/wizards.md)   
  [Uygulamaları yerelleştirme](../../ide/localizing-applications.md)   
- [Genellikle projeleri genişletmek için kullanılan nesneler için CATIDs](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+ [Genişletme Projeleri için Genellikle Kullanılan Nesnelerin CATID’leri](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

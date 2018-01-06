@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca4fedeb7e52fff627a8fab9e100c0a99792f1c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b03d9adbec92986ea8a1cf0f589bd451107a611f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 Bu interfac geçerli hata ayıklama oturumunda çalışan iş parçacıkları numaralandırır.  
@@ -40,7 +41,7 @@ IEnumDebugThreads2 : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Sonraki](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|Belirtilen bir numaralandırma sıralı iş parçacığı sayısını alır.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|Belirtilen bir numaralandırma sıralı iş parçacığı sayısını alır.|  
 |[Atla](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Belirtilen bir numaralandırma dizisi içindeki iş parçacığı sayısı atlar.|  
 |[Sıfırla](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
 |[Kopya](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Geçerli olarak aynı sıralaması durumu içeren bir numaralandırıcı oluşturur.|  

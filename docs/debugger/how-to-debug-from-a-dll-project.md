@@ -22,11 +22,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 371c48282b2f775833287046ed9810f0cbc8f69e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f50c41a18f6d018ca717fbfd0cd926da8e6dcf65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da bir DLL projeden hata ayıklama
 DLL projesinde hata ayıklamak için bir çağrı yapan uygulamanın DLL projesi Proje özelliklerini belirtmek için yoludur ve ardından DLL projesi kendisini hata ayıklama başlayabilirsiniz. Bu yöntem çalışmak uygulama DLL çağırmanız gerekir ve DLL burada uygulama bekler bulmak için konumda olması gerekir (Aksi takdirde uygulama DLL farklı bir sürümünü bulun ve bunun yerine, yükleme ve noktalarınıza isabet olmaz). DLL'lerde hata ayıklama diğer yöntemleri için bkz: [DLL projelerinde hata ayıklama](../debugger/debugging-dll-projects.md).

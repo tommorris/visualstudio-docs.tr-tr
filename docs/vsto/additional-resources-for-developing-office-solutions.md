@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7dd55b39f3a35e8ee8f3f16cc5a64e61cb824177
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: debfb63201652f5a9d3348e3bcd591c5efe66e33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-resources-for-developing-office-solutions"></a>Office Çözümleri Geliştirmek için Ek Kaynaklar
   Microsoft Office geliştirici araçları Visual Studio'da Office uygulamalarını genişletmek için birçok yolu yalnızca birini temsil eder. Office uygulamaları açık XML Visual Studio ya da bu belgeleri Office geliştirici araçları tarafından kapsanmayan biçimleri gibi bazı yerleşik özellikleri de.  
@@ -43,6 +44,6 @@ ms.lasthandoff: 10/31/2017
  Visual Studio için Office geliştirici araçları oluşturur Microsoft ekibi tarafından tutulan blogu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümlerindeki hatalar için ek destek](../vsto/additional-support-for-errors-in-office-solutions.md)  
+ [Office Çözümlerindeki Hatalar İçin Ek Destek](../vsto/additional-support-for-errors-in-office-solutions.md)  
   
   

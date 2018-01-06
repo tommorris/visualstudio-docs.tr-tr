@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b5cec31349b2db94536f3d67ca137885f757263
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ac781256ee78becf3b0cfdffbbec6f0c6bc30225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-project-essentials"></a>Web projesi temelleri
 Web projeleri, Web uygulamaları oluşturun. Bir Web projesi akıllı Web sayfaları bir Web uygulaması oluşturmak için kullanabilirsiniz. Akıllı bir Web sayfasında isteğe bağlı Web sayfasını işler sunucu tarafı kodu vardır.  
@@ -60,4 +61,4 @@ Web projeleri, Web uygulamaları oluşturun. Bir Web projesi akıllı Web sayfal
     -   Kod Düzenleyicisi'nin birincil arabellekte hata işaretçileri (kırmızı squigglies) her zaman oluşturulmalıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Web projeleri](../../extensibility/internals/web-projects.md)
+ [Web Projeleri](../../extensibility/internals/web-projects.md)

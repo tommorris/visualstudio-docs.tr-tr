@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8b349bee09f068a5777ecc212223c36951236ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 896448526f41514fb74b385f8605839908708305
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Bu arabirim, bir bağlantı noktası üzerinde çalışan bir işlemi temsil eder. Yerel bağlantı noktası, bağlantı noktası ise, `IDebugProcess2` genellikle yerel makinedeki fiziksel bir işlem temsil eder.  
@@ -49,9 +50,9 @@ IDebugProcess2 : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|Başlık, kolay ad veya işlemin dosya adını alır.|  
 |[GetServer](../../../extensibility/debugger/reference/idebugprocess2-getserver.md)|Bu işlemin çalıştığı bir makine sunucusu örneğini alır.|  
 |[Sonlandırma](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|İşlemi sonlandırır.|  
-|[Ekleme](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|İş akışına ekler.|  
+|[Attach](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|İş akışına ekler.|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprocess2-candetach.md)|SDM işlem ayırma durumunda belirler.|  
-|[Ayırma](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Hata ayıklayıcı işleminden ayırır.|  
+|[Detach](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Hata ayıklayıcı işleminden ayırır.|  
 |[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Sistem işlemi tanımlayıcısını alır.|  
 |[Getprocessıd](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Bu işlem için bir genel benzersiz tanımlayıcısını alır.|  
 |[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [KULLANIM DIŞI]|İşlem hata ayıklama oturumu adını alır.<br /><br /> [KULLANIM DIŞI. GEREKEN HER ZAMAN İADE `E_NOTIMPL`.]|  

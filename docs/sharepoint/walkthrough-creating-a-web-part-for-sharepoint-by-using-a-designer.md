@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55da85b9740216cefe55911d79dab2c16b035695
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 602515daedec99bbcfa3efd58469de5d8ba3df7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>İzlenecek Yol: Tasarımcı Kullanarak SharePoint için bir Web Bölümü Oluşturma
   Bir SharePoint sitesi için web bölümleri oluşturursanız, kullanıcılarınızın doğrudan içerik, görünümü ve davranışı sitedeki sayfaların bir tarayıcı kullanarak değiştirebilirsiniz. Bu kılavuzda SharePoint kullanarak bir web bölümü görsel olarak oluşturmak gösterilmiştir **Visual Web Bölümü** proje şablonu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -202,6 +203,6 @@ ms.lasthandoff: 10/31/2017
  [SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Nasıl yapılır: bir SharePoint Web Bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
  [Nasıl yapılır: Tasarımcı kullanarak bir SharePoint Web Bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
- [İzlenecek yol: SharePoint için bir Web Bölümü oluşturma](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)  
+ [İzlenecek yol: SharePoint için bir Web Bölümü Oluşturma](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)  
   
   

@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c694295c3456accc8d2c1cd3b0a1ec20f59343c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7208d38966e2caa9f9510c48c34952742d06c1b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Eski dil hizmetindeki deyim tamamlama
 Deyim tamamlama dil anahtar sözcüğü veya çekirdek Düzenleyicisi'nde yazmaya başladı öğesi son kullanıcılara yardımcı dil hizmeti tarafından işlemidir. Deyim tamamlama nasıl çalıştığını ve nasıl dil hizmetinizi uygulamak bu konuda açıklanmaktadır.  
@@ -40,4 +41,4 @@ Deyim tamamlama dil anahtar sözcüğü veya çekirdek Düzenleyicisi'nde yazmay
  Tetikleyici Düzenleyicisi'nde girilen zaman — özellikle metin arabelleğini — dil hizmetinizi sonra çağırır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> yöntemi. Bu, böylece kullanıcı deyimi tamamlama aday arasından UI'yi getirmek Düzenleyicisi neden olur. Bu yöntem, uygulamanızı gerektirir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> ve <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> bayrakları parametre olarak. Tamamlama öğeleri listesi kayan bir liste kutusunda görüntülenir. Kullanıcı yazmaya devam ettikçe, seçim liste kutusu içinde en yakın bir eşleşme en son karakter yazılan yansıtacak şekilde güncelleştirilir. Deyim tamamlama ilişkin kullanıcı Arabirimi çekirdek Düzenleyicisi'ni uygular, ancak dil hizmeti uygulamalıdır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> deyim için aday tamamlama öğeleri tanımlamak için arabirim.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kesintiye uğratan eski dil hizmeti komutları](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
+ [Eski Dil Hizmeti Komutlarını Kesme](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

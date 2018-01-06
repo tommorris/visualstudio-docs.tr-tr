@@ -22,11 +22,12 @@ caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: eb280684f0c06391bc6c0596093c01f260f685d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a649b7375575b43be662991b4a1a4cc4930eb9a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt; öğesi (ClickOnce uygulaması)
 Olması gereken derleme tanımlayan yürütülmesi bu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamayı bir istemci bilgisayarda çalıştırın.  
@@ -115,4 +116,4 @@ Olması gereken derleme tanımlayan yürütülmesi bu [!INCLUDE[ndptecclick](../
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Uygulama Bildirimi](../deployment/clickonce-application-manifest.md)

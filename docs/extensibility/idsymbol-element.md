@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 734d05dd013be9a3d6c4a173a5c7abc7a01ef2d8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 004b40acb50fe85604d0a3cfa9f5626891fa66a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idsymbol-element"></a>IDSymbol öğesi
 `IDSymbol` Öğesi bir menü, Grup veya komut temsil eden GUID:ID çifti Kimliğini içerir. Üst GUID gelen `GuidSymbol` öğesi. `IDSymbol` Öğeye sahip bir `name` yer kimliği için kolay bir ad sağlar özniteliği `value` özniteliği.  
@@ -47,10 +48,10 @@ ms.lasthandoff: 10/31/2017
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[GuidSymbol öğesi](../extensibility/guidsymbol-element.md)|Menü, Grup veya komut temsil eden GUID:ID çifti GUID içerir. Grupları `IDSymbol` öğeleri.|  
+|[GuidSymbol Öğesi](../extensibility/guidsymbol-element.md)|Menü, Grup veya komut temsil eden GUID:ID çifti GUID içerir. Grupları `IDSymbol` öğeleri.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Her `IDSymbol` öğesinde bir verilen `GuidSymbol` öğesinin benzersiz olmalı `value`. Ancak, `IDSymbol` farklı üst sahip oldukları sürece, aynı değerlere sahip öğeleri bir pakette bulunabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

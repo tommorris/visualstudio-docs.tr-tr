@@ -24,11 +24,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f8798616d9a39d46150f039ffe4340302439f31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8b32134abff19965edac150ac5f69db25640ee08
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio'da Çok İş Parçacıklı Uygulamalarda Hata Ayıklama
 Bir iş parçacığı, işletim sistemi işlemci zamanı tarafından ayrılan yönergeler dizisidir. İşletim sisteminde çalışan her işlem en az bir iş parçacığından oluşur. Birden çok iş parçacığı bulunan işlemlerin çok iş parçacıklı denir.  
@@ -41,7 +42,7 @@ Visual Studio hata ayıklama birden çok iş parçacıklı uygulamaları kullanm
 
 - İş parçacığı için iş parçacıklarında hata ayıklama için kullanılan birincil araçlardır **iş parçacığı** penceresinde, iş parçacığı işaretçileri kaynak Windows **Paralel Yığınlar** penceresinde **paralel Gözcü** penceresinde ve **hata ayıklama konumu** araç. Hakkında bilgi edinmek için **iş parçacığı** penceresi ve **hata ayıklama konumu** araç bkz [izlenecek yol: iş parçacıkları penceresini kullanarak hata ayıklama](../debugger/how-to-use-the-threads-window.md). Nasıl kullanılacağını öğrenmek için **Paralel Yığınlar** ve **paralel Gözcü** windows için bkz: [birden çok iş parçacıklı uygulamada hata ayıklama başlamak](../debugger/get-started-debugging-multithreaded-apps.md). Her iki konular iş parçacığı işaretçileri kullanmayı gösterir.
   
-- Kullanan kodu için [görev paralel kitaplığı (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) veya [eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime/), hata ayıklama için başlıca araçlar **Paralel Yığınlar** penceresinde, **Paralel Gözcü** penceresinde ve **görevleri** penceresi ( **görevleri** penceresi de JavaScript destekler). Başlamak için bkz: [izlenecek yol: paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md) ve [izlenecek yol: C++ AMP uygulamasında hata ayıklama](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application.md). 
+- Kullanan kodu için [görev paralel kitaplığı (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) veya [eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime/), hata ayıklama için başlıca araçlar **Paralel Yığınlar** penceresinde, **Paralel Gözcü** penceresinde ve **görevleri** penceresi ( **görevleri** penceresi de JavaScript destekler). Başlamak için bkz: [izlenecek yol: paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md) ve [izlenecek yol: C++ AMP uygulamasında hata ayıklama](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
 
 - GPU iş parçacıklarında hata ayıklama için birincil araçtır **GPU iş parçacıkları** penceresi. Bkz: [nasıl yapılır: GPU iş parçacıkları penceresini kullanma](../debugger/how-to-use-the-gpu-threads-window.md).  
 
@@ -98,7 +99,7 @@ Bir kullanıcı arabirimine sahiptir çok iş parçacıklı uygulamada hata ayı
  [Bileşenleri çoklu iş parçacığı kullanımı](http://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
  Nasıl kullanılacağını içinde çoklu iş parçacığı kullanımı [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] bileşenleri.  
   
- [Eski kod (Visual C++) için çoklu iş parçacığı desteği](/cpp/parallel/multithreading/multithreading-support-for-older-code-visual-cpp)  
+ [Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)](/cpp/parallel/multithreading/multithreading-support-for-older-code-visual-cpp)  
  MFC kullanma C++ programcıları için iş parçacığı, kavramlar ve örnek kod.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

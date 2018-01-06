@@ -13,15 +13,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 dev_langs: C++
-ms.openlocfilehash: 10d4ab630132d8ce4191978de669436ca7ba5852
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 7d55fdb061b9cb2fcd0497b7dde8e5c4255cf5e3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="custom-native-etw-heap-events"></a>Özel yerel ETW yığın olayları
 
-Visual Studio içeren çeşitli [profil oluşturma ve tanılama araçları](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), yerel bellek profil oluşturucu de dahil olmak üzere.  Bu profil oluşturucu kancalarını [ETW olayları](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) yığın sağlayıcısından ve bellek nasıl olma analizini sağlar ayrılmış ve kullanılan.  Varsayılan olarak, bu araç yalnızca standart Windows yığınından yapılan ayırmaları çözümleyebilir ve bu yerel yığın dışında tüm ayırmaları gösterilmesi.
+Visual Studio içeren çeşitli [profil oluşturma ve tanılama araçları](../profiling/profiling-tools.md), yerel bellek profil oluşturucu de dahil olmak üzere.  Bu profil oluşturucu kancalarını [ETW olayları](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) yığın sağlayıcısından ve bellek nasıl olma analizini sağlar ayrılmış ve kullanılan.  Varsayılan olarak, bu araç yalnızca standart Windows yığınından yapılan ayırmaları çözümleyebilir ve bu yerel yığın dışında tüm ayırmaları gösterilmesi.
 
 Çoğu durumda, kendi özel yığın kullanın ve standart yığın gelen ayırma yükünü önlemek istediğiniz vardır.  Örneğin, kullanabileceğinizi [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) büyük miktarda bellek uygulama veya oyun başlangıcında ayırın ve ardından bu liste içinde kendi blok yönetmek için.  Bu senaryoda, bellek Profil Oluşturucu aracı'nı yalnızca bu ilk ayırma ve değil bellek öbek içinde yapılan, özel yönetim görürsünüz.  Ancak, özel yerel yığın ETW sağlayıcısını kullanarak, standart öbek kuran ayırmaları hakkında bilmeniz aracı izin verebilirsiniz.
 
@@ -47,7 +48,7 @@ Foo* pFoo2 = (Foo*)mPool.allocate();
 Foo* pFoo3 = (Foo*)mPool.allocate();
 ```
 
-Bir anlık görüntüden [bellek kullanımı](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) özel yığın izleme yalnızca tek bir 8192 bayt ayırma ve havuz tarafından yapılan özel ayırmaları hiçbiri göstermeniz olmadan aracı:
+Bir anlık görüntüden [bellek kullanımı](../profiling/memory-usage.md) özel yığın izleme yalnızca tek bir 8192 bayt ayırma ve havuz tarafından yapılan özel ayırmaları hiçbiri göstermeniz olmadan aracı:
 
 ![Windows yığın ayırma](media/heap-example-windows-heap.png)
 
@@ -138,7 +139,7 @@ Bu kitaplık kolayca C ve C++ içinde kullanılabilir.
    ```
 
 ## <a name="tracking-memory-usage"></a>Bellek kullanımını izleme
-Bu aramaları yerinde özel yığın kullanımınızı şimdi standart kullanarak izlenebilir **bellek kullanımı** Visual Studio'da aracı.  Bu aracın nasıl kullanılacağı hakkında daha fazla bilgi için lütfen bkz [bellek kullanımı](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) belgeleri. Görüntülenen özel yığın kullanımınızı görmezsiniz sahip anlık görüntüleri, aksi takdirde yığın profil etkin emin olun. 
+Bu aramaları yerinde özel yığın kullanımınızı şimdi standart kullanarak izlenebilir **bellek kullanımı** Visual Studio'da aracı.  Bu aracın nasıl kullanılacağı hakkında daha fazla bilgi için lütfen bkz [bellek kullanımı](../profiling/memory-usage.md) belgeleri. Görüntülenen özel yığın kullanımınızı görmezsiniz sahip anlık görüntüleri, aksi takdirde yığın profil etkin emin olun. 
 
 ![Yığın profil oluşturma etkinleştir](media/heap-enable-heap.png)
 
@@ -152,11 +153,11 @@ Varsayılan *NT yığın* yığın arar aynı şekilde bir önceki eklenmesi ile
 
 ![NT yığınla İzleyicisi](media/heap-example-windows-heap.png)
 
-Standart Windows yığınla de bu aracı ana açıklanan, özel yığınındaki sızıntıları ve Bozulması arayın ve anlık görüntüleri karşılaştırması için kullanabileceğiniz gibi [bellek kullanımı](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) belgeleri.
+Standart Windows yığınla de bu aracı ana açıklanan, özel yığınındaki sızıntıları ve Bozulması arayın ve anlık görüntüleri karşılaştırması için kullanabileceğiniz gibi [bellek kullanımı](../profiling/memory-usage.md) belgeleri.
 
 > [!TIP]
 > Visual Studio de içeren bir **bellek kullanımı** içinde aracı **performans profili oluşturma** etkinleştirildiğinden araç takımı **hata ayıklama > Performans Profil Oluşturucu** menü seçeneğini veya **Alt + F2** klavye birleşimi.  Bu özellik, yığın izleme içermez ve burada açıklandığı gibi özel yığın görüntülenmez.  Yalnızca **tanılama araçları** ile etkin penceresini **hata ayıklama > Windows > tanılama araçları Göster** menüsünde veya **Ctrl + Alt + F2** birleşimi, klavye Bu işlevselliği içerir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Profil Araçları](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
-[Bellek kullanımı](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
+[Profil Araçları](../profiling/profiling-tools.md)  
+[Bellek kullanımı](../profiling/memory-usage.md)

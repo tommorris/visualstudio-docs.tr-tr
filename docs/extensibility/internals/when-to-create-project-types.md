@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b532ad4e72fb15cd9409c362259347f6f3833d2e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f766619054ed1912d677ac08fad511cfd3a3dcb4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="when-to-create-project-types"></a>Proje türleri oluşturma zamanı
 Yeni proje türü oluşturma sağlayan bir temel özelleştirmek için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanıcılarınız için. Ancak, yeni bir proje türü oluşturulması için tüm gerekli değildir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] özelleştirmeleri. Aşağıdaki yönergeler yeni bir proje türü senaryonuz için gerekip gerekmediğini belirlemenize yardımcı olmalıdır.  
@@ -62,4 +63,4 @@ Yeni proje türü oluşturma sağlayan bir temel özelleştirmek için [!INCLUDE
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Belge pencereleri ve düzenleyiciler](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)   
  [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Visual Studio'da hiyerarşileri](../../extensibility/internals/hierarchies-in-visual-studio.md)
+ [Visual Studio’da Hiyerarşiler](../../extensibility/internals/hierarchies-in-visual-studio.md)

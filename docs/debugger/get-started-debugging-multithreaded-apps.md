@@ -20,18 +20,19 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86ffd65cf0ebe19a9f3c1f42c24fc365536be661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9b3fd00e849a54fc926054e1f7e0d97b2907cf02
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Visual Studio'da çok iş parçacıklı uygulamada hata ayıklama kullanmaya başlama
 Visual Studio çeşitli araçları ve birden çok iş parçacıklı uygulamalarda hata ayıklama yardımcı olması için kullanıcı arabirimi öğeleri sağlar. Bu öğretici iş parçacığı işaretçileri kullanmayı gösterir **Paralel Yığınlar** penceresinde **paralel Gözcü** penceresi, koşullu kesme noktaları ve filtre kesme noktaları. Bu öğretici yalnızca birkaç dakika sürer ancak tamamlanması, çok iş parçacıklı uygulamalarda hata ayıklama için özelliklerle alışmanızı.
 
 |         |         |
 |---------|---------|
-| ![Bir video izlemek](../install/media/video-icon.png "WatchVideo") | [Bir video izlemek](#video) benzer adımları gösteren birden çok iş parçacıklı hata ayıklama üzerinde. |
+|  ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin")  |    [Bir video izlemek](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) benzer adımları gösteren birden çok iş parçacıklı hata ayıklama üzerinde. |
 
 Diğer konular, diğer birden çok iş parçacıklı hata ayıklama araçları kullanarak ek bilgileri sağlayın:
 
@@ -372,12 +373,6 @@ Bazı durumlarda, tek bir iş parçacığı hata ayıklayıcısında yürütülm
 #### <a name="to-switch-to-another-thread"></a>Başka bir iş parçacığı için geçiş yapmak için 
 
 - Başka bir iş parçacığı için geçiş yapmak için bkz: [nasıl yapılır: başka bir iş parçacığı ederken hata ayıklama için geçiş](../debugger/how-to-switch-to-another-thread-while-debugging.md) 
-
-## <a name="video"></a>Birden çok iş parçacıklı hata ayıklama bir video izleyin
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171" frameborder="0" allowfullscreen></iframe>
-</div>
 
 #### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>Paralel yığını ve paralel Gözcü pencerelerini hakkında daha fazla bilgi edinmek için  
   

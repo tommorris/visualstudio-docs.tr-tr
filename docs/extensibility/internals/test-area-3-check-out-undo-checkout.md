@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74f2c8d5589eb4e8a3df9accdd85109e9858920d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8835f1f8c312b3aba72353625a1d97b514dc21b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Test alanı 3: Kullanıma / kullanıma almayı geri al
 Bu kaynak denetimi eklenti test alanını sürüm deposu düzenleme ve dönüştürülüyor öğelerinden kapsayan **kullanıma** ve **geri ödeme** komutları.  
@@ -137,4 +138,4 @@ Bu kaynak denetimi eklenti test alanını sürüm deposu düzenleme ve dönüşt
 |Projeden dosyaları sildikten sonra bir proje kullanıma almayı geri al|1.  Yeni bir proje oluşturun ve kaynak denetimine ekleyin.<br />2.  Projeyi denetleyin.<br />3.  Bir dosyayı projeden silin.<br />4.  Proje kullanıma almayı geri alın.|Silinen dosya, Çözüm Gezgini'nde projeye altında görünür.<br /><br /> Proje artık kullanıma alınmış.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak denetimi eklentiler için test Kılavuzu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Kaynak Denetimi Eklentileri için Test Kılavuzu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

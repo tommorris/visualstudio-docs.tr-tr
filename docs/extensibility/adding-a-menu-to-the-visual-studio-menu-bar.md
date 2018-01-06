@@ -15,11 +15,12 @@ caps.latest.revision: "51"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e4a2485b7e702844a037787234ef3a1ab66495d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e334a148a205338a872e9581bce1c3c1a70b7df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Visual Studio menü çubuğunda bir menü ekleme
 Bu kılavuz, Visual Studio tümleşik geliştirme ortamı (IDE) menü çubuğunda bir menü eklemek gösterilmiştir. IDE menü çubuğu menü kategorileri gibi içeren **dosya**, **Düzenle**, **Görünüm**, **penceresi**, ve **yardımcı** .  
@@ -97,4 +98,4 @@ Bu kılavuz, Visual Studio tümleşik geliştirme ortamı (IDE) menü çubuğund
      Bir ileti kutusu görünür ve "TopLevelMenu.TestCommand.MenuItemCallback() içinde TestCommand paket" iletisini görüntüler. Bu, yeni bir komut çalıştığını gösterir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Komutları, menüleri ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Komutlar, Menüler ve Araç Çubukları](../extensibility/internals/commands-menus-and-toolbars.md)

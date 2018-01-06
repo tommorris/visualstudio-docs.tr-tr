@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9e1bbce7fd1727bc629f015894c16b1d56a2150
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ffe029ecf5839f03732a1e5162dd22da4fe0a18e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-5-change-source-control"></a>Test alanı 5: Kaynak denetimini Değiştir
 Bu kaynak denetimi eklenti test alanını kapsayan aracılığıyla kaynak denetimini değiştirme **değişiklik kaynak denetimi** komutu.  
@@ -76,4 +77,4 @@ Bu kaynak denetimi eklenti test alanını kapsayan aracılığıyla kaynak denet
 |Çözüm/project yalnızca aynı dizinde zaman yeniden bağlayın|1.  Bir proje oluşturun.<br />2.  Kullanarak kaynak denetimine yalnızca projeye ekleyin (**dosya**, **kaynak denetimi**, **seçilen projelere kaynak denetimi ekleme**.<br />3.  Çözümü kapatın.<br />4.  Yeni bir çözüm, en az iki projelerle oluşturun.<br />5.  Çözümü kaynak denetimine ekleyin.<br />6.  Kaynak denetiminden 1. adımda oluşturduğunuz projeye ekleyin.<br />7.  Çözüm checkout istenirse kabul edin.<br />8.  Çözümün tamamında denetleyin.<br />9. Açık **değişiklik kaynak denetimi** iletişim kutusu.<br />10. Eklenen projeden (6. adım) seçin ve tıklatın **Ciltten Çıkar**.<br />11. İletişim kutusunu kapatmak için **Tamam** 'ı tıklatın.<br />12. Kullanıma alma istenirse kabul edin.<br />13. Yeniden **değişiklik kaynak denetimi** iletişim kutusu.<br />14. Eklenen projeden (6. adım) seçin ve tıklatın **bağlama**.<br />15. Özgün konumu seçin.|Çözüm ve projeleri denetimli kalır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak denetimi eklentiler için test Kılavuzu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Kaynak Denetimi Eklentileri için Test Kılavuzu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

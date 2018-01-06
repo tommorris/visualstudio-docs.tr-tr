@@ -21,11 +21,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9048f965ad2f04b4eed8fe3a753f6fddc280dbfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Visual Studio ASP.NET uygulamalarında hata ayıklama
 
@@ -124,7 +125,7 @@ Bir yerel web sunucusunda hata ayıklama için proje özelliklerini ayarlayın. 
 
 2. Bir dış (özel) sunucusunu seçin, doğru URL'yi girin. **proje URL'sini** (veya **taban URL**) alan.
 
-    Dış sunucunun yerel IIS ise, IIS yüklü ve doğru şekilde yapılandırılmış. Örneğin, ASP.NET doğru sürümü, IIS'de yapılandırılmalıdır. Daha fazla bilgi için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Dağıtım yanı sıra hata ayıklama test etmek isterseniz bkz [test etmek için dağıtma](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
+    Dış sunucunun yerel IIS ise, IIS yüklü ve doğru şekilde yapılandırılmış. Örneğin, ASP.NET doğru sürümü, IIS'de yapılandırılmalıdır. Daha fazla bilgi için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Dağıtım yanı sıra hata ayıklama test etmek isterseniz bkz [test etmek için dağıtma](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
 
     Dış sunucunun ise [uzak](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)işleme yerine ekleyin ve bu proje ayarları hata ayıklama için kullanılmaz.
 
@@ -134,7 +135,7 @@ IIS Express için web sunucusu yapılandırmanız gerekmez (Bu bölüm atlayın)
 
 Yerel IIS web sunucusu kullanıyorsanız, aşağıdaki adımları izleyin.
 
-1. IIS düzgün yüklendiğinden emin olun. Daha fazla bilgi için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+1. IIS düzgün yüklendiğinden emin olun. Daha fazla bilgi için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     * Sunucuda ASP.NET doğru sürümünü yüklediğinizden emin olun. ASP.NET 4.5 yüklemek için Web Platformu Yükleyicisi (Webpı) kullanın (Windows Server 2012 R2'de sunucu düğümünden diğerine seçin **yeni Web Platformu bileşenlerini Al** ve ASP.NET için arama yapın). ASP.NET Core yüklemek için bkz: [IIS yayımlama](https://docs.asp.net/en/latest/publishing/iis.html#iis-configuration).
 
@@ -230,5 +231,5 @@ Bir Web sitesi birden çok sanal dizin ve alt dizinler içerebilir ve her birind
 [Dağıtılmış Web uygulamalarında hata ayıklama](debugging-deployed-web-applications.md)   
 [İzlenecek yol: Web formunda hata ayıklama](walkthrough-debugging-a-web-form.md)   
 [Nasıl yapılır: ASP.NET özel durumlarında hata ayıklama](how-to-debug-aspnet-exceptions.md)   
-[Web uygulamalarında hata ayıklama: hatalar ve sorun giderme](debugging-web-applications-errors-and-troubleshooting.md)
+[Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme](debugging-web-applications-errors-and-troubleshooting.md)
   

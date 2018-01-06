@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 18ff0fef277967dcb446f62120843f476ddb4a3f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 304d99c1ddd5fdfddba0c4df88fc4eeeb9dcb7ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-a-legacy-language-service"></a>Eski dil hizmeti uygulama
 Sözdizimi vurgulama, eşleşen ayraç ve IntelliSense tamamlanma gibi çok çeşitli özellikleri destekleyen bir eski dil hizmet uygulamak için sınıflar yönetilen paket Framework'te (MPF) kullanabilirsiniz.  
@@ -28,7 +29,7 @@ Sözdizimi vurgulama, eşleşen ayraç ve IntelliSense tamamlanma gibi çok çe�
 >  Yeni Düzenleyicisi API mümkün olan en kısa sürede kullanmaya başlamanızı öneriyoruz. Bu dil hizmetinizin performansını ve yeni Düzenleyicisi özelliklerden yararlanmak sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Eski dil hizmetine genel bakış](../../extensibility/internals/legacy-language-service-overview.md)  
+ [Eski Dil Hizmetine Genel Bakış](../../extensibility/internals/legacy-language-service-overview.md)  
  MPF içinde desteklenen dil hizmet özelliklerine genel bakış.  
   
  [Eski dil hizmeti uygulama](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
@@ -37,13 +38,13 @@ Sözdizimi vurgulama, eşleşen ayraç ve IntelliSense tamamlanma gibi çok çe�
  [Eski dil hizmeti kaydetme](../../extensibility/internals/registering-a-legacy-language-service1.md)  
  Bir dil MPF tabanlı hizmete kaydolmak için gereken adımları açıklar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- [Eski dil hizmeti Ayrıştırıcı ve tarayıcı](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
+ [Eski Dil Hizmeti Ayrıştırıcısı ve Tarayıcısı](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
  Bir dil hizmetin tüm özelliklerini MPF kullanarak uygulamak için gereken iki ayrıştırıcıları açıklar.  
   
- [İzlenecek yol: bir eski dil hizmeti oluşturma](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)  
+ [İzlenecek Yol: Eski Dil Hizmeti Oluşturma](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)  
  Bir VSPackage MPF dil hizmeti uygulamak için gereken temel adımları sağlar.  
   
- [İzlenecek yol: yüklenen kod parçacıkları (eski uygulama) listesini alma](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)  
+ [İzlenecek Yol: Yüklü Kod Parçacıklarının Listesini Alma (Eski Uygulama)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)  
  Yüklü kod parçacıkları listesini alma teknikleri gösterir.  
   
  [Eski dil hizmeti özellikleri](../../extensibility/internals/legacy-language-service-features1.md)  

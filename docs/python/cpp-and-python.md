@@ -1,7 +1,7 @@
 ---
 title: "C++ ve Visual Studio'da Python ile çalışma | Microsoft Docs"
 ms.custom: 
-ms.date: 09/28/2017
+ms.date: 1/2/20178
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 703197b9ad51334afaffdb057911f75587efb570
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 22bccd91d30c153db7af1e34b87a41b8d01cfeef
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -25,7 +26,7 @@ C++ (veya C) ile yazılmış modüller, alt düzey işletim sistemi özellikleri
 
 - Hızlandırıcı modülleri: Python yorumlanan dil olduğu için bazı kod parçalarını C++'da daha yüksek performans için yazılabilir. 
 - Sarmalayıcı modülleri: sarmalayıcıları Python kodu için varolan C/C++ arabirimleri kullanıma sunar veya Python kullanımı kolay bir daha fazla "Pythonic" API kullanıma sunma.
-- Alt düzey sistem erişim modülleri: CPython çalışma zamanı, işletim sistemi veya temel alınan donanım düşük düzeyli özelliklerine erişmek için oluşturulmuş. 
+- Alt düzey sistem erişim modülleri: CPython çalışma zamanı, işletim sistemi veya temel alınan donanım düşük düzeyli özelliklerine erişmek için oluşturulmuş.
 
 Bu konu, hiperbolik tanjantı hesaplar ve Python kodundan çağıran CPython için C++ uzantısı modülü oluşturma sürecinde size yardımcı olacaktır. Yordam ilk Python C++'da aynı yordamını uygulama performans kazancı göstermek için uygulanır.
 
@@ -107,15 +108,15 @@ Daha fazla bilgi için bkz: [Visual Studio için Python desteği yükleme](insta
 
 1. Aşağıda açıklandığı gibi belirli özellikleri ayarlayın ve ardından **Tamam**.
 
-    | Tab | Özellik | Değer | 
+    | Tab | Özellik | Değer |
     | --- | --- | --- |
-    | Genel | Genel > hedef adı | Bu alan, Python görür olarak modül adı tam olarak eşleşecek şekilde ayarlayın. |
+    | Genel | Genel > hedef adı | Python içinde bir başvurduğu istediğiniz şekilde modülünün adını belirtin `from...import` deyimleri. |
     | | Genel > hedef uzantısı | .pyd |
     | | Proje Varsayılanları > yapılandırma türü | Dinamik kitaplığı (.dll) |
-    | C/C++ > Genel | Ek içeren dizinler | Python eklemek `include` , bu gibi bir durumda yükleme için uygun şekilde klasörü`c:\Python36\include` |     
+    | C/C++ > Genel | Ek içeren dizinler | Python eklemek `include` , bu gibi bir durumda yükleme için uygun şekilde klasörü`c:\Python36\include` |
     | C/C++ > ön işlemci | Önişlemci tanımları | Ekleme `Py_LIMITED_API;` dize başlangıcına hangi kısıtlayan bazı işlevleri Python çağırabilir ve kod Python farklı sürümleri arasında daha taşınabilir hale getirir. |
     | C/C++ > kod oluşturma | Çalışma Zamanı Kitaplığı | Çok iş parçacıklı DLL (/ MD) (uyarı aşağıya bakın) |
-    | Bağlayıcı > Genel | Ek Kitaplık dizinleri | Python eklemek `libs` içeren klasör `.lib` Örneğin, yükleme için uygun şekilde dosya `c:\Python36\libs`. (İşaret edecek şekilde unutmayın `libs` içeren klasörü `.lib` dosyaları ve *değil* `Lib` içeren klasörü `.py` dosyaları.) | 
+    | Bağlayıcı > Genel | Ek Kitaplık dizinleri | Python eklemek `libs` içeren klasör `.lib` Örneğin, yükleme için uygun şekilde dosya `c:\Python36\libs`. (İşaret edecek şekilde unutmayın `libs` içeren klasörü `.lib` dosyaları ve *değil* `Lib` içeren klasörü `.py` dosyaları.) |
 
     > [!Tip]
     > C/C++ sekmesini görmüyorsanız, C/C++ kaynak dosyaları tanımlayan herhangi bir dosya içermiyor. proje nedeni. Bir kaynak dosyası olmadan oluşturursanız, bu durum ortaya çıkabilir bir `.c` veya `.cpp` uzantısı. Örneğin, yanlışlıkla girdiğiniz `module.coo` yerine `module.cpp` yeni öğe iletişim kutusunda daha önce ardından Visual Studio dosyası oluşturur ama dosya türü ayarlamaz "C / C + kodu," olduğu ne C/C++ Özellikleri sekmesi etkinleştirir. Dosyayı yeniden adlandırın bile bu misidentification durumda kalır `.cpp`. Dosya türü düzgün bir şekilde ayarlamak için Çözüm Gezgini'nde, select dosyasını sağ tıklatın **özellikleri**, ardından **dosya türü** için **C/C++ kod**.
@@ -124,14 +125,14 @@ Daha fazla bilgi için bkz: [Visual Studio için Python desteği yükleme](insta
     > Ayarlamazsanız **C/C++ > kod oluşturma > Çalışma Zamanı Kitaplığı** için seçenek "çok iş parçacıklı hata ayıklama DLL (/ MDd)" hata ayıklama yapılandırması için bile. Seçin "çok iş parçacıklı DLL (/ MD)" çalışma zamanı hata ayıklama olmayan Python ikili ile oluşturulan olduğu için. /MDd seçeneğini ayarlamak için görülüyorsa hata bkz *C1189: Py_LIMITED_API Py_DEBUG, Py_TRACE_REFS ve Py_REF_DEBUG uyumlu* hata ayıklama yapılandırmasını, DLL oluştururken. Ayrıca, kaldırırsanız `Py_LIMITED_API` yapı hatayı önlemek için Python modülü almaya çalışırken çöküyor. (DLL çağrı içinde kilitlenme olur `PyModule_Create` daha sonra çıktı iletisiyle açıklandığı gibi *önemli Python hata: PyThreadState_Get: hiçbir geçerli iş parçacığının*.)
     >
     > Not /MDd Python hata ayıklama ikili dosyalarının (örneğin, python_d.exe) oluşturmak için kullanılan bir seçenektir ancak uzantı DLL için seçme hala derleme hatasıyla neden `Py_LIMITED_API`.
-   
+
 1. C++ projesine sağ tıklatın ve **yapı** yapılandırmalarınızı (hata ayıklama ve yayın) test etmek için. `.pyd` Dosyaları içinde bulunur *çözüm* klasörü altında **hata ayıklama** ve **sürüm**, C++ projesi klasörünün kendisi değil.
 
 1. C++ projesi aşağıdaki kodu ana eklemek `.cpp` dosyası:
 
     ```cpp
     #include <Windows.h>
-    #include <cmath>    
+    #include <cmath>
 
     const double e = 2.7182818284590452353602874713527;
 
@@ -149,7 +150,6 @@ Daha fazla bilgi için bkz: [Visual Studio için Python desteği yükleme](insta
     ```
 
 1. Kodunuzun doğru olduğunu onaylamak için yeniden C++ projesi oluşturun.
-
 
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>C++ projesi uzantısı Python için Dönüştür
 
@@ -171,11 +171,12 @@ C++ DLL Python için uzantı yapmak için Python türleri ile etkileşim kurmak 
     }
     ```
 
-1. Tanımlayan bir yapı eklemek nasıl C++ `tanh` işlevi için Python sunulur:
+1. Tanımlayan bir yapı eklemek nasıl C++ `tanh_impl` işlevi için Python sunulur:
 
     ```cpp
     static PyMethodDef superfastcode_methods[] = {
-        // The first property is the name exposed to python, the second is the C++ function name        
+        // The first property is the name exposed to Python, fast_tanh, the second is the C++
+        // function name that contains the implementation.
         { "fast_tanh", (PyCFunction)tanh_impl, METH_O, nullptr },
 
         // Terminate the array with an object containing nulls.
@@ -183,22 +184,22 @@ C++ DLL Python için uzantı yapmak için Python türleri ile etkileşim kurmak 
     };
     ```
 
-1. Modül Python kodu gördüğünüz gibi tanımlayan bir yapı ekleyin. (Dosya adları gibi module.cpp, C++ projesi iç göz önüne alınmaz.)
+1. Modül için özellikle kullanırken Python kodunuzu başvurmak istediğinizde olarak tanımlayan bir yapı eklemek `from...import` deyimi. Aşağıdaki örnekte, "superfastcode" modül adı kullanabileceğiniz anlamına gelir `from superfastcode import fast_tanh` python'da, çünkü `fast_tanh` içinde tanımlanan `superfastcode_methods`. (Dosya adları gibi module.cpp, C++ projesi iç göz önüne alınmaz.)
 
     ```cpp
     static PyModuleDef superfastcode_module = {
         PyModuleDef_HEAD_INIT,
-        "superfastcode",                        // Module name as Python sees it
+        "superfastcode",                        // Module name to use with Python import statements
         "Provides some functions, but faster",  // Module description
         0,
-        superfastcode_methods                   // Structure that defines the methods
+        superfastcode_methods                   // Structure that defines the methods of the module
     };
     ```
 
 1. Adlandırılmalıdır modülü yüklediğinde, Python çağıran bir yöntem ekleyin `PyInit_<module-name>`, burada  *&lt;module_name&gt;*  C++ projenin tam olarak eşleşen **genel >hedefadı** özelliği (diğer bir deyişle, dosya adı ile eşleşen `.pyd` projenin oluşturduğu).
 
     ```cpp
-    PyMODINIT_FUNC PyInit_superfastcode() {    
+    PyMODINIT_FUNC PyInit_superfastcode() {
         return PyModule_Create(&superfastcode_module);
     }
     ```
@@ -238,7 +239,7 @@ DLL Python için kullanılabilir hale getirmek iki yolu vardır.
 
 1. `setup.py` Kod uzantısını kullanarak komut satırından kullanıldığında Visual Studio 2015 C++ araç takımını oluşturmak için Python bildirir. Yükseltilmiş bir komut istemi açın, C++ projeyi içeren klasöre gidin (ve `setup.py`) ve aşağıdaki komutu girin:
 
-    ```
+    ```command
     pip install .
     ```
 
@@ -249,7 +250,7 @@ Yukarıdaki yöntemlerden birini tamamladıktan sonra artık çağırabilirsiniz
 1. Aşağıdaki satırları ekleyin, `.py` çağırmak için dosya `fast_tanh` yöntemi DLL'den dışarı ve çıktısını görüntüleyin. Yazarsanız `from s` deyimi el ile göreceksiniz `superfastcode` tamamlanma listesi ve yazdıktan sonra gündeme `import` `fast_tanh` yöntemi belirir.
 
     ```python
-    from superfastcode import fast_tanh    
+    from superfastcode import fast_tanh
     test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
     ```
 

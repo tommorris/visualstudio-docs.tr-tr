@@ -13,11 +13,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f57cfea2655061985f58692c2d6c47c6433230bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: de2af589a92e401ecf549726dea1a5ae300a20bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma
 Visual Studio için Blend tasarım XAML tabanlı Windows ve Web uygulamaları yardımcı olur. Visual Studio aynı temel XAML tasarım deneyimi sağlar ve animasyonları ve davranışları gibi gelişmiş görevler için görsel tasarımcılar ekler. (Araçları arasında bir karşılaştırma için bkz: [Visual Studio ve Visual Studio için Blend'de XAML tasarlama](../designers/designing-xaml-in-visual-studio.md).)
@@ -97,7 +98,7 @@ Visual Studio için Blend yeniyseniz, çalışma alanının benzersiz özellikle
   
  ![Özellikleri paneli](../designers/media/blend5_properties_panel.png "Blend5_properties_panel")  
   
- **Kategoriler** özellikleri kategorilerini genişletme ve daraltma. Tıklatın **genişletme** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") ve **Daralt** ![Daralt](../designers/media/b5_collapse_button.png "b5_collapse_button") kategorisi ayrıntıları göstermek veya gizlemek için.  
+ **Kategoriler** özellikleri kategorilerini genişletme ve daraltma. Tıklatın **genişletin** ![ ] (../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") ve **Daralt** ![Daralt] (../designers/media/b5_collapse_button.png "b5_collapse_button") kategorisi ayrıntıları göstermek veya gizlemek için.  
   
 |||  
 |-|-|  

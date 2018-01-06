@@ -21,11 +21,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7447f3f6fc9042bbcca5fc176e26200f4848a04c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0eadf1b5d94a136861d45275ebc5b94b6707cf14
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="exec-task"></a>Yürütme Görevi
 Belirtilen program veya komut belirtilen bağımsız değişkenler kullanılarak çalıştırılır.  
@@ -36,8 +37,11 @@ Belirtilen program veya komut belirtilen bağımsız değişkenler kullanılarak
 |Parametre|Açıklama|  
 |---------------|-----------------|  
 |`Command`|Gerekli `String` parametresi.<br /><br /> Çalıştırmak için komutu. Bunlar attrib gibi sistem komutlarını veya program.exe, runprogram.bat veya setup.msi gibi bir yürütülebilir dosya olabilir.<br /><br /> Bu parametre, komutları birden fazla satır içerebilir. Alternatif olarak, birden çok komutları bir toplu iş dosyasında koy ve, bu parametre kullanarak çalıştırın.|  
+|`ConsoleOutput`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Her öğe çıkışı aracı tarafından gösterilen standart çıktı ve standart hata akışı satırından ' dir. Bu, yalnızca yakalanır `ConsoleToMsBuild` ayarlanır `true`.|
+|`ConsoleToMsBuild`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, görev standart hata yakalar ve standart çıktısını aracını ve bunları kullanılabilir duruma `ConsoleOutput` çıkış parametresi. Varsayılan değer `false` şeklindedir.|
 |`CustomErrorRegularExpression`|İsteğe bağlı `String` parametresi.<br /><br /> Nokta hata satırlarını aracı çıkışı için kullanılan normal bir ifade belirtir. Bu, genellikle biçimlendirilmiş bir çıktı oluşturmak için araçları yararlıdır.|  
 |`CustomWarningRegularExpression`|İsteğe bağlı `String` parametresi.<br /><br /> Araç çıktısını nokta uyarı satırlarında için kullanılan normal bir ifade belirtir. Bu, genellikle biçimlendirilmiş bir çıktı oluşturmak için araçları yararlıdır.|  
+|`EchoOff`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, görev genişletilmiş biçiminde yayma değil `Command` MSBuild günlüğüne. Varsayılan değer `false` şeklindedir.|
 |`ExitCode`|İsteğe bağlı `Int32` çıkış parametresi salt okunur.<br /><br /> Yürütülen komutun tarafından sağlanan çıkış kodu belirtir.|  
 |`IgnoreExitCode`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, görev tarafından yürütülen komutu sağlanan çıkış kodu yok sayar. Aksi halde, görev döndürür `false` yürütülen komutu sıfır olmayan çıkış kodu döndürmesi durumunda.|  
 |`IgnoreStandardErrorWarningFormat`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `false`, standart hata/uyarı biçim ile eşleşmesi çıktıda satırları seçer ve hatalar/uyarılar kaydeder. Varsa `true`, bu davranışı devre dışı. Varsayılan değer `false` şeklindedir.|  

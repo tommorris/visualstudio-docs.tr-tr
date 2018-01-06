@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73ef7f1b347dc2fdcfe2904ef19a2d52036d927e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0cdfb4631420f6803e6434bd67b93bd713cfd1f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-a-standard-document"></a>Standart belgeyi kaydetme
 Ortam Kaydet, Farklı Kaydet ve Tümünü Kaydet komutları işler. Bir kullanıcı seçtiğinde **kaydetmek**, **Kaydet**, veya **Tümünü Kaydet** gelen **dosya** menü ya da sonuçta çözüm kapatır bir  **Tümünü Kaydet**, aşağıdaki süreç gerçekleşir.  
@@ -62,4 +63,4 @@ Kaydet Kaydet ve Tümünü Kaydet komut için standart bir düzenleyici işleme
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [Açıp kaydederek proje öğeleri](../../extensibility/internals/opening-and-saving-project-items.md)
+ [Proje Öğelerini Açma ve Kaydetme](../../extensibility/internals/opening-and-saving-project-items.md)

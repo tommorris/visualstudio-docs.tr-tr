@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6218d697880da3ebf0d9af5599b5a7ca37ddf2f9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 76801810aafa3bd4048776ca38385ad1cf508d94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-update-the-status-bar"></a>Nasıl yapılır: durum çubuğunda güncelleştir
 **Durum çubuğu** denetim çubuğu bir veya daha fazla durum metin satırlarını ya da göstergeleri içeren pek çok uygulama penceresi en altında bulunur.  
@@ -49,4 +50,4 @@ ms.lasthandoff: 10/31/2017
  VSPackage uygulayan durum çubuğunda durum metni güncelleştirmek için sorumludur. Durum metin alanı boş metin ayarlanmışsa, "Hazır" Bu dizeye IDE sıfırlar ("") boşta kalma zaman.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Durum çubukları](/cpp/mfc/status-bars)
+ [Durum Çubukları](/cpp/mfc/status-bars)

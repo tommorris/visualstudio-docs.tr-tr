@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81856823b511fc89f5f156915f843d4b0202e907
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 026223f89822f2d76aa1185da8691c538b15ee62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="immediate-window"></a>Komut Penceresi
 **Hemen** penceresi, hata ayıklama ve ifadeler değerlendirmek, deyimlerini yürütmek, değişken değerleri yazdırma ve benzeri için kullanılır. Hesaplanan veya hata ayıklama sırasında geliştirme dili tarafından yürütülen için ifadeler girin imkan tanır. Görüntülenecek **hemen** penceresinde, düzenlemek için bir proje açın ve ardından **Windows** gelen **hata ayıklama** menü ve seçin **hemen**, veya CTRL + ALT + g tuşlarına basın.  
@@ -129,4 +130,4 @@ Tasarım zamanı ifade değerlendirmesi bir yürütme ortamı kurma başlangıç
  [Hata ayıklayıcı temel bilgileri](../../debugger/debugger-basics.md)   
  [İzlenecek yol: Tasarım zamanında hata ayıklama](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Visual Studio komut diğer adları](../../ide/reference/visual-studio-command-aliases.md)   
- [Visual Studio'da normal ifadeler kullanma](../../ide/using-regular-expressions-in-visual-studio.md)
+ [Visual Studio'da Normal İfadeler Kullanma](../../ide/using-regular-expressions-in-visual-studio.md)

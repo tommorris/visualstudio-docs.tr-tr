@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 692884d31e55921489aad0fbbea32ca1c094c6c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8e0fa4a65960d0324a4be19db61648be48b08349
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Eski dil hizmetindeki hızlı bilgi
 IntelliSense Hızlı bilgileri kullanıcı tanımlayıcısını şapka yerleştirir ve seçer bu tanımlayıcıyı hakkında bilgileri kaynağında gösterir **hızlı bilgi** gelen **IntelliSense** menüsü veya fare tutar İmleç üzerinden tanımlayıcısı. Bu tanımlayıcı bilgiler görüntülenecek araç ipucu neden olur. Bu bilgiler, genel tanımlayıcı türü oluşur. Hata ayıklama altyapısı etkin olduğunda, bu bilgileri geçerli değeri içerebilir. Dil hizmeti yalnızca tanımlayıcıları işlerken hata ayıklama altyapısı ifade değer sağlıyor.  

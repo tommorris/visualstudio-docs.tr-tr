@@ -17,11 +17,12 @@ caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efba273a64018e888738e57941316b307f9b6c47
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: efd4ca5457a1175b19deddfd4194091dbcb2864e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-applications"></a>Uygulamalarda Hata Ayıklama
 Aşağıdaki bölümler, belirli uygulama türleri için hata ayıklama ile ilgilidir. Farklı uygulama türleri ve farklı dillerde farklı ayarlar ve teknikler gerektirir ve mevcut farklı ayıklanacak gereken sorunlar.  
@@ -37,4 +38,4 @@ Aşağıdaki bölümler, belirli uygulama türleri için hata ayıklama ile ilgi
 |[Grafik tanılama (hata ayıklama DirectX grafik)](../debugger/visual-studio-graphics-diagnostics.md)|DirectX grafik hata ayıklamak açıklar.|  
 |[ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|ASP.NET uygulamalarında hata ayıklama açıklar.| 
 |[Web uygulamalarında hata ayıklama](../debugger/debugging-web-applications.md)|Web uygulamaları ve komut dosyası hata ayıklama açıklar.|  
-|[WCF hizmetleri hata ayıklama](../debugger/debugging-wcf-services.md)|Windows Communication Foundation Hizmetleri hata ayıklamak açıklar.|
+|[WCF hizmetlerinde hata ayıklama](../debugger/debugging-wcf-services.md)|Windows Communication Foundation Hizmetleri hata ayıklamak açıklar.|

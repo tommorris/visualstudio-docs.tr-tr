@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8379dc1c7dfedfcf46b594fe6ea3bfbc64dfb950
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 277189c9b5510df1da4802e42225ffafa4b6995c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 Bu arabirim, bir makine veya bağlantı noktası sağlayıcı bağlantı noktaları numaralandırır.  
@@ -40,7 +41,7 @@ IEnumDebugPorts2 : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Sonraki](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|Bağlantı noktaları bir numaralandırma dizisinde belirtilen sayısını alır.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|Bağlantı noktaları bir numaralandırma dizisinde belirtilen sayısını alır.|  
 |[Atla](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|Bağlantı noktaları bir numaralandırma dizisinde belirtilen sayıda atlar.|  
 |[Sıfırla](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
 |[Kopya](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  

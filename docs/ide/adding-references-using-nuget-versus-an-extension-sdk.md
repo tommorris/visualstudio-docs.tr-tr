@@ -11,17 +11,18 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e3d3432a62d54564c92a12a02204ffb5e05889
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 4ec453e3bec8bbca0e01d0706b43f82fb413d162
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Başvuru Eklerken NuGet veya Uzantı SDK Kullanma Karşılaştırması
 
 Visual Studio için NuGet uzantısı ya da bir yazılım geliştirme seti (SDK) kullanarak Visual Studio projeleri içinde tüketimi için bir paket sağlayabilirsiniz. İki mekanizma arasındaki farklar ve benzerlikler açıklayarak, bu konuda göreviniz için en iyisi seçmenize yardımcı olabilir.
 
-- NuGet, bir proje çözüme kitaplıkları ekleme işlemini basitleştiren bir açık kaynaklı paket Yönetimi sistemidir. Daha fazla bilgi için bkz: [NuGet belgelerine](http://docs.microsoft.com/nuget).
+- NuGet, bir proje çözüme kitaplıkları ekleme işlemini basitleştiren bir açık kaynaklı paket Yönetimi sistemidir. Daha fazla bilgi için bkz: [NuGet belgelerine](/nuget).
 
 - Bir SDK, Visual Studio tek başvuru öğesi olarak davranır dosyaları koleksiyonudur. **Başvuru Yöneticisi** iletişim kutusu, bu iletişim kutusunu görüntülediğinizde, açık olan projeye ilgili tüm SDK'ları listeler. Bir projeye bir SDK eklediğinizde, tüm bu SDK içeriği IntelliSense erişebilirsiniz **araç**, tasarımcıları, **Nesne Tarayıcısı**, MSBuild, hata ayıklama ve paketleme dağıtımı. SDK hakkında daha fazla bilgi için bkz: [bir yazılım geliştirme seti oluşturma](../extensibility/creating-a-software-development-kit.md).
 

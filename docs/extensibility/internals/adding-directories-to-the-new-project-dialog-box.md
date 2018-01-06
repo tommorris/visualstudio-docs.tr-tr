@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f24fd3c3a0ffb537c63346ef867a2a43481acfa9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 881979b54fb8f8f07a7ffeb2f3648b690fe2bf78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>Yeni Proje iletişim kutusu için dizinler ekleme
 Yeni proje türleri oluşturduğunuzda, yeni bir dizinde da kaydedebilirsiniz **yeni proje** bunları şablon olarak kullanmak için görüntülenecek iletişim kutusu. Aşağıdaki kod örneği, yeni bir dizin olarak da bilinen bir düğüm kaydetmek açıklanmaktadır. Örnekte, VSPackage CLSID_Package tarafından kullanıma sunulan şablonları kaydedilir. Sonuç olarak, sol tarafındaki **yeni proje** iletişim kutusu Folder_Label_ResID kaynak tarafından belirlenen bir adla eklenen düğümle sunar. Bu kaynak VSPackage uydu DLL yüklenir.  
@@ -50,4 +51,4 @@ NoRemove NewProjectTemplates
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Proje ve öğe şablonları kaydediliyor](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Öğeler ekleme yeni öğe Ekle iletişim kutuları](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [Dizinleri ekleme yeni öğe Ekle iletişim kutusu](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+ [Yeni Öğe Ekleme İletişim Kutusuna Dizin Ekleme](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

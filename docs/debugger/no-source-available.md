@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e02c91f5e5a55e82633d89aa7209321126271e8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a11770bc54a7b96aa918b73b34e0028731bf0f9c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="no-source-available"></a>Kullanılabilir Kaynak Yok
 Projeniz için görüntülemeye çalıştığınız kaynak kodu içermiyor. Kaynak kodu sahip olmayan bir modül normal neden çift **çağrı yığını penceresinde** veya **iş parçacıkları penceresi**. Hata ayıklama devam edebilirsiniz, ancak kaynak penceresini kesme noktalarını ayarlayın ve bu konumda başka eylemler gerçekleştirmek için kullanamazsınız. Bir kesme noktası belirleyerek gerekiyorsa kullanın **ayrıştırma penceresi** yerine.  
@@ -42,4 +43,4 @@ Projeniz için görüntülemeye çalıştığınız kaynak kodu içermiyor. Kayn
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak dosyaları, ortak özellikler, çözüm özellik sayfaları iletişim kutusu hata ayıklama](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
  [Simge (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [SOS.dll (SOS hata ayıklama uzantısı)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)
+ [SOS.dll (SOS Hata Ayıklama Uzantısı)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

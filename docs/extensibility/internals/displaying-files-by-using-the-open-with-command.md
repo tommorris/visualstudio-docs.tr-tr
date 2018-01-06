@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed8a19ce0cfb6a7936d61ff7a5855498d2010359
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a1631632a2ceb66380d1d0c41e54b5a4244a31a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>Aç komutunu kullanarak dosyaları görüntüleme
 Bir proje görüntülenecek IDE sorabilirsiniz **birlikte Aç** iletişim kutusu. Bu istek standart düzenleyicileri seçimine sahip bir dosyayı açmak için kullanıcıya sorar. Aşağıdaki adımlar, bu işlem açıklamaktadır.  
@@ -37,4 +38,4 @@ Bir proje görüntülenecek IDE sorabilirsiniz **birlikte Aç** iletişim kutusu
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Açıp kaydederek proje öğeleri](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Dosya Aç komutu kullanarak dosyaları görüntüleme](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)   
- [Nasıl yapılır: standart düzenleyicileri açın](../../extensibility/how-to-open-standard-editors.md)
+ [Nasıl Yapılır: Standart Düzenleyicileri Açma](../../extensibility/how-to-open-standard-editors.md)

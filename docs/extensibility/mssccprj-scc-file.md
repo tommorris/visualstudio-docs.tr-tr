@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b61478b482ed10aba61ea9ce412dc0fe0725b0bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. SCC dosyası
 Visual Studio çözüm ya da proje IDE kullanarak kaynak denetimi altında yerleştirildiğinde, IDE iki temel bilgiler dizeleri formunda eklenti kaynak denetiminden alır. "AuxPath" ve "ProjName" Bu dizeler IDE opak, ancak bunlar eklenti tarafından sürüm denetimindeki proje ve çözüm bulmak için kullanılır. IDE genellikle bu dizeler ilk kez çağırarak edinir [SccGetProjPath](../extensibility/sccgetprojpath-function.md), ve ardından bunları sonraki çağrılar için çözüm ya da proje dosyasında kaydeder [SccOpenProject](../extensibility/sccopenproject-function.md). Bir kullanıcı, çatallarını, dallandırır ya da sürüm denetimindeki çözüm ve proje dosyalarını kopyalar çözüm ve proje dosyalarında yerleşik "AuxPath" ve "ProjName" dizelerini otomatik olarak güncelleştirilmez. Çözüm ve proje dosyalarını doğru konumlarına sürüm denetimindeki işaret ettiğinden emin olmak için kullanıcılar dizeleri el ile güncelleştirmelisiniz. Dizeleri donuk olma amacını taşır olduğundan, bu her zaman nasıl güncelleştirileceği Temizle olmayabilir.  
@@ -77,4 +78,4 @@ Visual Studio çözüm ya da proje IDE kullanarak kaynak denetimi altında yerle
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetim Eklentileri](../extensibility/source-control-plug-ins.md)   
- [Kaynak denetimi eklenti bulmak için anahtar olarak kullanılan dizeleri](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
+ [Kaynak Denetimi Eklentisi Bulmak için Anahtar Olarak Kullanılan Dizeler](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

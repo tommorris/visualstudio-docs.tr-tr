@@ -11,11 +11,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 98811cc3e7830dfcbf548bc34c5b3ee268e6f858
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e9fc83c57b2e1d0bb9768835b3cccc5be36b9295
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Etki Alanına Özgü Dilden Kod Oluşturma
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] modellerinde gösterilen veriler kod, belgeler, yapılandırma dosyalarını ve diğer yapıları oluşturmak için güçlü bir yol sağlar. Kullanarak [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], verilerinizi temsil eden sınıfları kümesi oluşturabilirsiniz ve metin şablonları sınıflarda adları yazabilirsiniz ve özellikleri verileri yansıtır.  
@@ -37,32 +38,32 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] modellerinde gösteril
  Bu bölümde bazı oluşturmak, değiştirmek ve metin şablonları kullanılan hata ayıklama yolları açıklanmaktadır [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Metin şablonları erişilirken modellerinden](../modeling/accessing-models-from-text-templates.md)  
+ [Metin Şablonlarından Modellere Erişme](../modeling/accessing-models-from-text-templates.md)  
   
  Metin şablonları etki alanına özgü dil başvurma hakkında temel bilgiler sağlar.  
   
- [İzlenecek yol: metin şablonu bu erişimleri bir modeli hata ayıklama](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)  
+ [İzlenecek yol: Modele Erişen Metin Şablonunda Hata Ayıklama](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)  
   
  Sorun giderme ve bir etki alanına özgü dil başvuran bir metin şablonu hata ayıklama yapmak açıklar.  
   
- [İzlenecek yol: bir oluşturulan bir yönerge işlemcisi konağa bağlanma](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)  
+ [İzlenecek yol: Üretilen bir Yönerge İşlemcisine Ana Bilgisayar Bağlama](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)  
   
  Oluşturulan bir yönerge işlemcisi özel bir ana bilgisayara bağlanmaya açıklar.  
   
- [DslTextTransform komutu](../modeling/the-dsltexttransform-command.md)  
+ [DslTextTransform Komutu](../modeling/the-dsltexttransform-command.md)  
   
  Etki alanına özgü dil başvurusu metin şablonları için komut satırında TextTransform yürütülebilir yürütür komut dosyası açıklanmaktadır.  
   
 ## <a name="reference"></a>Başvuru  
- [T4 metin şablonu yazma](../modeling/writing-a-t4-text-template.md)  
+ [T4 Metin Şablonu Yazma](../modeling/writing-a-t4-text-template.md)  
   
  Metin şablonu yönergeleri ve denetim blokları sözdizimi sağlar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
+ [T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
  Metin şablonu dönüştürme süreci açıklanmaktadır.  
   
- [Derleme sürecinde kod oluşturma](../modeling/code-generation-in-a-build-process.md)  
+ [Derleme Sürecinde Kod Oluşturma](../modeling/code-generation-in-a-build-process.md)  
   
  Derleme sunucusundaki DSL gelen dosyaları oluşturma varsa bu konuyu okuyun.

@@ -15,17 +15,18 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fe030aef4ba755b9a147bcc1430d2e6046c9dbf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1d0e6e71dacef98cfaf38581d6638998509ab922
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="search-tools-for-spy-views"></a>Spy++ Görünümleri için Arama Araçları
 Spy ++ görünümleri pencere görüntüler hangi verileri belirtmek için bu iletişim kutularını kullanın:  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Pencere Bul iletişim kutusu](../debugger/find-window-dialog-box.md)  
+ [Pencere Bul İletişim Kutusu](../debugger/find-window-dialog-box.md)  
  Özellikler veya belirli bir pencere iletileri görüntülemek için kullanılır.  
   
  [Pencere arama iletişim kutusu](../debugger/window-search-dialog-box.md)  
@@ -41,11 +42,11 @@ Spy ++ görünümleri pencere görüntüler hangi verileri belirtmek için bu il
  İş Parçacıkları görünümü belirli bir iş parçacığında düğüm bulmak için kullanılır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Spy ++ görünümleri](../debugger/spy-increment-views.md)  
+ [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
  Windows, iletileri, işlemleri ve iş parçacıklarının Spy ++ ağaç görünümler açıklanmaktadır.  
   
- [Spy ++ kullanma](../debugger/using-spy-increment.md)  
+ [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
- [Spy ++ başvurusu](../debugger/spy-increment-reference.md)  
+ [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
  Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümleri içerir.

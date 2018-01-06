@@ -20,22 +20,23 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3536c224498603eb4013c06b44dc0082337b4bdf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 378b33e7396678273a8aa14eb96e355117ce1f6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-contact-items"></a>Kişi Öğeleriyle Çalışma
   <xref:Microsoft.Office.Interop.Outlook.ContactItem> Sınıfı yöntemleri ve kişiler görevleri gerçekleştirmek için kullandığınız özellikler içerir.  
   
 |Görev|Yordam|  
 |----------|---------------|  
-|Belirtilen dizenin Soyadı içeren tüm kişileri Al.|[Nasıl yapılır: program aracılığıyla, Outlook Kişilerine erişme](../vsto/how-to-programmatically-access-outlook-contacts.md)|  
-|İlgili kişi adı ve Soyadı tarafından arayın.|[Nasıl yapılır: program aracılığıyla belirli bir kişi arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md)|  
-|Yeni bir kişi oluşturun ve kişi bilgileri doldurun.|[Nasıl yapılır: Outlook Kişilerine program aracılığıyla giriş ekleme](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)|  
-|Belirli bir etki alanı, e-posta adresi içeren kişiler için arama yapın.|[Nasıl yapılır: program aracılığıyla bir e-posta adresi arama](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)|  
-|Belirtilen ada sahip bir kişi silin.|[Nasıl yapılır: Outlook kişilerini program aracılığıyla silme](../vsto/how-to-programmatically-delete-outlook-contacts.md)|  
+|Belirtilen dizenin Soyadı içeren tüm kişileri Al.|[Nasıl yapılır: Program Aracılığıyla Outlook Kişilerine Erişme](../vsto/how-to-programmatically-access-outlook-contacts.md)|  
+|İlgili kişi adı ve Soyadı tarafından arayın.|[Nasıl yapılır: Program Aracılığıyla Belirli bir Kişi Arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md)|  
+|Yeni bir kişi oluşturun ve kişi bilgileri doldurun.|[Nasıl yapılır: Outlook Kişilerine Program Aracılığıyla Giriş Ekleme](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)|  
+|Belirli bir etki alanı, e-posta adresi içeren kişiler için arama yapın.|[Nasıl yapılır: Kişilerde Program Aracılığıyla E-posta Adresi Arama](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)|  
+|Belirtilen ada sahip bir kişi silin.|[Nasıl yapılır: Outlook Kişilerini Program Aracılığıyla Silme](../vsto/how-to-programmatically-delete-outlook-contacts.md)|  
   
  Outlook görevleri ve Outlook nesne modeli hakkında daha fazla bilgi için bkz: [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md).  
   
@@ -43,6 +44,6 @@ ms.lasthandoff: 10/31/2017
  [Posta öğeleri ile çalışma](../vsto/working-with-mail-items.md)   
  [Klasörlerle çalışma](../vsto/working-with-folders.md)   
  [Takvim öğeleriyle çalışma](../vsto/working-with-calendar-items.md)   
- [Outlook çözümleri](../vsto/outlook-solutions.md)  
+ [Outlook Çözümleri](../vsto/outlook-solutions.md)  
   
   

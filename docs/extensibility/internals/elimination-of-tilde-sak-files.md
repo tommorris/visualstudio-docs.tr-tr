@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e487acefcb06c4fa0cd2070bfcf20bd065d500ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d72a42c89cc775b9312d301a052ee102d977728
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elimination-of-sak-files"></a>Ortadan kaldırılması ~ SAK dosyaları
 Kaynak Denetim eklentisi API 1.2 içindeki ~ SAK dosyaları değiştirilir yetenek bayrakları ve kaynak denetim eklentisi MSSCCPRJ dosyasını ve paylaşılan kullanıma destekleyip desteklemediğini algılamak yeni işlevler tarafından.  
@@ -54,4 +55,4 @@ Kaynak Denetim eklentisi API 1.2 içindeki ~ SAK dosyaları değiştirilir yeten
 >  Bu kayıt defteri anahtarı DWORD: 00000000 için ayarlarsanız, varolmayan olan anahtarına eşdeğerdir ve Visual Studio hala geçici dosyalar oluşturma dener. Ancak, kayıt defteri anahtarı DWORD: 00000001 için ayarlarsanız, geçici dosyaları oluşturmak Visual Studio denemez. Bunun yerine eklenti kaynak denetimi MSSCCPRJ desteklemiyor varsayar. SCC dosya ve paylaşılan kullanıma desteklemez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Denetim eklentisi API sürümü 1.2 yenilikler nelerdir?](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Kaynak Denetimi Eklentisi API Sürümü 1.2’deki Yenilikler](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

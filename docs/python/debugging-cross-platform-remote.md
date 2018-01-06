@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 4879b862d1e5f54c1a88e62d41df760ca0f27ad5
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 1f682cd15f96cf4ea5c12e52d3471580129279f6
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Uzaktan hata ayıklama Linux'ta Python kodu
 
@@ -35,9 +36,9 @@ Aşağıdaki öğeler bu kılavuzda izlemek için gereklidir:
 - Python Mac OSX ya da Linux gibi bir işletim sistemi çalıştıran bir uzak bilgisayar.
 - Bağlantı noktası 5678 (uzaktan hata ayıklama için varsayılan olan, bu bilgisayarın güvenlik duvarında açılan gelen).
 
-Kolayca [Linux sanal makineleri Azure üzerinde](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices) ve [Uzak Masaüstü kullanarak erişim](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop) Windows. Bir Ubuntu VM için uygun olduğundan Python varsayılan olarak yüklenir; Aksi takdirde, üzerinde listesine bakın [tercih ettiğiniz bir Python yorumlayıcısı yüklemek](python-environments.md#selecting-and-installing-python-interpreters) ek Python karşıdan yükleme konumları için.
+Kolayca [Linux sanal makineleri Azure üzerinde](/azure/virtual-machines/linux/creation-choices) ve [Uzak Masaüstü kullanarak erişim](/azure/virtual-machines/linux/use-remote-desktop) Windows. Bir Ubuntu VM için uygun olduğundan Python varsayılan olarak yüklenir; Aksi takdirde, üzerinde listesine bakın [tercih ettiğiniz bir Python yorumlayıcısı yüklemek](python-environments.md#selecting-and-installing-python-interpreters) ek Python karşıdan yükleme konumları için.
 
-Bir Azure VM için bir güvenlik duvarı kuralı oluşturma hakkında daha fazla bilgi için bkz: [Azure portal kullanarak Azure'da bir VM için bağlantı noktaları açma](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal).
+Bir Azure VM için bir güvenlik duvarı kuralı oluşturma hakkında daha fazla bilgi için bkz: [Azure portal kullanarak Azure'da bir VM için bağlantı noktaları açma](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 ## <a name="preparing-the-script-for-debugging"></a>Komut dosyası hata ayıklama için hazırlanıyor
 
@@ -131,14 +132,13 @@ Bu adımlarda, uzak işlemi durdurmak için basit bir kesme noktası ayarlayın.
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-
 ## <a name="securing-the-debugger-connection-with-ssl"></a>Hata ayıklayıcı bağlantı SSL ile güvenli hale getirme
 
 Varsayılan olarak, ptvsd uzaktan hata ayıklama sunucu bağlantısını yalnızca gizli tarafından korunmaktadır ve tüm veriler düz metin olarak geçirilir. Daha güvenli bir bağlantı için aşağıdaki gibi ayarladığınız SSL ptvsd destekler:
 
 1. Uzak bilgisayarda ayrı otomatik olarak imzalanan sertifika ve anahtar dosyalarını openssl kullanarak oluştur:
-    
-    ```bash
+
+    ```command
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
@@ -151,8 +151,8 @@ Varsayılan olarak, ptvsd uzaktan hata ayıklama sunucu bağlantısını yalnız
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
     ```
-    
-    Yerel bilgisayarda kod dosyasındaki aynı değişiklik yapabilir, ancak aslında bu kodu çalıştırmak değil çünkü kesinlikle gerekli değildir.    
+
+    Yerel bilgisayarda kod dosyasındaki aynı değişiklik yapabilir, ancak aslında bu kodu çalıştırmak değil çünkü kesinlikle gerekli değildir.
 
 1. Hata ayıklama için hazır hale getirme uzak bilgisayarda Python programını yeniden başlatın.
 

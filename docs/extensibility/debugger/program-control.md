@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cb69afe513010a7da4b4a85669bbc5f145f8dbc5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 244f6c2113aef3b3c3576288a0c403d702d8b17a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="program-control"></a>Program denetimi
 Visual Studio'da hata ayıklama, tüm aşağıdaki atlama ve yordamları etmeden program düzeyinde gerçekleşir:  
@@ -49,4 +50,4 @@ Visual Studio'da hata ayıklama, tüm aşağıdaki atlama ve yordamları etmeden
  Birden çok iş parçacıklı programlar için aynı zamanda uygulamalıdır [IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) yöntemi ve tüm yöntemleri [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yürütme denetimi ve durum değerlendirme](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+ [Yürütme Denetimi ve Durum Değerlendirmesi](../../extensibility/debugger/execution-control-and-state-evaluation.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 9b240bcdcc576e7ace85e766b54e5cd70e4e5503
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 02e6a4c0b69bf9e9d6170175b4324ccb226854e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Nasıl yapılır: ClickOnce Dağıtım API'sini Kullanarak Program Aracılığıyla Uygulama Güncelleştirmelerini Denetleme
 ClickOnce dağıtıldıktan sonra bir uygulamayı güncelleştirmek için iki yöntem sunar. Listedeki ilk yöntem, güncelleştirmeleri belirli aralıklarla otomatik olarak denetlemek için ClickOnce dağıtımı yapılandırabilirsiniz. İkinci yöntemde kullanan kodu yazabilirsiniz <xref:System.Deployment.Application.ApplicationDeployment> güncelleştirmeleri denetlemek için sınıf dayalı bir kullanıcı isteği gibi bir olay.  
@@ -65,4 +66,4 @@ ClickOnce dağıtıldıktan sonra bir uygulamayı güncelleştirmek için iki y�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: dağıtım güncelleştirmeleri için alternatif bir konum belirtin](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
  [ClickOnce güncelleştirme stratejisini seçme](../deployment/choosing-a-clickonce-update-strategy.md)   
- [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)
+ [ClickOnce Uygulamalarını Yayımlama](../deployment/publishing-clickonce-applications.md)

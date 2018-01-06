@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77230702bf8dc582e176e4dd0f17eab3385966c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d97695cae08352ea213ba02008ab99bef7f61c47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Nasıl yapılır: Derleyici Uyarılarını Gizleme
 Derleyici uyarıları içerecek şekilde istemediğiniz bir veya daha fazla tür belirterek bir derleme günlüğü declutter. Örneğin, bazı gözden geçirmek için bu tekniği ancak tüm yapı günlük ayrıntı Normal, ayrıntılı veya tanılama olarak ayarlandığında, otomatik olarak oluşturulan bilgileri kullanabilirsiniz. Ayrıntı hakkında daha fazla bilgi için bkz: [nasıl yapılır: görünümü, kaydetme ve yapı günlük dosyalarını Yapılandır](../ide/how-to-view-save-and-configure-build-log-files.md).  
@@ -109,4 +110,4 @@ Derleyici uyarıları içerecek şekilde istemediğiniz bir veya daha fazla tür
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: uygulama oluşturma](../ide/walkthrough-building-an-application.md)   
  [Nasıl yapılır: görüntüleme, kaydetme ve derleme günlüğü dosyalarını yapılandırma](../ide/how-to-view-save-and-configure-build-log-files.md)   
- [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)
+ [Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)

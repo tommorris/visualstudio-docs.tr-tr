@@ -30,11 +30,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0318f5a3cb1cd19c658030d64c4f6ec8bcbf0a9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 11be1eb546902e8e37843383fe499274f819883f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında C++ içindeki Biçim belirticileri
 İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **izleme** penceresi biçim belirticilerini kullanma.  
@@ -76,7 +77,7 @@ int main() {
 |**SB**|const char * dizesini (tırnak işareti)|\<Konum > "hello world"|Merhaba Dünya|  
 |S8|UTF-8 dize|\<Konum > "UTF-8 Kahve fincanı â˜• olduğu"|"UTF-8 Kahve fincanı ☕ olduğu"|
 |**s8b**|UTF-8 dize (tırnak işareti)|\<Konum > "hello world"|Merhaba Dünya|  
-|Su|Unicode (UTF-16 kodlamasını) dizesi|\<Konum > L "hello world"|L "hello world"<br /><br /> "hello world" u|  
+|Su|Unicode (UTF-16 kodlamasını) dizesi|\<Konum > L "hello world"|L "hello world"<br /><br /> U "hello world"|  
 |Sub|Unicode (UTF-16 kodlamasını) dizesi (tırnak işareti)|\<Konum > L "hello world"|Merhaba Dünya|  
 |bstr|BSTR dizesi|\<Konum > L "hello world"|L "hello world"|  
 |Zarf|Ortam öbeği (çift null sonlandırılmış dize)|\<Konum > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
@@ -139,7 +140,7 @@ int main() {
 |**MQ**|2 quadwords|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2-bayt karakter (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a>Birlikte çalışma'C + ile hata ayıklama içindeki diziler olarak işaretçileri boyutu belirleyici +/ CLIt  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a>Birlikte çalışma'C + ile hata ayıklama içindeki diziler olarak işaretçileri boyutu belirleyici +/ CLI  
  Bir dizi olarak görüntülemek istediğiniz bir nesne için bir işaretçi varsa, dizi öğelerinin sayısını belirlemek için bir tamsayı kullanabilirsiniz:  
   
 |Belirleyici|Biçimi|İfade|Görüntülenen değeri|  

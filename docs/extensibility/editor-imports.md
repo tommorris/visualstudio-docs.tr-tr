@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81e0a131ef35202581ffb78a75a6b48239a7d81f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 937bf977090699f5d3bf52414f57f6066dd55a17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editor-imports"></a>Düzenleyici içeri aktarmalar
 Düzenleyici Hizmetleri, oluşturucuları ve farklı türde erişim çekirdek düzenleyiciye uzantınızı sağlayan aracıların sayısı içeri aktarabilirsiniz. Örneğin, alabileceğiniz <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> sizinle sağlamak için bir <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> verilen bir içerik türü için. (Bu Gezgin aramaları farklı türde bir metin arabelleği gerçekleştirmek izin verir.)  
@@ -44,19 +45,19 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  İçeri aktarmalar kullanarak daha fazla örnekler için aşağıdaki izlenecek bakın:  
   
- [İzlenecek yol: bir kenar karakter oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [İzlenecek Yol: Dış Boşluk Karakteri Oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [İzlenecek yol: metin görünümü özelleştirme](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [İzlenecek Yol: Metin Görünümünü Özelleştirme](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [İzlenecek yol: Metni vurgulama](../extensibility/walkthrough-highlighting-text.md)  
+ [İzlenecek Yol: Metni Vurgulama](../extensibility/walkthrough-highlighting-text.md)  
   
- [İzlenecek yol: Quıckınfo araç ipuçlarını görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [İzlenecek Yol: HızlıBilgi Araç İpuçlarını Görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [İzlenecek yol: İmza Yardım görüntüleme](../extensibility/walkthrough-displaying-signature-help.md)  
+ [İzlenecek Yol: İmza Yardımını Görüntüleme](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [İzlenecek yol: Deyim tamamlama görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [İzlenecek Yol: Deyim Tamamlamayı Görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [İzlenecek yol: ampul önerileri görüntüleme](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
+ [İzlenecek Yol: Ampul Önerilerini Görüntüleme](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
   
 ## <a name="importing-the-service-provider"></a>Hizmet sağlayıcısı alınıyor  
  Ayrıca içeri aktarabilirsiniz bir <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (Microsoft.VisualStudio.Shell.Immutable.10.0 derlemesinde) Visual Studio hizmetlerine erişmek için aynı şekilde:  
@@ -123,4 +124,4 @@ internal SVsServiceProvider ServiceProvider = null;
 |<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|Bir <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md)
+ [Dil Hizmeti ve Düzenleyici Uzantı Noktaları](../extensibility/language-service-and-editor-extension-points.md)

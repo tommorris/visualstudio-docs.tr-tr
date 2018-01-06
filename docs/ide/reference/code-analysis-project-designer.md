@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3f993e47ea748d8caf90aee0a2ee99cbf78dbede
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8e1fc85dbd4fa5f4a8fe757b279826a81705dfd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-project-designer"></a>Kod Çözümlemesi, Proje Tasarımcısı
 Kodunuz üzerinde çalıştırmak için seçebilirsiniz kod analizi aracı içerir. Tasarım Kuralları ve programlama ihlalleri İleri Microsoft .NET Framework tasarım yönergeleri ayarlama gibi aracı, derlemeler hakkında bilgi bildirir.  
@@ -65,4 +66,4 @@ Kodunuz üzerinde çalıştırmak için seçebilirsiniz kod analizi aracı içer
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönetilen kod uyarıları için Kod Analizi](../../code-quality/code-analysis-for-managed-code-warnings.md)   
  [Yönetilen kod genel bakış için Kod Analizi](../../code-quality/code-analysis-for-managed-code-overview.md)   
- [İzlenecek yol: Yönetilen kodu analiz etme kod kusurları için](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+ [İzlenecek yol: Kod Kusurları için Yönetilen Kodu Analiz Etme](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

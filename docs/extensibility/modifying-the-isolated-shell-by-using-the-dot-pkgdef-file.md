@@ -14,11 +14,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4716a2c69d64586131c913cde8e3e2d780f9aa69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a0e654e603abe0e4f1546e5b06c2b3644af2067e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Yalıtılmış Kabuk kullanarak değiştirme. Pkgdef dosyası
 .Pkgdef dosya yalıtılmış Kabuk uygulama özelleştirmek için kullanabileceğiniz ayarlar destekler. Bir uygulamanın bir bilgisayarda yüklendiğinde ve uygulama başladığında, Visual Studio Kabuğu tarafından başvurulan oluşturulan değerleri belirtir. Ayarları, ilgili kayıt defteri anahtarlarının dayanarak dosyasında düzenlenir.  

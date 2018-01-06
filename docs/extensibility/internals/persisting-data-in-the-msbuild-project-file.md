@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d41a4776362f450d5d55552b049c3bba1bc781b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b2bb73602a6cba07fe9cbde4ddae4219f5a2b350
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild proje dosyası içinde kalıcı veri
 Proje alt alt özgü veriler daha sonra kullanmak için proje dosyasına kalıcı olması gerekebilir. Proje alt proje dosyası Kalıcılık aşağıdaki gereksinimleri karşılaması için kullanır:  
@@ -79,4 +80,4 @@ Proje alt alt özgü veriler daha sonra kullanmak için proje dosyasına kalıc�
     ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje alt türleri](../../extensibility/internals/project-subtypes.md)
+ [Proje Alt Türleri](../../extensibility/internals/project-subtypes.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64f4d7f7e4a71c1d304bfa5045175fd613bcb539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Metin işaretçileri eski API ile kullanma
 Bir metin işaretçisi metin, görüntü etkileyebilecek arabelleği kayan bir dizi ve metin bir bölgenin davranışını ' dir. Kesme noktaları, yer işaretleri, dalgalı alt çizgiler ve salt okunur bölgeler işaretçileri içerir. Metin işaretçileri sözdizimi renklendirmesi gelen temelde farklıdır. Sözdizimi renklendirmesi metin bölgesiyle ilişkilendirilen dili sözdizimi iletişim kurmak için hızlı bir yoludur. Sözdizimi renklendirmesi hızı önemli olduğu durumlarda Windows ekran şekilde yeniden boyar olduğunda genellikle istendi. Sözdizimi renklendirmesi yalnızca metin rengini değiştirir. Metin işaretçileri diğer birçok metin özelliklerini değiştirebilirsiniz. Metin işaretçileri "float" ve özel davranışı uygulamak ve renklendirme.  

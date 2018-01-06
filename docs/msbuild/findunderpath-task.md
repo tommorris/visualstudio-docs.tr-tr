@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: fcb43188414df57bd3c41286ca7e3d3caa8718d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8bced168c2a3264ffe08125a46735e451131ad79
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="findunderpath-task"></a>FindUnderPath Görevi
 Belirtilen öğe koleksiyonunda hangi öğelerin veya belirtilen klasör altındaki yolları olduğunu belirler.  
@@ -77,4 +78,4 @@ Belirtilen öğe koleksiyonunda hangi öğelerin veya belirtilen klasör altınd
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
  [Görevler](../msbuild/msbuild-tasks.md)   
- [MSBuild kavramları](../msbuild/msbuild-concepts.md)
+ [MSBuild Kavramları](../msbuild/msbuild-concepts.md)

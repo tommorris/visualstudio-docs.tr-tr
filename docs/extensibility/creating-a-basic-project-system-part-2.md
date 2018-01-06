@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cef54d281555f49806ed59ad1627460a7752954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9b3f46a0e4fb87e6064fb3e975cd6b7313270c13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Temel Proje sistem oluşturma, bölüm 2
 Bu serideki ilk izlenecek [temel bir proje sistem bölümü 1 oluşturma](../extensibility/creating-a-basic-project-system-part-1.md), temel proje sistem oluşturulacağını gösterir. Bu kılavuz, Visual Studio şablonu, bir özellik sayfası ve diğer özellikleri ekleyerek temel proje sistemde oluşturur. Bu yüklemeye başlamadan önce ilk izlenecek tamamlamanız gerekir.  

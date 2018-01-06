@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f19ec03dda8666eea39b50af40a44ab2c68694ce
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9a3339b4bd6724fec782857a74a6b51463fe8028
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Nasıl yapılır: Yerelleştirilmiş Önyükleyici Paketi Oluşturma
 Önyükleyici paketi oluşturduktan sonra her yerel ayar için iki dosya daha oluşturarak yerelleştirilmiş önyükleyici paketi sürümleri oluşturabilirsiniz: (örneğin, bir eula.rtf) dosyası ve bir paket bildirimi (package.xml) yazılım lisans koşulları.  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/27/2017
     |İspanyolca|ES|  
     |Fransızca|FR|  
     |İtalyanca|Bunu|  
-    |Korece|Ko|  
+    |Kore Dili|Ko|  
     |Japonca|ja|  
     |Lehçe|PL|  
     |Portekizce (Brezilya)|pt-BR|  
@@ -96,4 +97,4 @@ ms.lasthandoff: 10/27/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Önyükleyici paketleri oluşturma](../deployment/creating-bootstrapper-packages.md)   
  [Uygulama dağıtımının önkoşulları](../deployment/application-deployment-prerequisites.md)   
- [Nasıl yapılır: Paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md)
+ [Nasıl yapılır: Paket Bildirimi Oluşturma](../deployment/how-to-create-a-package-manifest.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30ac9c68104423c559ad3bfa8712426b67a4c734
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 9cf9517775b5729507252a259485ad8d6cc276ff
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET Hata Ayıklama: Sistem Gereksinimleri
 Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] senaryoları hata ayıklama:  
@@ -43,7 +44,7 @@ Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vsteca
  Hata ayıklama için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (bir uygulama havuzu tarafından barındırılan) çalışan işlemi, bu işlemde hata ayıklamak için izni olmalıdır. Varsayılan olarak, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] IIS 6.0 öncesinde uygulamaları çalıştırmak olarak **ASPNET** kullanıcı. IIS 6.0 ve IIS 7. 0'da, **ağ hizmeti** varsayılan hesaptır. Çalışan işlem olarak çalışıyorsa, **ASPNET**, veya as **ağ hizmeti**, hata ayıklamak için yönetici ayrıcalıklarına sahip olmalıdır.
 
  > [!IMPORTANT]
- > Windows Server 2008 R2 ile başlayarak, kullanılmasını öneririz [ApplicationPoolIdentity](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities) her bir uygulama havuzu kimliği olarak.
+ > Windows Server 2008 R2 ile başlayarak, kullanılmasını öneririz [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) her bir uygulama havuzu kimliği olarak.
   
  Adını [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi senaryo hata ayıklama ve IIS sürümü göre değişir. Daha fazla bilgi için bkz: [nasıl yapılır: ASP.NET işleminin adını bulma](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   

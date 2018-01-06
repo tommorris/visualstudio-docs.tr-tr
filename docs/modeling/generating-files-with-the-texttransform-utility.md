@@ -14,11 +14,12 @@ caps.latest.revision: "41"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1d168695aca3626fa1ba351aef56faf001c5b6ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ebd8b73cf28452998f00dbf863e6637f6c9188e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>TextTransform Yardımcı Programı ile Dosya Oluşturma
 TextTransform.exe metin şablonu dönüştürme için kullanabileceğiniz bir komut satırı aracıdır. TextTransform.exe çağırdığınızda, bağımsız değişken olarak metin şablonu dosyasının adını belirtin. TextTransform.exe metin dönüştürme altyapısı çağırır ve metin şablonu işler. TextTransform.exe genellikle komut dosyaları tarafından çağrılır. Metin dönüştürmeyi Visual Studio veya yapı işlemi gerçekleştirebilir ancak bu genelde gerekli olmadığından.  
@@ -69,6 +70,6 @@ TextTransform [<options>] <templateName>
   
 |Görev|Konu|  
 |----------|-----------|  
-|Dosyaları oluşturmak bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözümü.|[T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
-|Kendi veri kaynaklarını dönüştürmek için yönerge işlemcileri yazma.|[T4 metin dönüştürmeyi özelleştirme](../modeling/customizing-t4-text-transformation.md)|  
-|Metin şablonları kendi uygulamasından çağrılacak izin veren bir metin şablon konak yazma.|[Bir özel konak kullanarak metin şablonlarını işleme](../modeling/processing-text-templates-by-using-a-custom-host.md)|
+|Dosyaları oluşturmak bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözümü.|[T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
+|Kendi veri kaynaklarını dönüştürmek için yönerge işlemcileri yazma.|[T4 Metin Dönüştürmeyi Özelleştirme](../modeling/customizing-t4-text-transformation.md)|  
+|Metin şablonları kendi uygulamasından çağrılacak izin veren bir metin şablon konak yazma.|[Bir Özel Konak kullanarak Metin Şablonlarını İşleme](../modeling/processing-text-templates-by-using-a-custom-host.md)|

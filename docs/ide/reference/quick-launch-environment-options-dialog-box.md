@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7cfa9fc89ad2d4776a7aa0b5071db6bd5daddd9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f71cca51a27c8ed9d6467d99425d4d3b721d195
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Hızlı Başlatma, Ortam, Seçenekler İletişim Kutusu
 Kullanabileceğiniz **hızlı başlatma** hızlı arama ve IDE varlıklar seçenekleri, şablonlar, menüler gibi eylemleri yürütün. Kullanamazsınız **hızlı başlatma** kod ve simgeleri aramak için. **Hızlı başlatma** arama kutusunu menü çubuğunu sağ üst köşesinde bulunan ve Ctrl + Q anahtarları seçerek erişilebilir olduğunu. Yalnızca arama dizenizle kutusuna girin. İçeren dizeleri aramak için @, Kullan ' @@'.  
@@ -51,4 +52,4 @@ Kullanabileceğiniz **hızlı başlatma** hızlı arama ve IDE varlıklar seçen
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel kullanıcı arabirimi öğeleri (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md)   
- [Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)
+ [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)

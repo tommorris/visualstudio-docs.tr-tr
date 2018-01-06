@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a5469b3e6f09df75561cf85ba56c96721494aabf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 789eafd7bc7137026bb6c144615f1234f7288f29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Erişilebilir Uygulamalar Tasarlama için Kaynaklar
 Erişilebilir Windows uygulamaları ve Web siteleri geliştirmek için ipuçları ve örnekler yanı sıra erişilebilir tasarımı destekleyen teknolojileri hakkında bilgi bulmak için aşağıdaki bağlantıları kullanın. Erişilebilirlik hakkında genel bilgiler bulunabilir adresindeki çevrimiçi [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  
@@ -57,4 +58,4 @@ Erişilebilir Windows uygulamaları ve Web siteleri geliştirmek için ipuçlar�
 -   **World Wide Web Konsorsiyumu (W3C) erişilebilirlik girişimi Web** bu Web sitesi erişilebilir Web sitesi geliştirme için yönergeler ve teknikler sağlar. Daha fazla bilgi için bkz: [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'nun erişilebilirlik özellikleri](../../ide/reference/accessibility-features-of-visual-studio.md)
+ [Visual Studio'nun Erişilebilirlik Özellikleri](../../ide/reference/accessibility-features-of-visual-studio.md)

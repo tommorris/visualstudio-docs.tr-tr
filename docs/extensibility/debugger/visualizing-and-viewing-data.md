@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e493cdbccf12019584bb08b82503d6a8c6ebeea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 14e5b641dc5bc51ac066f32332f3fdb2b01d1810
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visualizing-and-viewing-data"></a>Görselleştirme ve verileri görüntüleme
 Görselleştiriciler ve özel görüntüleyiciler mevcut verileri hızlı bir şekilde bir geliştirici anlamlı bir şekilde yazın. İfade değerlendiricisi (EE) üçüncü taraf türü görselleştiriciler desteklemek yanı sıra kendi özel görüntüleyiciler sağlayın.  
@@ -51,4 +52,4 @@ Görselleştiriciler ve özel görüntüleyiciler mevcut verileri hızlı bir ş
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama görevleri](../../extensibility/debugger/debugging-tasks.md)   
- [Türü Görselleştirici ve özel Görüntüleyicisi](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+ [Tür Görselleştiricisi ve Özel Görüntüleyici](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9be05b63169d155f7e1662112ca119422ddbc1a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ca5caa822108d5a6417e69f827e1ba754b0d105
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl Yapılır: Uygulama ve Dağıtım Bildirimlerini İmzalama
 ClickOnce dağıtımı kullanarak bir uygulama yayımlamak isterseniz, uygulama ve dağıtım bildirimlerini ortak/özel anahtar çifti ile oturum açmanız gerekir ve Authenticode teknolojisi kullanılarak imzalanmış. Windows sertifika deposunda veya bir anahtar dosyası bir sertifika kullanarak bildirimleri imzalayabilirsiniz.  
@@ -112,4 +113,4 @@ ClickOnce dağıtımı kullanarak bir uygulama yayımlamak isterseniz, uygulama 
  [Tanımlayıcı adlı derlemeler](/dotnet/framework/app-domains/strong-named-assemblies)   
  [Nasıl yapılır: bir genel-özel anahtar çifti oluşturma](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)   
  [İmzalama sayfası, Proje Tasarımcısı](../ide/reference/signing-page-project-designer.md)   
- [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)
+ [ClickOnce Güvenliği ve Dağıtımı](../deployment/clickonce-security-and-deployment.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0b2785e69bbfd6dff17f73b9840b88ad48454e0b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a3c152640963da1414c34770fff68645e33098ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>İzlenecek Yol: SharePoint Uygulaması için Profil Oluşturma
   Bu kılavuz, profil oluşturma araçları Visual Studio'da SharePoint uygulaması performansını iyileştirmek için nasıl kullanılacağını gösterir. Örnek Uygulama özellik olay alıcısı performansını düşürür bir boşta döngü içeren bir SharePoint özelliğini olay alıcıdır. Visual Studio profil oluşturucu bulun ve proje en pahalı (yavaş gerçekleştirerek) parçası olarak da bilinen ortadan kaldırmanıza olanak tanır *etkin yolunuzda*.  

@@ -53,11 +53,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 747e17f876972fb44f686fe90ad4e97fd035279e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 55c4678954a274b99c0bdeadb250ec3c602d3b20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-general"></a>Seçenekler, Metin Düzenleyici, Genel
 Bu iletişim kutusu için genel ayarları değiştirmenize olanak sağlayan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kod ve metin düzenleyici. Bu iletişim kutusunu görüntülemek için tıklatın **seçenekleri** üzerinde **Araçları** menüsünde genişletin **metin düzenleyici** klasörünü ve ardından **genel**.  
@@ -104,4 +105,4 @@ Bu iletişim kutusu için genel ayarları değiştirmenize olanak sağlayan [!IN
  [Seçenekler, metin düzenleyici, dosya uzantısı](../../ide/reference/options-text-editor-file-extension.md)   
  [Klavye kısayollarını tanımlama ve özelleştirme](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
  [Düzenleyiciyi özelleştirme](../../ide/customizing-the-editor.md)   
- [IntelliSense kullanma](../../ide/using-intellisense.md)
+ [IntelliSense Kullanma](../../ide/using-intellisense.md)

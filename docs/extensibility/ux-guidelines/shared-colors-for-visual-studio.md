@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ccc530a741aaefd7e1faf1bd5f8974e27d9c7fb5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio için paylaşılan renkleri
 Ortak Visual Studio Kabuğu öğeler kullanan kullanıcı Arabirimi tasarladığınız ya da benzer özellikleri ile tutarlı olacak şekilde arabirimi Öğenizde istediğiniz varolan belirteci adları paket tanımlama dosyaları seçin ve renkleri atamak için kullanın. Bu, kullanıcı Arabirimi ile genel Visual Studio ortamında tutarlı kalmasını ve Temalar eklenen veya güncelleştirilen zaman onu otomatik olarak güncelleştirir sağlar.  

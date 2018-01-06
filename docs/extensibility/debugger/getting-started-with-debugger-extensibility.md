@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1419f4e45aefed59aa36b249568a53a47ad3c459
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 964b6bcc18e74174aa59e7a1bb4441e24d3918d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Hata ayıklayıcı genişletilebilirlik ile çalışmaya başlama
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Oluşturmak ve programların içinden hatalarını ayıklamak için kullanılan hata ayıklayıcı bileşenleri özelleştirmek için gereken bilgileri sağlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ortamı.  
@@ -38,17 +39,17 @@ ms.lasthandoff: 10/31/2017
 -   ATL COM  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Hata ayıklayıcı genişletmek için yol haritası](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
+ [Hata Ayıklayıcıyı Genişletmek için Yol Haritası](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
  Uygulama, derleyici ve çıktısını bağlı olarak ürününüzün hata ayıklama işlemi açıklanmaktadır.  
   
- [Hata ayıklayıcı bileşenleri](../../extensibility/debugger/debugger-components.md)  
+ [Hata Ayıklayıcı Bileşenleri](../../extensibility/debugger/debugger-components.md)  
  Genel bir bakış sağlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hata ayıklama altyapısı (DE), ifade değerlendiricisi (EE) ve simge işleyici (SH) dahil bileşenleri hata ayıklama.  
   
- [Hata ayıklayıcı kavramları](../../extensibility/debugger/debugger-concepts.md)  
+ [Hata Ayıklayıcı Kavramları](../../extensibility/debugger/debugger-concepts.md)  
  Ana hata ayıklama mimari kavramlarını açıklar.  
   
- [Hata ayıklayıcı bağlamları](../../extensibility/debugger/debugger-contexts.md)  
+ [Hata Ayıklayıcı Bağlamları](../../extensibility/debugger/debugger-contexts.md)  
  Nasıl hata ayıklama altyapısı (DE) aynı anda kod, belgeler ve ifade değerlendirme bağlamı içinde çalıştığı açıklanmaktadır. , Her üç bağlamları, konum, konum veya değerlendirme için ilgili açıklar.  
   
- [Hata ayıklama görevleri](../../extensibility/debugger/debugging-tasks.md)  
+ [Hata Ayıklama Görevleri](../../extensibility/debugger/debugging-tasks.md)  
  Bir program başlatma ve ifadeleri değerlendirme gibi çeşitli hata ayıklama görevlere bağlantılar içerir.

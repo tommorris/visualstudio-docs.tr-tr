@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f04251ea8141d07a52499beae46b2881814eec9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 17a629c2d93bb5e91fb301d4da9dca825e5b8917
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-parameters"></a>Özel Parametreler
 Sihirbaz başlatıldıktan sonra özel parametreler sihirbaz işlemi denetler. İlgili .vsz dosyası tümleşik geliştirme ortamı (IDE) paketlenir ve Sihirbazı başlattığınızda sihirbaz dize dizisi geçirilen kullanıcı tarafından tanımlanan parametre dizisi sağlar. Sihirbaz dize dizisi ayrıştırır ve Sihirbazı'nın gerçek işlemi denetlemek için bilgileri kullanır. Bu şekilde, bir sihirbaz işlevselliği .vsz dosyasının içeriğini bağlı olarak özelleştirebilirsiniz.  
@@ -48,4 +49,4 @@ Param="PROJECT_TYPE = CSPROJ"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
  [Bağlam parametreleri](../../extensibility/internals/context-parameters.md)   
  [Sihirbazlar](../../extensibility/internals/wizards.md)   
- [Sihirbazı'nı (. Vsz) dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Sihirbaz (.Vsz) Dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)

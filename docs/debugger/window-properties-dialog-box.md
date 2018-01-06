@@ -6,18 +6,19 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Window Properties dialog box
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2fc28d8fed522174ae706336bbba63be5c179cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c6a2608490bcecf7c4eb61b1541eec355cd41c3
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="window-properties-dialog-box"></a>Pencere Özellikleri İletişim Kutusu
 Belirli bir pencere hakkında daha fazla bilgi için bu iletişim kutusunu kullanın. Bu iletişim kutusunu görüntülemek için odağı taşımak [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin, sonra seçin **özellikleri** gelen **Görünüm** menüsü.  
@@ -42,7 +43,7 @@ Belirli bir pencere hakkında daha fazla bilgi için bu iletişim kutusunu kulla
  [Pencere arama iletişim kutusu](../debugger/window-search-dialog-box.md)  
  Windows görünümünde belirli bir pencere için düğüm bulmak için kullanılır.  
   
- [Spy ++ başvurusu](../debugger/spy-increment-reference.md)  
+ [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
  Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümleri içerir.  
   
  [Bulucu Aracı kullanma](../debugger/how-to-use-the-finder-tool.md)  
@@ -51,11 +52,11 @@ Belirli bir pencere hakkında daha fazla bilgi için bu iletişim kutusunu kulla
  [Pencereler görünümünde pencere arama](../debugger/how-to-search-for-a-window-in-windows-view.md)  
  Windows görünümünde belirli bir pencere Bul açıklanmaktadır.  
   
- [Pencereler görünümü](../debugger/windows-view.md)  
+ [Pencereler Görünümü](../debugger/windows-view.md)  
  Kullanılabilir windows ve denetimleri ağaç görünümünü görüntüler.  
   
- [Spy ++ görünümleri](../debugger/spy-increment-views.md)  
+ [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
  Windows, iletileri, işlemleri ve iş parçacıklarının Spy ++ ağaç görünümler açıklanmaktadır.  
   
- [Spy ++ kullanma](../debugger/using-spy-increment.md)  
+ [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.

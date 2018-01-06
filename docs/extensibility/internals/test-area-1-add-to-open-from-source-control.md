@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 959387176e079d76263a2a5c499b5a0723fd7ad7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1891e0242463f3673d22d22e0f9a2d000b01ae60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Test alanı 1: Kaynak denetiminden Aç / ekleyin
 Bu kaynak denetimi eklenti test çözümleri veya kaynak denetimindeki projeleri yerleştirme ve kaynak denetiminden alma alanı kapsar.  
@@ -87,4 +88,4 @@ Bu kaynak denetimi eklenti test çözümleri veya kaynak denetimindeki projeleri
 |Çözüme ekleyin — kaynak denetimine seçime göre eklenen çözümü|1.  Bir çözüm sahip bir proje oluşturun.<br />2.  Yalnızca çözüm için kaynak denetimi seçimi olarak ekleyin. Bu adım başarılı olursa, sonraki adıma geçin.<br />3.  Çözümü kapatın.<br />4.  Yeni bir çözüm oluşturun.<br />5.  Kaynak denetiminden önceden denetimli çözüme ekleyin (**dosya**, **kaynak denetimi**, **kaynak denetiminden Proje Ekle**).|`Result from Step 2:`<br /><br /> Proje kaynak denetimi altında değil.<br /><br /> `Result from Step 5:`<br /><br /> İlk çözüm çözüm öğeleri olsaydı değil görünmesi için bunlar kaynak denetiminden eklenemez.<br /><br /> İlk çözüm projeden kullanılamaz olarak görünür.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak denetimi eklentiler için test Kılavuzu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Kaynak Denetimi Eklentileri için Test Kılavuzu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

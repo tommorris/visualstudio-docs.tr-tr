@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d72d4807f61adcab1321b6471c2bea31f048a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e936404d285fe5845ae364c3b5960e2fb335d2d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-localize-aspx-markup"></a>Nasıl yapılır: ASPX İşaretlemesini Yerelleştirme
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)](.aspx) sayfaları genellikle sabit kodlanmış dize değerlerini kullanın. Bu dizeleri yerelleştirme için bunları yerelleştirilen kaynaklar başvuru ifadelerle değiştirin.  
@@ -84,6 +85,6 @@ ms.lasthandoff: 10/31/2017
  [SharePoint Çözümlerini Yerelleştirme](../sharepoint/localizing-sharepoint-solutions.md)   
  [Nasıl yapılır: bir özelliği yerelleştirme](../sharepoint/how-to-localize-a-feature.md)   
  [Nasıl yapılır: kaynak dosyası ekleme](../sharepoint/how-to-add-a-resource-file.md)   
- [Nasıl yapılır: kod yerelleştirme](../sharepoint/how-to-localize-code.md)  
+ [Nasıl yapılır: Kod Yerelleştirme](../sharepoint/how-to-localize-code.md)  
   
   

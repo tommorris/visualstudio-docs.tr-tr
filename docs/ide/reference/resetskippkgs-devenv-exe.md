@@ -16,11 +16,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1d9e639379ca16e6544cac1368cd4012c981bd24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3f84b4a8f73d378629edcf862f1aa53aa478fa1a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resetskippkgs-devenvexe"></a>/ResetSkipPkgs (devenv.exe)
 Yükleme için VSPackages sorun VSPackages yüklenmesini önlemek amacıyla isteyen kullanıcılar tarafından eklenen atlamak için tüm seçenekleri temizler ve ardından başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -42,4 +43,4 @@ Devenv.exe /ResetSkipPkgs
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)
+ [Devenv Komut Satırı Anahtarları](../../ide/reference/devenv-command-line-switches.md)

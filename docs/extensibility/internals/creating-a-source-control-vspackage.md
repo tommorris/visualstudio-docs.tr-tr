@@ -15,11 +15,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c3d414f1fcf6a7f4cd4155eb04e3696fb39740a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3fac86583126e94bcfaea65a82c7cf923275769
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-source-control-vspackage"></a>Kaynak denetimi VSPackage oluşturma
 Bu belge mimarisine genel bakış ile tümleştirilmiş bir kaynak denetimi paketin bağlantılarını içerir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], uygulanacak arabirimleri ve tüketilmesi hizmetler tarafından tanımlanan API ve basit bir kaynağı gösteren bir örnek paket uygulama denetler.  
@@ -30,7 +31,7 @@ Bu belge mimarisine genel bakış ile tümleştirilmiş bir kaynak denetimi pake
  [Başlarken](../../extensibility/internals/getting-started-with-source-control-vspackages.md)  
  Kaynak denetimi uygulamak üzere eklenti kaynak denetimi için daha gelişmiş bir alternatif kaynak denetimi paketi anlatılmaktadır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- [Mimarisi](../../extensibility/internals/source-control-vspackage-architecture.md)  
+ [Mimari](../../extensibility/internals/source-control-vspackage-architecture.md)  
  Bir diyagramını sunar ve kaynak denetimi paketi bileşenlerinin açıklanmaktadır.  
   
  [Özellikleri](../../extensibility/internals/source-control-vspackage-features.md)  
@@ -40,8 +41,8 @@ Bu belge mimarisine genel bakış ile tümleştirilmiş bir kaynak denetimi pake
  Kaynak denetimi paketi için derin tümleştirme uygulamalıdır VSPackage yapısını tanımlar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Kaynak Denetimi Eklentisi oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md)  
+ [Kaynak Denetimi Eklentisi Oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md)  
  Kaynak Denetim işlevleri sağlayan bir kaynak denetimi eklenti oluşturmak nasıl ele [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kaynak denetimi kullanıcı arabirimini (UI).  
   
- [Kaynak denetimi](../../extensibility/internals/source-control.md)  
+ [Kaynak Denetimi](../../extensibility/internals/source-control.md)  
  Kaynak denetimi tümleşik bir özellik olarak uygulamak için seçenekleri açıklar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

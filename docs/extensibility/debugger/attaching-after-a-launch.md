@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0a06a9b4be6cb20339c8c89f8594f290c1f6a46a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 890023b8336f130cf3b8cfcfe640da46af9cf0d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attaching-after-a-launch"></a>Başlatma sonra ekleme
 Bir program başlatıldıktan sonra hata ayıklama oturumu konusu program için hata ayıklama altyapısı (DE) eklemek hazırdır.  
@@ -56,4 +57,4 @@ Bir program başlatıldıktan sonra hata ayıklama oturumu konusu program için 
  [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   
  [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
- [Ekleme](../../extensibility/debugger/reference/idebugengine2-attach.md)
+ [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)

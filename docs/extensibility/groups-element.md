@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0352d2c2bee683c602dbe0449a9c25bb6ff259a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c3aa69594dd644e5b4f1c5d74d313b72cf2f505
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="groups-element"></a>Öğe grupları
 Bir VSPackage komut gruplarını tanımlamak girdiler içeriyor.  
@@ -46,14 +47,14 @@ Bir VSPackage komut gruplarını tanımlamak girdiler içeriyor.
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Grup öğesi](../extensibility/group-element.md)|Tek bir komut grubunu temsil eder.|  
-|[Öğe grupları](../extensibility/groups-element.md)|Bir VSPackage komut gruplarını tanımlamak girdiler içeriyor.|  
+|[Group Öğesi](../extensibility/group-element.md)|Tek bir komut grubunu temsil eder.|  
+|[Groups Öğesi](../extensibility/groups-element.md)|Bir VSPackage komut gruplarını tanımlamak girdiler içeriyor.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Komutları öğesi](../extensibility/commands-element.md)|VSPackage araç çubuğundaki komutları koleksiyonunu temsil eder.|  
+|[Commands Öğesi](../extensibility/commands-element.md)|VSPackage araç çubuğundaki komutları koleksiyonunu temsil eder.|  
   
 ## <a name="example"></a>Örnek  
   
@@ -67,4 +68,4 @@ Bir VSPackage komut gruplarını tanımlamak girdiler içeriyor.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Komutları, menüleri ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Komutlar, Menüler ve Araç Çubukları](../extensibility/internals/commands-menus-and-toolbars.md)

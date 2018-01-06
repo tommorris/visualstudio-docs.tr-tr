@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f684a29eea526f7725e8a876f53453512f65dadc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 95a1a8c48bd6eab0f21ccc85a125b5d10f42ef4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 Bu arabirimi hata ayıklama altyapısı (DE) temsil eder. Ayarlama ve özel durumları temizlemek için kesme noktaları oluşturulurken bir hata ayıklama oturumu çeşitli yönlerini yönetmek için kullanılır.  
@@ -41,7 +42,7 @@ IDebugEngine2 : IUnknown
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Tarafından SE ayıklanacak tüm programlar için bir numaralandırıcı oluşturur.|  
-|[Ekleme](../../../extensibility/debugger/reference/idebugengine2-attach.md)|SE bir programa ekler.|  
+|[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)|SE bir programa ekler.|  
 |[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|Bekleyen bir kesme noktası DE oluşturur.|  
 |[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)|Belirli bir özel durum DE nasıl yöneteceğini belirtir.|  
 |[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|Artık hata ayıklama altyapısı tarafından işlenir için belirtilen özel durum kaldırır.|  

@@ -17,11 +17,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c54a6f5b39136a56753facce4c4f1e5a656fbb36
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: 4ab98d4a4f589959982bdcb584189b30923ddbc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# Kod Parçacıkları
 Kod parçacıkları, kodunuza hızla ekleyebilirsiniz kodunun hazır parçacıklarıdır. Örneğin, `for` kod parçacığını oluşturur boş bir `for` döngü. Bazı kod parçacıkları, kod satırlarını seçmenizi sağlar ve ardından kod seçili satırları içeren bir kod parçacığı Çevrele kod parçacıklarını, ' dir. Örneğin, ne zaman, kod satırı seçin ve ardından etkinleştirmeniz `for` kod parçacığını oluşturduğu bir `for` döngü Bu döngü bloğunun kod satırları ile. Kod parçacıkları daha hızlı, kolay ve daha güvenilir kod yazma programını yapabilirsiniz.  

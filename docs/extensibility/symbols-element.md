@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ef5b215e18163b10c8002affc959bd80b586cf0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0a6065162ce5ba7c8f611be7a093bba7a0c55fca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbols-element"></a>Simgeler öğesi
 GUID ve diğer VSCT öğeleri tarafından kullanılan kimlikleri tanımlar. Yönetilmeyen kod için bu bilgileri genellikle tarafından belirtilen üstbilgi dosyaları geldiği [Extern öğesi](../extensibility/extern-element.md). Kod kullanan bu bilgileri tanımlamak için simgeler öğesinin alt öğeleri yönetilen.  
@@ -57,7 +58,7 @@ GUID ve diğer VSCT öğeleri tarafından kullanılan kimlikleri tanımlar. Yön
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[CommandTable öğesi](../extensibility/commandtable-element.md)|.Vsct dosyasının kök öğesinin.|  
+|[CommandTable Öğesi](../extensibility/commandtable-element.md)|.Vsct dosyasının kök öğesinin.|  
   
 ## <a name="example"></a>Örnek  
   
@@ -73,4 +74,4 @@ GUID ve diğer VSCT öğeleri tarafından kullanılan kimlikleri tanımlar. Yön
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d497535f8511c3f9e6c55e80157507ed36184b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5869279a7bafb11368b7fb232e6ca68ca7d98478
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>İzlenecek Yol: Tasarım Zamanında Hata Ayıklama
 Visual Studio'yu kullanabilirsiniz **hemen** uygulamanızı çalışırken bir işlevi veya alt yordama yürütmek için penceresi. İşlev veya alt yordama bir kesme noktası içeriyorsa, Visual Studio uygun noktada yürütme çalışmamasına neden olur. Hata ayıklayıcı windows sonra programın durumunu incelemek için de kullanabilirsiniz. Bu özellik, tasarım zamanında hata ayıklama adı verilir.  

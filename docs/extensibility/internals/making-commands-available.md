@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e9644353430fa70d6876ab3210ad340ac30312d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c3a9edc754070c7bb0aabdc76b2d52efd32a453
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="making-commands-available"></a>Komutları kullanılabilir hale getirme
 Birden çok VSPackages Visual Studio'ya eklendiğinde, kullanıcı arabirimi (UI) komutları ile overcrowded haline gelir. Bu sorun aşağıdaki gibi azaltmaya yardımcı olmak için paket programlama yapabilirsiniz:  
@@ -151,4 +152,4 @@ Birden çok VSPackages Visual Studio'ya eklendiğinde, kullanıcı arabirimi (UI
  [MenuCommands Vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Komut içinde VSPackages yönlendirme](../../extensibility/internals/command-routing-in-vspackages.md)   
- [Dinamik menü öğeleri ekleme](../../extensibility/dynamically-adding-menu-items.md)
+ [Dinamik Olarak Menü Öğeleri Ekleme](../../extensibility/dynamically-adding-menu-items.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b326e88e18e3a7c5515cc11bfda7e5c35ae4a063
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9bb2cbe0a87e61a50f3f2b071aef9ef9e12663a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markerseries-class"></a>marker_series Sınıfı
 Tek bir sağlayıcı tarafından oluşturulan olayların seri kanal temsil eder.  
@@ -36,16 +37,16 @@ class marker_series;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[marker_series::marker_series Oluşturucusu](../profiling/marker-series-marker-series-constructor.md)|Yeni bir örneğini başlatır `marker_series` sınıfı.|  
-|[marker_series:: ~ marker_series yok Edicisi](../profiling/marker-series-tilde-marker-series-destructor.md)|Marker_series nesnesini yok eder ve ayrılan tüm kaynakları serbest bırakır.|  
+|[marker_series::~marker_series Yok Edicisi](../profiling/marker-series-tilde-marker-series-destructor.md)|Marker_series nesnesini yok eder ve ayrılan tüm kaynakları serbest bırakır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[marker_series::is_enabled yöntemi](../profiling/marker-series-is-enabled-method.md)|Herhangi bir oturumunda sağlayıcısı etkin olmadığını belirler.|  
-|[marker_series::write_alert yöntemi](../profiling/marker-series-write-alert-method.md)|Bir uyarı eşzamanlılık görselleştiricisi izleme dosyasına yazar.|  
-|[marker_series::write_flag yöntemi](../profiling/marker-series-write-flag-method.md)|Bir bayrak eşzamanlılık görselleştiricisi izleme dosyasına yazar.|  
-|[marker_series::write_message yöntemi](../profiling/marker-series-write-message-method.md)|Eşzamanlılık görselleştiricisi izleme dosyası için bir ileti yazar.|  
+|[marker_series::is_enabled Metodu](../profiling/marker-series-is-enabled-method.md)|Herhangi bir oturumunda sağlayıcısı etkin olmadığını belirler.|  
+|[marker_series::write_alert Metodu](../profiling/marker-series-write-alert-method.md)|Bir uyarı eşzamanlılık görselleştiricisi izleme dosyasına yazar.|  
+|[marker_series::write_flag Metodu](../profiling/marker-series-write-flag-method.md)|Bir bayrak eşzamanlılık görselleştiricisi izleme dosyasına yazar.|  
+|[marker_series::write_message Metodu](../profiling/marker-series-write-message-method.md)|Eşzamanlılık görselleştiricisi izleme dosyası için bir ileti yazar.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `marker_series`  
@@ -56,4 +57,4 @@ class marker_series;
  **Namespace:** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tanılama Namespace](../profiling/diagnostic-namespace.md)
+ [Tanılama Ad Alanı](../profiling/diagnostic-namespace.md)

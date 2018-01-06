@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5332933bf1452ca730b5c49716e10f49851fd749
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Hata: Web Sunucusunda Hata Ayıklama Başlatılamıyor
 
@@ -119,7 +119,7 @@ Burada sorunu gidermek için ayrıntılı adımlar aldıktan sonra ve hata ayık
 
 * Uygulama havuzu yapılandırmanızı denetleyin, gerekiyorsa düzeltin ve sonra yeniden deneyin.
 
-    Uygulama havuzu, Visual Studio projesi eşleşmiyor ASP.NET sürümü için yapılandırılabilir. Uygulama havuzundaki ASP.NET sürümünü güncelleştirin ve yeniden başlatın. Ayrıntılı bilgi için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+    Uygulama havuzu, Visual Studio projesi eşleşmiyor ASP.NET sürümü için yapılandırılabilir. Uygulama havuzundaki ASP.NET sürümünü güncelleştirin ve yeniden başlatın. Ayrıntılı bilgi için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     Ayrıca, parola kimlik bilgileri değiştiyse, uygulama havuzu veya Web sitesi güncelleştirme gerekebilir.  Uygulama havuzu kimlik bilgilerini güncelleştirin **Gelişmiş Ayarlar > işlem modeli > kimlik**. Web sitesi için kimlik bilgilerini güncelleştirin **temel ayarlar > Farklı Bağlan...** . Uygulama havuzunu yeniden başlatın.
     
@@ -129,7 +129,7 @@ Burada sorunu gidermek için ayrıntılı adımlar aldıktan sonra ve hata ayık
 
 * IIS üzerinde ASP.NET doğru sürümünün yüklü olduğundan emin olun.
 
-    ASP.NET IIS ve Visual Studio projenizi uyumsuz sürümlerini bu soruna neden olabilir. Web.config dosyasında framework sürümü ayarlamanız gerekebilir. IIS üzerinde ASP.NET yüklemek için kullandığınız [Web Platformu Yükleyicisi (Webpı)](https://www.microsoft.com/web/downloads/platform.aspx). Ayrıca bkz [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) veya ASP.NET Core [IIS ile Windows konakta](https://docs.asp.net/en/latest/publishing/iis.html).
+    ASP.NET IIS ve Visual Studio projenizi uyumsuz sürümlerini bu soruna neden olabilir. Web.config dosyasında framework sürümü ayarlamanız gerekebilir. IIS üzerinde ASP.NET yüklemek için kullandığınız [Web Platformu Yükleyicisi (Webpı)](https://www.microsoft.com/web/downloads/platform.aspx). Ayrıca bkz [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) veya ASP.NET Core [IIS ile Windows konakta](https://docs.asp.net/en/latest/publishing/iis.html).
   
 * Yalnızca IP adresi kullanıyorsanız, kimlik doğrulama hatalarını çözümleme
 
@@ -155,7 +155,7 @@ IIS yapılandırmasını soruna neden değil, aşağıdaki adımları deneyin:
 
      IIS düzgün yüklü değilse, yazarken hataları almalısınız `http://localhost` bir tarayıcıda.
      
-     IIS dağıtma hakkında daha fazla bilgi için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ve ASP.NET Core [IIS ile Windows konakta](https://docs.asp.net/en/latest/publishing/iis.html).
+     IIS dağıtma hakkında daha fazla bilgi için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ve ASP.NET Core [IIS ile Windows konakta](https://docs.asp.net/en/latest/publishing/iis.html).
 
 * Sunucuda temel bir ASP.NET uygulaması oluşturun (veya bir temel web.config dosyası kullanın).
 

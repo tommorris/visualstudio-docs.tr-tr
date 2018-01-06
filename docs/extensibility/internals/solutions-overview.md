@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6a1afea2357fb0c0ef1bcf8152f8a3785a55786
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 539ceb45cce6c317ed3723c5006e6d2a77029335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solutions-overview"></a>Çözümlerine genel bakış
 Bir çözüm, bir uygulama oluşturmak için birlikte çalışan bir veya daha fazla projeleri gruplandırmasıdır. Çözüme ilgili proje ve durum bilgilerini iki farklı çözüm dosyasında depolanır. Metin tabanlı çözüm (.sln) dosyasıdır ve kullanılabilir kaynak kodu denetimi altında yerleştirilir ve kullanıcı arasında paylaşılan. Çözüm kullanıcı seçeneği (.suo) ikili dosyadır. Sonuç olarak, .suo dosya kaynak kodu denetimi altında yer alamaz ve kullanıcıya özgü bilgileri içerir.  

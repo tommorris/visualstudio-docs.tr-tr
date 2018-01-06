@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1acbeb95ed7fa59fd64feefe050debc0ce9b6461
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: c5dace5862354c26a22b65b3f471163e50738c7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Visual Studio için Modelleme SDK'sı için API Başvurusu
 Visual Studio Görselleştirme ve modelleme SDK'sı, etki alanına özgü dil (DSL) araçları oluşturulmuş bir platform sağlar.  
@@ -45,4 +46,4 @@ Visual Studio Görselleştirme ve modelleme SDK'sı, etki alanına özgü dil (D
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|Doğrulama kısıtlamaları tanımlamanıza olanak sağlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [T4 metin dönüştürmeyi özelleştirme](../modeling/customizing-t4-text-transformation.md)
+ [T4 Metin Dönüştürmeyi Özelleştirme](../modeling/customizing-t4-text-transformation.md)

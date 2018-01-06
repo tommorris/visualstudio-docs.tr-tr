@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa1c2fa5d0da738057e59cdac007c499a834bc0a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e59f3826cbb2ed83510cd98209b4c83f9278397d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="providing-automation-for-code"></a>Otomasyon kodu için sağlama
 Kodunuz için bir otomasyon modeli oluşturma gerekli değildir. Ortamı SDK'sı, bunu yapmak için bir örnek sağlamaz. Kod modelleri hakkında bilgi için bkz: <xref:EnvDTE.CodeModel> nesne.  
@@ -35,4 +36,4 @@ Kodunuz için bir otomasyon modeli oluşturma gerekli değildir. Ortamı SDK'sı
  Yöntemleri veya özellikleri gibi özellikleri eklemek istiyorsanız, kullanılabilir değil standart `CodeModel` ve `FileCodeModel` arabirimleri, standart devralır kendi arabirimi oluşturun. Son kullanıcılar için aranacak bilmesi proje sisteminizle belgelediğinizden emin olun. Standart arabirimini döndürür, ancak kullanıcı çağırabilirsiniz `QueryInterface` yöntemi veya cast bulunmasını biliniyorsa arabiriminiz için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Otomasyon modeline genel bakış](../../extensibility/internals/automation-model-overview.md)
+ [Otomasyon Modeline Genel Bakış](../../extensibility/internals/automation-model-overview.md)

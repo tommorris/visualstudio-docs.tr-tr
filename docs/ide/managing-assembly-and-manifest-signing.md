@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 62e9060c812666f671f1c2d3378fad510d6524f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8227a514887150e3477e026a238df608fe98d11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Derleme ve Bildirim İmzalamayı Yönetme
 Tanımlayıcı ad imzası bir yazılım bileşeni genel olarak benzersiz bir kimliği verir. Tanımlayıcı adlar derleme başka birisi tarafından gibi görünerek edilemez olduğunu garanti ve bileşen bağımlılıklar ve yapılandırma deyimleri doğru bileşeni ve bileşen sürümü harita sağlamak için kullanılır.  
@@ -72,4 +73,4 @@ Genel yürütülebilir dosyalar oturumunuzu. Kesin adlandırılmış bir bileşe
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tanımlayıcı adlı derlemeler](/dotnet/framework/app-domains/strong-named-assemblies)   
- [Tanımlayıcı ad derlemeleri (derleme imzalama) (C + +/ CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+ [Tanımlayıcı Ad Derlemeleri (Derleme İmzalama) (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

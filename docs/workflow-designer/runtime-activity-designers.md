@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: da5d71a36b39f47dc0a068e9aa25950687143f29
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a90e858a8eed0c6d1c92423b1f074bf51c01eb63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="runtime-activity-designers"></a>Çalışma zamanı etkinlik tasarımcıları
 Çalışma zamanı etkinlik tasarımcıları, kalıcı hale getirmek ve iş akışı etkinlikleri sonlandırmak için kullanılır. Bu bölümdeki konular nasıl kullanılacağı hakkında kılavuzluk [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] etkinlik tasarımcıları.  
@@ -30,19 +31,19 @@ ms.lasthandoff: 10/27/2017
 ## <a name="reference"></a>Başvuru  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Denetim akışı](../workflow-designer/control-flow-activity-designers.md)  
+ [Denetim Akışı](../workflow-designer/control-flow-activity-designers.md)  
   
  [Akış Çizelgesi](../workflow-designer/flowchart-activity-designers.md)  
   
  [Mesajlaşma](../workflow-designer/messaging-activity-designers.md)  
   
- [Temelleri](../workflow-designer/primitives-activity-designers.md)  
+ [Temel Türler](../workflow-designer/primitives-activity-designers.md)  
   
  [İşlem](../workflow-designer/transaction-activity-designers.md)  
   
- [Koleksiyonu](../workflow-designer/collection-activity-designers.md)  
+ [Koleksiyon](../workflow-designer/collection-activity-designers.md)  
   
- [Hata işleme](../workflow-designer/error-handling-activity-designers.md)  
+ [Hata İşleme](../workflow-designer/error-handling-activity-designers.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkinlik tasarımcıları kullanma](../workflow-designer/using-the-activity-designers.md)
+ [Etkinlik Tasarımcılarını kullanma](../workflow-designer/using-the-activity-designers.md)

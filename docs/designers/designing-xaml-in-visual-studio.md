@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 03ef7e9e7402ba03e132eb4c80c37a21d556c09c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: cd71c63ab20dc943d1e0c7ac94d374c9d3bca359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Visual Studio'da XAML tasarlama
 
@@ -24,9 +25,9 @@ ms.lasthandoff: 10/31/2017
   
 Bir uygulama tasarlama işlemi seçtiğiniz aracı ve hedef platformunuzu bağlıdır. Mevcut bu konuda, Visual Studio ve Visual Studio için Blend'de XAML Tasarım araçları karşılaştırır. Araçları kullanarak, daha ayrıntılı izlenecek yollar için aşağıdaki konulara bakın:
 
-- [Visual Studio'da XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma](creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-- [Visual Studio için Blend'i kullanarak kullanıcı Arabirimi oluşturma](creating-a-ui-by-using-blend-for-visual-studio.md)
-- [Windows Presentation Foundation ile modern masaüstü uygulamaları oluşturma](create-modern-desktop-applications-with-windows-presentation-foundation.md)
+- [Visual Studio’da XAML Tasarımcısı’nı kullanarak kullanıcı arabirimi oluşturma](creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma](creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Windows Presentation Foundation ile Modern Masaüstü Uygulamaları Oluşturma](create-modern-desktop-applications-with-windows-presentation-foundation.md)
 
 ## <a name="choosing-the-right-tool"></a>Doğru aracı seçme  
  Tasarım araçları seçiminizi yetenek kümesi üzerinde büyük ölçüde bağlıdır. Daha fazla kod odaklı varsa, daha gelişmiş tasarım görevleri gerçekleştirmek için Visual Studio'da XAML kod yazabilirsiniz. Daha fazla tasarım kaynaklı olan, Visual Studio için Blend kod yazmadan gelişmiş görevleri gerçekleştirmenize olanak sağlar.  
@@ -62,10 +63,10 @@ Bir uygulama tasarlama işlemi seçtiğiniz aracı ve hedef platformunuzu bağl�
 |Bitiş|Visual Studio|Visual Studio için Blend|Daha fazla bilgi|  
 |--------|-------------------|-----------------------------|----------------------|  
 |**Animasyon oluşturma**|Animasyon için tasarım aracı yoktur; Program aracılığıyla oluşturmanız gerekir. Bu animasyon ve zamanlama sistemini WPF ve kapsamlı kodlama uzmanlık bilinmesini gerektirir.|Animasyon görsel olarak oluşturabilir ve bunları Visual Studio için blend'de önizleyebilirsiniz. Bu daha hızlı ve kodda, animasyon oluşturma daha kesin değildir. Kullanıcı etkileşimi işlemek için Tetikleyiciler ekleyebilirsiniz ve olay işleyicileri ve diğer işlevleri eklemek için kodu geçiş yapabilirsiniz.|[Nesnelere animasyon ekleme](../designers/animate-objects-in-xaml-designer.md)|  
-|**Şekil ve metinler daha kolay işleme için yollar dönüştürmek**|Desteklenmez.|Hafif veya çarpıcı (örneğin, dikdörtgenler ve üç nokta) şekillere daha iyi düzenleme denetimi sağlamak yollara dönüştürerek değişiklik yapabilirsiniz.  Yeniden şekillendirmek veya yolları birleştirmek ve birden çok şekillerden bileşik yollar oluşturabilir.<br /><br /> Vektör görüntüler olarak işlemek için yollar metin blokları dönüştürebilirsiniz.|[Şekiller ve yollar çizin](../designers/draw-shapes-and-paths.md)|  
+|**Şekil ve metinler daha kolay işleme için yollar dönüştürmek**|Desteklenmez.|Hafif veya çarpıcı (örneğin, dikdörtgenler ve üç nokta) şekillere daha iyi düzenleme denetimi sağlamak yollara dönüştürerek değişiklik yapabilirsiniz.  Yeniden şekillendirmek veya yolları birleştirmek ve birden çok şekillerden bileşik yollar oluşturabilir.<br /><br /> Vektör görüntüler olarak işlemek için yollar metin blokları dönüştürebilirsiniz.|[Şekiller ve yollar çizme](../designers/draw-shapes-and-paths.md)|  
 |**Etkileşim, UI tasarımları ekleme**|C#, Visual Basic ya da C++ kodu gerektirir.|Sürükle ve bırak davranışları statik sizin tasarımlar etkileşim eklemek için denetimleri üzerine. Davranışları sürükle ve bırak, yakınlaştırma ve görsel durum değişiklikleri gibi işlevleri kapsülleyen kullanıma hazır kod parçacıkları ' dir. Aralarından seçim yapabileceğiniz davranışları artan bir dizi yoktur ve kendi oluşturabilirsiniz.<br /><br /> Visual Studio için blend'de özelliklerini değiştirerek veya kodda olay işleyicileri ekleme sonra her davranışını özelleştirebilirsiniz.|[Denetimler ekleme ve bunların davranışlarını değiştirme](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)|  
 |**Adobe resmi kullanın**|Desteklenmez.|Adobe FXG, PhotoShop veya Illustrator resmi almak ve Visual Studio için blend'de kullanıcı arabirimini uygular.|[Görüntü, video ve ses klipleri ekleme](../designers/insert-images-videos-and-audio-clips-in-xaml-designer.md)|  
 |**Denetimleri, şablonlar ve stiller Düzenle**|Kodlama ve WPF stilleri ve şablonları bilgisi gerektirir.|Herhangi bir görüntü denetime açın.<br /><br /> Düzenleme araçları şablonu denetimleri, stil ve birkaç kere fareyi tıklatarak şablonlarıyla değişiklikler yapmak için kullanın.<br /><br /> Örneğin, Visual Studio stil kaynakları için Blend (örneğin, düğmeleri, liste kutuları, kaydırma çubukları, menüler, vb.) genel WPF denetimlerinin uygulamak ve kendi renk, stil veya doğrudan Visual Studio için blend'de temel şablonu değiştirmek için kullanabilirsiniz. İstiyorsanız, son rötuşları kodunu sonra dönebilirsiniz.|[Nesnelerin stilini değiştirme](../designers/modify-the-style-of-objects-in-blend.md)|  
 |**UI verilere bağlanma**|SQL Server veritabanları, WCF veya web Hizmetleri, nesneler veya SharePoint listeleri gibi bir veri kaynağı oluşturun ve veri kaynağı UI denetimlerinizi bağlayın.<br /><br /> Tasarım zamanı verileri etkileşimli tasarım deneyimi için el ile oluşturulması gerekir.|Örnek veriler prototip oluşturma ve test etme için kolayca oluşturun. Hazır olduğunuzda canlı veri anahtarı.<br /><br /> Harmanlama özellikleri bekleyen Visual Studio'nun veri oluşturma için (ekleyebilirsiniz ad, sayılar, URL'ler, anında üzerinde kolayca fotoğraf) ve çok zaman kazandırabilir.<br /><br /> Dinamik veri için bir XML dosyasına veya herhangi bir CLR veri kaynağı, kullanıcı Arabirimi denetimlerini bağlayabilirsiniz.|[Verileri görüntüleme](../designers/display-data-in-blend.md)|  
   
- Gelişmiş XAML tasarımı hakkında daha fazla bilgi için bkz. [Visual Studio için Blend'i kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+ Gelişmiş XAML tasarımı hakkında daha fazla bilgi için bkz. [Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

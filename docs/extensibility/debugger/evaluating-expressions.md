@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 870469b77eb2f9fcf562602dd651c84fa71020ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 24cc20166bad875dcaebbd5492a7fe8317539d47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-expressions"></a>İfadeleri değerlendirme
 İfadeleri otomatik değişkenler, izleme, QuickWatch veya hemen windows geçirilen dizelerden oluşturulur. Bir ifade değerlendirildiğinde adını ve türünü değişken veya değişken ve değeri içeren yazdırılabilir bir dize oluşturur. Bu dize karşılık gelen IDE penceresinde görüntülenir.  
@@ -37,4 +38,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yığın çerçeveleri](../../extensibility/debugger/stack-frames.md)   
  [İfade değerlendirme bağlamı](../../extensibility/debugger/expression-evaluation-context.md)   
- [Hata ayıklama görevleri](../../extensibility/debugger/debugging-tasks.md)
+ [Hata Ayıklama Görevleri](../../extensibility/debugger/debugging-tasks.md)

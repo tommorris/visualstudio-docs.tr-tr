@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 783c93386ae967138a0fb782a05cb8a21f0ad009
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d2d6326f08276da60a3e901912bfb579428680d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio kullanıcı deneyimi yönergeleri
 Visual Studio kullanıcı deneyimi yönergeleri, yeni özellikler için Visual Studio tasarım olanlar için tasarlanmıştır. Yeni kullanıcı arabirimi (UI) tasarımcılarının sorunsuz ve tutarlı geliştirme ortamında kullanıcı deneyimleri oluşturabilmesi için bu yönergeler ortak kullanıcı modeller ve etkileşim desenler hakkında bilgi içerir.  

@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 538cd0cd023b8861d6adb88c19b42aac59c9f4dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="messages-view"></a>İletiler Görünümü
 Her penceresinde bir ilişkili ileti akışı vardır. Bu ileti akışı iletilerin görüntüleme penceresi görüntüler. Bir pencere tanıtıcının, ileti kodu ve iletinizi gösterilir. Bir iş parçacığı veya işlem de iletiler görünümünü oluşturabilirsiniz. Bu, bir özel işlem veya pencere Başlatma iletilerinin yakalamak için özellikle yararlıdır iş parçacığı tarafından sahip olunan tüm windows gönderilen iletileri görüntülemenize olanak sağlar.  
@@ -68,10 +69,10 @@ Spy ++ iletiler görünümü
  Bir ileti hakkında daha fazla bilgi görüntülemek nasıl.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Spy ++ görünümleri](../debugger/spy-increment-views.md)  
+ [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
  Windows, iletileri, işlemleri ve iş parçacıklarının Spy ++ ağaç görünümler açıklanmaktadır.  
   
- [Spy ++ kullanma](../debugger/using-spy-increment.md)  
+ [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
  [İleti Seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md)  
@@ -83,5 +84,5 @@ Spy ++ iletiler görünümü
  [İleti Özellikleri iletişim kutusu](../debugger/message-properties-dialog-box.md)  
  İleti görünümünde seçilen bir ileti özelliklerini görüntülemek için kullanılır.  
   
- [Spy ++ başvurusu](../debugger/spy-increment-reference.md)  
+ [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
  Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümleri içerir.

@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 561c7e12b1c8e888513b44b8fec36f8bb5e5f9fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf92d22b3c27d23fa90b6d9be13cf4fa6604384a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>LINQ-XML Dinamik Özellikler
 Bu bölümde, XML LINQ dinamik özellikleri hakkında başvuru bilgileri sağlar. Özellikle, bu özellikler tarafından kullanıma sunulan <xref:System.Xml.Linq.XAttribute> ve <xref:System.Xml.Linq.XElement> bulunan sınıflar <xref:System.Xml.Linq> ad alanı.  
@@ -35,8 +36,8 @@ Bu bölümde, XML LINQ dinamik özellikleri hakkında başvuru bilgileri sağlar
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[Dinamik özellikler XAttribute sınıfı](../designers/xattribute-class-dynamic-properties.md)|Tarafından sunulan dinamik özellikleri hakkında ayrıntılı bilgi sağlar <xref:System.Xml.Linq.XAttribute> sınıfı.|  
-|[Dinamik özellikler XElement sınıfı](../designers/xelement-class-dynamic-properties.md)|Tarafından sunulan dinamik özellikleri hakkında ayrıntılı bilgi sağlar <xref:System.Xml.Linq.XElement> sınıfı.|  
+|[XAttribute Sınıfı Dinamik Özellikleri](../designers/xattribute-class-dynamic-properties.md)|Tarafından sunulan dinamik özellikleri hakkında ayrıntılı bilgi sağlar <xref:System.Xml.Linq.XAttribute> sınıfı.|  
+|[XElement Sınıfı Dinamik Özellikleri](../designers/xelement-class-dynamic-properties.md)|Tarafından sunulan dinamik özellikleri hakkında ayrıntılı bilgi sağlar <xref:System.Xml.Linq.XElement> sınıfı.|  
   
 ## <a name="reference"></a>Başvuru  
  <xref:System.Xml.Linq>  

@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf6d0d7a9aa556aab454f90e4dcfc5dc4f236c03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fe3db0582c65a2ece2162ab24afb6d179b865a27
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-design"></a>Komut tasarım
 Bir komut bir VSPackage eklediğinizde, görünmesi olduğu, kullanılabilir olduğunda ve nasıl işleneceğini olduğunu belirtmeniz gerekir.  
@@ -69,7 +70,7 @@ Bir komut bir VSPackage eklediğinizde, görünmesi olduğu, kullanılabilir old
 |[Kullanılabilirlik](../../extensibility/internals/command-availability.md)|Visual Studio bağlam hangi komutlar kullanılabilir nasıl belirlediğini açıklar.|  
 |[Yönlendirme algoritması](../../extensibility/internals/command-routing-algorithm.md)|Visual Studio komut yönlendirme mimarisi farklı VSPackages tarafından işlenecek komutları nasıl sağladığını açıklar.|  
 |[Yerleştirme yönergeleri](../../extensibility/internals/command-placement-guidelines.md)|Visual Studio ortamında komutları konumlandırmak nasıl önerir.|  
-|[Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|Nasıl VSPackages Visual Studio komut mimarisi en iyi kullanabilir açıklar.|  
-|[Varsayılan komutu, Grup ve araç çubuğu yerleştirme](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Nasıl VSPackages Visual Studio'ya dahil olan komutları en iyi şekilde kullanabileceğinizi açıklar.|  
-|[VSPackages yönetme](../../extensibility/managing-vspackages.md)|Visual Studio VSPackages nasıl yükler açıklar.|  
-|[Visual Studio komut tablosu (. Vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Düzen ve VSPackages komutlarda görünümünü tanımlamak için kullanılan XML tabanlı .vsct dosyaları hakkında bilgi sağlar.|
+|[VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|Nasıl VSPackages Visual Studio komut mimarisi en iyi kullanabilir açıklar.|  
+|[Varsayılan Komut, Grup ve Araç Çubuğu Yerleşimi](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Nasıl VSPackages Visual Studio'ya dahil olan komutları en iyi şekilde kullanabileceğinizi açıklar.|  
+|[VSPackage’ları Yönetme](../../extensibility/managing-vspackages.md)|Visual Studio VSPackages nasıl yükler açıklar.|  
+|[Visual Studio Komut Tablosu (.Vsct) Dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Düzen ve VSPackages komutlarda görünümünü tanımlamak için kullanılan XML tabanlı .vsct dosyaları hakkında bilgi sağlar.|

@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9666f4f26476544baa6afc5dad17798b4e8360d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>İzlenecek yol: Birden Çok Bilgisayarda Derleme Ortamı Oluşturma
 
@@ -289,8 +290,8 @@ Bu kılavuz, aşağıdaki işletim sistemlerinden karşı MSBuild komut satırı
     |Vcvarsall.bat bağımsız değişkeni|Derleyici|Bilgisayar mimarisi oluşturma|Derleme çıktı mimarisi|  
     |----------------------------|--------------|---------------------------------|-------------------------------|  
     |x86 (varsayılan)|32-bit yerel|x86, x64|x86|  
-    |x86_amd64|Çapraz x64|x86, x64|x64|  
-    |amd64|x64 yerel|x64|x64|  
+    |x86_amd64|Çapraz x64|x86, x64|X64|  
+    |amd64|x64 yerel|X64|X64|  
   
      Vcvarsall.bat başarıyla tamamlanırsa — diğer bir deyişle, hata iletisi görüntülenir — bir sonraki adımı atlayın ve adresindeki devam [yükleme MSBuild derlemeler için Genel Derleme Önbelleği (GAC) ve yapı bilgisayarında](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) bu belgenin bölüm .  
   
@@ -425,4 +426,4 @@ Bu kılavuz, aşağıdaki işletim sistemlerinden karşı MSBuild komut satırı
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama yürütülebilir dosyayı çalıştırmak için Test Makinesi hazırlama](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)   
- [Komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md)
+ [Komut Satırı Başvurusu](../msbuild/msbuild-command-line-reference.md)

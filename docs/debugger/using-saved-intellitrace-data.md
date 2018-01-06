@@ -18,11 +18,12 @@ caps.latest.revision: "106"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0447f7ac0836f0f23334d8759d294437191aa6a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-saved-intellitrace-data"></a>Kaydedilen IntelliTrace verilerini kullanma
 Uygulamanızın yürütme belirli noktalara bir IntelliTrace günlüğü (.iTrace) dosyasından hata ayıklamayı başlattığınızda gidin. Bu dosya, performans olaylarının, özel durumlar, iş parçacıkları, test adımları, modüller ve IntelliTrace kayıtları uygulama çalışmalarınız while diğer sistem bilgisi içerebilir.  
@@ -78,7 +79,7 @@ Uygulamanızın yürütme belirli noktalara bir IntelliTrace günlüğü (.iTrac
 |[Sistem bilgisi](#SystemInfo)|Ayarları ve ana bilgisayar sistemi belirtimleri|Tüm kaynakları|  
 |[İş parçacığı listesi](#ThreadsList)|Toplama sırasında çalışan iş parçacıkları|Tüm kaynakları|  
 |[Test verileri](#TestData)|Test adımları ve sonuçları bir test oturumundan|Test Yöneticisi|  
-|[Modülleri](#Modules)|Hedef işlemin yüklendikleri sıraya yüklenen modüller.|Tüm kaynakları| 
+|[Modüller](#Modules)|Hedef işlemin yüklendikleri sıraya yüklenen modüller.|Tüm kaynakları| 
 |[Web isteği](#Modules)|Üretim IIS için Web isteği verisi web uygulamaları ve SharePoint 2010 ve SharePoint 2013|Microsoft izleme aracısı ve bağımsız veri toplayıcı| 
   
  Her bölümde bilgileri bulmanıza yardımcı olacak bazı ipuçları şöyledir:  
@@ -194,7 +195,7 @@ Uygulamanızın yürütme belirli noktalara bir IntelliTrace günlüğü (.iTrac
     |**Kategori Kimliği**|**Kategori Kimliği**|  
     |**Kategori**|**Kategori**|  
     |**Alan**|**Ürün**|  
-    |**Çıktı**|**İleti**|  
+    |**Output**|**İleti**|  
     |**Bağıntı Kimliği**|**Bağıntı Kimliği**|  
   
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>İşlenmemiş bir özel durumdan hata ayıklamayı başlat  

@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799ac5ee39322579ab60901ffe2abb2f2a683138
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: adc3f54188e57bd5453703c0aa68fe281fd2ca5e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 Bu yöntem, belirtilen her hata ayıklama altyapısı (DE) için bir program düğüm ekler.  
@@ -59,4 +60,4 @@ int AddImplicitProgramNodes(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
- [Program düğümler](../../../extensibility/debugger/program-nodes.md)
+ [Program Düğümleri](../../../extensibility/debugger/program-nodes.md)

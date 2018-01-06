@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a34a964450931071a290764074f4e955fe19aea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 09b43963d657e8d1fe7aa24e98632d2ca46240c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-site-support"></a>Web sitesi desteği
 Bir Web sitesi proje sistemi Web projeleri oluşturan bir proje sistemidir. Web projeleri, Web uygulamaları sırayla oluşturun. Bir Web sitesi projesini kod ilişkili her Web sayfası için bir yürütülebilir dosyası oluşturur. Başka bir yürütülebilir dosya kaynak kodu dosyalarından /App_Code klasöründe oluşturulur.  
@@ -31,12 +32,12 @@ Bir Web sitesi proje sistemi Web projeleri oluşturan bir proje sistemidir. Web 
 ```  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Web sitesi şablonları destekler](../../extensibility/internals/web-site-support-templates.md)  
+ [Web Sitesi Destek Şablonları](../../extensibility/internals/web-site-support-templates.md)  
  Yeni Web sitesi projeleri ve ilişkili öğeleri oluşturmak için kullanabileceğiniz şablonlarını listeler.  
   
- [Web sitesi desteği öznitelikleri](../../extensibility/internals/web-site-support-attributes.md)  
+ [Web Sitesi Destek Öznitelikleri](../../extensibility/internals/web-site-support-attributes.md)  
  Bir Web sitesi projesine bağlanmak kayıt öznitelikleri gösterir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)].  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Web projeleri](../../extensibility/internals/web-projects.md)  
+ [Web Projeleri](../../extensibility/internals/web-projects.md)  
  Web projeleri, Web sitesi projeleri ve Web Uygulama projeleri iki tür genel bir bakış sunar.

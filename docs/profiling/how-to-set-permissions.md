@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dcdf2ff51c0ed1aeb667c33a519d540251799c01
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 44f67dd4b1c6717dfaf48ada0f093a845899e16c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-permissions"></a>Nasıl yapılır: izinleri ayarla
 Bu konuda, bir bilgisayarın yönetici bir kullanıcı veya bu bilgisayarda yönetici izinlerine sahip olmayan grubuna profil için gerekli güvenlik izinleri nasıl verir açıklanmaktadır.  
@@ -70,7 +71,7 @@ Bu konuda, bir bilgisayarın yönetici bir kullanıcı veya bu bilgisayarda yön
   
 2.  Klasöre sağ tıklayın ve ardından **özellikleri**.  
   
-     **\<Klasör adı > Özellikler** iletişim kutusu görüntülenir.  
+      **\<Klasör adı > Özellikler** iletişim kutusu görüntülenir.  
   
 3.  Tıklatın **güvenlik** sekmesi.  
   

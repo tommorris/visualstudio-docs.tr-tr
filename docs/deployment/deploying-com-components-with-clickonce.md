@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: d3a8ae32afec789595ecd126eeaee0c5ea05a9e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-com-components-with-clickonce"></a>ClickOnce ile COM Bileşenleri Dağıtma
 Eski COM bileşenlerini dağıtımını geleneksel zor bir görev olmuştur. Bileşenleri Genel kayıtlı olması gerekir ve bu nedenle örtüşen uygulamalar arasında istenmeyen yan etkileri neden olabilir. Bileşenler bir uygulama için tamamen yalıtılmış veya yan yana uyumlu değildir çünkü bu durum genelde .NET Framework uygulamalarında bir sorun değildir. Visual Studio yalıtılmış COM bileşenleri Windows XP veya daha yüksek işletim sistemi dağıtmanıza olanak tanır.  
@@ -175,4 +176,4 @@ Eski COM bileşenlerini dağıtımını geleneksel zor bir görev olmuştur. Bil
  Uygulama dağıtımının kayıt gerektirmez olsa bile COM geliştiricinin makinesinde kayıt gereken birkaç senaryo vardır. `Isolated` Özelliği gerektirir otomatik-bildirim sırasında yapı oluşturmak için COM bileşeninin geliştiricinin makinesinde kayıtlı olmalıdır. Derleme sırasında kendi kendine kayıt çağıran kayıt yakalama özelliği yoktur. Ayrıca, açıkça Tür Kitaplığı'nda tanımlanan sınıflar bildiriminde yansıtılmaz. Bir COM bileşeni yerel bir referans gibi önceden varolan bir bildirim ile kullanırken Bileşen geliştirme anında kaydedilecek gerekmeyebilir. Ancak, kayıt bir ActiveX denetimini bileşenidir ve olmasını istiyorsanız gereklidir **araç** ve Windows Forms Tasarımcısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)
+ [ClickOnce Güvenliği ve Dağıtımı](../deployment/clickonce-security-and-deployment.md)

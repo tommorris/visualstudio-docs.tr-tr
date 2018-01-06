@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b17492b0cc8531ac892bf8ead1c309f403d1da48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c9f2374af403c37f18d1aa91700e51bd038a71c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="buttontext-element"></a>■ ButtonText öğesi
 Bu alan çeşitli menülerde görüntülenen metni belirtmenize olanak sağlar. Varsayılan olarak, `ButtonText` öğe menü denetleyicileri görüntülenir. `ButtonText` Öğesi bir metin alanları boş ise varsayılan de olur. `ButtonText` Diğer metin alanları belirtilmese bile öğesi boş olamaz.  
@@ -43,10 +44,10 @@ Bu alan çeşitli menülerde görüntülenen metni belirtmenize olanak sağlar. 
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Dizeleri öğesi](../extensibility/strings-element.md)|Metin öğeleri gibi gruplar `ButtonText` ve `CommandName`.|  
+|[Strings Öğesi](../extensibility/strings-element.md)|Metin öğeleri gibi gruplar `ButtonText` ve `CommandName`.|  
   
 ## <a name="text-value"></a>Metin Değeri  
  Metin değerini `ButtonText` öğesi menü öğeleri, birleşik ve görünür metne sahip diğer kullanıcı arabirimi (UI) öğeleri için görüntülenen metin sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

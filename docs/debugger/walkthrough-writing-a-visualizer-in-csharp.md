@@ -7,11 +7,7 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: CSharp
 helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
@@ -20,11 +16,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd63f183d42111cfb8381b5fee86debbca6cd04e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: 6e161b3c914d0a87a720f1217b52a571b85f5ff9
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>İzlenecek Yol: C# ile Görselleştirici Yazma #
 Bu kılavuz, C# kullanarak basit Görselleştirici yazma gösterilmektedir. Bu kılavuzda oluşturacak Görselleştirici bir Windows forms ileti kutusu kullanarak bir dize içeriğini görüntüler. Bu basit bir dize Görselleştirici kendisini özellikle yararlı değildir, ancak diğer veri türleri için daha kullanışlı görselleştiriciler oluşturmak için izlemeniz gereken temel adımlarda gösterir.  
@@ -69,7 +66,7 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
   
 6.  Şu deyimi DebuggerSide.cs içinde eklemek `using` deyimleri:  
   
-    ```  
+    ```csharp  
     using Microsoft.VisualStudio.DebuggerVisualizers;  
     ```  
   
@@ -79,13 +76,13 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
   
 1.  DebuggerSide.cs içinde aşağıdaki kod satırına gidin:  
   
-    ```  
+    ```csharp  
     public class DebuggerSide  
     ```  
   
 2.  Kodla değiştirin:  
   
-    ```  
+    ```csharp  
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
@@ -95,8 +92,8 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
   
 -   İçinde `public class DebuggerSide`, aşağıdakileri ekleyin **yöntemi:**  
   
-    ```  
-    override protected void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
+    ```csharp  
+    protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
     {  
     }  
     ```  
@@ -113,7 +110,7 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
   
 4.  Şu deyimi DebuggerSide.cs içinde eklemek `using` deyimleri:  
   
-    ```  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
@@ -123,7 +120,7 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
   
 1.  İçinde `Show` yöntemi, aşağıdaki kod satırını ekleyin:  
   
-    ```  
+    ```csharp  
     MessageBox.Show(objectProvider.GetObject().ToString());  
     ```  
   
@@ -137,12 +134,12 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
   
 1.  DebuggerSide.cs için aşağıdaki öznitelik kodu ekleyin `using` deyimleri önce `namespace MyFirstVisualizer`:  
   
-    ```  
+    ```csharp  
     [assembly:System.Diagnostics.DebuggerVisualizer(  
     typeof(MyFirstVisualizer.DebuggerSide),  
     typeof(VisualizerObjectSource),  
-    Target  = typeof(System.String),  
-    Description  = "My First Visualizer")]  
+    Target = typeof(System.String),  
+    Description = "My First Visualizer")]  
     ```  
   
 2.  Üzerinde **yapı** menüsünde seçin **yapı MyFirstVisualizer**. Proje başarıyla oluşturması gerekir. Devam etmeden önce yapı hataları düzeltin.  
@@ -153,7 +150,7 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
   
 1.  Sınıfına aşağıdaki yöntemi ekleyin `public DebuggerSide`:  
   
-    ```  
+    ```csharp  
     public static void TestShowVisualizer(object objectToVisualize)  
     {  
        VisualizerDevelopmentHost visualizerHost = new VisualizerDevelopmentHost(objectToVisualize, typeof(DebuggerSide));  
@@ -203,13 +200,13 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
   
 3.  Aşağıdaki kodu TestConsole.cs içinde eklemek `using` deyimleri:  
   
-    ```  
+    ```csharp  
     using MyFirstVisualizer;  
     ```  
   
 4.  Yönteminde `Main`, aşağıdaki kodu ekleyin:  
   
-    ```  
+    ```csharp  
     String myString = "Hello, World";  
     DebuggerSide.TestShowVisualizer(myString);  
     ```  

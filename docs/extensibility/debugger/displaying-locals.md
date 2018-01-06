@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a00d57b8af1c32c2f94334e2930e8f92b166c89b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8566baec58e2dd95b42be8916b7d48131370e65e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="displaying-locals"></a>Yerel öğeler görüntüleme
 > [!IMPORTANT]
@@ -35,11 +36,11 @@ ms.lasthandoff: 10/31/2017
 >  **QuickWatch** ve **izleme** windows ayrıca değişkenleri ada, değere ve türü aynı biçiminde görüntüler. Ancak, bu değerleri çağırarak elde edilen [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) yerine `IDebugProperty2::EnumChildren`.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Yerel öğeler için örnek uygulama](../../extensibility/debugger/sample-implementation-of-locals.md)  
+ [Örnek Yerel Öğeler Uygulaması](../../extensibility/debugger/sample-implementation-of-locals.md)  
  Yerel öğeler uygulama işlemi boyunca size adım adım örnekler kullanır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Değerlendirme bağlamı](../../extensibility/debugger/evaluation-context.md)  
+ [Değerlendirme Bağlamı](../../extensibility/debugger/evaluation-context.md)  
  Hata ayıklama altyapısı (DE) ifade değerlendiricisi (EE) aradığında, bu üç bağımsız değişken geçtiğini açıklar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

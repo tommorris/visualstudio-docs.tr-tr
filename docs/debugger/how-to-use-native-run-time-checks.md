@@ -40,11 +40,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6dd581882231b64af03d34f53c3a5a67fa921e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: a36edb5901f8ab67360e276f6a8ff5a2a8d51530
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Nasıl Yapılır: Yerel Çalışma Zamanı Denetimlerini Kullanma
 Visual C++'da yerel kullanabilirsiniz [runtime_checks](/cpp/preprocessor/runtime-checks) ortak çalışma zamanı hataları gibi yakalamak için:  
@@ -83,4 +84,4 @@ Visual C++'da yerel kullanabilirsiniz [runtime_checks](/cpp/preprocessor/runtime
  [Visual Studio'da hata ayıklama](../debugger/index.md)  
  [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
- [Çalışma zamanı hata denetimi](/cpp/c-runtime-library/run-time-error-checking)
+ [Çalışma Zamanı Hata Denetimi](/cpp/c-runtime-library/run-time-error-checking)

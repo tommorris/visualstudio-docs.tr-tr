@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: 0ad7cdb245aa43deab22593fbbb5a5b10105f5af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2ac4cef411bb6304e4033de1850e6c428e34285e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>İzlenecek Yol: Kod Parçacığı Oluşturma
 Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapmanız gereken olan XML dosyası oluşturma, uygun öğeleri doldurun ve kodunuzu ekleyin. Kodunuzu başvuruları ve değiştirme parametreleri de ekleyebilirsiniz. Kod parçacıkları yöneticisinde İçe Aktar düğmesini kullanarak Visual Studio yüklemenizin kod parçacığını ekleyebilirsiniz (**Araçları**, **kod parçacıkları Yöneticisi...** ).  
@@ -252,4 +253,4 @@ Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapman
     ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[Kod parçacıkları şema başvurusu](../ide/code-snippets-schema-reference.md)
+[Kod Parçacıkları Şema Başvurusu](../ide/code-snippets-schema-reference.md)

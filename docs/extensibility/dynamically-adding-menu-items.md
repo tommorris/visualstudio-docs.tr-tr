@@ -16,11 +16,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb79bfa9938aade8ff138817073fad4897276184
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1eaa8cc41e7b27d509e68d6785c34a9ae214ffd3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dynamically-adding-menu-items"></a>Dinamik menü öğeleri ekleme
 Menü öğeleri çalışma zamanında belirterek ekleyebileceğiniz `DynamicItemStart` menü sayısı (kodda) tanımlama görüntüleme ve komutlar işleme öğelerini sonra Visual Studio komut-tablo (.vsct) dosyası bir yer tutucu düğmesi tanımında bayrağı komutu. VSPackage yüklendiğinde, yer tutucu Dinamik menü öğeleri ile değiştirilir.  
@@ -361,4 +362,4 @@ public sealed class DynamicMenuItemsPackage : Package
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Komutları, menüleri ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)   
- [Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

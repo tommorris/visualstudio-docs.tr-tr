@@ -13,11 +13,12 @@ caps.latest.revision: "42"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f702a834b925f13525db122934a5593d313e0ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b54dabbe00b0df920655b595cab32ed21126415b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-highlighting-text"></a>İzlenecek yol: Metni vurgulama
 Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşeni bölümleri oluşturarak düzenleyiciye farklı görsel efektler ekleyebilirsiniz. Bu kılavuz, bir metin dosyasındaki geçerli sözcüğü her geçtiği vurgulamak gösterilmiştir. Bir sözcük, bir metin dosyasına birden fazla kez oluşur ve bir yineleme şapka getirin, her oluşumu vurgulanır.  
@@ -408,4 +409,4 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşeni bölümleri oluştur
 4.  İmleç "hello" oluşumları getirin. Her oluşumu mavi renkte vurgulanmış olması gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: bir içerik türü için bir dosya adı uzantısı bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek Yol: Bir İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

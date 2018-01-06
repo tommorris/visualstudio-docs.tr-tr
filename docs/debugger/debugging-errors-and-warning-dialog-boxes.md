@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: VS.WebClient.AccessRequiredDialog
 dev_langs:
 - CSharp
@@ -24,11 +24,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b348bd05b6997a990033fd279f29dd5e23886cb6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 547c9befa5868aee669bc663bf5f7542e8d09ab7
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Hataları Ayıklama ve Uyarı İletişim Kutuları
 Hataları altındadır ve iletişim kutuları, uygulamanızın hata ayıklama sırasında karşılaşabileceğiniz uyarı.  
@@ -38,7 +39,7 @@ Hataları altındadır ve iletişim kutuları, uygulamanızın hata ayıklama s�
   
  [Değiştirilemez değeri iletişim kutusu](../debugger/cannot-change-value-dialog-box.md)  
   
- [Hata ayıklayıcı kaynak kodu veya ayrıştırılmış kodu görüntüleyemez](../debugger/debugger-cannot-display-source-code-or-disassembly.md)  
+ [Hata Ayıklayıcı Kaynak Kodu veya Ayrıştırılmış Kodu Görüntüleyemez](../debugger/debugger-cannot-display-source-code-or-disassembly.md)  
   
  [Hata ayıklama oturumu iletişim kutusu için yürütülebilir dosya](../debugger/executable-for-debugging-session-dialog-box.md)  
   

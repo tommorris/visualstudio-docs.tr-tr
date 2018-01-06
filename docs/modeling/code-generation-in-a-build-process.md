@@ -14,11 +14,12 @@ caps.latest.revision: "28"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 70200da27d102f0ec6b8231a680965e8ee420d44
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e26560740dd8d6f86d80dc5063a5c9b55cac8171
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-in-a-build-process"></a>Derleme Sürecinde Kod Oluşturma
 [Metin dönüştürmeyi](../modeling/code-generation-and-t4-text-templates.md) parçası olarak çağrılabilir [derleme işlemi](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) , bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözümü. Metin dönüştürme için özelleştirilmiş yapı görevleri vardır. T4 yapı görevleri tasarım zamanı metin şablonlarını çalıştırır ve aynı zamanda çalışma zamanı (önişlenmiş) metin şablonlarını derler.  
@@ -280,7 +281,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
   
 -   [TextTransform yardımcı programı](../modeling/generating-files-with-the-texttransform-utility.md) komut içinde kullanılabilir. Çoğu durumda, MSBuild kullanmak daha kolay olur.  
   
--   [Bir VS uzantısında metin dönüştürmeyi çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md)  
+-   [Bir VS Uzantısında Metin Dönüştürmeyi Çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md)  
   
 -   [Tasarım zamanı metin şablonları](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Visual Studio tarafından dönüştürülür.  
   
@@ -289,7 +290,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ## <a name="read-more"></a>Daha fazla bilgi edinin  
  T4 MSbuild şablonundaki rehber oldukça kullanışlıdır: $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets  
   
- [T4 metin şablonu yazma](../modeling/writing-a-t4-text-template.md)  
+ [T4 Metin Şablonu Yazma](../modeling/writing-a-t4-text-template.md)  
   
  [Oleg Sych: T4:MSBuild tümleştirme anlama](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
 

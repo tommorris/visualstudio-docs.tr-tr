@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 347ea483fda44d43d73b147a41a55f0945e515e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c3e51d02171455cd5b0b6051ed3b05c6d95278ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbols-and-symbol-tags"></a>Simgeler ve Simge Etiketleri
 Derlenmiş bir program hata ayıklama bilgilerini program veritabanı (.pdb) dosyasında hata ayıklama arabirimi erişim (DIA) SDK API'leri kullanılarak erişilebilir simgeler olarak depolanır. Tüm sembolleri sahip bir [Idiasymbol::get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) ve [Idiasymbol::get_symındexıd](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) özelliği. `symTag` Özelliği tarafından tanımlanan simgesi türünü gösterir [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) numaralandırması. `symIndexId` Özelliği bir `DWORD` bir simge, her örneği için benzersiz tanımlayıcı içeren değer.  
@@ -28,14 +29,14 @@ Derlenmiş bir program hata ayıklama bilgilerini program veritabanı (.pdb) dos
  Herhangi bir hata oluşur ve sembol özellik değeri atanan özellik erişmeye çalışırken özelliğin "yöntemi döndürür Al" `S_OK`. Dönüş değeri `S_FALSE` özelliği için geçerli sembolü geçerli olmadığını gösterir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Simge konumları](../../debugger/debug-interface-access/symbol-locations.md)  
+ [Simge Konumları](../../debugger/debug-interface-access/symbol-locations.md)  
  Bir simge olabilir konumların farklı türleri açıklanmaktadır.  
   
- [Simge türlerinin sözcük hiyerarşisi](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)  
+ [Simge Türlerinin Sözcük Hiyerarşisi](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)  
  Dosyaları, modüller ve işlevleri gibi sözcük hiyerarşileri form simgesi türleri açıklanmaktadır.  
   
- [Simge türlerinin sınıf hiyerarşisi](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
+ [Simge Türlerinin Sınıf Hiyerarşisi](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
  Sınıfları, dizileri ve işlev dönüş türleri gibi farklı dil öğelerine karşılık sembol türleri açıklanmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama arabirimi Erişim SDK'sı](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
+ [Arabirim Erişimi SDK'sında Hata Ayıklama](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

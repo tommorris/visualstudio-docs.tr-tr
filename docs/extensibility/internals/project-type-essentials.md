@@ -13,22 +13,23 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33f31ec1d5adedb2fac6c2a37c050ee65d774894
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 899d2758be1561d9b5fbda3280230333cc0ac8a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-type-essentials"></a>Proje türü temelleri
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]diller için birkaç proje türleri gibi içerir [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] veya [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Ayrıca, kendi proje türleri oluşturmanıza olanak tanır.  
   
  Özel komutlar, düzenleyiciler veya aracı windows eklemek istiyorsanız, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], yeni bir proje türü oluşturmadan bunu yapabilirsiniz. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Komutları, menüleri ve araç çubukları](../../extensibility/internals/commands-menus-and-toolbars.md)  
+-   [Komutlar, Menüler ve Araç Çubukları](../../extensibility/internals/commands-menus-and-toolbars.md)  
   
--   [Düzenleyici ve dil hizmeti uzantıları](../../extensibility/editor-and-language-service-extensions.md)  
+-   [Düzenleyici ve Dil Hizmeti Uzantıları](../../extensibility/editor-and-language-service-extensions.md)  
   
--   [Genişletme ve aracı Windows özelleştirme](../../extensibility/extending-and-customizing-tool-windows.md)  
+-   [Araç Pencerelerini Genişletme ve Özelleştirme](../../extensibility/extending-and-customizing-tool-windows.md)  
   
  Benzer şekilde, sağlanan davranışını özelleştirmek istiyorsanız [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ve [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] yapabileceğiniz proje türleri, proje türlerinde bunu kullanarak. Daha fazla bilgi için bkz: [proje Subtypes](../../extensibility/internals/project-subtypes.md).  
   
@@ -67,4 +68,4 @@ ms.lasthandoff: 10/31/2017
 -   Proje türleri hata ayıklama ve yayın gibi birden çok yapılandırmayı destekler. Kullanıcılar, sağladığınız özellik sayfalarını kullanarak bir proje farklı yapılandırmaları değiştirebilirsiniz. Daha fazla bilgi için bkz: [yönetme yapılandırma seçenekleri](../../extensibility/internals/managing-configuration-options.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje türleri dağıtma](../../extensibility/internals/deploying-project-types.md)
+ [Proje Türlerini Dağıtma](../../extensibility/internals/deploying-project-types.md)

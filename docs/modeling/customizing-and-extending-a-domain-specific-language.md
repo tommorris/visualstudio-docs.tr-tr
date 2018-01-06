@@ -12,11 +12,12 @@ caps.latest.revision: "48"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: efdd7f5358ce0ec4afd32ebaa8ff1fd8d117dc47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 976fbd25965c62e82f9b358f22c8fe3f2b83363e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Etki Alanına Özgü Dili Özelleştirme ve Genişletme
 Visual Studio modelleme ve görselleştirme SDK (VMSDK) modelleme araçları tanımlamak birkaç düzeyleri sağlar:  
@@ -65,16 +66,16 @@ Visual Studio modelleme ve görselleştirme SDK (VMSDK) modelleme araçları tan
 |Yapışkan araçları - kullanıcı birçok şekiller veya bağlayıcılar art arda oluşturmak için herhangi bir aracı çift tıklayabilirsiniz.|DSL Gezgini'nde seçin `Editor` düğümü. Özellikler penceresinde ayarlayın **kullanan Yapışkan araç kutusu öğelerini**.|  
 |Menü komutları tanımlayın|Bkz: [nasıl yapılır: standart menü komutu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
 |Model doğrulama kuralları ile sınırlayın|Bkz: [bir etki alanına özgü dil doğrulama](../modeling/validation-in-a-domain-specific-language.md)|  
-|Kod, yapılandırma dosyaları ya da belgeler DSL oluşturur.|[Bir etki alanına özgü dili kod oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)|  
+|Kod, yapılandırma dosyaları ya da belgeler DSL oluşturur.|[Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Modelleri nasıl kaydedileceğini özelleştirme dosyasına.|Bkz: [dosya depolama ve XML serileştirme özelleştirme](../modeling/customizing-file-storage-and-xml-serialization.md)|  
 |Modelleri veritabanları veya diğer medya kaydedin.|Geçersiz kılma *YourLanguage*DocData<br /><br /> Bkz: [dosya depolama ve XML serileştirme özelleştirme](../modeling/customizing-file-storage-and-xml-serialization.md)|  
 |Bunlar bir uygulamanın parçası olarak çalışmak üzere birkaç DSL'ler tümleştirin.|Bkz: [Visual Studio Modelbus kullanarak modelleri tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|  
-|Uzantı denetlemek ve üçüncü taraflar tarafından genişletilmesi, DSL izin verin.|[MEF kullanarak, DSL genişletme](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Sınıfları DSL kitaplığı kullanarak DSL'ler arasında paylaşma](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Salt okunur segmentleri oluşturmak için bir kilitleme ilkesi tanımlama](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
+|Uzantı denetlemek ve üçüncü taraflar tarafından genişletilmesi, DSL izin verin.|[MEF kullanarak DSL'nizi genişletme](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [DSL Kitaplığı Kullanarak DSL'ler Arasında Sınıfları Paylaşma](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)   
  [Bir etki alanına özgü dil kişiselleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Visual Studio - etki alanına özgü dil SDK Modelleme](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+ [Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

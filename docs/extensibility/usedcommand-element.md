@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b3974c9103a385badc56fda759ee95ef3a40a93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 06375b45e21e0b83c62f2509d666b786479ff2b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usedcommand-element"></a>UsedCommand öğesi
 Başka bir .vsct dosyasında tanımlanan bir komutuna erişmek bir VSPackage sağlar. Örneğin, standart, VSPackage kullanıyorsa, **kopya** tarafından tanımlanan komut [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell ekleyebileceğiniz komut menü veya araç çubuğuna yeniden uygulamadan.  
@@ -51,7 +52,7 @@ Başka bir .vsct dosyasında tanımlanan bir komutuna erişmek bir VSPackage sa�
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[UsedCommands öğesi](../extensibility/usedcommands-element.md)|Grupları UsedCommand öğeleri ve diğer UsedCommands gruplandırmaları.|  
+|[UsedCommands Öğesi](../extensibility/usedcommands-element.md)|Grupları UsedCommand öğeleri ve diğer UsedCommands gruplandırmaları.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bir komutu ekleyerek `<UsedCommands>` öğesi, bir VSPackage bildirir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ortamı VSPackage komutu gerektirir. Eklemeniz gereken bir `<UsedCommand>` öğesi paketinizi gerektiren herhangi bir komut için değil tüm sürümleri ve yapılandırmaları Visual Studio içinde bulunabilir. Paketinizi Visual C++ için özel bir komut çağırırsa eklemediğiniz sürece Örneğin, komut Visual Web Developer kullanıcılara kullanılamaz bir `<UsedCommand>` öğesi için komutu.  
@@ -68,4 +69,4 @@ Başka bir .vsct dosyasında tanımlanan bir komutuna erişmek bir VSPackage sa�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UsedCommands öğesi](../extensibility/usedcommands-element.md)   
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

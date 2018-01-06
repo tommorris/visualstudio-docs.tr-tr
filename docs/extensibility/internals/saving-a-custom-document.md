@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3cd6f5f45736a7b2578bc9df80a8472d3b50c3d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2b19c6ba222644bc9d5fb97874f50bf6a6aa59d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-a-custom-document"></a>Özel belge kaydetme
 Ortam tanıtıcıları **kaydetmek**, **Kaydet**, ve **Tümünü Kaydet** komutları. Bir kullanıcı tıkladığında **kaydetmek**, **Kaydet**, **veya Tümünü Kaydet** üzerinde **dosya** menüsü veya bir Tümünü Kaydet içinde aşağıdaki kaynaklanan çözüm kapatır işlem gerçekleşir.  
@@ -47,4 +48,4 @@ Kaydet Kaydet ve Tümünü Kaydet komut için özel bir düzenleyici işleme
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [Açıp kaydederek proje öğeleri](../../extensibility/internals/opening-and-saving-project-items.md)
+ [Proje Öğelerini Açma ve Kaydetme](../../extensibility/internals/opening-and-saving-project-items.md)

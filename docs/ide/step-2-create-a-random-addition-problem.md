@@ -12,11 +12,12 @@ caps.latest.revision: "27"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 9f26d2db9145599d941331dce646868aafa45cb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f275477c691d8cdfa60dc607b1d31cd1e042184f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2. Adım: Rasgele bir Toplama Problemi Oluşturma
 Bu öğreticinin ikinci bölümünde, test zor rasgele rakamlar temelinde matematik sorunları ekleyerek yapın. Adlı bir yöntem de oluşturma `StartTheQuiz()` ve sorunlarını doldurur ve geri sayım süreölçer başlatır. Daha sonra Bu öğreticide çıkarma, çarpma ve bölme problemleri ekleyeceksiniz.  

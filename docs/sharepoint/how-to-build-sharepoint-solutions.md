@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e198cce23f29cc00079c2bd60077ade3663bc8b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38cd54bdfb29bdc0966a0ad56817720814f38a47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Nasıl yapılır: SharePoint Çözümleri Derleme
   SharePoint çözüm oluşturma Visual Studio'da diğer uygulamaları yapılandırmaktan farklı değildir. Uygulamaları yapılandırma hakkında daha fazla bilgi için bkz: [derleme ve Visual Studio'da derleme](/visualstudio/ide/compiling-and-building-in-visual-studio). SharePoint çözümleri için belirli bazı noktalar tartışma için bkz [nasıl yapılır: dağıtma ve bir SharePoint çözümünü yerel bir SharePoint sitesine yayımlama](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
@@ -36,6 +37,6 @@ ms.lasthandoff: 10/31/2017
 3.  Menü çubuğunda seçin **yapı**, **yapı çözümü**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+ [SharePoint Çözümleri Oluşturma ve Hatalarını Ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
   

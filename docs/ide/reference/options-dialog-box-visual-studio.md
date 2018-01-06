@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b196adf16359c640ba08495b36f4ba428cf8ba48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc5a5013b402d01db8aa84134c9a2740d0ff6304
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-dialog-box-visual-studio"></a>Seçenekler İletişim Kutusu (Visual Studio)
 **Seçenekleri** iletişim kutusu gereksinimlerinize tümleşik geliştirme ortamı (IDE) yapılandırmanıza olanak sağlar. Örneğin, bir varsayılan kaydetme konumu projeleriniz için kurmak, varsayılan görünümü ve davranışı, Windows'un alter ve sık kullanılan komutlar için kısayolları oluşturun. Ayrıca seçenekler vardır, geliştirme dilini ve platform özel. Erişebileceğiniz **seçenekleri** gelen **Araçları** menüsü.  
@@ -45,4 +46,4 @@ ms.lasthandoff: 10/31/2017
  Seçerek veya unselecting **tüm ayarları göster** içinde yaptığınız tüm değişiklikleri geçerli **seçenekleri** iletişim kutusu, değil henüz tıklattığınız olsa bile **Tamam**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Düzenleyiciyi özelleştirme](../../ide/customizing-the-editor.md)
+ [Düzenleyiciyi Özelleştirme](../../ide/customizing-the-editor.md)

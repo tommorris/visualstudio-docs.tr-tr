@@ -15,11 +15,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d746d874b7efe18b1bd8dabf15804f1c05b57ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df78a45b5bc5dded132b58cb37b87d4198ad1e7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-editor"></a>Görüntü Düzenleyici
 Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] doku ve görüntü kaynakları görüntülemek ve değiştirmek için görüntü Düzenleyicisi.  
@@ -113,8 +114,8 @@ Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-qu
 |**Görünüm önceki MIP düzeyi**|Daha küçük MIP düzeydeki MIP harita zincirindeki etkinleştirir. Etkin MIP düzeyi tasarım yüzeyine görüntülenir. Bu öğe yalnızca MIP düzeylerine sahip dokular için kullanılabilir.|  
 |**Kırmızı kanalı**<br /><br /> **Yeşil kanal**<br /><br /> **Mavi kanal**<br /><br /> **Alfa kanal**|Etkinleştirir veya belirli bir renk kanal devre dışı bırakır. **Not:** sistematik olarak etkinleştirme veya renk kanalları devre dışı bırakarak, bir veya daha fazlası ile ilgili sorunları ayırabilirsiniz. Örneğin, hatalı Alfa Saydamlığı tanımlayabilirsiniz.|  
 |**Arka plan**|Etkinleştirir veya arka plan resminin saydam bölümleri aracılığıyla görüntülenmesini devre dışı bırakır. Aşağıdaki seçeneklerden birini seçerek arka nasıl görüntüleneceğini yapılandırabilirsiniz:<br /><br /> **Damalı**<br /> Arka plan Damalı bir desen göstermek için yeşil bir renk belirtilen arka plan rengini birlikte kullanır. Resmin saydam bölümlerini daha belirgin olmasına yardımcı olmak için bu seçeneği kullanın.<br /><br /> Beyaz arka plan<br /> Rengi beyaz arka plan görüntülemek için kullanır.<br /><br /> Siyah arka plan<br /> Siyah renk, arka plan görüntülemek için kullanır.<br /><br /> Arka plan animasyon ekleme<br /> Dama deseni yavaş yatay kaydırır. Resmin saydam bölümlerini daha belirgin olmasına yardımcı olmak için bu seçeneği kullanın.|  
-|**Veri Erişimi**|Alternatif olarak açar veya kapatır **özellikleri** penceresi.|  
-|**Gelişmiş**|Ek komutlar ve seçenekler içerir.<br /><br /> **Filtreleri**<br /><br /> Birçok ortak resmi filtreleri sağlar: **siyah beyaz**, **Ölçeklendirilmelidir**, **Brighten**, **Koyulaştır**, **kenar algılama**, **Kabartma**, **renkleri ters çevir**, **Ripple**, **sepya**, ve **keskinleştirme**.<br /><br /> **Grafik motorları**<br /><br /> **D3D11 ile işleme**<br /> Görüntü Düzenleyicisi tasarım yüzeyi işlemek için Direct3D 11 kullanır.<br /><br /> **D3D11WARP ile işleme**<br /> Görüntü Düzenleyicisi tasarım yüzeyi işlemek için Direct3D 11 Windows Gelişmiş Tarama Platform (TÜNELİ) kullanır.<br /><br /> **Araçları**<br /><br /> **Yatay Ters Çevir**<br /> Görüntünün yatay ya da x ekseni etrafında'ye dönüştürür.<br /><br /> **Dikey Ters Çevir**<br /> Görüntünün dikey veya y ekseni etrafında'ye dönüştürür.<br /><br /> **MIPS oluştur**<br /> Görüntü için MIP düzeylerini oluşturur. MIP düzeyleri zaten varsa, bunlar büyük MIP düzeyden yeniden oluşturulur. Daha küçük MIP düzeylere yapılan değişiklikler kaybolur. Oluşturulan MIP düzeyleri kaydetmek için görüntüsünü kaydetmek için .dds biçimi kullanmanız gerekir.<br /><br /> **Görünümü**<br /><br /> **Kare hızı**<br /> Etkinleştirildiğinde, kare hızı tasarım yüzeyine sağ üst köşesinde görüntülenir. Kare hızı, saniye başına çizilen çerçeve sayısıdır. **İpucu:** seçebileceğiniz **Gelişmiş** düğmesi son komutu yeniden çalıştırın.|  
+|**Özellikler**|Alternatif olarak açar veya kapatır **özellikleri** penceresi.|  
+|**Gelişmiş**|Ek komutlar ve seçenekler içerir.<br /><br /> **Filtreler**<br /><br /> Birçok ortak resmi filtreleri sağlar: **siyah beyaz**, **Ölçeklendirilmelidir**, **Brighten**, **Koyulaştır**, **kenar algılama**, **Kabartma**, **renkleri ters çevir**, **Ripple**, **sepya**, ve **keskinleştirme**.<br /><br /> **Grafik motorları**<br /><br /> **D3D11 ile işleme**<br /> Görüntü Düzenleyicisi tasarım yüzeyi işlemek için Direct3D 11 kullanır.<br /><br /> **D3D11WARP ile işleme**<br /> Görüntü Düzenleyicisi tasarım yüzeyi işlemek için Direct3D 11 Windows Gelişmiş Tarama Platform (TÜNELİ) kullanır.<br /><br /> **Araçlar**<br /><br /> **Yatay Ters Çevir**<br /> Görüntünün yatay ya da x ekseni etrafında'ye dönüştürür.<br /><br /> **Dikey Ters Çevir**<br /> Görüntünün dikey veya y ekseni etrafında'ye dönüştürür.<br /><br /> **MIPS oluştur**<br /> Görüntü için MIP düzeylerini oluşturur. MIP düzeyleri zaten varsa, bunlar büyük MIP düzeyden yeniden oluşturulur. Daha küçük MIP düzeylere yapılan değişiklikler kaybolur. Oluşturulan MIP düzeyleri kaydetmek için görüntüsünü kaydetmek için .dds biçimi kullanmanız gerekir.<br /><br /> **Görünümü**<br /><br /> **Kare hızı**<br /> Etkinleştirildiğinde, kare hızı tasarım yüzeyine sağ üst köşesinde görüntülenir. Kare hızı, saniye başına çizilen çerçeve sayısıdır. **İpucu:** seçebileceğiniz **Gelişmiş** düğmesi son komutu yeniden çalıştırın.|  
   
  Burada **görüntü Düzenleyicisi** araç.  
   
@@ -271,6 +272,6 @@ Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-qu
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Oyunları ve uygulamaları için 3-b varlıklar ile çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md)|Kullanabileceğiniz araçları genel bir bakış sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dokuları, görüntüler, 3-b modellere ve gölgelendirici etkileri gibi grafik varlıklar çalışmak için.|  
+|[Oyunlar ve Uygulamalar için 3B Varlıklarla Çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md)|Kullanabileceğiniz araçları genel bir bakış sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dokuları, görüntüler, 3-b modellere ve gölgelendirici etkileri gibi grafik varlıklar çalışmak için.|  
 |[Model Düzenleyicisi](../designers/model-editor.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Model Düzenleyicisi'ni 3-b modelleriyle çalışacak.|  
 |[Gölgelendirici Tasarımcısı](../designers/shader-designer.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gölgelendirici Designer'ın gölgelendiriciler ile çalışır.|

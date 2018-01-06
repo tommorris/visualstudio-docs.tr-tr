@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f8422e4333c1f1ccffc928ce9a43e4afa53cc7a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 168aa0f7b93d20afaa30924dc17f05e0cac465bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage yapısı (kaynak denetimi VSPackage)
 Kaynak denetimi paket SDK'sı bir VSPackage oluşturma yönergeleri izin bilgilendirilmesine kaynak denetim işlevselliği ile tümleştirmek bir kaynak denetimi uygulayan sağlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ortamı. Bir VSPackage genellikle isteğe bağlı yüklenen bir COM bileşeni olduğundan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE) bağlı olarak, kayıt defteri girdileri paket tarafından tanıtılan Hizmetleri. Her VSPackage uygulamalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Bir VSPackage genellikle tarafından sunulan hizmetlerin tükettiği [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE ve bazı hizmetler kendi proffers.  

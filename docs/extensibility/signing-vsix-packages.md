@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5a27b4e76e0cd8f986441778ed39c7fbb5a2211
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec875e6877b1c3ff1edf38b29c5e72b757021085
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="signing-vsix-packages"></a>VSIX paket imzalama
 Uzantı derlemeleri Visual Studio'da çalıştırabilirsiniz ancak bunu yapmak için iyi bir uygulama olmasından önce oturum açmanız gerekmez.  
@@ -39,7 +40,7 @@ Uzantı derlemeleri Visual Studio'da çalıştırabilirsiniz ancak bunu yapmak i
   
 1.  VSIX bir projeye ekleyin.  
   
-2.  Çözüm Gezgini'nde, proje düğümüne sağ tıklayın seçerek **Ekle &#124; NuGet paketlerini Yönet**.  NuGet ve NuGet paketleri bakın ekleme hakkında daha fazla bilgi için bkz: [NuGet belgelerine](http://docs.microsoft.com/NuGet) ve [Paket Yöneticisi kullanıcı Arabirimi](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI) Konular.  
+2.  Çözüm Gezgini'nde, proje düğümüne sağ tıklayın seçerek **Ekle &#124; NuGet paketlerini Yönet**.  NuGet ve NuGet paketleri bakın ekleme hakkında daha fazla bilgi için bkz: [NuGet belgelerine](/NuGet) ve [Paket Yöneticisi kullanıcı Arabirimi](/NuGet/Tools/Package-Manager-UI) Konular.  
   
 3.  VisualStudioExtensibility gelen VSIXSignTool arayın ve NuGet paketini yükleyin.  
   
@@ -50,4 +51,4 @@ Uzantı derlemeleri Visual Studio'da çalıştırabilirsiniz ancak bunu yapmak i
  VSIXSignTool.exe oturum /f \<SertifikaDosyası > /p \<parola > \<VSIXfile >  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio uzantıları aktarma](../extensibility/shipping-visual-studio-extensions.md)
+ [Visual Studio Uzantıları Gönderme](../extensibility/shipping-visual-studio-extensions.md)

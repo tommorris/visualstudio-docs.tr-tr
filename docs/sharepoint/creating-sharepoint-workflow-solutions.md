@@ -25,11 +25,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 256eaf2b451f91abdcc90c2beeedb7f689e95db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 97283921205eaf70c77c054b269ee56f0e1adcd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>SharePoint İş Akışı Çözümleri Oluşturma
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]bir SharePoint Web sitesinde liste öğelerini ve belgeleri yaşam döngüsünü yönetme özel iş akışları oluşturmanıza yardımcı olacak araçlar sağlar. Sağlanan öğeler bir tasarımcı, etkinlik denetimleri kümesini ve gerekli derleme başvurularını içerir. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ayrıca içerir **SharePoint Özelleştirme Sihirbazı'nı**, oluşturma ve iş akışlarını yapılandırma yardımcı olacak.  
@@ -139,15 +140,15 @@ ms.lasthandoff: 10/31/2017
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[İzlenecek yol: Oluşturma ve bir SharePoint iş akışı çözümü hata ayıklama](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Oluşturma ve basit bir hata ayıklama üzerinden adım adım sizi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] iş akışı.|  
-|[İzlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Adım adım daha tam özellikli oluşturmak için sizi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] iş akışı ilişkilendirme ve başlatma formları ile tamamlayın.|  
-|[İzlenecek yol: bir uygulama sayfasını bir iş akışına ekleme](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Konunun derlemeler [izlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) iş akışına girilen verilerin raporları ek .aspx uygulama sayfası ekleyerek.|  
-|[İzlenecek yol: özel Site iş akışı etkinliği oluşturma](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|İki anahtar görevlerinin nasıl gerçekleştirileceğini gösterir: bir site düzeyinde iş akışı oluşturmak ve bir özel iş akışı etkinliği oluşturma.|  
-|[İzlenecek yol: bir SharePoint Tasarımcısı yeniden kullanılabilir iş akışını Visual Studio'ya içeri aktarma](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|SharePoint Designer 2010'a oluşturulan yeniden kullanılabilir bildirim temelli iş akışlarını içeri aktarma gösteren bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.|  
+|[İzlenecek yol: Bir SharePoint İş Akışı Çözümü Oluşturma ve Hatalarını Ayıklama](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Oluşturma ve basit bir hata ayıklama üzerinden adım adım sizi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] iş akışı.|  
+|[İzlenecek yol: İlişkilendirme ve Başlatma Formları ile İş Akışı Oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Adım adım daha tam özellikli oluşturmak için sizi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] iş akışı ilişkilendirme ve başlatma formları ile tamamlayın.|  
+|[İzlenecek yol: Bir Uygulama Sayfasını Bir İş Akışına Ekleme](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Konunun derlemeler [izlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) iş akışına girilen verilerin raporları ek .aspx uygulama sayfası ekleyerek.|  
+|[İzlenecek yol: Özel Site İş Akışı Faaliyeti Oluşturma](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|İki anahtar görevlerinin nasıl gerçekleştirileceğini gösterir: bir site düzeyinde iş akışı oluşturmak ve bir özel iş akışı etkinliği oluşturma.|  
+|[İzlenecek yol: Bir SharePoint Tasarımcısı Yeniden Kullanılabilir İş Akışını Visual Studio'ya İçeri Aktarma](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|SharePoint Designer 2010'a oluşturulan yeniden kullanılabilir bildirim temelli iş akışlarını içeri aktarma gösteren bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)   
  [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [SharePoint için uygulama sayfaları oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md)  
+ [SharePoint için Uygulama Sayfaları Oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md)  
   
   

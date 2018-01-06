@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f7499aba9d7458ca1bf834bb168a25c6a6ae9b5c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8f9d26b727281c3443549bd38afce5d9da043334
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Araçları ve Araç Kutusunu Özelleştirme
 Kullanıcıların kendi model ekleme izin vermek istediğiniz öğeleri için araç kutusu öğelerini tanımlamanız gerekir. Araçlar iki tür vardır: öğesi araçları ve bağlantı araçları. Oluşturulan Tasarımcısı'nda kullanıcı şekiller diyagrama sürüklemek için bir öğe aracı seçebilirsiniz ve bağlantıları arasında şekiller çizmek için bir bağlantı aracı seçebilirsiniz. Genel olarak, kullanıcı etki alanı sınıfların örnekleri için modellerini Ekle öğesi araçları sağlar ve bunları etki alanı ilişkilerini örneklerini eklemek bağlantı araçları sağlayabilirsiniz.  
@@ -29,7 +30,7 @@ Kullanıcıların kendi model ekleme izin vermek istediğiniz öğeleri için ar
   
 -   [Araç kutusu nasıl tanımlanır](#ToolboxDef)  
   
--   [Öğe araçları özelleştirme](#customizing)  
+-   [Öğe Araçlarını Özelleştirme](#customizing)  
   
 -   [Bir aracından öğelerinin grupları oluşturma](#groups)  
   

@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9687e4f0be16fb42f13c6f9dd20a2cb39be50cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 00716142e7f91d01fbc81c5d25b378065cb44f92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Genel ayarları izlemek için metin Yöneticisi'ni kullanma
 Bir çekirdek Düzenleyici uygularsanız, bu değişiklikleri Düzenleyicisi örneğiniz etkileyebilecek çünkü genel ayarlarına yapılan değişiklikleri izlemeniz gerekir. Metin Yöneticisi tarafından başlatılan olayları dinleyerek değişiklikleri izleyebilirsiniz. Örneğin, çekirdek düzenleyicisinde, kendi belge veri nesnesi gibi bir bileşen davranışını veya görünümünü için genel bir tercih belirttiğinizde metin Yöneticisi bu bilgileri depolar ve tüm etkilenen istemcilere iletişim kurar.  

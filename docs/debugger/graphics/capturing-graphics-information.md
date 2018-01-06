@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68e02e99eb621a5f7884e9848f0065fa0220be92
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 89488533ab8ba36b0344faa7f0b800d8c4ecc6ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="capturing-graphics-information"></a>Grafik Bilgilerini Yakalama
 Böylece işleme sorunları ve performans sorunları tanılamak için Visual Studio grafik Çözümleyicisi kullanabilirsiniz Direct3D uygulamanızdan grafik bilgilerini yakalama.  
@@ -87,4 +88,4 @@ Böylece işleme sorunları ve performans sorunları tanılamak için Visual Stu
  Grafik bilgilerini komut satırı aracını kullanarak bir uygulamadan yakalanır. Bu araç, DXCap.exe, hızlı bir şekilde yakalamak ve Visual Studio veya programlı yakalama kullanmadan grafik bilgilerini çalmak. Özellikle, otomasyon için ya da bir test ortamında DXCap.exe kullanabilirsiniz. DXCap.exe hakkında daha fazla bilgi için bkz: [yakalama komut satırı aracı](command-line-capture-tool.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Grafik bilgilerini yakalama](walkthrough-capturing-graphics-information.md)
+ [İzlenecek Yol: Grafik Bilgilerini Yakalama](walkthrough-capturing-graphics-information.md)

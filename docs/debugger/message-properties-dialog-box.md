@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - message options
 - message options, General
@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4a1516219df404b6447a9e95ae676d482cea7f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ab11a037a5cf9d313e3269a5c3c8df464b120006
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="message-properties-dialog-box"></a>İleti Özellikleri İletişim Kutusu
 Belirli bir ileti hakkında daha fazla bilgi için bu iletişim kutusunu kullanın. Bu iletişim kutusunu görüntülemek için odağı taşımak bir [iletiler görünümünü](../debugger/messages-view.md) penceresi. Ağacında herhangi bir ileti düğümü seçin ve ardından **özellikleri** gelen **Görünüm** menüsü.  
@@ -51,7 +52,7 @@ Belirli bir ileti hakkında daha fazla bilgi için bu iletişim kutusunu kullan�
  [İleti arama iletişim kutusu](../debugger/message-search-dialog-box.md)  
  Düğüm iletiler görünümünde belirli bir ileti bulmak için kullanılır.  
   
- [Spy ++ başvurusu](../debugger/spy-increment-reference.md)  
+ [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
  Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümleri içerir.  
   
  [Bul penceresinden iletiler görünümünü açma](../debugger/how-to-open-messages-view-from-find-window.md)  
@@ -60,11 +61,11 @@ Belirli bir ileti hakkında daha fazla bilgi için bu iletişim kutusunu kullan�
  [İletiler görünümünde ileti arama](../debugger/how-to-search-for-a-message-in-messages-view.md)  
  Belirli bir ileti iletiler görünümünde bulmak açıklanmaktadır.  
   
- [İletiler görünümü](../debugger/messages-view.md)  
+ [İletiler Görünümü](../debugger/messages-view.md)  
  Pencere, işlem veya iş parçacığı ile ilişkili ileti akışı görüntüler.  
   
- [Spy ++ görünümleri](../debugger/spy-increment-views.md)  
+ [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
  Windows, iletileri, işlemleri ve iş parçacıklarının Spy ++ ağaç görünümler açıklanmaktadır.  
   
- [Spy ++ kullanma](../debugger/using-spy-increment.md)  
+ [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.

@@ -19,11 +19,12 @@ caps.latest.revision: "82"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 60840f3d47b43ea84bec66ea7957f613d2379901
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3ca05f93fd4753c8a00eb1a5dee4c4bc9a2f4efc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Kod Oluşturma ve T4 Metin Şablonları
 İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *T4 metin şablonu* metin blokları ve bir metin dosyası oluşturabilirsiniz Denetim mantığı bileşimi değil. Program kodunda parçalarını olarak Denetim mantığı yazılır [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veya [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Visual Studio 2015 güncelleştirme 2 ve daha sonra T4 şablonları yönergeleri C# sürüm 6.0 özelliklerini kullanabilirsiniz. Oluşturulan dosyanın bir Web sayfası veya bir kaynak dosya veya program herhangi bir dilde kaynak kodu gibi herhangi bir türde metin olabilir.  
@@ -97,29 +98,29 @@ namespace Fabrikam.FirstJob
  Metin şablonu dönüştürme özelliği adlı *T4*.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [T4 metin şablonları ile çalışma süresi metni oluşturma](../modeling/run-time-text-generation-with-t4-text-templates.md)  
+ [T4 Metin Şablonları İle Çalışma Süresi Metni Oluşturma](../modeling/run-time-text-generation-with-t4-text-templates.md)  
  Metin dosyaları oluşturan herhangi bir uygulama, önceden derlenmiş metin şablonları metin tanımlama, kolay ve güvenilir bir yöntemdir. Ancak, bu yöntem, çalışma zamanında değiştirme metin şablonları için kullanılamaz.  
   
- [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
+ [T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
  Kod ve diğer kaynakların bir modelde oluşturma, uygulamanız tarafından modeli güncelleştirmek olanak tanır.  
   
- [Derleme sürecinde kod oluşturma](../modeling/code-generation-in-a-build-process.md)  
+ [Derleme Sürecinde Kod Oluşturma](../modeling/code-generation-in-a-build-process.md)  
  Yüklediyseniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görselleştirme ve modelleme SDK, sağlamak oluşturulan yazılım tutar değişikliklerle güncel modelde.  
   
- [T4 metin şablonu yazma](../modeling/writing-a-t4-text-template.md)  
+ [T4 Metin Şablonu Yazma](../modeling/writing-a-t4-text-template.md)  
  Metin şablonu dosyasının söz dizimi.  
   
- [İzlenecek yol: Metin şablonları kullanarak kod oluşturma](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
+ [İzlenecek Yol: Metin Şablonları Kullanarak Kod Oluşturma](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
  Kod oluşturma kullanmanın tek yolu Tanıtımı.  
   
- [T4 metin şablonuna ilişkin hata ayıklama](../modeling/debugging-a-t4-text-template.md)  
+ [Bir T4 Metin Şablonuna İlişkin Hata Ayıklama](../modeling/debugging-a-t4-text-template.md)  
  Metin şablonları ve bazı genel metin şablonu hatalarını ayıklamak üzere nasıl.  
   
- [TextTransform yardımcı programı ile dosyalar oluşturma](../modeling/generating-files-with-the-texttransform-utility.md)  
+ [TextTransform Yardımcı Programı ile Dosya Oluşturma](../modeling/generating-files-with-the-texttransform-utility.md)  
  Metin şablonu dönüştürme çalıştırmak için kullanabileceğiniz komut satırı aracı.  
   
- [T4 metin dönüştürmeyi özelleştirme](../modeling/customizing-t4-text-transformation.md)  
+ [T4 Metin Dönüştürmeyi Özelleştirme](../modeling/customizing-t4-text-transformation.md)  
  Yönerge işlemcileri ve kendi veri kaynakları için özel şablon konaklar Yaz yapma.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir etki alanına özgü dili kod oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)
+ [Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)

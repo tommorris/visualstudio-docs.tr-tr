@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 38b4415a24a7440a2d3725fb1183863e7a337bbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d3277a4e24b12d409654548b5670a4d47fa9539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tool-windows-in-the-registry"></a>Kayıt defterinde araç pencereleri
 Araç pencereleri sağlamak VSPackages kaydetmeniz gerekir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] olarak araç penceresi sağlayıcıları. Varsayılan olarak bunu Visual Studio Paketi şablonu kullanılarak oluşturulan araç pencereleri. Araç penceresi sağlayıcıları varsayılan aracı pencere boyutunu ve konumunu, aracı pencere bölmesine ve yerleştirme stilini hizmet veren penceresinin GUID gibi görünürlük öznitelikleri belirtin sistem kayıt defteri anahtarlarının vardır.  
@@ -43,4 +44,4 @@ Araç pencereleri sağlamak VSPackages kaydetmeniz gerekir [!INCLUDE[vsprvs](../
  İkinci isteğe bağlı anahtar ToolWindows\Visibility, görünür duruma getirilmek üzere araç penceresi gerektiren komutlar GUID'lerini belirtir. Bu durumda, belirtilen hiçbir komut vardır. Daha fazla bilgi için bkz: [araç penceresi ekran yapılandırması](../extensibility/tool-window-display-configuration.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [VSPackages](../extensibility/internals/vspackages.md)
+ [VSPackage’lar](../extensibility/internals/vspackages.md)

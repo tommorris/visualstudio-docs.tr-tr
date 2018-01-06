@@ -18,15 +18,16 @@ author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 72ac4518025648c5f2f84b021cba25979906b792
-ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
-ms.translationtype: HT
+ms.workload: kaseyu
+ms.openlocfilehash: 1eaef82dd904c867510770a1850d5893434a78e1
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET EditorConfig kuralı ayarlarını kodlama
 
-Visual Studio 2017 içinde tanımlamak ve tutarlı kod stilde korumak, kullanımı ile codebase bir [EditorConfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options) dosya. EditorConfig içeren birkaç çekirdek biçimlendirme özellikleri, gibi `indent_style` ve `indent_size`. Visual Studio'da .NET kuralları ayarları kodlama EditorConfig dosyasını kullanarak da yapılandırılabilir. EditorConfig dosyaları etkinleştirmek veya devre dışı kodlama kuralları tek tek .NET ve bir önem düzeyi zorlanan kuralı istediğiniz derece yapılandırmak için izin verin. EditorConfig temelinizde tutarlılığı zorlamak için nasıl kullanılacağı hakkında daha fazla bilgi için okuma [oluşturma taşınabilir özel düzenleyici seçenekleri](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options). Ayrıca bakabilir [.NET derleyici platformun .editorconfig dosya](https://github.com/dotnet/roslyn/blob/master/.editorconfig) bir örnek olarak.
+Visual Studio 2017 içinde tanımlamak ve tutarlı kod stilde korumak, kullanımı ile codebase bir [EditorConfig](../ide/create-portable-custom-editor-options.md) dosya. EditorConfig içeren birkaç çekirdek biçimlendirme özellikleri, gibi `indent_style` ve `indent_size`. Visual Studio'da .NET kuralları ayarları kodlama EditorConfig dosyasını kullanarak da yapılandırılabilir. EditorConfig dosyaları etkinleştirmek veya devre dışı kodlama kuralları tek tek .NET ve bir önem düzeyi zorlanan kuralı istediğiniz derece yapılandırmak için izin verin. EditorConfig temelinizde tutarlılığı zorlamak için nasıl kullanılacağı hakkında daha fazla bilgi için okuma [oluşturma taşınabilir özel düzenleyici seçenekleri](../ide/create-portable-custom-editor-options.md). Ayrıca bakabilir [.NET derleyici platformun .editorconfig dosya](https://github.com/dotnet/roslyn/blob/master/.editorconfig) bir örnek olarak.
 
 Üç desteklenen .NET kodlama kuralı kategoriye ayrılır:
 
@@ -971,7 +972,7 @@ if (func != null) { func(args); }
 ```
 # CSharp code style settings:
 [*.cs]
-csharp_style_throw_expression = true:suggestions:
+csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = false:suggestion
 ```
 

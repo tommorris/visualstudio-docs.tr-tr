@@ -16,11 +16,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec2b7a18dac9616db1743a50539c2860caca2e26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1137c8c5c6041b41e8cbdc0e13d43b6188bd1b1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-components"></a>Hata ayıklayıcı bileşenleri
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Hata ayıklayıcı VSPackage uygulanır ve tüm hata ayıklama oturumu yönetir. Hata ayıklama oturumu aşağıdaki öğeleri içerir:  
@@ -42,38 +43,38 @@ ms.lasthandoff: 10/31/2017
  ![Hata ayıklama bileşenlerine genel bakış](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Paket hata ayıklama](../../extensibility/debugger/debug-package.md)  
+ [Paket Hatalarını Ayıklama](../../extensibility/debugger/debug-package.md)  
  Çalışan hata ayıklama paket anlatılmaktadır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kabuk ve tüm UI işler.  
   
  [İşlem Hata Ayıklama Yöneticisi](../../extensibility/debugger/process-debug-manager.md)  
  Hata ayıklaması yapılabilir işlemler yöneticisi PDM özelliklerine genel bakış sağlar.  
   
- [Oturum hata ayıklama Yöneticisi](../../extensibility/debugger/session-debug-manager.md)  
+ [Oturum Hata Ayıklama Yöneticisi](../../extensibility/debugger/session-debug-manager.md)  
  Hata ayıklama oturumu birleşik bir görünümünü sağlar IDE SDM tanımlar. SDM DE yönetir.  
   
- [Altyapısı hata ayıklama](../../extensibility/debugger/debug-engine.md)  
+ [Hata Ayıklama Altyapısı](../../extensibility/debugger/debug-engine.md)  
  DE sağladığı hata ayıklama Hizmetleri belgeleri.  
   
- [İşlem modları](../../extensibility/debugger/operational-modes.md)  
+ [Çalışma Modları](../../extensibility/debugger/operational-modes.md)  
  IDE çalışabilir üç modu genel bir bakış sağlar: Tasarım modunda, çalışma modunda ve kesme modu. Geçiş mekanizmaları da ele alınmıştır.  
   
- [İfade değerlendirici](../../extensibility/debugger/expression-evaluator.md)  
+ [İfade Değerlendirici](../../extensibility/debugger/expression-evaluator.md)  
  EE amacını çalışma zamanında açıklar.  
   
- [Sembol sağlayıcısı](../../extensibility/debugger/symbol-provider.md)  
+ [Sembol Sağlayıcısı](../../extensibility/debugger/symbol-provider.md)  
  Değişkenleri ve ifadeler uygulama simgesi sağlayıcısı nasıl değerlendirir açıklanır.  
   
- [Türü Görselleştirici ve özel Görüntüleyicisi](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)  
+ [Tür Görselleştiricisi ve Özel Görüntüleyici](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)  
  Ne anlatılmaktadır türü Görselleştirici ve özel Görüntüleyicisi ve ifade değerlendiricisi hangi rolü oynar her ikisi de destekleme.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Hata ayıklayıcı kavramları](../../extensibility/debugger/debugger-concepts.md)  
+ [Hata Ayıklayıcı Kavramları](../../extensibility/debugger/debugger-concepts.md)  
  Ana hata ayıklama mimari kavramlarını açıklar.  
   
- [Hata ayıklayıcı bağlamları](../../extensibility/debugger/debugger-contexts.md)  
+ [Hata Ayıklayıcı Bağlamları](../../extensibility/debugger/debugger-contexts.md)  
  Nasıl DE aynı anda kod, belgeler ve ifade değerlendirme bağlamı içinde çalıştığı açıklanmaktadır. , Her üç bağlamları, konum, konum veya değerlendirme için ilgili açıklar.  
   
- [Hata ayıklama görevleri](../../extensibility/debugger/debugging-tasks.md)  
+ [Hata Ayıklama Görevleri](../../extensibility/debugger/debugging-tasks.md)  
  Bir program başlatma ve ifadeleri değerlendirme gibi çeşitli hata ayıklama görevlere bağlantılar içerir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

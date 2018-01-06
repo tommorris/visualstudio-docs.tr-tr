@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed697205a5cd7d866df639e2908e3cc0b4fa2f72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9e930a9e78fb1d91bc5738256e0555f3949829c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 Bu arabirimi uygulayan nesneler koleksiyonunu temsil eder [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) arabirimi.  
@@ -40,7 +41,7 @@ IEnumDebugFields : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Sonraki](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Bir sonraki kümesini alır [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) nesnelerinin numaralandırması.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Bir sonraki kümesini alır [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) nesnelerinin numaralandırması.|  
 |[Atla](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Belirtilen sayıda girişleri atlar.|  
 |[Sıfırla](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Numaralandırma ilk girişe sıfırlar.|  
 |[Kopya](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|Geçerli numaralandırmada bir kopyasını alır.|  

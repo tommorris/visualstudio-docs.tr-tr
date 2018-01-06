@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df9c61f85c56847fa1b9d881cc26cd2e79f3bd2e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 476ff209f96aa5729d20bd9a5a5d12c9e5a5c39a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Hata ayıklama yalnızca sadece kendi kodumu Visual Studio kullanarak kullanıcı kodu belirtin
 Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları adım ve bu çağrıları çağrı yığını penceresinde daraltmak için Visual Studio yapılandırabilirsiniz. Sağlar veya bu davranışı devre dışı bırakır özelliği adlı *sadece kendi kodumu*. Bu konu, sadece kendi kodumu C#, Visual Basic, C++ ve JavaScript projelerinde kullanmayı açıklar.

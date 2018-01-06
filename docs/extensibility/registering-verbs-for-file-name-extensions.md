@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f430486c613e6281404110d4441d2a3d2100534
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff1902689524dd980c8223ca83863238254df448
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Fiiller için dosya adı uzantılarını kaydetme
 Bir uygulama bir dosya adı uzantısı ilişkilendirmesini genellikle bir kullanıcı bir dosyayı tıklattığında oluşan tercih edilen bir eylem vardır. Bu eylem için eylem karşılık gelen bir fiil, örneğin açık bağlantılı tercih edilir.  
@@ -114,4 +115,4 @@ Bir uygulama bir dosya adı uzantısı ilişkilendirmesini genellikle bir kullan
 >  Yan yana dağıtım bir uzantı için varsayılan fiil Değiştir planlıyorsanız, yükleme ve kaldırma üzerindeki etkisini göz önünde bulundurun. Yükleme sırasında özgün varsayılan değerin üzerine yazılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yan yana dosya ilişkilendirmeleri yönetme](../extensibility/managing-side-by-side-file-associations.md)
+ [Yan Yana Dosya İlişkilendirmelerini Yönetme](../extensibility/managing-side-by-side-file-associations.md)

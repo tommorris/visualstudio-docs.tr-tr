@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f09ab8a948011cdc53516ec21f0d213852166956
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 43d9c59beaddfc6992e7b9e16e0e778be2a6d30f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>Otomatik bir eski dil hizmetinde biçimlendirme
 Bir kullanıcı bir bilinen kod yapı türüne başladığında otomatik biçimlendirme dil hizmeti otomatik olarak bir kod parçacığını ekler.  
@@ -28,4 +29,4 @@ Bir kullanıcı bir bilinen kod yapı türüne başladığında otomatik biçiml
  Dil hizmeti geri kalanı için kullanılan komut filtresi, otomatik biçimlendirme için de kullanılabilir. Eşleşen küme parantezleri çağırarak de baloncuklarını vurgulayabilir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A>.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eski dil hizmeti geliştirme](../../extensibility/internals/developing-a-legacy-language-service.md)
+ [Eski Dil Hizmeti Geliştirme](../../extensibility/internals/developing-a-legacy-language-service.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 171a31147aec5c0477d6a23e73dc0e66693b534d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 142e2a24f866db7e3ae20217b60b1ea0c201c749
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir
 Bir VSPackage kullanıcı arabirimi (UI) öğeleri, örneğin, menüler, araç çubukları, eklemek ve Visual Studio .vsct dosya yoluyla windows aracı.  
@@ -303,4 +304,4 @@ priority="0x0100" type="Menu">
 -   IDE içinde görüntülenecek belirli kullanıcı Arabirimi öğeleri neden olmak için bir veya daha fazla arabirimlerini veya biraz kod yazalım.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genişletme menüleri ve komutları](../../extensibility/extending-menus-and-commands.md)
+ [Menüleri ve Komutlari Genişletme](../../extensibility/extending-menus-and-commands.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6805b97da8e8f742b1b6c0bb3298e9324bb1f72e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3ccfca52bb4fe2190837202342915e248dbd6167
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluator-architecture"></a>İfade değerlendirici mimarisi
 > [!IMPORTANT]
@@ -50,13 +51,13 @@ ms.lasthandoff: 10/31/2017
  Bkz: [görüntüleme Yereller](../../extensibility/debugger/displaying-locals.md) değişkenlerin değerleri görüntüleme, bu işlemi hakkında daha fazla ayrıntı için. Bkz: [yerel değerin değiştirilmesi](../../extensibility/debugger/changing-the-value-of-a-local.md) bir değişkenin değeri nasıl değiştirilir hakkında daha fazla bilgi.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Değerlendirme bağlamı](../../extensibility/debugger/evaluation-context.md)  
+ [Değerlendirme Bağlamı](../../extensibility/debugger/evaluation-context.md)  
  DE EE çağırdığında geçirilen bağımsız değişkenlerini sağlar.  
   
- [Anahtar ifade değerlendiricisi arabirimleri](../../extensibility/debugger/key-expression-evaluator-interfaces.md)  
+ [Anahtar İfade Değerlendiricisi Arabirimleri](../../extensibility/debugger/key-expression-evaluator-interfaces.md)  
  Değerlendirme bağlamı birlikte bir EE yazarken gereken önemli arabirimler açıklanmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir CLR ifade değerlendiricisi yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Yerel öğeler görüntüleme](../../extensibility/debugger/displaying-locals.md)   
- [Yerel değerini değiştirme](../../extensibility/debugger/changing-the-value-of-a-local.md)
+ [Yerel Bir Öğenin Değerini Değiştirme](../../extensibility/debugger/changing-the-value-of-a-local.md)

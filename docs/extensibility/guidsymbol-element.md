@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5dcad9882b1c72c15837529d736eeabff58f3826
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d5089d87156bd5eb191176fe73ab19a01d497b90
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol öğesi
 `GuidSymbol` Ögesinin GUID GUID:ID çiftinin menü, Grup veya komutu temsil eder. Kimliği geldiği bir `IDSymbol` öğesinde `GuidSymbol` öğesi. `GuidSymbol` Öğeye sahip bir `name` bulunan GUID için kolay bir ad sağlar özniteliği `value` özniteliği.  
@@ -47,16 +48,16 @@ ms.lasthandoff: 10/31/2017
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[IDSymbol öğesi](../extensibility/idsymbol-element.md)|Menü, Grup veya komut temsil eden GUID:ID çifti Kimliğini içerir.|  
+|[IDSymbol Öğesi](../extensibility/idsymbol-element.md)|Menü, Grup veya komut temsil eden GUID:ID çifti Kimliğini içerir.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Simgeler öğesi](../extensibility/symbols-element.md)|Grupları `GuidSymbol` .vsct dosyasındaki öğeleri.|  
+|[Symbols Öğesi](../extensibility/symbols-element.md)|Grupları `GuidSymbol` .vsct dosyasındaki öğeleri.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Genellikle, bir .vsct dosyası üç içeren `GuidSymbol` öğelerinde kendi `Symbols` bölümü, paket için bir, komut kümesini (menüler, grupları ve paket kullanılabilmesini komutları koleksiyonu) için bir ve sağlamak bit eşlemler için bir düğmelerin ve diğer görsel bileşenleri için simgeler. Her `IDSymbol` öğesinde bir verilen `GuidSymbol` öğesinin benzersiz olmalı `value`. Ancak, `IDSymbol` farklı üst sahip oldukları sürece, aynı değerlere sahip öğeleri bir pakette bulunabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

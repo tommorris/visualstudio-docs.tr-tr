@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4469f2f70bececca258fe4ea1a98d753f8349f87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 253798cdde2a40a70496dbe2ed89f9d0a9316640
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>İzlenecek yol: Visual Studio iş parçacıkları penceresini kullanarak birden çok iş parçacıklı uygulamada hata ayıklama
 Visual Studio sağlayan bir **iş parçacığı** penceresini açın ve başka bir kullanıcı arabirimi öğeleri birden çok iş parçacıklı uygulamalarda hata ayıklama yardımcı olacak. Bu öğretici nasıl kullanılacağını gösterir **iş parçacığı** penceresi ve **hata ayıklama konumu** araç. Diğer araçları hakkında daha fazla bilgi için bkz: [çok iş parçacıklı uygulamalarda hata ayıklama başlamak](../debugger/get-started-debugging-multithreaded-apps.md). Bu öğretici yalnızca birkaç dakika sürer ancak tamamlanması, çok iş parçacıklı uygulamalarda hata ayıklama için özelliklerle alışmanızı.   
@@ -57,7 +58,7 @@ Bu öğreticiye başlamadan birden çok iş parçacıklı uygulama projesi gerek
   
     ```VB  
     Thread.Sleep(3000)   
-    Console.WriteLine(  
+    Console.WriteLine()
     ```  
   
     ```CSharp  

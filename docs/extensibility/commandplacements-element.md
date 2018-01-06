@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7757716dc3f4c9e327a6145642e169c23e895c0e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 597f6cc9be1f2d33e72566d49bdfb3aa74ed4a8a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commandplacements-element"></a>CommandPlacements öğesi
 CommandPlacements öğesi grupları CommandPlacement öğeleri ve diğer CommandPlacements gruplandırmaları.  
@@ -50,13 +51,13 @@ CommandPlacements öğesi grupları CommandPlacement öğeleri ve diğer Command
 |Öğe|Açıklama|  
 |-------------|-----------------|  
 |CommandPlacements|Grupları CommandPlacement öğeleri ve diğer CommandPlacements gruplandırmaları.|  
-|[CommandPlacement öğesi](../extensibility/commandplacement-element.md)|Düğmeleri, grupları ve menüleri birden fazla grup veya menü eklenmesini sağlar.|  
+|[CommandPlacement Öğesi](../extensibility/commandplacement-element.md)|Düğmeleri, grupları ve menüleri birden fazla grup veya menü eklenmesini sağlar.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[CommandTable öğesi](../extensibility/commandtable-element.md)|Komutları temsil eden tüm öğeleri tanımlar.|  
+|[CommandTable Öğesi](../extensibility/commandtable-element.md)|Komutları temsil eden tüm öğeleri tanımlar.|  
   
 ## <a name="example"></a>Örnek  
   
@@ -71,4 +72,4 @@ CommandPlacements öğesi grupları CommandPlacement öğeleri ve diğer Command
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CommandPlacement öğesi](../extensibility/commandplacement-element.md)   
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

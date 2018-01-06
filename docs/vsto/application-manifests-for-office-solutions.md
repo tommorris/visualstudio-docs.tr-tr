@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: feda5cbd710ad1d3b7175219261a16f78a774f7d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 847d42015b28f3d2ad0e2e2eb48c5b1ce060ab14
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-manifests-for-office-solutions"></a>Office Çözümleri İçin Uygulama Bildirimleri
   Bir uygulama bildirimi Microsoft Office çözümü yüklenmiş derlemeleri tanımlayan bir XML dosyasıdır. Microsoft Office geliştirme araçlarını Visual Studio [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] tanımlanan uygulama bildirim şeması [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest) başvuru.  
@@ -105,6 +106,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
   
   

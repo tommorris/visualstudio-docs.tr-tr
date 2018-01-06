@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.openlocfilehash: acef07cd95395312d1456401bd58142264d89794
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bab4660d0e76e467bc95c373002a9035a4ccd672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Nasıl yapılır: Görsel Stiller Etkinken WPF Uygulaması Yayımlama
 Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için ortak denetimlerin görünümünü sağlar. Bu nedenle el ile etkinleştirmeniz gerekir varsayılan olarak, Windows Presentation Foundation (WPF) uygulamaları için görsel stiller etkin değildir. Ancak, WPF uygulaması için görsel stiller etkinleştirme ve çözüm yayımlamaya bir hataya neden olur. Bu konu, bu hatayı ve görsel stiller etkinken WPF uygulaması yayımlama işlemi çözümlemeye açıklar. Görsel stiller hakkında daha fazla bilgi için bkz: [görsel stilleri genel bakış](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Hata iletisi hakkında daha fazla bilgi için bkz: [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -166,4 +167,4 @@ Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için 
  [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
  [Görsel stiller genel bakış](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)   
  [Görsel stiller etkinleştirme](https://msdn.microsoft.com/library/bb773175.aspx)   
- [Komut istemleri](/dotnet/framework/tools/developer-command-prompt-for-vs)
+ [Komut İstemleri](/dotnet/framework/tools/developer-command-prompt-for-vs)

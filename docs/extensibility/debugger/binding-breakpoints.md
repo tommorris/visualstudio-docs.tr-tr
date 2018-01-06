@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08000dddcd574d21225aa110cf9eb4ab2487aadb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 55416d6b156055d967424476f5add3b4ed75d18d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="binding-breakpoints"></a>Kesme noktaları bağlama
 Kullanıcı bir kesme noktası ayarlarsa, belki de F9 basarak IDE isteği formulates ve kesme noktası oluşturmak için hata ayıklama oturumu ister.  
@@ -56,4 +57,4 @@ Kullanıcı bir kesme noktası ayarlarsa, belki de F9 basarak IDE isteği formul
  SE bir kesme noktası işlediğinde, ancak bazı diğer bağlanamıyor DE bağlamak, bir uyarı verir. IDE soru karakter kaynak kod satırı solundaki kesme karakteri içine girerek yanıt verir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama görevleri](../../extensibility/debugger/debugging-tasks.md)
+ [Hata Ayıklama Görevleri](../../extensibility/debugger/debugging-tasks.md)

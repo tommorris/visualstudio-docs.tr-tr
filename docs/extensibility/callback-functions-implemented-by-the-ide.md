@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbc71942a87685a4011b13d1054c4855a5e18012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3c1845a82947286800145ff898f8f49f8c3c2477
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE tarafından uygulanan geri arama işlevleri
 Bir birleşik son kullanıcı deneyimi sağlamak için ve mümkün olduğunca sorunsuz olarak tümleşik geliştirme ortamı (IDE) ile tümleştirme yapmak için kaynak denetim eklentisi IDE tarafından uygulanan geri arama işlevleri kullanabilirsiniz. Eklenti bu işlevler IDE bilgi aktarmak için bir kaynak denetimi işlemi sırasında uygun zamanlarda çağırabilirsiniz; IDE yerel kullanıcı Arabiriminde katıştırılmış öğeleri olarak bu bilgiler daha sonra görüntüleyebilirsiniz. Kullanıcı Bu senaryoda eklenti kendi UI işe varsa daha az parçalanmış deneyimi sahip değil.  
@@ -58,5 +59,5 @@ Bir birleşik son kullanıcı deneyimi sağlamak için ve mümkün olduğunca so
  [SccSetOption](../extensibility/sccsetoption-function.md)  
  Çok çeşitli seçenekler ayarlar. Her seçeneği ile başlayan `SCC_OPT_xxx` ve kendi tanımlanan değerleri kümesi vardır.  
   
- [Kaynak Denetim Eklentileri](../extensibility/source-control-plug-ins.md)  
+ [Kaynak Denetimi Eklentileri](../extensibility/source-control-plug-ins.md)  
  Kaynak Denetim eklentisi SDK'sı başvurusu bölümü içeriğini açıklar.

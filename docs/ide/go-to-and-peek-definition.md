@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 467d119e67db254b6e15630c08c411bb15283351
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db67f01ff2a58ee856e4588df8770fc4edef8ca2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="go-to-definition-and-peek-definition"></a>Tanım ve Özet tanımı gidin  
 Tanıma Git ve Peek tanımı özelliklerini kolayca bir tür veya üye tanımının görüntülemenizi sağlar.
@@ -51,4 +52,4 @@ Daha fazla bilgi için bkz: [nasıl yapılır: görüntüleme ve düzenleme kod 
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Kodda gezinme](../ide/navigating-code.md)  
-[Nasıl yapılır: kodu görüntüleme ve düzenleme (Alt + F12) Özet tanımı kullanarak](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+[Nasıl yapılır: Özet Tanımı'nı Kullanarak Kodu Görüntüleme ve Düzenleme (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  

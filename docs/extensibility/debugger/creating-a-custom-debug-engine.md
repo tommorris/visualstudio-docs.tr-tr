@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb5971bf86c6b97d38daaf86f3a093da196020da
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0edee6528919cfe28c542be850b9a104188ce403
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-custom-debug-engine"></a>Bir özel hata ayıklama altyapısı oluşturma
 Hata ayıklama altyapısı (DE) belirli çalışma zamanı mimarilerini hata ayıklama sağlayan bir bileşendir. Genellikle çalışma zamanı ortamı başına yalnızca bir DE uygulama yok.  
@@ -43,26 +44,26 @@ Hata ayıklama altyapısı (DE) belirli çalışma zamanı mimarilerini hata ay�
 5.  Sonlandırma ve ayırma  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Bir özel hata ayıklama altyapısı kaydetme](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
+ [Özel Bir Hata Ayıklama Altyapısını Kaydetme](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
  Böylece kullanılabilmesi için bir hata ayıklama altyapısı Visual Studio ile kaydetmek için gereken adımları açıklar.  
   
- [Ayıklanacak bir Program etkinleştirme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
+ [Bir Programı Hataları Ayıklanacak Şekilde Etkinleştirme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
  Sizin DE bir program ayıklayabilirsiniz önce gerekir ilk DE başlatın veya varolan bir program eklemek olduğunu açıklar.  
   
- [Yürütme denetimi ve durum değerlendirme](../../extensibility/debugger/execution-control-and-state-evaluation.md)  
+ [Yürütme Denetimi ve Durum Değerlendirmesi](../../extensibility/debugger/execution-control-and-state-evaluation.md)  
  Neden bir uygulamada hata ayıklama yürütme denetim özelliklerini uygulama gerektirir açıklanır.  
   
- [Gönderen olaylar](../../extensibility/debugger/sending-events.md)  
+ [Olayları Gönderme](../../extensibility/debugger/sending-events.md)  
  Hata ayıklayıcı DE arasındaki iletişimi DCOM göre bir olay modeli olarak açıklar.  
   
- [Sonlandırma ve ayırma](../../extensibility/debugger/termination-and-detaching.md)  
+ [Sonlandırma ve Ayırma](../../extensibility/debugger/termination-and-detaching.md)  
  Hiçbir kesme noktaları, özel durumlar, çalışma zamanı hataları veya sonsuz döngüler ayıklanacak uygulamada olduğu anlamına gelir normal sonlandırma elde etmek açıklanmaktadır.  
   
- [Arama hata ayıklayıcı olayları](../../extensibility/debugger/calling-debugger-events.md)  
+ [Hata Ayıklayıcısı Olaylarını Çağırma](../../extensibility/debugger/calling-debugger-events.md)  
  Hata ayıklama oturumunda gerçekleşen olayların arama sırasını belgeler.  
   
- [Nasıl yapılır: bir özel hata ayıklama altyapısı hata ayıklama](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [Nasıl Yapılır: Özel Hata Ayıklama Altyapısında Hata Ayıklama](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  Özel SE hata ayıklama açıklanmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio hata ayıklayıcısı genişletilebilirliği](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [Visual Studio Hata Ayıklayıcı Genişletilebilirliği](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

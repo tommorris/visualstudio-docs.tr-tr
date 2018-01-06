@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ed63e19334c2c1c40cd5ac353974d7a1dbdc5764
-ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
+ms.workload: multiple
+ms.openlocfilehash: 78773b3a87aff91fae92ec64365ef55620e58d44
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="customize-your-build"></a>Yapınızın özelleştirme
 MSBuild 15. sürümden önceki sürümler çözümünüz projelerine yeni, özel bir özellik sağlamak istiyorsanız çözümdeki her proje dosyası el ile bu özellik için bir başvuru ekleyin içeriyor. Ya da özellik .props dosyasında tanımlayın ve başka şeylerin çözümdeki her projeye .props dosyasında açıkça alma gerekiyordu.
@@ -87,7 +88,7 @@ Msbuild doğru "İç" dosyaları birleştirmek için (`2-src` ve `2-test`) "dı�
 Msbuild'ın genel yaklaşım özetini aşağıdaki gibidir:
 
 - Belirli bir proje için ilk msbuild bulur `Directory.Build.props` yukarı isteğe bağlı olarak çözümü yapısında öndeğerlerini birleştirir ve daha fazla bilgi için taramayı durdurur
-- Bulunan ve ardından birleştirildiği için birden çok düzeyi isteyip istemediğinizi [ `<Import...>` ](http://docs.microsoft.com/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (yukarıda gösterilen) "İç" dosyasından "dış" dosyası
+- Bulunan ve ardından birleştirildiği için birden çok düzeyi isteyip istemediğinizi [ `<Import...>` ](../msbuild/property-functions.md#msbuild-getpathoffileabove) (yukarıda gösterilen) "İç" dosyasından "dış" dosyası
 - "Dış" dosya kendisi olursa Ayrıca, üzerinde bir şey içeri sonra taramayı var. durdurur
 - Tarama ve birleştirme işlemi denetlemek için kullandığı `$(DirectoryBuildPropsPath)` ve`$(ImportDirectoryBuildProps)`
 

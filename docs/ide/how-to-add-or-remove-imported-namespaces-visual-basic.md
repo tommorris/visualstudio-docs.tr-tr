@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43947a2e239833459923f6991d4ee54d12876fe3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 015f2efa352b5ff2d8b87e356972270c175d0168
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Nasıl Yapılır: İçeri Aktarılan Ad Uzaylarını Ekleme veya Kaldırma (Visual Basic)
 Bir ad alanı içe aktarma öğesi tam olarak niteleme olmadan bu ad alanındaki öğeler kodunuzda kullanmanıza olanak sağlar. Erişmek istiyorsanız, örneğin, `Create` yönteminde `System.Messaging.MessageQueue` alabileceğiniz sınıfı, `System.Messaging` ad alanı ve yalnızca gereksinim duyduğunuz kodda öğesine başvuruda `MessageQueue.Create`.  

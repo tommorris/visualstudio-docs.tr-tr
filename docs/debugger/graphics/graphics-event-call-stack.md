@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81a7edd908da5953e04e68a1a903ed585f1ec6b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 89e426c24f1f32161307d573c1ab06cdf459b1d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-event-call-stack"></a>Grafik Olay Çağırma Yığını
 Grafik olay çağrı yığınında Visual Studio grafik Çözümleyicisi sorunlu grafik olayları ve uygulamanızın kaynak kodunu arasındaki ilişkiyi eşleme yardımcı olur.  
@@ -44,4 +45,4 @@ Grafik olay çağrı yığınında Visual Studio grafik Çözümleyicisi sorunlu
  Seçili grafik olay anlamak için kendisiyle ilişkili Direct3D nesneler hakkındaki bilgileri gerekebilir. **Grafik olay Çağırma yığını** pencere, bu bilgilere bağlantılar sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Köşe gölgeleme nedeniyle nesnelerin eksikliği](walkthrough-missing-objects-due-to-vertex-shading.md)
+ [İzlenecek Yol: Köşe Gölgeleme Nedeniyle Nesnelerin Eksikliği](walkthrough-missing-objects-due-to-vertex-shading.md)

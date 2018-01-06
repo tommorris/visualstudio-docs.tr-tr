@@ -13,11 +13,12 @@ caps.latest.revision: "31"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1876f334ad1b444b464ecc420767dea90baed6b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 585da54c691bda21a363dfe1308c6ed229a024ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inside-the-editor"></a>İçinde Düzenleyicisi
 Metin görünümü ve kullanıcı arabirimi düzenleyici metin modeli ayrı tutmak için tasarlanmış farklı alt sistemleri sayısının Düzenleyicisi oluşur.  
@@ -36,9 +37,9 @@ Metin görünümü ve kullanıcı arabirimi düzenleyici metin modeli ayrı tutm
   
 -   [Adornments](../extensibility/inside-the-editor.md#adornments)  
   
--   [Yansıtma](../extensibility/inside-the-editor.md#projection)  
+-   [Projeksiyon](../extensibility/inside-the-editor.md#projection)  
   
--   [Anahat oluşturma](../extensibility/inside-the-editor.md#outlining)  
+-   [Anahat Oluşturma](../extensibility/inside-the-editor.md#outlining)  
   
 -   [Fare bağlamaları](../extensibility/inside-the-editor.md#mousebindings)  
   
@@ -289,4 +290,4 @@ P: ABCDEvwxyz
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md)   
- [Düzenleyici içeri aktarmalar](../extensibility/editor-imports.md)
+ [Düzenleyici İçeri Aktarımları](../extensibility/editor-imports.md)

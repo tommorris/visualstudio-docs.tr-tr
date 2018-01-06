@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd630a2fed94604cb91dc3af7e46f96269f75ad0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5af5dce3edf1ac2910af5f8d593ed8e316cff721
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="button-element"></a>Düğme öğesi
 Kullanıcı ile etkileşim kurabilen bir öğeyi tanımlar. Düğmeleri farklı türde olabilir: düğme, MenuButton ve SplitDropDown.  
@@ -52,17 +53,17 @@ Kullanıcı ile etkileşim kurabilen bir öğeyi tanımlar. Düğmeleri farklı 
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Üst öğesi](../extensibility/parent-element.md)|İsteğe bağlı. Düğmenin üst öğesi.|  
-|[Icon öğesi](../extensibility/icon-element.md)|İsteğe bağlı. İlişkili düğme simgesi.|  
-|[Komut bayrağı öğesi](../extensibility/command-flag-element.md)|Gerekli. Düğme için geçerli CommandFlag değerler aşağıdaki gibidir.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -PICT<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly|  
-|[Dizeleri öğesi](../extensibility/strings-element.md)|Gerekli. Alt [■ ButtonText öğesi](../extensibility/buttontext-element.md) tanımlanması gerekir.|  
+|[Parent Öğesi](../extensibility/parent-element.md)|İsteğe bağlı. Düğmenin üst öğesi.|  
+|[Icon Öğesi](../extensibility/icon-element.md)|İsteğe bağlı. İlişkili düğme simgesi.|  
+|[Command Flag Öğesi](../extensibility/command-flag-element.md)|Gerekli. Düğme için geçerli CommandFlag değerler aşağıdaki gibidir.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -PICT<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly|  
+|[Strings Öğesi](../extensibility/strings-element.md)|Gerekli. Alt [■ ButtonText öğesi](../extensibility/buttontext-element.md) tanımlanması gerekir.|  
 |Ek Açıklama|İsteğe bağlı bir açıklama.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Düğme öğesi](../extensibility/buttons-element.md)|Düğme öğeleri gruplandırır.|  
+|[Buttons Öğesi](../extensibility/buttons-element.md)|Düğme öğeleri gruplandırır.|  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, bir düğme .vsct dosyasında tanımlar.  
@@ -80,4 +81,4 @@ Kullanıcı ile etkileşim kurabilen bir öğeyi tanımlar. Düğmeleri farklı 
  ```
  
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

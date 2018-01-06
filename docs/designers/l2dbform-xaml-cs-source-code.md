@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f34917cf5138201b1668e2800bc4ae1fd8e73a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e477801883abde205a1667b444575c0f831b930f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs kaynak kodu
 Bu konu, içeriği ve C# kaynak kodu dosyasına L2DBForm.xaml.cs açıklamasını içerir. Bu dosyada bulunan L2XDBForm parçalı sınıf üç mantıksal bölümlere ayrılabilir: veri üyeleri ve `OnRemove` ve `OnAddBook` olay işleyicileri düğmesini tıklatın.  
@@ -139,4 +140,4 @@ namespace LinqToXmlDataBinding {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: LinqToXmlDataBinding örneği](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [L2DBForm.XAML kaynak kodu](../designers/l2dbform-xaml-source-code.md)
+ [L2DBForm.xaml Kaynak Kodu](../designers/l2dbform-xaml-source-code.md)

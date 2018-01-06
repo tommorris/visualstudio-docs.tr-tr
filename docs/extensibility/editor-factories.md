@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bfef7e641bc8f7e041242ce28110845855c2a65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e0fb464d3eb9d7b39b853593c9458fe800296321
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editor-factories"></a>Düzenleyici oluşturucuları
 Bir düzenleyici üreteci Düzenleyicisi nesneleri oluşturur ve bunları fiziksel bir görünüm olarak bilinen bir pencere çerçevesi koyar. Belge verileri ve düzenleyicileri ve tasarımcıları oluşturmak için gerekli olan belge görünümü nesneleri oluşturur. Bir düzenleyici üreteci, Visual Studio çekirdek Düzenleyicisi'ni ve herhangi bir standart Düzenleyicisi oluşturmak için gereklidir. Özel bir düzenleyici Ayrıca isteğe bağlı olarak bir düzenleyici üreteci ile oluşturulabilir.  
@@ -55,4 +56,4 @@ Bir düzenleyici üreteci Düzenleyicisi nesneleri oluşturur ve bunları fiziks
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
- [Çalışan belge tablosu](../extensibility/internals/running-document-table.md)
+ [Çalıştırılan Belge Tablosu](../extensibility/internals/running-document-table.md)

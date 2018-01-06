@@ -20,11 +20,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8792c9ed175d2ced5d9c10cc19b2d222f4d839a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Bir izleme izleme ve QuickWatch Windows Visual Studio kullanarak değişkenleri ayarlayın
 Hata ayıklarken, kullanabileceğiniz **izleme** (**hata ayıklama > Windows > İzleme > İzle (1, 2, 3, 4)**) ve **QuickWatch** (değişkeni sağ /  **Hata ayıklama > QuickWatch**) değişkenleri ve ifadeler izlemek için windows.  Aralarındaki fark **izleme** penceresi birkaç değişkenleri görüntüleyebilir sırada **QuickWatch** penceresi, aynı anda tek bir değişken görüntüler.
@@ -232,7 +233,7 @@ public class Program
 ## <a name="dynamic-view-and-the-watch-window"></a>Dinamik Görünüm ve Gözcü penceresi  
  Bazı komut dosyası dilleri (örneğin, JavaScript veya Python) dinamik kullanın veya [yazarak duck](https://en.wikipedia.org/wiki/Duck_typing), ve .NET dillerinde (sürüm 4.0 ve üstü) olduğundan normal hata ayıklama pencerelerini kullanarak gözlemlemek zor olan nesneler destek bunlar çalışma zamanı özellikleri ve görüntülenemiyor yöntemleri olabilir.  
   
- Gözcü penceresi uygulayan bir türden oluşturulan bir nesne görüntülendiğinde [IDynamicMetaObjectProvider arabirimi](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), özel bir hata ayıklayıcı ekler **dinamik Görünüm** düğüme **otomatik değişkenler**  görüntüler. Bu düğüm dinamik Nesne dinamik üyeleri gösterir, ancak üye değerlerinin düzenlenmesine izin vermiyor.  
+ Gözcü penceresi uygulayan bir türden oluşturulan bir nesne görüntülendiğinde [IDynamicMetaObjectProvider arabirimi](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), özel bir hata ayıklayıcı ekler **dinamik Görünüm** düğüme **otomatik değişkenler**  görüntüler. Bu düğüm dinamik Nesne dinamik üyeleri gösterir, ancak üye değerlerinin düzenlenmesine izin vermiyor.  
   
  Tüm alt sağ tıklattığınızda, bir **dinamik Görünüm** ve **Gözcü Ekle**, bir dinamik Nesne nesneye çevirir yeni bir izleme değişkeni hata ayıklayıcı ekler. Diğer bir deyişle, **nesne adı** olur (**(dinamik) nesne). Ad**.  
   

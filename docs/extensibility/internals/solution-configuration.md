@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5b9009a4adab2420a796b3011175ef37fac9bfcb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 129f86fae5de5501d72b0cdbe5e261717e60e780
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solution-configuration"></a>Çözüm Yapılandırması
 Çözüm yapılandırmaları çözüm düzeyi özellikleri depolar. Davranışını doğrudan **Başlat** (F5) anahtarı ve **yapı** komutları. Varsayılan olarak, bu komutları oluşturun ve hata ayıklama yapılandırmasını başlatın. Her iki komutları bir çözüm yapılandırması bağlamında çalıştırın. Bu, başlangıç ve herhangi bir etkin çözüm Ayarları'nda yapılandırılmış derleme için kullanıcı F5 bekleyebilirsiniz anlamına gelir. Ortamı oluşturmak ve çalıştırmak için geldiğinde projeleri yerine çözümleri için en iyi duruma getirmek için tasarlanmıştır.  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
   
  Proje türü tarafından desteklenen çözüm yapılandırmaları nasıl uygulayabilir şöyledir:  
   
--   Project  
+-   Proje  
   
      Geçerli çözümde bulunan projeleri adlarını görüntüler.  
   
@@ -60,4 +61,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yapılandırma seçenekleri yönetme](../../extensibility/internals/managing-configuration-options.md)   
  [Proje yapılandırması oluşturmak için](../../extensibility/internals/project-configuration-for-building.md)   
- [Proje yapılandırma nesnesi](../../extensibility/internals/project-configuration-object.md)
+ [Proje Yapılandırması Nesnesi](../../extensibility/internals/project-configuration-object.md)

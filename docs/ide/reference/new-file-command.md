@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f3b469466080403122484a7b6259c099765edd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ad7f0232a4e08c134a7dffcc3d10a2180e235717
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-file-command"></a>Yeni Dosya Komutu
 Yeni bir dosya oluşturur ve açar. Dosya çeşitli dosyalar klasörü altında görünür.  
@@ -72,4 +73,4 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
  [Komut penceresi](../../ide/reference/command-window.md)   
  [Komut penceresi](../../ide/reference/immediate-window.md)   
  [Bul/komut kutusu](../../ide/find-command-box.md)   
- [Visual Studio komut diğer adları](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

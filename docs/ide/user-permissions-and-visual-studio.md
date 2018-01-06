@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e044e3d89f7cbaae28ff0fd3cefe1c6fe4583c65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3cf223b0b4d2f8ca710a5d5fdb349c7a423b1b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı İzinleri ve Visual Studio
 Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıcı olarak çalıştırmanız gerekir.  
@@ -33,14 +34,14 @@ Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıc�
 
 |Alan|Görev|Daha fazla bilgi için|  
 |----------|----------|--------------------------|  
-|Yükleme|Visual Studio yükleyin.|[Visual Studio yükleme](../install/install-visual-studio.md)|  
-||Yerel Yardım içeriğini yükleme, güncelleştirme veya kaldırma.|[Yükleme ve yerel içeriği yönetme](../ide/install-and-manage-local-content.md)|  
-|Uygulama türleri|SharePoint çözümleri geliştirme.|[SharePoint çözümleri geliştirmek için gereksinimler](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
+|Yükleme|Visual Studio yükleyin.|[Visual Studio'yu yükleyin](../install/install-visual-studio.md)|  
+||Yerel Yardım içeriğini yükleme, güncelleştirme veya kaldırma.|[Yerel İçeriği Yükleme ve Yönetme](../ide/install-and-manage-local-content.md)|  
+|Uygulama türleri|SharePoint çözümleri geliştirme.|[SharePoint Çözümleri Geliştirmek için Gereksinimler](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
 ||Geliştirici lisansı alınırken [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Bir geliştirici lisansı alma](http://go.microsoft.com/fwlink/?LinkID=241313)|  
-|Araç Kutusu|Klasik COM ekleme denetimleri için **araç**.|[Araç kutusunu kullanma](../ide/using-the-toolbox.md)|  
+|Araç Kutusu|Klasik COM ekleme denetimleri için **araç**.|[Araç Kutusunu Kullanma](../ide/using-the-toolbox.md)|  
 |Eklentiler|IDE'de klasik COM kullanılarak yazılmış eklentileri yükleme ve kullanma.|[Eklentiler ve sihirbazları oluşturma](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|  
-|Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanma.|[Özel derleme adımlarını ve derleme olaylarını anlama](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
-||C++ projeleri oluşturduğunuzda kayıt adımı ekleme.|[Özel derleme adımlarını ve derleme olaylarını anlama](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
+|Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanma.|[Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
+||C++ projeleri oluşturduğunuzda kayıt adımı ekleme.|[Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
 |Hata Ayıklama|Yükseltilmiş izinlerle çalışan uygulamalarda hata ayıklama.|[Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)|  
 ||ASP.NET web siteleri gibi farklı bir kullanıcı hesabı altında çalışan uygulamalarda hata ayıklama.|[ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)|  
 ||XAML Tarayıcı Uygulamaları (XBAP) için bölgede hata ayıklama.|[WPF Konağı (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|  
@@ -70,4 +71,4 @@ Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıc�
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Taşıma, geçirme ve Visual Studio projelerini yükseltme](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
- [Visual Studio yükleme](../install/install-visual-studio.md)
+ [Visual Studio'yu yükleyin](../install/install-visual-studio.md)

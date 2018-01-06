@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b3004b780400d2fac46866ac4ad02bda18ada9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef2517b05b58ac2a672a5eba04ca6f1dc48a27f3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="generateresource-task"></a>GenerateResource Görevi
 .Txt, .resx (XML tabanlı kaynak biçimi) dosyaları ve bir çalışma zamanı ikili yürütülebilir dosya katıştırılmış veya uydu derlemelerini derlenmiş ortak dil çalışma zamanı ikili .resources dosyaları arasındaki dönüştürür. Bu görev, genellikle .txt veya .resx dosyaları .resource dosyalarına dönüştürmek için kullanılır. `GenerateResource` Görev benzer işlevsellik [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 |`ExecuteAsTool`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, uygun hedef framework çıkış gerekli sarmalayıcı derlemeleri oluşturmak için işlem dışı tlbimp.exe ve aximp.exe çalışır. Çoklu sürüm desteği, bu parametre sağlayan `ResolveComReferences`.|  
 |`FilesWritten`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Yazılan tüm dosyaların adlarını içeren disk. Bu önbellek dosyası varsa içerir. Bu parametre, temiz uygulamaları için yararlıdır.|  
 |`MinimalRebuildFromTracking`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Alır veya izlenen Artımlı derleme kullanılıp kullanılmayacağını belirten bir anahtar ayarlar. Varsa `true`, artımlı derleme açıktır; Aksi halde, bir yeniden oluşturma zorlanır.|  
-|`NeverLockTypeAssemblies`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Yeni bir oluşturulup oluşturulmayacağını belirten bir Boole değeri alır veya ayarlar [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) kaynakları (.resx) dosyaları (true) değerlendirmek için veya yeni bir oluşturmak için [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) yalnızca kaynak dosyalarını bir kullanıcının ne zaman başvurusu derleme (false).|  
+|`NeverLockTypeAssemblies`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Yeni bir oluşturulup oluşturulmayacağını belirten bir Boole değeri alır veya ayarlar [AppDomain](/dotnet/api/system.appdomain) kaynakları (.resx) dosyaları (true) değerlendirmek için veya yeni bir oluşturmak için [AppDomain](/dotnet/api/system.appdomain) yalnızca kaynak dosyalarını bir kullanıcının ne zaman başvurusu derleme (false).|  
 |`OutputResources`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> .Resources dosyaları gibi oluşturulan dosya adını belirtir. Bir ad belirtmezseniz, kullanılan eşleşen giriş dosyası adı ve oluşturulan .resources dosyası giriş dosyasını içeren dizinde yerleştirilir.|  
 |`PublicClass`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, ortak bir sınıf olarak kesin türü belirtilmiş kaynak sınıfı oluşturur.|  
 |`References`|İsteğe bağlı `String[]` parametresi.<br /><br /> .Resx dosyaları türlerinde yüklemek için başvuruları. Resx dosya veri öğeleri .NET türü olabilir. .Resx dosyayı okurken bu çözümlenmesi gerekir. Genellikle, bu kuralları yükleniyor standart türünü kullanarak başarıyla çözümlenir. Derlemelerde sağlarsanız, `References`, öncelik kazanır.<br /><br /> Bu parametre için kesin türü belirtilmiş kaynakları gerekli değildir.|  

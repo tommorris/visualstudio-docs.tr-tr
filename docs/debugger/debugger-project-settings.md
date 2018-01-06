@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 771506897b5c40242c26a06db4e176e6eb785b21
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e3ae16740868fcbd0fdd98f35afed4290fae5905
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-project-settings"></a>Hata Ayıklayıcı Proje Ayarları
 Belirli hata ayıklama proje ayarları da etkiler. Bu ayarlar, hata ayıklayıcı, program ve hata ayıklama bilgileri program için oluşturulan türünü başlatmak için kullanılan komut bağımsız değişkenleri ve komut bakan hangi dizinleri gibi şeyler belirler. Bu ayarları değiştirebilirsiniz **özellik sayfaları** iletişim kutusu.  

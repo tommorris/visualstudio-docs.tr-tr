@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3a5fc067ac65cea13181632c562a635599f0d7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc458bddfe354f43afd15176d0283cad4875234d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-windows-phone-81-apps-in-the-emulator"></a>Windows Phone 8.1 uygulamaları öykünücüsünde çalıştırın
 Windows Phone öykünücüsü hata ayıklama ve bir fiziksel aygıt olmadan bilgisayarınızdaki Windows Phone uygulamalarını test sanallaştırılmış bir ortam sağlar. Ortak dokunma ve döndürme olaylarının benzetimini yapma ve fiziksel ekran boyutu ve taklit etmek istediğiniz çözümü seçin. Ayrıca, konum, ağ, bildirimler, algılayıcılar, accelerometer ve isteğe bağlı SD kart gibi birçok yaygın olarak kullanılan özellik test edebilirsiniz.  

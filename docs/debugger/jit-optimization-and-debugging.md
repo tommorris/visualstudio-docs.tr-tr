@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acf75c0fbf6f5c3cfcf645d288c4e5e2eb2450d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2c3dcd57568bdfaac3ba0f7aff33cefca8a0ee32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT İyileştirmesi ve Hata Ayıklaması
 Yönetilen bir uygulamanın hata ayıklamasını yaparken [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] iyileştirme tam zamanında (JIT) kodunun varsayılan olarak gizler. En iyi duruma getirme, JIT gizleme olmayan iyileştirilmiş kodda hata ayıklama anlamına gelir. Kod değil iyileştirilmiştir, ancak hata ayıklama deneyiminizi daha kapsamlı olduğundan biraz daha yavaş çalışır. İyileştirilmiş kodda hata ayıklama daha zor olduğu ve yalnızca en iyi duruma getirilmiş kodunda oluşan ancak iyileştirilmemiş sürümünde çoğaltılamayan hata karşılaşmanız halinde önerilir.  
@@ -41,4 +42,4 @@ Yönetilen bir uygulamanın hata ayıklamasını yaparken [!INCLUDE[vsprvs](../c
  [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   
  [Hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md)   
  [Çalıştırma işlemine iliştirme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Yönetilen yürütme işlemi](/dotnet/standard/managed-execution-process)
+ [Yönetilen Yürütme İşlemi](/dotnet/standard/managed-execution-process)

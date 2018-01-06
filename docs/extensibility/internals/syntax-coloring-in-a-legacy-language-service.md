@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 88af397feba9b06eabd73ec23dcf1204ebe755e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd740c437fc7e5f3d355e883d4023bc6edfcde1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Eski dil hizmetinde renklendirme sözdizimi
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Dil öğeleri tanımlamak ve bunları bir düzenleyicide belirtilen renklerle görüntülemek için renklendirme hizmeti kullanır.  
@@ -66,13 +67,13 @@ Basit Renklendirici modeli
 >  Bir dil hizmeti Renklendirici kullanmanın yanı sıra bir VSPackage da genel amaçlı kullanabilirsiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mekanizması renklendirme metin. Bu mekanizma hakkında daha fazla bilgi için bkz: [kullanarak yazı tiplerini ve renkleri](../../extensibility/using-fonts-and-colors.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Sözdizimi renklendirmesi uygulama](../../extensibility/internals/implementing-syntax-coloring.md)  
+ [Söz Dizimi Renklendirmesi Uygulama](../../extensibility/internals/implementing-syntax-coloring.md)  
  Bir düzenleyici bir dil hizmetin söz dizimi renklendirme ve dil hizmeti gerekir sözdizimini desteklemek için uygulama renklendirme nasıl eriştiğini açıklanır.  
   
- [Nasıl yapılır: yerleşik Colorable öğelerini kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
+ [Nasıl yapılır: Yerleşik Renklendirilebilir Öğeleri Kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
  Dil hizmetinden yerleşik colorable öğelerin nasıl kullanılacağı gösterilmektedir.  
   
- [Özel Colorable öğeler](../../extensibility/internals/custom-colorable-items.md)  
+ [Özel Renklendirilebilir Öğeler](../../extensibility/internals/custom-colorable-items.md)  
  Özel colorable öğeler uygulamak nasıl ele alınmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

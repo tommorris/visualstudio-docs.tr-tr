@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11213c60eb03626f86b51f896b6edb487c3e3394
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 990385be9d9518826f764a59529a1cff61467506
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>İzlenecek Yol: Grafik Bilgilerini Yakalama
 Bu kılavuzda nasıl kullanılacağı ortaya [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] grafik Tanılama'yı el ile bir Direct3D uygulamasından grafik bilgilerini yakalama.  
@@ -62,4 +63,4 @@ Bu kılavuzda nasıl kullanılacağı ortaya [!INCLUDE[vsprvs](../../code-qualit
 -   Grafik tanılama araçlarını kullanarak yakalanan grafik bilgilerini çözümlemeyi öğrenin. Bkz: [genel bakış](overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Grafik bilgilerini yakalama](capturing-graphics-information.md)
+ [Grafik Bilgilerini Yakalama](capturing-graphics-information.md)

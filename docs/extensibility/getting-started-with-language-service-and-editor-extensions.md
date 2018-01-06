@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e590d6fff715aae33ee757460f2b0ba3df31e6e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f7b7440ff2f42eba1d138872071d4e51d2402c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Dil hizmeti ve düzenleyici uzantıları ile çalışmaya başlama
 Anahat oluşturma, eşleşen ayraç, IntelliSense ve ampuller gibi dil hizmet özellikleri programlama diliniz veya herhangi bir içerik türüne eklemek için düzenleyici uzantıları kullanabilirsiniz. Ayrıca, Görünüm ve Visual Studio düzenleyicisinde, Örneğin Renklendirme, kenar boşlukları, adornments ve diğer görsel öğelere metin davranışını özelleştirebilirsiniz. Ayrıca, kendi içerik türünü tanımlayın ve görünümü ve davranışı içeriğinizi göründüğü metin görünümlerini belirtin.  
@@ -84,9 +85,9 @@ Anahat oluşturma, eşleşen ayraç, IntelliSense ve ampuller gibi dil hizmet ö
   
  Visual Studio Paketi uzantısından MEF Bileşenleri Düzenleyicisi de oluşturabilirsiniz. Ayrıntılar için aşağıdaki izlenecek bakın:  
   
--   [İzlenecek yol: bir kabuk komut Düzenleyicisi uzantısı ile kullanma](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+-   [İzlenecek Yol: Düzenleyici Uzantısı ile Kabuk Komutu Kullanma](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [İzlenecek yol: bir kısayol tuşu Düzenleyicisi uzantısı ile kullanma](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+-   [İzlenecek Yol: Düzenleyici Uzantısı ile Kısayol Tuşu Kullanma](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md)
+ [Dil Hizmeti ve Düzenleyici Uzantı Noktaları](../extensibility/language-service-and-editor-extension-points.md)

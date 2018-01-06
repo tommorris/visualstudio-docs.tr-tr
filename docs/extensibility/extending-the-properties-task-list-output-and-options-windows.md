@@ -19,11 +19,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f94a8364f52f7723a1ab9dae6114a8bb66a91683
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 631c336d0350fdf8a43d747eb6bda7b01e9d1eba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Özellikler, görev listesi, çıkış ve seçenekleri Windows genişletme
 Visual Studio'da herhangi bir araç penceresi erişebilir. Bu kılavuz, araç penceresi hakkında bilgi yeni bir tümleştirme gösterilmektedir **seçenekleri** sayfası ve yeni bir ayar **özellikleri** sayfası ve nasıl yazılacağını **görevlistesi** ve **çıkış** windows.  

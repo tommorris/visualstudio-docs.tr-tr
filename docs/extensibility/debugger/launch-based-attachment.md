@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2aa9787ad432e402375680c4e27e433236b13249
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d05f0b8d8fd0190391da831351b65d873eac4efc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launch-based-attachment"></a>Ek başlatma tabanlı
 Ek bir program başlatma tabanlı otomatik olarak yapılır. Program barındırma işlemi tarafından SDM başlatıldığında, başlatma tabanlı eki el ile ek yöntemi için benzer bir yol izler. Bilgi için bkz: [programını ekleme](../../extensibility/debugger/attaching-to-the-program.md).  
@@ -37,4 +38,4 @@ Ek bir program başlatma tabanlı otomatik olarak yapılır. Program barındırm
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Gerekli olayları gönderme](../../extensibility/debugger/sending-the-required-events.md)   
- [Ayıklanacak bir Program etkinleştirme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+ [Bir Programı Hataları Ayıklanacak Şekilde Etkinleştirme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

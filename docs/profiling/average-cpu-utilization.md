@@ -14,15 +14,16 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03fdce795cadba8496d9dd4ea2c0887e8738a8f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38441e88e1086b38ff7028cfbf81b38e48494358
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="average-cpu-utilization"></a>Ortalama CPU Kullanımı
 Profili işlemin ortalama kullanımı sistemin mantıksal çekirdekler işlemi süresince gösterir. Grafiği, belirli bir zamanda hangi belirli çekirdek etkindir göstermez. Örneğin, iki çekirdek her belirli bir süre boyunca % 50 kapasiteyle çalıştırıyorsanız, bu görünüm kullanılan bir mantıksal çekirdek gösterir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çekirdekler görünümü](../profiling/cores-view.md)   
- [CPU kullanım grafiği](../profiling/cpu-utilization-graph.md)
+ [CPU Kullanım Grafiği](../profiling/cpu-utilization-graph.md)

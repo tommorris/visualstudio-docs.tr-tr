@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: b39d142a44a99cc0fde362249d5717ee75c09323
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bbf11e020380114f12de3c6b71960faf80791ba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>İzlenecek Yol: Metin Şablonları Kullanarak Kod Oluşturma
 Kod oluşturma, kesin türü belirtilmiş ve kaynak modeli değiştiğinde henüz kolayca değiştirilebilmesi için program kodunu üretmek sağlar. Bunu daha esnektir, bir yapılandırma dosyası kabul tamamen genel bir program yazma alternatif teknik ile karşılaştırın ancak ne kod sonuçlarında kadar kolay okumak ve değiştirmek ya da bu tür iyi bir performans sahiptir. Bu kılavuzda Bu avantajı gösterir.  
@@ -104,7 +105,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 4.  Bu kılavuz için dosya adı `exampleXml.xml`. Dosya içeriği, önceki bölümde gösterilen XML olarak ayarlayın.  
   
- ..  
+ .  
   
 ### <a name="add-a-test-code-file"></a>Bir test kodu dosyası ekleme  
  Bir C# dosyayı projenize ekleyin ve bunu yazabilmesi için istediğiniz kod örneği yazma. Örneğin:  
@@ -421,4 +422,4 @@ namespace MyProject
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
- [T4 metin şablonu yazma](../modeling/writing-a-t4-text-template.md)
+ [T4 Metin Şablonu Yazma](../modeling/writing-a-t4-text-template.md)

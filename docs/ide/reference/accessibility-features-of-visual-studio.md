@@ -14,11 +14,12 @@ ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0ee9f615ad28e486566fb117124a1b69634a4b57
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e947fa523b2d5e79e1df1966e6a4c3d9b6c8e7af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio'nun Erişilebilirlik Özellikleri
 > [!TIP]
@@ -41,15 +42,15 @@ Erişilebilirlik özelliklerine ve yardımcı programlar Windows ek olarak, aşa
 
  Daha fazla bilgi için aşağıdaki konulara bakın:  
 
--   [Nasıl yapılır: IDE erişilebilirlik seçeneklerini ayarlama](../../ide/reference/how-to-set-ide-accessibility-options.md)  
+-   [Nasıl Yapılır: IDE Erişilebilirlik Seçeneklerini Ayarlama](../../ide/reference/how-to-set-ide-accessibility-options.md)  
 
--   [Nasıl yapılır: klavyeyi özel olarak kullanma](../../ide/reference/how-to-use-the-keyboard-exclusively.md)  
+-   [Nasıl Yapılır: Klavyeyi Özel Olarak Kullanma](../../ide/reference/how-to-use-the-keyboard-exclusively.md)  
 
 -   [Klavye kısayolları](../../ide/default-keyboard-shortcuts-in-visual-studio.md)  
 
--   [Erişilebilirlik ipuçları ve püf noktaları](../../ide/reference/accessibility-tips-and-tricks.md)  
+-   [Erişilebilirlik İpuçları ve Püf Noktaları](../../ide/reference/accessibility-tips-and-tricks.md)  
 
 -   [Nasıl yapılır: yazı tiplerini ve renkleri değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Erişilebilirlik ürünleri ve Microsoft Hizmetleri](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
+ [Microsoft'tan Erişilebilirlik Ürünleri ve Hizmetleri](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

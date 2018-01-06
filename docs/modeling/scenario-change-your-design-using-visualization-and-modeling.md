@@ -20,11 +20,12 @@ caps.latest.revision: "61"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: f0b99b4a4bcfbec58c23e529e3ee250ca19554ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e6ffb17164bf49cb585d9fd67dd99c833a805411
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 Yazılım sisteminizin Görselleştirme ve modelleme Visual Studio araçları kullanarak tarafından Kullanıcıların ihtiyaçlarını karşıladığından emin olun.
@@ -96,9 +97,9 @@ Bağımlılık diyagramlarındaki öğeleri modelleme projesinde bulunur, ancak 
   
 -   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)  
   
--   [Nasıl yapılır: sınıf diyagramlarını (Sınıf Tasarımcısı) projelerine ekleme](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+-   [Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
--   [Visual Studio - etki alanına özgü dil SDK Modelleme](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+-   [Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
@@ -270,7 +271,7 @@ Bağımlılık diyagramlarındaki öğeleri modelleme projesinde bulunur, ancak 
   
 -   [Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)  
   
--   [Uygulama Mimarinizi modeli](../modeling/model-your-app-s-architecture.md)  
+-   [Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)  
  
 ###  <a name="VisualizeCode"></a>Var olan kodu görselleştirme: Kod eşlemeleri  
  Kod haritaları kodda mevcut organizasyon ve ilişkileri gösterir. Öğeleri temsil ettiği *düğümleri* haritaya ve ilişkileri temsil ettiği *bağlantılar*. Kod haritaları aşağıdaki tür görevleri gerçekleştirmenize yardımcı olabilir:  
@@ -391,7 +392,7 @@ Bağımlılık diyagramlarındaki öğeleri modelleme projesinde bulunur, ancak 
   
  Keşfetmek ve varolan sınıfları tartışmak için başlangıç noktası olarak Sınıf Tasarımcısı koddan sınıf diyagramları oluşturmak için kullanabilirsiniz.  
   
--   [Nasıl yapılır: sınıf diyagramlarını (Sınıf Tasarımcısı) projelerine ekleme](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+-   [Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 #### <a name="summary-strengths-of-class-diagrams"></a>Özeti: Sınıf diyagramları gücü  
  Sınıf diyagramları tanımlamanıza yardımcı olur:  
@@ -461,9 +462,9 @@ Bağımlılık diyagramlarındaki öğeleri modelleme projesinde bulunur, ancak 
   
 -   [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md)  
+-   [Bağımlılık Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)  
   
--   [Bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)  
+-   [Bağımlılık Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)  
   
 -   [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)  
   

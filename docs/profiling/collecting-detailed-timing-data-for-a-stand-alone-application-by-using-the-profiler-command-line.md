@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 340346aa6c4bea432f2946cf9311dd2f6442b42f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 07bb6cf6a0426f0287c01c431e4b3d05f79b5d39
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırını Kullanarak Bağımsız bir Uygulama için Ayrıntılı Zamanlama Verileri Toplama
 Bu bölümdeki yordamları ve ayrıntılı performans toplamak için seçenekleri açıklar komut satırından izleme yöntemini kullanarak bir istemci (tek başına) bileşeni için verileri.  
@@ -50,7 +51,7 @@ Bu bölümdeki yordamları ve ayrıntılı performans toplamak için seçenekler
 |**Profil oluşturma hizmetleri**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Görünümler ve raporlar izleme verileri analiz etme  
- [İzleme yöntemi veri görünümleri](../profiling/instrumentation-method-data-views.md)  
+ [İzleme Metodu Veri Görünümleri](../profiling/instrumentation-method-data-views.md)  
   
 ## <a name="reference"></a>Başvuru  
  [Komut satırı profil araçları başvurusu](../profiling/command-line-profiling-tools-reference.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fc82041f8ab2790c63c271f85d573a3105ab8b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e02d4ad31a4877dd88dca941c06e38f7eeac82f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML Şeması Başvurusu
 Komut tablo derleyici şema öğeleri, tablosu ile izin verilen alt öğeleri ve özniteliklerinin her biri için sağlar.  
@@ -45,36 +46,36 @@ Komut tablo derleyici şema öğeleri, tablosu ile izin verilen alt öğeleri ve
 ## <a name="schema-hierarchy"></a>Şema hiyerarşisi  
  .Vsct dosyasında aşağıdaki temel öğe var.  
   
- [CommandTable öğesi](../extensibility/commandtable-element.md)  
+ [CommandTable Öğesi](../extensibility/commandtable-element.md)  
   
- [Extern öğesi](../extensibility/extern-element.md)  
+ [Extern Öğesi](../extensibility/extern-element.md)  
   
- [Öğe dahil](../extensibility/include-element.md)  
+ [Include Öğesi](../extensibility/include-element.md)  
   
- [Öğe tanımlayın](../extensibility/define-element.md)  
+ [Define Öğesi](../extensibility/define-element.md)  
   
- [Komutları öğesi](../extensibility/commands-element.md)  
+ [Commands Öğesi](../extensibility/commands-element.md)  
   
- [CommandPlacements öğesi](../extensibility/commandplacements-element.md)  
+ [CommandPlacements Öğesi](../extensibility/commandplacements-element.md)  
   
- [VisibilityConstraints öğesi](../extensibility/visibilityconstraints-element.md)  
+ [VisibilityConstraints Öğesi](../extensibility/visibilityconstraints-element.md)  
   
- [Taşıyan öğesi](../extensibility/keybindings-element.md)  
+ [KeyBindings Öğesi](../extensibility/keybindings-element.md)  
   
- [UsedCommands öğesi](../extensibility/usedcommands-element.md)  
+ [UsedCommands Öğesi](../extensibility/usedcommands-element.md)  
   
- [Üst öğesi](../extensibility/parent-element.md)  
+ [Parent Öğesi](../extensibility/parent-element.md)  
   
- [Icon öğesi](../extensibility/icon-element.md)  
+ [Icon Öğesi](../extensibility/icon-element.md)  
   
- [Dizeleri öğesi](../extensibility/strings-element.md)  
+ [Strings Öğesi](../extensibility/strings-element.md)  
   
- [Komut bayrağı öğesi](../extensibility/command-flag-element.md)  
+ [Command Flag Öğesi](../extensibility/command-flag-element.md)  
   
- [Simgeler öğesi](../extensibility/symbols-element.md)  
+ [Symbols Öğesi](../extensibility/symbols-element.md)  
   
  [Koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Komut içinde VSPackages yönlendirme](../extensibility/internals/command-routing-in-vspackages.md)
+ [VSPackage’larda Komut Yönlendirme](../extensibility/internals/command-routing-in-vspackages.md)

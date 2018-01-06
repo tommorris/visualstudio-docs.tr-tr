@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4c676c28b955fac29db5a961f3b566600bcf318
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: vssdk
+ms.openlocfilehash: 7c15956bc861f9eb20267dc97446cf5ea49cae31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK
 Bu makalede, Visual Studio Yardım Görüntüleyicisi tümleştiricileri için aşağıdaki görevleri içerir:  
@@ -44,9 +45,9 @@ Yardım Görüntüleyici içinde doğru işlenmek üzere ham konu içeriği W3C 
   
 Bir konu genellikle iki bölüm içerir:  
   
--   Meta veriler (içerik meta verileri başvuru bakın): Örneğin, konu benzersiz kimliği, anahtar sözcüğü değeri, konu TOC kimliği, konuyla ilgili verileri üst düğüm kimliği, vb..  
+-   Meta veriler (içerik meta verileri başvuru bakın): Örneğin, konu benzersiz kimliği, anahtar sözcüğü değeri, konu TOC kimliği, konuyla ilgili verileri üst düğüm kimliği, vb.  
   
--   Gövde içeriği: W3C temel 1.1 XHTML ile uyumlu içeren içerik davranışları (daraltılabilir alanı, kod parçacığında, vb.. desteklenen Tam bir listesi aşağıda gösterilmiştir).  
+-   Gövde içeriği: W3C temel 1.1 XHTML ile uyumlu içeren içerik davranışları (daraltılabilir alanı, kod parçacığında, vb. desteklenen Tam bir listesi aşağıda gösterilmiştir).  
   
 Visual Studio markalama paketi denetimleri desteklenir:  
   
@@ -93,7 +94,7 @@ ContosoTopic4.htm adlı yeni bir XHTML belge oluşturun ve başlık etiketi (aş
   
 ```  
   
-Ardından, nasıl konu (kendi kendini veya markalı), sunulacak nasıl tanımlamak için veri eklemek için bu konuda bulunduğu TOC Kimliğini (için diğer konular başvuruyla bağlantı) içinde F1, bu konuda başvurmak için vb..  Desteklenen meta verileri tam bir listesi için aşağıdaki "İçerik meta verileri" tabloya bakın.  
+Ardından, nasıl konu (kendi kendini veya markalı), sunulacak nasıl tanımlamak için veri eklemek için bu konuda bulunduğu TOC Kimliğini (için diğer konular başvuruyla bağlantı) içinde F1, bu konuda başvurmak için vb.  Desteklenen meta verileri tam bir listesi için aşağıdaki "İçerik meta verileri" tabloya bakın.  
   
 -   Bu durumda, kendi markalama paketi, Visual Studio Yardım Görüntüleyicisi markalama paketinin bir değişken kullanacağız.  
   
@@ -730,7 +731,7 @@ Visual Studio İçerik depolama alanı oluşturun. Tümleşik Kabuk senaryo içi
   
      Anahtar: Katalogadı dize değeri: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] belgeleri  
   
-**Proje oluşturma**  
+**Projeyi Oluşturma**  
   
 Yalıtılmış kabuk uzantısı oluşturmak için:  
   

@@ -14,11 +14,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4547cec114568403d8f5fc7a0bb88af3fad3934b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f6971000da2b17b96d3371d7d75edc242e87cd94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="span-class"></a>span Sınıfı
 Bir uygulama aşaması tanımlar.  
@@ -36,7 +37,7 @@ class span;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[span::span Oluşturucusu](../profiling/span-span-constructor.md)|Yeni bir örneğini başlatır `span` sınıfı.|  
-|[span:: ~ span yok Edicisi](../profiling/span-tilde-span-destructor.md)|Bozar `span` nesne ve kaynaklarını serbest bırakır.|  
+|[span::~span Yıkıcısı](../profiling/span-tilde-span-destructor.md)|Bozar `span` nesne ve kaynaklarını serbest bırakır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `span`  
@@ -47,4 +48,4 @@ class span;
  **Namespace:** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tanılama Namespace](../profiling/diagnostic-namespace.md)
+ [Tanılama Ad Alanı](../profiling/diagnostic-namespace.md)

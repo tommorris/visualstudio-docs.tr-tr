@@ -18,11 +18,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 362daf0d3044841260ae7e9b8f0eb42bad8e610b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 8b811b664df5d64a2235d641a6facf6cec889fe4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer"></a>Eşzamanlılık Görselleştiricisi
 > [!NOTE]
@@ -46,13 +47,13 @@ ms.lasthandoff: 11/15/2017
 |Başlık|Açıklama|  
 |-----------|-----------------|  
 |[Kullanım Görünümü](../profiling/utilization-view.md)|Görüntüleme ve tüm işlemciler arasında sistem etkinliğini çözümleme açıklar.|  
-|[İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)|İş parçacığı programınızdaki arasındaki etkileşimler analiz edilmesi anlatılmaktadır.|  
-|[Çekirdekler görünümü](../profiling/cores-view.md)|Çekirdek arasında iş parçacığı geçiş analiz edilmesi anlatılmaktadır.|  
+|[İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)|İş parçacığı programınızdaki arasındaki etkileşimler analiz edilmesi anlatılmaktadır.|  
+|[Çekirdekler Görünümü](../profiling/cores-view.md)|Çekirdek arasında iş parçacığı geçiş analiz edilmesi anlatılmaktadır.|  
 |[Hatalı davranan çok iş parçacıklı uygulamalar için ortak desenler](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Birçok ortak desenleri açıklar ve eşzamanlılık görselleştiricisi görüntülenme gösterir.|  
 |[Visual Studio Web günlüğündeki paralel geliştirme](http://go.microsoft.com/fwlink/?LinkId=235385)|İpuçları ve en iyi uygulamalar için eşzamanlılık görselleştiricisi sağlar.|  
-|[Performans rapor görünümleri](../profiling/performance-report-views.md)|Visual Studio profil oluşturma araçları görünümlerini ve raporlar için başvuru bilgileri sağlar.|  
-|[Eşzamanlılık görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md)|Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için kaynak kodu işaretlemesini açıklar.|  
-|[Eşzamanlılık görselleştiricisi komut satırı yardımcı programı (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Eşzamanlılık görselleştiricisi komut satırı yardımcı programını (CVCollectionCmd.exe) toplamak ve izlemelerini Visual Studio sahip olmayan makinelere işlemek için nasıl kullanılacağını açıklar.|  
+|[Performans Raporu Görünümleri](../profiling/performance-report-views.md)|Visual Studio profil oluşturma araçları görünümlerini ve raporlar için başvuru bilgileri sağlar.|  
+|[Eşzamanlılık Görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md)|Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için kaynak kodu işaretlemesini açıklar.|  
+|[Eşzamanlılık Görselleştiricisi Komut Satırı Yardımcı Programı (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Eşzamanlılık görselleştiricisi komut satırı yardımcı programını (CVCollectionCmd.exe) toplamak ve izlemelerini Visual Studio sahip olmayan makinelere işlemek için nasıl kullanılacağını açıklar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da profil oluşturma](../profiling/index.md)  

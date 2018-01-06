@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>Visual Studio kullanarak hata ayıklama öğrenin
 
@@ -27,7 +28,7 @@ Ya da boyunca hata ayıklayıcı özelliklerini görmek için okuyabilirsiniz ve
 
 |         |         |
 |---------|---------|
-| ![Bir video izlemek](../install/media/video-icon.png "WatchVideo") | [Bir video izlemek](#video) hata ayıklamayı benzer adımları gösterir. |
+|  ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin")  |    [Bir video izlemek](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) hata ayıklamayı benzer adımları gösterir. |
 
 Tanıtım uygulamasını C# olsa da, özellikleri, C++, Visual Basic, JavaScript ve (belirtilenler dışında) Visual Studio tarafından desteklenen diğer diller için geçerlidir.
 
@@ -278,12 +279,6 @@ Yapılır olduğunu düşünelim inceleniyor `Update` yöntemi Data.cs ve istedi
 3. Uygulama devam etmek için F5 tuşuna basın.
 
 Hata ayıklayıcı özellikleri hakkında daha fazla bilgi için bkz: [hata ayıklayıcı ipuçları ve püf noktaları](../debugger/debugger-tips-and-tricks.md).
-
-## <a name="video"></a>Hata ayıklama bir video izleyin
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
-</div>
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

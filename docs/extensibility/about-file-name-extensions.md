@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4aba03fd68fc5e0e68dbf13887de0c25094fa951
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8f504a70950ea9e808d50bd8b9bc7ef5dd92d699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="about-file-name-extensions"></a>Dosya adı uzantıları hakkında
 Dosya uzantısına sahip bir VSPackage kaydederken bunu bir sürümü ile ilişkilendirmeniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bu önemli IF bundan daha yüksek bir sürümü olan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir bilgisayarda yüklü.  
@@ -40,4 +41,4 @@ HKEY_CLASSES_ROOT\
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yan yana dağıtımlar için dosya adı uzantılarını kaydetme](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
- [Dosya adı uzantıları için dosya işleyicisi belirtme](../extensibility/specifying-file-handlers-for-file-name-extensions.md)
+ [Dosya Adı Uzantıları için Dosya İşleyicileri Belirtme](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

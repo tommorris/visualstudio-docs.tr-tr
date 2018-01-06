@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73a3100252dd5ddfcebd791588a4041c8d588e8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 398986499732a36819808b07f05f7d6b46787a94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="component-management"></a>Bileşen Yönetimi
 Windows Installer görevlerin birimler (WICs veya yalnızca bileşenleri de denir) Windows Installer bileşenleri olarak adlandırılır. Bir GUID temel birimidir, yükleme ve başvuru, Windows Installer kullanan kurulumlarını sayım her WIC tanımlar.  
@@ -52,4 +53,4 @@ Windows Installer görevlerin birimler (WICs veya yalnızca bileşenleri de deni
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Paylaşılan ve sürümü tutulan VSPackages arasında seçme](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
- [VSPackage Kurulum senaryoları](../../extensibility/internals/vspackage-setup-scenarios.md)
+ [VSPackage Kurulum Senaryoları](../../extensibility/internals/vspackage-setup-scenarios.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 818b56963c4733ef9bcf826b14df5a703c44e429
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: de947d7d6bf6688381f5026d68d4a007dd40e026
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="include-element"></a>Öğe dahil
 INCLUDE öğesi bulunabilir dosyayı belirtir sağlanan üzerinde geçerli dosyasının içine eklenmek yolunu ekleyin.  Tüm simgeleri ve tanımlanan türlerin derlenmiş sonuç parçası olur.  
@@ -51,7 +52,7 @@ INCLUDE öğesi bulunabilir dosyayı belirtir sağlanan üzerinde geçerli dosya
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[CommandTable öğesi](../extensibility/commandtable-element.md)|Komutları temsil eden tüm öğeleri tanımlar — diğer bir deyişle, menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları —, bir VSPackage IDE sağlar.|  
+|[CommandTable Öğesi](../extensibility/commandtable-element.md)|Komutları temsil eden tüm öğeleri tanımlar — diğer bir deyişle, menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları —, bir VSPackage IDE sağlar.|  
   
 ## <a name="example"></a>Örnek  
   
@@ -60,4 +61,4 @@ INCLUDE öğesi bulunabilir dosyayı belirtir sağlanan üzerinde geçerli dosya
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

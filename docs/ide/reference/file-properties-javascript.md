@@ -29,11 +29,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f732a23631de181524382914e954ad50a7f0385d
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bd95d18cfbf1ce04c1178a0befbc8cbf7613862e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="file-properties-javascript"></a>Dosya Özellikleri, JavaScript
 Proje sistem dosyalarını gerçekleştirmesi gereken eylemleri belirtmek için dosya özelliklerini kullanabilirsiniz. Örneğin, bir dosya için paket kaynak dosyası olarak eklenmesi gerekip gerekmediğini belirtmek için dosya özelliklerini ayarlayabilirsiniz.  
@@ -96,4 +97,4 @@ Proje sistem dosyalarını gerçekleştirmesi gereken eylemleri belirtmek için 
  Başvuru sürümünü görüntüler.  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje ve çözüm özelliklerini yönetme](../../ide/managing-project-and-solution-properties.md)
+ [Proje ve Çözüm Özelliklerini Yönetme](../../ide/managing-project-and-solution-properties.md)

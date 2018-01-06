@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb3a7122f561f2c1beaa5674be2220a565586aa4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c8d0f7a2ee52930a74566e0f7b4ddc10747204ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shader-designer"></a>Gölgelendirici Tasarımcısı
 Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gölgelendirici Designer'ın oluşturmak, değiştirmek ve olarak bilinen özel görsel efektler verme *gölgelendiriciler*.  
@@ -79,8 +80,8 @@ Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-qu
 |**İle koni Önizleme**|Etkinleştirildiğinde, bir model koninin gölgelendirici önizlemek için kullanılır. Bir seferde yalnızca bir önizleme şekli etkinleştirilebilir.|  
 |**İle teapot Önizleme**|Etkinleştirildiğinde, bir teapot modelinin gölgelendirici önizlemek için kullanılır. Bir seferde yalnızca bir önizleme şekli etkinleştirilebilir.|  
 |**İle düzlemi Önizleme**|Etkinleştirildiğinde, bir düzlemi modelinin gölgelendirici önizlemek için kullanılır. Bir seferde yalnızca bir önizleme şekli etkinleştirilebilir.|  
-|**Araç kutusu**|Alternatif olarak gösterir veya gizler **araç**.|  
-|**Veri Erişimi**|Alternatif olarak gösterir veya gizler **özellikleri** penceresi.|  
+|**Araç Kutusu**|Alternatif olarak gösterir veya gizler **araç**.|  
+|**Özellikler**|Alternatif olarak gösterir veya gizler **özellikleri** penceresi.|  
 |**Gelişmiş**|Gelişmiş komutları ve seçenekleri içerir.<br /><br /> **Dışarı aktarma**: çeşitli biçimlerde gölgelendirici verilmesini sağlar.<br /><br /> **Dışarı aktarma olarak**: Gölgelendirici ya da HLSL kaynak kodu veya derlenmiş gölgelendirici bayt olarak dışa aktarır. Gölgelendiriciler dışarı aktarma hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir gölgelendirici verme](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik motorları**: tasarım yüzeyine görüntülemek için kullanılan Oluşturucu seçimi sağlar.<br /><br /> **İle D3D11 işleme**: Direct3D 11 gölgelendirici Tasarımcısı tasarım yüzeyi işlemek için kullanır.<br /><br /> **İle D3D11WARP işleme**: kullanan Direct3D 11 Windows Gelişmiş Tarama Platform (gölgelendirici Tasarımcısı tasarım yüzeyi işlemek için TÜNELİ).<br /><br /> **Görünüm**: seçimi gölgelendirici Tasarımcısı hakkında ek bilgi sağlar.<br /><br /> **Kare hızı**: etkin olduğunda, geçerli kare hızı tasarım yüzeyine sağ üst köşesinde görüntülenir. Kare hızı, saniye başına çizilen çerçeve sayısıdır.  Bu seçenek, etkinleştirdiğinizde yararlıdır **gerçek zamanlı işleme modunu** seçeneği.|  
   
 > [!TIP]
@@ -185,6 +186,6 @@ Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-qu
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Oyunları ve uygulamaları için 3-b varlıklar ile çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md)|Genel bir bakış sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dokuları ve görüntüleri, 3-b modellere ve gölgelendirici efektleri ile çalışmak için kullanabileceğiniz araçlar.|  
+|[Oyunlar ve Uygulamalar için 3B Varlıklarla Çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md)|Genel bir bakış sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dokuları ve görüntüleri, 3-b modellere ve gölgelendirici efektleri ile çalışmak için kullanabileceğiniz araçlar.|  
 |[Görüntü Düzenleyicisi](../designers/image-editor.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dokuları ve görüntüleri çalışmak için görüntü Düzenleyicisi.|  
 |[Model Düzenleyicisi](../designers/model-editor.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Model Düzenleyicisi'ni 3-b modelleriyle çalışacak.|

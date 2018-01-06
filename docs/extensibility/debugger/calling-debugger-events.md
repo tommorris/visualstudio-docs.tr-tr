@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3acccf7233e62ca45d450a5e33c21a286ca4a204
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4a3870921fab82c92b57b9c64dd30bda109c3bcb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calling-debugger-events"></a>Arama hata ayıklayıcı olayları
 Hata ayıklama oturumları, olayları belirli bir sırada oluşur.  
@@ -50,4 +51,4 @@ Hata ayıklama oturumları, olayları belirli bir sırada oluşur.
 12. [Özel durum işleme](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir özel hata ayıklama altyapısı oluşturma](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+ [Özel Hata Ayıklama Altyapısı Oluşturma](../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2453d48394f6d7d4c9a5b50a0aa879b28321124
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 90b17b3a7a6d4d5ec1cebe978f75b0f4f4018db0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enumerating-locals"></a>Yerel öğeler numaralandırma
 > [!IMPORTANT]
@@ -251,4 +252,4 @@ STDMETHODIMP CFieldProperty::EnumChildren(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yerel öğeler için örnek uygulama](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [GetMethodProperty uygulama](../../extensibility/debugger/implementing-getmethodproperty.md)   
- [Değerlendirme bağlamı](../../extensibility/debugger/evaluation-context.md)
+ [Değerlendirme Bağlamı](../../extensibility/debugger/evaluation-context.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e8ec523147f439e2ffd45d635e9ed873bbb1e8ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e14010492b0fd086bef2bd79232a32beb54dbd84
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="process-debug-manager"></a>İşlem Hata Ayıklama Yöneticisi
 İşlem Hata Ayıklama Yöneticisi'ni (PDM) programları yönetir Visual Studio bir bileşenidir ve hata ayıklama oturumu için kullanılabilir hale getirme işlemleri, Yöneticisi ve hata ayıklama altyapıları.  
@@ -31,4 +32,4 @@ ms.lasthandoff: 10/31/2017
  [Altyapısı hata ayıklama](../../extensibility/debugger/debug-engine.md)   
  [Bağlantı noktaları](../../extensibility/debugger/ports.md)   
  [Programlar](../../extensibility/debugger/programs.md)   
- [Hata ayıklayıcı bileşenleri](../../extensibility/debugger/debugger-components.md)
+ [Hata Ayıklayıcı Bileşenleri](../../extensibility/debugger/debugger-components.md)

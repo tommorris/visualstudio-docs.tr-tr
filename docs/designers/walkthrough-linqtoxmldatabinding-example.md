@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08a27820e1fc3f2677bc64dac85a657a6d1db1b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bc78fd4331839ce1a55253a719c40f8b19dea491
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>İzlenecek yol: LinqToXmlDataBinding örneği
 Bu kılavuzda LinqToXmlDataBinding örnek ve iki birincil kaynak dosyaları, L2DBForm.xaml ve L2DBForm.xaml.cs daha ilginç içeriği bazıları açıklanmaktadır.  
@@ -45,9 +46,9 @@ Bu kılavuzda LinqToXmlDataBinding örnek ve iki birincil kaynak dosyaları, L2D
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[L2DBForm.XAML kaynak kodu](../designers/l2dbform-xaml-source-code.md)|İçeriği ve dosya L2DBForm.xaml XAML kodda açıklamasını içerir.|  
-|[L2DBForm.xaml.cs kaynak kodu](../designers/l2dbform-xaml-cs-source-code.md)|İçeriği ve C# kaynak kodu dosyasına L2DBForm.xaml.cs açıklamasını içerir.|  
+|[L2DBForm.xaml Kaynak Kodu](../designers/l2dbform-xaml-source-code.md)|İçeriği ve dosya L2DBForm.xaml XAML kodda açıklamasını içerir.|  
+|[L2DBForm.xaml.cs Kaynak Kodu](../designers/l2dbform-xaml-cs-source-code.md)|İçeriği ve C# kaynak kodu dosyasına L2DBForm.xaml.cs açıklamasını içerir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ-XML örneği kullanarak WPF veri bağlama](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
- [Nasıl yapılır: derleme ve LinqToXmlDataBinding örnek çalıştırma](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)
+ [Nasıl Yapılır: LinqToXmlDataBinding Oluşturma ve Çalıştırma Örneği](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)

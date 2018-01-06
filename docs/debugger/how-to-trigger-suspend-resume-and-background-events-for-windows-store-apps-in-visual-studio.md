@@ -18,18 +18,19 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4380299fd37b456dd3be6da7cf37981ad89b1caf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Tetiklemek nasıl askıya alma, sürdürme ve Visual Studio UWP uygulamalarında hata ayıklama sırasında arka plan olayları
 Ne zaman değil ayıkladığınız, Windows **işlem yaşam süresi Management** (PLM) denetimleri, uygulamanızın yürütme durumu — başlatma, askıya alma, sürdürme ve uygulama yanıt kullanıcı eylemleri ve aygıtın durumu olarak sonlandırılıyor. Hata ayıklama yaptığınız Windows bu etkinleştirme olayları devre dışı bırakır. Bu konu, bu olayları hata ayıklayıcısında yangın açıklar.  
   
  Bu konu ayrıca hata ayıklama açıklar **arka plan görevleri**. Arka plan görevleri bile, uygulama çalışmıyorken belirli işlemlerin bir arka plan işlemi gerçekleştirmenize olanak sağlar. Hata ayıklama modunda uygulamanızı koymak için hata ayıklayıcı kullanabilirsiniz ve ardından — kullanıcı arabirimini başlatmadan — başlatın ve hata ayıklama arka plan görevi.  
   
- İşlem ömrü yönetimi ve arka plan görevleri hakkında daha fazla bilgi için bkz: [devam ettirme, başlatma ve çoklu](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/index).  
+ İşlem ömrü yönetimi ve arka plan görevleri hakkında daha fazla bilgi için bkz: [devam ettirme, başlatma ve çoklu](/windows/uwp/launch-resume/index).  
   
 ##  <a name="BKMK_In_this_topic"></a>Bu konudaki  
  [Tetikleyici işlem yaşam süresi Management olayları](#BKMK_Trigger_Process_Lifecycle_Management_events)  

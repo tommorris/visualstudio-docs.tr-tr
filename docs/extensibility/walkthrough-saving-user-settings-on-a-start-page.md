@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a7d8649e0d8cf83650da58386901e638ec14a2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 16de0e205d71e2a71b14f523dedbb45354157355
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>İzlenecek yol: Bir başlangıç sayfasında kullanıcı ayarlarını kaydetme
 Kullanıcı ayarları için başlangıç sayfanızı devam edebilir. Bu kılavuzu izleyerek, kullanıcı bir düğmesine tıkladığında ve başlangıç sayfası yükleyen her zaman bu ayarı alır, bir ayar kayıt defterine kaydettiği bir denetim oluşturabilirsiniz. Başlangıç sayfası proje şablonu özelleştirilebilir kullanıcı denetimini içerir ve varsayılan başlangıç sayfası XAML denetleyen çağırır çünkü başlangıç sayfası kendisini değiştirmek gerekmez.  
@@ -204,4 +205,4 @@ Kullanıcı ayarları için başlangıç sayfanızı devam edebilir. Bu kılavuz
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:EnvDTE80.DTE2?displayProperty=fullName>     
- [Başlangıç sayfası için Visual Studio komut ekleme](../extensibility/adding-visual-studio-commands-to-a-start-page.md)
+ [Başlangıç Sayfasına Visual Studio Komutları Ekleme](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f170efc945f92d13eda61830ef682ab4cd8fc755
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9980232a7927bf1ae2df9d5f6329a57a031d3f56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="combo-element"></a>Birleşik giriş öğesi
 Açılan kutuda görünür komutları tanımlar. Birleşik giriş kutuları, dört tür vardır: aşağı açılan, DynamicCombo, IndexCombo ve MRUCombo.  
@@ -62,7 +63,7 @@ Açılan kutuda görünür komutları tanımlar. Birleşik giriş kutuları, dö
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Komutları öğesi](../extensibility/commands-element.md)|VSPackage araç çubuğundaki komutları koleksiyonunu temsil eder.|  
+|[Commands Öğesi](../extensibility/commands-element.md)|VSPackage araç çubuğundaki komutları koleksiyonunu temsil eder.|  
   
 ## <a name="example"></a>Örnek  
   
@@ -87,4 +88,4 @@ Açılan kutuda görünür komutları tanımlar. Birleşik giriş kutuları, dö
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 339ebce7ddc338656abd1484d4dbdddbc02c060d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f1c2b7f20c0094bf901ed7cf67a75e412bb2e25e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Numaralandırmalar (Visual Studio hata ayıklama)
 Şunlardır sabit listeleri için [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] hata ayıklama SDK.  
@@ -189,7 +190,7 @@ ms.lasthandoff: 10/31/2017
  [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)  
  Adlarını eşleştirmek için örnek seçeneğini seçer.  
   
- [NESNE_TÜRÜ](../../../extensibility/debugger/reference/object-type.md)  
+ [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md)  
  İfade değerlendirici nesneden türünü belirtir.  
   
  [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)  

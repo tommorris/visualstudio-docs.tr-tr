@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc9c13ecf6a5cc6e62caa897adce16830026261a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c03df6edc54948060fa3b1f8eee264646a80f38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Visual Studio'nun birden çok sürümünü destekleme
 Terim *yan yana* yüklemek ve bir ürün aynı bilgisayara birden fazla sürümünü yönetmek anlamına gelir. VSPackages için bir kullanıcı aynı bilgisayarda yüklü birden fazla Visual Studio sürümleri sahip anlamına gelir. Ancak, tek bir Visual Studio sürümüne yüklenen, VSPackages yan yana sürümleri sahip olamaz.  
@@ -42,11 +43,11 @@ Terim *yan yana* yüklemek ve bir ürün aynı bilgisayara birden fazla sürüm�
     >  Visual Studio sürümünü yükleme de karşılık gelen bir sürümünü yükler [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Örneğin, Visual Studio 2010 ve Visual Studio 2012 aynı bilgisayara yüklenmesi de 4.0 ve 4.5 sürümlerini yükler [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]sırasıyla.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Paylaşılan ve sürümü tutulan VSPackages arasında seçme](../extensibility/choosing-between-shared-and-versioned-vspackages.md)  
+ [Paylaşılan ve Sürümü Tutulan VSPackage’lar Arasında Seçim Yapma](../extensibility/choosing-between-shared-and-versioned-vspackages.md)  
  VSPackage yan yana sorunları çözün açıklanmaktadır.  
   
- [Yan yana dağıtımlar için dosya adı uzantılarını kaydetme](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)  
+ [Yan Yana Dağıtım için Dosya Adı Uzantılarını Kaydetme](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)  
  VSPackage bir yan yana senaryosunda dosya ilişkilendirmeleri ne kaydolabilirsiniz açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Windows Installer ile VSPackages yükleme](../extensibility/internals/installing-vspackages-with-windows-installer.md)  
+ [Windows Installer ile VSPackage Yükleme](../extensibility/internals/installing-vspackages-with-windows-installer.md)  

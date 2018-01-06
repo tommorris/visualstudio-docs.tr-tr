@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="profiling-feature-tour"></a>Özellik turu profil oluşturma
 
@@ -146,7 +147,8 @@ CPU kullanımı veya bellek kullanımı araçları şu anda mevcut olmayan araç
 
 ![Performans Gezgini aracı](../profiling/media/prof-tour-performance-explorer.png "performans Gezgini")
 
-## <a name="which-tool-should-i-use"></a>Hangi aracı kullanmalıyım?  
+## <a name="tool_support_info"></a>Hangi aracı kullanmalıyım?  
+
 Visual Studio sunar farklı araçlar listeleyen bir tablo işte ve farklı proje türleri ile kullanabilmek için:
   
 |Performans aracı|Windows Masaüstü|Windows Evrensel/deposu|ASP.NET/ASP.NET çekirdek|  
@@ -157,7 +159,7 @@ Visual Studio sunar farklı araçlar listeleyen bir tablo işte ve farklı proje
 |[Uygulama zaman çizelgesi](../profiling/application-timeline.md)|Evet|Evet|Yok|  
 |[PerfTips](../profiling/perftips.md)|Evet|HTML için Hayır XAML için Evet|Evet|  
 |[Performans Gezgini](../profiling/performance-explorer.md)|Evet|Yok|Evet (Hayır için ASP.NET çekirdek)|  
-|[IntelliTrace](../debugger/intellitrace.md)|Yalnızca .NET Enterprise|Yalnızca .NET Enterprise|Yalnızca .NET Enterprise|
+|[IntelliTrace](../debugger/intellitrace.md)|.NET ve yalnızca Visual Studio Enterprise|.NET ve yalnızca Visual Studio Enterprise|.NET ve yalnızca Visual Studio Enterprise|
 |[Ağ kullanımı](../profiling/network-usage.md)|Yok|Evet|Yok| 
 |[HTML UI yanıtlama hızı](../profiling/html-ui-responsiveness.md)|Yok|XAML için Hayır HTML için Evet|Yok|  
 |[JavaScript belleği](../profiling/javascript-memory.md)|Yok|XAML için Hayır HTML için Evet|Yok|  

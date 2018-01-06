@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016aac6f0e23b626b9023b978efa27e76924c6c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2bdf3231f2df8b3700c7865fa53e60003b814a5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-settings-category"></a>Ayarları kategorisi oluşturma
 Bu kılavuzda bir Visual Studio ayarları kategori oluşturmak ve değerlerini kaydetmek ve değerleri ayarları dosyasından geri yüklemek için kullanın. Ayarları kategorisi "özel ayarları noktası"; görünür ilgili özellikleri grubudur. diğer bir deyişle, bir onay kutusu olarak **içeri ve dışarı aktarma ayarları** Sihirbazı. (Üzerinde Bul **Araçları** menü.) Ayarları kaydedilmez veya kategori olarak geri ve tek tek ayarların Sihirbazı'nda görüntülenmez. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).  
@@ -148,8 +149,7 @@ Bu kılavuzda bir Visual Studio ayarları kategori oluşturmak ve değerlerini k
   
      **Seçin, koleksiyon ayarlarını içeri aktarmak için** sayfası görüntülenir.  
   
-15. Seçin `MySettings.vssettings` dosyasını **My ayarları** ağaç görünümü düğümünün. Dosya ağaç görünümünde görünmüyorsa tıklatın **Gözat** ve bulun. 
-              **İleri**'ye tıklayın.  
+15. Seçin `MySettings.vssettings` dosyasını **My ayarları** ağaç görünümü düğümünün. Dosya ağaç görünümünde görünmüyorsa tıklatın **Gözat** ve bulun. **İleri**'ye tıklayın.  
   
      **Seçin ayarları içeri aktarmak için** iletişim kutusu görüntülenir.  
   

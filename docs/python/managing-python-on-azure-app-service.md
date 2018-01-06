@@ -12,11 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d328897a4d7644e76634ecff3bfbaef4dbd0c3ec
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Azure uygulama Hizmeti'nde Python yönetme
 
@@ -28,7 +31,7 @@ ms.lasthandoff: 12/01/2017
 > Uygulama hizmeti varsayılan olarak Python 2.7 ve Python 3.4 kök klasörlerdeki sunucuda yüklü olsa da, özelleştirebilir veya bu ortamlarda paketleri yüklemek veya kendi varlığına bağımlı olmalıdır. Bunun yerine, bu konu başlığı altında açıklandığı gibi denetleyen bir site uzantısı yararlanmalıdır.
 
 > [!Important]
-> Burada açıklanan değiştirilebilir ve özellikle geliştirme işlemlerdir. Değişiklikleri duyurdu üzerinde [Python mühendislik Microsoft blogu](https://blogs.msdn.microsoft.com/pythonengineering/). >
+> Burada açıklanan değiştirilebilir ve özellikle geliştirme işlemlerdir. Değişiklikleri duyurdu üzerinde [Python mühendislik Microsoft blogu](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="choosing-a-python-version-through-the-azure-portal"></a>Azure portalı üzerinden Python sürümünü seçme
 
@@ -44,20 +47,19 @@ ms.lasthandoff: 12/01/2017
 1. Uzantıyı seçin, yasal koşulları kabul edin ve sonra seçin **Tamam**.
 1. Yükleme tamamlandığında, bir bildirim portalda görüntülenir.
 
-
 ## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Python sürümü aracılığıyla Azure Kaynak Yöneticisi'ni seçme
 
 Bir uygulama hizmeti bir Azure Resource Manager şablonu ile dağıtıyorsanız, site uzantısı bir kaynak olarak ekleyin. Uzantı türü olan iç içe geçmiş bir kaynak olarak görünür `siteextensions` ve adından [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
 
 Örneğin, bir başvuru ekledikten sonra `python361x64` (şablonunuzu aşağıdaki gibi görünecektir Python 3.6.1 x 64), (atlanmış bazı özellikleri):
 
-```
+```json
 "resources": [
   {
     "apiVersion": "2015-08-01",
     "name": "[parameters('siteName')]",
     "type": "Microsoft.Web/sites",
-    
+
     // ...
 
     "resources": [
@@ -96,8 +98,8 @@ Bu eylem yolunu içeren bir uzantının açıklama sayfası açılır:
 Yol uzantısı görme konusunda sorun yaşıyorsanız, konsolunu kullanarak el ile bulabilirsiniz:
 
 1. Uygulama hizmeti sayfanızda seçin **geliştirme araçları > konsol**.
-2. Aşağıdaki komutu girin `ls ../home` veya `dir ..\home` en üst düzey uzantıları klasörleri gibi görmek için `Python361x64`.
-3. Gibi bir komut girin `ls ../home/python361x64` veya `dir ..\home\python361x64` onu içerdiğini doğrulamak için `python.exe` ve diğer yorumlayıcı dosyaları.
+1. Aşağıdaki komutu girin `ls ../home` veya `dir ..\home` en üst düzey uzantıları klasörleri gibi görmek için `Python361x64`.
+1. Gibi bir komut girin `ls ../home/python361x64` veya `dir ..\home\python361x64` onu içerdiğini doğrulamak için `python.exe` ve diğer yorumlayıcı dosyaları.
 
 ### <a name="configuring-the-fastcgi-handler"></a>Fastcgı işleyici yapılandırma
 
@@ -123,6 +125,7 @@ Fastcgı isteği düzeyinde çalışan bir arabirimdir. IIS gelen bağlantılar�
 ```
 
 `<appSettings>` Tanımlanmış buraya kullanılabilir uygulamanıza ortam değişkenleri olarak:
+
 - Değeri `PYTHONPATH` genişletilmiş serbestçe ancak, uygulamanızın kök içermelidir.
 - `WSGI_HANDLER`bir WSGI uygulaması alınabilir, uygulamanızdan işaret etmelidir.
 - `WSGI_LOG`İsteğe bağlı ancak önerilen uygulamanızı hata ayıklama için değildir. 
@@ -169,33 +172,32 @@ Doğrudan sunucu ortamında paketleri yüklemek için aşağıdaki yöntemlerden
 | Uygulamayla paketini | Paketleri doğrudan projenize yükleyin ve ardından bunları App Service'e dağıtma uygulamanızı parçası değilmiş gibi. Bağlı olarak kaç bağımlılıkları vardır ve ne sıklıkta bunları güncelleştirin, bu yöntem olmaya çalışma dağıtım almak için en kolay yolu olabilir. Dikkat edin kitaplıkları Python sürümü sunucusunda aynı olmalıdır, aksi takdirde dağıtımdan sonra belirsiz hataları görürsünüz. Python site uzantılarını tam olarak üzerinde python.org yayımlanan bu sürümler ile aynı olan App Service'te sürümleri, uyumlu bir sürüm yerel geliştirme için kolayca edinebileceği olduğundan, bununla. |
 | Sanal ortamlar | Desteklenmez. Bunun yerine, paketleme kullanın ve ayarlayın `PYTHONPATH` paketleri konumuna işaret etmek için ortam değişkeni. |
 
-
 ### <a name="azure-app-service-kudu-console"></a>Azure App Service Kudu konsol
 
 [Kudu konsol](https://github.com/projectkudu/kudu/wiki/Kudu-console) uygulama hizmeti sunucusu ve dosya sistemi doğrudan, yükseltilmiş komut satırı erişimi sağlar. Bu, hem bir değerli hata ayıklama aracıdır ve paketlerin yüklenmesi gibi CLI işlemleri için sağlar.
 
 1. Açık Kudu, uygulama hizmeti sayfasında Azure Portalı'nı seçerek **geliştirme araçları > Gelişmiş Araçlar**, ardından seçerek **Git**. Bu eylem, temel uygulama hizmeti URL'sini dışında ile aynı URL gider `.scm` eklenir. Örneğin, temel URL'niz ise `https://vspython-test.azurewebsites.net/` Kudu açıktır sonra `https://vspython-test.scm.azurewebsites.net/` (hangi yer işareti oluşturabileceğiniz):
 
-    ![Azure App Service için Kudu Konsolu](media/python-on-azure-console01.png)    
+    ![Azure App Service için Kudu Konsolu](media/python-on-azure-console01.png)
 
-2. Seçin **hata ayıklama konsoluna > CMD** Python yüklemenizi gidin ve ne kitaplıkları zaten olup olmadığını tıklayarak konsolu açın.
+1. Seçin **hata ayıklama konsoluna > CMD** Python yüklemenizi gidin ve ne kitaplıkları zaten olup olmadığını tıklayarak konsolu açın.
 
-3. Tek bir paket yüklemek için:
+1. Tek bir paket yüklemek için:
 
     a. Paketi gibi yüklemek istediğiniz klasöre Python yüklemesinin gidin `d:\home\python361x64`.
-     
+
     b. Kullanım `python.exe -m pip install <package_name>` bir paketi yüklemek için.
-    
+
     ![Azure App Service için bottle Kudu Konsolu aracılığıyla yükleme örneği](media/python-on-azure-console02.png)
-    
-4. Dağıttıktan sonra bir `requirements.txt` sunucuya uygulamanız için zaten bu gereksinimleri aşağıdaki gibi yükleyin:
+
+1. Dağıttıktan sonra bir `requirements.txt` sunucuya uygulamanız için zaten bu gereksinimleri aşağıdaki gibi yükleyin:
 
     a. Paketi gibi yüklemek istediğiniz klasöre Python yüklemesinin gidin `d:\home\python361x64`.
-    
+
     b. Komutu çalıştırın `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt`.
-    
+
     Kullanarak `requirements.txt` yeniden oluşturmak kolay olduğundan, tam paketinizi ayarlamak, her ikisi de, yerel olarak hem de sunucu tavsiye edilir. Herhangi bir değişiklik dağıttıktan sonra konsol ziyaret hatırlamak `requirements.txt` ve komutu yeniden çalıştırın.
-    
+
 > [!Note]
 > Olmadığından C Derleyici uygulama hizmeti, yerel uzantısı modüllerle herhangi bir paket için tekerlek yüklemeniz gerekir. Birçok popüler paketleri kendi Tekerlek sağlar. Verme paketlerini kullanma `pip wheel <package_name>` yerel geliştirme bilgisayarınıza ve Tekerlek sitenize karşıya yükleme. Bir örnek için bkz: [gerekli paketlerini yönetme](python-environments.md#managing-required-packages)
 
@@ -210,7 +212,6 @@ Azure portalı üzerinden Kudu konsol kullanmak yerine, komutları uzaktan Kudu 
 }
 ```
 
-Komutlar ve kimlik doğrulama hakkında daha fazla bilgi için bkz: [Kudu belgelerine](https://github.com/projectkudu/kudu/wiki/REST-API). 
+Komutlar ve kimlik doğrulama hakkında daha fazla bilgi için bkz: [Kudu belgelerine](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-Kullanarak kimlik bilgileri de görebilirsiniz `az webapp deployment list-publishing-profiles` Azure CLI aracılığıyla komutu (bkz [az webapp dağıtım](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles)). Kudu komutları nakil için bir yardımcı kitaplık kullanılabilir [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
-
+Kullanarak kimlik bilgileri de görebilirsiniz `az webapp deployment list-publishing-profiles` Azure CLI aracılığıyla komutu (bkz [az webapp dağıtım](/cli/azure/webapp/deployment?view=azure-cli-latest#az_webapp_deployment_list_publishing_profiles)). Kudu komutları nakil için bir yardımcı kitaplık kullanılabilir [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).

@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 392f2f33d792c4e8f31ff0423b68a28a68797818
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e1f5fc7695df028330d0e53faebefc178f499da1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>İç içe geçmiş projeleri için filtreleme addItem iletişim kutusu
 Görüntülediğinizde bir **addItem** ana proje iç içe geçmiş bir proje için iletişim kutusu, hangi öğeler iletişim kutusunda görüntülenen denetleyebilirsiniz.  
@@ -36,4 +37,4 @@ Görüntülediğinizde bir **addItem** ana proje iç içe geçmiş bir proje iç
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [Öğeler ekleme yeni öğe Ekle iletişim kutuları](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [Proje ve öğe şablonları kaydediliyor](../../extensibility/internals/registering-project-and-item-templates.md)   
- [İç içe geçme projeleri](../../extensibility/internals/nesting-projects.md)
+ [Projeleri İç İçe Geçirme](../../extensibility/internals/nesting-projects.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b4bc84546daaa6e2404707b6663aa65e8309870
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75298d8fa2ede5db06bef624eeb385785c416747
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solutions"></a>Çözümleri
 Bir çözüm, bir uygulama oluşturmak için birlikte çalışan bir veya daha fazla projeleri gruplandırmasıdır. Çözüme ilgilidir proje ve durum bilgilerini iki çözüm dosyaları, metin tabanlı çözüm (.sln) dosyası ve bir ikili çözüm kullanıcı seçeneği (.suo) dosyası depolanır.  
@@ -29,8 +30,8 @@ Bir çözüm, bir uygulama oluşturmak için birlikte çalışan bir veya daha f
  Bir çözüm ve bir çözüm açıldığında gerçekleşen işlem dahil çözüm dosyalarını türleri açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Çözüm (. Sln) dosyası](../../extensibility/internals/solution-dot-sln-file.md)  
+ [Çözüm (.Sln) Dosyası](../../extensibility/internals/solution-dot-sln-file.md)  
  .Sln dosyasını yapısını açıklar.  
   
- [Çözüm kullanıcı seçenekleri (. Suo) dosyası](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
+ [Çözüm Kullanıcı Seçenekleri (. Suo) Dosyası](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
  .Suo dosya açıklanmaktadır.

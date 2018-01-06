@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 672e2ca393d8cd47466f44c1efb34e6648b7ed4e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 669720bcffe8f33636147863b89c2a28113911c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-your-app39s-architecture"></a>Uygulamanızı &#39; model s mimarisi
 Yazılım sistem veya uygulama kullanıcılarınızın karşıladığından emin olmak için gereken, Visual Studio'da modelleri genel yapısı, açıklaması ve yazılımı sistem veya uygulama davranışını bir parçası olarak oluşturabilirsiniz. Modelleri kullanarak tasarım boyunca kullanılan desenleri de tanımlayabilirsiniz. Bu modeller var olan mimarisi anlamak, değişiklikleri ele ve, ilkenizin amacını açıkça iletişim yardımcı olur.  

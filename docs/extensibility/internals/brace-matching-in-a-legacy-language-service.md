@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd70d65a7d2cbabbbf7fcd3581e8ba974ff25ee2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c496c65244f0ede0c3a6385f6cf1329479a17c22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Eski dil hizmet eşlemesi
 Ayraç eşleştirme birlikte parantez ve süslü ayraçlar gibi gerçekleşmesi gereken dil öğeleri izleyen Geliştirici yardımcı olur. Bir geliştirici bir kapanış ayracı girdiğinde, açılan parantez vurgulanır.  
@@ -140,4 +141,4 @@ namespace TestLanguagePackage
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski dil hizmeti özellikleri](../../extensibility/internals/legacy-language-service-features1.md)   
- [Eski dil hizmeti Ayrıştırıcı ve tarayıcı](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
+ [Eski Dil Hizmeti Ayrıştırıcısı ve Tarayıcısı](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

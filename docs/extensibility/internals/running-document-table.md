@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf66dce40cda2d72757c3a2fe141ed023b286d78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="running-document-table"></a>Çalışan belge tablosu
 IDE çalışan belge tablosu (RDT) olarak adlandırılan bir iç yapısındaki tüm açık belgelerin listesini tutar. Bu liste, bellekte olup bu belgeleri şu anda düzenlenmekte olan bağımsız olarak tüm açık belgeleri içerir. Kalıcı, dosyaları bir proje veya ana proje dosyası (örneğin, bir .vcxproj) dahil olmak üzere herhangi bir öğeyi belgedir.  
@@ -61,4 +62,4 @@ IDE çalışan belge tablosu (RDT) olarak adlandırılan bir iç yapısındaki t
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [RDT_ReadLock kullanımı](../../extensibility/internals/rdt-readlock-usage.md)   
- [Kalıcılığı ve çalışan belge tablosu](../../extensibility/internals/persistence-and-the-running-document-table.md)
+ [Kalıcılık ve Çalıştırılan Belge Tablosu](../../extensibility/internals/persistence-and-the-running-document-table.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7375a9be72f6f65ab07e543c481b3075d8b5d8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f23156d7684fa2878eb09c3fec6a32e2938c13a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Kod düzenleme ve hata ayıklama devam Visual Studio'da (C#, VB, C++)
 Düzenle ve programınızı kesme modundayken kaynak kodunuzu değişiklik yapmanızı sağlayan bir zaman kazandıran özelliktir devam edin. Ne zaman, sürdürme programın yürütülmesini bir yürütme komutu gibi seçerek **devam** veya **adım**, düzenleme ve otomatik olarak devam bazı sınırlamaları kod değişiklikleri uygular. Bu, durdurmak, tüm programınızı yeniden derleyin ve hata ayıklama oturumu yeniden zorunda kalmak yerine bir hata ayıklama oturumu sırasında kodunuzu değişiklikler yapmanızı sağlar.  
@@ -38,11 +39,11 @@ Düzenle ve programınızı kesme modundayken kaynak kodunuzu değişiklik yapma
   
  [Nasıl yapılır: kod değişikliklerini durdurma](../debugger/how-to-stop-code-changes.md)   
   
- [Düzenle ve devam et (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
+ [Düzenle ve Devam Et (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
- [Düzenle ve devam et (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)  
+ [Düzenle ve Devam Et (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)  
   
- [Düzenle ve devam et (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)  
+ [Düzenle ve Devam Et (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)  
   
  [Düzenle ve devam et F # için desteklenmiyor](../debugger/edit-and-continue-not-supported-for-f-hash.md)  
   

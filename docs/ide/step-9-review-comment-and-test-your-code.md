@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 181462529b4e66f894328d099298408a91145c6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: af541817ec73cf81aa339f9a57a584286e843e46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9. Adım: Kodunuzu Gözden Geçirme, Açıklama ve Test Etme
 Sonraki kodunuz için bir açıklama ekleyin. Bir açıklamadır programın davranışını değiştirmez unutmayın. Ne yapacağını anlamak için kodunuzu okuyan yapılandırabilecek için kolaylaştırır. Kodunuz için açıklama ekleme almak için iyi bir alışkanlıktır. Visual C# ' ta iki eğik (/ /) satırını açıklama olarak işaretleyin. Visual Basic'te, tek tırnak işareti ('), bir satırı açıklama olarak işaretlemek için kullanılır. Açıklama ekledikten sonra programınızı sınayın. Çalıştırmak ve catch ve kodu daha karmaşık büyümeden sorunları erken, düzeltmek için sık projelerinizi üzerinde çalışırken kodunuzu test etmek için iyi bir uygulamadır. Bu adlı *yinelemeli test*.  

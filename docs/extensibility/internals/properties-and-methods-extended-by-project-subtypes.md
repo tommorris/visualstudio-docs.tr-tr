@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd4e46148950af925b7b41c4e3b5bd66fce5063c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 288e8f680d12aeffb2979c3f0d89b44b0553b62e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Özellikleri ve yöntemleri proje alt türleri tarafından Genişletilmiş
 Proje alt çok temel projesinin bir Toplayıcı oluşturulur çünkü proje davranışını etkilemek için güç sahiptir. Bu bölümde bazı gelişmiş veya proje alt türleri tarafından değiştirilen özellikler özetlenmektedir.  
@@ -52,4 +53,4 @@ Proje alt çok temel projesinin bir Toplayıcı oluşturulur çünkü proje davr
  Temel Proje yukarıdaki özelliklerinin varsayılan uygulamasını sağlar. Temel Proje bunlar çağırarak alır `QueryInterface` için <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> en dıştaki proje alt üzerinde böylece uygulama özelliklerini geçersiz kılmak proje alt sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje Subtypes tasarım](../../extensibility/internals/project-subtypes-design.md)
+ [Proje Alt Türleri Tasarımı](../../extensibility/internals/project-subtypes-design.md)

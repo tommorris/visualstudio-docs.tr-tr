@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e17e8ada438ab8b7223bd9fcaca326c91e69f901
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8288ce8d049f949120c5631366dbaac2efc792b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Visual Studio'da Özel Derleme Olayları Belirtme
 Özel derleme olay belirterek, otomatik olarak komutları bir yapı başlamadan önce ya da sona erdikten sonra çalıştırabilirsiniz. Örneğin, .bat dosyası derleme önce başlar çalıştırmak veya yapı tamamlandıktan sonra yeni dosyaları bir klasöre kopyalayın. Yalnızca derleme derleme işlemindeki bu noktalarına başarıyla ulaşırsa derleme olaylarını çalıştırın.  
@@ -58,4 +59,4 @@ ms.lasthandoff: 10/31/2017
  [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)   
  [Derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
  [MSBuild özel karakterleri](../msbuild/msbuild-special-characters.md)   
- [İzlenecek yol: uygulama oluşturma](../ide/walkthrough-building-an-application.md)
+ [İzlenecek yol: Uygulama Oluşturma](../ide/walkthrough-building-an-application.md)

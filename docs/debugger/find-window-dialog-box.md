@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7f2824cc86f919a2124d82fd5b23db571ac780b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2fac3e7bfe487c3c8a8b99cdf9495d41e630a685
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-window-dialog-box"></a>Pencere Bul İletişim Kutusu
 Bir penceresi seçin ve özellikler veya iletileri görüntülemek için bu iletişim kutusunu kullanın. Bu iletişim kutusunu görüntülemek için seçin **Bul penceresi** gelen **Spy** menüsü.  
@@ -54,13 +55,13 @@ Bir penceresi seçin ve özellikler veya iletileri görüntülemek için bu ilet
  [Bulucu Aracı kullanma](../debugger/how-to-use-the-finder-tool.md)  
  Bu aracı windows özellikleri ya da iletileri için nasıl tarar gösterir.  
   
- [Pencereler görünümü](../debugger/windows-view.md)  
+ [Pencereler Görünümü](../debugger/windows-view.md)  
  Kullanılabilir windows ve denetimleri ağaç görünümünü görüntüler.  
   
- [Spy ++ görünümleri](../debugger/spy-increment-views.md)  
+ [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
  Windows, iletileri, işlemleri ve iş parçacıklarının Spy ++ ağaç görünümler açıklanmaktadır.  
   
- [Spy ++ kullanma](../debugger/using-spy-increment.md)  
+ [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
  [Pencere arama iletişim kutusu](../debugger/window-search-dialog-box.md)  
@@ -69,5 +70,5 @@ Bir penceresi seçin ve özellikler veya iletileri görüntülemek için bu ilet
  [Pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md)  
  Windows görünümünde seçilen penceresinin özelliklerini görüntülemek için kullanılır.  
   
- [Spy ++ başvurusu](../debugger/spy-increment-reference.md)  
+ [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
  Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümleri içerir.

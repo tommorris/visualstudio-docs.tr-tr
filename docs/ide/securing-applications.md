@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: da6628c34570bfe637c2cc5b3d8cad12b16dac12
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 665f03744fc559727e96373512fc983e5d75293c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="securing-applications"></a>Uygulamalarının Güvenliğini Sağlama
 Çoğu uygulama ortak güvenlik tehditlerine sahip olsa da, her bir uygulama etki alanı, kendi güvenlik zorluklar sahip olur.  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="securing-desktop-applications"></a>Masaüstü uygulamalarının güvenliğini sağlama  
  Masaüstü uygulamaları için güvenliği tasarlama, uygulama geliştirme önemli bir adımdır.  
   
- [Windows Forms güvenliği](/dotnet/framework/winforms/windows-forms-security)  
+ [Windows Forms Güvenliği](/dotnet/framework/winforms/windows-forms-security)  
  Windows Forms güvenlik uygulaması genel bir bakış sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

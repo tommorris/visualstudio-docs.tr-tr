@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e85c47133509e3f7bf7c54b8cfa7f2121a26b04b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9da6a64eafa28ac173e4dd64b38d1e64d9639e34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-roles"></a>Etki Alanı Rollerinin Özellikleri
 Bir etki alanı rol ile ilişkili aşağıdaki tabloda özelliklerdir. Etki alanı rolleri hakkında daha fazla bilgi için bkz: [anlama modelleri, sınıflar ve ilişkiler](../modeling/understanding-models-classes-and-relationships.md). Bu özellikleri kullanma hakkında daha fazla bilgi için bkz: [özelleştirme ve bir etki alanına özgü dil genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -45,4 +46,4 @@ Bir etki alanı rol ile ilişkili aşağıdaki tabloda özelliklerdir. Etki alan
 >  Varsayılan değer olan bir görünen ad, bir küçük harf karakter öncesinde ve başka bir büyük harf karakter tarafından izlenmeyen her büyük harf karakter önce boşluk ekleyerek ilişkili özelliğin değeri temel alır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanı ilişkilerini özellikleri](../modeling/properties-of-domain-relationships.md)
+ [Etki Alanı İlişkilerinin Özellikleri](../modeling/properties-of-domain-relationships.md)

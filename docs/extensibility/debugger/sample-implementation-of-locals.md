@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c167c0a0f0a9dd0c14b92f27c0d9d862b5157072
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3e8157d6ecede516ca1dcb2900cf081c11a2b790
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-implementation-of-locals"></a>Yerel öğeler için örnek uygulama
 > [!IMPORTANT]
@@ -48,27 +49,27 @@ ms.lasthandoff: 10/31/2017
 10. Visual Studio çağrıları [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) yerel'ın adını, değeri ve türünü almak her yerel için. Görüntülenen bilgileri budur **Yereller** penceresi.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [GetMethodProperty uygulama](../../extensibility/debugger/implementing-getmethodproperty.md)  
+ [GetMethodProperty Uygulama](../../extensibility/debugger/implementing-getmethodproperty.md)  
  Uygulaması açıklar [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md).  
   
- [Yerel öğeler numaralandırma](../../extensibility/debugger/enumerating-locals.md)  
+ [Yerel Öğeleri Numaralandırma](../../extensibility/debugger/enumerating-locals.md)  
  Hata ayıklama altyapısı (DE) yerel değişkenler veya bağımsız değişkenler numaralandırmak için bir çağrı nasıl yapar açıklar.  
   
- [Yerel özellikleri alınıyor](../../extensibility/debugger/getting-local-properties.md)  
+ [Yerel Özellikleri Alma](../../extensibility/debugger/getting-local-properties.md)  
  Ne DE adını, türünü ve bir veya daha fazla Yereller değerini almak için bir çağrı yapar açıklar.  
   
- [Yerel değerleri alma](../../extensibility/debugger/getting-local-values.md)  
+ [Yerel Değerleri Alma](../../extensibility/debugger/getting-local-values.md)  
  Değerlendirme bağlamı tarafından verilen bir bağlayıcı nesnesi hizmetlerinin gerektirir ve yerel değerini alma açıklanır.  
   
- [Yerel öğeler değerlendirme](../../extensibility/debugger/evaluating-locals.md)  
+ [Yerel Öğeleri Değerlendirme](../../extensibility/debugger/evaluating-locals.md)  
  Yerel öğeler nasıl değerlendirildiği açıklanır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Değerlendirme bağlamı](../../extensibility/debugger/evaluation-context.md)  
+ [Değerlendirme Bağlamı](../../extensibility/debugger/evaluation-context.md)  
  İfade değerlendirici (EE) DE çağırdığında geçirilen bağımsız değişkenlerini sağlar.  
   
  [MyCEE örnek](http://msdn.microsoft.com/en-us/624a018b-9179-402f-9d48-3aec87b48f4f)  
  Bir ifade değerlendiricisi MyC dil oluşturmak için bir uygulama yaklaşım gösterir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yerel öğeler görüntüleme](../../extensibility/debugger/displaying-locals.md)
+ [Yerel Öğeleri Görüntüleme](../../extensibility/debugger/displaying-locals.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6782e1cb84f4fbbe63a0e69a5c684d44ec7ccd21
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4ecb20a39657fd9a1e668321654dd2a293807adf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Nasıl yapılır: bir kitaplık nesnesi Yöneticisi ile kaydetme
 Simgeler gözatma araçları, gibi **sınıf görünümü**, **Nesne Tarayıcısı**, **çağrısı tarayıcı** ve **Bul simgesi sonuçlarınızı**, görüntülemenizi sağlar projenizi veya dış bileşenlere simgeler. Ad alanları, sınıflar, arabirimler, yöntemleri ve diğer dil öğeleri simgeleri içerir. Kitaplıkları bu simgeleri izlemek ve bunlara kullanıma [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] araçları verileri ile doldurur Nesne Yöneticisi.  
@@ -170,4 +171,4 @@ Simgeler gözatma araçları, gibi **sınıf görünümü**, **Nesne Tarayıcıs
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski dil hizmeti genişletilebilirliği](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [Simgenin tarama araçları destekleme](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Nasıl yapılır: kullanıma nesnesi Yöneticisi kitaplığı tarafından sağlanan simgelerin listeler](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Nasıl Yapılır: Kitaplık Tarafından Sağlanan Sembollerin Listelerini Nesne Yöneticisine Sunma](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

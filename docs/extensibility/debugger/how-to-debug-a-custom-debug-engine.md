@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a91dbb7797d69ec71b776eeef5e34e0ced21ad9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0b814b441846479163aad4e003480cc9cfadde44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Nasıl yapılır: bir özel hata ayıklama altyapısı hata ayıklama
 Proje türü gelen hata ayıklama altyapısı (DE) başlatan <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> yöntemi. Bu örneği denetiminde DE başlatılır anlamına gelir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proje türü denetleme. Ancak, bu örneği [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] DE hata ayıklaması yapılamıyor. Hangi aşağıdaki özel DE hata ayıklama olanak tanımak için adımlardır.  
@@ -77,4 +78,4 @@ Proje türü gelen hata ayıklama altyapısı (DE) başlatan <xref:Microsoft.Vis
 9. SE başlatmanın işlemde hata ayıklamak seçerseniz, onu başlatıldıktan sonra DE eklemek için "Hata ayıklama bir özel hata ayıklama altyapısı" yordamdaki adımları gerçekleştirebilirsiniz. Bu üç örneklerini verir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] çalıştıran: Proje türü kaynağınız, örneklenen proje türü ve sizin DE bağlı Üçüncü saniye için bir tane.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir özel hata ayıklama altyapısı oluşturma](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+ [Özel Hata Ayıklama Altyapısı Oluşturma](../../extensibility/debugger/creating-a-custom-debug-engine.md)

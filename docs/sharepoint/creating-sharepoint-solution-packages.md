@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f21356c34a94540d20be2bb9fa092bff270f1a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fe7822382443e6c1e9bc1a77eb0cd64844504172
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-solution-packages"></a>SharePoint Çözüm Paketleri Oluşturma
   Paket Tasarımcısını kullanarak oluşturabilir ve dağıtım paketleri özelleştirebilirsiniz. Örneğin, SharePoint Proje öğeleri ve özellikler, IIS sunucusu sıfırlandığında, özelliğini etkinleştirme kapsamlarını ayarlayın ve özellik bağımlılıkları tanımlamak ekleyebilirsiniz. Tasarımcı de bildirim, her paket tanımlayan bir XML dosyası oluşturur.  
@@ -76,10 +77,10 @@ ms.lasthandoff: 10/31/2017
  SharePoint Proje paketini oluşturduğunuzda .wsp dosyası SolutionFolder\bin oluşturulur\\*BuildConfiguration* klasör. Örneğin, çözümünüz içinde ise *sürücü*: \Visual Studio 2013\Projects\ListDefinition1 ve derleme yapılandırması yayın olarak ayarlanır, .wsp dosya bulunan *sürücü*: \Visual Studio 2013\ Projects\ListDefinition1\bin\Release.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Nasıl yapılır: Bir SharePoint Çözüm Paketini Özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [Nasıl yapılır: ekleme ve kaldırma özellikler ve öğeler bir paket için paket Tasarımcısını kullanarak](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
  [Nasıl yapılır: bir SharePoint paketi oluşturma](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)   
  [Nasıl yapılır: MSBuild görevlerini kullanarak bir SharePoint çözüm paketi oluşturma](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
- [Nasıl yapılır: MSBuild hedeflerini kullanarak SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
+ [Nasıl yapılır: MSBuild Hedeflerini Kullanarak SharePoint Çözüm Paketini Özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
   
   

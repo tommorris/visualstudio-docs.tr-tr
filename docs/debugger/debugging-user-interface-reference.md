@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.uiref
 dev_langs:
 - CSharp
@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2187f115b9b3bc9705eb313068e155c999768ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fedc9da2fc51648b6d29477906fa122b54a0abc8
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugging-user-interface-reference"></a>Kullanıcı Arabirim Başvurusunda Hata Ayıklama
 Uygulamanızda hata ayıklama gibi aşağıdaki iletişim kutuları karşılaşabilirsiniz.  
@@ -46,4 +47,4 @@ Uygulamanızda hata ayıklama gibi aşağıdaki iletişim kutuları karşılaşa
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da hata ayıklama](../debugger/index.md)  
  [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)   
- [Komut penceresi](../ide/reference/command-window.md)
+ [Komut Penceresi](../ide/reference/command-window.md)

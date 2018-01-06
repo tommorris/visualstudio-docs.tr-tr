@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ffb8aed183b50958c8835b2a1e79b808ac20174
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eec62227ec39c1758c15e83fd1d8306e807d59fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Bir komut görünümünü değiştirme
 Komutunun görünümünü değiştirerek, kullanıcı geri bildirim sağlayabilirsiniz. Örneğin, kullanılamaz duruma geldiğinde farklı aramak için bir komut isteyebilirsiniz. Komutları kullanılabilir veya kullanılamaz yapma, gizleyebilir veya, göstermek veya denetleyin veya menüsünde seçeneğinin işaretini kaldırın.  
@@ -91,4 +92,4 @@ Komutunun görünümünü değiştirerek, kullanıcı geri bildirim sağlayabili
  [Komutları, menüleri ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)   
  [Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Genişletme menüleri ve komutları](../extensibility/extending-menus-and-commands.md)   
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

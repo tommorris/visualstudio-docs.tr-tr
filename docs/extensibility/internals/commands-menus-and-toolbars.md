@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ba153c6ec1d9944e889919d1d49817dcd97c9a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa1513bcd61ac63fb9d2a59f69a8b2ce22cf5114
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-menus-and-toolbars"></a>Komutları, menüleri ve araç çubukları
 Menüleri ve araç çubuklarını şekilde, kullanıcılar, VSPackage komutlarda erişimi var. Belge yazdırma, bir görünümü yenileme veya yeni bir dosya oluşturmak gibi görevleri gerçekleştirmek işlevleri komutlardır. Menüleri ve araç çubuklarını komutlarınızı sunmak için uygun grafik yollarıdır. Genellikle, ilgili komutları birlikte aynı menü veya araç çubuğunda kümelenir.  
@@ -38,30 +39,30 @@ Menüleri ve araç çubuklarını şekilde, kullanıcılar, VSPackage komutlarda
  Bu bölümdeki konular, komutları, menüleri ve araç çubuklarını VSPackages içinde nasıl çalıştığını açıklanır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+ [VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
  Komut tablo biçiminde belirtimi ayrıntılı bir açıklaması.  
   
- [Visual Studio komut tablosu (. Vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
  Bir XML tabanlı sözdizimi ve derleyici komut tablolar için açıklar.  
   
- [Varsayılan komutu, Grup ve araç çubuğu yerleştirme](../../extensibility/internals/default-command-group-and-toolbar-placement.md)  
+ [Varsayılan Komut, Grup ve Araç Çubuğu Yerleşimi](../../extensibility/internals/default-command-group-and-toolbar-placement.md)  
  Önceden tanımlanmış komutları, gruplar, menüleri ve araç çubuklarını açıklar.  
   
- [IDE tanımlı komutlar, menüler ve grupları](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)  
+ [IDE Tanımlı Komutlar, Menüler ve Gruplar](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)  
  Önceden tanımlanmış menüleri, komutları ve komut grupları tarafından kullanılmak üzere kullanılabilir belirtir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- [Komut tasarım](../../extensibility/internals/command-design.md)  
+ [Komut Tasarımı](../../extensibility/internals/command-design.md)  
  Komutları tasarım açıklanmaktadır.  
   
- [Menü ve araç çubuğu komutlarını en iyi duruma getirme](../../extensibility/internals/optimizing-menu-and-toolbar-commands.md)  
+ [Menü ve Araç Çubuğu Komutlarını En İyi Duruma Getirme](../../extensibility/internals/optimizing-menu-and-toolbar-commands.md)  
  Yönergeler için komutları sağlar.  
   
- [Komutları kullanılabilir hale getirme](../../extensibility/internals/making-commands-available.md)  
+ [Komutları Kullanılabilir Yapma](../../extensibility/internals/making-commands-available.md)  
  Visual Studio komutları kullanılabilir hale getirmek açıklanmaktadır.  
   
- [Komutlar ve birlikte çalışma derlemeleri kullanma menüleri](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
+ [Birlikte Çalışma Bütünleştirilmiş Kodları Kullanan Komutlar ve Menüler](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
  Birlikte çalışma derlemeleri kullanma komutları uygulamak açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Komut içinde VSPackages yönlendirme](../../extensibility/internals/command-routing-in-vspackages.md)  
+ [VSPackage’larda Komut Yönlendirme](../../extensibility/internals/command-routing-in-vspackages.md)  
  Komut içinde VSPackages yönlendirme açıklanmaktadır.

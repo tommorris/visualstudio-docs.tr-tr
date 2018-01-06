@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ceadd085a3099721e73e04dd09ea5a0b81ad1d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4a6a4237e806a6906ef984cd942e027fe7d9227d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Simge ve dosya adları için arama seçeneklerini belirtir.  
@@ -65,11 +66,11 @@ enum NameSearchOptions {
 ## <a name="remarks"></a>Açıklamalar  
  Bu numaralandırma değerleri için aşağıdaki yöntemlerden geçirilir:  
   
--   [Idiasession::findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
+-   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
--   [Idiasession::findfile](../../debugger/debug-interface-access/idiasession-findfile.md)  
+-   [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
   
--   [Idiasymbol::findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
+-   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
 ## <a name="requirements"></a>Gereksinimler  
  Başlık: dia2.h  
@@ -78,4 +79,4 @@ enum NameSearchOptions {
  [Numaralandırmalar ve yapılar](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [Idiasession::findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [Idiasession::findfile](../../debugger/debug-interface-access/idiasession-findfile.md)   
- [Idiasymbol::findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+ [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4636e55fa2bc20ba9ff958a897ef7898099cb5c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 01ef94199ae7ea22f72ca08be4dfb9092b03403f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-in-office-projects"></a>Office Projelerinde Erişilebilirlik
   Microsoft Visual Studio ve Microsoft Office standart erişilebilirlik gereksinimlerini karşılayan özel çözümler oluşturmanıza olanak sağlayan birçok erişilebilirlik özelliği içerir. Microsoft Erişilebilirlik Web sayfasındaki yönergeleri yayımlar. Ayrıntılar için bkz [Erişilebilirlik Web sitesi](http://go.microsoft.com/fwlink/?LinkID=37113).  
@@ -90,6 +91,6 @@ ms.lasthandoff: 10/31/2017
  [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)   
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   
  [Engelli kişiler için erişilebilirlik](/visualstudio/ide/reference/accessibility-for-people-with-disabilities)   
- [Visual Studio'nun erişilebilirlik özellikleri](/visualstudio/ide/reference/accessibility-features-of-visual-studio)  
+ [Visual Studio'nun Erişilebilirlik Özellikleri](/visualstudio/ide/reference/accessibility-features-of-visual-studio)  
   
   

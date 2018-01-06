@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1fa99ea63f9af2c69519691add827053b3059ac0
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 4bcf4042551c768a7386158d9de7d4e629095b85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-explorer"></a>XML şema Gezgini
 XML şema Explorer XML Şeması Tanım Dili (XSD) şemalarda çalışmanıza olanak sağlamak için Microsoft Visual Studio ve XML düzenleyicisini tümleşiktir. Bir XML Şeması dosyayı açtığınızda **şema ayarlamak** düğümü XML Şeması Gezgini'nde görüntülenir. Tüm dahil, içe aktarılan ya da yeniden tanımlanan şemaları aracılığıyla başvurulan herhangi bir dosya yanı sıra, hedef dosya için bir `include` veya `import` deyimi, ayrıca XML Şeması Gezgini'nde görünür.  
@@ -82,13 +83,13 @@ Bir ağaç yapısı örneği verilmiştir:
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
--   [Şema kümesini arama](../xml-tools/searching-the-schema-set.md)  
+-   [Şema Kümesini Arama](../xml-tools/searching-the-schema-set.md)  
   
 -   [Sıralama, filtreleme ve gruplandırma](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
 -   [Bağlam menüleri](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [XML değişmez değerleri XML Şeması Gezgini ile tümleştirme](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+-   [XML Değişmez Değerlerinin XML Şeması Gezgini ile Tümleştirilmesi](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: XML şema Gezgini'nden çalışma alanına düğümleri eklemek](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+ [Nasıl Yapılır: XML Şema Gezgininden Çalışma Alanına Düğüm Ekleme](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

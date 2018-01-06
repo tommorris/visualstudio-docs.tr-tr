@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1528bc685577082df997535a680c372620821de0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3d2bcad21bb919125b487a57b73d3a458a3a1f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="language-services-and-the-core-editor"></a>Dil Hizmetleri ve çekirdek Düzenleyicisi
 Visual Studio'da düzenleyicileri sık bir dil hizmeti ile ilişkilendirilmiş. Bunun yanı sıra, bir dil hizmeti söz dizimi renklendirme, deyim tamamlama, IntelliSense ve metin biçimlendirmesini sağlar.  
@@ -46,4 +47,4 @@ Visual Studio'da düzenleyicileri sık bir dil hizmeti ile ilişkilendirilmiş. 
  [Eski API kullanarak bir dil Hizmet bağlamı sağlama](../extensibility/providing-a-language-service-context-by-using-the-legacy-api.md)   
  [IntelliSense barındırma](../extensibility/intellisense-hosting.md)   
  [Kapsanan dilleri](../extensibility/contained-languages.md)   
- [Eski dil hizmeti geliştirme](../extensibility/internals/developing-a-legacy-language-service.md)
+ [Eski Dil Hizmeti Geliştirme](../extensibility/internals/developing-a-legacy-language-service.md)

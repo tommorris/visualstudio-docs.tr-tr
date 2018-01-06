@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec22eaeaf24af1c65823c64c65dd2c39f1003ec8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4be6e63df26d3c4a9b6539276aa97f69e349b83c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList işlevi
 Bu işlev, hangi dizinleri ve (isteğe bağlı) dosyaları incelemek için dizinlerin listesini verilen kaynak denetiminde saklanır belirler.  
@@ -70,4 +71,4 @@ SCCRTN SccPopulateDirList(
  [Kaynak Denetim eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)   
  [Özel komutlar tarafından kullanılan bit işaretleri](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
- [Hata kodları](../extensibility/error-codes.md)
+ [Hata Kodları](../extensibility/error-codes.md)

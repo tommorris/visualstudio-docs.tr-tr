@@ -29,11 +29,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 615aff9adacc8c4ce54505b0267f4bb39608dfe1
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: de71795242cd5fbb1d41f3d071629e54cf5d04f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="general-environment-options-dialog-box"></a>Genel, Ortam, Seçenekler İletişim Kutusu
 
@@ -85,5 +86,5 @@ Belirtir **AutoHide** düğmesine tıklandığında, odağa sahip araç penceres
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)  
+[Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)  
 [Pencere düzenlerini özelleştirme](../../ide/customizing-window-layouts-in-visual-studio.md)

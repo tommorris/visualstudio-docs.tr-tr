@@ -20,11 +20,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 817c95d511ff1b02558010f3046827684b72d4f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4a43bc68a87d00dcce90f1a948b64dd786e9b440
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-constants"></a>IDE sabitleri
 <xref:Microsoft.VisualStudio.VSConstants> Sınıfı özgü tümleşik geliştirme ortamı (IDE), daha önce tanımlanan ve yalnızca üstbilgi dosyalarında sabitleri sağlar.  
@@ -119,4 +120,4 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_SETMULTISELECT>|WM_USER + 1289'U|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje sistemleri genişletme IDE tanımlı komutları](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+ [Proje Sistemlerini Genişletmeye Yönelik IDE Tanımlı Komutlar](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

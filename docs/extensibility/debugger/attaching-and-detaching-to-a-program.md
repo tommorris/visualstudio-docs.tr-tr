@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71f678852b4d16d0b7c6f150abae03c6c4cdcad4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a5b0783cd011c91b9592479c7b64c6cb6a1afaa1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Ekleme ve bir programa ayırma
 Hata ayıklayıcı ekleme yöntemleri ve uygun öznitelikler olaylarla doğru sırasını gönderilmesi gerekir.  
@@ -53,4 +54,4 @@ Hata ayıklayıcı ekleme yöntemleri ve uygun öznitelikler olaylarla doğru s�
 2.  DE gönderir bir [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Arama hata ayıklayıcı olayları](../../extensibility/debugger/calling-debugger-events.md)
+ [Hata Ayıklayıcısı Olaylarını Çağırma](../../extensibility/debugger/calling-debugger-events.md)

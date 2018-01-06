@@ -16,11 +16,12 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 886185c61f407906ff059b84b5f1f8b18e3ace98
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: e798eb66601d253c180a72b730bb3531e21c11c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>İzlenecek yol: bir temel yalıtılmış Kabuk uygulaması oluşturma
 Bu kılavuz, yalıtılmış Kabuk çözümünü oluşturun, Yardım hakkında araç penceresi özelleştirmek ve yalıtılmış Kabuk yükleyen bir Kurulum programı oluşturun gösterilmektedir.  
@@ -249,8 +250,7 @@ Bu kılavuz, yalıtılmış Kabuk çözümünü oluşturun, Yardım hakkında ar
   
 18. İçinde **ne bulmak istediğiniz?** bölmesinde seçin **kayıt defteri girdisini** tıklayın ve açılan liste **sonraki**.  
   
-19. İçinde **nasıl aramanız istiyorsunuz?** bölmesinde, **HKEY_LOCAL_MACHINE** kayıt defteri kök olarak. Girin **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** 64-bit sistemler için veya **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** 32 bit sistemler için ve girin **Yükleme** kayıt defteri değeri olarak. 
-              **İleri**'ye tıklayın.  
+19. İçinde **nasıl aramanız istiyorsunuz?** bölmesinde, **HKEY_LOCAL_MACHINE** kayıt defteri kök olarak. Girin **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** 64-bit sistemler için veya **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** 32 bit sistemler için ve girin **Yükleme** kayıt defteri değeri olarak. **İleri**'ye tıklayın.  
   
 20. İçinde **ne değeriyle yapmak istiyor musunuz?** bölmesinde girin **bu ürün için Visual Studio 2015 yalıtılmış Kabuk yüklenmesi yeniden dağıtılabilir gereklidir.** ' ı tıklatın ve görüntüleme metni olarak **son**.  
   

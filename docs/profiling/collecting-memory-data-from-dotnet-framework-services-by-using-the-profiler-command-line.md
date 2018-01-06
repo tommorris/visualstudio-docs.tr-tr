@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d94a31fbb1c0fca649f53496ff39fe36527c013
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: a20c3cff1ee86e0dc0a9530e9ac75aabe881bacb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırını Kullanarak .NET Framework Hizmetlerinden Bellek Verileri Toplama
 Bu bölümde yordamlar ve bellek ayırma ve nesne yaşam süresi verilerini toplamak için seçenekleri açıklar bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] komut satırından örnekleme yöntemini kullanarak hizmet.  

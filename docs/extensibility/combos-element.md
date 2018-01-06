@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2c729f92992ddea109a7024452457bd56d281b89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9818f94a34bc8e4bc7bb77ebf36239a52f22eab6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="combos-element"></a>Birleşik öğesi
 Grupları [açılan öğesi](../extensibility/combo-element.md) öğeleri.  
@@ -46,14 +47,14 @@ Grupları [açılan öğesi](../extensibility/combo-element.md) öğeleri.
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Birleşik öğesi](../extensibility/combos-element.md)|Birleşik giriş öğeleri gruplandırır.|  
-|[Birleşik giriş öğesi](../extensibility/combo-element.md)|Açılan kutuda görünen komutları tanımlar.|  
+|[Combos Öğesi](../extensibility/combos-element.md)|Birleşik giriş öğeleri gruplandırır.|  
+|[Combos Öğesi](../extensibility/combo-element.md)|Açılan kutuda görünen komutları tanımlar.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Komutları öğesi](../extensibility/commands-element.md)|VSPackage araç çubuğundaki komutları koleksiyonunu temsil eder.|  
+|[Commands Öğesi](../extensibility/commands-element.md)|VSPackage araç çubuğundaki komutları koleksiyonunu temsil eder.|  
   
 ## <a name="example"></a>Örnek  
   
@@ -81,4 +82,4 @@ Grupları [açılan öğesi](../extensibility/combo-element.md) öğeleri.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Komutları, menüleri ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Komutlar, Menüler ve Araç Çubukları](../extensibility/internals/commands-menus-and-toolbars.md)

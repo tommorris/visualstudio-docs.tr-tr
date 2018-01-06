@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02cdf8b50415a238c2af2735a20fea4ed8c23668
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01d4ebaada2c8ac65c1f44a5c80525f1b9e66a5d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-and-the-hosting-process"></a>Hata Ayıklama ve Barındırma İşlemi
 Barındırma işlemi Visual Studio hata ayıklayıcısı performansını artırır ve kısmi güven hata ayıklama ve tasarım zamanı ifade değerlendirmesi gibi yeni hata ayıklayıcı özellikleri etkinleştirir. Gerekirse, barındırma işlemini devre dışı bırakabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: barındırma sürecini devre dışı bırakma](../ide/how-to-disable-the-hosting-process.md). Aşağıdaki bölümlerde ile ve barındırma işlemi olmadan hata ayıklama arasındaki bazı farklar açıklanmaktadır.  
@@ -44,4 +45,4 @@ Barındırma işlemi Visual Studio hata ayıklayıcısı performansını artır�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Barındırma süreci (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
  [Nasıl yapılır: kısmen güvenilen uygulamada hata ayıklama](../debugger/how-to-debug-a-partial-trust-application.md)   
- [Nasıl yapılır: barındırma sürecini devre dışı bırakma](../ide/how-to-disable-the-hosting-process.md)
+ [Nasıl Yapılır: Barındırma Sürecini Devre Dışı Bırakma](../ide/how-to-disable-the-hosting-process.md)

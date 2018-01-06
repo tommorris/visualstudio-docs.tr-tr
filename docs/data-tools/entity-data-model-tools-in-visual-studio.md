@@ -12,16 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: eb4ca4445af3970828f4212c69c11d9d173d5650
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: f288d794040c533f2d00e95d628f7d04e55e96e4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio'da Entity Framework Araçları
-Entity Framework, .NET geliştiricilerinin etki alanına özgü nesneleri kullanılarak ilişkisel verilerle çalışmak bir nesne ilişkisel eşleme teknolojisidir. Bu, geliştiriciler genellikle yazmak için gereken veri erişimi kod çoğunu gereksinimini ortadan kaldırır. Entity Framework teknolojisi yeni .NET uygulamaları için modelleme önerilen nesne ilişkisel eşleştirme (ORM) yapılır.  
+Entity Framework, .NET geliştiricilerinin etki alanına özgü nesneleri kullanılarak ilişkisel verilerle çalışmak bir nesne ilişkisel eşleme teknolojisidir. Genellikle geliştiricilerin yazmak zorunda olduğu çoğu veri erişim koduna yönelik gereksinimi ortadan kaldırır. Entity Framework teknolojisi yeni .NET uygulamaları için modelleme önerilen nesne ilişkisel eşleştirme (ORM) yapılır.  
   
-Entity Framework Araçları Entity Framework (EF) uygulamalar oluşturmanıza yardımcı olmak için tasarlanmıştır. Entity Framework için kapsamlı belgeler şöyledir: [EF çekirdek ve EF 6](https://docs.microsoft.com/ef/).  
+Entity Framework Araçları Entity Framework (EF) uygulamalar oluşturmanıza yardımcı olmak için tasarlanmıştır. Entity Framework için kapsamlı belgeler şöyledir: [EF çekirdek ve EF 6](/ef/).  
   
 Entity Framework Araçları ile oluşturduğunuz bir *kavramsal model* varolan bir veritabanı grafik görselleştirmek ve kavramsal modeli düzenleyebilirsiniz. Veya, grafik kavramsal model ilk oluşturabilir ve ardından modelinizin destekleyen bir veritabanı oluşturun. Her iki durumda da, temel alınan veritabanı değişikliklerini ve uygulamanız için nesne katmanı kod otomatik olarak oluşturmak modelinizi otomatik olarak güncelleştirebilir. Veritabanı oluşturma ve nesne katmanı kod oluşturma özelleştirilebilir.  
   
@@ -49,7 +50,7 @@ Araçlar oluşturmak veya bir .edmx dosyasının değiştirin. Bu .edmx dosyası
 |Başlık|Açıklama|  
 |-----------|-----------------|  
 |[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|Nasıl kullanılacağını açıklar [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] araçları, hangi [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] uygulamaları oluşturmak için sağlar.|  
-|[Varlık veri modeli](/dotnet/framework/data/adonet/entity-data-model)|Üzerinde oluşturulan uygulamalar tarafından kullanılan verilerle çalışmak için bilgi ve bağlantılar sağlanmaktadır [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|  
+|[Varlık Veri Modeli](/dotnet/framework/data/adonet/entity-data-model)|Üzerinde oluşturulan uygulamalar tarafından kullanılan verilerle çalışmak için bilgi ve bağlantılar sağlanmaktadır [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|  
 |[Entity Framework (EF) belgelerine)](https://msdn.microsoft.com/library/ee712907(v=vs.113).aspx)|Bir dizin videoları, eğitim ve Entity Framework'ün en yapmanıza yardımcı olmak üzere Gelişmiş belgeler sağlar.|  
 |[ASP.NET 5 uygulaması için yeni veritabanı](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Entity Framework 7'yi kullanarak yeni bir ASP.NET 5 uygulaması oluşturmayı açıklar.|  
   

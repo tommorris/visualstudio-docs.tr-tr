@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bc985bf9fb55b67b5a332f007abe98c6718fbf2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: aa70e2a6019a97c248e6d4b411dacc222be59a1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-a-port-supplier"></a>Bir bağlantı noktası sağlayıcı uygulama
 Bir bağlantı noktası tedarikçi oturum hata ayıklama Yöneticisi'ni (SDM) istek bağlantı noktaları sağlar. Bir bağlantı noktası tedarikçi DCOM olmayan makineye hata ayıklama sırasında veya yeni bir cihaz desteklenecek gerektiğinde uygulanması gerekir. Örneğin, bir cep telefonu hata ayıklama sağlamak için cep telefonunuza (belki de IR veya hücre bağlantı yoluyla) bağlanan ve işlemleri ve telefonda çalışan programlar numaralandırır bağlantı noktaları sağlayan bir bağlantı noktası tedarikçi uygulayabilir.  
@@ -27,15 +28,15 @@ Bir bağlantı noktası tedarikçi oturum hata ayıklama Yöneticisi'ni (SDM) is
  Bu durumda, kendi bağlantı noktası tedarikçi uygulamak için gerekli olmasını (uzaktan hata ayıklama dahil) Windows tabanlı makinelere hata ayıklama programları için Visual Studio yerel ve ortak dil çalışma zamanı (CLR) işlemleri, bağlantı noktası tedarikçileri sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Uygulama ve bir bağlantı noktası Tedarikçi kaydetme](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
+ [Bağlantı Noktası Sağlayıcısı Uygulama ve Kaydetme](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
  SDM bağlantı noktalarını ve bağlantı noktası sağlayıcı ile nasıl etkileşim kurduğu açıklanır.  
   
- [Gerekli bağlantı noktası tedarikçi arabirimleri](../../extensibility/debugger/required-port-supplier-interfaces.md)  
+ [Gerekli Bağlantı Noktası Sağlayıcısı Arabirimleri](../../extensibility/debugger/required-port-supplier-interfaces.md)  
  Bir bağlantı noktası tedarikçi almak için uygulanmalı arabirimleri belgeler.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Hata ayıklayıcı kavramları](../../extensibility/debugger/debugger-concepts.md)  
+ [Hata Ayıklayıcı Kavramları](../../extensibility/debugger/debugger-concepts.md)  
  Ana hata ayıklama mimari kavramlarını açıklar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio hata ayıklayıcısı genişletilebilirliği](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [Visual Studio Hata Ayıklayıcı Genişletilebilirliği](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

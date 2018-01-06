@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f64b1412d0750bba4d3985d33286915e22f1474
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2aef7ed21124c2e3555442819461f1989388ab22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion işlevi
 Bu işlev, kaynak denetim eklentisi kaynak denetimi eklentisi tarafından desteklenen API sürümü sayısını alır.  
@@ -44,4 +45,4 @@ LONG SccGetVersion(void);
  Örneğin, kaynak denetim eklentisi sürüm 1.3 kaynak denetim eklentisi API destekliyorsa, bu işlev 0x0103 döndürecektir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Denetim eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)
+ [Kaynak Denetimi Eklentisi API İşlevleri](../extensibility/source-control-plug-in-api-functions.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e85ad4c4027a27b33f2f96284df80f852ffe3b85
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e1463fe22d4b08933112ca1ad0cf28f38a4e102c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-routing-algorithm"></a>Komut yönlendirme algoritması
 Visual Studio komutları bir dizi farklı bileşen tarafından işlenir. Komutları geçerli seçime göre en içteki bağlamdan en dıştaki (genel olarak da bilinir) bağlamına yönlendirilir. Daha fazla bilgi için bkz: [kullanılabilirlik](../../extensibility/internals/command-availability.md).  
@@ -46,4 +47,4 @@ Visual Studio komutları bir dizi farklı bileşen tarafından işlenir. Komutla
 8.  Genel: bir komut tarafından yukarıda açıklanan bağlamları işlenmiş değil, Visual Studio uygulayan bir komut sahip VSPackage yönlendirmek çalışır <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi. VSPackage zaten yüklü değil, Visual Studio çağırdığında yüklenmez <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> yöntemi. Yalnızca VSPackage yüklenen <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> yöntemi çağrılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Komut tasarım](../../extensibility/internals/command-design.md)
+ [Komut Tasarımı](../../extensibility/internals/command-design.md)

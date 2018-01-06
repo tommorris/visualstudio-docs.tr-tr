@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9cc9eea737f11c8ec28e33414f40a981848e123
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9993e31b29e25b95d475d15bd8c1190d1ffae6c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="just-my-code-threads-view"></a>Yalnızca Kendi Kodum (İş Parçacıkları Görünümü)
 Bu seçeneği seçerseniz, yalnızca kodunuzu artı çağrılan işlevlerin bir düzey göstermek için çağrı yığını filtre uygular.  
@@ -29,4 +30,4 @@ Bu seçeneği seçerseniz, yalnızca kodunuzu artı çağrılan işlevlerin bir 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)   
- [Gürültü azaltma yüzdesi](../profiling/noise-reduction-percentage.md)
+ [Gürültü Azaltma Yüzdesi](../profiling/noise-reduction-percentage.md)

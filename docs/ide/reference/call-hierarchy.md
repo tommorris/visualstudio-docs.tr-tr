@@ -14,11 +14,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 065806ec223273bbacba6da7702f21bc25510983
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 4aed087f8280049018818e68f7db56960db7e690
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-hierarchy"></a>Çağrı Hiyerarşisi
 Çağrı hiyerarşisi seçili yöntemi, özelliği veya oluşturucusu gelen ve giden tüm çağrıları görüntüleyerek kodunuz gezinmenizi sağlar. Bu, kodu nasıl akacağını daha iyi anlamak ve koduna değişiklikler etkilerini değerlendirmek için sağlar. Yöntem çağrıları ve tüm olası yürütme yollarını keşfetmek sağlar koduna ek giriş noktaları karmaşık zincirleri görüntülemek üzere kod birkaç düzeyini inceleyebilirsiniz.  

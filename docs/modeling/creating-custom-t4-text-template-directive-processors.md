@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e288ccfd0e59f95c521d605c34e04240c94a1848
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e220692b263dbb35779c25ff0b189f219e98b842
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Özel T4 Metin Şablonu Yönerge İşlemcileri Oluşturma
 *Metin şablonu dönüştürme süreci* geçen bir *metin şablonu* dosyası olarak giriş ve çıkış olarak bir metin dosyası oluşturur. *Metin şablonu dönüştürme altyapısı* işlemi ve altyapı metin şablonu dönüştürme ana bilgisayar ve bir veya daha fazla metin şablonu ile etkileşim denetimleri *yönerge işlemcileri* tamamlamak için işlem. Daha fazla bilgi için bkz: [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).  
@@ -64,8 +65,8 @@ ms.lasthandoff: 10/27/2017
 -   Daha fazla bilgi için bkz: [izlenecek yol: özel yönerge işlemcisi oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Özel yönerge işlemcisi dağıtma](../modeling/deploying-a-custom-directive-processor.md)  
+ [Özel Yönerge İşlemcisi Dağıtma](../modeling/deploying-a-custom-directive-processor.md)  
  Özel yönerge işlemcisi kaydedileceği açıklanmaktadır.  
   
- [İzlenecek yol: özel yönerge işlemcisi oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
+ [İzlenecek yol: Özel Yönerge İşlemcisi Oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
  Özel yönerge işlemcisi oluşturma, kaydetme ve yönerge işlemcisi test etmek ve çıktı dosyası HTML olarak biçimlendirmek açıklar.

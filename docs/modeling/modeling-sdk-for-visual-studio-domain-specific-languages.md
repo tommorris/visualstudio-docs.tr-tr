@@ -15,11 +15,12 @@ caps.latest.revision: "77"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 48cb7e5a274092a3ed82d2e41137633d12c3be01
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4bc85e0b5d03af1a34676030144f36457c1366ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller
 Modelleme SDK kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], içine tümleştirebilir güçlü model tabanlı geliştirme araçlarına oluşturabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aynı şekilde, bir veya daha fazla model tanımı oluşturabilir ve bir araç kümesiyle tümleştirebilirsiniz.  
@@ -47,34 +48,34 @@ Modelleme SDK kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md
  Gelişmiş teknikleri ve sorun giderme hakkında yönergeler için ziyaret [Visual Studio DSL & modelleme araçları genişletilebilirliği Forumu](http://go.microsoft.com/fwlink/?LinkID=186074).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Etki alanına özgü dil ile çalışmaya başlama](../modeling/getting-started-with-domain-specific-languages.md)  
+ [Etki Alanına Özgü Dillerle Çalışmaya Başlama](../modeling/getting-started-with-domain-specific-languages.md)  
   
- [Anlama modelleri, sınıflar ve ilişkiler](../modeling/understanding-models-classes-and-relationships.md)  
+ [Modelleri, Sınıfları ve İlişkileri Anlama](../modeling/understanding-models-classes-and-relationships.md)  
   
- [Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)  
+ [Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama](../modeling/how-to-define-a-domain-specific-language.md)  
   
- [Özelleştirme ve bir etki alanına özgü dil genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md)  
+ [Etki Alanına Özgü Dili Özelleştirme ve Genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md)  
   
- [Bir etki alanına özgü dil doğrulama](../modeling/validation-in-a-domain-specific-language.md)  
+ [Etki Alanına Özgü bir Dilde Doğrulama](../modeling/validation-in-a-domain-specific-language.md)  
   
- [Bir etki alanına özgü dil kişiselleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)  
+ [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)  
   
- [Bir etki alanına özgü dili kod oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)  
+ [Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)  
   
- [DSL kodu anlama](../modeling/understanding-the-dsl-code.md)  
+ [DSL Kodunu Anlama](../modeling/understanding-the-dsl-code.md)  
   
- [Dosya depolama ve XML serileştirme özelleştirme](../modeling/customizing-file-storage-and-xml-serialization.md)  
+ [Dosya Depolamayı ve XML Serileştirmeyi Özelleştirme](../modeling/customizing-file-storage-and-xml-serialization.md)  
   
- [Etki alanına özgü dil çözümlerini dağıtma](../modeling/deploying-domain-specific-language-solutions.md)  
+ [Etki Alanına Özgü Dil Çözümlerini Dağıtma](../modeling/deploying-domain-specific-language-solutions.md)  
   
- [Windows Forms tabanlı bir etki alanına özgü dil oluşturma](../modeling/creating-a-windows-forms-based-domain-specific-language.md)  
+ [Windows Forms Tabanlı Etki Alanına Özgü Dil Oluşturma](../modeling/creating-a-windows-forms-based-domain-specific-language.md)  
   
- [Bir WPF tabanlı etki alanına özgü dil oluşturma](../modeling/creating-a-wpf-based-domain-specific-language.md)  
+ [WPF Tabanlı Etki Alanına Özgü Dil Oluşturma](../modeling/creating-a-wpf-based-domain-specific-language.md)  
   
- [Nasıl yapılır: etki alanına özgü dil Tasarımcısı genişletme](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
+ [Nasıl yapılır: Etki Alanına Özgü Dil Tasarımcısını Genişletme](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
   
- [Görselleştirme ve modelleme SDK için desteklenen Visual Studio sürümleri](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)  
+ [Görselleştirme ve SDK Modelleme için Desteklenen Visual Studio Sürümleri](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)  
   
- [Nasıl yapılır: bir etki alanına özgü dil yeni bir sürüme geçiş](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)  
+ [Nasıl yapılır: Etki Alanına Özgü Dili Yeni Sürüme Geçirme](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)  
   
- [Visual Studio SDK Modelleme için API Başvurusu](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
+ [Visual Studio için Modelleme SDK'sı için API Başvurusu](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

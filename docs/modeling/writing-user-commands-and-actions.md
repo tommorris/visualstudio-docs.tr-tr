@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c9cf2ed906cd35f201c13cc2f82f8142f598b901
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 14e0252b4bf9a34c219db09d621bd5b12f7fbb78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-user-commands-and-actions"></a>Kullanıcı Komutları ve Eylemleri Yazma
 Bir etki alanına özgü dil komutlar diyagrama ve sürükle ve bırak gibi hareketleri yanıtlama'ı tıklatın ve olaylara çift tıklayın ekleyerek özelleştirebilirsiniz.  
@@ -30,9 +31,9 @@ Bir etki alanına özgü dil komutlar diyagrama ve sürükle ve bırak gibi hare
   
 -   [Nasıl yapılır: bir şekli veya oluşturma öğesi tıklama müdahale](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -aracılığıyla başvurduğu başka bir öğe için bir öğeyi tıklatın kullanıcıya izin.  
   
--   [Nasıl yapılır: erişmek ve geçerli seçim sınırlamak](../modeling/how-to-access-and-constrain-the-current-selection.md)  
+-   [Nasıl yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama](../modeling/how-to-access-and-constrain-the-current-selection.md)  
   
--   [Öğe araçları özelleştirme](../modeling/customizing-element-tools.md)  
+-   [Öğe Araçlarını Özelleştirme](../modeling/customizing-element-tools.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil çözümlerini dağıtma](../modeling/deploying-domain-specific-language-solutions.md)
+ [Etki Alanına Özgü Dil Çözümlerini Dağıtma](../modeling/deploying-domain-specific-language-solutions.md)

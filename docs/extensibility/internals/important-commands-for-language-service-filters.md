@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c0fa4b408c43acbf2ec87bcfaca5135c9037af7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ee6c746874e7e00643f1b840185969a6dabadfe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="important-commands-for-language-service-filters"></a>Dil hizmeti filtreleri için önemli komutları
 Tam özellikli dil hizmet filtresi oluşturmak istiyorsanız, aşağıdaki komutları işleme göz önünde bulundurun. Komut tanımlayıcıları tam listesini tanımlanan <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> numaralandırması için yönetilen kodu ve Stdidcmd.h üstbilgi dosyası yönetilmeyen [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kodu. Stdidcmd.h dosyasında bulabilirsiniz *Visual Studio SDK yükleme yolu*\VisualStudioIntegration\Common\Inc.  
@@ -42,4 +43,4 @@ Tam özellikli dil hizmet filtresi oluşturmak istiyorsanız, aşağıdaki komut
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Menüden, genellikle gönderilen **Açıklama Seçimi** veya **açıklamadan çıkarın seçimi** gelen **Gelişmiş** içinde **Düzenle** menüsü. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>kullanıcının seçili metnin açıklama eklemek istediği gösterir; <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> kullanıcı seçili metni açıklamadan çıkarın istediği gösterir. Bu komutlar, yalnızca dil hizmeti tarafından uygulanabilir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eski dil hizmeti geliştirme](../../extensibility/internals/developing-a-legacy-language-service.md)
+ [Eski Dil Hizmeti Geliştirme](../../extensibility/internals/developing-a-legacy-language-service.md)

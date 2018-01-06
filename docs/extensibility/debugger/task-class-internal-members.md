@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5937d37cfed89ee7f10779f764b8d78d370eb362
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b92a622b6b898c917710ac748b9205079d71ea5e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-class---internal-members"></a>Task sınıfı - iç üyeleri
 Bu konuda iç üyeleri açıklanmaktadır <xref:System.Threading.Tasks.Task?displayProperty=fullName> yardımcı sınıf özel bir hata ayıklayıcı uygulama. Bu sınıf hakkında genel bilgi için bkz: <xref:System.Threading.Tasks.Task> başvuru konusu.  
@@ -47,8 +48,8 @@ Bu konuda iç üyeleri açıklanmaktadır <xref:System.Threading.Tasks.Task?disp
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SetNotificationForWaitCompletion yöntemi](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|Ayarlar veya TASK_STATE_WAIT_COMPLETION_NOTIFICATION durumu bit temizler.|  
-|[NotifyDebuggerOfWaitCompletion yöntemi](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|Hata ayıklayıcı tarafından bir kesme noktası hedefi olarak kullanılan yer tutucu yöntemi.|  
+|[SetNotificationForWaitCompletion Metodu](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|Ayarlar veya TASK_STATE_WAIT_COMPLETION_NOTIFICATION durumu bit temizler.|  
+|[NotifyDebuggerOfWaitCompletion Metodu](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|Hata ayıklayıcı tarafından bir kesme noktası hedefi olarak kullanılan yer tutucu yöntemi.|  
   
 ### <a name="fields"></a>Alanlar  
   
@@ -84,4 +85,4 @@ Bu konuda iç üyeleri açıklanmaktadır <xref:System.Threading.Tasks.Task?disp
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
- [.NET Framework için paralel uzantısı dahili bileşenleri](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [.NET Framework için Paralel Uzantı Dahili Bileşenleri](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

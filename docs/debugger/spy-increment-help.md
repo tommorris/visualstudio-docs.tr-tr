@@ -13,24 +13,25 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0d7f7ccb9b752af4789b757fb1a3ed2ae5d29e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10e50e8afde8bd4d5669ee899a061b708377f28f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spy-help"></a>Spy++ Yardımı
 Spy ++ yardımcı programı belgeleri iki grup genel konular üzerinde kullanarak Spy ++ ve Spy ++ görünümleri içerir. Bunlar, Spy ++ her kullanılabilen menü komutu ve iletişim kutusunu daha ayrıntılı bilgi sağlayan başvuruya göre izlenir.  
   
 ## <a name="using-spy"></a>Spy++ Kullanma  
- [Spy ++ kullanma](../debugger/using-spy-increment.md)  
+ [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
- [Spy ++ görünümleri](../debugger/spy-increment-views.md)  
+ [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
  Windows, iletileri, işlemleri ve iş parçacıklarının Spy ++ ağaç görünümler açıklanmaktadır.  
   
 ## <a name="spy-reference"></a>Spy++ Başvurusu  
- [Menü komutları](../debugger/menu-commands.md)  
+ [Menü Komutları](../debugger/menu-commands.md)  
  Her Spy ++ menüsündeki kullanılabilir komutlar açıklanmıştır.  
   
  [Yazı tipi iletişim kutusu](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  

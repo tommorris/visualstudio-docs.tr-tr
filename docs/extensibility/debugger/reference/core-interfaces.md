@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 367917032b836ce6a7d07cf3eba85db14464a957
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 54ecbe034f4fa7054be2725205a013e5899849e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="core-interfaces"></a>Çekirdek arabirimleri
 Hata ayıklayıcı kullanarak genişletmek için çekirdek arabirimleri aşağıdaki arabirimlerdir [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  
@@ -27,33 +28,33 @@ Hata ayıklayıcı kullanarak genişletmek için çekirdek arabirimleri aşağı
   
 -   [Kesme noktaları](#Breakpoints)  
   
--   [Bağlamları](#Contexts)  
+-   [Bağlamlar](#Contexts)  
   
 -   [Çekirdek sunucusu](#CoreServer)  
   
 -   [Motorları hata ayıklama](#DebugEngines)  
   
--   [Belgeleri](#Documents)  
+-   [Belgeler](#Documents)  
   
--   [Olayları](#Events)  
+-   [Olaylar](#Events)  
   
 -   [İfadeler](#Expressions)  
   
 -   [Bellek](#Memory)  
   
--   [Modülleri](#Modules)  
+-   [Modüller](#Modules)  
   
--   [Bağlantı noktaları](#Ports)  
+-   [Bağlantı Noktaları](#Ports)  
   
 -   [İşlemler](#Processes)  
   
 -   [Programlar](#Programs)  
   
--   [Özellikleri](#Properties)  
+-   [Özellikler](#Properties)  
   
--   [Yığın çerçeveleri](#StackFrames)  
+-   [Yığın Çerçeveleri](#StackFrames)  
   
--   [İş parçacıkları](#Threads)  
+-   [İş Parçacıkları](#Threads)  
   
 -   [Tür Görselleştiriciler](#TypeVisualizers)  
   
@@ -307,4 +308,4 @@ Hata ayıklayıcı kullanarak genişletmek için çekirdek arabirimleri aşağı
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [API Başvurusu](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
- [Bir özel hata ayıklama altyapısı oluşturma](../../../extensibility/debugger/creating-a-custom-debug-engine.md)
+ [Özel Hata Ayıklama Altyapısı Oluşturma](../../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf74110cf42daa51521cc7ea706c1b951b23deb8
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: vssdk
+ms.openlocfilehash: 543f107081a5cc29ac14f1c2ba2e05924b72e353
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio uzantıları aktarma
 Uzantınızı geliştirme bitirdikten sonra diğer makinelere yüklemeniz, arkadaşlarınız ve iş arkadaşlarınızla paylaşın veya Visual Studio Market'te yayımlayın. Bu bölümde biz yayımlama ve uzantınızı korumak için yapmanız gereken her şey açıklamaktadır: yayımlama, yerelleştirme ve güncelleştirme .vsix dosyalarıyla çalışma.  
@@ -52,14 +53,14 @@ Uzantınızı geliştirme bitirdikten sonra diğer makinelere yüklemeniz, arkad
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[VSIX proje şablonu ile çalışmaya başlama](../extensibility/getting-started-with-the-vsix-project-template.md)|VSIX proje şablonu özel Proje şablonu yüklemek için nasıl kullanılacağını açıklar.|  
-|[VSIX paketi anatomisi](../extensibility/anatomy-of-a-vsix-package.md)|VSIX paketi bileşenlerini açıklar.|  
-|[VSIX proje şablonu](../extensibility/vsix-project-template.md)|Paket ve uzantı yayımlama hakkında adım adım yönergeler sağlar.|  
-|[VSIX paket yerelleştirme](../extensibility/localizing-vsix-packages.md)|Yerelleştirilmiş metin extension.vsixlangpack dosyalarını kullanarak yükleme işlemini sağlamayı açıklar.|  
+|[VSIX Proje Şablonunu Kullanmaya Başlama](../extensibility/getting-started-with-the-vsix-project-template.md)|VSIX proje şablonu özel Proje şablonu yüklemek için nasıl kullanılacağını açıklar.|  
+|[Bir VSIX Paketinin Anatomisi](../extensibility/anatomy-of-a-vsix-package.md)|VSIX paketi bileşenlerini açıklar.|  
+|[VSIX Proje Şablonu](../extensibility/vsix-project-template.md)|Paket ve uzantı yayımlama hakkında adım adım yönergeler sağlar.|  
+|[VSIX Paketlerini Yerelleştirme](../extensibility/localizing-vsix-packages.md)|Yerelleştirilmiş metin extension.vsixlangpack dosyalarını kullanarak yükleme işlemini sağlamayı açıklar.|  
 |[Nasıl yapılır: uzantı güncelleştir](../extensibility/how-to-update-a-visual-studio-extension.md)|Uzantı sisteminizdeki güncelleştirmek ve varolan bir Visual Studio uzantısı bir güncelleştirme dağıtın açıklar.|  
-|[Nasıl yapılır: VSIX paketi için bağımlılık ekleme](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|VSIX dağıtım Paketlerine yönelik başvuruları eklemeyi açıklar.|  
-|[Uzantıları Windows Installer dağıtımı için hazırlama](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Uzantınızı Windows Installer ile dağıtmak açıklanmaktadır.|  
-|[VSIX paket imzalama](../extensibility/signing-vsix-packages.md)|VSIX paket oturum açıklanmaktadır.|  
-|[Özel galerileri](../extensibility/private-galleries.md)|Uzantıları için özel galerileri oluşturma açıklanmaktadır.|  
-|[Visual Studio'nun birden çok sürümünü destekleme](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Uzantı desteğine sahip birden fazla sürümünü Visual Studio gösterilmektedir.|
-|[Visual Studio bulma](locating-visual-studio.md)|Özel uzantı dağıtımı için Visual Studio örneklerini bulmak açıklar.|
+|[Nasıl Yapılır: VSIX Paketine Bağımlılık Ekleme](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|VSIX dağıtım Paketlerine yönelik başvuruları eklemeyi açıklar.|  
+|[Uzantıları Windows Installer Dağıtımı için Hazırlama](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Uzantınızı Windows Installer ile dağıtmak açıklanmaktadır.|  
+|[VSIX Paketlerini İmzalama](../extensibility/signing-vsix-packages.md)|VSIX paket oturum açıklanmaktadır.|  
+|[Özel Galeriler](../extensibility/private-galleries.md)|Uzantıları için özel galerileri oluşturma açıklanmaktadır.|  
+|[Visual Studio'nun Birden Çok Sürümünü Destekleme](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Uzantı desteğine sahip birden fazla sürümünü Visual Studio gösterilmektedir.|
+|[Visual Studio'yu Bulma](locating-visual-studio.md)|Özel uzantı dağıtımı için Visual Studio örneklerini bulmak açıklar.|

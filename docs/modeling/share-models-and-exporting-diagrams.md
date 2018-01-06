@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 982a4f54788e38129adaf5b23c15609f3ccad53d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 49c6ea6eff4abbd8b0863bc04a07b8c912f35c64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Modelleri paylaşma ve diyagramları dışarı aktarma
 Visual Studio'da çeşitli şekillerde arkadaşlarınızla modelleri ve diyagramları paylaşabilirsiniz.  
@@ -50,7 +51,7 @@ Visual Studio'da çeşitli şekillerde arkadaşlarınızla modelleri ve diyagram
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Modelleme çözümünüzün yapısını](../modeling/structure-your-modeling-solution.md)|Büyük ve orta ölçekli bir proje modelleri paylaşma.|  
+|[Modelleme çözümünüzün yapısını oluşturma](../modeling/structure-your-modeling-solution.md)|Büyük ve orta ölçekli bir proje modelleri paylaşma.|  
 |[Diyagramları görüntü olarak dışarı aktarma](../modeling/export-diagrams-as-images.md)|PowerPoint veya Word gibi uygulamalara diyagramları bölümlerini kopyaladığınızda veya XPS dosyası diyagrama yazdırın.|  
 |[Çözümleme ve mimarinin modelini oluşturma](../modeling/analyze-and-model-your-architecture.md)|Modelleri ve diyagramları genel bakış.|  
   

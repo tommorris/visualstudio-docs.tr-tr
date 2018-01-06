@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 484d53315f836117b69270a2f43b6b780733b9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cedf021321b66c47690450823a7da92cd19888eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-pages"></a>Özellik Sayfaları
 Kullanıcıları görüntülemek ve özellik sayfalarını kullanarak proje yapılandırmaya bağlı ve - bağımsız özelliklerini değiştirin. A **özellik sayfaları** düğmesi etkinleşir **özellikleri** penceresi veya bir özellik sayfası görünümü seçili nesnenin sağlamak nesneleri için Çözüm Gezgini araç. Özellik sayfaları ortamı tarafından oluşturulan ve çözümler ve projeler için kullanılabilir. Ancak, aynı zamanda olabilirler olun proje öğeleri yapılandırmaya bağlı özelliklerini kullanmak için kullanılabilir. Projedeki dosyaları düzgün bir şekilde oluşturmak farklı derleyici anahtar ayarları gerektirdiğinde bu özellik kullanılabilir.  

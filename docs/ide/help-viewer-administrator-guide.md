@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c4c034b6aec75499d2e38af35f22cd852fa2e15
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 5f509b0ace14c4e0becd714e25ee9ec26770c6e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="help-viewer-administrator-guide"></a>Yardım Görüntüleyicisi Yönetici Kılavuzu
 Yardım Görüntüleyicisi'ni ağ ortamları olan veya internet erişimi olmayan yerel Yardım yüklemelerinde yönetmenize olanak sağlar. Yerel Yardım içeriğinin bir makine başına temelinde yapılandırılır. Varsayılan olarak, kullanıcılar kendi yerel Yardım yüklemesini güncelleştirmek için yönetici haklarına sahip olmalıdır.  
@@ -143,7 +144,7 @@ Temel içerik kümesi oluşturmadan önce hedef bilgisayardaki tüm yerel Visual
 3.  Yardım içeriği yüklemek istediğiniz yerel makinede .bat dosyasını çalıştırın.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
-[Komut satırı bağımsız değişkenleri için Yardım İçerik Yöneticisi](../ide/command-line-arguments-for-the-help-content-manager.md)  
-[Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md)  
+[Yardım İçeriği Yöneticisi İçin Komut Satırı Bağımsız Değişkenleri](../ide/command-line-arguments-for-the-help-content-manager.md)  
+[Yardım İçerik Yöneticisi Geçersiz Kılmaları](../ide/help-content-manager-overrides.md)  
 [Microsoft Yardım Görüntüleyicisi](../ide/microsoft-help-viewer.md)  
 [Yardım Görüntüleyicisi SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)

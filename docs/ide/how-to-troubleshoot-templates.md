@@ -1,7 +1,7 @@
 ---
-title: "Nasıl yapılır: Visual Studio şablon sorunlarını giderme | Microsoft Docs"
+title: "Visual Studio Proje şablonu ve öğe şablonu yükleme sorunlarını giderme | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -11,59 +11,64 @@ helpviewer_keywords: templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e34741e620c471809108f624b8bc0f9120c0a5a
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.openlocfilehash: ba6d9a73cd45a0e497fb2ecc0f4b4697071e3b37
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Nasıl yapılır: şablonlarda sorun giderme
 
 Geliştirme ortamında yüklemek bir şablon başarısız olursa, sorunu bulmanın birkaç yolu vardır.
 
-## <a name="validating-the-vstemplate-file"></a>.Vstemplate dosyası doğrulanıyor
+## <a name="validate-the-vstemplate-file"></a>.Vstemplate dosyasını doğrulama
 
-Bir şablon .vstemplate dosyasında için uymaz varsa [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] şablon şeması şablonu görüntülenmeyebilir **yeni proje** iletişim kutusu.
+Bir şablon .vstemplate dosyasında için Visual Studio şablon şeması uymaz, şablon görüntülenmeyebilir **yeni proje** iletişim kutusu.
 
 ### <a name="to-validate-the-vstemplate-file"></a>.Vstemplate dosyasını doğrulamak için
 
-1.  Şablonu içeren .zip dosyasını bulun.  
+1. Şablonu içeren .zip dosyasını bulun.
 
-2.  .Zip dosyasını ayıklayın.  
+1. .Zip dosyasını ayıklayın.
 
-3.  Üzerinde **dosya** menüde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tıklatın **açık**ve ardından **dosya**.
+1. Üzerinde **dosya** Visual Studio menüsünde seçin **açık** > **dosya**.
 
-4.  Şablon için .vstemplate dosyasını seçin ve tıklatın **açık**.  
-  
-5.  .Vstemplate dosyasının XML uyduğundan emin olun [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] şablon şeması. .Vstemplate şeması hakkında daha fazla bilgi için bkz: [Visual Studio şablon şeması başvurusu](../extensibility/visual-studio-template-schema-reference.md).  
+1. Şablonu için .vstemplate dosyası seçin ve **açık**.
+
+1. .Vstemplate dosyasının XML şablon şeması uyduğundan emin olun. .Vstemplate şeması hakkında daha fazla bilgi için bkz: [şablon şeması başvurusu](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
     > .Vstemplate dosyasına yazma sırasında IntelliSense destek almak için ekleme bir `xmlns` özniteliğini `VSTemplate` öğesi ve http://schemas.microsoft.com/developer/vstemplate/2005 değerini atayın.
 
-6.  .vstemplate dosyasını kaydedip kapatın.  
-  
-7.  Şablonunuzda, içerdiği dosyaları seçin dosyaya sağ tıklayın, **göndermek için**, tıklatıp **sıkıştırılmış (daraltılmış) klasör**. Seçtiğiniz dosyaların bir .zip dosyasına sıkıştırılır.  
-  
-8.  Yeni .zip dosyası eski .zip dosyası ile aynı dizine koyun.  
-  
-9. Ayıklanan şablon dosyalarını ve eski şablonu .zip dosyasını silin.
+1. .vstemplate dosyasını kaydedip kapatın.
 
-## <a name="monitoring-the-event-log"></a>Olay günlüğünü izleme
+1. Şablonunuzda, bulunan dosyalar seçin, sağ tıklatın ve seçin **göndermek** > **sıkıştırılmış (daraltılmış) klasör**. Seçtiğiniz dosyaların bir .zip dosyasına sıkıştırılır.
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Şablon .zip dosyalarını işleme sırasında karşılaşılan hataları günlüğe kaydeder. Bir şablon olarak gösterilmez, **yeni proje** iletişim kutusu olarak beklendiği gibi kullanabileceğiniz **Olay Görüntüleyicisi'ni** sorunu gidermek için.
+1. Yeni .zip dosyası eski .zip dosyası ile aynı dizine koyun.
+
+1. Ayıklanan şablon dosyalarını ve eski şablonu .zip dosyasını silin.
+
+## <a name="monitor-the-event-log"></a>Olay günlüğü izleyin
+
+Visual Studio şablon .zip dosyalarını işlerken bulduğu hataları günlüğe kaydeder. Bir şablonu içinde görünmüyorsa **yeni proje** iletişim kutusu olarak beklendiği gibi kullanabileceğiniz **Olay Görüntüleyicisi'ni** sorunu gidermek için.
 
 ### <a name="to-locate-template-errors-in-event-viewer"></a>Olay Görüntüleyicisi'nde şablon hatalarını bulmak için
 
-1.  Windows'da tıklatın **Başlat**, tıklatın **Denetim Masası**, çift tıklatın **Yönetimsel Araçlar**, çift tıklayın ve ardından **Olay Görüntüleyicisi'ni**.  
-  
-2.  Sol bölmede **uygulama**.  
-  
-3.  Olaylarla arayın bir **kaynak** değerini `Visual Studio - VsTemplate`.  
-  
-4.  Hatayı görüntülemek için bir şablon olayı çift tıklatın.
+1. Windows, gelen **Başlat** menüsünde seçin **Windows Yönetim Araçları** > **Olay Görüntüleyicisi'ni**.
+
+1. Sol bölmede seçin **Windows Günlükleri** > **uygulama**.
+
+1. Olaylarla arayın bir **kaynak** değerini `Visual Studio - VsTemplate`.
+
+1. Bir hatayı görüntülemek için bir şablon olayı çift tıklatın.
+
+## <a name="enable-diagnostic-logging"></a>Tanılama günlük kaydını etkinleştir
+
+İçindeki adımları izleyerek şablon bulma için tanılama günlük kaydını etkinleştirebilirsiniz [sorun giderme şablon bulma (genişletilebilirlik)](../extensibility/troubleshooting-template-discovery.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Şablonlarını özelleştirme](../ide/customizing-project-and-item-templates.md)   
-[Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
-[Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)
+[Sorun giderme şablon bulma (genişletilebilirliği)](../extensibility/troubleshooting-template-discovery.md)  
+[Şablonlarını özelleştirme](../ide/customizing-project-and-item-templates.md)  
+[Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)  
+[Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)

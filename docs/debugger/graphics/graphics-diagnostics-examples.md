@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0fd05d9b8e45b80c0c8bddf3ea1f776c385378b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9c1ff7797b16bddb039b5871832736665bd8d054
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-diagnostics-examples"></a>Grafik Tanılama Örnekleri
 Bu örnekler kullanarak işleme sorunları DirectX tabanlı uygulamalarda hata ayıklamak nasıl [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] grafik tanılama.  
@@ -24,9 +25,9 @@ Bu örnekler kullanarak işleme sorunları DirectX tabanlı uygulamalarda hata a
 ## <a name="capturing-graphics-information"></a>Graf bilgilerini yakalama  
  Uygulamanızda işleme sorunları tanılamak için grafik tanılamayı kullanmadan önce çalışırken uygulamasından grafik bilgilerini yakalama sahip. Grafik bilgilerini yerel olarak çalışan bir uygulama veya bir uzak bilgisayara veya başka bir aygıt üzerinde çalışan bir uygulama yakalanır. Bu izlenecek yollar nasıl el ile veya program aracılığıyla bir uygulamadan grafik bilgilerini yakalayabilir gösterilmektedir:  
   
--   [İzlenecek yol: Grafik bilgilerini yakalama](walkthrough-capturing-graphics-information.md)  
+-   [İzlenecek Yol: Grafik Bilgilerini Yakalama](walkthrough-capturing-graphics-information.md)  
   
--   [İzlenecek yol: Grafik bilgilerini programla yakalama](walkthrough-capturing-graphics-information-programmatically.md)  
+-   [İzlenecek Yol: Grafik Bilgilerini Programla Yakalama](walkthrough-capturing-graphics-information-programmatically.md)  
   
 ## <a name="use-graphics-diagnostics-with-an-arm-based-device"></a>Grafik tanılama ARM tabanlı bir cihaz ile kullanma  
  Uzaktan hata ayıklama kullanarak ARM tabanlı bir cihaz üzerinde Direct3D uygulamanızı hata ayıklamak için grafik tanılamayı kullanabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: bir ARM aygıtıyla kullanım grafik tanılama](how-to-use-graphics-diagnostics-with-an-arm-device.md).  
@@ -39,18 +40,18 @@ Bu örnekler kullanarak işleme sorunları DirectX tabanlı uygulamalarda hata a
   
  Bu senaryolar, nesneyi neden eksik olduğunu belirlemek ve sorumlu kodu bulmak için grafik tanılama nasıl kullanabileceğiniz gösterilmektedir.  
   
--   [İzlenecek yol: Cihaz durumu nedeniyle nesnelerin eksikliği](walkthrough-missing-objects-due-to-device-state.md)  
+-   [İzlenecek Yol: Cihaz Durumu Nedeniyle Nesnelerin Eksikliği](walkthrough-missing-objects-due-to-device-state.md)  
   
--   [İzlenecek yol: Köşe gölgeleme nedeniyle nesnelerin eksikliği](walkthrough-missing-objects-due-to-vertex-shading.md)  
+-   [İzlenecek Yol: Köşe Gölgeleme Nedeniyle Nesnelerin Eksikliği](walkthrough-missing-objects-due-to-vertex-shading.md)  
   
--   [İzlenecek yol: Yanlış yapılandırılmış ardışık düzen nedeniyle nesnelerin eksikliği](walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
+-   [İzlenecek Yol: Yanlış Yapılandırılmış Ardışık Düzen Nedeniyle Eksik Nesneler](walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
   
 ## <a name="debugging-rendering-errors"></a>İşleme hataları hata ayıklama  
  Doğru görünüm olmaması bir nesne (veya nesneler) deneyimine grafik geliştiriciler başka bir yaygın sorun ' dir. Bu tür sorunlar yanlış görünümünü ve onun neden gelen çok belirgin arasında olabilir çünkü tanılamak zor olabilir — yanlış doku bağlama — kadar çok ince — gölgelendirici kod veya beklenmeyen etkileşim gölgelendiriciler arasında bir hata. Bazı sorunlar hataların bir bileşimiyle kaynaklanıyor olabilir.  
   
  Tarafından ikincil gölgelendirici hata nedeniyle bir not şekilde Zarif işleme sorun aşağı izlemek için grafik tanılama nasıl kullanabileceğinizi gösteren bir senaryo aşağıda verilmiştir:  
   
--   [İzlenecek yol: Gölgeleme nedeniyle hataları işleme hata ayıklama](walkthrough-debugging-rendering-errors-due-to-shading.md)  
+-   [İzlenecek Yol: Gölgeleme Nedeniyle Çıkan Oluşturma Hatalarını Ayıklama](walkthrough-debugging-rendering-errors-due-to-shading.md)  
   
 ## <a name="debugging-compute-shaders"></a>İşlem gölgelendiriciler hata ayıklama  
  Hatalı sonuçlar üretmek DirectCompute işlem gölgelendirici tekrar hata ayıklamak için grafik tanılamayı kullanabilirsiniz. DirectCompute ile çok sayıda veri öğeleri paralel hesaplamalar için GPU hesaplama gücünü kullanabilirsiniz. Belirli sorun türlerini, GPU kullanılarak birçok kez bile iyi en iyi duruma getirilmiş CPU kodu daha hızlı gerçekleştirebilirsiniz. Ancak, geleneksel hata ayıklayıcıları GPU üzerinde çalışan bir kod algılayamaz. Bu tür bir kod hata ayıklama çoğunlukla satıcıya özgü ve de Visual Studio ile tümleştirmek değil özel araçlar gerektirir. İşlem gölgelendirici hata ayıklama, aralık GPU arasında daha tutarlı hale getirmek için grafik tanılamayı DirectCompute gönderme olayları yakalar — Direct3D işleme olaylarının yanı sıra — böylece sorunları işlem gölgelendirici kodunuzda hata ayıklamak için alıştığınız araçları kullanabilirsiniz.  

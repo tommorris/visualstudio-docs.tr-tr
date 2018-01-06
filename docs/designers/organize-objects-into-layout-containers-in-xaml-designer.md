@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5635f5da028283e6683548ec4388f7b3bfcbd8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 9c7b9c8f0f36435c2595a5df648daa54a614e278
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML Tasarımcısı’nda nesneleri düzen kapsayıcılarına yerleştirme
 Bir sayfada görünecek nesneleri oluşturulacağı yeri düşünün; görüntüleri, düğmeler ve videolar gibi nesneleri. Satır ve sütunları tek bir satıra dikey veya yatay veya sabit konumlarda görünmesini istediğiniz olabilir.  
@@ -39,7 +40,7 @@ Bir sayfada görünecek nesneleri oluşturulacağı yeri düşünün; görüntü
   
 -   [UniformGrid](#Uniform)  
   
--   [Tuvale](#Canvas)  
+-   [Tuval](#Canvas)  
   
 -   [StackPanel](#Stack)  
   
@@ -50,7 +51,7 @@ Bir sayfada görünecek nesneleri oluşturulacağı yeri düşünün; görüntü
 ###  <a name="Grid"></a>Kılavuz  
  Nesneleri satırlar ve sütunlar halinde düzenleyin.  
   
- ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")  
+ ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441F-9136-98375fee87b7")  
   
  **Kısa bir video izlemek:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [kullanarak kılavuzları](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
   
@@ -102,7 +103,7 @@ Bir sayfada görünecek nesneleri oluşturulacağı yeri düşünün; görüntü
   
 -   [Kenarlık](#Border)  
   
--   [Açılan](#Popup)  
+-   [Açılan Pencere](#Popup)  
   
 -   [ScrollViewer](#Scroll)  
   
@@ -113,7 +114,7 @@ Bir sayfada görünecek nesneleri oluşturulacağı yeri düşünün; görüntü
 ###  <a name="Border"></a>Kenarlık  
  Bir sınır, arka plan ya da ikisini geçici bir nesne oluşturun. Yalnızca bir nesneye ekleyebilirsiniz bir **kenarlık**. Kenarlık veya arka plan için birden fazla nesne uygulamak istiyorsanız, Düzen paneline ekleme **kenarlık**. Ardından, nesneleri bu panel veya denetim ekleyin.  
   
- ![](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-bbc4-57538b8289ff")  
+ ![](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-BBC4-57538b8289ff")  
   
  **Kısa bir video izlemek:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Kenarlıklar ile çalışma](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders)  
   

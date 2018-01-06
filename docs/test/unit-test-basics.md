@@ -12,11 +12,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: ec6d6bc63094b361f7663e640d9133add3bfbfd0
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: b71e1797b7ba5378b7a8396f56f97cc9a0c63b2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-test-basics"></a>Birim Testi Temelleri
 Kod oluşturma ve birim testleri çalıştırma beklendiği gibi çalışıp çalışmadığını denetleyin. Birim, programınızı işlevselliğini test edebilirsiniz ayrık sınanabilir davranışları içine olarak tek tek ayırmanız çünkü testi adlı *birimleri*. Visual Studio Test Gezgini birim testleri çalıştırma ve sonuçları Visual Studio'da görüntülemek için esnek ve verimli bir yol sağlar. Visual Studio Microsoft Birim yönetilen ve yerel kodu çerçeveyi testi yükler. Kullanım bir *birim testi çerçevesi* birim testleri oluşturmak için bunları çalıştırmak ve bu test sonuçlarını rapor. Kodunuzun doğru şekilde çalışıp çalışmadığını sınamak için değişiklik yaptığınız zaman yeniden çalıştır birim testleri. Visual Studio Enterprise ile otomatik olarak yapabilirsiniz [Canlı birim testi](live-unit-testing-intro.md), hangi kodunuz tarafından etkilenen testleri algılar değiştirir ve yazarken arka planda çalışır.
@@ -44,9 +45,9 @@ Kod oluşturma ve birim testleri çalıştırma beklendiği gibi çalışıp ça
 ###  <a name="BKMK_Quick_starts"></a>Hızlı başlangıçlar  
  Doğrudan kodlama içine alır birim testi giriş için aşağıdaki konulardan birine bakın:  
   
--   [Yönetilen kod için birim testleri izlenecek yol: Oluşturma ve çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+-   [İzlenecek yol: Yönetilen Kod için Birim Testleri Oluşturma ve Çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
--   [Hızlı Başlangıç: Test Gezgini ile güdümlü geliştirme test etme](../test/quick-start-test-driven-development-with-test-explorer.md)  
+-   [Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
 -   [Yerel kod Test Gezgini ile birim testi](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
@@ -187,7 +188,7 @@ public void Withdraw_AmountMoreThanBalance_Throws()
   
  Microsoft birim test çerçevelerini hakkında daha fazla bilgi için aşağıdaki konulardan birine bakın:  
   
--   [Yönetilen kod için Microsoft Birim Test Çerçevesi ile .NET Framework için birim testleri yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
+-   [Yönetilen Kod için Microsoft Birim Testi Çerçevesi ile .NET Framework için Birim Testleri Yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
 -   [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)  
   

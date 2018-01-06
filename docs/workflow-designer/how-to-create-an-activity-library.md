@@ -11,11 +11,12 @@ caps.latest.revision: "12"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6a61c8f4ea5e9d9cc6d4ab13437d2ec4d4eef7ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e2dc5245dd50fd2a5211d55107e537fbc8eb6eb8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-activity-library"></a>Nasıl yapılır: bir etkinlik kitaplığı oluşturma
 Özel etkinlikler belirli İş süreçlerinizi bir iş akışında model oluşturmak için kullanılır. Etkinlik kitaplığı şablonunda [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] görsel olarak kullanarak bu tür özel etkinlikler oluşturmanıza olanak sağlaması için sağlanan [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)].  
@@ -50,4 +51,4 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: bir etkinlik oluşturmak](/dotnet/framework/windows-workflow-foundation/how-to-create-an-activity)   
- [Bir iş akışı projesi oluşturma](../workflow-designer/creating-a-workflow-project.md)
+ [İş Akışı Projesi Oluşturma](../workflow-designer/creating-a-workflow-project.md)

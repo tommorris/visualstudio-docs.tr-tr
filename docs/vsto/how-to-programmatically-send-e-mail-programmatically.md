@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98b0eefafa86fdaf8f7a664ac75a2f7c71a43549
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 39a0ebee37c57630649f680d14aa8fef22833225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-send-e-mail"></a>Nasıl yapılır: program aracılığıyla e-posta Gönder  
   Bu örnekte, etki alanı adına sahip kişiler için bir e-posta iletisi gönderilir **example.com** e-posta adreslerini içinde.  
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/31/2017
  [Posta öğeleri ile çalışma](../vsto/working-with-mail-items.md)   
  [Nasıl yapılır: program aracılığıyla e-posta öğesi oluşturma](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
  [Nasıl yapılır: program aracılığıyla, Outlook Kişilerine erişme](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Nasıl yapılır: bir e-posta iletisi alındığında program aracılığıyla işlem gerçekleştirme](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
+ [Nasıl yapılır: E-Posta İletisi Alındığında Program Aracılığıyla İşlem Gerçekleştirme](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
   
   

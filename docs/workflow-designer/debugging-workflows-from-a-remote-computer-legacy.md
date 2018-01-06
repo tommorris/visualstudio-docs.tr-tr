@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: f6b1f88fcc796cbee0a48fd39da2ad9c4fe1489a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b4b9207702e6b4c3b93838eccfe1da15c42b5baa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-workflows-from-a-remote-computer-legacy"></a>Hata ayıklama iş akışları uzak bir bilgisayardan (eski)
 Bu konu, uzak eski hata ayıklamak açıklar [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] eski ile oluşturulan uygulamaların [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] uygulamanızı gerektiği zaman ya da hedeflemek [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -32,4 +33,4 @@ Bu konu, uzak eski hata ayıklamak açıklar [!INCLUDE[wf](../workflow-designer/
  [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)]Uzaktan hata ayıklama, işlevleri diğer için uzaktan hata ayıklama ile aynı [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bileşenleri. Daha fazla bilgi için bkz: [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] uzaktan hata ayıklama MSDN Kitaplığı'nda.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama eski iş akışları](../workflow-designer/debugging-legacy-workflows.md)
+ [Eski İş Akışlarında Hata Ayıklama](../workflow-designer/debugging-legacy-workflows.md)

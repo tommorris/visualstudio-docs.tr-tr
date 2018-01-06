@@ -18,11 +18,12 @@ caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e967ae840486126f5f5fb457e2b1ef8eda57881
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ec4808adeb38d0ee8cf13d28e181260fbbae95bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-print-documents"></a>Nasıl yapılır: Program Aracılığıyla Belgeleri Yazdırma
   Tüm yazdırma Microsoft Office Word belgesine veya varsayılan yazıcı için bir belge bölümü.  
@@ -62,6 +63,6 @@ ms.lasthandoff: 10/31/2017
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#12)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

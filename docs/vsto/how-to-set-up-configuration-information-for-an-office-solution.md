@@ -18,11 +18,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a8c2e0a904ad3cdbef3e70072d263cc26274de52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7b8c8c9ca6dd964a58aa65b901d9219732179f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Nasıl Yapılır: Office Çözümü için Yapılandırma Bilgilerini Kurma
   Yapılandırma dosyaları, Office çözümleri için belirli ayarları yapılandırmak için kullanabilirsiniz. Derleme bağlama ilkesi, uzaktan iletişim nesneleri, hata ayıklama ve izleme ayarları gibi ayarları belirtebilirsiniz.  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [.NET Framework için yapılandırma dosyası şeması](/dotnet/framework/configure-apps/file-schema/index)   
  [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)   
- [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)  
+ [Office Çözümünü Dağıtma](../vsto/deploying-an-office-solution.md)  
   
   

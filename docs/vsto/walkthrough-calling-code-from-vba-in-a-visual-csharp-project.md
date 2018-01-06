@@ -24,11 +24,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d75076bc811cc94a62f7b737116984a08295961
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a1e61b3b2055e6a32fa1e179232e7366fe2b3d16
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>İzlenecek Yol: Visual C# Projesinde VBA'dan Kod Çağırma
   Bu kılavuz bir yöntem bir belge düzeyi özelleştirmelerinde Microsoft Office Excel için Visual Basic for Applications (VBA) kodunu çalışma kitabı nasıl çağrılacağını gösterir. Yordam üç temel adımdan oluşur: bir yöntem ekleme `Sheet1` konak öğesi sınıfına, çalışma kitabı VBA kodunda yöntemi oluşturma ve çalışma kitabı VBA kodundan yöntemini çağırın.  
@@ -255,5 +256,5 @@ ms.lasthandoff: 10/31/2017
  [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)   
  [Nasıl yapılır: Visual Basic projesinde VBA kodu kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
  [Nasıl yapılır: Visual C &#35; VBA kodu kullanımına sunma Proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [İzlenecek yol: Visual Basic Projesinde VBA'dan Kod Çağırma](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
+ [İzlenecek Yol: Visual Basic Projesinde VBA'dan Kod Çağırma](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
   

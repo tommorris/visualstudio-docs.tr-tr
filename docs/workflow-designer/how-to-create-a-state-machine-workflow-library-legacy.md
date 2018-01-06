@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 47092f4f541f4f6e797617db3cf2d9c24741d282
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 73fe219a3047758f66dbff47e59031adb1de9258
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Nasıl yapılır: bir Durum makinesi iş akışı kitaplığı (eski) oluşturun
 Eski kullanarak bir Durum makinesi iş akışı kitaplık projesi oluşturmak için aşağıdaki adımları izleyin [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] tarafından sağlanan [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -51,4 +52,4 @@ Eski kullanarak bir Durum makinesi iş akışı kitaplık projesi oluşturmak i�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski iş akışı projeleri oluşturma](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Durum makinesi iş akışları](/dotnet/framework/windows-workflow-foundation/state-machine-workflows)
+ [Durum Makinesi İş Akışları](/dotnet/framework/windows-workflow-foundation/state-machine-workflows)

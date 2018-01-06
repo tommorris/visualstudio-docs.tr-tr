@@ -23,11 +23,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d64c0767cce43d5b157fca82cc3e1e210a2f8c58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc016efd3d0a3525f733929c294946bf9376417b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-debugging-a-sharepoint-workflow-solution"></a>İzlenecek yol: Bir SharePoint İş Akışı Çözümü Oluşturma ve Hatalarını Ayıklama
   Bu kılavuz temel sıralı iş akışı şablonunun nasıl oluşturulacağını gösterir. İş akışı bir belgeyi gözden olup olmadığını belirlemek için paylaşılan bir belge kitaplığı özelliğini denetler. Belge gözden, iş akışı tamamlanır.  
@@ -296,6 +297,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SharePoint iş akışı çözümleri oluşturma](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [SharePoint Proje ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md)   
- [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+ [SharePoint Çözümleri Oluşturma ve Hatalarını Ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
   

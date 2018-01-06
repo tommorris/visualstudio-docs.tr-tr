@@ -22,11 +22,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7dcbedb2c30758c762af0c301c239dd03fe4b10f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5c383c95d37894aaa49a4a42d2b9a17b9a193f41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Nasıl yapılır: Çalışma Kitaplarını Program Aracılığıyla Koruma
   Böylece kullanıcılar eklenemez veya çalışma sayfalarını silme ve aynı zamanda da program aracılığıyla çalışma kitabının korumasını kaldırın, Microsoft Office Excel çalışma kitabı koruyabilirsiniz. İsteğe bağlı olarak, bir parola belirtin, (kullanıcıların sayfaları taşıyamazsınız şekilde) korumalı yapısı isterseniz ve çalışma kitabının windows korumalı isteyip istemediğinizi belirtin olup olmadığını gösterir.  
@@ -73,6 +74,6 @@ ms.lasthandoff: 10/31/2017
  [Çalışma kitaplarıyla çalışma](../vsto/working-with-workbooks.md)   
  [Nasıl yapılır: çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Nasıl yapılır: çalışma sayfalarını program aracılığıyla gizleme](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -19,11 +19,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1974f32731d8ba45b2210b9d9231a7e69d6905f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2ca99a5ad13989f29126b23a93055b174bb49150
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-sharepoint-project-extension"></a>İzlenecek Yol: SharePoint Proje Uzantısı Oluşturma
   Bu kılavuzda nasıl SharePoint projeleri için bir uzantı oluşturulacağı gösterilmektedir. Bir proje zaman eklenmiş, silinmiş veya yeniden adlandırılmış gibi proje düzeyi olaylarına tepki vermek için bir proje uzantısı kullanabilirsiniz. Ayrıca, özel özellikler ekleyebilir veya bir özellik değeri değiştiğinde yanıt. Proje öğesi uzantılarının aksine, project uzantıları belirli bir SharePoint proje türü ile ilişkilendirilemez. Bir proje uzantısı oluşturma, herhangi bir SharePoint proje türünü açıldığında uzantıyı yükler [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -209,6 +210,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: SharePoint projelerine özellik ekleme](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
  [SharePoint Proje sisteminin uzantılarında veri kaydetme](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
- [SharePoint araç uzantıları ile özel verileri ilişkilendirme](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
+ [SharePoint Araç Uzantıları ile Özel Verileri İlişkilendirme](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
   
   

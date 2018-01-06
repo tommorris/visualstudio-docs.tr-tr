@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d696b0a7bc910d984494e2730b2a959fc3b301c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2d37fc65a094aa3f6733045ca6ba9380bc522741
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Nasıl yapılır: Program Aracılığıyla Belgeleri ve Belge Parçalarını Koruma
   Kullanıcılar belgeye düzenlemeler yapmasını önlemek için Microsoft Office Word belgelerini koruma ekleyebilirsiniz.  
@@ -77,6 +78,6 @@ ms.lasthandoff: 10/31/2017
  [Office belgelerinde parola koruması](../vsto/password-protection-on-office-documents.md)   
  [Nasıl yapılır: kodun kısıtlı izinle belgelerin arkasında çalışmasına izin verme](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
- [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)  
+ [Office Çözümleri Tasarlama ve Oluşturma](../vsto/designing-and-creating-office-solutions.md)  
   
   

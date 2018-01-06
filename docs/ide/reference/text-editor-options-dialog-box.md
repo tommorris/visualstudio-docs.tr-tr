@@ -24,29 +24,30 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 423b2537b425066ca490eb8ae3c20d17fbc31253
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 80668df65b1250eb579597653cf32ab79d30218c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-editor-options-dialog-box"></a>Metin Düzenleyici Seçenekleri İletişim Kutusu
 Düzenleyici Seçenekleri **seçenekleri** iletişim kutusu görünümü ve davranışı Düzenleyicisi'nı özelleştirme yolları sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: yazı tiplerini ve renkleri Düzenleyicisi'nde değiştirme](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
+ [Nasıl Yapılır: Düzenleyicideki Yazı Tiplerini ve Renkleri Değiştirme](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  Düzenleyici yazı tiplerini ve renkleri değiştirme açıklanmaktadır.  
   
- [Nasıl yapılır: düzenleyicide sözcük kaydırmayı yönetme](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
+ [Nasıl Yapılır: Düzenleyicide Sözcük Kaydırmayı Yönetme](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
  Sözcük kaydırma seçenekleri açıklanmaktadır.  
   
- [Nasıl yapılır: düzenleyicide satır numaralarını görüntüleme](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
+ [Nasıl Yapılır: Düzenleyicide Satır Numaralarını Görüntüleme](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
  Satır numaraları üzerinde devre dışı bırakma açıklanmaktadır.  
   
- [Nasıl yapılır: URL'leri Düzenleyicisi'nde bağlantılar olarak görüntüleme](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
+ [Nasıl Yapılır: Düzenleyicide URL'leri Bağlantılar Olarak Görüntüleme](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
  URL'leri bağlantılar olarak görünmesi için biçimlendirmek açıklanmaktadır.  
   
- [Dile özgü Düzenleyici seçeneklerini ayarlama](../../ide/reference/setting-language-specific-editor-options.md)  
+ [Dile Özgü Düzenleyici Seçeneklerini Ayarlama](../../ide/reference/setting-language-specific-editor-options.md)  
  Yalnızca bir geliştirme dilini uygulamak Düzenleyicisi seçeneklerinin nasıl ayarlanacağını açıklar.  
   
  [Seçenekler, metin düzenleyici, genel](../../ide/reference/options-text-editor-general.md)  

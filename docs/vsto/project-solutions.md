@@ -22,11 +22,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 584f98e9fbe6a8883039cad03e6b0782d225b8bb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e824576ca8692fec6856d3b80eda7b8a2126561e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-solutions"></a>Proje Çözümleri
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]Microsoft Office Project için VSTO eklentileri oluşturma için kullanabileceğiniz proje şablonları sağlar. VSTO eklentileri proje otomatikleştirmek, proje özelliklerini genişletmek veya Project kullanıcı arabirimi (UI) özelleştirmek için kullanabilirsiniz.  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
 |Görev|Daha fazla bilgi için|  
 |----------|--------------------------|  
-|Proje Şeritte özel sekmeler ekleme|[Şerite Genel Bakış](../vsto/ribbon-overview.md)|  
+|Proje Şeritte özel sekmeler ekleme|[Şeride Genel Bakış](../vsto/ribbon-overview.md)|  
   
  Project UI ve diğer Microsoft Office uygulamaları özelleştirme hakkında daha fazla bilgi için bkz: [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md).  
   

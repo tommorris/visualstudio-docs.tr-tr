@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb181ba7bd408194bec52224496ebef7f343f5d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cdcc241031f8dcd2bd79000aeecde5c9d19f593d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Nasıl Yapılır: Outlook'un Form Bölgesini Görüntülemesini Engelleme
   Belirli bir öğe için bir form bölgesini görüntülemek için Microsoft Office Outlook istemediğiniz durumlar olabilir. Örneğin, bir kişi öğesi iş adresi içermiyorsa, iş konumunu görünmesini bir harita gösteren form bölgesini engelleyebilirsiniz.  
@@ -48,6 +49,6 @@ ms.lasthandoff: 10/31/2017
  [İzlenecek yol: Outlook Form Bölgesi Tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Nasıl yapılır: Outlook eklenti projesine Form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [İzlenecek yol: Outlook Form Bölgesi Tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [İzlenecek yol: Outlook'ta tasarlanan Form bölgesini içeri aktarma](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
+ [İzlenecek Yol: Outlook'ta Tasarlanan Form Bölgesini İçeri Aktarma](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
   
   

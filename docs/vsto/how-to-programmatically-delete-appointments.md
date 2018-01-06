@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b27c536a9e5b7237efdd6b11b4be75ca1d91f19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 620b0643280adebad55adcfacb6883b644e42227
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Nasıl yapılır: Randevuları Program Aracılığıyla Silme
   Bu örnek, yinelenen bir randevu bir örneğini siler. Örnekte, yinelenen bir randevu örneği 08: 00'dan 28 Haziran 2006'oluşur varsayılır.  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
  [Başlarken VSTO eklentilerini programlama](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Nasıl yapılır: randevuları program aracılığıyla oluşturma](../vsto/how-to-programmatically-create-appointments.md)   
  [Nasıl yapılır: program aracılığıyla özel bir takvim oluşturma](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
- [Nasıl yapılır: program aracılığıyla toplantı isteği oluşturma](../vsto/how-to-programmatically-create-a-meeting-request.md)  
+ [Nasıl yapılır: Program Aracılığıyla Toplantı İsteği Oluşturma](../vsto/how-to-programmatically-create-a-meeting-request.md)  
   
   

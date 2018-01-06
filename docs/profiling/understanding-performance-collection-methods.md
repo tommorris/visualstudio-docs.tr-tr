@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ad7ecfb61e1d8ecb7bcb000a659b798eb651461
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: a126ec0329695455013ca8625a8aeb774cf2ad36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-performance-collection-methods"></a>Performans koleksiyon yöntemleri anlama
 Profil oluşturma Visual Studio Araçları performans verilerini toplamak için kullanabileceğiniz beş yöntemleri sağlar. Bu konuda farklı yöntemleri açıklar ve belirli bir yöntem ile veri toplama uygun olabilir bazı senaryolar önerir.  
@@ -78,7 +79,7 @@ Profil oluşturma Visual Studio Araçları performans verilerini toplamak için 
   
  [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)  
   
- [İzleme yöntemi veri görünümleri](../profiling/instrumentation-method-data-views.md)  
+ [İzleme Metodu Veri Görünümleri](../profiling/instrumentation-method-data-views.md)  
   
 ##  <a name="concurrency"></a>Eşzamanlılık  
  Eşzamanlılık profili oluşturma, birden çok iş parçacıklı uygulamalar hakkında bilgi toplar. Paylaşılan bir kaynağa erişim beklemek için bu rekabeti iş parçacıklarının her zaman ayrıntılı çağrı yığını bilgileri toplar profil kaynak çekişmesini zorlandı. Eşzamanlılık görselleştirme ayrıca birden çok iş parçacıklı uygulamanızın kendisini, donanım, işletim sistemi ve diğer işlemleri ana bilgisayar ile nasıl etkileşim kurduğu hakkında daha fazla genel bilgi toplar:  
@@ -91,7 +92,7 @@ Profil oluşturma Visual Studio Araçları performans verilerini toplamak için 
   
  [İş parçacığı ve işlem eşzamanlılık verileri toplama](../profiling/collecting-thread-and-process-concurrency-data.md)  
   
- [Kaynak çakışması veri görünümleri](../profiling/resource-contention-data-views.md)  
+ [Kaynak Çakışması Veri Görünümleri](../profiling/resource-contention-data-views.md)  
   
  [Eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md)  
   
@@ -124,7 +125,7 @@ Profil oluşturma araçları tarafından toplanan katman etkileşim verileri
   
  [Katman etkileşim verileri toplama](../profiling/collecting-tier-interaction-data.md)  
   
- [Etkileşim görünümleri](../profiling/tier-interaction-views.md)  
+ [Katman Etkileşimi Görünümleri](../profiling/tier-interaction-views.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: bir Web sitesi için performans verilerini topla](../profiling/how-to-collect-performance-data-for-a-web-site.md)   

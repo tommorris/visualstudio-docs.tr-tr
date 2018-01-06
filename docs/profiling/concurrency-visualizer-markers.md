@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff86fd14857206361a4bd9c15088cb3547200b28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7baa202558b6bb7bc60a0bb27d42ae004933ddea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer-markers"></a>Eşzamanlılık Görselleştiricisi İşaretleyicileri
 Eşzamanlılık görselleştiricisi içinde işaretlerinin bir uygulama olayları temsil eden simgelerdir.  Genellikle, bu olayların aşamaları veya bir uygulamadaki oluşum belirlemek için uygulama oluşturur.  Olayları, uygulama veya kitaplıkları ve uygulamanın kullandığı çalışma zamanları tarafından oluşturulabilir.  
@@ -43,19 +44,19 @@ Eşzamanlılık görselleştiricisi içinde işaretlerinin bir uygulama olaylar�
 ## <a name="known-sources-of-markers"></a>İşaretçileri bilinen kaynakları  
  Sağlayıcı için bazı kısıtlamalar aynılarını sürece tüm ETW sağlayıcı işaretleyicileri oluşturabilir. Eşzamanlılık görselleştiricisi işaretçileri için ek olay kaynaklarına dinleyecek şekilde yapılandırabilirsiniz. Varsayılan olarak, bu olay kaynaklarını dinler:  
   
--   [Eşzamanlılık görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md)  
+-   [Eşzamanlılık Görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md)  
   
--   [Görev paralel kitaplığı (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
+-   [Görev Paralel Kitaplığı (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
   
 -   [Veri akışı](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
   
 -   [Paralel LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
   
--   [Eşzamanlılık Çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime)  
+-   [Eşzamanlılık Çalışma Zamanı](/cpp/parallel/concrt/concurrency-runtime)  
   
 -   [Senaryo işaret desteği](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
--   [C++ AMP (C++ hızlandırılmış yoğun paralellik)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
+-   [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
   
  İşaretçileri sekmesindeki kullanabilir [Gelişmiş ayarları](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) çeşitli kaynaklardan işaretçileri eşzamanlılık görselleştiricisi ve, görüntülenen denetlemek için iletişim kutusunu işaretlerin önem ve kategorisine göre filtre uygulayabilirsiniz.  
   
@@ -66,4 +67,4 @@ Eşzamanlılık görselleştiricisi içinde işaretlerinin bir uygulama olaylar�
  [Bayrak işaretleyicileri](../profiling/flag-markers.md)   
  [İleti işaretçileri](../profiling/message-markers.md)   
  [Kapsam işaretleyicileri](../profiling/span-markers.md)   
- [EventSource olaylarını işaretleyici olarak Görselleştirme](../profiling/visualizing-eventsource-events-as-markers.md)
+ [EventSource Olaylarını İşaretleyici Olarak Görselleştirme](../profiling/visualizing-eventsource-events-as-markers.md)

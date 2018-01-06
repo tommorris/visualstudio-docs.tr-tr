@@ -20,11 +20,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: "85"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: af6cb2319ffb851e91ff87d7e998eeb25315e9fc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a8a7f23593e3d4056d1f3469d1d26ff6aed23882
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Kodunuzu Test Etmek için UI Otomasyonunu Kullanma
 Uygulamanız kendi kullanıcı arabirimi (UI) üzerinden sürücü otomatikleştirilmiş testleri olarak bilinen *kodlanmış UI testleri* (CUITs). Bu testler, kullanıcı Arabirimi denetimlerini işlevsel test edilmesini içerir. Bunlar, kullanıcı arabirimiyle dahil olmak üzere tüm uygulama düzgün çalıştığını doğrulamak olanak tanır. Doğrulama veya diğer mantığı kullanıcı arabiriminde, örneğin, bir web sayfasındaki olduğu kodlanmış UI testleri özellikle yararlı olur. Bunlar ayrıca sık varolan el ile testi otomatik hale getirmek için kullanılır.  
@@ -61,7 +62,7 @@ Uygulamanız kendi kullanıcı arabirimi (UI) üzerinden sürücü otomatikleşt
   
     -   [Kullanıcı Arabirimi denetim eylemleri ve özelliklerini kodlama](#actions)  
   
-    -   [Hata ayıklama](#debugging)  
+    -   [Hata Ayıklama](#debugging)  
   
 -   [Sırada ne var?](#VerifyCodeUsingCUITWhatsNext)  
   
@@ -307,13 +308,13 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
     -   **Kodlanmış UI testi Kılavuzu kodlama:**  
   
-        -   [Kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md)  
+        -   [Kodlanmış UI Testinin Anatomisi](../test/anatomy-of-a-coded-ui-test.md)  
   
-        -   [Kodlanmış UI testleri için en iyi yöntemler](../test/best-practices-for-coded-ui-tests.md)  
+        -   [Kodlanmış UI Testleri için En İyi Yöntemler](../test/best-practices-for-coded-ui-tests.md)  
   
-        -   [Birden çok UI eşlemesi bulunan büyük uygulamaları sınama](../test/testing-a-large-application-with-multiple-ui-maps.md)  
+        -   [Birden Çok UI Eşlemesi Bulunan Büyük Uygulamaları Sınama](../test/testing-a-large-application-with-multiple-ui-maps.md)  
   
-        -   [Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+        -   [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
   
 ###  <a name="generatedCode"></a>Oluşturulan kod  
  Seçtiğinizde **kodu oluştur**, birkaç kod parçalarını oluşturulur:  
@@ -461,9 +462,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
  **Özel denetimler için destek ekleyen:** kodlanmış UI Test Çerçevesi olası her UI desteklemez ve test etmek istediğiniz kullanıcı arabirimini desteklemiyor olabilir. Örneğin, hemen kodlanmış UI testi için UI oluşturamazsınız [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Ancak, özel bir denetim destekleyecek kodlanmış UI Test Çerçevesi uzantısı oluşturabilirsiniz.  
   
--   [Denetimlerinizin kodlanmış UI testlerini etkinleştirme](../test/enable-coded-ui-testing-of-your-controls.md)  
+-   [Denetimlerinizin Kodlanmış UI Testlerini Etkinleştirme](../test/enable-coded-ui-testing-of-your-controls.md)  
   
--   [Kodlanmış UI testleri ve Eylem kayıtlarını Microsoft Excel'i desteklemek için genişletme](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)  
+-   [Kodlanmış Kullanıcı Arabirimi Testlerini ve Eylem Kayıtlarını Microsoft Excel'i Desteklemek için Genişletme](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)  
   
  Kodlanmış UI testleri genellikle el ile testleri otomatikleştirmek için kullanılır. Ek yönergeler için bkz: [Visual Studio 2012 - bölüm 5 ile sürekli teslimat için test etme: Sistem testlerini otomatikleştirme](http://go.microsoft.com/fwlink/?LinkID=255196). El ile testleri hakkında daha fazla bilgi için bkz: [&#91; kullanımdan &#93; Microsoft Test Yöneticisi'ni kullanarak el ile Test çalışmaları oluşturma](/devops-test-docs/test_notintoc/creating-manual-test-cases-using-microsoft-test-manager). Otomatikleştirilmiş Sistem testleri hakkında daha fazla bilgi için bkz: [oluşturma otomatikleştirilmiş testleri Microsoft Test Yöneticisi kullanarak](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0).  
   

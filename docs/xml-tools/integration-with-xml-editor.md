@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab405ec541393e2b9aa256b40ccea5cce061cdc3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 5fef7ed581ad39488bc35d9cc46ac211008f5962
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integration-with-xml-editor"></a>XML Düzenleyicisi ile tümleştirme
 XML şema Tasarımcısı XML Düzenleyicisi ile tümleşiktir. Bir XSD dosyası XML Düzenleyicisi'nde değiştirirseniz, değişikliğin yansıtılır [XML Şeması Explorer](../xml-tools/xml-schema-explorer.md). Varsa [grafik görünümü](../xml-tools/graph-view.md) veya [içerik modeli görünümü](../xml-tools/content-model-view.md) açık, değişiklik de var. yansıtılır. Aşağıdaki yollarla XML şema Tasarımcısı ve XML düzenleyicisini arasında gezinebilirsiniz:  
@@ -34,4 +35,4 @@ Bazen XML Düzenleyicisi'ni ve yan yana grafik Tasarımcı kodu görmek yararlı
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif "XSDDesignerWithXMLEditorAndCMV")  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XML şema Gezgini](../xml-tools/xml-schema-explorer.md)
+ [XML Şema Gezgini](../xml-tools/xml-schema-explorer.md)

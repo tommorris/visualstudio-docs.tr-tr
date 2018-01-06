@@ -13,11 +13,12 @@ ms.assetid: 474d5fb3-1049-4b3f-bc6b-7524dbbe1672
 caps.latest.revision: "5"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: b6b4d2e2d2327fdb045eca78f2a322bdc4d69868
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1800bfc9e60d52ea5c06bb94fdb765348a977681
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="statemachine-activity-designer"></a>Durum makinesi etkinlik Tasarımcısı
 <xref:System.Activities.Statements.StateMachine> Etkinlik durumlar koleksiyonunu içerir ve tanıdık durumu makine kip kullanarak da iş akışları modeller.  
@@ -34,4 +35,4 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Akış Çizelgesi](../workflow-designer/flowchart-activity-designer.md)   
- [Denetim akışı](../workflow-designer/control-flow-activity-designers.md)
+ [Denetim Akışı](../workflow-designer/control-flow-activity-designers.md)

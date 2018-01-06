@@ -19,11 +19,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c7992f36f82d7caf56b09b0f6887eed363b6665
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6d732f16d6794fbe59dd6f67fa904fcee916ce69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>İzlenecek Yol: Word İçin İlk Belge Düzeyi Özelleştirmeyi Oluşturma
   Bu tanıtıcı kılavuz Microsoft Office Word için belge düzeyi özelleştirme oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler, yalnızca belirli bir belge açık olduğunda kullanılabilir. Belge düzeyi özelleştirme uygulama çapında değişiklik yapmak için kullanamazsınız, örneğin, herhangi bir belge açık olduğunda yeni bir Şerit sekmesi görüntüleme gibi.  
@@ -167,6 +168,6 @@ ms.lasthandoff: 10/31/2017
  [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)   
  [Office çözümleri oluşturma](../vsto/building-office-solutions.md)   
  [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)   
- [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)  
+ [Office Proje Şablonlarına Genel Bakış](../vsto/office-project-templates-overview.md)  
   
   

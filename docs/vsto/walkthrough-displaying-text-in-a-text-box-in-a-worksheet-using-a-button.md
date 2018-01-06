@@ -20,11 +20,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b95eb6eeb5f8615f8f471ad33139afa49d5633f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7743a3d1c0548b444343b3dc96b25eabac4ac951
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>İzlenecek Yol: Düğme Kullanarak Çalışma Sayfasındaki Metin Kutusunda Metin Görüntüleme
   Bu kılavuz, Microsoft Office Excel çalışma sayfaları ve Visual Studio'da Office geliştirme araçlarını kullanarak Excel projeleri oluşturma düğmeleri ve metin kutuları kullanma temelleri gösterir. Sonuç tamamlanmış bir örnek görmek için Excel bkz [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -117,6 +118,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Windows Forms denetimleri Office belgelerine ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Excel kullanarak izlenecek yollar](../vsto/walkthroughs-using-excel.md)   
- [Office belgelerindeki Windows Forms denetimleri sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Office Belgelerindeki Windows Forms Denetimleri Sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

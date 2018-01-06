@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de361711234404e8b83e28aa1875b3549039bce0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 447fa8749958a3fa2b65a6ef7eb878b906170e6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Nasıl yapılır: Bir Ana Sayfa veya Temayı İçeri Aktarma
   Sayfalar, SharePoint sitesinde tutarlı bir görünüm oluşturma ve ana sayfalar ve Temalar kullanma verebilirsiniz. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Bu öğeler için şablonlar sağlamaz, ancak bunları SharePoint Tasarımcısı'nda oluşturabilir ve bunları almak [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Daha fazla bilgi için bkz: [yapı taşı: sayfaları ve kullanıcı arabirimi](http://go.microsoft.com/fwlink/?LinkID=182095) Microsoft Web sitesinde.  
@@ -97,6 +98,6 @@ ms.lasthandoff: 10/31/2017
  [Ana sayfalar](http://go.microsoft.com/fwlink/?LinkId=184955)   
  [Mevcut bir SharePoint sitesinden öğeleri içeri aktarma](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [SharePoint için sayfa oluşturma](../sharepoint/creating-pages-for-sharepoint.md)   
- [Çözümde dosyaları eklemeyi modüllerini kullanma](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
+ [Çözüme Dosyaları Dahil Etmek için Modül Kullanma](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
   
   

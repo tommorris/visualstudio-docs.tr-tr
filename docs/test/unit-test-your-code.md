@@ -15,11 +15,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: "62"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 7d4b3634f651cd8fc0ebc9c2e5254914a62e3771
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: a60e3236769cbaf35a9b232629834a8b8d52a852
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-test-your-code"></a>Kodunuza Birim Testi Uygulama
 Birim testleri mantık hataları sınıflarda yöntemler aramak için hızlı bir şekilde geliştiriciler ve sınayıcılar vermek [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)], ve [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)] projeleri.  
@@ -52,7 +53,7 @@ Birim testleri mantık hataları sınıflarda yöntemler aramak için hızlı bi
 |**Yük testleri için birim testleri kullanarak stres ve Performans Analizi gerçekleştirebilir:** bir yük testi oluşturma ve yalıtmak performans ve stres uygulamanızdaki sorunları gidermek için birim testleri ekleyin. **Not:** oluşturma ve yük testleri kullanarak Visual Studio Enterprise gerektirir.|-   [Oluşturma ve yük testlerini düzenleme](http://msdn.microsoft.com/en-us/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [Nasıl yapılır: Web performans testleri ve birim testleri bir yük testi senaryosuna ekleme](http://msdn.microsoft.com/en-us/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [Nasıl yapılır: bir Yük Testi Senaryosundan Web testleri ve birim testleri kaldırma](http://msdn.microsoft.com/en-us/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|  
 |**Kalite kapıları ayarlama ve:** kod kod kalitesini sağlamaya yardımcı olmak için iade önce testleri çalıştırmak zorlamak için kalite kapıları oluşturabilirsiniz.|-   [Kalite kapıları ayarlama ve uygulama](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
 |**Birim test türü genişletmek:** Birim Test çerçevesi içinde olmayabilir testlerinizi işlevselliği ekleyebilirsiniz. Örneğin, bir testin normal kullanıcı olarak çalışıp çalışmayacağını belirten bir test özelliği ekleyebilirsiniz. Veya çerçeveyi, bir yönteme satır öznitelikleri eklemek ve bu satırda bulunan verileri testin içinde kullanmak üzere genişletebilirsiniz.|Birim testi çerçevesi genişletme örnek kod için aşağıdakilere bakın [Microsoft Web sitesini](http://go.microsoft.com/fwlink/?LinkId=185591).|  
-|**Testi seçenekleri ayarlayın:** Örneğin, test sonuçları nerede depolanacağını belirtebilirsiniz.|[.Runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
+|**Testi seçenekleri ayarlayın:** Örneğin, test sonuçları nerede depolanacağını belirtebilirsiniz.|[.runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler  
  [Microsoft Test Yöneticisi'nde test sonuçlarını gözden geçirme](http://msdn.microsoft.com/en-us/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  

@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 34424ae13a47008eaefa3634f2bf25d31daf285e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ccfae6292f696fa7c0951595a9baab123c81149
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Kod Parçacıkları İçin En İyi Uygulamalar
 Kod parçacığı kodda bir şeyler yalnızca en temel yolu gösterir. Çoğu uygulama için kod uygulama uyacak şekilde değiştirilmesi gerekir.  
@@ -69,4 +70,4 @@ Kod parçacığı kodda bir şeyler yalnızca en temel yolu gösterir. Çoğu uy
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Basic IntelliSense kodu parçacıkları](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)   
  [Uygulamalarının güvenliğini sağlama](../ide/securing-applications.md)   
- [Kod parçacıkları](../ide/code-snippets.md)
+ [Kod Parçacıkları](../ide/code-snippets.md)

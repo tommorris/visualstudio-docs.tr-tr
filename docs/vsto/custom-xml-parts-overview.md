@@ -28,11 +28,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5891cb7aa85012bbf99b1dd2e35b86ba3c263790
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 735660c3af1c0a8792a35981788b70f4a79d55b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-xml-parts-overview"></a>Özel XML Bölümlerine Genel Bakış
   Bazı Microsoft Office uygulamaları için belgelerde XML verileri eklenebilir. XML verilerini bir belgede katıştırma veriler adlı bir *özel XML parçaları*.  
@@ -70,9 +71,9 @@ ms.lasthandoff: 10/31/2017
   
  Visual Studio kullanarak özel bir XML parçasına oluşturmak için yeni bir ekleme <xref:Microsoft.Office.Core.CustomXMLPart> için <xref:Microsoft.Office.Core.CustomXMLParts> belge koleksiyonu. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Nasıl yapılır: belge düzeyi özelleştirmelerine özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
+-   [Nasıl Yapılır: Belge Düzeyi Özelleştirmelerine Özel XML Bölümleri Ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
--   [Nasıl yapılır: VSTO eklentilerini kullanarak belgelere özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
+-   [Nasıl Yapılır: VSTO Eklentilerini Kullanarak Belgelere Özel XML Bölümleri Ekleme](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
   
 ### <a name="modifying-xml-parts-without-starting-the-office-application"></a>Office uygulaması başlatmadan XML parçalarını değiştirme  
  Ekleyin veya özel bir XML parçasına Excel, PowerPoint ve Word başlatmadan değiştirin. Microsoft Office uygulamaları, bir sunucu gibi yüklü olmayan bir bilgisayarda bir belgedeki XML verileri çalışmak istiyorsanız kullanışlıdır.  
@@ -87,6 +88,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: belge düzeyi özelleştirmelerine özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)   
  [Nasıl yapılır: VSTO eklentilerini kullanarak belgelere özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [İçerik denetimleri](../vsto/content-controls.md)   
- [İzlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
+ [İzlenecek Yol: İçerik Denetimlerini Özel XML Bölümlerine Bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
   
   

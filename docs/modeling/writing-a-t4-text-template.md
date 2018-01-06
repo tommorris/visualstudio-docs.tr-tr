@@ -15,11 +15,12 @@ caps.latest.revision: "43"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c5e60ada4489e12312df92ecceab8bc268a6cfac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c37e092f2caa39807760bd04a22587d684a6998d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-a-t4-text-template"></a>T4 Metin Şablonu Yazma
 Metin şablonu ondan oluşturulan metni içerir. Örneğin, bir web sayfası oluşturan bir şablonu içerir "\<html >..." ve diğer tüm standart bölümleri HTML sayfası. Şablona eklenmiş olan *denetim blokları*, program kod parçalarını olduğu. Denetim blokları değişen değerler sağlayın ve koşullu ve yinelenen metni bölümlerini sağlar.  
@@ -273,9 +274,9 @@ Content of MyFile.txt is:
   
 |Görev|Konu|  
 |----------|-----------|  
-|Bir şablon yazma.|[T4 metin şablonları yazma yönergeleri](../modeling/guidelines-for-writing-t4-text-templates.md)|  
+|Bir şablon yazma.|[T4 Metin Şablonları Yazma Yönergeleri](../modeling/guidelines-for-writing-t4-text-templates.md)|  
 |Metin program kodunu kullanarak oluşturun.|[Metin şablonu yapısı](../modeling/writing-a-t4-text-template.md)|  
-|Dosyaları oluşturmak bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözümü.|[T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
-|Metin oluşturma dışında çalıştırmak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[TextTransform yardımcı programı ile dosyalar oluşturma](../modeling/generating-files-with-the-texttransform-utility.md)|  
-|Verilerinizi bir etki alanına özgü dil biçiminde dönüştürün.|[Bir etki alanına özgü dili kod oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)|  
-|Kendi veri kaynaklarını dönüştürmek için yönerge işlemcileri yazma.|[T4 metin dönüştürmeyi özelleştirme](../modeling/customizing-t4-text-transformation.md)|
+|Dosyaları oluşturmak bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözümü.|[T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
+|Metin oluşturma dışında çalıştırmak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[TextTransform Yardımcı Programı ile Dosya Oluşturma](../modeling/generating-files-with-the-texttransform-utility.md)|  
+|Verilerinizi bir etki alanına özgü dil biçiminde dönüştürün.|[Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)|  
+|Kendi veri kaynaklarını dönüştürmek için yönerge işlemcileri yazma.|[T4 Metin Dönüştürmeyi Özelleştirme](../modeling/customizing-t4-text-transformation.md)|

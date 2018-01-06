@@ -19,11 +19,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7c45d25aeb548b45e032d09eb99cb289d0e2933
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 90377ffe3e8d8c69ba94730defc542d84753aa22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Nasıl yapılır: Belgelerde Program Aracılığıyla Bulunan Öğeler Arasında Döngü Gerçekleştirme
   <xref:Microsoft.Office.Interop.Word.Find> Sınıfına sahip bir <xref:Microsoft.Office.Interop.Word.Find.Found%2A> döndürür özelliği **true** her Aranan öğe bulundu. Bulunan tüm örneklerini döngü bir <xref:Microsoft.Office.Interop.Word.Range> kullanarak <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> yöntemi.  
@@ -79,6 +80,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: program aracılığıyla arama seçeneklerini ayarlama Word'de](../vsto/how-to-programmatically-set-search-options-in-word.md)   
  [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
  [Nasıl yapılır: program aracılığıyla aramalardan sonra seçimleri geri yükleme](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

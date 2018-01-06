@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cf17377de9a21f52f15b263be07fcacb6966096
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 053b1ea5903675f60d59c3574f982f2461e39e4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---sampling-data"></a>Modüller görünümü - örnekleme verileri
 Profil oluşturma verileri örneklenen modülleri göre gruplandırılmış veri görüntüler performans verileri örnekleme modülleri görünümü. Her modül hiyerarşik bir köküdür. Örneklenen işlevleri modülün modül düğümünün altında listelenir.  
@@ -46,4 +47,4 @@ Profil oluşturma verileri örneklenen modülleri göre gruplandırılmış veri
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Modüller görünümü - örnekleme](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Modüller görünümü - izleme](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Modüller görünümü](../profiling/modules-view-instrumentation-data.md)
+ [Modüller Görünümü](../profiling/modules-view-instrumentation-data.md)

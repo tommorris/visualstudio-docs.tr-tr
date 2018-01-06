@@ -15,11 +15,12 @@ caps.latest.revision: "59"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 45714799a518cefa1edb7164437af7c4a067b0e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4e809363656b94dc4e922d558a57a0848dba46e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Uygulamaları oluşturmak için bir platformdur. Olarak da bilinen MSBuild olduğundan, bu altyapı yapı platformunu nasıl işler ve yazılım derlemeler denetleyen bir proje dosyası için bir XML Şeması sağlar. Visual Studio MSBuild kullanır, ancak Visual Studio bağımlı değil. Proje ya da çözüm dosyanızı MSBuild.exe çağırarak düzenlemek ve ürünleri, Visual Studio yüklü olmayan ortamlarda oluşturun.  
@@ -59,13 +60,13 @@ ms.lasthandoff: 10/31/2017
   
 -   [Proje dosyası](#BKMK_ProjectFile)  
   
-    -   [Özellikleri](#BKMK_Properties)  
+    -   [Özellikler](#BKMK_Properties)  
   
     -   [Öğeleri](#BKMK_Items)  
   
     -   [Görevler](#BKMK_Tasks)  
   
-    -   [Hedefleri](#BKMK_Targets)  
+    -   [Hedefler](#BKMK_Targets)  
   
 -   [Yapı günlükleri](#BKMK_BuildLogs)  
   
@@ -193,20 +194,20 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[İzlenecek yol: sıfırdan MSBuild proje dosyası oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Temel Proje dosyasını artımlı olarak, yalnızca bir metin düzenleyicisi kullanarak oluşturmanız gösterilmektedir.|  
-|[İzlenecek yol: MSBuild kullanma](../msbuild/walkthrough-using-msbuild.md)|MSBuild yapı taşlarını tanıtır ve yazma, yönetmek ve Visual Studio IDE kapatmadan MSBuild projelerine hata ayıklama gösterilmektedir.|  
-|[MSBuild kavramları](../msbuild/msbuild-concepts.md)|MSBuild dört temellerini sunar: özellikler, öğeleri, hedefler ve görevler.|  
+|[İzlenecek Yol: Sıfırdan MSBuild Proje Dosyası Oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Temel Proje dosyasını artımlı olarak, yalnızca bir metin düzenleyicisi kullanarak oluşturmanız gösterilmektedir.|  
+|[İzlenecek Yol: MSBuild Kullanma](../msbuild/walkthrough-using-msbuild.md)|MSBuild yapı taşlarını tanıtır ve yazma, yönetmek ve Visual Studio IDE kapatmadan MSBuild projelerine hata ayıklama gösterilmektedir.|  
+|[MSBuild Kavramları](../msbuild/msbuild-concepts.md)|MSBuild dört temellerini sunar: özellikler, öğeleri, hedefler ve görevler.|  
 |[Öğeleri](../msbuild/msbuild-items.md)|Genel kavramları açıklar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dosya biçimi ve nasıl parçaları bir araya getireceğinizi.|  
-|[MSBuild özellikleri](../msbuild/msbuild-properties.md)|Özellikler ve özellik koleksiyonları tanıtır. Yapılandırmak için kullanılan anahtar/değer çiftlerinin derlemeler özelliklerdir.|  
-|[Hedefleri](../msbuild/msbuild-targets.md)|Belirli bir sırada görevleri gruplandırın ve bölümler komut satırında çağrılacak derleme işleminin etkinleştirmek açıklanmaktadır.|  
+|[MSBuild Özellikleri](../msbuild/msbuild-properties.md)|Özellikler ve özellik koleksiyonları tanıtır. Yapılandırmak için kullanılan anahtar/değer çiftlerinin derlemeler özelliklerdir.|  
+|[Hedefler](../msbuild/msbuild-targets.md)|Belirli bir sırada görevleri gruplandırın ve bölümler komut satırında çağrılacak derleme işleminin etkinleştirmek açıklanmaktadır.|  
 |[Görevler](../msbuild/msbuild-tasks.md)|Bir birim tarafından kullanılan yürütülebilir kod oluşturmayı gösteren [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] atomik yapı işlemleri gerçekleştirmek için.|  
 |[Koşullar](../msbuild/msbuild-conditions.md)|Nasıl kullanılacağı açıklanır `Condition` MSBuild öğenin özniteliği.|  
 |[Gelişmiş kavramlar](../msbuild/msbuild-advanced-concepts.md)|Toplu işleme, Dönüşümlerin, çoklu sürüm desteği ve diğer gelişmiş teknikleri gerçekleştirmek sayısını gösterir.|  
-|[Msbuild'de günlük kaydı](../msbuild/logging-in-msbuild.md)|Derleme olayları, iletileri ve hata günlüğünü açıklar.|  
+|[MSBuild'de Günlük Kaydı](../msbuild/logging-in-msbuild.md)|Derleme olayları, iletileri ve hata günlüğünü açıklar.|  
 |[Ek kaynaklar](../msbuild/additional-msbuild-resources.md)|MSBuild hakkında daha fazla bilgi için topluluk ve Destek kaynakları listeler.|  
   
 ## <a name="reference"></a>Başvuru  
- [MSBuild başvurusu](../msbuild/msbuild-reference.md)  
+ [MSBuild Başvurusu](../msbuild/msbuild-reference.md)  
  Başvuru bilgileri içeren konulara bağlantılar.  
   
  [Sözlük](msbuild-glossary.md) yaygın MSBuild koşulları tanımlar.

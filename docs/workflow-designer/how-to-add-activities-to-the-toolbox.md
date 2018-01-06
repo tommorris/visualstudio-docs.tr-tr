@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 23e042a7ff34163872b3a932b105bc3b452023ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: aff3172f5f01612923e72ad76f85205af0c31a72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Nasıl yapılır: etkinlikler araç kutusuna ekleme
 Etkinlikler eklenebilir **araç** birkaç farklı şekilde, çözümünüzdeki. Bunlardan içinde geçerli projenize ekleme, farklı bir projedeki başvuru veya farklı bir derleme başvurusu.  
@@ -60,4 +61,4 @@ Etkinlikler eklenebilir **araç** birkaç farklı şekilde, çözümünüzdeki. 
 6.  Özel Etkinlik görünür **araç** öğe eklenmeden önce odakta kategorisi altında. Örneğin, varsa **genel** kategori seçilmedi **araç** araç kutusu öğesi eklemeden önce etkinlik altında görünür **genel** kategorisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İş Akışı Tasarımcısı'nı kullanarak](../workflow-designer/using-the-workflow-designer.md)
+ [İş Akışı Tasarımcısını Kullanma](../workflow-designer/using-the-workflow-designer.md)

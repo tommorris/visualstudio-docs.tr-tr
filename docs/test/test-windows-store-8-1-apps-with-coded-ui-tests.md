@@ -11,11 +11,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 9680f9886e4aeaefe8c476b7e9fff46fb3e24182
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: f5df259efedd50e67ee6e8f94203eb4e0ac56c71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>Kodlanmış UI testleriyle Windows UWP uygulamaları sınama
 
@@ -135,7 +136,7 @@ UWP uygulamaları ve XAML tabanlı 8.1 için UI testleri oluşturmak için bu k�
     End Sub  
     ```  
   
-     **Denetimleri**  
+     **Denetimler**  
   
     ```csharp  
     #region Properties  
@@ -324,4 +325,4 @@ Projesi oluşturduktan sonra bir test yazma önceki ile aynı kalır.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
- [Test etmek için UWP denetimleri için benzersiz Otomasyon özelliği ayarlama](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
+ [Test Etme Amacıyla UWP Denetimleri için Benzersiz Otomasyon Özelliği Ayarlama](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

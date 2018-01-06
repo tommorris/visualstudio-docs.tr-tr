@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
-ms.openlocfilehash: 46b831b2c3097b64d130f0cb47eb6150c5b82845
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: ba73e3c53e03bf3d6deb65deea0aabd715fc69fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 iş yükü ve Bileşen kimlikleri
 Visual Studio komut satırını kullanarak yüklemek için veya bağımlılık VSIX bildirim olarak belirtmek için gereksinim duyduğunuz bileşen kimlikleri ve kullanılabilir iş yükü görmek için aşağıdaki tablodaki edition adları'yi tıklatın.
@@ -45,7 +46,7 @@ Birkaç diğer destek seçenekleri şunlardır:
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 * [Visual Studio 2017 için Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)

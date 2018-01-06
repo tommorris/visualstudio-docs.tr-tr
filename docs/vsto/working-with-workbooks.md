@@ -18,25 +18,26 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3d83847341e7689b34edb0a4582225886e5eebd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cfab2572544a89f0f5f353998e68093369d626f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-workbooks"></a>Çalışma Kitaplarıyla Çalışma
   <xref:Microsoft.Office.Tools.Excel.Workbook> Ve <xref:Microsoft.Office.Interop.Excel.Workbooks> sınıfı yöntemleri ve çalışma kitapları ile görevleri gerçekleştirmek için kullandığınız özellikler içerir.  
   
 |Görev|Yordam|  
 |----------|---------------|  
-|Yeni bir çalışma kitabı oluşturun.|[Nasıl yapılır: program aracılığıyla yeni çalışma kitapları oluşturma](../vsto/how-to-programmatically-create-new-workbooks.md)|  
-|Belirtilen bir çalışma kitabını açın.|[Nasıl yapılır: program aracılığıyla çalışma kitaplarını açma](../vsto/how-to-programmatically-open-workbooks.md)|  
-|Belirtilen bir çalışma kitabını kapatın ve değişiklikleri kaydedin.|[Nasıl yapılır: program aracılığıyla çalışma kitaplarını kapatma](../vsto/how-to-programmatically-close-workbooks.md)|  
-|Çalışma kitabı Excel biçimleri veya XML biçiminde kaydedin.|[Nasıl yapılır: çalışma kitaplarını program aracılığıyla kaydetme](../vsto/how-to-programmatically-save-workbooks.md)|  
+|Yeni bir çalışma kitabı oluşturun.|[Nasıl yapılır: Program Aracılığıyla Yeni Çalışma Kitaplarını Açma](../vsto/how-to-programmatically-create-new-workbooks.md)|  
+|Belirtilen bir çalışma kitabını açın.|[Nasıl yapılır: Program Aracılığıyla Çalışma Kitaplarını Açma](../vsto/how-to-programmatically-open-workbooks.md)|  
+|Belirtilen bir çalışma kitabını kapatın ve değişiklikleri kaydedin.|[Nasıl yapılır: Çalışma Kitaplarını Program Aracılığıyla Kapatma](../vsto/how-to-programmatically-close-workbooks.md)|  
+|Çalışma kitabı Excel biçimleri veya XML biçiminde kaydedin.|[Nasıl yapılır: Çalışma Kitaplarını Program Aracılığıyla Kaydetme](../vsto/how-to-programmatically-save-workbooks.md)|  
 |, Geçerli çalışma kitabına veya farklı bir çalışma kitabına odaklanmak.|  
-|[Nasıl yapılır: çalışma kitaplarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-workbooks.md)|  
-|Son kullanılan çalışma kitabı dosya koleksiyonunu alma.|[Nasıl yapılır: program aracılığıyla listesi en son kullanılan çalışma kitabı dosyalarını](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|  
-|Metin dosyaları çalışma kitapları olarak açın.|[Nasıl yapılır: program aracılığıyla metin dosyaları çalışma kitapları olarak açma](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|  
+|[Nasıl yapılır: Çalışma Kitaplarını Program Aracılığıyla Koruma](../vsto/how-to-programmatically-protect-workbooks.md)|  
+|Son kullanılan çalışma kitabı dosya koleksiyonunu alma.|[Nasıl yapılır: Son Kullanılan Çalışma Kitabı Dosyalarını Program Aracılığıyla Listeleme](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|  
+|Metin dosyaları çalışma kitapları olarak açın.|[Nasıl yapılır: Metin Dosyalarını Program Aracılığıyla Çalışma Kitapları Biçiminde Açma](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|  
   
  Excel görevleri ve Excel nesne modeli hakkında daha fazla bilgi için bkz: [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md).  
   
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/31/2017
  [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirme](../vsto/automating-excel-by-using-extended-objects.md)   
  [Çalışma sayfaları ile çalışma](../vsto/working-with-worksheets.md)   
  [Aralıklarla çalışma](../vsto/working-with-ranges.md)   
- [Windows Forms denetimlerini Excel çalışma sayfalarında kullanma](../vsto/using-windows-forms-controls-on-excel-worksheets.md)  
+ [Excel Çalışma Sayfalarında Windows Forms Denetimlerini Kullanma](../vsto/using-windows-forms-controls-on-excel-worksheets.md)  
   
   

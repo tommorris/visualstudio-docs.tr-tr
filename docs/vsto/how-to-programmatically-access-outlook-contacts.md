@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ee2c597c1a3b6a7c068c8206a87195779877461
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 44799a88e0c08999452e5425e3e7d175feb8ec56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Nasıl yapılır: Program Aracılığıyla Outlook Kişilerine Erişme
   Bu örnek soyadları belirtilen arama dizesini içeren tüm kişileri bulur.  
@@ -42,6 +43,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Outlook Kişilerine program aracılığıyla giriş ekleme](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
  [Nasıl yapılır: program aracılığıyla belirli bir kişi arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
  [Nasıl yapılır: program aracılığıyla bir e-posta adresi arama](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)   
- [Nasıl yapılır: Outlook kişilerini program aracılığıyla silme](../vsto/how-to-programmatically-delete-outlook-contacts.md)  
+ [Nasıl yapılır: Outlook Kişilerini Program Aracılığıyla Silme](../vsto/how-to-programmatically-delete-outlook-contacts.md)  
   
   

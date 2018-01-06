@@ -11,11 +11,12 @@ ms.assetid: 1490d6ac-ed56-4d03-95db-c23f23cba70d
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 67302893dbebb65316b9c2aab09f70ddaa3e6567
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9caafd73703478c75d7d91708ddcf5d14139e7fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introduce-a-local-variable-in-visual-basic"></a>Visual Basic'te yerel bir değişken tanıtır
 **Ne:** hemen var olan bir ifade değiştirmek için yerel bir değişken oluşturmanıza olanak sağlar.
@@ -51,4 +52,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Kod oluşturma (Visual Basic)](../code-generation-vb.md)  
-[Önizleme değişiklikleri](../../ide/preview-changes.md) 
+[Değişiklikleri Önizleme](../../ide/preview-changes.md) 

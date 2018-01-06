@@ -11,11 +11,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: "10"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 343935b46b17f876b6bde65d3bd1547069447730
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 65f9a9dd0e07a86ee6a4b883a7318f9add7df3cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Nasıl yapılır: Üçüncü taraf birim testi çerçevelerini yükleme
 Visual Studio Test Gezgini herhangi bir birimi bir bağdaştırıcı arabirimi Explorer geliştirmiştir test çerçevesi çalıştırabilirsiniz. Framework'ün yükleme programı ikilileri yükler ve onu destekleyen diller için Visual Studio Proje şablonları ekler. Şablonu kullanarak bir proje oluşturduğunuzda, framework Test Gezgini ile kaydedilir. Visual Studio çözümü farklı çerçeveler kullanan ve farklı dil hedeflenen birim testi projelerini içerebilir. Test Gezgini tümünü çalışır.  
@@ -59,4 +60,4 @@ Visual Studio Test Gezgini herhangi bir birimi bir bağdaştırıcı arabirimi E
 4.  Aracı için Visual Studio Market'te sayfaya gitmek için sonuçları listesinde bir çerçeve seçin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodunuza birim testi](../test/unit-test-your-code.md)
+ [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)

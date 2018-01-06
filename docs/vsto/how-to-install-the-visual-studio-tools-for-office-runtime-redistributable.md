@@ -18,11 +18,12 @@ caps.latest.revision: "94"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d3439a98a445761a8d357d9b4bef631da034943
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cdd4ab2331bb6e21c126f10258db2e233a533f9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Nasıl Yapılır: Office Çalışma Zamanı Yeniden Dağıtılabilir için Visual Studio Araçları Yükleme
   Office çalışma zamanı için Visual Studio 2010 Araçları, Microsoft Office geliştirici araçları kullanılarak oluşturulan çözümleri çalıştıran her bilgisayara yüklenmelidir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Çalışma zamanı yüklediğinizde otomatik olarak yüklenir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ve Microsoft Office. Daha fazla bilgi için bkz: [Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
@@ -58,6 +59,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
  [Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme](../vsto/how-to-install-office-primary-interop-assemblies.md)   
  [ServerDocument sınıfını kullanarak bir sunucu üzerinde belgeleri yönetme](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)  
+ [Office Çözümünü Dağıtma](../vsto/deploying-an-office-solution.md)  
   
   

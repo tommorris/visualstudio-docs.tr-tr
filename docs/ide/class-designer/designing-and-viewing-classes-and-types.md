@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a08c43dbc6ec14768b0d74cd6fd89ef152b1074e
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 2d589c4f9fabefbc141d96b233c55a1fd9fc10eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Sınıfları ve Türleri Tasarlama ve Görüntüleme (Sınıf Tasarımcısı)
 Tasarım, görselleştirin ve sınıflar ve sınıf tasarımcısında Visual Studio ile kodunuzda diğer türleri yeniden düzenleyin. Sınıf diyagramları oluşturmak ve Visual C# .NET, Visual Basic .NET ya da C++ projenizdeki sınıfları düzenleme, proje yapınızı daha iyi anlamak veya kodunuzu yeniden düzenlemek için kullanın.  

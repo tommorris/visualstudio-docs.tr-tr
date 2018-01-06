@@ -21,11 +21,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ceecad94d3f9bb910f47484e5deab0f20876a0d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cb0ccb9369c3430cf04e7e7c6b62335721e8005f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Belge Düzeyi Çözümlerde Belge Koruması
   Microsoft Office Word ve Microsoft Office Excel koruma özelliklerini belge düzeyi projelerine kullanabilirsiniz. Bu özellikler, korumalı bir belge bölümlerine değişiklik yapmasını yetkisiz kullanıcıların engelleyin.  
@@ -62,6 +63,6 @@ ms.lasthandoff: 10/31/2017
  [Bilgi Hakları Yönetimine ve yönetilen kod uzantılarına genel bakış](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Office belgelerinde parola koruması](../vsto/password-protection-on-office-documents.md)   
  [Nasıl yapılır: kodun kısıtlı izinle belgelerin arkasında çalışmasına izin verme](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)  
+ [Office Çözümleri Tasarlama ve Oluşturma](../vsto/designing-and-creating-office-solutions.md)  
   
   

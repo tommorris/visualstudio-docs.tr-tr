@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa71ec1c6eb8ac50d957782dda02a2c3fb59a3c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4499bd11e60aba81b37f13f5ce95e8a17412e2d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-threads-command"></a>İş Parçacıklarını Listele Komutu
 İş parçacıklarının geçerli programa görüntüler.  
@@ -51,4 +52,4 @@ Debug.ListThreads [index]
  [Visual Studio komutları](../../ide/reference/visual-studio-commands.md)   
  [Komut penceresi](../../ide/reference/command-window.md)   
  [Bul/komut kutusu](../../ide/find-command-box.md)   
- [Visual Studio komut diğer adları](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

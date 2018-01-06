@@ -11,11 +11,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: "28"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 33c6d52536bc5295197c810058e959570c1d0242
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: 8aa1bac1a98d8121dcba30dace22483e4a80e1d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Kodlanmış UI testleriyle Windows UWP ve 8.1 Phone uygulamalarını test etme
 
@@ -151,7 +152,7 @@ Bu kılavuz, mobil cihaz veya Öykünücüler çalıştırılan UWP uygulamalar�
     End Sub  
     ```  
   
-     **Denetimleri**  
+     **Denetimler**  
   
     ```csharp  
     #region Properties  
@@ -388,4 +389,4 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  Microsoft Visual Studio uygulama yaşam döngüsü yönetimi blog: [XAML tabanlı Windows Phone uygulamaları test etmek için kodlanmış UI kullanarak](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)
+ [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)

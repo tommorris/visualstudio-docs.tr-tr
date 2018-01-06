@@ -26,11 +26,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8b61477ae3b588b2aeadf1c9d99618151825f8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3fc67e84ab9519e41c2c8eb8da29025da510bc6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Nasıl yapılır: Yerelleştirilmiş Adlar. Özellikler ve İzinleri Belirtmek için Kaynak Dosyası Kullanma
   Kaynak dosyası kullanarak, yerelleştirilmiş adlar sağlamak, özelliklerini tanımlamak ve iş verileri bağlantı (BDC) modelde tanımlanan izinleri tor nesneler geçerli. Bu bilgileri belirtmek için eklediğiniz bir **iş verileri bağlantı kaynak** içeren bir proje öğesi bir **iş verileri bağlantı modeli** öğesi. Ardından, adlar, özellikler ve izinleri kaynak dosyası için XML düzenleyerek belirtin.  
@@ -58,6 +59,6 @@ ms.lasthandoff: 10/31/2017
  [İş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Nasıl yapılır: bir BDC modeli oluşturma](../sharepoint/how-to-create-a-bdc-model.md)   
  [Nasıl yapılır: bir BDC özelliğine özel bir derlemeyi dahil etme](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
- [İş verilerini SharePoint ile tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)  
+ [İş Verilerini SharePoint ile Tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
   

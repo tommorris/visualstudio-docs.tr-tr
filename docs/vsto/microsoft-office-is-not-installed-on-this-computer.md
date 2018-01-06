@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af9a13a72aed42f46a755520802f8688bc962161
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70329c058146dde9b94713b66dfbd29319250f45
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-office-is-not-installed-on-this-computer"></a>Microsoft Office bu bilgisayarda yüklü değil
   Visual Studio proje türüne karşılık gelen Microsoft Office uygulaması bulunamıyor. VSTO eklenti projesindeki geliştiriyorsanız, bu, hata ayıklama veya projeyi çalıştırın, anlamına gelir. Belge düzeyi projesi oluşturmak çalışıyorsanız, bu proje oluşturulamıyor anlamına gelir.  
@@ -31,6 +32,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
- [Nasıl yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
+ [Nasıl Yapılır: Office Çözümleri Geliştirmek İçin Bilgisayarı Yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
   
   

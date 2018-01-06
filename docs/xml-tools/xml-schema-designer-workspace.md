@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d4a51f3c0491f35f10d8266b4cb06d3de686e021
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a3da032000d5d286e8476673b3c53b993b18303
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-designer-workspace"></a>XML şema Tasarımcısı çalışma alanı
 XML şema Tasarımcısı'nı (XSD Tasarımcı) XML şemaları keşfetmenize yardımcı olan bir grafik aracıdır. Ek olarak [XML Şeması Explorer](../xml-tools/xml-schema-explorer.md)göz atın ve XML Şeması ağaç gidin ve aramalar yapmanıza olanak sağlayan, XSD Tasarımcısı'nı etkinleştirmeniz XSD şemanızı daha ayrıntılı keşfetmek üç görünüm sağlar. Başlangıç XSD Tasarımcısı için başlangıç noktası görünümdür; Başlat görünümünden XSD Tasarımcısı'nın diğer görünümlere gidin ve şema kümenizi Ayrıntılar için bkz. Grafik görünümü ayarlamak genel bir bakış bir şema görmenizi ve şema düğümler arasındaki ilişkileri sağlar. İçerik modeli görünümü ayrıntıları basit ve karmaşık türleri, öğeleri, gruplar, öznitelikleri ve öznitelik grupları dahil olmak üzere, yerel ve genel şema düğümlerinin grafik gösterimi sağlar.  
@@ -47,8 +48,8 @@ XML şema Tasarımcısı'nı (XSD Tasarımcı) XML şemaları keşfetmenize yard
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
--   [Başlangıç görüntüleyin](../xml-tools/start-view.md)  
+-   [Başlangıç Görünümü](../xml-tools/start-view.md)  
   
--   [Grafik görünümü](../xml-tools/graph-view.md)  
+-   [Graf Görünümü](../xml-tools/graph-view.md)  
   
--   [İçerik modeli görünümü](../xml-tools/content-model-view.md)
+-   [İçerik Modeli Görünümü](../xml-tools/content-model-view.md)

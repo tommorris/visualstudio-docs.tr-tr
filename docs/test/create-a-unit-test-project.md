@@ -11,11 +11,12 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: a064d56a0be2acf6000a9e7da770cb9b25d3b65f
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 6294bd85d3a0fe189f0beff5c8a8a91294bd6b1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-unit-test-project"></a>Birim testi projesi oluşturma
 Birim testleri test altındaki kod yapısına genellikle yansıtır. Örneğin, birim testi projesi ürün içinde her kod projesi için oluşturulmuş. Oluşturduğunuz test projesinin üretim kodu olarak aynı çözüme olabilir veya ayrı bir çözümde de olabilir. Test projeleri bir çözümde birden çok birim olabilir.  
@@ -46,7 +47,7 @@ Birim testleri test altındaki kod yapısına genellikle yansıtır. Örneğin, 
   
  Aşağıdaki bölümlerden birine bakın:  
   
--   [Yönetilen kod için Microsoft Birim Test Çerçevesi ile .NET Framework için birim testleri yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
+-   [Yönetilen Kod için Microsoft Birim Testi Çerçevesi ile .NET Framework için Birim Testleri Yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
 -   [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)  
   

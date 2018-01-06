@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48e733a49617b55d2f09f7782c87c9160124ccd6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 00ec00f549198972714e95d9c586b0a3e30f2ffb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overviews-performance-tools"></a>Genel Bakış (performans araçları)
 Bu bölümde kavramsal sağlar ve terminolojisi genel bakışlar için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir uygulama geliştirme altında performans özelliklerini ölçmek için kullanabileceğiniz profil oluşturma araçları.  
@@ -40,7 +41,7 @@ Bu bölümde kavramsal sağlar ve terminolojisi genel bakışlar için [!INCLUDE
  [Kaynak çakışması veri değerlerini anlama](../profiling/understanding-resource-contention-data-values.md)  
  Eşzamanlılık profili oluşturma yöntemi kullandığınızda, bildirilen veri değerleri öğrenin.  
   
- [Performans Gezgini penceresi](../profiling/performance-explorer-window.md)  
+ [Performans Gezgini Penceresi](../profiling/performance-explorer-window.md)  
  Yapılandırmak ve performans oturumlarını başlatmak için kullanılan penceresini açıklar.  
   
  [CPU ve Windows sayaçları](../profiling/cpu-and-windows-counters.md)  

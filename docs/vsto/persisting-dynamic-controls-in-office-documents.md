@@ -23,11 +23,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e78fb90532cf75ca2e0f2a9dc6b6aa9759c75e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8aef9cc040e6a1bc2449e8b0c5b7de91083b98e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="persisting-dynamic-controls-in-office-documents"></a>Office Belgelerinde Dinamik Denetimleri Kalıcı Kılma
   Belge veya çalışma kitabı kaydedilmiş ve kapandığında çalışma zamanında eklenen denetimleri kalıcı değildir. Tam ana bilgisayar denetimleri ve Windows Forms denetimleri için farklı bir davranıştır. Her iki durumda da, kullanıcının belgeyi açana zaman denetimlerin yeniden oluşturması için çözümünüze kod ekleyebilirsiniz.  
@@ -104,6 +105,6 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Office Belgelerine Çalışma Zamanında Denetim Ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)  
   
   

@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5637a449ea40f6e4f910e061c7e2e324c91ae70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c099f73e98542c29718efc4158593da35d333abd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; öğesi (Visual Studio'da Office Geliştirme)
   `appAddin` Öğesinin `vstov4` ad alanı VSTO eklentileri için özelleştirme özgü bilgileri depolar.  
@@ -93,6 +94,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md)   
  [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
   
   

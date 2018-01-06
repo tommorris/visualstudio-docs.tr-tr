@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c81c5f4981c1d6ebbd26cf9abf22b6c4033f8ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 21a7af80b2c371b0f3088d3aa863d76fc55d7ab1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-e-mail-items"></a>Nasıl yapılır: Outlook E-Posta Öğelerine Program Aracılığıyla Dosya Ekleme
   Bu örnek, bir dosya için yeni bir posta öğesi ekler ve Armando Pinto gönderir. Örnek Armando Pinto adında bir kişinin alıcı olarak varolduğunu varsayar.  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
  [Posta öğeleri ile çalışma](../vsto/working-with-mail-items.md)   
  [Nasıl yapılır: program aracılığıyla e-posta Gönder](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
  [Nasıl yapılır: program aracılığıyla Outlook e-posta öğelerinden ekleri kaydetme](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
- [Nasıl yapılır: program aracılığıyla e-posta öğesi oluşturma](../vsto/how-to-programmatically-create-an-e-mail-item.md)  
+ [Nasıl yapılır: Program Aracılığıyla E-posta Öğesi Oluşturma](../vsto/how-to-programmatically-create-an-e-mail-item.md)  
   
   

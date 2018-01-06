@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e763d37cecb35bee3d6b4ace9d5e4f9bf4e3173
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b5cb6b102025591a6ef00ca594657dca511f5b8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resource-contentions-view---contention-data"></a>Kaynak çekişmeleri görünümü - çakışma verileri
 Kaynak çakışması görünümü Çekişme olayları kaynağı olan kaynakları için Çekişme verileri listeler. Kaynağa erişim için başka bir iş parçacığı işlevinde kaynağa özel erişim aldığından beklenecek bir iş parçacığı işlevinde zorlandığında Çekişme olayı oluşur. Her kaynak Çekişme olayları sonuçlandı işlevi yürütme yollarını görüntüler bir çağrı ağacı kök düğümü değil.  

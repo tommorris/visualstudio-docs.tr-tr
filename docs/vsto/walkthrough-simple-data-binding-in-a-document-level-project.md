@@ -21,11 +21,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 847b547aae785d94f8d9025b7b4badf9d8b21075
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 36053a8ef415e35f1244d0e379a49a46ea24f33d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>İzlenecek Yol: Belge Düzeyi Projede Basit Veri Bağlama
   Bu anlatımda bir belge düzeyi projede veri bağlama ile ilgili temel bilgiler gösterilir. Microsoft Office Excel adlandırılmış aralıkta bir SQL Server veritabanı bir tek veri alanına bağlı. İzlenecek yol da tablosundaki tüm kayıtları arasında kaydırma sağlayan denetimlerin nasıl ekleneceğini gösterir.  
@@ -198,6 +199,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)   
- [İzlenecek yol: Belge düzeyi projede karmaşık veri bağlama](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
+ [İzlenecek Yol: Belge Düzeyi Projede Karmaşık Veri Bağlama](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
   
   

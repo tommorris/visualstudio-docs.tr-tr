@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d0346732de89fcc08c0f3604e8a66fa1fd7acdb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e67b1676495b6217a6134bc7e0f3f4cf74b1faf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Modüller görünümü - .NET bellek izleme verileri
 .NET bellek ayırma verileri izleme metodunu kullanarak toplanan modülleri görünümünü profil Çalıştır yürütüldü modüller tarafından bellek ve zamanlama verileri gruplandırır. Profil oluşturma verilerini modülü işlevler için modülü düğümünün altında listelenir.  
@@ -102,4 +103,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Modüller görünümü - örnekleme](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Modüller görünümü](../profiling/modules-view-instrumentation-data.md)   
- [Modüller görünümü](../profiling/modules-view-sampling-data.md)
+ [Modüller Görünümü](../profiling/modules-view-sampling-data.md)

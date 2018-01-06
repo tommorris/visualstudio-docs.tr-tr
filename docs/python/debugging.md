@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: f424770e725e8d8d6ada9e656b77b5563237af99
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 71ab9d5c58ebb76ad158b9f9e66b35b4732c1d4e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debugging-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -30,7 +31,7 @@ Bu konuda:
 
 - [Temel hata ayıklama](#basic-debugging)
 - [Hata ayıklama seçeneklerini proje](#project-debugging-options)
-- [Hata ayıklama etkileşimli penceresi](#the-debug-interactive-window)
+- [Anında ve etkileşimli windows](#immediate-and-interactive-windows)
 
 Ayrıca aşağıdaki senaryoya özgü hata ayıklama konulara bakın:
 
@@ -162,6 +163,7 @@ Varsayılan olarak, hata ayıklayıcı programınızı standart Python başlatı
 | Ortam Değişkenleri | Bu çok satırlı metin kutusunda, form girişlerini ekleyin `NAME=VALUE`. Bu ayar son olarak, var olan tüm genel ortam değişkenlerini ve sonra üstte uygulandığından `PYTHONPATH` ayarlanmış arama yolları ayarına göre bu el ile bu bunlardan herhangi diğer değişkenler geçersiz kılmak için kullanılabilir. |
 
 < a name = "hata ayıklama-etkileşimli-pencere"</a>
+
 ## <a name="immediate-and-interactive-windows"></a>Anında ve etkileşimli windows
 
 Hata ayıklama oturumu sırasında kullanabileceğiniz iki etkileşimli windows vardır: standart Visual Studio komut penceresi ve Python hata ayıklama etkileşimli penceresi.

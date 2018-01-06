@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b90a6ed225e358aa47d91cdacec964b5090dedf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 033d24c2df6e1e483028c6c4ea2d161a9e99a983
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="per-thread-summary-report"></a>Her İş Parçacığı Özet Raporu
 Bu çubuk grafik şu anda görünür zaman aralığı içinde her etkinlik kategorideki görünür her iş parçacığı harcadığı zamanı oranını gösterir. İş parçacığı yürütüyor "Yürütme" anlamına gelir; diğer tüm kategorileri iş parçacığı bir şey için bekliyor anlamına gelir.  
@@ -31,4 +32,4 @@ Bu çubuk grafik şu anda görünür zaman aralığı içinde her etkinlik kateg
  [Bekleme süresi](../profiling/sleep-time.md)   
  [Eşitleme zamanı](../profiling/synchronization-time.md)   
  [UI işleme zamanı](../profiling/ui-processing-time.md)   
- [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)
+ [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

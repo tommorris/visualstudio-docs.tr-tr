@@ -12,11 +12,12 @@ ms.assetid: b435eb39-dc7c-46fa-a91b-6e6dd614f01c
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 2eb863996b430c8473adb751851777c532fcfc89
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 88068cf7da401388ac7d8e72e665e91ef1b958b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Bir laboratuvar ortamı, devops için kullanın
 
@@ -134,7 +135,7 @@ Devam etmeden önce konusunda bilgi sahibi olmanız bazı ek kavramları şunlar
 * [Laboratuvarınızı Planlama](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx) 
 * [Laboratuvarınızı yönetme](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx) 
 * [SCVMM ortamları için ayarlama](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx) 
-* [SCVMM 2008 R2 SCVMM 2012'ye yükseltme](upgrade-scvmm-2008-r2-scvmm-2012.md) 
+* [SCVMM 2008 R2’yi SCVMM 2012’ye yükseltme](upgrade-scvmm-2008-r2-scvmm-2012.md) 
 * [İzinleri yönetme](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx) 
 * [Değişiklik Kurulumu](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx) 
 * [Sorun giderme](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
@@ -148,7 +149,7 @@ Devam etmeden önce konusunda bilgi sahibi olmanız bazı ek kavramları şunlar
   
 ## <a name="see-also"></a>Ayrıca bkz.
   
-* [Yükleme ve test aracılarını yapılandırma](install-configure-test-agents.md)
+* [Test aracılarını yükleme ve yapılandırma](install-configure-test-agents.md)
 * [Visual Studio Laboratuvar Yönetimi Kılavuzu](http://go.microsoft.com/fwlink/?LinkID=230951)  
 * [Test laboratuvar ortamları yönetme](http://go.microsoft.com/fwlink/?LinkID=252614)  
 * [Visual Studio devops + Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=254496)  

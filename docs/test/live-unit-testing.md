@@ -11,11 +11,12 @@ helpviewer_keywords:
 ms.assetid: 5b51fb96-94f4-4926-92b9-262156c05b85
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 38cf43429b5078de100c963df133ea1ba11c8717
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: af8e902f4d56d18097e99a06f76958d3bf2fcff2
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Dinamik birim ile Visual Studio 2017 testi
 
@@ -117,7 +118,7 @@ Kod penceresinde başarılı veya başarısız simgenin üzerine gelerek, o sat�
  
   ![Görüntü](./media/lut-failedinfo.png) 
 
-Sağlama adları ve test sonucu, araç ipucu sağlar ek olarak, testleri yeniden çalıştırarak yanı hata ayıklayıcı kullanarak test kümesini çalıştırın. Bir veya daha fazla testleri ipucunda seçerseniz, çalıştırmak veya yalnızca bu testleri hata ayıklama. Bu kod penceresi ayrılmak zorunda kalmadan testlerinizi ayıklamanızı sağlar. Hata ayıklayıcı yürütüldüğünde, zaten ayarladınız, kesme Gözlemleme ek olarak hata ayıklama sırasında program yürütme duraklatır bir [ `Assert` ](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) beklenmeyen bir sonuç döndürür yöntemi. 
+Sağlama adları ve test sonucu, araç ipucu sağlar ek olarak, testleri yeniden çalıştırarak yanı hata ayıklayıcı kullanarak test kümesini çalıştırın. Bir veya daha fazla testleri ipucunda seçerseniz, çalıştırmak veya yalnızca bu testleri hata ayıklama. Bu kod penceresi ayrılmak zorunda kalmadan testlerinizi ayıklamanızı sağlar. Hata ayıklayıcı yürütüldüğünde, zaten ayarladınız, kesme Gözlemleme ek olarak hata ayıklama sırasında program yürütme duraklatır bir [ `Assert` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) beklenmeyen bir sonuç döndürür yöntemi. 
 
 Başarısız bir test ipucunda üzerine geldiğinizde, bu hata hakkında ek bilgi sağlamak için aşağıdaki resimde gösterildiği gibi genişletir. Başarısız test ipucunda çift tıklarsanız, doğrudan gidebilirsiniz.
 

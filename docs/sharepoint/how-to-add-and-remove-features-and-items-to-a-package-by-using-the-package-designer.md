@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9da26de3b5a3a71927e7518ff126a7186c01d7e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 37dfee49fe18fda276c1cde27bd79bcae1a13f48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Nasıl yapılır: Paket Tasarımcısını Kullanarak Bir Pakete Özellikler ve Öğeler Ekleme ve Kaldırma
   Bir SharePoint çözüm oluşturduğunuzda, Visual Studio çözümü paketinde varsayılan SharePoint özelliklerini ekler. Son dağıtım öncesinde ekleyin ve SharePoint Proje öğeleri ve SharePoint paketi değiştirmek için özellikler kaldırın.  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SharePoint çözüm paketleri oluşturma](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Nasıl yapılır: bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Nasıl yapılır: Bir SharePoint Çözüm Paketini Özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [Nasıl yapılır: bir paket oluşturun](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)  
   
   

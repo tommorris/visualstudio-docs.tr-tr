@@ -22,11 +22,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e8102cf760020b5584458ebd77052684a1b4af2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cffce10e443b2605e29d800cb271c4a96dc70359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlook-object-model-overview"></a>Outlook Nesne Modeline Genel Bakış
   Microsoft Office Outlook için VSTO eklentileri geliştirmek için Outlook nesne modeli tarafından sağlanan nesnelerle etkileşim kurabilirsiniz. Outlook nesne modeli sınıfları ve kullanıcı arabirimi öğelerini temsil eden arabirimler sağlar. Örneğin, <xref:Microsoft.Office.Interop.Outlook.Application> nesnesini temsil eden tüm uygulama <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> nesnesi, e-posta veya diğer öğeleri içeren bir klasörü temsil eder ve <xref:Microsoft.Office.Interop.Outlook.MailItem> nesnesi, bir e-posta iletisini temsil eder.  
@@ -138,9 +139,9 @@ ms.lasthandoff: 10/31/2017
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Kişi öğeleriyle çalışma](../vsto/working-with-contact-items.md)|Kişilerle görevlerin nasıl gerçekleştirileceği Göster konuları sağlar.|  
-|[Posta öğeleri ile çalışma](../vsto/working-with-mail-items.md)|Posta öğeleri görevleri gerçekleştirmek nasıl Göster konuları sağlar.|  
-|[Klasörlerle çalışma](../vsto/working-with-folders.md)|Klasörlerle görevlerin nasıl gerçekleştirileceği Göster konuları sağlar.|  
-|[Takvim öğeleriyle çalışma](../vsto/working-with-calendar-items.md)|Takvim öğeleri görevleri gerçekleştirmek nasıl Göster konuları sağlar.|  
-|[Nasıl yapılır: program aracılığıyla geçerli Outlook öğesini belirleme](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Görünen adı geçerli klasörde ve seçili öğe hakkında bazı bilgiler gösterilmektedir.|  
+|[Kişi Öğeleriyle Çalışma](../vsto/working-with-contact-items.md)|Kişilerle görevlerin nasıl gerçekleştirileceği Göster konuları sağlar.|  
+|[Posta Öğeleriyle Çalışma](../vsto/working-with-mail-items.md)|Posta öğeleri görevleri gerçekleştirmek nasıl Göster konuları sağlar.|  
+|[Klasörlerle Çalışma](../vsto/working-with-folders.md)|Klasörlerle görevlerin nasıl gerçekleştirileceği Göster konuları sağlar.|  
+|[Takvim Öğeleriyle Çalışma](../vsto/working-with-calendar-items.md)|Takvim öğeleri görevleri gerçekleştirmek nasıl Göster konuları sağlar.|  
+|[Nasıl yapılır: Program Aracılığıyla Geçerli Outlook Öğesini Belirleme](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Görünen adı geçerli klasörde ve seçili öğe hakkında bazı bilgiler gösterilmektedir.|  
   

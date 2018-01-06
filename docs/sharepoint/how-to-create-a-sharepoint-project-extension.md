@@ -19,11 +19,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b21b7291b23376f95e9c0d70a43e6bb69cd29a2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e673d084b2327c345febca57c608174c83816796
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>Nasıl yapılır: Bir SharePoint Proje Uzantısı Oluşturma
   Visual Studio'da açık olan herhangi bir SharePoint Proje işlevselliği eklemek istediğinizde bir proje uzantısı oluşturma. Daha fazla bilgi için bkz: [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md).  
@@ -207,4 +208,4 @@ Bu örnek ileti yazmak için SharePoint Proje hizmeti kullanır **çıkış** pe
  [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Nasıl yapılır: bir kısayol menü öğesini SharePoint projelerine ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [Nasıl yapılır: SharePoint projelerine özellik ekleme](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [İzlenecek yol: bir SharePoint proje uzantısı oluşturma](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  
+ [İzlenecek Yol: SharePoint Proje Uzantısı Oluşturma](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  

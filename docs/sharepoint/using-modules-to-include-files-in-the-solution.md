@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 484ae234839876922b6c04767d67ed56f85a108d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f340d0a8c713aedc6ee74aa598c7170495ac8c01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>Çözüme Dosyaları Dahil Etmek için Modül Kullanma
   SharePoint server gibi yeni ana sayfalar kendi dosya türü ne olursa olsun dosyaları dağıtmak istediğinizde zamanlar olabilir. Bunu yapmak için kullanabileceğiniz *modülleri* (ile karıştırılmamalıdır [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] kod modülleri). Modüller, bir SharePoint çözüm dosyalarında kapsayıcılardır. Çözüm dağıtıldığında, modül dosyalarında SharePoint sunucusunda belirtilen klasörlerine kopyalanır.  
@@ -65,6 +66,6 @@ ms.lasthandoff: 10/31/2017
  [nasıl yapılır: bir dosya sağlama](http://go.microsoft.com/fwlink/?LinkID=144271)   
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)   
  [SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [SharePoint Çözümlerini Paketleme ve Dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

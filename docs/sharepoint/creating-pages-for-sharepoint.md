@@ -22,11 +22,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bef1fce26bbd9ea57073273f462ec484a46a647b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7baa368e34b7b721e7b41c617c6ce6e89bb5f980
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-pages-for-sharepoint"></a>SharePoint için Sayfa Oluşturma
   Uygulama sayfaları, site sayfaları, ana sayfalar ve sayfa düzenleri bir SharePoint sitesinin oluşturabilirsiniz.  
@@ -68,8 +69,8 @@ ms.lasthandoff: 10/31/2017
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[SharePoint için uygulama sayfaları oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md)|Uygulama sayfaları eklemeyi açıklar: bir SharePoint ana sayfa ile birleştirilmiş .aspx içeriği.|  
-|[Nasıl yapılır: uygulama sayfası oluşturma](../sharepoint/how-to-create-an-application-page.md)|Bir SharePoint sitesinde çalıştırmak ASP.NET sayfalarının nasıl oluşturulacağını gösterir.|  
-|[İzlenecek yol: SharePoint uygulama sayfası oluşturma](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Tasarımı ve hata ayıklama bir SharePoint sitesi için bir ASP.NET Web sayfası gösterilir.|  
+|[SharePoint için Uygulama Sayfaları Oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md)|Uygulama sayfaları eklemeyi açıklar: bir SharePoint ana sayfa ile birleştirilmiş .aspx içeriği.|  
+|[Nasıl yapılır: Uygulama Sayfası Oluşturma](../sharepoint/how-to-create-an-application-page.md)|Bir SharePoint sitesinde çalıştırmak ASP.NET sayfalarının nasıl oluşturulacağını gösterir.|  
+|[İzlenecek Yol: SharePoint Uygulama Sayfası Oluşturma](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Tasarımı ve hata ayıklama bir SharePoint sitesi için bir ASP.NET Web sayfası gösterilir.|  
   
   

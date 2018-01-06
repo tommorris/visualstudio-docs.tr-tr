@@ -20,11 +20,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 1b1575c589cd0d8eec3d4b61a45b84feb207f369
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 521a5239e47ffcab4d93c2cd2a46c30f881b0abd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="move-task"></a>Taşıma Görevi
 Dosyayı yeni bir konuma taşır.  
@@ -34,7 +35,7 @@ Dosyayı yeni bir konuma taşır.
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|`DestinationFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Kaynak dosyaların taşınacağı dosyaların listesini belirtir. Bu liste belirtilen listesine bire bir eşleme olması bekleniyor `SourceFiles` parametresi. Diğer bir deyişle, belirtilen ilk dosya `SourceFiles` belirtilen ilk konumuna taşınır `DestinationFiles`, vb..|  
+|`DestinationFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Kaynak dosyaların taşınacağı dosyaların listesini belirtir. Bu liste belirtilen listesine bire bir eşleme olması bekleniyor `SourceFiles` parametresi. Diğer bir deyişle, belirtilen ilk dosya `SourceFiles` belirtilen ilk konumuna taşınır `DestinationFiles`, vb.|  
 |`DestinationFolder`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Dosyaları taşımak istediğiniz dizini belirtir.|  
 |`MovedFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Başarıyla taşındı öğeleri içerir.|  
 |`OverwriteReadOnlyFiles`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, salt okunur dosyalar işaretlenmiş olsa bile dosyaların üzerine yazar.|  

@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 43a55a8873fa10fb31db89364c50e084cd72fb5c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 041c63d45e70305495fd18ed595a31eee6772389
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dowhile-activity-designer"></a>DoWhile etkinlik Tasarımcısı
 <xref:System.Activities.Statements.DoWhile> Etkinlik yürütür içinde yer alan etkinlik kendi <xref:System.Activities.Statements.DoWhile.Body%2A> en az bir kez için belirtilen bir koşulu değerlendirir kadar **false**. Sıfır veya daha fazla kez kullanım yürütülecek döngü gövdesinde yer alan etkinlik gerekiyorsa <xref:System.Activities.Statements.While> etkinlik yerine.  
@@ -31,4 +32,4 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [While](../workflow-designer/while-activity-designer.md)   
- [Denetim akışı](../workflow-designer/control-flow-activity-designers.md)
+ [Denetim Akışı](../workflow-designer/control-flow-activity-designers.md)

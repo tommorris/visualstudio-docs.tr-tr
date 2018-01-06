@@ -19,11 +19,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f10b0ed77dc9d5f97b6fc2fc4f218c86dafee41
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e1729a7921f72df07439261cb054fe30770b24d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>İzlenecek Yol: CheckBox Denetimlerini Kullanarak Çalışma Sayfası Biçimlendirmesini Değiştirme
   Bu kılavuzda biçimlendirmeyi değiştirmek için bir Microsoft Office Excel çalışma sayfasında onay kutuları kullanma hakkında temel bilgileri gösterir. Visual Studio'da Office geliştirme araçları oluşturmak ve kod projenize eklemek için kullanır. Sonuç tamamlanmış bir örnek görmek için Excel bkz [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -168,6 +169,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Excel kullanarak izlenecek yollar](../vsto/walkthroughs-using-excel.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
- [Office belgelerindeki Windows Forms denetimleri sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Office Belgelerindeki Windows Forms Denetimleri Sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

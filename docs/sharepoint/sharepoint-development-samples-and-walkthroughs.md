@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a68df6ecfbf4c511922ae89f67e9323a245432d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 986cf8cd6051a08948fb633168792d127cddc5b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint Geliştirme Örnekleri ve İzlenecek Yollar
   Bu bölümde örnek uygulamalar, örnek kod ve sözdizimi, yapı ve SharePoint çözümleri oluşturmak için kullanılan teknikleri gösteren adım adım talimatları içerir.  
@@ -35,10 +36,10 @@ ms.lasthandoff: 10/31/2017
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[SharePoint geliştirme örnekleri](../sharepoint/sharepoint-development-samples.md)|Visual Studio'da SharePoint geliştirme araçlarını kullanmayı gösteren örnek uygulamalar açıklanmaktadır.|  
-|[SharePoint geliştirme yönergeleri](../sharepoint/sharepoint-development-walkthroughs.md)|Visual Studio'da SharePoint geliştirme araçları giriş sağlayan adım adım kılavuzlar listeler.|  
+|[SharePoint Geliştirme Örnekleri](../sharepoint/sharepoint-development-samples.md)|Visual Studio'da SharePoint geliştirme araçlarını kullanmayı gösteren örnek uygulamalar açıklanmaktadır.|  
+|[SharePoint Geliştirme Yönergeleri](../sharepoint/sharepoint-development-walkthroughs.md)|Visual Studio'da SharePoint geliştirme araçları giriş sağlayan adım adım kılavuzlar listeler.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SharePoint çözümleri oluşturma](../sharepoint/create-sharepoint-solutions.md)  
+ [SharePoint Çözümleri Oluşturma](../sharepoint/create-sharepoint-solutions.md)  
   
   

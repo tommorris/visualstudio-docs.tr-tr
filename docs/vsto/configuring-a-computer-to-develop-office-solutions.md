@@ -16,11 +16,12 @@ caps.latest.revision: "97"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d3e0b354375d6116a1bcc0cc2b0d69ecc2f16b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c07a1ce1434f3ad5f3d8707a4fbaa89695d878f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuring-a-computer-to-develop-office-solutions"></a>Office Çözümleri Geliştirmek İçin Bilgisayarı Yapılandırma
   VSTO eklentileri ve Microsoft Office için özelleştirmeler oluşturmak için Visual Studio, .NET Framework ve Microsoft Office desteklenen bir sürümünü yükleyin.  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
 |--------------|------------------------|  
 |Visual Studio|-   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)]<br />-   [!INCLUDE[vsPreShort](../vsto/includes/vspreshort-md.md)]<br />-   [!INCLUDE[vsUltShort](../vsto/includes/vsultshort-md.md)]**Önemli:** Kurulum sırasında Microsoft Office geliştirici araçları onay kutusunu seçmeniz gerekir.|  
 |.NET Framework|-.NET Framework 4 veya üstü.|  
-|Microsoft Office|<ul><li>Tüm Office Professional Plus Office 365 için de dahil olmak üzere Office suite sürümü.</li><li>Uygulamalardan herhangi biri aşağıdaki tek başına:<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 ve yalnızca Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Project</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) Office bir parçası olarak yüklenmelidir. **Önemli:** Office 2010 uygulamaları Tıklat Çalıştır sürümleri desteklenmez.|  
+|Microsoft Office|<ul><li>Tüm Office Professional Plus Office 365 için de dahil olmak üzere Office suite sürümü.</li><li>Uygulamalardan herhangi biri aşağıdaki tek başına:<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 ve yalnızca Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Proje</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) Office bir parçası olarak yüklenmelidir. **Önemli:** Office 2010 uygulamaları Tıklat Çalıştır sürümleri desteklenmez.|  
   
  Ayrıntılı yükleme adımları için bkz: [nasıl yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).  
   
@@ -53,6 +54,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
  [Nasıl yapılır: Office çalışma zamanı için yeniden dağıtılabilir Visual Studio Araçları'nı yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
  [Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme](../vsto/how-to-install-office-primary-interop-assemblies.md)   
- [Office uygulaması ve proje türüne göre kullanılabilir özellikler](../vsto/features-available-by-office-application-and-project-type.md)  
+ [Office Uygulaması ve Proje Türüne Göre Kullanılabilir Özellikler](../vsto/features-available-by-office-application-and-project-type.md)  
   
   

@@ -20,11 +20,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57e3edf9b8d3f81ebbed6a02f2ff3097321f8074
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d082e03ce0edcbbccd6e3dcd8b22ba00a483d91
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel Klavyesi, Microsoft Office Klavyesi Ayarları, Seçenekler İletişim Kutusu
   Microsoft Office Excel ve Visual Studio hem de kısayol tuşları işler. Aynı kısayol tuş bileşimini farklı komutları Excel ve Visual Studio için bildirimde bulunabilir. Excel Visual Studio belge düzeyi projede açık olduğunda, bir seferde yalnızca bir uygulama kısayol tuşu komutlarını alır. Varsayılan olarak, Visual Studio tüm kısayol tuşu komutlarını alır, ancak Excel belge seçerek odağa sahip olduğunda bunları almak yapabilirsiniz **dinamik klavye düzeni**.  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
  Yalnızca odağa sahip olduğunda visual Studio kısayol tuşu komutlarını alır. Excel odağa sahip olduğunda, Excel tüm kısayol tuşu komutlarını alır. Örneğin, Excel odağa sahipken F5 işlev tuşuna basarsanız, Excel açılır **gitmek için** iletişim kutusu. Visual Studio odağa sahipken F5 tuşuna basarsanız, Visual Studio çözümünüzü hata ayıklama başlatır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft Office Word Klavyesi, Microsoft Office Klavyesi ayarları, Seçenekler iletişim kutusu](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
+ [Microsoft Office Word Klavyesi, Microsoft Office Klavyesi Ayarları, Seçenekler İletişim Kutusu](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
   
   

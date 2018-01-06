@@ -1,40 +1,36 @@
 ---
-title: "Visual Studio Team Services avantajı"
+title: "Visual Studio aboneleri için VSTS"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Learn how to activate the Visual Studio Team Services (VSTS) benefit included in your Visual Studio subscription.
+Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 72579bda7fdaa16c40759f1bc20504f035ffa7c9
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: c2545855f7e5226a1a679d5d8b558f1964fe72b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="activating-the-visual-studio-team-services-vsts-benefit-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde Visual Studio Team Services (VSTS) avantajı etkinleştirme
 
-Çoğu Visual Studio abonelikleri erişim Visual Studio Team Services (VSTS) için içerebilir.  Bu ücretsiz Git repros sağlama IDE'yi ultimate tamamlayıcısı yapar, herhangi bir dil için Çevik planlama araçlarını ve barındırılan oluşturur.  
+VSTS Visual Studio aboneliğinizi etkinleştirmek için kullanılan aynı kimliğini kullanarak oturum açın, biz bu otomatik olarak algılar. Bu abone Portalı'na oturum açtığınızda kullandığınız birincil kimlik ve Visual Studio aboneliğiniz için yapılandırdığınız diğer kimlikleri için çalışır. VSTS hem Microsoft hesaplarını destekler (gibi @outlook.com) ve iş veya Okul (Azure Active kuruluşunuz tarafından yönetilen dizini kullan) hesapları. Her iki birincil ve diğer kimliklerinizi VSTS kullanabilirsiniz ve VSTS hesapları herhangi bir sayıda üye olarak katılabilirsiniz.
 
-VSTS kullanmak için bir hesabınızın olması gerekir. Var olan bir hesapla oturum açın veya yeni bir tane oluşturun.  Yeni bir hesap oluşturmak için:
-1.  Avantajı döşemenin altındaki "Get Started" bağlantısını tıklatın.   
+# <a name="vsts-features-included-by-visual-studio-subscription-level"></a>Visual Studio abonelik düzeyine göre dahil VSTS Özellikler
 
-    ![VSTS avantajı döşeme](_img\vs-vsts\vs-vsts-tile.png)
+Bu VSTS özellikleri aşağıdaki Aboneliklerde bulunmaktadır: 
+- Visual Studio Enterprise: [temel](https://www.visualstudio.com/team-services/compare-features/), [Test Yöneticisi'ni](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web), [Yönetim Paketi](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+- Visual Studio Professional: [temel](https://www.visualstudio.com/team-services/compare-features/)
+- MSDN platformları: [temel](https://www.visualstudio.com/team-services/compare-features/), [Test Yöneticisi](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+- Visual Studio Test Uzmanı: [temel](https://www.visualstudio.com/team-services/compare-features/), [Test Yöneticisi](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 
-2.  VSTS proje siteniz için bir ad girin.  
-3.  Kullanmak isteyip istemediğinizi seçin **Git** veya **Team Foundation sürüm denetimi (TFVC'yi)** projenizi yönetmek için.  Bu, oluşturduğunuz her ekip projesi için kalıcı bir seçim olmakla birlikte, hem TFVC hem de Git ekip projelerini aynı ekip projesi koleksiyonu içinde kullanabilirsiniz.  Emin değil kullanılacak? 
-- Git: Git bir protokoldür sürüm denetim sistemidir. Her geliştiricinin geliştirme makinesinde kaynak deposunun tamamının bir kopyası vardır. Geliştiriciler her değişiklik kümesini geliştirme makinelerinden kaydedebilir ve geçmiş ve karşılaştırma gibi sürüm denetim işlemlerini bir ağ bağlantısı olmadan yapabilir.  [Git hakkında daha fazla bilgi edinin](https://www.visualstudio.com/en-us/docs/git/gitquickstart)
-- TFVC'yi: Team Foundation sürüm denetimi (TFVC'yi) bir merkezi sürüm denetim sistemidir. Genellikle, takım üyeleri Geliştirici makinelerinde bulunan her dosyayı yalnızca bir sürümü vardır. Geçmiş verisi yalnızca sunucuda tutulur. Dallar, yol tabanlıdır ve sunucuda oluşturulur. [Daha fazla bilgi edinin](https://www.visualstudio.com/en-us/docs/tfvc/overview) Team Foundation sürüm denetimi hakkında.
- 
-4.  Tıklatın **değiştirmek ayrıntıları** proje adı, çalışmanızı (Çevik, Scrum, CMMI) düzenlemenize nasıl, projelerinizi barındırmak nerede ve nasıl çalışmanızı başkalarıyla paylaşın seçeneklerini özelleştirmek için.  "Devam et"'i tıklatın.
+Bu VSTS özellikleri tüm Ücretli abonelikler için dahil edilen hem de [Bulut ve standart](https://www.visualstudio.com/vs/pricing/), startup'lar içinde sunulan abonelikler gibi yanı [BizSpark program](https://bizspark.microsoft.com/) ve iş ortakları ile bir [ uzmanlığı](https://partner.microsoft.com/membership/competencies) Microsoft iş ortağı ağı içinde. VSTS için dahil değildir [Microsoft eylem paketi](https://partner.microsoft.com/membership/action-pack), veya [Imagine program](https://imagine.microsoft.com/) Öğrenciler ve akademik kuruluş için ancak herhangi bir VSTS hesabı oluşturabilirsiniz ücretsiz en fazla 5 ekip üyeleri ile.
 
-    ![VSTS avantajı Proje Ayrıntıları](_img\vs-vsts\vs-vsts-project-details.png)
+# <a name="create-your-vsts-account"></a>VSTS hesabınızı oluşturmak
 
-5.  Hesabınızı oluşturmak için biraz zaman alır ve ilk projeniz için belirtilen ad kullanılarak VSTS sayfada daha sonra göreceksiniz.  Artık Visual Studio Team Services'ı kullanmaya başlamak hazırsınız!
+VSTS kullanmak için bir hesap oluşturun ya da başka birinin sahibi olan bir hesap üye olarak eklenecek gerekir. VSTS hesabı oluşturma ücretsizdir ve birden çok VSTS hesabı oluşturabilirsiniz. 
 
-Ayrıca hesabınızın başarıyla oluşturdunuz onaylayan bir e-posta alırsınız.  Ayrıca, hesap URL'si ve oturum açma listelenir ve tercih edilen e-posta adresi.  
-
-![VSTS avantajı Hoş Geldiniz e](_img\vs-vsts\vs-vsts-welcome.png)
+[VSTS için kaydolma](https://docs.microsoft.com/vsts/accounts/index)

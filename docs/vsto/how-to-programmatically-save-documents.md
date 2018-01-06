@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c6a47bae9923d68acc189c53766d5206244f97c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 251522a745ee7b8dc9894a403f09d1a6d3f32793
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-save-documents"></a>Nasıl yapılır: Program Aracılığıyla Belgeleri Kaydetme
   Microsoft Office Word belgeleri kaydetmek için birkaç yolu vardır. Belgenin adını değiştirmeden bir belgeyi kaydedebilir veya yeni bir adla bir belge kaydedebilirsiniz.  
@@ -93,6 +94,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: program aracılığıyla belgeleri kapatma](../vsto/how-to-programmatically-close-documents.md)   
  [Nasıl yapılır: varolan belgeleri program aracılığıyla açma](../vsto/how-to-programmatically-open-existing-documents.md)   
  [Belge konak öğesi](../vsto/document-host-item.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

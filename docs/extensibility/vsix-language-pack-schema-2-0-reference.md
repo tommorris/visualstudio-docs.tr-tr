@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 ms.author: dagriffe
 author: dgriffen
 manager: ghogen
-ms.openlocfilehash: 15c63e446699f254ba33237c264c06c1da802811
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dagriffe
+ms.openlocfilehash: b601653e4b2d309d41f32ff71666567ab860e698
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX Dil Paketi 2.0 şema başvurusu
 
@@ -70,6 +71,6 @@ Dil paketi dosyasının kök öğesinin `<PackageLanguagePackManifest>`, öznite
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[VSIX paket yerelleştirme](../extensibility/localizing-vsix-packages.md)|VSIX paketi için yerelleştirilmiş yükleme desteği sağlamak üzere nasıl gösterir.|
-|[VSIX uzantısı 2.0 şema başvurusu](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX bildirim kullanılarak yüklenmesi Visual Studio uzantısını etkinleştirir .vsix dağıtım dosyasının içeriğini açıklayan **Uzantılar ve güncelleştirmeler** iletişim kutusu.|
-|[Bulma ve Visual Studio uzantıları kullanma](../ide/finding-and-using-visual-studio-extensions.md)|Nasıl kullanılacağını gösterir **Uzantılar ve güncelleştirmeler** yüklemek, kaldırmak, etkinleştirme ve uzantıları devre dışı bırakmak için iletişim kutusu.|
+|[VSIX Paketlerini Yerelleştirme](../extensibility/localizing-vsix-packages.md)|VSIX paketi için yerelleştirilmiş yükleme desteği sağlamak üzere nasıl gösterir.|
+|[VSIX Uzantı Şeması 2.0 Başvurusu](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX bildirim kullanılarak yüklenmesi Visual Studio uzantısını etkinleştirir .vsix dağıtım dosyasının içeriğini açıklayan **Uzantılar ve güncelleştirmeler** iletişim kutusu.|
+|[Visual Studio Uzantıları’nı bulma ve kullanma](../ide/finding-and-using-visual-studio-extensions.md)|Nasıl kullanılacağını gösterir **Uzantılar ve güncelleştirmeler** yüklemek, kaldırmak, etkinleştirme ve uzantıları devre dışı bırakmak için iletişim kutusu.|

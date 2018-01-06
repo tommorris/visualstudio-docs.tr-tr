@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 12597413fccfc9b7b43b322085e36148981be9db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a69000c4e5c97193c911ab3d9e5b97978196ab0c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Nasıl yapılır: Çalışma Kitaplarındaki Çalışma Sayfalarını Program Aracılığıyla Taşıma
   Program aracılığıyla çalışma kitabını çalışma sayfaları diğer çalışma göreli konumunu değiştirebilirsiniz. Taşınmış sayfa için bir konum belirtmezseniz, onu içeren yeni bir çalışma kitabı Excel oluşturur.  
@@ -48,6 +49,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: çalışma sayfalarını program aracılığıyla gizleme](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Nasıl yapılır: program aracılığıyla çalışma kitaplarından çalışma sayfaları silme](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
  [Nasıl yapılır: çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)  
+ [Office Projelerindeki Nesnelere Genel Erişim](../vsto/global-access-to-objects-in-office-projects.md)  
   
   

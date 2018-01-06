@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2aa2383326682dcedbb0888f5b55d34e3894327c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 481d9e577989b1bd75cea22e0faab6d8a1cc64cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="messaging-activity-designers"></a>Etkinlik tasarımcıları Mesajlaşma
 İleti etkinlik tasarımcıları oluşturmak ve göndermek ve almak Mesajlaşma etkinlikleri yapılandırmak için kullanılan [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] iletileri içinden bir [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] uygulama. [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] Beş Mesajlaşma etkinlikleri tanıtır ve [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] bir iş akışı içinde ileti yönetmenizi sağlayan iki yeni Şablon tasarımcıları sağlar. Bu bölümde yer alan ve aşağıdaki tabloda listelenen konular nasıl kullanılacağı hakkında kılavuzluk [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] etkinliği ve Şablon tasarımcıları.  
@@ -50,21 +51,21 @@ ms.lasthandoff: 10/27/2017
 ## <a name="related-sections"></a>İlgili Bölümler  
  Etkinlik tasarımcıları diğer türleri için aşağıdaki konulara bakın.  
   
- [Denetim akışı](../workflow-designer/control-flow-activity-designers.md)  
+ [Denetim Akışı](../workflow-designer/control-flow-activity-designers.md)  
   
- [Etkinlik tasarımcıları kullanma](../workflow-designer/using-the-activity-designers.md)  
+ [Etkinlik Tasarımcılarını kullanma](../workflow-designer/using-the-activity-designers.md)  
   
  [Akış Çizelgesi](../workflow-designer/flowchart-activity-designers.md)  
   
- [Çalışma zamanı](../workflow-designer/runtime-activity-designers.md)  
+ [Çalışma Zamanı](../workflow-designer/runtime-activity-designers.md)  
   
- [Temelleri](../workflow-designer/primitives-activity-designers.md)  
+ [Temel Türler](../workflow-designer/primitives-activity-designers.md)  
   
  [İşlem](../workflow-designer/transaction-activity-designers.md)  
   
- [Koleksiyonu](../workflow-designer/collection-activity-designers.md)  
+ [Koleksiyon](../workflow-designer/collection-activity-designers.md)  
   
- [Hata işleme](../workflow-designer/error-handling-activity-designers.md)  
+ [Hata İşleme](../workflow-designer/error-handling-activity-designers.md)  
   
 ## <a name="external-resources"></a>Dış Kaynaklar  
- [Etkinlik tasarımcıları kullanma](../workflow-designer/using-the-activity-designers.md)
+ [Etkinlik Tasarımcılarını kullanma](../workflow-designer/using-the-activity-designers.md)

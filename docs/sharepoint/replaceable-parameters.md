@@ -22,11 +22,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 80f9770fe0e6a0294ec43e450acc75f55b8ddbe2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ed085a38b77f7c323451e8209902bece3747ddb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replaceable-parameters"></a>Değiştirilebilir Parametreler
   Değiştirilebilir parametreler veya *belirteçleri*, proje dosyalarını gerçek değerleri tasarım zamanında bilinmiyor SharePoint çözüm öğeleri için değerler sağlamak için kullanılabilir. Standart işlevinde benzer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] şablonu belirteçleri. Daha fazla bilgi için bkz: [şablon parametreleri](/visualstudio/ide/template-parameters).  
@@ -113,6 +114,6 @@ ms.lasthandoff: 10/31/2017
  Alternatif olarak, doğrudan .targets dosya uzantısını ekleyebilirsiniz. Ancak, bunu yerel sistemde yalnızca paketlenmiş tüm SharePoint projeleri için uzantıları listesi değiştirir kendi. Sistemdeki tek Geliştirici olduğunda veya projelerinizi çoğunu gerektiriyorsa, bu bağlantı kullanışlı olabilir. Ancak, sisteme özgü olduğundan, bu yaklaşım çok taşınabilir değildir ve bu nedenle, önerilir, tüm uzantılar için proje dosyası yerine ekleyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
+ [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
   
   

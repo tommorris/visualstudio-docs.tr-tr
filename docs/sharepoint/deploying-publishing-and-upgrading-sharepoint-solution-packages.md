@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ae973b0a1fc30f0592f6cb2702df645708ab43f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c1c8757de9b63c3fed75ec7e2ef7f61c89e18226
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-publishing-and-upgrading-sharepoint-solution-packages"></a>SharePoint Çözüm Paketlerini Dağıtma, Yayımlama ve Yükseltme
   Visual Studio'da SharePoint çözüm geliştirmek sonra kendi paketi (.wsp) dosyasını yerel bir SharePoint sunucusuna dağıtma veya bir uzak veya yerel SharePoint sunucuya yayımlayın. Dosyaları dağıtırsanız, paket dosyalarını (.wsp) nasıl dağıtıldığını özelleştirebilirsiniz.  
@@ -70,6 +71,6 @@ ms.lasthandoff: 10/31/2017
  Visual Studio'da SharePoint projesi için herhangi bir değişiklik yaparsanız yayımlandıktan sonra yayımlanan paket değişiklikleri içerecek şekilde yükseltilmesi gerekir. Başarıyla yükseltmek için bir paket benzersiz bir ad olmalıdır. Aynı ada sahip bir paketi bir hata uyarısı - var olan bir uygulama güncelleştirilirken hangi oluşabilir - SharePoint sitesinde bulunursa, dosya adına çakışıyor ve paketi yeniden adlandırın olanak tanır. Yayınlanmasını sonra yeni paketi SharePoint sitesinde görünür ve yükseltilebilir. Yükseltilen paket eski paketi verileri kullanarak çözüm güncelleştirir ve SharePoint çözümde etkinleştirir. Daha fazla bilgi için bkz: [nasıl yapılır: dağıtma, yayımlama ve uzak bir sunucudaki SharePoint çözümlerini yükseltme](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [SharePoint Çözümlerini Paketleme ve Dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

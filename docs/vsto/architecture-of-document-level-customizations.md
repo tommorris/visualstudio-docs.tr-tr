@@ -24,11 +24,12 @@ caps.latest.revision: "86"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b3e40a5a11e681f372b9cb76b43060b87ac900b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cf755c0e90eda2c5478d16305b7540dd86b9ef5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="architecture-of-document-level-customizations"></a>Belge Düzeyi Özelleştirmeler Mimarisi
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]Microsoft Office Word ve Microsoft Office Excel için belge düzeyi özelleştirmeleri oluşturmak için projeleri içerir. Bu konuda belge düzeyi özelleştirmeleri şu yönlerini açıklanmaktadır:  
@@ -152,6 +153,6 @@ ms.lasthandoff: 10/31/2017
  [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)   
  [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)   
  [Özel belge özelliklerine genel bakış](../vsto/custom-document-properties-overview.md)   
- [Belge düzeyi özelleştirmelerinde önbelleğe alınan veriler](../vsto/cached-data-in-document-level-customizations.md)  
+ [Belge Düzeyi Özelleştirmelerdeki Önbelleğe Alınmış Veriler](../vsto/cached-data-in-document-level-customizations.md)  
   
   

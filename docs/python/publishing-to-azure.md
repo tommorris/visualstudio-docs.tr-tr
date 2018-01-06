@@ -12,11 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 1216f0de7ad32d8d76d7016d5a8aa145a110603d
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 043e720d96c021bf510047a8dc7643d057d8982d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Azure uygulama hizmeti yayımlama
 
@@ -28,10 +31,10 @@ Bu konuda:
 
 - [Önkoşulları](#prerequisites)
 - [Bir Azure uygulama hizmeti oluşturma](#create-an-azure-app-service)
-- [Python uygulama hizmetini yapılandırma](#configure-python-on-app-service)
-- [Uygulama hizmeti - Visual Studio 2017 yayımlama](#publish-to-app-service-visual-studio-2017)
-- [Uygulama hizmeti - Visual Studio 2015 yayımlama](#publish-to-app-service-visual-studio-2015)
-- [Uygulama hizmeti uzaktan hata ayıklama](#remote-debugging-on-app-service)
+- [Python uygulama hizmetini yapılandırma](#configure-python-on-azure-app-service)
+- [Uygulama hizmeti - Visual Studio 2017 yayımlama](#publish-to-app-service---visual-studio-2017)
+- [Uygulama hizmeti - Visual Studio 2015 yayımlama](#publish-to-app-service---visual-studio-2015)
+- [Uygulama hizmeti uzaktan hata ayıklama](#remote-debugging-on-azure-app-service)
 
 > [!Note]
 > Visual Studio 2015 ve Visual Studio 2017 arasındaki değişiklikleri arka planda için bkz: blog yayını, [Visual Studio 2017 Azure'da Yayımla](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/).
@@ -50,10 +53,10 @@ Bu kılavuz için Bottle, Flask ve Django çerçevesinde tabanlı bir web uygula
 
 Yayımlama için bir hedef uygulama hizmeti gerektirir. Bu amaç için bir Azure aboneliği kullanarak bir uygulama hizmeti oluşturabilir veya geçici bir siteyi kullanabilirsiniz.
 
-Zaten bir aboneliğiniz yoksa, başlayan bir [ücretsiz tam Azure hesap](https://azure.microsoft.com/en-us/free/), Azure Hizmetleri için geniştir iadeleri içerir. Ayrıca olmayı göz önünde bulundurun [Visual Studio geliştirme Essentials](https://azure.microsoft.com/en-us/pricing/member-offers/vs-dev-essentials/), hangi size $25 kredi tam yıl her ay.
+Zaten bir aboneliğiniz yoksa, başlayan bir [ücretsiz tam Azure hesap](https://azure.microsoft.com/free/), Azure Hizmetleri için geniştir iadeleri içerir. Ayrıca olmayı göz önünde bulundurun [Visual Studio geliştirme Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/), hangi size $25 kredi tam yıl her ay.
 
 > [!Tip]
-> Hesabınızı doğrulamak kredi kartı için Azure ister rağmen kart ücret alınmaz. Ayrıca bir [harcama sınırı](https://docs.microsoft.com/azure/billing/billing-spending-limit) hiçbir ek ücret gerçekleşmesini garanti etmek için ücretsiz kredinizi eşittir. Ayrıca, Azure ücretsiz uygulama hizmeti sonraki bölümde açıklandığı gibi basit bir sınama uygulamaları için idealdir planı katmanı sağlar.
+> Hesabınızı doğrulamak kredi kartı için Azure ister rağmen kart ücret alınmaz. Ayrıca bir [harcama sınırı](/azure/billing/billing-spending-limit) hiçbir ek ücret gerçekleşmesini garanti etmek için ücretsiz kredinizi eşittir. Ayrıca, Azure ücretsiz uygulama hizmeti sonraki bölümde açıklandığı gibi basit bir sınama uygulamaları için idealdir planı katmanı sağlar.
 
 ### <a name="using-a-subscription"></a>Bir aboneliği kullanma
 
@@ -85,7 +88,7 @@ Bir uygulama hizmeti boş bir sahip olduktan sonra Web çalışan uygulama (veya
 
 Azure App Service için Visual Studio 2017 kopyalarından sunucuya projenizdeki yalnızca dosyaları yayımlama. Bu nedenle, sunucu ortamı yapılandırmak için gerekli dosyaları oluşturmak için gereklidir.
 
-1. Visual Studio'da **Çözüm Gezgini**, projeye sağ tıklayın ve seçin **Ekle > Yeni öğe...* . Görüntülenen iletişim kutusunda, "Azure web.config (Fast CGI)" şablonu ve select Tamam seçme. Bu oluşturur bir `web.config` proje kök dosyasında. 
+1. Visual Studio'da **Çözüm Gezgini**, projeye sağ tıklayın ve seçin **Ekle > Yeni öğe...* . Görüntülenen iletişim kutusunda, "Azure web.config (Fast CGI)" şablonu ve select Tamam seçme. Bu oluşturur bir `web.config` proje kök dosyasında.
 
 1. Değiştirme `PythonHandler` girişi `web.config` böylece sunucuda Python yükleme yolunu eşleşir. Örneğin, Python 3.6.1 x64 giriş aşağıdaki gibi görünmelidir:
 
@@ -161,7 +164,7 @@ Azure App Service için Visual Studio 2017 kopyalarından sunucuya projenizdeki 
 
     c. Kudu, uygulamanızın içinde listelenen herhangi bir paket yükseltmek için konsolu `requirements.txt` dosyası: kullanılan aynı Python klasöre gidin `web.config`, gibi `/home/python361x64`, ve açıklandığı gibi aşağıdaki komutu çalıştırın [Kudu konsol](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)bölümü:
 
-    ```
+    ```command
     python -m pip install --upgrade -r /home/site/wwwroot/requirements.txt
     ```
 
@@ -185,9 +188,9 @@ Azure App Service için Visual Studio 2017 kopyalarından sunucuya projenizdeki 
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>Uygulama hizmeti - Visual Studio 2015 için yayımlama
 
 > [!Note] 
-> Bu işlemin kısa bir video bulunabilir [Visual Studio Python eğitmen: bir Web sitesi oluşturmanın](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3m10s). 
+> Bu işlemin kısa bir video bulunabilir [Visual Studio Python eğitmen: bir Web sitesi oluşturmanın](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3m10s).
 
-1. İçinde **Çözüm Gezgini**, proje seçme sağ **Yayımla**. 
+1. İçinde **Çözüm Gezgini**, proje seçme sağ **Yayımla**.
 
 1. İçinde **Yayımla** iletişim kutusunda **Microsoft Azure App Service**:
 
@@ -223,4 +226,4 @@ Visual Studio 2015 hata ayıklama yapılandırmasından yayımladığınızda, i
 
 Visual Studio 2017 ile bunun yerine bu bileşenlerin doğrudan projeye ekleyin. ' Nde projeye sağ **Çözüm Gezgini**seçin **Ekle > Yeni öğe...** ve "Azure uzaktan hata ayıklama web.config" şablonunu seçin. Bir hata ayıklama `web.debug.config` dosya ve `ptvsd` aracı klasörüne projenizde görünür.
 
-Bu dosyalar sunucuya dağıtıldığında (otomatik olarak Visual Studio 2015; sonraki Visual Studio 2017 ile yayımladığınızda), yönergeleri izleyin [Azure uzaktan hata ayıklama](https://docs.microsoft.com/visualstudio/python/debugging-azure-remote).
+Bu dosyalar sunucuya dağıtıldığında (otomatik olarak Visual Studio 2015; sonraki Visual Studio 2017 ile yayımladığınızda), yönergeleri izleyin [Azure uzaktan hata ayıklama](debugging-azure-remote.md).

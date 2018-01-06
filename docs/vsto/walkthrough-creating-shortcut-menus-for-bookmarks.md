@@ -20,11 +20,12 @@ caps.latest.revision: "57"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8dbb248fdaab10aaef6146ae68e36a64b60bb453
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 33f1e0c87130548ea5c2f9ad6ecc69e7ceac3186
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>İzlenecek Yol: Yer İşaretleri İçin Kısayol Menüleri Oluşturma
   Bu anlatımda için kısayol menüleri oluşturma gösterilir <xref:Microsoft.Office.Tools.Word.Bookmark> Word için belge düzeyi özelleştirmelerinde kontrol eder. Bir kullanıcı bir yer işareti metinde tıklattığında bir kısayol menüsü görüntülenir ve metin biçimlendirme için kullanıcı seçenekler sunar.  
@@ -201,6 +202,6 @@ ms.lasthandoff: 10/31/2017
  [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)   
  [Genişletilmiş nesneleri kullanarak Word'ü Otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md)   
  [Yer işareti denetimi](../vsto/bookmark-control.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

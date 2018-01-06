@@ -25,11 +25,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fee085fc97308dd3f62066215b65faede08162e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f8342db2cc5803aaed31a7bda0cc8d8b6ae15e83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automating-excel-by-using-extended-objects"></a>Genişletilmiş Nesneleri Kullanarak Excel'i Otomatikleştirme
   Visual Studio'daki Excel çözümleri geliştirdiğinizde, kullanabileceğiniz *konak öğelerini* ve *konak kontrolü*Çözümlerinizdeki s. Bunlar gibi bazı yaygın olarak kullanılan nesneler Excel nesne modeli (Excel için birincil birlikte çalışma derlemesi tarafından sunulan başka bir deyişle, nesne modeli) genişleten nesnelerdir <xref:Microsoft.Office.Interop.Excel.Worksheet> ve <xref:Microsoft.Office.Interop.Excel.Range> nesneleri. Genişletilmiş nesneler esas alan Excel nesneleri gibi davranır, ancak bunlar nesnelere yeni olaylar ve veri bağlama özellikleri gibi ek özellikler ekleyin.  
@@ -56,13 +57,13 @@ ms.lasthandoff: 10/31/2017
   
  Excel projelerinde kullanabileceğiniz ana bilgisayar denetimleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Grafik denetimi](../vsto/chart-control.md)  
+-   [Grafik Denetimi](../vsto/chart-control.md)  
   
--   [ListObject denetimi](../vsto/listobject-control.md)  
+-   [ListObject Denetimi](../vsto/listobject-control.md)  
   
--   [NamedRange denetimi](../vsto/namedrange-control.md)  
+-   [NamedRange Denetimi](../vsto/namedrange-control.md)  
   
--   [XmlMappedRange denetimi](../vsto/xmlmappedrange-control.md)  
+-   [XmlMappedRange Denetimi](../vsto/xmlmappedrange-control.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: ListObject denetimlerini veri ile doldurma](../vsto/how-to-fill-listobject-controls-with-data.md)   
@@ -79,6 +80,6 @@ ms.lasthandoff: 10/31/2017
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   
  [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
- [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Konak Denetimlerinin ve Konak Öğelerinin Programlama Sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ef9d6e72f7d69e3b71b8ea6f6acea9021be6b2cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 54dddd66a1fb9408117f9f3a02102deb13093bce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>Nasıl yapılır: Çalışma Sayfalarını Program Aracılığıyla Gizleme
   Gösterebilir veya bir çalışma kitabındaki tüm çalışma sayfasını gizleyebilirsiniz. Çalışma sayfası gizlemek için çalışma sayfası konak öğesi kullanın veya çalışma kitabının sayfaları koleksiyonunu kullanarak çalışma sayfasına erişin.  
@@ -59,5 +60,5 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: program aracılığıyla çalışma kitaplarındaki çalışma sayfalarını taşıma](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
  [Nasıl yapılır: çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
- [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)  
+ [Office Projelerindeki Nesnelere Genel Erişim](../vsto/global-access-to-objects-in-office-projects.md)  
   

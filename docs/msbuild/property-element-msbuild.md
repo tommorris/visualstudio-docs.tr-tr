@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e931468b27807a99e86249008718faf4e044cbd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a93b339a062bd2e0c8dc1bf626c4ad109fa2af2a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-element-msbuild"></a>Özellik Öğesi (MSBuild)
 Kullanıcı tanımlı özellik adını ve değerini içerir. Kullanılan her özellik bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bir alt öğesi olarak proje belirtilen bir `PropertyGroup` öğesi.  
@@ -77,5 +78,5 @@ Kullanıcı tanımlı özellik adını ve değerini içerir. Kullanılan her öz
 ```  
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[MSBuild özellikleri](../msbuild/msbuild-properties.md)  
+[MSBuild Özellikleri](../msbuild/msbuild-properties.md)  
  [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24f3760fb328331684e6894954d79675ff27494e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ceabc30399871c7bbe7fef737e7ecbd87187257d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-document-properties-properties-window"></a>XML belge özellikleri, özellik penceresi
 **Özellikleri** penceresi XML Düzenleyicisi'nde etkin belgeyi hakkında temel bilgiler sağlar. Kullanılabilir özellikler şu anda etkin olan XML belgesi türüne bağlı olarak farklılık gösterir.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
  Bu özellik, yalnızca bir XSLT dosyası Düzenleyicisi penceresinde şu anda etkin olduğunda görülebilir.  
   
- **Çıktı**  
+ **Output**  
  Bir XML belgesi dönüşüm sırasında oluşturulan dosya.  
   
  Bir dosya belirtilmezse, varsayılan dosya adı temel alınarak oluşturulur `method` özniteliği `xsl:output` öğesinin dosya uzantısı belirler. Varsayılan dosya geçerli kullanıcının geçici dizinde bulunur.  
@@ -49,4 +50,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML Düzenleyicisi](../xml-tools/xml-editor.md)   
- [XML Düzenleyicisi bileşenleri](../xml-tools/xml-editor-components.md)
+ [XML Düzenleyicisi Bileşenleri](../xml-tools/xml-editor-components.md)

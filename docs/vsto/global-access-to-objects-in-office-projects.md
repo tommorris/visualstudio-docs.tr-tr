@@ -35,11 +35,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c8119ccf0c6715d1c18957fcf8cac92d9872a27e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 12ae527d52e3dad3c60d561ba3bd5fa1171ac48b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Office Projelerindeki Nesnelere Genel Erişim
   Bir Office proje oluşturduğunuzda, Visual Studio adlı bir sınıf otomatik olarak oluşturur. `Globals` projesinde. Kullanabileceğiniz `Globals` projesinde herhangi bir koddan çalışma zamanında birçok farklı proje öğesine erişmek için sınıf.  
@@ -87,6 +88,6 @@ ms.lasthandoff: 10/31/2017
  [Belge konak öğesi](../vsto/document-host-item.md)   
  [Çalışma kitabı konak öğesi](../vsto/workbook-host-item.md)   
  [Çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md)   
- [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)  
+ [Office Çözümlerinde Kod Yazma](../vsto/writing-code-in-office-solutions.md)  
   
   

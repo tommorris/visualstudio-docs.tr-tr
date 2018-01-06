@@ -27,11 +27,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 85881bf35fb89f753eb4110d7b1128b4761a73a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 596e9e6dfa5f7fb464430636f696e37748ccb8eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Visual Studio'da pencere düzenlerini özelleştirme
 Visual Studio'da, konum, boyutu ve çeşitli geliştirme iş akışları için en iyi çalışır pencere düzenlerini oluşturmak için windows davranışını özelleştirebilirsiniz. Düzen özelleştirdiğinizde, IDE, hatırlıyor. Örneğin, yerleştirme konumunu değiştirirseniz **Çözüm Gezgini** ve başka bir bilgisayarda çalışıyorsanız bile Visual Studio, sonraki başlattığınızda Kapat **Çözüm Gezgini** olacaktır aynı konuma yerleştirildi. Ayrıca özel bir düzen bir ad verin ve dosyayı kaydedin ve tek bir komutla düzeni arasında geçiş yapın. Örneğin, düzenlemek için bir düzen ve hata ayıklama için başka bir oluşturun ve bunları kullanarak arasında geçiş **pencere &#124; Pencere düzenini Uygula** menü komutu.  

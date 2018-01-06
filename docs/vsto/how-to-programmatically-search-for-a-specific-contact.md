@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 194c22612a15374f24a263bb3e3ff8fa05137d50
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 00f10e8b3e1e79352080f4dffba983a1c0b485c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-search-for-a-specific-contact"></a>Nasıl yapılır: Program Aracılığıyla Belirli bir Kişi Arama
   Bu örnek ilk ve son ada göre belirli bir kişi için Outlook Kişiler klasörü arar. Bir kişi adlı örnek varsayar **John Evans** Kişiler klasöründe bulunmaktadır.  
@@ -35,6 +36,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kişi öğeleriyle çalışma](../vsto/working-with-contact-items.md)   
- [Başlarken VSTO eklentilerini programlama](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [VSTO Eklentilerini Programlamaya Başlama](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

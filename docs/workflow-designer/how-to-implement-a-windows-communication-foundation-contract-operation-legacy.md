@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 02d6a544b660a110c618bdcb7d3b778fd82ceaaa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8800055878c53adce195bbf7078da410c12128da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Nasıl yapılır: uygulama bir Windows Communication Foundation sözleşmesi işlemi (eski)
 Bu konuda nasıl uygulanacağını açıklar bir [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] sözleşme eski kullanarak işlemini [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] hedefleyen [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -53,4 +54,4 @@ Bu konuda nasıl uygulanacağını açıklar bir [!INCLUDE[indigo1](../workflow-
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlem iletişim kutusu (eski) seçin](../workflow-designer/choose-operation-dialog-box-legacy.md)   
  [Nasıl yapılır: bir WCF sözleşmesi işlemi (eski) çağırma](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
- [Eski iş akışı etkinlikleri](../workflow-designer/legacy-workflow-activities.md)
+ [Eski İş Akışı Etkinlikleri ](../workflow-designer/legacy-workflow-activities.md)

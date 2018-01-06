@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e462696b540617a6b583425682bdfea1da1fb44
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 12b3bed69f8a73a9f50dfce2aae47354dec042e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64 Bit Desteği
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]uygulamalarınızı 64-bit platformları da dahil olmak üzere, farklı platformları hedeflemesi için ayarlamanıza olanak tanır. 64-bit platformu hakkında daha fazla bilgi için destek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], bkz: [64-bit uygulamalar](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  

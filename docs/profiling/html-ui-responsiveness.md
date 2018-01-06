@@ -23,11 +23,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Evrensel Windows uygulamaları, HTML UI yanıtlama hızını çözümleme
 Bu konu, UI yanıtlama hızı Profil Oluşturucusu, Evrensel Windows uygulamaları için kullanılabilir bir performans aracını kullanarak uygulamalarınızı performans sorunlarını yalıtma açıklar.  
@@ -238,7 +239,7 @@ if (performance.mark && performance.measure) {
 -   Seçilen zaman aralığı daha ayrıntılı bir görünümünü seçerek elde **yakınlaştırmak** düğmesi.  
   
 ###  <a name="TimelineDetails"></a>Zaman Çizelgesi ayrıntıları görüntüle  
- Zaman Çizelgesi ayrıntıları grafik UI yanıtlama hızı Profil Oluşturucusu alt bölmesinde görüntülenir. Sıralı ve hiyerarşik en fazla CPU süresi Seçilen süreler sırasında tüketilen olaylar hakkında bilgi sağlar. Bu grafik belirli bir olay ne tetiklenen belirlemenize yardımcı olabilir ve bazı olaylar için olay kaynak koduna nasıl eşlendiğini.. Bu grafik, ayrıca ekranında visual güncelleştirmeleri boyamak için gereken süreyi belirlemenize yardımcı olur.  
+ Zaman Çizelgesi ayrıntıları grafik UI yanıtlama hızı Profil Oluşturucusu alt bölmesinde görüntülenir. Sıralı ve hiyerarşik en fazla CPU süresi Seçilen süreler sırasında tüketilen olaylar hakkında bilgi sağlar. Bu grafik belirli bir olay ne tetiklenen belirlemenize yardımcı olabilir ve bazı olaylar için olay kaynak koduna nasıl eşlendiğini. Bu grafik, ayrıca ekranında visual güncelleştirmeleri boyamak için gereken süreyi belirlemenize yardımcı olur.  
   
  Grafik kullanıcı Arabirimi iş parçacığı çalışma ve çalışma visual güncelleştirmeleri yavaş katkıda bulunabilirsiniz arka plan iş parçacığı üzerinde gösterir. Grafik JavaScript JIT iş, zaman uyumsuz GPU iş, ana bilgisayar işlemi (örneğin, RuntimeBroker.exe ve dwm.exe çalışma) dışında gerçekleşen çalışma veya iş için Windows çalışma zamanı henüz (disk g/ç gibi) profil oluşturma için izleme henüz alanlarını göstermez.  
   
@@ -336,15 +337,15 @@ if (performance.mark && performance.measure) {
 |HTML Ayrıştırma|Yükleme|Yeni HTML içeriğini karşılaşıldı ve içeriği düğümlerin içine ayrıştırma ve içeriği DOM ağacına eklemek için girişimde bulunuldu.|  
 |HTTP isteği|Yükleme|Bir XMLHttpRequest bir HTTP isteği sonuçlanan oluşturuldu veya uzak bir kaynak DOM'da bulunamadı.|  
 |İndirme kurgusal|Yükleme|Sayfanın HTML içeriğini, böylece sonraki HTTP istekleri kaynaklara ilişkin hızlı bir şekilde zamanlanabilir için gerekli kaynakları arama.|  
-|Animasyon çerçeve geri çağırma işlevi|Komut dosyası oluşturma|Tarayıcı başka bir çerçeve işlemeye devam ve bu bir uygulama tarafından sağlanan geri çağırma işlevi tetiklenir.|  
-|DOM olayı|Komut dosyası oluşturma|DOM olayı oluştu ve yürütüldü.<br /><br /> `context` DOM olay özelliği gibi `DOMContentLoaded` veya `click`, parantez içinde görüntülenir.|  
-|Olay dinleyicisi|Komut dosyası oluşturma|Olay dinleyicisi adı ve yürütülür.|  
-|Medya sorgu dinleyicisi|Komut dosyası oluşturma|Kayıtlı medya sorguda, ilişkili listener(s) yürütme sonuçlandı geçersiz kılındı.|  
-|Mutasyon gözlemci|Komut dosyası oluşturma|Bir veya daha fazla olan bir MutationObserver'ın ilişkili geri çağırma yürütme sonuçlandı DOM öğeleri değiştirildi gözlenen.|  
-|Komut dosyası değerlendirme|Komut dosyası oluşturma|Yeni bir komut dosyası öğesi DOM'da bulundu ve ayrıştıracak ve komut dosyası için bir girişimde bulunuldu.|  
-|Zamanlayıcı|Komut dosyası oluşturma|Zamanlanmış bir süreölçer geçen ve bu onun ilişkili geri çağırma işlevini yürütme sonuçlandı.|  
-|Windows çalışma zamanı zaman uyumsuz geri çağırma işlevi|Komut dosyası oluşturma|Tetiklenen bir zaman uyumsuz işlemi bir `Promise` geri çağırma işlevi, bir Windows çalışma zamanı nesnesi tarafından tamamlandı.|  
-|Windows çalışma zamanı olay|Komut dosyası oluşturma|Kayıtlı bir dinleyici Windows çalışma zamanı nesne üzerinde gerçekleşen bir olay tetiklenir.|  
+|Animasyon çerçeve geri çağırma işlevi|Betik Oluşturma|Tarayıcı başka bir çerçeve işlemeye devam ve bu bir uygulama tarafından sağlanan geri çağırma işlevi tetiklenir.|  
+|DOM olayı|Betik Oluşturma|DOM olayı oluştu ve yürütüldü.<br /><br /> `context` DOM olay özelliği gibi `DOMContentLoaded` veya `click`, parantez içinde görüntülenir.|  
+|Olay dinleyicisi|Betik Oluşturma|Olay dinleyicisi adı ve yürütülür.|  
+|Medya sorgu dinleyicisi|Betik Oluşturma|Kayıtlı medya sorguda, ilişkili listener(s) yürütme sonuçlandı geçersiz kılındı.|  
+|Mutasyon gözlemci|Betik Oluşturma|Bir veya daha fazla olan bir MutationObserver'ın ilişkili geri çağırma yürütme sonuçlandı DOM öğeleri değiştirildi gözlenen.|  
+|Komut dosyası değerlendirme|Betik Oluşturma|Yeni bir komut dosyası öğesi DOM'da bulundu ve ayrıştıracak ve komut dosyası için bir girişimde bulunuldu.|  
+|Zamanlayıcı|Betik Oluşturma|Zamanlanmış bir süreölçer geçen ve bu onun ilişkili geri çağırma işlevini yürütme sonuçlandı.|  
+|Windows çalışma zamanı zaman uyumsuz geri çağırma işlevi|Betik Oluşturma|Tetiklenen bir zaman uyumsuz işlemi bir `Promise` geri çağırma işlevi, bir Windows çalışma zamanı nesnesi tarafından tamamlandı.|  
+|Windows çalışma zamanı olay|Betik Oluşturma|Kayıtlı bir dinleyici Windows çalışma zamanı nesne üzerinde gerçekleşen bir olay tetiklenir.|  
 |Atık toplama|GC|Artık kullanımda olan nesneler için bellek toplamak için harcanan süre.|  
 |CSS hesaplama|Stil oluşturma|Hesaplanacak tüm etkilenen öğeler stil özelliklerini gerekli DOM değişiklikler yapıldı.|  
 |Düzen|Stil oluşturma|Boyutu ve/veya yeniden hesaplanması gerektiği için tüm etkilenen öğeler konumunu gerekli DOM değişiklikler yapıldı.|  

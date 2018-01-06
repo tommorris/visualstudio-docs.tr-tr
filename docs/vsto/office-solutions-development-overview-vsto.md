@@ -18,11 +18,12 @@ caps.latest.revision: "69"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c35be3e79aea37b82e9ae46463582a0874e51a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b3d731fd0c38eab376e99e0f143287507042652
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office Çözümleri Geliştirmesine Genel Bakış (VSTO)
   Microsoft Office ön ucu olarak çözümleri için kullanarak, size tanıdık Microsoft Office kullanıcı arabirimleri ve Word, Excel veri çözümleme özelliklerini ve Outlook e-posta yönetimi özelliklerini sözcük işleme özellikleri gibi araçları yararlanabilir . Office uygulamalarını özelleştirmek ve İş süreçlerinizi için gerek duyduğunuz belirli özellikler eklemek için Visual Studio'da çözüm geliştirebilirsiniz. Örneğin, Word düzenlenebilir veya düzenlenemez yapılan önceden var olan bölümleri çıkışı sözleşmeleri çeviren bir sözleşme oluşturucuyu kapatabilirsiniz. Excel ile farklı projeler için özelleştirilmiş bir otomatik bütçe çalışma sayfası oluşturabilirsiniz. Kullanıcılarınızın, karmaşık çözümleri web tabanlı bir mimari kullanırsanız olması çok daha pratik hale getirdiği office çözümlerini çevrimdışı da alabilir.  
@@ -47,11 +48,11 @@ ms.lasthandoff: 10/31/2017
   
  Özelleştirmeler hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Excel için belge düzeyi özelleştirme programlamasına başlama](../vsto/getting-started-programming-document-level-customizations-for-excel.md)  
+-   [Excel İçin Belge Düzeyi Özelleştirme Programlamasına Başlama](../vsto/getting-started-programming-document-level-customizations-for-excel.md)  
   
--   [Word için belge düzeyi özelleştirme programlamasına başlama](../vsto/getting-started-programming-document-level-customizations-for-word.md)  
+-   [Word'de Belge Düzeyinde Özelleştirme Programlamasına Başlama](../vsto/getting-started-programming-document-level-customizations-for-word.md)  
   
--   [Belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md)  
+-   [Belge Düzeyi Özelleştirmeler Mimarisi](../vsto/architecture-of-document-level-customizations.md)  
   
 ### <a name="vsto-add-ins"></a>VSTO eklentileri  
  VSTO eklentileri Microsoft Office uygulama ile ilişkilendirilen bir derlemeyi oluşur. İlişkili uygulama başlatıldığında, uygulama çalışmaya başladıktan sonra kullanıcılar ayrıca VSTO eklentileri yükleyebilir ancak genellikle, VSTO eklenti çalışır. VSTO oluşturduğunuz eklentileri özelliklerinde uygulamanın kendisinin belgeler açık olan bağımsız olarak kullanılabilir.  
@@ -60,9 +61,9 @@ ms.lasthandoff: 10/31/2017
   
  VSTO eklentileri hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Başlarken VSTO eklentilerini programlama](../vsto/getting-started-programming-vsto-add-ins.md)  
+-   [VSTO Eklentilerini Programlamaya Başlama](../vsto/getting-started-programming-vsto-add-ins.md)  
   
--   [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)  
+-   [VSTO Eklentileri Mimarisi](../vsto/architecture-of-vsto-add-ins.md)  
   
 ## <a name="automating-office-applications-by-using-primary-interop-assemblies"></a>Birincil birlikte çalışma derlemeleri kullanarak Office uygulamalarını otomatikleştirme  
  Uygulamanın nesne modeli erişen kodu yazarak çözümünüze program aracılığıyla bir Office uygulaması özelliklerini dahil edebilirsiniz. Nesne modelleri çeşitli özellikleri ve yöntemleri aracılığıyla işlevselliği kullanıma sınıfların düzenleme ' dir. Her Office uygulaması için nesne modeli farklıdır.  
@@ -73,9 +74,9 @@ ms.lasthandoff: 10/31/2017
   
  VSTO Office çözümlerinde PIA kullanma hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)  
+-   [Office Çözümlerinde Kod Yazma](../vsto/writing-code-in-office-solutions.md)  
   
--   [Office birincil birlikte çalışma derlemeleri](../vsto/office-primary-interop-assemblies.md)  
+-   [Office Birincil Birlikte Çalışma Derlemeleri](../vsto/office-primary-interop-assemblies.md)  
   
 ## <a name="running-microsoft-vsto-office-solutions-on-end-user-computers"></a>Son kullanıcı bilgisayarlarında Microsoft VSTO Office çözümlerini çalıştırma  
  VSTO Office çözümü oluşturduğunuzda, dağıtım gereksinimleri geliştirme seçeneklerinizi nasıl etkileyebileceğini göz önünde bulundurun.  
@@ -95,6 +96,6 @@ ms.lasthandoff: 10/31/2017
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
  [Excel için belge düzeyi özelleştirme programlamasına başlama](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Word için belge düzeyi özelleştirme programlamasına başlama](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
- [Başlarken VSTO eklentilerini programlama](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [VSTO Eklentilerini Programlamaya Başlama](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

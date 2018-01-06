@@ -18,11 +18,12 @@ caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7375071522ea59c9c00a5fa94277a3817438d25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1a2659e1c6ebf7bee8320f10549c2a8914010648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>İzlenecek Yol: SharePoint Projeleri için Özel bir Dağıtım Adımı Oluşturma
   Bir SharePoint projesi dağıttığınızda, Visual Studio belirli bir sıraya göre bir dizi dağıtım adımı yürütür. Visual Studio birçok yerleşik dağıtım adımlarını içerir, ancak Ayrıca kendi oluşturabilirsiniz.  
@@ -490,6 +491,6 @@ ms.lasthandoff: 10/31/2017
 4.  Visual Studio (deneysel örneği ve Visual Studio UpgradeDeploymentStep çözüm açıksa örneğini) hem örneklerini kapatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genişletme SharePoint paketleme ve dağıtma](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
+ [SharePoint Paketleme ve Dağıtımını Genişletme](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
   
   

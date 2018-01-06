@@ -22,11 +22,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6661ca48321b1a19b5076beceb435e1f0c798ee0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d14e21189b3410c29efd670c58ffc8934bcb18d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-business-data-connectivity-model"></a>İş Verileri Bağlantı Modeli Oluşturma
   İş verileri bağlantı (BDC) modeli oluşturma veya Visual Studio kullanarak mevcut bir BDC modeli özelleştirebilirsiniz. Her SharePoint Proje yalnızca bir model içerebilir. Daha fazla bilgi için bkz: [iş verilerini SharePoint tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -70,9 +71,9 @@ ms.lasthandoff: 10/31/2017
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: bir BDC modeli oluşturma](../sharepoint/how-to-create-a-bdc-model.md)|Yeni bir BDC modeli oluşturma gösterir.|  
-|[Nasıl yapılır: bir SharePoint projesine mevcut bir BDC modeli dosyası ekleme](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Bir SharePoint projesine mevcut bir model içeri aktarma gösterir.|  
-|[Nasıl yapılır: yerelleştirilmiş adlar, özellikler ve izinleri belirtmek için kaynak dosyası kullanın](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Model bir Web Bölümü veya Web sayfası tarafından tüketilen model meta verileri ile birleştirilen dizeleri sunmak açıklar.|  
-|[Nasıl yapılır: bir BDC özelliğine özel bir derlemeyi dahil etme](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Özelliğine özel bir derlemeyi dahil etme kullanmayı gösterir.|  
+|[Nasıl yapılır: BDC Modeli Oluşturma](../sharepoint/how-to-create-a-bdc-model.md)|Yeni bir BDC modeli oluşturma gösterir.|  
+|[Nasıl yapılır: Bir SharePoint Projesine Mevcut bir BDC Modeli Dosyası Ekleme](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Bir SharePoint projesine mevcut bir model içeri aktarma gösterir.|  
+|[Nasıl yapılır: Yerelleştirilmiş Adlar. Özellikler ve İzinleri Belirtmek için Kaynak Dosyası Kullanma](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Model bir Web Bölümü veya Web sayfası tarafından tüketilen model meta verileri ile birleştirilen dizeleri sunmak açıklar.|  
+|[Nasıl yapılır: Bir BDC Özelliğine Özel bir Derlemeyi Dahil Etme](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Özelliğine özel bir derlemeyi dahil etme kullanmayı gösterir.|  
   
   

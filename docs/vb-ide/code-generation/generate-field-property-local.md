@@ -11,11 +11,12 @@ ms.assetid: c11888e0-31b1-44cc-9037-98d3f8b3623b
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2dd0ef0db74a0ee723c7cd09bd8118e646b8ba3f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8e23dfa2b482a16d70ef71614ba35f9b20523aeb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-field-property-or-local-in-visual-basic"></a>Visual Basic'te bir alan, özelliği veya yerel oluştur
 **Ne:** hemen önceden bildirilmemiş alan, özelliği veya yerel kodunu oluşturmak olanak tanır. 
@@ -49,4 +50,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Kod oluşturma (Visual Basic)](../code-generation-vb.md)  
-[Önizleme değişiklikleri](../../ide/preview-changes.md)
+[Değişiklikleri Önizleme](../../ide/preview-changes.md)

@@ -28,11 +28,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea382f4da2e89003f045976e44d186f7c5c8ba31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0505759a63598bedefb2315582ac844e16a9405f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>İzlenecek Yol: Özel Görev Bölmesini Şerit Düğmesi ile Eşitleme
   Bu kılavuzda, kullanıcıların Gizle veya Şerit üzerindeki iki durumlu düğmeye tıklayarak görüntülemek bir özel görev bölmesi oluşturmak gösterilmiştir. Microsoft Office uygulamaları kullanıcıların özel görev bölmeleri göstermek veya gizlemek varsayılan bir yol sağlamadığından, görüntüleme ya da, özel görev bölmesini gizleme için tıklatabileceği bir düğme gibi bir kullanıcı arabirimi (UI) öğesini her zaman oluşturmanız gerekir.  
@@ -180,6 +181,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [İzlenecek yol: uygulamayı özel görev bölmesinden otomatikleştirme](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
  [İzlenecek yol: Outlook'ta e-posta iletileri ile birlikte özel görev bölmelerini görüntüleme](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
- [Şerite Genel Bakış](../vsto/ribbon-overview.md)  
+ [Şeride Genel Bakış](../vsto/ribbon-overview.md)  
   
   

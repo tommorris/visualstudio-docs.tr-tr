@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 42793f83258e589d02a0256c45d3b249d4228481
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 922e68a676f1f8ceac547983436c76ac01facc3b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;özelleştirme&gt; öğesi (Visual Studio'da Office Geliştirme)
   `customization` Öğesinin `vstov4` ad alanı, belirli bir Office çözümü açıklanmaktadır. Belge düzeyi özelleştirmeleri ve VSTO eklentileri için farklı alt öğeleridir.  
@@ -123,6 +124,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md)   
  [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
   
   

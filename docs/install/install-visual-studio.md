@@ -2,7 +2,7 @@
 title: "Visual Studio 2017 yükleme | Microsoft Docs"
 description: "Visual Studio, adım adım yüklemeyi öğrenin."
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-ms.assetid: 8d4297e4-9f43-4f12-95ec-22e61154480e
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ff51b5910d8b81d8319eddd0fa3be08d2f9553d7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 9b37b998347618ea346c3d4e7993d5192c1c82a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017 yükleyin
 Visual Studio'yu yüklemek için yeni bir yolunu Hoş Geldiniz! Bizim en son sürümünde, onu seçin ve yalnızca gereken özellikleri yüklemek için daha kolay yaptık. Böylece daha hızlı ve daha önce hiç olmadığı kadar sistemi daha az etkileyerek yükler biz de Visual Studio minimum ayak azaltılmış.
@@ -48,7 +48,7 @@ Visual Studio 2017 ile yan yana Visual Studio'nun önceki sürümleri çalışt�
 Ardından, Visual Studio önyükleyici dosyasını indirin. Bunu yapmak için aşağıdaki düğmeye tıklayın, Visual Studio 2017'a tıklayın, istediğiniz sürümü seçin **kaydetmek**ve ardından **Klasör Aç**.
 
  > [!div class="button"]
- > [Visual Studio 2017 indirin](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+ > [Visual Studio 2017 İndir](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 <br/>
 
 |         |         |
@@ -78,9 +78,9 @@ Yükleyici yüklendikten sonra bu özellik kümeleri seçerek yüklemenizi özel
 
 1.  Bulmak istediğiniz iş yükünü **Visual Studio'yu yükleme** ekran.
 
-  ![Visual Studio 2017 Kurulum iletişim](media/vs2017-workloads.PNG "yükleme Visual Studio iş yükleri")
+ ![Visual Studio 2017 Kurulum iletişim kutusundan bir iş yükünü seçme](../install/media/install-visual-studio-enterprise.png)
 
-     Örneğin, .NET masaüstü geliştirme iş yükünü seçin. Temel kod düzenleme açın ve bir projeye gerek kalmadan herhangi bir klasörden kodu düzenleme yeteneğini 20'den dil için destek içerir ve kaynak kodu denetimi tümleşik varsayılan çekirdek düzenleyicisiyle gelir.  
+     Örneğin, ".NET masaüstü geliştirme" iş yükünü seçin. Temel kod düzenleme açın ve bir projeye gerek kalmadan herhangi bir klasörden kodu düzenleme yeteneğini 20'den dil için destek içerir ve kaynak kodu denetimi tümleşik varsayılan çekirdek düzenleyicisiyle gelir.  
 
 2.  İstediğiniz workload(s) seçtikten sonra tıklayın **yükleme**.
 
@@ -89,7 +89,7 @@ Yükleyici yüklendikten sonra bu özellik kümeleri seçerek yüklemenizi özel
 3.  Yeni iş yükleri ve bileşenleri yüklendikten sonra tıklatın **başlatma**.  
 
 > [!TIP]
->  Yükleme sonrasında herhangi bir zamanda iş yükleri veya başlangıçta nı yüklemediyseniz bileşenleri yükleyebilirsiniz. Visual Studio açmak varsa, Git **Araçları**, **alma araçları ve özelliklerinin...**  Visual Studio yükleyicisi açılır. Ya da açmak **Visual Studio yükleyicisi** Başlat menüsünden. Burada, iş yükleri veya yükleyin ve ardından istediğiniz bileşenleri seçebilirsiniz **Değiştir**.  
+>  Yükleme sonrasında herhangi bir zamanda iş yükleri veya başlangıçta nı yüklemediyseniz bileşenleri yükleyebilirsiniz. Visual Studio açmak varsa, Git **Araçları** > **alma araçları ve özelliklerinin...**  Visual Studio yükleyicisi açılır. Ya da açmak **Visual Studio yükleyicisi** Başlat menüsünden. Burada, iş yükleri veya yükleyin ve ardından istediğiniz bileşenleri seçebilirsiniz **Değiştir**.  
 
 |         |         |
 |---------|---------|
@@ -136,7 +136,7 @@ Birkaç diğer destek seçenekleri şunlardır:
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 * [Visual Studio 2017 güncelleştir](update-visual-studio.md)
@@ -145,4 +145,4 @@ Birkaç diğer destek seçenekleri şunlardır:
 * [Visual Studio 2017 çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
 * [Visual Studio 2017 Yönetici Kılavuzu](visual-studio-administrator-guide.md)
   * [Visual Studio 2017 yüklemek için komut satırı parametreleri kullanın](use-command-line-parameters-to-install-visual-studio.md)
-* [Bir kapsayıcıya derleme araçlarını yükleme](build-tools-container.md)
+* [Derleme Araçlarını Bir Kapsayıcıya Yükleme](build-tools-container.md)

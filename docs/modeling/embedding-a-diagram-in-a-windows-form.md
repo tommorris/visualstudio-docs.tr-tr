@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c2f100e88f2c256cc0bc85bc90f92f6d101a862e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a19aef7cc11e7db1e04a6f54e4438f74227a55ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Windows Forms'a Diyagram Ekleme
 Windows denetiminde hangi görünür, DSL diyagramı katıştırmak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] penceresi.  
@@ -154,4 +155,4 @@ Windows denetiminde hangi görünür, DSL diyagramı katıştırmak [!INCLUDE[vs
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Gezinme ve bir modeli Program kodunda güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Bir etki alanına özgü dil kişiselleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+ [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)

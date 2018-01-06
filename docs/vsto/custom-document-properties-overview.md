@@ -22,11 +22,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee19d6fd6bd84f344a205b0e508abbede63cdebb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0a670510a7898b38ec7f61a22f8258015b112151
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-document-properties-overview"></a>Özel Belge Özelliklerine Genel Bakış
   Belge düzeyi projesi derlerken, Visual Studio projesindeki belgeye iki özel özellikleri ekler: _AssemblyLocation ve _AssemblyName. Bir belgeyi bir kullanıcı oturum açtığında, Microsoft Office uygulama için bu özel belge özellikleri denetler. Belgede varsa, uygulamayı yükleyen [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], özelleştirme başlatır. Daha fazla bilgi için bkz: [Visual Studio'da Office çözümleri mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md).  
@@ -56,6 +57,6 @@ ms.lasthandoff: 10/31/2017
  [Belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md)   
  [Uygulama ve dağıtım bildirimlerini Office çözümleri](../vsto/application-and-deployment-manifests-in-office-solutions.md)   
  [Nasıl yapılır: ClickOnce kullanarak Office çözümü yayımlama](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [Nasıl yapılır: oluşturma ve özel belge özelliklerini değiştirme](../vsto/how-to-create-and-modify-custom-document-properties.md)  
+ [Nasıl Yapılır: Özel Belge Özelliklerini Oluşturma ve Değiştirme](../vsto/how-to-create-and-modify-custom-document-properties.md)  
   
   

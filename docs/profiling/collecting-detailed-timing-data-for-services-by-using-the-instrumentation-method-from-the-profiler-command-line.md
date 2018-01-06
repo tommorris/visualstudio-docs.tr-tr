@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3431b18898227f9732a461d406f7a007164feff4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1c32a2008fa18f7edf8d50b95104c35c6b1b2058
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırından İzleme Metodunu Kullanarak Hizmetler için Ayrıntılı Zamanlama Verileri Toplama
 Bu bölümdeki yordamları ve ayrıntılı performans toplamak için seçenekleri açıklar komut satırından izleme metodunu kullanarak Windows Hizmetleri için veri.  
@@ -47,4 +48,4 @@ Bu bölümdeki yordamları ve ayrıntılı performans toplamak için seçenekler
 |**ASP.NET Web uygulamalarında profil**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Görünümler ve raporlar izleme verileri analiz etme  
- [İzleme yöntemi veri görünümleri](../profiling/instrumentation-method-data-views.md)
+ [İzleme Metodu Veri Görünümleri](../profiling/instrumentation-method-data-views.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5209ec60734213fbafb7b176d91589527b571c32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b8d869dab81273262d23b7aa905370f530b24c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>SharePoint Araç Uzantılarının Programlama Modeline Genel Bakış
   Visual Studio'da SharePoint araçları için uzantı oluştururken SharePoint araçları tarafından kullanıma sunulan bir veya daha fazla genişletilebilirlik arabirimleri uygulayarak başlar. Çoğu durumda, uzantı özellikleri uygulamak için SharePoint araçları tarafından sağlanan diğer türleri de kullanır. Bazı senaryolarda, Visual Studio ve SharePoint tarafından sağlanan diğer nesne modelleri türlerinde de kullanabilirsiniz. Bu nesne modellerinin her biri amacını anlama ve bunların birbirleriyle SharePoint araçları için Uzantılar oluşturmak için nasıl kullanılacağını bilmeniz gerekir.  
@@ -101,6 +102,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da SharePoint araçları genişletme](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md)   
- [SharePoint Proje hizmetini kullanma](../sharepoint/using-the-sharepoint-project-service.md)  
+ [SharePoint Proje Hizmetini Kullanma](../sharepoint/using-the-sharepoint-project-service.md)  
   
   

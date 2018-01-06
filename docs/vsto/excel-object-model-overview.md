@@ -24,11 +24,12 @@ caps.latest.revision: "66"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6bee3ed6bb88945d880f1fb855cec0f7cb9be27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f2727d3c1608db15ab4b46285c0ad6971864978e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="excel-object-model-overview"></a>Excel Nesne Modeline Genel Bakış
   Microsoft Office Excel kullanan çözümleri geliştirmek için Excel nesne modeli tarafından sağlanan nesnelerle etkileşim kurabilirsiniz. Bu konu en önemli nesneleri sunar:  
@@ -120,9 +121,9 @@ ms.lasthandoff: 10/31/2017
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Excel çözümleri](../vsto/excel-solutions.md)|Microsoft Office Excel için nasıl belge düzeyi özelleştirmeleri ve VSTO eklentileri oluşturabileceğiniz açıklanmaktadır.|  
-|[Aralıklarla çalışma](../vsto/working-with-ranges.md)|Aralıkları ile ortak görevler gerçekleştirmek nasıl Göster örnekler verilmektedir.|  
-|[Çalışma sayfaları ile çalışma](../vsto/working-with-worksheets.md)|Çalışma sayfaları ile ortak görevler gerçekleştirmek nasıl Göster örnekler verilmektedir.|  
-|[Çalışma kitaplarıyla çalışma](../vsto/working-with-workbooks.md)|Çalışma kitapları ile ortak görevler gerçekleştirmek nasıl Göster örnekler verilmektedir.|  
+|[Excel Çözümleri](../vsto/excel-solutions.md)|Microsoft Office Excel için nasıl belge düzeyi özelleştirmeleri ve VSTO eklentileri oluşturabileceğiniz açıklanmaktadır.|  
+|[Aralıklarla Çalışma](../vsto/working-with-ranges.md)|Aralıkları ile ortak görevler gerçekleştirmek nasıl Göster örnekler verilmektedir.|  
+|[Çalışma Sayfaları ile Çalışma](../vsto/working-with-worksheets.md)|Çalışma sayfaları ile ortak görevler gerçekleştirmek nasıl Göster örnekler verilmektedir.|  
+|[Çalışma Kitaplarıyla Çalışma](../vsto/working-with-workbooks.md)|Çalışma kitapları ile ortak görevler gerçekleştirmek nasıl Göster örnekler verilmektedir.|  
   
   

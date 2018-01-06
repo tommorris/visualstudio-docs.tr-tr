@@ -11,11 +11,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 64115171c64faf0f62b6530c37fa53c6631ac1d6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2bbac737c6f5bbb3dbe99b0ceae2eb648bcf4295
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-code-coverage-analysis"></a>Kod Kapsamı Çözümlemeyi Özelleştirme
 Varsayılan olarak, Visual Studio kod kapsamı aracı birim testleri sırasında yüklenen tüm çözüm derlemelerinin (.exe/.dll) çözümler. Çoğu zaman iyi çalıştığı için bu varsayılanı korumanız önerilir. Daha fazla bilgi için bkz: [kullanarak kod kapsamı belirleme ne kadar kodun için test](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
@@ -327,4 +328,4 @@ Included items must then not match any entries in the exclude list to remain inc
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Test edildiğini belirlemek ne kadar kodun için kod kapsamını kullanma](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
- [Kodunuza birim testi](../test/unit-test-your-code.md)
+ [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)

@@ -30,11 +30,12 @@ caps.latest.revision: "79"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 941ca002d2f840805253624e7e0004fb560c4167
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2655cd8f8c75f9c10063a1b85d2390b153782d85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-designer"></a>Şerit Tasarımcısı
   Şerit Tasarımcısı bir görsel tasarım tuvali olur. Şerit Tasarımcısı özel sekmeler, gruplar ve denetimler Microsoft Office uygulama Şerite eklemek için kullanın.  
@@ -144,16 +145,16 @@ ms.lasthandoff: 10/31/2017
 |Denetim|Açıklama|  
 |-------------|-----------------|  
 |**Kutusu**|Bir grup denetimlerini düzenler kapsayıcı. Bir kutu ayırıcı, bir grup veya bir sekme dışındaki herhangi bir denetimi ekleyebilirsiniz. Yatay veya dikey bir kutu olabilir.|  
-|**Düğmesi**|Eylem başlatan bir düğme. Bir grup, düğme grubuna, aşağı açılan listesinde, bir galeri, menü veya Bölünmüş düğme bir düğme ekleyebilirsiniz.|  
+|**Düğme**|Eylem başlatan bir düğme. Bir grup, düğme grubuna, aşağı açılan listesinde, bir galeri, menü veya Bölünmüş düğme bir düğme ekleyebilirsiniz.|  
 |**ButtonGroup**|Bir veya daha fazla düğme, iki durumlu düğmeler, menüler, Bölünmüş düğme ve galerileri içeren grup. Bir grup veya menü düğmesi grubu ekleyebilirsiniz.|  
-|**Onay kutusu**|Seçilen veya bir seçenek açıp temizlenmiş bir kutu.|  
+|**CheckBox**|Seçilen veya bir seçenek açıp temizlenmiş bir kutu.|  
 |**ComboBox**|Liste kutusu ekli bir düzenleme kutusu. Kullanıcıların yazın veya kendi seçtikleri seçebilirsiniz. Geçerli seçim kutusunu görüntüler. Kullanım <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> adresindeki öğeleri eklemek ve kaldırmak için özellik çalışma zamanında önce veya Şerit Office uygulamasına yüklendikten sonra.|  
 |**Açılır**|Kullanıcının seçebileceği öğelerin bir listesi. Kullanıcı yeni bir öğe aşağı açılan listesinde yazamazsınız.<br /><br /> Kullanım <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> listesine öğe eklemek için özellik. Öğeleri çalışma zamanında ekleyip çıkarabilirsiniz.<br /><br /> Kullanım <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> düğmeleri listesine eklemek için özellik. Ancak, Ekle ve Şerit Office uygulamasına yüklendikten sonra çalışma zamanında düğmeleri kaldırın.|  
 |**EditBox**|Kullanıcı metin yazabileceğiniz bir kutu.|  
 |**Galerisi**|Menü, bir dizi veya kullanıcıların seçebileceği görsel seçimler kılavuzunun gösterir. Menüdeki seçimlerin düzenini denetleyebilirsiniz. Kullanım <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> ve <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> satır ve sütun sayısı, öğelerin gösterecek ve düğmeleri Galerisi belirtmek için özellikleri.|  
 |**Etiket**|Şerit üzerindeki denetimleri tanımlamak için kullanabileceğiniz metin.|  
 |**Menü**|Aşağıdaki denetimleri içerebilir aşağı açılan listesi:<br /><br /> -Düğmesi<br />-Onay kutusu<br />-Galerisi<br />-Menüsü<br />-Bölünmüş düğme<br />-İki durumlu düğme<br />-Ayırıcı<br /><br /> Şerit Tasarımcısı menüde bir denetim eklemek için menü tasarım yüzeyini kullanıma sunmak için menüsünde aşağı oka tıklayın. Şerit denetimlerini sonra sürükleyebilirsiniz **araç** menüye. Denetimleri düzenlemek için istediğiniz yere sürükleyin.<br /><br /> Denetimler eklemek için <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> Şerit Office uygulamasına yüklendikten sonra ayarlamalısınız <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> özelliğine **true** Şerit yüklenmeden önce. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz: [Şerit nesne modeline genel bakış](../vsto/ribbon-object-model-overview.md).|  
-|**Ayırıcı**|Bir listedeki öğeleri ayırmak için kullanılan ince bir çubuk. Bir gruba eklendiğinde çubuk dikey olur. Bir menüye eklendiğinde çubuk yatay olur.|  
+|**Ayıraç**|Bir listedeki öğeleri ayırmak için kullanılan ince bir çubuk. Bir gruba eklendiğinde çubuk dikey olur. Bir menüye eklendiğinde çubuk yatay olur.|  
 |**Bölünmüş düğme**|Menü iliştirilmiş bir düğme. Bölünmüş düğme aşağıdaki denetimleri içerebilir:<br /><br /> -Düğmesi<br />-Onay kutusu<br />-Galerisi<br />-Menüsü<br />-Bölünmüş düğme<br />-İki durumlu düğme<br />-Ayırıcı<br /><br /> Menü gibi kendi tasarım yüzeyi Bölünmüş düğme vardır. Şerit Office uygulamasına yüklenmeden önce ancak, bir menü farklı olarak, yalnızca bir Bölünmüş düğme öğelerde güncelleştirebilirsiniz. Bölünmüş düğme öğelerde güncelleştirme hakkında daha fazla bilgi için bkz: [Şerit nesne modeline genel bakış](../vsto/ribbon-object-model-overview.md).|  
 |**ToggleButton**|Görünen bir düğmesine basıldığında veya basılı olmadığından.|  
   
@@ -210,6 +211,6 @@ ms.lasthandoff: 10/31/2017
  [İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Nasıl yapılır: Şerit Şerit Tasarımcısından Şerit XML dışarı aktarma](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
  [Nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Şerit çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)  
+ [Çalışma Zamanında Şeride Erişme](../vsto/accessing-the-ribbon-at-run-time.md)  
   
   

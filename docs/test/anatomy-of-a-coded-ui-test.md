@@ -12,11 +12,12 @@ ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5eb576be81849215f1413a7b58c6e460479af7f3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 04472a9dee89a270c78876022b16ef54f200ecd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Kodlanmış UI Testinin Anatomisi
 Kodlanmış UI test projesinde Kodlanmış bir UI testi oluşturduğunuzda, birkaç dosyaları çözümünüze eklenir. Bu konuda, bu dosyaları keşfetmek için bir örnek kodlanmış UI testi kullanacağız.  
@@ -30,9 +31,9 @@ Kodlanmış UI test projesinde Kodlanmış bir UI testi oluşturduğunuzda, birk
   
 |Dosya|İçindekiler|Düzenlenebilir mi?|  
 |----------|--------------|---------------|  
-|[UIMap.Designer.cs](#UIMapDesignerFile)|[Bildirimler bölümü](#UIMapDesignerFile)<br /><br /> [UIMap sınıfı](#UIMapClass) (kısmi, otomatik olarak oluşturulan)<br /><br /> [Yöntemleri](#UIMapMethods)<br /><br /> [Özellikleri](#UIMapProperties)|Hayır|  
+|[UIMap.Designer.cs](#UIMapDesignerFile)|[Bildirimler bölümü](#UIMapDesignerFile)<br /><br /> [UIMap sınıfı](#UIMapClass) (kısmi, otomatik olarak oluşturulan)<br /><br /> [Yöntemler](#UIMapMethods)<br /><br /> [Özellikler](#UIMapProperties)|Hayır|  
 |[UIMap.cs](#UIMapCS)|[UIMap sınıfı](#UIMapCS) (kısmi)|Evet|  
-|[Codeduıtest1.cs](#CodedUITestCS)|[Codeduıtest1 sınıfı](#CodedUITestCS)<br /><br /> [Yöntemleri](#CodedUITestMethods)<br /><br /> [Özellikleri](#CodedUITestProperties)|Evet|  
+|[Codeduıtest1.cs](#CodedUITestCS)|[Codeduıtest1 sınıfı](#CodedUITestCS)<br /><br /> [Yöntemler](#CodedUITestMethods)<br /><br /> [Özellikler](#CodedUITestProperties)|Evet|  
 |[UIMap.uitest](#UIMapuitest)|UI testi için XML eşlemesi.|Hayır|  
   
 ###  <a name="UIMapDesignerFile"></a>UIMap.Designer.cs  
@@ -281,4 +282,4 @@ public void MyTestCleanup()
  [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Kodlanmış UI testleri için en iyi yöntemler](../test/best-practices-for-coded-ui-tests.md)   
  [Birden çok UI eşlemesi bulunan büyük uygulamaları sınama](../test/testing-a-large-application-with-multiple-ui-maps.md)   
- [Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

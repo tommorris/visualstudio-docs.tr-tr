@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 78ccd24a262863a4d6f844d624ef9996d09d568f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6e3dcc6d0ed711d41fd47f043177e5d172193249
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Nasıl Yapılır: Çalışma Sayfasındaki Veritabanı Kayıtları Arasında Kaydırma
   Aşağıdaki yordam Tasarımcı tüm kayıtlar arasında gezinmek son kullanıcı etkinleştirme denetimleri ile bir Microsoft Office Excel çalışma sayfasındaki veritabanı tablosundan tek bir alanı görüntülemek için nasıl kullanılacağını gösterir.  
@@ -48,6 +49,6 @@ ms.lasthandoff: 10/31/2017
 6.  Gelen **Windows Forms** sekmesinde **araç**, ekleme bir <xref:System.Windows.Forms.BindingNavigator> denetlemek için çalışma ve kullanmak istediğiniz denetimlerini ayarlayın. Daha fazla bilgi için bkz: [BindingNavigator denetimine genel bakış &#40; Windows Forms &#41; ](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Office Çözümlerinde Verileri Denetimlere Bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

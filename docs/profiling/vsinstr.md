@@ -21,11 +21,12 @@ caps.latest.revision: "44"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f97ce4480ebdf04cce6a129d7c1950ac28df2aaf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b0120e93e809d1d0f57b5b7dc993a982b1c78836
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsinstr"></a>VSInstr
 Vsınstr aracı ikili dosyalarını izlemek için kullanılır. Aşağıdaki sözdizimini kullanarak çağrılır:  
@@ -50,7 +51,7 @@ VSInstr [/U] filename [/options]
 |**Kapsamı**|Kapsama aracı gerçekleştirir. Yalnızca aşağıdaki seçenekler kullanılabilir olabilir: **ayrıntılı**, **OutputPath**, **hariç**, ve **günlük dosyası**...|  
 |**Ayrıntılı**|**Ayrıntılı**seçeneği izleme işlemi hakkında ayrıntılı bilgi görüntülemek için kullanılır.|  
 |**NoWarn**`[:[Message Number[;Message Number]]]`|Tüm gizlemek veya belirli uyarılar.<br /><br /> `Message Number`-uyarı sayısı. Varsa `Message Number` olan atlanırsa, tüm uyarıları görüntülenmez.<br /><br /> Daha fazla bilgi için bkz: [Vsınstr uyarıları](../profiling/vsinstr-warnings.md).|  
-|**Denetim** `:{` **iş parçacığı** `&#124;` **işlem** `&#124;` **genel**`}`|Aşağıdaki Vsınstr veri toplama profil düzeyini belirtir seçeneklerini denetleme:<br /><br /> **Başlat**<br /><br /> **StartOnly**<br /><br /> **Askıya alma**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **İş parçacığı** -iş parçacığı düzeyinde veri toplama denetimi işlevleri belirtir. Profil oluşturma başlatılır ya da yalnızca geçerli iş parçacığı için durdurulur. Profil oluşturma durumu başka bir iş parçacığı etkilenmez. İş parçacığı varsayılandır.<br /><br /> **İşlem** -işlem düzeyinde profil oluşturma veri toplama denetimi işlevleri belirtir. Profil oluşturma başlatır veya geçerli işlemdeki tüm iş parçacıklarının durdurur. Diğer işlemlerin profil oluşturma durumu etkilenmez.<br /><br /> **Genel** -genel düzeyde (çapraz işlem) veri toplama denetimi işlevleri belirtir.<br /><br /> Profil oluşturma düzeyi belirtmezseniz, bir hata oluşur.|  
+|**Denetim** `:{` **iş parçacığı** `&#124;` **işlem** `&#124;` **genel**`}`|Aşağıdaki Vsınstr veri toplama profil düzeyini belirtir seçeneklerini denetleme:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Askıya alma**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **İş parçacığı** -iş parçacığı düzeyinde veri toplama denetimi işlevleri belirtir. Profil oluşturma başlatılır ya da yalnızca geçerli iş parçacığı için durdurulur. Profil oluşturma durumu başka bir iş parçacığı etkilenmez. İş parçacığı varsayılandır.<br /><br /> **İşlem** -işlem düzeyinde profil oluşturma veri toplama denetimi işlevleri belirtir. Profil oluşturma başlatır veya geçerli işlemdeki tüm iş parçacıklarının durdurur. Diğer işlemlerin profil oluşturma durumu etkilenmez.<br /><br /> **Genel** -genel düzeyde (çapraz işlem) veri toplama denetimi işlevleri belirtir.<br /><br /> Profil oluşturma düzeyi belirtmezseniz, bir hata oluşur.|  
 |**Başlat** `:{` **içinde** `&#124;` **dışında**`},funcname`|Bu işlev tarafından çağrılan alt işlevleri ve hedef işlevi için veri toplama sınırlar.<br /><br /> **İçinde** -hedef işlevi girişe hemen sonra StartProfile işlevi ekler. Her return hemen önce StopProfile işlevi hedef işlevi ekler.<br /><br /> **Dış** -her hedef işlevi çağrısı hemen önce StartProfile işlevi ekler. Her hedef işlevi çağrısı hemen sonra StopProfile işlevi ekler.<br /><br /> `funcname`-Hedef işlevin adı.|  
 |**Askıya alma** `:{` **içinde** `&#124;` **dışında**`},funcname`|Hedef işlev ve işlev tarafından çağrılan alt işlevleri için veri toplama dışlar.<br /><br /> **İçinde** -hedef işlevi girişe hemen sonra SuspendProfile işlevi ekler. Her return hemen önce ResumeProfile işlevi hedef işlevi ekler.<br /><br /> **Dış** -hedef işlevi girişe hemen önce SuspendProfile işlevi ekler. Hedef işlevden çıkış hemen sonra ResumeProfile işlevi ekler.<br /><br /> `funcname`-Hedef işlevinin adı.<br /><br /> Hedef işlevi StartProfile işlevi içeriyorsa, SuspendProfile işlevi önce eklenir. Hedef işlevi StopProfile işlevi içeriyorsa, ResumeProfile işlevi sonra eklenir.|  
 |**StartOnly:** `{` **önce** `&#124;` **sonra** `&#124;` **üst** `&#124;` **alt** `},funcname`|Profil oluşturma çalıştırılması sırasında veri toplama başlar. Bu, belirtilen konumda StartProfile API işlevi ekler.<br /><br /> **Önce** - hedef işlev girdisi hemen önce.<br /><br /> **Sonra** - hedef işlevi çıkış hemen sonra.<br /><br /> **Üst** - hedef işlev girdisi hemen sonra.<br /><br /> **Alt** - hedef işlevinde her return hemen önce.<br /><br /> `funcname`-Hedef işlevinin adı.|  
@@ -63,4 +64,4 @@ VSInstr [/U] filename [/options]
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   
  [Vsınstr uyarıları](../profiling/vsinstr-warnings.md)   
- [Performans rapor görünümleri](../profiling/performance-report-views.md)
+ [Performans Raporu Görünümleri](../profiling/performance-report-views.md)

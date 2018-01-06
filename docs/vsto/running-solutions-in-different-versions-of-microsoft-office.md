@@ -21,11 +21,12 @@ caps.latest.revision: "61"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93e365d335f835196576ad9ed10216e904e81f93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a52ab5c2f2f5a367681929966175ca4c4cb33b56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="running-solutions-in-different-versions-of-microsoft-office"></a>Çözümleri Microsoft Office'in Farklı Sürümlerinde Çalıştırma
     
@@ -64,6 +65,6 @@ ms.lasthandoff: 10/31/2017
  [Office çalışma zamanı genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)   
- [Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)  
+ [Office Çözümleri Geliştirmek İçin Bilgisayarı Yapılandırma](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)  
   
   

@@ -20,11 +20,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 211a357095290f8f8d608d01c093cd373c7525ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b519dad9f2736b7c4451dd01964b3b16cac8ad2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Nasıl Yapılır: Çalışma Sayfalarında Verileri Programlamayla Sıralama
   Çalışma zamanında çalışma sayfası aralıklarına ve listelerinde bulunan verileri sıralayabilirsiniz. Aşağıdaki kod adlı birden çok sütun aralığı sıralar `Fruits` ilk sütunundaki verileri ve ardından ikinci sütundaki verileri.  
@@ -72,6 +73,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: program aracılığıyla çalışma kitaplarındaki aralıklara stilleri uygulayın](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
  [ListObject denetimi](../vsto/listobject-control.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

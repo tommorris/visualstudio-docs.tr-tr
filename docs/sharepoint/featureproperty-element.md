@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97575a32aa3498787a5b81f1ade49c74e290854e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0f1576c23b409226501637ada8d12d2320dd3c37
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="featureproperty-element"></a>FeatureProperty Öğesi
   SharePoint'e dağıtıldığında, sahip bir özellik bulunan özel bir özelliği temsil eder. Bir özellik dağıtıldıktan sonra kodunuzda özelliği erişebilirsiniz.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|**Anahtarı**|Gerekli **xs: String** özniteliği.<br /><br /> Depolamak ve özellik değerini almak için kullanılan anahtar. Her bir özellik özellik içinde benzersiz olduğu bir anahtara sahip olmalıdır.|  
+|**Key**|Gerekli **xs: String** özniteliği.<br /><br /> Depolamak ve özellik değerini almak için kullanılan anahtar. Her bir özellik özellik içinde benzersiz olduğu bir anahtara sahip olmalıdır.|  
 |**Değer**|Gerekli **xs: String** özniteliği.<br /><br /> Özellik değeri.|  
   
 ### <a name="child-elements"></a>Alt Öğeler  
@@ -65,6 +66,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SharePoint proje öğesi şema başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Paketleme ve dağıtım bilgileri proje öğeleri sağlama](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
+ [Proje Öğelerinde Paketleme ve Dağıtım Bilgileri Sağlama](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

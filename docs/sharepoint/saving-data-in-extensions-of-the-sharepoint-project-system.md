@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3605558fd1fd9263c5dad7ec7bc295b7f095a185
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 07865f3a52d4cca71cf76a3d95ac041a5c389494
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-data-in-extensions-of-the-sharepoint-project-system"></a>SharePoint Proje Sisteminin Uzantılarında Veri Kaydetme
   SharePoint Proje sisteminin genişlettiğinizde, bir SharePoint Proje kapatıldıktan sonra devam ederse dize verilerini kaydedebilirsiniz. Verileri genellikle proje veya belirli bir proje öğesi ile ilişkilidir.  
@@ -60,6 +61,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)   
  [SharePoint araç uzantıları ile özel verileri ilişkilendirme](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
- [SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)  
+ [SharePoint Proje Sistem Türleri ve Diğer Visual Studio Proje Türleri Arasında Dönüştürme](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)  
   
   

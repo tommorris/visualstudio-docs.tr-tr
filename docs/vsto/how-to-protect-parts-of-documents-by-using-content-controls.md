@@ -23,11 +23,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf53de6bb247ecb0cf3195310e84c0be548eb717
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 894379e107865e4a4d187c963a88fe23b6eec6d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Nasıl Yapılır: İçerik Denetimlerini Kullanarak Belge Bölümlerini Koruma
   Belgenin bir bölümünü koruduğunuzda, değiştirme veya silme belgenin bu bölümü içeriği kullanıcıların engellemiş olursunuz. İçerik denetimlerini kullanarak Microsoft Office Word belgesi kısımlarını korumak için birkaç yol vardır:  
@@ -112,5 +113,5 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Office Belgelerine Çalışma Zamanında Denetim Ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)  
    

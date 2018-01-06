@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 817b073d79d111abde6f02059de69e9dab48aad4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: e91b350cf410bf0dcd0c124aad678292f059dbae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Nasıl Yapılır: Sınıf Diyagramlarını Görüntü Olarak Dışarı Aktarma (Sınıf Tasarımcısı)
 Bir proje koddan oluşturulan bir sınıf diyagramı dışarı aktarmak için bir resim olarak Diyagramı kaydedin. UML sınıf diyagramları yerine dışarı aktarmak istiyorsanız, bkz: [diyagramlarını görüntü dışarı aktarma](../../modeling/export-diagrams-as-images.md).  

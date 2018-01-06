@@ -11,11 +11,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 34cfe9041a9e724136c9d7c5a19b1c74f2309b2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e293d6ef200fec89150d76d94233bb171374a1d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes'te kod oluşturma, derleme ve adlandırma kuralları
 Bu konu, Fakes kodu oluşturma ve derleme seçenekleri ve sorunları açıklar ve oluşturulan Fakes türleri, üyeleri ve parametreleri için adlandırma kurallarını açıklar.  
@@ -52,7 +53,7 @@ Bu konu, Fakes kodu oluşturma ve derleme seçenekleri ve sorunları açıklar v
   
 -   [Dış Kaynaklar](#BKMK_External_resources)  
   
--   [Kılavuzu](#BKMK_Guidance)  
+-   [Kılavuz](#BKMK_Guidance)  
   
 ##  <a name="BKMK_Code_generation_and_compilation"></a>Kod oluşturma ve derleme  
   
@@ -221,7 +222,7 @@ attribute of the Assembly element in the .fakes:
 ##  <a name="BKMK_Fakes_naming_conventions"></a>Adlandırma kuralları fakes  
   
 ###  <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a>Adlandırma kuralları Dolgu türü ve saplama yazın  
- **Ad alanları**  
+ **Ad Alanları**  
   
 -   . Fakes soneki ad alanına eklenir.  
   
@@ -305,4 +306,4 @@ attribute of the Assembly element in the .fakes:
  [Visual Studio 2012 - bölüm 2 ile sürekli teslimat için test etme: birim testi: iç test etme](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft Fakes ile Test edilen kodu yalıtma](../test/isolating-code-under-test-with-microsoft-fakes.md)
+ [Microsoft Fakes ile Test Edilen Kodu Yalıtma](../test/isolating-code-under-test-with-microsoft-fakes.md)

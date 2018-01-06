@@ -15,11 +15,12 @@ ms.assetid: a9479a52-54e5-421c-9a89-69607153bf6b
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: f2e7504d798893a02df8db12d81471095acbf72b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f8432757481618da49f59130316a88706ec37a38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-coauthoring-and-add-ins"></a>Anlama birlikte yazma ve eklentiler
 
@@ -28,4 +29,4 @@ Birlikte yazma (diğer bir deyişle, OneDrive, OneDrive iş veya SharePoint Onli
 Not: Windows Masaüstü Excel için birlikte yazma 2017 içinde sunulmuştur ve Office365 aboneleri için şu anda kullanılamıyor. Office 2016 ya da önceki kalıcı bir lisans satın kullanıcılar şu anda coauthoring özelliğine erişimi. (Excel Online'da Excel Android, iOS için Excel ve Excel Mobile Windows Mağazası'nda da desteği birlikte yazma).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Excel çözümleri](./excel-solutions.md)
+[Excel Çözümleri](./excel-solutions.md)

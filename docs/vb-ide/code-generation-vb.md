@@ -12,21 +12,22 @@ ms.assetid: 73c19226-11f2-4b8f-a9e6-98f83fee0667
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 182ee3a78939cb1aa2dc476d7ce3a5772d21de0d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8ff21c1eca780947a12ab82a578dcbf65fccbc55
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation"></a>Kod Üretimi
 Visual Studio sizin için kaynak kodu bölümlerini oluşturmak yardımcı gerçek çalışma odaklanmanıza olanak tanır.  Visual Basic aşağıdaki kod oluşturma özellikleri sağlar:  
   
-* [Sınıf/türü oluştur](code-generation/generate-class-type.md)
-* [Üretme yöntemi](code-generation/generate-method.md)
-* [Özellik/alan/yerel oluştur](code-generation/generate-field-property-local.md)
-* [Oluşturucu oluştur](code-generation/generate-constructor.md)
-* [Geçersiz kılma oluştur](code-generation/generate-override.md)
-* [XML belgeleri yorumları oluştur](code-generation/generate-xml-documentation-comments.md)
-* [Soyut sınıf uygulama](code-generation/implement-abstract-class.md)
-* [Arabirimi uygulama](code-generation/implement-interface.md)
-* [Yerel değişken tanıtır](code-generation/introduce-local-variable.md)
+* [Sınıf/Tür Oluşturma](code-generation/generate-class-type.md)
+* [Üretme Metodu](code-generation/generate-method.md)
+* [Alan/özellik/yerel öğe oluşturma](code-generation/generate-field-property-local.md)
+* [Oluşturucu Oluşturma](code-generation/generate-constructor.md)
+* [Geçersiz Kılma Oluşturma](code-generation/generate-override.md)
+* [XML Belge Açıklamaları Oluşturma](code-generation/generate-xml-documentation-comments.md)
+* [Soyut Sınıf Uygulama](code-generation/implement-abstract-class.md)
+* [Arabirim Uygulama](code-generation/implement-interface.md)
+* [Yerel Değişken Ekleme](code-generation/introduce-local-variable.md)

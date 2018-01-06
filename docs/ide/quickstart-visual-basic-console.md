@@ -12,11 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 330594aaccbd691a548fec9c237de91d471f4020
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Hızlı Başlangıç: Visual Basic ile Visual Studio'da ilk Konsol uygulamanızı oluşturma
 Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), konsolda çalışan basit bir Visual Basic uygulaması oluşturacaksınız.
@@ -43,7 +44,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://a
      ![Visual Studio yükleyicisi .NET core platformlar arası geliştirme iş yükü](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ## <a name="create-the-application"></a>Uygulama oluşturma
-Visual Basic proje şablonu seçin ve projenizin adı sonra Visual Studio sizin için basit bir "Hello World" uygulama oluşturur. Çağırır [Console.WriteLine(System.String)](https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline?view=netframework-4.7.1#System_Console_WriteLine_System_String) değişmez değer dize "Hello World!" görüntülenecek yöntemi Konsol penceresinde.
+Visual Basic proje şablonu seçin ve projenizin adı sonra Visual Studio sizin için basit bir "Hello World" uygulama oluşturur. Çağırır <xref:System.Console.WriteLine%2A> değişmez değer dize "Hello World!" görüntülenecek yöntemi Konsol penceresinde.
 
 ![Şablonun varsayılan Hello World kodundan görüntüleyin](../ide/media/vb-console-helloworld-template.png)
 
@@ -56,7 +57,7 @@ Bunu yaptığınızda, konsol penceresi kapanmadan önce yalnızca bir süre iç
 ### <a name="add-some-code"></a>Bazı kodlar ekleyin
 Uygulama duraklatma ve kullanıcı girdisi isteyin biraz kod ekleyelim.
 
-1. Çağırdıktan hemen sonra aşağıdaki kodu ekleyin [Console.WriteLine(System.String)](https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline?view=netframework-4.7.1#System_Console_WriteLine_System_String) yöntemi:
+1. Çağırdıktan hemen sonra aşağıdaki kodu ekleyin <xref:System.Console.WriteLine%2A> yöntemi:
 
    ```vb
    Console.Write("Press any key to continue...")

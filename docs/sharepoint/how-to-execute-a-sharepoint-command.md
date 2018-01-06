@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1cfe20d0cac50603265644fb48102ef22537631
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4888489ef5b60b1222acf09b827c7551818c64b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Nasıl yapılır: SharePoint Komutu Yürütme
   Sunucu nesne modeli bir SharePoint araçları uzantısı'nda kullanmak istiyorsanız, özel bir oluşturmalısınız *SharePoint komutu* API'yi çağırmak için. Komut tanımlayın ve SharePoint araçları uzantısı ile dağıttıktan sonra uzantınızı SharePoint sunucusu nesne modeline çağırmak için komutu çalıştırabilirsiniz. Komutu yürütmek için ExecuteCommand yöntemlerinden birini kullanın bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> nesnesi.  
@@ -76,6 +77,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Nasıl yapılır: bir SharePoint komutu oluşturma](../sharepoint/how-to-create-a-sharepoint-command.md)   
- [İzlenecek yol: Web bölümlerini görüntülemek için Sunucu Gezgini genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
+ [İzlenecek yol: Sunucu Gezginini Web Bölümlerini Görüntülemek Üzere Genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
   
   

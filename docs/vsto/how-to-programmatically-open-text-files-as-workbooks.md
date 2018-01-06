@@ -19,11 +19,12 @@ caps.latest.revision: "47"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4148a9a8a8de627ed56f5e1abc6da3469399330
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dbd39969fba90613594bbbc0b2ea4d2c12825af7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Nasıl yapılır: Metin Dosyalarını Program Aracılığıyla Çalışma Kitapları Biçiminde Açma
   Bir metin dosyası bir çalışma kitabı açabilirsiniz. Açmak istediğiniz metin dosyası adına geçmesi gerekir. Başlangıç Ayrıştırılmaya ve veri dosyasındaki sütun biçiminin satır numarası gibi çeşitli isteğe bağlı parametreleri belirtebilirsiniz.  
@@ -47,6 +48,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: program aracılığıyla yeni çalışma kitapları oluşturma](../vsto/how-to-programmatically-create-new-workbooks.md)   
  [Nasıl yapılır: çalışma kitaplarını program aracılığıyla kaydetme](../vsto/how-to-programmatically-save-workbooks.md)   
  [Nasıl yapılır: program aracılığıyla çalışma kitaplarını kapatma](../vsto/how-to-programmatically-close-workbooks.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

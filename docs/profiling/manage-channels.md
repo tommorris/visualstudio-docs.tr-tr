@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 794b34365dfa025c6ade7f2d7a2f1216c2b4e4ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3915606f9bfaaf2a747ecd5ede0195116c346f0b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manage-channels"></a>Kanalları Yönet
 İçinde **iş parçacıkları görünümü** belirli modelleri incelemek için Eş zamanlılık Görselleştirici kanallar işleminiz için düzenleyebilirsiniz. Kanallar sıralama, yukarı ve Aşağı Taşı ve gizlemek veya göstermek.  
@@ -62,4 +63,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yakınlaştırma Denetimi (iş parçacıkları görünümü)](../profiling/zoom-control-threads-view.md)   
  [Ölçüm modu açık/kapalı](../profiling/measure-mode-on-off.md)   
- [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)
+ [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

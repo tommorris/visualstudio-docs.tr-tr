@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57e6d01e918256217e94077f6414651e50dd4c74
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 018103ed0ede32b65403821e36128bca6fd083a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem Öğesi
   SharePoint proje öğesi anahtar/değer biçimi ile ilişkili bir özel veri öğesini temsil eder. Anahtar ve değer dize olmalıdır.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|**Anahtarı**|Gerekli **xs: String** özniteliği.<br /><br /> Depolamak ve veri öğesi almak için kullanılan anahtar.|  
+|**Key**|Gerekli **xs: String** özniteliği.<br /><br /> Depolamak ve veri öğesi almak için kullanılan anahtar.|  
 |**Değer**|Gerekli **xs: String** özniteliği.<br /><br /> Veri öğesinin değeri.|  
   
 ### <a name="child-elements"></a>Alt Öğeler  
@@ -64,6 +65,6 @@ ms.lasthandoff: 10/31/2017
 |**Boş olamaz**|Hayır|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SharePoint proje öğesi şema başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [SharePoint Proje Öğesi Şema Başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

@@ -19,11 +19,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6874dd125c692b6d853dc89cc533bf3d623aad51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 035b74048aca3b91449bc857a36594bc280065c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>İzlenecek yol: Bir VSTO eklenti projesindeki içinde hizmetinden veri bağlama
   Konak denetimleri VSTO eklentisi projelerine veri bağlayabilirsiniz. Bu kılavuz, Microsoft Office Word belgesine denetimleri ekleme, MSDN içerik hizmetinden alınan verilere denetimler bağlama ve çalışma zamanında olaylara yanıt gösterilmiştir.  
@@ -119,6 +120,6 @@ ms.lasthandoff: 10/31/2017
      Bilgi MTPS Content Service'ten indirilir ve içerik denetiminin içinde görüntülenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Office Çözümlerinde Verileri Denetimlere Bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

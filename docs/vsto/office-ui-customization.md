@@ -21,11 +21,12 @@ caps.latest.revision: "74"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7af3c33ed45a5e0b9678a41900280b1e665766ed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c169edc949f195d416194ae3c3ee1111977f649b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-ui-customization"></a>Office Kullanıcı Arabirimini Özelleştirme
   Visual Studio'da Office geliştirici araçları kullanarak, kullanıcı arabirimi (UI) Microsoft Office uygulamalarının özelleştirebilirsiniz. Bu konu aşağıdaki bölümlerde özelleştirebileceğiniz UI özellikleri açıklanmaktadır:  
@@ -51,11 +52,11 @@ ms.lasthandoff: 10/31/2017
 |-------------|-----------------------------|---------------------------------------------|  
 |Eylemler bölmesi|Belge düzeyinde özelleştirmeler|Excel<br /><br /> Word|  
 |Özel görev bölmeleri|VSTO eklentileri|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word<br /><br /> Excel|  
-|Özel Şerit UI'si|Belge düzeyinde özelleştirmeler<br /><br /> VSTO eklentileri|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Word<br /><br /> Visio|  
-|Backstage görünümü|Belge düzeyinde özelleştirmeler<br /><br /> VSTO eklentileri|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Word<br /><br /> Visio|  
+|Özel Şerit UI'si|Belge düzeyinde özelleştirmeler<br /><br /> VSTO eklentileri|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proje<br /><br /> Word<br /><br /> Visio|  
+|Backstage görünümü|Belge düzeyinde özelleştirmeler<br /><br /> VSTO eklentileri|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proje<br /><br /> Word<br /><br /> Visio|  
 |Outlook form bölgeleri|VSTO eklentileri|Outlook|  
 |Belgelerindeki denetimler|Belge düzeyinde özelleştirmeler<br /><br /> VSTO eklentileri|Excel<br /><br /> Word|  
-|Kısayol menüleri|Belge düzeyinde özelleştirmeler<br /><br /> VSTO eklentileri|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|  
+|Kısayol menüleri|Belge düzeyinde özelleştirmeler<br /><br /> VSTO eklentileri|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proje<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|  
   
 ##  <a name="Actions"></a>Eylemler bölmeleri ve özel görev bölmeleri  
  Görev bölmeleri genellikle bir tarafa bir Microsoft Office uygulamasında penceresinin yerleştirilmiş kullanıcı arabirimi bölmeleri sunulmuştur. Neredeyse tüm Microsoft Office uygulamaları yerleşik görev bölmeleri içerir. Word Yardım görev bölmesinde bir görev bölmesi örnektir.  
@@ -108,6 +109,6 @@ ms.lasthandoff: 10/31/2017
  [Office çözümlerinde WPF denetimlerini kullanma](../vsto/using-wpf-controls-in-office-solutions.md)   
  [Nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
  [Nasıl yapılır: eklenti kullanıcı arayüzü hatalarını gösterme](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [İzlenecek yol: bir Windows formu kullanarak veri toplama](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
+ [İzlenecek Yol: Windows Formu Kullanarak Veri Toplama](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
   
   

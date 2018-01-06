@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 968d46c4fe771229647282c719815982d81bf416
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: c0223950fb5082c84de8026cb07778d1f7381a33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---net-memory-data"></a>Özet görünümü - .NET bellek verileri
 Özet görünümü .NET işlevleri ve en fazla belleği tahsis türleri ve profil çalıştırmak çoğu kez oluşturulan türleri hakkındaki bilgileri görüntüler. Bildirim bağlantıları ve rapor listeler açıklaması dahil olmak üzere daha fazla bilgi için bkz: [özeti görünümü](../profiling/summary-view.md).  
@@ -51,4 +52,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özet görünümü](../profiling/summary-view-sampling-data.md)   
- [Özet görünümü](../profiling/summary-view-instrumentation-data.md)
+ [Özet Görünümü](../profiling/summary-view-instrumentation-data.md)

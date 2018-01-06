@@ -20,11 +20,12 @@ caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 932a7ccc3f52d80e4f75999f401c61b2663095f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 629e320cc47d65347cdd767b984a151afbf648e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="late-binding-in-office-solutions"></a>Office Çözümlerinde Geç Bağlama
   Nesne modelleri Office uygulamalarının bazı türleri geç bağlama özellikleriyle kullanılabilir olan işlevsellik sağlar. Örneğin, bazı yöntemler ve özellikler farklı türde nesne Office uygulama bağlı olarak döndürebilir ve bazı türleri farklı yöntemler ve farklı bağlamdan özellikler getirebilir.  
@@ -72,6 +73,6 @@ ms.lasthandoff: 10/31/2017
  [Option Strict deyimi](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Yansıma (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Yansıma (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
- [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)  
+ [Office Çözümleri Tasarlama ve Oluşturma](../vsto/designing-and-creating-office-solutions.md)  
   
   

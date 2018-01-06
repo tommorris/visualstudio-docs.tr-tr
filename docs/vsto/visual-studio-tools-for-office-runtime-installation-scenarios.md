@@ -16,11 +16,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e09d83fefee766ce19c71812bccfa751cc90e27e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 057b9430f6cbac64479e6623e74497427f7824ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Office Çalışma Zamanı Yükleme Senaryoları için Visual Studio Araçları
   Office çalışma zamanı için Visual Studio 2010 Araçları üç şekilde yükleyebilirsiniz:  
@@ -71,6 +72,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çalışma zamanı genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Office çalışma zamanı için Visual Studio araçlarındaki derlemeler](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)  
+ [Office Çalışma Zamanı İçin Visual Studio Araçlarındaki Derlemeler](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)  
   
   

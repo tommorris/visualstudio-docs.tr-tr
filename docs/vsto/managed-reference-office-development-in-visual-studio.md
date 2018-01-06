@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e7bb95ba186c55820ce0c8fd965196ede957b1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 04d89dee1c078ae0b27b96f2e72b25f30dc52845
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Yönetilen Başvuru (Visual Studio'da Office Geliştirme)
   Bu bölüm, ad alanları için API başvuru belgeleri içerir ve ofisinde kullanılan türleri hedefleyen projeler [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Ad alanları ve .NET Framework 3.5 hedefleyen Office projelerinde kullanılan türler hakkında API başvuru belgeleri için Visual Studio belgelerinde şu bölüme bakın: [http://go.microsoft.com/fwlink/? LinkId 160658 =](http://go.microsoft.com/fwlink/?LinkId=160658).  
@@ -68,6 +69,6 @@ ms.lasthandoff: 10/31/2017
  [Office çalışma zamanı genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Başlarken &#40; Office geliştirme Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)   
- [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)  
+ [Office Çözümleri Tasarlama ve Oluşturma](../vsto/designing-and-creating-office-solutions.md)  
   
   

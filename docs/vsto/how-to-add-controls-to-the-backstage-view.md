@@ -25,11 +25,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a16c564b39afdc2ec3cf3e15883fc05b2a13f5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: add11e32bfdac58d0fc2f057a1ce72e0aece3c7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Nasıl Yapılır: Backstage Görünümüne Denetimler Ekleme
   ' I tıklattığınızda, açılan menüye denetim eklemek için Şerit Tasarımcısını kullanabilirsiniz **dosya** eklediğiniz denetimleri uygulama çalıştırdığınızda sekmesini **dosya** sekmesi görünür adlı bir grup  **Eklentiler**.  
@@ -71,6 +72,6 @@ ms.lasthandoff: 10/31/2017
  [Şerit Tasarımcısı](../vsto/ribbon-designer.md)   
  [Şerit XML](../vsto/ribbon-xml.md)   
  [Nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
+ [İzlenecek Yol: Şerit Tasarımcısını Kullanarak Özel Sekme Oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
   
   

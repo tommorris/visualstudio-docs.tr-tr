@@ -25,11 +25,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baeb44b4804f74aad4b2850eb0bbd4ad539b33e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 21017bc63f028bdbd65d27b0df0cba2e31d407ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="workbook-host-item"></a>Çalışma Kitabı Konak Öğesi
   <xref:Microsoft.Office.Tools.Excel.Workbook> Konak öğesi türüdür genişleten bir <xref:Microsoft.Office.Interop.Excel.Workbook> Excel için birincil birlikte çalışma derlemesinden türü. <xref:Microsoft.Office.Tools.Excel.Workbook> Konak öğesi tüm özellikleri, yöntemleri ve olayları olarak sağlayan bir <xref:Microsoft.Office.Interop.Excel.Workbook> nesnesi, ancak ayrıca ek özellikler sağlar.  
@@ -64,6 +65,6 @@ ms.lasthandoff: 10/31/2017
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md)   
  [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirme](../vsto/automating-excel-by-using-extended-objects.md)   
- [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Konak Denetimlerinin ve Konak Öğelerinin Programlama Sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

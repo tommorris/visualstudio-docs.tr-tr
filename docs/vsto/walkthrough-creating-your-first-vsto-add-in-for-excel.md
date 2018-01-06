@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d22d5b80186bf3117980cd8059ac9431bac5522
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a0009e47f068cbc6b1bfead6fabee1d95a63422d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-excel"></a>İnceleme: Excel için İlk VSTO Eklentinizi Oluşturma
   Bu tanıtıcı kılavuz bir uygulama düzeyi Ekle-Microsoft Office Excel için nasıl oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin çalışma kitaplarını açık olan bağımsız olarak kullanılabilir.  
@@ -142,6 +143,6 @@ ms.lasthandoff: 10/31/2017
  [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)   
  [Office çözümleri oluşturma](../vsto/building-office-solutions.md)   
  [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)   
- [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)  
+ [Office Proje Şablonlarına Genel Bakış](../vsto/office-project-templates-overview.md)  
   
   

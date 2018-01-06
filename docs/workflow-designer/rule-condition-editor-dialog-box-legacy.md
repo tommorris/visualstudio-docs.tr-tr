@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 98a42547786e15815ef760e9f397c3c469c4a1a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a4f38bed7fc164fd5283b98afe780bc81a6a7265
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Kural Koşulu Düzenleyicisi iletişim kutusu (eski)
 Bu konuda açıklanmaktadır kullanma **Kural Koşulu Düzenleyicisi** eski iletişim kutusunda [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -87,4 +88,4 @@ Bu konuda açıklanmaktadır kullanma **Kural Koşulu Düzenleyicisi** eski ilet
  [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)   
  [Koşul iletişim kutusu (eski) seçin](../workflow-designer/select-condition-dialog-box-legacy.md)   
  [İş akışlarında koşullar kullanma](http://go.microsoft.com/fwlink?LinkID=65009)   
- [Windows Workflow Foundation kullanıcı Arabirimi Yardım için eski Tasarımcısı](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Windows Workflow Foundation Kullanıcı Arabirimi Yardımı için Eski Tasarımcı](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

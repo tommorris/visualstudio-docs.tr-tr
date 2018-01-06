@@ -20,11 +20,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a61a56401e97a47da0903dadfff35e16c974bbc5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cb36af8973ce44de9c6e7bbb06af8040da420dbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>İnceleme: Word için İlk VSTO Eklentinizi Oluşturma
   Bu tanıtıcı kılavuz nasıl Microsoft Office Word için VSTO eklentisi oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin belgeler açık olan bağımsız olarak kullanılabilir.  
@@ -145,6 +146,6 @@ ms.lasthandoff: 10/31/2017
  [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)   
  [Office çözümleri oluşturma](../vsto/building-office-solutions.md)   
  [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)   
- [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)  
+ [Office Proje Şablonlarına Genel Bakış](../vsto/office-project-templates-overview.md)  
   
   

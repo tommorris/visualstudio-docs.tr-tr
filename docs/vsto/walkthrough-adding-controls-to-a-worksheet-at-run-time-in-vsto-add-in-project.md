@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bae6ff23763300a4baa748479c609217123c765c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 37da15cce48bd16e022db42fa8a08a2b9633b5fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>İzlenecek Yol: Çalışma Zamanında VSTO Eklenti Projesindeki Çalışma Sayfasına Denetimler Ekleme
   Bir Excel VSTO eklenti kullanarak herhangi bir açık çalışma sayfasına denetimler ekleyebilirsiniz. Bu anlatımda Şerit eklemek kullanıcıların sağlamak için nasıl kullanılacağı gösterilir bir <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange>ve <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma. Bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -76,8 +77,8 @@ ms.lasthandoff: 10/31/2017
   
     |Özellik|Değer|  
     |--------------|-----------|  
-    |**Ad**|**Düğmesi**|  
-    |**Etiket**|**Düğmesi**|  
+    |**Ad**|**Düğme**|  
+    |**Etiket**|**Düğme**|  
   
 6.  İkinci bir onay kutusu eklemek **group1**ve ardından aşağıdaki özellikleri değiştirin.  
   
@@ -195,6 +196,6 @@ ms.lasthandoff: 10/31/2017
  [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
- [ListObject denetimi](../vsto/listobject-control.md)  
+ [ListObject Denetimi](../vsto/listobject-control.md)  
   
   

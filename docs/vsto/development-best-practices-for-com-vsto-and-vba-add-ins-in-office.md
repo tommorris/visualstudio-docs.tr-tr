@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b3a2cbaf98eeacb78f55bea23d638cd4a1ab6d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: office
+ms.openlocfilehash: 8985b3bb6e20b24b86174286104158c8830de971
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>COM, VSTO ve VBA eklentilerinde Office için en iyi uygulamaları geliştirme
   COM, VSTO veya VBA eklentiler için Office geliştiriyorsanız, bu makalede açıklanan geliştirme en iyi uygulamaları izleyin.   Bu, olmanıza yardımcı olur:
@@ -27,13 +28,13 @@ ms.lasthandoff: 11/11/2017
 -  Azaltılan karmaşıklık eklenti dağıtım kullanıcılar ve BT yöneticileri için.
 -  İstenmeyen yükleme veya çalışma zamanı hatalarının eklentiniz gerçekleşmez.
 
->Not: Kullanarak [Masaüstü köprüsü](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root) , COM hazırlamak için VSTO veya VBA eklentisi için Windows mağazası desteklenmiyor. COM, VSTO ve VBA eklentiler, Windows mağazası veya Office deposunda dağıtılamıyor. 
+>Not: Kullanarak [Masaüstü köprüsü](/windows/uwp/porting/desktop-to-uwp-root) , COM hazırlamak için VSTO veya VBA eklentisi için Windows mağazası desteklenmiyor. COM, VSTO ve VBA eklentiler, Windows mağazası veya Office deposunda dağıtılamıyor. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>Office için yükleme sırasında denetleme  
  Office eklentisini yükleme işlemi sırasında yüklenip yüklenmediğini belirle eklentinizi sahip öneririz yok. Office yüklü değilse, eklenti yükleyebilir ve kullanıcı Office yüklendikten sonra erişebilir. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Katıştırılmış birlikte çalışma türlerini (NoPIA) kullanın  
-Çözümünüzü daha sonra .NET 4.0 kullanır veya kullanıyorsanız katıştırılmış birlikte çalışma türleri (NoPIA) yerine Office birincil birlikte çalışma derlemeleri (PIA bağlı olarak) yeniden dağıtılabilir. Türü katıştırma kullanarak çözümünüzü yükleme boyutunu azaltır ve ileriye dönük uyumluluk sağlar. Office 2010 yeniden dağıtılabilir PIA birlikte gelen Office son sürümünü oluştu. Daha fazla bilgi için bkz: [izlenecek yol: Microsoft Office derlemelerinden tür bilgilerini katıştırma](https://msdn.microsoft.com/en-us/library/ee317478.aspx) ve [tür Eşdeğerliği ve katıştırılmış birlikte çalışma türlerini](https://docs.microsoft.com/en-us/dotnet/framework/interop/type-equivalence-and-embedded-interop-types). 
+Çözümünüzü daha sonra .NET 4.0 kullanır veya kullanıyorsanız katıştırılmış birlikte çalışma türleri (NoPIA) yerine Office birincil birlikte çalışma derlemeleri (PIA bağlı olarak) yeniden dağıtılabilir. Türü katıştırma kullanarak çözümünüzü yükleme boyutunu azaltır ve ileriye dönük uyumluluk sağlar. Office 2010 yeniden dağıtılabilir PIA birlikte gelen Office son sürümünü oluştu. Daha fazla bilgi için bkz: [izlenecek yol: Microsoft Office derlemelerinden tür bilgilerini katıştırma](https://msdn.microsoft.com/en-us/library/ee317478.aspx) ve [tür Eşdeğerliği ve katıştırılmış birlikte çalışma türlerini](/windows/uwp/porting/desktop-to-uwp-root).
 
 Çözümünüzü .NET önceki bir sürümünü kullanıyorsa, .NET 4.0 veya sonraki sürümü kullanmak için çözümünüzün güncelleştirmenizi öneririz. .NET 4.0 veya sonraki sürümü kullanarak, daha yeni sürümlerinde Windows çalışma zamanı Önkoşullar azaltır.
   
@@ -66,4 +67,4 @@ Office istemci uygulamaları (Word veya Excel gibi) için destek bildirimleri sa
 >Önemli: Microsoft hazır olma durumunu raporlar ve ISV kişi bilgileri için desteklenen eklentiler listesini tutar. Listelenen eklentiniz almak için bkz: [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>İşlem İzleyicisi yükleme veya sorunları yüklenirken hata ayıklamaya yardımcı olması için kullanın
-Eklentiniz uyumluluk sorunları yük veya yükleme sırasında varsa, bunlar dosya veya kayıt defteri erişim ile ilgili sorunlar için ilişkili. Kullanım [işlem İzleyicisi](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) veya oturum ve sorunu belirlemeye yardımcı olmak için çalışma ortamını karşı davranışı karşılaştırmak için benzer bir hata ayıklama aracı. 
+Eklentiniz uyumluluk sorunları yük veya yükleme sırasında varsa, bunlar dosya veya kayıt defteri erişim ile ilgili sorunlar için ilişkili. Kullanım [işlem İzleyicisi](/sysinternals/downloads/procmon) veya oturum ve sorunu belirlemeye yardımcı olmak için çalışma ortamını karşı davranışı karşılaştırmak için benzer bir hata ayıklama aracı.

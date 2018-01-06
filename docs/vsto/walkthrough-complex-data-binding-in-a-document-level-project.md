@@ -20,11 +20,12 @@ caps.latest.revision: "50"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dff7896b24508891a62ad3a0760880ed6a68a65a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 10d35a0cec1e927fbc264d64ef911503f68f1606
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>İzlenecek Yol: Belge Düzeyi Projede Karmaşık Veri Bağlama
   Bu anlatımda belge düzeyi projede karmaşık veri bağlama ile ilgili temel bilgiler gösterilir. Microsoft Office Excel çalışma sayfasındaki birden çok hücreyi Northwind SQL Server veritabanındaki alanlara bağlayabilirsiniz.  
@@ -230,6 +231,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)   
- [İzlenecek yol: Belge düzeyi projede basit veri bağlama](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
+ [İzlenecek Yol: Belge Düzeyi Projede Basit Veri Bağlama](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
   
   

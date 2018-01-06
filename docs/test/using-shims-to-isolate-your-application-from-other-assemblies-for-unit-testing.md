@@ -11,11 +11,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: b95b4754af66c39d741b7df8a74a433ff812f834
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8ddd21dde8057475c1169cf4ef3d43df84a1c96d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Birim testi için uygulamanızı diğer derlemelerden yalıtmak üzere dolgular kullanma
 **Dolguya türleri** izin verecek şekilde Microsoft Fakes Framework kullanan iki teknolojilerden birine kolayca yalıtmak altında test ortamı'ndan bileşenleridir. Dolgular belirli yöntemler testinizi bir parçası olarak yazma koda çağrı yönlendir. Birçok yöntem farklı sonuçlar dış koşullar bağımlı döndürebilir ancak bir dolgu testinizi denetimi altındadır ve her çağrısında tutarlı sonuçlar döndürebilir. Bu testleri yazmak çok daha kolay hale getirir.  
@@ -71,7 +72,7 @@ ms.lasthandoff: 10/27/2017
   
  [Dolgu yönteminden özgün yöntemi çağırma](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
   
- [Sınırlamaları](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
+ [Sınırlamalar](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
   
 ##  <a name="BKMK_Example__The_Y2K_bug"></a>Örnek: Y2K hata  
  Şimdi, 1 Ocak 2000'in üzerinde aykırı bir yöntem göz önünde bulundurun:  

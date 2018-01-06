@@ -18,11 +18,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f9da75468ae417bd835b457cdbd5219ef9462df1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 77325f725edcec41d71e5af38572f05e59c86198
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Nasıl Yapılır: Belgelerden Yönetilen Kod Uzantılarını Kaldırma
   Bir belge veya Microsoft Office Word veya Microsoft Office Excel için belge düzeyi özelleştirme parçası olan bir çalışma kitabı özelleştirme derlemesini program aracılığıyla kaldırabilirsiniz. Kullanıcılar, ardından belgeleri açın ve içeriğini görüntülemek, ancak belgelere eklediğiniz herhangi bir özel kullanıcı arabirimi (UI) görüntülenmez ve kodunuzu çalışmaz.  
@@ -59,6 +60,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ServerDocument sınıfını kullanarak bir sunucu üzerinde belgeleri yönetme](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Nasıl yapılır: belgelere yönetilen kod uzantıları ekleme](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
+ [Nasıl Yapılır: Belgelere Yönetilen Kod Uzantıları Ekleme](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
   
   

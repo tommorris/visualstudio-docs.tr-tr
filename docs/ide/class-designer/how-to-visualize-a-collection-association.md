@@ -19,11 +19,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 025d78ae6f094713425366a6ce667b59ac9958b8
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 234c70896b28f27815b7563b814fb6b4bd933ebd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>Nasıl Yapılır: Koleksiyon İlişkilendirmesini Görselleştirme (Sınıf Tasarımcısı)
 Özellikler ve diğer türleri koleksiyonlarıdır alanları sınıf diyagramında koleksiyon ilişkilendirmesini görüntülenebilir. Bir alan veya özellik bağlama alanın türüne sahip olan sınıfı bir satırı olarak görüntüler, bir normal ilişkisi koleksiyon ilişkilendirmesini bağlama toplanan türüne sahip olan sınıfı bir satır olarak görüntülenir.  

@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 53dbaa806ae3b65314d5aeed8df9338905a946cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 03adaa74feacc82c5f63c1930f7dad63cc931433
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-localize-a-feature"></a>Nasıl yapılır: Bir Özelliği Yerelleştirme
   Varsayılan olarak, özellik başlıkları ve açıklamaları sabit kodlanmış dize değerlerini kullanın. Özellik başlığı ve açıklamayı yerelleştirme için yerelleştirilmiş kaynaklar başvuru ifadelerle dizeleri değiştirin.  
@@ -67,6 +68,6 @@ ms.lasthandoff: 10/31/2017
  [SharePoint Çözümlerini Yerelleştirme](../sharepoint/localizing-sharepoint-solutions.md)   
  [Nasıl yapılır: kaynak dosyası ekleme](../sharepoint/how-to-add-a-resource-file.md)   
  [Nasıl yapılır: ASPX biçimlendirmesini yerelleştirme](../sharepoint/how-to-localize-aspx-markup.md)   
- [Nasıl yapılır: kod yerelleştirme](../sharepoint/how-to-localize-code.md)  
+ [Nasıl yapılır: Kod Yerelleştirme](../sharepoint/how-to-localize-code.md)  
   
   

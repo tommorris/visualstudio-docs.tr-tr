@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74c688d0430b95c54f1f871ad6f82fde6fa781ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89b49139db9d91ba742caeb80308f9175195a843
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook Form Bölgelerindeki Özel Eylemler
   Eylemler bir Microsoft Office Outlook öğesine yanıt vermesine olanak sağlayan düğmeler görüntüler. Örneğin, bir posta öğesine yanıtlamak için kullanıcılar'ı tıklatın **yanıt**, **Tümünü Yanıtla**, veya **İleri** eylem düğmesi. Bu eylemlerin her biri, yeni bir posta öğesi oluşturur ve özgün öğedeki bilgileri kullanarak öğenin alanlarını doldurur.  
@@ -58,6 +59,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Outlook Form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   
  [İzlenecek yol: Outlook Form Bölgesi Tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
+ [Form Bölgesini Outlook İleti Sınıfıyla İlişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
   
   

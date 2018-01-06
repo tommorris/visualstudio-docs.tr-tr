@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 130cf43e7c11eeccae8fdbdd22b46faf6bfe3c49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dff032c3f43c662b75f4d0b757f16e70095efc33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Office Çalışma Zamanı İçin Visual Studio Araçlarındaki Derlemeler
   Bir Office proje oluşturduğunuzda, Visual Studio başvuruları otomatik olarak ekler. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] proje türü ve hedef .NET Framework projenin için kullanılan derlemeler. .NET Framework 3.5 için Office uzantılarında farklı derlemeler vardır [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], ve [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Office uzantıları hakkında daha fazla bilgi için bkz: [Office çalışma zamanı genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -65,6 +66,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çalışma zamanı genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)  
+ [Office Çalışma Zamanı Yükleme Senaryoları için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)  
   
   

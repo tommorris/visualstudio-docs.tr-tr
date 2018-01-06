@@ -19,11 +19,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2763571f7854653707116d233628e6bff539827f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 882431cc99d61563ec2abf0d885224b7851eab97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Nasıl yapılır: Program Aracılığıyla Seçili Hücreler İçeren Çalışma Sayfalarındaki Satırlarda Biçimlendirmeyi Değiştirme
   Seçili hücre içeriyor ve böylece metni kalın tüm bir satır yazı tipi değiştirebilirsiniz.  
@@ -77,6 +78,6 @@ ms.lasthandoff: 10/31/2017
  [Çalışma sayfaları ile çalışma](../vsto/working-with-worksheets.md)   
  [Nasıl yapılır: program aracılığıyla çalışma kitaplarındaki aralıklara stilleri uygulayın](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
  [Nasıl yapılır: program aracılığıyla veri ve biçimlendirme çalışma sayfaları arasında kopyalama](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

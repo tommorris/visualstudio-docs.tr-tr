@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 424c4867f0b18d7f819bf60a248b801741916efb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 12265c725480324c396d59d848e5269432bb5d6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-programming-document-level-customizations-for-word"></a>Word'de Belge Düzeyinde Özelleştirme Programlamasına Başlama
   Yalnızca Visual Studio kullanarak Microsoft Office Word için belge düzeyi özelleştirmeleri oluşturma başlıyorsanız, işte bilmeniz gerekir.  
@@ -48,11 +49,11 @@ ms.lasthandoff: 10/31/2017
   
  Daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)  
+-   [Belge Düzeyi Özelleştirmelerini Programlama](../vsto/programming-document-level-customizations.md)  
   
--   [Genişletilmiş nesneleri kullanarak Word'ü Otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md)  
+-   [Genişletilmiş Nesneleri Kullanarak Word'ü Otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md)  
   
--   [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)  
+-   [Konak Öğelerine ve Denetimlerine Genel Bakış](../vsto/host-items-and-host-controls-overview.md)  
   
 ## <a name="customizing-the-user-interface-of-word"></a>Word kullanıcı arabirimini özelleştirme  
  Microsoft Office çözümlerinin çoğu kullanıcı arabirimi (UI) çözümü ile etkileşim kullanıcılar için herhangi bir şekilde sağlamak için Office uygulamasının değiştirin. Belge düzeyi özelleştirme kullanarak UI Word'ün değişiklik yapabilirsiniz birçok yolu vardır. Örneğin, Şerit denetimlerini ekleyebilirsiniz ve Eylemler bölmesinde görüntüleyebilirsiniz. Daha fazla bilgi için bkz: [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md).  
@@ -74,6 +75,6 @@ ms.lasthandoff: 10/31/2017
  [İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)   
  [Word kullanımında izlenecek yollar](../vsto/walkthroughs-using-word.md)   
  [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)   
- [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)  
+ [Office Çözümlerinde Kod Yazma](../vsto/writing-code-in-office-solutions.md)  
   
   

@@ -12,11 +12,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 dev_langs: JavaScript
-ms.openlocfilehash: ae38685c634feecfd8d88e5a0a5d738f1e603ee4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: nodejs
+ms.openlocfilehash: 80822e4f323621a97beb453118d7e0836ae9ea92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Visual Studio'da Node.js ile çalışmaya başlama
 Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE bazı özellikleri keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).  

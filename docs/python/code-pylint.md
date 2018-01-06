@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 14914ce13249a439748bb890480c2605f69368ae
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: cf97be0c7a7b5bb9d6a9d43ceeb5cd9e9334025d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-pylint-to-check-python-code"></a>Python kodu denetlemek için PyLint kullanma
 
@@ -45,7 +46,7 @@ Bir hata çift doğrudan sorunu oluşturulan kaynak koduna alır.
 
 1. Komut satırında proje kök dizinine gidin (içeren, `.pyproj` dosyası) ve bir açıklamalı yapılandırma dosyası oluşturmak için aşağıdaki komutu çalıştırın:
 
-   ```bash
+   ```command
    pylint --generate-rcfile > .pylintrc
    ```
 
@@ -56,7 +57,4 @@ Bir hata çift doğrudan sorunu oluşturulan kaynak koduna alır.
 1. Kaydet `.pylintrc` dosya ve uyarılarla şimdi bastırılan yeniden görmek için PyLint çalıştırın.
 
 > [!Tip]
-> Kullanılacak bir `.pylintrc` dosya bir ağ paylaşımından, adında bir ortam değişkeni oluşturma `PYLINTRC` bir UNC yolu veya eşlenen sürücü harfini kullanarak ağ üzerinde dosya adı değerini paylaşın. Örneğin:
-> ```
-> PYLINTRC=\\myshare\python\.pylintrc
-> ```
+> Kullanılacak bir `.pylintrc` dosya bir ağ paylaşımından, adında bir ortam değişkeni oluşturma `PYLINTRC` bir UNC yolu veya eşlenen sürücü harfini kullanarak ağ üzerinde dosya adı değerini paylaşın. Örneğin, `PYLINTRC=\\myshare\python\.pylintrc`.

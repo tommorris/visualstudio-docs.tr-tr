@@ -19,11 +19,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1064169de7af6652d2ded4817f1ce197550d938e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f2700b7a8a2a07c77bfbd6961443fdf57cd3cc07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Nasıl yapılır: Program Aracılığıyla Çalışma Kitaplarındaki Aralıklara Biçimler Uygulama
   Çalışma kitaplarında bulunan bölgelere adlandırılmış stiller uygulayabilirsiniz. Excel bir dizi önceden tanımlanmış stil sağlar.  
@@ -74,6 +75,6 @@ ms.lasthandoff: 10/31/2017
  [Aralıklarla çalışma](../vsto/working-with-ranges.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
  [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

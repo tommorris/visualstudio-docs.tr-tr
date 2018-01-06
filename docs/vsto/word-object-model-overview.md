@@ -22,11 +22,12 @@ caps.latest.revision: "78"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd89a4cd713e4cdff22ffbbd570ee2e0bf60ef37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b01307811930ec865e2b38e899318dfdd99c74a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="word-object-model-overview"></a>Word Nesne Modeline Genel Bakış
   Visual Studio'da Word çözümleri geliştirdiğinizde, Word nesne modeli ile etkileşim. Bu nesne modeli sınıfları ve Word için birincil birlikte çalışma derlemesindeki sağlanan ve içinde tanımlanan arabirimleri oluşur <xref:Microsoft.Office.Interop.Word> ad alanı.  
@@ -37,11 +38,11 @@ ms.lasthandoff: 10/31/2017
   
  Word nesne modeli belirli görevler gerçekleştirmek üzere kullanma hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Belgelerle çalışma](../vsto/working-with-documents.md)  
+-   [Belgelerle Çalışma](../vsto/working-with-documents.md)  
   
--   [Belgelerde metinle çalışma](../vsto/working-with-text-in-documents.md)  
+-   [Belgelerde Metinle Çalışma](../vsto/working-with-text-in-documents.md)  
   
--   [Sekmelerle çalışma](../vsto/working-with-tables.md)  
+-   [Sekmelerle Çalışma](../vsto/working-with-tables.md)  
   
 ##  <a name="understanding"></a>Word nesne modelini anlama  
  Word ile etkileşim kurabilen nesneleri yüzlerce sağlar. Bu nesneler kullanıcı arabirimini yakından takip eden hiyerarşik olarak düzenlenir. Hiyerarşisinin en üstünde olduğu <xref:Microsoft.Office.Interop.Word.Application> nesnesi. Bu nesne Word'ün geçerli örneğini temsil eder. <xref:Microsoft.Office.Interop.Word.Application> Nesnesini içeren <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>, ve <xref:Microsoft.Office.Interop.Word.Range> nesneleri. Bu nesnelerin her biri birçok yöntem ve ve nesnesi ile etkileşime için erişebileceği özellikler vardır.  
@@ -140,6 +141,6 @@ ms.lasthandoff: 10/31/2017
  [Sekmelerle çalışma](../vsto/working-with-tables.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

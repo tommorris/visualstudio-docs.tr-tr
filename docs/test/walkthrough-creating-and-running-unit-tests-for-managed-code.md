@@ -17,11 +17,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: "83"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 825adc757b9ae984bb39b308bab37a0d98b63ab5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: ebdac762d3dcc4079ed6e8247b394da685b1013a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>İzlenecek yol: Yönetilen Kod için Birim Testleri Oluşturma ve Çalıştırma
 Bu kılavuzda oluşturma, çalıştıran ve yönetilen kod ve Visual Studio Test Gezgini için Microsoft birim test çerçevesi kullanarak birim testlerini bir dizi özelleştirme adım. Geliştirme aşamasındadır bir C# projesi ile başlayın, kendi kodu deneyen, testleri çalıştırmak ve sonuçları inceleyin testleri oluşturma. Sonra proje kodunu değiştirmek ve testleri yeniden çalıştırın.  

@@ -20,23 +20,24 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b1da36fbf982b26f079b0aebbee67bc9d5f203
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 03d7f2eedef03a4995a9f14540351df80bd537f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-mail-items"></a>Posta Öğeleriyle Çalışma
   <xref:Microsoft.Office.Interop.Outlook.MailItem> Sınıfı yöntemleri ve e-posta iletileri ile görevleri gerçekleştirmek için kullandığınız özellikler içerir.  
   
 |Görev|Yordam|  
 |----------|---------------|  
-|Bir e-posta iletisi oluşturun.|[Nasıl yapılır: program aracılığıyla e-posta öğesi oluşturma](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
-|Bir e-posta iletisi gönderin.|[Nasıl yapılır: program aracılığıyla e-posta Gönder](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
-|Yeni e-posta iletilerine özel bir eylem ile yanıt verir.|[Nasıl yapılır: bir e-posta iletisi alındığında program aracılığıyla işlem gerçekleştirme](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
-|Ekleri kaydedin.|[Nasıl yapılır: program aracılığıyla Outlook e-posta öğelerinden ekleri kaydetme](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
-|Ek Ekle|[Nasıl yapılır: Outlook e-posta öğelerine program aracılığıyla dosya ekleme](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  
-|Tüm okunmamış iletileri üzerinden yineleme.|[Nasıl yapılır: gelen kutusundan program aracılığıyla okunmamış iletileri alma](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|  
+|Bir e-posta iletisi oluşturun.|[Nasıl yapılır: Program Aracılığıyla E-posta Öğesi Oluşturma](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
+|Bir e-posta iletisi gönderin.|[Nasıl yapılır: Program Aracılığıyla E-posta Gönderme](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
+|Yeni e-posta iletilerine özel bir eylem ile yanıt verir.|[Nasıl yapılır: E-Posta İletisi Alındığında Program Aracılığıyla İşlem Gerçekleştirme](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
+|Ekleri kaydedin.|[Nasıl yapılır: Outlook E-Posta Öğelerinden Program Aracılığıyla Ekleri Kaydetme](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
+|Ek Ekle|[Nasıl yapılır: Outlook E-Posta Öğelerine Program Aracılığıyla Dosya Ekleme](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  
+|Tüm okunmamış iletileri üzerinden yineleme.|[Nasıl yapılır: Gelen Kutusundan Program Aracılığıyla Okunmamış İletileri Alma](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|  
   
  Outlook görevleri ve Outlook nesne modeli hakkında daha fazla bilgi için bkz: [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md).  
   
@@ -44,6 +45,6 @@ ms.lasthandoff: 10/31/2017
  [Kişi öğeleriyle çalışma](../vsto/working-with-contact-items.md)   
  [Klasörlerle çalışma](../vsto/working-with-folders.md)   
  [Takvim öğeleriyle çalışma](../vsto/working-with-calendar-items.md)   
- [Outlook çözümleri](../vsto/outlook-solutions.md)  
+ [Outlook Çözümleri](../vsto/outlook-solutions.md)  
   
   

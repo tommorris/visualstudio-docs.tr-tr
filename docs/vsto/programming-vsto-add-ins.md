@@ -37,11 +37,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1516922d91bf517f2bf9e9512d6c5a00cb1ae868
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0dfc26627bbeaaaea66fb942e87238814bd02fd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programming-vsto-add-ins"></a>VSTO Eklentilerini Programlama
   Bir VSTO eklenti oluşturarak Microsoft Office uygulaması genişlettiğinizde, karşı doğrudan kod yazma `ThisAddIn` projenizdeki sınıfı. Bu sınıf, Microsoft Office konak uygulamasının nesne modeline erişme, uygulamanın kullanıcı arabirimini (UI) özelleştirme ve VSTO eklentinizi diğer Office çözümlerine nesneleri gösterme gibi görevleri gerçekleştirmek için kullanabilirsiniz.  
@@ -95,19 +96,19 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
   
  Belirli Microsoft Office uygulamalarının nesne modelleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md)  
+-   [Excel Nesne Modeline Genel Bakış](../vsto/excel-object-model-overview.md)  
   
--   [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)  
+-   [Word Nesne Modeline Genel Bakış](../vsto/word-object-model-overview.md)  
   
--   [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md)  
+-   [Outlook Nesne Modeline Genel Bakış](../vsto/outlook-object-model-overview.md)  
   
--   [InfoPath çözümleri](../vsto/infopath-solutions.md)  
+-   [InfoPath Çözümleri](../vsto/infopath-solutions.md)  
   
--   [PowerPoint çözümleri](../vsto/powerpoint-solutions.md)  
+-   [PowerPoint Çözümleri](../vsto/powerpoint-solutions.md)  
   
--   [Proje çözümleri](../vsto/project-solutions.md)  
+-   [Proje Çözümleri](../vsto/project-solutions.md)  
   
--   [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)  
+-   [Visio Nesne Modeline Genel Bakış](../vsto/visio-object-model-overview.md)  
   
 ###  <a name="AccessingDocuments"></a>Office uygulaması başlatıldığında belgeye erişme  
  Tüm [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] uygulamaları ve hiçbiri başlattığınızda bir belge otomatik olarak açılmasını [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] uygulamaları bunları başlattığınızda bir belge açın. Bu nedenle, kodda eklemeyin `ThisAdd-In_Startup` kod açılması için bir belge gerektiriyorsa olay işleyicisi. Bunun yerine, bir kullanıcı oluşturur veya bir belgeyi açtığında, Office uygulaması oluşturan bir olay bu kodu ekleyin. Böylece, kodunuzu bir işlem gerçekleştirmeden önce bir belge açık olduğunda garanti edebilir.  
@@ -155,6 +156,6 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
  [Genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelliklerini özelleştirme](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)   
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
- [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)  
+ [Office Çözümlerinde Kod Yazma](../vsto/writing-code-in-office-solutions.md)  
   
   

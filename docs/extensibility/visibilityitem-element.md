@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db041f839e9b7e8ad3268175829ecfee9380e736
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 627e5abad07ef0566d23f010ea120df33173fb0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem öğesi
 `VisibilityItem` Öğesi komutlar ve araç çubuklarını statik görünürlüğünü belirler. Her giriş, bir komut veya menü ve ayrıca bir ilişkili komut UI bağlamı tanımlar. Visual Studio komutları, menüleri ve araç çubukları ve bunların görünürlük tanımlamadan VSPackages yüklemeden algılar. IDE kullanan <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> komutu UI bağlam etkin olup olmadığını belirlemek amacıyla yöntemi.  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[VisibilityConstraints öğesi](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints` Öğesi grupları komutları ve araç çubuklarını statik görünürlüğünü belirler.|  
+|[VisibilityConstraints Öğesi](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints` Öğesi grupları komutları ve araç çubuklarını statik görünürlüğünü belirler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Standart Visual Studio kullanıcı Arabirimi bağlamları tanımlanan *Visual Studio SDK yükleme yolu*\VisualStudioIntegration\Common\Inc\vsshlids.h dosyasında da olarak <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> ve <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> sınıfları. UI bağlamları daha eksiksiz bir kümesini tanımlanan <xref:Microsoft.VisualStudio.VSConstants> sınıfı.  
@@ -79,4 +80,4 @@ ms.lasthandoff: 10/31/2017
  <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids>   
  <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>   
  [VisibilityConstraints öğesi](../extensibility/visibilityconstraints-element.md)   
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -18,11 +18,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: ec1c20ae334e81724af1b8d4e2b25d755a024bdc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f0d0250e2810adc8fd79239aa8e0807b04bbf0a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma
 Yönetilen kod için Microsoft birim test çerçevesi kullanarak bir veri kaynağından test yönteminde kullanılan değerleri almak için bir birim testi yöntemi ayarlayabilirsiniz. Yöntemi, tek bir yöntem kullanarak giriş çeşitli test kolaylaştırır veri kaynağındaki her satır için sırayla çalışır.  
@@ -190,4 +191,4 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  [Nasıl yapılır: oluşturmak ve birim testi çalıştırma](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
  [Kodunuza birim testi](../test/unit-test-your-code.md)   
  [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)   
- [Yönetilen kod için Microsoft Birim Test Çerçevesi ile .NET Framework için birim testleri yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+ [Yönetilen Kod için Microsoft Birim Testi Çerçevesi ile .NET Framework için Birim Testleri Yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

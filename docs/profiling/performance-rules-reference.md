@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bec05a24a932816374766c107c1aab6f018e77cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 24ae3ce7346c3fb6608a2db4faa4c57dd3399773
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-rules-reference"></a>Performans Kuralları Başvurusu
 Profil Araçları performans kuralları, ek uyarılar ve uygulamanızın performansı hakkında bilgi sağlar. Performans kuralları, Windows ve işlemci performans sayaçları gibi kaynaklardan toplanan profil çalıştırmada verileri analiz edin. Kural iletileri hata çıktı penceresinde görünür [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] tümleşik geliştirme ortamı. İleti aşağıdaki kural düzeylerinden birini listelenmiştir:  
@@ -35,6 +36,6 @@ Profil Araçları performans kuralları, ek uyarılar ve uygulamanızın perform
 |||  
 |-|-|  
 |[.NET framework kullanımı performans kuralları](../profiling/dotnet-framework-usage-performance-rules.md)|Yardımcı kuralları .NET Framework verimli bir şekilde kullanın.|  
-|[Bellek ve disk belleği performans kuralları](../profiling/memory-and-paging-performance-rules.md)|Yönetilen bellek ve disk belleği uygulamanızın davranışını çözümlemek kuralları.|  
+|[Bellek ve Disk Belleği Performans Kuralları](../profiling/memory-and-paging-performance-rules.md)|Yönetilen bellek ve disk belleği uygulamanızın davranışını çözümlemek kuralları.|  
 |[Profil Araçları Kullanım Kuralları](../profiling/profiling-tools-usage-rules.md)|Yardımcı kuralları profil oluşturma araçları verimli bir şekilde kullanın.|  
-|[Kaynak izleme performans kuralları](../profiling/resource-monitoring-performance-rules.md)|Bir profil işlemci ve bellek kullanımı hakkında bilgi iletilerini çalıştırın.|
+|[Kaynak İzleme Performans Kuralları](../profiling/resource-monitoring-performance-rules.md)|Bir profil işlemci ve bellek kullanımı hakkında bilgi iletilerini çalıştırın.|

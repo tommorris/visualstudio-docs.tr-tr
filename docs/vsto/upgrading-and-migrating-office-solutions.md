@@ -21,11 +21,12 @@ caps.latest.revision: "105"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8189032a38aba69b63cb96f824c973b0d41a1aad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fd6ff05fde0e02e9b45b67ffe665a296085bf934
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrading-and-migrating-office-solutions"></a>Office Çözümlerini Yükseltme ve Geçirme
   Visual Studio daha önceki bir sürümünde oluşturulmuş bir Microsoft Office project varsa, geçerli Visual Studio sürümlerinde kullanmak için proje yükseltmeniz gerekir. Microsoft Office project yükseltmek için Microsoft Office geliştirici araçlarını içeren Visual Studio sürümünde açın. Microsoft Office geliştirici araçlarını içeren Visual Studio sürümleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -91,6 +92,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Office çözümlerini yükseltme](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)   
  [Office çözümlerini geçirme .NET Framework 4 veya üstü](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
- [Proje yükseltme, Seçenekler iletişim kutusu](../vsto/project-upgrade-options-dialog-box.md)  
+ [Proje Yükseltme, Seçenekler İletişim Kutusu](../vsto/project-upgrade-options-dialog-box.md)  
   
   

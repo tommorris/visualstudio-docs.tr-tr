@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d442dbf376d5615b6c10842c16d01183fc70056a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5d8c1d13263972462ef30e55a34c316f5dd0c7ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-xml-snippets"></a>Nasıl yapılır: XML parçacıklarını kullanma
 XML Düzenleyicisi kısayol menüsünde aşağıdaki iki komutu kullanarak, XML parçacıkları çağırabilirsiniz. **Ekle parçacığı** komutu XML parçacığını İmleç konumuna ekler. **Surround With** komutu seçili metninin çevresindeki XML parçacığını sarmalar. Her XML parçacığını parçacığı türleri atadığı. Kod parçacığında türleri kod parçacığını ile kullanılabilir olup olmadığını belirlemek **Ekle parçacığı** komutu, **Surround With** komutu ya da her ikisini de.  
@@ -112,4 +113,4 @@ XML Düzenleyicisi kısayol menüsünde aşağıdaki iki komutu kullanarak, XML 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML parçacıkları](../xml-tools/xml-snippets.md)   
  [Nasıl yapılır: XML şemasından bir XML parçacığını oluştur](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
- [Nasıl yapılır: XML parçacıkları oluşturma](../xml-tools/how-to-create-xml-snippets.md)
+ [Nasıl Yapılır: XML Kod Parçacıkları Oluşturma](../xml-tools/how-to-create-xml-snippets.md)

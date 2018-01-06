@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3834ee91b06a668052a4fd86e559e0d4dbdd8f39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: acbe1cf2a97018dae1a69e363594d415a9e62c22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-e-mail-message-is-received"></a>Nasıl yapılır: E-Posta İletisi Alındığında Program Aracılığıyla İşlem Gerçekleştirme
   Kullanıcı bir e-posta iletisini aldığında bu örnek özel eylemleri gerçekleştirir.  
@@ -38,6 +39,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md)   
  [Posta öğeleri ile çalışma](../vsto/working-with-mail-items.md)   
- [Başlarken VSTO eklentilerini programlama](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [VSTO Eklentilerini Programlamaya Başlama](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

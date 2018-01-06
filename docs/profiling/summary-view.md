@@ -18,11 +18,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f07b924c5af117f39e19dc5add6046a14be22a6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 552a2c66bd71d83ff1c8cd3453154c065d8bdb3d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view"></a>Özet Görünümü
 Özet görünümü profil çalıştırılmasıyla en performans pahalı işlevleri veya nesneler hakkındaki bilgileri görüntüler. Bu görünüm bir zaman çizelgesi grafik sağlar ve iki veya daha fazla listesi en pahalı işlevleri veya nesneler profil oluşturma yöntemi, performans ölçümleri temelinde. Bu görünümde veri kullanılan profil yöntemine bağlıdır (örnekleme, izleme veya eşzamanlılık) ve .NET bellek ayırma olup toplanan.  
@@ -59,4 +60,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özet görünümü](../profiling/summary-view-sampling-data.md)   
  [Özet görünümü](../profiling/summary-view-instrumentation-data.md)   
- [Özet görünümü](../profiling/summary-view-dotnet-memory-data.md)
+ [Özet Görünümü](../profiling/summary-view-dotnet-memory-data.md)

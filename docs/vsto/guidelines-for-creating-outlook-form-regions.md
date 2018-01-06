@@ -18,11 +18,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e012b9f173e432cfee88beec7d861faaa7be03b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 197da04c42b97f274979e46a2ba4691747365362
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guidelines-for-creating-outlook-form-regions"></a>Outlook Form Bölgeleri Oluşturma Yönergeleri
   Aşağıdaki bilgiler, form bölgeleri en iyi duruma getirme ve olası sorunları önlemenize yardımcı olabilir:  
@@ -95,6 +96,6 @@ ms.lasthandoff: 10/31/2017
  [Outlook Form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   
  [İzlenecek yol: Outlook Form Bölgesi Tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Nasıl yapılır: Outlook eklenti projesine Form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [Form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
+ [Form Bölgesini Outlook İleti Sınıfıyla İlişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
   
   

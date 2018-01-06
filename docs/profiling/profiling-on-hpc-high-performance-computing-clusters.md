@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e83f20106d4165e861c23ade178a86838a41f58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53fea09175d9d9653dd4552832cd511ed7900b8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>HPC (Yüksek Performanslı Hesaplama) Kümelerinde Profil Oluşturma
 Örnekleme yöntemini kullanarak işlem Microsoft Windows HPC küme düğümlerinde profil [!INCLUDE[vsPreExt](../profiling/includes/vspreext_md.md)] veya [!INCLUDE[vsUltExt](../profiling/includes/vsultext_md.md)] profil oluşturma araçları. HPC hakkında daha fazla bilgi için bkz: [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) Microsoft Web sitesinde.  
@@ -73,8 +74,7 @@ ms.lasthandoff: 10/31/2017
   
     -   Kullanımda olmayan bir ikili profil için bir açık projeye seçin **bir yürütülebilir dosya (. EXE dosyası)** seçeneği.  
   
-4.  
-              **İleri**'ye tıklayın.  
+4.  **İleri**'ye tıklayın.  
   
 5.  Sihirbazın üçüncü sayfasında:  
   
@@ -86,8 +86,7 @@ ms.lasthandoff: 10/31/2017
   
     -   İçinde **dağıtım konumu**, HPC server aşama görüntülerini dağıtım için kullanacağı dizinin yolunu belirtin.  
   
-6.  
-              **İleri**'ye tıklayın.  
+6.  **İleri**'ye tıklayın.  
   
 7.  Sihirbazının dördüncü sayfasında:  
   
@@ -101,8 +100,7 @@ ms.lasthandoff: 10/31/2017
   
          İşlem ya da belirli bir HPC küme düğümünde çalışan işlemde profil için seçin **profil düğümde** seçeneğini ve ardından düğümü aşağı açılan listeden seçin.  
   
-8.  
-              **İleri**'ye tıklayın.  
+8.  **İleri**'ye tıklayın.  
   
 9. Beşinci sihirbaz sayfasında, profil oluşturucu ve profil oluşturma işlemi hemen başlatmak için ya da daha sonra performans Gezgini'ni kullanarak profil oluşturmayı başlatmak için seçebilirsiniz.  
   

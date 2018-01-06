@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 320233edede13e2f33bdcb206b056bf1d0b94b8e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2db745d34c86e4b0aa5639872106096421044bce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>İşlem iletişim kutusu (eski) seçin
 Bu konuda açıklanmaktadır kullanma **seçin işlemi** eski iletişim kutusunda [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -31,8 +32,8 @@ Bu konuda açıklanmaktadır kullanma **seçin işlemi** eski iletişim kutusund
 |**Ekleme işlemi**|Yeni işlem içinde oluşturulan yeni bir sözleşme ekler **seçin işlemi** iletişim kutusu. **Not:** yeni işlem aracılığıyla oluşturduğunuz sözleşmeleri ekleyebileceğiniz **seçin işlemi** iletişim kutusu. <br /><br /> (Bu ile birlikte kullanılan <xref:System.Workflow.Activities.ReceiveActivity> yalnızca.)|  
 |**İçeri Aktar...**|Önceden tanımlanmış bir sözleşme alır ve bir işlem bu sözleşmeden seçmenize olanak sağlar.|  
 |**İşlem adı**|Şu anda seçili olan işlemin adı. Bu metin kutusu yalnızca bir işlem aracılığıyla oluşturduysanız düzenlemek için kullanılabilir **seçin işlemi** iletişim kutusu.|  
-|**Parametreleri**|Seçili işlem için parametre tanımları içeren sekmesini tıklatın. **Not:** parametre tanımları, yalnızca bir işlem aracılığıyla oluşturduysanız değiştirilebilir **seçin işlemi** iletişim kutusu.|  
-|**Veri Erişimi**|Sekme içeren <xref:System.Net.Security.ProtectionLevel> hizmet ve istemci arasında gönderilen iletiler için ayarları. **Not:** Bu sekme yalnızca bir işlem aracılığıyla oluşturduysanız etkin **seçin işlemi** iletişim kutusu.|  
+|**Parametreler**|Seçili işlem için parametre tanımları içeren sekmesini tıklatın. **Not:** parametre tanımları, yalnızca bir işlem aracılığıyla oluşturduysanız değiştirilebilir **seçin işlemi** iletişim kutusu.|  
+|**Özellikler**|Sekme içeren <xref:System.Net.Security.ProtectionLevel> hizmet ve istemci arasında gönderilen iletiler için ayarları. **Not:** Bu sekme yalnızca bir işlem aracılığıyla oluşturduysanız etkin **seçin işlemi** iletişim kutusu.|  
 |**İzinleri**|Sekme içeren <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> ve <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A> bu işlem çağırmak için izin verilen kullanıcıların özelliklerini. Yalnızca Yöneticiler grubundan kullanıcıların bu işlemi çağırmak için izin verilen, örneğin, daha sonra "Yöneticiler" yazarsınız **rol** metin kutusu.<br /><br /> Bu sekme aracılığıyla oluşturulan iki işlem için etkin **ChooseOperation** iletişim kutusu ve üzerinden aktarılan işlemleri **alma** düğmesi.|  
   
 > [!NOTE]
@@ -41,4 +42,4 @@ Bu konuda açıklanmaktadır kullanma **seçin işlemi** eski iletişim kutusund
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: uygulama bir WCF sözleşmesi işlemi (eski)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
  [Nasıl yapılır: bir WCF sözleşmesi işlemi (eski) çağırma](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
- [Windows Workflow Foundation kullanıcı Arabirimi Yardım için eski Tasarımcısı](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Windows Workflow Foundation Kullanıcı Arabirimi Yardımı için Eski Tasarımcı](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

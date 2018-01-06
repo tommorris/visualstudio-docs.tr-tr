@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0800884a03544aec822d31cf64fd47a4f63f3e07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3a44dc8304274bf0633e891690f6b34d2637dfa1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="services-page-project-designer"></a>Hizmetler Sayfası, Proje Tasarımcısı
 İstemci uygulama hizmetleri sağlamak için Basitleştirilmiş erişim [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] oturum açma, roller ve Windows Forms ve Windows Presentation Foundation (WPF) uygulamalardan profili Hizmetleri. Kullanabileceğiniz **Hizmetleri** sayfasında **Proje Tasarımcısı** etkinleştirmek ve istemci uygulama hizmetleri projeniz için yapılandırmak için.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 >  İstemci uygulama hizmetleri .NET Framework'ün tam sürümünü gerektirir ve .NET Framework istemci profili desteklenmez. Varsa **etkinleştirmek istemci uygulama hizmetleri** onay kutusu devre dışıysa, doğrulayın **hedef framework** .NET Framework 3.5 veya daha üstüne ayarlanmalıdır. Görüntülemek için **hedef framework** C# ' ta ayarlama, Proje Tasarımcısı'nı açın ve ardından **uygulama** sayfası. Görüntülemek için **hedef framework** Visual Basic'te ayarlama, Proje Tasarımcısı açın, **derleme** sayfasında ve ardından **Gelişmiş derleme seçenekleri**.  
   
 ## <a name="task-list"></a>Görev Listesi  
- [Nasıl yapılır: istemci uygulama hizmetlerini yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
+ [Nasıl Yapılır: İstemci Uygulama Servislerini Yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **Yapılandırma**  
@@ -71,4 +72,4 @@ ms.lasthandoff: 10/31/2017
  [Hizmetleri iletişim kutusu için Gelişmiş ayarlar](../../ide/reference/advanced-settings-for-services-dialog-box.md)   
  [Nasıl yapılır: istemci uygulama hizmetlerini yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)   
  [Derle sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
- [Derleme sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md)   
+ [Derleme Sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md)   

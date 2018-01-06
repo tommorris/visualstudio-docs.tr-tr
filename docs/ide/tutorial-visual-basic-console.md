@@ -12,11 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 68270961af154e15e02f3426da98007edd631bc4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 1ceda9e53426255331c85996b54378a91324a3fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Visual Basic Visual Studio ile çalışmaya başlama
 Bu öğreticide için Visual Basic (VB), oluşturmak ve birkaç farklı konsol uygulamaları çalıştırmak için Visual Studio'yu kullanın ve bazı Visual Studio özelliklerini keşfedin [tümleşik geliştirme ortamı (IDE)](visual-studio-ide.md) bunu yaparken.
@@ -32,7 +33,7 @@ Visual Studio, geliştiriciler için üretkenlik araçları'nın bir tümleşik 
 ### <a name="what-is-a-console-app"></a>Bir konsol uygulaması nedir?
 Bir konsol uygulaması girdi alır ve çıktı paketini bir komut satırı penceresinde görüntüler bir konsol.
 ### <a name="what-is-net-core"></a>.NET Core nedir?
-.NET core .NET Framework'ün Açılım sonraki adımdır. .NET Framework, kod programlama dilleri arasında paylaşmak izin verilen durumlarda, .NET Core kod platformlarında bile daha iyi paylaşmak yeteneği ekler, açık kaynak olur. (.NET Framework ve .NET Core kitaplıkları, kodunuzu çalıştırmak için bir sanal makine olarak davranan bir ortak dil çalışma zamanı (CLR) yanı sıra önceden oluşturulmuş işlevselliği içerir.)
+.NET core .NET Framework'ün Açılım sonraki adımdır. Burada .NET Framework, kod programlama dilleri arasında paylaşmak izin .NET Core kod platformları arasında paylaşmak yeteneği ekler. Bile, onu açık kaynak daha iyidir. (.NET Framework ve .NET Core kitaplıkları, kodunuzu çalıştırmak için bir sanal makine olarak davranan bir ortak dil çalışma zamanı (CLR) yanı sıra önceden oluşturulmuş işlevselliği içerir.)
 
 ## <a name="start-developing"></a>Geliştirmeye başlayın
 Geliştirmeye başlamak hazır mısınız? Gidelim!
@@ -70,7 +71,7 @@ Görmüyorsanız, **konsol uygulaması (.NET Core)** proje şablonu, alabilirsin
 
 1. Zaten açık değilse, ardından açın, *WhatIsYourName* projesi.
 
-2. Aşağıdaki hemen ayraç sonra aşağıdaki Visual Basic kodu girin `Sub Main(args As String())` satır ve ilk ayraç önce:
+2. Aşağıdaki hemen ayraç sonra aşağıdaki Visual Basic kodu girin `Sub Main(args As String())` satır ve önce `End Sub` satır:
 
      ```vb
      Console.WriteLine(vbCrLf + "What is your name? ")

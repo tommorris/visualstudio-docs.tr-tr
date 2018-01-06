@@ -22,11 +22,12 @@ caps.latest.revision: "68"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 811e4eff77780bda2b348c26bb220a29d5fd1731
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f5503bed26a5e2657bb499a7a25098c373e149e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>İzlenecek Yol: Şerit Tasarımcısını Kullanarak Özel Sekme Oluşturma
   Şerit Tasarımcısını kullanarak, özel sekme oluşturabilir ve ardından ekleyin ve onu denetimlere getirin.  
@@ -171,6 +172,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Şeritteki sekmenin konumunu değiştirme](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
  [Nasıl yapılır: yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)   
  [Nasıl yapılır: Backstage görünümüne denetimler ekleme](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Şerit nesne modeline genel bakış](../vsto/ribbon-object-model-overview.md)  
+ [Şerit Nesne Modeline Genel Bakış](../vsto/ribbon-object-model-overview.md)  
   
   

@@ -11,11 +11,12 @@ ms.assetid: 96cfed7f-f090-4369-8a85-2dcd4c7cf12b
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68f60b6159cad7f751dfc47a8af116ef33a164c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 663a5ed393502d24c8b677dd2776a87b9855540e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implement-an-abstract-class-in-visual-basic"></a>Visual Basic'te soyut bir sınıf uygulama
 **Ne:** hemen bir Özet sınıf uygulamak için gereken kodu oluşturmanıza olanak sağlar. 
@@ -51,4 +52,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Kod oluşturma (Visual Basic)](../code-generation-vb.md)  
-[Önizleme değişiklikleri](../../ide/preview-changes.md)
+[Değişiklikleri Önizleme](../../ide/preview-changes.md)

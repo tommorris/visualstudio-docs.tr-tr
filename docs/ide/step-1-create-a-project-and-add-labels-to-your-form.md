@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 55e0802f58be0a1ad3a060fce257554b36c01a52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ab50592e345a54853e9cfbd95d0b9bd1bc86d794
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1. Adım: Proje Oluşturma ve Formunuza Etiketler Ekleme
 Bu test geliştirme ilk adımlar, olarak projesi oluşturun ve etiketler, bir düğmeyi ve diğer denetimlerin bir forma ekleyin. Ayrıca, eklediğiniz her denetim için özellikler de ayarlayın. Proje formu denetimlerini içerir ve (sonraki öğreticide) kodu. Test sorunları etiketlerini göster düğmesini test başlatır ve diğer denetimlerin test yanıtlar ve test tamamlamak için kalan süreyi gösterir.  

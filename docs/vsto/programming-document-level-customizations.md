@@ -32,11 +32,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68135e13a0e78e0250b087713ab459825018ff84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 68d0cfbc96b72208eee26f3cc75dd9a19d1b63fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programming-document-level-customizations"></a>Belge Düzeyi Özelleştirmelerini Programlama
   Belge düzeyi özelleştirme kullanarak Microsoft Office Word veya Microsoft Office Excel genişlettiğinizde, aşağıdaki görevleri gerçekleştirebilirsiniz:  
@@ -175,6 +176,6 @@ Globals.ThisDocument.Save();
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   
  [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md)   
  [ServerDocument sınıfını kullanarak bir sunucu üzerinde belgeleri yönetme](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)  
+ [Office Çözümlerinde Kod Yazma](../vsto/writing-code-in-office-solutions.md)  
   
   

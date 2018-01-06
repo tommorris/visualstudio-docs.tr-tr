@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 02f3d66b7d519546f1da89bb323ec9ab740628f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 44b938467454d73c460cc9276b46bc165d36bcee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-legacy-workflow-projects"></a>Eski iş akışı projeleri oluşturma
 Bu bölümde, eski kullanarak iş akışı projeleri oluşturmak açıklar [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] vs2010 tarafından sağlanan. Eski [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hedefleri [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Aşağıdaki tabloda listelenen iş akışı proje şablonları kullanma hakkında bilgi içerir.  
@@ -34,24 +35,24 @@ Bu bölümde, eski kullanarak iş akışı projeleri oluşturmak açıklar [!INC
 |Boş iş akışı projesinde|İş akışı uygulaması oluşturmaya yönelik boş proje.|  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: iş akışı projeleri (eski) oluşturma](../workflow-designer/how-to-create-workflow-projects-legacy.md)  
+ [Nasıl Yapılır: İş Akışı Projeleri Oluşturma (Eski)](../workflow-designer/how-to-create-workflow-projects-legacy.md)  
   
- [Nasıl yapılır: Sıralı iş akışı konsol uygulamaları (eski) oluşturma](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)  
+ [Nasıl Yapılır: Sıralı İş Akışı Konsol Uygulamaları Oluşturma (Eski)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)  
   
- [Nasıl yapılır: bir sıralı iş akışı kitaplığı (eski) oluşturun](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)  
+ [Nasıl yapılır: Sıralı İş Akışı Kitaplığı Oluşturma (Eski)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)  
   
- [Nasıl yapılır: bir iş akışı etkinlik kitaplığı (eski) oluşturun](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)  
+ [Nasıl Yapılır: İş Akışı Etkinlik Kitaplığı Oluşturma (Eski)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)  
   
- [Nasıl yapılır: Durum makinesi iş akışı konsol uygulamaları (eski) oluşturma](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)  
+ [Nasıl Yapılır: Durum Makinesi İş Akışı Konsol Uygulamaları Oluşturma (Eski)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)  
   
- [Nasıl yapılır: bir Durum makinesi iş akışı kitaplığı (eski) oluşturun](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)  
+ [Nasıl yapılır: Durum Makinesi İş Akışı Kitaplığı Oluşturma (Eski)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)  
   
- [Nasıl yapılır: bir boş iş akışı projesi (eski) oluşturun](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)  
+ [Nasıl Yapılır: Boş İş Akışı Projesi Oluşturma (Eski)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)  
   
- [Nasıl yapılır: iş akışı proje özelliklerini (eski) yapılandırma](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)  
+ [Nasıl Yapılır: İş Akışı Proje Özelliklerini Yapılandırma (Eski)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)  
   
- [Nasıl yapılır: bir iş akışı projesine (eski) yeni bir öğe ekleme](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)  
+ [Nasıl Yapılır: Bir İş Akışı Projesine Yeni Öğe Ekleme (Eski)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sıralı iş akışı görünümler (eski)](../workflow-designer/sequential-workflow-views-legacy.md)   
- [Visual Studio iş akışı Windows (eski)](../workflow-designer/visual-studio-workflow-windows-legacy.md)
+ [Visual Studio İş Akışı Pencereleri (Eski)](../workflow-designer/visual-studio-workflow-windows-legacy.md)

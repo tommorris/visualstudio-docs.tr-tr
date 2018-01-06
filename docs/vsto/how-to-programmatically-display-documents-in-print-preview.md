@@ -18,11 +18,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79facc7d8232a1dac5adc5f9e57848d4a206ba82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 762a068858e7ad79c9a4fe9d02d1d868f150c5a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Nasıl yapılır: Baskı Önizlemede Program Aracılığıyla Belgeleri Görüntüleme
   Çözümünüzü bir rapor oluşturursa, baskı önizleme modunda kullanıcıya raporu görüntülemek isteyebilirsiniz.  
@@ -64,6 +65,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: program aracılığıyla belgeleri yazdırma](../vsto/how-to-programmatically-print-documents.md)   
  [Nasıl yapılır: varolan belgeleri program aracılığıyla açma](../vsto/how-to-programmatically-open-existing-documents.md)   
- [Nasıl yapılır: program aracılığıyla yeni belgeler oluşturma](../vsto/how-to-programmatically-create-new-documents.md)  
+ [Nasıl yapılır: Program Aracılığıyla Yeni Belgeler Oluşturma](../vsto/how-to-programmatically-create-new-documents.md)  
   
   

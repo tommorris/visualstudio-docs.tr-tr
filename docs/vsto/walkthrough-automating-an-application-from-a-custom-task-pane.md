@@ -22,11 +22,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c08f04af21e42761b9b9c7e1a760e71fe79d025a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8d7c349261770e6b489a793f6f4533a852c96a8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-automating-an-application-from-a-custom-task-pane"></a>İzlenecek Yol: Uygulamayı Özel Görev Bölmesinden Otomatikleştirme
   Bu kılavuzda nasıl PowerPoint'i otomatikleştiren bir özel görev bölmesi oluşturulacağını gösterir. Özel görev bölmesini kullanıcı tıklattığında slayta tarihler ekler bir <xref:System.Windows.Forms.MonthCalendar> özel görev bölmesi üzerindeki denetim.  
@@ -148,6 +149,6 @@ ms.lasthandoff: 10/31/2017
  [Özel görev bölmeleri](../vsto/custom-task-panes.md)   
  [Nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [İzlenecek yol: özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [İzlenecek yol: Outlook'ta e-posta iletileri ile birlikte özel görev bölmelerini görüntüleme](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+ [İzlenecek Yol: Outlook'ta E-Posta İletileri ile Birlikte Özel Görev Bölmelerini Görüntüleme](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
   
   

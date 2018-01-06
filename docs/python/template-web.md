@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ad0906394552eb3af3293094301f94eee130e870
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="python-web-project-templates"></a>Python web projesi şablonları
 
@@ -67,13 +68,12 @@ Herhangi bir proje özelliği veya ortam değişkeni MSBuild sözdizimiyle örne
 **Bottle Web projesi** şablon gerekli yapılandırma mu Demirbaş kod içerir. İçeri aktarılan bottle uygulama bu kodu eklemeniz gerekmez, ancak bu durumda aşağıdaki ayarları yüklü kullanarak uygulamayı başlatın `bottle` Modülü:
 
 - **Sunucu komutu çalıştırmak** Grup:
-
-    - **Komut**: `bottle` (Modülü)
-    - **Bağımsız değişkenler**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Komut**: `bottle` (Modülü)
+  - **Bağımsız değişkenler**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - **Sunucu komutu hata ayıklama** Grup:
-    - **Komut**: `bottle` (Modülü)
-    - **Bağımsız değişkenler**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Komut**: `bottle` (Modülü)
+  - **Bağımsız değişkenler**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 `--reload` Seçeneği, Visual Studio hata ayıklama için kullanırken önerilmez.
 
@@ -82,12 +82,11 @@ Herhangi bir proje özelliği veya ortam değişkeni MSBuild sözdizimiyle örne
 Piramit uygulamalar, kullanarak şu anda en iyi oluşturulur `pcreate` komut satırı aracı. Uygulama oluşturulduktan sonra kullanarak alınabileceği [varolan Python kodu](python-projects.md#creating-a-project-from-existing-files) şablonu. Bunu yaptıktan sonra seçin **Genel Web projesi** özelleştirme seçeneklerini yapılandırmak için. Bu ayarlar sanal bir ortama Piramit yüklü olduğu varsayılmaktadır `..\env`.
 
 - **Hata ayıklama** Grup:
-
-    - **Sunucu bağlantı noktası**: 6543 (veya ne olursa olsun .ini dosyalarında yapılandırılır)
+  - **Sunucu bağlantı noktası**: 6543 (veya ne olursa olsun .ini dosyalarında yapılandırılır)
 
 - **Sunucu komutu çalıştırmak** Grup:
-    - Komut: `..\env\scripts\pserve-script.py` (komut)
-    - Bağımsız değişkenler:`Production.ini`
+  - Komut: `..\env\scripts\pserve-script.py` (komut)
+  - Bağımsız değişkenler:`Production.ini`
 
 - **Sunucu komutu hata ayıklama** Grup:
     - Komut: `..\env\scripts\pserve-script.py` (komut)
@@ -145,7 +144,7 @@ Son olarak, aracılığıyla oturum [geliştirme konsol](https://github.com/proj
 
 Şu anda, paketleri yüklemek için önerilen yöntem geliştirme konsol site uzantısı yükleyip PIP doğrudan Yürütülüyor sonra kullanmaktır. Python tam yolunu kullanarak önemli olduğu veya yanlış bir yürütme ve genelde sanal bir ortama kullanmaya gerek yoktur. Örneğin:
 
-```
+```command
 c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 
 c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt

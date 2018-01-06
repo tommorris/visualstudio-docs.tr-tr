@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 45ffc19d3ede7af9d32e4599f17ecde9bd097bb7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7453a61f599b8d3e051fea1c016d914814ec7fd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-flow-activity-designers"></a>Denetim akışı etkinlik tasarımcıları
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]iş akışlarınızı oluştururken kullanabileceğiniz sistem tarafından sağlanan etkinliklerin sayısını içerir. Bu bölüm, bir iş akışındaki akışını denetlemek için kullanılan sistem tarafından sağlanan etkinlikleri içerir. Aşağıdaki konular bu etkinlikleri açıklar ve bunların nasıl kullanılacağını hakkında rehberlik sağlar.  
@@ -77,21 +78,21 @@ ms.lasthandoff: 10/27/2017
 ## <a name="related-sections"></a>İlgili Bölümler  
  Etkinlik tasarımcıları diğer türleri için aşağıdaki konulara bakın.  
   
- [Etkinlik tasarımcıları kullanma](../workflow-designer/using-the-activity-designers.md)  
+ [Etkinlik Tasarımcılarını kullanma](../workflow-designer/using-the-activity-designers.md)  
   
  [Akış Çizelgesi](../workflow-designer/flowchart-activity-designers.md)  
   
  [Mesajlaşma](../workflow-designer/messaging-activity-designers.md)  
   
- [Çalışma zamanı](../workflow-designer/runtime-activity-designers.md)  
+ [Çalışma Zamanı](../workflow-designer/runtime-activity-designers.md)  
   
- [Temelleri](../workflow-designer/primitives-activity-designers.md)  
+ [Temel Türler](../workflow-designer/primitives-activity-designers.md)  
   
  [İşlem](../workflow-designer/transaction-activity-designers.md)  
   
- [Koleksiyonu](../workflow-designer/collection-activity-designers.md)  
+ [Koleksiyon](../workflow-designer/collection-activity-designers.md)  
   
- [Hata işleme](../workflow-designer/error-handling-activity-designers.md)  
+ [Hata İşleme](../workflow-designer/error-handling-activity-designers.md)  
   
 ## <a name="external-resources"></a>Dış Kaynaklar  
- [Etkinlik tasarımcıları kullanma](../workflow-designer/using-the-activity-designers.md)
+ [Etkinlik Tasarımcılarını kullanma](../workflow-designer/using-the-activity-designers.md)

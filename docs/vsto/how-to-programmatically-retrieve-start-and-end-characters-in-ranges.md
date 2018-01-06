@@ -20,11 +20,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e0cec972c731c823bb8c41f133ac721233a1b028
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 15b2fead00b84364e283e187f393405918e33852
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>Nasıl yapılır: Aralıklarda Program Aracılığıyla Başlangıç ve Bitiş Karakterlerini Alma
   Bu örnek, bir aralıkta başlangıç ve bitiş konumlarını karakter konumlarını nasıl aldığını gösterir.  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: program aracılığıyla sıfırlama Word belgelerinde aralıkları](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
  [Nasıl yapılır: program aracılığıyla daraltma aralıkları veya seçimleri](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
  [Nasıl yapılır: aralık oluştururken program aracılığıyla paragraf işaretlerini dışlama](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
- [Nasıl yapılır: program aracılığıyla belgelerdeki karakterleri sayma](../vsto/how-to-programmatically-count-characters-in-documents.md)  
+ [Nasıl yapılır: Belgelerde Program Aracılığıyla Karakter Sayma](../vsto/how-to-programmatically-count-characters-in-documents.md)  
   
   

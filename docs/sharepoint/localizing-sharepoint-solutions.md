@@ -24,11 +24,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8186110b04e3ff56b3c6b0cad03890f3233c03d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2339ee60e66bca7578c2d5d1e89c7bb649b15b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-sharepoint-solutions"></a>SharePoint Çözümlerini Yerelleştirme
   Böylece tüm dünyada kullanılabilir uygulamalarınız Hazırlama işlemi yerelleştirme bilinir. Yerelleştirme, belirli bir kültür kaynaklara çevirme. Daha fazla bilgi için bkz: [Globalizing ve yerelleştirme uygulamaları](/visualstudio/ide/globalizing-and-localizing-applications). Bu konu, bir SharePoint çözüm yerelleştirme hakkında genel bir bakış sağlar.  
@@ -138,6 +139,6 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
  [Nasıl yapılır: ASPX biçimlendirmesini yerelleştirme](../sharepoint/how-to-localize-aspx-markup.md)   
  [Nasıl yapılır: kod yerelleştirme](../sharepoint/how-to-localize-code.md)   
  [Nasıl yapılır: kaynak dosyası ekleme](../sharepoint/how-to-add-a-resource-file.md)   
- [Nasıl yapılır: yerelleştirilmiş adlar, özellikler ve izinleri belirtmek için kaynak dosyası kullanın](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  
+ [Nasıl yapılır: Yerelleştirilmiş Adlar. Özellikler ve İzinleri Belirtmek için Kaynak Dosyası Kullanma](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  
   
   

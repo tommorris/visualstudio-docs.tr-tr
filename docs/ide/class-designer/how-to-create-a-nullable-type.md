@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4c8cd4fac7cd6f498716b3611c1b37e1afdc600
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 17b234a774914e998c228dc780b645864420658d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Nasıl Yapılır: Boş Değer Atanabilir Tür Oluşturma (Sınıf Tasarımcısı)
 Belirli değer türleri her zaman sahip (gereksinim tanımlı bir değer veya). Bu ortak veritabanlarında olduğu bazı alanlar herhangi bir değer atanabilir olmayan uygulamadır. Örneğin, bir null değer, henüz bir değer atanmadı olduğunu belirtmek için bir veritabanı alanı atayabilirsiniz.  

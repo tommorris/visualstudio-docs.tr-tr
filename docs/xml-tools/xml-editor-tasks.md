@@ -12,45 +12,46 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9091298155a0c8223df954c0c7b9ca17a3cf7f72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c770de8513d5e04c9c30654216382a0650363818
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor-tasks"></a>XML Düzenleyicisi görevleri
 Bu bölümde, ortak görevlerin XML Düzenleyicisi ile nasıl tamamlanacağı açıklanmaktadır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [İzlenecek yol: XML Düzenleyicisi özelliklerini kullanma](../xml-tools/walkthrough-using-xml-editor-features.md)  
+ [İzlenecek Yol: XML Düzenleyicisi Özelliklerini Kullanma](../xml-tools/walkthrough-using-xml-editor-features.md)  
  Bazı XML Düzenleyicisi özelliklerin nasıl kullanıldığını gösterir.  
   
- [Nasıl yapılır: kullanılacak XML şemaları seçin](../xml-tools/how-to-select-the-xml-schemas-to-use.md)  
+ [Nasıl Yapılır: Kullanılacak XML Şemalarını Seçme](../xml-tools/how-to-select-the-xml-schemas-to-use.md)  
  Doğrulama için kullanılacak XML şeması seçin açıklar.  
   
- [Nasıl yapılır: bir XML belgesinden bir XML Şeması oluşturun](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)  
+ [Nasıl Yapılır: XML Belgesinden XML Şeması Oluşturma](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)  
  Bir XML Şeması oluşturmayı açıklar.  
   
- [Nasıl yapılır: XML Düzenleyicisi'nden XSLT dönüştürmesi yürütme](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)  
+ [Nasıl Yapılır: XML Düzenleyicisinden XSLT Dönüştürmesi Yürütme](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)  
  XSLT dönüşümü yürütmek açıklar.  
   
- [Nasıl yapılır: XML dosyalarını düzenleme](../xml-tools/how-to-edit-xml-files.md)  
+ [Nasıl Yapılır: XML Dosyalarını Düzenleme](../xml-tools/how-to-edit-xml-files.md)  
  XML dosyaları düzenlemeye başlamak açıklar.  
   
  [Nasıl yapılır: XML parçacıklarını kullanma](../xml-tools/how-to-use-xml-snippets.md).  
  XML Düzenleyicisi ile birlikte XML parçacıkları kullanımı gösterilmiştir.  
   
- [Nasıl yapılır: XML şemasından bir XML parçacığını oluştur](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)  
+ [Nasıl Yapılır: XML Şemasından XML Kod Parçacığı Oluşturma](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)  
  Bir XML şemasından bir XML parçacığını oluşturmak gösterilmiştir.  
   
  [Nasıl yapılır: XML parçacıkları oluşturma](../xml-tools/how-to-create-xml-snippets.md).  
  Yeni XML parçacıkları oluşturulacağını gösterir.  
   
- [İzlenecek yol: XSLT IntelliSense kullanma](../xml-tools/walkthrough-using-xslt-intellisense.md)  
+ [İzlenecek Yol: XSLT IntelliSense Kullanma](../xml-tools/walkthrough-using-xslt-intellisense.md)  
  XSLT IntelliSence özelliğinin nasıl kullanılacağı gösterilmektedir.  
   
- [İzlenecek yol: XSLT hiyerarşi kullanma](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
+ [İzlenecek Yol: XSLT Hiyerarşisi Kullanma](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
  Başvurulan stil sayfası hata ayıklamak gösterilmiştir.  
   
- [İzlenecek yol: XSLT Profil Oluşturucu](../xml-tools/walkthrough-xslt-profiler.md)  
+ [İzlenecek Yol: XSLT Profil Oluşturucusu](../xml-tools/walkthrough-xslt-profiler.md)  
  XSLT kodu için performans raporların nasıl oluşturulacağı gösterilmektedir.

@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7032f3663be7df1a06fa4dc16d4f4473e4666cfc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 09ea283b17a980ff9be1fae54ecc8b24912b70ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Nasıl Yapılır: Ekleme Listesi Güvenliğini Yapılandırma
   Yönetici izinlerine sahipseniz, yapılandırabileceğiniz [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] denetlemek için son kullanıcıların Office çözümleri listesine bir güven kararı kaydederek yükleme seçeneği verilip verilmediğini güven istemi. Ekleme listeleri hakkında daha fazla bilgi için bkz: [güvenen Office çözümleri ekleme listeleri kullanarak tarafından](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -213,6 +214,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ekleme listelerini kullanarak Office çözümlerine güvenme](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)  
+ [Office Çözümleri Güvenliğini Sağlama](../vsto/securing-office-solutions.md)  
   
   

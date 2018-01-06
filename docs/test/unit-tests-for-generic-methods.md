@@ -14,11 +14,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: "47"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 2a93a2af3f3d89a4970a949b42bea79b3641d53f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4e0afbcf6ff12376e3fcdf10925a20a4a7228130
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-tests-for-generic-methods"></a>Genel Metotlar için birim testleri
 Tam olarak, diğer yöntemleri için yaptığınız gibi açıklandığı gibi genel yöntemler için birim testleri oluşturabilir [nasıl yapılır: oluşturmak ve birim testi çalıştırma](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Aşağıdaki bölümler ve genel yöntemler için birim testleri oluşturma örnekler hakkında bilgi sağlar.  
@@ -199,4 +200,4 @@ namespace ClassLibrary2
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birim testinin anatomisi](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
- [Kodunuza birim testi](../test/unit-test-your-code.md)
+ [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)

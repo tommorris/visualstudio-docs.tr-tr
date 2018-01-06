@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1090d1509152aaa507220d3119977bb8e9252876
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 8c27307155a56aae07b69c02c6cbdf3da72059b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Nasıl yapılır: XML şemasından bir XML parçacığını oluştur
 XML Düzenleyicisi'ni bir XML Şeması Tanım Dili (XSD) şemadan XML parçacıkları oluşturabilme özelliği vardır. Örneğin, öğe adı yanındaki konumlandırılmış sırada bir XML dosyasına yazma gibi öğenin bu öğe için şema bilgileri üretilen XML verileri ile doldurmak için SEKME tuşuna basabilirsiniz.  
@@ -155,4 +156,4 @@ Varsayılan değerler oluşturulan ve düzenlenebilir değerleri olarak kaydedil
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML parçacıkları](../xml-tools/xml-snippets.md)   
- [Nasıl yapılır: XML parçacıklarını kullanma](../xml-tools/how-to-use-xml-snippets.md)
+ [Nasıl Yapılır: XML Kod Parçacıklarını Kullanma](../xml-tools/how-to-use-xml-snippets.md)

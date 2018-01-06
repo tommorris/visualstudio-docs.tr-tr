@@ -18,11 +18,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cad7fb4fe49df9688a0b9e7b3baa1f1108694136
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3885ce387aa27857e59fb3af74990d953c047225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Nasıl Yapılır: Şeritte Geliştirici Sekmesini Gösterme
   Erişim için **Geliştirici** sekmesinde bir Office uygulaması Şerit'te, varsayılan olarak görünmez olduğundan bu sekme göstermek için yapılandırmanız gerekir. Örneğin, eklemek istediğiniz sekmenin Göster gerekir bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> Word için belge düzeyi özelleştirme için.  
@@ -68,6 +69,6 @@ ms.lasthandoff: 10/31/2017
 5.  Seçin **Tamam** kapatmak için düğmesini **seçenekleri** iletişim kutusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)  
+ [Office Kullanıcı Arabirimini Özelleştirme](../vsto/office-ui-customization.md)  
   
   

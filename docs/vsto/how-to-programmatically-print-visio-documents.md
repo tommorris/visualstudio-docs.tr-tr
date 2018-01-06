@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e5740cca79714060fe2f480ebe42101192bb5275
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b07e0534c7ada907fb3140270087dcd5b048621
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Nasıl yapılır: Program Aracılığıyla Visio Belgelerini Yazdırma
   Microsoft Office Visio belgenin tamamını veya yalnızca belirli bir sayfa yazdırabilir.  
@@ -57,6 +58,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: program aracılığıyla yeni Visio belgeleri oluşturma](../vsto/how-to-programmatically-create-new-visio-documents.md)   
  [Nasıl yapılır: program aracılığıyla Visio belgelerini açma](../vsto/how-to-programmatically-open-visio-documents.md)   
  [Nasıl yapılır: program aracılığıyla Visio belgeleri kapatma](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Nasıl yapılır: program aracılığıyla Visio belgelerini kaydetme](../vsto/how-to-programmatically-save-visio-documents.md)  
+ [Nasıl yapılır: Program Aracılığıyla Visio Belgelerini Kaydetme](../vsto/how-to-programmatically-save-visio-documents.md)  
   
   

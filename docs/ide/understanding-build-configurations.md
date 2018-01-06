@@ -29,11 +29,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 003e4abaf5e6fbabead604c495b2018402cf74ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cf3f299f2b5ec2e38b5fe0315b6d0abc0411b12
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-build-configurations"></a>Derleme Yapılandırmalarını Anlama
 Çözüm ve proje özelliklerini derlemeleri farklı türde kullanmak üzere farklı yapılandırmaları depolayabilirsiniz. Oluştur, seçin, değiştirmek veya bir yapılandırma silmek için kullanabileceğiniz **Configuration Manager**. Menü çubuğunda açmak için seçin **yapı**, **Configuration Manager**, yalnızca yazın veya **yapılandırma** içinde **hızlı başlatma** kutusu. Aynı zamanda **çözüm yapılandırmaları** listesini **standart** bir yapılandırma seçin veya açmak için araç **Configuration Manager**.  
@@ -89,4 +90,4 @@ ms.lasthandoff: 10/31/2017
  [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)   
  [Çözümler ve projeler](../ide/solutions-and-projects-in-visual-studio.md)   
  [C/C++ oluşturma başvurusu](/cpp/build/reference/c-cpp-building-reference)   
- [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md)
+ [Devenv Komut Satırı Anahtarları](../ide/reference/devenv-command-line-switches.md)

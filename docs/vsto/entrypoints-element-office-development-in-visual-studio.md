@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eb219d1f88635a82efbc41acb031cdb46a6d7713
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9b3c9d82b625b2666513f0443493aac59d916e41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;giriş noktaları&gt; öğesi (Visual Studio'da Office Geliştirme)
   `entryPoints` Öğesinin `vstav3` ad alanı içeren tüm `entryPoint` Office çözümü ile ilgili bir öğe.  
@@ -175,6 +176,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md)   
  [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
   
   

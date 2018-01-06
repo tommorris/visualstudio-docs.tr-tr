@@ -22,11 +22,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: f56c7926e949511d90af20ce6789fe662c08e1c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e28e86324c967397e67eefe054ae4d220acb41f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Visual Studio hata ayıklayıcısı Windows Workflow Foundation (eski) için çağırma
 Bu konuda açıklanmaktadır kullanma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata ayıklamak için hata ayıklayıcı [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] eski uygulamalarda [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -58,4 +59,4 @@ Bu konuda açıklanmaktadır kullanma [!INCLUDE[vsprvs](../code-quality/includes
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: kesme iş akışları (eski)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
- [Hata ayıklama eski iş akışları](../workflow-designer/debugging-legacy-workflows.md)
+ [Eski İş Akışlarında Hata Ayıklama](../workflow-designer/debugging-legacy-workflows.md)

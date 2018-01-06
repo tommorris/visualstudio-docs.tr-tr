@@ -22,11 +22,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 00e32d3b94c1674c09b3a1a7f0f3e16757f1a810
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3f203b7e350f30d27d88e27ff9688bdbdee2b3d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="listobject-control"></a>ListObject Denetimi
   <xref:Microsoft.Office.Tools.Excel.ListObject> Denetim olayları gösterir ve veriye bağlı bir listedir. Bir çalışma sayfasına listesini eklediğinizde, Visual Studio oluşturur bir <xref:Microsoft.Office.Tools.Excel.ListObject> dayalı Microsoft Office Excel nesne modeline çapraz geçiş yapmak zorunda kalmadan doğrudan programlama yapabilirsiniz denetim.  
@@ -123,6 +124,6 @@ ms.lasthandoff: 10/31/2017
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   
  [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Nasıl yapılır: çalışma sayfalarını veritabanı verileriyle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Konak Denetimlerinin ve Konak Öğelerinin Programlama Sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

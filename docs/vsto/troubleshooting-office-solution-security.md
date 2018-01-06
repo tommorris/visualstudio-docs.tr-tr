@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bf7b639504d6bca53af590d200d9d291ddcd66b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3cc5656877f3e6c1ee578a53345e2482c2103223
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-office-solution-security"></a>Office Çözüm Güvenliğinde Sorunu Giderme
   Bu konu, Office çözümleri güvenliğini sağlama ile çalışırken karşılaşabileceğiniz ortak sorunları çözmek için ipuçları içerir.  
@@ -52,6 +53,6 @@ ms.lasthandoff: 10/31/2017
  IEESC ve Internet Explorer 7 etkisini yönetmek ve üzeri, web siteleri ve Evrensel Adlandırma Kuralı (UNC) yolları belirlemek için güven ve güvenilir güvenlik bölgeleri (Yerel intranet veya Güvenilen siteler) birine ekleyin. Bölgeleri yönetme hakkında daha fazla bilgi için bkz: [yapılandırma ClickOnce Güvenilen Yayımcılar](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)  
+ [Office Çözümleri Güvenliğini Sağlama](../vsto/securing-office-solutions.md)  
   
   

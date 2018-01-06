@@ -11,11 +11,12 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: "15"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 1a7692176545f341fa753aa8838a089639a7b753
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 68999863abbf539bf1d83456d0630820249adb77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere öykünücüler kullanma
 Microsoft.SharePoint.Emulators paketi, Microsoft SharePoint 2010 uygulamaları için yalıtılmış birim testleri oluşturmak için yardımcı olacak bir dizi sağlar. Öykünücüler kullanma [dolgular](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) gelen [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) en sık kullanılan nesneleri ve yöntemleri SharePoint API taklit hafif bellek içi nesneler oluşturmak için yalıtım framework. Bir SharePoint yöntem değil benzetilmiş veya bir öykünücü varsayılan davranışını değiştirmek istediğiniz istediğiniz sonuçları sağlamak için Fakes dolgular oluşturabilirsiniz.  
@@ -591,4 +592,4 @@ namspace MySPAppTests
  [Kodunuza birim testi](../test/unit-test-your-code.md)   
  [Kodlanmış UI testleriyle SharePoint 2010 uygulamalarını test etme](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)   
  [Web performans ve SharePoint 2010 ve 2013 uygulamalarında sınama yük](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
- [SharePoint çözümleri geliştirme](/office-dev/office-dev/developing-sharepoint-solutions)
+ [SharePoint Çözümleri Geliştirme](/office-dev/office-dev/developing-sharepoint-solutions)

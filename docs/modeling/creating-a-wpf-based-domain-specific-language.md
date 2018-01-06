@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e5774af4488c8cc9364f6b8875c350cad6b56450
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 906e00aae6666c994a1ead11584c1f5e48772c39
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-wpf-based-domain-specific-language"></a>WPF Tabanlı Etki Alanına Özgü Dil Oluşturma
 WPF Tasarımcısı grafik Tasarımcı yerine sahip bir etki alanına özgü dil oluşturabilirsiniz.  
@@ -23,4 +24,4 @@ WPF Tasarımcısı grafik Tasarımcı yerine sahip bir etki alanına özgü dil 
  Bu özellik hakkında bilgi ve örnekler için bkz Visual Studio Görselleştirme ve Modelleme Araçları Web sitesinde [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)
+ [Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama](../modeling/how-to-define-a-domain-specific-language.md)

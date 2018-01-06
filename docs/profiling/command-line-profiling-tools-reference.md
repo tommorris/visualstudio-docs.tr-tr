@@ -12,20 +12,21 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 206049d850b1f2f3c6b225b0c0d9c51d2a449a07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01f10f3d9c2f0f61708c14f2d7a8307f9db850f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-profiling-tools-reference"></a>Komut Satırı Profil Araçları Başvurusu
 Komut satırı performans araçları uygulamalarını komut isteminden profil programcıların izin verin. Aşağıdaki komut satırı profil oluşturma araçları, komut isteminden profil kodu izin verir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Vsınstr](../profiling/vsinstr.md)  
+ [VSInstr](../profiling/vsinstr.md)  
  VSInstr.exe izleme seçeneklerini listeler.  
   
- [Vsınstr uyarıları](../profiling/vsinstr-warnings.md)  
+ [VSInstr Uyarıları](../profiling/vsinstr-warnings.md)  
  Vsınstr aracı tarafından verilen uyarılar listeler.  
   
  [VSPerfCLREnv](../profiling/vsperfclrenv.md)  

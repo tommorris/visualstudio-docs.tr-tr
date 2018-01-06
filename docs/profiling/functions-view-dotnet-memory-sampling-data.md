@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd6473f0b0ca09369ff81d028ea80dc3f55bfb66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 92d2df0182f976af36e9182d080ef6b51130c826
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>İşlevler görünümü - .NET bellek örnekleme verileri
 .NET bellek ayırma örnekleme yöntemini kullanarak toplanan verileri profil işlevleri görünümünü ayırmaları sayısı ve boyutu raporları ve profil oluşturma çalışması sırasında bellek tahsis işlevleri listeler.  
@@ -44,4 +45,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlevler görünümü - izleme](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [İşlevler görünümü](../profiling/functions-view-sampling-data.md)   
- [İşlevler görünümü](../profiling/functions-view-instrumentation-data.md)
+ [İşlevler Görünümü](../profiling/functions-view-instrumentation-data.md)

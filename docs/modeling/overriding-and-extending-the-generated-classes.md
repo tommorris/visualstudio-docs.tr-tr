@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 81f218f9c0d9cd5d9c6abf8f4f9f0fb78181f4f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d794edbb4f554e71e5d65a3e48e5393be61896a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Üretilen Sınıfları Geçersiz Kılma ve Genişletme
 DSL tanımınızı, bir etki alanına özgü dil tabanlı araçlar güçlü bir dizi yapı bir platformdur. Birçok uzantıları ve uyarlamalar geçersiz kılma ve DSL tanımından oluşturulan sınıflar genişletme tarafından yapılabilir. Bu sınıfların yalnızca DSL tanımı diyagramda açıkça tanımlanmış etki alanı sınıfları, aynı zamanda araç kutusu, Gezgini, seri hale getirme ve benzeri tanımlayan diğer sınıflar içerir.  

@@ -19,11 +19,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7232e75033510f0e7b2ed10d0cbd0c319cf920fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 06f38d7e95bbe4b0f52b31f2f73584ff827e4225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Nasıl yapılır: Belgelerde Program Aracılığıyla Karakter Sayma
   İlk karakter, bir belge ekleme noktasını temsil eden karakter 0, konumundadır. Son karakterin belgede toplam karakter sayısı eşittir. Kullanarak bir belgedeki karakter sayısını belirleyebilirsiniz <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> özelliği <xref:Microsoft.Office.Interop.Word.Characters> koleksiyonu.  
@@ -58,6 +59,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: program aracılığıyla başlangıç ve bitiş karakterlerini aralıkları alma](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)  
+ [Nasıl yapılır: Belgelerde Aralıkları Program Aracılığıyla Tanımlama ve Seçme](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)  
   
   

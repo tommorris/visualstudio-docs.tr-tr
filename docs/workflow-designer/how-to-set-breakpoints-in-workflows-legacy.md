@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 89189feb32d84db8fb5c5eb7970faf325be1acd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d634f9648ed87f448e1b984392c827badc42930c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Nasıl yapılır: kesme iş akışları (eski)
 Bu konuda kesme noktaları kümesinde açıklar [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] uygulamaları derleme eski kullanarak [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] olduğunda, [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] uygulamanın gerekir ya da hedeflemek [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -65,4 +66,4 @@ Bu konuda kesme noktaları kümesinde açıklar [!INCLUDE[wf](../workflow-design
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama eski iş akışları](../workflow-designer/debugging-legacy-workflows.md)   
- [Visual Studio hata ayıklayıcısı Windows Workflow Foundation (eski) için çağırma](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
+ [Windows Workflow Foundation için Visual Studio Hata Ayıklayıcısını Çağırma (Eski)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)

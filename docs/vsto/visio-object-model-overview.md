@@ -22,20 +22,21 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 732a270564c40c4ca20952d86abb8618f9a060f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0ba481206e24870e0772290beba129d373c30862
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visio-object-model-overview"></a>Visio Nesne Modeline Genel Bakış
   Microsoft Office Visio için Office çözümleri geliştirmek için Visio nesne modeli ile etkileşim kurabilirsiniz. Bu nesne modeli sınıfları ve birincil birlikte çalışma derlemesi Visio için sağlanan ve Microsoft.Office.Interop.Visio ad alanında tanımlanan arabirimleri oluşur.  
   
  Bu konu, Visio nesne modeline kısa bir genel bakış sağlar. Office projelerinde görevleri gerçekleştirmek için Visio nesne modelini kullanma hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Visio belgeleriyle çalışma](../vsto/working-with-visio-documents.md)  
+-   [Visio Belgeleriyle Çalışma](../vsto/working-with-visio-documents.md)  
   
--   [Visio şekilleri ile çalışma](../vsto/working-with-visio-shapes.md)  
+-   [Visio Şekilleri ile Çalışma](../vsto/working-with-visio-shapes.md)  
   
 ## <a name="understanding-the-visio-object-model"></a>Visio nesne modelini anlama  
  Visio ile etkileşim kurabilen birçok nesne sağlar. Bu nesneler kullanıcı arabirimini yakından takip eden hiyerarşik olarak düzenlenir. Hiyerarşisinin en üstünde olduğu [Microsoft.Office.Interop.Visio.Application](https://msdn.microsoft.com/library/office/ff766485.aspx) nesnesi. Bu nesne Visio'nun geçerli örneğini temsil eder. Microsoft.Office.Interop.Visio.Application nesnesi Microsoft.Office.Interop.Visio.Documents yanı sıra Microsoft.Office.Interop.Visio.Document ve Microsoft.Office.Interop.Visio.Page nesneleri içerir ve Microsoft.Office.Interop.Visio.Pages koleksiyonları. Bu nesneleri ve koleksiyonları her birçok yöntem ve işlemek ve ile etkileşim için erişebileceği özellikler vardır.  
@@ -83,6 +84,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visio çözümleri](../vsto/visio-solutions.md)   
  [Visio belgeleriyle çalışma](../vsto/working-with-visio-documents.md)   
- [Visio şekilleri ile çalışma](../vsto/working-with-visio-shapes.md)  
+ [Visio Şekilleri ile Çalışma](../vsto/working-with-visio-shapes.md)  
   
   

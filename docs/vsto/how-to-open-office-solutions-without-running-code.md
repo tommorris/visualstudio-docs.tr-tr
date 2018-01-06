@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74cc162e0323656bea9d48c8458eaf77519fdc14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c190c4ace56b2be9c63c9f11570354cddc6c8635
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Nasıl Yapılır: Kod Çalıştırmadan Office Çözümlerini Açma
   Yönetilen kod uzantıları ile oluşturulan bir Microsoft Office çözümü, son kullanıcının Office uygulamasında güvenlik ayarı Yüksek olarak ayarlansa bile çalışır. .NET derleme kod güvenliği Microsoft Office tarafından değil, Microsoft .NET Framework tarafından yönetilen olmasıdır.  
@@ -57,6 +58,6 @@ ms.lasthandoff: 10/31/2017
  [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)   
  [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)   
  [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)   
- [Uygulama ve dağıtım bildirimlerini Office çözümleri](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
+ [Office Çözümlerinde Uygulama ve Dağıtım Bildirimleri](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
   
   

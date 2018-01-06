@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 89e050bb2a946a03e8ccf854134d46af9001dbd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89311ac792a5dfd55497ccdadea89289dca11ff5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-development-samples"></a>Office Geliştirme Örnekleri
   Visual Studio, Microsoft Office geliştirici araçları Office çözümleri oluşturmak için nasıl kullanılacağını gösteren örnek uygulamalar içerir. Bu örnek kodda sözdizimi, yapı ve Office çözümleri oluşturmak için kullanılan teknikleri gösterilmektedir.  
@@ -45,6 +46,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MSDN geliştirici örnekleri: Kod örnekleri ile bilgi edinin](http://go.microsoft.com/fwlink/?LinkID=248199)   
- [Office programlarındaki ortak görevler](../vsto/common-tasks-in-office-programming.md)  
+ [Office Programlarındaki Ortak Görevler](../vsto/common-tasks-in-office-programming.md)  
   
   

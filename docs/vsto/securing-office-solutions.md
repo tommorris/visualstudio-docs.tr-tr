@@ -19,22 +19,23 @@ caps.latest.revision: "78"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50960f95b317f389cfe9f99154e51a5103b419d3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 45052deff58e992b427f72188fcb0dc8ade91b95
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="securing-office-solutions"></a>Office Çözümleri Güvenliğini Sağlama
   Office çözümleri için güvenlik modeli birçok teknoloji içerir: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], Microsoft Office ve Internet Explorer Yasak siteler bölgesi Güven Merkezi. Aşağıdaki bölümlerde, farklı güvenlik özelliklerinin nasıl çalıştığı açıklanmaktadır:  
   
--   [Office çözümlerine güven verme](#GrantingTrustToSolutions)  
+-   [Office Çözümlerine Güven Verme](#GrantingTrustToSolutions)  
   
 -   [Belgelere güven verme](#GrantingTrustToDocuments)  
   
 -   [Windows Installer kullanırken, güven verme](#GrantingTrustWindowsInstaller)  
   
--   [Office çözümleri için belirli güvenlik konuları](#Security)  
+-   [Office Çözümleriyle İlgili Belirli Güvenlik Konuları](#Security)  
   
 -   [Güvenlik geliştirme sırasında](#SecurityDuringDeployment)  
   
@@ -114,6 +115,6 @@ ms.lasthandoff: 10/31/2017
  [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md)   
  [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce Başvurusu](/visualstudio/deployment/clickonce-reference)   
- [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)  
+ [Office Çözümünü Dağıtma](../vsto/deploying-an-office-solution.md)  
   
   

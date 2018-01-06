@@ -20,11 +20,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655aea7bed7e61bd37f30240d02a8214b9ff23ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d0f0a2162c4144c6a9fd67650d467b9828a3add
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>İnceleme: PowerPoint için İlk VSTO Eklentinizi Oluşturma
   Bu kılavuzda nasıl Microsoft Office PowerPoint için VSTO eklenti oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin sunuları açık olan bağımsız olarak kullanılabilir. Daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -139,6 +140,6 @@ ms.lasthandoff: 10/31/2017
  [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)   
  [Office çözümleri oluşturma](../vsto/building-office-solutions.md)   
  [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)   
- [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)  
+ [Office Proje Şablonlarına Genel Bakış](../vsto/office-project-templates-overview.md)  
   
   

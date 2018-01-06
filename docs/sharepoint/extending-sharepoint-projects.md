@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d0bbb086c66bad3ad2beedab2b390244a9e185b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8f8d6087576f6b64b9b0694e9c177637dd28c059
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-sharepoint-projects"></a>SharePoint Projelerini Genişletme
   SharePoint projeleri proje düzeyi özelliklerini özelleştirmek istediğiniz zaman bir proje uzantısı oluşturma. Örneğin, özel Proje özelliklerini eklemek ya da kullanıcı bir SharePoint çözüm Visual Studio'da geliştirir başlatılan proje düzeyi olaylara yanıt.  
@@ -52,6 +53,6 @@ ms.lasthandoff: 10/31/2017
  [Özel SharePoint proje öğesi türlerini tanımlama](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [SharePoint proje öğelerini genişletme](../sharepoint/extending-sharepoint-project-items.md)   
  [Genişletme SharePoint paketleme ve dağıtma](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)  
+ [SharePoint Proje Sistemini Genişletme](../sharepoint/extending-the-sharepoint-project-system.md)  
   
   

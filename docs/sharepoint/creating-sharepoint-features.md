@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8f78a12aa70c3c7042a821a737485da963f7a56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a6917a8909bed30319d104f45398409b4ba367f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-features"></a>SharePoint Özellikleri Oluşturma
   Daha kolay dağıtım için ilgili SharePoint Proje öğeleri gruplandırmak için bir SharePoint özelliğini kullanabilirsiniz. Özellikleri oluşturma kapsamlarını ayarlayın ve diğer özellikleri SharePoint özelliği Designer kullanarak bağımlılıklar olarak işaretleyin. Tasarımcı aynı zamanda her bir özelliğin tanımlayan bir XML dosyasıdır bir bildirim oluşturur.  
@@ -59,6 +60,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Nasıl yapılır: SharePoint özelliklerine öğe ekleme ve kaldırma](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
- [Nasıl yapılır: özellik bağımlılıkları ekleme ve kaldırma](../sharepoint/how-to-add-and-remove-feature-dependencies.md)  
+ [Nasıl yapılır: Özellik Bağımlılıkları Ekleme ve Kaldırma](../sharepoint/how-to-add-and-remove-feature-dependencies.md)  
   
   

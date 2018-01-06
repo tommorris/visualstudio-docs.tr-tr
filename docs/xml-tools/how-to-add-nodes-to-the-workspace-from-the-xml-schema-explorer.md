@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4781830d73d36f981937a51e7f9a8bf86780198c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37da28d4c5db1e008af29c03997943720dcfbada
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Nasıl yapılır: XML şema Gezgini'nden çalışma alanına düğümleri eklemek
 Bu konuda düğüm ekleme açıklanmaktadır [XML şema Tasarımcısı çalışma](../xml-tools/xml-schema-designer-workspace.md) XML Şeması Gezgini'nden. Bu bir XSD Tasarımcısı görünümü üzerine XML Şeması Gezgini'nden düğümleri bırakarak veya XML Şeması Explorer'ın bağlam menüsünü kullanarak elde edilebilir. XML şema Gezgini tarafından gerçekleştirilen bir arama sonucunda vurgulanmış düğümleri de ekleyebilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: şema ayarlamak arama sonucu düğümleri Ekle çalışma alanına](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  
@@ -61,4 +62,4 @@ Bu konuda düğüm ekleme açıklanmaktadır [XML şema Tasarımcısı çalışm
      `purchaseOrder` Düğümü ve `PurchaseOrderType` düğümünün görünen diğer yanındaki tasarım yüzeyine [grafik görünümü](../xml-tools/graph-view.md). İki düğüm birbiriyle ilişkili olmadığından ( `purchaseOrder` öğesidir `PurchaseOrderType` türü), bir ok aralarında çizilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XML şema Gezgini](../xml-tools/xml-schema-explorer.md)
+ [XML Şema Gezgini](../xml-tools/xml-schema-explorer.md)

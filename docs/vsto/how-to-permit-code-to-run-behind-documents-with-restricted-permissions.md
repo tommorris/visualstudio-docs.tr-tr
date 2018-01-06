@@ -22,11 +22,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1d5ab02ea2eb2d34a82607b8f7fd4fbf3f02dd76
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2f3ff7f7bb76962e22705fc5c0d42fdf7568ff97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Nasıl Yapılır: Kodun Kısıtlı İzinle Belgelerin Arkasında Çalışmasına İzin Verme
   Microsoft Office Bilgi Hakları Yönetimi (IRM) özelliğini, bir belge veya çalışma kitabı izinlerini kısıtlamak için kullanabilirsiniz. Varsayılan olarak, kısıtlı Microsoft Office Word belgesine veya Microsoft Office Excel çalışma kitabı arkasındaki kodda çalıştırma izni yok. Böylece, yönetilen kod uzantıları nesne modeline erişebilir ve çözümünüz çalışır varsayılan değiştirebilirsiniz.  
@@ -56,6 +57,6 @@ ms.lasthandoff: 10/31/2017
  [Office belgelerinde parola koruması](../vsto/password-protection-on-office-documents.md)   
  [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)   
  [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)   
- [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)  
+ [Office Çözümünü Dağıtma](../vsto/deploying-an-office-solution.md)  
   
   

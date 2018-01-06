@@ -32,11 +32,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8426031ffd0b73b131d811127be4c8696a0940e9
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 53b61b1fa49ffcbc047d47dd26586b45ae883c5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Sınıf Tasarımcısı Hataları Hakkında Ek Bilgiler
 Sınıf Tasarımcısı, kaynak dosyalarının konumunu böylece proje yapınızı değiştirme izlemez veya projedeki kaynak dosyalarını taşıma sınıfı Designer'ın türü (özellikle bir typedef, temel sınıfların veya ilişki türleri kaynak türü) kaybetmesine neden olabilir. Hata gibi alabilirsiniz **Sınıf Tasarımcısı bu tür görüntüleyemiyor**. Bunu yaparsanız, yeniden yeniden görüntülemek için sınıf diyagramı konumlandırılan veya değiştirilen kaynak kodunu sürükleyin.  

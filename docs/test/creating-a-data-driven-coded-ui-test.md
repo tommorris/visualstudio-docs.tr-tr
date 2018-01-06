@@ -12,11 +12,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: f58f547462c6c6f4d313d8b9814974f660bf59de
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cb7e1e231cda62f5312be7dd1058667e5b9ae363
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Verilerle Çalışan Kodlanmış UI Testi Oluşturma
 Farklı koşullarda test etmek için farklı parametre değerleri ile birden çok kez testleri çalıştırabilirsiniz. Veri tabanlı kodlanmış UI testleri bunu yapmak için uygun bir yöntemdir. Kodlanmış UI Test yineleme veri kaynağındaki her satır olduğundan ve bir veri kaynağı, parametre değerleri tanımlayın. Genel test sonucu, tüm yinelemeleri sonucunu dayalı olacak. Örneğin, bir test yineleme başarısız olursa genel test sonucu başarısız olur.  
@@ -202,7 +203,7 @@ Farklı koşullarda test etmek için farklı parametre değerleri ile birden ço
   
      .Csv dosyasında değerleri kullanarak üç yineleme aracılığıyla testi görmeniz gerekir. Doğrulama de çalışması gerekir ve test Test Explorer'ın geçti olarak görüntülenmelidir.  
   
- **Kılavuzu**  
+ **Kılavuz**  
   
  Ek bilgi için bkz: [Visual Studio 2012 - bölüm 2 ile sürekli teslimat için test etme: birim testi: İç sınama](http://go.microsoft.com/fwlink/?LinkID=255188) ve [Visual Studio 2012 - bölüm 5 ile sürekli teslimat için test etme: Sistem testlerini otomatikleştirme](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
@@ -257,4 +258,4 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
  [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Kodlanmış UI testleri için en iyi yöntemler](../test/best-practices-for-coded-ui-tests.md)   
- [Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

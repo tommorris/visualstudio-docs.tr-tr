@@ -20,11 +20,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 85a555280224d6c8ef853a081698530516052539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 629b27c5947a2744886ac0d3fed8898ece386c6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Nasıl yapılır: Son Kullanılan Çalışma Kitabı Dosyalarını Program Aracılığıyla Listeleme
   <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> Özelliği son kullanılan dosyalar Microsoft Office Excel listede tüm dosyaların adlarını içeren bir koleksiyon döndürür. Liste uzunluğu korumak için kullanıcı tarafından seçilen dosyaları sayısına bağlı olarak değişir. Bir aralık içinde sonuçlarını görüntüleyebilirsiniz.  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çalışma kitaplarıyla çalışma](../vsto/working-with-workbooks.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

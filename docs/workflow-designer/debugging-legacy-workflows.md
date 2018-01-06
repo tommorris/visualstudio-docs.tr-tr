@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2253eb414e58d5168cf6e1d2f4c22880d18d1bd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d15236de90af6a8749482f2b159d66c28a1b8c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-legacy-workflows"></a>Hata ayıklama eski iş akışları
 Eski kullanıyorsanız [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] içinde [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] oluşturmak için [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] target.NET Framework 3.0 veya 3.5, başka bir programı gibi iş akışlarınızı kesme noktalarını ayarlama işlemlere ekleme ve iş parçacıkları inceleyerek ayıklanabilmesi, uygulamalar ve çağrı yığını. Uzaktan hata ayıklama seçeneğiniz de vardır.  
@@ -59,16 +60,16 @@ Eski kullanıyorsanız [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)
 -   Karışık mod hata ayıklaması.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Visual Studio hata ayıklayıcısı Windows Workflow Foundation (eski) için çağırma](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
+ [Windows Workflow Foundation için Visual Studio Hata Ayıklayıcısını Çağırma (Eski)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
   
- [Windows Workflow Foundation (eski) için Visual Studio hata ayıklayıcısı devre dışı bırakma](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
+ [Windows Workflow Foundation için Visual Studio Hata Ayıklayıcısını Devre Dışı Bırakma (Eski)](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
   
- [Nasıl yapılır: hata ayıklama ASP.NET tabanlı iş akışları (eski)](../workflow-designer/how-to-debug-aspnet-based-workflows-legacy.md)  
+ [Nasıl Yapılır: ASP.NET Tabanlı İş Akışlarında Hata Ayıklama (Eski)](../workflow-designer/how-to-debug-aspnet-based-workflows-legacy.md)  
   
- [Nasıl yapılır: kesme iş akışları (eski)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)  
+ [Nasıl Yapılır: İş Akışlarında Kesme Noktası Ayarlama (Eski)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)  
   
- [Hata ayıklama iş akışları uzak bir bilgisayardan (eski)](../workflow-designer/debugging-workflows-from-a-remote-computer-legacy.md)  
+ [Uzak Bir Bilgisayardan İş Akışlarında Hata Ayıklama (Eski)](../workflow-designer/debugging-workflows-from-a-remote-computer-legacy.md)  
   
- [Hata ayıklama sürüm seçenekleri (eski)](../workflow-designer/debug-stepping-options-legacy.md)  
+ [Hata Ayıklama Adımlama Seçenekleri (Eski)](../workflow-designer/debug-stepping-options-legacy.md)  
   
- [Nasıl yapılır: hata ayıklama atlama seçeneği (eski) değiştirme](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+ [Nasıl Yapılır: Hata Ayıklama Adımlama Seçeneğini Değiştirme (Eski)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 836568ff9c8b18c944ed2fe9e1e407c2176b48c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6c7bfb38e31f2ac9a8bb72f93015bfafbe270c64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-sharepoint-solutions"></a>SharePoint Çözümleri Geliştirme
   Birkaç SharePoint proje türü şablonları kullanılabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint siteleri ve site öğeleri oluşturmak için. Kullanılabilir proje türleri listesi için bkz: [SharePoint Proje ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md). Bir SharePoint Proje özelliklerini ve bir açıklama öğelerin aşağıda verilmiştir.  
@@ -113,29 +114,29 @@ ms.lasthandoff: 10/31/2017
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[SharePoint Proje ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md)|SharePoint Proje ve proje öğesi şablonları size kullanılabilir açıklar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Nasıl yapılır: bir SharePoint projesine öğeler ekleme](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Yeni veya var olan öğelerin nasıl eklendiğini açıklar bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.|  
-|[İzlenecek yol: bir Site sütunu, içerik türü ve SharePoint listesi oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Adım adım bir müşteri alan, içerik türü, liste tanımını ve liste örneği oluşturmada size yol gösterir.|  
-|[Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)|Oluşturduğunuz proje için olay alıcı eklemeyi açıklar [izlenecek yol: bir Site sütunu, içerik türü ve SharePoint listesi oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
-|[SharePoint iş akışı çözümleri oluşturma](../sharepoint/creating-sharepoint-workflow-solutions.md)|İş akışı ilişkilendirme formları ve iş akışı başlatma formları içeren iş akışı projeleri nasıl oluşturulacağını açıklar.|  
-|[SharePoint için sayfa oluşturma](../sharepoint/creating-pages-for-sharepoint.md)|SharePoint için uygulama sayfaları, site sayfaları, ana sayfalar ve sayfa düzenleri gibi sayfaları nasıl oluşturabileceğiniz açıklanmaktadır.|  
-|[SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)|İçerik, Görünüm ve davranış SharePoint sitesi sayfalarının bir tarayıcı kullanarak doğrudan değiştirmek kullanıcıların denetimlerin nasıl ekleneceğini açıklar.|  
-|[Web Bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Uygulama sayfaları ve SharePoint çalıştıran Web bölümleri tarafından kullanılabilecek kullanıcı denetimlerinin nasıl oluşturulduğunu açıklar.|  
-|[İş verilerini SharePoint ile tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)|Web Hizmetleri ve arka uç sunucu uygulamaları verilerden bir SharePoint uygulamasına tümleştirmeyi açıklamaktadır.|  
-|[SharePoint için site tanımları oluşturma](../sharepoint/creating-site-definitions-for-sharepoint.md)|Site tanımları oluşturmayı açıklar: SharePoint siteleri oluşturmak için kullanılan şablon.|  
-|[Mevcut bir SharePoint sitesinden öğeleri içeri aktarma](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|Bir SharePoint sitesinden öğeleri gibi içerik türleri ve modülleri içe aktarmayı açıklar bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.|  
-|[Çözümde dosyaları eklemeyi modüllerini kullanma](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Modülleri dosyalarından dağıtmak için nasıl kullanılacağını açıklar, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proje SharePoint sitesi.|  
-|[Sunucu Gezgini kullanarak SharePoint bağlantılarına gözatma](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Sunucu Gezgini kullanarak yerel SharePoint sitelerine göz açıklar.|  
-|[Paketleme ve dağıtım bilgileri proje öğeleri sağlama](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Proje öğesi özellikleri güvenli denetim girişleri, proje çıktı başvuruları ve özellik değerleri gibi projeleri için paketleme ve dağıtım bilgileri sağlamak için nasıl kullanılacağını açıklar.|  
-|[Nasıl yapılır: ekleme ve kaldırma eşlenen klasörler](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Nasıl eşlenen klasörler açıklar SharePoint kaynaklarını daha kolay erişim sağlamak için projenize eklenebilir.|  
-|[Korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md)|Korumalı çözümler ile ilişkili sorunlar açıklanmaktadır.|  
-|[SharePoint çözümleri için güvenlik](../sharepoint/security-for-sharepoint-solutions.md)|SharePoint çözümleri geliştirmek için güvenlik konuları açıklar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
+|[SharePoint Projesi ve Proje Öğesi Şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md)|SharePoint Proje ve proje öğesi şablonları size kullanılabilir açıklar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
+|[Nasıl yapılır: Bir SharePoint Projesine Öğeler Ekleme](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Yeni veya var olan öğelerin nasıl eklendiğini açıklar bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.|  
+|[İzlenecek yol: SharePoint için Site Sütunu, İçerik Türü ve Liste Oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Adım adım bir müşteri alan, içerik türü, liste tanımını ve liste örneği oluşturmada size yol gösterir.|  
+|[Nasıl yapılır: Olay Alıcısı Oluşturma](../sharepoint/how-to-create-an-event-receiver.md)|Oluşturduğunuz proje için olay alıcı eklemeyi açıklar [izlenecek yol: bir Site sütunu, içerik türü ve SharePoint listesi oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
+|[SharePoint İş Akışı Çözümleri Oluşturma](../sharepoint/creating-sharepoint-workflow-solutions.md)|İş akışı ilişkilendirme formları ve iş akışı başlatma formları içeren iş akışı projeleri nasıl oluşturulacağını açıklar.|  
+|[SharePoint için Sayfa Oluşturma](../sharepoint/creating-pages-for-sharepoint.md)|SharePoint için uygulama sayfaları, site sayfaları, ana sayfalar ve sayfa düzenleri gibi sayfaları nasıl oluşturabileceğiniz açıklanmaktadır.|  
+|[SharePoint için Web Bölümleri Oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)|İçerik, Görünüm ve davranış SharePoint sitesi sayfalarının bir tarayıcı kullanarak doğrudan değiştirmek kullanıcıların denetimlerin nasıl ekleneceğini açıklar.|  
+|[Web Bölümleri veya Uygulama Sayfaları için Yeniden Kullanılabilir Denetimler Oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Uygulama sayfaları ve SharePoint çalıştıran Web bölümleri tarafından kullanılabilecek kullanıcı denetimlerinin nasıl oluşturulduğunu açıklar.|  
+|[İş Verilerini SharePoint ile Tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)|Web Hizmetleri ve arka uç sunucu uygulamaları verilerden bir SharePoint uygulamasına tümleştirmeyi açıklamaktadır.|  
+|[SharePoint için Site Tanımları Oluşturma](../sharepoint/creating-site-definitions-for-sharepoint.md)|Site tanımları oluşturmayı açıklar: SharePoint siteleri oluşturmak için kullanılan şablon.|  
+|[Mevcut bir SharePoint Sitesinden Öğeleri İçeri Aktarma](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|Bir SharePoint sitesinden öğeleri gibi içerik türleri ve modülleri içe aktarmayı açıklar bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.|  
+|[Çözüme Dosyaları Dahil Etmek için Modül Kullanma](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Modülleri dosyalarından dağıtmak için nasıl kullanılacağını açıklar, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proje SharePoint sitesi.|  
+|[Sunucu Gezgini Kullanarak SharePoint Bağlantılarına Gözatma](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Sunucu Gezgini kullanarak yerel SharePoint sitelerine göz açıklar.|  
+|[Proje Öğelerinde Paketleme ve Dağıtım Bilgileri Sağlama](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Proje öğesi özellikleri güvenli denetim girişleri, proje çıktı başvuruları ve özellik değerleri gibi projeleri için paketleme ve dağıtım bilgileri sağlamak için nasıl kullanılacağını açıklar.|  
+|[Nasıl yapılır: Eşlenmiş Klasörler Ekleme ve Kaldırma](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Nasıl eşlenen klasörler açıklar SharePoint kaynaklarını daha kolay erişim sağlamak için projenize eklenebilir.|  
+|[Korumalı Çözümle İlgili Konular](../sharepoint/sandboxed-solution-considerations.md)|Korumalı çözümler ile ilişkili sorunlar açıklanmaktadır.|  
+|[SharePoint Çözümleri için Güvenlik](../sharepoint/security-for-sharepoint-solutions.md)|SharePoint çözümleri geliştirmek için güvenlik konuları açıklar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[URL Seçici iletişim kutusu &#40; SharePoint geliştirme Visual Studio &#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Projenizdeki veya yerel SharePoint sunucusuna kaynaklara yolu başvurular eklemek için kullanabileceğiniz bir iletişim kutusu açıklar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Başlarken &#40; SharePoint geliştirme Visual Studio &#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Sunucu Gezgini kullanarak SharePoint bağlantılarına gözatma](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [SharePoint Çözümlerini Paketleme ve Dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

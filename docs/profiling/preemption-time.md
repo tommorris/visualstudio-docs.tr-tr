@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 447229fd3eeb0ded2b8d6ec56716c4ec95c36661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ee0f1be5d687c145bc2c8af448b30ec364df2f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="preemption-time"></a>Önalım Zamanı
 Bu kesimler çizelgesinde Önalım kategorilere engelleme zamanı ile ilişkilendirilmiş. Bu kategori, bir iş parçacığı çıkış nedeni aşağıdakilerden biri nedeniyle anahtarlanır olduğunu anlamına gelir:  
@@ -32,4 +33,4 @@ Bu kesimler çizelgesinde Önalım kategorilere engelleme zamanı ile ilişkilen
  Preempted bir kesim için araç ipucu önalım neden iş parçacığı ve işlem adını görüntüler. Ancak, bu işlem veya sürdü üzerinden iş parçacığı gerçekten preempted dönem çalıştığını göstermez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)
+ [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c2c9e2111e02bb9669b7e915bb170e4607932978
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d9949cd9686c846c3baec67553b8cab203bc843
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Nasıl yapılır: Program Aracılığıyla Çalışma Sayfası Açıklamaları Ekleme ve Silme
   Program aracılığıyla ekleyin ve Microsoft Office Excel çalışma sayfası açıklamaları silin. Birden çok hücre aralıkları için tek hücrelere yalnızca açıklamalar eklenebilir.  
@@ -67,6 +68,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çalışma sayfaları ile çalışma](../vsto/working-with-worksheets.md)   
  [Nasıl yapılır: program aracılığıyla çalışma sayfası açıklamalarını görüntüleme](../vsto/how-to-programmatically-display-worksheet-comments.md)   
- [NamedRange denetimi](../vsto/namedrange-control.md)  
+ [NamedRange Denetimi](../vsto/namedrange-control.md)  
   
   

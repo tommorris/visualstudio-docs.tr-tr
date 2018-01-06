@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 606924d197dc88b5dd5e400e1df8523e83e58259
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 5ee2965fab52915ec3f9651edd3dc51b2ed1c491
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graph-view"></a>Grafik görünümü
 Grafik görünümü genel şeması düğümlerin ve düğümler arasındaki ilişkileri grafik bir gösterimini sağlar. Grafik görünümü, tasarım yüzeyine ayarlamak şema düzenini değiştirmek izin vermediğini unutmayın. Grafik görünümü, XML şema Tasarımcısı araç ve içerik haritası çubuğunu de içerir.  
@@ -55,7 +56,7 @@ Grafik görünümü genel şeması düğümlerin ve düğümler arasındaki ili�
 |**Diyagram görüntü olarak dışarı aktar...**|Tasarım yüzeyine bir XPS dosyasına kaydeder.|  
 |**Tümünü Seç**|Tasarım yüzeyine tüm düğümlerde seçer.|  
 |**Görünümü Kodu**|Seçili düğümün XML Düzenleyicisi'nde içeren dosyayı açar. XML şema Explorer'da seçili öğe ayrıca XML Düzenleyicisi'nde seçili olur.|  
-|**Özellik penceresi**|Açılır **özellikleri** (Bu zaten açık değilse) penceresi. Bu pencere düğüm hakkındaki bilgileri görüntüler.|  
+|**Özellik Penceresi**|Açılır **özellikleri** (Bu zaten açık değilse) penceresi. Bu pencere düğüm hakkındaki bilgileri görüntüler.|  
   
  Yukarıda açıklanan ortak seçeneklerin yanı sıra genel öğeleri için bağlam menüsünde de aşağıdaki seçenekler vardır:  
   

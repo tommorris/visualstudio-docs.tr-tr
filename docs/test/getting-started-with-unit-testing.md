@@ -12,11 +12,12 @@ ms.assetid: 2171CD69-FBB1-4994-9DCC-3BFFDFD26662
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 17113215615ff87ef0af611a5bc2061ca0126911
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: da80adbf7df01d18ada256f6d419cb015c34369a
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="get-started-with-unit-testing"></a>Birim testi ile çalışmaya başlama
 
@@ -91,21 +92,21 @@ Daha fazla ayrıntı için bkz: [Canlı birim testi Visual Studio'da](https://bl
 <a name="intellitest"></a>
 ## <a name="generate-unit-tests-with-intellitest"></a>Intellitest ile birim testleri oluşturma
 
-Intellitest çalıştırdığınızda, hangi testlerin başarısız oluyor ve bunları düzeltmek için tüm gerekli kodu eklemek kolayca görebilirsiniz. Hangi regresyon suite sağlamak amacıyla bir test projesi kaydetmek için oluşturulan testleri seçebilirsiniz. Kodunuzu değiştirmek gibi oluşturulan testleri kod değişikliklerinizin ile senkronize tutmaya Intellitest yeniden çalıştırın. Bilgi edinmek için bkz [Intellitest ile kodunuz için birim testleri oluşturma](https://docs.microsoft.com/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest).
+Intellitest çalıştırdığınızda, hangi testlerin başarısız oluyor ve bunları düzeltmek için tüm gerekli kodu eklemek kolayca görebilirsiniz. Hangi regresyon suite sağlamak amacıyla bir test projesi kaydetmek için oluşturulan testleri seçebilirsiniz. Kodunuzu değiştirmek gibi oluşturulan testleri kod değişikliklerinizin ile senkronize tutmaya Intellitest yeniden çalıştırın. Bilgi edinmek için bkz [Intellitest ile kodunuz için birim testleri oluşturma](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 
 ![Intellitest ile oluşturma birim testleri](media/intellitest.png)
 
 <a name="unit-tests"></a>
 ## <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
-Visual Studio ya da üçüncü taraf birim testi projelerini birim testleri çalıştırma, testleri kategoriler halinde gruplandırabilirsiniz, test listesini filtrelemek ve oluşturmak, kaydetme ve çalma testleri çalıştırmak için test Gezgini'ni kullanın. Ayrıca testleri hata ayıklama ve test performans ve kod kapsamını çözümleme. Bilgi edinmek için bkz [Test Gezgini ile birim testleri çalıştırma](https://docs.microsoft.com/visualstudio/test/run-unit-tests-with-test-explorer).
+Visual Studio ya da üçüncü taraf birim testi projelerini birim testleri çalıştırma, testleri kategoriler halinde gruplandırabilirsiniz, test listesini filtrelemek ve oluşturmak, kaydetme ve çalma testleri çalıştırmak için test Gezgini'ni kullanın. Ayrıca testleri hata ayıklama ve test performans ve kod kapsamını çözümleme. Bilgi edinmek için bkz [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md).
 
 ![Test Gezgini ile birim testleri](media/testexplorer.png)
 
 <a name="code-coverage"></a>
 ## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Ne kadar kodun test edildiğini belirlemek için kod kapsamı kullanın
 
-Proje kodunuzun ne oranda aslında birim testleri gibi kodlanmış testler tarafından test edilen belirlemek için Visual Studio kod kapsamı özelliğini kullanabilirsiniz. Etkin hatalara karşı koruma sağlamak için testleriniz çalışmalı veya kodunuzun büyük bir kısmını 'kapsamalıdır'. Bilgi edinmek için bkz [belirlemek ne kadar kodun için kullanım kod kapsamını test](https://docs.microsoft.com/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).
+Proje kodunuzun ne oranda aslında birim testleri gibi kodlanmış testler tarafından test edilen belirlemek için Visual Studio kod kapsamı özelliğini kullanabilirsiniz. Etkin hatalara karşı koruma sağlamak için testleriniz çalışmalı veya kodunuzun büyük bir kısmını 'kapsamalıdır'. Bilgi edinmek için bkz [belirlemek ne kadar kodun için kullanım kod kapsamını test](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ![Ne kadar kodun test edildiğini belirlemek için kod kapsamını kullanma](media/codecoverage.png)
 
@@ -164,8 +165,8 @@ A: Bu Visual Studio'nun test Çalıştırıcısı'nda bu framework ile çalışa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Birim testleri komut oluşturma](create-unit-tests-menu.md)
+* [Birim Testleri Oluştur komutu](create-unit-tests-menu.md)
 * [Intellitest ile testleri oluşturma](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Test Gezgini ile testleri çalıştırma](run-unit-tests-with-test-explorer.md)
 * [Kod kapsamı belirleme](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Kod kalitesini geliştirme](improve-code-quality.md)
+* [Kod Kalitesini Geliştirme](improve-code-quality.md)

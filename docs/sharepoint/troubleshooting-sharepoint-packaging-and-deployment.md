@@ -28,11 +28,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 569f177f23ce8c1e32441263b219f51d2305ca86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3c147fd683db68bed3b66f0eac146b8c98272d77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>SharePoint Paketleme ve Dağıtım Sorunlarını Giderme
   Bu konuda paketini ve SharePoint çözümlerini dağıtırken karşılaşabileceğiniz çeşitli sorunlar ele alınmaktadır.  
@@ -115,6 +116,6 @@ ms.lasthandoff: 10/31/2017
  Bu uyarıyı kaldırmak için projeyi oluşturun ve sonra kapatın ve tasarımcı yeniden açın ya da devre dışı bırakma seçeneği projesi için otomatik olarak ayıkla. Bunu yapmak için temizleyin **otomatik-hata ayıklama sonra geri çekmek** onay kutusunu **SharePoint** Proje Özellikleri iletişim kutusunda.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [SharePoint Çözümlerini Paketleme ve Dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

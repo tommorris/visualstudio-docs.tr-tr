@@ -25,11 +25,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d773ac7a4c3fa8541af30143a3d3031377b5b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7b0808c62b5538e7b4ae50b7992c9b65750169f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-ui-features-by-using-extensibility-interfaces"></a>Genişletilebilirlik Arabirimlerini Kullanarak Kullanıcı Arabirimi Özelliklerini Özelleştirme
   Visual Studio'da Office geliştirme araçları, sınıflar ve çok sayıda uygulama ayrıntılarını VSTO eklenti içinde özel görev bölmeleri, Şerit özelleştirmelerini ve Outlook form bölgeleri oluşturma için kullanıldıklarında işleyen tasarımcılar sağlar. Ancak, siz de uygulayabilirsiniz *genişletilebilirlik arabirimi* her özel gereksinimleriniz varsa kendiniz özelliği.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
 |Arabirim|Açıklama|Uygulamalar|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Şerit UI'si özelleştirmek için bu arabirimi uygular. **Not:** ekleyebileceğiniz bir **Şerit (XML)** varsayılan oluşturmak için bir proje öğesi <xref:Microsoft.Office.Core.IRibbonExtensibility> VSTO eklentinizi uygulamasında. Daha fazla bilgi için bkz: [Şerit XML](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Şerit UI'si özelleştirmek için bu arabirimi uygular. **Not:** ekleyebileceğiniz bir **Şerit (XML)** varsayılan oluşturmak için bir proje öğesi <xref:Microsoft.Office.Core.IRibbonExtensibility> VSTO eklentinizi uygulamasında. Daha fazla bilgi için bkz: [Şerit XML](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proje<br /><br /> Visio<br /><br /> Word|  
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Özel görev bölmesi oluşturmak için bu arabirimi uygular.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|  
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|Outlook form bölgesi oluşturmak için bu arabirimi uygular.|Outlook|  
   
@@ -86,6 +87,6 @@ ms.lasthandoff: 10/31/2017
  [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)   
  [VSTO eklentilerinde diğer Office Çözümlerinden kod çağırma](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)  
+ [VSTO Eklentileri Mimarisi](../vsto/architecture-of-vsto-add-ins.md)  
   
   

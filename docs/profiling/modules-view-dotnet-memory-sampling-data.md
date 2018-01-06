@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f572075106d815a791ca59fa2b35a31918f02bd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 32eb0b4e34edde03cd455384d7b1c6d36e0365c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Modüller görünümü - .NET bellek örnekleme verileri
 .NET bellek ayırma verilerinin örnekleme yöntemini kullanarak toplanan modülleri görünümü bellek verileri profil Çalıştır yürütüldü modülleri göre gruplandırır. Her modül hiyerarşik bir köküdür. Modül işlevleri modülü düğümünün altında listelenir.  
@@ -46,4 +47,4 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
  [Modüller görünümü - izleme](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Modüller görünümü](../profiling/modules-view-sampling-data.md)   
- [Modüller görünümü](../profiling/modules-view-instrumentation-data.md)
+ [Modüller Görünümü](../profiling/modules-view-instrumentation-data.md)

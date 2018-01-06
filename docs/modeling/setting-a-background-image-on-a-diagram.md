@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 13e52e30ebeda4d881474bcf990068d1a92bb7f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: de0297909723a384dbff7d2eeeae2f5942deef71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Diyagram Üzerinde Arka Plan Görüntüsü Ayarlama
 İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görselleştirme ve modelleme SDK, ayarlayabileceğiniz arka plan görüntüsü oluşturulan Tasarımcısı için özel kod kullanarak.  
@@ -107,6 +108,6 @@ ms.lasthandoff: 10/27/2017
  [Şekiller ve bağlayıcılar tanımlama](../modeling/defining-shapes-and-connectors.md)   
  [Metin ve görüntü alanları özelleştirme](../modeling/customizing-text-and-image-fields.md)   
  [Gezinme ve bir modeli Program kodunda güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Bir etki alanına özgü dil kişiselleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+ [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

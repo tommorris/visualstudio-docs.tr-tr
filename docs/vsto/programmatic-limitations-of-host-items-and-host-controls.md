@@ -35,11 +35,12 @@ caps.latest.revision: "67"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b9650014deb748607598b470d7eb797193213f39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d994f3b8b6612313ec689947c1da4c5b423fe362
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Konak Denetimlerinin ve Konak Öğelerinin Programlama Sınırlamaları
   Her konak öğesi ve konak kontrolü ek işlevsellik ile ilgili yerel Microsoft Office Word veya Microsoft Office Excel nesnesi gibi davranacak şekilde tasarlanmıştır. Ancak, konak denetimlerinin ve konak öğelerinin davranışını ve çalışma zamanında yerel Office nesneleri arasındaki bazı temel farklar vardır.  
@@ -97,6 +98,6 @@ ms.lasthandoff: 10/31/2017
  [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirme](../vsto/automating-excel-by-using-extended-objects.md)   
  [Çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md)   
  [Çalışma kitabı konak öğesi](../vsto/workbook-host-item.md)   
- [Belge konak öğesi](../vsto/document-host-item.md)  
+ [Belge Konak Öğesi](../vsto/document-host-item.md)  
   
   

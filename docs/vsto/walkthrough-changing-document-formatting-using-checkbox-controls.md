@@ -21,11 +21,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf214f2ffc55cf0846373fcaa226253f276e3d69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a0c8d44c32c03f98a0d2621eff3899ded101b7d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>İzlenecek Yol: CheckBox Denetimlerini Kullanarak Belge Biçimlendirmesini Değiştirme
   Bu kılavuzda Windows Forms denetimleri Microsoft Office Word için belge düzeyi özelleştirmelerinde metin biçimlendirmesini değiştirmek için nasıl kullanılacağını gösterir.  
@@ -166,6 +167,6 @@ ms.lasthandoff: 10/31/2017
  [Word kullanımında izlenecek yollar](../vsto/walkthroughs-using-word.md)   
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
- [Office belgelerindeki Windows Forms denetimleri sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Office Belgelerindeki Windows Forms Denetimleri Sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

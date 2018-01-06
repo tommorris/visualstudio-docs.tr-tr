@@ -23,11 +23,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4323bb31cb1b63e26c4964bb8e1ce71f010a249e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 55151999b3fb0576eb71a1f112bb4c4069accba5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint Hataları için Ek Bilgi
   Sorun gidermede yardım bulabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint araçları hataları ve sorun giderme konuları ve Microsoft Developer Network (MSDN) ortak forumlar uyarılar.  
@@ -35,11 +36,11 @@ ms.lasthandoff: 10/31/2017
 ## <a name="troubleshooting-errors-and-issues"></a>Hatalarını ve sorunlarını giderme  
  Bazı yaygın hatalar ve diğer sorunlar ile ilgili Yardım için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint araçları, aşağıdaki konulara bakın:  
   
--   [SharePoint çözümlerinde sorun giderme](../sharepoint/troubleshooting-sharepoint-solutions.md)  
+-   [SharePoint Çözümlerinde Sorun Giderme](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   
--   [SharePoint çözümlerinde hata ayıklama](../sharepoint/debugging-sharepoint-solutions.md)  
+-   [SharePoint Çözümlerinde Hata Ayıklama](../sharepoint/debugging-sharepoint-solutions.md)  
   
--   [SharePoint paketleme ve dağıtım sorunlarını giderme](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
+-   [SharePoint Paketleme ve Dağıtım Sorunlarını Giderme](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
 ## <a name="other-resources"></a>Diğer Kaynaklar  
  Aşağıdaki tabloda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint araçları forumlar ve diğer kaynakları MSDN'de kullanılabilir.  
@@ -53,6 +54,6 @@ ms.lasthandoff: 10/31/2017
  Gereksinim duyduğunuz yanıtları hala bulamazsanız, çevrimiçi destek seçenekleri, Microsoft Ürün Destek Hizmetleri ile iletişim veya Bilgi Bankası makaleleri arama yapma gibi erişebilirsiniz. Daha fazla bilgi için bkz: [Microsoft Help ve Destek](http://go.microsoft.com/fwlink/?LinkID=155371) sayfası.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+ [SharePoint Çözümleri Oluşturma ve Hatalarını Ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
   

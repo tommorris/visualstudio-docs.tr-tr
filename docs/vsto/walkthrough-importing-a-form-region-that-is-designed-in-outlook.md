@@ -18,11 +18,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 63073ca3100f1b4a11d5a39043e5d5eeebe7b628
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cf5b5ff9f2c3b2db5d7082e4eecd9eee4e235866
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-importing-a-form-region-that-is-designed-in-outlook"></a>İzlenecek Yol: Outlook'ta Tasarlanan Form Bölgesini İçeri Aktarma
   Bu kılavuz, Microsoft Office Outlook form bölgesi tasarlama ve ardından form bölgesini bir Outlook VSTO eklenti projesine kullanarak içeri aktarmak gösterilmiştir **Yeni Form bölgesi** Sihirbazı. Outlook form bölgesi tasarlama yerel Outlook denetimleri form bölgesini Outlook verilere bağlama eklemek mümkün kılar. Form bölgesini içeri aktardıktan sonra her denetim olaylarını işleyebilir.  
@@ -264,6 +265,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Outlook eklenti projesine Form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Outlook Form bölgelerindeki özel eylemler](../vsto/custom-actions-in-outlook-form-regions.md)   
- [Nasıl yapılır: Outlook Form bölgesini görüntülemesini engelleme](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
+ [Nasıl Yapılır: Outlook'un Form Bölgesini Görüntülemesini Engelleme](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
   
   

@@ -23,11 +23,12 @@ caps.latest.revision: "91"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09a356408815ed6fea416d27e59a58a4edc6a6a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e84bd10c2a7e3ce4c760e0f9231390d4fd037616
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>Windows Installer Kullanarak Office Çözümü Dağıtma
 Office çözümünüz için Windows Installer kullanarak oluşturmayı öğrenin [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -226,7 +227,7 @@ Kurulum uygulamanızda, yalnızca aşağıdaki bileşenleri, ancak de çalışt�
   
 4. Not Defteri'nde, metnin yerine **bilgisayarınızı GUID Buraya** onun yerine GUID yapıştırma tarafından.  
   
-   **&lt;Özellikleri&gt;**  öğesi dosyanızın aşağıdakine benzer.  
+    **&lt;Özellikleri&gt;**  öğesi dosyanızın aşağıdakine benzer.  
   
   
    ```xml  
@@ -537,10 +538,10 @@ Belge düzeyi özelleştirmeleri kayıt defteri anahtarlarını kullanmayın. Bu
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Dağıtım için Office çözümleri önkoşulları](http://msdn.microsoft.com/en-us/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
-[Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)  
-[VSTO eklentileri için kayıt defteri girişleri](../vsto/registry-entries-for-vsto-add-ins.md)  
-[Özel belge özelliklerine genel bakış](../vsto/custom-document-properties-overview.md)  
-[Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md)  
-[Belgelere güven verme](../vsto/granting-trust-to-documents.md)  
+[Office Çözümünü Dağıtma](../vsto/deploying-an-office-solution.md)  
+[VSTO Eklentileri için Kayıt Defteri Girişleri](../vsto/registry-entries-for-vsto-add-ins.md)  
+[Özel Belge Özelliklerine Genel Bakış](../vsto/custom-document-properties-overview.md)  
+[Office Çözümlerine Güven Verme](../vsto/granting-trust-to-office-solutions.md)  
+[Belgelere Güven Verme](../vsto/granting-trust-to-documents.md)  
 [Visual Studio 2010 Araçları için Windows Installer kullanarak Office çözümü dağıtma](http://go.microsoft.com/fwlink/?LinkId=201807)  
   

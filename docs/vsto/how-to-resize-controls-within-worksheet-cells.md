@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 035021b3a49bd3fb2af2863e3c8a9b2f88c56077
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 75759b501741329808198aafbc7dd39d0994cb98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Nasıl Yapılır: Çalışma Sayfası Hücreleri İçinde Denetimleri Yeniden Boyutlandırma
   Sütunlara veya satırlara çalışma sayfası üzerinde yeniden boyutlandırdığınızda, hücreleri otomatik olarak içeren herhangi bir ana bilgisayar denetimleri boyutlandırıldı hücre genişliği veya yüksekliği yeniden boyutlandırın. Windows Forms denetimleri otomatik olarak varsayılan olarak yeniden boyutlandırma değil.  
@@ -82,5 +83,5 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Windows Forms denetimleri Office belgelerine ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Nasıl yapılır: yazdırırken çalışma sayfası denetimlerini gizleme](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Office belgelerindeki Windows Forms denetimleri sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Office Belgelerindeki Windows Forms Denetimleri Sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   

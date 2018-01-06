@@ -13,11 +13,12 @@ caps.latest.revision: "29"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: c9871a767ae8e2a9c77edecda19c986c4ee85f26
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 4a93b60cfac2bbc727fbc2a7b4054c4e7b8e3dce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-models-in-your-development-process"></a>Geliştirme sürecinizde modelleri kullanma
 Visual Studio'da anlamak ve bir sistem, uygulama veya bileşen değiştirmenize yardımcı olmak için bir model kullanabilirsiniz. Bir model sisteminizin çalıştığı world görselleştirme, kullanıcıların ihtiyaçlarını açıklamak, sisteminizin mimarisiyle tanımlamak, kodu çözümlemenize ve kodunuzun gereksinimleri karşıladığından emin olun yardımcı olabilir. Bkz: [kanal 9 Video: modelleme mimarisine artırmak](http://go.microsoft.com/fwlink/?LinkID=252078).  
@@ -129,7 +130,7 @@ Visual Studio'da anlamak ve bir sistem, uygulama veya bileşen değiştirmenize 
 |**Videolar**|![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [MSDN nasıl yapmak ı videolar: oluşturma ve kullanma UML modellerini ve diyagramları (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Visual Studio 2010 ile UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [MSDN nasıl yapmak ı serisi: UML araçları ve genişletilebilirlik (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**Forumları**|-   [Visual Studio Görselleştirme ve Modelleme Araçları](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Görselleştirme ve modelleme SDK (DSL araçları)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Bloglar**|[Visual Studio ALM + Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|  
-|**Teknik makaleler ve günlükleri**|[MSDN Mimari Merkezi](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio mimari araç kullanımı Kılavuzu](../modeling/visual-studio-architecture-tooling-guidance.md)|  
+|**Teknik makaleler ve günlükleri**|[MSDN Mimari Merkezi](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio Mimari Araç Kullanımı Kılavuzu](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çevik Geliştirme modelleri kullanma](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
@@ -137,6 +138,6 @@ Visual Studio'da anlamak ve bir sistem, uygulama veya bileşen değiştirmenize 
  [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)   
  [Uygulama Mimarinizi modeli](../modeling/model-your-app-s-architecture.md)   
  [Model aracılığıyla test geliştirme](../modeling/develop-tests-from-a-model.md)   
- [Modelleme çözümünüzün yapısını](../modeling/structure-your-modeling-solution.md)
+ [Modelleme çözümünüzün yapısını oluşturma](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

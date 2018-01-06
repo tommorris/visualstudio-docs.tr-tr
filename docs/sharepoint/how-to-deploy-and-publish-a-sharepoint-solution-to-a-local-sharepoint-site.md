@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4959334c9d6949e199ad18934e69ea46e1172b55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9e643eb31062bcd81302fba6e7d35cc8dfa674b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Nasıl yapılır: Bir SharePoint Çözümünü Yerel bir SharePoint Sitesine Dağıtma ve Yayımlama
   Dağıtabilir veya SharePoint çözümleri geliştirme bilgisayarınızda yerel bir SharePoint server yayımlama. Dağıtım işlemi .wsp dosyasını SharePoint sunucusuna kopyalar, çözüm yükler ve özellikleri etkinleştirir. Yayımlama işlemi yalnızca .wsp dosyasını SharePoint sunucusuna kopyalar ve yükler. SharePoint'te etkinleştirmek için el ile etkinleştirmeniz gerekir.  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: dağıtma, yayımlama ve uzak bir sunucudaki SharePoint çözümlerini yükseltme](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)   
  [SharePoint çözüm paketleri oluşturma](../sharepoint/creating-sharepoint-solution-packages.md)   
  [Nasıl yapılır: bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [Nasıl yapılır: ekleme ve kaldırma özellikler ve öğeler bir paket için paket Tasarımcısını kullanarak](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
+ [Nasıl yapılır: Paket Tasarımcısını Kullanarak Bir Pakete Özellikler ve Öğeler Ekleme ve Kaldırma](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
   
   

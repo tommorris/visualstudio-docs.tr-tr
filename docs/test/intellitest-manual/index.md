@@ -12,11 +12,12 @@ ms.assetid: C5FA1C59-BB82-43B6-BF96-D0D85E033DAE
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 300f2a830b2bd22c39798821cfd6cd8e804fb64a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f6e81c246c4c9268ff3116fce9f43b735a7a9ccf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitest-reference-manual"></a>Intellitest başvuru el ile
 
@@ -24,7 +25,7 @@ ms.lasthandoff: 10/27/2017
 
 * **[Intellitest genel bakış](introduction.md)**
   - [Intellitest Merhaba Dünya](introduction.md#hello-world)
-  - [Sınırlamaları](introduction.md#limitations)
+  - [Sınırlamalar](introduction.md#limitations)
     * [Nondeterminism](introduction.md#nondeterminism)
     * [Eşzamanlılık](introduction.md#concurrency)
     * [Yerel kod](introduction.md#native-code)
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/27/2017
   - [Kısıtlama Çözücü](input-generation.md#constraint-solver)
   - [Dinamik kod kapsamı](input-generation.md#dynamic-code-coverage)
   - [Tamsayılar ve float](input-generation.md#integers-and-floats)
-  - [Nesneleri](input-generation.md#objects)
+  - [Nesneler](input-generation.md#objects)
   - [Varolan sınıflarını örnekleme](input-generation.md#existing-classes)
   - [Görünürlüğü](input-generation.md#visibility)
   - [Parametreli mocks](input-generation.md#parameterized-mocks)

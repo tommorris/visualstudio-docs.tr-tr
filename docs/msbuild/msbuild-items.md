@@ -13,11 +13,12 @@ caps.latest.revision: "35"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a306f7cda287e41efc0cb59cf5a75c7111d32c39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bec7bd5420c16d291db2566e86dd47ba986cca37
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-items"></a>MSBuild Öğeleri
 MSBuild öğeleri girdileridir yapı sisteme ve bunlar genellikle dosyaları temsil eder. Öğeleri öğesi türlerine kendi öğesi adlarına göre gruplandırılır. Öğe türleri parametre olarak görevleri için kullanılabilir öğeleri listesi olarak adlandırılır. Görev öğesi değerleri yapı işleminin adımları gerçekleştirmek için kullanın.  
@@ -44,7 +45,7 @@ MSBuild öğeleri girdileridir yapı sisteme ve bunlar genellikle dosyaları tem
   
     -   [Meta verileri kullanarak öğesi türlerini dönüştürme](#BKMK_Transforming)  
   
--   [Öğe tanımları](#BKMK_ItemDefinitions)  
+-   [Öğe Tanımları](#BKMK_ItemDefinitions)  
   
 -   [Bir ItemGroup öğeleri hedefi için öznitelikler](#BKMK_AttributesWithinTargets)  
   
@@ -354,11 +355,11 @@ Output:
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MSBuild kavramları](../msbuild/msbuild-concepts.md)  
+ [MSBuild Kavramları](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
  [Nasıl yapılır: derleme dosyalarını seçin](../msbuild/how-to-select-the-files-to-build.md)   
  [Nasıl yapılır: dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Nasıl yapılır: virgülle ayrılmış bir öğe listesini görüntüleme](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Öğe tanımları](../msbuild/item-definitions.md)   
  [Toplu işleme](../msbuild/msbuild-batching.md)   
- [Öğe unsuru (MSBuild)](../msbuild/item-element-msbuild.md)
+ [Öğe Unsuru (MSBuild)](../msbuild/item-element-msbuild.md)

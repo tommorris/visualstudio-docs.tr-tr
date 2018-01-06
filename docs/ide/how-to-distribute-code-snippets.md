@@ -14,11 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: e4c103aec04a9012b82c5fe979f8d5d23cfa1680
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 39f6006ec6dfe754efc58f2ccdc7b09d803de6b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-distribute-code-snippets"></a>Nasıl Yapılır: Kod Parçacıklarını Dağıtma
 Yalnızca kod parçacıkları arkadaşlarınıza verin ve bunları parçacıkları kod parçacıkları Yöneticisi'ni kullanarak kendi bilgisayarlarına yükleyin. Ancak, dağıtmak için birkaç parçacıkları varsa veya daha yaygın olarak dağıtmak istediğiniz parçacığı dosyanızı hangi Visual Studio kullanıcıların yükleyebilmek için bir Visual Studio uzantısına ekleyin.  
@@ -103,4 +104,4 @@ Bu yordamda oluşturduğunuz Hello World kod parçacığını kullanacağız [iz
     ```  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[Kod parçacıkları](../ide/code-snippets.md)
+[Kod Parçacıkları](../ide/code-snippets.md)

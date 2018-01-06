@@ -20,11 +20,12 @@ caps.latest.revision: "101"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9d8bd58c8dabc1114b3516e518992b0f91bc173
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b03d391917bb472b8b7c1780942c8259562a633
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="actions-pane-overview"></a>Eylemler Bölmesine Genel Bakış
   Eylemler bölmesinde bir özelleştirilebilir olduğundan **belge eylemleri** belirli Microsoft Office Word belgesine veya Microsoft Office Excel çalışma kitabına eklenmiş görev bölmesi. Bu diğer yerleşik görev bölmeleri birlikte Office görev bölmesi içinde gibi barındırılan **XML kaynağı** Excel görev bölmesinde veya **stiller ve biçimlendirme** Word görev bölmesinde. Eylemler bölmesi kullanıcı arabirimini tasarlamak için Windows Forms veya WPF denetimleri kullanabilirsiniz.  
@@ -163,6 +164,6 @@ ms.lasthandoff: 10/31/2017
  [İzlenecek yol: Word eylemler bölmesindeki denetimlere veri bağlama](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)   
  [İzlenecek yol: Excel eylemler bölmesindeki denetimlere veri bağlama](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)   
  [Nasıl yapılır: Eylemler bölmesindeki denetim düzenini yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [İzlenecek yol: Eylemler bölmesinden belgeye metin ekleme](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [İzlenecek Yol: Eylemler Bölmesinden Belgeye Metin Ekleme](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

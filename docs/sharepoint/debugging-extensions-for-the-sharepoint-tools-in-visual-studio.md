@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98bb43322d4a222d63bafac22d78e433a3000530
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cb6ddce35a45c71fb72a4e6d1f138e044afd50e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio'da SharePoint Araçları için Hata Ayıklama Uzantıları
   SharePoint araç uzantıları deneysel örneği ya da Visual Studio normal örneğini ayıklayabilirsiniz. Uzantı davranışını gidermek gerekiyorsa, ek hata bilgileri görüntülemek için ve Visual Studio SharePoint komutları nasıl yürütür yapılandırmak için kayıt defteri değerlerini de değiştirebilirsiniz.  
@@ -32,15 +33,15 @@ ms.lasthandoff: 10/31/2017
 
  Visual Studio'nun deneysel örneği uzantılarında çeşitli türlerde hata ayıklamak nasıl gösteren örnekler için aşağıdaki izlenecek bakın:  
   
--   [İzlenecek yol: bir SharePoint proje öğesi türünü genişletme](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
+-   [İzlenecek yol: Bir SharePoint Proje Öğesi Türünü Genişletme](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
   
--   [İzlenecek yol: bir öğe şablonu, bölüm 1 ile bir özel eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)  
+-   [İzlenecek yol: Öğe Şablonu, Bölüm 1 ile Özel bir Eylem Proje Öğesi Oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)  
   
--   [İzlenecek yol: SharePoint projeleri için özel bir dağıtım adımı oluşturma](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)  
+-   [İzlenecek Yol: SharePoint Projeleri için Özel bir Dağıtım Adımı Oluşturma](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)  
   
--   [İzlenecek yol: Web bölümlerini görüntülemek için Sunucu Gezgini genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
+-   [İzlenecek yol: Sunucu Gezginini Web Bölümlerini Görüntülemek Üzere Genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
   
--   [İzlenecek yol: bir sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)  
+-   [İzlenecek yol: Bir Sunucu Gezgini Uzantısında SharePoint İstemcisi Nesne Modelini Çağırma](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)  
   
 ## <a name="debugging-extensions-in-the-regular-instance-of-visual-studio"></a>Visual Studio normal örneğindeki hata ayıklama uzantıları  
  Uzantı projeniz Visual Studio normal örneğindeki hata ayıklamak istediğiniz ilk uzantısı normal örneğinde yükleyin. Ardından, hata ayıklayıcı ikinci bir Visual Studio işlemini ekleyin. İşlemi tamamladığınızda, böylece artık geliştirme bilgisayarınızda yükler uzantısı kaldırabilirsiniz.  
@@ -132,6 +133,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da SharePoint araçları genişletme](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
- [Visual Studio'da SharePoint araçları için hata ayıklama uzantıları](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
+ [Visual Studio'da SharePoint Araçları için Hata Ayıklama Uzantıları](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   
   

@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 03679a6d6acbee2a69d0ffa576b3606be4b64a21
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 098dc82734ca200ff538f284e002c1cbff424fbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Nasıl yapılır: oluşturma ve bir XSD şema dosyası düzenleme
 Bu konu, yeni bir XML Şeması (XSD) dosyası oluşturun ve ardından içerik için XSD dosyası ekleyin açıklar.  
@@ -41,4 +42,4 @@ Bu konu, yeni bir XML Şeması (XSD) dosyası oluşturun ve ardından içerik i�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML verileri ile çalışma](../xml-tools/working-with-xml-data.md)   
- [XML şema Tasarımcısı görevleri](../xml-tools/xml-schema-designer-tasks.md)
+ [;XML Şema Tasarımcısı Görevleri](../xml-tools/xml-schema-designer-tasks.md)

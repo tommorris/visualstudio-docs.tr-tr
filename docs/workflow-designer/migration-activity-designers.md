@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: bad24eb3693988c8d4f51f347a8473856dd1d224
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6310971ee43067e23a1d893924ecba4e717f5553
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="migration-activity-designers"></a>Geçiş etkinlik tasarımcıları
 Geçiş etkinlik tasarımcıları iş akışı hedefleniyor 3.0/3.5 etkinlikler iş akışının çağırmak için kullanılan [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)]. Bu bölümdeki konular nasıl kullanılacağı hakkında kılavuzluk [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] etkinlik tasarımcıları.  
@@ -29,20 +30,20 @@ Geçiş etkinlik tasarımcıları iş akışı hedefleniyor 3.0/3.5 etkinlikler 
 ## <a name="related-sections"></a>İlgili Bölümler  
  Etkinlik tasarımcıları diğer türleri için aşağıdaki konulara bakın.  
   
- [Denetim akışı](../workflow-designer/control-flow-activity-designers.md)  
+ [Denetim Akışı](../workflow-designer/control-flow-activity-designers.md)  
   
  [Akış Çizelgesi](../workflow-designer/flowchart-activity-designers.md)  
   
- [Etkinlik tasarımcıları kullanma](../workflow-designer/using-the-activity-designers.md)  
+ [Etkinlik Tasarımcılarını kullanma](../workflow-designer/using-the-activity-designers.md)  
   
  [Mesajlaşma](../workflow-designer/messaging-activity-designers.md)  
   
- [Çalışma zamanı](../workflow-designer/runtime-activity-designers.md)  
+ [Çalışma Zamanı](../workflow-designer/runtime-activity-designers.md)  
   
- [Temelleri](../workflow-designer/primitives-activity-designers.md)  
+ [Temel Türler](../workflow-designer/primitives-activity-designers.md)  
   
  [İşlem](../workflow-designer/transaction-activity-designers.md)  
   
- [Koleksiyonu](../workflow-designer/collection-activity-designers.md)  
+ [Koleksiyon](../workflow-designer/collection-activity-designers.md)  
   
- [Hata işleme](../workflow-designer/error-handling-activity-designers.md)
+ [Hata İşleme](../workflow-designer/error-handling-activity-designers.md)

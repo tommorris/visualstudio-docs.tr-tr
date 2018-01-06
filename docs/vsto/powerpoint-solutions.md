@@ -22,11 +22,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de978f92a5c410312cac00034006cd698b1c5cea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dd03b3e14599535c99f8a8ddd17314ce7f0cc719
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint Çözümleri
   Visual Studio Proje şablonları, Microsoft Office PowerPoint için VSTO eklentileri oluşturma için kullanabileceğiniz sağlar. VSTO eklentileri PowerPoint'i otomatikleştirmek, PowerPoint özelliklerini genişletmek veya PowerPoint kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz.  
@@ -71,9 +72,9 @@ ms.lasthandoff: 10/31/2017
   
 |Görev|Daha fazla bilgi için|  
 |----------|--------------------------|  
-|Özel görev bölmesini oluşturun.|[Özel görev bölmeleri](../vsto/custom-task-panes.md)|  
-|Özel sekmeler Şerit'e ekleyin.|[Şerite Genel Bakış](../vsto/ribbon-overview.md)|  
-|Şerit'te yerleşik bir sekmeyi özel gruplar ekleyin.|[Nasıl yapılır: yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)|  
+|Özel görev bölmesini oluşturun.|[Özel Görev Bölmeleri](../vsto/custom-task-panes.md)|  
+|Özel sekmeler Şerit'e ekleyin.|[Şeride Genel Bakış](../vsto/ribbon-overview.md)|  
+|Şerit'te yerleşik bir sekmeyi özel gruplar ekleyin.|[Nasıl Yapılır: Yerleşik Bir Sekmeyi Özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)|  
   
  PowerPoint UI ve diğer Microsoft Office uygulamaları özelleştirme hakkında daha fazla bilgi için bkz: [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md).  
   

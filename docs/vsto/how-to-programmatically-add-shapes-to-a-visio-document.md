@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39843950cb592aa40b11e098f62018a4dc6e2983
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: df6fd231e3d41fb6eb34b4b96c44f30fe6b7dfa4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Nasıl yapılır: Visio Belgesine Program Aracılığıyla Şekiller Ekleme
   Bir şablon asıl alma ve etkin sayfada şekilleri bırakarak Microsoft Office Visio belgesine şekiller ekleyebilirsiniz.  
@@ -44,6 +45,6 @@ ms.lasthandoff: 10/31/2017
  [Visio çözümleri](../vsto/visio-solutions.md)   
  [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)   
  [Visio şekilleri ile çalışma](../vsto/working-with-visio-shapes.md)   
- [Nasıl yapılır: program aracılığıyla kopyalama ve yapıştırma şekiller Visio belgelerinde](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
+ [Nasıl yapılır: Visio Belgelerinde Program Aracılığıyla Şekilleri Kopyalama ve Yapıştırma](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
   
   

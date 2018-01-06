@@ -24,11 +24,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa95c519ab24ba042b6a1adfa71c64499b18d4c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b3178c330d34570d1406a1b63368537bc7f66887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>İzlenecek yol: İlişkilendirme ve Başlatma Formları ile İş Akışı Oluşturma
   Bu kılavuzda ilişkilendirme ve başlatma formları kullanımını içeren bir temel sıralı iş akışının nasıl oluşturulacağını gösterir. Bunlar ilk olarak SharePoint Yöneticisi (ilişkilendirme form) tarafından ilişkilendirilmiş zaman ve iş akışı (başlatma formu) kullanıcı tarafından başlatıldığında bir iş akışına eklenecek parametrelerini etkinleştirme ASPX formları bulunabilir.  
@@ -453,6 +454,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SharePoint iş akışı çözümleri oluşturma](../sharepoint/creating-sharepoint-workflow-solutions.md)   
- [İzlenecek yol: bir uygulama sayfasını bir iş akışına ekleme](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
+ [İzlenecek yol: Bir Uygulama Sayfasını Bir İş Akışına Ekleme](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
   
   

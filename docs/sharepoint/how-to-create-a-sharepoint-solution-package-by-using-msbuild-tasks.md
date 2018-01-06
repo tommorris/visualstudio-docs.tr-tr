@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3cfe26fde4dd2d2b6617a008769fd535bb3e2cbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 827566ddf888b430a1e46c26633dfe6fbf919af8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Nasıl yapılır: MSBuild Görevlerini Kullanarak bir SharePoint Çözüm Paketi Oluşturma
   Yapı, temizleme ve geliştirme bilgisayarındaki komut satırı MSBuild görevlerini kullanarak bir SharePoint paketi (.wsp) doğrulama. Bu komutlar, yapı işlemi bir yapı bilgisayarında Team Foundation Server kullanarak otomatik hale getirmek için de kullanabilirsiniz.  
@@ -113,6 +114,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SharePoint özellikleri oluşturma](../sharepoint/creating-sharepoint-features.md)   
  [Nasıl yapılır: bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Nasıl yapılır: SharePoint özelliklerine öğe ekleme ve kaldırma](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
+ [Nasıl yapılır: SharePoint Özelliklerine Öğe Ekleme ve Kaldırma](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
   
   

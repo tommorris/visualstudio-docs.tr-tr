@@ -10,11 +10,12 @@ ms.topic: article
 ms.assetid: 84575412-1de7-4e53-811d-ae035eb21d13
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f3eff65b7a70c29adf39eda32805e0773255ba61
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: ac5389640c486d5b886454c15dc0e979c0683caf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Visual Studio'da C++ DLL'ler için birim testleri yazma
 
@@ -157,7 +158,7 @@ ms.lasthandoff: 11/15/2017
 2.  Test Gezgini seçin **tümünü Çalıştır**, veya çalıştırmak istediğiniz belirli testleri seçin. Bir test ile kesme noktaları etkin hata ayıklama modunda çalışan dahil olmak üzere diğer seçenekler için sağ tıklayın.
   
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Hızlı Başlangıç: Test Gezgini ile güdümlü geliştirme test etme](../test/quick-start-test-driven-development-with-test-explorer.md)
+[Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)
 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
@@ -165,4 +166,4 @@ ms.lasthandoff: 11/15/2017
  [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Başvurusu](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)   
  [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)   
  [İzlenecek yol: Oluşturma ve dinamik bağlantı kitaplığı (C++) kullanma](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)   
- [İçeri ve dışarı aktarma](/cpp/build/importing-and-exporting)
+ [İçeri ve Dışarı Aktarma](/cpp/build/importing-and-exporting)

@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a8b5158bb17470ce63dbc22dc5b501a314ebda8b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f9b9b3500b833b8ecf56d66d036f8284484b6600
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Nasıl Yapılır: Şerit Grubuna İletişim Kutusu Başlatıcısı Ekleme
   Herhangi bir Şerit grubuna iletişim kutusu başlatıcısı ekleyebilirsiniz. Bir iletişim kutusu başlatıcısı bir grupta görüntülenen küçük bir simgedir. Kullanıcılar ilgili iletişim kutuları veya gruba ile ilgili daha fazla seçenek sağlamak görev bölmeleri açmak için bu simgeyi tıklatın.  
@@ -55,6 +56,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: eklenti kullanıcı arayüzü hatalarını gösterme](../vsto/how-to-show-add-in-user-interface-errors.md)   
  [İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [İzlenecek yol: Şerit denetimlerini çalışma zamanında güncelleme](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
- [İzlenecek yol: Şerit XML kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+ [İzlenecek Yol: Şerit XML Kullanarak Özel Sekme Oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e20d37d0e1162b49ca0fc92f92056b3541698454
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3e1f9bc81c0d13acd1fb9ac1a22f33262e4644f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl Dosyası
 Bu konuda Dsl projenin DslDefinition.dsl dosyasında yapısını açıklayan bir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tanımlar çözüm bir *etki alanına özgü dil*. Sınıflar ve ilişkiler diyagram, şekil, bağlayıcılar, seri hale getirme biçimi ile birlikte bir etki alanına özgü dil DslDefinition.dsl dosya tanımlar ve **araç** etki alanına özgü dil ve kendi düzenleme araçları. Bir etki alanına özgü dil çözümde bu araçlara tanımlayan kodu DslDefinition.dsl dosyasındaki bilgiler göre oluşturulur.  
@@ -85,7 +86,7 @@ Bu konuda Dsl projenin DslDefinition.dsl dosyasında yapısını açıklayan bir
   
  Ad sistem XML ağacında eşdüzey farklı adlara sahip olmasını gerektirir. Örneğin, iki sınıf aynı ada sahip bir etki alanına özgü dil tanımı kaydetmeye çalışırsanız, bu nedenle, doğrulama hataları oluşur. Böylece, doğru daha sonra yeniden yükleyebilirsiniz DslDefinition.dsl dosyayı kaydetmeden önce her zaman böyle yinelenen ad hataları düzeltmeniz gerekir.  
   
- Her tür kendi ad türü: DomainClassMoniker, DomainRelationshipMoniker, vb..  
+ Her tür kendi ad türü: DomainClassMoniker, DomainRelationshipMoniker, vb.  
   
 ## <a name="types"></a>Türler  
  Types bölümündeki DslDefinition.dsl dosyasını içeren tüm türleri tür özellik belirtir. Bu tür iki tür ayrılır: System.String gibi dış türleri ve numaralandırılmış türler.  
@@ -549,4 +550,4 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)   
- [Anlama modelleri, sınıflar ve ilişkiler](../modeling/understanding-models-classes-and-relationships.md)
+ [Modelleri, Sınıfları ve İlişkileri Anlama](../modeling/understanding-models-classes-and-relationships.md)

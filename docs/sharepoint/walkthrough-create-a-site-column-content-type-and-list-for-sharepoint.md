@@ -26,11 +26,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d6007dee14f89f875c66009f048b47579e97028b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 59dafe640428059b4c6772f79a23d5f0ccceaac7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>İzlenecek yol: SharePoint için Site Sütunu, İçerik Türü ve Liste Oluşturma
   Aşağıdaki yordamlar özel SharePoint site sütunları oluşturulacağını göstermektedir — veya *alanları*— yanı sıra site sütunlarını kullanan bir içerik türü. Ayrıca, yeni içerik türünü kullanan bir listesinin nasıl oluşturulacağı gösterilir.  

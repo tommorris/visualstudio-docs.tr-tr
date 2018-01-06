@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: efcfa1082e0eeaf1105fc1a716141eb3fee5a1e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e0573043b15e49cce414a48626e3c3c6ffc31c06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-the-xslt-debugger"></a>&#39; teki XSLT Hata Ayıklayıcı'deki yenilikler
 Visual Studio 2010'da aşağıdaki özellikler yenidir.  
@@ -25,4 +26,4 @@ Visual Studio 2010'da aşağıdaki özellikler yenidir.
  XSLT profil oluşturucu ölçmek, değerlendirmek ve performans ile ilgili sorunlar XSLT kodda ayrıntılı XSLT performans raporu oluşturarak hedef geliştiricilerinin sağlayan bir araçtır. Daha fazla bilgi için bkz: [XSLT profil oluşturucu](../xml-tools/xslt-profiler.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XSLT hata ayıklama](../xml-tools/debugging-xslt.md)
+ [XSLT Hatalarını Ayıklama](../xml-tools/debugging-xslt.md)

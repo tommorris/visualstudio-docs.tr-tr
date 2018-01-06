@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7233bc1a739bd3bf6544aad879f898bf3848ee7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9ba7e2fa9b9e4991ac969347791b5231ee37bbd6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-resource-file"></a>Nasıl yapılır: Kaynak Dosyası Ekleme
   Kaynak dosyaları eklemek için komuttur çözüm düğümüne ve Çözüm Gezgini'nde özelliği düğümleri kısayol menüsünde. Daha fazla bilgi için bkz: [SharePoint Çözümlerini Yerelleştirme](../sharepoint/localizing-sharepoint-solutions.md).  
@@ -57,6 +58,6 @@ ms.lasthandoff: 10/31/2017
 3.  Zaman **Kaynak Düzenleyici** açılır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], kaynak kaynak dosyasına ekleyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
+ [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
   
   

@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af681832a8c298427c13060d858b57b99654953a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 151648a6c12e2c28d912be3b75c51b438ae5ee13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Nasıl Yapılır: Office Projelerinde Olay İşleyicileri Oluşturma
   Visual Basic ve C# ' olay işleyicileri oluşturmanın birkaç yolu vardır. Tasarım görünümünde, varsayılan denetimleri için olay işleyicileri denetimi çift tıklatarak oluşturabilir, veya olayları bölmesini kullanarak **özellikleri** herhangi bir olay işleyicileri denetimi oluşturmak için pencere. Bununla birlikte, kod görünümünde varsa, olay işleyici oluşturmak için Tasarım görünümüne geçiş istemeyebilirsiniz.  
@@ -57,6 +58,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)   
  [İzlenecek yol: NamedRange denetimi olaylarına karşı programlama](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
- [Office çözümleri oluşturma](../vsto/building-office-solutions.md)  
+ [Office Çözümleri Oluşturma](../vsto/building-office-solutions.md)  
   
   

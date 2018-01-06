@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 980712e717df294a4d390eb66ed2f1740ba2c3f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e627d78e5c040614c29e7503cd7efab728b02bfa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="defining-custom-sharepoint-project-item-types"></a>Özel SharePoint Proje Öğesi Türleri Tanımlama
   Yeni tür bir SharePoint proje öğesi oluşturmak istediğiniz zaman yeni bir SharePoint proje öğesi türünü tanımlayın. Örneğin, Visual Studio alanlar ekleyerek veya bir SharePoint sitesine özel eylemler için SharePoint Proje öğeleri içermez. Kendi türlerde alanları, özel eylemler veya diğer tür SharePoint bileşenlerin oluşturmak için SharePoint Proje öğeleri tanımlayabilirsiniz.  
@@ -53,6 +54,6 @@ ms.lasthandoff: 10/31/2017
  [İzlenecek yol: bir proje şablonu, bölüm 1 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [İzlenecek yol: bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
  [İzlenecek yol: bir proje şablonu, bölüm 2 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
- [Visual Studio'da SharePoint araçları için hata ayıklama uzantıları](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
+ [Visual Studio'da SharePoint Araçları için Hata Ayıklama Uzantıları](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   
   

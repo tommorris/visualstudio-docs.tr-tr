@@ -22,11 +22,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fbb628ffc8f52de34aa67ad5888b7110d1bc7da2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8933345017cef96c17ed69a42dc3e095fcf7c7ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-ribbon-xml"></a>İzlenecek Yol: Şerit XML Kullanarak Özel Sekme Oluşturma
   Bu kılavuzu kullanarak özel bir Şerit sekmesi oluşturmak gösterilmiştir **Şerit (XML)** öğesi.  
@@ -161,6 +162,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
  [Şerit XML](../vsto/ribbon-xml.md)   
- [İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
+ [İzlenecek Yol: Şerit Tasarımcısını Kullanarak Özel Sekme Oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
   
   

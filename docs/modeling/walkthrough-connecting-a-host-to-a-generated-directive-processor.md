@@ -14,11 +14,12 @@ caps.latest.revision: "47"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 07b1e70775638d88e67280f2f914412ef4271a48
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 26903dad4c1218d0d9ba389322351eb629f6f31a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>İzlenecek yol: Üretilen bir Yönerge İşlemcisine Ana Bilgisayar Bağlama
 Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel konak örneklerde gösterildiği [izlenecek yol: özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md). Birden çok çıktı dosyaları oluşturma gibi işlevler eklemek için bu konak genişletebilirsiniz.  
@@ -360,4 +361,4 @@ Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel k
     ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+ [İzlenecek yol: Özel Metin Şablonu Konağı Oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md)

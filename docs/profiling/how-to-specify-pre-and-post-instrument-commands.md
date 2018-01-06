@@ -17,11 +17,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7daf63f27d9c285c126e437f55d25ff674d7360f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ebd5ff13eec62eae238b126efd7001b1f6348551
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Nasıl yapılır: Ön ve Son İzleme Komutları Belirtme
 Önce veya ikili dosyaların bir performans oturumunda işaretlendiğine sonra çalışan komutlar belirtebilirsiniz. Komut satırından verilebilmesi için herhangi bir komuttan ön izleme veya bir son izleme olayı olarak belirtilebilir. Örneğin, ikili dosyaları işaretlendiğine sonra çalıştırılan bir toplu iş dosyasında güçlü ad anahtar ile bir derlemenin bildirimin otomatikleştirmek komutları belirtebilirsiniz.  

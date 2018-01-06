@@ -20,20 +20,21 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6927a639bd3bb41b0498b1eb939d07cddcde0a79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c1d9008dc88640adee8db3f02b43cad314a47b32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Güvenlik ve Dağıtmada İzlenecek Yollar
   Aşağıdaki konular nasıl çözümünüzün çalışmasına izin veren güvenlik ilkesini ayarlayabilirsiniz ve Office çözümünün nasıl dağıtabileceğini gösterir.  
   
 ## <a name="security-topics"></a>Güvenlik konuları  
- [Nasıl yapılır: Office çözümlerini imzalama](../vsto/how-to-sign-office-solutions.md)  
+ [Nasıl Yapılır: Office Çözümlerini İmzalama](../vsto/how-to-sign-office-solutions.md)  
  Bir sertifika kullanılarak çözüm güven nasıl verebilirsiniz hakkında bilgi sağlar.  
   
- [Nasıl yapılır: ekleme listesi güvenliğini yapılandırma](../vsto/how-to-configure-inclusion-list-security.md)  
+ [Nasıl Yapılır: Ekleme Listesi Güvenliğini Yapılandırma](../vsto/how-to-configure-inclusion-list-security.md)  
  Nasıl yapılandırılacağını açıklar [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] denetlemek için son kullanıcıların Office çözümlerini yükleme seçeneği verilip verilmediğini güven istemi.  
   
 ## <a name="deployment-topics"></a>Dağıtım konuları  
@@ -59,22 +60,22 @@ ms.lasthandoff: 10/31/2017
  Office çözümünü yükleme konumunu değiştirme hakkında bilgi sağlar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Word kullanımında izlenecek yollar](../vsto/walkthroughs-using-word.md)  
+ [Word Kullanımında İzlenecek Yollar](../vsto/walkthroughs-using-word.md)  
  Visual Studio'da Office çözümleri için bir giriş sağlar ve Word yararlanmak uygulamaları nasıl oluşturabileceğinizi açıklanmasına yardımcı adım adım kılavuzlar listeler.  
   
- [Excel kullanarak izlenecek yollar](../vsto/walkthroughs-using-excel.md)  
+ [Excel Kullanarak İzlenecek Yollar](../vsto/walkthroughs-using-excel.md)  
  Visual Studio'da Office çözümleri için bir giriş sağlar ve Excel yararlanmak uygulamaları nasıl oluşturabileceğinizi açıklanmasına yardımcı adım adım kılavuzlar listeler.  
   
- [Office çözümleri izlenecek verileri](../vsto/data-in-office-solutions-walkthroughs.md)  
+ [Office Çözümlerindeki Verilerde İzlenecek Yol](../vsto/data-in-office-solutions-walkthroughs.md)  
  Çözümlerinizdeki veri ile nasıl çalışılacağını adım adım kılavuzlar listeler.  
   
  [Başlarken &#40; Office geliştirme Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Kurulum, proje şablonları, Office birincil birlikte çalışma derlemeleri ve Office geliştirme yenilikler hakkında bilgi için bağlantılar sağlar.  
   
- [Office programlarındaki ortak görevler](../vsto/common-tasks-in-office-programming.md)  
+ [Office Programlarındaki Ortak Görevler](../vsto/common-tasks-in-office-programming.md)  
  Visual Studio'da Office çözümleri ile programlama hakkında sık sorulan soruları listeler ve sık karşılaşılan sorunları çözmenize yardımcı olabilecek konulara bağlantılar sağlar.  
   
- [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)  
+ [Office Çözümleri Tasarlama ve Oluşturma](../vsto/designing-and-creating-office-solutions.md)  
  Word ve Excel çözümleri ve derlemelerin rolü çözümünüzde oluşturma hakkında daha fazla bilgi için bağlantılar sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

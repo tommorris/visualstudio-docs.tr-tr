@@ -19,11 +19,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee78ad2aac4ff9cefcb3291d3b1b2010d8a1c26c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6c9db34e05c964b95a41593b194c4941293c7efb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Nasıl yapılır: Yer İşareti Metnini Program Aracılığıyla Güncelleştirme
   Sonraki bir zamanda veya bir yer işareti metinde değiştirmek için metin alabilmeleri Microsoft Office Word belgesinde yer tutucu yer işareti içine metin ekleyebilirsiniz. Belge düzeyi özelleştirme geliştiriyorsanız metinde da güncelleştirebilirsiniz bir <xref:Microsoft.Office.Tools.Word.Bookmark> veriye bağlı denetim. Daha fazla bilgi için bkz: [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).  
@@ -86,6 +87,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
  [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)   
- [Yer işareti denetimi](../vsto/bookmark-control.md)  
+ [Yer İşareti Denetimi](../vsto/bookmark-control.md)  
   
   

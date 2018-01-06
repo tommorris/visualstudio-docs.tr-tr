@@ -18,11 +18,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1755aa5c8e54bd1b84e0f88ea70b4163f3a87af6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0c2f8d0a8360153b81d54b5d1867af452e6aaf9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-programming-document-level-customizations-for-excel"></a>Excel İçin Belge Düzeyi Özelleştirme Programlamasına Başlama
   Yalnızca Visual Studio kullanarak Microsoft Office Excel için belge düzeyi özelleştirmeleri oluşturma başlıyorsanız, işte bilmeniz gerekir.  
@@ -48,11 +49,11 @@ ms.lasthandoff: 10/31/2017
   
  Daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)  
+-   [Belge Düzeyi Özelleştirmelerini Programlama](../vsto/programming-document-level-customizations.md)  
   
--   [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirme](../vsto/automating-excel-by-using-extended-objects.md)  
+-   [Genişletilmiş Nesneleri Kullanarak Excel'i Otomatikleştirme](../vsto/automating-excel-by-using-extended-objects.md)  
   
--   [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)  
+-   [Konak Öğelerine ve Denetimlerine Genel Bakış](../vsto/host-items-and-host-controls-overview.md)  
   
 ## <a name="customizing-the-user-interface-of-excel"></a>Excel kullanıcı arabirimini özelleştirme  
  Microsoft Office çözümlerinin çoğu kullanıcı arabirimi (UI) çözümü ile etkileşim kullanıcılar için herhangi bir şekilde sağlamak için Office uygulamasının değiştirin. Belge düzeyi özelleştirme kullanarak Excel'in UI'ını değişiklik yapabilirsiniz birçok yolu vardır. Örneğin, Şerit denetimlerini ekleyebilirsiniz veya Eylemler bölmesinde görüntüleyebilirsiniz. Daha fazla bilgi için bkz: [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md).  
@@ -74,6 +75,6 @@ ms.lasthandoff: 10/31/2017
  [İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
  [Excel kullanarak izlenecek yollar](../vsto/walkthroughs-using-excel.md)   
  [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md)   
- [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)  
+ [Office Çözümlerinde Kod Yazma](../vsto/writing-code-in-office-solutions.md)  
   
   

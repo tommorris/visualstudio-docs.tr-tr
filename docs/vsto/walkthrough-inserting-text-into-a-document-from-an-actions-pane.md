@@ -20,11 +20,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ca062823968153d7c8979cb13c0e3d403237be1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 789ad22524a5c0128320bfb833b8ad97e294a86f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>İzlenecek Yol: Eylemler Bölmesinden Belgeye Metin Ekleme
   Bu kılavuz, Microsoft Office Word belgesinde Eylemler bölmesi oluşturmak gösterilmiştir. Eylemler bölmesinde giriş toplayan ve ardından metin belgesine göndermek iki denetimi içerir.  
@@ -188,6 +189,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Word belgelerini ve Excel çalışma kitaplarına Eylemler bölmesi ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Nasıl yapılır: Excel çalışma kitaplarına Eylemler bölmesi ekleme](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872)   
  [Nasıl yapılır: Eylemler bölmesindeki denetim düzenini yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Yer işareti denetimi](../vsto/bookmark-control.md)  
+ [Yer İşareti Denetimi](../vsto/bookmark-control.md)  
   
   

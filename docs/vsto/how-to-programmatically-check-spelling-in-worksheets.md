@@ -20,11 +20,12 @@ caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f5fbd9bf79addf758b18fc21aebd43ceaf2dc3d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 96527061e6cd738cbfc6a1aee53ea598f238aebd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Nasıl yapılır: Çalışma Sayfalarında Program Aracılığıyla Yazımı Denetleme
   Program aracılığıyla çalışma sayfasında sözcüklerin yazımını kontrol edebilirsiniz. **Yazım** iletişim kutusu otomatik olarak görünür çalışma sayfasında hatalı yazılmış kelimeler varsa.  
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
  [Çalışma sayfaları ile çalışma](../vsto/working-with-worksheets.md)   
  [Nasıl yapılır: Excel hesaplarını program aracılığıyla çalıştırma](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

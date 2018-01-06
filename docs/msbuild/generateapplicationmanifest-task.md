@@ -22,11 +22,12 @@ caps.latest.revision: "24"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 79e8958ca5e2e75ed62da63f52bdac5b0f3b5043
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e0ae1ff71e2fb304849b70222fec7a4ce85c0560
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest Görevi
 Oluşturan bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi ya da yerel bir bildirim. Yerel bir bildirim bileşen için benzersiz bir kimlik tanımlayarak ve tüm derlemeleri ve yedekleme bileşeni olun dosyaları tanımlayan bir bileşen açıklar. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi uygulamanın giriş noktası belirten ve uygulama güvenlik düzeyi belirterek yerel bir bildirim genişletir.  

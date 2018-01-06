@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: f83c2055ce8e8872b32bb7e7ab735a04bffcd553
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fcaa711d1241056eff486e0984cf9326555b9eb2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="workflow-designer-ui-help"></a>İş Akışı Tasarımcısı kullanıcı Arabirimi Yardım
 Bu bölüm için bağlama duyarlı Yardım konularını içerir [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Çalışırken [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], basarak bu konularda kullanıcı arabiriminden erişebilirsiniz **F1** zaman bir [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] iletişim kutusunu açın.  
@@ -26,24 +27,24 @@ Bu bölüm için bağlama duyarlı Yardım konularını içerir [!INCLUDE[wfd1](
  Bu bölümde ayrıca gezinti ve hata iletileri ile ilgili çeşitli konuları içerir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Gözat ve bir .NET türünü seç iletişim kutusu](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)  
+ [.NET Türüne Gözat ve Seç İletişim Kutusu](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)  
   
- [CorrelatesOn tanımı iletişim kutusu](../workflow-designer/correlateson-definition-dialog-box.md)  
+ [CorrelatesOn Tanımı İletişim Kutusu](../workflow-designer/correlateson-definition-dialog-box.md)  
   
- [Ekle CorrelationInitializers iletişim kutusu](../workflow-designer/add-correlationinitializers-dialog-box.md)  
+ [CorrelationInitializer Ekle İletişim Kutusu](../workflow-designer/add-correlationinitializers-dialog-box.md)  
   
- [Parametreler ve bağımsız değişkenler iletişim kutuları ekleyin](../workflow-designer/add-parameters-and-add-arguments-dialog-boxes.md)  
+ [Parametreler ve Bağımsız Değişkenler Ekle İletişim Kutuları](../workflow-designer/add-parameters-and-add-arguments-dialog-boxes.md)  
   
- [Türü koleksiyon Düzenleyicisi iletişim kutusu](../workflow-designer/type-collection-editor-dialog-box.md)  
+ [Tür Koleksiyonu Düzenleyicisi İletişim Kutusu](../workflow-designer/type-collection-editor-dialog-box.md)  
   
- [İçerik tanımı iletişim kutusu](../workflow-designer/content-definition-dialog-box.md)  
+ [İçerik Tanımı İletişim Kutusu](../workflow-designer/content-definition-dialog-box.md)  
   
- [Bağıntı iletişim kutusu başlatılamadı](../workflow-designer/initialize-correlation-dialog-box.md)  
+ [Bağıntıyı Başlat İletişim Kutusu](../workflow-designer/initialize-correlation-dialog-box.md)  
   
- [System.Activities sekmesini seçin araç kutusu öğelerini iletişim kutusu](../workflow-designer/system-activities-tab-choose-toolbox-items-dialog-box.md)  
+ [System.Activities Sekmesi, Araç Kutusu Öğelerini Seç İletişim Kutusu](../workflow-designer/system-activities-tab-choose-toolbox-items-dialog-box.md)  
   
- [İş Akışı Tasarımcısı Kabuk özellikleri](../workflow-designer/workflow-designer-shell-features.md)  
+ [İş Akışı Tasarımcısı Kabuk Özellikleri](../workflow-designer/workflow-designer-shell-features.md)  
   
  [Klavye kısayolları](../workflow-designer/keyboard-shortcuts-in-the-workflow-designer.md)  
   
- [Hata iletileri](../workflow-designer/error-messages-in-workflow-designer.md)
+ [Hata İletileri](../workflow-designer/error-messages-in-workflow-designer.md)

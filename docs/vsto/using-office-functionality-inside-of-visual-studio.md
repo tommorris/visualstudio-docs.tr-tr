@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa48a6d46035cd0c631882065b7c9b9ab2e2b8ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38eb32ac983d81d3ef94431d6275da643f632ae9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-office-functionality-inside-of-visual-studio"></a>Visual Studio İçinde Office İşlevselliğini Kullanma
   Belge düzeyi projesi oluşturduğunuzda, belge ve ilişkili uygulama tasarlama ve doğrudan belgeyle çalışmak için Visual Studio içinde barındırılır. Uygulama, Visual Studio'da açın Microsoft Office sahip olduğunuzda, beklendiği gibi genellikle çalışır. Ancak, bazı uygulamanın işlevselliğini farklı veya erişilemez.  
@@ -43,6 +44,6 @@ ms.lasthandoff: 10/31/2017
  [Belge düzeyi çözümlerde belge koruması](../vsto/document-protection-in-document-level-solutions.md)   
  [Bilgi Hakları Yönetimine ve yönetilen kod uzantılarına genel bakış](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Office belgelerinde parola koruması](../vsto/password-protection-on-office-documents.md)   
- [Nasıl yapılır: kod çalıştırmadan Office çözümlerini açma](../vsto/how-to-open-office-solutions-without-running-code.md)  
+ [Nasıl Yapılır: Kod Çalıştırmadan Office Çözümlerini Açma](../vsto/how-to-open-office-solutions-without-running-code.md)  
   
   

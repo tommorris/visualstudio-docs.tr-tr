@@ -18,11 +18,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8345f7d197f44455ae990c159550587bbc79de24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d81c8b10f5ace634cc58bd3135af9b2e69f1c519
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-data-in-documents-on-the-server"></a>Sunucudaki Belgelerde Verilere Erişme
   Microsoft Office Word veya Microsoft Office Excel nesne modelini kullanmak zorunda kalmadan bir belge düzeyi özelleştirmelerinde veri karşı programlama yapabilirsiniz. Bu belgede Word sahip olmayan bir sunucuda bulunan verilere erişebilir veya Excel yüklü anlamına gelir. Örneğin, bir sunucuda kod (örneğin, bir [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] sayfa) bir belgedeki verileri özelleştirebilir ve özelleştirilmiş belgeyi son kullanıcıya gönderin. Son kullanıcı belgeyi açtığında, veri bağlama çözüm bütünleştirilmiş kodda özelleştirilmiş veri belgeye bağlar. Belgedeki verileri kullanıcı arabiriminden ayrılmış olduğundan, bu mümkündür. Daha fazla bilgi için bkz: [önbelleğe alınmış verileri belge düzeyi özelleştirmelerinde](../vsto/cached-data-in-document-level-customizations.md).  
@@ -83,6 +84,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sunucudaki belgelerde verilere erişme](../vsto/accessing-data-in-documents-on-the-server.md)   
- [Belge düzeyi özelleştirmelerinde önbelleğe alınan veriler](../vsto/cached-data-in-document-level-customizations.md)  
+ [Belge Düzeyi Özelleştirmelerdeki Önbelleğe Alınmış Veriler](../vsto/cached-data-in-document-level-customizations.md)  
   
   

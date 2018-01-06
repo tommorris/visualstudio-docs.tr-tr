@@ -20,11 +20,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e50809b5e57a832c9f085172832dd2e1a4db45a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5eb6c744005c48fa33592da2113f88e4917a259a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="trusting-office-solutions-by-using-inclusion-lists"></a>Ekleme Listelerini Kullanarak Office Çözümlerine Güvenme
   Ekleme listeleri yayımcıyı tanımlayan bir sertifikayla imzalanmış Office çözümlerine güven verme olanağı verir. Ekleme listeleri kullanıcıya özeldir ve belge düzeyi özelleştirmeleri ve VSTO eklentileri için kullanılabilir.  
@@ -48,6 +49,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md)   
- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)  
+ [Office Çözümleri Güvenliğini Sağlama](../vsto/securing-office-solutions.md)  
   
   

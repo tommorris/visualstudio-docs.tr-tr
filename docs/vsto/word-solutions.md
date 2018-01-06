@@ -31,11 +31,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7fa4e3b548f5839b16a6bdeaf4a7d8ba6d00beb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 738c7988dbd5ee4757b231904be08dcf295ba5b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="word-solutions"></a>Word Çözümleri
   Visual Studio Proje şablonları Microsoft Office Word için belge düzeyi özelleştirmeleri ve VSTO eklentileri oluşturmak için kullanabileceğiniz sağlar. Bu çözümler, Word otomatikleştirmek, Word özelliklerini genişletmek ve Word kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz. Belge düzeyi özelleştirmeleri ve VSTO eklentileri arasındaki farklar hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -92,34 +93,34 @@ ms.lasthandoff: 10/31/2017
   
 |Görev|Daha fazla bilgi için|  
 |----------|--------------------------|  
-|Şerit özelleştirin.|[Şerite Genel Bakış](../vsto/ribbon-overview.md)|  
-|Windows Forms veya genişletilmiş Word denetimleri özelleştirilmiş belge (için belge düzeyi özelleştirmeleri için) veya herhangi bir açık belgeye (bir VSTO eklenti için) ekleyin.|[Nasıl yapılır: Windows Forms denetimleri Office belgelerine ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|  
+|Şerit özelleştirin.|[Şeride Genel Bakış](../vsto/ribbon-overview.md)|  
+|Windows Forms veya genişletilmiş Word denetimleri özelleştirilmiş belge (için belge düzeyi özelleştirmeleri için) veya herhangi bir açık belgeye (bir VSTO eklenti için) ekleyin.|[Nasıl Yapılır: Office Belgelerine Windows Forms Denetimleri Ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Nasıl Yapılır: Word Belgelerine İçerik Denetimleri Ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Nasıl Yapılır: Word Belgelerine Yer İşareti Denetimi Ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|  
   
 ### <a name="options-for-document-level-customizations"></a>Belge düzeyi özelleştirmeleri için seçenekleri  
  Yalnızca belge düzeyi özelleştirmeleri için özelleştirme seçenekleri aşağıdaki tabloda listelenmektedir.  
   
 |Görev|Daha fazla bilgi için|  
 |----------|--------------------------|  
-|Eylemler bölmesi belgeye ekleyin.|[Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)<br /><br /> [Nasıl yapılır: Word belgelerini ve Excel çalışma kitaplarına Eylemler bölmesi ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
-|Genişletilmiş XMLNode ve XMLNodes denetimleri belge yüzeyine ekleyin.|[Nasıl yapılır: Word belgelerine XMLNode denetimleri ekleme](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [Nasıl yapılır: Word belgelerine XMLNodes denetimleri ekleme](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|  
+|Eylemler bölmesi belgeye ekleyin.|[Eylemler Bölmesine Genel Bakış](../vsto/actions-pane-overview.md)<br /><br /> [Nasıl Yapılır: Word Belgelerine veya Excel Çalışma Kitaplarına Eylemler Bölmesi Ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
+|Genişletilmiş XMLNode ve XMLNodes denetimleri belge yüzeyine ekleyin.|[Nasıl Yapılır: Word Belgelerine XMLNode Denetimleri Ekleme](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [Nasıl Yapılır: Word Belgelerine XMLNodes Denetimleri Ekleme](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|  
   
 ### <a name="options-for-vsto-add-ins"></a>VSTO eklentileri için seçenekleri  
  Aşağıdaki tabloda, yalnızca VSTO eklentileri için kullanılabilir seçenekleri listeler.  
   
 |Görev|Daha fazla bilgi için|  
 |----------|--------------------------|  
-|Özel görev bölmesini oluşturun.|[Özel görev bölmeleri](../vsto/custom-task-panes.md)|  
+|Özel görev bölmesini oluşturun.|[Özel Görev Bölmeleri](../vsto/custom-task-panes.md)|  
   
 ### <a name="related-topics"></a>İlgili Konular  
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)|Word nesne modeli tarafından sağlanan ana türlerine genel bakış sağlar.|  
-|[Genişletilmiş nesneleri kullanarak Word'ü Otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md)|Genişletilmiş nesneler hakkında bilgi sağlar (tarafından sağlanan [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]), Word çözümleri kullanabilirsiniz.|  
-|[Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)|Windows Forms denetimleri Word belgelerine nasıl ekleyebileceğiniz açıklanmaktadır.|  
-|[İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Word için temel bir belge düzeyi özelleştirme oluşturulacağını gösterir.|  
-|[İzlenecek yol: Word için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Temel bir VSTO eklenti Word oluşturmak gösterilmiştir.|  
-|[İzlenecek yol: Denetimlerini çalışma zamanında VSTO eklenti belgeye ekleme](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Bir Windows eklemek için düğmesini formlarının nasıl ve gösterir <xref:Microsoft.Office.Tools.Word.RichTextContentControl> bir belgeye çalışma zamanında VSTO eklenti kullanarak.|  
+|[Word Nesne Modeline Genel Bakış](../vsto/word-object-model-overview.md)|Word nesne modeli tarafından sağlanan ana türlerine genel bakış sağlar.|  
+|[Genişletilmiş Nesneleri Kullanarak Word'ü Otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md)|Genişletilmiş nesneler hakkında bilgi sağlar (tarafından sağlanan [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]), Word çözümleri kullanabilirsiniz.|  
+|[Office Belgelerindeki Windows Forms Denetimlerine Genel Bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)|Windows Forms denetimleri Word belgelerine nasıl ekleyebileceğiniz açıklanmaktadır.|  
+|[İzlenecek Yol: Word İçin İlk Belge Düzeyi Özelleştirmeyi Oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Word için temel bir belge düzeyi özelleştirme oluşturulacağını gösterir.|  
+|[İnceleme: Word için İlk VSTO Eklentinizi Oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Temel bir VSTO eklenti Word oluşturmak gösterilmiştir.|  
+|[İzlenecek Yol: VSTO Eklentisindeki Belgeye Çalışma Zamanında Denetim Ekleme](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Bir Windows eklemek için düğmesini formlarının nasıl ve gösterir <xref:Microsoft.Office.Tools.Word.RichTextContentControl> bir belgeye çalışma zamanında VSTO eklenti kullanarak.|  
 |[Word 2010 Office geliştirme](http://go.microsoft.com/fwlink/?LinkId=199020)|Makaleler ve başvuru belgeleri (Visual Studio kullanarak Office geliştirmeye özgü olmayan) geliştirme Word çözümleri hakkında bağlantılar sağlar.|  
   
   

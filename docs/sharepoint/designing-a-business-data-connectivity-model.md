@@ -20,11 +20,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0af1b3038fd0cdf4629c1a1acb9e14d0297dc19d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 886522cacff9359b3516b9e09530bfb1c41acfe6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>İş Verileri Bağlantı Modeli Tasarlama
   İş verileri bağlantı (BDC) hizmeti için bir model için bir model dosyası varlıkları ve yöntemleri ekleyerek geliştirebilirsiniz. Bir varlık veri alanları koleksiyonunu açıklar. Örneğin, bir varlığın bir veritabanındaki bir tablo temsil edebilir. Bir yöntem ekleme, silme veya varlıklar tarafından temsil edilen veri güncelleştirme gibi bir görevi gerçekleştirir. Daha fazla bilgi için bkz: [iş verilerini SharePoint tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -119,20 +120,20 @@ ms.lasthandoff: 10/31/2017
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md)|Bir model için BDC görsel olarak tasarlamak için kullanabileceğiniz araçlar açıklanmaktadır.|  
-|[Nasıl yapılır: bir modele bir varlık ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md)|Dış içerik türlerini ya da varlıkları modele eklemek gösterilmiştir.|  
-|[Nasıl yapılır: bir Bulucu yöntemi ekleme](../sharepoint/how-to-add-a-finder-method.md)|Bir liste veya Web Bölümü varlıkların listesini görüntülemek kullanıcıların sağlayan bir yöntem eklemek gösterilmiştir.|  
-|[Nasıl yapılır: belirli bir Bulucu yöntemi ekleme](../sharepoint/how-to-add-a-specific-finder-method.md)|Belirli bir varlık ayrıntılarını görüntülemek kullanıcıların sağlayan bir yöntem eklemek gösterilmiştir.|  
-|[Nasıl yapılır: bir yaratıcı yöntemi ekleme](../sharepoint/how-to-add-a-creator-method.md)|Kayıt bir veri kaynağına doğrudan bir liste veya Web Bölümü eklemek kullanıcıların sağlayan bir yöntem eklemek gösterilmiştir.|  
-|[Nasıl yapılır: bir Silici yöntemi ekleme](../sharepoint/how-to-add-a-deleter-method.md)|Kullanıcıların listesinin bir kullanıcı arabirimi (UI) veya Web Bölümü seçenekleri kullanarak bir veri kaynağından verileri kaldırma olanak sağlayan bir yöntem eklemek gösterilmiştir.|  
-|[Nasıl yapılır: bir güncelleyici yöntemi ekleme](../sharepoint/how-to-add-an-updater-method.md)|Kullanıcıların bir veri kaynağındaki veri kayıtlarını doğrudan bir liste veya Web Bölümü değiştirmesine olanak tanır yönteminin nasıl ekleneceğini gösterir.|  
-|[Nasıl yapılır: bir yönteme parametre ekleme](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Visual Studio yöntemi Ayrıntıları penceresinde bir yönteme giriş ve dönüş parametreleri eklemek için nasıl kullanılacağını gösterir.|  
-|[Nasıl yapılır: bir parametrenin tür tanımlayıcısını tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Parametre veri türleri modelde tanımlamak gösterilmiştir.|  
-|[Nasıl yapılır: yöntem örneği tanımlama](../sharepoint/how-to-define-a-method-instance.md)|BDC yürüten bir yöntemin bir örneğinin nasıl oluşturulacağını gösterir.|  
-|[Nasıl yapılır: bir Bulucu yöntemine filtre tanımlayıcısı ekleme](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Kullanıcıların bir Bulucu yöntemi tarafından döndürülen örnek sayısını sınırlamak gösterilmiştir.|  
-|[Varlıklar arasında ilişkilendirme oluşturma](../sharepoint/creating-an-association-between-entities.md)|Modeldeki varlıklar arasındaki ilişkiler nasıl tanımlayabilirsiniz açıklar. İş Verileri Web bölümlerini, dış listeler ve özel uygulamalar kullanıcı arabiriminde (UI) bu veri ilişkileri görüntüleyebilirsiniz.|  
+|[BDC Modeli Tasarım Araçlarına Genel Bakış](../sharepoint/bdc-model-design-tools-overview.md)|Bir model için BDC görsel olarak tasarlamak için kullanabileceğiniz araçlar açıklanmaktadır.|  
+|[Nasıl yapılır: Modele bir Varlık Ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md)|Dış içerik türlerini ya da varlıkları modele eklemek gösterilmiştir.|  
+|[Nasıl yapılır: Bir Bulucu Metodu Ekleme](../sharepoint/how-to-add-a-finder-method.md)|Bir liste veya Web Bölümü varlıkların listesini görüntülemek kullanıcıların sağlayan bir yöntem eklemek gösterilmiştir.|  
+|[Nasıl yapılır: Belirli bir Bulucu Metodu Ekleme](../sharepoint/how-to-add-a-specific-finder-method.md)|Belirli bir varlık ayrıntılarını görüntülemek kullanıcıların sağlayan bir yöntem eklemek gösterilmiştir.|  
+|[Nasıl yapılır: Bir Yaratıcı Metodu Ekleme](../sharepoint/how-to-add-a-creator-method.md)|Kayıt bir veri kaynağına doğrudan bir liste veya Web Bölümü eklemek kullanıcıların sağlayan bir yöntem eklemek gösterilmiştir.|  
+|[Nasıl yapılır: Bir Silici Metodu Ekleme](../sharepoint/how-to-add-a-deleter-method.md)|Kullanıcıların listesinin bir kullanıcı arabirimi (UI) veya Web Bölümü seçenekleri kullanarak bir veri kaynağından verileri kaldırma olanak sağlayan bir yöntem eklemek gösterilmiştir.|  
+|[Nasıl yapılır: Bir Güncelleyici Metodu Ekleme](../sharepoint/how-to-add-an-updater-method.md)|Kullanıcıların bir veri kaynağındaki veri kayıtlarını doğrudan bir liste veya Web Bölümü değiştirmesine olanak tanır yönteminin nasıl ekleneceğini gösterir.|  
+|[Nasıl yapılır: Bir Metoda Parametre Ekleme](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Visual Studio yöntemi Ayrıntıları penceresinde bir yönteme giriş ve dönüş parametreleri eklemek için nasıl kullanılacağını gösterir.|  
+|[Nasıl yapılır: Bir Parametrenin Tür Tanımlayıcısını Tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Parametre veri türleri modelde tanımlamak gösterilmiştir.|  
+|[Nasıl yapılır: Metot Örneği Tanımlama](../sharepoint/how-to-define-a-method-instance.md)|BDC yürüten bir yöntemin bir örneğinin nasıl oluşturulacağını gösterir.|  
+|[Nasıl yapılır: Bir Bulucu Metoduna Filtre Tanımlayıcısı Ekleme](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Kullanıcıların bir Bulucu yöntemi tarafından döndürülen örnek sayısını sınırlamak gösterilmiştir.|  
+|[Varlıklar Arasında İlişkilendirme Oluşturma](../sharepoint/creating-an-association-between-entities.md)|Modeldeki varlıklar arasındaki ilişkiler nasıl tanımlayabilirsiniz açıklar. İş Verileri Web bölümlerini, dış listeler ve özel uygulamalar kullanıcı arabiriminde (UI) bu veri ilişkileri görüntüleyebilirsiniz.|  
 |[Nasıl yapılır: varlıklar arasında ilişkilendirme oluşturma](../sharepoint/how-to-create-an-association-between-entities.md)|Modeldeki varlıklar arasındaki ilişkileri tanımlamak gösterilmiştir.|  
-|[İzlenecek yol:, iş verileri kullanarak SharePoint'te dış liste oluşturma](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Oluşturma ve test kişiler SharePoint Dış listede görüntüler modeli gösteren adım adım yönergeler sağlar.|  
-|[İş verilerini SharePoint ile tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)|Oluşturma ve modelleri BDC hizmeti için tasarlama genel bir bakış sağlar.|  
+|[İzlenecek yol: İş Verileri Kullanarak SharePoint'te Dış Liste Oluşturma](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Oluşturma ve test kişiler SharePoint Dış listede görüntüler modeli gösteren adım adım yönergeler sağlar.|  
+|[İş Verilerini SharePoint ile Tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)|Oluşturma ve modelleri BDC hizmeti için tasarlama genel bir bakış sağlar.|  
   
   

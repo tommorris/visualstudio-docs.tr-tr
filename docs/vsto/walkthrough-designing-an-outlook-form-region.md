@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f2d8e1f8ad116bd6db12eca288e567a652e502a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 715d58e205442511db9709a5e57b1b689e008628
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>İzlenecek Yol: Outlook Form Bölgesi Tasarlama
   Özel form bölgeleri standart veya özel Microsoft Office Outlook Form genişletir. Bu kılavuzda, bir kişi öğesinin Inspector penceresinde yeni bir sayfa olarak görünen özel form bölgesi tasarlama. Bu form bölgesi Windows Live yerel arama Web sitesine adres bilgilerini göndererek kişi için listelenen her adresin haritasını görüntüler. Form bölgeleri hakkında daha fazla bilgi için bkz: [Outlook Form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md).  
@@ -181,6 +182,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Outlook eklenti projesine Form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Outlook Form bölgelerindeki özel eylemler](../vsto/custom-actions-in-outlook-form-regions.md)   
- [Nasıl yapılır: Outlook Form bölgesini görüntülemesini engelleme](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
+ [Nasıl Yapılır: Outlook'un Form Bölgesini Görüntülemesini Engelleme](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
   
   

@@ -21,11 +21,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 56cd2e51a50f610c8165f86ab17eef18044cc6b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f44d1d8c2982e23995a3625205eaa0bddf7adc4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-a-ribbon-for-outlook"></a>Outlook İçin Şerit Özelleştirme
   Microsoft Office Outlook Şeritte özelleştirdiğinizde, özel Şerit uygulamada nerede görüneceğini dikkate almanız gerekir. Outlook ana uygulama kullanıcı arabirimi (UI) ve kullanıcıların e-posta iletileri oluşturmak gibi belirli görevleri gerçekleştirdiğinizde, açık windows Şerit görüntüler. Bu uygulama windows denetçiler adlandırılır.  

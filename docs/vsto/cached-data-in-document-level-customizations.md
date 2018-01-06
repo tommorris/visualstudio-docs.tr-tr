@@ -23,11 +23,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f90aeb03dd62d76064124e9870a5a4dbcd250621
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: deb63265b65a382132d3ef957ad67ddd1bccb438
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Belge Düzeyi Özelleştirmelerdeki Önbelleğe Alınmış Veriler
   Office belgelerindeki görünümünden veri ayırmak için belge düzeyi özelleştirmeleri birincil amacı olan. Veri sayılar ve metin dahil olmak üzere belgede depolanan bilgileri gösterir. Görünüm kullanıcı arabirimi hem de Microsoft Office Word ve Microsoft Office Excel nesne modeline anlamına gelir.  
@@ -66,6 +67,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)   
- [Visual Studio'da Office çözümleri mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
+ [Visual Studio'da Office Çözümleri Mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
   
   

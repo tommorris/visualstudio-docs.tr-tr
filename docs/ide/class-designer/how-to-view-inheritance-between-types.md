@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 870276e616ab5b362901f495a1bbf32508c18dca
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 303e2a9a00804e13d1c6fe37d9e2fe0f659ae460
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>Nasıl Yapılır: Türler Arasında Devralmayı Görüntüleme (Sınıf Tasarımcısı)
 Bir taban türü ve türetilmiş türlerinden sınıf tasarımcısında sınıf diyagramında arasında varsa devralma ilişkisi bulabilirsiniz. Zamanlama, iki tür arasında yoksa bir devralma ilişkisi oluşturmak için bkz [nasıl yapılır: devralma türleri arasında oluşturma](how-to-create-inheritance-between-types.md).  

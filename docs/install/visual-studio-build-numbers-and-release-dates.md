@@ -5,22 +5,39 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/18/2017
+ms.date: 12/18/2017
 ms.topic: article
 helpviewer_keywords: 
 ms.technology: vs-acquisition
 ms.service: 
-ms.openlocfilehash: fff709bc75a4d9f9747c0fc47d5961fb2b00ec1c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 945b11869145d07c9defa8586876d02eccf098f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 yapı numaralarını ve tarihleri bırakın
 Aşağıdaki tabloda yapı numaraları ve yayın tarihleri tarih için Visual Studio 2017 listeler.
 
 | **Sürüm**| **Kanal** | **Sürüm tarihi** | **Sürüm oluşturma** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.5.2 | Sürüm | 12/14/2017 | 15.5.27130.2010 |
+| 15.6.0 Önizleme 1.1 | Önizleme | 12/14/2017 | 15.6.27205.2004 |
+| 15.5.1 | Sürüm | 12/7/2017 | 15.5.27130.2003 |
+| 15.6.0 Önizleme 1.0 | Önizleme | 12/7/2017 | 15.6.27205.0 |
+| 15.0.7 | Sürüm | 12/6/2017 | 15.0.26228.18 |
+| 15.5 | Sürüm | 12/4/2017 | 15.5.27130.0 |
+| 15.5.0 Önizleme 5.0 | Önizleme | 11/30/2017 | 15.5.27128.1 |
+| 15.4.5 | Sürüm | 11/27/2017 | 15.4.27004.2010 |
+| 15.5.0 Önizleme 4.0 | Önizleme | 11/14/2017 | 15.5.27110.0 |
+| 15.4.4 | Sürüm | 11/14/2017 | 15.4.27004.2009 |
+| 15.0.6 | Sürüm | 11/14/2017 | 15.0.26228.17 |
+| 15.4.3 | Sürüm | 11/8/2017 | 15.4.27004.2008 |
+| 15.5.0 Önizleme 3.0 | Önizleme | 11/6/2017 | 15.5.27102.0 |
+| 15.4.2 | Sürüm | 10/31/2017 | 15.4.27004.2006 |
+| 15.5.0 Önizleme 2.0 | Önizleme | 10/23/2017 | 15.5.27019.1 |
+| 15.4.1 | Sürüm | 10/19/2017 | 15.4.27004.2005 |
 | 15,5 preview 1 | Önizleme | 10/11/2017 | 15.0.27009.1 |
 | 15.4 | Sürüm | 10/9/2017 | 15.0.27004.20002 |
 | 15.4 Önizleme 6 | Önizleme | 10/9/2017| 15.0.27004.20002 |
@@ -37,7 +54,7 @@ Aşağıdaki tabloda yapı numaraları ve yayın tarihleri tarih için Visual St
 | 15.3.1 | Sürüm | 8/18/2017 | 15.0.26730.08 |
 | 15.3.1 preview 1 | Önizleme | 8/18/2017 | 15.0.26730.08 |
 | 15.3.1  | Sürüm | 8/18/2017 | 15.0.26730.08 |
-| 15.4 preview 1 | Önizleme | 8/22/2017 | yok |
+| 15.4 preview 1 | Önizleme | 8/24/2017 | 15.4.26823.1 |
 | 15.3 | Sürüm | 8/14/2017 | 15.0.26730.3 |
 | 15.3 Önizleme 7.1 | Önizleme | 8/11/2017 | 15.0.26730.3 |
 | 15.3 Önizleme 7 | Önizleme | 8/1/2017 | 15.0.26730.0 |
@@ -79,9 +96,9 @@ Birkaç diğer destek seçenekleri şunlardır:
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 * [Visual Studio 2017 Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Visual Studio 2017 yüklemek için komut satırı parametreleri kullanın](use-command-line-parameters-to-install-visual-studio.md)
-* [Algılama ve Visual Studio Örnekleri yönetmek için Araçlar](tools-for-managing-visual-studio-instances.md)
+* [Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar](tools-for-managing-visual-studio-instances.md)

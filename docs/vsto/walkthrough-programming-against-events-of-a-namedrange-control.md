@@ -21,11 +21,12 @@ caps.latest.revision: "57"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40076f607e66ec76aaa42ae297d22b38a6234ab0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 46e83b8450a441eb7bc405c855271e315edb2e3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-programming-against-events-of-a-namedrange-control"></a>İzlenecek Yol: NamedRange Denetimi Olaylarına Karşı Programlama
   Bu kılavuzda nasıl ekleneceği gösterilmektedir bir <xref:Microsoft.Office.Tools.Excel.NamedRange> Microsoft Office Excel çalışma ve Visual Studio'da Office geliştirme araçlarını kullanarak olaylarına dayalı denetimi.  
@@ -166,6 +167,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: NamedRange denetimlerinin boyutunu değiştirme](../vsto/how-to-resize-namedrange-controls.md)   
  [Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md)  
+ [Nasıl Yapılır: Office Projelerinde Olay İşleyicileri Oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md)  
   
   

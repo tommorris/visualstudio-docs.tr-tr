@@ -14,11 +14,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: "22"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 0be707ec592265c75ce6e0c36954010e496ac91c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2ecea317b60e100b282428d953694238b5c63f21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Birden Çok UI Eşlemesi Bulunan Büyük Uygulamaları Sınama
 Bu konuda, birden çok UI eşlemesi kullanarak büyük bir uygulamayı test ederken kodlanmış UI testleri kullanma açıklanmaktadır.  
@@ -143,4 +144,4 @@ namespace ContosoProject
  <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>   
  [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
  [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md)
+ [Kodlanmış UI Testinin Anatomisi](../test/anatomy-of-a-coded-ui-test.md)

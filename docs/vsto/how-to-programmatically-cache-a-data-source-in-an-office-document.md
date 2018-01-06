@@ -21,11 +21,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2952ee6de3321300ad87053f0e5c385357fe0ba2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e117243afff5cfa73cd7a27ad8ce0230d8fd512a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Nasıl Yapılır: Veri Kaynağını Programlamayla Office Belgesinden Önbelleğe Alma
   Program aracılığıyla bir veri nesnesi bir belge veri önbelleğindeki çağırarak ekleyebileceğiniz `StartCaching` gibi bir konak yöntemi öğesi bir <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, veya <xref:Microsoft.Office.Tools.Excel.Worksheet>. Bir veri nesnesi çağırarak veri önbelleğinden kaldırma `StopCaching` konak öğesinin yöntemi.  
@@ -63,6 +64,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: veri kullanımı için çevrimdışı veya sunucuda önbelleğe alma](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [Nasıl yapılır: bir parola korumalı belgede veriyi önbelleğe alma](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
  [Sunucudaki belgelerde verilere erişme](../vsto/accessing-data-in-documents-on-the-server.md)   
- [Verileri kaydetme](/visualstudio/data-tools/saving-data)  
+ [Verileri Kaydetme](/visualstudio/data-tools/saving-data)  
   
   

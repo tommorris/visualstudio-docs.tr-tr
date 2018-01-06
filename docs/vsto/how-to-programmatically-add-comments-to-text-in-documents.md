@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 05744cc6d4cba2a21dd45a3b314367e31a53a92a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 69f320ef3e7b3914d9d6eadb7466b3a216ef95d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Nasıl yapılır: Belgelerde Metne Program Aracılığıyla Açıklama Ekleme
   Belge sınıfı açıklamaları özelliğinin bir Microsoft Office Word belgesinde metin aralığı için bir açıklama ekler.  
@@ -52,6 +53,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: belgelerden tüm açıklamaları program aracılığıyla kaldırma](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
- [Belge konak öğesi](../vsto/document-host-item.md)  
+ [Belge Konak Öğesi](../vsto/document-host-item.md)  
   
   

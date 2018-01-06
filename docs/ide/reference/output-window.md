@@ -20,11 +20,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b58e7997d2aaec4661906743a4ef72ce82fcd91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1e886e88ad7ab4e943908e003ffe56719bd13211
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="output-window"></a>Çıktı Penceresi
 **Çıkış** penceresi tümleşik geliştirme ortamı (IDE) çeşitli özellikleri için durum iletilerini görüntüleyebilir. Açmak için **çıkış** menü çubuğunda, pencere **görünüm/çıkış** (veya CTRL + ALT + O tıklatın).  
@@ -71,4 +72,4 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Çıktı penceresi denetleme](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Derleme ve oluşturma](../../ide/compiling-and-building-in-visual-studio.md)   
  [Derleme yapılandırmalarını anlama](../../ide/understanding-build-configurations.md)   
- [Sınıf kitaplığına genel bakış](/dotnet/standard/class-library-overview)
+ [Sınıf Kitaplığına Genel Bakış](/dotnet/standard/class-library-overview)

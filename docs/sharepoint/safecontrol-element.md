@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d9651c320e574c8db9fcafcb6e98f13e45eac1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c4e0c55a6d4ea86693f93e8b3eb97f16e0a37e8a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="safecontrol-element"></a>SafeControl Öğesi
   Bir ASPX denetimi veya SharePoint sitesinde herhangi bir ASPX sayfasında erişmek herhangi bir kullanıcı için güvenli olarak tasarlanmış Web bölümünü temsil eder.  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|**Derleme**|İsteğe bağlı **xs: String** özniteliği.<br /><br /> ASPX denetimi veya Web bölümünün tanımlandığı derleme adı. Varsayılan olarak, bu öznitelik kullanır **$SharePoint.Project.AssemblyFullName$** parametredir derleme adı. Daha fazla bilgi için bkz: [değiştirilebilir parametreler](../sharepoint/replaceable-parameters.md).|  
+|**Assembly**|İsteğe bağlı **xs: String** özniteliği.<br /><br /> ASPX denetimi veya Web bölümünün tanımlandığı derleme adı. Varsayılan olarak, bu öznitelik kullanır **$SharePoint.Project.AssemblyFullName$** parametredir derleme adı. Daha fazla bilgi için bkz: [değiştirilebilir parametreler](../sharepoint/replaceable-parameters.md).|  
 |**IsSafe**|İsteğe bağlı **xs:boolean** özniteliği.<br /><br /> ASPX denetim veya Web Bölümü güvenilmeyen kullanıcıların erişim güvenli olup olmadığını belirtir.|  
 |**IsSafeAgainstScript**|İsteğe bağlı **xs:boolean** özniteliği.<br /><br /> Güvenilmeyen kullanıcıların görüntüleyebilir veya ASPX denetim veya Web Bölümü özelliklerini Düzenle olup olmadığını belirtir.|  
 |**Ad**|İsteğe bağlı **xs: String** özniteliği.<br /><br /> Bu güvenli denetim girdisi koleksiyonundaki adı.|  
@@ -73,6 +74,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SharePoint proje öğesi şema başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Paketleme ve dağıtım bilgileri proje öğeleri sağlama](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
+ [Proje Öğelerinde Paketleme ve Dağıtım Bilgileri Sağlama](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

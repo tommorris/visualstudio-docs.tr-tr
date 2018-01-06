@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
-ms.openlocfilehash: bb11488b7d2a2a3dfc1d490ed988048edad9edb1
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: 5ad4781dc52dffd677106484c2a9bdedff3eaba4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Visual Studio Enterprise 2017 bileşen dizini
 
@@ -946,7 +947,7 @@ Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites | Visu
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET Profil Araçları | 15.0.27005.2 | Önerilen
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.0.26606.0 | Önerilen
 Component.Dotfuscator | PreEmptive tarafından koruması - Dotfuscator | 15.0.26208.0 | İsteğe Bağlı
-Microsoft.Component.CodeAnalysis.SDK | .NET derleme Platform SDK'sı | 15.0.27128.1 | İsteğe Bağlı
+Microsoft.Component.CodeAnalysis.SDK | .NET Compiler Platform SDK’sı | 15.0.27128.1 | İsteğe Bağlı
 Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | İsteğe Bağlı
 Microsoft.Component.VC.Runtime.OSSupport | UWP için Visual C++ çalışma zamanı | 15.0.27019.1 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 paketi hedefleme | 15.0.26621.2 | İsteğe Bağlı
@@ -1038,7 +1039,7 @@ Birkaç diğer destek seçenekleri şunlardır:
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -20,11 +20,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 3eefde445f5c8aca7199d4316472fe92c3160d00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 99be4338bcee9ffb5c7cb9cf28f6187128345f85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Eski Durum makinesi iş akışı Tasarımcısı'nı kullanarak
 Oluştururken yeni bir durum makine iş akışı projesinde [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] ya da hedefleyen [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], ya da kullanmayı tercih edebileceğiniz **Durum makinesi iş akışı konsol uygulaması** veya  **Durum makinesi iş akışı Kitaplığı** eski proje şablonu. Bu durum makinenin proje şablonlarından birini seçerseniz, durumu makine Tasarımcısı eski iş akışı Tasarımcısı kullanıcı arabirimi olarak sunulur. Eski durum makine proje şablonları hakkında daha fazla bilgi için bkz [nasıl yapılır: oluşturma durumu makine iş akışı konsol uygulamaları (eski)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) ve [nasıl yapılır: bir Durum makinesi iş akışı kitaplığı (eski)oluşturun](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  

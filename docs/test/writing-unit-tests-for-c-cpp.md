@@ -11,11 +11,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 83e44a28b0039c743724f3c70bee95e2ef2d419b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 19bdf650f2d11f9a773e714742c6f57359b7b63b
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio'da C/C++ için birim testleri yazma
 Yazma ve kullanarak, C++ birim testleri çalıştırma **Test Gezgini** penceresinde, diğer diller için olduğu gibi. Kullanma hakkında daha fazla bilgi için **Test Gezgini**, bkz: [Test Gezgini ile birim testleri çalıştırma](run-unit-tests-with-test-explorer.md). 
@@ -37,7 +38,7 @@ Yüklü çerçeveleri yanı sıra, Visual Studio içinde kullanmak istediğiniz 
 
 2) **Boost.Test** varsayılan bileşeni olarak bulunur **C++ ile masaüstü geliştirme** iş yükü. İle tümleşik **Test Gezgini** ancak şu anda proje şablonu sahip değilse, bu nedenle onu el ile yapılandırılması gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Boost.Test kullanın](how-to-use-boost-test-for-cpp.md). 
 
-3) **CTest** desteği ile birlikte [CMake araçları Visual Studio için](/cpp/ide/cmake-tools-for-cpp.md) parçası olan bileşen, **C++ ile masaüstü geliştirme** iş yükü. Ancak, CTest henüz tam olarak tümleşiktir değil **Test Gezgini**. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da CTest kullanın](how-to-use-ctest-for-cpp.md).
+3) **CTest** desteği ile birlikte [CMake araçları Visual Studio için](/cpp/ide/cmake-tools-for-cpp) parçası olan bileşen, **C++ ile masaüstü geliştirme** iş yükü. Ancak, CTest henüz tam olarak tümleşiktir değil **Test Gezgini**. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da CTest kullanın](how-to-use-ctest-for-cpp.md).
 
 
 **Visual Studio 2015 ve önceki**
@@ -110,5 +111,5 @@ Kullanma hakkında daha fazla bilgi için **Test Gezgini**, bkz: [Test Gezgini i
 Birim testi ile ilgili en iyi yöntemler için bkz: [birim testi temelleri](unit-test-basics.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Kodunuza birim testi](unit-test-your-code.md)
+[Kodunuza Birim Testi Uygulama](unit-test-your-code.md)
 

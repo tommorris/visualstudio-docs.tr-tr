@@ -21,11 +21,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a020b82dccd1491e0381bee8ff104b944d5cf7b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 34ee1ca7d62a661f915edba1adc22c18f90256b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>İzlenecek yol: IntelliTrace'i Kullanarak SharePoint Uygulamasında Hata Ayıklama
   IntelliTrace'i kullanarak SharePoint çözümleri daha kolay ayıklayabilirsiniz. Geleneksel hata ayıklayıcıları geçerli şu anda yalnızca bir anlık görüntüsü bir çözümün verin. Ancak, IntelliTrace çözümünüzde oluştu geçmiş olaylar ve içerik, bunlar oluştu ve koda gidin gözden geçirmek için kullanabilirsiniz.  

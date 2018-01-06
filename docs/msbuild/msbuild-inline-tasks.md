@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ef4376d8d7600b1072e2afa5df2cf474a8b3ab32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ea7720cbe005044e2b0eea021a720c79b651f740
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild Satır İçi Görevleri
 MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluşturulan <xref:Microsoft.Build.Framework.ITask> arabirimi. Daha fazla bilgi için bkz: [görevleri](../msbuild/msbuild-tasks.md).  
@@ -192,4 +193,4 @@ File.WriteAllText(Path, content);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görevler](../msbuild/msbuild-tasks.md)   
- [İzlenecek yol: satır içi göre oluşturma](../msbuild/walkthrough-creating-an-inline-task.md)
+ [İzlenecek Yol: Satır İçi Göre Oluşturma](../msbuild/walkthrough-creating-an-inline-task.md)

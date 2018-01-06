@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d3006ddafa743a5cd55a687895e894f3cbb068a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 16d3e15187d6164bf0b659a94ac81d26a8bf6a5c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio kullanarak Office için VSTO Eklentileri oluşturma
   Office genişletmek .NET Framework uygulamaları oluşturmak için Visual Studio'da Microsoft Office geliştirici araçlarını kullanabilirsiniz. Bu uygulamaları olarak da adlandırılır *Office çözümleri*.  
@@ -39,49 +40,49 @@ ms.lasthandoff: 10/31/2017
  [Başlarken &#40; Office geliştirme Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Office çözümleri oluşturmak için geliştirme bilgisayarı yapılandırma, Office çözümleri oluşturmaya başlamak nasıl ve Visual Studio'da Office geliştirme yenilikler hakkında bilgi için bağlantılar sağlar.  
   
- [Yükseltme ve Office çözümleri geçirme](../vsto/upgrading-and-migrating-office-solutions.md)  
+ [Office Çözümlerini Yükseltme ve Geçirme](../vsto/upgrading-and-migrating-office-solutions.md)  
  Visual Studio'nun önceki sürümleri kullanılarak oluşturulan projeleri yükseltme işlemi hakkında bilgilere bağlantılar sağlar.  
   
- [Visual Studio'da Office çözümleri mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
+ [Visual Studio'da Office Çözümleri Mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
  Office çözümleri, belge düzeyi özelleştirmeleri ve VSTO eklentileri hakkında bilgiler dahil olmak üzere nasıl hakkında bilgilere bağlantılar sağlar.  
   
- [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)  
+ [Office Çözümleri Tasarlama ve Oluşturma](../vsto/designing-and-creating-office-solutions.md)  
  Bir Office projesi oluşturun ve projenizi Visual Studio'da yapılandırma hakkında bilgi sağlar.  
   
- [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)  
+ [Office Çözümleri Geliştirme](../vsto/developing-office-solutions.md)  
  Yönetilen kod Office kullanıcı arabirimini özelleştirmek, verilerle çalışmak ve sorunlarını gidermek nasıl dahil olmak üzere Office çözümleri ile kullanma hakkında bilgi sağlar.  
   
- [Excel çözümleri](../vsto/excel-solutions.md)  
+ [Excel Çözümleri](../vsto/excel-solutions.md)  
  Excel otomatikleştirmek için Excel çözümleri oluşturup Excel'e özgü Genelleştirme sorunları anlamak hakkında bilgi sağlar.  
   
- [InfoPath çözümleri](../vsto/infopath-solutions.md)  
+ [InfoPath Çözümleri](../vsto/infopath-solutions.md)  
  InfoPath için form şablonları ve VSTO eklentileri oluşturma hakkında bilgi sağlar.  
   
- [Outlook çözümleri](../vsto/outlook-solutions.md)  
+ [Outlook Çözümleri](../vsto/outlook-solutions.md)  
  Outlook ve Outlook VSTO eklentileri oluşturma çağırıp form bölgeleri hakkında bilgi sağlar.  
   
- [PowerPoint çözümleri](../vsto/powerpoint-solutions.md)  
+ [PowerPoint Çözümleri](../vsto/powerpoint-solutions.md)  
  PowerPoint'i otomatikleştirmek ve PowerPoint VSTO eklentileri oluşturma hakkında bilgi sağlar.  
   
- [Proje çözümleri](../vsto/project-solutions.md)  
+ [Proje Çözümleri](../vsto/project-solutions.md)  
  Microsoft Office Project otomatikleştirmek ve proje VSTO eklentileri oluşturma hakkında bilgi sağlar.  
   
- [Visio çözümleri](../vsto/visio-solutions.md)  
+ [Visio Çözümleri](../vsto/visio-solutions.md)  
  Visio'yu otomatikleştirmek ve Visio VSTO eklentileri oluşturma hakkında bilgi sağlar.  
   
- [Word çözümleri](../vsto/word-solutions.md)  
+ [Word Çözümleri](../vsto/word-solutions.md)  
  Word otomatikleştirmek ve Word çözümleri oluşturma hakkında bilgi sağlar.  
   
- [Office çözümleri oluşturma](../vsto/building-office-solutions.md)  
+ [Office Çözümleri Oluşturma](../vsto/building-office-solutions.md)  
  Office projeleri ve diğer türleri projelerinde derleme arasındaki farklar hakkında bilgi sağlar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
- [Office projelerinde hata ayıklama](../vsto/debugging-office-projects.md)  
+ [Office Projelerinde Hata Ayıklama](../vsto/debugging-office-projects.md)  
  Office projelerinde hata ayıklama ve diğer proje türleri arasındaki farklar hakkında bilgi sağlar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)  
+ [Office Çözümleri Güvenliğini Sağlama](../vsto/securing-office-solutions.md)  
  Office çözümlerinde güvenlik özelliklerinin nasıl çalıştığı hakkında bilgi sağlar.  
   
- [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)  
+ [Office Çözümünü Dağıtma](../vsto/deploying-an-office-solution.md)  
  Office çözümleri kullanıcılarınız ve önemli sorunları için bir dağıtım yöntemini seçtiğinizde dikkate alınması gereken oluşturma hakkında bilgi sağlar.  
   
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)  

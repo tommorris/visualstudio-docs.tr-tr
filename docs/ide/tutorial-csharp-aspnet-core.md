@@ -12,14 +12,17 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: eecae2b95947d4bdf40ba6d57a85150e03f21cfb
-ms.sourcegitcommit: abe8d0aaded582058b5f5669d9d534d2f6a83355
+ms.workload:
+- aspnet
+- dotnetcore
+ms.openlocfilehash: c4d67a57063854f859a766068084d63902ba038e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/16/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>C# ve Visual Studio'da ASP.NET ile çalışmaya başlama
-C# geliştirme için Visual Studio kullanarak ASP.NET Core Bu öğreticide, bir C# ASP.NET Core web uygulaması oluşturma, kodu ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın.
+Visual Studio kullanarak ASP.NET Core ile C# geliştirme için Bu öğreticide, bir C# ASP.NET Core web uygulaması oluşturma, kodu ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın.
 
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa.
 
@@ -113,7 +116,7 @@ MVC örüntüsü, test ve güncelleştirmek geleneksel tek yapılı uygulamalar 
 
 ## <a name="run-and-debug-the-application"></a>Çalıştırın ve uygulamada hata ayıklama
 
-1. Seçin **IIS Express** oluşturmak ve uygulama hata ayıklama modunda çalıştırmak için IDE'de düğmesi. (Alternatif olarak, basabilirsiniz **F5**, veya seçebilirsiniz **hata ayıklama > hata ayıklamayı Başlat** menü çubuğundan.)
+1. Seçin **IIS Express** oluşturmak ve uygulama hata ayıklama modunda çalıştırmak için IDE'de düğmesi. (Alternatif olarak, basın **F5**, veya seçin **hata ayıklama > hata ayıklamayı Başlat** menü çubuğundan.)
 
   ![Visual Studio'da IIS Express düğmesini tıklatın](../ide/media/csharp-aspnet-iis-express-button.png)
 
@@ -158,7 +161,7 @@ MVC örüntüsü, test ve güncelleştirmek geleneksel tek yapılı uygulamalar 
 
   ![Değiştirilen metni görmek için tarayıcı penceresini yenileyin](../ide/media/csharp-aspnet-browser-page-about-changed.png)
 
-1. Tuşuna **Shift**+**F5** hata ayıklamasını durdurmak için. Alternatif olarak, seçin **hata ayıklama** > **durdurma hata ayıklama** menüsünde çubuğunu ya da seçin **durdurma hata ayıklama** araç çubuğu düğmesinden.
+1. Seçin **durdurma hata ayıklama** hata ayıklamasını durdurmak için araç çubuğu düğmesinden. (Alternatif olarak, basın **Shift**+**F5**, veya seçin **hata ayıklama** > **durdurma hata ayıklama** menü çubuğundan.)
 
  ![Araç çubuğundaki hata ayıklamayı Durdur düğmesini tıklatın](../ide/media/csharp-aspnet-stop-debugging.png)
 
@@ -168,3 +171,6 @@ Bu öğreticiyi tamamlamak Tebrikler!
 ## <a name="see-also"></a>Ayrıca bkz.
 * [ASP.NET Core MVC ve Visual Studio ile çalışmaya başlama](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
 * [ASP.NET Core Razor sayfalarında ile çalışmaya başlama](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+* [C# ' ta yenilikler nelerdir?](/dotnet/csharp/whats-new)
+* [C# Dil Başvurusu](/dotnet/csharp/language-reference/index)
+* [Yeni başlayanlar için C# Temelleri](https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169) video indirmelere

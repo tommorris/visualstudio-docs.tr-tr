@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: debc70294bf0b513f22ed1cc06b9f0790da7b778
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d1168fb27330f49a714e64478fc7ab167569dadb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="status"></a>Durum
 VSPerfCmd.exe **durum** seçeneği profil oluşturucu ve şu anda profili oluşturuluyor herhangi bir işlem durumuyla ilgili bilgileri görüntüler.  

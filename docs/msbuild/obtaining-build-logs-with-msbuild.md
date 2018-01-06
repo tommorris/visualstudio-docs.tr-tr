@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: cd7e50a44e5d53653f233372b643c31fe58aedc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 129f9c9235035e828e1825898aac89eaf8cd1388
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>MSBuild ile Derleme Günlükleri Alma
 MSBuild ile anahtarlarını kullanarak gözden geçirme ve yapı verileri için bir veya daha fazla kaydetmek isteyip istemediğinizi istediğiniz yapı veri miktarını belirtebilirsiniz. Yapılandırma verilerini toplamak için özel bir Günlükçü de belirtebilirsiniz. Bu konuda kapsamıyordur MSBuild komut satırı anahtarları hakkında daha fazla bilgi için bkz: [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).  
@@ -81,4 +82,4 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
  [Günlükçüleri derleme](../msbuild/build-loggers.md)   
  [Birden çok işlemcili ortamda oturum açma](../msbuild/logging-in-a-multi-processor-environment.md)   
  [İletme Günlükçüleri oluşturma](../msbuild/creating-forwarding-loggers.md)   
- [MSBuild kavramları](../msbuild/msbuild-concepts.md)
+ [MSBuild Kavramları](../msbuild/msbuild-concepts.md)

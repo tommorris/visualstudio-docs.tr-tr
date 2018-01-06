@@ -16,11 +16,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c51065eacda271daeb12c17fdeb5fe4e6b20683
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ac0fc1ca0efe4134889d8bf5ac1d3ca9ae2551ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel Çözümlerini Genelleştirme ve Yerelleştirme
   Bu bölüm, Windows için İngilizce olmayan ayarlara sahip bilgisayarlarda çalışan Microsoft Office Excel çözümleri için özel konular hakkında bilgi içerir. Visual Studio kullanarak çözümleri diğer tür oluşturduğunuzda karşılaştığınız çoğu yönlerini Genelleştirme ve Microsoft Office Çözümlerini Yerelleştirme aynı olduğunu. Genel bilgi için bkz: [Globalizing ve yerelleştirme uygulamaları](/visualstudio/ide/globalizing-and-localizing-applications).  
@@ -101,6 +102,6 @@ Application.ActiveCell.Value2 = "05/12/04"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Office Çok Dilde Kullanıcı arabirimini hedefleme](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

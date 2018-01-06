@@ -21,11 +21,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b5074bae9d7f150f60af40c599cc0e61c9757679
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e8c4a68c4f99c0cb33ecc938037d68553b58bca4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Nasıl Yapılır: Outlook Eklenti Projesine Form Bölgesi Ekleme
   Standart veya özel bir Microsoft Office Outlook form kullanarak genişletmek için bir form bölgesi oluşturmak **yeni Outlook Form bölgesi** Sihirbazı. Yeni bir form bölgesi oluşturmak ve Visual Studio kullanıcı arabiriminde tasarım veya Outlook'ta tasarlanan form bölgesini içeri aktarabilir ve Visual Basic veya C# kodu ekleyin.  
@@ -63,8 +64,7 @@ ms.lasthandoff: 10/31/2017
   
      Tüm form bölgesi türleri Inspector, görünebilir içinde (öğeleri oluşturma) modunu oluşturun ve (öğeleri görüntüleme için) okuma modunda. Ayrıca bitişik, değişim ve Tümünü Değiştir form bölgesi türleri Okuma Bölmesi'nde yer alabilir.  
   
-10. 
-              **İleri**'ye tıklayın.  
+10. **İleri**'ye tıklayın.  
   
 11. Üzerinde **bu form bölgesini görüntüleyecek ileti sınıflarını tanımlayın** sayfasında, standart Outlook ileti sınıflarını seçin veya bir veya daha fazla özel ileti sınıfları adlarını yazın ve ardından **son**. Daha fazla bilgi için bkz: [Form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
@@ -75,6 +75,6 @@ ms.lasthandoff: 10/31/2017
  [Outlook Form bölgeleri oluşturma yönergeleri](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [İzlenecek yol: Outlook Form Bölgesi Tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [İzlenecek yol: Outlook'ta tasarlanan Form bölgesini içeri aktarma](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [Outlook Form bölgelerindeki özel eylemler](../vsto/custom-actions-in-outlook-form-regions.md)  
+ [Outlook Form Bölgelerindeki Özel Eylemler](../vsto/custom-actions-in-outlook-form-regions.md)  
   
   

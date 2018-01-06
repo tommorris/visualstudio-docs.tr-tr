@@ -19,11 +19,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e90143904c8d628e4288e24602907a75ae4bc59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9d807c38af14249b265c411de31f6cde03855c60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-local-database-files-in-office-solutions-overview"></a>Office Çözümlerinde Yerel Veritabanı Dosyaları Kullanmaya Genel Bakış
   Bir SQL Server Express (.mdf) veya bir Microsoft Office Access (.mdb) dosyası gibi bir veritabanı dosyası Office çözümünüzde içerebilir. Bu, son kullanıcıların merkezi veritabanı bakımının örneğin yalnızca tek bir bilgisayarda kullanılan bir yerel stok çözümüne gerekli olduğu durumlarda yerel bir veritabanı bulundurmanız sağlar.  
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: belgeleri veritabanı verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [Nasıl yapılır: konak kontrolü verileriyle veri kaynağını güncelleme](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)   
- [Verileri önbelleğe alma](../vsto/caching-data.md)  
+ [Verileri Önbelleğe Alma](../vsto/caching-data.md)  
   
   

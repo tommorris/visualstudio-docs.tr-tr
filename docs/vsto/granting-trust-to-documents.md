@@ -20,11 +20,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 053ece03abfbb94d809c3e5a3627bc46ef2195e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 31fd8ba79218c6844e8fc5af33a81ce1c95a8abf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="granting-trust-to-documents"></a>Belgelere Güven Verme
   Belge düzeyi projesi uygulama düzeyi projelere aynı güvenlik gereksinimlerine sahiptir: bir sertifika ile bildirimleri imzalama veya güven istemi tıklatarak. Ayrıca, belge veya çalışma kitabı güvenilir bir konum olarak belirlenmiş bir dizinde yer almalıdır.  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md)   
  [Office çözüm güvenliğinde sorunu giderme](../vsto/troubleshooting-office-solution-security.md)   
- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)  
+ [Office Çözümleri Güvenliğini Sağlama](../vsto/securing-office-solutions.md)  
   
   

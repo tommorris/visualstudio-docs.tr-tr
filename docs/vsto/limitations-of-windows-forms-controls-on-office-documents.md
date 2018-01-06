@@ -25,11 +25,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f8842bd80832211f02532ca706416416325663b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7fbbad8433df7dd36d8f09a13305da3e15430c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office Belgelerindeki Windows Forms Denetimleri Sınırlamaları
   Microsoft Office Word belgelerine veya Microsoft Office Excel çalışma sayfalarına eklenen Windows Forms denetimleri ve Windows Forms için eklenen Windows Forms denetimleri arasındaki bazı farklar vardır. Örneğin, eklediğinizde, bir <xref:Microsoft.Office.Tools.Word.Controls.Button> belgeye özellikler gibi kontrol <xref:Microsoft.Office.Tools.Word.Controls.Button.Dock%2A>, <xref:Microsoft.Office.Tools.Word.Controls.Button.Anchor%2A>, ve <xref:Microsoft.Office.Tools.Word.Controls.Button.TabIndex%2A> beklediğiniz gibi davranır değil.  
@@ -197,6 +198,6 @@ ms.lasthandoff: 10/31/2017
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   
  [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Nasıl yapılır: Windows Forms denetimleri Office belgelerine ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)  
+ [Nasıl Yapılır: Office Belgelerine Windows Forms Denetimleri Ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)  
   
   

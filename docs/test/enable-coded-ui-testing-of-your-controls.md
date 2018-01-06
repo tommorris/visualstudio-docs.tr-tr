@@ -11,11 +11,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: "22"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 0d9e28ee58dde41703f2149534f542b08d55b9ec
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d44026c2a4424cbacd16af57d3fb132d23ba8068
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Denetimlerinizin Kodlanmış UI Testlerini Etkinleştirme
 Kodlanmış UI test çerçevesi için destek uygularsanız, denetim daha kolayca sınanabilir. Artan düzeyde destek artımlı olarak ekleyebilirsiniz. Kaydı ve kayıttan yürütme ve özellik doğrulama destekleyerek başlatabilirsiniz. Bu konudaki denetiminizin özel özellikler tanımak kodlanmış UI test derleyicisini izin vermek için oluşturun ve oluşturulan koddan bu özelliklere erişmek için özel sınıflar sağlar. Kodlanmış UI test Oluşturucu yakalama eylemlerini kaydedilen eylem amacı yakın bir şekilde de yardımcı olabilir.  
@@ -221,4 +222,4 @@ Kodlanmış UI test çerçevesi için destek uygularsanız, denetim daha kolayca
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Windows.Forms.AccessibleObject>   
- [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)
+ [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)

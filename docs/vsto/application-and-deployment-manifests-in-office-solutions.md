@@ -20,11 +20,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 822be7f0e6e79f600331197c60ed48ea84cde200
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 83bf3b48d562e5acf24fedd27954c10505454b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Office Çözümlerinde Uygulama ve Dağıtım Bildirimleri
   Bir uygulama bildirimi bulun ve onun derlemeleri güncelleştirmek için bir Office çözümü tarafından kullanılan bilgileri sağlayan bir XML dosyasıdır. Bir uygulama bildirimi derlemeler ve uygulama bildirimini en güncel sürümünü bulmak için gereken bilgileri sağlar sunucuda depolanan bir XML dosyası bir dağıtım bildirimi ile kullanılabilir.  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
  [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md)   
  [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)   
- [ClickOnce dağıtım bildirimi](/visualstudio/deployment/clickonce-deployment-manifest)  
+ [ClickOnce Dağıtım Bildirimi](/visualstudio/deployment/clickonce-deployment-manifest)  
   
   

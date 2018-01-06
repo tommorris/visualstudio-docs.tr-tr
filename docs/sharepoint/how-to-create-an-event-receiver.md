@@ -21,11 +21,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 938c03a0bea5a4e96885f1816ddb1c1c13d80ce0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 519c6907bb5779a3819419144905ca68e5cce939
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-event-receiver"></a>Nasıl yapılır: Olay Alıcısı Oluşturma
   Oluşturarak *Olay alıcıları*, bir kullanıcı SharePoint öğeleri listeler gibi veya liste öğesi ile etkileşim sırasında yanıt verebilir. Örneğin, bir kullanıcı takvimi değiştirir veya kişi listesinden bir ad sildiğinde olay alıcı kodda tetiklenebilir. Bu konuda izleyerek bir liste örneği için olay alıcı eklemek nasıl öğrenebilirsiniz.  
@@ -73,6 +74,6 @@ ms.lasthandoff: 10/31/2017
      Seçtiğiniz sonra **kaydetmek** düğmesini **hasta adı** sütun Scott kahverengi adına otomatik olarak güncelleştirir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
+ [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
   
   

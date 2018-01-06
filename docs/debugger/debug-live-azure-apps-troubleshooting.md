@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Anlık görüntü Visual Studio'da hata ayıklama için sorun giderme ve bilinen sorunlar
 
@@ -68,11 +69,11 @@ Aşağıdaki adımları gerçekleştirin:
 - Aynı uygulama hizmeti karşı birden çok Visual Studio istemcilerle anlık görüntü hata ayıklama şu anda desteklenmiyor.
 - Roslyn IL iyileştirmeler ASP.NET Core projelerinde tam olarak desteklenmez. Bazı ASP.NET Core projeleri için bazı değişkenler görmek veya bazı değişkenler koşullu ifadeler kullanmak mümkün olmayabilir. 
 - Özel değişkenler gibi *$FUNCTION* veya *$CALLER*, koşullu ifadeleri veya ASP.NET Core projeleri için logpoints değerlendirilemez.
-- Anlık görüntü hata ayıklama uygulama hizmetleri üzerinde sahip çalışmıyor [yerel önbelleğe alma](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) açık.
+- Anlık görüntü hata ayıklama uygulama hizmetleri üzerinde sahip çalışmıyor [yerel önbelleğe alma](/azure/app-service/app-service-local-cache) açık.
 - Hata ayıklama API uygulamaları anlık görüntü şu anda desteklenmiyor.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio'da hata ayıklama](../debugger/index.md)  
 [Anlık görüntü hata ayıklayıcı kullanarak canlı ASP.NET uygulamaları hata ayıklama](../debugger/debug-live-azure-applications.md)  
-[Anlık görüntü hata ayıklama hakkında SSS](../debugger/debug-live-azure-apps-faq.md)  
+[Anlık görüntü hatalarını ayıklama hakkında SSS](../debugger/debug-live-azure-apps-faq.md)  

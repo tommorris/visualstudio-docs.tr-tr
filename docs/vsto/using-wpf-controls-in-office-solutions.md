@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f15eea2c0f1e7e62990d860007a7efc4966cb8cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9cbb87017b910accae5ebc63b648691c50f88476
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-wpf-controls-in-office-solutions"></a>Office Çözümlerinde WPF Denetimlerini Kullanma
   Visual Studio'da Office geliştirme araçlarını kullanarak oluşturduğunuz çözümleri doğrudan Windows Forms denetimleri ile çalışmak için tasarlanmış olsa da, çözümlerinde WPF denetimleri de kullanabilirsiniz. Windows Presentation Foundation (WPF) Windows Forms için kullanıcı arabirimleri tasarlama için alternatiftir. WPF Genişletilebilir uygulama biçimlendirme dili (XAML) adlı bir işaretleme dili UI, ortam ve belgeler ekleme için yeni teknikler sağlamak için kullanır. Daha fazla bilgi için bkz: [Visual Studio 2015'te WPF'ye giriş](/dotnet/framework/wpf/getting-started/introduction-to-wpf-in-vs).  
@@ -99,21 +100,21 @@ ms.lasthandoff: 10/31/2017
 ## <a name="wpf-resources"></a>WPF kaynakları  
  Daha fazla mimari hakkında bilgi ve Windows Forms denetimleri ve formlar üzerinde WPF denetimleri barındırma için tasarım konuları için aşağıdaki konulara bakın:  
   
--   [Windows Forms ve WPF birlikte çalışabilirlik girdi mimarisi](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)  
+-   [Windows Forms ve WPF Birlikte Çalışabilirlik Giriş Mimarisi](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)  
   
--   [Windows Forms ve WPF özellik eşlemesi](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)  
+-   [Windows Forms ve WPF Özelliğini Eşleme](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)  
   
--   [WPF ve Windows Forms birlikte çalışma](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)  
+-   [WPF ve Windows Forms Birlikte Çalışması](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)  
   
--   [Windows Forms denetimleri ve eşdeğer WPF denetimleri](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)  
+-   [Windows Forms Denetimleri ve Eşdeğer WPF Denetimleri](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)  
   
  Windows Forms denetimleri ve Visual Studio formlarında tasarım zamanında WPF denetimleri ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [İzlenecek yol: Yeni bir WPF içeriği Windows formlarında tasarım zamanında oluşturma](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)  
+-   [İzlenecek yol: Windows Forms’ta Tasarım Zamanında Yeni bir WPF İçeriği Oluşturma](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)  
   
--   [İzlenecek yol: Windows formlarında tasarım zamanında WPF içeriğini düzenleme](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)  
+-   [İzlenecek yol: Windows Forms'ta Tasarım Zamanında WPF İçeriğini Düzenleme](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)  
   
--   [İzlenecek yol: Stil WPF içeriği](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)  
+-   [İzlenecek yol: WPF İçeriği için Stil Oluşturma](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)   
@@ -124,6 +125,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Word belgelerini ve Excel çalışma kitaplarına Eylemler bölmesi ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Nasıl yapılır: Word belgelerini ve Excel çalışma kitaplarına Eylemler bölmesi ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Nasıl yapılır: Outlook eklenti projesine Form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)  
+ [Nasıl Yapılır: Outlook Eklenti Projesine Form Bölgesi Ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)  
   
   

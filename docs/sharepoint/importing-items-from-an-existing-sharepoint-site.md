@@ -25,11 +25,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4ad4566f013d322e1e5b7a150fea84a5682d938
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6dbfc2fd214d11eac8a9615c95d3f3ec6e6f3efa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="importing-items-from-an-existing-sharepoint-site"></a>Mevcut bir SharePoint Sitesinden Öğeleri İçeri Aktarma
   Yeni bir içerik türlerini ve alanların varolan SharePoint siteleri gibi öğeleri yeniden alma SharePoint çözüm paketi proje şablonu sağlar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint çözüm. En alınan çözümler değişiklik yapmadan çalıştırabilirsiniz, ancak olup olmadığını bazı kısıtlamalar ve dikkate alınacak konular özellikle içeri aktardıktan sonra herhangi bir öğeyi değiştirin.  
@@ -143,6 +144,6 @@ ms.lasthandoff: 10/31/2017
  [İzlenecek yol: Mevcut bir SharePoint sitesinden öğeleri içeri aktarma](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
  [Yeniden kullanılabilir iş akışlarını içeri aktarma yönergeleri](../sharepoint/guidelines-for-importing-reusable-workflows.md)   
  [İzlenecek yol: bir SharePoint Tasarımcısı yeniden kullanılabilir iş akışını Visual Studio'ya içeri aktarma](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
- [Nasıl yapılır: bir SharePoint projesine mevcut bir BDC modeli dosyası ekleme](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  
+ [Nasıl yapılır: Bir SharePoint Projesine Mevcut bir BDC Modeli Dosyası Ekleme](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  
   
   

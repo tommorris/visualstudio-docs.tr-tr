@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3690f3e8459821e0a927a351ee28f901b318deab
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: f98f11cf9f4aef491951e1968105a30a679e687a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor-intellisense-features"></a>XML Düzenleyicisi IntelliSense özellikleri
 XML Düzenleyicisi'ni Visual Studio'da sağlanan diğer dil düzenleyicileri karşılaştırılabilir tam IntelliSense özellikleri sağlar. Bu bölümde, XML Şeması Tanım Dili (XSD) ve XSLT belgelerle IntelliSense nasıl kullanabileceğinizi açıklar.  
@@ -121,4 +122,4 @@ XML Düzenleyicisi'ni bir ad alanı ekleme olanağı da sahip bir ad alanı tam 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML Düzenleyicisi](../xml-tools/xml-editor.md)   
  [IntelliSense kullanma](../ide/using-intellisense.md)   
- [İzlenecek yol: XSLT IntelliSense kullanma](../xml-tools/walkthrough-using-xslt-intellisense.md)
+ [İzlenecek Yol: XSLT IntelliSense Kullanma](../xml-tools/walkthrough-using-xslt-intellisense.md)

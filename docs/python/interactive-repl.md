@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: de538cfa9470ce148bc5d8f85653edef4c3fd8b0
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 2e80df306a3ce659225ae195b0b57922ab7d9a85
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Python etkileşimli pencere ile çalışma
 
@@ -47,7 +48,7 @@ Bir ortam için etkileşimli penceresini açmak için birkaç yolu vardır.
 
 ![Python ortamları penceresinde etkileşimli penceresi bağlantı](media/interactive-window-opening.png)
 
-İkinci olarak, listenin sonuna yakınında **Görünüm > Diğer pencereler** menüsünde var. bir ** ortamları penceresine geçiş yapmak için bir komut yanı sıra, Python etkileşimli penceresi ** komutu varsayılan ortamınız için:
+İkinci olarak, listenin sonuna yakınında **Görünüm > Diğer pencereler** menüsünde yoktur bir **Python etkileşimli pencere** ortamları penceresine geçiş yapmak için bir komut yanı sıra komut varsayılan ortamınız için:
 
 ![Etkileşimli pencere menüsü öğelerini Görünüm > Diğer Pencereler](media/interactive-window-menu.png)
 

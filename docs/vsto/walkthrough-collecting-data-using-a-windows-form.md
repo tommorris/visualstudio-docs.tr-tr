@@ -20,11 +20,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32156e4d2c9e8e5f809a4de64478667e7133aeb1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d52a97e57701159a8ff64a106a92f181b50df66f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-collecting-data-using-a-windows-form"></a>İzlenecek Yol: Windows Formu Kullanarak Veri Toplama
   Bu kılavuz, Windows formu Microsoft Office Excel için belge düzeyi özelleştirme açmak, kullanıcıdan bilgi toplamak ve bu bilgileri çalışma sayfası hücresine yazma gösterilmiştir.  
@@ -146,6 +147,6 @@ ms.lasthandoff: 10/31/2017
  [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)   
  [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)   
  [Word kullanımında izlenecek yollar](../vsto/walkthroughs-using-word.md)   
- [Excel kullanarak izlenecek yollar](../vsto/walkthroughs-using-excel.md)  
+ [Excel Kullanarak İzlenecek Yollar](../vsto/walkthroughs-using-excel.md)  
   
   

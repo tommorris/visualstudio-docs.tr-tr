@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 064080a2446858123dd7b259dd5d2752f4253a80
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c9bf63222f16e29044a9a07078096b765421fbb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-variable-designer"></a>Nasıl yapılır: değişken Tasarımcısı'nı kullanın
 Değişken Tasarımcısı'nı kullanmak için değişkenler veri bağlama senaryoları ve koşullu deyimler oluşturmak için kullanılır. Tasarımcı tıklayarak erişilen **değişkenleri** tasarım tuvale sol alt köşesindeki düğmesi. Tasarımcı tablo biçiminde görünür ve her sütun üstbilgilerinin dışında sıralanabilir değişkenlerin listesini içeren **varsayılan** sütun. Her bir değişken adı, değişken türü, kapsamı ve varsayılan değer (varsa) içerir. Ad ve varsayılan değer düzenlenebilir metin alanları, ve türüne ve kapsamına aşağı açılan listeler. Değişken Tasarımcısı çağrıldığında seçtiğiniz etkinlik kapsamıdır. Bir değişken seçimi kapsamı içinde oluşturulamaz, kapsam, kapsamında oluşturulan değişkenler izin veren Seçimi en yakın üst öğede etkinliğini varsayılır. [! DAHİL[crabout](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).  
@@ -39,4 +40,4 @@ Değişken Tasarımcısı'nı kullanmak için değişkenler veri bağlama senary
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İş Akışı Tasarımcısı'nı kullanarak](../workflow-designer/using-the-workflow-designer.md)   
  [Değişkenleri ve bağımsız değişkenler](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)   
- [Nasıl yapılır: bağımsız değişken Tasarımcısı'nı kullanın](../workflow-designer/how-to-use-the-argument-designer.md)
+ [Nasıl Yapılır: Bağımsız Değişken Tasarımcısını Kullanma](../workflow-designer/how-to-use-the-argument-designer.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afe5ddd5748fe0d8f394a63898370eaf405b3f4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6672ed634ad8c8056ae372c9d1d9a3fa44b56243
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-an-isolated-shell-application"></a>Yalıtılmış Kabuk uygulama yükleme
 Bir kabuk uygulamasını yüklemek için aşağıdaki adımları gerçekleştirmeniz gerekir.  
@@ -370,4 +371,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: bir temel yalıtılmış Kabuk uygulaması oluşturma](walkthrough-creating-a-basic-isolated-shell-application.md)
+ [İzlenecek yol: Temel Yalıtılmış Kabuk Uygulaması Oluşturma](walkthrough-creating-a-basic-isolated-shell-application.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c5dbcc0a83d94864858da04bdfe46e5b9ae39e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: da9cebf8d4c8a30821585160ff07edd6eae0cd7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="infopath-solutions"></a>InfoPath Çözümleri
   Visual Studio Proje şablonları Microsoft Office InfoPath 2013 ve InfoPath 2010 için VSTO eklentileri oluşturma için kullanabileceğiniz sağlar. InfoPath Office 2016'da kullanılabilir değil.  
@@ -55,8 +56,8 @@ ms.lasthandoff: 10/31/2017
   
 |Görev|Daha fazla bilgi için|  
 |----------|--------------------------|  
-|Özel görev bölmesini oluşturun.|[Özel görev bölmeleri](../vsto/custom-task-panes.md)|  
-|InfoPath Şeritte özel sekmeler ekleme.|[InfoPath için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-infopath.md)|  
+|Özel görev bölmesini oluşturun.|[Özel Görev Bölmeleri](../vsto/custom-task-panes.md)|  
+|InfoPath Şeritte özel sekmeler ekleme.|[InfoPath İçin Şerit Özelleştirme](../vsto/customizing-a-ribbon-for-infopath.md)|  
   
  InfoPath UI ve diğer Microsoft Office uygulamaları özelleştirme hakkında daha fazla bilgi için bkz: [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md).  
   

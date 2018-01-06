@@ -23,11 +23,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb94603d3041a30e978fff0ac6fff399648fc027
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70748440dc325266439ee71569e858eb3d815fc1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="binding-data-to-controls-in-office-solutions"></a>Office Çözümlerinde Verileri Denetimlere Bağlama
   Windows Forms denetimlerini bağlayabilirsiniz ve *konak denetimlerini* Microsoft Office Word belgesine veya Microsoft Office Excel çalışma sayfasındaki denetimleri otomatik olarak verileri görüntülemek için bir veri kaynağına. Uygulama düzeyi ve belge düzeyi projelerine denetimlere veri bağlayabilirsiniz.  
@@ -77,22 +78,22 @@ ms.lasthandoff: 10/31/2017
 ### <a name="binding-data-in-document-level-projects-at-design-time"></a>Belge düzeyi projelerine tasarım zamanında veri bağlama  
  Aşağıdaki konularda tasarım zamanında veri bağlama örnekleri gösterilmektedir.  
   
--   [Nasıl yapılır: çalışma sayfalarını veritabanı verileriyle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
+-   [Nasıl Yapılır: Çalışma Sayfalarını Veritabanı Verileriyle Doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
   
--   [Nasıl yapılır: belgeleri veritabanı verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
+-   [Nasıl Yapılır: Belgeleri Veritabanı Verileriyle Doldurma](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
   
--   [Nasıl yapılır: belgeleri nesne verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-objects.md)  
+-   [Nasıl Yapılır: Belgeleri Nesne Verileriyle Doldurma](../vsto/how-to-populate-documents-with-data-from-objects.md)  
   
--   [Nasıl yapılır: belgeleri hizmet verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-services.md)  
+-   [Nasıl Yapılır: Belgeleri Hizmet Verileriyle Doldurma](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
--   [Nasıl yapılır: çalışma sayfasındaki veritabanı kayıtları arasında kaydırma](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
+-   [Nasıl Yapılır: Çalışma Sayfasındaki Veritabanı Kayıtları Arasında Kaydırma](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
   
 ### <a name="binding-data-in-vsto-add-in-projects"></a>VSTO eklentisi projelerine veri bağlama  
  VSTO eklenti projelerinde yalnızca çalışma zamanında denetimler ekleyebilirsiniz. Aşağıdaki konular, çalışma zamanında veri bağlama örnekleri gösterir:  
   
--   [İzlenecek yol: Basit veri bağlama VSTO eklenti projesindeki](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
+-   [İzlenecek Yol: VSTO eklenti Projesinde Basit Veri Bağlama](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
   
--   [İzlenecek yol: Karmaşık veri bağlama VSTO eklenti projesindeki](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
+-   [İzlenecek Yol: VSTO eklenti Projesinde Karmaşık Veri Bağlama](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
   
 ## <a name="updating-data-that-is-bound-to-host-controls"></a>Denetimleri barındırmak için ilişkili verileri güncelleştirme  
  Veri bağlama veri kaynağı ve konak kontrolü arasında iki yönlü veri güncelleştirme içerir. Basit veri bağlama, veri kaynağındaki değişiklikler otomatik olarak konak denetiminde yansıtılır, ancak veri kaynağını güncelleştirmek için açık bir çağrı konak denetimi gerektirir. Başka bir veri bağlama alan değişikliklerinden eşlik sürece bazı durumlarda, bir veri bağlama alan değişiklikleri kabul nedenidir. Örneğin, iki alan, geçerlilik süresi için bir ve deneyimi yıllık biri olabilir. Deneyimi yaşı geçemez. Bir kullanıcı yaşı 50'den güncelleştirilemiyor 25'i ve ardından 30 deneyimlerden 10 sürece çözemiyorsa aynı anda değişiklikleri yapar. Bu sorunu çözmek için güncelleştirmeleri açıkça kod tarafından gönderilen kadar basit veri bağlama alanlarla güncelleştirilmez.  
@@ -111,6 +112,6 @@ ms.lasthandoff: 10/31/2017
  [Veritabanına veri kaydetme](../data-tools/save-data-back-to-the-database.md)    
  [TableAdapter kullanarak veri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md)    
  [Verileri önbelleğe alma](../vsto/caching-data.md)   
- [Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)  
+ [Office Çözümlerindeki Veriler](../vsto/data-in-office-solutions.md)  
   
   

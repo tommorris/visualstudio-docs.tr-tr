@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6acbd33d04c939b95d16da4e0c8085681b602378
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: afaa64da38508ffcf55d86c3a6fe16bd0e884f7a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-themes-in-workflows-legacy"></a>(Eski) iş akışlarında Temalar kullanma
 Bu konu, temalar kullanmayı açıklar [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] eski kullanırken [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] hedefleyen [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -33,4 +34,4 @@ Bu konu, temalar kullanmayı açıklar [!INCLUDE[wf](../workflow-designer/includ
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tema yapılandırma iletişim kutusu (eski)](../workflow-designer/theme-configuration-dialog-box-legacy.md)   
  [Temalar, iş akışı Tasarımcısı'de, Seçenekler iletişim kutusu (eski)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)   
- [Eski iş akışı Tasarımcısı'nı kullanarak](../workflow-designer/using-the-legacy-workflow-designer.md)
+ [Eski İş Akışı Tasarımcısını Kullanma](../workflow-designer/using-the-legacy-workflow-designer.md)

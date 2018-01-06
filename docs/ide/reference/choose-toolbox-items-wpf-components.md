@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8aaa76694a60aad5c8bfcc2dd6d26feac03ab6e1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bd9959d6883eec10f048733d3119206cc5dea3bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Araç Kutusu Öğelerini, WPF Bileşenlerini Seçme
 Bu sekme, **araç kutusu öğelerini Seç** iletişim kutusunda, yerel bilgisayarınızda Windows Presentation Foundation (WPF) denetimleri kullanılabilir listesini görüntüler. Bu listeyi görüntülemek için seçin **araç kutusu öğelerini Seç** gelen **Araçları** görüntülemek için menüsünden **araç kutusu öğelerini Seç** iletişim kutusunu ve ardından kendi **WPF Bileşenleri** sekmesi. Listelenen bileşenler sıralamak için sütun başlığını seçin.  
@@ -74,5 +75,5 @@ Ayrıca, özel denetim ve bu meta veriler için tasarım zamanı meta veri uygul
 Ad alanı ve denetlemek için derleme eşleyerek denetimlerinizi XAML görünümünde doğrudan başvuruda bulunabilir.  
 
 ## <a name="see-also"></a>Ayrıca bkz.  
-[Araç kutusu](../../ide/reference/toolbox.md)  
-[WPF ile çalışmaya başlama](../../designers/getting-started-with-wpf.md)
+[Araç Kutusu](../../ide/reference/toolbox.md)  
+[WPF Kullanmaya Başlarken](../../designers/getting-started-with-wpf.md)

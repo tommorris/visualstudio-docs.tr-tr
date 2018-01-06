@@ -13,11 +13,12 @@ caps.latest.revision: "23"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 159d6a7b3a381eeb5d6f92154e657de67c567a38
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0eb1878df437e1767d5bfe49ce4794b5b2c243d5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-deletion-behavior"></a>Silme Davranışını Özelleştirme
 Bir öğe genellikle silinmesi, ilgili öğeler de silinecek neden olur. Tüm ilişkiler ona bağlı ve herhangi bir alt öğe silindi. Bu davranış adlı *yayma silme*. Örneğin ek ilgili öğeler silinir düzenlemek silme yayma özelleştirebilirsiniz. Program kodunda yazarak delete yayma model durumuna bağlıdır yapabilirsiniz. Bir silme işlemi için yanıt gerçekleşmesi diğer değişiklikler de neden olabilir.  
@@ -296,4 +297,4 @@ partial class NestedShapesSampleDocData
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md)   
  [Öğe oluşturma ve taşıma özelleştirme](../modeling/customizing-element-creation-and-movement.md)   
- [Bir etki alanına özgü dil kişiselleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+ [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)

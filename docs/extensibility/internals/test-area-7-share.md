@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f61a9917d484499e3cfd641f581859de01663bd0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f87ff08ea8d5e325ac66d923300927b59ab06452
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-7-share"></a>Test alanı 7: paylaşımı
 Bu test alanını paylaşım öğeleri konumları arasında kapsayan **paylaşımı** komutu.  
@@ -62,4 +63,4 @@ Bu test alanını paylaşım öğeleri konumları arasında kapsayan **paylaşı
 |Bir projeye ait birden fazla dosya başka bir paylaşma|1.  Birkaç dosyalarında ile yeni bir proje oluşturun.<br />2.  Çözümü kaynak denetimine ekleyin.<br />3.  Çözümü kapatın.<br />4.  Yeni bir çözüme yeni bir proje oluşturun.<br />5.  Çözümü kaynak denetimine ekleyin.<br />6.  Projeyi seçin.<br />7.  Açık **paylaşımı** iletişim kutusu (**dosya** -> **kaynak denetimi** -> **paylaşımı**).<br />8.  Önceden oluşturulmuş projeye ait birden fazla dosya açık projeye paylaşır.|Ortak beklenen davranıştır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak denetimi eklentiler için test Kılavuzu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Kaynak Denetimi Eklentileri için Test Kılavuzu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

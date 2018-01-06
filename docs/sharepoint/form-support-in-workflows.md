@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e2c63af83c6ca8249e87d60f23043c0639c7fd43
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0da90955a590881a02117213246e580339dbe596
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="form-support-in-workflows"></a>İş Akışlarında Form Desteği
   Forms dört tür bir iş akışında kullanılabilir: ilişki, başlatma, görev ve değişikliği. Bu form türleri bir ASPX formunu veya InfoPath formu temel alabilir. Düzeyi destek [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] belirli bir formu aşağıdaki tablolarda açıklanan, birkaç etkene bağlıdır sağlar. İş akışı form türleri hakkında daha fazla bilgi için bkz: [iş akışı formları genel bakış](http://go.microsoft.com/fwlink/?LinkId=185228) MSDN Web sitesinde.  
@@ -53,6 +54,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [SharePoint iş akışı çözümleri oluşturma](../sharepoint/creating-sharepoint-workflow-solutions.md)   
- [Mevcut bir SharePoint sitesinden öğeleri içeri aktarma](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)  
+ [Mevcut bir SharePoint Sitesinden Öğeleri İçeri Aktarma](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)  
   
   

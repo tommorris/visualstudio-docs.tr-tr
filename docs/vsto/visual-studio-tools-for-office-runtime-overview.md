@@ -31,11 +31,12 @@ caps.latest.revision: "92"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 61fe29fca2feb0f19e613af62f4d9407b8d8bbff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e091564ce02f55904e69d1abd9e240534a6dd8c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Office Çalışma Zamanı İçin Visual Studio Araçlarına Genel Bakış
   Visual Studio'da Microsoft Office geliştirici araçları kullanılarak oluşturulan çözümleri çalıştırmak için Office çalışma zamanı için Visual Studio 2010 Araçları son kullanıcı bilgisayarlarında yüklenmesi gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Office Çalışma Zamanı için Visual Studio 2010 Araçları iki ana bileşenden oluşur:  
@@ -126,6 +127,6 @@ ms.lasthandoff: 10/31/2017
  [Belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Yükseltme ve Office çözümleri geçirme](../vsto/upgrading-and-migrating-office-solutions.md)  
+ [Office Çözümlerini Yükseltme ve Geçirme](../vsto/upgrading-and-migrating-office-solutions.md)  
   
   

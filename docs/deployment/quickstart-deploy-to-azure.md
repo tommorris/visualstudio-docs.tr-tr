@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c1fa8867c4f9ab46b50f0b2a144970d772cbd71
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: azure
+ms.openlocfilehash: 7008ac8ea30e704403542b7b9786cffb1c5da158
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Visual Studio kullanarak Azure App Service için ASP.NET veya ASP.NET Core uygulama yayımlama
 
@@ -63,8 +64,7 @@ Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](http
 
     Bu iletişim kutusunda, kullanmakta olduğunuz aboneliği seçin, seçin veya bir Azure kaynak grubu, vb. oluşturun.
 
-1. 
-              **Oluştur**'u tıklatın.
+1. **Oluştur**'u tıklatın.
 
     Visual Studio Azure uygulama hizmetiniz için uygulamayı dağıtır ve web uygulaması tarayıcınızda yükler.
 
@@ -72,5 +72,5 @@ Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](http
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Bir ASP.NET Core uygulamayı Azure'a dağıtma](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
-- [ASP.NET Core Azure Git ile sürekli dağıtımı](https://docs.microsoft.com/en-us/aspnet/core/publishing/azure-continuous-deployment)
+- [Bir ASP.NET Core uygulamayı Azure'a dağıtma](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+- [ASP.NET Core Azure Git ile sürekli dağıtımı](/aspnet/core/publishing/azure-continuous-deployment)

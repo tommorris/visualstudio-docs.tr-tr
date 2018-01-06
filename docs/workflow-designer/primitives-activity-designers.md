@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: d8f4c4763d40583f02aa97eaea066db5de2a7479
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c691e4dc60afca2d56a63af8572d75b02e970e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="primitives-activity-designers"></a>Temelleri etkinlik tasarımcıları
 Temelleri etkinlik tasarımcıları oluşturmak ve çeşitli etkinlikler yapılandırmak için kullanılan <xref:System.Activities.Statements> Ata ve gecikme gibi ad alanı. Bu bölümdeki konular nasıl kullanılacağı hakkında kılavuzluk [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] etkinliği ve Şablon tasarımcıları.  
@@ -36,19 +37,19 @@ Temelleri etkinlik tasarımcıları oluşturmak ve çeşitli etkinlikler yapıla
 ## <a name="reference"></a>Başvuru  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Denetim akışı](../workflow-designer/control-flow-activity-designers.md)  
+ [Denetim Akışı](../workflow-designer/control-flow-activity-designers.md)  
   
  [Akış Çizelgesi](../workflow-designer/flowchart-activity-designers.md)  
   
  [Mesajlaşma](../workflow-designer/messaging-activity-designers.md)  
   
- [Çalışma zamanı](../workflow-designer/runtime-activity-designers.md)  
+ [Çalışma Zamanı](../workflow-designer/runtime-activity-designers.md)  
   
  [İşlem](../workflow-designer/transaction-activity-designers.md)  
   
- [Koleksiyonu](../workflow-designer/collection-activity-designers.md)  
+ [Koleksiyon](../workflow-designer/collection-activity-designers.md)  
   
- [Hata işleme](../workflow-designer/error-handling-activity-designers.md)  
+ [Hata İşleme](../workflow-designer/error-handling-activity-designers.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkinlik tasarımcıları kullanma](../workflow-designer/using-the-activity-designers.md)
+ [Etkinlik Tasarımcılarını kullanma](../workflow-designer/using-the-activity-designers.md)

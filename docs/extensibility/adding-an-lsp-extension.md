@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e38c040e732571e3343c30d84745d2602a1088d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: vssdk
+ms.openlocfilehash: 92ea72f3d64edc31c187198a5af73ed98c0fc8be
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Dil sunucu protokolü uzantısına ekleme
 
@@ -40,7 +41,7 @@ Visual Studio içinde desteği için aşağıdaki mekanizmalar aracılığıyla 
 * Adlandırılmış Kanallar
 * Yuva
 
-Visual Studio'da bu için destek ve LSP amacı Visual Studio ürün parçası olmayan yerleşik dil Hizmetleri ' dir. Varolan dil hizmetler (C# ' ta) Visual Studio genişletmek için tasarlanmamıştır. Mevcut diller genişletmek için dil hizmetin genişletilebilirlik Kılavuzu'na bakın (örneğin, ["Roslyn".NET derleyici platformu](https://docs.microsoft.com/visualstudio/extensibility/dotnet-compiler-platform-roslyn-extensibility)).
+Visual Studio'da bu için destek ve LSP amacı Visual Studio ürün parçası olmayan yerleşik dil Hizmetleri ' dir. Varolan dil hizmetler (C# ' ta) Visual Studio genişletmek için tasarlanmamıştır. Mevcut diller genişletmek için dil hizmetin genişletilebilirlik Kılavuzu'na bakın (örneğin, ["Roslyn".NET derleyici platformu](../extensibility/dotnet-compiler-platform-roslyn-extensibility.md)).
 
 ## <a name="language-server-protocol-features-supported"></a>Desteklenen dil sunucusu protokolü özellikleri
 
@@ -62,8 +63,8 @@ telemetri/olay |
 Çalışma alanı/didChangeConfiguration | Evet
 Çalışma alanı/didChangeWatchedFiles | Evet
 Çalışma alanı/simgesi | Evet
-Çalışma alanı/executeCommand |
-Çalışma alanı/applyEdit |
+Çalışma alanı/executeCommand | Evet
+Çalışma alanı/applyEdit | Evet
 textDocument/publishDiagnostics | Evet
 textDocument/didOpen | Evet
 textDocument/didChange | Evet
@@ -82,12 +83,12 @@ textDocument ve biçimlendirme | Evet
 textDocument/rangeFormatting | Evet
 textDocument/onTypeFormatting |
 textDocument/tanımı | Evet
-textDocument/codeAction |
+textDocument/codeAction | Evet
 textDocument/codeLens |
 codeLens/Çöz |
 textDocument/documentLink |
 documentLink/Çöz |
-textDocument/yeniden adlandır |
+textDocument/yeniden adlandır | Evet
 
 ## <a name="getting-started"></a>Başlarken
 
@@ -149,13 +150,13 @@ Bu "Aynı" klasörü paketin yükleme dizininde 'MyLang' adlı bir depo kaynağ�
 
 ## <a name="creating-a-simple-language-client"></a>Basit bir dil istemci oluşturma
 
-### <a name="main-interface---ilanguageclienthttpsdocsmicrosoftcomdotnetapimicrosoftvisualstudiolanguageserverclientilanguageclientviewvisualstudiosdk-2017"></a>Ana arabirimi - [ILanguageClient](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)
+### <a name="main-interface---ilanguageclientdotnetapimicrosoftvisualstudiolanguageserverclientilanguageclientviewvisualstudiosdk-2017"></a>Ana arabirimi - [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)
 
 VSIX projenizi oluşturduktan sonra aşağıdaki NuGet paketleri projenize ekleyin:
 
 * [Microsoft.VisualStudio.LanguageServer.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)
 
-Daha sonra yeni bir sınıf hangi Implements oluşturabilirsiniz [ILanguageClient](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017) arabirimi, bir dil LSP tabanlı sunucuya bağlanan dil istemciler için gerekli ana arabirim.
+Daha sonra yeni bir sınıf hangi Implements oluşturabilirsiniz [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017) arabirimi, bir dil LSP tabanlı sunucuya bağlanan dil istemciler için gerekli ana arabirim.
 
 Aşağıda bir örnek verilmiştir:
 
@@ -208,9 +209,9 @@ namespace MockLanguageExtension
 }
 ```
 
-Uygulanması gereken ana yöntemler şunlardır [OnLoadedAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) ve [ActivateAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017). [OnLoadedAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) Visual Studio uzantınızı yüklü ve dil sunucunuz başlatılması için hazır olduğunda çağrılır. Bu yöntemde, çağırabilirsiniz [StartAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) hemen dil sunucunun başlatılması, veya ilave bir mantık yapın ve çağırma göstermek için temsilci [StartAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) daha sonra. **Dil sunucunuzu etkinleştirmek için belirli bir noktada StartAsync çağırmanız gerekir.**
+Uygulanması gereken ana yöntemler şunlardır [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) ve [ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017). [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) Visual Studio uzantınızı yüklü ve dil sunucunuz başlatılması için hazır olduğunda çağrılır. Bu yöntemde, çağırabilirsiniz [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) hemen dil sunucunun başlatılması, veya ilave bir mantık yapın ve çağırma göstermek için temsilci [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) daha sonra. **Dil sunucunuzu etkinleştirmek için belirli bir noktada StartAsync çağırmanız gerekir.**
 
-[ActivateAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017) sonunda çağırarak çağrılan yöntem [StartAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) temsilci; dil sunucuyu başlatır ve bağlantı kurmak için mantığını içerir. Bir bağlantı nesnesi sunucuya yazma ve sunucudan okuma akışları içeren döndürülecek gerekir. Burada oluşturulan tüm özel durumları yakalanan ve Visual Studio'da bir bilgi çubuğu iletisi yoluyla kullanıcıya görüntülenir.
+[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017) sonunda çağırarak çağrılan yöntem [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) temsilci; dil sunucuyu başlatır ve bağlantı kurmak için mantığını içerir. Bir bağlantı nesnesi sunucuya yazma ve sunucudan okuma akışları içeren döndürülecek gerekir. Burada oluşturulan tüm özel durumları yakalanan ve Visual Studio'da bir bilgi çubuğu iletisi yoluyla kullanıcıya görüntülenir.
 
 ### <a name="activation"></a>Etkinleştirme
 
@@ -241,7 +242,7 @@ Yeni bir varlık oluşturmak için Yeni'yi tıklatın:
 
 ### <a name="content-type-definition"></a>İçerik türü tanımı
 
-Şu anda LSP tabanlı dil sunucu uzantısı yüklemek için tek dosya içerik türüne göre yoludur. Diğer bir deyişle, dil istemci sınıfınız tanımlarken (hangi uygulayan [ILanguageClient](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)), açıldığında, dosya türlerini tanımlamak gerekir, uzantınızı yükler. Ardından, tanımlanmış içerik türüyle eşleşen hiçbir dosya açıldıysa, uzantınızı yüklenmeyecek.
+Şu anda LSP tabanlı dil sunucu uzantısı yüklemek için tek dosya içerik türüne göre yoludur. Diğer bir deyişle, dil istemci sınıfınız tanımlarken (hangi uygulayan [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)), açıldığında, dosya türlerini tanımlamak gerekir, uzantınızı yükler. Ardından, tanımlanmış içerik türüyle eşleşen hiçbir dosya açıldıysa, uzantınızı yüklenmeyecek.
 
 Bu, bir veya daha fazla ContentTypeDefinition sınıfları tanımlama üzerinden yapılır:
 
@@ -264,7 +265,7 @@ namespace MockLanguageExtension
 }
 ```
 
-Yukarıdaki örnekte, bir içerik türü tanımı .bar dosya uzantısı ile sona dosyaları için oluşturulur. İçerik türü tanımı "çubuğu" adı verilir ve **gerekir** öğesinden türetilen [CodeRemoteContentTypeName](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017).
+Yukarıdaki örnekte, bir içerik türü tanımı .bar dosya uzantısı ile sona dosyaları için oluşturulur. İçerik türü tanımı "çubuğu" adı verilir ve **gerekir** öğesinden türetilen [CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017).
 
 Bir içerik türü tanımı eklendikten sonra daha sonra dil istemci sınıfı dil İstemci uzantı yüklemek ne zaman tanımlayabilirsiniz:
 
@@ -334,14 +335,32 @@ LSP dil hizmeti uzantınızı ayarları desteği eklemek için bu adımları izl
     "foo.maxNumberOfProblems": 10
   }
   ```
+### <a name="enabling-diagnostics-tracing"></a>Tanılama izlemeyi etkinleştirme
+Tanılama izleme istemci ve sorunları hata ayıklarken yararlı olabilir sunucusu arasındaki tüm iletileri çıktısını almak için etkinleştirilebilir.  Tanılama izlemeyi etkinleştirmek için lütfen aşağıdakileri yapın:
+
+1. Çalışma ayarları dosyası "VSWorkspaceSettings.json" (yukarıya bakın) oluşturun veya açın.
+2. Ayarları json dosyasında aşağıdaki satırı ekleyin:
+
+```json
+{
+    "foo.server.trace": "Off"
+}
+```
+
+İzleme ayrıntı için 3 olası değerler şunlardır:
+* "Kapalı": tamamen devre dışı izleme
+* "İletileri": izleme açıldığında ancak tek yöntem adı ve yanıt kimliği izlenen.
+* "Ayrıntılı": açık; izleme izlenen tüm rpc iletisi.
+
+İzleme açık olduğunda içeriği "% temp%\VisualStudio\LSP" dizinindeki bir dosyaya yazılır.  Adlandırma biçimini [LanguageClientName] izleyeceği-[tarih saat damgası] .log.  Şu anda, izleme yalnızca klasör Aç senaryoları için etkinleştirilebilir.  Bir dil Sunucusu'nu etkinleştirmek için tek bir dosyayı açma Tanılama izleme desteği yok. 
 
 ### <a name="custom-messages"></a>Özel iletileri
 
-Geçirme iletileri ve standart dil sunucusu protokolü parçası olmayan alıcı iletileri dil sunucusundan kolaylaştırmak için API'ler yerinde vardır. Özel iletileri işlemek için uygulama [ILanguageClientCustomMessage](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) dil istemci sınıfınız arabiriminde. [VS-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) kitaplığı dil istemci ve dil sunucu arasında özel iletileri iletmek için kullanılır. LSP dil istemci uzantısı yalnızca herhangi diğer Visual Studio uzantısı gibi olduğundan, (LSP tarafından desteklenmez) ek özellikleri eklemek Visual Studio'ya (diğer Visual Studio API kullanarak), uzantı özel iletileri üzerinden karar verebilirsiniz.
+Geçirme iletileri ve standart dil sunucusu protokolü parçası olmayan alıcı iletileri dil sunucusundan kolaylaştırmak için API'ler yerinde vardır. Özel iletileri işlemek için uygulama [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) dil istemci sınıfınız arabiriminde. [VS-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) kitaplığı dil istemci ve dil sunucu arasında özel iletileri iletmek için kullanılır. LSP dil istemci uzantısı yalnızca herhangi diğer Visual Studio uzantısı gibi olduğundan, (LSP tarafından desteklenmez) ek özellikleri eklemek Visual Studio'ya (diğer Visual Studio API kullanarak), uzantı özel iletileri üzerinden karar verebilirsiniz.
 
 #### <a name="receiving-custom-messages"></a>Özel ileti alma
 
-Dil sunucusundan özel iletileri almak için uygulama [CustomMessageTarget](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.custommessagetarget?view=visualstudiosdk-2017) özelliği [ILanguageClientCustomMessage](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) ve özel iletilerinizi nasıl ele alınacağını bildiği bir nesne döndürür . Aşağıdaki örnek:
+Dil sunucusundan özel iletileri almak için uygulama [CustomMessageTarget](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.custommessagetarget?view=visualstudiosdk-2017) özelliği [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) ve özel iletilerinizi nasıl ele alınacağını bildiği bir nesne döndürür . Aşağıdaki örnek:
 
 ```csharp
 internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCustomMessage
@@ -376,7 +395,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
 
 #### <a name="sending-custom-messages"></a>Özel ileti gönderme
 
-Dil sunucuya özel iletileri göndermek için uygulama [AttachForCustomMessageAsync](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.attachforcustommessageasync?view=visualstudiosdk-2017) yöntemi [ILanguageClientCustomMessage](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017). Dil sunucunuz başlatılan ve iletileri almaya hazır olduğunda bu yöntem çağrılır. A [JsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/src/StreamJsonRpc/JsonRpc.cs) nesne dilini kullanarak sunucu ileti göndermek için sonra koruyabilirsiniz bir parametre olarak geçirilen [VS StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) API'leri. Aşağıdaki örnek:
+Dil sunucuya özel iletileri göndermek için uygulama [AttachForCustomMessageAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.attachforcustommessageasync?view=visualstudiosdk-2017) yöntemi [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017). Dil sunucunuz başlatılan ve iletileri almaya hazır olduğunda bu yöntem çağrılır. A [JsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/src/StreamJsonRpc/JsonRpc.cs) nesne dilini kullanarak sunucu ileti göndermek için sonra koruyabilirsiniz bir parametre olarak geçirilen [VS StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) API'leri. Aşağıdaki örnek:
 
 ```csharp
 internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCustomMessage
@@ -410,7 +429,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
 
 Bazen bir uzantı Geliştirici gönderilen ve dil sunucudan alınan LSP iletileri izlemesine isteyebilirsiniz. Örneğin, bir uzantı Geliştirici belirli bir LSP iletiyi gönderilen ileti parametre değiştirmek istediğiniz, veya bir LSP özelliği (örneğin tamamlamalar) dil sunucusundan döndürülen sonuçlar değiştirin. Bu gerekli olduğunda, Uzantı geliştiricilerine LSP iletileri izlemesine MiddleLayer API'yi kullanabilirsiniz.
 
-Her LSP ileti kişiler tarafından ele için kendi orta katman arabirimine sahiptir. Belirli bir iletiyi engellemek için bu iletiyi orta katman arabirimini uygulayan bir sınıf oluşturun. Ardından, uygulama [ILanguageClientCustomMessage](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) arabirim dil istemci sınıfınızda ve, nesne örneği döndürür [MiddleLayer](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.middlelayer?view=visualstudiosdk-2017) özelliği. Aşağıdaki örnek:
+Her LSP ileti kişiler tarafından ele için kendi orta katman arabirimine sahiptir. Belirli bir iletiyi engellemek için bu iletiyi orta katman arabirimini uygulayan bir sınıf oluşturun. Ardından, uygulama [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) arabirim dil istemci sınıfınızda ve, nesne örneği döndürür [MiddleLayer](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.middlelayer?view=visualstudiosdk-2017) özelliği. Aşağıdaki örnek:
 
 ```csharp
 public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage

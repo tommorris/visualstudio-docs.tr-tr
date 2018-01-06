@@ -26,11 +26,12 @@ caps.latest.revision: "88"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 236bd457f478d21ed27d31b0a28871e1102a1547
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: db8c6e3363cf1a67dfef5f3dd606dd65ed6f7a94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio'da Office ve SharePoint Geliştirme
   Microsoft Office ve SharePoint basit bir uygulama oluşturarak genişletebilir ve kullanıcılar indirir, eklenti [Office deposu](https://store.office.com/) ya da bir kuruluş katalog veya .NET Framework tabanlı bir çözümdür, kullanıcıların oluşturarak yüklemek bir bilgisayar.  
@@ -117,6 +118,6 @@ ms.lasthandoff: 10/31/2017
 |Bitiş|Bkz. |  
 |--------|---------|  
 |SharePoint çözümlerini SharePoint eklentileri ile karşılaştırın.|[SharePoint çözümleri ile karşılaştırıldığında SharePoint eklentileri](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Bir SharePoint çözüm oluşturun.|[SharePoint çözümleri oluşturma](../sharepoint/create-sharepoint-solutions.md)|  
+|Bir SharePoint çözüm oluşturun.|[SharePoint Çözümleri Oluşturma](../sharepoint/create-sharepoint-solutions.md)|  
   
   

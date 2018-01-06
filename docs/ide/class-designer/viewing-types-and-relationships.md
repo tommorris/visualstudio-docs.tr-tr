@@ -19,11 +19,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d0ccf6c16e91aab07cf2c070bfedf77c42853e91
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: ea7da9a6ba5f604c380816c0ebb7972fe1c22f02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Türleri ve İlişkilendirmeleri Görüntüleme (Sınıf Tasarımcısı)
 Sınıf Tasarımcısı türleri ayrıntılarını örneğin göstermek için sınıf diyagramları, bağlı üyeleri ve paylaştıkları ilişkileri kullanır. Bu varlıklar görselleştirme gerçekte dinamik koda görülmektedir. Bu tasarımcı türlerinde düzenleyin ve varlığın kaynak kodunda yansıtılan düzenlemeleriniz bkz anlamına gelir. Benzer şekilde, sınıf diyagramı varlıklar kodunda yaptığınız değişiklikler ile eşitlenmiş tutulur.  

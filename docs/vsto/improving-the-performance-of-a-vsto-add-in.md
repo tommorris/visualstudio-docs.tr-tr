@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa8aba456e6912569480305922511f6ffebe674b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bafc82f247f067f1f836730ec1f676f2f9559915
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>Bir VSTO Eklentisinin Performansını İyileştirme
   VSTO uygulamaları kapatın, bunlar hızlı bir şekilde başlatmak için Office için oluşturduğunuz eklentileri iyileştirerek, kullanıcılarınızın daha iyi bir deneyim sağlamak, öğeleri açın ve başka görevler gerçekleştirebilirsiniz. VSTO eklentinizi Outlook için ise, VSTO eklentinizi olacaktır fırsat da azaltabilir performansın nedeniyle devre dışı. Aşağıdaki stratejilerden uygulayarak VSTO eklentinizi performansını artırabilirsiniz:  

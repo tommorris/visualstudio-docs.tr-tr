@@ -12,26 +12,27 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3f1e9fca25f29bd7e649816a0529a58c7ec2f7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38d37d1c7805e98d8cf90fbb2e96e1d3c444313c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor-components"></a>XML Düzenleyicisi bileşenleri
 Bu bölümde XML düzenleyici pencereleri ve iletişim kutuları anlatılmaktadır. Metin Düzenleyici XML Düzenleyicisi'ni aldığından, bazı tümleşik geliştirme ortamı (IDE) yapılandırılmış genel metin düzenleyici ayarları kullanarak.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Çeşitli, XML, metin düzenleyici, Seçenekler iletişim kutusu](../xml-tools/miscellaneous-xml-text-editor-options-dialog-box.md)  
+ [Diğer, XML, Metin Düzenleyici, Seçenekler İletişim Kutusu](../xml-tools/miscellaneous-xml-text-editor-options-dialog-box.md)  
  Otomatik Tamamlama ve şema XML Düzenleyicisi için ayarları açıklanır.  
   
- [XML belge özellikleri, özellik penceresi](../xml-tools/xml-document-properties-properties-window.md)  
+ [XML Belge Özellikleri, Özellik Penceresi](../xml-tools/xml-document-properties-properties-window.md)  
  Kullanılabilir temel belge bilgiler açıklanmaktadır.  
   
- [Biçimlendirme, XML, metin düzenleyici, Seçenekler iletişim kutusu](../xml-tools/formatting-xml-text-editor-options-dialog-box.md)  
+ [Biçimlendirme, XML, Metin Düzenleyici, Seçenekler İletişim Kutusu](../xml-tools/formatting-xml-text-editor-options-dialog-box.md)  
  Nasıl öznitelikleri biçimlendirilir, karışık içerik işlemek ve benzeri nasıl denetleyen ayarları açıklanır.  
   
- [XML şemaları iletişim kutusu](../xml-tools/xml-schemas-dialog-box.md)  
+ [XML Şemaları İletişim Kutusu](../xml-tools/xml-schemas-dialog-box.md)  
  XML belgesi ile ilişkilendirmek için XML Şeması/şemaları seçmek açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

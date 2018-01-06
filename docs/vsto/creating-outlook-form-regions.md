@@ -20,11 +20,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a07f5b47ac6d9941a24f1d452bb1e290365049ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 357da47a68e3ae25fcd30f9516ce0509b9717807
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-outlook-form-regions"></a>Outlook Form Bölgeleri Oluşturma
   Form bölgeleri, Microsoft Office Outlook formları özelleştirmek için kullanabilirsiniz. Visual Studio tasarlama, geliştirme ve form bölgeleri hata ayıklama kolaylaştıran gelişmiş araçlar sağlar.  
@@ -181,14 +182,14 @@ ms.lasthandoff: 10/31/2017
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Outlook Form bölgeleri oluşturma yönergeleri](../vsto/guidelines-for-creating-outlook-form-regions.md)|Form bölgeleri en iyi duruma getirme ve olası sorunları önlemenize yardımcı olabilecek bilgiler sağlar.|  
-|[Nasıl yapılır: Outlook eklenti projesine Form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Standart veya özel bir Microsoft Office Outlook form kullanarak genişletmek için bir form bölgesi oluşturulacağını gösterir **yeni Outlook Form bölgesi** Sihirbazı.|  
-|[Form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md)|Form bölgesini her öğenin ileti sınıfıyla ilişkilendirme tarafından Microsoft Office Outlook öğeleri form bölgesini görüntüleneceğini belirtme açıklanmaktadır.|  
-|[İzlenecek yol: Outlook Form Bölgesi Tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)|Bir kişi öğesinin Inspector penceresinde yeni bir sayfa olarak görünen özel form bölgesi tasarlama gösterilmektedir.|  
-|[İzlenecek yol: Outlook'ta tasarlanan Form bölgesini içeri aktarma](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|Microsoft Office Outlook form bölgesi tasarlama ve ardından form bölgesini kullanarak bir Outlook VSTO eklenti projesine içeri gösterilmektedir **yeni Outlook Form bölgesi** Sihirbazı.|  
-|[Form bölgesine çalışma zamanında erişme](../vsto/accessing-a-form-region-at-run-time.md)|Gösterme, gizleme veya form bölgesini denetimlere değiştirmek için kod yazma ve kullanıcıların kullanarak kodu projenizdeki diğer bölgelerden çalıştırmasına olanak açıklar `Globals` sınıfı.|  
-|[Nasıl yapılır: Outlook Form bölgesini görüntülemesini engelleme](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Microsoft Office Outlook belirli bir öğe için bir form bölgesini görüntülemesini engelleme gösterilmektedir.|  
+|[Outlook Form Bölgeleri Oluşturma Yönergeleri](../vsto/guidelines-for-creating-outlook-form-regions.md)|Form bölgeleri en iyi duruma getirme ve olası sorunları önlemenize yardımcı olabilecek bilgiler sağlar.|  
+|[Nasıl Yapılır: Outlook Eklenti Projesine Form Bölgesi Ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Standart veya özel bir Microsoft Office Outlook form kullanarak genişletmek için bir form bölgesi oluşturulacağını gösterir **yeni Outlook Form bölgesi** Sihirbazı.|  
+|[Form Bölgesini Outlook İleti Sınıfıyla İlişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md)|Form bölgesini her öğenin ileti sınıfıyla ilişkilendirme tarafından Microsoft Office Outlook öğeleri form bölgesini görüntüleneceğini belirtme açıklanmaktadır.|  
+|[İzlenecek Yol: Outlook Form Bölgesi Tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)|Bir kişi öğesinin Inspector penceresinde yeni bir sayfa olarak görünen özel form bölgesi tasarlama gösterilmektedir.|  
+|[İzlenecek Yol: Outlook'ta Tasarlanan Form Bölgesini İçeri Aktarma](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|Microsoft Office Outlook form bölgesi tasarlama ve ardından form bölgesini kullanarak bir Outlook VSTO eklenti projesine içeri gösterilmektedir **yeni Outlook Form bölgesi** Sihirbazı.|  
+|[Form Bölgesine Çalışma Zamanında Erişme](../vsto/accessing-a-form-region-at-run-time.md)|Gösterme, gizleme veya form bölgesini denetimlere değiştirmek için kod yazma ve kullanıcıların kullanarak kodu projenizdeki diğer bölgelerden çalıştırmasına olanak açıklar `Globals` sınıfı.|  
+|[Nasıl Yapılır: Outlook'un Form Bölgesini Görüntülemesini Engelleme](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Microsoft Office Outlook belirli bir öğe için bir form bölgesini görüntülemesini engelleme gösterilmektedir.|  
 |Bir form bölgesi göründüğü Outlook öğesine erişim gösterilmektedir.|  
-|[Outlook Form bölgelerindeki özel eylemler](../vsto/custom-actions-in-outlook-form-regions.md)|Bir Outlook öğesine yanıt vermesine olanak sağlayan açıklar.|  
+|[Outlook Form Bölgelerindeki Özel Eylemler](../vsto/custom-actions-in-outlook-form-regions.md)|Bir Outlook öğesine yanıt vermesine olanak sağlayan açıklar.|  
   
   

@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54c91b8238b21f214edda0941c0c91fd4bdda8e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29a68dc22a348c787d192bebecea91caed7aa0cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>İzlenecek yol: İzleme Yöntemini Kullanarak Komut Satırı Profili Oluşturma
 Bu kılavuzda profil üzerinden geçen bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ayrıntılı zamanlama toplamak ve profil oluşturma Araçları'nın izleme metodunu kullanarak çağrı sayısı verileri için tek başına uygulama. Bu kılavuzda, aşağıdaki görevleri gerçekleştirmek:  
@@ -128,4 +129,4 @@ Bu kılavuzda profil üzerinden geçen bir [!INCLUDE[dnprdnshort](../code-qualit
  [Komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Örnekleme veri değerlerini anlama](../profiling/understanding-sampling-data-values.md)   
- [Performans rapor görünümleri](../profiling/performance-report-views.md)
+ [Performans Raporu Görünümleri](../profiling/performance-report-views.md)

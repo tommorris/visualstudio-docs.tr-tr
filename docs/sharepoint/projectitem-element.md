@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8a9f1ac258f6501aedb2fd89ce21514d785b25f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 240518544f906e68ad443adf55fef20ef2bac879
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectitem-element"></a>ProjectItem Öğesi
   Bir SharePoint proje öğesi temsil eder. .Spdata dosyasının gerekli kök öğesidir.  
@@ -79,6 +80,6 @@ ms.lasthandoff: 10/31/2017
 |**Boş olamaz**|Hayır|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SharePoint proje öğesi şema başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [SharePoint Proje Öğesi Şema Başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

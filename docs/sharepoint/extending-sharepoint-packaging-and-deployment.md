@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b88c89d9464b5ac9bc588c4364de97c1f4e281d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d2239a73b5a6f35a3571af90f8bd2814150da9d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-sharepoint-packaging-and-deployment"></a>SharePoint Paketleme ve Dağıtımını Genişletme
   Paketleme ve dağıtım işlemini SharePoint projeleri için genişletebilirsiniz.
@@ -59,6 +60,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: çalışma zaman dağıtım adımları yürütüldüğünde kodu](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   
  [İzlenecek yol: SharePoint projeleri için özel bir dağıtım adımı oluşturma](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)   
  [Nasıl yapılır: SharePoint çözümleri için özel özellik ve paket doğrulama kuralları oluşturma](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)   
- [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)  
+ [SharePoint Proje Sistemini Genişletme](../sharepoint/extending-the-sharepoint-project-system.md)  
   
   

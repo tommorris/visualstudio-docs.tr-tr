@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 738568db51cce97ee0b110220aa195b4ded2adba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d8bcdcc42ada14f808c165e9e06b269817f79575
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flowchart-activity-designer"></a>Akış Çizelgesi etkinlik Tasarımcısı
 <xref:System.Activities.Statements.Flowchart> Etkinlik tanımlayan ve karmaşık akış denetimleri yönetmek iş akışları oluşturmak için kullanılır. A <xref:System.Activities.Statements.Flowchart> kodda veya kullanarak yazılabilir [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Bu konuda belgeleri [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] karşılaşırsınız. [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] İş akışı etkinlik Tasarımcısı doğal bir biçimde Geliştiriciler iş akışları yazabilirsiniz sağlar.  

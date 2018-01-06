@@ -26,11 +26,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ece3128c2d6850a1d1dd22d0328a4ee2c46da2b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4cacdbb314130fa45b5aa3820abbbffbcbc6c0bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integrating-business-data-into-sharepoint"></a>İş Verilerini SharePoint ile Tümleştirme
   İş verilerini SharePoint ile tümleştirebilirsiniz. İş verileri gelebilir arka uç sunucu uygulamalardan gibi [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel ve SAP, veya bir Web hizmeti. Kullanıcılar görüntüleme, ekleme, güncelleştirme veya dış listeler veya iş veri SharePoint Web Bölümleri kullanarak iş verileri silme.  Kullanıcılar ayrıca bu verileri çevrimdışı Microsoft Outlook gibi Microsoft Office uygulamasında erişebilir. Daha fazla bilgi için bkz: [burada olabilir, göster dış veri](http://go.microsoft.com/fwlink/?LinkId=169295).  
@@ -59,8 +60,8 @@ ms.lasthandoff: 10/31/2017
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[İş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md)|Nasıl yeni bir model oluşturmak veya dışarı aktarmak istediğiniz SharePoint'ten model içeri aktarma gösterir.|  
-|[İş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)|Visual Studio tasarım araçlarını kullanarak bir model öğelerini tasarım açıklanmaktadır.|  
+|[İş Verileri Bağlantı Modeli Oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md)|Nasıl yeni bir model oluşturmak veya dışarı aktarmak istediğiniz SharePoint'ten model içeri aktarma gösterir.|  
+|[İş Verileri Bağlantı Modeli Tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)|Visual Studio tasarım araçlarını kullanarak bir model öğelerini tasarım açıklanmaktadır.|  
 |[Ne zaman SharePoint Designer'ı kullanın vs. Visual Studio oluştururken çözümleri BCS kullanma](http://go.microsoft.com/fwlink/?LinkID=183448)|Visual Studio veya BDC için bir model oluşturmak için SharePoint Designer kullanın karar vermenize yardımcı olur.|  
   
   

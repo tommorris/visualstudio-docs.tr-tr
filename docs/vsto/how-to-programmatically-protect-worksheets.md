@@ -20,11 +20,12 @@ caps.latest.revision: "47"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 283f10b5f68ec277e194a7ddce986a5bca08aa94
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f653ef0157ed0060066e3aa3ea923794854450d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Nasıl yapılır: Çalışma Sayfalarını Program Aracılığıyla Koruma
   Microsoft Office Excel koruma özelliği, kullanıcıların ve kodun çalışma sayfasındaki nesneleri değiştirmesini önlemeye yardımcı olur. Koruma etkinleştirildikten sonra varsayılan olarak, tüm hücreler kilitlenir.  
@@ -77,6 +78,6 @@ ms.lasthandoff: 10/31/2017
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md)   
  [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: b7deb3daed85c0c15d299052642abcb732ff12c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 55061da71038b3af38049a431db08fda6638144f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-expression-editor"></a>Nasıl yapılır: ifade Düzenleyicisi'ni kullanın
 İfade düzenleyicisidir bir [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] denetim birçok iş akışı etkinlikleri girme ve bu ifadeleri değerlendirme aracı olarak kullanılır. İfade Düzenleyicisi düzenleme deneyimi IntelliSense de dahil olmak üzere tam özellikli bir IDE sağlar renklendirme, Paramınfo, diğer özellikler arasında hata dalgalı çizgiler. Bunu girildikten sonra derleyici ifade doğrular. İfade geçersiz ise, bir hata simgesi görüntülenir. Düzenleyici olarak da açılabilir bir **ifade Düzenleyicisi** iletişim kutusu.  

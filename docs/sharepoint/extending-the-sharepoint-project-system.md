@@ -18,11 +18,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99380078b2fc49bcc5e1efb7a36ac7f28028a0d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ec4ca6100b3b0587e7e4dba5a56ceca4e5d5534c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-sharepoint-project-system"></a>SharePoint Proje Sistemini Genişletme
   SharePoint çözümlerini Visual Studio Proje şablonları ve öğe şablonları kümesi kullanarak oluşturabilirsiniz. Bu şablonlar birçok geliştirme senaryosu gereksinimlerini ancak burada size gereken işlevsellik sağlamıyorsa bazı durumlarda fark edebilirsiniz. Bu durumlarda, SharePoint Proje sisteminin genişletebilirsiniz.  
@@ -60,6 +61,6 @@ ms.lasthandoff: 10/31/2017
  [SharePoint Proje sisteminin uzantılarında veri kaydetme](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
  [SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
  [Visual Studio'da SharePoint araçları genişletme](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
- [SharePoint araç uzantıları için programlama kavramları ve Özellikler](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)  
+ [SharePoint Araç Uzantıları için Programlama Kavramları ve Özellikler](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)  
   
   

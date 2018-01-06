@@ -13,11 +13,12 @@ manager: ghogen
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e9196f3e4bc76e53d50bc480b8e0860186fe778e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 7e70e4366ca91e00beeb4fff49ec30d4618bde81
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="quick-actions"></a>Hızlı Eylemler
 
@@ -591,7 +592,7 @@ Dim s As String = $"My string with {num} in the middle"
 | ------- | -------------------- | ----------------  |
 | IDE0017 | C# ve Visual Basic | Visual Studio 2017 RTW |
 
-Bu hızlı eylem kullanmanıza olanak tanır [nesne başlatıcıları](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md) tne oluşturucusu ve sahip ek satırları atama deyimleri çağırma yerine.
+Bu hızlı eylem kullanmanıza olanak tanır [nesne başlatıcıları](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers) tne oluşturucusu ve sahip ek satırları atama deyimleri çağırma yerine.
 
 ```csharp
 // Before
@@ -621,7 +622,7 @@ Dim c = New Customer() With {.Age = 21}
 | ------- | -------------------- | ----------------  |
 | IDE0028 | C# ve Visual Basic | Visual Studio 2017 RTW |
 
-Bu hızlı eylem kullanmanıza olanak sağlayan [koleksiyon başlatıcıları](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md) birden fazla çağrı yerine `Add` sınıfınızın yöntemi.
+Bu hızlı eylem kullanmanıza olanak sağlayan [koleksiyon başlatıcıları](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers) birden fazla çağrı yerine `Add` sınıfınızın yöntemi.
 
 ```csharp
 // Before

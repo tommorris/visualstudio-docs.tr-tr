@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 528245e33f3157bf42f70b3918ee9f8fc9539f9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 991a282cb3fc8a34f3434c9cdb0a9be214c9e3bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>Nasıl yapılır: Varolan Belgeleri Program Aracılığıyla Açma
   <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> Yöntemi bir tam yol ve dosya adıyla belirtilen var olan Microsoft Office Word belgesini açar. Bu yöntem bir <xref:Microsoft.Office.Interop.Word.Document> açılan belgeyi temsil eden.  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: program aracılığıyla yeni belgeler oluşturma](../vsto/how-to-programmatically-create-new-documents.md)   
  [Nasıl yapılır: program aracılığıyla belgeleri kapatma](../vsto/how-to-programmatically-close-documents.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

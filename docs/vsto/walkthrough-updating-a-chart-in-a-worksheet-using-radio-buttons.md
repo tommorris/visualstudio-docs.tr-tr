@@ -19,11 +19,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74bd005514fa2fe72450a95d84f38dd17a7b639f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 90427051f2dd3ca7a906e7b6716a33ddd538f726
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>İzlenecek Yol: Radyo Düğmelerini Kullanarak Çalışma Sayfasında Grafik Güncelleme
   Bu kılavuzda kullanıcıya hızla seçenekleri arasında geçiş yapma olanağı vermek için bir Microsoft Office Excel çalışma sayfasında radyo düğmelerini kullanarak temellerini gösterir. Bu durumda, seçenekleri grafiğinin stilini değiştirin.  
@@ -254,6 +255,6 @@ ms.lasthandoff: 10/31/2017
 -   Çalışma sayfasında onay kutularını kullanarak biçimlendirmeyi değiştirme. Daha fazla bilgi için bkz: [izlenecek yol: değiştirme çalışma sayfası biçimlendirmesini kullanarak onay kutusu denetimleri](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Excel kullanarak izlenecek yollar](../vsto/walkthroughs-using-excel.md)  
+ [Excel Kullanarak İzlenecek Yollar](../vsto/walkthroughs-using-excel.md)  
   
   

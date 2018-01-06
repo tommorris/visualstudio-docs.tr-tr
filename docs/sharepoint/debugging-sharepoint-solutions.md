@@ -19,11 +19,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14a3c7a2676c786e631b4c8b471272185b81e36c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a0fdde3820615a41ed91e48538dac80fa234a724
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-sharepoint-solutions"></a>SharePoint Çözümlerinde Hata Ayıklama
   SharePoint çözümlerini kullanarak ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı. Hata ayıklama, başlattığınızda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proje dosyalarını SharePoint sunucusuna dağıtır ve sonra SharePoint sitesine örneği Web tarayıcısında açar. Aşağıdaki bölümlerde, SharePoint uygulamalarında hata ayıklama açıklanmaktadır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [SharePoint Proje Özellikleri](#Features)  
   
--   [İş akışları hata ayıklama](#Workflow)  
+-   [İş Akışlarında Hata Ayıklama](#Workflow)  
   
 -   [Hata ayıklama özellik Olay alıcıları](#FeatureEvents)  
   
@@ -152,6 +153,6 @@ ms.lasthandoff: 10/31/2017
  Diğer SharePoint kayıt defteri anahtarları hakkında daha fazla bilgi için bkz: [Visual Studio'da SharePoint araçları için hata ayıklama uzantıları](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SharePoint çözümlerinde sorun giderme](../sharepoint/troubleshooting-sharepoint-solutions.md)  
+ [SharePoint Çözümlerinde Sorun Giderme](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   
   

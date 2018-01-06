@@ -12,11 +12,12 @@ ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a4ac0c709f2b7f9dfded7c6781dda9831e457fa5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4cfc07cb77e1db595d1b381b1097dcfcba0abdab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Erişilebilirlik ipuçları ve püf noktaları Visual Studio için
 > [!TIP]
@@ -94,7 +95,7 @@ Visual Studio program olaylarına ses atamak için Windows Ses uygulamasını ku
 
 
 ## <a name="see-also"></a>Ayrıca bkz.  
-* [Visual Studio'nun erişilebilirlik özellikleri](../../ide/reference/accessibility-features-of-visual-studio.md)
-  * [Nasıl yapılır: menüleri ve Visual Studio içinde araç çubuklarını özelleştirme](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [Visual Studio'nun Erişilebilirlik Özellikleri](../../ide/reference/accessibility-features-of-visual-studio.md)
+  * [Nasıl Yapılır: Visual Studio'da Menüleri ve Araç Çubuklarını Özelleştirme](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md)
 * [Microsoft Erişilebilirlik](https://www.microsoft.com/Accessibility)

@@ -22,11 +22,12 @@ caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a8da60aa9d9dc3ab7becb56b3b4c7701494daef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 07d467d67c78f6779a8be2d21b266f8328e30ff7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Nasıl Yapılır: Çevrimdışı veya Sunucuda Kullanmak Üzere Verileri Önbelleğe Alma
   Böylece kullanılabilir belgede önbelleğe alınacak bir veri öğesi çevrimdışı olarak işaretleyebilirsiniz. Bu ayrıca, belgenin bir sunucuda depolandığında başka bir kodla yönetilebilmesini belgedeki verileri mümkün kılar.  
@@ -68,6 +69,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: program aracılığıyla bir veri kaynağı Office belgesinden önbelleğe alma](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [Nasıl yapılır: bir parola korumalı belgede veriyi önbelleğe alma](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
  [Sunucudaki belgelerde verilere erişme](../vsto/accessing-data-in-documents-on-the-server.md)   
- [Verileri kaydetme](/visualstudio/data-tools/saving-data)  
+ [Verileri Kaydetme](/visualstudio/data-tools/saving-data)  
   
   

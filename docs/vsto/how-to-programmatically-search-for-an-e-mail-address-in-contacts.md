@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 272a24a7d07e5a04ab4a92c06ee98a0c0efa5de8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 57c0cac0dd2b22b38284caec0a2bfb40d6e5b101
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-search-for-an-e-mail-address-in-contacts"></a>Nasıl yapılır: Kişilerde Program Aracılığıyla E-posta Adresi Arama
   Bu örnek etki alanı adına sahip kişiler için kişi bir klasör arar **example.com** e-posta adreslerini içinde.  
@@ -42,6 +43,6 @@ ms.lasthandoff: 10/31/2017
  [Kişi öğeleriyle çalışma](../vsto/working-with-contact-items.md)   
  [Nasıl yapılır: program aracılığıyla e-posta Gönder](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
  [Nasıl yapılır: program aracılığıyla, Outlook Kişilerine erişme](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Nasıl yapılır: Outlook Kişilerine program aracılığıyla giriş ekleme](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
+ [Nasıl yapılır: Outlook Kişilerine Program Aracılığıyla Giriş Ekleme](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
   
   

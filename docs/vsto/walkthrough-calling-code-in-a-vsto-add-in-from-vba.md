@@ -23,11 +23,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 70c956981c9e211d16d39ac22f759b6a21e0bc5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 66b9c93c9a1c4bcf55b4efc5e95d5b6353f9bd68
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>İnceleme: VSTO Eklentisinde VBA'dan Kod Çağırma
   Bu kılavuz, nesneyi VSTO eklenti Visual Basic for Applications (VBA) ve COM VSTO eklentileri için dahil diğer Microsoft Office çözümleri için kullanıma gösterilmiştir.  
@@ -160,6 +161,6 @@ ms.lasthandoff: 10/31/2017
  [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)   
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
- [Genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelliklerini özelleştirme](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
+ [Genişletilebilirlik Arabirimlerini Kullanarak Kullanıcı Arabirimi Özelliklerini Özelleştirme](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
   

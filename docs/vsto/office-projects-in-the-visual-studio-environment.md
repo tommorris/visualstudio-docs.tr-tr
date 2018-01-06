@@ -46,11 +46,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3f91a3ad121305e6d7a00df1ab1b337bdea73c1c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8cf489d5a1c4246adf4f5c4220229acb05ac67d5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Visual Studio Ortamında Office Projeleri
   Microsoft Office projeleri, Visual Studio'daki diğer proje türlerine (Windows Forms projeleri gibi) benzer bir geliştirme deneyimine sahiptir. Proje öğeleri Office projesi oluşturduğunuzda veya açtığınızda görüntülenen **Çözüm Gezgini**. Belge düzeyinde projeler için, belge (yani, Word belgesi veya Excel çalışma kitabı) Visual Studio'da açılır ve belge bir görsel tasarımcı gibi davranır.  
@@ -126,6 +127,6 @@ ms.lasthandoff: 10/31/2017
  [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)   
  [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)   
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Office projelerinde Özellikler](../vsto/properties-in-office-projects.md)  
+ [Office Projelerinde Özellikler](../vsto/properties-in-office-projects.md)  
   
   

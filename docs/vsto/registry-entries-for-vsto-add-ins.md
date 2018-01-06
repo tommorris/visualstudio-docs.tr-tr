@@ -21,11 +21,12 @@ caps.latest.revision: "79"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32fd9fe36f029296d52127cf1f3be9e3c205d82b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bcc3b19bc84d418798f296f15b36a367223c21fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO Eklentileri için Kayıt Defteri Girişleri
   VSTO Visual Studio kullanarak oluşturulan eklentileri dağıttığınızda, belirli bir kayıt defteri girdileri kümesini oluşturmanız gerekir. Bu kayıt defteri girdileri bulmak ve VSTO eklentisi yükleme Microsoft Office uygulama sağlayan bilgiler sağlar.  
@@ -112,6 +113,6 @@ ms.lasthandoff: 10/31/2017
  [Visual Studio'da Office çözümleri mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
  [Office çözümleri oluşturma](../vsto/building-office-solutions.md)   
- [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)  
+ [Office Çözümünü Dağıtma](../vsto/deploying-an-office-solution.md)  
   
   

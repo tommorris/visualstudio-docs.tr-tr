@@ -1,7 +1,7 @@
 ---
 title: "Python için Azure SDK | Microsoft Docs"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 03/07/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -12,11 +12,14 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e7a31bf6bff3e7f53ee50283d8efbe2218b8e88f
-ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 647b07e3816551e60e176280199ad5298db53200
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="azure-sdk-for-python"></a>Python için Azure SDK
 
@@ -28,7 +31,7 @@ Azure SDK'sını gelen yüklü [Python paket dizini](https://pypi.python.org/pyp
 
 Yükleme **en yeni kararlı sürüm** (gibi destekler Python 2.7 ve 3.3 +):
 
-```bash
+```command
 pip install azure
 ```
 
@@ -40,14 +43,14 @@ Belge üzerinde bulunabilir [python.readthedocs.org için azure sdk](http://azur
 
 [Python Geliştirici Merkezi için Azure SDK](http://azure.microsoft.com/develop/python/) öğreticileri sayısı gibi yararlı kaynaklara sayısı de vardır:
 
-  - Web uygulamaları ile oluşturma [Django](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app), ve [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
-  - [BLOB Depolama](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-blob-storage)
-  - [Tablo depolama](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage)
-  - [Kuyruk depolama](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)
-  - [DocumentDB](https://docs.microsoft.com/azure/documentdb/documentdb-python-application)
-  - [Service Bus kuyrukları](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
-  - [Hizmet veri yolu konuları/abonelikleri](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
-  - [Hizmet Yönetimi](https://docs.microsoft.com/azure/cloud-services/cloud-services-python-how-to-use-service-management)
+- Web uygulamaları ile oluşturma [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app), ve [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
+- [BLOB Depolama](/azure/storage/storage-python-how-to-use-blob-storage)
+- [Tablo depolama](/azure/storage/storage-python-how-to-use-table-storage)
+- [Kuyruk depolama](/azure/storage/storage-python-how-to-use-queue-storage)
+- [DocumentDB](/azure/documentdb/documentdb-python-application)
+- [Service Bus kuyrukları](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
+- [Hizmet veri yolu konuları/abonelikleri](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
+- [Hizmet Yönetimi](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
 Belgeler olmadan ortak API'ler için birim testleri içinde [SDK'ın GitHub deposunu](https://github.com/Azure/azure-sdk-for-python) iyi bilgi kaynağıdır:
 

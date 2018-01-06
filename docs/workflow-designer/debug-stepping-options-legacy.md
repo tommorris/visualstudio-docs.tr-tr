@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: fbdb0d481c0740310f40f6a75d8c84db765f847d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b93226b7223272c04b7d2e6b36b82cf737cd1b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-stepping-options-legacy"></a>Hata ayıklama sürüm seçenekleri (eski)
 Bu konu, hata ayıklamak açıklar [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] eşzamanlı etkinlikler eski uygulamaları [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -38,4 +39,4 @@ Bu konu, hata ayıklamak açıklar [!INCLUDE[wf](../workflow-designer/includes/w
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama eski iş akışları](../workflow-designer/debugging-legacy-workflows.md)   
- [Nasıl yapılır: hata ayıklama atlama seçeneği (eski) değiştirme](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+ [Nasıl Yapılır: Hata Ayıklama Adımlama Seçeneğini Değiştirme (Eski)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

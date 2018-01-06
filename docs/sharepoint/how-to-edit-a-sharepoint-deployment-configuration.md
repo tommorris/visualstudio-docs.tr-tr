@@ -19,11 +19,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 287618def7897cd2c91a63db9d8272c919190dfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 408d7801e883e85e37d721c342dba691702d77cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Nasıl yapılır: SharePoint Dağıtım Yapılandırmasını Düzenleme
   Dağıtım Yapılandırması oluşturun veya var olan dağıtım yapılandırmasını değiştirin. Örneğin, tek bir adım çalıştırmak veya dağıtım işlemindeki adımları sırasını değiştirin. Oluşturmak veya yerleşik ve program aracılığıyla eklenen yapılandırmaları değiştiğinden dağıtım yapılandırmaları değiştirmek isteyebilirsiniz.  
@@ -56,6 +57,6 @@ ms.lasthandoff: 10/31/2017
 3.  İçinde **etkin Dağıtım Yapılandırması** liste kutusunda, kullanmak istediğiniz dağıtım yapılandırması adını seçin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [SharePoint Çözümlerini Paketleme ve Dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

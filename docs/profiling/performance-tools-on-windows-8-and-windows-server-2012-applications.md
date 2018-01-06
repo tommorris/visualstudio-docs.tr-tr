@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83bd33e6da9795a7e4e638fa91612e930a882cb0
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: b82860f4bdbf206441591703137f15decb294269
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 ve Windows Server 2012 uygulamaların performans araçları
 Windows 8 ve Windows Server 2012'de başlangıç Gelişmiş güvenlik özellikleri şekilde Visual Studio performans araçları de yapılan önemli değişiklikler bu platformlarda veri toplama gereklidir. UWP uygulamalar için yeni koleksiyon teknikler de gerekir. Bu konu, Windows 8 ve Windows Server 2012 platformlarda itibaren performans araçları için değişiklikleri açıklar.

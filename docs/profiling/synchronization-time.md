@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6f792e58a2c98219d15e889846921f537d74140
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8252bc569ef17725570b5222afa12a59c387c278
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="synchronization-time"></a>Eşitleme Zamanı
 Bu kesimler çizelgesinde eşitlemesi kategorilere kez engelleme ile ilişkilendirilir. Bir iş parçacığı eşitleme engellendi olarak işaretlendiğinde, bunlardan birini kapsanır:  
@@ -30,4 +31,4 @@ Bu kesimler çizelgesinde eşitlemesi kategorilere kez engelleme ile ilişkilend
  Bir iş parçacığı engelleme olayı temel nedeni anlamak için profil raporları ve engelleme çağrı yığınları dikkatle inceleyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)
+ [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

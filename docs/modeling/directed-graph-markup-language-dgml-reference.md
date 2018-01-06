@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: e1ea2e37668806849b88d1fb7d6a15142518c076
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1d4c70d319e80eea95af6f71180b8ef4a37cad45
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Yönlendirilmiş Grafik İşaretleme Dili (DGML) başvurusu
 Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) Görselleştirme ve karmaşıklık analizi yapmak için kullanılan bilgileri açıklar ve biçimi Visual Studio'da kod haritalarına kalıcı hale getirmek için kullanılır. Döngüsel ve döngüsel olmayan yönlendirilmiş grafiklerini açıklamak için basit XML kullanır. Yönlendirilmiş bir grafik, bağlantılarla veya kenarlarla bağlanmış bir düğüm kümesidir. Düğümler ve bağlantılar, bir yazılım projesindeki öğeler gibi ağ yapılarını açıklamak için kullanılabilir.  
@@ -324,4 +325,4 @@ Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) Görselleştirme ve karmaşı
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)   
  [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)   
- [Kod Haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)
+ [Kod haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)

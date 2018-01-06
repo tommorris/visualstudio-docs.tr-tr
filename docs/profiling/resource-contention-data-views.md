@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0006505bb1c1825c79a7ba1b04d1323c8ca1608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 31f9f7650336c3787e68b511cf099c04317bca7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resource-contention-data-views"></a>Kaynak Çakışması Veri Görünümleri
 Bu bölüm görünümler ve iş parçacığı çakışma profil oluşturma verileri içeren Profil Oluşturucu veri dosyalarının raporları için başvuru bilgileri içerir.  
@@ -28,10 +29,10 @@ Bu bölüm görünümler ve iş parçacığı çakışma profil oluşturma veril
  [Özet görünümü - profil oluşturucu çakışma verileri](../profiling/resource-contention-data-views.md)  
  Profil oluşturma verileri, grafik bir zaman çizelgesi görüntüler ve işlevleri ve en engelleme olayları katılmış kaynakları listeler.  
   
- [Çağrı ağacı görünümü](../profiling/call-tree-view-contention-data.md)  
+ [Çağrı Ağacı Görünümü](../profiling/call-tree-view-contention-data.md)  
  Yürütme yolları ve kaynak çakışması veri çalıştırmak profil işlevlerin temsil eden bir hiyerarşik ağaç görüntüler.  
   
- [Modüller görünümü](../profiling/modules-view-contention-data.md)  
+ [Modüller Görünümü](../profiling/modules-view-contention-data.md)  
  İş parçacığı ve kaynak çakışması veri modülü tarafından düzenler ve İşlevler, kaynak kod satırlarını ve engelleme olaylar meydana geldiğinde, yürütülmekte yönergeleri listeler.  
   
  [Arayan / Aranan görünümü - çakışma verileri](../profiling/caller-callee-view-contention-data.md)  
@@ -43,21 +44,21 @@ Bu bölüm görünümler ve iş parçacığı çakışma profil oluşturma veril
  [İş parçacığı Ayrıntıları görünümü](../profiling/thread-details-view-contention-data.md)  
  Engelleme olaylar için çağrı yığını listeler ve her iş parçacığı için engelleme olayların grafik bir zaman çizelgesi görüntüler.  
   
- [İşlevler görünümü](../profiling/functions-view-contention-data.md)  
+ [İşlevler Görünümü](../profiling/functions-view-contention-data.md)  
  İş parçacığı ve kaynak çakışması veri işlevi tarafından listeler.  
   
  [Kaynak çekişmeleri görünümü](../profiling/resource-contentions-view-contention-data.md)  
  Kaynak çakışması veri engellenen kaynağa göre listeler.  
   
- [Satırlar görünümü](../profiling/lines-view-contention-data.md)  
+ [Satırlar Görünümü](../profiling/lines-view-contention-data.md)  
  Kaynak çakışması veri kaynağı kod satırı ile listeler.  
   
- [Yönerge işaretçileri (IP) görünümü](../profiling/instruction-pointers-ips-view-contention-data.md)  
+ [Yönerge İşaretçileri (IP) Görünümü](../profiling/instruction-pointers-ips-view-contention-data.md)  
  Kaynak çekişmesini yönergesi tarafından listeler.  
   
- [İşlem görünümü](../profiling/process-view-contention-data.md)  
+ [İşlem Görünümü](../profiling/process-view-contention-data.md)  
  İşlem ve iş parçacığı tarafından kaynak çekişmesini listeler.  
   
 ## <a name="reference"></a>Başvuru  
- [İşlev Ayrıntıları görünümü](../profiling/function-details-view.md)  
+ [İşlev Ayrıntıları Görünümü](../profiling/function-details-view.md)  
  Seçili işlevi çağrılır ve seçili işlev tarafından çağrılan işlevler arasındaki ilişkinin grafik bir grafik görüntüler.

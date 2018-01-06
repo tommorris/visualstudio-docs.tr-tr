@@ -20,11 +20,12 @@ caps.latest.revision: "50"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4012211a39e1286becadd503a20d402f9ac7c7a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5f726a30a7ae50e35726b67336ec41f50be60b24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Nasıl yapılır: Aralık Oluştururken Program Aracılığıyla Paragraf İşaretlerini Hariç Tutma
   Oluşturduğunuz her bir <xref:Microsoft.Office.Interop.Word.Range> bir paragraf paragraf işaretlerini gibi tüm yazdırılamayan karakterler temel nesne aralığında dahil edilir. Hedef paragrafa kaynak paragrafı metin eklemek isteyebilirsiniz. Daha sonra hedef paragraf farklı paragraflara ayırmak istemiyorsanız kaynak paragrafın paragraf işaretlerini önce kaldırmalısınız. Ayrıca, paragraf işaretleri içinde paragraf biçimlendirme bilgilerini kaydedildiği varolan paragrafa aralık eklediğinizde bunu dahil istemeyebilirsiniz.  
@@ -125,6 +126,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
  [Nasıl yapılır: program aracılığıyla sıfırlama Word belgelerinde aralıkları](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
  [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

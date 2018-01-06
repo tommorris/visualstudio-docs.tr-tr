@@ -29,11 +29,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9531a49ced6e8f72154cbdd59fce271ff673f59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78b59ff3d8d6c54465ce29334c1dbe041b7a71be
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Visual Studio projeleri veya çözümler olmadan kod geliştirme  
 Visual Studio 2017 ', kod neredeyse tüm dizin tabanlı proje türünden Visual Studio'ya bir çözüm ya da proje dosyası gerek kalmadan açabilirsiniz. Bu, örneğin, kod projesi üzerinde Git bulabilir, kopyalamak ve ardından doğrudan Visual Studio'ya açın ve bir çözüm ya da proje oluşturmak zorunda kalmadan geliştirmeye başlamak anlamına gelir.  
@@ -171,7 +172,7 @@ Bu yordamda, yapı ve kodunuzu temizlemek amacıyla nMake kullanan iki özel der
 
   ![Özel derleme görevi komutu](./media/VSIDE_Code_Tasks_CustTask1.png)
 
-1. Aşağıdaki yapı görevleri için tasks.vs.json ekleyin. Bu örnekte, iki görevi ekleyeceğiz: diğer adlı bir çağrılan "derleme görevleri dosyası projesi derlemek için nMake komutu kullanan derleme", derleme görevleri dosyası temiz hangi "temiz" bağımsız değişkeni nMake komutuyla çağırır. Bu görevleri içinde varolan "görevler" dizi eklenmesi gerekir. (Bunlar yalnızca örnek derleme görevleri olduğunu unutmayın. Bunları gerçekten çalışmaya içeren iş yükü gerek duyarsınız [nNake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference) , sisteminizde yüklü.)  
+1. Aşağıdaki yapı görevleri için tasks.vs.json ekleyin. Bu örnekte, iki görevi ekleyeceğiz: diğer adlı bir çağrılan "derleme görevleri dosyası projesi derlemek için nMake komutu kullanan derleme", derleme görevleri dosyası temiz hangi "temiz" bağımsız değişkeni nMake komutuyla çağırır. Bu görevleri içinde varolan "görevler" dizi eklenmesi gerekir. (Bunlar yalnızca örnek derleme görevleri olduğunu unutmayın. Bunları gerçekten çalışmaya içeren iş yükü gerek duyarsınız [nNake](/cpp/build/nmake-reference) , sisteminizde yüklü.)
 
   ```xml
   {

@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3db5af044b1e3eb25e68c96a42335082fd3523f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a820bc1a29db10fa5f65f1781c30218c62c2ee08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Nasıl yapılır: Belirli bir Liste Örneği için Olay Alıcı Oluşturma
   Bir liste örneği olay alıcısı herhangi bir örneğine listesi tanımını gerçekleşen olaylara yanıt verir. Olay alıcı şablonunu belirli listesi örneği hedefleme etkinleştirmez olsa da, belirli bir liste örneği olaylara yanıt için bir liste tanımı için kapsamlı bir olay alıcısı değiştirebilirsiniz.  
@@ -91,6 +92,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)   
- [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
+ [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
   
   

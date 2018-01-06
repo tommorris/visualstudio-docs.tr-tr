@@ -12,11 +12,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3881b015821952b4a2aeaa60d22c66bf47dff9c4
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 76cad59931a6c99bfd21fc0d149b86bf8a3b8a71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 Visual Studio ya da üçüncü taraf birim testi projelerini birim testleri çalıştırma, testleri kategoriler halinde gruplandırabilirsiniz, test listesini filtrelemek ve oluşturmak, kaydetme ve çalma testleri çalıştırmak için test Gezgini'ni kullanın. Ayrıca testleri hata ayıklama ve test performans ve kod kapsamını çözümleme.  
@@ -180,7 +181,7 @@ Visual Studio ya da üçüncü taraf birim testi projelerini birim testleri çal
 |**Hata iletisi**|Kullanıcı tanımlı hata iletilerinin tarafından geri döndürülen başarısız aramaları için eşleşen onaylar.|  
 |**Dosya yolu**|Test kaynak dosyaların tam dosya adı için eşleşen arar.|  
 |**Tam adı**|Test ad alanları, sınıflar ve yöntemler tam dosya adı için eşleşen arar.|  
-|**Çıktı**|Standart çıkış (stdout) veya standart hata (stderr) için yazılmış kullanıcı tanımlı hata iletilerinin arar. Çıktı iletileri belirlemek için söz dizimi birim test çerçevesi tarafından tanımlanır.|  
+|**Output**|Standart çıkış (stdout) veya standart hata (stderr) için yazılmış kullanıcı tanımlı hata iletilerinin arar. Çıktı iletileri belirlemek için söz dizimi birim test çerçevesi tarafından tanımlanır.|  
 |**Sonucu**|Test Gezgini kategori adları eşleştirmeleri arar: **başarısız testler**, **atlandı testleri**, **testleri geçti**.|  
   
  Bir filtre sonuçlarını kümesini dışarıda bırakmak için aşağıdaki sözdizimini kullanın:  
@@ -264,4 +265,4 @@ FullName:"MyClass" - FullName:"PerfTest"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kodunuza birim testi](../test/unit-test-your-code.md)   
- [Bir 64-bit işlem olarak birim testi çalıştırma](../test/run-a-unit-test-as-a-64-bit-process.md)
+ [64 bitlik bir işlem olarak birim testi çalıştırma](../test/run-a-unit-test-as-a-64-bit-process.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c77d5fb404be8dda323720c1e0c1ab2c1887c88f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cace0c9826a76a4a8341c6b85e1219dcf287e80a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="secure-deployment"></a>Güvenli Dağıtım
   Office çözümü oluşturduğunuzda, geliştirme bilgisayarınızda kod projenize çalışmasına izin vermek için otomatik olarak güncelleştirilir. Çözümünüzü dağıtırken, ancak, bir sertifika ile çözüm imzalama veya kullanarak güven kararı temel alacağı kanıt gerekir [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi anahtarını. Daha fazla bilgi için bkz: [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md).  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)   
  [Çalıştırmak veya Office çözümleri barındırmak için bilgisayarları hazırlama](http://msdn.microsoft.com/en-us/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)  
+ [Office Çözümleri Güvenliğini Sağlama](../vsto/securing-office-solutions.md)  
   
   

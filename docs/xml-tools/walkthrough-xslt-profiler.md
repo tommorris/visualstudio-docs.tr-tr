@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b2680a8f42dc984897b3fba4913ea69dbc23333f
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: be03e554bbdf55c447437116373cc60b15df391e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-xslt-profiler"></a>İzlenecek yol: XSLT Profil Oluşturucu
 XSLT profil oluşturucu ölçü Yardım, değerlendirmek ve performans ile ilgili sorunlar XSLT kodda hedef ayrıntılı XSLT performans raporları oluşturur. XSLT profil oluşturucu yararlı ipuçları XSL ve XSLT stil sayfası iyileştirmeler içerir. XSLT uygulamaları için isteğe bağlı en yüksek performans, bu aracı gerekli olabilir.  
@@ -109,4 +110,4 @@ Aşağıdaki örneklerde yordamlarda, Visual Studio ve .NET Framework sürüm 4.
 4.  İşlem görünümü içeren bir tablo görüntüler **işlem kimliği**, **işlem adı**, **başlaması zamanı**ve **bitiş zamanı**. Veri sütunu adları tıklayarak sıralanabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[İzlenecek yol: XSLT hiyerarşi kullanma](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+[İzlenecek Yol: XSLT Hiyerarşisi Kullanma](../xml-tools/walkthrough-using-xslt-hierarchy.md)

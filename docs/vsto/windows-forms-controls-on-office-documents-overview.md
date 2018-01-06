@@ -32,11 +32,12 @@ caps.latest.revision: "76"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8d086aec822d0e2e9ecc80834703cc5481f9eef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 106b61c18b9124a72c1b149dcab04e30be5f25f2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Office Belgelerindeki Windows Forms Denetimlerine Genel Bakış
   Windows Forms denetimleri kullanıcıları girin ya da verileri işlemek için etkileşim kurabildikleri nesneleridir. Microsoft Office Excel ve Microsoft Office Word için belge düzeyi projelerine, Windows Forms denetimleri belge veya çalışma kitabını projenizde tasarım zamanında ekleyebileceğiniz veya çalışma zamanında bu denetimlerini programlı olarak ekleyebilirsiniz. Program aracılığıyla bu denetimleri herhangi bir açık belgeye veya çalışma zamanında VSTO eklenti Excel veya Word'den ekleyebilirsiniz.  
@@ -165,6 +166,6 @@ ms.lasthandoff: 10/31/2017
  [İzlenecek yol: Bir belgeyi bir düğme kullanarak metin kutusunda metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)   
  [Office belgelerindeki Windows Forms denetimleri sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
  [İzlenecek yol: radyo düğmelerini kullanarak belgede grafik güncelleme](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)   
- [İzlenecek yol: radyo düğmelerini kullanarak çalışma sayfasında grafik güncelleme](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
+ [İzlenecek Yol: Radyo Düğmelerini Kullanarak Çalışma Sayfasında Grafik Güncelleme](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
   
   

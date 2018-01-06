@@ -19,11 +19,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7edb589551f888427be6abcbb8f86c2e86b4349c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8508f12d0e0bbf6dbabc0c12f8e5feb8d7d11d1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-template-by-using-content-controls"></a>İzlenecek Yol: İçerik Denetimlerini Kullanarak Şablon Oluşturma
   Bu kılavuzda nasıl yapılandırılmış ve yeniden kullanılabilir içerik bir Microsoft Office Word şablonu oluşturmak için içerik denetimleri kullanan bir belge düzeyi özelleştirme oluşturulacağını gösterir.  
@@ -120,7 +121,7 @@ ms.lasthandoff: 10/31/2017
     |-|  
     |**Müşteri adı**|  
     |**Memnuniyet derecesi**|  
-    |**Açıklamaları**|  
+    |**Açıklamalar**|  
   
 5.  İkinci sütunun ilk hücreyi tıklatın (yanına **müşteri adı**).  
   
@@ -245,6 +246,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: içerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Office Belgelerine Çalışma Zamanında Denetim Ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)  
   
   

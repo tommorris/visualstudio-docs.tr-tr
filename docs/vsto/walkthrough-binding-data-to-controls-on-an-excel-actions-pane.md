@@ -22,11 +22,12 @@ caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e47f9083629ac66e0e195feb089a589c69a22789
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 11a9f55691416a1b7775e0ff9d392293d9fee33f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-binding-data-to-controls-on-an-excel-actions-pane"></a>İzlenecek Yol: Excel Eylemler Bölmesindeki Denetimlere Veri Bağlama
   Bu kılavuz, Microsoft Office Excel eylemler bölmesindeki denetimlere veri bağlama gösterir. Denetimler, SQL Server veritabanındaki tablolar arasındaki ana/ayrıntı ilişkisi gösterir.  
@@ -78,8 +79,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  Northwind örnek SQL Server veritabanı için bir veri bağlantısı seçin veya yeni bir bağlantı kullanarak eklemek **yeni bağlantı** düğmesi.  
   
-5.  
-              **İleri**'ye tıklayın.  
+5.  **İleri**'ye tıklayın.  
   
 6.  Bağlantı seçiliyse kaydetme seçeneğini ve ardından temizlemek **sonraki**.  
   
@@ -191,6 +191,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)   
  [Nasıl yapılır: Eylemler bölmesindeki denetim düzenini yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Office Çözümlerinde Verileri Denetimlere Bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

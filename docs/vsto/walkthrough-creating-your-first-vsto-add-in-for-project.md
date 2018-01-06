@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 324d5e07ed2c1515036282abe12336f90225993f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 391bd4bbdfe87f1bc00ac14356c61f988b8bf041
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-project"></a>İzlenecek yol: Proje için ilk VSTO eklentinizi oluşturma
   Bu kılavuzda nasıl Microsoft Office Project için VSTO eklenti oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin projeleri açık olan bağımsız olarak kullanılabilir. Daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -138,6 +139,6 @@ ms.lasthandoff: 10/31/2017
  [Proje çözümleri](../vsto/project-solutions.md)   
  [Office çözümleri oluşturma](../vsto/building-office-solutions.md)   
  [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)   
- [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)  
+ [Office Proje Şablonlarına Genel Bakış](../vsto/office-project-templates-overview.md)  
   
   

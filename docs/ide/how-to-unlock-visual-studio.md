@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d5ce262803cb91bbf851836a082376c862f6e79
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 87d937c456b875afa5234b61b57edb21ba32baf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-unlock-visual-studio"></a>Nasıl yapılır: Visual Studio kilidini açma
 
@@ -68,9 +69,9 @@ Kimlik bilgilerinizi girmek değil, eski gitmek belirteç başlatır ve hesap ay
 
 ### <a name="update-expired-licenses"></a>Süresi dolan lisansları güncelleştirin
 
- Aboneliğinizi tamamen süresi doldu ve artık erişim hakları Visual Studio yüklüyse, aboneliğinizi yenileyin veya bir subsription olan başka bir hesap ekleyin. Kullanmakta olduğunuz lisans hakkında daha fazla bilgi için şuraya gidin **dosya**, **hesap ayarlarını** ve iletişim kutusunun sağ tarafındaki lisans bilgilerini bakın. Farklı bir hesap ile ilişkilendirilmiş başka bir aboneliğiniz varsa, bu hesaba ekleme **tüm hesapları** seçerek iletişim kutusunun sol tarafında listede **Hesap Ekle...**  bağlantı.
+ Aboneliğinizi tamamen süresi doldu ve artık erişim hakları Visual Studio yüklüyse, aboneliğinizi yenileyin veya bir aboneliğe sahip başka bir hesap ekleyin. Kullanmakta olduğunuz lisans hakkında daha fazla bilgi için şuraya gidin **dosya**, **hesap ayarlarını** ve iletişim kutusunun sağ tarafındaki lisans bilgilerini bakın. Farklı bir hesap ile ilişkilendirilmiş başka bir aboneliğiniz varsa, bu hesaba ekleme **tüm hesapları** seçerek iletişim kutusunun sol tarafında listede **Hesap Ekle...**  bağlantı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio'da Oturum Açma](../ide/signing-in-to-visual-studio.md)
-* [Visual Studio abonelik seçenekleri Karşılaştır](/subscriptions/compare-subscriptions.md)  
+ 

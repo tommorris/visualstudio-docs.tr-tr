@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 3d3928330558c3d611decd2a87498d33fd6482ce
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 950bff10372c9c40e047f891049e7cc387c8efc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="if-activity-designer"></a>Varsa etkinlik Tasarımcısı
 <xref:System.Activities.Statements.If> Etkinlik bir koşulu değerlendirir ve bu değerlendirme sonuçlarını bağlı olarak bir etkinlik yürütür. Bu etkinlik programlama stilini modelleme bir yordam kullanırken kullanışlıdır. Bir <xref:System.Activities.Statements.If> etkinlik iç içe geçirilemez içinde bir <xref:System.Activities.Statements.Sequence> etkinlik veya <xref:System.Activities.Statements.Parallel> örneğin etkinlik. Kullanıyorsanız bir <xref:System.Activities.Statements.Flowchart> etkinliği kullanmayı bir <xref:System.Activities.Statements.FlowDecision> etkinlik yerine.  
@@ -33,4 +34,4 @@ ms.lasthandoff: 10/27/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sırası](../workflow-designer/sequence-activity-designer.md)   
  [Paralel](../workflow-designer/parallel-activity-designer.md)   
- [Denetim akışı](../workflow-designer/control-flow-activity-designers.md)
+ [Denetim Akışı](../workflow-designer/control-flow-activity-designers.md)

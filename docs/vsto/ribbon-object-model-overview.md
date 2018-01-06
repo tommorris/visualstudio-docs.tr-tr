@@ -16,11 +16,12 @@ caps.latest.revision: "75"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655a1b6f3d57ac15fc7a50a603b2a12791251c9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1ca5b96157ee6077d4e904d21ba2a95c4f059e02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-object-model-overview"></a>Şerit Nesne Modeline Genel Bakış
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Almak ve Şerit denetimlerini çalışma zamanında ayarlamak için kullanabileceğiniz bir kesin türü belirtilmiş nesne modeli sunar. Örneğin, dinamik olarak menü denetimleri doldurmak veya gösterebilir ve denetimleri bağlam gizle. Şerit, ancak yalnızca Şerit Office uygulaması tarafından yüklenmeden sekmeler, gruplar ve denetimler de ekleyebilirsiniz. Bilgi için bkz: [ayarı özellikleri, hale salt okunur](#SettingReadOnlyProperties).  
@@ -51,9 +52,9 @@ ms.lasthandoff: 10/31/2017
 |Denetim adı|Sınıf adı|  
 |------------------|----------------|  
 |**Kutusu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
-|**Düğmesi**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|  
+|**Düğme**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|  
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|  
-|**Onay kutusu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
+|**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
 |**Açılır**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
 |**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
 |**Grup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Etiket**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
 |**Menü**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
-|**Ayırıcı**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
+|**Ayıraç**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
 |**Bölünmüş düğme**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**Sekmesi**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
@@ -198,6 +199,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)   
  [Nasıl yapılır: Backstage görünümüne denetimler ekleme](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Nasıl yapılır: Şerit Şerit Tasarımcısından Şerit XML dışarı aktarma](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Nasıl yapılır: eklenti kullanıcı arayüzü hatalarını gösterme](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ [Nasıl Yapılır: Eklenti Kullanıcı Arayüzü Hatalarını Gösterme](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

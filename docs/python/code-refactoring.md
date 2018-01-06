@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 1e3b9fa70f42a0be65f7bea8c39a644d4950b621
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: e8ab260780c7cd2841d0ffe88f4eb0cc817592c4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="refactoring-python-code"></a>Python kodu yeniden düzenleme
 
@@ -25,7 +26,7 @@ Visual Studio otomatik olarak dönüştürmek ve Python kaynak kodunuzu Temizlem
 - [Yeniden Adlandır](#rename) seçili sınıfı, yöntemi veya değişken adı yeniden adlandırır
 - [Ayıklama yöntemi](#extract-method) yeni bir yöntem seçili kodundan oluşturur
 - [İçeri aktarma eklemek](#add-import) eksik alma eklemek için bir akıllı etiket sağlar
-- [Kullanılmayan içeri aktarmalar kaldırmak](#remove-imports) kullanılmayan içeri aktarmalar kaldırır
+- [Kullanılmayan içeri aktarmalar kaldırmak](#remove-unused-imports) kullanılmayan içeri aktarmalar kaldırır
 
 < a name = "rename-variable"</a>
 
@@ -71,6 +72,7 @@ Benzer şekilde, Visual Studio diğer modüller ya da yerleşik ad alanı içe i
 Son olarak, bir şey normalde dışlanan ancak diğer (adı modülünde bir değer örneğin atandığından), dahil olacak değerleri, Visual Studio hala sahip alma dışlar. Bu davranış değeri başka bir modülde tanımlanır ve böylece ek ataması da aktarılmaz bir kukla değer olması olasıdır çünkü dışarı döndürmemelidir olduğunu varsayar.
 
 < a name = "remove-imports"</a>
+
 ## <a name="remove-unused-imports"></a>Kullanılmayan içeri aktarmalar Kaldır
 
 Kod yazarken şunun daha kolaydır `import` deyimleri hiç kullanılmayan modüller. Visual Studio kodunuzun analiz için otomatik olarak belirleyebilirsiniz olup bir `import` deyimi, içeri aktarılan ad deyim oluştuğu kapsamı içinde aşağıdaki mı kullanıldığına bakarak gereklidir.

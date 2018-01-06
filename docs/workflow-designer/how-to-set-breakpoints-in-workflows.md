@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a5565a5f53506ee61cc40cdd09ab4719bef0742b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4c9a3124ddefc892207ccc821b80056baab14166
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Nasıl yapılır: iş akışlarında kesme noktalarını ayarlama
 Kullandığınızda [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)], Visual Basic veya C# kodunda yaptığınız gibi grafik iş akışlarında kesme noktaları ayarlayabilirsiniz. Beklendiği gibi iş akışı yürütme ayarladığınız her kesme noktasında durur.  
@@ -42,4 +43,4 @@ Kullandığınızda [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)], 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: iş akışı hata ayıklayıcı çağırma](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
  [İş Akışı Tasarımcısı ile hata ayıklama](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)   
- [Nasıl yapılır: XAML iş akışı Tasarımcısı ile hata ayıklama](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+ [Nasıl Yapılır: İş Akışı Tasarımcısı ile XAML Hatalarını Ayıklama](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

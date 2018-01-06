@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 93f5a4d237addf835a1eb4caa9979259242fab02
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1f3dd415646f9205794ed51572ed9dbcfc5b45b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Nasıl yapılır: iş akışı projeleri (eski) oluşturma
 Oluşturmak için bu adımları bir [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] hedefleyen projede [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Bu yordam eski kullanır [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] tarafından sağlanan [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].  
@@ -61,4 +62,4 @@ Oluşturmak için bu adımları bir [!INCLUDE[wf](../workflow-designer/includes/
 8.  **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eski iş akışı projeleri oluşturma](../workflow-designer/creating-legacy-workflow-projects.md)
+ [Eski İş Akışı Projeleri Oluşturma](../workflow-designer/creating-legacy-workflow-projects.md)

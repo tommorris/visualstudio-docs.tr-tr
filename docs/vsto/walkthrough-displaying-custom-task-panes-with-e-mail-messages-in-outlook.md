@@ -21,11 +21,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b788a66eb95db5e46464048e134ab803d273d1ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c96744b433f4ad481e500420ffeab8caad3772c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook"></a>İzlenecek Yol: Outlook'ta E-Posta İletileri ile Birlikte Özel Görev Bölmelerini Görüntüleme
   Bu kılavuz, oluşturulan veya açılan her e-posta iletisi birlikte özel görev bölmesini benzersiz bir örneğini görüntülemek gösterilmiştir. Kullanıcılar, görüntüleme ya da her e-posta iletisi Şerit üzerinde bir düğmeyi kullanarak özel görev bölmesini gizleme.  
@@ -279,6 +280,6 @@ ms.lasthandoff: 10/31/2017
  [İzlenecek yol: özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
  [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md)   
- [Şerit çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)  
+ [Çalışma Zamanında Şeride Erişme](../vsto/accessing-the-ribbon-at-run-time.md)  
   
   

@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2f7b77dfb83fbadb4b05685e684e95ee0c2d57cc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 56a20f6e29f0f1bd6e071e6d3b48442c0bf02e77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach&lt;T&gt; etkinlik Tasarımcısı
 <xref:System.Activities.Statements.ParallelForEach%601> Etkinliği bir koleksiyonun öğelerini numaralandırır ve zaman uyumsuz olarak aynı iş parçacığı üzerinde olduğu paralel koleksiyonunun her öğe için katıştırılmış bir deyimini yürütür. Bu akış denetimi etkinliği yerine kullanın <xref:System.Activities.Statements.Sequence> boşta gitmek için bu etkinliği alt etkinliklerinin beklenen varsa etkinlik.  
@@ -51,4 +52,4 @@ ms.lasthandoff: 10/27/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sırası](../workflow-designer/sequence-activity-designer.md)   
  [Paralel](../workflow-designer/parallel-activity-designer.md)   
- [Denetim akışı](../workflow-designer/control-flow-activity-designers.md)
+ [Denetim Akışı](../workflow-designer/control-flow-activity-designers.md)

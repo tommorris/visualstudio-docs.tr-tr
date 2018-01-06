@@ -23,21 +23,22 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cc1cacd824e6dda08dbee555b80cdff9a1e0356d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 45117a5fd69705241c7e35dde66270deddca380e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-calendar-items"></a>Takvim Öğeleriyle Çalışma
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> Sınıfı yöntemleri ve takvim öğeleri görevleri gerçekleştirmek için kullandığınız özellikler içerir.  
   
 |Görev|Yordam|  
 |----------|---------------|  
-|Randevu oluşturma ve alıcıları ekleyin.|[Nasıl yapılır: randevuları program aracılığıyla oluşturma](../vsto/how-to-programmatically-create-appointments.md)|  
-|Yinelenen bir randevu örneğini silin.|[Nasıl yapılır: randevuları program aracılığıyla silme](../vsto/how-to-programmatically-delete-appointments.md)|  
-|Bir Takvim klasörü oluşturun ve bir randevu öğesi ekleyin.|[Nasıl yapılır: program aracılığıyla özel bir takvim oluşturma](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
-|Toplantı isteği oluşturun ve gönderin.|[Nasıl yapılır: program aracılığıyla toplantı isteği oluşturma](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
+|Randevu oluşturma ve alıcıları ekleyin.|[Nasıl yapılır: Randevuları Program Aracılığıyla Oluşturma](../vsto/how-to-programmatically-create-appointments.md)|  
+|Yinelenen bir randevu örneğini silin.|[Nasıl yapılır: Randevuları Program Aracılığıyla Silme](../vsto/how-to-programmatically-delete-appointments.md)|  
+|Bir Takvim klasörü oluşturun ve bir randevu öğesi ekleyin.|[Nasıl yapılır: Program Aracılığıyla Özel bir Takvim Oluşturma](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
+|Toplantı isteği oluşturun ve gönderin.|[Nasıl yapılır: Program Aracılığıyla Toplantı İsteği Oluşturma](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
   
  Outlook görevleri ve Outlook nesne modeli hakkında daha fazla bilgi için bkz: [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md).  
   
@@ -45,6 +46,6 @@ ms.lasthandoff: 10/31/2017
  [Kişi öğeleriyle çalışma](../vsto/working-with-contact-items.md)   
  [Klasörlerle çalışma](../vsto/working-with-folders.md)   
  [Posta öğeleri ile çalışma](../vsto/working-with-mail-items.md)   
- [Outlook çözümleri](../vsto/outlook-solutions.md)  
+ [Outlook Çözümleri](../vsto/outlook-solutions.md)  
   
   

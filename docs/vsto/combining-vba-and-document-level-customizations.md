@@ -29,11 +29,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7dd65878844e5c903b18c08e6dd5455f3dccb91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e8c9a3e0abdf478d6280795cd17b9b9a0bea0a13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="combining-vba-and-document-level-customizations"></a>VBA ve Belge Düzeyi Özelleştirmelerini Birleştirme
   Visual Basic for Applications (VBA) kodunu Microsoft Office Word veya Microsoft Office Excel için belge düzeyi özelleştirme parçası olan bir belgedeki kullanabilirsiniz. VBA kodu özelleştirme derlemesinden belgede çağırabilir veya özelleştirme derlemesindeki kodu çağırmak için belgedeki VBA kodu etkinleştirmek için projenizi yapılandırabilirsiniz.  
@@ -260,6 +261,6 @@ GetManagedClass(pdispInteropObject Object) As Object
  [İzlenecek yol: Arama Kodu VBA'dan Visual C &#35; Proje](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)   
  [VBA ve karşılaştırıldığında Visual Studio'da Office çözümleri](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
- [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)  
+ [Belge Düzeyi Özelleştirmelerini Programlama](../vsto/programming-document-level-customizations.md)  
   
   

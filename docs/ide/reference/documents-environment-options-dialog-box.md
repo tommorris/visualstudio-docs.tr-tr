@@ -36,11 +36,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7d9f7cef6c0dfa35a4a718c0918fbc55409af04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c89e8b018fa0979fe4c73f5cd9e0db95efd88d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="documents-environment-options-dialog-box"></a>Belgeler, Ortam, Seçenekler İletişim Kutusu
 Bu sayfanın kullanmak **seçenekleri** tümleşik geliştirme ortamı (IDE) belgelerde görüntülenmesini denetlemek ve dış değişiklikleri belgeleri ve dosyaları yönetmek için iletişim kutusu. Tıklatarak bu iletişim kutusuna erişebilirsiniz **seçenekleri** üzerinde **Araçları** menüsüne ve ardından seçerek **belgeleri** içinde **ortam** düğümü. Varsa **belgeleri** listesinde select görünmez **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.  
@@ -88,4 +89,4 @@ Bu sayfanın kullanmak **seçenekleri** tümleşik geliştirme ortamı (IDE) bel
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)   
  [Çeşitli dosyalar](../../ide/reference/miscellaneous-files.md)   
- [Metin bulma ve değiştirme](../../ide/finding-and-replacing-text.md)
+ [Metin Bulma ve Değiştirme](../../ide/finding-and-replacing-text.md)

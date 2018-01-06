@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 22c307129e1c0295b041180f475c3d905cc43539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a1d5b2bbf218d35cf20638d865c6c78379c5f02b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Nasıl Yapılır: Önce Hangi Hedefin Derleneceğini Belirtme
 Bir veya daha fazla proje dosyası içerebilir `Target` proje nasıl yapılandırıldığını tanımlayan öğeleri. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Altyapısı derlemeler ilk proje dosyası içermedikçe bulur ve bağımlılıkları, bu proje bir `DefaultTargets` öznitelik, bir `InitialTargets` özniteliği ya da bir hedef belirtilen komut satırını kullanarak **/ Hedef** geçin.  
@@ -77,4 +78,4 @@ Bir veya daha fazla proje dosyası içerebilir `Target` proje nasıl yapılandı
 ## <a name="see-also"></a>Ayrıca Bkz.
   [MSBuild](../msbuild/msbuild.md)  
  [Hedefleri](../msbuild/msbuild-targets.md)   
- [Nasıl yapılır: derlemeyi temizleme](../msbuild/how-to-clean-a-build.md)
+ [Nasıl Yapılır: Derlemeyi Temizleme](../msbuild/how-to-clean-a-build.md)

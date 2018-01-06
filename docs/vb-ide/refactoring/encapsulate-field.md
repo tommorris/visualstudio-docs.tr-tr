@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.encapsulatefield
 dev_langs: VB
-ms.openlocfilehash: 9575ad83ead4960016ba7814642cacb1db04ea4d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0f6f47dfd6ef2bbbd8d3c1e8aac60a3fa1621dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="encapsulate-a-field-in-visual-basic"></a>Visual Basic'te bir alanı Yalıt
 **Ne:** bir alan bir özellikte açın ve yeni oluşturulan özelliği kullanmak için bu alanın tüm kullanımları güncelleştirmenize olanak sağlar.
@@ -55,4 +56,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Yeniden düzenleme (Visual Basic)](../refactoring-vb.md)  
-[Önizleme değişiklikleri](../../ide/preview-changes.md)
+[Değişiklikleri Önizleme](../../ide/preview-changes.md)

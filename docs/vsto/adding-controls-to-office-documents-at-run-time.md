@@ -27,11 +27,12 @@ caps.latest.revision: "102"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db8a4fad73bb710662ce63bd299751c725e0c6ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d29fd74ee92344ac8b2eedbe4a5b8838171d7d96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-controls-to-office-documents-at-run-time"></a>Office Belgelerine Çalışma Zamanında Denetim Ekleme
   Microsoft Office Word belgesine ve Microsoft Office Excel çalışma kitabına çalışma zamanında denetimler ekleyebilirsiniz. Ayrıca bunları çalışma zamanında kaldırabilirsiniz. Çalışma zamanında ekleyip denetimleri adlandırılır *Dinamik denetimleri*.  
@@ -83,15 +84,15 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="HostControls"></a>Konak denetimleri belgelere ekleme  
  Belgelere program aracılığıyla ana bilgisayar denetimleri eklediğinizde denetimi benzersiz olarak tanımlayan bir ad girmeniz gerekir ve belge üzerinde denetim ekleneceği konum belirtmeniz gerekir. Ayrıntılı yönergeler için aşağıdaki konulara bakın:  
   
--   [Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+-   [Nasıl yapılır: Çalışma Sayfalarına ListObject Denetimleri Ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
--   [Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+-   [Nasıl yapılır: Çalışma Sayfalarına NamedRange Denetimleri Ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
--   [Nasıl yapılır: çalışma sayfalarına Grafik denetimleri ekleme](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+-   [Nasıl Yapılır: Çalışma Sayfalarına Grafik Denetimleri Ekleme](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
--   [Nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)  
+-   [Nasıl Yapılır: Word Belgelerine İçerik Denetimleri Ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
--   [Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+-   [Nasıl Yapılır: Word Belgelerine Yer İşareti Denetimi Ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
  Konak denetimleri hakkında daha fazla bilgi için bkz: [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
   
@@ -151,4 +152,4 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)   
- [Nasıl yapılır: Windows Forms denetimleri Office belgelerine ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Nasıl Yapılır: Office Belgelerine Windows Forms Denetimleri Ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   

@@ -25,11 +25,12 @@ caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 38ead66ffcc92d37b62b3ccb2833cebcba8732b4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: cbb1f96a7432b90cae725d88c1fcbc8a990494d4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deploying-applications-services-and-components"></a>Uygulamaları, Hizmetleri ve Bileşenleri Dağıtma
 
@@ -44,13 +45,13 @@ Bir Windows uygulaması için kurulum deneyimi oluşturmak için seçenekleri ta
   
 | Dağıtım Senaryosu | Destekleyici İçerik |
 | --- | --- |  
-| **Buluta yayımlama:** , uygulamaları, hizmetleri ve veri bulunan Microsoft Azure'a dağıtmak için herhangi bir yere Visual Studio kullanarak yapabilirsiniz.|[Microsoft Azure için uygulama yayımlama](https://docs.microsoft.com/en-us/azure/#pivot=products) |
+| **Buluta yayımlama:** , uygulamaları, hizmetleri ve veri bulunan Microsoft Azure'a dağıtmak için herhangi bir yere Visual Studio kullanarak yapabilirsiniz.|[Microsoft Azure için uygulama yayımlama](/azure/#pivot=products) |
 | **Bir UWP uygulaması yayımlama:** kolayca oluşturma, gönderme ve Microsoft Store, uygulamalardan dünya genelindeki müşteriler için satış. |[Windows uygulamaları yayımlama](https://developer.microsoft.com/store/publish-apps) |
 | **Bir ASP.NET uygulaması veya hizmeti dağıtma:** ASP.NET uygulamaları ve Hizmetleri çeşitli farklı yollarla dağıtabilirsiniz.|[ASP.NET web uygulamaları ve Hizmetleri dağıtma](http://www.asp.net/aspnet/overview/deployment) |
 | **Bir eklenti için Office yayımlama:** Office Visual Studio'dan bir eklenti yayımlayabilirsiniz. | [Dağıtma ve yayımlama için Office Eklentisi](https://dev.office.com/docs/add-ins/publish/publish) |
-| **Bir WCF veya OData hizmetini dağıtma:** diğer uygulamaları bir web sunucusuna dağıtmak WCF RIA services kullanabilirsiniz. | [Geliştirme ve WCF Veri Hizmetleri dağıtma](https://docs.microsoft.com/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **Bir WCF veya OData hizmetini dağıtma:** diğer uygulamaları bir web sunucusuna dağıtmak WCF RIA services kullanabilirsiniz. | [Geliştirme ve WCF Veri Hizmetleri dağıtma](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **Bir masaüstü uygulamasını dağıtmak:** ClickOnce dağıtımı kullanarak web sunucusu veya ağ dosya paylaşımı için bir masaüstü uygulaması yayımlayabilirsiniz. Kullanıcılar, daha sonra uygulamayı tek bir tıklamayla yükleyebilir. | [ClickOnce Güvenliği ve Dağıtımı](../deployment/clickonce-security-and-deployment.md) |
-| **Visual C++ uygulamasını dağıtma:** merkezi dağıtım, yerel dağıtım veya statik bağlama kullanarak bir uygulama ile Visual C++ çalışma zamanı dağıtabilirsiniz. | [Yerleşik Masaüstü Uygulamalarını Dağıtma (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md) |
+| **Visual C++ uygulamasını dağıtma:** merkezi dağıtım, yerel dağıtım veya statik bağlama kullanarak bir uygulama ile Visual C++ çalışma zamanı dağıtabilirsiniz. | [Yerleşik Masaüstü Uygulamalarını Dağıtma (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp) |
 | **Bir yükleyici oluşturma:** bir MSI tabanlı WiX yükleyici kullanılarak oluşturulabilir [WiX Toolset Visual Studio 2017 uzantısı](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). InstallShield Limited Edition artık Visual Studio ile dahil olduğunu unutmayın; danışın [Flexera yazılım](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) Visual Studio 2017 kullanılabilirliği hakkında. |
 | **Test etmek için bir uygulamayı dağıtmak:** daha karmaşık geliştirme ve sınama sanal ortamlar uygulamalarınıza dağıtarak etkinleştirebilirsiniz.|[Bir laboratuvar ortamında test etme](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md) | 
 | **Yükleme önkoşulları:** önyükleyici bilinen bir genel yükleyici yapılandırarak Masaüstü uygulamaları için önkoşul bileşenlerini yükleyebilirsiniz.|[Uygulama Dağıtımının Önkoşulları](../deployment/application-deployment-prerequisites.md) |

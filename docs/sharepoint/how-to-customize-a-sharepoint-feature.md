@@ -22,11 +22,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d81a65a8030fd77ead1362602b0e16f474ef410c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0ed5ca134205568a185541b64e3f22cc4f76ed36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Nasıl yapılır: Bir SharePoint Özelliğini Özelleştirme
   Oluşturun ve Visual Studio'da özelliği Tasarımcı kullanarak SharePoint özelliklerini özelleştirin. Örneğin, özellik kapsamı ayarlayın ve diğer özellikleri bağımlılıkları olarak ekleyin. Çözüm Gezgini veya SharePoint paketi Gezgini içinde yeni bir özellik eklediğinizde, varsayılan olarak, özellik Tasarımcısı açılır.  
@@ -95,6 +96,6 @@ ms.lasthandoff: 10/31/2017
 2.  Şablon özgün metinle yenilenir ve XML değişiklikler kaybolur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [SharePoint Çözümlerini Paketleme ve Dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: c2c3083daec31620efa9f9665443d9d35b06804b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f2df04273936f84c8bf371ecb053a7bb22f82147
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="workflow-designer-shell-features"></a>İş Akışı Tasarımcısı Kabuk özellikleri
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]üç ana UI alandan oluşur: Tasarımcı yüzeyine, içerik haritası çubuğunun üstündeki ve altındaki Kabuk. Ekranın en üstünde konumlandırılmış içerik haritası çubuğunun üst geçerli kök etkinlik öğelerinin listesini görüntülemek için kullanılır. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Nasıl yapılır: içerik haritası gezintisinin](../workflow-designer/how-to-use-breadcrumb-navigation.md). Tasarımcı yüzeyine konumlandırılmış ekran Merkezi'nde iş akışları oluşturmak için kullanılır. Ekranın alt kısmında konumlandırılmış Kabuk geçerli görünümü yönetme için düğmeler sayısını içerir.  

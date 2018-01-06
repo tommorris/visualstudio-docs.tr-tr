@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b74b905108543422163142fac5984626969ba95d
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: cdbbebc65eb004c11b4c36b78bd8e0089db3234e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>3. adım: etkileşimli REPL penceresini kullanma
 
@@ -31,7 +32,7 @@ Visual Studio *etkileşimli pencere* Python normal düzenleme-derleme-hata ayık
     ![Python etkileşimli penceresini açın ve yeniden boyutlandırmak için sürükleme](media/vs-getting-started-python-11-interactive1b.png)
 
     > [!Tip]
-    > Visual Studio'da Pencereleri tümünün bordering ayırıcılar sürükleyerek boyutlandırabilirsiniz. Ayrıca, windows bağımsız olarak Visual Studio çerçeve dışarı sürükleyin ve çerçevesinde istiyor ancak bunları yeniden düzenleme. Tüm Ayrıntılar için bkz: <a href="https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio" target="_blank">pencere düzenlerini özelleştirme</a>.
+    > Visual Studio'da Pencereleri tümünün bordering ayırıcılar sürükleyerek boyutlandırabilirsiniz. Ayrıca, windows bağımsız olarak Visual Studio çerçeve dışarı sürükleyin ve çerçevesinde istiyor ancak bunları yeniden düzenleme. Tüm Ayrıntılar için bkz: [pencere düzenlerini özelleştirme](../ide/customizing-window-layouts-in-visual-studio.md).
 
 1. Aşağıdaki gibi birkaç ifadeler girin `print("Hello, Visual Studio")` ifadeler gibi ve `123/456` hemen sonuçları görmek için:
 

@@ -16,11 +16,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 15b222eaa3e03a44f99f64e86f9c88d125e41f98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9309a143760aab5b59355b4cea6cd214aaa49812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-code-using-go-to-commands"></a>Git komutları kullanarak kod Bul  
 Visual Studio'nun **gitmek için** komutları belirtilen öğeleri hızlı bir şekilde bulmanıza yardımcı olmak için kodunuzu odaklanmış bir arama gerçekleştirin. Belirli bir satırı, türü, simge, dosya ve üye için bir basit, birleştirilmiş arabiriminden gidebilirsiniz. Bu özellik, Visual Studio 2017 ve sonraki sürümlerinde bulunmaktadır.  
@@ -84,4 +85,4 @@ Center penceresi   | Kod düzenleyicisinde, sağ üst yerine üst-orta bu pencer
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Kodda gezinme](../ide/navigating-code.md)  
-[Tanım ve Özet tanımı gidin](../ide/go-to-and-peek-definition.md)  
+[Tanıma ve Özet Tanıma Gitme](../ide/go-to-and-peek-definition.md)  

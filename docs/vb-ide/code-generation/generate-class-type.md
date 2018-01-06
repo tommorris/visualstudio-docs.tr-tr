@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vsl.GenerateFromUsage
 dev_langs: VB
-ms.openlocfilehash: 1524d2899d8c775a20943d2695065bfe36885a25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0a900b912c1a15c61dc17164571c1284743581c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-class-or-type-in-visual-basic"></a>Visual Basic'te bir sınıf veya türü oluşturma
 **Ne:** hemen bir sınıf veya türü için kod oluşturmanıza olanak sağlar. 
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
    Access | Sahip türünü ayarlayın *varsayılan*, *dahili* veya *ortak* erişim.
    türü | Bu olarak ayarlanabilir *sınıfı* veya *yapısı*.
    Ad | Bu değiştirilemez ve zaten yazdığınız ad olacaktır.
-   Project | Çözümünüz içinde birden çok proje varsa, dinamik sınıf/yapı istediğiniz seçebilirsiniz.
+   Proje | Çözümünüz içinde birden çok proje varsa, dinamik sınıf/yapı istediğiniz seçebilirsiniz.
    Dosya Adı | Yeni bir dosya oluşturabilir veya varolan bir dosyaya türü ekleyebilirsiniz.
 
 1. Sınıf/yapı, kendi kullanımdan çıkarımı yapılan Oluşturucusu ile otomatik olarak oluşturulur.
@@ -71,4 +72,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Kod oluşturma (Visual Basic)](../code-generation-vb.md)  
-[Önizleme değişiklikleri](../../ide/preview-changes.md)
+[Değişiklikleri Önizleme](../../ide/preview-changes.md)

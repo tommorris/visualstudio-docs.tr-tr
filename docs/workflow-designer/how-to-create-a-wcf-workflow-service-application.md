@@ -11,11 +11,12 @@ caps.latest.revision: "14"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 62eeab72ab88094f7986bb29bd6f3a55ad6aeff6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8730b8f1611694ec7927b52fa4118cf3ca3801b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Nasıl yapılır: bir WCF iş akışı hizmeti uygulaması oluştur
 [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)]İş akışı hizmeti iletileri işlem sınırlarındaki istemciler ve kendilerini arasında iletmek dağıtılmış iletişim hizmetleri uygulamalardır. Hizmet tarafı hizmet sözleşmesini uygulama bildirimli olarak iş akışı etkinlikleri yoluyla yapılır [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] eski iş akışı hizmetleri .NET Framework 3.5 için benzer bir şekilde.  
@@ -45,4 +46,4 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: bir etkinlik oluşturmak](/dotnet/framework/windows-workflow-foundation/how-to-create-an-activity)   
- [Bir iş akışı projesi oluşturma](../workflow-designer/creating-a-workflow-project.md)
+ [İş Akışı Projesi Oluşturma](../workflow-designer/creating-a-workflow-project.md)

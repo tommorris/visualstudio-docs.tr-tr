@@ -18,11 +18,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8a9e0e088df3654778177012a31a56d6fcb7451
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f78f4272eb42440c2ddf9ade423ceef9364f75e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>Nasıl yapılır: Çalışma Sayfalarını Program Aracılığıyla Kopyalama
   Bir çalışma sayfasına bir kopyasını oluşturun ve çalışma önce veya sonra varolan bir çalışma kitabındaki ekleyin. Excel çalışma sayfası eklemek istediğiniz yeri belirtmezseniz, yeni çalışma içeren yeni bir çalışma kitabı oluşturur.  
@@ -55,6 +56,6 @@ ms.lasthandoff: 10/31/2017
  [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirme](../vsto/automating-excel-by-using-extended-objects.md)   
  [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

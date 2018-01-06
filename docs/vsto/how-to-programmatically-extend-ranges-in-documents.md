@@ -18,11 +18,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a9ad40c7a4a9e10e6198e2c021ba646f84e50ff9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6981d61cdbc5115ddd55418fc256842c36915140
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>Nasıl yapılır: Belgelerde Aralıkları Program Aracılığıyla Genişletme
   Tanımladıktan sonra bir <xref:Microsoft.Office.Interop.Word.Range> değiştirdiğinizde, başlangıç ve bitiş noktalarını kullanarak bir Microsoft Office Word belgesinde nesne <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> ve <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> yöntemleri. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> Ve <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> yöntemlerini ele aynı iki bağımsız değişken *birim* ve *sayısı*. *Sayısı* değişkendir taşımak için kullanılacak birim sayısını ve *birim* bağımsız değişkeni şunlardan biri olabilir <xref:Microsoft.Office.Interop.Word.WdUnits> değerler:  
@@ -98,5 +99,5 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: program aracılığıyla daraltma aralıkları veya seçimleri](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
  [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
  [Nasıl yapılır: program aracılığıyla başlangıç ve bitiş karakterlerini aralıkları alma](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Nasıl yapılır: aralık oluştururken program aracılığıyla paragraf işaretlerini dışlama](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
+ [Nasıl yapılır: Aralık Oluştururken Program Aracılığıyla Paragraf İşaretlerini Hariç Tutma](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
   

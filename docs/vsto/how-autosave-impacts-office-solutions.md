@@ -15,11 +15,12 @@ ms.assetid: b60bb228-0e72-4f24-88bb-397dfc5d50a7
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 4b4f2b4433395cc03e24273a3eccc04bb31ad30e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2f2be3b4311792f58cb655f8e878557e276a04e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Office çözümleri otomatik kaydetme nasıl etkiler
 
@@ -28,4 +29,4 @@ Otomatik kaydetme Excel, PowerPoint için bir özelliktir ve açık olduğunda, 
 Not: Windows Masaüstü Word, Excel ve PowerPoint için otomatik kaydetme 2017 içinde sunulmuştur ve Office365 aboneleri için şu anda kullanılamıyor. Office 2016 ya da önceki kalıcı bir lisans satın kullanıcılar şu anda coauthoring özelliğine erişimi. (Excel Online'da Excel Android, iOS için Excel ve Excel Mobile Windows Mağazası'nda da desteği otomatik kaydetme). 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Office çözümleri geliştirme](./developing-office-solutions.md)
+[Office Çözümleri Geliştirme](./developing-office-solutions.md)

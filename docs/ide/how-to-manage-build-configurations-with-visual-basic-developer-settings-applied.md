@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e61fb6667c16fd75cef78fbcaa835b97603dbe5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 094f87ca4a56f71cbecfa9b6b1dc9189244c0c57
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Nasıl Yapılır: Visual Basic Geliştirici Ayarları Uygulanmış Olarak Derleme Yapılandırmalarını Yönetme
 Varsayılan olarak, tüm Gelişmiş yapı yapılandırma seçenekleri ile gizli [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Geliştirici ayarları uygulanmış. Bu konuda, bu ayarları el ile etkinleştirmek açıklanmaktadır.  
@@ -49,4 +50,4 @@ Varsayılan olarak, tüm Gelişmiş yapı yapılandırma seçenekleri ile gizli 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md)   
- [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)
+ [Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)

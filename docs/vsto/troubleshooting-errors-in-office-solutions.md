@@ -24,11 +24,12 @@ caps.latest.revision: "69"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7dd06ed6fde181760a1c4893b523bd7ef9c8dcc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e74b2daab5d9a8f5840b9109edd871e311bc4cb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Office Çözümleri Hatalarında Sorun Giderme
   Visual Studio'da Office çözümleri geliştirirken, aşağıdaki görevleri gerçekleştirdiğinizde sorunlarla karşılaşabilirsiniz:  
@@ -219,6 +220,6 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümlerinde sorun giderme](../vsto/troubleshooting-office-solutions.md)   
  [Office çözüm güvenliğinde sorunu giderme](../vsto/troubleshooting-office-solution-security.md)   
- [Office çözümü dağıtımında sorunu giderme](../vsto/troubleshooting-office-solution-deployment.md)  
+ [Office Çözümü Dağıtımında Sorunu Giderme](../vsto/troubleshooting-office-solution-deployment.md)  
   
   

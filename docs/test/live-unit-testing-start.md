@@ -10,11 +10,12 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 83458b769b5551ed07774e244cce65a97477a713
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 92c829e2a0ee0e3fb793d0fd6230460f9102973a
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio'da birim testi Canlı kullanmaya başlama
 
@@ -55,7 +56,7 @@ Yalnızca bir veya daha fazla projeleri için bir kapsayıcı çözümüdür. Ç
 1. İçinde **Yeni Proje Ekle** iletişim kutusunda, seçin C# düğümünü, ardından **.NET standart**. 
 
    > [!NOTE]
-   > Bizim kitaplığı .NET standart yerine belirli bir .NET uygulama hedeflediğinden, bu sürümünü .NET standardını destekleyen herhangi bir .NET uygulamasından çağrılabilir. Daha fazla bilgi için bkz: [.NET standart](https://docs.microsoft.com/dotnet/standard/net-standard).
+   > Bizim kitaplığı .NET standart yerine belirli bir .NET uygulama hedeflediğinden, bu sürümünü .NET standardını destekleyen herhangi bir .NET uygulamasından çağrılabilir. Daha fazla bilgi için bkz: [.NET standart](/dotnet/standard/net-standard).
 
 1. Seçin **sınıf kitaplığı (.NET standart)** sağ bölmede, şablon ve girin `StringLibrary` içinde **adı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi:
 
@@ -83,7 +84,7 @@ Yalnızca bir veya daha fazla projeleri için bir kapsayıcı çözümüdür. Ç
 1. İçinde **Yeni Proje Ekle** iletişim kutusunda, Visual Basic düğümünü seçin ve ardından **.NET standart**. 
 
    > [!NOTE]
-   > Bizim kitaplığı .NET standart yerine belirli bir .NET uygulama hedeflediğinden, bu sürümünü .NET standardını destekleyen herhangi bir .NET uygulamasından çağrılabilir. Daha fazla bilgi için bkz: [.NET standart](https://docs.microsoft.com/dotnet/standard/net-standard).
+   > Bizim kitaplığı .NET standart yerine belirli bir .NET uygulama hedeflediğinden, bu sürümünü .NET standardını destekleyen herhangi bir .NET uygulamasından çağrılabilir. Daha fazla bilgi için bkz: [.NET standart](/dotnet/standard/net-standard).
 
 1. Seçin **sınıf kitaplığı (.NET standart)** sağ bölmede, şablon ve girin `StringLibrary` içinde **adı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi:
 
@@ -103,7 +104,7 @@ Yalnızca bir veya daha fazla projeleri için bir kapsayıcı çözümüdür. Ç
      
       - `HasEmbeddedSpaces`döndürür `true` bir katıştırılmış boşluk karakteri; bir dize içeriyorsa, aksi takdirde, döndürür `false`.
     
-1. StringLibrary projeye sağ tıklayın **Çözüm Gezgini** seçip **özellikleri**. İçinde **uygulama** sekmesinde, metinde silme **kök ad alanı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi. Kök ad tarafından tanımlanan [Namespace deyimi](https://docs.microsoft.com/dotnet/visual-basic/language-reference/statements/namespace-statement) kaynak kodundaki.
+1. StringLibrary projeye sağ tıklayın **Çözüm Gezgini** seçip **özellikleri**. İçinde **uygulama** sekmesinde, metinde silme **kök ad alanı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi. Kök ad tarafından tanımlanan [Namespace deyimi](/dotnet/visual-basic/language-reference/statements/namespace-statement) kaynak kodundaki.
 
    ![Visual Basic projesinde için Proje Özellikleri iletişim kutusu](./media/lut-start/vb-properties.png)
  
@@ -249,7 +250,7 @@ Kod Kapsamı genişletmek için `StartsWithLower` yöntemi, aşağıdakileri yap
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
 
-1. Değiştirme `DirectCallWithNullOrEmpty` yöntemini çağırdıktan hemen sonra aşağıdaki kodu ekleyerek [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse` ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) yöntemi.
+1. Değiştirme `DirectCallWithNullOrEmpty` yöntemini çağırdıktan hemen sonra aşağıdaki kodu ekleyerek [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) yöntemi.
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#2)]
 
@@ -266,7 +267,7 @@ Kod Kapsamı genişletmek için `StartsWithLower` yöntemi, aşağıdakileri yap
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
 
-1. Değiştirme `DirectCallWithNullOrEmpty` yöntemini çağırdıktan hemen sonra aşağıdaki kodu ekleyerek [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse` ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) yöntemi.
+1. Değiştirme `DirectCallWithNullOrEmpty` yöntemini çağırdıktan hemen sonra aşağıdaki kodu ekleyerek [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) yöntemi.
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#2)]
 
@@ -307,7 +308,7 @@ Bu bölümde, nasıl dinamik birim testi tanımlamak, sorun giderme ve test hata
     
 1. Seçin **hata ayıklama seçili** başarısız test hata ayıklamak için. 
  
-1. Visual Studio test hata ayıklama modunda yürütür. Bizim test her bir dizi dizesinde adlı bir değişkene atar `phrase` ve buna ileten `HasEmbeddedSpaces` yöntemi. Program yürütme duraklatır ve assert ifade edilen hata ayıklayıcı ilk zaman çağırır `false`. Beklenmeyen değerden sonuçları özel durum iletişim [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue` ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) yöntem çağrısı aşağıdaki çizimde gösterilmiştir.  
+1. Visual Studio test hata ayıklama modunda yürütür. Bizim test her bir dizi dizesinde adlı bir değişkene atar `phrase` ve buna ileten `HasEmbeddedSpaces` yöntemi. Program yürütme duraklatır ve assert ifade edilen hata ayıklayıcı ilk zaman çağırır `false`. Beklenmeyen değerden sonuçları özel durum iletişim [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) yöntem çağrısı aşağıdaki çizimde gösterilmiştir.  
 
    ![Dinamik birim testi özel durumu iletişim kutusu.](media/lut-start/exception-dialog-cs.png) 
  
@@ -340,7 +341,7 @@ Bu bölümde, nasıl dinamik birim testi tanımlamak, sorun giderme ve test hata
     
 1. Seçin **hata ayıklama seçili** başarısız test hata ayıklamak için. 
  
-1. Visual Studio test hata ayıklama modunda yürütür. Bizim test her bir dizi dizesinde adlı bir değişkene atar `phrase` ve buna ileten `HasEmbeddedSpaces` yöntemi. Program yürütme duraklatır ve assert ifade edilen hata ayıklayıcı ilk zaman çağırır `false`. Beklenmeyen değerden sonuçları özel durum iletişim [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue` ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) yöntem çağrısı aşağıdaki çizimde gösterilmiştir.  
+1. Visual Studio test hata ayıklama modunda yürütür. Bizim test her bir dizi dizesinde adlı bir değişkene atar `phrase` ve buna ileten `HasEmbeddedSpaces` yöntemi. Program yürütme duraklatır ve assert ifade edilen hata ayıklayıcı ilk zaman çağırır `false`. Beklenmeyen değerden sonuçları özel durum iletişim [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) yöntem çağrısı aşağıdaki çizimde gösterilmiştir.  
 
    ![Dinamik birim testi özel durumu iletişim kutusu.](media/lut-start/exception-dialog-vb.png) 
  

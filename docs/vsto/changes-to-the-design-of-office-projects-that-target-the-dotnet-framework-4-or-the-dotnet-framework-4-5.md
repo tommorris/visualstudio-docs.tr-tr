@@ -18,11 +18,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dbf93e29e9bde2029bfff262a953d5858f17d084
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ea7605ae01dc839dcac8e2cde3f658a94d6bb474
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5'i Hedefleyen Office Projelerinin Tasarımı Üzerinde Yapılan Değişiklikler
   İtibariyle [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio hedefleyen Office projelerinin tasarımı için bazı değişiklikler sunulan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya sonraki bir sürümü. Visual Studio'nun önceki sürümleri Office projelerinde biliyorsanız, bu .NET Framework 4.0 veya sonraki sürümlerini hedefleyen Office projelerinde geliştirmek önce bu değişikliklerden haberdar olmanız gerekir. Varsayılan olarak, Visual Studio 2013 veya üzeri kullanarak oluşturduğunuz tüm projeleri .NET Framework 4.0 veya üzeri hedefleyin.  
@@ -63,6 +64,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümlerini geçirme .NET Framework 4 veya üstü](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Office geliştirme yenilikler nelerdir?](http://msdn.microsoft.com/en-us/bf054af2-c896-4723-aa15-6381145b14bb)   
- [Office çalışma zamanı genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
+ [Office Çalışma Zamanı İçin Visual Studio Araçlarına Genel Bakış](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
   
   

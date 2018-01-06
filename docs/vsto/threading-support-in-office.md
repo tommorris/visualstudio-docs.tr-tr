@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbfccabe310732943a818515c69abc61bec59e52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c06e88c90116040fa3e9448368d32953095f889e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threading-support-in-office"></a>Office'te İş Parçacığı Desteği
   Bu konu, iş parçacığı oluşturma Microsoft Office nesne modelinde nasıl desteklenir hakkında bilgi sağlar. Office nesne modeli iş parçacığı güvenli değildir, ancak Office çözümü birden çok iş parçacığı çalışmak mümkündür. Office uygulamaları Bileşen Nesne Modeli (COM) sunucularıdır. COM çağırmasına rasgele iş parçacıklarında COM sunucuları izin verir. İş parçacığı güvenli olmayan COM sunucuları için COM yalnızca bir mantıksal iş parçacığı sunucu üzerinde herhangi bir zamanda yürütür. böylece eş zamanlı çağrıları seri hale getirmek için bir mekanizma sağlar. Bu mekanizma tek iş parçacıklı (STA) model olarak bilinir. Çağrıları seri hale getirilmiş olduğundan sunucu meşgul veya diğer çağrılar arka plan iş parçacığında işleme sırasında arayanlar süreyle engellenmiş olabilir.  
@@ -79,6 +80,6 @@ ms.lasthandoff: 10/31/2017
  [Yönetilen iş parçacığı oluşturma](/dotnet/standard/threading/)  
  [(C#) iş parçacığı oluşturma](/dotnet/csharp/programming-guide/concepts/threading/index) [iş parçacığı oluşturma (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
  [İş parçacığı kullanma ve iş parçacığı oluşturma](/dotnet/standard/threading/using-threads-and-threading)   
- [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)  
+ [Office Çözümleri Tasarlama ve Oluşturma](../vsto/designing-and-creating-office-solutions.md)  
   
   

@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8139a54c57e37240d9be730014759951bd2bfc06
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e341db6e1c83e268d7074c2b8afed307f6c0840f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="message-markers"></a>İleti İşaretçileri
 Bir ileti işaret günlük çıktıyı temsil eder. Bir ileti belirli bir süre boyunca belirli bir iş parçacığı tarafından verilen bir dizedir. İletilerin diğer araçları ile kullanmak için bir metin dosyasına dışarı aktarabilirsiniz. İleti dizesi görüntülemek için bir ileti üzerinde eşzamanlılık görselleştiricisi işaretçisini. İleti işaretçileri görüntüleyebilirsiniz [işaretçiler raporu](../profiling/markers-report.md).  Aşağıdaki çizimde bir ileti işaret gösterir.  
@@ -27,4 +28,4 @@ Bir ileti işaret günlük çıktıyı temsil eder. Bir ileti belirli bir süre 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık görselleştiricisi işaretleyicileri](../profiling/concurrency-visualizer-markers.md)   
- [Eşzamanlılık görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md)
+ [Eşzamanlılık Görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md)

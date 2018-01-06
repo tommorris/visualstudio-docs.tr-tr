@@ -20,11 +20,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a52060f1a1b2200109c5003321857915d95bd12a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 671618479b1be55fcf08d93b2a398c27348b9878
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Nasıl Yapılır: Visual C# Projesinde Kodu VBA Kullanımına Sunma
   İki tür kod birbirleri ile etkileşim kurmak istiyorsanız, bir Visual C# projesinde Visual Basic for Applications (VBA) kodunu kodda getirebilir.  
@@ -109,6 +110,6 @@ ms.lasthandoff: 10/31/2017
  [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)   
  [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md)   
  [İzlenecek yol: Arama Kodu VBA'dan Visual C &#35; Proje](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
- [Nasıl yapılır: Visual Basic projesinde VBA kodu kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
+ [Nasıl Yapılır: Visual Basic Projesinde Kodu VBA Kullanımına Sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   

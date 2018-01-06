@@ -41,11 +41,12 @@ caps.latest.revision: "100"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ae5a2cf43fc457fccb3b4a8e5c53a5596fdae1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0a85f69ce67afdb4e1138c75b7c939be3980453f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="host-items-and-host-controls-overview"></a>Konak Öğelerine ve Denetimlerine Genel Bakış
   Konak denetimlerinin ve konak öğelerinin programlama modeli için Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan Office çözümleri sağlamak türleridir. Konak denetimlerinin ve konak öğelerinin COM üzerinde daha fazla Windows Forms denetimleri gibi yönetilen nesnelerle etkileşim gibi dayalı Microsoft Office Word ve Microsoft Office Excel nesne modelleri ile etkileşimi olun.  
@@ -90,23 +91,23 @@ ms.lasthandoff: 10/31/2017
   
  Aşağıdaki ana bilgisayar denetimleri Excel projeleri için kullanılabilir:  
   
--   [Grafik denetimi](../vsto/chart-control.md)  
+-   [Grafik Denetimi](../vsto/chart-control.md)  
   
--   [ListObject denetimi](../vsto/listobject-control.md)  
+-   [ListObject Denetimi](../vsto/listobject-control.md)  
   
--   [NamedRange denetimi](../vsto/namedrange-control.md)  
+-   [NamedRange Denetimi](../vsto/namedrange-control.md)  
   
--   [XmlMappedRange denetimi](../vsto/xmlmappedrange-control.md)  
+-   [XmlMappedRange Denetimi](../vsto/xmlmappedrange-control.md)  
   
  Aşağıdaki ana bilgisayar denetimleri Word projeleri için kullanılabilir:  
   
--   [Yer işareti denetimi](../vsto/bookmark-control.md)  
+-   [Yer İşareti Denetimi](../vsto/bookmark-control.md)  
   
--   [İçerik denetimleri](../vsto/content-controls.md)  
+-   [İçerik Denetimleri](../vsto/content-controls.md)  
   
--   [XMLNode denetimi](../vsto/xmlnode-control.md)  
+-   [XMLNode Denetimi](../vsto/xmlnode-control.md)  
   
--   [XMLNodes denetimi](../vsto/xmlnodes-control.md)  
+-   [XMLNodes Denetimi](../vsto/xmlnodes-control.md)  
   
  Office belgelerine eklenmiş konak denetimleri yerel Office nesneleri gibi davranırlar; Ancak, ana bilgisayar denetimleri olaylar ve veri bağlama özellikleri dahil olmak üzere ek işlevselliğe sahiptir. Örneğin, istediğinizde bir yerel olaylarını yakalamak <xref:Microsoft.Office.Interop.Excel.Range> , gereken ilk işlemek çalışma sayfasının değişiklik olayı Excel'de nesne. İçinde değişikliğinin olup olmadığını belirlemeniz gerekir sonra <xref:Microsoft.Office.Interop.Excel.Range>. Buna karşılık, <xref:Microsoft.Office.Tools.Excel.NamedRange> konak kontrolü sahip bir <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> doğrudan işleyebileceğiniz olay.  
   
@@ -132,21 +133,21 @@ ms.lasthandoff: 10/31/2017
   
  Konak denetimleri belgelere ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Nasıl yapılır: çalışma sayfalarına Grafik denetimleri ekleme](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+-   [Nasıl Yapılır: Çalışma Sayfalarına Grafik Denetimleri Ekleme](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
--   [Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+-   [Nasıl yapılır: Çalışma Sayfalarına ListObject Denetimleri Ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
--   [Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+-   [Nasıl yapılır: Çalışma Sayfalarına NamedRange Denetimleri Ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
--   [Nasıl yapılır: çalışma sayfalarına XMLMappedRange denetimleri ekleme](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+-   [Nasıl yapılır: Çalışma Sayfalarına XMLMappedRange Denetimleri Ekleme](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
--   [Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+-   [Nasıl Yapılır: Word Belgelerine Yer İşareti Denetimi Ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
--   [Nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)  
+-   [Nasıl Yapılır: Word Belgelerine İçerik Denetimleri Ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
--   [Nasıl yapılır: Word belgelerine XMLNode denetimleri ekleme](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+-   [Nasıl Yapılır: Word Belgelerine XMLNode Denetimleri Ekleme](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
--   [Nasıl yapılır: Word belgelerine XMLNodes denetimleri ekleme](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+-   [Nasıl Yapılır: Word Belgelerine XMLNodes Denetimleri Ekleme](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="naming-host-controls"></a>Adlandırma ana bilgisayar denetimleri  
  Bir ana bilgisayar denetiminden sürüklediğinizde **araç** belgenize denetimi otomatik olarak artımlı bir sayı sonunda denetim türü kullanarak olarak adlandırılır. Örneğin, yer işaretleri adlı **bookmark1**, **bookmark2**ve benzeri. Denetim eklemek için Word veya Excel yerel işlevselliğini kullanırsanız, oluşturduğunuz zaman belirli bir adı verebilirsiniz. Ayrıca, değerini değiştirerek denetimlerinizi adlandırabilirsiniz **adı** özelliğinde **özellikleri** penceresi.  
@@ -179,6 +180,6 @@ ms.lasthandoff: 10/31/2017
  [Genişletilmiş nesneleri kullanarak Word'ü Otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md)   
  [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirme](../vsto/automating-excel-by-using-extended-objects.md)   
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   
- [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Office Çözümlerinde Verileri Denetimlere Bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

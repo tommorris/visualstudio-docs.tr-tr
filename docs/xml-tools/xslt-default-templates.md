@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e72f0f4b12921c07a66b590655bb8583eb3f9786
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4fe1bf4dda6bed505f0892a18825e93f66e13e16
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xslt-default-templates"></a>XSLT varsayılan şablonları
 Varsayılan bir şablon XSLT stil sayfanızda eşleşen hiçbir açık şablon kuralı olduğunda işleme sırasında kullanılır. Yerleşik şablon kuralı olarak da adlandırılan varsayılan şablonu W3C XSLT 1.0 öneri 5.8 bölümünde tanımlanır. Bu eşleştiğinde hiçbir açık şablon kuralı olsa bile varsayılan şablon bir düğüm işlemek XSLT işlemci sağlar. Ancak, yerleşik şablon kuralı stil sayfanızda açıkça tanımlanmadığından, bu beklenmeyen veya karmaşıktı XSLT dönüşümü sonuçlara neden olabilir.  
@@ -24,4 +25,4 @@ Varsayılan bir şablon XSLT stil sayfanızda eşleşen hiçbir açık şablon k
  XSLT hata ayıklayıcı şimdi XSLT varsayılan şablonları kodunu görüntüler. Varsayılan bir şablon kullanıldığında bir XSLT dönüşümü adım, hata ayıklayıcı varsayılan şablonu bir pencerede görüntüler. Bu varsayılan şablonu koduyla adım ve kesme noktaları kendi yönergeler ayarlamanıza olanak sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XSLT hata ayıklama](../xml-tools/debugging-xslt.md)
+ [XSLT Hatalarını Ayıklama](../xml-tools/debugging-xslt.md)

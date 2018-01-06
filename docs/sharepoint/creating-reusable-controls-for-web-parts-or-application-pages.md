@@ -20,11 +20,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c094bea2376a1e76bec2f45dfb05bf689e6acc7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 02847ae640f969d3c330b5eb573f36c74ef07a2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-reusable-controls-for-web-parts-or-application-pages"></a>Web Bölümleri veya Uygulama Sayfaları için Yeniden Kullanılabilir Denetimler Oluşturma
   Visual Studio'da Uygulama sayfaları ve SharePoint çalıştıran Web bölümleri tarafından kullanılabilecek özel, yeniden kullanılabilir denetimler oluşturabilirsiniz. Bu denetimler, kullanıcı denetimleri denir. Bir kullanıcı denetimi, bir ASP.NET Web sayfası benzer çalışır bileşik denetim türüdür — varolan Web sunucusu denetimleri ve biçimlendirme kullanıcı denetimine ekleyin ve denetim için özellikleri ve yöntemleri tanımlar. Sonra bunları burada bunlar bir birim olarak hareket ASP.NET Web sayfalarında eklenebilir.  
@@ -66,6 +67,6 @@ ms.lasthandoff: 10/31/2017
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: bir kullanıcı denetimi oluşturmak için SharePoint uygulama sayfası veya Web Bölümü](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Uygulama sayfaları ve SharePoint çalıştıran Web bölümleri tarafından kullanılabilecek özel, yeniden kullanılabilir denetimler oluşturma gösterir.|  
+|[Nasıl yapılır: SharePoint Uygulama Sayfası veya Web Bölümü için Kullanıcı Denetimi Oluşturma](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Uygulama sayfaları ve SharePoint çalıştıran Web bölümleri tarafından kullanılabilecek özel, yeniden kullanılabilir denetimler oluşturma gösterir.|  
   
   

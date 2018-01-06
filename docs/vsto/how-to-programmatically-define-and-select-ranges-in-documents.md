@@ -21,11 +21,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fcc1b96607c36fdfbc2f9940a7b7984b3b299fa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 22a894902a36aa12ff0962270391a2311ce40169
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Nasıl yapılır: Belgelerde Aralıkları Program Aracılığıyla Tanımlama ve Seçme
   Kullanarak bir Microsoft Office Word belgesinde aralığı tanımlayabilirsiniz bir <xref:Microsoft.Office.Interop.Word.Range> nesnesi. Kullanarak, örneğin, bir çeşitli yollarla, tüm belgedeki seçebilirsiniz <xref:Microsoft.Office.Interop.Word.Range.Select%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Range> içerik özelliğini kullanarak veya nesne <xref:Microsoft.Office.Tools.Word.Document> sınıfı (belge düzeyi özelleştirmelerinde) veya <xref:Microsoft.Office.Interop.Word.Document> sınıfı (içinde bir VSTO eklentisinin).  
@@ -136,6 +137,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
  [Nasıl yapılır: program aracılığıyla sıfırlama Word belgelerinde aralıkları](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
  [Nasıl yapılır: program aracılığıyla daraltma aralıkları veya seçimleri](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [Nasıl yapılır: aralık oluştururken program aracılığıyla paragraf işaretlerini dışlama](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
+ [Nasıl yapılır: Aralık Oluştururken Program Aracılığıyla Paragraf İşaretlerini Hariç Tutma](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
   
   

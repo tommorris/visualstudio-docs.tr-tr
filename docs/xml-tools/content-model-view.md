@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2991b31c387e959b055d30d37dd01cf79652adf7
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 582082504b713988039af609d59150715f75ecfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="content-model-view"></a>İçerik modeli görünümü
 İçerik modeli görünümü yerel ve genel şema düğümleri ve basit ve karmaşık türleri, öğeleri, model grupları, öznitelikleri ve öznitelik grupları dahil olmak üzere bileşenleri, grafik bir gösterimini sağlar. XML açıklamaları ve işleme talimatları içerik modeli görünümünde görüntülenemiyor. İçerik modeli görünümü iki bölme içerir: bir **çalışma** düğümlerin listesini içeren paneli [XML şema Tasarımcısı çalışma](../xml-tools/xml-schema-designer-workspace.md)ve burada görebilirsiniz şema içerik modeli tasarım yüzeyi Seçili düğümleri **çalışma** paneli. İçerik modeli görünümü, XML şema Tasarımcısı araç ve içerik haritası çubuğunu de içerir.  
@@ -51,7 +52,7 @@ ms.lasthandoff: 11/02/2017
 |**Belge Göster**|Gösterir veya gizler ek açıklama/belge düğümü içeriği.|  
 |**Diyagram görüntü olarak dışarı aktar...**|Tasarım yüzeyine bir XPS dosyasına kaydeder.|  
 |**Görünümü Kodu**|Seçili düğümün XML Düzenleyicisi'nde içeren dosyayı açar. XML şema Explorer'da seçili öğe ayrıca XML Düzenleyicisi'nde seçili olur.|  
-|**Özellik penceresi**|Açılır **özellikleri** (Bu zaten açık değilse) penceresi. Bu pencere düğüm hakkındaki bilgileri görüntüler.|  
+|**Özellik Penceresi**|Açılır **özellikleri** (Bu zaten açık değilse) penceresi. Bu pencere düğüm hakkındaki bilgileri görüntüler.|  
   
  Aşağıdaki tabloda çalışma paneli kullanılabilir seçenekler açıklanmaktadır.  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 11/02/2017
 |**Örnek XML oluştur**|Yalnızca genel öğeler için kullanılabilir. Bir genel öğesi için örnek bir XML dosyası oluşturur.|  
 |**Tümünü Seç**|Tüm düğümleri çalışma panelinde seçer.|  
 |**Görünümü Kodu**|Seçili düğümün XML Düzenleyicisi'nde içeren dosyayı açar. XML şema Explorer'da seçili öğe ayrıca XML Düzenleyicisi'nde seçili olur.|  
-|**Özellik penceresi**|Açılır **özellikleri** (Bu zaten açık değilse) penceresi. Bu pencere düğüm hakkındaki bilgileri görüntüler.|  
+|**Özellik Penceresi**|Açılır **özellikleri** (Bu zaten açık değilse) penceresi. Bu pencere düğüm hakkındaki bilgileri görüntüler.|  
   
 ## <a name="properties-window"></a>Özellikler Penceresi  
  Başlangıçta açmak için bağlam menüsünü kullanın **özellikleri** penceresi. Varsayılan olarak, **özellikleri** penceresi Visual Studio'nun sağ alt köşesinde görüntülenir. İçerik modeli görünümünde işlenen bir düğümüne tıkladığınızda, bu düğüm özelliklerini görüntülenmesi **özellikleri** penceresi.  
@@ -116,4 +117,4 @@ Bu da, üzerine getirin seçtiğinizde veya CTRL yakınlaştırma için fare tek
  XML Düzenleyicisi'nde ayarlamak şema değişiklik yaparsanız, değişiklikleri içerik modeli görünümünde eşitlenir. Daha fazla bilgi için bkz: [tümleştirme XML Düzenleyicisi ile](../xml-tools/integration-with-xml-editor.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XML şema Tasarımcısı çalışma alanı](../xml-tools/xml-schema-designer-workspace.md)
+ [XML Şema Tasarımcısı Çalışma Alanı](../xml-tools/xml-schema-designer-workspace.md)

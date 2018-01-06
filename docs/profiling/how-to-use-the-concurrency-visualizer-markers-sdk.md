@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eacea655fe24b497b6bf9caa699e03cac99103d8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 794a853db12f106e8f7002d93bca798d45bb582c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Nasıl Yapılır: Eşzamanlılık Görselleştiricisi İşaretçileri SDK'yı Kullanma
 Bu konu eşzamanlılık görselleştiricisi SDK'sı yayılma oluşturun ve bayrakları, iletileri ve uyarılar yazmak için nasıl kullanılacağını gösterir.  
@@ -180,4 +181,4 @@ Bu konu eşzamanlılık görselleştiricisi SDK'sı yayılma oluşturun ve bayra
      ![3 özel işaret seriler eşzamanlılık görselleştiricisi](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md)
+ [Eşzamanlılık Görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md)

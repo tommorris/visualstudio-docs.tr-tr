@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32db5d1ae316b571b71a8015bd6ea5dc7fe7a110
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 542340605407450c1cedaf9077faa90b05cdfa28
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Nasıl yapılır: Program Aracılığıyla Klasörü Ada Göre Alma
   Bu örnek, özel adlandırılmış bir klasör için bir başvuru alır ve ardından klasörün içeriğini görüntüler.  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
  [Klasörlerle çalışma](../vsto/working-with-folders.md)   
  [Nasıl yapılır: belirli klasör içinde program aracılığıyla arama](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
  [Nasıl yapılır: program aracılığıyla belirli bir kişi arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Nasıl yapılır: program aracılığıyla özel klasör öğeleri oluşturma](../vsto/how-to-programmatically-create-custom-folder-items.md)  
+ [Nasıl yapılır: Program Aracılığıyla Özel Klasör Öğeleri Oluşturma](../vsto/how-to-programmatically-create-custom-folder-items.md)  
   
   

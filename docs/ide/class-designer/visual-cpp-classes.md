@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e6861ba33fed68455fdc6d38aee81549edc516f
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: cplusplus
+ms.openlocfilehash: 1aac0b4dd1600edc29f43195dcf95a6c5fc9b388
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Sınıf Tasarımcısında Visual C++ Sınıfları
 Sınıf Tasarımcısı C++ sınıfları destekler ve C++ sınıfları birden çok devralma ilişkisine sahip olabilir ancak bu, Visual Basic ve Visual C# sınıfı şekiller, aynı şekilde yerel C++ sınıfları visualizes. Daha fazla alan ve yöntemleri sınıfında göstermek veya alanından tasarruf etmek için daraltılabilir sınıfı şekli genişletebilirsiniz.  
@@ -172,4 +173,4 @@ Aşağıdaki tabloda kurallı özel sınıf bağlantı bazı örnekleri gösteri
 [Anonim sınıf türleri](/cpp/cpp/anonymous-class-types)   
 [Birden çok devralma](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx)   
 [Birden çok taban sınıfı](/cpp/cpp/multiple-base-classes)   
-[Şablonları](/cpp/cpp/templates-cpp)
+[Şablonlar](/cpp/cpp/templates-cpp)

@@ -19,11 +19,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 932827db3c12c3376dd74605c55e1bfed3c3e978
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f399cd0d62cf9cf8e90191e293e56279930977e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-programming-vsto-add-ins"></a>VSTO Eklentilerini Programlamaya Başlama
   Microsoft Office uygulamalarını otomatikleştirmek, uygulamanın özelliklerini genişletmek ve uygulamanın kullanıcı arabirimini (UI) özelleştirmek için VSTO eklentileri kullanabilirsiniz. Visual Studio kullanarak oluşturabileceğiniz Office çözümlerinin diğer türleri için VSTO eklentileri nasıl karşılaştırmak hakkında bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -43,19 +44,19 @@ ms.lasthandoff: 10/31/2017
   
  Belirli Microsoft Office uygulamalarının nesne modelleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md)  
+-   [Excel Nesne Modeline Genel Bakış](../vsto/excel-object-model-overview.md)  
   
--   [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)  
+-   [Word Nesne Modeline Genel Bakış](../vsto/word-object-model-overview.md)  
   
--   [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md)  
+-   [Outlook Nesne Modeline Genel Bakış](../vsto/outlook-object-model-overview.md)  
   
--   [InfoPath çözümleri](../vsto/infopath-solutions.md)  
+-   [InfoPath Çözümleri](../vsto/infopath-solutions.md)  
   
--   [PowerPoint çözümleri](../vsto/powerpoint-solutions.md)  
+-   [PowerPoint Çözümleri](../vsto/powerpoint-solutions.md)  
   
--   [Proje çözümleri](../vsto/project-solutions.md)  
+-   [Proje Çözümleri](../vsto/project-solutions.md)  
   
--   [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)  
+-   [Visio Nesne Modeline Genel Bakış](../vsto/visio-object-model-overview.md)  
   
 ## <a name="customizing-the-user-interface-of-applications"></a>Uygulamalar kullanıcı arabirimini özelleştirme  
  Bir VSTO eklenti kullanarak konak uygulamasının kullanıcı arabirimini özelleştirmek için birçok farklı yol vardır:  
@@ -75,15 +76,15 @@ ms.lasthandoff: 10/31/2017
 ## <a name="next-steps"></a>Sonraki Adımlar  
  VSTO eklentileri oluşturma konusunda bilgi almak için aşağıdaki izlenecek bakın:  
   
--   [İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+-   [İnceleme: Excel için İlk VSTO Eklentinizi Oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [İzlenecek yol: Outlook için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+-   [İnceleme: Outlook için İlk VSTO Eklentinizi Oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [İzlenecek yol: PowerPoint için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+-   [İnceleme: PowerPoint için İlk VSTO Eklentinizi Oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [İzlenecek yol: Proje için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+-   [İnceleme: Project için İlk VSTO Eklentinizi Oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [İzlenecek yol: Word için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+-   [İnceleme: Word için İlk VSTO Eklentinizi Oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
  Bu izlenecek yollar, Office geliştirme araçlarını Visual Studio ve programlama modeli VSTO eklentileri için dağıtır.  
   
@@ -94,6 +95,6 @@ ms.lasthandoff: 10/31/2017
  [Başlarken &#40; Office geliştirme Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
- [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)  
+ [VSTO Eklentilerini Programlama](../vsto/programming-vsto-add-ins.md)  
   
   

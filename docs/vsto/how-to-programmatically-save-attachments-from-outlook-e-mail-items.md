@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50673163fdbdd1c0927f6efa56eae39e8cc2e3c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0c00b625c9e06152d64892f59582ec3c2e0f2866
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-e-mail-items"></a>Nasıl yapılır: Outlook E-Posta Öğelerinden Program Aracılığıyla Ekleri Kaydetme
   Gelen posta alındığında bu örnek belirtilen bir klasöre e-posta eklerini kaydeder.  
@@ -42,6 +43,6 @@ ms.lasthandoff: 10/31/2017
  [Posta öğeleri ile çalışma](../vsto/working-with-mail-items.md)   
  [Nasıl yapılır: program aracılığıyla klasörü ada göre alma](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
  [Nasıl yapılır: bir e-posta iletisi alındığında program aracılığıyla işlem gerçekleştirme](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)   
- [Nasıl yapılır: belirli klasör içinde program aracılığıyla arama](../vsto/how-to-programmatically-search-within-a-specific-folder.md)  
+ [Nasıl yapılır: Belirli Klasör İçinde Program Aracılığıyla Arama Yapma](../vsto/how-to-programmatically-search-within-a-specific-folder.md)  
   
   

@@ -37,11 +37,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 48670b03444a8701dc3c23fe591a962e01f51f31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 87d1fe708d4090fc6d2dd9509a04d13e7a21e079
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="events-in-office-projects"></a>Office Projelerindeki Olaylar
   Her Office proje şablonu otomatik olarak birçok olay işleyicisi oluşturur. Belge düzeyi özelleştirmeleri için olay işleyicileri VSTO eklentileri için olay işleyicileri biraz farklıdır.  
@@ -161,6 +162,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)   
  [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)   
- [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)  
+ [Office Proje Şablonlarına Genel Bakış](../vsto/office-project-templates-overview.md)  
   
   

@@ -35,11 +35,12 @@ caps.latest.revision: "68"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6066e5adbe4519011f56a4d88ecfcc834eb7788c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d62ccb1e842621a129a4749ae2727c10c0da970a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-project-templates-overview"></a>Office Proje Şablonlarına Genel Bakış
   Microsoft Office geliştirici araçları Visual Studio Proje şablonları Office çözümleri aşağıdaki türleri oluşturmak için şunları içerir:  
@@ -85,15 +86,15 @@ ms.lasthandoff: 10/31/2017
   
  Bu proje türleriyle çalışmaya başlama hakkında bilgi için aşağıdaki konulara bakın:  
   
--   [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)  
+-   [Belge Düzeyi Özelleştirmelerini Programlama](../vsto/programming-document-level-customizations.md)  
   
--   [Word çözümleri](../vsto/word-solutions.md)  
+-   [Word Çözümleri](../vsto/word-solutions.md)  
   
--   [Excel çözümleri](../vsto/excel-solutions.md)  
+-   [Excel Çözümleri](../vsto/excel-solutions.md)  
   
--   [İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
+-   [İzlenecek Yol: Word İçin İlk Belge Düzeyi Özelleştirmeyi Oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
   
--   [İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
+-   [İzlenecek Yol: Excel İçin İlk Belge Düzeyi Özelleştirmeyi Oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
   
 ##  <a name="AppLevel"></a>VSTO eklentileri  
  **Office/SharePoint** düğümünde **yeni proje** sağlamak için aşağıdaki proje şablonlarını başlatılan VSTO eklentileri oluşturma iletişim kutusu sağlar.  
@@ -130,19 +131,19 @@ ms.lasthandoff: 10/31/2017
   
  Bu proje türleriyle çalışmaya başlama hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Başlarken VSTO eklentilerini programlama](../vsto/getting-started-programming-vsto-add-ins.md)  
+-   [VSTO Eklentilerini Programlamaya Başlama](../vsto/getting-started-programming-vsto-add-ins.md)  
   
--   [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)  
+-   [VSTO Eklentilerini Programlama](../vsto/programming-vsto-add-ins.md)  
   
--   [İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+-   [İnceleme: Excel için İlk VSTO Eklentinizi Oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [İzlenecek yol: Outlook için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+-   [İnceleme: Outlook için İlk VSTO Eklentinizi Oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [İzlenecek yol: PowerPoint için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+-   [İnceleme: PowerPoint için İlk VSTO Eklentinizi Oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [İzlenecek yol: Proje için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+-   [İnceleme: Project için İlk VSTO Eklentinizi Oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [İzlenecek yol: Word için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+-   [İnceleme: Word için İlk VSTO Eklentinizi Oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
 ## <a name="document-vs-template-solutions"></a>Belge vs. Şablon çözümleri  
  Word belgesi veya Excel çalışma kitabı etrafında bir çözüm tasarladığınızda, bu belgeyi kullanıcılarınıza sunmanın en iyi yoluna karar vermelisiniz.  
@@ -176,6 +177,6 @@ ms.lasthandoff: 10/31/2017
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Excel için belge düzeyi özelleştirme programlamasına başlama](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Word için belge düzeyi özelleştirme programlamasına başlama](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
- [Başlarken VSTO eklentilerini programlama](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [VSTO Eklentilerini Programlamaya Başlama](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

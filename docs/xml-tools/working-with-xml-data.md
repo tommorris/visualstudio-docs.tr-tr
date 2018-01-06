@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa74884edc5f0dea16d95fc5f177323da1fab6ab
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 3cf5c9d448d7e637344ee3dd5741871f5c177fdb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-xml-data"></a>XML verileri ile çalışma
 XML ve ilgili teknolojiler veri işlenir şekilde büyük bir rol oynar [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio. Visual Studio Araçları ve XML, XSLT ve XML şemaları çalışmak kolaylaştıran özellikler içerir.  
@@ -51,21 +52,21 @@ XML ve ilgili teknolojiler veri işlenir şekilde büyük bir rol oynar [!INCLUD
  [XML Düzenleyicisi](../xml-tools/xml-editor.md)  
  XML Düzenleyicisi'ni tanıtır.  
   
- [XML şema Tasarımcısı](../xml-tools/xml-schema-designer.md)  
+ [XML Şema Tasarımcısı](../xml-tools/xml-schema-designer.md)  
  XML şema Tasarımcısı ve çalışma anlatılmaktadır XML Şeması Tanım Dili (XSD) şemalarda.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [XSLT hata ayıklama](../xml-tools/debugging-xslt.md)  
+ [XSLT Hatalarını Ayıklama](../xml-tools/debugging-xslt.md)  
  Visual Studio hata ayıklayıcısı kullanarak stil sayfaları hata ayıklamak nasıl açıklanır.  
   
  [XML standartları başvurusu](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
  XML, belge türü tanımı (DTD), XML Şeması Tanım Dili (XSD) ve XSLT dahil olmak üzere XML teknolojileri hakkında bilgi sağlar.  
   
- [Oluşturma ve Visual Studio'da veri kümelerini yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
+ [Visual Studio’da veri kümeleri oluşturma ve yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
  Veri kümeleri oluşturmak için bir açıklama tasarım zamanı araçlar sağlar.  
   
  [XML Web Hizmetleri yönetilen kod](http://msdn.microsoft.com/en-us/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  Oluşturma ve XML Web Hizmetleri dağıtma ve XML Web hizmetlerine erişmek nasıl anlatılmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'daki XML araçları](../xml-tools/xml-tools-in-visual-studio.md)
+ [Visual Studio'daki XML Araçları](../xml-tools/xml-tools-in-visual-studio.md)

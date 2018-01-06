@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dbefcb83efbcea76fec889b520f0cd0dd181bf9e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f8748b9943f3a3aa31a6585de07bdc9eff3cc5ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021: Out parametrelerinden kaçının
 |||  
@@ -91,4 +92,4 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[FxCop.Design.TryPattern#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_5.cs)]  
   
 ## <a name="related-rules"></a>İlgili kuralları  
- [CA1045: türleri başvuruya göre geçmeyin](../code-quality/ca1045-do-not-pass-types-by-reference.md)
+ [CA1045: Türleri başvuruya göre geçirmeyin](../code-quality/ca1045-do-not-pass-types-by-reference.md)

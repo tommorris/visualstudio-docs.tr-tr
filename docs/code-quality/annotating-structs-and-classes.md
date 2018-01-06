@@ -27,11 +27,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 651108f2c917fb81857e3466384a9bfebada4a4b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 8aafad0da7581f1fa07f1e0134df0032655d679a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="annotating-structs-and-classes"></a>Yapıları ve Sınıfları Yorumlama
 Yapı ve sınıf üyeleri invariants gibi davranan ek açıklamaları kullanılarak açıklayabilirsiniz — herhangi bir işlev çağrısı veya bir parametre veya bir sonuç değeri kapsayan yapısı içerir işlevi giriş/çıkış en doğru olması için varsayılan.  

@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6191676f94300dfbfafcb8ceb6b0874a8e5b558a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8e72f10ef44c784af98628f4b0c1ed3b72814977
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Olay işleyicilerini doğru bildirin
 |||  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]  
   
 ## <a name="related-rules"></a>İlgili kuralları  
- [CA2109: görünen olay işleyicileri gözden geçirin](../code-quality/ca2109-review-visible-event-handlers.md)  
+ [CA2109: Görünen olay işleyicileri gözden geçirin](../code-quality/ca2109-review-visible-event-handlers.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.EventArgs?displayProperty=fullName>   

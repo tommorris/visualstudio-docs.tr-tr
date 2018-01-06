@@ -17,27 +17,28 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 33ce03bb04df9dc3701f6d9acff5b73e9891334f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4c07bfffff891e0dbe4ed77ada2682660c74b673
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Kod Çözümleme Araçları ile Uygulama Kalitesini Çözümleme
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Yönetilen kod kalitesini analiz etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  
  Yönetilen kod için visual Studio Kod Analizi Tasarım Kuralları ve programlama ihlalleri İleri Microsoft .NET Framework tasarım yönergeleri ayarlama gibi Yönetilen derlemeler hakkında bilgi sağlar. Uyarı iletilerini programlama ve tasarım ilgili sorunları belirlemek ve sorunun nasıl çözüleceğini olası, sağlar bilgilerini olduğunda.  
   
- [Kod Analizi ile C/C++ kod kalitesini analiz etme](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)  
+ [Kod Çözümlemesi ile C/C++ Kod Kalitesini Çözümleme](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)  
  C/C++ kod analizi aracı geliştiricilerin kendi C/C++ kaynak kodu olası kusurlarını hakkında bilgi sağlar. Bellek ve kaynak sızıntılarını ve null işaretçiye veya aracı tarafından raporlanan genel kodlama hatalarını arabellek taşmaları, başlatılmamış bellek içerir.  
   
- [Kod çözümleme kurallarını gruplandırmak için kural kullanarak ayarlar](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)  
+ [Kod Analizi Kurallarını Gruplandırmak için Kural Kümeleri Kullanma](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)  
  Seçmenize ve oluşturmanıza *kural kümeleri* projenize uygulamak için.  
   
- [Kod çözümleme uygulama hataları](../code-quality/code-analysis-application-errors.md)  
+ [Kod Çözümleme Uygulama Hataları](../code-quality/code-analysis-application-errors.md)  
  Kod çözümleme işlevindeki hataları düzeltin.  
   
- [İade takım projesi ilkeleriyle kod kalitesini arttırma](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)  
+ [Takım Projesi İade İlkeleriyle Kod Kalitesini Arttırma](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)  
  Team Foundation sürüm denetimi (TFVC'yi) kullandığınızda, daha iyi bir kod ve daha verimli grup geliştirme yöntemler zorunlu takım projeleriniz için iade ilkeleri oluşturabilirsiniz. İade ilkeleri, takım projesi düzeyinde ayarlamak ve kod iade edilmesi için izin verilmeden önce Geliştirici bilgisayarlarda zorlanan kurallardır.  
   
 ### <a name="code-analysis-for-drivers"></a>Sürücüleri için Kod Analizi  
@@ -50,8 +51,8 @@ ms.lasthandoff: 10/31/2017
  Sürücü kodda olası bir hatayı algıladığında sürücüleri için kod analizi raporları uyarılar açıklar.  
   
 ## <a name="related-tasks"></a>İlgili görevleri  
- [Ölçüm karmaşıklığı ve yönetilen kod bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)  
+ [Yönetilen Kodun Ölçüm Karmaşıklığı ve Bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)  
  Açıklamayı buraya ekleyin.  
   
- [Kodunuza birim testi](../test/unit-test-your-code.md)  
+ [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)  
  Açıklamayı buraya ekleyin.

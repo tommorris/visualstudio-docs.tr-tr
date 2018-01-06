@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4dee5b21724944ea26e89c2cd1ace556f1377848
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0b4b154d6e959e636ee75481816a2424d5ea2e18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Kaynak dize bileşik sözcüklerinin küçük/büyük harfleri doğru yazılmalıdır
 |||  
@@ -49,12 +50,12 @@ ms.lasthandoff: 10/31/2017
  Özel sözlük yazım denetimi için bileşik sözcüklerin ekleyebilirsiniz. Özel sözlük sözcükleri ihlalleri neden olmaz. Daha fazla bilgi için bkz: [nasıl yapılır: Kod Analizi dizinini özelleştirme](../code-quality/how-to-customize-the-code-analysis-dictionary.md).  
   
 ## <a name="related-rules"></a>İlgili kuralları  
- [CA1702: Bileşik sözcüklerin doğru ortası](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+ [CA1702: Bileşik sözcüklerin küçük/büyük harfleri doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
- [CA1709: Tanımlayıcılar doğru ortası](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+ [CA1709: Tanımlayıcıların büyük/küçük harfleri doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
  [CA1708: Tanımlayıcılar örnekten daha fazla farklı olmalıdır](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Büyük/küçük harf kuralları](/dotnet/standard/design-guidelines/capitalization-conventions)   
- [Adlandırma yönergeleri](/dotnet/standard/design-guidelines/naming-guidelines)
+ [Adlandırma Kuralları](/dotnet/standard/design-guidelines/naming-guidelines)

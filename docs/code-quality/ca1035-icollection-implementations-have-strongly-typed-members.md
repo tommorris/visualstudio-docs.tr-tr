@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6be0c08efcd1f409bfb69775822e4904372f2511
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a3e595046442092c11b068b6df6fde2a9a56e705
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: ICollection uygulamalarında türü kesin olarak belirtilmiş üyeler olmalıdır
 |||  
@@ -54,9 +55,9 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]  
   
 ## <a name="related-rules"></a>İlgili kuralları  
- [CA1038: Numaralandırmalar kesin türü belirtilmiş](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)  
+ [CA1038: Numaralandırıcıların türü kesin olarak belirtilmelidir](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)  
   
- [CA1039: Listeleri kesin türü belirtilmiş](../code-quality/ca1039-lists-are-strongly-typed.md)  
+ [CA1039: Listelerin türü kesin olarak belirlenmiştir](../code-quality/ca1039-lists-are-strongly-typed.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Array?displayProperty=fullName>   

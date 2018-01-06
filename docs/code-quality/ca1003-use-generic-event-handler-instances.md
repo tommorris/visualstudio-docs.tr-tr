@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf4f11f3f8fae1130c2cc99468a40ed269c77481
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 66f18e0b62d5dc2526d97109949c0dda21ad4e71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Genel olay işleyici örnekleri kullan
 |||  
@@ -60,15 +61,15 @@ ms.lasthandoff: 10/31/2017
   
  [CA1010: Koleksiyonlar genel arabirim uygulamalıdır](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
   
- [CA1000: Genel türlerde statik üyeleri bildirme](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
+ [CA1000: Genel türlerde statik üyeleri belirtme](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
   
- [CA1002: genel listeleri gösterme](../code-quality/ca1002-do-not-expose-generic-lists.md)  
+ [CA1002: Genel listeleri gösterme](../code-quality/ca1002-do-not-expose-generic-lists.md)  
   
- [CA1006: üye imzalarında genel türleri geçirmeyin](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)  
+ [CA1006: Üye imzalarında genel türleri iç içe kullanmayın](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)  
   
- [CA1004: Genel yöntemler tür parametresi sağlamalıdır](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)  
+ [CA1004: Genel metotlar tür parametresi sağlamalıdır](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)  
   
- [CA1007: uygun yerlerde genel türler kullanın](../code-quality/ca1007-use-generics-where-appropriate.md)  
+ [CA1007: Uygun yerlerde genel türler kullanın](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel türler](/dotnet/csharp/programming-guide/generics/index)
+ [Genel Türler](/dotnet/csharp/programming-guide/generics/index)

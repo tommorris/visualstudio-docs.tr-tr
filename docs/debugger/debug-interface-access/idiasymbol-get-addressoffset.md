@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e13e130febd36f4b9bf8e0964ac00b78647b034
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 41ffc699eec6f9579c4575b498ddb9a82af4d31b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
 Bir adresi konumu uzaklık parçası alır. Şu durumlarda kullanın [LocationType numaralandırması](../../debugger/debug-interface-access/locationtype.md) ayarlanır `LocIsStatic`.  
@@ -58,4 +59,4 @@ HRESULT get_addressOffset (
  [LocationType numaralandırması](../../debugger/debug-interface-access/locationtype.md)   
  [Idiasymbol::get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
  [Idiasession::put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)   
- [Idiasession](../../debugger/debug-interface-access/idiasession.md)
+ [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

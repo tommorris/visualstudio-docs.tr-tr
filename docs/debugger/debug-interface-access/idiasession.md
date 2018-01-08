@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e57e1fddaabe0346987a7ed27b4f3cd682055d5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f3939ab86cd9f0948a2be44756b9ed94d143ecc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasession"></a>IDiaSession
 Sorgu bağlamı için hata ayıklama simgeleri sağlar.  
@@ -34,29 +35,29 @@ IDiaSession : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiasession::get_loadaddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Bu sembol deposu sembolleri karşılık gelen yürütülebilir dosyasının yük adresini alır. Bu geçirilmedi değerin aynısıdır `put_loadAddress` yöntemi.|  
-|[Idiasession::put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Yükleme adresine karşılık gelen yürütülebilir dosyası için bu simge deposunda simgeleri ayarlar. **Not:** aldığınızda, bu yöntemi çağırmak önemli bir `IDiaSession` nesne ve başlamadan önce nesnesini kullanarak.|  
-|[Idiasession::get_globalscope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Genel kapsamlı bir başvuru alır.|  
-|[Idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Sembol deposunda bulunan tüm tablolar için bir numaralandırıcı alır.|  
-|[Idiasession::getsymbolsbyaddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Statik konumlardaki tüm adlandırılmış sembolleri için bir numaralandırıcı alır.|  
-|[Idiasession::findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)|Ad ve simge türüyle eşleşen tüm alt öğeleri belirtilen üst tanımlayıcı alır.|  
-|[Idiasession::findsymbolbyaddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)|İçeriyor veya belirtilen bir adres için en yakın olan bir belirtilen simge türü alır.|  
-|[Idiasession::findsymbolbyrva](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)|İçeriyor veya belirtilen göreli sanal adresi için (RAV) en yakın olan bir belirtilen simge türü alır.|  
-|[Idiasession::findsymbolbyva](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)|İçeriyor veya belirtilen sanal adres (VA) için en yakın olan bir belirtilen simge türü alır.|  
-|[Idiasession::findsymbolbytoken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)|Belirtilen meta veri simgesi içeren simge alır.|  
-|[Idiasession::symsareequiv](../../debugger/debug-interface-access/idiasession-symsareequiv.md)|İki simge eşdeğer olup olmadığını denetler.|  
-|[Idiasession::symbolbyıd](../../debugger/debug-interface-access/idiasession-symbolbyid.md)|Bir simge benzersiz tanımlayıcısıyla alır.|  
-|[Idiasession::findsymbolbyrvaex](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)|İçeriyor veya belirtilen göreli sanal adres ve uzaklık için en yakın olan bir belirtilen simge türü alır.|  
-|[Idiasession::findsymbolbyvaex](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)|İçeriyor veya belirtilen sanal adres ve uzaklık için en yakın olan bir belirtilen simge türü alır.|  
-|[Idiasession::findfile](../../debugger/debug-interface-access/idiasession-findfile.md)|Kaynak dosya derlenecek ve ad ile alır.|  
-|[Idiasession::findfilebyıd](../../debugger/debug-interface-access/idiasession-findfilebyid.md)|Bir kaynak dosya kaynak dosya tanımlayıcısı tarafından alır.|  
-|[Idiasession::findlines](../../debugger/debug-interface-access/idiasession-findlines.md)|Satır numaraları içinde belirtilen derlenecek ve kaynak dosya tanımlayıcı alır.|  
-|[Idiasession::findlinesbyaddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)|Belirtilen adres içeren belirtilen derlenecek satırları alır.|  
-|[Idiasession::findlinesbyrva](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)|Belirtilen göreli sanal adres içeren belirtilen derlenecek satırları alır.|  
-|[Idiasession::findlinesbyva](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)|Belirtilen adres aralığında bulunan satırlar için satır numarası bilgilerini bulur.|  
-|[Idiasession::findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)|Kaynak dosya ve satır numarası tarafından belirtilen derlenecek satırları alır.|  
-|[Idiasession::findınjectedsource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)|Öznitelik sağlayıcıları tarafından sembol deposu veya diğer bileşenleri derleme işleminin yerleştirilen bir kaynağı alır.|  
-|[Idiasession::getenumdebugstreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)|Hata ayıklama veri akışlarını numaralandırılmış bir dizisini alır.|  
+|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Bu sembol deposu sembolleri karşılık gelen yürütülebilir dosyasının yük adresini alır. Bu geçirilmedi değerin aynısıdır `put_loadAddress` yöntemi.|  
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Yükleme adresine karşılık gelen yürütülebilir dosyası için bu simge deposunda simgeleri ayarlar. **Not:** aldığınızda, bu yöntemi çağırmak önemli bir `IDiaSession` nesne ve başlamadan önce nesnesini kullanarak.|  
+|[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Genel kapsamlı bir başvuru alır.|  
+|[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Sembol deposunda bulunan tüm tablolar için bir numaralandırıcı alır.|  
+|[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Statik konumlardaki tüm adlandırılmış sembolleri için bir numaralandırıcı alır.|  
+|[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)|Ad ve simge türüyle eşleşen tüm alt öğeleri belirtilen üst tanımlayıcı alır.|  
+|[IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)|İçeriyor veya belirtilen bir adres için en yakın olan bir belirtilen simge türü alır.|  
+|[IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)|İçeriyor veya belirtilen göreli sanal adresi için (RAV) en yakın olan bir belirtilen simge türü alır.|  
+|[IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)|İçeriyor veya belirtilen sanal adres (VA) için en yakın olan bir belirtilen simge türü alır.|  
+|[IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)|Belirtilen meta veri simgesi içeren simge alır.|  
+|[IDiaSession::symsAreEquiv](../../debugger/debug-interface-access/idiasession-symsareequiv.md)|İki simge eşdeğer olup olmadığını denetler.|  
+|[IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)|Bir simge benzersiz tanımlayıcısıyla alır.|  
+|[IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)|İçeriyor veya belirtilen göreli sanal adres ve uzaklık için en yakın olan bir belirtilen simge türü alır.|  
+|[IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)|İçeriyor veya belirtilen sanal adres ve uzaklık için en yakın olan bir belirtilen simge türü alır.|  
+|[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)|Kaynak dosya derlenecek ve ad ile alır.|  
+|[IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)|Bir kaynak dosya kaynak dosya tanımlayıcısı tarafından alır.|  
+|[IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)|Satır numaraları içinde belirtilen derlenecek ve kaynak dosya tanımlayıcı alır.|  
+|[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)|Belirtilen adres içeren belirtilen derlenecek satırları alır.|  
+|[IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)|Belirtilen göreli sanal adres içeren belirtilen derlenecek satırları alır.|  
+|[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)|Belirtilen adres aralığında bulunan satırlar için satır numarası bilgilerini bulur.|  
+|[IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)|Kaynak dosya ve satır numarası tarafından belirtilen derlenecek satırları alır.|  
+|[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)|Öznitelik sağlayıcıları tarafından sembol deposu veya diğer bileşenleri derleme işleminin yerleştirilen bir kaynağı alır.|  
+|[IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)|Hata ayıklama veri akışlarını numaralandırılmış bir dizisini alır.|  
 |[IDiaSession::findInlineFramesByAddr](../../debugger/debug-interface-access/idiasession-findinlineframesbyaddr.md)|Tüm satır içi çerçeveler belirli bir adresi üzerinde yinelemek bir istemci izin veren bir numaralandırmasını alır.|  
 |[IDiaSession::findInlineFramesByRVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyrva.md)|Tüm satır içi çerçeveler bir adresinde belirtilen göreli sanal (RVA) yinelemek bir istemci izin veren bir numaralandırmasını alır.|  
 |[IDiaSession::findInlineFramesByVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyva.md)|Tüm satır içi çerçeveler belirtilen sanal adresine (VA) yinelemek bir istemci izin veren bir numaralandırmasını alır.|  
@@ -125,4 +126,4 @@ void InitializeDIA(const char *szFilename)
  [Idiadatasource](../../debugger/debug-interface-access/idiadatasource.md)   
  [Idiadatasource::opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
  [Idiasymbol::findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
- [Sorgulama. Pdb dosyası](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+ [.Pdb Dosyasını Sorgulama](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

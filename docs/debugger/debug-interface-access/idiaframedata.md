@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 19581f25a9f75bd1a791c9f2f7b23998218e5f27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9ecbc6d6bd94c3b6ed58b1afe8f1c090aca82e36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Yığın çerçevesi ayrıntılarını gösterir.  
@@ -34,24 +35,24 @@ IDiaFrameData : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiaframedata::get_addresssection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|Çerçeve kod adresi bölüm parçası alır.|  
-|[Idiaframedata::get_addressoffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|Çerçeve kod adresi uzaklık parçası alır.|  
-|[Idiaframedata::get_relativevirtualaddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|Görüntü göreli sanal adres (RAV) çerçevesi için kod alır.|  
-|[Idiaframedata::get_virtualaddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|Çerçeve kodunu sanal adres (VA) alır.|  
-|[Idiaframedata::get_lengthblock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|Çerçeve tarafından açıklanan kod bloğunun bayt cinsinden uzunluğu alır.|  
-|[Idiaframedata::get_lengthlocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|Yerel değişkenler yığına bayt sayısını alır.|  
-|[Idiaframedata::get_lengthparams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|Yığına parametrelerinin bayt sayısını alır.|  
-|[Idiaframedata::get_maxstack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|Yığın çerçevesi içinde gönderilen bayt sayısını alır.|  
-|[Idiaframedata::get_lengthprolog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|Başlangıç kod bloğundaki bayt sayısını alır.|  
-|[Idiaframedata::get_lengthsavedregisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|Kaydedilmiş Yazmaçlar yığına bayt sayısını alır.|  
-|[Idiaframedata::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Geçerli işlevi çağırmadan önce ayarlayın kayıt hesaplamak için kullanılan program dizesini alır.|  
-|[Idiaframedata::get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Alır, bu sistem özel durum işleme belirten bir bayrak etkili olur.|  
-|[Idiaframedata::get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Alır, C++ özel durum işleme belirten bir bayrak etkili olur.|  
-|[Idiaframedata::get_functionstart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Blok işlevi giriş noktasını içerse belirten bir bayrak alır.|  
-|[Idiaframedata::get_allocatesbasepointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Bu adres aralığındaki kod için temel işaretçi ayrılır belirten bir bayrak alır. Bu yöntem kullanım dışıdır.|  
-|[Idiaframedata::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Derleyici özgü çerçeve türünü alır.|  
-|[Idiaframedata::get_functionparent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Alır işlevi kapsayan için veri arabirimi çerçevesi.|  
-|[Idiaframedata::Execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Yığın geriye doğru izleme gerçekleştirir ve yığın ilerlemesi çerçeve arabiriminde yazmaçlar geçerli durumunu döndürür.|  
+|[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|Çerçeve kod adresi bölüm parçası alır.|  
+|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|Çerçeve kod adresi uzaklık parçası alır.|  
+|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|Görüntü göreli sanal adres (RAV) çerçevesi için kod alır.|  
+|[IDiaFrameData::get_virtualAddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|Çerçeve kodunu sanal adres (VA) alır.|  
+|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|Çerçeve tarafından açıklanan kod bloğunun bayt cinsinden uzunluğu alır.|  
+|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|Yerel değişkenler yığına bayt sayısını alır.|  
+|[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|Yığına parametrelerinin bayt sayısını alır.|  
+|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|Yığın çerçevesi içinde gönderilen bayt sayısını alır.|  
+|[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|Başlangıç kod bloğundaki bayt sayısını alır.|  
+|[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|Kaydedilmiş Yazmaçlar yığına bayt sayısını alır.|  
+|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Geçerli işlevi çağırmadan önce ayarlayın kayıt hesaplamak için kullanılan program dizesini alır.|  
+|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Alır, bu sistem özel durum işleme belirten bir bayrak etkili olur.|  
+|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Alır, C++ özel durum işleme belirten bir bayrak etkili olur.|  
+|[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Blok işlevi giriş noktasını içerse belirten bir bayrak alır.|  
+|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Bu adres aralığındaki kod için temel işaretçi ayrılır belirten bir bayrak alır. Bu yöntem kullanım dışıdır.|  
+|[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Derleyici özgü çerçeve türünü alır.|  
+|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Alır işlevi kapsayan için veri arabirimi çerçevesi.|  
+|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Yığın geriye doğru izleme gerçekleştirir ve yığın ilerlemesi çerçeve arabiriminde yazmaçlar geçerli durumunu döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Ayrıntılar için bir çerçeve kullanılabilir adres ve blok uzunluğu ile belirtilen adres aralığı içinde yürütme noktaları içindir.  
@@ -124,4 +125,4 @@ void PrintFrameData(IDiaFrameData* pFrameData){
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiaenumframedata](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [Idiaenumframedata::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)   
- [Idiaenumframedata::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)
+ [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)

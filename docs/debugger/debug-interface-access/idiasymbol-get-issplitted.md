@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eee1ad0cb809a6f3afac2b84b3224e162a64da36
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 82197c35a0fc20a2c8562e441c4098aacd495776
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
 Veri simgesi bir toplama veya diğer simgelerin koleksiyonu bölündü olup olmadığını belirten bir bayrak alır; gerçekten daha büyük bir simge parçası olsalar derleyici simgeleri ayrı varlıklar olarak değerlendirir.  
@@ -53,4 +54,4 @@ HRESULT get_isSplitted(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Idiasymbol::get_isaggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)
+ [IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)

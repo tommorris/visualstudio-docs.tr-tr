@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cc18886a66463e6bcd0177940c7f9aa5d6a4829
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: afc70e06c10b3d7447cc5dc0c507e90c5ba44c80
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgethascastoperator"></a>IDiaSymbol::get_hasCastOperator
 Kullanıcı tanımlı veri türü tanımlanan tüm atama işleçleri sahip olup olmadığını belirten bir bayrak alır.  
@@ -49,4 +50,4 @@ HRESULT get_hasCastOperator (
 |Sürüm:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

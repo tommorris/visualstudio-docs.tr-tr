@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 025447e1b58f7a3e84c3426a5c22be57792c9597
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 70c5e5fc2c4cc150eb4abcbe14e5d32933181cfa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetoverloadedoperator"></a>IDiaSymbol::get_overloadedOperator
 Kullanıcı tanımlı veri türü işleçleri aşırı yüklü olup olmadığını belirten bir bayrak alır.  
@@ -42,4 +43,4 @@ HRESULT get_overloadedOperator (
 >  Dönüş değeri `S_FALSE` özelliğin simge için kullanılabilir olup olmadığı anlamına gelir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

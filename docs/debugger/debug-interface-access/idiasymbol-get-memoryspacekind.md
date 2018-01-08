@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dab2a95520a4a296fcdee4af2e0bd5e18b6e72f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3c6b53bbe7e3350b1adc89f98f7956724edcefed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetmemoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
 Bellek alanı türü alır.  
@@ -37,4 +38,4 @@ HRESULT get_memorySpaceKind(
  Başarılı olursa, döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

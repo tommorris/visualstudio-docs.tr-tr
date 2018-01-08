@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12bc8e73457c1afc4b1799549ad43974d5771252
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0464b871cda03b507d0127f5deeb97b94167b21a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Adres alanı kesimleri bölüm numarası verilerini eşleştirir.  
@@ -34,15 +35,15 @@ IDiaSegment : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiasegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Segment numarasını alır.|  
-|[Idiasegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Bölüm başladığı Segment uzaklığı alır.|  
-|[Idiasegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Kesimdeki bayt sayısını alır.|  
-|[Idiasegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Segment okunur olup olmadığını belirten bir bayrak alır.|  
-|[Idiasegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Kesim değiştirilebilir olup olmadığını gösteren bir bayrak alır.|  
-|[Idiasegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Kesim yürütülebilir olup olmadığını belirten bir bayrak alır.|  
-|[Idiasegment::get_addresssection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Bu kesimin eşlemeleri bölüm numarası alır.|  
-|[Idiasegment::get_relativevirtualaddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Bölüm başlangıcının göreli sanal adres (RAV) alır.|  
-|[Idiasegment::get_virtualaddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Bölüm başına sanal adres (VA) alır.|  
+|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Segment numarasını alır.|  
+|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Bölüm başladığı Segment uzaklığı alır.|  
+|[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Kesimdeki bayt sayısını alır.|  
+|[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Segment okunur olup olmadığını belirten bir bayrak alır.|  
+|[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Kesim değiştirilebilir olup olmadığını gösteren bir bayrak alır.|  
+|[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Kesim yürütülebilir olup olmadığını belirten bir bayrak alır.|  
+|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Bu kesimin eşlemeleri bölüm numarası alır.|  
+|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Bölüm başlangıcının göreli sanal adres (RAV) alır.|  
+|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Bölüm başına sanal adres (VA) alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  DIA SDK zaten çevirileri bölüm uzaklığı göreli sanal adreslerine gerçekleştirdiğinden, uygulamaların çoğu değil olun bölüm eşlemesi bilgileri kullanın.  
@@ -104,4 +105,4 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiaenumsegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
- [Idiaenumsegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)
+ [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)

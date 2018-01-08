@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2434dac0a4f0e4d9ff1c998f0cd70da4f9c558b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7e4771de4237bea89836969d2274d622d36e3f89
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 Simgenin karşılık gelen olup olmadığını belirten bir bayrak alır *tanımı aralığı simgesi* için C++ AMP Hızlandırıcı derlenmiş kodda bir işaretçi değişkeninin etiketi bileşeni. Tanım aralığı simgenin adreslerinin bir aralık için bir değişken konumudur.  
@@ -37,4 +38,4 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
  Başarılı olursa, döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

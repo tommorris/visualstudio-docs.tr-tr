@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a092cc6044f42a53abf97ff36417a23c1f2adca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cbd88bbe3e8a752721047ee80d847e72cf115b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 Program hata ayıklama (.pdb) veritabanı dosyasını kullanarak yığın taramasını kolaylaştırır.  
@@ -40,11 +41,11 @@ IDiaStackWalkHelper: IUnknown
 |[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)|Bir kayıt değerini ayarlar.|  
 |[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)|Bir veri bloğunun bellekte çalıştırılabilir programın görüntüden okur.|  
 |[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|Belirtilen yığın çerçevesi yakın işlevi dönüş adresi arar.|  
-|[Idiastackwalkhelper::searchforreturnaddressstart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|Bir dönüş adresi hiç veya neredeyse belirtilen yığını adres için belirtilen yığın çerçevesi arar.|  
+|[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|Bir dönüş adresi hiç veya neredeyse belirtilen yığını adres için belirtilen yığın çerçevesi arar.|  
 |[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|Belirtilen sanal adres içeren yığın çerçevesi alır.|  
-|[Idiastackwalkhelper::symbolforva](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|Belirtilen sanal adres içeren simge alır. **Not:** simge türü olmalıdır `SymTagFunctionType` (arasında bir değer [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) numaralandırması).|  
+|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|Belirtilen sanal adres içeren simge alır. **Not:** simge türü olmalıdır `SymTagFunctionType` (arasında bir değer [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) numaralandırması).|  
 |[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|Belirtilen sanal adresi ile ilişkili PDATA veri bloğu döndürür.|  
-|[Idiastackwalkhelper::imageforva](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Bir sanal adres yere çalıştırılabilir programın bellek alanında verilen yürütülebilir başlangıç sanal adresini alır.|  
+|[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Bir sanal adres yere çalıştırılabilir programın bellek alanında verilen yürütülebilir başlangıç sanal adresini alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu arabirim, çalıştırılabilir program yürütülmesi sırasında yığın çerçeveleri listesini oluşturmak hakkında bilgi edinmek için DIA kodu tarafından çağrılır.  

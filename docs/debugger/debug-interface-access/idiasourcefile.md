@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b742986d59024021eff5e85d54fc64247571df61
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bab6546336cc7d47c225f0b91d35944763543243
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Kaynak dosyayı temsil eder.  
@@ -34,11 +35,11 @@ IDiaSourceFile : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiasourcefile::get_uniqueıd](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Bu görüntü için benzersiz bir basit tamsayı anahtar değeri alır.|  
-|[Idiasourcefile::get_filename](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Kaynak dosya adını alır.|  
-|[Idiasourcefile::get_checksumtype](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Sağlama türünü alır.|  
-|[Idiasourcefile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Derlenecek dosyalar numaralandırması birlikte bu dosyayı başvuran satır numaralarını alır.|  
-|[Idiasourcefile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Sağlama toplamı bayt alır.|  
+|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Bu görüntü için benzersiz bir basit tamsayı anahtar değeri alır.|  
+|[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Kaynak dosya adını alır.|  
+|[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Sağlama türünü alır.|  
+|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Derlenecek dosyalar numaralandırması birlikte bu dosyayı başvuran satır numaralarını alır.|  
+|[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Sağlama toplamı bayt alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
   
@@ -87,4 +88,4 @@ void ShowSourceFiles(IDiaTable *pTable)
  [Idialinenumber::get_sourcefile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)   
  [Idiasession::findfilebyıd](../../debugger/debug-interface-access/idiasession-findfilebyid.md)   
  [Idiasession::findlines](../../debugger/debug-interface-access/idiasession-findlines.md)   
- [Idiasession::findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
+ [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

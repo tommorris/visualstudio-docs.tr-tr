@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be50964aaadad30aa13d6627be2ad1637e6123b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb683afe63880af9d1a666436739140519f7339b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 Yığın bağlamı çağırmaları arasında tutar [Idiaframedata::Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) yöntemi.  
@@ -34,11 +35,11 @@ IDiaStackWalkFrame : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idiastackwalkframe::get_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)|Bir kayıt değeri alır.|  
-|[Idiastackwalkframe::put_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|Bir kayıt değerini ayarlar.|  
-|[Idiastackwalkframe::readmemory](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|Bellek görüntüden okur.|  
-|[Idiastackwalkframe::searchforreturnaddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Belirtilen yığın çerçevesi yakın işlevi dönüş adresi arar.|  
-|[Idiastackwalkframe::searchforreturnaddressstart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Bir dönüş adresi hiç veya neredeyse belirtilen adres için belirtilen yığın çerçevesi arar.|  
+|[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)|Bir kayıt değeri alır.|  
+|[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|Bir kayıt değerini ayarlar.|  
+|[IDiaStackWalkFrame::readMemory](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|Bellek görüntüden okur.|  
+|[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Belirtilen yığın çerçevesi yakın işlevi dönüş adresi arar.|  
+|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Bir dönüş adresi hiç veya neredeyse belirtilen adres için belirtilen yığın çerçevesi arar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu arabirim program yürütülmesi sırasında okuma ve kayıtları yazma yanı sıra bellek erişmek ve dönüş adresleri bulmak için kullanılır.  
@@ -55,4 +56,4 @@ IDiaStackWalkFrame : IUnknown
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaframedata::Execute](../../debugger/debug-interface-access/idiaframedata-execute.md)
+ [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45996e66500ebf275154553774d5116c6075af0f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ea164deb661dfe093ee81d40658c4f9ef6c57558
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 Bir kaynak dosya satır numarası bayt görüntü metin bloğunu eşleme işlemini açıklar bilgilere erişir.  
@@ -34,20 +35,20 @@ IDiaLineNumber : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idialinenumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Görüntü metnin bayt katkıda derlenecek dosya simgesi için bir başvuru alır.|  
-|[Idialinenumber::get_sourcefile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|Kaynak dosya nesnesine başvuru alır.|  
-|[Idialinenumber::get_linenumber](../../debugger/debug-interface-access/idialinenumber-get-linenumber.md)|Kaynak dosya satır numarasını alır.|  
-|[Idialinenumber::get_linenumberend](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Sona ereceği deyiminin veya ifadesinin kaynak tabanlı satır numarasını alır.|  
-|[Idialinenumber::get_columnnumber](../../debugger/debug-interface-access/idialinenumber-get-columnnumber.md)|İfade veya deyimin başladığı sütun sayısını alır.|  
-|[Idialinenumber::get_columnnumberend](../../debugger/debug-interface-access/idialinenumber-get-columnnumberend.md)|İfade veya deyimin bittiği sütun sayısını alır.|  
-|[Idialinenumber::get_addresssection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Bir blok başladığı bellek adresi bölüm parçası alır.|  
-|[Idialinenumber::get_addressoffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Bir blok başladığı bellek adresi uzaklık parçası alır.|  
-|[Idialinenumber::get_relativevirtualaddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|Görüntü göreli sanal adres (RVA) bloğunun alır.|  
-|[Idialinenumber::get_virtualaddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|Bir blok sanal adres (VA) alır.|  
-|[Idialinenumber::get_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|Bir blok bayt sayısını alır.|  
-|[Idialinenumber::get_sourcefileıd](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|Bu satırı katkıda bulunan kaynak dosya için bir benzersiz kaynak dosya tanımlayıcı alır.|  
-|[Idialinenumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Bu satır bilgileri program kaynak deyiminde başlangıcını açıklar belirten bir bayrak alır.|  
-|[Idialinenumber::get_compilandıd](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Bu satırı katkıda derlenecek için benzersiz tanımlayıcıyı alır.|  
+|[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Görüntü metnin bayt katkıda derlenecek dosya simgesi için bir başvuru alır.|  
+|[IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|Kaynak dosya nesnesine başvuru alır.|  
+|[IDiaLineNumber::get_lineNumber](../../debugger/debug-interface-access/idialinenumber-get-linenumber.md)|Kaynak dosya satır numarasını alır.|  
+|[IDiaLineNumber::get_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Sona ereceği deyiminin veya ifadesinin kaynak tabanlı satır numarasını alır.|  
+|[IDiaLineNumber::get_columnNumber](../../debugger/debug-interface-access/idialinenumber-get-columnnumber.md)|İfade veya deyimin başladığı sütun sayısını alır.|  
+|[IDiaLineNumber::get_columnNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-columnnumberend.md)|İfade veya deyimin bittiği sütun sayısını alır.|  
+|[IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Bir blok başladığı bellek adresi bölüm parçası alır.|  
+|[IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Bir blok başladığı bellek adresi uzaklık parçası alır.|  
+|[IDiaLineNumber::get_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|Görüntü göreli sanal adres (RVA) bloğunun alır.|  
+|[IDiaLineNumber::get_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|Bir blok sanal adres (VA) alır.|  
+|[IDiaLineNumber::get_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|Bir blok bayt sayısını alır.|  
+|[IDiaLineNumber::get_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|Bu satırı katkıda bulunan kaynak dosya için bir benzersiz kaynak dosya tanımlayıcı alır.|  
+|[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Bu satır bilgileri program kaynak deyiminde başlangıcını açıklar belirten bir bayrak alır.|  
+|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Bu satırı katkıda derlenecek için benzersiz tanımlayıcıyı alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
   
@@ -146,4 +147,4 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiaenumlinenumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [Idiaenumlinenumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)   
- [Idiaenumlinenumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)
+ [IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: ea51f2b4b11680c07d9e7344d097b954a57d3f4d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5f4456899b724d8a7cd2dba6039b28eee29bfafd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Bir Özel Konak kullanarak Metin Şablonlarını İşleme
 *Metin şablonu dönüştürme* işlem alır bir *metin şablonu* dosyası olarak giriş ve çıkış olarak bir metin dosyası oluşturur. Metin dönüştürme altyapısı çağırabilirsiniz bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uzantısı, veya bir makinede çalışan bir tek başına uygulamasından [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yüklenir. Ancak, sağlamanız gereken bir *metin şablon konak*. Bu sınıf, derlemeler ve ekleme dosyaları gibi kaynakları bularak ve çıktı ve hata iletilerini işleme alarak şablonu ortama bağlar.  
@@ -52,15 +53,15 @@ string output = engine.ProcessTemplate(templateString, host);
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>tanımlanan **Microsoft.VisualStudio.TextTemplating.\*. 0. dll**, ve <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> tanımlanan **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0. dll**.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [İzlenecek yol: özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
+ [İzlenecek yol: Özel Metin Şablonu Konağı Oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
  Metin şablonu işlevselliği kullanılabilir dışına yapar özel metin şablonu konağı oluşturma gösterilmektedir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="reference"></a>Başvuru  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md)  
+ [Metin Şablonu Dönüştürme Süreci](../modeling/the-text-template-transformation-process.md)  
  Metin dönüştürmenin nasıl çalıştığını ve hangi kısımları özelleştirebileceğinizi açıklar.  
   
- [Özel T4 metin şablonu yönerge işlemcileri oluşturma](../modeling/creating-custom-t4-text-template-directive-processors.md)  
+ [Özel T4 Metin Şablonu Yönerge İşlemcileri Oluşturma](../modeling/creating-custom-t4-text-template-directive-processors.md)  
  Metin şablonu yönerge işlemcilerine genel bakış sağlar.

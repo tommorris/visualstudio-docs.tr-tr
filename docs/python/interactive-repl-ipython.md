@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 856e8b3f13c5938dd6bd7ec1465bda9715636875
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 33a6c3b57ae47e25eeaeb22c245e77c8a810d9a2
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Etkileşimli pencerede IPython kullanma
 
@@ -31,7 +32,7 @@ Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerek
 
 1. Bakmak **paketleri** (veya **PIP**) sekmesini ve emin `IPython` ve `matplotlib` listelenir. Yoksa, bunları burada yükleyin.
 
-1. Seçin **genel bakış** sekmesinde ve seçin **kullanım IPython etkileşimli mod.** (Visual Studio 2015'te seçin **etkileşimli seçenekleri yapılandırın** açmak için **seçenekleri** iletişim kutusunda, ardından **etkileşimli mod** IPython ve seçin **Tamam** ).    
+1. Seçin **genel bakış** sekmesinde ve seçin **kullanım IPython etkileşimli mod.** (Visual Studio 2015'te seçin **etkileşimli seçenekleri yapılandırın** açmak için **seçenekleri** iletişim kutusunda, ardından **etkileşimli mod** IPython ve seçin **Tamam** ).
 
 1. Seçin **açık etkileşimli pencere** IPython modunda etkileşimli penceresi getirmek için. Etkileşimli mod yalnızca değiştirdiyseniz penceresi sıfırlamanız gerekebilir; yalnızca Enter tuşuna basın gerekebilir bir >>> istemi belirir.
 
@@ -75,11 +76,11 @@ Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerek
     ![Kod Düzenleyicisi'nden etkileşimli penceresine gönderme](media/ipython-repl-05.png)
 
 1. Etkileşimli penceresinin dışında grafikleri görmek için bunun yerine kodu çalıştırmak **hata ayıklama > hata ayıklama olmadan Başlat** komutu.
-    
+
 IPython değişkeni değiştirme sistem Kabuk kaçış gibi birçok diğer yararlı özellikleri yakalama çıktı, vb. vardır. Başvurmak [IPython belgelerine](http://ipython.org/documentation.html) daha fazla bilgi için.
 
 ## <a name="related-topics"></a>İlgili konular
 
 - Jupyter kolayca ve yükleme olmadan kullanmak için ücretsiz olarak deneyin [Azure not defterlerini barındırılan hizmeti](https://notebooks.azure.com/) tutun ve defterlerinizi başkalarıyla paylaşmanızı sağlayan.
 
-- Jupyter (önceki adıyla IPython da bilinir), kendi Windows veya Linux sanal makineye Azure üzerinde de çalıştırabilirsiniz. Ayrıntılar için bkz [bir Azure VM Jupyter yükleme ve Jupyter not defteri Azure üzerinde çalışan oluşturuluyor.](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).
+- Jupyter (önceki adıyla IPython da bilinir), kendi Windows veya Linux sanal makineye Azure üzerinde de çalıştırabilirsiniz. Ayrıntılar için bkz [bir Azure VM Jupyter yükleme ve Jupyter not defteri Azure üzerinde çalışan oluşturuluyor.](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).

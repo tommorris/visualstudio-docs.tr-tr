@@ -11,12 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 0219ff704e22ab1c27d47e312825a66cb3a15166
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 516bd2de626fa7a5ffcbf4234c849e81860b9e08
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Taşınabilir, özel düzenleyici ayarları EditorConfig ile oluşturma
 
@@ -32,43 +31,86 @@ Kodlama kuralları kişisel projelerinizi kullandığınız ekibinizin projelerd
 
 Codebase dosyasında ayarları içerdiğinden bu codebase birlikte seyahat. Kod dosyası EditorConfig uyumlu bir düzenleyicide açın sürece, metin düzenleyici ayarları uygulanır. EditorConfig dosyaları hakkında daha fazla bilgi için bkz: [EditorConfig.org](http://editorconfig.org/) Web sitesi.
 
-## <a name="override-editorconfig-settings"></a>EditorConfig ayarları geçersiz kılar
-
-Dosya hiyerarşinizdeki bir klasöre bir .editorconfig dosya eklediğinizde, tüm dosyalara uygulanabilir o düzeyde ve aşağıda ayarlarını uygulayın. Belirli bir projenin EditorConfig ayarları geçersiz kılabilir veya üst düzey EditorConfig dosya farklı kuralları kullanır, codebase için bir .editorconfig dosyası temelinizde 's depoyu veya proje dizininin kökü için eklemeniz yeterlidir. Yerleştirdiğinizden emin olun ```root=true``` Visual Studio .editorconfig dosyaları için dizin yapısını daha fazla görünmüyor şekilde dosyasında özellik. Aynı düzeydeki ve tüm alt dizinlerdeki dosyalara yeni EditorConfig dosyası ayarlarını uygulayın.
-
-```
-# top-most EditorConfig file
-root = true
-```
-
-![EditorConfig hiyerarşisi](../ide/media/vside_editorconfig_hierarchy.png)
-
-EditorConfig dosyaları yukarıdan aşağıya okunur ve en yakın EditorConfig dosyaları son okuyun. Kuralları daha yakından dosyalarında önceliklidir şekilde EditorConfig bölümleri eşleşen gelen kuralları okundu, sırayla uygulanır.
-
 ## <a name="supported-settings"></a>Desteklenen ayarları
 
-Visual Studio düzenleyicisinde aşağıdaki çekirdek kümesinden destekleyen [EditorConfig özellikleri](http://editorconfig.org/#supported-properties):
+Visual Studio düzenleyicisinde çekirdek kümesini destekler [EditorConfig özellikleri](http://editorconfig.org/#supported-properties):
 
 - indent_style
 - indent_size
 - tab_width
 - Son\_of_line
 - karakter kümesi
+- Trim\_trailing_whitespace
+- INSERT\_final_newline
 - kök
 
 EditorConfig Düzenleyici ayarları XML dışında Visual Studio tarafından desteklenen tüm dillerde desteklenir. Ayrıca, EditorConfig destekleyen [kod stili](../ide/editorconfig-code-style-settings-reference.md) ve [adlandırma](../ide/editorconfig-naming-conventions.md) C# ve Visual Basic için kuralları.
-
-## <a name="editing-editorconfig-files"></a>EditorConfig dosyalarını düzenleme
-
-Visual Studio .editorconfig dosyalarını düzenlemek için bazı IntelliSense sağlar. Çok sayıda .editorconfig dosya düzenlerseniz, bulabilirsiniz [EditorConfig dil hizmeti](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) uzantısı yararlıdır.
-
-EditorConfig dosyanızı düzenlenebilir sonra yeni ayarların etkili olması için kod dosyaları yeniden yüklemeniz gerekir.
 
 ## <a name="adding-and-removing-editorconfig-files"></a>Ekleme ve EditorConfig dosyaları kaldırılıyor
 
 Bir EditorConfig ekleyerek dosya projenize veya codebase varolan stilleri yenilerini dönüştürmez. Örneğin, sekmelerle biçimlendirilmiş girintileri dosyanızdaki varsa ve alanları ile girintileri bir EditorConfig dosyası ekleyin, girinti karakter boşlukları dönüştürülmez. Ancak, herhangi bir yeni satırları kod EditorConfig dosyanın göre biçimlendirilir.
 
 Projenizden bir EditorConfig dosyayı kaldırın veya codebase kapatın ve yeni satır kod genel Düzenleyicisi ayarlarını geri dönmek için tüm açık kod dosyaları açın.
+
+### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>Proje ya da çözüm EditorConfig dosya eklemek için
+
+1. Proje ya da çözüm Visual Studio'da açın. .Editorconfig ayarlarınızı Çözümdeki tüm projeleri veya tek uygulamalıdır bağlı olarak, proje ya da çözüm düğümünü seçin. Proje veya çözüm .editorconfig dosyasına eklemek için bir klasör de seçebilirsiniz.
+
+1. Menü çubuğundan seçin **proje** > **Yeni Öğe Ekle... **, veya basın **Ctrl**+**Shift**+**A**.
+
+   **Yeni Öğe Ekle** iletişim kutusu açılır.
+
+1. Sol taraftaki kategorileri seçin **genel**ve ardından **metin dosyası** şablonu. İçinde **adı** metin kutusuna `.editorconfig` ve ardından **Ekle**.
+
+   Çözüm Gezgini'nde bir .editorconfig dosyası görünür ve Düzenleyicisi'nde açar.
+
+   ![Çözüm Gezgini'nde .editorconfig dosyası](media/editorconfig-in-solution-explorer.png)
+
+1. Örneğin dosyayı istediğiniz gibi düzenleyin:
+
+```EditorConfig
+root = true
+
+[*.{cs,vb}]
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.cs]
+csharp_new_line_before_open_brace = methods
+```
+
+Alternatif olarak, yükleme [EditorConfig dil hizmeti uzantı](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig). Bu uzantıyı yükledikten sonra seçmeniz yeterlidir **Ekle** > **.editorconfig dosya** çözüm düğüm, proje düğümüne ya da Çözüm Gezgini'nde herhangi bir klasörü sağ tıklatın veya bağlam menüsünden.
+
+![.Editorconfig dosya uzantısı Ekle](media/editorconfig-extension-add.png)
+
+## <a name="override-editorconfig-settings"></a>EditorConfig ayarları geçersiz kılar
+
+Dosya hiyerarşinizdeki bir klasöre bir .editorconfig dosya eklediğinizde, tüm dosyalara uygulanabilir o düzeyde ve aşağıda ayarlarını uygulayın. Codebase diğer bölümleri daha farklı kuralları kullanır, belirli bir projede, codebase veya bir codebase parçası EditorConfig ayarlarını geçersiz kılabilirsiniz. Başka bir yere koddan birleştirme ve onun kuralları değiştirmek istemiyorsanız bu kullanışlı olabilir.
+
+Bazılarını veya tümünü EditorConfig ayarlarını geçersiz kılmak için bu geçersiz kılınan ayarların uygulanmasını istediğiniz dosya hiyerarşisi düzeyinde bir .editorconfig dosyası ekleyin. Aynı düzeyinde ve alt dizinlerdeki dosyalara yeni EditorConfig dosyası ayarlarını uygulayın.
+
+![EditorConfig hiyerarşisi](../ide/media/vside_editorconfig_hierarchy.png)
+
+Eklediğiniz bazı geçersiz kılmak istiyor ancak ayarlarının tümünü basitçe belirtmek bu ayarları .editorconfig dosyasında. Alt düzey dosyasında açıkça listeleyen özellikleri geçersiz kılınır. Üst düzey .editorconfig dosyaları'nden diğer ayarlar uygulanmaya devam edecek. Emin olmak istiyorsanız _hiçbir_ ayarlarından _herhangi_ üst düzey .editorconfig dosyaları, bu codebase kısmına uygulanır, ekleme ```root=true``` alt düzey .editorconfig dosya özelliğine:
+
+```EditorConfig
+# top-most EditorConfig file
+root = true
+```
+
+EditorConfig dosyaları yukarıdan aşağıya okunur ve en yakın EditorConfig dosyaları son okuyun. Kuralları daha yakından dosyalarında önceliklidir şekilde EditorConfig bölümleri eşleşen gelen kuralları okundu, sırayla uygulanır.
+
+## <a name="editing-editorconfig-files"></a>EditorConfig dosyalarını düzenleme
+
+Visual Studio .editorconfig dosyalarını düzenlemek için bazı IntelliSense sağlar.
+
+![Bir .editorconfig dosyasında IntelliSense](media/editorconfig-intellisense-no-extension.png)
+
+EditorConfig dosyanızı düzenlenebilir sonra yeni ayarların etkili olması için kod dosyaları yeniden yüklemeniz gerekir.
+
+Çok sayıda .editorconfig dosya düzenlerseniz, bulabilirsiniz [EditorConfig dil hizmeti uzantı](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) yararlıdır. Bu uzantı özelliklerinden bazıları, sözdizimi vurgulama, geliştirilmiş IntelliSense, doğrulama ve biçimlendirme kodu içerir.
+
+![IntelliSense EditorConfig dil hizmeti uzantı ile](media/editorconfig-intellisense.png)
 
 ## <a name="example"></a>Örnek
 
@@ -82,7 +124,7 @@ Beklendiği gibi tuşuna basarak **sekmesini** sonraki satıra anahtar dört ek 
 
 Aşağıdaki içeriğe sahip projesine .editorconfig adlı yeni bir dosya ekleyeceğiz. `[*.cs]` Ayarlama, bu değişikliği yalnızca C# kod dosyaları proje uygulandığı anlamına gelir.
 
-```
+```EditorConfig
 # Top-most EditorConfig file
 root = true
 
@@ -107,7 +149,7 @@ Bu olması durumunda tüm Düzenleyicisi ayarlarında anlamına gelir **Araçlar
 
 Bir komut istemi açıp projenizi içeren disk kökünden aşağıdaki komutu çalıştırarak yararlı dizinleri üst .editorconfig dosyalarla bulabilirsiniz:
 
-```
+```Shell
 dir .editorconfig /s
 ```
 

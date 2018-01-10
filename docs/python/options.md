@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio'da Python seçenekleri | Microsoft Docs"
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -19,11 +19,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6776eee4436e54ca1b0215b307eeb5fa098802c3
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio'da Python için seçenekleri
 
@@ -40,6 +40,8 @@ Belirli seçenekler aşağıdaki bölümlerde açıklanmıştır:
 - [Tanılama seçenekleri](#diagnostics-options)
 - [Etkileşimli Windows seçenekleri](#interactive-windows-options)
 - [Gelişmiş Python Düzenleyici Seçenekleri](#advanced-python-editor-options)
+
+Unutmayın **Experimental** grubu özellikleri hala geliştirilmektedir ve burada belgelenmemiş seçenekleri içerir. Bunlar genellikle gönderilerde üzerinde ele alınan [Microsoft blogu Python mühendislik](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="general-options"></a>Genel seçenekleri
 
@@ -69,7 +71,6 @@ Belirli seçenekler aşağıdaki bölümlerde açıklanmıştır:
 | Python standart kitaplığı hata ayıklamayı etkinleştir | Kapalı | Bu adıma standart kitaplığı kaynak kodunda hata ayıklama sırasında mümkün hale getirir, ancak başlatmak hata ayıklayıcı için geçen süreyi artırır.|
 
 ![Python Seçenekleri iletişim kutusu, hata ayıklama sekmesi](media/options-debugging.png)
-
 
 ## <a name="diagnostics-options"></a>Tanılama seçenekleri
 

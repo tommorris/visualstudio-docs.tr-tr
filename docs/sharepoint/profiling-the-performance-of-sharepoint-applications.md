@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 70c058f6c930b9eb58cf0518d3418ccedcf083b4
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>SharePoint Uygulamaları için Performans Profili Oluşturma
   SharePoint uygulamaları yavaş veya inefficiently gerçekleştiriyorsanız sorunlu kod ve diğer öğeleri tanımlamak için Visual Studio profil özellikleri kullanabilirsiniz. Özellik sınama yük kullanarak, ne zaman çok sayıda kullanıcı uygulamaya aynı anda erişim gibi yük altında bir SharePoint uygulama gerçekleştirir belirleyebilirsiniz. Web performans testleri çalıştırarak uygulama Web'de nasıl gerçekleştireceğini ölçebilirsiniz. Kodlanmış UI testleri kullanarak kendi kullanıcı arabirimi dahil olmak üzere tüm SharePoint uygulama doğru şekilde işlev olup olmadığını doğrulayabilirsiniz. Bu testler birlikte kullanıldığında, bunlar Uygulamanızı dağıtmadan önce performans sorunları belirlemenize yardımcı olabilir.  
@@ -66,9 +66,7 @@ ms.lasthandoff: 12/22/2017
 |[Kodunuza Birim Testi Uygulama](/visualstudio/test/unit-test-your-code)|Birim testleri kullanarak kodunuzda mantık hataları bulmak açıklar.|  
 |[Kodlanmış UI Testleriyle SharePoint 2010 Uygulamalarını Test Etme](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|SharePoint uygulamaları kullanıcı arabirimini test edileceğini açıklar.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Uygulamayı test etme](/devops-test-docs/test/test-apps-early-and-often)   
- [Kod Kalitesini Geliştirme](/visualstudio/test/improve-code-quality)  
-  
-  
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[SharePoint Çözümleri Oluşturma ve Hatalarını Ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+[Kod Kalitesini Geliştirme](/visualstudio/test/improve-code-quality)

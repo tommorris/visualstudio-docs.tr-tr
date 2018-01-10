@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: cd1ce1ce47705e5e8b63fb3ef7cc36c401503886
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a8136bd3e694ae544b176b8da6bfc2b721eb0c89
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python desteğini yükleme
 
@@ -27,7 +27,7 @@ Visual Studio için Python desteği yüklemek için Visual Studio sürümünüzl
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 ve önceki sürümleri](#visual-studio-2013-and-earlier)
 
-Visual Studio 2015 için ve önceki de tercih ettiğiniz bir Python yorumlayıcısı ayrı olarak yüklemeniz gerekir (Python 3.5 ve daha önce; 3.6 desteklenmez). Ayrıntılar için bkz [Python ortamları](python-environments.md). Aynı sayfada Ayrıca varolan bir Python yorumlayıcısı için Visual Studio 2017 eklemek için yönergeler içerir.
+Visual Studio 2015 için ve önceki de tercih ettiğiniz bir Python yorumlayıcısı ayrı olarak yüklemeniz gerekir (Python 3.5 ve daha önce; 3.6 desteklenmiyor ve ileti "desteklenmeyen Python sürümü 3.6" oluşturur). Ayrıntılar için bkz [Python ortamları](python-environments.md). Aynı sayfada Ayrıca varolan bir Python yorumlayıcısı için Visual Studio 2017 eklemek için yönergeler içerir.
 
 Hızlı yükleme adımlarını izleyerek sonra Python desteği test etmek için Alt tuşuna basarak Python etkileşimli penceresini açın-t ve girerek `2+2`. Çıktısını görmüyorsanız, `4`, adımlarınızı yeniden denetleyin.
 
@@ -60,10 +60,10 @@ Hızlı yükleme adımlarını izleyerek sonra Python desteği test etmek için 
 
     ![Visual Studio yükleyicisinde Python geliştirme seçenekleri](media/installation-python-options.png)
 
-    | Seçenek | Açıklama | 
+    | Seçenek | Açıklama |
     | --- | --- |
     | Python dağıtımları | Herhangi bir bileşimini çalışmak için planlama Python 2, Python 3, Anaconda2 ve Anaconda3 dağıtımları 32-bit ve 64-bit çeşitlemelerini seçin. Her dağıtım 's Yorumlayıcı, çalışma zamanı ve kitaplıklarını içerir. Anaconda, özellikle çok çeşitli paketler içeren bir açık veri bilimi platformudur. (Visual Studio yükleyicisi eklemek veya kaldırmak dağıtımları için herhangi bir zamanda döndürebilir.) |
-    | Cookiecutter şablon desteği | Şablonları bulmak, şablon seçenekleri giriş ve projeler ve dosyaları oluşturmak için Cookicutter grafik kullanıcı arabirimini yükler. Bkz: [Cookicutter uzantısını kullanarak](cookiecutter.md). |
+    | Cookiecutter şablon desteği | Şablonları bulmak, şablon seçenekleri giriş ve projeler ve dosyaları oluşturmak için Cookiecutter grafik kullanıcı arabirimini yükler. Bkz: [Cookiecutter uzantısını kullanarak](cookiecutter.md). |
     | Python web desteği | HTML, CSS ve JavaScript desteği, Bottle, Flask ve Django çerçeveleri kullanarak projeleri için şablonlar yanı sıra düzenleme dahil olmak üzere web geliştirme araçları'nı yükler. Bkz: [Python web projesi şablonları](template-web.md). |
     | Python IOT desteği | Python kullanarak Windows IOT Core geliştirme destekler. |
     | Python yerel geliştirme araçları | C++ derleyicisi ve Python için yerel uzantılar geliştirmek üzere diğer gerekli bileşenleri yükler. Bkz: [Python için C++ uzantısı oluşturma](cpp-and-python.md). |
@@ -83,7 +83,7 @@ Hızlı yükleme adımlarını izleyerek sonra Python desteği test etmek için 
 
 1. Seçin **programlama dilleri > Visual Studio için Python Araçları** ve ardından **sonraki**:
 
-    ![Visual Studio 2015 yükleyici PTVS seçeneği](media/installation-vs2015.png)    
+    ![Visual Studio 2015 yükleyici PTVS seçeneği](media/installation-vs2015.png)
 
 1. Visual Studio Kurulumu tamamlandıktan sonra [tercih ettiğiniz bir Python yorumlayıcısı yüklemek](python-environments.md#selecting-and-installing-python-interpreters). Yüklü bir yorumlayıcı zaten varsa, bkz: [bir ortam için varolan bir yorumlayıcı oluşturma](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 
@@ -114,11 +114,11 @@ Visual Studio 2015 ve önceki sürümlerinde, yükleme yolu aşağıdaki gibidir
 
 burada:
 
-- &lt;VS_ver&gt; değil:    
-    - Visual Studio 2015 için 14.0
-    - Visual Studio 2013 için 12.0
-    - Visual Studio 2012 için 11.0
-    - Visual Studio 2010 için 10.0
+- &lt;VS_ver&gt; değil:
+  - Visual Studio 2015 için 14.0
+  - Visual Studio 2013 için 12.0
+  - Visual Studio 2012 için 11.0
+  - Visual Studio 2010 için 10.0
 - &lt;PTVS_ver&gt; 2.2, 2.1, 2.0, 1.5, 1.1 ve 1.0 gibi bir sürüm numarası.
 
 ### <a name="user-specific-installations-15-and-earlier"></a>Kullanıcıya özgü yüklemeleri (1.5 ve önceki sürümler)

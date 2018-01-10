@@ -7,31 +7,20 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
-caps.latest.revision: "22"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d44026c2a4424cbacd16af57d3fb132d23ba8068
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 782a68e61786121095d3bf730dbd053564bad1cf
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Denetimlerinizin Kodlanmış UI Testlerini Etkinleştirme
-Kodlanmış UI test çerçevesi için destek uygularsanız, denetim daha kolayca sınanabilir. Artan düzeyde destek artımlı olarak ekleyebilirsiniz. Kaydı ve kayıttan yürütme ve özellik doğrulama destekleyerek başlatabilirsiniz. Bu konudaki denetiminizin özel özellikler tanımak kodlanmış UI test derleyicisini izin vermek için oluşturun ve oluşturulan koddan bu özelliklere erişmek için özel sınıflar sağlar. Kodlanmış UI test Oluşturucu yakalama eylemlerini kaydedilen eylem amacı yakın bir şekilde de yardımcı olabilir.  
-  
- **Bu konuda:**  
-  
-1.  [Erişilebilirlik uygulayarak kaydı ve kayıttan yürütme ve özellik doğrulama desteği](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
-  
-2.  [Bir özellik sağlayıcısı uygulayarak özel özellik doğrulama desteği](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
-  
-3.  [Erişim özel özellikleri sınıfına uygulayarak kod oluşturma desteği](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
-  
-4.  [Bir eylem filtresi uygulayarak hedefi algılayan eylemleri destekler](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
-  
- ![CUIT &#95; Tam](../test/media/cuit_full.png "CUIT_Full")  
+Kodlanmış UI test çerçevesi için destek uygularsanız, denetim daha kolayca sınanabilir. Artan düzeyde destek artımlı olarak ekleyebilirsiniz. Kaydı ve kayıttan yürütme ve özellik doğrulama destekleyerek başlatabilirsiniz. Bu konudaki denetiminizin özel özellikler tanımak kodlanmış UI test derleyicisini izin vermek için oluşturun ve oluşturulan koddan bu özelliklere erişmek için özel sınıflar sağlar. Kodlanmış UI test Oluşturucu yakalama eylemlerini kaydedilen eylem amacı yakın bir şekilde de yardımcı olabilir.
+
+![CUIT &#95; Tam](../test/media/cuit_full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a>Erişilebilirlik uygulayarak kaydı ve kayıttan yürütme ve özellik doğrulama desteği  
  Kodlanmış UI test derleyicisini kayıt sırasında karşılaştığı ve bu oturuma yeniden yürütme için kod oluşturur denetimleri hakkında bilgi yakalar. Denetim erişilebilirlik desteklemiyorsa, kodlanmış UI test derleyicisini ekran koordinatları kullanarak (fare tıklamaları gibi) eylemleri yakalar. Test geri yürütüldüğünde oluşturulan kod bu fare tıklatma aynı ekran koordinatları ile gönderirsiniz. Testi kayıttan yürütülürken denetiminizi farklı bir yerde ekranda görünürse oluşturulan kod denetiminizde bu eylemi gerçekleştirmek başarısız olur. Testi farklı ekran yapılandırmalarında, farklı ortamlar veya olmuştur sonra UI düzeninde değişiklikler geri çalınırsa, bu hatalarına neden olabilir.  
@@ -86,10 +75,11 @@ Kodlanmış UI test çerçevesi için destek uygularsanız, denetim daha kolayca
   
  ![CUIT &#95; CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")  
   
-### <a name="to-support-custom-property-validation"></a>Özel özellik doğrulamayı desteklemek için  
- ![CUIT &#95; Özellik](../test/media/cuit_props.png "CUIT_Props")  
-  
-1.  Eğri gösterge erişilebilir nesnenin geçersiz kılma <xref:System.Windows.Forms.AccessibleObject.Description%2A> özellik açıklama dizesi zengin özellik değerleri geçirmek için noktalı virgülle (;) ana Açıklama (ve birbirlerine birden çok özellik uyguluyorsanız) ayrılmış.  
+### <a name="to-support-custom-property-validation"></a>Özel özellik doğrulamayı desteklemek için
+
+![CUIT &#95; Özellik](../test/media/cuit_props.png "CUIT_Props")
+
+1. Eğri gösterge erişilebilir nesnenin geçersiz kılma <xref:System.Windows.Forms.AccessibleObject.Description%2A> özellik açıklama dizesi zengin özellik değerleri geçirmek için noktalı virgülle (;) ana Açıklama (ve birbirlerine birden çok özellik uyguluyorsanız) ayrılmış.  
   
     ```csharp  
     public class CurveLegendAccessibleObject : AccessibleObject  
@@ -106,99 +96,87 @@ Kodlanmış UI test çerçevesi için destek uygularsanız, denetim daha kolayca
         }  
     }  
     ```  
-  
-2.  Bir UI testi uzantısı paketi denetlemek için bir sınıf kitaplığı projesi oluşturarak oluşturun ve erişilebilirlik, Microsoft.VisualStudio.TestTools.UITesting, Microsoft.VisualStudio.TestTools.UITest.Common, başvurular ekleyin ve Microsoft.VisualStudio.TestTools.Extension. Değişiklik **birlikte çalışma türlerini katıştır** erişilebilirlik için **False**.  
-  
-3.  Türetilmiş bir özellik sağlayıcısı sınıfı ekleme <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>.  
-  
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using Accessibility;  
-    using Microsoft.VisualStudio.TestTools.UITesting;  
-    using Microsoft.VisualStudio.TestTools.UITest.Extension;  
-    using Microsoft.VisualStudio.TestTools.UITesting.WinControls;  
-    using Microsoft.VisualStudio.TestTools.UITest.Common;  
-  
-    namespace ChartControlExtensionPackage  
-    {  
-        public class ChartControlPropertyProvider : UITestPropertyProvider  
-        {  
-        }  
-    }  
-    ```  
-  
-4.  Özellik adları ve özellik tanımlayıcıların koyarak özellik sağlayıcısı uygulayan bir <xref:System.Collections.Generic.Dictionary%602>.  
-  
-<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
-5.  Geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName> derlemenizi denetiminizi ve alt denetim özgü destek sağlar belirtmek için.  
-  
-<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
-6.  Kalan Özet yöntemlerini geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName>.  
-  
-<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
-7.  Türetilmiş bir uzantı paketini sınıfı ekleme <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.  
-  
-<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
-8.  Tanımlamak `UITestExtensionPackage` derleme özniteliği.  
-  
-<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
-9. Uzantı paketini sınıfında geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A?displayProperty=fullName> özellik sağlayıcısı istendiğinde özellik sağlayıcısı sınıfı dönün.  
-  
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
-10. Kalan Özet yöntemlerini ve özelliklerini geçersiz kılmak <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.  
-  
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
-11. İkili dosyaları oluşturmak ve kopyalamak için **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.  
-  
+
+1. Bir UI testi uzantısı paketi denetlemek için bir sınıf kitaplığı projesi oluşturarak oluşturun ve erişilebilirlik, Microsoft.VisualStudio.TestTools.UITesting, Microsoft.VisualStudio.TestTools.UITest.Common, başvurular ekleyin ve Microsoft.VisualStudio.TestTools.Extension. Değişiklik **birlikte çalışma türlerini katıştır** erişilebilirlik için **False**.
+
+1. Türetilmiş bir özellik sağlayıcısı sınıfı ekleme <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>:
+
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+    using Accessibility;
+    using Microsoft.VisualStudio.TestTools.UITesting;
+    using Microsoft.VisualStudio.TestTools.UITest.Extension;
+    using Microsoft.VisualStudio.TestTools.UITesting.WinControls;
+    using Microsoft.VisualStudio.TestTools.UITest.Common;
+
+    namespace ChartControlExtensionPackage
+    {
+        public class ChartControlPropertyProvider : UITestPropertyProvider
+        {
+        }
+    }
+    ```
+
+1. Özellik adları ve özellik tanımlayıcıların koyarak özellik sağlayıcısı uygulayan bir <xref:System.Collections.Generic.Dictionary%602>.
+
+1. Geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName> derlemenizi denetiminizi ve alt denetim özgü destek sağlar belirtmek için.
+
+1. Kalan Özet yöntemlerini geçersiz kılar<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName>
+
+1. Türetilmiş bir uzantı paketini sınıfı ekleme <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.
+
+1. Tanımlamak `UITestExtensionPackage` derleme özniteliği.
+
+1. Uzantı paketini sınıfında geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A?displayProperty=fullName> özellik sağlayıcısı istendiğinde özellik sağlayıcısı sınıfı dönün.
+
+1. Kalan Özet yöntemlerini ve özelliklerini geçersiz kılmak <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.
+
+1. İkili dosyaları oluşturmak ve kopyalamak için **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.  
+
 > [!NOTE]
->  Bu uzantı paketinin "Metin" türünde herhangi bir denetimi uygulanır. Aynı türde birden çok denetim test ediyorsanız ayrı ayrı test ve testleri kaydettiğinizde hangi uzantı paketleri dağıtılan yönetmek gerekir.  
-  
-##  <a name="codegeneration"></a>Erişim özel özellikleri sınıfına uygulayarak kod oluşturma desteği  
- Kodlanmış UI test derleyicisini oturum kaydından kodu oluşturduğunda kullanan <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> denetimlerinizi erişmek için sınıf.  
-  
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
- Denetimin özel özellikler erişim sağlamak için bir özellik sağlayıcısı uyguladık, böylece oluşturulan kod Basitleştirilmiş bu özelliklere erişmek için kullanılan özel bir sınıf ekleyebilirsiniz.  
-  
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
-### <a name="to-add-a-specialized-class-to-access-your-control"></a>Denetim erişmek için özel bir sınıf eklemek için  
- ![CUIT &#95; CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")  
-  
-1.  Türetilmiş bir sınıf uygulama <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> ve denetimin türü oluşturucuda arama özellikleri koleksiyonuna ekleyin.  
-  
-<CodeContentPlaceHolder>12</CodeContentPlaceHolder>  
-2.  Denetimin özel özellikler sınıfının özelliklerine uygular.  
-  
-<CodeContentPlaceHolder>13</CodeContentPlaceHolder>  
-3.  Özellik sağlayıcınızın geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName> gösterge alt denetimleri eğri için yeni bir sınıf türü döndürülecek yöntemi.  
-  
-<CodeContentPlaceHolder>14</CodeContentPlaceHolder>  
-4.  Özellik sağlayıcınızın geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A> yöntemi yeni sınıf PropertyNames yöntemi türünü döndürür.  
-  
-<CodeContentPlaceHolder>15</CodeContentPlaceHolder>  
+> Bu uzantı paketinin "Metin" türünde herhangi bir denetimi uygulanır. Aynı türde birden çok denetim test ediyorsanız ayrı ayrı test ve testleri kaydettiğinizde hangi uzantı paketleri dağıtılan yönetmek gerekir.
+
+##  <a name="codegeneration"></a>Erişim özel özellikleri sınıfına uygulayarak kod oluşturma desteği
+
+Kodlanmış UI test derleyicisini oturum kaydından kodu oluşturduğunda kullanan <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> denetimlerinizi erişmek için sınıf.
+
+Denetimin özel özellikler erişim sağlamak için bir özellik sağlayıcısı uyguladık, böylece oluşturulan kod Basitleştirilmiş bu özelliklere erişmek için kullanılan özel bir sınıf ekleyebilirsiniz.
+
+### <a name="to-add-a-specialized-class-to-access-your-control"></a>Denetim erişmek için özel bir sınıf eklemek için
+
+![CUIT &#95; CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")  
+
+1. Türetilmiş bir sınıf uygulama <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> ve denetimin türü oluşturucuda arama özellikleri koleksiyonuna ekleyin.  
+
+1. Denetimin özel özellikler sınıfının özelliklerine uygular.  
+
+1. Özellik sağlayıcınızın geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName> gösterge alt denetimleri eğri için yeni bir sınıf türü döndürülecek yöntemi.  
+
+1. Özellik sağlayıcınızın geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A> yöntemi yeni sınıf PropertyNames yöntemi türünü döndürür.
+
 ##  <a name="intentawareactions"></a>Bir eylem filtresi uygulayarak hedefi algılayan eylemleri destekler  
  Visual Studio test kaydettiğinde, her fare ve klavye olay yakalar. Ancak, bazı durumlarda, fare ve klavye olaylarının serisinde eylemi amacı kaybedilebilir. Örneğin, denetim otomatik tamamlama destekliyorsa, farklı bir ortamda test geri yürütüldüğünde fare ve klavye olaylarının aynı kümesi farklı bir değer sonuçlanabilir. Klavye ve fare olayları dizi tek bir eylem ile değiştiren bir eylem filtresi eklenti ekleyebilirsiniz. Bu şekilde, bir değerin değeri ayarlar tek bir eylemle seçimdeki kaynaklanan fare ve klavye olaylarını dizi değiştirebilirsiniz. Böylece, kodlanmış UI testleri farklılıkları otomatik tamamlama bir ortamdan diğerine önler.  
   
-### <a name="to-support-intent-aware-actions"></a>Hedefi algılayan eylemleri desteklemek için  
- ![CUIT &#95; Eylemler](../test/media/cuit_actions.png "CUIT_Actions")  
-  
-1.  Türetilmiş bir eylem filtresi sınıf uygulama <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, özelliklerini geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> ve <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.  
-  
-<CodeContentPlaceHolder>16</CodeContentPlaceHolder>  
-2.  Geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>. Örnek realpces çift tıklatma eylemi tek bir eylemi buraya tıklayın.  
-  
-<CodeContentPlaceHolder>17</CodeContentPlaceHolder>  
-3.  Eylem Filtresi Ekle <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> uzantısı paketinin yöntemi.  
-  
-<CodeContentPlaceHolder>18</CodeContentPlaceHolder>  
-4.  İkili dosyaları oluşturmak ve bunları %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages kopyalayın.  
-  
+### <a name="to-support-intent-aware-actions"></a>Hedefi algılayan eylemleri desteklemek için
+
+![CUIT &#95; Eylemler](../test/media/cuit_actions.png "CUIT_Actions")  
+
+1. Türetilmiş bir eylem filtresi sınıf uygulama <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, özelliklerini geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> ve <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>. 
+
+1. Geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>. Örnek realpces çift tıklatma eylemi tek bir eylemi buraya tıklayın.
+
+1. Eylem Filtresi Ekle <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> uzantısı paketinin yöntemi.
+
+1. İkili dosyaları oluşturmak ve bunları %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages kopyalayın.
+
 > [!NOTE]
->  Eylem filtresi erişilebilirlik uygulama veya özellik sağlayıcısı bağlı değildir.  
-  
-## <a name="debug-your-property-provider-or-action-filter"></a>Özellik sağlayıcısı veya eylem filtresi hata ayıklama  
- Özellik sağlayıcısı ve eylem filtresi, yüklenen ve kodlanmış UI test derleyicisini uygulamanızdan ayrı bir işlemde tarafından çalıştırılan uzantı paketinin uygulanır.  
-  
+> Eylem filtresi erişilebilirlik uygulama veya özellik sağlayıcısı bağlı değildir.
+
+## <a name="debug-your-property-provider-or-action-filter"></a>Özellik sağlayıcısı veya eylem filtresi hata ayıklama
+
+Özellik sağlayıcısı ve eylem filtresi, yüklenen ve kodlanmış UI test derleyicisini uygulamanızdan ayrı bir işlemde tarafından çalıştırılan uzantı paketinin uygulanır.
+
 #### <a name="to-debug-your-property-provider-or-action-filter"></a>Özellik sağlayıcısı veya eylem filtresi hata ayıklamak için  
   
 1.  Hata ayıklama sürümü uzantı paketini kopyasının .dll ve %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages .pdb dosyaları oluşturun.  

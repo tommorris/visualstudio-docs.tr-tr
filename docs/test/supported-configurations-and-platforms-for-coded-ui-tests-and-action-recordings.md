@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: coded UI tests
-ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
-caps.latest.revision: "106"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 580187da1ceb95369eb9da085248016a9d9a1707
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+author: gewarren
+ms.openlocfilehash: d2cc29115108b1a5d308a227ed0be30d44e56d67
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar
 Desteklenen yapılandırmalar ve platformlar için Visual Studio Enterprise için kodlanmış UI testleri aşağıdaki tabloda listelenmiştir. Bu yapılandırmalar kullanılarak oluşturulan eylem kayıtları için de geçerlidir. [!INCLUDE[MTRlong](../test/includes/mtrlong_md.md)].  
@@ -70,6 +69,6 @@ Desteklenen yapılandırmalar ve platformlar için Visual Studio Enterprise içi
   
  Diğer platformları destekleyecek uzantılar oluşturma hakkında daha fazla bilgi için bkz: [etkinleştirmek kodlanmış UI testi, bilgisayarınızı denetimleri](../test/enable-coded-ui-testing-of-your-controls.md) ve [genişletme kodlanmış UI testleri ve Eylem kayıtlarını Microsoft Excel'i desteklemek için](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
- [Varolan eylem kaydından kodlanmış UI testi oluşturma](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)  

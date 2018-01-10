@@ -13,11 +13,11 @@ author: ghogen
 ms.author: ghogen
 manager: ghogen
 ms.workload: xamarin
-ms.openlocfilehash: f744bd9535a4946570267de027e7096b41d274e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b72c0a0df85c4c37745faaec4e9d2da269e6c9cd
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Xamarin uygulamalarıyla uygulama yaşam döngüsü yönetimi (ALM)
 Xamarin Android, iOS ve C#, .NET ve Visual Studio kullanarak Windows hedefleme platformlar arası mobil uygulamalar oluşturmanıza olanak sağlar. Xamarin platformlarıyla yalnızca platforma özgü olmasını gerektiren küçük bir yüzdesi arasında paylaşılmak üzere kod büyük bir kısmı sağlar. Xamarin kendisi hakkında daha fazla bilgi için bkz: [Visual Studio ve Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
@@ -80,9 +80,8 @@ Xamarin Android, iOS ve C#, .NET ve Visual Studio kullanarak Windows hedefleme p
 |Yapı tanımlarla öncesi ve sonrası betikleri|Evet||  
 |Sürekli tümleştirme de dahil olmak üzere iadeler geçişli|Evet|Yalnızca Git iadeler yerine bir çekme isteği modeli çalışırken iadeler TFVC'yi için geçişli.|  
   
-## <a name="testing"></a>Sınama  
- Başvuru bağlantısı:  **[uygulamayı test etme](/devops-test-docs/test/test-apps-early-and-often)**  
-  
+## <a name="testing"></a>Sınama
+
 |Özellik|Xamarin ile desteklenen|Ek Açıklamalar|  
 |-------------|----------------------------|-------------------------|  
 |Test paketleri testleri planlama, test çalışmaları oluşturma ve düzenleme|Evet||  

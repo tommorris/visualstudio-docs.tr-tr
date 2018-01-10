@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d87870ef00ceb0a3c66b91975b11038c00bd1dc2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f7460071cc45c8e4994ad0a72d5f26dcce40c853
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>İzlenecek yol: XML Düzenleyicisi özelliklerini kullanma
 Bu izlenecek adımları yeni bir XML belgesi nasıl oluşturacağınızı gösterir. İzlenecek yol da XML yazmak için değerli kılan özelliklerin bir XML Düzenleyicisi'nin kullanır.  
@@ -128,7 +128,7 @@ Bu izlenecek adımları yeni bir XML belgesi nasıl oluşturacağınızı göste
     </xs:complexType>  
   </xs:element>  
 </xs:schema>  
-```  
+```
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML Düzenleyicisi](../xml-tools/xml-editor.md)

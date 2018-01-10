@@ -1,7 +1,7 @@
 ---
 title: "Hızlı Başlangıç: Visual Studio'da var olan koddan Python proje oluşturma | Microsoft Docs"
 ms.custom: 
-ms.date: 09/25/2017
+ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,22 +13,22 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 5f8f5b3baa26bf9c17b016c2a480443af3990256
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6e26a67c8333b343fa00e25540933223b92172dd
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Hızlı Başlangıç: Varolan koddan bir Python projesi oluşturma
 
-Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installation.md), var olan Python kodu bir Visual Studio projeye Getir kolaydır. 
+Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installation.md), var olan Python kodu bir Visual Studio projeye Getir kolaydır.
 
 > [!Important]
 > Burada anlatılan işlemine taşımayın veya özgün kaynak dosyalarını kopyalayın. Bir kopya ile çalışmak isterseniz, klasörü ilk çoğaltma.
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-8. İsterseniz, Ctrl + F5 tuşuna basarak veya seçerek program Çalıştır **hata ayıklama > hata ayıklama olmadan Başlat**. 
+8. İsterseniz, Ctrl + F5 tuşuna basarak veya seçerek program Çalıştır **hata ayıklama > hata ayıklama olmadan Başlat**.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

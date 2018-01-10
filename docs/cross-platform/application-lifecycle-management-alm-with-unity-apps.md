@@ -13,11 +13,11 @@ author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload: unity
-ms.openlocfilehash: c6c22a04348266b4db83984ff194ad1cef2ac668
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4e68024333084b6166305266dd061ef32bc0e14a
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Unity Uygulamaları ile Uygulama Yaşam Döngüsü Yönetimi (ALM)
 Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha fazla etkinlik içerir. Bu etkinlikler başvurulan için DevOps (geliştirme + işlemleri) uygulamanın tam yaşam döngüsü span ve planlama ve iş izleme, tasarlama ve kod, uygulama bir kaynak kod deposu yönetme derlemeleri, çalışan sürekli tümleştirmeler yönetme içerir dağıtımlar, test (dahil, birim testleri ve UI testleri) tanılama çeşitli biçimlerde hem geliştirme hem de üretim ortamlarında çalışan ve uygulama performansı ve kullanıcı davranışlarını telemetri ve analiz ile gerçek zamanlı izleme.  
@@ -84,8 +84,7 @@ Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha 
 |Yapı tanımlarla öncesi ve sonrası betikleri|Evet|Unity komut satırı derleme çalıştırmak için kullandığı bir özel derleme tanımı öncesi ve sonrası betikler için de yapılandırılabilir.|  
 |Sürekli tümleştirme de dahil olmak üzere iadeler geçişli|Evet|Yalnızca Git iadeler yerine bir çekme isteği modeli çalışırken iadeler TFVC'yi için geçişli.|  
 
-## <a name="testing"></a>Sınama  
- Başvuru bağlantısı:  **[uygulamayı test etme](/devops-test-docs/test/test-apps-early-and-often)**  
+## <a name="testing"></a>Sınama
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|  
 |-------------|--------------------------|-------------------------|  
@@ -96,8 +95,9 @@ Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha 
 |[Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)|Unity ancak değil Visual Studio içinde|Unity sağlar, kendi birim testi çerçevesini parçası olarak [Unity Test Araçları](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity varlık deposu). Birim testi sonuçları Unity içinde bildirilen ve Visual Studio içinde ortaya değil.|  
 |[Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)|Hayır|Kodlanmış UI testleri uygulamanın kullanıcı arabiriminde okunabilir denetimleri kullanır; Unity uygulamaları doğası gereği grafik ve bu nedenle içeriği kodlanmış UI test araçları tarafından okunabilir değil.|  
 
-## <a name="improve-code-quality"></a>Kod kalitesini geliştirme  
- Başvuru bağlantısı:  **[kod kalitesini geliştirmek](/visualstudio/test/improve-code-quality)**  
+## <a name="improve-code-quality"></a>Kod kalitesini geliştirme
+
+Başvuru bağlantısı:  **[kod kalitesini geliştirmek](/visualstudio/test/improve-code-quality)**  
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|  
 |-------------|--------------------------|-------------------------|  

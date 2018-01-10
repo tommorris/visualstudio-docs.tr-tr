@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 77e0557e57831348d0736ca8d8d25189c631e010
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="schema-cache"></a>Şema önbelleği
 XML Düzenleyicisi'ni %InstallRoot%\Xml\Schemas dizininde yer alan bir şema önbelleği sağlar. Şema önbelleği, bilgisayardaki tüm kullanıcılar için geneldir ve IntelliSense ve XML belge doğrulama için kullanılan standart XML şemaları içerir.  
@@ -54,13 +54,13 @@ XML Düzenleyicisi'ni %InstallRoot%\Xml\Schemas dizininde yer alan bir şema ön
   
  XML Düzenleyicisi'ni şema katalog dosyaları herhangi bir sayıda şema önbellek dizininde de destekler. Şema kataloglar diğer konumları hakkında bilgi edinmek için Düzenleyicisi her zaman istediğiniz şemaları için işaret edebilir. Catalog.xsd dosya katalog dosyası biçimini tanımlar ve şema önbellek dizininde bulunur. Varsayılan katalog catalog.xml dosyasıdır ve diğer şemalar % InstallDir % bağlantılar içerir. Bir örnekleme catalog.xml dosyasının verilmiştir:  
   
-```  
+```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">  
   <Schema href="%InstallDir%/help/schemas/Favorites.xsd" targetNamespace="urn:Favorites-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/Links.xsd" targetNamespace="urn:Links-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/MyHelp.xsd" targetNamespace="urn:VSHelp-Schema"/>  
 </SchemaCatalog>  
-```  
+```
   
  `href` Özniteliği şemaya işaret eden bir dosya yolu veya http URL'si olabilir. Dosya yolu göreli katalog belge olabilir. Virgülle ayrılan aşağıdaki değişkenleri %% Düzenleyicisi tarafından tanınmıyor ve yolunda genişletilecek:  
   
@@ -82,25 +82,25 @@ XML Düzenleyicisi'ni %InstallRoot%\Xml\Schemas dizininde yer alan bir şema ön
   
 Katalog belge içerebilir bir `Catalog` diğer katalog işaret öğesi. Kullanabileceğiniz `Catalog` takım veya şirket tarafından paylaşılan merkezi bir katalog veya iş ortaklarınızla paylaşılan çevrimiçi katalog işaret etmek için öğesi. `href` Diğer kataloglar dosya yolu veya http URL'si bir özniteliktir. Aşağıdaki örneğidir `Catalog` öğe:  
   
-```  
+```xml
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>  
-```  
+```
   
  Kataloğu, ayrıca nasıl şemaları özel kullanarak XML belgeleri ile ilişkili denetleyebilirsiniz `Association` öğesi. Bu öğe hiçbir hedef ad alanı XML Düzenleyicisi'ni olmayan şemaların herhangi otomatik ilişkilendirme yapmak için yararlı olabilecek belirli dosya uzantısına sahip olan şemaları ilişkilendiren bir `targetNamespace` özniteliği. Aşağıdaki örnekte `Association` öğesi ilişkilendirir dotNetConfig şema "yapılandırma" dosya uzantısına sahip tüm dosyaları:  
   
-```  
+```xml
 <Association extension="config" schema="%InstallDir%/xml/schemas/dotNetConfig.xsd"/>  
-```  
+```
   
 ## <a name="localized-schemas"></a>Yerelleştirilmiş şemaları  
  Çoğu durumda, yerelleştirilmiş şemaları girişlerinde catalog.xml dosya içermiyor. Yerelleştirilmiş şema dizine işaret catalog.xml dosyası için ek girdiler ekleyebilirsiniz.  
   
  Aşağıdaki örnekte yeni bir `Schema` öğesi yerelleştirilmiş şemaya işaret edecek şekilde % LCID % değişkeni kullanan oluşturuldu.  
   
-```  
+```xml
 <Schema href="%InstallRoot%/Common7/IDE/Policy/Schemas/%LCID%/TDLSchema.xsd"  
   targetNamespace="http://www.microsoft.com/schema/EnterpriseTemplates/TDLSchema"/>  
-```  
+```
   
 ## <a name="changing-the-location-of-the-schema-cache"></a>Şema önbelleğinin konumunu değiştirme  
  Şema önbelleğini kullanmak için konumun özelleştirebilirsiniz **çeşitli** seçenekler sayfası. Sık kullanılan şemaların bir dizin varsa, bu şemaları kullanmayı Düzenleyicisi yapılandırılabilir.  

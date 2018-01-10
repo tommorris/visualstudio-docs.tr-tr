@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 97950a9d5d6f76505e93153dccd14cfce7be15a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a26ca0228a869d36daf427f4ba90fd1b17abeaf
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>İzlenecek yol: XSLT IntelliSense kullanma
 Bu anlatımda XSLT IntelliSense otomatik tamamlama değerinin bazı özniteliklerin için nasıl kullanılacağı gösterilir.  
@@ -26,7 +26,7 @@ Bu anlatımda XSLT IntelliSense otomatik tamamlama değerinin bazı öznitelikle
   
 1.  Aşağıdaki kodda yeni XSLT dosyası ve kopya oluşturun:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
     <!-- These 2 elements effectively assign  
          $messages = resources/en.xml/<messages>,  
@@ -46,22 +46,22 @@ Bu anlatımda XSLT IntelliSense otomatik tamamlama değerinin bazı öznitelikle
       </xsl:message>  
     </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Ekle imleci sonra `<xsl:template name="msg23" match="msg23">` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl:call-template` öğe:  
   
-    ```  
+    ```xml
     <xsl:call-template name="localized-message">  
     </xsl:call-template>  
-    ```  
+    ```
   
      Şablon adları listesi görünür `name=""` özniteliği `xsl:call-template` yazarken öğesi.  
   
 3.  Ekle imleci sonra `<xsl:call-template name="localized-message">` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl:with-param` öğe:  
   
-    ```  
+    ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
-    ```  
+    ```
   
      Parametre adları listesi görünür `name=""` özniteliği `xsl:with-param` öğesi.  
   
@@ -69,7 +69,7 @@ Bu anlatımda XSLT IntelliSense otomatik tamamlama değerinin bazı öznitelikle
   
 1.  Aşağıdaki kodda yeni XSLT dosyası ve kopya oluşturun:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
       <xsl:template match="/">  
         <HTML>  
@@ -112,13 +112,13 @@ Bu anlatımda XSLT IntelliSense otomatik tamamlama değerinin bazı öznitelikle
         </TD>  
       </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Ekle imleci sonra `<xsl:apply-templates select="phone" />` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl: apply-templates` öğe:  
   
-    ```  
+    ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">  
-    ```  
+    ```
   
      Şablon modlarının listesi görünür `mode=""` özniteliği `xsl:apply-templates` öğesi.  
   
@@ -126,7 +126,7 @@ Bu anlatımda XSLT IntelliSense otomatik tamamlama değerinin bazı öznitelikle
   
 1.  Aşağıdaki kodda yeni XSLT dosyası ve kopya oluşturun:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"  
     version="1.0">  
       <xsl:param name="browser" select="'InternetExplorer'"/>  
@@ -153,15 +153,16 @@ Bu anlatımda XSLT IntelliSense otomatik tamamlama değerinin bazı öznitelikle
         </alt:stylesheet>  
       </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Ekle imleci sonra `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl:namespace-alias` öğe:  
   
-    ```  
+    ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  
-    ```  
+    ```
   
      Önekleri listesini nasıl görünen fark `stylesheet-prefix` ve `result-prefix` özniteliklerini `xsl:namespace-alias` öğesi.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [XML Düzenleyicisi IntelliSense Özellikleri](../xml-tools/xml-editor-intellisense-features.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[XML Düzenleyicisi IntelliSense Özellikleri](../xml-tools/xml-editor-intellisense-features.md)

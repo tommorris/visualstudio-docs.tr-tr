@@ -13,11 +13,11 @@ author: willbrown
 ms.author: willbrown
 manager: justinclareburt
 ms.workload: willbrown
-ms.openlocfilehash: e6ce654e158fbfbdaa3692d37f638e72085f8c4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b51673daa7a8c3526ad7de7f7cfdeac6a91d3b4b
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Nasıl yapılır: uzantıları Visual Studio 2017 ve Visual Studio 2015 ile uyumlu hale getirin
 
@@ -169,7 +169,7 @@ Bu adımı yaparken açık bir değiştirilmiş .csproj başvuru olması öneril
 Örneğin:
 
 ```xml
-<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201… Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
 * İçin ek koşullu ifadeler eklemek `<import>` bir Microsoft.VisualStudio.Sdk.BuildTasks.14.0 sahip etiketler.  Ekleyerek bunu `'$(VisualStudioVersion)' == '14.0' And` ön koşul deyimi kısmında. Bu ifadeler, üstbilgi ve altbilgi csproj dosyasının görünür.
@@ -177,7 +177,7 @@ Bu adımı yaparken açık bir değiştirilmiş .csproj başvuru olması öneril
 Örneğin:
 
 ```xml
-<Import Project="packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0… Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
 * İçin ek koşullu ifadeler eklemek `<Error>` Microsoft.VSSDK.BuildTools başvuru yapıyor etiketler.  Ekleyerek bunu `'$(VisualStudioVersion)' != '14.0' And` ön koşul deyimi kısmında. Bu deyimler csproj dosya altbilgisinde görünür.
@@ -185,7 +185,7 @@ Bu adımı yaparken açık bir değiştirilmiş .csproj başvuru olması öneril
 Örneğin:
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…/>
+<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
 * İçin ek koşullu ifadeler eklemek `<Error>` bir Microsoft.VisualStudio.Sdk.BuildTasks.14.0 sahip etiketler.  Ekleyerek bunu `'$(VisualStudioVersion)' == '14.0' And` ön koşul deyimi kısmında. Bu deyimler csproj dosya altbilgisinde görünür.
@@ -193,7 +193,7 @@ Bu adımı yaparken açık bir değiştirilmiş .csproj başvuru olması öneril
 Örneğin:
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…/>
+<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
 * Csproj dosyayı kaydedin ve kapatın.

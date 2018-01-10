@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
-caps.latest.revision: "28"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 8aa1bac1a98d8121dcba30dace22483e4a80e1d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 2af4471fd816746f19c06a7769fec6eb4ae5f425
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Kodlanmış UI testleriyle Windows UWP ve 8.1 Phone uygulamalarını test etme
 
@@ -376,7 +375,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 |Özellik|UWP uygulamaları|Windows Phone uygulamaları|  
 |-------------|------------------------|------------------------|  
-|Testleri çalıştırmak için hedef|Yerel veya uzak bilgisayar. Testleri çalıştırmak için otomatikleştirilmiş bir test çalışması kullandığınızda, uzak bilgisayarlara belirtilebilir. Bkz: [test çalışmasını Microsoft Test Yöneticisi'nde otomatikleştirme](/devops-test-docs/test/automate-a-test-case-in-microsoft-test-manager).|Öykünücü veya aygıt. Bakın, [s: testleri yalnızca öykünücü üzerinde çalıştırılabilir ya da fiziksel bir aygıtı kullanabilir miyim?](#TestingPhoneAppsCodedUI_EmulatorDevice) bu konuda.|  
+|Testleri çalıştırmak için hedef|Yerel veya uzak bilgisayar. Testleri çalıştırmak için otomatikleştirilmiş bir test çalışması kullandığınızda, uzak bilgisayarlara belirtilebilir.|Öykünücü veya aygıt. Bakın, [s: testleri yalnızca öykünücü üzerinde çalıştırılabilir ya da fiziksel bir aygıtı kullanabilir miyim?](#TestingPhoneAppsCodedUI_EmulatorDevice) bu konuda.|  
 |Komut satırından yürütme|Ayarlar dosyası hedef belirtmek için gerekli değildir.|Runsettings dosyası hedef belirtmek için gereklidir.|  
 |Kabuk denetimleri için özelleştirilmiş sınıfları|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |XAML uygulama WebView denetiminde|Html * kullanırsanız desteklenen özelleştirilmiş HTML öğeleri ile etkileşim kurmak için sınıflar. Bkz: <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Desteklenmez.|  

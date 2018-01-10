@@ -10,16 +10,15 @@ ms.topic: article
 helpviewer_keywords:
 - unit tests, creating
 - unit tests, running
-ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
-caps.latest.revision: "25"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 39addca0d673ae5a9423d4195ffc2bfe3358de4e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 36a33e9be37255e6bcf199e612a44f65ca243a1e
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>64 bitlik bir işlem olarak birim testi çalıştırma
 Bir 64-bit makine varsa, birim testleri çalıştırma ve kod kapsamı bilgilerini 64 bitlik bir işlem olarak yakalayın.  
@@ -39,7 +38,7 @@ Bir 64-bit makine varsa, birim testleri çalıştırma ve kod kapsamı bilgileri
   
      Belirtin `<TargetPlatform>x64</TargetPlatform>` .runsettings dosyasını içinde. Bu yöntemin farklı dosyalarında ayar gruplarını belirtin ve hızlı bir şekilde farklı ayarlar arasında geçiş avantajlıdır. Ayrıca, ayarları çözümleri arasında kopyalayabilirsiniz. Daha fazla bilgi için bkz: [.runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)   
- [Kodunuza birim testi](../test/unit-test-your-code.md)   
- [Visual Studio testleri için test ayarlarını belirtme](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)  
+[Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)  

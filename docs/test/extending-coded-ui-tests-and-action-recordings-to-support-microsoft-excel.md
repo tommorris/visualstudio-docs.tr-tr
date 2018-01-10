@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
-caps.latest.revision: "30"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 72c8918d0f3396273bb0eee81cddd8f09c779592
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: ae08752c7687844fbe620bf6314496b474b6e915
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Kodlanmış Kullanıcı Arabirimi Testlerini ve Eylem Kayıtlarını Microsoft Excel'i Desteklemek için Genişletme
 Kodlanmış UI testleri ve eylem kayıtları için test çerçevesi her kullanıcı arabirimini desteklemiyor. Test etmek istediğiniz belirli kullanıcı Arabirimi desteklemiyor olabilir. Örneğin, hemen kodlanmış bir UI testi veya için bir eylem kaydı oluşturamazsınız bir [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] elektronik tablo. Ancak, belirli UI kodlanmış UI test çerçevesi genişletilebilirlik yararlanarak destekleyecek kodlanmış UI test çerçevesi kendi uzantınızı oluşturabilirsiniz. Kodlanmış UI testleri ve eylem kayıtları için oluşturulmasını desteklemek için framework genişletmek nasıl bir örneği aşağıdaki konuda verir [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Desteklenen platformlar hakkında daha fazla bilgi için bkz: [kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  

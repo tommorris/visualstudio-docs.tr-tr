@@ -14,11 +14,11 @@ caps.latest.revision: "7"
 ms.author: sdanie
 manager: erikre
 ms.workload: multiple
-ms.openlocfilehash: e4d547fed57abf11194b35bcd3ac42f12322374b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0a508fe657be8e2a12c54bc7ae1a46f338273cd9
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Nasıl yapılır: bir iş akışı iş akışı Tasarımcısı'nda açıklamaları ekleme
 Daha büyük ve daha karmaşık iş akışları oluşturma kolaylaştırmak için [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] öğesi Tasarımcısı'nda aşağıdaki türlerini ek açıklamaları eklemek Geliştirici sağlar:  
@@ -40,54 +40,52 @@ Daha büyük ve daha karmaşık iş akışları oluşturma kolaylaştırmak içi
   
 ### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Bir etkinlik Tasarımcısı'nda bir ek açıklama ekleme  
   
-1.  İş Akışı Tasarımcısı'nda bir öğe seçin ve tasarımcı iş akışındaki sağ tıklayın **ek açıklamaları**, **ek açıklama eklemek**.  
+1. İş Akışı Tasarımcısı'nda bir öğe seçin ve tasarımcı iş akışındaki sağ tıklayın **ek açıklamaları**, **ek açıklama eklemek**.  
   
-2.  Ek açıklamanın metin sağlanan alana ekleyin.  
+1. Ek açıklamanın metin sağlanan alana ekleyin.  
   
-3.  Öğe bir ek açıklama simgesini gösterir. Ek açıklama simgenin üzerine gelerek veya onları ek açıklamanın metin görüntüler.  
-  
-     ![Sıralı etkinlik ek açıklama gösteren](../debugger/debug-interface-access/annotation.md "ek açıklaması")  
-  
+   Öğe bir ek açıklama simgesi gösterir. Ek açıklama simgenin üzerine gelerek veya onları ek açıklamanın metin görüntüler.
+
 ### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Ek açıklamanın bir etkinliğin tasarımcıda görüntüleme  
   
 1.  Bir ek açıklamanın dışında etkinliği görüntüleme sahip bir etkinlik Tasarımcısı ile tıklatın **PIN** ek açıklama donatıcı simgesi.  
   
-2.  Ek açıklamanın etkinliğin Tasarımcısı'nda görüntülenir. Aşağıdaki ekran görüntüsünde, ek açıklama "İş akışındaki başlangıç etkinliği" etkinliğin Tasarımcısı'nda görüntülenir.  
+   Ek açıklamanın etkinliğin Tasarımcısı'nda görüntülenir. Aşağıdaki ekran görüntüsünde, ek açıklama "İş akışındaki başlangıç etkinliği" etkinliğin Tasarımcısı'nda görüntülenir.  
   
-     ![Etkinlik Tasarımcısı'nda gösterilen ek açıklama](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")  
+   ![Etkinlik Tasarımcısı'nda gösterilen ek açıklama](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")  
   
-3.  Etkinliğin Tasarımcısı dışında ek açıklama görüntülemek için etkinliğin Tasarımcısı'nda ek açıklama alanı üzerine getirin ve tıklatın **telefondaki** simgesi  
+1. Etkinliğin Tasarımcısı dışında ek açıklama görüntülemek için etkinliğin Tasarımcısı'nda ek açıklama alanı üzerine getirin ve tıklatın **telefondaki** simgesi  
   
-     ![Ek açıklama dışında bir etkinliğin designe görüntülenen](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")  
+   ![Ek açıklama dışında bir etkinliğin designe görüntülenen](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")  
   
-### <a name="showing-or-hiding-all-annotations"></a>Gösterme veya gizleme tüm ek açıklamaları  
-  
-1.  Ek açıklamanın sahip bir etkinliği sağ tıklatın. Seçin **ek açıklamaları**, **tüm ek açıklamaları Göster**.  
-  
-2.  Tüm ek açıklamaları etkinlik tasarımcıları görüntülenir.  
-  
-3.  Etkinliğin tasarımcıları dışında tüm ek açıklamaları görüntülemek için etkinliği sağ tıklatın ve **ek açıklamaları**, **tüm ek açıklamaları Gizle**.  
-  
-### <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Düzenleme veya açıklamanın bir etkinliğin silme  
-  
-1.  Ek açıklamanın sahip bir etkinliğini sağ tıklatın.  
-  
-2.  Seçin **ek açıklamaları**, **ek açıklamayı Düzenle** veya **açıklamayı Sil**.  
-  
-3.  Ek açıklamanın düzenlenmek üzere açıldıktan veya silinmiş.  
-  
-4.  Tüm ek açıklamaları aynı anda silmek için iş akışı Tasarımcısı ve select sağ **ek açıklama**, **tüm ek açıklamaları silmek**.  
-  
-### <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Ekleme, düzenleme ve bir değişkeni veya bağımsız değişkeni için ek açıklamanın silme  
-  
-1.  Bir değişken veya değişken sağ tıklatın ve ek açıklama eklemek seçin.  
-  
-2.  Ek Açıklama metnini girin. Değişken veya bağımsız bir ek açıklama simgesi görüntüler.  
-  
-3.  Bir değişken veya açıklamanın sahip bağımsız değişken sağ tıklayın. Ek Açıklama Düzenle.  
-  
-4.  Ek açıklamanın düzenleme için açılacak.  
-  
-5.  Bir değişken veya açıklamanın sahip bağımsız değişken sağ tıklayın. Delete ek açıklama seçin.  
-  
-6.  Ek açıklamanın silinir.
+### <a name="showing-or-hiding-all-annotations"></a>Gösterme veya gizleme tüm ek açıklamaları
+
+1. Ek açıklamanın sahip bir etkinliği sağ tıklatın. Seçin **ek açıklamaları**, **tüm ek açıklamaları Göster**.
+
+   Tüm ek açıklamaları etkinlik tasarımcıları görüntülenir.
+
+1. Etkinliğin tasarımcıları dışında tüm ek açıklamaları görüntülemek için etkinliği sağ tıklatın ve **ek açıklamaları**, **tüm ek açıklamaları Gizle**.
+
+### <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Düzenleme veya açıklamanın bir etkinliğin silme
+
+1. Ek açıklamanın sahip bir etkinliğini sağ tıklatın.
+
+1. Seçin **ek açıklamaları**, **ek açıklamayı Düzenle** veya **açıklamayı Sil**.
+
+   Ek açıklamanın düzenlenmek üzere açıldıktan veya silinmiş.
+
+1. Tüm ek açıklamaları aynı anda silmek için iş akışı Tasarımcısı ve select sağ **ek açıklama**, **tüm ek açıklamaları silmek**.
+
+### <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Ekleme, düzenleme ve bir değişkeni veya bağımsız değişkeni için ek açıklamanın silme
+
+1. Bir değişken veya değişken sağ tıklatın ve ek açıklama eklemek seçin.
+
+1. Ek Açıklama metnini girin. Değişken veya bağımsız bir ek açıklama simgesi görüntüler.
+
+1. Bir değişken veya açıklamanın sahip bağımsız değişken sağ tıklayın. Ek Açıklama Düzenle.
+
+   Ek açıklamanın düzenleme için açıldı.
+
+1. Bir değişken veya açıklamanın sahip bağımsız değişken sağ tıklayın. Delete ek açıklama seçin.
+
+   Ek açıklamanın silinir.

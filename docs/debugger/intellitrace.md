@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 IntelliTrace kaydetmek ve kodunuzu 's yürütme geçmişini izlemek için kullandığınızda uygulamanızın hatalarını ayıklama daha az zaman harcayabilir. IntelliTrace izin verdiğinden, hataları kolayca bulabilirsiniz:  
@@ -47,7 +47,7 @@ IntelliTrace kaydetmek ve kodunuzu 's yürütme geçmişini izlemek için kullan
 |||  
 |-|-|  
 |**Uygulamam IntelliTrace ile hata ayıklama:**<br /><br /> -Geçmişteki olayları göster.<br />-Beni Ara geçmiş olaylar bilgilerle gösterir.<br />-IntelliTrace Oturumum kaydedin.<br />-Denetim IntelliTrace topladığı veriler.|-   [İzlenecek yol: IntelliTrace'i kullanma](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace özellikleri](../debugger/intellitrace-features.md)<br />-   [Geçmiş hata ayıklama](../debugger/historical-debugging.md)<br />-   [IntelliTrace adım geri kullanarak görünüm anlık görüntüler](../debugger/how-to-use-intellitrace-step-back.md)|  
-|**Test Yöneticisi'nde testi oturumu sırasında IntelliTrace verilerini toplama**|-   [El ile testlerde daha fazla tanılama verisi toplama](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+|**Test Yöneticisi'nde testi oturumu sırasında IntelliTrace verilerini toplama**|-   [El ile testlerde daha fazla tanılama verisi toplama](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
 |**Dağıtılan uygulamalarından IntelliTrace verilerini toplama**|-   [IntelliTrace tek başına toplayıcıyı kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**IntelliTrace günlük dosyasından (.iTrace dosyası) hata ayıklamayı Başlat.**|-   [Kaydedilen IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -89,7 +89,7 @@ IntelliTrace kaydetmek ve kodunuzu 's yürütme geçmişini izlemek için kullan
   
 -   Uygulamanızı test bilgisayarında çöküyor ancak başarılı bir şekilde geliştirme bilgisayar üzerinde çalışır.  
   
-     Microsoft Test Yöneticisi'nden IntelliTrace verisi toplayabilir, verileri .iTrace dosyasına kaydedebilir ve bu dosyayı daha sonra incelemek için Team Foundation Server çalışma öğesine ekleyebilirsiniz. Bkz: [el ile testlerde daha fazla tanılama verisi toplama](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests) ve [kaydedilmiş IntelliTrace verilerini kullan](../debugger/using-saved-intellitrace-data.md).  
+     Microsoft Test Yöneticisi'nden IntelliTrace verisi toplayabilir, verileri .iTrace dosyasına kaydedebilir ve bu dosyayı daha sonra incelemek için Team Foundation Server çalışma öğesine ekleyebilirsiniz. Bkz: [el ile testlerde daha fazla tanılama verisi toplama](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) ve [kaydedilmiş IntelliTrace verilerini kullan](../debugger/using-saved-intellitrace-data.md).  
   
 -   Bir hata ya da kilitlenme dağıtılan bir uygulama olur.  
   
@@ -180,8 +180,6 @@ IntelliTrace kaydetmek ve kodunuzu 's yürütme geçmişini izlemek için kullan
   
 ## <a name="in-this-section"></a>Bu bölümde  
  [IntelliTrace özellikleri](../debugger/intellitrace-features.md)  
-  
- [Yeniden oluşturması zor olan hatalarda Tanılama izleme verilerini içerir](/devops-test-docs/test_notintoc/including-diagnostic-trace-data-with-bugs-that-are-difficult-to-reproduce)  
   
  [Dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md)  
   

@@ -13,11 +13,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 065d5b16e99ce7c1356f710ab2a6cc42bbd6cde4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a4091506bcd16222ff02600bd924d3526d57c38
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>İzlenecek yol: C++ kullanarak bir SDK oluşturma
 Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı (VSIX) olarak SDK paketini oluşturma ve bir uygulama oluşturmak için kullanma gösterilmektedir. İzlenecek yol aşağıdaki adımları ayrılır:  
@@ -35,7 +35,7 @@ Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı 
   
 1.  Menü çubuğunda seçin **dosya**, **yeni**, **proje**.  
   
-2.  Şablonları listesinde genişletin **Visual C++**, **Windows mağazası**ve ardından **DLL (Windows mağazası uygulamaları)** şablonu. İçinde **adı** kutusunda, belirtin `NativeMath`ve ardından **Tamam** düğmesi.  
+2.  Şablonları listesinde genişletin **Visual C++**, **Windows Evrensel**ve ardından **DLL (Windows Evrensel uygulamaları)** şablonu. İçinde **adı** kutusunda, belirtin `NativeMath`ve ardından **Tamam** düğmesi.  
   
 3.  Aşağıdaki kod eşleşecek şekilde NativeMath.h güncelleştirin.  
   
@@ -63,25 +63,23 @@ Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı 
   
 1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'**ve ardından **Ekle**, **yeni proje**.  
   
-2.  Şablonları listesinde genişletin **Visual C#**, **genişletilebilirlik**ve ardından **VSIX paketi**. İçinde **adı** kutusunda, belirtin **NativeMathVSIX**ve ardından **Tamam** düğmesi.  
+2.  Şablonları listesinde genişletin **Visual C#**, **genişletilebilirlik**ve ardından **VSIX proje**. İçinde **adı** kutusunda, belirtin **NativeMathVSIX**ve ardından **Tamam** düğmesi.
   
-3.  VSIX bildirim Tasarımcısı göründüğünde, kapatın.  
+3.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **source.extension.vsixmanifest**ve ardından **görünümü kodu**.  
   
-4.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **source.extension.vsixmanifest**ve ardından **görünümü kodu**.  
-  
-5.  Varolan XML değiştirmek için aşağıdaki XML kullanın.  
+4.  Varolan XML değiştirmek için aşağıdaki XML kullanın.  
   
     [!code-xml[CreatingAnSDKUsingCpp#6](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
 
-6.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **NativeMathVSIX** proje ve ardından **Ekle**, **yeni öğe**.  
+5.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **NativeMathVSIX** proje ve ardından **Ekle**, **yeni öğe**.  
   
-7.  Listesinde **Visual C# öğeleri**, genişletin **veri**ve ardından **XML dosyası**. İçinde **adı** kutusunda, belirtin `SDKManifest.xml`ve ardından **Tamam** düğmesi.  
+6.  Listesinde **Visual C# öğeleri**, genişletin **veri**ve ardından **XML dosyası**. İçinde **adı** kutusunda, belirtin `SDKManifest.xml`ve ardından **Tamam** düğmesi.  
   
-8.  Dosya içeriğini değiştirmek için bu XML kullanın:  
+7.  Dosya içeriğini değiştirmek için bu XML kullanın:  
   
      [!code-xml[CreatingAnSDKUsingCpp#5](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_5.xml)]  
   
-9. İçinde **Çözüm Gezgini**, **NativeMathVSIX** projesi, bu klasör yapısını oluşturun:  
+8. İçinde **Çözüm Gezgini**, **NativeMathVSIX** projesi, bu klasör yapısını oluşturun:  
   
     ```  
   
@@ -99,35 +97,37 @@ Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı 
                 \Neutral  
     ```  
   
-10. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'**ve ardından **klasörünü dosya Gezgini'nde Aç**.  
+9. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'**ve ardından **klasörünü dosya Gezgini'nde Aç**.  
   
-11. İçinde **dosya Gezgini**, \NativeMath\NativeMath.h, kopyalamak ve ardından **Çözüm Gezgini**, **NativeMathVSIX** proje, \DesignTime\ yapıştırın CommonConfiguration\Neutral\Include\ klasör.  
+10. İçinde **dosya Gezgini**, $SolutionRoot$\NativeMath\NativeMath.h, kopyalamak ve ardından **Çözüm Gezgini**, **NativeMathVSIX** projesi, $SolutionRoot yapıştırın $\ NativeMathVSIX\DesignTime\CommonConfiguration\Neutral\Include\ klasör.  
   
-     \Debug\NativeMath\NativeMath.lib kopyalayın ve \DesignTime\Debug\x86\ klasöre yapıştırın.  
+     $SolutionRoot$\Debug\NativeMath\NativeMath.lib kopyalayın ve ardından $SolutionRoot$ \NativeMathVSIX\DesignTime\Debug\x86\ klasörüne yapıştırın.  
   
-     \Debug\NativeMath\NativeMath.dll kopyalayıp \Redist\Debug\x86\ klasöre yapıştırın.  
+     $SolutionRoot$\Debug\NativeMath\NativeMath.dll kopyalayıp $SolutionRoot$ \NativeMathVSIX\Redist\Debug\x86\ klasöründe yapıştırın.  
   
-     DebugNativeMathWRTNativeMathWRT.dll kopyalayıp RedistDebugx86 klasöre yapıştırın.  
+     $SolutionRoot$\Debug\NativeMathWRT\NativeMathWRT.dll kopyalayıp $SolutionRoot$ \NativeMathVSIX\Redist\Debug\x86 klasöründe yapıştırın.  
   
-     DebugNativeMathWRTNativeMathWRT.winmd kopyalayıp ReferencesCommonConfigurationNeutral klasöre yapıştırın.  
+     $SolutionRoot$\Debug\NativeMathWRT\NativeMathWRT.winmd kopyalayıp $SolutionRoot$ \NativeMathVSIX\References\CommonConfiguration\Neutral klasöründe yapıştırın.  
   
-     DebugNativeMathWRTNativeMathWRT.pri kopyalayıp ReferencesCommonConfigurationNeutral klasöre yapıştırın.  
+     $SolutionRoot$\Debug\NativeMathWRT\NativeMathWRT.pri kopyalayıp $SolutionRoot$ \NativeMathVSIX\References\CommonConfiguration\Neutral klasöründe yapıştırın.  
   
-12. \DesignTime\Debug\x86\ klasöründe NativeMathSDK.props adlı bir metin dosyası oluşturun ve ardından aşağıdaki içeriği yapıştırın:  
+11. $SolutionRoot$ \NativeMathVSIX\DesignTime\Debug\x86\ klasöründe NativeMathSDK.props adlı bir metin dosyası oluşturun ve ardından aşağıdaki içeriği yapıştırın:  
   
     [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]  
   
-13. Menü çubuğunda seçin **Görünüm**, **diğer pencereler**, **Özellikler penceresini** (klavye: F4 anahtarı seçin).  
+12. Menü çubuğunda seçin **Görünüm**, **diğer pencereler**, **Özellikler penceresini** (klavye: F4 anahtarı seçin).  
   
-14. İçinde **Çözüm Gezgini**seçin **NativeMathWRT.winmd** dosya. İçinde **özellikleri** penceresinde, değişiklik **yapı eylemi** özelliğine **içerik**ve ardından değiştirmek **Include in VSIX** özelliğine **Doğru**.  
+13. İçinde **Çözüm Gezgini**seçin **NativeMathWRT.winmd** dosya. İçinde **özellikleri** penceresinde, değişiklik **yapı eylemi** özelliğine **içerik**ve ardından değiştirmek **Include in VSIX** özelliğine **Doğru**.  
   
-     Bu işlem için yineleme **SimpleMath.pri** dosya.  
+     Bu işlem için yineleme **NativeMath.h** dosya.  
+  
+     Bu işlem için yineleme **NativeMathWRT.pri** dosya.  
   
      Bu işlem için yineleme **NativeMath.Lib** dosya.  
   
      Bu işlem için yineleme **NativeMathSDK.props** dosya.  
   
-15. İçinde **Çözüm Gezgini**seçin **NativeMath.h** dosya. İçinde **özellikleri** penceresinde, değişiklik **Include in VSIX** özelliğine **doğru**.  
+14. İçinde **Çözüm Gezgini**seçin **NativeMath.h** dosya. İçinde **özellikleri** penceresinde, değişiklik **Include in VSIX** özelliğine **doğru**.  
   
      Bu işlem için yineleme **NativeMath.dll** dosya.  
   
@@ -135,45 +135,43 @@ Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı 
   
      Bu işlem için yineleme **SDKManifest.xml** dosya.  
   
-16. Menü çubuğunda seçin **yapı**, **yapı çözümü**.  
+15. Menü çubuğunda seçin **yapı**, **yapı çözümü**.  
   
-17. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **NativeMathVSIX** proje ve ardından **klasörünü dosya Gezgini'nde Aç**.  
+16. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **NativeMathVSIX** proje ve ardından **klasörünü dosya Gezgini'nde Aç**.  
   
-18. İçinde **dosya Gezgini**\bin\Debug\ klasörüne gidin ve ardından yüklemeyi başlatmak için NativeMathVSIX.vsix çalıştırın.  
+17. İçinde **dosya Gezgini**$SolutionRoot$ \NativeMathVSIX\bin\Debug\ klasörüne gidin ve ardından yüklemeyi başlatmak için NativeMathVSIX.vsix çalıştırın.  
   
-19. Seçin **yükleme** düğmesi, yüklemesinin tamamlanması için bekleyin ve ardından Visual Studio'yu yeniden başlatın.  
+18. Seçin **yükleme** düğmesi, yüklemesinin tamamlanması için bekleyin ve ardından Visual Studio'yu başlatın.  
   
 ##  <a name="createSample"></a>Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için  
   
 1.  Menü çubuğunda seçin **dosya**, **yeni**, **proje**.  
   
-2.  Şablonları listesinde genişletin **Visual C++**, **Windows mağazası**ve ardından **boş uygulama**. İçinde **adı** kutusunda, belirtin **NativeMathSDKSample**ve ardından **Tamam** düğmesi.  
+2.  Şablonları listesinde genişletin **Visual C++**, **Windows Evrensel**ve ardından **boş uygulama**. İçinde **adı** kutusunda, belirtin **NativeMathSDKSample**ve ardından **Tamam** düğmesi.  
   
 3.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **NativeMathSDKSample** proje ve ardından **Ekle**, **başvuru**.  
   
-4.  Üzerinde **ortak özellikleri**, **Framework ve başvuruları** özellik sayfası, başvuru türlerinin bir listesini genişletin **Windows**ve ardından **uzantıları** . Ayrıntılar bölmesinde seçin **yerel matematik SDK** uzantısı ve ardından **Yeni Başvuru Ekle** düğmesi.  
+4.  İçinde **Başvuru Ekle** iletişim kutusunda, başvuru türlerinin bir listesini genişletin **Evrensel Windows**ve ardından **uzantıları**. Son olarak, seçin **yerel matematik SDK** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.
   
-5.  İçinde **Başvuru Ekle** iletişim kutusunda **yerel matematik SDK** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.  
-  
-6.  Proje özellikleri için NativeMathSDKSample görüntüler.  
+5.  Proje özellikleri için NativeMathSDKSample görüntüler.  
   
      NativeMathSDK.props içinde tanımlanan özellikleri başvurusunu eklendiğinde uygulandı. Bunu inceleyerek doğrulamak **VC ++ dizinleri** projenin özelliğinin **yapılandırma özellikleri**.  
   
-7.  İçinde **Çözüm Gezgini**MainPage.xaml açın ve ardından içeriği değiştirmek için aşağıdaki XAML kullanın:  
+6.  İçinde **Çözüm Gezgini**MainPage.xaml açın ve ardından içeriği değiştirmek için aşağıdaki XAML kullanın:  
   
      [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]  
   
-8.  Bu kod eşleşecek şekilde Mainpage.xaml.h güncelleştirin:  
+7.  Bu kod eşleşecek şekilde Mainpage.xaml.h güncelleştirin:  
   
      [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]  
   
-9. Bu kod eşleşecek şekilde MainPage.xaml.cpp güncelleştirin:  
+8. Bu kod eşleşecek şekilde MainPage.xaml.cpp güncelleştirin:  
   
      [!code-cpp[CreatingAnSDKUsingCppDemoApp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_10.cpp)]  
   
-10. Uygulamayı çalıştırmak için F5 tuşuna seçin.  
+9. Uygulamayı çalıştırmak için F5 tuşuna seçin.  
   
-11. Uygulamada, herhangi iki sayıyı girin, bir işlem seçin ve ardından  **=**  düğmesi.  
+10. Uygulamada, herhangi iki sayıyı girin, bir işlem seçin ve ardından  **=**  düğmesi.  
   
      Doğru sonucu görünür.  
   

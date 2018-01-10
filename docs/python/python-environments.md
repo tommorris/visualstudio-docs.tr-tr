@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: bd871b1e78878c8ae05cb69e1ac97d50197a18b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4f190d02850f1effc9e1597d14fecf323de68356
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-environments"></a>Python ortamları
 
@@ -53,7 +53,7 @@ Kodunuzu çalıştırmak için aşağıdakilerden birini yüklemeniz gerekir bö
 | Yorumlayıcı | Açıklama |
 | --- | --- |
 | [CPython](https://www.python.org/) | "Yerel" ve en sık kullanılan Yorumlayıcı, 32 bit ve 64 bit sürümleri (32-bit önerilir) içinde kullanılabilir. En son dil özellikleri, maksimum Python paket uyumluluk, hata ayıklama için tam destek ve birlikte çalışma içeren [IPython](http://ipython.org/). Ayrıca bkz: [Python 2 veya Python 3 kullanmalıyım?](http://wiki.python.org/moin/Python2orPython3). Visual Studio 2015 ve önceki Python 3.6 desteklemez ve "Python sürümü 3.6 desteklenmiyor" hata verebilirsiniz unutmayın. Python 3.5 veya önceki kullanmak yerine. |
-| [IronPython](https://github.com/IronLanguages/main) | Bir .NET uygulaması sağlama C# /F #/ Visual Basic birlikte çalışabilirliği, Python, 32 bit ve 64 bit sürümlerinde kullanılabilir olan erişim .NET API'leri, hata ayıklama standart Python (ancak değil C++ karışık modda hata ayıklama için) ve IronPython karma / C# hata ayıklama. IronPython, ancak sanal ortamları desteklemez. | 
+| [IronPython](https://github.com/IronLanguages/ironpython2) | Bir .NET uygulaması sağlama C# /F #/ Visual Basic birlikte çalışabilirliği, Python, 32 bit ve 64 bit sürümlerinde kullanılabilir olan erişim .NET API'leri, hata ayıklama standart Python (ancak değil C++ karışık modda hata ayıklama için) ve IronPython karma / C# hata ayıklama. IronPython, ancak sanal ortamları desteklemez. |
 | [Anaconda](https://www.continuum.io) | Bir açık veri bilimi platform tarafından Python gücü ve CPython ve zor yükleme paketleri en son sürümünü içerir. Aksi takdirde karar veremez, öneririz. |
 | [PyPy](http://www.pypy.org/) | Uzun süre çalışan programlar ve performans tanımlamak burada durumlar için yararlı olan Python yüksek performans izleme JIT uyarlamasını verir ancak diğer çözümleri bulunamıyor. Visual Studio ile ancak sınırlı destek Works Gelişmiş hata ayıklama özellikleri için. |
 | [Jython](http://www.jython.org/) | Python Java sanal makine'üzerinde (JVM) uygulaması. IronPython, Jython içinde çalışan kodu benzer Java sınıfları ve kitaplıkları ile etkileşim kurabilir, ancak birçok kitaplıkları için CPython hedeflenen kullanmanız mümkün olmayabilir. Visual Studio ile ancak sınırlı destek Works Gelişmiş hata ayıklama özellikleri için. |
@@ -73,7 +73,7 @@ Her iki durumda da, Python ortamları penceresi Çözüm Gezgini eşdüzey sekme
 
 ![Python ortamları penceresi](media/environments-default-view.png)
 
-Yukarıdaki örnekte, Python 3.4 (32-bit CPython) IronPython 2.7 32 bit ve 64 bit sürümleri ile birlikte yüklendiğini gösterir. Bu durumda, tüm yeni projeler için kullanılan Python 3.4 kalın varsayılan ortamlarda olur. Python araçları Visual Studio için Visual Studio 2015 veya önceki yüklediniz, ancak bir Python yorumlayıcısı yüklemediniz listelenen ortamları görmüyorsanız, anlama (bkz [seçme ve Python yorumlayıcılar yükleme](#selecting-and-installing-python-interpreters) yukarıda). 
+Yukarıdaki örnekte, Python 3.4 (32-bit CPython) IronPython 2.7 32 bit ve 64 bit sürümleri ile birlikte yüklendiğini gösterir. Bu durumda, tüm yeni projeler için kullanılan Python 3.4 kalın varsayılan ortamlarda olur. Python araçları Visual Studio için Visual Studio 2015 veya önceki yüklediniz, ancak bir Python yorumlayıcısı yüklemediniz listelenen ortamları görmüyorsanız, anlama (bkz [seçme ve Python yorumlayıcılar yükleme](#selecting-and-installing-python-interpreters) yukarıda).
 
 > [!Tip]
 > Zaman **Python ortamları** penceresi dar, yukarıda gösterildiği gibi üst ve alt çeşitli sekmelere ortamlar listelenir. Pencerenin yeterince, genişletme ancak çalışmak daha kolay bulabilirsiniz geniş bir görünümü değiştirir.
@@ -161,7 +161,7 @@ Bir paket yükleme ortamı içindeki alt klasörleri oluşturur `Lib` klasör do
 
 **Şimdi Yükselt** konu herhangi bir işletim sistemi izinlerini de ister. tek bir işlem için PIP için yönetimsel ayrıcalıklar verir. Seçme **yönetici ayrıcalıkları olmadan devam** yükleme paketi, ancak klasörleri ile çıkış gibi oluşturmaya çalışırken PIP başarısız denemeleri "hata: oluşturulamadı ' C:\Program Files\Anaconda3\Lib\site-packages\ PNG.PY': izni reddedildi. "
 
-Seçme **her zaman yüklerken veya paketlerini kaldırma kullanımı ile yükseltme** iletişim ortam için söz konusu görüntülenmesini engeller. Yeniden görüntülenmesini iletişim sağlamak için şu adrese gidin **Araçlar > Seçenekler > Python araçları > Genel** ve düğmesini seçin **tüm kalıcı olarak gizli iletişim kutularını Sıfırla**. 
+Seçme **her zaman yüklerken veya paketlerini kaldırma kullanımı ile yükseltme** iletişim ortam için söz konusu görüntülenmesini engeller. Yeniden görüntülenmesini iletişim sağlamak için şu adrese gidin **Araçlar > Seçenekler > Python araçları > Genel** ve düğmesini seçin **tüm kalıcı olarak gizli iletişim kutularını Sıfırla**.
 
 Aynı sekmesi seçenekleri olduğunu, ayrıca seçebilirsiniz **her zaman PIP yönetici olarak çalıştır** iletişim kutusu tüm ortamlar için gizlemek için. Bkz: [seçenekler - Genel sekmesi](options.md#general-options).
 
@@ -247,13 +247,13 @@ Teknik olarak, dosya gereksinimleri izlemek için kullanılabilir (kullanarak `-
 
     ![Güncelleştirme requirements.txt seçenekleri](media/environments-requirements-txt-replace.png)
 
-    - **Dosyanın tamamı yerine** tüm öğeleri, açıklamalar ve mevcut olan seçenekler kaldırır.
-    - **Varolan girişleri yenileme** paket gereksinimlerini algılar ve, şu anda yüklü olan sürümle eşleştirmek için sürüm tanımlayıcıları güncelleştirir.
-    - **Güncelleştirme ve girişleri ekleme** bulunur ve diğer tüm paketler dosyanın sonuna ekler gereksinimlere yeniler.
+  - **Dosyanın tamamı yerine** tüm öğeleri, açıklamalar ve mevcut olan seçenekler kaldırır.
+  - **Varolan girişleri yenileme** paket gereksinimlerini algılar ve, şu anda yüklü olan sürümle eşleştirmek için sürüm tanımlayıcıları güncelleştirir.
+  - **Güncelleştirme ve girişleri ekleme** bulunur ve diğer tüm paketler dosyanın sonuna ekler gereksinimlere yeniler.
 
 Çünkü `requirements.txt` dosyaları projenizin gereksinimleri donmasına yöneliktir, yüklü olan tüm paketlerin kesin sürümleriyle yazılır. Kesin sürümlerini kullanan başka bir makine ortamınıza kolayca üretebileceği sağlar. PIP dışında bir yükleyici veya başka bir paketi bir bağımlılık olarak bir sürüm aralığı ile yüklenmiş olsa bile paketleri dahil edilir.
 
-Varsa bir` requirements.txt` dosyasından yeni bir sanal ortam eklerken **sanal ortam Ekle** iletişim kutusunu bir ortamda başka bir makine yeniden kolaylaşır paketleri otomatik olarak yüklemek için bir seçenek görüntüler:
+Varsa bir `requirements.txt` dosyasından yeni bir sanal ortam eklerken **sanal ortam Ekle** iletişim kutusunu bir ortamda başka bir makine yeniden kolaylaşır paketleri otomatik olarak yüklemek için bir seçenek görüntüler:
 
 ![Requirements.txt ile sanal ortam oluşturma](media/environments-requirements-txt.png)
 

@@ -1,22 +1,21 @@
 ---
 title: Visual Studio'da c++ Boost.Test kullanma | Microsoft Docs
 ms.custom: 
-ms.date: 11/07/2017
+ms.date: 01/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2e0710a8-8e8a-4f6e-8415-5ab3eb830079
-caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b469ee739ebdc4f3cf61e8b5e578c676b5af5e24
-ms.sourcegitcommit: 0614bdb0895b6e6f5b84ba4e1d9327802eca3a6b
+ms.workload: cplusplus
+ms.openlocfilehash: bdf772be03f6021f499b9bf777922d6d2743e0dc
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/06/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio'da c++ Boost.Test kullanma
 
@@ -32,9 +31,15 @@ Boost.Test gerektirir [artırma](http://www.boost.org/)! Yüklü artırma yoksa 
 
 1. Bölümündeki yönergeleri izleyin [Vcpkg: Windows için bir C++ Paket Yöneticisi](/cpp/vcpkg) vcpkg (, zaten yoksa) yüklemek için.
 
-1. Çalıştırma `vcpkg install boost:x86-windows-static` artırma statik kitaplık yüklemek için.
+1. Boost.Test dinamik veya statik kitaplık yükleyin:
 
-1. Çalıştırma `vcpkg integrate install` kitaplığı ile Visual Studio'yu yapılandırma ve ikili dosyaları ve artırma üstbilgiler yollara eklemek için komutu.
+    - Çalıştırma `vcpkg install boost-test` Boost.Test dinamik kitaplığı yüklemek için.
+    
+       -VEYA-
+       
+    - Çalıştırma `vcpkg install boost-test:x86-windows-static` Boost.Test statik kitaplık yüklemek için.
+
+1. Çalıştırma `vcpkg integrate install` kitaplığı ile Visual Studio'yu yapılandırma ve ikili dosyaları ve artırma üstbilgiler yollara eklemek için.
 
 ## <a name="create-a-project-for-your-tests"></a>Testleriniz için bir proje oluşturun
 

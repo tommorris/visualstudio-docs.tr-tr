@@ -11,16 +11,15 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
-caps.latest.revision: "62"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a60e3236769cbaf35a9b232629834a8b8d52a852
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: a70433a811ad8cf45bb44b12c2971c90c8f82ff2
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="unit-test-your-code"></a>Kodunuza Birim Testi Uygulama
 Birim testleri mantık hataları sınıflarda yöntemler aramak için hızlı bir şekilde geliştiriciler ve sınayıcılar vermek [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)], ve [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)] projeleri.  
@@ -55,15 +54,6 @@ Birim testleri mantık hataları sınıflarda yöntemler aramak için hızlı bi
 |**Birim test türü genişletmek:** Birim Test çerçevesi içinde olmayabilir testlerinizi işlevselliği ekleyebilirsiniz. Örneğin, bir testin normal kullanıcı olarak çalışıp çalışmayacağını belirten bir test özelliği ekleyebilirsiniz. Veya çerçeveyi, bir yönteme satır öznitelikleri eklemek ve bu satırda bulunan verileri testin içinde kullanmak üzere genişletebilirsiniz.|Birim testi çerçevesi genişletme örnek kod için aşağıdakilere bakın [Microsoft Web sitesini](http://go.microsoft.com/fwlink/?LinkId=185591).|  
 |**Testi seçenekleri ayarlayın:** Örneğin, test sonuçları nerede depolanacağını belirtebilirsiniz.|[.runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
-## <a name="related-tasks"></a>İlişkili görevler  
- [Microsoft Test Yöneticisi'nde test sonuçlarını gözden geçirme](http://msdn.microsoft.com/en-us/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  
-  
- Test sonuçları ve nasıl görüntülendiği, kaydedildiği ve silindiği de dahil bunlarla çalışma yollarını açıklar.  
-  
- [Microsoft Visual Studio'yu kullanarak sistem testleri çalıştırma](/devops-test-docs/test/running-automated-tests-using-microsoft-visual-studio)  
-  
- Visual Studio kullanarak aksine kullanma hakkında bilgi için bağlantılar sağlar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] otomatikleştirilmiş testleri çalıştırmak için.  
-  
 ## <a name="reference"></a>Başvuru  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
  Öznitelikler, özel durumlar, bildirimler ve birim testini destekleyen diğer sınıfları sağlayan UnitTesting ad alanını açıklar.  
@@ -85,6 +75,6 @@ Birim testleri mantık hataları sınıflarda yöntemler aramak için hızlı bi
 ### <a name="reference"></a>Başvuru  
  [Birim testleri için içerik dizini](http://go.microsoft.com/fwlink/?LinkID=254719)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kod kalitesini geliştirme](/visualstudio/test/improve-code-quality)   
- [Uygulamayı test etme](/devops-test-docs/test/test-apps-early-and-often)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kod Kalitesini Geliştirme](/visualstudio/test/improve-code-quality)

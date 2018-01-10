@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>Kaydedilen IntelliTrace verilerini kullanma
 Uygulamanızın yürütme belirli noktalara bir IntelliTrace günlüğü (.iTrace) dosyasından hata ayıklamayı başlattığınızda gidin. Bu dosya, performans olaylarının, özel durumlar, iş parçacıkları, test adımları, modüller ve IntelliTrace kayıtları uygulama çalışmalarınız while diğer sistem bilgisi içerebilir.  
@@ -39,7 +39,7 @@ Uygulamanızın yürütme belirli noktalara bir IntelliTrace günlüğü (.iTrac
     |**Kaynak**|**Bkz:**|  
     |----------------|-------------|  
     |Bir IntelliTrace oturumda Visual Studio Enterprise (ancak değil Professional veya topluluk sürümleri)|[IntelliTrace özellikleri](../debugger/intellitrace-features.md)|  
-    |Microsoft Test Yöneticisi'nde bir test oturumu. Bu, Team Foundation Server iş öğesine .iTrace dosyayı iletiye ekler.|[El ile testlerde daha fazla tanılama verisi toplama](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+    |Microsoft Test Yöneticisi'nde bir test oturumu. Bu, Team Foundation Server iş öğesine .iTrace dosyayı iletiye ekler.|[El ile testlerde daha fazla tanılama verisi toplama](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
     |Microsoft Monitoring Agent, ya da tek başına veya System Center 2012 R2 Operations Manager ile için ASP.NET uygulamaları ve SharePoint uygulamaları dağıtımında çalışan web|-   [Dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager için Yenilikler](http://technet.microsoft.com/library/dn249700.aspx)|  
   
 ##  <a name="GetStarted"></a>Ne yapmak istiyorsunuz?  
@@ -266,7 +266,7 @@ Uygulamanızın yürütme belirli noktalara bir IntelliTrace günlüğü (.iTrac
   
  [IntelliTrace özellikleri](../debugger/intellitrace-features.md)  
   
- [El ile testlerde daha fazla tanılama verisi toplama](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)  
+ [El ile testlerde daha fazla tanılama verisi toplama](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   

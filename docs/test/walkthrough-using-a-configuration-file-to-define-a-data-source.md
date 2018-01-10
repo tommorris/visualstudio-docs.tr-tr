@@ -11,16 +11,15 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
-caps.latest.revision: "32"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 661a3cd872cefe54a0c6c945708bbab576c40a03
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek Yol: Bir Veri Kaynağı Tanımlamak için Yapılandırma Dosyası Kullanma
 Bu kılavuzda birim testi için bir app.config dosyasında tanımlanan bir veri kaynağı kullanımını gösterir. Tarafından kullanılan bir veri kaynağı tanımlayan bir app.config dosyasının nasıl oluşturulacağını öğreneceksiniz <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> sınıfı. Bu kılavuzda sunulan görevler aşağıdakileri içerir:  
@@ -269,8 +268,8 @@ Bu kılavuzda birim testi için bir app.config dosyasında tanımlanan bir veri 
 > [!IMPORTANT]
 >  Böylece dağıtım dizini testinde erişilebilir veri kaynakları gibi öğeleri dağıtın.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodunuza birim testi](../test/unit-test-your-code.md)   
- [Oluşturma ve var olan kod için birim testleri çalıştırma](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Uygulamayı test etme](/devops-test-docs/test/test-apps-early-and-often)   
- [Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma](../test/how-to-create-a-data-driven-unit-test.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)  
+[Oluşturma ve var olan kod için birim testleri çalıştırma](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
+[Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma](../test/how-to-create-a-data-driven-unit-test.md)

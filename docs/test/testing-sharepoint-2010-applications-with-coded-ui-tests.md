@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
-caps.latest.revision: "30"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4cf5eac9600be44405142666e1f94408c44b0a13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: fbda836ec423d9a86b51b2334a3015589512d816
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle SharePoint 2010 Uygulamalarını Test Etme
 Kodlanmış UI testleri bir SharePoint uygulama da dahil olmak üzere, kendi kullanıcı Arabirimi denetimlerini dahil olmak üzere tüm uygulama düzgün çalıştığını doğrulamak olanak tanır. Kodlanmış UI testleri, değerler ve kullanıcı arabirimi mantığı da doğrulayabilirsiniz.  
@@ -144,10 +143,10 @@ uiGridKeyboardInputEdit.Text=value;
 ### <a name="forum"></a>Forum  
  [Visual Studio ALM + Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=254496)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
- [Web performans ve SharePoint 2010 ve 2013 uygulamalarında sınama yük](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
- [SharePoint çözümleri oluşturma](/office-dev/office-dev/create-sharepoint-solutions)   
- [Doğrulama ve SharePoint kodda hata ayıklama](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
- [Derleme ve SharePoint çözümlerini hata ayıklama](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [SharePoint Uygulamaları için Performans Profili Oluşturma](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)  
+[SharePoint çözümleri oluşturma](/office-dev/office-dev/create-sharepoint-solutions)   
+[Doğrulama ve SharePoint kodda hata ayıklama](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
+[Derleme ve SharePoint çözümlerini hata ayıklama](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
+[SharePoint Uygulamaları için Performans Profili Oluşturma](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)

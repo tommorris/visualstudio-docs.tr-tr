@@ -1,7 +1,7 @@
 ---
 title: "Hızlı Başlangıç: İlk Python web uygulamanızı oluşturmak için Visual Studio'yu kullanın. | Microsoft Docs"
 ms.custom: 
-ms.date: 12/1/2017"
+ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -13,11 +13,11 @@ ms.author: kraigb
 manager: ghogen
 dev_langs: python
 ms.workload: python
-ms.openlocfilehash: bf0a6e187a98a03d3beed33537fe5244ecd5d35d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 226f673dbd305f9dabf759cb11c6537a2f3ba637
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Hızlı Başlangıç: İlk Python web uygulamanızı oluşturmak için Visual Studio'yu kullanın.
 
@@ -29,7 +29,11 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
 
 1. Üst menü çubuğundan seçin **Dosya > Yeni > Proje...** .
 
-1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **diğer diller**seçeneğini belirleyip **Python**. Orta bölmede seçin **Web projesi**, proje "HelloPython" gibi bir ad verin ve ardından **Tamam**.
+1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **yüklü**seçeneğini belirleyip **Python**.
+
+1. Orta bölmede seçin **Web projesi**, proje "HelloPython" gibi bir ad verin ve ardından **Tamam**.
+
+    ![Python Web Seçili proje ile yeni proje iletişim kutusu](media/quickstart-python-00-web-project.png)
 
     İşyeri dışında Python proje şablonları görmüyorsanız, İptal **yeni proje** iletişim kutusuna ve üst menü çubuğundan seçin **Araçlar > alma araçları ve özelliklerinin...**  Visual Studio yükleyicisi açın. Seçin **Python geliştirme** iş yükü, ardından **Değiştir**.
 
@@ -39,17 +43,21 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
 
     ![Yeni oluşturulan boş proje gösteren Çözüm Gezgini](media/quickstart-python-01-empty-project.png)
 
+**Soru bir Python uygulaması için Visual Studio Proje oluşturmanın avantajı nedir?**
+
+Yanıt: Python uygulamaları, genellikle yalnızca klasörleri ve dosyaları kullanılarak tanımlanır, ancak uygulamalar daha büyük hale ve belki de JavaScript web uygulamaları için otomatik olarak oluşturulan dosyaları içeren vb. gibi bu yapı karmaşık olabilir. Visual Studio projesi bu karışıklığı yönetmenize yardımcı olur. Proje (bir `.pyproj` dosyası) kaynak ve projenizi ile ilişkili içerik dosyalarını tanımlar, her dosya için yapı bilgileri içerir, kaynak denetimi sistemleriyle tümleştirmeyi bilgilerini korur ve uygulamanızı düzenlemenize yardımcı olur mantıksal bileşenlerine.
+
 ## <a name="install-the-falcon-library"></a>Falcon kitaplığını yükle
 
-Web uygulamalarında Python neredeyse her zaman birçok kullanılabilir Python kitaplıklarından birini yönlendirme web isteklerini ve yanıtlarını şekillendirme gibi alt düzey ayrıntıların işlemek için kullanır. Visual Studio'da Python geliştirme iş yükü sağlar [şablonları web uygulamaları için çeşitli](../python/template-web.md) Bottle, Flask ve Django kitaplıklar oluşturulmuştur.
+Web uygulamalarında Python neredeyse her zaman birçok kullanılabilir Python kitaplıklarından birini yönlendirme web isteklerini ve yanıtlarını şekillendirme gibi alt düzey ayrıntıların işlemek için kullanır. Bu amaç için Visual Studio şablonları Bottle, Flask ve Django çerçeveleri kullanarak web uygulamaları için çeşitli sağlar.
 
-Bu hızlı başlangıç ancak farklı bir kitaplık kullanmak [Falcon](https://falconframework.org/), bir paketi yükleme ve web uygulaması sıfırdan oluşturma işleminde yaşamaya. Kolaylık olması için aşağıdaki adımları Falcon varsayılan genel ortamına yükleyin.
+Bu hızlı başlangıç ancak, Falcon bir paketi yükleme ve web uygulaması sıfırdan oluşturma işleminde deneyimi için kitaplığını kullanın. (Visual Studio şu anda Falcon özel şablonları dahil değildir.) Kolaylık olması için aşağıdaki adımları Falcon varsayılan genel ortamına yükleyin.
 
 1. Genişletme **Python ortamları** proje için varsayılan ortamı görmek için proje düğümünde.
 
     ![Varsayılan ortam gösteren Çözüm Gezgini](media/quickstart-python-02-default-environment.png)
 
-1. Ortam sağ tıklatıp **Python paketini yükle...** . Bu komut açar **Python ortamları** penceresinde **paketleri** sekmesi. Arama alanına "falcon" girin ve **"PIP yükle falcon" Pypı**. Sizden yönetici ayrıcalıkları kabul edin ve gözlemlemek **çıkış** ilerleme için Visual Studio penceresinde.
+1. Ortam sağ tıklatıp **Python paketini yükle...** . Bu komut açar **Python ortamları** penceresinde **paketleri** sekmesi. Arama alanına "falcon" girin ve **"PIP yükle falcon" Pypı**. Sizden yönetici ayrıcalıkları kabul edin ve gözlemlemek **çıkış** ilerleme için Visual Studio penceresinde. (Bir istem genel ortam için paketler klasörü korumalı alanı içinde bulunduğu yükseltme gerçekleşir ister `c:\program files`.)
 
     ![Falcon kitaplığı yükleme](media/quickstart-python-03-install-package.png)
 
@@ -57,24 +65,30 @@ Bu hızlı başlangıç ancak farklı bir kitaplık kullanmak [Falcon](https://f
 
     ![Yüklü falcon kitaplığı](media/quickstart-python-04-package-installed.png)
 
+Falcon hakkında daha fazla bilgi için ziyaret [falconframework.org](https://falconframework.org/).
+
 Belirli bir proje için kitaplıkları yükleneceği kitaplıkları genel ortamında yüklemek yerine, geliştiriciler genellikle "sanal ortam" oluşturduğunuz unutmayın. Visual Studio birçok Python proje şablonlarını içeren bir `requirements.txt` şablonu bağımlı olduğu kitaplıkları listeler dosya. Bu şablonlardan birini proje oluşturma içine kitaplıkların yüklü bir sanal ortamın oluşturulmasını tetikler. Daha fazla bilgi için bkz: [Python ortamları - sanal ortamlar](../python/python-environments.md#virtual-environments).
 
 ## <a name="add-a-code-file"></a>Bir kod dosyası ekleme
 
 Artık bir en az bir web uygulaması uygulamak için Python kodu biraz eklemek hazırsınız.
 
-1. ' Nde projeye sağ **Çözüm Gezgini** seçip **Ekle > Yeni öğe...** . Görüntülenen iletişim kutusunda, seçin **boş Python dosyası**, adlandırın `hello.py`ve seçin **Tamam**. Visual Studio dosya Düzenleyicisi penceresinde otomatik olarak açılır. (Genel olarak, **Ekle > Yeni öğe...**  komut dosyaları farklı türde bir projeye eklemek için bir yoldur harika öğe şablonları genellikle yararlı Demirbaş kod sağlayın.)
+1. ' Nde projeye sağ **Çözüm Gezgini** seçip **Ekle > Yeni öğe...** .
 
-1. Kopyala-yapıştır veya aşağıdaki kodu girin `hello.py`:
+1. Görüntülenen iletişim kutusunda, seçin **boş Python dosyası**, adlandırın `hello.py`seçip **Ekle**. Visual Studio dosya Düzenleyicisi penceresinde otomatik olarak açılır. (Genel olarak, **Ekle > Yeni öğe...**  komut dosyaları farklı türde bir projeye eklemek için bir yoldur harika öğe şablonları genellikle yararlı Demirbaş kod sağlayın.)
+
+1. Aşağıdaki kodu kopyalayın ve yapıştırın `hello.py`:
 
     ```python
     import falcon
-    api = falcon.API()
 
-    # In Falcon, define a class for each resource; the on_get 
-    # method then handles any GET requests.
+    # In Falcon, define a class for each resource and define on_* methods
+    # where * is any standard HTTP methods in lowercase, such as on_get.
 
     class HelloResource:
+        # In this application, the single HelloResource responds to only GET
+        # requests, so it has only an on_get method.
+
         def on_get(self, req, resp):
             resp.status = falcon.HTTP_200  # 200 is the default
             resp.body = "Hello, Python!"
@@ -82,11 +96,16 @@ Artık bir en az bir web uygulaması uygulamak için Python kodu biraz eklemek h
     # Resources are represented by long-lived class instances
     hello = HelloResource()
 
-    # Instruct Falcon to route / and /hello to the HelloResource
+    # Instruct Falcon to route / and /hello to HelloResource. If you add
+    # other resources, use api.add_route to define the desired
+    # resource locators for them.
+    api = falcon.API()
     api.add_route('/', hello)
     api.add_route('/hello', hello)
 
     if __name__ == "__main__":
+        # Use Python's built-in WSGI reference implementation to run
+        # a web server for the application.
         from wsgiref.simple_server import make_server
 
         # Run the web server on localhost:8080
@@ -95,19 +114,27 @@ Artık bir en az bir web uygulaması uygulamak için Python kodu biraz eklemek h
         srv.serve_forever()
     ```
 
+1. Bu kod yapıştırılan Visual Studio altında dalgalı gösterebilir `falcon` ilk satır hem de altındaki `wsgiref.simple.server` satırında 20. Visual Studio hala Bu modüller için IntelliSense veritabanı oluştururken bu göstergeleri görüntülenir.
+
 Falcon hakkında daha fazla bilgi için bkz: [Falcon Quickstart](https://falcon.readthedocs.io/en/stable/user/quickstart.html) (falcon.readthedocs.io).
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırın
 
 1. Sağ `hello.py` içinde **Çözüm Gezgini** seçip **başlangıç dosyası olarak ayarlamak**. Bu komut, uygulama çalışırken Python içinde başlatmak için kod dosyası tanımlar.
 
+    ![Çözüm Gezgini'nde proje için başlangıç dosyası ayarı](media/quickstart-python-05-set-as-startup-file.png)
+
 1. "Hello Python" projeye sağ **Çözüm Gezgini** seçip **özellikleri**. Ardından **hata ayıklama** sekmesinde ve ayarlama **bağlantı noktası numarası** özelliğine `8080`. Bu adım, Visual Studio bir tarayıcı ile başlatır sağlar `localhost:8080` rastgele bir bağlantı noktası kullanarak yerine.
 
 1. Seçin **hata ayıklama > hata ayıklama olmadan Başlat** (dosyalara değişiklikleri kaydedin ve uygulamayı çalıştırmak için Ctrl + F5).
 
-1. "Başlangıç web uygulaması sunucusu" iletisiyle bir komut penceresi görüntülenir, sonra için bir tarayıcı penceresi açılır `localhost:8080` iletisini görürseniz burada "Hello, Python!" GET isteğini da komut penceresinde görünür. (Yalnızca Python etkileşimli Kabuk komut penceresinde görürseniz, bu pencereyi kısaca ekranda yanıp sönen varsa, ayarladığınız emin olun veya `hello.py` başlangıç dosyası olarak yukarıdaki adım 1.)
+1. "Başlangıç web uygulaması sunucusu" iletisiyle bir komut penceresi görüntülenir, sonra bir tarayıcı penceresi açın `localhost:8080` iletisini görürseniz burada "Hello, Python!" GET isteğini da komut penceresinde görünür.
 
-1. Uygulama durdurmak için komut penceresini kapatın.
+    Bir tarayıcı otomatik olarak açılmazsa, tercih ettiğiniz tarayıcıyı başlatın ve gidin `localhost:8080`.)
+
+    Yalnızca Python etkileşimli Kabuk komut penceresinde görürseniz, bu pencereyi kısaca ekranda yanıp sönen varsa, ayarladığınız emin olun veya `hello.py` yukarıdaki 1. adımda başlangıç dosyası olarak.
+
+1. Uygulama durdurmak için komut penceresini kapatın, sonra da tarayıcı penceresini kapatın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
@@ -117,5 +144,5 @@ Falcon hakkında daha fazla bilgi için bkz: [Falcon Quickstart](https://falcon.
 > [Öğretici: Visual Studio'da Python ile çalışmaya başlama](../python/vs-tutorial-01-01.md).
 
 - Hakkında bilgi edinin [Python web Visual Studio'da Uygulama Şablonları](../python/template-web.md)
+- Hakkında bilgi edinin [Python hata ayıklama](../python/debugging.md)
 - Daha fazla bilgi edinmek [Visual Studio IDE](../ide/visual-studio-ide.md)
-- Nasıl kullanacağınızı öğrenin [Visual Studio hata ayıklayıcısı](../debugger/debugger-feature-tour.md)

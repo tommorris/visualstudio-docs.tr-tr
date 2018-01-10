@@ -13,15 +13,15 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6fe63cd9258c5baf9509bb68d4258e839ebe75f0
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-projects"></a>Python projeleri
 
-Python uygulamaları, genellikle yalnızca klasörleri ve dosyaları kullanılarak tanımlanır, ancak uygulamalar daha büyük hale ve belki de JavaScript web uygulamaları için otomatik olarak oluşturulan dosyaları içeren vb. gibi bu yapı karmaşık olabilir. Bu karışıklığı yönetmenize yardımcı olmak için Python uygulamalar için Visual Studio projeleri oluşturabilirsiniz. Python proje (bir `.pyproj` dosyası) kaynak ve projenizi ile ilişkili içerik dosyalarını tanımlar, her dosya için yapı bilgileri içerir, kaynak denetimi sistemleriyle tümleştirmeyi bilgilerini korur ve düzenlemenize yardımcı olur, mantıksal bileşenlerin uygulamasına.
+Python uygulamaları, genellikle yalnızca klasörleri ve dosyaları kullanılarak tanımlanır, ancak uygulamalar daha büyük hale ve belki de JavaScript web uygulamaları için otomatik olarak oluşturulan dosyaları içeren vb. gibi bu yapı karmaşık olabilir. Visual Studio projesi bu karışıklığı yönetmenize yardımcı olur. Proje (bir `.pyproj` dosyası) kaynak ve projenizi ile ilişkili içerik dosyalarını tanımlar, her dosya için yapı bilgileri içerir, kaynak denetimi sistemleriyle tümleştirmeyi bilgilerini korur ve uygulamanızı düzenlemenize yardımcı olur mantıksal bileşenlerine.
 
 Ayrıca, proje bir Visual Studio içinde her zaman yönetilir *çözüm*, birbirine başvurabilir projeleri herhangi bir sayıda içerebilir. Örneğin, Python projenin hata ayıklamasını başlattığınızda derlemeler Visual Studio otomatik olarak C++ projesi (gerekiyorsa), bir Python proje uzantısı modülü için C++ projesi başvuruda bulunabilir. (Bir genel tartışma için bkz: [çözümler ve projeler Visual Studio'da](../ide/solutions-and-projects-in-visual-studio.md).)
 
@@ -38,7 +38,7 @@ Bu konuda:
 
 < a name = "Basit-kullanım-proje-boş"</a>
 > [!Tip]
-> Yaptığınız gibi bir projeyi bile olmadan Visual Studio Python kodu ile de çalışır. bir Python tek başına dosya ve otomatik tamamlama keyfini açık, IntellSense ve hata ayıklama (Düzenleyicisi'nde sağ tıklatıp seçerek **Başlat [ile | olmadan]hataayıklama**). Bu kodu her zaman varsayılan genel ortam kullandığından, kodu farklı bir ortamı için tasarlanmıştır ancak, yanlış tamamlamalar veya hatalar görebilirsiniz. Ayrıca, Visual Studio, tüm dosyaları ve önemli ölçüde CPU süresi tüketebilir içinden tek dosya açıldığında, klasöründe paketleri analiz eder.
+> Yaptığınız gibi bir projeyi bile olmadan Visual Studio Python kodu ile de çalışır. bir Python tek başına dosya ve otomatik tamamlama keyfini açık, IntelliSense ve hata ayıklama (Düzenleyicisi'nde sağ tıklatıp seçerek **Başlat [ile | olmadan]hataayıklama**). Bu kodu her zaman varsayılan genel ortam kullandığından, kodu farklı bir ortamı için tasarlanmıştır ancak, yanlış tamamlamalar veya hatalar görebilirsiniz. Ayrıca, Visual Studio, tüm dosyaları ve önemli ölçüde CPU süresi tüketebilir içinden tek dosya açıldığında, klasöründe paketleri analiz eder.
 >
 > Aşağıda açıklandığı gibi basit sağlasa da var olan koddan bir Visual Studio projesi oluşturmak için olan [var olan dosyalarından proje oluşturma](#creating-a-project-from-existing-files).
 
@@ -62,15 +62,16 @@ Yeni bir proje her zaman varsayılan genel Python ortamı ile ilişkilidir. Proj
 ![Python proje için bir ortam etkinleştirme](media/projects-activate-environment.png)
 
 < a name = "proje türleri"</a>
+
 ## <a name="project-templates"></a>Proje şablonları
 
-Visual Studio bir Python proje, sıfırdan veya var olan koddan ayarlamak için çeşitli yöntemler sağlar. Bir şablonu kullanmak için **Dosya > Yeni > Proje...**  menü komutu ya da çözüm Çözüm Gezgini seçip sağ **Ekle > Yeni proje...** , her ikisi de Getir **yeni proje** aşağıdaki iletişim. Python özel şablonları görmek için arama "Python" ya da seçin **şablonları > Diğer diller > Python** düğümü:
+Visual Studio bir Python proje, sıfırdan veya var olan koddan ayarlamak için çeşitli yöntemler sağlar. Bir şablonu kullanmak için **Dosya > Yeni > Proje...**  menü komutu ya da çözüm Çözüm Gezgini seçip sağ **Ekle > Yeni proje...** , her ikisi de Getir **yeni proje** aşağıdaki iletişim. Python özel şablonları görmek için arama "Python" ya da seçin **yüklü > Python** düğümü:
 
 ![Python şablonlarla yeni proje iletişim kutusu](media/projects-new-project-dialog.png)
 
 Aşağıdaki tabloda, Visual Studio (tüm şablonları tüm önceki sürümlerinde kullanılabilir) 2017 kullanılabilir şablonlar özetlenmektedir:
 
-| Şablon | Açıklama | 
+| Şablon | Açıklama |
 | --- | --- |
 | [Varolan Python koddan](#creating-a-project-from-existing-files) | Visual Studio projesi klasörü yapısı içinde varolan Python kodu oluşturur.  |
 | Python uygulama | Tek ve boş kaynak dosyası içeren yeni bir Python uygulaması için bir temel Proje yapısı. Varsayılan olarak, projeyi tarafından değiştirebileceğiniz varsayılan genel ortamının konsol yorumlayıcı çalışır [farklı bir ortam atama](python-environments.md#project-specific-environments). |

@@ -4,19 +4,18 @@ ms.custom:
 ms.date: 11/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
-caps.latest.revision: "13"
 ms.author: mblome
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: cad1d4dd670f83c9dcb168127ecbe44f8687f09a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikeblome
+ms.openlocfilehash: 1b032b651603beb5771bfa68b8dc8628540d638e
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>UWP uygulamalar için Visual C++ DLL test etme 
 Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (UWP) uygulamaları için C++ DLL için birim testleri oluşturma yöntemlerinden biri açıklanmaktadır. RooterLib DLL belirsiz anılarınızı sınırı teorik olarak verilen bir sayının kare kökünü tahmini hesaplar işlevi uygulayarak hesaplama gösterir. Bir kullanıcı fun gösteren bir UWP uygulamasını DLL sonra dahil edilebilir math ile yapılabilir şey.  

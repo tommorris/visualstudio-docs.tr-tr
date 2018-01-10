@@ -7,21 +7,21 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
-caps.latest.revision: "16"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bbac737c6f5bbb3dbe99b0ceae2eb648bcf4295
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e0a27e78735b85417a62d99e4f9b5d101a7a177d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="customizing-code-coverage-analysis"></a>Kod Kapsamı Çözümlemeyi Özelleştirme
+
 Varsayılan olarak, Visual Studio kod kapsamı aracı birim testleri sırasında yüklenen tüm çözüm derlemelerinin (.exe/.dll) çözümler. Çoğu zaman iyi çalıştığı için bu varsayılanı korumanız önerilir. Daha fazla bilgi için bkz: [kullanarak kod kapsamı belirleme ne kadar kodun için test](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- Kod kapsamı davranışını özelleştirmeden önce bazı alternatifleri düşünün:  
+Kod kapsamı davranışını özelleştirmeden önce bazı alternatifleri düşünün:  
   
 -   *Sınama kodu gelen kod kapsamı sonuçları hariç ve yalnızca uygulama kodunun dahil etmek istediğiniz.*  
   
@@ -31,10 +31,11 @@ Varsayılan olarak, Visual Studio kod kapsamı aracı birim testleri sırasında
   
      Bu derlemeler için .pdb dosyalarını alın ve bunları derleme .dll dosyaları gibi aynı klasöre kopyalayın.  
   
- Kod kapsamı davranışını özelleştirmek için kopyalama [bu konunun sonundaki örnek](#sample) ve dosya uzantısı .runsettings kullanarak çözümünüze ekleyin. Kendi gereksinimlerinize ve ardından Düzenle **Test** menüsünde seçin **Test ayarları**, **Test Ayarları Seç** dosya. Bu konunun geri kalanını bu yordam daha ayrıntılı biçimde açıklar.  
+Kod kapsamı davranışını özelleştirmek için kopyalama [bu konunun sonundaki örnek](#sample) ve dosya uzantısı .runsettings kullanarak çözümünüze ekleyin. Kendi gereksinimlerinize ve ardından Düzenle **Test** menüsünde seçin **Test ayarları**, **Test Ayarları Seç** dosya. Bu konunun geri kalanını bu yordam daha ayrıntılı biçimde açıklar.  
   
-## <a name="the-runsettings-file"></a>.runsettings dosyası  
- Gelişmiş kod kapsamı ayarları .runsettings dosyasında belirtilir. Bu, birim test etme araçları tarafından kullanılan yapılandırma dosyasıdır. Kopyaladığınız öneririz [bu konunun sonundaki örnek](#sample) ve kendi gereksinimlerinize uyacak şekilde düzenleyin.  
+## <a name="the-runsettings-file"></a>.runsettings dosyası
+
+Gelişmiş kod kapsamı ayarları .runsettings dosyasında belirtilir. Bu, birim test etme araçları tarafından kullanılan yapılandırma dosyasıdır. Kopyaladığınız öneririz [bu konunun sonundaki örnek](#sample) ve kendi gereksinimlerinize uyacak şekilde düzenleyin.  
   
 -   *Visual Studio 2010'da kullanılan .testsettings dosyasına ne oldu?*  
   
@@ -58,8 +59,9 @@ Varsayılan olarak, Visual Studio kod kapsamı aracı birim testleri sırasında
   
  Birim testlerinin diğer yönleri aynı .runsettings dosyasında yapılandırılabilir. Daha fazla bilgi için bkz: [Birim Test kodunuzu](../test/unit-test-your-code.md).  
   
-### <a name="specifying-symbol-search-paths"></a>Simge arama yolu belirtme  
- Kod kapsamı bulunan derlemeler için simgeleri (.pdb dosyaları) gerektirir. Çözümünüz tarafından oluşturulmuş derlemeler için, simge dosyaları genellikle ikili dosyalarda bulunur ve kod kapsamı otomatik olarak çalışır. Ancak bazı durumlarda, kod kapsamı çözümlemenizde başvurulmuş derlemeleri eklemek isteyebilirsiniz. Bu gibi durumlarda .pdb dosyaları ikili bitişik olmayabilir, ancak .runsettings dosyasında simge arama yolu belirtebilirsiniz.  
+### <a name="specifying-symbol-search-paths"></a>Simge arama yolu belirtme
+
+Kod kapsamı bulunan derlemeler için simgeleri (.pdb dosyaları) gerektirir. Çözümünüz tarafından oluşturulmuş derlemeler için, simge dosyaları genellikle ikili dosyalarda bulunur ve kod kapsamı otomatik olarak çalışır. Ancak bazı durumlarda, kod kapsamı çözümlemenizde başvurulmuş derlemeleri eklemek isteyebilirsiniz. Bu gibi durumlarda .pdb dosyaları ikili bitişik olmayabilir, ancak .runsettings dosyasında simge arama yolu belirtebilirsiniz.  
   
 ```xml  
 <SymbolSearchPaths>                
@@ -72,8 +74,9 @@ Varsayılan olarak, Visual Studio kod kapsamı aracı birim testleri sırasında
 > [!WARNING]
 >  Sembol çözünürlük özellikle pek çok derlemeyle uzak dosya konumu kullanırken zaman alabilir. Bu nedenle, ikili (.dll ve .exe) dosyaları ile aynı yerel konuma uzak .pdb dosyalarını kopyalamayı düşünün.  
   
-### <a name="excluding-and-including"></a>Dahil ve hariç  
- Belirtilen derleme kod kapsamını çözümleme dışı bırakabilirsiniz. Örneğin:  
+### <a name="excluding-and-including"></a>Dahil ve hariç
+
+Belirtilen derleme kod kapsamını çözümleme dışı bırakabilirsiniz. Örneğin:  
   
 ```minterastlib  
 <ModulePaths>  
@@ -99,8 +102,9 @@ Varsayılan olarak, Visual Studio kod kapsamı aracı birim testleri sırasında
   
  `Include`önce işlenen `Exclude`.  
   
-### <a name="regular-expressions"></a>Normal ifadeler  
- Dahil ve hariç düğümler normal ifadeler kullanır. Daha fazla bilgi için bkz: [Visual Studio'da normal ifadeler kullanarak](../ide/using-regular-expressions-in-visual-studio.md). Normal ifadeler joker karakterler ile aynı değildir. Özellikle:  
+### <a name="regular-expressions"></a>Normal ifadeler
+
+Dahil ve hariç düğümler normal ifadeler kullanır. Daha fazla bilgi için bkz: [Visual Studio'da normal ifadeler kullanarak](../ide/using-regular-expressions-in-visual-studio.md). Normal ifadeler joker karakterler ile aynı değildir. Özellikle:  
   
 1.  **. \***  herhangi bir karakter dizesi ile eşleşir  
   
@@ -178,43 +182,47 @@ Varsayılan olarak, Visual Studio kod kapsamı aracı birim testleri sırasında
   
 ## <a name="how-to-specify-runsettings-files-while-running-tests"></a>Testleri çalıştırırken .runsettings dosyaları belirleme  
   
-### <a name="to-customize-runsettings-in-visual-studio-tests"></a>Visual Studio testlerinde runsettings özelleştirmek için  
- Seçin **Test**, **Test ayarları**, **Test ayarları dosyasını seçin** ve .runsettings dosyasını seçin. Dosya, Test Ayarları menüsünde görünür ve seçebilir veya iptal edebilirsiniz. Kullandığınız her seçili olsa da, .runsettings dosyasını geçerlidir **kod kapsamını çözümleme**.  
-  
-### <a name="to-customize-run-settings-in-a-command-line-test"></a>Komut satırı testinde ayarları çalıştırmayı özelleştirmek için  
- Komut satırından testleri çalıştırmak için vstest.console.exe kullanın. Ayarlar dosyası, bu yardımcı programın bir parametresidir. Daha fazla bilgi için bkz: [kullanarak vstest.Console aracını komut satırından](/devops-test-docs/test/using-vstest-console-from-the-command-line).  
-  
-1.  Visual Studio Geliştirici Komut Satırını başlatın:  
-  
-     Windows **Başlat**, seçin **tüm programlar**, **Microsoft Visual Studio**, **Visual Studio Araçları**, **Geliştirici Komut İstemi**.  
-  
-2.  Çalıştır:  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
-  
-### <a name="to-customize-run-settings-in-a-build-definition"></a>Bir yapı tanımında ayarları çalıştırmayı özelleştirmek için  
- Bir takım yapısından kod kapsama verisi elde edebilirsiniz.  
-  
- ![Bir derleme tanımınız runsettings belirtme](../test/media/codecoverage-buildrunsettings.png "CodeCoverage buildRunsettings")  
-  
+### <a name="to-customize-runsettings-in-visual-studio-tests"></a>Visual Studio testlerinde runsettings özelleştirmek için
+
+Seçin **Test** > **Test ayarları** > **Test ayarları dosyasını seçin** ve .runsettings dosyasını seçin. Dosya, Test Ayarları menüsünde görünür ve seçebilir veya iptal edebilirsiniz. Kullandığınız her seçili olsa da, .runsettings dosyasını geçerlidir **kod kapsamını çözümleme**.
+
+### <a name="to-customize-run-settings-in-a-command-line-test"></a>Komut satırı testinde ayarları çalıştırmayı özelleştirmek için
+
+Komut satırından testleri çalıştırmak için vstest.console.exe kullanın. Ayarlar dosyası, bu yardımcı programın bir parametresidir.
+
+1.  Visual Studio Geliştirici Komut Satırını başlatın:
+
+    Windows **Başlat** menüsünde seçin **Visual Studio 2017** > **VS 2017 için geliştirici komut istemi**.
+
+2.  Şu komutu çalıştırın:
+
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
+
+### <a name="to-customize-run-settings-in-a-build-definition"></a>Bir yapı tanımında ayarları çalıştırmayı özelleştirmek için
+
+Bir takım yapısından kod kapsama verisi elde edebilirsiniz.
+
+![Bir derleme tanımınız runsettings belirtme](../test/media/codecoverage-buildrunsettings.png "CodeCoverage buildRunsettings")  
+
 1.  .runsettings dosyanızın işaretli olduğundan emin olun.  
   
 2.  Takım Gezgini'nde Aç **derlemeler**ve ardından eklemek veya derleme tanımı düzenleyin.  
   
-3.  Üzerinde **işlem** sayfasında **otomatikleştirilmiş testler**, **Test kaynak**, **çalıştırma ayarları**. Seçin, **.runsettings** dosya.  
+3.  Üzerinde **işlem** sayfasında **otomatikleştirilmiş testler** > **Test kaynak** > **çalıştırma ayarları**. Seçin, **.runsettings** dosya.
   
     -   *Ancak **Test derleme** yerine görünür **Test kaynak**. Çalıştığımda ayarlamak **çalıştırma ayarları** alan yalnızca seçtiğim .testsettings dosyaları.*  
   
          Altında **otomatikleştirilmiş testler**seçin **Test derleme**ve seçin **[...]**  satırın sonundaki. İçinde **Ekle/Düzenle testi** iletişim kutusu, kümesi **Test Çalıştırıcısı** için **Visual Studio Test Çalıştırıcısı**.  
   
- Sonuçlar yapı raporunun özet bölümünde görünürdür.  
+Sonuçlar yapı raporunun özet bölümünde görünürdür.
   
-##  <a name="sample"></a>Örnek .runsettings dosyasını  
- Bu kodu kopyalayın ve kendi gereksinimlerinize göre düzenleyin. Bu varsayılan .runsettings dosyasıdır.  
-  
- (.Runsettings dosyasını diğer kullanımlar için bkz: [.runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)  
-  
-```xml  
+##  <a name="sample"></a>Örnek .runsettings dosyasını
+
+Bu kodu kopyalayın ve kendi gereksinimlerinize göre düzenleyin. Bu varsayılan .runsettings dosyasıdır.
+
+(.Runsettings dosyasını diğer kullanımlar için bkz: [.runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <!-- File name extension must be .runsettings -->  
 <RunSettings>  
@@ -322,10 +330,10 @@ Included items must then not match any entries in the exclude list to remain inc
       </DataCollector>  
     </DataCollectors>  
   </DataCollectionRunSettings>  
-</RunSettings>  
-  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Test edildiğini belirlemek ne kadar kodun için kod kapsamını kullanma](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
- [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)
+</RunSettings>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Ne Kadar Kodun Test Edildiğini Belirlemek için Kod Kapsamını Kullanma](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)  
+[Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)

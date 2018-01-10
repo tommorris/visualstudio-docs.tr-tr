@@ -21,11 +21,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e78e17d4b9060a3a52498109a744c13cdf972abb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 82894a5d7f92c8231a6ba3a1948369fb2c819a6d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="replace-method-string-javascript"></a>replace Yöntemi (Dize) (JavaScript)
 Normal bir ifade veya arama dizesini kullanarak bir dize içinde metnin yerine geçer.  
@@ -34,7 +34,7 @@ Normal bir ifade veya arama dizesini kullanarak bir dize içinde metnin yerine g
   
 ```  
   
-stringObj. replace(rgExp, replaceText)  
+stringObj.replace(rgExp, replaceText)  
 ```  
   
 ## <a name="parameters"></a>Parametreler  
@@ -59,8 +59,8 @@ stringObj. replace(rgExp, replaceText)
 |**$&**|Bu bölümü belirtir `stringObj` eşleşen tüm düzeni. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] veya üzeri)|  
 |`$``|Bu bölümü belirtir `stringObj` tarafından açıklanan eşleşme önündeki  **$&** . ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] veya üzeri)|  
 |`$'`|Bu bölümü belirtir `stringObj` tarafından açıklanan eşleşme izleyen  **$&** . ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] veya üzeri)|  
-|`$`  ***n***|*n* Th yakalanan submatch, burada  *n*  1 ile 9 arasında tek bir ondalık basamak değil. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] veya üzeri)|  
-|`$`  ***nn***|*nn* Th yakalanan submatch, burada  *nn*  01 ile 99 arasında iki basamaklı bir ondalık sayı. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] veya üzeri)|  
+|`$`  ***n***| *n* Th yakalanan submatch, burada  *n*  1 ile 9 arasında tek bir ondalık basamak değil. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] veya üzeri)|  
+|`$`  ***nn***| *nn* Th yakalanan submatch, burada  *nn*  01 ile 99 arasında iki basamaklı bir ondalık sayı. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] veya üzeri)|  
   
  Varsa `replaceText` her eşleşen substring işlevi şununla adlı bir işlev aranır *m* + 3 tane bağımsız değişkene nerede *m* sol parantez içinde yakalama sayısıdır `rgExp`. İlk bağımsız değişken, eşleşen alt dizedir. Sonraki *m* bağımsız değişkenler tüm arama sonuçlandı yakalar. Bağımsız değişken *m* + 2 içinde uzaklık `stringObj` eşleşme oluştuğu ve bağımsız değişkeni *m* + 3 `stringObj`. Sonuç, eşleşen her alt dizenin karşılık gelen işlev dönüş değeriyle değiştirilmesi sonucu elde edilen dize değeridir.  
   
@@ -89,7 +89,7 @@ var re = /(\S+)(\s+)(\S+)/g;
 var result = s.replace(re, "$3$2$1");  
 document.write(result);  
   
-// Output:  quick The fox brown over jumps lazy the dog.  
+// Output:  quick The fox brown over jumped lazy the dog.  
 ```  
   
  İçinde çalıştığı aşağıdaki örnekte, [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] ve daha sonra değiştirme metnini döndüren bir işlev kullanmayı gösterir. Sonuna "F" gelen bir sayının herhangi bir örneğinde Celsius dönüştürmesi yapar.  

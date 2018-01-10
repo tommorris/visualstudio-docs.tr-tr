@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio'da Python ile çalışma, 1. adım | Microsoft Docs"
 ms.custom: 
-ms.date: 09/26/2017
+ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: adb49bb6070fee611a2ba67913943e68ee938d29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9c80eb8b09a7bbcfc813c70d548f9762422262ed
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Visual Studio'da Python ile çalışma
 
@@ -51,7 +51,7 @@ Bu öğreticide tek ve boş kod dosyasını içeren basit bir proje ile başlar.
 
     Python desteği Visual Studio Proje şablonları, Bottle, Flask ve Django çerçeveleri kullanarak web uygulamaları dahil olmak üzere çeşitli nasıl içerir dikkat edin. Bu kılavuzda amaçları doğrultusunda, Bununla birlikte, boş bir proje ile başlayalım.
 
-1. Seçin **Python uygulama** şablonu, proje için bir ad belirtin ve seçin **Tamam**. 
+1. Seçin **Python uygulama** şablonu, proje için bir ad belirtin ve seçin **Tamam**.
 
 1. Birkaç dakika sonra Visual Studio Proje yapısında gösterir **Çözüm Gezgini** penceresi (1). Varsayılan kod dosyası (2) düzenleyicisinde açın. Özellikler penceresi (3), Çözüm Gezgini'nde tam konumuna diskteki dahil olmak üzere, seçili öğe için ek bilgileri görüntülemek için de görünür.
 

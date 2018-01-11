@@ -17,10 +17,26 @@
           href: tensorflow-vm.md
     - name: Nasıl yapılır kılavuzları
       items:
-        - name: Yeni bir proje oluşturma
-          href: create-project.md
+        - name: Proje oluşturma
+          items:
+            - name: Örnek galeriden proje oluşturma
+              href: create-project-gallery.md
+            - name: Mevcut koddan proje oluşturma
+              href: create-project-existing.md
+            - name: Şablondan proje oluşturma
+              href: create-project.md
+            - name: GitHub deposundan proje oluşturma
+              href: create-project-repo.md
         - name: Modelinizi eğitin
           href: train-model.md
+        - name: İş ayrıntılarını görüntüleme
+          href: job-details.md
+        - name: GPU kullanımını izleme
+          href: monitor-gpu.md
+        - name: TensorBoard’u izleme
+          href: monitor-tensorboard.md
+        - name: Depolama alanını yönetme
+          href: manage-storage.md
     - name: Örnekler
       items:
         - name: GitHub

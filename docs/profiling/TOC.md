@@ -1,12 +1,22 @@
-# [Profil oluşturma özelliği turu](profiling-feature-tour.md)
-## [Performans profili oluşturma Başlangıç kılavuzu](beginners-guide-to-performance-profiling.md)
-## [Profil oluşturma araçlarındaki yenilikler](what-s-new-in-profiling-tools.md)
+
+# [Profil oluşturma belgeleri](index.md)
+# Genel Bakış
+## [Profil oluşturma özelliği turu](profiling-feature-tour.md)
+# Hızlı Başlangıçlar
+## [CPU kullanımını analiz etme (yönetilen)](quickstart-cpu-usage-managed.md)
+## [CPU kullanımını analiz etme (yerel)](quickstart-cpu-usage-native.md)
+## [CPU kullanımını analiz etme (ASP.NET)](quickstart-cpu-usage-aspnet.md)
+# Öğreticiler
+## [Visual Studio’da uygulama performansının profili oluşturma](beginners-guide-to-performance-profiling.md)
+## [Visual Studio’da bellek kullanımının profilini oluşturma](memory-usage.md)
+# Kavramlar
 ## [Hata ayıklayıcı ile veya hata ayıklayıcı olmadan profil oluşturma araçları çalıştırma](running-profiling-tools-with-or-without-the-debugger.md)
-## [Bellek kullanımını analiz etme](memory-usage.md)
-### [Özel yerel ETW yığın olayları](custom-native-etw-heap-events.md)
-### [Hata ayıklayıcı olmadan bellek kullanımı](memory-usage-without-debugging2.md)
+# Nasıl yapılır kılavuzları
 ## [CPU kullanımını analiz etme](cpu-usage.md)
 ### [Bir Evrensel Windows Uygulamasında (UWP) CPU kullanımını analiz etme](analyze-cpu-usage-in-a-windows-universal-app.md)
+## [Bellek kullanımını analiz etme](analyze-memory-usage.md)
+### [Özel yerel ETW yığın olayları](custom-native-etw-heap-events.md)
+### [Hata ayıklayıcı olmadan bellek kullanımı](memory-usage-without-debugging2.md)
 ## [GPU kullanımını analiz etme](gpu-usage.md)
 ## [Kaynak tüketimini analiz etme](application-timeline.md)
 ## [PerfTips kullanma](perftips.md)
@@ -366,4 +376,6 @@
 ##### [CvWriteFlag İşlevi](cvwriteflag-function.md)
 ##### [CvWriteMessage İşlevi](cvwritemessage-function.md)
 ### [Eşzamanlılık Görselleştiricisi Komut Satırı Yardımcı Programı (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [UWP uygulamalarında enerji kullanımını analiz etme](analyze-energy-use-in-store-apps.md)
+## [Store uygulamalarında enerji kullanımını analiz etme](analyze-energy-use-in-store-apps.md)
+# Kaynaklar
+## [Profil oluşturma araçlarındaki yenilikler](what-s-new-in-profiling-tools.md)

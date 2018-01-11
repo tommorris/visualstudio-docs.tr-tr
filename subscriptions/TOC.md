@@ -10,7 +10,7 @@
 ### [Ürün Anahtarlarını Kullanma](product-keys.md)
 ### Avantajları Etkinleştirme
 #### Araçlar
-##### [Visual Studio Enterprise](vs-ide-benefit.md) 
+##### [Visual Studio IDE](vs-ide-benefit.md) 
 ##### [Visual Studio Team Services](vs-vsts.md)
 ##### [Microsoft Azure](vs-azure.md) 
 ##### [Parasoft](vs-parasoft.md)
@@ -33,7 +33,7 @@
 ##### [Teknik Destek](vs-tech-support.md)
 
 ## Yöneticiler
-### [Yönetici rolleri ve sorumlulukları](admin-responsibilities.md)
+### [Yönetici Genel Bakışı](admin-responsibilities.md)
 ### [Yönetici Portalına erişim](access-admin-portal.md)
 ### [Yönetici Portalını kullanma](using-admin-portal.md)
 ### [Abonelik atama](assign-license.md)

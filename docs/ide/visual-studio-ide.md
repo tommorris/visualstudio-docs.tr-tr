@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e8b2ee3e80d292e6a05a23c2f5b6932d569e0024
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: d95cbaff8545e67bfadb0c86a256353b3fa23191
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE genel bakış
 
@@ -76,7 +76,7 @@ Visual Studio yapabilir Yardım pek çok şey daha yapın. Daha kapsamlı bir li
 
 ## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE yükleyin
 
-Başlamak için Visual Studio indirin ve sisteminizde yükleyin. Adresinden indirebilirsiniz [Visual Studio 2017](https://www.visualstudio.com/vs/visual-studio-2017/).
+Başlamak için Visual Studio indirin ve sisteminizde yükleyin. Adresinden indirebilirsiniz [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).
 
 Visual Studio artık her zamankinden daha fazla basit! Modüler yükleyici seçin ve yüklemenize olanak sağlayan *iş yükleri*, hangi gruplarıdır programlama dili veya tercih ettiğiniz platform için gerekli özellikleri. Bu strateji, yükler ve çok daha hızlı güncelleştirmeleri yüklemesi ayak izinin Visual Studio zamankinden daha, daha küçük tutmaya yardımcı olur.
 
@@ -196,7 +196,7 @@ Bazı diğer ortak üretkenlik Visual Studio özellikleri şunlardır:
 
   ![Visual Studio üye listesi](../ide/media/vs2017_Intellisense.png)
 
-- **Dalgalı çizgiler** yazarken, hatalar veya olası sorunları kodunuzda gerçek zamanlı uyarı kırmızı dalgalı şunlardır. Derleme sırasında bulunan veya çalışma zamanı hatası için beklenmeden hemen sorunu çözmek sağlar. Dalgalı getirirseniz, hatayla ilgili ek bilgileri görürsünüz. Bir ampul de hatayı gidermeye yönelik öneriler ile sol kenar boşluğunda görünebilir. Daha fazla bilgi için bkz: [ampullerle hızlı eylemler gerçekleştirme](../ide/perform-quick-actions-with-light-bulbs.md).
+- **Dalgalı çizgiler** yazarken, hatalar veya olası sorunları kodunuzda gerçek zamanlı uyarı kırmızı dalgalı şunlardır. Derleme sırasında bulunan veya çalışma zamanı hatası için beklenmeden hemen sorunu çözmek sağlar. Dalgalı getirirseniz, hatayla ilgili ek bilgileri görürsünüz. Bir ampul de hatayı gidermeye yönelik öneriler ile sol kenar boşluğunda görünebilir. Daha fazla bilgi için bkz: [hızlı Eylemler](../ide/quick-actions.md).
 
  ![Dalgalı çizgiler](../ide/media/vs2017_squiggle.png)
 

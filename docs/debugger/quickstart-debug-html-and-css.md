@@ -24,16 +24,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: bf9049907d1648b1950f8d66e0fd183c82699e92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>HTML ve CSS UWP ve Windows 8.1 uygulamaları hata ayıklama
 ![Windows ve Windows Phone için geçerlidir](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- JavaScript uygulamaları için Visual Studio, Internet Explorer ve Visual Studio geliştiricilerinin aşina özellikleri içeren kapsamlı bir hata ayıklama deneyimi sağlar. Bu özellikler için desteklenen [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], Windows Phone uygulamaları ve Apache Cordova için Visual Studio Araçları kullanılarak oluşturulan uygulamalar için.  
+ JavaScript uygulamaları için Visual Studio, Internet Explorer ve Visual Studio geliştiricilerinin aşina özellikleri içeren kapsamlı bir hata ayıklama deneyimi sağlar. Bu özellikler UWP uygulamaları için desteklenen [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], Windows Phone uygulamaları ve Apache Cordova için Visual Studio Araçları kullanılarak oluşturulan uygulamalar için.  
   
  DOM denetleme araçları tarafından sağlanan etkileşimli hata ayıklama modelini kullanarak görüntüleyebilir ve işlenen HTML ve CSS kodu değiştirebilirsiniz. Tüm hata ayıklayıcı durdurup olmadan bunu yapabilirsiniz.
   
@@ -268,9 +268,9 @@ ms.lasthandoff: 12/22/2017
  Kullanarak öğelerini seçmek nasıl oluşturulduğunu gösteren bir örnek **Select öğesi** düğmesini bkz [DOM Gezgini'ni kullanarak hata ayıklama CSS stilleri](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ##  <a name="BrowserSupport"></a>Tarayıcı ve Platform desteği  
- JavaScript, DOM Gezgini ve JavaScript Konsolu penceresi için Visual Studio Araçları aşağıdaki platformlarda desteklenir:  
+ DOM Gezgini ve JavaScript Konsolu penceresi aşağıdaki platformlarda desteklenir:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]ve JavaScript ve HTML kullanarak Windows Phone uygulamaları  
+-   UWP uygulamaları [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] ve JavaScript ve HTML kullanarak Windows Phone uygulamaları  
   
 -   Internet Explorer 11 üzerinde çalışan[!INCLUDE[win81](../debugger/includes/win81_md.md)]  
   

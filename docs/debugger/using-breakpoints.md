@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 20f1b517d271bd50cdb96c595f2e8ab9be7c5e65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı'ndaki kesme noktalarını kullanma
 Hata ayıklayıcı yürütme, belki de kod değişkenlerinin durumunu görmek için veya çağrı yığını aramak için durdurmak istediğinizde kesme noktaları ayarlayabilirsiniz. Bunlar, bir geliştirici araç en önemli hata ayıklama teknikleri biridir.  
@@ -232,7 +232,7 @@ Hata ayıklayıcı yürütme, belki de kod değişkenlerinin durumunu görmek i�
 ## <a name="export-and-import-breakpoints"></a>Dışarı ve içeri aktarma kesme noktaları  
  Bir kesme noktası kesme noktasına sağ tıklayıp seçerek bir XML dosyasına aktarabilirsiniz **verme**. Dosya, varsayılan çözüm dizini olarak kaydedilir. Kesme noktaları almak için açın **kesme noktaları** penceresi (**CTRL + ALT + B**) ve sağ ok simgesini (Araç İpucu **kesme noktaları bir dosyadan içe**) .  
   
-## <a name="troubleshoot-breakpoints"></a>Kesme noktaları sorun giderme  
+## <a name="troubleshoot"></a>Kesme noktaları sorun giderme 
   
 ### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Bir kesme noktası silinmiş, ancak hata ayıklamayı yeniden başlattığınızda isabet devam  
  Hata ayıklama sırasında bir kesme noktası sildiyseniz, bazı durumlarda, kesme, hata ayıklama yeniden başlattığınızda isabet. Bu kesme basarsa durdurmak için tüm kesme örneklerini kaldırılma olduğundan emin olun **kesme noktaları** penceresi.  

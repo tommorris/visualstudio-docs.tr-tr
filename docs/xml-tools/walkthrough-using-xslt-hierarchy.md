@@ -7,30 +7,28 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5e60c8ec-cd05-4597-b856-55038218acf4
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da7cbf43ff21825e57b5bd5a47f59dbee27fe938
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1e36ebaec08d09cbf006f4c20e743b5c2a909169
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>İzlenecek yol: XSLT hiyerarşi kullanma
-XSLT hiyerarşi aracı birçok XML geliştirme görevlerini basitleştirir. XSLT stil sayfasını sık kullandığı `includes` ve `imports` yönergeler. Asıl stil sayfası içinden derleme başlatır, ancak bir XSLT stil sayfası derleme sonucu olarak hata gördüğünüzde, hata asıl stil sayfası'den başka bir kaynaktan gelebilir. Hata düzelttikten veya stil sayfası düzenleme eklenen veya içeri aktarılan stil sayfaları erişim gerektirebilir. Hata ayıklayıcı stil sayfası doğruluk dahil ve içeri aktarılan stil sayfasını açabilir ve bir veya daha fazla dahil edilen stil sayfaları, belirli bir noktada bir kesme noktası eklemek isteyebilirsiniz.  
+
+XSLT hiyerarşi aracı birçok XML geliştirme görevlerini basitleştirir. XSLT stil sayfasını sık kullandığı `includes` ve `imports` yönergeler. Asıl stil sayfası içinden derleme başlatır, ancak bir XSLT stil sayfası derleme sonucu olarak hata gördüğünüzde, hata asıl stil sayfası'den başka bir kaynaktan gelebilir. Hata düzelttikten veya stil sayfası düzenleme eklenen veya içeri aktarılan stil sayfaları erişim gerektirebilir. Hata ayıklayıcı stil sayfası doğruluk dahil ve içeri aktarılan stil sayfasını açabilir ve bir veya daha fazla dahil edilen stil sayfaları, belirli bir noktada bir kesme noktası eklemek isteyebilirsiniz.
+
+Burada XSLT hiyerarşi aracı yararlı olabilir başka bir senaryo kesme noktaları yerleşik şablon kurallarında koyuyor. Şablon kuralları için özel şablonları stil sayfası her bir modu için oluşturulan ve tarafından çağrılır `xsl:apply-templates` zaman başka bir şablonla eşleşip düğüm. Yerleşik şablonlar kurallarında hata ayıklama uygulamak için XSLT hata ayıklayıcı kurallarla dosyanın geçici klasörde oluşturur ve bunları birlikte asıl stil sayfası derler. Bazı koda atlama olmadan `xsl:apply-template`, asıl stil sayfanızda dahil stil sayfaları bulmak veya bulmak ve yerleşik şablon kurallarıyla stil sayfasını açmak zor olabilir.
+
+Bu konudaki örnek bir başvurulan stil sayfanızda hata ayıklama gösterir.
+
+## <a name="to-debug-in-a-referenced-style-sheet"></a>Başvurulan stil sayfasında hata ayıklamak için
+
+1. Bir XML belgesi Visual Studio'da açın. Bu örnekte aşağıdaki `collection.xml` belge.  
   
- Burada XSLT hiyerarşi aracı yararlı olabilir başka bir senaryo kesme noktaları yerleşik şablon kurallarında koyuyor. Şablon kuralları için özel şablonları stil sayfası her bir modu için oluşturulan ve tarafından çağrılır `xsl:apply-templates` zaman başka bir şablonla eşleşip düğüm. Yerleşik şablonlar kurallarında hata ayıklama uygulamak için XSLT hata ayıklayıcı kurallarla dosyanın geçici klasörde oluşturur ve bunları birlikte asıl stil sayfası derler. Bazı koda atlama olmadan `xsl:apply-template`, asıl stil sayfanızda dahil stil sayfaları bulmak veya bulmak ve yerleşik şablon kurallarıyla stil sayfasını açmak zor olabilir.  
-  
- Bu konudaki örnek bir başvurulan stil sayfanızda hata ayıklama gösterir.  
-  
-### <a name="procedure-title"></a>Yordam başlığı  
-  
-1.  Bir XML belgesi Visual Studio'da açın. Bu örnekte aşağıdaki `collection.xml` belge.  
-  
-    ```  
+    ```xml
     <?xml version="1.0" encoding="utf-8"?>  
     <?xml-stylesheet type="text/xsl" href="xslinclude.xsl"?>  
     <COLLECTION>  
@@ -50,11 +48,11 @@ XSLT hiyerarşi aracı birçok XML geliştirme görevlerini basitleştirir. XSLT
         <PUBLISHER>Scootney</PUBLISHER>  
       </BOOK>  
     </COLLECTION>  
-    ```  
-  
-2.  Aşağıdakileri ekleyin `xslincludefile.xsl`:  
-  
-    ```  
+    ```
+
+1. Aşağıdakileri ekleyin `xslincludefile.xsl`:
+
+    ```xml
     <?xml version='1.0'?>  
     <xsl:stylesheet version="1.0"  
           xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
@@ -73,11 +71,11 @@ XSLT hiyerarşi aracı birçok XML geliştirme görevlerini basitleştirir. XSLT
     </xsl:template>  
   
     </xsl:stylesheet>  
-    ```  
+    ```
   
 3.  Aşağıdakileri ekleyin `xslinclude.xsl` dosyası:  
   
-    ```  
+    ```xml
     <?xml version='1.0'?>  
     <xsl:stylesheet version="1.0"  
           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
@@ -107,13 +105,14 @@ XSLT hiyerarşi aracı birçok XML geliştirme görevlerini basitleştirir. XSLT
   
       <xsl:include href="xslincludefile.xsl" />  
     </xsl:stylesheet>  
-    ```  
+    ```
   
-4.  Bir kesme noktası yönerge ekleyin:`<xsl:include href="xslincludefile.xsl" />`  
+4.  Yönerge kesme noktası ekleme `<xsl:include href="xslincludefile.xsl" />`.
   
 5.  Hata ayıklama başlatılamıyor.  
   
-6.  Hata ayıklayıcı yönerge durduğunda `<xsl:include href="xslincludefile.xsl" />`, düğme adımla tuşuna basın. Hata ayıklama başvurulan stil sayfanızda devam ettirilemez olduğunu unutmayın. Hiyerarşi görünür olduğundan ve doğru yolu Tasarımcı görüntüler.  
+6.  Hata ayıklayıcı yönerge durduğunda `<xsl:include href="xslincludefile.xsl" />`, basın **Step Into** düğmesi. Hata ayıklama başvurulan stil sayfanızda devam ettirilemez olduğunu unutmayın. Hiyerarşi görünür olduğundan ve doğru yolu Tasarımcı görüntüler.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek Yol: XSLT Profil Oluşturucusu](../xml-tools/walkthrough-xslt-profiler.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İzlenecek Yol: XSLT Profil Oluşturucusu](../xml-tools/walkthrough-xslt-profiler.md)

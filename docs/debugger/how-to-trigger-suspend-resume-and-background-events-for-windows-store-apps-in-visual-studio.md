@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Tetiklemek nasıl askıya alma, sürdürme ve Visual Studio UWP uygulamalarında hata ayıklama sırasında arka plan olayları
 Ne zaman değil ayıkladığınız, Windows **işlem yaşam süresi Management** (PLM) denetimleri, uygulamanızın yürütme durumu — başlatma, askıya alma, sürdürme ve uygulama yanıt kullanıcı eylemleri ve aygıtın durumu olarak sonlandırılıyor. Hata ayıklama yaptığınız Windows bu etkinleştirme olayları devre dışı bırakır. Bu konu, bu olayları hata ayıklayıcısında yangın açıklar.  
@@ -109,7 +109,7 @@ Ne zaman değil ayıkladığınız, Windows **işlem yaşam süresi Management**
      ![Askıya alma, sürdürme, sonlandırmak ve arka plan görevleri](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a>İşlem yaşam süresi Management olaylarını tetiklemek ve yüklü bir uygulamadan görevleri arka plan  
- Ayıklayıcıya yüklü olan bir uygulama yüklemek için yüklü uygulama hata ayıklama iletişim kutusunu kullanın. Örneğin, Microsoft Store yüklü olduğu bir uygulama hatalarını ayıklama veya uygulama için kaynak dosyaları, ancak uygulama için bir Visual Studio projesini değil varsa, bir uygulama hata ayıklama. Hata ayıklama modunda Visual Studio makinede veya uzak cihazda ya da hata ayıklama modunda çalıştırılması ancak değil başlatmak için uygulama ayarlamak için bir uygulama Başlat yüklü uygulama hata ayıklama iletişim kutusu sağlar. Bkz: **Hata Ayıklayıcısı'ndaki yüklü bir uygulamayı Başlat** ya da bölümünü [JavaScript](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) veya [Visual C++, Visual C# ve Visual Basic](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) sürümleri **nasıl başlatılacağı hata ayıklama oturumu** daha fazla bilgi için.  
+ Ayıklayıcıya yüklü olan bir uygulama yüklemek için yüklü uygulama hata ayıklama iletişim kutusunu kullanın. Örneğin, Microsoft Store yüklü olduğu bir uygulama hatalarını ayıklama veya uygulama için kaynak dosyaları, ancak uygulama için bir Visual Studio projesini değil varsa, bir uygulama hata ayıklama. Hata ayıklama modunda Visual Studio makinede veya uzak cihazda ya da hata ayıklama modunda çalıştırılması ancak değil başlatmak için uygulama ayarlamak için bir uygulama Başlat yüklü uygulama hata ayıklama iletişim kutusu sağlar. Bkz: **Hata Ayıklayıcısı'ndaki yüklü bir uygulamayı Başlat** bölümünü [UWP uygulamasında hata ayıklama oturumu Başlat](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger).
   
  Uygulama ayıklayıcıya yüklendikten sonra yukarıda açıklanan yordamlardan herhangi birini kullanabilirsiniz.  
   

@@ -16,17 +16,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, event receivers
 - event receivers [SharePoint development in Visual Studio]
-ms.assetid: 6f90cb48-eb8f-43c2-a3f7-ed4ce81aedf2
-caps.latest.revision: "20"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 519c6907bb5779a3819419144905ca68e5cce939
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1b00d82679388c50d6d111209a9a206bd9587a3a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-create-an-event-receiver"></a>Nasıl yapılır: Olay Alıcısı Oluşturma
   Oluşturarak *Olay alıcıları*, bir kullanıcı SharePoint öğeleri listeler gibi veya liste öğesi ile etkileşim sırasında yanıt verebilir. Örneğin, bir kullanıcı takvimi değiştirir veya kişi listesinden bir ad sildiğinde olay alıcı kodda tetiklenebilir. Bu konuda izleyerek bir liste örneği için olay alıcı eklemek nasıl öğrenebilirsiniz.  

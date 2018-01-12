@@ -21,17 +21,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], properties
 - Business Data Connectivity service [SharePoint development in Visual Studio], resource file
 - BDC [SharePoint development in Visual Studio], resource strings
-ms.assetid: 72bb744d-818b-4e5a-9da2-295412025680
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3fc67e84ab9519e41c2c8eb8da29025da510bc6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 144d81b2835479ee8cfdff0657814070cff813db
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Nasıl yapılır: Yerelleştirilmiş Adlar. Özellikler ve İzinleri Belirtmek için Kaynak Dosyası Kullanma
   Kaynak dosyası kullanarak, yerelleştirilmiş adlar sağlamak, özelliklerini tanımlamak ve iş verileri bağlantı (BDC) modelde tanımlanan izinleri tor nesneler geçerli. Bu bilgileri belirtmek için eklediğiniz bir **iş verileri bağlantı kaynak** içeren bir proje öğesi bir **iş verileri bağlantı modeli** öğesi. Ardından, adlar, özellikler ve izinleri kaynak dosyası için XML düzenleyerek belirtin.  

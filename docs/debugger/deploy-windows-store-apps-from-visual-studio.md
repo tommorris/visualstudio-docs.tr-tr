@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 359431356bb06a04857b93e10996a2123c80f129
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio'dan UWP uygulamaları dağıtma
 ![Windows için yalnızca geçerlidir](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -59,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 Bir Windows 10 uzak cihazda etkinleştirmeniz gerekir [geliştirici modunu](/windows/uwp/get-started/enable-your-device-for-development). Oluşturanın güncelleştirme çalıştıran Windows 10 cihazlarda ya da uygulamanızı dağıtma daha sonra uzak Araçlar otomatik olarak yüklenir. Daha fazla bilgi için bkz: [yüklü uygulama paketi Debug](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> Windows 8.1 ve Windows 10 öncesi-oluşturanın güncelleştirme sürümleri, Visual Studio uzak Araçlar uzak cihazda yüklü olmalıdır ve uzaktan hata ayıklayıcı çalıştırıyor olması gerekir. Windows 8.1 bir geliştirici lisansı de yüklemeniz gerekir.
+> Windows 8.1 ve Windows 10 öncesi-oluşturanın güncelleştirme sürümleri, Visual Studio için Uzak araçları uzak cihazda yüklü olmalıdır ve uzaktan hata ayıklayıcı çalıştırıyor olması gerekir. Windows 8.1 bir geliştirici lisansı de yüklemeniz gerekir.
   
 Dağıtım uzaktan hata ayıklayıcı ağ kanalının uzak aygıta uygulama dosyaları göndermek için kullanır.  
   
@@ -101,7 +101,7 @@ Dağıtım uzaktan hata ayıklayıcı ağ kanalının uzak aygıta uygulama dosy
  Başlangıç projesi hata ayıklama özellik sayfasında aşağıdaki dağıtım seçeneklerini ayarlayabilirsiniz.  
   
  **Ağ geri döngü izin ver**  
- Güvenlik nedeniyle, bir [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] üzerinde yüklü olduğu cihaz ağ çağrı yapmak için standart bir biçimde yüklü app verilmez. Varsayılan olarak, bu kural dağıtılan uygulama için bir muafiyet Visual Studio dağıtımı oluşturur. Bu istisna tek bir makinede iletişim yordamlarını test etmenizi sağlar. Uygulamanıza göndermeden önce [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], uygulamanızı muafiyet olmadan test etmeniz gerekir.  
+ Güvenlik nedeniyle, bir UWP veya [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] üzerinde yüklü olduğu cihaz ağ çağrı yapmak için standart bir biçimde yüklü app verilmez. Varsayılan olarak, bu kural dağıtılan uygulama için bir muafiyet Visual Studio dağıtımı oluşturur. Bu istisna tek bir makinede iletişim yordamlarını test etmenizi sağlar. Uygulamanıza göndermeden önce [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], uygulamanızı muafiyet olmadan test etmeniz gerekir.  
   
  Uygulama ağ geri döngü muafiyet kaldırmak için:  
   

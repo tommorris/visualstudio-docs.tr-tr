@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bf34eda9c9957b8a989244da3f2fce03a5d151e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c84239c2f70a32558f64a299791db917926a8c44
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>İzlenecek Yol: Grafik Bilgilerini Programla Yakalama
 Kullanabileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] program aracılığıyla bir Direct3D uygulamasından grafik bilgilerini yakalama için grafik tanılama.  
@@ -42,7 +42,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
 -   Graf bilgilerini yakalama  
   
 > [!NOTE]
->  Programlı yakalama önceki uygulamaları dayanıyordu uzak araçlar için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Yakalama işlevselliği sağlamak için Windows 8.1 yakalama Direct3D 11.2 aracılığıyla doğrudan destekler. Sonuç olarak, artık Windows 8.1 programlı yakalama için Uzak araçları yüklemeniz gerekmez.  
+>  Programlı yakalama önceki uygulamaları için Visual Studio için Uzak araçları dayanıyordu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Yakalama işlevselliği sağlamak için Windows 8.1 yakalama Direct3D 11.2 aracılığıyla doğrudan destekler. Sonuç olarak, artık Windows 8.1 üzerindeki programlı yakalama için Visual Studio için Uzak araçları yüklemeniz gerekmez.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Programlı yakalama kullanmak için uygulamanızı hazırlama  
  Uygulamanızda programlı yakalama kullanmak için gerekli üstbilgileri içermelidir. Bu üstbilgileri Windows 8.1 SDK'ın bir parçasıdır.  
@@ -183,10 +183,10 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
   
      Bu adım gerçekleştirme, default.vsglog dosya adı değil. Siz tanımlarsanız `DONT_SAVE_VSGLOG_TO_TEMP`, ardından dosyasının konumunu göre temp dizini; bir mutlak dosya adı belirtilirse Aksi halde, çalışma dizine göreli veya başka bir konumda.  
   
- İçin [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] uygulamalar temp dizininin konumu her kullanıcı ve uygulama özeldir ve genellikle C:\users gibi bir konumda bulunan\\*kullanıcıadı*\AppData\Local\Packages\\ *paket ailesi adı*\TempState\\. Masaüstü uygulamalarında temp dizininin konumu her kullanıcı için özeldir ve genellikle C:\Users gibi bir konumda bulunan\\*kullanıcıadı*\AppData\Local\Temp\\.  
+ UWP için ve [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] uygulamalar temp dizininin konumu her kullanıcı ve uygulama özeldir ve genellikle C:\users gibi bir konumda bulunan\\*kullanıcıadı*\AppData\Local\Packages\\ *paket ailesi adı*\TempState\\. Masaüstü uygulamalarında temp dizininin konumu her kullanıcı için özeldir ve genellikle C:\Users gibi bir konumda bulunan\\*kullanıcıadı*\AppData\Local\Temp\\.  
   
 > [!NOTE]
->  Belirli bir konuma yazmak için bu konuma yazma izniniz olması gerekir; Aksi takdirde hata oluşur. Aklınızda [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] uygulamaları Masaüstü uygulamaları burada şirketlerin veri yazabilirsiniz ve belirli konumlara yazmak için ek yapılandırma gerektiren hakkında daha fazla kısıtlanmış.  
+>  Belirli bir konuma yazmak için bu konuma yazma izniniz olması gerekir; Aksi takdirde hata oluşur. Bu UWP göz önünde bulundurun ve [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] uygulamaları Masaüstü uygulamaları burada şirketlerin veri yazabilirsiniz ve belirli konumlara yazmak için ek yapılandırma gerektiren hakkında daha fazla kısıtlanmış.  
   
 ### <a name="capturing-the-graphics-information"></a>Grafik bilgilerini yakalama  
  Uygulamayı programlı yakalama için hazırlanmış ve isteğe bağlı olarak yapılandırdıktan sonra grafik adını ve konumunu günlük dosyası, uygulamanızı oluşturmak ve ardından çalıştırın veya verilerini yakalama için hata ayıklama; Grafik tanılama başlatmayın [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] programlı yakalama API kullandığınızda. Grafik günlüğüne belirttiğiniz konuma kaydedilir. Bu sürüm günlük tutmak istiyorsanız, bu, başka bir konuma başına taşıyın; Uygulama yeniden çalıştırdığınızda, aksi takdirde, üzerine yazılacak.  

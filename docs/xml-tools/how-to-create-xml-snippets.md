@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 05962d6806631bdfa9b873038ec85cdf9969d55c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 376719363bd97970bdfa333d9aab0e57a8484c73
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>Nasıl yapılır: XML parçacıkları oluşturma
 XML Düzenleyicisi'ni yeni XML parçacıkları oluşturmak için kullanılabilir. Düzenleyici "Parçacığı" adlı bir XML parçacığını içerir yeni XML parçacıkları oluşturmak için diğer bir deyişle bir Demirbaş kod parçacığında.  
@@ -54,7 +54,7 @@ XML Düzenleyicisi'ni yeni XML parçacıkları oluşturmak için kullanılabilir
   <SnippetType>SurroundsWith</SnippetType>  
   <SnippetType>Expansion</SnippetType>  
 </SnippetTypes>  
-```  
+```
   
  `Expansion` Türü belirler çağırdığınızda, kod parçacığında görünüp görünmeyeceğini **Ekle parçacığı** komutu. `SurroundsWith` Türü belirler çağırdığınızda, kod parçacığında görünüp görünmeyeceğini **Surrounds ile** komutu.  
   
@@ -72,7 +72,7 @@ XML Düzenleyicisi'ni yeni XML parçacıkları oluşturmak için kullanılabilir
   <name>$name$</name>  
   $selected$ $end$</test>]]>  
 </Code>  
-```  
+```
   
  `Code` Öğesi üç değişkenleri içerir.  
   
@@ -88,7 +88,7 @@ XML Düzenleyicisi'ni yeni XML parçacıkları oluşturmak için kullanılabilir
 <test>  
   <name>name</name>  
 </test>  
-```  
+```
   
  Name öğesi değerini düzenlenebilir bölgeyi işaretlenir.  
   
@@ -100,7 +100,7 @@ XML Düzenleyicisi'ni yeni XML parçacıkları oluşturmak için kullanılabilir
   <ID>name</ID>  
   <Default>name</Default>  
 </Literal  
-```  
+```
   
  Değişmez değerler işlevler de başvurabilir. XML Düzenleyicisi adlı bir işlev içerir **LookupPrefix**. **LookupPrefix** işlevi bu parçacığı öğesinden çağrılır ve varsa bu ad alanı için tanımlanan ad alanı öneki döndürür ve iki nokta (:) içerir XML belgesindeki bir konumdan verilen ad alanı URI arar Bu adı. Aşağıdaki örneğidir bir `Literal` kullanan öğesi **LookupPrefix** işlevi.  
   
@@ -109,7 +109,7 @@ XML Düzenleyicisi'ni yeni XML parçacıkları oluşturmak için kullanılabilir
    <ID>prefix</ID>  
    <Function>LookupPrefix("namespaceURI")</Function>  
 </Literal>  
-```  
+```
   
  $Prefix$ değişkeni XML parçacığında sonra bir başka bir yerde kullanılabilir.  
   

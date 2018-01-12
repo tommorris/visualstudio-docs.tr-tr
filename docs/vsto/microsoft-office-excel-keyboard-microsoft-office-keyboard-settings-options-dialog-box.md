@@ -15,17 +15,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: keyboard shortcuts, Office development in Visual Studio
-ms.assetid: 2a8b9e70-66fa-4461-8039-b6d8a2fbb963
-caps.latest.revision: "19"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 4d082e03ce0edcbbccd6e3dcd8b22ba00a483d91
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d52b7baf1283f986ee378c800114836da606eca8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel Klavyesi, Microsoft Office Klavyesi Ayarları, Seçenekler İletişim Kutusu
   Microsoft Office Excel ve Visual Studio hem de kısayol tuşları işler. Aynı kısayol tuş bileşimini farklı komutları Excel ve Visual Studio için bildirimde bulunabilir. Excel Visual Studio belge düzeyi projede açık olduğunda, bir seferde yalnızca bir uygulama kısayol tuşu komutlarını alır. Varsayılan olarak, Visual Studio tüm kısayol tuşu komutlarını alır, ancak Excel belge seçerek odağa sahip olduğunda bunları almak yapabilirsiniz **dinamik klavye düzeni**.  

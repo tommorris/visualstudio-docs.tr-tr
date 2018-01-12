@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
 ms.workload: multiple
-ms.openlocfilehash: e635306deb8d26a41ddce1c59bf885cf96c4555b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: af95385a0d95f3f6edba3b5813d35103cd4e13f6
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-start-debugging-xslt"></a>Nasıl yapılır: XSLT hata ayıklamayı Başlat
 XSLT hata ayıklayıcı XSLT stil sayfasını veya XSLT uygulamanın hata ayıklamak için kullanılabilir. Hata ayıklama sırasında içine Adımlama, üzerinden atlama veya kodların dışına Adımlama aynı anda bir satır kod yürütebilir. Kod atlama işlevselliği kullanmak için bir Visual Studio için olduğu gibi XSLT hata ayıklayıcı için aynı debuggers komutlardır. Hata ayıklama başladıktan sonra XSLT hata ayıklayıcı giriş belgesi ve XSLT çıkış göstermek için windows açar.  
@@ -87,7 +87,7 @@ namespace ConsoleApplication
     }  
   }  
 }  
-```  
+```
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: bir XSLT stil sayfası hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)   

@@ -23,16 +23,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6250a6b5cdf502d95aea3aaec033acaad826de42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 93deb8c5a8d4d17597db0fa2f93f097b4839e88b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Hızlı Başlangıç: Konsolu kullanarak JavaScript hata ayıklama
 ![Windows ve Windows Phone için geçerlidir](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- JavaScript Konsolu penceresi ile etkileşim ve JavaScript kullanarak oluşturulan UWP uygulamaları hata ayıklamak için kullanabilirsiniz. Bu özellikler için desteklenen [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] uygulamalar, Windows Phone uygulamaları ve Apache Cordova için Visual Studio Araçları kullanılarak oluşturulmuş uygulamalar. Konsol komut başvurusu için bkz: [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).  
+ JavaScript Konsolu penceresi ile etkileşim ve JavaScript kullanarak oluşturulan UWP uygulamaları hata ayıklamak için kullanabilirsiniz. Bu özellikler UWP uygulamaları için desteklenen [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] uygulamalar, Windows Phone uygulamaları ve Apache Cordova için Visual Studio Araçları kullanılarak oluşturulmuş uygulamalar. Konsol komut başvurusu için bkz: [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).  
   
  JavaScript Konsolu penceresi sağlar:  
   
@@ -269,7 +269,7 @@ ms.lasthandoff: 12/22/2017
 ##  <a name="BrowserSupport"></a>Tarayıcı ve Platform desteği  
  JavaScript Konsolu penceresi aşağıdaki platformlarda desteklenir:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]ve JavaScript ve HTML kullanarak Windows Phone uygulamaları  
+-   UWP uygulamaları [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]ve JavaScript ve HTML kullanarak Windows Phone uygulamaları  
   
 -   Internet Explorer 11 üzerinde çalışan[!INCLUDE[win81](../debugger/includes/win81_md.md)]  
   

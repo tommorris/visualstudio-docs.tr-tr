@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: VB
 ms.workload: multiple
-ms.openlocfilehash: 5eea45aafebe8c20431de5b2d3bd299789bf7285
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cda22612959e083cb1f0179d65554d38fab9cf03
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Nasıl yapılır: XML değişmez değerleri ile XML şema Tasarımcısı'nı kullanın
 Bu konuda, bir Visual Basic projesinde değişmez değer XML ile ilişkili bir şema görüntülemeyi açıklar.  
@@ -70,7 +70,7 @@ Bu konuda, bir Visual Basic projesinde değişmez değer XML ile ilişkili bir �
   
        End Sub  
    End Module  
-   ```  
+   ```
   
 2.  XML değişmez değeri veya bir XML ad alanı içe aktardığınız tüm XML düğümünü sağ tıklatın ve seçin **Göster şema Explorer'da**.  
   

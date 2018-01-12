@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 959622dff7770d314dc5fa2da1e8a81ade34cac4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Uzaktan Visual Studio C# veya Visual Basic projesinde hata ayıklama
 Başka bir bilgisayara dağıtılan bir Visual Studio uygulama hatalarını ayıklamak için yüklemek ve uygulamanızı dağıtıldığı bilgisayarda Uzak araçları çalıştırmak, projeniz Visual Studio'dan uzak bilgisayara bağlanmak için yapılandırın ve uygulamanızı çalıştırın.
@@ -109,7 +109,7 @@ Hata ayıklayıcıyı uzak makineye Visual C# veya Visual Basic Masaüstü uygul
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da hata ayıklama](../debugger/index.md)  
+ [Visual Studio’da hata ayıklama](../debugger/index.md)  
  [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)   
  [Uzaktan hata ayıklama için Windows Güvenlik duvarını yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md)   

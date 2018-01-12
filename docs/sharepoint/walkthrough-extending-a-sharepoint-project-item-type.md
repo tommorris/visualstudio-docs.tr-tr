@@ -14,17 +14,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], extending
 - SharePoint project items, extending
 - SharePoint development in Visual Studio, extending project items
-ms.assetid: 1cea4e0f-ce33-4cd7-a664-800184865456
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c885fe006f1a6a65f97b1f11de61e0639dd1559a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e2f39fc15d73b2019e739d7695f40cf0e3fd0940
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>İzlenecek yol: Bir SharePoint Proje Öğesi Türünü Genişletme
   Kullanabileceğiniz **iş verileri bağlantı modeli** SharePoint'te iş verileri bağlantı (BDC) hizmeti için bir model oluşturmak için proje öğesi. Bu proje öğesi kullanarak bir model oluşturduğunuzda varsayılan olarak, veri modelinde kullanıcılara görüntülenmez. Ayrıca kullanıcıların verileri görmesine izin ver SharePoint'te dış liste oluşturmanız gerekir.  

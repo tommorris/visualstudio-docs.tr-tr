@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], mapping to ListObject column
 - ListObject control, mapping data
-ms.assetid: 2108d0c3-d595-410e-a0ae-3dd53bf6bcc7
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8a844c3e62e5c381b37a109769144cdbb4694a70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c8def85e851ac6a51eef59e3f0538025f0e7ce6c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Nasıl Yapılır: ListObject Sütunlarıyla Verileri Eşleme
   Bağladığınızda bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetimini bir <xref:System.Data.DataTable>bir listedeki tüm sütunları görüntülemek istemeyebilirsiniz veya verilere bağlı olmayan bazı sütunları olabilir. Görünmesini istediğiniz sütunları eşleyebilirsiniz <xref:Microsoft.Office.Tools.Excel.ListObject> çağırdığınızda <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> yöntemi.  

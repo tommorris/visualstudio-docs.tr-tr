@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bf693d7a5339e57edeaed82c25ed552901e1ea51
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: c7f6983c2be5604867f729ed006eadb5257c3a43
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Genel, Hata Ayıklama, Seçenekler İletişim Kutusu
 **Araçlar > Seçenekler > hata ayıklama > Genel** sayfasında aşağıdaki seçenekleri ayarlamanıza olanak tanır:  
@@ -85,7 +85,7 @@ Hata ayıklayıcı özellikleri ve yönetilen kod işleçleri içine Adımlama e
     Örtük dize dönüştürme çağrısı değişkenleri windows nesneleri değerlendirirken yürütür. Bu nedenle, bu sonuç türü adı yerine bir dize olarak görüntülenir. Yalnızca C# kodunda hata ayıklama sırasında uygulanır. Bu ayar DebuggerDisplay özniteliği tarafından geçersiz kılınmış olabilir (bakın [DebuggerDisplay özniteliğini kullanma](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
 **Kaynak sunucu desteğini etkinleştir**  
-Kaynak dosyaları SrcSrv uygulayan kaynak sunuculardan almak için Visual Studio hata ayıklayıcısı söyler (`srcsrv.dll`) protokolü. Team Foundation Server ve Windows için hata ayıklama araçları protokolünü uygulayan iki kaynak sunucular olan. SrcSrv kurulumu hakkında daha fazla bilgi için bkz: [SrcSrv](hhttps://msdn.microsoft.com/en-us/library/windows/hardware/ff558791(v=vs.85).aspx) belgeleri. Ayrıca bkz [belirtin simge (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+Kaynak dosyaları SrcSrv uygulayan kaynak sunuculardan almak için Visual Studio hata ayıklayıcısı söyler (`srcsrv.dll`) protokolü. Team Foundation Server ve Windows için hata ayıklama araçları protokolünü uygulayan iki kaynak sunucular olan. SrcSrv kurulumu hakkında daha fazla bilgi için bkz: [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) belgeleri. Ayrıca bkz [belirtin simge (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 >  .Pdb dosyaları okuma rastgele kod dosyaları yürütebilir çünkü sunucu güvendiğinizden emin olun.  
@@ -201,5 +201,5 @@ Bu seçenek belirlendiğinde, hata ayıklayıcı yeni yerel hata ayıklayıcı y
 .NET C++ kodu, hata ayıklama sırasında yeni bir hata ayıklama motoru değerlendirilirken .NET C++ ifadeleri desteklemediği için bu seçeneği kullanmanız gerekir. Ancak, çalışması için geçerli hata ayıklayıcı mantığınız bağımlı birçok özelliği yerel uyumluluk modu etkinleştirme devre dışı bırakır. Örneğin, yerleşik türler ister için eski altyapı birçok görselleştiriciler eksik `std::string` Visual Studio 2015 projelerinde.   Bu gibi durumlarda hata ayıklama en iyi deneyim için lütfen Visual Studio 2013 projeleri kullanın.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da hata ayıklama](../debugger/index.md)  
+ [Visual Studio’da hata ayıklama](../debugger/index.md)  
  [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)

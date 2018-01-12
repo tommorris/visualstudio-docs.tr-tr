@@ -13,17 +13,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, adding items
-ms.assetid: 25a76408-6061-4cd3-b210-100f1c644df7
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 67b35bb60224ce8c10136314ce2d42635d80c5c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4b37e97ddf0a6ffd119c920b384d0536eb943fa3
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Nasıl yapılır: Bir SharePoint Projesine Öğeler Ekleme
   SharePoint çözümlerini her biri birden çok SharePoint Proje öğeleri içeren bir veya daha fazla projeleri içerir. Açın ya da bir SharePoint çözüm oluşturmak sonra bu projeler için yeni veya var olan öğeleri ekleyebilirsiniz. Örneğin, yeni iş akışı projeleri default.aspx adlı varsayılan form ile gelir ancak oluşturan yeni ya da farklı bir formla değiştirin veya başka bir ASPX form ekleyin.  

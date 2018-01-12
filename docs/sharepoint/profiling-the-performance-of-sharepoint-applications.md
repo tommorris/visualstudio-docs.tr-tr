@@ -18,17 +18,15 @@ helpviewer_keywords:
 - performance testing [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, performance testing
 - profiling [SharePoint development in Visual Studio]
-ms.assetid: 61ae02e7-3f37-4230-bae1-54a498c2fae8
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 70c058f6c930b9eb58cf0518d3418ccedcf083b4
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 7130e9393786f28f800b8448cfd52a54369f3fdc
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>SharePoint Uygulamaları için Performans Profili Oluşturma
   SharePoint uygulamaları yavaş veya inefficiently gerçekleştiriyorsanız sorunlu kod ve diğer öğeleri tanımlamak için Visual Studio profil özellikleri kullanabilirsiniz. Özellik sınama yük kullanarak, ne zaman çok sayıda kullanıcı uygulamaya aynı anda erişim gibi yük altında bir SharePoint uygulama gerçekleştirir belirleyebilirsiniz. Web performans testleri çalıştırarak uygulama Web'de nasıl gerçekleştireceğini ölçebilirsiniz. Kodlanmış UI testleri kullanarak kendi kullanıcı arabirimi dahil olmak üzere tüm SharePoint uygulama doğru şekilde işlev olup olmadığını doğrulayabilirsiniz. Bu testler birlikte kullanıldığında, bunlar Uygulamanızı dağıtmadan önce performans sorunları belirlemenize yardımcı olabilir.  

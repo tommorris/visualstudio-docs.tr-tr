@@ -32,11 +32,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6ca076ef20ad8751619a715721c6423b5211bc3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı ile Çalıştırma İşlemleri İliştirme
 Yerel veya uzak bilgisayarda çalışan bir işlemi için Visual Studio hata ayıklayıcısı ekleyebilirsiniz. İşlemin çalıştığı sonra tıklayın **hata ayıklama > ekleme işlemi için** (veya basın **CTRL + ALT + P**) açmak için **ekleme işlemi için** iletişim kutusu.
@@ -147,10 +147,7 @@ Bazı uygulama türleri (örneğin, UWP uygulamaları) için doğrudan bir işle
 |Başka bir sunucu işlemi desteklenen uygulama türlerinde hata ayıklama|Uzak Araçlar (sunucu uzak ise) kullanın ve işleme ekleme|iexplore.exe veya diğer işlemler|Gerekirse, işlem belirlemenize yardımcı olması için Görev Yöneticisi'ni kullanın. Bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md) ve bu konunun sonraki bölümlerinde|
 |Uzaktan hata ayıklama Windows masaüstü uygulaması|Uzak Araçlar ve F5|Yok| Bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md)|
 |Uzaktan hata ayıklama Evrensel (UWP), OneCore, HoloLens ve IOT uygulama|Hata ayıklama yüklü uygulama paketi|Yok|Bkz: [yüklü uygulama paketi Debug](debug-installed-app-package.md) kullanmak yerine **ekleme işlemi**|
-|Visual Studio'dan başlatmadı bir evrensel Windows uygulaması (UWP), OneCore, HoloLens ve IOT uygulama hata ayıklama|Hata ayıklama yüklü uygulama paketi|Yok|Bkz: [yüklü uygulama paketi Debug](debug-installed-app-package.md) kullanmak yerine **ekleme işlemi**|
-  
-> [!WARNING]
->  JavaScript'te yazılmış bir UWP eklemek için önce uygulama için hata ayıklama etkinleştirmeniz gerekir. Bkz: [hata ayıklayıcısını](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) Windows geliştirme Merkezi'ndeki.  
+|Visual Studio'dan başlatmadı bir evrensel Windows uygulaması (UWP), OneCore, HoloLens ve IOT uygulama hata ayıklama|Hata ayıklama yüklü uygulama paketi|Yok|Bkz: [yüklü uygulama paketi Debug](debug-installed-app-package.md) kullanmak yerine **ekleme işlemi**|  
   
 > [!NOTE]
 >  C++'da yazılmış kod eklemek hata ayıklayıcı için kod yayma gerekiyor `DebuggableAttribute`. Bu, kod için otomatik olarak ile bağlayarak ekleyebilirsiniz [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) bağlayıcı seçeneği.

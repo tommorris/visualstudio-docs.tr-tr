@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 789c2317fcb1bc46b5708f1810563b20fe8895ed
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 IntelliTrace kaydetmek ve kodunuzu 's yürütme geçmişini izlemek için kullandığınızda uygulamanızın hatalarını ayıklama daha az zaman harcayabilir. IntelliTrace izin verdiğinden, hataları kolayca bulabilirsiniz:  
@@ -56,7 +56,7 @@ IntelliTrace kaydetmek ve kodunuzu 's yürütme geçmişini izlemek için kullan
 |||  
 |-|-|  
 |**Desteklenen**|-.NET Framework 2.0 veya daha sonraki sürümler kullanın Visual Basic ve Visual C# uygulamalar.<br />     ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows iş akışı, SharePoint 2010, SharePoint 2013 ve 64-bit uygulamalar dahil olmak üzere çoğu uygulamayı ayıklayabilirsiniz.<br />     SharePoint uygulamaları IntelliTrace ile hata ayıklamak için bkz: [izlenecek yol: bir SharePoint uygulaması kullanarak IntelliTrace ile hata ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br />     Microsoft Azure uygulamaları IntelliTrace ile hata ayıklamak için bkz: [yayımlanan bir bulut hizmeti IntelliTrace ve Visual Studio ile hata ayıklama](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|  
-|**Sınırlı destek**|-.NET core ve ASP.NET Core uygulamaları yalnızca olayları desteklenen<br />-F # uygulamaları Deneysel düzenli olarak<br />-Yalnızca olayları desteklenen Windows mağazası uygulamaları|  
+|**Sınırlı destek**|-.NET core ve ASP.NET Core uygulamaları yalnızca olayları desteklenen<br />-F # uygulamaları Deneysel düzenli olarak<br />-Yalnızca olayları desteklenen UWP uygulamaları|  
 |**Desteklenmiyor**|-C++ diğer dillere ve komut dosyası<br />-Windows Hizmetleri, Silverlight, Xbox veya [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] uygulamalar|  
   
 > [!NOTE]

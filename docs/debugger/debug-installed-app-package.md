@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: ca1edcc26c8e015f12db6b1d564c182aa765ed52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e21d29c3a95de4e5174a9966665f3e4e6781f726
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Yüklü uygulama paketi, Visual Studio (UWP) hata ayıklama
 
@@ -94,9 +94,11 @@ Bu özellikler hakkında daha fazla bilgi için blog için güncelleştirmelerin
 
 > [!NOTE]
 > UWP uygulamaları geliştirilebilir ve Windows 8.1 veya sonraki sürümlerinde derlenmiş, ancak çalıştırmak Windows 10 gerektirir. Bir Windows 8.1 bilgisayarında bir UWP uygulaması geliştiriyorsanız, aynı LAN hem konak hem de hedef bilgisayarda olması koşuluyla uzaktan başka bir Windows 10 cihaz üzerinde çalışan bir UWP uygulaması ayıklayabilirsiniz. Bunu yapmak için indirin ve uzak araçlar Visual Studio için her iki makinelere yükleyin. Yüklü olan sürümü yüklü olan Visual Studio mevcut sürümü aynı olmalıdır ve (x 64, x86) seçtiğiniz mimarisi Ayrıca, hedef uygulamanızın eşleşmelidir.
+
+UWP uygulamaları'nın uzaktan dağıtımı için Gelişmiş seçenekleri hakkında daha fazla bilgi için bkz: [dağıtma ve hata ayıklama UWP uygulamaları](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da hata ayıklama](../debugger/index.md)  
+ [Visual Studio’da hata ayıklama](../debugger/index.md)  
  [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)  
  [Uzaktan hata ayıklama](../debugger/remote-debugging.md)  
  [Uzaktan hata ayıklama için Windows Güvenlik duvarını yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md)  

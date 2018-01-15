@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
 ms.workload: multiple
-ms.openlocfilehash: 614e8856fa8d4c674e40703448399265f2adc456
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67927715cc88373040d1820f70faaf70198388c1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="quickstart-coding-in-the-editor"></a>Hızlı Başlangıç: düzenleyicide kodlama
 
@@ -135,7 +135,7 @@ Visual Studio düzenleyicisinde bir tür, yöntem, vb. tanımını incelemek kol
 
 ## <a name="refactoring-a-name"></a>Bir ad yeniden düzenleme
 
-Kimse ilk kez kod sağ alır ve birini değiştirmek isteyebilirsiniz değişken veya yöntem adıdır. Visual Studio'nun deneyelim [yeniden düzenleme](../ide/refactoring-code-generation-quick-actions.md#refactoring) yeniden adlandırmak için işlevselliği `_words` değişkenini `words`.
+Kimse ilk kez kod sağ alır ve birini değiştirmek isteyebilirsiniz değişken veya yöntem adıdır. Visual Studio'nun deneyelim [yeniden düzenleme](../ide/refactoring-in-visual-studio.md) yeniden adlandırmak için işlevselliği `_words` değişkenini `words`.
 
 1. İmlecinizi tanımı yerleştirin `words` değişkeni ve seçin **yeniden adlandır...**  sağ tıklatın veya bağlam menüsünden veya tuşuna **Ctrl**+**R**, **Ctrl**+**R**.
 
@@ -155,11 +155,11 @@ Bu Hızlı Başlangıç için Visual Studio düzenleyicisinde tamamladınız! So
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hızlı Başlangıç: ilk Visual Studio IDE bakma](../ide/quickstart-ide-orientation.md)  
+[Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)  
 [Hızlı Başlangıç: Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme](../ide/quickstart-personalize-the-ide.md)  
-[Hızlı Başlangıç: projeler ve çözümler](../ide/quickstart-projects-solutions.md)  
+[Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)  
 [Kod parçacıkları](../ide/code-snippets.md)  
 [Anahat Oluşturma](../ide/outlining.md)  
 [Tanıma ve Özet Tanıma Gitme](../ide/go-to-and-peek-definition.md)  
-[Yeniden Düzenleme](../ide/refactoring-code-generation-quick-actions.md#refactoring)  
-[IntelliSense Kullanma](../ide/using-intellisense.md)  
+[Yeniden Düzenleme](../ide/refactoring-in-visual-studio.md)  
+[IntelliSense Kullanma](../ide/using-intellisense.md)

@@ -63,11 +63,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4f26fcfb6b12266dd980fb8c38075e1937fcc022
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bde177cb8f9ec8e72a331c785addfa7fead64dc7
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>Kod Düzenleyicisi'nde kod yazma
 Visual Studio düzenleyicisinde yazma ve kod ve metin yönetmek kolaylaştıran birçok özellik sağlar. Genişletebilir ve farklı kod bloklarını anahat oluşturma kullanarak daraltabilirsiniz. IntelliSense, kullanarak kodu hakkında daha fazla bilgiyi **Nesne Tarayıcısı**ve çağrı hiyerarşisi. Kod gibi özellikleri kullanarak bulabileceğiniz **gitmek için**, **Tanıma Git**, ve **tüm başvuruları Bul**. Kod parçacıkları ile kod bloklarını ekleyebilir ve kod gibi özellikleri kullanarak oluşturabileceğiniz **kullanımından Oluştur**. Visual Studio düzenleyicisinde önce hiç kullanmadıysanız bkz [kodunuzu düzenleme](https://www.visualstudio.com/features/ide-vs) hızlı bir genel bakış için.  
@@ -130,9 +130,10 @@ Belirli kod öğeleri temelinizde Burada başvurulan bulmak için kullanabilece�
 ## <a name="customize-the-editor"></a>Düzenleyiciyi özelleştirme  
 Visual Studio ayarlarınızı ile başka bir geliştirici paylaşmak, ayarlarınız bir standardına uygun ya da kullanarak Visual Studio varsayılan ayarlara dönmek **içeri ve dışarı aktarım ayarları Sihirbazı** komutunu  **Araçlar** menüsü. İçinde **içeri ve dışarı aktarım ayarları Sihirbazı**, seçilen genel veya dil ve projeye özgü ayarlarını değiştirebilirsiniz.
 
-Yeni kısayollarıyla tanımlamak ya da varolan kısayollarıyla yeniden tanımlamak için şu adrese gidin **Araçları**, **seçenekleri**, **ortam**, **klavye**. Kısayol tuşları hakkında daha fazla bilgi için bkz: [varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+Yeni kısayollarıyla tanımlamak ya da varolan kısayollarıyla yeniden tanımlamak için şu adrese gidin **Araçları**, **seçenekleri**, **ortam**, **klavye**. Kısayol tuşları hakkında daha fazla bilgi için bkz: [varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Düzenleyiciyi özelleştirme hakkında daha fazla bilgi için bkz: [düzenleyiciyi özelleştirme](../ide/customizing-the-editor.md). Dile özgü Düzenleyici seçenekleri hakkında daha fazla bilgi için bkz: [Visual Studio geliştirme ortamı için C# kullanarak](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) ve [seçenekler, metin düzenleyici, JavaScript, biçimlendirme](../ide/reference/options-text-editor-javascript-formatting.md).
+Düzenleyiciyi özelleştirme hakkında daha fazla bilgi için bkz: [düzenleyiciyi özelleştirme](../ide/customizing-the-editor.md). JavaScript özgü Düzenleyici seçenekleri için bkz: [seçenekler, metin düzenleyici, JavaScript, biçimlendirme](../ide/reference/options-text-editor-javascript-formatting.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio IDE](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Visual Studio IDE](../ide/visual-studio-ide.md)

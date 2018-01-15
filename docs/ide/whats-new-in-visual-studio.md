@@ -16,11 +16,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 28f0715665fb032ac2cf78dd58be65005b1065d0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: a41d683701b4d8e0ca9cb973486a1e07216ea894
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>&#39; teki Visual Studio 2017'deki yenilikler
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>İçin güncelleştirilmiş [15,5 sürüm](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -127,7 +127,7 @@ Yeniden düzenleme, yazıldıktan sonra kodunuzu iyileştirme işlemidir. Yenide
 *   İf anahtar Dönüştür
 *   Kullanılmayan değişkenini Kaldır
 
-Daha fazla bilgi için bkz: [hızlı Eylemler](../ide/quick-actions.md#common-quick-actions).
+Daha fazla bilgi için bkz: [hızlı Eylemler](../ide/common-quick-actions.md).
 
 #### <a name="interact-with-git"></a>Git ile etkileşim
 Visual Studio'da bir proje ile çalışırken, size ayarlayabilir ve hızlı bir şekilde tamamlama ve kodunuz için bir Git hizmet yayımlama. Git depoları sağ alt köşesinde IDE içinde menü tıklatmaların düğmelerini kullanarak da yönetebilirsiniz.

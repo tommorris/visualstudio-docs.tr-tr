@@ -19,11 +19,11 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 672047cb066a812d16edc693638c3d6d8295798b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b2124fe815c89c3c157be3ea729fa7edb9d96b39
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="instanceof-operator-javascript"></a>instanceof İşleci (JavaScript)
 Bir nesne belirli bir sınıfın örneği olup olmadığını gösteren bir Boole değeri döndürür.  
@@ -46,7 +46,7 @@ result = object instanceof class
  Gerekli. Herhangi bir tanımlı nesne sınıfı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `instanceof` Operatörü döndürür `true` varsa `object` örneği `class`. Döndürdüğü `true` varsa `true` varsa `class` nesnenin prototip zincirinde mevcut. Döndürdüğü `false` varsa `object` bir örneği değil `class`, veya `object` olan `null`.  
+ `instanceof` Operatörü döndürür `true` varsa `object` örneği `class`. Döndürdüğü `true` varsa `class` nesnenin prototip zincirinde mevcut. Döndürdüğü `false` varsa `object` bir örneği değil `class`, veya `object` olan `null`.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte nasıl kullanılacağını gösterir `instanceof` işleci.  
@@ -83,4 +83,4 @@ document.write(objTest(obj));
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşleç önceliği](../../javascript/operator-subtractprecedence-javascript.md)   
- [İşleç özeti (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [İşleç Özeti (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

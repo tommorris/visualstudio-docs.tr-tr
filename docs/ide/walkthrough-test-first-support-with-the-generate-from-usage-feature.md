@@ -1,7 +1,7 @@
 ---
-title: "İzlenecek yol: önce test kullanımından Oluştur özelliği ile geliştirme | Microsoft Docs"
+title: "İzlenecek yol: Kullanımından Oluştur özelliği ile önce Test geliştirme | Microsoft Docs"
 ms.custom: 
-ms.date: 10/9/2017
+ms.date: 10/09/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -13,19 +13,18 @@ ms.topic: article
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
-ms.assetid: 764c17a4-cd95-4c23-bf63-d92d9c5adfb2
-caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1906e55add4dfb4663e3c7da5e84d7538409db17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 696396260d96e25541cbbef6bac3b4a1be93ea13
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
-# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>İzlenecek yol: kullanımdan Oluştur özelliği ile önce test geliştirmesi
+# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>İzlenecek yol: Kullanımdan Oluştur özelliği ile önce Test geliştirmesi
+
 Bu konuda nasıl kullanılacağı gösterilir [kullanımından Oluştur](../ide/visual-csharp-intellisense.md#generate-from-usage) önce test geliştirmesi destekleyen özelliği.  
   
  *Önce test geliştirme* , ilk ürün belirtimlerini temel birim testleri yazma ve başarılı testleri yapmak için gereken kaynak kodu yazma yazılım tasarımı için bir yaklaşımdır. Visual Studio tanımlanmadan önce ilk önce bunları test çalışmalarınızı başvurduğunuzda yeni türleri ve üyeleri kaynak kodunda oluşturarak önce test geliştirmesi destekler.  

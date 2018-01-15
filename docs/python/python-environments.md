@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio'da Python ortamları | Microsoft Docs"
 ms.custom: 
-ms.date: 07/25/2017
+ms.date: 01/09/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -12,43 +12,47 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 4f190d02850f1effc9e1597d14fecf323de68356
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 54c25180e0133ec407099cf4bb0f58f2279279d4
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="python-environments"></a>Python ortamları
 
-Visual Studio'da Python birden çok Python ortamlarını yönetebilir ve bunları farklı projeler için arasında kolayca geçiş daha kolay hale getirir.
+Bir Python *ortam* Python kodu çalıştırmak bir bağlam. Bir ortam bir yorumlayıcı, bir kitaplık (genellikle Python standart kitaplığı) ve yüklü paketler kümesini oluşur. Bu bileşenlerin, birlikte hangi dil yapıları ve sözdizimi geçerli olduğunu belirlemek hangi işletim sistemi işlevselliği erişebilir ve hangi paketleri kullanabilirsiniz.
 
-**Not**: Visual Studio'da Python yeniyseniz, aşağıdaki konularda ilk bu sunmak gibi tartışma kullanır bunlar üzerine bakın:
+Visual Studio'da, tüm kullanarak ortamlarınızı yönetmek [Python ortamları penceresi](#managing-python-environments-in-visual-studio) bu makalede anlatıldığı gibi. Verilen herhangi bir projeye için hata ayıklama, kod, denetimi sözdizimi çalıştırmak için kullanılacak bir ortam alma ve üye tamamlamalar görüntüleme seçin ve diğer görevler için yorumlayıcı özeldir ve kitaplıkların yüklü. Visual Studio ayrıca kod girerken otomatik tamamlanmasını sağlayan her ortam için IntelliSense veritabanını korur.
+
+Visual Studio sanal ortamlar için de destek sağlar `requirements.txt` dosyaları ve arama yolları.
+
+**Not**: Visual Studio'da Python yeniyseniz, gerekli arka plan için aşağıdaki makalelere bakın:
 
 - [Visual Studio'da Python ile çalışma](python-in-visual-studio.md)
 - [Visual Studio'da Python desteğini yükleme](installation.md)
 
-Bir Python *ortam*, hangi, her zaman çalıştır Python kodu oluşan bir yorumlayıcı bir kitaplık (genellikle Python standart kitaplığı) ve bir dizi yüklü paketler. Hangi dil yapıları ve sözdizimi geçerli, bu bileşenlerin birlikte belirlemek hangi işletim sistemi işlevselliği erişebilir ve hangi paketleri kullanabilirsiniz.
+## <a name="global-and-virtual-environments"></a>Genel ve sanal ortamlar
 
-Visual Studio'da bir ortam ayrıca bir ortam kitaplıkları için IntelliSense veritabanı gibi bir ifade yazarak gibi içerir `import` Visual Studio'daki düzenleyici otomatik olarak kullanılabilir kitaplıkları ve bunun yanı sıra içinde modülleri listesini görüntüler. Bu kitaplıklar.
+Python ortamları iki tür vardır: Genel ve sanal.
 
-Görmemeleri, geliştiricilerin yalnızca tek, genel Python ortamı kullanın. Bu konu başlığı altında açıklandığı gibi birden çok genel ortamlar, projeye özgü ortamları ve sanal ortamları yönetmek diğer geliştiriciler, ancak gerekir:
+**Genel ortamları**: her Python yükleme (örneğin, Python 2.7, Python 3.6 ve Anaconda 4.4.0, bkz: [seçerek ve Python yorumlayıcılar yükleme](#selecting-and-installing-python-interpreters) kendi ortamı korur. Her ortam belirli Python Yorumlayıcı, kendi standart kitaplığı ve önceden yüklenmiş paket kümesini oluşur. Bir paket genel bir ortama yükleme bu ortam kullanarak tüm projeleri için kullanılabilir kılar. Ortamında bir dosya sistemini koruma alanında bulunuyorsa (içinde `c:\program files`, örneğin), sonra da paketler yönetici ayrıcalıkları gerektirir.
 
-- [Seçme ve Python yorumlayıcılar yükleniyor](#selecting-and-installing-python-interpreters)
-- [Visual Studio'da Python ortamları yönetme](#managing-python-environments-in-visual-studio)
-- [Genel ortamları](#global-environments)
-- [Projeye özgü ortamları](#project-specific-environments)
-- [Sanal ortamlar](#virtual-environments)
-- [Gerekli paketlerini yönetme](#managing-required-packages)
-- [Arama yolları](#search-paths)
+Genel ortamları, bilgisayardaki tüm projeleri için kullanılabilir. Visual Studio'da bir proje için farklı bir özellikle seçmediğiniz sürece, tüm projeleri için kullanılan varsayılan olarak genel bir ortam seçin. Daha fazla bilgi için bkz: [bir proje için bir ortam seçerek](#selecting-an-environment-for-a-project).
 
-Video bir giriş için bkz [yönetme Python ortamları](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Microsoft Virtual Academy, 2m35s).
+**Sanal ortamlar**: genel bir ortama yüklenmişse paketler bu ortam kullanan tüm projeleri için kullanılabilir olduğundan, iki proje uyumsuz paketleri veya aynı paketin farklı sürümlerini gerektirdiğinde çakışmaları oluşabilir. Sanal ortamlar bu gibi çakışmaları yorumlayıcı ve standart kitaplığı genel ortamından kullanarak ancak kendi yalıtılmış klasörleri paket depolarında koruma kaçının.
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
+Visual Studio'da bir alt proje klasöründe depolanan belirli bir proje için sanal bir ortam oluşturabilirsiniz (bkz [sanal ortamları oluşturma](#creating-virtual-environments). Proje dosyası, aynı zamanda sanal ortam tanımlar. Visual Studio ayrıca, projenin bu sanal ortama yükleme herhangi bir paket kaydeder `requirements.txt` dosya. Proje sonra paylaşımı ve isteğe bağlı olarak diğer geliştiriciler bilgisayarlarında açarsanız, Visual Studio sanal ortamı yeniden oluşturmak için seçeneği sağlar.
 
-## <a name="selecting-and-installing-python-interpreters"></a>Seçme ve Python yorumlayıcılar yükleniyor
+### <a name="selecting-and-installing-python-interpreters"></a>Seçme ve Python yorumlayıcılar yükleniyor
 
-Kodunuzu çalıştırmak için aşağıdakilerden birini yüklemeniz gerekir böylece dışında Visual Studio 2017 ile Python desteği bir Python yorumlayıcısı ile gelmez. Genel olarak, Visual Studio otomatik olarak yeni yüklenen yorumlayıcılar algılar ve her biri için bir ortamı ayarlama ayarlar. Yüklü bir ortam algılamazsa bkz [bir ortam için varolan bir yorumlayıcı oluşturma](#creating-an-environment-for-an-existing-interpreter).
+Varsayılan olarak Visual Studio 2017 Python geliştirme iş yükü yükleme Python 3 (64 bit) yükler. İsteğe bağlı olarak 32-bit ve 64 bit sürümlerini Python 2, Python 3, Anaconda 2 ve Anaconda 3 ' ü yüklemek açıklandığı gibi seçebileceğiniz [yükleme](installation.md). Aşağıdaki tabloda listelenen yorumlayıcılar birini el ile de yükleyebilirsiniz.
+
+Ve önceki sürümleri, Visual Studio 2015 için yorumlayıcılar biri el ile yüklemelisiniz.
+
+Visual Studio (tüm sürümler) her kayıt defteri denetleyerek Python yorumlayıcı yüklü bir ortamda otomatik olarak oluşturur (aşağıdaki [CESARETLENDİRİCİ 514 - Python kayıt Windows kayıt defterinde](https://www.python.org/dev/peps/pep-0514/)). Visual Studio yüklü bir ortam algılamazsa bkz [bir ortam için varolan bir yorumlayıcı oluşturma](#creating-an-environment-for-an-existing-interpreter).
 
 | Yorumlayıcı | Açıklama |
 | --- | --- |
@@ -62,30 +66,32 @@ Yeni formlar algılama Python ortamları için sağlamak istediğiniz geliştiri
 
 ## <a name="managing-python-environments-in-visual-studio"></a>Visual Studio'da Python ortamları yönetme
 
-Python ortamları penceresini açmak için aşağıdakilerden birini yapın:
+Python ortamları penceresini açmak için seçin **Görünüm > Diğer Pencereler > Python ortamları** menü komutu ya da sağ tıklatma **Python ortamları** düğümü için Çözüm Gezgini'nde projeye ve seçin **görünümü tüm Python ortamları**:
 
-1. Seçin **Görünüm > Diğer Pencereler > Python ortamları** menü komutu.
-1. Sağ **Python ortamları** seçip Çözüm Gezgini proje için **görünümü tüm Python ortamları**:
-
-    ![Çözüm Gezgini'nde görünümü tüm ortamlar komutu](media/environments-view-all.png)
+    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
 
 Her iki durumda da, Python ortamları penceresi Çözüm Gezgini eşdüzey sekmeye gibi görünür:
 
 ![Python ortamları penceresi](media/environments-default-view.png)
 
-Yukarıdaki örnekte, Python 3.4 (32-bit CPython) IronPython 2.7 32 bit ve 64 bit sürümleri ile birlikte yüklendiğini gösterir. Bu durumda, tüm yeni projeler için kullanılan Python 3.4 kalın varsayılan ortamlarda olur. Python araçları Visual Studio için Visual Studio 2015 veya önceki yüklediniz, ancak bir Python yorumlayıcısı yüklemediniz listelenen ortamları görmüyorsanız, anlama (bkz [seçme ve Python yorumlayıcılar yükleme](#selecting-and-installing-python-interpreters) yukarıda).
+Yukarıdaki örnekte, Python 3.4 (32-bit CPython) IronPython 2.7 32 bit ve 64 bit sürümleri ile birlikte yüklendiğini gösterir. Tüm yeni projeler için kullanılan Python 3.4 kalın olarak varsayılan ortamıdır. Python araçları Visual Studio için Visual Studio 2015 veya önceki yüklediniz, ancak bir Python yorumlayıcısı yüklemediniz listelenen ortamları görmüyorsanız, anlama (bkz [seçme ve Python yorumlayıcılar yükleme](#selecting-and-installing-python-interpreters) yukarıda). **+ Özel...**  komutu sağlar [bir ortam oluşturmak için varolan bir yorumlayıcı](#create-an-environment-for-an-existing-interpreter).
 
-> [!Tip]
-> Zaman **Python ortamları** penceresi dar, yukarıda gösterildiği gibi üst ve alt çeşitli sekmelere ortamlar listelenir. Pencerenin yeterince, genişletme ancak çalışmak daha kolay bulabilirsiniz geniş bir görünümü değiştirir.
->
-> ![Python ortamları genişletilmiş penceresi görünümü](media/environments-expanded-view.png)
+Listelenen her ortam sağındaki bu ortam için etkileşimli bir pencere açılır bir denetimdir. Başka bir denetim bu ortam için IntelliSense veritabanı yenileyen görünebilir.
+
+Ortamlar açılan Seçici için listesidir **genel bakış**, **paketleri**, ve **IntelliSense** daha sonra bu bölümde açıklanan seçenekleri. Genişletirseniz **Python ortamları** yetecek kadar geniş penceresinde, bu seçenekleri ile çalışmak daha kolay bulabilirsiniz sekmeleri olarak gösterilir:
+
+![Python ortamları genişletilmiş penceresi görünümü](media/environments-expanded-view.png)
 
 > [!Note]
 > Visual Studio sistemi site paketleri seçeneği dikkate alır ancak ondan Visual Studio içinde değiştirmek için bir yol sağlamaz.
 
+Visual Studio ortamlarda yönetme video giriş için bkz [yönetme Python ortamları](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Microsoft Virtual Academy, 2m35s).
+
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
+
 ### <a name="creating-an-environment-for-an-existing-interpreter"></a>Varolan bir yorumlayıcı için bir ortam oluşturma
 
-Visual Studio normalde kayıt denetleyerek yüklü bir Python yorumlayıcısı bulur (aşağıdaki [CESARETLENDİRİCİ 514 - Python kayıt Windows kayıt defterinde](https://www.python.org/dev/peps/pep-0514/)). Ancak, standart olmayan bir biçimde yorumlayıcı yüklüyse, Visual Studio, bulamayabilir. Böyle durumlarda, Visual Studio yorumlayıcısı doğrudan aşağıdaki gibi gösterebilir:
+Visual Studio bir yorumlayıcı bulamazsa (zaman, standart olmayan bir konumda yüklü olduğu gibi) oluşturabilir ve ortam olarak izler:
 
 1. Seçin **+ özel...**  içinde [Python ortamları penceresi](#managing-python-environments-in-visual-studio), yeni bir ortam oluşturur ve açılır [ **yapılandırma** sekmesini](#configure-tab) aşağıda açıklanan.)
 
@@ -99,7 +105,7 @@ Visual Studio normalde kayıt denetleyerek yüklü bir Python yorumlayıcısı b
 
 ### <a name="moving-an-existing-interpreter"></a>Varolan bir yorumlayıcı taşıma
 
-Dosya sisteminde yeni bir konuma varolan yorumlayıcı taşırsanız, Visual Studio değişikliği otomatik olarak algılamaz. Ortam penceresinde listesini güncelleştirmek el ile adımlar gereklidir:
+Dosya sisteminde yeni bir konuma varolan yorumlayıcı taşırsanız, Visual Studio değişikliği otomatik olarak algılamaz ve kendi ortamı el ile güncelleştirmeniz gerekir:
 
 - İlk olarak bir ortam için o yorumlayıcı oluşturduysanız, bu ortam yeni konumunu gösterecek şekilde düzenleyin.
 
@@ -116,6 +122,7 @@ Temel bilgileri ve komutlar için ortamı sağlar:
 | Bu ortam yeni projelere yönelik varsayılan yap | Visual Studio'nun IntelliSense veritabanı yüklenirken kısaca vermemesine neden olabilir etkin ortamını ayarlar. Birçok paketleriyle ortamlar için artık vermeyen olabilir. |
 | Dağıtıcı Web sitesini ziyaret edin | Python dağıtımı tarafından sağlanan URL'yi bir tarayıcı açar. Python 3.x, örneğin, python.org için gider. |
 | Açık etkileşimli penceresi | Açılır [etkileşimli (REPL) pencere](interactive-repl.md) Visual Studio içinde bu ortam için herhangi bir uygulama [başlatma komut dosyaları (aşağıya bakın)](#startup-scripts). |
+| Etkileşimli betikleri keşfedin | Bkz: [başlatma komut dosyaları](#startup-scripts). |
 | IPython etkileşimli mod kullanın | Ayarlandığında, varsayılan olarak IPython ile etkileşimli penceresi açılır. Bu etkin satır içi hem de Genişletilmiş IPython sözdizimi gibi çizer `name?` yardımını görüntülemek için ve `!command` Kabuk komutları için. Bu seçenek, bir Anaconda dağıtım olarak kullanarak ek paketleri gerektirdiğinde önerilir. Daha fazla bilgi için bkz: [kullanarak IPython etkileşimli penceresinde](interactive-repl-ipython.md). |
 | PowerShell Aç | Yorumlayıcı bir PowerShell komut penceresinde başlatır. |
 | (Klasör bağlantıları) | Ortam yükleme klasörü, Python.exe'yi yorumlayıcı ve pythonw.exe yorumlayıcı hızlı erişim sağlar. Windows Gezgini'nde ilk açılır, sonraki iki konsol penceresi açın. |
@@ -175,13 +182,7 @@ Veritabanı tüm ortam kitaplıkları için meta verileri içerir ve IntelliSens
 
 Kendisi için veri henüz derlenmiş kitaplıkları ile işaretlenmiş bir **!**; bir ortam veritabanı tam, yoksa bir **!** Ayrıca, yanındaki ana ortamı listesinde görüntülenir.
 
-## <a name="global-environments"></a>Genel ortamları
-
-Genel (veya sistem genelinde) ortamları için tüm projeleriniz bir makinede kullanılabilir. Visual Studio genellikle algılar genel ortamları otomatik olarak ve içinde görüntülenebilir [Python ortamları penceresi](#managing-python-environments-in-visual-studio). Aksi durumda, bir ortamda, aynı pencere el ile ekleyebilirsiniz.
-
-Visual Studio varsayılan ortam yürütme, hata ayıklama, sözdizimi denetimi, içeri aktarma ve üye tamamlamalar ve bir ortam gerektiren diğer görevler görüntüleme için tüm yeni projeler için kullanır. Varsayılan ortam değiştirme etkiler bulunmayan tüm projeleri bir [projeye özel ortam](#project-specific-environments) , sonraki bölümde açıklandığı gibi eklendi.
-
-## <a name="project-specific-environments"></a>Projeye özgü ortamları
+## <a name="selecting-an-environment-for-a-project"></a>Bir proje için bir ortam seçme
 
 Projeye özgü ortamları proje varsayılan genel ortam yoksayılıyor belirli bir ortamda her zaman çalıştığından emin olun. Örneğin, genel varsayılan ortam CPython olmakla birlikte bir proje IronPython ve genel ortamda yüklü olmayan belirli kitaplıkları gerektirir, ardından bir projeye özgü ortamı gereklidir.
 
@@ -207,13 +208,7 @@ Yeni paketleri yüklemek için ortam sağ tıklayın, **Python paketini yükle..
 > [!Tip]
 > Paket yerel bileşenleri için kaynak kodunu içerir PIP nerede başarısız bir paketi yüklemek için yaygın bir durum olduğunda `*.pyd` dosyaları. Visual Studio yüklüyse gerekli sürümü, bu bileşenlerin PIP derlenemiyor. Bu durumda görüntülenen hata iletisi `error: Unable to find vcvarsall.bat`. `easy_install`önceden derlenmiş ikili dosyaları, genellikle indirebildiğini ve Python eski sürümleri için uygun bir derleyici indirebilirsiniz [http://aka.ms/VCPython27](http://aka.ms/VCPython27). Daha fazla ayrıntı için bkz: ["vcvarsallbat Bul kurulamıyor", sorunun nasıl](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) üzerinde Python araçları takım Web günlüğü.
 
-## <a name="virtual-environments"></a>Sanal ortamlar
-
-Genel bir ortama yüklenmişse paketler kullanan tüm projeleri için kullanılabilir olduğundan, iki proje uyumsuz paketleri veya aynı paketin farklı sürümlerini gerektirdiğinde çakışmaları oluşabilir. Bu tür çakışmaları önlemek için Visual Studio oluşturma olanağı sağlar *sanal ortamlar*, projeye genellikle belirli olduğu.
-
-Diğer Python ortamı gibi bir sanal ortam bir Python yorumlayıcısı, bir kitaplığı ve paket kümesini oluşur. (Sanal ortamlar destekler sağlanan) Bu durumda, yine de sanal ortamı yorumlayıcı ve genel ortamlarınızın birini kitaplığından kullanır, ancak kendi genel ve diğer tüm sanal ortamlar ayrı ve yalıtılmış paketlerdir. Bu yalıtım yeniden çakışmaları ortadan kaldırır ve sanal ortam ayak izini kendi paketleri yaklaşık boyutunu en aza indirir. 
-
-Sanal bir ortam oluşturmak için:
+## <a name="creating-virtual-environments"></a>Sanal ortamları oluşturma
 
 1. Sağ **Python ortamları** Çözüm Gezgini'nde ve select **sanal ortam Ekle...** , aşağıdaki yukarı getirir:
 
@@ -231,11 +226,11 @@ Var olan bir sanal ortama sağ tıklayarak da eklenebilir **Python ortamları** 
 
 Bir sanal ortam projenize eklendikten sonra görünür **Python ortamları** penceresinde, etkinleştirebilir, herhangi bir ortamın gibi ve kendi paketleri yönetebilirsiniz. Sağ tıklatıp seçerek **kaldırmak** ortamı referansı kaldırır ya da ortam ve disk (ancak temel yorumlayıcı) tüm dosyaları siler.
 
-Sanal ortamlar için bu bir dezavantajı Not bunlar sabit kodlanmış dosya yolları içerir ve bu nedenle kolayca paylaşılan veya değiştirilemez diğer geliştirme makinelere taşınan emin olan. Neyse ki, kullanabileceğiniz `requirements.txt` dosya sonraki bölümde açıklandığı gibi.
+Sanal ortamlar için bu bir dezavantajı Not bunlar sabit kodlanmış dosya yolları içerir ve bu nedenle kolayca paylaşılan veya değiştirilemez diğer geliştirme bilgisayarlara taşınan emin olan. Neyse ki, kullanabileceğiniz `requirements.txt` dosya kolayca ortamı geri yüklemek projenizi alıcılarını izin vermek için sonraki bölümde açıklandığı gibi.
 
-## <a name="managing-required-packages"></a>Gerekli paketlerini yönetme
+## <a name="managing-required-packages-requirementstxt"></a>Gerekli paketleri (requirements.txt) yönetme
 
-Bir proje başkalarıyla yapı sistemini kullanarak paylaşıyorsanız ya da planlıyorsanız [için Microsoft Azure yayımlama](template-azure-cloud-service.md), gerektirdiği dış paketler belirtmeniz gerekir. Kullanmak için önerilen yaklaşımdır bir [requirements.txt dosyasını](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) bağımlı paketler gerekli sürümlerini yükler PIP komutların listesini içerir.
+Bir proje başkalarıyla yapı sistemini kullanarak paylaşıyorsanız ya da planlıyorsanız [için Microsoft Azure yayımlama](template-azure-cloud-service.md), proje gerektiren dış paketler belirtmeniz gerekir. Kullanmak için önerilen yaklaşımdır bir [requirements.txt dosyasını](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) bağımlı paketler gerekli sürümlerini yükler PIP komutların listesini içerir.
 
 Teknik olarak, dosya gereksinimleri izlemek için kullanılabilir (kullanarak `-r <full path to file>` bir paket yüklerken), ancak Visual Studio'nun sağladığı belirli desteği `requirements.txt`:
 
@@ -251,9 +246,9 @@ Teknik olarak, dosya gereksinimleri izlemek için kullanılabilir (kullanarak `-
   - **Varolan girişleri yenileme** paket gereksinimlerini algılar ve, şu anda yüklü olan sürümle eşleştirmek için sürüm tanımlayıcıları güncelleştirir.
   - **Güncelleştirme ve girişleri ekleme** bulunur ve diğer tüm paketler dosyanın sonuna ekler gereksinimlere yeniler.
 
-Çünkü `requirements.txt` dosyaları projenizin gereksinimleri donmasına yöneliktir, yüklü olan tüm paketlerin kesin sürümleriyle yazılır. Kesin sürümlerini kullanan başka bir makine ortamınıza kolayca üretebileceği sağlar. PIP dışında bir yükleyici veya başka bir paketi bir bağımlılık olarak bir sürüm aralığı ile yüklenmiş olsa bile paketleri dahil edilir.
+Çünkü `requirements.txt` dosyaları projenizin gereksinimleri donmasına yöneliktir, yüklü olan tüm paketlerin kesin sürümleriyle yazılır. Kesin sürümlerini kullanan başka bir bilgisayarda ortamınızı kolayca üretebileceği sağlar. PIP dışında bir yükleyici veya başka bir paketi bir bağımlılık olarak bir sürüm aralığı ile yüklenmiş olsa bile paketleri dahil edilir.
 
-Varsa bir `requirements.txt` dosyasından yeni bir sanal ortam eklerken **sanal ortam Ekle** iletişim kutusunu bir ortamda başka bir makine yeniden kolaylaşır paketleri otomatik olarak yüklemek için bir seçenek görüntüler:
+Varsa bir `requirements.txt` dosyasından yeni bir sanal ortam eklerken **sanal ortam Ekle** iletişim başka bir bilgisayardaki bir ortamı yeniden kolaylaşır paketleri otomatik olarak yüklemek için bir seçenek görüntüler:
 
 ![Requirements.txt ile sanal ortam oluşturma](media/environments-requirements-txt.png)
 
@@ -286,17 +281,18 @@ Cleaning up...
 
 ## <a name="search-paths"></a>Arama yolları
 
-Tipik Python kullanımla `PYTHONPATH` ortam değişkeni (veya `IRONPYTHONPATH`, vs.) Modülü dosyaları için varsayılan arama yolu sağlar. Diğer bir deyişle, kullandığınızda, bir `import <name>` deyimi, eşleşen ada sonra Python içeren arama klasörü için yerleşik modülleri kod ilk aramaları çalıştırma kaynağınız, Python geçerli ortamı tarafından tanımlanan "modülü arama yolu" ardından arar değişkeni. (Bkz [modülü arama yolu](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) ve [ortam değişkenleri](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) Python belge temel.)
+Tipik Python kullanımla `PYTHONPATH` ortam değişkeni (veya `IRONPYTHONPATH`, vs.) Modülü dosyaları için varsayılan arama yolu sağlar. Diğer bir deyişle, kullandığınızda, bir `from <name> import...` veya `import <name>` deyimi, Python için eşleşen bir ada sırayla aşağıdaki konumlarda arar:
 
-Bile tüm sistem için ayarlanmış olduğunda arama path ortam değişkeni, ancak, Visual Studio tarafından göz ardı edilir. Göz ardı, aslında, tam olarak *çünkü* tüm sistem için ayarlanır ve bu nedenle otomatik olarak yanıtlanamaz bazı sorular başlatır: olan Python 2.7 veya Python 3.3 amacı başvurulan modülleri? Standart kitaplık modülleri geçersiz kılma olacak? Bu davranış, geliştirici farkındadır yoksa bir kötü amaçlı geçirme girişimi mı?
+1. Python'un yerleşik modüller.
+1. Çalıştırmakta olduğunuz Python kodu içeren klasör.
+1. "Geçerli ortam değişkeni tarafından tanımlanan modülü arama yolu" olarak. (Bkz [modülü arama yolu](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) ve [ortam değişkenleri](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) Python belge temel.)
 
-Visual Studio'da Python desteği, böylece arama yolları doğrudan hem ortamları ve projeleri belirtmek için bir yoludur. Arama yolları değeri olarak geçirilen `PYTHONPATH` (veya eşdeğer) ne zaman hatalarını ayıklama veya komut dosyanızı Visual Studio'dan yürütün. Arama yollarına ekleyerek, Visual Studio konumların kitaplıklarında inceler ve bunları (veritabanı kitaplıkları sayısına bağlı olarak biraz zaman alabilir oluşturmak) için IntelliSense veritabanları oluşturur.
+Visual Studio arama path ortam değişkeni bile tüm sistem için değişken ayarlandığında ancak yok sayar. Göz ardı, aslında, tam olarak *çünkü* tüm sistem için ayarlanır ve bu nedenle otomatik olarak yanıtlanamaz bazı sorular başlatır: olan Python 2.7 veya Python 3.3 amacı başvurulan modülleri? Standart kitaplık modülleri geçersiz kılma olacak? Bu davranış, geliştirici farkındadır yoksa bir kötü amaçlı geçirme girişimi mı?
 
-Bir arama yolu eklemek için sağ **arama yolları** Çözüm Gezgini'nde, select öğesi **klasörü için arama yolu Ekle...** ve dahil etmek için klasörü seçin. Bu yol projeyle ilişkili herhangi bir ortam için kullanılır.
+Visual Studio, böylece arama yolları doğrudan hem ortamları ve projeleri belirtmek için bir yol sağlar. Çalıştırın ya da hata ayıklama Visual Studio'da kod değerinde arama yolları alır `PYTHONPATH` (ve diğer eşdeğer değişkenleri). Arama yollarına ekleyerek, Visual Studio konumların kitaplıklarında inceler ve bunları (veritabanı kitaplıkları sayısına bağlı olarak biraz zaman alabilir oluşturmak) için IntelliSense veritabanları oluşturur.
+
+Bir arama yolu eklemek için sağ **arama yolları** Çözüm Gezgini'nde, select öğesi **klasörü için arama yolu Ekle...** ve dahil etmek için klasörü seçin. Bu yol projeyle ilişkili herhangi bir ortam için kullanılır. (Hatalar ortamı Python 3 tabanlı ve Python 2.7 modülleri için bir arama yolu Ekle çalışırsanız görebilirsiniz.)
 
 İle dosyaları bir `.zip` veya `.egg` uzantısı da eklenebilir arama yolları olarak seçerek **Zip arşivine arama yolu Ekle...** . Klasörlerle olduğu gibi bu dosyaların içeriğini taranan ve IntelliSense için kullanılabilir.
 
-> [!Note]
-> Python 3.3 kullanıyorsanız ve sonuç olarak hatalar görebilirsiniz ancak Python 2.7 modülleri için bir arama yolu eklemek mümkündür.
-
-Aynı arama yolları kullanarak düzenli olarak ve içeriği genellikle değiştirmeyin, site paket klasörünüze yüklemek için daha etkili olabilir. Ardından olması analiz edilerek ve IntelliSense veritabanında depolanan, her zaman hedeflenen ortamı ile ilişkili olması ve her proje için eklenecek bir arama yolu gerektirmez.
+Aynı arama yolları kullanarak düzenli olarak ve içeriği genellikle değiştirmeyin, site paket klasörünüze yüklemek için daha etkili olabilir. Arama yolu ardından analiz ve IntelliSense veritabanında depolanan, her zaman hedeflenen ortamı ile ilişkili olması ve her projeye eklemek için bir arama yolu gerektirmez.

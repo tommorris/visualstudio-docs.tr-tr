@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-ms.assetid: d1772463-0eb1-40a5-b7c0-9a008bc76760
-caps.latest.revision: "43"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 320e244c17f8e21330aa3925030650126a0ba5a6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama
 Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir şablondan çözümü. Çözüm önemli bir parçası DslDefinition.dsl depolanan DSL tanımı diyagramıdır. DSL tanımı DSL şekilleri ve sınıfları tanımlar. Sonra değiştirmek ve bu öğeleri ekleme, daha ayrıntılı DSL özelleştirmek için program kodunu ekleyebilirsiniz.  
@@ -122,7 +120,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
   
 -   Kök sınıf üst sol altında DSL tanımı diyagramı altında görünür **sınıflar ve ilişkiler**. DSL farklı bir adla yeniden adlandırın. Örneğin, adlandırılmış bir DSL **MusicLibrary** adlı bir kök sınıfı olabilir **müzik**.  
   
--   Diyagram sınıfı DSL tanımı diyagramı alt sağ taraftaki görünür **diyagramı öğeleri** sütun. Sağa görmek için kaydırmanız gerekebilir. Genellikle adlı *YourDsl***diyagramı**.  
+-   Diyagram sınıfı DSL tanımı diyagramı alt sağ taraftaki görünür **diyagramı öğeleri** sütun. Sağa görmek için kaydırmanız gerekebilir. Genellikle adlı * YourDsl ***diyagramı**.  
   
 -   Kullandıysanız **Görev akışı** şablonu ve istediğinizde diyagramları ile kulvarları oluşturun, tutun ve aktör etki alanı sınıfı ve ActorSwimlane şekli yeniden adlandırın.  
   
@@ -223,11 +221,11 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
   
 2.  **Derleme ve DSL çalıştırın.** Yeni bir örneğini çalıştırmak için F5'e veya CTRL + F5 tuşuna basın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Deneysel modunda. Deneysel örneğinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], DSL dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
   
-3.  **Explorer'ı açın.** AT diyagram tarafında bulunur genellikle adlı dil Gezgini penceresi *YourLanguage* Explorer. Bu pencereyi görmüyorsanız, Çözüm Gezgini altında bir sekmede olabilir. Üzerinde bulamazsa, **Görünüm** menüsündeki **diğer pencereler**ve ardından *YourLanguage***Explorer**.  
+3.  **Explorer'ı açın.** AT diyagram tarafında bulunur genellikle adlı dil Gezgini penceresi *YourLanguage* Explorer. Bu pencereyi görmüyorsanız, Çözüm Gezgini altında bir sekmede olabilir. Üzerinde bulamazsa, **Görünüm** menüsündeki **diğer pencereler**ve ardından * YourLanguage ***Explorer**.  
   
      Explorer modelinin ağaç görünümünü gösterir.  
   
-4.  **Yeni öğe oluşturun.** Üst kök düğüme sağ tıklayın ve ardından **yeni Ekle***YourClass*.  
+4.  **Yeni öğe oluşturun.** Üst kök düğüme sağ tıklayın ve ardından **yeni Ekle *** YourClass*.  
   
      Sınıfının yeni bir örneği dilinizde Gezgini görüntülenir.  
   
@@ -623,7 +621,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
 |Bir koleksiyona DSL Explorer'da ekleyemiyorum. Örneğin, araçları sağ tıklattığınızda, "Aracı Ekle" komutu yoktur menüde.<br /><br /> My DSL explorer'ın bir listesine bir öğe ekleyemiyorum.|Çalıştığınız düğümü Yukarıdaki öğeyi sağ tıklatın. Bir listeye eklemek istediğiniz, Ekle komutu listesi düğümünde ancak sahibi değildir.|  
 |Bir etki alanı sınıf oluşturuldu, ancak dil explorer'ın örneği oluşturulamıyor.|Kök dışında her etki alanı sınıf katıştırma bir ilişki hedefi olması gerekir.|  
 |My DSL explorer'ın öğeleri yalnızca tür adları ile gösterilir.|DSL tanımı'nda sınıfın bir etki alanı özelliği seçin ve Özellikler penceresinde ayarlayın **öğesi adını** true.|  
-|My DSL her zaman XML Düzenleyicisi'nde açar.|Dosyası okunurken bir hata nedeniyle oluşabilir. Ancak, bu hatayı düzeltmek daha sonra DSL Tasarımcısı olmasını Düzenleyicisi açıkça sıfırlamanız gerekir.<br /><br /> Proje öğesi sağ tıklayın, **birlikte Aç** seçip *YourLanguage***Tasarımcısı (varsayılan)**.|  
+|My DSL her zaman XML Düzenleyicisi'nde açar.|Dosyası okunurken bir hata nedeniyle oluşabilir. Ancak, bu hatayı düzeltmek daha sonra DSL Tasarımcısı olmasını Düzenleyicisi açıkça sıfırlamanız gerekir.<br /><br /> Proje öğesi sağ tıklayın, **birlikte Aç** seçip * YourLanguage ***Tasarımcısı (varsayılan)**.|  
 |Derleme adları değiştikten sonra my DSL araç görünmez.|İnceleyebilir ve güncelleştirme **DslPackage\GeneratedCode\Package.tt** daha fazla bilgi için bkz: [nasıl yapılır: bir etki alanına özgü dil Namespace değiştirmek](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
 |My DSL araç görünmez, ancak derleme adı değişmemiştir.<br /><br /> Veya, bir uzantı yükleme hatası raporlama bir ileti kutusu görünür.|Deneysel örneği sıfırlayın ve, çözümü yeniden derleyin.<br /><br /> 1.  Windows Başlat menüsü, altında **tüm programlar**, genişletin [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], ardından **Araçları**ve ardından **Microsoft Visual Studio deneysel örneği sıfırlama**.<br />2.  Üzerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **yapı** menüsünde tıklatın **çözümü yeniden derle**.|  
   

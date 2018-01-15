@@ -20,18 +20,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 27f298ad0317223e40f6e9a8606aa9b6aed735fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f7db5fbeee13d5342869c29beb37a8230e0e2396
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="globalizing-and-localizing-applications"></a>Uygulamaları Genelleştirme ve Yerelleştirme
+
 Uluslararası bir hedef kitle uygulamanıza dağıtmayı planlıyorsanız, tasarım ve geliştirme aşamaları sırasında birkaç şey aklınızda tutmanız gerekir. Bu tür planlarınız olmasa dahi çaba Önden şeyler önemli ölçüde planlarınızı gelecekte uygulamanızın sürümünü değiştirmelisiniz kolaylaştırabilir. Yerleşik Hizmetleri [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yönetilen geliştirme ile Visual Studio kullanarak farklı yerel ayarlara uyarlayabilirsiniz tek bir uygulama geliştirmek kolaylaştırır.  
   
  Visual Studio başından yerleşik Hizmetleri yararlanarak bir Uluslararası kitlesi kolay geliştirmeyi kolaylaştırmak için tasarlanmış [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Aşağıdaki sayfalarda Visual Studio'ya yerleşik uluslararası duruma getirme özellikleri dağıtır yardımcı olur.  
   
-## <a name="in-this-section"></a>Bu Bölümde  
+## <a name="in-this-section"></a>Bu Bölümde
+
  [.NET Framework Tabanlı Uluslararası Uygulamalara Giriş](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Visual Studio kullanarak bir Uluslararası pazar için yazılım geliştirme ile ilgili kavramları tanıtır ve [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
@@ -41,12 +43,7 @@ Uluslararası bir hedef kitle uygulamanıza dağıtmayı planlıyorsanız, tasar
  [Uygulamaları Genelleştirme](../ide/globalizing-applications.md)  
  Birden çok kültürü destekleyen uygulamalar oluşturma hakkında daha fazla sayfalar için bağlantılar sağlar.  
   
-## <a name="related-sections"></a>İlgili Bölümler  
- [Uygulamanızı (HTML) Genelleştirme](http://go.microsoft.com/fwlink/?LinkId=258266)  
- Nasıl yapılır konuları ve globalize ve HTML kullanarak oluşturulan Windows 8.1 uygulamanızı yerelleştirme yardımcı olacak yönergeler içerir.  
-  
- [Uygulamanızı (XAML) Genelleştirme](http://go.microsoft.com/fwlink/?LinkId=258267)  
- Nasıl yapılır konuları ve globalize ve XAML kullanılarak oluşturulmuş Windows 8.1 uygulamanızı yerelleştirme yardımcı olacak yönergeler içerir.  
+## <a name="related-sections"></a>İlgili Bölümler
   
  [Dünya Çapında Kullanılmaya Hazır Uygulamalar Geliştirmek için En İyi Yöntemler](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Uluslararası bir izleyici için programlama hakkında arka plan bilgileri sağlar.  

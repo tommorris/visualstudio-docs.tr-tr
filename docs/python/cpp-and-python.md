@@ -13,12 +13,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: a1e5568f30177d3f4664d1cc1ebd7192539b86bf
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: c4c10f6f2bb0624ab72e8eb7f07db38f61bcf1a7
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -156,6 +158,9 @@ Daha fazla bilgi için bkz: [Visual Studio için Python desteği yükleme](insta
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>C++ projesi uzantısı Python için Dönüştür
 
 C++ DLL Python için uzantı yapmak için ilk Python türleri ile etkileşim kurmak için dışarı aktarılan yöntemleri değiştirin. Sonra modülün yöntemleri tanımlarını birlikte modülü aktaran işlevi ekleyin. Burada gösterilen arka plan için başvurmak [Python/C API başvuru el ile](https://docs.python.org/3/c-api/index.html) ve özellikle [modülü nesneleri](https://docs.python.org/3/c-api/module.html) python.org üzerinde. (Sağ üst açılan denetiminden Python sürümünüz seçmek unutmayın.)
+
+> [!Note]
+> Bu yönergeler, Python için geçerli 3.x. Python 2.7 ile çalışıyorsanız, başvurmak [genişletme Python 2.7 C veya C++ ile](https://docs.python.org/2.7/extending/extending.html) ve [uzantısı modüllerle taşıma Python 3](https://docs.python.org/2.7/howto/cporting.html) (python.org).
 
 1. C++ dosyasına eklenecek `Python.h` üst:
 

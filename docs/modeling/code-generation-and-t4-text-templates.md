@@ -14,17 +14,15 @@ helpviewer_keywords:
 - code generation
 - text templates
 - generating code
-ms.assetid: 74a0a748-5b11-4999-8bea-49572967827d
-caps.latest.revision: "82"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3ca05f93fd4753c8a00eb1a5dee4c4bc9a2f4efc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6eeadb77cd0250ab7b2cc48c2abdb8d9f1a1f373
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Kod Oluşturma ve T4 Metin Şablonları
 İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *T4 metin şablonu* metin blokları ve bir metin dosyası oluşturabilirsiniz Denetim mantığı bileşimi değil. Program kodunda parçalarını olarak Denetim mantığı yazılır [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veya [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Visual Studio 2015 güncelleştirme 2 ve daha sonra T4 şablonları yönergeleri C# sürüm 6.0 özelliklerini kullanabilirsiniz. Oluşturulan dosyanın bir Web sayfası veya bir kaynak dosya veya program herhangi bir dilde kaynak kodu gibi herhangi bir türde metin olabilir.  

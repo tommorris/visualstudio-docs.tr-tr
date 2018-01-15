@@ -21,11 +21,11 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d66aee32a191c8cc1879c9436788c196c05e7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 519fc733fd42a194fbd7335127ddf9bcf0bdc220
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="jsonparse-function-javascript"></a>JSON.parse İşlevi (JavaScript)
 JavaScript Object Notation (JSON) dizesini bir nesneye dönüştürür.  
@@ -66,7 +66,7 @@ JSON.parse(text [, reviver])
   
 -   Olduğundan emin olun `text` bağımsız değişkeni seri duruma getirildi JSON uyumlu bir uygulama tarafından gibi `JSON.stringify`.  
   
--   Çalıştırma `text` gibi bir JSON Doğrulayıcı değişkeninde [JSLint](http://www.jslint.com/) sözdizimi hataları belirlemenize yardımcı olması için.  
+-   Çalıştırma `text` gibi bir JSON Doğrulayıcı değişkeninde [JSLint](http://www.jslint.com/) veya [CSV'ye JSON](https://json-csv.com) sözdizimi hataları belirlemenize yardımcı olması için.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek kullanır `JSON.parse` bir JSON dizesinde nesneye dönüştürülemiyor.  

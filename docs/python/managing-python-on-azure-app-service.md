@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Azure uygulama Hizmeti'nde Python yönetme
 
 [Azure uygulama hizmeti](https://azure.microsoft.com/services/app-service/) siteleri REST API'ları, kendi istemcileri veya olayı tarafından tetiklenen işlem tarafından kullanılan bir tarayıcı aracılığıyla erişilen oldukları olup, bir hizmet olarak platform sunumu web uygulamaları için. Uygulama hizmeti uygulamalarını uygulamak için Python kullanarak tam olarak destekler.
 
-Özelleştirilebilir Python desteği Azure App Service'te bir uygulama hizmeti kümesi olarak sağlanan *site uzantıları* her Python çalışma zamanı belirli bir sürümünü içerir. Bu konu başlığı altında açıklandığı gibi sonra bu ortama doğrudan istenen herhangi bir paket yükleyebilirsiniz. Uygulama hizmeti ortamında özelleştirerek, paketler, web uygulaması projelerinde korumak veya uygulama koduyla yüklemek gerekmez. 
+Özelleştirilebilir Python desteği Azure App Service'te bir uygulama hizmeti kümesi olarak sağlanan *site uzantıları* her Python çalışma zamanı belirli bir sürümünü içerir. Bu konu başlığı altında açıklandığı gibi sonra bu ortama doğrudan istenen herhangi bir paket yükleyebilirsiniz. Uygulama hizmeti ortamında özelleştirerek, paketler, web uygulaması projelerinde korumak veya uygulama koduyla yüklemek gerekmez.
 
 > [!Tip]
 > Uygulama hizmeti varsayılan olarak Python 2.7 ve Python 3.4 kök klasörlerdeki sunucuda yüklü olsa da, özelleştirebilir veya bu ortamlarda paketleri yüklemek veya kendi varlığına bağımlı olmalıdır. Bunun yerine, bu konu başlığı altında açıklandığı gibi denetleyen bir site uzantısı yararlanmalıdır.
@@ -87,7 +88,7 @@ Begin site uzantının tam yolunu bularak `python.exe`, ardından oluşturmak ve
 
 Python site uzantısı altında sunucusunda yüklü olduğundan `d:\home` mimarisi ve Python sürümü için uygun bir klasörde (söz konusu olduğunda birkaç eski sürümleri hariç). Örneğin, Python 3.6.1 x64 yüklü `d:\home\python361x64`. Python yorumlayıcı tam yolunu ise `d:\home\python361x64\python.exe`.
 
-Uygulama Hizmetiniz belirli yolu görmek için seçin **uzantıları** uygulama hizmeti sayfasında listede sonra uzantıyı seçin. 
+Uygulama Hizmetiniz belirli yolu görmek için seçin **uzantıları** uygulama hizmeti sayfasında listede sonra uzantıyı seçin.
 
 ![Azure uygulama hizmeti uzantı listesinde](media/python-on-azure-extension-list.png)
 
@@ -165,7 +166,7 @@ Bir site uzantısı aracılığıyla yüklü Python yorumlayıcı Python ortamı
 
 Doğrudan sunucu ortamında paketleri yüklemek için aşağıdaki yöntemlerden birini kullanın:
 
-| Yöntemler | Kullanım | 
+| Yöntemler | Kullanım |
 | --- | --- |
 | [Azure App Service Kudu konsol](#azure-app-service-kudu-console) | Paketleri etkileşimli olarak yükler. Paket saf Python olmalıdır veya tekerlek yayımlamanız gerekir. |
 | [Kudu REST API'si](#kudu-rest-api) | Paket yükleme otomatik hale getirmek için kullanılabilir.  Paket saf Python olmalıdır veya tekerlek yayımlamanız gerekir. |
@@ -199,7 +200,7 @@ Doğrudan sunucu ortamında paketleri yüklemek için aşağıdaki yöntemlerden
     Kullanarak `requirements.txt` yeniden oluşturmak kolay olduğundan, tam paketinizi ayarlamak, her ikisi de, yerel olarak hem de sunucu tavsiye edilir. Herhangi bir değişiklik dağıttıktan sonra konsol ziyaret hatırlamak `requirements.txt` ve komutu yeniden çalıştırın.
 
 > [!Note]
-> Olmadığından C Derleyici uygulama hizmeti, yerel uzantısı modüllerle herhangi bir paket için tekerlek yüklemeniz gerekir. Birçok popüler paketleri kendi Tekerlek sağlar. Verme paketlerini kullanma `pip wheel <package_name>` yerel geliştirme bilgisayarınıza ve Tekerlek sitenize karşıya yükleme. Bir örnek için bkz: [gerekli paketlerini yönetme](python-environments.md#managing-required-packages)
+> Olmadığından C Derleyici uygulama hizmeti, yerel uzantısı modüllerle herhangi bir paket için tekerlek yüklemeniz gerekir. Birçok popüler paketleri kendi Tekerlek sağlar. Verme paketlerini kullanma `pip wheel <package_name>` yerel geliştirme bilgisayarınıza ve Tekerlek sitenize karşıya yükleme. Bir örnek için bkz: [gerekli paketleri yönetme](python-environments.md#managing-required-packages-requirementstxt).
 
 ### <a name="kudu-rest-api"></a>Kudu REST API'si
 

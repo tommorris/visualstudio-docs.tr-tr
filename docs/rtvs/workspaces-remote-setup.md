@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 74978a3ef43a1e98202d32ed418008071c8794be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 45b12e0e6d9c26cd6fa13c1398e983087ee375e1
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="setting-up-remote-workspaces"></a>Uzak çalışma alanları ayarlama
 
@@ -125,18 +125,18 @@ Kendi vermek için sertifika kendiniz imzalanmış:
 
 SSL sertifika dosyası yolu (PFX yoluna) ayarlanmalıdır `/etc/rtvs/rtvsd.config.json`. Güncelleştirme `X509CertificateFile` ve `X509CertificatePassword` dosya yolu ve parola ile sırasıyla.
 
-    ```json
-    {
-      "logging": { "logFolder": "/tmp" },
-      "security": {
-        "allowedGroup": "",
-        "X509CertificateFile": "/etc/rtvs/ssl-cert-snakeoil.pfx",
-        "X509CertificatePassword": "SnakeOil"
-      },
-      "startup": { "name": "rtvsd" },
-      "urls": "https://0.0.0.0:5444"
-    }
-    ```
+```json
+{
+  "logging": { "logFolder": "/tmp" },
+  "security": {
+    "allowedGroup": "",
+    "X509CertificateFile": "/etc/rtvs/ssl-cert-snakeoil.pfx",
+    "X509CertificatePassword": "SnakeOil"
+  },
+  "startup": { "name": "rtvsd" },
+  "urls": "https://0.0.0.0:5444"
+}
+```
 
 Dosyayı kaydedin ve arka plan programı, yeniden `sudo systemctl restart rtvsd`.
 

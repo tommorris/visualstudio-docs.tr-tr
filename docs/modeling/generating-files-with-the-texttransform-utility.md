@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
-ms.assetid: 06a48235-fe02-403e-a1cf-2ae70b4db62f
-caps.latest.revision: "41"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ebd8b73cf28452998f00dbf863e6637f6c9188e5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: de8564aa1743ed22ff4a600d9bf655bbb4adaed4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>TextTransform Yardımcı Programı ile Dosya Oluşturma
 TextTransform.exe metin şablonu dönüştürme için kullanabileceğiniz bir komut satırı aracıdır. TextTransform.exe çağırdığınızda, bağımsız değişken olarak metin şablonu dosyasının adını belirtin. TextTransform.exe metin dönüştürme altyapısı çağırır ve metin şablonu işler. TextTransform.exe genellikle komut dosyaları tarafından çağrılır. Metin dönüştürmeyi Visual Studio veya yapı işlemi gerçekleştirebilir ancak bu genelde gerekli olmadığından.  

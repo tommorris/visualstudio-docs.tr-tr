@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
-caps.latest.revision: "38"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f03b460c3e37bb6299047cb0e35e80895f08cfb3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f580c81d63adb2ca474f8ea9f250f48a61da928a
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Bağımlılık diyagramlarına komut ve hareket ekleme
 Visual Studio'da bağımlılık diyagramları işleyicileri hareket ve bağlam menüsü komutları tanımlayın. Bu uzantılar içine bir Visual Studio Tümleştirme Uzantısı (diğer Visual Studio kullanıcılara dağıtabileceğiniz VSIX) paketleyebilirsiniz.  
@@ -45,7 +43,7 @@ Visual Studio'da bağımlılık diyagramları işleyicileri hareket ve bağlam m
   
 3.  Uzantı sınamak için basın **CTRL + F5** veya **F5**.  
   
-     Deneysel örneği [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] başlatır. Bu örnekte, bir bağımlılık diyagramı oluşturun. Bu diyagramda komut veya hareket uzantınızı çalışması gerekir.  
+     Visual Studio Deneysel bir örneğini başlatır. Bu örnekte, bir bağımlılık diyagramı oluşturun. Bu diyagramda komut veya hareket uzantınızı çalışması gerekir.  
   
 4.  Deneysel örneği kapatın ve örnek kodu değiştirin. Daha fazla bilgi için bkz: [gidin ve güncelleştirme modelleri program kodunda katman](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
@@ -55,7 +53,7 @@ Visual Studio'da bağımlılık diyagramları işleyicileri hareket ve bağlam m
   
      [Hareket işleyicisi tanımlama](#gesture)  
   
-6.  Ana örneğinde uzantıyı yüklemek için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyasını **bin\\\***. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklatın. Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
+6.  Ana örneğinde Visual Studio'nun ya da başka bir bilgisayarda uzantıyı yüklemek için bulma **.vsix** dosyasını **bin\\\***. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklatın. Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Bir komut veya hareketi için ayrı bir VSIX ekleme  
  Komutları, katman doğrulayıcıları ve diğer uzantıları içeren bir VSIX oluşturmak istiyorsanız, VSIX tanımlamak için bir proje ve işleyicileri için ayrı projeler oluşturmanızı öneririz.
@@ -104,9 +102,9 @@ Visual Studio'da bağımlılık diyagramları işleyicileri hareket ve bağlam m
   
      Ayrıca bkz. [gidin ve güncelleştirme modelleri program kodunda katman](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Özelliği test etmek için CTRL + F5'e veya F5 tuşuna basın. Deneysel örneği [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] açar. Bu örnekte oluşturun veya bir bağımlılık diyagramı açın.  
+2.  Özelliği test etmek için CTRL + F5'e veya F5 tuşuna basın. Visual Studio Deneysel bir örneğini açar. Bu örnekte oluşturun veya bir bağımlılık diyagramı açın.  
   
-3.  Ana örneğinde VSIX yüklemek için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyasını **bin** VSIX proje dizininde. VSIX yüklemek istediğiniz bilgisayara kopyalayın. Windows Gezgini'nde (Windows 8 dosya Gezgini'nde) VSIX dosyasını çift tıklatın.  
+3.  VSIX ana örneğinde Visual Studio veya başka bir bilgisayara yüklemek için bulma **.vsix** dosyasını **bin** VSIX proje dizininde. VSIX yüklemek istediğiniz bilgisayara kopyalayın. Windows Gezgini'nde VSIX dosyasını çift tıklatın.  
   
      Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
   

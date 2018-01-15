@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio gidin tanımı ve Özet tanımı | Microsoft Docs"
+title: "Visual Studio'da tür tanımları görüntüleme | Microsoft Docs"
 ms.custom: 
 ms.date: 01/10/2018
 ms.reviewer: 
@@ -8,27 +8,28 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- code editor, go to definition
-- code editor, peek definition
+- code editor, view definition
 - go to definition
 - peek definition
+- type definition [Visual Studio]
+- member definition [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 967b5132ac29c7b6444d32703b8340d17f8b5edb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 945eb6e905613d3d068321e2d5993f4506036963
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/13/2018
 ---
-# <a name="go-to-definition-and-peek-definition"></a>Tanım ve Özet tanımı gidin
+# <a name="view-type-and-member-definitions"></a>Tür ve üye tanımları görüntüle
 
-Tanıma Git ve Peek tanımı özelliklerini kolayca bir tür veya üye tanımının görüntülemenizi sağlar.
+Geliştiriciler genellikle kendi kodunda türleri veya kullandıkları sınıf üyeleri için kaynak kodu tanımları görüntülemeniz gerekir. Visual Studio'da Tanıma Git ve Peek tanımı özelliklerini kolayca bir tür veya üye tanımının görüntülemenizi sağlar. Meta veriler kaynak kodunu kullanılabilir durumda değilse, bunun yerine görüntülenir.
 
 ## <a name="go-to-definition"></a>Tanıma gitme
 
-Tanıma Git özelliğini bir tür veya üye kaynağına gider ve sonucu yeni bir pencerede açılır. Klavye kullanıcısıysanız metin imlecinizi basın ve sembol adını içinde yere yerleştirin **F12**. Fare kullanıcısıysanız seçin **Tanıma Git** bağlam menüsünden veya kullanım **CTRL tuşuna basıp tıklayın** aşağıda açıklanan işlevselliği.
+Tanıma Git özelliğini bir tür veya üye kaynağına gider ve sonucu yeni bir pencerede açılır. Klavye kullanıcısıysanız metin imlecinizi basın ve sembol adını içinde yere yerleştirin **F12**. Fare kullanıcısıysanız seçin **Tanıma Git** bağlam menüsünden veya kullanım **CTRL tuşuna basıp tıklayın** aşağıdaki bölümde açıklanan işlevselliği.
 
 ### <a name="ctrl-click-go-to-definition"></a>CTRL tuşuna basıp tıklayın Tanıma Git
 
@@ -50,13 +51,26 @@ Daha sonra basın **Ctrl** (veya hangi değiştirici tuşa seçili **seçenekler
 
 ![Tanımı animasyon Gözat](../ide/media/peek_definition.gif)
 
-Açılan pencerede başka bir tanımından peek, içerik haritası yolu, bir daire ve açılan görüntülenen oklarını kullanarak gidebilirsiniz başlatılır.
+Açılan pencerede başka bir tanımından peek varsa daire ve açılan görünür oklarını kullanarak gidebilirsiniz bir içerik haritası yolu başlar.
 
 Daha fazla bilgi için bkz: [nasıl yapılır: görüntüleme ve düzenleme kod kullanarak Peek tanımını (Alt + F12) tarafından](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
-## <a name="viewing-decompiled-source-definitions"></a>Decompiled görüntüleme kaynak tanımları
+## <a name="view-metadata-as-source-code-c"></a>Kaynak kodu (C#) olarak meta verilerini görüntüleme
 
-Yeni Visual Studio 2017 sürüm 15,6 Önizleme 2'de, seçtiğinizde decompiled kaynak kodu görmek için bir seçenek belirleyebilirsiniz **Tanıma Git** veya **Peek tanımı** bir tür veya üye C# kod. Bu özelliği etkinleştirmek için tercih **Araçları** > **seçenekleri** menü çubuğundan. Ardından, **metin düzenleyici** > **C#** > **Gelişmiş**seçip **etkinleştirmek decompiled kaynaklarınaGezinti**.
+C# türleri veya üyeleri tanımını görüntülediğinizde kimin sahip kaynak kod kullanılabilir değilse, bunların meta verilerini bunun yerine görüntülenir. Türleri ve üyeleri ancak kendi uygulamalarını bildirimlerini görebilirsiniz.
+
+Çalıştırdığınızda **Tanıma Git** veya **Peek tanımı** kaynak kodu kullanılamıyor, bir öğenin bu öğeye ait meta verileri, kaynak kodu görüntülenen bir görünümünü içeren sekmeli belge komutu Kod Düzenleyicisi'nde görüntülenir. Türünün adını ve ardından **[from meta verileri]**, belgenin sekmesinde görünür.
+
+Örneğin çalıştırırsanız **Tanıma Git** komutunu <xref:System.Console>, meta verileri <xref:System.Console> Kod düzenleyicisinde C# kaynak kodu olarak görünür. Kod bildiriminden benzer, ancak şimdi uygulaması göstermez.
+
+![Kaynak olarak meta veriler](../ide/media/metadatasource.png "MetadataSource")
+
+> [!NOTE]
+> Çalıştırmak çalıştığınızda **Tanıma Git** veya **Peek tanımı** komut türleri veya dahili olarak işaretlenmiş üyeleri için Visual Studio görüntülemez bunların meta verilerini bağımsız olarak mı yoksa kaynak kodu başvuruda bulunan bir arkadaş veya derlemesidir.
+
+### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Meta veriler (C#) yerine kaynak tanımları decompiled görüntüle
+
+Yeni **Visual Studio 2017 sürüm 15,6 Önizleme 2**, C# tür veya üye tanımının görüntülediğinizde decompiled kaynak kodu görmek için bir seçenek belirleyebilirsiniz kimin sahip kaynak kodu kullanılamıyor. Bu özelliği etkinleştirmek için tercih **Araçları** > **seçenekleri** menü çubuğundan. Ardından, **metin düzenleyici** > **C#** > **Gelişmiş**seçip **etkinleştirmek decompiled kaynaklarınaGezinti**.
 
 ![Decompiled tanımı görüntüleme](media/go-to-definition-decompiled-sources.png)
 

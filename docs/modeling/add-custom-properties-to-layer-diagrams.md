@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: dependency diagrams, adding custom properties
-ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
-caps.latest.revision: "21"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6f09f5b12f3c90aa3fd48c142996f1737b1c1ac9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71214e948fcf39d1cf3814ae120eb8f5e42a140a
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Bağımlılık diyagramlarına özel özellikler ekleme
 Bağımlılık diyagramları için uzantı kodu yazarken, bir bağımlılık diyagramda herhangi bir öğe değerleriyle depolayabilirsiniz. Diyagram yeniden açılır ve kaydedildiğinde, değerleri korunur. Ayrıca bu özellikleri görünür olabilir **özellikleri** penceresi böylece kullanıcılar bakın ve bunları düzenleyebilir. Örneğin, her katman için normal bir ifade belirtin ve her katman sınıflarda adları kullanıcı tarafından belirtilen desenle uygun doğrulamak için doğrulama kodu yazma kullanıcıların izin.  

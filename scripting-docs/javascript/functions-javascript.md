@@ -18,11 +18,11 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd5626af6417b5f0010545874bd15c86b30a303a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7275985d07f9f564dac98ba39e5ec31618dcaac4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="functions-javascript"></a>İşlevler (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]İşlevler eylemleri gerçekleştirmek; Ayrıca değerleri geri dönebilirsiniz. Bazen hesaplamalar veya karşılaştırmaları sonuçlarını bunlar. İşlevler "Genel yöntemler" da denir.  
@@ -232,7 +232,7 @@ console.log(f(3, 3, 3));
   
 <a name="Rest"></a>   
 ## <a name="rest-parameters"></a>REST parametreleri  
- Rest parametreler, forma işleci () tarafından belirtilen bir işlev çağrısı bir dizi ardışık bağımsız değişkenleri açmanızı sağlar.  
+ REST yayılan operatör tarafından belirtilen parametreleri, `...`, bir işlev çağrısı bir dizi ardışık bağımsız değişkenleri Kapat olanak sağlar.  
   
  REST parametreleri gereksinimini ortadan `arguments` nesnesi. REST parametreleri farklı `arguments` gibi çeşitli yollarla nesnesi:  
   
@@ -261,4 +261,4 @@ console.log(f(3, "hello", true));
  Forma işleci ek kullanımlar bkz [yayılan işleci](../javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [JavaScript dil başvurusu](../javascript/javascript-language-reference.md)
+ [JavaScript Dil Başvurusu](../javascript/javascript-language-reference.md)

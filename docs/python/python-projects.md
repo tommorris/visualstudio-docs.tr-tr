@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da Python projeleri | Microsoft Docs
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/09/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -12,35 +12,31 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 6fe63cd9258c5baf9509bb68d4258e839ebe75f0
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 7a0e449772f0947daf6c6bc8ec67af3a7456925d
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="python-projects"></a>Python projeleri
 
 Python uygulamaları, genellikle yalnızca klasörleri ve dosyaları kullanılarak tanımlanır, ancak uygulamalar daha büyük hale ve belki de JavaScript web uygulamaları için otomatik olarak oluşturulan dosyaları içeren vb. gibi bu yapı karmaşık olabilir. Visual Studio projesi bu karışıklığı yönetmenize yardımcı olur. Proje (bir `.pyproj` dosyası) kaynak ve projenizi ile ilişkili içerik dosyalarını tanımlar, her dosya için yapı bilgileri içerir, kaynak denetimi sistemleriyle tümleştirmeyi bilgilerini korur ve uygulamanızı düzenlemenize yardımcı olur mantıksal bileşenlerine.
 
-Ayrıca, proje bir Visual Studio içinde her zaman yönetilir *çözüm*, birbirine başvurabilir projeleri herhangi bir sayıda içerebilir. Örneğin, Python projenin hata ayıklamasını başlattığınızda derlemeler Visual Studio otomatik olarak C++ projesi (gerekiyorsa), bir Python proje uzantısı modülü için C++ projesi başvuruda bulunabilir. (Bir genel tartışma için bkz: [çözümler ve projeler Visual Studio'da](../ide/solutions-and-projects-in-visual-studio.md).)
-
 ![Çözüm Gezgini'nde Python projesi](media/projects-solution-explorer.png)
 
-Visual Studio Python proje şablonları varolan bir klasör ağacında bir proje oluşturmak için bir şablon ve temiz, boş bir proje oluşturmak için bir şablon dahil olmak üzere uygulama yapıların bir numarası hızlı bir şekilde ayarlamak için çeşitli sağlar. Bkz: [proje şablonlarını](#project-templates) altındaki bir dizin için.
+Ayrıca, proje bir Visual Studio içinde her zaman yönetilir *çözüm*, birbirine başvurabilir projeleri herhangi bir sayıda içerebilir. Örneğin, Python proje uzantısı modülü uygulayan C++ projesi başvuruda bulunabilir. Python projenin hata ayıklamasını başlattığınızda bu ilişki ile Visual Studio C++ projesi (gerekirse) otomatik olarak oluşturur. (Bir genel tartışma için bkz: [çözümler ve projeler Visual Studio'da](../ide/solutions-and-projects-in-visual-studio.md).)
 
-Bu konuda:
+Visual Studio Python proje şablonları varolan bir klasör ağacında bir proje oluşturmak için bir şablon ve temiz, boş bir proje oluşturmak için bir şablon dahil olmak üzere uygulama yapıların bir numarası hızlı bir şekilde ayarlamak için çeşitli sağlar. Bkz: [proje şablonlarını](#project-templates) bir dizin için.
 
-- [Dosya ekleme, bir başlatma dosyası atama ve ortamları ayarlama](#adding-files-assigning-a-startup-file-and-setting-environments)
-- [Proje şablonları](#project-templates)
-- [Bağlantılı dosyaları](#linked-files)
-- [Başvuruları](#references)
+<a name="lightweight-usage-project-free"></a>
 
-< a name = "Basit-kullanım-proje-boş"</a>
 > [!Tip]
-> Yaptığınız gibi bir projeyi bile olmadan Visual Studio Python kodu ile de çalışır. bir Python tek başına dosya ve otomatik tamamlama keyfini açık, IntelliSense ve hata ayıklama (Düzenleyicisi'nde sağ tıklatıp seçerek **Başlat [ile | olmadan]hataayıklama**). Bu kodu her zaman varsayılan genel ortam kullandığından, kodu farklı bir ortamı için tasarlanmıştır ancak, yanlış tamamlamalar veya hatalar görebilirsiniz. Ayrıca, Visual Studio, tüm dosyaları ve önemli ölçüde CPU süresi tüketebilir içinden tek dosya açıldığında, klasöründe paketleri analiz eder.
+> Proje bile, Visual Studio iyi Python kodu ile çalışır. Örneğin, bir Python tek başına dosya ve otomatik tamamlama keyfini açık, IntelliSense ve hata ayıklama (Düzenleyicisi'nde sağ tıklatıp seçerek **Başlat [ile | olmadan] hata ayıklama**). Bu kodu her zaman varsayılan genel ortam kullandığından, kodu farklı bir ortamı için tasarlanmıştır ancak, yanlış tamamlamalar veya hatalar görebilirsiniz. Ayrıca, Visual Studio, tüm dosyaları ve önemli ölçüde CPU süresi tüketebilir içinden tek dosya açıldığında, klasöründe paketleri analiz eder.
 >
-> Aşağıda açıklandığı gibi basit sağlasa da var olan koddan bir Visual Studio projesi oluşturmak için olan [var olan dosyalarından proje oluşturma](#creating-a-project-from-existing-files).
+> Bölümünde açıklandığı gibi basit sağlasa da var olan koddan bir Visual Studio projesi oluşturmak için olan [var olan dosyalarından proje oluşturma](#creating-a-project-from-existing-files).
 
 Video Visual Studio'da Python projeleri giriş için bkz [alma Python kodu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567) (Microsoft Virtual Academy, 2m17s).
 
@@ -50,14 +46,14 @@ Ayrıca bkz. eski video [derinlemesine: Python projeleri ile kaynak denetimi kul
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Dosya ekleme, bir başlatma dosyası atama ve ortamları ayarlama
 
-Uygulamanızı geliştirirken, genellikle farklı türdeki yeni dosyaları projeye eklemeniz gerekir. Bu tür dosyaları ekleme kolayca yapılır projeye sağ tıklayıp seçerek **Ekle > varolan öğeyi...** , bir dosya eklemek, Gözat ile veya **Ekle > Yeni öğe...** çeşitli dosyaları ilgili web uygulamaları ve öğe şablonları boş python dosyaları, python sınıfı bir birim testi dahil olmak üzere çeşitli iletişim kutusunu getirir. Hangi sürümü Visual Studio'nun kullanılabilir olduğunu öğrenmek için bir test projesi bu seçeneklerle keşfetmek için öneririz.
+Uygulamanızı geliştirirken, genellikle farklı türdeki yeni dosyaları projeye eklemeniz gerekir. Bu tür dosyaları ekleyerek yapılır projeye sağ tıklayıp seçerek **Ekle > varolan öğeyi...** . bir dosya eklemek, Gözat ile veya **Ekle > Yeni öğe...** , öğe şablonları, çeşitli ile iletişim kurma getirir. Boş python dosyaları, python sınıfı, birim testi ve web uygulamaları için ilgili çeşitli dosya şablonları içerir. Hangi sürümü Visual Studio'nun kullanılabilir olduğunu öğrenmek için bir test projesi bu seçeneklerle keşfedebilirsiniz.
 
-Çözüm Gezgini'nde kalın gösterilen bir atanan başlangıç dosyasını her Python projenin vardır. Başlangıç dosyası hata ayıklama başlattığınızda çalıştırılan dosyasıdır (F5 veya **hata ayıklama > hata ayıklamayı Başlat**) veya etkileşimli pencerede projenizi çalıştırma (Shift + Alt + F5 veya **hata ayıklama > Execute projesinde Python etkileşimli**). Değiştirmek için yeni dosyasını sağ tıklatın ve seçin **başlangıç dosyası olarak ayarlamak**.
+Çözüm Gezgini'nde kalın gösterilen bir atanan başlangıç dosyasını her Python projenin vardır. Başlangıç dosyası hata ayıklama başlattığınızda çalıştırılan dosyasıdır (F5 veya **hata ayıklama > hata ayıklamayı Başlat**) veya etkileşimli pencerede projenizi çalıştırdığınızda (Shift + Alt + F5 veya **hata ayıklama > Python yürütme projesinde Etkileşimli**). Değiştirmek için yeni dosyasını sağ tıklatın ve seçin **başlangıç dosyası olarak ayarlamak**.
 
 > [!Tip]
-> Seçilen başlangıç dosyası bir projeden kaldırmak ve yeni bir tane seçmezseniz, proje sonuçlarınızı bir Python çalıştırma denemesi ancak sonra görünen ve hemen kayboluyor penceresi çıktı. Bu davranış karşılaşırsanız, atanan başlangıç dosya olup olmadığını denetleyin. Ayrıca, çıktı penceresinde bu gibi durumlarda açık tutmak için projenize sağ tıklayın, seçin **özellikleri**seçin **hata ayıklama** sekmesinde, ardından ekleyin `-i` için **yorumlayıcı bağımsız değişkenleri** alan. Bu bağımsız değişken, böylece Ctrl + Z, çıkmak için Enter girene kadar penceresi açık tutarak bir program tamamlandıktan sonra etkileşimli moduna geçmesi yorumlayıcı neden olur.
+> Seçilen başlangıç dosyası bir projeden kaldırmak ve yeni bir tane seçmezseniz, proje sonuçlarınızı Python içinde çalışan görünen ancak hemen kayboluyor penceresi çıktı. Bu davranış karşılaşırsanız, atanan başlangıç dosya olup olmadığını denetleyin. Ayrıca, çıktı penceresinde bu gibi durumlarda açık tutmak için projenize sağ tıklayın, seçin **özellikleri**seçin **hata ayıklama** sekmesinde, ardından ekleyin `-i` için **yorumlayıcı bağımsız değişkenleri** alan. Bu bağımsız değişken, böylece Ctrl + Z, çıkmak için Enter girene kadar penceresi açık tutarak bir program tamamlandıktan sonra etkileşimli moduna geçmesi yorumlayıcı neden olur.
 
-Yeni bir proje her zaman varsayılan genel Python ortamı ile ilişkilidir. Proje (sanal ortamlar dahil) için farklı bir ortam ilişkilendirmek için ile sağ **Python ortamları** seçin proje düğümüne **Ekle/Kaldır Python ortamları**, ve istediğiniz şablonu seçin. Etkin ortam değiştirmek için istenen ortama sağ tıklatın ve seçin **etkinleştirme ortamı** aşağıda gösterildiği gibi. Daha fazla ayrıntı için bkz: [Python ortamları](python-environments.md#project-specific-environments).
+Yeni bir proje her zaman varsayılan genel Python ortamı ile ilişkilidir. Proje (sanal ortamlar dahil) için farklı bir ortam ilişkilendirmek için ile sağ **Python ortamları** seçin proje düğümüne **Ekle/Kaldır Python ortamları**, ve istediğiniz şablonu seçin. Etkin ortam değiştirmek için istenen ortama sağ tıklatın ve seçin **etkinleştirme ortamı** aşağıda gösterildiği gibi. Daha fazla bilgi için bkz: [Python ortamları](python-environments.md#selecting-an-environment-for-a-project).
 
 ![Python proje için bir ortam etkinleştirme](media/projects-activate-environment.png)
 
@@ -74,7 +70,7 @@ Aşağıdaki tabloda, Visual Studio (tüm şablonları tüm önceki sürümlerin
 | Şablon | Açıklama |
 | --- | --- |
 | [Varolan Python koddan](#creating-a-project-from-existing-files) | Visual Studio projesi klasörü yapısı içinde varolan Python kodu oluşturur.  |
-| Python uygulama | Tek ve boş kaynak dosyası içeren yeni bir Python uygulaması için bir temel Proje yapısı. Varsayılan olarak, projeyi tarafından değiştirebileceğiniz varsayılan genel ortamının konsol yorumlayıcı çalışır [farklı bir ortam atama](python-environments.md#project-specific-environments). |
+| Python uygulama | Tek ve boş kaynak dosyası içeren yeni bir Python uygulaması için bir temel Proje yapısı. Varsayılan olarak, projeyi tarafından değiştirebileceğiniz varsayılan genel ortamının konsol yorumlayıcı çalışır [farklı bir ortam atama](python-environments.md#selecting-an-environment-for-a-project). |
 | [Azure bulut hizmeti](template-azure-cloud-service.md) | Python içinde yazılmış bir Azure bulut hizmeti için bir proje. |
 | [Web projeleri](template-web.md) | Proje Bottle, Django, Flask ve Flask/Jade dahil olmak üzere çeşitli çerçevesinde bağlı web sunucuları için. |
 | IronPython uygulama | Benzer şekilde kullanır ancak Python uygulama şablonu tarafından IronPython varsayılan etkinleştirme .NET birlikte çalışabilirlik ve karma mod .NET dilleri ile hata ayıklama. |
@@ -83,6 +79,9 @@ Aşağıdaki tabloda, Visual Studio (tüm şablonları tüm önceki sürümlerin
 | Uygulama IronPython Windows Forms | Windows Forms ile kod kullanılarak oluşturulan IronPython withUI kullanarak proje yapısı. Uygulama, bir konsol görüntülemeden çalışır. |
 | Arka planda (IOT) | Arka plan Hizmetleri cihazlarda çalıştırmak için Python projeleri dağıtılmasını destekler. Ziyaret [Windows IOT Geliştirme Merkezi](https://dev.windows.com/en-us/iot) daha fazla bilgi için. |
 | Python Uzantısı Modülü | Bu şablon yüklediğiniz Visual C++ altında görünür **Python yerel geliştirme araçları** Visual Studio 2017 Python yükündeki ile (bkz [yükleme](installation.md)). C++ uzantı DLL'si, ne üzerinde açıklanan için benzer için çekirdek yapısı sağlar [Python için C++ uzantısı oluşturma](cpp-and-python.md). |
+
+> [!Note]
+> Python yorumlanan dil olduğundan, Visual Studio'da Python projeleri tek başına yürütülebilir dosya gibi diğer derlenmiş dili projeler (C#, örneğin) üretmediği. Daha fazla bilgi için bkz: [soru ve yanıt](python-in-visual-studio.md#questions-and-answers).
 
 < a name = "Oluştur-proje--varolan-dosyaları"</a>
 
@@ -95,9 +94,9 @@ Aşağıdaki tabloda, Visual Studio (tüm şablonları tüm önceki sürümlerin
 
 ## <a name="linked-files"></a>Bağlantılı dosyaları
 
-Bir projeye ancak genellikle duruma dosyaları uygulamanın proje klasörleri dışında bulunan bağlantılı dosyalarıdır. Çözüm Gezgini'nde Kaplanmış kısayol simge normal dosyaları olarak göründükleri: ![Bağlı dosya simgesi](media/projects-linked-file-icon.png)
+Bir projeye duruma getirilir ancak genellikle uygulamanın proje klasörleri dışında bulunan dosyaları bağlantılı dosyalarıdır. Çözüm Gezgini'nde Kaplanmış kısayol simge normal dosyaları olarak göründükleri: ![Bağlı dosya simgesi](media/projects-linked-file-icon.png)
 
-Bağlantılı dosyaları belirtilir `.pyproj` normal kullanarak dosya `<Compile Include="...">` öğesi. Dizin yapısı dışında göreli bir yol kullanın veya açık bağlantı dosyalarını Solution Explorer içinde kendi yolunu belirterek olabilirler bunlar örtük bağlantılı dosyaları olabilir:
+Bağlantılı dosyaları belirtilir `.pyproj` kullanarak dosya `<Compile Include="...">` öğesi. Bağlantılı dosyaları dizin yapısı dışında göreli bir yol kullanırsanız, açık veya kapalı Çözüm Gezgini içindeki yollara kullanıyorsanız:
 
 ```xml
 <Compile Include="..\test2.py">

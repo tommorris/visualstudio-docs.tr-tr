@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Değişiklikleri Modelin Dışına Yayan Olay İşleyicileri
 Görselleştirme ve modelleme SDK, depolama olmayan değişkenleri, dosyaları, diğer depoları veya başka modellerinin gibi mağazasının dışında bir kaynağa değişiklikleri yaymak için depolama olay işleyicileri tanımlayabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uzantıları. Mağaza olay işleyicileri tetikleme olayın oluştuğu işlem sonunda yürütülür. Bunlar, ayrıca bir geri alma veya yineleme işlemi yürütülür. Bu nedenle, depolama kurallarından farklı olarak, depolama olayların deponun dışında olan değerleri güncelleştirmek için en kullanışlıdır. Bir sınıfa dinlemek için kayıtlı .NET olaylarının tersine deposu olay işleyicileri: her örneği için ayrı bir işleyici kaydetmeniz gerekmez. Değişiklikleri yürütmek için farklı yollar arasında seçim yapma hakkında daha fazla bilgi için bkz: [yanıtlama ve yayılıyor değişiklikleri](../modeling/responding-to-and-propagating-changes.md).  
@@ -38,7 +36,7 @@ Görselleştirme ve modelleme SDK, depolama olmayan değişkenleri, dosyaları, 
   
     -   `ElementDeleted`-bir model öğesi sonra tetiklenen, ilişki, Şekil veya bağlayıcı silinmiş olabilir. Öğesinin özellik değerlerini erişmeye devam edebilirsiniz, ancak hiçbir ilişki diğer öğelere sahip olur.  
   
-2.  İçin bir parçalı sınıf tanımı eklemek *YourDsl***DocData** ayrı kod dosyasında **DslPackage** projesi.  
+2.  İçin bir parçalı sınıf tanımı eklemek *YourDsl *** DocData** ayrı kod dosyasında **DslPackage** projesi.  
   
 3.  Aşağıdaki örnekte olduğu gibi bir yöntem olarak olay kodunu yazın. Bu olabilir `static`erişmek istediğiniz sürece `DocData`.  
   

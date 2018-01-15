@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 492aaa5190bb0b24e7077d3523197ff4eff6ba49
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 17029522cae96200b7bc28b0f917cc5d33f6c673
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="unit-test-basics"></a>Birim Testi Temelleri
 Kod oluşturma ve birim testleri çalıştırma beklendiği gibi çalışıp çalışmadığını denetleyin. Birim, programınızı işlevselliğini test edebilirsiniz ayrık sınanabilir davranışları içine olarak tek tek ayırmanız çünkü testi adlı *birimleri*. Visual Studio Test Gezgini birim testleri çalıştırma ve sonuçları Visual Studio'da görüntülemek için esnek ve verimli bir yol sağlar. Visual Studio Microsoft Birim yönetilen ve yerel kodu çerçeveyi testi yükler. Kullanım bir *birim testi çerçevesi* birim testleri oluşturmak için bunları çalıştırmak ve bu test sonuçlarını rapor. Kodunuzun doğru şekilde çalışıp çalışmadığını sınamak için değişiklik yaptığınız zaman yeniden çalıştır birim testleri. Visual Studio Enterprise ile otomatik olarak yapabilirsiniz [Canlı birim testi](live-unit-testing-intro.md), hangi kodunuz tarafından etkilenen testleri algılar değiştirir ve yazarken arka planda çalışır.
@@ -219,7 +219,7 @@ public void My_Test ()
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a>Test Gezgini testleri çalıştırma  
  Test projesi derlerken, testleri Test Gezgini'nde görünür. Test Gezgini görünür durumda değilse, seçin **Test** Visual Studio menüsünde, **Windows**ve ardından **Test Gezgini**.  
   
- ![Birim Test Gezgini](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Birim Test Gezgini](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Çalıştırmak, yazma ve testleri yeniden gibi Test Gezgini varsayılan görünümü sonuçları gruplar halinde görüntülenir. **başarısız testler**, **testleri geçti**, **atlandı testleri** ve  **Testler değil**. Tüm testler o grupta görüntüler görünümünü açmak için bir Grup başlığını seçebilirsiniz.  
   
@@ -286,7 +286,6 @@ public void My_Test ()
  Veri temelli bir test için oluşturmak için `AddIntegerHelper` yöntemi, önce oluşturduğumuz adında bir Access veritabanı `AccountsTest.accdb` ve adlı bir tablo `AddIntegerHelperData`. `AddIntegerHelperData` Tabloyu tanımlayan eklenmesi birinci ve ikinci işlenenleri belirtmek için sütunlar ve beklenen sonucu belirtmek için bir sütun. Biz satır sayısını uygun değerlerle doldurun.  
   
 ```csharp  
-  
 [DataSource(  
     @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projects\MyBank\TestData\AccountsTest.accdb",   
     "AddIntegerHelperData"  
@@ -300,8 +299,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
     int expected = Convert.ToInt32(TestContext.DataRow["Sum"]);  
     int actual = target.AddIntegerHelper(x, y);  
     Assert.AreEqual(expected, actual);  
-}  
-  
+}
 ```  
   
  Öznitelikli yöntemi, tablodaki her satır için bir kez çalışır. Herhangi bir yineleme başarısız olursa test Gezgini yöntemi için bir test hata bildirir. Test sonuçları ayrıntılar bölmesine yöntemi her veri satırının geçişi/başarısız durumu yöntemi gösterir.  

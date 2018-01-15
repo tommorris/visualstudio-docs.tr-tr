@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: uwp
 author: gewarren
-ms.openlocfilehash: b1cc13dfd81876f647178ebf3702c778cabb533e
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: c9610360c0ea6d32c4825b1e2768f3eaaa06a6fa
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Visual Studio'da UWP uygulamaları için birim testleri çalıştırma
 Bu konuda Microsoft Visual Studio Test Gezgini ile birim testleri çalıştırırken açıklar  
@@ -55,7 +55,7 @@ Bu konuda Microsoft Visual Studio Test Gezgini ile birim testleri çalıştırı
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a>Test Gezgini testlerini çalıştırma  
  Test projesi derlerken, testleri Test Gezgini'nde görünür. Test Gezgini görünür durumda değilse, seçin **Test** Visual Studio menüsünde, **Windows**ve ardından **Test Gezgini**.  
   
- ![Birim Test Gezgini](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Birim Test Gezgini](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Test Gezgini çalıştırmak, yazma ve testleri yeniden çalıştırmak gibi sonuçları varsayılan gruplar halinde görüntülenir. **başarısız testler**, **testleri geçti**, **atlandı testleri** ve  **Testler değil**. Test Gezgini testlerinizi grupları şekilde değiştirebilirsiniz.  
   

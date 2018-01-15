@@ -1,5 +1,6 @@
 ---
 title: "Hızlı Başlangıç: İlk Python web uygulamanızı oluşturmak için Visual Studio'yu kullanın. | Microsoft Docs"
+description: "Visual Studio'da Falcon framework kullanarak basit bir web uygulaması derlemeler Python kullanarak kısa bir giriş."
 ms.custom: 
 ms.date: 01/08/2018
 ms.reviewer: 
@@ -12,12 +13,14 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 dev_langs: python
-ms.workload: python
-ms.openlocfilehash: 226f673dbd305f9dabf759cb11c6537a2f3ba637
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 684cbe21a7f6454549d2e014682533697306152b
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Hızlı Başlangıç: İlk Python web uygulamanızı oluşturmak için Visual Studio'yu kullanın.
 
@@ -67,7 +70,7 @@ Bu hızlı başlangıç ancak, Falcon bir paketi yükleme ve web uygulaması sı
 
 Falcon hakkında daha fazla bilgi için ziyaret [falconframework.org](https://falconframework.org/).
 
-Belirli bir proje için kitaplıkları yükleneceği kitaplıkları genel ortamında yüklemek yerine, geliştiriciler genellikle "sanal ortam" oluşturduğunuz unutmayın. Visual Studio birçok Python proje şablonlarını içeren bir `requirements.txt` şablonu bağımlı olduğu kitaplıkları listeler dosya. Bu şablonlardan birini proje oluşturma içine kitaplıkların yüklü bir sanal ortamın oluşturulmasını tetikler. Daha fazla bilgi için bkz: [Python ortamları - sanal ortamlar](../python/python-environments.md#virtual-environments).
+Belirli bir proje için kitaplıkları yükleneceği kitaplıkları genel ortamında yüklemek yerine, geliştiriciler genellikle "sanal ortam" oluşturduğunuz unutmayın. Visual Studio birçok Python proje şablonlarını içeren bir `requirements.txt` şablonu bağımlı olduğu kitaplıkları listeler dosya. Bu şablonlardan birini proje oluşturma içine kitaplıkların yüklü bir sanal ortamın oluşturulmasını tetikler. Daha fazla bilgi için bkz: [Python ortamları - sanal ortamlar](../python/python-environments.md#creating-virtual-environments).
 
 ## <a name="add-a-code-file"></a>Bir kod dosyası ekleme
 

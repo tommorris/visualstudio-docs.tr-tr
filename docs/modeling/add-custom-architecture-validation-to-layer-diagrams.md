@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: dependency diagrams, adding custom validation
-ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
-caps.latest.revision: "42"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 130d53cb0e32add0251306c261cf456459f2192a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82d65618dd510c90fa2aea95b43727787e9e727b
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Bağımlılık diyagramlarına özel mimari doğrulaması ekleme
 Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visual Studio'da katman modeli karşı bir proje kaynak kodunda kullanıcılar doğrulayabilirsiniz. Standart doğrulama algoritması yoktur, ancak kendi doğrulama uzantıları tanımlayabilirsiniz.  
@@ -59,7 +57,7 @@ Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visu
     > [!NOTE]
     >  Yalnızca belirli durumlarda yönteminiz olarak adlandırılır ve kesme noktaları otomatik olarak çalışmaz. Daha fazla bilgi için bkz: [hata ayıklama katman doğrulaması](#debugging).  
   
-5.  Ana örneğinde uzantıyı yüklemek için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyasını **bin\\\***. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklatın. Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
+5.  Ana örneğinde Visual Studio'nun ya da başka bir bilgisayarda uzantıyı yüklemek için bulma **.vsix** dosyasını **bin\\\***. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklatın. Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Bir katman doğrulayıcı için ayrı bir VSIX ekleme  
  Katman doğrulayıcıları, komutları ve diğer uzantıları içeren bir VSIX oluşturmak istiyorsanız, VSIX tanımlamak için bir proje ve işleyicileri için ayrı projeler oluşturmanızı öneririz. 
@@ -116,7 +114,7 @@ Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visu
     > [!NOTE]
     >  Yalnızca belirli durumlarda yönteminiz olarak adlandırılır ve kesme noktaları otomatik olarak çalışmaz. Daha fazla bilgi için bkz: [hata ayıklama katman doğrulaması](#debugging).  
   
-8.  Ana örneğinde VSIX yüklemek için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyasını **bin** VSIX proje dizininde. VSIX yüklemek istediğiniz bilgisayara kopyalayın. Windows Gezgini'nde VSIX dosyasını çift tıklatın. (Dosya Gezgini'nde Windows 8.)  
+8.  VSIX ana örneğinde Visual Studio veya başka bir bilgisayara yüklemek için bulma **.vsix** dosyasını **bin** VSIX proje dizininde. VSIX yüklemek istediğiniz bilgisayara kopyalayın. Windows Gezgini'nde VSIX dosyasını çift tıklatın.
   
      Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
   
@@ -150,7 +148,7 @@ Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visu
   
  Kullanıcı ne zaman çağırır **Mimariyi Doğrula** menü komutu, katman çalışma zamanı sistem analizleri yaparken katmanları ve bir grafik oluşturmak için kendi yapıları. Grafik dört bölümden oluşur:  
   
--   Katman modelleri [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] düğümleri ve bağlantıları grafikte olarak temsil edilir çözümü.  
+-   Düğümleri ve bağlantıları grafikte olarak temsil edilir katman modellerini Visual Studio çözümü.  
   
 -   Kod, proje öğeleri ve diğer çözümde tanımlanır ve düğümler ve çözümleme işlemi tarafından bulunan bağımlılıkları temsil bağlantılar olarak gösterilen mimarilere.  
   
@@ -190,7 +188,7 @@ Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visu
  Kodda öğelerine bağlantılar katmanlardan "Temsil eder" kategorisi vardır.  
   
 ##  <a name="debugging"></a>Doğrulama hata ayıklama  
- Katman doğrulaması uzantınızı hata ayıklamak için CTRL + F5 tuşuna basın. Deneysel örneği [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] açar. Bu örnekte, bir katman modeli oluşturun veya açın. Bu model kodu ile ilişkilendirilmelidir ve en az bir bağımlılığa sahip olması gerekir.  
+ Katman doğrulaması uzantınızı hata ayıklamak için CTRL + F5 tuşuna basın. Visual Studio Deneysel bir örneğini açar. Bu örnekte, bir katman modeli oluşturun veya açın. Bu model kodu ile ilişkilendirilmelidir ve en az bir bağımlılığa sahip olması gerekir.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Bağımlılıklar içeren bir çözüm ile test  
  Aşağıdaki özelliklere yoksa doğrulama yürütülmedi:  
@@ -199,7 +197,7 @@ Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visu
   
 -   Kod öğelerle ilişkili olan model Katmanlar vardır.  
   
- Deneysel örneği Başlat ilk kez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] doğrulama uzantınızı sınamak için açın veya bu özelliklere sahip bir çözüm oluşturun.  
+ Doğrulama uzantınızı test etmek için Visual Studio deneysel örneği ilk başlattığınızda bu özelliklere sahip bir çözüm oluşturun veya açın.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>Önce çalışma temiz çözüm mimarisi doğrula  
  Doğrulama kodunuzu güncelleştirdiğinizde kullanmak **temiz çözüm** komutunu **yapı** Deneysel çözümde doğrulama komutu test önce menüsü. Doğrulama sonuçlarını önbelleğe alındığı için bu gereklidir. Test bağımlılık diyagramı veya kendi kod gerçekleştirmediyseniz doğrulama yöntemlerinin çalıştırılmayacak.  
@@ -207,9 +205,9 @@ Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visu
 ### <a name="launch-the-debugger-explicitly"></a>Hata ayıklayıcı açıkça başlatma  
  Doğrulama ayrı bir işlemde çalıştırır. Bu nedenle, doğrulama yönteminde kesme noktaları tetiklenir değil. Doğrulama başlatıldığında işleme hata ayıklayıcı açık olarak iliştirin gerekir.  
   
- Hata ayıklayıcı doğrulama işlemine eklemek üzere bir çağrı ekleyin `System.Diagnostics.Debugger.Launch()` doğrulama yönteminizi başlangıcında. Hata ayıklama iletişim kutusu göründüğünde, ana örneğini seçin [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Hata ayıklayıcı doğrulama işlemine eklemek üzere bir çağrı ekleyin `System.Diagnostics.Debugger.Launch()` doğrulama yönteminizi başlangıcında. Hata ayıklama iletişim kutusu göründüğünde, Visual Studio ana örneğini seçin.  
   
- Alternatif olarak, bir çağrı ekleyebilirsiniz `System.Windows.Forms.MessageBox.Show()`. İleti kutusu göründüğünde ana örneğine gidin [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve **hata ayıklama** menüsünü tıklatın **ekleme işlemi için**. Adlı işlemini seçin **Graphcmd.exe**.  
+ Alternatif olarak, bir çağrı ekleyebilirsiniz `System.Windows.Forms.MessageBox.Show()`. İleti kutusu göründüğünde Visual Studio ve ana örneğine gidin **hata ayıklama** menüsünü tıklatın **ekleme işlemi için**. Adlı işlemini seçin **Graphcmd.exe**.  
   
  Her zaman CTRL + F5'e basarak Deneysel örneğini başlatın (**hata ayıklama olmadan Başlat**).  
   

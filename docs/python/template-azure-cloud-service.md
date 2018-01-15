@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: e5bde434f3a5097f51f461aad5b02ae183e2204c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d14263c228cdbedc0f74acc20d81cfe58380812f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python için Azure bulut hizmeti projeleri
 
 Visual Studio şablonları yardımcı olması için Python kullanarak Azure Cloud Services oluşturmaya başlamak sağlar.
 
-A [bulut hizmeti](http://go.microsoft.com/fwlink/?LinkId=306052) herhangi bir sayıda oluşur *çalışan rolleri* ve *web rolleri*, her biri kavramsal olarak ayrı bir görev gerçekleştiren ancak için ayrı olarak çoğaltılabilir arasında ölçeklendirme için görsel makineler gerektiği gibi. Web rolleri için ön uç web uygulamalarını barındırma sağlar. Bu tür bir uygulama yazmak için Python ilgilenen olduğu WSGI destekleyen herhangi bir web çerçevesidir kullanılabilir (tarafından desteklenen gibi [Web Proje şablonu](template-web.md)). Çalışan rollerini doğrudan kullanıcılarınız ile etkileşim değil uzun süre çalışan işlemler için tasarlanmıştır. Genellikle yaptıkları kullanımı [veri](http://go.microsoft.com/fwlink/?LinkId=401571) ve [uygulama hizmeti](http://go.microsoft.com/fwlink/?LinkId=401572) ile yüklenebilir kitaplıkları `pip install` &nbsp; [ `azure` ](http://pypi.org/project/azure).
+A [bulut hizmeti](http://go.microsoft.com/fwlink/?LinkId=306052) herhangi bir sayıda oluşur *çalışan rolleri* ve *web rolleri*, her biri kavramsal olarak ayrı bir görev gerçekleştiren ancak için ayrı olarak çoğaltılabilir arasında ölçeklendirme için görsel makineler gerektiği gibi. Web rolleri için ön uç web uygulamalarını barındırma sağlar. Bu tür bir uygulama yazmak için Python ilgilenen olduğu WSGI destekleyen herhangi bir web çerçevesidir kullanılabilir (tarafından desteklenen gibi [Web Proje şablonu](template-web.md)). Çalışan rollerini doğrudan kullanıcılarınız ile etkileşim değil uzun süre çalışan işlemler için tasarlanmıştır. Genellikle yaptıkları kullanımı [veri](http://go.microsoft.com/fwlink/?LinkId=401571) ve [uygulama hizmeti](http://go.microsoft.com/fwlink/?LinkId=401572) ile yüklenebilir kitaplıkları [ `pip install azure` ](http://pypi.org/project/azure).
 
 Bu konu, proje şablonu ve diğer Visual Studio (önceki sürümlerinde benzer, ancak bazı farklılıklar) 2017 desteği hakkında ayrıntılar içerir. Python'dan Azure ile çalışma hakkında daha fazla bilgi için ziyaret [Azure Python Geliştirici Merkezi](http://go.microsoft.com/fwlink/?linkid=254360).
 
@@ -80,7 +81,7 @@ Açmak için **Yayımla** rolü Çözüm Gezgini'nde proje ve seçin Sihirbazı,
 
 Yayımlama işlemi iki aşamaları içerir. İlk olarak, Visual Studio bulut hizmetiniz için tüm rolleri içeren tek bir paket oluşturur. Bu, her rol için bir veya daha fazla sanal makine başlatır ve kaynak dağıtma Azure'a dağıtılan bir pakettir.
 
-Her sanal makineyi etkinleştirir olarak yürütülmeden `ConfigureCloudService.ps1` komut dosyası ve bağımlılıkları yükleyin. Varsayılan olarak bu komut dosyası Python yeni bir sürümünü yükler [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) ve belirtilen herhangi bir paket bir `requirements.txt` dosyası. 
+Her sanal makineyi etkinleştirir olarak yürütülmeden `ConfigureCloudService.ps1` komut dosyası ve bağımlılıkları yükleyin. Varsayılan olarak bu komut dosyası Python yeni bir sürümünü yükler [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) ve belirtilen herhangi bir paket bir `requirements.txt` dosyası.
 
 Son olarak, çalışan rolleri yürütme `LaunchWorker.ps1`, başladığı Python kodunuzu çalıştıran; rolleri Initialize IIS web ve web istekleri işleme başlamak.
 
@@ -90,7 +91,7 @@ Bulut Hizmetleri için `ConfigureCloudService.ps1` komut dosyası kullanan `pip`
 
 C uzantılı tüm kitaplıkları önceden derlenmiş ikili dosyaları sağlamalısınız bulut hizmeti örnekleri C Derleyicileri içermez unutmayın.
 
-PIP ve bağımlılıklarını yanı sıra paketler `requirements.txt`, otomatik olarak yüklenir ve ücrete tabi bant genişliği kullanımı sayılır. Bkz: [gerekli paketleri yönetme](python-environments.md#managing-required-packages) yönetme ile ilgili ayrıntılar için `requirements.txt` dosyaları.
+PIP ve bağımlılıklarını yanı sıra paketler `requirements.txt`, otomatik olarak yüklenir ve ücrete tabi bant genişliği kullanımı sayılır. Bkz: [gerekli paketleri yönetme](python-environments.md#managing-required-packages-requirementstxt) yönetme ile ilgili ayrıntılar için `requirements.txt` dosyaları.
 
 ## <a name="troubleshooting"></a>Sorun giderme
 
@@ -98,12 +99,12 @@ Web veya çalışan rolü düzgün bir şekilde dağıtıldıktan sonra davranı
 
 - Python projenizin (en az) sahip bir bin\ klasör içerir:
 
-    - `ConfigureCloudService.ps1`
-    - `LaunchWorker.ps1`(çalışan rolleri için)
-    - `ps.cmd`
+  - `ConfigureCloudService.ps1`
+  - `LaunchWorker.ps1`(çalışan rolleri için)
+  - `ps.cmd`
 
 - Python projenizi içeren bir `requirements.txt` tüm bağımlılıkları (veya alternatif olarak, tekerlek dosyalarını koleksiyonu) listeleme dosya.
 - Bulut hizmetinizde Uzak Masaüstü'nü etkinleştirmek ve günlük dosyalarını inceleyin.
-- Günlükleri `ConfigureCloudService.ps1` ve `LaunchWorker.ps1` depolanmış `C:\Resources\Directory\%RoleId%.DiagnosticStore\LogFiles` uzak makinede klasör.
+- Günlükleri `ConfigureCloudService.ps1` ve `LaunchWorker.ps1` depolanmış `C:\Resources\Directory\%RoleId%.DiagnosticStore\LogFiles` uzak bilgisayardaki klasör.
 - Web rolleri yazma ek günlükleri yapılandırılan bir yola `web.config`, yani yolunda `WSGI_LOG` appSetting. Çoğu normal IIS veya Fastcgı günlüğünü de çalışır.
 - Şu anda `LaunchWorker.ps1.log` çıkış veya Python çalışan rolü tarafından görüntülenen hataları görüntülemek için tek yolu bir dosyadır.

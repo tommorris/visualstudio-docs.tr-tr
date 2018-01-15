@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76b88d48b78ebab2058a2fa13feef327908f2b24
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>İzlenecek yol: Birden Çok Bilgisayarda Derleme Ortamı Oluşturma
 
@@ -29,7 +29,6 @@ Visual Studio bir ana bilgisayara yükleyerek bir yapı ortamı kuruluşunuz iç
 Bu belge hakları yazılım dışarıdan yeniden dağıtmanız veya üçüncü taraflara derleme ortamları sağlamak amacıyla confer değil.  
   
 > Sorumluluk reddi<br /><br /> Bu belgede sağlanan bir "olarak-olan" olarak. Özetlenen adımları Test ettiğimiz olsa da, her yapılandırma ayrıntısına sınanacak yapamıyoruz. Belge öğrenilen ek bilgileri ile güncel kalmasını dener. URL ve diğer Internet Web sitesi başvuruları dahil olmak üzere bu belgede belirtilen bilgiler ve görüntüler bildirim yapılmadan değiştirilebilir. Microsoft veya burada belirtilen bilgiler göre zımni hiçbir garanti vermez. Kullanım riski size aittir.<br /><br /> Bu belge, herhangi bir Microsoft ürünü üzerinde hiçbir fikri mülkiyet hakkı sağlamaz. Kopyalayabilir ve bu belgeyi şirket içinde kullanmak başvuru amaçlıdır.<br /><br /> Microsoft hiçbir öneride bulunmak, Yorumlar ya da bu belgeye ilişkin diğer geribildirim ("geri bildirim") vermek için zorunda değilsiniz. Ancak, gönüllü sağladığınız geribildirim Microsoft Products ve ilgili özellikleri ya da hangi sırayla bağlı kendi ürünlerini geliştirmek için diğer üçüncü taraflarca dayanıyordu diğer belgeleri (topluca "Microsoft Offerings") kullanılabilir. Buna uygun olarak, bu belgenin ya da Microsoft uygulandıkları Offerings herhangi bir sürümü üzerinde Feedback verirseniz, kabul: (a) Microsoft serbestçe kullanın, yeniden oluşturma, lisans, dağıtmak ve aksi durumda herhangi bir Microsoft görüşlerinize tanımış olursunuz Teklifi; (b), ayrıca olmadan üçüncü taraflara, ücretsiz olarak, yalnızca diğer ürünleri kullanın veya sizin Geribildiriminiz içeren herhangi belirli kısımlarını bir Microsoft Product ile arabirim oluşturmak üzere etkinleştirmek gerekli olan patent haklarını vermeniz; ve (c) ederiz düşünmek için bir neden olan Microsoft'a (i) herhangi bir patent, telif hakkı veya diğer fikri mülkiyet talep veya herhangi bir üçüncü taraf sağındaki tabi olan Microsoft veremezsiniz; veya herhangi bir Microsoft Offering geribildirimler veya böyle geri bildirim veya diğer Microsoft fikri mülkiyet için lisanslı veya aksi türetilmiş Lisans Koşulları'nı (II) konu ile herhangi bir üçüncü taraf paylaşılan.
-
 
 Bu kılavuz, aşağıdaki işletim sistemlerinden karşı MSBuild komut satırında yürütme ve Team Foundation Build kullanarak doğrulandı.  
   
@@ -47,7 +46,7 @@ Bu kılavuz, aşağıdaki işletim sistemlerinden karşı MSBuild komut satırı
   
  Birden çok bilgisayarda ortamı, bu tür uygulamalar oluşturmak için kullanılamaz:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]uygulamalar. Derleme için [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] uygulamalar, Visual Studio derleme bilgisayara yüklemeniz gerekir.  
+-   UWP uygulamalar. UWP uygulamalar oluşturmak için Visual Studio derleme bilgisayara yüklemeniz gerekir.  
   
 -   .NET Framework 4 veya önceki hedef Masaüstü uygulamaları. Bu tür uygulamalar oluşturmak için ya da Visual Studio veya .NET başvurusu derlemeler ve araçlar (SDK'dan Windows 7.1) yapı bilgisayara yüklemeniz gerekir.  
   

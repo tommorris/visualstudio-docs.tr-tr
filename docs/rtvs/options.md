@@ -18,11 +18,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: a7680ff2613051cb795d2ca9cb509f725e92dd23
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7bab332a66784dd473a0cf2b841b617aecda9e9f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio seçenekleri için R araçları
 
@@ -34,8 +34,8 @@ Seçenekler ve ayarlar R belirli aşağıdaki yöntemleri kullanılarak erişili
 
 - Biçimlendirme seçeneklerini kod (bkz [Düzenleyici Seçenekleri](code-editing.md#editor-options): **Araçlar > Seçenekler** menüsünde seçip **metin düzenleyici > R > biçimlendirme**
 - Linting seçenekleri (bkz [Linting](code-linting.md)): **Araçlar > Seçenekler** menüsünde seçip **metin düzenleyicisi > R > tüy**
-- Düzenleyici Seçenekleri Gelişmiş ([bu konuda açıklanan](#text-editor-r-advanced-options)): **Araçlar > Seçenekler** menüsünde seçip **metin düzenleyicisi > R > Gelişmiş**
-- Davranış seçenekleri ([bu konuda açıklanan](#r-tools-advanced-options)): **R Araçlar > Seçenekler** menüsünde veya **Araçlar > Seçenekleri**, sonra kaydırın **R Araçları**.
+- Düzenleyici Seçenekleri Gelişmiş ([bu konuda açıklanan](#text-editor-r--advanced-options)): **Araçlar > Seçenekler** menüsünde seçip **metin düzenleyicisi > R > Gelişmiş**
+- Davranış seçenekleri ([bu konuda açıklanan](#r-tools--advanced-options)): **R Araçlar > Seçenekler** menüsünde veya **Araçlar > Seçenekleri**, sonra kaydırın **R Araçları**.
 
 **R Araçlar > veri bilimi ayarları** komutu etkiler ayrıca çeşitli genel Visual Studio'da farklı ayarlar. Bu komut sonraki bölümde açıklanmıştır.
 

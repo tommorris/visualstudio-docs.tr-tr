@@ -16,19 +16,31 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 167ffa269ea8051a4791000d96a86cb5788af60d
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c58bda5570be9cdb7fba7a8f90a282df7b7167a2
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Nasıl yapılır: Proje ve öğe şablonları bulma ve düzenleme
 
-Şablon dosyalarını yerleştirildiğinde, şablonları görünmesi için Visual Studio tanıdığı bir konumda **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları. İletişim kutularında de görünür şablonlar için özel alt kategorileri oluşturabilirsiniz.
+Şablon dosyalarını yerleştirildiğinde, Visual Studio şablonları görünmesi için tanıdığı bir konumda **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları. Kullanıcı şablonu konumda özel alt kategoriler de oluşturabilirsiniz ve kategorileri gösterilen **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları.
 
-## <a name="locating-templates"></a>Şablonları bulma
+## <a name="locate-templates"></a>Şablonları bulun
 
-Yüklü Şablonlar ve kullanıcı şablonları iki farklı konumda depolanır. .Vstemplate dosya içeren sıkıştırılmış bir dosya konumları varsa, şablon görünür **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.
+Yüklü Şablonlar ve kullanıcı şablonları iki farklı konumda depolanır.
+
+### <a name="user-templates"></a>Kullanıcı Şablonları
+
+Kullanıcı şablonu dizini .vstemplate dosyasına içeren bir sıkıştırılmış (.zip) dosya eklerseniz, şablon görünür **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu. Kullanıcı şablonları varsayılan olarak bulunur:
+
+- %USERPROFILE%\Documents\Visual studio \<sürüm\>\Templates\ProjectTemplates
+
+- %USERPROFILE%\Documents\Visual studio \<sürüm\>\Templates\ItemTemplates
+
+Örneğin, şu dizine kullanıcı proje şablonları C# ' ta içerir:
+
+   C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C# \
 
 > [!TIP]
 > Kullanıcı şablonlarında konumunu ayarlayabilirsiniz **Araçları** > **seçenekleri** > **projeler ve çözümler**  >   **Konumları**.
@@ -45,38 +57,14 @@ Varsayılan olarak, Visual Studio ile yüklü şablonlar içinde bulunur:
 
    C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
 
-### <a name="user-templates"></a>Kullanıcı Şablonları
+## <a name="organize-templates"></a>Şablonları düzenleme
 
-Kullanıcı şablonları varsayılan olarak bulunur:
-
-- %USERPROFILE%\Documents\Visual studio \<sürüm\>\Templates\ProjectTemplates
-
-- %USERPROFILE%\Documents\Visual studio \<sürüm\>\Templates\ItemTemplates
-
-Örneğin, şu dizine kullanıcı proje şablonları C# ' ta içerir:
-
-   C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C# \
-
-> [!NOTE]
-> Kullanıcı şablonu konumu yerelleştirilmiş şablonları için yerel alt dizinler içermez.
-
-Kullanıcı şablonlarında varsayılan dizini değiştirebilirsiniz **seçenekleri** iletişim kutusunda **projeler ve çözümler** > **konumları**.
-
-## <a name="organizing-templates"></a>Şablonları düzenleme
-
-Kategorileri **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları yüklü şablon ve kullanıcı şablonu konumlarda mevcut dizin yapıları yansıtır. Şablonlarınızı sizin için anlamlı bir şekilde düzenlemek için bu dizin yapıları değiştirebilirsiniz.
+Kategorileri **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları yüklü şablon ve kullanıcı şablonu konumlarda mevcut dizin yapıları yansıtır. Kullanıcı şablonları kendi kullanıcı şablon dizinine yeni klasörler ekleyerek kategorilere ayrılabilir. **Yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları, kullanıcı şablon kategorileri yaptığınız değişiklikleri yansıtır.
 
 > [!NOTE]
 > Yeni bir kategori programlama dili düzeyinde oluşturulamıyor. Yeni kategoriler yalnızca her bir dilin oluşturulabilir.
 
-> [!NOTE]
-> Dizin yapıları yüklediyseniz ve belirli bir dil için kullanıcı şablonları aynı değildir (diğer bir deyişle, varsa bir klasör, ancak diğer dizinlerde), tüm kategorileri gösterilen **yeni proje** iletişim kutusu.
-
-### <a name="organizing-user-templates"></a>Düzenleme Kullanıcı Şablonları
-
-Kullanıcı şablonları kendi kullanıcı şablonu konumda yeni klasörler ekleyerek kategorilere ayrılabilir. **Yeni proje** iletişim kutusu, şablon kategorileri yaptığınız değişiklikleri yansıtır.
-
-#### <a name="to-create-new-user-project-template-categories"></a>Proje şablonu kategorileri yeni kullanıcı oluşturmak için
+### <a name="to-create-new-user-project-template-categories"></a>Proje şablonu kategorileri yeni kullanıcı oluşturmak için
 
 1. Kullanıcı proje şablonu dizini programlama dili klasöründe bir klasör oluşturun. Örneğin, kurmak için bir **HelloWorld** kategorisi için C# proje şablonları, aşağıdaki dizin oluştur:
 
@@ -88,7 +76,7 @@ Kullanıcı şablonları kendi kullanıcı şablonu konumda yeni klasörler ekle
 
    **HelloWorld** kategori görünür **yeni proje** iletişim kutusunda **yüklü** > **Visual C#**.
 
-#### <a name="to-create-new-user-item-template-categories"></a>Yeni kullanıcı öğesi şablon kategorileri oluşturmak için
+### <a name="to-create-new-user-item-template-categories"></a>Yeni kullanıcı öğesi şablon kategorileri oluşturmak için
 
 1. Kullanıcı öğesi şablonu dizini programlama dili klasöründe bir klasör oluşturun. Örneğin, kurmak için bir **HelloWorld** kategorisi için C# öğe şablonları, aşağıdaki dizin oluştur:
 
@@ -100,7 +88,7 @@ Kullanıcı şablonları kendi kullanıcı şablonu konumda yeni klasörler ekle
 
    **HelloWorld** kategori görünür **Yeni Öğe Ekle** iletişim kutusunda **yüklü** > **Visual C# öğeleri**.
 
-### <a name="displaying-templates-in-parent-categories"></a>Ana kategoride şablonları görüntüleme
+### <a name="display-templates-in-parent-categories"></a>Üst kategorilerdeki görüntüleme şablonları
 
 Alt kategorileri kullanarak kendi üst kategori görüntülenecek şablonlarında etkinleştirebilirsiniz `NumberOfParentCategoriesToRollUp` .vstemplate dosyasındaki öğesi. Proje şablonları ve öğe şablonları için aşağıdaki adımları aynıdır.
 

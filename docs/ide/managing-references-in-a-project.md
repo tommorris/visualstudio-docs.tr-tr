@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c941b196897b7d3f7a815c50fc1e0a4817d3ed74
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-references-in-a-project"></a>Bir projedeki başvuruları yönetme
 
@@ -61,13 +61,13 @@ Windows 10 için Windows 8.1 projeleri yeniden hedefleyin isterseniz bkz [bağla
 
 ### <a name="extension-sdk-references"></a>Uzantı SDK başvurular
 
-Visual Basic, C#, C++ ve JavaScript Evrensel Windows Platformu (UWP) uygulamaları uzantısı SDK'ları hedefleyen başvuru [!INCLUDE[win81](../debugger/includes/win81_md.md)], bu uzantı SDK'ları Windows 10'da kullanım dışı API'ları kullanmayın sürece. Lütfen olup, UWP uygulamaları tarafından başvurulabilir çıkışı bulmak için uzantı SDK satıcı sitesini denetleyin.
+Visual Basic, C#, C++ ve JavaScript Evrensel Windows Platformu (UWP) uygulamaları, bu uzantı SDK'ları Windows 10'da kullanım dışı API'ları kullanmayın sürece uzantısı SDK'ları hedefleyen Windows 8.1 başvuruda bulunabilir. Lütfen olup, UWP uygulamaları tarafından başvurulabilir çıkışı bulmak için uzantı SDK satıcı sitesini denetleyin.
 
 Karar verirseniz, uygulamanız tarafından başvurulan uzantısı SDK desteklenmiyor sonra aşağıdaki adımları gerçekleştirmeniz gerekir:
 
-1. Hataya neden olan projesinin adı arayın. Projenizi hedefleme platform proje adının yanında parantez içinde belirtilir. Örneğin, **MyProjectName (Windows 8.1)** projenizi anlamına **MyProjectName** platform sürümü hedefleme [!INCLUDE[win81](../debugger/includes/win81_md.md)].
+1. Hataya neden olan projesinin adı arayın. Projenizi hedefleme platform proje adının yanında parantez içinde belirtilir. Örneğin, **MyProjectName (Windows 8.1)** projenizi anlamına **MyProjectName** platform sürüm Windows 8.1 desteği.
 
-2. Desteklenmeyen uzantı SDK'sı sahibi satıcı sitesine gidin ve projenizin hedefleme platform sürümü ile uyumlu olan bağımlılıkları olan uzantı SDK sürümünü yükleyin.
+1. Desteklenmeyen uzantı SDK'sı sahibi satıcı sitesine gidin ve projenizin hedefleme platform sürümü ile uyumlu olan bağımlılıkları olan uzantı SDK sürümünü yükleyin.
 
     > [!NOTE]
     > Bir uzantı SDK bağımlılıkları diğer uzantısı SDK olup bulmak için bir yoldur bakarak **başvuru Yöneticisi**. Visual Studio'yu yeniden başlatın, yeni bir C# UWP uygulaması projesi oluşturun ve ardından projeye sağ tıklayın ve seçin **Başvuru Ekle**. Git **Windows** sekmesi, sonra **uzantıları** alt sekmesine ve uzantı SDK'yı seçin. Sağ bölmede bakabilir **başvuru Yöneticisi**. Bağımlılıkları varsa, bunlar var. listelenir.
@@ -75,13 +75,13 @@ Karar verirseniz, uygulamanız tarafından başvurulan uzantısı SDK desteklenm
     > [!IMPORTANT]
     > Projenizi Windows 10 hedefleme ve uzantısı önceki adımda yüklenen SDK'sı, Microsoft Visual C++ çalışma zamanı paketi üzerinde bir bağımlılığa sahiptir, Microsoft Visual C++ çalışma zamanı Windows 10 ile uyumlu olan paket sürümü v14.0 olur ve yüklü Visual Studio ile.
 
-3. Önceki adımda yüklenen uzantı SDK diğer uzantısı SDK bağımlılıklarına sahipse, bağımlılıkları kendi ve projeniz platform sürümü ile uyumlu Bu bağımlılıklar sürümlerini yükleyen satıcılarının siteleri gidin hedefleme.
+1. Önceki adımda yüklenen uzantı SDK diğer uzantısı SDK bağımlılıklarına sahipse, bağımlılıkları kendi ve projeniz platform sürümü ile uyumlu Bu bağımlılıklar sürümlerini yükleyen satıcılarının siteleri gidin hedefleme.
 
-4. Visual Studio'yu yeniden başlatın ve uygulamanızı açın.
+1. Visual Studio'yu yeniden başlatın ve uygulamanızı açın.
 
-5. Sağ **başvuruları** hata neden oldu ve proje düğümüne **Başvuru Ekle**.
+1. Sağ **başvuruları** hata neden oldu ve proje düğümüne **Başvuru Ekle**.
 
-6. Tıklatın **Windows** sekmesini ve ardından **uzantıları** alt sekmesinde, eski uzantısı SDK'ları için onay kutusunun işaretini kaldırın ve yeni uzantı SDK'ları için onay kutularını denetleyin. **Tamam**'ı tıklatın.
+1. Tıklatın **Windows** sekmesini ve ardından **uzantıları** alt sekmesinde, eski uzantısı SDK'ları için onay kutusunun işaretini kaldırın ve yeni uzantı SDK'ları için onay kutularını denetleyin. **Tamam**'ı tıklatın.
 
 ## <a name="adding-a-reference-at-design-time"></a>Tasarım zamanında bir başvuru ekleme
 

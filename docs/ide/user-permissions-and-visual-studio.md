@@ -18,19 +18,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3cf223b0b4d2f8ca710a5d5fdb349c7a423b1b86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8062b6d37c675defeea369ebe8f8bf15fcbdd8ee
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı İzinleri ve Visual Studio
-Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıcı olarak çalıştırmanız gerekir.  
+
+Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıcı olarak çalıştırmanız gerekir.
 
 > [!WARNING]
->  Ayrıca güvenilir bir kişi ya da güvenilir bir konumdan gelmeyen herhangi bir Visual Studio çözümüyle derleme, başlatma veya hata ayıklama yapmadığınızdan emin olmalısınız.  
+> Ayrıca güvenilir bir kişi ya da güvenilir bir konumdan gelmeyen herhangi bir Visual Studio çözümüyle derleme, başlatma veya hata ayıklama yapmadığınızdan emin olmalısınız.
 
- Normal bir kullanıcı olarak Visual Studio IDE içinde hemen her şeyi yapabilirsiniz, ancak şu görevleri tamamlamak için yönetici izinlerine sahip olmanız gerekir:  
+Normal bir kullanıcı olarak Visual Studio IDE içinde hemen her şeyi yapabilirsiniz, ancak şu görevleri tamamlamak için yönetici izinlerine sahip olmanız gerekir:
 
 |Alan|Görev|Daha fazla bilgi için|  
 |----------|----------|--------------------------|  
@@ -50,25 +51,21 @@ Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıc�
 |Performans araçları|Uygulama profili oluşturma.|[Performans profili oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md)|  
 |Dağıtım|Yerel bir bilgisayarda Internet Information Services'a (IIS) web uygulaması dağıtma.|[Visual Studio veya Visual Web Developer kullanılarak bir barındırma sağlayıcısına ASP.NET Web uygulaması dağıtma: bir Test ortamı olarak IIS dağıtma](http://go.microsoft.com/fwlink/?LinkId=266478)|
 
-## <a name="running-visual-studio-as-an-administrator"></a>Visual Studio'yu Yönetici olarak çalıştırma  
- IDE'yi her başlattığınızda Visual Studio'yu yönetim izinleri ile başlatabilir veya uygulama kısayolunu her zaman yönetim izinleriyle çalışacak şekilde değiştirebilirsiniz. Daha fazla bilgi için bkz. Windows Yardımı.  
+## <a name="running-visual-studio-as-an-administrator"></a>Visual Studio'yu Yönetici olarak çalıştırma
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd"></a>Visual Studio Yönetici izinleriyle çalıştırmak için [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)], veya[!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]  
+IDE'yi her başlattığınızda Visual Studio'yu yönetim izinleri ile başlatabilir veya uygulama kısayolunu her zaman yönetim izinleriyle çalışacak şekilde değiştirebilirsiniz. Daha fazla bilgi için bkz. Windows Yardımı.
 
-1.  Üzerinde **Başlat** ekranında, yazın **Visual Studio**. Yüklediğiniz Visual Studio sürümünü veya sürümlerini görmeniz gerekir.  
+### <a name="to-run-visual-studio-with-administrative-permissions"></a>Visual Studio Yönetici izinleriyle çalıştırmak için
 
-2.  Başlatmak istediğiniz Visual Studio sürümünü seçin ve kısayol menüsünü görüntüleyin (ekranın en altında görünür). Seçin **yönetici olarak çalıştır**.  
+Bu yönergeler, Windows 10 için içindir. Bunlar diğer Windows sürümleri için benzerdir.
 
-     Visual Studio başladığında **(Yönetici)** sonra ürün adı başlık çubuğunda görünür.  
+1. Açık **Başlat** menü ve Visual Studio 2017 gidin.
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd"></a>Visual Studio Yönetici izinleriyle çalıştırmak için [!INCLUDE[win7](../debugger/includes/win7_md.md)] veya[!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]  
+1. Sağ tıklatın veya bağlam menüsünde **Visual Studio 2017**seçin **daha fazla** > **yönetici olarak çalıştır**.
 
-1.  Üzerinde **Başlat** menüsünde seçin **tüm programlar**.  
+     Visual Studio başladığında **(Yönetici)** sonra ürün adı başlık çubuğunda görünür.
 
-2.  İçinde **Microsoft Visual Studio** *sürüm* klasörü seçin **Visual Studio** *sürüm* kısayol menüsünü açın ve ardından seçin **Yönetici olarak çalıştır**.  
+## <a name="see-also"></a>Ayrıca bkz.
 
-     Visual Studio başladığında **(Yönetici)** sonra ürün adı başlık çubuğunda görünür.  
-
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Taşıma, geçirme ve Visual Studio projelerini yükseltme](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
- [Visual Studio'yu yükleyin](../install/install-visual-studio.md)
+[Visual Studio Projelerini Taşıma, Geçirme ve Yükseltme](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+[Visual Studio'yu yükleyin](../install/install-visual-studio.md)

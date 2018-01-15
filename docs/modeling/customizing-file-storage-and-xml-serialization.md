@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords: Domain-Specific Language, serialization
-ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
-caps.latest.revision: "17"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 850cb58f6763b521da9cdb1779b0960c0607ef88
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ca481ef5f0994b88cc1eafd37815c07977b007cf
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dosya Depolamayı ve XML Serileştirmeyi Özelleştirme
 Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına özgü dil (DSL) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], bir XML dosyası oluşturulmuş veya güncelleştirilmiş. Dosya depolama modelinde yeniden oluşturmak için yeniden.  
@@ -139,7 +137,7 @@ Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına
   
 -   Ayarlama **ad anahtarı** var olan bir etki alanı sınıfının bir etki alanı özelliği için. Özelliğin türü olmalıdır `string`.  
   
-    1.  DSL Explorer'da genişletin **Xml serileştirme Behavior\Class veri\\***\<etki alanı sınıfı >***\Element veri**ve ardından seçin etki alanı özelliği.  
+    1.  DSL Explorer'da genişletin **Xml serileştirme Behavior\Class veri\\***\<etki alanı sınıfı >***\Element veri**ve ardından etki alanı özelliği seçin.  
   
     2.  Özellikler penceresinde ayarlayın **ad anahtarı** için `true`.  
   

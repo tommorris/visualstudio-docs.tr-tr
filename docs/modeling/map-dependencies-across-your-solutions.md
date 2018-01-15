@@ -26,33 +26,33 @@ helpviewer_keywords:
 - dependency graphs
 - graph documents, exporting
 - code exploration, visualizing
-ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
-caps.latest.revision: "243"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Çözümlerinizdeki bağımlılıkları eşleme
-Kodunuz boyunca bağımlılıkları anlamak istediğinizde, kod haritalarını oluşturarak bunları görselleştirin. Bu nasıl kodu birlikte dosyaları ve kod satırlarını aracılığıyla okumadan uyduğunu görmenize yardımcı olur.  
-  
- ![Çözümlerinizdeki bağımlılıkları görüntülemek](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
-  
- **Bazı videolar işte**:  
-  
--   [Kod bağımlılıklarınızın görselleştirme aracılığıyla anlama](http://go.microsoft.com/fwlink/?LinkID=252065)  
-  
--   [Değişikliğin etkisini Görselleştirme](http://go.microsoft.com/fwlink/?LinkID=252068)  
-  
--   [Kod haritaları karmaşık koduyla anlama](http://go.microsoft.com/fwlink/?LinkID=259869)  
-  
-##  <a name="GetStarted"></a>Kod haritaları ile çalışmaya başlama  
- **Kod haritaları kullanmak için ya da ihtiyaç duyarsınız**:  
+
+Kodunuz boyunca bağımlılıkları anlamak istediğinizde, kod haritalarını oluşturarak bunları görselleştirin. Bu nasıl kodu birlikte dosyaları ve kod satırlarını aracılığıyla okumadan uyduğunu görmenize yardımcı olur.
+
+![Çözümlerinizdeki bağımlılıkları görüntülemek](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")
+
+**Bazı videolar işte**:
+
+- [Kod bağımlılıklarınızın görselleştirme aracılığıyla anlama](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
+
+- [Değişikliğin etkisini Görselleştirme](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
+
+- [Kod haritaları karmaşık koduyla anlama](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
+
+## <a name="GetStarted"></a>Kod haritaları ile çalışmaya başlama
+
+**Kod haritaları kullanmak için ya da ihtiyaç duyarsınız**:
   
 -   Visual Studio Enterprise: kod haritalarını kod düzenleyiciden Çözüm Gezgini, sınıf görünümü ve Nesne Tarayıcısı oluşturun.  
   
@@ -171,7 +171,7 @@ Kodunuz boyunca bağımlılıkları anlamak istediğinizde, kod haritalarını o
   
 10. Başka bir odakta bir karmaşık çözüm harita için mevcut bir haritayı gelen seçili öğeleri içeren yeni bir harita oluşturmak için yoludur. Tutun **CTRL** odaklanmak istediğiniz öğeleri seçerken kısayol menüsünü açın ve seçin **seçimden yeni bir grafik**.  
   
-     ![Seçili öğeleri yeni bir kod haritasında Göster](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+     ![Seçili öğeleri yeni bir kod haritasında Göster](../modeling/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
 11. İçeren bağlamı için yeni eşleme devredilir. Çözüm klasörleri ve kullanarak görmesini istemiyorsanız kapsayıcıları Gizle **filtreleri** bölmesi.  
   

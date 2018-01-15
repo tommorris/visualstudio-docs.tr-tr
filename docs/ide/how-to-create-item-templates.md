@@ -11,11 +11,11 @@ helpviewer_keywords: item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5145263ce84cf9e1f6a5ef970701ace660ecb73d
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8fd5d7fba092df5accfaad9d26cfc05f196981ba
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="how-to-create-item-templates"></a>Nasıl yapılır: öğe şablonları oluşturma
 
@@ -62,8 +62,6 @@ Sihirbaz temel bir şablon oluşturmak için işin çoğunu yapar ancak birçok 
    ```xml
    <TemplateID>Microsoft.CSharp.Class</TemplateID>
    ```
-
-   Windows 8.1 C# projeleri, açma ve kapatma içinde aşağıdaki XML .vstemplate dosyasına eklemek için `<TemplateData>` etiketi: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Windows 8.1 C++ projeleri için değeri kullanın `WinRT-Native-6.3`. Windows 10 ve diğer proje türleri için bkz: [Templategroupıd öğesi (genişletilebilirlik)](../extensibility/templategroupid-element-visual-studio-templates.md). Tam .vstemplate başvuru için bkz: [Şablon Şeması Başvurusu (genişletilebilirlik)](../extensibility/visual-studio-template-schema-reference.md).
 
 1. Visual Studio'da .vstemplate dosyayı kaydedin ve kapatın.
 

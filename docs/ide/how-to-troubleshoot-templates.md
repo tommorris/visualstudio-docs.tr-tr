@@ -11,11 +11,11 @@ helpviewer_keywords: templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6d9a73cd45a0e497fb2ecc0f4b4697071e3b37
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: d9242d053044fa66e6eb3d506382cf7cfb5d0295
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Nasıl yapılır: şablonlarda sorun giderme
 
@@ -47,20 +47,6 @@ Bir şablon .vstemplate dosyasında için Visual Studio şablon şeması uymaz, 
 1. Yeni .zip dosyası eski .zip dosyası ile aynı dizine koyun.
 
 1. Ayıklanan şablon dosyalarını ve eski şablonu .zip dosyasını silin.
-
-## <a name="monitor-the-event-log"></a>Olay günlüğü izleyin
-
-Visual Studio şablon .zip dosyalarını işlerken bulduğu hataları günlüğe kaydeder. Bir şablonu içinde görünmüyorsa **yeni proje** iletişim kutusu olarak beklendiği gibi kullanabileceğiniz **Olay Görüntüleyicisi'ni** sorunu gidermek için.
-
-### <a name="to-locate-template-errors-in-event-viewer"></a>Olay Görüntüleyicisi'nde şablon hatalarını bulmak için
-
-1. Windows, gelen **Başlat** menüsünde seçin **Windows Yönetim Araçları** > **Olay Görüntüleyicisi'ni**.
-
-1. Sol bölmede seçin **Windows Günlükleri** > **uygulama**.
-
-1. Olaylarla arayın bir **kaynak** değerini `Visual Studio - VsTemplate`.
-
-1. Bir hatayı görüntülemek için bir şablon olayı çift tıklatın.
 
 ## <a name="enable-diagnostic-logging"></a>Tanılama günlük kaydını etkinleştir
 

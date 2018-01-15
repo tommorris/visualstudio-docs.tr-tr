@@ -1,7 +1,7 @@
 ---
-title: Visual Studio'da Python | Microsoft Docs
+title: Visual Studio (Windows) Python | Microsoft Docs
 ms.custom: 
-ms.date: 09/26/2017
+ms.date: 01/09/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -12,27 +12,29 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: f91fcfa7e0ea7247eb91a3512f7abd64d8684809
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: bcfe9502cc2d5d83f1b4cac24c71459ca5acb230
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
-# <a name="working-with-python-in-visual-studio"></a>Visual Studio'da Python ile çalışma
+# <a name="working-with-python-in-visual-studio-windows"></a>Python Visual Studio (Windows) ile çalışma
 
 Python güvenilir, esnek, kolay öğrenmek için tüm işletim sistemlerinde kullanımına yönelik ücretsiz ve sağlam Geliştirici topluluğu ve pek çok ücretsiz kitaplıkları tarafından desteklenen popüler bir programlama dilidir. Python geliştirme, web uygulamaları, web Hizmetleri, Masaüstü uygulamaları, komut dosyası ve bilimsel hesaplama dahil olmak üzere tüm yolla destekler ve birçok üniversiteler, bilimcilerine, rasgele geliştiriciler ve profesyonel geliştiricilere benzer tarafından kullanılır. Üzerinde dili hakkında daha fazla bilgiyi [python.org](https://www.python.org) ve [yeni başlayanlar için Python](https://www.python.org/about/gettingstarted/).
 
-Visual Studio Windows sağlar [açık kaynak](https://github.com/Microsoft/ptvs) Python geliştirme ve veri bilimi iş yüklerini (Visual Studio 2017) aracılığıyla Python dil ve Visual Studio Uzantısı (Visual Studio 2015 için boş Python araçları desteği ve önceki sürüm). Python Mac için Visual Studio şu anda desteklenmez, ancak Mac ve Linux Visual Studio Code ile kullanılabilir (bkz [soru- cevap aşağıda](#questions-and-answers).
+Visual Studio Windows sağlar [açık kaynak](https://github.com/Microsoft/ptvs) Python geliştirme ve veri bilimi iş yüklerini (Visual Studio 2017) aracılığıyla Python dil ve Visual Studio Uzantısı (Visual Studio 2015 için boş Python araçları desteği ve önceki sürüm). Python Mac için Visual Studio şu anda desteklenmez, ancak Mac ve Linux Visual Studio Code ile kullanılabilir (bkz [sorular ve yanıtlar](#questions-and-answers)).
 
 Başlamak için:
 
 - İzleyin [yükleme yönergeleri](installation.md) Python iş yükü çalışma ayarlamak için
 - Bir veya daha fazla proje oluşturmak için hızlı başlangıç ipuçları gidin. Emin değilseniz, başlayın [bir şablondan bir proje oluştur](quickstart-02-project-from-template.md).
 - İzleyin [Visual Studio'da Python ile çalışma](vs-tutorial-01-01.md) baştan sona tam bir deneyim Öğreticisi.
-- Ardından Python güvenlikle ilgili özellikler ve Visual Studio kendisini özelliklerini keşfetmek için aşağıdaki bağlantıları kullanın.
+- Ardından Python güvenlikle ilgili özellikler ve Visual Studio kendisini özelliklerini keşfetmek için aşağıdaki tabloda bağlantıları kullanın.
 
-| Özellik | Açıklama | Genel Visual Studio belgeleri | 
+| Özellik | Açıklama | Genel Visual Studio belgeleri |
 | --- | --- | --- |
 | [Visual Studio Proje sistemi](python-projects.md) | Örtük olarak Çekmeleri web sayfaları, JavaScript, uygulama kodu, test kodu tanımlamak açık denetim verirken Python kodu bir klasör yapısını, komut dosyaları, vb. oluşturun. | [Visual Studio’da Çözümler ve Projeler](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Proje şablonları](python-projects.md#project-templates) | Proje yapısı konsol, web, Azure, veri bilimi ve diğer proje türleri için hızlı bir şekilde oluşturur | [Visual Studio Şablonları](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
@@ -40,7 +42,7 @@ Başlamak için:
 | IPython desteği | Satır içi çizimler, .NET ve Windows Presentation Foundation (WPF) için REPL IPython/Jupyter için destek içerir. | yok |
 | [Zengin düzenleme, IntelliSense ve kod kavrama](code-editing.md) | Tüm kod ve kitaplıklarını arasında otomatik tamamlama söz dizimi renklendirme içeren [kod biçimlendirme](code-formatting.md), imza Yardım, sınıf görünümü gidin tanımı, tüm başvuruları Bul, kod parçacıkları [yeniden düzenleme](code-refactoring.md), [ PyLint](code-pylint.md)ve daha fazlası. | [Kod ve Metin Düzenleyici'de Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [Etkileşimli penceresi](interactive-repl.md) | Hızlı bir REPL deneyimi Python için kolayca kodunuzu bir kısmı vurgulayın ve etkileşimli penceresine gönderme olanağı sağlar. | yok |
-| [Tam özellikli hata ayıklama](debugging.md) | Hata ayıklama yapılabilir olan veya varolan bir yürütülebilir dosyada hata ayıklama özelliği de dahil olmak üzere bir Visual Studio projesi olmayan [Python/C++ karışık mod hata ayıklaması](debugging-mixed-mode.md), [uzaktan hata ayıklama](debugging-cross-platform-remote.md) Windows/Linux/Mac için [Azure'a uzaktan hata ayıklama](debugging-azure-remote.md)ve etkileşimli pencereye hata ayıklama. | [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md) |
+| [Tam özellikli hata ayıklama](debugging.md) | Hata ayıklama yapılabilir olan veya varolan bir yürütülebilir dosyada hata ayıklama özelliği de dahil olmak üzere bir Visual Studio projesi olmayan [Python/C++ karışık mod hata ayıklaması](debugging-mixed-mode.md), [uzaktan hata ayıklama](debugging-cross-platform-remote.md) Windows/Linux/Mac için [Azure'a uzaktan hata ayıklama](debugging-azure-remote.md)ve etkileşimli pencereye hata ayıklama. | [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md) |
 | [Kapsamlı Raporlama ile Profil Araçları](profiling.md) | Ne zaman farklı profil çalıştırmalarını arasındaki performans Karşılaştırılacak özelliği de dahil, uygulamanızda harcandığını araştırır. | [Profil Araçları](../profiling/profiling-tools.md) (tüm Visual Studio profil özellikleri Python için kullanılabilir) |
 | [Birim test araçları](unit-testing.md) | Bul, çalıştırmak, Visual Studio Test Gezgini testlerinde yönetmek ve kolayca birim testleri hata ayıklama. | [Birim testi kodunuz](../test/unit-test-your-code.md) |
 
@@ -49,7 +51,6 @@ Python iş yükü de içeren [Python için Azure SDK](azure-sdk-for-python.md), 
 Kısa bir video giriş için bkz [Visual Studio için Python Araçları](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) ilgili Microsoft Virtual Academy (yaklaşık 22 dakika toplam). 
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
-
 
 ## <a name="questions-and-answers"></a>Sorular ve yanıtlar
 
@@ -176,25 +177,24 @@ Visual Studio sürümü tarafından desteklenen özellikler:
 | Test hata ayıklama | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
 <br/>
 
-1. Visual Studio Araçları Git uzantısı, kullanılabilir VS 2012 Git desteğini kullanılabilir [Visual Studio Galerisi](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c).
+1. Visual Studio 2012 için Git desteği, Git uzantısı, kullanılabilir için Visual Studio Araçları kullanılabilir [Visual Studio Galerisi](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c).
 
-2. Dağıtımı için Azure Web sitesi gerektirir [.NET 2.1 - VS 2010 SP1 için Azure SDK](http://go.microsoft.com/fwlink/?LinkId=313855).  Sonraki sürümlerde VS 2010 desteklemez.
+1. Dağıtımı için Azure Web sitesi gerektirir [.NET 2.1 - Visual Studio 2010 SP1 için Azure SDK](http://go.microsoft.com/fwlink/?LinkId=313855). Sonraki sürümleri, Visual Studio 2010 desteklemez.
 
-3. Azure Web rolü ve çalışan rolü için destek gerektiren [.NET 2.3 - VS 2012 için Azure SDK](http://go.microsoft.com/fwlink/?LinkId=323511) veya sonraki bir sürümü.
+1. Azure Web rolü ve çalışan rolü için destek gerektiren [.NET 2.3 - VS 2012 için Azure SDK](http://go.microsoft.com/fwlink/?LinkId=323511) veya sonraki bir sürümü.
 
-4. Azure Web rolü ve çalışan rolü için destek gerektiren [.NET 2.3 - VS 2013 için Azure SDK](http://go.microsoft.com/fwlink/?LinkId=323510) veya sonraki bir sürümü.
+1. Azure Web rolü ve çalışan rolü için destek gerektiren [.NET 2.3 - VS 2013 için Azure SDK](http://go.microsoft.com/fwlink/?LinkId=323510) veya sonraki bir sürümü.
 
-5. Django Şablon Düzenleyicisi'nde Visual Studio 2013 güncelleştirme 2 yükleyerek çözülmüş bilinen bazı sorunlar vardır.
+1. Django Şablon Düzenleyicisi'nde Visual Studio 2013 güncelleştirme 2 yükleyerek çözülmüş bilinen bazı sorunlar vardır.
 
-6. Windows 8 veya sonraki sürümünü gerektirir. Web için Visual Studio 2013 Express ekleme işlemi iletişim sahip değil, ancak Azure Web sitesi uzaktan hata ayıklama sunucu Gezgini'nde Attach hata ayıklayıcısı (Python) komutunu kullanarak yine de mümkündür. Uzaktan hata ayıklama gerektirir [.NET 2.3 - VS 2013 için Azure SDK](http://go.microsoft.com/fwlink/?LinkId=323510) veya sonraki bir sürümü.
+1. Windows 8 veya sonraki sürümünü gerektirir. Web için Visual Studio 2013 Express ekleme işlemi iletişim sahip değil, ancak Azure Web sitesi uzaktan hata ayıklama sunucu Gezgini'nde Attach hata ayıklayıcısı (Python) komutunu kullanarak yine de mümkündür. Uzaktan hata ayıklama gerektirir [.NET 2.3 - Visual Studio 2013 için Azure SDK](http://go.microsoft.com/fwlink/?LinkId=323510) veya sonraki bir sürümü.
 
-7. Windows 8 veya sonraki sürümünü gerektirir. Hata ayıklayıcısını (Python) Sunucu Gezgininde komut gerektirir [.NET 2.3 - VS 2013 için Azure SDK](http://go.microsoft.com/fwlink/?LinkId=323510) veya sonraki bir sürümü.
+1. Windows 8 veya sonraki sürümünü gerektirir. Hata ayıklayıcısını (Python) Sunucu Gezgininde komut gerektirir [.NET 2.3 - Visual Studio 2013 için Azure SDK](http://go.microsoft.com/fwlink/?LinkId=323510) veya sonraki bir sürümü.
 
-8. Windows 8 veya sonraki sürümünü gerektirir.
+1. Windows 8 veya sonraki sürümünü gerektirir.
 
 ## <a name="additional-resources"></a>Ek kaynaklar
 
-- [Kinect oyunlar PyKinect kullanarak Python ile yazma](https://github.com/Microsoft/PTVS/wiki/PyKinect) (GitHub wiki)
 - [IIS ve Python arasında Wfastcgı köprü](https://pypi.python.org/pypi/wfastcgi) (python.org)
 - [Microsoft Virtual Academy boş Python kursları](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
 - [Microsoft sanal Akademi üst Python sorular](https://aka.ms/mva-top-python-questions)

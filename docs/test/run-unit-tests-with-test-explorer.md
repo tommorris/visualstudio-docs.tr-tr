@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: e25d450eee8b404819df152a759d7238363d1a78
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: bf466db15c30a9763c6d7be363041ee3bfa14f7d
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 Visual Studio ya da üçüncü taraf birim testi projelerini birim testleri çalıştırma, testleri kategoriler halinde gruplandırabilirsiniz, test listesini filtrelemek ve oluşturmak, kaydetme ve çalma testleri çalıştırmak için test Gezgini'ni kullanın. Ayrıca testleri hata ayıklama ve test performans ve kod kapsamını çözümleme.  
@@ -48,7 +48,7 @@ Visual Studio ya da üçüncü taraf birim testi projelerini birim testleri çal
   
  Test projesi derlerken, testleri Test Gezgini'nde görünür. Test Gezgini görünür durumda değilse, seçin **Test** Visual Studio menüsünde, **Windows**ve ardından **Test Gezgini**.  
   
- ![Birim Test Gezgini](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Birim Test Gezgini](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Test Gezgini çalıştırmak, yazma ve testleri yeniden çalıştırmak gibi sonuçları varsayılan gruplar halinde görüntülenir. **başarısız testler**, **testleri geçti**, **atlandı testleri** ve  **Testler değil**. Test Gezgini testlerinizi grupları şekilde değiştirebilirsiniz.  
   

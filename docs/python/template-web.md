@@ -12,12 +12,14 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: b04bf8fcb72b9ea4578516dcd58fde35a6d4e347
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="python-web-project-templates"></a>Python web projesi şablonları
 
@@ -31,7 +33,7 @@ Visual Studio çerçeveleri kendilerini içermez. Projeye sağ tıklayıp seçer
 
 Bottle, Flask ve Django şablonları her başlangıç sitesi bazı sayfaları ve statik dosyaları içerir. Bu kodu çalıştırmak ve (burada bazı ayarları gereken ortamından elde edilebilir) sunucusu yerel olarak hata ayıklama yeterli olduğundan ve Microsoft Azure'a dağıtmak için (burada bir [WSGI uygulama](http://www.python.org/dev/peps/pep-3333/) nesnenin sağlanması gerekiyor).
 
-Bir proje çerçeveye özel şablonu oluştururken, PIP kullanarak gerekli paketleri yüklemenize yardımcı olması için bir iletişim kutusu görüntülenir. Ayrıca kullanmanızı öneririz bir [sanal ortam](python-environments.md#virtual-environments) doğru bağımlılıkları dahil; böylece web projeleri için yayımladığınızda, web sitenizi:
+Bir proje çerçeveye özel şablonu oluştururken, PIP kullanarak gerekli paketleri yüklemenize yardımcı olması için bir iletişim kutusu görüntülenir. Ayrıca kullanmanızı öneririz bir [sanal ortam](python-environments.md#global-and-virtual-environments) doğru bağımlılıkları dahil; böylece web projeleri için yayımladığınızda, web sitenizi:
 
 ![İletişim kutusu için bir proje şablonu paketleri gerekli](media/template-web-requirements-txt-wizard.png)
 

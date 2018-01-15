@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords: Domain-Specific Language, deletion
-ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
-caps.latest.revision: "23"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0eb1878df437e1767d5bfe49ce4794b5b2c243d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c51c44d47f24994e75ca91b4f4d8d7f2c9a805a6
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Silme Davranışını Özelleştirme
 Bir öğe genellikle silinmesi, ilgili öğeler de silinecek neden olur. Tüm ilişkiler ona bağlı ve herhangi bir alt öğe silindi. Bu davranış adlı *yayma silme*. Örneğin ek ilgili öğeler silinir düzenlemek silme yayma özelleştirebilirsiniz. Program kodunda yazarak delete yayma model durumuna bağlıdır yapabilirsiniz. Bir silme işlemi için yanıt gerçekleşmesi diğer değişiklikler de neden olabilir.  
@@ -78,7 +76,7 @@ Bir öğe genellikle silinmesi, ilgili öğeler de silinecek neden olur. Tüm il
 >  Program kodunu DSL tanımınızı eklemek için ayrı kod dosyasında oluşturma **Dsl** proje ve oluşturulan kod klasörü sınıflarda büyütmek için kısmi tanımları yazma. Daha fazla bilgi için bkz: [bir etki alanına özgü dil kişiselleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a>Bir silme kapanışı tanımlama  
- Silme işlemi sınıfını kullanır *YourModel***DeleteClosure** , bir başlangıç seçimi silmek için hangi öğelerin belirlemek için. Çağırır `ShouldVisitRelationship()` ve `ShouldVisitRolePlayer()` tekrar tekrar ilişkileri grafik taramasını. Bu yöntemleri geçersiz kılabilirsiniz. ShouldVisitRolePlayer bir bağlantı ve bağlantının rollerinden birini konumundaki öğe kimliği ile birlikte sağlanır. Aşağıdaki değerlerden birini döndürmesi gerekir:  
+ Silme işlemi sınıfını kullanır *YourModel *** DeleteClosure**, bir başlangıç seçimi silmek için hangi öğelerin belirlemek için. Çağırır `ShouldVisitRelationship()` ve `ShouldVisitRolePlayer()` tekrar tekrar ilişkileri grafik taramasını. Bu yöntemleri geçersiz kılabilirsiniz. ShouldVisitRolePlayer bir bağlantı ve bağlantının rollerinden birini konumundaki öğe kimliği ile birlikte sağlanır. Aşağıdaki değerlerden birini döndürmesi gerekir:  
   
 -   **VisitorFilterResult.Yes**- öğenin silinip silinmeyeceği ve walker denemeye devam etmemelisiniz öğesi diğer bağlantılar kullanıcının.  
   

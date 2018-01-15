@@ -9,20 +9,18 @@ ms.topic: article
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
-caps.latest.revision: "51"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2edee4658c952816fc961254aee2c3cccfbe7c4d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bc8bcec7b5484ad1065539b5860bae115dcb4fd0
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>İzlenecek yol: Özel Metin Şablonu Konağı Oluşturma
-A *metin şablonu**konak* sağlayan bir ortam sağlar *metin şablonu dönüştürme altyapısı* çalıştırmak için. Ana bilgisayar, motorun dosya sistemiyle etkileşimini yönetmekten sorumludur. Altyapısı veya *yönerge işlemcisi* bir dosya gerekiyor veya bir derleme bir kaynak ana bilgisayardan isteyebilir. Böylece, ana bilgisayar, istenen kaynağın yerini belirlemek amacıyla dizinlerde ve genel derleme önbelleğinde arama yapabilir. Daha fazla bilgi için bkz: [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).  
+A *metin şablonu ** konak* sağlayan bir ortam sağlar *metin şablonu dönüştürme altyapısı* çalıştırmak için. Ana bilgisayar, motorun dosya sistemiyle etkileşimini yönetmekten sorumludur. Altyapısı veya *yönerge işlemcisi* bir dosya gerekiyor veya bir derleme bir kaynak ana bilgisayardan isteyebilir. Böylece, ana bilgisayar, istenen kaynağın yerini belirlemek amacıyla dizinlerde ve genel derleme önbelleğinde arama yapabilir. Daha fazla bilgi için bkz: [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).  
   
  Özel bir sunucu kullanmak isterseniz yazabilirsiniz *metin şablonu dönüştürme* işlevinden dışında [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] veya özel araçlar işlevselliğini tümleştirmek istiyorsanız. Özel bir sunucu oluşturmak için öğesinden devralınan bir sınıf oluşturun <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Tek tek yöntemleri için belgelere bakın <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   

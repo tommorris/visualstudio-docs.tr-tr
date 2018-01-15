@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c865fd1d01f7bf0137c68010bcb850a7a8450680
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2006f565edbca8a859cd2c155645e47e083b5528
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-application-resources-net"></a>Uygulama kaynaklarını (.NET) yönetme
 
@@ -48,7 +48,6 @@ Seçin **kaynakları** sekmesi. Projenizi değil bir zaten içermelidir, Ekle ve
 Kaynakları farklı .NET projelerinde diğer proje türleri yönetilir. Kaynakları hakkında daha fazla bilgi için:
 
 - Evrensel Windows Platformu (UWP) uygulamaları, bkz: [uygulama kaynakları ve kaynak yönetim sistemi](/windows/uwp/app-resources/)
-- Windows 8.x uygulamaları görmek [uygulama kaynakları (HTML) tanımlama](https://msdn.microsoft.com/en-us/library/windows/apps/hh465228.aspx)
 - C++ projeleri bkz [kaynak dosyalarıyla çalışma](/cpp/windows/working-with-resource-files) ve [nasıl yapılır: kaynak oluşturma](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>Ayrıca bkz.

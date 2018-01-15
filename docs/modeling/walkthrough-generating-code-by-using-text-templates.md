@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
-ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
-caps.latest.revision: "11"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bbf11e020380114f12de3c6b71960faf80791ba6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 860fd5d60d35e5649b172a784a931ce413c7616e
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>İzlenecek Yol: Metin Şablonları Kullanarak Kod Oluşturma
 Kod oluşturma, kesin türü belirtilmiş ve kaynak modeli değiştiğinde henüz kolayca değiştirilebilmesi için program kodunu üretmek sağlar. Bunu daha esnektir, bir yapılandırma dosyası kabul tamamen genel bir program yazma alternatif teknik ile karşılaştırın ancak ne kod sonuçlarında kadar kolay okumak ve değiştirmek ya da bu tür iyi bir performans sahiptir. Bu kılavuzda Bu avantajı gösterir.  

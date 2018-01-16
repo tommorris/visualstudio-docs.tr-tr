@@ -1,5 +1,5 @@
 ---
-title: "Object.getOwnPropertySymbols işlevi (JavaScript) | Microsoft Docs"
+title: Object.getOwnPropertySymbols Function (JavaScript) | Microsoft Docs
 ms.custom: 
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -17,11 +17,11 @@ caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2bcddba77305e30e4c5ae13f6b1fc5c9385b7108
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2cc47ae365841332f11cb02da1469a4c9fff80c3
+ms.sourcegitcommit: abae48f476832f79cc2c5bac43bb1226d3fe4e48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="objectgetownpropertysymbols-function-javascript"></a>Object.getOwnPropertySymbols İşlevi (JavaScript)
 Bir nesnenin kendi Sembol Özellikleri döndürür. Bir nesnenin kendi sembol özellikleri doğrudan nesnede tanımlanır ve nesnenin prototip devralınmaz izinlerdir.  
@@ -53,7 +53,7 @@ obj[key] = 'data';
   
 var symbols = Object.getOwnPropertySymbols(obj);  
   
-console.log(s[0].toString());  
+console.log(symbols[0].toString());  
   
 // Output:  
 // undefined  

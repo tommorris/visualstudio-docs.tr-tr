@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
 ms.workload: multiple
-ms.openlocfilehash: 2719ecd60a68de795c51ec4363a9130e4da9019c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: d6df33919220852642bac195d47752ec88e467ee
+ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="naming-conventions-for-editorconfig"></a>EditorConfig için adlandırma kuralları
 
@@ -74,7 +74,7 @@ Aşağıdaki liste, izin verilen değerler gösterir ve virgül ile ayırarak bi
 - korumalı\_iç ya da protected_friend
 
 > [!NOTE]
-> Erişilebilirlik düzeyi adlandırma kuralınızın yoksayıldı, adlandırma kuralı, başka bir parçası olarak belirtmeniz gerekir.
+> Erişilebilirlik, hedeflediğiniz simge türü için geçerli değilse bir erişilebilirlik düzeyi adlandırma kuralınızın bir parçası olarak belirtmeyin. Örneğin, parametreleri erişilebilirlik düzeyleri yok. Erişilebilirlik düzeyi bir parametreyi adlandırma kuralı için belirtirseniz, adlandırma kuralınızın düzgün çalışmaz.
 
 ### <a name="symbol-modifiers"></a>Sembol değiştiricileri
 

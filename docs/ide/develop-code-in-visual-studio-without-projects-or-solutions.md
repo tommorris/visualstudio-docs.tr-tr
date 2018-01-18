@@ -7,41 +7,32 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.texteditor
 dev_langs:
 - JScript
 - VB
 - CSharp
 helpviewer_keywords:
-- code, editing
-- code editor, syntax coloring
-- code editor [Visual Studio]
-- brace matching
-- code editor, line numbers
-- code editor, brace matching
-- line numbers
-- syntax coloring
-- code editor
-- code files
-- code
-ms.assetid: cb53bb9b-5b76-4759-b9b8-7bf32298bcbb
-caps.latest.revision: "44"
+- open folder [Visual Studio]
+- anycode [Visual Studio]
+- projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 78b59ff3d8d6c54465ce29334c1dbe041b7a71be
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 252f09a8a2322bca4f94b9d631ca2c6da6b14824
+ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/18/2018
 ---
-# <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Visual Studio projeleri veya çözümler olmadan kod geliştirme  
+# <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Visual Studio projeleri veya çözümler olmadan kod geliştirme
+
 Visual Studio 2017 ', kod neredeyse tüm dizin tabanlı proje türünden Visual Studio'ya bir çözüm ya da proje dosyası gerek kalmadan açabilirsiniz. Bu, örneğin, kod projesi üzerinde Git bulabilir, kopyalamak ve ardından doğrudan Visual Studio'ya açın ve bir çözüm ya da proje oluşturmak zorunda kalmadan geliştirmeye başlamak anlamına gelir.  
 
 Yalnızca, kodu düzenleyebilir ve bu derleme Visual Studio'da, kodunuzu (gitmek için kullanarak komut gibi) de gidebilirsiniz. Kod söz dizimi renklendirme ve çoğu durumda, görünür temel deyim tamamlama içerir ve hata ayıklama, kesme noktaları ile tamamlayın. Bazı diller daha da fazla işlevsellik içerir. Bkz: [taşınabilir, özel düzenleyici ayarları oluşturmak](create-portable-custom-editor-options.md) daha fazla bilgi için.  
 
-## <a name="open-code-anywhere"></a>Herhangi bir yere açık kodu  
+## <a name="open-code-anywhere"></a>Herhangi bir yere açık kodu
+
 Aşağıdaki yollarla Visual Studio'ya kod açabilirsiniz:  
 
 - Visual Studio menü çubuğunda seçin **dosya**, **açık**, **klasörü**, kod konuma göz atın.  
@@ -52,7 +43,8 @@ Aşağıdaki yollarla Visual Studio'ya kod açabilirsiniz:
 
 - Açık kod GitHub deposuna kopyalanabilir.  
 
-### <a name="to-open-code-from-a-cloned-github-repo"></a>Kopyalanan bir GitHub deposuna kod açmak için  
+### <a name="to-open-code-from-a-cloned-github-repo"></a>Kopyalanan bir GitHub deposuna kod açmak için
+
 Aşağıdaki örnek, bir GitHub deposuna kopyalamak ve kendi kod Visual Studio'da açın gösterilmektedir. Bu yordamı takip etmek için GitHub hesabı ve Windows için Git sisteminize yüklenmiş olmalıdır. Bkz: [yeni bir GitHub hesabı için kaydolmadan](https://help.github.com/articles/signing-up-for-a-new-github-account/) ve [Windows için Git](https://git-for-windows.github.io/) daha fazla bilgi için.  
 
 1. Github'da kopyalamak istediğiniz depoya gidin.  
@@ -88,7 +80,8 @@ Aşağıdaki örnek, bir GitHub deposuna kopyalamak ve kendi kod Visual Studio'd
 |---------|---------|
 |  ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin")  |    [Bir video izlemek](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) nasıl kopyalamak ve kod'i GitHub deposuna Visual Studio'da açın. |
 
-## <a name="debug-your-code"></a>Kodunuzdaki hataları ayıklamanıza  
+## <a name="debug-your-code"></a>Kodunuzdaki hataları ayıklamanıza
+
 Visual Studio kodunuzda proje ya da çözüm olmadan ayıklayabilirsiniz. Bazı diller hata ayıklamak için geçerli bir belirtmeniz gerekebilir *başlatma dosyasını* kod projesinde, komut dosyası, yürütülebilir dosya veya proje gibi. Kodunuzdaki hataları ayıklamanıza visual Studio bu belirtilen kod önce çalıştırılır.  
 
 Araç çubuğundaki Başlat düğmesi yanındaki aşağı açılan liste kutusunu tüm öğeleri bir klasörde özellikle Seç yanı sıra Visual Studio algılar Başlangıç öğeleri listeler.  
@@ -107,31 +100,36 @@ Visual Studio şu anda aşağıdaki diller için hata ayıklama destekler:
 
 - Herhangi bir yürütülebilir dosya PDB (Python hata ayıklayıcı) dosyaları.  
 
-### <a name="to-debug-nodejs-and-python"></a>Node.js ve Python hata ayıklamak için:  
+### <a name="to-debug-nodejs-and-python"></a>Node.js ve Python hata ayıklamak için:
+
 1. Node.js veya Python araçlarını veya Visual Studio 2017 ve Node.js çalışma zamanı yükleyin.  
 
 1. Çözüm Gezgini'nde bir JavaScript dosyası bağlam menüsünde seçin **başlangıç öğesi olarak ayarla** komutu.  
 
 1. Seçin **F5** hata ayıklama başlamak için anahtar.  
 
-### <a name="to-debug-msbuild-projects"></a>MSBuild projelerine hata ayıklamak için  
+### <a name="to-debug-msbuild-projects"></a>MSBuild projelerine hata ayıklamak için
+
 1. Visual Studio menüsünde, **hata ayıklama**. Aşağı açılan menüsünde, projeyi seçin veya proje ve Çözüm Gezgini'nde başlangıç öğesi olarak görüntülenmesini istediğiniz dosyayı seçin.  
 
 1. Seçin **F5** hata ayıklama başlamak için anahtar.  
 
-### <a name="to-debug-executable-files"></a>Hata ayıklama yürütülebilir dosyaları için  
+### <a name="to-debug-executable-files"></a>Hata ayıklama yürütülebilir dosyaları için
+
 1. Visual Studio menüsünde, **hata ayıklama**. Aşağı açılan menüsünde, projeyi seçin veya proje ve Çözüm Gezgini'nde başlangıç öğesi olarak görüntülenmesini istediğiniz dosyayı seçin.  
 
 1. Seçin **F5** hata ayıklama başlamak için anahtar.  
 
 ## <a name="enable-custom-build-tools"></a>Özel derleme araçlarını etkinleştirme
+
 Visual Studio, birçok farklı dillerde çalıştırmak bildiği, ancak her şeyi çalıştırılacağını bilmiyor. Visual Studio dilinizi çalıştırma biliyorsa kodu hemen çalıştırabilirsiniz. Kodunuzu çalıştırmak deneyin ancak Visual Studio'nun nasıl çalıştırılacağı bilmeniz değil, bir bilgi çubuğu bir dosyada tanımlamanızı ister, başlangıç öğesi olarak davranacak şekilde codebase.  
 
 Visual Studio tanımıyor özel derleme araçları codebase kullanıyorsa, yine de daha sonra büyük olasılıkla çalıştırın ve bazı ek adımlar tamamlanana kadar Visual Studio kodda hata ayıklama mümkün olmaz. Geçerli bir yürütülebilir dosya türü, özel parametreler ve bağımsız değişkenler dil için gerekli yanı sıra bir derleyici gibi belirtmeniz gerekir. Bunu etkinleştirmek için Visual Studio sağlar *derleme görevleri*. Bir dil derlemek ve kendi kod çalıştırmak için gereken tüm öğeleri belirtmek için derleme görevi oluşturabilirsiniz.  
 
 Neredeyse istediğiniz her şeyi yapabilirsiniz rasgele derleme görevleri de oluşturabilirsiniz. Örneğin, bir klasör içeriğini listele veya bir dosyayı yeniden adlandırmak için bir görev oluşturabilirsiniz. Ya da derleme gibi şeyler ve belirli bağımsız değişkenler kullanarak projenize yapı daha hedeflenen özel derleme görevleri oluşturabilirsiniz. Aşağıdaki adımlar, her iki türdeki yapı görevler oluşturma gösterir.  
 
-#### <a name="to-create-an-arbitrary-build-task"></a>Rastgele derleme görevi oluşturmak için  
+#### <a name="to-create-an-arbitrary-build-task"></a>Rastgele derleme görevi oluşturmak için
+
 1. Dosya veya klasör görev istediğiniz Çözüm Gezgini'nde ve dosyanın veya klasörün (sağ tıklatma) bağlam menüsü, projenin seçin seçin **yapılandırma görevleri**.  
 
   ![Görevleri yapılandırma](./media/VSIDE_Code_Config_Task.png)
@@ -166,6 +164,7 @@ Neredeyse istediğiniz her şeyi yapabilirsiniz rasgele derleme görevleri de ol
 1. Yeni seçin **listesinde çıkışları** görevi çalıştırmak için komutu.  
 
 ### <a name="to-create-a-custom-build-task"></a>Özel derleme görevi oluşturmak için
+
 Bu yordamda, yapı ve kodunuzu temizlemek amacıyla nMake kullanan iki özel derleme görevler ekleyeceğiz.  
 
 1. Çözüm Gezgini'nde, daha sonra başlangıç öğesi olarak belirtmek istediğiniz projesinin bir dosya seçin. Dosyanın (sağ tıklatma) bağlam menüsünde, **yapılandırma görevleri**.  
@@ -222,15 +221,17 @@ Artık seçebilirsiniz **Başlat** düğmesini veya **F5** temelinizde çalışt
 
 Visual Studio destekler VSCode `$variable` ortam değişkenleri yanı sıra tasks.vs.json kökünde değiştirme (gibi `$env.var`) veya anahtarlar.  
 
-## <a name="specify-build-output"></a>Belirtin çıkış derleme  
+## <a name="specify-build-output"></a>Belirtin çıkış derleme
+
 Projenizi derlenmesi gerekiyorsa adlı ek bir etiket ekleyebilirsiniz `output` tasks.vs.json dosyasına kayıt yapar. Aşağıda bir örnek vardır.  
 
 `"output": "${workspaceRoot}\\bin\\hellomake.exe"`
 
 Çıktı konumunu belirtme Visual Studio Proje derleme çıktı nerede bulacağını bildirir.  
 
-## <a name="tasksvsjson-file-location"></a>Tasks.vs.JSON dosya konumu  
-Varsayılan olarak, tasks.vs.json dosya adlı gizli bir klasörde bulunan `.vs`. Visual Studio'da gizli dosyaları görüntülemek için seçin **tüm dosyaları göster** Çözüm Gezgini araç çubuğunda.  
+## <a name="tasksvsjson-file-location"></a>Tasks.vs.JSON dosya konumu
+
+Varsayılan olarak, tasks.vs.json dosya adlı gizli bir klasörde bulunan `.vs`. Visual Studio'da gizli dosyaları görüntülemek için seçin **tüm dosyaları göster** Çözüm Gezgini araç çubuğunda.
 
 ![Rastgele derleme görevi komutu](./media/VSIDE_Code_Tasks_FileLocation.png)
 
@@ -239,4 +240,5 @@ Kullanıcıların çoğunun genellikle kaynak denetimine iade istemediğiniz ç�
 Diğer .json dosyaları .vs klasörde mevcut olabilir, ancak (biri varsa) taşımanız gerekir yalnızca tasks.vs.json dosyasını ve launch.vs.json dosyasını olanlardır. Tasks.vs.json dosyasını Visual Studio'da derleme yapılandırırken launch.vs.json dosya Visual Studio hata ayıklayıcısı yapılandırır.  
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 [Kod ve Metin Düzenleyici'de kod yazma](../ide/writing-code-in-the-code-and-text-editor.md)

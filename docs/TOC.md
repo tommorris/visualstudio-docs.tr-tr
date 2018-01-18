@@ -84,6 +84,13 @@
 #### [Belirli Bir .NET Framework Sürümünü Hedefleme](ide/targeting-a-specific-dotnet-framework-version.md)
 ##### [Multi-Targeting’e Genel Bakış](ide/visual-studio-multi-targeting-overview.md)
 ##### [.NET Framework’ün Bir Sürümünü Hedefleme](ide/how-to-target-a-version-of-the-dotnet-framework.md)
+#### Proje ve Öğe Şablonları Oluşturma
+##### [Proje Şablonları Oluşturma](ide/how-to-create-project-templates.md)
+##### [Birden Çok Proje Şablonu Oluşturma](ide/how-to-create-multi-project-templates.md)
+##### [Öğe Şablonları Oluşturma](ide/how-to-create-item-templates.md)
+##### [Çok Dosyalı Şablonlar Oluşturma](ide/how-to-create-multi-file-item-templates.md)
+##### [Web Şablonları Oluşturma](ide/how-to-manually-create-web-templates.md)
+##### [Şablon Sorunlarını Giderme](ide/how-to-troubleshoot-templates.md)
 #### [Visual Studio IDE 64 Bit Desteği](ide/visual-studio-ide-64-bit-support.md)
 ### [Proje veya Çözümler Olmadan Geliştirme ("Açık Klasör")](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 ### [Düzenleyici’de Kod Yazma](ide/writing-code-in-the-code-and-text-editor.md)
@@ -95,7 +102,7 @@
 #### [Kodlamalar ve Satır Sonları](ide/encodings-and-line-breaks.md)
 ##### [Dosyaları Kodlamayla Kaydetme ve Açma](ide/how-to-save-and-open-files-with-encoding.md)
 #### [Anahat Oluşturma](ide/outlining.md)
-#### [Otomatik Olarak Kod Oluşturma](ide/code-generation-in-visual-studio.md)
+#### [Kod Oluşturma ve Düzeltme](ide/code-generation-in-visual-studio.md)
 ##### [Kod Parçacıkları](ide/code-snippets.md)
 ###### Kod Parçacıkları Kullanma
 ####### [Visual C# Kod Parçacıkları](ide/visual-csharp-code-snippets.md)
@@ -305,15 +312,9 @@
 ### [Proje ve Öğe Şablonlarını Özelleştirme](ide/customizing-project-and-item-templates.md)
 #### [Mevcut Şablonları Güncelleştirme](ide/how-to-update-existing-templates.md)
 #### [Bir Şablonda Parametreleri İkame Etme](ide/how-to-substitute-parameters-in-a-template.md)
-### Yeni Proje ve Öğe Şablonları Oluşturma
-#### [Proje Şablonları Oluşturma](ide/how-to-create-project-templates.md)
-#### [Birden Çok Proje Şablonu Oluşturma](ide/how-to-create-multi-project-templates.md)
-#### [Öğe Şablonları Oluşturma](ide/how-to-create-item-templates.md)
-#### [Çok Dosyalı Şablonlar Oluşturma](ide/how-to-create-multi-file-item-templates.md)
-#### [Web Şablonları Oluşturma](ide/how-to-manually-create-web-templates.md)
+### Proje ve Öğe Şablonları
 ### [Şablon Parametreleri](ide/template-parameters.md)
-### [Şablon Şeması Başvurusu (Genişletilebilirlik)](extensibility/visual-studio-template-schema-reference.md)
-### [Şablon Sorunlarını Giderme](ide/how-to-troubleshoot-templates.md)
+### [Şablon Şeması Başvurusu (Genişletilebilirlik)](extensibility/visual-studio-template-schema-reference.md?toc=/visualstudio/toc.json)
 ## Genel Kullanıcı Arabirimi Öğeleri
 ### [Çağrı Hiyerarşisi](ide/reference/call-hierarchy.md)
 ### [Değişiklikleri Önizleme](ide/preview-changes.md)

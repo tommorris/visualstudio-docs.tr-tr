@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2507ec49129692914ba6d11e4f651d5895b49c8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 462b164d0a6d3e9cba0f9698b7dba3b01aa5fee5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Profil Araçları ile veya hata ayıklayıcı olmadan çalıştırma
 Visual Studio şimdi sunar performans seçimine araçları, bazıları (örneğin, **CPU kullanımı** ve **bellek kullanımı**) ile veya hata ayıklayıcı olmadan çalıştırılabilir. Hata ayıklayıcı olmayan performans araçları araçları hata ayıklayıcı tümleşik hata ayıklama yapılandırmaları üzerinde çalıştırmak için tasarlanmış olsa da yayın yapılandırmalarında çalıştırmak üzere tasarlanmıştır.  
@@ -77,7 +77,7 @@ Visual Studio şimdi sunar performans seçimine araçları, bazıları (örneği
   
 2.  Üzerinde **hata ayıklama** menüsünde seçin **Performans Profil Oluşturucu...** (Kısayol tuşu: Alt + F2).  
   
-3.  Tanılama başlatma sayfasında oturumunda çalıştırmak için bir veya daha fazla Araçlar'ı seçin. Proje türü, işletim sistemi ve programlama dili için geçerli olan araçları görüntülenir. Bir tanılama aracı seçtiğinizde, aynı tanılama oturumunda çalıştırılamaz araçları seçimlerini devre dışı bırakılır. Seçimlerinizi bir C# Windows Evrensel uygulama için nasıl görünebileceği aşağıda verilmiştir:  
+3.  Tanılama başlatma sayfasında oturumunda çalıştırmak için bir veya daha fazla Araçlar'ı seçin. Proje türü, işletim sistemi ve programlama dili için geçerli olan araçları görüntülenir. Bir tanılama aracı seçtiğinizde, aynı tanılama oturumunda çalıştırılamaz araçları seçimlerini devre dışı bırakılır. Bir C# UWP uygulaması için yaptığınız seçimlere nasıl görünebileceği aşağıda verilmiştir:  
   
      ![Tanılama araçları seçin](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
@@ -123,7 +123,7 @@ Visual Studio şimdi sunar performans seçimine araçları, bazıları (örneği
  ![Internet Explorer'da görüntülemek için URL'yi belirtin](../profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Uzaktan Hata Ayıklama  
- Tanılama oturumu uzak PC veya tablet üzerinde çalışan Visual Studio uzak Araçlar yüklendiğinden ve çalıştığından hedefte uzak olmasını gerektirir. Masaüstü uygulamaları için bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md).  Windows Evrensel uygulamaları için bkz: [uzaktaki bir makinede çalıştırın UWP uygulamaları](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+ Tanılama oturumu uzak PC veya tablet üzerinde çalışan Visual Studio uzak Araçlar yüklendiğinden ve çalıştığından hedefte uzak olmasını gerektirir. Masaüstü uygulamaları için bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md).  UWP uygulamalar için bkz: [uzaktaki bir makinede çalıştırın UWP uygulamaları](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Blog gönderileri ve tanılama geliştirme ekibi MSDN makaleleri  
  [MSDN dergisi: Visual Studio 2015'te hata ayıklama sırasında performansını çözümleme](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  

@@ -1,7 +1,7 @@
 ---
 title: "Tetiklemek nasıl askıya alma, sürdürme ve UWP uygulamaları hata ayıklama sırasında arka plan olaylarını | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,17 +13,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: 824ff3ca-fedf-4cf5-b3e2-ac8dc82d40ac
 caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Tetiklemek nasıl askıya alma, sürdürme ve Visual Studio UWP uygulamalarında hata ayıklama sırasında arka plan olayları
 Ne zaman değil ayıkladığınız, Windows **işlem yaşam süresi Management** (PLM) denetimleri, uygulamanızın yürütme durumu — başlatma, askıya alma, sürdürme ve uygulama yanıt kullanıcı eylemleri ve aygıtın durumu olarak sonlandırılıyor. Hata ayıklama yaptığınız Windows bu etkinleştirme olayları devre dışı bırakır. Bu konu, bu olayları hata ayıklayıcısında yangın açıklar.  
@@ -31,19 +30,6 @@ Ne zaman değil ayıkladığınız, Windows **işlem yaşam süresi Management**
  Bu konu ayrıca hata ayıklama açıklar **arka plan görevleri**. Arka plan görevleri bile, uygulama çalışmıyorken belirli işlemlerin bir arka plan işlemi gerçekleştirmenize olanak sağlar. Hata ayıklama modunda uygulamanızı koymak için hata ayıklayıcı kullanabilirsiniz ve ardından — kullanıcı arabirimini başlatmadan — başlatın ve hata ayıklama arka plan görevi.  
   
  İşlem ömrü yönetimi ve arka plan görevleri hakkında daha fazla bilgi için bkz: [devam ettirme, başlatma ve çoklu](/windows/uwp/launch-resume/index).  
-  
-##  <a name="BKMK_In_this_topic"></a>Bu konudaki  
- [Tetikleyici işlem yaşam süresi Management olayları](#BKMK_Trigger_Process_Lifecycle_Management_events)  
-  
- [Tetikleyici arka plan görevleri](#BKMK_Trigger_background_tasks)  
-  
--   [Tetikleyici bir standart hata ayıklama oturumu bir arka plan görev olayı](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
-  
--   [Uygulama çalışmıyorken tetikleyicinin arka plan görevi](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
-  
- [İşlem yaşam süresi Management olaylarını tetiklemek ve yüklü bir uygulamadan görevleri arka plan](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
-  
- [Arka plan görevi etkinleştirmesi hatalarını tanılama](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a>Tetikleyici işlem yaşam süresi Management olayları  
  Kullanıcı veya Windows düşük güç durumu girdiğinde çıktığınızda geçtiğinde Windows uygulamanızı askıya alabilirsiniz. Yanıt verebilirsiniz `Suspending` olay ilgili uygulama ve kullanıcı verilerini kalıcı depolama alanına kaydetmek ve kaynakları serbest bırakmak için. Ne zaman bir uygulama sürdürüldü gelen **askıya** durumunda, geçirilmeden **çalıştıran** durum ve onu askıya alındığında, bulunduğu gelen devam eder. Yanıt verebilirsiniz `Resuming` geri yüklemek veya uygulama durumu ve kaynakları geri kazanmak için olay.  
@@ -88,7 +74,7 @@ Ne zaman değil ayıkladığınız, Windows **işlem yaşam süresi Management**
   
 2.  Başlangıç projesi için hata ayıklama özellik sayfası açın. Çözüm Gezgini'nde proje seçin. Üzerinde **hata ayıklama** menüsünde seçin **özellikleri**.  
   
-     C++ projeleri için genişletmeniz gerekebilir **yapılandırma özellikleri** ve ardından **hata ayıklama**.  
+     C++ ve JavaScript projelerde genişletin **yapılandırma özellikleri** ve ardından **hata ayıklama**.  
   
 3.  Aşağıdakilerden birini yapın:  
   
@@ -109,12 +95,12 @@ Ne zaman değil ayıkladığınız, Windows **işlem yaşam süresi Management**
      ![Askıya alma, sürdürme, sonlandırmak ve arka plan görevleri](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a>İşlem yaşam süresi Management olaylarını tetiklemek ve yüklü bir uygulamadan görevleri arka plan  
- Ayıklayıcıya yüklü olan bir uygulama yüklemek için yüklü uygulama hata ayıklama iletişim kutusunu kullanın. Örneğin, Microsoft Store yüklü olduğu bir uygulama hatalarını ayıklama veya uygulama için kaynak dosyaları, ancak uygulama için bir Visual Studio projesini değil varsa, bir uygulama hata ayıklama. Hata ayıklama modunda Visual Studio makinede veya uzak cihazda ya da hata ayıklama modunda çalıştırılması ancak değil başlatmak için uygulama ayarlamak için bir uygulama Başlat yüklü uygulama hata ayıklama iletişim kutusu sağlar. Bkz: **Hata Ayıklayıcısı'ndaki yüklü bir uygulamayı Başlat** bölümünü [UWP uygulamasında hata ayıklama oturumu Başlat](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger).
+ Kullanım **yüklü uygulama paketi Debug** ayıklayıcıya yüklü olan bir uygulama yüklemek için iletişim kutusu. Örneğin, Microsoft Store yüklü olduğu bir uygulama hatalarını ayıklama veya uygulama için kaynak dosyaları, ancak uygulama için bir Visual Studio projesini değil varsa, bir uygulama hata ayıklama. **Yüklü uygulama paketi Debug** iletişim kutusu sağlar hata ayıklama modunda Visual Studio makinede veya uzak cihazda ya da hata ayıklama modunda çalıştırılması ancak değil başlatmak için uygulama ayarlamak için bir uygulamayı başlatın. Daha fazla bilgi için bkz: [yüklü uygulama paketi Debug](../debugger/debug-installed-app-package.md).
   
  Uygulama ayıklayıcıya yüklendikten sonra yukarıda açıklanan yordamlardan herhangi birini kullanabilirsiniz.  
   
 ##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a>Arka plan görevi etkinleştirmesi hatalarını tanılama  
- Windows Olay Görüntüleyicisi'nde tanılama günlükleri arka plan altyapısı tanılamak ve arka plan görev hataları gidermek için kullanabileceğiniz ayrıntılı bilgiler içeriyor. Günlüğünü görüntülemek için:  
+ Windows Olay Görüntüleyicisi'nde tanılama günlükleri arka plan altyapısı tanılamak ve arka plan görev hataları gidermek için kullanabileceğiniz ayrıntılı bilgiler içerir. Günlüğünü görüntülemek için:  
   
 1.  Olay Görüntüleyicisi'ni uygulamasını açın.  
   
@@ -127,5 +113,5 @@ Ne zaman değil ayıkladığınız, Windows **işlem yaşam süresi Management**
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio ile UWP uygulamaları test etme](../test/testing-store-apps-with-visual-studio.md)   
  [Visual Studio uygulamalarında hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md)   
- [Uygulama yaşam döngüsü](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
- [Başlatma, sürdürme ve çoklu](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle)   
+ [Başlatma, sürdürme ve çoklu](/windows/uwp/launch-resume/index)

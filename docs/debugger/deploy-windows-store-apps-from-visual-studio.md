@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio'dan UWP uygulamaları dağıtma | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,20 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: ef3a0f36-bfc9-4ca0-aa61-18261f619bff
 caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio'dan UWP uygulamaları dağıtma
-![Windows için yalnızca geçerlidir](../debugger/media/windows_only_content.png "windows_only_content")  
   
  Visual Studio dağıtım işlevselliği oluşturur ve Visual Studio ile hedef cihazda oluşturulan UWP uygulamaları kaydeder. Tam olarak nasıl uygulama kayıtlı hedef aygıt yerel veya uzak olduğuna bağlıdır:  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 Bir Windows 10 uzak cihazda etkinleştirmeniz gerekir [geliştirici modunu](/windows/uwp/get-started/enable-your-device-for-development). Oluşturanın güncelleştirme çalıştıran Windows 10 cihazlarda ya da uygulamanızı dağıtma daha sonra uzak Araçlar otomatik olarak yüklenir. Daha fazla bilgi için bkz: [yüklü uygulama paketi Debug](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> Windows 8.1 ve Windows 10 öncesi-oluşturanın güncelleştirme sürümleri, Visual Studio için Uzak araçları uzak cihazda yüklü olmalıdır ve uzaktan hata ayıklayıcı çalıştırıyor olması gerekir. Windows 8.1 bir geliştirici lisansı de yüklemeniz gerekir.
+> Pre-oluşturanın güncelleştirme sürümleri, Windows 10 için Visual Studio uzak Araçlar uzak cihazda yüklü olmalıdır ve uzaktan hata ayıklayıcı çalıştırıyor olması gerekir.
   
 Dağıtım uzaktan hata ayıklayıcı ağ kanalının uzak aygıta uygulama dosyaları göndermek için kullanır.  
   
@@ -117,5 +115,6 @@ Dağıtım uzaktan hata ayıklayıcı ağ kanalının uzak aygıta uygulama dosy
 -   JavaScript ve hata ayıklama özellik sayfası **uygulama Başlat** değeri **Evet**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yüklü uygulama paketi debug](../debugger/debug-installed-app-package.md).   
+ [Gelişmiş uzaktan dağıtım seçenekleri](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [Yüklü uygulama paketi hata ayıklama](../debugger/debug-installed-app-package.md)   
  [Visual Studio'dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md)

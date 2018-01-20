@@ -7,28 +7,23 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - performance, JavaScript [UWP apps]
 - performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
 - profiler, JavaScript [UWP apps]
-ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
 caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71e8c18401b341ef1e1b24c35dc39e80758c31d2
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Evrensel Windows uygulamaları, HTML UI yanıtlama hızını çözümleme
 Bu konu, UI yanıtlama hızı Profil Oluşturucusu, Evrensel Windows uygulamaları için kullanılabilir bir performans aracını kullanarak uygulamalarınızı performans sorunlarını yalıtma açıklar.  
@@ -42,9 +37,9 @@ Bu konu, UI yanıtlama hızı Profil Oluşturucusu, Evrensel Windows uygulamalar
 -   Beklenenden daha az sıklıkta visual güncelleştirmeler. Kullanıcı Arabirimi iş parçacığı kesintisiz kare hızı korumak için çok meşgul olduğundan bu oluşur. Örneğin, kullanıcı Arabirimi iş parçacığı meşgul ise, çerçeve bırakılabilir. Bazı kullanıcı Arabirimi iş parçacığı resim çözme, ağ istekleri ve paints de visual güncelleştirmelerinin sıklığını sınırlayabilirsiniz gibi çalışır. (Tüm boyama kullanıcı Arabirimi iş parçacığı üzerinde gerçekleştirilir.)  
   
 ##  <a name="RunningProfiler"></a>HTML UI yanıtlama hızı aracını çalıştırın  
- Bir çalışma UWP veya Windows 8.1 uygulamasını Visual Studio'da Aç veya Windows 8 çalıştıran bir bilgisayara veya üzeri olduğunda, HTML UI yanıtlama hızı Aracı'nı kullanabilirsiniz.  
+ Visual Studio'da açın bir çalışma UWP uygulaması varsa, HTML UI yanıtlama hızı aracını kullanabilirsiniz.  
   
-1.  Uygulama Visual Studio'dan üzerinde çalıştırıyorsanız, **standart** araç, **hata ayıklamayı Başlat** listesinde, bir Windows Phone Öykünücüler gibi dağıtım hedefini seçin **yerel makine** , **Simulator**, veya **uzak makine**.  
+1.  Uygulama Visual Studio'dan üzerinde çalıştırıyorsanız, **standart** araç, **hata ayıklamayı Başlat** listesinde, bir dağıtım hedef gibi seçin **yerel makine** veya **Aygıt**.  
   
 2.  Üzerinde **hata ayıklama** menüsünde seçin **Performans Profil Oluşturucu...** .  
   
@@ -115,7 +110,7 @@ Bu konu, UI yanıtlama hızı Profil Oluşturucusu, Evrensel Windows uygulamalar
   
      Aşağıdaki çizimde vurgulanan ilgi alanı ile CPU kullanım grafiği gösterir.  
   
-     ![CPU kullanım grafiği](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+     ![CPU utilization graph](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
 11. Kullanım [zaman çizelgesi ayrıntıları görüntüleyin](#TimelineDetails) çok sık çalışıyor ya da tamamlamak için çok fazla zaman ayırdığınız olaylar hakkında ayrıntılı bilgi almak için. Örneğin, aşağıdakiler için bakın:  
   
@@ -203,7 +198,7 @@ if (performance.mark && performance.measure) {
   
  Bu örnek, CPU kullanım grafiği nasıl göründüğünü gösterir:  
   
- ![CPU kullanım grafiği](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+ ![CPU utilization graph](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
  Bu grafiğe kullanın:  
   

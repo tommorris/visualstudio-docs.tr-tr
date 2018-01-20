@@ -13,16 +13,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: eabbb315d03a6ba69d80d46276b0b6dff5846693
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cfe16da805ec8a43af8bed0c7e112e589d060bc4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-cpu-usage"></a>CPU kullanımı analiz
 Uygulamanızda performans sorunları araştırmak gerektiğinde başlatmak için uygun bir yerdir nasıl CPU kullandığı anlamaktır. **CPU kullanımı** aracı gösterir, CPU Visual C++, Visual C# yürütme süresi yeri harcıyorsa / Visual Basic ve JavaScript kodu. Visual Studio 2015 güncelleştirme 1'de başlayarak, hata ayıklayıcı ayrılmadan CPU kullanımı işlevi başına dökümünü görebilirsiniz. Hata ayıklama sırasında CPU açma ve kapatma profil açın ve yürütme, örneğin bir kesme noktasında durdurulduğunda sonuçları görüntüleyin.  
   
-Çalıştıran ve tanılama oturumunuz yönetmek için birkaç seçeneğiniz vardır. Örneğin, çalıştırabilirsiniz **CPU kullanımı** aracı yerel veya uzak makinelerde veya üzerinde bir simulator veya öykünücü. Visual Studio'da çalışan bir uygulama için bağlı, açık bir projesi performansını analiz ya da Microsoft Store yüklü bir uygulamayı başlatın. Daha fazla bilgi için bkz: [çalıştırmak profil oluşturma araçları ile veya olmadan hata ayıklayıcı](../profiling/running-profiling-tools-with-or-without-the-debugger.md). UWP uygulama performansını analiz için bkz [çözümleyin CPU'nun bir evrensel Windows uygulaması (UWP) içinde](analyze-cpu-usage-in-a-windows-universal-app.md). 
+Çalıştıran ve tanılama oturumunuz yönetmek için birkaç seçeneğiniz vardır. Örneğin, çalıştırabilirsiniz **CPU kullanımı** aracı yerel veya uzak makinelerde veya üzerinde bir simulator veya öykünücü. Visual Studio'da çalışan bir uygulama için bağlı, açık bir projesi performansını analiz ya da Microsoft Store yüklü bir uygulamayı başlatın. Daha fazla bilgi için bkz: [çalıştırmak profil oluşturma araçları ile veya olmadan hata ayıklayıcı](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Burada, toplamak ve yayın derlemeleri ile CPU kullanımını analiz etme gösteriyoruz. Hata ayıklama sırasında CPU kullanımını analiz etmek için bkz: [performans profili oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md). 
   

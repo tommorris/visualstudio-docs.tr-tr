@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5317c06dc5ff6515627e562d576785c2ff25a98a
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Anlık görüntü hata ayıklayıcı kullanarak canlı ASP.NET Azure uygulamalarının hatalarını ayıklama
 
@@ -47,9 +47,12 @@ Ayrıca, anlık görüntü hata ayıklayıcı yalnızca Visual Studio 2017 Enter
 
    ![Anlık görüntü hata ayıklayıcıyı başlatma](../debugger/media/snapshot-launch.png "anlık görüntü hata ayıklayıcıyı başlatma")
 
-    Seçtiğiniz ilk kez **Attach anlık görüntü hata ayıklayıcı**, Azure App Service üzerinde anlık görüntü hata ayıklayıcı yüklemeniz istenir. Bu yükleme, Azure App Service yeniden başlatılmasını gerektirir. 
+    Seçtiğiniz ilk kez **Attach anlık görüntü hata ayıklayıcı**, Azure App Service üzerinde anlık görüntü hata ayıklayıcı site uzantısı yüklemeniz istenir. Bu yükleme, Azure App Service yeniden başlatılmasını gerektirir. 
 
    Visual Studio hata ayıklama modu anlık sunulmuştur.
+
+    > [!NOTE]
+    > Application Insights site uzantısı, anlık görüntü hata ayıklama de destekler. Lütfen bir "uzantısı güncel site" hata iletisiyle karşılaşırsanız bkz [sorun giderme ipuçları ve anlık görüntü hata ayıklama için bilinen sorunlar](../debugger/debug-live-azure-apps-troubleshooting.md) ayrıntıları yükseltme.
 
    ![Hata ayıklama modu anlık görüntü](../debugger/media/snapshot-message.png "anlık görüntü hata ayıklama modu")
 
@@ -130,7 +133,7 @@ Bir snappoint gelindiğinde bir anlık görüntü alma ek olarak, bir ileti otur
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Bir anlık görüntü görüntülerken değişkenleri incelemek öğrenmek için bkz: [Debbuger özelliği Turu](../debugger/debugger-feature-tour.md).
+- Bir anlık görüntü görüntülerken değişkenleri incelemek öğrenmek için bkz: [hata ayıklayıcı özelliği Turu](../debugger/debugger-feature-tour.md).
 - Görünüm [anlık görüntü hata ayıklama hakkında SSS](../debugger/debug-live-azure-apps-faq.md).
 - Görünüm [sorun giderme ipuçları ve anlık görüntü hata ayıklama için bilinen sorunlar](../debugger/debug-live-azure-apps-troubleshooting.md).
 - Uygulamanızı bir özel durum geldiğinde anlık görüntüleri Application Insights'ta görüntülemek istiyorsanız, bunu yapabilirsiniz. Daha fazla bilgi için bkz: [anlık görüntü özel durumları .NET uygulamalarında hata ayıklama](/azure/application-insights/app-insights-snapshot-debugger). Application Insights yanı sıra Azure App Service Service Fabric uygulamaları destekler.

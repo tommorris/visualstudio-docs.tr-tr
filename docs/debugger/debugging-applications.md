@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: efd4ca5457a1175b19deddfd4194091dbcb2864e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cb0ed99e341e89aaaa295d2fc4a4cf25f726e2f5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debugging-applications"></a>Uygulamalarda Hata Ayıklama
 Aşağıdaki bölümler, belirli uygulama türleri için hata ayıklama ile ilgilidir. Farklı uygulama türleri ve farklı dillerde farklı ayarlar ve teknikler gerektirir ve mevcut farklı ayıklanacak gereken sorunlar.  
@@ -31,7 +31,7 @@ Aşağıdaki bölümler, belirli uygulama türleri için hata ayıklama ile ilgi
   
 |||  
 |-|-|  
-|[UWP ve Windows 8.1 uygulamaları hata ayıklama](../debugger/debugging-windows-store-and-windows-universal-apps.md)|UWP uygulamaları hata ayıklamak açıklar.|  
+|[UWP uygulamalarında hata ayıklama](../debugger/debugging-windows-store-and-windows-universal-apps.md)|UWP uygulamaları hata ayıklamak açıklar.|  
 |[Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)|(Visual C#, Visual Basic ve F3) yönetilen kodda hata ayıklama açıklar.|  
 |[Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)|Farklı türde bir yerel C++ uygulamalarında hata ayıklama açıklar.|  
 |[GPU kodunda hata ayıklama](../debugger/debugging-gpu-code.md)|Grafik işlemci birimi (GPU) üzerinde çalışan C++ kod hatalarını ayıklamak açıklar.|  

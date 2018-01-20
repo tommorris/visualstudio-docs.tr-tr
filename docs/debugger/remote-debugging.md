@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 94ce04f63870bb6ce9a40658c670c5b277cc675e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 Başka bir bilgisayara dağıtılan bir Visual Studio uygulama ayıklayabilirsiniz. Bunu yapmak için Visual Studio uzaktan hata ayıklayıcı kullanın.
@@ -34,12 +34,11 @@ Uzaktan hata ayıklama hakkında ayrıntılı yönergeler için şu konulara bak
 
 |Senaryo|Bağlantı|
 |-|-|-|
-|ASP.NET|[Uzaktan hata ayıklama ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) veya [uzaktan ASP.NET hata ayıklama](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C# veya Visual Basic|[Uzaktan bir C# veya Visual Basic projesinde hata ayıklama](../debugger/remote-debugging-csharp.md)|
-|C++|[Uzaktan hata ayıklama C++ projesi](../debugger/remote-debugging-cpp.md)|
+|Azure|[Azure App Service'te (anlık görüntü hata ayıklayıcı) ASP.NET hata ayıklama](../debugger/debug-live-azure-applications.md), [uzaktan hata ayıklama Azure üzerinde ASP.NET](../debugger/remote-debugging-azure.md), veya [Azure Service Fabric uygulama hata ayıklama](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
+|ASP.NET|[Uzaktan hata ayıklama ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) veya [uzaktan hata ayıklama ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|C# veya Visual Basic|[Uzaktan hata ayıklama bir C# veya Visual Basic proje](../debugger/remote-debugging-csharp.md)|
+|C++|[C++ projesinin hatalarını uzaktan ayıklama](../debugger/remote-debugging-cpp.md)|
 |Evrensel Windows uygulamaları (UWP)|[Bir uzak makinede UWP uygulamaları çalıştırma](../debugger/run-windows-store-apps-on-a-remote-machine.md) ve [yüklü uygulama paketi hata ayıklama](../debugger/debug-installed-app-package.md)|
-|Azure|[Azure üzerinde uzaktan hata ayıklama ASP.NET](remote-debugging-azure.md)|
-|Azure Service Fabric|[Uzak bir Service Fabric uygulaması hata ayıklama](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).|
 
 Yalnızca uzaktan hata ayıklayıcı karşıdan yükleyip istiyorsanız ve senaryonuz için hiçbir ek yönergeler gerekmez, bu makaledeki adımları izleyin.
   
@@ -53,9 +52,9 @@ Uzaktan hata ayıklayıcı bulabilirsiniz (**msvsmon.exe**) Visual Studio Commun
 
 1. Bul **msvsmon.exe** Visual Studio sürümünüzle eşleşen dizininde. Visual Studio Enterprise 2017 için:
 
-      **Program dosyaları (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      **Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       
-      **Program dosyaları (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
+      **Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
 
 2. Paylaşım **uzaktan hata ayıklayıcı** Visual Studio bilgisayardaki klasör.
 

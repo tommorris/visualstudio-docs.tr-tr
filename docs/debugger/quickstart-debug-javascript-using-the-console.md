@@ -1,5 +1,5 @@
 ---
-title: "Hızlı Başlangıç: Konsolu kullanarak JavaScript hata ayıklama | Microsoft Docs"
+title: "Konsolu kullanarak JavaScript hata ayıklama | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,31 +8,25 @@ ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.WebClient.JavaScriptConsole
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - JavaScript Console
 - JavaScript debugging
 - debugging, JavaScript
-ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 93deb8c5a8d4d17597db0fa2f93f097b4839e88b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a3069f0528d346a2168bbb37535089d00e23aa15
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="quickstart-debug-javascript-using-the-console"></a>Hızlı Başlangıç: Konsolu kullanarak JavaScript hata ayıklama
-![Windows ve Windows Phone için geçerlidir](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio'da Konsolu kullanarak JavaScript hata ayıklama
   
- JavaScript Konsolu penceresi ile etkileşim ve JavaScript kullanarak oluşturulan UWP uygulamaları hata ayıklamak için kullanabilirsiniz. Bu özellikler UWP uygulamaları için desteklenen [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] uygulamalar, Windows Phone uygulamaları ve Apache Cordova için Visual Studio Araçları kullanılarak oluşturulmuş uygulamalar. Konsol komut başvurusu için bkz: [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).  
+ JavaScript Konsolu penceresi ile etkileşim ve JavaScript kullanarak oluşturulan UWP uygulamaları hata ayıklamak için kullanabilirsiniz. Bu özellikler, UWP uygulamaları ve Apache Cordova için Visual Studio Araçları kullanılarak oluşturulan uygulamaları için desteklenir. Konsol komut başvurusu için bkz: [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).  
   
  JavaScript Konsolu penceresi sağlar:  
   
@@ -48,36 +42,26 @@ ms.lasthandoff: 01/10/2018
   
 -   Ekranı temizleme gibi diğer görevleri gerçekleştirin. Bkz: [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md) komutları tam listesi için.  
   
- Bu konuda:  
-  
--   [JavaScript Konsolu penceresi kullanarak hata ayıklama](#InteractiveConsole)  
-  
--   [Etkileşimli hata ayıklama ve kesme modu](#InteractiveDebuggingBreakMode)  
-  
--   [Tek satırlı modu ve JavaScript konsol penceresinde çok satırlı modu](#SinglelineMultilineMode)  
-  
--   [Komut dosyası yürütme bağlamı değiştirme](#Switching)  
-  
 > [!TIP]
->  JavaScript Konsolu penceresi kapatıldığında kaldığınızda **hata ayıklama**>**Windows** > **JavaScript Konsolu** yeniden açın. Betik hata ayıklama oturumunun yalnızca sırasında penceresi görüntülenir.  
+>  JavaScript Konsolu penceresi kapatıldığında kaldığınızda **hata ayıklama**> **Windows** > **JavaScript Konsolu** yeniden açın. Betik hata ayıklama oturumunun yalnızca sırasında penceresi görüntülenir.  
   
  JavaScript Konsolu penceresi kullanarak, hata ayıklayıcı durdurup olmadan uygulamanız ile etkileşebilirsiniz. Daha fazla bilgi için bkz: [bir uygulama (JavaScript) yenileme](../debugger/refresh-an-app-javascript.md). DOM Gezgini'ni kullanarak ve kesme noktaları, ayarlama gibi özellikleri, hata ayıklama diğer JavaScript ilişkin bilgi için bkz: [hızlı başlangıç: hata ayıklama HTML ve CSS](../debugger/quickstart-debug-html-and-css.md) ve [Visual Studio uygulamalarında hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InteractiveConsole"></a>JavaScript Konsolu penceresi kullanarak hata ayıklama  
  Aşağıdaki adımları oluşturma bir `FlipView` uygulama ve etkileşimli olarak kodlama hatası JavaScript hata ayıklama gösterilmektedir.  
   
-> [!CAUTION]
+> [!NOTE]
 >  Örnek uygulama burada bir UWP uygulaması olur. Ancak, burada açıklanan konsol özellikleri, Apache Cordova için Visual Studio Araçları kullanılarak oluşturulan uygulamalar için de geçerlidir.  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>JavaScript kodu FlipView uygulamasında hata ayıklamak için  
   
 1.  Seçerek Visual Studio'da yeni bir çözüm oluşturmak **dosya** > **yeni proje**.  
   
-2.  Seçin **JavaScript** > **mağazası uygulamaları**, ya da seçin **Windows uygulamalarını** veya **Windows Phone uygulamaları**ve ardından seçin **Boş uygulama**.  
+2.  Seçin **JavaScript** > **Windows Evrensel**ve ardından **WinJS uygulama**.  
   
 3.  Proje için bir ad yazın `FlipViewApp`ve seçin **Tamam** uygulama oluşturmak için.  
   
-4.  Default.html gövde öğesinde varolan HTML kodu bu kod ile değiştirin:  
+4.  İndex.html gövde öğesinde varolan HTML kodu bu kod ile değiştirin:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -133,9 +117,9 @@ ms.lasthandoff: 01/10/2018
   
         function updateImages() {  
   
-            pages.push(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.push(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.push(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+            pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+            pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+            pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
   
         };  
   
@@ -153,7 +137,7 @@ ms.lasthandoff: 01/10/2018
     })();  
     ```  
   
-7.  Hata ayıklama hedefi seçili değilse, seçin **Simulator** veya Windows Phone için **öykünücüsü 8.1 WVGA 4 inç 512MB** bulunan aşağı açılan listesinde yanına **aygıt** düğmesini **hata ayıklama** araç çubuğu:  
+7.  Hata ayıklama hedefi seçili değilse, seçin **yerel makine** bulunan aşağı açılan listesinde yanına **aygıt** düğmesini **hata ayıklama** araç çubuğu:  
   
      ![Select hata ayıklama hedef listesi](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -161,7 +145,7 @@ ms.lasthandoff: 01/10/2018
   
      Uygulama çalışır ancak görüntüleri eksik. JavaScript konsol penceresinde APPHOST hatalarını görüntüler eksik olduğunu gösterir.  
   
-9. İle `FlipView` benzeticisi veya türü Phone öykünücüsü çalışan uygulama `Data.items` giriş penceresi istemi konsolunda (yanındaki ">>" simgesi) ve Enter tuşuna basın.  
+9. İle `FlipView` çalışan, uygulama türü `Data.items` giriş penceresi istemi konsolunda (yanındaki ">>" simgesi) ve Enter tuşuna basın.  
   
      Görselleştirici için `items` nesne konsol penceresinde görünür. Bu belirten `items` nesne örneği ve geçerli betik bağlamda kullanılamıyor. Konsol penceresinde özellik değerlerini görüntülemek (veya ok tuşlarını kullanın) için bir nesne düğümleri arasında tıklatabilirsiniz. Aşağı uygulamasına tıklarsanız `items._data` nesnesi resimde gördüğünüz gibi kendi görüntü kaynağı başvuruları beklendiği gibi yanlış olduğunu göreceksiniz. Varsayılan görüntü (logo.png) nesnesinde hala mevcut olduğunda ve beklenen görüntülerle interspersed eksik görüntüler.  
   
@@ -174,9 +158,9 @@ ms.lasthandoff: 01/10/2018
 11. Hata ayıklama oturumu durdurmadan etkileşimli olarak bu sorunu gidermek için default.js açın ve bu koddan seçin `updateImages` işlevi:  
   
     ```javascript  
-    pages.push(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-    pages.push(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-    pages.push(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+    pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+    pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
     ```  
   
      Bu kodu kopyalayıp giriş JavaScript Konsolu komut isteminde yapıştırın.  
@@ -187,9 +171,9 @@ ms.lasthandoff: 01/10/2018
 12. Düzeltmek `push` işlevi çağırır isteminde değiştirme `pages.push` ile `Data.items.setAt`. Düzeltilmiş kod gibi görünmelidir:  
   
     ```javascript  
-    Data.items.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-    Data.items.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-    Data.items.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    Data.items.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+    Data.items.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+    Data.items.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
     ```  
   
     > [!TIP]
@@ -201,7 +185,7 @@ ms.lasthandoff: 01/10/2018
   
 15. Tür `Data.items.length = 3` istemi ve ENTER tuşuna basın. Bu, verileri yabancı öğeleri kaldırır.  
   
-16. Simulator veya Phone öykünücüsü yeniden denetleyin ve doğru görüntüleri doğru olduğunu görürsünüz `FlipView` sayfaları.  
+16. Uygulamayı yeniden denetleyin ve doğru görüntüleri doğru olduğunu görürsünüz `FlipView` sayfaları.  
   
 17. DOM Gezgini'nde, güncelleştirilmiş DIV öğesinin görebilir ve beklenen IMG öğeleri bulmak için alt ağacı gidin.  
   
@@ -218,7 +202,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Default.html dosyasındaki `FlipView` , daha önce oluşturulmuş kısayol menüsünü açın uygulama `updateImages()` işlev ve ardından **kesme noktası** > **kesme noktası Ekle**.  
   
-2.  Seçin **yerel makine** veya **öykünücüsü 8.1 WVGA 4 inç 512MB** açılan liste yanına **hata ayıklamayı Başlat** düğmesini **hata ayıklama** araç çubuğu.  
+2.  Seçin **yerel makine** açılan liste yanına **hata ayıklamayı Başlat** düğmesini **hata ayıklama** araç.  
   
 3.  Seçin **hata ayıklama** > **hata ayıklamayı Başlat**, veya F5 tuşuna basın.  
   
@@ -239,7 +223,7 @@ ms.lasthandoff: 01/10/2018
 6.  Tek bir çizgi işlevinin giriş sorusu çıktı penceresinden kopyalayın ve dizin değeri 3 olarak değiştirin:  
   
     ```javascript  
-    pages.setAt(3, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    pages.setAt(3, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
     ```  
   
 7.  Kod satırını çalıştırmak için Enter tuşuna basın.  
@@ -264,16 +248,7 @@ ms.lasthandoff: 01/10/2018
   
  ![Hedef seçimi JavaScript konsol penceresinde](../debugger/media/js_console_target.png "JS_Console_Target")  
   
- Yürütme bağlamı kullanarak da geçiş yapabilirsiniz `cd` komutu, ancak diğer yürütme bağlamı adını bilmeniz gerekir ve kullandığınız başvuru kapsamında olması gerekir. **Hedef** listesi diğer yürütme bağlamı daha iyi erişim sağlar.  
-  
-##  <a name="BrowserSupport"></a>Tarayıcı ve Platform desteği  
- JavaScript Konsolu penceresi aşağıdaki platformlarda desteklenir:  
-  
--   UWP uygulamaları [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]ve JavaScript ve HTML kullanarak Windows Phone uygulamaları  
-  
--   Internet Explorer 11 üzerinde çalışan[!INCLUDE[win81](../debugger/includes/win81_md.md)]  
-  
--   Internet Explorer 10 üzerinde çalışan[!INCLUDE[win8](../debugger/includes/win8_md.md)]  
+ Yürütme bağlamı kullanarak da geçiş yapabilirsiniz `cd` komutu, ancak diğer yürütme bağlamı adını bilmeniz gerekir ve kullandığınız başvuru kapsamında olması gerekir. **Hedef** listesi diğer yürütme bağlamı daha iyi erişim sağlar.   
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio uygulamalarında hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md)   

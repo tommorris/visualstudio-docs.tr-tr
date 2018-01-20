@@ -7,11 +7,7 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - dominators, memory analyzer (JavaScript)
 - memory leaks (JavaScript)
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - JavaScript Memory Analyzer
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
-ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
 caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 00162ab0ad516391b98ee0a17fa9c9f7294c92b3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP uygulamalarında JavaScript bellek kullanımını çözümleme
 JavaScript bellek Çözümleyicisi bellek kullanımını anlamak ve JavaScript kullanan Windows için oluşturulmuştur, UWP uygulamaları içinde bellek sızıntıları bulmanıza yardımcı olmak için Visual Studio'da kullanılabilir. Desteklenen uygulamaların uygulamaları Evrensel Windows uygulamaları için içerir.
@@ -48,36 +43,14 @@ JavaScript bellek Çözümleyicisi bellek kullanımını anlamak ve JavaScript k
   
      Uygulama kodunuzda doğrudan oluşturulmayacak nesneleri otomatik olarak filtrelenir. Ayrıca veri nesne adına göre filtre uygulayabilirsiniz.  
   
- Çalışma uygulama bellek sızıntısına tanımlama işleminde size yol gösterir bir öğretici için bkz [izlenecek yol: Bellek sızıntısını (JavaScript) bulmak](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
-  
- Bu konuda:  
-  
- [JavaScript bellek Çözümleyicisi çalıştırma](#Run)   
- [Bellek kullanımını denetleyin](#Check)   
- [Bellek sızıntısı yalıtma](#Isolate)   
- [Dinamik bellek kullanım özetini görüntüle](#LiveMemory)   
- [Bir anlık görüntü özeti görüntülemek](#SnapshotSummary)   
- [Anlık görüntü ayrıntıları görüntüle](#SnapshotDetails)   
- [Bir anlık görüntü fark görüntüleyin](#SnapshotDiff)   
- [DOMINATOR tarafından nesneleri görüntüle](#FoldObjects)   
- [Veri tanımlayıcısına göre filtrele](#Filter)   
- [Nesne ağacında bir nesne bulunamadı](#ShowInRootsView)   
- [Paylaşılan Görünüm nesne başvuruları](#References)   
- [Yerleşik nesneleri göster](#BuiltInValues)   
- [Tanılama oturumu dosyaları kaydetme](#Save)   
- [Kaynak kodu ile bellek kullanım verileri ilişkilendirme](#JSConsoleCommands)   
- [Bellek sorunları tanımlamak için ipuçları](#Tips)  
-  
 ##  <a name="Run"></a>JavaScript bellek Çözümleyicisi çalıştırma  
- Visual Studio'da Aç veya yüklü çalışma UWP uygulaması çalıştıran bir bilgisayarda olduğunda bellek Çözümleyicisi'ni kullanabilirsiniz [!INCLUDE[win8](../debugger/includes/win8_md.md)] veya sonraki bir sürümü.  
+ Visual Studio'da açın bir çalışma UWP uygulaması varsa bellek Çözümleyicisi'ni kullanabilirsiniz.
   
 #### <a name="to-run-the-memory-analyzer"></a>Bellek Çözümleyicisi'ni çalıştırmak için  
   
 1.  Visual Studio'yu açın.  
   
-2.  Uygulama Visual Studio'dan içinde çalıştırıyorsanız **hata ayıklamayı Başlat** listesini **standart** araç, projeniz için hata ayıklama hedefi seçin: bir ya da Windows Phone öykünücüsü veya bir UWP uygulaması  **Yerel makine**, **Simulator**, veya **uzak makine**.  
-  
-     Bu seçenekler hakkında daha fazla bilgi için bkz: [Visual Studio'dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md).  
+2.  Uygulama Visual Studio'dan içinde çalıştırıyorsanız **hata ayıklamayı Başlat** listesini **standart** araç, projeniz için hata ayıklama hedefi seçin: ya da **yerel makine** veya **Aygıt**.  
   
 3.  Menü çubuğunda seçin **hata ayıklama**, **Performans Profil Oluşturucu...** .  
   
@@ -400,6 +373,3 @@ if (performance && performance.mark) {
          Bu komutları el ile bir yığın anlık görüntüsü uygulayarak ayıramazsınız sorunlarını gidermeye yardımcı olmak için kullanabilirsiniz.  
   
     -   Sınama nesnesi oluşturun ve JavaScript bellek Çözümleyicisi görünümlerde türleri görünümü gibi izleme. Örneğin, belirli nesne veya öğenin çöpünün toplanma olup olmadığını görmek için başka bir nesneye çok büyük nesne ekleyebilirsiniz.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Bellek sızıntısını bulma (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

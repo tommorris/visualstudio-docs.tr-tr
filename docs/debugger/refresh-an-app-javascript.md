@@ -1,5 +1,5 @@
 ---
-title: "Bir UWP veya Windows 8.1 uygulamasını yenileme | Microsoft Docs"
+title: "Bir UWP uygulaması yenileme | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -23,16 +23,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 636f88313d53625e5bb778ffe7bebc8f891ed4bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef42c0208b973707294a842376ef737216e13774
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="refresh-a-uwp-or-windows-81-app"></a>Bir UWP veya Windows 8.1 uygulama Yenile
-![Windows ve Windows Phone için geçerlidir](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio'da bir UWP uygulaması Yenile
   
- Hatalarını ayıkladığınız ve seçerek JavaScript kullanarak bir UWP uygulaması yenileme sırasında kodunuzu değişiklik yapabilirsiniz **yenileme Windows uygulaması** düğmesini **hata ayıklama** araç. Bu düğmesini seçerek uygulama hata ayıklayıcı durdurup olmadan yeniden yükler. Yenileme özelliği HTML, CSS ve JavaScript kodu değiştirin ve hızlı bir şekilde sonucunu görmenizi sağlar. Bu özellik, UWP ve Windows 8.1 uygulamaları için desteklenir.  
+ Hatalarını ayıkladığınız ve seçerek JavaScript kullanarak bir UWP uygulaması yenileme sırasında kodunuzu değişiklik yapabilirsiniz **yenileme Windows uygulaması** düğmesini **hata ayıklama** araç. Bu düğmesini seçerek uygulama hata ayıklayıcı durdurup olmadan yeniden yükler. Yenileme özelliği HTML, CSS ve JavaScript kodu değiştirin ve hızlı bir şekilde sonucunu görmenizi sağlar. Bu özellik, UWP uygulamaları için desteklenir.  
   
  Yenileme değil, uygulama durumunu korumak veya uygulamanız için aşağıdaki değişiklikleri yansıtacak:  
   
@@ -51,37 +50,19 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-refresh-an-app"></a>Bir uygulama yenilemek için  
   
-1.  Visual Studio'da gezinti uygulaması proje şablonunu kullanarak yeni bir proje oluşturun.  
-  
-     Bu, UWP uygulaması veya Windows 8.1 uygulama olabilir.  
-  
-2.  Şablon Visual Studio'da açıkken, hata ayıklama hedefi seçin.  
-  
-     Bir Windows Phone projesini geçerli başlangıç projenize ise, hata ayıklama hedefi için bir Windows Phone öykünücüsü seçin. Aksi takdirde seçin **Simulator** veya **yerel makine**.  
+1.  Visual Studio'da açıkken, UWP projesini ile seçin **yerel makine** hata ayıklama hedefi olarak.
   
      ![Select hata ayıklama hedef listesi](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 3.  Uygulamayı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.  
   
-4.  Visual Studio'ya geçin. (F12 tuşuna basın.)  
+4.  Visual Studio'ya geçin. 
   
-5.  İçinde **Çözüm Gezgini**, **sayfaları** > **ev** klasörü, açık home.html.  
-  
-6.  Sayfa başlık metni değiştirme  
-  
-    ```html  
-    Welcome to yourAppName!  
-    ```  
-  
-     için aşağıdaki gibi başka bir:  
-  
-    ```html  
-    Hello!  
-    ```  
+5.  UWP uygulamanızı giriş sayfasının HTML bazıları düzenleyin.
   
 7.  Tıklatın **yenileme Windows uygulaması** düğmesi, bu gibi görünen: ![yenileme Windows Uygulama düğmesi](../debugger/media/js_refresh.png "JS_Refresh"). (Veya F4 tuşuna basın.)  
   
-8.  Uygulamasına geçin. Uygulama yeniden başlatma hata ayıklayıcı olmadan yüklenir ve yeni sayfa başlığı görüntülenir.  
+8.  Uygulamasına geçin. Uygulama geri yüklenir ve güncelleştirilmiş HTML uygulamayı işlemek için kullanılır.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hızlı Başlangıç: HTML ve CSS hata ayıklama](../debugger/quickstart-debug-html-and-css.md)

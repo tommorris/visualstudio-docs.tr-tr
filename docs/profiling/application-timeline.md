@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 3109f33c24b3ff217f6e48c6458a4c6514b0b151
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 340ef03d7b9449f6fc9ee50a4c24afff03120e6f
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Kaynak tüketimini ve kullanıcı Arabirimi iş parçacığı etkinliği (XAML) çözümler.
 Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek için Profil Oluşturucu ile ilgili performans sorunları XAML uygulamaları. Bu araç, uygulamaları kaynak tüketimini ayrıntılı bir görünümünü sağlayarak XAML uygulamalarının performansını artırmaya yardımcı olur. UI çerçeveler (düzeni ve işleme) hazırlama, ağ ve disk isteklere hizmet uygulamanızı ve uygulama başlatma, sayfa yükleme ve Windows yeniden boyutlandırma gibi senaryolarda zamanın analiz edebilirsiniz.  
@@ -31,8 +31,6 @@ Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek
 1.  Evrensel Windows uygulamaları (üzerinde Windows 10)  
   
 2.  Windows 8.1  
-  
-3.  Windows Phone 8.1 (ortak XAML platformu)  
   
 4.  Windows Presentation Foundation (.Net 4.0 ve üstü)  
   
@@ -84,7 +82,7 @@ Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek
  Zaman çizelgesi ayrıca, eklediğiniz kullanıcı işaretlerini ve uygulamanın etkinleştirme yaşam döngüsü olaylarını da görüntüler.  
   
 ###  <a name="BKMK_UI_thread_utilization_graph"></a>Kullanıcı Arabirimi iş parçacığı kullanım grafiği  
- ![CPU kullanım grafiği](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")  
+ ![CPU Utilization Graph](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")  
   
  **Kullanıcı Arabirimi iş parçacığı kullanımı (%)** grafiktir sırasında toplama aralığı için bir kategori göreli harcanan süreyi görüntüler bir çubuk grafiği.  
   
@@ -103,7 +101,7 @@ Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek
 |**Ayrıştırma**|Ayrıştırma XAML dosyaları ve oluşturma nesneleri için harcanan süre.<br /><br /> Genişleyen bir **ayrıştırma** düğümünde **zaman çizelgesi ayrıntıları** sonucunda kök olay Ayrıştırılan tüm XAML dosyaları bağımlılık zinciri görüntüler. Bu, gereksiz dosya ayrıştırma ve nesne oluşturma performans hassas senaryolarda tanımlamak ve bunları en iyi duruma getirmek olanak tanır.|  
 |**Düzen**|Büyük uygulamalarda, aynı anda ekranda öğeleri binlerce gösterilebilir. Bu bir düşük UI kare hızı ve buna bağlı olarak zayıf uygulama yanıt hızını neden olabilir. Düzen olay doğru şekilde her öğe (Düzenle, ölçü, ApplyTemplate, ArrangeOverride ve ArrangeOverride harcanan zaman) düzenlemeyi maliyetini belirler ve bölüm düzeni geçişinde sürdü görsel ağaçlar oluşturur. Bu görselleştirmenin mantıksal ağaçları hangisinin ayıklama gerektiğini ya da diğer erteleme mekanizmaları düzeni geçişi en iyi duruma getirme değerlendirmek için kullanabilirsiniz.|  
 |**İşleme**|Çizim XAML öğeleri ekranda geçirilen süre.|  
-|**T / 0**|Harcanan zamanı yerel diskten veya üzerinden erişilen ağ kaynaklarına veri alma [Microsoft Windows Internet (WinINet) API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
+|**I/0**|Harcanan zamanı yerel diskten veya üzerinden erişilen ağ kaynaklarına veri alma [Microsoft Windows Internet (WinINet) API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Uygulama kodu**|Ayrıştırma veya düzenine ilgili olmayan uygulama (kullanıcı) kod çalıştırırken için harcanan süre.|  
 |**XAML diğer**|XAML çalışma zamanı kod çalıştırırken için harcanan süre.|  
   

@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Anlık görüntü Visual Studio'da hata ayıklama için sorun giderme ve bilinen sorunlar
 
@@ -72,8 +72,19 @@ Aşağıdaki adımları gerçekleştirin:
 - Anlık görüntü hata ayıklama uygulama hizmetleri üzerinde sahip çalışmıyor [yerel önbelleğe alma](/azure/app-service/app-service-local-cache) açık.
 - Hata ayıklama API uygulamaları anlık görüntü şu anda desteklenmiyor.
 
+## <a name="site-extension-upgrade"></a>Site uzantısı yükseltme
+
+Anlık görüntü hata ayıklama ve Application Insights site sürecine yükler ve dosya kilitleme sorunları yükseltme sırasında neden olan bir ICorProfiler bağlıdır. Hiçbir kapalı kalma süresi, üretim sitenize olduğundan emin olun. Bu işlem öneririz.
+
+- Oluşturma bir [dağıtım yuvası](/azure/app-service/web-sites-staged-publishing) App Service içinde ve sitenizi yuvaya dağıtabilirsiniz.
+- Visual Studio bulut Gezgini'nden veya Azure Portal üretim yuvasıyla takas.
+- Yuva sitesini durdurun. Bu site w3wp.exe işleminin tüm örnekleri kapalı sonlandırmak için birkaç saniye sürer.
+- Kudu site veya Azure portalından yuvası site uzantısı yükseltme (*uygulama hizmeti dikey > Geliştirme araçları > uzantılar > güncelleştirme*).
+- Yuva sitesini başlatın. Yeniden sıcak için siteyi ziyaret öneririz.
+- Üretim yuvasıyla takas.
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da hata ayıklama](../debugger/index.md)  
+[Visual Studio’da hata ayıklama](../debugger/index.md)  
 [Anlık görüntü hata ayıklayıcı kullanarak canlı ASP.NET uygulamaları hata ayıklama](../debugger/debug-live-azure-applications.md)  
 [Anlık görüntü hatalarını ayıklama hakkında SSS](../debugger/debug-live-azure-apps-faq.md)  

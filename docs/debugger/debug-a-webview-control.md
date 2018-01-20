@@ -18,16 +18,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 40c3a112d77e7e00d95aaa92a77a3b6739c96293
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8c463bc443540e136b2cffd1a4abdda2cc543d05
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Bir UWP uygulaması WebView denetiminde hata ayıklama
-![Windows ve Windows Phone için geçerlidir](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- İncelemek ve hata ayıklama için `WebView` Windows çalışma zamanı uygulama denetimlerinde, uygulamanızı başlattığınızda komut dosyası hata ayıklayıcısı eklemek için Visual Studio yapılandırabilirsiniz. Visual Studio 2013 güncelleştirme 2 ile başlayarak, ile etkileşim kurmak için iki yolu vardır `WebView` hata ayıklayıcıyı kullanma denetler:  
+ İncelemek ve hata ayıklama için `WebView` Windows çalışma zamanı uygulama denetimlerinde, uygulamanızı başlattığınızda komut dosyası hata ayıklayıcısı eklemek için Visual Studio yapılandırabilirsiniz. İle etkileşim kurmak için iki yolu vardır `WebView` hata ayıklayıcıyı kullanma denetler:  
   
 -   Açık [DOM Gezgini](../debugger/quickstart-debug-html-and-css.md) için bir `WebView` örneği, DOM öğeleri inceleyin, CSS stili sorunları araştırmak ve stilleri dinamik olarak işlenen değişiklikler test.  
   

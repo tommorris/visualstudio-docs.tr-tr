@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="profiling-feature-tour"></a>Özellik turu profil oluşturma
 
@@ -32,7 +32,7 @@ Hata ayıklarken, kullanabileceğiniz **tanılama araçları** penceresi CPU ve 
 
 ![Tanılama araçları özeti görünümü](../profiling/media/prof-tour-cpu-and-memory-graph.gif "tanılama araçları özeti")
 
-**Tanılama araçları** penceredir genellikle tercih edilen yol profili uygulamalara, ancak bunun yerine, uygulamanızın bir Proje Sonrası Değerlendirme analizi yapabilirsiniz. Farklı yaklaşımlar hakkında daha fazla bilgi istiyorsanız, bkz: [çalıştıran profil oluşturma araçları ile veya olmadan Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+**Tanılama araçları** penceresi genellikle tercih edilen yol profili uygulamalara olmakla birlikte, sürüm derlemeleri için ayrıca bir Proje Sonrası Değerlendirme analizi, uygulamanızın yerine yapabilirsiniz. Farklı yaklaşımlar hakkında daha fazla bilgi istiyorsanız, bkz: [çalıştıran profil oluşturma araçları ile veya olmadan Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Farklı uygulama türleri için destek aracı görmek için bkz: [hangi aracı kullanmalıyım?](#tool_support_info).
 
 ## <a name="analyze-cpu-usage"></a>CPU kullanımı analiz
 
@@ -119,13 +119,13 @@ Grafikler, CPU'ya vardır veya performans sorunları GPU bağlı olup olmadığ�
 
 ## <a name="analyze-performance-javascript"></a>Analiz performans (JavaScript)
 
-Windows Evrensel HTML uygulamaları için JavaScript belleği aracı ve HTML UI yanıtlama hızı aracı kullanabilirsiniz.
+UWP uygulamalar için JavaScript bellek aracı ve HTML UI yanıtlama hızı aracını kullanabilirsiniz.
 
 JavaScript bellek aracı diğer uygulama türleri için kullanılabilir bellek kullanımı aracı benzer. Bellek kullanımını anlamanıza ve uygulamanıza bellek sızıntıları bulmak için bu aracı kullanabilirsiniz. Aracı hakkında daha fazla ayrıntı için bkz: [JavaScript belleği](../profiling/javascript-memory.md).
 
 ![JavaScript bellek aracı profili oluşturma](../profiling/media/diagjsmemory.png "DiagJSMemory")
 
-UI yanıtlama hızı, saat ve Windows Evrensel HTML uygulamalarında yavaş visual güncelleştirmeleri yükleme yavaş tanılamak için HTML UI yanıtlama hızı aracını kullanın. Kullanım, diğer uygulama türleri için uygulama zaman çizelgesi aracı benzerdir. Daha fazla bilgi için bkz: [HTML UI yanıtlama hızı](../profiling/html-ui-responsiveness.md).
+UI yanıtlama hızı, saat ve UWP uygulamalarında yavaş visual güncelleştirmeleri yükleme yavaş tanılamak için HTML UI yanıtlama hızı aracını kullanın. Kullanım, diğer uygulama türleri için uygulama zaman çizelgesi aracı benzerdir. Daha fazla bilgi için bkz: [HTML UI yanıtlama hızı](../profiling/html-ui-responsiveness.md).
 
 ![HTML UI yanıtlama hızı aracı profili oluşturma](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
 
@@ -151,7 +151,7 @@ CPU kullanımı veya bellek kullanımı araçları şu anda mevcut olmayan araç
 
 Visual Studio sunar farklı araçlar listeleyen bir tablo işte ve farklı proje türleri ile kullanabilmek için:
   
-|Performans aracı|Windows Masaüstü|Windows Evrensel/deposu|ASP.NET/ASP.NET çekirdek|  
+|Performans aracı|Windows Masaüstü|UWP|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Bellek kullanımı](../profiling/memory-usage.md)|Evet|Evet|Evet|  
 |[CPU kullanımı](../profiling/cpu-usage.md)|Evet|Evet|Evet (Hayır için .NET Core/ASP.NET çekirdek)|  
@@ -165,4 +165,4 @@ Visual Studio sunar farklı araçlar listeleyen bir tablo işte ve farklı proje
 |[JavaScript belleği](../profiling/javascript-memory.md)|Yok|XAML için Hayır HTML için Evet|Yok|  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md)
+ [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)

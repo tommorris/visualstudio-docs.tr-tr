@@ -27,22 +27,23 @@ f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.Authentication
 - VC.Project.IVCAppHostRemoteDebugPageObject.DebuggerType
 - VC.Project.IVCAppHostSimulatorDebugPageObject.BreakpointBehavior
+- vs.debug.installedapppackagelauncher
+- vs.debug.error.wwahost_scriptdebuggingdisabled
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 66ec0e79-8261-4c19-a618-3fd1b3f71bbd
 caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 367fc334d0268a73e8ad1a33ebdc6e74036ddc86
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 718d24ab0f9fbb310d2482b63bc98dd139658330
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>Visual Studio'da bir UWP uygulaması için hata ayıklama oturumu Başlat
   
@@ -73,10 +74,10 @@ Bu seçeneklerden birini seçin:
 |||  
 |-|-|  
 |**Yerel Makine**|Uygulama hata ayıklama yerel makinenizdeki geçerli oturumdaki.|  
-|**Simulator**|UWP için Visual Studio simulator uygulamada hata ayıklama ve [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] uygulamalar. Simulator cihazın işlevselliğini ayıklamanızı sağlar masaüstü bir penceredir — dokunma hareketleri ve cihaz döndürme gibi —, yerel makinede kullanılabilir olmayabilir. Bu seçenek yalnızca kullanılabilir değilse, uygulamanızın **hedef Platform Min. Sürüm** geliştirme makinenizdeki işletim sistemi küçük veya eşit. Bkz: [simulator çalıştırmak UWP uygulamalarında](../debugger/run-windows-store-apps-in-the-simulator.md).|  
+|**Simulator**|UWP uygulamalar için Visual Studio simulator uygulamada hata ayıklama. Simulator cihazın işlevselliğini ayıklamanızı sağlar masaüstü bir penceredir — dokunma hareketleri ve cihaz döndürme gibi —, yerel makinede kullanılabilir olmayabilir. Bu seçenek yalnızca kullanılabilir değilse, uygulamanızın **hedef Platform Min. Sürüm** geliştirme makinenizdeki işletim sistemi küçük veya eşit. Bkz: [simulator çalıştırmak UWP uygulamalarında](../debugger/run-windows-store-apps-in-the-simulator.md).|  
 |**Uzak makine**|Yerel makineye intranet üzerinden bağlı veya Ethernet kablosu kullanarak doğrudan bağlı bir cihaza uygulamanın hata ayıklama. Uzaktan hata ayıklamak için Visual Studio için Uzak araçları yüklü ve uzak cihazda çalışıyor olması gerekir. Bkz: [uzaktaki bir makinede çalıştırın UWP uygulamaları](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
 |**Cihazı**|USB bağlantılı cihazda uygulama hata ayıklama. Cihaz kilidi Geliştirici ve kilidi ekran olmalıdır.|  
-|**Mobil öykünücüsü**|Bir öykünücü öykünücüsü adında belirtilen yapılandırmayla önyükleme, uygulamayı dağıtmak ve hata ayıklamayı Başlat. Öykünücüler yalnızca Windows 8.1 veya sonraki sürümleri çalıştıran Hyper-V etkin makinelerde kullanılabilir.|  
+|**Mobil öykünücüsü**|Bir öykünücü öykünücüsü adında belirtilen yapılandırmayla önyükleme, uygulamayı dağıtmak ve hata ayıklamayı Başlat. Öykünücüler yalnızca Hyper-V etkin makinelerde kullanılabilir.|  
 
 ##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>Ek hata ayıklama seçeneklerini belirleyin  
 
@@ -119,7 +120,7 @@ C# ve Visual Basic uygulamalarında da aynı ayarlayabilirsiniz **hata ayıklay�
   
 -   Visual C# ve Visual Basic uygulamaları için **değil başlatın, ancak başlatıldığında kodum hata ayıklama** üzerinde **hata ayıklama** özellik sayfası.  
   
--   Uygulamalar, Visual C++ ve JavaScript için **Evet** gelen **uygulama Başlat** listesini **hata ayıklama** özellik sayfası.  
+-   Uygulamalar, Visual C++ ve JavaScript için **Hayır** gelen **uygulama Başlat** listesini **hata ayıklama** özellik sayfası.  
   
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a>(İsteğe bağlı) Ağ geri döngüler devre dışı bırak  
   
@@ -169,7 +170,7 @@ C# ve Visual Basic uygulamalarında da aynı ayarlayabilirsiniz **hata ayıklay�
   
  Uygulama hata ayıklama modunda başlatır. Yürütme bir kesme noktası ulaşıldığında, el ile işlenmeyen bir özel durum oluşur, yürütme, askıya veya uygulama sona kadar devam eder.  
   
- biçimindeki telefon numarasıdır. Arka plan görevleri hata ayıklama hakkında daha fazla bilgi için bkz: [tetikleyici askıya alma, sürdürme ve arka plan olaylarını UWP uygulamalar için)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
+ Arka plan görevleri hata ayıklama hakkında daha fazla bilgi için bkz: [tetikleyici askıya alma, sürdürme ve arka plan olaylarını UWP uygulamalar için)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
   
 ###  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a>Hata Ayıklayıcısı'ndaki yüklü bir uygulamayı Başlat  
 F5 kullanarak hata ayıklama başlattığınızda, Visual Studio oluşturur ve uygulamayı dağıtır, hata ayıklama modunda çalıştırmak için uygulamayı ayarlar ve ardından başlatır. Bir cihazda zaten yüklü olan bir uygulamayı başlatmak için kullanmak **yüklü uygulama paketi Debug** iletişim kutusu. Bu yordam, Microsoft Store yüklü olduğu bir uygulama hata ayıklama gerektiğinde veya uygulama için kaynak dosyaları varsa, ancak uygulama için bir Visual Studio projesini yok kullanışlıdır. Örneğin, Visual Studio projeleri veya çözümleri kullanmayan bir özel yapı sistemi olabilir.  
@@ -177,9 +178,6 @@ F5 kullanarak hata ayıklama başlattığınızda, Visual Studio oluşturur ve u
 Uygulama yerel cihazda yüklenebilir veya bir uzak cihazda olabilir.  Uygulamanın hemen başlatmak için ya da onu Başlat menüsünden veya bir etkinleştirme sözleşme tarafından bir arka plan işlemi hata ayıklama istediğinizde hata ayıklama modunda çalıştırmak için uygulamayı de ayarlayabilirsiniz gibi başka bir işlem veya yöntemi tarafından başlatılırken hata ayıklayıcısı'ndaki çalıştırmak için ayarlayabilir. Uygulama başlatmadan. Daha fazla bilgi için bkz: [tetikleyici askıya alma, sürdürme ve arka plan olaylarını UWP uygulamalar için)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
   
 Hata Ayıklayıcısı'ndaki yüklü bir uygulamayı başlatmak için tercih **hata ayıklama**, ardından **diğer hata ayıklama hedeflerini**ve ardından **yüklü uygulama paketi Debug**. Ek yönergeler için bkz: [yüklü uygulama paketi Debug](../debugger/debug-installed-app-package.md).
-
-> [!NOTE]
-> Windows 8.1 için seçin **hata ayıklama**ve ardından **yüklü uygulama paketi Debug**.
 
 ###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Hata ayıklayıcıyı çalışan bir UWP uygulaması Ekle  
 

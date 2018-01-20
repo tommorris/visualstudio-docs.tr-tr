@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82ec43b02895c2067b04f52f893184a82dd0f36b
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-basic"></a>Düzenle ve Devam Et (Visual Basic)
 Düzenle ve devam et için bir özelliktir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , hata ayıklama kesme modunda yürütülürken kodunuzu değiştirmek olanak sağlar. Kod düzenlemeleri uygulandıktan sonra yerinde yeni düzenlemelerle kodu yürütme devam ve etkisi görebilirsiniz.  
@@ -42,7 +42,7 @@ Düzenle ve devam et için bir özelliktir [!INCLUDE[vbprvb](../code-quality/inc
  Düzenle ve devam et UWP uygulamaları Windows 10 ve .NET Framework 4.6 hedef x86 hem x64 uygulamalar desteklenir (yalnızca masaüstü sürümü .NET Framework'dur) masaüstü veya sonraki sürümleri.
 
  > [!NOTE]
- > Desteklenmeyen uygulamalar ve platformlar ASP.NET 5, Silverlight 5, Windows Phone ve Windows Phone öykünücüsü ve Windows 8.1 içerir.
+ > Desteklenmeyen uygulamalar ve platformlar ASP.NET 5, Silverlight 5 ve Windows 8.1 içerir.
   
  Düzenle ve devam et desteklenmiyor kullanarak hata ayıklama başlattığınızda **ekleme işlemi için**. Düzenle ve devam et iyileştirilmiş kodda veya karma için desteklenmeyen yönetilen ve yerel kodu. Daha fazla bilgi için bkz: [desteklenen kod değişiklikleri (C# ve Visual Basic](../debugger/supported-code-changes-csharp.md).
   

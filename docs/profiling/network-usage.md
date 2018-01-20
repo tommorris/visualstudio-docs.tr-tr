@@ -13,16 +13,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de821b0c2e073104ae07abfcccff9ccce56fd3d1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0bf6aed0c2864792e3cf47f944610fcb2de0f185
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP uygulamalarında ağ kullanımını çözümleme
 Visual Studio **ağ** Tanılama aracı kullanılarak yapılan ağ işlemleri hakkındaki verileri toplar [Windows.Web.Http API](/uwp/api/windows.web.http). Verileri çözümleme, erişim ve kimlik doğrulama sorunları, yanlış önbellek kullanımı ve görüntü gibi sorunları gidermek ve performans indirme yardımcı olabilir.  
   
- Ağ aracı yalnızca evrensel Windows platformu uygulamaları destekler. Diğer platformlar şu anda desteklenmiyor.  
+ Ağ aracı yalnızca UWP uygulamaları destekler. Diğer platformlar şu anda desteklenmiyor.  
   
 > [!NOTE]
 >  Ağ aracı daha eksiksiz bir açıklaması için bkz: [Tanıtımı Visual Studio'nun Ağ aracı](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  

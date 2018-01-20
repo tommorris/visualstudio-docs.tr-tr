@@ -22,11 +22,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e2e5e716bd63170554537ec77895055de1fd83a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f2bde32d67bb2e106d058c5a9e62801940d3df25
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında sözde değişkenler
 Sözde değişkenler olan bir değişken penceresinde belirli bilgileri görüntülemek için kullanılan terimler veya **QuickWatch** iletişim kutusu. Normal bir değişken girersiniz aynı şekilde bir pseudovariable girebilirsiniz. Sözde değişkenler değil değişkenleri, ancak ve değişken adlarıyla programınızdaki karşılık.  
@@ -52,7 +52,7 @@ $handles
 |`$`*registername*<br /><br /> veya<br /><br /> `@`*registername*|Kayıt içeriğini görüntüler *registername*.<br /><br /> Normalde, yalnızca kayıt adı girerek yazmaç içerikleri görüntüleyebilirsiniz. Yazmaç adı bir değişken adı overloads şu sözdizimini kullanmanız gereken yalnızca bir kez durumdur. Yazmaç adı geçerli kapsamdaki bir değişken adı ile aynı olduğunda, hata ayıklayıcı adı değişken adı olarak yorumlar. Ne zaman olan `$` *registername* veya `@` *registername* faydalı olur.|  
 |`$clk`|Saat döngüleri süreyi görüntüler.|  
 |`$user`|Uygulama çalıştıran hesabın hesap bilgileriyle yapısını görüntüler. Güvenlik nedenleriyle, parola bilgilerini görüntülenmez.|  
-|`$exceptionstack`|Geçerli Windows çalışma zamanı özel durum yığın izlemesi görüntüler. `$ exceptionstack`yalnızca UWP ve Windows 8.1 uygulamalar veya sonraki sürümlerde çalışır. `$ exceptionstack`C++ ve özel durumlar için desteklenmiyor|  
+|`$exceptionstack`|Geçerli Windows çalışma zamanı özel durum yığın izlemesi görüntüler. `$ exceptionstack`yalnızca UWP uygulamalarında çalışır. `$ exceptionstack`C++ ve özel durumlar için desteklenmiyor|  
 |`$ReturnValue`|.NET Framework yönteminin dönüş değeri görüntüler.|  
   
  C# ve Visual Basic bu tabloda gösterilen sözde değişkenler kullanabilirsiniz:  
@@ -68,8 +68,8 @@ $handles
 |--------------------|--------------|  
 |`$delete`veya`$$delete`|Oluşturulan bir örtük değişkeni siler **hemen** penceresi. Sözdizimi `$delete,` *değişkeni* veya`$delete,` *değişken*`.`|  
 |`$objectids`veya`$listobjectids`|Tüm etkin nesne kimlikleri, belirtilen ifade alt olarak görüntüler. Sözdizimi `$objectid,` *ifade* veya`$listobjectids,` *ifadesi*`.`|  
-|`$`*N*`#`|Nesne Kimliği eşit görüntüler nesnesiyle *N*.|  
-|`$dynamic`|Özel görüntüler **dinamik Görünüm** uygulayan bir nesne için düğüm `IDynamicMetaObjectProvider`. Arabirim. Sözdizimi `$dynamic,` *nesne*. Bu özellik .NET Framework sürüm 4 kullanan kodu geçerlidir.|  
+|`$` *N* `#`|Nesne Kimliği eşit görüntüler nesnesiyle *N*.|  
+|`$dynamic`|Özel görüntüler **dinamik Görünüm** uygulayan bir nesne için düğüm `IDynamicMetaObjectProvider`. Interface. Sözdizimi `$dynamic,` *nesne*. Bu özellik .NET Framework sürüm 4 kullanan kodu geçerlidir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   

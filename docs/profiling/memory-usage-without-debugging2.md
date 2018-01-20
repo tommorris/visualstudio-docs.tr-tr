@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e8f4ae16436143999b0a459ba4b039e796f42111
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 1d2f023900735b2e8f3f2235850ab55ec6237efc
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı olmadan bellek kullanımını çözümleme
 Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ayıklama olmadan aracı  
@@ -32,7 +32,7 @@ Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ay
   
 -   Bellek sorunları kök nedenini bulmak için anlık görüntü karşılaştırın.  
   
- Bu konuda açıklanmaktadır nasıl bir Windows Evrensel XAML uygulaması çözümlemek için bellek kullanımını Aracı'nı kullanın. JavaScript ve HTML kullanmak için bkz: Windows Evrensel uygulamaları bellek kullanımını analiz etmek isterseniz [bellek kullanımı (JavaScript) analiz](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+ Bu konuda açıklanmaktadır nasıl UWP XAML uygulama çözümlemek için bellek kullanımını Aracı'nı kullanın. UWP uygulamasında bellek kullanımını analiz etmek istiyorsanız, JavaScript ve HTML kullanıyorsa, bkz: [bellek kullanımı (JavaScript) analiz](../profiling/javascript-memory.md).  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>Bellek kullanımı Tanılama oturumu Başlat  
   

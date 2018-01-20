@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Visual Studio ile döküm dosyalarını kullanma
 Döküm dosyaları ile veya olmadan yığınlara; bir döküm dosyası oluşturun; döküm dosyası açın; ikili dosyaları, pdb'ın ve bir döküm dosyası için kaynak dosyası bulun.
@@ -56,11 +56,11 @@ Döküm dosyaları ile veya olmadan yığınlara; bir döküm dosyası oluşturu
   
 -   Visual Studio, ARM cihazlarından yerel uygulamaların döküm dosyalarının hatalarını ayıklayabilir. Visual Studio, ARM cihazlarındaki yönetilen uygulamaların uygulama döküm dosyalarının da hatalarını ayıklayabilir, ancak bunu yalnızca yerel hata ayıklayıcıda yapabilir.  
   
--   Hata ayıklama için [çekirdek modu](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) döküm dosyaları Visual Studio 2013'te, yükleme [Windows 8.1 hata ayıklama araçları için Windows sürümü](http://msdn.microsoft.com/windows/hardware/gg463009). Bkz: [çekirdek Visual Studio'da hata ayıklamayı](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+-   Hata ayıklama için [çekirdek modu](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) döküm dosyaları, parçası olan Windows için hata ayıklama araçlarını yükleme [Windows Sürücü Seti (WDK)](/windows/hardware/windows-driver-kit). 
   
 -   Visual Studio olamaz hata ayıklama döküm dosyalarını olarak bilinen eski döküm biçiminde kaydedilmiş bir [tam kullanıcı modu dökümü](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Tam kullanıcı modu dökümünün yığını olan bir dökümle aynı olmadığına dikkat edin.  
   
--   İle hata ayıklamak için [SOS.dll (SOS hata ayıklama uzantısı)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) Visual Studio'da hata ayıklama için Windows Sürücü Seti (WDK) bir parçası olan Windows araçları yüklemeniz gerekir. Bkz: [Windows 8.1 önizleme: Setleri, BITS ve araçları indirme](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+-   İle hata ayıklamak için [SOS.dll (SOS hata ayıklama uzantısı)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) Visual Studio'da parçası olan Windows için hata ayıklama araçları yüklemeniz gerekir [Windows Sürücü Seti (WDK)](/windows/hardware/windows-driver-kit) 
   
 ##  <a name="BKMK_Create_a_dump_file"></a>Döküm dosyası oluşturma  
  Visual Studio ile bir döküm dosyası oluşturmak için:  

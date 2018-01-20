@@ -16,14 +16,14 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 52acd997d1f6dd9f019a6495cfbeab4e459d661b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>IIS ve Visual Studio 2017 Azure'da ASP.NET çekirdeğinde uzaktan hata ayıklama
-IIS ile Windows Server bilgisayarı için bir ASP.NET Web uygulamasına dağıtmak ve uzaktan hata ayıklama için ayarlayın. Bu kılavuz, ayarlama ve Visual Studio 2017 ASP.NET Core uygulama yapılandırma, Azure kullanılarak IIS'ye dağıtma ve Visual Studio uzaktan hata ayıklayıcı Ekle açıklanmaktadır.
+Azure App Service için kullanarak debug olan öneririz [anlık görüntü hata ayıklayıcı](../debugger/debug-live-azure-applications.md) veya Visual Studio hata ayıklayıcısı eklemek için bu konudaki yönergeleri izleyin. Windows Server IIS ile bir Azure VM üzerinde çalıştırıyorsanız, uzaktan hata ayıklama için de ayarlayabilirsiniz. Bu kılavuz, ayarlama ve Visual Studio 2017 ASP.NET Core uygulama yapılandırma, Azure kullanılarak IIS'ye dağıtma ve Visual Studio uzaktan hata ayıklayıcı Ekle açıklanmaktadır.
 
 > [!WARNING]
 > Bu öğreticide adımları tamamladıktan sonra oluşturduğunuz Azure kaynaklarını sildiğinizden emin olun. Bu şekilde, gereksiz ücretlerinin yansıtılmasını önleyebilirsiniz.
@@ -63,7 +63,7 @@ Bir proxy üzerinden bağlı iki bilgisayar arasında hata ayıklama desteklenmi
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Uzaktan hata ayıklama ASP.NET Core üzerinde bir Azure uygulama hizmeti
 
-Hızlı bir şekilde Visual Studio'dan yayımlamak ve IIS tamamen sağlanan bir örneğine uygulamanızın hatalarını ayıklama. Ancak, IIS yapılandırmasını önceden ve onu özelleştiremezsiniz. Ayrıntılı yönergeler için bkz: [ASP.NET Core web uygulama dağıtmak için Visual Studio kullanarak Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (IIS özelleştirme yeteneği ihtiyacınız varsa, hata ayıklama deneyin bir [Azure VM](#BKMK_azure_vm).) 
+Hızlı bir şekilde Visual Studio'dan yayımlamak ve IIS tamamen sağlanan bir örneğine uygulamanızın hatalarını ayıklama. Ancak, IIS yapılandırmasını önceden ve onu özelleştiremezsiniz. Daha ayrıntılı yönergeler için bkz: [ASP.NET Core web uygulama dağıtmak için Visual Studio kullanarak Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (IIS özelleştirme yeteneği ihtiyacınız varsa, hata ayıklama deneyin bir [Azure VM](#BKMK_azure_vm).) 
 
 #### <a name="to-deploy-the-app-and-remote-debug"></a>Uzaktan hata ayıklama ve uygulama dağıtmak için
 
@@ -93,10 +93,10 @@ Ayrıca ağ güvenlik Grubu'na 80 numaralı bağlantı noktasını açtığını
 
 Tarayıcı güvenlik ayarlarınızı bağlı olarak, bu öğreticide anlatılan yazılım kolayca indirebilirsiniz şekilde tarayıcınıza aşağıdaki Güvenilen siteler eklemek için zamandan tasarruf. Bu sitelere erişimi gerekebilir:
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- VisualStudio.com
+- visualstudio.com
 
 Internet Explorer kullanıyorsanız, Güvenilen siteler giderek ekleyebileceğiniz **Internet Seçenekleri > Güvenlik > Güvenilen siteler > siteleri**. Bu adımlar, tarayıcılar için farklıdır. (Uzaktan hata ayıklayıcı daha eski bir sürümü my.visualstudio.com karşıdan yüklemeniz gerekiyorsa, bazı ek Güvenilen siteler oturum açmak için gereklidir.)
 
@@ -184,7 +184,7 @@ Web dağıtımı kullanmıyorsanız, yayımlama ve dosya sistemi veya diğer ara
 2. Visual Studio'da sırasıyla **hata ayıklama > ekleme işlemi için** (Ctrl + Alt + P).
 
     > [!TIP]
-    > Visual Studio 2017 ', daha önce iliştirilmiş kullanarak aynı işlemi yeniden ekleyebilirsiniz **hata ayıklama > işlem için yeniden bağlayın...** (Shift + Alt + P). 
+    > Visual Studio 2017 ', daha önce iliştirilmiş kullanarak aynı işlemi yeniden ekleyebilirsiniz **hata ayıklama > işlem için yeniden bağlayın...** (Shift+Alt+P). 
 
 3. Niteleyici alan kümesi'ne  **\<uzak bilgisayar adı >: 4022**.
 4. Tıklatın **yenileme**.

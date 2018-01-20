@@ -1,5 +1,5 @@
 ---
-title: "Benzeticisinde UWP ve Windows 8.1 uygulamalarını çalıştırma | Microsoft Docs"
+title: "Benzetici UWP uygulamaları çalıştırma | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -18,26 +18,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: a3fbe1b7c138f24167e587109fbb5f524b6b9019
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>Benzetici UWP ve Windows 8.1 uygulamaları çalıştırma
-UWP ve Windows 8.1 uygulamalar için Visual Studio simulator, UWP veya Windows 8.1 uygulamasını taklit eden bir masaüstü uygulamasıdır. Çalıştırabilirsiniz uygulamaları taklit etmek istediğiniz çözüm ve fiziksel ekran boyutu seçin. Ayrıca, ortak dokunma ve döndürme olaylarının benzetimini yapma ve ağ bağlantısı özellikleri benzetimini yapma.
+# <a name="run-uwp-apps-in-the-simulator"></a>Benzetici UWP uygulamaları çalıştırma
+UWP uygulamalar için Visual Studio simulator, bir UWP uygulaması taklit eden bir masaüstü uygulamasıdır. Genellikle, yerel makine, bağlı bir aygıt veya bir uzak makine hata ayıklama istersiniz. Ancak, bazı senaryolarda, farklı fiziksel ekran boyutu ve çözüm benzetmek için Visual Studio simulator kullanmak isteyebilirsiniz. Ayrıca, ortak dokunma ve döndürme olaylarının benzetimini yapma ve ağ bağlantısı özellikleri benzetimini yapma.
   
  Simulator içinde tasarlama, geliştirme, hata ayıklama ve UWP uygulamaları test kullanabilirsiniz bir ortam sağlar. Ancak, Microsoft Store uygulamanızı yayınlamadan önce uygulamanızı gerçek cihazında test etmeniz gerekir.  
   
  UWP uygulamalar için Visual Studio simulator yalıtılmış bir ortamda yerel makinenizde çalışmaz. Bu nedenle, kurtarılamaz bir sistem genelinde hatası gibi simulator oluşan hataları da tüm makine etkileyebilir.  
   
- Bkz: [öykünücü çalıştırmak Windows Phone uygulamaları](../debugger/run-windows-phone-apps-in-the-emulator.md) Windows Phone bilgi.  
-  
 > [!IMPORTANT]
->  Visual Studio 2015 simulator coğrafi konuma düğmesi içermez. Bu durum, Windows 10 simulator coğrafi konuma benzetimi dahil değildir çünkü. Bu tür bir benzetimini yapmak gerekiyorsa, Windows 8.1 veya önceki işletim sistemlerinde Visual Studio 2013 simulator kullanabilirsiniz.  
+>  Visual Studio 2015 simulator coğrafi konuma düğmesi içermez. Bu durum, Windows 10 simulator coğrafi konuma benzetimi dahil değildir çünkü.
   
 ##  <a name="BKMK_Set_the_simulator_as_the_target"></a>Simulator hedef olarak ayarlanmış  
- Benzetici UWP uygulamanızı çalıştırmak için seçin **Simulator** bulunan aşağı açılan listesinde yanına **hata ayıklamayı Başlat** hata ayıklayıcı düğmesinde **standart** araç.  
+ Benzetici UWP uygulamanızı çalıştırmak için seçin **Simulator** bulunan aşağı açılan listesinde yanına **hata ayıklamayı Başlat** hata ayıklayıcı düğmesinde **standart** araç. Bu seçenek yalnızca kullanılabilir değilse, uygulamanızın **hedef Platform Min. Sürüm** geliştirme makinenizdeki işletim sistemi küçük veya eşit. 
   
  ![Benzetici çalıştıran](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
   

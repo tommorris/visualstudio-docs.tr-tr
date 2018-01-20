@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: e21d29c3a95de4e5174a9966665f3e4e6781f726
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Yüklü uygulama paketi, Visual Studio (UWP) hata ayıklama
 
@@ -36,7 +36,7 @@ Tüm yüklü uygulama paketlerini tıklayarak ayıklayabilirsiniz **hata ayıkla
 * Windows 10 (telefonlarda desteklenmez)
 * XBox
 * HoloLens
-* IOT
+* IoT
 
 Bu özellikler hakkında daha fazla bilgi için blog için güncelleştirmelerini gönderisine bakın [hata ayıklama, uygulama paketleri yüklü](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) ve üzerindeki posta [Evrensel Windows uygulamaları (UWP) oluşturma](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
 
@@ -91,9 +91,6 @@ Bu özellikler hakkında daha fazla bilgi için blog için güncelleştirmelerin
 
      > [!NOTE]
 > Sunmak, XBox veya HoloLens aygıt uygulama hata ayıklayıcısı ekli zaten çalışıyorsa, yeniden başlatılır.
-
-> [!NOTE]
-> UWP uygulamaları geliştirilebilir ve Windows 8.1 veya sonraki sürümlerinde derlenmiş, ancak çalıştırmak Windows 10 gerektirir. Bir Windows 8.1 bilgisayarında bir UWP uygulaması geliştiriyorsanız, aynı LAN hem konak hem de hedef bilgisayarda olması koşuluyla uzaktan başka bir Windows 10 cihaz üzerinde çalışan bir UWP uygulaması ayıklayabilirsiniz. Bunu yapmak için indirin ve uzak araçlar Visual Studio için her iki makinelere yükleyin. Yüklü olan sürümü yüklü olan Visual Studio mevcut sürümü aynı olmalıdır ve (x 64, x86) seçtiğiniz mimarisi Ayrıca, hedef uygulamanızın eşleşmelidir.
 
 UWP uygulamaları'nın uzaktan dağıtımı için Gelişmiş seçenekleri hakkında daha fazla bilgi için bkz: [dağıtma ve hata ayıklama UWP uygulamaları](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
   

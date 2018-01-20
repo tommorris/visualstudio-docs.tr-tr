@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70ca76a3b611b0490def98b1a24936f71ca42e0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40ff41cc6728244d11e93541057af1cb525c7af3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Hata ayıklama sırasında XAML özelliklerini denetleme
 Çalışan XAML kodunuzu ile gerçek zamanlı bir görünümünü elde edebilirsiniz **Canlı görsel ağaç** ve **dinamik özellik Explorer**. Bu araçlar, çalışan XAML uygulamanızın kullanıcı Arabirimi öğeleri ağaç görünümünü sunmak ve seçtiğiniz herhangi bir kullanıcı Arabirimi öğesi çalışma zamanı özelliklerini göster.  
@@ -27,7 +27,6 @@ ms.lasthandoff: 12/22/2017
 |Uygulama türü|İşletim sistemi ve araçları|  
 |-----------------|--------------------------------|  
 |Windows Presentation Foundation (4.0 ve üstü) uygulamaları|Windows 7 ve üstü|  
-|Windows 8.1 ve Windows Phone 8.1 uygulamaları|Windows 10 ve üstü ile [Windows 10 SDK'sı](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
 |Evrensel Windows uygulamaları|Windows 10 ve üstü ile [Windows 10 SDK'sı](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
   
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Canlı görsel ağaç öğeleri bakarak  

@@ -7,29 +7,24 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
 - debugging JavaScript, console [UWP apps]
-ms.assetid: 359e2b24-6bb7-48e7-8b55-b570df0cb774
 caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 32aa07920c496249271e6c337952129292a3d2aa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+- cordova
+ms.openlocfilehash: 1f2d6f356d4e886488f4b6558c6cfb92d7b9c974
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio'da JavaScript Konsolu komutları
-![Windows ve Windows Phone için geçerlidir](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  İleti gönderme ve Visual Studio JavaScript konsol penceresinde diğer görevleri gerçekleştirmek için komutlarını kullanabilirsiniz. Bu penceresinin nasıl kullanılacağını gösteren örnekler için bkz: [hızlı başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md). Bu konu başlığı altındaki bilgiler UWP uygulamalar ve Apache Cordova için Visual Studio Araçları kullanılarak oluşturulan uygulamalar için geçerlidir. Cordova uygulamalarda desteklenen Konsolu komutları hakkında daha fazla bilgi için bkz: [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Internet Explorer F12 araçları konsolunu kullanma hakkında daha fazla bilgi için bkz: [bu konuda](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
@@ -63,7 +58,7 @@ ms.lasthandoff: 12/22/2017
 |`msIsIndependentlyComposed(element)`|Web uygulamalarında kullanılır. JavaScript kullanarak UWP uygulamalarında desteklenmiyor.|Desteklenmez.|  
 |`profile(reportName)`|Web uygulamalarında kullanılır. JavaScript kullanarak UWP uygulamalarında desteklenmiyor.|Desteklenmez.|  
 |`profileEnd()`|Web uygulamalarında kullanılır. JavaScript kullanarak UWP uygulamalarında desteklenmiyor.|Desteklenmez.|  
-|`select(element)`|Belirtilen HTML seçer `element` içinde [DOM Gezgini](../debugger/quickstart-debug-html-and-css.md).|Console.Select(element);|  
+|`select(element)`|Belirtilen HTML seçer `element` içinde [DOM Gezgini](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|İsteğe bağlı olarak tanımlanan bir süreölçer başlatır `name` parametresi. İle kullanıldığında `console.timeEnd`, hesaplar arasında geçen sürenin `time` ve `timeEnd`ve (milisaniye olarak ölçülür) sonucu konsolunu kullanarak gönderir `name` öneki olarak dize. Uygulama kodunun performansını ölçmek için Araçları'nı etkinleştirmek için kullanılır.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|İsteğe bağlı olarak tanımlanan bir süreölçer durdurur `name` parametresi. Bkz: `time` konsol komutu.|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Yığın izlemesi konsol penceresine gönderir. İzleme tam çağrı yığını dahildir ve dosya adı, satır numarası ve sütun numarası gibi bilgileri içerir.|`console.trace();`|  
@@ -113,13 +108,13 @@ console.log(user.first, user.last);
  Aşağıdaki değiştirme desenleri desteklenir:  
   
 -   %s - dize  
-     %i - tamsayı  
+     %i - integer  
      %d - tamsayı  
      %f - float  
      %o - nesnesi  
      %b - ikili  
      %x - onaltılık  
-     %e - üs  
+     %e - exponent  
   
  Değiştirme desenleri kullanmanın bazı örnekler şunlardır `console.log`:  
   

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 9ad762745627c2c30378f5017d88e78b00921d4a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f6728f940b1d8613587b6b879324bd37a2a35e2d
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP uygulamalarında enerji kullanımını çözümleme
 Visual Studio **enerji tüketimi** profil oluşturucu UWP uygulamaları kendi pille saat bölümünü veya tümünü Çalıştır düşük güç tablet cihazlarda güç ve enerji tüketimi analiz etmenize yardımcı olur. Enerjisini pilden alan bir aygıtta çok fazla enerji kullanan bir uygulama, çok fazla müşteri memnuniyetsizliğine neden olabilir ve sonunda müşteriler uygulamayı kaldırmaya da karar verebilir. Enerji kullanımını en iyi duruma getirme, uygulamanızın benimseme artırmak ve müşteriler tarafından kullanın.  
@@ -106,7 +106,7 @@ if (performance && performance.mark) {
      Visual Studio toplanan verileri analiz eder ve sonuçları görüntüler.  
   
 ##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a>Yüklü bir uygulama için enerji profil verilerini topla  
- Enerji Tüketimi aracı yalnızca, bir Visual Studio çözümünden başlatılan veya Windows mağazasından yüklenen Windows Store 8.1 uygulamalarında çalıştırılabilir. Bir çözümü Visual Studio'da açıkken, varsayılan hedef olduğu **başlangıç projesi**. Yüklü bir uygulamayı hedeflemek için:  
+ Enerji tüketimi aracı yalnızca, bir Visual Studio çözümü başlatıldığında veya Microsoft Store yüklü UWP uygulamaları çalıştırılabilir. Bir çözümü Visual Studio'da açıkken, varsayılan hedef olduğu **başlangıç projesi**. Yüklü bir uygulamayı hedeflemek için:  
   
 1.  Seçin **değişiklik hedef** ve ardından **yüklü App**.  
   

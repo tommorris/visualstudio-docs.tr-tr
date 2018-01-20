@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 628aad6f1ae097ea040a6043db1ef12f0b60a7a4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Desteklenen kod değişiklikleri (C# ve Visual Basic)
 Düzenle ve devam et türlerinin çoğunu kod değişiklikleri yöntem gövdeleri içinde işler. Yöntem gövdeleri dışında çoğu değişiklikler ve yöntem gövdeleri içinde bazı değişiklikler, ancak hata ayıklama sırasında uygulanamaz. Desteklenmeyen bu değişiklikleri uygulamak için hata ayıklamayı durdurun ve kod yeni bir sürümü ile yeniden başlatmanız gerekir.
@@ -86,7 +86,7 @@ Aşağıdaki tablo, C# ve Visual Basic kodu için hata ayıklama oturumu sıras�
 
 ## <a name="unsupported-app-scenarios"></a>Desteklenmeyen app senaryoları
 
-Desteklenmeyen uygulamalar ve platformlar ASP.NET 5, Silverlight 5, Windows Phone ve Windows Phone öykünücüsü ve Windows 8.1 içerir.
+Desteklenmeyen uygulamalar ve platformlar ASP.NET 5, Silverlight 5 ve Windows 8.1 içerir.
 
 > [!NOTE]
 > Desteklenen uygulamalar dahil UWP Windows 10 ve .NET Framework 4.6 hedef x86 hem x64 uygulamaları (yalnızca masaüstü sürümü .NET Framework'dur) masaüstü veya sonraki sürümleri.

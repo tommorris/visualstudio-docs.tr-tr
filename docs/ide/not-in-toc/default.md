@@ -13,14 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: ee8571d14edced4b4bd4f20fc0799c9391f23515
-ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
+ms.openlocfilehash: d595d97c0f8d9e58f02764c8e06e4a3057184daa
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 01/22/2018
 ---
 # F1 Yardımı
 
-Burada yanlışlıkla landed gibi görünüyor. Bir anahtar sözcüğü veya API adı F1 Yardımı arıyorsanız, imleci yalnızca sağındaki tuşlarına basarak önce adı konumlandırılır emin olun **F1**. Hala çalışmazsa, lütfen https://docs.microsoft.com bir arama deneyin.
+Burada yanlışlıkla landed gibi görünüyor. Bir anahtar sözcüğü veya API adı F1 Yardımı arıyorsanız, imleç içinde veya yalnızca sağındaki tuşlarına basarak önce word'ün konumlandırılır emin olun **F1**. Hala çalışmazsa, lütfen https://docs.microsoft.com bir arama deneyin.
 
 Metin Düzenleyici ilgili Yardım arıyorsanız, bkz: [Düzenleyici'de kod yazma](../../ide/writing-code-in-the-code-and-text-editor.md).

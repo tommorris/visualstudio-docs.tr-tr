@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d6e879e8708c55ebb5ebdd5980bd70ea1e4a97d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb9b5119659600b4bfd902e61eda70a85b645efd
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="create-solutions-and-projects"></a>Çözümler ve projeler oluşturma
 
@@ -81,7 +81,7 @@ Kod kaynak dosyaları koleksiyonu varsa, bunları projeye kolayca ekleyebilirsin
 1. Sihirbazı'nda, dosyaların konumuna göz atın ve ardından yeni projede için bir ad girin **adı** kutusu. İşiniz bittiğinde seçin **son** düğmesi.
 
 > [!NOTE]
-> Bu seçenek, dosyaların görece basit koleksiyonlar için en iyi çalışır. Şu anda yalnızca Visual C++, Apache Cordova, Visual Basic ve Visual C# proje türleri desteklenir.
+> Bu seçenek oldukça basit bir koleksiyonun dosyaların en iyi şekilde çalışır. Şu anda yalnızca Visual C++, Apache Cordova, Visual Basic ve Visual C# proje türleri desteklenir.
 
 ## <a name="add-files-to-a-solution"></a>Bir çözüme dosyaları ekleme
 

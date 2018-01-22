@@ -15,17 +15,17 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6c75991ed6c55d7905bcaaca5947f7f32897ab14
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d87beb4e8f475bd52c5be7f1d75f27ecf3b691ac
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="using-the-cookiecutter-extension"></a>Cookiecutter uzantısını kullanarak
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) şablonları bulmak, şablon seçenekleri giriş ve projeler ve dosyaları oluşturmak için bir grafik kullanıcı arabirimi sağlar. Visual Studio 2017 ile eklemiştir ve Visual Studio'nun önceki sürümleri ayrı olarak yüklenebilir.
 
-Cookiecutter gerektirir Python 3.3 veya üzeri (32 bit veya 64 bit) veya Anaconda 3 4.2 veya üzeri (32 bit veya 64 bit). Uygun bir Python yorumlayıcısı kullanılabilir değilse, Visual Studio bir uyarı görüntüler. Visual Studio çalışırken bir Python yorumlayıcısı yüklerseniz, yeni yüklenen yorumlayıcı algılamak için Cookiecutter araç çubuğundaki Giriş düğmesini tıklatın. (Bkz [Python ortamları](python-environments.md) genel ortamları hakkında daha fazla bilgi için.)
+Cookiecutter gerektirir Python 3.3 veya üzeri (32 bit veya 64 bit) veya Anaconda 3 4.2 veya üzeri (32 bit veya 64 bit). Uygun bir Python yorumlayıcısı kullanılabilir değilse, Visual Studio bir uyarı görüntüler. Visual Studio çalışırken bir Python yorumlayıcısı yüklerseniz, yeni yüklenen yorumlayıcı algılamak için Cookiecutter araç çubuğundaki Giriş düğmesini tıklatın. (Bkz [Python ortamları](managing-python-environments-in-visual-studio.md) genel ortamları hakkında daha fazla bilgi için.)
 
 Bir kez yüklendikten sonra seçin **Görünüm > Cookiecutter Explorer** onun penceresi açmak için:
 
@@ -211,18 +211,18 @@ Son betik ise `.sh`, sonra da Windows makinenizde bir uygulamayla ilişkili olma
 
 Kopya hataları:
 
-- **wildfish/cookiecutter-django-crud** (geçersiz karakter `|` alt klasör adı)
+- **wildfish/cookiecutter-django-crud** (invalid character `|` in subfolder name)
 - **cookiecutter pyvanguard** (geçersiz karakter `|` alt klasör adı)
 
 Yükleme Hataları:
 
-- **chrisdev/wagtail-cookiecutter-foundation** (bir boolean türü içinde cookiecutter.json kullanır)
-- **cookiecutter/quintoandar-android** (hiçbir şablon klasör)
+- **chrisdev/wagtail-cookiecutter-foundation** (uses a boolean type in cookiecutter.json)
+- **quintoandar/cookiecutter-android** (no template folder)
 
 Hataları çalıştırın:
 
-- **iknite/cookiecutter-ansible-role** (son kanca betik, konsol giriş gerektirir)
-- **benregn/cookiecutter-django-ansible** (Jinja hatası)
+- **iknite/cookiecutter-ansible-role** (post hook script requires console input)
+- **benregn/cookiecutter-django-ansible** (Jinja error)
 
 Kullanır bash (önemli değildir):
 

@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 10da44e4766fa3a68a0f4d70a4c1e89f3f9ccf65
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 32e2f0d889bac5313201fd65bf98ce2a8243a284
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Azure uygulama hizmeti yayımlama
 
@@ -44,7 +44,7 @@ Bu konuda:
 
 Bu kılavuz için Bottle, Flask ve Django çerçevesinde tabanlı bir web uygulaması projesi gerekir. Henüz bir proje yok ve yayımlama işlemi denemek istiyorsanız bir basit test projesi gibi oluşturun:
 
-1. Visual Studio'da seçin **Dosya > Yeni > Proje**, "Bottle" için arama yapın, seçin **Bottle Web projesi**belirtin ve ad proje için bir yol tıklatıp **Tamam**. (Bottle şablonu ile Python geliştirme iş yükü bulunur; bkz [yükleme](installation.md).)
+1. Visual Studio'da seçin **Dosya > Yeni > Proje**, "Bottle" için arama yapın, seçin **Bottle Web projesi**belirtin ve ad proje için bir yol tıklatıp **Tamam**. (Bottle şablonu ile Python geliştirme iş yükü bulunur; bkz [yükleme](installing-python-support-in-visual-studio.md).)
 
 1. Seçerek dış paketleri yüklemek için istemleri izleyin **sanal bir ortama yükleme** ve sanal ortam için tercih edilen temel yorumlayıcı. Uygulama hizmeti yüklü Python sürümü ile bu seçenek genellikle Bul.
 

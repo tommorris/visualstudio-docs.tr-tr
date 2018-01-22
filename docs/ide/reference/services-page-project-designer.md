@@ -1,7 +1,7 @@
 ---
 title: "Hizmetler Sayfası, Proje Tasarımcısı | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -11,32 +11,30 @@ f1_keywords: vb.ProjectPropertiesServices
 helpviewer_keywords:
 - Services page in Project Designer
 - Project Designer, Services page
-ms.assetid: 6dd9e0fa-acba-4d7d-b081-705b0fc86ff5
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3a44dc8304274bf0633e891690f6b34d2637dfa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 218f75c57d27cd424324eff8987561e9bee25e93
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="services-page-project-designer"></a>Hizmetler Sayfası, Proje Tasarımcısı
-İstemci uygulama hizmetleri sağlamak için Basitleştirilmiş erişim [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] oturum açma, roller ve Windows Forms ve Windows Presentation Foundation (WPF) uygulamalardan profili Hizmetleri. Kullanabileceğiniz **Hizmetleri** sayfasında **Proje Tasarımcısı** etkinleştirmek ve istemci uygulama hizmetleri projeniz için yapılandırmak için.  
+
+İstemci uygulama hizmetleri sağlamak için Basitleştirilmiş erişim [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] oturum açma, roller ve Windows Forms ve Windows Presentation Foundation (WPF) uygulamalardan profili Hizmetleri. Kullanabileceğiniz **Hizmetleri** sayfasında **Proje Tasarımcısı** etkinleştirmek ve istemci uygulama hizmetleri projeniz için yapılandırmak için.
+
+İstemci uygulama hizmetleri ile kullanıcıların kimliğini doğrulamak, her kullanıcının atanmış veya rol belirlemek ve ağ üzerinden paylaşabilirsiniz kullanıcı başına uygulama ayarlarını depolamak için merkezi bir sunucu kullanabilirsiniz. Daha fazla bilgi için bkz: [istemci uygulama hizmetleri](/dotnet/framework/common-client-technologies/client-application-services).
+
+Erişim için **Hizmetleri** sayfası, proje düğümü seçin **Çözüm Gezgini**ve ardından **özellikleri** üzerinde **proje** menüsü. Zaman **Proje Tasarımcısı** görünen tıklatın **Hizmetleri** sekmesi.
+
+## <a name="task-list"></a>Görev Listesi
+
+[Nasıl Yapılır: İstemci Uygulama Servislerini Yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
   
- İstemci uygulama hizmetleri ile kullanıcıların kimliğini doğrulamak, her kullanıcının atanmış veya rol belirlemek ve ağ üzerinden paylaşabilirsiniz kullanıcı başına uygulama ayarlarını depolamak için merkezi bir sunucu kullanabilirsiniz. Daha fazla bilgi için bkz: [istemci uygulama hizmetleri](/dotnet/framework/common-client-technologies/client-application-services).  
-  
- Erişim için **Hizmetleri** sayfası, proje düğümü seçin **Çözüm Gezgini**ve ardından **özellikleri** üzerinde **proje** menüsü. Zaman **Proje Tasarımcısı** görünen tıklatın **Hizmetleri** sekmesi.  
-  
-> [!NOTE]
->  İstemci uygulama hizmetleri .NET Framework'ün tam sürümünü gerektirir ve .NET Framework istemci profili desteklenmez. Varsa **etkinleştirmek istemci uygulama hizmetleri** onay kutusu devre dışıysa, doğrulayın **hedef framework** .NET Framework 3.5 veya daha üstüne ayarlanmalıdır. Görüntülemek için **hedef framework** C# ' ta ayarlama, Proje Tasarımcısı'nı açın ve ardından **uygulama** sayfası. Görüntülemek için **hedef framework** Visual Basic'te ayarlama, Proje Tasarımcısı açın, **derleme** sayfasında ve ardından **Gelişmiş derleme seçenekleri**.  
-  
-## <a name="task-list"></a>Görev Listesi  
- [Nasıl Yapılır: İstemci Uygulama Servislerini Yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
-  
-## <a name="uielement-list"></a>UIElement Listesi  
+## <a name="uielement-list"></a>UIElement Listesi
+
  **Yapılandırma**  
  Bu denetim, bu sayfada düzenlenebilir değil. Bu denetim açıklaması için bkz: [derleme sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) veya [derleme sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md).  
   
@@ -67,9 +65,10 @@ ms.lasthandoff: 12/22/2017
  **Gelişmiş**  
  Açılır [Hizmetleri iletişim kutusu için Gelişmiş ayarları](../../ide/reference/advanced-settings-for-services-dialog-box.md), hangi varsayılan davranışı geçersiz kılma kullanabilirsiniz. Örneğin, yerel dosya sistemine kullanmak yerine çevrimdışı depolama için bir veritabanı belirtmek için bu iletişim kutusunu kullanabilirsiniz. Daha fazla bilgi için bkz: [Hizmetleri iletişim kutusu için Gelişmiş ayarları](../../ide/reference/advanced-settings-for-services-dialog-box.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İstemci uygulama hizmetleri](/dotnet/framework/common-client-technologies/client-application-services)   
- [Hizmetleri iletişim kutusu için Gelişmiş ayarlar](../../ide/reference/advanced-settings-for-services-dialog-box.md)   
- [Nasıl yapılır: istemci uygulama hizmetlerini yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)   
- [Derle sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
- [Derleme Sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md)   
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İstemci uygulama hizmetleri](/dotnet/framework/common-client-technologies/client-application-services)   
+[Hizmetleri iletişim kutusu için Gelişmiş ayarlar](../../ide/reference/advanced-settings-for-services-dialog-box.md)   
+[Nasıl yapılır: istemci uygulama hizmetlerini yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)   
+[Derle sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
+[Derleme Sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md)   

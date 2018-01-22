@@ -15,19 +15,19 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 87fdca001430acc1ecef7e69b9afc2123dedafd0
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 4cc18515fd0fa2c24eb38e78f7be315e865f94d0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da bir şablondan bir Python projesi oluşturma
 
-Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installation.md), şablonları, çeşitli kullanarak yeni bir Python proje oluşturmak kolaydır.
+Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installing-python-support-in-visual-studio.md), şablonları, çeşitli kullanarak yeni bir Python proje oluşturmak kolaydır.
 
 1. Visual Studio'yu başlatın.
 
-1. Seçin **Dosya > Yeni > Proje** (Ctrl + Shift + N). İçinde **yeni proje** iletişim, arama "Python" ve istediğiniz şablonu seçin. Bir şablon seçerek şablonu sağlar kısa bir açıklama görüntüler unutmayın. (Ayrıca bkz. [Python projeleri](python-projects.md#project-templates).)
+1. Seçin **Dosya > Yeni > Proje** (Ctrl + Shift + N). İçinde **yeni proje** iletişim, arama "Python" ve istediğiniz şablonu seçin. Bir şablon seçerek şablonu sağlar kısa bir açıklama görüntüler unutmayın. (Ayrıca bkz. [Python projeleri](managing-python-projects-in-visual-studio.md#project-templates).)
 
     ![Python şablonuyla VS2017 yeni proje iletişim kutusu](media/projects-new-project-dialog2.png)
 
@@ -87,10 +87,10 @@ Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installation.md)
 ## <a name="next-steps"></a>Sonraki adımlar
 
 > [!div class="nextstepaction"]
-> [Öğretici: Visual Studio'da Python ile çalışma](vs-tutorial-01-01.md)
+> [Öğretici: Visual Studio'da Python ile çalışma](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Varolan bir Python yorumlayıcısı için bir ortam oluşturma](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Python desteği Visual Studio 2015 ve daha önce yükleme](installation.md).
-- [Konumları yüklemek](installation.md#install-locations).
+- [Varolan bir Python yorumlayıcısı için bir ortam oluşturma](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Python desteği Visual Studio 2015 ve daha önce yükleme](installing-python-support-in-visual-studio.md).
+- [Konumları yüklemek](installing-python-support-in-visual-studio.md#install-locations).

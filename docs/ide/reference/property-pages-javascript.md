@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6665452bd074c083216120732cff8a3f18a74dca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4e4f01a74a3246a326c1695371a303472901c9ea
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="property-pages-javascript"></a>Özellik Sayfaları, JavaScript
 **Özellik sayfaları**proje ayarlarına erişim sağlar. Görünür sayfalarını kullanabilirsiniz **özellik sayfaları** proje özelliklerini değiştirmek için.  
@@ -68,11 +68,11 @@ Aşağıdaki sayfaları ve seçenekleri görünür **özellik sayfaları**.
  **Hata ayıklayıcı başlatmak için**  
  Hata ayıklayıcı için varsayılan ana bilgisayar belirtir.  
 
--   Seçin **yerel makine** Visual Studio ana bilgisayara uygulamayı başlatmak için. Daha fazla bilgi için bkz: [yerel makine üzerinde çalışan uygulamalar](http://go.microsoft.com/fwlink/?LinkId=234912).  
+-   Seçin **yerel makine** Visual Studio ana bilgisayara uygulamayı başlatmak için. Daha fazla bilgi için bkz: [yerel makine üzerinde çalışan uygulamalar](../../debugger/run-windows-store-apps-on-the-local-machine.md).  
 
--   Seçin **Simulator** Benzeticisinde uygulamayı başlatmak için. Daha fazla bilgi için bkz: [benzeticisinde çalışan uygulamalar](http://go.microsoft.com/fwlink/?LinkId=234913).  
+-   Seçin **Simulator** Benzeticisinde uygulamayı başlatmak için. Daha fazla bilgi için bkz: [benzeticisinde çalışan uygulamalar](../../debugger/run-windows-store-apps-in-the-simulator.md).  
 
--   Seçin **uzak makine** uzak bir bilgisayarda uygulamayı başlatmak için. Uzaktan hata ayıklama hakkında daha fazla bilgi için bkz: [uzak makinede çalışan uygulamalar](http://go.microsoft.com/fwlink/?LinkId=234914).  
+-   Seçin **uzak makine** uzak bir bilgisayarda uygulamayı başlatmak için. Uzaktan hata ayıklama hakkında daha fazla bilgi için bkz: [uzak makinede çalışan uygulamalar](../../debugger/run-windows-store-apps-on-a-remote-machine.md).  
 
 **Uygulama başlatma**  
 F5 tuşuna basın veya'i tıklattığınızda uygulama başlatılıp başlatılmayacağını belirtir **hata ayıklama**, **hata ayıklamayı Başlat**. Seçin **Evet** için uygulamayı Başlat; Aksi halde seçin **Hayır**. Seçerseniz **Hayır**, başlatmak için farklı bir yöntem kullanıyorsanız uygulama hala ayıklayabilirsiniz.  

@@ -2,7 +2,7 @@
 title: "Visual Studio yükleme için komut satırı parametresi örnekleri | Microsoft Docs"
 ms.custom: 
 ms.date: 05/06/2017
-ms.reviewer: tims
+ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
@@ -12,11 +12,11 @@ author: timsneath
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4729300eea0a4e1474779edd4bec021a5db9e73c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f91810f53a27cc988c44e6c283364bb2d29e39e0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Visual Studio 2017 yükleme için komut satırı parametresi örnekleri
 Göstermek için nasıl [Visual Studio'yu yüklemek için komut satırı parametrelerini kullanmak](use-command-line-parameters-to-install-visual-studio.md), gereksinimlerinize göre özelleştirebileceğiniz bazı örnekleri aşağıda bulabilirsiniz.
@@ -35,6 +35,15 @@ vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
 ```
+
+* Hiçbir etkileşimli istemleri ancak görüntülenen ilerleme komut satırını kullanarak bir Visual Studio örneği güncelleştirin:
+```
+vs_enterprise.exe --update --quiet --wait
+vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
+```
+
+> [!NOTE]
+> Her iki komutları gereklidir. İlk komut, Visual Studio yükleyicisi güncelleştirir. İkinci komut, Visual Studio örneğini güncelleştirir. Bir kullanıcı hesabı denetimi iletişim önlemek için komut istemini yönetici olarak çalıştırın. 
 
 * Visual Studio'nun Masaüstü örneği sessiz bir şekilde, yalnızca ürün yüklendiğinde döndürme Fransızca Dil Paketi ile yükleyin.
 ```

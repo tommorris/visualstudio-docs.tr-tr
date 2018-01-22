@@ -17,11 +17,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 9b3f46a0e4fb87e6064fb3e975cd6b7313270c13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 699f9176fd39cacaf2bb4f433cd9d2ceb8e326b5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Temel Proje sistem oluşturma, bölüm 2
 Bu serideki ilk izlenecek [temel bir proje sistem bölümü 1 oluşturma](../extensibility/creating-a-basic-project-system-part-1.md), temel proje sistem oluşturulacağını gösterir. Bu kılavuz, Visual Studio şablonu, bir özellik sayfası ve diğer özellikleri ekleyerek temel proje sistemde oluşturur. Bu yüklemeye başlamadan önce ilk izlenecek tamamlamanız gerekir.  
@@ -283,19 +283,19 @@ ZipProjects:
   
 -   $safeprojectname$ olan bir kullanıcı tarafından sağlanan adı **yeni proje** iletişim kutusunda, tüm güvenli olmayan karakterleri ve boşlukları kaldırmak için değiştirdi.  
   
- Şablon parametreleri tam bir listesi için bkz: [şablon parametreleri](../ide/template-parameters.md).  Kendi özel şablon parametresi oluşturmak istiyorsanız, bkz: [NIB: nasıl yapılır: özel parametreler şablonlarına geçirmek](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+ Şablon parametreleri tam bir listesi için bkz: [şablon parametreleri](../ide/template-parameters.md).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Proje şablonu parametreleri değiştirmek için  
   
 1.  SimpleProjectNode.cs dosyasında kaldırın `AddFileFromTemplate` yöntemi.  
   
-2.  \Templates\Projects\ConsoleApp\SimpleProject.myproj dosyasında bulun \<RootNamespace > özelliği ve değerini $safeprojectname$ olarak değiştirin.  
+2.  In the \Templates\Projects\ConsoleApp\SimpleProject.myproj file, locate the \<RootNamespace> property and change its value to $safeprojectname$.  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  
     ```  
   
-3.  \Templates\Projects\SimpleProject\Program.cs dosyasında, dosyanın içeriğini aşağıdaki kodla değiştirin:  
+3.  In the \Templates\Projects\SimpleProject\Program.cs file, replace the contents of the file with the following code:  
   
     ```  
     using System;  

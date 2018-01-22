@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 620e847b9da1e8becf2df66d070a290071248d84
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 509d8b001ff00f754df8cec0cc08194dbfc2ff3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Birim testi için Python kodu ayarlama
 
@@ -35,7 +35,7 @@ Bu konuda birim Visual Studio'da Python ile yetenekleri testi kısa bir özeti v
 
 Kurala göre Visual Studio testleri tanımlayan olan adları başlayan ile yöntemleri olarak `test`. Bu davranış görmek için aşağıdakileri yapın:
 
-1. Açık bir [Python proje](python-projects.md) Visual Studio'da yüklenen, projenize sağ tıklayın, **Ekle > Yeni öğe...** seçeneğini belirleyip **Python birim testi** arkasından **Ekle**.
+1. Açık bir [Python proje](managing-python-projects-in-visual-studio.md) Visual Studio'da yüklenen, projenize sağ tıklayın, **Ekle > Yeni öğe...** seçeneğini belirleyip **Python birim testi** arkasından **Ekle**.
 
 1. Bu eylem oluşturur bir `test1.py` standart alır kod dosyasıyla `unittest` modülü, bir test sınıfından türetilen `unittest.TestCase`ve çağırır `unittest.main()` betik doğrudan çalıştırırsanız:
 
@@ -92,7 +92,7 @@ Hata ayıklamayı başlatma, kodunuzda ilk bir kesme noktası belirleyerek sonra
 
 ![Bir test hata ayıklama](media/unit-test-debugging.png)
 
-De kullanabilirsiniz **Seçili testler için kod kapsamı analiz** ve **profil Test** Visual Studio sürümünüze bağlı komutları (bkz [özellikleri matris](python-in-visual-studio.md#features-matrix)).
+De kullanabilirsiniz **Seçili testler için kod kapsamı analiz** ve **profil Test** Visual Studio sürümünüze bağlı komutları (bkz [özellikleri matris](overview-of-python-tools-for-visual-studio.md#features-matrix)).
 
 ### <a name="known-issues"></a>Bilinen Sorunlar
 

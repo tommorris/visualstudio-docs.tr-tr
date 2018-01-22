@@ -1,7 +1,7 @@
 ---
 title: "Yaygın MSBuild proje özellikleri | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-sdk
@@ -23,11 +23,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b78c2c1276f04a53a4f7a01e70a7d98efdba0514
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c70427c2dd1e2c7ceb071867b876750121445dde
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild Proje Özellikleri
 Aşağıdaki tabloda sık Visual Studio Proje dosyasında tanımlanan özellikler kullanılan veya sağlayan MSBuild .targets dosyasında bulunur.  
@@ -73,21 +73,20 @@ Aşağıdaki tabloda sık Visual Studio Proje dosyasında tanımlanan özellikle
 |FrameworkPathOverride|Mscorlib.dll ve Microsoft.VisualBasic.dll içinde konumunu belirtir. Bu parametre eşdeğerdir `/sdkpath` vbc.exe derleyici anahtar.|  
 |GenerateDocumentation|(Visual Basic yalnızca .NET) Belge yapı tarafından oluşturulup oluşturulmayacağını belirten bir boolean parametresiyle. Varsa `true`, yapı belgeleri bilgisi oluşturur ve yürütülebilir dosya veya derleme görevi oluşturulan kitaplığı adı ile birlikte bir .xml dosyasına yerleştirir.|
 |IntermediateOutputPath|Türetilen gibi tam Ara çıkış yolu `BaseIntermediateOutputPath`yol belirtilmezse,. Örneğin, \obj\debug\\. Bu özellik kılınırsa sonra ayarlayarak `BaseIntermediateOutputPath` hiçbir etkisi olmaz.|  
-|AnahtarKapsayıcıAdı|Güçlü ad anahtar kapsayıcısı adı.|  
+|KeyContainerName|Güçlü ad anahtar kapsayıcısı adı.|  
 |KeyOriginatorFile|Güçlü ad anahtar dosyası adı.|  
-|NoWin32Manifest|Derleyici çıktı derlemeye Varsayılan Win32 bildirimi oluşturur olup olmadığını belirler. Varsayılan değer olan `false` tüm uygulamalar için varsayılan Win32 bildirimi oluşturulması anlamına gelir. Bu özellik eşdeğerdir `/nowin32manifest` vbc.exe derleyici anahtarı.|  
 |ModuleAssemblyName|Derlenmiş modülü birleştirilir derlemesini adı. Özellik eşdeğerdir `/moduleassemblyname` derleyici anahtar.|  
 |NoLogo|Kapatılmasına derleyici logosu isteyip istemediğinizi gösteren bir Boole değeri. Bu özellik eşdeğerdir `/nologo` derleyici anahtar.|  
 |NoStdLib|Standart Kitaplığı (mscorlib.dll) başvuran önlemek gösterir bir Boole değeri. Varsayılan değer `false` şeklindedir.|  
 |NoVBRuntimeReference|Gösteren bir Boole değeri olup olmadığını [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] çalışma zamanı (Microsoft.VisualBasic.dll içinde) bir başvuru proje olarak eklendi.|  
-|NoWin32Manifest|Kullanıcı Hesabı Denetimi (UAC) bildirim bilgileri uygulamada ekli olup olmadığını gösteren bir Boole değeri çalıştırılabilir. Yalnızca hedefleyen Visual Studio projelerine yöneliktir [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Kullanılarak dağıtılan projelerinde [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ve Kayıtsız COM, bu öğe göz ardı edilir. `False`Kullanıcı Hesabı Denetimi (UAC) bildirim bilgileri uygulamanın yürütülebilir dosya gömülmesi (varsayılan değer) belirtir. `True`UAC bildirim bilgileri değil gömülmesi belirtir.<br /><br /> Bu özellik yalnızca geçerlidir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeleri hedefleyen [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Kullanılarak dağıtılan projelerinde [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ve Kayıtsız COM, bu özellik yoksayılır.<br /><br /> Yalnızca, istemiyorsanız NoWin32Manifest eklemelisiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] herhangi bildirimi katıştırmak için uygulamasında bilgilerini çalıştırılabilir; bu işlem çağrılırken *sanallaştırma*. Sanallaştırma kullanmak üzere ayarlanmış `<ApplicationManifest>` birlikte `<NoWin32Manifest>` gibi:<br /><br /> -İçin [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projeleri, kaldırma `<ApplicationManifest>` düğümü. (İçinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projeleri, `<NoWin32Manifest>` zaman göz ardı edilir bir `<ApplicationManifest>` düğüm var..)<br />-İçin [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeleri, ayarlayın `<ApplicationManifest>` için `False` ve `<NoWin32Manifest>` için `True`. (İçinde [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeleri, `<ApplicationManifest>` geçersiz kılmaları `<NoWin32Manifest>`.)|  
+|NoWin32Manifest|Kullanıcı Hesabı Denetimi (UAC) bildirim bilgileri uygulamada ekli olup olmadığını gösteren bir Boole değeri çalıştırılabilir. Yalnızca hedefleyen Visual Studio projelerine yöneliktir [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Kullanılarak dağıtılan projelerinde [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ve Kayıtsız COM, bu öğe göz ardı edilir. `False`Kullanıcı Hesabı Denetimi (UAC) bildirim bilgileri uygulamanın yürütülebilir dosya gömülmesi (varsayılan değer) belirtir. `True`UAC bildirim bilgileri değil gömülmesi belirtir.<br /><br /> Bu özellik yalnızca geçerlidir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeleri hedefleyen [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Kullanılarak dağıtılan projelerinde [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ve Kayıtsız COM, bu özellik yoksayılır.<br /><br /> Yalnızca, istemiyorsanız NoWin32Manifest eklemelisiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] herhangi bildirimi katıştırmak için uygulamasında bilgilerini çalıştırılabilir; bu işlem çağrılırken *sanallaştırma*. Sanallaştırma kullanmak üzere ayarlanmış `<ApplicationManifest>` birlikte `<NoWin32Manifest>` gibi:<br /><br /> -İçin [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projeleri, kaldırma `<ApplicationManifest>` düğümü. (İçinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projeleri, `<NoWin32Manifest>` zaman göz ardı edilir bir `<ApplicationManifest>` düğüm var..)<br />-İçin [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeleri, ayarlayın `<ApplicationManifest>` için `False` ve `<NoWin32Manifest>` için `True`. (İçinde [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeleri, `<ApplicationManifest>` geçersiz kılmaları `<NoWin32Manifest>`.)<br /> Bu özellik eşdeğerdir `/nowin32manifest` vbc.exe derleyici anahtarı.|  
 |En iyi duruma getirme|Bir Boole değeri, ayarlandığında `true`, derleyici iyileştirmeler sağlar. Bu özellik eşdeğerdir `/optimize` derleyici anahtar.|  
 |OptionCompare|Dize karşılaştırmaları nasıl yapılacağını belirtir. Geçerli değerler "ikili" veya "metin": Bu özellik eşdeğerdir `/optioncompare` vbc.exe derleyici anahtarı.|  
-|Option Explicit|Bir Boole değeri, ayarlandığında `true`, kaynak kodundaki değişkenlerin açıkça bildirilmesini gerektirir. Bu özellik eşdeğerdir `/optionexplicit` derleyici anahtar.|  
+|OptionExplicit|Bir Boole değeri, ayarlandığında `true`, kaynak kodundaki değişkenlerin açıkça bildirilmesini gerektirir. Bu özellik eşdeğerdir `/optionexplicit` derleyici anahtar.|  
 |OptionInfer|Bir Boole değeri, ayarlandığında `true`, etkinleştirir değişkenlerin çıkarım yazın. Bu özellik eşdeğerdir `/optioninfer` derleyici anahtar.|  
 |OptionStrict|Bir Boole değeri, ayarlandığında `true`, örtük tür dönüşümleri kısıtlamak için kesin türü anlamları zorlamak derleme görevi neden olur. Bu özellik eşdeğerdir `/optionstrict` vbc.exe derleyici anahtar.|  
 |OutputPath|Örneğin, "bin\Debug" proje dizine göreli çıktı dizini yolunu belirtir.|  
-|OutputType|Çıkış dosyasının dosya biçimini belirtir. Bu parametre aşağıdaki değerlerden biri olabilir:<br /><br /> -Kitaplığı. Bir kod kitaplığı oluşturur. (Varsayılan değeri.)<br />-Exe. Bir konsol uygulaması oluşturur.<br />-Modül. Bir modül oluşturur.<br />-Winexe. Windows tabanlı bir program oluşturur.<br /><br /> Bu özellik eşdeğerdir `/target` vbc.exe derleyici anahtar.|  
+|OutputType|Çıkış dosyasının dosya biçimini belirtir. Bu parametre aşağıdaki değerlerden biri olabilir:<br /><br /> -Kitaplığı. Bir kod kitaplığı oluşturur. (Varsayılan değeri.)<br />-Exe. Bir konsol uygulaması oluşturur.<br />-Modül. Bir modül oluşturur.<br />-   Winexe. Windows tabanlı bir program oluşturur.<br /><br /> Bu özellik eşdeğerdir `/target` vbc.exe derleyici anahtar.|  
 |OverwriteReadOnlyFiles|Salt okunur dosyalar üzerine veya bir hata tetiklemek için yapı etkinleştirmek isteyip istemediğinizi gösteren bir Boole değeri.|  
 |PdbFile|Yayma .pdb dosyasının dosya adı. Bu özellik eşdeğerdir `/pdb` csc.exe derleyici anahtar.|  
 |Platform|İçin oluşturmakta olduğunuz işletim sistemi. Geçerli değerler "Herhangi bir CPU", "x 86" ve "x64" dir.|  
@@ -119,7 +118,7 @@ Aşağıdaki tabloda sık Visual Studio Proje dosyasında tanımlanan özellikle
 |Satellite_Win32Resource|Win32 kaynak (.res dosyası) uydu derlemesini ekler.|  
 |SubsystemVersion|En düşük sürüm oluşturulan yürütülebilir dosyasını kullanabilirsiniz alt sisteminin belirtir. Bu özellik eşdeğerdir `/subsystemversion` derleyici anahtar. Bu özelliğin varsayılan değeri hakkında daha fazla bilgi için bkz: [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) veya [/subsystemversion (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option).|  
 |TargetCompactFramework|Oluşturmakta olduğunuz uygulamayı çalıştırmak için gerekli .NET Compact Framework sürümü. Bu belirleme, aksi takdirde başvurmak mümkün olmayabilir belirli framework derlemeleri başvuru sağlar.|  
-|targetFrameworkVersion|Sürümü [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] oluşturmakta olduğunuz uygulamayı çalıştırmak için gereklidir. Bu belirleme, aksi takdirde başvurmak mümkün olmayabilir belirli framework derlemeleri başvuru sağlar.|  
+|TargetFrameworkVersion|Sürümü [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] oluşturmakta olduğunuz uygulamayı çalıştırmak için gereklidir. Bu belirleme, aksi takdirde başvurmak mümkün olmayabilir belirli framework derlemeleri başvuru sağlar.|  
 |TreatWarningsAsErrors|Boole parametresi, varsa `true`, hata olarak kabul edilmesi tüm uyarıları neden olur. Bu parametre eşdeğerdir `/nowarn` derleyici anahtar.|  
 |UseHostCompilerIfAvailable|Boole parametresi, varsa `true`, kullanılabilir durumdaysa işlem içi derleyicisi nesnesini kullanmak derleme görevi neden olur. Bu parametre yalnızca kullanılan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |Utf8Output|Boole parametresi, varsa `true`, Derleyici çıktısı UTF-8 kodlaması kullanarak günlüğe kaydeder. Bu parametre eşdeğerdir `/utf8Output` derleyici anahtar.|  

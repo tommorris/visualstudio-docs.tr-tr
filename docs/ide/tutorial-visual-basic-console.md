@@ -13,11 +13,11 @@ ms.author: tglee
 manager: ghogen
 dev_langs: vb
 ms.workload: multiple
-ms.openlocfilehash: 1ceda9e53426255331c85996b54378a91324a3fa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Visual Basic Visual Studio ile çalışmaya başlama
 Bu öğreticide için Visual Basic (VB), oluşturmak ve birkaç farklı konsol uygulamaları çalıştırmak için Visual Studio'yu kullanın ve bazı Visual Studio özelliklerini keşfedin [tümleşik geliştirme ortamı (IDE)](visual-studio-ide.md) bunu yaparken.
@@ -82,11 +82,11 @@ Görmüyorsanız, **konsol uygulaması (.NET Core)** proje şablonu, alabilirsin
      Console.ReadKey(True)
     ```
 
-    Bu kod varolan değiştirir [Console.WriteLine](/dotnet/api/system.console.writeline?view=netframework-4.7.1), [Console.Write](/dotnet/api/system.console.write?view=netframework-4.7.1), ve [Console.ReadKey]() deyimleri.
+    Bu kod varolan değiştirir <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, ve <xref:System.Console.ReadKey%2A> deyimleri.
 
  ![Kod penceresi ne olduğunu adınız kodu gösterme](../ide/media/vb-codewindow-what-name.png)
 
-3. Konsol penceresi açıldığında, adınızı girin. Konsol penceresinde aşağıdaki ekran görüntüsüne benzer görünmelidir:       
+3. Konsol penceresi açıldığında, adınızı girin. Konsol penceresinde aşağıdaki ekran görüntüsüne benzer görünmelidir:
 
    ![Pencere ne olduğunu adınız, tarih ve saati gösteren konsol ve ileti devam etmek için herhangi bir tuşa basın](../ide/media/vb-console-what-name.png)
 

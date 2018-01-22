@@ -17,11 +17,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: e350b3dfcf6b36cc93450affa34ae7bf5ac26330
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2cb6db61048765ec577a0d14ff4079f78e013219
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 Görüntülenecek iletiyi alır.  
@@ -56,7 +56,7 @@ int GetMessage(
  [out] İleti döndürür.  
   
  `pdwType`  
- [out] Win32 kuralları kullanarak iletisinin türü döndürür `MessageBox` işlevi. Bkz: [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8) Ayrıntılar için işlevi.  
+ [out] Win32 kuralları kullanarak iletisinin türü döndürür `MessageBox` işlevi. Bkz: [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) Ayrıntılar için işlevi.  
   
  `pbstrHelpFileName`  
  [içinde out] Yardım dosyası adını döndürür. Yardım dosyası yoksa (C++) null veya boş (C#) bir değer olabilir.  
@@ -70,4 +70,4 @@ int GetMessage(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)   
- [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8)
+ [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

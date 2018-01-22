@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 753c3d78ff3da45213ea7cb9625d765e564a88e1
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: b9a6c3240075107edfc5109fa6c62aaf6c23d92b
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="django-web-project-template"></a>Django web proje şablonu
 
@@ -45,7 +45,7 @@ Visual Studio ayrıca sağlar tam [hata ayıklama desteği](debugging.md) Django
 
 ![Kesme noktaları](media/template-django-debugging.png)
 
-Üzerinden yönetilecek Django projeleri için tipik kendi `manage.py` Visual Studio izleyen varsayılır dosya. Bu dosya giriş noktası olarak kullanarak durdurursanız, aslında proje dosyası bölün. Bu durumda, gerek [var olan dosyaları projeden yeniden](python-projects.md#creating-a-project-from-existing-files) Django projesi olarak işaretleme olmadan.
+Üzerinden yönetilecek Django projeleri için tipik kendi `manage.py` Visual Studio izleyen varsayılır dosya. Bu dosya giriş noktası olarak kullanarak durdurursanız, aslında proje dosyası bölün. Bu durumda, gerek [var olan dosyaları projeden yeniden](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files) Django projesi olarak işaretleme olmadan.
 
 ## <a name="django-management-console"></a>Django Yönetim Konsolu
 

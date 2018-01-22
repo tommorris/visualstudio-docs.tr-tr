@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 16f0e7d406e042d16fff4fbe257b62bac97253c3
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 518f952f4b983acbcd3d2f508126f5298e16d579
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="editing-python-code"></a>Python kodu düzenleme
 
-Geliştiriciler harcadığı zaman Kod düzenleyicisinde çoğunu şekilde [Python desteği Visual Studio'da](installation.md) daha üretken olmanıza yardımcı olmak için işlevsellik sağlar. IntelliSense sözdizimi vurgulama, otomatik tamamlama, imza Yardım, yöntemi geçersiz kılmalar, arama ve gezinti özellikleri içerir. 
+Geliştiriciler harcadığı zaman Kod düzenleyicisinde çoğunu şekilde [Python desteği Visual Studio'da](installing-python-support-in-visual-studio.md) daha üretken olmanıza yardımcı olmak için işlevsellik sağlar. IntelliSense sözdizimi vurgulama, otomatik tamamlama, imza Yardım, yöntemi geçersiz kılmalar, arama ve gezinti özellikleri içerir. 
 
 Bu konuda:
 
@@ -33,7 +33,7 @@ Bu konuda:
 
 Visual Studio'da kod düzenleme genel belgeler için bkz: [kod ve Metin Düzenleyici'de kod yazma](../ide/writing-code-in-the-code-and-text-editor.md). Ayrıca bkz. [Visual Studio'da anahat oluşturma](../ide/outlining.md), kodunuzu belirli bölümlerini odaklanmış olmanıza yardımcı olur. Visual Studio nesne tarayıcısı kullanılmasını Python desteği içerir (**Görünüm > Diğer Pencereler > Nesne Tarayıcısı** veya Ctrl + W, J) her modülde tanımlanmış sınıfları ve bu sınıfların tanımlanan işlevler İnceleme için. 
 
-Düzenleyici ayrıca kod iki arasında exchange kolaylaşır Visual Studio etkileşimli penceresinde tümleşiktir. Bkz: [Öğreticisi Adım 3: etkileşimli REPL penceresini kullanarak](vs-tutorial-01-03.md) ve [etkileşimli bir pencere - etkileşimli komut gönderme kodu kullanarak](interactive-repl.md#send-code-to-interactive-command) Ayrıntılar için.
+Düzenleyici ayrıca kod iki arasında exchange kolaylaşır Visual Studio etkileşimli penceresinde tümleşiktir. Bkz: [Öğreticisi Adım 3: etkileşimli REPL penceresini kullanarak](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) ve [etkileşimli bir pencere - etkileşimli komut gönderme kodu kullanarak](interactive-repl.md#send-code-to-interactive-command) Ayrıntılar için.
 
 Python kodu düzenlemeye giriş için bkz [düzenleme Python kodu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2m30s):
 
@@ -41,7 +41,7 @@ Python kodu düzenlemeye giriş için bkz [düzenleme Python kodu](https://mva.m
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense sağlar [tamamlamalar](#completions), [imza Yardım](#signature-help), [hızlı bilgi](#quick-info), ve [kod renklendirme](#code-coloring). Performansı artırmak için IntelliSense projenizdeki her Python ortamı için oluşturulan tamamlama veritabanı bağlıdır. Veritabanları ekleyin, kaldırın veya güncelleştirme paketleri yenileme gerekebilir. Veritabanı durumu görüntülenir **Python ortamları** penceresinde (Çözüm Gezgini eşdüzey) **IntelliSense** sekmesinde (bkz [Python ortamları](python-environments.md)). 
+IntelliSense sağlar [tamamlamalar](#completions), [imza Yardım](#signature-help), [hızlı bilgi](#quick-info), ve [kod renklendirme](#code-coloring). Performansı artırmak için IntelliSense projenizdeki her Python ortamı için oluşturulan tamamlama veritabanı bağlıdır. Veritabanları ekleyin, kaldırın veya güncelleştirme paketleri yenileme gerekebilir. Veritabanı durumu görüntülenir **Python ortamları** penceresinde (Çözüm Gezgini eşdüzey) **IntelliSense** sekmesinde (bkz [Python ortamları](managing-python-environments-in-visual-studio.md)). 
 
 ### <a name="completions"></a>Tamamlamalar
 

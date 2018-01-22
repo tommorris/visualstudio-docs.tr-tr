@@ -17,11 +17,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 3e10d353d3f2b89d9c8697a8748b820bef73df03
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2ea8e766561261b4860f973002d302ac99caa8dd
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
 Yanıt iletisi kutusundan varsa ayarlar.  
@@ -42,11 +42,11 @@ int SetResponse(
   
 #### <a name="parameters"></a>Parametreler  
  `dwResponse`  
- [in] Win32 kuralları kullanarak yanıt belirtir `MessageBox` işlevi. Bkz: [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8) Ayrıntılar için işlevi.  
+ [in] Win32 kuralları kullanarak yanıt belirtir `MessageBox` işlevi. Bkz: [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) Ayrıntılar için işlevi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
- [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8)
+ [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

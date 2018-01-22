@@ -16,11 +16,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4e809363656b94dc4e922d558a57a0848dba46e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e12ce40375bbd4c24cde8fe3bf3e06d268aa1c20
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Uygulamaları oluşturmak için bir platformdur. Olarak da bilinen MSBuild olduğundan, bu altyapı yapı platformunu nasıl işler ve yazılım derlemeler denetleyen bir proje dosyası için bir XML Şeması sağlar. Visual Studio MSBuild kullanır, ancak Visual Studio bağımlı değil. Proje ya da çözüm dosyanızı MSBuild.exe çağırarak düzenlemek ve ürünleri, Visual Studio yüklü olmayan ortamlarda oluşturun.  
@@ -50,7 +50,7 @@ ms.lasthandoff: 12/22/2017
  Visual Studio IDE içinde kod yazabilirsiniz ancak MSBuild kullanarak, çalışma oluşturur. Başka bir alternatif olarak, geliştirme bilgisayarınızda IDE kodda derleme ancak birden çok geliştiricilerden tümleşiktir kodu oluşturmak için MSBuild komut satırında kullanın.  
   
 > [!NOTE]
->  Team Foundation Build otomatik olarak derleme, test ve uygulamanızı dağıtmak için kullanabilirsiniz. Otomatik olarak derlemeleri geliştiricileri (örneğin, bir sürekli tümleştirme stratejisinin parçası olarak) kodunuzu iade ettiğinizde çalıştırabilir veya bir zamanlama (örneğin, bir gecelik yapı doğrulama testleri yapı) according, yapı sistem olabilir. Team Foundation Build kodunuzu MSBuild kullanarak derler. Daha fazla bilgi için bkz: [uygulamayı derlediğinizde](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+>  Team Foundation Build otomatik olarak derleme, test ve uygulamanızı dağıtmak için kullanabilirsiniz. Otomatik olarak derlemeleri geliştiricileri (örneğin, bir sürekli tümleştirme stratejisinin parçası olarak) kodunuzu iade ettiğinizde çalıştırabilir veya bir zamanlama (örneğin, bir gecelik yapı doğrulama testleri yapı) according, yapı sistem olabilir. Team Foundation Build kodunuzu MSBuild kullanarak derler. Daha fazla bilgi için bkz: [derleme ve sürüm](/vsts/build-release/index).  
   
  Bu konu MSBuild genel bir bakış sağlar. Giriş bir öğretici için bkz: [izlenecek yol: MSBuild kullanma](../msbuild/walkthrough-using-msbuild.md).  
   

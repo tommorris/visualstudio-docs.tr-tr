@@ -18,11 +18,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: ce1de0467e7e662fd0def096ef6adb042578f8b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a6649bd45aba299514b40e74b5683368bfd92b41
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="project-type-design-decisions"></a>Proje türü tasarım kararları
 Yeni bir proje türü oluşturmadan önce proje türü ile ilgili bazı tasarım kararlarını olmanız gerekir. Hangi tür projelerinizi içerecek öğeleri, proje dosyalarını kalıcı nasıl ve ne taahhüt modeli kullanacağınıza karar vermeniz gerekir.  
@@ -32,7 +32,7 @@ Yeni bir proje türü oluşturmadan önce proje türü ile ilgili bazı tasarım
   
  Proje öğeleri, dosyaları veya Internet üzerinden veritabanı deposu veya veri bağlantıları nesneleri gibi daha soyut nesneler olabilir. Öğeleri dosyalar olduğunda, proje başvurusu tabanlı veya bir dizin tabanlı proje olabilir.  
   
- Başvuru tabanlı projelerde öğeleri birden çok projede yer alabilir. Ancak, bir öğeyi temsil eden gerçek dosya yalnızca bir dizinde bulunur. Dizin tabanlı projelerde tüm proje öğeleri dizin yapısında mevcut. Daha fazla bilgi için bkz: [NIB: öğesi yönetimi projelerinde](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ Başvuru tabanlı projelerde öğeleri birden çok projede yer alabilir. Ancak, bir öğeyi temsil eden gerçek dosya yalnızca bir dizinde bulunur. Dizin tabanlı projelerde tüm proje öğeleri dizin yapısında mevcut.  
   
  Yerel öğeler, uygulamanın yüklü olduğu bilgisayarda depolanır. Uzak öğeleri, bir yerel ağda ayrı bir sunucuda veya başka bir yerde Internet'te depolanabilir.  
   
@@ -62,7 +62,6 @@ Yeni bir proje türü oluşturmadan önce proje türü ile ilgili bazı tasarım
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [NIB: öğesi yönetimi projelerine](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [Açıp kaydederek proje öğeleri](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Proje kalıcılığı](../../extensibility/internals/project-persistence.md)   
  [Proje modeli öğeleri](../../extensibility/internals/elements-of-a-project-model.md)   

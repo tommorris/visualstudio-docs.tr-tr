@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d14263c228cdbedc0f74acc20d81cfe58380812f
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: b33c96844abc9bbf4cc7bcd403626980e0bf37a5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python için Azure bulut hizmeti projeleri
 
@@ -91,7 +91,7 @@ Bulut Hizmetleri için `ConfigureCloudService.ps1` komut dosyası kullanan `pip`
 
 C uzantılı tüm kitaplıkları önceden derlenmiş ikili dosyaları sağlamalısınız bulut hizmeti örnekleri C Derleyicileri içermez unutmayın.
 
-PIP ve bağımlılıklarını yanı sıra paketler `requirements.txt`, otomatik olarak yüklenir ve ücrete tabi bant genişliği kullanımı sayılır. Bkz: [gerekli paketleri yönetme](python-environments.md#managing-required-packages-requirementstxt) yönetme ile ilgili ayrıntılar için `requirements.txt` dosyaları.
+PIP ve bağımlılıklarını yanı sıra paketler `requirements.txt`, otomatik olarak yüklenir ve ücrete tabi bant genişliği kullanımı sayılır. Bkz: [gerekli paketleri yönetme](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt) yönetme ile ilgili ayrıntılar için `requirements.txt` dosyaları.
 
 ## <a name="troubleshooting"></a>Sorun giderme
 

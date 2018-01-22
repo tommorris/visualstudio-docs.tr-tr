@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 01e3e0d3969b483a77b524cb6fd2713c6653678e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: bf04cbfaff76747c952f9cf86e93fea47be2e91f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Python etkileşimli pencere ile çalışma
 
@@ -38,7 +38,7 @@ Visual Studio Python REPL modları aralarından seçim yapabileceğiniz çeşitl
 
 Bu konuda açıklanmaktadır **standart** ve **hata ayıklama** REPL modları. IPython modları hakkında daha fazla bilgi için bkz: [IPython REPL kullanarak](interactive-repl-ipython.md).
 
-Ctrl + Enter gibi Düzenleyicisi ile etkileşim dahil olmak üzere örnekleriyle ayrıntılı bilgi için bkz: [Öğreticisi Adım 3: etkileşimli REPL penceresini kullanarak](vs-tutorial-01-03.md). Video bir giriş için bkz [Python etkileşimli pencere](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2m22s).
+Ctrl + Enter gibi Düzenleyicisi ile etkileşim dahil olmak üzere örnekleriyle ayrıntılı bilgi için bkz: [Öğreticisi Adım 3: etkileşimli REPL penceresini kullanarak](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). Video bir giriş için bkz [Python etkileşimli pencere](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2m22s).
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
 
@@ -104,7 +104,7 @@ Girme `dir()` bir kapsamda geçerli tanımlayıcıları işlev adları, sınıfl
 
 ![İmportlib kapsamında etkileşimli penceresi](media/interactive-importlib-scope.png)
 
-< a name = "gönderme kod-için-etkileşimli"</a>
+<a name="sending-code-to-interactive"</a>
 
 ## <a name="send-code-to-interactive-command"></a>Etkileşimli komutuna kod Gönder
 

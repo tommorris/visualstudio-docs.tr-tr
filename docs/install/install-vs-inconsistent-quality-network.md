@@ -1,25 +1,24 @@
 ---
 title: "Düşük bant genişliği veya güvenilmeyen ağ ortamları yükleyin | Microsoft Docs"
 description: "Visual Studio yükleyicisi güvenilir olmayan bir ağ koşullarında nasıl çalıştığını açıklar ve yüklemeye başlamadan önce yükleme dosyalarını indirmek açıklanmaktadır."
-ms.date: 08/30/2017
-ms.reviewer: tims
+ms.date: 01/17/2018
+ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- '{{PLACEHOLDER}}'
-- '{{PLACEHOLDER}}'
-ms.assetid: 44DB1998-68CD-4560-870A-EE5B993DCF6E
-author: timsneath
+- installing Visual Studio
+- no internet connection
+author: tglee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1d7b9b7084b91ace1f76d4d411f117df41cfd257
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8b78f51c3b408d5a8c0723779cdf0b2d165aeec1
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Visual Studio 2017 düşük bant genişliği veya güvenilmeyen ağ ortamları yükleyin
 
@@ -32,7 +31,7 @@ Visual Studio web yükleyicisi denemenizi öneririz&mdash;bulabilirsiniz, iyi bi
 Ancak, Internet bağlantınız kullanılabilir veya güvenilir olmayan ise, çevrimdışı bir yüklemeyi tamamlamak için gereken dosyaları yerel önbelleği oluşturmak için komut satırını kullanabilirsiniz. İşte nasıl.
 
 > [!NOTE]
-> İnternet'ten dağıtımına bir ağ güvenlik duvarı istemci iş istasyonları, Visual Studio 2017 gerçekleştirmek istediği bkz Kurumsal yönetici olması durumunda bizim [Visual Studio 2017 bir ağ yüklemesi oluşturmak](../install/create-a-network-installation-of-visual-studio.md) ve [Çevrimdışı bir ortamda Visual Studio'yu yükleme için özel hususlar](../install/install-visual-studio-in-offline-environment.md) sayfaları.
+> İnternet'ten dağıtımına bir ağ güvenlik duvarı istemci iş istasyonları, Visual Studio 2017 gerçekleştirmek istediği bkz Kurumsal yönetici olması durumunda bizim [Visual Studio 2017 bir ağ yüklemesi oluşturmak](../install/create-a-network-installation-of-visual-studio.md) ve [Visual Studio çevrimdışı yükleme için gerekli sertifikaları yükleyin](../install/install-certificates-for-visual-studio-offline.md) sayfaları.
 
 ## <a name="step-1---download-the-visual-studio-bootstrapper"></a>1. adım - Visual Studio önyükleyici indirin
 
@@ -84,8 +83,8 @@ Yükleme çalıştırmak için bu komutu kullanın:
 
 ```c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional```
 
-  > [!NOTE]
-  > İmza geçersiz olduğunu belirten bir hata alırsanız, güncelleştirilmiş sertifikaları yüklemeniz gerekir. Çevrimdışı önbelleğiniz Sertifikalar klasörünü açın. Her sertifika dosyasını çift tıklatın ve Sertifika Yöneticisi sihirbazda seçeneğini tıklatın. İçin bir parola istenirse, boş bırakın.
+> [!NOTE]
+> İmza geçersiz olduğunu belirten bir hata alırsanız, güncelleştirilmiş sertifikaları yüklemeniz gerekir. Çevrimdışı önbelleğiniz Sertifikalar klasörünü açın. Her sertifika dosyasını çift tıklatın ve Sertifika Yöneticisi sihirbazda seçeneğini tıklatın. İçin bir parola istenirse, boş bırakın.
 
 ## <a name="list-of-language-locales"></a>Dil yerel ayarları listesi
 
@@ -99,9 +98,9 @@ Yükleme çalıştırmak için bu komutu kullanın:
 | it-IT | İtalyanca |
 | ja-JP | Japonca |
 | ko-KR | Kore Dili |
-| PL-PL | Lehçe |
+| pl-PL | Lehçe |
 | pt-BR | Portekizce - Brezilya |
-| RU-RU | Rusça |
+| ru-RU | Rusça |
 | tr-TR | Türkçe |
 | zh-CN | Çince - Basitleştirilmiş |
 | zh-TW | Geleneksel Çince- |

@@ -12,17 +12,15 @@ helpviewer_keywords:
 - user permissions
 - administrative privileges
 - permissions
-ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8062b6d37c675defeea369ebe8f8bf15fcbdd8ee
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 6a19d67530d3cb7ac81ee00e3e65f4cce74c8d07
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı İzinleri ve Visual Studio
 
@@ -39,7 +37,7 @@ Normal bir kullanıcı olarak Visual Studio IDE içinde hemen her şeyi yapabili
 ||Yerel Yardım içeriğini yükleme, güncelleştirme veya kaldırma.|[Yerel İçeriği Yükleme ve Yönetme](../ide/install-and-manage-local-content.md)|  
 |Uygulama türleri|SharePoint çözümleri geliştirme.|[SharePoint Çözümleri Geliştirmek için Gereksinimler](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
 ||Geliştirici lisansı alınırken [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Bir geliştirici lisansı alma](http://go.microsoft.com/fwlink/?LinkID=241313)|  
-|Araç Kutusu|Klasik COM ekleme denetimleri için **araç**.|[Araç Kutusunu Kullanma](../ide/using-the-toolbox.md)|  
+|Araç Kutusu|Klasik COM ekleme denetimleri için **araç**.|[Araç Kutusu](../ide/reference/toolbox.md)|  
 |Eklentiler|IDE'de klasik COM kullanılarak yazılmış eklentileri yükleme ve kullanma.|[Eklentiler ve sihirbazları oluşturma](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|  
 |Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanma.|[Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
 ||C++ projeleri oluşturduğunuzda kayıt adımı ekleme.|[Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](/cpp/ide/understanding-custom-build-steps-and-build-events)|  

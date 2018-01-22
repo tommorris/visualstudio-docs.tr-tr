@@ -15,11 +15,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5e14e8ea2df83520724b9f6663c9624d54cf772c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e61b6bae37b9e37dc9e448122f4595f3cba20f7f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 Bu arabirim, kullanıcıdan bir yanıt gerektirir Visual Studio bir ileti göndermek için hata ayıklama altyapısı (DE) tarafından kullanılır.  
@@ -49,7 +49,7 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="remarks"></a>Açıklamalar  
  Belirli bir iletiyi kullanıcıdan belirli bir yanıt gerektiriyorsa DE bu arabirimini kullanır. Uzaktan bir programa bağlama girişimi sonra bir "Erişim engellendi" iletisi DE alır, örneğin, DE bu belirli ileti Visual Studio'da gönderir bir `IDebugMessageEvent2` ileti kutusu stili olayla `MB_RETRYCANCEL`. Bu, kullanıcının yeniden deneyin veya attach işlemi iptal olanak sağlar.  
   
- DE nasıl bu iletiyi Win32 işlevi kurallarına tarafından işleneceğini belirtir `MessageBox` (bkz [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8) Ayrıntılar için).  
+ DE nasıl bu iletiyi Win32 işlevi kurallarına tarafından işleneceğini belirtir `MessageBox` (bkz [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) Ayrıntılar için).  
   
  Kullanım [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) kullanıcıdan bir yanıt gerektirmeyen Visual Studio iletileri göndermek için arabirim.  
   

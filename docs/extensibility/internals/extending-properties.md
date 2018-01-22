@@ -14,16 +14,16 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26cf161259736dbd2b2e26279842571d62f69352
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="extending-properties"></a>Genişletme özellikleri
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Özellikleri** penceresi COM ve COM + bileşenleri için evrensel özellik tarayıcısı ve tüm destekler [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ürünler. **Özellikleri** penceresi çalışır `ITypeInfo` bilgi ve herhangi bir tümleşik geliştirme ortamı (IDE) penceresinde seçili nesne için tasarım zamanı özellikleri listelemek için COM + meta verileri yazın.  
   
- **Özellikleri** F4 klavyedeki veya seçerek açılır pencere **Özellikler penceresini** üzerinde **Görünüm** menüsünde görüntülemek ve düzenlemek için kullanılır Yapılandırma bağımsız, tasarım zamanı özellikleri ve olayları seçili nesnelerin. Çözümler ve projeler, ile ilişkili yapılandırma bağımlı özellikler görüntülenir [özellik sayfaları](../../extensibility/internals/property-pages.md). Daha fazla bilgi için bkz: [NIB: Proje özelliklerini](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [yönetme yapılandırma seçenekleri](../../extensibility/internals/managing-configuration-options.md), ve [NIB: öğesi yönetimi projelerinde](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ **Özellikleri** F4 klavyedeki veya seçerek açılır pencere **Özellikler penceresini** üzerinde **Görünüm** menüsünde görüntülemek ve düzenlemek için kullanılır Yapılandırma bağımsız, tasarım zamanı özellikleri ve olayları seçili nesnelerin. Çözümler ve projeler, ile ilişkili yapılandırma bağımlı özellikler görüntülenir [özellik sayfaları](../../extensibility/internals/property-pages.md). Daha fazla bilgi için [yönetme yapılandırma seçenekleri](../../extensibility/internals/managing-configuration-options.md).  
   
  ![Özellikler penceresi genel bakış](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Özellik penceresi  

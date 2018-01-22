@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a35010af9ee0b0d7ad885f607b8fc1e2d54a19ba
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Yeni proje oluşturma: başlık altında iki bölüm
 İçinde [yeni proje oluşturma: başlık altında Kısım](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) gördüğümüz nasıl **yeni proje** iletişim kutusu doldurulur. Seçtiğiniz varsayalım bir **Visual C# Windows uygulaması**, doldurulmuş **adı** ve **konumu** metin kutuları ve tıklatılan Tamam.  
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="generating-the-solution-files"></a>Çözüm dosyaları oluşturma  
  Bir uygulama şablonunu seçme yönlendirir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sıkıştırmasını açın ve karşılık gelen .vstemplate dosyasını açın ve bu dosyasındaki XML komutları yorumlamak için bir şablon başlatmak için. Bu komutlar yeni veya var olan çözümde proje ve proje öğeleri oluşturun.  
   
- Şablonun öğe şablonları .vstemplate dosyanızı .zip klasöründen adlı kaynak dosyalarını ayıklar. Şablon bu dosyaları uygun şekilde özelleştirme yeni projeye kopyalar. Proje ve öğe şablonları genel bakış için bkz: [NIB: Visual Studio şablonları](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Şablonun öğe şablonları .vstemplate dosyanızı .zip klasöründen adlı kaynak dosyalarını ayıklar. Şablon bu dosyaları uygun şekilde özelleştirme yeni projeye kopyalar.  
   
 ### <a name="template-parameter-replacement"></a>Şablon parametresi değiştirme  
  Şablon için yeni bir proje öğesi şablonu kopyaladığında, herhangi bir şablon parametre dosyasını özelleştirme dizelerle değiştirir. Şablon parametresi var. önce ve bir dolar işareti, örneğin gelmelidir özel belirteç, $date$  

@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5ea7b08c95aa2844a65a9a6783774fe32c9e8c50
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Proje ve yapılandırma özellikleri için destek
 **Özellikleri** penceresinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE), proje ve yapılandırma özelliklerini görüntüleyebilirsiniz. Kullanıcının, uygulamanın özelliklerini ayarlayıp böylece kendi proje türü için özellik sayfası sağlayabilir.  
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/22/2017
  Paket çerçevesi ile yönetilen projelerinin (MPFProj) oluşturmak ve yeni proje sistemini yönetmek için yardımcı sınıfları sağlar. Kaynak kodu ve derleme yönergeleri bulabilirsiniz [MPF projeleri - Visual Studio 2013 için](http://mpfproj12.codeplex.com/).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Proje ve yapılandırma özelliklerini kalıcılığı  
- Proje ve yapılandırma özelliklerini bir örneğin proje türüyle ilişkili dosya adı uzantısı, .csproj, .vbproj ve .myproj sahip bir proje dosyasında kalıcıdır. Dil projeleri, bir şablon dosyası genellikle proje dosyası oluşturmak için kullanın. Ancak, proje türleri ve şablonları ilişkilendirmek için gerçekten birkaç yolu vardır. Daha fazla bilgi için bkz: [NIB: Visual Studio şablonları](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041) ve [şablon dizin açıklaması (. Vsdir) dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Örneğin proje türüyle ilişkili dosya adı uzantısı, .csproj, .vbproj ve .myproj sahip bir proje dosyasında proje ve yapılandırma özelliklerini kalıcıdır. Dil projeleri, bir şablon dosyası genellikle proje dosyası oluşturmak için kullanın. Ancak, proje türleri ve şablonları ilişkilendirmek için gerçekten birkaç yolu vardır. Daha fazla bilgi için bkz: [şablon dizin açıklaması (. Vsdir) dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
  Proje ve yapılandırma özelliklerini şablon dosyasına öğeleri ekleyerek oluşturulur. Bu özellikleri daha sonra bu şablonu kullanan proje türü kullanılarak oluşturulan herhangi bir projesi için kullanılabilir. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]Projeler ve her ikisini de kullanmanız MPFProj [yapı içinde değil: MSBuild genel bakış](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) şablon dosyalarını için şema. Bu dosyaları her yapılandırma için bir PropertyGroup bölümü vardır. Proje özellikleri genellikle bir yapılandırma bağımsız değişkeni boş bir dize belirlenmiş olan ilk PropertyGroup bölümünde, kalıcıdır.  
   

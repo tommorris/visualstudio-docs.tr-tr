@@ -26,11 +26,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 47047758d237bb652d5b8e447f8fc7b6e608148e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a9d9b9c5cee3dc69698320af77a7cc909b344a2d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Visual Basic Hata Ayıklama Yapılandırması Proje Ayarları
 Proje ayarlarını değiştirebileceğiniz bir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] hata ayıklama yapılandırmasını da **özellik sayfaları** anlatıldığı gibi penceresi [hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda hata ayıklayıcı gizlilikle ilgili ayarların nerede bulacağını Göster **özellik sayfaları** penceresi.  
@@ -43,7 +43,7 @@ Proje ayarlarını değiştirebileceğiniz bir [!INCLUDE[vbprvb](../code-quality
 |Ayar|Açıklama|  
 |-------------|-----------------|  
 |**Yapılandırma**|Uygulamayı derlemek için modunu ayarlar. Arasından seçim **etkin (hata ayıklama)**, **hata ayıklama**, **sürüm**, **tüm yapılandırmaları**.|  
-|**Eylemi Başlat**|Bu denetimler Debug menüsünden Başlat'ı seçtiğinizde gerçekleşecek eylemi belirtir.<br /><br /> -   **Proje başlangıç** varsayılandır ve hata ayıklama için başlangıç projesi başlatır. Daha fazla bilgi için bkz: [NIB nasıl yapılır: Başlangıç projelerini Ayarla](http://msdn.microsoft.com/en-us/31465836-0911-48db-a5d9-e456b635e970).<br />-   **Dış program Başlat** başlatmak ve değil bir program eklemek sağlar parçası bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projesi. Daha fazla bilgi için bkz: [eklemek için çalışan işlemler](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **URL'de tarayıcı başlatmak** bir Web uygulaması ayıklamanızı sağlar.|  
+|**Eylemi Başlat**|Bu denetimler Debug menüsünden Başlat'ı seçtiğinizde gerçekleşecek eylemi belirtir.<br /><br /> -   **Proje başlangıç** varsayılandır ve hata ayıklama için başlangıç projesi başlatır. <br />-   **Dış program Başlat** başlatmak ve değil bir program eklemek sağlar parçası bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projesi. Daha fazla bilgi için bkz: [eklemek için çalışan işlemler](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **URL'de tarayıcı başlatmak** bir Web uygulaması ayıklamanızı sağlar.|  
 |**Komut satırı bağımsız değişkenleri**|Ayıklanacak programı için komut satırı bağımsız değişkenlerini belirtir. Komut adı başlangıç dış programında belirtilen program adıdır. Eylemi Başlat Başlat URL'sine ayarlarsanız, komut satırı bağımsız değişkenleri göz ardı edilir.|  
 |**Çalışma dizini**|Ayıklanacak programın çalışma dizinini belirtir. İçinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], çalışma dizini uygulama başlatılan dizindir. Varsayılan çalışma dizini \bin\Debug ya da geçerli yapılandırmasına bağlı olarak \bin\Release bağlıdır.|  
 |**Uzak makine kullanın**|Uzaktan hata ayıklama, onay kutusu seçili olduğunda etkindir. Metin kutusuna hata ayıklama amacıyla burada uygulamanın çalışacağı uzak makine adını yazın veya bir [Msvsmon sunucu adı](../debugger/remote-debugging.md). Uzak makinedeki EXE konumunu yapı sekmesini çıkış yolu özelliğinde belirtilir. Konumun uzak makinede paylaşılabilir bir dizin olmalıdır.|  

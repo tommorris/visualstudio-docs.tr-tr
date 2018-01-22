@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b400e8a8c9c69b0c18204c55522d287d55d845ab
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 7695287c2d9db90bc452be926ce574a1fb38b03e
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Hızlı Başlangıç: Varolan koddan bir Python projesi oluşturma
 
-Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installation.md), var olan Python kodu bir Visual Studio projeye Getir kolaydır.
+Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installing-python-support-in-visual-studio.md), var olan Python kodu bir Visual Studio projeye Getir kolaydır.
 
 > [!Important]
 > Burada anlatılan işlemine taşımayın veya özgün kaynak dosyalarını kopyalayın. Bir kopya ile çalışmak isterseniz, klasörü ilk çoğaltma.
@@ -35,10 +35,10 @@ Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installation.md)
 ## <a name="next-steps"></a>Sonraki adımlar
 
 > [!div class="nextstepaction"]
-> [Öğretici: Visual Studio'da Python ile çalışma](vs-tutorial-01-01.md)
+> [Öğretici: Visual Studio'da Python ile çalışma](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Varolan bir Python yorumlayıcısı için bir ortam oluşturma](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Python desteği Visual Studio 2015 ve daha önce yükleme](installation.md).
-- [Konumları yüklemek](installation.md#install-locations).
+- [Varolan bir Python yorumlayıcısı için bir ortam oluşturma](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Python desteği Visual Studio 2015 ve daha önce yükleme](installing-python-support-in-visual-studio.md).
+- [Konumları yüklemek](installing-python-support-in-visual-studio.md#install-locations).

@@ -33,11 +33,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 46ea417ccd8b4dbecd0c6584699e9f2e98330d69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a53c03f1ab2c8680329f17bfa36a49b12062bff5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="cc-assertions"></a>C/C++ Onayları
 Bir onay deyimi programınızdaki bir noktada doğru olması için beklediğiniz bir koşulu belirtir. Bu koşul doğru değilse, onaylama işlemi başarısız olursa, yürütme programınızın kesildiği ve [onaylama başarısız iletişim kutusu](../debugger/assertion-failed-dialog-box.md) görüntülenir.  
@@ -46,7 +46,7 @@ Bir onay deyimi programınızdaki bir noktada doğru olması için beklediğiniz
   
 -   MFC programları için MFC onaylar.  
   
--   [ATLASSERT](http://msdn.microsoft.com/Library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3) ATL kullanan programlar  
+-   [ATLASSERT](/cpp/atl/reference/debugging-and-error-reporting-macros#atlassert) ATL kullanan programlar  
   
 -   C çalışma zamanı kitaplığı kullanan programlar için CRT onaylar.  
   
@@ -95,7 +95,7 @@ ASSERT(nM++ > 0); // Don't do this!
   
 ```  
   
- Çünkü `ASSERT` ifadesi, programınızı yayın sürümü değerlendirilmez `nM` hata ayıklama ve yayın sürümlerinde farklı değerlere sahip olur. MFC içinde bu sorundan kaçınmak için kullanabileceğiniz [doğrula](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) makrosu yerine `ASSERT`.  `VERIFY`tüm sürümlerinde ifadeyi hesaplar, ancak yayın sürümü sonucunda denetlemez.  
+ Çünkü `ASSERT` ifadesi, programınızı yayın sürümü değerlendirilmez `nM` hata ayıklama ve yayın sürümlerinde farklı değerlere sahip olur. MFC içinde bu sorundan kaçınmak için kullanabileceğiniz [doğrula](/cpp/mfc/reference/diagnostic-services#verify) makrosu yerine `ASSERT`.  `VERIFY`tüm sürümlerinde ifadeyi hesaplar, ancak yayın sürümü sonucunda denetlemez.  
   
  Bir işlev değerlendirme olabileceğinden işlev çağrılarını onaylama deyimlerinde kullanırken özellikle dikkatli olun beklenmeyen yan etkiler.  
   
@@ -165,7 +165,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
   
  Varsa MFC bağımsız değişkeni `ASSERT` makrosu değerlendirir sıfır veya yanlış makrosu program yürütme durdurur ve kullanıcıyı uyarır, aksi halde, yürütme devam eder.  
   
- Bir onaylama işlemi, kaynak dosyasının adını ve onaylama satır sayısı bir ileti iletişim kutusu gösterir başarısız olduğunda. Yeniden deneme iletişim kutusunda seçerseniz kutusunda yapılan bir çağrı [AfxDebugBreak](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) ayıklayıcıya gönder yürütme neden olur. Bu noktada, çağrı yığınını incelemek ve diğer hata ayıklayıcı tesis onaylama neden başarısız olduğunu belirlemek için kullanın. Etkinleştirdiyseniz [sadece zamanında hata ayıklama](../debugger/just-in-time-debugging-in-visual-studio.md)ve hata ayıklayıcısı zaten çalışmadığı, iletişim kutusunun hata ayıklayıcı başlatabilirsiniz.  
+ Bir onaylama işlemi, kaynak dosyasının adını ve onaylama satır sayısı bir ileti iletişim kutusu gösterir başarısız olduğunda. Yeniden deneme iletişim kutusunda seçerseniz kutusunda yapılan bir çağrı [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) ayıklayıcıya gönder yürütme neden olur. Bu noktada, çağrı yığınını incelemek ve diğer hata ayıklayıcı tesis onaylama neden başarısız olduğunu belirlemek için kullanın. Etkinleştirdiyseniz [sadece zamanında hata ayıklama](../debugger/just-in-time-debugging-in-visual-studio.md)ve hata ayıklayıcısı zaten çalışmadığı, iletişim kutusunun hata ayıklayıcı başlatabilirsiniz.  
   
  Aşağıdaki örnekte nasıl kullanılacağını gösterir `ASSERT` bir işlevin dönüş değerini denetlemek için:  
   
@@ -180,7 +180,7 @@ ASSERT(x >= 0);   //  Assertion fails if x is negative
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );  
 ```  
   
- `ASSERT` Makrosu yayın sürümü hiçbir kodu oluşturur. Yayın sürümü ifadesinde değerlendirmek gereksinim duyarsanız kullanın [doğrula](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) makrosu ASSERT yerine.  
+ `ASSERT` Makrosu yayın sürümü hiçbir kodu oluşturur. Yayın sürümü ifadesinde değerlendirmek gereksinim duyarsanız kullanın [doğrula](/cpp/mfc/reference/diagnostic-services#verify) makrosu ASSERT yerine.  
   
 ###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a>MFC assert_valıd ve CObject::AssertValid  
  [CObject::AssertValid](/cpp/mfc/reference/cobject-class.md#CObject__AssertValid) yöntemi sağlar çalışma zamanı nesne iç durumunu denetler. Geçersiz kılma gerekmez ancak `AssertValid` , sınıfından türetilen zaman `CObject`, bunu yaparak, sınıfınızın daha güvenilir yapabilirsiniz. `AssertValid`onaylar tüm geçerli değerler içerdiğinden emin doğrulamak için nesnenin üye değişkenleri gerçekleştirmeniz gerekir. Örneğin, işaretçi üye değişkenleri NULL olmayan denetlemelisiniz.  

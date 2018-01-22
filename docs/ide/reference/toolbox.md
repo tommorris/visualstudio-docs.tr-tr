@@ -1,55 +1,76 @@
 ---
-title: "Araç kutusu | Microsoft Docs"
+title: "Visual Studio'daki araç | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.toolbox.general
 - vs.toolbox
 helpviewer_keywords:
-- Toolbox
-- Toolbox, adding controls
-- Toolbox, moving items
-ms.assetid: b754dad3-1f32-464f-8b9f-065e17e0bc22
-caps.latest.revision: "34"
+- Toolbox [Visual Studio]
+- custom controls [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: dee9f1379dd7cd4c1d134714a35fc91d74f9f128
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 50c9cc96d501eb6d7d10ab31f48600eb65eb57a7
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="toolbox"></a>Araç Kutusu
-**Araç** denetimleri ve ekleyebileceğiniz diğer öğeleri simgelerini görüntüler [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projeleri. Açmak için **araç**, tıklatın **araç** üzerinde **Görünüm** menüsü. Yerleştirebileceğiniz **araç**, ve Sabitlemesi açık veya ayarlamak **AutoHide**.  
-  
- **Araç kutusu** simgeleri Tasarım görünümüne sürüklenen ya da bir kod düzenleyicisinde yapıştırılan. Her iki işlem örneği oluşturmak üzere temel kodu ekler **araç** etkin proje dosyasında öğesi.  
-  
- **Araç** içinde çalıştığınız dosyanın türü için uygun olan öğeleri görüntüler. Daha fazla filtre uygulamak için araç kutusu içinde görünen öğeleri arayabilirsiniz. Projenizi istemci profili tarafından desteklenmeyen bir denetim gerektiriyorsa, proje özelliklerini düzenleyerek tüm framework hedeflemek için projenizi ayarlayabilirsiniz.  
-  
+
+**Araç** penceresi, Visual Studio projelerine ekleme denetimlerini görüntüler. Araç kutusu açmak için **araç** üzerinde **Görünüm** menüsü.
+
+![Araç penceresi](media/toolbox.png)
+
+Farklı denetim kullanıyorsanız ve yeniden boyutlandırma ve denetimleri konumlandırmak Tasarımcı yüzeyine sürükleyip bırakabilirsiniz.
+
+Araç kutusu gibi XAML dosyasının designer Görünüm Tasarımcısı görünümleri ile birlikte görüntülenir. Araç kutusu geçerli Tasarımcısı'nda kullanılabilen denetimleri görüntüler. Daha fazla filtre uygulamak için araç kutusu içinde görünen öğeleri arama yapabilirsiniz.
+
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="help-on-toolbox-tabs"></a>Araç kutusu sekmelerinde Yardım  
- Aşağıdaki belgeler özel hakkında daha fazla bilgi sağlayan **araç** sekmeleri.  
-  
--   [Araç Kutusu, Veri Sekmesi](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
-  
--   [Araç Kutusu, Bileşenler Sekmesi](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
-  
--   [Araç Kutusu, HTML Sekmesi](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
-  
--   [Araç Kutusu, Veri Sekmesi](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
-  
--   [Araç Kutusu, Bileşenler Sekmesi](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
-  
--   [Araç Kutusu, HTML Sekmesi](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Araç Kutusunu Kullanma](../../ide/using-the-toolbox.md)
+> Bazı proje türleri için araç kutusu öğeleri gösterme.
+
+.NET Framework sürümünü projenizi araç kutusunda görünür denetimleri kümesini de etkiler hedefler. Farklı bir .NET Framework sürümünü projenin özellik sayfalarından hedeflemek için projenizi ayarlayabilirsiniz. Proje düğümünde seçin **Çözüm Gezgini**ve ardından menü çubuğunda, **proje** > **\<proje\> özellikleri**. Üzerinde **uygulama** sekmesinde, kullanmak **hedef framework** açılır.
+
+## <a name="managing-the-toolbox-window-and-its-controls"></a>Araç penceresi ve kendi denetimlerini yönetme
+
+Varsayılan araç kutusunu Visual Studio IDE sol tarafında daraltılmış ve imleci üzerine taşındığında görüntülenir. Araç kutusu sabitleyebilirsiniz (tıklayarak **PIN** , araç çubuğundaki simgesini) açık kalmayacak şekilde taşıdığınızda imleci. Ayrıca, araç penceresi çıkar ve ekranınızda herhangi bir yere sürükleyin. Yerleştirme, çıkar ve araç, araç çubuğunu sağ tıklatıp seçeneklerden birini seçerek gizle.
+
+Araç kutusu sekmesinde öğeleri yeniden düzenleyin veya bağlam menüsünde aşağıdaki komutları kullanarak özel sekmeler ve öğeleri ekleyin:
+
+- **Öğeyi yeniden adlandırmak** -seçili öğeyi yeniden adlandırır.
+
+- **Tümünü Göster** -tüm olası denetimleri (yalnızca geçerli Designer'a geçerli olanları) gösterir.
+
+- **Liste görünümü** -denetimleri dikey listesini gösterir. Seçilmezse, denetimleri yatay olarak görünür.
+
+- **Öğeleri seçin** -açar **araç kutusu öğelerini Seç** iletişim kutusu görünür öğeleri belirtebilirsiniz **araç**. Gösterebilir veya öğeyi seçerek veya onay kutusunu temizleyerek gizleyebilirsiniz.
+
+- **Sıralama öğelerini alfabetik olarak** -öğeleri adına göre sıralar.
+
+- **Araç çubuğunu sıfırlama** - varsayılan araç kutusunu ayarlarını geri yükler ve öğeleri.
+
+- **Sekme ekleme** -yeni bir araç kutusu sekmesi ekler.
+
+- **Yukarı Taşı** -seçili öğeyi yukarı taşır.
+
+- **Aşağı Taşı** -seçilen öğeyi aşağı taşır.
+
+## <a name="creating-and-distributing-custom-toolbox-controls"></a>Oluşturma ve dağıtma özel araç çubuğu denetimleri
+
+Özel araç çubuğu denetimleri, temel alan bir proje şablonu biriyle başlangıç oluşturabileceğiniz [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) veya [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md). Ardından, özel denetim için kodunuza dağıtmak veya kullanarak Web'de Yayımlama [araç kutusu denetimleri yükleyici](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+
+## <a name="help-on-toolbox-tabs"></a>Araç kutusu sekmelerinde Yardım
+
+Kullanılabilir bazıları hakkında daha fazla bilgi aşağıdaki konularda **araç** sekmeleri.
+
+- [Araç Kutusu, Veri Sekmesi](../../ide/reference/toolbox-data-tab.md)
+
+- [Araç Kutusu, Bileşenler Sekmesi](../../ide/reference/toolbox-components-tab.md)
+
+- [Araç Kutusu, HTML Sekmesi](../../ide/reference/toolbox-html-tab.md)

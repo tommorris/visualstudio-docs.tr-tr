@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0cac283dacb0f63005f67dc279087726de26772
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 2703b526dd0823afa678dbe57eb6cf45e57b6da6
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Azure üzerinde uzaktan hata ayıklama Python kodu
 
-[Visual Studio'da Python desteği](installation.md) uzaktan hata ayıklama Azure uygulama hizmeti üzerinde çalışan Python kodu özelliğini içerir. Visual Studio hata ayıklayıcısı Protokolü HTTP üzerinden kullanıma sunan bir proxy sağlayan şekilde basit uzaktan hata ayıklama aksine, bu senaryonun hedef bilgisayarda TCP üzerinden doğrudan erişilebilir değil. Web şablonu kullanılarak otomatik olarak oluşturulan projeleri bu proxy oluşturulan yapılandırma `web.debug.config` dosya. Uzaktan hata ayıklama de etkinleştirilir açıklandığı gibi bir hata ayıklama yapılandırması proje yayımladığınızda [Azure App Service'te yayımlama](template-web.md#publishing-to-azure-app-service).
+[Visual Studio'da Python desteği](installing-python-support-in-visual-studio.md) uzaktan hata ayıklama Azure uygulama hizmeti üzerinde çalışan Python kodu özelliğini içerir. Visual Studio hata ayıklayıcısı Protokolü HTTP üzerinden kullanıma sunan bir proxy sağlayan şekilde basit uzaktan hata ayıklama aksine, bu senaryonun hedef bilgisayarda TCP üzerinden doğrudan erişilebilir değil. Web şablonu kullanılarak otomatik olarak oluşturulan projeleri bu proxy oluşturulan yapılandırma `web.debug.config` dosya. Uzaktan hata ayıklama de etkinleştirilir açıklandığı gibi bir hata ayıklama yapılandırması proje yayımladığınızda [Azure App Service'te yayımlama](template-web.md#publishing-to-azure-app-service).
 
 Uygulama hizmetiniz için Azure uzaktan hata ayıklama web yuvalarını kullandığından, yuva etkinleştirilmelidir [Azure portal](https://portal.azure.com) giderek **ayarlar > Uygulama ayarları** ve kapatma  **Genel Ayarlar > Web yuvaları** için **üzerinde**, ardından seçerek **kaydetmek** değişikliği uygulamak için. (Unutmayın **hata ayıklama** ayarları Python hata ayıklama için uygulanmaz.)
 

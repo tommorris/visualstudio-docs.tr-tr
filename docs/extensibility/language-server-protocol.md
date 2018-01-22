@@ -13,11 +13,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 79022af292161d30440a01749ecc929ce7f3b511
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 269c19410207e47f233eadfa984a84a7c8445743
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="language-server-protocol"></a>Dil sunucusu Protokolü
 
@@ -39,11 +39,11 @@ LSP zaman içinde geliştirilen ve bugün bu sürüm 3.0. Bir dil sunucu kavram�
 
 Aynı anda Microsoft içeren bir sunucuda TypeScript dil, düzenleyiciler Emacs ve Sublime Text gibi TypeScript destekleme fikir çalışmaya başladı. Bu uygulamada bir düzenleyici stdin/stdout TypeScript server işlemine aracılığıyla iletişim kurar ve bir JSON yükü V8 hata ayıklayıcı protokolüyle esin istekleri ve yanıtları için kullanır. TypeScript sunucunun TypeScript Sublime eklentisi ve VS Code TypeScript zengin düzenleme için tümleştirilmiştir.
 
-Tümleşik iki farklı dil sunucu sonra VS Code takım düzenleyicileri ve IDE için ortak bir dil sunucu protokol keşfetmek başladıysa. Ortak bir protokolle farklı IDE tarafından kullanılabilecek tek bir dil sunucusunun oluşturmak bir dil sağlayıcısı sağlar. Bir dil sunucu tüketici protokolünün istemci tarafı anda uygulamak yalnızca içeriyor. Bu dil sağlayıcısı ve dil tüketici için win win durumda olur.
+İki farklı dil sunucu tümleşik sonra, düzenleyiciler ve IDE için ortak bir dil sunucu protokol keşfetmek VS Code takım başlatıldı. Ortak bir protokolle farklı IDE tarafından kullanılabilecek tek bir dil sunucusunun oluşturmak bir dil sağlayıcısı sağlar. Bir dil sunucu tüketici protokolünün istemci tarafı anda uygulamak yalnızca içeriyor. Bu dil sağlayıcısı ve dil tüketici için win win durumda olur.
 
-TypeScript sunucusu tarafından kullanılan dil protokolü ile başlatıldı, daha fazla genel ve dilden olduğu. VS kod dili API esin kullanarak daha fazla dil özellikleri ile Protokolü idi. Protokol, Basitlik ve Destek kitaplıklarından pek çok programlama dili için nedeniyle uzaktan çağrılması için JSON-RPC ile yedeklenir.
+Daha fazla dil özellikleri VS kod dili API esin ile genişletmeden TypeScript sunucusu tarafından kullanılan protokol ile dil sunucusu protokolü başlatıldı. Protokol basitliği ve varolan kitaplıkları nedeniyle uzaktan çağrılması için JSON-RPC ile yedeklenir.
 
-VS Code takım dogfooded birkaç linter dil sunucuları uygulayarak protokolü. Bir linter dil sunucu tüy (tarama) bir dosyayı yapılan isteklere yanıt verir ve algılanan uyarılar ve hatalar kümesini döndürür. Hedef bir düzenleyici oturumu sırasında birçok linting istekleri olacağını anlamına gelir bir belgede kullanıcı düzenlemeleri olarak bir dosya için tüy oluştu. Bir sunucuyu ve yeni bir linting işlemi her kullanıcı düzenleme için başlatılması ihtiyacım kalmadı çalıştıran tutmak için mantıklı hale. VS Code'nın da dahil olmak üzere birkaç linter sunucuya uygulanan ESLint ve TSLint uzantıları. Bu iki linter sunucu TypeScript/JavaScript uygulanan hem Node.js üzerinde çalıştırın. Bunlar protokolünün istemci ve sunucu parçası uygulayan bir kitaplık paylaşımı.
+VS team örneklenmiş yanıt birkaç linter dil sunucuları uygulayarak Protokolü tüy (tarama) istekleri dosya kod ve algılanan uyarı ve hataların bir dizi döndürür. Hedef bir düzenleyici oturumu sırasında birçok linting istekleri olacağını anlamına gelir bir belgede kullanıcı düzenlemeleri olarak bir dosya için tüy oluştu. Bir sunucuyu ve yeni bir linting işlemi her kullanıcı düzenleme için başlatılması gerek çalıştıran tutmak için mantıklı hale. VS Code'nın da dahil olmak üzere birkaç linter sunucuya uygulanan ESLint ve TSLint uzantıları. Bu iki linter sunucu TypeScript/JavaScript uygulanan hem Node.js üzerinde çalıştırın. Bunlar protokolünün istemci ve sunucu parçası uygulayan bir kitaplık paylaşımı.
 
 ## <a name="how-the-lsp-works"></a>LSP nasıl çalışır?
 

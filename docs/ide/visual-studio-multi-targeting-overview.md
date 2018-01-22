@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio'da .NET Framework'ü hedefleme | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: c3d388238b443fcb717502a893a674f99a315f38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio çoklu sürüm desteğine genel bakış
 
@@ -70,9 +70,6 @@ Bir proje oluşturduğunuzda, hedef seçin [!INCLUDE[dnprdnshort](../code-qualit
 ## <a name="resolving-system-and-user-assembly-references"></a>Sistem ve kullanıcı derleme başvurularını çözme
 
 .NET Framework sürümünü hedeflemek için önce uygun derleme başvurularını yüklemeniz gerekir. Üzerinde Geliştirici paketleri için .NET Framework'ün farklı sürümlerini indirebilirsiniz [.NET indirmeleri](https://www.microsoft.com/net/download/windows) sayfası.
-
-> [!NOTE]
-> .NET Framework 4 veya 3.5 hedefleme ve istemci profili ve kullanmak için bkz. ne zaman hakkında daha fazla bilgi istiyorsanız [.NET Framework istemci profili](http://msdn.microsoft.com/library/cc656912\(v=vs.100\).aspx) .NET Framework 4 belgelerinde.
 
 **Başvuru Ekle** iletişim kutusunda, hedef ilgilidir değil Sistem derlemeleri devre dışı bırakır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürüm böylece bunlar yanlışlıkla projeye eklenemez. (Sistem derlemeler içinde yer alan bir .dll dosyaları olan bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürümü.) Hedeflenen sürümden daha sonraki bir framework sürümüne ait başvuruları çözümlenmiyor ve bu tür bir referans olarak bağımlı denetimleri eklenemiyor. Böyle bir başvuru etkinleştirmek istiyorsanız, sıfırlama [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] hedef projesine bir başvuru içeriyor.  Daha fazla bilgi için bkz: [nasıl yapılır: .NET Framework sürümü hedef](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 

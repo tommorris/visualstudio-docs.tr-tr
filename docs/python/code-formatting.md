@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8aa91005774baf1a3154418a5e0b7780d0238b69
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 96ef5d340a961671b199e521b2d6ee5d05794160
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="formatting-python-code"></a>Python kodu biçimlendirme
 
@@ -30,7 +30,7 @@ Visual Studio önceden yapılandırılmış biçimlendirme seçeneklerini eşle�
 
 Seçenekler aracılığıyla ayarlanır **Araçlar > Seçenekler > Metin Düzenleyicisi > Python > biçimlendirme** ve iç içe geçmiş sekmelerinin ve varsayılan olarak bir alt kümesi eşleşecek şekilde ayarlanır [CESARETLENDİRİCİ 8 Stil Kılavuzu](http://www.python.org/dev/peps/pep-0008/). **Genel** sekmesini belirler zaman biçimlendirme uygulanır; ayarlarını diğer üç sekme, bu konudaki açıklanmıştır.
 
-[Python desteği Visual Studio'da](installation.md) de yararlı ekler [doldurun açıklama paragraf](#fill-comment-paragraph-command) komutu **Düzenle > Gelişmiş** anlatılmaktadır açıklandığı gibi menüsü.
+[Python desteği Visual Studio'da](installing-python-support-in-visual-studio.md) de yararlı ekler [doldurun açıklama paragraf](#fill-comment-paragraph-command) komutu **Düzenle > Gelişmiş** anlatılmaktadır açıklandığı gibi menüsü.
 
 ## <a name="spacing"></a>Aralığı
 

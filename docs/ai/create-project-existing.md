@@ -24,7 +24,7 @@ Seçtiğiniz sonra [AI için Visual Studio Araçları yüklü](installation.md),
 8. İsterseniz, Ctrl + F5 tuşuna basarak veya seçerek program Çalıştır **hata ayıklama > hata ayıklama olmadan Başlat**. 
 
 > [!div class="nextstepaction"]
-> [Öğretici: Visual Studio'da Python ile çalışma](https://docs.microsoft.com/visualstudio/python/vs-tutorial-01-00)
+> [Öğretici: Visual Studio'da Python ile çalışma](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

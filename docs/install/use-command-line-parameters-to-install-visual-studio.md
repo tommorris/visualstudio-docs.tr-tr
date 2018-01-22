@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio'yu yüklemek için komut satırı parametreleri kullanın | Microsoft Docs"
 ms.custom: 
-ms.date: 09/22/2017
+ms.date: 01/17/2018
 ms.reviewer: tims
 ms.suite: 
 ms.technology: vs-acquisition
@@ -16,11 +16,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bfdce6484661354315a4f6b8b4a219f119ec8742
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 41e66e9fabd84bac7ed7e413d51f08e55ef93a6e
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017 yüklemek için komut satırı parametreleri kullanın
 Visual Studio 2017 bir komut isteminden yüklediğinizde, denetim veya yüklemeyi özelleştirmek için çeşitli komut satırı parametreleri kullanabilirsiniz. Komut satırından aşağıdaki eylemleri gerçekleştirebilirsiniz:
@@ -33,14 +33,17 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 
 * [Visual Studio 2017 Enterprise](https://aka.ms/vs/15/release/vs_enterprise.exe)
 * [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
-* [Visual Studio 2017 topluluk](https://aka.ms/vs/15/release/vs_community.exe)
+* [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
 
 ## <a name="list-of-command-line-parameters"></a>Komut satırı parametreleri listesi  
  Visual Studio komut satırı parametreleri büyük/küçük harfe duyarsızdır.
 
 > Sözdizimi:`vs_enterprise.exe [command] <options>...`
 
-(Değiştir `vs_enterprise.exe` ürün sürümü için uygun şekilde yüklemekte. Örnekler için bkz: [komut satırı parametresi örnekler](command-line-parameter-examples.md) sayfası.)
+(Değiştir `vs_enterprise.exe` ürün sürümü için uygun şekilde yüklemekte.)
+
+>[!TIP]
+> Visual Studio 2017 yüklemek için komut satırını kullanmak nasıl daha fazla örnekleri için bkz: [komut satırı parametresi örnekler](command-line-parameter-examples.md) sayfası.)
 
 | **Komutu** | **Açıklama** |
 | ----------------------- | --------------- |
@@ -111,9 +114,9 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 | it-IT | İtalyanca |
 | ja-JP | Japonca |
 | ko-KR | Kore Dili |
-| PL-PL | Lehçe |
+| pl-PL | Lehçe |
 | pt-BR | Portekizce - Brezilya |
-| RU-RU | Rusça |
+| ru-RU | Rusça |
 | tr-TR | Türkçe |
 | zh-CN | Çince - Basitleştirilmiş |
 | zh-TW | Geleneksel Çince- |
@@ -143,7 +146,6 @@ Birkaç diğer destek seçenekleri şunlardır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
- * [Visual Studio 2017 yükleyin](install-visual-studio.md)
- * [Visual Studio 2017 çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
  * [Visual Studio 2017 yükleme için komut satırı parametresi örnekleri](command-line-parameter-examples.md)
+ * [Visual Studio 2017 çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
  * [Yanıt dosyası ile Visual Studio yüklemesini otomatikleştirme](automated-installation-with-response-file.md)

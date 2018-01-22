@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3f77630af8cf31e1e5b18cdf06fd5642c83a17a9
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Visual Studio'da R projeleri oluşturma
 
@@ -50,7 +50,7 @@ Bu komut, ile boş bir proje oluşturur `script.R` dosya düzenleyicide açık. 
 | EnableCodeIndexing | Evet | Kod aramalarını hızlandırmak için bir arka plan dizin oluşturma görevi çalıştırılıp çalıştırılmayacağını belirler. |
 | UseSpacesForTab | Evet | Düzenleyicide SEKME tuşuna basıldığında alanları (Evet) eklenip eklenmeyeceğini veya sekme karakteri (Hayır) belirler. |
 | NumSpacesForTab | 2 | UseSpacesForTab Evet ise, eklenecek boşluk sayısı. |
-| Kodlama | UTF-8 | İçin varsayılan kodlamayı `.R` dosyaları. |
+| Encoding | UTF-8 | İçin varsayılan kodlamayı `.R` dosyaları. |
 | RnwWeave | Sweave | Rnw dosya weaving kullanılacak paketi. |
 | LaTeX | pdfLaTeX | RMarkdwon PDF'ye dönüştürme sırasında kullanılacak kitaplığı. |
 
@@ -119,6 +119,6 @@ Aşağıdaki örnekte bir R projesi çözümü, R ve Azure Machine Learning, Pyt
 Projesi ile kalın vurgulanmış çözüm için "Başlangıç" projedir; değiştirmek için farklı bir projeye sağ tıklayın ve seçin **başlangıç projesi olarak ayarla**.
 
 > [!Note]
-> Şu anda hiç açık bir C# R / C++ dil tümleştirmesi yerinde (Python için olarak bkz [Python için C++ uzantısı oluşturma](../python/cpp-and-python.md)).  Ancak kitaplıkları r için C# ve C++ köprüleri sağlayan kullanılabilir vardır
+> Şu anda hiç açık bir C# R / C++ dil tümleştirmesi yerinde (Python için olarak bkz [Python için C++ uzantısı oluşturma](../python/working-with-c-cpp-python-in-visual-studio.md)).  Ancak kitaplıkları r için C# ve C++ köprüleri sağlayan kullanılabilir vardır
 
 Projeler ve çözümler genel yönetme ile ilgili daha fazla bilgi için bkz: [çözümler ve projeler Visual Studio'da](../ide/solutions-and-projects-in-visual-studio.md).

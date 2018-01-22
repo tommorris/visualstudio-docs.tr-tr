@@ -1,5 +1,5 @@
 ---
-title: "PromptForSaveOnCreation öğesi (Visual Studio şablonları) | Microsoft Docs"
+title: PromptForSaveOnCreation Element (Visual Studio Templates) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,18 +15,18 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 007cf0508d2feedcf5f23898555f57b0fe0c908d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e029855ed34c227d1fe9d4d940f15995f65a2d30
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation Öğesi (Visual Studio Şablonları)
 Kullanıcı bir proje kaydetme konumu sorulup sorulmayacağını belirtir **yeni proje** bir projesi oluştururken, iletişim kutusu. Bu öğe ayarlanmışsa `true`, kullanıcı için kaydetmeniz istenir sonra konum if `false`, değil istenir. (Diğer bir deyişle, bir geçici projesi oluşturulur.)  
   
  \<VSTemplate >  
  \<TemplateData >  
- \<PromptForSaveOnCreation >  
+ \<PromptForSaveOnCreation>  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -57,7 +57,7 @@ Kullanıcı bir proje kaydetme konumu sorulup sorulmayacağını belirtir **yeni
 ## <a name="remarks"></a>Açıklamalar  
  `PromptForSaveOnCreation`İsteğe bağlı bir öğedir. Varsayılan değer `false` şeklindedir.  
   
- Geçici projeler oluşturma ve diskteki proje içeriğini kaydetmeden değiştirme projeleri ' dir. Daha fazla bilgi için bkz: [NIB geçici projeler](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Geçici projeler oluşturma ve diskteki proje içeriğini kaydetmeden değiştirme projeleri ' dir.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek değerini ayarlar `PromptForSaveOnCreation` eşit `false`, geçici bir proje olarak oluşturulacak sınırlamayı belirtir.  

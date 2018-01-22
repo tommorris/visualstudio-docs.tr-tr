@@ -16,11 +16,11 @@ dev_langs: python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 684cbe21a7f6454549d2e014682533697306152b
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 756419ce7390ba727bc5847d95c86399838d972a
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Hızlı Başlangıç: İlk Python web uygulamanızı oluşturmak için Visual Studio'yu kullanın.
 
@@ -70,7 +70,7 @@ Bu hızlı başlangıç ancak, Falcon bir paketi yükleme ve web uygulaması sı
 
 Falcon hakkında daha fazla bilgi için ziyaret [falconframework.org](https://falconframework.org/).
 
-Belirli bir proje için kitaplıkları yükleneceği kitaplıkları genel ortamında yüklemek yerine, geliştiriciler genellikle "sanal ortam" oluşturduğunuz unutmayın. Visual Studio birçok Python proje şablonlarını içeren bir `requirements.txt` şablonu bağımlı olduğu kitaplıkları listeler dosya. Bu şablonlardan birini proje oluşturma içine kitaplıkların yüklü bir sanal ortamın oluşturulmasını tetikler. Daha fazla bilgi için bkz: [Python ortamları - sanal ortamlar](../python/python-environments.md#creating-virtual-environments).
+Belirli bir proje için kitaplıkları yükleneceği kitaplıkları genel ortamında yüklemek yerine, geliştiriciler genellikle "sanal ortam" oluşturduğunuz unutmayın. Visual Studio birçok Python proje şablonlarını içeren bir `requirements.txt` şablonu bağımlı olduğu kitaplıkları listeler dosya. Bu şablonlardan birini proje oluşturma içine kitaplıkların yüklü bir sanal ortamın oluşturulmasını tetikler. Daha fazla bilgi için bkz: [Python ortamları - sanal ortamlar](../python/managing-python-environments-in-visual-studio.md#creating-virtual-environments).
 
 ## <a name="add-a-code-file"></a>Bir kod dosyası ekleme
 
@@ -144,7 +144,7 @@ Falcon hakkında daha fazla bilgi için bkz: [Falcon Quickstart](https://falcon.
 İçinde biraz Python ile Visual Studio IDE hakkında öğrendiğinize Bu hızlı başlangıç Tamamlanıyor tebrikler. Visual Studio'da etkileşimli penceresini kullanarak da dahil olmak üzere, veri görselleştirme, hata ayıklama ve Git ile çalışma, Python daha eksiksiz bir öğretici devam etmek için aşağıdaki düğmesini seçin.
 
 > [!div class="nextstepaction"]
-> [Öğretici: Visual Studio'da Python ile çalışmaya başlama](../python/vs-tutorial-01-01.md).
+> [Öğretici: Visual Studio'da Python ile çalışmaya başlama](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
 - Hakkında bilgi edinin [Python web Visual Studio'da Uygulama Şablonları](../python/template-web.md)
 - Hakkında bilgi edinin [Python hata ayıklama](../python/debugging.md)

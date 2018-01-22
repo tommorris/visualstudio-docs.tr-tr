@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b04bf8fcb72b9ea4578516dcd58fde35a6d4e347
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 569f827a549e240629a492237bb89ae5f0fcd25f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="python-web-project-templates"></a>Python web projesi şablonları
 
@@ -33,7 +33,7 @@ Visual Studio çerçeveleri kendilerini içermez. Projeye sağ tıklayıp seçer
 
 Bottle, Flask ve Django şablonları her başlangıç sitesi bazı sayfaları ve statik dosyaları içerir. Bu kodu çalıştırmak ve (burada bazı ayarları gereken ortamından elde edilebilir) sunucusu yerel olarak hata ayıklama yeterli olduğundan ve Microsoft Azure'a dağıtmak için (burada bir [WSGI uygulama](http://www.python.org/dev/peps/pep-3333/) nesnenin sağlanması gerekiyor).
 
-Bir proje çerçeveye özel şablonu oluştururken, PIP kullanarak gerekli paketleri yüklemenize yardımcı olması için bir iletişim kutusu görüntülenir. Ayrıca kullanmanızı öneririz bir [sanal ortam](python-environments.md#global-and-virtual-environments) doğru bağımlılıkları dahil; böylece web projeleri için yayımladığınızda, web sitenizi:
+Bir proje çerçeveye özel şablonu oluştururken, PIP kullanarak gerekli paketleri yüklemenize yardımcı olması için bir iletişim kutusu görüntülenir. Ayrıca kullanmanızı öneririz bir [sanal ortam](managing-python-environments-in-visual-studio.md#global-and-virtual-environments) doğru bağımlılıkları dahil; böylece web projeleri için yayımladığınızda, web sitenizi:
 
 ![İletişim kutusu için bir proje şablonu paketleri gerekli](media/template-web-requirements-txt-wizard.png)
 
@@ -81,7 +81,7 @@ Herhangi bir proje özelliği veya ortam değişkeni MSBuild sözdizimiyle örne
 
 ### <a name="sample-pyramid-configuration"></a>Örnek Piramit yapılandırma
 
-Piramit uygulamalar, kullanarak şu anda en iyi oluşturulur `pcreate` komut satırı aracı. Uygulama oluşturulduktan sonra kullanarak alınabileceği [varolan Python kodu](python-projects.md#creating-a-project-from-existing-files) şablonu. Bunu yaptıktan sonra seçin **Genel Web projesi** özelleştirme seçeneklerini yapılandırmak için. Bu ayarlar sanal bir ortama Piramit yüklü olduğu varsayılmaktadır `..\env`.
+Piramit uygulamalar, kullanarak şu anda en iyi oluşturulur `pcreate` komut satırı aracı. Uygulama oluşturulduktan sonra kullanarak alınabileceği [varolan Python kodu](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files) şablonu. Bunu yaptıktan sonra seçin **Genel Web projesi** özelleştirme seçeneklerini yapılandırmak için. Bu ayarlar sanal bir ortama Piramit yüklü olduğu varsayılmaktadır `..\env`.
 
 - **Hata ayıklama** Grup:
   - **Sunucu bağlantı noktası**: 6543 (veya ne olursa olsun .ini dosyalarında yapılandırılır)

@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66f99665fc9d580a3c0c366fa2922ea6a15e0e7c
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 74be5c65cbb4b2498f9904c6e021c774400bfbf8
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da Python kodu bir depoyu kopyalayın
 
-Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installation.md), kolayca depoyu Python kodu kopyalayın ve bir proje oluşturun.
+Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installing-python-support-in-visual-studio.md), kolayca depoyu Python kodu kopyalayın ve bir proje oluşturun.
 
 [!INCLUDE[install-github-extension](includes/install-github-extension.md)]
 
@@ -71,15 +71,15 @@ Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installation.md)
 14. Yeniden ilk onay geçtiğini görmek için programını çalıştırın ve sonraki koan üzerinde programı durdurur. Hatalarını düzeltme ve istediğiniz programın yeniden çalıştırma devam edin.
 
 > [!Important]
-> Bu Hızlı Başlangıç, doğrudan bir kopyasını oluşturduğunuz *python_koans* github'daki. Bu tür bir depo yazarı doğrudan değişikliklere karşı korunur, böylece değişiklikleri depoya kaydedilmeye çalışılırken başarısız olur. Uygulamada, geliştiriciler bunun yerine, kendi GitHub hesabı için bir tür bir depoyu çatallaştırmanız, var. değişiklikleri yapın ve ardından bu değişiklikleri özgün deponuza göndermek için çekme isteği oluşturun. Bu adımları açıklanan [öğretici Git ile çalışma 6. adım -](vs-tutorial-01-06.md).
+> Bu Hızlı Başlangıç, doğrudan bir kopyasını oluşturduğunuz *python_koans* github'daki. Bu tür bir depo yazarı doğrudan değişikliklere karşı korunur, böylece değişiklikleri depoya kaydedilmeye çalışılırken başarısız olur. Uygulamada, geliştiriciler bunun yerine, kendi GitHub hesabı için bir tür bir depoyu çatallaştırmanız, var. değişiklikleri yapın ve ardından bu değişiklikleri özgün deponuza göndermek için çekme isteği oluşturun. Bu adımları açıklanan [öğretici Git ile çalışma 6. adım -](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 > [!div class="nextstepaction"]
-> [Öğretici: Visual Studio'da Python ile çalışma](vs-tutorial-01-01.md)
+> [Öğretici: Visual Studio'da Python ile çalışma](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Varolan bir Python yorumlayıcısı için bir ortam oluşturma](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Python desteği Visual Studio 2015 ve daha önce yükleme](installation.md).
-- [Konumları yüklemek](installation.md#install-locations).
+- [Varolan bir Python yorumlayıcısı için bir ortam oluşturma](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Python desteği Visual Studio 2015 ve daha önce yükleme](installing-python-support-in-visual-studio.md).
+- [Konumları yüklemek](installing-python-support-in-visual-studio.md#install-locations).

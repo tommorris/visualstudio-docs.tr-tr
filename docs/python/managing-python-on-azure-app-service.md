@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Azure uygulama Hizmeti'nde Python yönetme
 
@@ -169,7 +169,7 @@ Doğrudan sunucu ortamında paketleri yüklemek için aşağıdaki yöntemlerden
 | Yöntemler | Kullanım |
 | --- | --- |
 | [Azure App Service Kudu konsol](#azure-app-service-kudu-console) | Paketleri etkileşimli olarak yükler. Paket saf Python olmalıdır veya tekerlek yayımlamanız gerekir. |
-| [Kudu REST API'si](#kudu-rest-api) | Paket yükleme otomatik hale getirmek için kullanılabilir.  Paket saf Python olmalıdır veya tekerlek yayımlamanız gerekir. |
+| [Kudu REST API](#kudu-rest-api) | Paket yükleme otomatik hale getirmek için kullanılabilir.  Paket saf Python olmalıdır veya tekerlek yayımlamanız gerekir. |
 | Uygulamayla paketini | Paketleri doğrudan projenize yükleyin ve ardından bunları App Service'e dağıtma uygulamanızı parçası değilmiş gibi. Bağlı olarak kaç bağımlılıkları vardır ve ne sıklıkta bunları güncelleştirin, bu yöntem olmaya çalışma dağıtım almak için en kolay yolu olabilir. Dikkat edin kitaplıkları Python sürümü sunucusunda aynı olmalıdır, aksi takdirde dağıtımdan sonra belirsiz hataları görürsünüz. Python site uzantılarını tam olarak üzerinde python.org yayımlanan bu sürümler ile aynı olan App Service'te sürümleri, uyumlu bir sürüm yerel geliştirme için kolayca edinebileceği olduğundan, bununla. |
 | Sanal ortamlar | Desteklenmez. Bunun yerine, paketleme kullanın ve ayarlayın `PYTHONPATH` paketleri konumuna işaret etmek için ortam değişkeni. |
 
@@ -200,9 +200,9 @@ Doğrudan sunucu ortamında paketleri yüklemek için aşağıdaki yöntemlerden
     Kullanarak `requirements.txt` yeniden oluşturmak kolay olduğundan, tam paketinizi ayarlamak, her ikisi de, yerel olarak hem de sunucu tavsiye edilir. Herhangi bir değişiklik dağıttıktan sonra konsol ziyaret hatırlamak `requirements.txt` ve komutu yeniden çalıştırın.
 
 > [!Note]
-> Olmadığından C Derleyici uygulama hizmeti, yerel uzantısı modüllerle herhangi bir paket için tekerlek yüklemeniz gerekir. Birçok popüler paketleri kendi Tekerlek sağlar. Verme paketlerini kullanma `pip wheel <package_name>` yerel geliştirme bilgisayarınıza ve Tekerlek sitenize karşıya yükleme. Bir örnek için bkz: [gerekli paketleri yönetme](python-environments.md#managing-required-packages-requirementstxt).
+> Olmadığından C Derleyici uygulama hizmeti, yerel uzantısı modüllerle herhangi bir paket için tekerlek yüklemeniz gerekir. Birçok popüler paketleri kendi Tekerlek sağlar. Verme paketlerini kullanma `pip wheel <package_name>` yerel geliştirme bilgisayarınıza ve Tekerlek sitenize karşıya yükleme. Bir örnek için bkz: [gerekli paketleri yönetme](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt).
 
-### <a name="kudu-rest-api"></a>Kudu REST API'si
+### <a name="kudu-rest-api"></a>Kudu REST API
 
 Azure portalı üzerinden Kudu konsol kullanmak yerine, komutları uzaktan Kudu REST API aracılığıyla komutu göndererek çalıştırabilirsiniz `https://yoursite.scm.azurewebsites.net/api/command`. Örneğin, yüklemek için `bottle` paket, aşağıdaki JSON sonrası `/api/command`:
 

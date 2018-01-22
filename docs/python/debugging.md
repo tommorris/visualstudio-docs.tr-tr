@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a260001e661c9d6d0f9a1b472caa07c25637ff7
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 5cd67d031cd41a1f36de68d7372fdfcfd6f8e476
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="debugging-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -45,9 +45,9 @@ Ayrıca aşağıdaki senaryoya özgü hata ayıklama konulara bakın:
 <a name="debugging-without-a-project"></a>
 
 > [!Tip]
-> Visual Studio'da Python olmayan bir proje hata ayıklamayı destekler. Tek başına Python dosyası ile açık Düzenleyicisi'ni sağ tıklatın seçin **Başlat ile hata ayıklama**, ve Visual Studio komut dosyası genel varsayılan ortamı başlatır (bkz [Python ortamları](python-environments.md)) ve bağımsız değişkenler. Ancak daha sonra tam hata ayıklama desteğine sahip.
+> Visual Studio'da Python olmayan bir proje hata ayıklamayı destekler. Tek başına Python dosyası ile açık Düzenleyicisi'ni sağ tıklatın seçin **Başlat ile hata ayıklama**, ve Visual Studio komut dosyası genel varsayılan ortamı başlatır (bkz [Python ortamları](managing-python-environments-in-visual-studio.md)) ve bağımsız değişkenler. Ancak daha sonra tam hata ayıklama desteğine sahip.
 >
-> Bağımsız değişkenler ve ortamı denetlemek için kolayca gerçekleştirilir kodu için bir proje oluşturun [varolan Python kodu](python-projects.md#creating-a-project-from-existing-files) proje şablonu.
+> Bağımsız değişkenler ve ortamı denetlemek için kolayca gerçekleştirilir kodu için bir proje oluşturun [varolan Python kodu](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files) proje şablonu.
 
 <a name="debugging-with-a-project"></a>
 
@@ -58,7 +58,7 @@ Temel hata ayıklama iş akışı aracılığıyla koda atlama, değerlerini inc
 Hata ayıklama oturumu ile başlayan **hata ayıklama > hata ayıklamayı Başlat** komutu, **Başlat** araç veya F5 tuşuna düğmesine. Bu Eylemler, projenizin başlangıç dosyasını çalıştırın (gösterilen Çözüm Gezgini'nde kalın) projenin etkin ortam ve komut satırı bağımsız değişkenleri ya da proje özellikleri'nde belirtilen arama yolları (bkz [proje hata ayıklama Seçenekler](#project-debugging-options). Herhangi bir nedenden dolayı bir başlangıç dosya kümesine sahip değilseniz, ancak bir Python çıktı penceresi kısaca görüntülenir ve kaybolur. Bu durumda, uygun dosyasını sağ tıklatın ve seçin **başlangıç dosyası olarak ayarlamak**.
 
 > [!Note]
-> Hata ayıklayıcı her zaman etkin Python ortamı projesi için başlar. Ortam değiştirmek için farklı bir etkin açıklandığı gibi olun [Python ortamları](python-environments.md).
+> Hata ayıklayıcı her zaman etkin Python ortamı projesi için başlar. Ortam değiştirmek için farklı bir etkin açıklandığı gibi olun [Python ortamları](managing-python-environments-in-visual-studio.md).
 
 ### <a name="breakpoints"></a>Kesme noktaları
 
@@ -164,7 +164,7 @@ Varsayılan olarak, hata ayıklayıcı programınızı standart Python başlatı
 | Yorumlayıcı yolu | Geçerli ortamı ile ilişkili yolu geçersiz kılar.  değer bir standart yorumlayıcı komut dosyanızı başlatmak için yararlı olabilir. |
 | Ortam Değişkenleri | Bu çok satırlı metin kutusunda, form girişlerini ekleyin `NAME=VALUE`. Bu ayar son olarak, var olan tüm genel ortam değişkenlerini ve sonra üstte uygulandığından `PYTHONPATH` ayarlanmış arama yolları ayarına göre bu el ile bu bunlardan herhangi diğer değişkenler geçersiz kılmak için kullanılabilir. |
 
-< a name = "hata ayıklama-etkileşimli-pencere"</a>
+<a name="the-debug-interactive-window"</a>
 
 ## <a name="immediate-and-interactive-windows"></a>Anında ve etkileşimli windows
 

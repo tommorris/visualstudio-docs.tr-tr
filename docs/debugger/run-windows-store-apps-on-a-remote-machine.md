@@ -1,5 +1,5 @@
 ---
-title: "Bir uzak makinede UWP ve Windows 8.1 uygulamalarını çalıştırma | Microsoft Docs"
+title: "Bir uzak makinede UWP uygulamaları çalıştırma | Microsoft Docs"
 ms.custom: 
 ms.date: 01/05/2018
 ms.reviewer: 
@@ -18,35 +18,32 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 3e27aae0b9a8e57575015d1d8d5baee3803959a9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f9d538cbc650de2d704c885a8eff6a897c9ef68e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="run-uwp-and-windows-81-apps-on-a-remote-machine"></a>Bir uzak makinede UWP ve Windows 8.1 uygulamaları çalıştırma  
+# <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Visual Studio'da uzaktaki bir makinede UWP uygulamaları çalıştırma
   
-Uzak makinede bir UWP veya Windows 8.1 uygulamasını çalıştırmak için Visual Studio için Uzak araçları kullanarak ilişkilendirmeniz gerekir. Uzak araçları çalıştırmak için profil, hata ayıklama ve Visual Studio çalıştıran ikinci bir bilgisayardan bir cihazda çalışan bir UWP uygulaması test etkinleştirin. Visual Studio bilgisayar UWP uygulamaları dokunma, coğrafi konum ve fiziksel yönü gibi belirli işlevleri desteklemediğinde uzak cihazda çalışan özellikle yararlı olabilir. Bu konuda, yapılandırma ve uzak bir oturum başlatmak için yordamlar açıklanmaktadır.
+Uzak makinede bir UWP uygulaması çalıştırmak için Visual Studio için Uzak araçları kullanarak ilişkilendirmeniz gerekir. Uzak araçları çalıştırmak için profil, hata ayıklama ve Visual Studio çalıştıran ikinci bir bilgisayardan bir cihazda çalışan bir UWP uygulaması test etkinleştirin. Visual Studio bilgisayar UWP uygulamaları dokunma, coğrafi konum ve fiziksel yönü gibi belirli işlevleri desteklemediğinde uzak cihazda çalışan özellikle yararlı olabilir. Bu konuda, yapılandırma ve uzak bir oturum başlatmak için yordamlar açıklanmaktadır.
 
 Uzak bir cihaza dağıttığınızda, bazı senaryolarda, uzak Araçlar otomatik olarak yüklenir.
 
 - Windows 10 oluşturucuları güncelleştirme ve sonraki sürümlerini çalıştıran bilgisayarlar için Uzak Araçlar otomatik olarak yüklenir.
 - Windows 10 Xbox, IOT ve HoloLens cihazlar için Uzak araçları otomatik olarak yüklenir.
-- Windows Phone için telefon fiziksel olarak bağlı olmalıdır, ya da yüklemeli bir [Geliştirici lisansı](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh974578.aspx) (Windows Phone 8 ve 8.1) etkinleştirmek veya [geliştirici modunu](/windows/uwp/get-started/enable-your-device-for-development) (Windows Mobile 10), ve gerekir seçin **aygıt** hata ayıklama hedefi olarak. Uzak Araçlar gerekli veya desteklenen güncelleştirilmez.
+- Windows Mobile 10, telefon için fiziksel olarak bağlı gerekir, etkinleştirmelisiniz [geliştirici modunu](/windows/uwp/get-started/enable-your-device-for-development) ve seçmeniz gerekir **aygıt** hata ayıklama hedefi olarak. Uzak Araçlar gerekli veya desteklenen güncelleştirilmez.
 
-Hata ayıklama önce Windows 8.1 bilgisayarları ve Windows 10 bir pre-oluşturanın güncelleştirme Windows sürümünü çalıştıran bilgisayarları için Uzak Araçlar uzak makinede el ile yüklemeniz gerekir. Bu konudaki yönergeleri izleyin. 
+Hata ayıklama önce bir pre-oluşturanın güncelleştirme Windows sürümü çalıştıran Windows 10 bilgisayarları için Uzak araçları uzak makinede el ile yüklemeniz gerekir. Bu konudaki yönergeleri izleyin. 
   
 ##  <a name="BKMK_Prerequisites"></a> Önkoşullar  
  Uzak bir cihazda hata ayıklamak için:  
   
--   Uzak aygıt ve Visual Studio bilgisayar ağ üzerinden bağlı veya gerekir doğrudan USB veya Ethernet kablo bağlı. Internet üzerinden hata ayıklama desteklenmez.  
+- Uzak aygıt ve Visual Studio bilgisayar ağ üzerinden bağlı veya gerekir doğrudan USB veya Ethernet kablo bağlı. Internet üzerinden hata ayıklama desteklenmez.  
 
-- Uzak aygıt geliştirme için etkinleştirilmesi gerekir.
-
-    - Windows 8 ve Windows 8.1 cihazları için bir [Geliştirici lisansı](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh974578.aspx) uzak cihazda yüklü olmalıdır.
-    - Windows 10 cihazlar için etkinleştirmeniz gerekir [geliştirici modunu](/windows/uwp/get-started/enable-your-device-for-development). 
+- Etkinleştirmelisiniz [geliştirici modunu](/windows/uwp/get-started/enable-your-device-for-development). 
   
--   Windows 10 oluşturanın Güncelleştirme'den önceki bir sürüm olarak Windows 10 çalıştıran Windows 10 bilgisayarları için yapmanız gerekenler [yükleyin ve uzaktan hata ayıklama bileşenleri Çalıştır](#BKMK_download).
+- Windows 10 oluşturanın Güncelleştirme'den önceki bir sürüm olarak Windows 10 çalıştıran Windows 10 bilgisayarları için yapmanız gerekenler [yükleyin ve uzaktan hata ayıklama bileşenleri Çalıştır](#BKMK_download).
   
 ##  <a name="BKMK_Security"></a>Güvenlik  
 Varsayılan olarak, **Evrensel (şifrelenmemiş Protokolü)** üzerinde Windows 10 kullanılır. Bu protokol, yalnızca güvenilen ağlarda kullanılmalıdır. Hata ayıklama bağlantıyı kesecek ve geliştirme ile uzak makine arasında aktarılan veriler değiştirmek kötü amaçlı kullanıcılar savunmasızdır.
@@ -56,7 +53,7 @@ Varsayılan olarak, **Evrensel (şifrelenmemiş Protokolü)** üzerinde Windows 
   
 ##  <a name="BKMK_DirectConnect"></a>Bir USB kablosu kullanarak doğrudan bağlanma 
 
-Windows 10'seçerek USB bağlantılı bir aygıta dağıtabilirsiniz **aygıt** yerine **uzak makine** dağıtım hedefi olarak (Bunu yapmak için **standart** araç çubuğu veya hata ayıklama özellikleri sayfasında). Doğrudan bağlanmadan önce Windows 8.1 için Uzak araçları cihazda yüklenmesi gerekir.
+Windows 10'seçerek USB bağlantılı bir aygıta dağıtabilirsiniz **aygıt** yerine **uzak makine** dağıtım hedefi olarak (Bunu yapmak için **standart** araç çubuğu veya hata ayıklama özellikleri sayfasında).
 
 ##  <a name="BKMK_ConnectVS"></a>Uzaktan hata ayıklama için Visual Studio projesi yapılandırın  
  Proje özelliklerinde bağlanmak için uzak aygıt belirtin. Yordam programlama dili bağlı olarak farklılık gösterir. Uzak aygıt ağ adı yazın veya dosyayı seçin **uzak bağlantı** iletişim kutusu.  
@@ -94,7 +91,7 @@ Windows 10'seçerek USB bağlantılı bir aygıta dağıtabilirsiniz **aygıt** 
   
 ## <a name="BKMK_download"></a>Uzak araçları yükleyip (ön oluşturucuları güncelleştirmesi)
 
-Windows 8.1 veya Windows 10 'un bir pre-oluşturanın güncelleştirme sürümleri kullanıyorsanız, bu yönergeleri izleyin. Aksi takdirde, bu bölümü atlayabilirsiniz.
+Windows 10 'un bir pre-oluşturanın güncelleştirme sürümleri kullanıyorsanız, bu yönergeleri izleyin. Aksi takdirde, bu bölümü atlayabilirsiniz.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
@@ -105,8 +102,9 @@ Windows 8.1 veya Windows 10 'un bir pre-oluşturanın güncelleştirme sürümle
 ##  <a name="BKMK_RunRemoteDebug"></a>Uzaktan hata ayıklama oturumu Başlat  
  Başlatmak, durdurmak ve bir yerel oturum yaptığınız gibi bir uzaktan hata ayıklama oturumunda gezinme. Pre-oluşturanın güncelleştirme sürümlerinde Windows 10, uzaktan hata ayıklama İzleyicisi uzak cihazda çalışır durumda olduğundan emin olun.  
   
- Ardından **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menü (klavye: F5). Projeyi yeniden derlenebileceğini gösterir, ardından dağıtılan ve uzak cihazda başlatıldı. Hata ayıklayıcı kesme noktalarında durduran ve, üzerinden, kodun içine ve dışına, geçebilirsiniz. Seçin **durdurma hata ayıklama** hata ayıklama oturumunuzu sonlandırmak ve uzak uygulamasını kapatın. Daha fazla bilgi için bkz: [Visual Studio uygulamalarında hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md).  
+ Ardından **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menü (klavye: F5). Projeyi yeniden derlenebileceğini gösterir, ardından dağıtılan ve uzak cihazda başlatıldı. Hata ayıklayıcı kesme noktalarında durduran ve, üzerinden, kodun içine ve dışına, geçebilirsiniz. Seçin **durdurma hata ayıklama** hata ayıklama oturumunuzu sonlandırmak ve uzak uygulamasını kapatın.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
+ [Gelişmiş uzaktan dağıtım seçenekleri](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
  [Visual Studio ile UWP uygulamaları test etme](../test/testing-store-apps-with-visual-studio.md)   
  [Visual Studio uygulamalarında hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md)

@@ -165,7 +165,7 @@
 ###### [Yeniden Adlandır](ide/reference/rename-vb.md)
 ###### [Eşitleme türü ve dosya adı](ide/reference/sync-type-and-file-vb.md)
 #### [Üretkenlik İpuçları](ide/productivity-tips-for-visual-studio.md)
-##### [İpuçları ve Püf Noktaları](ide/tips-and-tricks-for-visual-studio.md)
+##### [Klavye İpuçları](ide/tips-and-tricks-for-visual-studio.md)
 ##### [.NET Geliştiricileri için İpuçları](ide/visual-studio-2017-for-dotnet-developers.md)
 ##### [Klavye Kısayollarını Tanımlama ve Özelleştirme](ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 ###### [Sık Kullanılan Komutlar için Varsayılan Klavye Kısayolları](ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)

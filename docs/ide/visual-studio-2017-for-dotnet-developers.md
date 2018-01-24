@@ -9,11 +9,11 @@ ms.date: 01/16/2018
 ms.topic: article
 helpviewer_keywords: editor
 ms.workload: dotnet
-ms.openlocfilehash: 8f8c8433a1c07b508ee6a433592914340a7c0de3
-ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
+ms.openlocfilehash: db1e944f3ce12369b096c75a7fc12648a2d7e91d
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>.NET geliştiricileri için Visual Studio 2017
 
@@ -104,6 +104,9 @@ Popüler Visual Studio kısayolları verilmiştir. Bazı uzantılar varsayılan 
 | **Ctrl+F12** | Uygulamasına gidin | Bir temel tür veya üye, çeşitli uygulamaları gidin |
 | **Shift+F12** | Tüm Başvuruları Bul | Tüm simge veya değişmez değer başvuruları bakın |
 | **Ctrl+.** (Ayrıca **Alt + girin** profilinde C#) | Hızlı Eylemler ve Yeniden Düzenlemeler | Kod oluşturma eylemleri, yapan yeniden düzenlemeler veya diğer hızlı Eylemler imleç konumu veya kod seçimi daha kullanılabilir, hangi kod giderir bakın |
+| **Ctrl**+**E**,**V** | Yinelenen satır | İmlecin kod satırı ile yineleme (kullanılabilir **Visual Studio 2017 sürüm 15,6 Önizleme 2** ve üzeri) |
+| **Ctrl**+**W** | Seçimi genişletin | Bir Yapısal birim geçerli seçimi genişletir (kullanılabilir **Visual Studio 2017 sürüm 15,5**) |
+| **Ctrl**+**Shift**+**W** | Sözleşme seçimi | Sözleşmeleri (azaltır) bir Yapısal birim geçerli seçim (kullanılabilir **Visual Studio 2017 sürüm 15,5**) |
 | **Ctrl+Q** | Hızlı Başlat | Arama tüm Visual Studio ayarları |
 | **F5** | Hata ayıklama başlatılamıyor | Uygulamanızı hata ayıklamayı Başlat |
 | **Ctrl+F5** | Hata ayıklama olmadan çalıştırma | Uygulamanızı yerel olarak hata ayıklama olmadan çalıştırma |

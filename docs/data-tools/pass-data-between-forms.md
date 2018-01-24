@@ -22,11 +22,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 7704b8f4af9f6858e476f4075c6f38cda3052118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b93cacb9f64a4fbf0b6478feb922c74b35a3f7ea
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="pass-data-between-forms"></a>Formlar arasında veri geçirme
 Bu kılavuz, verileri bir biçimden diğerine geçirmek için adım adım yönergeler sağlar. Northwind siparişleri tablolardan ve müşteriler kullanarak, bir form kullanıcıların bir müşteri seçmesine izin verir ve seçilen müşterinin siparişleri ikinci bir form görüntüler. Bu kılavuzda ilk formundan verileri alan ikinci form üzerinde bir yöntem oluşturulacağını gösterir.  
@@ -53,7 +53,7 @@ Bu kılavuz, verileri bir biçimden diğerine geçirmek için adım adım yöner
 ## <a name="prerequisites"></a>Önkoşullar  
 Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullanılır.  
   
-1.  SQL Server Express LocalDB yoksa, araçtan yüklemek [SQL Server sürümleri indirme sayfasına](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), aracılığıyla veya **Visual Studio yükleyicisi**. Visual Studio Yükleyicisi'nde, SQL Server Express LocalDB parçası olarak yüklenebilir **veri depolama ve işleme** iş yükü veya tek bir bileşen olarak.  
+1.  SQL Server Express LocalDB yoksa, araçtan yüklemek [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express), aracılığıyla veya **Visual Studio yükleyicisi**. Visual Studio Yükleyicisi'nde, SQL Server Express LocalDB parçası olarak yüklenebilir **veri depolama ve işleme** iş yükü veya tek bir bileşen olarak.  
   
 2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:  
 
@@ -116,7 +116,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
   
 -   Ana sürükleyin **müşteriler** düğümden **veri kaynakları** penceresi üzerine **Form1**.  
   
-     A <xref:System.Windows.Forms.DataGridView> ve araç şeridinde (<xref:System.Windows.Forms.BindingNavigator>) kayıtları gezinmek için görünür **Form1**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
+     A <xref:System.Windows.Forms.DataGridView> ve araç şeridinde (<xref:System.Windows.Forms.BindingNavigator>) kayıtları gezinmek için görünür **Form1**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
   
 ## <a name="create-the-second-form-form2"></a>İkinci form (Form2) oluşturun  
   
@@ -128,7 +128,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
   
 3.  Ana sürükleyin **siparişleri** düğümden **veri kaynakları** penceresi üzerine **Form2**.  
   
-     A <xref:System.Windows.Forms.DataGridView> ve araç şeridinde (<xref:System.Windows.Forms.BindingNavigator>) kayıtları gezinmek için görünür **Form2**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
+     A <xref:System.Windows.Forms.DataGridView> ve araç şeridinde (<xref:System.Windows.Forms.BindingNavigator>) kayıtları gezinmek için görünür **Form2**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
   
 4.  Silme **OrdersBindingNavigator** bileşen gelen.  
   

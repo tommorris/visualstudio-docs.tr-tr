@@ -17,24 +17,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9f6aaafa0ff72a175b5900b1ff1dfa054fe0381b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki Klavye Kısayolları
 Klavye erişilebilirlik hakkında daha fazla bilgi için bkz: [erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md) ve [nasıl yapılır: klavyeyi özel olarak kullanma](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Uygun klavye kısayolu seçerek çeşitli komutlar ve Visual Studio'da Pencereleri erişebilirsiniz. Bu konu, Visual Studio yüklendiğinde seçmiş olabilirsiniz genel geliştirme profili için varsayılan kısayolları listeler. Seçtiğiniz profil olsun, bir komut için kısayol açarak tanımlayabilirsiniz **seçenekleri** iletişim kutusu, genişletme **ortam** düğümünü ve ardından seçme **klavye**. Ayrıca, verilen komutlardan herhangi birine farklı bir kısayol atayarak kısayollarınızı özelleştirebilirsiniz.
 
-Ortak klavye kısayolları ve diğer verimlilik bilgileri listesi için bkz: [sık kullanılan komutlar Visual Studio için varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [ipuçları ve püf noktaları](../ide/tips-and-tricks-for-visual-studio.md), ve [ Üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md).
+Ortak klavye kısayolları ve diğer verimlilik bilgileri listesi için bkz: [sık kullanılan komutlar Visual Studio için varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [klavye ipuçları](../ide/tips-and-tricks-for-visual-studio.md), ve [ Üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md).
 
 Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kısayollarını kullanarak erişim sağlayabilmeniz bakımından genel kabul edilen komutlar yer almaktadır:
 
 |||||  
 |-|-|-|-|  
-|[Çözümleme](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Düzenleme](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Proje](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|  
+|[Çözümleme](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Düzenleme](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|  
 |[Mimari](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Düzenleyici bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Proje ve çözüm bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Test Gezgini](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|  
 |[Derleme](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Dosya](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Yeniden düzenleme](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Araçlar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|  
 |[Sınıf Görünümü Bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Yardım](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Çözüm Gezgini](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Görünümü](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|  
@@ -49,13 +49,13 @@ Aşağıdaki tablodaki her bölüm, klavye kısayollarının adı verilen bölü
 |[ADO.NET varlık veri modeli Tasarımcısı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ADONET)|[Katman diyagramı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_layerDiagram)|[Ayarları Tasarımcısı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SettingsDesigner)|[VC görüntü Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcimageeditor)|  
 |[Sınıf diyagramı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[Yönetilen kaynaklar Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[Çözüm Gezgini](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[VC Dize Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|
 |[Kodlanmış UI Test Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_codedUItest)|[Düzenleyici penceresini birleştirme](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_MergeEditor)|[Takım Gezgini](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TeamExplorer)|[Görünüm Tasarımcısı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_viewDesigner)|  
-|[Veri kümesi Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Microsoft SQL Server veri araçları, Şema karşılaştırma](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Team Foundation Yapı ayrıntı Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|  
+|[DataSet Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Microsoft SQL Server veri araçları, Şema karşılaştırma](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Team Foundation Yapı ayrıntı Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|  
 |[Fark Görüntüleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)|[Microsoft SQL Server veri araçları, Tablo Tasarımcısı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)|[Test Gezgini](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)|[Windows Form Tasarımcısı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)|  
-|[DOM Gezgini](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_DOM)|[Microsoft SQL Server veri araçları, T-SQL Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TSQLeditor)|[Metin Düzenleyici](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TextEditor)|[İş öğesi Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workItemEditor)|  
+|[DOM Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_DOM)|[Microsoft SQL Server veri araçları, T-SQL Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TSQLeditor)|[Metin Düzenleyici](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TextEditor)|[İş öğesi Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workItemEditor)|  
 |[F# Interactive](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)|[Microsoft SQL Server veri araçları, T-SQL PDW Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)|[UML etkinlik diyagramı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)|[İş öğesi sorgu görünümü](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)|  
 |[Grafik belge Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphDoc)|[Sayfa denetçisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_PageInspector)|[UML sınıf diyagramı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLclassDiagram)|[İş öğesi sonuçları görünümü](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIresultsview)|  
 |[Grafik tanılama](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphicsDebugger)|[Sorgu Tasarımcısı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryDesigner)|[UML bileşen diyagramı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLcomponentDiagram)|[İş Akışı Tasarımcısı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workflowdesigner)|  
-|[HTML düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[Sorgu Sonuçları](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[UML Kullanım durumu diyagramı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[XAML kullanıcı Arabirimi Tasarımcısı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|
+|[HTML Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[Sorgu Sonuçları](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[UML Kullanım durumu diyagramı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[XAML kullanıcı Arabirimi Tasarımcısı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|
 |[HTML düzenleyicisi Tasarım görünümü](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[Rapor Tasarımcısı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[VC Hızlandırıcı Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[XML (metin) Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|  
 |[HTML düzenleyicisi kaynağı görünümü](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)|[Sıralı diyagramı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)|[VC iletişim kutusu Düzenleyicisi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)|[XML Şema Tasarımcısı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)|  
 
@@ -72,7 +72,7 @@ Aşağıdaki tablodaki her bölüm, klavye kısayollarının adı verilen bölü
 
 |Komutlar|Klavye Kısayolları|  
 |--------------|------------------------|  
-|Architecture.NewDiagram|CTRL +\\, Ctrl + N|  
+|Architecture.NewDiagram|Ctrl+\\, Ctrl+N|  
 
 ###  <a name="bkmk_build"></a>Derleme
 
@@ -118,15 +118,15 @@ Aşağıdaki tablodaki her bölüm, klavye kısayollarının adı verilen bölü
 |Debug.LocationToolbar.ToggleCurrentThreadFlaggedState|Ctrl+8|  
 |Debug.LocationToolbar.ToggleFlaggedThreads|Ctrl+9|  
 |Debug.Memory1|Ctrl+Alt+M, 1|  
-|Debug.Memory2|Ctrl + Alt + M, 2|  
-|Debug.Memory3|Ctrl + Alt + M, 3|  
-|Debug.Memory4|Ctrl + Alt + M, 4|  
+|Debug.Memory2|Ctrl+Alt+M, 2|  
+|Debug.Memory3|Ctrl+Alt+M, 3|  
+|Debug.Memory4|Ctrl+Alt+M, 4|  
 |Debug.Modules|Ctrl+Alt+U|  
 |Debug.ParallelStacks|Ctrl+Shift+D, S|  
 |Debug.ParallelWatch1|Ctrl+Shift+D, 1|  
-|Debug.ParallelWatch2|Ctrl + Shift + D, 2|  
-|Debug.ParallelWatch3|Ctrl + Shift + D, 3|  
-|Debug.ParallelWatch4|Ctrl + Shift + D, 4|  
+|Debug.ParallelWatch2|Ctrl+Shift+D, 2|  
+|Debug.ParallelWatch3|Ctrl+Shift+D, 3|  
+|Debug.ParallelWatch4|Ctrl+Shift+D, 4|  
 |Debug.Processes|Ctrl+Alt+Z|  
 |Debug.QuickWatch|Shift+F9<br /><br /> veya<br /><br /> Ctrl+Alt+Q|  
 |Debug.RefreshWindowsapp|Ctrl+Shift+R|  
@@ -153,9 +153,9 @@ Aşağıdaki tablodaki her bölüm, klavye kısayollarının adı verilen bölü
 |Debug.ToggleBreakpoint|F9|  
 |Debug.ToggleDisassembly|Ctrl+F11|  
 |Debug.Watch1|Ctrl+Alt+W, 1|  
-|Debug.Watch2|Ctrl + Alt + W, 2|  
-|Debug.Watch3|Ctrl + Alt + W, 3|  
-|Debug.Watch4|Ctrl + Alt + W, 4|  
+|Debug.Watch2|Ctrl+Alt+W, 2|  
+|Debug.Watch3|Ctrl+Alt+W, 3|  
+|Debug.Watch4|Ctrl+Alt+W, 4|  
 
 ###  <a name="bkmk_debugger"></a>Hata ayıklayıcı bağlam menüleri
 
@@ -278,7 +278,7 @@ Aşağıdaki tablodaki her bölüm, klavye kısayollarının adı verilen bölü
 |-------------|-----------------------|  
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|Ekleme|  
 
-###  <a name="bkmk_project"></a>Proje
+###  <a name="bkmk_project"></a> Project
 
 |Komutlar|Klavye Kısayolları|  
 |--------------|------------------------|  
@@ -340,12 +340,12 @@ Aşağıdaki tablodaki her bölüm, klavye kısayollarının adı verilen bölü
 |TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0, Ctrl+A<br /><br /> veya<br /><br /> Ctrl+0, A|  
 |TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0, Ctrl+W<br /><br /> veya<br /><br /> Ctrl+0, W|  
 
-###  <a name="bkmk_test"></a>Test
+###  <a name="bkmk_test"></a> Test
 
 |Komutlar|Klavye Kısayolları|  
 |--------------|------------------------|  
-|Test.UseCodedUITestBuilder|CTRL +\\, Ctrl + C|  
-|Test.UseExistingActionRecording|CTRL +\\, Ctrl + A|  
+|Test.UseCodedUITestBuilder|Ctrl+\\, Ctrl+C|  
+|Test.UseExistingActionRecording|Ctrl+\\, Ctrl+A|  
 
 ###  <a name="bkmk_testexplorerGLOBAL"></a>Test Gezgini
 
@@ -371,7 +371,7 @@ Aşağıdaki tablodaki her bölüm, klavye kısayollarının adı verilen bölü
 |Komutlar|Klavye Kısayolları|  
 |--------------|------------------------|  
 |View.AllWindows|Shift+Alt+M|  
-|View.ArchitectureExplorer|CTRL +\\, Ctrl + R|  
+|View.ArchitectureExplorer|Ctrl+\\, Ctrl+R|  
 |View.Backward|Alt+Sol Ok|  
 |View.BookmarkWindow|Ctrl+K, Ctrl+W|  
 |View.BrowseNext|Ctrl+Shift+1|  
@@ -379,12 +379,12 @@ Aşağıdaki tablodaki her bölüm, klavye kısayollarının adı verilen bölü
 |View.CallHierarchy|Ctrl+Alt+K|  
 |View.ClassView|Ctrl+Shift+C|  
 |View.ClassViewGoToSearchCombo|Ctrl+K, Ctrl+V|  
-|View.CodeDefinitionWindow|CTRL +\\, D<br /><br /> veya<br /><br /> CTRL +\\, Ctrl + D|  
+|View.CodeDefinitionWindow|Ctrl+\\, D<br /><br /> veya<br /><br /> Ctrl+\\, Ctrl+D|  
 |View.CommandWindow|Ctrl+Alt+A|  
 |View.DataSources|Shift+Alt+D|  
 |View.DocumentOutline|Ctrl+Alt+T|  
 |View.EditLabel|F2|  
-|View.ErrorList|CTRL +\\, E<br /><br /> veya<br /><br /> CTRL +\\, Ctrl + E|  
+|View.ErrorList|Ctrl+\\, E<br /><br /> veya<br /><br /> Ctrl+\\, Ctrl+E|  
 |View.F#Interactive|Ctrl+Alt+F|  
 |View.FindSymbolResults|Ctrl+Alt+F12|  
 |View.Forward|Alt+Sağ Ok|  
@@ -404,11 +404,11 @@ Aşağıdaki tablodaki her bölüm, klavye kısayollarının adı verilen bölü
 |View.ServerExplorer|Ctrl+Alt+S|  
 |View.ShowSmartTag|Shift+Alt+F10<br /><br /> veya<br /><br /> Ctrl+.|  
 |View.SolutionExplorer|Ctrl+Alt+L|  
-|View.SQLServerObjectExplorer|CTRL +\\, Ctrl + S|  
-|View.TaskList|CTRL +\\, T<br /><br /> veya<br /><br /> CTRL +\\, Ctrl + T|  
-|View.TfsTeamExplorer|CTRL +\\, Ctrl + M|  
+|View.SQLServerObjectExplorer|Ctrl+\\, Ctrl+S|  
+|View.TaskList|Ctrl+\\, T<br /><br /> veya<br /><br /> Ctrl+\\, Ctrl+T|  
+|View.TfsTeamExplorer|Ctrl+\\, Ctrl+M|  
 |View.Toolbox|Ctrl+Alt+X|  
-|View.UMLModelExplorer|CTRL +\\, Ctrl + U|  
+|View.UMLModelExplorer|Ctrl+\\, Ctrl+U|  
 |View.ViewCode|F7|  
 |View.ViewDesigner|Shift+F7|  
 |View.WebBrowser|Ctrl+Alt+R|  
@@ -446,7 +446,7 @@ Aşağıdaki tablodaki her bölüm, klavye kısayollarının adı verilen bölü
 |Window.SolutionExplorerSearch|Ctrl+;|  
 |Window.WindowSearch|Alt+`|  
 
-###  <a name="bkmk_windowsazure"></a>Azure  
+###  <a name="bkmk_windowsazure"></a> Azure  
 
 |Komutlar|Klavye Kısayolları|  
 |--------------|------------------------|  
@@ -504,12 +504,12 @@ Aşağıdaki tablodaki her bölüm, klavye kısayollarının adı verilen bölü
 |-|-|  
 |Komutlar|Klavye Kısayolları|  
 |Diff.IgnoreTrimWhitespace|CTRL +\\, Ctrl + Ara çubuğu|  
-|Diff.InlineView|CTRL +\\, Ctrl + 1|  
-|Diff.LeftOnlyView|CTRL +\\, Ctrl + 3|  
+|Diff.InlineView|Ctrl+\\, Ctrl+1|  
+|Diff.LeftOnlyView|Ctrl+\\, Ctrl+3|  
 |Diff.NextDifference|F8|  
 |Diff.PreviousDifference|Shift+F8|  
-|Diff.RightOnlyView|CTRL +\\, Ctrl + 4|  
-|Diff.SideBySideView|CTRL +\\, Ctrl + 2|  
+|Diff.RightOnlyView|Ctrl+\\, Ctrl+4|  
+|Diff.SideBySideView|Ctrl+\\, Ctrl+2|  
 |Diff.SwitchBetweenLeftAndRight|CTRL +\\, Ctrl + sekme|  
 |Diff.SynchronizeViewToggle|CTRL +\\, Ctrl + aşağı ok|  
 |EditorContextMenus.CodeWindow.AddComment|Ctrl+Shift+K|  
@@ -551,7 +551,7 @@ Aşağıdaki tablodaki her bölüm, klavye kısayollarının adı verilen bölü
 |Graphics.MovePixelSelectionRight|Shift+Alt+Sağ Ok|  
 |Graphics.MovePixelSelectionUp|Shift+Alt+Yukarı Ok|  
 |Graphics.ZoomToActualSize|Shift+Alt+0|  
-|Graphics.ZoomToFitInWindow|Shift + Alt + 9|  
+|Graphics.ZoomToFitInWindow|Shift+Alt+9|  
 |Graphics.ZoomIn|Shift+Alt+=|  
 |Graphics.ZoomOut|Shift+Alt+-|  
 
@@ -1029,7 +1029,7 @@ Aşağıdaki tablodaki her bölüm, klavye kısayollarının adı verilen bölü
 |QueryDesigner.Results|Ctrl+4|  
 |QueryDesigner.SQL|Ctrl+3|  
 
-##  <a name="bkmk_visualstudio"></a>Visual Studio  
+##  <a name="bkmk_visualstudio"></a> Visual Studio  
 
 |Komut|Klavye Kısayolu|  
 |-------------|-----------------------|  

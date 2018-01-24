@@ -16,34 +16,36 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>IIS ve Visual Studio 2017 Azure'da ASP.NET çekirdeğinde uzaktan hata ayıklama
-Azure App Service için kullanarak debug olan öneririz [anlık görüntü hata ayıklayıcı](../debugger/debug-live-azure-applications.md) veya Visual Studio hata ayıklayıcısı eklemek için bu konudaki yönergeleri izleyin. Windows Server IIS ile bir Azure VM üzerinde çalıştırıyorsanız, uzaktan hata ayıklama için de ayarlayabilirsiniz. Bu kılavuz, ayarlama ve Visual Studio 2017 ASP.NET Core uygulama yapılandırma, Azure kullanılarak IIS'ye dağıtma ve Visual Studio uzaktan hata ayıklayıcı Ekle açıklanmaktadır.
+# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Visual Studio 2017 Azure'da IIS'de ASP.NET çekirdeğinde uzaktan hata ayıklama
+
+Bu kılavuz, ayarlama ve Visual Studio 2017 ASP.NET Core uygulama yapılandırma, Azure kullanılarak IIS'ye dağıtma ve Visual Studio uzaktan hata ayıklayıcı Ekle açıklanmaktadır.
+
+Azure üzerinde uzaktan hata ayıklama için önerilen yol, senaryoya bağlıdır:
+
+* Azure App Service'te ASP.NET Core hata ayıklamak için bkz: [anlık görüntü hata ayıklayıcı kullanarak hata ayıklama Azure uygulamaları](../debugger/debug-live-azure-applications.md). Bu önerilen bir yöntemdir.
+* Azure App Service'te daha geleneksel hata ayıklama özelliklerini kullanarak ASP.NET Core hata ayıklamak için bu konudaki adımları takip edin (bölümüne bakın [uzaktan hata ayıklama Azure uygulama hizmeti](#remote_debug_azure_app_service)).
+
+    Bu senaryoda, uygulamanızı Visual Studio'dan Azure dağıtmanız gerekir, ancak el ile yüklemek veya IIS ya da (Bu bileşenlerin noktalı çizgilerle gösterilir) uzaktan hata ayıklayıcı, aşağıdaki çizimde gösterildiği gibi yapılandırmak gerekmez.
+
+    ![Uzaktan hata ayıklayıcı bileşenleri](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+
+* IIS üzerinde bir Azure VM hata ayıklamak için bu konudaki adımları takip edin (bölümüne bakın [uzaktan hata ayıklama Azure VM'de](#remote_debug_azure_vm)). Bu, özelleştirilmiş bir IIS yapılandırmasını kullanmanıza olanak sağlar, ancak Kurulum ve dağıtım adımlarını daha karmaşıktır.
+
+    Bir Azure VM için uygulamanızı Visual Studio'dan Azure dağıtmanız gerekir ve ayrıca IIS rolünü ve uzaktan hata ayıklayıcı el ile yüklemek aşağıdaki çizimde gösterildiği gibi gerekir.
+
+    ![Uzaktan hata ayıklayıcı bileşenleri](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+
+* Azure Service Fabric ASP.NET Çekirdeğinde hata ayıklamak için bkz: [uzak Service Fabric uygulama hata ayıklama](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 > [!WARNING]
 > Bu öğreticide adımları tamamladıktan sonra oluşturduğunuz Azure kaynaklarını sildiğinizden emin olun. Bu şekilde, gereksiz ücretlerinin yansıtılmasını önleyebilirsiniz.
 
-Bu konuda gösterilmektedir nasıl yapılır:
-
-* Uzaktan hata ayıklama Azure App Service'te ASP.NET Çekirdeği
-
-* Uzaktan hata ayıklama Azure VM'de ASP.NET Çekirdeği
-
-Azure App Service, uygulamanızı Visual Studio'dan Azure dağıtmanız gerekir ancak el ile yüklemek veya IIS ya da (Bu bileşenlerin noktalı çizgilerle gösterilir) uzaktan hata ayıklayıcı, aşağıdaki çizimde gösterildiği gibi yapılandırmak gerekmez.
-
-![Uzaktan hata ayıklayıcı bileşenleri](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
-
-Bir Azure VM için uygulamanızı Visual Studio'dan Azure dağıtmanız gerekir ve ayrıca IIS rolünü ve uzaktan hata ayıklayıcı el ile yüklemek aşağıdaki çizimde gösterildiği gibi gerekir.
-
-![Uzaktan hata ayıklayıcı bileşenleri](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
-
-> [!NOTE]
-> Azure Service Fabric ASP.NET Çekirdeğinde hata ayıklamak için bkz: [uzak Service Fabric uygulama hata ayıklama](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -61,11 +63,11 @@ Bir proxy üzerinden bağlı iki bilgisayar arasında hata ayıklama desteklenmi
 
 4. About.cshtml.cs dosyasını açın ve bir kesme noktası kümesinde `OnGet` yöntemi (eski şablonlarında, bunun yerine HomeController.cs açın ve kesme kümesinde `About()` yöntemi).
 
-## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Uzaktan hata ayıklama ASP.NET Core üzerinde bir Azure uygulama hizmeti
+## <a name="remote_debug_azure_app_service"></a>Uzaktan hata ayıklama ASP.NET Core üzerinde bir Azure uygulama hizmeti
 
 Hızlı bir şekilde Visual Studio'dan yayımlamak ve IIS tamamen sağlanan bir örneğine uygulamanızın hatalarını ayıklama. Ancak, IIS yapılandırmasını önceden ve onu özelleştiremezsiniz. Daha ayrıntılı yönergeler için bkz: [ASP.NET Core web uygulama dağıtmak için Visual Studio kullanarak Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (IIS özelleştirme yeteneği ihtiyacınız varsa, hata ayıklama deneyin bir [Azure VM](#BKMK_azure_vm).) 
 
-#### <a name="to-deploy-the-app-and-remote-debug"></a>Uzaktan hata ayıklama ve uygulama dağıtmak için
+#### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>Sunucu Gezgini kullanarak uzaktan hata ayıklama ve uygulama dağıtmak için
 
 1. Visual Studio proje düğümüne sağ tıklayın ve seçin **Yayımla**.
 
@@ -73,7 +75,7 @@ Hızlı bir şekilde Visual Studio'dan yayımlamak ve IIS tamamen sağlanan bir 
 
     Ayrıntılı yönergeler için bkz: [ASP.NET Core web uygulama dağıtmak için Visual Studio kullanarak Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
-3. İçinde **Sunucu Gezgini**, App Service örneğinde sağ tıklatın ve seçin **Attach hata ayıklayıcı**.
+3. Açık **Sunucu Gezgini** (**Görünüm** > **Sunucu Gezgini**), App Service örneğinde sağ tıklatın ve seçin **hata ayıklayıcıekleme**.
 
 4. Çalışan ASP.NET uygulamasındaki bağlantısını **hakkında** sayfası.
 
@@ -81,7 +83,7 @@ Hızlı bir şekilde Visual Studio'dan yayımlamak ve IIS tamamen sağlanan bir 
 
     İşte bu kadar! Bu konudaki adımları geri kalanını uygulayın Azure VM temelinde uzaktan hata ayıklama için.
 
-## <a name="BKMK_azure_vm"></a>Uzaktan hata ayıklama ASP.NET Core Azure VM'de
+## <a name="remote_debug_azure_vm"></a>Uzaktan hata ayıklama ASP.NET Core Azure VM'de
 
 Bir Azure VM için Windows Server oluşturabilir ve ardından yükleyin ve IIS ve diğer gerekli yazılımı bileşenleri yapılandırabilirsiniz. Bu, bir Azure App Service'e dağıtma değerinden daha uzun sürer ve bu öğreticinin geri kalan adımları izleyin gerektirir.
 

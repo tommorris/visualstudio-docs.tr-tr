@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: b1f6e8ed06f9f2355ac3a740319bb75924bf3d6b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1525a858885bb7b824967712186f81e060f63519
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET kullanarak basit veri uygulaması oluşturma
 Veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bağlantı dizeleri tanımlama, veri ekleme ve saklı yordamları çalıştırmak gibi temel görevleri gerçekleştirin. Bu konuda izleyerek Visual C# veya Visual Basic ve ADO.NET kullanarak basit bir Windows Forms "veriler üzerinde forms" uygulaması aynı veritabanıyla etkileşim kurmayı bulabilir.  Tüm .NET veri teknolojileri — veri kümeleri, LINQ to SQL ve Entity Framework dahil olmak üzere — sonuçta çok bu makalede gösterilen benzerdir adımları gerçekleştirin.  
@@ -45,9 +45,9 @@ Veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bağlantı d
 ## <a name="prerequisites"></a>Önkoşullar  
  Uygulama oluşturmak için ihtiyacınız vardır:  
   
--   Visual Studio Community sürümü.  
+-   Visual Studio Community Edition.  
   
--   SQL Server Express LocalDB. SQL Server Express LocalDB yoksa, buradan yükleyebilirsiniz [SQL Server sürümleri indirme sayfasına](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+-   SQL Server Express LocalDB. SQL Server Express LocalDB yoksa, buradan yükleyebilirsiniz [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
 Bu konu, Visual Studio IDE temel işlevlerle tanıdık ve bir Windows Forms uygulaması oluşturma, forms düğmelerin ve diğer denetimlerin formlarında put projeye özelliklerini denetimler ve kod basit olayları kümesi ekleme olduğunu varsayar. Bu görevleri memnun değilseniz, tamamlamanızı öneririz [Visual C# ve Visual Basic ile çalışmaya başlama](../ide/getting-started-with-visual-csharp-and-visual-basic.md) bu kılavuza başlamadan önce konu.  
   

@@ -7,29 +7,29 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs: CSharp
-ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: c4dd77680fb529575140dc718a4f1c0a58090029
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma
+
 Bu walkthough SQL Server yerel veritabanı, Northwind veritabanı, Entity Framework 6 ve Windows Presentation Foundation ile Visual Studio'da bir temel "veriler üzerinde forms" uygulaması oluşturulacağını gösterir. Ana-ayrıntı görünümü ile temel veri bağlaması yapma gösterir ve ayrıca bir özel "bağlama ile düğmeler için"İleri Taşı","Taşı ", başlangıcına Taşı" önceki,""Taşı sona erdirmek,"Gezgini" sahip "Güncelleştir" ve "Silin."  
   
  Bu makalede Visual Studio'da veri araçları kullanarak odaklanır ve tüm derinlemesine temel teknolojileri açıklamak çalışmaz. Bu, XAML, Entity Framework ve SQL temel olarak bilindiğini sahip olduğunuzu varsayar. Bu örnek ayrıca WPF uygulamaları için standart Model-görünüm-görünüm Model (MVVM) mimarisi gösterilmemiştir. Ancak, bu kodu uygulamanıza kendi MVVM çok az değişiklik yapılması açısından kopyalayabilirsiniz.  
   
-## <a name="install-and-connect-to-northwind"></a>Yükleme ve Northwind olarak bağlan  
+## <a name="install-and-connect-to-northwind"></a>Yükleme ve Northwind olarak bağlan
+
 Bu örnek, SQL Server Express LocalDB ve Northwind örnek veritabanı kullanır. Bu ürün için ADO.NET veri sağlayıcı Entity Framework destekliyorsa, bu da diğer SQL veritabanı ürünleri ile çalışması gerekir.  
-  
-1.  SQL Server Express LocalDB yoksa, araçtan yüklemek [SQL Server sürümleri indirme sayfasına](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), aracılığıyla veya **Visual Studio yükleyicisi**. Visual Studio Yükleyicisi'nde, SQL Server Express LocalDB parçası olarak yüklenebilir **.NET masaüstü geliştirme** iş yükü veya tek bir bileşen olarak.  
-  
+
+1.  SQL Server Express LocalDB yoksa, araçtan yüklemek [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express), aracılığıyla veya **Visual Studio yükleyicisi**. Visual Studio Yükleyicisi'nde, SQL Server Express LocalDB parçası olarak yüklenebilir **.NET masaüstü geliştirme** iş yükü veya tek bir bileşen olarak.
+
 2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:  
 
     1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu...** .  
@@ -44,7 +44,7 @@ Bu örnek, SQL Server Express LocalDB ve Northwind örnek veritabanı kullanır.
   
 3.  [Yeni bağlantı ekleme](../data-tools/add-new-connections.md) Northwind için.  
   
-## <a name="configure-the-project"></a>Projeyi Yapılandırma  
+## <a name="configure-the-project"></a>Projeyi Yapılandırma
   
 1.  Visual Studio'da, **dosya**, **yeni**, **proje...**  ve yeni bir C# WPF uygulaması oluşturun.  
   
@@ -58,7 +58,7 @@ Bu örnek, SQL Server Express LocalDB ve Northwind örnek veritabanı kullanır.
   
 4.  Şimdi biz Northwind veritabanına dayalı bir model oluşturmak için Visual Studio'yu kullanabilirsiniz.  
   
-## <a name="create-the-model"></a>Model oluşturma  
+## <a name="create-the-model"></a>Model oluşturma
   
 1.  Çözüm Gezgini'nde proje düğümüne sağ tıklayın ve seçin **Ekle**, **yeni öğe...** . Sol bölmede, C# düğümünün altında seçin **veri** ve Orta bölmede seçin **ADO.NET varlık veri modeli**.  
   
@@ -92,8 +92,9 @@ Bu örnek, SQL Server Express LocalDB ve Northwind örnek veritabanı kullanır.
   
 Şimdi Biz bu model için XAML sayfası böylece biz görüntüleyebilir, gidin ve verileri değiştirme bağlanacağını hazırsınız demektir.  
   
-## <a name="databind-the-model-to-the-xaml-page"></a>DataBind XAML sayfası modeli  
- Kendi veri bağlamasını kod yazmak mümkündür, ancak bunu sizin için Visual Studio izin daha kolaydır.  
+## <a name="databind-the-model-to-the-xaml-page"></a>DataBind XAML sayfası modeli
+
+Kendi veri bağlamasını kod yazmak mümkündür, ancak bunu sizin için Visual Studio izin daha kolaydır.  
   
 1.  Ana menüden **Proje > Yeni veri kaynağı Ekle** ortaya çıkarmak için **veri kaynağı Yapılandırma Sihirbazı**. Seçin **nesne** veritabanına model sınıflarına bağlıyorsanız nedeni:  
   
@@ -144,8 +145,9 @@ Bu örnek, SQL Server Express LocalDB ve Northwind örnek veritabanı kullanır.
      [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]  
 
 8.  Tuşuna **F5**. CollectionViewSource alınmış ilk müşteri ayrıntılarını görmeniz gerekir. Ayrıca, emirleri veri kılavuzunda görmeniz gerekir. Biçimlendirme sağlandığından düzeltmesini harika değil. Diğer kayıtları görüntülemek ve temel CRUD işlemleri yapmak için bir yol da oluşturacağız.  
-  
-## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Sayfa Tasarımı ayarlamak ve yeni müşteriler ve siparişler için kılavuzları ekleyin  
+
+## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Sayfa Tasarımı ayarlamak ve yeni müşteriler ve siparişler için kılavuzları ekleyin
+
 Visual Studio tarafından üretilen varsayılan düzenleme uygulamamız için ideal olmadığından bazı değişiklikler el ile XAML'de vermiyoruz. Biz de "(gerçekten kılavuzları olan) bazı formları" yeni müşteri veya sipariş eklenecek kullanıcının etkinleştirmeniz gerekir. Verilere bağlı olmayan metin kutuları ayrı bir dizi ihtiyacımız yeni müşteri ve sıra eklemeniz mümkün olması için `CollectionViewSource`. Biz işleyici yöntemleri görünür özelliği ayarlanarak kullanıcı belirli bir zamanda görür hangi kılavuz kontrol. Son olarak, her bir sipariş Silinecek kullanıcı etkinleştirmek için siparişleri kılavuzunda her satıra bir Delete düğmesi ekleyeceğiz.  
   
 İlk olarak, bu stiller MainWindow.xaml Windows.Resources öğe ekleyin:  
@@ -350,11 +352,12 @@ Ardından, tüm dış kılavuz bu biçimlendirme ile değiştirin:
 ```  
   
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>Gidin, ekleme, güncelleştirme ve silme düğmeleri ekleme  
- Windows Forms uygulamalarında bir veritabanında satır gezinme ve temel CRUD işlemleri yapmak için düğmeler BindingNavigator nesnesiyle alın. WPF bir BindingNavigator sağlamaz, ancak oluşturmak kolayca. Yatay StackPanel içinde düğmelerle bunu ve biz düğmeleri arkasındaki kodda yöntemlere bağlı komutlarını ilişkilendirmek.  
+
+Windows Forms uygulamalarında bir veritabanında satır gezinme ve temel CRUD işlemleri yapmak için düğmeler BindingNavigator nesnesiyle alın. WPF bir BindingNavigator sağlamaz, ancak oluşturmak kolayca. Yatay StackPanel içinde düğmelerle bunu ve biz düğmeleri arkasındaki kodda yöntemlere bağlı komutlarını ilişkilendirmek.  
   
- Komut mantığı fours bölümü vardır: (1 komutları, (2 bağlamaları, (3) düğmeleri ve (4) arka plan kodu komut işleyiciler.  
+Komut mantığı fours bölümü vardır: (1 komutları, (2 bağlamaları, (3) düğmeleri ve (4) arka plan kodu komut işleyiciler.  
   
-#### <a name="add-commands-bindings-and-buttons-in-xaml"></a>XAML'de komutları, bağlamaları ve düğme ekleme  
+### <a name="add-commands-bindings-and-buttons-in-xaml"></a>XAML'de komutları, bağlamaları ve düğme ekleme
   
 1.  İlk olarak, komutlar Windows.Resources öğesinin içine bizim MainWindow.xaml dosyasındaki ekleyelim:  
   
@@ -414,7 +417,7 @@ Ardından, tüm dış kılavuz bu biçimlendirme ile değiştirin:
     </StackPanel>  
     ```  
   
-#### <a name="add-command-handlers-to-the-mainwindow-class"></a>Komut işleyicileri MainWindow sınıfına ekleyin  
+### <a name="add-command-handlers-to-the-mainwindow-class"></a>Komut işleyicileri MainWindow sınıfına ekleyin  
   
 Arka plan kodu dışında Ekle ve Sil yöntemlerini düzeydedir. Gezinti CollectionViewSource görünüm özellikte yöntemleri çağırma gerçekleştirilir. DeleteOrderCommandHandler bir siparişte art arda silme gerçekleştirmek nasıl gösterir. Biz öncelikle kendisiyle ilişkili Order_Details silmeniz gerekir. UpdateCommandHandler yeni müşteri veya sipariş koleksiyona ekler, aksi takdirde yalnızca kullanıcı metin kutularına yapılan değişiklikleri bir var olan müşteri veya sipariş güncelleştirir.  
   
@@ -423,8 +426,10 @@ Bu işleyici yöntemleri MainWindow.xaml.cs MainWindow sınıfında ekleyin. Ard
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]  
   
 ## <a name="run-the-application"></a>Uygulamayı çalıştırın
+
 Hata ayıklama başlatmak için basın **F5**. Müşteri ve sipariş veri kılavuzunda doldurulmuş görmeniz gerekir ve Gezinti düğmelerinin beklendiği gibi çalışması gerekir. "Verileri girdikten sonra yeni müşteri veya sipariş modele eklemek için üzerinde yürütme"'i tıklatın. Yeni müşteri ya da yeni sipariş formu dışında verileri kaydetmeden yedeklemek için "İptal"'i tıklatın. Var olan müşteriler ve metin kutularındaki doğrudan siparişleri düzenlemeleri yapın ve bu değişiklikleri modeline otomatik olarak yazılır.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
+
 [.NET için Visual Studio veri araçları](../data-tools/visual-studio-data-tools-for-dotnet.md)  
-[Entity Framework belgelerine](https://msdn.microsoft.com/en-us/data/ee712907.aspx)
+[Entity Framework belgelerine](/ef/)

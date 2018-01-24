@@ -22,11 +22,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 303caa59af4cbcbafa9ec14fb6ffb3559d6b1bab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 160cf1021e6b95dcfc6cf8ee97b20c4502f9099e
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>İzlenecek yol: bir işlemde veri kaydetme
 Bu kılavuzu kullanarak bir işlemde veri kaydetme gösterilmiştir <xref:System.Transactions> ad alanı. Bu kılavuzda bir Windows Forms uygulaması oluşturacaksınız. Northwind örnek veritabanında iki tablo için bir veri kümesi oluşturmak için veri kaynağı Yapılandırma Sihirbazı'nı kullanacaksınız. Veri bağlama denetimleri için Windows formu ve bir TransactionScope içinde veritabanını güncelleştirmek BindingNavigator'ın Kaydet düğmesi için kod değiştireceksiniz ekleyeceksiniz.  
@@ -34,7 +34,7 @@ Bu kılavuzu kullanarak bir işlemde veri kaydetme gösterilmiştir <xref:System
 ## <a name="prerequisites"></a>Önkoşullar  
 Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullanılır.  
   
-1.  SQL Server Express LocalDB yoksa, araçtan yüklemek [SQL Server sürümleri indirme sayfasına](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), aracılığıyla veya **Visual Studio yükleyicisi**. Visual Studio Yükleyicisi'nde, SQL Server Express LocalDB parçası olarak yüklenebilir **.NET masaüstü geliştirme** iş yükü veya tek bir bileşen olarak.  
+1.  SQL Server Express LocalDB yoksa, araçtan yüklemek [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express), aracılığıyla veya **Visual Studio yükleyicisi**. Visual Studio Yükleyicisi'nde, SQL Server Express LocalDB parçası olarak yüklenebilir **.NET masaüstü geliştirme** iş yükü veya tek bir bileşen olarak.  
   
 2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:  
 

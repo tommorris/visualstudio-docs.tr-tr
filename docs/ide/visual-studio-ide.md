@@ -1,20 +1,19 @@
 ---
-title: "Visual Studio IDE genel bakış | Microsoft Docs"
+title: "Visual Studio genel bakış | Microsoft Docs"
 ms.custom: 
 ms.date: 11/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d95cbaff8545e67bfadb0c86a256353b3fa23191
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 4d4d302c84322388f96b37aa913e4debd3d331a7
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE genel bakış
 
@@ -96,7 +95,7 @@ Visual Studio ilk kez başlattığınızda, isteğe bağlı olarak Microsoft hes
 
 Bir konu hakkında bilgi edinmek için bir iyi kullanılacağını yoludur! Şimdi daha yakından inceleyin ve yeni, basit bir program oluşturun.
 
-1. Visual Studio'yu açın. Menüsünde, **dosya**, **yeni**, **proje**.
+1. Visual Studio'yu açın. Menüsünde, **dosya** > **yeni** > **proje**.
 
   ![ekran görüntüsü](../ide/media/VSIDE_Tour_NewProject1.png)
 
@@ -104,11 +103,14 @@ Bir konu hakkında bilgi edinmek için bir iyi kullanılacağını yoludur! Şim
 
 1. **Yeni proje** iletişim kutusu birkaç proje şablonları gösterir. Seçin **Windows Evrensel** kategorisi altında **Visual C#**, seçin **boş uygulama (Evrensel Windows)** şablonu ve ardından **Tamam**düğmesi.
 
-  ![ekran görüntüsü](../ide/media/VSIDE_Tour_NewProject2.png)
+  > [!NOTE]
+  > Görmüyorsanız, **Windows Evrensel** kategorisi, yüklemeniz gereken **Evrensel Windows platformu geliştirme** iş yükü. Bunu yapmak için seçin **açık Visual Studio yükleyicisi** alt sol tarafındaki bağlantı **yeni proje** iletişim. Sonra **Visual Studio yükleyicisi** açar, select **Evrensel Windows platformu geliştirme** iş yükü ve ardından **Değiştir**.
+
+  ![UWP boş uygulama şablonu](../ide/media/new-uwp-blank-app-template.png)
 
   Bu, Visual C# ve XAML programlama dillerini kullanarak yeni bir boş Evrensel Windows uygulama projesi oluşturur. Visual Studio projeyi sizin için ayarlar için biraz bekleyin. Yalnızca herhangi bir bilgi istenirse, şu an için varsayılan değerleri kabul edin.
 
-1. İçinde **yeni evrensel Windows projesi** iletişim kutusunda, seçerek Varsayılanları kabul **Tamam**.
+1. İçinde **yeni evrensel Windows platformu projesi** iletişim kutusunda, seçerek Varsayılanları kabul **Tamam**.
 
 1. Kısa bir süre sonra aşağıdaki ekran görüntüsüne benzer bir şey görmeniz gerekir. Proje dosyalarınıza sağ tarafında Çözüm Gezgini adlı bir penceresinde listelenir.
 
@@ -140,7 +142,7 @@ Bir konu hakkında bilgi edinmek için bir iyi kullanılacağını yoludur! Şim
 
   ![ekran görüntüsü](../ide/media/VSIDE_Tour_XAMLButton2.png)
 
-1. Şimdi, uygulamayı başlatın. Seçerek bunu yapabilirsiniz **Başlat** (![Başlat düğmesi](../ide/media/VSIDE_StartButton.png)) düğmesini araç çubuğunda veya seçerek **F5** anahtar, ya da menüsünde, seçme **hataayıklama**, **Hata ayıklamayı Başlat**.
+1. Şimdi, uygulamayı başlatın. Seçerek bunu yapabilirsiniz **Başlat** (![Başlat düğmesi](../ide/media/VSIDE_StartButton.png)) düğmesini araç çubuğunda veya seçerek **F5** anahtar, ya da menüsünde, seçme **hataayıklama**  >  **Hata ayıklamayı Başlat**.
 
   ![ekran görüntüsü](../ide/media/VSIDE_Tour_RunButton.png)
 
@@ -180,7 +182,7 @@ Visual Studio üst düzey bir görsel özeti vermek için büyük olasılıkla k
 
 - [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) görüntülemek ve sanal makineler, tablolar, SQL veritabanları ve daha fazlasını gibi Azure kaynaklarınızı yönetmenize olanak tanır. Belirli bir işlemi Azure portalında gerektiriyorsa, bulut Gezgini gitmeniz gerekir Azure portalında yere götüren bağlantılar sağlar.
 
-![Visual Studio IDE](../ide/media/visualstudioide.png)
+![The Visual Studio IDE](../ide/media/visualstudioide.png)
 
 Bazı diğer ortak üretkenlik Visual Studio özellikleri şunlardır:
 
@@ -218,7 +220,7 @@ Bazı diğer ortak üretkenlik Visual Studio özellikleri şunlardır:
 
 - İlgili bir aracı [Nesne Tarayıcısı](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), görmek için .NET veya Windows çalışma zamanı derlemeleri, sisteminizdeki incelemek için türleri bunlar etkinleştirir içerir ve bu türlerde hangi üyeleri (özellikleri, yöntemleri, olaylar, vb.) içerir.
 
-  ![Nesne Tarayıcısı gösteren nesne](../ide/media/objectbrowser.png)
+  ![Object Browser showing System.Timer](../ide/media/objectbrowser.png)
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Kaynak kodunuz yönetmek ve diğer kullanıcılarla işbirliği
 
@@ -232,7 +234,7 @@ Ağınızdaki bir Visual Studio Team Services hesabı veya Team Foundation Serve
 
 Aşağıdaki resimde VSTS içinde barındırılan bir çözüm için Takım Gezgini penceresi gösterir.
 
-![Visual Studio Takım Gezgini](../ide/media/vs2017_teamexplorer.png)
+![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
 Sürüm denetimine takımınızdaki devs denetlediyseniz kodu oluşturmak için derleme süreci otomatik hale getirebilirsiniz. Örneğin, bir veya daha fazla projeleri gecelik veya kod iade her zaman oluşturabilirsiniz. Bkz: [herhangi bir platformda sürekli tümleştirme](https://www.visualstudio.com/en-us/docs/build/overview) daha fazla bilgi için.
 
@@ -246,17 +248,18 @@ Bulut bugünün çevrimiçi dünya için kritik öneme sahiptir ve Visual Studio
 
 Görüntüleyebilir ve Visual Studio kullanarak içinde bulut tabanlı Azure kaynaklarınızı yönetmek [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Cloud Explorer oturum açtığınız Azure aboneliği altında yönetilen tüm hesapları Azure kaynaklarını gösterir. Cloud Explorer seçerek alabileceğiniz **Azure geliştirme** Visual Studio yükleyicisi iş yükü.
 
-![Bulut Gezgini](../ide/media/VSIDE_CloudExplorer.png)
+![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-**Sunucu Gezgini** göz atın ve SQL Server örnekleri ve varlıkları yerel olarak, uzaktan ve Azure, Salesforce.com, Office 365 ve Web siteleri yönetmenize yardımcı olur. Ana menüde sunucu Gezgini'ni açmak için seçin **Görünüm**, **Sunucu Gezgini**. Bkz: [yeni bağlantılar eklemek](../data-tools/add-new-connections.md) Sunucu Gezgini kullanma hakkında daha fazla bilgi için.
+**Sunucu Gezgini** göz atın ve SQL Server örnekleri ve varlıkları yerel olarak, uzaktan ve Azure, Salesforce.com, Office 365 ve Web siteleri yönetmenize yardımcı olur. Ana menüde sunucu Gezgini'ni açmak için seçin **Görünüm** > **Sunucu Gezgini**. Bkz: [yeni bağlantılar eklemek](../data-tools/add-new-connections.md) Sunucu Gezgini kullanma hakkında daha fazla bilgi için.
 
 [SQL Server veri Araçları (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) SQL Server, Azure SQL Database ve Azure SQL Data Warehouse güçlü bir geliştirme ortamı içindir. Yapı, hata ayıklama, korumanıza ve veritabanlarını yeniden düzenlemeniz sağlar. Bir veritabanı proje ile veya doğrudan ile bir bağlı veritabanı örneği veya kapalı-içi çalışabilir.
 
 **SQL Server Nesne Gezgini** Visual Studio veritabanı nesnelerini SQL Server Management Studio'ya benzer bir görünümünü sağlar. SQL Server Nesne Gezgini tablo verileri düzenleme, şemalar karşılaştırma, bağlamsal menülerden sağ SQL Server Nesne Gezgini ve daha fazlasını kullanarak sorguları yürütme dahil olmak üzere açık vergi veritabanı yönetim ve tasarım çalışma yapmanıza olanak sağlar.
 
-![SQL Server Nesne Gezgini](../ide/media/vs2015_sqlobjectexplorer.png)
+![SQL Server Object Explorer](../ide/media/vs2015_sqlobjectexplorer.png)
 
-## <a name="extend-visual-studio"></a>Visual Studio genişletme
+## <a name="extend-visual-studio"></a>Visual Studio’yu Genişletme
+
 Visual Studio tam işlevsellik ihtiyacınız yoksa, ekleyebilirsiniz! İş akışı ve stil bağlı IDE'yi kişiselleştirme, henüz Visual Studio ile tümleşik harici araçlar için destek eklemek ve verimliliğinizi artırmak için varolan işlevlerini değiştirin. Visual Studio genişletilebilirlik Araçları (VS SDK) en son sürümünü bulmak için bkz: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
 Kendi kod Çözümleyicileri ve kod oluşturucuları yazmak için .NET derleyici Platformu (Roslyn) kullanabilirsiniz. Konumundaki ihtiyaç duyduğunuz her şeyi Bul [Roslyn](https://github.com/dotnet/Roslyn).
@@ -276,6 +279,6 @@ Visual Studio IDE turu tamamladıktan Tebrikler! Bazı ana özellikleri hakkınd
 * [Visual Studio IDE](https://www.visualstudio.com/vs/)
 * [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/)
 * [Visual Studio Web günlüğü](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio forumları](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
-* [Microsoft sanal Akademi](https://mva.microsoft.com/)
+* [Visual Studio Forums](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
+* [Microsoft Virtual Academy](https://mva.microsoft.com/)
 * [Kanal 9](https://channel9.msdn.com/)

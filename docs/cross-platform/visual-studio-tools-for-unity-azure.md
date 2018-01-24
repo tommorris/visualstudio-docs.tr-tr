@@ -1,7 +1,7 @@
 ---
-title: "Unity için Visual Studio Araçları Azure gözden geçirme | Microsoft Docs"
+title: "Unity ve Azure için Visual Studio Araçları ile programlama | Microsoft Docs"
 ms.custom: 
-ms.date: 10/19/2017
+ms.date: 12/18/2017
 ms.reviewer: crdun
 ms.suite: 
 ms.technology: tgt-pltfrm-cross-plat
@@ -14,46 +14,29 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: d5242dd873591abee15f528d09b6f588ea12f5ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a66e78063b100740ef271480e76daae2fd99a3fe
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="using-azure-easy-tables-with-unity-walkthrough"></a>Azure kolay tabloları Unity kılavuz ile kullanma
+# <a name="programming-with-unity-and-azure"></a>Unity ve Azure ile programlama
 
-![Örnek oyun ekran görüntüsü](media/vstu_azure-test-sample-game-image2.png)
+Azure bulutta telemetri ve oyun başka verileri saklamak için ölçeklenebilir bir çözüm sağlar. Unity 2017 sürümle birlikte, Unity'nın Deneysel desteği .NET 4.6 Azure tümleştirme daha basit hiç Azure .NET SDK'ları kullanılmasına izin vererek hale getirir.
 
-## <a name="introduction"></a>Giriş
-
-Azure bulutta telemetri ve oyun başka verileri saklamak için ölçeklenebilir bir çözüm sağlar. Unity 2017 sürümle birlikte, Unity'nın desteği .NET 4.6 Azure tümleştirme daha basit hiç Azure mobil istemci SDK'sını kullanılmasına izin vererek hale getirir.
-
-Bu adımları telemetri ve Skorbordu verileri bulutta kaydetmek için Azure yararlanır Unity proje ayarlama işleminde size yol gösterecek.
+## <a name="experimental-azure-sdks"></a>Deneysel Azure SDK'ları
 
 > [!NOTE]
-> Bu projenin "Deneysel".NET 4.6 Mono komut dosyası çalışma zamanı Unity 2017 gerektirir. [Unity belirtilen yakında bu varsayılan olacağını](https://forum.unity3d.com/threads/future-plans-for-the-mono-runtime-upgrade.464327/), ancak şimdilik, hala "Deneysel" olarak etiketlenir ve ilgili sorunlarla karşılaşabilirsiniz.
+> Bu SDK'ları desteklenmeyen ancak Unity'nın Deneysel .NET 4.6 desteği deneyin müşterilere yardımcı olmak için sağlanan.
 
-> Bu kılavuz, Unity PC derleme bir Azure mobil uygulama arka ucuna bağlama için bir örnek belgeler. Bu belgenin yazıldığı sırada bu proje üzerinde Mac ve Android platformları çalışmasını engelleyen bilinen sorunlar vardır. Bunlar düzeltilecektir ilgili bilinen sorunlardır olsa da, zaman çizelgesi belirsiz bir durumdur. Daha fazla bilgi için Unity ziyaret [Deneysel komut dosyası Forumu](https://forum.unity3d.com/forums/experimental-scripting-previews.107/).
+Ziyaret [korumalı alan](/sandbox/) aşağıdaki Deneysel Azure SDK'ları ile Unity denemek için:
 
-## <a name="download-the-completed-project"></a>Tamamlanan projenizi indirin
+* [Azure depolama Unity için SDK'sı](https://aka.ms/azstoragegamedev)
+* [Azure Event Hubs'a Unity için SDK'sı](https://aka.ms/azeventhubsgamedev)
+* [Unity için Azure Mobile Apps SDK](https://aka.ms/azmobileappsgamedev)
 
-Projeyi Github'da kullanılabilir. Ancak, izlenecek bir boş, yeni projeden başlayarak ve varlıklar gerektiğinde indirmek için bağlantılar sağlar varsayar.
+## <a name="azure-sdk-sample"></a>Azure SDK Sample
 
-## <a name="walkthrough-steps"></a>Gözden geçirme adımları
+Ayrıca bir [basit örnek oyun](https://aka.ms/azmobileappsracer) Unity ve Azure kolay tabloları SDK'sını kullanma. Yüksek izlemek için oyun kullanan Azure kolay tabloları veri depolama Skorbordu puan ve oyun telemetri depolamak ve kullanılabilir [karşıdan Github'dan](https://aka.ms/azsamples-unity).
 
-1. [Azure'da Kolay tablolar Yapılandırma](visual-studio-tools-for-unity-azure-configure.md)
-2. [Kolay Tablolar Oluşturma](visual-studio-tools-for-unity-azure-setup.md)
-3. [Geliştirme ortamını hazırlama](visual-studio-tools-for-unity-azure-prepare.md)
-4. [Veri modeli sınıfları oluşturma](visual-studio-tools-for-unity-azure-data.md)
-5. [Azure MobileServiceClient uygulama](visual-studio-tools-for-unity-azure-mobile-client.md)
-6. [Unity Mono güvenlik sertifika deposunu güncelleştirme](visual-studio-tools-for-unity-azure-security.md)
-7. [İstemci bağlantılarını test etme](visual-studio-tools-for-unity-azure-connection.md)
-7. [Örnek oyun varlıklarını içeri aktarma](visual-studio-tools-for-unity-azure-game-assets.md)
-8. [Örnek oyunu test etme](visual-studio-tools-for-unity-azure-game.md)
-9. [RaceScene açıklaması](visual-studio-tools-for-unity-azure-racescene.md)
-10. [HeatmapScene açıklaması](visual-studio-tools-for-unity-azure-heatmapscene.md)
-11. [LeaderboardScene açıklaması](visual-studio-tools-for-unity-azure-leaderboardscene.md)
-
-
-## <a name="next-step"></a>Sonraki adım
-* [Azure'da Kolay tablolar Yapılandırma](visual-studio-tools-for-unity-azure-configure.md)
+![Örnek oyun ekran görüntüsü](media/vstu_azure-test-sample-game-image2.png)

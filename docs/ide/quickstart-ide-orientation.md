@@ -11,13 +11,13 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 49518c7d38ebbec74908123b83b57bf039dda6f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a74d123d8cb0055f01619bae25b9a1bda54b35f4
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: ilk Visual Studio IDE bakma
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: Visual Studio IDE ilk bakış
 
 Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), biz bazı windows, menüleri ve diğer kullanıcı Arabirimi özelliklerini gezin.
 
@@ -101,4 +101,4 @@ Herhangi bir sorun, Visual Studio kullanıyorsanız ya da ürünü geliştirmemi
 
 [Hızlı Başlangıç: IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)  
 [Hızlı Başlangıç: düzenleyicide kodlama](../ide/quickstart-editor.md)  
-[Hızlı Başlangıç: projeler ve çözümler](../ide/quickstart-projects-solutions.md)  
+[Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)

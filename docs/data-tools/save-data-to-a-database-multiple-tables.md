@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 403fe906172f31a979d9b714b8982fb5932c5b72
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e3841a0052081700be899576e1adc0a0740fecec
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>(Birden çok tablo) veritabanına veri kaydetme
 En yaygın senaryolar uygulama geliştirme, bir Windows uygulaması formunda veri görüntüleme, verileri düzenleme ve güncelleştirilmiş verileri veritabanına geri göndermek için biridir. Bu kılavuzda iki ilgili tablolarındaki verileri görüntüleyen ve kaydını düzenlemek ve değişiklikleri veritabanına kaydetmek gösterilmektedir bir form oluşturur. Bu örnekte `Customers` ve `Orders` Northwind örnek veritabanı tablolarından.  
@@ -52,7 +52,7 @@ En yaygın senaryolar uygulama geliştirme, bir Windows uygulaması formunda ver
 ## <a name="prerequisites"></a>Önkoşullar  
 Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullanılır.  
   
-1.  SQL Server Express LocalDB yoksa, araçtan yüklemek [SQL Server sürümleri indirme sayfasına](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), aracılığıyla veya **Visual Studio yükleyicisi**. Visual Studio Yükleyicisi'nde, SQL Server Express LocalDB parçası olarak yüklenebilir **veri depolama ve işleme** iş yükü veya tek bir bileşen olarak.  
+1.  SQL Server Express LocalDB yoksa, araçtan yüklemek [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express), aracılığıyla veya **Visual Studio yükleyicisi**. Visual Studio Yükleyicisi'nde, SQL Server Express LocalDB parçası olarak yüklenebilir **veri depolama ve işleme** iş yükü veya tek bir bileşen olarak.  
   
 2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:  
 

@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1efd5c84459c6902073dad2b2b8ebcd5b034c0ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 513780cde8a8a9c0db86b3720382b58a55f385af
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="customizing-the-editor"></a>Düzenleyiciyi Özelleştirme
 
@@ -29,7 +29,7 @@ Metin Düzenleyici seçenekleri hakkında daha fazla bilgi için bkz: [metin dü
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hızlı Başlangıç: Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme](../ide/quickstart-personalize-the-ide.md)  
+[Hızlı Başlangıç: Visual Studio IDE ve düzenleyici kişiselleştirme](../ide/quickstart-personalize-the-ide.md)  
 [Kod yazma](../ide/writing-code-in-the-code-and-text-editor.md)  
 [Kodda Yer İşaretleri Ayarlama](../ide/setting-bookmarks-in-code.md)  
 [Genel, ortam, Seçenekler iletişim kutusu](../ide/reference/general-environment-options-dialog-box.md)  

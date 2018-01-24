@@ -11,13 +11,13 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b757178f29439f162df9e8844ae65ed8df642bb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-projects-and-solutions"></a>Hızlı Başlangıç: projeler ve çözümler
+# <a name="quickstart-projects-and-solutions"></a>Hızlı Başlangıç: Projeler ve çözümler
 
 Bu 10 dakikalık quickstart Visual Studio'da Çözüm ve proje oluşturmak ne anlama geldiğini incelenecektir. Bir proje özelliklerini ve bazı oluşabilir dosyaları bakın. İkinci projesine bir başvuru da oluşturacağız.
 
@@ -62,7 +62,7 @@ Artık ilk Projemizin çözüme ekleyelim. Biz, boş bir proje ile başlatın ve
    Çözümde altındaki "QuickDate" adlı bir proje görünür **Çözüm Gezgini**. Şu anda tek dosyalı çağrılan içeren **App.config**.
 
    > [!NOTE]
-   > Görmüyorsanız, **Visual C#** iletişim kutusunun sol bölmesinde yüklemeniz gerekir. **.NET masaüstü geliştirme** iş yükü. Bunu yapmak için kolay bir yolu **açık Visual Studio yükleyicisi** , sol bölmenin altındaki bağlantıyı. **Visual Studio yükleyicisi** açılır ve ve oradan doğru iş yükü seçebilirsiniz ve ardından **Değiştir** düğmesi.
+   > Görmüyorsanız, **Visual C#** iletişim kutusunun sol bölmesinde yüklemeniz gerekir. **.NET masaüstü geliştirme** iş yükü. Bunu yapmak için kolay bir yol seçmektir **açık Visual Studio yükleyicisi** iletişim kutusunun sol alt köşedeki bağlantıyı. Sonra **Visual Studio yükleyicisi** başlatır, seçin **.NET masaüstü geliştirme** iş yükü ve ardından **Değiştir** düğmesi.
 
    ![Visual Studio yükleyicisi bağlantıyı aç](media/quickstart-projects-open-installer.png)
 
@@ -182,10 +182,10 @@ Bu hızlı başlangıç Tamamlanıyor Tebrikler! Ardından, diğer quickstarts b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hızlı Başlangıç: ilk Visual Studio IDE bakma](../ide/quickstart-ide-orientation.md)  
+[Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)  
 [Hızlı Başlangıç: Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme](../ide/quickstart-personalize-the-ide.md)  
 [Hızlı Başlangıç: düzenleyicide kodlama](../ide/quickstart-editor.md)  
 [Proje ve çözüm özelliklerini yönetme](../ide/managing-project-and-solution-properties.md)  
 [Bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md)  
 [Visual Studio’da projeler veya çözümler olmadan kod geliştirme](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
-[Visual Studio IDE genel bakış](../ide/visual-studio-ide.md)
+[Visual Studio IDE overview](../ide/visual-studio-ide.md)

@@ -18,20 +18,21 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: ce1419882422ddc12fdb380601e908eed7e5c7ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3b9ae8406845de886009da981eaf7f63e68972b
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="configure-service-reference-dialog-box"></a>Hizmet Başvurusu Yapılandırma İletişim Kutusu
-**Hizmet başvurusu Yapılandır** iletişim kutusu davranışını yapılandırmanızı sağlar [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] Hizmetleri.  
-  
+
+**Hizmet başvurusu Yapılandır** iletişim kutusu, Windows Communication Foundation (WCF) hizmetlerini davranışını yapılandırmanızı sağlar.
+
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).  
-  
- Erişim için **hizmet başvurusu Yapılandır** iletişim kutusunda sağ tıklatıp hizmeti başvuru **Çözüm Gezgini** ve **hizmet başvurusu Yapılandır**. İletişim kutusunu tıklatarak da erişebilirsiniz **Gelişmiş** düğmesini **hizmet Başvurusu Ekle iletişim kutusu**.  
-  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+
+Erişim için **hizmet başvurusu Yapılandır** iletişim kutusunda sağ tıklatıp hizmeti başvuru **Çözüm Gezgini** ve **hizmet başvurusu Yapılandır**. İletişim kutusunu tıklatarak da erişebilirsiniz **Gelişmiş** düğmesini **hizmet Başvurusu Ekle iletişim kutusu**.
+
 ## <a name="task-list"></a>Görev Listesi  
   
 -   Bir WCF Hizmeti barındırıldığı adresini değiştirmek için yeni adresini girin **adresi** alan.  
@@ -86,16 +87,15 @@ ms.lasthandoff: 12/22/2017
  **Başvurulan derlemeler listesi**  
  Başvurulan derlemeler için proje veya Web sitesi listesini içerir. Zaman **yeniden belirtilen başvurulan derlemelerin türlerinde** seçildiğinde, ayrı ayrı derlemeler seçilir veya temizlenir.  
   
- **Web Başvurusu Ekle**  
- Görüntüler [Web Başvurusu Ekle iletişim kutusu](https://msdn.microsoft.com/en-us/library/8dcbc50t(v=vs.100).aspx).  
-  
-> [!NOTE]
->  Bu seçenek yalnızca 2.0 sürümünü hedefleyen projeler için kullanılması gereken [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
-  
-> [!NOTE]
->  **Web Başvuru Ekle** düğmesi durumda yalnızca **hizmet başvurusu Yapılandır** iletişim kutusunda görüntülenen **hizmet Başvurusu Ekle iletişim kutusu**.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+ **Web Başvurusu Ekle** Web Başvurusu Ekle iletişim kutusu görüntüler.
 
- [Nasıl yapılır: Web hizmetine başvuru ekleme](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
- [Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri](../data-tools/configure-service-reference-dialog-box.md)
+> [!NOTE]
+> Bu seçenek yalnızca 2.0 sürümünü hedefleyen projeler için kullanılması gereken [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+
+> [!NOTE]
+> **Web Başvuru Ekle** düğmesi durumda yalnızca **hizmet başvurusu Yapılandır** iletişim kutusunda görüntülenen **hizmet Başvurusu Ekle iletişim kutusu**.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Nasıl yapılır: Web hizmetine başvuru ekleme](how-to-add-update-or-remove-a-wcf-data-service-reference.md)  
+[Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri](../data-tools/configure-service-reference-dialog-box.md)

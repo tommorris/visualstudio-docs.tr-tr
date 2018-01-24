@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: af76fad7d6288aff08de22b076d27cafbb5c3cff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8fbe818e233c8bbdaf4431c70b8962baf43a2ed2
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Visual Studio için uyumlu bir veritabanı sistemleri
 
@@ -29,13 +29,13 @@ Visual Studio'da veri bağlantılı bir uygulama geliştirmek için genellikle y
 
 Bir veritabanı sistemi için .NET uygulamaları erişilebilir olmasını ve Visual Studio veri Araçlar windows görünür olması için bir ADO.NET veri sağlayıcı olmalıdır. Varlık veri modeli .NET uygulamanızda kullanmayı planlıyorsanız, sağlayıcı özellikle Entity Framework desteklemesi gerekir. Birçok sağlayıcısı aracılığıyla NuGet Paket Yöneticisi veya Visual Studio Market'te aracılığıyla sunulur.
 
-Azure depolama API'leri kullanıyorsanız, Azure storage öykünücüsünü üretime dağıtmaya hazır olana kadar ücretlerden kaçınmak için geliştirme sırasında yerel makinenize yükleyin. Daha fazla bilgi için bkz: [geliştirme ve sınama için Azure Storage öykünücüsünü kullanma](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/).
+Azure depolama API'leri kullanıyorsanız, Azure storage öykünücüsünü üretime dağıtmaya hazır olana kadar ücretlerden kaçınmak için geliştirme sırasında yerel makinenize yükleyin. Daha fazla bilgi için bkz: [geliştirme ve sınama için Azure Storage öykünücüsünü kullanma](/azure/storage/common/storage-use-emulator).
 
 Aşağıdaki listede, kullanılabilir daha yaygın veritabanı sistemleri bazıları Visual Studio projelerinde içerir. Liste geniş kapsamlı değildir. Visual Studio Araçları ile derin tümleştirme sağlamak ADO.NET veri sağlayıcıları sunan üçüncü taraf satıcılar listesi için bkz: [ADO.NET Data Provider](/dotnet/framework/data/adonet/data-providers).
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 
-SQL Server, Microsoft flagship veritabanı sunar. SQL Server 2016 performansından, Gelişmiş Güvenlik ve zengin, tümleşik raporlama ve analiz sunar. Farklı kullanımlar için tasarlanmış çeşitli sürümlerinde gelir: tek bir bilgisayardan kullanmak için yüksek düzeyde ölçeklenebilir, yüksek performanslı İş analizi, gelen. SQL Server Express'in tam özellikli, bir yeniden dağıtımı ve katıştırma için tasarlanmış SQL Server sürümüdür.  Yerel veritabanı, SQL Server yapılandırma gerektirir ve uygulamanızın işleminde çalışır, Express, Basitleştirilmiş bir sürümüdür. Her ikisi de ürünlerinden indirebilirsiniz [SQL Server Express indirme sayfası](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx). Bu bölümdeki SQL örnekleri birçoğu, SQL Server yerel veritabanı kullanın. SQL Server Management Studio (SSMS) Visual Studio SQL Server nesne Gezgini'nde sağlanan değerinden daha fazla işlevsellik olan bir tek başına veritabanı yönetim uygulamasıdır. Önceki bağlantıdan SSMS elde edebilirsiniz.
+SQL Server, Microsoft flagship veritabanı sunar. SQL Server 2016 performansından, Gelişmiş Güvenlik ve zengin, tümleşik raporlama ve analiz sunar. Farklı kullanımlar için tasarlanmış çeşitli sürümlerinde gelir: tek bir bilgisayardan kullanmak için yüksek düzeyde ölçeklenebilir, yüksek performanslı İş analizi, gelen. SQL Server Express'in tam özellikli, bir yeniden dağıtımı ve katıştırma için tasarlanmış SQL Server sürümüdür.  Yerel veritabanı, SQL Server yapılandırma gerektirir ve uygulamanızın işleminde çalışır, Express, Basitleştirilmiş bir sürümüdür. Her ikisi de ürünlerinden indirebilirsiniz [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express). Bu bölümdeki SQL örnekleri birçoğu, SQL Server yerel veritabanı kullanın. SQL Server Management Studio (SSMS) Visual Studio SQL Server nesne Gezgini'nde sağlanan değerinden daha fazla işlevsellik olan bir tek başına veritabanı yönetim uygulamasıdır. Önceki bağlantıdan SSMS elde edebilirsiniz.
 
 ## <a name="oracle"></a>Oracle
 

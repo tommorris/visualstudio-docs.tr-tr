@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f54a6dc2f47d10a47635a600d97decf3846e9d3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f2c72525b6101f14e9aac4365cc6af75b3083545
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="security-warnings"></a>Güvenlik Uyarıları
 Güvenlik uyarıları, daha güvenli kütüphaneleri ve uygulamaları destekler. Bu uyarılar, programınızdaki güvenlik açıklarını önlemeye yardımcı olur. Bu uyarılardan birini devre dışı bırakırsanız, bunun sebebini kodunuzda açıkça işaretlemelisiniz ve ayrıca geliştirme projeniz için güvenlik çalışanını bilgilendirmelisiniz.  
@@ -81,7 +81,7 @@ Güvenlik uyarıları, daha güvenli kütüphaneleri ve uygulamaları destekler.
 |[CA2149: Saydam metotlar yerel kod içine çağırmamalıdır](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Bu kural, örneğin P/Invoke gibi yerel kod içinde doğrudan çağıran herhangi bir saydam yöntemi tetikler. Bu kural ihlalleri 2. seviye saydamlık modeli içindeki MethodAccessException öncülüğünde ve 1. seviye saydamlık modeli içindeki UnmanagedCode için talepte bulunur.|  
 |[CA2151: Kritik türler içeren alanlar güvenlik açısından kritik olmalıdır](../code-quality/ca2151-fields-with-critical-types-should-be-security-critical.md)|Kritik güvenlik türlerini kullanmak için türe başvuran kod güvenliği kritik veya güvenlik güvenli kritik olmalıdır. Dolaylı başvuru olsa bile bu doğrudur. Bu nedenle, bir güvenlik saydam veya güvenlik güvenli kritik alana erişmek mümkün olmayacaktır, çünkü saydam kod hala alana erişemeyecektir.|  
 |[CA5122 P/Invoke bildirimleri güvenli olmamalıdır kritik](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Güvenlik duyarlı işlem gerçekleştirildiğinde yöntemler SecuritySafeCritical olarak işaretlenir ancak saydam mod kullanılarak da güvenli olur. Saydam kod, P/Invoke aracılığıyla yerel kodu hiçbir zaman doğrudan çağırmayabilir. Bu nedenle, P/Invoke güvenlik güvenli kritik olarak işaretleme çağırmak için saydam kodu etkinleştirmez ve güvenlik çözümlemesi için yanıltıcıdır.|  
-|[CA2153: Bozuk Durum Özel Durumlarını İşlemekten Kaçının](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Bozuk durumu özel durumları (CSE)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) belleğin belirtmek Bozulması işleminize bulunmaktadır. Bir saldırganın bir yararlanma bozuk bellek bölgeye yerleştirebilirsiniz işleminin çökmesine izin vermek yerine bu yakalama güvenlik açıklarına neden olabilir.|  
+|[CA2153: Bozuk Durum Özel Durumlarını İşlemekten Kaçının](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Bozuk durumu özel durumları (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) belleğin belirtmek Bozulması işleminize bulunmaktadır. Bir saldırganın bir yararlanma bozuk bellek bölgeye yerleştirebilirsiniz işleminin çökmesine izin vermek yerine bu yakalama güvenlik açıklarına neden olabilir.|  
 |[CA3075: Güvensiz DTD İşleme](../code-quality/ca3075-insecure-dtd-processing.md)|Güvenli olmayan DTDProcessing örnekleri kullanın veya dış varlık kaynakları başvuru, ayrıştırıcı güvenilmeyen girişi kabul ve saldırganlar için hassas bilgileri ifşa.|  
 |[CA3076: Güvensiz XSLT Betiği Yürütme](../code-quality/ca3076-insecure-xslt-script-execution.md)|.NET uygulamalarında güvenli şekilde Genişletilebilir Stil sayfaları Dil Dönüşümleri (XSLT) yürütüyorsa işlemci saldırganlar, hizmet reddi ve siteler arası yol hassas bilgileri ifşa güvenilmeyen URI başvuruları çözümlenemedi saldırıları.|  
 |[CA3077: API Tasarımı, XML Belgesi ve XML Metin Okuyucusunda Güvensiz İşleme](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Bir API tasarlama XMLDocument ve XMLTextReader türetilmiş DtdProcessing oluşturduğunu olabilir.  Güvenli olmayan DTDProcessing örnekleri başvuran veya dış varlık kaynakları çözme veya XML dosyasında güvenli olmayan değerleri ayarlama bilgileri açığa çıkmasına neden olabilir kullandığınızda.|

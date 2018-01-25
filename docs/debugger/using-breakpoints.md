@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı'ndaki kesme noktalarını kullanma
 Hata ayıklayıcı yürütme, belki de kod değişkenlerinin durumunu görmek için veya çağrı yığını aramak için durdurmak istediğinizde kesme noktaları ayarlayabilirsiniz. Bunlar, bir geliştirici araç en önemli hata ayıklama teknikleri biridir.  
@@ -160,6 +160,9 @@ Hata ayıklayıcı yürütme, belki de kod değişkenlerinin durumunu görmek i�
  Bir kesme noktası koşulu geçersiz sözdizimi ile ayarlarsanız, bir uyarı iletisi görüntülenir. Geçerli sözdizimi, ancak geçersiz semantiği ile bir kesme noktası koşul belirtirseniz, kesme noktası isabet ilk kez bir uyarı iletisi görüntülenir. Geçersiz Kesme noktası isabet olduğunda her iki durumda da, hata ayıklayıcı yürütme keser. Koşul geçerliyse ve değerlendiren kesme atlanır `false`.  
   
  Koşul hata ayıklayıcı tarafından tanınan geçerli bir ifade olabilir. Geçerli ifadeler hakkında daha fazla bilgi için bkz: [ayıklayıcıdaki ifadeler](../debugger/expressions-in-the-debugger.md).  
+
+> [!NOTE]
+> Kullanabileceğiniz **CTRL + Enter** kapatmak için **kesme noktası ayarları** penceresi.
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Nesne tanımlayıcıları kullanarak kesme noktası koşullarına (C# ve F #)  
  Belirli bir nesnenin davranışını gözlemlemek istediğiniz zaman zamanlar vardır; Örneğin, neden bir nesne birden çok kez bir koleksiyona eklenmiş çıkışı bulmak isteyebilirsiniz. C# ve F #'de, belirli örnekleri için nesne kimlikleri oluşturabilirsiniz [başvuru türleri](/dotnet/csharp/language-reference/keywords/reference-types) ve kesme noktası koşullarında kullanın. Nesne Kimliği hizmetlerinde hata ayıklama ortak dil çalışma zamanı tarafından (CLR) oluşturulur ve nesneyle ilişkilendirilmiş.  Bir nesne kimliği oluşturmak için aşağıdakileri yapın:  
@@ -232,20 +235,6 @@ Hata ayıklayıcı yürütme, belki de kod değişkenlerinin durumunu görmek i�
 ## <a name="export-and-import-breakpoints"></a>Dışarı ve içeri aktarma kesme noktaları  
  Bir kesme noktası kesme noktasına sağ tıklayıp seçerek bir XML dosyasına aktarabilirsiniz **verme**. Dosya, varsayılan çözüm dizini olarak kaydedilir. Kesme noktaları almak için açın **kesme noktaları** penceresi (**CTRL + ALT + B**) ve sağ ok simgesini (Araç İpucu **kesme noktaları bir dosyadan içe**) .  
   
-## <a name="troubleshoot"></a>Kesme noktaları sorun giderme 
-  
-### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Bir kesme noktası silinmiş, ancak hata ayıklamayı yeniden başlattığınızda isabet devam  
- Hata ayıklama sırasında bir kesme noktası sildiyseniz, bazı durumlarda, kesme, hata ayıklama yeniden başlattığınızda isabet. Bu kesme basarsa durdurmak için tüm kesme örneklerini kaldırılma olduğundan emin olun **kesme noktaları** penceresi.  
-  
-### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>Hata ayıklayıcı bir kesme noktası için kaynak dosyası doğru sürümü bulunamıyor  
- Kaynak dosyanın mevcut olsa bile bir kaynak dosya değişti ve kaynak ayıkladığınız kod artık eşleşiyorsa, hata ayıklayıcı bir kesme noktası için karşılık gelen kaynak dosyasını bulabilirsiniz.  
-  
-1.  Sürüm eşleşmiyor kaynak kodunu görüntülemek için Visual Studio istiyorsanız ayıkladığınız, seçin **hata ayıklama > Seçenekler ve ayarlar**. Üzerinde **hata ayıklama/genel** sayfasında, Temizle **özgün sürümü tam olarak eşleşen kaynak dosyalar gerektiren** seçeneği.  
-  
-2.  Ayrıca, kaynak dosyaya kesme bağlayabilirsiniz. Kesme noktası seçin ve **koşullar** bağlam menüsünde. Denetleme **orijinal olandan farklı olması için kaynak kodu izin** içinde **kesme noktası ayarları** penceresi.  
-  
-### <a name="breakpoints-dont-work-in-a-dll"></a>Kesme noktaları DLL'de çalışmıyor  
- Hata ayıklayıcı modülü için hata ayıklama bilgileri yüklendiğinde kurmadı kodu bulunduğu bir kaynak dosyasında bir kesme noktası ayarlanamıyor. Belirtiler içerebilir iletileri gibi **kesme ayarlanmamış**. Uyarı kesme karakteri kesme noktası konumunda görünür. Bununla birlikte, kod yüklü değilse bu uyarı kesme noktaları gerçek kesme noktaları haline gelir. Simge yükleme hakkında daha fazla bilgi için bkz: [belirtin simge (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
-  
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md)
+[Visual Studio hata ayıklayıcısında kesme noktaları sorun giderme](../debugger/troubleshooting-breakpoints.md)  
+[Hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md)

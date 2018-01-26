@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 9e89ff364b0b10ee85be6fdd98d3e328f8c337ee
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 1af9c5634770b08b7903033226f44630bdb0e133
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Visual Studio 2010'dan Kodlanmış UI Testlerini Yükseltme
 Test oluşturulmuş kodlanmış UI testleri içeren projeleri [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 sessizce Visual Studio 2012 veya sonraki sürümlerde açıldığında onarıldı. Test projeleri kaynak denetimine işaretlenirse, proje dosyalarını bu onarım için teslim alınır. Onardıktan sonra bu test kodlanmış UI testleri can içeren projeleri sonra her ikisinde de kullanılması [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 ve [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -25,7 +25,7 @@ Test oluşturulmuş kodlanmış UI testleri içeren projeleri [!INCLUDE[vs_dev10
 -   Visual Studio Enterprise  
   
 > [!NOTE]
->  Visual Studio birden fazla test proje türü içerir. Yeni bir kodlanmış UI testi oluşturmak, bir kodlanmış UI test proje türü oluşturulur. Daha fazla bilgi için bkz: [Visual Studio'nun önceki sürümleri yükseltme testlerden](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
+> Visual Studio birden fazla test proje türü içerir. Yeni bir kodlanmış UI testi oluşturmak, bir kodlanmış UI test proje türü oluşturulur.
   
 > [!WARNING]
 >  [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]Kodlanmış UI testleri içeren test projeleri gerekir yeniden test projesinde açtığınızda [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] veya [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] yana birimi ile [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -66,6 +66,5 @@ Test oluşturulmuş kodlanmış UI testleri içeren projeleri [!INCLUDE[vs_dev10
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio Projelerini Taşıma, Geçirme ve Yükseltme](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
-[Testleri Visual Studio'nun önceki sürümlerinden yükseltme](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)  
 [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)  
 [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

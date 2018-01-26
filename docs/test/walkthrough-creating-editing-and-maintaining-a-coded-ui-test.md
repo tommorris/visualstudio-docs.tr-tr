@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 1ca2e83bab05c336f4b4ed37a13271c636b457dc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 71d7f7e342ecd6d9ca3bff4e04b84352c65c0e17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>İzlenecek yol: Kodlanmış Bir UI Testi Oluşturmak Düzenlemek ve Sürdürmek
 Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini ve korunduğunu göstermek üzere basit bir Windows Presentation Foundation (WPF) oluşturacaksınız. İzlenecek yol çeşitli zamanlama sorunları ve yeniden düzenlemeyi denetleme tarafından kırılan testleri düzeltmeye ilişkin çözümler sağlar.  
@@ -51,7 +51,7 @@ Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini
   
 10. Düğme denetimini seçin. Özellikler penceresinde değerini değiştirin **adı** özelliğinden \<No Name > button1 için. Değeri değiştirme **içerik** Başlat düğmesi özelliğine.  
   
-11. ProgressBar denetimini seçin. Özellikler penceresinde değer değeri için değiştirme **adı** özelliğinden \<No Name > progressBar1 için. Değeri değiştirme **maksimum** özelliğinden **100** için **10000**.  
+11. ProgressBar denetimini seçin. Özellikler penceresinde değerini değiştirin **adı** özelliğinden \<No Name > progressBar1 için. Değeri değiştirme **maksimum** özelliğinden **100** için **10000**.  
   
 12. Onay kutusu denetimini seçin. Özellikler penceresinde değerini değiştirin **adı** özelliğinden \<No Name > checkBox1 ve Temizle **IsEnabled** özelliği.  
   
@@ -143,7 +143,7 @@ Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini
   
      Kodlanmış UI Test derleyicisini UIMap - görünür ve Visual Studio penceresinin en aza indirilir.  
   
-     İletişim kutusundaki seçenekler hakkında daha fazla bilgi için bkz: [kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+     İletişim kutusundaki seçenekler hakkında daha fazla bilgi için bkz: [kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md).  
   
 8.  Seçin **kaydı başlatmak** üzerinde UIMap - Kodlanmış UI Test derleyicisini.  
   
@@ -368,26 +368,20 @@ Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini
   
 ## <a name="external-resources"></a>Dış Kaynaklar  
   
-### <a name="videos"></a>Videolar  
- ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [kodlanmış UI testleri-DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)  
+### <a name="videos"></a>Videolar
+
+![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [kodlanmış UI testleri ile çalışmaya başlama](http://go.microsoft.com/fwlink/?LinkID=230573)  
   
- ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [kodlanmış UI testleri-DeepDive-Episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)  
+![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [, Bakım ve hata ayıklama kodlanmış UI testleri](http://go.microsoft.com/fwlink/?LinkID=230574)  
   
- ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [kodlanmış UI testleri-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
+![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [elle kodlama kodlanmış UI testleri](http://go.microsoft.com/fwlink/?LinkID=230575)
   
-### <a name="hands-on-lab"></a>Laboratuvarda eller  
- [MSDN sanal laboratuvarı: Visual Studio 2010 ile kodlanmış UI testleri oluşturma giriş](http://go.microsoft.com/fwlink/?LinkID=22508)  
+### <a name="faq"></a>SSS
+
+[Kodlanmış UI testleri ile ilgili SSS](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
   
-### <a name="faq"></a>SSS  
- [SSS - 1 kodlanmış UI testleri](http://go.microsoft.com/fwlink/?LinkID=230576)  
-  
- [Kodlanmış UI testleri ile ilgili SSS -2](http://go.microsoft.com/fwlink/?LinkID=230578)  
-  
-### <a name="forum"></a>Forum  
- [Visual Studio UI Otomasyon (CodedUI içerir) test etme](http://go.microsoft.com/fwlink/?LinkID=224497)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
- [WPF Tasarımcısı ile çalışmaya başlama](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
- [Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Kodlanmış UI Test Düzenleyicisi'ni Kullanarak Kodlanmış UI Testlerini Düzenleme](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)  
+[Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+[Kodlanmış UI Test Düzenleyicisi'ni Kullanarak Kodlanmış UI Testlerini Düzenleme](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

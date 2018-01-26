@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8250f21bd95816bf0d9424dc4a3fbb45302919d7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 21e31bd582fda7884f0f246bd6eda39e5e89a375
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Etki Alanına Özgü Dil Tanımıma İzleme Özelliği Ekleme
 Bu kılavuz, bir etki alanı modeline izleme özelliği eklemek gösterilmiştir.  
@@ -27,7 +27,7 @@ Bu kılavuz, bir etki alanı modeline izleme özelliği eklemek gösterilmiştir
   
  Örneğin, etki alanına özgü dil Araçları (DSL araçları), bir etki alanı sınıfının özelliği etki alanı sınıfı, ancak bir kullanıcı adı kullanılarak hesaplanan bir varsayılan değere sahip görünen ad değeri tasarım zamanında değiştirebilir veya hesaplanan değerin sıfırlayın.  
   
- Bu kılavuzda, model varsayılan Namespace özelliğine dayalı bir varsayılan değere sahip özelliği izleme Namespace sahip bir etki alanına özgü dil (DSL) oluşturun. Özellikler izleme hakkında daha fazla bilgi için bkz: [izleme özellikleri tanımlama](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ Bu kılavuzda, model varsayılan Namespace özelliğine dayalı bir varsayılan değere sahip özelliği izleme Namespace sahip bir etki alanına özgü dil (DSL) oluşturun. Özellikler izleme hakkında daha fazla bilgi için bkz: [izleme özellikleri tanımlama](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 -   Özellik tanımlayıcılarının izleme DSL Araçlar desteği. Ancak, DSL Tasarımcısı izleme özelliği için bir dil eklemek için kullanılamaz. Bu nedenle, tanımlama ve izleme özelliği uygulamak için özel kod eklemeniz gerekir.  
   
@@ -48,9 +48,9 @@ Bu kılavuz, bir etki alanı modeline izleme özelliği eklemek gösterilmiştir
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
+|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
   
 ## <a name="creating-the-dsl-project"></a>DSL projesi oluşturma  
  Etki alanına özgü dil projesi oluşturun.  
@@ -253,7 +253,7 @@ Bu kılavuz, bir etki alanı modeline izleme özelliği eklemek gösterilmiştir
 #### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Tür tanımlayıcısı ExampleModel etki alanı sınıfının değiştirmek için  
   
 1.  TypeDescriptor.cs dosyasına aşağıdaki kodu ekleyin.  
-  
+
     ```csharp  
     using System;  
     using System.ComponentModel;  

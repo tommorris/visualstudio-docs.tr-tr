@@ -11,17 +11,18 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
+author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: f36df08f6f750337cdd9c68458aebb92866d0a67
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek Yol: Bir Veri Kaynağı Tanımlamak için Yapılandırma Dosyası Kullanma
+
 Bu kılavuzda birim testi için bir app.config dosyasında tanımlanan bir veri kaynağı kullanımını gösterir. Tarafından kullanılan bir veri kaynağı tanımlayan bir app.config dosyasının nasıl oluşturulacağını öğreneceksiniz <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> sınıfı. Bu kılavuzda sunulan görevler aşağıdakileri içerir:  
   
 -   Bir app.config dosyası oluşturuluyor.  
@@ -35,7 +36,7 @@ Bu kılavuzda birim testi için bir app.config dosyasında tanımlanan bir veri 
 -   Verilere erişme kaynakları kullanarak <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> sınıfı.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
- Bu kılavuzu tamamlamak için şunlara ihtiyacınız olacak:  
+ Bu kılavuzu tamamlamak için gerekenler:  
   
 -   Visual Studio Enterprise  
   
@@ -76,7 +77,7 @@ Bu kılavuzda birim testi için bir app.config dosyasında tanımlanan bir veri 
 >  Derleme adı, kullanmakta olduğunuz Microsoft Visual Studio .NET Framework derleme eşleşmesi gerekir. Visual Studio .NET Framework 3.5 kullanıyorsanız sürüm için 9.0.0.0 ayarlayın. Visual Studio .NET Framework 2.0 kullanıyorsanız, sürüm 8.0.0.0 için ayarlayın.  
   
 ## <a name="define-connection-strings"></a>Bağlantı dizeleri tanımlayın  
- Bağlantı dizeleri veri kaynaklarına erişmek için belirli bilgileri sağlayıcı tanımlar. Bağlantı dizelerini yapılandırma dosyalarında tanımlanan bir uygulama arasında yeniden kullanılabilir veri sağlayıcısı bilgileri sağlar. Bu bölümde, özel yapılandırma bölümünde tanımlanan veri kaynakları tarafından kullanılan iki bağlantı dizeleri oluşturun.  
+ Bağlantı dizeleri veri kaynaklarına erişim sağlayıcıya özgü bilgileri tanımlar. Bağlantı dizelerini yapılandırma dosyalarında tanımlanan bir uygulama arasında yeniden kullanılabilir veri sağlayıcısı bilgileri sağlar. Bu bölümde, özel yapılandırma bölümünde tanımlanan veri kaynakları tarafından kullanılan iki bağlantı dizeleri oluşturun.  
   
 #### <a name="to-define-connection-strings"></a>Bağlantı dizeleri tanımlamak için  
   
@@ -148,20 +149,20 @@ Bu kılavuzda birim testi için bir app.config dosyasında tanımlanan bir veri 
 |`dataTableName`|`"Sheet1$"`|  
 |`dataAccessMethod`|`"Sequential"`|  
   
- `microsoft.visualstudio.testtools` Öğesi şuna benzer görünmelidir:  
-  
-```  
+`microsoft.visualstudio.testtools` Öğesi şuna benzer görünmelidir:
+
+```xml
 <microsoft.visualstudio.testtools>  
     <dataSources>  
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>  
         <add name="MyExcelDataSource" connectionString="MyExcelConn" dataTableName="Sheet1$" dataAccessMethod="Sequential"/>  
     </dataSources>  
 </microsoft.visualstudio.testtools>  
-```  
-  
- Son app.config dosyası şuna benzer görünmelidir:  
-  
-```  
+```
+
+Son app.config dosyası şuna benzer görünmelidir:
+
+```xml
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
     <configSections>  
@@ -217,13 +218,11 @@ Bu kılavuzda birim testi için bir app.config dosyasında tanımlanan bir veri 
   
 #### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>App.config veri kaynaklarını kullanma birim testi oluşturmak için  
   
-1.  Birim testi için test projesi ekleyin.  
-  
-     Daha fazla bilgi için bkz: [oluşturma ve var olan kod için birim testleri çalıştırma](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173).  
+1.  Birim testi için test projesi ekleyin.
   
 2.  Birim testi otomatik olarak oluşturulan içeriğini aşağıdaki kodla değiştirin:  
   
-    ```  
+    ```csharp
     using System;  
     using Microsoft.VisualStudio.TestTools.UnitTesting;  
   
@@ -264,12 +263,11 @@ Bu kılavuzda birim testi için bir app.config dosyasında tanımlanan bir veri 
 3.  Veri kaynağı öznitelikleri inceleyin. App.config dosyasını ayarı adlarından dikkat edin.  
   
 4.  Çözümünüzü derlemek ve MyTestMethod ve MyTestMethod2 testleri çalıştırın.  
-  
+
 > [!IMPORTANT]
->  Böylece dağıtım dizini testinde erişilebilir veri kaynakları gibi öğeleri dağıtın.  
-  
+> Böylece dağıtım dizini testinde erişilebilir veri kaynakları gibi öğeleri dağıtın.
+
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)  
-[Oluşturma ve var olan kod için birim testleri çalıştırma](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
 [Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma](../test/how-to-create-a-data-driven-unit-test.md)

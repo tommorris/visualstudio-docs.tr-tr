@@ -19,27 +19,23 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 972fa76d83c9ecfbe9efb23897a6e0ec5928c35f
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama
-Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir şablondan çözümü. Çözüm önemli bir parçası DslDefinition.dsl depolanan DSL tanımı diyagramıdır. DSL tanımı DSL şekilleri ve sınıfları tanımlar. Sonra değiştirmek ve bu öğeleri ekleme, daha ayrıntılı DSL özelleştirmek için program kodunu ekleyebilirsiniz.  
-  
- İçin DSL'ler yeniyseniz, aracılığıyla çalışmanızı öneririz **DSL araçları Laboratuvar**, bu sitede bulabilirsiniz: [Visualizaton ve SDK Modelleme](http://go.microsoft.com/fwlink/?LinkID=186128)  
+Bir etki alanına özgü dil (DSL) tanımlamak üzere bir şablondan bir Visual Studio çözümü oluşturun. Çözüm önemli bir parçası DslDefinition.dsl depolanan DSL tanımı diyagramıdır. DSL tanımı DSL şekilleri ve sınıfları tanımlar. Sonra değiştirmek ve bu öğeleri ekleme, daha ayrıntılı DSL özelleştirmek için program kodunu ekleyebilirsiniz.
 
+İçin DSL'ler yeniyseniz, aracılığıyla çalışmanızı öneririz **DSL araçları Laboratuvar**, bu sitede bulabilirsiniz: [Visualizaton ve SDK Modelleme](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ##  <a name="templates"></a>Bir şablon çözümü seçme  
  DSL tanımlamak için aşağıdaki bileşenler yüklü olmalıdır:  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Visual Studio Görselleştirme ve modelleme SDK||  
 
@@ -47,7 +43,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
   
- Yeni bir etki alanına özgü dil oluşturmak için yeni oluşturduğunuz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] etki alanına özgü dil proje şablonu kullanarak çözüm.  
+ Yeni bir etki alanına özgü dil oluşturmak için etki alanına özgü dil proje şablonunu kullanarak yeni bir Visual Studio çözümü oluşturun.  
   
 #### <a name="to-create-a-dsl-solution"></a>Bir DSL çözüm oluşturmak için  
   
@@ -98,17 +94,17 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
 ### <a name="test-the-solution"></a>Çözüm test  
  Şablon çözüm çalışma değiştirin veya olduğu gibi kullanın, DSL sağlar.  
   
- Çözümü test etmek için F5'e veya CTRL + F5 tuşuna basın. Yeni bir örneğini [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Deneysel modunda açılır.  
+ Çözümü test etmek için F5'e veya CTRL + F5 tuşuna basın. Visual Studio yeni bir örneğini Deneysel modunda açılır.  
   
- Yeni örneğindeki [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], Çözüm Gezgini'nde örnek dosyasını açın. Bir araç kutusu ile bir diyagramı olarak açılır.  
+ Çözüm Gezgini'nde, Visual Studio yeni bir örneğini örnek dosyasını açın. Bir araç kutusu ile bir diyagramı olarak açılır.  
   
- Bir çözüm çalıştırırsanız, gelen oluşturduğunuz **en az bir dil** şablonu, Deneysel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aşağıdaki örnekte benzeyecektir:  
+ Bir çözüm çalıştırırsanız, gelen oluşturduğunuz **en az bir dil** şablonu, Deneysel, Visual Studio, aşağıdaki örnekte benzer:  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
  Araçları ile deneyin. Öğeleri oluşturmak ve bunları bağlayın.  
   
- Deneysel örneklerini kapatın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Visual Studio Deneysel örneklerini kapatın.  
   
 > [!NOTE]
 >  DSL değiştirildiğinde, artık test dosyası şekiller örneği görmeye olacaktır. Ancak, yeni öğeleri oluşturmak mümkün olacaktır.  
@@ -217,11 +213,11 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
   
 ##### <a name="to-test-the-new-domain-classes"></a>Yeni etki alanı sınıfları sınamak için  
   
-1.  **Tüm Şablonları dönüştürme tıklatın** araç çubuğundaki DSL Tasarımcı kodu oluşturmak için Çözüm Gezgini'nde,. Bu adım otomatik hale getirebilirsiniz. Daha fazla bilgi için bkz: [otomatikleştirmek tüm şablonları dönüştürme nasıl](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1.  **Tüm Şablonları dönüştürme tıklatın** araç çubuğundaki DSL Tasarımcı kodu oluşturmak için Çözüm Gezgini'nde,. Bu adım otomatik hale getirebilirsiniz. Daha fazla bilgi için bkz: [otomatikleştirmek tüm şablonları dönüştürme nasıl](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
   
-2.  **Derleme ve DSL çalıştırın.** Yeni bir örneğini çalıştırmak için F5'e veya CTRL + F5 tuşuna basın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Deneysel modunda. Deneysel örneğinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], DSL dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
+2.  **Derleme ve DSL çalıştırın.** Visual Studio yeni bir örneğini Deneysel modda çalıştırmak için F5'e veya CTRL + F5 tuşuna basın. Visual Studio'nun deneysel örneğinde, DSL dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
   
-3.  **Explorer'ı açın.** AT diyagram tarafında bulunur genellikle adlı dil Gezgini penceresi *YourLanguage* Explorer. Bu pencereyi görmüyorsanız, Çözüm Gezgini altında bir sekmede olabilir. Üzerinde bulamazsa, **Görünüm** menüsündeki **diğer pencereler**ve ardından * YourLanguage ***Explorer**.  
+3.  **Explorer'ı açın.** AT diyagram tarafında bulunur genellikle adlı dil Gezgini penceresi *YourLanguage* Explorer. Bu pencereyi görmüyorsanız, Çözüm Gezgini altında bir sekmede olabilir. Üzerinde bulamazsa, **Görünüm** menüsündeki **diğer pencereler**ve ardından *YourLanguage* **Explorer**.  
   
      Explorer modelinin ağaç görünümünü gösterir.  
   
@@ -317,7 +313,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
   
 1.  **Tüm Şablonları dönüştürme tıklatın** araç çubuğundaki DSL Tasarımcı kodu oluşturmak için Çözüm Gezgini'nde,.  
   
-2.  **Derleme ve DSL çalıştırın.** Yeni bir örneğini çalıştırmak için F5'e veya CTRL + F5 tuşuna basın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Deneysel modunda. Deneysel örneğinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], DSL dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
+2.  **Derleme ve DSL çalıştırın.** Visual Studio yeni bir örneğini Deneysel modda çalıştırmak için F5'e veya CTRL + F5 tuşuna basın. Visual Studio'nun deneysel örneğinde, DSL dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
   
 3.  **Öğe araçları araç kutusunu göründüğünü doğrulayın.**  
   
@@ -393,7 +389,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
   
 1.  **Tüm Şablonları dönüştürme tıklatın** araç çubuğundaki DSL Tasarımcı kodu oluşturmak için Çözüm Gezgini'nde,.  
   
-2.  **Derleme ve DSL çalıştırın.** Yeni bir örneğini çalıştırmak için F5'e veya CTRL + F5 tuşuna basın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Deneysel modunda. Deneysel örneğinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], DSL dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
+2.  **Derleme ve DSL çalıştırın.** Visual Studio yeni bir örneğini Deneysel modda çalıştırmak için F5'e veya CTRL + F5 tuşuna basın. Visual Studio'nun deneysel örneğinde, DSL dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
   
 3.  **Bağlantı aracını araç kutusunda görüntülendiğini doğrulayın.**  
   
@@ -494,7 +490,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
   
 1.  **Tüm Şablonları dönüştürme tıklatın** araç çubuğundaki DSL Tasarımcı kodu oluşturmak için Çözüm Gezgini'nde,.  
   
-2.  **Derleme ve DSL çalıştırın.** Yeni bir örneğini çalıştırmak için F5'e veya CTRL + F5 tuşuna basın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Deneysel modunda. Deneysel örneğinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], DSL dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
+2.  **Derleme ve DSL çalıştırın.** Visual Studio yeni bir örneğini Deneysel modda çalıştırmak için F5'e veya CTRL + F5 tuşuna basın. Visual Studio'nun deneysel örneğinde, DSL dosya adı uzantısına sahip bir dosya oluşturun veya açın.  
   
 3.  **Aracı araç kutusunda görüntülendiğini doğrulayın.**  
   
@@ -623,12 +619,10 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
 |My DSL explorer'ın öğeleri yalnızca tür adları ile gösterilir.|DSL tanımı'nda sınıfın bir etki alanı özelliği seçin ve Özellikler penceresinde ayarlayın **öğesi adını** true.|  
 |My DSL her zaman XML Düzenleyicisi'nde açar.|Dosyası okunurken bir hata nedeniyle oluşabilir. Ancak, bu hatayı düzeltmek daha sonra DSL Tasarımcısı olmasını Düzenleyicisi açıkça sıfırlamanız gerekir.<br /><br /> Proje öğesi sağ tıklayın, **birlikte Aç** seçip * YourLanguage ***Tasarımcısı (varsayılan)**.|  
 |Derleme adları değiştikten sonra my DSL araç görünmez.|İnceleyebilir ve güncelleştirme **DslPackage\GeneratedCode\Package.tt** daha fazla bilgi için bkz: [nasıl yapılır: bir etki alanına özgü dil Namespace değiştirmek](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
-|My DSL araç görünmez, ancak derleme adı değişmemiştir.<br /><br /> Veya, bir uzantı yükleme hatası raporlama bir ileti kutusu görünür.|Deneysel örneği sıfırlayın ve, çözümü yeniden derleyin.<br /><br /> 1.  Windows Başlat menüsü, altında **tüm programlar**, genişletin [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], ardından **Araçları**ve ardından **Microsoft Visual Studio deneysel örneği sıfırlama**.<br />2.  Üzerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **yapı** menüsünde tıklatın **çözümü yeniden derle**.|  
+|My DSL araç görünmez, ancak derleme adı değişmemiştir.<br /><br /> Veya, bir uzantı yükleme hatası raporlama bir ileti kutusu görünür.|Deneysel örneği sıfırlayın ve, çözümü yeniden derleyin.<br /><br /> 1.  Windows Başlat menüsü, altında **tüm programlar**, genişletin [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], ardından **Araçları**ve ardından **Microsoft Visual Studio deneysel örneği sıfırlama**.<br />2.  Visual Studio üzerinde**yapı** menüsünde tıklatın **çözümü yeniden derle**.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Etki alanına özgü dil ile çalışmaya başlama](../modeling/getting-started-with-domain-specific-languages.md)   
  [Windows Forms tabanlı bir etki alanına özgü dil oluşturma](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [WPF Tabanlı Etki Alanına Özgü Dil Oluşturma](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

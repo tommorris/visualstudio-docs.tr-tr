@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fe3d624fdfd187ebec59f43fbde8c750958d6703
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d610a7410232104428281d90bf7c67992e2a378
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="debugging-xslt"></a>XSLT hata ayıklama
 XSLT hata ayıklamak için Visual Studio hata ayıklayıcısı kullanabilirsiniz. Hata ayıklayıcı XSLT yürütme durumlarını görüntüleme ayarı kesme noktalarını destekler ve benzeri. XSLT hata ayıklama, Visual Studio Team System ve Professional Edition'da kullanılabilir.  
@@ -54,8 +54,8 @@ XSLT hata ayıklamak için Visual Studio hata ayıklayıcısı kullanabilirsiniz
  [XML Verileriyle Çalışırken Dikkat Edilecek Güvenlik Konuları](../xml-tools/security-considerations-when-working-with-xml-data.md)  
  XML Düzenleyicisi'ni veya XSLT hata ayıklayıcı çalışırken hakkında bilmeniz gereken güvenlik konuları anlatılmaktadır.  
   
- [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md)  
+ [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)  
  Visual Studio hata ayıklayıcısı tanıtır.  
   
- [XSLT başvurusu](http://msdn.microsoft.com/en-us/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
+ [XSLT başvurusu](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
  XSLT öğeleri ve işlevleri için başvuru bilgileri sağlar.

@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 0dce2cfd041b3fe0be3ecd4061e3447190d5e448
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: fb46a6d739e06f980b13cd2b643946b47b6661e3
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme
 Birçok artımlı geliştirme adımlarını düzgün çalışmasını kodunuzu tutmaya yardımcı olmak için birim testleri oluşturmanızı öneririz. Bazı üçüncü taraflar tarafından geliştirilen dahil olmak üzere, birim testleri yazmak için kullanabileceğiniz birkaç çerçeveleri vardır. Bazı test çerçevelerini farklı dil ya da platformlar testi için özelleştirilmiş. Test Gezgini birim testlerinde bu çerçeveleri için tek bir arabirim sağlar. Bağdaştırıcılar için en yaygın olarak kullanılan çerçeveleri tarafından kullanılabilir ve diğer çerçeveler için kendi bağdaştırıcıları yazabilirsiniz.  
@@ -147,15 +147,15 @@ Birçok artımlı geliştirme adımlarını düzgün çalışmasını kodunuzu t
   
      ![Birim Test Gezgini geçirme test gösteriliyor. ] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
   
-#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Girdi aralığı genişletmek için testleri ekleme  
-  
-1.  Her durumda, kodunuzun çalıştığı, güvenini artırmak için geniş bir giriş değerleri deneyin testleri ekleyin.  
-  
+#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Girdi aralığı genişletmek için testleri ekleme
+
+1.  Her durumda, kodunuzun çalıştığı, güvenini artırmak için geniş bir giriş değerleri deneyin testleri ekleyin.
+
     > [!TIP]
-    >  Geçen varolan testler değiştirilmesine kaçının. Bunun yerine, yeni testler ekleyin. Yalnızca kullanıcı gereksinimleri değiştiğinde mevcut testleri değiştirin. Bu ilke kodu genişletmeye çalışırken mevcut işlevselliğini kaybetmeyin sağlamaya yardımcı olur.  
-  
-     Test sınıfınızda giriş değerleri aralığı çalıştığında aşağıdaki sınama ekleyin:  
-  
+    >  Geçen varolan testler değiştirilmesine kaçının. Bunun yerine, yeni testler ekleyin. Yalnızca kullanıcı gereksinimleri değiştiğinde mevcut testleri değiştirin. Bu ilke kodu genişletmeye çalışırken mevcut işlevselliğini kaybetmeyin emin olmanıza yardımcı olur.
+
+     Test sınıfınızda giriş değerleri aralığı çalıştığında aşağıdaki sınama ekleyin:
+
     ```csharp  
     [TestMethod]  
     public void RooterValueRange()  

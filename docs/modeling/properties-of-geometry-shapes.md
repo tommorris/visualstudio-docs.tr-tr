@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 84773891342b18a583cf2919a7d09e0aaa9d2b93
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 7c2b54b5bbda108c7f616eb71f7945e071721856
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-geometry-shapes"></a>Geometri Şekillerinin Özellikleri
 Geometri şekiller, etki alanı sınıfların örnekleri bir etki alanına özgü dil görüntülenme biçimini belirtmek için kullanabilirsiniz. Daha fazla bilgi için bkz: [bir etki alanına özgü dil tanımlamak nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikleri kullanma hakkında daha fazla bilgi için bkz: [özelleştirme ve bir etki alanına özgü dil genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -33,7 +33,7 @@ Geometri şekiller, etki alanı sınıfların örnekleri bir etki alanına özg�
 |Kenarlık Çizgi stili|Bu şekil (düz, çizgi, nokta, çizgi nokta, çizgi nokta nokta veya özel) anahat çizgi stili.|Düz|  
 |Anahat kalınlığı|Bu şeklin Anahat kalınlığı.|0.03125|  
 |Metin rengi|Bu şeklin ile ilişkili metin dekoratörler için kullanılan rengi.|Siyah|  
-|Erişim değiştiricisi|Sınıfı (ortak veya dahili) erişim değiştiricisi.|Ortak|  
+|Access Modifier|Sınıfı (ortak veya dahili) erişim değiştiricisi.|Ortak|  
 |Özel Öznitelikler|Bu şeklin için oluşturulan kaynak kodu sınıfı öznitelikler eklemek için kullanılır.|\<yok >|  
 |Çift oluşturur türetilmiş|Varsa `True`, bir taban sınıf ve bir parçalı sınıf (geçersiz kılmaları özelleştirmeyi desteklemek için) oluşturulur. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Özel bir oluşturucuya sahip|Varsa `True`, özel bir oluşturucu kaynak kodunda sağlanacaktır. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
@@ -52,4 +52,4 @@ Geometri şekiller, etki alanı sınıfların örnekleri bir etki alanına özg�
 |Yardım anahtar sözcüğü|Bu şeklin için F1 Yardımı dizin oluşturmak için kullanılan anahtar sözcük.|\<yok >|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

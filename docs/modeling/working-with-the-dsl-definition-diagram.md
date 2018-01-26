@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5da1da2b7c74f6c95651eeb0120b213ad1e1d394
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 713d7d3598e56ceb4e5a339facb948d6d222a32d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>DSL Tanım Diyagramı ile Çalışma
 Diyagramı bir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tanımı etki alanına özgü dil tanımlamak için önemli bir araçtır. Etki alanınızı öğelerine model ve diyagramı ilişkileri tanımlayın ve daha okunabilir yapmak için diyagramın düzenini değiştirebilirsiniz ekleyebilirsiniz.  
@@ -73,4 +73,4 @@ Diyagramı bir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tanımı etki ala
  Bir etki alanı ilişkisinin ilişkileri türetilmiş ya da diğer etki alanı ilişkilerini katıştırma veya başvuru ilişkileri varsa, ilişki bir sınıf olarak ilişki sağ tıklayarak ve ardından görüntüleyebileceğiniz **Göster sınıfı** . İlişki ile görüntülenen bir **etki alanı özellikleri** compartment ve devralma ve ilişkileri ağaçları gösterir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

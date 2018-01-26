@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 64a7f5ae729ff2badfc03750efa43c70973a7498
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 9c21673f318d97ac5abb2b89bdd8d65ae01cef17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 Tasarım zamanı T4 metin şablonları program kodunu ve diğer dosyalar oluşturmanıza izin, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projesi. Genellikle, böylece kullanıcılar verilerinden göre oluşturdukları kod farklılık şablonları yazma bir *modeli*. Bir dosya veya uygulama gereksinimleri hakkında önemli bilgiler içeren bir veri modelidir.  
@@ -298,12 +298,11 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
  Kaynak modeli değişirse, Çözümdeki tüm şablonları yeniden çalıştırmanız gerekir. Bunu el ile yapmak için seçin **tüm şablonları dönüştürme** üzerinde **yapı** menüsü.  
   
- Yüklediyseniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görselleştirme ve modelleme SDK, bir derleme yaptığınızda otomatik olarak dönüştürülen tüm şablonları olabilir. Bunu yapmak için proje dosyanızı (.csproj veya .vbproj) bir metin düzenleyicisinde düzenleyin ve sonra diğer yakın dosyasının sonuna şu satırları ekleyin `<import>` deyimleri:  
+ Visual Studio SDK Modelleme yüklü değilse, bir derleme yaptığınızda otomatik olarak dönüştürülen tüm şablonları olabilir. Bunu yapmak için proje dosyanızı (.csproj veya .vbproj) bir metin düzenleyicisinde düzenleyin ve sonra diğer yakın dosyasının sonuna şu satırları ekleyin `<import>` deyimleri:
 
+> [!NOTE]
+> Visual Studio 2017 içinde metin şablonu dönüştürme SDK'sı ve modelleme Visual Studio SDK, Visual Studio'nun belirli özellikleri yüklediğinizde otomatik olarak yüklenir. Daha fazla ayrıntı için bkz: [bu blog gönderisine](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ```  
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />  
 <PropertyGroup>  

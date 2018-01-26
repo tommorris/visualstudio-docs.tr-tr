@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 9b2823c15309e63262052fd3cc95d914bf1614c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: be1402da1677388712472d4309c40ce767358f7b
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>İzlenecek yol: Visual Studio uzantısını yayımlama
 
@@ -40,7 +40,7 @@ Bu durumda biz varsayılan VSPackage uzantısı kullanır, ancak aynı adımlar�
 
 1. Ürün adı, yazar ve sürüm doğru bilgilerle uzantısı vsixmanifest güncelleştirin.
 
-  ![Uzantı vsixmanifest güncelleştir](media/update-extension-vsixmanifest.png)
+  ![update extension vsixmanifest](media/update-extension-vsixmanifest.png)
 
 2. Uzantınızı yapı içinde **sürüm** modu. Şimdi uzantınızı VSIX \bin\Release klasöründeki olarak paketlenmiş.
 
@@ -70,9 +70,7 @@ Bu durumda biz varsayılan VSPackage uzantısı kullanır, ancak aynı adımlar�
 
   ![Market'te karşıya yükle](media/upload-to-marketplace.png)
 
-6. Uzantınızı karşıya yüklemek için kullanmak istediğiniz publisher'ı seçin.  Sol üst köşesindeki yayımcı adına tıklayarak yayımcılar değiştirebilirsiniz.
-
-  ![Değiştirme Market yayımcısı](media/change-marketplace-publisher.png)
+6. Uzantınızı karşıya yüklemek için kullanmak istediğiniz publisher'ı seçin.  Sol tarafta listelenen yayımcı adları tıklayarak yayımcılar değiştirebilirsiniz.  Tıklayın **yeni uzantı** seçip **Visual Studio**.
 
 7. İçinde **1: karşıya uzantısı**, doğrudan Visual Studio Market'te VSIX dosya yüklemeye veya yalnızca kendi Web sitesine bağlantı eklemek seçebilirsiniz. Bu durumda, biz TestPublish.vsix bizim uzantısı karşıya yükler.  Sürükleyip uzantınızı bırakın veya kullanmak **tıklatın** dosyasını bulmak için bağlantı.  Uzantınızı proje \bin\Release klasöründe bulunabilir.  
               **Devam**'a tıklayın.
@@ -87,7 +85,7 @@ Bu durumda biz varsayılan VSPackage uzantısı kullanır, ancak aynı adımlar�
     
     * **VSIX kimliği** Uzantınız için Visual Studio kullanan benzersiz tanımlayıcısıdır.  Otomatik güncelleştirilmiş olması, uzantısına sahip olmasını istiyorsanız bu gereklidir.  Bu, source.extension.vsixmanifest dosyasından otomatik olarak doldurulur.
     
-    * **Logo** Uzantınız için kullanılır.  Bu sağladıysanız source.extension.vsixmanifest dosyadan otomatik doldurulmuş olacaktır.
+   * **Logo** Uzantınız için kullanılır.  Bu sağladıysanız source.extension.vsixmanifest dosyadan otomatik doldurulmuş olacaktır.
     
     * **Kısa açıklama** uzantınızı yaptığı.  Otomatik olarak doldurulmuş bu source.extension.vsixmanifest dosyasından olacaktır.
     
@@ -109,12 +107,32 @@ Bu durumda biz varsayılan VSPackage uzantısı kullanır, ancak aynı adımlar�
     
     * **Soru- cevap uzantısı için izin** uzantısı giriş sayfanızda soruları tutulacak kullanıcıların izin verir.
 
-9. Tıklatın **karşıya & Kaydet**. Bu sürecek yayımcınıza geri Yönet sayfası.  Uzantınızı henüz yayınlanmamış.  Uzantı vurgulu uzantınızı girişi yayımlayın ve tıklayın **...**  ve ardından **olun ortak**.  Nasıl uzantınızı Market'te seçerek görüneceğini görüntüleyebilirsiniz **ayrıntıları görüntüleyin**.  Alım numaraları için tıklayın **raporları**.  Dahili değişiklik yapmak için tıklatın **Düzenle*.
+9. Tıklatın **karşıya & Kaydet**. Bu sürecek yayımcınıza geri Yönet sayfası.  Uzantınızı henüz yayınlanmamış.  Uzantınızı yayımlamak için uzantı sağ tıklatın ve **genel yap**.  Nasıl uzantınızı Market'te seçerek görüneceğini görüntüleyebilirsiniz **görünüm uzantısı**.  Alım numaraları için tıklayın **raporları**.  Dahili değişiklik yapmak için tıklatın **Düzenle*.
 
   ![Uzantı Giriş menüsü](media/extension-entry-menu.png)
 
 10. ' I tıklattıktan sonra **genel yap**, uzantınızı ortak sunulmuştur.  Visual Studio Market'te Uzantınız için arama yapın.
 
+## <a name="add-additional-users-to-manage-your-publisher-account"></a>Yayımcı hesabınızı yönetmek için ek kullanıcı ekleme
+
+Market erişmek ve bir yayımcı hesabı yönetmek için ek kullanıcı izinleri verme destekler.
+
+1. Ek kullanıcılar eklemek istediğiniz yayımcı hesabına gidin.
+
+2. Seçin **üyeleri** ve tıklayın **Ekle**
+
+  ![Ek kullanıcı ekleme](media/add-users.png)
+
+3. Ardından, eklemek ve erişim'in altında doğru düzeyde vermek istediğiniz kullanıcının e-posta adresi belirtebilirsiniz **bir rol seçin**.  Aşağıdakilerden birini seçebilirsiniz:
+
+  * **Oluşturucu**: kullanıcı uzantılarını yayımlama ancak olamaz görüntüleyebilir veya diğer kullanıcılar tarafından yayımlanan uzantıları yönetebilirsiniz.
+  
+  * **Okuyucu**: kullanıcı görüntüleyebilir uzantılar, ancak olamaz yayımlamak veya uzantıları yönetebilirsiniz.
+  
+  * **Katkıda bulunan**: kullanıcı yayımlama ve uzantılar, yönetebilir ancak olamaz yayımcı ayarlarını düzenlemek veya erişimi yönetin.
+  
+  * **Sahibi**: kullanıcı yayımlama ve uzantıları yönetmek, yayımcı ayarlarını düzenlemek ve erişimi yönetin.
+  
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Visual Studio marketten uzantısını yükleyin
 
 Uzantı yayımlanan, Visual Studio'da yükleyin ve orada sınayın.
@@ -127,7 +145,7 @@ Uzantı yayımlanan, Visual Studio'da yükleyin ve orada sınayın.
 
 4. Yüklemeyi tamamlamak için Visual Studio tüm örneklerini kapatın.
 
-## <a name="removing-the-extension"></a>Uzantısını kaldırma
+## <a name="remove-the-extension"></a>Uzantıyı kaldırın
 
 Uzantıyı Visual Studio marketten ve bilgisayarınızdan kaldırabilirsiniz.
 
@@ -137,7 +155,7 @@ Uzantıyı Visual Studio marketten ve bilgisayarınızdan kaldırabilirsiniz.
 
 2. Sağ üst köşede tıklatın **Yayımla** uzantıları.  TestPublish yayımlamak için kullanılan yayımcı seçin.  TestPublish listesi görüntülenir.
 
-3. Bir uzantı girişini getirin ve tıklayın **...**  ve **Kaldır...** Uzantıyı kaldırmak isteyip istemediğinizi onaylamanız istenir.  **Tamam**'ı tıklatın.
+3. Bir uzantı girişini sağ tıklatın ve **kaldırmak** uzantıyı kaldırmak isteyip istemediğinizi onaylamanız istenir.  **Tamam**'ı tıklatın.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Uzantıyı bilgisayarınızdan kaldırmak için
 

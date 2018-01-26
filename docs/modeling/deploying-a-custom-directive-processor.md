@@ -7,33 +7,33 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, custom directive processors
-ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 286cf9ab203550fec8b9a291da697a2e75b72ec3
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
-ms.translationtype: HT
+ms.openlocfilehash: be69cc9335480d901824ce8a4981728a34db6395
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Özel Yönerge İşlemcisi Dağıtma
+
 Özel yönerge işlemcisi Visual Studio'da herhangi bir bilgisayarda kullanmak için bu konuda açıklanan yöntemlerden biri tarafından kaydetmeniz gerekir.  
   
- Diğer yöntemler şunlardır:  
+Diğer yöntemler şunlardır:  
   
--   [Visual Studio Uzantısı (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Bu, yönerge işlemcisini hem kendi bilgisayar hem de diğer bilgisayarlara yüklemek/kaldırmak için bir yol sağlar. Genellikle, diğer özellikleri aynı VSIX'te paketleyebilirsiniz.  
+-   [Visual Studio uzantıları](../extensibility/shipping-visual-studio-extensions.md). Bu, yönerge işlemcisini hem kendi bilgisayar hem de diğer bilgisayarlara yüklemek/kaldırmak için bir yol sağlar. Genellikle, diğer özellikleri aynı VSIX'te paketleyebilirsiniz.  
   
 -   [VSPackage](../extensibility/internals/vspackages.md). Yönerge işlemcisinin yanı sıra diğer özellikleri de içeren bir VSPackage tanımlıyorsanız, yönerge işlemcisi kaydetmeye uygun bir yöntem yoktur.  
   
 -   Bir kayıt defteri anahtarı ayarlayın. Bu yöntemde, yönerge işlemcisi için bir kayıt defteri girdisini ekleyin.  
   
- Visual Studio'da, metin şablonu dönüştürme istiyorsanız aşağıdaki yöntemlerden birini kullanmanız gerekir veya [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Kendi uygulamanızda özel bir ana bilgisayar kullanıyorsanız, her yönerge için yönerge işlemcisi bulmak özel ana bilgisayarınızın sorumluluğundadır.  
+Yalnızca metin şablonunuzda Visual Studio veya MSBuild dönüştürmek istiyorsanız aşağıdaki yöntemlerden birini kullanmanız gerekir. Kendi uygulamanızda özel bir ana bilgisayar kullanıyorsanız, her yönerge için yönerge işlemcisi bulmak özel ana bilgisayarınızın sorumluluğundadır.  
   
-## <a name="deploying-a-directive-processor-in-a-vsix"></a>VSIX'te Yönerge İşlemcisini Dağıtma  
- Özel yönerge işlemcisi için ekleyebileceğiniz bir [Visual Studio Uzantısı (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+## <a name="deploying-a-directive-processor-in-a-vsix"></a>VSIX'te Yönerge İşlemcisini Dağıtma
+
+Özel yönerge işlemcisi için ekleyebileceğiniz bir [Visual Studio Uzantısı (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md).
   
  Aşağıdaki iki öğenin .vsix dosyasında bulunduğundan emin olmanız gerekir:  
   
@@ -41,10 +41,10 @@ ms.lasthandoff: 01/12/2018
   
 -   Yönerge işlemcisini kaydeden .pkgdef dosyası. Dosyanın kök adı derleme ile aynı olmalıdır. Örneğin, dosyalarınız CDP.dll ve CDP.pkgdef olarak adlandırılabilir.  
   
- Bir .vsix dosyasının içeriğini denetlemek veya değiştirmek için, dosya adı uzantısını .zip olarak değiştirin ve açın. İçerikleri düzenledikten sonra, dosya adını .vsix olarak eski haline döndürün.  
-  
- Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir yöntemi açıklamaktadır.  
-  
+Bir .vsix dosyasının içeriğini denetlemek veya değiştirmek için, dosya adı uzantısını .zip olarak değiştirin ve açın. İçerikleri düzenledikten sonra, dosya adını .vsix olarak eski haline döndürün.  
+
+Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir yöntemi açıklamaktadır.  
+
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Bir VSIX projesinde özel bir yönerge işlemcisi geliştirmek için  
   
 1.  Visual Studio'da bir VSIX projesi oluşturun.  
@@ -92,11 +92,11 @@ ms.lasthandoff: 01/12/2018
   
 5.  Aşağıdaki başvuruları projeye ekleyin:  
   
-    -   **Microsoft.VisualStudio.TextTemplating. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
 6.  Projeye özel yönerge işlemcisi sınıfınızı ekleyin.  
   
@@ -199,5 +199,6 @@ ms.lasthandoff: 01/12/2018
 |örneği|REG_SZ|\<**Tam sınıf adı**>|  
 |Derleme|REG_SZ|\<**GAC, derleme adı**>|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel T4 Metin Şablonu Yönerge İşlemcileri Oluşturma](../modeling/creating-custom-t4-text-template-directive-processors.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Özel T4 Metin Şablonu Yönerge İşlemcileri Oluşturma](../modeling/creating-custom-t4-text-template-directive-processors.md)

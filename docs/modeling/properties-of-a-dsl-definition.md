@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6a3b1dc2966f2fd07c8f0462ebb47bebf25b843c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 793d4becea65caca5bf127707c96c44de028fd3d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL Tanımının Özellikleri
 DslDefinition özellikleri tanımlama *etki alanına özgü dil* Sürüm numaralandırma gibi tanımı özellikleri. DslDefinition özellikleri görünür **özellikleri** diyagramda açık bir bölümünü tıklattığınızda penceresi *etki alanına özgü dil Tasarımcısı*.  
@@ -26,7 +26,7 @@ DslDefinition özellikleri tanımlama *etki alanına özgü dil* Sürüm numaral
   
 |Özellik|Açıklama|Varsayılan|  
 |--------------|-----------------|-------------|  
-|Erişim değiştiricisi|Etki alanı sınıfı için erişim değiştiricisi genel veya iç olup olmadığını belirler.|public|  
+|Access Modifier|Etki alanı sınıfı için erişim değiştiricisi genel veya iç olup olmadığını belirler.|public|  
 |Özel Öznitelikler|Özel öznitelikler etki alanı sınıfı için tanımlanmış.<br /><br /> **Not** öznitelik eklemek için Gözat düğmesini kullanın.|\<yok >|  
 |Şirket adı|Sistem kayıt defterinde geçerli şirket adı adı.|Geçerli şirket adı|  
 |Ad|Bu etki alanı sınıfının adı.|Geçerli adı|  
@@ -44,4 +44,4 @@ DslDefinition özellikleri tanımlama *etki alanına özgü dil* Sürüm numaral
 |Gözden geçirme|Yapı numarası bu etki alanına özgü dil tanımı için artımlı düzeltme.|0|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

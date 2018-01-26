@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 2302c2bbfbd38ff307335b525aa319afb5f07e25
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0cb316475748033bb020a2f3065f9492a5a201ed
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Kodlanmış UI Test Düzenleyicisi'ni Kullanarak Kodlanmış UI Testlerini Düzenleme
 Kodlanmış UI Test Düzenleyicisi'ni kolayca kodlanmış UI testleri değiştirmenize olanak tanır. Kodlanmış UI Test Düzenleyicisi'ni kullanarak bulun, görüntülemek ve test yöntemleri ve UI eylemlerini özelliklerini düzenleyin. Ayrıca, görüntülemek ve bunların karşılık gelen denetimleri düzenlemek için kullanıcı Arabirimi denetim eşlemesi kullanabilirsiniz.  
@@ -29,7 +29,7 @@ Kodlanmış UI Test Düzenleyicisi'ni kolayca kodlanmış UI testleri değiştir
 ## <a name="why-should-i-do-this"></a>Neden bunu yapmam gerekir?  
  Kodlanmış UI Test Düzenleyicisi'ni kullanarak daha hızlı ve kod düzenleyicisini kullanarak kodlanmış UI test yöntemlerinizi kod düzenleme daha etkilidir. Kodlanmış UI Test Düzenleyicisi ile hızla bulup UI eylemlerini ve denetimleri ile ilgili özellik değerlerini değiştirmek için araç ve kısayol menüleri kullanabilirsiniz. Örneğin, aşağıdaki komutları gerçekleştirmek için kodlanmış UI Test Düzenleyicisi araç kullanabilirsiniz:  
   
- ![UI Test Düzenleyicisi](../test/media/uitesteditor.png "UITestEditor")  
+ ![UI Test Edito](../test/media/uitesteditor.png "UITestEditor")  
   
 1.  [Bul](../ide/finding-and-replacing-text.md) UI eylemlerini ve denetimlerini bulmanıza yardımcı olur.  
   
@@ -194,7 +194,7 @@ Denetim özelliklerini düzenleme
  *Başka ne bilebilirim?*  
  **Notlar**  
   
--   ![Prerequsite](../test/media/prereq.png "önkoşul") belirli bir denetim bir UI eyleminden önce kullanılabilir olduğundan emin olmak gerekiyorsa, uygun UITestControl.WaitForControlXXX() kullanarak test yönteminiz için özel kod eklemeyi düşünmelisiniz yöntem. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Kayıttan yürütme sırasında testleri bekleme belirli olaylar için kodlanmış UI yapma](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+-   ![Önkoşul](../test/media/prereq.png "önkoşul") belirli bir denetim bir UI eyleminden önce kullanılabilir olduğundan emin olmak gerekiyorsa, uygun UITestControl.WaitForControlXXX() kullanarak test yönteminiz için özel kod eklemeyi düşünmelisiniz yöntem. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Kayıttan yürütme sırasında testleri bekleme belirli olaylar için kodlanmış UI yapma](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
  **İpuçları**  
   
@@ -216,6 +216,6 @@ Denetim özelliklerini düzenleme
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)  
-[Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)  
+[Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md)  
 [Verilerle Çalışan Kodlanmış UI Testi Oluşturma](../test/creating-a-data-driven-coded-ui-test.md)  
 [İzlenecek yol: Kodlanmış Bir UI Testi Oluşturmak Düzenlemek ve Sürdürmek](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

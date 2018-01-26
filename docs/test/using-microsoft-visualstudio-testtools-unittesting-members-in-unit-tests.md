@@ -1,5 +1,5 @@
 ---
-title: "Birim testlerinde Microsoft.VisualStudio.TestTools.UnitTesting üyelerini kullanma | Microsoft Docs"
+title: Using Microsoft.VisualStudio.TestTools.UnitTesting Members in Unit Tests | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 251843d3e5a32ddedfe4f9081bd52330a457fe24
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 3e0be7d788d4471f249b50f8c846343514b1c346
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Birim Testlerinde Microsoft.VisualStudio.TestTools.UnitTesting Üyelerini Kullanma
 Birim testi çerçevesi birim içinde testi destekleyen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Sınıflar ve üyeleri Microsoft.VisualStudio.TestPlatform.UnitTestFramework kullanmak > birim testleri kodlama yaparken ad alanı. Birim sıfırdan test veya test ettiğiniz koddan oluşturulan birim testi iyileştirme yazılmış olduğunda bunları kullanabilirsiniz.  
@@ -41,9 +41,10 @@ Birim testi çerçevesi birim içinde testi destekleyen [!INCLUDE[vsprvs](../cod
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.DataSourceElementCollection  
   
-## <a name="attributes-used-to-establish-a-calling-order"></a>Bir arama sırası kurmak için kullanılan öznitelikleri  
- Aşağıdaki öznitelikler biri ile donatılmış code öğesi belirttiğiniz şu anda adı verilir. Daha fazla bilgi için bkz: [birim testinin anatomisi](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).  
-  
+## <a name="attributes-used-to-establish-a-calling-order"></a>Bir arama sırası kurmak için kullanılan öznitelikleri
+
+Aşağıdaki öznitelikler biri ile donatılmış code öğesi belirttiğiniz şu anda adı verilir. Daha fazla bilgi için bkz: [birim testinin anatomisi](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+
 ### <a name="for-assemblies"></a>Derlemeler için  
  Derlemenizi kaldırılmadan önce AssemblyInitialize ve AssemblyCleanup derlemenizi yüklendikten sonra sağ ve sağ denir.  
   
@@ -64,8 +65,9 @@ Birim testi çerçevesi birim içinde testi destekleyen [!INCLUDE[vsprvs](../cod
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestCleanupAttribute  
   
-## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Test sınıflar ve yöntemler tanımlamak için kullanılan öznitelikleri  
- Her test sınıfı TestClass özniteliğe sahip olması gerekir ve her test yöntemi TestMethod özniteliğe sahip olması gerekir. Daha fazla bilgi için bkz: [birim testinin anatomisi](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).  
+## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Test sınıflar ve yöntemler tanımlamak için kullanılan öznitelikleri
+
+Her test sınıfı TestClass özniteliğe sahip olması gerekir ve her test yöntemi TestMethod özniteliğe sahip olması gerekir. Daha fazla bilgi için bkz: [birim testinin anatomisi](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute  
   
@@ -109,7 +111,7 @@ Birim testi çerçevesi birim içinde testi destekleyen [!INCLUDE[vsprvs](../cod
   
 ## <a name="test-configuration-classes"></a>Test yapılandırması sınıfları  
   
--   Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes >  
+-   Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>  
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestConfigurationSection  
   
@@ -120,12 +122,10 @@ Birim testi çerçevesi birim içinde testi destekleyen [!INCLUDE[vsprvs](../cod
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.CssProjectStructureAttribute  
   
-## <a name="classes-used-with-private-accessors"></a>Özel erişimciler ile kullanılan sınıflar  
- Bölümünde açıklandığı gibi [kullanarak bir özel erişimcisi oluşturmak için duyurun](http://msdn.microsoft.com/en-us/2056c6a7-6672-42a7-8f53-fead33c56deb), birim testi için özel bir yöntem oluşturabilirsiniz. Bu oluşturma PrivateObject sınıfın bir nesnesi başlatır özel erişimcisi bir sınıf oluşturur. PrivateObject sınıfı özel erişimcisi işleminin bir parçası yansıma kullanan bir sarmalayıcı sınıftır. PrivateType sınıfı benzer, ancak özel örnek yöntemleri çağırmak yerine özel statik yöntemleri çağırmak için kullanılır.  
-  
--   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateObject  
-  
--   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateType  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- Microsoft.VisualStudio.TestPlatform.UnitTestFramework
+## <a name="classes-used-with-private-accessors"></a>Özel erişimciler ile kullanılan sınıflar
+
+Birim testi için özel bir yöntem oluşturabilirsiniz. Bu oluşturma PrivateObject sınıfın bir nesnesi başlatır özel erişimcisi bir sınıf oluşturur. PrivateObject sınıfı özel erişimcisi işleminin bir parçası yansıma kullanan bir sarmalayıcı sınıftır. PrivateType sınıfı benzer, ancak özel örnek yöntemleri çağırmak yerine özel statik yöntemleri çağırmak için kullanılır.
+
+- Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateObject
+
+- Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateType

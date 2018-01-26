@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: feb94d543845e41027fc003188b013b05b75703a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: d48e7094b61c07e3d2e3181010c823c457ae959a
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-domain-properties"></a>Etki Alanı Özelliklerinin Özellikleri
 A *etki alanı özelliği* değer tutan bir model öğesi, bir özelliğidir. Örneğin, `Person` etki alanı sınıf özellikleri vardır `Name` ve `BirthDate`. DSL tanımı'nda, etki alanı özellikleri etki alanı sınıfı kutusunda diyagramında ve etki alanı sınıfı DSL Explorer'da altında listelenir. Daha fazla bilgi için bkz: [bir etki alanına özgü dil tanımlamak nasıl](../modeling/how-to-define-a-domain-specific-language.md).  
@@ -50,4 +50,4 @@ A *etki alanı özelliği* değer tutan bir model öğesi, bir özelliğidir. Ö
 |**Türü**|Özelliğin türü. Kullanılabilir türler listesine eklemek için DSL Explorer'da DSL kökündeki sağ tıklayın ve tıklayın **dış türü Ekle**.|`String`|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

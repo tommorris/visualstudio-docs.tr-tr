@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1b26da119360462c5237977a1b1da8ac5041d84a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 6848f2c0b6c8d25fe7964fdb5519aa3f075bde57
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama
 Girişi API'si [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görselleştirme ve modelleme SDK böylece okuma ancak değişmez bir programa kilit bölümünü veya tümünü bir etki alanına özgü dil (DSL) modeli sağlar. Bu salt okunur seçeneği, örneğin, böylece kullanıcı açıklama ve DSL modeli gözden geçirmek için iş arkadaşlarınızı isteyebilir, ancak bunları özgün değiştirmesini engellemek kullanılabilir.  
@@ -24,7 +24,7 @@ Girişi API'si [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görsel
 > [!NOTE]
 >  Yansıma kullanarak bir kilitleme ilkesi atlatılabilir. Üçüncü taraf geliştiriciler için Temizle sınırını sağlar, ancak güçlü güvenlik sağlamaz.  
   
- Daha fazla bilgi ve örnekler adresinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Görselleştirme ve modelleme SDK](http://go.microsoft.com/fwlink/?LinkId=186128) Web sitesi.  
+ Daha fazla bilgi ve örnekler Visual Studio'ya kullanılabilir [Görselleştirme ve modelleme SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) Web sitesi.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   

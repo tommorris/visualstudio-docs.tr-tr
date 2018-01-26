@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ee218f119d8c996c1be72ff911735c271df44e98
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 927b033928d200cbab5271be93679106e7f4fe72
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="writing-a-t4-text-template"></a>T4 Metin Şablonu Yazma
 Metin şablonu ondan oluşturulan metni içerir. Örneğin, bir web sayfası oluşturan bir şablonu içerir "\<html >..." ve diğer tüm standart bölümleri HTML sayfası. Şablona eklenmiş olan *denetim blokları*, program kod parçalarını olduğu. Denetim blokları değişen değerler sağlayın ve koşullu ve yinelenen metni bölümlerini sağlar.  
@@ -258,9 +258,10 @@ Content of MyFile.txt is:
   
 ```  
   
- Ana bilgisayar tarafından sağlanan diğer hizmetler edinebilirsiniz. Daha fazla bilgi için bkz: [erişme Visual Studio'ya veya diğer ana şablondan](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
-  
-### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Tasarım zamanı metin şablonları ayrı bir AppDomain içinde çalıştırın  
+Ana bilgisayar tarafından sağlanan diğer hizmetler edinebilirsiniz. Daha fazla bilgi için bkz: [erişme Visual Studio'ya veya diğer ana şablondan](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
+
+### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Tasarım zamanı metin şablonları ayrı bir AppDomain içinde çalıştırın
+
  Farkında olmalıdır, bir [tasarım zamanı metin şablonu](../modeling/design-time-code-generation-by-using-t4-text-templates.md) ana uygulamadan ayrı bir AppDomain içinde çalışır. Çoğu durumda bu önemli değildir, ancak belirli karmaşık durumlarda kısıtlamaları fark edebilirsiniz. Örneğin, verileri veya şablon dışında ayrı bir hizmetten geçirmek istiyorsanız, hizmet seri hale getirilebilir bir API sağlamanız gerekir.  
   
  (Bu doğru değilse bir [çalışma zamanı metin şablonu](../modeling/run-time-text-generation-with-t4-text-templates.md), kodunuzun geri kalanı ile birlikte derlenmiş kod sağlar.)  

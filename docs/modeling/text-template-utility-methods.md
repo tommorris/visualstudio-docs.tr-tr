@@ -11,22 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f851f98fca98af8dfc95160f244c59cc0645a805
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 66b4c44a79446aacc56761b6b565d8c979d007f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="text-template-utility-methods"></a>Metin Şablonu Yardımcı Program Yöntemleri
-Kodu yazarken her zaman kullanılabilen çeşitli yöntemler vardır bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metin şablonu. Bu yöntemler tanımlanan <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
-  
+
+Visual Studio metin şablonda kodu yazarken her zaman kullanılabilen çeşitli yöntemler vardır. Bu yöntemler tanımlanan <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+
 > [!TIP]
->  Diğer yöntemleri ve normal (önceden işlenmiş değil) metin şablonu ana ortamında tarafından sağlanan hizmetlerin de kullanabilirsiniz. Örneğin, dosya yolları çözümlemek, oturum hataları ve Hizmetleri tarafından sağlanan alma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve herhangi bir yüklenen paketler.  Daha fazla bilgi için bkz: [metin şablonu Visual Studio'dan erişme](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Diğer yöntemleri ve normal (önceden işlenmiş değil) metin şablonu ana ortamında tarafından sağlanan hizmetlerin de kullanabilirsiniz. Örneğin, dosya yolları çözümlemek, oturum hataları ve Visual Studio ve tüm tarafından sağlanan hizmetlerin alma yüklenen paketler. Daha fazla bilgi için bkz: [metin şablonu Visual Studio'dan erişme](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
   
-## <a name="write-methods"></a>Yöntemleri yazma  
- Kullanabileceğiniz `Write()` ve `WriteLine()` bir ifade kod bloğunu kullanmak yerine bir standart kod bloğunun metin eklenecek yöntemleri. Aşağıdaki iki kod blokları işlevsel olarak eşdeğerdir.  
+## <a name="write-methods"></a>Yöntemleri yazma
+
+Kullanabileceğiniz `Write()` ve `WriteLine()` bir ifade kod bloğunu kullanmak yerine bir standart kod bloğunun metin eklenecek yöntemleri. Aşağıdaki iki kod blokları işlevsel olarak eşdeğerdir.  
   
-##### <a name="code-block-with-an-expression-block"></a>Bir ifade bloğu ile kod bloğu  
+### <a name="code-block-with-an-expression-block"></a>Bir ifade bloğu ile kod bloğu  
   
 ```  
 <#  
@@ -38,7 +40,7 @@ while (i-- > 0)
 #>  
 ```  
   
-##### <a name="code-block-using-writeline"></a>Kod bloğu WriteLine() kullanma  
+### <a name="code-block-using-writeline"></a>Kod bloğu WriteLine() kullanma  
   
 ```  
 <#   
@@ -66,7 +68,8 @@ while (i-- > 0)
 #>   
 ```  
   
-## <a name="indentation-methods"></a>Girinti yöntemleri  
+## <a name="indentation-methods"></a>Girinti yöntemleri
+
  Metin şablonu çıktısını biçimlendirmek için girinti yöntemlerini kullanabilirsiniz. <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> Sınıfına sahip bir `CurrentIndent` dizesi metin şablonu geçerli girintileme gösterir özelliğinin ve bir `indentLengths` diğer bir deyişle, eklenen girintileri listesini alan. İle bir girinti ekleyebilir `PushIndent()` yöntemi ve girinti ile çıkarma `PopIndent()` yöntemi. Tüm girintileri kaldırmak istiyorsanız, kullanmak `ClearIndent()` yöntemi. Aşağıdaki kod bloğu bu yöntemleri kullanımını göstermektedir:  
   
 ```  
@@ -94,7 +97,7 @@ Hello
 ```  
   
 ## <a name="error-and-warning-methods"></a>Hata ve uyarı yöntemleri  
- Hata ve uyarı yardımcı program yöntemleri iletilerine eklemek için kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata listesi. Örneğin, aşağıdaki kodu bir hata iletisi için hata listesine ekler.  
+ İletileri Visual Studio hata listesine eklemek için hata ve uyarı yardımcı program yöntemlerini kullanabilirsiniz. Örneğin, aşağıdaki kodu bir hata iletisi için hata listesine ekler.  
   
 ```  
 <#  
@@ -115,7 +118,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- Türü `this.Host` şablonunun yürütülmesinin içinde ana bilgisayar türüne bağlıdır. Çalıştıran bir şablona [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], size çevirebilirsiniz `this.Host` için `IServiceProvider` IDE gibi hizmetlerine erişmek için. Örneğin:  
+ Türü `this.Host` şablonunun yürütülmesinin içinde ana bilgisayar türüne bağlıdır. Visual Studio'da çalışan bir şablonda verdiğiniz `this.Host` için `IServiceProvider` IDE gibi hizmetlerine erişmek için. Örneğin:  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

@@ -14,18 +14,20 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: a0acdea369d19c19c4edf9ca427801ba8df54e0a
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 61c4afb816d5cd0be3628d9c801f578a5210b4a2
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>Genel Metotlar için birim testleri
-Tam olarak, diğer yöntemleri için yaptığınız gibi açıklandığı gibi genel yöntemler için birim testleri oluşturabilir [nasıl yapılır: oluşturmak ve birim testi çalıştırma](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Aşağıdaki bölümler ve genel yöntemler için birim testleri oluşturma örnekler hakkında bilgi sağlar.  
-  
-## <a name="type-arguments-and-type-constraints"></a>Tür bağımsız değişkenleri ve tür kısıtlamaları  
- Zaman [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gibi genel bir sınıf için bir birim testi oluşturur `MyList<T>`, iki yöntem oluşturur: Genel Yardımcısı ve test yöntemi. Varsa `MyList<T>` bir veya daha fazla tür kısıtlamaları vardır, tür bağımsız değişkeni tür kısıtlamaları karşılaması gerekir. Tüm izin verilen girişler için beklendiği gibi genel'ın altında test works kod emin olmak için test yöntemi test etmek istediğiniz tüm kısıtlamalarına sahip genel yardımcı yöntemini çağırır.  
-  
+
+Diğer yöntemleri için tam olarak bunu genel yöntemler için birim testleri oluşturabilirsiniz. Aşağıdaki bölümler ve genel yöntemler için birim testleri oluşturma örnekler hakkında bilgi sağlar.
+
+## <a name="type-arguments-and-type-constraints"></a>Tür bağımsız değişkenleri ve tür kısıtlamaları
+
+Visual Studio oluşturduğunda genel bir sınıf için bir birim testi gibi `MyList<T>`, iki yöntem oluşturur: Genel Yardımcısı ve test yöntemi. Varsa `MyList<T>` bir veya daha fazla tür kısıtlamaları vardır, tür bağımsız değişkeni tür kısıtlamaları karşılaması gerekir. Tüm izin verilen girişler için beklendiği gibi genel'ın altında test works kod emin olmak için test yöntemi test etmek istediğiniz tüm kısıtlamalarına sahip genel yardımcı yöntemini çağırır.
+
 ## <a name="examples"></a>Örnekler  
  Aşağıdaki örneklerde genel türler için birim testleri gösterilmektedir:  
   
@@ -197,6 +199,6 @@ namespace ClassLibrary2
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Birim testinin anatomisi](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
- [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)

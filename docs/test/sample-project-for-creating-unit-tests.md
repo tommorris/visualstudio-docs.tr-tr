@@ -10,29 +10,29 @@ ms.topic: article
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
+author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 500b3a3c28b2ccb07e8fb61552aff9c427d780d6
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: b1b92a223a54c48dd08cce2fc02904f1b66606bc
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Birim Testleri Oluşturmak için Örnek Proje
-Bu örnek kod, aşağıdaki izlenecek kullanım için sağlanır:  
-  
--   [İzlenecek yol: Oluşturmak ve çalıştırmak için birim testleri yönetilen kod](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Bu kılavuzda oluşturmak ve birim testlerini özelleştirme, bunları çalıştırmak ve test sonuçlarını inceleyin adımlarında size yol gösterir.  
-  
--   [İzlenecek yol: Testleri çalıştırın ve kod kapsamı görüntülemek](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Bu kılavuzda test edilmekte olan projenizin kod oranını gösterir kod kapsamı verilerini görüntülemek nasıl gösterilmektedir.  
-  
--   [İzlenecek yol: komut satırı test yardımcı programını kullanarak](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). Bu kılavuzda, testleri çalıştırmak ve sonuçları görüntülemek için MSTest.exe komut satırı yardımcı programını kullanın.  
-  
-## <a name="sample-code"></a>Örnek kod  
- Bu örnekte yalnızca maksatlı bir hata içinde borç yöntemi "m_balance += tutar" bir artı oturum önce eşittir işareti eksi olmasıdır.  
-  
-```  
+
+Bu örnek kod, aşağıdaki izlenecek kullanım için sağlanır:
+
+- [İzlenecek yol: Oluşturmak ve çalıştırmak için birim testleri yönetilen kod](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Bu kılavuzda oluşturmak ve birim testlerini özelleştirme, bunları çalıştırmak ve test sonuçlarını inceleyin adımlarında size yol gösterir.
+
+- [İzlenecek yol: komut satırı test yardımcı programını kullanarak](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). Bu kılavuzda, testleri çalıştırmak ve sonuçları görüntülemek için MSTest.exe komut satırı yardımcı programını kullanın.
+
+## <a name="sample-code"></a>Örnek kod
+
+Bu örnekte yalnızca maksatlı bir hata içinde borç yöntemi "m_balance += tutar" bir artı oturum önce eşittir işareti eksi olmasıdır.
+
+```csharp
 using System;   
   
 namespace BankAccountNS  
@@ -120,18 +120,18 @@ namespace BankAccountNS
             ba.Credit(5.77);  
             ba.Debit(11.22);  
             Console.WriteLine("Current balance is ${0}", ba.Balance);  
-        }  
-  
-    }  
-}  
-```  
-  
- / * Örnek şirketler, kuruluşlar, ürünler, etki alanı adları, e-posta adresleri, logolar, kişiler, yerler ve sahiplerinin kurgusaldır.  Gerçek şirket, kuruluş, ürün, etki alanı adı, e-posta adresi, logo, kişi, yerler veya olayları ile ilişki amaçlanmamıştır veya çıkarılmamalıdır. \*/  
-  
-## <a name="working-with-the-code"></a>Kodu ile çalışma  
- Bu kod ile çalışmak için önce içinde için bir proje oluşturmak zorunda [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. "İzlenecek Yol Hazırlama" bölümündeki adımları [izlenecek yol: yönetilen kod için birim testleri oluşturma ve çalışan](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönetilen kod için birim testleri izlenecek yol: Oluşturma ve çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
- [İzlenecek yol: testleri çalıştırın ve kod kapsamı görüntüleyin](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
- [İzlenecek yol: komut satırı test yardımcı programını kullanma](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+        }
+    }
+}
+```
+
+/ * Örnek şirketler, kuruluşlar, ürünler, etki alanı adları, e-posta adresleri, logolar, kişiler, yerler ve sahiplerinin kurgusaldır. Gerçek şirket, kuruluş, ürün, etki alanı adı, e-posta adresi, logo, kişi, yerler veya olayları ile ilişki amaçlanmamıştır veya çıkarılmamalıdır. \*/
+
+## <a name="working-with-the-code"></a>Kodu ile çalışma
+
+Bu kod ile çalışmak için önce bir proje için Visual Studio'da oluşturmanız gerekir. "İzlenecek Yol Hazırlama" bölümündeki adımları [izlenecek yol: yönetilen kod için birim testleri oluşturma ve çalışan](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İzlenecek yol: Yönetilen Kod için Birim Testleri Oluşturma ve Çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+[İzlenecek yol: komut satırı test yardımcı programını kullanma](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e15efdb40b21b187dfc8bec543fc48c91f9efcf6
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 7578426058c5e41bb6507c044be411348c42d050
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Nasıl yapılır: Etki Alanına Özgü Dili Yeni Sürüme Geçirme
 Tanımlamak ve etki alanına özgü dil kullanan projeleri geçirebilirsiniz [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] sürümünden [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , ile dağıtılan [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].  
@@ -23,7 +23,7 @@ Tanımlamak ve etki alanına özgü dil kullanan projeleri geçirebilirsiniz [!I
   
  Geçiş Aracı açıkça çalıştırmanız gerekir: bir çözümde açtığınızda otomatik olarak başlatılmaz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aracı ve ayrıntılı kılavuz belge bu yolda bulunabilir:  
   
- **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>Önce DSL projelerinizi geçirme  
  Geçiş Aracı değiştirir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje dosyalarını (**.csproj**) ve çözüm dosyalarını (**.sln**).  
@@ -42,7 +42,7 @@ Tanımlamak ve etki alanına özgü dil kullanan projeleri geçirebilirsiniz [!I
   
     -   Windows Gezgini'nde (veya dosya Gezgini'ni) aracı çift tıklatın veya bir komut isteminden Aracı'nı başlatın. Bu konumda bir araçtır:  
   
-         **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2.  Çözüm ve dönüştürmek istediğiniz projeleri içeren bir klasör seçin.  
   
@@ -76,7 +76,7 @@ Tanımlamak ve etki alanına özgü dil kullanan projeleri geçirebilirsiniz [!I
     2.  Tıklatın **tüm şablonları dönüştürme** Çözüm Gezgini üstbilgisindeki düğmesini.  
   
         > [!NOTE]
-        >  Bu adım, gereksiz yapabilirsiniz. Daha fazla bilgi için bkz: [otomatikleştirmek tüm şablonları dönüştürme nasıl](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+        >  Bu adım, gereksiz yapabilirsiniz. Daha fazla bilgi için bkz: [otomatikleştirmek tüm şablonları dönüştürme nasıl](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6.  Dönüştürülen projelerinde özel kodunuzu güncelleştirin.  
   

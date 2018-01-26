@@ -8,52 +8,41 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: vs.UnitTest.CreateUnitTest
+author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 17029522cae96200b7bc28b0f917cc5d33f6c673
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 4f74ecf0bf6df346383fccea7e72604c1ffef662
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="unit-test-basics"></a>Birim Testi Temelleri
+
 Kod oluşturma ve birim testleri çalıştırma beklendiği gibi çalışıp çalışmadığını denetleyin. Birim, programınızı işlevselliğini test edebilirsiniz ayrık sınanabilir davranışları içine olarak tek tek ayırmanız çünkü testi adlı *birimleri*. Visual Studio Test Gezgini birim testleri çalıştırma ve sonuçları Visual Studio'da görüntülemek için esnek ve verimli bir yol sağlar. Visual Studio Microsoft Birim yönetilen ve yerel kodu çerçeveyi testi yükler. Kullanım bir *birim testi çerçevesi* birim testleri oluşturmak için bunları çalıştırmak ve bu test sonuçlarını rapor. Kodunuzun doğru şekilde çalışıp çalışmadığını sınamak için değişiklik yaptığınız zaman yeniden çalıştır birim testleri. Visual Studio Enterprise ile otomatik olarak yapabilirsiniz [Canlı birim testi](live-unit-testing-intro.md), hangi kodunuz tarafından etkilenen testleri algılar değiştirir ve yazarken arka planda çalışır.
+
+Yazılım geliştirme akışınızın ayrılmaz bir parçası olduğunda birim testi kodunuzun kalitesini üzerinde en yüksek etkisi yoktur. Birim testleri standart, sınır ve giriş verileri hatalı örneklerini yanıt kodunu davranışını doğrulayın ve kodu tarafından yapılan açık veya örtülü varsayımlar denetleyin bir işlev veya diğer uygulama kod bloğunu yazma hemen oluşturun. İle *test güdümlü geliştirme*, birim testleri tasarım belgeleri ve işlevsel belirtimleri kullanmak için kod yazmadan önce birim testleri oluşturma.
+
+Hızlı bir şekilde test projeleri oluşturmak ve kodunuzdan test yöntemleri veya gereksinim duyduğunuzda el ile testleri oluşturma. .NET kodu keşfetmek için Intellitest kullandığınızda, test verileri ve birim testleri dizisi oluşturabilirsiniz. Koddaki her deyim için bir test giriş oluşturulan bu deyim yürütülecek. Nasıl yapılır öğrenmek [kodunuz için birim testleri oluşturma](http://msdn.microsoft.com/library/dn823749.aspx).
+
+Test Gezgini, Test Gezgini eklentisi arabirimleri uyguladık birim test çerçevelerini üçüncü taraf ve açık kaynak de çalıştırabilirsiniz. Visual Studio Uzantı Yöneticisi'ni ve Visual Studio Galerisi aracılığıyla bu çerçeveleri çoğunu ekleyebilirsiniz. Bkz: [üçüncü taraf birim test çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)
+
+## <a name="quick-starts"></a>Hızlı başlangıçlar
+
+Doğrudan kodlama içine alır birim testi giriş için aşağıdaki konulardan birine bakın:
+
+- [İzlenecek yol: Yönetilen Kod için Birim Testleri Oluşturma ve Çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+
+- [Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)
+
+- [Visual Studio'da C/C++ için birim testleri yazma](../test/writing-unit-tests-for-c-cpp.md)
+
+## <a name="the-mybank-solution-example"></a>MyBank çözümü örneği
+
+Bu konuda, kullandığımız adlı kurgusal bir uygulamanın geliştirilmesi `MyBank` bir örnek olarak. Bu konudaki Açıklamalar izlemeniz gereken gerçek bir kod gerekmez. Test yöntemleri C# ile yazılmış ve yönetilen kod için Microsoft birim testi çerçevesi kullanarak sunulan, ancak kavramları kolayca diğer dilleri ve çerçeveleri aktarılır.  
   
- Yazılım geliştirme akışınızın ayrılmaz bir parçası olduğunda birim testi kodunuzun kalitesini üzerinde en yüksek etkisi yoktur. Birim testleri standart, sınır ve giriş verileri hatalı örneklerini yanıt kodunu davranışını doğrulayın ve kodu tarafından yapılan açık veya örtülü varsayımlar denetleyin bir işlev veya diğer uygulama kod bloğunu yazma hemen oluşturun. İle *test güdümlü geliştirme*, birim testleri tasarım belgeleri ve işlevsel belirtimleri kullanmak için kod yazmadan önce birim testleri oluşturma.  
-  
- Hızlı bir şekilde test projeleri oluşturmak ve kodunuzdan test yöntemleri veya gereksinim duyduğunuzda el ile testleri oluşturma. .NET kodu keşfetmek için Intellitest kullandığınızda, test verileri ve birim testleri dizisi oluşturabilirsiniz. Koddaki her deyim için bir test giriş oluşturulan bu deyim yürütülecek. Nasıl yapılır öğrenmek [kodunuz için birim testleri oluşturma](http://msdn.microsoft.com/library/dn823749.aspx).  
-  
- Test Gezgini, Test Gezgini eklentisi arabirimleri uyguladık birim test çerçevelerini üçüncü taraf ve açık kaynak de çalıştırabilirsiniz. Visual Studio Uzantı Yöneticisi'ni ve Visual Studio Galerisi aracılığıyla bu çerçeveleri çoğunu ekleyebilirsiniz. Bkz: [üçüncü taraf birim test çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)  
-  
--   [Hızlı başlangıçlar](#BKMK_Quick_starts)  
-  
--   [MyBank çözümü örneği](#BKMK_The_MyBank_Solution_example)  
-  
--   [Birim testi projelerini oluşturmak ve test yöntemleri](#BKMK_Creating_the_unit_test_projects)  
-  
--   [Testleri yazma](#BKMK_Writing_your_tests)  
-  
--   [Test Gezgini testleri çalıştırma](#BKMK_Running_tests_in_Test_Explorer)  
-  
--   [Çalıştırın ve testlerin görüntüleyin](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
-  
-##  <a name="BKMK_Unit_testing_overview"></a>Birim testi genel bakış  
-  
-###  <a name="BKMK_Quick_starts"></a>Hızlı başlangıçlar  
- Doğrudan kodlama içine alır birim testi giriş için aşağıdaki konulardan birine bakın:  
-  
--   [İzlenecek yol: Yönetilen Kod için Birim Testleri Oluşturma ve Çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
-  
--   [Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)  
-  
--   [Yerel kod Test Gezgini ile birim testi](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
-  
-##  <a name="BKMK_The_MyBank_Solution_example"></a>MyBank çözümü örneği  
- Bu konuda, kullandığımız adlı kurgusal bir uygulamanın geliştirilmesi `MyBank` bir örnek olarak. Bu konudaki Açıklamalar izlemeniz gereken gerçek bir kod gerekmez. Test yöntemleri C# ile yazılmış ve yönetilen kod için Microsoft birim testi çerçevesi kullanarak sunulan, ancak kavramları kolayca diğer dilleri ve çerçeveleri aktarılır.  
-  
- ![MyBank çözüm](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")  
+ ![MyBank Solution](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")  
   
  Bizim için tasarım ilk teşebbüs `MyBank` uygulama, tek bir hesap ve hareketlerini banka ile temsil eden bir hesapları bileşeni ve toplama ve yönetmek için işlevleri temsil eden bir veritabanı bileşeni içerir Bireysel hesaplar.  
   
@@ -71,10 +60,9 @@ Kod oluşturma ve birim testleri çalıştırma beklendiği gibi çalışıp ça
   
 -   `CheckingAccount.cs`içeren `CheckingAccount` uygulayan sınıf `IAccounts` denetleme hesabı için arabirim.  
   
- Geri miktar Bakiye daha az olduğundan emin olmak için denetleme hesabından mevzuatı yapmanız gerekir, bir şey olduğunu deneyimlerden biliyoruz. Biz geçersiz kılmak için `IAccount.Withdaw` yönteminde `CheckingAccount` denetler bu koşul için bir yöntem ile. Yöntem şuna benzeyebilir:  
-  
-```csharp  
-  
+Geri miktar Bakiye daha az olduğundan emin olmak için denetleme hesabından mevzuatı yapmanız gerekir, bir şey olduğunu deneyimlerden biliyoruz. Biz geçersiz kılmak için `IAccount.Withdaw` yönteminde `CheckingAccount` denetler bu koşul için bir yöntem ile. Yöntem şuna benzeyebilir:  
+
+```csharp
 public void Withdraw(double amount)  
 {  
     if(m_balance >= amount)  
@@ -85,14 +73,14 @@ public void Withdraw(double amount)
     {  
         throw new ArgumentException(amount, "Withdrawal exceeds balance!")  
     }  
-}  
-  
-```  
-  
- Biz bazı koda sahip olduğunuza göre test zamanı geldi.  
-  
-##  <a name="BKMK_Creating_the_unit_test_projects"></a>Birim testi projelerini oluşturmak ve test yöntemleri  
- Genellikle birim testi projesi ve birim testi saplamalar kodunuzdan oluşturmak daha hızlı olur. Veya, gereksinimlerinize bağlı olarak el ile testleri ve birim testi projesi oluşturmayı seçebilirsiniz.  
+}
+```
+
+Biz bazı koda sahip olduğunuza göre test zamanı geldi.
+
+## <a name="create-unit-test-projects-and-test-methods"></a>Birim testi projelerini oluşturmak ve test yöntemleri
+
+Genellikle birim testi projesi ve birim testi saplamalar kodunuzdan oluşturmak daha hızlı olur. Veya, gereksinimlerinize bağlı olarak el ile testleri ve birim testi projesi oluşturmayı seçebilirsiniz.  
   
  **Birim testi projesi oluşturun ve birim testi saplamalar**  
   
@@ -141,20 +129,21 @@ public void Withdraw(double amount)
   
 -   `CheckingAccountTests`sınıfı için birim test yöntemleri içeren `CheckingAccount` sınıfı.  
   
-##  <a name="BKMK_Writing_your_tests"></a>Testleri yazma  
- Birim testi kullandığınız framework ve Visual Studio IntelliSense kod projesi için birim testleri için kod yazma aracılığıyla rehberlik sağlar. Test Gezgini içinde çalıştırmak için birim test yöntemleri tanımlamak için özel öznitelikler eklemek çoğu çerçeveleri gerektirir. Çerçeveleri de bir yöntem sunar — genellikle aracılığıyla deyimleri veya yöntem öznitelikleri assert — test yöntemine geçirilen veya başarısız olana belirtmek için. Diğer öznitelikleri sınıfı başlatma sırasında ve her bir test yöntemi ve her test yönteminin sonra ve sınıf yok önce çalışmak erdirme yöntemleri önce isteğe bağlı kurulum yöntemlerini tanımlayın.  
-  
- AAA (Düzenle, Act, Assert) deseni, test altındaki bir yöntem için birim testleri yazma genel bir yoludur.  
-  
--   **Yerleştir** birim test yöntemi bölümünü nesneleri başlatır ve test altındaki yöntemine geçirilen verileri değerini ayarlar.  
-  
--   **Act** bölüm düzenlenen parametreleri ile test yöntemi çağırır.  
-  
--   **Assert** bölüm doğrular eylem yönteminin test altındaki beklendiği gibi davranır.  
-  
- Test etmek için `CheckingAccount.Withdraw` yöntemi Bizim örneğimizde, biz sınamalarının yazabilirsiniz: yöntemi Standart davranışını doğrular ve birden çok Bakiye, mevzuatı başarısız olur doğrular. İçinde `CheckingAccountTests` sınıfı, biz aşağıdaki yöntemleri ekleyin:  
-  
-```csharp  
+## <a name="write-your-tests"></a>Testleri yazma
+
+Birim testi kullandığınız framework ve Visual Studio IntelliSense kod projesi için birim testleri için kod yazma aracılığıyla rehberlik sağlar. Test Gezgini içinde çalıştırmak için birim test yöntemleri tanımlamak için özel öznitelikler eklemek çoğu çerçeveleri gerektirir. Çerçeveleri de bir yöntem sunar — genellikle aracılığıyla deyimleri veya yöntem öznitelikleri assert — test yöntemine geçirilen veya başarısız olana belirtmek için. Diğer öznitelikleri sınıfı başlatma sırasında ve her bir test yöntemi ve her test yönteminin sonra ve sınıf yok önce çalışmak erdirme yöntemleri önce isteğe bağlı kurulum yöntemlerini tanımlayın.  
+
+AAA (Düzenle, Act, Assert) deseni, test altındaki bir yöntem için birim testleri yazma genel bir yoludur.  
+
+- **Yerleştir** birim test yöntemi bölümünü nesneleri başlatır ve test altındaki yöntemine geçirilen verileri değerini ayarlar.  
+
+- **Act** bölüm düzenlenen parametreleri ile test yöntemi çağırır.  
+
+- **Assert** bölüm doğrular eylem yönteminin test altındaki beklendiği gibi davranır.  
+
+Test etmek için `CheckingAccount.Withdraw` yöntemi Bizim örneğimizde, biz sınamalarının yazabilirsiniz: yöntemi Standart davranışını doğrular ve birden çok Bakiye, mevzuatı başarısız olur doğrular. İçinde `CheckingAccountTests` sınıfı, biz aşağıdaki yöntemleri ekleyin:  
+
+```csharp
 [TestMethod]  
 public void Withdraw_ValidAmount_ChangesBalance()  
 {  
@@ -179,54 +168,52 @@ public void Withdraw_AmountMoreThanBalance_Throws()
     // act  
     account.Withdraw(20.0);  
     // assert is handled by the ExpectedException  
-}  
-  
-```  
-  
- Unutmayın `Withdraw_ValidAmount_ChangesBalance` açık bir kullanır `Assert` test yöntemi başarılı veya başarısız olup olmadığını belirlemek için ifade ederken `Withdraw_AmountMoreThanBalance_Throws` kullanır `ExpectedException` test yöntemi başarısını belirlemek için öznitelik. Perde arkasında birim test çerçevesi test yöntemleri try/catch deyimleri sarmalar. Çoğu durumda, bir özel durum yakalandı, test yöntem başarısız olur ve özel durum göz ardı edilir. `ExpectedException` Özniteliği test yöntemi belirtilen özel durum oluşursa geçmesine neden olur.  
-  
- Microsoft birim test çerçevelerini hakkında daha fazla bilgi için aşağıdaki konulardan birine bakın:  
-  
+}
+```
+
+Unutmayın `Withdraw_ValidAmount_ChangesBalance` açık bir kullanır `Assert` test yöntemi başarılı veya başarısız olup olmadığını belirlemek için ifade ederken `Withdraw_AmountMoreThanBalance_Throws` kullanır `ExpectedException` test yöntemi başarısını belirlemek için öznitelik. Perde arkasında birim test çerçevesi test yöntemleri try/catch deyimleri sarmalar. Çoğu durumda, bir özel durum yakalandı, test yöntem başarısız olur ve özel durum göz ardı edilir. `ExpectedException` Özniteliği test yöntemi belirtilen özel durum oluşursa geçmesine neden olur.  
+
+Microsoft birim test çerçevelerini hakkında daha fazla bilgi için aşağıdaki konulardan birine bakın:  
+
 -   [Yönetilen Kod için Microsoft Birim Testi Çerçevesi ile .NET Framework için Birim Testleri Yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
-  
+
 -   [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)  
-  
-## <a name="set-timeouts-for-unit-tests"></a>Birim testleri için zaman aşımını ayarla  
- Zaman aşımı üzerinde bir teste yöntemini ayarlamak için:  
-  
+
+## <a name="set-timeouts-for-unit-tests"></a>Birim testleri için zaman aşımını ayarla
+
+Zaman aşımı üzerinde bir teste yöntemini ayarlamak için:  
+
 ```csharp  
 [TestMethod]  
 [Timeout(2000)]  // Milliseconds  
 public void My_Test()  
 { ...  
 }  
-```  
-  
-```vb  
-  
-```  
-  
- İzin verilen en büyük zaman aşımı ayarlamak için:  
-  
-```csharp  
+```
+
+İzin verilen en büyük zaman aşımı ayarlamak için:  
+
+```csharp
 [TestMethod]  
 [Timeout(TestTimeout.Infinite)]  // Milliseconds  
 public void My_Test ()  
 { ...  
-}  
-```  
+}
+```
+
+## <a name="run-tests-in-test-explorer"></a>Test Gezgini testleri çalıştırma
+
+Test projesi derlerken, testleri Test Gezgini'nde görünür. Test Gezgini görünür durumda değilse, seçin **Test** Visual Studio menüsünde, **Windows**ve ardından **Test Gezgini**.  
   
-##  <a name="BKMK_Running_tests_in_Test_Explorer"></a>Test Gezgini testleri çalıştırma  
- Test projesi derlerken, testleri Test Gezgini'nde görünür. Test Gezgini görünür durumda değilse, seçin **Test** Visual Studio menüsünde, **Windows**ve ardından **Test Gezgini**.  
-  
- ![Birim Test Gezgini](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Unit Test Explorer](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Çalıştırmak, yazma ve testleri yeniden gibi Test Gezgini varsayılan görünümü sonuçları gruplar halinde görüntülenir. **başarısız testler**, **testleri geçti**, **atlandı testleri** ve  **Testler değil**. Tüm testler o grupta görüntüler görünümünü açmak için bir Grup başlığını seçebilirsiniz.  
   
  Ayrıca, arama kutusuna genel düzeyde eşleşen metin veya önceden tanımlanmış filtrelerden birini seçerek herhangi bir görünüm testlerinde filtre uygulayabilirsiniz. Herhangi bir zamanda herhangi bir seçimi testleri çalıştırabilirsiniz. Testi sonuçlarını Gezgini penceresinin üst geçişi/başarısız çubuğundaki hemen görünür. Test yöntemi sonucu ayrıntılarını test seçtiğinizde görüntülenir.  
   
-###  <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a>Çalıştırın ve testlerin görüntüleyin  
- Test Gezgini araç bulmak, düzenlemenize ve ilgilendiğiniz testler yardımcı olur.  
+### <a name="run-and-view-tests"></a>Çalıştırın ve testlerin görüntüleyin
+
+Test Gezgini araç bulmak, düzenlemenize ve ilgilendiğiniz testler yardımcı olur.  
   
  ![Test Gezgini araç çubuğundan testler](../test/media/ute_toolbar.png "UTE_ToolBar")  
   
@@ -234,17 +221,18 @@ public void My_Test ()
   
  Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE &#95;parallelicon &#45; küçük](../test/media/ute_parallelicon-small.png "UTE_parallelicon küçük") iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.  
   
-###  <a name="BKMK_Running_tests_after_every_build"></a>Her yapıdan sonra testleri çalıştırma  
-  
+### <a name="run-tests-after-every-build"></a>Her yapıdan sonra testleri çalıştırma
+
 > [!WARNING]
->  Her derleme yalnızca Visual Studio kuruluş içinde desteklenen sonra çalışan birim testleri.  
-  
+> Her derleme yalnızca Visual Studio kuruluş içinde desteklenen sonra çalışan birim testleri.  
+
 |||  
 |-|-|  
 |![Derleme sonrası çalıştırmak](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|Her yerel yapıdan sonra birim testleri çalıştırmak için tercih **Test** standart menüsünde, **çalıştırmak sonra yapı testleri** Test Gezgini araç çubuğunda.|  
   
-###  <a name="BKMK_Filtering_and_grouping_the_test_list"></a>Filtre ve grup test listesi  
- Çok sayıda testleri sahip olduğunuzda, Test Gezgini tarafından belirtilen dize listesini filtrelemek için arama kutusuna yazabilirsiniz. Filtre olayınızın filtre listeden seçerek daha fazla kısıtlayabilirsiniz.  
+### <a name="filter-and-group-the-test-list"></a>Filtre ve grup test listesi
+
+Çok sayıda testleri sahip olduğunuzda, Test Gezgini tarafından belirtilen dize listesini filtrelemek için arama kutusuna yazabilirsiniz. Filtre olayınızın filtre listeden seçerek daha fazla kısıtlayabilirsiniz.  
   
  ![Arama filtresi kategorileri](../test/media/ute_searchfilter.png "UTE_SearchFilter")  
   
@@ -254,19 +242,20 @@ public void My_Test ()
   
  Daha fazla bilgi için bkz: [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)  
   
-## <a name="qa"></a>SORU- CEVAP  
- **S: birim testleri nasıl hata?**  
+## <a name="qa"></a>SORU- CEVAP
+
+**S: birim testleri nasıl hata?**  
   
- **Y:** testleriniz için hata ayıklama oturumu başlatmak için kullanım Test Gezgini. Kodunuz Visual Studio hata ayıklayıcısı ile sorunsuz bir şekilde Adımlama, İleri ve geri birim testleri ve test altındaki proje arasında alır. Hata ayıklama başlatmak için:  
+**Y:** testleriniz için hata ayıklama oturumu başlatmak için kullanım Test Gezgini. Kodunuz Visual Studio hata ayıklayıcısı ile sorunsuz bir şekilde Adımlama, İleri ve geri birim testleri ve test altındaki proje arasında alır. Hata ayıklama başlatmak için:  
   
 1.  Visual Studio Düzenleyicisi'nde hata ayıklamak istediğiniz bir veya daha fazla test yöntemler bir kesme noktası ayarlayın.  
   
     > [!NOTE]
-    >  Test yöntemleri herhangi bir sırada çalıştığından hata ayıklamak istediğiniz tüm test yöntemler kesme noktalarını ayarlayın.  
+    > Test yöntemleri herhangi bir sırada çalıştığından hata ayıklamak istediğiniz tüm test yöntemler kesme noktalarını ayarlayın.  
   
 2.  Test Gezgini test yöntemleri seçin ve ardından **seçili Testlerde Hata Ayıkla** kısayol menüsünden.  
   
- Daha fazla ayrıntı öğrenin [birim testleri hata ayıklama](../debugger/debugging-in-visual-studio.md).  
+Daha fazla ayrıntı öğrenin [birim testleri hata ayıklama](../debugger/debugging-in-visual-studio.md).  
   
  **S: TDD kullanıyorum olursa, nasıl ı kod my testlerden oluştur?**  
   
@@ -279,13 +268,13 @@ public void My_Test ()
  **Y:** Evet. *Veri temelli test yöntemleri* , tek bir birim testi yöntemiyle değerleri aralığı test olanak tanır. Kullanım bir `DataSource` özniteliğinin test etmek istediğiniz değişken değerleri veri kaynağı ve, tablo belirtir test yöntemi içerir.  Yöntem gövdesinde kullanarak değişkenlere satır değerleri atamak `TestContext.DataRow[` *ColumnName* `]` dizin oluşturucu.  
   
 > [!NOTE]
->  Yönetilen kod için Microsoft birim test çerçevesi kullanarak yazma yöntemleri yalnızca test etmek için bu yordamları uygulayın. Farklı bir Framework'te kullanıyorsanız, eşdeğer işlevselliği için framework belgelerine bakın.  
+> Yönetilen kod için Microsoft birim test çerçevesi kullanarak yazma yöntemleri yalnızca test etmek için bu yordamları uygulayın. Farklı bir Framework'te kullanıyorsanız, eşdeğer işlevselliği için framework belgelerine bakın.  
   
  Örneğin, gereksiz bir yönteme eklediğimiz varsayın `CheckingAccount` adlı sınıfı `AddIntegerHelper`. `AddIntegerHelper`iki tamsayının ekler.  
   
  Veri temelli bir test için oluşturmak için `AddIntegerHelper` yöntemi, önce oluşturduğumuz adında bir Access veritabanı `AccountsTest.accdb` ve adlı bir tablo `AddIntegerHelperData`. `AddIntegerHelperData` Tabloyu tanımlayan eklenmesi birinci ve ikinci işlenenleri belirtmek için sütunlar ve beklenen sonucu belirtmek için bir sütun. Biz satır sayısını uygun değerlerle doldurun.  
   
-```csharp  
+```csharp
 [DataSource(  
     @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projects\MyBank\TestData\AccountsTest.accdb",   
     "AddIntegerHelperData"  
@@ -300,9 +289,9 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
     int actual = target.AddIntegerHelper(x, y);  
     Assert.AreEqual(expected, actual);  
 }
-```  
-  
- Öznitelikli yöntemi, tablodaki her satır için bir kez çalışır. Herhangi bir yineleme başarısız olursa test Gezgini yöntemi için bir test hata bildirir. Test sonuçları ayrıntılar bölmesine yöntemi her veri satırının geçişi/başarısız durumu yöntemi gösterir.  
+```
+
+Öznitelikli yöntemi, tablodaki her satır için bir kez çalışır. Herhangi bir yineleme başarısız olursa test Gezgini yöntemi için bir test hata bildirir. Test sonuçları ayrıntılar bölmesine yöntemi her veri satırının geçişi/başarısız durumu yöntemi gösterir.  
   
  Daha fazla bilgi edinmek [veri temelli birim testleri](../test/how-to-create-a-data-driven-unit-test.md).  
   
@@ -324,15 +313,15 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  **Y:** Evet. Visual Studio Enterprise varsa, Microsoft Fakes ile yönetilen kod için birim test çerçevelerini kullanarak yazma test yöntemleri kullanılabilir.  
   
- Microsoft Fakes dış bağımlılıkları için alternatif sınıfları oluşturmak için iki yaklaşım kullanır.  
+ Microsoft Fakes dış bağımlılıkları için alternatif sınıfları oluşturmak için iki yaklaşım kullanır:
   
 1.  *Saplamalar* hedef bağımlılık sınıf üst arabiriminden türetilmiş ikame sınıfları oluşturur. Saplama yöntemleri için hedef sınıf ortak sanal yöntemleri yerine.  
   
 2.  *Dolgular* sanal olmayan yöntemler için bir yedek dolgusu yöntemi hedef yönteme çağrıları yönlendir için çalışma zamanı Araçları'nı kullanın.  
   
- Her iki yaklaşım, bağımlılık yöntemine yönelik çağrılar oluşturulan temsilcileri test yönteminde istediğiniz davranışı belirtmek için kullanın.  
+Her iki yaklaşım, bağımlılık yöntemine yönelik çağrılar oluşturulan temsilcileri test yönteminde istediğiniz davranışı belirtmek için kullanın.  
   
- Daha fazla bilgi edinmek [birim test yöntemleri Microsoft Fakes ile yalıtma](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+Daha fazla bilgi edinmek [birim test yöntemleri Microsoft Fakes ile yalıtma](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
  **S: diğer birim test çerçevelerini birim testleri oluşturmak için kullanabilir miyim?**  
   

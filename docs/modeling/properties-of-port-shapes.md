@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1e61d746c1c7e77cb1ec296bfeb6957281be7f2f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 8d8059d6399f4bb6e9df988fb5ef24eef9b8f096
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-port-shapes"></a>Bağlantı Noktası Şekillerinin Özellikleri
 Etki alanı sınıflarını oluşturulan Tasarımcısı'nda göstermek için bağlantı noktası şekiller kullanabilirsiniz.  
@@ -35,7 +35,7 @@ Etki alanı sınıflarını oluşturulan Tasarımcısı'nda göstermek için ba�
 |Kenarlık Çizgi stili|Bu şekil (düz, çizgi, nokta, çizgi nokta, çizgi nokta nokta veya özel) anahat çizgi stili.|Düz|  
 |Anahat kalınlığı|Bu şeklin Anahat kalınlığı.|0.03125|  
 |Metin rengi|Bu şeklin ile ilişkili metin dekoratörler için kullanılan rengi.|Siyah|  
-|Erişim değiştiricisi|Sınıfının erişim düzeyini (`public` veya `internal`).|Ortak|  
+|Access Modifier|Sınıfının erişim düzeyini (`public` veya `internal`).|Ortak|  
 |Özel Öznitelikler|Bu şekle oluşturulan kaynak kodu sınıfı öznitelikler eklemek için kullanılır.|\<yok >|  
 |Çift oluşturur türetilmiş|Varsa `True`, bir taban sınıf ve bir parçalı sınıf (geçersiz kılmaları özelleştirmeyi desteklemek için) oluşturulur. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md)|False|  
 |Özel bir oluşturucuya sahip|Varsa `True`, özel bir oluşturucu kaynak kodunda sağlanacaktır. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
@@ -54,4 +54,4 @@ Etki alanı sınıflarını oluşturulan Tasarımcısı'nda göstermek için ba�
 |Yardım anahtar sözcüğü|Bu şeklin için F1 Yardımı dizin oluşturmak için kullanılan anahtar sözcük.|\<yok >|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

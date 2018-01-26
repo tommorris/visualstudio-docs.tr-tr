@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
 author: gewarren
-ms.openlocfilehash: a71eb54bad089e7d5bad24416604d93da615bd15
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 13780b561ba14cc06269e443265313e3b2e664c6
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Nasıl yapılır: Birim Testlerini .NET Framework'ün Önceki Sürümünü Hedefleyecek Şekilde Yapılandırma
 Microsoft Visual Studio test projesi oluşturduğunuzda, .NET Framework'ün en son sürüm varsayılan olarak hedef olarak ayarlanır. Visual Studio'nun önceki sürümlerden testi projelerini yükseltme yöntemini seçerseniz, ayrıca, bunlar .NET Framework'ün en son sürümünü hedefleyecek şekilde yükseltilir. Proje özelliklerini düzenleyerek, açıkça .NET Framework'ün önceki sürümlerinde projeyi yeniden hedefleyebilirsiniz.  
@@ -62,7 +62,7 @@ Microsoft Visual Studio test projesi oluşturduğunuzda, .NET Framework'ün en s
   
      Visual Basic test projeniz için özellikleri görüntülenir.  
   
-5.  Üzerinde **derleme** sekmesini seçin **Gelişmiş derleme seçenekleri** aşağıdaki çizimde gösterildiği gibi.  
+5.  Üzerinde **derleme** sekmesinde, seçin **Gelişmiş derleme seçenekleri** aşağıdaki çizimde gösterildiği gibi.
   
      ![Gelişmiş derleme seçenekleri](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
@@ -84,7 +84,7 @@ Microsoft Visual Studio test projesi oluşturduğunuzda, .NET Framework'ün en s
   
      Visual C# test projeniz için özellikleri görüntülenir.  
   
-5.  Üzerinde **uygulama** sekmesini seçin **hedef framework** ve ardından **.NET Framework 3.5** veya sonraki bir sürümünü gösterilen hedef framework.as değiştirmek için aşağı açılan listeden Aşağıdaki çizimde. Bir istemci sürümü belirtilmemelidir.  
+5.  Üzerinde **uygulama** sekmesinde, seçin **hedef framework**. Aşağı açılan listeden seçin **.NET Framework 3.5** veya aşağıdaki çizimde gösterildiği gibi sonraki bir sürümü. Bir istemci sürümü belirtilmemelidir.
   
      ![Aşağı listesi; hedef framework açılan & #45](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")  
   
@@ -125,8 +125,8 @@ Microsoft Visual Studio test projesi oluşturduğunuzda, .NET Framework'ün en s
   
 8.  Çözüm Gezgini'nde Seç **projeyi yeniden yükle** , yeni Visual C++ test projesinin kısayol menüsünden.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Oluşturma ve var olan kod için birim testleri çalıştırma](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
- [SharePoint çözümleri oluşturma](/office-dev/office-dev/create-sharepoint-solutions)   
- [Derleme ve SharePoint çözümlerini hata ayıklama](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Gelişmiş Derleme Ayarları İletişim Kutusu (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[SharePoint Çözümleri Oluşturma](/office-dev/office-dev/create-sharepoint-solutions)  
+[SharePoint Çözümleri Oluşturma ve Hatalarını Ayıklama](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)  
+[Gelişmiş Derleme Ayarları İletişim Kutusu (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c58dc30285257a8292e8ce8dcf81b7b31cfee2c5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 86955d745e645d2d37e9e33f258a2662bcac59fe
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl Dosyası
 Bu konuda Dsl projenin DslDefinition.dsl dosyasında yapısını açıklayan bir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tanımlar çözüm bir *etki alanına özgü dil*. Sınıflar ve ilişkiler diyagram, şekil, bağlayıcılar, seri hale getirme biçimi ile birlikte bir etki alanına özgü dil DslDefinition.dsl dosya tanımlar ve **araç** etki alanına özgü dil ve kendi düzenleme araçları. Bir etki alanına özgü dil çözümde bu araçlara tanımlayan kodu DslDefinition.dsl dosyasındaki bilgiler göre oluşturulur.  
@@ -151,7 +151,7 @@ Bu konuda Dsl projenin DslDefinition.dsl dosyasında yapısını açıklayan bir
   
  (İlişkileri, şekiller, bağlayıcılar ve diyagramları dahil) her etki alanı sınıfı bu öznitelikler ve alt düğümleri sahip olabilir:  
   
--   **Kimliği.** Bu öznitelik bir GUID değeridir. Dosyasındaki bir değer belirtmezseniz, etki alanına özgü dil Tasarımcısı bir değer oluşturur. (Bu belgedeki örneklerde kullanılan, bu öznitelik genellikle alanından tasarruf etmek için atlandı.)  
+-   **Id.** Bu öznitelik bir GUID değeridir. Dosyasındaki bir değer belirtmezseniz, etki alanına özgü dil Tasarımcısı bir değer oluşturur. (Bu belgedeki örneklerde kullanılan, bu öznitelik genellikle alanından tasarruf etmek için atlandı.)  
   
 -   **Ad ve Namespace.** Bu öznitelikler oluşturulan kodda sınıfının ad alanı ve adını belirtin. Birlikte bunların etki alanına özgü dil içinde benzersiz olması gerekir.  
   
@@ -546,6 +546,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Bağlayıcı eşlemeleri oluşturma öğesi eşlemeleri de içerebilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)   
  [Modelleri, Sınıfları ve İlişkileri Anlama](../modeling/understanding-models-classes-and-relationships.md)

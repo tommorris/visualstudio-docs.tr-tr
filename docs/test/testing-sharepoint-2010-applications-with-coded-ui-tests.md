@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: fbda836ec423d9a86b51b2334a3015589512d816
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 15970f48791078d498fa7a187546c1c7230d3cf0
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle SharePoint 2010 Uygulamalarını Test Etme
 Kodlanmış UI testleri bir SharePoint uygulama da dahil olmak üzere, kendi kullanıcı Arabirimi denetimlerini dahil olmak üzere tüm uygulama düzgün çalıştığını doğrulamak olanak tanır. Kodlanmış UI testleri, değerler ve kullanıcı arabirimi mantığı da doğrulayabilirsiniz.  
@@ -29,12 +29,12 @@ Kodlanmış UI testleri bir SharePoint uygulama da dahil olmak üzere, kendi kul
   
  **Notlar**  
   
--   ![Prerequsite](../test/media/prereq.png "önkoşul") SharePoint uygulamaları için kodlanmış UI testleri, yalnızca SharePoint 2010 ile desteklenir.  
+-   ![Önkoşul](../test/media/prereq.png "önkoşul") SharePoint uygulamaları için kodlanmış UI testleri, yalnızca SharePoint 2010 ile desteklenir.  
   
--   ![Prerequsite](../test/media/prereq.png "önkoşul") destek Visio ve PowerPoint 2010 denetimleri SharePoint uygulamanız için desteklenmiyor.  
+-   ![Önkoşul](../test/media/prereq.png "önkoşul") destek Visio ve PowerPoint 2010 denetimleri SharePoint uygulamanız için desteklenmiyor.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>SharePoint uygulamanız için kodlanmış UI testi oluşturma  
- [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) SharePoint 2010 uygulamaları için uygulamalarının diğer türleri için testler oluşturma ile aynıdır. Kaydı ve kayıttan yürütme Web düzenleme arabirimi tüm denetimler için desteklenir. Kategoriler ve web bölümleri seçme arabirimi olan tüm standart web denetimleri.  
+ [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md) SharePoint 2010 uygulamaları için uygulamalarının diğer türleri için testler oluşturma ile aynıdır. Kaydı ve kayıttan yürütme Web düzenleme arabirimi tüm denetimler için desteklenir. Kategoriler ve web bölümleri seçme arabirimi olan tüm standart web denetimleri.  
   
  ![SharePoint web bölümleri](../test/media/cuit_sharepoint.png "CUIT_SharePoint")  
   

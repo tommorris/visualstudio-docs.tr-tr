@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: ca381d794569ebae4da2d46225d800dbfe4cf480
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 4573d87bbb7d5f447bf6d2038cec310132a0c9f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle Farklı Web Tarayıcıları Kullanma
 Kodlanmış UI testleri, web uygulamaları için Internet Explorer'ı kullanarak testlerinizi kaydederek sınamayı otomatikleştirebilirsiniz. Bu web uygulamaları için Internet Explorer veya başka tarayıcı türleri kullanarak testinizi özelleştirebilir ve geri oynatabilirsiniz.  
@@ -78,7 +78,7 @@ Kodlanmış UI testleri, web uygulamaları için Internet Explorer'ı kullanarak
     > [!TIP]
     >  Kodlanmış UI arası tarayıcı testi için Selenium bileşenleri indirebilirsiniz [burada](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- Daha fazla bilgi hakkında oluşturma ve kullanma kodlanmış UI testleri için bkz: [kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+ Daha fazla bilgi hakkında oluşturma ve kullanma kodlanmış UI testleri için bkz: [kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md).  
   
 ### <a name="enable-debugging"></a>Hata ayıklamayı etkinleştir  
  Web uygulamanızda hata ayıklamayı etkinleştirmek için aşağıdaki yapılandırma seçeneklerini tamamlamanız gerekir:  
@@ -101,19 +101,19 @@ Kodlanmış UI testleri, web uygulamaları için Internet Explorer'ı kullanarak
  *Başka ne bilebilirim?*  
  **Notlar**  
   
--   ![Prerequsite](../test/media/prereq.png "önkoşul") Apple Safari web tarayıcısı desteklenmiyor.  
+-   ![Önkoşul](../test/media/prereq.png "önkoşul") Apple Safari web tarayıcısı desteklenmiyor.  
   
--   ![Prerequsite](../test/media/prereq.png "önkoşul") web tarayıcısı başlangıç eylemi kodlanmış UI testi parçası olması gerekir.  
+-   ![Önkoşul](../test/media/prereq.png "önkoşul") web tarayıcısı başlangıç eylemi kodlanmış UI testi parçası olması gerekir.  
   
      Internet Explorer kullanmadığınız sürece açık bir web tarayıcısına sahip ve adımlar üzerinde çalıştırmak istiyorsanız, kayıttan yürütme başarısız olur. Bu nedenle, web tarayıcınızı başlatması kodlanmış UI testleriniz bir parçası olarak dahil en iyi uygulamadır.  
   
--   ![Prerequsite](../test/media/prereq.png "önkoşul") belirli otomatikleştirme tarayıcı tabanlı UI eylemlerini gibi en üst düzeye çıkarmak, en aza indirmek ve geri yükleme desteklenmez.  
+-   ![Önkoşul](../test/media/prereq.png "önkoşul") belirli otomatikleştirme tarayıcı tabanlı UI eylemlerini gibi en üst düzeye çıkarmak, en aza indirmek ve geri yükleme desteklenmez.  
   
  **İpuçları**  
   
 -   ![İpucu](../test/media/tip.png "İpucu") çıkış ekran görüntüleri kodlanmış UI günlüklerde içerecek şekilde yapılandırabilirsiniz. Bunu yapmak için bazı yapılandırma ayarlarını QTAgent32.exe.config dosyasında ayarlamanız gerekir. Varsayılan olarak, bu dosya aşağıdaki konuma yüklenir:  
   
-     **C:\Program dosyaları (x86) \Microsoft Visual Studio 11.0\Common7\IDE**  
+     **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
      Aşağıdaki değerleri ayarlayın:  
   

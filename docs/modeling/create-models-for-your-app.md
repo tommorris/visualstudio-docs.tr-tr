@@ -25,19 +25,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f439ebbf7505086c3105fbb5aee9ba05f22de2e4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 26dbef0fce67b4af461e7bbc15ecb870f630ca0e
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-models-for-your-app"></a>Uygulamanız için model oluşturma
+
 Modelleme diyagramları anlamak, açıklamak ve kodunuzu ve yazılım sisteminizin desteklemelidir kullanıcı gereksinimleri hakkında fikir iletişim yardımcı olur.
-  
- Visual Studio hangi sürümlerinin her diyagram türü desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
- Bir sistem veya var olan kodu mimarisini görselleştirmek için aşağıdaki diyagramlarda oluşturun:  
-  
+
+Visual Studio hangi sürümlerinin her diyagram türü desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+
+Bir sistem veya var olan kodu mimarisini görselleştirmek için aşağıdaki diyagramlarda oluşturun:  
+
 |**Diyagramı**|**Gösterir**|  
 |-----------------|---------------|  
 |[Bağımlılık Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Bağımlılık Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)|Sistemin üst düzey mimarisi|  
@@ -52,11 +53,10 @@ Modelleme diyagramları anlamak, açıklamak ve kodunuzu ve yazılım sisteminiz
 |[Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)|Modelleri açıklamak ve kullanıcıların ihtiyaçlarını iletişim kurmak için kullanın.|  
 |[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|Modelleri genel yapısını ve sisteminizin davranışını açıklamak için ve kullanıcıların gereksinimlerini karşıladığından emin olmak için kullanın.|  
 |[Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)|Yazılım, kullanıcıların ihtiyaçlarını ve sisteminizin genel mimarisi ile tutarlı kaldığından emin olun.|  
-|[Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)<br /><br /> [Çevik Geliştirme modelleri kullanma](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|Modelleri anlamak ve kendi geliştirme sırasında sisteminizi değiştirmenize yardımcı olması için kullanın.|  
+|[Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)<br /><br /> [Çevik Geliştirme modelleri kullanma](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Modelleri anlamak ve kendi geliştirme sırasında sisteminizi değiştirmenize yardımcı olması için kullanın.|  
 |[Modelleme çözümünüzün yapısını oluşturma](../modeling/structure-your-modeling-solution.md)|Büyük ve orta ölçekli bir proje modelleri düzenleyin.|  
   
-## <a name="external-resources"></a>Dış Kaynaklar  
-  
-|**Kategori**|**Bağlantılar**|  
-|------------------|---------------|  
-|**Forumları**|-   [Visual Studio Görselleştirme ve Modelleme Araçları](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Görselleştirme ve modelleme SDK (DSL araçları)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+## <a name="resources"></a>Kaynaklar
+
+[Visual Studio Görselleştirme ve Modelleme Araçları Forumu](http://go.microsoft.com/fwlink/?LinkId=184720)  
+[Visual Studio genişletilebilirlik Forumu](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)

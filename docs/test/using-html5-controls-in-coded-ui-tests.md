@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: e3589707f07564bbcd84151b0eedeb1c0029428b
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 093457cf2aea3951db89e6fa677ec03fe55df89a
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Kodlanmış UI Testlerinde HTML5 Denetimleri Kullanma
 Kodlanmış UI testleri bazı Internet Explorer 9 ve Internet Explorer 10 dahil HTML5 denetimler için destek içerir.  
@@ -121,7 +121,7 @@ string VideoWidth
   
 |Eylem|Kaydetme|Oluşturulan kod|  
 |------------|---------------|--------------------|  
-|**Kaydırıcı konumda ayarlayın**|Kümesine konumu \<x > içinde \<adı > kaydırıcı|HtmlSlider.ValueAsNumber=\<x >|  
+|**Kaydırıcı konumda ayarlayın**|Kümesine konumu \<x > içinde \<adı > kaydırıcı|HtmlSlider.ValueAsNumber=\<x>|  
   
  Aşağıdaki özellikler HtmlSlider için kullanılabilir ve onaylama hepsinde eklenebilir:  
   
@@ -136,12 +136,12 @@ string ValueAsNumber
   
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a>ProgressBar  
  **ProgreesBar denetimi:** ProgressBar olduğu interactable olmayan bir denetim. Onaylar ekleyebilirsiniz `Value` ve `Max` bu denetimin özelliklerini.  
-  
+
  ![HTML5 ProgressBar denetimi](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [HTML öğeleri](http://go.microsoft.com/fwlink/?LinkID=232441)   
- [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
- [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Kodlanmış UI testi özelleştirme](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[HTML öğeleri](http://go.microsoft.com/fwlink/?LinkID=232441)  
+[Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)  
+[Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md)  
+[Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

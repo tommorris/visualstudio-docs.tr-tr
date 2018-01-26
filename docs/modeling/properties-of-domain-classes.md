@@ -11,18 +11,18 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a05c63cdfe3fba48f4a26198dd1698691671750b
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: f6e7310f88b4c5f0855a6851219727ae0dc82d86
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-domain-classes"></a>Etki Alanı Sınıflarının Özellikleri
 Etki alanı sınıfları, özellikleri aşağıdaki tabloda içeriyor. Etki alanı sınıfları hakkında daha fazla bilgi için bkz: [anlama modelleri, sınıflar ve ilişkiler](../modeling/understanding-models-classes-and-relationships.md). Bu özellikleri kullanma hakkında daha fazla bilgi için bkz: [özelleştirme ve bir etki alanına özgü dil genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 |Özellik|Açıklama|Varsayılan|  
 |--------------|-----------------|-------------|  
-|Erişim değiştiricisi|Etki alanı sınıfının erişim düzeyini (`public` veya `internal`).|`public`|  
+|Access Modifier|Etki alanı sınıfının erişim düzeyini (`public` veya `internal`).|`public`|  
 |Özel Öznitelikler|Bu etki alanı sınıfından oluşturulan kaynak kodu sınıfı öznitelikler eklemek için kullanılır.|\<yok >|  
 |Çift oluşturur türetilmiş|Varsa `True`, bir taban sınıf ve bir parçalı sınıf (geçersiz kılmaları özelleştirmeyi desteklemek için) oluşturulur. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|  
 |Özel bir oluşturucuya sahip|Varsa `True`, özel bir oluşturucu kaynak kodunda sağlanacaktır. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|  
@@ -36,4 +36,4 @@ Etki alanı sınıfları, özellikleri aşağıdaki tabloda içeriyor. Etki alan
 |Yardım anahtar sözcüğü|Bu etki alanı sınıfı için F1 Yardımı dizin oluşturmak için kullanılan isteğe bağlı anahtar sözcük.|\<yok >|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

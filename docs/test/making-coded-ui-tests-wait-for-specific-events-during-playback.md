@@ -7,17 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
+author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 4a6c7ae9f0438d440471bc9e049b539e96e63e13
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: d28182eb626bb937e8d1e1d0e3cc39bd62233df7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Kayıttan Yürütme Sırasında Belirli Olaylar için Kodlanmış UI Testlerini Bekletme
+
 İçinde kodlanmış bir UI Testi kayıttan, kaybolur ve benzeri için ilerleme çubuğu oluşmasına görünmesi için bir pencere gibi belirli olaylar için beklenecek test söyleyebilirsiniz. Bunu yapmak için aşağıdaki tabloda açıklandığı gibi uygun UITestControl.WaitForControlXXX() yöntemini kullanın. Bir denetimi kullanma etkin olmasını bekler kodlanmış bir UI testi örneği <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> yöntemi, bkz: [izlenecek yol: oluşturma, düzenleme ve kodlanmış bir UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
   
  **Gereksinimler**  
@@ -103,18 +104,15 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  Kullanabileceğiniz <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A>uyku süresini değiştirmek için özellik. Varsayılan olarak, bu değişken 1'dir ancak artırabilir veya kod'dünyanın dört bir yanındaki bekleme süresini değiştirmek için azaltabilirsiniz. Örneğin, özellikle yavaş ağ veya başka bir yavaş performans çalışması üzerinde test ediyorsanız, tüm konumlarda % 50 ilave bekleme eklemek için 1.5 için bu değişkeni bir yerde (veya hatta yapılandırma dosyasında) değiştirebilirsiniz.  
   
  Playback.Wait() içten Thread.Sleep() çağırır (sonra hesaplama yukarıda) için-kullanıcı cancel\break işlemi için denetlenirken döngü daha küçük parçalar. Diğer bir deyişle, Playback.Wait() sağlar ancak kayıttan yürütme beklemeyi sona önce iptal uyku değil veya özel durum.  
-  
+
 > [!TIP]
->  Kodlanmış UI Test Düzenleyicisi'ni kolayca kodlanmış UI testleri değiştirmenize olanak tanır. Kodlanmış UI Test Düzenleyicisi'ni kullanarak bulun, görüntülemek ve test yöntemlerinizi düzenleyin. Ayrıca, kullanıcı Arabirimi eylemlerini ve UI denetim eşlemesindeki ilişkili denetimlerini düzenleyebilirsiniz. Daha fazla bilgi için bkz: [kodlanmış UI Test Düzenleyicisi'ni kullanarak düzenleme kodlanmış UI testlerini](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
-  
- **Kılavuz**  
-  
- Ek bilgi için bkz: [Visual Studio 2012 - bölüm 5 ile sürekli teslimat için test etme: Sistem testlerini otomatikleştirme](http://go.microsoft.com/fwlink/?LinkID=255196)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
- [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [İzlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi sürdürme](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
- [Kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md)   
- [Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Nasıl yapılır: kodlanmış UI Test Düzenleyicisi'ni kullanarak bir UI eyleminden önce gecikme ekleme](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
+> Kodlanmış UI Test Düzenleyicisi'ni kolayca kodlanmış UI testleri değiştirmenize olanak tanır. Kodlanmış UI Test Düzenleyicisi'ni kullanarak bulun, görüntülemek ve test yöntemlerinizi düzenleyin. Ayrıca, kullanıcı Arabirimi eylemlerini ve UI denetim eşlemesindeki ilişkili denetimlerini düzenleyebilirsiniz. Daha fazla bilgi için bkz: [kodlanmış UI Test Düzenleyicisi'ni kullanarak düzenleme kodlanmış UI testlerini](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)  
+[Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md)  
+[İzlenecek yol: Kodlanmış Bir UI Testi Oluşturmak Düzenlemek ve Sürdürmek](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)  
+[Kodlanmış UI Testinin Anatomisi](../test/anatomy-of-a-coded-ui-test.md)  
+[Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+[Nasıl yapılır: kodlanmış UI Test Düzenleyicisi'ni kullanarak bir UI eyleminden önce gecikme ekleme](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)

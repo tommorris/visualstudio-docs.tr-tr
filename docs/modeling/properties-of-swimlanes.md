@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fdbd94abdaa3a1acb460a3b2a5b276d169c20269
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 84107514e728dbfa79b7dfdaee6c3febaee21274
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-swimlanes"></a>Kulvarların Özellikleri
 Bir diyagrama kulvarları ekleyebilirsiniz. Kulvarları diyagram dikey veya yatay alanlarına bölün. İçinde kulvarları görüntülenecek diğer şekiller tanımlayabilirsiniz. Daha fazla bilgi için bkz: [bir etki alanına özgü dil tanımlamak nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikleri kullanma hakkında daha fazla bilgi için bkz: [özelleştirme ve bir etki alanına özgü dil genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -26,12 +26,12 @@ Bir diyagrama kulvarları ekleyebilirsiniz. Kulvarları diyagram dikey veya yata
 |Özellik|Açıklama|Varsayılan|  
 |--------------|-----------------|-------------|  
 |Gövde dolgu rengi|Kulvar gövdesi için dolgu rengi.|Beyaz|  
-|Üstbilgi dolgu rengi|Kulvar üstbilgisinin dolgu rengi.|Koyu gri|  
+|Üstbilgi dolgu rengi|Kulvar üstbilgisinin dolgu rengi.|DarkGray|  
 |Ayırıcı rengi|Ayırıcı çizginin rengi.|LightGray|  
 |Ayırıcı çizgi stili|Ayırıcı çizgi stilini (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`, veya `Custom`).|`Dash`|  
 |Ayırıcı kalınlığı|İnç ayırıcı çizgi kalınlığı.|0.03125|  
 |Metin rengi|Bu Kulvar ile ilişkili metin dekoratörler için kullanılan rengi.|Siyah|  
-|Erişim değiştiricisi|Sınıfının erişim düzeyini (`public` veya `internal`).|Ortak|  
+|Access Modifier|Sınıfının erişim düzeyini (`public` veya `internal`).|Ortak|  
 |Özel Öznitelikler|Bu Kulvar oluşturulan kod sınıfı öznitelikler eklemek için kullanılır.|\<yok >|  
 |Çift oluşturur türetilmiş|Varsa `True`, bir taban sınıf ve bir parçalı sınıf (geçersiz kılmaları özelleştirmeyi desteklemek için) oluşturulur. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Özel bir oluşturucuya sahip|Varsa `True`, özel bir oluşturucu kaynak kodunda sağlanacaktır. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
@@ -51,4 +51,4 @@ Bir diyagrama kulvarları ekleyebilirsiniz. Kulvarları diyagram dikey veya yata
 |Yardım anahtar sözcüğü|Bu Kulvar için F1 Yardımı dizin oluşturmak için kullanılan anahtar sözcük.|\<yok >|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

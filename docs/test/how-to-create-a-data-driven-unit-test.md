@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: a582796e7436df49a719d758896ee8dcea43b068
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 74d271b6d1c9124d323b9c1ecbbfe9e716b1c5b8
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma
 Yönetilen kod için Microsoft birim test çerçevesi kullanarak bir veri kaynağından test yönteminde kullanılan değerleri almak için bir birim testi yöntemi ayarlayabilirsiniz. Yöntemi, tek bir yöntem kullanarak giriş çeşitli test kolaylaştırır veri kaynağındaki her satır için sırayla çalışır.  
@@ -83,7 +83,7 @@ public int AddIntegers(int first, int second)
 ##  <a name="BKMK_Creating_a_data_source"></a>Veri kaynağı oluşturma  
  Test etmek için `AddIntegers` yöntemi, biz parametreler için değerler ve döndürülecek beklediğiniz toplam aralığı belirten bir veri kaynağı oluştur. Bizim örneğimizde, biz adlı bir Sql Compact veritabanı oluşturma `MathsData` ve adlı bir tablo `AddIntegersData` aşağıdaki sütun adları ve değerleri içerir  
   
-|İlksayı|İkincisayı|TOPLA|  
+|FirstNumber|SecondNumber|TOPLA|  
 |-----------------|------------------|---------|  
 |0|1.|1.|  
 |1.|1.|2|  
@@ -182,12 +182,12 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
   
  Ne zaman yöntemi test altında düzeltilinceye yeniden test sonuçları çubuk yeşil kapatır ve test yöntemi taşınır **geçirilen Test** grubu.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [Nasıl yapılır: oluşturmak ve birim testi çalıştırma](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
- [Kodunuza birim testi](../test/unit-test-your-code.md)   
- [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)   
- [Yönetilen Kod için Microsoft Birim Testi Çerçevesi ile .NET Framework için Birim Testleri Yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>  
+[Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)  
+[Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)  
+[Yönetilen Kod için Microsoft Birim Testi Çerçevesi ile .NET Framework için Birim Testleri Yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

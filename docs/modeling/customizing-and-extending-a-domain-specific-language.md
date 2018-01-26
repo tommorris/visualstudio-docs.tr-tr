@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c0ecd953a0a4cb744f726fc6a62bee564d15579
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 581d4e907185339aa16bacce19a9bf31ff4d121d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Etki Alanına Özgü Dili Özelleştirme ve Genişletme
 Visual Studio modelleme ve görselleştirme SDK (VMSDK) modelleme araçları tanımlamak birkaç düzeyleri sağlar:  
@@ -55,7 +55,7 @@ Visual Studio modelleme ve görselleştirme SDK (VMSDK) modelleme araçları tan
 |Silme, üst öğesini değiştirme veya bir öğe silindiğinde ile ilgili öğeleri yeniden bağlayın.|Ayarlama **yayar silme** bir ilişki rolü değeri. Daha karmaşık efektler için geçersiz kılma `ShouldVisitRelationship` ve `ShouldVisitRolePlayer` yöntemleri `MyDslDeleteClosure` , tanımlanmış sınıf **DomainModel.cs**<br /><br /> Bkz: [silme davranışı özelleştirme](../modeling/customizing-deletion-behavior.md)|  
 |Şekil düzenini ve kopyalama ve sürükle ve bırak görünümünü korur.|Şekilleri ve bağlayıcıları kopyalanan eklemek `ElementGroupPrototype`. Geçersiz kılmak için en uygun yöntemi`ElementOperations.CreateElementGroupPrototype()`<br /><br /> Bkz: [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md).|  
 |Geçerli imleç konumu gibi seçtiğiniz bir konumda şekiller yapıştırın.|Geçersiz kılma `ClipboardCommandSet.ProcessOnCopy()` konuma özgü sürümünü kullanmak üzere `ElementOperations.Merge().` bkz [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md).|  
-|Ek bağlantılar Yapıştır üzerinde oluşturma|ClipboardCommandSet.ProcessOnPasteCommand() geçersiz kıl|  
+|Ek bağlantılar Yapıştır üzerinde oluşturma|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Etkinleştirme sürükleyip bu diyagramdan, diğer DSL'ler ve Windows öğeleri|Bkz: [nasıl yapılır: bir Sürükle ve bırak işleyici ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Üst sürüklediğiniz ise gibi bir şekil ya da bir bağlantı noktası gibi bir alt şekli üzerine sürüklediğiniz aracı izin verir.|Üst öğeye bırakılan nesneyi iletmek için hedef nesne sınıfı üzerinde birleştirme bir Element Directive tanımlayın. Bkz: [öğesi oluşturma ve taşıma özelleştirme](../modeling/customizing-element-creation-and-movement.md).|  
 |Şekil veya bir şekli sürüklediğiniz ve ek bağlantıları için aracı izin ver veya oluşturulan nesneler. Örneğin, bir açıklama için bağlı olduğu bir öğenin izin vermek için.|Oluşturulacak bağlantıları tanımlamak ve hedef etki alanı sınıf üzerinde birleştirme bir Element Directive tanımlayın. Karmaşık durumlarda, özel kod ekleyebilirsiniz. Bkz: [öğesi oluşturma ve taşıma özelleştirme](../modeling/customizing-element-creation-and-movement.md).|  
@@ -70,10 +70,10 @@ Visual Studio modelleme ve görselleştirme SDK (VMSDK) modelleme araçları tan
 |Bunlar bir uygulamanın parçası olarak çalışmak üzere birkaç DSL'ler tümleştirin.|Bkz: [Visual Studio Modelbus kullanarak modelleri tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|  
 |Uzantı denetlemek ve üçüncü taraflar tarafından genişletilmesi, DSL izin verin.|[MEF kullanarak DSL'nizi genişletme](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [DSL Kitaplığı Kullanarak DSL'ler Arasında Sınıfları Paylaşma](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)   
- [Bir etki alanına özgü dil kişiselleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)   
+[Bir etki alanına özgü dil kişiselleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
+[Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-

@@ -8,17 +8,18 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: coded UI tests, data-driven
+author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 50d4a9d6b300a46ac074989e91d9eb4aecf9a496
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 7f88dcf7bf952cf96663e8d42ad9d64e6459cb7d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Verilerle Çalışan Kodlanmış UI Testi Oluşturma
+
 Farklı koşullarda test etmek için farklı parametre değerleri ile birden çok kez testleri çalıştırabilirsiniz. Veri tabanlı kodlanmış UI testleri bunu yapmak için uygun bir yöntemdir. Kodlanmış UI Test yineleme veri kaynağındaki her satır olduğundan ve bir veri kaynağı, parametre değerleri tanımlayın. Genel test sonucu, tüm yinelemeleri sonucunu dayalı olacak. Örneğin, bir test yineleme başarısız olursa genel test sonucu başarısız olur.  
   
  **Gereksinimler**  
@@ -47,17 +48,16 @@ Farklı koşullarda test etmek için farklı parametre değerleri ile birden ço
      ![Genetate test yöntemi](../test/media/cuit_datadriven_cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
      Test Oluşturucusu'nu kapatın. Yöntemi, test eklenir:  
-  
-    ```csharp  
+
+    ```csharp
     [TestMethod]  
     public void CodedUITestMethod1()  
     {  
         // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.  
-        this.UIMap.AddNumbers();  
-  
-    }  
-    ```  
-  
+        this.UIMap.AddNumbers();
+    }
+    ```
+
 5.  Kullanım `AddNumbers()` test çalıştığını doğrulamak için yöntem. Yukarıda gösterilen test yöntemi imleci yerleştirin, bağlam menüsünü açın ve seçin **Testleri Çalıştır**. (Klavye kısayolu: Ctrl + R, T).  
   
      Test geçirilen ya da başarısız olmuşsa gösterir test sonucu Test Gezgini penceresinde görüntülenir. Gelen Test Gezgini penceresi açmak için **TEST** menüsünde seçin **Windows** ve ardından **Test Gezgini**.  
@@ -78,7 +78,7 @@ Farklı koşullarda test etmek için farklı parametre değerleri ile birden ço
   
      Çünkü `ValidateSum` yöntemi doğrulama sonuçlarını `AddNumbers` yöntemi, kod bloğunun altına taşıyın.  
   
-    ```csharp  
+    ```csharp
     public void CodedUITestMethod1()  
     {  
   
@@ -86,8 +86,8 @@ Farklı koşullarda test etmek için farklı parametre değerleri ile birden ço
         this.UIMap.AddNumbers();  
         this.UIMap.ValidateSum();  
   
-    }  
-    ```  
+    }
+    ```
   
 9. Test kullanarak çalıştığını doğrulamanız `ValidateSum()` yöntemi. Yukarıda gösterilen test yöntemi imleci yerleştirin, bağlam menüsünü açın ve seçin **Testleri Çalıştır**. (Kısayol: Ctrl + R, T klavye).  
   
@@ -123,7 +123,7 @@ Farklı koşullarda test etmek için farklı parametre değerleri ile birden ço
   
 1.  Veri kaynağı bağlamak için add bir `DataSource` varolan içinde öznitelik `[TestMethod]` hemen test yöntemi bir öznitelik.  
   
-    ```  
+    ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]  
     public void CodedUITestMethod1()  
     {  
@@ -132,14 +132,13 @@ Farklı koşullarda test etmek için farklı parametre değerleri ile birden ço
         this.UIMap.AddNumbers();  
         this.UIMap.ValidateSum();  
   
-    }  
-  
-    ```  
-  
+    }
+    ```
+
      Veri kaynağı artık bu test yöntemi kullanmak kullanılabilir.  
   
     > [!TIP]
-    >  Bkz: [veri kaynağı özniteliği örnekleri](#CreateDataDrivenCUIT_QA_DataSourceAttributes) soru-cevap XML, SQL Express ve Excel gibi diğer veri kaynağı türleri kullanma örnekleri için bir bölüm.  
+    > Bkz: [veri kaynağı özniteliği örnekleri](#CreateDataDrivenCUIT_QA_DataSourceAttributes) soru-cevap XML, SQL Express ve Excel gibi diğer veri kaynağı türleri kullanma örnekleri için bir bölüm.  
   
 2.  Testi çalıştırın.  
   
@@ -151,7 +150,7 @@ Farklı koşullarda test etmek için farklı parametre değerleri ile birden ço
   
 1.  Ekleme `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` CodedUITest.cs dosyanın en üstüne için:  
   
-    ```  
+    ```csharp
     using System;  
     using System.Collections.Generic;  
     using System.Text.RegularExpressions;  
@@ -163,11 +162,11 @@ Farklı koşullarda test etmek için farklı parametre değerleri ile birden ço
     using Microsoft.VisualStudio.TestTools.UITest.Extension;  
     using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;  
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;  
-    ```  
+    ```
   
 2.  Ekleme `TestContext.DataRow[]` içinde `CodedUITestMethod1()` değerleri veri kaynağından uygulanacak yöntemi. Veri kaynağı değerlerini denetimlerini kullanarak UIMap denetimlere atanan sabitleri geçersiz kılma `SearchProperties`:  
   
-    ```  
+    ```csharp
     public void CodedUITestMethod1()  
     {  
   
@@ -177,8 +176,8 @@ Farklı koşullarda test etmek için farklı parametre değerleri ile birden ço
         this.UIMap.ValidateSumExpectedValues.UIItem2TextDisplayText = TestContext.DataRow["Sum"].ToString();  
         this.UIMap.ValidateSum();  
   
-    }  
-    ```  
+    }
+    ```
   
      Verileri kodlamak için hangi arama özelliklerinin tahmin için kodlanmış UI Test Düzenleyicisi'ni kullanın.  
   
@@ -235,26 +234,26 @@ Farklı koşullarda test etmek için farklı parametre değerleri ile birden ço
   
 ### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>S: Windows Phone Uygulamam verilere testleri kullanabilir miyim?  
  **Y:** Evet. Windows Phone için veri tabanlı kodlanmış UI testleri, bir test yöntemi DataRow özniteliği kullanılarak tanımlanır. Aşağıdaki örnek, x ve y değerleri 1 ve 2 ilk yinelemeyi ve -1 -2 testinin ikinci yineleme için için kullanın.  
-  
-```  
+
+```csharp
 [DataRow(1, 2, DisplayName = "Add positive numbers")]  
 [DataRow(-1, -2, DisplayName = "Add negative numbers")]  
 [TestMethod]  
-public void DataDrivingDemo_MyTestMethod(int x, int y)  
-  
-```  
-  
- Daha fazla bilgi için bkz: [kullanım veri tabanlı kodlanmış UI testleri Windows Phone uygulamalarını](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).  
+public void DataDrivingDemo_MyTestMethod(int x, int y)
+```
+
+Daha fazla bilgi için bkz: [kullanım veri tabanlı kodlanmış UI testleri Windows Phone uygulamalarını](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).
   
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>S: neden UIMap.Designer dosyasındaki kodu değiştirilemez?  
  **Y:** UIMap - Kodlanmış UI Test derleyicisini kullanarak kod oluşturma her zaman UIMapDesigner.cs dosyasında yaptığınız herhangi bir kod değişikliğinin üzerine yazılır. Bu örnekte ve çoğu durumda, bir veri kaynağı kullanmak bir test etkinleştirmek için gereken kod değişikliği testin kaynak kodu dosyasına (diğer bir deyişle, Codeduıtest1.cs) yapılabilir.  
-  
- Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, yöntemi UIMap.cs dosyasına kopyalayıp yeniden adlandırmanız gerekir. UIMap.cs dosyası, UIMapDesigner.cs dosyasındaki yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir. Kodlanmış UITest.cs dosyasındaki orijinal yönteme başvuruyu kaldırıp yeniden adlandırılan yöntem adıyla değiştirmelisiniz.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
- [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
- [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Kodlanmış UI testleri için en iyi yöntemler](../test/best-practices-for-coded-ui-tests.md)   
- [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+
+Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, yöntemi UIMap.cs dosyasına kopyalayıp yeniden adlandırmanız gerekir. UIMap.cs dosyası, UIMapDesigner.cs dosyasındaki yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir. Kodlanmış UITest.cs dosyasındaki orijinal yönteme başvuruyu kaldırıp yeniden adlandırılan yöntem adıyla değiştirmelisiniz.  
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
+[Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
+[Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md)   
+[Kodlanmış UI testleri için en iyi yöntemler](../test/best-practices-for-coded-ui-tests.md)   
+[Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

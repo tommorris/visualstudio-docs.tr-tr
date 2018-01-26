@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c1a163e50e2f237430ba13d57a76cfc0d6b1d67
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 1fcba975443deb768a2b3de36bd2744183cdcf40
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Etki Alanına Özgü Dil Araçlarına Genel Bakış
 İçinde barındırılan etki alanına özgü dil Araçları (DSL araçları) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], let bir etki alanına özgü dil tasarlama ve kullanıcıların diline dayalı modelleri oluşturmak için gereken her şeyi oluşturur.  
@@ -51,7 +51,7 @@ ms.lasthandoff: 01/13/2018
   
  Sihirbazın oluşturduğu bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] şu projeler bulunduğu çözümü:  
   
--   DSL  
+-   Dsl  
   
      Etki alanına özgü dil ve işlemek ve düzenleme araçları Dsl proje tanımlar.  
   
@@ -77,4 +77,4 @@ ms.lasthandoff: 01/13/2018
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Deneysel örneği](../extensibility/the-experimental-instance.md)   
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

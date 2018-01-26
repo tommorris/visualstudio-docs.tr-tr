@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ecec7f30df607400eaf333a21ae2746a30f1a41d
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: e094505a8289d5e4580a420bd11121f43ecade2d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-compartment-shapes"></a>Bölme Şekillerinin Özellikleri
 Bölme şekiller bir etki alanı sınıfının bir etki alanına özgü dil görüntülemek için kullanabilirsiniz şekiller biridir. Genişletin ve bölmeler daraltın.  
@@ -37,7 +37,7 @@ Bölme şekiller bir etki alanı sınıfının bir etki alanına özgü dil gör
 |Kenarlık Çizgi stili|Bu şekil (düz, çizgi, nokta, çizgi nokta, çizgi nokta nokta, özel) anahat çizgi stili.|Düz|  
 |Anahat kalınlığı|Bu şeklin Anahat kalınlığı.|0.03125|  
 |Metin rengi|Bu şeklin ile ilişkili metin dekoratörler için kullanılan renk.|Siyah|  
-|Erişim değiştiricisi|Bölme şeklin erişim düzeyini (`public` veya `internal`).|Ortak|  
+|Access Modifier|Bölme şeklin erişim düzeyini (`public` veya `internal`).|Ortak|  
 |Özel Öznitelikler|Bu bölme şekli'ndan oluşturulan kaynak kodu sınıfı öznitelikler eklemek için kullanılır|\<yok >|  
 |Çift oluşturur türetilmiş|Varsa `True`, bir taban sınıf ve bir parçalı sınıf (geçersiz kılmaları özelleştirmeyi desteklemek için) oluşturulur. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Özel bir oluşturucuya sahip|Varsa `True`, özel bir oluşturucu kaynak kodunda sağlanacaktır. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
@@ -56,4 +56,4 @@ Bölme şekiller bir etki alanı sınıfının bir etki alanına özgü dil gör
 |Yardım anahtar sözcüğü|Bu şeklin için F1 Yardımı dizin oluşturmak için kullanılan anahtar sözcük.|\<yok >|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

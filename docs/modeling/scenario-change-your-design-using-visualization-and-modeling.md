@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 14e03f7a7c5d9200cf1ebc40f9098121f4ddbff9
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 8ad4a4141d27c9250d53a567ac09b1c5ffa05f49
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 Yazılım sisteminizin Görselleştirme ve modelleme Visual Studio araçları kullanarak tarafından Kullanıcıların ihtiyaçlarını karşıladığından emin olun.
@@ -485,11 +485,10 @@ Bağımlılık diyagramlarındaki öğeleri modelleme projesinde bulunur, ancak 
 |------------------|---------------|  
 |**Forumları**|-   [Visual Studio Görselleştirme ve Modelleme Araçları](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Görselleştirme ve modelleme SDK (DSL araçları)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodu görselleştirme](../modeling/visualize-code.md)   
- [Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)   
- [Çevik Geliştirme modelleri kullanma](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)   
+## <a name="see-also"></a>Ayrıca bkz.
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+[Kodu görselleştirme](../modeling/visualize-code.md)   
+[Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)   
+[Çevik Geliştirme modelleri kullanma](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+[Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)
  

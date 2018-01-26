@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 744dffd17f13c821381de6014881ef2115c0f75c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 0c08986b9508e4061a44575d629937c70bffc06e
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-diagrams"></a>Diyagramların Özellikleri
 Diyagramları oluşturulan Tasarımcısı'nda nasıl görüneceğini belirten özellikleri ayarlayabilirsiniz. Örneğin, aşağıdaki çizimde metin varsayılan rengini belirtebilirsiniz.  
@@ -29,7 +29,7 @@ Diyagramları oluşturulan Tasarımcısı'nda nasıl görüneceğini belirten ö
 |--------------|-----------------|-------------|  
 |Dolgu rengi|Diyagram için dolgu rengi.|Beyaz|  
 |Metin rengi|Diyagramda görüntülenen metin rengi.|Siyah|  
-|Erişim değiştiricisi|Sınıfı (ortak veya dahili) erişim değiştiricisi.|Ortak|  
+|Access Modifier|Sınıfı (ortak veya dahili) erişim değiştiricisi.|Ortak|  
 |Özel Öznitelikler|Oluşturulan kodun sınıf öznitelikleri eklemek için kullanılır.|\<yok >|  
 |Çift oluşturur türetilmiş|Varsa `True`, bir taban sınıf ve bir parçalı sınıf (geçersiz kılmaları özelleştirmeyi desteklemek için) oluşturulur. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Özel bir oluşturucuya sahip|Varsa `True`, özel bir oluşturucu kaynak kodunda sağlanacaktır. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
@@ -46,4 +46,4 @@ Diyagramları oluşturulan Tasarımcısı'nda nasıl görüneceğini belirten ö
 |Yardım anahtar sözcüğü|Bu diyagramda için F1 Yardımı dizin oluşturmak için kullanılan anahtar sözcük.|\<yok >|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

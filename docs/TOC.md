@@ -366,6 +366,7 @@
 #### [XAML Tasarımcısı Seçenekler İletişim Kutusu](ide/reference/xaml-designer.md)
 ### [Çıktı Penceresi](ide/reference/output-window.md)
 ### [Proje Özellikleri Başvurusu](ide/reference/project-properties-reference.md)
+#### [Uygulama Sayfası, Proje Tasarımcısı (UWP)](ide/reference/application-page-project-designer-uwp.md)
 #### [Uygulama Sayfası, Proje Tasarımcısı (Visual Basic)](ide/reference/application-page-project-designer-visual-basic.md)
 ##### [Derleme Bilgileri İletişim Kutusu](ide/reference/assembly-information-dialog-box.md)
 #### [Uygulama Sayfası, Proje Tasarımcısı (C#)](ide/reference/application-page-project-designer-csharp.md)

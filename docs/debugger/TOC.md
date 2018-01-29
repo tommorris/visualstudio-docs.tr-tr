@@ -18,6 +18,7 @@
 # Nasıl yapılır kılavuzları
 ## [Hata ayıklayıcısı ile kodda gezinme](navigating-through-code-with-the-debugger.md)
 ## [Kesme noktalarınıullanma](using-breakpoints.md)
+### [Kesme noktalarıyla ilgili sorun giderme](troubleshooting-breakpoints.md)
 ## [Verileri inceleme](debugger-windows.md)
 ### [Değişkenleri inceleme](autos-and-locals-windows.md)
 ### [Değişkenler üzerinde izleme ayarlama](watch-and-quickwatch-windows.md)

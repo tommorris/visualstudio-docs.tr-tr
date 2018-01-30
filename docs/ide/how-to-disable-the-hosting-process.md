@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - hosting process, disabling
 - vshost.exe, disabling the hosting process
 ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9609f902c11291cd6892cf663ec8a343952ebaab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b43e285c35601cb0d50536a5f4c499d09ae9bbad
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Nasıl Yapılır: Barındırma Sürecini Devre Dışı Bırakma
 Barındırma işlemi etkinleştirildiğinde, belirli API çağrıları etkilenebilir. Bu durumlarda, doğru sonuçlar döndürecek şekilde barındırma işlemini devre dışı bırakmak gereklidir.  
@@ -45,7 +47,7 @@ Barındırma işlemi etkinleştirildiğinde, belirli API çağrıları etkileneb
   
 -   Kısmi güven hata ayıklama kullanılamıyor.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama ve barındırma işlemi](../debugger/debugging-and-the-hosting-process.md)   
- [Barındırma süreci (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
- [Uygulama geliştirme sırasında derlemeler](http://msdn.microsoft.com/en-us/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Hata ayıklama ve barındırma işlemi](../debugger/debugging-and-the-hosting-process.md)   
+[Barındırma Süreci (vshost.exe)](../ide/hosting-process-vshost-exe.md)

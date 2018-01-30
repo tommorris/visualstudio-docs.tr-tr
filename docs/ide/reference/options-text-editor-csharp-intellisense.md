@@ -1,10 +1,11 @@
 ---
-title: "Seçenekler, metin düzenleyici, C#, IntelliSense | Microsoft Docs"
+title: Options, Text Editor, C#, IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,19 +18,20 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: b0b69b7eafbfbb1b5c2c582fd0c734a183ea0a78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 322ae48b1ded8dfef7e25a80937da957e50f756f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-c-intellisense"></a>Seçenekler, Metin Düzenleyici, C#, IntelliSense
-Kullanım **IntelliSense** IntelliSense davranışını Visual C# için etkileyen ayarları değiştirmek için özellik sayfası. Erişebileceğiniz **IntelliSense** tıklayarak özellik sayfası **seçenekleri** üzerinde **Araçları** tıklatarak menüsünde **C#** içinde**Metin düzenleyici** klasörünü ve ardından **IntelliSense.**  
+Kullanım **IntelliSense** davranışı IntelliSense, C# ' ta etkileyen ayarları değiştirmek için özellik sayfası. Erişebileceğiniz **IntelliSense** tıklayarak özellik sayfası **seçenekleri** üzerinde **Araçları** tıklatarak menüsünde **C#** içinde**Metin düzenleyici** klasörünü ve ardından **IntelliSense.**  
   
 > [!NOTE]
 >  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).  
@@ -44,7 +46,7 @@ Kullanım **IntelliSense** IntelliSense davranışını Visual C# için etkileye
  Bu seçenek belirlendiğinde, IntelliSense C# anahtar sözcükleri, örneğin, ekler [sınıfı](/dotnet/csharp/language-reference/keywords/class), tamamlanma listesi.  
   
  **Kod parçacıkları detamamlanma listeleri yerleştirin**  
- Bu seçenek belirlendiğinde, IntelliSense, C# kod parçacıkları için diğer adlar tamamlama listesine ekler. Kod parçacığı diğer olduğu bir anahtar sözcüğü ile aynı örneğin durumda [sınıfı](/dotnet/csharp/language-reference/keywords/class), anahtar sözcüğü kısayol tarafından değiştirilir. Daha fazla bilgi için bkz: [Visual C# kod parçacıkları](../../ide/visual-csharp-code-snippets.md).  
+ Bu seçenek belirlendiğinde, IntelliSense, C# kod parçacıkları için diğer adlar tamamlama listesine ekler. Kod parçacığı diğer olduğu bir anahtar sözcüğü ile aynı örneğin durumda [sınıfı](/dotnet/csharp/language-reference/keywords/class), anahtar sözcüğü kısayol tarafından değiştirilir. Daha fazla bilgi için bkz: [C# kod parçacıkları](../../ide/visual-csharp-code-snippets.md).  
   
 ## <a name="selection-in-completion-lists"></a>Tamamlanma listeleri seçimi  
  **Şu karakterleri yazarak yürütüldü:**  

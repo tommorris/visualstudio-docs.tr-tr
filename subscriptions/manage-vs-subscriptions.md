@@ -9,18 +9,18 @@ Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 8059d316912e78bcbcaa9d4f54f86b4e2c2b907f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="managing-subscriptions"></a>Aboneliklerini Yönetme
 ## <a name="signing-in-to-the-portal"></a>Portal oturumu açmada
 Visual Studio aboneliğinize Hoş Geldiniz!  Aboneliğinizi tüm yazılım ve yazılım, aylık Azure kredisi, perks, eğitim işbirliği araçları dahil olmak üzere tüm öğeleri kodu üzerinde kalması için destek avantajları ve daha fazla ile sağlar — tüm son ve en iyi Microsoft.  Portalı kullanmak için oturum açmanız.
 ### <a name="first-time-access"></a>İlk saat erişimi
 Aboneliğinizi ilk kez kullanmak üzere adımlar aboneliğinizi nasıl elde bağlıdır.  
-#### <a name="microsoft-store"></a>Microsoft deposu
+#### <a name="microsoft-store"></a>Microsoft Store
 Visual Studio abonelik Microsoft Store aracılığıyla satın aldığınız, etkinleştirme adımları ödeme başlatılabilir **onay sayfası** veya **onay e-postası.**  
 1.  "Onay sayfasında" veya "onay e-posta"'ı tıklatarak **oturum açmak için burayı tıklatın**.  İçin https://my.visualstudio.com/subscriptions/activate yönlendirilir.
 2.  Kullandığınız abone portalında oturum açın ve'ı tıklatın e-posta adresini girin **devam**.
@@ -31,7 +31,7 @@ Visual Studio abonelik Microsoft Store aracılığıyla satın aldığınız, et
 #### <a name="workschool-accounts"></a>İş/Okul hesapları
 Aboneliğinize iş/okulunuz tarafından sağlandıysa, Hoş Geldiniz e-posta alınan.  
 1.  Ziyaret [abone portalı](https://my.visualstudio.com/)
-2.  Yeni Visual Studio abonelik atandığı e-posta adresi girin. Bu adres abone olarak da tanımlanır **Hoş Geldiniz harf**. Hoş Geldiniz harf olmayan alındıysa gereksiz posta klasörleri gözden geçirin.
+2.  Yeni Visual Studio abonelik atandığı e-posta adresi girin. Bu adres de abone Hoş Geldiniz e-posta ile tanımlanır. Hoş Geldiniz e-posta değil alındıysa gereksiz posta klasörleri gözden geçirin.
 3.  Tıklatın **devam**
 4.  Kurumsal oturum açma sayfasına yönlendirilir.
 5.  Parolanızı girin.

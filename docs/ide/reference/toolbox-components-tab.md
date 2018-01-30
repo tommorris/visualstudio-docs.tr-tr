@@ -4,24 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Toolbox, Components tab
-ms.assetid: 332fafab-a763-4244-b388-15d1b5b5cc04
-caps.latest.revision: "14"
+helpviewer_keywords:
+- Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cf0ab13b104422771b117c17ed3ff89b53fa461f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="toolbox-components-tab"></a>Araç Kutusu, Bileşenler Sekmesi
-Görüntüler için ekleme bileşenleri [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ve [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] tasarımcıları. Ek olarak [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] dahil edilen bileşenleri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], gibi <xref:System.Messaging.MessageQueue> ve <xref:System.Diagnostics.EventLog> bileşenleri ekleyebilirsiniz, bu sekmeye kendi veya üçüncü taraf bileşenleri. Daha fazla bilgi için bkz: [nasıl yapılır: araç kutusu sekmeleri işlemek](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
+
+Visual Basic ve C# tasarımcıları ekleyebilirsiniz bileşenleri görüntüler. Visual Studio ile gibi dahil .NET Framework bileşenlerini yanı sıra <xref:System.Messaging.MessageQueue> ve <xref:System.Diagnostics.EventLog> bileşenleri ekleyebilirsiniz, bu sekmeye kendi veya üçüncü taraf bileşenleri.
   
  Bu sekme görüntülenecek **Görünüm** menüsünde, select **araç**. İçinde **araç**seçin **bileşenleri** sekmesi.  
   
@@ -37,7 +39,7 @@ Görüntüler için ekleme bileşenleri [!INCLUDE[vbprvb](../../code-quality/inc
  **ErrorProvider**  
  Oluşturur bir `System.Windows.Forms.ErrorProvider` son kullanıcı için bir form üzerinde denetim kendisiyle ilişkili bir hata olduğunu gösterir bileşen örneği.  
   
- **Olay günlüğü**  
+ **EventLog**  
  Oluşturur bir <xref:System.Diagnostics.EventLog> bileşen örneği sistem ve özel olay günlükleri, olayları günlüğe yazma ve günlük verileri okuma gibi etkileşim için kullanabilirsiniz. Daha fazla bilgi için bkz: [EventLog bileşen giriş](http://msdn.microsoft.com/en-us/a2ba4f28-4b1a-435e-99ef-51b28e21f805).  
   
  **FileSystemWatcher**  
@@ -58,7 +60,7 @@ Görüntüler için ekleme bileşenleri [!INCLUDE[vbprvb](../../code-quality/inc
  **İşlem**  
  Oluşturur bir <xref:System.Diagnostics.Process> bileşen örneği durdurun, başlatın ve sisteminizdeki işlemlerle ilişkili verileri işlemek için kullanabilirsiniz. Daha fazla bilgi için bkz: [izleme ve yönetme Windows işlemlerinin](http://msdn.microsoft.com/en-us/a86bd4c1-b92c-49a0-8f32-61d67837b45e).  
   
- **Seri bağlantı noktası**  
+ **SerialPort**  
  Oluşturur bir `System.IO.Ports.SerialPort` zaman uyumlu ve olay denetimli g/ç, PIN ve sonu durumları için erişim ve seri sürücü özelliklerine erişimi sağlayan bileşen örneği.  
   
  **ServiceController**  

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,33 +13,37 @@ helpviewer_keywords:
 - snippets [Visual Studio], functions
 - IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 58c1b8332e472484a0c932018bf6725cca9c7725
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fec5c2bbbf97bee5e0abb0725641a5c562997065
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="code-snippet-functions"></a>Kod Parçacığı İşlevleri
-İle kullanmak kullanılabilen üç işlevleri vardır [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] kod parçacıkları. İşlevler içinde belirtilen [işlevi](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) kod parçacığında öğesidir. Kod parçacıkları oluşturma hakkında daha fazla bilgi için bkz: [kod parçacıkları](../ide/code-snippets.md).  
-  
-## <a name="functions"></a>İşlevler  
- Aşağıdaki tabloda ile kullanmak için kullanılabilir işlevleri açıklanmaktadır `Function` kod parçacıkları öğesinde.  
-  
+# <a name="code-snippet-functions"></a>Kod parçacığı işlevleri
+
+C# kod parçacıkları ile kullanmak kullanılabilen üç işlevleri vardır. İşlevler içinde belirtilen [işlevi](../ide/code-snippets-schema-reference.md#function) kod parçacığında öğesidir. Kod parçacıkları oluşturma hakkında daha fazla bilgi için bkz: [kod parçacıkları](../ide/code-snippets.md).
+
+## <a name="functions"></a>İşlevler
+
+Aşağıdaki tabloda ile kullanmak için kullanılabilir işlevleri açıklanmaktadır `Function` kod parçacıkları öğesinde.
+
 |İşlev|Açıklama|Dil|  
 |--------------|-----------------|--------------|  
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Switch deyimi ve case deyimleri kümesi tarafından belirtilen numaralandırma üyeleri için oluşturur `EnumerationLiteral` parametresi. `EnumerationLiteral` Parametresi bir numaralandırma sabit değeri bir başvuru ya da bir numaralandırma türü olmalıdır.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`ClassName()`|Eklenen kod parçacığını içeren sınıf adını döndürür.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`SimpleTypeName(` `TypeName` `)`|Azaltır *TypeName* en basit biçimiyle kod parçacığını çağrıldığı bağlam parametresi.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
   
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl kullanılacağını gösterir `GenerateSwitchCases` işlevi. Ne zaman bu kod parçacığında eklenen ve numaralandırma girilir `$switch_on$` değişmez değeri `$cases$` değişmez değeri oluşturur bir `case` listedeki her bir değer ifadesi.  
-  
-```  
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekte nasıl kullanılacağını gösterir `GenerateSwitchCases` işlevi. Ne zaman bu kod parçacığında eklenen ve numaralandırma girilir `$switch_on$` değişmez değeri `$cases$` değişmez değeri oluşturur bir `case` listedeki her bir değer ifadesi.  
+
+```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
     <CodeSnippet Format="1.0.0">  
         <Header>  
@@ -74,12 +79,13 @@ ms.lasthandoff: 12/22/2017
         </Snippet>  
     </CodeSnippet>  
 </CodeSnippets>  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl kullanılacağını gösterir `ClassName` işlevi. Bu kod parçacığında takıldığında `$classname$` değişmez değeri kodu dosyanın bu konumda kapsayan sınıfın adı ile değiştirilir.  
-  
-```  
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekte nasıl kullanılacağını gösterir `ClassName` işlevi. Bu kod parçacığında takıldığında `$classname$` değişmez değeri kodu dosyanın bu konumda kapsayan sınıfın adı ile değiştirilir.
+
+```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
     <CodeSnippet Format="1.0.0">  
         <Header>  
@@ -120,12 +126,13 @@ ms.lasthandoff: 12/22/2017
         </Snippet>  
     </CodeSnippet>  
 </CodeSnippets>  
-```  
-  
-## <a name="example"></a>Örnek  
- Bu örnek nasıl kullanılacağını gösterir `SimpleTypeName` işlevi. Bu kod parçacığında bir kod dosyaya eklendiğinde, `$SystemConsole$` değişmez değeri ile en basit biçimi değiştirilecek <xref:System.Console> kod parçacığını çağrıldığı bağlam türü.  
-  
-```  
+```
+
+## <a name="example"></a>Örnek
+
+Bu örnek nasıl kullanılacağını gösterir `SimpleTypeName` işlevi. Bu kod parçacığında bir kod dosyaya eklendiğinde, `$SystemConsole$` değişmez değeri ile en basit biçimi değiştirilecek <xref:System.Console> kod parçacığını çağrıldığı bağlam türü.  
+
+```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
     <CodeSnippet Format="1.0.0">  
         <Header>  
@@ -152,8 +159,9 @@ ms.lasthandoff: 12/22/2017
         </Snippet>  
     </CodeSnippet>  
 </CodeSnippets>  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlev öğesi (IntelliSense kod parçacıkları)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
- [Kod Parçacıkları Şema Başvurusu](../ide/code-snippets-schema-reference.md)
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşlev öğesi](../ide/code-snippets-schema-reference.md#function)  
+[Kod Parçacıkları Şema Başvurusu](../ide/code-snippets-schema-reference.md)

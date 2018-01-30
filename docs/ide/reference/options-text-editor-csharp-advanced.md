@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,19 +19,20 @@ helpviewer_keywords:
 - outlining options [C#]
 - XML documentation, creating
 ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 1f7bcff6d2e94944985789db2bf0ac80150a478e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 193b61ab95daa84c5815c251c7d52103c88977e1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-c-advanced"></a>Seçenekler, Metin Düzenleyici, C#, Gelişmiş
-Biçimlendirme Düzenleyicisi'nde, yeniden düzenleme kod ve XML belgeleri yorumları ayarları Visual C# için değiştirmek için bu iletişim kutusunu kullanın. Bu iletişim kutusunu erişmek için tıklatın **seçenekleri** üzerinde **Araçları** menüsünde genişletin **metin düzenleyici** klasörünü genişletin **C#**ve 'ıtıklatın **Gelişmiş**.  
+Biçimlendirme Düzenleyicisi'nde, yeniden düzenleme kod ve XML belge açıklamaları için C# ayarlarını değiştirmek için bu iletişim kutusunu kullanın. Bu iletişim kutusunu erişmek için tıklatın **seçenekleri** üzerinde **Araçları** menüsünde genişletin **metin düzenleyici** klasörünü genişletin **C#**ve 'ıtıklatın **Gelişmiş**.  
   
 > [!NOTE]
 >  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).  
@@ -76,9 +78,9 @@ Bildirme ve bilinmeyen bir türe kullanarak veya bilinmeyen bir özelliğe başv
   
 ## <a name="organize-usings"></a>Using'leri düzenleme  
  'System' yönergeleri kullanımları sıralarken önce yerleştirin  
- Seçili olduğunda, `System` kullanma yönergeleri görünen diğer önce yönergeleri kullanarak. Daha fazla bilgi için bkz: Düzenle kullanımları [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation).  
+ Seçili olduğunda, `System` kullanma yönergeleri görünen diğer önce yönergeleri kullanarak. Daha fazla bilgi için bkz: Düzenle kullanımları [C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML belgeleri yorumları](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [Dile özgü Düzenleyici seçeneklerini ayarlama](../../ide/reference/setting-language-specific-editor-options.md)   
- [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+ [C# IntelliSense](../../ide/visual-csharp-intellisense.md)

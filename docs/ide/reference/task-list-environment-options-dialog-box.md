@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,17 @@ helpviewer_keywords:
 - tokens, and the Task List
 - Task List, comment tasks
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b6f8adfd3ce7d585cffe3c7506c4fdd56cad4a11
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 475c228dc7031dbb7cb98d9f325fcce89f31223b
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Görev Listesi, Ortam, Seçenekler İletişim Kutusu
 Bu seçenekler sayfası eklemek, silmek ve oluşturma yorum belirteçleri değiştirmenizi sağlar **görev listesi** anımsatıcıları. Bu ayarları görüntülemek için seçin **seçenekleri** gelen **Araçları** menüsünde genişletin **ortam** klasörünü seçin **görev listesi**.  
@@ -51,7 +53,7 @@ Bu seçenekler sayfası eklemek, silmek ve oluşturma yorum belirteçleri deği�
  Kodunuzu metni başlıyorsa uygulamasından bir belirteç içine bir yorum eklediğinizde **belirteç listesi**, **görev listesi** dosya düzenlenmek üzere açıldıktan her yorumunuzu yeni bir girdi olarak görüntüler. Bu tıklayabilirsiniz **görev listesi** doğrudan kodunuzda açıklama satırı atlamak için girişi. Daha fazla bilgi için bkz: [görev listesini kullanma](../../ide/using-the-task-list.md).  
   
  Belirteç Listesi  
- Belirteçleri listesini görüntüler ve özel belirteçler ekleyip olanak tanır. Açıklama, Visual C# ve Visual C++, ancak Visual Basic'te büyük küçük harfe duyarlı belirteçleridir.  
+ Belirteçleri listesini görüntüler ve özel belirteçler ekleyip olanak tanır. Açıklama, C# ve Visual C++, ancak Visual Basic'te büyük küçük harfe duyarlı belirteçleridir.  
   
 > [!NOTE]
 >  Tam olarak gösterildiği gibi istenen belirteci yazmazsanız **belirteç listesi**, bir açıklama görev içinde görüntülenmez **görev listesi**.  

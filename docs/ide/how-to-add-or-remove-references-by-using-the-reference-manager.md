@@ -4,12 +4,14 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.ReferenceManager
+f1_keywords:
+- VS.ReferenceManager
 helpviewer_keywords:
-- Visual C# projects, references
+- C# projects, references
 - references [Visual Studio], adding
 - assemblies [Visual Studio], references
 - Visual Basic projects, references
@@ -23,12 +25,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 34dd559abcbfa6172c52edd2ed5eae2898f0b358
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: aefd0227717352e449b51950620d0f0900cf2e60
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Nasıl yapılır: ekleme veya başvuru Yöneticisi'ni kullanarak başvuruları kaldırma
 
@@ -161,7 +164,7 @@ Windows sekmesi, Windows işletim sisteminin çalıştığı platformlara özgü
 
 Visual Studio'da bir WinMD dosyasını iki şekilde oluşturabilirsiniz:
 
-- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]yönetilen uygulama projeleri**: [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] uygulaması projeleri çıktı WinMD ikili dosyaları proje özellikleri &#124; ayarlayarak Çıktı türü = WinMD dosyası. WinMD dosya adı, içinde varolan tüm alan adlarının üst küme alan adı olmalıdır. Örneğin, bir proje A.B ve A.B.C ad alanlarından oluşuyorsa, çıktısı verilen WinMD için olası adlar A.winmd ve A.B.winmd olur. Bir kullanıcı bir proje özellikleri &#124;girerse; Derleme adı veya proje özellikleri &#124; Ayrık ad alanları projeye kümesinden Namespace değer veya bir projede hiç üst ad alanı, bir derleme uyarı oluşturulduğu: 'A.winmd' Bu derleme için bir geçerli .winmd dosya adı değil. Bir Windows Meta Veri dosyası içindeki tüm türler, dosya adının bir alt ad alanında mevcut olmalıdır. Dosya adı bir alt ad alanında var olmayan türleri çalışma zamanında bulunması mümkün olmayacaktır. Bu derlemede, en küçük ortak ad alanı 'CSWSClassLibrary1'dir. Bir masaüstü Visual Basic veya Visual C# projesi kullanarak, oluşturulan WinMDs yalnızca tüketebileceği [!INCLUDE[win8](../debugger/includes/win8_md.md)] birinci taraf WinMDs bilinir ve WinMDs oluşturulamıyor, SDK.
+- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]yönetilen uygulama projeleri**: [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] uygulaması projeleri çıktı WinMD ikili dosyaları proje özellikleri &#124; ayarlayarak Çıktı türü = WinMD dosyası. WinMD dosya adı, içinde varolan tüm alan adlarının üst küme alan adı olmalıdır. Örneğin, bir proje A.B ve A.B.C ad alanlarından oluşuyorsa, çıktısı verilen WinMD için olası adlar A.winmd ve A.B.winmd olur. Bir kullanıcı bir proje özellikleri &#124;girerse; Derleme adı veya proje özellikleri &#124; Ayrık ad alanları projeye kümesinden Namespace değer veya bir projede hiç üst ad alanı, bir derleme uyarı oluşturulduğu: 'A.winmd' Bu derleme için bir geçerli .winmd dosya adı değil. Bir Windows Meta Veri dosyası içindeki tüm türler, dosya adının bir alt ad alanında mevcut olmalıdır. Dosya adı bir alt ad alanında var olmayan türleri çalışma zamanında bulunması mümkün olmayacaktır. Bu derlemede, en küçük ortak ad alanı 'CSWSClassLibrary1'dir. Bir masaüstü Visual Basic veya C# projesi kullanarak, oluşturulan WinMDs yalnızca tüketebileceği [!INCLUDE[win8](../debugger/includes/win8_md.md)] birinci taraf WinMDs bilinir ve WinMDs oluşturulamıyor, SDK.
 
 - **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]uygulaması yerel projeleri**: meta verileri yalnızca yerel bir WinMD dosyası oluşur. Uygulaması ayrı bir DLL dosyası içinde var olur. Bir oluşturabilirsiniz yerel ikili dosyaları Windows çalışma zamanı bileşeni proje şablonu seçerek **yeni proje** iletişim kutusu ya da boş bir proje başlatarak ve WinMD dosyası oluşturmak için proje özelliklerini değiştirme. Proje kopuk ad alanlarından oluşuyorsa, bir yapı hatası kullanıcıya ad alanlarını birleştirmesi veya MSMerge aracını çalıştırması gerektiğini söyler.
 

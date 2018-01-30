@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 42d412e576ddf9ca53f79b7349d99b87b9ef3238
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 0fe2ab7f174f71933d474aa4737dc713c6540492
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Nasıl Yapılır: Derleme Olayları Belirtme (Visual Basic)
 Derleme olayları Visual Basic komut dosyaları, makroları veya başka eylemler derlemeyi işleminin bir parçası olarak çalıştırmak için kullanılabilir. Oluşturma öncesi olaylar derleme önce oluşur; derleme sonrası olayları derleme sonra oluşur.  
@@ -165,9 +167,9 @@ Derleme olayları Visual Basic komut dosyaları, makroları veya başka eylemler
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />  
     ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme özelliklerini yönetme](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
- [Derle sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [Yayımla Sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md)   
- [Derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [Nasıl Yapılır: Derleme Olayları Belirtme (C#)](../ide/how-to-specify-build-events-csharp.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Derle sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
+[Yayımla Sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md)   
+[Derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
+[Nasıl Yapılır: Derleme Olayları Belirtme (C#)](../ide/how-to-specify-build-events-csharp.md)

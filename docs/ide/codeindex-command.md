@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - TFSConfig
 - CodeIndex command [Team Foundation Server]
 ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3f181dccce6239cc8014e8e8ebf54c2e53794a50
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 350708309cdc7a65b8c991454704dc9212f20ef8
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="codeindex-command"></a>CodeIndex Komutu
 Kullanım **Codeındex** Team Foundation Server'ı dizin kodu yönetmek için komutu. Örneğin, CodeLens bilgi düzeltin veya sunucu performans sorunları araştırmak için dizin oluşturma devre dışı açmak için dizin sıfırlamak isteyebilirsiniz.  
@@ -55,7 +57,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/listLargeFiles [/ fileCount:** `FileCount` **/minSize:** `MinSize`]|KB cinsinden belirtilen boyutu aşan dosyaları belirtilen sayısını gösterir. Daha sonra **/ignoreList** dizine almasını bu dosyaları dışarıda bırak seçeneği.|  
 |**/reindexAll**|Daha önce oluşturulmuş verilerini temizlemek ve dizin yeniden başlatın.|  
 |**/destroyCodeIndex [/noPrompt]**|Kod dizini silin ve tüm dizinlenmiş veri kaldırın. Kullanırsanız onayı gerektirmeyen **/noPrompt** seçeneği.|  
-|**/temporaryDataSizeLimit**: [Görünüm &#124; <`SizeInGBs`> &#124; devre dışı bırak]|Değişiklik kümeleri işlerken CodeLens oluşturur ne kadar geçici veri denetimi. Varsayılan sınırı 2 GB'dir.<br /><br /> -   **Görünüm**: Geçerli boyut sınırını gösterir.<br />-   `SizeInGBs`: Boyut sınırını değiştirin.<br />-   **devre dışı**: boyut sınırını kaldırın.<br /><br /> Yeni bir değişiklik kümesi CodeLens işlemeden önce bu sınırı denetlenir. Geçici verileri bu sınırı aşarsa, CodeLens değil yenilerini değişiklik işleme duraklatılır. CodeLens veri temizlenir ve bu sınırın altına düştüğünde sonra işleme yeniden başlar. Temizleme günde bir kez otomatik olarak çalıştırır. Başka bir deyişle, geçici verileri çalışan temizleme başlatana kadar bu sınırı aşabilir.|  
+|**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|Değişiklik kümeleri işlerken CodeLens oluşturur ne kadar geçici veri denetimi. Varsayılan sınırı 2 GB'dir.<br /><br /> -   **Görünüm**: Geçerli boyut sınırını gösterir.<br />-   `SizeInGBs`: Boyut sınırını değiştirin.<br />-   **devre dışı**: boyut sınırını kaldırın.<br /><br /> Yeni bir değişiklik kümesi CodeLens işlemeden önce bu sınırı denetlenir. Geçici verileri bu sınırı aşarsa, CodeLens değil yenilerini değişiklik işleme duraklatılır. CodeLens veri temizlenir ve bu sınırın altına düştüğünde sonra işleme yeniden başlar. Temizleme günde bir kez otomatik olarak çalıştırır. Başka bir deyişle, geçici verileri çalışan temizleme başlatana kadar bu sınırı aşabilir.|  
 |**/indexHistoryPeriod**: [Görünüm &#124; tüm &#124; <`NumberOfMonths`>]|Denetim değişiklik geçmişinizi dizin ne kadar süre. Başka bir etkiler, ne kadar geçmiş CodeLens size gösterir. Varsayılan sınır 12 ay ' dir. Bu, yalnızca son 12 ay değişiklik geçmişinizden CodeLens gösterir anlamına gelir.<br /><br /> -   **Görünüm**: geçerli ay sayısını gösterir.<br />-   **tüm**: tüm değişiklik geçmişi dizin.<br />-   `NumberOfMonths`: Dizin değişiklik geçmişi için kullanılan ay sayısını değiştirin.|  
 |**/CollectionName:**`CollectionName`|Takım projesi koleksiyonu çalıştırılacağı adını belirtir **Codeındex** komutu. Kullanmayın, gerekli **/CollectionId**.|  
 |**/collectionId:**`CollectionId`|Takım projesi koleksiyonu çalıştırmak için kimlik numarasını belirtir **Codeındex** komutu. Kullanmayın, gerekli **/CollectionName**.|  
@@ -128,5 +130,4 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CodeLens ile kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md)  
-[Sunucu yapılandırmasını TFSConfig ile yönetme](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)  
-[TFS için komut satırı araçları](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)
+[Sunucu yapılandırmasını TFSConfig ile yönetme](/vsts/tfs-server/command-line/tfsconfig-cmd)

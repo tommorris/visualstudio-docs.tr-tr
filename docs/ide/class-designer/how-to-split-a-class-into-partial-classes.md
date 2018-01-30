@@ -4,30 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4d550b5b6df7b799f00b0043846be387cb6e6322
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9e9d1b0dca7c8e9d152a84273410e4bd7d768508
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Nasıl Yapılır: Sınıfı Kısmi Sınıflara Bölme (Sınıf Tasarımcısı)
-Kullanarak bir sınıf veya yapı birkaç bildirimler arasında bildirimi bölebilirsiniz `Partial` Visual Basic anahtar sözcüğü veya `partial` anahtar sözcüğü Visual C# içinde. İstediğiniz sayıda farklı kaynak dosyaları veya bir kaynak dosyasında istediğiniz sayıda kısmi bildirimleri kullanabilirsiniz. Ancak, tüm bildirimler aynı bütünleştirilmiş kodda ve aynı ad olmalıdır.  
+Kullanarak bir sınıf veya yapı birkaç bildirimler arasında bildirimi bölebilirsiniz `Partial` Visual Basic anahtar sözcüğü veya `partial` C# anahtar sözcüğü. İstediğiniz sayıda farklı kaynak dosyaları veya bir kaynak dosyasında istediğiniz sayıda kısmi bildirimleri kullanabilirsiniz. Ancak, tüm bildirimler aynı bütünleştirilmiş kodda ve aynı ad olmalıdır.  
   
 Kısmi sınıflar birkaç durumlarda faydalıdır. Örneğin, bir sınıfın birden fazla dosyaya ayırarak büyük projeler üzerinde çalışırken, aynı anda üzerinde çalışması birden fazla Programcı sağlar. Visual Studio'nun oluşturduğu kodu ile çalışırken, kaynak dosyayı yeniden oluşturmak zorunda kalmadan sınıfı değiştirebilirsiniz. (Windows Forms ve Web hizmeti sarmalayıcı kodu Visual Studio'nun oluşturduğu kod örnekleri içerir.) Bu nedenle, Visual Studio oluşturur dosyasını değiştirmek zorunda kalmadan otomatik olarak oluşturulan sınıfları kullanan kodu oluşturabilirsiniz.  
   
-Kısmi yöntemler iki tür vardır. Visual C# projesinde, bunlar bildirme ve uygulama olarak adlandırılır; Visual Basic'te, bunlar bildirimi ve uygulama adı verilir.  
+Kısmi yöntemler iki tür vardır. C# ' ta bunlar bildirme ve uygulama olarak adlandırılır; Visual Basic'te, bunlar bildirimi ve uygulama adı verilir.  
   
 Sınıf Tasarımcısı kısmi sınıflar ve yöntemler destekler. Sınıf diyagramında türü şekli parçalı sınıf için bir tek bildirimi konumu ifade eder. Parçalı sınıf içinde birden çok dosya tanımlanmışsa Sınıf Tasarımcısı ayarlayarak kullanacağınız bildirimi konumu belirtebilirsiniz **yeni üye konumu** özelliğinde **özellikleri** penceresi. Bir sınıf şekli çift tıkladığınızda, diğer bir deyişle, Sınıf Tasarımcısı tarafından tanımlanan sınıf bildirimi içeren kaynak dosyası gider **yeni üye konumu** özelliği. Bir sınıf şekli kısmi yönteminde çift tıkladığınızda, Sınıf Tasarımcısı için kısmi yöntem bildirimi gider. Ayrıca, **özellikleri** penceresinde **dosya adı** özellik bildirimi konuma başvuruyor. Kısmi sınıflar için **dosya adı** tüm bu sınıf için bildirim ve uygulama kodu içeren dosyaları listeler. Ancak, kısmi yöntemler için **dosya adı** kısmi yöntem bildirimi içeren dosyanın listeler.  
   
@@ -56,7 +58,7 @@ End Class
 ```  
 
 ## <a name="example"></a>Örnek  
-Bir sınıf tanımı Visual C# ' ta bölmek için kullanın `partial` aşağıdaki örnekte gösterildiği gibi anahtar.  
+Bir sınıf tanımı C# bölmek için kullanın `partial` aşağıdaki örnekte gösterildiği gibi anahtar.  
   
 ```csharp  
 // First part of class definition.  

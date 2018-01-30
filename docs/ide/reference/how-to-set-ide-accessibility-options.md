@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 08/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: accessibility [Visual Studio]
+helpviewer_keywords:
+- accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e7b7623a60f5a6e06739596b02125806205c07b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6881e90a0035ed7c918acab924832013d9b17088
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Nasıl Yapılır: IDE Erişilebilirlik Seçeneklerini Ayarlama
 > [!TIP]
@@ -33,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="editors-dialogs-and-tool-windows"></a>Düzenleyiciler, iletişim kutuları ve araç pencereleri  
  Varsayılan olarak, iletişim kutuları ve aracı windows tarafından [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] renk ve yazı tipi boyutu ile aynı işletim sistemi olarak kullanın. IDE, iletişim kutuları, araç çubukları ve aracı windows çerçeve renk ayarlarını bağlı bir renk şeması: açık veya koyu. Geçerli renk temasını değiştirebileceğiniz [genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md).  
 
- Düzenleyicinin kod görünümünde açılır pencereleri de görüntüleyebilirsiniz. Bu windows bir işlevi veya deyimi tamamlamak için kullanılabilir üyeler geçerli nesne ve parametreleri isteyebilir. Bu windows yazmaya ilişkin zorluk varsa yararlı olabilir. Ancak, bazı kullanıcılar için sorunlu Kod düzenleyicisinde odak kesintiye uğratabilir. Seçenekler iletişim kutusu açılarak ve temizleme bu windows oturumunu kapatabilirsiniz **otomatik listesi üyeleri** ve **parametre bilgilerini** içinde **metin düzenleyici**, **tüm Dilleri**, **genel** sayfasındaki **seçenekleri** iletişim kutusu. Daha fazla bilgi için bkz: [nasıl yapılır: Genel Düzenleyici seçeneklerini ayarlama](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Düzenleyicinin kod görünümünde açılır pencereleri de görüntüleyebilirsiniz. Bu windows bir işlevi veya deyimi tamamlamak için kullanılabilir üyeler geçerli nesne ve parametreleri isteyebilir. Bu windows yazmaya ilişkin zorluk varsa yararlı olabilir. Ancak, bazı kullanıcılar için sorunlu Kod düzenleyicisinde odak kesintiye uğratabilir. Seçenekler iletişim kutusu açılarak ve temizleme bu windows oturumunu kapatabilirsiniz **otomatik listesi üyeleri** ve **parametre bilgilerini** içinde **metin düzenleyici**, **tüm Dilleri**, **genel** sayfasındaki **seçenekleri** iletişim kutusu.
 
  Çalışma biçimini en iyi uyacak şekilde tümleşik geliştirme ortamı (IDE) windows düzenleyebilirsiniz. Yerleştirme, float Gizle veya otomatik olarak her araç penceresi gizle.  
 

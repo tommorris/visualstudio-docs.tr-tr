@@ -1,30 +1,32 @@
 ---
-title: "Visual C# kod parçacıkları | Microsoft Docs"
+title: "C# kod parçacıkları | Microsoft Docs"
 ms.custom: 
 ms.date: 06/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
 - Code Snippet Inserter [C#]
-- Visual C#, default snippets
+- C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
-caps.latest.revision: "33"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 4ab98d4a4f589959982bdcb584189b30923ddbc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 04b75cb77a41d69edfae565660d7dbabe6c10ee9
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-code-snippets"></a>Visual C# Kod Parçacıkları
+# <a name="c-code-snippets"></a>C# kod parçacıkları
 Kod parçacıkları, kodunuza hızla ekleyebilirsiniz kodunun hazır parçacıklarıdır. Örneğin, `for` kod parçacığını oluşturur boş bir `for` döngü. Bazı kod parçacıkları, kod satırlarını seçmenizi sağlar ve ardından kod seçili satırları içeren bir kod parçacığı Çevrele kod parçacıklarını, ' dir. Örneğin, ne zaman, kod satırı seçin ve ardından etkinleştirmeniz `for` kod parçacığını oluşturduğu bir `for` döngü Bu döngü bloğunun kod satırları ile. Kod parçacıkları daha hızlı, kolay ve daha güvenilir kod yazma programını yapabilirsiniz.  
 
  Kod parçacığı İmleç konumuna Ekle veya şu anda seçili kodu geçici Çevrele kod parçacığı Ekle. Kod parçacığı ekleyici aracılığıyla çağrılır **kod parçacığını ekleyin** veya **Surround With** komutlarını **IntelliSense** menüsünde veya CTRL + K klavye kısayollarını kullanma ve ardından X veya CTRL + K ve sonra S sırasıyla.  
@@ -53,7 +55,7 @@ Kod parçacıkları, kodunuza hızla ekleyebilirsiniz kodunun hazır parçacıkl
 |foreach|Oluşturur bir [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) döngü.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|  
 |forr|Oluşturur bir [için](/dotnet/csharp/language-reference/keywords/for) bu azaltır Döngü değişkeninin her yinelemeden sonra döngü.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|  
 |if|Oluşturur bir [varsa](/dotnet/csharp/language-reference/keywords/if-else) bloğu.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|  
-|Dizin Oluşturucu|Bir dizin oluşturucu bildirimi oluşturur.|Bir sınıf veya yapı içinde.|  
+|indexer|Bir dizin oluşturucu bildirimi oluşturur.|Bir sınıf veya yapı içinde.|  
 |arabirim|Oluşturur bir [arabirimi](/dotnet/csharp/language-reference/keywords/interface) bildirimi.|(Genel ad alanı dahil) bir ad alanı, bir sınıf veya yapı içinde.|  
 |Çağırma|Bir olay güvenle çağıran bir blok oluşturur.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|  
 |iterator|Yineleyici oluşturur.|Bir sınıf veya yapı içinde.|  

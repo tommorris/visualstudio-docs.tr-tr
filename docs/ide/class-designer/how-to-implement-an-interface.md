@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - interfaces [Visual Studio], implementing
 - interfaces [Visual Studio]
 ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c926da09cb8bbb191d0d307dd9e8ce16cfef3c20
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 819fdb15a436dbdb4059d7ecef3e23d95c0aebe4
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Nasıl Yapılır: Arabirimi Uygulama (Sınıf Tasarımcısı)
 Sınıf Tasarımcısı'nda kod için arabirim yöntemleri sağlayan bir sınıf bağlanarak arabirim sınıf diyagramında uygulayabilirsiniz. Sınıf Tasarımcısı bir arabirim uygulaması oluşturur ve bir devralma ilişkisi arabirimi ve sınıfı arasındaki ilişkiyi gösterir. Arabirim arabirimi ve sınıf arasında bir devralma satırı çizim veya sınıf görünümünden arabirimi sürükleyerek uygulayabilirsiniz.  
@@ -45,7 +47,7 @@ Sınıf Tasarımcısı'nda kod için arabirim yöntemleri sağlayan bir sınıf 
 2.  Sınıf Görünümü açın ve arabirim bulun.  
   
     > [!TIP]
-    >  Sınıf Görünümü açık değilse, sınıf görünümünden açmak **Görünüm** menüsü. Sınıf Görünümü hakkında daha fazla bilgi için bkz: [görüntüleme sınıflar ve Their üyeleri](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+    > Sınıf Görünümü açık değilse, sınıf görünümünden açmak **Görünüm** menüsü.
   
 3.  Arabirim düğümü diyagramı sınıfı şekle sürükleyin.  
   
@@ -55,4 +57,4 @@ Sınıf Tasarımcısı'nda kod için arabirim yöntemleri sağlayan bir sınıf 
 [Nasıl yapılır: Sınıf Tasarımcısı kullanarak türleri oluşturma](how-to-create-types.md)   
 [Nasıl yapılır: Varolan türleri görüntüleme](how-to-view-existing-types.md)   
 [Nasıl yapılır: türler arasında devralmayı oluşturma](how-to-create-inheritance-between-types.md)   
-[Sınıfları ve türleri yeniden düzenleme](refactoring-classes-and-types.md)
+[Sınıfları ve Türleri Yeniden Düzenleme](refactoring-classes-and-types.md)

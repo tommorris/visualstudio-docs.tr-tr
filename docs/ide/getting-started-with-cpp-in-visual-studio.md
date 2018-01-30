@@ -8,13 +8,15 @@ ms.topic: get-started-article
 author: corob-msft
 ms.author: tglee
 manager: ghogen
-dev_langs: CPP
-ms.workload: cplusplus
-ms.openlocfilehash: 9c0a7a8e206704e1b7cd694a91f376f4ec531d6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2e0e0709b8a1737e3f78268ec324d4481dac285a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio'da C++ kullanmaya başlama
 
@@ -152,7 +154,7 @@ Bu hızlı başlangıç Tamamlanıyor Tebrikler! Daha fazla örnek keşfetmek, b
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Masaüstü Geliştirmesi için Visual Studio IDE Kullanma](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[İzlenecek yol: Visual C# veya Visual Basic ile Basit Uygulama Oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+[İzlenecek yol: C# veya Visual Basic ile basit uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
 [Visual Studio için Üretkenlik İpuçları](../ide/productivity-tips-for-visual-studio.md)  
 [Visual Studio Örnekleri](../ide/visual-studio-samples.md)  
 [Visual Studio ile Geliştirmeye Başlama](../ide/get-started-developing-with-visual-studio.md)

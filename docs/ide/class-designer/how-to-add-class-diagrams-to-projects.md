@@ -4,26 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
-caps.latest.revision: "39"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: acd999878d112f236a1ee02f495fc9d10a9a735c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e4017c5944a6cbc2e8f04980cdd349be92c02717
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)
-Tasarlamak için Visual C# .NET, Visual Basic .NET ya da C++ projeniz için bir sınıf diyagramı düzenleme ve düzenleme sınıfları ve diğer türleri ekleyin. Bir proje kodda farklı kısımlarını görselleştirmek için birden çok sınıf diyagramları projeye ekleyin.  
+Tasarlama, düzenleme ve sınıfları ve diğer türleri yeniden düzenlemeniz için bir sınıf diyagramı C#, Visual Basic veya C++ projenize ekleyin. Bir proje kodda farklı kısımlarını görselleştirmek için birden çok sınıf diyagramları projeye ekleyin.  
   
 Sınıf diyagramları kod birden çok uygulama arasında paylaşmak projelerden oluşturulamıyor. UML sınıf diyagramları oluşturmak için bkz: [oluşturma UML modelleme projeleri ve diyagramları](../../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
@@ -56,4 +58,4 @@ Sınıf diyagramları kod birden çok uygulama arasında paylaşmak projelerden 
 [Nasıl yapılır: Varolan türleri görüntüleme](how-to-view-existing-types.md)   
 [Sınıfları ve türleri tasarlama](designing-classes-and-types.md)   
 [Türleri ve ilişkilendirmeleri görüntüleme](viewing-types-and-relationships.md)   
-[Sınıf diyagramları ile çalışma](working-with-class-diagrams.md)
+[Sınıf Diyagramları ile Çalışma](working-with-class-diagrams.md)

@@ -1,5 +1,5 @@
 ---
-title: "Ürün anahtarı kullanma"
+title: "Ürün anahtarları kullanma | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,13 +9,14 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 6d0da452a205042cee2b2c0b41990da50b303b3f
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde ürün anahtarları kullanma
+
 ## <a name="product-keys-overview"></a>Ürün anahtarları genel bakış
 Visual Studio abonelik çeşitli Microsoft ürünleri tasarlama, geliştirme, test ve gösteren uygulamalar için erişim sağlar. Yükleme sırasında bu ürünler bazıları ürün anahtarlarını gerektirir ve bazıları etkinleştirme gerektirir.
 
@@ -45,7 +46,7 @@ Aboneliğinize bir 24 saatlik süre içinde anahtarları kullanılabilir en fazl
 Bizim araştırma çoğu aboneleri kendi aboneliğine dahil ürün anahtarları sayısı tarafından kapsanan gösterir. Bir ek anahtar gerekiyorsa, Visual Studio abonelik aracılığıyla bir istek gönderebilir [Müşteri Hizmetleri](https://www.visualstudio.com/subscriptions/support/) ve onay olay olarak kabul edilir.
 
 ## <a name="locating-and-claiming-product-keys"></a>Bulma ve ürün anahtarları istenmesini
-Ürün anahtarlarınızı görüntülemek için Visual Studio aboneliğiniz oturum açmanız gerekir. Bireysel ürün anahtarları, mavi seçerek bulunduğunda **alma anahtar** bağlamak için belirli bir ürünü [indirir](https://my.visualstudio.com/downloads) sayfasında aşağıda gösterildiği gibi.  Tüm anahtarları üzerinde toplama içinde de kullanılabilir [ürün anahtarlarını](https://my.visualstudio.com/productkeys) sayfası. Tek bir ürün için birden çok anahtar mevcut olduğunda notları hangi anahtarının kullanılması gerektiğini belirlemenize yardımcı olması yükleme için Notlar sütunda görüntülenir.
+Ürün anahtarlarınızı görüntülemek için Visual Studio aboneliğiniz oturum açmanız gerekir. Bireysel ürün anahtarları, mavi seçerek bulunduğunda **alma anahtar** bağlamak için belirli bir ürünü [indirir](https://my.visualstudio.com/downloads) sayfasında aşağıda gösterildiği gibi.  Tüm anahtarları üzerinde toplama içinde de kullanılabilir [ürün anahtarlarını](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) sayfası. Tek bir ürün için birden çok anahtar mevcut olduğunda notları hangi anahtarının kullanılması gerektiğini belirlemenize yardımcı olması yükleme için Notlar sütunda görüntülenir.
 
 ![İndirme sayfasından anahtarı alma](_img/product-keys/download-get-key.png)
 
@@ -65,7 +66,7 @@ Anahtar türleri çeşitli ürün bağlı olarak kullanılabilir.
 |    Statik etkinleştirme anahtarı    |    Statik etkinleştirme anahtarı etkinleştirme gerektirmeyen ürünler için sağlanır. Yüklemeleri herhangi bir sayı için kullanılabilir.                                                                                                                  |
 |    Özel anahtar                 |    Özel anahtarları, özel eylemler veya etkinleştirmek veya ürünü yüklemek için bilgi sağlar.                                                                                                                                                                |
 |    VA 1.0                     |    Çoklu Etkinleştirme anahtarları, bir MAK benzer bunlar.                                                                                                                                                                                                 |
-|    OEM anahtarını                    |    Birden çok etkinleştirmeleri izin orijinal ekipman üreticisi anahtarları şunlardır.                                                                                                                                                                       |
+|    OEM Key                    |    Birden çok etkinleştirmeleri izin orijinal ekipman üreticisi anahtarları şunlardır.                                                                                                                                                                       |
 |    DreamSpark perakende anahtarı    |    Bu perakende anahtarlar için DreamSpark ve tek bir etkinleştirmeye izin verin. DreamSpark perakende anahtarları toplu olarak verilir ve öncelikle Öğrenci tüketimi için tasarlanmıştır.                                                                                     |
 |    DreamSpark Laboratuvar anahtarı         |    Bu Laboratuvar kullanım anahtarları için DreamSpark programlar ve birden çok izin veren. DreamSpark Laboratuvar anahtarları university bilgisayar Laboratuvar senaryolarda kullanım için tasarlanmıştır.                                                                                       |
 |    DreamSpark MAK anahtarı         |    MAK anahtarlarını DreamSpark program müşteriler için bunlar.                                                                                                                                                                                                  |
@@ -79,7 +80,7 @@ Yalnızca etkin abonelikleri olan aboneler ürünleri indirir ve ürün anahtarl
 
 Bir ürün anahtarı talep için:
 1.  Visual Studio aboneliğiniz oturum açın.  Ürünleri indirir veya ürün anahtarlarını talep için oturum açmanız gerekir. 
-2.  Tıklayın [ürün anahtarlarını](https://my.visualstudio.com/productkeys) sekmesi.
+2.  Tıklayın [ürün anahtarlarını](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) sekmesi.
 3.  Ürün anahtarları, ürün adına göre alfabetik olarak listelenir.  İstenen ürün veya sayfanın en üstünde arama çubuğunu kullanarak ara adını ya da kaydırın kullanabilirsiniz.  
 ![Ürün anahtarı arayın](_img\product-keys\visio-product-key-cropped.png)
 
@@ -91,7 +92,7 @@ Size, otomatik olarak "sizin için istenen"olarak işaretlenmiş statik ve diğe
 
 **Önemli: aboneliğiniz sona ererse, artık yeni anahtarlar talep veya talep edilen anahtarlarınızı verme kuramaz.** 
 
-Anahtarlarınızı dışarı aktarmak için yalnızca tıklayın **tüm anahtarları dışa** ürün anahtarları sayfanın sağ uçta düğmesi.  Dosyayı açmak veya kaydetmek için seçeneği elde edersiniz ve KeysExport.xml başlıklı bir .xml dosyası oluşturulur.  Dosyası .xml dosyaları işleme yeteneği olan bir uygulamayla açmanız gerekir.  Örneğin, bir salt okunur çalışma kitabını Excel'de olarak dosyasını açın.  
+Anahtarlarınızı dışarı aktarmak için yalnızca tıklayın **tüm anahtarları dışa** ürün anahtarları sayfanın sağ uçta bağlantı.  Dosyayı açmak veya kaydetmek için seçeneği elde edersiniz ve KeysExport.xml başlıklı bir .xml dosyası oluşturulur.  Dosyası .xml dosyaları işleme yeteneği olan bir uygulamayla açmanız gerekir.  Örneğin, bir salt okunur çalışma kitabını Excel'de olarak dosyasını açın.  
 
 ## <a name="internet-demonstrations-via-terminal-services"></a>Terminal Hizmetleri aracılığıyla Internet gösterim
 Visual Studio abonelik ile son kullanıcılar Internet gösterim programlarınızın Terminal Hizmetleri (Windows Server 2003 veya Windows Server 2008) veya Uzak Masaüstü Hizmetleri üzerinden erişim sağlamak için kullanılabilir (Windows Server 2008 R2 ve üzeri). En fazla 200 anonim kullanıcılar, bu şekilde, tanıtım aynı anda erişebilir. Tanıtım üretim verileri kullanmamanız gerekir. Visual Studio abonelerinden uygulamalarını son kullanıcılara göstermek için lisanslanmıştır. Terminal Hizmetleri (TS) veya Uzak Masaüstü Hizmetleri (RDS) kullanarak bu Internet Visual lisanslı yazılım zaman burada son kullanıcıların Visual Studio abonelik olmadan tanıtım etkileşim tek senaryo örnektir Studio abonelikler.
@@ -99,8 +100,9 @@ Visual Studio abonelik ile son kullanıcılar Internet gösterim programlarını
 Visual Studio abonelerinden gerektiği kadar çok RDS veya TS Bağlantısı nerede kullanabilirsiniz geliştirme ve test hakları yanı sıra budur.
 
 ### <a name="enabling-rds-access"></a>RDS erişimini etkinleştirme 
-Visual Studio abonelerinden RDS aracılığıyla bir Windows Server içinde sağlanan ürün anahtarı girme tarafından erişebilen kullanıcı sayısını artırabilirsiniz [ürün anahtarlarını](https://my.visualstudio.com/productkeys) sekmesi [abone portalı](https://my.visualstudio.com). Bir ürün anahtarı edinmek için ürün anahtarlarını sayfasına bağlanmak ve çalıştırdığınız Windows Server sürümünü aşağıya doğru kaydırın. ""Windows Server < sürüm > R2 Uzak Masaüstü Hizmetleri < kullanıcı veya cihaz > bağlantıları bulun ve tıklatın **talep anahtar** bağlantı. Örneğin, Windows Server 2012 R2'de RDS kullanıyorsanız ve Kullanıcı CAL'leri dağıtımınız kullanıyorsa, "Windows Server 2012 Uzak Masaüstü Hizmetleri kullanıcı" bağlantıları (50) seçin.
+Visual Studio abonelerinden RDS aracılığıyla bir Windows Server içinde sağlanan ürün anahtarı girme tarafından erişebilen kullanıcı sayısını artırabilirsiniz [ürün anahtarlarını](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) sekmesi [abone portalı](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Bir ürün anahtarı edinmek için ürün anahtarlarını sayfasına bağlanmak ve çalıştırdığınız Windows Server sürümünü aşağıya doğru kaydırın. ""Windows Server < sürüm > R2 Uzak Masaüstü Hizmetleri < kullanıcı veya cihaz > bağlantıları bulun ve tıklatın **talep anahtar** bağlantı. Örneğin, Windows Server 2012 R2'de RDS kullanıyorsanız ve Kullanıcı CAL'leri dağıtımınız kullanıyorsa, "Windows Server 2012 Uzak Masaüstü Hizmetleri kullanıcı" bağlantıları (50) seçin.
 Her tür beş anahtarları Windows Server 2008 R2 için kullanılabilir ve her anahtar 20 bağlantılarını destekler. Windows Server 2012 R2 için dört anahtarları her tür için sağlar ve 50 bağlantılarını destekler. 
+
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Windows Server'da ek bağlantıları etkinleştirmek için: 
 1.  Sunucu Yöneticisi'ni açın.
 2.  Sunucular listesi Sol Gezinti Bölmesi'nde açın.
@@ -113,4 +115,4 @@ Aşağıdaki koşullar karşılanmalıdır RDS aracılığıyla uygulamalarına 
 - En fazla 200 eş zamanlı kullanıcı bağlantıları uygulama gösterim için kullanılabilir. 
 - Kullanıcı bağlantıları etkinleştirmek için ürün anahtarlarını Visual Studio abone tarafından alınması gerekir.
 
-RD Lisansı sunucunuzda ayarlamak için yönergeler gerekiyorsa bkz [Windows Server 2012 RD Lisansı'nı yapılandırma](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Herhangi bir sorunuz varsa, lütfen ziyaret [Microsoft Uzak Masaüstü Hizmetleri Forumu](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS). 
+RD Lisansı sunucunuzda ayarlamak için yönergeler gerekiyorsa bkz [Windows Server 2012 RD Lisansı'nı yapılandırma](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Herhangi bir sorunuz varsa, lütfen ziyaret [Microsoft Uzak Masaüstü Hizmetleri Forumu](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS). 

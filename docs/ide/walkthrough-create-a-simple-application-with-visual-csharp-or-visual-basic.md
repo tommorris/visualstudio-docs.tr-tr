@@ -1,5 +1,5 @@
 ---
-title: "İzlenecek yol: Visual C# veya Visual Basic ile basit uygulama oluşturma | Microsoft Docs"
+title: "İzlenecek yol: C# veya Visual Basic ile basit uygulama oluşturma | Microsoft Docs"
 ms.custom: 
 ms.date: 10/03/2017
 ms.reviewer: 
@@ -11,18 +11,19 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 3490d9d4f88bbcc104132e35c3f86d3fe75622b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: b33816e074cf63826c931bcda0978ebdb5bb8bbe
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>İzlenecek yol: Visual C# veya Visual Basic ile Basit Uygulama Oluşturma
+# <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>İzlenecek yol: C# veya Visual Basic ile basit uygulama oluşturma
 Bu kılavuzu izleyerek araçları, iletişim kutuları ve Visual Studio ile uygulamaları geliştirirken kullanabileceğiniz tasarımcıları çoğu öğrenmeniz. Basit bir "Hello, World" uygulaması oluşturma, kullanıcı arabirimini tasarım, kodu ekleyin ve tümleşik geliştirme ortamı (IDE) çalışma hakkında bilgi edinin sırasında hatalar, hata ayıklama.
   
 ##  <a name="BKMK_ConfigureIDE"></a>IDE yapılandırın  
@@ -280,4 +281,4 @@ Tebrikler, bu izlenecek yolu tamamladınız! Çözüm ve proje dizini altında y
 ## <a name="see-also"></a>Ayrıca bkz.
 [Visual Studio 2017 yenilikler](../ide/whats-new-in-visual-studio.md)   
 [Visual Studio ile Geliştirmeye Başlarken](../ide/get-started-developing-with-visual-studio.md)   
-[Üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md)
+[Üretkenlik İpuçları](../ide/productivity-tips-for-visual-studio.md)

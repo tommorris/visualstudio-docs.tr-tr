@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -26,16 +27,17 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Hata: Web Sunucusunda Hata Ayıklama Başlatılamıyor
 
@@ -84,10 +86,12 @@ Bu hata genellikle, bir güncelleştirme, uygulama havuzları, bir IIS sıfırla
 
 ## <a name="server_error"></a>Uzak sunucu bir hata döndürdü
 
-Sorunun nedenini belirlemenize yardımcı olması için iletide döndürülen hata kodunu kontrol edin. Birkaç genel hata kodları aşağıda verilmiştir.
-- (403) Yasak. Doğru sunucu türünü ve URL bağlandığınızdan emin olun (içinde **Özellikler > Web > sunucuları** veya **Özellikler > hata ayıklama**proje türüne bağlı olarak). Ayrıca, sunucunun web.config içerdiğini doğrulayın `debug=true` derleme öğesindeki. Bu ayarları zaten doğruysa, Web uygulaması klasörünüze doğru klasör izinleri olduğunu doğrulayın. Daha fazla bilgi için bkz: [IIS yapılandırmanızı denetleyin](#vxtbshttpservererrorsthingstocheck).
+Denetleyin, [IIS günlük dosyasına](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) hata kodlarını ve ek bilgiler ve bu IIS 7 için [blog gönderisi](https://blogs.iis.net/tomkmvp/troubleshoot-a-403).
+
+Ayrıca, yaygın hata kodları ve bazı öneriler şunlardır.
+- (403) Yasak. Bu hatanın birçok olası nedenleri vardır, günlük dosyası ve web sitesi için IIS güvenlik ayarlarını kontrol edin. Sunucunun web.config içerdiğinden emin olun `debug=true` derleme öğesindeki. Web uygulaması klasörünüze doğru izinlere sahip olduğunu ve uygulama havuzu yapılandırması (parola değişmiş olabilir) doğru olduğundan emin olun. Bkz: [IIS yapılandırmanızı denetleyin](#vxtbshttpservererrorsthingstocheck). Bu ayarları zaten doğru olduğundan ve yerel olarak hata ayıklama yaptığınız, ayrıca doğru sunucu türünü ve URL bağlanan doğrulayın (içinde **Özellikler > Web > sunucuları** veya **Özellikler > hata ayıklama**, proje türüne bağlı olarak).
 - (503) sunucu kullanılamıyor. Uygulama havuzu bir hata veya yapılandırma değişikliği nedeniyle durdurulmuş. Uygulama havuzunu yeniden başlatın.
-- (404) bulunamadı. Uygulama havuzu ASP.NET doğru sürümü için yapılandırıldığından emin olun.
+- (404) Not Found. Uygulama havuzu ASP.NET doğru sürümü için yapılandırıldığından emin olun.
 
 ## <a name="aspnet"></a>ASP.NET hata ayıklama başlatılamıyor
 
@@ -125,7 +129,7 @@ Burada sorunu gidermek için ayrıntılı adımlar aldıktan sonra ve hata ayık
     
 * Web uygulaması klasörünüze doğru izinlere sahip olup olmadığını denetleyin.
 
-    IIS_IUSRS, IUSR veya uygulama havuzu okuma ile ilişkilendirilmiş belirli kullanıcı verin ve Web uygulama klasörünün hakları yürütme emin olun. Sorunu düzeltin ve uygulama havuzunu yeniden başlatın.
+    IIS_IUSRS, IUSR, size veya özel kullanıcı ilişkili olduğundan emin olun [uygulama havuzu](/iis/manage/configuring-security/application-pool-identities) okuma ve yürütme hakları Web uygulama klasörü için. Sorunu düzeltin ve uygulama havuzunu yeniden başlatın.
 
 * IIS üzerinde ASP.NET doğru sürümünün yüklü olduğundan emin olun.
 

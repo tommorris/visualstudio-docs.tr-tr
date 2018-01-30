@@ -15,17 +15,19 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: bff7a486bcb72af126dc770542f63e57af0171ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-general
+ms.workload:
+- multiple
+ms.openlocfilehash: 3dd53222baf58b0c609967bc86e3051c428073e1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Visual Studio Düzenleyicisi diğer dilleri desteği ekleme
 Visual Studio düzenleyicisinde okuma ve farklı bir bilgisayara diller gezinme nasıl destekler ve diğer diller için Visual Studio Düzenleyicisi desteği eklemek için ne hakkında bilgi edinin.  
@@ -40,10 +42,10 @@ Visual Studio düzenleyicisinde okuma ve farklı bir bilgisayara diller gezinme 
 |||||||  
 |-|-|-|-|-|-|  
 |.Bat uzantılarını dener|F#|Java|Markdown|Rust|Visual Basic|  
-|Clojure|Git|JavaDoc|Objective-C|ShaderLab|Visual C#|  
+|Clojure|Git|JavaDoc|Objective-C|ShaderLab|C#|  
 |CMake|Modaya uygun|JSON|Perl|ShellScript|Visual C++|  
 |CoffeeScript|HTML|DAHA AZ|Python|SQL|VBNet|  
-|CSS|INI|LUA|R|SWIFT|XML|  
+|CSS|INI|LUA|R|Swift|XML|  
 |Docker|Jade|Marka|Ruby|TypeScript|YAML|  
   
  Söz dizimi renklendirme ve temel deyim tamamlama ek olarak, Visual Studio ayrıca adlı bir özelliği olan [gitmek için](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Bu özellik, hızlı bir şekilde kod dosyaları, dosya yolları ve kod simgeleri aramanıza olanak sağlar. Visual Studio aşağıdaki diller için gitmek için destek sağlar.  
@@ -62,7 +64,7 @@ Visual Studio düzenleyicisinde okuma ve farklı bir bilgisayara diller gezinme 
   
 -   Visual C++  
   
--   Visual C#  
+-   C#  
   
  Bu dosya türlerini belirli bir dile henüz yüklenmemiştir desteği özellikleri açıklandığı önceki olsa bile sahip. Bazı diller için özelleştirilmiş desteğini yükleme IntelliSense gibi ek dil desteği veya ampuller gibi diğer Gelişmiş dil özellikleri sağlayabilir.  
   
@@ -71,7 +73,7 @@ Visual Studio düzenleyicisinde okuma ve farklı bir bilgisayara diller gezinme 
   
  Visual Studio aşağıdaki klasörde bulunan tüm yeni TextMate aynı ekleyin:  
   
- % USERPROFILE %\\. vs\Extensions  
+ %userprofile%\\.vs\Extensions  
   
  Durumunuza uygun yoksa bu temel yolu altında aşağıdaki klasörlerde ekleyin:  
   

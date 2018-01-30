@@ -8,12 +8,13 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4d4d302c84322388f96b37aa913e4debd3d331a7
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- multiple
+ms.openlocfilehash: 5bde32fc86610fa451aa01659401362fe4207f5c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE genel bakış
 
@@ -29,7 +30,7 @@ Veya, neredeyse her yerden alın ve çalışma almak biraz kod açabilirler. Bir
 
 ### <a name="create-mobile-apps"></a>Mobil uygulamaları oluşturma
 
-Visual C# ve Xamarin veya Visual C++ kullanarak farklı platformlar için yerel mobil uygulamalar veya JavaScript Apache Cordova ile kullanarak karma uygulamalar oluşturabilirsiniz. Unity, gerçekleşmemiş hesabı, DirectX, Cocos ve daha fazla bilgi için mobil oyunlar yazabilirsiniz. Visual Studio çalıştırın ve Android uygulamalarını hata ayıklamaya yardımcı olması için Android öykünücüsünde içerir.
+C# ve Xamarin veya Visual C++ kullanarak farklı platformlar için yerel mobil uygulamalar veya JavaScript Apache Cordova ile kullanarak karma uygulamalar oluşturabilirsiniz. Unity, gerçekleşmemiş hesabı, DirectX, Cocos ve daha fazla bilgi için mobil oyunlar yazabilirsiniz. Visual Studio çalıştırın ve Android uygulamalarını hata ayıklamaya yardımcı olması için Android öykünücüsünde içerir.
 
 Azure uygulama hizmetleri oluşturarak mobil uygulamalarınız için bulut gücünü yararlanabilirsiniz. Azure uygulama hizmetleri, uygulamalarınızı bulutta verileri depolamak, güvenli bir şekilde kullanıcıların kimliklerini doğrulamak ve otomatik olarak kaynaklarını ölçeği veya uygulamanızın ve işinizin gereksinimlerini karşılamak için aşağı üzere etkinleştirin. Daha fazla bilgi için bkz: [mobil uygulama geliştirme](https://www.visualstudio.com/vs/mobile-app-development/).
 
@@ -55,7 +56,7 @@ Daha fazla bilgi için bkz: [Modern Web Tooling](https://www.visualstudio.com/vs
 
 ### <a name="build-cross-platform-apps-and-games"></a>Platformlar arası uygulamaları ve oyunları derleme
 
-Visual Studio, Android, iOS, Linux, Windows ve diğer aygıtlar için uygulama ve oyun oluşturmak için kullanabilirsiniz. Yerinde hakkında daha fazla bilgi [platformlar arası mobil geliştirme](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Evrensel Windows uygulamaları birden çok platform genelinde kodunuzu yararlanan yardımcı olur. Bkz: [Evrensel Windows uygulamaları](https://dev.windows.com/en-us/windows-apps) daha fazla bilgi için.
+Visual Studio, Android, iOS, Linux, Windows ve diğer aygıtlar için uygulama ve oyun oluşturmak için kullanabilirsiniz. Yerinde hakkında daha fazla bilgi [platformlar arası mobil geliştirme](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Evrensel Windows uygulamaları birden çok platform genelinde kodunuzu yararlanan yardımcı olur. Bkz: [Evrensel Windows uygulamaları](https://dev.windows.com/windows-apps) daha fazla bilgi için.
 
 İhtiyacınız olan araçları, uygulama gereksinimleri ve kullanmak istediğiniz dil göre seçin:
 
@@ -108,7 +109,7 @@ Bir konu hakkında bilgi edinmek için bir iyi kullanılacağını yoludur! Şim
 
   ![UWP boş uygulama şablonu](../ide/media/new-uwp-blank-app-template.png)
 
-  Bu, Visual C# ve XAML programlama dillerini kullanarak yeni bir boş Evrensel Windows uygulama projesi oluşturur. Visual Studio projeyi sizin için ayarlar için biraz bekleyin. Yalnızca herhangi bir bilgi istenirse, şu an için varsayılan değerleri kabul edin.
+  C# ve XAML programlama dillerini kullanarak yeni bir boş Evrensel Windows uygulama projesi oluşturur. Visual Studio projeyi sizin için ayarlar için biraz bekleyin. Yalnızca herhangi bir bilgi istenirse, şu an için varsayılan değerleri kabul edin.
 
 1. İçinde **yeni evrensel Windows platformu projesi** iletişim kutusunda, seçerek Varsayılanları kabul **Tamam**.
 
@@ -194,7 +195,7 @@ Bazı diğer ortak üretkenlik Visual Studio özellikleri şunlardır:
 
  ![Yeniden Düzenle](../ide/media/VSIDE_refactor.png)
 
-- **IntelliSense** bir genel doğrudan Düzenleyicisi'nde kodunuzu tür bilgilerini görüntüleme ve bazı durumlarda, kod küçük BITS sizin için yazma popüler özellikler kümesi için bir terimdir. Bu ayrı Yardım penceresinde türü bilgileri aramak gereğini ortadan kaldırır düzenleyicisinde temel belgelere satır içi olması gibi olur. IntelliSense özellikleri dile göre farklılık gösterir. Daha fazla bilgi için bkz: [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), ve [Visual Basic'e özel IntelliSense](../ide/visual-basic-specific-intellisense.md). Aşağıdaki çizimde, İşte bazı IntelliSense özellikleri gösterir:
+- **IntelliSense** bir genel doğrudan Düzenleyicisi'nde kodunuzu tür bilgilerini görüntüleme ve bazı durumlarda, kod küçük BITS sizin için yazma popüler özellikler kümesi için bir terimdir. Bu ayrı Yardım penceresinde türü bilgileri aramak gereğini ortadan kaldırır düzenleyicisinde temel belgelere satır içi olması gibi olur. IntelliSense özellikleri dile göre farklılık gösterir. Daha fazla bilgi için bkz: [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), ve [Visual Basic'e özel IntelliSense ](../ide/visual-basic-specific-intellisense.md). Aşağıdaki çizimde, İşte bazı IntelliSense özellikleri gösterir:
 
   ![Visual Studio üye listesi](../ide/media/vs2017_Intellisense.png)
 
@@ -236,7 +237,7 @@ Aşağıdaki resimde VSTS içinde barındırılan bir çözüm için Takım Gezg
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
-Sürüm denetimine takımınızdaki devs denetlediyseniz kodu oluşturmak için derleme süreci otomatik hale getirebilirsiniz. Örneğin, bir veya daha fazla projeleri gecelik veya kod iade her zaman oluşturabilirsiniz. Bkz: [herhangi bir platformda sürekli tümleştirme](https://www.visualstudio.com/en-us/docs/build/overview) daha fazla bilgi için.
+Sürüm denetimine takımınızdaki devs denetlediyseniz kodu oluşturmak için derleme süreci otomatik hale getirebilirsiniz. Örneğin, bir veya daha fazla projeleri gecelik veya kod iade her zaman oluşturabilirsiniz. Bkz: [derleme ve sürüm (VSTS ve TFS)](/vsts/build-release/index) daha fazla bilgi için.
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Hizmetleri, veritabanları ve bulut tabanlı kaynaklara bağlanma
 
@@ -279,6 +280,6 @@ Visual Studio IDE turu tamamladıktan Tebrikler! Bazı ana özellikleri hakkınd
 * [Visual Studio IDE](https://www.visualstudio.com/vs/)
 * [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/)
 * [Visual Studio Web günlüğü](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio Forums](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
+* [Visual Studio Forums](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
 * [Microsoft Virtual Academy](https://mva.microsoft.com/)
 * [Kanal 9](https://channel9.msdn.com/)

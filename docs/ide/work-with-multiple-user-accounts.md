@@ -7,17 +7,16 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 33f8c8c8068f14d7cdf8bf32c4cff960b98957f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: def8b9347ec5c74cf369972602416c992dff39c7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Birden çok kullanıcı hesabıyla çalışma
 
@@ -52,7 +51,7 @@ Sunucu Gezgini, bir sonraki açışınızda bu aboneliği için kaynakları gör
 1. Çözüm Gezgini'nde proje düğümünü seçin ve ardından **Ekle, bağlı hizmet**. **Bağlı hizmet Ekle** Sihirbazı görünür ve Visual Studio oturum açma kimliğiyle ilişkili Azure hesabında hizmetlerin listesini gösterir Azure için ayrı olarak oturum açmak zorunda değilsiniz unutmayın. Ancak, diğer hesapları için belirli bir bilgisayardan kaynaklarına erişme girişimi ilk kez oturum açmak gerekir.
 
     > [!WARNING]
-    > Bu ilk kez ise Visual Studio'da belirli bir bilgisayarda bir UWP uygulaması oluşturuyorsanız, giderek cihazınız için geliştirme modunu etkinleştirmek için istenir **ayarlarını &#124;  Güncelleştirmeler ve güvenlik &#124; Geliştiriciler için** bilgisayarınızda. Daha fazla bilgi için bkz: [aygıtı etkinleştir geliştirme](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx).
+    > Bu ilk kez ise Visual Studio'da belirli bir bilgisayarda bir UWP uygulaması oluşturuyorsanız, giderek cihazınız için geliştirme modunu etkinleştirmek için istenir **ayarlarını &#124;  Güncelleştirmeler ve güvenlik &#124; Geliştiriciler için** bilgisayarınızda. Daha fazla bilgi için bkz: [aygıtı etkinleştir geliştirme](/windows/uwp/get-started/enable-your-device-for-development).
 
 ### <a name="access_azure"></a>Erişim Azure Active Directory'de bir Web projesi
 
@@ -82,4 +81,4 @@ Yeni hesap kimlik bilgilerini girmek için istemleri izleyin. Bir kullanıcı ke
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da oturum açın](signing-in-to-visual-studio.md)
+[Visual Studio’da oturum açma](signing-in-to-visual-studio.md)

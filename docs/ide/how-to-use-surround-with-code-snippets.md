@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Surround-with snippets
 - snippets [C#], using Surround With
 ms.assetid: 23e5288e-7897-417a-9ded-cf60dfc889ee
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b67cf22f38366625d8aa7ff59ad1603a24074882
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d1cff0a8689635e55caf1e0ad1156fc97aa7bdbd
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Nasıl Yapılır: Şununla Çevrele Kod Parçacıklarını Kullanma
 Aşağıdaki yordamlar Çevrele kod parçacıklarını kullanmayı açıklar. Surround-with kod parçacıkları kullanılabilir üç yolu bulunmaktadır: bir klavye kısayolu, Düzen menüsü ve bağlam menüsü üzerinden.  
@@ -60,5 +62,5 @@ Aşağıdaki yordamlar Çevrele kod parçacıklarını kullanmayı açıklar. Su
      Alternatif olarak, kod parçacığında adını yazın ve ardından sekme veya ENTER tuşuna basın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C# kod parçacıkları](../ide/visual-csharp-code-snippets.md)   
+ [C# kod parçacıkları](../ide/visual-csharp-code-snippets.md)   
  [Kod Parçacığı Seçici](../ide/reference/code-snippet-picker.md)

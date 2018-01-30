@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 06/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: cs.ProjectPropertiesBuild
+f1_keywords:
+- cs.ProjectPropertiesBuild
 helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-caps.latest.revision: "43"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: bc470eb36e700f136fec57e208c5bd920ea5e073
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 233bb7516678888a2c7c4e6ec0b1b4f7d21b1393
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="build-page-project-designer-c"></a>Derleme Sayfası, Proje Tasarımcısı (C#)
 Kullanım **yapı** sayfasında **Proje Tasarımcısı** projenin yapı yapılandırma özelliklerini belirtmek için. Bu sayfayı uygulandığı [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] yalnızca projeleri.  
@@ -34,7 +37,7 @@ Erişim için **yapı** sayfası, proje düğümüne seçin (değil **çözüm**
 Aşağıdaki seçenekler yapılandırma ve görüntülemek veya değiştirmek için platform seçmenizi sağlar.  
 
 > [!NOTE]
->  Basitleştirilmiş derleme yapılandırmalarını, proje sistemi sürümünü veya bir hata ayıklama geliştirmek belirler. Bu nedenle, bu seçenekleri görüntülenmiyor. Daha fazla bilgi için bkz: [hata ayıklama ve yayın proje yapılandırmaları](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+> Basitleştirilmiş derleme yapılandırmalarını, proje sistemi sürümünü veya bir hata ayıklama geliştirmek belirler. Bu nedenle, bu seçenekleri görüntülenmiyor. Daha fazla bilgi için bkz: [nasıl yapılır: ayarlama hata ayıklama ve yayın yapılandırmaları](/debugger/how-to-set-debug-and-release-configurations.md).
 
 **Yapılandırma**  
 Görüntülemek veya değiştirmek için hangi yapılandırma ayarlarını belirtir. Ayarları **etkin (hata ayıklama)** (varsayılan değer budur), **hata ayıklama**, **sürüm**, veya **tüm yapılandırmaları**.  
@@ -104,9 +107,9 @@ Tüm uyarıları hata olarak değerlendirir.
 Aşağıdaki ayarlar, yapılandırma işlemi çıktı seçeneklerini yapılandırmak için kullanılır.  
 
 **Çıkış yolu**  
-Bu projenin yapılandırması için çıkış dosyalarının konumunu belirtir. Bu kutuya yapı çıktı yolunu girin veya seçin **Gözat** düğmesine bir yol belirtin. Yolun göreli olduğunu unutmayın; mutlak bir yol girin, göreli olarak kaydedilir. Varsayılan yolun bin\Debug veya bin\Release olduğundan\\. Daha fazla bilgi için bkz: [hata ayıklama ve yayın proje yapılandırmaları](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+Bu projenin yapılandırması için çıkış dosyalarının konumunu belirtir. Bu kutuya yapı çıktı yolunu girin veya seçin **Gözat** düğmesine bir yol belirtin. Yolun göreli olduğunu unutmayın; mutlak bir yol girin, göreli olarak kaydedilir. Varsayılan yolun bin\Debug veya bin\Release olduğundan\\.
 
-Basitleştirilmiş derleme yapılandırmalarını, proje sistemi sürümünü veya bir hata ayıklama geliştirmek belirler. **Yapı** komutunu **hata ayıklama** menü (F5) bağımsız olarak, hata ayıklama konumda yapı koyacaktır **çıkış yolu** , belirtin. Ancak, **yapı** komutunu **yapı** menüsü, belirttiğiniz konuma yerleştirir. Daha fazla bilgi için bkz: [hata ayıklama ve yayın proje yapılandırmaları](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+Basitleştirilmiş derleme yapılandırmalarını, proje sistemi sürümünü veya bir hata ayıklama geliştirmek belirler. **Yapı** komutunu **hata ayıklama** menü (F5) bağımsız olarak, hata ayıklama konumda yapı koyacaktır **çıkış yolu** , belirtin. Ancak, **yapı** komutunu **yapı** menüsü, belirttiğiniz konuma yerleştirir. Daha fazla bilgi için bkz: [derleme yapılandırmalarını anlama](../../ide/understanding-build-configurations.md).
 
 **XML belge dosyası**  
 Hangi belgeleri açıklamaları işlenecek dosya adını belirtir. Daha fazla bilgi için bkz: [/doc (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option).  

@@ -9,15 +9,15 @@ Description: Learn how to access the Administrator Portal
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 3028ea616f6336918e49d49856f62707876772c9
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 41bee30e54411a3b9bcaed6c72be3909f2d1cfab
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio abonelikleri Yönetici portalına erişim
 ## <a name="for-mpsa"></a>MPSA için
-Visual Studio abonelikleri yönetim portalına erişmek için Microsoft iş merkezi portalında veya BCP yönetici olarak ayarlanması gerekir. 
+Visual Studio abonelikleri Yönetici portalına erişmek için Microsoft iş merkezi portalında veya BCP yönetici olarak ayarlanması gerekir. 
 
 Yönetici olarak ayarlanması hakkında bilgi gerekiyorsa, lütfen [yönetmek kullanıcı Hızlı Başlangıç Kılavuzu](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf). Zaten bir yönetici olarak ayarlanmış olan sonra Visual Studio abonelikleri doğrudan gidebilirsiniz [Yönetim Portalı](https://manage.visualstudio.com)
 
@@ -30,9 +30,9 @@ Bu kılavuzlar VLSC kullanıma aboneliklerini yönetme hakkında daha fazla bilg
 
 Birincil ya da bildirimler kişi, kuruluşunuzun toplu lisans sözleşmesi için yönetici olarak ayarlamak için bazı adımları uygulamanız gerekir. 
 
-Yönetici ayarlama hakkında bilgi gerekiyorsa, lütfen izleme [bu videoyu](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) ve Visual Studio abonelikleri yönetim portalındaki bu makalelerine bakın [ekleme ve yöneticileryönetme](https://go.microsoft.com/fwlink/?linkid=839391). 
+Yönetici ayarlama hakkında bilgi gerekiyorsa, lütfen izleme [bu videoyu](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) ve Visual Studio abonelikleri Yönetici portalında bu makalelerine bakın [ekleme ve yöneticileryönetme](https://go.microsoft.com/fwlink/?linkid=839391). 
 
-Zaten bir yönetici olarak ayarlanmış olan sonra Visual Studio abonelikleri doğrudan gidebilirsiniz [Yönetim Portalı](https://manage.visualstudio.com).
+Zaten bir yönetici olarak ayarlanmış olan sonra Visual Studio abonelikleri doğrudan gidebilirsiniz [Yönetici portalı](https://manage.visualstudio.com).
 
 ## <a name="for-cloud-subscriptions"></a>İçin bulut abonelikleri
 Visual Studio bulut aboneliği satın aldığınızda, otomatik olarak bu abonelik için yönetici olarak ayarlanır.  Bunları satın zaten aldığınız, onları yönetebilirsiniz [https://manage.visualstudio.com](https://manage.visualstudio.com).

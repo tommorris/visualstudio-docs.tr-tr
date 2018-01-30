@@ -1,5 +1,5 @@
 ---
-title: Visual C# IntelliSense | Microsoft Docs
+title: C# IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,25 +8,26 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C#, IntelliSense
+- C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 46f56fc6bad74b3144b3dbd4701248598a01883b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 9da494eaf71a02f7b46ce68b1cf9f781fe32e716
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-intellisense"></a>Visual C# IntelliSense
+# <a name="c-intellisense"></a>C# IntelliSense
 
-Visual C# IntelliSense olduğunda kullanılabilir düzenleyicisinde ve içinde hata ayıklama sırasında kodlama [anlık mod](../ide/reference/immediate-window.md) komut penceresi.
+C# IntelliSense olduğunda kullanılabilir düzenleyicisinde ve içinde hata ayıklama sırasında kodlama [anlık mod](../ide/reference/immediate-window.md) komut penceresi.
 
 ## <a name="completion-lists"></a>Tamamlanma listeleri
 
-IntelliSense tamamlanma listeleri Visual C# ' ta belirteçlerinden listesi üyeleri, tam sözcüğü ve daha fazlasını içerir. Hızlı erişim sağlar:
+C# IntelliSense tamamlanma listeleri belirteçlerinden listesi üyeleri, tam sözcüğü ve daha fazlasını içerir. Hızlı erişim sağlar:
 
 - Üyeleri bir türü veya ad alanı
 
@@ -42,15 +43,15 @@ Tamamlama C# ' de ilgisiz belirteçleri filtreleyip bağlamına dayalı bir beli
 
 ## <a name="code-snippets-in-completion-lists"></a>Tamamlanma listeleri kod parçacıkları
 
-Visual C# ' ta kod önceden tanımlanmış gövdeleri programınıza kolayca eklemenize yardımcı olmak için kod parçacıkları tamamlanma listesi içerir. Kod parçacıkları kod parçacığını 's tamamlama listede görünür [kısayol metni](../ide/code-snippets-schema-reference.md#shortcut). Varsayılan olarak Visual C# dilinde kullanılabilir kod parçacıkları hakkında daha fazla bilgi için bkz: [Visual C# kod parçacıkları](../ide/visual-csharp-code-snippets.md).
+C# ' ta kod önceden tanımlanmış gövdeleri programınıza kolayca eklemenize yardımcı olmak için kod parçacıkları tamamlanma listesi içerir. Kod parçacıkları kod parçacığını 's tamamlama listede görünür [kısayol metni](../ide/code-snippets-schema-reference.md#shortcut). Varsayılan olarak C# dilinde kullanılabilir kod parçacıkları hakkında daha fazla bilgi için bkz: [C# kod parçacıkları](../ide/visual-csharp-code-snippets.md).
 
 ## <a name="language-keywords-in-completion-lists"></a>Dil anahtar tamamlanma listeleri
 
-Visual C# ' ta tamamlama liste dil anahtar sözcükleri da içerir. C# dili anahtar sözcükler hakkında daha fazla bilgi için bkz: [C# anahtar sözcükleri](/dotnet/csharp/language-reference/keywords/index).
+C# ' ta tamamlama liste dil anahtar sözcükleri da içerir. C# dili anahtar sözcükler hakkında daha fazla bilgi için bkz: [C# anahtar sözcükleri](/dotnet/csharp/language-reference/keywords/index).
 
 ## <a name="extension-methods-in-completion-lists"></a>Tamamlanma listeleri genişletme yöntemleri
 
-Visual C# ' ta tamamlanma listesi kapsamındaki genişletme yöntemleri içerir.
+C# ' ta tamamlanma listesi kapsamındaki genişletme yöntemleri içerir.
 
 > [!NOTE]
 > Tamamlanma listesi tüm uzantı yöntemleri için görüntülemez <xref:System.String> nesneleri.
@@ -59,9 +60,9 @@ Genişletme yöntemleri örnek yöntemleri farklı bir simge kullanın. Liste si
 
 ## <a name="filtered-completion-lists"></a>Filtrelenmiş tamamlanma listeleri
 
-IntelliSense filtreleri kullanarak gereksiz üyeleri tamamlama listesinden kaldırır. Visual C# bu öğeler için görünür tamamlanma listeleri filtreler:
+IntelliSense filtreleri kullanarak gereksiz üyeleri tamamlama listesinden kaldırır. C# bu öğeler için görünür tamamlanma listeleri filtreler:
 
-- **Arabirimleri ve temel sınıflar**: IntelliSense otomatik olarak kaldırır öğeleri arabirimi ve temel sınıf tamamlanma listeleri, sınıf bildirimi temel ve arabirim listeler ve kısıtlama listeler. Örneğin, numaralandırmalar temel sınıflar için kullanıldığından temel sınıflar için tamamlama listesindeki numaralandırmaları görünmez. Temel sınıflar tamamlanma listesi yalnızca arabirimleri ve ad alanlarını içerir. Listeden bir öğe seçin ve ardından virgül yazarsanız, Visual C#, birden çok devralma desteklemediği için IntelliSense temel sınıflar tamamlama listesinden kaldırır. Aynı davranış için kısıtlama yan tümceleri de oluşur.
+- **Arabirimleri ve temel sınıflar**: IntelliSense otomatik olarak kaldırır öğeleri arabirimi ve temel sınıf tamamlanma listeleri, sınıf bildirimi temel ve arabirim listeler ve kısıtlama listeler. Örneğin, numaralandırmalar temel sınıflar için kullanıldığından temel sınıflar için tamamlama listesindeki numaralandırmaları görünmez. Temel sınıflar tamamlanma listesi yalnızca arabirimleri ve ad alanlarını içerir. Listeden bir öğe seçin ve ardından virgül yazarsanız, C#, birden çok devralma desteklemediği için IntelliSense temel sınıflar tamamlama listesinden kaldırır. Aynı davranış için kısıtlama yan tümceleri de oluşur.
 
 - **Öznitelikleri**: bir öznitelik türü için geçerli olduğunda, böylece listesi yalnızca bu türleri gibi içeren ad alanlarını Düzen bu türlerde içerir tamamlanma listesi filtrelenir <xref:System.Attribute>.
 
@@ -133,7 +134,7 @@ Görünen seçenekleri şunları içerebilir:
 
 - **Alanı oluştur**
 
-- **Üretme yöntemi**
+- **Metot oluşturma**
 
 - **Sınıf oluşturma**
 

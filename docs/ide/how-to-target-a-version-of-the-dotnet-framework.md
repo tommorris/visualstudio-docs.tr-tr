@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 12/08/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: f648f07923117b89278ba0e5f44e351b923f7c26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: da2e236c39cce72670a47212aedabb87afa4d217
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Nasıl Yapılır: .NET Framework Sürümü Hedefleme
 
-Bu belge, bir proje oluşturduğunuzda, .NET Framework sürümünü hedefleyecek şekilde açıklar ve nasıl bir mevcut Visual Basic, Visual C# veya Visual F # projesinde hedeflenen sürüm değiştirin.
+Bu belge, bir proje oluşturduğunuzda, .NET Framework sürümünü hedefleyecek şekilde açıklar ve nasıl bir mevcut Visual Basic, C# veya Visual F # projesinde hedeflenen sürüm değiştirin.
 
 > [!IMPORTANT]
 > C++ projeleri için hedef sürüm değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
@@ -43,7 +45,7 @@ Bir proje oluştururken, hedeflediğiniz .NET Framework sürümü hangi şablonl
 
 ## <a name="changing-the-target-version"></a>Hedef sürümü değiştirme
 
-Aşağıdaki yordamı kullanarak, hedeflenen bir Visual Basic, Visual C# veya Visual F # projesinde .NET Framework sürümü değiştirebilirsiniz.
+Aşağıdaki yordamı kullanarak, hedeflenen bir Visual Basic, C# veya Visual F # projesinde .NET Framework sürümü değiştirebilirsiniz.
 
 C++ projeleri için hedef sürüm değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 

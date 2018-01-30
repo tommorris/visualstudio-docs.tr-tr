@@ -3,21 +3,24 @@ title: "Visual Studio performans ipuçları ve püf noktaları | Microsoft Docs"
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: f15f9b34a19617986ca64f9b13af1b28d4c9d01a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio performans ipuçları ve püf noktaları
 
@@ -32,7 +35,7 @@ Visual Studio performans önerileri nadir durumlarda oluşabilir düşük bellek
 
     Sisteminiz Windows 32-bit sürümünden bir 64-bit sürümüne yükseltirseniz, sanal bellek miktarı için Visual Studio 2 GB ile 4 GB'den genişletin. Bu, 32 bitlik işlem olsa bile önemli ölçüde daha büyük iş yüklerini işlemek üzere Visual Studio sağlar.
 
-    Daha fazla bilgi için bkz: [bellek sınırları](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) ve [/LARGEADDRESSAWARE 64-bit Windows sürümlerinde kullanarak](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Daha fazla bilgi için bkz: [bellek sınırları](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) ve [/LARGEADDRESSAWARE 64-bit Windows sürümlerinde kullanarak](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="configure-solution-and-projects"></a>Çözüm ve projeleri yapılandırma
 
@@ -47,6 +50,7 @@ Visual Studio performans önerileri nadir durumlarda oluşabilir düşük bellek
     Yaygın olarak kullanılan projelerle birkaç küçük çözüm dosyalarına çözümünüzü bölebilirsiniz. Bu yeniden düzenleme iş akışınız için bellek kullanımını önemli ölçüde azaltan. Ayrıca daha küçük çözümleri daha hızlı yük.
 
 ## <a name="configure-debugging-options"></a>Hata ayıklama seçeneklerini yapılandırma
+
 Genellikle bellek hata ayıklama oturumları sırasında düşük çalıştırıyorsanız, bir veya daha fazla yapılandırma değişikliklerini yaparak performansı en iyi duruma getirebilirsiniz.
 
 - **Yalnızca kendi kodum etkinleştir**
@@ -74,6 +78,7 @@ Genellikle bellek hata ayıklama oturumları sırasında düşük çalıştırı
     Daha fazla bilgi için bkz: [profil oluşturma araçları](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Araçlar ve uzantılar devre dışı bırak
+
 Bazı araçlar ya da uzantıları performansı için devre dışı bırakılmış olabilir.
 
 > [!TIP]
@@ -89,7 +94,7 @@ Bazı araçlar ya da uzantıları performansı için devre dışı bırakılmı�
 
     Devre dışı bırakmak için **tam çözüm analizini**, seçin **Araçlar > Seçenekler > Metin Düzenleyicisi >< Visual Basic veya C# >**. Ardından **Gelişmiş** ve seçimini **tam çözüm analizini etkinleştir**.
 
-- **CodeLens devre dışı bırak**
+- **Disable CodeLens**
 
     Visual Studio gerçekleştirir bir **tüm başvuruları Bul** görüntülendiği her yöntemini görev. CodeLens başvuru sayısı satır içi görüntüsünü gibi özellikler sağlar. İş, ayrı bir işlemde (örneğin, ServiceHub.RoslynCodeAnalysisService32) gerçekleştirilir. Düşük öncelikli olarak çalıştırılan olsa bile bu özellik çok büyük çözümlerde ya da kısıtlı kaynak sistemlerde performansı önemli etkiye sahiptir. Bu işlem yüksek CPU karşılaştığınız ya da (örneğin, 4 GB makine üzerinde büyük bir çözümde yüklenirken) bellek sorunları varsa, kaynakları boşaltmak için bu özelliği devre dışı bırakma deneyebilirsiniz.
 
@@ -123,7 +128,8 @@ CLR bir atık toplama bellek yönetimi sistemi kullanır. Bu sistemde, bazen bel
 
 Çöp toplama güvenilir bir şekilde zorlama çalışma, Visual Studio geri bildirim aracı ile bir rapor dosyası bu davranış büyük olasılıkla bir hata olduğundan, senaryonuzun yapar.
 
-CLR atık toplayıcı ayrıntılı bir açıklaması için bkz: [temel çöp koleksiyonu](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx).
+CLR atık toplayıcı ayrıntılı bir açıklaması için bkz: [temel çöp koleksiyonu](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio IDE](../ide/index.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Visual Studio IDE](../ide/visual-studio-ide.md)

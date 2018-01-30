@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c267b110b67a69b526bb7efc985bb22bb954b3a1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets-schema-reference"></a>Kod Parçacıkları Şema Başvurusu
 IntelliSense kod parçacıkları ile uygulamanıza eklenmeye hazır önceden yazılmış kod parçalarını olan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Yinelenen kodları yazmak veya örnekleri aramak için harcanan süreyi kısaltan kod parçacıkları sağlayarak üretkenliği artırabilirsiniz. IntelliSense kod parçacığı XML Şeması kendi kod parçacıkları oluşturmak ve bunları kod parçacıkları eklemek için kullanabileceğiniz, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zaten içerir.  
@@ -33,9 +35,9 @@ IntelliSense kod parçacıkları ile uygulamanıza eklenmeye hazır önceden yaz
 |-|-|-|  
 |[Assembly öğesi](../ide/code-snippets-schema-reference.md#assembly)|[HelpUrl öğesi](../ide/code-snippets-schema-reference.md#helpurl)|[References öğesi](../ide/code-snippets-schema-reference.md#references)|  
 |[Yazar öğesi](../ide/code-snippets-schema-reference.md#author)|[ID öğesi](../ide/code-snippets-schema-reference.md#id)|[Kısayol öğesi](../ide/code-snippets-schema-reference.md#shortcut)|  
-|[Kod öğesi](../ide/code-snippets-schema-reference.md#code)|[İçeri aktarma öğesi](../ide/code-snippets-schema-reference.md#import)|[Kod parçacığında öğesi](../ide/code-snippets-schema-reference.md#snippet)|  
-|[CodeSnippet öğesi](../ide/code-snippets-schema-reference.md#codesnippet)|[İçeri aktarmalar öğesi](../ide/code-snippets-schema-reference.md#imports)|[SnippetType öğesi](../ide/code-snippets-schema-reference.md#snippettype)|  
-|[CodeSnippets öğesi](../ide/code-snippets-schema-reference.md#codesnippets)|[Keyword öğesinde](../ide/code-snippets-schema-reference.md#keyword)|[SnippetTypes öğesi](../ide/code-snippets-schema-reference.md#snippettypes)|  
+|[Kod öğesi](../ide/code-snippets-schema-reference.md#code)|[İçeri aktarma öğesi](../ide/code-snippets-schema-reference.md#import)|[Snippet Element](../ide/code-snippets-schema-reference.md#snippet)|  
+|[CodeSnippet Element](../ide/code-snippets-schema-reference.md#codesnippet)|[İçeri aktarmalar öğesi](../ide/code-snippets-schema-reference.md#imports)|[SnippetType Element](../ide/code-snippets-schema-reference.md#snippettype)|  
+|[CodeSnippets Element](../ide/code-snippets-schema-reference.md#codesnippets)|[Keyword öğesinde](../ide/code-snippets-schema-reference.md#keyword)|[SnippetTypes Element](../ide/code-snippets-schema-reference.md#snippettypes)|  
 |[Bildirimleri öğesi](../ide/code-snippets-schema-reference.md#declarations)|[Anahtar sözcükler öğesi](../ide/code-snippets-schema-reference.md#keywords)|[Title öğesi](../ide/code-snippets-schema-reference.md#title)|  
 |[Varsayılan öğesi](../ide/code-snippets-schema-reference.md#default)|[Değişmez değer öğesi](../ide/code-snippets-schema-reference.md#literal)|[Araç İpucu öğesi](../ide/code-snippets-schema-reference.md#tooltip)|  
 |[Description öğesi](../ide/code-snippets-schema-reference.md#description)|[Namespace öğesi](../ide/code-snippets-schema-reference.md#namespace)|[Type öğesi](../ide/code-snippets-schema-reference.md#type)|  
@@ -148,7 +150,7 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
 ### <a name="parent-element"></a>Üst öğesi
 |Üst Öğe|Açıklama|  
 |--------------------|-----------------|  
-|[Kod parçacığında öğesi](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|
+|[Snippet Element](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|
   
 ##  <a name="codesnippet"></a>CodeSnippet öğesi  
  Visual Studio kod dosyalarına ekleyebileceğiniz bir başlık ve birden fazla IntelliSense Kod Parçacığı belirtmenizi sağlar.  
@@ -167,11 +169,11 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
 |Alt Öğe|Açıklama|  
 |-------------------|-----------------|  
 |[Üstbilgi öğesi](../ide/code-snippets-schema-reference.md#header)|Gerekli öğe. Kod parçacığı hakkında genel bilgiler içerir. Koyulmalıdır tam olarak bir `Header` bir kod parçacığı öğesinde.|  
-|[Kod parçacığında öğesi](../ide/code-snippets-schema-reference.md#snippet)|Gerekli öğe. Visual Studio tarafından eklenecek kodu içerir. Koyulmalıdır tam olarak bir `Snippet` bir kod parçacığı öğesinde.|  
+|[Snippet Element](../ide/code-snippets-schema-reference.md#snippet)|Gerekli öğe. Visual Studio tarafından eklenecek kodu içerir. Koyulmalıdır tam olarak bir `Snippet` bir kod parçacığı öğesinde.|  
   
 |Üst Öğe|Açıklama|  
 |--------------------|-----------------|  
-|[CodeSnippets öğesi](../ide/code-snippets-schema-reference.md#codesnippets)|Kod parçacığı XML şemasının kök öğesi.|  
+|[CodeSnippets Element](../ide/code-snippets-schema-reference.md#codesnippets)|Kod parçacığı XML şemasının kök öğesi.|  
   
 ##  <a name="codesnippets"></a>CodeSnippets öğesi  
  Grupları [CodeSnippet öğesi](../ide/code-snippets-schema-reference.md#codesnippet)öğeleri. `CodeSnippets` Kod parçacığını XML şeması kök öğesinin bir öğedir.  
@@ -184,7 +186,7 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
   
 |Alt Öğe|Açıklama|  
 |-------------------|-----------------|  
-|[CodeSnippet öğesi](../ide/code-snippets-schema-reference.md#codesnippet)|İsteğe bağlı öğe. Tüm kod parçacığı verisi için üst öğe. Sıfır veya daha fazla olabilir `CodeSnippet` öğelerinde bir `CodeSnippets` öğesi.|  
+|[CodeSnippet Element](../ide/code-snippets-schema-reference.md#codesnippet)|İsteğe bağlı öğe. Tüm kod parçacığı verisi için üst öğe. Sıfır veya daha fazla olabilir `CodeSnippet` öğelerinde bir `CodeSnippets` öğesi.|  
   
 ##  <a name="declarations"></a>Bildirimleri öğesi  
  Bir kod parçacığının düzenleyebileceğiniz bölümlerini oluşturan değişmez değerleri ve nesneleri belirtir.  
@@ -203,7 +205,7 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
   
 |Üst Öğe|Açıklama|  
 |--------------------|-----------------|  
-|[Kod parçacığında öğesi](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|  
+|[Snippet Element](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|  
   
 ##  <a name="default"></a>Varsayılan öğesi  
  Bir IntelliSense Kod Parçacığı için değişmez değerin veya nesnenin varsayılan değerini belirtir.  
@@ -240,7 +242,7 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
  Değişmez değer veya nesne Visual Studio'da odağa geldiğinde yürütülecek bir işlevi belirtir.  
   
 > [!NOTE]
->  `Function` Öğesi yalnızca Visual C# kod parçacıkları içinde desteklenir.  
+>  `Function` Öğesi yalnızca C# kod parçacıkları içinde desteklenir.  
   
 ```xml  
 <Function>  
@@ -277,12 +279,12 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
 |[HelpUrl öğesi](../ide/code-snippets-schema-reference.md#helpurl)|İsteğe bağlı öğe. Kod parçacığı hakkında daha fazla bilgi içeren URL. Sıfır veya bir olabilir `HelpURL` üstbilgi öğesi öğeler. **Not:** Visual Studio kullanmaz `HelpUrl` öğesi. Öğe, IntelliSense Kod Parçacığı XML şemasının bir parçasıdır ve öğeyi içeren her kod parçacığı doğrulanacaktır, ancak öğenin değeri hiçbir zaman kullanılmaz.|  
 |[Anahtar sözcükler öğesi](../ide/code-snippets-schema-reference.md#keywords)|İsteğe bağlı öğe. Grupları `Keyword` öğeleri. Sıfır veya bir olabilir `Keywords` öğelerinde bir `Header` öğesi.|  
 |[Kısayol öğesi](../ide/code-snippets-schema-reference.md#shortcut)|İsteğe bağlı öğe. Kod parçacığını eklemek için kullanılabilecek kısayol metnini belirtir. Sıfır veya bir olabilir `Shortcut` öğelerinde bir `Header` öğesi.|  
-|[SnippetTypes öğesi](../ide/code-snippets-schema-reference.md#snippettypes)|İsteğe bağlı öğe. Grupları `SnippetType` öğeleri. Sıfır veya bir olabilir `SnippetTypes` öğelerinde bir `Header` öğesi. Varsa hiçbir `SnippetTypes` öğeleri, kod parçacığında her zaman geçerli.|  
+|[SnippetTypes Element](../ide/code-snippets-schema-reference.md#snippettypes)|İsteğe bağlı öğe. Grupları `SnippetType` öğeleri. Sıfır veya bir olabilir `SnippetTypes` öğelerinde bir `Header` öğesi. Varsa hiçbir `SnippetTypes` öğeleri, kod parçacığında her zaman geçerli.|  
 |[Title öğesi](../ide/code-snippets-schema-reference.md#title)|Gerekli öğe. Kod parçacığının kolay adı. Koyulmalıdır tam olarak bir `Title` öğesinde bir `Header` öğesi.|  
   
 |Üst Öğe|Açıklama|  
 |--------------------|-----------------|  
-|[CodeSnippet öğesi](../ide/code-snippets-schema-reference.md#codesnippet)|Tüm kod parçacığı verisi için üst öğe.|  
+|[CodeSnippet Element](../ide/code-snippets-schema-reference.md#codesnippet)|Tüm kod parçacığı verisi için üst öğe.|  
   
 ##  <a name="helpurl"></a>HelpUrl öğesi  
  Bir kod parçacığı hakkında daha fazla bilgi sağlayan URL'yi belirtir.  
@@ -356,7 +358,7 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
   
 |Üst Öğe|Açıklama|  
 |--------------------|-----------------|  
-|[Kod parçacığında öğesi](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|  
+|[Snippet Element](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|  
   
 ##  <a name="keyword"></a>Keyword öğesinde  
  Kod parçacığı için özel bir anahtar sözcük belirtir. Kod parçacığı anahtar sözcükleri Visual Studio tarafından kullanılır ve çevrimiçi içerik sağlayıcılarının aramaya veya kategorilere ayırmaya yönelik özel anahtar sözcükler eklemek için kullandıkları standart bir yöntemi temsil eder.  
@@ -501,7 +503,7 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
   
 |Üst Öğe|Açıklama|  
 |--------------------|-----------------|  
-|[Kod parçacığında öğesi](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|  
+|[Snippet Element](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|  
   
 ##  <a name="shortcut"></a>Kısayol öğesi  
  Kod parçacığını eklemek için kullanılan kısayol metnini belirtir. Metin değeri bir `Shortcut` öğesi yalnızca alfasayısal karakterler içeren tireler (-) ve alt çizgi (_).  
@@ -542,7 +544,7 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
   
 |Üst Öğe|Açıklama|  
 |--------------------|-----------------|  
-|[CodeSnippet öğesi](../ide/code-snippets-schema-reference.md#codesnippet)|Visual Studio kod dosyalarına ekleyebileceğiniz bir başlık ve birden fazla IntelliSense Kod Parçacığı belirtmenizi sağlar.|  
+|[CodeSnippet Element](../ide/code-snippets-schema-reference.md#codesnippet)|Visual Studio kod dosyalarına ekleyebileceğiniz bir başlık ve birden fazla IntelliSense Kod Parçacığı belirtmenizi sağlar.|  
   
 ##  <a name="snippettype"></a>SnippetType öğesi  
  Visual Studio'nun kod parçacığını nasıl eklediğini belirtir.  
@@ -555,7 +557,7 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
   
 |Üst Öğe|Açıklama|  
 |--------------------|-----------------|  
-|[SnippetTypes öğesi](../ide/code-snippets-schema-reference.md#snippettypes)|Grupları `SnippetType` öğeleri.|  
+|[SnippetTypes Element](../ide/code-snippets-schema-reference.md#snippettypes)|Grupları `SnippetType` öğeleri.|  
   
  Metin değeri şu değerlerden biri olmalıdır:  
   
@@ -563,7 +565,7 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
   
 -   `Expansion`: kod parçacığı imlecin eklenmesini sağlar.  
   
--   `Refactoring`: kod parçacığı Visual C# yeniden düzenleme sırasında kullanıldığını belirtir. `Refactoring`özel kod parçacıkları kullanılamaz.  
+-   `Refactoring`: C# yeniden düzenleme sırasında kod parçacığında kullandığını belirtir. `Refactoring`özel kod parçacıkları kullanılamaz.  
   
 ##  <a name="snippettypes"></a>SnippetTypes öğesi  
  Gruplar tek tek `SnippetType` öğeleri. Varsa `SnippetTypes` öğesi mevcut değil, kod parçacığında kodda yere eklenebilir.  
@@ -577,7 +579,7 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
   
 |Alt Öğe|Açıklama|  
 |-------------------|-----------------|  
-|[SnippetType öğesi](../ide/code-snippets-schema-reference.md#snippettype)|İsteğe bağlı öğe. Visual Studio'nun kod parçacığını kodun içine nasıl eklediğini belirtir. Sıfır veya daha fazla olabilir `SnippetType` öğelerinde bir `SnippetTypes` öğesi.|  
+|[SnippetType Element](../ide/code-snippets-schema-reference.md#snippettype)|İsteğe bağlı öğe. Visual Studio'nun kod parçacığını kodun içine nasıl eklediğini belirtir. Sıfır veya daha fazla olabilir `SnippetType` öğelerinde bir `SnippetTypes` öğesi.|  
   
 |Üst Öğe|Açıklama|  
 |--------------------|-----------------|  

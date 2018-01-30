@@ -1,5 +1,5 @@
 ---
-title: "Yönetici portalı'nda abonelikler düzenlenemedi | Visual Studio Market"
+title: "Yönetici portalı'nda abonelikler düzenlenemedi | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can edit subscription assignments.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c561e7a56f2e70cae1addd32902f68a582b49a02
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Visual Studio abonelik atamalarını düzenlemek
 
@@ -29,13 +29,15 @@ Abonenin ad, Soyadı, ülke, dil ve yüklemeleri güncelleştirebilirsiniz. Abon
 
    ![Abonelik bilgilerini Düzenle](_img\edit-license\edit-subscriber.png)
 
-Not: bir abone için abonelik düzeyinde değiştirmeniz gerekiyorsa, Kullanıcı Portalı'ndan silin ve yeniden ekleyin gerekecektir. Abonelik düzeylerini düzenlenebilir değildir.
+> [!NOTE]
+> Abonelik düzeyinde bir abone için değiştirmeniz gerekiyorsa, Kullanıcı Portalı'ndan silin ve yeniden ekleyin gerekecektir. Abonelik düzeylerini düzenlenebilir değildir.
 
 ## <a name="editing-multiple-subscribers-by-using-bulk-edit"></a>Toplu düzenleme kullanarak birden çok aboneye düzenleme
 
 Toplu düzenleme işlemi aynı anda kullanarak birden çok aboneye düzenleyebilirsiniz. Bu özellik, öncelikle şirket oluşturulmak e-posta adresi değişiklikleri veya kuruluş yüklemeleri için erişimi kısıtlamak karar, kuruluşlar için kullanılır. 
 
-**Önemli:** abonelik düzeyleri (yani Enterprise, Professional, vb.) ve abonelik GUID olamaz değiştirilebilir.  Değiştirilen bu öğeler ile karşıya yükleme çalışırsanız, karşıya yükleme başarısız olur.  
+> [!IMPORTANT]
+> Abonelik düzeylerini (yani Enterprise, Professional, vb.) ve abonelik GUID'ler değiştirilemez.  Değiştirilen bu öğeler ile karşıya yükleme çalışırsanız, karşıya yükleme başarısız olur.  
 
 1.  Aynı anda birden çok aboneye düzenlemek için aboneler sekmesine gidin. Üst Şeritte tıklatın **Toplu Düzenle**. 
 

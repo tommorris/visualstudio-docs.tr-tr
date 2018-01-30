@@ -74,7 +74,6 @@
 ##### [Başvuru Eklerken NuGet veya Uzantı SDK Kullanma Karşılaştırması](ide/adding-references-using-nuget-versus-an-extension-sdk.md)
 ##### [İçeri Aktarılan Ad Uzaylarını Ekleme veya Kaldırma (Visual Basic)](ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 ##### [Bozuk Başvurularda Sorun Giderme](ide/troubleshooting-broken-references.md)
-#### [Uygulama Özellikleri](ide/application-properties.md)
 #### [Uygulama Kaynaklarını Yönetme (.NET)](ide/managing-application-resources-dotnet.md)
 #### [Uygulama Ayarlarını Yönetme (.NET)](ide/managing-application-settings-dotnet.md)
 ##### [C# projesine uygulama yapılandırma dosyası ekleme](ide/how-to-add-app-config-file.md)

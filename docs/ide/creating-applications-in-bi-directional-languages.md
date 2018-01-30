@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - bi-directional language support, about bi-directional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: db7afbc68ab4e02803959dd0ff0b4de92233fece
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1b0d0010d9aa4c56fdffef2eceb458776a863d23
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Çift Yönlü Dillerde Uygulamalar Oluşturma
 Visual Studio sağ Arapça ve İbranice gibi sola, yazılan dillerde düzgün görünen metin uygulamaları oluşturmak için kullanabilirsiniz. Bazı özellikler için kolayca özellikleri ayarlayabilirsiniz. Diğer durumlarda, kodda özellikleri uygulamalıdır.  
@@ -80,15 +82,16 @@ Visual Studio sağ Arapça ve İbranice gibi sola, yazılan dillerde düzgün g�
 -   Kod ve metin. (Aynı zamanda olan metin düzenleyici) Kod düzenleyicisinde adı sınıfları, İşlevler, değişkenleri, özellikleri, dize değişmez değerleri, öznitelikleri ve benzeri Arapça veya İbranice kullanabilirsiniz. Ancak, düzenleyici sağdan sola okuma sırası desteklemiyor; metin her zaman sol kenar boşluğunda başlatır.  
   
     > [!TIP]
-    >  Bunları, programlarına kodlamak yerine kaynak dosyalarında dize değişmez değerleri yerleştirmeniz önerilir. Daha fazla bilgi için bkz: [izlenecek yol: Windows Formları yerelleştirme](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > Bunları, programlarına kodlamak yerine kaynak dosyalarında dize değişmez değerleri yerleştirmeniz önerilir. Daha fazla bilgi için bkz: [(.NET Framework) masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index).
   
     > [!NOTE]
-    >  Nasıl, bu dillerde adlandırılan nesnelere başvurmak için tutarlı olması gerekir. Örneğin, Arapça bir değişkeni adlandırırken Keşide kullanırsanız, her zaman bu değişkene başvururken Keşide kullanmalısınız veya hatalar neden.  
+    > Nasıl, bu dillerde adlandırılan nesnelere başvurmak için tutarlı olması gerekir. Örneğin, Arapça bir değişkeni adlandırırken Keşide kullanırsanız, her zaman bu değişkene başvururken Keşide kullanmalısınız veya hatalar neden.  
   
 -   Kod açıklamaları. Arapça veya İbranice yorumlar oluşturabilirsiniz. Açıklama Oluşturucu aracında bu diller de kullanabilirsiniz.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çift yönlü destek Windows Forms uygulamaları](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [ASP.NET Web uygulamaları için çift yönlü destek](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
- [Uygulamaları Genelleştirme](../ide/globalizing-applications.md)   
- [Uygulamaları Yerelleştirme](../ide/localizing-applications.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Windows Forms Uygulamalarında İki Yönlü Destek](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)  
+[ASP.NET Web uygulamaları için çift yönlü destek](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)  
+[Uygulamaları Genelleştirme](../ide/globalizing-applications.md)  
+[Uygulamaları Yerelleştirme](../ide/localizing-applications.md)

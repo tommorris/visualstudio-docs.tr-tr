@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
-helpviewer_keywords: Prerequisites dialog box
+f1_keywords:
+- Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
+helpviewer_keywords:
+- Prerequisites dialog box
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2e88e3999bdca7b926042685ca7bd2d561c12d5d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 3d97e1f37c1e60c3ec5bb122a6b3f26c2fb086f9
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="prerequisites-dialog-box"></a>Önkoşullar İletişim Kutusu
 
@@ -42,7 +46,7 @@ Görünür önkoşul bileşenleri **Önkoşullar** iletişim kutusu aşağıdaki
 
 |Öğe|Açıklama|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Bu paket aşağıdaki yükler:<br /><br /> -.NET framework sürüm 2.0, 3.0 ve 3.5.<br />-(X86) ve 64-bit (x64) 32-bit işletim sistemlerinde tüm .NET Framework sürümleri için destek.<br />-Dil paketleri paket ile yüklenen her bir .NET Framework sürümü için.<br />-Hizmet paketleri .NET Framework 2.0 ve 3.0 için.<br /><br /> .NET framework 3.0, Windows Vista ile eklenir ve .NET Framework 3.5 ile birlikte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. 32-bit işletim sistemleri ve hedef Framework'ü kümesi için derlenmiş tüm Visual Basic ve Visual C# projeleri için .NET framework 3.5 gereklidir **.NET Framework 3.5**ve Visual Basic ve Visual C# projeleri 64-bit işletim sistemleri için derlenmiş. (IA64 desteklenmiyor.) Varsayılan olarak tüm CPU mimarisi için Visual Basic ve Visual C# projeleri derlenmiş unutmayın. Daha fazla bilgi için bkz: [Visual Studio çoklu sürüm desteğine genel bakış](../../ide/visual-studio-multi-targeting-overview.md), [.NET Framework yeniden dağıtma](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287), ve [64-bit uygulamalar için önkoşulları dağıtma](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Varsayılan olarak, bu öğe seçilir.|
+|**.NET Framework 3.5 SP1**|Bu paket aşağıdaki yükler:<br /><br /> -.NET framework sürüm 2.0, 3.0 ve 3.5.<br />-(X86) ve 64-bit (x64) 32-bit işletim sistemlerinde tüm .NET Framework sürümleri için destek.<br />-Dil paketleri paket ile yüklenen her bir .NET Framework sürümü için.<br />-Hizmet paketleri .NET Framework 2.0 ve 3.0 için.<br /><br /> .NET framework 3.0, Windows Vista ile eklenir ve .NET Framework 3.5 ile birlikte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. 32-bit işletim sistemleri ve hedef Framework'ü kümesi için derlenmiş tüm Visual Basic ve C# projeleri için .NET framework 3.5 gereklidir **.NET Framework 3.5**ve 64 bit için derlenmiş Visual Basic ve C# projeleri işletim sistemleri. (IA64 desteklenmiyor.) Varsayılan olarak tüm CPU mimarisi için Visual Basic ve Visual C# projeleri derlenmiş unutmayın. Daha fazla bilgi için bkz: [Visual Studio çoklu sürüm desteğine genel bakış](../../ide/visual-studio-multi-targeting-overview.md) ve [64-bit uygulamalar için önkoşulları dağıtma](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Varsayılan olarak, bu öğe seçilir.|
 |**Microsoft .NET Framework 4.x**|Bu paketi yükler .NET Framework 4.x x86 hem x64 platformlar için.|
 |**SQL Server 2014 (x64 ve x86) için Microsoft System CLR Types**|Bu paket, x64 veya x86 için SQL Server 2014 için Microsoft System CLR Types yükler.|
 |**SQL Server 2008 R2 Express**|Bu paket, Microsoft SQL Server 2008 R2 Express, Microsoft SQL Server 2008 R2, küçük bir web, sunucu veya Masaüstü uygulamaları için ideal bir veritabanı boş bir sürümünü yükler. Ücretsiz geliştirme ve üretim için kullanılabilir. Ücretsiz [kayıt](http://go.microsoft.com/fwlink/?LinkId=130380) SQL Server 2008 R2 Express ile uygulaması dağıtma için gereklidir.|
@@ -56,6 +60,5 @@ Görünür önkoşul bileşenleri **Önkoşullar** iletişim kutusu aşağıdaki
 
 [Yayın Sayfası, Proje Tasarımcısı](../../ide/reference/publish-page-project-designer.md)  
 [Uygulama Dağıtımının Önkoşulları](../../deployment/application-deployment-prerequisites.md)  
-[.NET Framework yeniden dağıtma](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)  
 [64 bit Uygulamalar için Dağıtım Önkoşulları](../../deployment/deploying-prerequisites-for-64-bit-applications.md)  
 [Visual Studio Çoklu Sürüm Desteğine Genel Bakış](../../ide/visual-studio-multi-targeting-overview.md)

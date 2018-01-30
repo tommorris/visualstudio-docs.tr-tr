@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,19 +14,19 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
-caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: ec48d6a581eb756ee89d9db1a3dfaa78ac1fb3a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7f9b348ad39b26b22e1678e76a1310e2c3f9b863
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="application-page-project-designer-c"></a>Uygulama Sayfası, Proje Tasarımcısı (C#)
+
 Kullanım **uygulama** sayfasında **Proje Tasarımcısı** projenin uygulama ayarlarını ve özelliklerini belirtmek için.  
   
 Erişim için **uygulama** sayfası, proje düğümüne seçin (değil **çözüm** düğümü) içinde **Çözüm Gezgini**. Ardından **proje**, **özellikleri** menü çubuğunda. Proje Tasarımcısı görüntülendiğinde **uygulama** sekmesi.  
@@ -70,7 +71,7 @@ Erişim için **uygulama** sayfası, proje düğümüne seçin (değil **çözü
  **Derleme bilgileri**  
  Bu düğmeye tıkladığınızda görüntüler [derleme bilgileri iletişim kutusu](../../ide/reference/assembly-information-dialog-box.md).  
   
- **Başlangıç nesnesi**  
+ **Startup object**  
  Uygulama yüklendiğinde çağrılacak giriş noktası tanımlar. Bu, uygulamanızın veya çok ana formuna ya da genellikle ayarlanır `Main` yordamı, uygulama başladığında çalıştırmanız gerekir. Sınıf kitaplıkları bir giriş noktası olmadığı için tek seçenektir bu özellik için **(ayarlanmamış)**.  
   
  Varsayılan olarak, WPF tarayıcı uygulaması projesinde, bu seçenek olan **(ayarlanmamış)**. Diğer seçenek *Projectname*. uygulama. Proje bu tür, uygulama başlatıldığında bir UI kaynak yüklemek için URI başlangıç ayarlamanız gerekir. Bunu yapmak için projenize Application.xaml dosyasını açın ve ayarlama `StartupUri` Window1.xaml gibi projenizi .xaml dosyasında özelliğine. Kabul edilebilir kök öğe listesi için bkz: <xref:System.Windows.Application.StartupUri%2A>. Tanımlamak de bir `public static void Main()` projede sınıfındaki yöntemi. Bu sınıf, görünür **Başlangıç nesnesi** olarak listesinde *ProjectName.ClassName*. Bu gibi durumlarda, sınıf sonra Başlangıç nesnesi olarak seçebilirsiniz.  
@@ -98,8 +99,4 @@ Erişim için **uygulama** sayfası, proje düğümüne seçin (değil **çözü
 **Kaynak dosyası**  
 Projesi için kaynak dosyası sağlarken bu radyo düğmesini seçin. Bu seçeneğin devre dışı bırakır **simgesi** ve **bildirim** seçenekleri.  
   
-Bir yol adı girin veya Gözat düğmesini kullanın (**...** ) Win32 kaynak dosyası projeye eklemek için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
-[Uygulama özelliklerini yönetme](../../ide/application-properties.md)  
-[Office Çözümlerinde Kod Yazma](/office-dev/office-dev/writing-code-in-office-solutions)
+Bir yol adı girin veya Gözat düğmesini kullanın (**...** ) Win32 kaynak dosyası projeye eklemek için.

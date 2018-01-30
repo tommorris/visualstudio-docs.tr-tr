@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b454893c2d68b23d130d6ff38be493d988dfb1fe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a1123d1c557f6e7f01eb98e668b4f13785ee6893
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
 
@@ -40,9 +42,9 @@ Bakın veya CodeLens kapatıp açmak istediğiniz göstergeleri seçmek için Gi
 
 -  Visual Studio Enterprise veya Visual Studio Professional
 
--  Visual C# .NET veya Visual Basic .NET kodu
+-  C# veya Visual Basic kodu
 
-Seçin **başvuruları** göstergesi (**Alt + 2**). Görürseniz **0 başvuruları**, Visual C# veya Visual Basic kodundan başvuru içermeyen. Bu XAML ve ASPX dosyaları gibi diğer öğeleri başvurularından içermez.
+Seçin **başvuruları** göstergesi (**Alt + 2**). Görürseniz **0 başvuruları**, C# veya Visual Basic kodundan başvuru içermeyen. Bu XAML ve ASPX dosyaları gibi diğer öğeleri başvurularından içermez.
 
 ![CodeLens &#45; Başvuruları göstergesi seçin](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
 
@@ -66,9 +68,9 @@ Kodunuzu neler olduğunu öğrenmek için kodun geçmişini gözden geçirin. Ya
 
 - Team Foundation Server 2013 veya üzeri, Visual Studio Team Services veya Git
 
-- [Lync 2010 veya üzeri ya da Skype Kurumsal](http://technet.microsoft.com/en-us/lync), kod düzenleyicisinden ekibinize başvurun  
+- [Lync 2010 veya üzeri ya da Skype Kurumsal](https://technet.microsoft.com/office/dn788773), kod düzenleyicisinden ekibinize başvurun
 
-Team Foundation sürüm denetimi (TFVC'yi) veya Git ile depolanan Visual C# .NET veya Visual Basic .NET kodu için sınıf ve yöntem düzeylerinde CodeLens ayrıntıları alma (*kod öğe düzeyinde* göstergeleri). Git deponuz TfGit içinde barındırılıyorsa, TFS iş öğelerine bağlantılar da alın.  
+Team Foundation sürüm denetimi (TFVC'yi) veya Git ile depolanan C# veya Visual Basic kod için sınıf ve yöntem düzeylerinde CodeLens ayrıntıları alın (*kod öğe düzeyinde* göstergeleri). Git deponuz TfGit içinde barındırılıyorsa, TFS iş öğelerine bağlantılar da alın.  
 
 ![Kod öğesi &#45; düzeyi göstergeleri](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
 
@@ -86,7 +88,7 @@ Kim, C# veya Visual Basic kodu değiştirildi ve bunlar kodu öğe düzeyinde g�
 
 ![CodeLens: Get değişiklik geçmişini TFVC'yi kodunuzda için](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
 
-Varsayılan süre son 12 ay değeridir. Team Foundation Server'da kodunuzu depolanırsa, bu çalıştırarak değiştirebilirsiniz [TFSConfig komut](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) ile [Codeındex komutu](../ide/codeindex-command.md) ve **/indexHistoryPeriod** bayrağı.  
+Varsayılan süre son 12 ay değeridir. Team Foundation Server'da kodunuzu depolanırsa, bu çalıştırarak değiştirebilirsiniz [TFSConfig komut](/vsts/tfs-server/command-line/tfsconfig-cmd) ile [Codeındex komutu](../ide/codeindex-command.md) ve **/indexHistoryPeriod** bayrağı.
 
 Önce birden fazla bir yıldan dahil olmak üzere tüm değişiklikleri ayrıntılı bir geçmişini görmek için seçin **tüm dosya değişiklikleri göstermek**.  
 
@@ -193,7 +195,7 @@ Mevcut kodunuz için birim testleri hakkında daha fazla Test Gezgini açmadan �
 
 -   Visual Studio Enterprise veya Visual Studio Professional  
   
--   Visual C# .NET veya Visual Basic .NET kodu  
+-   C# veya Visual Basic kodu  
   
 -   A [birim testi projesi](../test/unit-test-your-code.md) olan uygulama kodunuz için birim testleri  
   
@@ -233,15 +235,15 @@ Mevcut kodunuz için birim testleri hakkında daha fazla Test Gezgini açmadan �
   
 ###  <a name="NoIndicators"></a>S: CodeLens nerede?
 
-**Y:** yöntemi, sınıf, dizin oluşturucu ve özellik düzeyinde Visual C# .NET ve Visual Basic kodu CodeLens görünür. Tüm dosya türleri için dosya düzeyinde CodeLens görünür.
+**Y:** yöntemi, sınıf, dizin oluşturucu ve özellik düzeyinde C# ve Visual Basic kodu CodeLens görünür. Tüm dosya türleri için dosya düzeyinde CodeLens görünür.
 
 - CodeLens açık olduğundan emin olun. Git **Araçları**, **seçenekleri**, **metin düzenleyici**, **tüm diller**, **CodeLens**.  
-  
-- Kodunuzu TFS'de depolanıyorsa, kod dizinini kullanarak açık olduğundan emin olun [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Config komutunu](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62).  
 
-- TFS ilişkili göstergeler yalnızca iş öğeleri koda bağlandığında ve bağlantılı iş öğelerini açmak için izniniz olduğunda görünür. [Ekip üyesi izinlere sahip olduğunuzu doğrulayın.](http://msdn.microsoft.com/en-us/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+- Kodunuzu TFS'de depolanıyorsa, kod dizinini kullanarak açık olduğundan emin olun [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Config komutunu](/vsts/tfs-server/command-line/tfsconfig-cmd).
 
-- Uygulama kodu birim testleri sahip olmadığında birim testi göstergeleri görünmüyor. Test durumu göstergeleri test projesinde otomatik olarak görüntülenir. Birim testleri uygulama kodunuz var, ancak test göstergeleri görünmüyor biliyorsanız, çözümü oluşturma deneyin (**Ctrl + Shift + B**).  
+- TFS ilişkili göstergeler yalnızca iş öğeleri koda bağlandığında ve bağlantılı iş öğelerini açmak için izniniz olduğunda görünür. [Ekip üyesi izinlere sahip olduğunuzu doğrulayın](/vsts/work/scale/multiple-teams).
+
+- Uygulama kodu birim testleri sahip olmadığında birim testi göstergeleri görünmüyor. Test durumu göstergeleri test projesinde otomatik olarak görüntülenir. Birim testleri uygulama kodunuz var, ancak test göstergeleri görünmüyor biliyorsanız, çözümü oluşturma deneyin (**Ctrl + Shift + B**).
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Bir yürütme iş öğesi ayrıntılarını neden göremiyorum?
 
@@ -301,11 +303,11 @@ Klavyeyi kullanmak için:
 
 ###  <a name="LocalVersion"></a>S: "Yerel sürümü" nedir?
 
-**Y:** **yerel sürümü** ok yerel sürümünüzde bu dosyanın en son değişiklik gösterir. Üstüne veya altına sunucunun daha yeni değişiklik olduğunda, göründükleri **yerel sürümü** bağlı olarak değişiklik kümelerini sıralamak için kullanılan sırayı oku.  
+**Y:** **yerel sürümü** ok yerel sürümünüzde bu dosyanın en son değişiklik gösterir. Üstüne veya altına sunucunun daha yeni değişiklik olduğunda, göründükleri **yerel sürümü** bağlı olarak değişiklik kümelerini sıralamak için kullanılan sırayı oku.
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>S: CodeLens geçmişi ve bağlantılı öğeler göstermek için kod nasıl işlediği yönetebilirim?
 
-**Y:** Evet, kodunuzu TFS'de ise, kullan [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Config komutunu](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62).
+**Y:** Evet, kodunuzu TFS'de ise, kullan [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Config komutunu](/vsts/tfs-server/command-line/tfsconfig-cmd).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.ClassDesigner.OverrideMembersDialog
+f1_keywords:
+- vs.ClassDesigner.OverrideMembersDialog
 helpviewer_keywords:
 - members, overriding
 - overriding members
@@ -18,23 +20,25 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], refactoring classes
 - refactoring, classes
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 63a81fef59104d6731a782575fe1c3b23f48e304
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3bdf6237fdbfb6e15df0d58835c260252cd8efdb
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Sınıfları ve Türleri Yeniden Düzenleme (Sınıf Tasarımcısı)
-Kodu yeniden düzenleyin, daha kolay anlamak, bakımını yapmak ve iç yapısını ve nesnelerine şeklini değiştirerek daha verimli şekilde tasarlandığından, dış davranışını değil. Sınıf Tasarımcısı ve sınıf Ayrıntıları penceresi yapmak zorunda ve Visual Studio projenizi Visual C# .NET, Visual Basic .NET ya da C++ kodu yeniden zaman Tanıtımı ihtimalini hataları iş azaltmak için kullanın.  
-  
+
+Kodu yeniden düzenleyin, daha kolay anlamak, bakımını yapmak ve iç yapısını ve nesnelerine şeklini değiştirerek daha verimli şekilde tasarlandığından, dış davranışını değil. Sınıf Tasarımcısı ve yapmanız gereken iş azaltmak için sınıf Ayrıntıları penceresi ve C#, Visual Basic ya da C++ kodu Visual Studio projenizi yeniden olduğunda hataları Tanıtımı ihtimalini kullanın.
+
 > [!NOTE]
->  Proje kaynak kodu denetimi altında olduğundan ve kullanıma alınmadı proje dosyalarını salt okunur olabilir; Bu başvurulan bir projedir; veya, dosyaları diskte salt okunur olarak işaretlenmiş. Şu durumlardan birini projede çalışırken, çalışmanızı projenin durumuna bağlı olarak kaydetmek için çeşitli yollar ile sunulur. Yeniden düzenleme kod ve doğrudan düzenleme gibi başka bir şekilde değiştirme kodu için geçerlidir. Daha fazla bilgi için bkz: [salt okunur görüntüleme bilgileri](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
-  
+> Proje kaynak kodu denetimi altında olduğundan ve işaretlenmediği çıkışı, başvurulan bir projedir ya da kendi dosya diskte salt okunur olarak işaretlenmiş bir proje dosyalarını salt okunur olabilir. Şu durumlardan birini projede çalışırken, çalışmanızı projenin durumuna bağlı olarak kaydetmek için çeşitli yollar ile sunulur. Yeniden düzenleme kod ve doğrudan düzenleme gibi başka bir şekilde değiştirme kodu için geçerlidir.
+
 ## <a name="common-tasks"></a>Ortak Görevler  
   
 |Görev|Destekleyici İçerik|  
@@ -89,5 +93,5 @@ Kullanarak **Sınıf Tasarımcısı**, her ikisi de geçerli sınıf diyagramın
      Özellik kaynak türünden kaldırılır ve hedef tipinde görüntülenir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
-[Türleri ve ilişkilendirmeleri görüntüleme](viewing-types-and-relationships.md)  
+[Türleri ve İlişkileri Görüntüleme](viewing-types-and-relationships.md)  
 [Sınıfları ve türleri tasarlama](designing-classes-and-types.md)

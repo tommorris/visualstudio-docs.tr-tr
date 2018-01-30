@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,17 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 596e9e6dfa5f7fb464430636f696e37748ccb8eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e26a9fa0daf5c92c81161bdcafd92490f9a05113
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Visual Studio'da pencere düzenlerini özelleştirme
 Visual Studio'da, konum, boyutu ve çeşitli geliştirme iş akışları için en iyi çalışır pencere düzenlerini oluşturmak için windows davranışını özelleştirebilirsiniz. Düzen özelleştirdiğinizde, IDE, hatırlıyor. Örneğin, yerleştirme konumunu değiştirirseniz **Çözüm Gezgini** ve başka bir bilgisayarda çalışıyorsanız bile Visual Studio, sonraki başlattığınızda Kapat **Çözüm Gezgini** olacaktır aynı konuma yerleştirildi. Ayrıca özel bir düzen bir ad verin ve dosyayı kaydedin ve tek bir komutla düzeni arasında geçiş yapın. Örneğin, düzenlemek için bir düzen ve hata ayıklama için başka bir oluşturun ve bunları kullanarak arasında geçiş **pencere &#124; Pencere düzenini Uygula** menü komutu.  
@@ -134,7 +136,7 @@ Visual Studio'da, konum, boyutu ve çeşitli geliştirme iş akışları için e
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Bir kullanıcı Arabirimi projesi oluşturun ve düzenini özelleştirin  
 
-1.  İçinde **yeni proje** iletişim kutusunda, bir Visual C# WPF masaüstü uygulaması oluşturun ve istediğiniz gibi çağırın. Bu projenin biz alanı Tasarımcı penceresinin en üst düzeye çıkarmak ve diğer aracı windows dışına taşımak istediğiniz şekilde burada kullanıcı arabiriminde çalışmalarımız olduğunu içeriğini.  
+1.  İçinde **yeni proje** iletişim kutusunda, C# WPF masaüstü uygulaması oluşturun ve istediğiniz gibi çağırın. Bu projenin biz alanı Tasarımcı penceresinin en üst düzeye çıkarmak ve diğer aracı windows dışına taşımak istediğiniz şekilde burada kullanıcı arabiriminde çalışmalarımız olduğunu içeriğini.  
 
 2.  Birden çok monitörü varsa, çekme **Çözüm Gezgini** penceresi ve **özellikleri** pencere üzerinde ikinci İzleyicisi. Bir tek monitör sistemde Tasarımcı dışında tüm pencereleri kapatmayı deneyin.  
 

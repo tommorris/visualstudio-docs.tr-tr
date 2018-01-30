@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,23 +16,24 @@ helpviewer_keywords:
 - run actions
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0187b8a70fc012fc6d2564f77ea5a2b2ff7c20d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 88f3ec2d9e8c682511c87cbcf5a5690ae797d8c7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Seçenekler iletişim kutusu, projeler ve çözümler, derleme ve çalıştırma
 
-Bu iletişim kutusunda, aynı anda oluşturabilirsiniz Visual C++ veya Visual C# projeleri üst sınırını belirtebilirsiniz, belirli varsayılan davranışlar yapı ve bazı günlük ayarlarını oluşturun. Bu seçenekler erişmek için seçin **Araçlar > Seçenekler** genişletin **projeler ve çözümler**seçip **derleme ve çalıştırma**.
+Bu iletişim kutusunda, aynı anda oluşturabilirsiniz Visual C++ veya C# projeleri üst sınırını belirtebilirsiniz, belirli varsayılan davranışlar yapı ve bazı günlük ayarlarını oluşturun. Bu seçenekler erişmek için seçin **Araçlar > Seçenekler** genişletin **projeler ve çözümler**seçip **derleme ve çalıştırma**.
   
 **Yapılar paralel olarak proje maksimum sayısı**  
-Aynı anda oluşturabilirsiniz Visual C++ ve Visual C# projeleri en fazla sayısını belirtir. Derleme işlemi iyileştirmek için paralel olarak proje derlemeleri sayısı bilgisayarınızın CPU sayısı için otomatik olarak ayarlanır. En fazla 32'dir.  
+Aynı anda oluşturabilirsiniz Visual C++ ve C# projeleri en fazla sayısını belirtir. Derleme işlemi iyileştirmek için paralel olarak proje derlemeleri sayısı bilgisayarınızın CPU sayısı için otomatik olarak ayarlanır. En fazla 32'dir.  
 
 **Başlangıç projeleri ve bağımlılıkları çalıştırılmasında yalnızca derleme**  
 F5 anahtar, select kullandığınızda yalnızca başlangıç projesi ve onun bağımlılıklarını derlemeler **hata ayıklama > başlangıç** menü komutu ya da geçerli komutlarını **yapı** menüsü. NET, tüm projeleri ve bağımlılıkları yapı demektir. 

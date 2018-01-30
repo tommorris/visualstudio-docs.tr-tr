@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: ASP.NET, web applications, deployment, publishing
+helpviewer_keywords:
+- ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10cb0ca2d5190ce73f0fd67da5b1f795d5aa8dd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # Benim için en uygun Yayımlama seçenekleri nelerdir?
 
@@ -31,26 +34,22 @@ Gelen Visual Studio Web uygulamaları için doğrudan aşağıdaki hedefleri yay
 
 Üzerinde **Yayımla** sekmesi, varolan bir yayımlama profili seçin, mevcut bir alma veya açıklanan seçenekler burada kullanarak yeni bir tane oluşturun.
 
-## Azure uygulama hizmeti
+## Azure App Service Web Apps
 
-[Azure uygulama hizmeti](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) altyapı korumadan çeşitli ölçeklenebilir web uygulamaları ve Hizmetleri hızlı bir şekilde oluşturmak geliştiriciler yardımcı olur.
+[Azure App Service Web Apps](/azure/app-service/app-service-web-overview) (veya yalnızca Web uygulamaları) altyapısı korumadan çeşitli ölçeklenebilir web uygulamaları ve Hizmetleri hızlı bir şekilde oluşturmak geliştiriciler yardımcı olur.
 
-Web uygulamaları için özel olarak, bir uygulama hizmeti için bir kapsayıcıdır bir [ *Web uygulaması*](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/), hangi yakından eşleşen ne geleneksel web ana bilgisayar olarak düşünmeniz. Diğer bir deyişle, bir Web uygulaması, sunucu tarafı kodunuzu çalıştırmak ve Internet'e kullanılabilir hale getirmek gerekli işlem kaynaklarını sağlar.
-
-Ne kadar güç bir Web uygulaması computing seçerek sahip belirleyin bir [katmanı veya plan fiyatlandırması](https://azure.microsoft.com/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/) içeren uygulama hizmeti için. Birden çok sahip Web uygulamaları (ve diğer uygulama türleri) aynı App Service fiyatlandırma katmanı değiştirmeden paylaşın. Örneğin, geliştirme, hazırlama ve üretim Web uygulamalarında birlikte aynı uygulama hizmeti barındırabilir.
+Ne kadar güç bir Web uygulaması computing seçerek sahip belirleyin bir [katmanı veya plan fiyatlandırması](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) içeren uygulama hizmeti için. Birden çok sahip Web uygulamaları (ve diğer uygulama türleri) aynı App Service fiyatlandırma katmanı değiştirmeden paylaşın. Örneğin, geliştirme, hazırlama ve üretim Web uygulamalarında birlikte aynı uygulama hizmeti barındırabilir.
 
 Bulutta barındırılan sanal makineleri Azure üzerinde bir uygulama hizmeti çalışır, ancak bu sanal makineleri sizin için yönetilir. Her bir App Service'in Web uygulamasında benzersiz bir atanacak \*. azurewebsites.net URL; sitesine özel etki alanı adları atama izin tüm fiyatlandırma katmanlarına serbest dışında.
 
-### Ne zaman Azure uygulama hizmeti seçin
+### Azure App Service Web Apps seçmek ne zaman
 
 - Internet üzerinden erişilebilen bir web uygulaması dağıtmak istediğiniz.
 - Otomatik olarak yeniden dağıtmak gerek kalmadan, web uygulamanızın isteğe göre ölçeklendirmek istiyorsunuz.
 - Sunucu altyapı (yazılım güncelleştirmeleri de dahil olmak üzere) korumak istemiyorsanız.
 - Makine düzeyi özelleştirmeler, web uygulamanızı barındıran sunuculara gerek yoktur.
 
-
 > Azure uygulama hizmeti, kendi veri merkezi veya diğer şirket içi bilgisayarları kullanmak istiyorsanız, bunu kullanarak yapabilirsiniz [Azure yığın](https://azure.microsoft.com/overview/azure-stack/).
-
 
 ## Azure sanal makineler
 

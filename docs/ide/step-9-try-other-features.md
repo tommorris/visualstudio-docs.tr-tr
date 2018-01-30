@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 1b0c5c80-e5a6-4f69-a4a4-0e89a82d4de0
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5db8c070b5e0796e64071a8c28d4d36715cd8fc0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 198ce949913dc7d35052e50c4bd13a559e8336e5
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="step-9-try-other-features"></a>9. Adım: Diğer Özellikleri Deneme
 Daha fazla bilgi edinmek için simgeleri ve renkleri değiştirmeyi, oyun zamanlayıcısı ve sesler eklemeyi deneyin. Oyunu daha zorlu hale getirmek için tahtayı büyütmeyi ve zamanlayıcıyı ayarlamayı deneyin.  
@@ -39,7 +41,7 @@ Daha fazla bilgi edinmek için simgeleri ve renkleri değiştirmeyi, oyun zamanl
 -   Oyuncu bir eşleşme bulduğunda çalacak bir ses, eşleşmeyen iki simgeyi açtığında çalacak başka bir ses ve program simgeleri yeniden gizlediğinde çalacak üçüncü bir ses ekleyin.  
   
     > [!TIP]
-    >  Sesleri çalmak için System.media ad alanını kullanabilirsiniz. Bkz: [Windows Forms uygulamasında (C# .NET) sesleri çal](http://youtu.be/qOh4ooHg1UU) veya [nasıl yürütmek ses içinde Visual Basic'e](http://youtu.be/-4oPDeQrtMs) daha fazla bilgi için.  
+    >  Sesleri çalmak için System.media ad alanını kullanabilirsiniz. Bkz: [Windows Forms uygulamasında (C#) sesleri çal](http://youtu.be/qOh4ooHg1UU) veya [nasıl için Yürüt ses Visual Basic](http://youtu.be/-4oPDeQrtMs) daha fazla bilgi için.  
   
 -   Oyun tahtasını büyüterek oyunu zorlaştırın.  
   

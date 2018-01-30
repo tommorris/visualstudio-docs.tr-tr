@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,16 +23,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: faf5978119ef9029db99ae953d5c60876abddabf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 94f2683611dd04555fdd842e96f2c1ee4bb20fb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Visual Studio'da Projeler ve Çözümler Oluşturma ve Temizleme
 Bu konudaki yordamları kullanarak, derleme, yeniden oluşturmanız veya tüm veya bazı projeleri veya bir çözümde proje öğeleri temizleyin. Adım adım bir öğretici için bkz: [izlenecek yol: uygulama oluşturma](../ide/walkthrough-building-an-application.md).  
@@ -58,11 +60,11 @@ Bu konudaki yordamları kullanarak, derleme, yeniden oluşturmanız veya tüm ve
   
 1.  İçinde **Çözüm Gezgini**, seçin veya projeyi açın.  
   
-2.  Menü çubuğunda seçin **yapı**ve ardından ya da **yapı***ProjectName* veya **yeniden***ProjectName*.  
+2.  Menü çubuğunda seçin **yapı**ve ardından ya da **yapı *** ProjectName* veya **yeniden *** ProjectName*.  
   
-    -   Seçin **yapı***ProjectName* olanlar en son derlemeden bu yana değişmiş olan bileşenleri proje yalnızca oluşturmak için.  
+    -   Seçin **yapı *** ProjectName* olanlar en son derlemeden bu yana değişmiş olan bileşenleri proje yalnızca oluşturmak için.  
   
-    -   Seçin **yeniden***ProjectName* "projeyi temizleyin" ve proje dosyalarını ve tüm proje bileşenleri oluşturmak için.  
+    -   Seçin **yeniden *** ProjectName* "projeyi temizleyin" ve proje dosyalarını ve tüm proje bileşenleri oluşturmak için.  
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Yalnızca başlangıç projesi ve onun bağımlılıklarını oluşturmak için  
   
@@ -92,7 +94,7 @@ Bu konudaki yordamları kullanarak, derleme, yeniden oluşturmanız veya tüm ve
   
     -   **Temizleme yalnızca** *ProjectName*  
   
-    -   **Yalnızca bağlantı** *ProjectName*  
+    -   **Link Only** *ProjectName*  
   
     Bu komutları yalnızca uygulama [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] oluşturma, yeniden oluşturma, temizleme veya herhangi bir proje bağımlılıkları veya çözüm dosyalarını bağlama olmadan seçtiğiniz proje. Sürümünüze bağlı [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **yalnızca proje** alt başka komutlar içeriyor olabilir.  
   
@@ -111,11 +113,12 @@ Bu konudaki yordamları kullanarak, derleme, yeniden oluşturmanız veya tüm ve
     -   Seçin Ctrl + Break anahtarları.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
-[Nasıl yapılır: görüntüleme, kaydetme ve derleme günlüğü dosyalarını yapılandırma](../ide/how-to-view-save-and-configure-build-log-files.md)   
-[Derleme günlüklerini alma](../msbuild/obtaining-build-logs-with-msbuild.md)   
-[Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)   
-[Derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md)   
-[Hata ayıklama ve yayın proje yapılandırmaları](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
-[C/C++ oluşturma başvurusu](/cpp/build/reference/c-cpp-building-reference)   
-[Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md)   
+
+[Nasıl yapılır: Derleme Günlüğü Dosyalarını Görüntüleme, Kaydetme ve Yapılandırma](../ide/how-to-view-save-and-configure-build-log-files.md)  
+[Derleme günlüklerini alma](../msbuild/obtaining-build-logs-with-msbuild.md)  
+[Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)  
+[Derleme Yapılandırmalarını Anlama](../ide/understanding-build-configurations.md)  
+[Nasıl yapılır: Hata ayıklama ve dağıtım yapılandırmalarını ayarlama](../debugger/how-to-set-debug-and-release-configurations.md)  
+[C/C++ Derleme Başvurusu](/cpp/build/reference/c-cpp-building-reference)  
+[Devenv Komut Satırı Anahtarları](../ide/reference/devenv-command-line-switches.md)  
 [Çözümler ve projeler](../ide/solutions-and-projects-in-visual-studio.md)

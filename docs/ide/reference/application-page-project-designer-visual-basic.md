@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,19 +14,19 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
-caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 13d04bde21f46fd8950e79464beccfe2228633aa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c0683e9c619352c6d3f7d0cb431d3e2c973b6270
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Uygulama Sayfası, Proje Tasarımcısı (Visual Basic)
+
 Kullanım **uygulama** bir projenin uygulama ayarlarını ve özelliklerini belirtmek için Proje Tasarımcısı'nın sayfası.  
   
 Erişim için **uygulama** sayfası, proje düğümüne seçin (değil **çözüm** düğümü) içinde **Çözüm Gezgini**. Ardından **proje**, **özellikleri** menü çubuğunda. Proje Tasarımcısı görüntülendiğinde **uygulama** sekmesi.  
@@ -111,7 +112,7 @@ Erişim için **uygulama** sayfası, proje düğümüne seçin (değil **çözü
  Aşağıdaki ayarlar kullanılabilir **Windows uygulama framework özelliklerini** bölümü. Bu seçenekler kullanılabilir yalnızca **etkinleştir uygulama çerçevesi** onay kutusu seçilidir. Bunu aşağıdaki bölümde açıklanmıştır **Windows uygulama framework özelliklerini** Windows Presentation Foundation (WPF) uygulamaları için ayarlar.  
   
  **XP görsel stilleri etkinleştir**  
- Etkinleştirir veya Windows XP görsel stilleri olarak da bilinen devre dışı bırakır *Windows XP temaları*. Windows XP görsel stilleri Örneğin, yuvarlatılmış köşeleri ve dinamik renkleri denetimleriyle etkinleştirin. Varsayılan etkindir. Windows XP görsel stilleri hakkında daha fazla bilgi için bkz: [Windows XP özellikleri ve Windows Forms denetimleri](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
+ Etkinleştirir veya Windows XP görsel stilleri olarak da bilinen devre dışı bırakır *Windows XP temaları*. Windows XP görsel stilleri Örneğin, yuvarlatılmış köşeleri ve dinamik renkleri denetimleriyle etkinleştirin. Varsayılan etkindir.
   
  **Tek örnek uygulaması yap**  
  Kullanıcıların uygulama birden çok örneğini çalıştırmasını engellemek için bu onay kutusunu seçin. Varsayılan ayar bu onay kutusu işaretli değildir. Bu ayar, uygulamanın çalıştırılması için birden çok örneğini sağlar.  
@@ -151,13 +152,10 @@ Erişim için **uygulama** sayfası, proje düğümüne seçin (değil **çözü
   
  Bu ayarı kullanma hakkında daha fazla bilgi için bkz:<xref:System.Windows.Application.Shutdown%2A>  
   
- **XAML Düzenle**  
+ **Edit XAML**  
  Açın ve XAML Düzenleyicisi'nde uygulama tanımı dosyası (Application.xaml) değiştirmek için bu düğmeye tıklayın. Bu düğmeye tıkladığınızda, uygulama tanım düğümde Application.xaml açar. Kaynakları tanımlama gibi belirli görevleri gerçekleştirmek için bu dosyayı düzenlemek zorunda kalabilirsiniz. Uygulama tanımı dosyası mevcut değilse, Proje Tasarımcısı tane oluşturur.  
   
  **Uygulama olaylarını görüntüle**  
  Görüntülemek için bu düğmeye tıkladığınızda `Application` bir kod düzenleyicisinde kısmi sınıf dosyası (Application.xaml.vb). Dosya yoksa, Proje Tasarımcısı uygun sınıf ve ad alanına sahip bir tane oluşturur.  
   
- <xref:System.Windows.Application> Nesne (örneğin, uygulama başlatma veya kapatma) belirli uygulama durumu değişiklikler meydana geldiğinde olayları başlatır. Bu sınıf gösteren olayları tam bir listesi için bkz: <xref:System.Windows.Application>. Bu olaylar kullanıcı kodu bölümünde işlenmektedir `Application` parçalı sınıf.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
-[Uygulama özelliklerini yönetme](../../ide/application-properties.md) [Office çözümlerinde kod yazma](/office-dev/office-dev/writing-code-in-office-solutions)
+ <xref:System.Windows.Application> Nesne (örneğin, uygulama başlatma veya kapatma) belirli uygulama durumu değişiklikler meydana geldiğinde olayları başlatır. Bu sınıf gösteren olayları tam bir listesi için bkz: <xref:System.Windows.Application>. Bu olaylar kullanıcı kodu bölümünde işlenmektedir `Application` parçalı sınıf.

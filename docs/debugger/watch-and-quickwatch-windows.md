@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.watch
+f1_keywords:
+- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -15,22 +17,21 @@ helpviewer_keywords:
 - expression evaluation
 - registers, evaluating
 - debugging [Visual Studio], expression evaluation
-ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Bir izleme izleme ve QuickWatch Windows Visual Studio kullanarak değişkenleri ayarlayın
-Hata ayıklarken, kullanabileceğiniz **izleme** (**hata ayıklama > Windows > İzleme > İzle (1, 2, 3, 4)**) ve **QuickWatch** (değişkeni sağ /  **Hata ayıklama > QuickWatch**) değişkenleri ve ifadeler izlemek için windows.  Aralarındaki fark **izleme** penceresi birkaç değişkenleri görüntüleyebilir sırada **QuickWatch** penceresi, aynı anda tek bir değişken görüntüler.
+Hata ayıklarken, kullanabileceğiniz **izleme** ve **QuickWatch** değişkenleri ve ifadeler izlemek için windows.  Aralarındaki fark **izleme** penceresi birkaç değişkenleri görüntüleyebilir sırada **QuickWatch** penceresi, aynı anda tek bir değişken görüntüler. 
 
-Windows, yalnızca hata ayıklama oturumu sırasında kullanılabilir. 
+Windows, yalnızca hata ayıklama oturumu sırasında kullanılabilir. Açmak için **izleme** penceresinde, seçin **hata ayıklama > Windows > İzleme > İzle (1, 2, 3, 4)**). Açmak için **QuickWatch** penceresinde ya da değişkeni sağ tıklatın ve seçin **QuickWatch** veya seçin **hata ayıklama > QuickWatch**.
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>QuickWatch ile tek bir değişken Gözlemleme  
  Kullanabileceğiniz **QuickWatch** tek bir değişken izlemek için penceresi. Örneğin, aşağıdaki kodu varsa:  
@@ -54,7 +55,7 @@ static void Main(string[] args)
   
 2.  Hata ayıklama başlatılamıyor. Yürütme kesme noktasında durur.  
   
-3.  Açık **QuickWatch** penceresi (sağ tıklayın ardından **QuickWatch**, veya **SHIFT + F9**).
+3.  Açık **QuickWatch** penceresi (sağ tıklayın `a`, ardından **QuickWatch**, ya da seçin `a` ve tuşuna basın **SHIFT + F9**).
 
     Bir değişkende görmelisiniz **değerleri** penceresinde, 1 değerine sahip.
 

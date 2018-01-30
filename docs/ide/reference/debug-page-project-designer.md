@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesDebug
+f1_keywords:
+- vb.ProjectPropertiesDebug
 helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a16f39d9f9ba6c3e0790a53c85d0824178083953
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 305f5160ab91fdfa61e9133ab9f867194e4a117f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="debug-page-project-designer"></a>Hata Ayıklama Sayfası, Proje Tasarımcısı
 > [!WARNING]
@@ -29,16 +32,16 @@ ms.lasthandoff: 12/22/2017
   
  Kullanım **hata ayıklama** sayfasında **Proje Tasarımcısı** davranışı bir Visual Basic veya C# projesinde hata ayıklama özelliklerini ayarlamak için.  
   
- Erişim için **hata ayıklama** sayfası, proje düğümü seçin **Çözüm Gezgini**. Üzerinde **proje** menüsünde seçin *ProjectName***özellikleri**. Zaman **Proje Tasarımcısı** görünen tıklatın **hata ayıklama** sekmesi.  
+ Erişim için **hata ayıklama** sayfası, proje düğümü seçin **Çözüm Gezgini**. Üzerinde **proje** menüsünde seçin * ProjectName ***özellikleri**. Zaman **Proje Tasarımcısı** görünen tıklatın **hata ayıklama** sekmesi.  
   
 ## <a name="configuration-and-platform"></a>Yapılandırması ve platformu  
  Aşağıdaki seçenekler yapılandırma ve görüntülemek veya değiştirmek için platform seçmenize olanak tanır.  
   
  **Yapılandırma**  
- Görüntülemek veya değiştirmek için hangi yapılandırma ayarlarını belirtir. Ayarları **hata ayıklama** (varsayılan), **sürüm**, veya **tüm yapılandırmaları**. Daha fazla bilgi için bkz: [hata ayıklama ve yayın proje yapılandırmaları](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Görüntülemek veya değiştirmek için hangi yapılandırma ayarlarını belirtir. Ayarları **hata ayıklama** (varsayılan), **sürüm**, veya **tüm yapılandırmaları**.
   
  **Platform**  
- Görüntülemek veya değiştirmek için hangi platform ayarlarını belirtir. Seçimleri içerebilir **herhangi bir CPU** (varsayılan), **x64**, ve **x86**. Daha fazla bilgi için bkz: [hata ayıklama ve yayın proje yapılandırmaları](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Görüntülemek veya değiştirmek için hangi platform ayarlarını belirtir. Seçimleri içerebilir **herhangi bir CPU** (varsayılan), **x64**, ve **x86**.
   
 ## <a name="start-action"></a>Eylemi Başlat  
  **Eylemi Başlat** uygulama hata ayıklaması başlattığınızda öğeyi belirtir: Proje, özel bir program, bir URL veya hiçbir şey. Varsayılan olarak, bu seçeneği ayarlanmış **başlangıç projesi**. **Eylemi Başlat** ayarı **hata ayıklama** sayfa belirler değerini `StartAction` özelliği.  
@@ -74,10 +77,10 @@ ms.lasthandoff: 12/22/2017
   
  Bir güvenlik bölgesinde hata ayıklamak için bu seçeneği etkinleştirin ve **seçili izin kümesi ile bu uygulamanın hatalarını ayıklama** içinde [Gelişmiş Güvenlik Ayarları iletişim kutusu](../../ide/reference/advanced-security-settings-dialog-box.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da hata ayıklama](../../debugger/debugging-in-visual-studio.md)   
- [Proje ayarları için C# hata ayıklama yapılandırmaları](../../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Hata ayıklama yapılandırması proje ayarları bir Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Hata ayıklama özellikleri yönetme](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Nasıl yapılır: sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Nasıl Yapılır: Yapılandırmaları Oluşturma ve Düzenleme](../../ide/how-to-create-and-edit-configurations.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Visual Studio’da hata ayıklama](../../debugger/debugging-in-visual-studio.md)  
+[Proje ayarları için C# hata ayıklama yapılandırmaları](../../debugger/project-settings-for-csharp-debug-configurations.md)  
+[Hata ayıklama yapılandırması proje ayarları bir Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
+[Nasıl yapılır: Sınırlı İzinler ile ClickOnce Uygulamasında Hata Ayıklama](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)  
+[Nasıl Yapılır: Yapılandırmaları Oluşturma ve Düzenleme](../../ide/how-to-create-and-edit-configurations.md)

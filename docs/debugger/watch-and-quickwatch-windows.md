@@ -22,8 +22,8 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 01/29/2018
@@ -36,7 +36,7 @@ Windows, yalnızca hata ayıklama oturumu sırasında kullanılabilir. Açmak i�
 ## <a name="observing-a-single-variable-with-quickwatch"></a>QuickWatch ile tek bir değişken Gözlemleme  
  Kullanabileceğiniz **QuickWatch** tek bir değişken izlemek için penceresi. Örneğin, aşağıdaki kodu varsa:  
   
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b;  
@@ -125,7 +125,7 @@ int main()
 ##  <a name="bkmk_refreshWatch"></a>Eski Gözcü değerlerini yenileme  
  Bazı durumlarda bir yenileme simgesi (döngüsel bir ok) görebilirsiniz ne zaman bir ifadenin değerlendirileceği içinde **izleme** penceresi.  Özellik değerlendirmesi kapalı varsa, örneğin, (**Araçlar > Seçenekler > hata ayıklama > özellik değerlendirmesi ve diğer dolaylı işlev çağrılarını etkinleştirme**), ve aşağıdaki kodu sahip:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     List<string> list = new List<string>();  
@@ -177,7 +177,7 @@ var1 = var2
   
  Aşağıdaki kodda bir yöntem oluşturur bir `Person` yerel bir değişken, ancak kullanarak istediğiniz ne yaptığını öğrenmek `Person`ait farklı bir yöntem adıdır:  
   
-```CSharp  
+```csharp  
 class Person  
 {  
     public Person(string name)  

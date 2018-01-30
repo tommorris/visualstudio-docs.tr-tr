@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: c1186da8d276796816d8531963f746f222526b6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: e1191884f0a20463f9d248a6acfca4337212b613
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında C# içindeki Biçim belirticileri
 İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **izleme** penceresi biçim belirticilerini kullanma. İçindeki Biçim belirticileri de kullanabilirsiniz **hemen** penceresinde **komutu** penceresinde ve hatta kaynak windows. Bu windows deyimde üzerinde duraklatmak, sonuç DataTip içinde görünür. DataTips DataTip görüntüsündeki biçim belirticisi yansıtır.  
@@ -44,7 +46,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="using-format-specifiers"></a>Biçim belirticilerini kullanma  
  Aşağıdaki kodu varsa:  
   
-```CSharp  
+```csharp  
 {  
         int my_var1 = 0x0065;  
         int my_var2 = 0x0066;  
@@ -65,7 +67,7 @@ ms.lasthandoff: 12/22/2017
 |d|ondalık tamsayı|0x0065|101|  
 |dinamik|Dinamik bir görünümü kullanarak belirtilen nesneyi görüntüler|Dinamik görünüm dahil olmak üzere bu nesnenin tüm üyelerini görüntüler|Yalnızca dinamik görünümü görüntüler|  
 |h|onaltılık tamsayı|61541|0x0000F065|  
-|Nq|tırnak işaretleri olmadan dize|"Dize my"|My dize|  
+|nq|tırnak işaretleri olmadan dize|"Dize my"|My dize|  
 |gizli|Tüm genel ve genel olmayan üyeler görüntüler|Görüntüler Genel üyeler|Tüm üyeler görüntüler|  
 |Ham|Ham öğesi düğümünde göründüğü gibi öğesi görüntüler. Proxy nesneleri yalnızca geçerli.|Sözlük\<T >|Sözlük ham görünümünü\<T >|  
 |sonuçlar|Değişkeninin IEnumerable veya IEnumerable arabirimini uygulayan bir tür ile kullanılan\<T >, genellikle bir sorgu ifadesi sonucu. Sorgu sonucu içeren üyelerini görüntüler.|Tüm üyelerini görüntüler.|Üyeleri karşılamak görüntüler sorgunun koşullarını.|  

@@ -4,25 +4,28 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.execution
+f1_keywords:
+- vs.debug.execution
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c45f6cfa37ee8593da08d59071d8244b08feac7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile kod gidin
 Komutlar ve kısayolları hata ayıklayıcı kodda gitmek için ile tanışın ve daha hızlı ve kolay bulmak ve uygulamanızdaki sorunları gidermek hale getirir. Hata ayıklayıcı kodda gidin, ancak uygulamanızın durumunu incelemek veya kendi yürütme akışı hakkında daha fazla bilgi edinin.  
@@ -56,7 +59,7 @@ Komutlar ve kısayolları hata ayıklayıcı kodda gitmek için ile tanışın v
   
 -   Hata ayıklayıcı gerçekte fiziksel satırları yerine kod deyimleri adımları. Örneğin bir `if` yan tümcesi tek bir satırda yazılabilir:  
   
-    ```CSharp  
+    ```csharp  
     int x = 42;  
     string s = "Not answered";  
     if( int x == 42) s = "Answered!";  
@@ -78,7 +81,7 @@ Komutlar ve kısayolları hata ayıklayıcı kodda gitmek için ile tanışın v
 |Klavye komutu|Menü komutu|Açıklama|  
 |----------------------|------------------|-----------------|  
 |**F10**|**Adımlama**|Bir işlev çağrısı geçerli satır içeriyorsa, **Step Over** kod çalışır sonra çağrılan işlev döndükten sonra yürütme kodu ilk satırında askıya alır.|  
-|**Shift + F11**|**Dışarı Adım**|**Step Out** kodu çalışmaya devam eder ve geçerli işlevi (hata ayıklayıcı atlar geçerli işlevi aracılığıyla) döndürdüğünde yürütme askıya alır.|  
+|**Shift+F11**|**Dışarı Adım**|**Step Out** kodu çalışmaya devam eder ve geçerli işlevi (hata ayıklayıcı atlar geçerli işlevi aracılığıyla) döndürdüğünde yürütme askıya alır.|  
   
 > [!TIP]
 >  Giriş noktası uygulamanızda bulmanız gerekiyorsa, başlayın **F10** veya **F11**. Bu komutlar, genellikle, uygulama durumunu incelemek veya kendi yürütme akışı hakkında daha fazla bilgi bulmak istediğiniz faydalıdır.  

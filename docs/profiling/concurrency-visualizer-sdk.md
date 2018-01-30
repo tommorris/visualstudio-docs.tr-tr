@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.cv.sdk.about
+f1_keywords:
+- vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5eecc1d317f2391632cbe87df30a2ba2fd7c692c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f3745e863a94c0e2b899da0bf9d81589570c6ac0
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="concurrency-visualizer-sdk"></a>Eşzamanlılık Görselleştiricisi SDK
 Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için eşzamanlılık görselleştiricisi SDK'sını kullanarak kaynak kodunuzu işaretleyebilir. Ek verileri kodunuzda aşamaları ve olaylarla ilişkilendirebilirsiniz. Bu ek görsel olarak da bilinir *işaretçileri*.  Bir giriş için bkz [eşzamanlılık görselleştiricisi SDK'sı giriş](http://go.microsoft.com/fwlink/?LinkId=235405).  
@@ -40,7 +43,7 @@ Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için eşzamanl
   
 3.  Bir Imports veya kodunuzu deyimiyle ekleyin.  
   
-    ```CSharp  
+    ```csharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
@@ -93,7 +96,7 @@ Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için eşzamanl
   
 1.  Yeni bir kullanmak için <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, ilk kullanarak oluşturma bir <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> nesne ve ardından işaret olayları doğrudan yeni serisinden oluşturun.  
   
-    ```CSharp  
+    ```csharp  
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");  
     series1.WriteFlag("My flag");  
     ```  

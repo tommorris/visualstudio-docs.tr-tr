@@ -4,20 +4,22 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a969a75a7c0cda89d040b8829fc8313974646c07
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile çalışmaya başlama
 Visual Studio hata ayıklayıcısı herhangi bir dilde kullanımı kolaydır. Basit bir C# programı hata ayıklamak nasıl burada göstereceğiz, ancak C++ ve JavaScript gibi başka bir dilde kodu aynı adımları uygulayabilirsiniz.
@@ -27,7 +29,7 @@ Benzer özellikleri gösteren bir video izlemek için bkz: [hata ayıklayıcıs�
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a>Temel C# projesinde hata ayıklama  
  Basit bir C# konsol uygulaması ile başlayalım (**Dosya > Yeni > Proje**seçeneğini belirleyip **Visual C#** ve ardından **konsol uygulaması**). Hiçbir zaman önce Visual Studio çalıştıysanız bkz [izlenecek yol: basit bir uygulama oluşturmak](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Ana** yöntemi yalnızca 1 10 kez bir tamsayı değişken ekler ve sonuç konsola yazdırır:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  
@@ -71,7 +73,7 @@ static void Main(string[] args)
   
  Arasındaki farkı görmek için **Step Into** ve **Step Over**, başka bir yöntem kullanarak adlı bir yöntem eklemek ihtiyacımız. C# uygulaması için bir yöntem ekleyin ve ana yöntemi çağırın. Kod aşağıdakine benzer görünmelidir:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     Method1();  

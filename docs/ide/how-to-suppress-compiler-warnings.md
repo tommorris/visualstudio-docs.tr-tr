@@ -9,12 +9,13 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 868e3be3dc789928fe061d236cdc7a0971d49c71
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.openlocfilehash: 3af162101eb20e018be44480c862192c0c59276a
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Nasıl yapılır: Derleyici uyarılarını gizleme
 
@@ -111,7 +112,7 @@ Bu örnek nasıl düzenleneceğini gösterir *.vbproj* belirli derleyici uyarıl
 
     **Çıkış** penceresi artık belirttiğiniz uyarıları gösterir.
 
-Daha fazla bilgi için bkz: [/nowarn) derleyici seçeneği](/dotnet/visual-basic/reference/command-line-compiler/nowarn) için Visual Basic komut satırı derleyicisi.
+Daha fazla bilgi için bkz: [/nowarn derleyici seçeneği](/dotnet/visual-basic/reference/command-line-compiler/nowarn) için Visual Basic komut satırı derleyicisi.
 
 ## <a name="suppressing-warnings-for-nuget-packages"></a>NuGet paketleri için uyarıları gizleme
 

@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10d3e6b3e5b47fc481a573a365b4423e685625f1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ebc3067ea154c8b9a5f6e180f397c5421f2be470
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio"></a>Visual Studio IntelliTrace ile olaylarını görüntüle
 IntelliTrace veya hakkında bilgi belirli olayları ya da olayların kategorilerini, ayrı ayrı işlev çağrılarını ayrıca olaylarını toplamak için kullanabilirsiniz. Aşağıdaki yordamlar, bunun nasıl yapılacağını gösterir.  
@@ -33,13 +35,13 @@ IntelliTrace veya hakkında bilgi belirli olayları ya da olayların kategoriler
   
 1.  Bir C# konsol uygulaması oluşturun. Program.cs dosyasında aşağıdaki ekleyin `using` deyimi:  
   
-    ```CSharp  
+    ```csharp  
     using System.IO;  
     ```  
   
 2.  Oluşturma bir <xref:System.IO.FileStream> , okumak Main yönteminde kapatın ve dosyayı silin. Yalnızca bir kesme noktası ayarlamak için bir yer olan başka bir satırı ekleyin:  
   
-    ```CSharp  
+    ```csharp  
     static void Main(string[] args)  
     {  
         FileStream fs = File.Create("WordSearchInputs.txt");  

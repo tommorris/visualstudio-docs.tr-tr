@@ -20,6 +20,7 @@
 ## [Test Gezgini ile birim testleri çalıştırma](run-unit-tests-with-test-explorer.md)
 ### [64 bitlik bir işlem olarak birim testi çalıştırma](run-a-unit-test-as-a-64-bit-process.md)
 ### [İzlenecek yol: UWP uygulamaları için Birim Testleri Oluşturma ve Çalıştırma](walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md)
+### [Test Gezgini Hakkında SSS](test-explorer-faq.md)
 ## [.runsettings dosyasını kullanarak birim testlerini yapılandırma](configure-unit-tests-by-using-a-dot-runsettings-file.md)
 ## [Yönetilen Kod için Birim Testleri Yazma](writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
 ### [İzlenecek yol: Yönetilen Kod için Birim Testleri Oluşturma ve Çalıştırma](walkthrough-creating-and-running-unit-tests-for-managed-code.md)

@@ -1,29 +1,31 @@
 ---
 title: Visual Studio'da IPython REPL | Microsoft Docs
+description: "Visual Studio etkileşimli penceresini IPython modunda etkileşimli paralel bilgi işlem özelliklere sahip bir kullanıcı dostu etkileşimli geliştirme ortamı kullanarak."
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d33765a2c70f6c58759e2722b04d770b6f8822a6
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d084731c821bf31743e8c4dce5f31881f19a56f4
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Etkileşimli pencerede IPython kullanma
 
-Visual Studio etkileşimli penceresini IPython modunda etkileşimli paralel bilgi işlem özellikleri olan bir Gelişmiş henüz kullanıcı dostu etkileşimli geliştirme ortamıdır. Bu konuda tüm normal, Visual Studio etkileşimli penceresinde IPython kullanarak kılavuzluk [etkileşimli pencere](interactive-repl.md) özellikleri de kullanılabilir duruma gelir.
+Visual Studio etkileşimli penceresini IPython modunda etkileşimli paralel bilgi işlem özellikleri olan bir Gelişmiş henüz kullanıcı dostu etkileşimli geliştirme ortamıdır. Bu konuda tüm normal, Visual Studio etkileşimli penceresinde IPython kullanarak kılavuzluk [etkileşimli pencere](python-interactive-repl-in-visual-studio.md) özellikleri de kullanılabilir duruma gelir.
 
 Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerekli kitaplıkları içeren yüklü ortamı.
 
@@ -64,14 +66,14 @@ Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerek
         xs = np.arange(20)
         ys = np.random.rand(20)
         # You can provide either a single color or an array. To demonstrate this,
-        # the first bar of each set will be colored cyan.
-        cs = [c] * len(xs) 
-        cs[0] = 'c' 
+        # the first bar of each set is colored cyan.
+        cs = [c] * len(xs)
+        cs[0] = 'c'
         ax.bar(xs, ys, zs=z, zdir='y', color=cs, alpha=0.8)
 
-    ax.set_xlabel('X') 
-    ax.set_ylabel('Y') 
-    ax.set_zlabel('Z') 
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.set_zlabel('Z')
     plt.show()
     ```
 
@@ -85,4 +87,4 @@ IPython değişkeni değiştirme sistem Kabuk kaçış gibi birçok diğer yarar
 
 - Jupyter kolayca ve yükleme olmadan kullanmak için ücretsiz olarak deneyin [Azure not defterlerini barındırılan hizmeti](https://notebooks.azure.com/) tutun ve defterlerinizi başkalarıyla paylaşmanızı sağlayan.
 
-- Jupyter (önceki adıyla IPython da bilinir), kendi Windows veya Linux sanal makineye Azure üzerinde de çalıştırabilirsiniz. Ayrıntılar için bkz [bir Azure VM Jupyter yükleme ve Jupyter not defteri Azure üzerinde çalışan oluşturuluyor.](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).
+- Jupyter (önceki adıyla IPython da bilinir), kendi Windows veya Linux sanal makineye Azure üzerinde de çalıştırabilirsiniz. Ayrıntılar için bkz [bir Azure VM Jupyter yükleme ve Jupyter not defteri Azure üzerinde çalışan oluşturuluyor](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).

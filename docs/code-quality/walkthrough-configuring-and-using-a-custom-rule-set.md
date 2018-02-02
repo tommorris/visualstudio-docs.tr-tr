@@ -5,27 +5,26 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
-ms.assetid: 7fe0a4e3-1ce0-4f38-a87a-7d81238ec7cd
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 054cf016dba69561591ad6bc8b18029272e85d8f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>İzlenecek Yol: Özel bir Kural Kümesini Yapılandırma ve Kullanma
+
 Bu kılavuz bir özelleştirilmiş kullanmak üzere yapılandırılmış kod çözümleme araçları nasıl kullanacağınızı gösterir *kural kümesi* üzerinde bir sınıf kitaplığı. Eski kod bölünemez şekilde sabit sorunları için tarama gibi belirli bir gereksinimi karşılamak için alternatif bir kural kümesi, çözümünüz için belirtilen ya da seçebilirsiniz proje türü ilişkili bir kural kümesini seçebilirsiniz. Her iki durumda da, kural kümeleri de yapılandırarak proje gereksinimlerinizi ince ayar için özelleştirilebilir.  
   
- Bu kılavuzda, bu işlemler adım:  
+Bu kılavuzda, bu işlemler adım:  
   
 -   Bir sınıf kitaplığı oluşturun.  
   
@@ -39,14 +38,11 @@ Bu kılavuz bir özelleştirilmiş kullanmak üzere yapılandırılmış kod ç�
   
 -   Kod çözümleme çalıştırın ve nasıl özelleştirme davranışı works kural kümesi bakın.  
   
-## <a name="prerequisites"></a>Önkoşullar  
+## <a name="using-rule-sets-with-code-analysis"></a>Kural Kod Analizi ile kümeleri kullanma
+
+İlk olarak, bir basit sınıf kitaplığı oluşturun.  
   
--   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], veya[!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
-  
-## <a name="using-rule-sets-with-code-analysis"></a>Kural Kod Analizi ile kümeleri kullanma  
- İlk olarak, bir basit sınıf kitaplığı oluşturun.  
-  
-#### <a name="create-a-class-library"></a>Bir sınıf kitaplığı oluşturun  
+### <a name="create-a-class-library"></a>Bir sınıf kitaplığı oluşturun  
   
 1.  Üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **proje**.  
   
@@ -58,7 +54,7 @@ Bu kılavuz bir özelleştirilmiş kullanmak üzere yapılandırılmış kod ç�
   
  Ardından, seçecektir **Microsoft temel tasarım yönerge kuralları** kural kümesini ve projenizi ile kaydedin.  
   
-#### <a name="select-a-code-analysis-rule-set"></a>Kod çözümleme kural kümesi seçin  
+### <a name="select-a-code-analysis-rule-set"></a>Kod çözümleme kural kümesi seçin  
   
 1.  Üzerinde **Çözümle** menüsünde tıklatın **RuleSetSample için Kod Analizi yapılandırma**.  
   
@@ -75,11 +71,11 @@ Bu kılavuz bir özelleştirilmiş kullanmak üzere yapılandırılmış kod ç�
   
  Ardından, CA1704 ihlalleri göstermek için kullanılan sınıf kitaplığı için bazı kod ekleyeceksiniz "Tanımlayıcıları yazıldığından" Kod Analizi kural. Daha fazla bilgi için bkz: [CA1704: tanımlayıcılar yazıldığından](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
-#### <a name="add-your-own-code"></a>Kendi kodunuzu ekleyin  
+### <a name="add-your-own-code"></a>Kendi kodunuzu ekleyin  
   
 -   Çözüm Gezgini'nde, Class1.cs dosyasını açın ve var olan kodu aşağıdakiyle değiştirin:  
   
-    ```  
+    ```csharp
     using System;  
     using System.Collections.Generic;  
     using System.Text;  
@@ -99,13 +95,12 @@ Bu kılavuz bir özelleştirilmiş kullanmak üzere yapılandırılmış kod ç�
                 return (sum);  
             }  
         }  
-    }  
+    }
+    ```
   
-    ```  
+Şimdi RuleSetSample projede Kod Analizi çalıştırın ve hataları ve uyarıları hata Listesi penceresindeki oluşturulan arayın.  
   
- Şimdi RuleSetSample projede Kod Analizi çalıştırın ve hataları ve uyarıları hata Listesi penceresindeki oluşturulan arayın.  
-  
-#### <a name="run-code-analysis-on-the-rulesetsample-project"></a>Kod çözümleme RuleSetSample projede çalıştırın  
+### <a name="run-code-analysis-on-the-rulesetsample-project"></a>Kod çözümleme RuleSetSample projede çalıştırın  
   
 1.  Üzerinde **Çözümle** menüsünde tıklatın **RuleSetSample kod çözümleme çalıştırmak**.  
   
@@ -117,7 +112,7 @@ Bu kılavuz bir özelleştirilmiş kullanmak üzere yapılandırılmış kod ç�
   
  Ardından, kural CA1704 uyarı dışlanacak kümesi özelleştireceğiniz, "Tanımlayıcılar doğru yazılmalıdır".  
   
-#### <a name="customize-the-rule-set-for-your-project-to-disable-a-specific-rule"></a>Kural belirli bir kuralın devre dışı bırakmak projeniz için kümesi özelleştirme  
+### <a name="customize-the-rule-set-for-your-project-to-disable-a-specific-rule"></a>Kural belirli bir kuralın devre dışı bırakmak projeniz için kümesi özelleştirme  
   
 1.  Üzerinde **Çözümle** menüsünde tıklatın **RuleSetSample için Kod Analizi yapılandırma**.  
   
@@ -127,15 +122,15 @@ Bu kılavuz bir özelleştirilmiş kullanmak üzere yapılandırılmış kod ç�
   
 4.  Altında **eylem** sütun, select **yok.** Bu, bir uyarı veya hata listesi penceresini hata olarak görüntüleme CA1704 önler.  
   
-     Şimdi çeşitli araç çubuğu düğmeleri ile denemek için iyi bir süredir olacaktır ve bunlarla aşina seçenekleri filtreleme. Örneğin, kullanabileceğiniz **Group By** belirli bir kural veya kategori kurallarının bulmasına yardımcı olmak için aşağı açılan liste. Kullanabileceğiniz başka bir örnektir **Gizle devre dışı kurallarını** sahip tüm kurallar göstermek veya gizlemek için kural kümesi sayfaları araç çubuğu düğmesini **eylem** sütun kümesine **hiçbiri**. Bu, hala bunları devre dışı olmasını istediğiniz doğrulamak için kapatmış herhangi bir kuralın için taramak istiyorsanız yararlı olabilir.  
+     Şimdi çeşitli araç çubuğu düğmeleri ile denemek için iyi bir zamandır ve bunlarla aşina seçenekleri filtreleme. Örneğin, kullanabileceğiniz **Group By** belirli bir kural veya kategori kurallarının bulmasına yardımcı olmak için aşağı açılan liste. Kullanabileceğiniz başka bir örnektir **Gizle devre dışı kurallarını** sahip tüm kurallar göstermek veya gizlemek için kural kümesi sayfaları araç çubuğu düğmesini **eylem** sütun kümesine **hiçbiri**. Bu, hala bunları devre dışı olmasını istediğiniz doğrulamak için kapatmış herhangi bir kuralın için taramak istiyorsanız yararlı olabilir.  
   
 5.  Görünüm menüsünde Özellikler penceresini'ı tıklatın. Tür **My özel kural kümesi** aracı penceresinin Ad kutusuna. Bu yeni kural kümesi görünen adını değiştirir [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] IDE.  
   
 6.  Üzerinde **dosya** menüsünde tıklatın **Microsoft tüm Rules.ruleset kaydetmek** özelleştirilmiş kuralınız kaydetmek üzere ayarlama. Projenizin kök klasöre gidin. İçinde **FileName** metin kutusunda, **MyCustomRuleSet**. Özel kural kümesini şimdi projenizi ile kullanmak için seçilebilir.  
   
- Oluşturulan, yeni kural kümesi ile artık, yeni kuralınıza ile ayarlamak kullanmak istediğinizi belirtmek için proje ayarlarınızı yapılandırmanız gerekir.  
+Oluşturulan, yeni kural kümesi ile artık, yeni kuralınıza ile ayarlamak kullanmak istediğinizi belirtmek için proje ayarlarınızı yapılandırmanız gerekir.  
   
-#### <a name="specify-the-new-rule-set-for-use-with-your-project"></a>Yeni Kural projenizi ile kullanılmak üzere kümesi belirtin  
+### <a name="specify-the-new-rule-set-for-use-with-your-project"></a>Yeni Kural projenizi ile kullanılmak üzere kümesi belirtin  
   
 1.  Çözüm Gezgini'nde projeye sağ tıklayın ve ardından **özellikleri**.  
   
@@ -147,12 +142,13 @@ Bu kılavuz bir özelleştirilmiş kullanmak üzere yapılandırılmış kod ç�
   
  Son olarak, Kod Analizi MyCustomRuleSet kural kümesini kullanarak yeniden çalışır. Hata Listesi penceresini CA1704 performans kuralı ihlali görüntülemez dikkat edin.  
   
-#### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Kod çözümleme RuleSetSample projede ikinci kez çalıştırın.  
+### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Kod çözümleme RuleSetSample projede ikinci kez çalıştırın.  
   
 1.  Üzerinde **Çözümle** menüsünde tıklatın **RuleSetSample kod çözümleme çalıştırmak**.  
   
 2.  ' I tıklattığınızda hata Listesi penceresinde dikkat **uyarıları**, artık CA1704 uyarı ihlalleri "Tanımlayıcılar doğru yazılmalıdır" kuralı için bkz.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: yönetilen kod projesi için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
- [Kod çözümleme kural kümesi başvurusu](../code-quality/code-analysis-rule-set-reference.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Nasıl yapılır: yönetilen kod projesi için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+[Kod çözümleme kural kümesi başvurusu](../code-quality/code-analysis-rule-set-reference.md)

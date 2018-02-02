@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 08/04/2017
 ms.reviewer: Jamie.Young
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
-caps.latest.revision: "10"
+caps.latest.revision: 
 ms.author: v-brickg
 manager: ghogen
-ms.workload: v-brickg
-ms.openlocfilehash: 69fad7f5bab020aea442670687e5fc781eee2955
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- v-brickg
+ms.openlocfilehash: eb6ff923bd74b4c6350e8252d59c86cabff11428
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio için Visual dil sözlüğü
 Visual Studio ortak bir görsel dil kendi yansır ve diğer görüntülerin yapı taşlarıdır kavramları göstermek için kullanır. Yeni simgeler tasarlarken, bu sözlük kendi görüntünüzü iletmek istediğiniz kavramları tanımlamak için kullanın.  
@@ -448,7 +450,7 @@ Visual Studio ortak bir görsel dil kendi yansır ve diğer görüntülerin yap�
 | **Eylem durumu: duraklatıldı** | ![Eylem durumu: simgesi duraklatıldı](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused.png "VLD_S_ActionStatusPaused") | ![Sunucu duraklatıldı simgesi](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused_serverpaused.png "VLD_S_ActionStatusPaused_ServerPaused")<br />Sunucu duraklatıldı |
 | **Eylem durumu: çalışan çalma** | ![Eylem durumu: Yürütülüyor, simge çalıştırmak](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning.png "VLD_S_ActionStatusPlayingRunning") | ![Başlatılan sunucu simgesi](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning_serverstarted.png "VLD_S_ActionStatusPlayingRunning_ServerStarted")<br />Sunucu başlatıldı<br />![Simge çalıştırılmadı](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning_neverrun.png "VLD_S_ActionStatusPlayingRunning_NeverRun")<br />Hiçbir zaman çalıştırma |
 | **Eylem durumu: durduruldu** | ![Eylem durumu: simgesi durduruldu](../../extensibility/ux-guidelines/media/vld_s_actionstatusstopped.png "VLD_S_ActionStatusStopped") | ![Sunucu durduruldu simgesi](../../extensibility/ux-guidelines/media/vld_s_actionstatusstopped_serverstopped.png "VLD_S_ActionStatusStopped_ServerStopped")<br />Sunucu durduruldu |
-| **Uyarı** | ![Uyarı simgesi](../../extensibility/ux-guidelines/media/vld_s_alert.png "VLD_S_Alert") | ![Hata sekmesi işaret simgesi ile bağlantılı tablo](../../extensibility/ux-guidelines/media/vld_s_alert_linkedtablewitherrortabcue.png "VLD_S_Alert_LinkedTableWithErrorTabCue")<br />Hata sekmesi işaret ile bağlantılı tablo<br />![Kod çözümleme pencere simgesi](../../extensibility/ux-guidelines/media/vld_s_alert_codeanalysiswindow.png "VLD_S_Alert_CodeAnalysisWindow")<br />Kod çözümleme penceresi |
+| **Uyarı** | ![Uyarı simgesi](../../extensibility/ux-guidelines/media/vld_s_alert.png "VLD_S_Alert") | ![Hata sekmesi işaret simgesi ile bağlantılı tablo](../../extensibility/ux-guidelines/media/vld_s_alert_linkedtablewitherrortabcue.png "VLD_S_Alert_LinkedTableWithErrorTabCue")<br />Hata sekmesi işaret ile bağlantılı tablo |
 | **Kesme noktası: Gelişmiş devre dışı** | ![Kesme noktası: devre dışı simgesi Gelişmiş](../../extensibility/ux-guidelines/media/vld_s_breakpointadvanceddisabled.png "VLD_S_BreakpointAdvancedDisabled") ||
 | **Kesme noktası: etkin Gelişmiş**  |![Kesme noktası: etkin simgesi Gelişmiş](../../extensibility/ux-guidelines/media/vld_s_breakpointadvancedenabled.png "VLD_S_BreakpointAdvancedEnabled") ||
 | **Kesme noktası: bağlı** | ![Kesme noktası: bağlama simgesi](../../extensibility/ux-guidelines/media/vld_s_breakpointbound.png "VLD_S_BreakpointBound") ||

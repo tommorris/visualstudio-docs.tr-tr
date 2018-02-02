@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a3f788b114b4250819c4867136cb1b888c816cf8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 552d256b315d6506911ae4cf8724b33173cd39a4
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python desteğini yükleme
 
@@ -35,7 +36,7 @@ Visual Studio 2015 için ve önceki de tercih ettiğiniz bir Python yorumlayıc�
 Hızlı yükleme adımlarını izleyerek sonra Python desteği test etmek için Alt tuşuna basarak Python etkileşimli penceresini açın-t ve girerek `2+2`. Çıktısını görmüyorsanız, `4`, adımlarınızı yeniden denetleyin.
 
 > [!Tip]
-> Python iş yükü şablonları bulmak, şablon seçenekleri giriş ve projeler ve dosyaları oluşturmak için bir grafik kullanıcı arabirimi sağlar yardımcı Cookiecutter uzantısını da içerir. Ayrıntılar için bkz [kullanarak Cookiecutter](cookiecutter.md).
+> Python iş yükü şablonları bulmak, şablon seçenekleri giriş ve projeler ve dosyaları oluşturmak için bir grafik kullanıcı arabirimi sağlar yardımcı Cookiecutter uzantısını da içerir. Ayrıntılar için bkz [kullanarak Cookiecutter](using-python-cookiecutter-templates.md).
 
 > [!Note]
 > Python desteği Mac için Visual Studio şu anda kullanılabilir değil, ancak Mac ve Linux Visual Studio Code ile kullanılabilir. Bkz: [sorular ve yanıtlar](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
@@ -63,11 +64,11 @@ Hızlı yükleme adımlarını izleyerek sonra Python desteği test etmek için 
     | Seçenek | Açıklama |
     | --- | --- |
     | Python dağıtımları | Herhangi bir bileşimini çalışmak için planlama Python 2, Python 3, Anaconda2 ve Anaconda3 dağıtımları 32-bit ve 64-bit çeşitlemelerini seçin. Her dağıtım 's Yorumlayıcı, çalışma zamanı ve kitaplıklarını içerir. Anaconda, özellikle çok çeşitli önceden yüklenen paketler içeren bir açık veri bilimi platformudur. (Visual Studio yükleyicisi eklemek veya kaldırmak dağıtımları için herhangi bir zamanda döndürebilir.) |
-    | Cookiecutter şablon desteği | Şablonları bulmak, şablon seçenekleri giriş ve projeler ve dosyaları oluşturmak için Cookiecutter grafik kullanıcı arabirimini yükler. Bkz: [Cookiecutter uzantısını kullanarak](cookiecutter.md). |
-    | Python web desteği | HTML, CSS ve JavaScript desteği, Bottle, Flask ve Django çerçeveleri kullanarak projeleri için şablonlar yanı sıra düzenleme dahil olmak üzere web geliştirme araçları'nı yükler. Bkz: [Python web projesi şablonları](template-web.md). |
+    | Cookiecutter şablon desteği | Şablonları bulmak, şablon seçenekleri giriş ve projeler ve dosyaları oluşturmak için Cookiecutter grafik kullanıcı arabirimini yükler. Bkz: [Cookiecutter uzantısını kullanarak](using-python-cookiecutter-templates.md). |
+    | Python web desteği | HTML, CSS ve JavaScript desteği, Bottle, Flask ve Django çerçeveleri kullanarak projeleri için şablonlar yanı sıra düzenleme dahil olmak üzere web geliştirme araçları'nı yükler. Bkz: [Python web projesi şablonları](python-web-application-project-templates.md). |
     | Python IOT desteği | Python kullanarak Windows IOT Core geliştirme destekler. |
     | Python yerel geliştirme araçları | C++ derleyicisi ve Python için yerel uzantılar geliştirmek üzere diğer gerekli bileşenleri yükler. Bkz: [Python için C++ uzantısı oluşturma](working-with-c-cpp-python-in-visual-studio.md). Ayrıca yükleme **C++ ile masaüstü geliştirme** tam C++ destek için iş yükü. |
-    | Azure bulut Hizmetleri Çekirdek araçları | Geliştirici Python Azure bulut Hizmetleri için ek destek sağlar. Bkz: [Azure bulut hizmeti projeleri](template-azure-cloud-service.md). |
+    | Azure bulut Hizmetleri Çekirdek araçları | Geliştirici Python Azure bulut Hizmetleri için ek destek sağlar. Bkz: [Azure bulut hizmeti projeleri](python-azure-cloud-service-project-template.md). |
 
 1. Yükleme sonrasında, yükleyici değiştirmek, başlatma, onarın veya Visual Studio'yu kaldırmak için seçenekler sağlar. **Değiştir** düğmesi değişiklikler **güncelleştirme** güncelleştirmeler için kullanılabilir güncelleştirmeler olduğunda Visual Studio bileşenleri yüklü olduğunda. (Değiştir seçeneği, ardından aşağı açılan menüsünde kullanılabilir.) Visual Studio ve Windows Başlat menüsünden yükleyici "Visual Studio" arayarak de başlatabilirsiniz.
 

@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.graphics.frameanalysis
-ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
-caps.latest.revision: "9"
+f1_keywords:
+- vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d15e781445605eb1e236f177669c2fe8041d90d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="graphics-frame-analysis"></a>Grafik Çerçeve Çözümlemesi
 Grafik Çerçeve Çözümlemesi Visual Studio grafik Çözümleyicisi çözümlemek ve Direct3D oyun veya uygulama işleme performansını iyileştirmek için kullanın.  
@@ -147,37 +148,32 @@ Grafik Çerçeve Çözümlemesi Visual Studio grafik Çözümleyicisi çözümle
 ### <a name="gpu-counters"></a>GPU sayaçları  
  GPU donanım sayaçları desteği donanım bağımlıdır.  
   
- Hiçbir bilgisayar şu anda Intel, AMD veya NVIDIA tarafından sunulan GPU GPU donanım sayaçları güvenilir bir şekilde desteklediğinden, çerçeve analizi sayaçları onlardan toplamak değil. Ancak, çerçeve analizi donanım sayaçları güvenilir bir şekilde bunları destekleyen bu GPU Topla:  
+ Hiçbir bilgisayar şu anda Intel, AMD veya NVIDIA tarafından sunulan GPU GPU donanım sayaçları güvenilir bir şekilde desteklediğinden, çerçeve analizi sayaçları onlardan toplamak değil. Ancak, çerçeve analizi donanım sayaçları güvenilir bir şekilde bunları destekleyen aşağıdaki GPU Topla:  
   
--   (Tüm destekleyen Windows Phone) Qualcomm SOCs  
-  
--   NVIDIA T40 (Tegra4).  
+-   NVIDIA T40 (Tegra4)
   
  Çerçeve analizi destekleyen herhangi bir platform GPU donanım sayaçlarını toplar.  
   
 > [!NOTE]
 >  GPU donanım sayaçları donanım kaynakları olduğundan, her işleme değişken için donanım sayaçları tamamını toplamak için birden çok geçiş alabilir. Sonuç olarak, hangi GPU sayaçları toplanır belirtilmeyen sırasıdır.  
   
-### <a name="windows-phone"></a>Windows Phone  
- Zaman damgaları, kapanması sorgular ve GPU donanım sayaçları yalnızca ilk olarak Windows Phone 8.1 veya Windows Phone 10 ile birlikte Windows Phone ahizeleri üzerinde desteklenir. Çerçeve analizi bu grafik günlük dosyası kayıttan gerektirir. İlk olarak Windows Phone 8 ile birlikte gelen Windows Phone ahizeleri çerçeve analizi, hatta Windows Phone 8.1 veya Windows Phone 10 güncelleştirilmiş ahizeleri için desteklemez.  
-  
 ## <a name="unsupported-scenarios"></a>Desteklenmeyen senaryolar  
  Çerçeve analizi kullanarak belirli yöntemler desteklenmeyen veya yalnızca kötü bir fikir değil.  
-  
-### <a name="warp"></a>TÜNELİ  
- Çerçeve analizi profil ve gerçek donanım üzerinde işleme performansı artırmak için kullanılmak üzere tasarlanmıştır. Çerçeve analizi TÜNELİ cihazlarda çalıştırılan değil engelledi — Windows Phone öykünücüsü TÜNELİ üzerinde çalışır; ancak genellikle faydalı takip TÜNELİ birinci sınıf bir CPU üzerinde çalışan bile en az özellikli modern GPU yavaş olduğundan ve TÜNELİ performans değişebileceğinden değil büyük ölçüde bağlı olarak belirli CPU üzerinde çalıştırıldığı.  
   
 ### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>Alt düzey cihazlarda yüksek düzeyli özellik çalınmasını yakalar  
  Kayıttan yürütme makinesini desteklediğinden daha yüksek bir özellik düzeyini kullanan bir grafik günlük dosyası kayıttan yürütürken grafik Çözümleyicisi'nde, otomatik olarak geri için TÜNELİ döner. Çerçeve analizi, açıkça TÜNELİ için geri dönüş değil ve bir hata oluşturur — TÜNELİ yararlıdır Direct3D uygulamanızı doğruluğunu inceleyerek, ancak kendi performansını inceleme değil.  
   
 > [!NOTE]
->  Özellik düzeyinde konuları göz önünde bulundurmanız önemli olsa da, yakalama ve grafik günlük dosyalarını farklı donanım yapılandırmaları ve aygıtları kayıttan. Örneğin, bir Windows Phone üzerinde grafik bilgilerini yakalama ve Masaüstü bir bilgisayarda yürütmek ve tersi de desteklenir. Her iki durumda da, grafik günlük günlük dosyası değil veya API'leri içeren kayıttan yürütme makinede desteklenmeyen özellik düzeylerini kullanın geri sürece çalınabilir.  
+>  Özellik düzeyinde konuları göz önünde bulundurmanız önemli olsa da, yakalama ve grafik günlük dosyalarını farklı donanım yapılandırmaları ve aygıtları kayıttan. Grafik günlük günlük dosyası değil veya API'leri içeren kayıttan yürütme makinede desteklenmeyen özellik düzeylerini kullanın geri sürece çalınabilir.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 ve daha düşük  
  Uygulamanızı Direct3D 10 API çağrıları, çerçeve analizi tanımak veya tanınan ve diğer grafik Çözümleyicisi araçları tarafından kullanılan olsa bile bunları profil olmaz.
   
 > [!NOTE]
 >  Bu, kullanmakta olduğunuz yalnızca Direct3D API çağrıları olmayan özellik düzeylerini geçerlidir.
+
+### <a name="warp"></a>WARP  
+ Çerçeve analizi profil ve gerçek donanım üzerinde işleme performansı artırmak için kullanılmak üzere tasarlanmıştır. Çerçeve analizi TÜNELİ cihazlarda çalıştırılan engelledi değil, ancak genellikle faydalı takip TÜNELİ birinci sınıf bir CPU üzerinde çalışan bile en az özellikli modern GPU yavaş olduğundan ve TÜNELİ performans belirli CPU bağlı olarak büyük ölçüde farklılık gösterebileceğinden değil üzerinde çalıştırıldığı.  
   
 ##  <a name="Variants"></a>Çeşitleri  
  Bir çerçeve kayıttan yürütme sırasında işlenen şekilde çerçeve analizi yaptığı her değişiklik olarak bilinen bir *değişken*. Çerçeve analizi inceler çeşitleri işleme performansı veya uygulamanızı görsel kalitesini artırmak için yapabilir ortak, görece kolay değişiklikleri için karşılık gelen — örneğin, doku boyutunun azaltılması, doku sıkıştırma kullanılarak veya etkinleştirme yumuşatma farklı türde. Çeşitleri normal işleme bağlamını ve uygulamanızın parametreleri geçersiz. Bir özeti aşağıda verilmiştir:  
@@ -185,9 +181,9 @@ Grafik Çerçeve Çözümlemesi Visual Studio grafik Çözümleyicisi çözümle
 |Değişken|Açıklama|  
 |-------------|-----------------|  
 |**1 x 1 Görünüm penceresi boyutu**|Tüm işleme hedefleri görünüm penceresinin boyutlarında 1 x 1 piksel azaltır.<br /><br /> Daha fazla bilgi için bkz: [1 x 1 Görünüm penceresi boyutu değişken](1x1-viewport-size-variant.md)|  
-|**0 x MSAA**|Birden çok örnek yumuşatma (MSAA) tüm işleme hedeflerde devre dışı bırakır.<br /><br /> Daha fazla bilgi için bkz: [0 x / 2 x / 4 x MSAA çeşitleri](0x-2x-4x-msaa-variants.md)|  
-|**2 x MSAA**|Birden çok örnek yumuşatma (MSAA) tüm işleme hedeflerde x 2 sağlar.<br /><br /> Daha fazla bilgi için bkz: [0 x / 2 x / 4 x MSAA çeşitleri](0x-2x-4x-msaa-variants.md)|  
-|**4 x MSAA**|Birden çok örnek yumuşatma (MSAA) tüm işleme hedeflerde x 4 sağlar.<br /><br /> Daha fazla bilgi için bkz: [0 x / 2 x / 4 x MSAA çeşitleri](0x-2x-4x-msaa-variants.md)|  
+|**0x MSAA**|Birden çok örnek yumuşatma (MSAA) tüm işleme hedeflerde devre dışı bırakır.<br /><br /> Daha fazla bilgi için bkz: [0 x / 2 x / 4 x MSAA çeşitleri](0x-2x-4x-msaa-variants.md)|  
+|**2x MSAA**|Birden çok örnek yumuşatma (MSAA) tüm işleme hedeflerde x 2 sağlar.<br /><br /> Daha fazla bilgi için bkz: [0 x / 2 x / 4 x MSAA çeşitleri](0x-2x-4x-msaa-variants.md)|  
+|**4x MSAA**|Birden çok örnek yumuşatma (MSAA) tüm işleme hedeflerde x 4 sağlar.<br /><br /> Daha fazla bilgi için bkz: [0 x / 2 x / 4 x MSAA çeşitleri](0x-2x-4x-msaa-variants.md)|  
 |**Noktası doku filtreleme**|Filtreleme modunu ayarlar `DXD11_FILTER_MIN_MAG_MIP_POINT` (doku filtreleme noktası) için tüm uygun doku örnekleri.<br /><br /> Daha fazla bilgi için bkz: [noktası, ikili, Trilinear ve Eşyönsüz doku filtreleme çeşitleri](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Çift doğrusal doku filtreleme**|Filtreleme modunu ayarlar `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (çift doğrusal doku filtreleme) tüm uygun doku örnekleri için.<br /><br /> Daha fazla bilgi için bkz: [noktası, ikili, Trilinear ve Eşyönsüz doku filtreleme çeşitleri](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Trilinear doku filtreleme**|Filtreleme modunu ayarlar `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilinear doku filtreleme) tüm uygun doku örnekleri için.<br /><br /> Daha fazla bilgi için bkz: [noktası, ikili, Trilinear ve Eşyönsüz doku filtreleme çeşitleri](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  

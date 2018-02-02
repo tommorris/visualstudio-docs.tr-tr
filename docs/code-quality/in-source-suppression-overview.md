@@ -1,128 +1,168 @@
 ---
-title: "Kaynak gizleme genel bakış | Microsoft Docs"
+title: "Visual Studio'da SuppressMessage özniteliğini kullanarak kod analizi uyarıları gizleme | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/29/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
-ms.assetid: f1a2dc6a-a9eb-408c-9078-2571e57d207d
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 92babbf3c7a5863d178463b69525bdb722bf28ad
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CSharp
+- VB
+- CPP
+ms.workload:
+- multiple
+ms.openlocfilehash: 4cd3800e082673e9478eb32c6ae5627eef4d7e81
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="in-source-suppression-overview"></a>Kaynak Bastırmaya Genel Bakış
-Kaynak gizleme yeteneğidir gizlemek veya Kod Analizi ihlalleri yönetilen kod ekleyerek Yoksay **SuppressMessage** özniteliği ihlali neden kodu kesimleri. **SuppressMessage** yalnızca CODE_ANALYSIS derleme simgenin derleme zamanında tanımlanırsa, yönetilen kod derlemenizi IL meta verilerine dahil bir koşullu özniteliği bir özniteliktir.  
-  
- C + +/ CLI, CA_SUPPRESS_MESSAGE veya CA_GLOBAL_SUPPRESS_MESSAGE makroları öznitelik eklemek için üst bilgi dosyasını kullanın.  
-  
- Kaynak suppressions sürüm yapıları kaynak gizleme meta verileri yanlışlıkla sevkiyat önlemek için kullanmamanız gerekir. Kaynak gizleme işleme maliyetini nedeniyle, uygulamanızın performansını kaynak gizleme meta veriler ekleyerek da düşebilir.  
-  
+# <a name="suppressing-code-analysis-warnings"></a>Kod çözümleme uyarıları gizleme
+
+Genellikle, bir uyarı geçerli olmadığını göstermek kullanışlıdır. Bu kodu gözden ve uyarı gizlenebilir ekip üyelerine gösterir. Kaynak gizleme (ISS) kullanan <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> bir gizlemek için öznitelik. Öznitelik uyarı oluşturulan kod kesimi yakın yerleştirilebilir. Ekleyebileceğiniz <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği kaynak dosyasını, yazarak veya kısayol menüsünden bir uyarı kullanabilirsiniz **hata listesi** otomatik olarak eklemek için.
+
+<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Özniteliktir, yönetilen kod derlemenizi IL meta verilerine dahil bir koşullu özniteliği yalnızca derleme zamanında CODE_ANALYSIS derleme simgenin tanımlanmışsa.
+
+C + +/ CLI, CA makroları kullanmak\_BASTIR\_ileti veya CA\_genel\_öznitelik eklemek için üstbilgi dosyasında SUPPRESS_MESSAGE.
+
 > [!NOTE]
->  El kod bu öznitelikler kendiniz sahip değilsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Menü öğesi C++ kodu için kullanılabilir değil.  
-  
-## <a name="suppressmessage-attribute"></a>SuppressMessage özniteliği  
- Kod çözümleme uyarı olarak sağ **hata listesi** ve ardından **bastırmak iletileri**, **SuppressMessage** özniteliği kodunuzda veya çok eklenir Projenin genel suppressions dosyası.  
-  
- **SuppressMessage** özniteliği şu biçime sahiptir:  
-  
-```vb  
-<Scope:SuppressMessage("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")>  
-```  
-  
-```csharp  
-[Scope:SuppressMessage("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")]  
-  
-```  
-  
- [C++]  
-  
-```  
-CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")  
-  
-```  
-  
- Konum:  
-  
--   **Kural kategori** -kural tanımlanır kategorisi. Kod çözümleme kural kategorileri hakkında daha fazla bilgi için bkz: [yönetilen kod uyarıları için Kod Analizi](../code-quality/code-analysis-for-managed-code-warnings.md).  
-  
--   **Kural Kimliği** -kuralının tanıtıcısı. Hem kısa ve uzun ad kuralı tanımlayıcısı için destek içerir. Kısa ad CAXXXX olur; uzun CAXXXX:FriendlyTypeName adıdır.  
-  
--   **Düzeltme** -ileti gizleme nedenini belgelemek için kullanılan metin.  
-  
--   **İleti kimliği** -her ileti için sorun benzersiz tanıtıcısı.  
-  
--   **Kapsam** -üzerinde uyarı geçersiz kılınır hedef. Hedef belirtilmezse, özniteliğin hedef ayarlanır. Desteklenen kapsamları aşağıdakileri içerir:  
-  
-    -   Modül  
-  
-    -   Ad Alanı  
-  
-    -   Kaynak  
-  
-    -   Tür  
-  
-    -   Üye  
-  
--   **Hedef** - üzerinde uyarı geçersiz kılınır hedef belirtmek için kullanılan tanımlayıcı bir. Bir tam öğesi adı içermelidir.  
-  
-## <a name="suppressmessage-usage"></a>SuppressMessage kullanımı  
- Kod çözümleme uyarıları hangi düzeyde gizlenir örneği **SuppressMessage** özniteliği uygulanır. Bunun amacı, sıkı bir şekilde kod gizleme bilgileri eşleştiği için burada ihlali gerçekleşir.  
-  
- Gizleme genel biçiminde kural kategorisini ve kural adı isteğe bağlı bir kullanıcı tarafından okunabilen gösterimini içeren bir kural tanımlayıcısını içerir. Örneğin,  
-  
- `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`  
-  
- Kaynak gizleme meta verileri en aza indirmek için katı Performans nedeniyle varsa, kural adı bırakılabilir. Kural kategorisini ve kendi kural kimliği birlikte yeterince benzersiz kural tanımlayıcısını oluşturur. Örneğin,  
-  
- `[SuppressMessage("Microsoft.Design", "CA1039")]`  
-  
- Bu biçim bakım sorunları nedeniyle önerilmez.  
-  
-## <a name="suppressing-multiple-violations-within-a-method-body"></a>Birden çok ihlalleri bir yöntem gövdesinde gizleme  
- Öznitelikleri yalnızca bir yönteme uygulanabilir ve yöntem gövdesinde katıştırılmış. Ancak, bir ihlali bir yöntem içinde birden çok tekrarı ayırt etmek için ileti kimliği olarak tanımlayıcısını belirtin.  
-  
- [!code-cpp[InSourceSuppression#1](../code-quality/codesnippet/CPP/in-source-suppression-overview_1.cpp)]
- [!code-vb[InSourceSuppression#1](../code-quality/codesnippet/VisualBasic/in-source-suppression-overview_1.vb)]
- [!code-csharp[InSourceSuppression#1](../code-quality/codesnippet/CSharp/in-source-suppression-overview_1.cs)]  
-  
-## <a name="generated-code"></a>Oluşturulan kod  
- Yönetilen kod derleyicileri ve bazı üçüncü taraf araçları hızlı kod geliştirme kolaylaştırmak için kod oluşturur. Kaynak dosyaları görünür derleyici tarafından üretilen kod ile genellikle işaretlenir **GeneratedCodeAttribute** özniteliği.  
-  
- Kod çözümleme uyarıları ve hataları üretilen kod için engellenip engellenmeyeceğini seçebilirsiniz. Bu tür uyarılar ve hatalar gizlemek hakkında daha fazla bilgi için bkz: [nasıl yapılır: üretilen kod için uyarıları bastırma](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
-  
- Kod çözümleme yoksayar Not **GeneratedCodeAttribute** zaman uygulandığı tüm bütünleştirilmiş veya tek bir parametre. Bu durum nadiren oluşur.  
-  
-## <a name="global-level-suppressions"></a>Genel düzeyde Suppressions  
- Yönetilen kod çözümleme aracı inceler **SuppressMessage** derleme modül türü üye veya parametre düzeyinde uygulanır öznitelikleri. Ayrıca, kaynakları ve ad alanları karşı ihlalleri ateşlenir. Bu ihlalleri genel düzeyde uygulanmış olması gerekir ve kapsamlı ve hedeflenen. Örneğin, aşağıdaki ileti, bir ad alanı ihlali gizler:  
-  
- `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
-  
+> Kaynak suppressions yayın derlemeleri üzerinde kaynak gizleme meta verileri yanlışlıkla sevkiyat önlemek için kullanmamanız gerekir. Ayrıca, kaynak gizleme işleme maliyetini nedeniyle, uygulamanızın performansı düşebilir.
+
+## <a name="suppressmessage-attribute"></a>SuppressMessage özniteliği
+
+Seçtiğinizde **bastır** bir kod çözümleme uyarı bağlamı veya sağ tıklama menüsünden **hata listesi**, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği kodunuzda veya projenin genel gizleme eklenir dosya.
+
+<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Özniteliği şu biçime sahiptir:
+
+```vb
+<Scope:SuppressMessage("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")>
+```
+
+```csharp
+[Scope:SuppressMessage("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")]
+```
+
+```cpp
+CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")
+```
+
+Öznitelik özellikleri içerir:
+
+- **Kural kategori** -kural tanımlanır kategorisi. Kod çözümleme kural kategorileri hakkında daha fazla bilgi için bkz: [kod uyarıları yönetilen](../code-quality/code-analysis-for-managed-code-warnings.md).
+
+- **Kural Kimliği** -kuralının tanıtıcısı. Hem kısa ve uzun ad kuralı tanımlayıcısı için destek içerir. Kısa ad CAXXXX olur; uzun CAXXXX:FriendlyTypeName adıdır.
+
+- **Düzeltme** -ileti gizleme nedenini belgelemek için kullanılan metin.
+
+- **İleti kimliği** -her ileti için sorun benzersiz tanıtıcısı.
+
+- **Kapsam** -üzerinde uyarı geçersiz kılınır hedef. Hedef belirtilmezse, özniteliğin hedef ayarlanır. Desteklenen kapsamları aşağıdakileri içerir:
+
+    - Modül
+
+    - Ad Alanı
+
+    - Kaynak
+
+    - Tür
+
+    - Üye
+
+- **Hedef** - üzerinde uyarı geçersiz kılınır hedef belirtmek için kullanılan tanımlayıcı bir. Bir tam öğesi adı içermelidir.
+
+## <a name="suppressmessage-usage"></a>SuppressMessage kullanımı
+
+Kod çözümleme uyarıları hangi düzeyde gizlenir <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği uygulanır. Örneğin, öznitelik derleme, modül, türü, üye veya parametre düzeyinde uygulanabilir. Bunun amacı, sıkı bir şekilde kod gizleme bilgileri eşleştiği için burada ihlali gerçekleşir.
+
+Gizleme genel biçiminde kural kategorisini ve kural adı isteğe bağlı bir kullanıcı tarafından okunabilen gösterimini içeren bir kural tanımlayıcısını içerir. Örneğin:
+
+`[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
+
+Kaynak gizleme meta verileri en aza indirmek için katı Performans nedeniyle varsa, kural adı atlanabilir. Kural kategorisini ve kendi kural kimliği birlikte yeterince benzersiz kural tanımlayıcısını oluşturur. Örneğin:
+
+`[SuppressMessage("Microsoft.Design", "CA1039")]`
+
+Bakım nedeniyle, kural adı atlama önerilmez.
+
+## <a name="suppressing-selective-violations-within-a-method-body"></a>Yöntem gövdesi içinde seçmeli ihlalleri gizleme
+
+Gizleme öznitelikler için bir yöntem uygulanabilir, ancak bir yöntem gövdesinde katıştırılmış. Bu, eklerseniz, belirli bir kural tüm ihlalleri bastırılan anlamına gelir <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği yöntemi.
+
+Bazı durumlarda, böylece gelecekteki kod Kod Analizi kural dışında otomatik olarak muafiyet değil ihlali, örneğin belirli bir örneği bastırmak isteyebilirsiniz. Belirli kod çözümleme kurallarını kullanarak bunu izin `MessageId` özelliğinin <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği. Genel olarak, belirli simgesi (yerel değişken veya parametre) saygı üzerinde ihlalleri için eski kuralları `MessageId` özelliği. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) is an example of such a rule. Ancak, eski kuralları yürütülebilir kod (symbol olmayan) üzerinde ihlalleri için saygı `MessageId` özelliği. Ayrıca, Roslyn çözümleyiciler saygı `MessageId` özelliği.
+
+Bir kural belirli sembol ihlal gizlemek için sembol adını belirtin `MessageId` özelliğinin <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği. Aşağıdaki örnek, iki ihlalleri koduyla gösterir [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;için bir tane `name` değişkeni, diğeri de `age` değişkeni. Yalnızca ihlali için `age` simgesi geçersiz kılınır.
+
+```vb
+Public Class Animal
+    Dim age As Integer
+    Dim name As String
+
+    <CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1500:VariableNamesShouldNotMatchFieldNames", MessageId:="age")>
+    Sub PrintInfo()
+        Dim age As Integer = 5
+        Dim name As String = "Charlie"
+
+        Console.WriteLine("Age {0}, Name {1}", age, name)
+    End Sub
+
+End Class
+```
+
+```csharp
+public class Animal
+{
+    int age;
+    string name;
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1500:VariableNamesShouldNotMatchFieldNames", MessageId = "age")]
+    private void PrintInfo()
+    {
+        int age = 5;
+        string name = "Charlie";
+
+        Console.WriteLine($"Age {age}, Name {name}");
+    }
+}
+```
+
+## <a name="generated-code"></a>Oluşturulan kod
+
+Yönetilen kod derleyicileri ve bazı üçüncü taraf araçları hızlı kod geliştirme kolaylaştırmak için kod oluşturur. Kaynak dosyaları görünür derleyici tarafından üretilen kod ile genellikle işaretlenir `GeneratedCodeAttribute` özniteliği.
+
+Kod çözümleme uyarıları ve hataları üretilen kod için engellenip engellenmeyeceğini seçebilirsiniz. Bu tür uyarılar ve hatalar gizlemek hakkında daha fazla bilgi için bkz: [nasıl yapılır: üretilen kod için uyarıları bastırma](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
+
 > [!NOTE]
->  Ad alanı kapsamlı bir uyarı bastırma olduğunda uyarı ad karşı gizler. Ad alanı içindeki türleriyle uyarı bastırma değil.  
-  
- Tüm gizleme açık bir kapsam belirterek ifade edilebilir. Bu suppressions genel düzeyde bulunmalıdır. Üye düzeyi gizleme türü tasarlayarak belirtemezsiniz.  
-  
- Genel düzey suppressions açıkça sağlanan kullanıcı kaynağına eşlemiyor derleyici tarafından üretilen kod başvurmak iletileri bastırmak için tek yoludur. Örneğin, aşağıdaki kod bir ihlali derleyici yayılan Oluşturucusu karşı gizler:  
-  
- `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
-  
+> Kod çözümleme yoksayar `GeneratedCodeAttribute` zaman uygulandığı tüm bütünleştirilmiş veya tek bir parametre.
+
+## <a name="global-level-suppressions"></a>Genel düzey suppressions
+
+Yönetilen kod çözümleme aracı inceler `SuppressMessage` derleme modül türü üye veya parametre düzeyinde uygulanır öznitelikleri. Ayrıca, kaynakları ve ad alanları karşı ihlalleri ateşlenir. Bu ihlalleri genel düzeyde uygulanmış olması gerekir ve kapsamlı ve hedeflenen. Örneğin, aşağıdaki ileti, bir ad alanı ihlali gizler:
+
+`[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
+
 > [!NOTE]
->  Hedef her zaman tam öğe adı içeriyor.  
-  
-## <a name="global-suppression-file"></a>Genel gizleme dosyası  
- Genel gizleme dosyası genel düzeyde suppressions ya da bir hedef belirtmeyin suppressions suppressions sağlar. Örneğin, suppressions derleme düzeyi ihlalleri için bu dosyada depolanır. Ayrıca, proje düzeyi ayarları form arka plan kod için kullanılabilir olmadığından bazı ASP.NET suppressions bu dosyada depolanır. Genel gizleme oluşturulur ve seçtiğiniz ilk kez projenize eklenir **proje gizleme dosyasını** seçeneği **bastırmak iletileri** hata listesi penceresini komutunu. Daha fazla bilgi için bkz: [nasıl yapılır: menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- <xref:System.Diagnostics.CodeAnalysis>
+> Ad alanı kapsamlı bir uyarı bastırma olduğunda uyarı ad karşı gizler. Ad alanı içindeki türleriyle uyarı bastırma değil.
+
+Tüm gizleme açık bir kapsam belirterek ifade edilebilir. Bu suppressions genel düzeyde bulunmalıdır. Üye düzeyi gizleme türü tasarlayarak belirtemezsiniz.
+
+Genel düzey suppressions açıkça sağlanan kullanıcı kaynağına eşlemiyor derleyici tarafından üretilen kod başvurmak iletileri bastırmak için tek yoludur. Örneğin, aşağıdaki kod bir ihlali derleyici yayılan Oluşturucusu karşı gizler:
+
+`[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
+
+> [!NOTE]
+> `Target`her zaman tam öğe adı içerir.
+
+## <a name="global-suppression-file"></a>Genel gizleme dosyası
+
+Genel gizleme dosyası genel düzeyde suppressions ya da bir hedef belirtmeyin suppressions suppressions sağlar. Örneğin, suppressions derleme düzeyi ihlalleri için bu dosyada depolanır. Ayrıca, proje düzeyi ayarlarla bir form arka plan kod için kullanılabilir olmadığından bazı ASP.NET suppressions bu dosyada depolanır. Bir genel gizleme dosyası oluşturulur ve seçtiğiniz ilk kez projenize eklenir **proje gizleme dosyasını** seçeneği **bastır** komutunu **hata listesi**penceresi.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+<xref:System.Diagnostics.CodeAnalysis>

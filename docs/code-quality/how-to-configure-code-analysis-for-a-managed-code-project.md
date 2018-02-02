@@ -7,29 +7,30 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.propertypages.csvb
+f1_keywords:
+- vs.codeanalysis.propertypages.csvb
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
-ms.assetid: 618f6ff3-db0e-46cb-b08d-dfa35e62c9e7
-caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 134645ced3352d820165b23a73308894fed0897a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 575b81e9c213e4025cd38921ad467869686d867c
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Nasıl yapılır: Yönetilen Kod Projesi İçin Kod Çözümlemesini Yapılandırma
-İçinde [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] ve [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], Kod Analizi listesinden seçebilirsiniz *kural kümeleri* yönetilen kod projesi için uygulanacak. Varsayılan kural Microsoft Minimum önerilen kurallar kümesidir. Başka bir kural bir proje veya bir çözümdeki tüm projeleri kümesi uygulayabilirsiniz.  
+
+Visual Studio'da Kod Analizi listesinden seçebilirsiniz *kural kümeleri* yönetilen kod projesi için uygulanacak. Varsayılan kural Microsoft Minimum önerilen kurallar kümesidir. Başka bir kural bir proje veya bir çözümdeki tüm projeleri kümesi uygulayabilirsiniz.  
   
 > [!NOTE]
->  Bir kural kümesini ASP.NET Web uygulamaları için yapılandırma hakkında daha fazla bilgi için bkz: [nasıl yapılır: ASP.NET Web uygulaması için Kod Analizi yapılandırma](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
+> Bir kural kümesini ASP.NET Web uygulamaları için yapılandırma hakkında daha fazla bilgi için bkz: [nasıl yapılır: ASP.NET Web uygulaması için Kod Analizi yapılandırma](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
   
-### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Bir kural yapılandırmak için .NET Framework projesi için ayarlayın  
+## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Bir kural yapılandırmak için .NET Framework projesi için ayarlayın  
   
 1.  İçinde **Çözüm Gezgini**, projeye tıklayın.  
   
@@ -37,12 +38,12 @@ ms.lasthandoff: 12/22/2017
   
 3.  İçinde **yapılandırma** ve **Platform** listeler, derleme yapılandırmasını ve hedef platformu'i tıklatın.  
   
-4.  Kod çözümleme proje seçilen yapılandırma kullanılarak oluşturulmuştur her zaman çalıştırmak için seçin **etkinleştirme kodu (tanımlar CODE_ANALYSIS sabiti) çözümleme yapı** onay kutusu. Ayrıca Kod Analizi el ile açarak çalıştırabilirsiniz **Çözümle** menü ve tıklayarak **çalıştırmak kod çözümleme** *ProjectName*.  
+4.  Proje seçilen yapılandırma kullanılarak oluşturulmuştur her zaman Kod Analizi çalıştırmak için seçin **etkinleştirmek Kod Analizi derlemede** onay kutusu. Ayrıca Kod Analizi el ile açarak çalıştırabilirsiniz **Çözümle** menü ve seçme ** çalıştırmak kod çözümleme * ProjectName ***.  
   
 5.  Varsayılan olarak, Kod Analizi uyarıları dış araçları tarafından otomatik olarak oluşturulan kodundan bildirmiyor. Oluşturulan kodundan uyarıları görüntülemek için temizleyin **bastırmak oluşturulan kod sonuçlarından** onay kutusu.  
   
     > [!NOTE]
-    >  Hataları ve Uyarıları formlar ve şablonlar görüntülendiğinde bu seçenek kod çözümleme hataları ve Uyarıları oluşturulan kodundan engelleme. Hem görüntülemek ve bir form veya şablon için kaynak kodunu sağlayabilirsiniz.  
+    > Hataları ve Uyarıları formlar ve şablonlar görüntülendiğinde bu seçenek kod çözümleme hataları ve Uyarıları oluşturulan kodundan engelleme. Hem görüntülemek ve onu üzerine gerek kalmadan bir form veya şablon için kaynak kodunu sağlayabilirsiniz.
   
 6.  İçinde **bu kural kümesini çalıştırmak** listesinde, aşağıdakilerden birini yapın:  
   
@@ -54,5 +55,6 @@ ms.lasthandoff: 12/22/2017
   
          Daha fazla bilgi için bkz: [özel kural kümeleri oluşturma](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek Yol: Özel bir Kural Kümesini Yapılandırma ve Kullanma](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İzlenecek Yol: Özel bir Kural Kümesini Yapılandırma ve Kullanma](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

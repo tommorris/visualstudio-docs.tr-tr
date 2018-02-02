@@ -14,30 +14,33 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5b05e295830762939e2142b550863219afaa06ce
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2b6c1d9b4fa92146b64d075ff4268bc32c0e65c1
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Kodunuz aracılığıyla bağımlılık diyagramları oluşturma
-Yazılım sisteminizin üst düzey, mantıksal mimarisi görselleştirmek için oluşturun bir *bağımlılık diyagramı* Visual Studio. Kodunuzu bu tasarım ile tutarlı kalmasını sağlamak için bir bağımlılık diyagramı ile kodunuzu doğrulayın. Visual C# .NET ve Visual Basic projeleri için bağımlılık diyagramları oluşturabilirsiniz. Bu özellik, Visual Studio'nun hangi sürümleri desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
-  
- ![Bir bağımlılık diyagramı oluşturmak](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
-  
- Bir bağımlılık diyagramı, Visual Studio çözüm öğeleri olarak adlandırılan mantıksal, soyut gruplar halinde düzenlemenizi sağlar *katmanları*. Bu yapıların gerçekleştirdiği temel görevleri veya sistemin ana bileşenlerini açıklamak için katmanları kullanabilirsiniz. Her katman, daha ayrıntılı görevleri açıklayan başka katmanlar içerebilir. Hedeflenen veya varolan da belirtebilirsiniz *bağımlılıkları* katmanlar arasında. Oklar olarak temsil edilen bu bağımlılıklar, hangi katmanların diğer katmanlar tarafından temsil edilen işlevi kullanabileceğini veya kullanmakta olduğunu gösterir. Kodunun mimari denetimini sağlamak için diyagram üzerinde hedeflenen bağımlılıkları gösterin ve ardından kodu diyagrama karşı doğrulayın.  
-  
- [Video: mimarisi bağımlılıklarınızı gerçek zamanlı doğrula](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
-  
-##  <a name="CreateDiagram"></a>Bir bağımlılık diyagramı oluşturma  
- Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü modelleme projesine sahip olduğundan emin olun. 
-  
+
+Yazılım sisteminizin üst düzey, mantıksal mimarisi görselleştirmek için oluşturun bir *bağımlılık diyagramı* Visual Studio. Kodunuzu bu tasarım ile tutarlı kalmasını sağlamak için bir bağımlılık diyagramı ile kodunuzu doğrulayın. Visual C# ve Visual Basic projeleri için bağımlılık diyagramları oluşturabilirsiniz. Bu özellik, Visual Studio'nun hangi sürümleri desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+![Bir bağımlılık diyagramı oluşturmak](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+
+Bir bağımlılık diyagramı, Visual Studio çözüm öğeleri olarak adlandırılan mantıksal, soyut gruplar halinde düzenlemenizi sağlar *katmanları*. Bu yapıların gerçekleştirdiği temel görevleri veya sistemin ana bileşenlerini açıklamak için katmanları kullanabilirsiniz. Her katman, daha ayrıntılı görevleri açıklayan başka katmanlar içerebilir. Hedeflenen veya varolan da belirtebilirsiniz *bağımlılıkları* katmanlar arasında. Oklar olarak temsil edilen bu bağımlılıklar, hangi katmanların diğer katmanlar tarafından temsil edilen işlevi kullanabileceğini veya kullanmakta olduğunu gösterir. Kodunun mimari denetimini sağlamak için diyagram üzerinde hedeflenen bağımlılıkları gösterin ve ardından kodu diyagrama karşı doğrulayın.
+
+[Video: mimarisi bağımlılıklarınızı gerçek zamanlı doğrula](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
+
+##  <a name="CreateDiagram"></a>Bir bağımlılık diyagramı oluşturma
+
+Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü modelleme projesine sahip olduğundan emin olun.
+
 > [!IMPORTANT]
->  Yok eklemek, sürükleyin veya varolan bir bağımlılık diyagramını modelleme projesinden başka bir modelleme projesine veya çözümdeki başka bir yere kopyalayın. Bu, diyagramı değiştirseniz bile orijinal diyagramdan yapılan başvuruları korur. Bu, katman doğrulamasının doğru çalışmasını da engeller ve siz diyagramı açmaya çalışırken kayıp öğeler veya başka hatalar gibi diğer sorunlara da neden olabilir.  
->   
->  Bunun yerine, yeni bir bağımlılık diyagramı modelleme projesine ekleyin. Öğeleri kaynak diyagramdan yeni diyagrama kopyalayın. Modelleme projesi ve yeni bağımlılık diyagram kaydedin.  
-  
+> Yok eklemek, sürükleyin veya varolan bir bağımlılık diyagramını modelleme projesinden başka bir modelleme projesine veya çözümdeki başka bir yere kopyalayın. Bu, diyagramı değiştirseniz bile orijinal diyagramdan yapılan başvuruları korur. Bu, katman doğrulamasının doğru çalışmasını da engeller ve siz diyagramı açmaya çalışırken kayıp öğeler veya başka hatalar gibi diğer sorunlara da neden olabilir.
+>
+> Bunun yerine, yeni bir bağımlılık diyagramı modelleme projesine ekleyin. Öğeleri kaynak diyagramdan yeni diyagrama kopyalayın. Modelleme projesi ve yeni bağımlılık diyagram kaydedin.
+
 #### <a name="to-add-a-new-dependency-diagram-to-a-modeling-project"></a>Yeni bir bağımlılık diyagramı modelleme projesine eklemek için  
   
 1.  Üzerinde **mimarisi** menüsünde seçin **yeni bağımlılık diyagram**.  

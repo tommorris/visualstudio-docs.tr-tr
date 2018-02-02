@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: configure test agents, test lab
+helpviewer_keywords:
+- configure test agents, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 495f14643245f17a2e7fcef1e21d2fc1fe978a46
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 5caa566e15f7f3c4c69f8d33a6c7dd0eead38785
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="install-and-configure-test-agents"></a>Yükleme ve test aracılarını yapılandırma
 
@@ -81,7 +83,7 @@ Aşağıdaki tabloda, aracıları tarafından Visual Studio 2013 ve alternatifle
 | Visual Studio 2013 için aracıları tarafından desteklenen senaryolar | TFS ve TS alternatif |
 | --- | --- |
 | Visual Studio'da derleme, dağıtma, Test iş akışı | Kullanıcılar bir [yapı tanımı](https://www.visualstudio.com/team-services/continuous-integration/) (XAML derleme değil) için derleme, dağıtma ve testi senaryolarında TFS'de. |
-| (Performans testi) sınama yük kullanarak uzak makineleri şirket içi | Yük testleri şirket içi çalıştırmak için test denetleyicisi ve Test aracıları 2013 güncelleştirme 5 kullanın. [Daha fazla bilgi](https://msdn.microsoft.com/en-us/library/ff400223.aspx). |
+| (Performans testi) sınama yük kullanarak uzak makineleri şirket içi | Yük testleri şirket içi çalıştırmak için test denetleyicisi ve Test aracıları 2013 güncelleştirme 5 kullanın. [Daha fazla bilgi](https://msdn.microsoft.com/library/ff400223.aspx). |
 | Otomatikleştirilmiş testleri Microsoft Test laboratuvarı ortamı kullanarak yöneticisinden, uzaktan yürütme | Şu anda bu senaryo için hiçbir seçenek yoktur. İşlevsel Testleri Çalıştır görev derlemede kullanma ve yayın tanımları (XAML derlemede değil) öneririz testleri uzaktan yürütün. |
 | Geliştiriciler Visual Studio uzaktan testleri çalıştırma | Artık desteklenmemektedir. |
 

@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4616b8df91ce87b8f886deb9143fa1ff55a976d7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 879b648fa761795efe38e45e1becf0433abf3755
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>2. adım: Yazma ve kodu çalıştırma
 
@@ -44,12 +45,12 @@ ms.lasthandoff: 01/22/2018
     print("Hello, Visual Studio")
     ```
 
-1. Deyim ayıran sözdizimi coloration fark `print` bağımsız gelen `"Hello Visual Studio"`. Ayrıca, geçici olarak son silme `"` dize ve bildirim sözdizimi hataları içeren Visual Studio kodu için kırmızı alt çizgi, nasıl gösterir. Yerine `"` kodu düzeltmek için.
+1. Deyim ayıran sözdizimi coloration fark `print` bağımsız gelen `"Hello Visual Studio"`. Ayrıca, geçici olarak son silme `"` dize ve bildirim sözdizimi hataları içeren nasıl Visual Studio kırmızı bir alt çizgi kod için gösterir. Yerine `"` kodu düzeltmek için.
 
     ![IntelliSense söz dizimi renklendirme ve hata vurgulama](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Birinin geliştirme ortamı çok kişisel sağlasa da olduğundan, Visual Studio, Visual Studio'nun görünümü ve davranışı üzerinde tam denetim sağlar. Seçin **Araçlar > Seçenekleri** menü komut ve ayarları altında keşfetme **ortam** ve **metin düzenleyici** sekmeleri. Varsayılan olarak yalnızca sınırlı sayıda seçenek görürsünüz; her programlama dili için her seçeneği görmek için seçin **tüm ayarları göster** iletişim kutusunun altındaki. 
+    > Birinin geliştirme ortamı çok kişisel sağlasa da olduğundan, Visual Studio, Visual Studio'nun görünümü ve davranışı üzerinde tam denetim sağlar. Seçin **Araçlar > Seçenekleri** menü komut ve ayarları altında keşfetme **ortam** ve **metin düzenleyici** sekmeleri. Varsayılan olarak, yalnızca sınırlı sayıda seçenek görürsünüz; her programlama dili için her seçeneği görmek için seçin **tüm ayarları göster** iletişim kutusunun altındaki. 
 
 1. Yazılan bu noktada Ctrl + F5 tuşuna basarak veya seçerek kodu çalıştırma **hata ayıklama > hata ayıklama olmadan Başlat** menü öğesi. Visual Studio, kodunuzda hataları hala olup olmadığını sizi uyarır.
 
@@ -79,7 +80,7 @@ ms.lasthandoff: 01/22/2018
     ```
 
     > [!Tip]
-    > Sözcükler, harf sözcükleri başındaki bölümlerini eşleşen yazın ve hatta karakter atlandı tamamlamalar alt dizeler ile çalışır. Bkz: [kod - tamamlamalar düzenleme](code-editing.md#completions) Ayrıntılar için.
+    > Sözcükler, harf sözcükleri başındaki bölümlerini eşleşen yazın ve hatta karakter atlandı tamamlamalar alt dizeler ile çalışır. Bkz: [kod - tamamlamalar düzenleme](editing-python-code-in-visual-studio.md#completions) Ayrıntılar için.
 
 1. 360 derece kosinüsünü değerlerini yazdırmak için biraz daha fazla kodu ekleyin:
 
@@ -97,7 +98,7 @@ ms.lasthandoff: 01/22/2018
 
 ## <a name="going-deeper"></a>Daha derin gitme
 
-- [Kodu düzenleme](code-editing.md)
-- [Kodu biçimlendirme](code-formatting.md)
-- [Kodu yeniden düzenleme](code-refactoring.md)
-- [PyLint Kullanma](code-pylint.md)
+- [Kodu düzenleme](editing-python-code-in-visual-studio.md)
+- [Kodu biçimlendirme](formatting-python-code.md)
+- [Kodu yeniden düzenleme](refactoring-python-code.md)
+- [PyLint Kullanma](linting-python-code.md)

@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ec8c0e9010cefd1e5c6b639edf02d785422800ff
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 06eec90026054bf8081c1cd1727d6cbfc3f30bbe
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Bağımlılık diyagramları: yönergeler
 Uygulama Mimarinizi yüksek bir düzeyde oluşturarak açıklamak *bağımlılık diyagramları* Visual Studio. Bir bağımlılık diyagramı kodunuzla doğrulayarak kodunuzu bu tasarım ile tutarlı kaldığından emin olun. Katman doğrulaması yapı işleminizin de ekleyebilirsiniz. Bkz: [kanal 9 Video: tasarım ve bağımlılık diyagramları kullanarak Mimarinizi geçerli](http://go.microsoft.com/fwlink/?LinkID=252073).  
@@ -62,7 +63,7 @@ Uygulama Mimarinizi yüksek bir düzeyde oluşturarak açıklamak *bağımlılı
  Bkz: [kodunuzdan bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md).  
   
 ##  <a name="CreateLayers"></a>İşlevsel alanlara veya bileşenleri göstermek için katman tanımlama  
- Katmanlar temsil oluşan mantıksal grupları *yapıları*projeleri, kod dosyaları, ad alanları, sınıflar ve yöntemler gibi. Visual C# .NET ve Visual Basic .NET projelerden Yapılardan katmanlar oluşturabilir veya Word dosyaları veya PowerPoint sunumları gibi belgeleri bağlayarak bir katmana belirtimler veya planlar ekleyebilirsiniz. Her Katman diyagramda dikdörtgen olarak görünür ve ona bağlı olan yapıların sayısını gösterir. Bir katman daha belirli görevleri açıklayan iç içe geçmiş katmanları içerebilir.  
+ Katmanlar temsil oluşan mantıksal grupları *yapıları*projeleri, kod dosyaları, ad alanları, sınıflar ve yöntemler gibi. Visual C# ve Visual Basic projelerden Yapılardan katmanlar oluşturabilir veya Word dosyaları veya PowerPoint sunumları gibi belgeleri bağlayarak bir katmana belirtimler veya planlar ekleyebilirsiniz. Her Katman diyagramda dikdörtgen olarak görünür ve ona bağlı olan yapıların sayısını gösterir. Bir katman daha belirli görevleri açıklayan iç içe geçmiş katmanları içerebilir.  
   
  Genel kural olarak, örneğin, "Sunu" veya "Hizmetler" adı Katmanlar kendi işlevi göre. Yapılar yakından bağlıysa, onları aynı katmana yerleştirin. Yapıları ayrı olarak güncelleştirilen ya da ayrı uygulamalarda kullanılır, bunları farklı katmanlara yerleştirin. Katman desenleri hakkında bilgi edinmek için desenleri ve uygulamalar sitesini ziyaret edin [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).  
   

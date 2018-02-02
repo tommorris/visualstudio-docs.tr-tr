@@ -1,23 +1,26 @@
 ---
 title: "Visual Studio için R araçları | Microsoft Docs"
+description: "R araçları için Visual Studio (RTVS) IntelliSense, hata ayıklama ve uzak çalışma alanları dahil olmak üzere birçok dil özellikleri sağlayan ücretsiz, açık kaynaklı bir uzantısıdır."
 ms.custom: 
 ms.date: 11/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: c18eadd6cfcdf6fc77b204f78654126ceb1862db
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: f0ed20e323714ab28ae66c2522b613e1414a0973
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Visual Studio'da R ile çalışma
 
@@ -30,22 +33,22 @@ R araçları için Visual Studio (RTVS) olan bir ücretsiz, [açık kaynak](http
 
 Visual Studio'da R deneyimi için:
 
-- [R Araçları'nı yükleme](installation.md).
-- İzleyin [Başlarken](getting-started-with-r.md) Kılavuzu, yanı sıra [örnekleri](getting-started-samples.md) ve [Yardımı alma](getting-started-help.md) Konular.
+- [R Araçları'nı yükleme](installing-r-tools-for-visual-studio.md).
+- İzleyin [Başlarken](getting-started-with-r.md) Kılavuzu, yanı sıra [örnekleri](getting-started-samples.md) ve [Yardımı alma](getting-started-help.md) makaleleri.
 
 Ardından R güvenlikle ilgili özellikler ve bunun yanı sıra, Visual Studio'nun kendisi genel özellikleri hakkında daha fazla bilgi için aşağıdaki bağlantıları izleyin.
 
 | Özellik | Açıklama | Genel Visual Studio belgeleri | 
 | --- | --- | --- |
-| [Visual Studio Proje sistemi](projects.md) | Düzenleyebilir ve kullanışlı bir yapı ilişkili dosyaları yönetmek ve R kodu, R belgeleri, R Markdown, SQL sorguları ve saklı yordamlar gibi öğeleri için yararlı şablonlar yararlanın. Ayrıca keyfini [Paket Yöneticisi](package-manager.md) ve [SQL Server Integration](sql-server.md).  | [Visual Studio’da Çözümler ve Projeler](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Çalışma alanı](workspaces.md) | RTVS R kodu daha küçük veri kümeleri ile yerel olarak geliştirmenize olanak tanıyan yerel ve uzak çalışma alanları için bağ sonra kolayca daha güçlü bulut tabanlı bilgisayarlarda çok daha büyük veri kümeleriyle kodu çalıştırın. | yok |
-| [R Araçlar Seçenekler](options.md) | RTVS çeşitli yönlerini denetler. | [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md) |
-| [Zengin düzenleme, IntelliSense ve kod parçacıkları](code-editing.md) | Söz dizimi renklendirme, içeren [IntelliSense](code-intellisense.md) tüm kodunuz ve kitaplıkları arasında kod, imza Yardım biçimlendirme Git tanımı, tüm başvuruları Bul [kod parçacıkları](code-snippets.md)ve daha fazlası. | [Kod ve Metin Düzenleyici'de Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [R Markdown](rmarkdown.md) | R Markdown belgeler markdown kod blokları içinde tümleşik R kodu ile veri sonuçlarınızı paylaşmanıza yardımcı. | yok |
-| [Etkileşimli penceresi](interactive-repl.md) | Tam REPL deneyimi için R kolayca etkileşimli penceresi kaynak dosyasında kodu çalıştırma olanağı sağlar. | yok |
-| [Veri Görselleştirme](visualizing-data.md) | Çizdirmek R deneyiminin ayrılmaz bir parçası olan ve RTVS destekleyen birden çok bağımsız çizim windows, her biri kendi geçmişi ve taşıma yeteneğini çizer pencereler arasında. Çizimler bit eşlem ve PDF dosyaları için kaydedilmiş veya bir bit eşlem ya da meta dosyası olarak panoya kopyalandı.  | yok |
+| [Visual Studio project system](r-projects-in-visual-studio.md) | Düzenleyebilir ve kullanışlı bir yapı ilişkili dosyaları yönetmek ve R kodu, R belgeleri, R Markdown, SQL sorguları ve saklı yordamlar gibi öğeleri için yararlı şablonlar yararlanın. Ayrıca keyfini [Paket Yöneticisi](r-package-manager-in-visual-studio.md) ve [SQL Server Integration](integrating-sql-server-with-r.md).  | [Visual Studio’da Çözümler ve Projeler](../ide/solutions-and-projects-in-visual-studio.md) |
+| [Çalışma alanı](r-workspaces-in-visual-studio.md) | RTVS R kodu daha küçük veri kümeleri ile yerel olarak geliştirmenize olanak tanıyan yerel ve uzak çalışma alanları için bağ sonra kolayca daha güçlü bulut tabanlı bilgisayarlarda çok daha büyük veri kümeleriyle kodu çalıştırın. | yok |
+| [R Araçlar Seçenekler](options-for-r-tools-in-visual-studio.md) | RTVS çeşitli yönlerini denetler. | [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md) |
+| [Zengin düzenleme, IntelliSense ve kod parçacıkları](editing-r-code-in-visual-studio.md) | Söz dizimi renklendirme, içeren [IntelliSense](r-intellisense.md) tüm kodunuz ve kitaplıkları arasında kod, imza Yardım biçimlendirme Git tanımı, tüm başvuruları Bul [kod parçacıkları](code-snippets-for-r.md)ve daha fazlası. | [Kod ve Metin Düzenleyici'de Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [R Markdown](rmarkdown-with-r-in-visual-studio.md) | R Markdown belgeler markdown kod blokları içinde tümleşik R kodu ile veri sonuçlarınızı paylaşmanıza yardımcı. | yok |
+| [Etkileşimli penceresi](interactive-repl-for-r-in-visual-studio.md) | Tam REPL deneyimi için R kolayca etkileşimli penceresi kaynak dosyasında kodu çalıştırma olanağı sağlar. | yok |
+| [Verileri görselleştirme](visualizing-data-with-r-in-visual-studio.md) | Çizdirmek R deneyiminin ayrılmaz bir parçası olan ve RTVS destekleyen birden çok bağımsız çizim windows, her biri kendi geçmişi ve taşıma yeteneğini çizer pencereler arasında. Çizimler bit eşlem ve PDF dosyaları için kaydedilmiş veya bir bit eşlem ya da meta dosyası olarak panoya kopyalandı.  | yok |
 | [Değişken Gezgini](variable-explorer.md) | Genel veya özel paketi kapsamı değişkenlerde sıralanabilir tablolarını görüntülemek ve CSV'ye verme olanağı inceleyin. | yok |
-| [Tam özellikli hata ayıklama](debugging.md) | Etkileşimli pencere tümleştirmesi içerir. | [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md) |
+| [Tam özellikli hata ayıklama](debugging-r-in-visual-studio.md) | Etkileşimli pencere tümleştirmesi içerir. | [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md) |
 
 Ayrıca bkz. [sık sorulan sorular](faq.md).
 

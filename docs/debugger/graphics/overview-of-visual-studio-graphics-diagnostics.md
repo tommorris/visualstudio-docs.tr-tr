@@ -4,23 +4,23 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ddd429d9-ac70-4ac4-9e69-299c6ea2df09
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0fdc6c58f791c06d5f9287400d00bbfce2564e3b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8fb52530cf5a068081ce3af3325675d2167c57a9
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio Grafik Tanılama’ya Genel Bakış
-Visual Studio *grafik tanılama* kaydı ve Direct3D uygulamalar oluşturma ve performans sorunları çözümlemek için araç kümesidir. Grafik Tanılama'yı, Windows bilgisayarınızdaki bir Windows aygıt benzeticisi veya bir uzak bilgisayar veya cihaz üzerinde yerel olarak çalışan uygulamalar üzerinde kullanılabilir.  
+Visual Studio *grafik tanılama* kaydı ve Direct3D uygulamalar oluşturma ve performans sorunları çözümlemek için araç kümesidir. Grafik tanılama Windows bilgisayarınızda veya bir uzak bilgisayar veya cihaz üzerinde yerel olarak çalışan uygulamalar üzerinde kullanılabilir.  
   
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>İşleme sorunlarında hata ayıklamak için Grafik Tanılama'yı kullanma  
  Grafik açısından zengin bir uygulamada işleme sorunları hatalarının ayıklanması, hata ayıklayıcıyı başlatıp herhangi bir kodda adım adım ilerlemek kadar basit işlem değildir. Her kare içinde, her biri karmaşık bir durum, veri, parametre ve kod kümesine göre olmak üzere yüz binlerce benzersiz piksel üretilirken, tanılamaya çalıştığınız sorunu bunlar arasında belki de yalnızca birkaç piksel sergileyecektir. He bir pikseli üreten kodun, yüzlerce pikseli paralel olarak işlemden geçiren özel amaçlı donanımlarda yürütülmesi meseleyi daha da karmaşık bir hale getirir. Çok fazla veriyle karşı karşıya kalındığında, iş parçacıklarının yoğun olmadığı kodlarda bile yarar sağlanması zor olan geleneksel hata ayıklama araçları ve teknikleri etkisiz kalmaktadır.  
@@ -33,10 +33,7 @@ Visual Studio *grafik tanılama* kaydı ve Direct3D uygulamalar oluşturma ve pe
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 ve Direct3D 12  
  Windows 10 sunulan *Direct3D 12*, Direct3D 10 ve Direct3D 11 önemli ölçüde farklı. Bu farklılıklar DirectX modern grafik donanım ve tüm olası unleashing hizalama sağlamak, ancak ayrıca büyük API değişiklikleri yapın ve kaynak yaşam süresi ve çakışma yönetmek için programcı büyük sorumluluk yerleştirin. Farkları rağmen grafik tanılama Direct3D 12 Direct3D 11.2 ile grafik Tanılama ile özelliği eşlik tutar.
   
- Windows 10 Direct3D oyun ve bunlar üzerinde kullanan uygulamalar önceki sürümleri için destek de korur. Visual Studio grafik tanılama Direct3D 10 ve Direct3D 11 Windows 10 ve Windows 8.1 desteklemeye devam eder.  
-  
-### <a name="windows-81-and-direct3d-112"></a>Windows 8.1 ve Direct3D 11.2  
- İçinde [!INCLUDE[win81](../includes/win81_md.md)], DirectX 11.2 kendi çalışma zamanı aracılığıyla grafik bilgilerini yakalama için destek dahil yeni özellikler sunar. [!INCLUDE[win81](../includes/win81_md.md)]Yeni çalışma zamanı tabanlı yakalamanın kullandığı — olarak bilinen *sağlam yakalama*— DirectX tüm sürümleri için özel olarak, [!INCLUDE[win81](../includes/win81_md.md)] destekler. Sağlam yakalama Direct3D 11.2 yeni özelliklerini de destekler.  
+ Windows 10 Direct3D oyun ve bunlar üzerinde kullanan uygulamalar önceki sürümleri için destek de korur. Visual Studio grafik tanılama Direct3D 10 ve Direct3D 11 üzerinde Windows 10 desteklemeye devam eder.
   
 ### <a name="limited-direct2d-support"></a>Sınırlı Direct2D desteği  
  Direct2D üzerinde Direct3D yerleşik bir kullanıcı modu API olduğundan, işleme sorunları Direct2D kullanan uygulamalarda hata ayıklama yardımcı olması için grafik tanılamayı kullanabilirsiniz. Bununla birlikte, üst düzey Direct2D olayları yerine yalnızca temeli oluşturan Direct3D olayları kaydedildiğinden, Direct2D olayları Grafik Olay Listesi'nde görünmez. Ayrıca, Direct2D olayları ve sonuç Direct3D olayları arasındaki ilişki her zaman net olmadığından, Direct2D kullanan uygulamalarda işleme sorunları hatalarını ayıklamak için Grafik Tanılama kullanılması her zaman basit değildir. Yine de, Direct2D kullanan uygulamalarda düşük düzeyli işleme sorunları hakkında bilgi almak için Grafik Tanılama'yı kullanabilirsiniz.  

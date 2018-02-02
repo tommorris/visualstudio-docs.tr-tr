@@ -21,12 +21,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 7f00144687d2e9bc728cbdd1ef57342d1b19881d
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Bağımlılık diyagramları ile kod doğrulama
 
@@ -54,7 +55,7 @@ Kod tasarımıyla çakışma değil emin olmak için Visual Studio'da bağımlı
   
 -   Team Foundation Build sunucunuzda visual Studio Team Foundation Build ile otomatik olarak kodu doğrulamak için  
   
--   Bir bağımlılık diyagramı içeren modelleme projesine sahip bir çözüm. Bu bağımlılık diyagram doğrulamak istediğiniz Visual C# .NET veya Visual Basic .NET projelerinde yapılara bağlı olması gerekir. Bkz: [kodunuzdan bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md).  
+-   Bir bağımlılık diyagramı içeren modelleme projesine sahip bir çözüm. Bu bağımlılık diyagram doğrulamak istediğiniz C# veya Visual Basic projelerinde yapılara bağlı olması gerekir. Bkz: [kodunuzdan bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md).  
   
  Bu özellik, Visual Studio'nun hangi sürümleri desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -120,7 +121,7 @@ Visual Studio'nun bu sürümünde, gerçek zamanlı olarak bağımlılık doğru
 2.  Her hatanın kaynağını görüntülemek için hatayı çift tıklatın **hata listesi** penceresi.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]kod Haritası kullanarak hatanın kaynağı yerine gösterebilir. Bu kod bağımlılık diyagram tarafından belirtilmemiş bir derleme üzerinde bir bağımlılığa sahip veya kod bağımlılık diyagramı tarafından belirlenen bir bağımlılığı eksik ortaya çıkar. Kod haritası veya bağımlılık mevcut olup olmadığını belirlemek için kodu gözden geçirin. Kod eşlemeleri hakkında daha fazla bilgi için bkz: [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md).  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kod Haritası kullanarak hatanın kaynağı yerine gösterebilir. Bu kod bağımlılık diyagram tarafından belirtilmemiş bir derleme üzerinde bir bağımlılığa sahip veya kod bağımlılık diyagramı tarafından belirlenen bir bağımlılığı eksik ortaya çıkar. Kod haritası veya bağımlılık mevcut olup olmadığını belirlemek için kodu gözden geçirin. Kod eşlemeleri hakkında daha fazla bilgi için bkz: [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md).  
   
 3.  Hataları yönetmek için bkz: [doğrulama hatalarını yönetme](#ManageErrors).  
   

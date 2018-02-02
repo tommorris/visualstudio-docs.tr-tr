@@ -5,24 +5,20 @@ ms.date: 09/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- JScript
-- VB
-- CSharp
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: abde071bd67ab3f6a65891d347b9214f6dd5257b
-ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
+ms.workload:
+- multiple
+ms.openlocfilehash: 5847c97f3fddea65b00c35a5a0f4d5665329ae7e
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>Kod Düzenleyicisi'nde kod yazma
 
@@ -67,7 +63,6 @@ Gelişmiş Özellikler sayısı bulabilirsiniz **Düzenle/Gelişmiş** alt. Bu �
 |Küçük Harf Yap|Tüm karakterleri küçük harfe için seçimdeki değiştirir veya herhangi bir seçim varsa, ekleme noktasını karakteri küçük harfe dönüştürür.|
 |Seçili satırları Yukarı Taşı|Seçilen satırın bir satır yukarı taşır. Kısayol: ALT + YUKARI OK.|
 |Seçili satırları Aşağı Taşı|Seçili satır bir satır aşağı taşır. Kısayol: ALT + AŞAĞI OK.|
-|Belgeyi doğrula|JScript kod dosyaları doğrular.|
 |Yatay boşluk Sil|Sekme veya boşluk geçerli satırın sonundaki siler.|
 |Görünüm beyaz alan|Yükseltilmiş noktalar ve sekmelerle oklarla alanları görüntüler. Dosya sonuna bir dikdörtgen karakteri görüntülenir. Varsa **sözcük kaydırma için görünür karakterlerinin Araçlar/Seçenekler/metin Editor/All diller/sözcük kaydırma/Göster** olduğunu belirlenirse, bu karakter de görüntülenir.|
 |Sözcük kaydırma|Tüm satırları kodu pencerede görünmesi için bir belge neden olur. Sözcük kaydırma metin düzenleyici tüm diller ayarlarında kapatıp kapatabilirsiniz (**Araçlar/Seçenekler/metin Editor/All dilleri**).|

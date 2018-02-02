@@ -7,20 +7,22 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: unit testing, create unit tests
+helpviewer_keywords:
+- unit testing, create unit tests
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: cf851d9fbd32bfdd07c6e1a67517ddf38784799c
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 763a16c4de3d3d087b813322af2fcd8518506863
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Birim testi yöntemi saplamalar ile birim testleri Oluştur komutu oluşturun.
 
-Visual Studio **birim testleri oluşturma** komutu birim test yöntemi saplamalar oluşturma olanağı sağlar. Bu özellik, bir test projesi, test sınıfı ve içerdiği test yöntemi saplama kolay yapılandırmasını sağlar. 
+Visual Studio **birim testleri oluşturma** komutu birim test yöntemi saplamalar oluşturma olanağı sağlar. Bu özellik, bir test projesi, test sınıfı ve içerdiği test yöntemi saplama kolay yapılandırmasını sağlar.
 
 ## <a name="availability-and-extensions"></a>Kullanılabilirlik ve uzantıları
 
@@ -63,8 +65,7 @@ Bu özelliği kullanmak birim testleri oluşturmak gereken zaman, ancak özellik
 
 Ancak, bu özellik burada Geliştirici bazı kodlar yazarak başlar ve birim uzmanlık testi bootstrap kullanan durumunuz için eşit oranda geçerlidir. Kodlama nsg'lerin, geliştirici hızla (ile uygun test sınıfı ve uygun test projesi) saplama birim test yöntemi için belirli bir kod oluşturmak isteyebilirsiniz. 
 
-## <a name="more-information"></a>Daha fazla bilgi
+## <a name="see-also"></a>Ayrıca bkz.
 
-Blog gönderisine bakın [birim testi "Oluşturmak ile birim testleri" yöntemi saplamalar oluşturma](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/).
-
-Daha fazla birim testi blog gönderileri bulunabilir [burada](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/).
+[Birim testi "Oluşturmak ile birim testleri" yöntemi saplamalar oluşturma](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)  
+[Birim testi blog gönderileri](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/)

@@ -1,33 +1,30 @@
 ---
 title: "Visual Studio'da R ile çalışmaya başlama | Microsoft Docs"
+description: "Visual Studio projesi oluşturma, etkileşimli pencere dahil R kullanarak bir gözden geçirme kod düzenleme ve hata ayıklama."
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: d57ff0dcd89a9857f62371f81d65f7929aba18c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: cf8df86322e10054dee5dbcee95839506f690306
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Visual Studio için R araçlarını kullanmaya başlama
 
-R araçları Visual Studio (yüklü RTVS için) sahip olduğunda (bkz [yükleme](installation.md)), bu araçlar sağlayan deneyiminin kısaca hızlı bir şekilde elde edebilirsiniz. Aşağıdaki bölümlerde kısa bir tura Kılavuzu:
-
-- [Bir R projesi oluşturma](#create-an-r-project)
-- [IntelliSense ve etkileşimli penceresini keşfedin](#explore-the-interactive-window-and-intellisense)
-- [Özellikleri düzenleme deneyimi kodu](#experience-code-editing-features)
-- [Kodunuzun hatalarını ayıklama](#debugging-your-code)
-- [Sonraki adımlar](#next-steps)
+R araçları Visual Studio (yüklü RTVS için) sahip olduğunda (bkz [yükleme](installing-r-tools-for-visual-studio.md)), bu araçlar sağlayan deneyiminin kısaca hızlı bir şekilde elde edebilirsiniz. 
 
 ## <a name="create-an-r-project"></a>Bir R projesi oluşturma
 
@@ -39,7 +36,7 @@ R araçları Visual Studio (yüklü RTVS için) sahip olduğunda (bkz [yükleme]
 
 1. Proje oluşturulduktan sonra aşağıdaki windows bakın:
 
-    - Visual Studio Çözüm Gezgini'nde, projenize içeren bir içinde gördüğünüz sağ tarafta olan *çözüm*. (Çözümler, farklı türlerde projeleri herhangi bir sayıda içerebilir; bkz [projeleri](projects.md) Ayrıntılar için.
+    - Visual Studio Çözüm Gezgini'nde, projenize içeren bir içinde gördüğünüz sağ tarafta olan *çözüm*. (Çözümler, farklı türlerde projeleri herhangi bir sayıda içerebilir; bkz [projeleri](r-projects-in-visual-studio.md) Ayrıntılar için.
     - Sol üst üzerinde yeni bir R dosyadır (`script.R`), kaynak kodu tüm Visual Studio ile düzenleyebileceğiniz düzenleme özellikleri.
     - Sol alt üzerinde **R etkileşimli** , etkileşimli olarak geliştirme ve test kullanabilirsiniz kod penceresi.
 
@@ -74,13 +71,13 @@ R araçları Visual Studio (yüklü RTVS için) sahip olduğunda (bkz [yükleme]
 
     ![Visual Studio'da bir çizim görüntüleme](media/getting-started-07-plot-window.png)
 
-Etkileşimli penceresi de geçmişinizi gözden geçirin, yükleme ve çalışma alanları kaydedin, bir hata ayıklayıcısını ve kopyala-yapıştır kullanmak yerine kaynak kodu dosyaları ile etkileşim sağlar. Bkz: [R etkileşimli penceresiyle çalışma](interactive-repl.md) Ayrıntılar için.
+Etkileşimli penceresi de geçmişinizi gözden geçirin, yükleme ve çalışma alanları kaydedin, bir hata ayıklayıcısını ve kopyala-yapıştır kullanmak yerine kaynak kodu dosyaları ile etkileşim sağlar. Bkz: [R etkileşimli penceresiyle çalışma](interactive-repl-for-r-in-visual-studio.md) Ayrıntılar için.
 
 ## <a name="experience-code-editing-features"></a>Özellikleri düzenleme deneyimi kodu
 
 Etkileşimli pencere kısaca çalışmak IntelliSense gibi ayrıca Kod düzenleyicisinde iş temel düzenleme özellikleri gösterir. Önce aynı kodunu girerseniz, aynı otomatik tamamlama ve IntelliSense istemleri, ancak çıktı bakın.
 
-Kod yazma bir `.R` dosya tüm kodunuz aynı anda görmenizi sağlar ve küçük değişiklikler yapmak ve etkileşimli penceresinde kod çalıştırarak sonucu hızlıca görmek kolaylaştırır. Bir proje ile istediğiniz sayıda dosyaları da sahip olabilirsiniz. Kodu bir dosyada olduğunda da (Bu konunun ilerleyen bölümlerinde açıklanmıştır) hata ayıklayıcısında adım adım çalıştırabilirsiniz. Bu özellikler, hesaplama algoritmalarına geliştirme ve özellikle tüm ara sonuçların incelemek istediğinizde bir veya daha fazla veri kümeleri, işlemek için kod yazma faydalıdır.
+Kod yazma bir `.R` dosya tüm kodunuz aynı anda görmenizi sağlar ve küçük değişiklikler yapmak ve etkileşimli penceresinde kod çalıştırarak sonucu hızlıca görmek kolaylaştırır. Bir proje ile istediğiniz sayıda dosyaları da sahip olabilirsiniz. Kodu bir dosyada olduğunda da (Bu makalenin sonraki bölümlerinde açıklanmıştır) hata ayıklayıcısında adım adım çalıştırabilirsiniz. Bu özellikler, hesaplama algoritmalarına geliştirme ve özellikle tüm ara sonuçların incelemek istediğinizde bir veya daha fazla veri kümeleri, işlemek için kod yazma faydalıdır.
 
 Örnek olarak, aşağıdaki adımları keşfetmek için biraz kod oluşturma [merkezi sınırı Teoremi](https://en.wikipedia.org/wiki/Central_limit_theorem) (Wikipedia). (Bu örnekte gelen uyarlanmış, *R Kılavuzu* Paul Teetor tarafından.)
 
@@ -109,7 +106,7 @@ Kod yazma bir `.R` dosya tüm kodunuz aynı anda görmenizi sağlar ve küçük 
 
     ```R
     n <- 30
-    samp.means <- rnorm(N, mean = mu, sd = stddev / sqrt(n))    
+    samp.means <- rnorm(N, mean = mu, sd = stddev / sqrt(n))
     lines(density(samp.means))
     ```
 
@@ -139,7 +136,7 @@ Kod yazma bir `.R` dosya tüm kodunuz aynı anda görmenizi sağlar ve küçük 
 
     ![Visual Studio'da düzgün ölçeği, güncelleştirilmiş çift çizim](media/getting-started-10-plot3.png)
 
-Daha fazla Düzenleyici'de yapabilirsiniz yoktur. Ayrıntılar için bkz [kod düzenleme](code-editing.md), [IntelliSense](code-intellisense.md), ve [kod parçacıkları](code-snippets.md).
+Daha fazla Düzenleyici'de yapabilirsiniz yoktur. Ayrıntılar için bkz [kod düzenleme](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md), ve [kod parçacıkları](code-snippets-for-r.md).
 
 ## <a name="debugging-your-code"></a>Kodunuzun hatalarını ayıklama
 
@@ -169,14 +166,14 @@ Visual Studio anahtar gücü hata ayıklama kullanıcı Arabiriminde biridir. RT
 
 1. Satır veya select programımı adımlarken devam **devam** için tamamlama (veya sonraki kesme) (F5).
 
-Derinlemesine için bkz: [hata ayıklama](debugging.md) ve [değişken Explorer](variable-explorer.md).
+Derinlemesine için bkz: [hata ayıklama](debugging-r-in-visual-studio.md) ve [değişken Explorer](variable-explorer.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu kılavuzda R projeleri, etkileşimli penceresini kullanarak öğrendiğinize, düzenleme ve Visual Studio'da hata ayıklamayı kodu. Daha fazla yetenekleri keşfetmeye devam etmek için aşağıdaki konuları yanı sıra içeriği tabloda gösterilen konulara bakın:
+Bu kılavuzda R projeleri, etkileşimli penceresini kullanarak öğrendiğinize, düzenleme ve Visual Studio'da hata ayıklamayı kodu. Daha fazla yetenekleri keşfetmeye devam etmek için aşağıdaki makaleler yanı sıra içeriği tabloda gösterilen makaleleri bakın:
 
 - [Örnek Proje](getting-started-samples.md)
-- [Kod düzenleme](code-editing.md)
-- [Hata Ayıklama](debugging.md)
-- [Çalışma Alanları](workspaces.md)
-- [Veri Görselleştirme](visualizing-data.md)
+- [Kodu düzenleme](editing-r-code-in-visual-studio.md)
+- [Hata Ayıklama](debugging-r-in-visual-studio.md)
+- [Çalışma Alanları](r-workspaces-in-visual-studio.md)
+- [Verileri görselleştirme](visualizing-data-with-r-in-visual-studio.md)

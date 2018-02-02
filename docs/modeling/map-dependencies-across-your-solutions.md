@@ -29,12 +29,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 9b921b3b4c1bad9b68f668ec7589b4a0030052d0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Çözümlerinizdeki bağımlılıkları eşleme
 
@@ -63,13 +64,13 @@ Kodunuz boyunca bağımlılıkları anlamak istediğinizde, kod haritalarını o
   
  **Bu dilde kodu bağımlılıklarını eşleyebilirsiniz**:  
   
--   Visual C# .NET veya Visual Basic .NET bir çözüm ya da derlemeler (.dll veya .exe)  
+-   Visual C# veya Visual Basic'te bir çözüm ya da derlemeler (.dll veya .exe)  
   
 -   Yerel veya yönetilen C veya C++ kodu Visual C++ projelerinde üstbilgi dosyaları (.h veya `#include`), ya da ikili dosyalar  
   
 -   X ++ proje ve Microsoft Dynamics AX for .NET modüllerden yapılan derlemeler  
   
- **Not:** C# veya Visual Basic .NET dışındaki projeleri için kod Haritası başlatılıyor veya varolan bir kod Haritası öğeler ekleme için daha az seçenek vardır. Örneğin, C++ projesi metin düzenleyicisinde bir nesneye sağ tıklayın ve bir kod Haritası ekleyin. Ancak, sürükleyin ve kod öğeleri veya dosyaları Çözüm Gezgini'nde sınıf görünümü ve Nesne Tarayıcısı bırakın.  
+ **Not:** dışında C# veya Visual Basic projeleri için kod Haritası başlatılıyor veya varolan bir kod Haritası öğeler ekleme için daha az seçenek vardır. Örneğin, C++ projesi metin düzenleyicisinde bir nesneye sağ tıklayın ve bir kod Haritası ekleyin. Ancak, sürükleyin ve kod öğeleri veya dosyaları Çözüm Gezgini'nde sınıf görünümü ve Nesne Tarayıcısı bırakın.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Çözümünüzü arasında genel bağımlılıkları görmek için  
   
@@ -286,7 +287,7 @@ Kodunuz boyunca bağımlılıkları anlamak istediğinizde, kod haritalarını o
 ##  <a name="SeeSourceHeader"></a>C ve C++ kaynak dosya ve üstbilgi dosyası arasındaki bağımlılıkları bakın  
  C++ projeleri için daha kapsamlı eşlemeleri oluşturmak isterseniz, Gözat bilgi derleyici seçeneği ayarlayın (**/FR**) o projelerde. Aksi durumda, bir ileti görüntülenir ve bu seçeneği ayarlamanızı ister. Seçerseniz **Tamam**, bu seçeneği yalnızca geçerli eşlemesi için ayarlar. Tüm sonraki eşlemeleri için iletisini gizlemek seçebilirsiniz. Bu iletiyi Gizle varsa, bunu yeniden görünür duruma getirebilirsiniz. Aşağıdaki kayıt defteri anahtarını ayarlamak `0` veya anahtarı silin:  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Visual C++ projeleri içeren bir çözümü açtığınızda, IntelliSense veritabanını güncelleştirmek biraz zaman alabilir. Bu süre boyunca, üstbilgi için kod haritalarını oluşturmak mümkün olmayabilir (.h veya `#include`) IntelliSense veritabanı güncelleştirme tamamlanana kadar dosyaları. Visual Studio durum çubuğunda güncelleştirme ilerleme durumunu izleyebilirsiniz. Sorunları veya belirli IntelliSense ayarları devre dışı bırakıldığı için görüntülenen iletileri çözümlemek için bkz: [maps C ve C++ kodu için sorun giderme](#Troubleshooting).  
   
@@ -310,7 +311,7 @@ Kodunuz boyunca bağımlılıkları anlamak istediğinizde, kod haritalarını o
 |**Sorunu**|**Olası neden**|**Çözümleme**|  
 |---------------|------------------------|--------------------|  
 |Kod Haritası oluşturma başarısız oldu.|Çözümdeki hiçbir proje başarıyla oluşturulmadı.|Oluştu derleme hataları düzeltin ve harita yeniden oluşturun.|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]kod eşlemesinden oluşturmaya çalıştığınızda yanıt vermeyi **mimarisi** menüsü.|Program veritabanı (.pdb) dosyası bozulmuş olabilir.<br /><br /> .pdb dosyası; tür, yöntem ve kaynak dosya bilgileri gibi hata ayıklama bilgilerini depolar.|Çözümü yeniden oluşturun ve tekrar deneyin.|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kod eşlemesinden oluşturmaya çalıştığınızda yanıt vermeyi **mimarisi** menüsü.|Program veritabanı (.pdb) dosyası bozulmuş olabilir.<br /><br /> .pdb dosyası; tür, yöntem ve kaynak dosya bilgileri gibi hata ayıklama bilgilerini depolar.|Çözümü yeniden oluşturun ve tekrar deneyin.|  
 |IntelliSense göz atma veritabanı için belirli ayarlar devre dışı bırakılır.|Bazı IntelliSense ayarları içinde devre dışı [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **seçenekleri** iletişim kutusu.|Bunları etkinleştirmek için ayarları etkinleştirin.<br /><br /> Bkz: [seçenekler, metin düzenleyici, C/C++, Gelişmiş](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
 |İleti **bilinmeyen yöntemleri** yöntemi düğümünde görünür.<br /><br /> Yöntemin adı çözümlenemediği için bu sorun oluşur.|İkili dosya temel konum değişikliği tablosuna sahip olmayabilir.|Aç **/FIXED:NO** bağlayıcı seçeneği.|  
 ||Program veritabanı (.pdb) dosyası oluşturulmamış olabilir.<br /><br /> .pdb dosyası; tür, yöntem ve kaynak dosya bilgileri gibi hata ayıklama bilgilerini depolar.|Aç **/DEBUG** bağlayıcı seçeneği.|  

@@ -9,44 +9,28 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: mblome
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: mikeblome
-ms.openlocfilehash: 1b032b651603beb5771bfa68b8dc8628540d638e
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8a85bf908b1f0908b8c07a7573306536b9bf78d7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>UWP uygulamalar için Visual C++ DLL test etme 
+# <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL test etme
+
 Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (UWP) uygulamaları için C++ DLL için birim testleri oluşturma yöntemlerinden biri açıklanmaktadır. RooterLib DLL belirsiz anılarınızı sınırı teorik olarak verilen bir sayının kare kökünü tahmini hesaplar işlevi uygulayarak hesaplama gösterir. Bir kullanıcı fun gösteren bir UWP uygulamasını DLL sonra dahil edilebilir math ile yapılabilir şey.  
   
  Bu konuda birim geliştirme ilk adımı olarak testi kullanmayı gösterir. Bu yaklaşım önce test ettiğiniz sistemde belirli bir davranışı doğrular bir test yöntemi yazın ve ardından test başarılı kod yazın. Aşağıdaki yordamlar sırasına göre değişiklikler yaparak, bu strateji ilk yazma, test ve birim testleri yazma istediğiniz kod ters çevirebilirsiniz.  
   
- Bu konu ayrıca tek bir Visual Studio çözümü ve birim testleri ve test etmek istediğiniz DLL için ayrı projeleri oluşturur. Birim testleri doğrudan DLL projesinde içerebilir veya birim testleri için ayrı çözümler oluşturabilirsiniz ve. DLL. Bkz: [mevcut C++ uygulamalarına birim testleri ekleme](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) kullanmak için hangi yapısı ipuçları için.  
-  
-##  <a name="In_this_topic"></a>Bu konudaki  
-
- [Çözüm ve birim testi projesi oluşturma](#Create_the_solution_and_the_unit_test_project)  
-  
- [Testleri Test Explorer'da çalıştığını doğrulayın](#Verify_that_the_tests_run_in_Test_Explorer)  
-  
- [DLL projesi ekleyin](#Add_the_DLL_project_to_the_solution)  
-  
- [DLL işlevleri test kodu tarafından görülebilir kılma](#make_the_dll_functions_visible_to_the_test_code)  
-  
- [Tekrarlayarak testleri büyütmek ve onları geçirin](#Iteratively_augment_the_tests_and_make_them_pass)  
-  
- [Başarısız test hata ayıklama](#Debug_a_failing_test)  
-  
- [Testleri değiştirmeden kodu yeniden düzenleyin](#Refactor_the_code_without_changing_tests)  
+ Bu konu ayrıca tek bir Visual Studio çözümü ve birim testleri ve test etmek istediğiniz DLL için ayrı projeleri oluşturur. Birim testleri doğrudan DLL projesinde içerebilir veya birim testleri için ayrı çözümler oluşturabilirsiniz ve. DLL. Bkz: [mevcut C++ uygulamalarına birim testleri ekleme](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) kullanmak için hangi yapısı ipuçları için.
   
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a>Çözüm ve birim testi projesi oluşturma  
   
-1.  Üzerinde **dosya** menüsünde seçin **yeni**ve ardından **yeni proje**.  
+1.  Üzerinde **dosya** menüsünde seçin **yeni** > **yeni proje...** .
   
-2.  Yeni Proje iletişim kutusunda genişletin **yüklü**, ardından genişletin **Visual C++** ve **UWP**. Ardından **birim testi kitaplığı (UWP uygulamaları)** proje şablonları listesinden.  
-  
-     ![Bir C# 43; &#43;oluşturun; Birim testi Kitaplığı](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
+2.  Yeni Proje iletişim kutusuna genişletin **yüklü** > **Visual C++** ve **Windows Evrensel**. Ardından **birim testi uygulama (Evrensel Windows)** proje şablonları listesinden.
   
 3.  Proje adı `RooterLibTests`; konumu belirtin; çözüm adı `RooterLib`; ve emin olun **çözüm için dizin oluştur** denetlenir.  
   
@@ -54,7 +38,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
   
 4.  Yeni projede açmak **unittest1.cpp**.  
   
-     ![UnitTest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")  
+     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")  
   
      Aşağıdakilere dikkat edin:  
   
@@ -159,7 +143,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
   
 2.  İçinde RooterLib üst bilgi dosyasını dahil **unittest1.cpp**.  
   
-    1.  Açık **unittest1.cpp**.  
+    1.  Open **unittest1.cpp**.  
   
     2.  Bu kod eklemek için aşağıdaki `#include "CppUnitTest.h"` satırı:  
   

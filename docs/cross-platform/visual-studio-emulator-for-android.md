@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 07/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology:
+- tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: df3e4def97d8563e3901662ede92e79acd5c5d4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3029954623ffbd5324a8a1ab9b67def375b1a486
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü
 Android için Visual Studio öykünücüsü bir Android cihaz öykünen bir masaüstü uygulamasıdır. Hata ayıklama ve bir fiziksel aygıt olmadan Android uygulamalarını test sanallaştırılmış bir ortam sağlar. Ayrıca, uygulama prototipleri için yalıtılmış bir ortam sağlar.  
@@ -27,7 +29,9 @@ Android için Visual Studio öykünücüsü bir Android cihaz öykünen bir masa
  Android platformları, ekran çözünürlükleri ve Android için Visual Studio öykünücüsü tarafından desteklenen diğer donanım özellikleri her bir benzersiz cihaz profili uygulamanıza test edebilirsiniz.
 
 > [!NOTE]
-> Google Android öykünücüsü, Apache Cordova için Visual Studio Araçları ile kullanım için tavsiye edilir. Daha fazla bilgi için bkz: [Apache Cordova uygulamanızı Android'de çalıştırma](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
+> Google Android öykünücüsü aşağıdaki durumlarda kullanılması önerilir:
+> - Apache Cordova için Visual Studio Araçları'nı kullanarak olduğunda. Daha fazla bilgi için bkz: [Apache Cordova uygulamanızı Android'de çalıştırma](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
+> - Android içeren öykünücüsü görüntüleri gerekli ne zaman 7.0 veya üstü olarak Android yayımlamak için herhangi bir plan görüntüleri geçmiş sürüm 6.0 için Android için Visual Studio öykünücüsü'yı kullanın.
   
 ##  <a name="Installing"></a>Yükleme ve kaldırma  
  Yükleme  
@@ -79,7 +83,7 @@ Android için Visual Studio öykünücüsü bir Android cihaz öykünen bir masa
  Hedeflemek istediğiniz profilleri kümesine yükledikten sonra bu yeni profiller doğrudan Manager'dan yeşil tuşlarına basarak başlatabilirsiniz **Yürüt** düğmesi. Hata ayıklama hedefi açılır menüde herhangi bir Visual Studio platformlar arası mobil proje türü de görüntülenir.  
   
 ##  <a name="FeaturesTest"></a>Öykünücüde test edebilirsiniz özellikleri  
- Bu öykünücüde test edebilirsiniz özellikleri hakkında ayrıntılı bilgi için bkz [belgelerine](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
+ Bu öykünücüde test edebilirsiniz özellikleri hakkında ayrıntılı bilgi için bkz [blog gönderisi](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
   
 ##  <a name="FeaturesNonTest"></a>Öykünücüde test edilemez özellikleri  
  Aşağıdaki listede Android platformu özelliklerini açıklar, **olamaz** öykünücüde test edin. Bu özellikler bir fiziksel cihaz üzerindeki test gerekir.  

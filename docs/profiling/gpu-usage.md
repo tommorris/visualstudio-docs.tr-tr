@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9fdb367336d5e5a539f63fefbe97c04524bbdf6a
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="gpu-usage"></a>GPU Kullanımı
 Visual Studio performans ve tanılama hub'ı GPU kullanım aracını daha iyi Direct3D uygulamanızı üst düzey donanım kullanımını anlayın. Uygulamanızın performansını CPU bağımlı veya platformun donanım daha etkili bir şekilde nasıl kullanabileceğinizi içine GPU bağlanmış ve kazanç Insight olup olmadığını belirlemek için kullanabilirsiniz. GPU kullanımı Direct3D 12, Direct3D 11 ve Direct3D 10 kullanan uygulamaları destekler; diğer grafik Direct2D veya OpenGL gibi API'leri desteklemez.  
@@ -118,7 +118,7 @@ Visual Studio 2017 ile başlayarak, bu verileri ile açılabilir [GPUView](/wind
 |**İş parçacığı kimliği**|Olay geldiği iş parçacığı kimliği.|  
   
 > [!IMPORTANT]
->  Windows 8.1 için olay attribution gereklidir. Ayrıca, GPU veya sürücü gereken İzleme özelliklerini desteklemiyorsa, tüm olayları 'unattributed' görünür. GPU sürücünüzü güncelleştirin ve bu sorunu yaşarsanız yeniden denemek emin olun. Daha fazla bilgi için bkz: [donanım ve sürücü desteği](#hwsupport) aşağıda.  
+>  GPU veya sürücü gereken İzleme özelliklerini desteklemeyen tüm olayları 'unattributed' gösterilmesi gerekir. GPU sürücünüzü güncelleştirin ve bu sorunu yaşarsanız yeniden denemek emin olun. Daha fazla bilgi için bkz: [donanım ve sürücü desteği](#hwsupport) aşağıda.  
   
 ## <a name="gpu-usage-settings"></a>GPU kullanım ayarları  
  GPU kullanım aracı uygulama başlar başlamaz bilgi toplamak başlangıç yerine bilgi profil oluşturma toplama ertelemek için yapılandırabilirsiniz. Profil bilgilerini boyutunu önemli olabileceğinden, uygulamanızın performansını yavaşlamalara sonraya görünmez bildiğiniz durumlarda kullanışlıdır.  
@@ -143,7 +143,7 @@ Visual Studio 2017 ile başlayarak, bu verileri ile açılabilir [GPUView](/wind
   
 |Satıcı|GPU açıklaması|Gerekli sürücü sürümü|  
 |------------|---------------------|-----------------------------|  
-|Intel®|4. nesil Intel® çekirdekli işlemciler ('Haswell')<br /><br /> -Intel® HD grafikleri (GT1)<br />-Intel® HD grafikleri 4200 (GT2)<br />-Intel® HD grafikleri 4400 (GT2)<br />-Intel® HD grafikleri 4600 (GT2)<br />-Intel® HD grafik P4600 (GT2)<br />-Intel® HD grafik P4700 (GT2)<br />-Intel® HD grafikleri 5000 (GT3)<br />-Intel® Iris™ grafik 5100 (GT3)<br />-Intel® Iris™ Pro grafik 5200 (GT3e)|--(en son sürücülere kullanın)|  
+|Intel®|4. nesil Intel® çekirdekli işlemciler ('Haswell')<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|--(en son sürücülere kullanın)|  
 |AMD®|Çoğu AMD Radeon™ HD 7000-Serisi (AMD Radeon™ HD 7350 7670 hiç tutar) itibaren<br /><br /> AMD Radeon™ GPU, AMD FirePro™ GPU ve AMD FirePro GPU Hızlandırıcıları grafik çekirdek sonraki (GCN) mimarisi özelliklerine sahip.<br /><br /> AMD® E-serisi ve AMD A-series hızlandırılmış işleme grafik çekirdek sonraki (GCN) mimarisi ('Kaveri', 'Kabini', 'Temash', 'Beema', 'Mullins') özelliklerine sahip birimler (APUs)|14.7 RC3 veya üzeri|  
 |NVIDIA®|Çoğu NVIDIA GeForce® 400-serisi itibaren.<br /><br /> NVIDIA® GeForce® GPU, NVIDIA Quadro® GPU ve NVIDIA® Tesla™ GPU Hızlandırıcıları Fermi™, Kepler™ veya Maxwell™ mimarisi özelliklerine sahip.|343.37 veya üzeri|  
   

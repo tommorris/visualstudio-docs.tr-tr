@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 05/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 59131181-1caa-4b7f-be4b-e84709634edf
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36045b311a73af96df51553f9025a1de84c93b78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio grafik Tanılama ile çalışmaya başlama
 Grafik Tanılama'yı ilk kez kullanmak hazırlarsınız Bu bölümde, ardından Direct3D uygulamasından çerçeveleri yakalamak ve grafik Çözümleyicisi'nde incelemeniz.  
@@ -31,13 +31,6 @@ Grafik Tanılama'yı ilk kez kullanmak hazırlarsınız Bu bölümde, ardından 
  İsteğe bağlı bir Windows özelliği *grafik araçları* grafik tanılama Windows 10 gerekli yakalama ve kayıttan yürütme altyapısı sağlar.  
   
  Grafik araçlarını yükleme hakkında daha fazla bilgi için bkz: [yükleme grafik araçları için Windows 10](#InstallGraphicsTools).  
-  
-### <a name="windows-81-prerequisites"></a>Windows 8.1 önkoşulları  
- Windows Yazılım Geliştirme Seti (SDK) Windows 8.1 için Windows 8.1 üzerindeki grafik tanılama gerektirdiği ve Windows 8.1 ve Windows 8 için geliştirmeyi destekler yakalama ve kayıttan yürütme altyapısı sağlar.  
-  
- [Windows 8.1 için Windows Yazılım Geliştirme Seti (SDK) yükle](https://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)  
-  
- Windows 8.1 çalıştıran bir geliştirme makineden Windows 10 çalıştıran bir uzak kayıttan yürütme makinesini kullanmak için Windows 10 SDK geliştirme makinesine ve kayıttan yürütme makinesini isteğe bağlı grafik araçları özelliği yüklemeniz gerekir.  
   
 ##  <a name="InstallGraphicsTools"></a>Windows 10 için grafik araçlarını yükleme  
  Windows 10'da grafik tanılama altyapı isteğe bağlı bir adlı Windows özelliği tarafından sağlanan *grafik araçları*. Bu özellik, yakalama ve uygulama edilen hedefleri olup yakalanan bağımsız olarak grafik bilgilerini Windows 10 windows veya Direct3D'ın hangi sürümü kullanıyorsa önceki bir sürümünü oynatmak için gereklidir. Grafik araçları özelliği önceden yüklemeyi seçebilirsiniz; Aksi durumda, bir grafik Tanılama oturumu Visual Studio'dan yüklü isteğe bağlı ilk başlattığınızda olur.  
@@ -66,9 +59,7 @@ Grafik Tanılama'yı ilk kez kullanmak hazırlarsınız Bu bölümde, ardından 
  Grafik Tanılama, mükemmel keşfetmek için kendi Direct3D uygulamasını zaten aldıysanız! Aksi takdirde, aşağıdakilerden birini kullanın:
 
 - **DirectX 11 uygulama (Evrensel Windows)** veya **DirectX 12 uygulama (Evrensel Windows)** proje şablonlarını Windows 10 için.
-- **DirectX uygulama (Windows 8.1)** Windows 8.1 için proje şablonu.
 - [Direct3D 12 UAP örnek](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) Windows 10 için.  
-- [DirectX Mermer Labirent oyun örnek](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) Windows 8.1 için.  
   
  Geçmeden önce uygulama oluşturduğunuzdan emin olun.  
   

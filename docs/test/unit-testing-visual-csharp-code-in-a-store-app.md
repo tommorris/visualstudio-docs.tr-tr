@@ -9,58 +9,34 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: dc9a2ac6d7267cd94902b7bbf950b49e0d71f815
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0e0af23cca96238a0ea7bbcde11ac4507e55a9bc
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>Birim bir UWP uygulamasını Visual C# kodu testi
-Bu konuda, bir UWP uygulamasında bir Visual C# sınıfı için birim testleri oluşturma yöntemlerinden biri açıklanmaktadır. Rooter sınıfı belirsiz anılarınızı sınırı teorik olarak verilen bir sayının kare kökünü tahmini hesaplar işlevi uygulayarak hesaplama gösterir. Matematik uygulama sonra bir kullanıcı fun göstermek için bu işlevi kullanabilirsiniz math ile yapılabilir şey.  
-  
- Bu konu, birim geliştirme ilk adımı olarak testi kullanımı gösterilmiştir. Bu yaklaşım önce test ettiğiniz sistemde belirli bir davranışı doğrular bir test yöntemi yazın ve ardından test başarılı kod yazın. Aşağıdaki yordamlar sırasına göre değişiklikler yaparak, bu strateji ilk yazma, test ve birim testleri yazma istediğiniz kod ters çevirebilirsiniz.  
-  
- Bu konu ayrıca tek bir Visual Studio çözümü ve birim testleri ve test etmek istediğiniz DLL için ayrı projeleri oluşturur. Birim testleri doğrudan DLL projesinde içerebilir veya birim testleri ve DLL için ayrı çözümler oluşturabilirsiniz.  
-  
-> [!NOTE]
->  Visual Studio Community, Enterprise ve Professional birim testi için ek özellikler sağlar.  
->   
->  -   Bir eklenti bağdaştırıcı için Microsoft Test Gezgini oluşturduğu tüm üçüncü taraf ve açık kaynak birim testi çerçevesi kullanın. Ayrıca, çözümlemek ve testleri için kod kapsamı bilgilerini görüntüleyebilirsiniz.  
-> -   Testlerinizi her yapıdan sonra çalıştırın.  
-> -   VS Enterprise Microsoft Fakes, sistem ve üçüncü taraf işlevselliği için test kodu getirilmesiyle testlerinizi kendi kodlarına odaklanmasını yardımcı olan yönetilen kod için bir yalıtım çerçevesi de içerir.  
->   
->  Daha fazla bilgi için bkz: [kullanarak birim testlerini doğrulama kodla](http://msdn.microsoft.com/library/dd264975.aspx) MSDN Kitaplığı'nda.  
-  
-##  <a name="BKMK_In_this_topic"></a>Bu konudaki  
- [Çözüm ve birim testi projesi oluşturma](#BKMK_Create_the_solution_and_the_unit_test_project)  
-  
- [Testleri Test Explorer'da çalıştığını doğrulayın](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)  
-  
- [Matematik projeye Rooter sınıfı ekleme](#BKMK_Add_the_Rooter_class_to_the_Maths_project)  
-  
- [Birkaç uygulama projesi için test projesi](#BKMK_Couple_the_test_project_to_the_app_project)  
-  
- [Tekrarlayarak testleri büyütmek ve onları geçirin](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)  
-  
- [Başarısız test hata ayıklama](#BKMK_Debug_a_failing_test)  
-  
- [Kodu yeniden düzenleyin](#BKMK_Refactor_the_code_)  
-  
+
+Bu konuda, bir UWP uygulamasında bir Visual C# sınıfı için birim testleri oluşturma yöntemlerinden biri açıklanmaktadır. Rooter sınıfı belirsiz anılarınızı sınırı teorik olarak verilen bir sayının kare kökünü tahmini hesaplar işlevi uygulayarak hesaplama gösterir. Matematik uygulama sonra bir kullanıcı fun göstermek için bu işlevi kullanabilirsiniz math ile yapılabilir şey.
+
+Bu konu, birim geliştirme ilk adımı olarak testi kullanımı gösterilmiştir. Bu yaklaşım önce test ettiğiniz sistemde belirli bir davranışı doğrular bir test yöntemi yazın ve ardından test başarılı kod yazın. Aşağıdaki yordamlar sırasına göre değişiklikler yaparak, bu strateji ilk yazma, test ve birim testleri yazma istediğiniz kod ters çevirebilirsiniz.
+
+Bu konu ayrıca tek bir Visual Studio çözümü ve birim testleri ve test etmek istediğiniz DLL için ayrı projeleri oluşturur. Birim testleri doğrudan DLL projesinde içerebilir veya birim testleri ve DLL için ayrı çözümler oluşturabilirsiniz.
+
 ##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a>Çözüm ve birim testi projesi oluşturma  
   
-1.  Üzerinde **dosya** menüsünde seçin **yeni**ve ardından **yeni proje**.  
+1.  Üzerinde **dosya** menüsünde seçin **yeni** > **proje...** .
   
-2.  İçinde **yeni proje** iletişim kutusunda, genişletin **yüklü**, ardından **Visual C#** ve seçin **Windows Evrensel**. Ardından **boş uygulama** proje şablonları listesinden.  
+2.  İçinde **yeni proje** iletişim kutusunda, genişletin **yüklü** > **Visual C#** ve **Windows Evrensel**. Ardından **boş uygulama** proje şablonları listesinden.
   
 3.  Proje adı `Maths` ve emin olun **çözüm için dizin oluştur** seçilir.  
   
 4.  Çözüm Gezgini'nde, çözüm adı seçin, seçin **Ekle** kısayol menüsünden ve ardından **yeni proje**.  
   
-5.  İçinde **yeni proje** iletişim kutusunda, genişletin **yüklü**, ardından **Visual C#** ve seçin **Windows Evrensel** . Ardından **birim testi kitaplığı (Evrensel Windows)** proje şablonları listesinden.  
-  
-     ![Birim testi projesi oluşturma](../test/media/ute_cs_windows_createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
+5.  İçinde **yeni proje** iletişim kutusunda, genişletin **yüklü**, ardından **Visual C#** ve seçin **Windows Evrensel** . Ardından **birim testi uygulama (Evrensel Windows)** proje şablonları listesinden.
   
 6.  UnitTest1.cs Visual Studio düzenleyicisinde açın.  
   

@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 690eb875b0b9251dddcb36c4ad7ded17c36b67cb
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="options-page-debugging-node-properties"></a>Seçenekler Sayfası, Hata Ayıklama Düğümü Özellikleri
 Aşağıdaki tablolar sayfaları (veya özellikleri koleksiyonları) açıklamaktadır ile ilişkili **hata ayıklama** kategorisi, `DTE.Properties("Debugging", <Property Page>)` , **seçenekleri** iletişim kutusu.  
@@ -39,7 +41,7 @@ Aşağıdaki tablolar sayfaları (veya özellikleri koleksiyonları) açıklamak
 |ShowAllMembers|Get/Set (Boole)|Kullanıcı olmayan nesneler için hata ayıklayıcı değişkenleri windows tüm nesne üyeleri görüntülenip görüntülenmeyeceğini belirler. Sadece kendi kodumu etkinleştirilmediği sürece bu seçeneğin bir etkisi yoktur.|  
 |WarnIfNoUserCode|Get/Set (Boole)|Kullanıcı hiçbir kullanıcı koduna sahip bir işlem ekleme yapmaya çalıştığında hata ayıklayıcı bir uyarı yayar olup olmadığını belirler. Sadece kendi kodumu etkinleştirilmediği sürece bu seçeneğin bir etkisi yoktur.|  
 |EnablePropertyEvaluation|Get/Set (Boole)|Hata ayıklayıcı özellikleri otomatik olarak değerlendirir ve yönetilen kodda dolaylı işlevi çağırır olup olmadığını belirler.|  
-|CallStringConversion|Get/Set (Boole)|Hata ayıklayıcı örtük olarak bir dize dönüştürme işlevi değişkenleri Windows nesnelerde çağırır olup olmadığını belirler. Bu seçenek yalnızca C# ve JScript kodu için geçerlidir.|  
+|CallStringConversion|Get/Set (Boole)|Hata ayıklayıcı örtük olarak bir dize dönüştürme işlevi değişkenleri Windows nesnelerde çağırır olup olmadığını belirler.|  
 |EnableSourceServer|Get/Set (Boole)|Hata ayıklayıcı sıfırlayamayacağını erişim kodu bir kaynak sunucudan belirler.|  
 |PrintSourceServerDiagnostics|Get/Set (Boole)|Çıktı penceresi kaynak sunucu ile ilgili tanılama iletileri gösterir olup olmadığını belirler. Kaynak sunucu erişimi etkinleştirilmediği sürece bu seçeneğin bir etkisi yoktur.|  
 |HighlightEntireLine|Get/Set (Boole)|Hata ayıklayıcı kesme noktaları ve geçerli deyim için tam bir satırın vurgular olup olmadığını belirler.|  

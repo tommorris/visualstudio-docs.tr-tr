@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d0ef17900f515ff69f25c30fc797e4e3c9cc7a6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ef58c0eb177238075b0f1cd097f8949272538a75
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -49,7 +50,7 @@ Daha fazla bilgi için bkz: [Visual Studio için Python desteği yükleme](insta
 
 1. Seçerek Visual Studio'da yeni bir Python projesi oluşturma **Dosya > Yeni > Proje**. Seçin "Python" için arama **Python uygulama** şablonu, bir uygun bir ad ve konum girin ve seçin **Tamam**.
 
-1. Projenin `.py` dosya, (daha kolay karşılaştırma için math kitaplığı kullanmadan uygulanan) hiperbolik tanjantını hesaplama benchmarks aşağıdaki kodu yapıştırın. El ile bazı deneyimi için kodu girmek çekinmeyin [düzenleme özellikleri Python](code-editing.md).
+1. Projenin `.py` dosya, (daha kolay karşılaştırma için math kitaplığı kullanmadan uygulanan) hiperbolik tanjantını hesaplama benchmarks aşağıdaki kodu yapıştırın. El ile bazı deneyimi için kodu girmek çekinmeyin [düzenleme özellikleri Python](editing-python-code-in-visual-studio.md).
 
     ```python
     from itertools import islice
@@ -288,7 +289,7 @@ Visual Studio hata ayıklama Python ve C++ kodu birlikte destekler.
 
     ![C++ kodu bir kesme noktasında durdurma](media/cpp-debugging.png)
 
-1. Bu noktada C++ kod boyunca adım, değişkenleri inceleyin ve benzeri. Bu özelliklerin ayrıntıları [C++ hata ayıklama ve Python birlikte](debugging-mixed-mode.md).
+1. Bu noktada C++ kod boyunca adım, değişkenleri inceleyin ve benzeri. Bu özelliklerin ayrıntıları [C++ hata ayıklama ve Python birlikte](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 
 ## <a name="alternative-approaches"></a>Alternatif yaklaşımlar
 

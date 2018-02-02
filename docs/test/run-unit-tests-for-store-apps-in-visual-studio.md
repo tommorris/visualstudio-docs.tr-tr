@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio'da UWP uygulamaları için birim testleri çalıştırma | Microsoft Docs"
+title: "Visual Studio'da birim testleri çalıştırma | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,53 +9,27 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: c9610360c0ea6d32c4825b1e2768f3eaaa06a6fa
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: c06ad430664f1e6cd5010e4af5d8d28efa1f8d25
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Visual Studio'da UWP uygulamaları için birim testleri çalıştırma
-Bu konuda Microsoft Visual Studio Test Gezgini ile birim testleri çalıştırırken açıklar  
-  
-> [!NOTE]
->  Bu bölümdeki konular, Visual Studio Express için Windows 8 işlevselliğini açıklar. Visual Studio Community, Enterprise ve Professional birim testi için ek özellikler sağlar.  
->   
->  -   Bir eklenti bağdaştırıcı için Microsoft Test Gezgini oluşturduğu tüm üçüncü taraf veya açık kaynak birim testi çerçevesi kullanın. Ayrıca, çözümlemek ve testleriniz için kod kapsamı bilgilerini görüntüler.  
-> -   Testlerinizi her yapıdan sonra çalıştırın. Microsoft Fakes, bir yalıtım framework sistemi ve üçüncü taraf işlevselliği için test kodu getirilmesiyle testlerinizi kendi kodlarına odaklanmasını yönetilen kod için de kullanabilirsiniz.  
->   
->  Daha fazla bilgi için bkz: [Birim Test kodunuzu](../test/unit-test-your-code.md) MSDN Kitaplığı'nda.  
-  
-##  <a name="BKMK_In_this_topic"></a>Bu konudaki  
- [Birim testi çerçevelerini ve test projeleri](#BKMK_Unit_test_frameworks_and_test_projects)  
-  
- [Test Gezgini testlerini çalıştırma](#BKMK_Running_tests_in_Test_Explorer)  
-  
--   [Testleri çalıştırma](#BKMK_Running_tests)  
-  
- [Test sonuçlarını görüntüleme](#BKMK_Viewing_test_results)  
-  
--   [Görüntüleme test ayrıntıları](#BKMK_Viewing_test_details)  
-  
--   [Bir test yönteminin kaynak kodu görüntüleme](#BKMK_Viewing_the_source_code_of_a_test_method)  
-  
- [Test listesini düzenleme](#BKMK_Organizing_the_test_list)  
-  
--   [Testleri gruplandırma](#BKMK_Grouping_tests)  
-  
--   [Arama ve test listesini filtreleme](#BKMK_Searching_and_filtering_the_test_list)  
-  
- [Hata ayıklama birim testleri](#BKMK_Debugging_unit_tests)  
-  
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a>Birim testi çerçevelerini ve test projeleri  
- UWP uygulamalar için Visual Studio Express, yönetilen ve yerel C++ kodu için Microsoft birim test çerçevelerini içerir. Test Gezgini, bir çözümde birden çok test projelerden ve üretim kodu projeleri parçası olan test sınıflardan testleri çalıştırabilirsiniz. Visual C# ve Visual Basic birim test çerçevelerini veya testi projelerini Visual C++ herhangi bir bileşimini olabilir. .NET Framework için test altındaki kodun yazıldığında test projesinin hedef kod dilinin bağımsız olarak herhangi bir .NET Framework dil yazılabilir. Yerel C/C++ kod projeleri, C++ birim test çerçevesi kullanılarak test edilebilir.  
-  
+# <a name="run-unit-tests-in-visual-studio"></a>Visual Studio'da birim testleri çalıştırma
+
+Bu konu, Microsoft Visual Studio Test Gezgini ile birim testleri çalıştırırken açıklar.
+
+##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a>Birim testi çerçevelerini ve test projeleri
+
+Visual Studio yönetilen kod ve yerel C++ kodu için Microsoft birim test çerçevelerini içerir. Test Gezgini, bir çözümde birden çok test projelerden ve üretim kodu projeleri parçası olan test sınıflardan testleri çalıştırabilirsiniz. Visual C# ve Visual Basic birim test çerçevelerini veya testi projelerini Visual C++ herhangi bir bileşimini olabilir. .NET Framework için test altındaki kodun yazıldığında test projesinin hedef kod dilinin bağımsız olarak herhangi bir .NET Framework dil yazılabilir. Yerel C/C++ kod projeleri, C++ birim test çerçevesi kullanılarak test edilebilir.
+
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a>Test Gezgini testlerini çalıştırma  
  Test projesi derlerken, testleri Test Gezgini'nde görünür. Test Gezgini görünür durumda değilse, seçin **Test** Visual Studio menüsünde, **Windows**ve ardından **Test Gezgini**.  
   
- ![Birim Test Gezgini](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Unit Test Explorer](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Test Gezgini çalıştırmak, yazma ve testleri yeniden çalıştırmak gibi sonuçları varsayılan gruplar halinde görüntülenir. **başarısız testler**, **testleri geçti**, **atlandı testleri** ve  **Testler değil**. Test Gezgini testlerinizi grupları şekilde değiştirebilirsiniz.  
   
@@ -117,7 +91,7 @@ Bu konuda Microsoft Visual Studio Test Gezgini ile birim testleri çalıştırı
 1.  Visual Studio Düzenleyicisi'nde hata ayıklamak istediğiniz bir veya daha fazla test yöntemler bir kesme noktası ayarlayın.  
   
     > [!NOTE]
-    >  Test yöntemleri herhangi bir sırada çalıştığından hata ayıklamak istediğiniz tüm test yöntemler kesme noktalarını ayarlayın.  
+    > Test yöntemleri herhangi bir sırada çalıştığından hata ayıklamak istediğiniz tüm test yöntemler kesme noktalarını ayarlayın.  
   
 2.  Test Gezgini test yöntemleri seçin ve ardından **seçili Testlerde Hata Ayıkla** kısayol menüsünde.  
   

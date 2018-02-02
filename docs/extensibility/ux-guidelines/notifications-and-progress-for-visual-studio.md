@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Bildirimler ve Visual Studio için ilerleme durumu
 ##  <a name="BKMK_NotificationSystems"></a>Bildirim sistemleri  
@@ -52,7 +54,7 @@ ms.lasthandoff: 12/22/2017
 |[Visual Studio bildirimler penceresi](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|Bildirimler penceresini herkese açık şekilde genişletilebilir değil. Ancak, bir dizi iletileri lisans ve bilgilendirici bildirimleri Visual Studio veya paketleri için güncelleştirmeleri, kritik sorunlar da dahil olmak üzere Visual Studio hakkında iletişim kurmak için kullanılır.|Diğer bildirim türleri için kullanmayın.|  
 |[Hata listesi](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|Bir sorun (uyarı/hata/bilgisi) sahip doğrudan kullanıcının açık çözüm için sorun ilgilidir, kod eyleme geçmek gerekebilir.<br /><br /> Bu, örneğin aşağıdakileri içerir:<br /><br /> -Derleyici iletilerini (uyarı/hata/bilgisi)<br /><br /> -Kod Çözümleyicisi/tanılama iletileri kod hakkında<br /><br /> -İletileri derleme<br /><br /> Proje ya da çözüm dosyaları ile ilgili sorunlar için uygun olabilir, ancak bir Çözüm Gezgini göstergesi önce göz önünde bulundurun.|Kullanıcının açık çözüm kodu herhangi ilişkisine sahip olmayan öğeler için kullanmayın.|  
 |Düzenleyici bildirimleri: ampul|Dosya Aç var olan bir sorunu gidermek için kullanılabilecek bir düzeltme sahip olduğunuzda kullanın.<br /><br /> Ampul ayrıca kullanıcının kodu yapan yeniden düzenlemeler gibi isteğe bağlı alınır ancak bu durumda "bildirim stili." görünmez hızlı Eylemler barındırmak için kullanılması gerektiğini unutmayın|Hiçbir ilişki açık dosyasına sahip olmayan öğeler için kullanmayın.|  
-|Düzenleyici bildirimleri: dalgalı çizgiler|Belirli bir aralık kendi açık kod (örneğin, bir kırmızı dalgalı hatalar için) ile ilgili bir sorun için kullanıcıyı uyarmak için kullanın.|Kendi açık kodunun belirli bir aralığa ilişkili olmayan öğeler için kullanmayın.|  
+|Editor notifications: Squiggles|Belirli bir aralık kendi açık kod (örneğin, bir kırmızı dalgalı hatalar için) ile ilgili bir sorun için kullanıcıyı uyarmak için kullanın.|Kendi açık kodunun belirli bir aralığa ilişkili olmayan öğeler için kullanmayın.|  
 |[Katıştırılmış durum çubukları](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|İçerik veya işlemi belirli araç penceresi, belge penceresine ya da iletişim kutusu penceresinin bağlam içinde ilgili durum sağlamak için kullanın.|Genel Ürün bildirimleri, işlemler veya içeriğe hiçbir ilişkisi belirli penceresi içinde olmayan öğeler için kullanmayın.|  
 |[Windows Tepsisi bildirimleri](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|İşlem dışı işlemler için bildirimler yüzey veya uygulamaları Yahoo! companion için kullanın.|IDE ilgili bildirimler için kullanmayın.|  
 |[Bildirim balonları](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|Bir uzak işlemini bildir veya değiştirmek için kullanın **dışında** IDE.|Bir araç olarak işlemler kullanıcı bilgilendirmek için kullanmayın **içinde** IDE.|  
@@ -156,7 +158,7 @@ ms.lasthandoff: 12/22/2017
 |İlerleme türü|Ne zaman ve nasıl kullanılacağını|Notlar|  
 |-------------------|-------------------------|-----------|  
 |İlerleme çubuğu (belirli)|Beklenen süresini > 5 saniye.<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.|**Verme** animasyonda metin ekleme.|  
-|Bilgi Çubuğu|Bağlamsal kullanıcı Arabirimi ile ilişkili ileti. Bkz: [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.|**Verme** birden çok işlemlerini göstermek gerektiğinde birden çok infobars kullanın. Yığılmış ilerleme çubukları kullanın.|  
+|Infobar|Bağlamsal kullanıcı Arabirimi ile ilişkili ileti. Bkz: [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.|**Verme** birden çok işlemlerini göstermek gerektiğinde birden çok infobars kullanın. Yığılmış ilerleme çubukları kullanın.|  
 |Çıktı Penceresi|Geçici bildirim: kullanıcı uygulama düzeyinde işlem istediğiniz **gözden** ayrıntılarını tamamlandıktan sonra.|**Verme** kullanıcı verilerini daha sonra başvurmak üzere gerekecekse kullanın.|  
 |Günlük dosyası|Önemli olduğunda durumlarda intransient bildirim eşleştirilmiş **kaydetmek** tamamlandıktan sonra ayrıntıları.||  
 |Durum çubuğu|Geçici bildirim: uygulama düzeyinde işlemi kullanıcının olacak **gerek** ayrıntılarını tamamlandıktan sonra.<br /><br /> Katıştırılmış ilerleme çubuğu içerir.<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.||  
@@ -168,7 +170,7 @@ ms.lasthandoff: 12/22/2017
 |İlerleme çubuğu (belirsiz)|Beklenen süresini > 5 saniye.<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.|**Verme** animasyonda metin ekleme.|  
 |Karıncaların (animasyonlu yatay nokta)|Sunucuya gidiş dönüş.<br /><br /> NEAR noktası bağlamının üst kapsayıcı üstte yerleştirilir.|**Verme** tüm kapsayıcı tarafından üst öğe değil kullanın.|  
 |Değer değiştirici (ilerleme halka)|Bağlamsal kullanıcı Arabirimi ile veya alanı önemli bir unsur olduğu ilişkili işlemi.<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.||  
-|Bilgi Çubuğu|Bağlamsal kullanıcı Arabirimi ile ilişkili ileti. Bkz: [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).|**Verme** birden çok işlemlerini göstermek gerektiğinde birden çok infobars kullanın. Yığılmış ilerleme çubukları kullanın.|  
+|Infobar|Bağlamsal kullanıcı Arabirimi ile ilişkili ileti. Bkz: [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).|**Verme** birden çok işlemlerini göstermek gerektiğinde birden çok infobars kullanın. Yığılmış ilerleme çubukları kullanın.|  
 |Çıktı Penceresi|Geçici bildirim:, kullanıcı uygulama düzeyinde işlem istediğiniz **gözden** ayrıntılarını tamamlandıktan sonra.|**Verme** oturumlarında kalıcı hale getirmek için gereken bilgileri belirtmek için kullanın.|  
 |Günlük dosyası|Önemli olduğunda durumlarda intransient bildirim eşleştirilmiş **kaydetmek** tamamlandıktan sonra ayrıntıları.||  
 |Durum çubuğu|Geçici bildirim: uygulama düzeyinde işlemi kullanıcının olacak **gerek** ayrıntılarını tamamlandıktan sonra.<br /><br /> Katıştırılmış ilerleme çubuğu içerir.<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.||  
@@ -229,7 +231,7 @@ ms.lasthandoff: 12/22/2017
   
  **Metinsel ile durum çubuğu**  
   
-##### <a name="infobar"></a>Bilgi Çubuğu  
+##### <a name="infobar"></a>Infobar  
  Durum çubuğu, Bilgi Çubuğu'nu benzer bağlamsal bildirim ve mesajlaşma, hangi da ilerleme çubuğu veya değer değiştirici gibi belirsiz İlerleme göstergesi ile eşleştirilmesi sağlar. Bilgi Çubuğu'nu ayrıntılı düzey ilerleme durumunu veya belirli İlerleme göstergesi sağlamalıdır değil. Bkz: [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).  
   
  ![İlerleme çubuğu ve mesajlaşma ile bilgi çubuğu](../../extensibility/ux-guidelines/media/0903-05_infobar.png "0903 05_InfoBar")  
@@ -237,8 +239,6 @@ ms.lasthandoff: 12/22/2017
  **İlerleme çubuğu ve metinsel bilgi çubuğu**  
   
  ![Bir pencere içinde bilgi çubuğu](../../extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "0903 06_InfoBarInWindow")  
-  
- **Kod Analizi penceresi içinde bilgi çubuğu**  
   
 ##### <a name="inline"></a>Satır içi  
  Satır içi İlerleme göstergesi ilerleme yükleyicisi türleri temsil edilebilir. İlerleme göstergesi iletiyle genellikle eşleştirilmiş, ancak bu zorunlu değildir.  
@@ -522,6 +522,6 @@ public interface IVsInfoBarUIEvents
 #### <a name="watermarks"></a>Filigranlar  
  Bazen bir tüm denetim veya penceresi bir hata durumuna sahip. Bu durumda, filigran hata belirtmek için kullanın.  
   
- ![Filigran](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905 07_Watermark")  
+ ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
   
  **Filigran alan doğrulama**

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c70427c2dd1e2c7ceb071867b876750121445dde
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 45e4e7c43b43fda63deb9008b35ccc4db4487cf8
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild Proje Özellikleri
 Aşağıdaki tabloda sık Visual Studio Proje dosyasında tanımlanan özellikler kullanılan veya sağlayan MSBuild .targets dosyasında bulunur.  
@@ -71,7 +73,7 @@ Aşağıdaki tabloda sık Visual Studio Proje dosyasında tanımlanan özellikle
 |ExcludeDeploymentUrl|[GenerateDeploymentManifest görevi](../msbuild/generatedeploymentmanifest-task.md) proje dosyası aşağıdaki öğeleri birini içeriyorsa, dağıtım bildirimine deploymentProvider etiketi ekler:<br /><br /> -UpdateUrl<br />-InstallUrl<br />-PublishUrl<br /><br /> ExcludeDeploymentUrl kullanarak, ancak, deploymentProvider etiketi, yukarıdaki URL'ler belirtilmiş olsa bile dağıtım bildirimine eklenmesini engelleyebilirsiniz. Bunu yapmak için aşağıdaki özellik proje dosyanıza ekleyin:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>`**Not:** ExcludeDeploymentUrl açık değil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE ve yalnızca el ile proje dosyasını düzenleyerek ayarlayabilirsiniz. Bu özelliği ayarlamak içinde yayımlama etkilemez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; diğer bir deyişle, deploymentProvider etiketi hala PublishUrl tarafından belirtilen URL eklenir.|  
 |FileAlignment|, Çıktı dosyası bölümlerini hizalamak nereye bayt cinsinden belirtir. Geçerli değerler 512, 1024, 2048, 4096, 8192. Bu özellik eşdeğerdir `/filealignment` derleyici anahtar.|  
 |FrameworkPathOverride|Mscorlib.dll ve Microsoft.VisualBasic.dll içinde konumunu belirtir. Bu parametre eşdeğerdir `/sdkpath` vbc.exe derleyici anahtar.|  
-|GenerateDocumentation|(Visual Basic yalnızca .NET) Belge yapı tarafından oluşturulup oluşturulmayacağını belirten bir boolean parametresiyle. Varsa `true`, yapı belgeleri bilgisi oluşturur ve yürütülebilir dosya veya derleme görevi oluşturulan kitaplığı adı ile birlikte bir .xml dosyasına yerleştirir.|
+|GenerateDocumentation|(Yalnızca Visual Basic) Belge yapı tarafından oluşturulup oluşturulmayacağını belirten bir boolean parametresiyle. Varsa `true`, yapı belgeleri bilgisi oluşturur ve yürütülebilir dosya veya derleme görevi oluşturulan kitaplığı adı ile birlikte bir .xml dosyasına yerleştirir.|
 |IntermediateOutputPath|Türetilen gibi tam Ara çıkış yolu `BaseIntermediateOutputPath`yol belirtilmezse,. Örneğin, \obj\debug\\. Bu özellik kılınırsa sonra ayarlayarak `BaseIntermediateOutputPath` hiçbir etkisi olmaz.|  
 |KeyContainerName|Güçlü ad anahtar kapsayıcısı adı.|  
 |KeyOriginatorFile|Güçlü ad anahtar dosyası adı.|  

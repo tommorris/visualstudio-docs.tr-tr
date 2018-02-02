@@ -5,22 +5,24 @@ ms.custom:
 ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 ms.devlang: python
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-dev_langs: python
+dev_langs:
+- python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 756419ce7390ba727bc5847d95c86399838d972a
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: a28c124ae560edca6451ed70d13c28b4138772d1
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Hızlı Başlangıç: İlk Python web uygulamanızı oluşturmak için Visual Studio'yu kullanın.
 
@@ -146,6 +148,6 @@ Falcon hakkında daha fazla bilgi için bkz: [Falcon Quickstart](https://falcon.
 > [!div class="nextstepaction"]
 > [Öğretici: Visual Studio'da Python ile çalışmaya başlama](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
-- Hakkında bilgi edinin [Python web Visual Studio'da Uygulama Şablonları](../python/template-web.md)
-- Hakkında bilgi edinin [Python hata ayıklama](../python/debugging.md)
+- Hakkında bilgi edinin [Python web Visual Studio'da Uygulama Şablonları](../python/python-web-application-project-templates.md)
+- Hakkında bilgi edinin [Python hata ayıklama](../python/debugging-python-in-visual-studio.md)
 - Daha fazla bilgi edinmek [Visual Studio IDE](../ide/visual-studio-ide.md)

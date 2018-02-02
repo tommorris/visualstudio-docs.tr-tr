@@ -10,34 +10,19 @@ ms.topic: article
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
-caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5fe47a5e0bb2eb8c2002c8a516ef10aa81aa0e58
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ed2f4acfe185039950d627092839b14234cadccd
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>Hızlı Başlangıç: C/C++ İçin Kod Çözümleme
-Kod çözümleme düzenli olarak C veya C++ kodu çalıştırarak uygulamanızı kalitesini artırabilir. Bu ortak sorunları, iyi bir programlama uygulama ya da test aracılığıyla bulmak zordur kusurları ihlalleri bulmanıza yardımcı olabilir. Kod çözümleme geçerli olan, ancak hala siz veya kodunuzu kullanan diğer kişiler için sorunlarına neden olabilir belirli kod düzenleri arar çünkü kod analizi uyarıları derleyici hataları ve Uyarıları farklılık gösterir.  
-  
-## <a name="in-this-topic"></a>Bu konuda  
-  
--   [Bir proje için kural kümeleri yapılandırma](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_ConfigureRuleSets)  
-  
--   [Kod çözümleme çalıştırın](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Run)  
-  
--   [Çözümleme ve Kod Analizi uyarıları gidermek](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Analyze)  
-  
--   [Kod çözümleme uyarıları gizleme](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Suppress)  
-  
--   [İş öğeleri için kod çözümleme uyarıları oluşturma](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Creating_work_items_for_code_analysis_warnings)  
-  
--   [Arama ve kod çözümleme sonuçlarını filtreleme](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Search)  
+# <a name="quickstart-code-analysis-for-cc"></a>Hızlı Başlangıç: C/C++ için Kod Analizi
+Kod çözümleme düzenli olarak C veya C++ kodu çalıştırarak uygulamanızı kalitesini artırabilir. Bu ortak sorunları, iyi bir programlama uygulama ya da test aracılığıyla bulmak zordur kusurları ihlalleri bulmanıza yardımcı olabilir. Kod çözümleme geçerli olan, ancak hala siz veya kodunuzu kullanan diğer kişiler için sorunlarına neden olabilir belirli kod düzenleri arar çünkü kod analizi uyarıları derleyici hataları ve Uyarıları farklılık gösterir.
   
 ##  <a name="BKMK_ConfigureRuleSets"></a>Bir proje için kural kümeleri yapılandırma  
   
@@ -85,20 +70,18 @@ Kod çözümleme düzenli olarak C veya C++ kodu çalıştırarak uygulamanızı
   
 -   Üzerinde **yapı** menüsünde seçin **çalıştırmak kod çözümleme** *proje adı*.  
   
- Çözüm ve Proje derlenir ve Kod Analizi çalıştırır. Sonuçları Kod Analizi penceresinde görüntülenir.  
+ Çözüm ve Proje derlenir ve Kod Analizi çalıştırır. Sonuçlar hata listesinde görüntülenir.  
   
-##  <a name="BKMK_Analyze"></a>Çözümleme ve Kod Analizi uyarıları gidermek  
- Belirli bir uyarı çözümlemek için Kod Analizi penceresinde uyarıyı başlığını seçin. Sorun hakkında ek bilgileri görüntülemek için uyarı genişletir. Mümkün olduğunda, kod analizi için uyarı öncülük analiz mantığı ve satır numaralarını görüntüler. Sorunun olası çözümleri dahil olmak üzere uyarı hakkında ayrıntılı bilgi için Yardım konusunu ileti MSND Kitaplığı'nda görüntülemek için uyarı kimliği seçin.  
-  
- Bir uyarı genişlettiğinizde, uyarıya neden olan kod satırı Visual Studio Kod Düzenleyicisi'nde vurgulanır.  
-  
- Sorun anladıktan sonra kodunuzda çözebilirsiniz. Ardından uyarı artık Kod Analizi penceresinde görüntülenir ve yeni uyarılar gerçekleşti, düzeltme henüz emin olmak için Kod Analizi yeniden çalıştırın.  
-  
-> [!TIP]
->  Kod çözümleme Kod Analizi penceresinden yeniden çalıştırabilirsiniz. Seçin **Çözümle** düğmesine tıklayın ve analiz kapsamını seçin. Analiz çözümün tamamında veya seçili bir proje üzerinde yeniden çalıştırabilirsiniz.  
-  
+##  <a name="BKMK_Analyze"></a>Çözümleme ve Kod Analizi uyarıları gidermek
+
+Belirli bir uyarı analiz etmek için hata listesine uyarı başlığını seçin. Sorun hakkında ek bilgileri görüntülemek için uyarı genişletir. Mümkün olduğunda, kod analizi için uyarı öncülük analiz mantığı ve satır numaralarını görüntüler. Sorunun olası çözümleri dahil olmak üzere uyarı hakkında ayrıntılı bilgi için karşılık gelen çevrimiçi Yardım konusunu görüntülemek için uyarı kimliği seçin.
+
+Bir uyarıyı seçtiğinizde, uyarıya neden olan kod satırı Visual Studio Kod Düzenleyicisi'nde vurgulanır.
+
+Sorun anladıktan sonra kodunuzda çözebilirsiniz. Ardından, uyarı artık hata listesinde görüntülenir ve yeni uyarılar gerçekleşti, düzeltme henüz emin olmak için Kod Analizi yeniden çalıştırın.
+
 ##  <a name="BKMK_Suppress"></a>Kod çözümleme uyarıları gizleme  
- Kod çözümleme uyarısı düzeltme değil zaman karar verebilirsiniz zamanlar vardır. Uyarı çözümleme sorunu kodunuzu herhangi bir gerçek uygulaması içinde çıkabilecek olasılık ile ilgili çok fazla değiştirilemeyen gerektirir karar verebilirsiniz. Veya uyarıda kullanılan analiz belirli bağlam için uygun olduğunu düşünüyorsanız. Kod Analizi penceresinde artık görünecekleri bireysel uyarıları gizleyebilirsiniz.  
+ Kod çözümleme uyarısı düzeltme değil zaman karar verebilirsiniz zamanlar vardır. Uyarı çözümleme sorunu kodunuzu herhangi bir gerçek uygulaması içinde çıkabilecek olasılık ile ilgili çok fazla değiştirilemeyen gerektirir karar verebilirsiniz. Veya uyarıda kullanılan analiz belirli bağlam için uygun olduğunu düşünüyorsanız. Artık hata listesinde görünecekleri bireysel uyarıları gizleyebilirsiniz.  
   
  Bir uyarıyı gizlemek için:  
   
@@ -115,19 +98,22 @@ Kod çözümleme düzenli olarak C veya C++ kodu çalıştırarak uygulamanızı
   
  **Bir veya daha fazla C/C++ kod uyarıları için bir iş öğesi oluşturmak için**  
   
-1.  Kod Analizi penceresinde genişletin ve Uyarıları seçin  
+1.  Hata listesi genişletin ve Uyarıları seçin  
   
-2.  Uyarılar için kısayol menüsünden seçin **iş öğesi oluşturma**ve ardından iş öğesi türünü seçin.  
+2.  Uyarılar için kısayol menüsünden seçin **iş öğesi oluşturma**ve ardından iş öğesi türünü seçin.
   
 3.  Visual Studio seçili uyarılar için bir tek iş öğesi oluşturur ve iş öğesi bir IDE belge penceresinde görüntüler.  
   
 4.  Ek bilgileri ekleyin ve ardından **çalışma öğesini Kaydet**.  
   
-##  <a name="BKMK_Search"></a>Arama ve kod çözümleme sonuçlarını filtreleme  
- Uyarı iletilerini uzun listeler arayabilir ve birden çok proje çözümü uyarıları filtreleyebilirsiniz.  
+##  <a name="BKMK_Search"></a>Arama ve kod çözümleme sonuçlarını filtreleme
+
+Uyarı iletilerini uzun listeler arayabilir ve birden çok proje çözümü uyarıları filtreleyebilirsiniz.  
   
-1.  **Başlığı veya Uyarı Kimliği Filtresi uyarılarını için**: anahtar sözcüğü girin **filtre** metin kutusu.  
+- **Başlığı veya Uyarı Kimliği Filtresi uyarılarını için**: Ara kutusuna anahtar sözcüğü girin.
   
-2.  **Projeye göre filtre uyarılar için**: bir birden çok proje çözümü üst listesinde bir veya daha fazla projeleri seçin Kod Analizi penceresinin sağ. Tüm uyarıları görüntülemek için çözüm adı seçin.  
-  
-3.  **Önem derecesi bazında Filtresi uyarılarını için**: varsayılan olarak, bir önem derecesi kod çözümleme iletileri atanan **uyarı**. Bir veya daha fazla iletileri olarak önemini atayabilirsiniz **hata** özel bir kuralda ayarlayın. Ya da seçin **uyarı** veya **hata** ilgili önem atanan iletileri görüntülemek için. Seçin **tüm** tüm iletileri görüntülemek için.
+- **Önem derecesi bazında Filtresi uyarılarını için**: varsayılan olarak, bir önem derecesi kod çözümleme iletileri atanan **uyarı**. Bir veya daha fazla iletileri olarak önemini atayabilirsiniz **hata** özel bir kuralda ayarlayın. Üzerinde **önem** sütunu **hata listesi**, aşağı açılan oku tıklatın ve ardından filtre simgesini seçin. Seçin **uyarı** veya **hata** ilgili önem atanan iletileri görüntülemek için. Seçin **Tümünü Seç** tüm iletileri görüntülemek için.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C/C++ için Kod Analizi](../code-quality/code-analysis-for-c-cpp-overview.md)

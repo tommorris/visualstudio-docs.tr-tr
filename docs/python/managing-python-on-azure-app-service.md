@@ -1,14 +1,16 @@
 ---
-title: "Azure uygulama Hizmeti'nde Python yönetme | Microsoft Docs"
+title: "Azure uygulama hizmeti Python yorumlayıcılar ve kitaplıkları yükleme | Microsoft Docs"
+description: "Bir Python yorumlayıcısı ve kitaplıkları Azure App Service ve düzgün bir şekilde bu yorumlayıcı başvurmak için yapılandırma web uygulamalarını nasıl yüklenir."
 ms.custom: 
 ms.date: 09/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -16,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ff8fb49321d12416391edd1463f651ae169b1bee
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Azure uygulama Hizmeti'nde Python yönetme
 
@@ -131,7 +133,7 @@ Fastcgı isteği düzeyinde çalışan bir arabirimdir. IIS gelen bağlantılar�
 - `WSGI_HANDLER`bir WSGI uygulaması alınabilir, uygulamanızdan işaret etmelidir.
 - `WSGI_LOG`İsteğe bağlı ancak önerilen uygulamanızı hata ayıklama için değildir. 
 
-Bkz: [Azure'a yayımlama](publishing-to-azure.md) hakkında daha fazla ayrıntı için `web.config` içeriği Bottle, Flask ve Django web uygulamaları.
+Bkz: [Azure'a yayımlama](publishing-python-web-applications-to-azure-from-visual-studio.md) hakkında daha fazla ayrıntı için `web.config` içeriği Bottle, Flask ve Django web uygulamaları.
 
 ### <a name="configuring-the-httpplatform-handler"></a>HttpPlatform işleyici yapılandırma
 
@@ -170,7 +172,7 @@ Doğrudan sunucu ortamında paketleri yüklemek için aşağıdaki yöntemlerden
 | --- | --- |
 | [Azure App Service Kudu konsol](#azure-app-service-kudu-console) | Paketleri etkileşimli olarak yükler. Paket saf Python olmalıdır veya tekerlek yayımlamanız gerekir. |
 | [Kudu REST API](#kudu-rest-api) | Paket yükleme otomatik hale getirmek için kullanılabilir.  Paket saf Python olmalıdır veya tekerlek yayımlamanız gerekir. |
-| Uygulamayla paketini | Paketleri doğrudan projenize yükleyin ve ardından bunları App Service'e dağıtma uygulamanızı parçası değilmiş gibi. Bağlı olarak kaç bağımlılıkları vardır ve ne sıklıkta bunları güncelleştirin, bu yöntem olmaya çalışma dağıtım almak için en kolay yolu olabilir. Dikkat edin kitaplıkları Python sürümü sunucusunda aynı olmalıdır, aksi takdirde dağıtımdan sonra belirsiz hataları görürsünüz. Python site uzantılarını tam olarak üzerinde python.org yayımlanan bu sürümler ile aynı olan App Service'te sürümleri, uyumlu bir sürüm yerel geliştirme için kolayca edinebileceği olduğundan, bununla. |
+| Uygulamayla paketini | Paketleri doğrudan projenize yükleyin ve ardından bunları App Service'e dağıtma uygulamanızı parçası değilmiş gibi. Bağlı olarak kaç bağımlılıkları vardır ve ne sıklıkta bunları güncelleştirin, bu yöntem olmaya çalışma dağıtım almak için en kolay yolu olabilir. Dikkat edin kitaplıkları Python sürümü sunucuda eşleşmelidir, aksi takdirde dağıtımdan sonra belirsiz hatalar görebilirsiniz. Python site uzantılarını tam olarak üzerinde python.org yayımlanan bu sürümler ile aynı olan App Service'te sürümleri, uyumlu bir sürüm yerel geliştirme için kolayca edinebileceği olduğundan, bununla. |
 | Sanal ortamlar | Desteklenmez. Bunun yerine, paketleme kullanın ve ayarlayın `PYTHONPATH` paketleri konumuna işaret etmek için ortam değişkeni. |
 
 ### <a name="azure-app-service-kudu-console"></a>Azure App Service Kudu konsol

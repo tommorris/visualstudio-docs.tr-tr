@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - code analysis,managed code
 - managed code analyis
 ms.assetid: 68510a55-da51-4381-81a5-0feba76b8b4f
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 2008ac649302d87cc2d45274de3fdb1981aa571d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/31/2018
 ---
 # <a name="analyzing-managed-code-quality-by-using-code-analysis"></a>Kod Çözümlemesi ile Yönetilen Kod Kalitesini Çözümleme
 Güvenli olmayan veri erişimi, kullanım ihlalleri ve tasarım sorunları gibi kodunuzda olası sorunları bulmak için Visual Studio'da kod çözümleme araçları kullanabilirsiniz. Kod Analizi, .NET Framework, yerel (C ve C++) ve veritabanı uygulamaları üzerinde çalışır. Yönetilen kod için Kod Analizi düzenler kurallarında *kural kümeleri* hedefleyen belirli sorunları kodlama.  

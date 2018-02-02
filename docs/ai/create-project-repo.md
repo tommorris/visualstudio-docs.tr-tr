@@ -34,7 +34,7 @@ Seçtiğiniz sonra [AI için Visual Studio Araçları yüklü](installation.md),
 
     ![İlk Python MNIST program çıktısı](media\create-project-repo\tensorflow-mnist-running.png)
 
-> Anaconda kullanıyorsanız ve eksik numpy hakkında bir hata alırsanız gerekebilir, python ortamı değiştirmeniz gerekebilir [python ortamınızı Anaconda kullanacak şekilde değiştirin](https://docs.microsoft.com/visualstudio/python/python-environments) 
+> Anaconda kullanıyorsanız ve eksik numpy hakkında bir hata alırsanız gerekebilir, python ortamı değiştirmeniz gerekebilir [python ortamınızı Anaconda kullanacak şekilde değiştirin](../python/managing-python-environments-in-visual-studio.md)
 
 11. İlerleme TensorBoard ile görselleştirebilirsiniz. Projenize sağ tıklayın ve tıklayın **çalıştırmak TensorBoard** TensorBoard günlükleri, çıktı dizini seçin.
 

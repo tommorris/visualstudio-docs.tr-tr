@@ -1,24 +1,21 @@
 ---
 title: "Visual Studio Test Araçları | Microsoft Docs"
-ms.custom: na
-ms.date: 02/17/2017
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/31/2018
 ms.technology: vs-devops-test
-ms.tgt_pltfrm: na
 ms.topic: article
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: ad98bfedbccabd5b02059151ce3a5c510fecd83b
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: cc57d6ea3ebba0cff901635d411d047bbafbfa94
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio Test Araçları
 
@@ -32,7 +29,7 @@ Visual Studio Test Araçları sizin ve ekibinizin geliştirmek ve kod mükemmel 
 |||
 |-|-|
 |[Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)|Test Gezgini, geliştirme uygulamada birim testleri tümleştirmeyi kolay hale getirir. Microsoft birim test çerçevesi veya birkaç üçüncü taraf ve açık kaynak çerçeveleri birini kullanabilirsiniz.|
-|[Intellitest](../test/generate-unit-tests-for-your-code-with-intellitest.md)|Intellitest birim testleri ve test verileri, yönetilen kod için otomatik olarak oluşturur.|
+|[IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md)|Intellitest birim testleri ve test verileri, yönetilen kod için otomatik olarak oluşturur.|
 |[Kod kapsamı](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|Kod kapsamı, projenizin kodunun ne oranda gerçekte birim testleri gibi kodlanmış testleri tarafından test edilmektedir belirler.|
 |[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|Microsoft Fakes uygulamanın diğer bölümleri yer tutucular veya dolgular ile değiştirerek sınama kodu ayırmanıza yardımcı olur.|
 |[Canlı Birim Testi](../test/live-unit-testing.md)|Dinamik birim testi otomatik olarak birim testleri arka planda çalışır ve grafik Visual Studio Kod Düzenleyicisi'nde kod kapsamı ve test sonuçlarını görüntüler.|
@@ -42,7 +39,7 @@ Visual Studio Test Araçları sizin ve ekibinizin geliştirmek ve kod mükemmel 
 ## <a name="related-scenarios"></a>İlgili senaryolar
 
 * [Keşif & el ile test etme (VSTS)](/vsts/manual-test/)
-* [Yük testi (VSTS)](/vsts/load-test/index)
+* [Load Testing (VSTS)](/vsts/load-test/index)
 * [Sürekli (VSTS) test etme](/vsts/build-release/test/index)
 * [Team Services ve TFS (VSTS) için DevOps genel bakış](/vsts/user-guide/devops-alm-overview)
 * [Kod çözümleme araçları](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

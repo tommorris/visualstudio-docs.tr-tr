@@ -1,6 +1,6 @@
 # <a name="create-an-ai-project-from-existing-code"></a>Var olan koddan AI projesi oluşturma
 
-Seçtiğiniz sonra [AI için Visual Studio Araçları yüklü](installation.md), var olan Python kodu bir Visual Studio projeye Getir kolaydır. 
+Seçtiğiniz sonra [AI için Visual Studio Araçları yüklü](installation.md), var olan Python kodu bir Visual Studio projeye Getir kolaydır.
 
 > [!Important]
 >
@@ -14,18 +14,17 @@ Seçtiğiniz sonra [AI için Visual Studio Araçları yüklü](installation.md),
 
 1. Görüntülenen Sihirbazı'nda mevcut kodunuzu yolunu ayarlama, dosya türleri için bir filtre ayarlamak ve projenizi gerektirir ve ardından seçin arama yollarını belirtin **Tamam**. Yollar hangi arama bilmiyorsanız, bu alanı boş bırakın.
 
-
 ![Var olan koddan 2. adım yeni proje](media\create-project-existing\azurebatch-newproject.png)
 
 > Mevcut kodunuzu bir Azure Machine Learning projesinin bir parçası ise denetleyin "**olan Azure Machine Learning klasörü**" başarılı dönüştürülmesi hangi deneme gibi önemli Azure Machine Learning yapılandırma ayrıntılarını sağlamak için hesabı, hangi çalışma alanında, kullanmak için işlem bağlamı ve daha fazlası.
 
 1. Bir başlatma dosyası ayarlamak için dosyayı Çözüm Gezgini'nde sağ tıklatın ve seçin bulun **başlangıç dosyası olarak ayarlamak**.
 
-8. İsterseniz, Ctrl + F5 tuşuna basarak veya seçerek program Çalıştır **hata ayıklama > hata ayıklama olmadan Başlat**. 
+1. İsterseniz, Ctrl + F5 tuşuna basarak veya seçerek program Çalıştır **hata ayıklama > hata ayıklama olmadan Başlat**.
 
 > [!div class="nextstepaction"]
 > [Öğretici: Visual Studio'da Python ile çalışma](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Varolan bir Python yorumlayıcısı için bir ortam oluşturma](https://docs.microsoft.com/visualstudio/python/python-environments#creating-an-environment-for-an-existing-interpreter)
+- [Varolan bir Python yorumlayıcısı için bir ortam oluşturma](../python/managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)

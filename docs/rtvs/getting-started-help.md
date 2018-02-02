@@ -1,23 +1,26 @@
 ---
 title: "Visual Studio için Yardım penceresinin R araçlarında | Microsoft Docs"
+description: "Yardım R etkileşimli Visual Studio'daki doğrudan tümleşik? Komutu."
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 001/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 232c02bf68125afb1ffa5234e0feee049e9c5f69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: c95cb854a5c6d517b6e02e63bc744cd2bdc3ba1e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>R araçları Visual Studio için Yardım
 
@@ -28,7 +31,7 @@ Yardım R etkileşimli Visual Studio'daki doğrudan tümleşik için. Kullandı�
 > [!Tip]
 > Visual Studio'da, diğerleri gibi Yardım penceresini düzenlenmiş ve ancak istediğiniz yerleştirildi. Bkz: [Visual Studio'da pencere düzenlerini özelleştirme](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Yardım sonuçları bir tarayıcıda açmak için seçin **R Araçlar > Seçenekler** menü ve kümesi **R Yardım tarayıcı** özelliğine `External`. Bkz: [seçenekleri](options.md).
+> Yardım sonuçları bir tarayıcıda açmak için seçin **R Araçlar > Seçenekler** menü ve kümesi **R Yardım tarayıcı** özelliğine `External`. Bkz: [seçenekleri](options-for-r-tools-in-visual-studio.md).
 
 Yardım aramak için kullanın `??` arama terimi tarafından izlenen komutu. Arama terimi boşluk içeriyorsa tırnak işareti kullanın:
 
@@ -52,7 +55,7 @@ Geliştiriciler genellikle R belgelerine işlev adları, veri kümeleri ve diğe
     ![Sağ tıklatma bağlam menüsü üzerinden bildirilecekse Yardım](media/help-right-click.png)
 
 > [!Tip]
-> Tümleşik Yardım bir tarayıcıda açmak için seçin **R Araçlar > Seçenekler** ve **F1 Web tarayıcısı** için `External`. Bkz: [seçenekleri](options.md).
+> Tümleşik Yardım bir tarayıcıda açmak için seçin **R Araçlar > Seçenekler** ve **F1 Web tarayıcısı** için `External`. Bkz: [seçenekleri](options-for-r-tools-in-visual-studio.md).
 
 ## <a name="integrated-stackoverflow-search"></a>Tümleşik StackOverflow arama
 
@@ -64,4 +67,4 @@ Eklenen ölçüm dize değiştirebilirsiniz `R site:stackoverflow`, ile **R Ara�
 
 ![F1 Web arama dizesi seçeneği değiştirme](media/options-dialog.png)
 
-Sonuçları bir tarayıcıda görüntülemek isterseniz, değiştirmek **F1 Web tarayıcısı** seçeneği açıklandığı gibi [seçenekleri](options.md).
+Sonuçları bir tarayıcıda görüntülemek isterseniz, değiştirmek **F1 Web tarayıcısı** seçeneği açıklandığı gibi [seçenekleri](options-for-r-tools-in-visual-studio.md).

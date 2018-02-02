@@ -6,17 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
-caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
+dev_langs:
+- CPP
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 0dba021b25a63a057f882aeb5c49a560992c2c2b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 97ada4fa2abd8975bd728b48fc24b9e3e9e2af41
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ çekirdek yönergeleri denetleyicileri kullanma
 C++ çekirdek yönergeleri taşınabilir yönergeleri, kuralları ve C++ uzmanlar ve tasarımcıları tarafından oluşturulan c++ kodlama hakkında en iyi uygulamalar kümesidir. Visual Studio şu anda C++ için kendi kod Çözümleme Araçları'nın bir parçası olarak bu kurallar kümesini destekler. Çekirdek kılavuz denetleyicileri Visual Studio 2017 varsayılan olarak yüklenir ve olan [Visual Studio 2015 için NuGet paketi olarak kullanılabilir](#vs2015_corecheck).
@@ -191,7 +191,7 @@ C++ çekirdek yönergeleri denetimleri otomatik derlemelerde kullanabilirsiniz.
 ```
 Bu özellikleri Microsoft.Cpp.targets dosyasının almadan eklediğinizden emin olun. Özel kural kümeleri seçin veya özel bir kural kümesini oluşturun veya diğer PREfast denetimleri içeren varsayılan kural kümesini kullanın.
 
-Olarak aynı yaklaşımı kullanarak, yalnızca belirtilen dosyalar için C++ çekirdek Denetleyicisi'ni çalıştırabilirsiniz [daha önce açıklanan](#coreckeck_per_file), ancak MSBuild dosyalarını kullanma. Ortam değişkenleri kullanılarak ayarlanabilir `BuildMacro` öğe:
+Olarak aynı yaklaşımı kullanarak, yalnızca belirtilen dosyalar için C++ çekirdek Denetleyicisi'ni çalıştırabilirsiniz [daha önce açıklanan](#corecheck_per_file), ancak MSBuild dosyalarını kullanma. Ortam değişkenleri kullanılarak ayarlanabilir `BuildMacro` öğe:
 
 ```xml
 <ItemGroup>

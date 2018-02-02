@@ -1,26 +1,27 @@
 ---
-title: "Visual Studio'da Python projeleri yönetme | Microsoft Docs"
+title: "Visual Studio'da Python uygulamaları için projeleri yönetme | Microsoft Docs"
 description: "Visual Studio projelerinde amacını açıklayan, Python kodu için proje oluşturma ve yönetme gösterir ve Python için kullanılabilen farklı proje şablonları özetler."
 ms.custom: 
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 90a1c568b5e97afcaa975e1fe77230fa0b65d80d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: c1909a421cc4f80653438b2dd627aef8559005d6
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="python-projects"></a>Python projeleri
 
@@ -72,8 +73,8 @@ Aşağıdaki tabloda, Visual Studio (tüm şablonları tüm önceki sürümlerin
 | --- | --- |
 | [Varolan Python koddan](#creating-a-project-from-existing-files) | Visual Studio projesi klasörü yapısı içinde varolan Python kodu oluşturur.  |
 | Python uygulama | Tek ve boş kaynak dosyası içeren yeni bir Python uygulaması için bir temel Proje yapısı. Varsayılan olarak, projeyi tarafından değiştirebileceğiniz varsayılan genel ortamının konsol yorumlayıcı çalışır [farklı bir ortam atama](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project). |
-| [Azure bulut hizmeti](template-azure-cloud-service.md) | Python içinde yazılmış bir Azure bulut hizmeti için bir proje. |
-| [Web projeleri](template-web.md) | Proje Bottle, Django, Flask ve Flask/Jade dahil olmak üzere çeşitli çerçevesinde bağlı web sunucuları için. |
+| [Azure bulut hizmeti](python-azure-cloud-service-project-template.md) | Python içinde yazılmış bir Azure bulut hizmeti için bir proje. |
+| [Web projeleri](python-web-application-project-templates.md) | Proje Bottle, Django, Flask ve Flask/Jade dahil olmak üzere çeşitli çerçevesinde bağlı web sunucuları için. |
 | IronPython uygulama | Benzer şekilde kullanır ancak Python uygulama şablonu tarafından IronPython varsayılan etkinleştirme .NET birlikte çalışabilirlik ve karma mod .NET dilleri ile hata ayıklama. |
 | IronPython WPF uygulaması | Uygulamanın kullanıcı arabirimi için Windows Presentation Foundation XAML dosyalarla IronPython kullanarak proje yapısı. Visual Studio XAML kullanıcı Arabirimi Tasarımcısı sağlar, arka plan kodu Python içinde yazılmış ve bir konsol görüntülemeden uygulamayı çalıştırır. |
 | IronPython Silverlight Web sayfası | Silverlight kullanarak bir tarayıcıda çalışan IronPython projesi. Uygulamanın Python kodu web sayfasındaki komut dosyası olarak dahil edilir. Python kodunuzu DOM ile etkileşim kurabilen Silverlight içinde çalışan IronPython başlatır bazı JavaScript kodları aşağı Demirbaş komut dosyası etiketinin çeker |

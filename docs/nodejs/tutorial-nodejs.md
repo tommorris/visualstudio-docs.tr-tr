@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-dev_langs: JavaScript
-ms.workload: nodejs
-ms.openlocfilehash: 80822e4f323621a97beb453118d7e0836ae9ea92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Visual Studio'da Node.js ile çalışmaya başlama
 Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE bazı özellikleri keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).  
@@ -134,6 +137,8 @@ Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Nod
 
 1. Farklı görüntüleri göstermek için düğmeler'i tıklatın.
 
+    ![Tarayıcıda çalışan uygulama](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+
 1. Node.js etkileşimli seçerek penceresini **Görünüm > Diğer Pencereler > Node.js etkileşimli pencere**.
 
    ![Node.js etkileşimli penceresini açın](../nodejs/media/tutorial-nodejs-interactive-window.png)  
@@ -144,7 +149,7 @@ Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Nod
 
 1. Web tarayıcısını kapatın.  
 
-## <a name="publish-to-azure-app-service"></a>Azure App Service'te yayımlama
+## <a name="optional-publish-to-azure-app-service"></a>(İsteğe bağlı) Azure App Service'te yayımlama
 
 1. Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Yayımla**.
 

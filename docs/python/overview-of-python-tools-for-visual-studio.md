@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/09/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 067684c7b5064e096849afe69d2f0db1bcc75ea6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Python Visual Studio (Windows) ile çalışma
 
@@ -31,7 +32,7 @@ Visual Studio Windows sağlar [açık kaynak](https://github.com/Microsoft/ptvs)
 Başlamak için:
 
 - İzleyin [yükleme yönergeleri](installing-python-support-in-visual-studio.md) Python iş yükü çalışma ayarlamak için
-- Bir veya daha fazla proje oluşturmak için hızlı başlangıç ipuçları gidin. Emin değilseniz, başlayın [bir şablondan bir proje oluştur](quickstart-02-project-from-template.md).
+- Bir veya daha fazla proje oluşturmak için hızlı başlangıç ipuçları gidin. Emin değilseniz, başlayın [bir şablondan bir proje oluştur](quickstart-02-python-in-visual-studio-project-from-template.md).
 - İzleyin [Visual Studio'da Python ile çalışma](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) baştan sona tam bir deneyim Öğreticisi.
 - Ardından Python güvenlikle ilgili özellikler ve Visual Studio kendisini özelliklerini keşfetmek için aşağıdaki tabloda bağlantıları kullanın.
 
@@ -41,11 +42,11 @@ Başlamak için:
 | [Proje şablonları](managing-python-projects-in-visual-studio.md#project-templates) | Proje yapısı konsol, web, Azure, veri bilimi ve diğer proje türleri için hızlı bir şekilde oluşturur | [Visual Studio Şablonları](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
 | Birden çok yorumlayıcı desteği | CPython ve IronPython çeşitli sürümlerini destekler. | yok |
 | IPython desteği | Satır içi çizimler, .NET ve Windows Presentation Foundation (WPF) için REPL IPython/Jupyter için destek içerir. | yok |
-| [Zengin düzenleme, IntelliSense ve kod kavrama](code-editing.md) | Tüm kod ve kitaplıklarını arasında otomatik tamamlama söz dizimi renklendirme içeren [kod biçimlendirme](code-formatting.md), imza Yardım, sınıf görünümü gidin tanımı, tüm başvuruları Bul, kod parçacıkları [yeniden düzenleme](code-refactoring.md), [ PyLint](code-pylint.md)ve daha fazlası. | [Kod ve Metin Düzenleyici'de Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [Etkileşimli penceresi](interactive-repl.md) | Hızlı bir REPL deneyimi Python için kolayca kodunuzu bir kısmı vurgulayın ve etkileşimli penceresine gönderme olanağı sağlar. | yok |
-| [Tam özellikli hata ayıklama](debugging.md) | Hata ayıklama yapılabilir olan veya varolan bir yürütülebilir dosyada hata ayıklama özelliği de dahil olmak üzere bir Visual Studio projesi olmayan [Python/C++ karışık mod hata ayıklaması](debugging-mixed-mode.md), [uzaktan hata ayıklama](debugging-cross-platform-remote.md) Windows/Linux/Mac için [Azure'a uzaktan hata ayıklama](debugging-azure-remote.md)ve etkileşimli pencereye hata ayıklama. | [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md) |
-| [Kapsamlı Raporlama ile Profil Araçları](profiling.md) | Ne zaman farklı profil çalıştırmalarını arasındaki performans Karşılaştırılacak özelliği de dahil, uygulamanızda harcandığını araştırır. | [Profil Araçları](../profiling/profiling-tools.md) (tüm Visual Studio profil özellikleri Python için kullanılabilir) |
-| [Birim test araçları](unit-testing.md) | Bul, çalıştırmak, Visual Studio Test Gezgini testlerinde yönetmek ve kolayca birim testleri hata ayıklama. | [Birim testi kodunuz](../test/unit-test-your-code.md) |
+| [Zengin düzenleme, IntelliSense ve kod kavrama](editing-python-code-in-visual-studio.md) | Tüm kod ve kitaplıklarını arasında otomatik tamamlama söz dizimi renklendirme içeren [kod biçimlendirme](formatting-python-code.md), imza Yardım, sınıf görünümü gidin tanımı, tüm başvuruları Bul, kod parçacıkları [yeniden düzenleme](refactoring-python-code.md), [ PyLint](linting-python-code.md)ve daha fazlası. | [Kod ve Metin Düzenleyici'de Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [Etkileşimli penceresi](python-interactive-repl-in-visual-studio.md) | Hızlı bir REPL deneyimi Python için kolayca kodunuzu bir kısmı vurgulayın ve etkileşimli penceresine gönderme olanağı sağlar. | yok |
+| [Tam özellikli hata ayıklama](debugging-python-in-visual-studio.md) | Hata ayıklama yapılabilir olan veya varolan bir yürütülebilir dosyada hata ayıklama özelliği de dahil olmak üzere bir Visual Studio projesi olmayan [Python/C++ karışık mod hata ayıklaması](debugging-mixed-mode-c-cpp-python-in-visual-studio.md), [Linux'ta uzaktan hata ayıklama](debugging-python-code-on-remote-linux-machines.md) Windows/Linux için / Mac, [Azure üzerinde uzaktan hata ayıklama](debugging-remote-python-code-on-azure.md)ve etkileşimli pencereye hata ayıklama. | [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md) |
+| [Kapsamlı Raporlama ile Profil Araçları](profiling-python-code-in-visual-studio.md) | Ne zaman farklı profil çalıştırmalarını arasındaki performans Karşılaştırılacak özelliği de dahil, uygulamanızda harcandığını araştırır. | [Profil Araçları](../profiling/profiling-tools.md) (tüm Visual Studio profil özellikleri Python için kullanılabilir) |
+| [Birim test araçları](unit-testing-python-in-visual-studio.md) | Bul, çalıştırmak, Visual Studio Test Gezgini testlerinde yönetmek ve kolayca birim testleri hata ayıklama. | [Birim testi kodunuz](../test/unit-test-your-code.md) |
 
 Python iş yükü de içeren [Python için Azure SDK](azure-sdk-for-python.md), Windows, Mac OS X ve Linux uygulamalardan Azure Hizmetleri kullanma basitleştirir.
 

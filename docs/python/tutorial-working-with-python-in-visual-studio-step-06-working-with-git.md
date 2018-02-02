@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef6b3bddfb90c64872de331c988f10595e179eb8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-6-working-with-git"></a>6. adım: Git ile çalışma
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 01/22/2018
 
 Visual Studio, GitHub gibi hizmetler ve Visual Studio Team Services yerel Git depoları ve bulunan olanlar ile doğrudan tümleştirme sağlar. Depo kopyalama, değişiklikleri yaptıktan ve dalları yönetme tümleştirmesi içerir.
 
-Bu konu, mevcut bir proje için yerel bir Git deposu oluşturuluyor açıklar. Uzak bir Git deposundan projesi oluşturma adımları için bkz: [hızlı başlangıç: Visual Studio'da Python kodu bir depoyu kopyalayın](quickstart-03-project-from-repository.md).
+Bu konu, mevcut bir proje için yerel bir Git deposu oluşturuluyor açıklar. Uzak bir Git deposundan projesi oluşturma adımları için bkz: [hızlı başlangıç: Visual Studio'da Python kodu bir depoyu kopyalayın](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 1. Visual Studio'da projeden gibi açık bir proje ile [önceki adımda](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md), çözüme sağ tıklayın ve seçin **kaynak denetimine Çözüm Ekle**. Visual Studio Proje kodunuzu içeren yerel bir Git deposu oluşturur ve Visual Studio penceresinin alt görüntüler Git ilgili denetimler de görünür. Denetimlerini tamamlama, değişiklikleri, adını depo ve şube gösterir. Ek bilgi için denetimlerin üzerine gelin.
 
@@ -66,6 +67,6 @@ Visual Studio'da Python üzerinde bu öğreticiyi tamamlamak tebrikler. Bu öğr
 Buradan, kavramlar ve nasıl yapılır kılavuzları, aşağıdakiler de dahil olmak üzere keşfedin:
 
 - [Python için C++ uzantısı oluşturma](working-with-c-cpp-python-in-visual-studio.md)
-- [Azure App Service’e yayımlama](publishing-to-azure.md)
-- [Profil Oluşturma](profiling.md)
-- [Birim testi](unit-testing.md)
+- [Azure App Service’e yayımlama](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Profil Oluşturma](profiling-python-code-in-visual-studio.md)
+- [Birim testi](unit-testing-python-in-visual-studio.md)

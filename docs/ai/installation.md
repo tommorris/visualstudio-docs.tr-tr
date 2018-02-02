@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio için AI araçlarını yükleme"
 description: "Visual Studio için AI araçları yükleme"
-keywords: AI, visual studio
+keywords: ai, visual studio
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.workload: multiple
-ms.openlocfilehash: 55524900d59bf3631d724e2cb142e649bf82c839
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: db07adc39f807b4dfc938ddf599bd7f83378f475
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installation"></a>Yükleme
 
@@ -44,7 +45,7 @@ Eğitim emin olmanız gerekir, yerel bilgisayarınızda modelleri öğrenme deri
 >
 > Aşağıdaki alt bölümlerde yazılım girişte kendi giriş sayfaları alınmıştır.
 
-### <a name="nvidia-gpu-driver"></a>NVIDIA GPU sürücüsünün
+### <a name="nvidia-gpu-driver"></a>NVIDIA GPU driver
 
 Derin öğrenme çerçeveleri NVIDIA doğruluk bir hızda öğrenin ve doğru yapay zeka doğru ölçeklendirme makineleri olanak GPU yararlanın. Bilgisayarınızda NVIDIA GPU kartlarına varsa, lütfen ziyaret [burada](http://www.nvidia.com/Download/index.aspx) veya en son sürücü yüklemek için işletim sistemi güncelleştirmeyi deneyin.
 
@@ -117,7 +118,7 @@ Sonra Python 3.5 doğru yüklenip yüklenmediğini doğrulamak ve bir terminal a
 ### <a name="python-on-visual-studio"></a>Visual Studio üzerinde Python
 
 Python, Uzantılar ile Visual Studio'da tam olarak desteklenir.
-Yükleme hakkında daha fazla bilgi [Python için Visual Studio Araçları](https://docs.microsoft.com/visualstudio/python/installation) daha fazla ayrıntı için.
+Yükleme hakkında daha fazla bilgi [Python için Visual Studio Araçları](../python/installing-python-support-in-visual-studio.md) daha fazla ayrıntı için.
 
 ### <a name="numpy-and-scipy"></a>NumPy ve SciPy
 
@@ -169,7 +170,7 @@ Ziyaret [burada](https://caffe2.ai/docs/getting-started.html) kaynak kodundan ol
 İmkan tanır **karışımı** [sembolik ve kesinlik temelli programlama](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) verimliliğini ve üretkenliğini en üst düzeye çıkarmak için.
 
 MXNet yüklemek için bir terminal aşağıdaki komutu çalıştırın:
-- GPU ile
+- With GPU
     ```bash
     pip3.5 install mxnet-cu80==0.12.0
     ```

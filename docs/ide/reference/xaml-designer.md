@@ -4,23 +4,26 @@ ms.custom:
 ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.XAMLDesigner
-ms.assetid: ad3820b2-0d95-4807-a75c-c3467ed973a3
-caps.latest.revision: "1"
+ms.topic: reference
+f1_keywords:
+- VS.ToolsOptionsPages.XAMLDesigner
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 459642fde4d695317a453e223edd54f223569603
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: bf71bb6f2d52159ab203d14c690a73525af091ae
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="xaml-designer-options-page"></a>XAML Tasarımcısı Seçenekleri sayfası
+
 Kullanım **XAML Tasarımcısı** öğeleri ve özniteliklerinin XAML belgelerinizi nasıl biçimlendirileceğini belirtmek için seçenekler sayfası. Bu sayfayı açmak için seçin **Araçları** menü ve ardından **seçenekleri**. Erişim için **XAML Tasarımcısı** özellik sayfasında, **XAML Tasarımcısı** düğümü. Belgeyi açtığında XAML Tasarımcısı için ayarları uygulanır. Bu nedenle ayarlarında değişiklik yaparsanız, değişiklikleri görmek için Visual Studio'yu kapatıp gerekir.
 
 > [!NOTE]
@@ -46,7 +49,7 @@ XAML Tasarımcısı XAML belge düzenlerken görüntülendiği zaman ve nasıl d
 |||  
 |-|-|  
 |**Dikey**|XAML kaynağı XAML görünümü sol tarafında görünür ve XAML Tasarımcısı diğer tarafında görünür.|  
-|**Yatay**|XAML Tasarımcısı XAML görünüm üst kısmında görünür ve XAML kaynağı altında görünür.|  
+|**Horizontal**|XAML Tasarımcısı XAML görünüm üst kısmında görünür ve XAML kaynağı altında görünür.|  
 |**Default**|XAML belge belgenin projenin hedeflediği platform için önerilen bölünmüş yönlendirmesi kullanır. Çoğu platformda bu eşdeğer olan **yatay**.|  
 
 ## <a name="zoom-by-using"></a>Kullanarak Yakınlaştır
@@ -100,7 +103,7 @@ XAML Tasarımcısı'nda dosyaları XAML düzenleme etkileri Blend kullanarak iş
 |**Efektler Oluştur**|Efektler XAML Tasarımcısı'nda XAML dosyaları düzenlerken Blend kullanarak işlenip işlenmeyeceğini belirtir.|  
 |**Yakınlaştırma eşiği**|Yakınlaştırma yüzdesini belirler hangi efektler ne zaman Oluştur içinde **işlemek etkileri** onay kutusunun seçili. Bu ayar ötesinde yakınlaştırma, efektler XAML Tasarımcısı'nda artık oluştur.|  
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [WPF'de XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
- [Nasıl yapılır: XAML görünümü ayarları değiştirme](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
- [XAML ve kod izlenecek yollar](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[WPF'de XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)  
+[İzlenecek Yol: İlk WPF masaüstü uygulamam](../../designers/walkthrough-my-first-wpf-desktop-application2.md)

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
 ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c95d03201fe9c84e01e83e7fd55bef83755337e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f9b0f8e36cddca227062550775c9f6098aeb1c6f
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>İzlenecek yol: Kod Kusurları için C/C++ Kodunu Analiz Etme
 Bu kılavuz C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları için C/C++ kodunu analiz etme gösterir.  
@@ -41,7 +43,7 @@ Bu kılavuz C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları
   
 ## <a name="prerequisites"></a>Önkoşullar  
   
--   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]veya [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].  
+-   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] veya [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].  
   
 -   Bir kopyasını [gösterim örneği](../code-quality/demo-sample.md).  
   
@@ -85,9 +87,9 @@ Bu kılavuz C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları
   
 3.  Bu uyarı, başarılı makrosu kullanarak düzeltin. Kodunuzu aşağıdaki kodu benzemelidir:  
   
-    ```  
-    if (SUCCEEDED (ReadUserAccount()) )  
-    ```  
+   ```cpp
+   if (SUCCEEDED (ReadUserAccount()) )  
+   ```  
   
 4.  İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:  
   
@@ -95,17 +97,17 @@ Bu kılavuz C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları
   
 5.  Bu uyarı eşitlik için test ederek düzeltin. Kodunuzu aşağıdaki kodu benzer görünmelidir:  
   
-    ```  
-    if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
-    ```  
+   ```cpp
+   if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
+   ```  
   
 ### <a name="to-treat-warning-as-an-error"></a>Uyarı hata olarak işlemek için  
   
 1.  Aşağıdaki Bug.cpp dosyasına ekleyin `#pragma` C6001 uyarıyı hata olarak işlemek için dosyanın başına deyimi:  
   
-    ```  
-    #pragma warning (error: 6001)  
-    ```  
+   ```cpp
+   #pragma warning (error: 6001)  
+   ```  
   
 2.  CodeDefects projeyi yeniden oluşturun.  
   
@@ -141,17 +143,14 @@ Bu kılavuz C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları
   
 8.  Bu uyarı düzeltmek için dönüş değerini sınamak için bir 'If' deyimi kullanın. Kodunuzu aşağıdaki kodu benzemelidir:  
   
-     `if (NULL != newNode)`  
-  
-     `{`  
-  
-     `newNode->data = value;`  
-  
-     `newNode->next = 0;`  
-  
-     `node->next = newNode;`  
-  
-     `}`  
+   ```cpp
+   if (NULL != newNode)  
+   {  
+   newNode->data = value;  
+   newNode->next = 0;  
+   node->next = newNode;  
+   }
+   ```
   
 9. Ek açıklamalar projeyi yeniden oluşturun.  
   
@@ -161,15 +160,13 @@ Bu kılavuz C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları
   
 1.  Biçimsel parametresi açıklama ve dönüş değeri işlevinin `AddTail` Bu örnekte gösterildiği gibi öncesi ve sonrası koşullarını kullanarak:  
   
-     `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
-  
-     `(`  
-  
-     `[SA_Pre(Null=SA_Maybe)] LinkedList* node,`  
-  
-     `int value`  
-  
-     `)`  
+   ```cpp
+   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
+   (
+   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
+   int value
+   )
+   ```
   
 2.  Ek açıklamalar projeyi yeniden derleyin.  
   
@@ -181,19 +178,21 @@ Bu kılavuz C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları
   
 4.  Bu uyarı düzeltmek için dönüş değerini sınamak için bir 'If' deyimi kullanın. Kodunuzu aşağıdaki kodu benzemelidir:  
   
-    ```  
-    . . .  
-    LinkedList *newNode = NULL;   
-    if (NULL == node)  
-    {  
-         return NULL;  
+   ```cpp
+   . . .  
+   LinkedList *newNode = NULL;   
+   if (NULL == node)  
+   {  
+        return NULL;  
         . . .  
-    }  
-    ```  
+   }  
+   ```  
   
 5.  Ek açıklamalar projeyi yeniden derleyin.  
   
      Proje uyarı veya hata oluşturulur.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Kod Kusurları için Yönetilen Kodu Analiz Etme](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İzlenecek yol: Kod Kusurları için Yönetilen Kodu Analiz Etme](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)  
+[C/C++ için Kod Analizi](../code-quality/code-analysis-for-c-cpp-overview.md)

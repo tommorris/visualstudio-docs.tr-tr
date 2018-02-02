@@ -30,7 +30,6 @@
 ## [İzlenecek Yol: Gölgeleme Nedeniyle Çıkan Oluşturma Hatalarını Ayıklama](walkthrough-debugging-rendering-errors-due-to-shading.md)
 ## [İzlenecek Yol: Hesaplayıcı Gölgelendiricisinde Hata Ayıklamak İçin Grafik Tanılamayı Kullanma](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
 ## [Nasıl Yapılır: Grafik Tanılama Kayıttan Yürütme Makinesini Değiştirme](how-to-change-the-graphics-diagnostics-playback-machine.md)
-## [Nasıl Yapılır: ARM Cihazla Grafik Tanılamayı Kullanma](how-to-use-graphics-diagnostics-with-an-arm-device.md)
 # [Başvuru (Programlı Yakalama)](reference-programmatic-capture.md)
 ## [VsgDbg Sınıfı](vsgdbg-class.md)
 ### [VsgDbg::VsgDbg (Oluşturucu)](vsgdbg-vsgdbg-constructor.md)

@@ -24,7 +24,7 @@
 ## Node.js
 ### [Web Dağıtımı kullanarak Azure Web Sitesine yayımlama](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
 ## Python
-### [Azure App Service’e yayımlama](/visualstudio/python/publishing-to-azure)
+### [Azure App Service’e yayımlama](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
 # Nasıl yapılır kılavuzları
 ## [ClickOnce Güvenliği ve Dağıtımı](clickonce-security-and-deployment.md)
 ### [ClickOnce Dağıtım Stratejisini Seçme](choosing-a-clickonce-deployment-strategy.md)

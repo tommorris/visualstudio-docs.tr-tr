@@ -14,11 +14,11 @@ ms.author: phillee
 manager: sacalla
 ms.workload:
 - multiple
-ms.openlocfilehash: 6db5de6156472e1374075cb602f7ecabc92526e2
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: d8e99965867d5dbc2710d6c56c5b3dc90fc16dc8
+ms.sourcegitcommit: 4b4027244b8de25e30b533148804b87321d3e8a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a id="top"></a> Azure visual Studio görüntülerde
 Önceden yapılandırılmış Azure sanal makinede (VM) çalıştıran Visual Studio kullanarak herhangi bir şey için bir yukarı ve çalışan geliştirme ortamında gitmek için kolay ve en hızlı yoludur.  Sistem görüntüleri farklı Visual Studio yapılandırmalarla kullanılabilir [Azure Marketi](https://portal.azure.com/). Yalnızca bir VM önyükleme ve gidin.
@@ -26,14 +26,14 @@ ms.lasthandoff: 02/01/2018
 Azure yeni misiniz? [Ücretsiz bir Azure hesabı oluşturma](https://azure.microsoft.com/free).
 
 ## <a name="what-configurations-and-versions-are-available"></a>Hangi yapılandırmaları ve sürümleri kullanılabilir?
-Azure Marketi'nde en son ana sürümleri için görüntüler bulunamadı: Visual Studio 2017 ve Visual Studio 2015.  Her ana sürümü için özgün olarak yayımlanmış görürsünüz (aka ' RTW') sürümü ve "son" güncelleştirilmiş sürümleri.  Her bu farklı sürümleri için Visual Studio Enterprise ve Visual Studio Community sürümleri bulun.
+Azure Marketi'nde en son ana sürümleri için görüntüleri bulma: Visual Studio 2017 ve Visual Studio 2015.  Her ana sürümü için özgün olarak yayımlanmış (paketini görürsünüz 'RTW') sürümü ve "son" güncelleştirilmiş sürümleri.  Her bu farklı sürümleri için Visual Studio Enterprise ve Visual Studio Community sürümleri bulun.  Bu görüntüler en az her ay en son Visual Studio ve Windows güncelleştirmeleri içerecek şekilde güncelleştiriyoruz.  Görüntüleri adları aynı kalsa da her görüntünün açıklaması yüklü ürün sürümü ve görüntünün 'itibariyle' tarihini içerir.
 
-|               Yayın sürümü              |        Sürümler      |    Ürün sürümü:    |
-|:------------------------------------------:|:---------------------:|:---------------------:|
-| Visual Studio 2017 - son (sürüm 15,5) | Enterprise, Community |     Sürüm 15.5.3    |
-|         Visual Studio 2017 - RTW           | Enterprise, Community |     Sürüm 15.0.7    |
-|   Visual Studio 2015 - son (güncelleştirme 3)   | Enterprise, Community | Sürüm 14.0.25431.01 |
-|         Visual Studio 2015 - RTW           | Yok.           |    Bakım için süresi          |
+|               Yayın sürümü              |        Sürümler       |     Ürün sürümü:     |
+|:------------------------------------------:|:---------------------:|:-----------------------:|
+| Visual Studio 2017 - son (sürüm 15,5) | Enterprise, Community |      Sürüm 15.5.3     |
+|         Visual Studio 2017 - RTW           | Enterprise, Community |      Sürüm 15.0.7     |
+|   Visual Studio 2015 - son (güncelleştirme 3)   | Enterprise, Community |  Sürüm 14.0.25431.01  |
+|         Visual Studio 2015 - RTW           |         Yok.          | (Bakım için süresi) |
 
 > [!NOTE]
 > İlke, özgün olarak yayımlanmış bakım Microsoft göre (aka ' RTW') Visual Studio 2015 sürümü, bakım için doldu.  Bu nedenle, Visual Studio 2015 güncelleştirme 3 için Visual Studio 2015 ürün satır sunulan yalnızca kalan sürümüdür.
@@ -66,7 +66,17 @@ Bu görüntüleri oluştururken Visual Studio'yu yüklemek için kullanırız ko
 Görüntüleri gerektiren bir Visual Studio özelliği eklemezseniz, geri bildirim Aracı (sayfanın sağ üst köşesinde) aracılığıyla geri bildirim sağlayın.
 
 ## <a name="what-size-vm-should-i-choose"></a>VM boyutu seçmem gerekir?
-Yeni bir sanal makine sağlama kolaydır ve Azure eksiksiz bir sanal makine boyutlarını sunar.  Tüm donanım edinme olduğu gibi ile performans maliyeti karşı dengelemek istiyorsunuz.  Visual Studio güçlü çok iş parçacıklı bir uygulama olduğundan, en az iki işlemcileri ve 7 GB bellek içeren bir VM boyutu istiyor.  En son makine boyutları hakkında daha fazla bilgi için bkz: [boyutları için Windows Azure sanal makineleri](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes).
+Yeni bir sanal makine sağlama kolaydır ve Azure eksiksiz bir sanal makine boyutlarını sunar.  Tüm donanım edinme olduğu gibi ile performans maliyeti karşı dengelemek istiyorsunuz.  Visual Studio güçlü çok iş parçacıklı bir uygulama olduğundan, en az 2 işlemciler ve 7 GB bellek içeren bir VM boyutu istiyor. En az bu VM boyutları çevirir Azure'da:
+
+   * Standard_D2_v3
+   * Standard_D2s_v3
+   * Standard_D4_v3
+   * Standard_D4s_v3
+   * Standard_D2_v2
+   * Standard_D2S_v2
+   * Standard_D3_v2
+
+En son makine boyutları hakkında daha fazla bilgi için bkz: [boyutları için Windows Azure sanal makineleri](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes).
 
 Azure ile ilk çekme ile sınırlı değilsiniz – VM boyutlandırarak ilk seçiminiz yeniden dengelemeniz.  Daha uygun bir boyutu ile yeni bir VM ya da sağlayabilir veya farklı temel alınan donanım, var olan VM yeniden boyutlandırabilirsiniz.  Daha fazla bilgi için bkz: [Windows VM yeniden boyutlandırma](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/resize-vm).
 
@@ -77,7 +87,7 @@ Visual Studio Azure "kendi lisansını getir" modelinde izler.  Bu nedenle, benz
 
 Geliştirme ortamlarını yelpazesini çok büyük olduğundan ve var gerçek maliyet daha karmaşık ortamları oluşturmaya ile ilişkili.  Ancak, ortamınıza ait yapılandırma bağımsız olarak Azure kaydetme/kusursuz şekilde yapılandırılmış VM bir 'temel görüntü' kendiniz için ve/veya diğer üyeleri için takımınızın gelecekte kullanılmak – yakalama tarafından bu yatırım kolay koruma sağlar.  Ardından, yeni bir VM önyüklemesi sırasında bu Market görüntüsü yerine temel görüntü sağlayın.
 
-Kısa bir Özet, sysprep ve kapanışında çalışan VM sonra gerekir *yakalama (Şekil 1)* Azure portal'ın kullanıcı Arabirimi aracılığıyla bir görüntü olarak VM.  Azure Kaydet `.vhd` seçtiğiniz depolama hesabı resmi içeren dosya.  Ardından, yeni görüntüyü kaynakları aboneliğinizin listesinde bir görüntü kaynağı olarak görünür.
+Kısa bir Özet, sysprep ve kapanışında çalışan VM sonra gerekir *yakalama (Şekil 1)* Azure portal'ın kullanıcı Arabirimi aracılığıyla bir görüntü olarak VM.  Azure kaydeder `.vhd` seçtiğiniz depolama hesabı resmi içeren dosya.  Ardından, yeni görüntüyü kaynakları aboneliğinizin listesinde bir görüntü kaynağı olarak görünür.
 
 <img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*(Şekil 1) Azure portal'ın kullanıcı Arabirimi aracılığıyla bir görüntüsünü yakalayın.*</center>
 

@@ -5,25 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: sort
+f1_keywords:
+- sort
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: Sort method
-ms.assetid: 9bd8b54a-c838-4806-85c8-62eebe6bc48c
-caps.latest.revision: "15"
+helpviewer_keywords:
+- Sort method
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d098b47591ca7bbb4e3e8da5e5c14f8c0e9b255
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0462e60e623b99af458beb61eb7ef4215fe8ef41
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="sort-method-array-javascript"></a>sort Yöntemi (Dizi) (JavaScript)
 Sıralar bir `Array`.  
@@ -48,13 +49,13 @@ arrayobj.sort(sortFunction)
 ## <a name="remarks"></a>Açıklamalar  
  `sort` Yöntemi sıralar `Array` nesneyi yerinde; Hayır yeni `Array` nesnesi, yürütme sırasında oluşturulur.  
   
- Bir işlev sağlarsanız `sortFunction` bağımsız değişkeni, döndürmelidir şu değerlerden biri:  
+ `sortFunction`iki bağımsız değişkeni alır ve aşağıdaki değerlerden birini döndürmesi gerekir:  
   
--   Geçirilen ilk bağımsız değişken ise negatif bir değer'den küçük ikinci bağımsız değişkeni.  
+-   İlk bağımsız değişken aktarılırsa küçük negatif bir değer (0'dan az) ikinci bağımsız değişkenden.  İlk bağımsız değişken için bir alt dizin sıralanır.
   
--   İki bağımsız değişkeni sıfır eşdeğerdir.  
+-   Sıfır (0) if iki bağımsız değişken eşdeğerdir.  İki bağımsız değişken dizisindeki diğer öğeleri göre sıralanır ancak birbirine göre sıralanmış değil.
   
--   İlk bağımsız değişken ikinci bağımsız değişkeni'den büyükse, pozitif bir değer.  
+-   Pozitif bir değer (ilk bağımsız değişken ikinci bağımsız değişkeni'den büyükse, 0'dan büyük).  İkinci bağımsız değişkeni için bir alt dizin sıralanır.
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte nasıl kullanılacağını gösterir `sort` yöntemi.  

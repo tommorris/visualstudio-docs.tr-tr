@@ -11,12 +11,13 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.workload: multiple
-ms.openlocfilehash: d3349190fdfca4c0d4520a89b6c862b0a05898ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ec4618e254a84e6ae0c90b96a4e5a1780b234fbd
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Visual Studio 2017 ile ilgili bir sorun bildirme
 Visual Studio ile ilgili bir sorun yaşıyorsanız, bunları hakkında bilmek isteriz. Böylece biz tanılayın ve düzeltin sorunu bildirin bırakılır.  
@@ -24,8 +25,9 @@ Visual Studio ile ilgili bir sorun yaşıyorsanız, bunları hakkında bilmek is
 ## <a name="sign-in-to-visual-studio"></a>Visual Studio'da oturum açın
 Zaten yapmadıysanız, oturum açma Visual Studio için önce bir sorunu bildirin. Bu şekilde, bir sorun yaşıyorsanız ve ayrıca oy verin ya da açıklama üzerinde bildirebilirsiniz. Hatta oy kullanabilir veya gördüğünüz herhangi bir sorun yorum gönderilen, çok.
 
-1.  Tıklatın **oturum**; aşağıdaki ekran görüntüsünde gösterildiği gibi aracı sağ tarafta olur.
-2.  Ekran oturum açmak için yönergeleri izleyin.
+1.  Visual Studio'da seçin **yardımcı** > **geri bildirim gönder** > **bir sorun bildirmek**.
+2.  Gerekirse, seçin **oturum**; aşağıdaki ekran görüntüsünde gösterildiği gibi aracı sağ tarafta olur.
+3.  Ekran oturum açmak için yönergeleri izleyin.
 
  ![Bir sorunu bildirmek oturum](../ide/media/sign-in-new-ux.png "bir sorunu bildirmek oturum açın")  
 

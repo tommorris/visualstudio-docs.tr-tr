@@ -25,11 +25,11 @@ ms.author: kempb
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 45e4e7c43b43fda63deb9008b35ccc4db4487cf8
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: e1da05cbbb2415ad6ce701e1330f9e9e60568aeb
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild Proje Özellikleri
 Aşağıdaki tabloda sık Visual Studio Proje dosyasında tanımlanan özellikler kullanılan veya sağlayan MSBuild .targets dosyasında bulunur.  
@@ -52,7 +52,7 @@ Aşağıdaki tabloda sık Visual Studio Proje dosyasında tanımlanan özellikle
 |BaseOutputPath|Çıktı dosyası için temel yolunu belirtir. Bu ayarlanırsa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kullanacağı `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Örnek sözdizimi:`<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>`|  
 |BaseIntermediateOutputPath|Tüm özel yapılandırma Ara Çıkış klasörleri oluşturulduğu en üst düzey klasör. Varsayılan değer `obj\` şeklindedir. Aşağıdaki kod örneği verilmiştir:`<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>`|  
 |BuildInParallel|Proje başvuruları yerleşik veya paralel when temizlendi olup olmadığını gösteren bir Boole değeri birden çok işlemci [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kullanılır. Varsayılan değer `true`, sahip birden çok çekirdek veya işlemci projeleri sistem içinde paralel IF oluşturulacak anlamına gelir.|  
-|BuildProjectReferences|Proje başvuruları tarafından oluşturulan olup olmadığını gösteren bir Boole değeri [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ayarlamak `false` projenizi oluşturuyorsanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE) `true` , aksi takdirde.|  
+|BuildProjectReferences|Proje başvuruları tarafından oluşturulan olup olmadığını gösteren bir Boole değeri [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Otomatik olarak ayarlamak `false` projenizi oluşturuyorsanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE) `true` , aksi takdirde. `/p:BuildProjectReferences=false`Komut satırında başvurulan projeleri güncel denetimi önlemek için belirtilebilir.|  
 |CleanFile|"Temiz önbelleği olarak." kullanılacak dosya adı Temizleme işlemi sırasında silinecek oluşturulan dosyaların listesini temiz önbelleğidir. Dosyayı Ara çıkış yolu derleme süreci tarafından yerleştirilir.<br /><br /> Bu özellik yalnızca yol bilgisi olmayan dosya adlarını belirtir.|  
 |Kod sayfası|Derlemedeki tüm kaynak kodu dosyaları için kullanılacak kod sayfasını belirtir. Bu özellik eşdeğerdir `/codepage` derleyici anahtar.|  
 |CompilerResponseFile|Derleyici görevlere aktarılabilecek bir isteğe yanıt dosyası.|  

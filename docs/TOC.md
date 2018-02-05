@@ -39,6 +39,7 @@
 ### Başvuru
 #### [Visual Studio iş yükü ve bileşen kimlikleri](install/workload-and-component-ids.md)
 #### [Visual Studio derleme numaraları ve yayın tarihleri](install/visual-studio-build-numbers-and-release-dates.md)
+## [Azure sanal makinesinden Visual Studio'yu kullanma](install/using-visual-studio-vm.md)
 ## [Derleme Araçlarını Bir Kapsayıcıya Yükleme](install/build-tools-container.md)
 ### [Kapsayıcılar için İleri Düzey Örnek](install/advanced-build-tools-container.md)
 ### [Kapsayıcılar için Bilinen Sorunlar](install/build-tools-container-issues.md)

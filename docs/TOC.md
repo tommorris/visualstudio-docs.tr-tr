@@ -1,5 +1,6 @@
 # [Visual Studio Belgeleri](ide/index.md)
 # [Genel bakış](ide/visual-studio-ide.md)
+## [Yenilikler](ide/whats-new-in-visual-studio.md)
 # Yükleme
 ## [Visual Studio'yu yükleyin](install/install-visual-studio.md)
 ## [Visual Studio’da oturum açma](ide/signing-in-to-visual-studio.md)
@@ -309,8 +310,7 @@
 #### [Genel Windows Formları ve Web Formları İçin Kültüre Özgü Sınıflar](ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)
 ### [Çift Yönlü Dillerde Uygulamalar Oluşturma](ide/creating-applications-in-bi-directional-languages.md)
 # Başvuru
-## [Yenilikler](ide/whats-new-in-visual-studio.md)
-### Proje ve Öğe Şablonları
+## Proje ve Öğe Şablonları
 ### [Şablon Parametreleri](ide/template-parameters.md)
 ### [Şablon Şeması Başvurusu (Genişletilebilirlik)](extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default)
 ## Genel Kullanıcı Arabirimi Öğeleri

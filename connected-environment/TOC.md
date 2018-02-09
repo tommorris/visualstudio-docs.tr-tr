@@ -14,7 +14,10 @@
 ###[1. Araçları Yükleme](get-started-netcore-visualstudio-01.md)
 ###[2. ASP.NET Web Uygulaması oluşturma](get-started-netcore-visualstudio-02.md)
 ###[3. Azure’da Geliştirme Ortamı oluşturma](get-started-netcore-visualstudio-03.md)
-###[4. Uygulamanızın hatalarını ayıklama](get-started-netcore-visualstudio-04.md)
+###[4. Kubernetes Kapsayıcısında hata ayıklama](get-started-netcore-visualstudio-04.md)
+###[5. Başka bir kapsayıcı çağırma](get-started-netcore-visualstudio-05.md)
+###[6. Takım Geliştirme](get-started-netcore-visualstudio-06.md)
+###[7. Özet](get-started-netcore-visualstudio-07.md)
 
 ##[Node.js (VS Code ve CLI)](get-started-nodejs-01.md)
 ###[1. Araçları Yükleme](get-started-nodejs-01.md)

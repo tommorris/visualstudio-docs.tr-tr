@@ -4,23 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-caps.latest.revision: "18"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6a03a05dd2d72b6733b0936849f218b3358f15cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e1de29741f11413d8829902635c1284aa6e5bce6
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-tasks"></a>MSBuild Görevleri
 Yapı platformunu oluşturma işlemi sırasında herhangi bir sayıda eylemleri yürütmek için yeteneğinin de olması gerekir. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]kullanan *görevleri* bu eylemleri gerçekleştirmek için. Bir görev tarafından kullanılan yürütülebilir kod birimidir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] atomik yapı işlemleri gerçekleştirmek için.  
@@ -39,7 +40,7 @@ Yapı platformunu oluşturma işlemi sırasında herhangi bir sayıda eylemleri 
   
  Bir görevi çalıştırmak için bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası, bir öğenin alt öğesi olarak görev adı ile oluşturmak bir `Target` öğesi. Bir görev parametreleri kabul ederse, bu öğenin öznitelikleri geçirilir.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]öğe listeleri ve özellikleri parametre olarak kullanılabilir. Örneğin, aşağıdaki çağrıları kod `MakeDir` görev ve değerini ayarlar `Directories` özelliği `MakeDir` nesne değerine eşit `BuildDir` özellik önceki örnekte bildirilmiş.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğe listeleri ve özellikleri parametre olarak kullanılabilir. Örneğin, aşağıdaki çağrıları kod `MakeDir` görev ve değerini ayarlar `Directories` özelliği `MakeDir` nesne değerine eşit `BuildDir` özellik önceki örnekte bildirilmiş.  
   
 ```xml  
 <Target Name="MakeBuildDirectory">  
@@ -63,10 +64,10 @@ Yapı platformunu oluşturma işlemi sırasında herhangi bir sayıda eylemleri 
 ```  
   
 ## <a name="included-tasks"></a>Dahil edilen görevleri  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]gibi birçok görevi ile birlikte gelen [kopya](../msbuild/copy-task.md), dosyaları kopyalar [MakeDir](../msbuild/makedir-task.md), dizinleri, oluşturur ve [Csc](../msbuild/csc-task.md), hangi derlerken [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] kaynak kodu dosyaları. Kullanılabilir görevler ve kullanım bilgilerini tam listesi için bkz: [görev başvurusu](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] gibi birçok görevi ile birlikte gelen [kopya](../msbuild/copy-task.md), dosyaları kopyalar [MakeDir](../msbuild/makedir-task.md), dizinleri, oluşturur ve [Csc](../msbuild/csc-task.md), hangi derlerken [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] kaynak kodu dosyaları. Kullanılabilir görevler ve kullanım bilgilerini tam listesi için bkz: [görev başvurusu](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="overridden-tasks"></a>Geçersiz kılınan görevleri  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]Görevler çeşitli konumlarda arar. İlk konum uzantısına sahip dosyalar kullanılıyor. .NET Framework dizinlerde depolanan OverrideTasks. Bu dosyalar görevlerinde aynı adlarıyla proje dosyasında görevleri dahil herhangi bir görevi geçersiz. İkinci konum uzantılı dosyalar içinde değil. .NET Framework dizinlerde görevler. Görev bu konumlardan birini bulunmazsa proje dosyasında görev kullanılır.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Görevler çeşitli konumlarda arar. İlk konum uzantısına sahip dosyalar kullanılıyor. .NET Framework dizinlerde depolanan OverrideTasks. Bu dosyalar görevlerinde aynı adlarıyla proje dosyasında görevleri dahil herhangi bir görevi geçersiz. İkinci konum uzantılı dosyalar içinde değil. .NET Framework dizinlerde görevler. Görev bu konumlardan birini bulunmazsa proje dosyasında görev kullanılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)   

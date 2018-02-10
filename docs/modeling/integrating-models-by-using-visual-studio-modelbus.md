@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e590b0b0451864c69d548bb643ed4e915f08ad96
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus'ı Kullanarak Modelleri Tümleştirme
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus modellerini diğer Araçları'ndan ve modelleri arasında bağlantılar oluşturmak için bir yöntem sağlar. Örneğin, etki alanına özgü dil (DSL) modelleri ve UML modellerini bağlayabilirsiniz. Tümleşik bir DSL'ler kümesi oluşturabilirsiniz.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus modellerini diğer Araçları'ndan ve modelleri arasında bağlantılar oluşturmak için bir yöntem sağlar. Örneğin, etki alanına özgü dil (DSL) modelleri ve UML modellerini bağlayabilirsiniz. Tümleşik bir DSL'ler kümesi oluşturabilirsiniz.  
   
  ModelBus, model veya bir model içinde belirli bir öğe için benzersiz bir başvuruyu oluşturmanızı sağlar. Bu başvuru modeli dışında Örneğin, başka bir model öğesi depolanabilir. Öğesine erişim sağlamak bir aracı bir sonraki durumlarda, istediği zaman, Model veri yolu altyapı uygun modeli yüklemek ve öğesini döndürür. İsterseniz, kullanıcıya model görüntüleyebilirsiniz. Dosyanın önceki konumuna erişilemiyor ModelBus bulmak kullanıcıya sorar. Kullanıcı dosyası bulursa, bu dosyaya yapılan tüm başvuruları ModelBus düzeltir.  
   
@@ -66,11 +67,11 @@ ms.lasthandoff: 01/13/2018
  Klasör `ModelBusAdapters\bin\*` tarafından oluşturulmuş derlemeler içeren `Dsl` proje ve `ModelBusAdapters` projesi. Bu DSL başka bir DSL başvurmak için bu derlemeler almanız gerekir.  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Öğeleri başvurulabilir emin olma  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus bağdaştırıcılar, bir öğenin GUID, varsayılan olarak tanımlamak için kullanın. Bu tanımlayıcılar bu nedenle model dosyasında kalıcı gerekir.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus bağdaştırıcılar, bir öğenin GUID, varsayılan olarak tanımlamak için kullanın. Bu tanımlayıcılar bu nedenle model dosyasında kalıcı gerekir.  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Kimlikleri kalıcı o öğeye emin olmak için  
   
-1.  DslDefinition.dsl açın.  
+1.  Open DslDefinition.dsl.  
   
 2.  DSL Explorer'da genişletin **Xml serileştirme davranışı**, ardından **sınıf veri**.  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 01/13/2018
 3.  Deneysel örneği hata ayıklama projede [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], her DSL örnekleri olan dosyaları ekleyin.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus yalnızca aynı öğeleridir modellere başvurular çözmek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözümü. Örneğin, dosya sisteminizi başka bir kısmında bir model dosyası başvuru oluşturulamıyor.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus yalnızca aynı öğeleridir modellere başvurular çözmek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözümü. Örneğin, dosya sisteminizi başka bir kısmında bir model dosyası başvuru oluşturulamıyor.  
   
 4.  Bazı öğeler ve bağlantıları gösterilen DSL örneğinde oluşturun ve kaydedin.  
   

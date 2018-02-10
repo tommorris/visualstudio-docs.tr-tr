@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#AL
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#AL
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - AL task [MSBuild]
 - MSBuild, AL task
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
-caps.latest.revision: "22"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 46ddcdba540128ed866e136bf0db548575e63910
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6d9d3b433e7ae14603a41b7ad802ff386c7aac52
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="al-assembly-linker-task"></a>AL (Derleme Bağlayıcı) Görevi
 AL görevi AL.exe, ile dağıtılmış bir aracı sarmalar [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Bu derleme bağlayıcı aracı, bir derlemeyi ya da modüller bir veya daha fazla dosya veya kaynak dosyaları bildirimden oluşturmak için kullanılır. Bu görevi doğrudan kullanmak gerekli olan genelde şekilde derleyicileri ve geliştirme ortamlarını zaten bu yetenekleri sağlayabilir. Derleme Bağlayıcı tek bir derleme karışık dil geliştirme üretilen olanlar gibi birden çok bileşen dosyaları oluşturmak ihtiyaç duyan geliştiriciler için kullanışlıdır. Bu görev, bir tek derleme dosyasına modülleri birleştirmek değil; tek tek modülleri hala dağıtılmış ve doğru bir şekilde yüklemek sonuçta elde edilen derleme sırada kullanılabilir olması gerekir. AL.exe hakkında daha fazla bilgi için bkz: [Al.exe (derleme bağlayıcı)](/dotnet/framework/tools/al-exe-assembly-linker).  

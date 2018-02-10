@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#ItemDefinitionGroup
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#ItemDefinitionGroup
 dev_langs:
 - VB
 - CSharp
@@ -17,22 +18,23 @@ helpviewer_keywords:
 - ItemDefinitionGroup Element [MSBuild]
 - <ItemDefinitionGroup> Element [MSBuild]
 ms.assetid: 4e9fb04b-5148-4ae5-a394-42861dd62371
-caps.latest.revision: "5"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1a8444c63d7c025c04f212901e82cce6d5cf24da
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: 66cae5b781b94fd769f0b7c3758038500a83e93e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup Öğesi (MSBuild)
 `ItemDefinitionGroup` Öğesi varsayılan olarak uygulanan tüm öğeleri projesinde, meta veri değerler öğe tanımları kümesini tanımlamak olanak sağlar. Itemdefinitiongroup yerini kullanmaya gerek [CreateItem görevi](../msbuild/createitem-task.md) ve [CreateProperty görevi](../msbuild/createproperty-task.md). Daha fazla bilgi için bkz: [öğe tanımları](../msbuild/item-definitions.md).  
 
- \<Proje >  
- \<Itemdefinitiongroup >  
+ \<Project>  
+ \<ItemDefinitionGroup>  
 
 ## <a name="syntax"></a>Sözdizimi  
 
@@ -62,7 +64,7 @@ ms.lasthandoff: 01/09/2018
 
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Proje](../msbuild/project-element-msbuild.md)|Gerekli kök öğesinin bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
+|[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesinin bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
 
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneğinde, m ve n, iki meta veri öğelerini bir Itemdefinitiongroup tanımlar. Bu örnekte, "m" meta veri öğesi "i" tarafından açıkça tanımlanmadığından varsayılan meta veri "m" "i" öğesine uygulanır. Ancak, meta verileri "n" "i" öğe tarafından zaten tanımlı olduğu için varsayılan meta veri "n" öğesi "i" uygulanmıyor.  

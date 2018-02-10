@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#PropertyGroup
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#PropertyGroup
 dev_langs:
 - VB
 - CSharp
@@ -17,22 +18,23 @@ helpviewer_keywords:
 - <PropertyGroup> element [MSBuild]
 - PropertyGroup element [MSBuild]
 ms.assetid: ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4
-caps.latest.revision: "21"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 326902431193d280c8f345f4ee9dde145bcac614
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e19722c1da702684200d848eb62d1dd46a900590
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup Öğesi (MSBuild)
 Kullanıcı tanımlı bir kümesini içerir [özelliği](../msbuild/property-element-msbuild.md) öğeleri. Her `Property` kullanılan öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje bir alt öğesi olması gerekir bir `PropertyGroup` öğesi.  
 
- \<Proje >  
- \<PropertyGroup >  
+ \<Project>  
+ \<PropertyGroup>  
 
 ## <a name="syntax"></a>Sözdizimi  
 
@@ -62,7 +64,7 @@ Kullanıcı tanımlı bir kümesini içerir [özelliği](../msbuild/property-ele
 
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Proje](../msbuild/project-element-msbuild.md)|Gerekli kök öğesinin bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
+|[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesinin bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
 
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneğinde bir koşula göre özelliklerin nasıl ayarlanacağını gösterir. Bu örnekte, değeri `CompileConfig` özelliği `DEBUG`, `Optimization`, `Obfuscate`, ve `OutputPath` özelliklerini içinde `PropertyGroup` öğesi ayarlanır.  

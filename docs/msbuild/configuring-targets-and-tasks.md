@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
-caps.latest.revision: "6"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9b0f7676baa604ba301a3b600786d3ce6539f57c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 38e6145d351a9c026dd4bb5c4105a3606a71f591
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="configuring-targets-and-tasks"></a>Hedefleri ve Görevleri Yapılandırma
 MSBuild hedefleri ve görevleri çalıştırmak için yapılandırabilirsiniz zaman-işlem MSBuild ile böylece üzerinde çalıştığını bir farklılık bağlamları hedefleyebilirsiniz. Örneğin, geliştirme bilgisayarında .NET Framework 4.5 64-bit işletim sisteminde çalışırken 32 bitlik bir .NET Framework 2.0 uygulama hedefleyebilirsiniz. .NET Framework 4 veya önceki sürümleri çalıştıran bilgisayarlar ayrıca hedefleyebilirsiniz. 32 veya 64 bit ve belirli .NET Framework sürüm bileşimi olarak bilinen *hedef bağlamı*.  

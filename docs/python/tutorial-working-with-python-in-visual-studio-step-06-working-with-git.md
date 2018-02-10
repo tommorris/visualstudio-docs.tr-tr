@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
-ms.topic: get-started-article
-caps.latest.revision: 
+ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-working-with-git"></a>6. adım: Git ile çalışma
 
@@ -35,7 +35,7 @@ Bu konu, mevcut bir proje için yerel bir Git deposu oluşturuluyor açıklar. U
 
   ![Visual Studio penceresi Git denetiminde üzerinde hareket ederken ek bilgiler görüntülenir](media/working-with-git-01.png)
 
-1. **Takım Gezgini** penceresi de Havuz üstbilgisi seçerek çeşitli Git ile kullanılabilir seçenekleri görüntülenir. **Eşitleme** bölmesinde gösterildiği gibi uzak deponuza yayımlama seçeneklerini sağlar.
+1. **Takım Gezgini** penceresi de Havuz üstbilgisi seçerek çeşitli Git ile kullanılabilir seçenekleri görüntülenir. **Eşitleme** seçtiğinizde gösterildiği gibi bölmesinde **anında** üstbilgisi, uzak deponuza yayımlama seçeneklerini sağlar.
 
   ![Yerel deposu oluşturduktan sonra Visual Studio Takım Gezgini](media/working-with-git-02.png)
 
@@ -47,7 +47,7 @@ Bu konu, mevcut bir proje için yerel bir Git deposu oluşturuluyor açıklar. U
 
   ![Visual Studio'da dalları gösteren Takım Gezgini](media/working-with-git-04.png)
 
-1. Yerel deposu kullanırken, yapılan değişiklikleri doğrudan depoya gidin. Uzak bir depo bağlıysanız seçin **eşitleme** yerel yürütmelerini gönderdiğiniz için.
+1. Yerel deposu kullanırken, yapılan değişiklikleri doğrudan depoya gidin. Uzak bir depo bağlıysanız, üstbilgi seçin, **eşitleme** geçmek için **eşitleme** bölümünde ve var. sunulan komutları ile çalışır.
 
 ## <a name="going-deeper"></a>Daha derin gitme
 

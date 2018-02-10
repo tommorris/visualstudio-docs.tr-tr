@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, troubleshooting
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da101fa60d897a56c42b52ebbb8e0cc21a6d7a9f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Bir T4 Metin Şablonuna İlişkin Hata Ayıklama
 Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı metin şablonu hata ayıklamak için metin şablonu dosyasını kaydedin ve ardından **hata ayıklama T4 şablon** Çözüm Gezgini'nde dosyasının kısayol menüsünde. Çalışma zamanı metin şablonu hata ayıklamak için basitçe ait olduğu uygulama hata ayıklama.  
@@ -46,7 +47,7 @@ Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı meti
 |'{0}' yolu, bu bilgisayar için yerel ya da güvenilen bölgesinin bir parçası olması gerekir.|Yönergesi veya derleme yönergesi yerel makinenizde değil ya da, ağınızın güvenilir bölgeye bir dosyaya başvuruda bulunan oluşur.|Yönergesi veya derleme yönergeleri bulunduğu dizin, güvenilen bir bölgede olduğundan emin olun. Ağ dizinine güvenilen bölgenizi Internet Explorer aracılığıyla ekleyebilirsiniz.|  
 |"Geçersiz belirteç ' catch'" veya "bir ad alanı doğrudan üye içeremez" gibi birden çok sözdizimi hataları|Şablon kodunuzda çok fazla kapanış köşeli parantez. Derleyici, standart nesil koduyla kafa karıştırıcı değil.|Kaşlı ayraçlar kod sınırlayıcıları içinde kapatma sayısını denetleyin.|  
 |Döngüler veya koşulları değil derlenmiş veya doğru bir şekilde yürütüldü. Örneğin: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Bu kodu her zaman değeri çıkarır ediyorum. Yalnızca "sayıdır:" koşullu değil.|C# ' ta her zaman küme ayraçları denetim deyimlerinde katıştırılmış metin blokları surround için kullanın.|Küme parantezleri Ekle: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
-|"İfade çok karmaşık" olduğunda bir tasarım zamanı şablon işleme veya bir çalışma zamanı (önceden işlenmiş) şablonu derleme.<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]çalışma zamanı şablon tarafından oluşturulan kodu incelemek çalışırken çalışmayı durdurur.|Metin bloğu çok uzun. T4 metin blokları her şablon satır için değişmez değer bir dize içeren bir dize birleştirme ifadesi dönüştürür. Çok uzun metin blokları derleyicinin boyutu sınırları overstep.|Gibi bir ifade bloğu ile uzun metin bloğu bölmeniz:<br /><br /> `<#= "" #>`|  
+|"İfade çok karmaşık" olduğunda bir tasarım zamanı şablon işleme veya bir çalışma zamanı (önceden işlenmiş) şablonu derleme.<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çalışma zamanı şablon tarafından oluşturulan kodu incelemek çalışırken çalışmayı durdurur.|Metin bloğu çok uzun. T4 metin blokları her şablon satır için değişmez değer bir dize içeren bir dize birleştirme ifadesi dönüştürür. Çok uzun metin blokları derleyicinin boyutu sınırları overstep.|Gibi bir ifade bloğu ile uzun metin bloğu bölmeniz:<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>Uyarı açıklamaları ve düzeltmeler  
  Aşağıdaki tabloda, varsa en yaygın uyarılar düzeltmeleri, ile birlikte listeler.  

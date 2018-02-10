@@ -1,3 +1,5 @@
+---
+---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Verileri yüklemek veya modelleri ve günlükleri indirmek için depolamaya Gözat
 
 Tüm depolama uzak makinede veya karşıya yükleme veri veya indirme modelleri ve günlükleri etkinleştirmek için Azure dosya paylaşımına göz atabilirsiniz. Bunu da iş tarayıcıda yapabilirsiniz için belirli bir iş ya da günlükleri ve iş erişmek isterseniz çıkarır

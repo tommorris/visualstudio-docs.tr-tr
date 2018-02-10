@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: c135468e380bd65383f61aa69b906352a3febe47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xamarin
+ms.openlocfilehash: d9d9ecfd180ce3d4bbd54eb091e6c0e3153bd7cd
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Xamarin Visual Studio kullanarak yerel kullanıcı Arabirimi ile uygulamalar oluşturma
 Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-install.md) ve [Xamarin ortamınızı doğrulayın](../cross-platform/verify-your-xamarin-environment.md), bu kılavuzda (aşağıda yerel UI Katmanlar gösterilmiştir) temel bir Xamarin uygulamasının nasıl oluşturulacağını gösterir. Yerel kullanıcı Arabirimi ile taşınabilir sınıf kitaplığı (PCL) paylaşılan kod bulunur ve tek tek platform projeleri UI tanımları içerir.  
@@ -53,7 +54,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
 >     -   [Merhaba, iOS Multiscreen](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)  
 > -   Xamarin.Forms (paylaşılan UI) ile Xamarin uygulamaları  
 >   
->      -   [Merhaba, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
+>      -   [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
 >     -   [Merhaba, Xamarin.Forms Multiscreen](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
   
 ##  <a name="solution"></a>Çözümünüzü ayarlarken ayarlayın  
@@ -251,11 +252,11 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
   
     |Özellik|Değer|  
     |--------------|-----------|  
-    |**metin**|**Posta kodu göre ara**|  
+    |**text**|**Posta kodu göre ara**|  
     |**id**|`@+id/ZipCodeSearchLabel`|  
     |**layout_marginLeft**|`10dp`|  
     |**textColor**|`@android:color/white`|  
-    |**metin stili**|`bold`|  
+    |**textStyle**|`bold`|  
   
     > [!TIP]
     >  Pek çok özellik seçebileceğiniz değerler açılan listesini içermeyen dikkat edin.  Belirli bir özellik için kullanılacak dize değeri tahmin etmesi zor olabilir. Bir özelliğin adını arama önerileri için deneyin [R.attr](http://developer.android.com/reference/android/R.attr.html) sınıfı sayfası.  
@@ -283,7 +284,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
   
     |Özellik|Değer|  
     |--------------|-----------|  
-    |**metin**|**Posta Kodu**|  
+    |**text**|**Posta Kodu**|  
     |**id**|`@+id/ZipCodeLabel`|  
     |**layout_marginLeft**|`10dp`|  
     |**layout_marginTop**|`5dp`|  
@@ -308,7 +309,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
     |**id**|`@+id/zipCodeEntry`|  
     |**layout_marginLeft**|`10dp`|  
     |**layout_marginBottom**|`10dp`|  
-    |**Genişlik**|`165dp`|  
+    |**width**|`165dp`|  
   
      Yeniden kodu:  
   
@@ -329,10 +330,10 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
     |Özellik|Değer|  
     |--------------|-----------|  
     |**id**|`@+id/weatherBtn`|  
-    |**metin**|**Hava durumu Al**|  
+    |**text**|**Hava durumu Al**|  
     |**layout_marginLeft**|`20dp`|  
     |**layout_alignBottom**|`@id/zipCodeEntry`|  
-    |**Genişlik**|`165dp`|  
+    |**width**|`165dp`|  
   
     ```xml  
     <Button    android:text="Get Weather"  

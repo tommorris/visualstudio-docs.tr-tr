@@ -6,15 +6,18 @@ ms.reviewer:
 ms.suite: 
 ms.topic: article
 author: gewarren
+f1_keywords:
+- vs.startpage
+- VS.StartPage.HowDoI
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bde32fc86610fa451aa01659401362fe4207f5c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 242de63001f7df364dacbef3f3b57446ba1e724f
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE genel bakış
 
@@ -263,7 +266,7 @@ Görüntüleyebilir ve Visual Studio kullanarak içinde bulut tabanlı Azure kay
 
 Visual Studio tam işlevsellik ihtiyacınız yoksa, ekleyebilirsiniz! İş akışı ve stil bağlı IDE'yi kişiselleştirme, henüz Visual Studio ile tümleşik harici araçlar için destek eklemek ve verimliliğinizi artırmak için varolan işlevlerini değiştirin. Visual Studio genişletilebilirlik Araçları (VS SDK) en son sürümünü bulmak için bkz: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-Kendi kod Çözümleyicileri ve kod oluşturucuları yazmak için .NET derleyici Platformu (Roslyn) kullanabilirsiniz. Konumundaki ihtiyaç duyduğunuz her şeyi Bul [Roslyn](https://github.com/dotnet/Roslyn).
+Kendi kod Çözümleyicileri ve kod oluşturucuları yazmak için .NET derleyici Platformu ("Roslyn") kullanabilirsiniz. Konumundaki ihtiyaç duyduğunuz her şeyi Bul [Roslyn](https://github.com/dotnet/Roslyn).
 
 Bul [varolan uzantıları](https://marketplace.visualstudio.com/vs) Visual Studio geliştirme topluluğumuz yanı sıra Microsoft geliştiriciler tarafından oluşturulmuş.
 

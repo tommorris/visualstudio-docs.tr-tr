@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +12,17 @@ helpviewer_keywords:
 - incremental builds
 - MSBuild, building incrementally
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
-caps.latest.revision: "21"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 73931a8be39933c727225d582bc4e4e35b805d7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 622daf457935514cb1f5a512712be6f70e4e648e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-build-incrementally"></a>Nasıl Yapılır: Artımlı Olarak Derleme
 Büyük bir proje oluşturduğunuzda, daha önce hala güncel bileşenleri yerleşik değil yeniden önemlidir. Her zaman tüm hedefleri oluşturulduysa, her yapı tamamlanması uzun zaman sürer. Artımlı derlemeler etkinleştirmek için (hangi derlemelerde önce oluşturulmuş değil veya hedefleyen hedeflerin güncel değil, yalnızca yeniden), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) girdi dosyaları zaman damgaları ve çıkış dosyalarının zaman damgalı karşılaştırabilirsiniz ve Atla, yapı veya kısmen hedef yeniden belirleyin. Ancak, bire bir eşleme girişleri ve çıkışları arasında olmalıdır. Bu doğrudan eşleme tanımlamak hedefleri etkinleştirmek için dönüşümler kullanabilirsiniz. Dönüşümler hakkında daha fazla bilgi için bkz: [dönüştüren](../msbuild/msbuild-transforms.md).  
@@ -39,7 +40,7 @@ Büyük bir proje oluşturduğunuzda, daha önce hala güncel bileşenleri yerle
         Outputs="hello.exe">  
     ```  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]Giriş dosyaları zaman damgaları ve çıkış dosyalarının zaman damgalı karşılaştırın ve Atla, yapı veya kısmen hedef yeniden belirleme kullanabilirsiniz. Aşağıdaki örnekte, herhangi bir dosya varsa `@(CSFile)` öğe listesi hello.exe dosyadan daha yeni [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] hedef çalışır; aksi atlanır:  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Giriş dosyaları zaman damgaları ve çıkış dosyalarının zaman damgalı karşılaştırın ve Atla, yapı veya kısmen hedef yeniden belirleme kullanabilirsiniz. Aşağıdaki örnekte, herhangi bir dosya varsa `@(CSFile)` öğe listesi hello.exe dosyadan daha yeni [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] hedef çalışır; aksi atlanır:  
   
 ```xml  
 <Target Name="Build"   

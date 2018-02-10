@@ -1,3 +1,5 @@
+---
+---
 # <a name="monitor-with-tensorboard"></a>TensorBoard izleme
 
 Model eğitimi ilerlemenizi TensorBoard ile görselleştirebilirsiniz. 

@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -30,16 +30,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), Link task
 - Link task (MSBuild (Visual C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-caps.latest.revision: "12"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e7eb9e861898c0874388f9acb4f061a8e902fef1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a5c92a6faa558445bf85637f2e51ab7fb0e7a856
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="link-task"></a>Bağlantı Görevi
 Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesne dosyası biçimi (COFF) nesne dosyaları ve kitaplıkları bir yürütülebilir dosyanın (.exe) dosyayı oluşturmak için veya bir dinamik bağlantı kitaplığı (DLL) bağlar. Daha fazla bilgi için bkz: [bağlayıcı seçenekleri](/cpp/build/reference/linker-options).  
@@ -75,7 +76,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      İsteğe bağlı **dize** parametresi.  
   
-     Komut satırında belirtilen bağlayıcı seçenekleri listesi. Örneğin, **"***/option1 /option2 /option#*". Diğer tarafından temsil edilmez bağlayıcı seçeneklerini belirtmek için bu parametreyi kullanın **bağlantı** görev parametresi.  
+     Komut satırında belirtilen bağlayıcı seçenekleri listesi. Örneğin, **"*** / seçenek 1 /option2 /option#*". Diğer tarafından temsil edilmez bağlayıcı seçeneklerini belirtmek için bu parametreyi kullanın **bağlantı** görev parametresi.  
   
      Daha fazla bilgi için bkz: [bağlayıcı seçenekleri](/cpp/build/reference/linker-options).  
   
@@ -87,7 +88,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Daha fazla bilgi için bkz: [/ASSEMBLYMODULE (derlemeye MSIL Modülü Ekle)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).  
   
--   **Allowısolatıon**  
+-   **AllowIsolation**  
   
      İsteğe bağlı **Boolean** parametresi.  
   
@@ -133,7 +134,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Bu parametre eşdeğer bağlayıcı seçeneği vardır.  
   
--   **CLRIMAGETYPE**  
+-   **CLRImageType**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -145,7 +146,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
     -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
   
-    -   **ForcePureILImage** - **/CLRIMAGETYPE: Saf**  
+    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
   
     -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
   
@@ -167,7 +168,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Daha fazla bilgi için bkz: [/CLRSUPPORTLASTERROR (korumak için son hata kodunu PInvoke çağrıları)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).  
   
--   **Clrthreadattrıbute**  
+-   **CLRThreadAttribute**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -233,7 +234,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Daha fazla bilgi için bkz: [/delaysign (derlemenin kısmen imzalayın)](/cpp/build/reference/delaysign-partially-sign-an-assembly).  
   
--   **Sürücü**  
+-   **Driver**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -241,7 +242,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Her biri için bir bağlayıcı seçeneği karşılık gelen aşağıdaki değerlerden birini belirtin.  
   
-    -   **NotSet** - *\<yok >*  
+    -   **NotSet** - *\<none>*  
   
     -   **Sürücü** - **Driver**  
   
@@ -685,9 +686,9 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **NotSet** - *\<yok >*  
+    -   **NotSet** - *\<none>*  
   
-    -   **LinkVerbose** -   **/VERBOSE**  
+    -   **LinkVerbose** - **/VERBOSE**  
   
     -   **LinkVerboseLib** - **/VERBOSE:Lib**  
   
@@ -747,7 +748,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **NotSet** - *\<yok >*  
+    -   **NotSet** - *\<none>*  
   
     -   **Konsol** - **/SUBSYSTEM:CONSOLE**  
   
@@ -817,7 +818,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **NotSet** - *\<yok >*  
+    -   **NotSet** - *\<none>*  
   
     -   **MachineARM** - **/MACHINE:ARM**  
   
@@ -837,9 +838,9 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
     -   **MachineTHUMB** - **/MACHINE:THUMB**  
   
-    -   **MachineX64** - **/MACHINE:X 64**  
+    -   **MachineX64** - **/MACHINE:X64**  
   
-    -   **MachineX86** - **/MACHINE:X 86**  
+    -   **MachineX86** - **/MACHINE:X86**  
   
      Daha fazla bilgi için bkz: [/MACHINE (hedef platformu belirtin)](/cpp/build/reference/machine-specify-target-platform).  
   
@@ -901,7 +902,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
     -   **HighestAvailable** - `level='highestAvailable'`  
   
-    -   **RequireAdministrator'a** - `level='requireAdministrator'`  
+    -   **RequireAdministrator** - `level='requireAdministrator'`  
   
      Daha fazla bilgi için bkz: `level` bağımsız değişkeni [/MANIFESTUAC (bildirimdeki UAC bilgilerini katıştırır)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).  
   

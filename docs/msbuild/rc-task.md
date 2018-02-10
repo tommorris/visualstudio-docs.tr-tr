@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,16 +22,17 @@ helpviewer_keywords:
 - RC task (MSBuild (Visual C++))
 - MSBuild (Visual C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-caps.latest.revision: "10"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5398f3eb1aa140ed53d6734734528d5c89a104c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2a785ae38f76f58c20baec6a0705d68feb9cbbf2
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="rc-task"></a>RC Görevi
 Microsoft Windows Kaynak Derleyicisi aracı sarmalar rc.exe. **RC** görev imleçler, simgeler, bit eşlemler, iletişim kutuları ve yazı tipleri gibi kaynaklar bir kaynak (.res) dosyasına derler. Daha fazla bilgi için "Kaynak derleyicisi" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
@@ -42,7 +43,7 @@ Microsoft Windows Kaynak Derleyicisi aracı sarmalar rc.exe. **RC** görev imle�
 |Parametre|Açıklama|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|İsteğe bağlı **String []** parametresi.<br /><br /> Bir dizin için dosyaları Ekle aranır dizinlerin listesi ekler.<br /><br /> Daha fazla bilgi için bkz: **/I** seçeneğini [kullanarak RC (RC komut satırı)](http://go.microsoft.com/fwlink/?LinkId=155730) MSDN Web sitesinde.|  
-|**AdditionalOptions**|İsteğe bağlı **dize** parametresi.<br /><br /> Komut satırı optionsor örnek listesini **"***/option1 /option2 /option#*". Diğer tarafından temsil edilmez komut satırı seçeneklerini belirtmek için bu parametreyi kullanın **RC** görev parametresi.<br /><br /> Seçenekler, daha fazla bilgi için bkz: [kullanarak RC (RC komut satırı)](http://go.microsoft.com/fwlink/?LinkId=155730) MSDN Web sitesinde.|  
+|**AdditionalOptions**|İsteğe bağlı **dize** parametresi.<br /><br /> Komut satırı optionsor örnek listesi **"*** / seçenek 1 /option2 /option#*". Diğer tarafından temsil edilmez komut satırı seçeneklerini belirtmek için bu parametreyi kullanın **RC** görev parametresi.<br /><br /> Seçenekler, daha fazla bilgi için bkz: [kullanarak RC (RC komut satırı)](http://go.microsoft.com/fwlink/?LinkId=155730) MSDN Web sitesinde.|  
 |**Kültür**|İsteğe bağlı **dize** parametresi.<br /><br /> Kaynakları kullanılan kültür temsil eden bir yerel ayar Kimliğini belirtir.<br /><br /> Daha fazla bilgi için bkz: **/l** seçeneğini [kullanarak RC (RC komut satırı)](http://go.microsoft.com/fwlink/?LinkId=155730) MSDN Web sitesinde.|  
 |**IgnoreStandardIncludePath**|İsteğe bağlı **Boolean** parametresi.<br /><br /> Varsa `true`, üst bilgi veya kaynak dosyaları için aradığında INCLUDE ortam değişkeni kontrol kaynak derleyicisi engeller.<br /><br /> Daha fazla bilgi için bkz: **/x** seçeneğini [kullanarak RC (RC komut satırı)](http://go.microsoft.com/fwlink/?LinkId=155730) MSDN Web sitesinde.|  
 |**NullTerminateStrings**|İsteğe bağlı **Boolean** parametresi.<br /><br /> Varsa `true`, tüm dizelerini dize tablosunda null sonlandırır.<br /><br /> Daha fazla bilgi için bkz:  **/n**  seçeneğini [kullanarak RC (RC komut satırı)](http://go.microsoft.com/fwlink/?LinkId=155730) MSDN Web sitesinde.|  

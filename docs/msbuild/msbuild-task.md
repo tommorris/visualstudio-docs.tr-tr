@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - MSBuild task [MSBuild]
 - MSBuild, MSBuild task
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
-caps.latest.revision: "32"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 264b5b379b7c3f2fa364d01260e1da825b5d64d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a5ecaef8f384a9597243fbe2026290e65295da8d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-task"></a>MSBuild Görevi
 Derlemeler [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başka projelerden [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projesi.  
@@ -65,7 +67,7 @@ Derlemeler [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 ## <a name="passing-properties-to-projects"></a>Projelere Özellikleri Geçirme  
  Sürümlerinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öncesinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] farklı geçirme 3.5, listelenen farklı projelere özelliklerini ayarlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğesi zor. Özellikler öznitelik kullandıysanız [MSBuild görevi](../msbuild/msbuild-task.md), kendi ayarı tüm, toplu sürece oluşturulan projeleri uygulandı sonra [MSBuild görevi](../msbuild/msbuild-task.md) ve koşullu farklı sağlanan Özellikler öğesi listesindeki her proje için.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]3.5, ancak, iki yeni meta veri öğeleri, Özellikler ayrılmış ve farklı özellikler farklı geçirmek için esnek bir şekilde sağlayan AdditionalProperties projeleri eklenmesini sağlar kullanılarak oluşturulan [MSBuild görevi](../msbuild/msbuild-task.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, ancak, iki yeni meta veri öğeleri, Özellikler ayrılmış ve farklı özellikler farklı geçirmek için esnek bir şekilde sağlayan AdditionalProperties projeleri eklenmesini sağlar kullanılarak oluşturulan [MSBuild görevi](../msbuild/msbuild-task.md).  
   
 > [!NOTE]
 >  Bu yeni meta veri öğeleri yalnızca projeleri özniteliğinde geçirilen öğe için geçerli olan [MSBuild görevi](../msbuild/msbuild-task.md).  

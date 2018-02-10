@@ -5,34 +5,45 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
 helpviewer_keywords:
-- code snippets, replacement parameters
-- code snippets, surround with
-- replacement parameters
-- code snippets, expansion
 - surround with
 - code snippets
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+dev_langs:
+- CSharp
+- VB
+- CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 32aded825454ce53193d488c01e3aad70d9032f8
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 514408ff2dbbde12d243a1458c380a2e17b516cc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-snippets"></a>Kod parçacıkları
 
-Kod parçacıkları, bağlam menü komutu veya kısayollarıyla birleşimini kullanarak bir kod dosyasında eklenebilir yeniden kullanılabilir kod küçük taşlarıdır. Try-finally gibi sık kullanılan kod blokları veya if-else blokları genellikle içerir, ancak tüm sınıfları veya yöntemleri eklemek için kullanılabilir.
+Kod parçacıkları, bağlam menü komutu veya kısayollarıyla birleşimini kullanarak bir kod dosyasında eklenebilir yeniden kullanılabilir kod küçük taşlarıdır. Bunlar genellikle yaygın olarak kullanılan kod blokları gibi içeren `try-finally` veya `if-else` tüm sınıfları veya yöntemleri eklemek için engeller, ancak kullanılabilir.
 
-## <a name="expansion-snippets-and-surround-with-snippets"></a>Genişletme parçacıkları ve Surround-With kod parçacıkları
+Kod parçacıkları diller, C#, C++, Visual Basic, XML ve T-SQL, birkaçıdır dahil olmak üzere çok sayıda için kullanılabilir. Tüm kullanılabilir yüklü parçacıkları bir dil için görüntülemek için açın **kod parçacıkları Yöneticisi** gelen **Araçları** Visual Studio menüsünde ve üstünde açılan menüsünden dili seçin.
+
+![Kod parçacıkları Yöneticisi iletişim kutusu](media/code-snippets-manager.png)
+
+Kod parçacıkları aşağıdaki genel yollarla erişilebilir:
+
+- Menü çubuğunda seçin **Düzenle** > **IntelliSense** > **parçacığı Ekle...**
+
+- Kod düzenleyicisinde sağ tıklatın veya bağlam menüsünden seçin **parçacığı** > **parçacığı Ekle...**
+
+- Klavyeden basın **Ctrl**+**K**+**X**
+
+## <a name="expansion-snippets-and-surround-with-snippets"></a>Genişletme parçacıkları ve surround-with kod parçacıkları
 
 Visual Studio'da kod parçacığını iki tür vardır: Belirtilen ekleme noktasına eklenir ve bir kod parçacığında kısayol değiştirebilir, genişletme parçacıkları ve seçili kod bloğunu eklenen surround-with kod parçacıkları (C# ve C++ yalnızca).
 
@@ -49,9 +60,9 @@ finally
 }
 ```
 
-Tıklatarak bu parçacığı ekleyebilirsiniz **Ekle parçacığı** kod penceresinin bağlam menüsünden **Visual C#**, yazın `tryf`ve tuşuna basın **sekmesini**, veya yazabilirsiniz `tryf` ve basın **sekmesini** iki kez.
+Tıklatarak bu parçacığı ekleyebilirsiniz **Ekle parçacığı** kod penceresinin bağlam menüsünden **Visual C#**, yazın `tryf`ve tuşuna basın **sekmesini**. Ya da yazabilirsiniz `tryf` ve basın **sekmesini** iki kez.
 
-Surround-with kod parçacığında örneği: c++ kısayol `if` ekleme parçacığını veya Çevrele kod parçası olarak kullanılabilir. Bir kod satırı seçerseniz (örneğin `return FALSE;`) ve ardından **Surround With**, ardından **varsa**, kod parçacığında satırında genişletilir:
+Surround-with kod parçacığında örneği: c++ kısayol `if` ekleme parçacığını veya Çevrele kod parçası olarak kullanılabilir. Bir kod satırı seçerseniz (örneğin `return FALSE;`) ve ardından **Surround With** > **varsa**, kod parçacığında satırında genişletilir:
 
 ```cpp
 if (true)
@@ -64,7 +75,11 @@ if (true)
 
 Kod parçacıkları yazmakta olduğunuz kesin kod uyacak şekilde değiştirmeniz gerekir yer tutucuları olan değiştirme parametreleri içerebilir. Önceki örnekte `true` uygun koşulu ile değiştirirsiniz değiştirme parametresi. Yaptığınız değişikliği parçacığında bulunan aynı değiştirme parametresi, her örneği için tekrarlanır.
 
-Örneğin, Visual Basic'te bir özellik ekler bir kod parçacığı yoktur. ' I tıklatın **Ekle parçacığı** kod penceresinin bağlam menüsünde **kod düzenleri**, sonra **özellikleri, yordamlar, olayları**, özelliği tanımlarsınız. Aşağıdaki kod eklenir:
+Örneğin, Visual Basic'te bir özellik ekler bir kod parçacığı yoktur. Kod parçacığını eklemek için seçin **parçacığı...**   >  **Ekle parçacığı** bir Visual Basic kod dosyasını sağ tıklatın veya bağlam menüsünden. Ardından, **kod düzenleri** > **özellikleri, yordamlar, olayları** > **bir özellik tanımlamak**.
+
+![Kod parçacığı menü tanımla bir özellik için](media/code-snippets-vb-property.png)
+
+Aşağıdaki kod eklenir:
 
 ```vb
 Private newPropertyValue As String
@@ -80,18 +95,12 @@ End Property
 
 Değiştirirseniz `newPropertyValue` için `m_property`, ardından her örneğinin `newPropertyValue` değiştirilir. Değiştirirseniz `String` için `Int` özelliği bildiriminde sonra ayarlama yöntemi değeri de değiştirilir `Int`.
 
-## <a name="code-snippet-manager"></a>Kod parçacığı Yöneticisi
-
-Seçerek disk üzerinde şu an yüklü olan tüm kod parçacıkları ve konumlarını görebilirsiniz **Araçları**, **kod parçacıkları Yöneticisi**. Kod parçacıkları dili tarafından görüntülenir.
-
-Kod parçacığında dizinlerle ekleyip çıkarabilirsiniz **Ekle** ve **kaldırmak** içinde düğmeleri **kod parçacıkları Yöneticisi** iletişim. Kod parçacıkları eklemek için kullanın **alma** düğmesi.
-
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzlenecek Yol: Kod Parçacığı Oluşturma](../ide/walkthrough-creating-a-code-snippet.md)  
-[Nasıl Yapılır: Kod Parçacıklarını Dağıtma](../ide/how-to-distribute-code-snippets.md)  
-[Kod Parçacıkları İçin En İyi Uygulamalar](../ide/best-practices-for-using-code-snippets.md)  
-[Kod Parçacıklarının Sorunlarını Giderme](../ide/troubleshooting-snippets.md)  
+[İzlenecek yol: kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md)  
+[Nasıl yapılır: kod parçacıklarını dağıtma](../ide/how-to-distribute-code-snippets.md)  
+[Kod parçacıkları için en iyi uygulamalar](../ide/best-practices-for-using-code-snippets.md)  
+[Kod parçacıkları sorunlarını giderme](../ide/troubleshooting-snippets.md)  
 [C# kod parçacıkları](../ide/visual-csharp-code-snippets.md)  
-[Visual C++ Kod Parçacıkları](../ide/visual-cpp-code-snippets.md)  
-[Kod Parçacıkları Şema Başvurusu](../ide/code-snippets-schema-reference.md)
+[Visual C++ kod parçacıkları](../ide/visual-cpp-code-snippets.md)  
+[Kod parçacıkları şema başvurusu](../ide/code-snippets-schema-reference.md)

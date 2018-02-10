@@ -4,22 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2aaa2426d506f9c498c4428bc0e7f4e8134ac1ab
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows Forms Tabanlı Etki Alanına Özgü Dil Oluşturma
 Windows Formları DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) modeli durumunu görüntülemek için kullanabilirsiniz. Bu konu size kılavuzluk bir Windows formunda bir DSL bağlama, kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görselleştirme ve modelleme SDK.  
   
- ![DSL &#45; WPF &#45; 2](../modeling/media/dsl-wpf-2.png "DSL Wpf 2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
 Bir Windows formu kullanıcı Arabirimi ve model Gezgini gösteren bir DSL örneği.  
   
 ## <a name="creating-a-windows-forms-dsl"></a>Bir Windows Formları DSL oluşturma  
@@ -70,7 +71,7 @@ Bir Windows formu kullanıcı Arabirimi ve model Gezgini gösteren bir DSL örne
 ## <a name="updating-the-dsl-definition"></a>DSL tanım güncelleştirme  
  Aşağıdaki DSL tanımı bu kılavuzda kullanılır.  
   
- ![DSL &#45; WPF &#45; 1](../modeling/media/dsl-wpf-1.png "DSL Wpf 1")  
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
   
 #### <a name="to-update-the-dsl-definition"></a>DSL tanımı güncelleştirmek için  
   
@@ -147,7 +148,7 @@ Bir Windows formu kullanıcı Arabirimi ve model Gezgini gösteren bir DSL örne
   
      Denetimleri kümesini görünür, her bir özellik için bir tane. İlişki özelliklerini denetimleri oluşturmaz.  
   
-5.  Silme **farmBindingNavigator**. Bu da otomatik olarak üretildi `FarmControl` Tasarımcısı, ancak bu uygulama için yararlı değildir.  
+5.  Delete **farmBindingNavigator**. Bu da otomatik olarak üretildi `FarmControl` Tasarımcısı, ancak bu uygulama için yararlı değildir.  
   
 6.  Araç kutusu kullanarak oluşturduğunuz iki örneğini **DataGridView**ve bunları `AnimalGridView` ve `FieldGridView`.  
   
@@ -304,7 +305,7 @@ Veri kaynakları ve görünümler arasında bağlantılar şema.
   
      Veri ızgara görünümünde öğesinin adını düzenlemeniz mümkün olması gerekir. Ayrıca, buradan silebilirsiniz.  
   
- ![DSL &#45; WPF &#45; 2](../modeling/media/dsl-wpf-2.png "DSL Wpf 2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
   
 ### <a name="about-the-code-to-add-an-element"></a>Bir öğe eklemek için kod hakkında  
  Yeni öğe düğmeler için aşağıdaki diğer kod biraz daha basittir.  

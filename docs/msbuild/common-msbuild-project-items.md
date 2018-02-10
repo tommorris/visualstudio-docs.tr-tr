@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -12,18 +12,20 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords: MSBuild, common project items
+helpviewer_keywords:
+- MSBuild, common project items
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
-caps.latest.revision: "17"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 772134090da6db5152ad855c1c5620f9e267b29f
-ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
+ms.workload:
+- multiple
+ms.openlocfilehash: 8f48ccd08b0891581f12c055fc12860214926d76
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="common-msbuild-project-items"></a>Yaygın MSBuild Proje Öğeleri
 İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], bir öğenin bir veya daha fazla adlandırılmış başvurusudur. Meta veri dosya adları, yolları ve sürüm numaraları gibi öğeleri içerir. Tüm türlerinde proje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çeşitli öğeleri genelde sahip. Bu öğeler Microsoft.Build.CommonTypes.xsd dosyasında tanımlanır.  
@@ -88,8 +90,8 @@ ms.lasthandoff: 01/03/2018
 |DependentUpon|İsteğe bağlı dize. Bu dosyayı doğru şekilde derlenmesi için bağımlı dosyayı belirtir.|  
 |AutoGen|İsteğe bağlı Boole değeri. Dosya için proje tarafından oluşturulup oluşturulmadığını gösterir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE).|  
 |Bağlantı|İsteğe bağlı dize. Dosyanın fiziksel olarak proje dosyası etkisi dışında bulunan görüntülenecek notational yolu.|  
-|Görünür|İsteğe bağlı Boole değeri. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|CopyToOutputDirectory|İsteğe bağlı dize. Dosyanın çıkış dizinine Kopyala edilip edilmeyeceğini belirler. Değerler şunlardır:<br /><br /> 1.  Hiçbir zaman<br />2.  Her zaman<br />3.  CopyToOutputDirectory|  
+|Visible|İsteğe bağlı Boole değeri. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|CopyToOutputDirectory|İsteğe bağlı dize. Dosyanın çıkış dizinine Kopyala edilip edilmeyeceğini belirler. Değerler şunlardır:<br /><br /> 1.  Hiçbir zaman<br />2.  Her zaman<br />3.  PreserveNewest|  
   
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Oluşturulan derlemede katıştırılmış kaynakları temsil eder.  
@@ -101,8 +103,8 @@ ms.lasthandoff: 01/03/2018
 |LastGenOutput|Gerekli dize. Bu öğe üzerinde çalışan herhangi bir dosya Oluşturucu tarafından oluşturulan dosya adı.|  
 |CustomToolNamespace|Gerekli dize. Tüm bu öğe üzerinde çalışan Oluşturucu dosya ad alanı kodu oluşturmanız gerekir.|  
 |Bağlantı|İsteğe bağlı dize. Notational yolu, dosya proje etkisi dışında fiziksel olarak bulunuyorsa görüntülenir.|  
-|Görünür|İsteğe bağlı Boole değeri. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|CopyToOutputDirectory|İsteğe bağlı dize. Dosyanın çıkış dizinine Kopyala edilip edilmeyeceğini belirler. Değerler şunlardır:<br /><br /> 1.  Hiçbir zaman<br />2.  Her zaman<br />3.  CopyToOutputDirectory|  
+|Visible|İsteğe bağlı Boole değeri. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|CopyToOutputDirectory|İsteğe bağlı dize. Dosyanın çıkış dizinine Kopyala edilip edilmeyeceğini belirler. Değerler şunlardır:<br /><br /> 1.  Hiçbir zaman<br />2.  Her zaman<br />3.  PreserveNewest|  
 |LogicalName|Gerekli dize. Katıştırılmış kaynak mantıksal adı.|  
   
 ### <a name="content"></a>İçerik  
@@ -115,10 +117,10 @@ ms.lasthandoff: 01/03/2018
 |LastGenOutput|Gerekli dize. Bu öğe üzerinde çalıştırıldığı herhangi dosya Oluşturucu tarafından oluşturulan dosya adı.|  
 |CustomToolNamespace|Gerekli dize. Tüm bu öğe üzerinde çalışan Oluşturucu dosya ad alanı kodu oluşturmanız gerekir.|  
 |Bağlantı|İsteğe bağlı dize. Dosyası projeye etkisini dışında fiziksel olarak bulunuyorsa görüntülenecek notational yolu.|  
-|PublishState|Gerekli dize. İçerik Yayımlama durumu ya da:<br /><br /> -Varsayılan<br />-Dahil<br />-Dışlanan<br />-Veri dosyası<br />-Önkoşulu|  
+|PublishState|Gerekli dize. İçerik Yayımlama durumu ya da:<br /><br /> -Varsayılan<br />-Dahil<br />-Dışlanan<br />-   DataFile<br />-Önkoşulu|  
 |IsAssembly|İsteğe bağlı Boole değeri. Dosyanın derleme olup olmadığını belirtir.|  
-|Görünür|İsteğe bağlı Boole değeri. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|CopyToOutputDirectory|İsteğe bağlı dize. Dosyanın çıkış dizinine Kopyala edilip edilmeyeceğini belirler. Değerler şunlardır:<br /><br /> 1.  Hiçbir zaman<br />2.  Her zaman<br />3.  CopyToOutputDirectory|  
+|Visible|İsteğe bağlı Boole değeri. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|CopyToOutputDirectory|İsteğe bağlı dize. Dosyanın çıkış dizinine Kopyala edilip edilmeyeceğini belirler. Değerler şunlardır:<br /><br /> 1.  Hiçbir zaman<br />2.  Her zaman<br />3.  PreserveNewest|  
   
 ### <a name="none"></a>Yok.  
  Herhangi bir rol yapı işleminde sahip olması gereken dosyaları temsil eder.  
@@ -130,8 +132,8 @@ ms.lasthandoff: 01/03/2018
 |LastGenOutput|Gerekli dize. Bu öğe üzerinde çalışan herhangi bir dosya Oluşturucu tarafından oluşturulan dosya adı.|  
 |CustomToolNamespace|Gerekli dize. Tüm bu öğe üzerinde çalışan Oluşturucu dosya ad alanı kodu oluşturmanız gerekir.|  
 |Bağlantı|İsteğe bağlı dize. Dosyası projeye etkisini dışında fiziksel olarak bulunuyorsa görüntülenecek notational yolu.|  
-|Görünür|İsteğe bağlı Boole değeri. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|CopyToOutputDirectory|İsteğe bağlı dize. Dosyanın çıkış dizinine Kopyala edilip edilmeyeceğini belirler. Değerler şunlardır:<br /><br /> 1.  Hiçbir zaman<br />2.  Her zaman<br />3.  CopyToOutputDirectory|  
+|Visible|İsteğe bağlı Boole değeri. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|CopyToOutputDirectory|İsteğe bağlı dize. Dosyanın çıkış dizinine Kopyala edilip edilmeyeceğini belirler. Değerler şunlardır:<br /><br /> 1.  Hiçbir zaman<br />2.  Her zaman<br />3.  PreserveNewest|  
   
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest  
  Yapı için temel uygulama bildirimini temsil eder ve içeren [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım güvenlik bilgileri.  

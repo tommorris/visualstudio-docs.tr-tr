@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bc8bcec7b5484ad1065539b5860bae115dcb4fd0
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: ad2bc2a049a0a96a8093289af4648f077f2d1478
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>İzlenecek yol: Özel Metin Şablonu Konağı Oluşturma
 A *metin şablonu ** konak* sağlayan bir ortam sağlar *metin şablonu dönüştürme altyapısı* çalıştırmak için. Ana bilgisayar, motorun dosya sistemiyle etkileşimini yönetmekten sorumludur. Altyapısı veya *yönerge işlemcisi* bir dosya gerekiyor veya bir derleme bir kaynak ana bilgisayardan isteyebilir. Böylece, ana bilgisayar, istenen kaynağın yerini belirlemek amacıyla dizinlerde ve genel derleme önbelleğinde arama yapabilir. Daha fazla bilgi için bkz: [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).  
@@ -49,9 +50,9 @@ A *metin şablonu ** konak* sağlayan bir ortam sağlar *metin şablonu dönüş
   
 2.  Aşağıdaki derlemelere başvurular ekleyin:  
   
-    -   **Microsoft.VisualStudio.TextTemplating. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 ve sonraki sürümler**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 and later versions**  
   
 3.  Program.cs veya Module1.vb dosyasındaki kodu aşağıdaki kodla değiştirin:  
   

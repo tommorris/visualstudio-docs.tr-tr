@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Import
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#Import
 dev_langs:
 - VB
 - CSharp
@@ -17,21 +18,22 @@ helpviewer_keywords:
 - Import element [MSBuild]
 - <Import> element [MSBuild]
 ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
-caps.latest.revision: "29"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 86c4b896944c3241f01329202696aa72bfd0f160
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1d13f376068d7f5f32a55768dbd02520152f0a30
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="import-element-msbuild"></a>İçeri Aktarma Öğesi (MSBuild)
 Bir proje dosyası içeriği başka bir proje dosyasına aktarır.  
 
- \<Proje >  
+ \<Project>  
  \<İçeri aktarma >  
 
 ## <a name="syntax"></a>Sözdizimi  
@@ -58,8 +60,8 @@ Bir proje dosyası içeriği başka bir proje dosyasına aktarır.
 
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Proje](../msbuild/project-element-msbuild.md)|Gerekli kök öğesinin bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
-|[Importgroup](../msbuild/importgroup-element.md)|Bir koleksiyonu içerir `Import` öğeleri gruplandırılmış isteğe bağlı bir koşul altında.|  
+|[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesinin bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
+|[ImportGroup](../msbuild/importgroup-element.md)|Bir koleksiyonu içerir `Import` öğeleri gruplandırılmış isteğe bağlı bir koşul altında.|  
 
 ## <a name="remarks"></a>Açıklamalar  
  Kullanarak `Import` öğesi, çok sayıda proje dosyalarına ortak olan kod yeniden. Bu paylaşılan kodunda yaptığınız tüm güncelleştirmeleri almak için tüm projeleri yayılan için kod bakımını kolaylaştırır.  

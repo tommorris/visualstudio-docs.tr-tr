@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,16 +18,17 @@ helpviewer_keywords:
 - building XBAP projects [WPF MSBuild]
 - UpdateManifestForBrowserApplication task [WPF MSBuild], parameters
 ms.assetid: 653339f7-654b-4d64-a26a-5c9f27036895
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: be3b239381b7b1f0afe0b284694ef18d851b313a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fcc1c9fe8b28b2055c73cad626cc02ef8a56aa98
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication Görevi
 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> Görev eklemek için çalıştırılır  **\<HostInBrowser / >** uygulama bildirimi öğesine (*projectname*. exe.manifest) olduğunda bir [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] projesi oluşturulur.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 |`HostInBrowser`|Gerekli **Boolean** parametresi.<br /><br /> Uygulama bildirimini içerecek biçimde değiştirmek belirtir  **\<HostInBrowser / >** öğesi. Varsa **true**, yeni bir `<` **HostInBrowser / >** öğesi dahil  **\<entryPoint / >** öğesi. Bu öğe Not ekleme toplu: varsa bir  **\<HostInBrowser / >** öğesi zaten varsa, bunun üzerine veya kaldırıldığında değil. Bunun yerine, ek bir  **\<HostInBrowser / >** öğesi oluşturulur. Varsa **yanlış**, uygulama bildirimi değiştirilemez.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)]kullanarak çalıştırmak [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] dağıtımı ve bu nedenle, gereken tarafından yayımlanan dağıtım ve uygulama bildirimleri destekleme ile. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)]kullanan [GenerateApplicationManifest](http://msdn2.microsoft.com/library/6wc2ccdc.aspx) bir uygulama bildirimi oluşturmak için görev.  
+ [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] kullanarak çalıştırmak [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] dağıtımı ve bu nedenle, gereken tarafından yayımlanan dağıtım ve uygulama bildirimleri destekleme ile. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)]kullanan [GenerateApplicationManifest](http://msdn2.microsoft.com/library/6wc2ccdc.aspx) bir uygulama bildirimi oluşturmak için görev.  
   
  Ardından, bir uygulama tarayıcıdan ek öğenin barındırılacak şekilde yapılandırmak için  **\<HostInBrowser / >** aşağıdaki örnekte Göster olarak uygulama bildirimine eklenmiş olması gerekir:  
   

@@ -4,27 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: msbuild
+helpviewer_keywords:
+- msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3db59c3cb9234231a5a5fe4f881857433ab09479
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 10c327995363b2064498f88d9ec1a02a18650970
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Tasarım Zamanında Derlemeleri Çözme
 Bir derleme başvurusu Ekle iletişim kutusunun .NET sekmesi aracılığıyla başvuru eklediğinizde, başvuru Ara başvuru bütünleştirilmiş türü ve imza tüm bilgileri içeren, ancak, mutlaka içermediğinden bir derlemeyi başka bir deyişle, gösterir. kod. .NET sekmesi, .NET Framework çalışma zamanı derlemeleri karşılık başvuru derlemeleri listeler. Ayrıca, çalışma zamanı derlemeleri üçüncü taraflar tarafından kullanılan kayıtlı AssemblyFoldersEx klasörlerde karşılık başvuru derlemeleri listeler.  
   
 ## <a name="multi-targeting"></a>Çoklu Sürüm Desteği  
- [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]Hedef üzerinde ortak dil çalışma zamanı (CLR) sürüm 2.0 ya da çalıştırmak .NET Framework sürümleri veya sürüm imkan tanıyan 4. Bu, .NET Framework sürüm 2.0, 3.0, 3.5, 4, 4.5 ve 4.5.1 ve Silverlight sürümleri 1.0, 2.0 ve 3.0 içerir. Yeni bir .NET Framework sürüm varsa CLR Version 2.0 sürümü tabanlı veya sürüm 4 yayımlanır, Framework hedefleme pack kullanılarak yüklenebilir ve onu otomatik olarak Visual Studio bir hedef olarak görünür.  
+ [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] Hedef üzerinde ortak dil çalışma zamanı (CLR) sürüm 2.0 ya da çalıştırmak .NET Framework sürümleri veya sürüm imkan tanıyan 4. Bu, .NET Framework sürüm 2.0, 3.0, 3.5, 4, 4.5 ve 4.5.1 ve Silverlight sürümleri 1.0, 2.0 ve 3.0 içerir. Yeni bir .NET Framework sürüm varsa CLR Version 2.0 sürümü tabanlı veya sürüm 4 yayımlanır, Framework hedefleme pack kullanılarak yüklenebilir ve onu otomatik olarak Visual Studio bir hedef olarak görünür.  
   
 ## <a name="how-type-resolution-works"></a>Tür Çözümlemesi Nasıl Çalışır?  
  Çalışma zamanında, bin dizinini GAC ve yoklama yollar bakarak CLR derlemesi türlerini çözümler. Bu fusion yükleyicisi tarafından işlenir. Ancak fusion yükleyicisi ne onu aradığı nasıl biliyor? Bu, uygulamanın ne zaman yerleşik tasarım zamanında yapılan bir çözüm bağlıdır.  

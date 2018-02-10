@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: dependency diagrams, adding custom validation
+helpviewer_keywords:
+- dependency diagrams, adding custom validation
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 82d65618dd510c90fa2aea95b43727787e9e727b
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7679398e5acfc2f23d51ea7f943e35d0d82e500e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Bağımlılık diyagramlarına özel mimari doğrulaması ekleme
 Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visual Studio'da katman modeli karşı bir proje kaynak kodunda kullanıcılar doğrulayabilirsiniz. Standart doğrulama algoritması yoktur, ancak kendi doğrulama uzantıları tanımlayabilirsiniz.  
@@ -78,7 +80,7 @@ Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visu
   
     2.  İçinde **ekleme yeni varlık** iletişim kutusu, ayarla:  
   
-         **Tür** = **Microsoft.VisualStudio.MefComponent**  
+         **Type** = **Microsoft.VisualStudio.MefComponent**  
   
          **Kaynak** = **geçerli çözümdeki bir proje ile**  
   
@@ -90,7 +92,7 @@ Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visu
   
     2.  İçinde **ekleme yeni varlık** iletişim kutusu, ayarla:  
   
-         **Tür** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Bu seçenekler aşağı açılan listesinde biri değil. Klavyeden girmelisiniz.  
+         **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Bu seçenekler aşağı açılan listesinde biri değil. Klavyeden girmelisiniz.  
   
          **Kaynak** = **geçerli çözümdeki bir proje ile**  
   
@@ -105,7 +107,7 @@ Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visu
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Katman modeli okuma|  
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Okuma ve şekiller ve diyagramları güncelleyebilir.|  
     |System.ComponentModel.Composition|Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak doğrulama bileşeni tanımlayın|  
-    |Microsoft.VisualStudio.Modeling.Sdk. [sürüm]|Model uzantılarını tanımlayın|  
+    |Microsoft.VisualStudio.Modeling.Sdk.[version]|Model uzantılarını tanımlayın|  
   
 6.  Kod örneği, bu konunun sonunda, doğrulama kodunu içeren için Doğrulayıcı kitaplığı projenizdeki sınıfı dosyasına kopyalayın. Daha fazla bilgi için bkz: [programlama doğrulama](#programming).  
   

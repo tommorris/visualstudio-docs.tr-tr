@@ -4,23 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-caps.latest.revision: "31"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f45cf4e58da23ffc0f0470f9d47658e75723552
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 511c0b3990471b9b1e4e8e7e6023db8920360b99
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standart ve Özel Araç Takımı Yapılandırmaları
 MSBuild araç takımı görevleri, hedefler ve bir uygulama projesi oluşturmak için kullanabileceğiniz araçları başvurular içeriyor. Standart bir araç takımı MSBuild içerir, ancak özel Toolsets de oluşturabilirsiniz. Bir araç takımı belirtme hakkında daha fazla bilgi için bkz: [araç takımı (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -33,7 +34,7 @@ MSBuild araç takımı görevleri, hedefler ve bir uygulama projesi oluşturmak 
 |2,0|*Windows yükleme yolu*\Microsoft.Net\Framework\v2.0.50727\|  
 |3.5|*Windows yükleme yolu*\Microsoft.NET\Framework\v3.5\|  
 |4.0|*Windows yükleme yolu*\Microsoft.NET\Framework\v4.0.30319\|  
-|12.0|*% ProgramFiles %*\MSBuild\12.0\bin|  
+|12.0|*%ProgramFiles%*\MSBuild\12.0\bin|  
   
  `ToolsVersion` Değerini belirleyen araç takımı tarafından kullanılan Visual Studio'nun oluşturduğu bir proje. İçinde [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] varsayılan değer "12.0" (olsun, proje dosyasında belirtilen hangi sürümü), ancak kullanarak bu özniteliği geçersiz kılabilirsiniz **/toolsversion** geçiş komut isteminde. Bu öznitelik ve belirtmek üzere diğer yöntemler hakkında bilgi için `ToolsVersion`, bkz: [ToolsVersion ayarlarını geçersiz kılma](../msbuild/overriding-toolsversion-settings.md).  
   

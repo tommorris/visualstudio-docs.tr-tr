@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,19 +13,20 @@ helpviewer_keywords:
 - task batching [MSBuild]
 - MSBuild, task batching
 ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
-caps.latest.revision: "11"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 176f44c105909935988a06f3eb928e5adfb77149
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ee203056edb24bd2338caf1ad1b5608e4c5d3ca9
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="item-metadata-in-task-batching"></a>Toplu Görev İşlemede Öğe Meta Verileri
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]öğe listelerini farklı kategorileri veya toplu işlemi bölme yeteneği, öğe meta verileri temel alarak ve bir görev her batch ile bir kez çalıştırın. Hangi öğeleri hangi batch ile tam olarak geçirilen anlamak kafa karıştırıcı olabilir. Bu konuda toplu işleme ile ilgili aşağıdaki ortak senaryolar için geçerlidir.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğe listelerini farklı kategorileri veya toplu işlemi bölme yeteneği, öğe meta verileri temel alarak ve bir görev her batch ile bir kez çalıştırın. Hangi öğeleri hangi batch ile tam olarak geçirilen anlamak kafa karıştırıcı olabilir. Bu konuda toplu işleme ile ilgili aşağıdaki ortak senaryolar için geçerlidir.  
   
 -   Bir öğe listesi yığınlara bölme  
   
@@ -84,7 +85,7 @@ ms.lasthandoff: 12/22/2017
  `Number: 3 -- Items in ExampColl: Item3;Item6`  
   
 ## <a name="dividing-several-item-lists-into-batches"></a>Birden fazla öğe bölerek yığınlara listeler  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]birden çok öğe listesi, aynı meta verileri temel alarak toplu bölebilirsiniz. Bu, farklı öğe listelerini birden çok derleme yapı yığınlara ayırmak kolaylaştırır. Örneğin, bir uygulama toplu ve bir derleme toplu ve kaynak dosyalarının bir uygulama toplu ve bir derleme toplu olarak ayrılmış bir öğe listesi bölünmüş .cs dosyaların bir öğe listesi olabilir. Bu öğe listelerini tek bir görev geçip uygulama ve derleme yapı toplu işleme sonra kullanabilirsiniz.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] birden çok öğe listesi, aynı meta verileri temel alarak toplu bölebilirsiniz. Bu, farklı öğe listelerini birden çok derleme yapı yığınlara ayırmak kolaylaştırır. Örneğin, bir uygulama toplu ve bir derleme toplu ve kaynak dosyalarının bir uygulama toplu ve bir derleme toplu olarak ayrılmış bir öğe listesi bölünmüş .cs dosyaların bir öğe listesi olabilir. Bu öğe listelerini tek bir görev geçip uygulama ve derleme yapı toplu işleme sonra kullanabilirsiniz.  
   
 > [!NOTE]
 >  Bir görev geçirilen bir öğe listesi başvurulan meta verilerle hiç öğe içeriyorsa, bu öğesi listesindeki her öğenin her toplu geçirilir.  

@@ -1,6 +1,8 @@
+---
+---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Visual Studio'da bir şablondan bir AI projesi oluşturma
 
-Seçtiğiniz sonra [AI için Visual Studio Araçları yüklü](installation.md), şablonları, çeşitli kullanarak yeni bir Python proje oluşturmak kolaydır.
+Seçtiğiniz sonra [AI için Visual Studio Araçları yüklü](installation.md), şablonları, çeşitli kullanarak yeni bir AI proje oluşturmak kolaydır.
 
 1. Visual Studio'yu başlatın.
 

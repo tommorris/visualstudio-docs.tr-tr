@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -22,19 +22,20 @@ helpviewer_keywords:
 - Otherwise Element [MSBuild]
 - When Element [MSBuild]
 ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
-caps.latest.revision: "9"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c95420accf377cc4debaae88e1290c3056b5001a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f018ec733248f6663e2cf2292599df9d2afdc81c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild Koşullu Yapıları
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]için bir mekanizma sağlar / veya işlem ile [Seç](../msbuild/choose-element-msbuild.md), [zaman](../msbuild/when-element-msbuild.md), ve [Aksi durumda](../msbuild/otherwise-element-msbuild.md) öğeleri.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] için bir mekanizma sağlar / veya işlem ile [Seç](../msbuild/choose-element-msbuild.md), [zaman](../msbuild/when-element-msbuild.md), ve [Aksi durumda](../msbuild/otherwise-element-msbuild.md) öğeleri.  
   
 ## <a name="using-the-choose-element"></a>Kullanarak öğe seç  
  `Choose` Öğesi içeren bir dizi `When` öğeleriyle `Condition` değerlendiren bir kadar sırayla üstten alta test öznitelikleri `true`. Birden fazla ise `When` öğesi hesaplar için `true`, yalnızca ilki kullanılır. Bir `Otherwise` öğesi, varsa, değerlendirilmesi üzerinde herhangi bir koşul ise bir `When` öğesi hesaplar için `true`.  

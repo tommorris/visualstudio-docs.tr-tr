@@ -4,23 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-caps.latest.revision: "59"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e12ce40375bbd4c24cde8fe3bf3e06d268aa1c20
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: f7fd044ccc50d5c988ae121a66a362158a750e17
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Uygulamaları oluşturmak için bir platformdur. Olarak da bilinen MSBuild olduğundan, bu altyapı yapı platformunu nasıl işler ve yazılım derlemeler denetleyen bir proje dosyası için bir XML Şeması sağlar. Visual Studio MSBuild kullanır, ancak Visual Studio bağımlı değil. Proje ya da çözüm dosyanızı MSBuild.exe çağırarak düzenlemek ve ürünleri, Visual Studio yüklü olmayan ortamlarda oluşturun.  
@@ -87,7 +88,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 >  Bir proje indirmeden önce kodu güvenilirliğini belirler.  
   
 ##  <a name="BKMK_ProjectFile"></a>Proje dosyası  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]kolay ve Genişletilebilir bir XML tabanlı proje dosyası biçimi kullanır. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Proje dosyası biçimi oluşturulacak olan öğeleri açıklayan geliştiriciler sağlar ve ayrıca nasıl bunlar farklı işletim sistemleri ve yapılandırmalar için oluşturulacak. Ayrıca, proje dosyası biçimi ayrı dosyalara oluşturmak ve böylece derlemeler üründeki farklı projeler arasında tutarlı bir şekilde gerçekleştirilebilir geliştiriciler Yazar yeniden kullanılabilir derleme kuralları olanak sağlar.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kolay ve Genişletilebilir bir XML tabanlı proje dosyası biçimi kullanır. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Proje dosyası biçimi oluşturulacak olan öğeleri açıklayan geliştiriciler sağlar ve ayrıca nasıl bunlar farklı işletim sistemleri ve yapılandırmalar için oluşturulacak. Ayrıca, proje dosyası biçimi ayrı dosyalara oluşturmak ve böylece derlemeler üründeki farklı projeler arasında tutarlı bir şekilde gerçekleştirilebilir geliştiriciler Yazar yeniden kullanılabilir derleme kuralları olanak sağlar.  
   
  Aşağıdaki bölümlerde bazı temel öğelerinin açıklanmaktadır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası biçimi. Temel Proje dosyasının nasıl oluşturulacağı hakkında bir öğretici için bkz: [izlenecek yol: sıfırdan MSBuild proje dosyası oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
@@ -140,7 +141,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Görev Yürütme mantığını yönetilen kodda yazılır ve eşlenmiş [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kullanarak [UsingTask](../msbuild/usingtask-element-msbuild.md) öğesi. Arabirimini uygulayan bir yönetilen türü yazarak kendi görev yazabilirsiniz <xref:Microsoft.Build.Framework.ITask> arabirimi. Görevler yazma hakkında daha fazla bilgi için bkz: [görev yazma](../msbuild/task-writing.md).  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]gereksinimlerinize uyacak şekilde değiştirebilirsiniz ortak görevleri içerir.  Örnekler [kopya](../msbuild/copy-task.md), dosyaları kopyalar [MakeDir](../msbuild/makedir-task.md), dizinleri, oluşturur ve [Csc](../msbuild/csc-task.md), Visual C# kaynak kodu dosyaları derler. Kullanım bilgileri ile birlikte kullanılabilir görevler listesi için bkz: [görev başvurusu](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] gereksinimlerinize uyacak şekilde değiştirebilirsiniz ortak görevleri içerir.  Örnekler [kopya](../msbuild/copy-task.md), dosyaları kopyalar [MakeDir](../msbuild/makedir-task.md), dizinleri, oluşturur ve [Csc](../msbuild/csc-task.md), Visual C# kaynak kodu dosyaları derler. Kullanım bilgileri ile birlikte kullanılabilir görevler listesi için bkz: [görev başvurusu](../msbuild/msbuild-task-reference.md).  
   
  Bir görev yürütülür bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bir alt öğesi olarak görev adı olan bir öğeyi oluşturarak proje dosyası bir [hedef](../msbuild/target-element-msbuild.md) öğesi. Görevleri genellikle öğesinin özniteliklerini geçirilen parametreleri kabul edin. Her ikisi de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] özellikleri ve öğeleri parametre olarak kullanılır. Örneğin, aşağıdaki çağrıları kod [MakeDir](../msbuild/makedir-task.md) görev ve değeri geçirir `BuildDir` önceki örnekte bildirildi özelliği.  
   
@@ -169,7 +170,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  Derleme hataları, uyarıları ve iletileri konsol veya başka bir çıkış aygıtı oturum açabilir. Daha fazla bilgi için bkz: [yapı günlükleri alma](../msbuild/obtaining-build-logs-with-msbuild.md) ve [Msbuild'de günlük kaydı](../msbuild/logging-in-msbuild.md).  
   
 ##  <a name="BKMK_VisualStudio"></a>Visual Studio'da MSBuild kullanma  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]kullanan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yönetilen projeleri hakkında yapılandırma bilgileri depolamak için proje dosyası biçimi. Proje eklenen veya değiştirilen kullanarak ayarları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] arabirimi yansıtılır. * oluşturulan proj dosyasını her proje için. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]barındırılan bir örneğini kullanan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yönetilen projeler derlemek için. Bir yönetilen projenin oluşturulabilir, yani [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] veya bir komut isteminde (olsa bile [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yüklü değilse), ve sonuçları aynı olacaktır.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kullanan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yönetilen projeleri hakkında yapılandırma bilgileri depolamak için proje dosyası biçimi. Proje eklenen veya değiştirilen kullanarak ayarları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] arabirimi yansıtılır. * oluşturulan proj dosyasını her proje için. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]barındırılan bir örneğini kullanan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yönetilen projeler derlemek için. Bir yönetilen projenin oluşturulabilir, yani [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] veya bir komut isteminde (olsa bile [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yüklü değilse), ve sonuçları aynı olacaktır.  
   
  Visual Studio'da MSBuild kullanma hakkında bir öğretici için bkz: [izlenecek yol: MSBuild kullanma](../msbuild/walkthrough-using-msbuild.md).  
   

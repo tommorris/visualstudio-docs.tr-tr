@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: MSBuild, Items
+helpviewer_keywords:
+- MSBuild, Items
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
-caps.latest.revision: "35"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bec7bd5420c16d291db2566e86dd47ba986cca37
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 529f8e543b7bbbffe8fdf87e3d8f3aeb985a3442
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-items"></a>MSBuild Öğeleri
 MSBuild öğeleri girdileridir yapı sisteme ve bunlar genellikle dosyaları temsil eder. Öğeleri öğesi türlerine kendi öğesi adlarına göre gruplandırılır. Öğe türleri parametre olarak görevleri için kullanılabilir öğeleri listesi olarak adlandırılır. Görev öğesi değerleri yapı işleminin adımları gerçekleştirmek için kullanın.  
@@ -55,7 +57,7 @@ MSBuild öğeleri girdileridir yapı sisteme ve bunlar genellikle dosyaları tem
   
     -   [RemoveMetadata özniteliği](#BKMK_RemoveMetadata)  
   
-    -   [KeepDuplicates özniteliği](#BKMK_KeepDuplicates)  
+    -   [KeepDuplicates Attribute](#BKMK_KeepDuplicates)  
   
 ##  <a name="BKMK_Creating1"></a>Öğeleri bir proje dosyası oluşturma  
  Öğeleri alt öğeleri proje dosyasında bildirme bir [ItemGroup](../msbuild/itemgroup-element-msbuild.md) öğesi. Öğenin türü alt öğesi adıdır. `Include` Öğesinin özniteliği bu öğe türü ile dahil edilecek öğeleri (dosyaları) belirtir. Örneğin, aşağıdaki XML adlı bir öğe türü oluşturur `Compile`, iki dosya içerir.  
@@ -315,7 +317,7 @@ Output:
 -->  
 ```  
   
-###  <a name="BKMK_KeepDuplicates"></a>KeepDuplicates özniteliği  
+###  <a name="BKMK_KeepDuplicates"></a> KeepDuplicates Attribute  
  Bir öğe içinde bir hedef oluşturulursa öğe unsuru içerebilir `KeepDuplicates` özniteliği. `KeepDuplicates`olan bir `Boolean` öğe varolan öğeyi tam bir kopyasını ise öğeyi hedef grubuna eklenmesi gerekip gerekmediğini belirten özniteliği.  
   
  Kaynak ve hedef öğe farklı meta veriler ancak aynı INCLUDE değeri varsa, öğe eklenmiş olsa bile `KeepDuplicates` ayarlanır `false`. Bu öznitelik için boş bir değer, onu belirtmeden için eşdeğerdir. `KeepDuplicates` Özniteliği, .NET Framework 4. 5 ' sunulmuştur.  

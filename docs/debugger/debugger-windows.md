@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc526231ef92fd1cacd384cd48089fa97c59320
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 0ff4b731f703d8237b338dbce821fa7e00c39e3d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Visual Studio hata ayıklayıcısı Windows hakkında bilgi edinin
-Programınızı hata ayıklarken hata ayıklayıcı pencerelerinin çoğuna açabilirsiniz. Hata ayıklayıcı windows listesini görmek için bir kesme noktası ayarlayın ve hata ayıklamayı Başlat. Kesme ve yürütme durakları isabet olduğunda tıklatın **hata ayıklama > Windows**.  
+
+Programınızı hata ayıklarken hata ayıklayıcı pencerelerinin çoğuna açabilirsiniz. Hata ayıklayıcı windows listesini görmek için bir kesme noktası ayarlayın ve hata ayıklamayı Başlat. Kesme ve yürütme durakları isabet olduğunda tıklatın **hata ayıklama > Windows**.
 
 ||||
 |-|-|-|
@@ -39,10 +40,10 @@ Programınızı hata ayıklarken hata ayıklayıcı pencerelerinin çoğuna aça
 |Paralel Yığınlar|CTR:+SHIFT+D, S|[Paralel Yığınlar penceresini kullanma](../debugger/using-the-parallel-stacks-window.md)|
 |Paralel Gözcü|CTR:+SHIFT+D, (1, 2, 3, 4)|[Alma çok iş parçacıklı uygulamalarda hata ayıklama başlatıldı](../debugger/get-started-debugging-multithreaded-apps.md)|
 |İş Parçacıkları|CTRL+ALT+H|[İş parçacıkları penceresini kullanarak hata ayıklama](../debugger/how-to-use-the-threads-window.md)|
-|Modüller|CTRL+ALT+U|[Nasıl yapılır: modüller penceresini kullanma](../debugger/how-to-use-the-modules-window.md)| 
+|Modüller|CTRL+ALT+U|[Nasıl yapılır: modüller penceresini kullanma](../debugger/how-to-use-the-modules-window.md)|
 |GPU iş parçacıkları|-|[Nasıl yapılır: GPU iş parçacıkları penceresini kullanma](../debugger/how-to-use-the-gpu-threads-window.md)|
-|Görevler|CTR:+SHIFT+D, K|[Görevleri penceresini kullanma](../debugger/using-the-tasks-window.md)| 
-|Python etkileşimli hata ayıklama|SHIFT+ALT+I|[PTVS kullanmaya Başlarken: etkileşimli Python](../python/python-interactive-repl-in-visual-studio.md)
+|Görevler|CTR:+SHIFT+D, K|[Görevleri penceresini kullanma](../debugger/using-the-tasks-window.md)|
+|Python etkileşimli hata ayıklama|SHIFT+ALT+I|[Python Interactive REPL](../python/interactive-repl.md)|
 |JavaScript Konsolu|CTRL+ALT+V, C|[Hızlı Başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM Gezgini|CTRL+ALT+V, D|[DOM Gezgini'ni kullanarak Düzen hatalarını ayıklama](../debugger/debug-layout-using-dom-explorer.md)|
 |Canlı görsel ağaç|-|[Hata ayıklama sırasında XAML özelliklerini denetleme](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -52,5 +53,6 @@ Programınızı hata ayıklarken hata ayıklayıcı pencerelerinin çoğuna aça
 |Ayrıştırılmış kodu|CTRL+ALT+D|[Nasıl yapılır: Ayrıştırılmış kod penceresini kullanma](../debugger/how-to-use-the-disassembly-window.md)|
 |Kaydeder|CTRL+ALT+G|[Nasıl yapılır: yazmaçlar penceresini kullanma](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)

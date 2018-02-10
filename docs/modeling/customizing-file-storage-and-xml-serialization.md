@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.xmlbehavior
-helpviewer_keywords: Domain-Specific Language, serialization
+f1_keywords:
+- vs.dsltools.dsldesigner.xmlbehavior
+helpviewer_keywords:
+- Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ca481ef5f0994b88cc1eafd37815c07977b007cf
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: a15a331d465c2450f0f1e6230eac3415106e860b
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dosya Depolamayı ve XML Serileştirmeyi Özelleştirme
 Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına özgü dil (DSL) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], bir XML dosyası oluşturulmuş veya güncelleştirilmiş. Dosya depolama modelinde yeniden oluşturmak için yeniden.  
@@ -297,7 +300,7 @@ Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
-|Özel takma sahip|Bu oluşturmak ve bu ilişkinin çapraz takma ad çözme için kendi kodunuzu sağlamak istiyorsanız, true olarak ayarlayın.<br /><br /> Ayrıntılı yönergeler için çözümü derleme ve hata iletileri çift tıklayın.|  
+|Has Custom Moniker|Bu oluşturmak ve bu ilişkinin çapraz takma ad çözme için kendi kodunuzu sağlamak istiyorsanız, true olarak ayarlayın.<br /><br /> Ayrıntılı yönergeler için çözümü derleme ve hata iletileri çift tıklayın.|  
 |Etki alanı ilişkisi|Bu seçenekler uygulandığı ilişki belirtir. Salt okunur.|  
 |Öğe atlayın|TRUE ise, kaynak role karşılık gelen XML düğümü şemadan atlanır.<br /><br /> Kaynak ve hedef sınıflarını arasında birden fazla ilişki varsa, bu rolü düğüm iki ilişki ait bağlantıları arasında ayırır. Bu nedenle, bu seçenek bu durumda ayarlamayın öneririz.|  
 |Rol öğe adı|Kaynak rolünden türetilmiş XML öğesi adını belirtir. Rol özellik adı varsayılan değerdir.|  

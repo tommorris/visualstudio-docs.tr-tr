@@ -1,3 +1,5 @@
+---
+---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Visual Studio'da Python kodu bir depoyu kopyalayın
 
 Seçtiğiniz sonra [AI için Visual Studio Araçları yüklü](installation.md), kolayca depoyu Python kodu kopyalayın ve bir proje oluşturun.

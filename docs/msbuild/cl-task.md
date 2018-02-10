@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -21,16 +21,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), CL task
 - CL task (MSBuild (Visual C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-caps.latest.revision: "18"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ffd317643b7ea1bfbf97bce6d533a76fd7bf1509
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5b5609ac97d9322ddf4af5bc5638212a3ccfd045
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cl-task"></a>CL Görevi
 Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanın (.exe) dosyaları, dinamik bağlantı kitaplığı (.dll) dosyaları ya da kod Modülü (.netmodule) dosyaları oluşturur. Daha fazla bilgi için bkz: [derleyici seçenekleri](/cpp/build/reference/compiler-options).  
@@ -166,7 +167,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
     -   **Varsayılan** - *\<yok >*  
   
-    -   **CompileAsC** - **TP**  
+    -   **CompileAsC** - **/TC**  
   
     -   **CompileAsCpp** - **/TP**  
   
@@ -180,13 +181,13 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **yanlış** - *\<yok >*  
+    -   **false** - *\<none>*  
   
     -   **doğru** -   **/CLR**  
   
-    -   **Saf** -   **/CLR: pure**  
+    -   **Pure** - **/clr:pure**  
   
-    -   **Güvenli** -   **/CLR: safe**  
+    -   **Safe** - **/clr:safe**  
   
     -   **OldSyntax** - **/clr:oldSyntax**  
   
@@ -208,11 +209,11 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **Eski stil** - **/Z7**  
+    -   **OldStyle** - **/Z7**  
   
     -   **ProgramDatabase** -   **/zi**  
   
-    -   **EditAndContinue** -   **/zi**  
+    -   **EditAndContinue** - **/ZI**  
   
      Daha fazla bilgi için bkz: [/Z7, / zi, /zı (hata ayıklama bilgileri biçimi)](/cpp/build/reference/z7-zi-zi-debug-information-format).  
   
@@ -270,13 +271,13 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **Hiçbiri** -   **/errorreport: yok**  
+    -   **None** - **/errorReport:none**  
   
-    -   **İstemi** - **/errorReport:prompt**  
+    -   **Prompt** - **/errorReport:prompt**  
   
-    -   **Sıra** - **/errorReport:queue**  
+    -   **Queue** - **/errorReport:queue**  
   
-    -   **Gönderme** - **/errorReport:send**  
+    -   **Send** - **/errorReport:send**  
   
      Daha fazla bilgi için bkz: [/errorreport (dahili derleme hatalarını raporla)](/cpp/build/reference/errorreport-report-internal-compiler-errors).  
   
@@ -288,7 +289,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **yanlış** - *\<yok >*  
+    -   **false** - *\<none>*  
   
     -   **Zaman uyumsuz** - **/EHa**  
   
@@ -338,11 +339,11 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **Kesin** - **/fp: kesin**  
+    -   **Precise** - **/fp:precise**  
   
-    -   **Katı** - **/fp: katı**  
+    -   **Strict** - **/fp:strict**  
   
-    -   **Hızlı** - **/fp:fast**  
+    -   **Fast** - **/fp:fast**  
   
      Daha fazla bilgi için bkz: [/fp (Floating-Point davranış belirtin)](/cpp/build/reference/fp-specify-floating-point-behavior).  
   
@@ -486,7 +487,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
     -   **MinSpace** - **/O1**  
   
-    -   **MaxSpeed** - **O2**  
+    -   **MaxSpeed** - **/O2**  
   
     -   **Tam** - **/Ox**  
   
@@ -502,7 +503,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
     -   **NotUsing** - *\<yok >*  
   
-    -   **Oluşturma** - **/Yc**  
+    -   **Create** - **/Yc**  
   
     -   **Kullanım** - **/Yu**  
   
@@ -610,7 +611,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
      Daha fazla bilgi için bkz: [/GR (çalışma zamanı türü bilgileri etkinleştir)](/cpp/build/reference/gr-enable-run-time-type-information).  
   
--   **Showıncludes**  
+-   **ShowIncludes**  
   
      İsteğe bağlı `Boolean` parametresi.  
   
@@ -754,7 +755,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
     -   **EnableAllWarnings** -   **/duvar**  
   
-     Daha fazla bilgi için bkz: **/W**  *n*  seçeneğini [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, wln, /wd, / biz, /wo, /Wv, /WX (uyarı düzeyi)](/cpp/build/reference/compiler-option-warning-level).  
+     Daha fazla bilgi için bkz: **/W *** n* seçeneğini [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, wln, /wd, / biz, /wo, /Wv, /WX (uyarı düzeyi)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **WholeProgramOptimization**  
   

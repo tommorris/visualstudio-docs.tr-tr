@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: text templates, accessing models
+helpviewer_keywords:
+- text templates, accessing models
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b1d338c62a6241a0ae77d22c7712ee7449aa5973
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>Metin Şablonlarından Modellere Erişme
 Metin şablonları kullanarak raporu dosyalarını, kaynak kodu dosyaları ve etki alanına özgü dil modellerinde bağlı diğer metin dosyaları oluşturabilirsiniz. Metin şablonları hakkında temel bilgiler için bkz: [kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md). Metin şablonları, DSL ayıklarken Deneysel modunda çalışır ve DSL dağıtmış olan bir bilgisayarda da çalışır.  

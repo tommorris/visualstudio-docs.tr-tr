@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 571cc5ffc3637ecdca54cda74fd6aa20983fdab6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 520cd9eacf494ac1d8f8e26a7e1ef51581a49956
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü Sistem Gereksinimleri
 Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürümler için sanallaştırma teknolojisi sanal makine olarak çalışır. Öykünücü çalıştırmak için bilgisayarınızı bu konu başlığı altında açıklandığı gibi Hyper-V çalıştırmak için gereksinimleri karşılaması gerekir.  
@@ -143,13 +144,13 @@ Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürü
 ##  <a name="Files"></a>Şifrelenmemiş ve sıkıştırılmamış dosyaları Hyper-V gerektirir  
  Bir sabit sürücüde NTFS dosya sistemi ile yapılandırılmış Hyper-V tarafından kullanılan sanal sabit disk dosyalarını sıkıştırılmamış şifrelenmemiş ve gerekir. Aşağıdaki dizinleri sıkıştırılmış veya şifrelenmiş değil, emin olun:  
   
--   %LocalAppData%\Microsoft\XDE  
+-   %localappdata%\Microsoft\XDE  
   
--   C:\Program dosyaları (x86) \Microsoft öykünücüsü yöneticisi  
+-   C:\Program Files (x86)\Microsoft Emulator Manager  
   
--   Android için C:\Program dosyaları (x86) \Microsoft Visual Studio öykünücüsü  
+-   C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
   
--   %LocalAppData%\Microsoft\VisualStudioEmulator  
+-   %localappdata%\Microsoft\VisualStudioEmulator  
   
  ReFS dosya sisteminde, sanal sabit disk dosyalarını bit bütünlüğü kümesi olmamalıdır.  
   

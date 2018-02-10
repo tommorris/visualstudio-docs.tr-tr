@@ -1,27 +1,27 @@
 ---
 title: "Visual Studio'da Python ortamları yönetme | Microsoft Docs"
-description: "Genel yönetmek için Visual Studio ve Python yorumlayıcılar yükleme, paketleri yükleme, arama yolları ayarlama ve ortamlar için Visual Studio Projeleri Yönetme özel ortamları ayarlama sanal envrionments Python ortamları penceresini kullanma"
+description: "Genel yönetmek için Visual Studio ve Python yorumlayıcılar yükleme, paketleri yükleme, arama yolları ayarlama ve ortamlar için Visual Studio Projeleri Yönetme özel ortamları ayarlama sanal ortamlar Python ortamları penceresini kullanma"
 ms.custom: 
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 40f901c65872fe593457883c36f0d60bf7e2fd8a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="python-environments"></a>Python ortamları
 
@@ -70,13 +70,13 @@ Yeni formlar algılama Python ortamları için sağlamak istediğiniz geliştiri
 
 Python ortamları penceresini açmak için seçin **Görünüm > Diğer Pencereler > Python ortamları** menü komutu ya da sağ tıklatma **Python ortamları** düğümü için Çözüm Gezgini'nde projeye ve seçin **görünümü tüm Python ortamları**:
 
-    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
+![Çözüm Gezgini'nde görünümü tüm ortamlar komutu](media/environments-view-all.png)
 
 Her iki durumda da, Python ortamları penceresi Çözüm Gezgini eşdüzey sekmeye gibi görünür:
 
 ![Python ortamları penceresi](media/environments-default-view.png)
 
-Yukarıdaki örnekte, Python 3.4 (32-bit CPython) IronPython 2.7 32 bit ve 64 bit sürümleri ile birlikte yüklendiğini gösterir. Tüm yeni projeler için kullanılan Python 3.4 kalın olarak varsayılan ortamıdır. Python araçları Visual Studio için Visual Studio 2015 veya önceki yüklediniz, ancak bir Python yorumlayıcısı yüklemediniz listelenen ortamları görmüyorsanız, anlama (bkz [seçme ve Python yorumlayıcılar yükleme](#selecting-and-installing-python-interpreters) yukarıda). **+ Özel...**  komutu sağlar [bir ortam oluşturmak için varolan bir yorumlayıcı](#create-an-environment-for-an-existing-interpreter).
+Yukarıdaki örnekte, Python 3.4 (32-bit CPython) IronPython 2.7 32 bit ve 64 bit sürümleri ile birlikte yüklendiğini gösterir. Tüm yeni projeler için kullanılan Python 3.4 kalın olarak varsayılan ortamıdır. Python araçları Visual Studio için Visual Studio 2015 veya önceki yüklediniz, ancak bir Python yorumlayıcısı yüklemediniz listelenen ortamları görmüyorsanız, anlama (bkz [seçme ve Python yorumlayıcılar yükleme](#selecting-and-installing-python-interpreters) yukarıda). **+ Özel...**  komutu sağlar [bir ortam oluşturmak için varolan bir yorumlayıcı](#creating-an-environment-for-an-existing-interpreter).
 
 Listelenen her ortam sağındaki bu ortam için etkileşimli bir pencere açılır bir denetimdir. Başka bir denetim bu ortam için IntelliSense veritabanı yenileyen görünebilir.
 

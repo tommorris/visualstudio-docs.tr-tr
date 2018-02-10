@@ -1,3 +1,5 @@
+---
+---
 # <a name="create-an-ai-project-from-existing-code"></a>Var olan koddan AI projesi oluşturma
 
 Seçtiğiniz sonra [AI için Visual Studio Araçları yüklü](installation.md), var olan Python kodu bir Visual Studio projeye Getir kolaydır.

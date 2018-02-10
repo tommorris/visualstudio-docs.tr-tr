@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: get-started-article
 helpviewer_keywords:
 - Visual Studio Ultimate, visualizing code
@@ -18,12 +17,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f9ff795b745119339d2800d8b30bfb7a71b1b61e
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: dcb9b1b292b35ef08d40cb24525a7d7a0d0ce597
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma
 Kod haritaları büyük kod temelleri, tanınmayan kod veya eski kod kayıp önlemenize yardımcı olabilir. Örneğin, hatalarını ayıkladığınız, çok sayıda dosya ve projeleri koduna bakmanız gerekebilir. Kod parçalarını gidin ve aralarındaki ilişkilerin anlamak için kod haritalarını kullanma. Böylece, bu kodu, head, izlemek ya da ayrı bir diyagramı gerekmez. Bu nedenle, çalışmanızı kesintiye uğradığında oluşan kod, bellek, üzerinde çalıştığınız kodu hakkında Yardım yenileme eşler.  

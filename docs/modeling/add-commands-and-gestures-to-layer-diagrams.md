@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f580c81d63adb2ca474f8ea9f250f48a61da928a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 5a8f1a2ff8e5ffc95d885b847a17e6cc16965837
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Bağımlılık diyagramlarına komut ve hareket ekleme
 Visual Studio'da bağımlılık diyagramları işleyicileri hareket ve bağlam menüsü komutları tanımlayın. Bu uzantılar içine bir Visual Studio Tümleştirme Uzantısı (diğer Visual Studio kullanıcılara dağıtabileceğiniz VSIX) paketleyebilirsiniz.  
@@ -87,12 +88,12 @@ Visual Studio'da bağımlılık diyagramları işleyicileri hareket ve bağlam m
   
 |**Başvuru**|**Ne bu yapmanıza izin verir**|  
 |-------------------|------------------------------------|  
-|Program Files\Microsoft Visual Studio [sürüm] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Oluşturma ve düzenleme katmanları|  
+|Program Files\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Oluşturma ve düzenleme katmanları|  
 |Microsoft.VisualStudio.Uml.Interfaces|Oluşturma ve düzenleme katmanları|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Diyagramdaki şekilleri değiştirin|  
 |System.ComponentModel.Composition|Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak bileşenleri tanımlayın|  
-|Microsoft.VisualStudio.Modeling.Sdk. [sürüm]|Model uzantılarını tanımlayın|  
-|Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [sürüm]|Şekilleri Güncelleştirme ve diyagramları|  
+|Microsoft.VisualStudio.Modeling.Sdk.[version]|Model uzantılarını tanımlayın|  
+|Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|Şekilleri Güncelleştirme ve diyagramları|  
   
 1.  Uzantınızı kodunu içerecek şekilde C# projesinde sınıf kitaplığı sınıfı dosyasını düzenleyin. Daha fazla bilgi için aşağıdaki bölümlerden birine bakın:  
   

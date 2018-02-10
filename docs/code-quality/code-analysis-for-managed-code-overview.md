@@ -7,19 +7,21 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.projectpropertypages.codeanalysis
+f1_keywords:
+- vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
 - code analysis, managed code
 - managed code, code analysis
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 8739c5aafbc8914e3de5f0a51659b40234fa079c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Yönetilen kod genel bakış için Kod Analizi
 
@@ -39,11 +41,11 @@ Kod çözümleme el ile bir proje üzerinde çalıştırmak için menü çubuğu
 
 Yönetilen kod için Kod Analizi kurallarını halinde gruplandırılır *kural kümeleri*. Microsoft Standart kural kümeleri birini kullanabilir veya belirli bir gereksinimi karşılamak için özel bir kural oluşturabilirsiniz. Daha fazla bilgi için bkz: [kod çözümleme kurallarını gruplandırmak için kural kümeleri kullanma](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).
 
-## <a name="in-source-suppression"></a>Kaynak gizleme
+## <a name="suppress-warnings"></a>Uyarıları bastırma
 
 Genellikle, bir uyarı uygulanabilir olmayan olduğunu belirtmek kullanışlıdır. Bu Geliştirici ve daha sonra kodu gözden geçirebilirsiniz diğer kişilerin bir uyarı araştırılan ve sonra da gizlenen veya yoksayıldı olduğunu bildirir.
 
-Kaynağındaki uyarı gizleme özel öznitelikler uygulanır. Bir uyarıyı gizlemek için öznitelik Ekle `SuppressMessage` aşağıdaki örnekte gösterildiği gibi kaynak koduna:
+Kaynak gizleme uyarılar özel özniteliklere uygulanır. Bir uyarıyı gizlemek için öznitelik Ekle `SuppressMessage` aşağıdaki örnekte gösterildiği gibi kaynak koduna:
 
 ```csharp
 [System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
@@ -53,7 +55,10 @@ Public class MyClass
 }
 ```
 
-Daha fazla bilgi için bkz: [bastırmak uyarıları kullanarak SuppressMessage özniteliğini](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).
+Daha fazla bilgi için bkz: [uyarıları bastırma](../code-quality/in-source-suppression-overview.md).
+
+> [!NOTE]
+> Bir proje için Visual Studio 2017 geçirirseniz, aniden zorlamayı bir kod çözümleme uyarıları sayısıyla karşılaştığı. Uyarıları gidermek ve Kod Analizi geçici olarak devre dışı istediğiniz hazır değilseniz, proje özellik sayfalarını açın (**proje** > ***proje* özellikler...** ) ve Git **Kod Analizi** sekmesi. Seçimini **etkinleştirmek Kod Analizi derlemede**ve projenizi yeniden derleyin. Alternatif olarak, farklı, daha küçük kural kodu çalıştırmak için kümesini seçebilirsiniz. Kod çözümleme uyarıları gidermek hazır olduğunuzda geri üzerinde açmayı unutmayın.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Kod çözümleme iade ilkesi bir parçası olarak çalıştır
 

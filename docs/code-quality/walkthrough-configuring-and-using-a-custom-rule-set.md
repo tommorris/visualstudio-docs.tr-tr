@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: b72a86f10c6e864406929fdccfb59bdd9393752e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>İzlenecek Yol: Özel bir Kural Kümesini Yapılandırma ve Kullanma
 
@@ -106,7 +106,7 @@ Bu kılavuzda, bu işlemler adım:
   
 2.  Hata Listesi penceresini tıklatın **uyarıları** ve ardından **açıklama** uyarılar sıralamak için sütun başlığını alfasayısal olarak.  
   
-     Gerçek dünya uygulamada, bu noktada, düzeltme değerinde herhangi kuralı ihlallerini düzeltmek veya isteğe bağlı olarak kapatmak veya onu düzelttikten değerinde olmadığını belirlediyseniz, bir kural bastır. Daha fazla bilgi için bkz: [bastırmak uyarıları kullanarak SuppressMessage özniteliğini](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+     Gerçek dünya uygulamada, bu noktada, düzeltme değerinde herhangi kuralı ihlallerini düzeltmek veya isteğe bağlı olarak kapatmak veya onu düzelttikten değerinde olmadığını belirlediyseniz, bir kural bastır. Daha fazla bilgi için bkz: [uyarıları bastırma](../code-quality/in-source-suppression-overview.md).
   
 3.  CA1704 uyarılar dikkat edin. Bu kural üzerinde bu ihlalleri, "parametreleri için daha anlamlı bir ad sağlama düşünmelisiniz olduğunu." belirtin Kodunuzda sorunu düzeltin veya, kural bir sonraki yordamda açıklandığı gibi devre dışı bırakabilirsiniz.  
   

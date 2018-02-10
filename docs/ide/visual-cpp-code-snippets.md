@@ -10,12 +10,15 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b71242bfd0744b2b2dc8c5561b87ab893fb81a9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2a8b1c99d1b084a6f8d3c050302e16ea40d64ac
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ kod parçacıkları
 
@@ -31,7 +34,7 @@ Kod parçacığı eklemek için (.cpp veya .h) C++ kod dosyasını açın ve her
 
 - İçinde **Düzenle / IntelliSense** menüsünde, select **parçacığı Ekle**
 
-- Kısayol tuşlarını kullanın: **CTRL + K + X**
+- Kısayol tuşlarını kullanın: **Ctrl**+**K**+**X**
 
 İtibaren tercih listesi görmelisiniz **#if**. Seçtiğinizde, **#if**, dosyasına eklenen aşağıdaki kodu görmeniz gerekir:
 
@@ -47,11 +50,11 @@ Kod parçacığı eklemek için (.cpp veya .h) C++ kod dosyasını açın ve her
 
 Seçili kod surround için bir kod parçacığı kullanmak için bir satırı (veya birden çok satır) seçin ve aşağıdakilerden birini yapın:
 
-1. Bağlam menüsü alma ve seçmek için sağ **Surround With**
+- Bağlam menüsü almak için sağ tıklatın ve seçin **Surround With**
 
-2. İçinde **Düzenle / IntelliSense** menüsünde, select **Surround With**
+- Gelen **Düzenle** > **IntelliSense** menüsünde, select **Surround With**
 
-3. Kısayol tuşlarını kullanın: **CTRL + K + S**
+- Klavyeyi kullanarak tuşuna basın: **CTRL**+**K**+**S**
 
 Seçin **#if**. Şöyle bir şey görmeniz gerekir:
 

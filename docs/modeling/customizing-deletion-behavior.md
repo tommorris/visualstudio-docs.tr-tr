@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.deletebehavior
-helpviewer_keywords: Domain-Specific Language, deletion
+f1_keywords:
+- vs.dsltools.dsldesigner.deletebehavior
+helpviewer_keywords:
+- Domain-Specific Language, deletion
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c51c44d47f24994e75ca91b4f4d8d7f2c9a805a6
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Silme Davranışını Özelleştirme
 Bir öğe genellikle silinmesi, ilgili öğeler de silinecek neden olur. Tüm ilişkiler ona bağlı ve herhangi bir alt öğe silindi. Bu davranış adlı *yayma silme*. Örneğin ek ilgili öğeler silinir düzenlemek silme yayma özelleştirebilirsiniz. Program kodunda yazarak delete yayma model durumuna bağlıdır yapabilirsiniz. Bir silme işlemi için yanıt gerçekleşmesi diğer değişiklikler de neden olabilir.  
@@ -285,7 +288,7 @@ partial class NestedShapesSampleDocData
   
 ```  
   
-##  <a name="unmerge"></a>Bölme  
+##  <a name="unmerge"></a> UnMerge  
  Bir alt öğesi kendi üst iliştirir işlemi çağrıldı *birleştirme*. Yeni bir öğe olduğunda oluşur veya öğeleri grubunu araç kutusu'ndan oluşturulan veya başka bir modelin parçası taşınmış veya Pano'dan kopyalanır. Üst ve yeni alt arasında katıştırma bir ilişki oluşturma yanı sıra, birleştirme işlemi ayrıca ek ilişkileri ayarlamanız, yardımcı öğeleri oluşturun ve öğeleri özellik değerlerini ayarlar. Birleştirme işlemi, bir öğenin birleştirme yönergesi (EMD) kapsüllenir.  
   
  Bir EMD de tamamlayıcı yalıtır *Çöz* veya `MergeDisconnect` işlemi. Bir birleştirme kullanılarak oluşturulan bir küme öğe varsa, ilişkili kullanmak için önerilir bu sınıftan bir öğeyi kaldırmak için kalan öğeleri tutarlı bir durumda bırakır istiyorsanız Çöz. Birleştirme işlemi genellikle önceki bölümlerde açıklanan teknikleri kullanır.  

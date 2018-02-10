@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio'da SuppressMessage özniteliğini kullanarak kod analizi uyarıları gizleme | Microsoft Docs"
+title: "Visual Studio'da kod çözümleme uyarılarını bastırma | Microsoft Docs"
 ms.custom: 
 ms.date: 01/29/2018
 ms.reviewer: 
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cd3800e082673e9478eb32c6ae5627eef4d7e81
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="suppressing-code-analysis-warnings"></a>Kod çözümleme uyarıları gizleme
 
@@ -34,6 +34,9 @@ C + +/ CLI, CA makroları kullanmak\_BASTIR\_ileti veya CA\_genel\_öznitelik ek
 
 > [!NOTE]
 > Kaynak suppressions yayın derlemeleri üzerinde kaynak gizleme meta verileri yanlışlıkla sevkiyat önlemek için kullanmamanız gerekir. Ayrıca, kaynak gizleme işleme maliyetini nedeniyle, uygulamanızın performansı düşebilir.
+
+> [!NOTE]
+> Bir proje için Visual Studio 2017 geçirirseniz, aniden zorlamayı bir kod çözümleme uyarıları sayısıyla karşılaştığı. Uyarıları gidermek ve Kod Analizi geçici olarak devre dışı istediğiniz hazır değilseniz, proje özellik sayfalarını açın (**proje** > ***proje* özellikler...** ) ve Git **Kod Analizi** sekmesi. Seçimini **etkinleştirmek Kod Analizi derlemede**ve projenizi yeniden derleyin. Alternatif olarak, farklı, daha küçük kural kodu çalıştırmak için kümesini seçebilirsiniz. Kod çözümleme uyarıları gidermek hazır olduğunuzda geri üzerinde açmayı unutmayın.
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage özniteliği
 
@@ -95,7 +98,7 @@ Bakım nedeniyle, kural adı atlama önerilmez.
 
 Gizleme öznitelikler için bir yöntem uygulanabilir, ancak bir yöntem gövdesinde katıştırılmış. Bu, eklerseniz, belirli bir kural tüm ihlalleri bastırılan anlamına gelir <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği yöntemi.
 
-Bazı durumlarda, böylece gelecekteki kod Kod Analizi kural dışında otomatik olarak muafiyet değil ihlali, örneğin belirli bir örneği bastırmak isteyebilirsiniz. Belirli kod çözümleme kurallarını kullanarak bunu izin `MessageId` özelliğinin <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği. Genel olarak, belirli simgesi (yerel değişken veya parametre) saygı üzerinde ihlalleri için eski kuralları `MessageId` özelliği. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) is an example of such a rule. Ancak, eski kuralları yürütülebilir kod (symbol olmayan) üzerinde ihlalleri için saygı `MessageId` özelliği. Ayrıca, Roslyn çözümleyiciler saygı `MessageId` özelliği.
+Bazı durumlarda, böylece gelecekteki kod Kod Analizi kural dışında otomatik olarak muafiyet değil ihlali, örneğin belirli bir örneği bastırmak isteyebilirsiniz. Belirli kod çözümleme kurallarını kullanarak bunu izin `MessageId` özelliğinin <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği. Genel olarak, belirli simgesi (yerel değişken veya parametre) saygı üzerinde ihlalleri için eski kuralları `MessageId` özelliği. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) is an example of such a rule. Ancak, eski kuralları yürütülebilir kod (symbol olmayan) üzerinde ihlalleri için saygı `MessageId` özelliği. Ayrıca, .NET derleme Platformu ("Roslyn") çözümleyiciler saygı `MessageId` özelliği.
 
 Bir kural belirli sembol ihlal gizlemek için sembol adını belirtin `MessageId` özelliğinin <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği. Aşağıdaki örnek, iki ihlalleri koduyla gösterir [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;için bir tane `name` değişkeni, diğeri de `age` değişkeni. Yalnızca ihlali için `age` simgesi geçersiz kılınır.
 

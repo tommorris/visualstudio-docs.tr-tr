@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: msbuild, incremental builds
+helpviewer_keywords:
+- msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1238748b07d820a045e440e8d130bf9423668854
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ee1e8a136937b1291950a9df71b93a1e5c90f8c2
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="incremental-builds"></a>Artımlı Derlemeler
 Artımlı derlemeler en iyi duruma getirilir ve böylece ilgili giriş dosyalarına göre güncel çıkış dosyalarınız hedefleri yürütülmez derlemeleri ' dir. Hedef öğe hem de sahip olabilir bir `Inputs` hangi hedef öğeler belirten özniteliği giriş olarak bekliyor ve bir `Outputs` hangi üretir çıkış olarak öğeler belirten özniteliği. MSBuild, bu öznitelik değerleri 1-1 eşlemesini bulmaya çalışır. 1-1 eşleme varsa, MSBuild giriş her zaman damgasını öğesine karşılık gelen kendi çıktı öğenin zaman damgasını karşılaştırır. 1-1 eşleme çıkış dosyaları için tüm giriş dosyaları karşılaştırılır. Kendi çıktı dosyasını aynı yaş ise güncel ya da kendi giriş dosya veya dosyalar daha yeni bir öğe olarak kabul edilir.  

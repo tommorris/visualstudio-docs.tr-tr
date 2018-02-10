@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - MSBuild, GenerateDeploymentManifest task
 - GenerateDeploymentManifest task [MSBuild]
 ms.assetid: 0734ebda-734d-49c4-9642-8d9d919d45fd
-caps.latest.revision: "27"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1dc0d1af8c79fe95ea091ac691519653b59a9648
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: dbb673b263cc7cf4931a07b968a763faf057fad4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest Görevi
 Oluşturan bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bildirimi. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , tanımlayıcı dağıtım özellikleri yükleme veya uygulama belirtme çevrimiçi moda gibi ayarları ve güncelleştirme konumları, dağıtım bildirimi dağıtımı için benzersiz bir kimlik tanımlayarak bir uygulamanın dağıtımı açıklanır ve karşılık gelen belirten [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi.  
@@ -42,7 +44,7 @@ Oluşturan bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 |`DeploymentUrl`|İsteğe bağlı `String` parametresi.<br /><br /> Uygulama için güncelleştirme konumunu belirtir. Bu parametre belirtilmezse, hiçbir güncelleştirme konumu uygulama için tanımlanır. Ancak, varsa `UpdateEnabled` parametresi `true`, güncelleştirme konumu belirtilmelidir. Belirtilen değeri tam bir URL veya UNC yolu olmalıdır.|  
 |`Description`|İsteğe bağlı `String` parametresi.<br /><br /> Uygulama için isteğe bağlı bir açıklama belirtir.|  
 |`DisallowUrlActivation`|İsteğe bağlı `Boolean` parametresi.<br /><br /> URL yoluyla açıldığında uygulama otomatik olarak çalıştırılıp çalıştırılmayacağını belirtir. Bu parametre ise `true`, uygulamanın yalnızca Başlat menüsünden başlatılabilir. Bu parametrenin varsayılan değeri `false`. Yalnızca bu girişi geçerlidir `Install` parametre değeri `true`.|  
-|`EntryPoint`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Giriş noktası için oluşturulan bildirim derleme gösterir. İçin bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bildirimi, bu girişi belirtir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi.<br /><br /> İçinde [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)], [GenerateApplicationManifest görevi](../msbuild/generateapplicationmanifest-task.md) gerekli bir `EntryPoint` bir uygulama bildirimi oluşturmak için. (Derleme veya yerel bildirimleri gerektirmez bir `EntryPoint`.) Bu gereksinim derleme hatası ile zorlanan: "MSB3185: EntryPoint yönelik bildirim belirtilmedi."<br /><br /> [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]Bu hata kesmez zaman `EntryPoint` görev parametresi belirtilmedi. Bunun yerine, \<customHostSpecified > etiketi, bir alt öğesi olarak eklenir \<entryPoint > etiketi, örneğin:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Aşağıdaki adımları kullanarak uygulama bildirimine DLL bağımlılıklar ekleyebilirsiniz:<br /><br /> 1.  Derleme başvuruları çağrısıyla çözümlemek <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Önceki görev ve derleme çıktısı geçirmek için <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Kullanarak bağımlılıkları geçirmek `Dependencies` parametresi <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
+|`EntryPoint`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Giriş noktası için oluşturulan bildirim derleme gösterir. İçin bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bildirimi, bu girişi belirtir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi.<br /><br /> İçinde [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)], [GenerateApplicationManifest görevi](../msbuild/generateapplicationmanifest-task.md) gerekli bir `EntryPoint` bir uygulama bildirimi oluşturmak için. (Derleme veya yerel bildirimleri gerektirmez bir `EntryPoint`.) Bu gereksinim derleme hatası ile zorlanan: "MSB3185: EntryPoint yönelik bildirim belirtilmedi."<br /><br /> [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Bu hata kesmez zaman `EntryPoint` görev parametresi belirtilmedi. Bunun yerine, \<customHostSpecified > etiketi, bir alt öğesi olarak eklenir \<entryPoint > etiketi, örneğin:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Aşağıdaki adımları kullanarak uygulama bildirimine DLL bağımlılıklar ekleyebilirsiniz:<br /><br /> 1.  Derleme başvuruları çağrısıyla çözümlemek <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Önceki görev ve derleme çıktısı geçirmek için <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Kullanarak bağımlılıkları geçirmek `Dependencies` parametresi <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
 |`ErrorReportUrl`|İsteğe bağlı <xref:System.String?displayProperty=fullName> parametresi.<br /><br /> İletişim kutularında ClickOnce yüklemeleri sırasında görüntülenen Web sayfasının URL'sini belirtir.|  
 |`InputManifest`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Bildirim oluşturucu için bir temel olarak hizmet verecek bir girdi XML belgesi gösterir. Bu çıktı bildiriminde yansıtılması özel bildirim tanımları gibi yapılandırılmış verileri sağlar. XML belgesi kök öğesinde bir derleme düğümü asmv1 ad alanında olması gerekir.|  
 |`Install`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Uygulamanın yüklü bir uygulama veya bir yalnızca çevrimiçi uygulama olup olmadığını belirtir. Bu parametre ise `true`, uygulama kullanıcının başlangıç menüsünde yüklenmiş ve Program Ekle veya Kaldır iletişim kutusunu kullanarak kaldırılabilir. Bu parametre ise `false`, uygulama bir Web sayfasından çevrimiçi kullanıma yöneliktir. Bu parametrenin varsayılan değeri `true`.|  

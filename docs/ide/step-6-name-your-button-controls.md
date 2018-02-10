@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 12065875980d114d6ea8b9912009701afb5cf9a0
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: d1981e8003941f14295cd137ba238808ec49229a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-name-your-button-controls"></a>6. Adım: Düğme Denetimlerinizi Adlandırma
 Formunuzda tek PictureBox yoktur. Eklendiğinde, IDE otomatik olarak da adlandırılan **pictureBox1**. Adlı yalnızca bir onay kutusu yok **checkBox1**. En kısa sürede, biraz kod yazılır ve bu kod onay kutusunu ve PictureBox başvurur. Her bu denetimlerin yalnızca biri, çünkü gördüğünüzde ne anlama geldiğini bilirsiniz **pictureBox1** veya **checkBox1** kodunuzda.  
@@ -74,7 +76,7 @@ Visual C# kodu Form1.cs sekmesi
   
      Bir denetim için bir olay işleyicisi ekledikten sonra kendisine herhangi bir zamanda Windows Forms Tasarımcısı'ndan denetimi çift tıklatarak veya menü çubuğu seçme dönebilirsiniz **Görünüm**, **kod**.  
   
-     Programları derleme ve yöntemler (olay işleyicileri dahil), istediğiniz herhangi bir ad olabilir adları önemlidir. IDE ile olay işleyici eklediğinizde, denetimin adını ve işlenen olay dayalı bir ad oluşturur. Örneğin, adlı bir düğmeye Click olayını **showButton** çağrılır `showButton_Click()` olay işleyicisi yöntemi. Ayrıca, açma ve kapama parantez () genellikle yöntemlerini ele belirtmek için yöntem adından sonra eklenir. Kod değişken adını değiştirmek istediğiniz karar verirseniz, kodda değişkeni sağ tıklatın ve ardından **yeniden düzenlemeniz**, **yeniden adlandırma**. Bu değişken kodda tüm örneklerini yeniden adlandırılmıştır. Bkz: [yeniden adlandırma yeniden düzenlemesi (C#)](../ide/reference/rename-csharp.md) veya [yeniden düzenleme (Visual Basic) yeniden adlandırma](../ide/reference/rename-vb.md) daha fazla bilgi için.
+     Programları derleme ve yöntemler (olay işleyicileri dahil), istediğiniz herhangi bir ad olabilir adları önemlidir. IDE ile olay işleyici eklediğinizde, denetimin adını ve işlenen olay dayalı bir ad oluşturur. Örneğin, adlı bir düğmeye Click olayını **showButton** çağrılır `showButton_Click()` olay işleyicisi yöntemi. Ayrıca, açma ve kapama parantez () genellikle yöntemlerini ele belirtmek için yöntem adından sonra eklenir. Kod değişken adını değiştirmek istediğiniz karar verirseniz, kodda değişkeni sağ tıklatın ve ardından **yeniden düzenlemeniz**, **yeniden adlandırma**. Bu değişken kodda tüm örneklerini yeniden adlandırılmıştır. Bkz: [yeniden düzenlemeyi yeniden adlandırma](../ide/reference/rename.md) daha fazla bilgi için.
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   

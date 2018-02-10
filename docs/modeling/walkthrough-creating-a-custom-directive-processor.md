@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, custom directive processors
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e50e433ea3f954efd085a02a3e29a0eff958da0c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 94008906dbc38a22e0f27de1a13acbccae8df7a4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>İzlenecek yol: Özel Yönerge İşlemcisi Oluşturma
 *Yönerge işlemcileri* kodu ekleyerek iş *dönüştürme sınıfı oluşturulan*. Çağırırsanız bir *yönergesi* gelen bir *metin şablonu*, rest, metin şablonu yazma kod yönergesi sağlayan işlevselliğini güvenebilirsiniz.  
@@ -88,9 +89,9 @@ End Property
   
 2.  Aşağıdaki derlemelere başvurular ekleyin:  
   
-    -   **Microsoft.VisualStudio.TextTemplating. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
 3.  Kodla **Class1** aşağıdaki kod ile. Bu kod devraldığı CustomDirectiveProcessor sınıfı tanımlar <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> sınıfı ve gerekli yöntemlerini uygular.  
   

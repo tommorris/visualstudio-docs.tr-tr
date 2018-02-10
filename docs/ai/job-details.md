@@ -1,3 +1,5 @@
+---
+---
 # <a name="view-recent-job-performance-and-details"></a>Son iş performans ve Ayrıntılar görüntüleyin
 İşler gönderilmeden sonra durumlarını, süre ve daha fazla bilgi görmek için iş listesini görüntüleyebilirsiniz.
 

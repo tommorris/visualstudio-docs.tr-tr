@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 09/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, TextTransform utility
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de8564aa1743ed22ff4a600d9bf655bbb4adaed4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: b7816e11c431f17336955f2037d288641b6c3ad5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>TextTransform Yardımcı Programı ile Dosya Oluşturma
 TextTransform.exe metin şablonu dönüştürme için kullanabileceğiniz bir komut satırı aracıdır. TextTransform.exe çağırdığınızda, bağımsız değişken olarak metin şablonu dosyasının adını belirtin. TextTransform.exe metin dönüştürme altyapısı çağırır ve metin şablonu işler. TextTransform.exe genellikle komut dosyaları tarafından çağrılır. Metin dönüştürmeyi Visual Studio veya yapı işlemi gerçekleştirebilir ancak bu genelde gerekli olmadığından.  
@@ -27,17 +28,17 @@ TextTransform.exe metin şablonu dönüştürme için kullanabileceğiniz bir ko
   
  TextTransform.exe şu dizinde bulunur:  
   
- **\Program dosyaları (x86) \Microsoft Visual Studio\2017\Professional\Common7\IDE**  
+ **\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE**  
 
 Professional Edition veya
 
- **\Program dosyaları (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+ **\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
  
  için Enterprise edition.
 
 Visual Studio'nun önceki sürümleri dosyası şu konumda bulunur:
 
-**\Program dosyaları (x86) \Common Files\Microsoft Shared\TextTemplating\{sürüm}**
+**\Program Files (x86)\Common Files\Microsoft Shared\TextTemplating\{version}**
 
 Hangi önceki bir sürümünün yüklü olduğu {version} bağlıdır.
 
@@ -60,7 +61,7 @@ TextTransform [<options>] <templateName>
 |**-u** \<ad alanı >|Şablon derlemek için kullanılan ad.|  
 |**-I** \<includedirectory >|Belirtilen metni şablona dahil metin şablonlarını içeren bir dizin.|  
 |**-P** \<referencepath >|Metin şablonu içinde belirtilen derlemeler için veya kullanarak aramak için bir dizin **- r** seçeneği.<br /><br /> Örneğin, Visual Studio API için kullanılan derlemeleri eklemek için kullanın<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|  
-|**-dp** \<processorName >!\< className >! \<assemblyName &#124; codeBase >|Adı, tam tür adı ve metin şablonu içinde özel yönergeleri işlemek için kullanılan bir yönerge işlemcisi derleme.|  
+|**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|Adı, tam tür adı ve metin şablonu içinde özel yönergeleri işlemek için kullanılan bir yönerge işlemcisi derleme.|  
 |**-a** [processorName]! [ directiveName]! \<parameterName >! \<parameterValue >|Bir yönerge işlemcisi için parametre değeri belirtin. Yalnızca parametre adı ve değeri belirtirseniz, tüm yönerge işlemcileri için parametresi kullanılabilir. Bir yönerge işlemcisi belirtirseniz, yalnızca belirtilen işlemciyi kullanılabilir bir parametredir. Bir yönerge adı belirtirseniz, yalnızca belirtilen yönergesi işlenirken parametresi kullanılabilir.<br /><br /> Bir yönerge işlemcisi veya metin şablonu parametre değerlerini erişmek için <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>. Bir metin şablonuna eklemek `hostspecific` şablon yönergesi ve ileti üzerinde çağırma `this.Host`. Örneğin:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Türü her zaman '!' yönerge adları ve isteğe bağlı işlemci bile atlarsanız, işaretler. Örneğin:<br /><br /> `-a !!param!value`|  
 |**-h**|Yardım sağlar.|  
   

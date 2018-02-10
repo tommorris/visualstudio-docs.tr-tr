@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a5351c359f708eeb1d2a9aa030f5b82337d38d56
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL'nin MSI ve VSIX Dağıtımı
 Bir etki alanına özgü dil kendi bilgisayarınızda veya diğer bilgisayarlara yükleyebilirsiniz. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Hedef bilgisayarda yüklü olması gerekir.  
@@ -75,7 +76,7 @@ Bir etki alanına özgü dil kendi bilgisayarınızda veya diğer bilgisayarlara
   
 1.  Ayarlama `InstalledByMsi` uzantısı bildiriminde. Bu VSX yüklü ve dışında MSI tarafından kaldırılır önler. Bu, diğer bileşenler MSI içeriyorsa önemlidir.  
   
-    1.  DslPackage\source.extension.tt açın  
+    1.  Open DslPackage\source.extension.tt  
   
     2.  Önce aşağıdaki satırı ekleyin `<SupportedProducts>`:  
   
@@ -101,7 +102,7 @@ Bir etki alanına özgü dil kendi bilgisayarınızda veya diğer bilgisayarlara
   
 5.  Ekleme **CreateMsiSetupProject.tt** Dsl projenize.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]adlı bir dosya oluşturacaksınız **CreateMsiSetupProject.vdproj**.  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adlı bir dosya oluşturacaksınız **CreateMsiSetupProject.vdproj**.  
   
 6.  Windows Gezgini'nde Dsl kopyalama\\yeni bir klasöre *.vdproj adlı kurulumu.  
   

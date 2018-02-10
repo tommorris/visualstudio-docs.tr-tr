@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, deploying extensions
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 060cf2551f6c79259c7094d52f35db92f9ebcfef
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 311add860016c914aab232ffad6e3a4efadb15c9
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="deploy-a-layer-model-extension"></a>Katman modeli uzantısı dağıtma
 Diğer kullanıcılar için Visual Studio, Visual Studio kullanarak oluşturduğunuz uzantıları modelleme katman yükleyebilirsiniz.  
@@ -42,7 +43,7 @@ Diğer kullanıcılar için Visual Studio, Visual Studio kullanarak oluşturduğ
 2.  Uzantı adına tıklayın ve ardından **kaldırma**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Team Foundation Yapı sunucuda uzantı yükleme  
- [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]Sunucu normal olarak Visual Studio yüklü değil ve çift tıklatarak VSIX şekilde yükleyemezsiniz. Yüklemesini [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] bazı bileşenleri içeren bir VSIX uzantısının çalışması için izin verilir, ancak uzantı el ile yüklemeniz gerekir.  
+ [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] Sunucu normal olarak Visual Studio yüklü değil ve çift tıklatarak VSIX şekilde yükleyemezsiniz. Yüklemesini [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] bazı bileşenleri içeren bir VSIX uzantısının çalışması için izin verilir, ancak uzantı el ile yüklemeniz gerekir.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildmiscincludesesprbuildmdmd-server"></a>Katman uzantınızı yüklemek için bir [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] sunucusu  
   
@@ -52,15 +53,15 @@ Diğer kullanıcılar için Visual Studio, Visual Studio kullanarak oluşturduğ
   
     -   Tüm kullanıcılar ve hizmetlerini yüklemek için:  
   
-         %ProgramFiles%\Microsoft visual Studio [sürüm] \Common7\IDE\Extensions\Microsoft  
+         %ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft  
   
     -   Çalıştıran ağ hizmeti için yüklemek için [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]:  
   
-         %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[sürüm] \Extensions\Microsoft  
+         %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
     -   Yapılandırdıysanız [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] belirli bir kullanıcı olarak etkileşimli modda çalıştırmak için o kullanıcı için yükleyebilirsiniz:  
   
-         %LocalAppData%\Microsoft\VisualStudio\\[sürüm] \Extensions\Microsoft  
+         %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
         >  % LocalAppData olan genellikle *DriveName*: kullanıcıların*kullanıcıadı*AppDataLocal.  

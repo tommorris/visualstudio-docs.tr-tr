@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2d8646866794a1a09c3f1e1e1f84011093dfc7c5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: af086275f641e3237f8d22308c960ad30240b647
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Değişiklikleri Modelin İçinde Yayan Kurallar
 Bir değişiklik bir öğeden başka bir Görselleştirme ve modelleme SDK (VMSDK) yaymak için bir depolama kural oluşturabilirsiniz. Herhangi bir öğeye deposunda bir değişiklik meydana geldiğinde kuralları genellikle en dıştaki işlem tamamlandığında, yürütülecek zamanlanır. Farklı bir öğe ekleme veya silme gibi olaylar, farklı türleri için kuralı türü vardır. Öğeleri, şekiller veya diyagramları belirli türleri için kurallar ekleyebilirsiniz. Birçok yerleşik özellikleri kuralları tarafından tanımlanır: Örneğin, kuralları model değiştiğinde bir diyagram güncelleştirildiğinden emin olun. Kendi kurallarınızı ekleyerek, etki alanına özgü dil özelleştirebilirsiniz.  

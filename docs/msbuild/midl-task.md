@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,16 +26,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), MIDL task
 - MIDL task (MSBuild (Visual C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3dc6bcbf4814a05d05aa69a42e8d19f581e78863
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 51ed6c8c34fd5aa37eebffabcda077ca8554c498
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="midl-task"></a>MIDL Görevi
 Microsoft arabirimi tanım dili (MIDL) derleyici aracı sarmalar midl.exe. Daha fazla bilgi için "MIDL komut satırı başvurusu" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
@@ -55,7 +56,7 @@ Microsoft arabirimi tanım dili (MIDL) derleyici aracı sarmalar midl.exe. Daha 
   
      İsteğe bağlı **dize** parametresi.  
   
-     Komut satırı seçeneklerinin listesi. Örneğin, **"***/option1 /option2 /option#*". Tüm diğer MIDL görevi parametresi tarafından temsil edilmeyen komut satırı seçeneklerini belirtmek için bu parametreyi kullanın.  
+     Komut satırı seçeneklerinin listesi. Örneğin, **"*** / seçenek 1 /option2 /option#*". Tüm diğer MIDL görevi parametresi tarafından temsil edilmeyen komut satırı seçeneklerini belirtmek için bu parametreyi kullanın.  
   
      Daha fazla bilgi için "MIDL komut satırı başvurusu" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
@@ -95,7 +96,7 @@ Microsoft arabirimi tanım dili (MIDL) derleyici aracı sarmalar midl.exe. Daha 
     |-----------|--------------------------|  
     |**İmzalı**|**/char imzalı**|  
     |**İmzasız**|**/char imzalanmamış**|  
-    |**ASCII**|**/char ascii7**|  
+    |**Ascii**|**/char ascii7**|  
   
      Daha fazla bilgi için bkz: **/char** "MIDL komut satırı başvurusu" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
@@ -174,7 +175,7 @@ Microsoft arabirimi tanım dili (MIDL) derleyici aracı sarmalar midl.exe. Daha 
     |Değer|Komut satırı seçeneği|  
     |-----------|--------------------------|  
     |**Yok**|**/Client yok**|  
-    |**Saplama**|**/Client saplama**|  
+    |**Stub**|**/Client saplama**|  
   
      Daha fazla bilgi için bkz: **/client** "MIDL komut satırı başvurusu" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
@@ -189,7 +190,7 @@ Microsoft arabirimi tanım dili (MIDL) derleyici aracı sarmalar midl.exe. Daha 
     |Değer|Komut satırı seçeneği|  
     |-----------|--------------------------|  
     |**Yok**|**/ Server yok**|  
-    |**Saplama**|**/ Server saplama**|  
+    |**Stub**|**/ Server saplama**|  
   
      Daha fazla bilgi için bkz: **/Server** "MIDL komut satırı başvurusu" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
@@ -306,10 +307,10 @@ Microsoft arabirimi tanım dili (MIDL) derleyici aracı sarmalar midl.exe. Daha 
     |Değer|Komut satırı seçeneği|  
     |-----------|--------------------------|  
     |**NotSet**|*\<yok >*|  
-    |**1**|**/ Zp1**|  
-    |**2**|**/ Zp2**|  
-    |**4**|**/ Zp4**|  
-    |**8**|**/ Zp8**|  
+    |**1**|**/Zp1**|  
+    |**2**|**/Zp2**|  
+    |**4**|**/Zp4**|  
+    |**8**|**/Zp8**|  
   
      Daha fazla bilgi için bkz: **/Zp** "MIDL komut satırı başvurusu" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi. **/Zp** seçenektir eşdeğer **Pack** seçeneği ve eski **/ Hizala** seçeneği.  
   
@@ -411,10 +412,10 @@ Microsoft arabirimi tanım dili (MIDL) derleyici aracı sarmalar midl.exe. Daha 
   
     |Değer|Komut satırı seçeneği|  
     |-----------|--------------------------|  
-    |**0**|**/ W0**|  
-    |**1**|**/ W1**|  
+    |**0**|**/W0**|  
+    |**1**|**/W1**|  
     |**2**|**/ W2**|  
-    |**3**|**/ W3**|  
+    |**3**|**/W3**|  
     |**4**|**/ W4**|  
   
      Daha fazla bilgi için bkz: **/W** "MIDL komut satırı başvurusu" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi. Ayrıca bkz **WarnAsError** bu tabloda parametresi.  

@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, guidelines for code generation
@@ -17,12 +16,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9c21673f318d97ac5abb2b89bdd8d65ae01cef17
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: ff7f01274b47b8c7c333aedbbb6dc646e14b89d3
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 Tasarım zamanı T4 metin şablonları program kodunu ve diğer dosyalar oluşturmanıza izin, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projesi. Genellikle, böylece kullanıcılar verilerinden göre oluşturdukları kod farklılık şablonları yazma bir *modeli*. Bir dosya veya uygulama gereksinimleri hakkında önemli bilgiler içeren bir veri modelidir.  

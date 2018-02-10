@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8b5c957fbc3ae5eb3e71f087c57cbf07188de2ff
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Değişiklikleri Modelin Dışına Yayan Olay İşleyicileri
 Görselleştirme ve modelleme SDK, depolama olmayan değişkenleri, dosyaları, diğer depoları veya başka modellerinin gibi mağazasının dışında bir kaynağa değişiklikleri yaymak için depolama olay işleyicileri tanımlayabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uzantıları. Mağaza olay işleyicileri tetikleme olayın oluştuğu işlem sonunda yürütülür. Bunlar, ayrıca bir geri alma veya yineleme işlemi yürütülür. Bu nedenle, depolama kurallarından farklı olarak, depolama olayların deponun dışında olan değerleri güncelleştirmek için en kullanışlıdır. Bir sınıfa dinlemek için kayıtlı .NET olaylarının tersine deposu olay işleyicileri: her örneği için ayrı bir işleyici kaydetmeniz gerekmez. Değişiklikleri yürütmek için farklı yollar arasında seçim yapma hakkında daha fazla bilgi için bkz: [yanıtlama ve yayılıyor değişiklikleri](../modeling/responding-to-and-propagating-changes.md).  

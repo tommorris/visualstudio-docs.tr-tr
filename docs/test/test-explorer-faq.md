@@ -18,47 +18,61 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: fd64bb3bce6b6477c0db1c7d0c5a15e518ae71ef
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 63c1b25ad597dc3d56dfc398ec9c6c463aec200d
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Test Gezgini ile ilgili SSS
 
 ## <a name="test-discovery"></a>Test bulma
 
-### <a name="1-the-test-explorer-is-not-discovering-my-tests-that-have-theories-custom-adapters-custom-traits-use-ifdefs-or-are-dynamically-defined-how-can-i-discover-these-tests"></a>1. Test Gezgini kuramlarý, özel bağdaştırıcılar, özel özellikleri, kullanım #ifdefs veya dinamik olarak tanımlanan my test bulunurken değil. Bu testler nasıl bulabilmesi için?
+### <a name="1-the-test-explorer-is-not-discovering-my-tests-that-are-dynamically-defined-for-example-theories-custom-adapters-custom-traits-ifdefs-etc-how-can-i-discover-these-tests"></a>1. Test Gezgini dinamik olarak tanımlanan my test bulunurken değil. (Örneğin, kuramlarý, özel bağdaştırıcılar, özel özellikleri, #ifdefs, vb.) Bu testler nasıl bulabilmesi için?
 
   Projenizi derleme ve derleme tabanlı bulma içinde açık olduğundan emin olun **Araçlar > Seçenekler > Test**.
 
-  [Gerçek zamanlı Test bulma](https://go.microsoft.com/fwlink/?linkid=862824), kaynak dayalı test bulma olduğu kullanan kuramlarý, özel bağdaştırıcıları, özel nitelikler testleri Bul olamaz `#ifdef` deyimleri veya diğer herhangi bir yolla tanımlanmış dinamik olarak. Derleme, bu testler doğru şekilde bulunmak gereklidir. 15.6 önizlemelerde derleme tabanlı bulma (Geleneksel discoverer) yalnızca derlemeleri sonra çalışır. Gerçek zamanlı Test bulma bulur, while gibi sayıda testleri yani düzenlemekte olduğunuz ve derleme tabanlı bulma derleme sonrası görünmesi kuramlarý (veya dinamik olarak tanımlanan tüm testlerin) sağlar. Gerçek zamanlı Test bulma yanıt hızını artırır, ancak durağan derleme sonrası eksiksiz ve doğru sonuçlar almak izin verir.
+  [Gerçek zamanlı Test bulma](https://go.microsoft.com/fwlink/?linkid=862824) kaynak dayalı test keşfi'dir. Kullanan kuramlarý, özel bağdaştırıcıları, özel nitelikler testleri bulamaz `#ifdef` deyimleri, çalışma zamanında tanımlandığından vb. Derleme, bu testler doğru şekilde bulunmak gereklidir. 15.6 önizlemelerde derleme tabanlı bulma (Geleneksel discoverer) yalnızca derlemeleri sonra çalışır. Bu ayar, gerçek zamanlı Test bulma bulur, while gibi sayıda testleri gelir düzenlemekte olduğunuz ve derleme tabanlı bulma dinamik olarak tanımlanan testleri derleme sonrası görünmesini sağlar. Gerçek zamanlı Test bulma yanıt hızını artırır, ancak durağan derleme sonrası eksiksiz ve doğru sonuçlar almak izin verir.
 
 ### <a name="2-what-does-the--plus-symbol-that-appears-in-the-top-line-of-test-explorer-mean"></a>2. Ne yaptığını '+' (artı) Test Gezgini ortalama ilk satırda görünen simgesini?
 
-  '+' (Artı) simgesi gösterir derleme tabanlı bulma açıksa, daha fazla test derleme sonrası bulunan. Bu dinamik olarak tanımlanmışsa testleri projenizde algılanan görünecektir.
+  '+' (Artı) simgesi gösterir derleme tabanlı bulma açık olduğu sürece, daha fazla test derleme sonrası bulunan. Dinamik olarak tanımlanmışsa testleri projenizde algılanan görünür.
 
   ![Artı özet satırı simgesi](media/testex-plussymbol.png)
 
 ### <a name="3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on"></a>3. Derleme tabanlı bulma için proje artık çalışmıyor. Nasıl onu kapatırım geri?
 
-  Gidin **Araçlar > Seçenekler > Test** ve için kutuyu **ayrıca derlemelerden sonra derlemeleri yerleşik testleri bulma.**
+  Gidin **Araçlar > Seçenekler > Test** ve için kutuyu **ayrıca testleri yerleşik derlemelerden sonra derlemeleri bulmak.**
 
   ![Derleme seçeneği](media/testex-toolsoptions.png)
 
 ### <a name="4-tests-now-appear-in-test-explorer-while-i-type-without-having-to-build-my-project-what-changed"></a>4. I proje oluşturmanıza gerek kalmadan, yazarken testlerin artık Test Gezgini görüntülenir. Neler değişti mi?
 
-  Bu özellik adında [gerçek zamanlı Test bulma](https://go.microsoft.com/fwlink/?linkid=862824). Testleri bulmak ve projenizin oluşturmaya gerek kalmadan gerçek zamanlı olarak Test Gezgini doldurmak için bir .NET Complier Platformu ("Roslyn") Çözümleyicisi kullanır. SSS #1 kuramlarý veya özel nitelikler gibi dinamik olarak tanımlanan testler için test bulma davranış hakkında daha fazla bilgi için bkz.
+  Bu özellik adında [gerçek zamanlı Test bulma](https://go.microsoft.com/fwlink/?linkid=862824). Testleri bulmak ve projenizin oluşturmaya gerek kalmadan gerçek zamanlı olarak Test Gezgini doldurmak için bir Roslyn Çözümleyicisi kullanır. SSS #1 kuramlarý veya özel nitelikler gibi dinamik olarak tanımlanan testler için test bulma davranış hakkında daha fazla bilgi için bkz.
 
 ### <a name="5-what-languages-and-test-frameworks-can-use-real-time-test-discovery"></a>5. Hangi dilleri ve test çerçevelerini gerçek zamanlı Test bulma kullanabilir miyim?
 
-  [Gerçek zamanlı Test bulma](https://go.microsoft.com/fwlink/?linkid=862824) yalnızca yönetilen dilleri (C# ve Visual Basic), bu yana çalışan .NET ("Roslyn") derleyici kullanılarak oluşturulur. Şimdilik, gerçek zamanlı Test bulma yalnızca xUnit, NUnit ve mstest'i çerçeveleri çalışır.
+  [Gerçek zamanlı Test bulma](https://go.microsoft.com/fwlink/?linkid=862824) yalnızca yönetilen dilleri (C# ve Visual Basic), bu yana çalışan Roslyn derleyici kullanılarak oluşturulur. Şimdilik, gerçek zamanlı Test bulma yalnızca xUnit, NUnit ve mstest'i çerçeveleri çalışır.
+
+### <a name="6-how-can-i-turn-on-logs-for-the-test-explorer"></a>6. Test Gezgini için nasıl açtığında kapatırım?
+
+  Gidin **Araçlar > Seçenekler > Test** ve günlüğe kaydetme bölümü bulun.
+
+### <a name="7-why-are-my-tests-in-uwp-projects-not-discovered-until-i-deploy-my-app"></a>7. Neden Uygulamam dağıtıncaya kadar bulunmayan UWP projeleri my testlerinde misiniz?
+
+  Uygulama dağıtıldığında UWP testleri farklı bir çalışma zamanı hedefleyin. Bu testler UWP projeleri için doğru bir şekilde bulmak için yalnızca projenizi oluşturun, ancak aynı zamanda dağıtmak gerektiği anlamına gelir.
+
+### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8. Sıralama test sonuçlarını hiyerarşi görünümünde nasıl çalışır?
+
+  Hiyerarşi görünüm testlere göre alfabetik olarak tersine sonuçlara göre sıralar. Bir grubu ayarları tarafından sonuçlara göre normalde test sonuçlarını sıralama ve ardından alfabetik olarak. Farklı gruplandırma seçenekleri aşağıda gösterilmektedir karşılaştırma için. Tasarım hakkında geri bildirim sağlayabilirsiniz [bu GitHub sayıda](https://github.com/Microsoft/vstest/issues/1425).
+
+  ![SortingExamples](media/testex-sortingex.png)
 
 ## <a name="features"></a>Özellikler
 
 ### <a name="how-can-i-turn-on-feature-flags-to-try-out-new-testing-features"></a>Yeni test özellikleri denemek için özellik bayrakları üzerinde nasıl kapatabilir miyim?
 
-Özellik bayrakları ürün özellikleri resmi olarak sevk önce geribildirim vermek istediğiniz hırslı kullanıcılara Deneysel veya tamamlanmamış bölümlerini sevk etmek için kullanılır. Bunlar, IDE deneyimi kararlılığını. Bunları yalnızca güvenli geliştirme ortamlarında, sanal makineleri gibi kullanılması önerilir. Özellik bayrakları her zaman kullanın--bilgisayarınızı-kendi-riskli ayarlardır. Deneysel özellikleri açabilirsiniz [özellik bayrakları uzantısı](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension), veya Geliştirici komut istemi üzerinden.
+Özellik bayrakları ürün özellikleri resmi olarak sevk önce geribildirim vermek istediğiniz hırslı kullanıcılara Deneysel veya tamamlanmamış bölümlerini sevk etmek için kullanılır. Bunlar, IDE deneyimi kararlılığını. Bunları yalnızca güvenli geliştirme ortamlarında, sanal makineleri gibi kullanın. Özellik bayrakları her zaman kullanın--bilgisayarınızı-kendi-riskli ayarlardır. Deneysel özellikleri açabilirsiniz [özellik bayrakları uzantısı](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension), veya Geliştirici komut istemi üzerinden.
 
 ![Özelliği bayrak uzantısı](media/testex-featureflag.png)
 

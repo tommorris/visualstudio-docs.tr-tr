@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a3eee4abda5783707231332022e1f3f24728e7cc
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d9f050662ed38814920e17b36f77bf6795aabfa9
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="publish-page-project-designer"></a>Yayın Sayfası, Proje Tasarımcısı
 **Yayımla** sayfasında **Proje Tasarımcısı** ClickOnce dağıtım özelliklerini yapılandırmak için kullanılır.  
@@ -34,10 +34,8 @@ ms.lasthandoff: 01/29/2018
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **Yayımlama klasörü konumu**  
- Uygulama burada yayımlanır konumunu belirtir. Bir sürücü yolu olabilir (`C:\deploy\myapplication`), bir dosya paylaşımı (`\\server\myapplication`), bir FTP sunucusu (`ftp://ftp.microsoft.com/myapplication`), veya bir Web sitesine (`http://www.microsoft.com/myapplication`). Metin mevcut olması gerektiğini unutmayın **yayımlama konumu** Gözat sırayla kutusunda (**...** ) düğmesinin çalışması için.  
-  
- Varsayılan olarak, yayımlama konumdur `http://localhost/<projectname>/` , IIS yüklü değilse veya `publish\` IIS yüklü değil ise dizin. Bilgisayarınızın Windows Vista çalıştırıyorsa, her zaman varsayılandır `publish\` IIS yüklü olup olmadığını bağımsız olarak dizin.  
-  
+ Uygulama burada yayımlanır konumunu belirtir. Bir sürücü yolu olabilir (`C:\deploy\myapplication`), bir dosya paylaşımı (`\\server\myapplication`), ya da bir FTP sunucusu (`ftp://ftp.microsoft.com/myapplication`). Metin mevcut olması gerektiğini unutmayın **yayımlama konumu** Gözat sırayla kutusunda (**...** ) düğmesinin çalışması için.  
+   
  **Yükleme klasörü URL'si**  
  İsteğe bağlı. Kullanıcıların uygulamayı yüklemek için Git bir Web sitesini belirtir. Bu yalnızca zaman onu farklı gereklidir **yayımlama konumu**, örneğin, ne zaman uygulama yayımlanır bir basamak sunucusuna.  
   

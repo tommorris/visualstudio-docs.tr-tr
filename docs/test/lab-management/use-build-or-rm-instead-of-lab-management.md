@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: automated testing, lab management, test lab
+helpviewer_keywords:
+- automated testing, lab management, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 4dae17012ecf66258d65ff3c200a0dbe8e4c9429
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 25f1007458b691b97f0ea852a1bf0e7325d79d8a
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Derleme ve sürüm Yönetimi yerine Laboratuvar Yönetimi otomatikleştirilmiş test için kullanın.
 
@@ -26,7 +28,7 @@ Otomatik test için veya derleme, dağıtma, test otomasyonu için Microsoft Tes
 
 * [SCVMM ortamları Self Servis Yönetimi](#managescvmm)
 
-Derleme ve sürüm Yönetimi ağdan SCVMM ortamları Self Servis oluşturulmasını desteklemez ve gelecekte bu desteği sağlamak için plan yok. Ancak, vardır bazı [önerilen alternatifleri](#isolatedenvir).
+* [Yalıtılmış ağ ortamları oluşturma](#isolatedenvir)
 
 <a name="bdtautomation"></a>
 ## <a name="build-deploy-test-automation"></a>Derleme, dağıtma, test Otomasyonu
@@ -74,14 +76,15 @@ Ancak, daha zengin genel ve özel bulut evrimi yönetim sistemleri gibi verilen 
 | Bir ortamın bir denetim noktası almak veya bir ortam için temiz bir kontrol noktası geri yükleyin. | Laboratuvar ortamını Ortam Görüntüleyicisi'nde açın. Bir denetim noktası almak için veya bir önceki kontrol noktasına geri yüklemek için seçeneği seçin. | Doğrudan sanal makinelerde bu işlemleri gerçekleştirmek için SCVMM Yönetim konsolunu kullanın. Veya daha büyük bir Otomasyon bir parçası olarak bu adımları gerçekleştirmek için denetim noktası görevlerden dahil [SCVMM Tümleştirme Uzantısı](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) yayın tanımında ortamının bir parçası olarak. |
 
 <a name="isolatedenvir"></a>
-## <a name="self-service-creation-of-network-isolated-environments"></a>Self Servis yalıtılmış ağ ortamları oluşturma
+## <a name="creation-of-network-isolated-environments"></a>Yalıtılmış ağ ortamları oluşturma
 
 Ağ yalıtılmış laboratuvar ortamında ağ çakışmalarına neden olmadan güvenli bir şekilde kopyalanabilen SCVMM sanal makineler grubudur. Bu MTM içinde bir dizi ortak bir ağda sanal makineleri yapılandırmak için özel bir ağda sanal makineleri yapılandırmak için ağ arabirim kartları kümesi ve başka bir ağ arabirimi kartları kümesi kullanılan yönergeleri kullanarak gerçekleştirilir.
 
-Daha zengin ortak ve özel evrimi ile yönetim sistemleri gibi bulut [Microsoft Azure](https://azure.microsoft.com/) ve [Microsoft Azure yığın](https://azure.microsoft.com/overview/azure-stack/), doğrudan için bulut yönetimi araçları hakkında daha fazla güvenebilirsiniz benzer yetenekleri. Derleme ve sürüm Yönetimi'ndeki bu amacı gerçekleştirmenize eşdeğer bir yolu yoktur.
+Ancak, VSTS SCVMM birlikte TFS yapı ve görev dağıtmak, SCVMM ortamlarını yönetebilir, yalıtılmış sanal ağlara sağlamak için kullanılır ve derleme, dağıtma, test senaryolarını uygulayan. Örneğin, görevi kullanabilirsiniz:
 
-Ağ yalıtımı gerekiyorsa aşağıdaki alternatifleri düşünün önerilir:
+* Oluştur, geri yükleme ve kontrol noktalarını silin
+* Bir şablon kullanarak yeni sanal makineler oluşturun
+* Sanal makineler durdurup başlatın
+* SCVMM özel PowerShell betikleri çalıştırmak
 
-* Ağ yalıtımı bir gerekçesi birden çok klonlar yapılandırmasını kolaylığı olmuştur. Özgün tam bir kopyasını her kopya olduğu gibi yapılandırma ayarlarını ve bilgisayar adları olarak korunur ve bu yeni ortamları ayarlama kolaylaştırır. Ancak, aynı avantajı çevriminin (örneğin, üretim) devamındaki uygulamaları son olarak dağıtılan yolu aynı olmadığından çıkabilecek sorunlara neden olur. **Bunun yerine**üretim ayarlanan aynı şekilde yeni ortamları kurmayı göz önünde bulundurun ve ağ yalıtımı kullanmaktan kaçının.
-
-* Bir genel bulut altyapısı gibi kullandığınız [Microsoft Azure](https://azure.microsoft.com/) , test için gerekiyor. Kolayca kullanabilirsiniz [Azure Resource Manager şablonları](https://azure.microsoft.com/documentation/templates/) gelen [Azure Marketi](https://azure.microsoft.com/marketplace/) veya [Azure hızlı başlangıç şablonlarını](https://azure.microsoft.com/documentation/templates/) olan sanal makineleri grupları ayarlamak için özel bir ağ üzerinden bağlı ve ortak ağ için bir proxy veya 'jumpbox' kullanarak yalnızca sunulur.
+Daha fazla bilgi için bkz: [derleme, dağıtma, test senaryoları için sanal ağ yalıtımlı ortam oluşturma](/vsts/build-release/actions/virtual-networks/create-virtual-network).

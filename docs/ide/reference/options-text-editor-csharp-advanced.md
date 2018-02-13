@@ -1,6 +1,5 @@
 ---
 title: "Gelişmiş Seçenekler, metin düzenleyici, C# | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -9,8 +8,6 @@ ms.tgt_pltfrm:
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
-- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Advanced
-- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 helpviewer_keywords:
 - XML comments
@@ -22,67 +19,96 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 119d6660b476dd025ff8def009369a4e38d09d28
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5d6cf8b655151e9b07111b6ac6fd64b6ad3c845f
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="options-text-editor-c-advanced"></a>Seçenekler, Metin Düzenleyici, C#, Gelişmiş
 
-Biçimlendirme Düzenleyicisi'nde, yeniden düzenleme kod ve XML belge açıklamaları için C# ayarlarını değiştirmek için bu iletişim kutusunu kullanın. Bu iletişim kutusunu erişmek için tıklatın **seçenekleri** üzerinde **Araçları** menüsünde genişletin **metin düzenleyici** klasörünü genişletin **C#**ve 'ıtıklatın **Gelişmiş**.
+Kullanım **Gelişmiş** yeniden düzenleme kod biçimlendirme Düzenleyicisi ayarlarını değiştirmek için seçenekler sayfası ve XML belge açıklamaları için C#. Bu seçenekler sayfası erişmek için kendi seçtikleri **Araçları** > **seçenekleri**ve ardından **metin düzenleyici** > **C#**  >  **Gelişmiş**.
 
 > [!NOTE]
 > Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
+## <a name="analysis"></a>Çözümleme
+
+- Tam çözüm analizini etkinleştir
+
+   Çözümdeki tüm dosyalarda etkinleştirir kod analizi, yalnızca kod dosyaları açın. Daha fazla bilgi için bkz: [tam çözüm analizini](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+
+- Düzenleyici özelliği çözümlemesi dış işlemde (Deneysel)
+
+## <a name="using-directives"></a>Using yönergelerini
+
+- 'System' yönergeleri kullanımları sıralarken önce yerleştirin
+
+- Yönerge gruplarını kullanarak ayırın
+
+- Başvuru derlemeleri türlerinde kullanımları önerisi
+
+- NuGet paketlerini türlerinde kullanımları önerisi
+
+## <a name="highlighting"></a>Vurgulama
+
+- İmleç sembol yapılan başvurular vurgulayın
+
+   İmleç içinde bir simge konumlandırıldığında ya da bir simge tıklattığınızda, bu simgeyi kod dosyasındaki tüm örneklerini vurgulanır.
+
+- İmleç altında ilişkili anahtar sözcükleri Vurgula
+
 ## <a name="outlining"></a>Anahat Oluşturma
 
-Anahat modu dosyalarını açtığınızda girin  
-Seçili olduğunda, otomatik olarak kod daraltılabilir bloklarını oluşturur kod dosyası özetlenmektedir. İlk kez bir dosya açıldığında, #regions blokları ve etkin olmayan kod blokları daraltın.
+- Anahat modu dosyalarını açtığınızda girin
+
+   Seçili olduğunda, otomatik olarak kod daraltılabilir bloklarını oluşturur kod dosyası özetlenmektedir. İlk kez bir dosya açıldığında, #regions blokları ve etkin olmayan kod blokları daraltın.
+
+- Satır ayırıcı yordamı Göster
+
+- Anahat oluşturma bildirimi düzeyli yapıları için Göster
+
+- Anahat oluşturma kodu düzeyli yapıları için Göster
+
+- Yorumlar ve önişlemci bölgeler için anahat oluşturma Göster
+
+- Tanımları için daraltma zaman #regions Daralt
+
+## <a name="fading"></a>Soluklaşan
+
+- Kullanılmayan kullanımları silinerek
+
+- Ulaşılamaz kod silinerek
+
+## <a name="block-structure-guides"></a>Blok yapısı kılavuzları
+
+- Bildirim düzeyli yapıları için kılavuz çizgilerini göster
+
+- Kod düzeyli yapıları için kılavuz çizgilerini göster
 
 ## <a name="editor-help"></a>Düzenleyici Yardım
 
-Hataları Düzenleyicisi'nde altı çizili  
-Kod derleme hataları tanımlar. Bu seçenek belirlendiğinde, dalgalı alt çizgiler özel anlamları renkte görüntülenir:
-  
--   Ayrıştırma hatalar kırmızı olur.  
-  
--   Derleme hataları mavi.  
-  
--   Derleme Uyarıları yeşil.  
-  
--   Geçersiz [Düzenle ve devam et](../../debugger/edit-and-continue.md) düzenlemeleri mor.  
-  
-Hata hakkında bilgi içeren bir araç ipucunu görmek için altı çizili kod kesimi üzerine getirin.  
-  
-Canlı anlamsal hataları göster  
-Bildirme ve bilinmeyen bir türe kullanarak veya bilinmeyen bir özelliğe başvurma belirli derleme hatasız açık derlemesini tanımlar.  
-  
-İmleç sembol yapılan başvurular vurgulayın  
-İmleç içinde bir simge konumlandırıldığında ya da bir simge tıklattığınızda, bu simgeyi kod dosyasındaki tüm örneklerini vurgulanır.  
-  
-## <a name="refactoring"></a>Yeniden Düzenle
+- XML belge açıklamaları için / / / Oluştur
 
-Yeniden düzenleme sonuçlarını doğrulayın  
-Görüntüler **doğrulama sonuçlarını** iletişim kutusu, derleme hataları içeren düzenleme kodu çalıştığınızda ya da yeniden düzenleme neden özgün bağlamasına farklı bir şey bağlamak bir kod başvurusu.  
+   Yazdıktan sonra seçili olduğunda, XML belge açıklamaları için XML öğeleri ekler `///` açıklama giriş. XML belgeleri hakkında daha fazla bilgi için bkz: [XML belgeleri yorumları (C# programlama Kılavuzu)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
 
-Oluşturulan derleyici başvurularıyla üyelerinde uyar  
-Oluşturulan derleyici başvurusu aynı ada sahip bir üye yeniden denediğinizde bir uyarı iletişim kutusu görüntüler.
+- INSERT \* yazarken yeni satır başlangıcında /\* \*/ yorumları
 
-## <a name="xml-documentation-comments"></a>XML Belgeleri Yorumları
+- Yeniden Adlandır izleme için önizleme göster
 
-XML belge açıklamaları için / / / Oluştur  
-Yazdıktan sonra seçili olduğunda, XML belge açıklamaları için XML öğeleri ekler `///` açıklama giriş. XML belgeleri hakkında daha fazla bilgi için bkz: [XML belgeleri yorumları (C# programlama Kılavuzu)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
+- Bölünmüş dize değişmez değerleri üzerinde girin
 
-## <a name="implement-interface"></a>Arabirimi Uygulama
+- Rapor geçersiz yer tutucuları ' dizesi. Biçim ' çağrıları
 
-#Region ile oluşturulan kod surround  
-Bir #region ekler \< *arabirim adı*> arabirimi uygulama veya uygulama arabirimi açıkça kullanıldığında yöntemleri geçici üye.
+## <a name="extract-method"></a>Ayıklama Yöntemi
 
-## <a name="organize-usings"></a>Using'leri düzenleme
+- Ref put veya üzerinde özel yapı çıkış yok
 
-'System' yönergeleri kullanımları sıralarken önce yerleştirin  
-Seçili olduğunda, `System` kullanma yönergeleri görünen diğer önce yönergeleri kullanarak. Daha fazla bilgi için bkz: Düzenle kullanımları [C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation).
+## <a name="implement-interface-or-abstract-class"></a>Arabirimi uygulama ya da soyut sınıf
+
+- Özellikleri, olayları ve yöntemleri eklerken, diğer üyeleriyle aynı türde veya sonunda bunları yerleştirin
+
+- Özellikler oluştururken özellikleri atma tercih veya otomatik özellikleri tercih
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

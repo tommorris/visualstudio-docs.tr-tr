@@ -25,6 +25,7 @@
 ### [Kodu biçimlendirme](formatting-python-code.md)
 ### [Kodu yeniden düzenleme](refactoring-python-code.md)
 ### [PyLint Kullanma](linting-python-code.md)
+## [Özel menü komutlarını tanımlama](defining-custom-python-project-commands.md)
 ## [Etkileşimli Python (REPL)](python-interactive-repl-in-visual-studio.md)
 ### [IPython REPL kullanma](interactive-repl-ipython.md)
 ## [Hata Ayıklama](debugging-python-in-visual-studio.md)

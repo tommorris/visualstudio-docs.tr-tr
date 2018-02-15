@@ -10,17 +10,16 @@ ms.topic: article
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d268ac5eb479a680063eabe4d986657c3ec4013
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 00775856e57392355b1908d4849f1bbbd836c5f2
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="walkthrough-using-msbuild"></a>İzlenecek Yol: MSBuild Kullanma
 MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek yol MSBuild'ın yapı taşlarını tanıtır ve MSBuild projelerini nasıl yazacağınızı, değiştireceğinizi ve hatalarını ayıklayacağınızı gösterir. Şu konularda bilgi edineceksiniz:  
@@ -62,45 +61,33 @@ MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek y
      Proje dosyası kod düzenleyicisinde görüntülenir.  
   
 ## <a name="targets-and-tasks"></a>Hedefler ve Görevler  
- Proje dosyalarıdır kök düğümü XML biçimli dosyalarıyla [proje](../msbuild/project-element-msbuild.md).  
+Proje dosyalarıdır kök düğümü XML biçimli dosyalarıyla [proje](../msbuild/project-element-msbuild.md).  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<Project ToolsVersion="12.0" DefaultTargets="Build"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- Proje öğesinde, xmlns ad alanını belirtmeniz gerekir.  
+Proje öğesinde, xmlns ad alanını belirtmeniz gerekir. Varsa `ToolsVersion` mevcut olduğundan yeni bir proje ile "15.0" olması gerekir.
   
- Uygulama oluşturma işini gerçekleştirilir [hedef](../msbuild/target-element-msbuild.md) ve [görev](../msbuild/task-element-msbuild.md) öğeleri.  
+Uygulama oluşturma işini gerçekleştirilir [hedef](../msbuild/target-element-msbuild.md) ve [görev](../msbuild/task-element-msbuild.md) öğeleri.  
   
 -   Görev, işin en küçük birimdir; başka bir deyişle yapının "atom" öğesidir. Görevler, girdileri ve çıktıları olabilen bağımsız yürütülebilir bileşenlerdir. Şu anda proje dosyasında başvurulan veya tanımlanan görev yoktur. Aşağıdaki bölümlerde proje dosyasına görevler ekleyin. Daha fazla bilgi için bkz: [görevleri](../msbuild/msbuild-tasks.md) konu.  
   
--   Hedef, görevlerin adlandırılmış bir dizisidir. Şu anda, proje dosyasının sonunda HTML yorumlarında bulunan iki hedef vardır: BeforeBuild ve AfterBuild.  
+-   Hedef, görevlerin adlandırılmış bir dizisidir. Daha fazla bilgi için bkz: [hedefleri](../msbuild/msbuild-targets.md) konu.  
   
-    ```xml  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
-  
-     Daha fazla bilgi için bkz: [hedefleri](../msbuild/msbuild-targets.md) konu.  
-  
- Proje düğümü, oluşturulacak olan varsayılan hedefi seçen isteğe bağlı bir DefaultTargets özniteliğine sahiptir, bu durumda bu öznitelik Yapı'dır.  
-  
-```xml  
-<Project ToolsVersion="12.0" DefaultTargets="Build" ...  
-```  
-  
- Yapı hedefi proje dosyasında tanımlı değildir. Bunun yerine, bu dosya Microsoft.CSharp.targets kullanılarak içe aktarılan [alma](../msbuild/import-element-msbuild.md) öğesi.  
+Varsayılan hedef proje dosyasında tanımlı değil. Bunun yerine, içeri aktarılan projelerinde belirtilir. [Alma](../msbuild/import-element-msbuild.md) öğesi alınan projeleri belirtir. Örneğin, bir C# projesinde varsayılan hedef Microsoft.CSharp.targets dosyasından içe aktarılır. 
   
 ```xml  
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />  
 ```  
   
- İçe aktarılan dosyalar, başvuruldukları proje dosyasına etkili biçimde dahil edilir.  
+İçe aktarılan dosyalar, başvuruldukları proje dosyasına etkili biçimde dahil edilir.  
+
+> [!NOTE]
+> .NET Core gibi bazı proje türleri ile basitleştirilmiş bir şema kullanın bir `Sdk` yerine özniteliği `ToolsVersion`. Bu projeleri örtük içeri aktarmalar ve farklı varsayılan öznitelik değerlerine sahip.
   
- MSBuild, bir yapının hedeflerini izler ve her bir hedefin birden kereden fazla oluşturulmamasını sağlar.  
+MSBuild, bir yapının hedeflerini izler ve her bir hedefin birden kereden fazla oluşturulmamasını sağlar.  
   
 ## <a name="adding-a-target-and-a-task"></a>Bir Hedef ve Bir Görev Ekleme  
  Proje dosyasına bir hedef ekleyin. Bir ileti yazdıran hedefe bir görev ekleyin.  
@@ -160,9 +147,6 @@ MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek y
   
  Kod düzenleyicisi ve komut penceresi arasında değişerek proje dosyasını değiştirebilir ve sonuçları hızlı bir şekilde görebilirsiniz.  
   
-> [!NOTE]
->  /t komut anahtarı olmadan msbuild'i çalıştırırsanız msbuild, Proje öğesinin DefaultTarget özniteliği tarafından verilen hedefi, bu durumda "Yapı"yı oluşturur. Bu, BuildApp.exe Windows Formları uygulamasını oluşturur.  
-  
 ## <a name="build-properties"></a>Yapı Özellikleri  
  Yapı özellikleri, yapıya rehberlik eden ad-değer çiftleridir. Birkaç yapı özelliği proje dosyasının üst kısmında zaten tanımlanmıştır:  
   
@@ -180,10 +164,10 @@ MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek y
  Tüm özellikler PropertyGroup öğelerinin alt öğeleridir. Özelliğin adı alt öğenin adıdır ve özelliğinin değeri alt öğenin metin öğesidir. Örneğin,  
   
 ```xml  
-<TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
+<TargetFrameworkVersion>v15.0</TargetFrameworkVersion>  
 ```  
   
- "v12.0" dize değerini vererek TargetFrameworkVersion adlı özelliği tanımlar.  
+ dize değeri "v15.0" vermiş TargetFrameworkVersion adlı özelliği tanımlar.  
   
  Yapı özellikleri herhangi bir zamanda yeniden tanımlanabilir. Eğer  
   
@@ -225,7 +209,7 @@ $(PropertyName)
   
     ```  
     Configuration is Debug  
-    MSBuildToolsPath is C:\Program Files\MSBuild\12.0\bin  
+    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin  
     ```  
   
 > [!NOTE]

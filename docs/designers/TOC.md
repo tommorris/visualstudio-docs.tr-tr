@@ -24,7 +24,6 @@
 ### [WPF Kullanmaya Başlarken](getting-started-with-wpf.md)
 #### [WPF'ye Giriş](introduction-to-wpf.md)
 #### [İzlenecek Yol: İlk WPF Masaüstü Uygulamam](walkthrough-my-first-wpf-desktop-application2.md)
-#### [C# veya Visual Basic ile WPF uygulaması oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 #### [WPF Topluluk Kaynakları](wpf-community-resources.md)
 #### [LINQ to XML ile WPF Verilerini Bağlama](wpf-data-binding-with-linq-to-xml.md)
 ##### [LINQ to XML ile WPF Verilerini Bağlamaya Genel Bakış](wpf-data-binding-with-linq-to-xml-overview.md)

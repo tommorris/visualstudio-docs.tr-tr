@@ -23,9 +23,8 @@
 ### Ağ üzerinde yükleme
 #### [Visual Studio’nun ağ tabanlı yüklemesini oluşturma](install/create-a-network-installation-of-visual-studio.md)
 #### [Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme](install/update-a-network-installation-of-visual-studio.md)
-#### [Visual Studio’yu bir güvenlik duvarı veya proxy sunucusunun arkasına yükleme](install/install-visual-studio-behind-a-firewall-or-proxy-server.md)
-#### [Proxy yetkilendirme hatalarını düzeltme](ide/reference/proxy-authorization-required.md)
-#### [Özel bir ağdaki URL’leri izin verilenler listesine ekleme](ide/whitelisting-urls-in-a-private-network.md)
+#### [Visual Studio’yu bir güvenlik duvarı veya ara sunucusunun arkasına yükleme ve burada kullanma](install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+##### [Visual Studio’yu yüklediğinizde veya kullandığınızda ortaya çıkan ağ sorunlarını giderme](install/troubleshooting-network-related-errors-in-visual-studio.md)
 ### Bir kurumda dağıtma
 #### [Yanıt dosyası ile Visual Studio yüklemesini otomatikleştirme](install/automated-installation-with-response-file.md)
 #### [Visual Studio’yu dağıtırken ürün anahtarlarını otomatik olarak uygulama](install/automatically-apply-product-keys-when-deploying-visual-studio.md)
@@ -188,6 +187,7 @@
 ### [Office ve SharePoint Geliştirme](vsto/office-and-sharepoint-development-in-visual-studio.md)
 ### [XML ve XSLT Dosyaları ile Çalışma](xml-tools/xml-tools-in-visual-studio.md)
 ### Ek Öğreticiler
+#### [C# veya Visual Basic ile WPF uygulaması oluşturma](ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 #### [Öğretici 1: Resim Görüntüleyici Oluşturma (C#)](ide/tutorial-1-create-a-picture-viewer.md)
 ##### [1. Adım: Windows Forms Uygulaması Projesi Oluşturma](ide/step-1-create-a-windows-forms-application-project.md)
 ##### [2. Adım: Programınızı Çalıştırma](ide/step-2-run-your-program.md)

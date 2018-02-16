@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 24eeb39abdee21d5441c88a3fa253d4818fe61e1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1fa4c68b1d7dc89452376d6efc47e047f75d52d6
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Özel komutlar Python projeleri için tanımlama
 
@@ -282,7 +282,7 @@ Aşağıdaki komut yalnızca çalışır `where` proje klasöründe başlangıç
 
 ```xml
 <PropertyGroup>
-  <PythonCommands>$(PythonCommands);InstallMyPackage;ShowOutdatedPackages;ShowAllPythonFilesInProject</PythonCommands>
+  <PythonCommands>$(PythonCommands);ShowAllPythonFilesInProject</PythonCommands>
 </PropertyGroup>
 
 <Target Name="ShowAllPythonFilesInProject" Label="Show Python files in project" Returns="@(Commands)">
@@ -296,6 +296,62 @@ Aşağıdaki komut yalnızca çalışır `where` proje klasöründe başlangıç
 ### <a name="run-server-and-run-debug-server-commands"></a>Sunucu ve çalışma hata ayıklama server komutlarını çalıştırın
 
 Keşfetmek için nasıl **başlangıç sunucu** ve **başlangıç hata ayıklama sunucusunun** web projeleri tanımlanan için komutları inceleyin [Microsoft.PythonTools.Web.targets](https://github.com/Microsoft/PTVS/blob/master/Python/Product/BuildTasks/Microsoft.PythonTools.Web.targets) (GitHub).
+
+### <a name="install-package-for-development"></a>Geliştirme için paketini yükle
+
+```xml
+<PropertyGroup>
+  <PythonCommands>PipInstallDevCommand;$(PythonCommands);</PythonCommands>
+</PropertyGroup>
+
+<Target Name="PipInstallDevCommand" Label="Install package for development" Returns="@(Commands)">
+    <CreatePythonCommandItem Target="pip" TargetType="module" Arguments="install --editable $(ProjectDir)"
+        WorkingDirectory="$(WorkingDirectory)" ExecuteIn="Repl:Install package for development">
+      <Output TaskParameter="Command" ItemName="Commands" />
+    </CreatePythonCommandItem>
+  </Target>
+```
+
+*Gelen [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) izniyle kullanılır.*
+
+### <a name="generate-windows-installer"></a>Windows Installer oluştur
+
+```xml
+<PropertyGroup>
+  <PythonCommands>$(PythonCommands);BdistWinInstCommand;</PythonCommands>
+</PropertyGroup>
+
+<Target Name="BdistWinInstCommand" Label="Generate Windows Installer" Returns="@(Commands)">
+    <CreatePythonCommandItem Target="$(ProjectDir)setup.py" TargetType="script"
+        Arguments="bdist_wininst --user-access-control=force --title &quot;$(InstallerTitle)&quot; --dist-dir=&quot;$(DistributionOutputDir)&quot;"
+        WorkingDirectory="$(WorkingDirectory)" RequiredPackages="setuptools"
+        ExecuteIn="Repl:Generate Windows Installer">
+      <Output TaskParameter="Command" ItemName="Commands" />
+    </CreatePythonCommandItem>
+  </Target>
+```
+
+*Gelen [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) izniyle kullanılır.*
+
+### <a name="generate-wheel-package"></a>Tekerlek paketi oluştur
+
+```xml
+<PropertyGroup>
+  <PythonCommands>$(PythonCommands);BdistWheelCommand;</PythonCommands>
+</PropertyGroup>
+
+<Target Name="BdistWheelCommand" Label="Generate Wheel Package" Returns="@(Commands)">
+
+  <CreatePythonCommandItem Target="$(ProjectDir)setup.py" TargetType="script"
+      Arguments="bdist_wheel --dist-dir=&quot;$(DistributionOutputDir)&quot;"
+      WorkingDirectory="$(WorkingDirectory)" RequiredPackages="wheel;setuptools"
+      ExecuteIn="Repl:Generate Wheel Package">
+    <Output TaskParameter="Command" ItemName="Commands" />
+  </CreatePythonCommandItem>
+</Target>
+```
+
+*Gelen [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) izniyle kullanılır.*
 
 ## <a name="troubleshooting"></a>Sorun giderme
 
@@ -329,7 +385,7 @@ Belirten içeriğini `<Target>` veya `<CreatePythonCommandItem>` öğeleri yanl�
 - Gerekli `Target` özniteliği boştur.
 - Gerekli `TargetType` özniteliği boş veya tanınmayan bir değer içeriyor.
 - Gerekli `ExecuteIn` özniteliği boş veya tanınmayan bir değer içeriyor.
-- `ErrorRegex`veya `WarningRegex` ayarlamadan belirtildi `ExecuteIn="output"`.
+- `ErrorRegex` veya `WarningRegex` ayarlamadan belirtildi `ExecuteIn="output"`.
 - Tanınmayan öznitelikleri öğe yok. Örneğin, kullanmış `Argumnets` (yanlış yazılmış) yerine `Arguments`.
 
 Öznitelik değerleri tanımlı olmayan bir özelliğe başvurursanız boş olabilir. Örneğin, belirteç kullanırsanız, `$(StartupFile)` ancak herhangi bir başlatma dosyası proje tanımlanan sonra belirteç çözümler için boş bir dize. Böyle durumlarda, varsayılan değer tanımlamak isteyebilirsiniz. Örneğin, **Server'i** ve **Run hata ayıklama sunucusu** komutları Bottle, Flask, tanımlanan ve Django proje şablonları varsayılan `manage.py` sunucu başlangıç dosyasını aksi belirtmediyseniz Proje Özellikleri'nde.

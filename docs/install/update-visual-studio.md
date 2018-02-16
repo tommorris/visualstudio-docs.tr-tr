@@ -4,7 +4,8 @@ description: "Visual Studio, adım adım güncelleştirme konusunda bilgi edinin
 ms.date: 12/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,12 +15,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f9e4c2609c6739708437decd581dfdb88f87135d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e61def66e68d7f889349d0e7b7337238e220dce
+ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Visual Studio 2017 en son sürüme güncelleştir
 Genellikle işlevselliğini genişletmek için ve müşteri bildirilen sorunları düzeltmek için Visual Studio güncelleştiriyoruz. En çok olduğundan emin olmak için [Visual Studio'nun geçerli, en iyi duruma getirilmiş sürüm](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#release-history), güncelleştirmek istediğiniz. İşte nasıl.
@@ -84,6 +86,6 @@ Birkaç diğer destek seçenekleri şunlardır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 * [Visual Studio 2017 yükleyin](install-visual-studio.md)
-* [Visual Studio 2017 değiştirme](modify-visual-studio.md)
+* [Modify Visual Studio 2017](modify-visual-studio.md)
 * [Visual Studio 2017 kaldırma](uninstall-visual-studio.md)
 * [Visual Studio Yöneticiler Kılavuzu](visual-studio-administrator-guide.md)

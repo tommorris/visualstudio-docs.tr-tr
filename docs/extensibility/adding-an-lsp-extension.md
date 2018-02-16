@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98bbebfb5f82d10179897e94b6a49cbb3d8c6220
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 5124547737405af8309161df90356f607909c0fa
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Dil sunucu protokolü uzantısına ekleme
 
@@ -52,7 +52,7 @@ Aşağıdaki LSP özellikleri Visual Studio'da kadarki desteklenir:
 İleti | Visual Studio'da desteğine sahip
 --- | ---
 başlatma | Evet
-başlatıldı | 
+başlatıldı | Evet
 kapatma | Evet
 Çıkış | Evet
 $/ cancelRequest | Evet
@@ -72,12 +72,12 @@ textDocument/didOpen | Evet
 textDocument/didChange | Evet
 textDocument/willSave |
 textDocument/willSaveWaitUntil |
-textDocument/didSave |
+textDocument/didSave | Evet
 textDocument/didClose | Evet
 textDocument/tamamlama | Evet
 Tamamlama/Çöz | Evet
-textDocument/vurgulu |
-textDocument/signatureHelp |
+textDocument/vurgulu | Evet
+textDocument/signatureHelp | Evet
 textDocument/başvuruları | Evet
 textDocument/documentHighlight |
 textDocument/documentSymbol | Evet
@@ -210,6 +210,16 @@ namespace MockLanguageExtension
         public async Task OnLoadedAsync()
         {
             await StartAsync?.InvokeAsync(this, EventArgs.Empty);
+        }
+
+        public async Task OnServerInitializeFailedAsync(Exception e)
+        {
+            return Task.CompletedTask;
+        }
+
+        public async Task OnServerInitializedAsync()
+        {
+            return Task.CompletedTask;
         }
     }
 }
@@ -428,6 +438,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
     public async Task<string> SendServerCustomMessage(string test)
     {
         return await this.customMessageRpc.InvokeAsync<string>("OnCustomRequest", test);
+    }
 }
 ```
 
@@ -440,7 +451,6 @@ Her LSP ileti kişiler tarafından ele için kendi orta katman arabirimine sahip
 ```csharp
 public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 {
-
     public object MiddleLayer => MiddleLayerProvider.Instance;
 
     private class MiddleLayerProvider : ILanguageClientWorkspaceSymbolProvider
@@ -459,6 +469,7 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
             // Only return symbols that are "files"
             return symbols.Where(sym => string.Equals(new Uri(sym.Location.Uri).Scheme, "file", StringComparison.OrdinalIgnoreCase)).ToArray();
         }
+    }
 }
 ```
 

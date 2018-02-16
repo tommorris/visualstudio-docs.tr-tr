@@ -5,7 +5,8 @@ ms.custom:
 ms.date: 08/01/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +18,13 @@ ms.assetid:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 3862c6ed49e00ffa3800cccbedb2b846823418ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>Bir güvenlik duvarı veya proxy sunucunun arkasındaki Visual Studio yükleme
 
@@ -35,14 +37,14 @@ Ortamınız için Mümkünse, HTTP ve HTTPS protokolleri aşağıdaki alanlarıy
 | ------ | ------- |
 | go.microsoft.com | Kurulum URL çözümleme |
 | aka.MS | Kurulum URL çözümleme |
-| download.VisualStudio.microsoft.com | Paketleri indirme konumu Kurulumu |
+| download.visualstudio.microsoft.com | Paketleri indirme konumu Kurulumu |
 | download.microsoft.com | Paketleri indirme konumu Kurulumu |
-| download.VisualStudio.com | Paketleri indirme konumu Kurulumu |
-| DL.xamarin.com | Paketleri indirme konumu Kurulumu |
+| download.visualstudio.com | Paketleri indirme konumu Kurulumu |
+| dl.xamarin.com | Paketleri indirme konumu Kurulumu |
 | visualstudiogallery.msdn.microsoft.com | Visual Studio uzantıları konumu indirin |
-| www.VisualStudio.com | Belge konumu |
+| www.visualstudio.com | Belge konumu |
 | docs.microsoft.com | Belge konumu |
-| MSDN.microsoft.com | Belge konumu |
+| msdn.microsoft.com | Belge konumu |
 | www.microsoft.com | Belge konumu |
 | *.windows.net | Oturum açma konumu |
 | *.microsoftonline.com | Oturum açma konumu |
@@ -52,16 +54,16 @@ Ortamınız için Mümkünse, HTTP ve HTTPS protokolleri aşağıdaki alanlarıy
 ## <a name="non-microsoft-domains"></a>Microsoft olmayan etki alanları
 | Etki Alanı | Bu iş yükleri yükler |
 | ------ | ------- |
-| Archive.apache.org |  JavaScript ile Mobil Geliştirme <br />(Cordova) |
-| cocos2d x.org | C++ ile oyun geliştirme <br />(Cocos) |
+| archive.apache.org |  JavaScript ile Mobil Geliştirme <br />(Cordova) |
+| cocos2d-x.org | C++ ile oyun geliştirme <br />(Cocos) |
 | download.epicgames.com | C++ ile oyun geliştirme <br />(Unreal Engine) |
-| download.Oracle.com | JavaScript ile Mobil Geliştirme <br />(Java SDK'sı) <br /><br />.NET ile Mobil Geliştirme <br />(Java SDK'sı) |
+| download.oracle.com | JavaScript ile Mobil Geliştirme <br />(Java SDK) <br /><br />.NET ile Mobil Geliştirme <br />(Java SDK) |
 | download.unity3d.com | Unity ile oyun geliştirme <br />(Unity) |
 | netstorage.unity3d.com | Unity ile oyun geliştirme <br /> (Unity) |
-| DL.Google.com | JavaScript ile Mobil Geliştirme <br />(Android SDK ve NDK, öykünücüsü) <br /><br />.NET ile Mobil Geliştirme <br />(Android SDK ve NDK, öykünücüsü) |
+| dl.google.com | JavaScript ile Mobil Geliştirme <br />(Android SDK ve NDK, öykünücüsü) <br /><br />.NET ile Mobil Geliştirme <br />(Android SDK ve NDK, öykünücüsü) |
 | www.incredibuild.com | C++ ile oyun geliştirme <br />(IncrediBuild) |
-| incredibuildvs2017i.azureedge.NET | C++ ile oyun geliştirme <br />(IncrediBuild) |
-| www.Python.org | Python geliştirme <br />(Python) <br /><br />Veri bilimi ve analitik uygulamalar <br />(Python) |
+| incredibuildvs2017i.azureedge.net | C++ ile oyun geliştirme <br />(IncrediBuild) |
+| www.python.org | Python geliştirme <br />(Python) <br /><br />Veri bilimi ve analitik uygulamalar <br />(Python) |
 
 ## <a name="get-support"></a>Destek alma
 Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).

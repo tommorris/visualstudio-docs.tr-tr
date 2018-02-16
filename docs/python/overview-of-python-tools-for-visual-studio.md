@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7c81cd0308dc40049e4d067369e3dcacc1f839a3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9236a36e6041cb22f6206c08662cb16be846cf85
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Python Visual Studio (Windows) ile çalışma
 
@@ -56,15 +56,15 @@ Kısa bir video giriş için bkz [Visual Studio için Python Araçları](https:/
 
 ## <a name="questions-and-answers"></a>Sorular ve yanıtlar
 
-**Q. Python desteği Mac için Visual Studio ile var mı?**
+Q. Python desteği Mac için Visual Studio ile var mı?**
 
 A. Değil şu anda rağmen istenen üzerinde [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). [Mac için Visual Studio](/visualstudio/mac/) belgelerine destekliyor mu geliştirme geçerli türlerini tanımlar. Bu arada, Visual Studio Code Windows, Mac ve Linux [çalışır kullanılabilir uzantıları yoluyla Python ile iyi](https://code.visualstudio.com/docs/languages/python).
 
-**Q. Ne Python ile kullanıcı Arabirimi oluşturmak için kullanabilir miyim?**
+Q. Ne Python ile kullanıcı Arabirimi oluşturmak için kullanabilir miyim?**
 
 A. Bu alandaki ana bir tekliftir [Qt proje](https://www.qt.io/qt-for-application-development/), olarak bilinen Python için bağlamalarla [PySide (resmi bağlama)](http://wiki.qt.io/PySide) (Ayrıca bkz. [PySide indirmeleri](https://download.qt.io/official_releases/pyside/.)) ve [ PyQt](https://wiki.python.org/moin/PyQt). Şu anda herhangi belirli araçları UI geliştirme için Visual Studio'da Python desteği içermez.
 
-**Q. Python proje tek başına yürütülebilir dosya oluşturabilir mi?**
+Q. Python proje tek başına yürütülebilir dosya oluşturabilir mi?**
 
 A. Python ile kod Visual Studio ile web sunucuları gibi uygun bir Python özellikli ortamda isteğe bağlı çalıştığı bir yorumlama dili genellikle içindir. Visual Studio kendisini şu anda temelde katıştırılmış bir Python yorumlayıcısı sahip bir program anlamına gelir bir tek başına yürütülebilir oluşturulacağı anlamına gelir sağlamaz. Ancak, yürütülebilir dosyalar açıklandığı gibi oluşturmak için çeşitli anlamına gelir Python topluluk içinde vardır [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython de destekler yerel bir uygulama içinde yerleşik blog gönderisi konusunda açıklandığı gibi [kullanarak CPython'ın gömülebilir ZIP dosyasını](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
 
@@ -81,7 +81,8 @@ Python özellikleri açıklandığı gibi aşağıdaki Visual Studio sürümleri
 - Visual Studio 2012 (Pro sürümü veya üzeri)
 - Visual Studio 2010 SP1 (Pro sürümü veya üzeri; .NET 4.5 gerekiyor)
 
-Özelliklerin tam olarak desteklenir ve yalnızca en son sürümü Visual Studio için sağlanmıştır. Özellikleri, eski sürümlerinde kullanılabilir, ancak etkin bir şekilde korunmuyor.
+> [!Important]
+> Özelliklerin tam olarak desteklenir ve yalnızca en son sürümü Visual Studio için sağlanmıştır. Özellikleri, eski sürümlerinde kullanılabilir, ancak etkin bir şekilde korunmuyor.
 
 | Python desteği | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|

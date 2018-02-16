@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -93,27 +94,31 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b5353009e2fbfc26898f4163aaad98dd8651c5b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5466d764413283cb3f33525f12d7782c02ce6925
+ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Tümleşik Yazılım Geliştirme Ortamı Hatalarında Sorun Giderme Kaynakları
 Tüm hata iletilerini belirli bir ilişkili Yardım konusu vardır. Hata iletisindeki bilgiler sorunu gidermenize yardımcı olmazsa, Bilgi Bankası makaleleri, geliştirici topluluğu veya ürün desteği gibi başka kaynaklar başvurabilirsiniz.  
-  
+
 ## <a name="knowledge-base-articles"></a>Bilgi Bankası Makaleleri  
  Ürün sorunları hakkında makaleler için Bilgi Bankası'nda (BB) çevrimiçi arama yapabilirsiniz. Tüm sorunlarla ilgili bir BB makalesi yoktur; ancak çok sayıda müşterinin karşılaştığı hatalar genellikle belgelenmiştir. KB makalelerini erişebileceğiniz [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) Web sitesi.  
-  
+
 ## <a name="the-developer-community"></a>Geliştirici topluluğu  
  Forumlar, diğer geliştiriciler ve aynı zamanda Microsoft çalışanları ile etkileşimde bulunmanızı sağlar. Çözüm bulamadığınız bir hata ile karşılaşırsanız, bu sorunla ilgili sorularınızı bir forumda paylaşabilirsiniz. Ayrıca, başkalarının aynı sorunla ilgili paylaşım yapıp yapmadığını görmek için haber gruplarında da arama yapabilirsiniz.  
-  
+
  Üzerinde forumlar, blogları, sohbet ve diğer kaynaklara erişebilir [Microsoft Teknik topluluklarına](http://go.microsoft.com/fwlink/?LinkID=144922) Web sitesi.  
-  
+
 ## <a name="product-support"></a>Ürün Desteği  
  Diğer kaynaklar denedikten sonra hala sorularınız varsa, Microsoft Destek Hizmetleri ziyaret ederek başvurabilirsiniz [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) Web sitesi. Bölgenizde kullanılabilen ürün desteği hakkında daha fazla bilgi için bkz: [konuşun bize](../../ide/talk-to-us.md).
+
+ ## <a name="see-also"></a>Ayrıca bkz.
+ * [Proxy sorun giderme](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)

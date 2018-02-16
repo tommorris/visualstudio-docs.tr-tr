@@ -1,1 +1,1 @@
-# [Dizin](index.md)
+# [Index](index.md)

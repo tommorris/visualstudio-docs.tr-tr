@@ -2,7 +2,7 @@
 title: "Visual Studio'da Python uygulamaları için projeleri yönetme | Microsoft Docs"
 description: "Visual Studio projelerinde amacını açıklayan, Python kodu için proje oluşturma ve yönetme gösterir ve Python için kullanılabilen farklı proje şablonları özetler."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9f1cc2abdc78da1279367432741ca30b5885335
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="python-projects"></a>Python projeleri
 
@@ -40,11 +40,10 @@ Visual Studio Python proje şablonları varolan bir klasör ağacında bir proje
 >
 > Bölümünde açıklandığı gibi basit sağlasa da var olan koddan bir Visual Studio projesi oluşturmak için olan [var olan dosyalarından proje oluşturma](#creating-a-project-from-existing-files).
 
-Video Visual Studio'da Python projeleri giriş için bkz [alma Python kodu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567) (Microsoft Virtual Academy, 2m17s).
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567]
-
-Ayrıca bkz. eski video [derinlemesine: Python projeleri ile kaynak denetimi kullanarak](https://youtu.be/Aq8eqApnugM) (youtube.com, 8m55s).
+|   |   |
+|---|---|
+| ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | [(Microsoft Virtual Academy) bir video izlemek](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) giriş Python projeleri (2 m 17s) için. |
+| ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | Ayrıca bkz. [derinlemesine: kaynak denetimi ile Python projeleri kullanarak](https://youtu.be/Aq8eqApnugM) (youtube.com, 8 m 55s). |
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Dosya ekleme, bir başlatma dosyası atama ve ortamları ayarlama
 

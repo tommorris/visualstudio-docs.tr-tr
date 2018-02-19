@@ -21,11 +21,11 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7958724c5909f7738d43bc7f502c03c6146e2f2f
-ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
+ms.openlocfilehash: d4d1e330a6ab378c61876b3f869f88b2a29c35a1
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Yüklediğinizde veya Visual Studio kullandığınızda ağ ile ilgili sorun giderme
 Yüklediğinizde veya bir güvenlik duvarı veya proxy sunucunun Visual Studio'yu kullanma karşılaşabileceğiniz en tipik ağ veya proxy ilgili hataları biz çözümleri açıyor.
@@ -34,7 +34,7 @@ Yüklediğinizde veya bir güvenlik duvarı veya proxy sunucunun Visual Studio'y
 
 Bu hata genellikle kullanıcılar bir proxy sunucu üzerinden Internet'e bağlı ve proxy sunucusu için bazı ağ kaynaklarına Visual Studio yapar çağrıları engeller oluşur.
 
-#### <a name="to-fix-this-error"></a>Bu hatayı düzeltmek için:
+### <a name="to-fix-this-error"></a>Bu hatayı düzeltmek için:
 
 - Visual Studio'yu yeniden başlatın. Proxy kimlik doğrulaması iletişim kutusu görünür. İletişim kutusunda istendiğinde, kimlik bilgilerinizi girin.
 
@@ -80,7 +80,7 @@ Bir güvenlik duvarı olan özel bir ağda Visual Studio kullanıyorsanız, Visu
 
 Visual Studio, ağ kaynaklarına bağlanmak için Aktarım Katmanı Güvenliği (TLS) 1.2 protokolünü kullanır. Visual Studio TLS 1.2 kullandığı durumlarda bazı özel ağlar üzerindeki güvenlik gereçlerinin bazı sunucu bağlantılarını Engellemesi.
 
-#### <a name="to-fix-this-error"></a>Bu hatayı düzeltmek için:
+### <a name="to-fix-this-error"></a>Bu hatayı düzeltmek için:
 
 Aşağıdaki URL'ler için bağlantılar sağlar:
 
@@ -124,6 +124,6 @@ Birkaç diğer destek seçenekleri şunlardır:
 * ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
-* [Yükleme ve bir güvenlik duvarı veya proxy sunucunun arkasındaki Visual Studio kullanma](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+* [Visual Studio’yu bir güvenlik duvarı veya ara sunucusunun arkasına yükleme ve burada kullanma](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Visual Studio 2017 yükleyin](install-visual-studio.md)

@@ -1,9 +1,10 @@
 ---
-title: "Visual Studio genel bakış | Microsoft Docs"
+title: "Visual Studio 2017 genel bakış | Microsoft Docs"
 ms.custom: 
-ms.date: 11/09/2017
+ms.date: 02/05/2018
 ms.reviewer: 
 ms.suite: 
+ms.technology: vs-ide-general
 ms.topic: article
 author: gewarren
 f1_keywords:
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 242de63001f7df364dacbef3f3b57446ba1e724f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8fc4946c79b16b3fb28e0991ff38cfe96e22a9e1
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE genel bakış
 
@@ -49,7 +50,7 @@ Bağlantılı Hizmetler gibi kullanarak, uygulamaları için Azure services yara
 
 [HockeyApp](https://www.visualstudio.com/hockey-app/) beta sürümlerini dağıtmak, Canlı çökme raporlarını toplar ve gerçek kullanıcılardan geri bildirim alma yardımcı olur. Ayrıca, Office 365 REST API'leri bulutta depolanan veriler bağlanmak için kendi uygulamanızı içine tümleştirebilirsiniz. Daha fazla bilgi için bkz: [bu GitHub örnekleri](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
-[Application Insights](https://marketplace.visualstudio.com/items?itemName=VisualStudioOnlineApplicationInsights.application-insights) algılamak ve uygulamalarınızı Kalite sorunlarını tanılamak ve web hizmetlerini yardımcı olur. Application Insights Ayrıca, kullanıcı deneyimini iyileştirmek için kullanıcılarınızın gerçekte uygulamanızla ne anlamanıza yardımcı olur.
+[Application Insights](https://marketplace.visualstudio.com/items?itemName=VisualStudioOnlineApplicationInsights.application-insights) algılamak ve uygulamalarınızı Kalite sorunlarını tanılamak ve web hizmetlerini yardımcı olur. Application Insights da yardımcı olur, kullanıcı deneyimini iyileştirmek için kullanıcılarınızın gerçekte ile uygulamanızı ne anlama.
 
 ### <a name="create-apps-for-the-web"></a>Web uygulamaları oluşturma
 
@@ -59,118 +60,109 @@ Daha fazla bilgi için bkz: [Modern Web Tooling](https://www.visualstudio.com/vs
 
 ### <a name="build-cross-platform-apps-and-games"></a>Platformlar arası uygulamaları ve oyunları derleme
 
-Visual Studio, Android, iOS, Linux, Windows ve diğer aygıtlar için uygulama ve oyun oluşturmak için kullanabilirsiniz. Yerinde hakkında daha fazla bilgi [platformlar arası mobil geliştirme](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Evrensel Windows uygulamaları birden çok platform genelinde kodunuzu yararlanan yardımcı olur. Bkz: [Evrensel Windows uygulamaları](https://dev.windows.com/windows-apps) daha fazla bilgi için.
+Visual Studio, uygulamaları ve oyunları macOS, Linux ve Windows için yanı sıra Android, iOS ve diğer mobil cihazlar için oluşturmak için kullanabilirsiniz.
 
-İhtiyacınız olan araçları, uygulama gereksinimleri ve kullanmak istediğiniz dil göre seçin:
+- Yapı [.NET Core](/dotnet/core/) Windows, macOS ve Linux üzerinde çalışan uygulamalar.
 
-- [Visual Studio için Xamarin](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): tüm aygıtlar için C# ' ta temel ortak bir kod.
+- Kullanarak iOS, Android ve Windows C# ve F # için mobil uygulamalar oluşturma [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
-- [Apache Cordova için Visual Studio Araçları](../cross-platform/visual-studio-tools-for-apache-cordova.md): HTML, CSS ve JavaScript veya Typescript için temel ortak bir kod.
+- Standart web teknolojileri kullanan&mdash;HTML, CSS ve JavaScript&mdash;kullanarak iOS, Android ve Windows için mobil uygulamaları oluşturmak için [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 
-- [Unity için Visual Studio Araçları](../cross-platform/visual-studio-tools-for-unity.md): C# 2B/3B oyun geliştirme.
+- 2B ve 3B oyunlar C# kullanarak yapı [Unity için Visual Studio Araçları](../cross-platform/visual-studio-tools-for-unity.md).
 
-- [Platformlar arası geliştirme için C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md): paylaşılan kodu kitaplıkları ve c++ uygulamaları.
+- Yapı yerel C++ uygulamaları iOS, Android ve Windows cihazları ve Paylaşım ortak kodun kullanarak iOS, Android ve Windows için yerleşik kitaplıklarında [C++ platformlar arası geliştirme için](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
 
-- [Android için Visual Studio öykünücüsü](../cross-platform/visual-studio-emulator-for-android.md): Android için Visual Studio öykünücüsü: hata ayıklama ve IDE olsun Android uygulamalarınızı test etme.
+- Dağıtma, test ve Android uygulamaları ile hata ayıklama [Android öykünücüsü](../cross-platform/visual-studio-emulator-for-android.md).
 
-[Visual Studio kullanarak oyun oluşturmak](https://www.visualstudio.com/vs/game-development/) DirectX, Unity, gerçekleşmemiş hesabı, Cocos ve daha fazlası gibi oyun geliştirme araçları ile.
-
-Visual Studio yapabilir Yardım pek çok şey daha yapın. Daha kapsamlı bir liste için bkz: [Visual Studio IDE](https://www.visualstudio.com/vs/).
+Visual Studio yapabilir Yardım pek çok şey daha yapın. Daha kapsamlı bir liste için bkz: [www.visualstudio.com](https://www.visualstudio.com/vs/).
 
 ## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE yükleyin
 
 Başlamak için Visual Studio indirin ve sisteminizde yükleyin. Adresinden indirebilirsiniz [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).
 
-Visual Studio artık her zamankinden daha fazla basit! Modüler yükleyici seçin ve yüklemenize olanak sağlayan *iş yükleri*, hangi gruplarıdır programlama dili veya tercih ettiğiniz platform için gerekli özellikleri. Bu strateji, yükler ve çok daha hızlı güncelleştirmeleri yüklemesi ayak izinin Visual Studio zamankinden daha, daha küçük tutmaya yardımcı olur.
+Visual Studio zamankinden daha basit sunulmuştur. Modüler yükleyici seçin ve yüklemenize olanak sağlayan *iş yükleri*, hangi gruplarıdır programlama dili veya tercih ettiğiniz platform için gerekli özellikleri. Bu strateji, yükler ve çok daha hızlı güncelleştirmeleri yüklemesi ayak izinin Visual Studio zamankinden daha, daha küçük tutmaya yardımcı olur. Geliştirilmiş yükleme performansını yanı sıra, Visual Studio 2017 kısa IDE başlatma ve kez yük çözümü vardır.
 
-Bir program oluşturmak için adımları için seçip yükleyebileceğiniz emin olun **Evrensel Windows platformu geliştirme** iş yükü.
+Sisteminizde Visual Studio'yu ayarlama hakkında daha fazla bilgi edinmek için [yükleme Visual Studio 2017](../install/install-visual-studio.md). İçin adımları izlemeniz [bir program oluşturmak](#create-a-program), seçtiğinizden emin olun **.NET Core platformlar arası geliştirme** yükleme sırasında iş yükü.
 
-![Visual Studio yükleyicisi](../ide/media/vside_tour_install_dialog.png)
-
-Geliştirilmiş yükleme performansını yanı sıra, Visual Studio 2017 kısa IDE başlatma ve kez yük çözümü vardır.
-
-Sisteminizde Visual Studio'yu ayarlama hakkında daha fazla bilgi edinmek için [yükleme Visual Studio 2017](../install/install-visual-studio.md).
+![Visual Studio yükleyicisi](../ide/media/overview-net-core-workload.png)
 
 ## <a name="sign-in"></a>Oturum Aç
 
-Visual Studio ilk kez başlattığınızda, isteğe bağlı olarak Microsoft hesabınızı veya iş kullanarak oturum açın veya Okul hesabı. İmzalı birden çok cihazda pencere düzenlerini gibi Visual Studio ayarları senkronize olanak sağlar. Ayrıca, otomatik olarak Azure Abonelikleriniz ve Visual Studio Team Services gibi gerekebilecek Hizmetleri bağlanır.
+Visual Studio ilk kez başlattığınızda, isteğe bağlı olarak Microsoft hesabınızı veya iş kullanarak oturum açın veya Okul hesabı. İmzalı birden çok cihazda pencere düzenlerini gibi Visual Studio ayarları senkronize olanak sağlar. Ayrıca, otomatik olarak ihtiyacınız olabilecek, Azure abonelikleri gibi hizmetleri bağlanır ve [Visual Studio Team Services](/vsts/).
 
 ## <a name="create-a-program"></a>Bir program oluşturun
 
 Bir konu hakkında bilgi edinmek için bir iyi kullanılacağını yoludur! Şimdi daha yakından inceleyin ve yeni, basit bir program oluşturun.
 
-1. Visual Studio'yu açın. Menüsünde, **dosya** > **yeni** > **proje**.
+1. Visual Studio'yu açın. Menüsünde, **dosya** > **yeni** > **proje...** .
 
-  ![ekran görüntüsü](../ide/media/VSIDE_Tour_NewProject1.png)
+  ![Dosya > Yeni Proje menü çubuğunda](../ide/media/VSIDE_Tour_NewProject1.png)
 
-  Alternatif olarak, başlangıç sayfasını kullanarak yeni bir proje oluşturabilirsiniz. Daha fazla bilgi için bkz: [yeniden tasarlanmıştır başlangıç sayfası (blog) kadar yararlanmak istiyorsanız](https://blogs.msdn.microsoft.com/visualstudio/2016/11/29/harness-the-power-of-the-redesigned-start-page/).
+1. **Yeni proje** iletişim kutusu birkaç proje şablonları gösterir. Seçin **.NET Core** kategorisi altında **Visual C#**ve ardından **konsol uygulaması (.NET Core)** şablonu. İçinde **adı** metin kutusuna, "HelloWorld" yazın. Seçin **Tamam** düğmesi.
 
-1. **Yeni proje** iletişim kutusu birkaç proje şablonları gösterir. Seçin **Windows Evrensel** kategorisi altında **Visual C#**, seçin **boş uygulama (Evrensel Windows)** şablonu ve ardından **Tamam**düğmesi.
+  ![.NET core uygulama şablonu](../ide/media/overview-new-project-dialog.png)
 
   > [!NOTE]
-  > Görmüyorsanız, **Windows Evrensel** kategorisi, yüklemeniz gereken **Evrensel Windows platformu geliştirme** iş yükü. Bunu yapmak için seçin **açık Visual Studio yükleyicisi** alt sol tarafındaki bağlantı **yeni proje** iletişim. Sonra **Visual Studio yükleyicisi** açar, select **Evrensel Windows platformu geliştirme** iş yükü ve ardından **Değiştir**.
+  > Görmüyorsanız, **.NET Core** kategorisi, yüklemeniz gereken **.NET Core platformlar arası geliştirme** iş yükü. Bunu yapmak için seçin **açık Visual Studio yükleyicisi** alt sol tarafındaki bağlantı **yeni proje** iletişim. Sonra **Visual Studio yükleyicisi** açar, aşağı kaydırın ve seçin **.NET Core platformlar arası geliştirme** iş yükü ve ardından **Değiştir**.
 
-  ![UWP boş uygulama şablonu](../ide/media/new-uwp-blank-app-template.png)
+   Visual Studio projenizi oluşturmak için şablon kullanır. Çağıran basit bir "Hello World" uygulaması olan <xref:System.Console.WriteLine> değişmez değer dize "Hello World!" görüntülenecek yöntemi Konsol penceresinde.
 
-  C# ve XAML programlama dillerini kullanarak yeni bir boş Evrensel Windows uygulama projesi oluşturur. Visual Studio projeyi sizin için ayarlar için biraz bekleyin. Yalnızca herhangi bir bilgi istenirse, şu an için varsayılan değerleri kabul edin.
+1. Kısa bir süre sonra aşağıdaki ekran görüntüsüne benzer bir şey görmeniz gerekir:
 
-1. İçinde **yeni evrensel Windows platformu projesi** iletişim kutusunda, seçerek Varsayılanları kabul **Tamam**.
+  ![Visual Studio IDE](../ide/media/overview-ide-console-app.png)
 
-1. Kısa bir süre sonra aşağıdaki ekran görüntüsüne benzer bir şey görmeniz gerekir. Proje dosyalarınıza sağ tarafında Çözüm Gezgini adlı bir penceresinde listelenir.
+   Uygulamanız için C# kod alanı çoğunu alır Düzenleyicisi penceresinde gösterilir. Kod, anahtar sözcükleri ve türleri gibi farklı türlerde belirtmek için kod sözdizimini otomatik olarak renklendirilen dikkat edin. Ayrıca, hangi küme ayraçları birbiriyle eşleşen kodda küçük, dikey kesikli satırlar belirtmek ve kodu daha sonra bulun Yardım satır numaraları. Daraltma veya kod genişletmek için küçük, paketlenmiş eksi işareti seçebilirsiniz. Anahat oluşturma özelliği bu kod, ekranda dağınıklığı en aza indirmek için yardımcı olma, gerekmeyen kod gizleme olanak sağlar.
 
-  ![ekran görüntüsü](../ide/media/VSIDE_Tour_NewProject3.png)
+   Proje dosyaları olarak adlandırılan bir penceresinde sağ tarafta listelenen **Çözüm Gezgini**.
 
-1. Çözüm Gezgini'nde az siyah üçgen genişletmek için MainPage.xaml dosya yanındaki seçin ve MainPage.xaml.cs dosya altında görmeniz gerekir. Dosyayı açın (C# kodu içeren) bu dosyayı seçin.
-
-  Ekranın sol tarafındaki Kod düzenleyicisinde MainPage.xaml.cs C# kodu görüntülenir. Kod deyimleri veya açıklamalar gibi farklı türlerde belirtmek için kod sözdizimini otomatik olarak renklendirilen dikkat edin. Ayrıca, hangi küme ayraçları birbiriyle eşleşen kodda küçük, dikey kesikli satırlar belirtmek ve kodu daha sonra bulun Yardım satır numaraları. Daraltma veya kod genişletmek için küçük, paketlenmiş eksi işareti seçebilirsiniz. Anahat oluşturma özelliği bu kod, ekranda dağınıklığı en aza indirmek için yardımcı olma, gerekmeyen kod gizleme olanak sağlar.
-
-  ![](../ide/media/VSIDE_Tour_NewProject3a.png)
+  ![Visual Studio IDE kırmızı kutuları](../ide/media/overview-ide-console-app-red-boxes.png)
 
   Diğer menüleri ve araç pencereleri kullanılabilir olduğundan, ancak şimdi taşımanız şimdilik.
 
-1. Kullanıcıların uygulamanızı ile etkileşim kurmak için bir yol sağlamak için XAML forma bir düğme ekleyin. Bunu yapmak için MainPage.xaml dosyasını açın. Bu bölme görünüm gösterir: Tasarımcı arkasındaki XAML kod gösteren denetimler ve kod görünümü aşağıdaki görsel olarak yerleştirmek için bir tasarımcı yukarıdaki. Programı daha sonra çalıştırdığınızda, kullanıcıların göreceği, "form", bir pencere Tasarımcısı'nda bkz olur ve temel XAML formda görünen belirler.
+1. Şimdi, uygulamayı başlatın. Bunu seçerek yapmak **hata ayıklama olmadan Başlat** gelen **hata ayıklama** menü çubuğundaki menüsü. Tuşlarına da basabilirsiniz **Ctrl**+**F5**.
 
-1. Ekranın sol tarafında seçin **araç** sekmesini araç kutusunu açın. Araç kutusu formlara ekleyebileceğiniz görsel denetimler sayısını içerir. Şu an için yalnızca bir düğme denetimi ekleyeceğiz.
+  ![Hata ayıklama > Başlat menüsü hata ayıklama olmadan](../ide/media/overview-start-without-debugging.png)
 
-1. Genişletme **ortak XAML denetimleri** bölümünde ve ardından düğme denetimine çıkışı biçiminde ortasından sürükleyin. (Tam konumu önemli değildir.)
+  Visual Studio uygulaması oluşturur ve "Hello World!" iletisiyle bir konsol penceresi açar. Artık çalışan bir uygulamanın sahip!
 
-  ![ekran görüntüsü](../ide/media/VSIDE_Tour_Toolbox.png)
+  ![Konsol penceresi](../ide/media/overview-console-window.png)
 
-  İşiniz bittiğinde, aşağıdakine benzer bir şey görmeniz gerekir.
+1. Konsol penceresini kapatmak için klavyenizde herhangi bir tuşa basın.
 
-  ![ekran görüntüsü](../ide/media/VSIDE_Tour_XAMLButton.png)
+1. Uygulama için bazı ek kod ekleyelim. Aşağıdaki C# kodu yazan satırı önce ekleyin `Console.WriteLine("Hello World!");`:
 
-  Düğme designer'ı devam eder ve (vurgulanan), arka plandaki kod tasarımcının XAML kodu otomatik olarak eklenir.
+   ```csharp
+   Console.WriteLine("\nWhat is your name?");
+   var name = Console.ReadLine();
+   ```
 
-1. XAML kodu bazıları değiştirelim. Düğme koddan metinde yeniden adlandırmak `Button` için `Hello!`.
+   Bu kodu ", adı nedir?" görüntüler Konsol penceresinde ve bazı metin kullanıcı girene kadar bekler ve ardından **Enter** anahtarı.
 
-  ![ekran görüntüsü](../ide/media/VSIDE_Tour_XAMLButton2.png)
+1. Şimdi yazan satırı değiştirmek `Console.WriteLine("Hello World!");` aşağıdaki kodu için:
 
-1. Şimdi, uygulamayı başlatın. Seçerek bunu yapabilirsiniz **Başlat** (![Başlat düğmesi](../ide/media/VSIDE_StartButton.png)) düğmesini araç çubuğunda veya seçerek **F5** anahtar, ya da menüsünde, seçme **hataayıklama**  >  **Hata ayıklamayı Başlat**.
+   ```csharp
+   Console.WriteLine($"\nHello {name}!");
+   ```
 
-  ![ekran görüntüsü](../ide/media/VSIDE_Tour_RunButton.png)
+1. Seçerek uygulamayı yeniden çalıştırın **hata ayıklama** > **hata ayıklama olmadan Başlat** basarak veya **Ctrl**+**F5**.
 
-  Uygulama oluşturma işlemi başlar ve durum iletileri çıktı penceresinde görünür. Bir süre sonra düğmesi görünür form görmeniz gerekir. Artık çalışan bir uygulamanın sahip!
+   Visual Studio uygulama yeniden oluşturur ve bir konsol penceresi açar ve için adınızı ister.
 
-  ![ekran görüntüsü](../ide/media/VSIDE_Tour_RunProject.png)
+1. Konsol penceresi ve tuşuna adınızı girin **Enter**.
 
-  Elbette, çok şu anda yapmaz, ancak isterseniz daha fazla işlevsellik için daha sonra ekleyebilirsiniz.
+   ![Konsol penceresinde giriş](media/overview-console-input.png)
 
-1. Bitirdiğinizde programı durdurun (seçin![Durdur düğmesi](../ide/media/VSIDE_StopButton.png)) durdurmak için araç çubuğunda.
-
-Şimdi ne kadar yaptığınız olduðunu: Visual Studio'da yeni bir C# Windows Evrensel proje oluşturulan, kendi kod görüntülenebilir, Designer'a eklediğiniz bir denetim, bazı XAML kodu değiştirilmiş ve proje çalıştı. İşlemin bu örnek için Basitleştirilmiş karşın, bu, bazı ortak bölümleri, kendi uygulamalarınızı geliştirirken kullanacağınız Visual Studio IDE gösterir. Bu örnek ayrıntılarını daha fazla istiyorsanız bkz [oluşturma bir "Hello, world" uygulamasını (XAML)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal).
+1. Konsol penceresini kapatmak için herhangi bir tuşa basın.
 
 ## <a name="debug-test-and-improve-your-code"></a>Hata ayıklama, test ve kodunuzu geliştirmek
 
-Hiçbir şey mükemmel her zaman çalışır. Kodu yazarken, çalıştırmak ve hataları ve performans için test gerekir. Sistem hata ayıklama Visual Studio'nun modern projenizdeki yerel Android veya Windows Phone cihazları için olanlar gibi bir öykünücü veya uzaktan cihaz üzerinde çalışan kodu ayıklamanızı sağlar. Bir seferde bir deyim kod adım adım ve değişkenleri gittiğiniz, çok iş parçacıklı uygulamalar aracılığıyla adım ve belirtilen koşulun doğru olması durumunda, yalnızca isabet kesme noktaları ayarlayabilirsiniz inceleyin. Kod çalıştırır ve daha fazlasını olarak değişkenlerin değerleri izleyebilirsiniz. Böylece kodunuzu çıkmak zorunda değilsiniz tüm kod düzenleyicisinde kendisini yönetilebilir.
+Hiçbir şey mükemmel her zaman çalışır. Kodu yazarken, çalıştırmak ve hataları ve performans için test gerekir. Sistem hata ayıklama Visual Studio'nun modern projenizdeki yerel, uzak bir aygıt veya bir öykünücü gibi çalışan kodda hata ayıklama olanak tanır [Android cihazlar için bir](../cross-platform/visual-studio-emulator-for-android.md). Bir seferde bir deyim kod adım adım ve ilerledikçe değişkenleri inceleyin. Belirtilen bir koşul doğru olduğunda, yalnızca isabet kesme noktaları ayarlayabilirsiniz. Kod çalıştırır ve daha fazlasını olarak değişkenlerin değerleri izleyebilirsiniz. Böylece kodunuzu çıkmak zorunda değilsiniz tüm kod düzenleyicisinde kendisini yönetilebilir. Visual Studio'da hata ayıklama hakkında daha fazla bilgi edinmek için bkz: [hata ayıklayıcı, özellik Turu](../debugger/debugger-feature-tour.md).
 
-![Hata Ayıklama](../ide/media/VSIDE_Tour_Debugging.png)
-
-Test etmek için Visual Studio birim testi, Intellitest, yükleme ve performans testi ve daha fazla bilgi sunar. Visual Studio işlem hata ayıklama hakkında daha fazla bilgi almak için bkz: [hata ayıklayıcı özelliği Turu](../debugger/debugger-feature-tour.md). Test etme hakkında daha fazla bilgi için bkz: [test etme araçları ve senaryoları](../test/developer-testing-scenarios.md). Uygulamalarınızın performansını artırma hakkında daha fazla bilgi için bkz: [Profil özelliği Turu](../profiling/profiling-feature-tour.md).
+Test etmek için Visual Studio birim testi, Intellitest, yükleme ve performans testi ve daha fazla bilgi sunar. Test etme hakkında daha fazla bilgi için bkz: [araçları ve senaryoları test](../test/developer-testing-scenarios.md). Uygulamalarınızın performansını artırma hakkında daha fazla bilgi için bkz: [özelliği turu profil](../profiling/profiling-feature-tour.md).
 
 ## <a name="deploy-your-finished-application"></a>Tamamlanmış uygulamanızı dağıtmak
 
-Uygulamanızı kullanıcılara veya müşterilere dağıtmaya hazır olduğunda, bir SharePoint sitesine veya InstallShield veya Windows Installer teknolojileri ile Microsoft Store'a dağıtıyorsunuz olup olmadığını Visual Studio, bunu yapmak için araçlar sağlar. Bu, tüm IDE erişilebilir. Daha fazla bilgi için bkz: [dağıtma uygulamaları, hizmetleri ve bileşenleri](../deployment/deploying-applications-services-and-components.md).
+Uygulamanızı kullanıcılara veya müşterilere dağıtmaya hazır olduğunda, bir SharePoint sitesine veya InstallShield veya Windows Installer teknolojileri ile Microsoft Store'a dağıtıyorsunuz olup olmadığını Visual Studio, bunu yapmak için araçlar sağlar. Bu, tüm IDE erişilebilir. Daha fazla bilgi için bkz: [uygulamaları, hizmetleri ve bileşenleri dağıtma](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="quick-tour-of-the-ide"></a>IDE hızlı turu
 
@@ -198,7 +190,7 @@ Bazı diğer ortak üretkenlik Visual Studio özellikleri şunlardır:
 
  ![Yeniden Düzenle](../ide/media/VSIDE_refactor.png)
 
-- **IntelliSense** bir genel doğrudan Düzenleyicisi'nde kodunuzu tür bilgilerini görüntüleme ve bazı durumlarda, kod küçük BITS sizin için yazma popüler özellikler kümesi için bir terimdir. Bu ayrı Yardım penceresinde türü bilgileri aramak gereğini ortadan kaldırır düzenleyicisinde temel belgelere satır içi olması gibi olur. IntelliSense özellikleri dile göre farklılık gösterir. Daha fazla bilgi için bkz: [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), ve [Visual Basic'e özel IntelliSense ](../ide/visual-basic-specific-intellisense.md). Aşağıdaki çizimde, İşte bazı IntelliSense özellikleri gösterir:
+- **IntelliSense** bir genel doğrudan Düzenleyicisi'nde kodunuzu tür bilgilerini görüntüleme ve bazı durumlarda, kod küçük BITS sizin için yazma popüler özellikler kümesi için bir terimdir. Bu ayrı Yardım penceresinde türü bilgileri aramak gereğini ortadan kaldırır düzenleyicisinde temel belgelere satır içi olması gibi olur. IntelliSense özellikleri dile göre farklılık gösterir. Daha fazla bilgi için bkz: [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), ve [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Aşağıdaki çizimde, İşte bazı IntelliSense özellikleri gösterir:
 
   ![Visual Studio üye listesi](../ide/media/vs2017_Intellisense.png)
 
@@ -222,10 +214,6 @@ Bazı diğer ortak üretkenlik Visual Studio özellikleri şunlardır:
 
  ![Tanıma gitme](../ide/media/VSIDE_go_to_definition.png)
 
-- İlgili bir aracı [Nesne Tarayıcısı](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), görmek için .NET veya Windows çalışma zamanı derlemeleri, sisteminizdeki incelemek için türleri bunlar etkinleştirir içerir ve bu türlerde hangi üyeleri (özellikleri, yöntemleri, olaylar, vb.) içerir.
-
-  ![Object Browser showing System.Timer](../ide/media/objectbrowser.png)
-
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Kaynak kodunuz yönetmek ve diğer kullanıcılarla işbirliği
 
 Git depoları GitHub dahil olmak üzere tüm sağlayıcı tarafından barındırılan kaynak kodunuzda yönetebilirsiniz. Veya [Visual Studio Team Services (VSTS)](/vsts/index) kod hataları yanında yönetebilir ve iş öğeleri tüm projeniz için. Bkz: [Git ve Team Services (VSTS) ile çalışmaya başlama](/vsts/git/gitquickstart?tabs=visual-studio) Git depoları Visual Studio Takım Gezgini'ni kullanarak yönetme hakkında daha fazla bilgi edinmek için. Visual Studio ayrıca diğer yerleşik kaynak denetimi özellikleri vardır. Bunları hakkında daha fazla bilgi için bkz: [Visual Studio 2017 (blog) yeni Git özellikleri](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
@@ -240,7 +228,7 @@ Aşağıdaki resimde VSTS içinde barındırılan bir çözüm için Takım Gezg
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
-Sürüm denetimine takımınızdaki devs denetlediyseniz kodu oluşturmak için derleme süreci otomatik hale getirebilirsiniz. Örneğin, bir veya daha fazla projeleri gecelik veya kod iade her zaman oluşturabilirsiniz. Bkz: [derleme ve sürüm (VSTS ve TFS)](/vsts/build-release/index) daha fazla bilgi için.
+Sürüm denetimine takımınızdaki devs denetlediyseniz kodu oluşturmak için derleme süreci otomatik hale getirebilirsiniz. Örneğin, bir veya daha fazla projeleri gecelik veya kod iade her zaman oluşturabilirsiniz. Daha fazla bilgi için bkz: [derleme ve sürüm (VSTS ve TFS)](/vsts/build-release/index).
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Hizmetleri, veritabanları ve bulut tabanlı kaynaklara bağlanma
 
@@ -283,6 +271,5 @@ Visual Studio IDE turu tamamladıktan Tebrikler! Bazı ana özellikleri hakkınd
 * [Visual Studio IDE](https://www.visualstudio.com/vs/)
 * [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/)
 * [Visual Studio Web günlüğü](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio Forums](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
+* [Visual Studio forumları](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
 * [Microsoft Virtual Academy](https://mva.microsoft.com/)
-* [Kanal 9](https://channel9.msdn.com/)

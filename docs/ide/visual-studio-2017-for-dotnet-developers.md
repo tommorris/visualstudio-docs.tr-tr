@@ -11,18 +11,18 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: a834f9781ff51779b2216bd7de9dd3e449c9360a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>.NET geliştiricileri için Visual Studio 2017
 
 ## <a name="smart-code-editor"></a>Akıllı Kod Düzenleyicisi
 
-[Belgeler: IntelliSense kullanma](using-intellisense.md)  
-[Belgeler: Akıllı Düzenleyicisi özellikleri](writing-code-in-the-code-and-text-editor.md)
+- [Belgeler: IntelliSense kullanma](using-intellisense.md)
+- [Belgeler: Akıllı Düzenleyicisi özellikleri](writing-code-in-the-code-and-text-editor.md)
 
 Visual Studio olan kodunuzu akıllı düzenleme ile sağlamak için .NET ("Roslyn") derleyici aracılığıyla derin bir anlayış söz dizimi renklendirme gibi özellikleri kod tamamlama, yazım denetimi yanlış yazılan değişkenler, önemli olmayan türü çözümlemesi, anahat oluşturma, yapısı görselleştiriciler, [CodeLens](find-code-changes-and-other-history-with-codelens.md), hiyerarşi, vurgulu mümkün hızlı bilgi, parametre Yardım yanı sıra araçları yeniden düzenleme, hızlı eylemlerini uygulama ve kod oluşturma için çağırın.
 
@@ -50,14 +50,14 @@ Ayrıca, en iyi yöntemleri öğrenin, saplama veya kodu, yeniden düzenleme kod
 
 [Belgeler: Visual Studio'da Test birim](../test/improve-code-quality.md)
 
-Mstest'i, NUnit ya da .NET Framework, .NET standart veya .NET Core hedefleme herhangi bir uygulama için çerçeveler test XUnit göre birim testleri hata ayıklama ve çalıştırın. Keşfetmek ve testlerinizde gözden *Test Gezgini* veya kod değişikliklerinden birim testleri düzenleyiciyle içinde nasıl etkiler hemen görmek *Canlı birim testi* (yalnızca Kurumsal SKU için). 
+Mstest'i, NUnit ya da .NET Framework, .NET standart veya .NET Core hedefleme herhangi bir uygulama için çerçeveler test XUnit göre birim testleri hata ayıklama ve çalıştırın. Keşfetmek ve testlerinizde gözden *Test Gezgini* veya kod değişikliklerinden birim testleri düzenleyiciyle içinde nasıl etkiler hemen görmek *Canlı birim testi* (yalnızca Kurumsal SKU için).
 
 ![Birim testi Visual Studio'da canlı](../ide/media/VSIDE_Productivity_LiveUnitTesting.png "VSIDE_Productivity_LiveUnitTesting")
 
 ## <a name="code-consistency-and-style"></a>Kod tutarlılık ve stili
 
-[Belgeler: Taşınabilir özel düzenleyici seçenekleri](create-portable-custom-editor-options.md)  
-[Belgeleri: .NET EditorConfig kod stili ayarları](editorconfig-code-style-settings-reference.md)
+- [Belgeler: Taşınabilir özel düzenleyici seçenekleri](create-portable-custom-editor-options.md)
+- [Belgeleri: .NET EditorConfig kod stili ayarları](editorconfig-code-style-settings-reference.md)
 
 Visual Studio kodlama kuralı yapılandırma sağlar, kodlama stili ihlalleri algılar ve stil sorunları gidermek için hızlı düzeltme sağlayan **Ctrl +.** Kısayol. Yapılandırma ve adlandırma, ekibinizin biçimlendirme zorlamak ve kod stil kuralları bir havuz arasında — değerleri proje ve dosya düzeyinde geçersiz kılma izin vererek — kullanarak *EditorConfig*.
 
@@ -107,8 +107,6 @@ Popüler Visual Studio kısayolları verilmiştir. Bazı uzantılar varsayılan 
 | **Shift+F12** | Tüm Başvuruları Bul | Tüm simge veya değişmez değer başvuruları bakın |
 | **Ctrl+.** (Ayrıca **Alt + girin** profilinde C#) | Hızlı Eylemler ve Yeniden Düzenlemeler | Kod oluşturma eylemleri, yapan yeniden düzenlemeler veya diğer hızlı Eylemler imleç konumu veya kod seçimi daha kullanılabilir, hangi kod giderir bakın |
 | **Ctrl**+**E**,**V** | Yinelenen satır | İmlecin kod satırı ile yineleme (kullanılabilir **Visual Studio 2017 sürüm 15,6 Önizleme 2** ve üzeri) |
-| **Ctrl**+**W** | Seçimi genişletin | Bir Yapısal birim geçerli seçimi genişletir (kullanılabilir **Visual Studio 2017 sürüm 15,5**) |
-| **Ctrl**+**Shift**+**W** | Sözleşme seçimi | Sözleşmeleri (azaltır) bir Yapısal birim geçerli seçim (kullanılabilir **Visual Studio 2017 sürüm 15,5**) |
 | **Ctrl+Q** | Hızlı Başlat | Arama tüm Visual Studio ayarları |
 | **F5** | Hata ayıklama başlatılamıyor | Uygulamanızı hata ayıklamayı Başlat |
 | **Ctrl+F5** | Hata ayıklama olmadan çalıştırma | Uygulamanızı yerel olarak hata ayıklama olmadan çalıştırma |

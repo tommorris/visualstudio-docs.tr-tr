@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 ms.devlang: javascript
@@ -12,13 +13,15 @@ ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-dev_langs: JavaScript
-ms.workload: nodejs
-ms.openlocfilehash: 12c848797b167038b02106ca3392cac50171f699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: 89ecece1701520bf9e88221b2d3961a631d66ca0
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Hızlı Başlangıç: Kullanım ilk Node.js uygulamanızı oluşturmak için Visual Studio
 Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), basit bir Node.js web uygulaması oluşturacaksınız. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).  
@@ -37,6 +40,10 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
      ![VS yükleyici node.js iş yükü](../ide/media/quickstart-nodejs-workload.png)  
 
     Visual Studio oluşturur ve yeni bir çözüm ve proje açar. **Server.js** düzenleyicisinde açın.
+
+4. Zaten yüklü Node.js çalışma zamanı yoksa, bu klasörden yüklenmesini [Node.js](https://nodejs.org/en/download/) Web sitesi.
+
+    Genel olarak, Visual Studio yüklenmiş Node.js çalışma zamanı otomatik olarak algılar. Yüklü bir çalışma zamanı algılamazsa yüklü çalışma zamanı başvurmak için projenizi yapılandırabilirsiniz.
 
 ## <a name="explore-the-ide"></a>IDE keşfedin  
 

@@ -18,17 +18,20 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 150f4b1c7e151e0b5d6f802ae40f4b5cf6943937
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d33e4d15e9d0de5c3aa35354dd1c8840d0ed9bd2
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Python ve C++ birlikte hata ayıklama
 
 Çoğu normal Python hata ayıklayıcıları yalnızca Python kodu hata ayıklama desteği. Bununla birlikte, pratikte, platform API'lerini doğrudan çağırmak için C veya C++ ile birlikte yüksek performans veya yeteneği gerektiren senaryolarda Python kullanılır. (Bkz [Python için C++ uzantısı oluşturma](working-with-c-cpp-python-in-visual-studio.md) kılavuz.)
 
 Visual Studio sağlayan tümleştirilmiş, eşzamanlı karma mod Python ve yerel C/C++, hata ayıklama seçtiğiniz koşuluyla **Python yerel geliştirme araçları** Visual Studio'da Python geliştirme iş yükü için seçeneği Yükleyici.
+
+> [!Note]
+> Karışık mod hata ayıklaması Visual Studio için Python araçları ile kullanılabilir değil 1.x Visual Studio 2015 ve önceki sürümleri.
 
 Karışık mod hata ayıklama özelliği, bu makalede anlatıldığı şunlardır:
 
@@ -40,12 +43,9 @@ Karışık mod hata ayıklama özelliği, bu makalede anlatıldığı şunlardı
 
 ![Karışık mod hata ayıklaması](media/mixed-mode-debugging.png)
 
-Bir tanıtım için derleme, test ve yerel C modülleri Visual Studio ile hata ayıklama bkz [derinlemesine: yerel modülleri oluşturma](https://youtu.be/D9RlT06a1EI) (youtube.com, 9m9s). Video için Visual Studio 2015 ve 2017 için geçerlidir.
-
-> [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
-
-> [!Note]
-> Karışık mod hata ayıklaması Visual Studio için Python araçları ile kullanılabilir değil 1.x.
+|   |   |
+|---|---|
+| ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | Test ve yerel C modülleri Visual Studio ile hata ayıklama yapı giriş için bkz: [derinlemesine: yerel modülleri oluşturma](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 m 09s). Video için Visual Studio 2015 ve 2017 için geçerlidir. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Karışık mod bir Python projesinde hata ayıklamayı etkinleştir
 

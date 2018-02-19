@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 11e48a67540ff7df665cc044557751be4b1c3be0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Uzaktan hata ayıklama Linux'ta Python kodu
 
@@ -29,9 +29,9 @@ Visual Studio'yu başlatın ve Python uygulamaları bir Windows bilgisayarda yer
 
 Ptvsd kullanırken, Visual Studio ekleyebilir miyim hata ayıklama sunucu ayıklanacak Python kodu barındırır. Bu barındırma kodunuzu almak ve sunucu etkinleştirme ve ağ gerektirir veya yapılandırmaları TCP bağlantılara izin vermek için uzak bilgisayarda güvenlik duvarı için küçük bir değişiklik gerektirir.
 
-Uzaktan hata ayıklama için giriş için bkz [derinlemesine: platformlar arası uzaktan hata ayıklama](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6m22s), Visual Studio 2015 ve 2017 için geçerli olduğu.
-
-> [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
+|   |   |
+|---|---|
+| ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | Uzaktan hata ayıklama için giriş için bkz [derinlemesine: platformlar arası uzaktan hata ayıklama](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6m22s), Visual Studio 2015 ve 2017 için geçerli olduğu. |
 
 ## <a name="setting-up-a-linux-computer"></a>Bir Linux bilgisayar ayarlama
 

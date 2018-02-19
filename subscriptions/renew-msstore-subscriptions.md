@@ -9,11 +9,11 @@ Description: Learn how to renew your Visual Studio subscriptions acquired throug
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: f4f2bcdd999a008334a56d95024393d21db15e32
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 1cf92c870521907c90332a9b9d1292b7b297c8d6
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-do-i-renew-a-subscription-purchased-through-microsoft-store"></a>Microsoft mağazası aracılığıyla satın aldığınız bir abonelik nasıl yenileme?
 Genel Bakış: Perakende abonelikleri genellikle Microsoft Store satın alınan ve https://my.visualstudio.com/subscriptions kullanılabilir abonelik bilgileri gözden geçirerek "Perakende" tanımlanabilir. 
@@ -29,7 +29,7 @@ Genel Bakış: Perakende abonelikleri genellikle Microsoft Store satın alınan 
 
 
 ## <a name="activate-your-subscription"></a>Aboneliğinizi etkinleştirin: 
-Geçerli olduğunu bildiren uyarı ödeme "Onay sayfası" veya "Onay e-posta" etkinleştirebilirsiniz.  (Onay e-postanız görmüyorsanız, gereksiz posta klasörlerinizi denetlemek emin olun.)   
+Ödeme "Onay sayfası" veya "Onay e-posta" aboneliğinizden etkinleştirebilirsiniz.  (Onay e-postanız görmüyorsanız, gereksiz posta klasörlerinizi denetlemek emin olun.)   
 1. Tıklayın **oturum açmak için burayı tıklatın**.  İçin gerçekleştirilecek [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
 2. Aboneliğiniz için oturum açın.  (Yardım [oturum açma](/visualstudio/subscriptions/signing-in).)
 3. Ödeme "Onay sayfası" veya "Onay e-posta" kullanılabilir "Ürün anahtarı" bilgileri girin ve tıklatın **etkinleştirme**.

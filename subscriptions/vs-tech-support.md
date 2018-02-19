@@ -9,17 +9,18 @@ Description: Learn how to activate the technical support benefit included with y
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 39d140f83f43d6032119d4a7e84d6f1f091af707
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4fb6294d6d70e827bd69544fcc4f07cad72b7c5a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde teknik destek avantajı etkinleştirme
 
-Üretim dışı ortamlar onarım sorunları çözün.  (Not: avantajı gerekir etkinleştiren bir destek isteği göndermeden önce.)  Visual Studio Professional standart ve yıllık abonelikler iki olaylar alırken dört olaylar, visual Studio Enterprise standart ve yıllık abonelikler alırsınız.  
+Üretim dışı ortamlar onarım sorunları çözün.  (Bir destek isteği göndermeden önce avantajı etkinleştirilmesi gerekir.)  Visual Studio Professional standart ve yıllık abonelikler iki olaylar alırken dört olaylar, visual Studio Enterprise standart ve yıllık abonelikler alırsınız.  
 
-**Not:** belirtilen düzeydeki tüm abonelikleri destek olaylarının almaya hak kazandınız.  FTE, NFR, MPN, MCT ve diğer programları alınan abonelikler destek olaylarının almaz.  Aboneliğinizi teknik destek olayları almak uygun değilse, teknik destek döşeme kullanılabilir Avantajlarınızı görünmez. 
+> [!NOTE]
+> Belirtilen düzeydeki tüm abonelikleri destek olaylarının almak uygundur.  FTE, NFR, MPN, MCT ve diğer programları alınan abonelikler destek olaylarının almaz.  Aboneliğinizi teknik destek olayları almak uygun değilse, teknik destek döşeme kullanılabilir Avantajlarınızı görünmez. 
 
    ![Teknik Destek avantajı döşeme](_img\vs-tech-support\vs-tech-support-tile.png)
 
@@ -33,7 +34,8 @@ ms.lasthandoff: 12/01/2017
 
     ![Teknik Destek avantajı, abonelik kimliği bulunamadı](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
-**Not:** İngilizce dışında bir dil desteği hesabınızı etkinleştirmek için listeden ülkenizi seçin [bu listeyi](http://support.microsoft.com/activatesupport).   
+> [!NOTE]
+> İngilizce dışındaki bir dilde destek hesabınızı etkinleştirmek için listeden ülkenizi seçin [bu listeyi](http://support.microsoft.com/activatesupport).   
 
 # <a name="how-to-submit-an-incident"></a>Bir olay gönderme
 Bir kez sözleşme Kimliğinizi varsa ve erişim kimliği ayarlama, ülkeniz için teknik destek numarasını çağırabilir destek gerektiğinde, bir destek olayını gönderme [çevrimiçi](http://support.microsoft.com/oas/), ya da Azure portal aracılığıyla bir olay gönderin.  Varsa telefon üzerinden destek almak tercih ettiğiniz, olayınız çevrimiçi hala gönderebilir ve bir Microsoft destek Profesyoneline, geri çağırır.
@@ -85,7 +87,7 @@ Azure ile ilgili sorunlar için Visual Studio abonelik teknik destek avantajın�
 1.  Https://Portal.Azure.com ziyaret edin ve oturum açın
 2.  Sol gezinti bölmesinden "Yardım + destek"'i tıklatın.
 3.  "Destek altında" "Bağlantı destek sözleşmesi"'i tıklatın.
-4.  Sağla "Erişim Kimliği" ve "Kişi #1 sağlanan ID" girin.
+4.  Sağla "Erişim Kimliği" ve "Sözleşme kimliği" #1 sağlanan girin.
 Bu adımları tamamladıktan sonra Visual Studio abonelik teklifi ile ilişkili destek planı seçmek mümkün olur.  (Planın adı "MSDN" içerebilir.)
 
  

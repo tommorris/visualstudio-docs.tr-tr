@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # Benim için en uygun Yayımlama seçenekleri nelerdir?
 
@@ -50,6 +50,8 @@ Bulutta barındırılan sanal makineleri Azure üzerinde bir uygulama hizmeti ç
 - Makine düzeyi özelleştirmeler, web uygulamanızı barındıran sunuculara gerek yoktur.
 
 > Azure uygulama hizmeti, kendi veri merkezi veya diğer şirket içi bilgisayarları kullanmak istiyorsanız, bunu kullanarak yapabilirsiniz [Azure yığın](https://azure.microsoft.com/overview/azure-stack/).
+
+ASP.NET Core uygulamaları yayımlama ile ilgili daha fazla bilgi için bkz: [Visual Studio kullanarak Azure App Service için ASP.NET Core web uygulama yayımlama](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## Azure sanal makineler
 
@@ -83,7 +85,7 @@ Herhangi bir nedenle (örneğin, makine erişimi), Azure App Service ya da Azure
 - Yalnızca yerel test dağıtımını gerekir.
 - İnceleyin ve potansiyel olarak uygulama dosyaları bağımsız olarak başka bir dağıtım hedef göndermeden önce değiştirmek istediğiniz.
 
-
+.NET Core uygulamaları dağıtma hakkında daha fazla bilgi için bkz: [Visual Studio .NET Core dağıtma uygulamalarla](/dotnet/core/deploying/deploy-with-vs).
 
 ## Özel hedefleri
 
@@ -103,3 +105,5 @@ Visual Studio'da farklı ayarlarla profillerini yönetmek olası hale getirerek,
 - Bulut hizmetleri sağlama URL'ler erişilen Azure dışında üzerinde kullanıyorsunuz.
 - Visual Studio içinde kullanın ya da Azure hesaplarınızı doğrudan bağlı olanlar dışındaki kimlik bilgilerini kullanarak dağıtmak istediğiniz.
 - Dağıttığınız her zaman hedef dosyaları silmek istiyor.
+
+IIS yayımlama hakkında daha fazla bilgi için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ve [Uzak IIS bilgisayarda uzaktan hata ayıklama ASP.NET](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).

@@ -9,11 +9,11 @@ Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 73d0f1c5016a9ea908d7d280575e297357ba78ba
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 9564af525d0c801e311e42bc9ebe93bb16166147
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-buy-a-subscription"></a>Bir abonelik satın alma
 Üzerinde açıklanacak Visual Studio abonelikler, Bulut ve standart, iki ana tür vardır [fiyatlandırma sayfası Visual Studio](https://www.visualstudio.com/vs/pricing/).
@@ -26,13 +26,14 @@ ms.lasthandoff: 01/29/2018
 ## <a name="buy-visual-studio-standard-subscriptions"></a>Visual Studio Standart abonelik satın alın
 Standart bir Visual Studio abonelik satın alın veya ziyaret edip yazılım satıcınızla iletişime geçmeniz gerekiyor [Microsoft Store](https://www.microsoft.com/store) çevrimiçi.
 
-*   Azure aboneliğiniz için kaydolun ve Visual Studio marketten satın almak için "kişisel" ihtiyaç duyarsınız [Microsoft hesabı](https://www.microsoft.com/account) veya ["iş veya Okul hesabı"](/azure/active-directory/sign-up-organization) , kuruluşunuz için satın alma varsa ve Azure Active Directory (Azure AD) kimliklerle yönettikleri.
+
+
+### <a name="buy-visual-studio-cloud-subscriptions"></a>Visual Studio bulut abonelikleri
+
+Azure aboneliğiniz için kaydolun ve Visual Studio marketten satın almak için "kişisel" ihtiyaç duyarsınız [Microsoft hesabı](https://www.microsoft.com/account) veya ["iş veya Okul hesabı"](/azure/active-directory/sign-up-organization) , kuruluşunuz için satın alma varsa ve Azure Active Directory (Azure AD) kimliklerle yönettikleri.
 
 > [!WARNING]
 > Visual Studio bulut abonelikleri satın almak için bir Azure aboneliği kullanıyorsanız, bu ücretlerden fazlalığı görünür ve Azure parasal taahhüt karşı saymak değil. İçinde Azure faturalama hakkında daha fazla bilgi [SSS](/vsts/billing/faq-azure-billing).  
-
-### <a name="buy-subscriptions"></a>Abonelik satın alın
-
 
 1.  Oturum [Visual Studio Market'te > abonelikler](https://marketplace.visualstudio.com/subscriptions).
 

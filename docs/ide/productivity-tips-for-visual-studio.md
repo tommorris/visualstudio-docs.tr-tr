@@ -10,12 +10,13 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0700f1ba19c9c352aeaafe4dd3a3f9f4a12f864f
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- multiple
+ms.openlocfilehash: 48419196050111d12fb149612394fd9ef7935494
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio için üretkenlik ipuçları
 
@@ -27,7 +28,7 @@ Ortak klavye kısayolları hakkında daha fazla bilgi için bkz: [klavye ipuçla
 
 Kod, aşağıdaki özellikleri kullanarak daha hızlı bir şekilde yazın.
 
-- **Kolaylık komutlarını kullanmak**. Visual Studio daha hızlı yaygın düzenleme görevlerini gerçekleştirmenize yardımcı olmak için çeşitli komutlarını içerir. Örneğin, **Visual Studio 2017 sürüm 15,6 Önizleme 2** ve daha sonra kolayca kopyalayın, imleç yeniden konumlandırmak ve sonra yapıştırmak zorunda kalmadan bir kod satırı çoğaltmak için bir komut seçebilirsiniz. Seçin **Düzenle** > **yinelenen** veya basın **Ctrl**+**E**,**V**. Ayrıca hızlı bir şekilde genişletebilir veya seçerek metin seçimini sözleşme **Düzenle** > **Gelişmiş** > **genişletin seçimi** ve **Sözleşme seçimi**, basarak veya **Ctrl**+**W** ve **Ctrl**+**kaydırma**  + **W** (kullanılabilir **Visual Studio 2017 sürüm 15,5** ve üzeri).
+- **Kolaylık komutlarını kullanmak**. Visual Studio daha hızlı yaygın düzenleme görevlerini gerçekleştirmenize yardımcı olmak için çeşitli komutlarını içerir. Örneğin, **Visual Studio 2017 sürüm 15,6 Önizleme 2** ve daha sonra kolayca kopyalayın, imleç yeniden konumlandırmak ve sonra yapıştırmak zorunda kalmadan bir kod satırı çoğaltmak için bir komut seçebilirsiniz. Seçin **Düzenle** > **yinelenen** veya basın **Ctrl**+**E**,**V**. Ayrıca hızlı bir şekilde genişletebilir veya seçerek metin seçimini sözleşme **Düzenle** > **Gelişmiş** > **genişletin seçimi** veya **Düzenle** > **Gelişmiş** > **sözleşme seçimi**, basarak veya **Shift** + **Alt** +  **=**  veya **Shift**+**Alt** +  **-**  (kullanılabilir **Visual Studio 2017 sürüm 15,5** ve üzeri).
 
 - **IntelliSense kullanma**. Kod Düzenleyicisi'nde girerken, listesi üyeleri, parametre bilgisi, hızlı bilgi, imza yardımcı olmak ve tam sözcüğü gibi IntelliSense bilgiler görüntülenir. Bu özellikler, metnin benzer eşleştirme destekler; Örneğin, sonuçları listeler listesi üyeleri için değil yalnızca, girdiğiniz karakterlerle Başlat girişleri aynı zamanda adlarını başka bir yerindeki karakter bileşimi içeren girdileri içerir. Daha fazla bilgi için bkz: [kullanarak IntelliSense](../ide/using-intellisense.md).
 
@@ -73,7 +74,7 @@ IDE komutları, dosyalar ve yalnızca ilgili bilgiler, geçerli görev gösterme
 
     !['Yeni Proje' için hızlı başlatma sonuçları](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
 
-    **Hızlı başlatma** bağlantılar görüntüler **yeni proje** iletişim kutusu, **Yeni Öğe Ekle** iletişim kutusu ve projeler ve çözümler sayfasında **seçenekleri** iletişim kutusu, diğerlerinin yanı sıra. Hızlı Başlatma sonuçları proje dosyalarını ve aracı windows de içerir.
+    **Hızlı başlatma** bağlantılar görüntüler **yeni proje** iletişim kutusu, **Yeni Öğe Ekle** iletişim kutusu ve projeler ve çözümler sayfasında **seçenekleri** iletişim bir kutu, diğerlerinin yanı sıra. Hızlı Başlatma sonuçları proje dosyalarını ve aracı windows de içerir.
 
 ## <a name="debugging-code"></a>Kodda hata ayıklama
 
@@ -95,7 +96,7 @@ Hata ayıklama çok zaman kullanabileceğinden, ancak aşağıdaki ipuçları ya
 
      Bir DataTip eklemek için hata ayıklayıcı kesme modunda olması gerekir. İmleç değişkeni üzerine yerleştirin ve görünür DataTip PIN düğmesini seçin. Hata ayıklama durduğunda değişkenini içeren kod satırı yanındaki kaynak dosyasında bir mavi PIN simgesi görünür. Mavi PIN noktası ise, en son hata ayıklama oturumunda değişkenin değeri olarak görünür.
 
-- **Komut penceresi temizleyin**. İçeriğini silme [komut penceresi](../ide/reference/immediate-window.md) girerek tasarım zamanında `>cls` veya`>Edit.ClearAll`
+- **Komut penceresi temizleyin**. İçeriğini silme [komut penceresi](../ide/reference/immediate-window.md) girerek tasarım zamanında `>cls` veya `>Edit.ClearAll`
 
      Ek komutlar hakkında daha fazla bilgi için bkz: [Visual Studio komut diğer adları](../ide/reference/visual-studio-command-aliases.md).
 
@@ -123,7 +124,7 @@ Herhangi bir zamanda, birden çok kod dosyalarında çalışma ve uygulama geli�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sık Kullanılan Komutlar için Varsayılan Klavye Kısayolları](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)  
-[Nasıl yapılır: menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)  
-[İzlenecek yol: basit bir uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Erişilebilirlik İpuçları ve Püf Noktaları](../ide/reference/accessibility-tips-and-tricks.md)
+- [Sık Kullanılan Komutlar için Varsayılan Klavye Kısayolları](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Nasıl yapılır: menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [İzlenecek yol: basit bir uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Erişilebilirlik İpuçları ve Püf Noktaları](../ide/reference/accessibility-tips-and-tricks.md)

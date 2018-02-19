@@ -9,11 +9,11 @@ Description: Compare features and benefits of Visual Studio standard and cloud s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 72492331ed44c55da243960049f1e56d2a3e52f8
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="compare-visual-studio-subscription-options"></a>Visual Studio abonelik seçenekleri Karşılaştır
 
@@ -39,10 +39,10 @@ Visual Studio abonelikleri en kapsamlı geliştirici araçları, bulut Hizmetler
 
 **Programları** – standard ve bulut abonelikleri yanı sıra Microsoft özel programları çeşitli aboneliği sunar.
 
-- [Düşünün](https://imagine.microsoft.com/en-us/about) --profesyonel düzeyi geliştirici araçları ve öğrenciler hiçbir ücret ödemeden yazılımı - her şeyi gerekli oyunlar, uygulamalar ve Web siteleri oluşturmak.
+- [Düşünün](https://imagine.microsoft.com/about) --profesyonel düzeyi geliştirici araçları ve öğrenciler hiçbir ücret ödemeden yazılımı - her şeyi gerekli oyunlar, uygulamalar ve Web siteleri oluşturmak.
 - [BizSpark](https://bizspark.microsoft.com/About/Offers) -serbest startup'lar için ürünleri ve Hizmetleri.  BizSpark üyeleri, tüm Microsoft geliştirme ücretsiz erişimi ve Azure, Windows, Visual Studio, Office ve SQL Server dahil olmak üzere yazılım sınayın. 
-- [Microsoft Partner Network (MPN)](https://partner.microsoft.com/en-us) – düzeyinizi MPN içinde bağlı olarak, en fazla 10 Kurumsal abonelikler alabilirsiniz 
-- [Microsoft Sertifikalı Eğitmen](https://www.microsoft.com/en-us/learning/mct-certification.aspx) --benzersiz olarak uyarlanmış yardımcı kaynaklar için özel erişim sağlamak için daha fazla teknik uzmanlığı ve eğitim becerileri geliştirin.
+- [Microsoft Partner Network (MPN)](https://partner.microsoft.com/) – düzeyinizi MPN içinde bağlı olarak, en fazla 10 Kurumsal abonelikler alabilirsiniz 
+- [Microsoft Sertifikalı Eğitmen](https://www.microsoft.com/learning/mct-certification.aspx) --benzersiz olarak uyarlanmış yardımcı kaynaklar için özel erişim sağlamak için daha fazla teknik uzmanlığı ve eğitim becerileri geliştirin. MCT yazılım ve Hizmetleri ve MCT Geliştirici yazılım ve Hizmetleri abonelikleri için lütfen [Microsoft Sertifikalı Eğitmen Web sitesi](https://www.microsoft.com/learning/mct-certification.aspx#item-ID0EFAAAAACA) aboneliğiniz ile birlikte gelen hakları Eğitim ayrıntıları kullanın. 
 
 ## <a name="visual-studio-licensing"></a>Visual Studio lisans
 Visual Studio abonelikleri üzerinde kullanıcı başına lisanslanır. Bir kişi yazılım tasarlama, geliştirme, test veya cihazlar herhangi bir sayıda bilgilendirilmesine programları göstermek için kullanabilirsiniz. Visual Studio abonelik yazılımı değerlendirmek ve bunların programlarla ilgili sorunları tanılamak için müşteri ortamlarını benzetmek için lisanslı kullanıcı da sağlar.
@@ -62,4 +62,4 @@ Visual Studio Abonelik lisansı da geribildirim sağlamak ve programlarınızı 
 
 [Visual Studio IDE özelliklerini karşılaştırın](https://www.visualstudio.com/vs/compare/).
 
-MCT yazılım ve Hizmetleri ve MCT Geliştirici yazılım ve Hizmetleri abonelikleri için lütfen [Microsoft Sertifikalı Eğitmen Web sitesi](https://www.microsoft.com/learning/en-us/mct-certification.aspx#item-ID0EFAAAAACA) aboneliğiniz ile birlikte gelen hakları Eğitim ayrıntıları kullanın.  
+ 

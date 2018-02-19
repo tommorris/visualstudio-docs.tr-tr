@@ -2,7 +2,7 @@
 title: "Visual Studio'da Python kodu hata ayıklama | Microsoft Docs"
 description: "Visual Studio'da hata ayıklama özelliği özellikle kesme noktalarını ayarlama, Adımlama, değerleri inceleyerek, özel durumları görmek ve etkileşimli penceresinde hata ayıklama dahil olmak üzere Python kodu için bir kılavuz."
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8c3b4bf4c08f9ecd13a313c717b4da9c0a5d5a45
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c158397d327e339955efed35f1ccc525028294e3
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="debugging-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -34,9 +34,9 @@ Ayrıca aşağıdaki senaryoya özgü hata ayıklama konulara bakın:
 - [Karışık mod Python/C++ hata ayıklama](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Karışık mod hata ayıklaması için semboller](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
-Hata ayıklama genel bakış için bkz: [hata ayıklama Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567) (Microsoft Virtual Academy, 3m32s).
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567]
+|   |   |
+|---|---|
+| ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | [(Microsoft Virtual Academy) bir video izlemek](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) (3 m 32s) hata ayıklama Python tanıtımı için.|
 
 <a name="debugging-without-a-project"></a>
 

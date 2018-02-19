@@ -16,11 +16,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Visual Studio'da Node.js ile çalışmaya başlama
 Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE bazı özellikleri keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).  
@@ -37,6 +37,10 @@ Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Nod
      Görmüyorsanız, **temel Azure Node.js Express 4 uygulama** proje şablonu, tıklatın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantı **yeni proje** iletişim kutusu. Visual Studio yükleyicisi başlatır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**. 
 
     Visual Studio yeni çözüm oluşturur ve projenizin açar. **App.js** proje dosyası (sol bölme) Düzenleyicisi'nde açar. Visual Studio çözümler ve projeler bilmiyorsanız, bkz: [hızlı başlangıç: ilk Node.js uygulamanızı oluşturmak için Visual Studio](../ide/quickstart-nodejs.md).
+
+4. Zaten yüklü Node.js çalışma zamanı yoksa, bu klasörden yüklenmesini [Node.js](https://nodejs.org/en/download/) Web sitesi.
+
+    Genel olarak, Visual Studio yüklenmiş Node.js çalışma zamanı otomatik olarak algılar. Yüklü bir çalışma zamanı algılamazsa yüklü çalışma zamanı başvurmak için projenizi yapılandırabilirsiniz.
 
 ## <a name="add-some-code"></a>Bazı kodlar ekleyin
 
@@ -121,7 +125,7 @@ Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Nod
 
     ![Hata ayıklama hedefi seçin](../nodejs/media/tutorial-nodejs-deploy-target.png) 
 
-1. Tuşuna **Ctrl + F5** uygulamayı çalıştırın.
+1. Tuşuna **F5** (**hata ayıklama** > **hata ayıklamayı Başlat**) uygulamayı çalıştırın.
 
     Hata ayıklayıcı ayarladığınız kesme noktasında duraklatır. Şimdi, uygulama durumunu denetleyebilirsiniz.
 
@@ -129,7 +133,7 @@ Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Nod
 
     ![Değişkenleri inceleyin.](../nodejs/media/tutorial-nodejs-inspect-variables.png)
 
-1. Tuşuna **F5** devam etmek için.
+1. Tuşuna **F5** (**hata ayıklama** > **devam**) devam etmek için.
 
     Uygulamayı tarayıcıda açılır.
 
@@ -139,7 +143,7 @@ Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Nod
 
     ![Tarayıcıda çalışan uygulama](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
-1. Node.js etkileşimli seçerek penceresini **Görünüm > Diğer Pencereler > Node.js etkileşimli pencere**.
+1. Node.js etkileşimli seçerek penceresini **Görünüm** > **diğer pencereler** > **Node.js etkileşimli pencere**.
 
    ![Node.js etkileşimli penceresini açın](../nodejs/media/tutorial-nodejs-interactive-window.png)  
 

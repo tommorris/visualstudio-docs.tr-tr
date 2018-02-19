@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 662ac8a1d8eac3e23d98bd9978a16e286a26d145
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ac44ade848b4e423c1fcb253cf1867937f371719
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Birim testi için Python kodu ayarlama
 
@@ -29,9 +29,11 @@ Birim testleri, bir uygulama, genellikle yalıtılmış işlevleri, sınıflar v
 
 Python birim testleri bir program tasarlarken senaryoları doğrulamak için yaygın olarak kullanır. Visual Studio'da Python desteği, keşfetme, yürütme ve birim testleri geliştirme sürecinizi bağlamında testleri ayrı olarak çalıştırmaya gerek kalmadan hata ayıklama içerir.
 
-Bu konuda birim Visual Studio'da Python ile yetenekleri testi kısa bir özeti verilmektedir. Birim testi genel hakkında daha fazla bilgi için bkz: [birim testi kodunuzu](../test/unit-test-your-code.md). Ayrıca bkz. video [sınama Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Microsoft Virtual Academy, 2m31s).
+Bu konuda birim Visual Studio'da Python ile yetenekleri testi kısa bir özeti verilmektedir. Birim testi genel hakkında daha fazla bilgi için bkz: [birim testi kodunuzu](../test/unit-test-your-code.md).
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567]
+|   |   |
+|---|---|
+| ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | [(Microsoft Virtual Academy) bir video izlemek](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) Python (2 m 31s) sınama birim üzerinde. |
 
 ## <a name="discovering-and-viewing-tests"></a>Keşfetmek ve testleri görüntüleme
 

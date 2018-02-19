@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a73226de18ea2003890c2923641ae65318dbfc1f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Visual Studio için klavye ipuçları
 
@@ -68,7 +68,7 @@ Bu konudaki klavye kısayollarını kullanarak Visual Studio'da daha kolay gideb
 |Dosyalarda Bul|Ctrl+Shift+F|
 |Dosyalarda Değiştir|Ctrl+Shift+H|
 
-##  <a name="BKMK_CodeEditor"></a>Kod Düzenleyicisi
+##  <a name="BKMK_CodeEditor"></a> Kod Düzenleyicisi
 
 |Komut|Kısayol|Sürüm kullanılabilirliği|
 |-|-|-|
@@ -84,8 +84,8 @@ Bu konudaki klavye kısayollarını kullanarak Visual Studio'da daha kolay gideb
 |Blok seçimi|Alt basılı tutun ve fare, Shift + Alt + ok tuşları sürükleyin||
 |Satırı Yukarı/Aşağı Taşı|Alt + Yukarı / Alt + Aşağı Ok||
 |Yinelenen satır|Ctrl+E,V|Visual Studio 2017 sürüm 15,6 Önizleme 2|
-|Seçimi genişletin|Ctrl+W|Visual Studio 2017 sürüm 15,5|
-|Sözleşme seçimi|Ctrl+Shift+W|Visual Studio 2017 sürüm 15,5|
+|Seçimi genişletin|**Shift**+**Alt**+**=**|Visual Studio 2017 sürüm 15,5|
+|Sözleşme seçimi|**Shift**+**Alt**+**-**|Visual Studio 2017 sürüm 15,5|
 |Tanıma gitme|F12||
 |Özet tanımı|Alt+F12||
 |Tanımı yığınına gidin|Ctrl + Shift + 8 (arka), Ctrl + Shift + 7 (İleri)||
@@ -125,9 +125,9 @@ Bu konudaki klavye kısayollarını kullanarak Visual Studio'da daha kolay gideb
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Klavye kısayolları (VSTS ve TFS)](/vsts/collaborate/keyboard-shortcuts)  
-[Visual Studio Blog](http://blogs.msdn.com/b/visualstudio)  
-[Visual Studio ipuçları ve püf noktaları blogu](http://blogs.msdn.com/b/zainnab)  
-[Visual Studio araç kutusu kanalda 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
-[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
-[Visual Studio bağlanmak hataları](http://connect.microsoft.com/VisualStudio)
+- [Klavye kısayolları (VSTS ve TFS)](/vsts/collaborate/keyboard-shortcuts)
+- [Visual Studio Blog](http://blogs.msdn.com/b/visualstudio)
+- [Visual Studio ipuçları ve püf noktaları blogu](http://blogs.msdn.com/b/zainnab)
+- [Visual Studio araç kutusu kanalda 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
+- [Visual Studio bağlanmak hataları](http://connect.microsoft.com/VisualStudio)

@@ -2,7 +2,7 @@
 title: "Genel Bakış (Windows) Visual Studio'da Python desteğinin | Microsoft Docs"
 description: "Visual Studio'da Python için kullanılabilen özellikleri özeti (aynı zamanda Visual Studio, PTVS Python araçları olarak bilinir), Visual Studio sürümleri arasında sorular ve yanıtlar (SSS) ve özellik destek matrisi dahil olmak üzere."
 ms.custom: 
-ms.date: 01/09/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9236a36e6041cb22f6206c08662cb16be846cf85
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: 8693e876d56a30b31cd873861c37dbef486e7284
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Python Visual Studio (Windows) ile çalışma
 
@@ -50,9 +50,10 @@ Başlamak için:
 
 Python iş yükü de içeren [Python için Azure SDK](azure-sdk-for-python.md), Windows, Mac OS X ve Linux uygulamalardan Azure Hizmetleri kullanma basitleştirir.
 
-Kısa bir video giriş için bkz [Visual Studio için Python Araçları](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) ilgili Microsoft Virtual Academy (yaklaşık 22 dakika toplam). 
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | [Video serisi (Microsoft Virtual Academy) izleme](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) giriş (toplam 22 dakika) Visual Studio'da Python için. |
+| ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | Ayrıca aşağıdaki videoları Microsoft Virtual Academy bakın:<ul><li>[Python ile programlamaya giriş](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python başlangıç: Dizeler ve İşlevler](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python temelleri: Listesi ve döngüler](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Üst Python sorular](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Sorular ve yanıtlar
 

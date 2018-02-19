@@ -9,11 +9,11 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde ürün anahtarları kullanma
 
@@ -90,7 +90,8 @@ Gördüğünüz gibi Visio 2010 listelenen birçok sürümü vardır.  Bir anaht
 ### <a name="exporting-your-claimed-keys"></a>Talep edilen anahtarlarınızı dışarı aktarma
 Size, otomatik olarak "sizin için istenen"olarak işaretlenmiş statik ve diğer anahtarları büyük seçimi birlikte talep tüm anahtarları listesini dışarı aktarabilirsiniz.  
 
-**Önemli: aboneliğiniz sona ererse, artık yeni anahtarlar talep veya talep edilen anahtarlarınızı verme kuramaz.** 
+> [!IMPORTANT] 
+> Aboneliğinizin süresi dolarsa, artık yeni anahtarlar talep veya dışarı aktarma, talep edilen keys.* * kuramaz 
 
 Anahtarlarınızı dışarı aktarmak için yalnızca tıklayın **tüm anahtarları dışa** ürün anahtarları sayfanın sağ uçta bağlantı.  Dosyayı açmak veya kaydetmek için seçeneği elde edersiniz ve KeysExport.xml başlıklı bir .xml dosyası oluşturulur.  Dosyası .xml dosyaları işleme yeteneği olan bir uygulamayla açmanız gerekir.  Örneğin, bir salt okunur çalışma kitabını Excel'de olarak dosyasını açın.  
 

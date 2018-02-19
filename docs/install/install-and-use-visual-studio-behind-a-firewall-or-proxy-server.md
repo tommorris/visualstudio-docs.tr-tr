@@ -20,16 +20,16 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d6e207dbadd7ffdb73cf348213cab7627905c28
-ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
+ms.openlocfilehash: 320b2492d73e0c15d806dac9aac3802bf957f83c
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve Visual Studio ve Azure Hizmetleri Güvenlik Duvarı veya proxy sunucunun arkasında kullanma
 Sizin veya kuruluşunuzun bir güvenlik duvarı veya proxy sunucu gibi güvenlik önlemleri kullanıyorsa, ardından vardır "beyaz liste" ve bağlantı noktaları ve böylece yüklediğinizde ve görsel Stu en iyi deneyimi sahip açmak isteyebilirsiniz protokolleri isteyebilirsiniz etki alanı URL'leri dio ve Azure Hizmetleri.
 
-* **[Visual Studio yükleme](#install-visual-studio)**: tüm bileşenleri ve istediğiniz iş yüklerini erişiminiz beyaz liste etki alanı URL'lere Bu tablo içerir.    
+* **[Visual Studio yükleme](#install-visual-studio)**: tüm bileşenleri ve istediğiniz iş yüklerini erişiminiz beyaz liste etki alanı URL'lere bu tablolar içerir.    
 
 * **[Visual Studio ve Azure hizmetlerini kullanma](#use-visual-studio-and-azure-services)**: Bu tablo beyaz liste ve bağlantı noktalarını ve protokolleri tüm özellikleri ve istediğiniz hizmetleri erişiminiz açmak için etki alanı URL'lere içerir.
 

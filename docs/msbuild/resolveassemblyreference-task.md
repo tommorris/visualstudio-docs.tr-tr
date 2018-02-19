@@ -11,6 +11,7 @@ f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveAssemblyReference
 - MSBuild.ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects
 - MSBuild.ResolveAssemblyReference.FoundConflict
+- MSBuild.ResolveAssemblyRedirects.SuggestedRedirects
 dev_langs:
 - VB
 - CSharp
@@ -26,11 +27,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0003b1f747238467afd4754cb77cc1ac47a07a86
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 91585ea5e72bc2ceebf07d02c2398454f775b5b7
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference Görevi
 Belirtilen derlemelerini bağlı tüm derlemelerde belirler. Bu ikinci içerir ve `n`th sırası bağımlılıkları.  
@@ -53,14 +54,14 @@ Belirtilen derlemelerini bağlı tüm derlemelerde belirler. Bu ikinci içerir v
 |`FilesWritten`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Yazılan öğeleri içeren disk.|  
 |`FindDependencies`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, bağımlılıkları bulunabilir. Aksi takdirde, yalnızca birincil başvuruları bulunamadı. Varsayılan değer `true` şeklindedir.|  
 |`FindRelatedFiles`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, ilgili .pdb dosyaları ve .xml dosyaları gibi dosyalar bulunabilir. Varsayılan değer `true` şeklindedir.|  
-|`FindSatellites`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, uydu derlemelerini bulunabilir. Varsayılan değer:`true.`|  
+|`FindSatellites`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, uydu derlemelerini bulunabilir. Varsayılan değer: `true.`|  
 |`FindSerializationAssemblies`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, görev serileştirme derlemelerini'ni arar. Varsayılan değer `true` şeklindedir.|  
 |`FullFrameworkAssemblyTables`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Yeniden dağıtılabilir dosya listesi belirli framework dizin ile ilişkilendirmek için "FrameworkDirectory" meta veri içermeyen öğeleri belirtir. İlişkilendirme yapılmazsa bir hata günlüğe kaydedilir. Bir FrameworkDirectory ayarlanmamışsa Çöz derleme başvurusu (RAR) mantığı hedef framework dizin kullanır...|  
 |`FullFrameworkFolders`|İsteğe bağlı <xref:System.String?displayProperty=fullName> `[]` parametresi.<br /><br /> RedistList dizin içeren klasörleri kümesini belirtir. Bu dizin, belirtilen istemci profili, örneğin, %programfiles%\reference assemblies\microsoft\framework\v4.0 için tam framework temsil eder.|  
 |`FullTargetFrameworkSubsetNames`|İsteğe bağlı `String[]` parametresi.<br /><br /> Hedef framework alt adlarının bir listesini içerir. Bir alt küme adı listesinde birinde eşleşip eşleşmediğini `TargetFrameworkSubset` name özelliği, sistemin derleme zamanında bu belirli hedef framework alt dışlar sonra.|  
-|`IgnoreDefaultInstalledAssemblyTables`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, görev sonra arar ve kullandığı ek yüklü derleme tabloları (veya "Redist listeler") altındaki \RedistList dizininde bulunan `TargetFrameworkDirectories`. Varsayılan değer:`false.`|  
-|`IgnoreDefaultInstalledAssemblySubsetTables`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, görev sonra arar ve kullandığı ek yüklü derleme alt tablolar (veya "Alt listeler") altındaki \SubsetList dizininde bulunan `TargetFrameworkDirectories`. Varsayılan değer:`false.`|  
-|`InstalledAssemblySubsetTables`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Hedef alt olması beklenen derlemelerin belirtmesi XML dosyalarının listesini içerir.<br /><br /> Bir seçenek olarak, bu listedeki öğeler ilişkilendirmek için "FrameworkDirectory" meta veri belirtebilirsiniz bir`InstalledAssemblySubsetTable`<br /><br /> belirli framework dizinine.<br /><br /> Varsa yalnızca `TargetFrameworkDirectories` öğesi, ardından "FrameworkDirectory" meta veri eksik bu listedeki tüm öğeler kabul edilir geçirilir benzersiz değere ayarlanmış olsa gibi `TargetFrameworkDirectories`.|  
+|`IgnoreDefaultInstalledAssemblyTables`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, görev sonra arar ve kullandığı ek yüklü derleme tabloları (veya "Redist listeler") altındaki \RedistList dizininde bulunan `TargetFrameworkDirectories`. Varsayılan değer: `false.`|  
+|`IgnoreDefaultInstalledAssemblySubsetTables`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, görev sonra arar ve kullandığı ek yüklü derleme alt tablolar (veya "Alt listeler") altındaki \SubsetList dizininde bulunan `TargetFrameworkDirectories`. Varsayılan değer: `false.`|  
+|`InstalledAssemblySubsetTables`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Hedef alt olması beklenen derlemelerin belirtmesi XML dosyalarının listesini içerir.<br /><br /> Bir seçenek olarak, bu listedeki öğeler ilişkilendirmek için "FrameworkDirectory" meta veri belirtebilirsiniz bir `InstalledAssemblySubsetTable`<br /><br /> belirli framework dizinine.<br /><br /> Varsa yalnızca `TargetFrameworkDirectories` öğesi, ardından "FrameworkDirectory" meta veri eksik bu listedeki tüm öğeler kabul edilir geçirilir benzersiz değere ayarlanmış olsa gibi `TargetFrameworkDirectories`.|  
 |`InstalledAssemblyTables`|İsteğe bağlı `String` parametresi.<br /><br /> Hedef bilgisayarda yüklü olması beklenen derlemelerin belirtmesi XML dosyalarının listesini içerir.<br /><br /> Zaman `InstalledAssemblyTables` , derlemeler listesinde önceki sürümlerinde, XML dosyasında listelenen yeni sürümler halinde birleştirilir ayarlanmadı. Ayrıca, InGAC ayarı olan derlemeler = 'true' önkoşulları olarak kabul edilir ve CopyLocal için ayarlanan = 'false' açıkça geçersiz kılınmadığı sürece.<br /><br /> Bir seçenek olarak, bu listedeki öğeler ilişkilendirmek için "FrameworkDirectory" meta veri belirtebilirsiniz bir `InstalledAssemblyTable` belirli framework dizinine sahip.  Redist adı ile başlayan sürece ancak, bu ayar yok sayılır<br /><br /> "Microsoft-Windows-CLRCoreComp".<br /><br /> Varsa yalnızca `TargetFrameworkDirectories` öğesi, ardından "FrameworkDirectory" meta veri eksik bu listedeki tüm öğeler kabul edilir sanki geçirilen benzersiz değere ayarlayın<br /><br /> için `TargetFrameworkDirectories`.|  
 |`LatestTargetFrameworkDirectories`|İsteğe bağlı `String[]` parametresi.<br /><br /> Makinede hedeflenen en güncel framework redist listeleri içeren dizinlerin listesini belirtir. Bu ayarlanmamışsa verilen hedef framework tanımlayıcı için makinede yüklü en yüksek framework kullanılır.|  
 |`ProfileName`|İsteğe bağlı `String` parametresi.<br /><br /> -Hedeflenecek framework profilin adını belirtir. Örneğin, istemci, Web veya ağ.|  
@@ -73,7 +74,7 @@ Belirtilen derlemelerini bağlı tüm derlemelerde belirler. Bu ikinci içerir v
 |`SerializationAssemblyFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur çıktı parametresi.<br /><br /> Bulunan tüm XML serileştirme derlemelerini içerir. Bu öğeler CopyLocal işaretlenir = true ise ve yalnızca başvuru ya da mevcut için bu öğeyi neden bağımlılık CopyLocal ise = true.<br /><br /> `Boolean` CopyLocal gösterir verilen başvurunun çıktı dizinine kopyalanıp kopyalanmayacağını meta verileri.|  
 |`Silent`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, hiçbir iletileri günlüğe kaydedilir. Varsayılan değer `false` şeklindedir.|  
 |`StateFile`|İsteğe bağlı `String` parametresi.<br /><br /> Ara kaydedileceği yeri gösteren bir dosya adı oluşturmak için bu görev durumunu belirtir.|  
-|`SuggestedRedirects`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur çıktı parametresi.<br /><br /> Her farklı çakışan derleme kimliği için değeri bağımsız olarak bir öğe içeren `AutoUnify` parametresi. Bu, her kültür ve uygun bindingRedirect girişi uygulama yapılandırma dosyasında yok bulundu PKT içerir.<br /><br /> Her öğe, isteğe bağlı olarak aşağıdaki bilgileri içerir:<br /><br /> -   `Include`Öznitelik: derleme ailesi tam adı 0.0.0.0 sürüm alanı değerini içeriyor<br />-   `MaxVersion`öğe meta verisi: en yüksek sürüm numarasını içerir.|  
+|`SuggestedRedirects`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur çıktı parametresi.<br /><br /> Her farklı çakışan derleme kimliği için değeri bağımsız olarak bir öğe içeren `AutoUnify` parametresi. Bu, her kültür ve uygun bindingRedirect girişi uygulama yapılandırma dosyasında yok bulundu PKT içerir.<br /><br /> Her öğe, isteğe bağlı olarak aşağıdaki bilgileri içerir:<br /><br /> -   `Include` Öznitelik: derleme ailesi tam adı 0.0.0.0 sürüm alanı değerini içeriyor<br />-   `MaxVersion` öğe meta verisi: en yüksek sürüm numarasını içerir.|  
 |`TargetedRuntimeVersion`|İsteğe bağlı `String` parametresi.<br /><br /> Çalışma zamanı sürümü hedef, örneğin, 2.0.57027 veya v2.0.57027 belirtir.|  
 |`TargetFrameworkDirectories`|İsteğe bağlı `String[]` parametresi.<br /><br /> Hedef framework dizin yolunu belirtir. Bu parametre, sonuçta elde edilen öğeleri CopyLocal durumunu belirlemek için gereklidir.<br /><br /> Bu parametre belirtilmezse, sonuçta ortaya çıkan öğe olması olacaktır CopyLocal değerini `true` açıkça sahip oldukları sürece bir `Private` meta veri değeri `true` kendi kaynak öğe üzerinde.|  
 |`TargetFrameworkMoniker`|İsteğe bağlı `String` parametresi.<br /><br /> Varsa, izlemek için TargetFrameworkMoniker. Bu günlüğe kaydetme için kullanılır.|  

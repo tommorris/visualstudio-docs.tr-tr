@@ -9,11 +9,11 @@ Description: Learn how to activate the Azure benefit included in your Visual Stu
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 7354f96a441faa587e2f669ee39defcf3ced1ff6
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: a0587e063aa73666a0e97460b8d92f4614b3b116
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde Microsoft Azure kullanarak
 
@@ -68,11 +68,16 @@ Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [https://my.visua
 ![Azure Panosu](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>SSS
-*Burada Güncelleştirmeleri denetle*
+### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>S: Azure portalı içinde bir teknik destek olayı nasıl gönderilsin mi?
+A: Azure Portalı'ndan bir destek olayını gönderme üç adımlık bir işlemdir.
+1. Teknik Destek avantajı etkinleştirmek ve sözleşme kimliği erişim kimliğinizi alın
+2. Destek sözleşmesi Azure aboneliğinize bağlayın. 
+3. Bir destek olayı gönderin.
+Lütfen şu adresi ziyaret [teknik destek](/visualstudio/subscriptions/vs-tech-support) tam Ayrıntılar için belgelerine bakın. 
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  Azure ile ilgili Yardım gerekiyor?  Bu kaynaklara gözatın:
-    - Teknik Destek: https://azure.microsoft.com/support/options/ 
-    - [Belgeler](/azure/)
+    - Teknik Destek: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+    - [Azure belgelerine](/visualstudio/azure/)
 -  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://www.visualstudio.com/subscriptions/support/).
 -  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://www.visualstudio.com/support/). 

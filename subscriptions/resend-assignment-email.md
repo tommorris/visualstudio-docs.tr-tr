@@ -1,22 +1,34 @@
 ---
-title: "Abonelik atama yeniden göndermek e-postalar VLSC'de | Microsoft Docs"
+title: "Abonelik atama yeniden göndermek nasıl e-postalar Manage.visualstudio.com veya VLSC içinde | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 12/29/2017
+Ms.date: 2/13/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to resend the subscription assignment to a subscriber from within VLSC
+Description: Learn how to resend the subscription assignment to subscribers from manage.visualstudio.com or VLSC
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 7162435044a578a94249774305f2c6b8b6438219
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 0ba7d6e36c25ced78b0c6b25688e5eb5b26eb04a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-resend-subscription-assignment-emails-from-vlsc"></a>Abonelik atama e-postaları VLSC'de yeniden göndermek nasıl:
+# <a name="how-to-resend-subscription-assignment-emails"></a>Abonelik atama e-postaların gönderileceğini nasıl:
 
+Hangi portalında aboneliklerinizi yönetmek için kullandığınız bir atama e-posta yeniden göndermek için gerekli olan adımları bağlıdır. 
+
+## <a name="resending-assignment-emails-from-within-managevisualstudiocom"></a>Yeniden atama gelen e-postaları manage.visualstudio.com içinde
+
+Atama gelen e-postaları manage.visualstudio.com portalındaki yeniden göndermeyi için çok basit bir işlemdir:
+
+1. Ziyaret [manage.visualstudio.com](https://manage.visualstudio.com) portal ve oturum açın. 
+2. Kullanım **filtre** atama e-postayı yeniden göndermek istediğiniz abone için arama sekmesini. (Filtreleme hakkında daha fazla bilgi için lütfen bkz [bir abonelik için arama](/visualstudio/subscriptions/search-license).)
+3. Üzerinde subscriber(s)'ı tıklatın.  Kullanın Ctrl + click veya Shift + birden çok aboneye seçmek için tıklatın.
+4. Tıklatın **yeniden gönder** üst kısmındaki arama sonuçları.  
+
+## <a name="resending-assignment-emails-from-within-vlsc"></a>Yeniden atama gelen e-postaları VLSC içinde
 Bir abonelik VLSC bir abone için atanan ve abone atama e-posta yeniden isteklerini zaman abonenin e-posta bilgilerini düzenleyerek ve özgün adrese değiştirme gerçekleştirebilirsiniz. Bu atama e-posta göndermeden otomatik olarak tetikler.
 
 Lütfen izleyin atama e-postayı yeniden göndermek için yönergeler aşağıda:
@@ -37,4 +49,3 @@ Bu abonelikte değişiklikleri olduğunu algılar ve portalda listelenen e-posta
 
 > [!NOTE]
 > - Yeni atanan abonelikleri atama e-posta otomatik olarak oluşturur. Bir kullanıcı herhangi bir nedenle yeni atama e-posta bildirimi veya bildirim gönderilmez istediğinde yukarıdaki yalnızca gereklidir.
-> - Bu yordamı yeniden atama https://manage.visualstudio.com atanan abonelikleri için e-posta göndermek için gerekli değildir.  Portalı'nda abonelere atama e-postaları yeniden göndermek için yalnızca subscriber(s) seçin ve tıklatın **yeniden** abone listesinin üstündeki düğmesi.  

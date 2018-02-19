@@ -2,7 +2,7 @@
 title: "Visual Studio'da Python desteği yükleme | Microsoft Docs"
 description: "İçin Visual Studio (PTVS) Visual Studio 2017, 2015, 2013, 2012 ve 2010 içinde Python Araçları'nı yükleme konusunda ayrıntılı yönergeler seçenekleri ve yükleme konumlarını dahil olmak üzere."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd0ef5cba2924c33857a8366105bde1f933a1ae9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 32a8e6413fd719bfa4be6296972d39d609eab411
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python desteğini yükleme
 
@@ -43,7 +43,7 @@ Hızlı yükleme adımlarını izleyerek sonra Python desteği test etmek için 
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Karşıdan yükle ve en son Visual Studio 2017 yükleyiciyi çalıştırın. Sürüm 15.2 yüklemeniz gerekir ve Python kullanmak için yukarıdaki.
+1. Karşıdan yükle ve en son Visual Studio 2017 yükleyiciyi çalıştırın. Visual Studio'nun zaten yüklü varsa, Visual Studio yükleyiciyi çalıştırın ve 2. adıma atlayın.
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Community yükle</a>
@@ -55,7 +55,10 @@ Hızlı yükleme adımlarını izleyerek sonra Python desteği test etmek için 
 
     ![Visual Studio yükleyicisi Python geliştirme iş yükü](media/installation-python-workload.png)
 
-    İsteğe bağlı: veri bilimi ile çalışıyorsanız, de dikkate **veri bilimi ve analitik uygulamaları** iş yükü (Visual Studio 2017 15.2 ve üzeri). Bu iş yükü, Python ve bunun yanı sıra R ve F # dilleri için destek içerir. Daha fazla bilgi için bkz: [veri bilimi ve analitik uygulamaları iş yükü](../rtvs/data-science-workload.md).
+    İsteğe bağlı: veri bilimi ile çalışıyorsanız, de dikkate **veri bilimi ve analitik uygulamaları** iş yükü. Bu iş yükü, Python ve bunun yanı sıra R ve F # dilleri için destek içerir. Daha fazla bilgi için bkz: [veri bilimi ve analitik uygulamaları iş yükü](../rtvs/data-science-and-analytical-applications-workload.md).
+
+    > [!Note]
+    > Python ve veri bilimi iş yükleri ve sonrasında yalnızca Visual Studio 2017 sürüm 15.2 ile kullanılabilir.
 
 1. Yükleyici sağ tarafında isterseniz ek seçenekleri seçin. Varsayılan seçenekleri kabul etmek için bu adımı atlayın.
 
@@ -63,7 +66,7 @@ Hızlı yükleme adımlarını izleyerek sonra Python desteği test etmek için 
 
     | Seçenek | Açıklama |
     | --- | --- |
-    | Python dağıtımları | Herhangi bir bileşimini çalışmak için planlama Python 2, Python 3, Anaconda2 ve Anaconda3 dağıtımları 32-bit ve 64-bit çeşitlemelerini seçin. Her dağıtım 's Yorumlayıcı, çalışma zamanı ve kitaplıklarını içerir. Anaconda, özellikle çok çeşitli önceden yüklenen paketler içeren bir açık veri bilimi platformudur. (Visual Studio yükleyicisi eklemek veya kaldırmak dağıtımları için herhangi bir zamanda döndürebilir.) |
+    | Python dağıtımları | Herhangi bir bileşimini çalışmak için planlama Python 2, Python 3, Anaconda2 ve Anaconda3 dağıtımları 32-bit ve 64-bit çeşitlemelerini seçin. Her dağıtım 's Yorumlayıcı, çalışma zamanı ve kitaplıklarını içerir. Anaconda, özellikle çok çeşitli önceden yüklenen paketler içeren bir açık veri bilimi platformudur. (Visual Studio yükleyicisi eklemek veya kaldırmak dağıtımları için herhangi bir zamanda döndürebilir.)  **Not**: Visual Studio yükleyicisi dışında bir dağıtım yüklediyseniz, burada eşdeğer seçeneği denetlemek için gerek yoktur. Visual Studio varolan Python yüklemeleri otomatik olarak algılar. Bkz: [Python ortamları](managing-python-environments-in-visual-studio.md). |
     | Cookiecutter şablon desteği | Şablonları bulmak, şablon seçenekleri giriş ve projeler ve dosyaları oluşturmak için Cookiecutter grafik kullanıcı arabirimini yükler. Bkz: [Cookiecutter uzantısını kullanarak](using-python-cookiecutter-templates.md). |
     | Python web desteği | HTML, CSS ve JavaScript desteği, Bottle, Flask ve Django çerçeveleri kullanarak projeleri için şablonlar yanı sıra düzenleme dahil olmak üzere web geliştirme araçları'nı yükler. Bkz: [Python web projesi şablonları](python-web-application-project-templates.md). |
     | Python IOT desteği | Python kullanarak Windows IOT Core geliştirme destekler. |
@@ -74,7 +77,9 @@ Hızlı yükleme adımlarını izleyerek sonra Python desteği test etmek için 
 
     ![Başlatma, değiştirme, değiştirme veya Visual Studio Yükleyicisi'nden kaldırılıyor](media/installation-vs-launch.png)
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | [(Microsoft Virtual Academy) bir video izlemek](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) Visual Studio'da Python desteği yükleme.|
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -107,11 +112,11 @@ Visual Studio 2017 Python iş yükü yüklü `%ProgramFiles(x86)%\Microsoft Visu
 Visual Studio 2015 ve önceki sürümlerinde, yükleme yolu aşağıdaki gibidir:
 
 - 32-bit:
-  - Yol:`%Program Files(x86)%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - Yolu kayıt defteri konumu:`HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\<VS_ver>\InstallDir`
+  - Yol: `%Program Files(x86)%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
+  - Yolu kayıt defteri konumu: `HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\<VS_ver>\InstallDir`
 - 64-bit:
-  - Yol:`%Program Files%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - Yolu kayıt defteri konumu:`HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\<VS_ver>\InstallDir`
+  - Yol: `%Program Files%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
+  - Yolu kayıt defteri konumu: `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\<VS_ver>\InstallDir`
 
 burada:
 

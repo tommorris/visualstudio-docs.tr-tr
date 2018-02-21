@@ -1,48 +1,75 @@
-# [Visual Studio abonelikleri](index.md)
-# Genel Bakış
-## [Abonelik seçeneklerini karşılaştırın](compare-subscriptions.md)
-
-# Nasıl Yapılır Kılavuzları
-##  Aboneler
-### [Bir abonelik satın alın](buy-vs-subscriptions.md)
-### [Aboneliğinizi yönetin](manage-vs-subscriptions.md)
-### [Abone İndirmelerini Kullanma](subscriber-downloads.md)
-### [Ürün Anahtarlarını Kullanma](product-keys.md)
-### Avantajları Etkinleştirme
-#### Araçlar
-##### [Visual Studio IDE](vs-ide-benefit.md) 
-##### [Visual Studio Team Services](vs-vsts.md)
-##### [Microsoft Azure](vs-azure.md) 
-##### [Parasoft](vs-parasoft.md)
-##### [WhiteSource Bolt](vs-whitesource.md)
-##### [Enterprise Mobility + Security](vs-ems.md)
-##### [Windows Geliştirici Hesabı](vs-windows-dev.md)
-##### [Office 365 Geliştirici](vs-office-dev.md)
-##### [Power BI Pro](vs-pbi.md)
-##### [SmartOffice4TFS + ModernRequirements4TFS](vs-modernreq.md)
-##### [Microsoft Azure Kullandıkça Öde](vs-azure-payg.md) 
-#### Eğitim
-##### [DataCamp](vs-datacamp.md)
-##### [LinkedIn Learning](vs-linkedin-learning.md)
-##### [Opsgility](vs-opsgility.md)
-##### [Pluralsight](vs-pluralsight.md)
-##### [Xamarin University Eğitimi](vs-xamarin.md)
-##### [Microsoft E-eğitim](vs-elearn.md)
-##### [MSDN Magazine Aboneliği](vs-msdn.md)
-#### Destek
-##### [Teknik Destek](vs-tech-support.md)
-
-## Yöneticiler
-### [Yönetici Genel Bakışı](admin-responsibilities.md)
-### [Yönetici Portalına erişim](access-admin-portal.md)
-### [Yönetici Portalını kullanma](using-admin-portal.md)
-### [Abonelik atama](assign-license.md)
-### [Bir aboneliği düzenleme](edit-license.md)
-### [Bir aboneliği silme](delete-license.md)
-### [Abonelik arama](search-license.md)
-### [Talep aşımı olan abonelikleri işleme](handle-overclaimed-license.md)
-### [Süresi dolan abonelikleri işleme](handle-expired-license.md)
-
+# [Visual Studio abonelikleri](index.md) 
+## Abone Deneyimleri
+### [Abone Portalı’nı Kullanma](using-the-subscriber-portal.md)
+#### [Perakende Abonelikleri Etkinleştirme](activate-store-subscriptions.md)
+#### [Oturum Açılıyor](signing-in.md)
+##### [Diğer Adlar ile Oturum Açma](aliasing.md)
+#### [Aboneliklerinizi Yönetme](manage-vs-subscriptions.md)
+### [Yazılım İndirme](subscriber-downloads.md)
+#### [Kullanılabilir Yazılım İndirmelerinin Listesi](software-download-list.md)
+### [Ürün Anahtarlarını Alma ve Yönetme](product-keys.md)
+### Visual Studio Dev Essentials
+#### [Visual Studio Dev Essentials’a Katılma](join-dev-essentials.md)
+#### [Visual Studio Dev Essentials’tan Çıkma](leave-vsde.md)
+### [Abone Avantajları](subscriber-benefits.md)
+## Abone Avantajlarını Kullanma
+### Araçlar
+#### [Visual Studio IDE ](vs-ide-benefit.md) 
+#### [Visual Studio Team Services](vs-vsts.md)
+#### [Azure Kredisi](vs-azure.md) 
+#### [Visual Studio App Center](vs-visual-studio-app-center.md)
+#### [Parasoft ](vs-parasoft.md)
+#### [WhiteSource Bolt](vs-whitesource.md)
+#### [Enterprise Mobility & Security](vs-ems.md)
+#### [Windows Geliştirici Hesabı](vs-windows-dev.md)
+#### [Office 365 Geliştirici aboneliği](vs-office-dev.md)
+#### [Power BI Pro ](vs-pbi.md)
+#### [TFS için Modern Gereksinimler](vs-modernreq.md)
+#### [Azure Kullandıkça Öde](vs-azure-payg.md)
+### Profesyonel Geliştirme
+#### [LinkedIn Learning](vs-linkedin-learning.md)
+#### [DataCamp](vs-datacamp.md)
+#### [Opsgility](vs-opsgility.md)
+#### [Pluralsight](vs-pluralsight.md)
+#### [Xamarin University Eğitimi](vs-xamarin.md)
+#### [Microsoft E-Learning](vs-elearn.md)
+#### [MSDN Magazine aboneliği](vs-msdn.md)
+### Destek Avantajları
+#### [Azure Danışmanı Sohbeti](vs-azure-advisory-chat.md)
+#### [Azure Topluluğu](vs-azure-community.md)
+#### [Teknik Destek](vs-tech-support.md)
+#### [Öncelikli Forum Desteği](vs-priority-support.md)
+#### [Concierge Desteği](vs-concierge-chat.md)
+## Abonelikleri Yönetme
+### Genel Bakış
+#### [Abonelik Yönetimi Hakkında Bilgi Edinme](subscription-management-info.md)
+#### [Yönetici Sorumlulukları](admin-responsibilities.md)
+#### [Yöneticileri Yönetme](managing-admins.md)
+#### [Portala Erişme](access-admin-portal.md)
+#### Kuruluşunuzu Ekleme
+##### [PCN’nizi Bulma](find-pcn.md)
+##### [Birden Çok PCN’yi Yönetme](multiple-pcns.md)
+##### [Birincil Kişinizi Bulma](find-primary-contact.md)
+##### [Abonelik Kimliklerini Bulma](find-subscription-id.md)
+### Yönetici Portalı’nı Kullanma
+#### [Abonelik Atama](assign-license.md)
+#### [Abonelik E-postalarını Yeniden Gönderme](resend-assignment-email.md)
+#### [Aboneliği Düzenleme](edit-license.md)
+#### [Aboneliği Silme](delete-license.md)
+#### [Abonelik Arama](search-license.md)
+#### [Fazla Yüklemeler](handle-overclaimed-license.md)
+#### [Süresi Dolan Abonelikler](handle-expired-license.md)
+#### [Kişisel E-posta ile Oturum Açan Aboneler](personal-email-sign-ins.md)
+## Visual Studio Abonelikleri Alma
+### [Abonelikleri Karşılaştırma](compare-subscriptions.md)
+### Bulut Abonelikleri Satın Alma
+#### [Genel bakış](vscloud-overview.md)
+#### [İlk Satın Alım](vscloud-first-purchase.md)
+#### [Yenilemeler](vscloud-renewals.md)
+#### [Daha Fazla Satın Alma](vscloud-buy-more.md)
+#### [İptal Etme](vscloud-cancel.md)
 ## Kaynaklar
-### [Kullanım Koşulları](vs-license-terms.md)
-### [Abonelik Desteği](https://www.visualstudio.com/subscriptions/support/)
+### [Visual Studio Lisans Koşulları](vs-license-terms.md)
+### [Visual Studio Lisanslama Teknik İncelemesi](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
+### [Abonelik seçeneklerini ve fiyatlandırmalarını karşılaştırma](https://www.visualstudio.com/vs/pricing)
+### [Visual Studio IDE özelliklerini karşılaştırma](https://www.visualstudio.com/vs/compare)

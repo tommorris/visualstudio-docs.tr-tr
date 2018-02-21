@@ -13,12 +13,13 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.workload: multiple
-ms.openlocfilehash: 71f0837bbc488518204e8b9336339c2d01c21600
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.openlocfilehash: c668d454cb4584cbaaa345c0ca00e286526c6aae
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>İzlenecek yol: İlk WPF Masaüstü Uygulamam
 
@@ -59,7 +60,7 @@ Bu bölümde, proje ve bir ana penceresi veya form içeren uygulama altyapısı 
 
 1. İçinde **özellikleri** penceresinde genişletin **ortak** Kategori düğümü ve seçin **başlık** özelliği ve enter `ExpenseIt` ve tuşuna basın **girin**  anahtarı.
   
-     Dikkat **başlık** değiştiğinde XAML pencere öğesinde yeni değer ile eşleşmelidir. XAML penceresinde XAML özelliklerini değiştirebilirsiniz veya **özellikleri** penceresi ve değişiklikleri eşitlenir.
+     Dikkat **başlık** özniteliği XAML penceresinde değiştirir yeni değer ile eşleşmelidir. XAML penceresinde XAML özelliklerini değiştirebilirsiniz veya **özellikleri** penceresi ve değişiklikleri eşitlenir.
 
 1. XAML penceresinde değerini **yükseklik** öğesine `375`ve değeri ayarlayın **genişliği** özelliğine `500`.
   
@@ -115,7 +116,7 @@ Bu bölümde, uygulama için iki sayfaları ve görüntü ekleyeceksiniz.
 
 1. Tasarımcıda seçin **ExpenseItHome.XAML** etkin Tasarımcı sekmesi değilse sekmesinde.
 
-1. Seçin `<Title>` öğesi başlık değiştirip **ExpenseIt - giriş**.
+1. Seçin `Title` özniteliği ve onun değerine değiştirin **ExpenseIt - giriş**.
   
      **ExpenseItHome.XAML** dosya şimdi şöyle görünmelidir C#:  
   
@@ -177,7 +178,7 @@ Bu bölümde, uygulama için iki sayfaları ve görüntü ekleyeceksiniz.
 
 1. Tasarımcıda seçin **ExpenseReportPage.xaml** etkin Tasarımcı sekmesi değilse sekmesinde.
 
-1. Seçin `<Title>` öğesi başlık değiştirip **ExpenseIt - görünüm gider**.
+1. Seçin `Title` özniteliği ve onun değerine değiştirin **ExpenseIt - görünüm gider**.
   
      ExpenseReportPage.xaml dosyanızı gibi C# ' ta görünmelidir:  
   

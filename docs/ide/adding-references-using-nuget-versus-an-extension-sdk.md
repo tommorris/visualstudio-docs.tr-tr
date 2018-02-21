@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4ec453e3bec8bbca0e01d0706b43f82fb413d162
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 101d16c647887aced273804fc80a890d5102d22c
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Başvuru Eklerken NuGet veya Uzantı SDK Kullanma Karşılaştırması
 
@@ -30,7 +32,7 @@ Visual Studio için NuGet uzantısı ya da bir yazılım geliştirme seti (SDK) 
 
 Aşağıdaki tabloda, bir SDK başvuruda bulunan özellikler NuGet başvuru özellikleri ile karşılaştırmanıza yardımcı olur.
 
-|Özellik|SDK'sı desteği|SDK notları|NuGet desteği|NuGet Notlar|
+|Özellik|SDK'sı desteği|SDK notları|NuGet desteği|NuGet Notes|
 |-------------|-----------------|---------------|-------------------|-----------------|
 |Bir varlık mekanizması başvuruyor ve tüm dosyaları ve işlevsellik sonra kullanılabilir.|Y|Kullanarak bir SDK'sı ekleme **başvuru Yöneticisi** iletişim kutusunda, tüm dosyaları ve işlevselliği geliştirme iş akışı sırasında kullanılabilir.|Y||
 |MSBuild derlemeleri ve Windows Meta veriler (.winmd) dosyaları otomatik olarak kullanır.|Y|SDK başvurularında derleyiciye otomatik olarak geçirilir.|Y||
@@ -66,7 +68,7 @@ Aşağıdaki tabloda, bir SDK başvuruda bulunan özellikler NuGet başvuru öze
 |Hata ayıklama desteği için Sembol paketi kullanabilirsiniz.|Y|.Pdb dosyaları SDK sürükleyip bırakabilir, dosyaları otomatik olarak toplanma.|Y||
 |Paket Yöneticisi otomatik güncelleştirmeleri düzeneğini destekler.|Yok|SDK ile MSBuild düzenlendi.|Y||
 |Basit bir bildirim biçimi düzeneğini destekler.|Y|Birçok öznitelikleri SDKManifest.xml destekler, ancak küçük bir alt genellikle gereklidir.|Y||
-|Mekanizması tüm Visual Studio sürümleri için kullanılabilir.|Y|SDK ile Visual Studio Express gelen tüm Visual Studio sürümlerini destekler [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].|Y|NuGet destekleyen tüm Visual Studio sürümlerini Express Yukarı aracılığıyla [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].|
+|Mekanizması tüm Visual Studio sürümleri için kullanılabilir.|Y|SDK tüm Visual Studio sürümlerini destekler.|Y|NuGet tüm Visual Studio sürümlerini destekler.|
 |Mekanizması tüm proje türleri için kullanılabilir.|N|SDK'yı destekleyen [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] başlayarak uygulamaları [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|N|İzin verilen projelerinin listesini gözden geçirebilirsiniz.|
 
 ## <a name="see-also"></a>Ayrıca bkz.

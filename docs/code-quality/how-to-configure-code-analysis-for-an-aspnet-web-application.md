@@ -4,45 +4,47 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.propertypages.asp
-ms.assetid: b3000b31-fd9d-489e-81a2-a4bee49453ba
-caps.latest.revision: "13"
+f1_keywords:
+- vs.codeanalysis.propertypages.asp
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 51ece959ad0c33c4676e81203cacc025d9ef2884
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- aspnet
+ms.openlocfilehash: 3d8d9b544b8cb4489ebfdfda8c6a237cb73c118f
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Nasıl yapılır: Bir ASP.NET Web Uygulaması İçin Kod Çözümlemesini Yapılandırma
-İçinde [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] ve [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)] Kod Analizi listesinden seçebilirsiniz *kural kümeleri* uygulamak için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması. Varsayılan kural Microsoft Mininimum önerilen kurallar kümesidir. Başka bir kural Web sitesine uygulamak için kümesini seçebilirsiniz.  
-  
-### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>Bir kural yapılandırmak için bir ASP.NET sayfası Framework projesi için ayarlayın  
-  
-1.  Web sitesini seçin **Çözüm Gezgini**.  
-  
-2.  Üzerinde **Çözümle** menüsünde tıklatın **Web sitesi için Kod Analizi yapılandırma**.  
-  
-3.  Çözüm seçili birden çok proje çözümü vardır, derleme, yapılandırma ve hedef işletim sisteminden seçin ve **yapılandırma** ve **Platform** listeler.  
-  
-4.  Çözümdeki her projeye için tıklayarak **kural kümesi** sütun ve kuralın adını ayarlayın çalıştırmak için tıklatın.  
-  
-5.  Varsayılan olarak, Çözümdeki tüm projeleri üzerinde kod analizi çalıştırılır. Devre dışı bırakmak veya belirli bir projede için Kod Analizi etkinleştirmek için şu adımları izleyin:  
-  
-    1.  Proje adına sağ tıklayın ve ardından Özellikler'i tıklatın.  
-  
-    2.  Denetleyin veya temizleyin **etkinleştirmek Kod Analizi** onay kutusu. Ayrıca Kod Analizi el ile seçerek çalıştırabilirsiniz **çalıştırmak Kod Analizi Web sitesinde** gelen **Çözümle** menüsü.  
-  
-6.  İçinde **bu kural kümesini çalıştırmak** aşağı açılan listesinde, aşağıdaki adımları izleyin:  
-  
-    -   Kullanmak istediğiniz kural kümesini seçin.  
-  
-    -   Seçin  **\<Gözat >** var olan bir özel kural kümesini belirlemek için listede değil.  
-  
-    -   Özel bir kural kümesini tanımlar. Daha fazla bilgi için bkz: [özel kural kümeleri oluşturma](../code-quality/creating-custom-code-analysis-rule-sets.md).
+
+Visual Studio'da Kod Analizi listesinden seçebilirsiniz *kural kümeleri* uygulamak için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması. Varsayılan kural Microsoft Minimum önerilen kurallar kümesidir. Başka bir kural Web sitesine uygulamak için kümesini seçebilirsiniz.
+
+## <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>Bir kural yapılandırmak için bir ASP.NET sayfası Framework projesi için ayarlayın
+
+1. Web sitesini seçin **Çözüm Gezgini**.
+
+2. Üzerinde **Çözümle** menüsünde tıklatın **Web sitesi için Kod Analizi yapılandırma**.
+
+3. Çözüm seçili birden çok proje çözümü vardır, derleme, yapılandırma ve hedef işletim sisteminden seçin ve **yapılandırma** ve **Platform** listeler.
+
+4. Çözümdeki her projeye için tıklayarak **kural kümesi** sütun ve kuralın adını ayarlayın çalıştırmak için tıklatın.
+
+5. Varsayılan olarak, Çözümdeki tüm projeleri üzerinde kod analizi çalıştırılır. Devre dışı bırakmak veya belirli bir projede için Kod Analizi etkinleştirmek için şu adımları izleyin:
+
+    1. Proje adına sağ tıklayın ve ardından Özellikler'i tıklatın.
+
+    2. Denetleyin veya temizleyin **etkinleştirmek Kod Analizi** onay kutusu. Ayrıca Kod Analizi el ile seçerek çalıştırabilirsiniz **çalıştırmak Kod Analizi Web sitesinde** gelen **Çözümle** menüsü.
+
+6. İçinde **bu kural kümesini çalıştırmak** aşağı açılan listesinde, aşağıdaki adımları izleyin:
+
+    - Kullanmak istediğiniz kural kümesini seçin.
+
+    - Seçin  **\<Gözat >** var olan bir özel kural kümesini belirlemek için listede değil.
+
+    - Özel bir kural kümesini tanımlar. Daha fazla bilgi için bkz: [özel kural kümeleri oluşturma](../code-quality/creating-custom-code-analysis-rule-sets.md).

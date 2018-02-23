@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 06/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.ExtensionManager
+f1_keywords:
+- vs.ExtensionManager
 helpviewer_keywords:
 - install extensions
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: beec883c66182b3a840c0052b237c2ba41c5b023
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.workload:
+- multiple
+ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Bulma ve Visual Studio uzantıları kullanma
 
@@ -70,22 +73,22 @@ Otomatik güncelleştirmeleri devre dışı bırakmak istiyorsanız, tüm uzant�
 
 Yeni **Visual Studio 2017 sürüm 15.3**, Visual Studio hakkında sizi uyarır, uzantı önceki bir oturumu sırasında bir çökmesine neden dahil şüphelendiği durumunda. Visual Studio kilitlendiğinde özel durum yığını depolar. Visual Studio başlatır, sonraki açışınızda yaprak ile başlayan ve temel çalışma yığınının inceler. Visual Studio bir çerçeve yüklü ve etkin uzantının bir parçası olan bir modüle ait olduğunu belirlerse, bir bildirim gösterilir.
 
-Yeni **Visual Studio sürümü 15,6 preview 3**, Visual Studio de bildirir, bir uzantı yanıt vermediği için kullanıcı Arabirimi neden suspects durumunda.
+Yeni **Visual Studio 2017 sürüm 15,6 preview 3**, Visual Studio de bildirir, bir uzantı yanıt vermediği için kullanıcı Arabirimi neden suspects durumunda.
 
 Bu bildirimler gösterilen sırada bildirimi yok sayabilirsiniz veya aşağıdaki eylemlerden birini gerçekleştirin:
 
 - Seçin **bu uzantıyı devre dışı bırakmak**. Visual Studio uzantısını devre dışı bırakır ve, devre dışı bırakma etkinleşmesi için sisteminizi yeniden başlatması gerekip gerekmediğini bilmenizi sağlar. Uzantı yeniden etkinleştirebilirsiniz **Uzantılar ve güncelleştirmeler** istiyorsanız, iletişim kutusu.
 
-- Seçin **bu iletiyi bir daha gösterme**. 
-  - Bildirim önceki bir oturumda bir kilitlenme ilgiliyse, Visual Studio artık bir bildirim bu uzantı ile ilişkilendirilmiş bir kilitlenme olduğunda oluşur gösterir. Yanıt vermeyi durdurma sorununu kilitlenmelerine veya diğer uzantıları ile ilişkilendirilebilir yanıt vermeyi durdurma sorununu için veya bu uzantı ile ilişkili olabilir, visual Studio hala bildirimleri göster. 
-  - Bildirim yanıt vermeyi durdurma sorununu ilgiliyse bu uzantı yanıt vermeyi durdurma sorununu ile ilişkili olduğunda IDE bildirim artık göster. Visual Studio hala bu uzantı için kilitlenme ilgili bildirimler ve diğer uzantıları için kilitlenme ve yanıt vermeyi durdurma sorununu ilgili bildirimler gösterir. 
+- Seçin **bu iletiyi bir daha gösterme**.
+  - Bildirim önceki bir oturumda bir kilitlenme ilgiliyse, Visual Studio artık bir bildirim bu uzantı ile ilişkilendirilmiş bir kilitlenme olduğunda oluşur gösterir. Yanıt vermeyi durdurma sorununu kilitlenmelerine veya diğer uzantıları ile ilişkilendirilebilir yanıt vermeyi durdurma sorununu için veya bu uzantı ile ilişkili olabilir, visual Studio hala bildirimleri göster.
+  - Bildirim yanıt vermeyi durdurma sorununu ilgiliyse bu uzantı yanıt vermeyi durdurma sorununu ile ilişkili olduğunda IDE bildirim artık göster. Visual Studio hala bu uzantı için kilitlenme ilgili bildirimler ve diğer uzantıları için kilitlenme ve yanıt vermeyi durdurma sorununu ilgili bildirimler gösterir.
 
 - Seçin **daha fazla bilgi edinin** bu sayfaya geliyor.
 
 - Seçin **X** bildirim kapatmak için bildirim sonunda düğmesi. Gelecekteki bir kilitlenme veya UI yanıt vermeyi durdurma sorununu ile ilişkilendirilen uzantısı örnekleri için yeni bir bildirim görüntülenir.
 
 > [!NOTE]
-> Bir kullanıcı Arabirimi yanıt vermeyi durdurma sorununu veya kilitlenme bildirimi yalnızca uzantının modüllerinden birini yığında UI yanıt vermeyen veya ne zaman kilitlenme oluştu anlamına gelir. Bu mutlaka uzantısı sorunlu olduğu anlamına gelmez. Uzantı yanıt vermeyen UI veya bir kilitlenme sırayla sonuçlandı Visual Studio parçası olan kod adlandırılan mümkündür. Ancak, bildirim hala UI yanıt vermeyi durdurma sorununu ya da kilitlenme sonuçlanan uzantı sizin için önemli değilse yararlı olabilir. Bu durumda, uzantıyı devre dışı bırakma UI yanıt vermeyi durdurma sorununu ya da kilitlenme gelecekte üretkenliğinizi etkilemeden önler. 
+> Bir kullanıcı Arabirimi yanıt vermeyi durdurma sorununu veya kilitlenme bildirimi yalnızca uzantının modüllerinden birini yığında UI yanıt vermeyen veya ne zaman kilitlenme oluştu anlamına gelir. Bu mutlaka uzantısı sorunlu olduğu anlamına gelmez. Uzantı yanıt vermeyen UI veya bir kilitlenme sırayla sonuçlandı Visual Studio parçası olan kod adlandırılan mümkündür. Ancak, bildirim hala UI yanıt vermeyi durdurma sorununu ya da kilitlenme sonuçlanan uzantı sizin için önemli değilse yararlı olabilir. Bu durumda, uzantıyı devre dışı bırakma UI yanıt vermeyi durdurma sorununu ya da kilitlenme gelecekte üretkenliğinizi etkilemeden önler.
 
 ## <a name="sample-master-copies-and-working-copies"></a>Örnek ana kopya ve çalışma kopyalar
 

@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: c4ca5a7fea1a84c4f4a38396daebd3e01412d9d7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 76dc2623edebed6cca48c40c0ad0bc96f783e39d
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>R araçları Visual Studio için nasıl yüklenir
 
@@ -44,7 +44,7 @@ Yalnızca Visual Studio, Visual Studio Test uzmanı ve SQL Server Management Stu
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Visual Studio 2017 içinde RTVS yükleme
 
-1. Visual Studio yükleyiciyi çalıştırın. (Bkz [indirmeleri](https://www.visualstudio.com/downloads/) Visual Studio yüklüyse henüz yoksa.) Windows 7'de Visual Studio sürümü göstermek için yükleyici güncelleştirildiğinden emin olması *15.2 yapı 26430.12* veya sonraki bir sürümü.
+1. Visual Studio yükleyiciyi çalıştırın. (Bkz [indirmeleri](https://www.visualstudio.com/downloads/) Visual Studio yüklüyse henüz yoksa.) Windows 7'de Visual Studio 2017 sürüm göstermek için yükleyici güncelleştirildiğinden emin olması *15.2 yapı 26430.12* veya sonraki bir sürümü.
 
 1. Seçin **veri bilimi ve analitik uygulamaları** iş yükü:
 
@@ -75,18 +75,18 @@ Geçerli RTVS Visual Studio 2015'ten indirin [https://aka.ms/rtvs-current](https
 > [!Note]
 > Tek başına RTVS yükleyici yalnızca Visual Studio 2015 ile birlikte çalışır; Visual Studio 2017 ile R desteğini yükleme [veri bilimi ve analitik uygulamaları iş yükü](#installing-rtvs-in-visual-studio-2017) daha önce açıklandığı gibi.
 
-Visual Studio 2015 için RTVS yüklenir:`%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
+Visual Studio 2015 için RTVS yüklenir: `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
 
 ## <a name="offline-installation-of-visual-studio-and-rtvs"></a>Visual Studio ve RTVS çevrimdışı yükleme
 
 Çevrimdışı yükleme, Internet'e bağlı olmayan bilgisayarlar için uygundur:
 
-1. Visual Studio sürümünüze çevrimdışı yükleyici oluşturmak için yönergeleri izleyin: 
+1. Visual Studio sürümünüze çevrimdışı yükleyici oluşturmak için yönergeleri izleyin:
 
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. Visual Studio 2015 için çevrimdışı RTVS yükleyicileri gelen indirme [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) ve [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip). 
+1. Visual Studio 2015 için çevrimdışı RTVS yükleyicileri gelen indirme [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) ve [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip).
 
 1. Visual Studio ve RTVS çevrimdışı yükleyicileri yükleyin.
 

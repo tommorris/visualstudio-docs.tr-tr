@@ -17,11 +17,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 65f34339e4c101818cea9b99095d765d5d417cf4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4733d51d40b0aabffa108a1f99e4e492599b67c2
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-sql-server-and-r"></a>SQL Server ve R ile çalışma
 
@@ -32,9 +32,9 @@ SQL Server için Visual Studio'nun mükemmel desteği veri bilimcilerine R ve SQ
 > - Visual Studio 2017: Visual Studio yükleyicisi çalıştırın ve veri depolama ve SQL Server veri araçları içerir işleme iş yükünü seçin.
 > - Visual Studio 2015: yönergelerini izleyin [SQL Server veri araçları indirme](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
 
-Aşağıdaki video (3m 03s) SQL Server ve R: kısa bir genel bakış sağlar
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n4AYr0QIwdQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | [(Youtube.com) bir video izlemek](https://www.youtube.com/watch?v=n4AYr0QIwdQ) SQL Server ve R (3 m 03s) genel bakış. |
 
 ## <a name="creating-and-running-sql-queries"></a>Oluşturma ve SQL sorguları çalıştırma
 
@@ -65,9 +65,9 @@ RTVS, aşağıdaki bölümlerde açıklandığı gibi tek bir SQL deyimi içinde
 - [Yazma ve SQL saklı yordamı test etme](#write-and-test-a-sql-stored-procedure)
 - [SQL saklı yordamı yayımlama](#publish-a-sql-stored-procedure)
 
-Aşağıdaki video (6m 09s) de bu özelliklere genel bakış sağlar:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dFKIT2OitWQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | [(Youtube.com) bir video izlemek](https://www.youtube.com/watch?v=dFKIT2OitWQ) bakış R ve SQL saklı yordamları (6 m 09s) için. |
 
 ### <a name="add-a-database-connection"></a>Bir veritabanı bağlantısı Ekle
 
@@ -87,7 +87,7 @@ RTVS saklı yordamı için üç dosyaları oluşturur: bir `.R` R kodunuz için 
 
 ![Çözüm Gezgini SQL saklı yordamı r görünümünü genişletilmiş](media/sql-solution-explorer-expanded.png)
 
-`StoredProcedure.R`(Bu örnekte), burada R kodu yazdığınız şeydir. Varsayılan içeriği şunlardır:
+`StoredProcedure.R` (Bu örnekte), burada R kodu yazdığınız şeydir. Varsayılan içeriği şunlardır:
 
 ```R
 # @InputDataSet: input data frame, result of SQL query execution
@@ -109,7 +109,7 @@ Kısaca, kod olarak adlandırılan bir R dataframe alır `InputDataSet` ve onun 
 
 Diğer oluşturulan kod (açıklamaları) kullanan bir küçük test komut dosyası sağlar [RODBC paket](https://cran.r-project.org/web/packages/RODBC/index.html) SQL Server için bir SQL deyimi iletmek için çalıştırın ve bir R dataframe ayarlamak sonucu almak. SQL Server'dan alma etkileşimli olarak R kodunuzu sonucu karşı yazmak için bu test kod kümesi açıklamadan çıkarın.
 
-`StoredProcedure.Query.sql`Burada yazmak ve sınamak için veri üreten SQL sorgu `InputDataSet`. Bu `.sql` Dosyası Düzenleyicisi tüm olağan Transact-SQL özellikleri sağlar.
+`StoredProcedure.Query.sql` Burada yazmak ve sınamak için veri üreten SQL sorgu `InputDataSet`. Bu `.sql` Dosyası Düzenleyicisi tüm olağan Transact-SQL özellikleri sağlar.
 
 İle SQL kodunuzu memnun kaldıysanız sonra R kodunuzda ile tümleştirmenize `StoredProcedure.R` sürükleyerek `.sql` açık Düzenleyicisi üzerine dosya `.R` dosya. Aşağıdaki görüntüde `StoredProcedure.Query.sql` noktasına virgülle sonra sürüklenen `sqlQuery(channel, )`:
 

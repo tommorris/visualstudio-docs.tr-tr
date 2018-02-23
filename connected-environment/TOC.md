@@ -1,4 +1,4 @@
-# [Visual Studio Bağlı Ortamı](visual-studio-connected-environment.md)
+# [VS Bağlı Ortamı](visual-studio-connected-environment.md)
 
 # [Başlarken](get-started.md)
 ##[.NET Core (VS Code ve CLI)](get-started-netcore-01.md)
@@ -27,6 +27,9 @@
 ###[5. Başka bir kapsayıcı çağırma](get-started-nodejs-05.md)
 ###[6. Paylaşılan geliştirme ortamında çalışma](get-started-nodejs-06.md)
 ###[7. Özet](get-started-nodejs-07.md)
+
+# Nasıl Yapılır?
+##[Geliştirme ortamı paylaşma](how-to/share-dev-environment.md)
 
 # [Sorun giderme](troubleshooting.md)
 

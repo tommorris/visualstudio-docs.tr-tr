@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31d36ede3293a72db06e9919545dafb779cee252
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -219,7 +219,7 @@ C++ DLL Python için uzantı yapmak için ilk Python türleri ile etkileşim kur
 1. Hedef yapılandırmasını "Yayın" olarak ayarlayın ve yeniden kodunuzu doğrulamak için C++ projesi oluşturun. Hatalarla karşılaşırsanız, aşağıdaki durumlarda denetleyin:
     - Python.h bulunamıyor: doğrulayın yolunda **C/C++ > Genel > ek içeren dizinler** Python yüklemenin proje özelliklerini işaret `include` klasör.
     - Python Kitaplığı bulunamıyor: doğrulayın yolunda **bağlayıcı > Genel > ek kitaplık dizinleri** Python yüklemenin proje özelliklerini işaret `libs` klasör.
-    - Bağlayıcı hatalarını ilgili hedef mimari: C++ hedefin proje mimarisi, Python yüklemenizin eşleşecek şekilde değiştirin.
+    - Bağlayıcı hatalarını ilgili hedef mimari: C++ hedefin proje mimarisi, Python yüklemenizin eşleşecek şekilde değiştirin. Örneğin, C++ projesi ile x64 hedefleme Python yüklemenizi x86 varsa x86 hedeflemek için C++ projesi değiştirin.
 
 ## <a name="test-the-code-and-compare-the-results"></a>Kodu test etmek ve sonuçları karşılaştırma
 

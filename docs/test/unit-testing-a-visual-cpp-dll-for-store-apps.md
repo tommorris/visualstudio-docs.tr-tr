@@ -1,7 +1,7 @@
 ---
 title: "UWP uygulamalar için Visual C++ DLL test etme | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2017
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-devops-test
@@ -12,11 +12,11 @@ manager: ghogen
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 8a85bf908b1f0908b8c07a7573306536b9bf78d7
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 02c1e5a2bc4ba10aa1719ace69fc33de79995984
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL test etme
 
@@ -26,7 +26,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
   
  Bu konu ayrıca tek bir Visual Studio çözümü ve birim testleri ve test etmek istediğiniz DLL için ayrı projeleri oluşturur. Birim testleri doğrudan DLL projesinde içerebilir veya birim testleri için ayrı çözümler oluşturabilirsiniz ve. DLL. Bkz: [mevcut C++ uygulamalarına birim testleri ekleme](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) kullanmak için hangi yapısı ipuçları için.
   
-##  <a name="Create_the_solution_and_the_unit_test_project"></a>Çözüm ve birim testi projesi oluşturma  
+##  <a name="Create_the_solution_and_the_unit_test_project"></a> Çözüm ve birim testi projesi oluşturma  
   
 1.  Üzerinde **dosya** menüsünde seçin **yeni** > **yeni proje...** .
   
@@ -50,11 +50,11 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
   
          Testler, her test sınıfının bir örneği oluşturulur. Test yöntemleri belirtilmeyen bir sırayı denir. Önce ve sonra her modül, sınıf veya yöntemin çağrılması özel yöntemler tanımlayabilirsiniz. Daha fazla bilgi için bkz: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework kullanma](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) MSDN Kitaplığı'nda.  
   
-##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a>Testleri Test Explorer'da çalıştığını doğrulayın  
+##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Testleri Test Explorer'da çalıştığını doğrulayın  
   
 1.  Bazı test kodu ekleyin:  
   
-    ```cpp  
+    ```cpp
     TEST_METHOD(TestMethod1)  
     {  
         Assert::AreEqual(1,1);  
@@ -69,7 +69,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
   
      ![Test Gezgini](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
-##  <a name="Add_the_DLL_project_to_the_solution"></a>DLL projesi ekleyin  
+##  <a name="Add_the_DLL_project_to_the_solution"></a> DLL projesi ekleyin  
   
 1.  Çözüm Gezgini'nde, çözüm adı seçin. Kısayol menüsünden **Ekle**ve ardından **Yeni Proje Ekle**.  
   
@@ -129,7 +129,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
   
     ```  
   
-##  <a name="make_the_dll_functions_visible_to_the_test_code"></a>Dll işlevleri test kodu tarafından görülebilir kılma  
+##  <a name="make_the_dll_functions_visible_to_the_test_code"></a> Dll işlevleri test kodu tarafından görülebilir kılma  
   
 1.  RooterLib RooterLibTests projeye ekleyin.  
   
@@ -182,7 +182,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
   
  Test ve kod projeleri ayarlayabilir ve kod projesinde işlevlerini Çalıştırma testleri çalıştırabilirsiniz doğrulandı. Şimdi, gerçek testleri ve kod yazmaya başlayabilirsiniz.  
   
-##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a>Tekrarlayarak testleri büyütmek ve onları geçirin  
+##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Tekrarlayarak testleri büyütmek ve onları geçirin  
   
 1.  Yeni bir test ekleyin:  
   
@@ -243,7 +243,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 > [!TIP]
 >  Kod, aynı anda testleri bir ekleyerek geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.  
   
-##  <a name="Debug_a_failing_test"></a>Başarısız test hata ayıklama  
+##  <a name="Debug_a_failing_test"></a> Başarısız test hata ayıklama  
   
 1.  Başka bir testine ekleme **unittest1.cpp**:  
   
@@ -313,7 +313,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
   
  ![Tüm sınamaları geçmesi](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")  
   
-##  <a name="Refactor_the_code_without_changing_tests"></a>Testleri değiştirmeden kodu yeniden düzenleyin  
+##  <a name="Refactor_the_code_without_changing_tests"></a> Testleri değiştirmeden kodu yeniden düzenleyin  
   
 1.  Merkezi hesaplamadaki basitleştirmek `SquareRoot` işlevi:  
   

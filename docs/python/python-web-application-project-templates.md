@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49b27fcc972cf8b0bb0411f5ee54ea611cdd4d75
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b75aae5811fa2410cf169d3401184b8af7ca381d
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-web-application-project-templates"></a>Python web uygulaması proje şablonları
 
@@ -35,7 +35,7 @@ Visual Studio çerçeveleri kendilerini içermez. Projeye sağ tıklayıp seçer
 
 Bottle, Flask ve Django şablonları her başlangıç sitesi bazı sayfaları ve statik dosyaları içerir. Bu kodu çalıştırmak ve (burada bazı ayarları gereken ortamından elde edilebilir) sunucusu yerel olarak hata ayıklama yeterli olduğundan ve Microsoft Azure'a dağıtmak için (burada bir [WSGI uygulama](http://www.python.org/dev/peps/pep-3333/) nesnenin sağlanması gerekiyor).
 
-Bir proje çerçeveye özel şablonu oluştururken, PIP kullanarak gerekli paketleri yüklemenize yardımcı olması için bir iletişim kutusu görüntülenir. Ayrıca kullanmanızı öneririz bir [sanal ortam](managing-python-environments-in-visual-studio.md#global-and-virtual-environments) doğru bağımlılıkları dahil; böylece web projeleri için yayımladığınızda, web sitenizi:
+Bir proje çerçeveye özel şablonu oluştururken, PIP kullanarak gerekli paketleri yüklemenize yardımcı olması için bir iletişim kutusu görüntülenir. Ayrıca kullanmanızı öneririz bir [sanal ortam](selecting-a-python-environment-for-a-project.md#using-virtual-environments) doğru bağımlılıkları dahil; böylece web projeleri için yayımladığınızda, web sitenizi:
 
 ![İletişim kutusu için bir proje şablonu paketleri gerekli](media/template-web-requirements-txt-wizard.png)
 
@@ -62,7 +62,7 @@ Hata ayıklama için bir web projesi başlatıldığında, Visual Studio web sun
 - **Ortam**: yeni satır ile ayrılmış bir listesini `NAME=VALUE` çiftleri ortam değişkenleri belirtme. Bu değişkenler, ortam, bağlantı noktası numarasını ve arama yolları gibi değiştirebilir ve böylece bu değerleri üzerine yazabilir tüm özellikleri sonra ayarlanır.
 
 Herhangi bir proje özelliği veya ortam değişkeni MSBuild sözdizimiyle örneğin belirtilebilir: `$(StartupFile) --port $(SERVER_PORT)`.
-`$(StartupFile)`Başlangıç dosyanın göreli yolu ve `{StartupModule}` alınabilir başlangıç dosyasının adıdır. `$(SERVER_HOST)`ve `$(SERVER_PORT)` tarafından belirlenen normal ortam değişkenleri **başlatma URL** ve **bağlantı noktası numarası** özellikleri, otomatik olarak ya da **ortam** özellik.
+`$(StartupFile)` Başlangıç dosyanın göreli yolu ve `{StartupModule}` alınabilir başlangıç dosyasının adıdır. `$(SERVER_HOST)` ve `$(SERVER_PORT)` tarafından belirlenen normal ortam değişkenleri **başlatma URL** ve **bağlantı noktası numarası** özellikleri, otomatik olarak ya da **ortam** özelliği.
 
 > [!Note]
 > Değerler **sunucu komutu Çalıştır** ile kullanılan **hata ayıklama > Start Server** komut veya Ctrl-F5; değerler **Debug sunucu komutunu** grup ilekullanılan**Hata ayıklama > hata ayıklama sunucu başlangıç** komut veya F5.
@@ -73,11 +73,11 @@ Herhangi bir proje özelliği veya ortam değişkeni MSBuild sözdizimiyle örne
 
 - **Sunucu komutu çalıştırmak** Grup:
   - **Komut**: `bottle` (Modülü)
-  - **Bağımsız değişkenler**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Bağımsız değişkenler**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - **Sunucu komutu hata ayıklama** Grup:
   - **Komut**: `bottle` (Modülü)
-  - **Bağımsız değişkenler**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Bağımsız değişkenler** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 `--reload` Seçeneği, Visual Studio hata ayıklama için kullanırken önerilmez.
 
@@ -90,11 +90,11 @@ Piramit uygulamalar, kullanarak şu anda en iyi oluşturulur `pcreate` komut sat
 
 - **Sunucu komutu çalıştırmak** Grup:
   - Komut: `..\env\scripts\pserve-script.py` (komut)
-  - Bağımsız değişkenler:`Production.ini`
+  - Bağımsız değişkenler: `Production.ini`
 
 - **Sunucu komutu hata ayıklama** Grup:
     - Komut: `..\env\scripts\pserve-script.py` (komut)
-    - Bağımsız değişkenler:`Development.ini`
+    - Bağımsız değişkenler: `Development.ini`
 
 > [!Tip]
 > Büyük olasılıkla yapılandırmanıza gerek **çalışma dizini** özelliği projenizin Piramit uygulamalar genellikle bir dizin düzeyinde kaynak ağacın üstüne derin olduğundan.

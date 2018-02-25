@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c158397d327e339955efed35f1ccc525028294e3
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="debugging-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -54,7 +54,7 @@ Temel hata ayıklama iş akışı aracılığıyla koda atlama, değerlerini inc
 Hata ayıklama oturumu ile başlayan **hata ayıklama > hata ayıklamayı Başlat** komutu, **Başlat** araç veya F5 tuşuna düğmesine. Bu Eylemler, projenizin başlangıç dosyasını çalıştırın (gösterilen Çözüm Gezgini'nde kalın) projenin etkin ortam ve komut satırı bağımsız değişkenleri ya da proje özellikleri'nde belirtilen arama yolları (bkz [proje hata ayıklama Seçenekler](#project-debugging-options). Herhangi bir nedenden dolayı bir başlangıç dosya kümesine sahip değilseniz, ancak bir Python çıktı penceresi kısaca görüntülenir ve kaybolur. Bu durumda, uygun dosyasını sağ tıklatın ve seçin **başlangıç dosyası olarak ayarlamak**.
 
 > [!Note]
-> Hata ayıklayıcı her zaman etkin Python ortamı projesi için başlar. Ortam değiştirmek için farklı bir etkin açıklandığı gibi olun [Python ortamları](managing-python-environments-in-visual-studio.md).
+> Hata ayıklayıcı her zaman etkin Python ortamı projesi için başlar. Ortam değiştirmek için farklı bir etkin açıklandığı gibi olun [bir proje için bir Python ortamı seçme](selecting-a-python-environment-for-a-project.md).
 
 ### <a name="breakpoints"></a>Kesme noktaları
 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-projects"></a>Python projeleri
 
@@ -54,7 +54,7 @@ Uygulamanızı geliştirirken, genellikle farklı türdeki yeni dosyaları proje
 > [!Tip]
 > Seçilen başlangıç dosyası bir projeden kaldırmak ve yeni bir tane seçmezseniz, proje sonuçlarınızı Python içinde çalışan görünen ancak hemen kayboluyor penceresi çıktı. Bu davranış karşılaşırsanız, atanan başlangıç dosya olup olmadığını denetleyin. Ayrıca, çıktı penceresinde bu gibi durumlarda açık tutmak için projenize sağ tıklayın, seçin **özellikleri**seçin **hata ayıklama** sekmesinde, ardından ekleyin `-i` için **yorumlayıcı bağımsız değişkenleri** alan. Bu bağımsız değişken, böylece Ctrl + Z, çıkmak için Enter girene kadar penceresi açık tutarak bir program tamamlandıktan sonra etkileşimli moduna geçmesi yorumlayıcı neden olur.
 
-Yeni bir proje her zaman varsayılan genel Python ortamı ile ilişkilidir. Proje (sanal ortamlar dahil) için farklı bir ortam ilişkilendirmek için ile sağ **Python ortamları** seçin proje düğümüne **Ekle/Kaldır Python ortamları**, ve istediğiniz şablonu seçin. Etkin ortam değiştirmek için istenen ortama sağ tıklatın ve seçin **etkinleştirme ortamı** aşağıda gösterildiği gibi. Daha fazla bilgi için bkz: [Python ortamları](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project).
+Yeni bir proje her zaman varsayılan genel Python ortamı ile ilişkilidir. Proje (sanal ortamlar dahil) için farklı bir ortam ilişkilendirmek için sağ **Python ortamları** seçin proje düğümüne **Ekle/Kaldır Python ortamları**, ve istediğiniz şablonu seçin. Etkin ortam değiştirmek için istenen ortama sağ tıklatın ve seçin **etkinleştirme ortamı** aşağıda gösterildiği gibi. Daha fazla bilgi için bkz: [bir proje için bir ortam seçerek](selecting-a-python-environment-for-a-project.md).
 
 ![Python proje için bir ortam etkinleştirme](media/projects-activate-environment.png)
 
@@ -71,7 +71,7 @@ Aşağıdaki tabloda, Visual Studio (tüm şablonları tüm önceki sürümlerin
 | Şablon | Açıklama |
 | --- | --- |
 | [Varolan Python koddan](#creating-a-project-from-existing-files) | Visual Studio projesi klasörü yapısı içinde varolan Python kodu oluşturur.  |
-| Python uygulama | Tek ve boş kaynak dosyası içeren yeni bir Python uygulaması için bir temel Proje yapısı. Varsayılan olarak, projeyi tarafından değiştirebileceğiniz varsayılan genel ortamının konsol yorumlayıcı çalışır [farklı bir ortam atama](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project). |
+| Python uygulama | Tek ve boş kaynak dosyası içeren yeni bir Python uygulaması için bir temel Proje yapısı. Varsayılan olarak, projeyi tarafından değiştirebileceğiniz varsayılan genel ortamının konsol yorumlayıcı çalışır [farklı bir ortam atama](selecting-a-python-environment-for-a-project.md). |
 | [Azure bulut hizmeti](python-azure-cloud-service-project-template.md) | Python içinde yazılmış bir Azure bulut hizmeti için bir proje. |
 | [Web projeleri](python-web-application-project-templates.md) | Proje Bottle, Django, Flask ve Flask/Jade dahil olmak üzere çeşitli çerçevesinde bağlı web sunucuları için. |
 | IronPython uygulama | Benzer şekilde kullanır ancak Python uygulama şablonu tarafından IronPython varsayılan etkinleştirme .NET birlikte çalışabilirlik ve karma mod .NET dilleri ile hata ayıklama. |
@@ -136,7 +136,7 @@ Bir başvuru bir `.pyd` dosyası için oluşturulan modülü IntelliSense sağla
 
 Herhangi bir zamanda diskte uzantısı modülü güncelleştirilirse, Visual Studio arka planda modülü çözümlemeden. Bu eylem çalışma zamanı davranışı üzerinde hiçbir etkisi yoktur, ancak çözümleme işlemi tamamlanana kadar bazı tamamlamalar kullanılamaz.
 
-Eklemeniz gerekebilir bir [arama yolu](managing-python-environments-in-visual-studio.md#search-paths) modülü içeren klasör için.
+Eklemeniz gerekebilir bir [arama yolu](search-paths.md) modülü içeren klasör için.
 
 ### <a name="net-projects"></a>.NET projeleri
 

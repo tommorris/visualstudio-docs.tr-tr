@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 9f5f3edfc536dce9d42d09a099c3f53a8a8ab3c7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Uzaktan hata ayıklama Linux'ta Python kodu
 
@@ -40,7 +40,7 @@ Aşağıdaki öğeler bu kılavuzda izlemek için gereklidir:
 - Python Mac OSX ya da Linux gibi bir işletim sistemi çalıştıran bir uzak bilgisayar.
 - Bağlantı noktası 5678 (uzaktan hata ayıklama için varsayılan olan, bu bilgisayarın güvenlik duvarında açılan gelen).
 
-Kolayca [Linux sanal makineleri Azure üzerinde](/azure/virtual-machines/linux/creation-choices) ve [Uzak Masaüstü kullanarak erişim](/azure/virtual-machines/linux/use-remote-desktop) Windows. Bir Ubuntu VM için uygun olduğundan Python varsayılan olarak yüklenir; Aksi takdirde, üzerinde listesine bakın [tercih ettiğiniz bir Python yorumlayıcısı yüklemek](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters) ek Python karşıdan yükleme konumları için.
+Kolayca [Linux sanal makineleri Azure üzerinde](/azure/virtual-machines/linux/creation-choices) ve [Uzak Masaüstü kullanarak erişim](/azure/virtual-machines/linux/use-remote-desktop) Windows. Bir Ubuntu VM için uygun olduğundan Python varsayılan olarak yüklenir; Aksi takdirde, üzerinde listesine bakın [tercih ettiğiniz bir Python yorumlayıcısı yüklemek](installing-python-interpreters.md) ek Python karşıdan yükleme konumları için.
 
 Bir Azure VM için bir güvenlik duvarı kuralı oluşturma hakkında daha fazla bilgi için bkz: [Azure portal kullanarak Azure'da bir VM için bağlantı noktaları açma](/azure/virtual-machines/windows/nsg-quickstart-portal).
 

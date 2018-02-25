@@ -1,7 +1,7 @@
 ---
 title: "Bağlantı noktası, geçirme ve yükseltme Visual Studio projeleri | Microsoft Docs"
 ms.custom: 
-ms.date: 02/12/2018
+ms.date: 02/21/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -23,11 +23,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fd23e22024e493256d2ba839998d561e2894a80
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: 035bf2c514988dc65fe5182ad4b5371915dd2dce
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Bağlantı noktası, geçirme ve Visual Studio projelerini yükseltme
 
@@ -68,7 +68,7 @@ Bir proje görmüyorum veya dosya türü listelenen Burada, olması, başvurun [
 | Silverlight | Silverlight projeleri Visual Studio 2017 desteklenmiyor. Silverlight uygulamalarını korumak için Visual Studio 2015 kullanmaya devam edin. |
 | SQL Server Reporting Services ve SQL Server Analysis Services (SSRS SSDT, SSAS, MSA'lar) | Destek bu proje türleri için sağlanan Visual Studio Galerisi iki uzantıları aracılığıyla: [Microsoft Analysis Services modelleme projeleri](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) ve [Microsoft Reporting Services projeleri](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). SSDT desteği Visual Studio 2017 veri depolama ve işlem iş yükü de bulunmaktadır. |
 | SQL Server Integration Services (SSIS) | Visual Studio 2017 desteği SQL Server veri Araçları (SSDT) üzerinden kullanılabilir. Daha fazla bilgi için bkz: [SQL Server Integration Services blog](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
-| Visual C++ | Visual Studio 2017 çözümler ve Visual Studio 2015'te oluşturulmuş projeler açmak için kullanabileceğiniz-değil. Visual Studio'nun eski sürümlerinde oluşturulan projeleri proje yükseltme veya Visual Studio 2017 ile oluşturmak için daha yeni bir araç takımı yeniden hedefleme gerektirebilir. Daha fazla bilgi için bkz: [Visual C++ taşıma ve yükseltme Kılavuzu](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide). |
+| Visual C++ | Visual Studio 2010 Visual Studio'ya geri önceki sürümlerinde oluşturulmuş projelerde çalışmak için Visual Studio 2017 kullanabilirsiniz. Proje ilk açtığınızda, en son derleyici ve araç takımı yükseltmek için veya özgün olanları kullanmaya devam etmek için seçeneğiniz vardır. Özgün olanları kullanmaya devam etmek isterseniz, Visual Studio 2017 proje dosyası değiştirmez ve araç takımı önceki Visual Studio yükleme projenizi derleme için kullanır. Bu, hala projeyi Visual Studio özgün sürümünde gerekirse açabilirsiniz anlamına gelir. Daha fazla bilgi için bkz: [yerel çoklu sürüm desteği eski projeler derlemek için Visual Studio'da kullanın](/cpp/porting/use-native-multi-targeting). |
 | Visual Studio genişletilebilirlik/VSIX | Projeleri MinimumVersion 14.0 veya daha az projeyi Visual Studio'nun önceki sürümleri açılmasını engelleyen MinimumVersion 15.0 bildirmek için güncelleştirilmiştir. MinimumVersion önceki sürümlerde açmak bir proje izin vermek için kümesine `$(VisualStudioVersion)`. Ayrıca bkz. [nasıl yapılır: Visual Studio 2017 genişletilebilirlik projeleri geçirmek](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Laboratuvar Yönetimi | Microsoft Test Yöneticisi'ni veya Visual Studio 2010 SP1'i kullanabilirsiniz ve daha sonra bu sürümleri hiçbirinde oluşturulan ortamları açın. Ancak, ortamları oluşturabilmeniz için önce Visual Studio 2010 SP1 için Team Foundation Server sürümü Microsoft Test Yöneticisi'nin sürümü eşleşmelidir. |
 | Apache Cordova için Visual Studio Araçları | Projeleri Visual Studio 2017 açılabilir, ancak geriye dönük olarak uyumlu değildir. Visual Studio 2015'ten bir proje açıldığında, değişiklikleri projenize izin istenir. Bu değişikliği toolsets yerine kullanmak için proje yükseltmeleri bir `taco.json` Cordova kitaplığı, kendi platformları ve eklentileri yanı sıra düğümü/npm bağımlılıklarını sürümünü oluşturmaya yönetmek için dosya. Bkz: [Geçiş Kılavuzu](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015) daha fazla bilgi için. |

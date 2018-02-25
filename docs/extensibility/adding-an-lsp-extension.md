@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5124547737405af8309161df90356f607909c0fa
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Dil sunucu protokolü uzantısına ekleme
 
@@ -136,7 +136,7 @@ LSP diller için metin renklendirme sağlamak nasıl belirtimi içermez. Visual 
 
 1. Uzantınızı içinde "Aynı" adlı bir klasör oluşturun (veya seçtiğiniz herhangi bir ad olabilir).
 
-2. "Aynı" klasöründe özel renklendirme sağlayan istediğiniz *.tmlanguage veya *.tmtheme dosyaları içerir.
+2. "Aynı" klasörü içinde herhangi bir *.tmlanguage, *.plist, *.tmtheme veya istediğiniz özel renklendirme sağlar *.json dosyaları içerir.
 
 3. Sağ tıklatın ve dosyaları **özellikleri**. Yapı eylemini **içerik** ve **Include in VSIX** özelliğinin true.
 

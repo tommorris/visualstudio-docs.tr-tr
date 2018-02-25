@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: bc9317615edbf49e35aa0ac3d2ff079beab20df5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e5d5cbc856a6af44941d690119f2a15a8acc3d41
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Azure uygulama Hizmeti'nde Python yönetme
 
@@ -130,8 +130,8 @@ Fastcgı isteği düzeyinde çalışan bir arabirimdir. IIS gelen bağlantılar�
 `<appSettings>` Tanımlanmış buraya kullanılabilir uygulamanıza ortam değişkenleri olarak:
 
 - Değeri `PYTHONPATH` genişletilmiş serbestçe ancak, uygulamanızın kök içermelidir.
-- `WSGI_HANDLER`bir WSGI uygulaması alınabilir, uygulamanızdan işaret etmelidir.
-- `WSGI_LOG`İsteğe bağlı ancak önerilen uygulamanızı hata ayıklama için değildir. 
+- `WSGI_HANDLER` bir WSGI uygulaması alınabilir, uygulamanızdan işaret etmelidir.
+- `WSGI_LOG` İsteğe bağlı ancak önerilen uygulamanızı hata ayıklama için değildir. 
 
 Bkz: [Azure'a yayımlama](publishing-python-web-applications-to-azure-from-visual-studio.md) hakkında daha fazla ayrıntı için `web.config` içeriği Bottle, Flask ve Django web uygulamaları.
 
@@ -202,7 +202,7 @@ Doğrudan sunucu ortamında paketleri yüklemek için aşağıdaki yöntemlerden
     Kullanarak `requirements.txt` yeniden oluşturmak kolay olduğundan, tam paketinizi ayarlamak, her ikisi de, yerel olarak hem de sunucu tavsiye edilir. Herhangi bir değişiklik dağıttıktan sonra konsol ziyaret hatırlamak `requirements.txt` ve komutu yeniden çalıştırın.
 
 > [!Note]
-> Olmadığından C Derleyici uygulama hizmeti, yerel uzantısı modüllerle herhangi bir paket için tekerlek yüklemeniz gerekir. Birçok popüler paketleri kendi Tekerlek sağlar. Verme paketlerini kullanma `pip wheel <package_name>` yerel geliştirme bilgisayarınıza ve Tekerlek sitenize karşıya yükleme. Bir örnek için bkz: [gerekli paketleri yönetme](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt).
+> Olmadığından C Derleyici uygulama hizmeti, yerel uzantısı modüllerle herhangi bir paket için tekerlek yüklemeniz gerekir. Birçok popüler paketleri kendi Tekerlek sağlar. Verme paketlerini kullanma `pip wheel <package_name>` yerel geliştirme bilgisayarınıza ve Tekerlek sitenize karşıya yükleme. Bir örnek için bkz: [requirements.txt ile gerekli paketleri yönetme](managing-required-packages-with-requirements-txt.md).
 
 ### <a name="kudu-rest-api"></a>Kudu REST API
 

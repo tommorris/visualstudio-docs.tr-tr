@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 375508647c7a192b7b3869c4faaf80b8df2d0a4a
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="editing-python-code"></a>Python kodu düzenleme
 
@@ -39,7 +39,7 @@ Visual Studio nesne tarayıcısı da kullanabilirsiniz (**Görünüm > Diğer Pe
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense sağlar [tamamlamalar](#completions), [imza Yardım](#signature-help), [hızlı bilgi](#quick-info), ve [kod renklendirme](#code-coloring). Performansı artırmak için IntelliSense projenizdeki her Python ortamı için oluşturulan tamamlama veritabanı bağlıdır. Veritabanları ekleyin, kaldırın veya güncelleştirme paketleri yenileme gerekebilir. Veritabanı durumu görüntülenir **Python ortamları** penceresinde (Çözüm Gezgini eşdüzey) **IntelliSense** sekmesinde (bkz [Python ortamları](managing-python-environments-in-visual-studio.md)). 
+IntelliSense sağlar [tamamlamalar](#completions), [imza Yardım](#signature-help), [hızlı bilgi](#quick-info), ve [kod renklendirme](#code-coloring). Performansı artırmak için IntelliSense projenizdeki her Python ortamı için oluşturulan tamamlama veritabanı bağlıdır. Veritabanları ekleyin, kaldırın veya güncelleştirme paketleri yenileme gerekebilir. Veritabanı durumu görüntülenir **Python ortamları** penceresinde (Çözüm Gezgini eşdüzey) **IntelliSense** sekmesinde (bkz [Python ortamları penceresi başvuru](python-environments-window-tab-reference.md#intellisense-tab)).
 
 ### <a name="completions"></a>Tamamlamalar
 

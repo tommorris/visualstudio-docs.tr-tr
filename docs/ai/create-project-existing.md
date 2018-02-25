@@ -29,4 +29,4 @@ Seçtiğiniz sonra [AI için Visual Studio Araçları yüklü](installation.md),
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Varolan bir Python yorumlayıcısı için bir ortam oluşturma](../python/managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
+- [El ile varolan bir Python ortamı tanımlama](../python/managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)

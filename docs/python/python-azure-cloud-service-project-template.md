@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f6122e989ce1394f31aab26b3c2eace68e9f3d21
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python için Azure bulut hizmeti projeleri
 
@@ -57,8 +57,8 @@ Bu konu, proje şablonu ve diğer Visual Studio (önceki sürümlerinde benzer, 
 
 Bir rolü projesinin PowerShell komut `bin` klasör bu rol dağıtımını denetlemek ve yapılandırmasını özelleştirmek için düzenlenebilir:
 
-- `ConfigureCloudService.ps1`Web ve çalışan rolleri için genellikle yüklemek ve bağımlılıkları yapılandırmak ve Python sürümü ayarlamak için kullanılır.
-- `LaunchWorker.ps1`yalnızca çalışan rolleri için kullanılır ve başlangıç davranışını değiştirmek için komut satırı bağımsız değişkenleri ekleyip ortam değişkenleri eklemek için kullanılır.
+- `ConfigureCloudService.ps1` Web ve çalışan rolleri için genellikle yüklemek ve bağımlılıkları yapılandırmak ve Python sürümü ayarlamak için kullanılır.
+- `LaunchWorker.ps1` yalnızca çalışan rolleri için kullanılır ve başlangıç davranışını değiştirmek için komut satırı bağımsız değişkenleri ekleyip ortam değişkenleri eklemek için kullanılır.
 
 Her iki dosya özelleştirme için yönergeleri içerir. Ana bulut hizmet projesinin için başka bir görev ekleyerek de kendi Python sürümü yükleyebilirsiniz `ServiceDefinition.csdef` dosyası ayarı `PYTHON` kendi yüklü için değişken `python.exe` (veya eşdeğer) yolu. Zaman `PYTHON` olan ayarlayın, Python Nuget'ten yüklü değil.
 
@@ -93,7 +93,7 @@ Bulut Hizmetleri için `ConfigureCloudService.ps1` komut dosyası kullanan `pip`
 
 C uzantılı tüm kitaplıkları önceden derlenmiş ikili dosyaları sağlamalısınız bulut hizmeti örnekleri C Derleyicileri içermez unutmayın.
 
-PIP ve bağımlılıklarını yanı sıra paketler `requirements.txt`, otomatik olarak yüklenir ve ücrete tabi bant genişliği kullanımı sayılır. Bkz: [gerekli paketleri yönetme](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt) yönetme ile ilgili ayrıntılar için `requirements.txt` dosyaları.
+PIP ve bağımlılıklarını yanı sıra paketler `requirements.txt`, otomatik olarak yüklenir ve ücrete tabi bant genişliği kullanımı sayılır. Bkz: [gerekli paketleri yönetme](managing-required-packages-with-requirements-txt.md) yönetme ile ilgili ayrıntılar için `requirements.txt` dosyaları.
 
 ## <a name="troubleshooting"></a>Sorun giderme
 
@@ -102,7 +102,7 @@ Web veya çalışan rolü düzgün bir şekilde dağıtıldıktan sonra davranı
 - Python projenizin (en az) sahip bir bin\ klasör içerir:
 
   - `ConfigureCloudService.ps1`
-  - `LaunchWorker.ps1`(çalışan rolleri için)
+  - `LaunchWorker.ps1` (çalışan rolleri için)
   - `ps.cmd`
 
 - Python projenizi içeren bir `requirements.txt` tüm bağımlılıkları (veya alternatif olarak, tekerlek dosyalarını koleksiyonu) listeleme dosya.

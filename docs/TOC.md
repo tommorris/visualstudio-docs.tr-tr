@@ -97,6 +97,7 @@
 ##### [Bir Şablonda Parametreleri İkame Etme](ide/how-to-substitute-parameters-in-a-template.md)
 #### [Visual Studio IDE 64 Bit Desteği](ide/visual-studio-ide-64-bit-support.md)
 ### [Proje veya Çözümler Olmadan Geliştirme ("Açık Klasör")](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+#### [Yapı Özelleştirme ve Hata Ayıklama Görevleri](ide/customize-build-and-debug-tasks-in-visual-studio.md)
 ### [Düzenleyici’de Kod Yazma](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Metin Bulma ve Değiştirme](ide/finding-and-replacing-text.md)
 ##### [Normal İfadeler Kullanma](ide/using-regular-expressions-in-visual-studio.md)

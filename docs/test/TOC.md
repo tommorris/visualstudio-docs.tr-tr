@@ -45,7 +45,7 @@
 ### [İzlenecek Yol: C/C++ DLL’leri için Birim Testleri Yazma](walkthrough-writing-unit-tests-for-cpp-dlls.md)
 ### [C++ API Başvurusu için Microsoft Birim Testi Çerçevesi](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 ## [UWP uygulamaları için birim testleri oluşturma ve çalıştırma](create-and-run-unit-tests-for-a-store-app-in-visual-studio.md)
-### [UWP uygulamaları için bir Visual C++ DLL’ye birim testi uygulama](unit-testing-a-visual-cpp-dll-for-store-apps.md)
+### [C++ UWP DLL birim testi](unit-testing-a-visual-cpp-dll-for-store-apps.md)
 ### [UWP uygulamalarında Visual C# koduna birim testi uygulama](unit-testing-visual-csharp-code-in-a-store-app.md)
 ### [UWP uygulamaları için birim testleri çalıştırma](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [Ne Kadar Kodun Test Edildiğini Belirlemek için Kod Kapsamını Kullanma](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

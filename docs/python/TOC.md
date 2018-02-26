@@ -1,5 +1,6 @@
 # [Genel bakış](overview-of-python-tools-for-visual-studio.md)
 # [Yükleme](installing-python-support-in-visual-studio.md)
+## [Python yorumlayıcılarını yükleme](installing-python-interpreters.md)
 # Hızlı Başlangıçlar
 ## [Mevcut koddan proje oluşturma](quickstart-01-project-from-existing.md)
 ## [Bir şablondan proje oluşturma](quickstart-02-python-in-visual-studio-project-from-template.md)
@@ -14,13 +15,17 @@
 ## [5 - Paketleri yükleme ve Python ortamlarını yönetme](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 ## [6 - Git ile çalışma](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 # Kavramlar
-## [Python ortamları](managing-python-environments-in-visual-studio.md)
 ## [Python projeleri](managing-python-projects-in-visual-studio.md)
 ### [Web projesi şablonları](python-web-application-project-templates.md)
 ### [Django web projesi şablonu](python-django-web-application-project-template.md)
 ### [Azure bulut hizmeti şablonu](python-azure-cloud-service-project-template.md)
 ## [Python için Azure SDK](azure-sdk-for-python.md)
 # Nasıl yapılır kılavuzları
+## [Ortamları yönetme](managing-python-environments-in-visual-studio.md)
+### [Proje için yorumlayıcıyı seçme](selecting-a-python-environment-for-a-project.md)
+### [Bağımlılıklar için requirements.txt dosyasını kullanma](managing-required-packages-with-requirements-txt.md)
+### [Arama yolları](search-paths.md)
+### [Ortam penceresi başvurusu](python-environments-window-tab-reference.md)
 ## [Kodu düzenleme](editing-python-code-in-visual-studio.md)
 ### [Kodu biçimlendirme](formatting-python-code.md)
 ### [Kodu yeniden düzenleme](refactoring-python-code.md)

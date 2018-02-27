@@ -2,7 +2,7 @@
 title: "Visual Studio'da Python ilişkin seçenekleri ve ayarları | Microsoft Docs"
 description: "Visual Studio'da Python kodu ve projeler ile ilgili çeşitli ayarlar için bir başvuru."
 ms.custom: 
-ms.date: 01/04/2018
+ms.date: 02/21/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8c7bd5713be88af60964098d57d882055af7b5e2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 25e0540c376017bfc3f3a64d23bbc6963942bb5c
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio'da Python için seçenekleri
 
@@ -46,11 +46,11 @@ Vardır ayrıca Python özgü ek seçenekler **metin düzenleyicisi > Python > G
 | Seçenek | Varsayılan | Açıklama |
 | --- | --- | --- |
 | Sanal ortamlar oluştururken çıktı penceresini göster| Açık | Çıktı penceresi görünmesini engellemek için işaretini kaldırın. |
-| Çıkış yüklerken veya paketlerini kaldırma penceresini göster | Açık |  Çıktı penceresi görünmesini engellemek için işaretini kaldırın. |
-| Her zaman PIP yönetici olarak çalıştır | Kapalı | Her zaman yükseltir `pip install` işlemleri tüm ortamlar için. Ortam korumalı bir dosya sistemi bölümünde gibi bulunuyorsa paketleri yüklerken, Visual Studio için yönetici ayrıcalıkları ister `c:\Program Files`. Her zaman yükseltmesine seçebilirsiniz, istemindeki `pip install` bir bu ortam için. Bkz: [Python ortamları - PIP sekmesini](managing-python-environments-in-visual-studio.md#pip-tab). |
+| Çıkış yüklerken veya paketlerini kaldırma penceresini göster | Açık | Çıktı penceresi görünmesini engellemek için işaretini kaldırın. |
+| Her zaman PIP yönetici olarak çalıştır | Kapalı | Her zaman yükseltir `pip install` işlemleri tüm ortamlar için. Ortam korumalı bir dosya sistemi bölümünde gibi bulunuyorsa paketleri yüklerken, Visual Studio için yönetici ayrıcalıkları ister `c:\Program Files`. Her zaman yükseltmesine seçebilirsiniz, istemindeki `pip install` bir bu ortam için. Bkz: [Paketleri sekmesi](python-environments-window-tab-reference.md#packages-tab). |
 | Tamamlama DB ilk kullanımında otomatik olarak oluştur | Açık | İçin [IntelliSense tamamlamalar](editing-python-code-in-visual-studio.md#intellisense) için bir kitaplık çalışmak için Visual Studio bu kitaplık için tamamlama veritabanı oluşturmanız gerekir. Bir kitaplık yüklenir, ancak kod yazmaya başladığınızda tam olmayabilir veritabanınızı oluşturmaya arka planda gerçekleştirilir. Bu seçenek ile Visual Studio kullanan kodu yazarken bir kitaplık veritabanı tamamlama öncelik verir. |
-| Sistem genelinde PYTHONPATH değişkenleri yoksay | Açık | Visual Studio ortamları ve projeleri arama yolları belirtmek için daha doğrudan bir yol sağladığından PYTHONPATH varsayılan olarak sayılır. Bkz: [Python ortamları - arama yolları](managing-python-environments-in-visual-studio.md#search-paths) Ayrıntılar için. |
-| Bağlantılı dosyaları eklerken güncelleştirme arama yolları | Açık | Ayarlanırsa, ekleme, bir [bağlı dosya](managing-python-projects-in-visual-studio.md#linked-files) projeye güncelleştirmeleri [arama yolları](managing-python-environments-in-visual-studio.md#search-paths) böylece IntelliSense tamamlanma veritabanında bulunan bağlantılı dosyanın klasörünün içeriğini içerebilir. Bu tür içeriği tamamlama veritabanından dışlamak için bu seçeneği temizleyin. |
+| Sistem genelinde PYTHONPATH değişkenleri yoksay | Açık | Visual Studio ortamları ve projeleri arama yolları belirtmek için daha doğrudan bir yol sağladığından PYTHONPATH varsayılan olarak sayılır. Bkz: [arama yolları](search-paths.md) Ayrıntılar için. |
+| Bağlantılı dosyaları eklerken güncelleştirme arama yolları | Açık | Ayarlanırsa, ekleme, bir [bağlı dosya](managing-python-projects-in-visual-studio.md#linked-files) projeye güncelleştirmeleri [arama yolları](search-paths.md) böylece IntelliSense tamamlanma veritabanında bulunan bağlantılı dosyanın klasörünün içeriğini içerebilir. Bu tür içeriği tamamlama veritabanından dışlamak için bu seçeneği temizleyin. |
 | Modülü bulunamıyor aktarıldığında uyar | Açık | Temizle içeri aktarılan modül bildiğinizde uyarıları gizlemek için bu seçeneği şu anda kullanılabilir değil ancak Aksi halde kodu işlemi etkilemez. |
 | Rapor tutarsız girinti olarak | Uyarılar | Python yorumlayıcı kapsamını belirlemek için uygun girinti yoğun bir şekilde bağlı olduğundan, varsayılan olarak Visual Studio kodlama hataları gösterebilir tutarsız girintileri algıladığında uyarılar verir. Kümesine *hataları* daha katı olması için bu gibi durumlarda çıkmak program neden olur. Bu davranış tamamen devre dışı bırakmak için seçin *yok*. |
 | Anket/haber denetle | Haftada bir | Ayarlar Visual Studio izin sıklığı varsa bir web sayfası Python ilgili anketler ve haber öğeleri içeren bir pencere açabilirsiniz. Seçenekler *hiçbir zaman*, *günde bir kez*, *haftada bir kez*, ve *ayda bir kez*. |
@@ -84,7 +84,7 @@ Vardır ayrıca Python özgü ek seçenekler **metin düzenleyicisi > Python > G
 
 | Seçenek | Varsayılan | Açıklama |
 | --- | --- | --- |
-| Komut dosyaları | yok | Tüm ortamlar için etkileşimli windows uygulamak başlatma komut dosyaları için genel bir klasörü belirtir. Bkz: [başlatma komut dosyaları](managing-python-environments-in-visual-studio.md#startup-scripts). Ancak, bu özellik şu anda çalışmıyor unutmayın. |
+| Komut dosyaları | yok | Tüm ortamlar için etkileşimli windows uygulamak başlatma komut dosyaları için genel bir klasörü belirtir. Bkz: [başlatma komut dosyaları](python-environments-window-tab-reference.md#startup-scripts). Ancak, bu özellik şu anda çalışmıyor unutmayın. |
 | Geçmiş okları yukarı/aşağı gidin | Açık | Etkileşimli pencere geçmişinde gezinmek için ok tuşlarını kullanır. Bunun yerine etkileşimli pencerenin çıktısı gezinmek için ok tuşlarını kullanmak için bu ayarı temizleyin. |
 | Tamamlanma modu | İşlev çağrıları olmadan ifadeleri yalnızca değerlendir | Bir ifade etkileşimli penceresinde kullanılabilir üyeler belirleme işlemi yan etkileri veya birden çok kez çağrılan işlevleri neden olabilecek geçerli tamamlanmamış ifade değerlendirme gerektirebilir. Varsayılan ayar *yalnızca işlev çağrılarını olmadan ifadeleri değerlendirme* bir işlevi çağırmak için görünür, ancak diğer ifadeler değerlendirir ifadeleri dışlar. Örneğin, değerlendirir `a.b` ama `a().b`.  *Hiçbir zaman ifadeleri değerlendirme* tüm yan önerileri için yalnızca normal IntelliSense altyapısını kullanarak etkileri, engeller. *Tüm ifadeler değerlendirmek* yan etkileri bakılmaksızın önerileri almak için tam ifadeyi hesaplar. |
 | Statik çözümleme önerileri Gizle | Kapalı | Ayarlandığında, ifadesinin hesaplanmasıyla elde edilen yalnızca önerileri görüntüler. Tamamlanma modu ile birleştirildiğinde *hiçbir zaman ifadeleri değerlendirme*, hiçbir yararlı tamamlamalar etkileşimli penceresinde görünür. |

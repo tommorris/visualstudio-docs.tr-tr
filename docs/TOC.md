@@ -46,7 +46,7 @@
 # Hızlı Başlangıçlar
 ## [Visual Studio Yönlendirmesi](ide/quickstart-ide-orientation.md)
 ## [Projeler ve Çözümler](ide/quickstart-projects-solutions.md)
-## [Düzenleyici’de Kod Yazma](ide/quickstart-editor.md)
+## [Düzenleyici’yi kullanma](ide/quickstart-editor.md)
 ## [Tema ve Metin Renklerini Kişiselleştirme](ide/quickstart-personalize-the-ide.md)
 ## [C++: Konsol Uygulaması Oluşturma](ide/getting-started-with-cpp-in-visual-studio.md)
 ## [Python: Web Uygulaması Oluşturma](ide/quickstart-python.md)
@@ -98,7 +98,7 @@
 #### [Visual Studio IDE 64 Bit Desteği](ide/visual-studio-ide-64-bit-support.md)
 ### [Proje veya Çözümler Olmadan Geliştirme ("Açık Klasör")](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 #### [Yapı Özelleştirme ve Hata Ayıklama Görevleri](ide/customize-build-and-debug-tasks-in-visual-studio.md)
-### [Düzenleyici’de Kod Yazma](ide/writing-code-in-the-code-and-text-editor.md)
+### [Düzenleyici’yi kullanma](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Metin Bulma ve Değiştirme](ide/finding-and-replacing-text.md)
 ##### [Normal İfadeler Kullanma](ide/using-regular-expressions-in-visual-studio.md)
 ##### [Bul-Komut Kutusu](ide/find-command-box.md)

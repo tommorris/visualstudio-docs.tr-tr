@@ -14,11 +14,11 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: dfdd5aee71c74febbeca0b7c9683aaa6be915e6e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: ace464f11d16f1498022cb1a0673b294a6ec408b
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio'da platformlar arası Mobil Geliştirme
 
@@ -34,7 +34,7 @@ Oyun ya da derinlikli bir grafik uygulaması oluşturmak istiyorsanız, Unity i�
 
 Xamarin ile kod ve hatta UI paylaşımı aynı çözümde, Android, iOS ve Windows hedefleyebilirsiniz.
 
-|Daha fazla bilgi edinin|
+|**Daha fazla bilgi edinin**|
 |--------------------|
 |[Visual Studio yükleme](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Visual Studio'da Xamarin hakkında bilgi edinin](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
@@ -65,7 +65,7 @@ Xamarin ile kod ve hatta UI paylaşımı aynı çözümde, Android, iOS ve Windo
 
  Paylaşılan bir proje, taşınabilir sınıf kitaplığı proje ya da her ikisini de kullanarak kodunuzu paylaşabilirsiniz. Paylaşılan bir proje ve bazı kodlar iyi daha fazla yapar bazı kod sığar taşınabilir sınıf kitaplığı proje mantıklı bulabilirsiniz.
 
-|Daha fazla bilgi edinin|
+|**Daha fazla bilgi edinin**|
 |--------------------|
 |Paylaşılan projeleri, taşınabilir Sınıf Kitaplığı projelerinde veya her ikisini de kullanarak kodunuzu paylaşmak isteyip istemediğinizi seçin.<br /><br /> [Platformlar arası kod paylaşımını](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (.NET Framework blogu)<br /><br /> [Paylaşım kodu seçeneklerini](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [.NET Framework ile paylaşım seçeneklerini kodu](http://msdn.microsoft.com/library/dn720832.aspx) (MSDN Kitaplığı)|
 
@@ -78,10 +78,10 @@ Xamarin ile kod ve hatta UI paylaşımı aynı çözümde, Android, iOS ve Windo
 
  Windows 10 oldukça yeni olduğundan, ayrıca Windows 8.1 hedefleyen proje şablonları bulabilirsiniz. İstediğiniz ve uygulamanızı Windows 10 telefon, Tablet ve bilgisayar üzerinde çalışır, bu proje şablonları kullanabilirsiniz. Ancak, Windows 8.1 çalıştıran tüm cihazlara otomatik alacak Windows 10 yükseltme, bu nedenle neden yerine hedef Windows 8.1, belirli nedenleri yoksa öneririz Windows 10 hedef proje şablonları kullanın.
 
-|Daha fazla bilgi edinin|
+|**Daha fazla bilgi edinin**|
 |--------------------|
-|[Evrensel Windows uygulamaları hakkında bilgi edinin](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Windows Dev Center)|
-|[İlk bir yapı](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Windows Dev Center)|
+|[Evrensel Windows platformu giriş](/windows/uwp/get-started/universal-application-platform-guide)|
+|[İlk uygulamanızı oluşturma](/windows/uwp/get-started/your-first-app)|
 |[Evrensel Windows Platformu (UWP) için uygulama geliştirme](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Uygulamaları Evrensel Windows Platformu (UWP) geçirme](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
 
@@ -104,7 +104,7 @@ Xamarin ile kod ve hatta UI paylaşımı aynı çözümde, Android, iOS ve Windo
 
  Evrensel Windows uygulamaları oluşturma Visual Studio'da hala kullanılabilir proje şablonları bu nedenle yalnızca Windows cihazları hedef planlıyorsanız, bunları kullanmaya çekinmeyin. Daha sonra hedef Android ve iOS karar verirseniz, kodunuzu bir Cordova projesi için her zaman bağlantı noktası. Bu API tüketir herhangi bir kod yeniden şekilde WinJS API'leri açık kaynak sürümü vardır. Bu, diğer platformlar gelecekte hedef planlıyorsanız, da Apache Cordova için Visual Studio Araçları ile başlamanızı öneririz belirtti.
 
-|Daha fazla bilgi edinin|
+|**Daha fazla bilgi edinin**|
 |--------------------|
 |[Visual Studio yükleme](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Apache Cordova için Visual Studio Araçları ile çalışmaya başlama](/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
@@ -131,7 +131,7 @@ Xamarin ile kod ve hatta UI paylaşımı aynı çözümde, Android, iOS ve Windo
 
  Bu kitaplıklar kod yazarken, Android ve Windows platformlarında yerel API'leri keşfetmek için IntelliSense kullanabilirsiniz. Kesme noktaları, kod, aracılığıyla adım ayarlayabilir ve bulmak ve tüm hata ayıklayıcı gelişmiş özelliklerini kullanarak sorunları düzeltmek için bu kitaplık projeleri Visual Studio hata ayıklayıcısı ile tam olarak tümleşiktir.
 
-|Daha fazla bilgi edinin|
+|**Daha fazla bilgi edinin**|
 |--------------------|
 |[Visual Studio indirin.](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Visual C++ için platformlar arası mobil geliştirme araçlarını yükleyin.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Kitaplığı)|
@@ -151,7 +151,7 @@ Xamarin ile kod ve hatta UI paylaşımı aynı çözümde, Android, iOS ve Windo
 
  Oyununuzu Unity ve Unity için Visual Studio Araçları ile oluşturmaya hemen başlayın.
 
-|Daha fazla bilgi edinin|
+|**Daha fazla bilgi edinin**|
 |--------------------|
 |[Visual Studio ile oyunlar Unity oluşturma hakkında daha fazla bilgi edinin](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
 |[Unity için Visual Studio Araçları hakkında daha fazla bilgiyi](../cross-platform/visual-studio-tools-for-unity.md) (MSDN Kitaplığı)|

@@ -188,6 +188,7 @@
 ## [Nasıl Yapılır: AsyncPackage Kullanarak Arka Planda VSPackage Yükleme](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)
 ## [Nasıl Yapılır: Visual Studio Uzantıları için Kural Tabanlı UI Bağlamı Kullanma](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)
 ## [Nasıl Yapılır: Uzantı performansını tanılama](how-to-diagnose-extension-performance.md)
+## [Nasıl yapılır: Uzantılardan kaynaklanan kullanıcı arabirimi gecikmelerini tanılama](how-to-diagnose-ui-delays-caused-by-extensions.md)
 ## [VSPackage Sorunlarını Giderme](troubleshooting-vspackages.md)
 # [Kabuk (Tümleşik veya Yalıtılmış)](https://vspartner.com/pages/vsshells)
 # [Visual Studio Uzantıları Gönderme](shipping-visual-studio-extensions.md)

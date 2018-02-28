@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 02/20/2018
+ms.date: 02/23/2018
 ms.topic: article
 helpviewer_keywords: 
 ms.technology:
@@ -13,18 +13,20 @@ ms.technology:
 ms.service: 
 ms.workload:
 - multiple
-ms.openlocfilehash: 34301e6f0d55a0f0229e793ca8869483f29ccf2d
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 61dc3ab491dffcf89e318e9419e71062c2599c79
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 yapı numaralarını ve tarihleri bırakın
 
 Aşağıdaki tabloda yapı numaraları ve yayın tarihleri tarih için Visual Studio 2017 listeler.
 
-| Sürüm| **Channel** | Sürüm tarihi | **Sürüm oluşturma** |
+| **Sürüm**| **Channel** | **Sürüm tarihi** | **Sürüm oluşturma** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.6.0 Preview 6.0 | Önizleme | 23 Şubat 2018 | 15.6.27421.1 |
+| 15.0.10 | Sürüm | 21 Şubat 2018 | 15.0.26228.28 |
 | 15.5.7 | Sürüm | 20 Şubat 2018 | 15.5.27130.2036 |
 | 15.6.0 Preview 5.0 | Önizleme | 14 Şubat 2018 | 15.6.27413.0 |
 | 15.6.0 Preview 4.0 | Önizleme | 7 Şubat 2018 | 15.6.27406.0 |

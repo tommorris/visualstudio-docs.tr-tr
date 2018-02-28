@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.workload: bertaygu
-ms.openlocfilehash: 1d1034cce8b2fced5af48a0a4bfa8620b56994e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- bertaygu
+ms.openlocfilehash: ac6044406c4fa065d1e5ed3dcaa8dd998f4232fb
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Başlangıç uzantısı etkileri ölçme
 
@@ -30,6 +32,9 @@ Kullanıcıların bu etkiyi anlamasına yardımcı olmak için yeni bir özellik
 ![Visual Studio performansı yönetme](media/manage-performance.png)
 
 Uzantı etkisi nasıl hesaplanır ve nasıl yerel olarak uzantı uzantısı etkileyen bir performans gösterilebilir olmadığını sınamak için analiz edilmeden açıklayarak uzantısı geliştiricilere yardımcı olmak için bu belgenin amaçlar.
+
+> [!NOTE]
+> Bu belge başlatma ve çözüm yük uzantılarını etkisini odaklanır. UI yanıt vermemesine neden olursa uzantıları da Visual Studio performansını etkiler. Bu konu hakkında daha fazla bilgi için bkz: [nasıl yapılır: uzantıları tarafından kaynaklanan tanılamak UI gecikmeler](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Uzantıları başlangıç nasıl etkileyebileceğini
 

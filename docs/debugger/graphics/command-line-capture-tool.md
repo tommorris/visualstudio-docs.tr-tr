@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 68ea5a718b1a0d1ccff7155f842bc3808d640c21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4290ccb1184f658d04d6903520f709384e58e837
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="command-line-capture-tool"></a>Komut satırı Yakalama aracı
 DXCap.exe bir grafik tanılama yakalama ve kayıttan yürütme için komut satırı aracıdır. Bu Direct3D 10 ile Direct3D 12 arasında tüm özellik düzeylerini destekler.  
@@ -42,12 +44,12 @@ DXCap.exe -info
   
  `-frame``frames`  
  Yakalama modu altında `frames` yakalamak istediğiniz çerçeveleri belirtir. İlk kare 1'dir. Virgül ve aralıkları kullanarak birden çok çerçeve belirtebilirsiniz. Örneğin, varsa `frames` olan `2, 5, 7-9, 15`, ardından çerçeve `2`, `5`, `7`, `8`, `9`, ve `15` yakalanır.  
+
+> [!TIP]
+> Kullanım `-frame` `manual` çerçeveler el ile Print Screen tuşuna basarak yakalanmasını belirtmek için. Uygulama başlatıldığında çerçeveler yakalanabilir; Çerçeve Yakalamayı durdurmak için komut satırı arabirimini dönün ve ENTER tuşuna basın.  
   
  `-period``periods`  
  Yakalama modu altında `periods` zaman aralıklarına sırasında istediğiniz çerçeveleri yakalamak saniye olarak belirtir. Virgül ve aralıkları kullanarak birden çok nokta belirtebilirsiniz. Örneğin, `periods` olan `2.1-5, 7.0-9.3`, sonra arasında çizilir çerçeveler `2.1` ve `5` saniye arasındaki`7` ve `9.3` saniye yakalanır.  
-  
- `-manual`  
- Yakalama modu altında `-manual` çerçeveler el ile Print Screen tuşuna basarak yakalanmasını belirtir. Uygulama başlatıldığında çerçeveler yakalanabilir; Çerçeve Yakalamayı durdurmak için komut satırı arabirimini dönün ve ENTER tuşuna basın.  
   
  `-c` `app` [`args...`]  
  Yakalama modu. Yakalama modu altında `app` grafik bilgilerini; yakalamak istediğiniz uygulamanın adını belirtir. `args...` bu uygulama için ek komut satırı parametreleri belirtir.  
@@ -167,13 +169,13 @@ DXCap.exe -e map
  **"Microsoft.BingMaps" paketi:**  
  **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Ad: Microsoft.BingMaps**  
  **Yayımcı: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US =**  
  **Sürüm: 2.1.2914.1734**  
  **Launchable uygulamalar:**  
  **Kimliği: AppexMaps**  
- **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: Hayır**  
  ** (Başlatmak için) AppSpec: **DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** çıktı numaralandırılmış her uygulama için son satırının görüntüler grafik bilgilerinden yakalamak için kullanabileceğiniz komutu.  
   

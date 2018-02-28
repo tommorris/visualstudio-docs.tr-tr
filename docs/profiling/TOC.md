@@ -43,7 +43,6 @@
 #### [Nasıl yapılır: Bir Web sitesinin performans verileri toplama](how-to-collect-performance-data-for-a-web-site.md)
 #### [Nasıl yapılır: El ile performans oturumları oluşturma](how-to-manually-create-performance-sessions.md)
 #### [İzlenecek yol: Performans sorunlarını tanımlama](walkthrough-identifying-performance-problems.md)
-#### [PeopleTrax örneği (profil oluşturma araçları)](peopletrax-sample-profiling-tools.md)
 ### [Performans oturumlarını yapılandırma](configuring-performance-sessions.md)
 #### [Nasıl yapılır: Başvuru pencereleri sembol bilgileri](how-to-reference-windows-symbol-information.md)
 #### [Nasıl yapılır: Toplama metotlarını seçme](how-to-choose-collection-methods.md)

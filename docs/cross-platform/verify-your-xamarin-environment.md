@@ -7,16 +7,17 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: 203f977ac4bc9a0ba72284b54a6936a77bae0f61
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: MT
+ms.workload:
+- xamarin
+ms.openlocfilehash: 5878da6742412a368e7b5ff84d0e0e20a4751914
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="verify-your-xamarin-environment"></a>Xamarin ortamınızı doğrulayın
 Yükleyicileri tamamladıktan sonra (bkz [Kurulum ve yükleme](../cross-platform/setup-and-install.md)), her şeyi Xamarin geliştirme deneyimi için hazır olduğunu doğrulamak için birkaç dakikanızı ayırın.  
@@ -77,7 +78,7 @@ Yükleyicileri tamamladıktan sonra (bkz [Kurulum ve yükleme](../cross-platform
   
          ![Hata ayıklama hedefi olarak bir Windows Phone öykünücüsü seçme](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Xamarin 4 doğrulayın")  
   
-    -   İş, okumak için öykünücü almada sorunlarla karşılaşmanız halinde [Windows Phone 8 öykünücüsü sorun giderme](https://msdn.microsoft.com/library/windows/apps/jj681694.aspx).  
+    -   İş, okumak için öykünücü almada sorunlarla karşılaşmanız halinde [Windows Phone 8 öykünücüsü sorun giderme](/previous-versions/windows/apps/jj681694\(v%3dvs.105\)).  
   
 ## <a name="ios"></a>iOS  
   
@@ -107,7 +108,7 @@ Yükleyicileri tamamladıktan sonra (bkz [Kurulum ve yükleme](../cross-platform
   
         -   İOS imzalama sekmesini iOS proje özelliklerinde paket, özel yetkilendirme alan etkin hata ayıklama yapılandırması boş olduğundan emin olun.  Not: Bu ayar, yukarıdaki hata iletisini karşılaştıysanız kaldırma yalnızca denemelisiniz.  
   
-##  <a name="missing"></a>Xamarin proje şablonları eksik olabilir mi? Bu deneyin  
+##  <a name="missing"></a> Xamarin proje şablonları eksik olabilir mi? Bu deneyin  
  Şablonları Xamarin doğrudan Xamarin Web sitesinden yükleyin ve Visual Studio 2013 varsa ve yan yana Visual Studio 2015 yüklü eksik olabilir. Düzeltme, ancak daha kolaydır: yalnızca etkinleştir **Visual Studio 2015 için Xamarin** Xamarin Kurulum programını özelliği.  
   
 1.  Denetim Masası'nda açmak **programlar ve Özellikler**, seçin **Xamarin** öğesi öğesini tıklatıp **değişiklik**.  

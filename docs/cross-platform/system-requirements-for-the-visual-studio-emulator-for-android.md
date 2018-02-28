@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 520cd9eacf494ac1d8f8e26a7e1ef51581a49956
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: def17f215bd157da8d0e31f400e6b353a4d38f12
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü Sistem Gereksinimleri
 Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürümler için sanallaştırma teknolojisi sanal makine olarak çalışır. Öykünücü çalıştırmak için bilgisayarınızı bu konu başlığı altında açıklandığı gibi Hyper-V çalıştırmak için gereksinimleri karşılaması gerekir.  
   
- Öykünücü yüklediğinizde, bu önkoşulları sessiz bir şekilde yapılandırmak Kurulum programı çalışır. Kurulum Önkoşulları başarıyla yapılandırdığında öykünücü yalnızca beklendiği gibi çalışır. Aksi takdirde bu Önkoşullar el ile etkinleştirmeniz gerekebilir. Önkoşullar el ile yapılandırmanız varsa, araçları ve adımları açıklanan aynı adımlardır [burada](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx) Windows Phone öykünücüsü.  
+ Öykünücü yüklediğinizde, bu önkoşulları sessiz bir şekilde yapılandırmak Kurulum programı çalışır. Kurulum Önkoşulları başarıyla yapılandırdığında öykünücü yalnızca beklendiği gibi çalışır. Aksi takdirde bu Önkoşullar el ile etkinleştirmeniz gerekebilir. Önkoşullar el ile yapılandırmanız varsa, araçları ve adımları açıklanan aynı adımlardır [burada](/previous-versions/windows/apps/jj863509\(v=vs.105\)) Windows Phone öykünücüsü.  
   
 > [!IMPORTANT]
 >  Kurulum programı öykünücüsü Android için Visual Studio öykünücüsü çalıştıran önkoşulları denetler. Önkoşullar mevcut olmayan, ancak bunları gerektirmez uyarıları görüntüler.  
@@ -42,7 +42,7 @@ Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürü
   
 -   [Şifrelenmemiş ve sıkıştırılmamış dosyaları Hyper-V gerektirir](#Files)  
   
-##  <a name="Checklist"></a>Hızlı Denetim listesi  
+##  <a name="Checklist">Hızlı Denetim listesi</a>  
  Android için Visual Studio öykünücüsü çalıştırmak için gereksinimleri hızlı bir listesi aşağıda verilmiştir. Bu konunun sonraki bölümlerinde daha ayrıntılı bilgi için bkz.  
   
  Sistem gereksinimleri  
@@ -75,7 +75,7 @@ Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürü
   
 -   Yerel Hyper-V Yöneticileri grubunun bir üyesi olması gerekir.  
   
-##  <a name="System"></a>Sistem gereksinimleri  
+##  <a name="System">Sistem gereksinimleri</a>  
  Bilgisayarınız, aşağıdaki gereksinimleri karşılaması gerekir:  
   
 -   Hyper-V desteği (bkz [Hyper-V gereksinimleri](#HyperV))  
@@ -88,7 +88,7 @@ Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürü
   
  ![Sistem gereksinimlerini doğrulama](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
   
-##  <a name="Network"></a>Ağ gereksinimleri  
+##  <a name="Network">Ağ gereksinimleri</a>  
  Ağınız, aşağıdaki gereksinimleri karşılaması gerekir:  
   
 -   DHCP  
@@ -103,7 +103,7 @@ Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürü
   
 -   [Android için Visual Studio Öykünücüsü’nde Sorun Giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
-##  <a name="HyperV"></a>Hyper-V gereksinimleri  
+##  <a name="HyperV">Hyper-V gereksinimleri</a>  
  BIOS içinde Hyper-V gereksinimleri  
   
  Bilgisayarınızın BIOS aşağıdaki gereksinimleri desteklemesi ve etkinleştirilmiş olması gerekir:  
@@ -136,12 +136,12 @@ Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürü
   
  Kendiniz el ile bir gruba eklemek için yerel kullanıcılar ve Gruplar ek bileşenini açın. Daha fazla bilgi için bkz: [bir gruba bir kullanıcı hesabı eklemek](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Bu Windows 7 konu, aynı zamanda Windows 8 için geçerlidir.)  
   
-##  <a name="BootableVHD"></a>Öykünücü önyüklenebilir bir VHD'den çalıştırılması desteklenmez  
+##  <a name="BootableVHD">Öykünücü önyüklenebilir bir VHD'den çalıştırılması desteklenmez</a>  
  Bir uygulama Windows önyüklenebilir bir VHD'den çalışırken Android için Visual Studio öykünücüsünde çalıştırmak çalışırsanız, öykünücü genellikle başlatmak için birkaç dakika sürer veya başlatmak başarısız olur. Öykünücü başlatma başarısız olduğunda, aşağıdaki iletiyi görürsünüz: uygulama dağıtımı başarısız oldu. Lütfen yeniden deneyin.  
   
  Bu yapılandırma desteklenmez. İlgili sorunlar hakkında daha fazla bilgi için bkz: [Android için Visual Studio öykünücüsü sorun giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   
-##  <a name="Files"></a>Şifrelenmemiş ve sıkıştırılmamış dosyaları Hyper-V gerektirir  
+##  <a name="Files">Şifrelenmemiş ve sıkıştırılmamış dosyaları Hyper-V gerektirir</a>  
  Bir sabit sürücüde NTFS dosya sistemi ile yapılandırılmış Hyper-V tarafından kullanılan sanal sabit disk dosyalarını sıkıştırılmamış şifrelenmemiş ve gerekir. Aşağıdaki dizinleri sıkıştırılmış veya şifrelenmiş değil, emin olun:  
   
 -   %localappdata%\Microsoft\XDE  

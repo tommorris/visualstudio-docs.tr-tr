@@ -13,11 +13,11 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18c420381e9fa0451bee846ea5fb9de5c74ddbf8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 97f21f75020e77cf6780fa71c21eae827940d9ec
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Nasıl yapılır: arka planda VSPackages yüklemek için AsyncPackage kullanın
 Yükleme ve VS Paketi başlatma disk g/ç neden olabilir. Bu tür g/ç kullanıcı Arabirimi iş parçacığı üzerinde olursa, yanıt hızını sorunlarına yol açabilir. Bu sorunu çözmek için Visual Studio 2015 sunulan <xref:Microsoft.VisualStudio.Shell.AsyncPackage> paketi yükleme arka plan iş parçacığında sağlayan sınıf.  
@@ -106,6 +106,6 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;   
   
 IAsyncServiceProvider asyncServiceProvider = Package.GetService(typeof(SAsyncServiceProvider)) as IAsyncServiceProvider;   
-IMyTestService testService = await ayncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
+IMyTestService testService = await asyncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
 ```
   

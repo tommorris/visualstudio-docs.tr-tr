@@ -10,17 +10,21 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: CSharp
-ms.workload: multiple
-ms.openlocfilehash: fd24e4ebcdda7a3b8fbc0b992e1ef952a930029a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+dev_langs:
+- CSharp
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bbdabf7d35c2705d028c84ddc6c6dc82f71ff48
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/27/2018
 ---
-# <a name="quickstart-coding-in-the-editor"></a>Hızlı Başlangıç: düzenleyicide kodlama
+# <a name="quickstart-use-the-code-editor"></a>Hızlı Başlangıç: Kod Düzenleyicisi'ni kullanın
 
 Bu 10 dakikalık girişte düzenleyiciye, Visual Studio yazma, gezinme ve kodu daha kolay anlama yapar yollardan bazılarını aramak için bir dosya için kod ekleyeceğiz.
+
+Bu hızlı başlangıç bir programlama dili ile bilginiz varsayar. Yoksa, önerdiğimiz programlama quickstarts birini ilk bakış, gibi bir web uygulaması ile oluşturma [Python](../ide/quickstart-python.md) veya [C#](../ide/tutorial-csharp-aspnet-core.md), veya bir konsol uygulaması ile oluşturma [Visual Basic](../ide/quickstart-visual-basic-console.md) veya [C++](../ide/quickstart-cpp.md).
 
 ## <a name="create-a-new-code-file"></a>Yeni bir kod dosyası oluşturma
 
@@ -68,7 +72,7 @@ Araç çubuğu düğmeleri, kodu daha üretken olmak için çeşitli sağlar. Ö
         "brown",
         "fox",
         "jumps"
-    }
+    };
 
     string[] morewords = {
         "over",
@@ -155,11 +159,11 @@ Bu Hızlı Başlangıç için Visual Studio düzenleyicisinde tamamladınız! So
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)  
-[Hızlı Başlangıç: Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme](../ide/quickstart-personalize-the-ide.md)  
-[Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)  
-[Kod parçacıkları](../ide/code-snippets.md)  
-[Anahat Oluşturma](../ide/outlining.md)  
-[Tanıma ve Özet Tanıma Gitme](../ide/go-to-and-peek-definition.md)  
-[Yeniden Düzenleme](../ide/refactoring-in-visual-studio.md)  
-[IntelliSense Kullanma](../ide/using-intellisense.md)
+- [Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)
+- [Hızlı Başlangıç: Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme](../ide/quickstart-personalize-the-ide.md)
+- [Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)
+- [Kod parçacıkları](../ide/code-snippets.md)
+- [Anahat Oluşturma](../ide/outlining.md)
+- [Tanıma ve Özet Tanıma Gitme](../ide/go-to-and-peek-definition.md)
+- [Yeniden Düzenleme](../ide/refactoring-in-visual-studio.md)
+- [IntelliSense Kullanma](../ide/using-intellisense.md)

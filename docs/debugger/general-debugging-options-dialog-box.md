@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,18 +19,20 @@ dev_langs:
 - FSharp
 - C++
 - JScript
-helpviewer_keywords: Options dialog box, debugging
+helpviewer_keywords:
+- Options dialog box, debugging
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
-caps.latest.revision: "46"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7f6983c2be5604867f729ed006eadb5257c3a43
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: 01c87cfc2beb030b2fd10a4455def65ab139a5f0
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Genel, Hata Ayıklama, Seçenekler İletişim Kutusu
 **Araçlar > Seçenekler > hata ayıklama > Genel** sayfasında aşağıdaki seçenekleri ayarlamanıza olanak tanır:  
@@ -115,7 +118,7 @@ Hata ayıklayıcı tüm normalde içinde görüneceği iletileri gönderir **ç�
 Tüm nesne yapısı görünüm özelleştirmelerini devre dışı bırakır. Görünüm özelleştirmelerini hakkında daha fazla bilgi için bkz: [.managed nesnelerin özel görünümlerini oluşturma](../debugger/create-custom-views-of-dot-managed-objects.md).  
   
 **JIT iyileştirmesi modülü Yükü (sadece yönetilen) gösterme**  
-Yönetilen kod JIT iyileştirmesi bir modül yüklenir ve hata ayıklayıcısı ekli sırada JIT derlenmiş devre dışı bırakır. En iyi duruma getirme devre dışı bırakma bazı sorunlar hata ayıklamak performans rağmen ödün verme pahasına kolaylaştırabilir. Sadece kendi kodumu kullanıyorsanız, JIT gizleme kullanıcı kodu ("My kodu") görünmesi kullanıcı olmayan kod iyileştirme neden olabilir.
+Yönetilen kod JIT iyileştirmesi bir modül yüklenir ve hata ayıklayıcısı ekli sırada JIT derlenmiş devre dışı bırakır. En iyi duruma getirme devre dışı bırakma bazı sorunlar hata ayıklamak performans rağmen ödün verme pahasına kolaylaştırabilir. Sadece kendi kodumu kullanıyorsanız, JIT gizleme kullanıcı kodu ("My kodu") görünmesi kullanıcı olmayan kod iyileştirme neden olabilir. Daha fazla bilgi için bkz: [JIT iyileştirmesi ve hata ayıklama](../debugger/jit-optimization-and-debugging.md).
 
 **JavaScript, ASP.NET (Chrome ve IE) hata ayıklamayı etkinleştir** ASP.NET uygulamaları için komut dosyası hata ayıklayıcı sağlar. Chrome ilk kullanımda üzerinde yüklediğiniz Chrome uzantıları etkinleştirmek için ilk kullanımda tarayıcı oturumu açmak gerekebilir. Eski davranışa geri dönmek için bu seçeneği devre dışı bırakın.    
 

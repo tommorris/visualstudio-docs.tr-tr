@@ -16,11 +16,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 2ae49bb09d30122297efc66779f808e0c39dd0d7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 10ac98027a4f7e50f66ec27636507e89f64849ee
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Platformlar arası Mobil Geliştirme için Visual C++
 Yerel C++ uygulamalar oluşturabilir. iOS, Android ve Windows cihazları ve iOS, Android ve Windows için yerleşik kitaplıklarında ortak kodun paylaşımı kullanarak Visual C++ için platformlar arası mobil geliştirme. SDK'ları ve paylaşılan kitaplıklar ve yerel uygulamalar platformlar arası geliştirme için ihtiyaç duyduğunuz araçlarını yükler Visual Studio 2015'te kullanılabilir bir seçenek budur. Yüklendiğinde, iOS ve Android cihazları ve Windows, Windows Phone ve Xbox yanı sıra platformunda çalışan bir kod oluşturmak için Visual C++ kullanabilirsiniz.  
@@ -39,7 +39,7 @@ Yerel C++ uygulamalar oluşturabilir. iOS, Android ve Windows cihazları ve iOS,
  Platformlar arası Mobil Geliştirme için Visual C++, Visual Studio 2015 ile birlikte gelen yüklenebilir bir seçenektir. Önkoşullar ve yükleme yönergeleri için bkz: [platformlar arası Mobil Geliştirme için Visual C++ yüklemek](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). İOS için kod oluşturmak için ayrıca bir Mac bilgisayar ve bir Apple iOS Geliştirici hesabı gerekir. Daha fazla bilgi için bkz: [yükleme ve yapılandırma araçları iOS kullanılarak derleme](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
   
 ## <a name="come-up-to-speed"></a>Hızlıca gelen  
- Android veya iOS geliştirme geliyor, kullanmaya başlama hakkında bazı harika malzeme sunuyoruz. Visual Studio bir açıklayıcı ve özellikli bir geliştirme ortamıdır. Nasıl kullanılacağını öğrenin deneyin [Android geliştiricileri için Başlarken](https://msdn.microsoft.com/en-us/library/windows/apps/dn275875.aspx) veya [iOS geliştiricileri için Başlarken](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/jj657966.aspx). Bu konular için Visual Studio ve Windows ve Windows Phone için platformlar arası uygulamalar geliştirmek gereken kavramlar tanıtılacaktır. İOS ve Android için ilk platformlar arası uygulamanızı yazmaya başlamak için bkz: [OpenGL ES uygulamanın Android ve iOS oluşturmak](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).  
+ Android veya iOS geliştirme geliyor, kullanmaya başlama hakkında bazı harika malzeme sunuyoruz. Visual Studio bir açıklayıcı ve özellikli bir geliştirme ortamıdır. Nasıl kullanılacağını öğrenin deneyin [Android geliştiricileri için Başlarken](/previous-versions/windows/apps/dn275875\(v=win.10\)) veya [iOS geliştiricileri için Başlarken](/previous-versions/windows/apps/jj657966\(v=win.10\)). Bu konular için Visual Studio ve Windows ve Windows Phone için platformlar arası uygulamalar geliştirmek gereken kavramlar tanıtılacaktır. İOS ve Android için ilk platformlar arası uygulamanızı yazmaya başlamak için bkz: [OpenGL ES uygulamanın Android ve iOS oluşturmak](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).  
   
  Platformlar arası Mobil Geliştirme için Visual C++, uygulamaları başlamanıza yardımcı olmak için çeşitli şablonlar içerir:  
   

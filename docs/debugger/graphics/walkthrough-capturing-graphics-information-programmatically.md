@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bbce760956dda7c9399d25dd241df26ec0e59644
-ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
+ms.openlocfilehash: 3de32ab0b9ded416f57f4699e534b6401c2a483c
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>İzlenecek Yol: Grafik Bilgilerini Programla Yakalama
 Kullanabileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] program aracılığıyla bir Direct3D uygulamasından grafik bilgilerini yakalama için grafik tanılama.  
@@ -30,7 +30,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
   
 -   Çağrı `CaptureCurrentFrame`kullandığınızda bir işleme sorun düşündüğünüz ve el ile test yakalamak zordur ancak program aracılığıyla çalışma zamanında uygulama durumu hakkındaki bilgileri kullanarak tahmin.  
   
-##  <a name="CaptureDX11_2"></a>Windows 10 programlı yakalama  
+##  <a name="CaptureDX11_2"></a> Windows 10 programlı yakalama  
  Kılavuzun bu bölümü sağlam yakalama yöntemini kullanan Windows 10'DirectX 11.2 API kullanan uygulamalar programlı yakalama gösterir.
   
  Bu bölümde bu görevlerin nasıl yapılacağını gösterir:  
@@ -79,7 +79,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     Kontrol ettiğinizden emin olun `HRESULT` tarafından döndürülen `DXGIGetDebugInterface1` kullanmadan önce geçerli bir arabirim alırsınız emin olmak için:  
+     Kontrol ettiğinizden emin olun `HRESULT` tarafından döndürülen [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) kullanmadan önce geçerli bir arabirim alırsınız emin olmak için:  
   
     ```  
     if (FAILED(getAnalysis))  

@@ -2,14 +2,17 @@
 title: ".NET'ın Visual Basic yükseltme Yardımcısı (VBUC) harekete geçirin | Microsoft Docs"
 description: "Visual Basic 6'dan Visual Basic .NET ve C# geçirmek için JSON.NET'in aracı harekete geçirin"
 ms.date: 09/05/2017
-ms.technology: devlang-vb
+ms.technology:
+- devlang-vb
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: visual-basic
+dev_langs:
+- visual-basic
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: b7fa2a16143368b829f29f43a4c8f60536b55c52
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

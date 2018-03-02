@@ -11,11 +11,11 @@ ms.author: kaseyu
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78b1829ae6a302b7c5f71fa2c478152d0c20d1b8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0767b47fcf4456e1ac198674ece6c9de31850279
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Visual Studio'da bir oluşturucu oluştur
 
@@ -39,7 +39,7 @@ Bu kod oluşturma için geçerlidir:
    - [Parametre için var olan bir oluşturucu ekleyin](#addparameter)
    - [Oluşturma ve alan/oluşturucu parametresini özelliğinden başlatma](#create)
 
-## <a id = "pick"></a>Oluşturucusu oluşturur ve üyeleri (C# yalnızca) seçin
+## <a id = "pick"></a> Oluşturucusu oluşturur ve üyeleri (C# yalnızca) seçin
 
 1. Herhangi bir sınıf boş satırı imlecinizi koyun:
 
@@ -48,7 +48,7 @@ Bu kod oluşturma için geçerlidir:
 1. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
+     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
    - **Fare**
      - Sağ tıklatıp **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
      - ' I tıklatın ![Ampul](media/bulb-cs.png) sınıf boş satırında metin imleci ise sol kenar boşluğunda görüntülenen simgesine.
@@ -70,7 +70,7 @@ Bu kod oluşturma için geçerlidir:
 
    ![Oluşturucu sonuç oluştur](media/constructor1-result-cs.png)
 
-## <a id="selection"></a>Seçilen alanları (C# yalnızca) Oluşturucusu oluştur
+## <a id="selection"></a> Seçilen alanları (C# yalnızca) Oluşturucusu oluştur
 
 1. Oluşturulan oluşturucuda olmasını istediğiniz üyeleri vurgula:
 
@@ -79,7 +79,7 @@ Bu kod oluşturma için geçerlidir:
 1. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
+     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
    - **Fare**
      - Sağ tıklatıp **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
      - ' I tıklatın ![Ampul](media/bulb-cs.png) seçim ile satırındaki metin imleci ise sol kenar boşluğunda görüntülenen simgesine.
@@ -92,7 +92,7 @@ Bu kod oluşturma için geçerlidir:
 
    ![Oluşturucu sonuç oluştur](media/constructor2-result-cs.png)
 
-## <a id="usage"></a>Oluşturucusu (C# ve Visual Basic) yeni kullanımdan oluştur
+## <a id="usage"></a> Oluşturucusu (C# ve Visual Basic) yeni kullanımdan oluştur
 
 1. İmlecinizi satıra yerleştirin kırmızı dalgalı olduğu. Kırmızı dalgalı henüz mevcut olmayan bir oluşturucu için bir çağrı gösterir.
 
@@ -107,7 +107,7 @@ Bu kod oluşturma için geçerlidir:
 1. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
+     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
    - **Fare**
      - Sağ tıklatıp **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
      - Kırmızı dalgalı getirin ve'ı tıklatın ![Ampul](media/bulb-cs.png) görüntülenen simge.
@@ -130,7 +130,7 @@ Bu kod oluşturma için geçerlidir:
 
       ![Yöntem sonuç VB oluştur](media/constructor-result-vb.png)
 
-## <a id="addparameter"></a>Parametresi varolan oluşturucuya (C# yalnızca) ekleyin
+## <a id="addparameter"></a> Parametresi varolan oluşturucuya (C# yalnızca) ekleyin
 
 1. Bir parametre var olan bir oluşturucu çağrısı ekleyin.
 
@@ -141,7 +141,7 @@ Bu kod oluşturma için geçerlidir:
 1. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
+     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
    - **Fare**
      - Sağ tıklatıp **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
      - Kırmızı dalgalı getirin ve'ı tıklatın ![Ampul](media/bulb-cs.png) görüntülenen simge.
@@ -155,7 +155,7 @@ Bu kod oluşturma için geçerlidir:
 
    ![Oluşturucu sonuç oluştur](media/constructor4-result-cs.png)
 
-## <a id="create"></a>Oluşturma ve bir alan veya bir oluşturucu parametresini (C# yalnızca) özelliğinden başlatma
+## <a id="create"></a> Oluşturma ve bir alan veya bir oluşturucu parametresini (C# yalnızca) özelliğinden başlatma
 
 1. Varolan bir oluşturucu bulun ve bir parametresini ekleyin:
 
@@ -166,7 +166,7 @@ Bu kod oluşturma için geçerlidir:
 1. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
+     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
    - **Fare**
      - Sağ tıklatıp **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
      - ' I tıklatın ![Ampul](media/bulb-cs.png) eklenen parametresiyle satırındaki metin imleci ise sol kenar boşluğunda görüntülenen simgesine.
@@ -181,5 +181,5 @@ Bu kod oluşturma için geçerlidir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod Oluşturma](../code-generation-in-visual-studio.md)  
-[Değişiklikleri Önizleme](../../ide/preview-changes.md)
+- [Kod Oluşturma](../code-generation-in-visual-studio.md)
+- [Değişiklikleri Önizleme](../../ide/preview-changes.md)

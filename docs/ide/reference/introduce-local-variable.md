@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 997220d3b1a7305f84f61ee5fd4c205d1157f1b2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a100cd5dfef6dcb36f6ce845000db31d82173a2d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Visual Studio'da yerel bir değişken tanıtır
 
@@ -46,7 +46,7 @@ Bu kod oluşturma için geçerlidir:
 1. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
+     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
    - **Fare**
      - Sağ tıklatıp **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
      - ' I tıklatın ![Ampul](media/bulb-cs.png) metin imleci kırmızı dalgalı satırıyla açıksa sol kenar boşluğunda görüntülenen simgesine.
@@ -73,5 +73,5 @@ Bu kod oluşturma için geçerlidir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod Oluşturma](../code-generation-in-visual-studio.md)  
-[Değişiklikleri Önizleme](../../ide/preview-changes.md)
+- [Kod Oluşturma](../code-generation-in-visual-studio.md)
+- [Değişiklikleri Önizleme](../../ide/preview-changes.md)

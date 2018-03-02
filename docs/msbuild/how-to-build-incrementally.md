@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 622daf457935514cb1f5a512712be6f70e4e648e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: eaebea1fea86339badd7882c7436087ae555b7b5
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-build-incrementally"></a>Nasıl Yapılır: Artımlı Olarak Derleme
 Büyük bir proje oluşturduğunuzda, daha önce hala güncel bileşenleri yerleşik değil yeniden önemlidir. Her zaman tüm hedefleri oluşturulduysa, her yapı tamamlanması uzun zaman sürer. Artımlı derlemeler etkinleştirmek için (hangi derlemelerde önce oluşturulmuş değil veya hedefleyen hedeflerin güncel değil, yalnızca yeniden), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) girdi dosyaları zaman damgaları ve çıkış dosyalarının zaman damgalı karşılaştırabilirsiniz ve Atla, yapı veya kısmen hedef yeniden belirleyin. Ancak, bire bir eşleme girişleri ve çıkışları arasında olmalıdır. Bu doğrudan eşleme tanımlamak hedefleri etkinleştirmek için dönüşümler kullanabilirsiniz. Dönüşümler hakkında daha fazla bilgi için bkz: [dönüştüren](../msbuild/msbuild-transforms.md).  
@@ -72,7 +72,7 @@ Büyük bir proje oluşturduğunuzda, daha önce hala güncel bileşenleri yerle
  Bu proje dosyası içeren `Convert` ve `Build` hedefler. `GenerateContentFiles` Ve `BuildHelp` görevleri yerleştirilir `Convert` ve `Build` böylece her hedef artımlı olarak oluşturulabilir sırasıyla hedefler. Kullanarak `Output` öğesi, çıkışları `GenerateContentFiles` görev yerleştirilir `ContentFile` öğe listesinden, burada bunlar olarak kullanılabilir girdileri `BuildHelp` görev. Kullanarak `Output` öğesi bu şekilde otomatik olarak sağlar bir görevin çıkış girdi olarak başka bir görev için böylece veya her görev listelerinde el ile madde bireysel öğeleri listeler gerekmez.  
   
 > [!NOTE]
->  Ancak `GenerateContentFiles` hedef artımlı olarak oluşturabilir, bu hedefin tüm çıktıları için girdi olarak her zaman gereklidir `BuildHelp` hedef. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]kullanırken bir hedeften tüm çıkışları başka bir hedef için girdi olarak otomatik olarak sağlar `Output` öğesi.  
+>  Ancak `GenerateContentFiles` hedef artımlı olarak oluşturabilir, bu hedefin tüm çıktıları için girdi olarak her zaman gereklidir `BuildHelp` hedef. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kullanırken bir hedeften tüm çıkışları başka bir hedef için girdi olarak otomatik olarak sağlar `Output` öğesi.  
   
 ```xml  
 <Project DefaultTargets="Build"  
@@ -80,7 +80,7 @@ Büyük bir proje oluşturduğunuzda, daha önce hala güncel bileşenleri yerle
   
     <ItemGroup>  
         <TXTFile Include="*.txt"/>  
-        <XMLFile Include="\metadata\*.xml"/>  
+        <XMLFiles Include="\metadata\*.xml"/>  
     </ItemGroup>  
   
     <Target Name = "Convert"  
@@ -100,7 +100,7 @@ Büyük bir proje oluşturduğunuzda, daha önce hala güncel bileşenleri yerle
   
         <BuildHelp  
             ContentFiles = "@(ContentFiles)"  
-            MetadataFiles = "@(XMLFile)"  
+            MetadataFiles = "@(XMLFiles)"  
             OutputFileName = "$(MSBuildProjectName).help"/>  
     </Target>  
 </Project>  

@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78d2c33002e59eab1b6e8605092a74d9995453a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 006f161df8128e1d505947a3e2907a01c4d3915e
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Yeniden düzenleme alanı Yalıt
 
@@ -52,7 +52,7 @@ Bu yeniden düzenleme için geçerlidir:
 
    - **Klavye**
      - Tuşuna **Ctrl + R**, ardından **Ctrl + E**.  (Bağlı olarak hangi profilinde seçtiğiniz klavye kısayolu farklı olabileceğini unutmayın.)
-     - Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsünü seçin **yalıtma alan** girişi önizleme penceresi açılır.
+     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsünü seçin **yalıtma alan** girişi önizleme penceresi açılır.
    - **Fare**
      - Seçin **Düzenle > yeniden düzenlemeniz > alanı Yalıt**.
      - Kod sağ tıklayın, **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsünü seçin **yalıtma alan** girişi önizleme penceresi açılır.
@@ -77,5 +77,5 @@ Bu yeniden düzenleme için geçerlidir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yeniden Düzenleme](../refactoring-in-visual-studio.md)  
-[Değişiklikleri Önizleme](../../ide/preview-changes.md)
+- [Yeniden Düzenleme](../refactoring-in-visual-studio.md)
+- [Değişiklikleri Önizleme](../../ide/preview-changes.md)

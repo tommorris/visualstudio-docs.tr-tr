@@ -9,27 +9,28 @@ ms.date: 11/13/2017
 ms.topic: how-to article
 ms.devlang: multiple
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 77eb12a8ffa0b40d83bcbe24326fb386eb0a4d9c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 90d0e7db36b91c2add1bcfe80fb3325bd1ddf126
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Azure Batch AI AI modelleri eğitme
 
-Toplu AI veri bilimcileri ve AI araştırmacılarının AI ve diğer machine learning modellerini Azure sanal makineler, sanal makineleri GPU desteği de dahil olmak üzere, kümeleri üzerinde eğitmek sağlayan yönetilen bir hizmettir. İşinizin gereksinimlerini tanımlamak, rest girişleri bulmak ve çıktıları ve toplu AI depolamak nereye işler. [Azure Batch AI hakkında daha fazla bilgi edinin](https://docs.microsoft.com/azure/batch-ai/overview) 
+Toplu AI veri bilimcileri ve AI araştırmacılarının AI ve diğer machine learning modellerini Azure sanal makineler, sanal makineleri GPU desteği de dahil olmak üzere, kümeleri üzerinde eğitmek sağlayan yönetilen bir hizmettir. İşinizin gereksinimlerini tanımlamak, rest girişleri bulmak ve çıktıları ve toplu AI depolamak nereye işler. [Azure Batch AI hakkında daha fazla bilgi edinin](https://docs.microsoft.com/azure/batch-ai/overview)
 
 Azure eğitim modellerinde çıkışı dinamik olarak ölçeklendirmek için AI için Visual Studio Araçları ile tümleşiktir.  Seçtiğiniz sonra [AI için Visual Studio Araçları yüklü](installation.md), Azure Machine Learning örnek Galerisi'nde önceden yapılmış tarif kullanarak yeni bir Python proje oluşturmak kolaydır.
 
-1. Visual Studio'yu başlatın. Açık **Sunucu Gezgini** açarak **AI Araçları** menü ve seçme **küme seçin**  
+1. Visual Studio'yu başlatın. Açık **Sunucu Gezgini** açarak **AI Araçları** menü ve seçme **küme seçin**
 
     ![Küme Seçici](media\train-model\select-cluster.png)
 
-     
-2. Genişletme **AI Araçları**. Sahip olduğunuz toplu AI kaynakları otomatik olarak algılanır ve Sunucu Gezgini'nde görüntülenir. 
-    
+
+2. Genişletme **AI Araçları**. Sahip olduğunuz toplu AI kaynakları otomatik olarak algılanır ve Sunucu Gezgini'nde görüntülenir.
+
     ![Örnek Galerisi](media\train-model\batchai.png)
 
 3. Seçin **Görünüm > Takım Gezgini...**  açmak için **Takım Gezgini** , GitHub veya Visual Studio Team Services bağlanmak veya için bir depoyu kopyalayın penceresi.
@@ -42,10 +43,10 @@ Azure eğitim modellerinde çıkışı dinamik olarak ölçeklendirmek için AI 
     > Takım Gezgini'nde belirttiğiniz klasör, kopyalanan dosyalarını almak için belirli bir klasördür. Farklı `git clone` komutunu Takım Gezgini'nde kopyasını oluşturma otomatik olarak oluşturmaz alt depo adını.
 
 5. Kopyalama tamamlandıktan sonra tıklatın **Dosya > çözümü Aç > Proje / çözüm**
-    
+
     ![Örnek Galerisi](media\train-model\open-solution.png)
 
-5. Açık **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** dizinde depo kopyalanamıyor 
+5. Açık **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** dizinde depo kopyalanamıyor
 
     ![Örnek Galerisi](media\train-model\tensorflowexamples.png)
 

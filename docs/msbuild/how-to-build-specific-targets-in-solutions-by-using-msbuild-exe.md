@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ec27d619b64353bf0cbac6a8b92c582ef5a590
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4437c8030f66ae24d94a83d796c0d0edf7e59c79
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Nasıl Yapılır: MSBuild.exe Kullanarak Çözümlerde Belirli Hedefleri Derleme
 MSBuild.exe belirli projelerin bir çözümde belirli hedefler derleme için kullanabilirsiniz.  
@@ -31,15 +31,21 @@ MSBuild.exe belirli projelerin bir çözümde belirli hedefler derleme için kul
   
 1.  Komut satırında `MSBuild.exe <SolutionName>.sln`, burada `<SolutionName>` yürütmek istediğiniz hedef içeren çözümü dosya adına karşılık gelir.  
   
-2.  Sonra hedef belirtin **/t** geçiş biçiminde *ProjectName*:*TargetName*.  
+2. Sonra hedef belirtin `/target:` geçiş biçiminde  **`ProjectName`**  `:`  **`TargetName`** . Proje adı karakterlerden herhangi birini içeriyorsa, `%`, `$`, `@`, `;`, `.`, `(`, `)`, veya `'`, bunlarla yerine bir `_` belirtilen Hedef adı.
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek yürütür `Rebuild` hedefinin `NotInSlnFolder` proje ve ardından yürütür `Clean` hedefinin `InSolutionFolder` bulunan proje `NewFolder` Çözüm klasörü.  
   
-```  
-msbuild SlnFolders.sln /t:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean  
-```  
-  
+```
+msbuild SlnFolders.sln /target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean`
+```
+
+## <a name="troubleshooting"></a>Sorun giderme
+
+Kullanabileceğiniz seçenekler incelemek isterseniz, bunu yapmak için MSBuild tarafından sağlanan bir hata ayıklama seçeneği kullanabilirsiniz. Ortam değişkeni `MSBUILDEMITSOLUTION=1` ve çözümünüzü oluşturun. Bu adlı bir MSBuild dosya üretecektir `<SolutionName>.sln.metaproj` derleme zamanında MSBuild'ın iç çözüm görünümünü gösterir. Hangi hedefleri oluşturmak kullanılabilir olduğunu belirlemek için bu görünümü inceleyebilirsiniz.
+
+Bu ortam değişkenini iç bu görünüm gerekmedikçe Ayarla derleme değil. Bu ayar, çözümünüzdeki projeler derleme sorunlara neden olabilir.
+
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md)   
  [MSBuild başvurusu](../msbuild/msbuild-reference.md)   

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: f15239ed045185449735ec3b5e0bcdc514fa786d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>.NET geliştiricileri için Visual Studio 2017
 
@@ -40,9 +40,9 @@ Dosya, türü, üye veya sembol bildirimiyle atlayarak .NET kodunuzu hızlı bir
 
 [Belgeler: Yapan yeniden düzenlemeler ve hızlı Eylemler](refactoring-code-generation-quick-actions.md)
 
-Visual Studio hataları ve olası sorunlu kod algılayarak kodunuzun kalitesini arttırma yardımcı olması için dinamik kod tanılama sahiptir. Hızlı Eylemler sağladığımız (**Ctrl +.**) belge, proje veya çözüm algılanan sorunları gidermek için. Etkinleştirme *tam çözüm analizini* olanlar yüklü olmasa bile, tüm çözümünüzü arasında sorunları bulmak için düzenleyicide açık dosya sayısı.
+Visual Studio hataları ve olası sorunlu kod algılayarak kodunuzun kalitesini arttırma yardımcı olması için dinamik kod tanılama sahiptir. Hızlı Eylemler sağladığımız (**Ctrl**+**.**) belge, proje veya çözüm algılanan sorunları gidermek için. Etkinleştirme *tam çözüm analizini* olanlar yüklü olmasa bile, tüm çözümünüzü arasında sorunları bulmak için düzenleyicide açık dosya sayısı.
 
-Ayrıca, en iyi yöntemleri öğrenin, saplama veya kodu, yeniden düzenleme kod oluşturmak için kodu önerileri kullanın ve yeni dil özellikleri ile benimsemeyi **Ctrl +.** Kısayol.
+Ayrıca, en iyi yöntemleri öğrenin, saplama veya kodu, yeniden düzenleme kod oluşturmak için kodu önerileri kullanın ve yeni dil özellikleri ile benimsemeyi **Ctrl**+**.** Kısayol.
 
 ![Hızlı düzeltmeler ve ampul menüsünü kullanarak yapan yeniden düzenlemeler uygulama](../ide/media/VSIDE_Productivity_CodeAnalysis.png "VSIDE_Productivity_CodeAnalysis")
 
@@ -59,7 +59,7 @@ Mstest'i, NUnit ya da .NET Framework, .NET standart veya .NET Core hedefleme her
 - [Belgeler: Taşınabilir özel düzenleyici seçenekleri](create-portable-custom-editor-options.md)
 - [Belgeleri: .NET EditorConfig kod stili ayarları](editorconfig-code-style-settings-reference.md)
 
-Visual Studio kodlama kuralı yapılandırma sağlar, kodlama stili ihlalleri algılar ve stil sorunları gidermek için hızlı düzeltme sağlayan **Ctrl +.** Kısayol. Yapılandırma ve adlandırma, ekibinizin biçimlendirme zorlamak ve kod stil kuralları bir havuz arasında — değerleri proje ve dosya düzeyinde geçersiz kılma izin vererek — kullanarak *EditorConfig*.
+Visual Studio kodlama kuralı yapılandırma sağlar, kodlama stili ihlalleri algılar ve stil sorunları gidermek için hızlı düzeltme sağlayan **Ctrl**+**.** Kısayol. Yapılandırma ve adlandırma, ekibinizin biçimlendirme zorlamak ve kod stil kuralları bir havuz arasında — değerleri proje ve dosya düzeyinde geçersiz kılma izin vererek — kullanarak *EditorConfig*.
 
 ![Yapılandırma ve EditorConfig ile kodlama kurallarını zorunlu](../ide/media/VSIDE_Productivity_CodeStyle.png "VSIDE_Productivity_CodeStyle")
 
@@ -105,7 +105,7 @@ Popüler Visual Studio kısayolları verilmiştir. Bazı uzantılar varsayılan 
 | **F12** (aynı zamanda **Ctrl + Click**) | Tanıma gitme | Bir simge tanımlandığı gidin |
 | **Ctrl+F12** | Uygulamasına gidin | Bir temel tür veya üye, çeşitli uygulamaları gidin |
 | **Shift+F12** | Tüm Başvuruları Bul | Tüm simge veya değişmez değer başvuruları bakın |
-| **Ctrl+.** (Ayrıca **Alt + girin** profilinde C#) | Hızlı Eylemler ve Yeniden Düzenlemeler | Kod oluşturma eylemleri, yapan yeniden düzenlemeler veya diğer hızlı Eylemler imleç konumu veya kod seçimi daha kullanılabilir, hangi kod giderir bakın |
+| **Ctrl**+**.** (Ayrıca **Alt + girin** profilinde C#) | Hızlı Eylemler ve Yeniden Düzenlemeler | Kod oluşturma eylemleri, yapan yeniden düzenlemeler veya diğer hızlı Eylemler imleç konumu veya kod seçimi daha kullanılabilir, hangi kod giderir bakın |
 | **Ctrl**+**E**,**V** | Yinelenen satır | İmlecin kod satırı ile yineleme (kullanılabilir **Visual Studio 2017 sürüm 15,6 Önizleme 2** ve üzeri) |
 | **Ctrl+Q** | Hızlı Başlat | Arama tüm Visual Studio ayarları |
 | **F5** | Hata ayıklama başlatılamıyor | Uygulamanızı hata ayıklamayı Başlat |

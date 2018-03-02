@@ -12,11 +12,11 @@ ms.author: kaseyu
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc380985231937073bff1cb9ce275c38eb70448f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0d3b4a481b56a27f17409d25646cfc235deaacf4
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Eşittir oluşturmak ve Visual Studio'da GetHashCode yöntemi geçersiz kılar
 
@@ -45,7 +45,7 @@ Bu kod oluşturma için geçerlidir:
 1. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
+     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
    - **Fare**
      - Sağ tıklatıp **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
      - ' I tıklatın ![Ampul](media/bulb-cs.png) tür bildirimi ile satırındaki metin imleci ise sol kenar boşluğunda görüntülenen simgesine.
@@ -67,5 +67,5 @@ Bu kod oluşturma için geçerlidir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod Oluşturma](../code-generation-in-visual-studio.md)  
-[Değişiklikleri Önizleme](../../ide/preview-changes.md)
+- [Kod Oluşturma](../code-generation-in-visual-studio.md)
+- [Değişiklikleri Önizleme](../../ide/preview-changes.md)

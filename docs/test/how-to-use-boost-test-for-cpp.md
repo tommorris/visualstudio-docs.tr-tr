@@ -12,11 +12,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2276c65dd0ed0478003c1e4f2c99683eb88b0ac8
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: b91c4dc3cc3bc3550f11bc60c95f1c3ed511cf62
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio'da c++ Boost.Test kullanma
 
@@ -35,18 +35,18 @@ Boost.Test gerektirir [artırma](http://www.boost.org/)! Yüklü artırma yoksa 
 1. Boost.Test dinamik veya statik kitaplık yükleyin:
 
     - Çalıştırma **vcpkg yükleme artırma test** Boost.Test dinamik kitaplığı yüklemek için.
-    
+
        -VEYA-
-       
+
     - Çalıştırma **vcpkg yükleme artırma-test: x 86 windows statik** Boost.Test statik kitaplık yüklemek için.
 
 1. Çalıştırma **vcpkg tümleştirmek yükleme** kitaplığı ile Visual Studio'yu yapılandırma ve ikili dosyaları ve artırma üstbilgiler yollara eklemek için.
 
 ## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>Öğe şablonu (Visual Studio 2017 sürüm 15.6 ve sonrası) Ekle
 
-1. Testleriniz için .cpp dosyası oluşturmak için proje düğümüne sağ tıklayın **Çözüm Gezgini** ve **Yeni Öğe Ekle**. 
- 
-![Boost.Test öğe şablonu](media/boost_test_item_template.png "Boost.Test öğe şablonu")
+1. Testleriniz için .cpp dosyası oluşturmak için proje düğümüne sağ tıklayın **Çözüm Gezgini** ve **Yeni Öğe Ekle**.
+
+   ![Boost.Test öğe şablonu](media/boost_test_item_template.png "Boost.Test öğe şablonu")
 
 1. Yeni bir dosya bir örnek test yöntemi içerir. Etkinleştirmek için projenizi derleme **Test Gezgini** yöntemi bulmak için.
 
@@ -54,14 +54,14 @@ Boost.Test gerektirir [artırma](http://www.boost.org/)! Yüklü artırma yoksa 
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Bir test projesi (Visual Studio 2017 sürüm 15,5) oluşturma
 
-Visual Studio 2017 içinde sürüm 15,5, önceden yapılandırılmış test proje veya öğe şablonları Boost.Test için kullanılabilir. Bu nedenle, oluşturabilir ve testleri tutmak için bir konsol uygulama projesi yapılandırmanız gerekir. 
+Visual Studio 2017 içinde sürüm 15,5, önceden yapılandırılmış test proje veya öğe şablonları Boost.Test için kullanılabilir. Bu nedenle, oluşturabilir ve testleri tutmak için bir konsol uygulama projesi yapılandırmanız gerekir.
 
 1. İçinde **Çözüm Gezgini**çözüm düğümüne sağ tıklayın ve seçin **Ekle** > **yeni proje...** .
 
 1. Sol bölmede seçin **Visual C++** > **Windows Masaüstü**ve ardından **Windows konsol uygulaması** şablonu.
 
 1. Proje bir ad verin ve seçin **Tamam**.
-1. Silme `main` .cpp dosyasına işlevi. 
+1. Silme `main` .cpp dosyasına işlevi.
 
 1. Boost.Test tek üstbilgi veya dinamik kitaplık sürümünü kullanıyorsanız, Git [Ekle içerme yönergeleri](#add_include_directives). Statik kitaplık sürümünü kullanıyorsanız, bazı ek yapılandırma gerçekleştirmeniz gerekir:
 
@@ -126,7 +126,7 @@ BOOST_AUTO_TEST_CASE(my\_boost_test)
 ```
 
 ## <a name="write-and-run-tests"></a>Yazma ve testleri çalıştırma
-Şimdi yazmak ve artırma testleri çalıştırmak hazırsınız. Bkz: [artırma Test kitaplığı belgeleri](http://www.boost.org/doc/libs/1_38_0/libs/test/doc/html/index.html) test makroları hakkında bilgi için. Bkz: [Test Gezgini ile birim testleri çalıştırma](run-unit-tests-with-test-explorer.md) bulmaya çalışan ve kullanarak için testlerinizin gruplandırılması hakkında bilgi için **Test Gezgini**.
+Şimdi yazmak ve artırma testleri çalıştırmak hazırsınız. Bkz: [artırma Test kitaplığı belgeleri](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) test makroları hakkında bilgi için. Bkz: [Test Gezgini ile birim testleri çalıştırma](run-unit-tests-with-test-explorer.md) bulmaya çalışan ve kullanarak için testlerinizin gruplandırılması hakkında bilgi için **Test Gezgini**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)

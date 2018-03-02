@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8de048928286017d4e6f79bda6aff804b49d3150
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4e5da77f3053aabc2e8e4813c8ef5e7fb3407b5f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Visual Studio'da bir alan, özelliği veya yerel değişken oluştur
 
@@ -47,7 +47,7 @@ Bu kod oluşturma için geçerlidir:
 1. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
+     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
    - **Fare**
      - Sağ tıklatıp **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
      - Kırmızı dalgalı getirin ve'ı tıklatın ![Ampul](media/bulb-cs.png) görüntülenen simge.
@@ -72,5 +72,5 @@ Bu kod oluşturma için geçerlidir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod Oluşturma](../code-generation-in-visual-studio.md)  
-[Değişiklikleri Önizleme](../../ide/preview-changes.md)
+- [Kod Oluşturma](../code-generation-in-visual-studio.md)
+- [Değişiklikleri Önizleme](../../ide/preview-changes.md)

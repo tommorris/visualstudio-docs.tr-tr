@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 1da2af4fd9ed552ad9e0232acfb6a7567718b5c6
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 11f0e4908760553331aec88388c76176aa9e0dc5
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>MSBuild ile Paralel Olarak Birden Çok Proje Derleme
 Paralel olarak çalıştırarak daha hızlı birden çok proje oluşturmak için MSBuild kullanabilirsiniz. Derlemeleri paralel olarak çalıştırmak için çok çekirdekli veya birden çok işlemci bilgisayarda aşağıdaki ayarları kullanın:  
@@ -44,11 +44,11 @@ Paralel olarak çalıştırarak daha hızlı birden çok proje oluşturmak için
  Aşağıdaki örnekte, üç alt işlemleri kullanmak için MSBuild bildirir. Bu yapılandırma kullanırsanız, MSBuild aynı anda üç projeleri oluşturabilirsiniz.  
   
 ```  
-msbuild.exe myproj.proj /maxcpucount:3  
+msbuild.exe myproj.proj childid=0 childid=1 childid=2   
 ```  
   
 ## <a name="buildinparallel-task-parameter"></a>BuildInParallel Görev Parametresi  
- `BuildInParallel`İsteğe bağlı bir boolean parametre açıktır bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görev. Zaman `BuildInParallel` ayarlanır `true` (varsayılan değeri olduğu `false`), mümkün olduğunca aynı anda sayıda projeler derlemek için birden çok alt işlemleri oluşturulur. Bunun doğru çalışması `/maxcpucount` anahtar için bir değer 1'den büyük ayarlanmalıdır ve sistem en az çift çekirdekli veya iki veya daha fazla işlemciye sahip olmanız gerekir.  
+ `BuildInParallel` İsteğe bağlı bir boolean parametre açıktır bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görev. Zaman `BuildInParallel` ayarlanır `true` (varsayılan değeri olduğu `false`), mümkün olduğunca aynı anda sayıda projeler derlemek için birden çok alt işlemleri oluşturulur. Bunun doğru çalışması `/maxcpucount` anahtar için bir değer 1'den büyük ayarlanmalıdır ve sistem en az çift çekirdekli veya iki veya daha fazla işlemciye sahip olmanız gerekir.  
   
  Nasıl ayarlanacağı hakkında microsoft.common.targets alınan bir örnek verilmiştir `BuildInParallel` parametresi.  
   

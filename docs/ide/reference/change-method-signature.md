@@ -17,11 +17,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8358e14ccf9570207b3e52a552990fd2a3a80d49
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c181eb27ccdbc2f1efb7294e1610a6055245241c
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="change-a-method-signature-refactoring"></a>Bir yöntem imza yeniden düzenleme değiştirme
 
@@ -53,7 +53,7 @@ Bu yeniden düzenleme için geçerlidir:
 
    - **Klavye**
      - Tuşuna **Ctrl + R**, ardından **Ctrl + V**.  (Bağlı olarak hangi profilinde seçtiğiniz klavye kısayolu farklı olabileceğini unutmayın.)
-     - Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menü ve select **değişiklik imza** gelen önizleme penceresi açılır.
+     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menü ve select **değişiklik imza** gelen önizleme penceresi açılır.
    - **Fare**
      - Seçin **Düzenle > yeniden düzenlemeniz > kaldırmak parametreleri**.
      - Seçin **Düzenle > yeniden düzenlemeniz > parametreleri yeniden Sırala**.
@@ -84,5 +84,5 @@ Bu yeniden düzenleme için geçerlidir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yeniden Düzenleme](../refactoring-in-visual-studio.md)  
-[Değişiklikleri Önizleme](../../ide/preview-changes.md)
+- [Yeniden Düzenleme](../refactoring-in-visual-studio.md)
+- [Değişiklikleri Önizleme](../../ide/preview-changes.md)

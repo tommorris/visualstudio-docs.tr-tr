@@ -4,26 +4,26 @@ ms.custom:
 ms.date: 10/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-unity-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
-caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.workload: unity
-ms.openlocfilehash: 7ede7734ec2a8c261cce3f31e06e77f932edd326
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- unity
+ms.openlocfilehash: e3a763c74022f0960dfa11e30038dae1c97295de
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Sorun Giderme ve Bilinen Sorunlar (Unity için Visual Studio Araçları)
-Bu bölümde, bilinen sorunların açıklamaları Unity için Visual Studio Araçları ile sık karşılaşılan sorunlara çözümler bulmak ve hata bildirimi tarafından Unity için Visual Studio Araçları geliştirmek nasıl yardımcı olabileceğini öğrenin.  
+Bu bölümde, bilinen sorunların açıklamaları Unity için Visual Studio Araçları ile sık karşılaşılan sorunlara çözümler bulmak ve hata bildirimi tarafından Unity için Visual Studio Araçları geliştirmek nasıl yardımcı olabileceğini öğrenin.
 
-## <a name="troubleshooting"></a>Sorun giderme  
-Unity için Visual Studio Araçları ile ilgili bazı yaygın sorunları gidermek için aşağıdaki bölümlere bakın.  
+## <a name="troubleshooting"></a>Sorun giderme
+Unity için Visual Studio Araçları ile ilgili bazı yaygın sorunları gidermek için aşağıdaki bölümlere bakın.
 
 ### <a name="visual-studio-crashes"></a>Visual Studio kilitleniyor
 Bu, Visual Studio MEF önbelleği bozuk nedeniyle olabilir.
@@ -74,90 +74,90 @@ WiFi gecikme nedeniyle USB karşılaştırıldığında Süper yavaş ancak daha
 
 Aşağıdaki çalışabilir bağlı cihazına (yukarı player ve hata ayıklama bağlantı noktası, her zaman formun 56xxx görebilmeniz için çalıştıran) açılan bağlantı noktaları görmek için USB kullanarak:
 
-```shell  
+```shell
 adb shell netstat
-```  
+```
 
 Yerel bilgisayar için bağlantı noktası ilet:
 
-```shell  
+```shell
 adb forward tcp:56xxx tcp:56xxx
-```  
+```
 
 Ardından, VSTU iletilen bağlantı noktası 127.0.0.1:56xxx kullanarak bağlanın.
 
-### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları UnityVS geçirme  
- Unity için Visual Studio Araçları için UnityVS geçiş, Unity projelerinizi yeni Visual Studio çözümleri oluşturmanız gerekir.  
+### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları UnityVS geçirme
+ Unity için Visual Studio Araçları için UnityVS geçiş, Unity projelerinizi yeni Visual Studio çözümleri oluşturmanız gerekir.
 
-##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>Unity projenizi UnityVS 1.8 Visual Studio Araçları için Unity 1.9 geçirmek için  
+##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>Unity projenizi UnityVS 1.8 Visual Studio Araçları için Unity 1.9 geçirmek için
 
-1.  Eski çözüm ve proje dosyalarını Unity projenizden silin. Visual Studio .sln Unity proje kök dizininde bulun ve. * proj dosyaları ve tümünü silin.  
+1.  Eski çözüm ve proje dosyalarını Unity projenizden silin. Visual Studio .sln Unity proje kök dizininde bulun ve. * proj dosyaları ve tümünü silin.
 
-2.  Unity paketini için Visual Studio Araçları Unity projenize alın. VSTU paketini içeri aktarma hakkında daha fazla bilgi için Unity için Visual Studio Araçları yapılandırma bakın [Başlarken](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) sayfası.  
+2.  Unity paketini için Visual Studio Araçları Unity projenize alın. VSTU paketini içeri aktarma hakkında daha fazla bilgi için Unity için Visual Studio Araçları yapılandırma bakın [Başlarken](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) sayfası.
 
-3.  Yeni çözüm ve proje dosyalarını oluşturur. Bunları şimdi, Unity Düzenleyicisi'nde, ana menüdeki oluşturmak istiyorsanız seçin **Visual Studio Araçları**, **proje dosyalarını oluşturmak**. Aksi takdirde istiyorsanız bu adımı atlayabilirsiniz; Unity için Visual Studio Araçları oluşturacağını yeni dosyalar otomatik olarak seçtiğinizde **Visual Studio Araçları**, **Visual Studio'da Aç**.  
+3.  Yeni çözüm ve proje dosyalarını oluşturur. Bunları şimdi, Unity Düzenleyicisi'nde, ana menüdeki oluşturmak istiyorsanız seçin **Visual Studio Araçları**, **proje dosyalarını oluşturmak**. Aksi takdirde istiyorsanız bu adımı atlayabilirsiniz; Unity için Visual Studio Araçları oluşturacağını yeni dosyalar otomatik olarak seçtiğinizde **Visual Studio Araçları**, **Visual Studio'da Aç**.
 
-### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>Windows, Unity hedef Framework'ü indirmek Visual Studio ister.  
- Unity için Visual Studio Araçları varsayılan olarak 10 veya Windows 8 yüklü değilse .net framework 3.5, gerektirir. Bu sorunu gidermek için indirmek ve .net framework 3.5 yüklemek için yönergeleri izleyin.  
+### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>Windows, Unity hedef Framework'ü indirmek Visual Studio ister.
+ Unity için Visual Studio Araçları varsayılan olarak 10 veya Windows 8 yüklü değilse .net framework 3.5, gerektirir. Bu sorunu gidermek için indirmek ve .net framework 3.5 yüklemek için yönergeleri izleyin.
 
-## <a name="known-issues"></a>Bilinen Sorunlar  
- Bilinen sorunlar vardır hata ayıklayıcı Unity'nın eski sürümü C# derleyici ile nasıl etkileşim gelen neden Visual Studio Araçları Unity için. Bu sorunları gidermeye yardımcı olmak için çalışıyoruz ancak bu arada aşağıdaki sorunlarla karşılaşabilirsiniz:  
+## <a name="known-issues"></a>Bilinen Sorunlar
+ Bilinen sorunlar vardır hata ayıklayıcı Unity'nın eski sürümü C# derleyici ile nasıl etkileşim gelen neden Visual Studio Araçları Unity için. Bu sorunları gidermeye yardımcı olmak için çalışıyoruz ancak bu arada aşağıdaki sorunlarla karşılaşabilirsiniz:
 
--   Hata ayıklama sırasında Unity bazen kilitleniyor.  
+-   Hata ayıklama sırasında Unity bazen kilitleniyor.
 
--   Hata ayıklama sırasında Unity bazen donuyor.  
+-   Hata ayıklama sırasında Unity bazen donuyor.
 
--   İçine ve dışına yöntemleri bazen atlama özellikle yineleyiciler veya switch deyimleri içinde yanlış bir şekilde davranır.  
+-   İçine ve dışına yöntemleri bazen atlama özellikle yineleyiciler veya switch deyimleri içinde yanlış bir şekilde davranır.
 
-## <a name="reporting-errors"></a>Hata Raporlama  
- Lütfen kilitlenen, donuyor veya diğer hatalarla karşılaşırsanız, hata raporlarını göndererek Unity için Visual Studio Araçları kalitesini iyileştirmemize yardımcı olun. Bu bize araştırın ve Unity için Visual Studio Araçları sorunları gidermeye yardımcı olur. Teşekkür ederiz!  
+## <a name="reporting-errors"></a>Hata Raporlama
+ Lütfen kilitlenen, donuyor veya diğer hatalarla karşılaşırsanız, hata raporlarını göndererek Unity için Visual Studio Araçları kalitesini iyileştirmemize yardımcı olun. Bu bize araştırın ve Unity için Visual Studio Araçları sorunları gidermeye yardımcı olur. Teşekkür ederiz!
 
-### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Visual Studio donuyor olduğunda bir hata bildirme  
- Visual Studio bazen Unity için Visual Studio Araçları ile hata ayıklama sırasında donuyor rapor vardır, ancak Biz bu sorunu anlamak için daha fazla veri gerekir. Bize aşağıdaki adımları izleyerek araştırmanıza yardımcı olabilir.  
+### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Visual Studio donuyor olduğunda bir hata bildirme
+ Visual Studio bazen Unity için Visual Studio Araçları ile hata ayıklama sırasında donuyor rapor vardır, ancak Biz bu sorunu anlamak için daha fazla veri gerekir. Bize aşağıdaki adımları izleyerek araştırmanıza yardımcı olabilir.
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları ile hata ayıklama sırasında Visual Studio donuyor raporu
 
-*Windows:*  
+*On Windows:*
 
 1.  Visual Studio yeni bir örneğini açın.
 
-2.  Ekleme işlemi iletişim için açın. Visual Studio, yeni bir örneğini ana menüdeki seçin **hata ayıklama**, **ekleme işlemi için**.  
+2.  Ekleme işlemi iletişim için açın. Visual Studio, yeni bir örneğini ana menüdeki seçin **hata ayıklama**, **ekleme işlemi için**.
 
-3.  Hata ayıklayıcısını Visual Studio dondurulmuş örneğine ekleyin. İçinde **ekleme işlemi için** iletişim kutusunda, Visual Studio'dan dondurulmuş örneğini seçin **kullanılabilir işlemler** tablo sonra seçin **Attach** düğmesi.  
+3.  Hata ayıklayıcısını Visual Studio dondurulmuş örneğine ekleyin. İçinde **ekleme işlemi için** iletişim kutusunda, Visual Studio'dan dondurulmuş örneğini seçin **kullanılabilir işlemler** tablo sonra seçin **Attach** düğmesi.
 
-4.  Hata ayıklayıcı duraklatın. Visual Studio, yeni bir örneğini ana menüdeki seçin **hata ayıklama**, **bölün tüm**, veya yalnızca basın **Ctrl + Alt + Break**.  
+4.  Hata ayıklayıcı duraklatın. Visual Studio, yeni bir örneğini ana menüdeki seçin **hata ayıklama**, **bölün tüm**, veya yalnızca basın **Ctrl + Alt + Break**.
 
-5.  İş parçacığı dökümü oluşturun. Komut penceresinde komut enter tuşuna basarak aşağıdaki **Enter**:  
+5.  İş parçacığı dökümü oluşturun. Komut penceresinde komut enter tuşuna basarak aşağıdaki **Enter**:
 
-    ```powershell  
-    Debug.ListCallStack /AllThreads /ShowExternalCode  
-    ```  
+    ```powershell
+    Debug.ListCallStack /AllThreads /ShowExternalCode
+    ```
 
-    Yapmanız gerekebilecek **komutu** pencere görünür ilk. Visual Studio'da ana menüde seçin **Görünüm**, **diğer pencereler**, **komut penceresi**.  
+    Yapmanız gerekebilecek **komutu** pencere görünür ilk. Visual Studio'da ana menüde seçin **Görünüm**, **diğer pencereler**, **komut penceresi**.
 
-*Mac üzerinde:*
+*On Mac:*
 
 1. Bir terminal açın ve Mac için PID, Visual Studio alın:
 
-    ```shell  
+    ```shell
     ps aux | grep "[V]isual Studio.app"
     ```
 
 1. Lldb hata ayıklayıcı başlatın:
 
-    ```shell  
+    ```shell
     lldb
     ```
 
 1. PID kullanarak Mac örneği için Visual Studio ekleyin:
 
-    ```shell  
+    ```shell
     process attach --pid THE_PID_OF_THE_VSFM_PROCESS
     ```
 
 1. Tüm iş parçacıklarının stacktrace Al:
 
-    ```shell  
+    ```shell
     bt all
     ```
 

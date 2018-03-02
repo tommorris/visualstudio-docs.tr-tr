@@ -9,17 +9,18 @@ ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 424072fd91672921c470dbc16e1a9287b1cc575a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f02a03ca314138715b46e098416c7eef49e6d72
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Bulutta TensorFlow modeli eğitmek
 
-Bu öğreticide, bir TensorFlow modelini kullanarak biz eğitmek [MNIST dataset](http://yann.lecun.com/exdb/mnist/) bir Azure [derin öğrenme](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) sanal makine. 
+Bu öğreticide, bir TensorFlow modelini kullanarak biz eğitmek [MNIST dataset](http://yann.lecun.com/exdb/mnist/) bir Azure [derin öğrenme](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) sanal makine.
 
 MNIST veritabanı 60.000 örnekler Eğitim kümesi ve el yazısı basamak 10.000 örnekleri test kümesi vardır.
 
@@ -28,10 +29,10 @@ Başlamadan önce aşağıdaki yüklenmiş ve yapılandırılmış olduğundan e
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Sanal makine öğrenme Azure derin Kurulumu
 
-> [!NOTE] 
+> [!NOTE]
 > Ayarlama **işletim sistemi türü** Linux için.
 
-Derin öğrenme sanal makine ayarlıyor yönergeler bulunabilir [burada](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm). 
+Derin öğrenme sanal makine ayarlıyor yönergeler bulunabilir [burada](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm).
 
 ### <a name="remove-comment-in-parens"></a>Kaldır açıklamada parens
 
@@ -41,13 +42,13 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 ### <a name="download-sample-code"></a>Örnek kodu indirin
 
-Bu karşıdan [GitHub deposunu](https://github.com/Microsoft/samples-for-ai) TensorFlow, CNTK, Theano ve daha fazlasını arasında derin öğrenmeye Başlarken örnekleri içeren. 
+Bu karşıdan [GitHub deposunu](https://github.com/Microsoft/samples-for-ai) TensorFlow, CNTK, Theano ve daha fazlasını arasında derin öğrenmeye Başlarken örnekleri içeren.
 
 ## <a name="open-project"></a>Proje Aç
 
 - Visual Studio'yu başlatın ve seçin **Dosya > Aç > Proje/çözüm**.
 
-- Seçin **Tensorflow örnekler** indirildi ve açık örnekleri depo klasöründen **TensorflowExamples.sln** dosya. 
+- Seçin **Tensorflow örnekler** indirildi ve açık örnekleri depo klasöründen **TensorflowExamples.sln** dosya.
 
 ![Proje Aç](media\tensorflow-local\open-project.png)
 
@@ -55,7 +56,7 @@ Bu karşıdan [GitHub deposunu](https://github.com/Microsoft/samples-for-ai) Ten
 
 ## <a name="add-azure-remote-vm"></a>Azure uzak VM ekleme
 
-Sunucu Gezgini'nde, sağ tıklatın **uzak makineleri** düğümü seçin ve AI araçları düğümü altında "Ekle...". Uzak makine görünen adı, IP ana bilgisayar, SSH bağlantı noktası, kullanıcı adı ve parola/anahtar dosyası girin. 
+Sunucu Gezgini'nde, sağ tıklatın **uzak makineleri** düğümü seçin ve AI araçları düğümü altında "Ekle...". Uzak makine görünen adı, IP ana bilgisayar, SSH bağlantı noktası, kullanıcı adı ve parola/anahtar dosyası girin.
 
 ![Yeni bir uzak makine Ekle](media\tensorflow-vm\add-remote-vm.png)
 
@@ -68,11 +69,11 @@ Gönderme penceresinde:
 
 - Listesinde **kullanmak için küme**, Uzak makinenin seçin (ile "rm:" önekini) işi göndermek için.
 
-- Girin bir **iş adı**. 
+- Girin bir **iş adı**.
 
-- Tıklatın **gönderme**. 
+- Tıklatın **gönderme**.
 
-## <a name="check-status-of-job"></a>İş durumunu denetleme 
+## <a name="check-status-of-job"></a>İş durumunu denetleme
 Durum ve işlerinin ayrıntılarını görmek için: işe içinde gönderdiğiniz sanal makine genişletmek **Sunucu Gezgini**. Çift **işleri**.
 
 ![İş tarayıcı](media\tensorflow-vm\job-browser.png)

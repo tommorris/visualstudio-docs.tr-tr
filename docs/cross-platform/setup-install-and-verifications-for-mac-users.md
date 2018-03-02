@@ -7,16 +7,17 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
-caps.latest.revision: "10"
+ms.technology: vs-ide-mobile
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: b4656e98095b9ab7ff5dd5e95dd729c972190720
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xamarin
+ms.openlocfilehash: 366dd699555cd3eed637687668fc194ba00d5be4
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Kurulum, yükleme ve Doğrulamalar Mac kullanıcıları için
 Bu konu öncelikle Mac üzerinde çalışan ve Visual Studio Mac üzerinde bir Windows sanal makine içinde isteğe bağlı olarak kullanacak geliştiriciler için tasarlanmıştır Öncelikle bir Windows bilgisayarda çalışan bir geliştirici olan ve ikincil Mac iOS hedeflemek için ayarlamanız gerekir, ana bkz [Kurulum ve yükleme](../cross-platform/setup-and-install.md) konu.
@@ -33,7 +34,7 @@ Bu konu öncelikle Mac üzerinde çalışan ve Visual Studio Mac üzerinde bir W
 
  Bu konuda bu gereksinimleri için yönergeler sağlar.  Yükleme işlemi devam ederken konuyu gözden geçirebilirsiniz [mobil geliştirme hakkında bilgi edinin Xamarin ile](../cross-platform/learn-about-mobile-development-with-xamarin.md) okuyup gerekli arka plan malzeme izleyin.
 
-##  <a name="mac"></a>Mac kurulumu (Apple kimliği, Xcode ve Xamarin)
+##  <a name="mac"></a> Mac kurulumu (Apple kimliği, Xcode ve Xamarin)
 
 1.  Boş bir Apple kimliği oluşturma [My Apple kimliği](https://appleid.apple.com/) zaten yoksa. Bu, yükleme ve Xcode imzalamak için gereklidir.
 
@@ -43,7 +44,7 @@ Bu konu öncelikle Mac üzerinde çalışan ve Visual Studio Mac üzerinde bir W
 
 4.  Xamarin Windows ve Mac bilgisayarlara yüklenmesini tamamladıktan sonra yönergelerini izleyin [XMA kullanarak Mac bilgisayara bağlayarak](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com), iOS ve Mac Visual Studio'dan Windows çalışabilmeniz için bilgisayar.
 
-##  <a name="windows"></a>Parallels (Visual Studio ve Xamarin) içinde Windows Kurulumu
+##  <a name="windows"></a> Parallels (Visual Studio ve Xamarin) içinde Windows Kurulumu
 
 1.  Parallels/VMWare içinde yapılandırdığınız Windows Masaüstü'nü kullanarak [indirin ve herhangi bir sürümünü Visual Studio 2017 için yükleyiciyi başlatma](https://www.visualstudio.com/downloads/) (Community, Professional veya Enterprise). Visual Studio 2017 ücretsiz sürüm topluluktur; Professional ve Enterprise sürümleri deneme esaslı 30 gün boyunca kullanılabilir.
 
@@ -65,7 +66,7 @@ Bu konu öncelikle Mac üzerinde çalışan ve Visual Studio Mac üzerinde bir W
 
 6.  Xamarin Windows ve Mac bilgisayarlara yüklenmesini tamamladıktan sonra yönergelerini izleyin [XMA kullanarak Mac bilgisayara bağlayarak](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com) böylece Visual Studio'dan iOS birlikte çalışabilir.
 
-##  <a name="verify"></a>Ortamınızı doğrulayın
+##  <a name="verify"></a> Ortamınızı doğrulayın
  Yükleyicileri tamamladıktan sonra her şeyi Xamarin geliştirme deneyimi için hazır olduğunu doğrulamak için birkaç dakikanızı ayırın.
 
 ### <a name="xamarin-studio"></a>Xamarin Studio

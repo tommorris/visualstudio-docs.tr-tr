@@ -14,11 +14,11 @@ manager: ghogen
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6eac818512b6681307e059131992a9ac0f4534
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: ca33a9dfa2eb4d0eb8250df2d99337ab4d550938
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET EditorConfig için adlandırma kuralları
 
@@ -46,7 +46,7 @@ Adlandırma kuralı uygulamak için simgelerini türünü tanımlamak için bir 
 
 Aşağıdaki liste, izin verilen değerler gösterir ve virgül ile ayırarak birden çok değer belirtebilirsiniz.
 
-- \*(tüm sembolleri belirtmek için bu değeri kullanın)
+- \* (tüm sembolleri belirtmek için bu değeri kullanın)
 - sınıf
 - struct 
 - arabirim
@@ -66,7 +66,7 @@ Erişilebilirlik düzeyleri uygulamak için adlandırma kuralı istediğiniz sim
 
 Aşağıdaki liste, izin verilen değerler gösterir ve virgül ile ayırarak birden çok değer belirtebilirsiniz.
 
-- \*(tüm erişilebilirlik düzeyleri belirtmek için bu değeri kullanın)
+- \* (tüm erişilebilirlik düzeyleri belirtmek için bu değeri kullanın)
 - public
 - iç veya arkadaş
 - private
@@ -90,7 +90,7 @@ Aşağıdaki liste, izin verilen değerler gösterir ve virgül ile ayırarak bi
 - readonly
 - statik veya paylaşılan
 
-`required_modifiers`İsteğe bağlı bir özelliktir. Bu özelliği atarsanız, adlandırma kuralınızın tüm değiştiricileri uygulanır.
+`required_modifiers` İsteğe bağlı bir özelliktir. Bu özelliği atarsanız, adlandırma kuralınızın tüm değiştiricileri uygulanır.
 
 ## <a name="style"></a>Stil
 
@@ -187,5 +187,6 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET dil ve kuralları biçimlendirme](../ide/editorconfig-code-style-settings-reference.md)  
-[Taşınabilir özel düzenleyici seçenekleri oluşturma](../ide/create-portable-custom-editor-options.md)
+- [.NET dil ve kuralları biçimlendirme](../ide/editorconfig-code-style-settings-reference.md)
+- [Taşınabilir özel düzenleyici seçenekleri oluşturma](../ide/create-portable-custom-editor-options.md)
+- [.NET derleme platformun .editorconfig dosyası](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

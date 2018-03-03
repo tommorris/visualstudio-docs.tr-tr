@@ -13,11 +13,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c408473207075f1c20935b3bbd985012230dc094
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 40356c5d80ee8572b4e5a6e468b9abf2919524de
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Değişiklik günlüğü (Unity için Visual Studio Araçları)
 Unity için Visual Studio Araçları günlük değiştirin.
@@ -25,9 +25,9 @@ Unity için Visual Studio Araçları günlük değiştirin.
 ## <a name="3503"></a>3.5.0.3
  Yayımlanan 2018-01-09
 
-### <a name="bug-fixes"></a>Hata düzeltmeleri  
+### <a name="bug-fixes"></a>Hata düzeltmeleri
 
--   **Tümleştirme:**  
+-   **Tümleştirme:**
 
     -   Mdb hata ayıklama simgesi dönüştürme sabit otomatik pdb.
 

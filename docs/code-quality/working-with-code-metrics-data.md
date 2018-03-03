@@ -1,5 +1,5 @@
 ---
-title: "Kod ölçümleri sonuçları Visual Studio'da | Microsoft Docs"
+title: "Visual Studio'da kod ölçümleri sonuçları penceresi | Microsoft Docs"
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
@@ -19,13 +19,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772533e74b214d48583e5d2dc1d64278416933df
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="working-with-code-metrics-data"></a>Kod ölçüm verileri ile çalışma
+# <a name="using-the-code-metrics-results-window"></a>Kod ölçümleri sonuçları penceresi kullanma
 
 **Kod ölçümleri sonuçları** penceresi kod ölçümleri analiz tarafından oluşturulan veri görüntüler. Kod ölçüm verileri değerleri hakkında daha fazla bilgi için bkz: [kod ölçüm değerleri](../code-quality/code-metrics-values.md).
 
@@ -37,11 +37,11 @@ ms.lasthandoff: 12/22/2017
 
 - Üzerinde **Çözümle** menüsünde seçin **Windows** > **kod ölçümleri sonuçları**.
 
-   \-veya -
+   \- veya -
 
 - Üzerinde **Görünüm** menüsünde seçin **diğer pencereler** > **kod ölçümleri sonuçları**.
 
-   **Kod ölçümleri sonuçları** penceresi görüntülenir, hiçbir sonuç içerse bile.
+**Kod ölçümleri sonuçları** penceresi görüntülenir, hiçbir sonuç içerse bile.
 
 ### <a name="to-view-code-metrics-details"></a>Kod ölçümleri ayrıntılarını görüntülemek için
 
@@ -73,7 +73,7 @@ Ekleyebileceğiniz veya Kaldır sonuçları sütunlarından **kod ölçümleri s
 
 1. Tıklatın **Sütun Ekle/Kaldır** düğmesi.
 
-     \-veya - herhangi bir sütun başlığını sağ tıklatın ve ardından **Sütun Ekle/Kaldır**.
+     \- veya - herhangi bir sütun başlığını sağ tıklatın ve ardından **Sütun Ekle/Kaldır**.
 
 1. İçinde **Sütun Ekle/Kaldır** iletişim kutusu, onay kutusunu temizleyerek sütunu için kaldırın ve ardından istediğiniz **Tamam**.
 
@@ -81,7 +81,7 @@ Ekleyebileceğiniz veya Kaldır sonuçları sütunlarından **kod ölçümleri s
 
 1. Tıklatın **Sütun Ekle/Kaldır** düğmesi.
 
-     \-veya -
+     \- veya -
 
      Herhangi bir sütun başlığını sağ tıklatın ve ardından **Sütun Ekle/Kaldır**.
 
@@ -91,7 +91,7 @@ Ekleyebileceğiniz veya Kaldır sonuçları sütunlarından **kod ölçümleri s
 
 1. Tıklatın **Sütun Ekle/Kaldır** düğmesi.
 
-     \-veya -
+     \- veya -
 
      Herhangi bir sütun başlığını sağ tıklatın ve ardından **Sütun Ekle/Kaldır**.
 
@@ -131,5 +131,5 @@ VSTS hakkında daha fazla bilgi için iş öğelerini, bkz: [iş öğeleri (VSTS
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod ölçüm değerleri](../code-quality/code-metrics-values.md)  
-[Nasıl yapılır: Kod Ölçümleri Verileri Üretme](../code-quality/how-to-generate-code-metrics-data.md)
+- [Kod ölçüm değerleri](../code-quality/code-metrics-values.md)
+- [Nasıl yapılır: kod ölçümleri verileri üretme](../code-quality/how-to-generate-code-metrics-data.md)

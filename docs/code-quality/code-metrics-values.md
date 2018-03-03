@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: dc9a688892ca7ec08a89c4da8e1732b5e2b3e267
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 553ed7d6a6fcc2edef436251d720919fe399653a
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="code-metrics-values"></a>Kod ölçüm değerleri
 
@@ -26,9 +26,11 @@ Modern yazılım uygulamaları artan karmaşıklık kodu güvenilir ve korunabil
 
 Geliştiriciler Visual Studio karmaşıklığı ve bunların yönetilen kod bakımı ölçmek kod ölçümleri verileri üretme için kullanabilirsiniz. Kod ölçümleri verileri çözümün tamamında veya tek bir proje için oluşturulabilir.
 
+Visual Studio'da kod ölçümleri verileri üretme hakkında daha fazla bilgi için bkz: [nasıl yapılır: kod ölçümleri verileri üretme](../code-quality/how-to-generate-code-metrics-data.md).
+
 ## <a name="software-measurements"></a>Yazılım ölçümleri
 
-Kod ölçümleri sonuçları aşağıdaki listede gösterir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hesaplar:
+Aşağıdaki listede kod Visual Studio hesaplar ölçümleri sonuçları gösterir:
 
 - **Bakım dizin** -kodunu sürdürme göreli kolaylığını temsil eden bir dizin değeri 0 ile 100 arasında hesaplar. Yüksek bir değer daha iyi bakım anlamına gelir. Renk kodlu derecelendirmeleri, hızlı bir şekilde kodunuzda sorunlu noktaları tanımlamak için kullanılabilir. Yeşil bir derecelendirme 20 ile 100 arasındadır ve kod iyi bakım sahip olduğunu gösterir. Sarı bir derecelendirme 10 ve 19 arasında ve kodu oldukça sürdürülebilir olduğunu gösterir. Kırmızı bir derecelendirme 0 ile 9 arasında bir derecelendirme ve düşük bakım gösterir.
 
@@ -51,3 +53,8 @@ Kod ölçümleri anonim yöntemler nasıl işler hakkında daha fazla bilgi içi
 Bazı yazılım araçları ve derleyicileri projeye eklendi ve proje Geliştirici görmezsiniz veya değil değiştirmelisiniz kod oluşturur. Çoğunlukla, ölçüm değerleri hesaplarken kod ölçümleri oluşturulan kod yok sayar. Bu ne Geliştirici bakın ve değiştirebileceğini yansıtmak üzere ölçümleri değerleri sağlar.
 
 Geliştirici bakın ve değiştirebileceğini kodu olduğundan Windows Forms için oluşturulan kod, göz ardı edilir değil.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+- [Nasıl yapılır: kod ölçümleri verileri üretme](../code-quality/how-to-generate-code-metrics-data.md)
+- [Kod ölçümleri sonuçları penceresi kullanın](../code-quality/working-with-code-metrics-data.md)

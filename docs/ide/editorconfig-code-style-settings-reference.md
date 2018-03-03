@@ -1,10 +1,6 @@
 ---
-title: ".NET EditorConfig kuralı ayarlarını kodlama | Microsoft Docs"
-ms.custom: 
-ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+title: "Kural ayarları için Visual Studio EditorConfig kodlama .NET | Microsoft Docs"
+ms.date: 02/28/2018
 ms.topic: article
 dev_langs:
 - CSharp
@@ -21,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 76b7ed58713f61882130c48d808012dc35055f55
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: ac6c9e79e659a7f7d152541bc5a2d7deea694086
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET EditorConfig kuralı ayarlarını kodlama
 
@@ -1547,7 +1543,7 @@ MyMethod( argument );
 MyMethod(argument);
 ```
 
-**csharp_space_between_parentheses**
+csharp_space_between_parentheses
 
 Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:
 
@@ -1622,7 +1618,7 @@ public int Foo { get; set; }
 
 //csharp_preserve_single_line_blocks = false
 public int MyProperty
-{ 
+{
     get; set;
 }
 ```
@@ -1638,7 +1634,7 @@ csharp_preserve_single_line_blocks = true
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hızlı Eylemler](../ide/quick-actions.md)  
-[.NET EditorConfig için adlandırma kuralları](../ide/editorconfig-naming-conventions.md)  
-[Taşınabilir özel düzenleyici seçenekleri oluşturma](../ide/create-portable-custom-editor-options.md)  
-[.NET derleme platformun .editorconfig dosyası](https://github.com/dotnet/roslyn/blob/master/.editorconfig)  
+- [Hızlı Eylemler](../ide/quick-actions.md)
+- [.NET EditorConfig için adlandırma kuralları](../ide/editorconfig-naming-conventions.md)
+- [Taşınabilir özel düzenleyici seçenekleri oluşturma](../ide/create-portable-custom-editor-options.md)
+- [.NET derleme platformun .editorconfig dosyası](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

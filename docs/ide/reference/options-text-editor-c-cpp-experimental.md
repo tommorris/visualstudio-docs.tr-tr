@@ -10,17 +10,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology: vs-ide-general
-ms.workload: cplusplus
-ms.openlocfilehash: e7b9d0ef40fd0efc4bbf071ef5da75b13e8dd82a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-general
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 38f6dfc375e776e4ad471fa8075b755dc3c31998
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="options-text-editor-cc-experimental"></a>Seçenekler, metin düzenleyici, C/C++, Deneysel
 
@@ -33,7 +35,7 @@ Bu özellikler, Visual Studio 2017 yüklemesinde kullanılabilir.
 > [!NOTE]
 > Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="enable-predictive-intellisense"></a>Tahmine dayalı IntelliSense'i etkinleştirme
+## <a name="enable-predictive-intellisense"></a>Enable Predictive IntelliSense
 
 Tahmine dayalı IntelliSense bağlam için uygun olan sonuçları görebilmesi için IntelliSense açılır listede gösterilen sonuçları sayısını sınırlar. Örneğin, <code>int x =</code> ve IntelliSense açılır çağırma, yalnızca tamsayı veya tamsayı döndüren işlevler görürsünüz. Tahmine dayalı IntelliSense varsayılan olarak kapalıdır.
 
@@ -58,5 +60,5 @@ Ek metin düzenleyicisi özelliklerinde göz atabilirsiniz [Visual Studio Market
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dile Özgü Düzenleyici Seçeneklerini Ayarlama](../../ide/reference/setting-language-specific-editor-options.md)  
-[C++ (VC Blog) yeniden düzenleme](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [Dile Özgü Düzenleyici Seçeneklerini Ayarlama](../../ide/reference/setting-language-specific-editor-options.md)
+- [C++ (VC Blog) yeniden düzenleme](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)

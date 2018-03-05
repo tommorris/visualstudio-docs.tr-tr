@@ -33,6 +33,8 @@
 #### [Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme](install/controlling-updates-to-visual-studio-deployments.md)
 ### Yüklemeleri yönetme
 #### [Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar](install/tools-for-managing-visual-studio-instances.md)
+### Abonelikleri yönetme
+#### [Visual Studio abonelikleri: Yönetici genel bakışı](/visualstudio/subscriptions/admin-responsibilities) 
 ### [Yardım Görüntüleyicisi Yönetici Kılavuzu](ide/help-viewer-administrator-guide.md)
 #### [Yardım İçeriği Yöneticisi İçin Komut Satırı Bağımsız Değişkenleri](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Yardım İçerik Yöneticisi Geçersiz Kılmaları](ide/help-content-manager-overrides.md)

@@ -20,14 +20,14 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9d0a098418399dba19b77a12c057a3fba334e31
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3068a609da2468c59066ccd38f6de87cef1ed17
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="operators-javascript"></a>İşleçler (JavaScript)
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)]eksiksiz bir aritmetik, mantıksal, bit düzeyinde işleçler, atama yanı sıra, bazı çeşitli işleçler sahiptir. Açıklamalar ve örnekler için belirli işleçlerini konulara bakın.  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] eksiksiz bir aritmetik, mantıksal, bit düzeyinde işleçler, atama yanı sıra, bazı çeşitli işleçler sahiptir. Açıklamalar ve örnekler için belirli işleçlerini konulara bakın.  
   
 ## <a name="computational-operators"></a>Hesaplama İşleçleri  
   
@@ -37,8 +37,8 @@ ms.lasthandoff: 10/27/2017
 |[Artırma](../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
 |[Azaltma](../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Çarpma](../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
-|[Bölme](../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Modulus aritmetik](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[bölme](../javascript/reference/division-operator-decrement-javascript.md)|/|  
+|[Kalan aritmetik](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Toplama](../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Çıkarma](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   
@@ -83,12 +83,12 @@ ms.lasthandoff: 10/27/2017
   
 |Açıklama|Simgesi|  
 |-----------------|------------|  
-|[Sil](../javascript/reference/delete-operator-decrementjavascript.md)|Sil|  
+|[delete](../javascript/reference/delete-operator-decrementjavascript.md)|Sil|  
 |[typeof](../javascript/reference/typeof-operator-decrementjavascript.md)|typeof|  
 |[void](../javascript/reference/void-operator-decrementjavascript.md)|void|  
 |[instanceof](../javascript/reference/instanceof-operator-decrementjavascript.md)|instanceof|  
-|[Yeni](../javascript/reference/new-operator-decrementjavascript.md)|new|  
-|[içinde](../javascript/reference/in-operator-decrementjavascript.md)|içinde|  
+|[new](../javascript/reference/new-operator-decrementjavascript.md)|new|  
+|[in](../javascript/reference/in-operator-decrementjavascript.md)|içinde|  
   
 ## <a name="equality-and-strict-equality"></a>Eşitlik ve Katı Eşitlik  
  Fark arasında (eşitlik) == ve === (katı eşitlik) olan eşitlik için denetlemeden önce farklı türlerde değerler eşitlik işleci coerce emin. Örneğin, 1 numaralı "1" dize karşılaştırma doğru olarak karşılaştırır. Katı eşitlik işleci diğer yandan, farklı değerlere coerce değil ve bu nedenle "1" dizesini 1 sayısına eşit olarak karşılaştırır değil.  

@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bd8f389efcde93d9a618fbbac272b0f0b2cf5c75
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 9b7b9ad17c4d0c16066b9c10e3cc5b51f152c9dc
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Hatalı Davranan Çok İş Parçacıklı Uygulamalar için Ortak Desenler
 
@@ -65,7 +65,7 @@ Bu sorunu değerlendirirken aşağıdakileri dikkate alın:
 
 ![Verimsiz &#47; O](../profiling/media/inefficient_io.png "Inefficient_IO")
 
-Aşırı kullanımı ya da g/ç kötüye kullanılması verimsiz uygulamalarında yaygın bir nedenidir. Önceki çizimde göz önünde bulundurun. Görünür zaman çizelgesi profili görünür iş parçacığı zaman 42 yüzdesi g/ç tarafından tüketilmesi gösterir. Zaman Çizelgesi profili uygulama sık sık g/ç tarafından engellendiğini gösterir g/ç, büyük miktarlarda gösterir. G/ç ve burada programınızı engellendi türleri hakkındaki ayrıntıları görmek için sorunlu bölgelere yakınlaştırma, görünür zaman çizelgesi profili inceleyin ve geçerli çağrı yığınları görmek için belirli bir g/ç blok'ye tıklayın.
+Aşırı kullanımı ya da g/ç kötüye kullanılması verimsiz uygulamalarında yaygın bir nedenidir. Önceki çizimde göz önünde bulundurun. Görünür zaman çizelgesi profili görünür iş parçacığı zaman 44 yüzdesi g/ç tarafından tüketilmesi gösterir. Zaman Çizelgesi profili uygulama sık sık g/ç tarafından engellendiğini gösterir g/ç, büyük miktarlarda gösterir. G/ç ve burada programınızı engellendi türleri hakkındaki ayrıntıları görmek için sorunlu bölgelere yakınlaştırma, görünür zaman çizelgesi profili inceleyin ve geçerli çağrı yığınları görmek için belirli bir g/ç blok'ye tıklayın.
 
 ## <a name="lock-convoys"></a>Kilit Konvoyları
 

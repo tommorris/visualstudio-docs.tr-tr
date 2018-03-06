@@ -18,11 +18,11 @@ caps.latest.revision:
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 1771556be69a70c15e2dd4b889c377cea6c2fdc7
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 5b13f01a1a5ba13503932c73aef3a4825115497e
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 JavaScript'te
 
@@ -147,7 +147,7 @@ Bu nedenle, daha büyük miktar ve dosyaların boyutunu proje içeriğiniz, daha
 Bu nedenle, projeyi şekliniz hakkında yapılan birkaç varsayılan varsayımlar vardır:
 
 - `package.json` ve `bower.json` varsayılan ve projeniz tarafından kullanılan liste bağımlılıkları otomatik türü edinme (ATA) dahil
-- Bir üst düzey `node_modules` klasörü kitaplık kaynak kodunu içerir ve içeriğini varsayılan proje bağlamdan edilmez
+- Üst düzey `node_modules` klasörü kitaplık kaynak kodunu içerir ve içeriğini varsayılan proje bağlamdan edilmez
 - Tüm diğer `.js`, `.jsx`, `.ts`, ve `.tsx` dosya biridir büyük olasılıkla *kendi* kaynak dosyaları ve proje bağlamında eklenmelidir
 
 Çoğu durumda, yalnızca projenizi açın ve varsayılan proje Yapılandırması'nı kullanarak harika deneyim sahibi mümkün olacaktır. Ancak, büyük veya farklı bir klasör yapıları projelerinde daha iyi odaklanmak dil hizmeti yalnızca kendi kaynak dosyaları üzerinde daha fazla yapılandırmak için tercih edilebilir.

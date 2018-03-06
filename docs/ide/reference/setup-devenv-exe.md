@@ -1,10 +1,10 @@
 ---
 title: "Devenv.exe kurulum anahtarını | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,11 +14,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93f03de74540d130d66ce123b355691e0828b93e
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: e37fe50eefc36e7b5396f396d2b614851a0bd9cb
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```shell
 devenv /setup
 ```
 
@@ -34,13 +34,14 @@ devenv /setup
 
 Bu anahtar hiçbir bağımsız değişkenleri alır. `devenv /setup` Komutu genellikle yükleme işleminin son adımı verilir. Kullanımı `/setup` anahtar Visual Studio başlatılmaz.
 
-Çalıştırmalısınız `devenv` kullanmak için yönetici olarak [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) ve [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) anahtarları.
+> [!NOTE]
+> Çalıştırmalısınız `devenv` kullanmak için yönetici olarak `/setup` geçin.
 
 ## <a name="example"></a>Örnek
 
 Bu örnek son adımı VSPackages içeren Visual Studio sürümünü yüklemeyi gösterir.
 
-```
+```shell
 devenv /setup
 ```
 

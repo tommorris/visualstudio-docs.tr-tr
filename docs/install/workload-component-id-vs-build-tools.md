@@ -5,21 +5,23 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 12/01/2017
+ms.date: 03/05/2018
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
-ms.workload: multiple
-ms.openlocfilehash: 4b41304a893dbee45b7de08edb9a37e07ef8656d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: dba4c71320f00e4e35bc7c8d115aa342eac23de3
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio derleme araçları 2017 bileşen dizini
 
@@ -43,10 +45,10 @@ Bu kimlikleri kullanma hakkında daha fazla bilgi için bkz: [Visual Studio 2017
 
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Gerekli
-Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Araçları çekirdek derleme | 15.0.27005.2 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 15.0.27019.1 | Gerekli
-Microsoft.VisualStudio.Component.FSharp.MSBuild | F# derleyici | 15.0.27019.1 | İsteğe Bağlı
+Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Gerekli
+Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Araçları çekirdek derleme | 15.6.27309.0 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 15.6.27309.0 | Gerekli
+Microsoft.VisualStudio.Component.FSharp.MSBuild | F# derleyici | 15.6.27406.0 | İsteğe Bağlı
 
 ## <a name="net-core-build-tools"></a>.NET core derleme araçları
 
@@ -58,50 +60,64 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# derleyici | 15.0.27019.1 | 
 
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
-Microsoft.Net.Core.Component.SDK | .NET core 1.0 1.1 geliştirme araçları | 15.0.26606.0 | Gerekli
+Microsoft.Net.Core.Component.SDK | .NET core 2.0 geliştirme araçları | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.0.26919.1 | Gerekli
-Microsoft.Net.Core.Component.SDK.1x | .NET core Masaüstü için 1.0 1.1 geliştirme araçları | 15.0.26919.1 | İsteğe Bağlı
+Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0 1.1 geliştirme araçları | 15.6.27406.0 | İsteğe Bağlı
 
-## <a name="visual-c-build-tools"></a>Visual C++ derleme araçları
+## <a name="nodejs-build-tools"></a>Node.js derleme araçları
 
-**Kimliği:** Microsoft.VisualStudio.Workload.VCTools
+**Kimliği:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**Açıklama:** yapı güç Visual C++ araç takımı, ATL ve MFC ve C + gibi isteğe bağlı özellikleri kullanarak Klasik Windows tabanlı uygulamalar +/ CLI.
+**Açıklama:** yapı Node.js, bir zaman uyumsuz olay denetimli JavaScript çalışma zamanı kullanarak Ölçeklenebilir Ağ uygulamaları. 
 
 ### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
 
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.VC.CoreBuildTools | Visual C++ derleme araçları çekirdek Özellikler | 15.0.27005.2 | Gerekli
-Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Visual C++ 2017 yeniden dağıtılabilir güncelleştirme | 15.0.27019.1 | Gerekli
-Microsoft.VisualStudio.Component.Windows10SDK | Windows Evrensel C çalışma zamanı | 15.0.26621.2 | Gerekli
+Microsoft.VisualStudio.Component.Node.Build | Node.js desteği | 15.6.27406.0 | Gerekli
+
+## <a name="visual-c-build-tools"></a>Visual C++ derleme araçları
+
+**Kimliği:** Microsoft.VisualStudio.Workload.VCTools
+
+**Açıklama:** Microsoft C++ araç takımı, ATL ve MFC kullanarak Windows Masaüstü uygulamaları oluşturun.
+
+### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
+
+Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
+--- | --- | --- | ---
+Microsoft.VisualStudio.Component.VC.CoreBuildTools | Visual C++ derleme araçları çekirdek Özellikler | 15.6.27406.0 | Gerekli
+Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Visual C++ 2017 yeniden dağıtılabilir güncelleştirme | 15.6.27406.0 | Gerekli
+Microsoft.VisualStudio.Component.Windows10SDK | Windows Evrensel C çalışma zamanı | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Önerilen
-Microsoft.VisualStudio.Component.VC.CMake.Project | CMake için Visual C++ Araçları | 15.0.27019.1 | Önerilen
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 v141 araç takımı (x86, x64) | 15.0.27019.1 | Önerilen
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 Masaüstü C++ [x86 hem x64] için SDK (10.0.16299.0) | 15.0.27128.1 | Önerilen
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 için SDK'sı (10.0.16299.0) UWP: C#, VB, JS | 15.0.27128.1 | Önerilen
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 için SDK'sı (10.0.16299.0) UWP: C++ | 15.0.27128.1 | Önerilen
+Microsoft.VisualStudio.Component.VC.CMake.Project | CMake için Visual C++ Araçları | 15.6.27406.0 | Önerilen
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 v141 araç takımı (x86, x64) | 15.6.27406.0 | Önerilen
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 Masaüstü C++ [x86 hem x64] için SDK (10.0.16299.0) | 15.6.27406.0 | Önerilen
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 için SDK'sı (10.0.16299.0) UWP: C#, VB, JS | 15.6.27406.0 | Önerilen
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 için SDK'sı (10.0.16299.0) UWP: C++ | 15.6.27406.0 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.0.27005.2 | Önerilen
-Microsoft.Component.VC.Runtime.UCRTSDK | Windows Evrensel CRT SDK'sı | 15.0.27019.1 | İsteğe Bağlı
-Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.0.26621.2 | İsteğe Bağlı
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.0.26621.2 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.140 | VC ++ 2015.3 v140 araç takımı Masaüstü (x86, x64) | 15.0.27019.1 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.ATL | Visual C++ ATL desteği | 15.0.26823.1 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.ATLMFC | MFC ve ATL desteği (x86 hem x64) | 15.0.27005.2 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.ClangC2 | Clang/C2 (Deneysel) | 15.0.27019.1 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI desteği | 15.0.27019.1 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Standart Kitaplığı (Deneysel) modülleri | 15.0.27019.1 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Visual C++ Derleyicileri ve ARM için kitaplıkları | 15.0.27019.1 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Visual C++ Derleyicileri ve ARM64 için kitaplıkları | 15.0.27019.1 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK'sı (10.0.10240.0) | 15.0.26208.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK'sı (10.0.10586.0) | 15.0.26208.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK'sı (10.0.14393.0) | 15.0.26208.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Windows 10 Masaüstü C++ [x86 hem x64] için SDK (10.0.15063.0) | 15.0.27128.1 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Windows 10 için SDK'sı (10.0.15063.0) UWP: C#, VB, JS | 15.0.27128.1 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Windows 10 için SDK'sı (10.0.15063.0) UWP: C++ | 15.0.27128.1 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 Masaüstü C++ [ARM ve ARM64] için SDK (10.0.16299.0) | 15.0.27128.1 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.0.26208.0 | İsteğe Bağlı
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK'sı ve UCRT SDK'sı | 15.0.27019.1 | İsteğe Bağlı
+Microsoft.Component.VC.Runtime.UCRTSDK | Windows Evrensel CRT SDK'sı | 15.6.27309.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.140 | VC ++ 2015.3 v140 araç takımı Masaüstü (x86, x64) | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.ATL | Visual C++ ATL desteği | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.ATLMFC | MFC ve ATL desteği (x86 hem x64) | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.ClangC2 | Clang/C2 (Deneysel) | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI desteği | 15.6.27309.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Standart Kitaplığı (Deneysel) modülleri | 15.6.27309.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Visual C++ Derleyicileri ve ARM için kitaplıkları | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Visual C++ Derleyicileri ve ARM64 için kitaplıkları | 15.6.27309.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK'sı (10.0.10240.0) | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK'sı (10.0.10586.0) | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Windows 10 Masaüstü C++ [x86 hem x64] için SDK (10.0.15063.0) | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Windows 10 için SDK'sı (10.0.15063.0) UWP: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Windows 10 için SDK'sı (10.0.15063.0) UWP: C++ | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 Masaüstü C++ [ARM ve ARM64] için SDK (10.0.16299.0) | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.WinXP | C++ için Windows XP desteği | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK'sı ve UCRT SDK'sı | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | C++ için Windows XP desteği | 15.6.27406.0 | İsteğe Bağlı
 
 ## <a name="web-development-build-tools"></a>Web geliştirme derleme araçları
 
@@ -113,29 +129,31 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK'sı 
 
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
-Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.0.26621.2 | Gerekli
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.0.26621.2 | Gerekli
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.0.27005.2 | Gerekli
-Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | WCF geliştirme derleme araçları | 15.0.27019.1 | Gerekli
-Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Web geliştirme derleme araçları | 15.0.26323.1 | Gerekli
-Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 hedefleme paketi | 15.0.26621.2 | Önerilen
-Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 hedefleme paketi | 15.0.26621.2 | Önerilen
-Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 paketi hedefleme | 15.0.26621.2 | Önerilen
-Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 paketi hedefleme | 15.0.26621.2 | Önerilen
-Microsoft.Net.Component.4.TargetingPack | .NET framework 4 paketi hedefleme | 15.0.26621.2 | Önerilen
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4 – 4.6 geliştirme araçları | 15.0.26606.0 | Önerilen
-Microsoft.Net.Core.Component.SDK | .NET core 1.0 1.1 geliştirme araçları | 15.0.26606.0 | Önerilen
+Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | Gerekli
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.6.27406.0 | Gerekli
+Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | WCF geliştirme derleme araçları | 15.6.27309.0 | Gerekli
+Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Web geliştirme derleme araçları | 15.6.27406.0 | Gerekli
+Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 hedefleme paketi | 15.6.27406.0 | Önerilen
+Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 hedefleme paketi | 15.6.27406.0 | Önerilen
+Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 paketi hedefleme | 15.6.27406.0 | Önerilen
+Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 paketi hedefleme | 15.6.27406.0 | Önerilen
+Microsoft.Net.Component.4.TargetingPack | .NET framework 4 paketi hedefleme | 15.6.27406.0 | Önerilen
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4 – 4.6 geliştirme araçları | 15.6.27406.0 | Önerilen
+Microsoft.Net.Core.Component.SDK | .NET core 2.0 geliştirme araçları | 15.6.27406.0 | Önerilen
+Microsoft.VisualStudio.Component.AspNet45 | Gelişmiş ASP.NET özellikleri | 15.6.27428.1 | Önerilen
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 15.0.26919.1 | Önerilen
-Microsoft.Net.Component.3.5.DeveloperTools | .NET framework 3.5 geliştirme araçları | 15.0.26621.2 | İsteğe Bağlı
-Microsoft.Net.Component.4.6.2.SDK | .NET framework 4.6.2 SDK | 15.0.26208.0 | İsteğe Bağlı
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET framework 4.6.2 hedefleme paketi | 15.0.26208.0 | İsteğe Bağlı
-Microsoft.Net.Component.4.7.1.SDK | .NET framework 4.7.1 SDK | 15.0.27128.1 | İsteğe Bağlı
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET framework 4.7.1 hedefleme paketi | 15.0.27019.1 | İsteğe Bağlı
-Microsoft.Net.Component.4.7.SDK | .NET framework 4.7 SDK | 15.0.26419.1 | İsteğe Bağlı
-Microsoft.Net.Component.4.7.TargetingPack | .NET framework 4.7 paketi hedefleme | 15.0.26621.2 | İsteğe Bağlı
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET framework 4.6.2 geliştirme araçları | 15.0.26621.2 | İsteğe Bağlı
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET framework 4.7.1 geliştirme araçları | 15.0.27019.1 | İsteğe Bağlı
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET framework 4.7 geliştirme araçları | 15.0.27005.2 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.TypeScript.2.6 | TypeScript 2.6 SDK | 15.0.27406.0 | Önerilen
+Microsoft.Net.Component.3.5.DeveloperTools | .NET framework 3.5 geliştirme araçları | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.6.2.SDK | .NET framework 4.6.2 SDK | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET framework 4.6.2 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET framework 4.7.1 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.7.SDK | .NET framework 4.7 SDK | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.7.TargetingPack | .NET framework 4.7 paketi hedefleme | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET framework 4.6.2 geliştirme araçları | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET framework 4.7.1 geliştirme araçları | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET framework 4.7 geliştirme araçları | 15.6.27406.0 | İsteğe Bağlı
 
 ## <a name="unaffiliated-components"></a>Unaffiliated bileşenleri
 
@@ -143,7 +161,13 @@ Bu, herhangi bir iş yükü ile dahil değildir, ancak ayrı bir bileşen olarak
 
 Bileşen kimliği | Ad | Sürüm
 --- | --- | ---
-Microsoft.VisualStudio.Component.VC.Tools.14.11 | VC ++ 2017 sürüm 15.4 v14.11 araç takımı | 15.0.27128.1
+Microsoft.VisualStudio.Component.TypeScript.2.0 | TypeScript 2.0 SDK'sı | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.1 | TypeScript 2.1 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.2 | TypeScript 2.2 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.3 | TypeScript 2.3 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.5 | TypeScript 2.5 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.VC.Tools.14.11 | VC ++ 2017 sürüm 15.4 v14.11 araç takımı | 15.0.27406.0
+Microsoft.VisualStudio.Component.VC.Tools.14.12 | VC ++ 2017 sürüm 15,5 v14.12 araç takımı | 15.0.27406.0
 
 ## <a name="get-support"></a>Destek alma
 Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).

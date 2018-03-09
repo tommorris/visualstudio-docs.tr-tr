@@ -16,12 +16,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 945eb6e905613d3d068321e2d5993f4506036963
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-type-and-member-definitions"></a>Tür ve üye tanımları görüntüle
 
@@ -70,7 +71,7 @@ C# türleri veya üyeleri tanımını görüntülediğinizde kimin sahip kaynak 
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Meta veriler (C#) yerine kaynak tanımları decompiled görüntüle
 
-Yeni **Visual Studio 2017 sürüm 15,6 Önizleme 2**, C# tür veya üye tanımının görüntülediğinizde decompiled kaynak kodu görmek için bir seçenek belirleyebilirsiniz kimin sahip kaynak kodu kullanılamıyor. Bu özelliği etkinleştirmek için tercih **Araçları** > **seçenekleri** menü çubuğundan. Ardından, **metin düzenleyici** > **C#** > **Gelişmiş**seçip **etkinleştirmek decompiled kaynaklarınaGezinti**.
+Yeni **Visual Studio 2017 sürüm 15,6**, C# tür veya üye tanımının görüntülediğinizde decompiled kaynak kodu görmek için bir seçenek belirleyebilirsiniz kimin sahip kaynak kodu kullanılamıyor. Bu özelliği etkinleştirmek için tercih **Araçları** > **seçenekleri** menü çubuğundan. Ardından, **metin düzenleyici** > **C#** > **Gelişmiş**seçip **etkinleştirmek decompiled kaynaklarınaGezinti**.
 
 ![Decompiled tanımı görüntüleme](media/go-to-definition-decompiled-sources.png)
 
@@ -79,5 +80,5 @@ Yeni **Visual Studio 2017 sürüm 15,6 Önizleme 2**, C# tür veya üye tanımı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kodda gezinme](../ide/navigating-code.md)  
-[Nasıl yapılır: Özet Tanımı'nı Kullanarak Kodu Görüntüleme ve Düzenleme (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+[Kodda gezinme](../ide/navigating-code.md)
+[nasıl yapılır: kodu görüntüleme ve düzenleme (Alt + F12) Özet tanımı kullanarak](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

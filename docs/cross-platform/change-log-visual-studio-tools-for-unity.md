@@ -13,14 +13,107 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 40356c5d80ee8572b4e5a6e468b9abf2919524de
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: f80e5eb1d82fab7167e86550739faaaa19000786
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Değişiklik günlüğü (Unity için Visual Studio Araçları)
 Unity için Visual Studio Araçları günlük değiştirin.
+
+## <a name="3604"></a>3.6.0.4
+ Yayımlanan 2018-03-05
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Proje oluşturma:**
+
+    -   Mono sürüm algılama sabit.
+
+-   **Tümleştirme:**
+
+    -   Zamanlama sorunları 2018.1 ile sabit ve eklentisi etkinleştirme.
+
+## <a name="3603"></a>3.6.0.3
+ Yayımlanan 2018-02-23
+
+### <a name="new-features"></a>Yeni Özellikler
+
+-   **Proje oluşturma:**
+
+    -   .Net için destek eklenmiştir standart.
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Proje oluşturma:**
+
+    -   Sabit Unity hedef framework algılama.
+
+-   **Hata Ayıklayıcı:**
+
+    -   Sabit Kesme usercode dışında oluşturulan özel durumları üzerinde.
+
+## <a name="3602"></a>3.6.0.2
+ Yayımlanan 2018-02-07
+
+### <a name="new-features"></a>Yeni Özellikler
+
+-   **Tümleştirme:**
+
+    -   2017.3 UnityMessage API yüzeyi güncelleştirin.
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Tümleştirme:**
+
+    -   Yalnızca (azaltma ile) dış değişiklik projelerde yeniden yükleyin.
+ 
+## <a name="3601"></a>3.6.0.1
+ Yayımlanan 2018-01-24
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Tümleştirme:**
+
+    -   Mdb hata ayıklama simgesi dönüştürme sabit otomatik pdb.
+    
+    -   Dizi boyutu değiştirilmeye çalışılırken denetçisi etkileyen EditorPrefs.GetBool sabit dolaylı çağrısı.
+ 
+## <a name="3600"></a>3.6.0.0
+ Yayımlanan 2018-01-10
+
+### <a name="new-features"></a>Yeni Özellikler
+
+-   **Proje oluşturma:**
+
+    -   2018.1 MonoIsland başvuru modeli desteği eklendi.
+
+-   **Değerlendirme:**
+
+    -   $Exception tanımlayıcı desteği eklendi.
+
+-   **Hata Ayıklayıcı:**
+
+    -   Yeni Unity çalışma zamanı DebuggerHidden/DebuggerStepThrough özniteliklerle desteği eklendi.
+    
+-   **Sihirbazlar:**
+
+    -   'Son' sürümü için sihirbazları tanıtır.
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Proje oluşturma:**
+
+    -   Proje GUID hesaplama player projeleri için sabit.
+
+-   **Hata Ayıklayıcı:**
+
+    -   Kesme olayları işleme içinde bir yarış sabit.
+    
+-   **Sihirbazlar:**
+
+    -   Yöntem eklemeden önce roslyn bağlamını yenileyin.
 
 ## <a name="3503"></a>3.5.0.3
  Yayımlanan 2018-01-09

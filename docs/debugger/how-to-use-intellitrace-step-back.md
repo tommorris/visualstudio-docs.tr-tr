@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Visual Studio IntelliTrace adım geri kullanarak görünüm anlık görüntüler
 
@@ -107,5 +107,7 @@ Genel sürüm performans üzerindeki etkisini, uygulamaya bağlı olarak değiş
 
     Geçici çözüm:
     * Hata ayıklama oturumu sonlandırarak tüm anlık görüntüleri silin. 
+
+* Çok sayıda benzersiz bellek bölgeler, DLL'ler, çok sayıda yükleyen bir uygulama gibi işlem sahip bir uygulama hata ayıklama sırasında etkin anlık görüntüleri ile performans atlama etkilenebilir. Bu sorun gelecekteki bir Windows sürümünde ele alınacaktır. Bu sorunu yaşıyorsanız, adresinden bize ulaşmak stepback@microsoft.com. 
 
 * Bir dosya kaydedilirken **hata ayıklama > IntelliTrace > Kaydet IntelliTrace oturumunu** olaylar ve anlık görüntü modu altında anlık görüntülerden yakalanan ek verileri .itrace dosyasında mevcut değil. Kesme ve adım olaylarına IntelliTrace olayları yalnızca modunda dosya kaydetmiş gibi aynı bilgileri görebilirsiniz. 

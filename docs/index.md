@@ -1,13 +1,14 @@
 ---
 layout: HubPage
-hide_bc: True
+hide_bc: 
 title: Visual Studio belgeleri | Microsoft Docs
 description: "Uygulamaları, hizmetleri ve platformlar ve cihazlar için tercih ettiğiniz dilde araçları geliştirmek için Visual Studio 2017 kullanmayı öğrenin."
-ms.openlocfilehash: 3875594d51eeb54322eed2fbe423f045c6aa1d4a
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.topic: hub-page
+ms.openlocfilehash: dfd72526fc24ae3b0a33014b8b8ac23e350fb6cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 03/08/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -185,7 +186,7 @@ ms.lasthandoff: 12/15/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Sürüm denetimi</h3>
+                                                    <h3>Sürüm Denetimi</h3>
                                                     <p>Sürüm denetimi teknolojileri Git ve TFVC'yi gibi kullanarak kod paylaşır.</p>
                                                 </div>
                                             </div>
@@ -223,7 +224,7 @@ ms.lasthandoff: 12/15/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Performansı</h3>
+                                                    <h3>Performansı Artırma</h3>
                                                     <p>Performans sorunlarını tanımlamak ve tanılama araçlarını kullanarak kod performansı en iyi duruma getirme.
                                                     </p>
                                                 </div>
@@ -263,7 +264,7 @@ ms.lasthandoff: 12/15/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Veri</h3>
-                                                    <p>Herhangi bir veritabanı veya hizmet ve her yerden &#8212; için bağlanan veri uygulamaları oluşturma yerel ya da bulut. </p>
+                                                    <p>Herhangi bir veritabanı veya hizmet ve her yerden bağlanma veri uygulamaları oluşturma&#8212;yerel veya bulut. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -440,7 +441,7 @@ ms.lasthandoff: 12/15/2017
                 <a href="#workloads">İş yükleri</a>
                 <ul id="workloads">
                     <li>
-                        <a href="#web">Web &amp; bulut</a>
+                        <a href="#web">Web &amp; Cloud</a>
                         <ul id="web" class="cardsC">
                             <li>
                                 <div class="container intro">
@@ -825,19 +826,19 @@ ms.lasthandoff: 12/15/2017
         <h2>Bizimle iletişime tutun</h2>
         <ul class="links">
            <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833100">Web günlüğü</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833100"> Web günlüğü </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833101">Twitter</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833101"> Twitter </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833103">Yığın Taşması</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Yığın Taşması </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833104">Sorun bildirimi</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833104"> Sorun bildirimi </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833105">Kullanıcı sesi</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833105"> Kullanıcı sesi </a>
             </li>
         </ul>
     </div>

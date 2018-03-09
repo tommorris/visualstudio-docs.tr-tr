@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: e2c2fffddba8746ff2f5696a1eaccf701b83f314
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python için Azure bulut hizmeti projeleri
 
@@ -30,7 +30,7 @@ Visual Studio şablonları yardımcı olması için Python kullanarak Azure Clou
 
 A [bulut hizmeti](http://go.microsoft.com/fwlink/?LinkId=306052) herhangi bir sayıda oluşur *çalışan rolleri* ve *web rolleri*, her biri kavramsal olarak ayrı bir görev gerçekleştiren ancak için ayrı olarak çoğaltılabilir arasında ölçeklendirme için görsel makineler gerektiği gibi. Web rolleri için ön uç web uygulamalarını barındırma sağlar. Bu tür bir uygulama yazmak için Python ilgilenen olduğu WSGI destekleyen herhangi bir web çerçevesidir kullanılabilir (tarafından desteklenen gibi [Web Proje şablonu](python-web-application-project-templates.md)). Çalışan rollerini doğrudan kullanıcılarınız ile etkileşim değil uzun süre çalışan işlemler için tasarlanmıştır. Genellikle yaptıkları kullanımı [veri](http://go.microsoft.com/fwlink/?LinkId=401571) ve [uygulama hizmeti](http://go.microsoft.com/fwlink/?LinkId=401572) ile yüklenebilir kitaplıkları [ `pip install azure` ](http://pypi.org/project/azure).
 
-Bu konu, proje şablonu ve diğer Visual Studio (önceki sürümlerinde benzer, ancak bazı farklılıklar) 2017 desteği hakkında ayrıntılar içerir. Python'dan Azure ile çalışma hakkında daha fazla bilgi için ziyaret [Azure Python Geliştirici Merkezi](http://go.microsoft.com/fwlink/?linkid=254360).
+Bu makale proje şablonu ve diğer Visual Studio (önceki sürümlerinde benzer, ancak bazı farklılıklar) 2017 desteği hakkında ayrıntılar içerir. Python'dan Azure ile çalışma hakkında daha fazla bilgi için ziyaret [Azure Python Geliştirici Merkezi](http://go.microsoft.com/fwlink/?linkid=254360).
 
 ## <a name="create-a-project"></a>Proje oluşturma
 

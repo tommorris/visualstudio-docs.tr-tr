@@ -2,7 +2,7 @@
 title: "Python ortamları ve Visual Studio yorumlayıcılar yönetme | Microsoft Docs"
 description: "Genel yönetmek için Visual Studio ve Python yorumlayıcılar yükleme, paketleri yükleme, arama yolları ayarlama ve ortamlar için Visual Studio Projeleri Yönetme özel ortamları ayarlama sanal ortamlar Python ortamları penceresini kullanma"
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 570ce6beccf14c9f04fcd3e21b86a8d00a3d607f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 139916cbecd6e0c22062da9221d452c16309a564
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Visual Studio'da Python ortamları yönetme
 
@@ -72,7 +72,7 @@ Yukarıdaki resimde, Visual Studio Anaconda 5.0.0 birlikte Python 3.6 (32 bit) i
 
 Kalın varsayılan ortamında Python tüm yeni projeler için Visual Studio kullanan 3.6 (Anaconda yüklemesi bu durumda parçası), ' dir. Seçilen Python görebilirsiniz, siz yorumlayıcı olduğu belirli yüklemesinde 3.6 penceresinin alt kısmındaki komutları uygulamak `C:\Python36-32`. Beklediğiniz bir ortam görmüyorsanız bkz [el ile varolan bir yorumlayıcı tanımlayan](#manually-identifying-an-existing-interpreter).
 
-Listelenen her ortam sağındaki bu ortam için etkileşimli bir pencere açılır bir denetimdir. Başka bir denetim bu ortam için IntelliSense veritabanı yenileyen görünebilir.
+Listelenen her ortam sağındaki bu ortam için etkileşimli bir pencere açılır bir denetimdir. Bu ortam için IntelliSense veritabanı yeniler başka bir denetim görüntülenebilir (bkz [ortamları penceresi başvuru](python-environments-window-tab-reference.md#intellisense-tab) veritabanı hakkındaki ayrıntılar için).
 
 Ortamlar açılan Seçici için listesidir **genel bakış**, **paketleri**, ve **IntelliSense** açıklanan seçenekler [Python ortamları Pencere sekme başvurusu](python-environments-window-tab-reference.md). Ayrıca, genişletirseniz **Python ortamları** yetecek kadar geniş penceresinde, bu seçenekleri ile çalışmak daha kolay bulabilirsiniz sekmeleri olarak gösterilir:
 

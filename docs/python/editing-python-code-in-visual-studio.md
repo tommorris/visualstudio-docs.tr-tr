@@ -2,7 +2,7 @@
 title: "Visual Studio'da Python kodu düzenleme | Microsoft Docs"
 description: "Visual Studio'da düzenleme Python IntelliSense kod parçacıkları ve biçimlendirme, linting ve yeniden düzenleme yanında Gezinti özellikleri sağlar."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: aae28ff5634dc59f2481140918b7ee19c29c4e1e
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="editing-python-code"></a>Python kodu düzenleme
 
@@ -39,7 +39,11 @@ Visual Studio nesne tarayıcısı da kullanabilirsiniz (**Görünüm > Diğer Pe
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense sağlar [tamamlamalar](#completions), [imza Yardım](#signature-help), [hızlı bilgi](#quick-info), ve [kod renklendirme](#code-coloring). Performansı artırmak için IntelliSense projenizdeki her Python ortamı için oluşturulan tamamlama veritabanı bağlıdır. Veritabanları ekleyin, kaldırın veya güncelleştirme paketleri yenileme gerekebilir. Veritabanı durumu görüntülenir **Python ortamları** penceresinde (Çözüm Gezgini eşdüzey) **IntelliSense** sekmesinde (bkz [Python ortamları penceresi başvuru](python-environments-window-tab-reference.md#intellisense-tab)).
+IntelliSense sağlar [tamamlamalar](#completions), [imza Yardım](#signature-help), [hızlı bilgi](#quick-info), ve [kod renklendirme](#code-coloring).
+
+IntelliSense içinde performansı iyileştirmek için **Visual Studio 2017 sürüm 15,5** ve daha önce projenizdeki her Python ortamı için oluşturulan bir tamamlanma veritabanı bağlıdır. Veritabanları ekleyin, kaldırın veya güncelleştirme paketleri yenileme gerekebilir. Veritabanı durumu görüntülenir **Python ortamları** penceresinde (Çözüm Gezgini eşdüzey) **IntelliSense** sekmesinde (bkz [ortamları penceresi başvuru](python-environments-window-tab-reference.md#intellisense-tab)).
+
+**Visual Studio 2017 sürüm 15,6** ve daha sonra veritabanı üzerinde bağımlı olmayan IntelliSense tamamlamalar sağlamak için farklı bir yol kullanır.
 
 ### <a name="completions"></a>Tamamlamalar
 
@@ -110,15 +114,41 @@ Renkleri özelleştirmek için şu adrese gidin **Araçlar > Seçenekler > ortam
 
 ## <a name="code-snippets"></a>Kod parçacıkları
 
-Kod parçacıkları olan dosyalarınızı bir kısayol yazarak ve Tab tuşuna basarak veya kullanarak eklenebilir kod parçalarını **Düzenle > IntelliSense > Ekle kod parçacığını** **Surround With** komutları. Örneğin `class` ardından sekmesiyle sınıfı kalan anahtarı oluşturur. Adın üzerine yazın ve sekmesinde vurgulanan alanları arasında taşıma temellerine listesi sonra gövdesi yazmaya başlamak için Enter tuşuna basın.
+Kod parçacıkları olan dosyalarınızı bir kısayol yazarak ve Tab tuşuna basarak veya kullanarak eklenebilir kod parçalarını **Düzenle > IntelliSense > Ekle kod parçacığını** ve **Surround With** komutları seçme **Python**, istenen parçacığı seçtikten sonra.
 
-![Kod Parçacıkları](media/code-editing-code-snippets.png)
+Örneğin, `class` için bir sınıf tanımı ekleyen bir kod parçacığını bir kısayol. Otomatik Tamamlama kutusuna yazdığınızda listede parçacığı bkz `class`:
 
-Kod parçacıkları Yöneticisi'nde kullanılabilir kod parçacıkları görebilirsiniz (**Araçlar > kod parçacıkları Yöneticisi**), seçme **Python** dili olarak:
+![Kod parçacığı sınıfı kısayolunun](media/code-editing-code-snippet-class.png)
+
+Sekme tuşuna basarak sınıfı kalan oluşturur. Sekmesinde vurgulanan alanları arasında taşıma türü adı ve temellerine listesi üzerinden tuşuna ENTER gövdesi yazmaya başlamak için kullanabilirsiniz.
+
+![Tamamlamak size bir kod parçacığı alanlarının üzerinde öne çıkan özellikleri](media/code-editing-code-snippets.png)
+
+### <a name="menu-commands"></a>Menü komutları
+
+Kullandığınızda **Düzenle > IntelliSense > Ekle kod parçacığını** menü komutu, öncelikle "Python" seçin ardından parçacık seçin:
+
+![Kod parçacığı kod parçacığını Ekle komutu seçme](media/code-editing-code-snippet-insert.png)
+
+**Düzenle > IntelliSense > Surround With** komutu, benzer şekilde, yerleştirir geçerli seçim seçilen yapısal öğesi içinde metin düzenleyicisinde. Örneğin, biraz kod aşağıdaki gibi olan varsayın:
+
+```python
+sum = 0
+for x in range(1, 100):
+    sum = sum + x
+```
+
+Bu kod ve seçerek **Surround With** komutu kullanılabilir parçacıkları listesini görüntüler. Seçme `def` listesi konumlardan işlev tanımı ve içindeki seçili kod vurgulanan işlev adı ve bağımsız değişkenleri arasında gezinmek için SEKME tuşunu kullanabilirsiniz:
+
+![Kod parçacıkları için Surround With komutu](media/code-editing-code-snippet-surround-with.png)
+
+### <a name="examine-available-snippets"></a>Kullanılabilir parçacıkları inceleyin
+
+Kod parçacıkları kullanılarak açılmaktadır Yöneticisi'nde kullanılabilir kod parçacıkları görebilirsiniz **Araçlar > kod parçacıkları Yöneticisi** menü komutu ve seçme **Python** dili olarak:
 
 ![Kod parçacıkları Yöneticisi](media/code-editing-code-snippets-manager.png)
 
-Kendi parçacıkları oluşturmak için bkz: [izlenecek yol: kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md). 
+Kendi parçacıkları oluşturmak için bkz: [izlenecek yol: kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md).
 
 Paylaşmak istediğiniz bir harika bir kod parçacığı yazarsanız bir gist sonrası çekinmeyin ve [bize bildirin](https://github.com/Microsoft/PTVS/issues). Visual Studio gelecekteki bir sürümde eklemek mümkün olabilir.
 

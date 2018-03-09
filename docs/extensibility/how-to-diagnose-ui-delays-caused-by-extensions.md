@@ -12,11 +12,11 @@ author: PooyaZv
 ms.author: pozandev
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9dede2f30a9d91e94bda3183deaae337e4c556dc
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: dffc67e550cb57f9f089e180ff399f27c817d253
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Nasıl yapılır: kullanıcı Arabirimi tanılamak uzantıları tarafından kaynaklanan gecikmeler
 
@@ -44,7 +44,7 @@ Aşağıdaki bölümlerde, bu adımlar daha ayrıntılı ele alacağız.
 
 ## <a name="identifying-the-trigger-scenario"></a>Tetikleyici senaryo tanımlama
 
-UI gecikmesi tanılamak için önce idetify için hangi (eylemlerin sırasını) bildirim göstermek Visual Studio neden gerekir. Sırada, bildirim açık günlük ile daha sonra tetiklemek için budur.
+UI gecikmesi tanılamak için önce hangi (eylemlerin sırasını) bildirim göstermek Visual Studio neden tanımlamak gerekir. Sırada, bildirim açık günlük ile daha sonra tetiklemek için budur.
 
 ## <a name="restarting-vs-with-activity-logging-on"></a>Oturum açma etkinliği ile VS yeniden başlatılıyor
 
@@ -158,3 +158,5 @@ PerfView Kılavuzu kodunuzda performans sorunlarını tanımlamak için kullanab
 * [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
 * [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
 
+> [!NOTE]
+> Yanıt vermeyi durdurma sorununu bağımlılıkları nedeniyle adres ise üzerinde denetiminiz olmayan (örneğin uzantınızı zaman uyumlu VS Hizmetleri kullanıcı Arabirimi iş parçacığı üzerinde çağırmak varsa), hakkında bilmek isteriz. Visual Studio iş ortağı programımız üyesi olması durumunda, bize bir geliştirici destek isteği göndererek başvurabilirsiniz. Aksi halde, 'Bir sorun bildirmek' içerir ve geri bildirim göndermek üzere aracını `"Extension UI Delay Notifications"` başlık. Lütfen çözümleme ayrıntılı bir açıklaması da içerir.

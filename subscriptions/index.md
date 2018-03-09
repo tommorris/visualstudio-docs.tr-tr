@@ -10,11 +10,11 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a7768be8726fe38ade6857993b67c1c32f8611aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio Abonelikleri
 Visual Studio abonelikler oluşturun, dağıtın ve tercih edilen platformlarında ve Windows, iOS, Android ve Linux dahil cihazları mükemmel uygulamaları yönetmek kaynakları kapsamlı kümesidir.  Abonelikleri avantajları ve geliştirme ve test ihtiyaçları için destek geliştirici araçları, bulut Hizmetleri ve eğitim, yazılım, erişim içerir.
@@ -137,7 +137,7 @@ Aboneler oturum açmak [https://my.visualstudio.com](https://my.visualstudio.com
 ---
 
 <h2>Yararları</h2>
-<ul class="panelContent cardsW">
+<ul class="cardsD cols cols3">
     <li>
         <div class="cardSize">
             <div class="cardPadding">

@@ -8,15 +8,15 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c0808635d0cd471f0fdaeb00e970ffde94a279c6
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Kullanarak birim testlerini yapılandırma bir *.runsettings* dosyası
 
-Birim testleri Visual Studio kullanarak yapılandırılabilir bir *.runsettings* dosya. Örneğin, üzerinde testler, .NET Framework sürümünü burada test sonuçlarını teslim edilir veya test sırasında toplanan verileri çalıştırmak dizini değiştirebilirsiniz.
+Birim testleri Visual Studio kullanarak yapılandırılabilir bir *.runsettings* dosya. Örneğin, üzerinde yapılan testler, dizin test sonuçlarını ya da bir test çalışması sırasında toplanan veriler için .NET Framework sürümünü değiştirebilirsiniz.
 
 > [!NOTE]
 > Uzantı '.runsettings' kullandığınız sürece dosya adı önemli değildir.
@@ -57,6 +57,10 @@ Aşağıdadır tipik bir *.runsettings* dosya. Her değerin bir varsayılanı ol
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
+  
+     <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
+     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
+     <TestSessionTimeout>10000</TestSessionTimeout>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->
@@ -129,6 +133,7 @@ Bu makalenin sonraki bölümlerinde dosya içeriği açıklar.
 |`TreatTestAdapterErrorsAsWarnings`|false|yanlış, doğru|
 |`TestAdaptersPaths`||Bir veya birden çok yol TestAdapters bulunduğu dizine|
 |`MaxCpuCount`|1.|Bu çalışan birim testleri zaman denetimleri paralel test yürütmesi derecesini ayarlama, makinede kullanılabilir çekirdekleri kullanılarak. Test yürütme altyapısı, her kullanılabilir çekirdek ayrı bir işlem olarak başlatır ve her çekirdek ile testleri çalıştırmak için bir kapsayıcı sağlar. Bir kapsayıcı, bir derleme, DLL veya ilgili yapı olabilir. Test kapsayıcısı zamanlama birimidir. Her kapsayıcısında testleri test çerçevesi göre çalıştırılır. Birçok kapsayıcıları varsa, daha sonra bir kapsayıcıda testleri çalıştırma bitiş işlerken kendisine sonraki kullanılabilir kapsayıcı verilir.<br /><br /> MaxCpuCount olabilir:<br /><br /> 1 burada n < = n < = çekirdek sayısı: n işlemlerinin tasarrufundadır başlatılacak<br /><br /> n, burada n herhangi bir değer =: başlatılan işlem sayısı kadar kullanılabilir çekirdeğe makinedeki kadar olacaktır|
+|`TestSessionTimeout`||Kullanıcıların belirli bir zaman aşımı aştığında bir test oturumu sonlandır olanak tanır. Ayar kaynakları da tüketilen zaman aşımı sağlar ve test oturumları bir süre için kısıtlanmıştır. Bulunan bir ayardır **Visual Studio 2017 sürüm 15,5** ve daha sonra.
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Tanılama Veri Bağdaştırıcıları (Veri Toplayıcıları)
 
@@ -140,7 +145,7 @@ Kod kapsamı veri toplayıcısı uygulama kodu bölümlerinin testte uygulandı�
 
 #### <a name="video-data-collector"></a>Video veri toplayıcısı
 
-Video veri toplayıcı testlerini çalıştırdığınızda, kaydı ekran yakalar. Bu kayıt, UI testleri sorun giderme için yararlıdır. Video veri toplayıcı sağlanmıştır **Visual Studio 2017 sürüm 15,5** ve daha yüksek.
+Video veri toplayıcı testlerini çalıştırdığınızda, kaydı ekran yakalar. Bu kayıt, UI testleri sorun giderme için yararlıdır. Video veri toplayıcı sağlanmıştır **Visual Studio 2017 sürüm 15,5** ve daha sonra.
 
 Başka herhangi bir tür tanılama verisi bağdaştırıcısını özelleştirmek için test ayarları dosyası kullanmanız gerekir. Daha fazla bilgi için bkz: [Visual Studio testleri için Test ayarlarını belirtme](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).
 

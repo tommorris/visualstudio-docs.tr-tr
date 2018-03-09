@@ -2,7 +2,7 @@
 title: "Visual Studio'da Python uygulamaları için projeleri yönetme | Microsoft Docs"
 description: "Visual Studio projelerinde amacını açıklayan, Python kodu için proje oluşturma ve yönetme gösterir ve Python için kullanılabilen farklı proje şablonları özetler."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: d996c99104e0a5d6b2e1acdb44273679a3998658
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-projects"></a>Python projeleri
 
@@ -52,13 +52,15 @@ Uygulamanızı geliştirirken, genellikle farklı türdeki yeni dosyaları proje
 Çözüm Gezgini'nde kalın gösterilen bir atanan başlangıç dosyasını her Python projenin vardır. Başlangıç dosyası hata ayıklama başlattığınızda çalıştırılan dosyasıdır (F5 veya **hata ayıklama > hata ayıklamayı Başlat**) veya etkileşimli pencerede projenizi çalıştırdığınızda (Shift + Alt + F5 veya **hata ayıklama > Python yürütme projesinde Etkileşimli**). Değiştirmek için yeni dosyasını sağ tıklatın ve seçin **başlangıç dosyası olarak ayarlamak**.
 
 > [!Tip]
-> Seçilen başlangıç dosyası bir projeden kaldırmak ve yeni bir tane seçmezseniz, proje sonuçlarınızı Python içinde çalışan görünen ancak hemen kayboluyor penceresi çıktı. Bu davranış karşılaşırsanız, atanan başlangıç dosya olup olmadığını denetleyin. Ayrıca, çıktı penceresinde bu gibi durumlarda açık tutmak için projenize sağ tıklayın, seçin **özellikleri**seçin **hata ayıklama** sekmesinde, ardından ekleyin `-i` için **yorumlayıcı bağımsız değişkenleri** alan. Bu bağımsız değişken, böylece Ctrl + Z, çıkmak için Enter girene kadar penceresi açık tutarak bir program tamamlandıktan sonra etkileşimli moduna geçmesi yorumlayıcı neden olur.
+> Seçilen başlangıç dosyası bir projeden kaldırmak ve yeni bir tane seçmezseniz, Visual Studio Proje çalıştırmayı denediğinizde ne Python aşağıdaki başlamak dosya bilemezsiniz. Bu durumda, Visual Studio 2017 15.6 ve sonraki sürümleri bir hata gösterir; önceki sürümlerinde, bir çıktı penceresi ya da çalışan Python yorumlayıcı ile açın. veya çıktı penceresini görünür ancak hemen kayboluyor bakın. Bu davranışların karşılaşırsanız, atanan başlangıç dosya olup olmadığını denetleyin.
+>
+> Herhangi bir nedenle çıktı penceresi açık tutmak istiyorsanız, projenize sağ tıklayın, seçin **özellikleri**seçin **hata ayıklama** sekmesinde, ardından ekleyin `-i` için **yorumlayıcı bağımsız değişkenler**  alan. Bu bağımsız değişken, böylece Ctrl + Z, çıkmak için Enter girene kadar penceresi açık tutarak bir program tamamlandıktan sonra etkileşimli moduna geçmesi yorumlayıcı neden olur.
 
 Yeni bir proje her zaman varsayılan genel Python ortamı ile ilişkilidir. Proje (sanal ortamlar dahil) için farklı bir ortam ilişkilendirmek için sağ **Python ortamları** seçin proje düğümüne **Ekle/Kaldır Python ortamları**, ve istediğiniz şablonu seçin. Etkin ortam değiştirmek için istenen ortama sağ tıklatın ve seçin **etkinleştirme ortamı** aşağıda gösterildiği gibi. Daha fazla bilgi için bkz: [bir proje için bir ortam seçerek](selecting-a-python-environment-for-a-project.md).
 
 ![Python proje için bir ortam etkinleştirme](media/projects-activate-environment.png)
 
-<a name="project-types"</a>
+<a name="project-types"></a>
 
 ## <a name="project-templates"></a>Proje şablonları
 

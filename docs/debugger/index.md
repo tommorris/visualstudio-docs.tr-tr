@@ -2,12 +2,13 @@
 layout: LandingPage
 title: "Visual Studio uygulamalarınızda hata ayıklama | Microsoft Docs"
 description: "Bilgi nasıl uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde hata ayıklamak için Visual Studio 2017 kullanın."
+ms.topic: landing-page
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c08d88cf7ae8a38116d42b59747d956d7d4cf7ef
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 6c81a60b706a02a66fce176613fce1e0dae2496c
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio'da Hata Ayıklama
 
@@ -169,7 +170,7 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>&#39; bkz s Hata Ayıklayıcısı'deki yenilikler</h3>
+                        <h3>Gördükleri&#39;s Hata Ayıklayıcısı'deki yenilikler</h3>
                     </div>
                 </div>
             </div>

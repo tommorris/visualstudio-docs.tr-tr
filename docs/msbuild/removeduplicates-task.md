@@ -1,7 +1,7 @@
 ---
 title: "RemoveDuplicates görevi | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 03/01/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: msbuild
@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b735b706ec7c258e168c75dcfd8b456df23a021e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ce3271b84d4d6bbb4f7905294d0c9fad678c1b8f
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates Görevi
 Yinelenen öğe belirtilen öğeyi koleksiyondan kaldırır.  
@@ -38,7 +38,7 @@ Yinelenen öğe belirtilen öğeyi koleksiyondan kaldırır.
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|`Filtered`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Öğe koleksiyonunun kaldırılan tüm yinelenen öğeler içeriyor.|  
+|`Filtered`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Öğe koleksiyonunun kaldırılan tüm yinelenen öğeler içeriyor. Her yinelenen öğe ilk örneği koruyarak giriş öğelerin sırasını korunur.|  
 |`Inputs`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Yinelenen öğeleri kaldırmak için öğe koleksiyonu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -70,7 +70,30 @@ Yinelenen öğe belirtilen öğeyi koleksiyondan kaldırır.
     </Target>  
 </Project>  
 ```  
+
+ Aşağıdaki örnekte gösterilir `RemoveDuplicates` görev kendi giriş sırası korur. Görev tamamlandığında, `FilteredItems` öğe koleksiyonu bu sırayla "MyFile2.cs", "MyFile1.cs" ve "MyFile3.cs" öğelerini içerir.  
   
+```xml  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+  
+    <ItemGroup>  
+        <MyItems Include="MyFile2.cs"/>  
+        <MyItems Include="MyFile1.cs" />  
+        <MyItems Include="MyFile3.cs" />  
+        <MyItems Include="myfile1.cs"/>  
+    </ItemGroup>  
+  
+    <Target Name="RemoveDuplicateItems">  
+        <RemoveDuplicates  
+            Inputs="@(MyItems)">  
+            <Output  
+                TaskParameter="Filtered"  
+                ItemName="FilteredItems"/>  
+        </RemoveDuplicates>  
+    </Target>  
+</Project>  
+```  
+
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)   

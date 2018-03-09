@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 17108b8ff993d88d2e5ed179c3167f43d2895d7f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 469494b2c0c4704ac1eab42d36934657adc2313d
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Visual Studio'da Python ile çalışma
 
@@ -30,7 +30,7 @@ Python güvenilir, esnek, kolay öğrenmek için tüm işletim sistemlerinde kul
 Visual Studio Python için birinci sınıf dil desteği sağlar. Bu öğretici, aşağıdaki adımlarda size yol gösterir:
 
 - [Adım 0: yükleme](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [1. adım: Python proje (Bu konuda) oluşturma](#step-1-create-a-new-python-project)
+- [1. adım: Python proje (Bu makalede) oluşturma](#step-1-create-a-new-python-project)
 - [2. adım: Yazma ve iş için Visual Studio IntelliSense görmek için kodu çalıştırma](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 - [3. adım: etkileşimli REPL penceresinde daha fazla kod oluşturma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 - [4. adım: Visual Studio Hata Ayıklayıcısı'ndaki tamamlanmış programı çalıştırın](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

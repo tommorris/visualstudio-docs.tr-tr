@@ -1,26 +1,26 @@
 ---
 title: "Visual Studio klavye kısayolları | Microsoft Docs"
-ms.custom: 
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Visual Studio için klavye ipuçları
 
-Bu konudaki klavye kısayollarını kullanarak Visual Studio'da daha kolay gidebilirsiniz. Bu konu yalnızca kullanılabilir klavye kısayollarını bir alt kümesidir. Daha kapsamlı bir liste için bkz: [varsayılan klavye kısayolları Visual Studio'da](../ide/default-keyboard-shortcuts-in-visual-studio.md). Visual Studio'nun erişilebilirlik için en iyi duruma getirme hakkında daha fazla bilgi için bkz: [erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md).
+Bu makalede klavye kısayollarını kullanarak Visual Studio'da daha kolay gidebilirsiniz.
+
+Burada listelenen kısayolları kullanılabilir klavye kısayolları yalnızca bir alt kümesidir. Daha kapsamlı bir liste için bkz: [varsayılan klavye kısayolları Visual Studio'da](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+Visual Studio'nun erişilebilirlik için en iyi duruma getirme hakkında daha fazla bilgi için bkz: [erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md).
 
 ## <a name="window-management"></a>Pencere Yönetimi
 
@@ -83,7 +83,7 @@ Bu konudaki klavye kısayollarını kullanarak Visual Studio'da daha kolay gideb
 |Düzenleyici yakınlaştırma|Ctrl + Shift + > (gelen), Ctrl + Shift + < (giden)||
 |Blok seçimi|Alt basılı tutun ve fare, Shift + Alt + ok tuşları sürükleyin||
 |Satırı Yukarı/Aşağı Taşı|Alt + Yukarı / Alt + Aşağı Ok||
-|Yinelenen satır|Ctrl+E,V|Visual Studio 2017 sürüm 15,6 Önizleme 2|
+|Yinelenen satır|Ctrl+E,V|Visual Studio 2017 sürüm 15,6|
 |Seçimi genişletin|**Shift**+**Alt**+**=**|Visual Studio 2017 sürüm 15,5|
 |Sözleşme seçimi|**Shift**+**Alt**+**-**|Visual Studio 2017 sürüm 15,5|
 |Tanıma gitme|F12||

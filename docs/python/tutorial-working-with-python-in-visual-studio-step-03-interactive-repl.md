@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60b960a4a8f81f14bbbc2035670e6b9fd80b5312
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 757534638c9e4b2b6cecd75f62997994bf14cc0c
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>3. adım: etkileşimli REPL penceresini kullanma
 
@@ -31,7 +31,7 @@ Visual Studio *etkileşimli pencere* Python normal düzenleme-derleme-hata ayık
 
 1. Çözüm Gezgini'nde (örneğin, "bir önceki grafikte gösterildiği Python 3.6 (32 bit)") ve seçerek projenin Python ortamı sağ tıklayarak etkileşimli penceresini açın **açık etkileşimli pencere**. Alternatif olarak seçebileceğiniz **Görünüm > Diğer Pencereler > Python etkileşimli Windows** ana Visual Studio menüsünde.
 
-1. Normal düzenleyicisiyle aşağıda etkileşimli penceresi açılır `>>>` Python REPL istemi. Görmemeleri arasında iki windows ayırıcı sürükleyerek yapabilirsiniz etkileşimli pencere daha büyük hale getirmek istediğiniz:
+1. Standart düzenleyiciyle aşağıda etkileşimli penceresi açılır `>>>` Python REPL istemi. **Ortam** aşağı açılan liste çalışmak için belirli bir yorumlayıcı seçmenize olanak sağlar. Görmemeleri ayrıca arasında iki windows ayırıcı sürükleyerek yapabilirsiniz etkileşimli pencereyi daha büyük hale isteyebilirsiniz:
 
     ![Python etkileşimli penceresini açın ve yeniden boyutlandırmak için sürükleme](media/vs-getting-started-python-11-interactive1b.png)
 

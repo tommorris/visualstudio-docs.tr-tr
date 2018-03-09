@@ -5,35 +5,37 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 03/05/2018
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
-ms.workload: multiple
-ms.openlocfilehash: ba73e3c53e03bf3d6deb65deea0aabd715fc69fd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6a8b2ca8900c0f292d7e4bcc035e1eb58fd12a94
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 iş yükü ve Bileşen kimlikleri
 Visual Studio komut satırını kullanarak yüklemek için veya bağımlılık VSIX bildirim olarak belirtmek için gereksinim duyduğunuz bileşen kimlikleri ve kullanılabilir iş yükü görmek için aşağıdaki tablodaki edition adları'yi tıklatın.
 
-| **Edition** | **KİMLİĞİ** | **Açıklama** |
+| **Edition** | **ID** | **Açıklama** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md) | Microsoft.VisualStudio.Product.Enterprise | Verimlilik ve herhangi bir boyuttaki takımlar arasında koordinasyonu için Microsoft DevOps çözümü |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | Küçük ekipleri için profesyonel geliştiricilere Araçlar ve hizmetler |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Ücretsiz, tam olarak IDE Öğrenciler, açık kaynaklı ve tek tek geliştiriciler için öne çıkan |
-| [Visual&nbsp;Studio Takım&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Team Foundation Server ve Visual Studio Team Services ile Visual Studio Geliştirici araç takımı etkileşim |
-| [Visual Studio Express Masaüstü 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | Yerel ve yönetilen uygulamalarla WPF, WinForms ve Win32 gibi sözdizimi algılayan kod düzenleme, kaynak kodu denetimi ve iş öğesi yönetimi oluşturun. C#, Visual Basic ve Visual C++ için destek içerir. |
+| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Team Foundation Server ve Visual Studio Team Services ile Visual Studio Geliştirici araç takımı etkileşim |
+| [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | Yerel ve yönetilen uygulamalarla WPF, WinForms ve Win32 gibi sözdizimi algılayan kod düzenleme, kaynak kodu denetimi ve iş öğesi yönetimi oluşturun. C#, Visual Basic ve Visual C++ için destek içerir. |
 | [Visual&nbsp;Studio derleme&nbsp;Araçları&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Yapı Visual Studio Araçları, Visual Studio IDE gerek kalmadan yerel ve yönetilen MSBuild tabanlı uygulamalar oluşturmanıza olanak verir. Visual C++ Derleyicileri ve kitaplıkları, MFC, ATL ve C + yüklemek için seçenek +/ CLI desteği. |
-| [Visual&nbsp;Studio Test&nbsp;Aracısı&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Otomatikleştirilmiş testleri ve yük testleri uzaktan çalıştıran destekler |
-| [Visual&nbsp;Studio Test&nbsp;denetleyicisi 2017](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Birden fazla makine için otomatikleştirilmiş testleri Dağıt |
+| [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Otomatikleştirilmiş testleri ve yük testleri uzaktan çalıştıran destekler |
+| [Visual&nbsp;Studio Test&nbsp;denetleyicisi 2017 ](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Birden fazla makine için otomatikleştirilmiş testleri Dağıt |
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Uzmanı 2017 |
 | [Visual&nbsp;Studio geri bildirim&nbsp;istemci&nbsp;2017](workload-component-id-vs-feedback-client.md) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Geri Bildirim İstemcisi 2017 |
 

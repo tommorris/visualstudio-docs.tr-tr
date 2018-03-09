@@ -18,20 +18,20 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e5d5cbc856a6af44941d690119f2a15a8acc3d41
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Azure uygulama Hizmeti'nde Python yönetme
 
 [Azure uygulama hizmeti](https://azure.microsoft.com/services/app-service/) siteleri REST API'ları, kendi istemcileri veya olayı tarafından tetiklenen işlem tarafından kullanılan bir tarayıcı aracılığıyla erişilen oldukları olup, bir hizmet olarak platform sunumu web uygulamaları için. Uygulama hizmeti uygulamalarını uygulamak için Python kullanarak tam olarak destekler.
 
-Özelleştirilebilir Python desteği Azure App Service'te bir uygulama hizmeti kümesi olarak sağlanan *site uzantıları* her Python çalışma zamanı belirli bir sürümünü içerir. Bu konu başlığı altında açıklandığı gibi sonra bu ortama doğrudan istenen herhangi bir paket yükleyebilirsiniz. Uygulama hizmeti ortamında özelleştirerek, paketler, web uygulaması projelerinde korumak veya uygulama koduyla yüklemek gerekmez.
+Özelleştirilebilir Python desteği Azure App Service'te bir uygulama hizmeti kümesi olarak sağlanan *site uzantıları* her Python çalışma zamanı belirli bir sürümünü içerir. Bu makalede anlatıldığı gibi bu ortama doğrudan daha sonra istediğiniz tüm paketleri yükleyebilirsiniz. Uygulama hizmeti ortamında özelleştirerek, paketler, web uygulaması projelerinde korumak veya uygulama koduyla yüklemek gerekmez.
 
 > [!Tip]
-> Uygulama hizmeti varsayılan olarak Python 2.7 ve Python 3.4 kök klasörlerdeki sunucuda yüklü olsa da, özelleştirebilir veya bu ortamlarda paketleri yüklemek veya kendi varlığına bağımlı olmalıdır. Bunun yerine, bu konu başlığı altında açıklandığı gibi denetleyen bir site uzantısı yararlanmalıdır.
+> Uygulama hizmeti varsayılan olarak Python 2.7 ve Python 3.4 kök klasörlerdeki sunucuda yüklü olsa da, özelleştirebilir veya bu ortamlarda paketleri yüklemek veya kendi varlığına bağımlı olmalıdır. Bunun yerine, bu makalede anlatıldığı gibi denetleyen bir site uzantısı yararlanmalıdır.
 
 > [!Important]
 > Burada açıklanan değiştirilebilir ve özellikle geliştirme işlemlerdir. Değişiklikleri duyurdu üzerinde [Python mühendislik Microsoft blogu](https://blogs.msdn.microsoft.com/pythonengineering/).

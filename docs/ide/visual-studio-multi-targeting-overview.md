@@ -1,10 +1,11 @@
 ---
 title: "Visual Studio'da .NET Framework'ü hedefleme | Microsoft Docs"
 ms.custom: 
-ms.date: 01/18/2018
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: e78f77993c510a223056696c0beac27147d18d5a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio çoklu sürüm desteğine genel bakış
 
@@ -48,7 +50,7 @@ Framework'ü hedefleme aşağıdaki özellikleri içerir:
 
 Önceki bir sürümünü hedefleyen bir proje üzerinde çalışırken [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio dinamik olarak geliştirme ortamı aşağıdaki gibi değişir:
 
-- Öğeleri filtreler **yeni proje** iletişim kutusu, **Yeni Öğe Ekle** iletişim kutusu, **Yeni Başvuru Ekle** iletişim kutusu ve **hizmetBaşvurusuEkle** iletişim kutusu hedeflenen bir sürümde kullanılamayan seçenekleri atlayın.
+- Öğeleri filtreler **Yeni Öğe Ekle** iletişim kutusu, **Yeni Başvuru Ekle** iletişim kutusu ve **hizmet Başvurusu Ekle** kullanılamayan seçenekleri atlamak için iletişim kutusu hedeflenen sürümü.
 
 - Özel denetimlerde filtreler **araç** hedeflenen bir sürümde kullanılamayan olanlar kaldırmak ve yalnızca göstermek için birden çok denetim kullanılabilir olduğunda en güncel kontrol eder.
 
@@ -65,7 +67,11 @@ Framework'ü hedefleme aşağıdaki özellikleri içerir:
 
 ## <a name="selecting-a-target-framework-version"></a>Bir hedef framework sürümü seçme
 
-Bir proje oluşturduğunuzda, hedef seçin [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürümünde **yeni proje** iletişim kutusu. Kullanılabilir proje şablonları seçime göre filtrelenir. Varolan bir projede hedef değiştirebilirsiniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Proje Özellikleri iletişim kutusunda sürümü. Daha fazla bilgi için bkz: [nasıl yapılır: .NET Framework sürümü hedef](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Bir proje oluşturduğunuzda hedef .NET Framework sürümünü seçin **yeni proje** iletişim kutusu. Kullanılabilir çerçeveleri listesini seçili şablon türü için geçerli olan yüklü framework sürümlerini içerir. .NET Framework, .NET Core şablonlar, gerektirmeyen şablon türleri için **Framework** aşağı açılan liste gizlenir.
+
+![Framework açılan yeni proje iletişim kutusuna](media/vside-newproject-framework.png)
+
+Varolan bir projede hedef değiştirebilirsiniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Proje Özellikleri iletişim kutusunda sürümü. Daha fazla bilgi için bkz: [nasıl yapılır: .NET Framework sürümü hedef](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Sistem ve kullanıcı derleme başvurularını çözme
 

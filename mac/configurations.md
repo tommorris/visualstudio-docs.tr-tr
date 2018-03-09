@@ -6,28 +6,28 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: e435418c0c77f1577e9db8ab35d76d6bd54f8447
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf27e89b6a1a606b2a7430fc7d4394b8c5ab22bc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="understanding-build-configurations"></a>Derleme yapılandırmalarını anlama
 
 ## <a name="project-build-configurations"></a>Proje derleme yapılandırmaları 
 
-Projeleri birden çok yapılandırmaya sahip olabilir ve bunlar arasında geçiş yapma derleme zamanında farklı çıkış sağlar. Örneğin, bir hata ayıklama yapılandırmasını kullanırken, çıkış hata ayıklama simgeleri, işlev adları, parametreleri veya çöken bir uygulamanın yığın izlemesi değişkenlerinden gidermek hata ayıklayıcı sağlayan içerir. Hata ayıklama Yapılandırması'nı kullanarak, ancak müşteri adayları inflated dosya boyutu ve bunu dağıtım için tasarlanan bir uygulama için ideal olmayacaktır.
+Projeleri birden çok yapılandırmaya sahip olma eğilimi gösterir ve bunlar arasında geçiş yapma derleme zamanında farklı çıkış izin verir. Örneğin, bir hata ayıklama yapılandırmasını işlev adları, parametreleri veya çöken bir uygulamanın yığın izlemesi değişkenlerinden gidermek hata ayıklayıcı izin vererek, hata ayıklama simgeleri çıkarır. Bu ek bilgiler geliştirme sırasında kullanışlı olsa da, bir inflated dosya boyutuna yol açar ve dağıtım için uygun değil.
 
-Her platform, derleme için belirli yapılandırmaları gerekir. Xamarin.Android geliştirme her zaman yalnızca bir sürümü ya da hata ayıklama yapılandırmasını olacaktır. Xamarin.iOS daha fazla yapılandırmaları vardır. Yeni iOS projeleri yalnızca sahip hatalarını ayıklama veya yayın yapılandırmaları, ancak bunlar bir aygıt veya yüklü bir simulator için ayarlanabilir.
+Her platformun, derleme için belirli yapılandırmaları vardır. 
 
 ## <a name="solution-configurations"></a>Çözüm yapılandırmaları
 
-Proje yapılandırmaları benzer çözüm yapılandırmaları tüm proje için özel yapılandırmalar oluşturmak için kullanılır. Kullanarak **yapılandırma eşlemeleri** altında sekmesinde **Yapı > yapılandırmaları** öğesi atayabilirsiniz her çözüm öğesi için bir hedef yapılandırma aşağıda gösterildiği gibi:
+Proje yapılandırmaları benzer çözüm yapılandırmaları tüm proje için özel yapılandırmalar oluşturmak için kullanılır. Kullanarak **yapılandırma eşlemeleri** altında sekmesinde **Yapı > yapılandırmaları** öğesi atayabilirsiniz her çözüm öğesi için bir hedef yapılandırma aşağıdaki görüntüde gösterildiği gibi:
 
 
  ![Yapılandırma eşleme seçenekleri](media/projects-and-solutions-image3.png)
 
-Daha fazla bilgi için bkz [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) Ahmet Montemagno tarafından video.
+Yapılandırmaları hakkında daha fazla bilgi için bkz: [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) Ahmet Montemagno tarafından video.
 
 ## <a name="run-configuration"></a>Çalışma yapılandırması
 
@@ -49,7 +49,7 @@ Etkinlikler dışında `MainLauncher` gerekecek `Exported=true` fiziksel cihaz �
 
 ## <a name="examples-of-data-that-might-be-included-in-run-configurations"></a>Çalıştırma yapılandırmalarında dahil veri örnekleri
 
-Aşağıdaki liste çalıştırma yapılandırmalarında dahil veri bazı örnekleri sağlar:
+Aşağıdaki listede çalıştırma yapılandırmalarında dahil veri bazı örnekler verilmiştir:
 
 * Normal .NET projesi
     * Farklı bir başlangıç uygulaması
@@ -60,7 +60,7 @@ Aşağıdaki liste çalıştırma yapılandırmalarında dahil veri bazı örnek
 * Android projesi
     * Giriş noktası (etkinlik, hizmet, alıcı)
     * Hedefi bağımsız değişkenleri ve veri
-* iOS projesi
+* iOS project
     * Mod (Normal, arka planda getirmeye)
 * iOS uzantı projesi
     * Başlangıç uygulaması: varsayılan veya özel

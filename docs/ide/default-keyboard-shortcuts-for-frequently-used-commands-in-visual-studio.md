@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45aaccf19518572211bf9468a133989e651504bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6389e5673f589f581818d68f5652dd9529da7500
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio'daki Sık Kullanılan Komutlar için Varsayılan Klavye Kısayolları
 
@@ -66,7 +68,7 @@ Bu varsayılan klavye kısayolları seçerek Visual Studio'da sık kullanılan k
 |Edit.Delete|Delete [Genel, Ekip Gezgini]<br /><br /> veya Shift+Delete [Sıralı Diyagram, UML Etkinlik Diyagramı, Katman Diyagramı]<br /><br /> veya Ctrl+Delete [Sınıf Diyagramı]|  
 |Edit.Find|Ctrl+F [Genel]|  
 |Edit.FindAllReferences|Shift+F12 [Genel]|  
-DIT. FindinFiles|Ctrl+Shift+F [Genel]|  
+|Edit.FindinFiles|Ctrl+Shift+F [Genel]|  
 |Edit.FindNext|F3 [genel]|  
 |Edit.FindNextSelected|Ctrl+F3 [Genel]|  
 |Edit.FormatDocument|Ctrl+K, Ctrl+D [Metin Düzenleyici]|  
@@ -82,7 +84,7 @@ DIT. FindinFiles|Ctrl+Shift+F [Genel]|
 |Edit.LineDownExtendColumn|Shift+Alt+Aşağı Ok [Metin Düzenleyici]|  
 |Edit.LineOpenAbove|Ctrl+Enter [Metin Düzenleyici]|  
 |Edit.ListMembers|Ctrl+J [Metin Düzenleyici, İş Akışı Tasarımcısı]<br /><br /> veya Ctrl+K, Ctrl+L [İş Akışı Tasarımcısı]<br /><br /> veya Ctrl+K, L [İş Akışı Tasarımcısı]|  
-DIT. Gezin|Ctrl+, [Genel]|  
+|Edit.NavigateTo|Ctrl+, [Genel]|  
 |Edit.OpenFile|Ctrl+Shift+G [Genel]|  
 |Edit.OvertypeMode|Insert [Metin Düzenleyici]|  
 |Edit.ParameterInfo|Ctrl+Shift+Ara Çubuğu [Metin Düzenleyici, İş Akışı Tasarımcısı]<br /><br /> veya Ctrl+K, Ctrl+P [İş Akışı Tasarımcısı]<br /><br /> veya Ctrl+K, P [İş Akışı Tasarımcısı]|  
@@ -93,7 +95,7 @@ DIT. Gezin|Ctrl+, [Genel]|
 |Edit.SelectAll|Ctrl+A [Genel]|  
 |Edit.SelectCurrentWord|Ctrl+W [Metin Düzenleyici]|  
 |Edit.SelectionCancel|Esc [Metin Düzenleyici, Rapor Tasarımcısı, Ayarlar Tasarımcısı, Windows Form Tasarımcısı, Yönetilen Kaynak Düzenleyici]|  
-DIT. Surroundwıth|Ctrl+K, Ctrl+S [Genel]|  
+|Edit.SurroundWith|Ctrl+K, Ctrl+S [Genel]|  
 |Edit.TabLeft|Shift+Sekme [Metin Düzenleyici, Rapor Tasarımcısı, Windows Form Tasarımcısı]|  
 |Edit.ToggleAllOutlining|Ctrl+M, Ctrl+L [Metin Düzenleyici]|  
 |Edit.ToggleBookmark|Ctrl+K, Ctrl+K [Metin Düzenleyici]|  
@@ -155,7 +157,7 @@ DIT. Surroundwıth|Ctrl+K, Ctrl+S [Genel]|
 |View.ServerExplorer|Ctrl+Alt+S [Genel]|  
 |View.ShowSmartTag|Ctrl+. [Genel]<br /><br /> veya Shift+Alt+F10 [Genel, HTML Düzenleyicisi Tasarım Görünümü]|  
 |View.SolutionExplorer|Ctrl+Alt+L [Genel]|  
-görünümü. TfsTeamExplorer|CTRL +\\, Ctrl + M [genel]|  
+|View.TfsTeamExplorer|CTRL +\\, Ctrl + M [genel]|  
 |View.Toolbox|Ctrl+Alt+X [Genel]|  
 |View.ViewCode|Enter [Sınıf Diyagramı]<br /><br /> veya F7 [Ayarlar Tasarımcısı]|  
 |View.ViewDesigner|Shift+F7 [HTML Düzenleyicisi Tasarım Görünümü]|  

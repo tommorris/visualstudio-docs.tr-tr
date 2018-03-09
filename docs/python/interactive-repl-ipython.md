@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ee982a1068f2ea89299b75ca825f7a7c1c4e6b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f18ba5e7ce44766262851f68c829c887bfc9581
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Etkileşimli pencerede IPython kullanma
 
-Visual Studio etkileşimli penceresini IPython modunda etkileşimli paralel bilgi işlem özellikleri olan bir Gelişmiş henüz kullanıcı dostu etkileşimli geliştirme ortamıdır. Bu konuda tüm normal, Visual Studio etkileşimli penceresinde IPython kullanarak kılavuzluk [etkileşimli pencere](python-interactive-repl-in-visual-studio.md) özellikleri de kullanılabilir duruma gelir.
+Visual Studio etkileşimli penceresini IPython modunda etkileşimli paralel bilgi işlem özellikleri olan bir Gelişmiş henüz kullanıcı dostu etkileşimli geliştirme ortamıdır. Bu makalede, normal tüm Visual Studio etkileşimli penceresinde IPython kullanarak kılavuzluk [etkileşimli pencere](python-interactive-repl-in-visual-studio.md) özellikleri de kullanılabilir duruma gelir.
 
 Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerekli kitaplıkları içeren yüklü ortamı.
 
@@ -36,7 +36,7 @@ Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerek
 
 1. Bakmak **paketleri** (veya **PIP**) sekmesini ve emin `IPython` ve `matplotlib` listelenir. Yoksa, bunları burada yükleyin.
 
-1. Seçin **genel bakış** sekmesinde ve seçin **kullanım IPython etkileşimli mod.** (Visual Studio 2015'te seçin **etkileşimli seçenekleri yapılandırın** açmak için **seçenekleri** iletişim kutusunda, ardından **etkileşimli mod** IPython ve seçin **Tamam** ).
+1. Seçin **genel bakış** sekmesinde ve seçin **kullanım IPython etkileşimli mod.** (Visual Studio 2015'te seçin **etkileşimli seçenekleri yapılandırın** açmak için **seçenekleri** iletişim kutusunda, ardından **etkileşimli mod** IPython ve seçin **Tamam **).
 
 1. Seçin **açık etkileşimli pencere** IPython modunda etkileşimli penceresi getirmek için. Etkileşimli mod yalnızca değiştirdiyseniz penceresi sıfırlamanız gerekebilir; yalnızca Enter tuşuna basın gerekebilir bir >>> istemi belirir.
 
@@ -83,7 +83,7 @@ Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerek
 
 IPython değişkeni değiştirme sistem Kabuk kaçış gibi birçok diğer yararlı özellikleri yakalama çıktı, vb. vardır. Başvurmak [IPython belgelerine](http://ipython.org/documentation.html) daha fazla bilgi için.
 
-## <a name="related-topics"></a>İlgili konular
+## <a name="related-articles"></a>İlgili makaleler
 
 - Jupyter kolayca ve yükleme olmadan kullanmak için ücretsiz olarak deneyin [Azure not defterlerini barındırılan hizmeti](https://notebooks.azure.com/) tutun ve defterlerinizi başkalarıyla paylaşmanızı sağlayan.
 

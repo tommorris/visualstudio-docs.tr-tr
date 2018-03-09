@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: 973e7b627a7b5c121ff388874577fe59c45529d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 674bae5b22c5b9ecc5d6fda4a9a4e30e4fcd1660
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="task-comments"></a>Görev açıklamaları
 
-Kod yazarken, tamamlanmamış veya şüpheli kodu veya uyarılarla Hızlı çözümler açıkça açıklama standart bir uygulamadır. Mac için Visual Studio tarafından sağlanan varsayılan sinyal simgeleri Yapılacaklar, KORSAN, FIXME ve UNDONE, kişiselleştirilmiş belirteçleri altında tanımlanan ancak **Visual Studio > tercihleri... > ortamı > görevleri**, gösterilmiştir Aşağıda:
+Kod yazarken, tamamlanmamış veya şüpheli kodu veya uyarılarla Hızlı çözümler açıkça açıklama standart bir uygulamadır. Mac için Visual Studio tarafından sağlanan varsayılan sinyal Yapılacaklar, KORSAN, FIXME ve UNDONE belirteçleridir. Kişiselleştirilmiş belirteçleri altında tanımlanabilir **Visual Studio > tercihleri... > ortamı > görevleri**aşağıdaki görüntüde gösterildiği gibi:
 
  ![Görev listesi tercihleri](media/source-editor-image10.png)
 

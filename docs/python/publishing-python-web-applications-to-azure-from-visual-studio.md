@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 79036afd66d9c8c23ffb6351d6fd5329004479f9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 73e82e70733e12116250e47850bbcf1edff13a6d
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Azure uygulama hizmeti yayımlama
 
@@ -74,7 +74,7 @@ Geçici bir uygulama hizmeti bir Azure aboneliğine gerek duymadan aşağıdaki 
 
 ## <a name="configure-python-on-azure-app-service"></a>Azure uygulama hizmeti Python yapılandırın
 
-Bir uygulama hizmeti boş bir sahip olduktan sonra Web çalışan uygulama (veya aboneliğinizdeki ücretsiz bir sitede), açıklandığı gibi Python seçilen sürümünü yükleyin [yönetme Python Azure App Service'te](managing-python-on-azure-app-service.md). Visual Studio 2017 yayımlama için bu konuda açıklandığı gibi yüklü olan site uzantısı Python yorumlayıcı tam yolunu kaydedin.
+Bir uygulama hizmeti boş bir sahip olduktan sonra Web çalışan uygulama (veya aboneliğinizdeki ücretsiz bir sitede), açıklandığı gibi Python seçilen sürümünü yükleyin [yönetme Python Azure App Service'te](managing-python-on-azure-app-service.md). Visual Studio 2017 yayımlama için bu makalede anlatıldığı gibi olan site uzantısı yüklü Python yorumlayıcı tam yolunu kaydedin.
 
 İsterseniz, ayrıca yükleyebilirsiniz `bottle` işlemi bu yönergeleri kullanarak diğer parçası Bu izlenecek adımları şekilde, paketin yüklü olarak paketi.
 

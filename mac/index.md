@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: bc836806e1acf33b35604419ac1d6aad41a2d795
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d12331bd074f77db83ae4574195b8b6f7e5c452a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Mac için Visual Studio Tanıtımı
 
-Mac için Visual Studio modern, sofistike IDE taşınabilir, masaüstü ve web uygulamaları oluşturmak için birçok özelliklere sahip olur. Geliştirme aşağıdakileri destekler:
+Mac için Visual Studio modern, sofistike IDE taşınabilir, masaüstü ve web uygulamaları oluşturmak için birçok özelliklere sahip olur. Geliştirme destekler:
 
 * .NET ile Mobile: Android, iOS, tvOS, watchOS
 * Mac Masaüstü uygulamaları
@@ -22,9 +22,9 @@ Mac için Visual Studio modern, sofistike IDE taşınabilir, masaüstü ve web u
 * ASP.NET Core Web uygulamaları
 * Platformlar arası Unity oyunlar
 
-Bir zengin Düzenleyicisi, hata ayıklama, iOS, Mac ve Android ile yerel platform tümleştirme içerir ve kaynak denetimi birkaçı özelliklerinin ad tümleşik.
+Hata ayıklama, iOS, Mac ve Android ile yerel platform tümleştirme zengin bir düzenleyici gibi özellikler içerir ve kaynak denetimleri tümleşik.
 
-Bu konu, Mac, platformlar arası uygulamalar oluşturmak için güçlü bir araç olun özelliklerinden bazıları bakma sağlamak için Visual Studio çeşitli bölümlerini araştırmalarını.
+Bu makalede, Mac, platformlar arası uygulamalar oluşturmak için güçlü bir araç olun özelliklerinden bazıları bakma sağlamak için Visual Studio çeşitli bölümlerini araştırmalarını.
 
 ## <a name="installation"></a>Yükleme
 
@@ -36,7 +36,7 @@ Mac için Visual Studio geliştirme, C# ve F #'ta, varsayılan olarak destekler.
 
 ### <a name="c"></a>C#
 
-C# en yaygın olarak dil Mac için Visual Studio'da platformlar arası uygulamalar oluşturmak için kullanılır Bu, tüm C# 7 özellikleri için tam destek içerir.
+C# en yaygın olarak dil Mac için Visual Studio'da platformlar arası uygulamalar oluşturmak için kullanılır IDE tüm C# 7 özellikleri için tam destek vardır.
 
 ### <a name="f"></a>F#
 
@@ -71,11 +71,11 @@ Başlamak için mobil uygulamaları denetleyin [uygulamalı Laboratuvar](https:/
 
 Visual Studio tümleşik kendi Android SDK manager vardır.
 
-Android uygulamaları için Mac için Visual Studio ile Android çalışır kendi Tasarımcısı içeren `.axml` görsel olarak kullanıcı arabirimleri oluşturmak için dosyaları. Mac için Visual Studio bu dosyaları, aşağıda gösterildiği gibi kendi Android Tasarımcısı'nda, açılır:
+Android uygulamaları için Mac için Visual Studio ile Android çalışır kendi Tasarımcısı içeren `.axml` görsel olarak kullanıcı arabirimleri oluşturmak için dosyaları. Mac için Visual Studio bu dosyalar, Android Tasarımcısı'nda aşağıdaki görüntüde gösterildiği gibi açılır:
 
 ![](media/intro-image31.png)
 
-Android designer bkz: hakkında daha fazla bilgi için [Tasarımcısı genel bakış](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview) belge.
+Android Tasarımcısı hakkında daha fazla bilgi için bkz: [Tasarımcısı genel bakış](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview) belge.
 
 ### <a name="ios"></a>iOS
 
@@ -83,7 +83,7 @@ Android designer bkz: hakkında daha fazla bilgi için [Tasarımcısı genel bak
 
 ![](media/intro-image30.png)
 
-İOS Tasarımcısı kullanma hakkında daha fazla bilgi için başvurmak [Tasarımcısı](https://developer.xamarin.com/guides/ios/user_interface/designer) belgeleri.
+İOS Tasarımcısı kullanma hakkında daha fazla bilgi için bkz: [Tasarımcısı](https://developer.xamarin.com/guides/ios/user_interface/designer) belgeleri.
 
 ### <a name="mac"></a>Mac
 
@@ -112,14 +112,14 @@ Xamarin denetçisi bir etkileşimli C# Konsolu araçları ile kullanıcılara sa
 
 ![](media/intro-inspector.png)
 
-Çeşitli programlama platformlarında (Android, iOS, Mac ve Windows), IDE hata ayıklama akışına tümleştirme yanı sıra hedefleyen bir zengin C# Konsolu sağlayan bir tek başına uygulaması oluşur.
+Çeşitli platformlar (Android, iOS, Mac ve Windows) programlama yanı sıra, IDE hata ayıklama akışına tümleştirme hedefleyen bir zengin C# Konsolu sağlayan bir tek başına uygulaması oluşur.
 
-Daha fazla bilgi için bkz [Xamarin denetçisi](https://developer.xamarin.com/guides/cross-platform/inspector/) Kılavuzu.
+Daha fazla bilgi için bkz: [Xamarin denetçisi](https://developer.xamarin.com/guides/cross-platform/inspector/) Kılavuzu.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-* **Büyük resim alma** - Mac için Visual Studio'da bulunan önemli özelliklerin çoğunu özetini almak için Visual Studio Mac için bkz [IDE Turu](~/ide-tour.md).
-* **Kurulum** - indirin ve Visual Studio yükleme, bkz: hakkında bilgi almak için [yükleme](~/installation.md) Kılavuzu.
+* **Turu alma** - Mac için Visual Studio'da bulunan önemli özelliklerin çoğunu özetini almak için Visual Studio Mac için bkz [IDE Turu](~/ide-tour.md).
+* **Ayarlanan** - indirin ve Visual Studio yükleme, bkz: hakkında bilgi almak için [yükleme](~/installation.md) Kılavuzu.
 * **Xamarin öğreticileri** - Xamarin Git nasıl kod Xamarin ile geliştirme hakkında daha fazla bilgi için [Geliştirici Merkezi](https://developer.xamarin.com).
 * **Videolar** - Mac için diğer özellikler ve Visual Studio yönlerini hakkında daha fazla bilgi için üzerinde videosuna göz atın [Xamarin University](https://university.xamarin.com) Web sitesi.
 * **Uygulamalı Labs** - Mac için Visual Studio'da bulunan çeşitli iş yükleri ile çalışmaya başlamak için kullanıma [uygulamalı labs](https://github.com/Microsoft/vs4mac-labs).

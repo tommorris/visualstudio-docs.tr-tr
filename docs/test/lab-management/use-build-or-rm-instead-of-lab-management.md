@@ -1,11 +1,7 @@
 ---
-title: "Otomatikleştirilmiş test için derleme veya yayın Yönetimi kullanın | Microsoft Docs"
-ms.custom: 
-ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
+title: "Otomatikleştirilmiş test Visual Studio'da derleme veya yayın yönetimi kullanmak | Microsoft Docs"
+ms.date: 03/02/2018
 ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - automated testing, lab management, test lab
@@ -14,33 +10,25 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25f1007458b691b97f0ea852a1bf0e7325d79d8a
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: b12bffb6f2e5df0209fd3dfe3ea5fd005897d58d
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Derleme ve sürüm Yönetimi yerine Laboratuvar Yönetimi otomatikleştirilmiş test için kullanın.
 
-Otomatik test için veya derleme, dağıtma, test otomasyonu için Microsoft Test Yöneticisi'ni (MTM) ve Laboratuvar Yönetimi kullanıyorsanız, bu konuda, kullanarak aynı hedefleri nasıl elde edebilirsiniz açıklanmaktadır [yapı &amp; sürüm](https://www.visualstudio.com/team-services/continuous-integration/) takım özellikleri Foundation Server (TFS) ve Visual Studio Team Services:
+Otomatik test için veya derleme, dağıtma, test otomasyonu için Microsoft Test Yöneticisi'ni (MTM) ve Laboratuvar Yönetimi kullanıyorsanız, bu konuda, kullanarak aynı hedefleri nasıl elde edebilirsiniz açıklanmaktadır [derleme ve sürüm](/vsts/build-release/) Team Foundation'da özellikleri Server (TFS) ve Visual Studio Team Services (VSTS).
 
-* [Derleme, dağıtma, test Otomasyonu](#bdtautomation)
-
-* [SCVMM ortamları Self Servis Yönetimi](#managescvmm)
-
-* [Yalıtılmış ağ ortamları oluşturma](#isolatedenvir)
-
-<a name="bdtautomation"></a>
 ## <a name="build-deploy-test-automation"></a>Derleme, dağıtma, test Otomasyonu
 
-MTM ve Laboratuvar Yönetimi derleme, dağıtma ve uygulamalarınızın test otomatikleştirmek için bir XAML yapı tanımına kullanır.
-XAML yapı içindeki bir laboratuvar ortamı, test paketlerini ve test ayarları gibi oluşturulan çeşitli yapılar ve yapı denetleyicisi, yapı aracıları, Test denetleyicisi ve Test aracılarını bu hedefe ulaşmak için gibi çeşitli altyapı bileşenlerini dayanır. Derleme veya TFS ve Team Services yayın yönetimini kullanarak daha az adım ile aynı gerçekleştirebilirsiniz.
+MTM ve Laboratuvar Yönetimi derleme, dağıtma ve uygulamalarınızın test otomatikleştirmek için bir XAML yapı tanımına kullanır. XAML yapı içindeki bir laboratuvar ortamı, test paketlerini ve test ayarları gibi oluşturulan çeşitli yapılar ve yapı denetleyicisi, yapı aracıları, Test denetleyicisi ve Test aracılarını bu hedefe ulaşmak için gibi çeşitli altyapı bileşenlerini dayanır. Derleme veya TFS ve Team Services yayın yönetimini kullanarak daha az adım ile aynı gerçekleştirebilirsiniz.
 
 | Adımlar | XAML yapı ile | Derleme veya yayın Yönetimi |
 |-------|----------------------|-----------------|
 | Yapı dağıtmak ve testleri çalıştırmak için makineler tanımlayın. | Standart laboratuvar ortamı ile bu makineleri MTM içinde oluşturun. | yok |
 | Çalıştırılacak testleri tanımlayın. | MTM içinde bir test paketi oluşturun, test durumları oluşturmak ve Otomasyon her test çalışması ile ilişkilendirebilirsiniz. Test ayarları makineleri testleri çalıştırmalısınız laboratuvar ortamında rol tanımlayan MTM oluşturun. | Test planları test yönetmeyi planlıyorsanız otomatikleştirilmiş test paketi MTM aynı şekilde oluşturun. Alternatif olarak, doğrudan test ikili dosyaları derlemeleriniz tarafından üretilen gelen testleri çalıştırmak istiyorsanız, bunu atlayabilirsiniz. Test ayarları her iki durumda da oluşturmak için gerek yoktur. |
-| Dağıtım ve sınama otomatikleştirin. | LabDefaultTemplate.*.xaml kullanarak bir XAML yapı tanımı oluşturun. Derleme, test paketleri ve laboratuvar ortamında yapı tanımında belirtin. | Oluşturma bir [derleme tanımı veya bir yayın tanımı](https://www.visualstudio.com/team-services/continuous-integration/) tek bir ortamı. Komut satırı görevini kullanarak aynı dağıtım komut dosyası (XAML yapı tanımından) ve Test aracısı dağıtımı ve işlevsel Testleri Çalıştır görevlerini kullanarak otomatikleştirilmiş testleri çalıştırın. Bu görevler için girdi olarak makine ve kimlik bilgilerini listesini belirtin. |
+| Dağıtım ve sınama otomatikleştirin. | LabDefaultTemplate.*.xaml kullanarak bir XAML yapı tanımı oluşturun. Derleme, test paketleri ve laboratuvar ortamında yapı tanımında belirtin. | Oluşturma bir [yapı veya serbest tanımı](/vsts/build-release/) tek bir ortamı. Komut satırı görevini kullanarak aynı dağıtım komut dosyası (XAML yapı tanımından) ve Test aracısı dağıtımı ve işlevsel Testleri Çalıştır görevlerini kullanarak otomatikleştirilmiş testleri çalıştırın. Bu görevler için girdi olarak makine ve kimlik bilgilerini listesini belirtin. |
 
 Bu senaryo için derleme veya yayın Yönetimi kullanmanın avantajları bazıları şunlardır:
 
@@ -53,10 +41,9 @@ Bu senaryo için derleme veya yayın Yönetimi kullanmanın avantajları bazıla
 * Özelleştirme ve birden çok test ortamları ve hatta üretim kolayca dağıtmak için Otomasyon genişletir.
 * Bir giriş veya yürütme olduğunda veya belirli bir zamanda her gün gerçekleşecek şekilde Otomasyon zamanlayabilirsiniz.
 
-<a name="managescvmm"></a>
 ## <a name="self-service-management-of-scvmm-environments"></a>SCVMM ortamları Self Servis Yönetimi
 
-[Laboratuvar Merkezi Microsoft Test Yöneticisi'nde](https://msdn.microsoft.com/library/dd997438.aspx) yanı sıra bir ortam şablonları kitaplığı yönetme kullanarak isteğe bağlı üzerinde ortamları sağlama yeteneği destekleyen bir [SCVMM sunucusu](https://technet.microsoft.com/system-center-docs/vmm/vmm).
+[Laboratuvar Merkezi Microsoft Test Yöneticisi'nde](https://msdn.microsoft.com/library/dd997438.aspx) yanı sıra bir ortam şablonları kitaplığı yönetme kullanarak isteğe bağlı üzerinde ortamları sağlama yeteneği destekleyen bir [SCVMM sunucusu](/system-center/vmm/overview?view=sc-vmm-1801).
 
 Self Servis sağlama özelliklerini Laboratuvar Merkezi iki ayrı amacı vardır:
 
@@ -66,16 +53,15 @@ Self Servis sağlama özelliklerini Laboratuvar Merkezi iki ayrı amacı vardır
 
 Ancak, daha zengin genel ve özel bulut evrimi yönetim sistemleri gibi verilen [Microsoft Azure](https://azure.microsoft.com/) ve [Microsoft Azure yığın](https://azure.microsoft.com/overview/azure-stack/), altyapı yönetimi özelliklerine hiçbir evrimi yok TFS 2017 ve ötesine. Bunun yerine, kolay gibi bulut altyapılar aracılığıyla yönetilen kaynaklarının kullanımını odaklanmak devam eder.
 
-(Test veya dağıtım olmaları durumunda Laboratuvar Merkezi ve bunları TFS ve Team Services veya SCVMM ya da (altyapı yönetimi etkinlikleri olmaları durumunda) Azure aracılığıyla gerçekleştirmek nasıl gerçekleştirmek için kullanılan normal etkinliklerin aşağıdaki tabloda özetlenmiştir. Aktiviteler):
+(Test veya dağıtım etkinlikleri olmaları durumunda) Laboratuvar Merkezi ve (altyapı yönetimi etkinlikleri olmaları durumunda) nasıl, bunları SCVMM veya Azure yapabilirsiniz veya TFS ve Team Services aracılığıyla gerçekleştirmek tipik etkinlikleri aşağıdaki tabloda özetlenmiştir:
 
 | Adımlar | Laboratuvar Merkezi ile | Derleme veya yayın Yönetimi |
 |-------|----------------------|-----------------|
-| Bir ortam şablonları kitaplığı yönetin. | Bir laboratuvar ortamı oluşturun. Sanal makinelerde gerekli yazılımı yükleyin. Sysprep ve depolama ortamı Kitaplığı'nda bir şablon olarak. | SCVMM Yönetim konsolunu doğrudan oluşturmak ve sanal makine şablonları veya hizmet şablonları yönetmek için kullanın. Azure kullanırken, önceden tanımlanmış birini seçin [Azure Resource Manager şablonları](https://azure.microsoft.com/documentation/templates/) gelen [Azure Marketi](https://azure.microsoft.com/marketplace/) veya [Azure hızlı başlangıç şablonlarını](https://azure.microsoft.com/documentation/templates/). |
+| Bir ortam şablonları kitaplığı yönetin. | Bir laboratuvar ortamı oluşturun. Sanal makinelerde gerekli yazılımı yükleyin. Sysprep ve depolama ortamı Kitaplığı'nda bir şablon olarak. | SCVMM Yönetim konsolunu doğrudan oluşturmak ve sanal makine şablonları veya hizmet şablonları yönetmek için kullanın. Azure kullanırken aşağıdakilerden birini seçin [Azure hızlı başlangıç şablonlarını](/resources/templates/). |
 | Bir laboratuvar ortamı oluşturun. | Kitaplıkta bir ortam şablonunu seçin ve dağıtın. Sanal makine yapılandırmalarının özelleştirmek için gerekli parametreleri belirtin. | Doğrudan şablonlardan sanal makineler veya hizmet örnekleri oluşturmak için SCVMM Yönetim konsolunu kullanın. Doğrudan kaynak oluşturmak için Azure portalını kullanın. Veya bir yayın tanımı bir ortam oluşturabilirsiniz. Kullanım Azure görevler veya gelen görevleri [SCVMM Tümleştirme Uzantısı](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) yeni sanal makineler oluşturmak için. Bu tanım yeni bir sürüm oluşturma, Laboratuvar Merkezi'nde yeni bir ortam oluşturmaya eşdeğerdir. |
 | Makinelere bağlayın. | Laboratuvar ortamını Ortam Görüntüleyicisi'nde açın. | Doğrudan sanal makinelere bağlanmak için SCVMM Yönetim konsolunu kullanın. Alternatif olarak, uzak masaüstü oturumları açmak için IP adresi veya sanal makinelerin DNS adlarını kullanın. |
 | Bir ortamın bir denetim noktası almak veya bir ortam için temiz bir kontrol noktası geri yükleyin. | Laboratuvar ortamını Ortam Görüntüleyicisi'nde açın. Bir denetim noktası almak için veya bir önceki kontrol noktasına geri yüklemek için seçeneği seçin. | Doğrudan sanal makinelerde bu işlemleri gerçekleştirmek için SCVMM Yönetim konsolunu kullanın. Veya daha büyük bir Otomasyon bir parçası olarak bu adımları gerçekleştirmek için denetim noktası görevlerden dahil [SCVMM Tümleştirme Uzantısı](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) yayın tanımında ortamının bir parçası olarak. |
 
-<a name="isolatedenvir"></a>
 ## <a name="creation-of-network-isolated-environments"></a>Yalıtılmış ağ ortamları oluşturma
 
 Ağ yalıtılmış laboratuvar ortamında ağ çakışmalarına neden olmadan güvenli bir şekilde kopyalanabilen SCVMM sanal makineler grubudur. Bu MTM içinde bir dizi ortak bir ağda sanal makineleri yapılandırmak için özel bir ağda sanal makineleri yapılandırmak için ağ arabirim kartları kümesi ve başka bir ağ arabirimi kartları kümesi kullanılan yönergeleri kullanarak gerçekleştirilir.

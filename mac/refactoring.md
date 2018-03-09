@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: ba92cd9a0e9ca28d132116f65fd41758bce1a1f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 925c928e171b76af76304074e736fd8962158564
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="refactoring"></a>Yeniden Düzenle
 
-Kodu yeniden düzenleme, yeniden düzenlemesine, yeniden yapılandırmayı ve kod genel davranış değişmez hala sağlarken var olan kodu açıklamak için bir yoldur.
+Kodu yeniden düzenleme, yeniden düzenlemesine, yeniden yapılandırmayı ve kod genel davranışını değişmeyen sağlarken var olan kodu açıklamak için bir yoldur.
 
-Bu, tüm diğer geliştirici veya için koda başvuran kullanıcı çok daha kullanışlı, okunabilir ve sürdürülebilir yapma healthier bir kod temeli üretir.
+Yeniden düzenleme veya herhangi diğer geliştirici veya koda başvuran kullanıcı daha kullanışlı, okunabilir ve sürdürülebilir hale healthier bir kod temeli oluşturur.
 
-Mac'ın tümleştirmesi için Visual Studio Roslyn, Microsoft'un açık kaynaklı .NET derleyici platformu ile daha fazla bilgi için tam olarak en son C# sürümünü destekleyen yanı sıra operations yeniden düzenleme sağlar.
+Roslyn, Microsoft'un açık kaynaklı .NET derleyici platformu ile Mac'ın tümleştirmesi için Visual Studio için daha fazla düzenleme işlemlerine izin verir.
 
 ## <a name="renaming"></a>Yeniden adlandırma 
 

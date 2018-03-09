@@ -6,23 +6,23 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 2f6c06ff640007f28cfaed6512fdedc5dcb16e65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a8e32df2248f53a2b46a971b025b1138abba5101
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="setting-up-a-git-repository"></a>Bir Git deposu ayarlama
 
 Git takımlar aynı belgelerde aynı anda çalışmasına izin veren bir dağıtılmış sürüm denetim sistemidir. Bu, tüm dosyaları içeren tek bir sunucu yoktur, ancak bu merkezi kaynağından bir depo kullanıma olduğunda, tüm depo makinenize yerel olarak kopyalanan anlamına gelir.
 
-GitHub bunlardan ancak en yaygın bir durumdur, sürüm denetimi için Git ile çalışmanıza olanak sağlayan birçok uzak ana bilgisayarların vardır. Aşağıdaki örnek bir GitHub konak kullanır, ancak Visual Studio'daki sürüm denetimi için Mac için herhangi bir Git ana kullanabilirsiniz
+GitHub ancak yaygın bir ana bilgisayardır sürüm denetimi için Git ile çalışmaya izin birçok uzak ana bilgisayarda vardır. Aşağıdaki örnek, bir GitHub konak kullanır, ancak Visual Studio'daki sürüm denetimi için Mac için herhangi bir Git ana kullanabilirsiniz
 
-GitHub kullanmak istiyorsanız, bir hesap oluşturulur ve aşağıdaki adımları izlemeden önce yapılandırılmış olduğundan emin olun. 
+GitHub kullanmak istiyorsanız, bir hesap oluşturulur ve bu makaledeki adımları izlemeden önce yapılandırılmış olduğundan emin olun. 
 
 ## <a name="creating-a-remote-repo-on-github"></a>Uzak bağlantıların Github'da oluşturma
 
-Aşağıdaki örnek bir GitHub konak kullanır, ancak Visual Studio'daki sürüm denetimi için Mac için herhangi bir Git ana kullanabilirsiniz
+Aşağıdaki örnek, bir GitHub konak kullanır, ancak Visual Studio'daki sürüm denetimi için Mac için herhangi bir Git ana kullanabilirsiniz
 
 Bir Git deposu ayarlama için aşağıdaki adımları yürütün:
 
@@ -34,20 +34,22 @@ Bir Git deposu ayarlama için aşağıdaki adımları yürütün:
 
     ![Git deposu ayarlama ayrıntıları](media/version-control-git2.png)
 
-3. Sonraki yer görüntülemek ve az önce oluşturduğunuz depoya HTTPS veya SSH adresi kopyalamak için bir seçenek verecektir:
+3. Sonraki sayfada görüntülemek ve HTTPS veya SSH adresi oluşturduğunuz deposuna kopyalamak için bir seçenek sunar:
 
-    ![görüntüleme ve kopyalama adresi](media/version-control-git3.png) Mac için bu depoya noktası Visual Studio için HTTPS adresi gerekir.
+    ![görüntüleme ve kopyalama adresi](media/version-control-git3.png)
+
+  Mac için bu depoya noktası Visual Studio için HTTPS adresi gerekir.
 
 
 ## <a name="publishing-an-existing-project"></a>Varolan projeyi yayımlama
 
 4. Mac için açık projenizi Visual Studio'da dönün 
 
-5. Menü çubuğunda seçin **sürüm denetimi > Sürüm denetimi Yayımla...** :
+5. Menü çubuğunda seçin **sürüm denetimi > Sürüm denetimi Yayımla...** Görüntülenecek **depo seçin** iletişim:
 
     ![Mac için Visual Studio Başlangıç checkout](media/version-control-git4-sml.png)
 
-6. Bu görüntüler **depo seçin** iletişim. Seçin **kayıtlı depoları** sekmesi ve tuşuna **Ekle** düğmesi:
+6. Seçin **kayıtlı depoları** sekmesi ve tuşuna **Ekle** düğmesi:
 
     ![](media/version-control-git5.png)
 
@@ -57,23 +59,23 @@ Bir Git deposu ayarlama için aşağıdaki adımları yürütün:
 
     Git için bağlanmak için SSH kullanmak da mümkündür unutmayın.
 
-8. Git için uygulamayı yayımlama girişimi için oluşturduğunuz havuzu seçin ve emin olun her ikisi de **modül adı** ve **ileti** metin alanları tamamlanır:
+8. Git için uygulamayı yayımlama girişimi için depo seçin ve emin her ikisi de **modül adı** ve **ileti** metin alanları tamamlanır:
 
     ![Proje için git yayımlamayı deneyin](media/version-control-git7.png)
 
 9. Tıklatın **Tamam**ve ardından **Yayımla** uyarı iletişim kutusundan.
 
-10. Zaten Git kimlik bilgilerinizi Visual Studio'da Mac tercihlerini girmediyseniz, şimdi girin. İlk olarak, bir erişim yerine bir parola kullanılan belirteç, oluşturmanız gerekir. Git adımları [erişim belirteci](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) Bunu yapmak için belgeleri.
+10. Zaten Git kimlik bilgilerinizi Visual Studio'da Mac tercihlerini girmediyseniz, şimdi girin. İlk olarak, bir erişim yerine bir parola kullanılan belirteç, oluşturmanız gerekir. Bir erişim belirteci oluşturmadıysanız, Git adımları [erişim belirteci](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) belgeleri.
 
 11. Kullanıcı adı ve kişisel erişim belirteci, girin ve basın **Tamam**:
 
     ![Git için kullanıcı adı ve parola girin](media/version-control-git9-sml.png)
 
-12. Birkaç saniye sonra çözümü kendi ilk işleme ile yayımlanması gerekir. Bu, artık birçok seçenek ile doldurulması gerekir sürüm denetimi menü öğesi göz atarak onaylayın: 
+12. Birkaç saniye sonra çözümü kendi ilk işleme ile yayımlanması gerekir. Şimdi birçok seçenek ile doldurulması gerekir sürüm denetimi menü öğesi göz atarak yayımlandı onaylayın: 
 
     ![Sürüm Denetim menüsü](media/version-control-git10.png)
 
-13. Ek yapmak başladığınızda değişiklikleri seçin **anında değişiklikleri...**  değişiklikleri göndermek için **uzak** deposu. Bu, tüm uygun kullanıcıların üzerinde github.com'u görüntülemesine izin verir: 
+13. Ek değişiklikler yapmak başladıktan sonra seçin **anında değişiklikleri...**  değişiklikleri göndermek için **uzak** deposu. Bu, tüm uygun kullanıcıların üzerinde github.com'u görüntülemesine izin verir: 
 
     ![Uzak depo değişiklikleri gönderin](media/version-control-git11.png)
 

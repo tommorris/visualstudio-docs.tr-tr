@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 52867e51e158f2e2c2ccbccba7466c1f7246e128
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: bb520f317eb285bcc278ff9f37bb2dc25c91e950
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>R kodu ile çalışma alanları çalıştığı denetleme
 
@@ -31,17 +31,6 @@ Açmak için **çalışma alanları** penceresi, kullanım **R Araçlar > Window
 ![Visual Studio (VS2017) için R Araçları penceresinde çalışma alanları](media/workspaces-window.png)
 
 Bu pencerede, yeşil onay işareti RTVS bağlandığı etkin çalışma alanı gösterir. Mavi ok seçerek etkin çalışma alanı ayarlar. Her çalışma sağındaki ayarları (dişli) simgesini adını, konumunu ve komut satırı bağımsız değişkenleri değiştirmenize izin verir. Kırmızı X el ile eklenen bir çalışma alanı kaldırır.
-
-Bu konuda:
-
-- [Kaydetme ve bir çalışma alanı sıfırlama](#saving-and-resetting-a-workspace)
-- [Yerel çalışma alanları](#local-workspaces)
-- [Uzak çalışma alanları](#remote-workspaces)
-- [Uzaktan çalışma oturum açma](#remote-workspace-logon)
-- [Çalışma alanları arasında geçiş yapma](#switching-between-workspaces)
-- [Yerel ve uzak bilgisayarlarda dizinleri](#directories-on-local-and-remote-computers)
-- [Uzaktan çalışma alanlarına proje dosyalarını kopyalama](#copying-project-files-to-remote-workspaces)
-- [Uzaktan çalışma alanından dosyaları kopyalama](#copying-files-from-a-remote-workspace)
 
 ## <a name="saving-and-resetting-a-workspace"></a>Kaydetme ve bir çalışma alanı sıfırlama
 

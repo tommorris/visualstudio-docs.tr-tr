@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e68fff14ea51816ae45a29410d09cb6633689534
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 95ef8e1c5be39119574f838df93d067a7404f7f5
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="formatting-python-code"></a>Python kodu biçimlendirme
 
@@ -30,9 +30,13 @@ Visual Studio önceden yapılandırılmış biçimlendirme seçeneklerini eşle�
 - Bir seçim biçimlendirmek için: seçin **Düzenle > Gelişmiş > Biçim Seçimi** veya Ctrl + E, f tuşlarına basın
 - Tüm dosya biçimine: seçin **Düzenle > Gelişmiş > biçimi belge** veya Ctrl + E, d tuşlarına basın
 
-Seçenekler aracılığıyla ayarlanır **Araçlar > Seçenekler > Metin Düzenleyicisi > Python > biçimlendirme** ve iç içe geçmiş sekmelerinin ve varsayılan olarak bir alt kümesi eşleşecek şekilde ayarlanır [CESARETLENDİRİCİ 8 Stil Kılavuzu](http://www.python.org/dev/peps/pep-0008/). **Genel** sekmesini belirler zaman biçimlendirme uygulanır; ayarlarını diğer üç sekme, bu konudaki açıklanmıştır.
+Seçenekler aracılığıyla ayarlanır **Araçlar > Seçenekler > Metin Düzenleyicisi > Python > biçimlendirme** ve iç içe geçmiş sekmelerinin. Seçmenize gerek **tüm ayarları göster** görünmesi Bu seçenekler için:
 
-[Python desteği Visual Studio'da](installing-python-support-in-visual-studio.md) de yararlı ekler [doldurun açıklama paragraf](#fill-comment-paragraph-command) komutu **Düzenle > Gelişmiş** anlatılmaktadır açıklandığı gibi menüsü.
+![Biçimlendirme seçenekleri Visual Studio'da Python](media/options-editor-formatting.png)
+
+Biçimlendirme seçenekleri varsayılan olarak, bir üst eşleşecek şekilde ayarlanır [CESARETLENDİRİCİ 8 Stil Kılavuzu](http://www.python.org/dev/peps/pep-0008/). **Genel** sekmesini belirler zaman biçimlendirme uygulanır; diğer üç sekme ayarlarını, bu makaledeki açıklanmıştır.
+
+[Python desteği Visual Studio'da](installing-python-support-in-visual-studio.md) de yararlı ekler [doldurun açıklama paragraf](#fill-comment-paragraph-command) komutu **Düzenle > Gelişmiş** bir sonraki bölümde açıklandığı gibi menüsü.
 
 ## <a name="spacing"></a>Aralığı
 

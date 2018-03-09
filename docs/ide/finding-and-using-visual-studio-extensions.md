@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f3057ae7cf987c19e87329894249031b3af29806
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Bulma ve Visual Studio uzantıları kullanma
 
@@ -73,7 +73,7 @@ Otomatik güncelleştirmeleri devre dışı bırakmak istiyorsanız, tüm uzant�
 
 Yeni **Visual Studio 2017 sürüm 15.3**, Visual Studio hakkında sizi uyarır, uzantı önceki bir oturumu sırasında bir çökmesine neden dahil şüphelendiği durumunda. Visual Studio kilitlendiğinde özel durum yığını depolar. Visual Studio başlatır, sonraki açışınızda yaprak ile başlayan ve temel çalışma yığınının inceler. Visual Studio bir çerçeve yüklü ve etkin uzantının bir parçası olan bir modüle ait olduğunu belirlerse, bir bildirim gösterilir.
 
-Yeni **Visual Studio 2017 sürüm 15,6 preview 3**, Visual Studio de bildirir, bir uzantı yanıt vermediği için kullanıcı Arabirimi neden suspects durumunda.
+Yeni **Visual Studio 2017 sürüm 15,6**, Visual Studio de bildirir, bir uzantı yanıt vermediği için kullanıcı Arabirimi neden suspects durumunda.
 
 Bu bildirimler gösterilen sırada bildirimi yok sayabilirsiniz veya aşağıdaki eylemlerden birini gerçekleştirin:
 

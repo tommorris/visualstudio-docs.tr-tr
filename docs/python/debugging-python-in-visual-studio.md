@@ -2,7 +2,7 @@
 title: "Visual Studio'da Python kodu hata ayıklama | Microsoft Docs"
 description: "Visual Studio'da hata ayıklama özelliği özellikle kesme noktalarını ayarlama, Adımlama, değerleri inceleyerek, özel durumları görmek ve etkileşimli penceresinde hata ayıklama dahil olmak üzere Python kodu için bir kılavuz."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,17 +17,17 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="debugging-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
 Visual Studio, Python, çalışan işlemlere, ekleme de dahil olmak üzere izleme ifadelerinde değerlendirmek için kapsamlı bir hata ayıklama deneyimini sağlar ve hemen windows, yerel değişkenleri, kesme noktaları, inceleniyor içinde/çıkış/üzerinden deyimleri, ayarlamak sonraki adım İfade ve daha fazlası.
 
-Ayrıca aşağıdaki senaryoya özgü hata ayıklama konulara bakın:
+Ayrıca aşağıdaki senaryoya özgü hata ayıklama makalelerine bakın:
 
 - [Linux uzaktan hata ayıklama](debugging-python-code-on-remote-linux-machines.md)
 - [Azure uzaktan hata ayıklama](debugging-remote-python-code-on-azure.md)
@@ -51,7 +51,7 @@ Ayrıca aşağıdaki senaryoya özgü hata ayıklama konulara bakın:
 
 Temel hata ayıklama iş akışı aracılığıyla koda atlama, değerlerini inceleme ve aşağıdaki bölümlerde açıklandığı gibi özel durumları işleme ayarları kesme noktaları içerir. Visual Studio hata ayıklayıcısı hakkında tam bilgi için bkz: [Visual Studio'da hata ayıklamayı](../debugger/debugging-in-visual-studio.md).
 
-Hata ayıklama oturumu ile başlayan **hata ayıklama > hata ayıklamayı Başlat** komutu, **Başlat** araç veya F5 tuşuna düğmesine. Bu Eylemler, projenizin başlangıç dosyasını çalıştırın (gösterilen Çözüm Gezgini'nde kalın) projenin etkin ortam ve komut satırı bağımsız değişkenleri ya da proje özellikleri'nde belirtilen arama yolları (bkz [proje hata ayıklama Seçenekler](#project-debugging-options). Herhangi bir nedenden dolayı bir başlangıç dosya kümesine sahip değilseniz, ancak bir Python çıktı penceresi kısaca görüntülenir ve kaybolur. Bu durumda, uygun dosyasını sağ tıklatın ve seçin **başlangıç dosyası olarak ayarlamak**.
+Hata ayıklama oturumu ile başlayan **hata ayıklama > hata ayıklamayı Başlat** komutu, **Başlat** araç veya F5 tuşuna düğmesine. Bu Eylemler, projenizin başlangıç dosyasını çalıştırın (gösterilen Çözüm Gezgini'nde kalın) projenin etkin ortam ve komut satırı bağımsız değişkenleri ya da proje özellikleri'nde belirtilen arama yolları (bkz [proje hata ayıklama Seçenekler](#project-debugging-options). **Visual Studio 2017 sürüm 15,6** ve daha sonra ayarlanmış bir başlatma dosyası yoksa sizi uyarır; önceki sürümlerinde çalıştıran Python yorumlayıcı ile bir çıktı penceresi açık veya çıktı penceresini kısaca görünür ve kaybolur. Herhangi bir durumda, uygun dosyasını sağ tıklatın ve seçin **başlangıç dosyası olarak ayarlamak**.
 
 > [!Note]
 > Hata ayıklayıcı her zaman etkin Python ortamı projesi için başlar. Ortam değiştirmek için farklı bir etkin açıklandığı gibi olun [bir proje için bir Python ortamı seçme](selecting-a-python-environment-for-a-project.md).
@@ -160,13 +160,13 @@ Varsayılan olarak, hata ayıklayıcı programınızı standart Python başlatı
 | Yorumlayıcı yolu | Geçerli ortamı ile ilişkili yolu geçersiz kılar.  değer bir standart yorumlayıcı komut dosyanızı başlatmak için yararlı olabilir. |
 | Ortam Değişkenleri | Bu çok satırlı metin kutusunda, form girişlerini ekleyin `NAME=VALUE`. Bu ayar son olarak, var olan tüm genel ortam değişkenlerini ve sonra üstte uygulandığından `PYTHONPATH` ayarlanmış arama yolları ayarına göre bu el ile bu bunlardan herhangi diğer değişkenler geçersiz kılmak için kullanılabilir. |
 
-<a name="the-debug-interactive-window"</a>
+<a name="the-debug-interactive-window"></a>
 
 ## <a name="immediate-and-interactive-windows"></a>Anında ve etkileşimli windows
 
 Hata ayıklama oturumu sırasında kullanabileceğiniz iki etkileşimli windows vardır: standart Visual Studio komut penceresi ve Python hata ayıklama etkileşimli penceresi.
 
-Komut penceresi (**hata ayıklama > Windows > hemen**) hızlı değerlendirme Python ifadeleri ve denetleme veya çalışan program değişkenler ataması için kullanılır. Genel bkz [komut penceresi](../ide/reference/immediate-window.md) Ayrıntılar için konu.
+Komut penceresi (**hata ayıklama > Windows > hemen**) hızlı değerlendirme Python ifadeleri ve denetleme veya çalışan program değişkenler ataması için kullanılır. Genel bkz [komut penceresi](../ide/reference/immediate-window.md) Ayrıntılar için makale.
 
 Python hata ayıklama etkileşimli pencere (**hata ayıklama > Windows > Python hata ayıklama etkileşimli**) tam getirir daha zengin olan [etkileşimli REPL](python-interactive-repl-in-visual-studio.md) hata ayıklama sırasında yazma dahil olmak üzere kullanılabilir deneyimi ve kod çalıştırıyor. Standart Python Başlatıcısı'nı kullanarak hata ayıklayıcıda başlayan tüm işlem otomatik olarak bağlanır (işlemler de dahil olmak üzere bağlı aracılığıyla **hata ayıklama > ekleme işlemi için**). Ancak, C/C++ karışık mod hata ayıklaması kullanırken kullanılabilir değilse.
 

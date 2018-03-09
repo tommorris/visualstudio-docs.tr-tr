@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ac44ade848b4e423c1fcb253cf1867937f371719
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 94b37ef77e60db9c2040f74142155857fe2e60c6
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Birim testi için Python kodu ayarlama
 
@@ -29,7 +29,7 @@ Birim testleri, bir uygulama, genellikle yalıtılmış işlevleri, sınıflar v
 
 Python birim testleri bir program tasarlarken senaryoları doğrulamak için yaygın olarak kullanır. Visual Studio'da Python desteği, keşfetme, yürütme ve birim testleri geliştirme sürecinizi bağlamında testleri ayrı olarak çalıştırmaya gerek kalmadan hata ayıklama içerir.
 
-Bu konuda birim Visual Studio'da Python ile yetenekleri testi kısa bir özeti verilmektedir. Birim testi genel hakkında daha fazla bilgi için bkz: [birim testi kodunuzu](../test/unit-test-your-code.md).
+Bu makalede, Visual Studio'da Python ile test etme özelliklerini birim kısa bir özeti sağlanmaktadır. Birim testi genel hakkında daha fazla bilgi için bkz: [birim testi kodunuzu](../test/unit-test-your-code.md).
 
 |   |   |
 |---|---|

@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 1b2f570a75be94c3bff4b38a6d0641e3ecbce2f2
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -231,7 +231,7 @@ DLL Python için kullanılabilir hale getirmek iki yolu vardır.
 
 İlk yöntem, Python proje ve C++ projesi aynı çözüm içinde olduğunda çalışır. Çözüm Gezgini'ne gidin, sağ **başvuruları** Python proje ve ardından düğümünde **Başvuru Ekle**. Görüntülenen iletişim kutusunda, seçin **projeleri** sekmesine **superfastcode** proje (veya, ad kullanmakta olduğunuz) ve ardından **Tamam**.
 
-Aşağıdaki adımlarda açıklandığı Alternatif yöntem de diğer Python projeleri için kullanılabilir hale getirme Genel Python ortamında modülünü yükler. (Bu nedenle genellikle yapılması bu ortam için IntelliSense tamamlanma veritabanını yenileme gerektirir. Yenileme ayrıca modülün ortamından kaldırırken gereklidir.)
+Aşağıdaki adımlarda açıklandığı Alternatif yöntem de diğer Python projeleri için kullanılabilir hale getirme Genel Python ortamında modülünü yükler. (Bu nedenle genellikle yapılması, ortamda Visual Studio 2017 15,5 ve önceki sürümü için IntelliSense tamamlanma veritabanını yenileme gerektirir. Yenileme ayrıca modülün ortamından kaldırırken gereklidir.)
 
 1. Visual Studio yükleyiciyi çalıştırın, Visual Studio 2017 kullanıyorsanız seçin **Değiştir**seçin **bileşenleri tek tek > derleyicileri, yapı araçları ve çalışma zamanları > Visual C++ 2015.3 v140 araç takımı**. Python (Windows için) kendisini (sürüm 14.0) Visual Studio 2015 ile oluşturulan ve bu araçlara uzantı burada açıklanan yöntemle oluşturulurken kullanılabilir olmasını bekliyor olduğundan bu adım gereklidir. (Python 32-bit sürümünü yükleyin ve Win32 ve değil x64 DLL'e hedeflemek gerekebileceğini unutmayın.)
 

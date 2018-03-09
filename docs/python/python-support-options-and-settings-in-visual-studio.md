@@ -2,7 +2,7 @@
 title: "Visual Studio'da Python ilişkin seçenekleri ve ayarları | Microsoft Docs"
 description: "Visual Studio'da Python kodu ve projeler ile ilgili çeşitli ayarlar için bir başvuru."
 ms.custom: 
-ms.date: 02/21/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,6 +16,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
 - VS.ToolsOptionsPages.Python_Tools.Diagnostics
+- VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
@@ -24,11 +25,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25e0540c376017bfc3f3a64d23bbc6963942bb5c
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 9bb1316d46f252721230ce4ac1b14f4304693445
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio'da Python için seçenekleri
 
@@ -36,19 +37,21 @@ Python seçenekleri görüntülemek için kullanın **Araçlar > Seçenekler** m
 
 ![Python Seçenekleri iletişim kutusu, Genel sekmesi](media/options-general.png)
 
-Vardır ayrıca Python özgü ek seçenekler **metin düzenleyicisi > Python > Gelişmiş** sekmesi.
+Vardır ayrıca Python özgü ek seçenekler **metin düzenleyicisi > Python > Gelişmiş** sekmesinde ve **ortam > yazı tiplerini ve renkleri** "metin düzenleyici" grubu sekmede.
 
 > [!Note]
 > **Experimental** grubu özellikleri hala geliştirilmektedir ve burada belgelenmemiş seçenekleri içerir. Bunlar genellikle gönderilerde üzerinde ele alınan [Microsoft blogu Python mühendislik](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="general-options"></a>Genel seçenekleri
 
+(**Araçlar > Seçenekler > Python** sekmesi.)
+
 | Seçenek | Varsayılan | Açıklama |
 | --- | --- | --- |
 | Sanal ortamlar oluştururken çıktı penceresini göster| Açık | Çıktı penceresi görünmesini engellemek için işaretini kaldırın. |
 | Çıkış yüklerken veya paketlerini kaldırma penceresini göster | Açık | Çıktı penceresi görünmesini engellemek için işaretini kaldırın. |
 | Her zaman PIP yönetici olarak çalıştır | Kapalı | Her zaman yükseltir `pip install` işlemleri tüm ortamlar için. Ortam korumalı bir dosya sistemi bölümünde gibi bulunuyorsa paketleri yüklerken, Visual Studio için yönetici ayrıcalıkları ister `c:\Program Files`. Her zaman yükseltmesine seçebilirsiniz, istemindeki `pip install` bir bu ortam için. Bkz: [Paketleri sekmesi](python-environments-window-tab-reference.md#packages-tab). |
-| Tamamlama DB ilk kullanımında otomatik olarak oluştur | Açık | İçin [IntelliSense tamamlamalar](editing-python-code-in-visual-studio.md#intellisense) için bir kitaplık çalışmak için Visual Studio bu kitaplık için tamamlama veritabanı oluşturmanız gerekir. Bir kitaplık yüklenir, ancak kod yazmaya başladığınızda tam olmayabilir veritabanınızı oluşturmaya arka planda gerçekleştirilir. Bu seçenek ile Visual Studio kullanan kodu yazarken bir kitaplık veritabanı tamamlama öncelik verir. |
+| Tamamlama DB ilk kullanımında otomatik olarak oluştur | Açık | *Visual Studio 2017 sürüm 15,5 ve önceki ve sonraki sürümler için IntelliSense veritabanı kullanıldığında geçerlidir.* Bunu kullanan kodu yazarken bir kitaplık veritabanı tamamlama öncelik olarak belirler. Daha fazla bilgi için bkz: [ortamları penceresi başvuru - IntelliSense sekmesini](python-environments-window-tab-reference.md). |
 | Sistem genelinde PYTHONPATH değişkenleri yoksay | Açık | Visual Studio ortamları ve projeleri arama yolları belirtmek için daha doğrudan bir yol sağladığından PYTHONPATH varsayılan olarak sayılır. Bkz: [arama yolları](search-paths.md) Ayrıntılar için. |
 | Bağlantılı dosyaları eklerken güncelleştirme arama yolları | Açık | Ayarlanırsa, ekleme, bir [bağlı dosya](managing-python-projects-in-visual-studio.md#linked-files) projeye güncelleştirmeleri [arama yolları](search-paths.md) böylece IntelliSense tamamlanma veritabanında bulunan bağlantılı dosyanın klasörünün içeriğini içerebilir. Bu tür içeriği tamamlama veritabanından dışlamak için bu seçeneği temizleyin. |
 | Modülü bulunamıyor aktarıldığında uyar | Açık | Temizle içeri aktarılan modül bildiğinizde uyarıları gizlemek için bu seçeneği şu anda kullanılabilir değil ancak Aksi halde kodu işlemi etkilemez. |
@@ -59,6 +62,8 @@ Vardır ayrıca Python özgü ek seçenekler **metin düzenleyicisi > Python > G
 ![Python Seçenekleri iletişim kutusu, Genel sekmesi](media/options-general.png)
 
 ## <a name="debugging-options"></a>Hata ayıklama seçenekleri
+
+(**Araçlar > Seçenekler > Python > hata ayıklama** sekmesi.)
 
 | Seçenek | Varsayılan | Açıklama |
 | --- | --- | --- |
@@ -72,6 +77,8 @@ Vardır ayrıca Python özgü ek seçenekler **metin düzenleyicisi > Python > G
 
 ## <a name="diagnostics-options"></a>Tanılama seçenekleri
 
+(**Araçlar > Seçenekler > Python > tanılama** sekmesi.)
+
 | Seçenek | Varsayılan | Açıklama |
 | --- | --- | --- |
 | Analiz günlüklerini içerir | Açık | Tanılama için Dosya kaydedilirken yüklü Python ortamları analiz için ilgili veya düğmeleri kullanarak Panoya kopyalama ayrıntılı günlükleri içerir. Bu seçenek, oluşturulan dosya boyutunu önemli ölçüde artırabilir, ancak genellikle IntelliSense sorunlarını tanılamak için gereklidir. |
@@ -81,6 +88,8 @@ Vardır ayrıca Python özgü ek seçenekler **metin düzenleyicisi > Python > G
 ![Python Seçenekleri iletişim kutusu, Tanılama sekmesi](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>Etkileşimli Windows seçenekleri
+
+(**Araçlar > Seçenekler > Python > Etkileşimli Windows** sekmesi.)
 
 | Seçenek | Varsayılan | Açıklama |
 | --- | --- | --- |
@@ -92,6 +101,8 @@ Vardır ayrıca Python özgü ek seçenekler **metin düzenleyicisi > Python > G
 ![Python Seçenekleri iletişim kutusu, etkileşimli Windows sekmesi](media/options-interactive-windows.png)
 
 ## <a name="advanced-python-editor-options"></a>Gelişmiş Python Düzenleyici Seçenekleri
+
+(**Araçlar > Seçenekler > Metin Düzenleyicisi > Python > Gelişmiş** sekmesi.)
 
 ### <a name="completion-results"></a>Tamamlama sonuçları
 
@@ -105,7 +116,7 @@ Vardır ayrıca Python özgü ek seçenekler **metin düzenleyicisi > Python > G
 
 | Seçenek | Varsayılan | Açıklama |
 | --- | --- | --- |
-| Şu karakterleri yazarak yürütüldü | {}[]().,:;+-*/%&&#124;^~=<>#@\ | Bu karakterler tipik olarak bir karakter yazarak tamamlama yürütmek için uygun olacak şekilde, bir tamamlama listeden seçebilirsiniz tanımlayıcı izleyin. Özel karakterler istendiği listesine ekleyebilir veya kaldırabilirsiniz.  |
+| Şu karakterleri yazarak yürütüldü | `{}[]().,:;+-*/%&&#124;^~=<>#@\` | Bu karakterler tipik olarak bir karakter yazarak tamamlama yürütmek için uygun olacak şekilde, bir tamamlama listeden seçebilirsiniz tanımlayıcı izleyin. Özel karakterler istendiği listesine ekleyebilir veya kaldırabilirsiniz.  |
 | İşlemeleri geçerli tamamlama girin | Açık | Ayarlandığında, Enter tuşuna seçer ve şu anda seçili tamamlama karakterlerle gibi yukarıdaki uygular (ancak doğal olarak, hiç Enter karakteri bu listeye doğrudan Git uygulanamadı şekilde!). |
 | Yeni Satır Ekle üzerinde tam olarak yazılan word sonunda girin | Kapalı | Varsayılan olarak, görüntülenen tüm Word'ün tamamlama açılan kutuya yazın ve Enter tuşuna basın, tamamlama uygulayın. Tanımlayıcı yazdıktan sonra Enter yeni bir satır ekler, bu seçeneği ayarlayarak, etkili bir şekilde tamamlamalar yürüttükten. |
 
@@ -118,3 +129,11 @@ Vardır ayrıca Python özgü ek seçenekler **metin düzenleyicisi > Python > G
 | Renk adları türlerine göre | Açık | Python kodu renklendirme sözdizimi sağlar. |
 
 ![Gelişmiş sekmesi, Python Düzenleyici Seçenekleri iletişim](media/options-editor-advanced.png)
+
+## <a name="fonts-and-colors-options"></a>Yazı tipleri ve renkler seçenekleri
+
+(**Ortam > yazı tiplerini ve renkleri** "metin düzenleyici" grubu sekmede.)
+
+Python seçenekleri adlarını tüm "Python ile" öneki ve kendinden açıklamalıdır. Tüm Visual Studio renk temaları varsayılan yazı tipini 10nk Consolas normal olduğundan (kalın değil). Varsayılan renkler tema göre farklılık gösterir. Varsayılan ayarlarla metninin okunması zor bulursanız, tipik olarak, bir yazı tipi veya renk değiştirin.
+
+![Python yazı tipi ve renk seçenekleri](media/options-fonts-and-colors.png)

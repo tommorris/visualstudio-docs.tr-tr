@@ -1,14 +1,15 @@
 ---
 layout: HubPage
-hide_bc: True
+hide_bc: 
 title: Visual Studio belgeleri | Microsoft Docs
 description: "Uygulamaları, hizmetleri ve platformlar ve cihazlar için tercih ettiğiniz dilde araçları geliştirmek için Visual Studio 2017 kullanmayı öğrenin."
-searchScope: 
-ms.openlocfilehash: 38ea7dc20884fe5d70cbfa483805364e43a62801
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.topic: landing-page
+searchScope: []
+ms.openlocfilehash: 910dc9db4ebdd1e2a5c9d5743b471a95ab15d407
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -97,7 +98,7 @@ ms.lasthandoff: 01/13/2018
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/appcenter" title="Visual Studio Uygulama Merkezi">
+                                <a href="https://docs.microsoft.com/appcenter" title="Visual Studio App Center">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -107,7 +108,7 @@ ms.lasthandoff: 01/13/2018
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Visual Studio Uygulama Merkezi</h3>
+                                                    <h3>Visual Studio App Center</h3>
                                                     <p>Sürekli tümleştirme, teslim ve Android, iOS, macOS ve Windows uygulamaları için öğrenme. 5 yıldız, daha yüksek kaliteli uygulamaları daha hızlı ve güvenle birlikte.</p>
                                                 </div>
                                             </div>
@@ -116,7 +117,7 @@ ms.lasthandoff: 01/13/2018
                                 </a>
                             </li>
                             <li>
-                                <a href="https://aka.ms/vs-subscriptions" title="Visual Studio Uygulama Merkezi">
+                                <a href="https://aka.ms/vs-subscriptions" title="Visual Studio App Center">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

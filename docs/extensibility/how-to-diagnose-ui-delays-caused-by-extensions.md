@@ -12,11 +12,11 @@ author: PooyaZv
 ms.author: pozandev
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: dffc67e550cb57f9f089e180ff399f27c817d253
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 714d047cda7a167045983f5068a425d0d82823ea
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Nasıl yapılır: kullanıcı Arabirimi tanılamak uzantıları tarafından kaynaklanan gecikmeler
 
@@ -157,6 +157,8 @@ PerfView Kılavuzu kodunuzda performans sorunlarını tanımlamak için kullanab
 
 * [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
 * [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
+
+Yeni Visual Studio statik çözümleyiciler uzantıları için de kullanabilirsiniz (NuGet paketi [burada](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)), sağlayan kılavuzu üzerinde en iyi yöntemler verimli uzantıları yazmak için. Bir listesini görmek [VS SDK çözümleyiciler](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) ve [çözümleyiciler iş parçacığı oluşturma](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md).
 
 > [!NOTE]
 > Yanıt vermeyi durdurma sorununu bağımlılıkları nedeniyle adres ise üzerinde denetiminiz olmayan (örneğin uzantınızı zaman uyumlu VS Hizmetleri kullanıcı Arabirimi iş parçacığı üzerinde çağırmak varsa), hakkında bilmek isteriz. Visual Studio iş ortağı programımız üyesi olması durumunda, bize bir geliştirici destek isteği göndererek başvurabilirsiniz. Aksi halde, 'Bir sorun bildirmek' içerir ve geri bildirim göndermek üzere aracını `"Extension UI Delay Notifications"` başlık. Lütfen çözümleme ayrıntılı bir açıklaması da içerir.

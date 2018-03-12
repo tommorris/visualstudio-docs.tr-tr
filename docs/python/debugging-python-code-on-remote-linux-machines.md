@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f5f3edfc536dce9d42d09a099c3f53a8a8ab3c7
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 895abe0f9ce632f5c67c487726d0422607f8d427
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Uzaktan hata ayıklama Linux'ta Python kodu
 
@@ -48,29 +48,29 @@ Bir Azure VM için bir güvenlik duvarı kuralı oluşturma hakkında daha fazla
 
 1. Uzak bilgisayarda adlı bir Python dosyası oluşturun `guessing-game.py` aşağıdaki kod ile:
 
-  ```python
-  import random
+    ```python
+    import random
 
-  guesses_made = 0
-  name = input('Hello! What is your name?\n')
-  number = random.randint(1, 20)
-  print('Well, {0}, I am thinking of a number between 1 and 20.'.format(name))
+    guesses_made = 0
+    name = input('Hello! What is your name?\n')
+    number = random.randint(1, 20)
+    print('Well, {0}, I am thinking of a number between 1 and 20.'.format(name))
 
-  while guesses_made < 6:
-      guess = int(input('Take a guess: '))
-      guesses_made += 1
-      if guess < number:
-          print('Your guess is too low.')
-      if guess > number:
-          print('Your guess is too high.')
-      if guess == number:
-          break
-  if guess == number:
-      print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
-  else:
-      print('Nope. The number I was thinking of was {0}'.format(number))
-  ```
- 
+    while guesses_made < 6:
+        guess = int(input('Take a guess: '))
+        guesses_made += 1
+        if guess < number:
+            print('Your guess is too low.')
+        if guess > number:
+            print('Your guess is too high.')
+        if guess == number:
+            break
+    if guess == number:
+        print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
+    else:
+        print('Nope. The number I was thinking of was {0}'.format(number))
+    ```
+
 1. Yükleme `ptvsd` ortam kullanarak paket `pip3 install ptvsd`. (Not: sorun giderme için; gerektiğinde yüklediğiniz ptvsd sürümü kaydetmek için iyi bir fikirdir [ptvsd listeleme](https://pypi.python.org/pypi/ptvsd) kullanılabilir sürümleri de gösterir.)
 
 1. En erken olası noktada aşağıdaki kodu ekleyerek uzaktan hata ayıklamayı etkinleştirme `guessing-game.py`, önce başka bir kod. (Kesin bir gereklilik de, önce kökenli herhangi bir arka plan iş parçacıkları hata ayıklamak mümkün değildir `enable_attach` işlevi çağrıldığında.)

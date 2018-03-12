@@ -18,11 +18,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 63c1b25ad597dc3d56dfc398ec9c6c463aec200d
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: d06c02e651dd4acdcaebf05448282f26c20e3a75
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Test Gezgini ile ilgili SSS
 
@@ -64,9 +64,15 @@ ms.lasthandoff: 02/12/2018
 
 ### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8. Sıralama test sonuçlarını hiyerarşi görünümünde nasıl çalışır?
 
-  Hiyerarşi görünüm testlere göre alfabetik olarak tersine sonuçlara göre sıralar. Bir grubu ayarları tarafından sonuçlara göre normalde test sonuçlarını sıralama ve ardından alfabetik olarak. Farklı gruplandırma seçenekleri aşağıda gösterilmektedir karşılaştırma için. Tasarım hakkında geri bildirim sağlayabilirsiniz [bu GitHub sayıda](https://github.com/Microsoft/vstest/issues/1425).
+  Hiyerarşi görünüm testlere göre alfabetik olarak tersine sonuçlara göre sıralar. Bir grubu ayarları tarafından sonuçlara göre normalde test sonuçlarını sıralama ve ardından alfabetik olarak. Karşılaştırma için aşağıdaki görüntüde seçenekleri tarafından farklı grup bakın. Tasarım hakkında geri bildirim sağlayabilirsiniz [bu GitHub sayıda](https://github.com/Microsoft/vstest/issues/1425).
 
   ![SortingExamples](media/testex-sortingex.png)
+
+### <a name="9-in-the-hierarchy-view-there-are-passed-failed-skipped-and-not-run-icons-next-to-the-project-namespace-and-class-groupings-what-do-these-icons-mean"></a>9. Hiyerarşi görünümünde var. geçirilir, proje, Namespace ve sınıf gruplandırmaları yanındaki başarısız, atlandı ve çalışmadı simgeler. Bu simgeleri ne anlama geliyor?
+
+  Proje, Namespace ve sınıf gruplandırmaları yanındaki simge, gruplandırma testlerde durumunu yansıtır. Aşağıdaki tabloya bakın.
+
+  ![Test Gezgini hiyerarşi simgeler](media/testex-hierarchyicons.png)
 
 ## <a name="features"></a>Özellikler
 

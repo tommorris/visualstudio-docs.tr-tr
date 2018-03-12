@@ -10,16 +10,19 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- multiple
+ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Hızlı Başlangıç: Projeler ve çözümler
 
 Bu 10 dakikalık quickstart Visual Studio'da Çözüm ve proje oluşturmak ne anlama geldiğini incelenecektir. Bir proje özelliklerini ve bazı oluşabilir dosyaları bakın. İkinci projesine bir başvuru da oluşturacağız.
+
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa.
 
 > [!TIP]
 > Biz bir çözüm ve proje bu hızlı başlangıç, sıfırdan bir proje kavramı anlamak için eğitim bir alıştırma olarak oluşturma. Visual Studio içinde genel kullanımı, büyük olasılıkla yeni bir proje oluştururken, Visual Studio sunan birçok proje şablonu kullanır.

@@ -1,5 +1,6 @@
 ---
-title: "Hızlı Başlangıç: Windows oluşturma Visual Basic ile Visual Studio Forms uygulamasında | Microsoft Docs"
+title: "Windows oluşturma Visual Basic ile Visual Studio Forms uygulamasında | Microsoft Docs"
+description: "Visual Basic, adım adım ile Visual Studio'da bir Windows Forms uygulaması oluşturmayı öğrenin."
 ms.custom: 
 ms.date: 12/04/2017
 ms.reviewer: 
@@ -7,7 +8,7 @@ ms.suite:
 ms.technology:
 - vs-acquisition
 ms.tgt_pltfrm: 
-ms.topic: quickstart
+ms.topic: article
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
@@ -16,14 +17,14 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ecab13523c5d2ae362a58527f8c15ce1f26dd225
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 592ad202ca41792c6a73a77b7c01bab71fdbcdc7
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="quickstart-create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Hızlı Başlangıç: Windows oluşturma Visual Basic ile Visual Studio'da Forms uygulama
-Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), bir Windows tabanlı kullanıcı arabirimi (UI) olan basit bir Visual Basic uygulama oluşturacaksınız.
+# <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Windows oluşturma Visual Basic ile Visual Studio'da Forms uygulama
+Bu kısa giriş Visual Studio tümleşik geliştirme ortamı (IDE) için bir Windows tabanlı kullanıcı arabirimi (UI) olan basit bir Visual Basic uygulama oluşturacaksınız.
 
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa.
 

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - ExceptionsShouldBePublic
 - CA1064
 ms.assetid: 83eb224c-2456-4368-acf4-3b3378e67759
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7779be831b32572addb6198b5a5be46616cdb1b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b376de69c288a084ff3bb33aba1e1b8a0bc881e5
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: Özel durumlar genel olmamalıdır
 |||  
@@ -39,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Kural Tanımı  
  Dahili bir özel durum yalnızca kendi iç kapsam içinde görünür olur. İç kapsam dışında kalan özel durumlardan sonra, sadece basit istisnalar istisna yakalamak için kullanılabilir. İç özel durum öğesinden devralınan <xref:System.Exception>, <xref:System.SystemException>, veya <xref:System.ApplicationException>, harici kod ne yapacağını özel durumla bilmesi için yeterli bilgiye sahip değil.  
   
- Ancak, temel olarak için iç özel duruma daha sonra kullanılan genel bir özel durum kodu varsa, daha fazla kod çıkışı temel özel durumla akıllı bir şeyler kuramaz varsaymak uygun olur. Genel özel durum ne T:System.Exception, T:System.SystemException veya T:System.ApplicationException tarafından sağlanan değerinden daha fazla bilgi gerekir.  
+ Ancak, temel olarak için iç özel duruma daha sonra kullanılan genel bir özel durum kodu varsa, daha fazla kod çıkışı temel özel durumla akıllı bir şeyler kuramaz varsaymak uygun olur. Genel özel durum tarafından sağlanan değerinden daha fazla bilgi gerekir <xref:System.Exception>, <xref:System.SystemException>, veya <xref:System.ApplicationException>.  
   
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
  Özel durum Genel hale getirmek veya iç özel durum olmayan ortak bir özel durum türetilen <xref:System.Exception>, <xref:System.SystemException>, veya <xref:System.ApplicationException>.  

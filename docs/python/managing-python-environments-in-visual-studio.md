@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 139916cbecd6e0c22062da9221d452c16309a564
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 558ce58461b27bc9a86906278602d00d96377c63
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Visual Studio'da Python ortamları yönetme
 
@@ -70,7 +70,7 @@ Her iki durumda da **Python ortamları** Çözüm Gezgini eşdüzey sekmeye olar
 
 Yukarıdaki resimde, Visual Studio Anaconda 5.0.0 birlikte Python 3.6 (32 bit) iki yüklemeleri algılanan gösterir.
 
-Kalın varsayılan ortamında Python tüm yeni projeler için Visual Studio kullanan 3.6 (Anaconda yüklemesi bu durumda parçası), ' dir. Seçilen Python görebilirsiniz, siz yorumlayıcı olduğu belirli yüklemesinde 3.6 penceresinin alt kısmındaki komutları uygulamak `C:\Python36-32`. Beklediğiniz bir ortam görmüyorsanız bkz [el ile varolan bir yorumlayıcı tanımlayan](#manually-identifying-an-existing-interpreter).
+Kalın varsayılan ortamında Python tüm yeni projeler için Visual Studio kullanan 3.6 (Anaconda yüklemesi bu durumda parçası), ' dir. Seçilen Python görebilirsiniz, siz yorumlayıcı olduğu belirli yüklemesinde 3.6 penceresinin alt kısmındaki komutları uygulamak `C:\Python36-32`. Beklediğiniz bir ortam görmüyorsanız bkz [el ile varolan bir ortama tanımlayan](#manually-identifying-an-existing-environment).
 
 Listelenen her ortam sağındaki bu ortam için etkileşimli bir pencere açılır bir denetimdir. Bu ortam için IntelliSense veritabanı yeniler başka bir denetim görüntülenebilir (bkz [ortamları penceresi başvuru](python-environments-window-tab-reference.md#intellisense-tab) veritabanı hakkındaki ayrıntılar için).
 

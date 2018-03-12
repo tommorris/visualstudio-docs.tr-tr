@@ -17,11 +17,11 @@ ms.technology:
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: dba4c71320f00e4e35bc7c8d115aa342eac23de3
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4da292ede647539182b6b1f2e8aa6c843d2f0985
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio derleme araçları 2017 bileşen dizini
 
@@ -86,12 +86,12 @@ Microsoft.VisualStudio.Component.Node.Build | Node.js desteği | 15.6.27406.0 | 
 
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | Visual C++ derleme araçları çekirdek Özellikler | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Visual C++ 2017 yeniden dağıtılabilir güncelleştirme | 15.6.27406.0 | Gerekli
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 v141 araç takımı (x86, x64) | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Evrensel C çalışma zamanı | 15.6.27406.0 | Gerekli
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Önerilen
 Microsoft.VisualStudio.Component.VC.CMake.Project | CMake için Visual C++ Araçları | 15.6.27406.0 | Önerilen
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 v141 araç takımı (x86, x64) | 15.6.27406.0 | Önerilen
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 Masaüstü C++ [x86 hem x64] için SDK (10.0.16299.0) | 15.6.27406.0 | Önerilen
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 için SDK'sı (10.0.16299.0) UWP: C#, VB, JS | 15.6.27406.0 | Önerilen
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 için SDK'sı (10.0.16299.0) UWP: C++ | 15.6.27406.0 | Önerilen

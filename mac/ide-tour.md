@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 0dfd77c36c9880f1510f240f0a6c8f490a055fc4
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 5fdac97248ce76157012ef913ea9057a4076e3c5
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio için Mac turu
 
@@ -69,7 +69,7 @@ Başvuruları Visual Studio'daki Mac için kullanma hakkında daha fazla bilgi i
 
 ## <a name="dependencies--packages"></a>Bağımlılıklar / paketleri
 
-Uygulamanızda kullanılan tüm dış bağımlılıkları bir .net olmanıza bağlı olarak bağımlılıklar veya paketler klasöründe depolanan çekirdek veya Xamarin.iOS/Xamarin.Android projesi. Bu, genellikle bir NuGet veya bileşeni biçiminde sağlanır.
+Uygulamanızda kullanılan tüm dış bağımlılıkları bir .net olmanıza bağlı olarak bağımlılıklar veya paketler klasöründe depolanan çekirdek veya Xamarin.iOS/Xamarin.Android projesi. Bu, genellikle bir NuGet biçiminde sağlanır.
 
 NuGet en popüler .NET geliştirme paket yöneticisidir. Visual Studio'nun NuGet desteğiyle kolayca aramak ve paketleri uygulaması projenize ekleyin.
 

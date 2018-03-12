@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1fa4c68b1d7dc89452376d6efc47e047f75d52d6
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ec06764bb898888657a144f682827896f52ce223
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Özel komutlar Python projeleri için tanımlama
 
@@ -98,7 +98,7 @@ Her özel komut Python dosyası, bir Python modülü, satır içi Python kodu, r
 
     ![Python bağlam menüdeki görünen özel komutu](media/custom-commands-walkthrough-menu-item.png)
 
-1. Seçin **başlangıç dosyasını çalıştırıp** komutunu ve "Merhaba özel komutlar ve ardından" metnini "devam etmek için tüm tuşuna basın. görünür bir komut penceresi görmeniz gerekir biçimindeki telefon numarasıdır. .".  Pencereyi kapatmak için bir tuşa basın.
+1. Seçin **başlangıç dosyasını çalıştırıp** komutunu ve "Merhaba özel komutlar ve ardından" metnini "devam etmek için tüm tuşuna basın. görünür bir komut penceresi görmeniz gerekir . .".  Pencereyi kapatmak için bir tuşa basın.
 
     ![Bir konsol penceresi özel komut çıktısında](media/custom-commands-walkthrough-console.png)
 
@@ -154,7 +154,7 @@ Tüm öznitelik değerleri büyük/küçük harfe duyarsızdır.
 | Arguments | İsteğe Bağlı | Bir dize bağımsız değişkenleri, hedef vermek için (varsa) belirtir. TargetType olduğunda unutmayın `script`, bağımsız değişkenler Python programına verilmedi `python.exe`. İçin göz ardı `code` TargetType. |
 | ExecuteIn | Evet | Komutu çalıştırmak üzere ortam belirtir:<ul><li>**Konsol**: (varsayılan), hedef ve bağımsız değişkenler doğrudan komut satırında girilirse gibi çalışır. Hedef çalıştığından, sonra otomatik olarak kapatılır sırasında bir komut penceresi görünür.</li><li>**consolepause**: aynı bir konsol ancak bekler keypress için pencereyi önce.</li><li>**Çıktı**: çalıştırır hedef ve Visual Studio çıktı penceresinde sonuçlarını görüntüler. TargetType "PIP" ise, Visual Studio Paket adı olarak hedef kullanır ve bağımsız değişkenleri ekler.</li><li>**REPL**: çalıştırır hedef [Python etkileşimli pencere](interactive-repl.md); penceresinin başlık için kullanılan isteğe bağlı görünen adı.</li><li>**Hiçbiri**: konsolu ile aynı şekilde davranır.</li></ul>|
 | Başlangıç | İsteğe Bağlı | Komutu çalıştırmak için klasör. |
-| ErrorRegex<br>WarningRegEx | İsteğe Bağlı | Yalnızca ExecuteIn olduğunda kullanılan `output`. Her iki değerin ile Visual Studio komut çıktısı hataları ve Uyarıları, hata listesi penceresini göster ayrıştırmak için normal bir ifadeyi belirtin. Belirtilmezse, komut hata listesi penceresini etkilemez. Bekliyor hangi Visual Studio hakkında daha fazla bilgi için bkz: [adlandırılmış yakalama grupları](#named-capture-groups-for-regular-expression). |
+| ErrorRegex<br>WarningRegEx | İsteğe Bağlı | Yalnızca ExecuteIn olduğunda kullanılan `output`. Her iki değerin ile Visual Studio komut çıktısı hataları ve Uyarıları, hata listesi penceresini göster ayrıştırmak için normal bir ifadeyi belirtin. Belirtilmezse, komut hata listesi penceresini etkilemez. Bekliyor hangi Visual Studio hakkında daha fazla bilgi için bkz: [adlandırılmış yakalama grupları](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | İsteğe Bağlı | Bir paket için gereksinimleri listesi ile aynı biçimi kullanarak komutu [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). **Çalıştırmak PyLint** komutu, örneğin belirtir `pylint>=1.0.0`. Komutu çalıştırmadan önce Visual Studio listedeki tüm paketleri yüklü olup olmadığını denetler. Visual Studio PIP herhangi eksik paketleri yüklemek için kullanır. |
 | Ortam | İsteğe Bağlı | Komutu çalıştırmadan önce tanımlamak için ortam değişkenleri dizesi. Her bir değişken adı biçiminde kullanan noktalı virgülle ayırarak birden çok değişkenleriyle = değer. Birden çok değere sahip bir değişken tek veya çift tırnak içine olarak yer almalıdır ' NAME = VALUE1; VALUE2'. |
 
@@ -353,7 +353,7 @@ Keşfetmek için nasıl **başlangıç sunucu** ve **başlangıç hata ayıklama
 
 *Gelen [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) izniyle kullanılır.*
 
-## <a name="troubleshooting"></a>Sorun giderme
+## <a name="troubleshooting"></a>Sorun Giderme
 
 ### <a name="message-the-project-file-could-not-be-loaded"></a>İleti: "proje dosyası yüklenemedi"
 

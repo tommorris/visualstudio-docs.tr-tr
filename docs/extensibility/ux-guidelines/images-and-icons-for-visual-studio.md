@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 164a450ca346fe2bd7b267d951ce522d27f14160
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/13/2018
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Görüntüleri ve Visual Studio için simgeler
-##  <a name="BKMK_ImageUseInVisualStudio"></a>Visual Studio görüntü kullanımda  
+##  <a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio görüntü kullanımda  
  Yapma resmi oluşturmadan önce göz önünde bulundurun 1.000 + görüntülerinde kullanımını [Visual Studio görüntü kitaplığı](http://www.microsoft.com/en-my/download/details.aspx?id=35825).  
   
 ### <a name="types-of-images"></a>Görüntü türleri  
@@ -37,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
 -   **İmleçler.** Fareyi, burada bir nesne bırakılabilir vb. kullanarak bir işlem izin verilip verilmeyeceğini belirtmek için kullanılır.  
   
-##  <a name="BKMK_IconDesign"></a>Simge tasarım  
+##  <a name="BKMK_IconDesign"></a> Simge tasarım  
   
 ### <a name="overview"></a>Genel Bakış  
  Visual Studio temiz geometri ve olumlu/olumsuz (Açık/Koyu) 50/50 dengesi varsa ve doğrudan, anlaşılabilir metaphors kullanmak modern stili simgeleri kullanır. Önemli simgesi Tasarım Merkezi daha anlaşılır olması, basitleştirme ve bağlam etrafında işaret eder.  
@@ -86,7 +88,7 @@ ms.lasthandoff: 12/22/2017
   
 |||  
 |-|-|  
-|**"Göster"**|**"View"**|  
+|**"Show"**|**"View"**|  
 |![Simgesini göster](../../extensibility/ux-guidelines/media/0404-07_show.png "0404 07_Show")|![Görünüm simgesi](../../extensibility/ux-guidelines/media/0404-08_view.png "0404 08_View")|  
   
  Sağ taraftaki cam simgesini temsil yalnızca arayacağı büyütme, bulma ve göz atın. Artı veya eksi işareti ile sol taraftaki değişken, yalnızca yakınlaştırma temsil / Uzaklaştır.  
@@ -101,7 +103,7 @@ ms.lasthandoff: 12/22/2017
 |||  
 |-|-|  
 |**Doğru ağaç görünümü simgesi**|**Yanlış ağaç görünümü simgesi**|  
-|![Doğru ağaç görünümü simgesi &#40; 1 &#41; ] (../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404 11_TreeViewCorrect1") ![düzeltmek ağaç görünümü simgesi &#40; 2 &#41;] (../../extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404 12_TreeViewCorrect2")|![Yanlış ağaç görünümü simgesi &#40; 1 &#41; ] (../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404 13_TreeViewIncorrect1") ![yanlış ağaç görünümü simgesi &#40; 2 &#41;] (../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404 14_TreeViewIncorrect2")|  
+|![Doğru ağaç görünümü simgesi &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404 11_TreeViewCorrect1") ![doğru ağaç görünümü simgesi &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404 12_TreeViewCorrect2")|![Yanlış ağaç görünümü simgesi &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404 13_TreeViewIncorrect1") ![yanlış ağaç görünümü simgesi &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404 14_ TreeViewIncorrect2")|  
   
 ### <a name="style-details"></a>Stil ayrıntıları  
   
@@ -147,7 +149,7 @@ ms.lasthandoff: 12/22/2017
 |||  
 |-|-|  
 |**Doğru negatif pozitif oranı**|**Hatalı negatif pozitif oranı**|  
-|![Görsel ağırlık simgeleri &#40; 1 &#41;düzeltin; ] (../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404 26_VisualWeightCorrect1")<br /><br /> ![Görsel ağırlık simgeleri &#40; 2 &#41;düzeltin; ] (../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404 27_VisualWeightCorrect2")<br /><br /> ![Görsel ağırlık simgeleri &#40; 3 &#41;düzeltin; ] (../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404 28_VisualWeightCorrect3")|![Simgeler için yanlış visual ağırlık](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "0404 29_VisualWeightIncorrect")|  
+|![Simgeler için görsel ağırlık düzeltmek &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404 26_VisualWeightCorrect1")<br /><br /> ![Simgeler için görsel ağırlık düzeltmek &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404 27_VisualWeightCorrect2")<br /><br /> ![Simgeler için görsel ağırlık düzeltmek &#40;3&#41;](../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404 28_VisualWeightCorrect3")|![Simgeler için yanlış visual ağırlık](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "0404 29_VisualWeightIncorrect")|  
   
  Basit, karşılaştırılabilir şekiller ve Tamamlayıcı açıları öğesi bütünlüğü ödün vermeden öğelerinizi oluşturmak için kullanın. 45 ° veya 90 derece açıları mümkün olduğunca kullanın.  
   
@@ -201,7 +203,7 @@ ms.lasthandoff: 12/22/2017
   
  **Küçük (16 x 16) proje** simgeleri en fazla iki öğe bulunmalıdır: bir temel ve bir değiştiricisi.  
   
- ![Küçük (16 x 16) örnekleri proje simgeler](../../extensibility/ux-guidelines/media/0404-43_16x16project1.png "0404 43_16x16Project1") ![16 x 16 proje simgesini &#40; 2 &#41;] (../../extensibility/ux-guidelines/media/0404-44_16x16project2.png "0404 44_16x16Project2") ![16 x 16 proje simgesini &#40; 3 &#41;] (../../extensibility/ux-guidelines/media/0404-45_16x16project3.png "0404 45_16x16Project3")<br />Küçük (16 x 16) proje simgeler örnekleri
+ ![Küçük (16 x 16) örnekleri proje simgeler](../../extensibility/ux-guidelines/media/0404-43_16x16project1.png "0404 43_16x16Project1") ![16 x 16 proje simgesini &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-44_16x16project2.png "0404 44_16x16Project2") ![16 x 16 proje simgesini &#40;3&#41;](../../extensibility/ux-guidelines/media/0404-45_16x16project3.png "0404 45_16x16Project3")<br />Küçük (16 x 16) proje simgeler örnekleri
   
  **Büyük (32 x 32) proje** simgeleri en fazla dört aşağıdaki öğelerden oluşur: bir temel, bir veya iki değiştiricileri ve kaplama bir dili.  
   
@@ -248,7 +250,7 @@ ms.lasthandoff: 12/22/2017
   
  Visual Studio simgeleri renk kullanarak daha fazla bilgi için bkz: [Renk görüntülerini kullanarak](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).  
   
-##  <a name="BKMK_UsingColorInImages"></a>Renk görüntüleri kullanma  
+##  <a name="BKMK_UsingColorInImages"></a> Renk görüntüleri kullanma  
   
 ### <a name="overview"></a>Genel Bakış  
  Visual Studio'da öncelikle tek renkli simgelerdir. Renk belirli bilgileri iletmek için ayrılmıştır ve düzenlemesi için hiçbir zaman. Renk kullanılır:  
@@ -275,8 +277,8 @@ ms.lasthandoff: 12/22/2017
 |Kullanım|Ad|Değer (açık tema)|Renk örneği|Örnek|  
 |-----------|----------|---------------------------|------------|-------------|  
 |Arka plan/koyu|VS BG|424242 / 66,66,66|![Renk örneği 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Temel palet örnek](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 02_BasePaletteExample")|  
-|Ön plan/hafif|VS FG|F0EFF1 / 240,239,241|![Renk örneği F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
-|Anahat|VS çıkışı|F6F6F6 / 246,246,246|![Renk örneği F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||  
+|Ön plan/hafif|VS FG|F0EFF1 / 240,239,241|![Swatch F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
+|Anahat|VS Out|F6F6F6 / 246,246,246|![Swatch F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||  
   
  Ek olarak temel renkler, her bir simgeyi genişletilmiş paletinden bir ek renk içerebilir.  
   
@@ -287,7 +289,7 @@ ms.lasthandoff: 12/22/2017
   
 |Kullanım|Ad|Değer (tüm temalar)|Renk örneği|  
 |-----------|----------|--------------------------|------------|  
-|Pozitif|VS eylem yeşil|388A34 / 56,138,52|![Renk örneği 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|Pozitif|VS eylem yeşil|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Negatif|VS eylem kırmızı|A1260D / 161,38,13|![Renk örneği A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
 |Nötr|VS eylem mavi|00539C / 0,83,156|![Renk örneği 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |/ Yeni Oluştur|VS eylem turuncu|C27D1A / 194,156,26|![Renk örneği C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
@@ -297,32 +299,32 @@ ms.lasthandoff: 12/22/2017
   
 |||||  
 |-|-|-|-|  
-|![Çalıştır simgesi](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />Çalıştır|![Sorgu simgesi yürütme](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405 04_ExecuteQuery")<br />Sorgu yürütme|![Tüm adımlar simgesinin yürütmek](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405 05_PlayAllSteps")<br />Tüm adımları Yürüt|![Denetim simgesi ekleme](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405 06_AddControl")<br />Denetim ekleme|  
+|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Çalıştır|![Sorgu simgesi yürütme](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405 04_ExecuteQuery")<br />Sorgu yürütme|![Tüm adımlar simgesinin yürütmek](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405 05_PlayAllSteps")<br />Tüm adımları Yürüt|![Denetim simgesi ekleme](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405 06_AddControl")<br />Denetim ekleme|  
   
  Kırmızı ","Durdur"Delete"gibi negatif Eylem Değiştiriciler için kullanılan "İptal" ve "Kapatın."  
   
 |||||  
 |-|-|-|-|  
-|![Sil ilişki simgesi](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405 07_DeleteRelationship")<br />İlişkiyi sil|![Sil sütun simgesi](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405 08_DeleteColumn")<br />Sütun Sil|![Stop sorgu simgesi](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405 09_StopQuery")<br />Sorguyu Durdur|![Bağlantı çevrimdışı simgesi](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405 10_ConnectionOffline")<br />Çevrimdışı bağlantı|  
+|![Sil ilişki simgesi](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405 07_DeleteRelationship")<br />İlişkiyi sil|![Delete column icon](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405-08_DeleteColumn")<br />Sütun Sil|![Stop sorgu simgesi](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405 09_StopQuery")<br />Sorguyu Durdur|![Bağlantı çevrimdışı simgesi](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405 10_ConnectionOffline")<br />Çevrimdışı bağlantı|  
   
  Mavi değiştiricileri en yaygın olarak ","İleri","Önceki,"Aç"gibi okları gösterilen "Al" ve "Ver." nötr eyleme uygulanan  
   
 |||||  
 |-|-|-|-|  
-|![Alan simgesi gidin](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405 11_GoToField")<br />Alanına gidin|![Onay &#45; toplu hale simgesi](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405 12_BatchedCheckIn")<br />Toplu iade etme|![Adres Düzenleyicisi simgesinin](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405 13_AddressEditor")<br />Adres Düzenleyicisi|![İlişkilendirme Düzenleyicisi simgesi](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405 14_AssociationEditor")<br />İlişkilendirme Düzenleyicisi|  
+|![Alan simgesi gidin](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405 11_GoToField")<br />Alanına gidin|![Toplu onay&#45;simgesi](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405 12_BatchedCheckIn")<br />Toplu iade etme|![Adres Düzenleyicisi simgesinin](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405 13_AddressEditor")<br />Adres Düzenleyicisi|![İlişkilendirme Düzenleyicisi simgesi](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405 14_AssociationEditor")<br />İlişkilendirme Düzenleyicisi|  
   
  Koyu Altın öncelikle "Yeni" değiştiricisi için kullanılır.  
   
 |||||  
 |-|-|-|-|  
-|![Yeni Proje simgesi](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405 15_NewProject")<br />Yeni Proje|![Yeni bir grafik simge oluşturma](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405 16_CreateNewGraph")<br />Yeni bir grafik oluşturma|![Yeni birim testi simgesi](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405 17_NewUnitTest")<br />Yeni birim testi|![Yeni liste öğesi simgesi](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405 18_NewListItem")<br />Yeni liste öğesi|  
+|![New project icon](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405-15_NewProject")<br />Yeni Proje|![Yeni bir grafik simge oluşturma](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405 16_CreateNewGraph")<br />Yeni bir grafik oluşturma|![Yeni birim testi simgesi](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405 17_NewUnitTest")<br />Yeni birim testi|![Yeni liste öğesi simgesi](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405 18_NewListItem")<br />Yeni liste öğesi|  
   
 #### <a name="special-cases"></a>Özel durumlar  
  Özel durumlarda renkli eylem değiştirici bağımsız olarak tek başına simgesi olarak kullanılabilir. Simge için kullanılan renk simgesi ile ilişkili eylemler yansıtır. Bu simgeler de dahil olmak üzere, küçük bir kısmı sınırlıdır:  
   
 ||||||  
 |-|-|-|-|-|  
-|![Çalıştır simgesi](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />Çalıştır|![Stop simgesi](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 19_Stop")<br />Durdur|![Sil simgesi](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />Sil|![Kaydet simgesine](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />Kaydet|![Geri simgesi gidin](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />Geri gidin|  
+|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Çalıştır|![Stop simgesi](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 19_Stop")<br />Durdur|![Delete icon](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")<br />Sil|![Kaydet simgesine](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />Kaydet|![Geri simgesi gidin](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />Geri gidin|  
   
 ### <a name="code-hierarchy-palette"></a>Kod hiyerarşi paleti  
   
@@ -330,19 +332,19 @@ ms.lasthandoff: 12/22/2017
   
 |Kullanım|Ad|Değer (tüm temalar)|Renk örneği|Örnek|  
 |-----------|----------|--------------------------|------------|-------------|  
-|Klasörleri|Klasör|DCB67A / 220,182,122|![Renk örneği DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Klasör renk simgesi](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405 23_FolderColor")|  
+|Klasörleri|Klasör|DCB67A / 220,182,122|![Swatch DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Klasör renk simgesi](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405 23_FolderColor")|  
   
 #### <a name="visual-studio-languages"></a>Visual Studio dilleri  
  Her ortak diller veya platformlar Visual Studio'da kullanılabilir ilişkili bir renk olur. Bu renkleri temel simgesine veya bileşik simgeler sağ üst köşesinde görüntülenen Dil değiştiricileri kullanılır.  
   
 |Kullanım|Ad|Değer (tüm temalar)|Renk örneği|  
 |-----------|----------|--------------------------|------------|  
-|ASP, HTML, WPF|ASP HTML WPF mavi|0095D 7 / 0,149,215|![Renk örneği 0095 D 7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
+|ASP, HTML, WPF|ASP HTML WPF mavi|0095D7 / 0,149,215|![Renk örneği 0095 D 7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
 |C++|CPP mor|9B4F96 / 155,79,150|![Renk örneği 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
-|C#|CS yeşil (VS eylem yeşil)|388A34 / 56,138,52|![Renk örneği 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|C#|CS yeşil (VS eylem yeşil)|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |CSS|CSS kırmızı|BD1E2D / 189,30,45|![Renk örneği BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|  
 |F#|FS mor|672878 / 103,40,120|![Renk örneği 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
-|JavaScript|JS turuncu|F16421 / 241,100,33|![Renk örneği F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
+|JavaScript|JS turuncu|F16421 / 241,100,33|![Swatch F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
 |VB|VB mavi (VS eylem mavi)|00539C / 0,83,156|![Renk örneği 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |TypeScript|TS turuncu|E04C06 / 224,76,6|![Renk örneği E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
 |Python|PY yeşil|879636 / 135,150,54|![Renk örneği 879636](../../extensibility/ux-guidelines/media/0405_879636.png "0405_879636")|  
@@ -351,8 +353,8 @@ ms.lasthandoff: 12/22/2017
   
 |||||||  
 |-|-|-|-|-|-|  
-|![Visual Basic simgesi](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 25_VB")<br />VB|![C &#35; simge](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405 26_CSharp")<br />C#|![C# 43; &#43; simge](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405 27_CPlusPlus")<br />C++|![F &#35; simge](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405 28_FSharp")<br />F#|![JavaScript simgesi](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 29_JavaScript")<br />JavaScript|![Python simgesi](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 30_Python")<br />Python|  
-|![HTML simge](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 31_HTML")<br />HTML|![WPF simgesi](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405 32_WPF")<br />WPF|![ASP simgesi](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405 33_ASP")<br />ASP|![CSS simgesi](../../extensibility/ux-guidelines/media/0405-34_css.png "0405 34_CSS")<br />CSS|![TypeScript simgesi](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405 35_TypeScript")<br />TypeScript||  
+|![Visual Basic simgesi](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 25_VB")<br />VB|![C&#35; icon](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")<br />C#|![C&#43; &#43; simgesi](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405 27_CPlusPlus")<br />C++|![F&#35; icon](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")<br />F#|![JavaScript icon](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")<br />JavaScript|![Python simgesi](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 30_Python")<br />Python|  
+|![HTML icon](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![WPF icon](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP icon](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![CSS icon](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![TypeScript icon](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||  
   
 #### <a name="intellisense"></a>IntelliSense  
  Özel renk paletini IntelliSense simgelerini kullanın. Bu renkleri IntelliSense açılan listesinde farklı öğeleri arasında hızlı bir şekilde ayırmak için kullanıcılara yardımcı olmak için kullanılır.  
@@ -362,7 +364,7 @@ ms.lasthandoff: 12/22/2017
 |Sınıf, olay|VS eylem turuncu|C27D1A / 194,125,26|![Renk örneği C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
 |Genişletme yöntemi, yöntem, modül temsilcisi|VS eylem mor|652D 90 / 101,45,144|![Renk örneği 652D 90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
 |Arabirimi alan, liste öğesi, makrosu, yapısı işlecini bileşim değer türü|VS eylem mavi|00539C / 0,83,156|![Renk örneği 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|Nesne|VS eylem yeşil|388A34 / 56,138,52|![Renk örneği 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|Nesne|VS eylem yeşil|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Sabit, özel durum, liste öğesi, harita, harita öğesi, Namespace, şablon, tür tanımı|Arka plan (VS BG)|424242 / 66,66,66|![Renk örneği 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
   
 ##### <a name="examples-of-intellisense-icons"></a>IntelliSense simgeleri örnekleri  
@@ -378,10 +380,10 @@ ms.lasthandoff: 12/22/2017
 |Kullanım|Ad|Değer (tüm temalar)|Renk örneği|  
 |-----------|----------|--------------------------|------------|  
 |Durum: nötr|Bildirim mavi (VS mavi)|1BA1E2 / 27,161,226|![Renk örneği 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
-|Durum: pozitif|Bildirim yeşil (VS yeşil)|339933 / 51,153,51|![Renk örneği 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
+|Durum: pozitif|Notification Green (VS Green)|339933 / 51,153,51|![Renk örneği 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
 |Durum: negatif|Bildirim kırmızı (VS kırmızı)|E51400 / 229,20,0|![Renk örneği E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|  
-|Durum: uyarı|Bildirim sarı (VS turuncu)|FFCC00 / 255,204,0|![Renk örneği FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|  
-|Ön plan doldurma|Bildirim siyah (siyah)|000000 / 0,0,0|![Renk örneği &#35; 000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|  
+|Durum: uyarı|Bildirim sarı (VS turuncu)|FFCC00 / 255,204,0|![Swatch FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|  
+|Ön plan doldurma|Bildirim siyah (siyah)|000000 / 0,0,0|![Renk örneği &#35;000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|  
 |Ön plan doldurma|Bildirim beyaz (beyaz)|FFFFFF / 255,255,255|![Renk örneği FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
   
 #### <a name="examples-of-notification-icons"></a>Bildirim simgelerini örnekleri  
@@ -396,27 +398,27 @@ ms.lasthandoff: 12/22/2017
 |Grup|Kullanım|Ad|Değer (tüm temalar)|Renk örneği|  
 |-----------|-----------|----------|--------------------------|------------|  
 |TFS|Arka Plan|TFSO BG|656565/ 101, 101, 101|![Renk örneği 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
-|TFS|Anahat|TFSO ÇIKIŞI|FFFFFF / 255, 255 255|![Renk örneği FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|Napa|Arka Plan|Beyaz|FFFFFF / 255, 255 255|![Renk örneği FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|Monaco|Arka Plan|Beyaz|FFFFFF / 255, 255 255|![Renk örneği FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|F12|Arka Plan|Beyaz|FFFFFF / 255, 255 255|![Renk örneği FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|TFS|Anahat|TFSO OUT|FFFFFF / 255, 255, 255|![Renk örneği FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|Napa|Arka Plan|Beyaz|FFFFFF / 255, 255, 255|![Renk örneği FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|Monaco|Arka Plan|Beyaz|FFFFFF / 255, 255, 255|![Renk örneği FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|F12|Arka Plan|Beyaz|FFFFFF / 255, 255, 255|![Renk örneği FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |F12|Normal|F12 Grey_Primary|555555 / 85, 85, 85|![Renk örneği 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|  
 |F12|Vurgulu|F12 Blue_Hover|2279BF / 34,121,191|![Renk örneği 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
-|F12|Devre dışı|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Renk örneği ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
-|F12|Arka plan getirin|BG getirin|D9EBF7 / 217,235,247|![Renk örneği D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|  
+|F12|Devre dışı|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Swatch ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
+|F12|Arka plan getirin|BG getirin|D9EBF7 / 217,235,247|![Swatch D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|  
 |F12|Basılı arka plan|Basılı bg|B2D7F0 / 178,215,240|![Renk örneği B2D7F0](../../extensibility/ux-guidelines/media/0405_b2d7f0.png "0405_B2D7F0")|  
-|F12|Anahat|VS ÇIKIŞI|F6F6F6 / 246,246,246|![Renk örneği F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|  
+|F12|Anahat|VS OUT|F6F6F6 / 246,246,246|![Swatch F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|  
 |F12|Bilgiler|Bilgiler|00BCF2 / 0,188,242|![Renk örneği 00BCF2](../../extensibility/ux-guidelines/media/0405_00bcf2.png "0405_00BCF2")|  
-|F12|Uyarı|Uyarı|F28300 / 242,131,0|![Renk örneği F28300](../../extensibility/ux-guidelines/media/0405_f28300.png "0405_F28300")|  
+|F12|Uyarı|Uyarı|F28300 / 242,131,0|![Swatch F28300](../../extensibility/ux-guidelines/media/0405_f28300.png "0405_F28300")|  
 |F12|Hata / negatif|Error_Negative|E81123 / 232,17,35|![Renk örneği E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|  
 |F12|Başlat / pozitif|Start_Positive|009E49 / 0,158,73|![Renk örneği 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|  
 |F12|Kesme türü|Kesme türü|9B4F96 / 155,79,150|![Renk örneği 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
-|F12|Olay işareti|Olay işareti|A51F00 / 165,31,0|![Renk örneği A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|  
-|F12|Kullanıcı işareti|Kullanıcı işareti|F16220 / 241,98,32|![Renk örneği F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|  
+|F12|Olay işareti|Olay işareti|A51F00 / 165,31,0|![Swatch A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|  
+|F12|Kullanıcı işareti|Kullanıcı işareti|F16220 / 241,98,32|![Swatch F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|  
   
 #### <a name="examples-of-visual-studio-online-icons"></a>Visual Studio Online simgeleri örnekleri  
   
-|TFS çevrimiçi||||  
+|TFS Online||||  
 |----------------|-|-|-|  
 |![TFS çevrimiçi takım simgesi](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "0405 49_TFSOnlineTeam")<br />Online ekibi|![TFS bilgi simgesi](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "0405 50_TFSInformation")<br />Bilgiler|![TFS geçmişi simgesi](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "0405 51_TFSHistory")<br />Geçmiş|![TFS şube simgesi](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405 52_TFSBranch")<br />Dal|  
   

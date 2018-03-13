@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,11 +15,12 @@ helpviewer_keywords:
 - searching IDE
 - IDE, searching
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 0f71cca51a27c8ed9d6467d99425d4d3b721d195
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -26,7 +28,7 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Hızlı Başlatma, Ortam, Seçenekler İletişim Kutusu
-Kullanabileceğiniz **hızlı başlatma** hızlı arama ve IDE varlıklar seçenekleri, şablonlar, menüler gibi eylemleri yürütün. Kullanamazsınız **hızlı başlatma** kod ve simgeleri aramak için. **Hızlı başlatma** arama kutusunu menü çubuğunu sağ üst köşesinde bulunan ve Ctrl + Q anahtarları seçerek erişilebilir olduğunu. Yalnızca arama dizenizle kutusuna girin. İçeren dizeleri aramak için @, Kullan ' @@'.  
+Kullanabileceğiniz **hızlı başlatma** hızlı arama ve IDE varlıklar seçenekleri, şablonlar, menüler gibi eylemleri yürütün. Kullanamazsınız **hızlı başlatma** kod ve simgeleri aramak için. **Hızlı başlatma** arama kutusunu menü çubuğunu sağ üst köşesinde bulunan ve Ctrl + Q anahtarları seçerek erişilebilir olduğunu. Yalnızca arama dizenizle kutusuna girin. İçeren dizeleri aramak için @, Kullan ”@@”.   
   
  **Hızlı başlatma** Visual Studio yüklediğinizde varsayılan olarak etkindir. Menü çubuğunda, Göster Gizle veya **hızlı başlatma** seçerek **Araçları**, **seçenekleri**. Genişletme **ortamları** düğümünü ve ardından **Hızlı Başlat**. Seçin veya temizleyin **Hızlı Başlat'ı Etkinleştir** onay kutusu. Etkinleştirin veya bu sayfada arama kategorileri devre dışı bırakın.  
   

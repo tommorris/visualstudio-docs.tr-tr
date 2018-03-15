@@ -4,28 +4,33 @@ ms.custom:
 ms.date: 12/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 50f2612687a58857f4d05478db073070e2cc9936
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 557b64815360e61f77365f509f96f40bd37ffed6
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Visual Studio (yönetilen kod) CPU kullanım verilerini çözümleme
 
 Visual Studio, uygulamanızda performans sorunları analiz etmenize yardımcı olmak üzere pek çok güçlü özellikler sağlar. Bu konuda, temel özelliklerden bazıları öğrenmek için hızlı bir yoludur. Burada, yüksek CPU kullanımından kaynaklanan performans sorunlarını tanımlamak için aracı ele. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET, dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
 
 Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için diğer seçenekleri sunar. Varsa **CPU kullanımı** burada açıklanan aracı verme, ihtiyaç duyduğunuz, veri [diğer profil oluşturma araçları](../profiling/profiling-feature-tour.md) değişik size yardımcı olabilecek bilgiler sağlar. Çoğu durumda, uygulamanızın performans düşüklüğü, CPU, bellek, işleme kullanıcı Arabirimi veya ağ istek süresi gibi dışında bir şey tarafından kaynaklanıyor olabilir. Tanılama hub'ı çok kaydetmek ve bu tür verilerin çözümlemek için diğer seçenekleri sunar.
+
+> [!NOTE]
+> .NET Core ve ASP.NET Core için CPU kullanımını aracı taşınabilir PBDs ile doğru sonuçlar şu anda sağlamaz. Bunun yerine tam pdb kullanın.
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
@@ -158,7 +163,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
     > [!NOTE]
     > Visual Basic'te Başlangıç nesnesi ayarlandığından emin olun `Sub Main` (**Özellikler > Uygulama > Başlangıç nesnesi**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>1. adım: profil oluşturma verilerini topla 
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 1. adım: profil oluşturma verilerini topla 
   
 1.  İlk olarak, bu kod satırı üzerinde uygulamanızda bir kesme noktası belirleyerek `Main` işlevi:
 
@@ -201,7 +206,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
 
-## <a name="Step2"></a>2. adım: CPU kullanım verilerini çözümleme
+## <a name="Step2"></a> 2. adım: CPU kullanım verilerini çözümleme
 
 CPU kullanımı altında işlevlerin listesi inceleyerek, en fazla çalışmayı yapan işlevleri tanımlama ve her biri daha ayrıntılı bir bakış alma verilerinizi incelemeye başlamak öneririz.
 

@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: a531582b2474305d7c286f936e29a7bc9804d7bf
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Hızlı Başlangıç: Visual Basic ile Visual Studio'da ilk Konsol uygulamanızı oluşturma
 Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), konsolda çalışan basit bir Visual Basic uygulaması oluşturacaksınız.
@@ -81,9 +81,8 @@ Uygulama duraklatma ve kullanıcı girdisi isteyin biraz kod ekleyelim.
 
    ![Hello World gösteren penceresi konsol ve devam etmek için herhangi bir tuşa basın](../ide/media/vb-console-hello-world-press-any-key.png)
 
-Bu hızlı başlangıç Tamamlanıyor Tebrikler! Visual Basic ve Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Lütfen daha derin inceleyin istiyorsanız bir öğreticide devam **öğreticileri** içindekiler bölümü.
+## <a name="next-steps"></a>Sonraki Adımlar
+Bu hızlı başlangıç Tamamlanıyor Tebrikler! Visual Basic ve Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Daha fazla bilgi için aşağıdaki eğitici devam edin.
 
-## <a name="see-also"></a>Ayrıca bkz.
-* [Hızlı Başlangıç: "Hello World" Windows oluşturma Visual Studio ile Visual Basic'te form uygulama](quickstart-visual-basic-winforms.md)
-* [Öğretici: Visual Basic'te Visual Studio ile çalışmaya başlama](tutorial-visual-basic-console.md)
-* [Visual Basic kodu dosyaları için IntelliSense](visual-basic-specific-intellisense.md)
+> [!div class="nextstepaction"]
+> [Visual Basic Visual Studio ile çalışmaya başlama](tutorial-visual-basic-console.md)

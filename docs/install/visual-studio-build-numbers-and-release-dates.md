@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 03/08/2018
+ms.date: 03/13/2018
 ms.topic: article
 helpviewer_keywords: 
 ms.technology:
@@ -13,11 +13,11 @@ ms.technology:
 ms.service: 
 ms.workload:
 - multiple
-ms.openlocfilehash: fffebc62b18226d50fb836144f250894b6a013fd
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 3bfb24548b10ac968f2b6186f373ae504161f884
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 yapı numaralarını ve tarihleri bırakın
 
@@ -25,6 +25,7 @@ Aşağıdaki tabloda yapı numaraları ve yayın tarihleri tarih için Visual St
 
 | **Sürüm**| **Channel** | **Sürüm tarihi** | **Sürüm oluşturma** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.7.0 Önizleme 1.0 | Önizleme | 13 Mart 2018 | 15.7.27512.0 |
 | 15.6.1 | Sürüm | 8 Mart 2018 | 15.6.27428.2002 |
 | 15.6.1 önizleme 1.0 | Önizleme | 8 Mart 2018 | 15.6.27428.2002 |
 | 15.6.0 | Sürüm | 5 Mart 2018 | 15.6.27428.1 |

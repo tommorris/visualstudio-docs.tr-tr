@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: a8e32df2248f53a2b46a971b025b1138abba5101
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 3eb3e0874cfc46fc98209113cf60a32cdb92787d
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="setting-up-a-git-repository"></a>Bir Git deposu ayarlama
 
@@ -43,11 +43,15 @@ Bir Git deposu ayarlama için aşağıdaki adımları yürütün:
 
 ## <a name="publishing-an-existing-project"></a>Varolan projeyi yayımlama
 
-4. Mac için açık projenizi Visual Studio'da dönün 
+Varolan bir, proje varsa _değil_ zaten sürüm denetimindeki Git içinde ayarlamak için aşağıdaki adımları kullanın:
+
+4.  Mac için Visual Studio çözümü defterinde çözüm adı seçin 
 
 5. Menü çubuğunda seçin **sürüm denetimi > Sürüm denetimi Yayımla...** Görüntülenecek **depo seçin** iletişim:
 
     ![Mac için Visual Studio Başlangıç checkout](media/version-control-git4-sml.png)
+
+    Bu menü öğesi menüde gri renkte görüntülenir, çözüm adı seçtiğinizden emin olun.  
 
 6. Seçin **kayıtlı depoları** sekmesi ve tuşuna **Ekle** düğmesi:
 

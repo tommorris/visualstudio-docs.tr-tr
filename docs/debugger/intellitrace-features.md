@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 273f7f94127929a3939d21414bd8da5c12abc83e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 01515701b6aeecc1166551c6376bfd6823e73976
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="intellitrace-features"></a>IntelliTrace Özellikleri
 
@@ -55,7 +55,7 @@ Hatalarını ayıkladığınız, hata ayıklamayı durdurun. Git **Araçlar > Se
 
 Bu varsayılan olarak etkin değildir ancak IntelliTrace anlık görüntülerini uygulamanızı her kesme ve hata ayıklayıcısı adım olay yakalayabilir ve bu anlık görüntüler Geçmiş hata ayıklama oturumunda görüntüleyebilirsiniz. Bir anlık görüntü, tam uygulama durumu görünümünü verir. Anlık görüntü yakalama etkinleştirmek için şu adrese gidin **Araçlar > Seçenekler > IntelliTrace > Genel**seçip **IntelliTrace olayları ve anlık görüntüleri**. Daha fazla bilgi için bkz: [IntelliTrace adım geri kullanarak anlık görüntüleri görüntüleme](../debugger/how-to-use-intellitrace-step-back.md)
 
-Anlık görüntüler Visual Studio Enterprise 2017 15,5 ve daha yüksek bir sürümü kullanılabilir olduğunda ve Windows 10 Anniversary güncelleştirmesi gerektirir veya üstü.  .NET Core ve ASP.NET Core uygulamaları için anlık görüntüler şu anda kullanılamıyor.
+Anlık görüntüler Visual Studio Enterprise 2017 15,5 ve daha yüksek bir sürümü kullanılabilir olduğunda ve Windows 10 Anniversary güncelleştirmesi gerektirir veya üstü.  .NET Core ve ASP.NET Core uygulamaları için Visual Studio Enterprise 2017 sürüm 15.7 preview 1 gereklidir.
 
 ## <a name="GoingFurther"></a> IntelliTrace olayları toplamak ve çağrı bilgileri
 

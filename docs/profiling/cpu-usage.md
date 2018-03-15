@@ -4,20 +4,22 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cfe16da805ec8a43af8bed0c7e112e589d060bc4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.workload:
+- multiple
+ms.openlocfilehash: 2324c857807f2f15762ce36539df3d7c2ad01b4b
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="analyze-cpu-usage"></a>CPU kullanımı analiz
 Uygulamanızda performans sorunları araştırmak gerektiğinde başlatmak için uygun bir yerdir nasıl CPU kullandığı anlamaktır. **CPU kullanımı** aracı gösterir, CPU Visual C++, Visual C# yürütme süresi yeri harcıyorsa / Visual Basic ve JavaScript kodu. Visual Studio 2015 güncelleştirme 1'de başlayarak, hata ayıklayıcı ayrılmadan CPU kullanımı işlevi başına dökümünü görebilirsiniz. Hata ayıklama sırasında CPU açma ve kapatma profil açın ve yürütme, örneğin bir kesme noktasında durdurulduğunda sonuçları görüntüleyin.  
@@ -25,8 +27,11 @@ Uygulamanızda performans sorunları araştırmak gerektiğinde başlatmak için
 Çalıştıran ve tanılama oturumunuz yönetmek için birkaç seçeneğiniz vardır. Örneğin, çalıştırabilirsiniz **CPU kullanımı** aracı yerel veya uzak makinelerde veya üzerinde bir simulator veya öykünücü. Visual Studio'da çalışan bir uygulama için bağlı, açık bir projesi performansını analiz ya da Microsoft Store yüklü bir uygulamayı başlatın. Daha fazla bilgi için bkz: [çalıştırmak profil oluşturma araçları ile veya olmadan hata ayıklayıcı](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Burada, toplamak ve yayın derlemeleri ile CPU kullanımını analiz etme gösteriyoruz. Hata ayıklama sırasında CPU kullanımını analiz etmek için bkz: [performans profili oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md). 
+
+> [!NOTE]
+> .NET Core ve ASP.NET Core için CPU kullanımını aracı taşınabilir PBDs ile doğru sonuçlar şu anda sağlamaz. Bunun yerine tam pdb kullanın.
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a>CPU kullanım verilerini toplama  
+##  <a name="BKMK_Collect_CPU_usage_data"></a> CPU kullanım verilerini toplama  
   
 1.  Visual Studio'da çözüm yapılandırma kümesi **sürüm** ve dağıtım hedefini seçin.  
   
@@ -58,11 +63,11 @@ Burada, toplamak ve yayın derlemeleri ile CPU kullanımını analiz etme göste
   
 ## <a name="analyze-the-cpu-usage-report"></a>CPU kullanım raporu Çözümle  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a>CPU kullanımı çağrı ağacı  
+###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU kullanımı çağrı ağacı  
  Çağrı ağacı bilgileri anlama başlamak için yeniden `GetMaxNumberButton_Click` segmentlere ayırmak ve çağrı ağacı ayrıntılarını inceleyin.  
   
-####  <a name="BKMK_Call_tree_structure"></a>Çağrı ağaç yapısı  
- ![GetMaxNumberButton &#95; Çağrı ağacı tıklatın](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
+####  <a name="BKMK_Call_tree_structure"></a> Çağrı ağaç yapısı  
+ ![GetMaxNumberButton&#95;tıklatın çağrı ağacı](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
 |-|-|  
@@ -71,7 +76,7 @@ Burada, toplamak ve yayın derlemeleri ile CPU kullanımını analiz etme göste
 |![3. adım](../profiling/media/procguid_3.png "ProcGuid_3")|Düğümün alt öğelerinin ikinci düzey adlı ya da framework kod ve ikinci düzey sistem oluşturduğunuz zaman uyumsuz yordamları ve kullanıcı kodu yöntemler ' dir.|  
 |![Adım 4](../profiling/media/procguid_4.png "ProcGuid_4")|Bir yöntemin alt düğümleri yalnızca üst yöntemi çağrıları verilerini içerir. Zaman **Göster harici kod** olan devre dışı, uygulama yöntemlerini de içerebilir bir **[dış kodu]** düğümü.|  
   
-####  <a name="BKMK_External_Code"></a>Harici kod  
+####  <a name="BKMK_External_Code"></a> Harici kod  
  Harici kod olan sistem ve framework bileşenleri işlevlerde yazdığınız kodu tarafından yürütülür. Harici kod başlatın ve uygulamayı durdurun, UI çizin, iş parçacığı oluşturma denetleyen ve diğer alt düzey uygulama hizmetleri sağlamak işlevler içerir. Çoğu durumda, dış kodda ilgilenen olmayacak ve bu nedenle CPU kullanımı çağırın ağaç toplar kullanıcı yönteminin dış işlevler birine **[dış kodu]** düğümü.  
   
  Harici kod çağrısı yollarını görüntülemek istediğinizde, belirleyin **Göster harici kod** gelen **filtre görünümü** listeleyin ve ardından **Uygula**.  
@@ -86,7 +91,7 @@ Burada, toplamak ve yayın derlemeleri ile CPU kullanımını analiz etme göste
   
  ![İç içe geçmiş harici kod arama](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="BKMK_Call_tree_data_columns"></a>Çağrı ağacı veri sütunları  
+###  <a name="BKMK_Call_tree_data_columns"></a> Çağrı ağacı veri sütunları  
   
 |||  
 |-|-|  
@@ -96,19 +101,19 @@ Burada, toplamak ve yayın derlemeleri ile CPU kullanımını analiz etme göste
 |**Kendi kendini CPU (ms)**|Seçili zaman aralığı içinde işlev ve işlev tarafından adı veriliyordu işlev çağrılarında milisaniye sayısını harcanan.|  
 |**Modülü**|İşlev veya işlevleri [dış kodu] düğümünde içeren modüllerin sayısını içeren modülü adı.|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>CPU kullanımı zaman uyumsuz işlevlerde çağrı ağacı  
+###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU kullanımı zaman uyumsuz işlevlerde çağrı ağacı  
  Derleyici zaman uyumsuz bir yöntem karşılaştığında yöntemin yürütme denetlemek için gizli bir sınıf oluşturur. Kavramsal olarak, özgün metodun işlemlerini zaman uyumsuz olarak çağırma derleyicinin ürettiği işlevleri ve geri aramalar, Zamanlayıcı ve yineleyiciler doğru yürütmek için gerekli olan bir listesini içeren bir durum makinesinin sınıftır. Özgün yöntemi üst yöntemi tarafından çağrıldığında, çalışma zamanı üst yürütme bağlamından yöntemi kaldırır ve gizli sınıfı yöntemlerinin uygulamanın yürütme denetlemek sistem ve framework kodu bağlamında çalıştırılır. Zaman uyumsuz yöntemleri genellikle, ancak her zaman, bir veya daha fazla farklı iş parçacıklarında yürütülür. Bu kod CPU kullanımı çağrısı ağacında alt olarak gösterilen **[dış kodu]** hemen üst Ağaç düğümünün altında düğüm.  
   
  Bu örneğimizde görmek için yeniden seçin `GetMaxNumberAsyncButton_Click` zaman çizelgesi segmenti.  
   
- ![GetMaxNumberAsyncButton &#95; Rapor seçimi tıklatın](../profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![GetMaxNumberAsyncButton&#95;tıklatın Rapor Seçimi](../profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  İlk iki düğüm altında **[dış kodu]** durumu makine sınıfının derleyicinin ürettiği yöntemleridir. Üçüncü özgün yöntem çağrısı var. Oluşturulan yöntemleri genişletme neler olduğunu gösterir.  
   
- ![Genişletilmiş GetMaxNumberAsyncButton &#95; Çağrı ağacı tıklatın](../profiling/media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
+ ![GetMaxNumberAsyncButton Genişletilmiş&#95;tıklatın çağrı ağacı](../profiling/media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click`çok az yapar; görev değerlerinin bir listesini yönetir, sonuçları maksimum hesaplar ve çıktısını görüntüler.  
+-   `MainPage::GetMaxNumberAsyncButton_Click` çok az yapar; görev değerlerinin bir listesini yönetir, sonuçları maksimum hesaplar ve çıktısını görüntüler.  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext`zamanlama ve çağrısı sarmalamak 48 görevleri başlatmak için gerekli etkinliğini gösterir `GetNumberAsync`.  
+-   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` zamanlama ve çağrısı sarmalamak 48 görevleri başlatmak için gerekli etkinliğini gösterir `GetNumberAsync`.  
   
--   `MainPage::<GetNumberAsync>b__b`Çağrı görevleri etkinliğini gösterir `GetNumber`.
+-   `MainPage::<GetNumberAsync>b__b` Çağrı görevleri etkinliğini gösterir `GetNumber`.

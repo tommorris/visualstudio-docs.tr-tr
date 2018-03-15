@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: 0465057549543d8e07742e3b3806ebdcab28eb28
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 144410e0e9b5b8d5d40fee86a1573bd179aea44a
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Menü komutları herhangi birinden türetme oluşturabileceğiniz <xref:System.ComponentModel.Design.MenuCommand> veya <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> nesne ve impementling uygun olay işleyicileri. Çoğu durumda kullandığınız <xref:System.ComponentModel.Design.MenuCommand>VSPackage proje şablonu yapar ancak bazen kullanmanız gerekebilir gibi <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -190,9 +190,9 @@ Menü komutları herhangi birinden türetme oluşturabileceğiniz <xref:System.C
   
     |MenuCommand özelliği|OLECMDF bayrağı|  
     |--------------------------|------------------|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|OLECMDF_LATCHED|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|OLECMDF_INVISIBLE|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|OLECMDF_ENABLED|  
   
      Menü komutu metni değiştirmek için kullanmak <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> özelliği <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , aşağıdaki örnekte gösterildiği gibi nesne.  
   
@@ -238,7 +238,7 @@ Menü komutları herhangi birinden türetme oluşturabileceğiniz <xref:System.C
   
     -   Komut bir kısayol menüsü parçası ise ve varsayılan olarak gizlidir:  
   
-         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
+         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXTMENU`  
   
     -   Komut kullanıyorsa, `TEXTCHANGES` bayrak, Ayarla `rgwz` öğesinin `pCmdText` yeni metin kümesi ve komut parametresi `cwActual` öğesinin `pCmdText` komutu dize boyutu parametresi.  
   

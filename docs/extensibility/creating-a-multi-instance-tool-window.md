@@ -4,28 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0cb73a5e5f40d21a5b17faae9602e40f7cd39d48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: e13fb299d513f045c4c7c339a9c6602890079e40
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Çok örnekli araç penceresi oluşturma
 Birden çok örneği aynı anda açık olması için bir araç penceresi programlama yapabilirsiniz. Varsayılan olarak, aracı windows açmak yalnızca bir örneği olabilir.  
   
- Çok örnekli araç penceresi kullandığınızda, bilgi aynı anda birden fazla ilgili kaynakları gösterebilir. Örneğin, çok satırlı koyabilirsiniz <xref:System.Windows.Forms.TextBox> birkaç kod parçacıkları programlama oturumu sırasında aynı anda kullanılabilir olacak şekilde, birden çok örneği araç penceresinde denetim. Ayrıca örneğin koyabilirsiniz bir <xref:System.Windows.Forms.DataGrid> denetimi ve aşağı açılan liste kutusunu çok örnekli araç penceresinde birkaç gerçek zamanlı veri kaynakları aynı anda izlenebilir şekilde.  
+ Çok örnekli araç penceresi kullandığınızda, bilgi aynı anda birden fazla ilgili kaynakları gösterebilir. Örneğin, çok satırlı koyabilirsiniz <xref:System.Windows.Forms.TextBox> birkaç kod parçacıkları programlama oturumu sırasında aynı anda kullanılabilir olacak şekilde, birden çok örneği araç penceresinde denetim. Ayrıca, örneğin, size koyabilirsiniz bir <xref:System.Windows.Forms.DataGrid> denetimi ve aşağı açılan liste kutusunu çok örnekli araç penceresinde birkaç gerçek zamanlı veri kaynakları aynı anda izlenebilir şekilde.  
   
 ## <a name="creating-a-basic-single-instance-tool-window"></a>Temel (tekli) araç penceresi oluşturma  
   
@@ -36,14 +38,14 @@ Birden çok örneği aynı anda açık olması için bir araç penceresi program
   
 ## <a name="making-a-tool-window-multi-instance"></a>Araç penceresi çok örnekli yapma  
   
-1.  Açık **MIToolWindowPackage.cs** dosya ve Bul `ProvideToolWindow` özniteliği. ve `MultiInstances=true` aşağıdaki örnekte gösterildiği gibi parametre.  
+1.  Açık **MIToolWindowPackage.cs** dosya ve Bul `ProvideToolWindow` özniteliği. ve `MultiInstances=true` parametresi, aşağıdaki örnekte gösterildiği gibi:  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
         [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
         [ProvideMenuResource("Menus.ctmenu", 1)]  
         [ProvideToolWindow(typeof(MultiInstanceToolWindow.MIToolWindow), MultiInstances = true)]  
-        [Guid(MIToolWindowPackageGuids.PackageGuidString)]  
+        [Guid(MIToolWindowPackage.PackageGuidString)]  
         public sealed class MIToolWindowPackage : Package  
     {. . .}  
     ```  
@@ -52,7 +54,7 @@ Birden çok örneği aynı anda açık olması için bir araç penceresi program
   
 3.  Bir araç penceresi örneği oluşturmak için arama <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> yöntemi ve kümesi kendi `id` kullanılabilir değerine ve kendi `create` bayrağını `true`.  
   
-     Varsayılan olarak, değeri `id` parametresinin <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> yöntemi `0`. Bu, tek örnek araç penceresi hale getirir. Barındırılması birden fazla örnek için her örneğinin kendi benzersiz olmalıdır `id`.  
+     Varsayılan olarak, değeri `id` parametresinin <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> yöntemi `0`. Bu değer, tek örnek araç penceresi yapar. Barındırılması birden fazla örnek için her örneğinin kendi benzersiz olmalıdır `id`.  
   
 4.  Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> yöntemi <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> tarafından döndürülen nesne <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> araç penceresi örneğinin özelliği.  
   

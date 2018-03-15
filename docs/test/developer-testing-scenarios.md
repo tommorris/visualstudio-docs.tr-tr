@@ -14,31 +14,21 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0da910ddf48d0f270aa5e624628d0d6b937e9ae1
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0bb23bef0a860f11e1c4c57716a2bdd0c6dc2482
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Geliştirici Araçları, senaryolarını ve özelliklerini test etme
 
 Kod sistem birim testi korur. Çok çeşitli güçlü araçları ve teknikleri uygulamaları test ederken kullanılacak geliştiriciler için Visual Studio sağlar:
 
-**Senaryolarını ve özelliklerini:**
-
-* [Gerileme önlemek ve kod kapsamı Intellitest ile elde](#intellitest)
-* [Kodlanmış UI ve Selenium ile test kullanıcı arabirimi](#ui-testing)
-* [Etkin birim testi ile Visual Studio kod kapsamı](#unit-testing)
-* [Birim testi herhangi framework yüksek performansı Test Gezgini kullanma](#test-explorer)
-* [Birim testi ile çalışmaya başlama](getting-started-with-unit-testing.md)
-
-<a name="intellitest"></a>
 ## <a name="avoid-regressions-and-achieve-code-coverage-with-intellitest"></a>Gerileme önlemek ve kod kapsamı Intellitest ile elde
 
 Geleneksel birim test paketlerini, her test çalışması bir örnek kullanım senaryosu temsil eder ve onaylar giriş ve çıkış arasındaki ilişkiyi gerçekleştirir.  Birkaç tür senaryoların yanı sıra doğrulama yeterli olabilir, ancak deneyimli geliştiriciler bilmeniz bile iyi test edilen kodu, doğru olduğunda hataları ne zaman ortaya ancak sınanmamış girişleri yanlış yanıtları yol açabilirsiniz.
 
-Kapsamı geliştirmek ve Intellitest ile gerileme kaçının.
-Intellitest oluşturmak ve yeni veya var olan kod için birim testleri korumak için çaba önemli ölçüde azaltır. 
+Kapsamı geliştirmek ve Intellitest ile gerileme kaçının. Intellitest oluşturmak ve yeni veya var olan kod için birim testleri korumak için çaba önemli ölçüde azaltır.
 
 ![Eylem Intellitest](media/devtest-intellitest.png)
 
@@ -48,14 +38,13 @@ Intellitest oluşturmak ve yeni veya var olan kod için birim testleri korumak i
 * [Intellitest ile çalışmaya başlama](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Intellitest başvuru kılavuzu](intellitest-manual/index.md)
 
-<a name="ui-testing"></a>
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Kodlanmış UI ve Selenium ile test kullanıcı arabirimi
 
 Kullanıcı Arabirimi (UI) türünün en iyi ile test veya topluluk UI testi onaylandı.
 Kodlanmış UI testleri işlevsellik ve uygulamanızın kullanıcı arabirimi davranışını doğrulamak için tam olarak otomatikleştirilmiş test oluşturmak için bir yol sağlar.
 Bunlar, çeşitli teknolojiler XAML tabanlı UWP uygulamaları, tarayıcı uygulamalar ve SharePoint uygulamalar dahil olmak üzere, arasında UI testi otomatik hale getirebilirsiniz.
 
-Kodlanmış UI testleri türünün en iyi seçin veya Selenium ile UI testi genel tarayıcı tabanlı olup, Visual Studio ihtiyacınız olan araçları sağlar. 
+Kodlanmış UI testleri türünün en iyi seçin veya Selenium ile UI testi genel tarayıcı tabanlı olup, Visual Studio ihtiyacınız olan araçları sağlar.
 
 ![Kullanıcı Arabirimi ile kodlanmış UI testi](media/devtest-codeduitest.png)
 
@@ -66,12 +55,11 @@ Kodlanmış UI testleri türünün en iyi seçin veya Selenium ile UI testi gene
 * [Kodlanmış UI testleriyle SharePoint uygulamaları sınama](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Visual Studio Enterprise (Lab) kodlanmış UI testleriyle giriş](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
-<a name="unit-testing"></a>
 ## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Etkin birim testi ile Visual Studio kod kapsamı
 
 Projenizin kodunun ne oranda gerçekte birim testleri gibi kodlanmış testleri tarafından test edildiğini belirlemek için Visual Studio'nun kod kapsamı özelliğini kullanabilirsiniz. Etkili bir şekilde hatalar karşı koruma sağlamak için testlerinizi alıştırma veya 'kodunuzu büyük bir kısmının kapak'.
 
-Kod Kapsamı Çözümleme (CLI) yönetilen ve yönetilmeyen (yerel) kod için uygulanabilir.
+Yönetilen ve yönetilmeyen (yerel) kod için kod kapsamı çözümlemeyi uygulanabilir.
 
 Test yöntemlerini Test Gezgini'ni kullanarak çalıştırdığınızda kod kapsamı bir seçenektir. Sonuçlar tablosu, her derleme sınıfı ve yöntemi içinde çalışan kod yüzdesini gösterir. Ayrıca, kaynak düzenleyici hangi kodun test edildiğini gösterir.
 
@@ -81,12 +69,11 @@ Test yöntemlerini Test Gezgini'ni kullanarak çalıştırdığınızda kod kaps
 * [Birim testi, kod kapsamı ve Visual Studio (Lab) ile kod kopya çözümleme](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Kod Kapsamı Çözümlemeyi Özelleştirme](customizing-code-coverage-analysis.md)
 
-<a name="test-explorer"></a>
 ## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>Birim testi herhangi framework yüksek performansı Test Gezgini kullanma
 
 Geliştiriciler oluşturmak, yönetmek ve en fazla birim testi elde Explorer Yardımı sınayın.
 
-![Visual Studio Test Gezgini](media/devtest-testexplorer.png)
+![Visual Studio Test Explorer](media/devtest-testexplorer.png)
 
 * [Birim testi ile çalışmaya başlama](unit-test-your-code.md)
 * [Test Gezgini ile birim testleri çalıştırma](run-unit-tests-with-test-explorer.md)

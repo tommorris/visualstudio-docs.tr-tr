@@ -1,11 +1,7 @@
 ---
-title: "Uygulama güvenliğini sağlama | Microsoft Docs"
-ms.custom: 
+title: "Visual Studio'da Uygulama güvenliğini sağlama | Microsoft Docs"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - unauthorized access
@@ -20,29 +16,20 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f4b3e958cbf02f09d850ed9c50fb3e248617398
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: f0594f7c9af507f2c68ac4f0cc80b1d2e38d2a51
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="maintaining-security"></a>Güvenliğini Sağlama
 
-Güvenliğin bedelinin sürekli tetikte bulunmak olduğu söylenir. Uygulamanızın tasarımı ve geliştirilmesi sırasında güvenliğe verdiğiniz büyük öneme rağmen, dağıtımdan sonra güvenlik açıkları ortaya çıkacağını varsaymalısınız. Uygulamanızı denetleyerek ve olay günlüklerini çözümleyerek, daha önceleri gizli kalmış bazı kusurları keşfedebilirsiniz.  
-  
- Ayrıca, yalnızca kendi uygulamanız hakkında dikkatli olmanız yeterli olmadığı gibi, uygulamanızın çalıştığı platforma ve uygulamanızın bağımlı olduğu diğer ürünlere yönelik güvenlik tehditlerini ve açıklarını da takip etmeniz gerekir.  
-  
- [Güvenlik, gizlilik ve hesapları](http://go.microsoft.com/fwlink/?LinkId=72881)  
- Virüsler, parolalar, ebeveyn denetimleri ve sürücü şifreleme dahil, güvenlik, gizlilik ve kullanıcı hesapları ile ilgili yardım alın.  
-  
- [Microsoft Güvenlik Bülteni Araması](http://go.microsoft.com/fwlink/?LinkId=110396)  
- Bu sayfa, daha önce yayınlanmış bültenleri bulmayı kolaylaştırır. BT uzmanları için tasarlanmış olan güvenlik bültenleri, güvenlik güncelleştirmeleri ile ilgili ayrıntılı bilgi sağlar.  
-  
- [Windows Server 2003 Güvenlik Kılavuzu](http://go.microsoft.com/fwlink/?LinkId=65300)  
- Doğru kişilerin doğru içeriğe doğru şekilde erişimini sağlarken, BT Profesyonellerine bir Windows Server 2003 ortamını güvenle işletmek için gerekli yardımı sunar.  
-  
- [Kurumsal güvenlik için en iyi yöntemler](http://go.microsoft.com/fwlink/?LinkId=72879)  
- Kurumsal ağlarda farklı yönleriyle güvenliğe odaklanan teknik incelemeler koleksiyonu.  
-  
- [Microsoft Baseline Security Analyzer'ı](http://go.microsoft.com/fwlink/?LinkId=9173)  
- Microsoft Baseline Security Analyzer (MBSA) bireysel ev kullanıcısının, kurumsal bir kullanıcının veya yöneticinin bir veya daha çok Windows tabanlı bilgisayarı genel güvenlik yapılandırması hataları açısından taramasına imkan veren bir araçtır.
+Güvenliğin bedelinin sürekli tetikte bulunmak olduğu söylenir. Uygulamanızın tasarımı ve geliştirilmesi sırasında güvenliğe verdiğiniz büyük öneme rağmen, dağıtımdan sonra güvenlik açıkları ortaya çıkacağını varsaymalısınız. Uygulamanızı denetleyerek ve olay günlüklerini çözümleyerek, daha önceleri gizli kalmış bazı kusurları keşfedebilirsiniz.
+
+Ayrıca, yalnızca kendi uygulamanız hakkında dikkatli olmanız yeterli olmadığı gibi, uygulamanızın çalıştığı platforma ve uygulamanızın bağımlı olduğu diğer ürünlere yönelik güvenlik tehditlerini ve açıklarını da takip etmeniz gerekir.
+
+[Güvenlik, gizlilik ve hesapları](https://support.microsoft.com/products/microsoft-account?category=privacy#security-privacy-accounts-help=windows-8&v0h=winrttab1&v1h=win8tab1&v2h=win7tab1&v3h=winvistatab1)&mdash;güvenlik, gizlilik ve kullanıcı hesapları, virüsler, parolalar, ebeveyn denetimleri, güvenlik duvarları hakkında bilgiler dahil olmak üzere yardım alın ve Sürücü Şifrelemesi...
+
+[Microsoft güvenlik güncelleştirmeleri bültenleri](https://technet.microsoft.com/security/bulletins.aspx)&mdash;bu sayfada, daha önce yayınlanmış bültenleri bulmayı kolaylaştırır. BT uzmanları için tasarlanmış olan güvenlik bültenleri, güvenlik güncelleştirmeleri ile ilgili ayrıntılı bilgi sağlar.
+
+[Microsoft Baseline Security Analyzer](https://www.microsoft.com/download/details.aspx?id=7558)&mdash;Microsoft Baseline Security Analyzer (MBSA) tek bir ev kullanıcısı, kurumsal bir kullanıcı veya yönetici bir veya daha fazla Windows tabanlı bilgisayarlar için ortak taranacak sağlayan bir araçtır güvenlik yapılandırması hataları.

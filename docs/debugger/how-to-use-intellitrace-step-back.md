@@ -1,13 +1,13 @@
 ---
 title: "IntelliTrace adım geri - Visual Studio kullanarak bir anlık görüntüyü görüntülemek | Microsoft Docs"
-ms.custom: 
+ms.custom: mvc
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 caps.latest.revision: 
 author: mikejo5000
@@ -15,27 +15,34 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e99b1bd44705a5a50c4138379a87a0ff8315ea29
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Visual Studio IntelliTrace adım geri kullanarak görünüm anlık görüntüler
 
 IntelliTrace adım sonradan bir anlık görüntüsünü her kesme ve hata ayıklayıcı uygulamanızın adım olay otomatik olarak alır. Kaydedilmiş anlık görüntüler, önceki kesme noktaları veya adımları geri dönün ve geçmişte haliyle uygulamanın durumunu görüntülemek etkinleştirin. IntelliTrace adım arka önceki uygulama durumu görmek istediğiniz ancak hata ayıklamayı yeniden başlatın veya istenen uygulama durumu yeniden istemediğiniz durumlarda size zaman kazandırabilir.
 
-Visual Studio Enterprise 2017 sürüm 15,5 ve daha yüksek başlangıç IntelliTrace adım geri kullanılabilir ve Windows 10 Anniversary güncelleştirmesi gerektirir veya üstü. Bu özellik şu anda hata ayıklama, ASP.NET, WinForms, WPF, yönetilen konsol uygulamaları ve yönetilen sınıf kitaplıkları için desteklenir. ASP.NET Core, .NET Core veya UWP uygulamalarında hata ayıklama şu anda desteklenmiyor. 
+Visual Studio Enterprise 2017 sürüm 15,5 ve daha yüksek başlangıç IntelliTrace adım geri kullanılabilir ve Windows 10 Anniversary güncelleştirmesi gerektirir veya üstü. Bu özellik şu anda hata ayıklama, ASP.NET, WinForms, WPF, yönetilen konsol uygulamaları ve yönetilen sınıf kitaplıkları için desteklenir. Visual Studio 2017 Enterprise sürümü 15.7 ile preview 1 başlayarak, ASP.NET Core ve .NET Core için de özelliği desteklenir. UWP uygulamalarında hata ayıklama şu anda desteklenmiyor.
+
+Bu öğreticide şunları yapacaksınız:
+
+> [!div class="checklist"]
+> * IntelliTrace olayları ve anlık görüntüleri etkinleştir
+> * Adım geri ve İleri Adım komutları kullanarak olayları gidin
+> * Görünüm olay anlık görüntüler
   
 ## <a name="enable-intellitrace-events-and-snapshots-mode"></a>IntelliTrace olayları ve anlık görüntü modunu etkinleştir 
 
-1. Visual Studio Enterprise Git **Araçlar > Seçenekler > IntelliTrace** ayarları ve seçeneğini seçin **IntelliTrace olayları ve anlık görüntüleri**. 
+1. Projenizi Visual Studio kuruluş içinde açın.
+
+1. Git **Araçlar > Seçenekler > IntelliTrace** ayarları ve seçeneğini seçin **IntelliTrace olayları ve anlık görüntüleri**. 
 
     ![IntelliTrace olayları ve anlık görüntüleri modunu etkinleştirme](../debugger/media/intellitrace-enable-snapshots.png "IntelliTrace olayları etkinleştirmek ve anlık görüntü modu")
 
-2. Projenizi Visual Studio'da açın.
-
-3. Projenizde bir veya daha fazla kesme noktaları ayarlayın ve hata ayıklamayı Başlat (basın **F5**), ya da kodunuzu adımla hata ayıklamayı Başlat (**F10** veya **F11**).
+1. Projenizde bir veya daha fazla kesme noktaları ayarlayın ve hata ayıklamayı Başlat (basın **F5**), ya da kodunuzu adımla hata ayıklamayı Başlat (**F10** veya **F11**).
 
     IntelliTrace anlık görüntüsü uygulama işlemi her hata ayıklayıcısını adım ve kesme olayı alır. Bu olaylar kaydedilir **olayları** sekmesinde **tanılama araçları** diğer IntelliTrace olayları birlikte penceresi. Bu pencereyi açmak için **hata ayıklama** > **Windows** > **tanılama araçları Göster**.
 
@@ -49,7 +56,7 @@ Visual Studio Enterprise 2017 sürüm 15,5 ve daha yüksek başlangıç IntelliT
 
 1. Kullanarak olayları arasında gezinmek **adım geriye dönük (Alt + [)** ve **İleri (Alt +])** hata ayıklama araç çubuğu düğmeleri.
 
-    Bu düğmeleri görünür olayları gidin **olayları** sekmesinde **tanılama araçları penceresindeki**. İleri ve geri olaya otomatik olarak atlama geçmiş Seçili olayda hata ayıklamasını etkinleştirir.
+    Bu düğmeleri görünür olayları gidin **olayları** sekmesinde **tanılama araçları penceresindeki**. İleri ve geri olaya otomatik olarak atlama etkinleştirir [geçmiş hata ayıklama](../debugger/historical-debugging.md) seçili olay.
 
     ![Geriye doğru adım ve İleri düğmelerini](../debugger/media/intellitrace-step-back-icons-description.png "adım geri ve İleri düğmeleri")
 
@@ -73,9 +80,7 @@ Visual Studio Enterprise 2017 sürüm 15,5 ve daha yüksek başlangıç IntelliT
 
     ![IntelliTrace adım geri genel bakış](../debugger/media/intellitrace-step-back-overview.png "genel bakış, IntelliTrace adım geri")
 
-## <a name="next-steps"></a>Sonraki adımlar  
- Visual Studio'da değişkenleri incelemek öğrenmek için bkz: [özelliği turu hata ayıklayıcı](../debugger/debugger-feature-tour.md)  
- Geçmiş hata ayıklama genel bakış için bkz: [geçmiş hata ayıklama](../debugger/historical-debugging.md).  
+    Visual Studio'da değişkenleri incelemek hakkında daha fazla bilgi için bkz: [özelliği turu hata ayıklayıcı](../debugger/debugger-feature-tour.md)  
 
 ## <a name="frequently-asked-questions"></a>Sıkça Sorulan Sorular
 
@@ -111,3 +116,10 @@ Genel sürüm performans üzerindeki etkisini, uygulamaya bağlı olarak değiş
 * Çok sayıda benzersiz bellek bölgeler, DLL'ler, çok sayıda yükleyen bir uygulama gibi işlem sahip bir uygulama hata ayıklama sırasında etkin anlık görüntüleri ile performans atlama etkilenebilir. Bu sorun gelecekteki bir Windows sürümünde ele alınacaktır. Bu sorunu yaşıyorsanız, adresinden bize ulaşmak stepback@microsoft.com. 
 
 * Bir dosya kaydedilirken **hata ayıklama > IntelliTrace > Kaydet IntelliTrace oturumunu** olaylar ve anlık görüntü modu altında anlık görüntülerden yakalanan ek verileri .itrace dosyasında mevcut değil. Kesme ve adım olaylarına IntelliTrace olayları yalnızca modunda dosya kaydetmiş gibi aynı bilgileri görebilirsiniz. 
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Bu öğreticide, IntelliTrace adım geri kullanmayı öğrendiniz. Diğer IntelliTrace özellikleri hakkında daha fazla bilgi edinmek isteyebilirsiniz.
+
+> [!div class="nextstepaction"]
+> [IntelliTrace özellikleri](../debugger/intellitrace-features.md)

@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e490ad25535cddf20a2693c2f3b9b7642f0c46e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c57923c75d1ae62b45b6ac288e75ef4e34a2f742
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="item-element-msbuild"></a>Öğe Unsuru (MSBuild)
 Kullanıcı tanımlı bir öğesiyle, meta verilerini içerir. Kullanılan her öğe bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bir alt öğesi olarak proje belirtilen bir `ItemGroup` öğesi.  
@@ -75,7 +75,7 @@ MSBuild 15.1 veya sonraki sürümlerde, herhangi bir meta veri öznitelikleri ge
 
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|`Include`|Gerekli öznitelik.<br /><br /> Dosya veya öğeler listesinde dahil etmek için joker karakter.|  
+|`Include`|İsteğe bağlı öznitelik.<br /><br /> Dosya veya öğeler listesinde dahil etmek için joker karakter.|  
 |`Exclude`|İsteğe bağlı öznitelik.<br /><br /> Dosya veya öğeleri listeden dışlamak için joker karakter.|  
 |`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek koşulu. Daha fazla bilgi için bkz: [koşullar](../msbuild/msbuild-conditions.md).|  
 |`Remove`|İsteğe bağlı öznitelik.<br /><br /> Dosya veya öğeler listesinden kaldırmak için joker karakter.<br /><br />|  
@@ -97,7 +97,7 @@ MSBuild 15.1 veya sonraki sürümlerde, herhangi bir meta veri öznitelikleri ge
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Grouping öğesi öğeleri için.|  
 
 ## <a name="remarks"></a>Açıklamalar  
- `Item`öğeleri girdi yapı sisteme tanımlayın ve öğeyi koleksiyona kendi kullanıcı tanımlı koleksiyon adlarına göre gruplandırılır. Bu öğe koleksiyonları için parametre olarak kullanılan [görevleri](../msbuild/msbuild-tasks.md), hangi bireysel öğeleri koleksiyonlardaki yapı işleminin adımları gerçekleştirmek için kullanın. Daha fazla bilgi için bkz: [öğeleri](../msbuild/msbuild-items.md).  
+ `Item` öğeleri girdi yapı sisteme tanımlayın ve öğeyi koleksiyona kendi kullanıcı tanımlı koleksiyon adlarına göre gruplandırılır. Bu öğe koleksiyonları için parametre olarak kullanılan [görevleri](../msbuild/msbuild-tasks.md), hangi bireysel öğeleri koleksiyonlardaki yapı işleminin adımları gerçekleştirmek için kullanın. Daha fazla bilgi için bkz: [öğeleri](../msbuild/msbuild-items.md).  
 
  Gösterimini kullanarak `@(` *myType* `)` türü öğeleri koleksiyonu sağlar *myType* dizelerin noktalı virgülle ayrılmış listesi genişletilmiş ve bir parametre geçirildi. Parametre türü ise `string`, noktalı virgülle ayrılmış bir öğeler listesi parametresi değeri olur. Parametresi bir dize dizisi ise (`string[]`), noktalı virgül konumunu temelinde dizideki her öğe eklenen sonra. Görev parametre türü ise <xref:Microsoft.Build.Framework.ITaskItem> `[]`, öğe koleksiyonunun bağlı herhangi bir meta veri birlikte içeriğini değer ise. Noktalı virgül dışında bir karakter kullanarak her bir öğeyi sınırlamak üzere söz dizimini kullanın `@(` *myType*`, '`*ayırıcı*`')`.  
 

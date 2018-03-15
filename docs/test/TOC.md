@@ -50,7 +50,6 @@
 ### [UWP uygulamaları için birim testleri çalıştırma](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [Ne Kadar Kodun Test Edildiğini Belirlemek için Kod Kapsamını Kullanma](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 ### [Kod Kapsamı Analizini Özelleştirme](customizing-code-coverage-analysis.md)
-### [Derleme Doğrulama Testlerinde Kod Kapsamını Analiz Etme](analyzing-code-coverage-in-build-verification-tests.md)
 ### [Kod Kapsamı Sorunlarını Giderme](troubleshooting-code-coverage.md)
 ## [Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere öykünücüler kullanma](using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md)
 # [Canlı Birim Testi](live-unit-testing-intro.md)

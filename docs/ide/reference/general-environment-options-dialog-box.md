@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - editors, autocompletion
 - Options dialog box, General Environment
 - General Environment Options dialog box
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de71795242cd5fbb1d41f3d071629e54cf5d04f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5c434b60efa054dbadcb8ef24470ed135d450e12
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>Genel, Ortam, Seçenekler İletişim Kutusu
 
@@ -49,7 +51,7 @@ Renk temaları, durum çubuğu ayarlarını ve tümleşik geliştirme ortamı (I
 
 Seçin **mavi**, **açık** veya **koyu** renk temasını IDE.
 
-Ek önceden tanımlanmış temaları yükleme ve indirme ve yükleme özel tema oluşturma **Visual Studio renkli tema Düzenleyicisi** gelen [Visual Studio Market'te](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor). Bu aracı yükledikten sonra ek renk temaları renk temasını liste kutusunda görüntülenir.
+Ek önceden tanımlanmış temaları yükleme ve indirme ve yükleme özel tema oluşturma **Visual Studio renkli tema Düzenleyicisi** gelen [Visual Studio Market'te](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Bu aracı yükledikten sonra ek renk temaları renk temasını liste kutusunda görüntülenir.
 
 **Menü çubuğunda başlık büyük/küçük harf Uygula**
 
@@ -69,22 +71,17 @@ Yazılım hızlandırma yerine kullanılabilir durumdaysa donanım grafik hızla
 
 ## <a name="other"></a>Diğer
 
-**Pencere menüsünde gösterilen öğeler**  
-Windows listesinde görünür windows sayısı özelleştirir **penceresi** menüsü. 1 ile 24 arasında bir sayı yazın. Varsayılan olarak, sayısı 10'dur.
+**Pencere menüsünde gösterilen öğeler** Windows listesinde görünür windows sayısı özelleştirir **penceresi** menüsü. 1 ile 24 arasında bir sayı yazın. Varsayılan olarak, sayısı 10'dur.
 
-**Son kullanılan listelerinde gösterilen öğeler**  
-En son kullanılan projeleri ve görüntülenen dosyaları sayısı özelleştirir **dosya** menüsü. 1 ile 24 arasında bir sayı yazın. Varsayılan olarak, sayısı 10'dur. Bu, son kullanılan alma projeleri ve dosyaları için kolay bir yoludur.
+**Yakın zamanda gösterilen öğeleri listeler kullanılan** sayısı en son kullanılan projeleri ve görüntülenen dosyaları özelleştirir **dosya** menüsü. 1 ile 24 arasında bir sayı yazın. Varsayılan olarak, sayısı 10'dur. Bu, son kullanılan alma projeleri ve dosyaları için kolay bir yoludur.
 
-**Durum çubuğunu göster**  
-Durum çubuğu görüntüler. Durum çubuğu IDE penceresinin alt kısmında bulunur ve devam eden işlemler ilerleme durumu hakkında bilgileri görüntüler.
+**Durum çubuğunu göster** durum çubuğu görüntüler. Durum çubuğu IDE penceresinin alt kısmında bulunur ve devam eden işlemler ilerleme durumu hakkında bilgileri görüntüler.
 
-**Kapat düğmesi etkin araç penceresi yalnızca etkiler**  
-Belirtir **Kapat** düğmesine tıklandığında, kapalı ve tüm odağa sahip araç penceresi, yalnızca yerleşik kümesindeki aracı Windows. Varsayılan olarak, bu seçenek seçilidir.
+**Kapat düğmesi etkin araç penceresi yalnızca etkiler** belirtir olduğunda **Kapat** düğmesine tıklandığında, kapalı ve tüm odağa sahip araç penceresi, yalnızca yerleşik kümesindeki aracı Windows. Varsayılan olarak, bu seçenek seçilidir.
 
-**Yalnızca etkin araç penceresi otomatik gizle düğmesi etkiler**  
-Belirtir **AutoHide** düğmesine tıklandığında, odağa sahip araç penceresi otomatik olarak ve değil gizli aracı windows yerleşik kümesindeki tüm. Bu seçenek varsayılan olarak seçili değildir.
+**Otomatik Gizle düğmesi etkin araç penceresi yalnızca etkiler** belirtir olduğunda **Otomatik Gizle** düğmesine tıklandığında, odağa sahip araç penceresi otomatik olarak ve değil gizli tüm yerleşik kümesindeki aracı windows. Bu seçenek varsayılan olarak seçili değildir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)  
-[Pencere düzenlerini özelleştirme](../../ide/customizing-window-layouts-in-visual-studio.md)
+[Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)
+[pencere düzenlerini özelleştirme](../../ide/customizing-window-layouts-in-visual-studio.md)

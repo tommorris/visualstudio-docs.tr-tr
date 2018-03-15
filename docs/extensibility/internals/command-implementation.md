@@ -17,11 +17,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2704794e4683fb461dca971a3893ca831591ca0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2e56fbdb6056ba02df0cafac73dd4baab60ab3be
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="command-implementation"></a>Komut uygulama
 Bir komut bir VSPackage uygulamak için aşağıdaki görevleri gerçekleştirmeniz gerekir:  
@@ -62,28 +62,28 @@ if ( null != mcs )
 ## <a name="implementing-commands"></a>Komutları uygulama  
  Bir komutları uygulamak için çeşitli yöntemler vardır. Her zaman aynı şekilde ve aynı menüsünde görünen komut olduğundan, statik menü komutu istiyorsanız komutu kullanarak Oluştur <xref:System.ComponentModel.Design.MenuCommand> önceki bölümdeki örneklerde gösterildiği gibi. Statik bir komut oluşturmak için komutu yürütmek için sorumlu olduğu bir olay işleyicisi sağlamanız gerekir. Komut, her zaman etkin ve görünür olduğundan, durumunu sağlamak için Visual Studio gerekmez. Belirli koşullara bağlı olarak bir komut durumunu değiştirmek istiyorsanız, komut örneği oluşturabileceğiniz <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> sınıfı ve kurucusunda, komutu çalıştırmak için bir olay işleyicisi ve Visual bildirmek üzere bir sorgu durumu işleyici sağlayın Komut durumu değiştiğinde studio. Ayrıca uygulayabilirsiniz <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> komut sınıfı veya, parçası uygulayabilirsiniz gibi <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> bir projenin bir parçası bir komut sağlıyorsanız. İki arabirim ve <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> sınıfı tüm Visual Studio komut durum değişikliği bildirim yöntemleri, komutun yürütülmesi sağlayan ve diğer yöntemleri vardır.  
   
- Bir komut komut hizmetine eklendiğinde, komutları zinciri birini olur. Durum bildirim ve yürütme yöntemleri komutu için uyguladığınızda, o belirli komut için yalnızca sağlamak ve diğer komutları açın tüm diğer durumlarda zincirde geçirmek için dikkatli olun. Komut geçmesine başarısız olursa (genellikle döndürme tarafından <xref:Microsoft.VisualStudio.OLE.Interop.Constants>), Visual Studio düzgün çalışmasını durdurabilir.  
+ Bir komut komut hizmetine eklendiğinde, komutları zinciri birini olur. Durum bildirim ve yürütme yöntemleri komutu için uyguladığınızda, o belirli komut için yalnızca sağlamak ve diğer komutları açın tüm diğer durumlarda zincirde geçirmek için dikkatli olun. Komut geçmesine başarısız olursa (genellikle döndürme tarafından <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>), Visual Studio düzgün çalışmasını durdurabilir.  
   
 ## <a name="query-status-methods"></a>Sorgu durumu yöntemleri  
  Ya da uyguluyorsanız <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> yöntemi veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> yöntemi, komut ait olduğu set komutu GUID denetle ve komut kimliği. Aşağıdaki yönergeleri izleyin:  
   
--   GUID, tanınmıyor, her iki yöntem uygulanmasını döndürmelidir <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+-   GUID, tanınmıyor, her iki yöntem uygulanmasını döndürmelidir <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.  
   
--   Her iki yöntem uygulanmasını GUID algılar, ancak komut gerçekte uygulanmadı durumunda yöntem döndürmelidir <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+-   Her iki yöntem uygulanmasını GUID algılar, ancak komut uygulanmadı durumunda yöntem döndürmelidir <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
--   Her iki yöntem uygulanmasını GUID ve komut tanıdığı sonra yöntemi her komutun komut bayrak alanı ayarlamanız gerekir (içinde `prgCmds` parametresi) aşağıdaki bayraklar kullanarak:  
+-   Her iki yöntem uygulanmasını GUID ve komut tanıdığı sonra yöntemi her komutun komut bayrak alanı ayarlamanız gerekir (içinde `prgCmds` parametresi) aşağıdaki kullanarak <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> bayrakları:  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>komut destekleniyorsa.  
+    -   OLECMDF_SUPPORTED - komutu destekleniyorsa.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>komut görünür olmamalıdır.  
+    -   OLECMDF_INVISIBLE - komutu görünür olmamalıdır.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Komut çubuğunda yükseğe ve denetlendi gibi görünüyor  
+    -   OLECMDF_LATCHED - komutu üzerinde yükseğe ve denetlendi görünüyorsa.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>komutu etkin olduğunda.  
+    -   OLECMDF_ENABLED - komutu etkinleştirilirse.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>kısayol menüsünde görünen komut gizli.  
+    -   OLECMDF_DEFHIDEONCTXTMENU - kısayol menüsünde görünen komut gizli.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>komut bir menü denetleyicisidir ve etkin değil, ancak kendi açılır menü listesi boş değil ve hala kullanılabilir olması gerekir. (Bu bayrak nadiren kullanılır.)  
+    -   OLECMDF_NINCHED - komut bir menü denetleyicisidir ve etkin değil, ancak kendi açılır menü listesi boş değil ve hala kullanılabilir. (Bu bayrak nadiren kullanılır.)  
   
 -   Komut dosyasında, .vsct tanımlanmışsa, `TextChanges` bayrağı, aşağıdaki parametreleri ayarlayın:  
   
@@ -93,7 +93,7 @@ if ( null != mcs )
   
  Ayrıca komutunuzu özellikle Otomasyon işlevleri işlemek için tasarlanmıştır sürece geçerli bağlamı bir Otomasyon işlevi olmadığından emin olun.  
   
- Belirli bir komut desteği belirtmek için iade <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Diğer tüm komutlar için iade <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+ Belirli bir komut desteği belirtmek için iade <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Diğer tüm komutlar için iade <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
  Aşağıdaki örnekte, sorgu status yöntemi önce bağlamı bir Otomasyon işlevi değil, sonra komut kimliği ve doğru komut kümesini GUID bulur emin olur Komutu etkin ve desteklenen ayarlanır. Başka hiçbir komut desteklenir.  
   
@@ -118,7 +118,7 @@ public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, Int
 ```  
   
 ## <a name="execution-methods"></a>Yürütme yöntemleri  
- Execute yöntemi uyarlamasını sorgu durumu yöntemin kullanımı benzer. İlk olarak, bağlam bir Otomasyon işlevi olmadığından emin olun. GUID ve komut kimliği için test Varsa GUID veya komut kimliği tanınmıyor, iade <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+ Execute yöntemi uyarlamasını sorgu durumu yöntemin kullanımı benzer. İlk olarak, bağlam bir Otomasyon işlevi olmadığından emin olun. GUID ve komut kimliği için test Varsa GUID veya komut kimliği tanınmıyor, iade <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
  Komutu işlemek için çalıştırmak ve dönüş <xref:Microsoft.VisualStudio.VSConstants.S_OK> yürütme başarılı olursa. Komutunuzu hata algılama ve bildirim sorumludur; Bu nedenle, yürütme başarısız olursa bir hata kodunu döndürür. Aşağıdaki örnek, yürütme yönteminin nasıl uygulanması gösterir.  
   

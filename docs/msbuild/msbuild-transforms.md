@@ -17,32 +17,29 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 670465059f86e7dd5ccbe725bc0d86aed2fc97b1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b02c8b6c16bf0d1ffd75ee52d34d72446a06ed25
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="msbuild-transforms"></a>MSBuild Dönüşümleri
 Bir dönüştürme başka bir bire bir dönüştürme bir öğe listesi değildir. Bir proje öğesi listeleri dönüştürmek etkinleştirmeye ek olarak, bir dönüşüm kendi giriş ve çıkış arasında doğrudan bir eşleme tanımlamak bir hedef sağlar. Bu konu dönüşümler açıklar ve nasıl [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projeleri daha verimli bir şekilde oluşturmak için bunları kullanır.  
   
 ## <a name="transform-modifiers"></a>Transform Modifiers  
- Dönüşümler rasgele değildir, ancak özel sözdizimi, tüm dönüştürme değiştiricileri biçiminde olmalıdır %(tarafından sınırlı*ItemMetaDataName*). Herhangi bir öğe meta veri dönüştürme değiştiricisi olarak kullanılabilir. Bu, oluşturulduğunda, her öğeye atanan tanınmış öğe meta verileri içerir. İyi bilinen öğe meta verileri bir listesi için bkz: [tanınmış öğe meta verisi](../msbuild/msbuild-well-known-item-metadata.md).  
+Dönüşümler rasgele değildir, ancak özel sözdizimi, tüm dönüştürme değiştiricileri biçiminde olmalıdır %(tarafından sınırlı*ItemMetaDataName*). Herhangi bir öğe meta veri dönüştürme değiştiricisi olarak kullanılabilir. Bu, oluşturulduğunda, her öğeye atanan tanınmış öğe meta verileri içerir. İyi bilinen öğe meta verileri bir listesi için bkz: [tanınmış öğe meta verisi](../msbuild/msbuild-well-known-item-metadata.md).  
   
- Aşağıdaki örnekte, .resx dosyaları listesini .resources dosyaları listesine dönüştürüldüğünde. %(Filename) dönüştürme değiştiricisi her .resources dosyası karşılık gelen .resx dosyası olarak aynı dosya adına sahip olduğunu belirtir.  
+Aşağıdaki örnekte, bir listesini *.resx* dosyaları bir listeye dönüştürülen *.resources* dosyaları. %(Filename) dönüştürme değiştiricisi, her belirtir *.resources* dosya ilgili olarak aynı dosya adına sahip *.resx* dosya.  
   
 ```  
 @(RESXFile->'%(filename).resources')  
-```  
-  
+```
+
+Örneğin, @(RESXFile) öğesi listedeki öğeler varsa *Form1.resx*, *Form2.resx*, ve *Form3.resx*, dönüştürülmüş listesinde çıkışları olacaktır  *Form1.Resources*, *Form2.resources*, ve *Form3.resources*.  
+
 > [!NOTE]
->  Standart Madde listesini ayırıcısı belirttiğiniz aynı şekilde dönüştürülmüş öğe listesi için özel bir ayırıcı belirtebilirsiniz. Örneğin, varsayılan noktalı virgül (;) yerine bir virgülle (,) kullanarak dönüştürülmüş öğesi listesini ayırmak için aşağıdaki XML kullanın.  
-  
-```  
-@(RESXFile->'Toolset\%(filename)%(extension)', ',')  
-```  
-  
- Örneğin, @(RESXFile) öğesi listedeki öğeler varsa `Form1.resx`, `Form2.resx`, ve `Form3.resx`, dönüştürülmüş listesinde çıkışları olacaktır `Form1.resources`, `Form2.resources`, ve `Form3.resources`.  
+>  Standart Madde listesini ayırıcısı belirttiğiniz aynı şekilde dönüştürülmüş öğe listesi için özel bir ayırıcı belirtebilirsiniz. Örneğin, varsayılan noktalı virgül (;) yerine bir virgülle (,) kullanarak dönüştürülmüş öğesi listesini ayırmak için aşağıdaki XML kullanın:  
+> `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
   
 ## <a name="using-multiple-modifiers"></a>Birden çok değiştiricileri kullanma  
  Bir dönüştürme ifadesi herhangi bir sırada birleştirilebilir ve tekrarlanabilir birden çok değiştiricileri içerebilir. Aşağıdaki örnekte, dosyaları içeren dizinin adını değiştirilir, ancak özgün adı ve dosya adı uzantısı dosyaları korur.  
@@ -51,12 +48,12 @@ Bir dönüştürme başka bir bire bir dönüştürme bir öğe listesi değildi
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   
- Örneğin olan öğeler, içinde yer alan `RESXFile` öğe listesi `Project1\Form1.resx`, `Project1\Form2.resx`, ve `Project1\Form3.text`, dönüştürülmüş listesinde çıkışları olacaktır `Toolset\Form1.resx`, `Toolset\Form2.resx`, ve `Toolset\Form3.text`.  
+ Örneğin olan öğeler, içinde yer alan `RESXFile` öğe listesi *Project1\Form1.resx*, *Project1\Form2.resx*, ve *Project1\Form3.text*, Dönüştürülen listeyi çıktılarında olacaktır *Toolset\Form1.resx*, *Toolset\Form2.resx*, ve *Toolset\Form3.text*.  
   
 ## <a name="dependency-analysis"></a>Bağımlılık çözümleme  
  Dönüşümler dönüştürülmüş öğe listesi ve özgün öğe listesi arasında bire bir eşleme garanti. Bu nedenle, bir hedef dönüşümler girdi olan çıktıları oluşturursa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] girişleri ve çıkışları damgalarının çözümleyebilir ve Atla, yapı veya kısmen hedef yeniden gerekmediğine karar verin.  
   
- İçinde [kopyalama görevi](../msbuild/copy-task.md) aşağıdaki örnekte, her dosyasında `BuiltAssemblies` öğe listesi eşleyen bir dönüştürme kullanılarak belirtilen görev, hedef klasörde bir dosyaya `Outputs` özniteliği. Bir dosya `BuiltAssemblies` öğe listesi değişiklikleri `Copy` görev için yalnızca değiştirilen dosya çalıştırılır ve diğer tüm dosyalar atlanacak. Bağımlılık çözümleme ve dönüşümler kullanma hakkında daha fazla bilgi için bkz: [nasıl yapılır: artımlı olarak derleme](../msbuild/how-to-build-incrementally.md).  
+ İçinde [kopyalama görevi](../msbuild/copy-task.md) aşağıdaki örnekte, her dosyasında `BuiltAssemblies` öğe listesi eşleyen bir dönüştürme kullanılarak belirtilen görev, hedef klasörde bir dosyaya `Outputs` özniteliği. Bir dosya `BuiltAssemblies` öğe listesi değişiklikleri `Copy` görev, yalnızca değiştirilen dosya için çalışır ve diğer tüm dosyalar atlandı. Bağımlılık çözümleme ve dönüşümler kullanma hakkında daha fazla bilgi için bkz: [nasıl yapılır: artımlı olarak derleme](../msbuild/how-to-build-incrementally.md).  
   
 ```xml  
 <Target Name="CopyOutputs"  
@@ -97,7 +94,7 @@ Bir dönüştürme başka bir bire bir dönüştürme bir öğe listesi değildi
 ```  
   
 ### <a name="comments"></a>Açıklamalar  
- Bu örnek şu çıkışı üretir.  
+ Bu örnek şu çıkışı üretir:  
   
 ```  
 rootdir: C:\  

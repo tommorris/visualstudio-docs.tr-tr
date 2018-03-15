@@ -14,11 +14,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8808fca81da991727fa439aae10d0e3541e81389
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2520d0b7b5aba982f3e9ca228ad6de85f6890d7f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>Derleme Sürecinde Kod Oluşturma
 [Metin dönüştürmeyi](../modeling/code-generation-and-t4-text-templates.md) parçası olarak çağrılabilir [derleme işlemi](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) , bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözümü. Metin dönüştürme için özelleştirilmiş yapı görevleri vardır. T4 yapı görevleri tasarım zamanı metin şablonlarını çalıştırır ve aynı zamanda çalışma zamanı (önişlenmiş) metin şablonlarını derler.  
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/09/2018
   
  MSBuild bir metin şablonu oluşturduğunuzda, proje dosyası adları gibi şeyleri aynı şekilde erişemeyeceğiniz anlamına gelir. Ancak, [yapı parametreleri kullanarak ortam bilgi metin şablonları ve yönerge işlemcileri aktarmak](#parameters).  
   
-##  <a name="buildserver"></a>Makinelerinizi yapılandırın  
+##  <a name="buildserver"></a> Makinelerinizi yapılandırın  
  Derleme görevleri geliştirme bilgisayarınızda etkinleştirmek için Visual Studio için modelleme SDK'sını yükleyin.
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -66,7 +66,7 @@ ms.lasthandoff: 02/09/2018
   
  `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`  
   
- \-veya -  
+ \- veya -  
   
  `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`  
   
@@ -131,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
  Salt okunur dosyaların üzerine yazılması gerektiğini belirtmek için bu özelliği ekleyin:  
   
- `<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`  
+ `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`  
   
  Son işleme adımını özelleştirmediğiniz sürece, herhangi bir dosyanın üzerine yazıldığında, hata listesinde bir uyarı günlüğe kaydedilir.  
   
@@ -172,7 +172,7 @@ ms.lasthandoff: 02/09/2018
 </ItemGroup>  
 ```  
   
- Yeniden yönlendirmek için yararlı bir klasörü`$(IntermediateOutputPath).`  
+ Yeniden yönlendirmek için yararlı bir klasörü `$(IntermediateOutputPath).`  
   
  Dosya adını belirtir ve çıktısını alırsanız, şablonlardaki çıktı yönergesinde belirtilen uzantıdan öncelikli olur.  
   
@@ -208,7 +208,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
   
 ```  
   
-##  <a name="parameters"></a>Şablonlara yapı bağlam verileri geçirmek  
+##  <a name="parameters"></a> Şablonlara yapı bağlam verileri geçirmek  
  Proje dosyasında parametre değerlerini ayarlayabilirsiniz. Örneğin, geçirebilirsiniz [yapı](../msbuild/msbuild-properties.md) özellikleri ve [ortam değişkenleri](../msbuild/how-to-use-environment-variables-in-a-build.md):  
   
 ```xml  
@@ -240,9 +240,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```  
   
 > [!NOTE]
->  `ResolveParameterValue`verileri alır `T4ParameterValues` MSBuild kullandığınızda. Visual Studio kullanarak şablon dönüştürdüğünüzde, parametrelerin varsayılan değerleri olacaktır.  
+>  `ResolveParameterValue` verileri alır `T4ParameterValues` MSBuild kullandığınızda. Visual Studio kullanarak şablon dönüştürdüğünüzde, parametrelerin varsayılan değerleri olacaktır.  
   
-##  <a name="msbuild"></a>Proje Özellikleri derlemede kullanma ve yönergeleri içerir  
+##  <a name="msbuild"></a> Proje Özellikleri derlemede kullanma ve yönergeleri içerir  
  Visual Studio makrosu $(SolutionDir) gibi Msbuild'de çalışmıyor. Bunun yerine, proje özelliklerini kullanabilirsiniz.  
   
  Proje özelliği tanımlamak için .csproj veya .vbproj dosyanızı düzenleyin. Bu örnek adlı bir özelliğini tanımlar `myLibFolder`:  

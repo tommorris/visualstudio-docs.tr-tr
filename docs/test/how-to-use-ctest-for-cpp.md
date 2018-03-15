@@ -12,11 +12,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 8ae88a819dca24af504c954a00c4f25a9d61d38c
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: bfb4139b0093c8bd59c62d0ea7711f21f2faf53b
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Visual Studio'da c++ CTest kullanma
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 02/23/2018
 
 ## <a name="to-write-tests"></a>Testleri yazmak için
 
-Visual Studio'da CMake desteği Visual Studio Proje sistemi kullanılmaz. Bu nedenle, yazma ve hiçbir CMake ortamında gibi CTest testleri yapılandırın. Visual Studio'da CMake kullanma hakkında daha fazla bilgi için bkz: [CMake araçları Visual C++ için](/cpp/ide/cmake-tools-for-visual-cpp). 
+Visual Studio'da CMake desteği Visual Studio Proje sistemi kullanılmaz. Bu nedenle, yazma ve hiçbir CMake ortamında gibi CTest testleri yapılandırın. Visual Studio'da CMake kullanma hakkında daha fazla bilgi için bkz: [CMake araçları Visual C++ için](/cpp/ide/cmake-tools-for-visual-cpp).
 
 ## <a name="to-run-tests-visual-studio-2017-version-156"></a>(Visual Studio 2017 sürüm 15,6) testleri çalıştırmak için
 
@@ -42,6 +42,6 @@ CTest ancak değil Google veya artırma bağdaştırıcıları kullanıyorsanız
 
 ![VS2017 15,5 CTest testler](media/cpp-cmake-run-tests.png "çalıştırmak CTest içinde 15,5 testleri")
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)

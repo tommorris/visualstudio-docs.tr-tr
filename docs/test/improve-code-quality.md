@@ -11,35 +11,37 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cc57d6ea3ebba0cff901635d411d047bbafbfa94
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 2ba1da6797a7c16f88514f8dd9d040e113c24aec
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio Test Araçları
 
 Visual Studio Test Araçları sizin ve ekibinizin geliştirmek ve kod mükemmel yüksek standartlarını sürdürebilmek için yardımcı olabilir.
 
+**Test Gezgini** penceresi tümleştirmek kolaylaştırır [birim testleri](../test/unit-test-your-code.md) geliştirme uygulama içine. Microsoft birim test çerçevesi veya birkaç üçüncü taraf ve açık kaynak çerçeveleri birini kullanabilirsiniz.
+
+[Intellitest](../test/generate-unit-tests-for-your-code-with-intellitest.md) birim testleri ve test verileri, yönetilen kod için otomatik olarak oluşturur.
+
+[Kod kapsamı](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) projenizin kodunun ne oranda gerçekte birim testleri gibi kodlanmış testleri tarafından test edilmektedir belirler.
+
+[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) uygulamanın diğer bölümleri yer tutucular veya dolgular ile değiştirerek test kodu yalıtmak Yardım.
+
+[Birim testi canlı](../test/live-unit-testing.md) otomatik olarak birim testleri arka planda çalışır ve grafik Visual Studio Kod Düzenleyicisi'nde kod kapsamı ve test sonuçlarını görüntüler.
+
+Kullanım kodlanmış UI testleri için [uygulamanızı kendi kullanıcı arabirimi üzerinden test](../test/use-ui-automation-to-test-your-code.md).
+
+A [laboratuvar ortamı](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md) geliştirmek ve uygulamaları test etmek için kullanabileceğiniz sanal ve fiziksel makineler koleksiyonudur.
+
 > [!NOTE]
 > Birim testi Visual Studio'nin tüm sürümlerinde kullanılabilir değil. Diğer test araçları gibi birim testi, Intellitest, canlı ve kodlanmış UI testleri yalnızca Visual Studio Enterprise Edition'da kullanılabilir. Sürümleri hakkında daha fazla bilgi için bkz: [karşılaştırmak Visual Studio 2017 IDE](https://www.visualstudio.com/vs/compare/).
-
-## <a name="in-this-section"></a>Bu bölümde
-
-|||
-|-|-|
-|[Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)|Test Gezgini, geliştirme uygulamada birim testleri tümleştirmeyi kolay hale getirir. Microsoft birim test çerçevesi veya birkaç üçüncü taraf ve açık kaynak çerçeveleri birini kullanabilirsiniz.|
-|[IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md)|Intellitest birim testleri ve test verileri, yönetilen kod için otomatik olarak oluşturur.|
-|[Kod kapsamı](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|Kod kapsamı, projenizin kodunun ne oranda gerçekte birim testleri gibi kodlanmış testleri tarafından test edilmektedir belirler.|
-|[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|Microsoft Fakes uygulamanın diğer bölümleri yer tutucular veya dolgular ile değiştirerek sınama kodu ayırmanıza yardımcı olur.|
-|[Canlı Birim Testi](../test/live-unit-testing.md)|Dinamik birim testi otomatik olarak birim testleri arka planda çalışır ve grafik Visual Studio Kod Düzenleyicisi'nde kod kapsamı ve test sonuçlarını görüntüler.|
-|[UI Otomasyonu](../test/use-ui-automation-to-test-your-code.md)|Uygulamanız kendi kullanıcı arabirimi aracılığıyla sürücü için kullanım kodlanmış UI test eder.|
-|[Laboratuvar Yönetimi](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md)|Bir laboratuvar ortamı, geliştirmek ve uygulamaları test etmek için kullanabileceğiniz sanal ve fiziksel makineler koleksiyonudur.|
 
 ## <a name="related-scenarios"></a>İlgili senaryolar
 
 * [Keşif & el ile test etme (VSTS)](/vsts/manual-test/)
-* [Load Testing (VSTS)](/vsts/load-test/index)
+* [Yük testi (VSTS)](/vsts/load-test/index)
 * [Sürekli (VSTS) test etme](/vsts/build-release/test/index)
 * [Team Services ve TFS (VSTS) için DevOps genel bakış](/vsts/user-guide/devops-alm-overview)
 * [Kod çözümleme araçları](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

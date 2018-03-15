@@ -15,22 +15,16 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2186630e5c93254f38bfb4bcd05fc74d73ba67e2
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8d3db09285e0a7bb76a38e03a1fee467a9891843
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="security-bibliography"></a>Güvenlik Kaynakçası
 
-Çevrimiçi ve güvenli uygulamalar geliştirme ve güvenli ortamlar yapılandırma konu Yazdır seçili kaynaklar aşağıda verilmiştir:  
-  
-## <a name="microsoft-web-sites"></a>Microsoft Web siteleri  
- [Microsoft Security](http://go.microsoft.com/fwlink/?LinkId=55529)  
- Microsoft uygulamaları ve sistemler ile BT uzmanları, geliştiriciler ve ev kullanıcıları için güvenlik kaynaklarına bağlantılar ağ düzeyinde sistemlere masaüstünden güvenliğini sağlamanıza yardımcı olmak için nasıl çalıştığı hakkında bilgi edinin.  
-  
- [MSDN üzerindeki güvenlik kaynakları](http://go.microsoft.com/fwlink/?LinkID=25440)  
- Geliştirici odaklı belgeler, kod örnekleri, teknik makaleler ve güvenli uygulamalar geliştirmek için diğer kaynaklar için yol gösterir.  
-  
- [Microsoft TechNet Security](http://go.microsoft.com/fwlink/?LinkId=67991)  
- En önemli teknik bilgilerin güvenliği hakkında bilgi teknolojisi uzmanları ve "Power Users" için işaretçiler içerir.
+Güvenli uygulamaları geliştirmek ve güvenli ortamlar yapılandırma hakkında bilgi içeren seçili kaynakları şunlardır:
+
+[Microsoft Security](https://www.microsoft.com/security/default.aspx)&mdash;uygulamalarınızı sağlamanıza yardımcı olmak için Microsoft nasıl çalıştığı hakkında bilgi edinin ve BT uzmanları, geliştiriciler ve ev kullanıcıları için güvenlik kaynaklarına bağlantılar ile ağ düzeyinde sistemlere masaüstünden sistemleri güvenli.
+
+[MSDN üzerindeki güvenlik kaynakları](https://technet.microsoft.com/security/)&mdash;Geliştirici odaklı belgeler, kod örnekleri, teknik makaleler ve güvenli uygulamalar geliştirmek için diğer kaynaklar için yol gösterir.

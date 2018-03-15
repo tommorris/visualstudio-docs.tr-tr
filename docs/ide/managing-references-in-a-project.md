@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fbb9ddfd53210f460b5035f1f83159e46b5aa1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="managing-references-in-a-project"></a>Bir projedeki başvuruları yönetme
 
@@ -39,7 +39,7 @@ Dış bileşen karşı kod yazın veya hizmeti bağlı önce projenize önce bir
 
 Bir başvuru eklemek için Çözüm Gezgini'nde başvurular düğümünü sağ tıklatın ve seçin **Başvuru Ekle**. Daha fazla bilgi için bkz: [nasıl yapılır: başvuru ekleme veya kaldırma başvuru Yöneticisi'ni kullanarak](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
-![Visual C# 43; &#43;içinde bir başvuru ekleyin; ] (../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
+![Visual C bir başvuru ekleyin&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
 
 Aşağıdaki bileşenler ve hizmetlerle türlerini başvuru yapabilirsiniz:
 
@@ -108,7 +108,7 @@ Varsayılan olarak, <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectRefere
 
 Projeleri veya farklı bir .NET Framework sürümünü hedef derlemeleri başvuruda bulunan uygulamaları oluşturabilirsiniz. Örneğin, bir uygulama hedefleyen oluşturabilirsiniz [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)], hedefleyen bir derlemeyi başvuran [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. Önceki bir sürümünü hedefleyen bir projede oluşturursanız [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], bu proje bir proje veya daha yeni bir sürümü hedefler derleme için bir başvuru ayarlanamıyor.
 
-Daha fazla bilgi için bkz: [belirli bir .NET Framework sürümü hedefleme](../ide/targeting-a-specific-dotnet-framework-version.md).
+Daha fazla bilgi için bkz: [çoklu sürüm desteğine genel bakış](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Proje için proje başvuruları
 
@@ -125,5 +125,5 @@ Dosya başvuruları Visual Studio projesi bağlamı dışında derlemeleri doğr
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bozuk Başvurularda Sorun Giderme](../ide/troubleshooting-broken-references.md)  
-[Nasıl Yapılır: Başvuru Yöneticisi'ni Kullanarak Başvuru Ekleme veya Kaldırma](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+[Bozuk başvurularda sorun giderme](../ide/troubleshooting-broken-references.md)
+[nasıl yapılır: başvuru ekleme veya kaldırma başvuru Yöneticisi'ni kullanarak](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

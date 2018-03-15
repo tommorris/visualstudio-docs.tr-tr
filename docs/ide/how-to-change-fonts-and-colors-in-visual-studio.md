@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ccfb4f178fa2e6db89b9ebaf16ca1f072cfc8720
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8b5d03f67edc604a7c2dd7e4cd32620a52812e09
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Nasıl Yapılır: Visual Studio'da Yazı Tiplerini ve Renkleri Değiştirme
 
@@ -41,7 +43,7 @@ IDE çerçeve ve aracı windows Visual Studio'da çeşitli şekillerde rengini �
 > Renk temasını değiştirdiğinizde, IDE metinde varsayılan döner veya önceden özelleştirilmiş yazı tipleri ve boyutları.
 
 > [!TIP]
-> Oluşturma ve Visual Studio Temalar yükleyerek Düzenle [Visual Studio renkli tema Düzenleyicisi](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor).
+> Oluşturma ve Visual Studio Temalar yükleyerek Düzenle [Visual Studio renkli tema Düzenleyicisi](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor).
 
 ## <a name="use-windows-high-contrast-colors"></a>Windows yüksek karşıtlık renklerini kullan
 
@@ -71,5 +73,5 @@ Tüm windows ve IDE içinde iletişim kutuları için yazı tipi ve metin boyutu
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'nun Erişilebilirlik Özellikleri](../ide/reference/accessibility-features-of-visual-studio.md)  
-[Nasıl Yapılır: Düzenleyicideki Yazı Tiplerini ve Renkleri Değiştirme](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+[Visual Studio'nun erişilebilirlik özellikleri](../ide/reference/accessibility-features-of-visual-studio.md)
+[nasıl yapılır: yazı tiplerini ve renkleri Düzenleyicisi'nde değiştirme](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

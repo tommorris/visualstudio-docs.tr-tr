@@ -1,11 +1,12 @@
 ---
-title: "Visual Studio'da Node.js ile çalışmaya başlama | Microsoft Docs"
+title: "Node.js ve hızlı uygulama - Visual Studio oluşturma | Microsoft Docs"
+description: "Bu öğreticide, Visual Studio Node.js ve hızlı bir uygulama oluşturma"
 ms.custom: 
-ms.date: 11/30/2017
+ms.date: 03/13/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-acquisition
+- vs-nodejs
 ms.tgt_pltfrm: 
 ms.topic: tutorial
 ms.devlang: javascript
@@ -16,35 +17,63 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 05e10e6016c4a6791b5bc80ba6a05616c1edb0f6
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
-# <a name="getting-started-with-nodejs-in-visual-studio"></a>Visual Studio'da Node.js ile çalışmaya başlama
-Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE bazı özellikleri keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).  
+# <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da bir Node.js ve hızlı uygulama oluşturma
+Node.js ve Express kullanarak Visual Studio geliştirme için bu öğreticideki basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).  
+
+Bu öğreticide, bilgi nasıl yapılır:
+> [!div class="checklist"]
+> * Node.js projesi oluşturma
+> * Bazı kodlar ekleyin
+> * IntelliSense kullanma
+> * Uygulama Çalıştırma
+> * Bir kesme noktası isabet
+
+## <a name="prerequisites"></a>Önkoşullar
+
+* Visual Studio yüklüyse ve Node.js geliştirme iş yükü olması gerekir.
+
+    Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
+
+    İş yükü yüklenir ancak tıklatın Visual Studio zaten gerektiğinde **açık Visual Studio yükleyicisi** sol bölmesinde bağlantı **yeni proje** iletişim kutusu. Visual Studio yükleyicisi başlatır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
+
+* Node.js çalışma zamanı yüklü olması gerekir.
+
+    LTS sürümünden yüklü yoksa, yükleme [Node.js](https://nodejs.org/en/download/) Web sitesi. Genel olarak, Visual Studio yüklenmiş Node.js çalışma zamanı otomatik olarak algılar. Yüklü bir çalışma zamanı algılamazsa yüklü çalışma zamanı özellikleri sayfasında başvurmak için projenizi yapılandırabilirsiniz (bir proje oluşturduktan sonra proje düğümüne sağ tıklayın ve seçin **özellikleri**).
 
 ## <a name="create-a-project"></a>Proje oluşturma
 İlk olarak, bir Node.js web uygulaması projesi oluşturacaksınız.
 
 1. Visual Studio 2017'ni açın.  
 
-2. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .  
+1. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .  
 
-3. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **JavaScript**, ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulama**, ardından **Tamam**.   
+1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **JavaScript**ve ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulama**ve ardından **Tamam**.   
 
-     Görmüyorsanız, **temel Azure Node.js Express 4 uygulama** proje şablonu, tıklatın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantı **yeni proje** iletişim kutusu. Visual Studio yükleyicisi başlatır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**. 
+     Görmüyorsanız, **temel Azure Node.js Express 4 uygulama** proje şablonu, yüklemelisiniz **Node.js geliştirme** iş yükü ilk. 
 
-    Visual Studio yeni çözüm oluşturur ve projenizin açar. **App.js** proje dosyası (sol bölme) Düzenleyicisi'nde açar. Visual Studio çözümler ve projeler bilmiyorsanız, bkz: [hızlı başlangıç: ilk Node.js uygulamanızı oluşturmak için Visual Studio](../ide/quickstart-nodejs.md).
+    Visual Studio yeni çözüm oluşturur ve projenizin açar. *App.js* proje dosyası (sol bölme) Düzenleyicisi'nde açar.
 
-4. Zaten yüklü Node.js çalışma zamanı yoksa, bu klasörden yüklenmesini [Node.js](https://nodejs.org/en/download/) Web sitesi.
+    - Kalın olarak vurgulanmış olan, vermiş adını kullanarak projenize **yeni proje** iletişim kutusu. Dosya sisteminde, bu proje tarafından temsil edilen bir *.njsproj* proje klasörünüzdeki dosya. Özellikler ve projeye sağ tıklayıp seçerek projeyle ilişkili ortam değişkenleri ayarlayabilirsiniz **özellikleri**. Proje dosyası özel Node.js projesi kaynağına değişiklik değil çünkü gidiş diğer geliştirme araçları ile yapabilirsiniz.
 
-    Genel olarak, Visual Studio yüklenmiş Node.js çalışma zamanı otomatik olarak algılar. Yüklü bir çalışma zamanı algılamazsa yüklü çalışma zamanı başvurmak için projenizi yapılandırabilirsiniz.
+    - En üst düzeyinde varsayılan olarak, projenizin aynı ada sahip bir, çözümüdür. Tarafından temsil edilen bir çözüm bir *.sln* dosya diskte, bir veya daha fazla ilgili projeleri için bir kapsayıcıdır.
+
+    - Npm düğüm herhangi bir yüklü npm paket gösterir. Arayın ve iletişim kutusunu kullanarak npm paket yüklemek için npm düğümünü sağ tıklayabilirsiniz.
+
+    - Proje dosyaları gibi *app.js* proje düğümünün altında görünür. *app.js* proje başlangıç dosyasıdır.
+
+1. Açık **npm** düğümü ve tüm gerekli npm paketler mevcut olduğundan emin olun.
+
+    Herhangi bir (ünlem işareti simgesi) yoksa, sağ tıklayarak **npm** düğümü seçin **npm paket yükleme eksik**.
 
 ## <a name="add-some-code"></a>Bazı kodlar ekleyin
 
-1. Çözüm Gezgini'nde (sağ bölme), görünümleri klasörünü açın, sonra index.pug açın.
+1. Çözüm Gezgini'nde (sağ bölme), görünümleri klasörünü açın, sonra açın *index.pug*.
 
 1. İçeriği aşağıdaki biçimlendirme ile değiştirin.
 
@@ -68,7 +97,7 @@ Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Nod
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
-1. Yollar klasöründe index.js açın.
+1. Yollar klasöründe açın *index.js*.
 
 1. Çağırmadan önce aşağıdaki kodu ekleyin `router.get`:
 
@@ -91,7 +120,11 @@ Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Nod
     });
     ```
 
-1. Sonra `data`, türü `: get` ve IntelliSense, getData işlevi gösterir. Seçin `getData`.
+## <a name="use-intellisense"></a>IntelliSense kullanma
+
+1. İçinde *index.js*, kodu içeren satırı gidin `res.render`.
+
+1. Sonra `data` dize, yazın `: get` ve IntelliSense gösterir, `getData` işlevi. Seçin `getData`.
 
     ![IntelliSense kullanma](../nodejs/media/tutorial-nodejs-intellisense.png) 
 
@@ -111,7 +144,7 @@ Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Nod
 
 ## <a name="set-a-breakpoint"></a>Bir kesme noktası ayarlama
 
-1. Aşağıdaki kod satırı ile bir kesme noktası ayarlamak için önce sol cilt payı index.js içinde'ı tıklatın:
+1. İçinde *index.js*, aşağıdaki kod satırı ile bir kesme noktası ayarlamak için önce sol cilt payı'ı tıklatın:
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
@@ -143,14 +176,6 @@ Bu öğreticide Visual Studio kullanarak Node.js geliştirme için basit bir Nod
 
     ![Tarayıcıda çalışan uygulama](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
-1. Node.js etkileşimli seçerek penceresini **Görünüm** > **diğer pencereler** > **Node.js etkileşimli pencere**.
-
-   ![Node.js etkileşimli penceresini açın](../nodejs/media/tutorial-nodejs-interactive-window.png)  
-
-    Etkileşimli pencere kullanımı dahil olmak üzere kodda yapabileceğiniz her şeyi destekleyen `require()` deyimleri. Aşağıdaki ekran görüntüsünde kodda bir değişken tanımlar ve Node.js yorumlayıcı konumunu görüntüler.
-
-   ![Node.js etkileşimli penceresi](../nodejs/media/tutorial-nodejs-interactive-window-example.png)  
-
 1. Web tarayıcısını kapatın.  
 
 ## <a name="optional-publish-to-azure-app-service"></a>(İsteğe bağlı) Azure App Service'te yayımlama
@@ -175,5 +200,7 @@ Bu öğreticiyi tamamlamak Tebrikler!
 
 ## <a name="next-steps"></a>Sonraki adımlar 
 
-- Daha fazla bilgi edinmek [Visual Studio için Node.js araçları](https://github.com/Microsoft/nodejstools/wiki)  
-- Daha fazla bilgi edinmek [Visual Studio IDE](../ide/visual-studio-ide.md)  
+Bu öğreticide, oluşturmak ve Express kullanarak bir Node.js uygulaması çalıştırmak ve hata ayıklayıcıyı kullanma bir kesme noktası isabet öğrendiniz.
+
+> [!div class="nextstepaction"]
+> [Visual Studio için Node.js Araçları](https://github.com/Microsoft/nodejstools)

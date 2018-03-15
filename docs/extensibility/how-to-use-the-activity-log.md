@@ -4,29 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c27934d043a067f88bd9f47efe7d8f7972959e10
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 9f45e18ebb2ab3e83041ea0e1ba5c2de4c9b8532
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-use-the-activity-log"></a>Nasıl yapılır: etkinlik günlüğü kullanın
 VSPackages etkinlik günlüğü iletileri yazabilirsiniz. Bu özellik, perakende ortamlarda VSPackages hata ayıklama için özellikle yararlıdır.  
   
 > [!TIP]
->  Etkinlik günlüğü her zaman açıktır. Visual Studio, son yüz girişleri ve bunun yanı sıra genel yapılandırma bilgilerini ilk on girişleri çalışırken bir arabellek tutar.  
+>  Etkinlik günlüğü her zaman açıktır. Visual Studio, son 100 girişleri ve bunun yanı sıra genel yapılandırma bilgilerini ilk 10 girişleri çalışırken bir arabellek tutar.  
   
 ### <a name="to-write-an-entry-to-the-activity-log"></a>Etkinlik günlüğü için bir giriş yazmak için  
   
@@ -42,15 +44,17 @@ VSPackages etkinlik günlüğü iletileri yazabilirsiniz. Bu özellik, perakende
         "Called for: {0}", this.ToString()));  
     ```  
   
-     Bu kod alır <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> hizmet ve kendisine bıraktığı bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> arabirimi. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>bir bilgilendirme girişi geçerli kültür bağlamı kullanarak etkinlik günlüğüne yazar.  
+     Bu kod alır <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> hizmet ve kendisine bıraktığı bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> arabirimi. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> bir bilgilendirme girişi geçerli kültür bağlamı kullanarak etkinlik günlüğüne yazar.  
   
 2.  VSPackage (genellikle bir komut çağrılır veya bir pencere açıldığında olduğunda) yüklendiğinde, metin etkinlik günlüğüne yazılır.  
   
 ### <a name="to-examine-the-activity-log"></a>Etkinlik günlüğü incelemek için  
   
-1.  Etkinlik günlüğü alt klasöründe için Visual Studio verileri bulur: *% AppData %*\Microsoft\VisualStudio\15.0\ActivityLog.XML...  
+1.  Visual Studio ile Çalıştır [/Log](../ide/reference/log-devenv-exe.md) ActivityLog.xml oturumunuz sırasında diske yazmak için komut satırı anahtarı.
+
+2.  Visual Studio kapattıktan sonra etkinlik günlüğü alt klasöründe için Visual Studio veri bulma: *% AppData %*\Microsoft\VisualStudio\15.0\ActivityLog.xml.  
   
-2.  Etkinlik günlüğü ile herhangi bir metin düzenleyicisinde açın. Tipik bir girişi şöyledir:  
+3.  Etkinlik günlüğü ile herhangi bir metin düzenleyicisinde açın. Tipik bir girişi şöyledir:  
   
     ```  
     Called for: Company.MyApp.MyAppPackage ...  
@@ -61,7 +65,8 @@ VSPackages etkinlik günlüğü iletileri yazabilirsiniz. Bu özellik, perakende
   
  Yalnızca kendisine yazmadan önce etkinlik günlüğü edinmeniz gerekir. Önbellek değil veya etkinlik günlüğü gelecekte kullanmak için kaydedin.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca Bkz.
+ [/ Log (devenv.exe)](../ide/reference/log-devenv-exe.md)   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>   
  [Sorun giderme VSPackages](../extensibility/troubleshooting-vspackages.md)   

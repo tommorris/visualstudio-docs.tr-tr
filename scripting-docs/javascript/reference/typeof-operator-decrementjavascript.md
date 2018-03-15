@@ -22,11 +22,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c79c69e6c447b14e61fa67ccb8600d5d83bebd2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a9ff8c7942c773d138dd599956c41d1e583e6288
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="typeof-operator-javascript"></a>typeof İşleci (JavaScript)
 Bir ifade veri türünü tanımlayan bir dize döndürür.  
@@ -41,9 +41,11 @@ typeof[(]expression[)] ;
 ## <a name="remarks"></a>Açıklamalar  
  *İfade* için hangi tür bilgileri Aranan herhangi bir ifade bağımsız değişkeni aşağıdaki gibidir.  
   
- `typeof` İşleç türü bilgilerini dize olarak döndürür. Vardır altı olası değerler `typeof` döndürür: "number," "dize," "boolean," "nesnesi," "işlev" ve "tanımsız."  
+ `typeof` İşleç türü bilgilerini dize olarak döndürür. Vardır yedi olası değerler `typeof` döndürür: "number," "dize," "boolean," "nesnesi," "işlev," "tanımsız" ve "Bilinmeyen".  
   
  Parantez isteğe bağlı olarak `typeof` sözdizimi.  
+
+ Bir nesne bir XMLHTTPRequest içinde bilinmeyen bir tür olarak döndürebilir. Bir COM nesnesi hiçbir analog JavaScript'te ile de bilinmeyen bir tür olarak döndürebilir.
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte, değişken veri türü sınar.  
@@ -86,9 +88,9 @@ var result = (typeof obj.propNotDeclared === 'undefined');
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Array.isArray işlevi](../../javascript/reference/array-isarray-function-javascript.md)   
- [Object.getPrototypeOf işlevi](../../javascript/reference/object-getprototypeof-function-javascript.md)   
+ [Object.getPrototypeOf Function](../../javascript/reference/object-getprototypeof-function-javascript.md)   
  [undefined sabiti](../../javascript/reference/undefined-constant-javascript.md)   
  [Karşılaştırma işleçleri](../../javascript/reference/comparison-operators-javascript.md)   
  [Veri türleri](../../javascript/data-types-javascript.md)   
  [İşleç önceliği](../../javascript/operator-subtractprecedence-javascript.md)   
- [İşleç özeti (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [İşleç Özeti (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

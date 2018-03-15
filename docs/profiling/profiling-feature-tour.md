@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: b4662b1e498303bd7a4e09acd78db43519c142b1
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="profiling-feature-tour"></a>Özellik turu profil oluşturma
 
@@ -154,18 +154,21 @@ CPU kullanımı veya bellek kullanımı araçları şu anda mevcut olmayan araç
 
 Visual Studio sunar farklı araçlar listeleyen bir tablo işte ve farklı proje türleri ile kullanabilmek için:
   
-|Performans aracı|Windows Masaüstü|UWP|ASP.NET/ASP.NET Core|  
-|----------------------|---------------------|------------------------------|-------------|  
-|[Bellek kullanımı](../profiling/memory-usage.md)|Evet|Evet|Evet|  
-|[CPU kullanımı](../profiling/cpu-usage.md)|Evet|Evet|Evet (Hayır için .NET Core/ASP.NET çekirdek)|  
-|[GPU kullanımı](../debugger/gpu-usage.md)|Evet|Evet|Yok|  
-|[Uygulama zaman çizelgesi](../profiling/application-timeline.md)|Evet|Evet|Yok|  
-|[PerfTips](../profiling/perftips.md)|Evet|HTML için Hayır XAML için Evet|Evet|  
-|[Performans Gezgini](../profiling/performance-explorer.md)|Evet|Yok|Evet (Hayır için ASP.NET çekirdek)|  
-|[IntelliTrace](../debugger/intellitrace.md)|.NET ve yalnızca Visual Studio Enterprise|.NET ve yalnızca Visual Studio Enterprise|.NET ve yalnızca Visual Studio Enterprise|
-|[Ağ kullanımı](../profiling/network-usage.md)|Yok|Evet|Yok| 
-|[HTML UI yanıtlama hızı](../profiling/html-ui-responsiveness.md)|Yok|XAML için Hayır HTML için Evet|Yok|  
-|[JavaScript belleği](../profiling/javascript-memory.md)|Yok|XAML için Hayır HTML için Evet|Yok|  
+|Performans aracı|Windows Masaüstü|UWP|ASP.NET/ASP.NET Core| 
+|----------------------|---------------------|-------------|-------------|  
+|[Bellek kullanımı](../profiling/memory-usage.md)|Evet|Evet|Evet| 
+|[CPU kullanımı](../profiling/cpu-usage.md)|Evet (nota bakın)|Evet|Evet (nota bakın)|
+|[GPU kullanımı](../debugger/gpu-usage.md)|Evet|Evet|Yok| 
+|[Uygulama zaman çizelgesi](../profiling/application-timeline.md)|Evet|Evet|Yok|
+|[PerfTips](../profiling/perftips.md)|Evet|HTML için Hayır XAML için Evet|Evet|
+|[Performans Gezgini](../profiling/performance-explorer.md)|Evet|Yok|Evet|
+|[IntelliTrace](../debugger/intellitrace.md)|.NET ile yalnızca Visual Studio Enterprise|.NET ile yalnızca Visual Studio Enterprise|.NET ile yalnızca Visual Studio Enterprise|
+|[Ağ kullanımı](../profiling/network-usage.md)|Yok|Evet|Yok|
+|[HTML UI yanıtlama hızı](../profiling/html-ui-responsiveness.md)|Yok|XAML için Hayır HTML için Evet|Yok| 
+|[JavaScript belleği](../profiling/javascript-memory.md)|Yok|XAML için Hayır HTML için Evet|Yok|
+
+> [!NOTE]
+> .NET Core ve ASP.NET Core için CPU kullanımını aracı taşınabilir PBDs ile doğru sonuçlar şu anda sağlamaz. Bunun yerine tam pdb kullanın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)

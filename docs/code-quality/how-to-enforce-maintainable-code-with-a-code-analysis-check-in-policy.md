@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7b1a6d953128317e89672d5d9b175ce7acc1b63f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Nasıl yapılır: bir kod çözümleme iade ilkesi ile Bakımı yapılabilir kodu zorlama
 
@@ -31,23 +31,23 @@ Team Foundation sürüm denetimi yöneticileri kod analizi Bakımı kuralların�
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Kod çözümleme İlkesi Düzenleyicisi'ni açmak için
 
-1. buna **Takım Gezgini**, takım projesine sağ tıklayın, **takım projesi ayarları**ve ardından **kaynak denetimi**.
+1. İçinde **Takım Gezgini**, takım projesine sağ tıklayın, **takım projesi ayarları**ve ardından **kaynak denetimi**.
 
-     The **Source Control** dialog box appears.
+     **Kaynak denetimi** iletişim kutusu görüntülenir.
 
-2. üzerinde **iade ilkesi** sekmesine ve tıklayın **Ekle**.
+2. Üzerinde **iade ilkesi** sekmesine ve tıklayın **Ekle**.
 
-     The **Add Check-in Policy** dialog box appears.
+     **İade İlkesi Ekle** iletişim kutusu görüntülenir.
 
-3. buna **iade ilkesi** listesinde **Kod Analizi** onay kutusunu işaretleyin ve ardından **Tamam**.
+3. İçinde **iade ilkesi** listesinde **Kod Analizi** onay kutusunu işaretleyin ve ardından **Tamam**.
 
-     The **Code Analysis Policy Editor** dialog box appears.
+     **Kod analiz İlkesi Düzenleyicisi'ni** iletişim kutusu görüntülenir.
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Kod çözümleme Bakımı kurallarını etkinleştirmek için
 
-1. buna **kod analiz İlkesi Düzenleyicisi'ni** iletişim kutusunda **kural ayarları**, genişletin **Bakımı kuralları** düğümü.
+1. İçinde **kod analiz İlkesi Düzenleyicisi'ni** iletişim kutusunda **kural ayarları**, genişletin **Bakımı kuralları** düğümü.
 
-2. aşağıdaki kuralları için onay kutularını seçin:
+2. Aşağıdaki kuralları için onay kutularını seçin:
 
     -   Devralma derinliği: **CA1501 AvoidExcessiveInheritance** -eşiği: fazla 5 düzey derinliğinde uyarı
 
@@ -59,9 +59,9 @@ Team Foundation sürüm denetimi yöneticileri kod analizi Bakımı kuralların�
 
     Ayrıca, başarılı bir derlemede önlemek için bir kuralı ihlali istiyorsanız seçin **uyarı bir hata olarak kabul** kural açıklaması yanındaki onay kutusunu.
 
-3. tıklatın **Tamam**. Yeni iade ilkesi şimdi gelecekteki onay bileşenleri için geçerlidir.
+3. **Tamam**'ı tıklatın. Yeni iade ilkesi şimdi gelecekteki onay bileşenleri için geçerlidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod ölçüm değerleri](../code-quality/code-metrics-values.md)
-[oluşturma ve kod çözümleme iade ilkelerini kullanma](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Kod ölçüm değerleri](../code-quality/code-metrics-values.md)
+- [Oluşturma ve kod çözümleme iade ilkelerini kullanma](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

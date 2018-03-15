@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 3df1f9c2f7fc2af97bc5541d313df58da5907cea
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Visual Basic Visual Studio ile çalışmaya başlama
 Bu öğreticide için Visual Basic (VB), oluşturmak ve birkaç farklı konsol uygulamaları çalıştırmak için Visual Studio'yu kullanın ve bazı Visual Studio özelliklerini keşfedin [tümleşik geliştirme ortamı (IDE)](visual-studio-ide.md) bunu yaparken.
@@ -125,9 +125,9 @@ Görmüyorsanız, **konsol uygulaması (.NET Core)** proje şablonu, alabilirsin
 
     ![Hangi eylemler istemlerinde içeren CaluculateThis uygulama gösteren konsol penceresi.](../ide/media/vb-console-calculate-this.png)
 
-Bu öğreticiyi tamamlamak Tebrikler!
+## <a name="next-steps"></a>Sonraki adımlar
+Bu öğreticiyi tamamlamak Tebrikler! Visual Basic ve Visual Studio IDE hakkında daha fazla bilgi edinmek için şu sayfalara bakın.
 
-## <a name="see-also"></a>Ayrıca bkz.
 * [Visual Basic Kılavuzu](/dotnet/visual-basic/index)
 * [Visual Basic'te yenilikler nelerdir?](/dotnet/visual-basic/getting-started/whats-new)
 * [Visual Basic kodu dosyaları için IntelliSense](visual-basic-specific-intellisense.md)

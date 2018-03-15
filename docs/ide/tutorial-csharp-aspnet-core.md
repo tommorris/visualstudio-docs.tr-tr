@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c4d67a57063854f859a766068084d63902ba038e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a24ccbcecc2d5bd4d5799ada048fee0004514f7
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>C# ve Visual Studio'da ASP.NET ile çalışmaya başlama
 Visual Studio kullanarak ASP.NET Core ile C# geliştirme için Bu öğreticide, bir C# ASP.NET Core web uygulaması oluşturma, kodu ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın.
@@ -167,12 +167,9 @@ MVC örüntüsü, test ve güncelleştirmek geleneksel tek yapılı uygulamalar 
 
  ![Araç çubuğundaki hata ayıklamayı Durdur düğmesini tıklatın](../ide/media/csharp-aspnet-stop-debugging.png)
 
+## <a name="next-steps"></a>Sonraki adımlar
 
-Bu öğreticiyi tamamlamak Tebrikler!
+Bu öğreticiyi tamamlamak Tebrikler! C# ASP.NET Core ve Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Hatta daha fazla bilgi için aşağıdaki eğitici devam edin.
 
-## <a name="see-also"></a>Ayrıca bkz.
-* [ASP.NET Core MVC ve Visual Studio ile çalışmaya başlama](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
-* [ASP.NET Core Razor sayfalarında ile çalışmaya başlama](/aspnet/core/tutorials/razor-pages/razor-pages-start)
-* [C# ' ta yenilikler nelerdir?](/dotnet/csharp/whats-new)
-* [C# Dil Başvurusu](/dotnet/csharp/language-reference/index)
-* [Yeni başlayanlar için C# Temelleri](https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169) video indirmelere
+ > [!div class="nextstepaction"]
+ > [ASP.NET Core MVC ve Visual Studio ile çalışmaya başlama](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)

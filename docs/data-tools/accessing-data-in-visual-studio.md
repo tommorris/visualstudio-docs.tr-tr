@@ -1,10 +1,6 @@
 ---
 title: "Visual Studio'da veri erişimi | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - "80025080"
@@ -13,18 +9,17 @@ helpviewer_keywords:
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ccee10630a4b5de0aebf361c7acf6cccf8cf49c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e7c4c9aada390259d4abd57484c20d25728ef91f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio'da veri erişimi
 
@@ -66,17 +61,17 @@ ve daha fazlası...
 Çok sayıda veritabanı satıcılar ve üçüncü tarafların Visual Studio tümleştirmesi tarafından NuGet paketlerini destekler. Nuget.org veya Visual Studio'da NuGet Paket Yöneticisi aracılığıyla teklifleri keşfedebilirsiniz (**Araçları** > **NuGet Paket Yöneticisi** > **Manage NuGet Çözüm için paketlerini**). Diğer veritabanı ürünleri bir uzantısı olarak Visual Studio ile tümleştirin. Visual Studio Market'te bu tekliflerini giderek gözatabilirsiniz **Araçları**, **Uzantılar ve güncelleştirmeler** seçilerek **çevrimiçi** sol bölmesinde iletişim kutusu. Daha fazla bilgi için bkz: [Visual Studio için uyumlu bir veritabanı sistemleri](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
-> SQL Server 2005 için genişletilmiş destek 12 Nisan 2016 tarihinde sona erdi. Veri araçları Visual Studio 2015 ve daha sonra bu tarihten sonra SQL Server 2005 ile çalışmaya devam edecek garantisi yoktur. Daha fazla bilgi için bkz: [SQL Server 2005 destek bitiş duyuru](https://www.microsoft.com/server-cloud/products/sql-server-2005/).
+> SQL Server 2005 için genişletilmiş destek 12 Nisan 2016 tarihinde sona erdi. Veri araçları Visual Studio 2015 ve daha sonra bu tarihten sonra SQL Server 2005 ile çalışmaya devam edecek garantisi yoktur. Daha fazla bilgi için bkz: [SQL Server 2005 destek bitiş duyuru](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ## <a name="net-languages"></a>.NET dilleri
 
 .NET Core dahil olmak üzere tüm .NET veri erişimi ADO.NET, veri kaynağı, hem ilişkisel hem de ilişkisel olmayan herhangi bir tür erişmek için bir arabirim tanımlayan sınıflar kümesini temel alır. Visual Studio çeşitli araçlar vardır ve veritabanları için bağlanmanıza yardımcı olması için ADO.NET çalışmak tasarımcıları verileri işlemek ve kullanıcıya verileri görüntülemektedir. Bu bölümdeki belgelere bu araçların nasıl kullanılacağını açıklar. Ayrıca, doğrudan ADO.NET komut nesneleri karşı programlama yapabilirsiniz. ADO.NET API'larını doğrudan çağırmak hakkında daha fazla bilgi için bkz: [ADO.NET](/dotnet/framework/data/adonet/index).
 
-Özellikle ASP.NET ile ilgili veri erişimi belgelerine bakın [verilerle çalışma](http://www.asp.net/web-forms/overview/presenting-and-managing-data) ASP.NET sitesinde. ASP.NET MVC ile Entity Framework kullanarak, bir öğretici için bkz: [Entity Framework 6 kod MVC 5 kullanarak ilk ile çalışmaya başlama](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+Özellikle ASP.NET ile ilgili veri erişimi belgelerine bakın [verilerle çalışma](http://www.asp.net/web-forms/overview/presenting-and-managing-data) ASP.NET sitesinde. ASP.NET MVC ile Entity Framework kullanarak, bir öğretici için bkz: [Entity Framework 6 kod MVC 5 kullanarak ilk ile çalışmaya başlama](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
 C# veya Visual Basic Evrensel Windows Platformu (UWP) uygulamaları, Azure Storage ve diğer Azure hizmetlerine erişmek için .NET için Microsoft Azure SDK'sını kullanabilirsiniz. Windows.Web.HttpClient sınıfı herhangi bir RESTful hizmeti ile iletişim sağlar. Daha fazla bilgi için bkz: [Windows.Web.Http kullanarak bir HTTP sunucusuna bağlanmak nasıl](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
-Yerel makine üzerinde veri depolama için önerilen yaklaşım uygulama ile aynı işlemde çalışan SQLite kullanmaktır. Bir nesne ilişkisel eşleme (ORM) katman gerekiyorsa, Entity Framework kullanabilirsiniz. Daha fazla bilgi için bkz: [veri erişimi](https://msdn.microsoft.com/windows/uwp/data-access/index) Windows Developer Center'da.
+Yerel makine üzerinde veri depolama için önerilen yaklaşım uygulama ile aynı işlemde çalışan SQLite kullanmaktır. Bir nesne ilişkisel eşleme (ORM) katman gerekiyorsa, Entity Framework kullanabilirsiniz. Daha fazla bilgi için bkz: [veri erişimi](/windows/uwp/data-access/index) Windows Developer Center'da.
 
 Azure hizmetlerine bağlanıyorsanız, en son indirdiğinizden emin olun; [Azure SDK Araçları](https://azure.microsoft.com/downloads/).
 
@@ -92,8 +87,7 @@ ADO.NET tüketilebilir olması için bir veritabanı için özel bir olmalıdır
 
 [LINQ-SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md) eski kuşak nesne ilişkisel Eşleştiricisi. En az karmaşık senaryolar için iyi çalışır ancak artık etkin geliştirme değil.
 
-[Veri kümeleri](../data-tools/dataset-tools-in-visual-studio.md)  
-Eski üç modelleme teknolojisi. Öncelikle hangi, değil büyük miktarlarda veri işleme veya karmaşık sorgular veya dönüşümler gerçekleştirme "veriler üzerinde forms" uygulamalarının hızlı geliştirme için tasarlanmıştır. Mantıksal SQL veritabanı nesnelerini .NET nesneleri çok daha benzer DataTable ve DataRow nesneleri bir veri kümesi nesnesi oluşur. SQL veri kaynağını temel alan nispeten basit uygulamalar için veri kümeleri hala iyi bir seçimdir olabilir.
+[Veri kümeleri](../data-tools/dataset-tools-in-visual-studio.md) üç modelleme teknolojileri en eski. Öncelikle hangi, değil büyük miktarlarda veri işleme veya karmaşık sorgular veya dönüşümler gerçekleştirme "veriler üzerinde forms" uygulamalarının hızlı geliştirme için tasarlanmıştır. Mantıksal SQL veritabanı nesnelerini .NET nesneleri çok daha benzer DataTable ve DataRow nesneleri bir veri kümesi nesnesi oluşur. SQL veri kaynağını temel alan nispeten basit uygulamalar için veri kümeleri hala iyi bir seçimdir olabilir.
 
 Bu teknolojiler birini kullanmak için gereksinimi yoktur. Özellikle performansı önemli olduğu bazı senaryolarda, yalnızca bir DataReader nesnesi veritabanından okunur ve liste gibi bir koleksiyon nesnesi, gereken değerleri kopyalayın için kullanabileceğiniz\<T >.
 
@@ -116,30 +110,31 @@ C++ uygulamaları veritabanlarına bağlanma hakkında daha fazla bilgi için bk
 ## <a name="python"></a>Python
 
 Yükleme [Python desteği Visual Studio'da](../python/python-in-visual-studio.md) Python uygulamaları oluşturmak için. Azure belgelerine aşağıdakiler de dahil olmak üzere verilere bağlanma birkaç öğreticileri sahiptir:
+
 - [Django ve Azure üzerinde SQL veritabanı](/azure/app-service/app-service-web-get-started-python)
 - [Django ve Azure üzerinde MySQL](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
 - Çalışmak [BLOB'lar](/azure/storage/blobs/storage-quickstart-blobs-python), [dosyaları](/azure/storage/files/storage-python-how-to-use-file-storage), [sıraları](/azure/storage/queues/storage-python-how-to-use-queue-storage), ve [tabloları (Cosmo DB)](/azure/cosmos-db/table-storage-how-to-use-python).
 
 ## <a name="related-topics"></a>İlgili konular
 
-[Veri, aygıtları ve analiz](https://msdn.microsoft.com/data-and-devices) Cortana Analytics Suite ve nesnelerin interneti için destek dahil olmak üzere Microsoft Akıllı bulut tanıtılmaktadır.
+[Microsoft AI platform](https://azure.microsoft.com/overview/ai-platform/?v=17.42w)&mdash;Cortana Analytics Suite ve nesnelerin interneti için destek dahil olmak üzere Microsoft Akıllı bulut tanıtılmaktadır.
 
-[Microsoft Azure depolama](https://azure.microCsoft.com/documentation/services/storage/) Azure Storage açıklar ve Azure BLOB'ları, tabloları, kuyrukları ve dosya kullanarak uygulama oluşturma.
+[Microsoft Azure depolama](/azure/storage/)&mdash;Azure Storage açıklar ve Azure BLOB'ları, tabloları, kuyrukları ve dosya kullanarak uygulama oluşturma.
 
-[Azure SQL veritabanı](https://azure.microsoft.com/documentation/services/sql-database/) Azure SQL Database, hizmet olarak ilişkisel bir veritabanına bağlanmak açıklar.
+[Azure SQL veritabanı](/azure/sql-database/)&mdash;Azure SQL Database, hizmet olarak ilişkisel bir veritabanına bağlanmak açıklar.
 
-[SQL Server veri Araçları](/sql/ssdt/download-sql-server-data-tools-ssdt) tasarım, sınama ve veri bağlı uygulamalar ve veritabanları dağıtma araştırması kolaylaştıran araçlar açıklanmaktadır.
+[SQL Server veri Araçları](/sql/ssdt/download-sql-server-data-tools-ssdt)&mdash;tasarım, sınama ve veri bağlı uygulamalar ve veritabanları dağıtma araştırması kolaylaştıran araçlar açıklanmaktadır.
 
-[ADO.NET](/dotnet/framework/data/adonet/index) ADO.NET mimarisi ve ADO.NET sınıflarını uygulama verilerini yönetmek ve veri kaynakları ve XML ile etkileşim kurmak için nasıl kullanılacağını açıklar.
+[ADO.NET](/dotnet/framework/data/adonet/index)&mdash;ADO.NET mimarisi ve ADO.NET sınıflarını uygulama verilerini yönetmek ve veri kaynakları ve XML ile etkileşim kurmak için nasıl kullanılacağını açıklar.
 
-[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) yerine kavramsal model ilişkisel bir veritabanına karşı doğrudan karşı geliştiricilerin izin veri uygulamalarının nasıl oluşturulacağını açıklar.
+[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)&mdash;yerine kavramsal model ilişkisel bir veritabanına karşı doğrudan karşı geliştiricilerin izin veri uygulamalarının nasıl oluşturulacağını açıklar.
 
-[WCF Veri Hizmetleri 4.5](/dotnet/framework/data/wcf/index) nasıl kullanılacağını açıklar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] uygulayan veri Hizmetleri web ya da intranet üzerinde dağıtmak için [açık veri Protokolü (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+[WCF Veri Hizmetleri 4.5](/dotnet/framework/data/wcf/index)&mdash;nasıl kullanılacağını açıklar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] uygulayan veri Hizmetleri web ya da intranet üzerinde dağıtmak için [açık veri Protokolü (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
-[Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md) Office çözümlerinde verileri nasıl çalıştığını açıklayan konulara bağlantılar içerir. Burada şema tabanlı programlama, verileri önbelleğe alma ve sunucu tarafında veri erişimi hakkında bilgiler bulunur.
+[Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)&mdash;Office çözümlerinde verileri nasıl çalıştığını açıklayan konulara bağlantılar içerir. Burada şema tabanlı programlama, verileri önbelleğe alma ve sunucu tarafında veri erişimi hakkında bilgiler bulunur.
 
-[LINQ (dil ile tümleşik sorgu)](/dotnet/csharp/linq/) C# ve Visual Basic ve ilişkisel veritabanları, XML belgeleri, veri kümeleri ve bellek içi koleksiyonları sorgulamak için ortak modeli yerleşik sorgu özellikleri açıklanmaktadır.
+[LINQ (dil ile tümleşik sorgu)](/dotnet/csharp/linq/)&mdash;C# ve Visual Basic ve ilişkisel veritabanları, XML belgeleri, veri kümeleri ve bellek içi koleksiyonları sorgulamak için ortak modeli yerleşik sorgu özellikleri açıklanmaktadır.
 
-[Visual Studio'daki XML araçları](../xml-tools/xml-tools-in-visual-studio.md) XML veri, hata ayıklama XSLT, .NET Framework XML özellikleri ile çalışma ve XML sorgusu mimarisini açıklar.
+[Visual Studio'daki XML araçları](../xml-tools/xml-tools-in-visual-studio.md)&mdash;XML veri, hata ayıklama XSLT, .NET Framework XML özellikleri ile çalışma ve XML sorgusu mimarisini açıklar.
 
-[XML belgeleri ve verileri](/dotnet/standard/data/xml/index) XML belgelerini ve .NET Framework Veri çalışmak sınıfları kapsamlı ve tümleşik bir dizi genel bir bakış sağlar.
+[XML belgeleri ve verileri](/dotnet/standard/data/xml/index)&mdash;XML belgelerini ve .NET Framework Veri çalışmak sınıfları kapsamlı ve tümleşik bir dizi genel bir bakış sağlar.

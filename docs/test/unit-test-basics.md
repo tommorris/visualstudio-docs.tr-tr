@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac60dbd14b16491f9de841f168cd5bf725c340d
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: c2a96315d7610e665ed32b669bea45f9318cffdb
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="unit-test-basics"></a>Birim testi temelleri
 
@@ -30,13 +30,13 @@ Hızlı bir şekilde test projeleri oluşturmak ve kodunuzdan test yöntemleri v
 
 Test Gezgini, Test Gezgini eklentisi arabirimleri uyguladık birim test çerçevelerini üçüncü taraf ve açık kaynak de çalıştırabilirsiniz. Visual Studio Uzantı Yöneticisi'ni ve Visual Studio Galerisi aracılığıyla bu çerçeveleri çoğunu ekleyebilirsiniz. Bkz: [üçüncü taraf birim test çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)
 
-## <a name="quick-starts"></a>Hızlı başlangıçlar
+## <a name="getting-started"></a>Başlarken
 
 Doğrudan kodlama içine alır birim testi giriş için aşağıdaki konulardan birine bakın:
 
 - [İzlenecek yol: Yönetilen Kod için Birim Testleri Oluşturma ve Çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Hızlı Başlangıç: Test Gezgini ile güdümlü geliştirme test etme](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Visual Studio'da C/C++ için birim testleri yazma](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -92,7 +92,7 @@ Genellikle birim testi projesi ve birim testi saplamalar kodunuzdan oluşturmak 
 
 2.  Birim testleri oluşturma veya oluşturmak için kullanılan değerleri değiştirmek için Varsayılanları kabul etmek için Tamam'a tıklayın ve ad birim testi projesi ve birim testleri. Varsayılan olarak birim testi yöntemlerine eklenen kodu seçebilirsiniz.
 
-     ![Sağ &#45;Düzenleyicisi'nde tıklatın ve birim testleri oluşturmak seçin;](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
+     ![Sağ&#45;Düzenleyicisi'nde tıklatın ve birim testleri oluşturmak seçin](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
 
 3.  Birim testi saplamalar sınıfındaki tüm yöntemler için yeni bir birim testi projesi oluşturulur.
 
@@ -221,7 +221,7 @@ Test Gezgini araç bulmak, düzenlemenize ve ilgilendiğiniz testler yardımcı 
 
  Seçebileceğiniz **tümünü Çalıştır** tüm testleri çalıştırma veya seçmek için **çalıştırmak** Çalıştırılacak testleri kümesini seçin. Sonra testleri kümesi çalıştırmak, test çalışması özetini Test Gezgini penceresinin alt kısmında görüntülenir. Bir test alt bölmesinde test ayrıntılarını görüntülemek için seçin. Seçin **açık Test** ve bağlam menüsünden (klavye: F12) seçili test için kaynak kodunu görüntüleyin.
 
- Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE &#95;parallelicon &#45; küçük](../test/media/ute_parallelicon-small.png "UTE_parallelicon küçük") iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
+ Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png "UTE_parallelicon küçük") iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 
 ### <a name="run-tests-after-every-build"></a>Her yapıdan sonra testleri çalıştırma
 

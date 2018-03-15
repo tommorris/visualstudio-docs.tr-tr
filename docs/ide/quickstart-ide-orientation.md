@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ae67eb895292e909e01471b329df6de587c75f
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 66ff5933a1a3e2623df706f0f3e7446e750f173b
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: Visual Studio IDE ilk bakış
 
@@ -103,6 +103,6 @@ Herhangi bir sorun, Visual Studio kullanıyorsanız ya da ürünü geliştirmemi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hızlı Başlangıç: IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)  
-[Hızlı Başlangıç: düzenleyicide kodlama](../ide/quickstart-editor.md)  
-[Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)
+- [Hızlı Başlangıç: IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)
+- [Hızlı Başlangıç: düzenleyicide kodlama](../ide/quickstart-editor.md)
+- [Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)

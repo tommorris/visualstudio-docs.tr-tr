@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bacc4e9ebb0b0125b22089ec53a97248e9e1f4e9
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 83268e1c7e4c4672caf17b6852cbf3fd38ea31b1
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Visual Studio'da profili uygulama performansı
 Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözümlemek için kullanabilirsiniz. Bu yordam nasıl kullanılacağını gösterir **CPU kullanımı** sekmesi, uygulamanız için performans verilerini almak için tanılama araçları. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET, dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
@@ -40,8 +40,11 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
 |  ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin")  |    [Bir video izlemek](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) CPU kullanımı analiz etme ve bellek kullanımını analiz etme gösterir tanılama araçlarını kullanma. |
 
 Bu konuda, biz hata ayıklama normal iş akışınızda çözümlenirken CPU kullanımı ele alacağız. CPU kullanımı - daha fazla bilgi için çalışan bir uygulamanın hedefleyerek veya bir hata ayıklayıcısı ekli olmadan çözümleyebilirsiniz [hata ayıklama olmadan profil oluşturma verilerini toplama](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) içinde [Profil Araçları ile veya olmadanhataayıklayıcıÇalıştır](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+
+> [!NOTE]
+> .NET Core ve ASP.NET Core için CPU kullanımını aracı taşınabilir PBDs ile doğru sonuçlar şu anda sağlamaz. Bunun yerine tam pdb kullanın.
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>1. adım: profil oluşturma verilerini topla 
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 1. adım: profil oluşturma verilerini topla 
   
 1.  Visual Studio'da hata ayıklama ve CPU kullanımını incelemek istediğiniz bir noktada, uygulamanızda bir kesme noktası ayarlamak istediğiniz projeyi açın.
 
@@ -92,7 +95,7 @@ Bu konuda, biz hata ayıklama normal iş akışınızda çözümlenirken CPU kul
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
 
-## <a name="Step2"></a>2. adım: CPU kullanım verilerini çözümleme
+## <a name="Step2"></a> 2. adım: CPU kullanım verilerini çözümleme
 
 CPU kullanımı altında işlevlerin listesi inceleyerek, en fazla çalışmayı yapan işlevleri tanımlama ve her biri daha ayrıntılı bir bakış alma verilerinizi incelemeye başlamak öneririz.
 

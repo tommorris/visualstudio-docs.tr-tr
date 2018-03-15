@@ -17,16 +17,16 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccc9b014a3d31fef4e3f491da394cdf1e9fb3ecb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d2a38a2c0830b701796b8417c69a75582c5b2f89
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-provide-a-service"></a>Nasıl yapılır: bir hizmet sağlar
 Bir VSPackage diğer VSPackages kullanabileceğiniz hizmetler sağlar. Bir hizmet sağlamak için bir VSPackage hizmeti ile Visual Studio kaydetmek ve hizmet eklemeniz gerekir.  
   
- <xref:Microsoft.VisualStudio.Shell.Package> Sınıfı uygulayan her ikisi de <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> ve <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer>İsteğe bağlı hizmetleri sağlayan geri arama yöntemleri içerir.  
+ <xref:Microsoft.VisualStudio.Shell.Package> Sınıfı uygulayan her ikisi de <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> ve <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> İsteğe bağlı hizmetleri sağlayan geri arama yöntemleri içerir.  
   
  Hizmetler hakkında daha fazla bilgi için bkz: [hizmet Essentials](../extensibility/internals/service-essentials.md) .  
   
@@ -35,7 +35,7 @@ Bir VSPackage diğer VSPackages kullanabileceğiniz hizmetler sağlar. Bir hizme
   
 #### <a name="implementing-a-service"></a>Bir hizmet uygulama  
   
-1.  VSIX proje oluşturma (**Dosya > Yeni > Proje > Visual C# > Extensiblity > VSIX proje**).  
+1.  VSIX proje oluşturma (**Dosya > Yeni > Proje > Visual C# > genişletilebilirlik > VSIX proje**).  
   
 2.  Bir VSPackage projeye ekleyin. Proje düğümünde seçin **Çözüm Gezgini** tıklatıp **Ekle > Yeni Öğe > Visual C# öğeleri > genişletilebilirlik > Visual Studio Paketi**.  
   
@@ -47,7 +47,7 @@ Bir VSPackage diğer VSPackages kullanabileceğiniz hizmetler sağlar. Bir hizme
   
     -   Hem hizmet hem de hizmet arabirimi uygulayan bir sınıf.  
   
-     Aşağıdaki örnek çok basit bir uygulama üç tür gösterir. Hizmet sınıf hizmet sağlayıcısı ayarlamanız gerekir.  
+     Aşağıdaki örnekte, üç tür temel bir uygulama gösterir. Hizmet sınıf hizmet sağlayıcısı ayarlamanız gerekir.  
   
     ```csharp  
     public class MyService : SMyService, IMyService  
@@ -117,7 +117,7 @@ Bir VSPackage diğer VSPackages kullanabileceğiniz hizmetler sağlar. Bir hizme
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  
-            return new SMyService(this);  
+            return new MyService(this);  
         return null;  
     }  
     ```  
@@ -125,7 +125,7 @@ Bir VSPackage diğer VSPackages kullanabileceğiniz hizmetler sağlar. Bir hizme
     > [!NOTE]
     >  Visual Studio, bir hizmet sağlamak için bir istek reddedebilirsiniz. Hizmet zaten başka bir VSPackage sağlıyorsa, bunu yapar.  
   
-3.  Şimdi hizmetin ve yöntemlerini kullanın. Bu Başlatıcı göstereceğiz, ancak herhangi bir yere hizmet kullanmak istediğiniz hizmet elde edebilirsiniz.  
+3.  Şimdi hizmetin ve yöntemlerini kullanın. Aşağıdaki örnek, Başlatıcı Hizmeti kullanmayı gösterir, ancak herhangi bir yere hizmet kullanmak istediğiniz hizmet elde edebilirsiniz.  
   
     ```csharp  
     protected override void Initialize()  
@@ -136,7 +136,7 @@ Bir VSPackage diğer VSPackages kullanabileceğiniz hizmetler sağlar. Bir hizme
   
         MyService myService = (MyService) this.GetService(typeof(SMyService));  
         myService.Hello();  
-        string helloString = myService.myString;  
+        string helloString = myService.Goodbye();  
   
         base.Initialize();  
     }  

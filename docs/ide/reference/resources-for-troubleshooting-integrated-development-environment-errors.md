@@ -94,31 +94,35 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 5466d764413283cb3f33525f12d7782c02ce6925
-ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
+ms.openlocfilehash: 6821edc51dced92b40386eb270546456654fbba3
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Tümleşik Yazılım Geliştirme Ortamı Hatalarında Sorun Giderme Kaynakları
-Tüm hata iletilerini belirli bir ilişkili Yardım konusu vardır. Hata iletisindeki bilgiler sorunu gidermenize yardımcı olmazsa, Bilgi Bankası makaleleri, geliştirici topluluğu veya ürün desteği gibi başka kaynaklar başvurabilirsiniz.  
 
-## <a name="knowledge-base-articles"></a>Bilgi Bankası Makaleleri  
- Ürün sorunları hakkında makaleler için Bilgi Bankası'nda (BB) çevrimiçi arama yapabilirsiniz. Tüm sorunlarla ilgili bir BB makalesi yoktur; ancak çok sayıda müşterinin karşılaştığı hatalar genellikle belgelenmiştir. KB makalelerini erişebileceğiniz [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) Web sitesi.  
+Tüm hata iletilerini belirli bir ilişkili Yardım konusu vardır. Hata iletisindeki bilgiler sorunu gidermenize yardımcı olmazsa, Bilgi Bankası makaleleri, geliştirici topluluğu veya ürün desteği gibi başka kaynaklar başvurabilirsiniz.
 
-## <a name="the-developer-community"></a>Geliştirici topluluğu  
- Forumlar, diğer geliştiriciler ve aynı zamanda Microsoft çalışanları ile etkileşimde bulunmanızı sağlar. Çözüm bulamadığınız bir hata ile karşılaşırsanız, bu sorunla ilgili sorularınızı bir forumda paylaşabilirsiniz. Ayrıca, başkalarının aynı sorunla ilgili paylaşım yapıp yapmadığını görmek için haber gruplarında da arama yapabilirsiniz.  
+## <a name="knowledge-base-articles"></a>Bilgi Bankası Makaleleri
 
- Üzerinde forumlar, blogları, sohbet ve diğer kaynaklara erişebilir [Microsoft Teknik topluluklarına](http://go.microsoft.com/fwlink/?LinkID=144922) Web sitesi.  
+Ürün sorunları hakkında makaleler için Bilgi Bankası'nda (BB) çevrimiçi arama yapabilirsiniz. Tüm sorunlarla ilgili bir BB makalesi yoktur; ancak çok sayıda müşterinin karşılaştığı hatalar genellikle belgelenmiştir. KB makalelerini erişebileceğiniz [Microsoft Support](https://support.microsoft.com) Web sitesi.
 
-## <a name="product-support"></a>Ürün Desteği  
- Diğer kaynaklar denedikten sonra hala sorularınız varsa, Microsoft Destek Hizmetleri ziyaret ederek başvurabilirsiniz [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) Web sitesi. Bölgenizde kullanılabilen ürün desteği hakkında daha fazla bilgi için bkz: [konuşun bize](../../ide/talk-to-us.md).
+## <a name="the-developer-community"></a>Geliştirici topluluğu
+
+Forumlar, diğer geliştiriciler ve aynı zamanda Microsoft çalışanları ile etkileşimde bulunmanızı sağlar. Çözüm bulamadığınız bir hata ile karşılaşırsanız, bu sorunla ilgili sorularınızı bir forumda paylaşabilirsiniz. Ayrıca, başkalarının aynı sorunla ilgili paylaşım yapıp yapmadığını görmek için haber gruplarında da arama yapabilirsiniz.
+
+Üzerinde forumlar, blogları, sohbet ve diğer kaynaklara erişebilir [Microsoft Teknik topluluklarına](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities) Web sitesi.
+
+## <a name="product-support"></a>Ürün Desteği
+
+Diğer kaynaklar denedikten sonra hala sorularınız varsa, Microsoft Destek Hizmetleri ziyaret ederek başvurabilirsiniz [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) Web sitesi. Bölgenizde kullanılabilen ürün desteği hakkında daha fazla bilgi için bkz: [konuşun bize](../../ide/talk-to-us.md).
 
  ## <a name="see-also"></a>Ayrıca bkz.
- * [Proxy sorun giderme](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)
+
+* [Proxy sorun giderme](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)

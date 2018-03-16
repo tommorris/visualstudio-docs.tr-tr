@@ -12,11 +12,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 25a5d358ce8c9b36286929232a42dad48099cff5
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 2152c5be13ca29da03d482aebc444b1ce30c1b97
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio'da C/C++ için birim testleri yazma
 
@@ -36,12 +36,11 @@ Yüklü çerçeveleri yanı sıra, Visual Studio içinde kullanmak istediğiniz 
 
 **Visual Studio 2017 sürüm 15,5**
 
-1) **Google Test bağdaştırıcısı** varsayılan bileşeni olarak bulunur **C++ ile masaüstü geliştirme** iş yükü. Bir çözüm ekleyebileceğiniz bir proje şablonu sahip **Yeni Proje Ekle** çözüm düğümünde bağlam menüsünde **Çözüm Gezgini**ve yoluyla yapılandırabileceğiniz seçenekleri **Araçlar | Seçenekler**. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Google Test kullanın](how-to-use-google-test-for-cpp.md).
+- **Google Test bağdaştırıcısı** varsayılan bileşeni olarak bulunur **C++ ile masaüstü geliştirme** iş yükü. Bir çözüm ekleyebileceğiniz bir proje şablonu sahip **Yeni Proje Ekle** çözüm düğümünde bağlam menüsünde **Çözüm Gezgini**ve yoluyla yapılandırabileceğiniz seçenekleri **Araçlar | Seçenekler**. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Google Test kullanın](how-to-use-google-test-for-cpp.md).
 
-2) **Boost.Test** varsayılan bileşeni olarak bulunur **C++ ile masaüstü geliştirme** iş yükü. İle tümleşik **Test Gezgini** ancak şu anda proje şablonu sahip değilse, bu nedenle onu el ile yapılandırılması gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Boost.Test kullanın](how-to-use-boost-test-for-cpp.md).
+- **Boost.Test** varsayılan bileşeni olarak bulunur **C++ ile masaüstü geliştirme** iş yükü. İle tümleşik **Test Gezgini** ancak şu anda proje şablonu sahip değilse, bu nedenle onu el ile yapılandırılması gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Boost.Test kullanın](how-to-use-boost-test-for-cpp.md).
 
-3) **CTest** desteği ile birlikte [CMake araçları Visual Studio için](/cpp/ide/cmake-tools-for-cpp) parçası olan bileşen, **C++ ile masaüstü geliştirme** iş yükü. Ancak, CTest henüz tam olarak tümleşiktir değil **Test Gezgini**. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da CTest kullanın](how-to-use-ctest-for-cpp.md).
-
+- **CTest** desteği ile birlikte [CMake araçları Visual Studio için](/cpp/ide/cmake-tools-for-cpp) parçası olan bileşen, **C++ ile masaüstü geliştirme** iş yükü. Ancak, CTest henüz tam olarak tümleşiktir değil **Test Gezgini**. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da CTest kullanın](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 ve önceki**
 
@@ -96,16 +95,16 @@ Ekleyebileceğiniz *nitelikler* yöntemleri test sahipleri, öncelik ve diğer b
 
 ### <a name="run-the-tests"></a>Testleri çalıştırma
 
-1.  Üzerinde **Test** menüsünde seçin **Windows**, **Test Gezgini**. Aşağıdaki çizimde olan testleri henüz çalıştırılmamış test projesi gösterir.
+1. Üzerinde **Test** menüsünde seçin **Windows** > **Test Gezgini**. Aşağıdaki çizimde olan testleri henüz çalıştırılmamış test projesi gösterir.
 
-![Test Gezgini testleri çalıştırmadan önce](media/cpp-test-explorer.png "C++ Test Gezgini")
+   ![Test Gezgini testleri çalıştırmadan önce](media/cpp-test-explorer.png "C++ Test Gezgini")
 
-> [!NOTE]
-> İle CTest tümleştirme **Test Gezgini** henüz kullanılabilir değil. CMake ana menüden CTest testleri çalıştırın.
+   > [!NOTE]
+   > İle CTest tümleştirme **Test Gezgini** henüz kullanılabilir değil. CMake ana menüden CTest testleri çalıştırın.
 
-2. Tüm testleri penceresinde görünür değilse, kendi düğümünde sağ tıklayarak test projesi derleme **Çözüm Gezgini** ve seçme **yapı** veya **yeniden**.
+1. Tüm testleri penceresinde görünür değilse, kendi düğümünde sağ tıklayarak test projesi derleme **Çözüm Gezgini** ve seçme **yapı** veya **yeniden**.
 
-3.  Test Gezgini seçin **tümünü Çalıştır**, veya çalıştırmak istediğiniz belirli testleri seçin. Bir test ile kesme noktaları etkin hata ayıklama modunda çalışan dahil olmak üzere diğer seçenekler için sağ tıklayın. Tüm testler çalıştırıldıktan sonra penceresi geçirilen hangi testlerin ve hangilerinin başarısız gösterir:
+1. Test Gezgini seçin **tümünü Çalıştır**, veya çalıştırmak istediğiniz belirli testleri seçin. Bir test ile kesme noktaları etkin hata ayıklama modunda çalışan dahil olmak üzere diğer seçenekler için sağ tıklayın. Tüm testler çalıştırıldıktan sonra penceresi geçirilen hangi testlerin ve hangilerinin başarısız gösterir:
 
 ![Testler çalıştıktan sonra Explorer test](media/cpp-test-explorer-passed.png "testleri çalıştırdıktan sonra C++ Test Gezgini")
 

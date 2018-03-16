@@ -19,14 +19,14 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a41d683701b4d8e0ca9cb973486a1e07216ea894
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 90d6ef6132f8844343388f35a441386c66b838c6
+ms.sourcegitcommit: 6871148ce356977b057febdb4d5a7655e7c295bf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="what39s-new-in-visual-studio-2017"></a>&#39; teki Visual Studio 2017'deki yenilikler
-#### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>İçin güncelleştirilmiş [15,5 sürüm](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
+# <a name="what39s-new-in-visual-studio-2017"></a>Ne&#39;s Visual Studio 2017'deki yenilikler
+#### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>İçin güncelleştirilmiş [15.6 sürüm](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 Visual Studio'nun önceki bir sürümden yükseltme mi arıyorsunuz? İşte ne Visual Studio 2017, sunabileceğiniz: benzersiz üretkenliği tüm geliştirme, herhangi bir uygulama ve herhangi bir platform için. Android, iOS, Windows, Linux, web ve bulut için uygulama geliştirmek için Visual Studio 2017 kullanın. Hızlı kod yazın, kolayca hata ayıklama ve tanılama yapın, sık sık test edin ve güvenle kullanıma sunun. Ayrıca, kendi uzantılarınızı oluşturarak Visual Studio’yu özelleştirebilir ve kapsamını genişletebilirsiniz. Sürüm denetimini kullanma, Çevik ve verimli bir şekilde bu sürüm ile işbirliği!
 
 Bizim önceki sürümünden bu yana, Visual Studio 2015 yapmış olduğunuz değişiklikleri, üst düzey bir özeti aşağıda verilmiştir:
@@ -140,7 +140,7 @@ Visual Studio'da bir proje ile çalışırken, size ayarlayabilir ve hızlı bir
 #### <a name="experience-improved-navigation-controls"></a>Geliştirilmiş Gezinti denetimlerinin deneyimi
 Biz A'dan B büyük güvenle ve daha az karışıklıkları yardımcı olmak için gezinme deneyimi yenilenir.
 
-* **15.4 yeni**: **Tanıma Git (Ctrl + click veya F12)** &ndash; fare kullanıcınız tuşlarına basarak üyesi tanımına gitmek için daha kolay bir yolu **Ctrl** ve ardından üye. Tuşuna basarak **Ctrl** ve kod simgesinin getirildiğinde, altı çizili ve bir bağlantıya açın. Bkz: [Tanıma Git ve Peek tanımı](../ide/go-to-and-peek-definition.md) daha fazla bilgi için.  
+* **15.4 yeni**: **Tanıma Git (Ctrl + click veya F12)** &ndash; fare kullanıcınız tuşlarına basarak üyesi tanımına gitmek için daha kolay bir yolu **Ctrl** tıklayıp ardından üyesi . Tuşuna basarak **Ctrl** ve kod simgesinin getirildiğinde, altı çizili ve bir bağlantıya açın. Bkz: [Tanıma Git ve Peek tanımı](../ide/go-to-and-peek-definition.md) daha fazla bilgi için.  
 
 * **İçin Git uygulaması (Ctrl + F12)** &ndash; çeşitli uygulamaları herhangi bir temel tür veya üye gidin.
 
@@ -245,7 +245,7 @@ Daha fazla bilgi için bkz: [Visual Studio ve Xamarin](../cross-platform/visual-
 
 ![Animasyon Xamarin Canlı Player çifti, dağıtım ve canlı düzenleme modları](../ide/media/xamarinliveplayer.gif)
 
-### <a name="visual-studio-app-center"></a>Visual Studio Uygulama Merkezi
+### <a name="visual-studio-app-center"></a>Visual Studio App Center
 **15,5 yeni**: Visual Studio Uygulama Merkezi&mdash;olduğu artık Android, iOS, macOS ve Windows uygulamaları için genel olarak kullanılabilir&mdash;gereken her şeyi otomatik yapılar dahil olmak üzere, uygulamaları yaşam döngüsü yönetmek için gerçek üzerinde test sahip bulutta, beta Test edenlere ve uygulama mağazaları ve kilitlenme ve analitik veriler aracılığıyla gerçek kullanımını izlemek için dağıtım cihazlar. Objective-C, Swift, Java, C#, Xamarin ve tepki yerel içinde yazılmış uygulamalar genelinde tüm özellikleri desteklenir.
 
   ![Visual Studio Uygulama Merkezi test ortamı](../ide/media/app-center-test-env.png)

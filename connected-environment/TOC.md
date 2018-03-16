@@ -30,6 +30,7 @@
 
 # Nasıl Yapılır?
 ##[Geliştirme ortamı paylaşma](how-to/share-dev-environment.md)
+##[Visual Studio Bağlı Ortamı ile kubectl kullanma](how-to/use-kubectl-with-vsce.md)
 
 # [Sorun giderme](troubleshooting.md)
 

@@ -7,19 +7,20 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c13a899e5c678040d6ffe5b1996fd3ee96e9cc09
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4aac446e9ed71b6e6b0c86ea64068af7a6184767
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Nasıl yapılır: bir zaman uyumsuz Visual Studio hizmet sağlayın
-Bir hizmeti kullanıcı Arabirimi iş parçacığı engellenmeden edinmek istiyorsanız, zaman uyumsuz bir hizmet oluşturmak ve arka plan iş parçacığında paketi gerekir. Bu amaçla kullanabileceğiniz bir <xref:Microsoft.VisualStudio.Shell.AsyncPackage> yerine <xref:Microsoft.VisualStudio.Shell.Package>ve zaman uyumsuz paketin özel zaman uyumsuz yöntemleri ile Hizmet Ekle  
+Bir hizmeti kullanıcı Arabirimi iş parçacığı engellenmeden edinmek istiyorsanız, zaman uyumsuz bir hizmet oluşturmak ve arka plan iş parçacığında paketi gerekir. Bu amaçla kullanabileceğiniz bir <xref:Microsoft.VisualStudio.Shell.AsyncPackage> yerine <xref:Microsoft.VisualStudio.Shell.Package>ve zaman uyumsuz paketin özel zaman uyumsuz yöntemleri ile hizmetini ekleyin.
   
  Visual Studio Hizmetleri zaman uyumlu sağlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir hizmet sağlamak](../extensibility/how-to-provide-a-service.md).  
   
@@ -56,7 +57,7 @@ Bir hizmeti kullanıcı Arabirimi iş parçacığı engellenmeden edinmek istiyo
   
 7.  Zaman uyumsuz hizmet uygulaması aşağıda verilmiştir. Zaman uyumlu bir hizmet sağlayıcısı yerine zaman uyumsuz hizmet sağlayıcısı oluşturucuda ayarlamak gerektiğini unutmayın:  
   
-    ```  
+    ```csharp
     public class TextWriterService : STextWriterService, ITextWriterService  
     {  
         private Microsoft.VisualStudio.Shell.IAsyncServiceProvider serviceProvider;  
@@ -92,7 +93,7 @@ Bir hizmeti kullanıcı Arabirimi iş parçacığı engellenmeden edinmek istiyo
   
 -   Eklemelisiniz **AllowsBackgroundLoading = true** alanı <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. PackageRegistrationAttribute hakkında daha fazla bilgi için bkz: [kaydetme ve kaydını kaldırma VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
   
- Bir zaman uyumsuz hizmet kaydı ile bir AsyncPackage bir örneği burada verilmiştir::  
+ Bir zaman uyumsuz hizmet kaydı ile bir AsyncPackage bir örneği burada verilmiştir:
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  
@@ -107,7 +108,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 1.  TestAsyncPackage.cs içinde kaldırmak `Initialize()` yöntemi ve geçersiz kılma `InitializeAsync()` yöntemi. Hizmet ekleyin ve hizmetleri oluşturmak için bir geri çağırma yöntemi ekleyin. Bir hizmet ekleme zaman uyumsuz Başlatıcı bir örneği burada verilmiştir:  
   
-    ```  
+    ```csharp
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
         this.AddService(typeof(STextWriterService), CreateService);  
@@ -146,7 +147,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
         ITextWriterService textService = await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;  
   
-        await writer.WriteLineAsync(<userpath>), "this is a test");  
+        await textService.WriteLineAsync(<userpath>), "this is a test");  
   
         await base.InitializeAsync(cancellationToken, progress);  
     }  
@@ -164,7 +165,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 2.  Özel komut şablonunu yeniden ekler `Initialize()` komutu başlatmak için TestAsyncPackage.cs dosyasına yöntemi. Önce Initialize() yöntemini başlatır komut satırı kopyalayın. Aşağıdaki gibi görünmelidir:  
   
-    ```  
+    ```csharp
     TestAsyncCommand.Initialize(this);  
     ```  
   
@@ -182,7 +183,7 @@ public sealed class TestAsyncPackage : AsyncPackage
         ITextWriterService textService =   
            await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;  
   
-        await writer.WriteLineAsync((<userpath>, "this is a test");  
+        await textService.WriteLineAsync((<userpath>, "this is a test");  
   
         await base.InitializeAsync(cancellationToken, progress);  
     }  
@@ -195,7 +196,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 5.  Kullanarak bir ekleme deyimi:  
   
-    ```  
+    ```csharp 
     using System.IO;  
     ```  
   
@@ -208,14 +209,14 @@ public sealed class TestAsyncPackage : AsyncPackage
            this.ServiceProvider.GetService(typeof(STextWriterService))  
               as ITextWriterService;  
         // don't forget to change <userpath> to a local path  
-        await writer.WriteLineAsync((<userpath>),"this is a test");  
+        await textService.WriteLineAsync((<userpath>),"this is a test");  
        }  
   
     ```  
   
 7.  Bu yöntemi çağırın `MenuItemCallback()` yöntemi:  
   
-    ```  
+    ```csharp
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         GetAsyncService();  

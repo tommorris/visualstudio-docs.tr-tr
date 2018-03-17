@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d119b5baeccc762411aa8f7db4e4d02ba881c34d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c3bd5d35e3d996a1507a5ce14d40fbb59c24cbdb
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="property-functions"></a>Özellik İşlevleri
 .NET Framework sürüm 4 ve 4.5, özellik işlevleri MSBuild komut değerlendirmek için kullanılabilir. Özellik işlevleri özellikleri görünür her yerde kullanılabilir. Görevler, farklı özellik işlevleri dışında hedefleri kullanılabilen ve tüm hedef çalışmadan önce değerlendirilir.  
@@ -182,18 +182,18 @@ ms.lasthandoff: 02/09/2018
 |uzun (uzun uzun Modulo b)|İki Integer.|  
 |dize Escape(string unescaped)|MSBuild kaçış kurallarına göre dizeye kaçış karakteri.|  
 |Unescape (Atlanan dizesini) dize|MSBuild kaçış kurallarına göre dize unescape.|  
-|int BitwiseOr (int ilk, int saniye)|Bit tabanlı gerçekleştirmek `OR` ilk ve ikinci (ilk &#124; saniye).|  
+|int BitwiseOr (int ilk, int saniye)|Bit tabanlı gerçekleştirmek `OR` ilk ve ikinci (ilk &#124; ikinci).|  
 |int BitwiseAnd (int ilk, int saniye)|Bit tabanlı gerçekleştirmek `AND` ilk ve ikinci (ilk ve ikinci).|  
 |int BitwiseXor (int ilk, int saniye)|Bit tabanlı gerçekleştirmek `XOR` ilk ve ikinci (ilk ^ ikinci).|  
 |int BitwiseNot(int first)|Bit tabanlı gerçekleştirmek `NOT` (~ ilk).|  
-|bool IsOsPlatform (dize platformString)|Geçerli işletim sistemi platformu olup olmadığını belirtin `platformString`. `platformString`bir üyesi olmalıdır <xref:System.Runtime.InteropServices.OSPlatform>.|
+|bool IsOsPlatform (dize platformString)|Geçerli işletim sistemi platformu olup olmadığını belirtin `platformString`. `platformString` bir üyesi olmalıdır <xref:System.Runtime.InteropServices.OSPlatform>.|
 |bool IsOSUnixLike|Geçerli işletim sistemi bir Unix sistem geçerlidir.|
 |dize NormalizePath (params dize [] yolu)|Sağlanan yol Kurallaştırılan tam yolunu alır ve geçerli işletim sistemi için doğru dizin ayırıcı karakteri içeren sağlar.|
 |dize NormalizeDirectory (params dize [] yolu)|Sağlanan dizin Kurallaştırılan tam yolunu alır ve doğru dizin ayırıcı karakter geçerli içerdiği sağlar sağlarken, işletim sistemi eğik sahiptir.|
 |dize EnsureTrailingSlash(string path)|Verilen yolu bir ekleme sondaki eğik çizgi yoksa. Yol boş bir dize ise, değiştirmez.|
 |GetPathOfFileAbove (dize dosya, dize startingDirectory) dize|Bir dosyayı arar geçerli yapı dosyanın konumuna göre veya dayanarak `startingDirectory`, belirtildiği takdirde.|
 |GetDirectoryNameOfFileAbove (dize startingDirectory, dize fileName)|Belirtilen dizin veya bu dizinin üstündeki dizin yapısını bir konumda bir dosyasını bulun.|
-|Makerelatıve (dize ana yolu, dize yolu) dize|Yapar `path` göreli `basePath`. `basePath`mutlak bir dizin olmalıdır. Varsa `path` olamaz göreli yapılan, onu verbatim döndürülür. Benzer şekilde `Uri.MakeRelativeUri`.|
+|Makerelatıve (dize ana yolu, dize yolu) dize|Yapar `path` göreli `basePath`. `basePath` mutlak bir dizin olmalıdır. Varsa `path` olamaz göreli yapılan, onu verbatim döndürülür. Benzer şekilde `Uri.MakeRelativeUri`.|
 |ValueOrDefault (dize conditionValue, dize defaultValue) dize|Yalnızca parametresi 'conditionValue' else boş ise, dize 'defaultValue' parametresinde dönmek, değer conditionValue dönün.|
 
 ##  <a name="nested-property-functions"></a>İç içe özellik işlevleri  
@@ -211,7 +211,7 @@ ms.lasthandoff: 02/09/2018
  Bu özellik işlev sözdizimi aşağıdaki gibidir:  
 
 ```  
-$[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
+$([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 ```  
 
 ##  <a name="msbuild-ensuretrailingslash"></a>MSBuild EnsureTrailingSlash  
@@ -229,7 +229,7 @@ $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
  Bu özellik işlev sözdizimi aşağıdaki gibidir:  
 
 ```  
-$[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)  
+$([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 ```  
 
  Aşağıdaki kod, bu söz dizimini örneğidir.  
@@ -246,7 +246,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
  Bu özellik işlev sözdizimi aşağıdaki gibidir:  
 
 ```  
-$([MSBuild]::GetPathOfFileAbove(dir.props)  
+$([MSBuild]::GetPathOfFileAbove(dir.props))  
 ```  
 
 ##  <a name="msbuild-getregistryvalue"></a>MSBuild GetRegistryValue  
@@ -292,7 +292,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
  Bu özellik işlev sözdizimi aşağıdaki gibidir:  
 
 ```  
-$[MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2))  
+$([MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2)))
 ```  
 
  Aşağıdaki kod, bu söz dizimini örneğidir.  

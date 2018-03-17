@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3cc0b6b99dd76a531ed3e99dcac8ae5d438d7e63
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: faa901c14bd5d115aa3e7384a5d3b63c0410b64b
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python desteğini yükleme
 
@@ -43,7 +43,7 @@ Hızlı yükleme adımlarını izleyerek sonra Python desteği test etmek için 
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Karşıdan yükle ve en son Visual Studio 2017 yükleyiciyi çalıştırın. Visual Studio'nun zaten yüklü varsa, Visual Studio yükleyiciyi çalıştırın ve 2. adıma geçin.
+1. Karşıdan yükle ve en son Visual Studio 2017 yükleyiciyi çalıştırın. Visual Studio'nun zaten yüklü varsa, Visual Studio yükleyicisi, belirleyin **Değiştir** seçenekleri (bkz [değiştirmek Visual Studio](../install/modify-visual-studio.md)) ve 2. adıma geçin.
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Community yükle</a>

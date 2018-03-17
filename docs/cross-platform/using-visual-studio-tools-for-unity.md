@@ -13,11 +13,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e99f3e626487381639d0c76f94ceb6eac99084af
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2e223132196d40c0418eb7869b36d20a3d15a235
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçlarını Kullanma
 Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik özellikleri için nasıl kullanılacağını ve nasıl Unity geliştirme için Visual Studio hata ayıklayıcısı kullanılacağını öğreneceksiniz.
@@ -35,7 +35,7 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
 ### <a name="unity-monobehavior-scripting-wizard"></a>Unity MonoBehavior komut dosyası oluşturma Sihirbazı
  Unity içinde çoğu betikleri MonoBehavior sınıfından türetilen ve kendi yöntemlerin bazıları geçersiz kılma uygulanır. Hızlı bir şekilde aşırı MonoBehavior yöntemleri boş tanımları oluşturmak için MonoBehavior Sihirbazı'nı kullanabilirsiniz. Bu sihirbazı kullanarak, kullanılabilir yöntemler listesinden aşırı yükleme, burada şirketlerin kodunuza eklenir ve nasıl kullanıldıkları hakkında yorum dahil edilip edilmeyeceğini karar seçin istediğiniz bir veya daha fazla yöntemleri belirtebilirsiniz.
 
- ![Monobehavior Sihirbazı iletişim kutusu. ] (../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
+ ![Monobehavior Sihirbazı iletişim kutusu.](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
 ##### <a name="to-create-empty-monobehavior-method-definitions-by-using-the-monobehavior-wizard"></a>MonoBehavior Sihirbazı'nı kullanarak boş MonoBehavior yöntemi tanımları oluşturmak için
 
@@ -56,7 +56,7 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
 #### <a name="quick-monobehavior-scripting-wizard"></a>Hızlı MonoBehavior komut dosyası oluşturma Sihirbazı
  Zaten Unity API ile tanıdık, hızlı MonoBehavior Sihirbazı'nı kullanarak aşırı yüklenmiş yöntemler bile daha hızlı uygulayabilirsiniz. Bu sihirbazı kullanarak, imlecin konumundaki yöntemi açıklamalar olmadan eklenen tek yöntemi belirtebilirsiniz.
 
- ![Hızlı monobehavior Sihirbazı iletişim kutusu. ] (../cross-platform/media/vstu_monobehavior_wizard_quick.png "vstu_monobehavior_wizard_quick")
+ ![Hızlı monobehavior Sihirbazı iletişim kutusu.](../cross-platform/media/vstu_monobehavior_wizard_quick.png "vstu_monobehavior_wizard_quick")
 
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>Hızlı MonoBehavior Sihirbazı'nı kullanarak bir boş MonoBehavior yöntemi tanımı oluşturmak için
 
@@ -71,13 +71,13 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
 ### <a name="unity-project-explorer"></a>Unity Proje Gezgini
  Unity Proje Gezgini, Unity projeniz Visual Studio içinde gezinmek için kullanabilirsiniz.
 
- ![Unity Proje Gezgini penceresi. ] (../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
+ ![Unity Proje Gezgini penceresi.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
 
 ##### <a name="to-view-the-unity-project-explorer"></a>Unity Proje Gezgini görüntülemek için
 
 -   Visual Studio'da ana menüde seçin **Görünüm**, **Unity Proje Gezgini**. Klavye: **Alt + SHIFT + E**
 
-     ![Unity Proje Gezgini penceresi görüntüleyin. ] (../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
+     ![Unity Proje Gezgini penceresi görüntüleyin.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
  Unity Proje Gezgini tüm Unity proje dosyaları ve dizinleri Unity Düzenleyicisi'ni yapan aynı şekilde gösterir - bu komut dosyanızı yalnızca içeren Çözüm Gezgini ile unity komut dosyalarınızı gezinme dosyaları ve bunları görüntüler farklı Proje ve çözüm Unity için Visual Studio Araçları tarafından oluşturulan bunları düzenler. Özellikle büyük projelerinde Unity Proje Gezgini kullanarak değiştirmek istediğiniz komut dosyasını bulmak kolaydır; Ayrıca diğer tür dosyalarda değiştirmek kolaylaştırır — Örneğin, metin tabanlı yapılandırma dosyaları — bir Visual Studio çözümü projelerinde eklemeden olmadan Visual Studio.
 
@@ -111,18 +111,18 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
 
 -   Visual Studio'da ana menüde seçin **hata ayıklama**, **Attach Unity hata ayıklayıcı**.
 
-     ![Hata ayıklayıcısını birlik ekleyin. ] (../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
+     ![Hata ayıklayıcısını birlik ekleyin.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
 -   *Veya*, Visual Studio'da durum çubuğunda Visual Studio sağ alt köşesindeki Tak simgesini seçin.
 
-     ![Bu simge, Unity için VSTU bağlı gösterir. ] (../cross-platform/media/vstu_connection_connected.png "vstu_connection_connected")
+     ![Bu simge, Unity için VSTU bağlı gösterir.](../cross-platform/media/vstu_connection_connected.png "vstu_connection_connected")
 
 > [!TIP]
 >  Bağlama simgesi işareti gösteriyorsa, Unity örneğine zaten bağlandınız.
 
  **Unity örneği seçin** iletişim bağlanabileceğiniz her Unity örneği hakkında bazı bilgileri görüntüler.
 
- ![Bağlanmak için Unity örneği seçin. ] (../cross-platform/media/vstu_connection_to_unity.png "vstu_connection_to_unity")
+ ![Bağlanmak için Unity örneği seçin.](../cross-platform/media/vstu_connection_to_unity.png "vstu_connection_to_unity")
 
  **Proje** Unity Bu örneği çalışıyor Unity projesinin adı.
 
@@ -135,6 +135,12 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
 > [!IMPORTANT]
 >  Unity ve Unity örneği için Visual Studio Araçları UDP ağ yuva kurduğundan, Güvenlik Duvarı hakkında isteyebilir. Bu durumda, VSTU ve Unity iletişim kurabilmesi için bağlantıyı yetkilendirmek zorunda kalırsınız.
 
+### <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>Unity ve Visual Studio arasındaki bağlantı sorunlarını giderme
+
+#### <a name="confirm-editor-attaching-is-enabled"></a>Düzenleyici ekleme etkinleştirilmiş doğrulayın
+
+Unity menüde seçin **Düzenle > Tercihler** ve ardından **Harici Araçlar** sekmesi. Onaylayın **Düzenleyicisi ekleme** onay kutusunu etkindir. Daha fazla bilgi için başvurun [Unity Tercihler belgelerine](https://docs.unity3d.com/Manual/Preferences.html).
+
 ###  <a name="debugging-your-project-in-a-unity-player"></a> Unity Player projenizde hata ayıklama
  Unity Düzenleyicisi çalışmadığında bir oynatıcı veya platforma özgüdür sorunlarında hata ayıklamak için çalışan doğrudan Unity uygulamanıza Unity için Visual Studio Araçları bağlanabilir.
 
@@ -142,7 +148,7 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
 
 -   Etkin komut dosyası hata ayıklamaya geliştirme yapı oluşturduğunuzdan emin olun. Unity projenizi derleme ayarlarında işaretlemek **geliştirme yapı** ve **komut dosyasında hata ayıklama** onay kutuları.
 
- ![Hata ayıklama için Unity derleme ayarlarını yapılandırın. ] (../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
+ ![Hata ayıklama için Unity derleme ayarlarını yapılandırın.](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
 
  Ayrıca, çalışır durumda bir Unity uygulamasının hata ayıklamak için **Unity Web Player**, kullanacak şekilde yapılandırmanız gereken **geliştirme yayın kanal**.
 
@@ -167,13 +173,13 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
 
 1.  Unity için Visual Studio Araçları tarafından oluşturulan Visual Studio çözümü varolan DLL projenize ekleyin. Daha az yaygın olarak, Unity projenizdeki kod bileşenlerini içerecek yeni bir yönetilen DLL projesi başlatılıyor; Bu durumda, yeni bir yönetilen DLL projesi için Visual Studio çözümü yerine ekleyebilirsiniz. Bir çözüme yeni veya var olan bir proje ekleme hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir çözüm projelerine ekleme](https://msdn.microsoft.com/en-us/library/vstudio/ff460187.aspx).
 
-     ![Varolan DLL projenize ekleyin. ] (../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
+     ![Varolan DLL projenize ekleyin.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
      Yalnızca bu adımları bir kez yapmanız gereken şekilde proje ve çözüm dosyaları yeniden yeniden oluşturmak sahip olsa bile her iki durumda da, Unity için Visual Studio Araçları proje başvurusu tutar.
 
 2.  DLL projesi doğru Unity framework profilinde başvuru. Visual Studio'da DLL projenin özelliklerinde ayarlanan **hedef framework** özelliği kullanmakta olduğunuz Unity framework sürümü için. Bu Unity taban sınıf, Unity tam, mikro veya web gibi projenizin hedeflediği sınıf kitaplıkları temel API Uyumluluk eşleşen kitaplığıdır. Bu, diğer çerçeveler veya uyumluluk düzeyleri var, ancak Unity framework sürümünü kullanmakta olduğunuz varolmayabilir framework yöntemlerini çağırma, DLL önler.
 
-     ![DLL hedef Framework'ü Unity framework ayarlayın. ] (../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
+     ![DLL hedef Framework'ü Unity framework ayarlayın.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
 3.  DLL Unity projenizin varlık klasörüne kopyalayın. Unity varlıklar paketlenir ve böylece bunlar çalışma zamanında yüklenebilir Unity uygulamanız ile birlikte dağıtılan dosyalardır. Çalışma zamanında bağlı DLL'ler olduğundan, DLL'leri varlıklar olarak dağıtılması gerekir. Bir varlık dağıtılması için Unity projenizdeki varlıklar klasörün içine yerleştirilecek DLL'leri Unity Düzenleyicisi'ni gerektirir. Bunu yapmak için iki yolu vardır:
 

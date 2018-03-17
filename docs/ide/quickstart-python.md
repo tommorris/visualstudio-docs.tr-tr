@@ -2,7 +2,7 @@
 title: "Hızlı Başlangıç: İlk Python web uygulamanızı oluşturmak için Visual Studio'yu kullanın. | Microsoft Docs"
 description: "Visual Studio'da Falcon framework kullanarak basit bir web uygulaması derlemeler Python kullanarak kısa bir giriş."
 ms.custom: 
-ms.date: 01/08/2018
+ms.date: 03/14/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 2b1880d95fcb4aae04d98171c8ee7df7373aaceb
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Hızlı Başlangıç: Kullanım ilk Python web uygulamanızı oluşturmak için Visual Studio
 
-Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), basit bir Python web uygulaması oluşturun. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
+Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), basit bir Python web uygulaması oluşturun. Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa. Yükleyicisi'nde seçtiğinizden emin olun **Python geliştirme** iş yükü.
 
 ## <a name="create-the-project"></a>Projeyi oluşturma
 

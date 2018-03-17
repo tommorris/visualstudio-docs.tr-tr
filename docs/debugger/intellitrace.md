@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afad8b464e266477c4edbb97ffc3eb3d8436e4
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 8f4edf6c446bdcd35585a60d97965d2d6ee21ad1
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -57,9 +57,9 @@ Visual Studio Enterprise edition (ancak değil Professional veya topluluk sürü
 
 |||
 |-|-|
-|Desteklenen|-.NET Framework 2.0 veya daha sonraki sürümler kullanın Visual Basic ve Visual C# uygulamalar.<br/>ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows iş akışı, SharePoint 2010, SharePoint 2013 ve 64-bit uygulamalar dahil olmak üzere çoğu uygulamayı ayıklayabilirsiniz.<br/>SharePoint uygulamaları IntelliTrace ile hata ayıklamak için bkz: [izlenecek yol: bir SharePoint uygulaması kullanarak IntelliTrace ile hata ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Microsoft Azure uygulamaları IntelliTrace ile hata ayıklamak için bkz: [yayımlanan bir bulut hizmeti IntelliTrace ve Visual Studio ile hata ayıklama](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Sınırlı destek**|-.NET core ve ASP.NET Core uygulamaları yalnızca olayları desteklenen<br />-F # uygulamaları Deneysel düzenli olarak<br />-Yalnızca olayları desteklenen UWP uygulamaları|
-|Desteklenmiyor|-C++ diğer dillere ve komut dosyası<br />-Windows Hizmetleri, Silverlight, Xbox veya [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] uygulamalar|
+|**Desteklenen**|-.NET Framework 2.0 veya daha sonraki sürümler kullanın Visual Basic ve Visual C# uygulamalar.<br/>ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows iş akışı, SharePoint 2010, SharePoint 2013 ve 64-bit uygulamalar dahil olmak üzere çoğu uygulamayı ayıklayabilirsiniz.<br/>SharePoint uygulamaları IntelliTrace ile hata ayıklamak için bkz: [izlenecek yol: bir SharePoint uygulaması kullanarak IntelliTrace ile hata ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Microsoft Azure uygulamaları IntelliTrace ile hata ayıklamak için bkz: [yayımlanan bir bulut hizmeti IntelliTrace ve Visual Studio ile hata ayıklama](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
+|**Sınırlı destek**|-.NET core ve ASP.NET Core uygulamaları belirli yerel hata ayıklama yalnızca olayları (MVC denetleyicisi ve ADO.NET HTTPClicent olayları) desteklenir. Bağımsız veri toplayıcı .NET Core veya ASP.NET Core uygulamaları için desteklenmiyor.<br />-F # uygulamaları Deneysel düzenli olarak<br />-Yalnızca olayları desteklenen UWP uygulamaları|
+|**Desteklenmiyor**|-C++ diğer dillere ve komut dosyası<br />-Windows Hizmetleri, Silverlight, Xbox veya [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] uygulamalar|
 
 > [!NOTE]
 > Zaten çalışan işlemde hata ayıklamak istiyorsanız, yalnızca IntelliTrace olayları (çağrı bilgileri) toplayabilir. Bir 32 bit veya 64-bit işlem yalnızca yerel makinedeki ekleyebilirsiniz. İşleme iliştirilemiyor önce gerçekleşen olaylara toplanmadı.

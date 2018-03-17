@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 76dc2623edebed6cca48c40c0ad0bc96f783e39d
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: bb8f380ce17242f7ac9953226db7ad683c17a2de
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>R araçları Visual Studio için nasıl yüklenir
 
@@ -36,7 +36,7 @@ Bu makalede:
 
 ## <a name="supported-versions-of-visual-studio"></a>Visual Studio'nun desteklenen sürümleri
 
-R araçları için Visual Studio (RTVS) Community (ücretsiz) ile Windows desteklenir Professional ve Enterprise sürümleri hem [Visual Studio 2017](https://www.visualstudio.com/downloads/) ve [Visual Studio 2015 güncelleştirme 3 (veya üstü)](http://go.microsoft.com/fwlink/?LinkId=691129) (doğrudan indirme).
+R araçları için Visual Studio (RTVS) Community (ücretsiz) ile Windows desteklenir Professional ve Enterprise sürümleri hem [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ve [Visual Studio 2015 güncelleştirme 3 (veya üstü)](http://go.microsoft.com/fwlink/?LinkId=691129) (doğrudan indirme).
 
 RTVS Visual Studio şu anda Mac için desteklenmiyor
 
@@ -44,7 +44,7 @@ Yalnızca Visual Studio, Visual Studio Test uzmanı ve SQL Server Management Stu
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Visual Studio 2017 içinde RTVS yükleme
 
-1. Visual Studio yükleyiciyi çalıştırın. (Bkz [indirmeleri](https://www.visualstudio.com/downloads/) Visual Studio yüklüyse henüz yoksa.) Windows 7'de Visual Studio 2017 sürüm göstermek için yükleyici güncelleştirildiğinden emin olması *15.2 yapı 26430.12* veya sonraki bir sürümü.
+1. Visual Studio yükleyicisi çalıştırmak ve seçmek **Değiştir** seçeneği (Ayrıntılar için bkz [değiştirmek Visual Studio](../install/modify-visual-studio.md)). Visual Studio yüklüyse henüz yoksa bkz [Visual Studio yükleme](../install/install-visual-studio.md). Windows 7'de Visual Studio 2017 sürüm göstermek için yükleyici güncelleştirildiğinden emin olması *15.2 yapı 26430.12* veya sonraki bir sürümü.
 
 1. Seçin **veri bilimi ve analitik uygulamaları** iş yükü:
 
@@ -70,7 +70,7 @@ Microsoft R açık ve CRAN R her ikisini birden çok yan yana sürümleri için 
 
 ### <a name="install-the-r-tools"></a>R Araçları'nı yükleme
 
-Geçerli RTVS Visual Studio 2015'ten indirin [https://aka.ms/rtvs-current](https://aka.ms/rtvs-current). RTVS Visual Studio'nun uygun bir sürümünü denetler ve henüz yapmadıysanız bir R yorumlayıcı yüklemenize yardımcı olur.
+Geçerli RTVS Visual Studio 2015'ten indirin [ https://aka.ms/rtvs-current ](https://aka.ms/rtvs-current). RTVS Visual Studio'nun uygun bir sürümünü denetler ve henüz yapmadıysanız bir R yorumlayıcı yüklemenize yardımcı olur.
 
 > [!Note]
 > Tek başına RTVS yükleyici yalnızca Visual Studio 2015 ile birlikte çalışır; Visual Studio 2017 ile R desteğini yükleme [veri bilimi ve analitik uygulamaları iş yükü](#installing-rtvs-in-visual-studio-2017) daha önce açıklandığı gibi.
@@ -86,7 +86,7 @@ Visual Studio 2015 için RTVS yüklenir: `%ProgramFiles(x86)%\Microsoft Visual S
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. Visual Studio 2015 için çevrimdışı RTVS yükleyicileri gelen indirme [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) ve [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip).
+1. Visual Studio 2015 için çevrimdışı RTVS yükleyicileri gelen indirme [ https://aka.ms/rtvs-current-zip ](https://aka.ms/rtvs-current-zip) ve [ https://aka.ms/rtvs-remote-zip ](https://aka.ms/rtvs-remote-zip).
 
 1. Visual Studio ve RTVS çevrimdışı yükleyicileri yükleyin.
 

@@ -1,11 +1,7 @@
 ---
 title: "Intellitest başvuru el ile | Microsoft Developer Test Araçları | Microsoft Docs"
-ms.custom: 
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - IntelliTest Reference Manual, IntelliTest
@@ -14,18 +10,18 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 30c23fc51f136d7fc3dcfeca191f5c469fb1e331
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8216d8b4f27bb1211bc90d829233602edc915e43
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="intellitest-reference-manual"></a>Intellitest başvuru el ile
 
 ## <a name="contents"></a>İçindekiler
 
-* **[Intellitest genel bakış](introduction.md)**
-  - [Intellitest Merhaba Dünya](introduction.md#hello-world)
+* **[Overview of IntelliTest](introduction.md)**
+  - [The Hello World of IntelliTest](introduction.md#the-hello-world-of-intellitest)
   - [Sınırlamalar](introduction.md#limitations)
     * [Nondeterminism](introduction.md#nondeterminism)
     * [Eşzamanlılık](introduction.md#concurrency)
@@ -33,13 +29,13 @@ ms.lasthandoff: 01/09/2018
     * [Platform](introduction.md#platform)
     * [Dil](introduction.md#language)
     * [Simgesel mantığı](introduction.md#symbolic-reasoning)
-    * [Yanlış Yığın izlemeleri](introduction.md#incorrect-stack)
+    * [Yanlış Yığın izlemeleri](introduction.md#incorrect-stack-traces)
   - [Daha fazla bilgi](introduction.md#further-reading)<p>&nbsp;</p>
 
 * **[Intellitest ile çalışmaya başlama](getting-started.md)**
   - [Önemli öznitelikleri](getting-started.md#important-attributes)
   - [Önemli statik yardımcı sınıfları](getting-started.md#helper-classes)<p>&nbsp;</p>
- 
+
 * **[Test oluşturma](test-generation.md)**
   - [Test oluşturucuları](test-generation.md#test-generators)
   - [Parametreli birim testleri](test-generation.md#parameterized-unit-testing)
@@ -47,8 +43,8 @@ ms.lasthandoff: 01/09/2018
   - [Özel durumlara izin verme](test-generation.md#allowing-exceptions)
   - [İç türleri test etme](test-generation.md#internal-types)
   - [Varsayımlar ve onaylar](test-generation.md#assumptions-and-assertions)
-  - [Önkoşulu](test-generation.md#precondition)
-  - [Sonkoşul](test-generation.md#postcondition)
+  - [Precondition](test-generation.md#precondition)
+  - [Postcondition](test-generation.md#postcondition)
   - [Test başarısızlıklarının](test-generation.md#test-failures)
   - [Kurulum ve kesmeden](test-generation.md#setup-teardown)
   - [Daha fazla bilgi](test-generation.md#further-reading)<p>&nbsp;</p>
@@ -106,13 +102,13 @@ ms.lasthandoff: 01/09/2018
   - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)<p>&nbsp;</p>
 
 * **[Uyarıları ve hataları](warnings-and-errors.md)**
-  - [MaxBranches aşıldı](warnings-and-errors.md#maxbranches-exceeded)
-  - [MaxConstraintSolverTime aşıldı](warnings-and-errors.md#maxconstraintsolvertime-exceeded)
-  - [MaxConditions aşıldı](warnings-and-errors.md#maxconditions-exceeded)
+  - [MaxBranches exceeded](warnings-and-errors.md#maxbranches-exceeded)
+  - [MaxConstraintSolverTime exceeded](warnings-and-errors.md#maxconstraintsolvertime-exceeded)
+  - [MaxConditions exceeded](warnings-and-errors.md#maxconditions-exceeded)
   - [MaxCalls aşıldı](warnings-and-errors.md#maxcalls-exceeded)
-  - [MaxStack aşıldı](warnings-and-errors.md#maxstack-exceeded)
-  - [MaxRuns aşıldı](warnings-and-errors.md#maxruns-exceeded)
-  - [MaxRunsWithoutNewTests aşıldı](warnings-and-errors.md#maxrunswithoutnewtests-exceeded)
+  - [MaxStack exceeded](warnings-and-errors.md#maxstack-exceeded)
+  - [MaxRuns exceeded](warnings-and-errors.md#maxruns-exceeded)
+  - [MaxRunsWithoutNewTests exceeded](warnings-and-errors.md#maxrunswithoutnewtests-exceeded)
   - [Çözüm concretize olamaz](warnings-and-errors.md#cannot-concretize-solution)
   - [Nesnesi oluşturmak için Yardım gerekiyor](warnings-and-errors.md#help-construct)
   - [Türlerini bulmak için Yardım gerekiyor](warnings-and-errors.md#help-types)

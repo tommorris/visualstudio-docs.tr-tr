@@ -1,22 +1,18 @@
 ---
-title: "Üçüncü şahıs birim test çerçevelerini yükleme | Microsoft Docs"
-ms.custom: 
+title: "Visual Studio'da üçüncü şahıs birim test çerçevelerini yükleme | Microsoft Docs"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cda966cc463cd690e6624027329d6be78a7fcecc
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: dcf255e68076ff0ffffb2e36d8e276f19b2b313a
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Nasıl yapılır: Üçüncü taraf birim testi çerçevelerini yükleme
 

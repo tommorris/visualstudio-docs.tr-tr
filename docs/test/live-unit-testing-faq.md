@@ -1,9 +1,7 @@
 ---
 title: "Birim testi SSS Canlı | Microsoft Docs"
 ms.date: 2017-10-03
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,11 +10,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2437a138e9e83d3b723971b53dac413ad0ea4151
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: c9a4628d6c2b0d842d57711f1204fbe15f88fac9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Sık sorulan sorular birim testi Canlı
 
@@ -25,7 +23,6 @@ ms.lasthandoff: 02/21/2018
 **Yanıt:**
 
 Yeni özellikler ve canlı birim testi için Visual Studio 2017 sürüm 15.3 başlangıç yapılan geliştirmeler hakkında bilgi edinmek için [Canlı birim testi yenilikler](live-unit-testing-whats-new.md).
-
 
 ## <a name="what-test-frameworks-does-live-unit-testing-support-and-what-are-the-minimum-supported-versions"></a>Hangi test çerçevelerini Canlı birim testi desteği ve minimum desteklenen sürümleri nelerdir mu?
 
@@ -58,14 +55,13 @@ Aşağıdaki tabloda listelenen üç popüler birim test çerçevelerini ile can
 
 Eski mstest'i dayalı test varsa, bu başvuruyu projeleri `Microsoft.VisualStudio.QualityTools.UnitTestFramework` ve daha yeni mstest'i NuGet paketleri, Visual Studio 2017 sürüm 15.4 yükseltme taşımak istemiyorsanız.
 
-Bazı durumlarda, açıkça Canlı çalışması birim testi için sırayla Çözümdeki projeler tarafından başvurulan NuGet paketlerini geri yüklemek gerekebilir. Açık bir yapı çözümü yaparak ya da bunu yapabilirsiniz (seçin **yapı**, **çözümü yeniden derle** en üst düzey Visual Studio menüsünde) veya çözümde paketleri geri (sağ tıklayın Çözüm ve select **NuGet paketleri geri**) yaşam birim testi etkinleştirmeden önce.
-
+Bazı durumlarda, açıkça Canlı çalışması birim testi için sırayla Çözümdeki projeler tarafından başvurulan NuGet paketlerini geri yüklemek gerekebilir. Açık bir yapı çözümü yaparak ya da paketlerin geri yükleyebilirsiniz (seçin **yapı**, **çözümü yeniden derle** en üst düzey Visual Studio menüsünde), ya da çözüm üzerinde sağ tıklanarak ve seçme **NuGet paketleri geri** yaşam birim testi etkinleştirmeden önce.
 
 ## <a name="does-live-unit-testing-work-with-net-core"></a>Birim testi Canlı .NET Core'u kullanmaya çalışıyor mu?
 
 **Yanıt:**
 
-Evet. Dinamik birim testi .NET Core ve .NET Framework ile çalışır. .NET Core desteği en son Visual Studio 2017 sürüm 15.3 eklendi. .NET Core Canlı birim testi desteği istiyorsanız lütfen Visual Studio'nun bu sürümü için yükseltin.
+Evet. Dinamik birim testi .NET Core ve .NET Framework ile çalışır. .NET Core desteği en son Visual Studio 2017 sürüm 15.3 eklendi. .NET Core Canlı birim testi desteği istiyorsanız bu Visual Studio sürümüne yükseltin.
 
 ## <a name="why-doesnt-live-unit-testing-work-when-i-turn-it-on"></a>Birim testi Canlı etkinleştirmeden zaman neden çalışmıyor?
 
@@ -73,11 +69,11 @@ Evet. Dinamik birim testi .NET Core ve .NET Framework ile çalışır. .NET Core
 
 **Çıktı penceresi** (dinamik birim testi açılan seçildiğinde) neden Canlı birim testi çalışmadığını söyleyecektir. Dinamik birim testi aşağıdaki nedenlerden birinden dolayı çalışmayabilir:
 
-- Çözümdeki projeler tarafından başvurulan NuGet paketleri geri değil, Canlı birim testi çalışmaz. Açık bir yapı çözümü yapıyor veya dinamik birim testi açmadan önce çözümde NuGet paketleri geri bu sorunu gidermeniz gerekir.
+- Çözümdeki projeler tarafından başvurulan NuGet paketleri geri değil, Canlı birim testi çalışmaz. Bu sorunu, açık bir yapı çözümü yapılması veya birim testi Canlı kapatmadan önce çözümde NuGet paketleri geri çözümlenmelidir.
 
-- Mstest'i tabanlı testleri projelerinizde kullanıyorsanız, başvuru kaldırdığınızdan emin olun `Microsoft.VisualStudio.QualityTools.UnitTestFramework`ve en son mstest'i NuGet Paketlerine yönelik başvuruları ekleme `MSTest.TestAdapter` (1.1.11 en düşük sürümü gereklidir) ve `MSTest.TestFramework` (en düşük sürüm 1.1.11 gereklidir). Daha fazla bilgi için "Desteklenen test çerçevelerini" bölümüne bakın [kullanmak Canlı birim testi Visual Studio 2017 Enterprise Edition'da](live-unit-testing.md#supported-test-frameworks) konu.
+- Mstest'i tabanlı testleri projelerinizde kullanıyorsanız, başvuru kaldırdığınızdan emin olun `Microsoft.VisualStudio.QualityTools.UnitTestFramework`ve en son mstest'i NuGet Paketlerine yönelik başvuruları ekleme `MSTest.TestAdapter` (1.1.11 en düşük sürümü gereklidir) ve `MSTest.TestFramework` (en düşük sürüm 1.1.11 gereklidir). Daha fazla bilgi için "Desteklenen test çerçevelerini" bölümüne bakın [kullanmak Canlı birim testi Visual Studio 2017 Enterprise Edition'da](live-unit-testing.md#supported-test-frameworks) makalesi.
 
-- En az bir proje çözümünüzdeki NuGet başvuru veya xUnit doğrudan başvuru olmalıdır NUnit veya mstest'i test çerçevesi. Bu projede de bir karşılık gelen Visual Studio test bağdaştırıcıları NuGet paketi başvuruda bulunmalıdır. Visual Studio test bağdaştırıcısı aracılığıyla da başvurulabilir bir `.runsettings` dosyası. `.runsettings` Dosyanız aşağıdaki gibi bir girdi gerekir:
+- En az bir proje çözümünüzdeki NuGet başvuru veya xUnit NUnit, doğrudan başvuru olmalıdır veya mstest'i test çerçevesi. Bu projede de bir karşılık gelen Visual Studio test bağdaştırıcıları NuGet paketi başvuruda bulunmalıdır. Visual Studio test bağdaştırıcısı aracılığıyla da başvurulabilir bir `.runsettings` dosyası. `.runsettings` Dosyasını aşağıdaki örneğe benzer bir giriş olması gerekir:
 
    ```xml
     <RunSettings>
@@ -85,7 +81,7 @@ Evet. Dinamik birim testi .NET Core ve .NET Framework ile çalışır. .NET Core
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
        </RunConfiguration>
     </RunSettings>
-   ``` 
+   ```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>Neden desteklenen sürüm, Visual Studio projelerine başvuru test bağdaştırıcısı yükselttikten sonra birim testi Canlı yanlış kapsamı gösteriyor mu?
 
@@ -174,7 +170,7 @@ Bazı farklar vardır:
 
 **Yanıt:**
 
-"Dahil ve hariç projeleri ve test yöntemleri" bölümüne bakın [kullanmak Canlı birim testi Visual Studio 2017 Enterprise Edition'da](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods) kullanıcıya özel ayar için konu. Bu, belirli bir belirli düzenleme oturumunun testleri kümesini çalıştırmak için veya kişisel tercihlerinize kalıcı hale getirmek için istediğiniz zaman son derece yararlıdır.
+"Dahil ve hariç projeleri ve test yöntemleri" bölümüne bakın [kullanmak Canlı birim testi Visual Studio 2017 Enterprise Edition'da](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods) için kullanıcıya özgü ayarı makalesine. Belirli bir belirli düzenleme oturumunun testleri kümesini çalıştırmak için veya kişisel tercihlerinize kalıcı hale getirmek için istediğinizde kullanışlıdır.
  
 Çözüme özel ayarlarını uyguladığınız <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> programlı olarak yöntemler, özellikler, sınıfları veya yapıları Canlı birim testi tarafından izlenmiş gelen dışlanacak özniteliği. Ayrıca, aynı zamanda ayarlayabileceğiniz `<ExcludeFromCodeCoverage>` özelliğine `true` izlenmiş tüm proje dışlamak için proje dosyası. Dinamik birim testi değil izleme eklenmiş testleri hala çalışacak, ancak bunların kapsamı değil görselleştirilen.
 
@@ -203,7 +199,7 @@ public class Class1
 
 **Yanıt:**
 
-Bu sorun düzeltilmiştir ve Visual Studio 2017 sürüm 15.3'ye yok. Lütfen bu Visual Studio sürümüne yükseltin.
+Bu sorun düzeltilmiştir ve Visual Studio 2017 sürüm 15.3 yok. Visual Studio bu sürüme yükseltin.
 
 Visual Studio 2017 daha eski sürümleri için aşağıdaki Win32 PE üstbilgisi verileri katıştırmak için başarısız olan dinamik birim testi derlemelerde sonuçlanabilir bilinen bir hata vardır:
 

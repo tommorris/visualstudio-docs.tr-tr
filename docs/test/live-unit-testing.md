@@ -1,21 +1,20 @@
 ---
 title: "Birim testi Visual Studio'da Canlı | Microsoft Docs"
 ms.date: 2017-03-07
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.workload: dotnet
-ms.openlocfilehash: 725b9e31e725106dcd9e461a8f5d3749230fd5c9
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7ab19350529e4bd1c7edf914a8a8ca049ace6054
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Dinamik birim ile Visual Studio 2017 testi
 
@@ -74,7 +73,7 @@ Yapılandırılabilir seçeneklerin şunları içerir:
 - En yüksek Canlı birim testi oluşturur test işlem sayısı. 
 - En fazla Canlı birim testi işler bellek miktarı kullanabilir.
 - Canlı birim testi için yazılan bilgilerin düzeyini **çıkış** penceresi.   
-   Seçenekleriniz günlüğünü (**hiçbiri**), hata iletileri yalnızca (**hata**), hata ve bilgilendirici iletileri (**bilgisi**, varsayılan), ya da tüm ayrıntıları (**Verbose **).
+   Seçenekleriniz günlüğünü (**hiçbiri**), hata iletileri yalnızca (**hata**), hata ve bilgilendirici iletileri (**bilgisi**, varsayılan), ya da tüm ayrıntıları (**Verbose** ).
 
 Ayrıca, dinamik birim testi içinde ayrıntılı çıktı görüntüleyebilirsiniz **çıkış** değerini "1" adlı bir kullanıcı düzeyinde ortam değişkenine atayarak penceresi `VS_UTE_DIAGNOSTICS` ve Visual Studio'yu yeniden başlatmayı. 
 
@@ -171,7 +170,7 @@ Birim testleri bağımsız projeleri seçmek için birim testi Canlı başlatıl
 
 **Kod Düzenleyicisi penceresinden tek tek testlerin hariç**
 
-Kod Düzenleyicisi penceresinde, dahil etmek veya hariç ayrı ayrı test yöntemleri kullanabilirsiniz. Kod Düzenleyicisi penceresinde test yönteminin imzasını sağ tıklatın ve seçin **Canlı testleri**, **dahil [seçili yöntemi]**, **Canlı testleri**, ** [Seçilen yöntemi] hariç**, veya **Canlı testleri**, **hariç tüm ancak [seçili yöntemi]**, burada "Seçili yöntemi" kodda seçili yöntemin adı. penceresini açın. 
+Kod Düzenleyicisi penceresinde, dahil etmek veya hariç ayrı ayrı test yöntemleri kullanabilirsiniz. Kod Düzenleyicisi penceresinde test yönteminin imzasını sağ tıklatın ve seçin **Canlı testleri**, **dahil [seçili yöntemi]**, **Canlı testleri**,  **[Seçilen yöntemi] hariç**, veya **Canlı testleri**, **hariç tüm ancak [seçili yöntemi]**, burada "Seçili yöntemi" kodda seçili yöntemin adı. penceresini açın. 
 
 **Testleri program aracılığıyla hariç** 
 
@@ -179,9 +178,9 @@ Uygulayabileceğiniz <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCovera
 
 Aşağıdaki öznitelikler, Canlı birim testi yöntemleri ayrı ayrı dışlamak için de kullanabilirsiniz:
 
-- XUnit için:`[Trait("Category", "SkipWhenLiveUnitTesting")]`
-- NUnit için:`[Category("SkipWhenLiveUnitTesting")]`
-- Mstest'i için:`[TestCategory("SkipWhenLiveUnitTesting")]` 
+- XUnit için: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+- NUnit için: `[Category("SkipWhenLiveUnitTesting")]`
+- Mstest'i için: `[TestCategory("SkipWhenLiveUnitTesting")]` 
  
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,11 +1,7 @@
 ---
 title: "Uyarıları ve hataları | Microsoft Intellitest Geliştirici Test aracı | Microsoft Docs"
-ms.custom: 
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
@@ -14,24 +10,24 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 77f47c2d18b43c3ab08dac5fec6281892072ab36
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 522f575811fe79542b81169ff80d769f996e977d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="warnings-and-errors"></a>Uyarıları ve hataları
 
 ## <a name="warnings-and-errors-by-category"></a>Uyarıları ve hataları kategoriye göre
 
 * **Sınırları**
-  * [MaxBranches aşıldı](#maxbranches-exceeded)
-  * [MaxConstraintSolverTime aşıldı](#maxconstraintsolvertime-exceeded)
-  * [MaxConditions aşıldı](#maxconditions-exceeded)
+  * [MaxBranches exceeded](#maxbranches-exceeded)
+  * [MaxConstraintSolverTime exceeded](#maxconstraintsolvertime-exceeded)
+  * [MaxConditions exceeded](#maxconditions-exceeded)
   * [MaxCalls aşıldı](#maxcalls-exceeded)
-  * [MaxStack aşıldı](#maxstack-exceeded)
-  * [MaxRuns aşıldı](#maxruns-exceeded)
-  * [MaxRunsWithoutNewTests aşıldı](#maxrunswithoutnewtests-exceeded)<p />
+  * [MaxStack exceeded](#maxstack-exceeded)
+  * [MaxRuns exceeded](#maxruns-exceeded)
+  * [MaxRunsWithoutNewTests exceeded](#maxrunswithoutnewtests-exceeded)<p />
 
 * **Kısıtlama çözme**
   * [Çözüm Concretize olamaz](#cannot-concretize-solution)<p />
@@ -52,12 +48,12 @@ ms.lasthandoff: 01/09/2018
   * [Test Edilebilirlik sorunu](#testability-issue)
   * [Sınırlama](#limitation)<p />
 
-* **Yorumlayıcı**
+* **Interpreter**
   * [Gözlemlenen çağrısı uyuşmazlığı](#observed-call-mismatch)
   * [Statik alanda depolanan değer](#value-static-field)
 
 <a name="maxbranches-exceeded"></a>
-## <a name="maxbranches-exceeded"></a>MaxBranches aşıldı
+## <a name="maxbranches-exceeded"></a>MaxBranches exceeded
 
 Intellitest sınırlar sırasında araştırır herhangi bir yürütme yol uzunluğu [giriş nesil](input-generation.md). Bu özellik Intellitest program sonsuz bir döngüde gittiğinde, yanıt veremez hale gelmesini engeller.
 
@@ -90,7 +86,7 @@ for (int i=0;
 ```
 
 <a name="maxconstraintsolvertime-exceeded"></a>
-## <a name="maxconstraintsolvertime-exceeded"></a>MaxConstraintSolverTime aşıldı
+## <a name="maxconstraintsolvertime-exceeded"></a>MaxConstraintSolverTime exceeded
 
 Intellitest kullanan bir [kısıtlaması Çözücü](input-generation.md#constraint-solver) yeni test girişleri hesaplamak için. Kısıtlaması çözme olabilir çok zaman alan bir işlem Intellitest sınırları - özellikle yapılandırmanıza izin verir şekilde **MaxConstraintSolverTime**.
 
@@ -193,7 +189,7 @@ public void MyTest(...) {
 ```
 
 <a name="maxrunswithoutnewtests-exceeded"></a>
-## <a name="maxrunswithoutnewtests-exceeded"></a>MaxRunsWithoutNewTests aşıldı
+## <a name="maxrunswithoutnewtests-exceeded"></a>MaxRunsWithoutNewTests exceeded
 
 Intellitest sırasında araştırır yürütme yolları sayısını sınırlar [giriş nesil](input-generation.md). Bu özellik, döngüler veya özyineleme program sahip olduğunda Intellitest sonlandırır sağlar.
 

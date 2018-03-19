@@ -1,24 +1,21 @@
 ---
-title: "Test etmek için UWP denetimleri için benzersiz Otomasyon özelliği ayarlama | Microsoft Docs"
-ms.custom: 
+title: "Visual Studio'da Test etmek için UWP denetimleri için benzersiz Otomasyon özelliği ayarlama | Microsoft Docs"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 47101649e3b30baad8c6edeb0c2d4899456294a1
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 473404bbd3bbfbf6b7cd6cee589a98bc1da4746c
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Test etmek için UWP denetimleri için benzersiz Otomasyon özelliği ayarlama
+
 XAML tabanlı UWP uygulamanız için kodlanmış UI testleri çalıştırmak istiyorsanız, her denetim tanımlayan bir benzersiz Otomasyon özelliği olması gerekir.
 
  Uygulamanızda XAML denetimin türüne göre benzersiz Otomasyon özelliği atayabilirsiniz. Aşağıdaki durumlarda bu benzersiz Otomasyon özelliği atama şöyledir:

@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e175a534cb35333b1f57c188c62a781f2fd68627
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: d8ee86a969279c3bdb8b09a0a0d2c9160d7691e0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild Hedef Çerçevesi ve Hedef Platformu
 Bir proje üzerinde çalışmak için yerleşik bir *hedef framework*, belirli bir .NET Framework sürümü olduğu ve *hedef platformu*, belirli yazılım mimarisi olduğu.  Örneğin, bir uygulamayı .NET Framework 2.0 802 x 86 işlemci ailesi ("x86") ile uyumlu bir 32 bit platformda çalışacak şekilde hedefleyebilirsiniz. Hedef Çerçeve ve hedef platformu bileşimi olarak bilinen *hedef bağlamı*.  
@@ -67,14 +67,16 @@ Bir proje üzerinde çalışmak için yerleşik bir *hedef framework*, belirli b
  A *platform* donanım ve belirli çalışma zamanı ortamı tanımlar yazılım birleşimidir. Örneğin,  
   
 -   `x86` bir Intel 80 x 86 işlemci veya eşdeğer üzerinde çalışan 32 bit Windows işletim sistemi belirler.  
+
+-   `x64` bir Intel x64 işlemci veya eşdeğeri, çalışan bir 64-bit Windows işletim sistemi belirler.
   
 -   `Xbox` Microsoft Xbox 360 platform belirler.  
   
- A *hedef platformu* projenizi çalıştırmak için yerleşik belirli platformudur. Hedef platform belirtilen `Platform` proje dosyasında özellik oluşturun. Proje özellik sayfalarını kullanarak hedef platformu değiştirebilir veya **Configuration Manager** IDE içinde.  
+ A *hedef platformu* projenizi çalıştırmak için yerleşik belirli platformudur. Hedef platform belirtilen `PlatformTarget` proje dosyasında özellik oluşturun. Proje özellik sayfalarını kullanarak hedef platformu değiştirebilir veya **Configuration Manager** IDE içinde.  
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
 </PropertyGroup>  
   
 ```  
@@ -83,7 +85,7 @@ Bir proje üzerinde çalışmak için yerleşik bir *hedef framework*, belirli b
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
    <Configuration>Debug</Configuration>  
 <PropertyGroup>  
   

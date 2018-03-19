@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio Test Araçları | Microsoft Docs"
-ms.date: 01/31/2018
-ms.technology: vs-devops-test
+ms.date: 03/16/2018
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - testing tools [Visual Studio]
@@ -11,29 +11,29 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2ba1da6797a7c16f88514f8dd9d040e113c24aec
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: a4f662761c58595ae40a2bf82913978bcfbb68db
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio Test Araçları
 
-Visual Studio Test Araçları sizin ve ekibinizin geliştirmek ve kod mükemmel yüksek standartlarını sürdürebilmek için yardımcı olabilir.
+Visual Studio Test Araçları yardımcı olabilir ve ekibinizin geliştirmek ve kod mükemmel yüksek standartlarını sürdüren.
 
-**Test Gezgini** penceresi tümleştirmek kolaylaştırır [birim testleri](../test/unit-test-your-code.md) geliştirme uygulama içine. Microsoft birim test çerçevesi veya birkaç üçüncü taraf ve açık kaynak çerçeveleri birini kullanabilirsiniz.
+- **Test Gezgini** penceresi tümleştirmek kolaylaştırır [birim testleri](../test/unit-test-your-code.md) geliştirme uygulama içine. Microsoft birim test çerçevesi veya birkaç üçüncü taraf ve açık kaynak çerçeveleri birini kullanabilirsiniz.
 
-[Intellitest](../test/generate-unit-tests-for-your-code-with-intellitest.md) birim testleri ve test verileri, yönetilen kod için otomatik olarak oluşturur.
+- [Intellitest](../test/generate-unit-tests-for-your-code-with-intellitest.md) birim testleri ve test verileri, yönetilen kod için otomatik olarak oluşturur.
 
-[Kod kapsamı](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) projenizin kodunun ne oranda gerçekte birim testleri gibi kodlanmış testleri tarafından test edilmektedir belirler.
+- [Kod kapsamı](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) projenizin kodunun ne oranda gerçekte birim testleri gibi kodlanmış testleri tarafından test edilmektedir belirler.
 
-[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) uygulamanın diğer bölümleri yer tutucular veya dolgular ile değiştirerek test kodu yalıtmak Yardım.
+- [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) uygulamanın diğer bölümleri yer tutucular veya dolgular ile değiştirerek test kodu yalıtmak Yardım.
 
-[Birim testi canlı](../test/live-unit-testing.md) otomatik olarak birim testleri arka planda çalışır ve grafik Visual Studio Kod Düzenleyicisi'nde kod kapsamı ve test sonuçlarını görüntüler.
+- [Birim testi canlı](../test/live-unit-testing.md) otomatik olarak birim testleri arka planda çalışır ve grafik Visual Studio Kod Düzenleyicisi'nde kod kapsamı ve test sonuçlarını görüntüler.
 
-Kullanım kodlanmış UI testleri için [uygulamanızı kendi kullanıcı arabirimi üzerinden test](../test/use-ui-automation-to-test-your-code.md).
+- [Kodlanmış UI testleri](../test/use-ui-automation-to-test-your-code.md) , kendi kullanıcı arabirimi aracılığıyla uygulamanızı test etmek etkinleştirin.
 
-A [laboratuvar ortamı](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md) geliştirmek ve uygulamaları test etmek için kullanabileceğiniz sanal ve fiziksel makineler koleksiyonudur.
+- [Yük testleri](../test/quickstart-create-a-load-test-project.md) birim testleri ve Web performans testleri çalıştırarak bir sunucu uygulaması üzerindeki yükü benzetimini yapar.
 
 > [!NOTE]
 > Birim testi Visual Studio'nin tüm sürümlerinde kullanılabilir değil. Diğer test araçları gibi birim testi, Intellitest, canlı ve kodlanmış UI testleri yalnızca Visual Studio Enterprise Edition'da kullanılabilir. Sürümleri hakkında daha fazla bilgi için bkz: [karşılaştırmak Visual Studio 2017 IDE](https://www.visualstudio.com/vs/compare/).

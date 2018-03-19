@@ -1,22 +1,21 @@
 ---
-title: "Kodlanmış UI testleriyle Windows UWP uygulamaları test | Microsoft Docs"
-ms.custom: 
+title: "Visual Studio'da kodlanmış UI testleriyle Windows UWP uygulamaları test | Microsoft Docs"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: dd2ed23bbfacf1bfec1cc7cb531c1e0a0f9e20c4
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 889e29926d638e4e160c323e8d2673d858ab5c22
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>Kodlanmış UI testleriyle Windows UWP uygulamaları sınama
 
@@ -60,7 +59,7 @@ UWP uygulamaları ve XAML tabanlı 8.1 için UI testleri oluşturmak için bu k�
     End Class
     ```
 
-5.  UWP uygulamanızı çalıştırmak için F5 tuşuna basın.
+5.  Seçin **F5** UWP uygulamanızı çalıştırmak için.
 
 ## <a name="create-and-run-a-coded-ui-test-for-the-uwp-app"></a>Oluşturma ve UWP uygulaması için kodlanmış UI testi çalıştırma
 
@@ -104,16 +103,16 @@ UWP uygulamaları ve XAML tabanlı 8.1 için UI testleri oluşturmak için bu k�
 
 10. **Visual C#**
 
-     Çözüm Gezgini'nde assert yöntemini ve denetimler için eklenen kod görüntülemek için UIMap.Designer.cs dosyasını açın.
+     Çözüm Gezgini'nde açık *UIMap.Designer.cs* assert yöntemini ve denetimler için eklenen kod görüntülemek için dosya.
 
      **Visual Basic**
 
-     Çözüm Gezgini'nde CodedUITest1.vb dosyasını açın ve otomatik olarak eklenen onay yöntemi çağrısı Codeduıtestmethod1() test yöntemi kodda sağ tıklatın `Me.UIMap.AssertMethod1()` ve **Tanıma Git**. Assert yöntemini ve denetimler için eklenen kod görünümü görüntüleyebilmeniz Bu kod düzenleyicisinde UIMap.Designer.vb dosyasını açar.
+     Çözüm Gezgini'nde açık *CodedUITest1.vb* dosya ve otomatik olarak eklenen onay yöntemi çağrısı Codeduıtestmethod1() test yöntemi kodda sağ tıklatın `Me.UIMap.AssertMethod1()` ve **Git Tanımı**. Bu açılır *UIMap.Designer.vb* assert yöntemini ve denetimler için eklenen kod görünümü görüntüleyebilmeniz Kod düzenleyicisinde dosya.
 
     > [!WARNING]
-    >  UIMap.Designer.cs veya UIMap.Designer.vb dosyasını doğrudan değiştirmeyin. Bunu yaparsanız, değişiklikleri dosyaya test üretilen her zaman üzerine yazılır.
+    > Değişiklik yapmayın *UIMap.Designer.cs* veya *UIMap.Designer.vb* dosyasını doğrudan. Bunu yaparsanız, değişiklikleri dosyaya test üretilen her zaman üzerine yazılır.
 
-     **Assert yöntemi**
+    **Assert yöntemi**
 
     ```csharp
     public void AssertMethod1()
@@ -136,7 +135,7 @@ UWP uygulamaları ve XAML tabanlı 8.1 için UI testleri oluşturmak için bu k�
     End Sub
     ```
 
-     **Denetimler**
+    **Denetimler**
 
     ```csharp
     #region Properties
@@ -244,7 +243,7 @@ UWP uygulamaları ve XAML tabanlı 8.1 için UI testleri oluşturmak için bu k�
         Me.UIMap.AssertMethod1()
         ```
 
-     Kod ekledikten sonra Codeduıtestmethod1 test yöntemi aşağıdaki gibi görünmelidir:
+    Kod ekledikten sonra Codeduıtestmethod1 test yöntemi aşağıdaki gibi görünmelidir:
 
     ```csharp
     [TestMethod]
@@ -296,20 +295,20 @@ UWP uygulamaları ve XAML tabanlı 8.1 için UI testleri oluşturmak için bu k�
 
 ## <a name="q--a"></a>Soru - Yanıt
 
-#### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>S: yok görmemin nedeni kodlanmış UI testi iletişim oluşturmak kodunda my kodlanmış UI testini kaydetme seçeneği? **
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Kodlanmış UI testi iletişim oluşturmak kodunda my kodlanmış UI testini kaydetme seçeneği neden göremiyorum?
 
 **A**: kaydetme seçeneği UWP uygulamaları için desteklenmiyor.
 
-#### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>S: kodlanmış UI testi için UWP uygulamalarım üzerinde WinJS oluşturabiliyorum? **
+### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>S: kodlanmış UI testi için UWP uygulamalarım üzerinde WinJS oluşturabilirim?
 
 **A**: Hayır, yalnızca temel XAML uygulamaları desteklenmez.
 
-#### <a name="q-can-i-create-coded-ui-tests-for-my-uwp-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>S: kodlanmış UI testleri Windows 8.1 veya Windows 10 çalıştırmayan bir sistemde my UWP uygulamalar için oluşturabiliyorum? **
+### <a name="q-can-i-create-coded-ui-tests-for-my-uwp-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>S: kodlanmış UI testleri Windows 8.1 veya Windows 10 çalıştırmayan bir sistemde my UWP uygulamalar için oluşturabilirim?
 
 **A**: Hayır, kodlanmış UI Test proje şablonları yalnızca Windows 8.1 ve Windows 10 kullanılabilir. Otomasyon için evrensel Windows Platformu (UWP) uygulamaları oluşturmak için Windows 10 gerekir.
 
 <a name="uwpapps"></a>
-#### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>S: Evrensel Windows Platformu (UWP) uygulamaları için kodlanmış UI testleri nasıl oluşturabilirim? **
+### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>S: Evrensel Windows Platformu (UWP) uygulamaları için kodlanmış UI testleri nasıl oluşturulur?
 
 **A**: Burada test UWP uygulamanızı platformuna bağlı olarak kodlanmış UI test projesi şu yollardan biriyle oluşturun:
 
@@ -319,7 +318,7 @@ UWP uygulamaları ve XAML tabanlı 8.1 için UI testleri oluşturmak için bu k�
 
 Projesi oluşturduktan sonra bir test yazma önceki ile aynı kalır.
 
-#### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>S: neden ı değiştiremiyor UIMap.Designer dosyasındaki kodu? **
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>S: neden UIMap.Designer dosyasındaki kodu değiştirilemez?
 
 **A**: UIMap - Kodlanmış UI Test derleyicisini kullanarak kod oluşturma her zaman UIMapDesigner.cs dosyasında yaptığınız herhangi bir kod değişikliğinin üzerine yazılır. Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, yöntemi UIMap.cs dosyasına kopyalayıp yeniden adlandırmanız gerekir. UIMap.cs dosyası, UIMapDesigner.cs dosyasındaki yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir. Kodlanmış UITest.cs dosyasındaki orijinal yönteme başvuruyu kaldırıp yeniden adlandırılan yöntem adıyla değiştirmelisiniz.
 

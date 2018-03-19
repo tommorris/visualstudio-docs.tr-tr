@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: be3292cb4484263b9e70a4bbdde36f60f1ea7ccb
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: e63be8c89de677cf1cb644db2fcdecf4a20399b0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="getting-started-with-performance-tools"></a>Performans araçları ile çalışmaya başlama
 Bu bölümde, kavramlar ve toplamak, görüntülemek ve Visual Studio performans araçları kullanarak kod performansını analiz uygulayacağınız görevlerinin genel bakış sağlar.  
@@ -33,15 +33,14 @@ Bu bölümde, kavramlar ve toplamak, görüntülemek ve Visual Studio performans
   
 -   Performans raporları uygulama yapınızı farklı düzeylerde kaynağından görünümleri kod satırlarından işlemleri ve program yürütme verileri çağrı ağacı tüm uygulamanın belirli bir işleve çağıran ve çağrılan işlevleri sağlar.  
   
-## <a name="common-tasks"></a>Ortak Görevler  
+## <a name="common-tasks"></a>Ortak görevler  
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
 |**Bir uygulama veya bir Web sitesini hızla profil:** performans Sihirbazı'nı yapılandırmak ve Visual Studio çözümü veya bir Web sitesi için profil oluşturma oturumu çalıştırmak için kullanın.|-   [Performans profili oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [Nasıl yapılır: bir Web sitesi için performans verilerini topla](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
 |**Sihirbaz kullanmadan bir uygulama profili:** performans oturum oluşturmak için performans oturumu özellik sayfaları kullanmayı öğrenin.|-   [Nasıl yapılır: performans oturumlarını elle oluşturma](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**Deneyin:** alma uygulamalı deneyim örnek bir uygulama profili oluşturma.|-   [İzlenecek yol: Performans sorunları tanımlama](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax örneği](../profiling/peopletrax-sample-profiling-tools.md)|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Genel bakış](../profiling/overviews-performance-tools.md)   
  [Araçları verilerini performansını analiz etme](../profiling/analyzing-performance-tools-data.md)   
  [Verileri çözümlemek için performans kurallarını kullanma](../profiling/using-performance-rules-to-analyze-data.md)   

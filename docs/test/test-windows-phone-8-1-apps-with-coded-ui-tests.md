@@ -1,22 +1,18 @@
 ---
-title: "Kodlanmış UI testleriyle Windows UWP ve 8.1 Phone uygulamalarını test | Microsoft Docs"
-ms.custom: 
+title: "Test Windows UWP ve 8.1 Phone uygulamalarını Visual Studio'da kodlanmış UI testleriyle | Microsoft Docs"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: ba0366ce882d1a4c2b715e621343dcbc0db6f457
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 60515eb6d7dde34562895d357a7802592c20aecb
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Kodlanmış UI testleriyle Windows UWP ve 8.1 Phone uygulamalarını test etme
 
@@ -127,7 +123,7 @@ Bu kılavuz, mobil cihaz veya Öykünücüler çalıştırılan UWP uygulamalar�
      Çözüm Gezgini'nde CodedUITest1.vb dosyasını açın. Codeduıtestmethod1() test yöntemi kodu, otomatik olarak eklenen onay yöntemi çağrısı sağ `Me.UIMap.AssertMethod1()` ve **Tanıma Git**. Assert yöntemini ve denetimler için eklenen kod görüntüleyebilmeniz Bu kod düzenleyicisinde UIMap.Designer.vb dosyasını açar.
 
     > [!WARNING]
-    >  UIMap.Designer.cs veya UIMap.Designer.vb dosyasını doğrudan değiştirmeyin. Bunu yaparsanız, değişiklikleri dosyaya test üretilen her zaman üzerine yazılır.
+    > UIMap.Designer.cs veya UIMap.Designer.vb dosyasını doğrudan değiştirmeyin. Bunu yaparsanız, değişiklikleri dosyaya test üretilen her zaman üzerine yazılır.
 
      **Assert yöntemi**
 
@@ -389,4 +385,5 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  Microsoft Visual Studio uygulama yaşam döngüsü yönetimi blog: [XAML tabanlı Windows Phone uygulamaları test etmek için kodlanmış UI kullanarak](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)
+
+- [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)

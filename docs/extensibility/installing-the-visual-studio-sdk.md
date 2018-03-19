@@ -14,11 +14,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a5a4721eea178e4a9ab5766760ccf1405589684
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 17b3b0a107d263a213746a625ec5a65419695b4d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Visual Studio SDK yükleme
 Visual Studio SDK, Visual Studio kurulumunda isteğe bağlı bir özelliktir. VS SDK'yı daha sonra da yükleyebilirsiniz.  
@@ -35,6 +35,6 @@ Visual Studio SDK, Visual Studio kurulumunda isteğe bağlı bir özelliktir. VS
  ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
 ## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>Visual Studio SDK komut satırından yükleme  
-Visual Studio iş yükü ya da bileşen gibi öğenin komut satırından da yükleyebilirsiniz. Bkz: [Visual Studio'yu yüklemek için komut satırı parametrelerini kullanmak](../install/use-command-line-parameters-to-install-visual-studio.md) uygun komut satırı anahtarları ve iş yükü ya da bileşen tanımlayıcıları belirleme hakkında ayrıntılar için.
+Tüm Visual Studio iş yükü veya bileşeni ile de yükleyebilirsiniz gibi **Visual Studio uzantısı geliştirme** iş yükü (kimlik: Microsoft.VisualStudio.Workload.VisualStudioExtension) komut satırından. Bkz: [Visual Studio'yu yüklemek için komut satırı parametrelerini kullanmak](../install/use-command-line-parameters-to-install-visual-studio.md) genel yönergeler iş yükü ya da bileşen tanımlayıcıları belirleme ve uygun komut satırı anahtarları hakkında ayrıntılı bilgi için.
   
  Yüklü Visual Studio sürümünüzle eşleşen Visual Studio yükleyicisi kullanmanız gerektiğini unutmayın. Örneğin, bilgisayarınızda yüklü Visual Studio Enterprise varsa, Visual Studio Enterprise Yükleyici (vs_enterprise.exe) çalıştırmanız gerekir.

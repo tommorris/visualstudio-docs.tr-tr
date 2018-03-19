@@ -1,11 +1,7 @@
 ---
 title: "Test oluşturma | Microsoft Intellitest Geliştirici Test aracı | Microsoft Docs"
-ms.custom: 
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - IntelliTest, Test generation
@@ -14,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 478dbdd71845d8bc0eb98250318b853ba4b8e5e6
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8cb42b33907b528ee2c4cdd6a85ce5c361111772
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="test-generation"></a>Test oluşturma
 
@@ -120,7 +116,7 @@ public partial class ListTest {
 
 Intellitest beklenen özel durumlar olarak değerlendirme özel durumlar ve beklenmeyen özel durum yardımcı olmak üzere çok sayıda doğrulama öznitelikleri sağlar.
 
-Özel durumlar oluşturma ile ilgili ek açıklama negatif test çalışmaları gibi beklenen  **ExpectedException (typeof (*xxx*)) **, başarısız olan test çalışmalarını beklenmeyen özel durum oluşturur.
+Özel durumlar oluşturma ile ilgili ek açıklama negatif test çalışmaları gibi beklenen **ExpectedException (typeof (*xxx*))**, başarısız olan test çalışmalarını beklenmeyen özel durum oluşturur.
 
 ```
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]

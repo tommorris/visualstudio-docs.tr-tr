@@ -1,11 +1,7 @@
 ---
-title: "İzlenecek yol: bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanarak | Microsoft Docs"
-ms.custom: 
+title: "İzlenecek yol: Visual Studio'da bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanarak | Microsoft Docs"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
@@ -16,15 +12,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f04386c83f2fb310e56099368a5c587688ccd7
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 1b8aa551c6f1127705b5c8e8531726097c40aebb
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek Yol: Bir Veri Kaynağı Tanımlamak için Yapılandırma Dosyası Kullanma
 
-Bu kılavuzda birim testi için bir app.config dosyasında tanımlanan bir veri kaynağı kullanımını gösterir. Tarafından kullanılan bir veri kaynağı tanımlayan bir app.config dosyasının nasıl oluşturulacağını öğreneceksiniz <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> sınıfı. Bu kılavuzda sunulan görevler aşağıdakileri içerir:
+Bu kılavuzda tanımlanan bir veri kaynağı kullanımını gösterir bir *app.config* birim testi için dosya. Tarafından kullanılan bir veri kaynağı tanımlayan bir app.config dosyasının nasıl oluşturulacağını öğreneceksiniz <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> sınıfı. Bu kılavuzda sunulan görevler aşağıdakileri içerir:
 
 -   Bir app.config dosyası oluşturuluyor.
 
@@ -47,7 +43,7 @@ Bu kılavuzda birim testi için bir app.config dosyasında tanımlanan bir veri 
 
 ## <a name="create-the-appconfig-file"></a>App.config dosyasını oluşturma
 
-#### <a name="to-add-an-appconfig-file-to-the-project"></a>Bir app.config dosyası projeye eklemek için
+### <a name="to-add-an-appconfig-file-to-the-project"></a>Bir app.config dosyası projeye eklemek için
 
 1.  Test projenizin bir app.config dosyası zaten varsa, Git [özel yapılandırma bölümü tanımlamak](#DefineCustomConfigurationSection).
 
@@ -60,7 +56,7 @@ Bu kılavuzda birim testi için bir app.config dosyasında tanımlanan bir veri 
 ##  <a name="DefineCustomConfigurationSection"></a> Özel yapılandırma bölümü tanımlayın
  App.config dosyasını inceleyin. En az XML bildirimi ve bir kök öğe içeriyor.
 
-#### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Özel yapılandırma bölümü app.config dosyasına eklemek için
+### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Özel yapılandırma bölümü app.config dosyasına eklemek için
 
 1.  App.config kök öğesinin olmalıdır `configuration` öğesi. Oluşturma bir `configSections` öğesi içinde `configuration` öğesi. `configSections` App.config dosyasında ilk öğe olmalıdır.
 
@@ -80,7 +76,7 @@ Bu kılavuzda birim testi için bir app.config dosyasında tanımlanan bir veri 
 ## <a name="define-connection-strings"></a>Bağlantı dizeleri tanımlayın
  Bağlantı dizeleri veri kaynaklarına erişim sağlayıcıya özgü bilgileri tanımlar. Bağlantı dizelerini yapılandırma dosyalarında tanımlanan bir uygulama arasında yeniden kullanılabilir veri sağlayıcısı bilgileri sağlar. Bu bölümde, özel yapılandırma bölümünde tanımlanan veri kaynakları tarafından kullanılan iki bağlantı dizeleri oluşturun.
 
-#### <a name="to-define-connection-strings"></a>Bağlantı dizeleri tanımlamak için
+### <a name="to-define-connection-strings"></a>Bağlantı dizeleri tanımlamak için
 
 1.  Sonra `configSections` öğesini oluşturmak bir `connectionStrings` öğesi.
 
@@ -124,7 +120,7 @@ Bu kılavuzda birim testi için bir app.config dosyasında tanımlanan bir veri 
 
  Bu bölümde, bir birim testinde kullanmak için iki veri kaynakları tanımlayacaksınız.
 
-#### <a name="to-define-data-sources"></a>Veri kaynakları tanımlamak için
+### <a name="to-define-data-sources"></a>Veri kaynakları tanımlamak için
 
 1.  Sonra `connectionStrings` öğesini oluşturmak bir `microsoft.visualstudio.testtools` öğesi. Bu bölümde tanımla özel yapılandırma bölümü oluşturuldu.
 
@@ -189,7 +185,7 @@ Son app.config dosyası şuna benzer görünmelidir:
 
 -   Her veri kaynağı değerleri Karşılaştır iki test yöntemleri veri kaynaklarında kullanın.
 
-#### <a name="to-create-a-microsoft-access-data-source"></a>Bir Microsoft Access veri kaynağı oluşturmak için
+### <a name="to-create-a-microsoft-access-data-source"></a>Bir Microsoft Access veri kaynağı oluşturmak için
 
 1.  Adlı bir Microsoft Access veritabanı oluşturma `testdatasource.accdb`.
 
@@ -203,7 +199,7 @@ Son app.config dosyası şuna benzer görünmelidir:
 
 6.  Veritabanının konumuna işaret etmek için bağlantı dizesini değiştirin. Değerini değiştirme `Data Source` veritabanı konumunu gösterecek şekilde.
 
-#### <a name="to-create-a-microsoft-excel-data-source"></a>Microsoft Excel veri kaynağı oluşturmak için
+### <a name="to-create-a-microsoft-excel-data-source"></a>Microsoft Excel veri kaynağı oluşturmak için
 
 1.  Adlı bir Microsoft Excel elektronik tablosu oluşturma `data.xlsx`.
 
@@ -217,7 +213,7 @@ Son app.config dosyası şuna benzer görünmelidir:
 
 6.  Elektronik Tablo konumuna işaret etmek için bağlantı dizesini değiştirin. Değerini değiştirme `dbq` elektronik konumunu gösterecek şekilde.
 
-#### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>App.config veri kaynaklarını kullanma birim testi oluşturmak için
+### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>App.config veri kaynaklarını kullanma birim testi oluşturmak için
 
 1.  Birim testi için test projesi ekleyin.
 

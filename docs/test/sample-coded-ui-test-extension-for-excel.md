@@ -1,11 +1,7 @@
 ---
 title: "Excel için kodlanmış UI testi uzantısı örneği | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - coded UI tests, extensions for Excel
@@ -14,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a446fbf087441be9e02c54314d05845ce759e47b
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 7102a5810ceb1c04becce088325852d4baaec747
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Excel için Kodlanmış UI Testi Uzantısı Örneği
 Örnek uzantısı bileşeninin çalışan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kodlanmış UI testi işlemi ve biraz hiyerarşik `ExtensionPackage` temel sınıfı. `TechnologyManager`, `ActionFilter`, Ve `PropertyProvider` sınıfları sonraki düzeyi, en üst düzeydeki denetim öğeleri ile.

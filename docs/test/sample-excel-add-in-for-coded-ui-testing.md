@@ -1,11 +1,7 @@
 ---
 title: "Örnek Excel için kodlanmış UI testi eklentisi | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - coded UI tests, Excel Add-in sample
@@ -14,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0842ecffff4624e4b3cd7c88fa9231ff71c364e6
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: a81fd5d3d10c15d58671e7e65fae2259824afbe4
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Kodlanmış UI Testi için Excel Eklenti Örneği
 Bu örnek eklenti [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] özellikle kaydedilmiş ve Visual Studio kuruluş içinde çalıştırılan kodlanmış UI testleri Excel, çalışma sayfaları destekleyecek şekilde tasarlanmıştır. Eklenti Office için Visual Studio Araçları kullanılarak oluşturulur.

@@ -1,7 +1,8 @@
 ---
-title: "Visual Studio kullanarak hata ayıklama öğrenin | Microsoft Docs"
-ms.custom: H1HackMay2017
-ms.date: 10/11/2017
+title: "Hata ayıklama - Visual Studio öğrenin | Microsoft Docs"
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
+ms.custom: mvc
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: e0686a4138fc2489c8a63b207e98cf7780477782
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>Visual Studio kullanarak hata ayıklama öğrenin
 
@@ -34,6 +35,15 @@ Ya da boyunca hata ayıklayıcı özelliklerini görmek için okuyabilirsiniz ve
 |  ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin")  |    [Bir video izlemek](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) hata ayıklamayı benzer adımları gösterir. |
 
 Tanıtım uygulamasını C# olsa da, özellikleri, C++, Visual Basic, JavaScript ve (belirtilenler dışında) Visual Studio tarafından desteklenen diğer diller için geçerlidir.
+
+Bu öğreticide şunları yapacaksınız:
+
+> [!div class="checklist"]
+> * Hata ayıklayıcı başlatın ve kesme noktası isabet.
+> * Hata ayıklayıcı kodda adım adım komutlarını öğrenin
+> * Veri ipuçları ve hata ayıklayıcı windows değişkenler inceleyin.
+> * Çağrı yığını inceleyin
+> * Özel durum Yardımcısını kullanma
 
 ## <a name="start-the-debugger"></a>Hata ayıklayıcı başlayın!
 
@@ -82,11 +92,11 @@ Hata ayıklamak için uygulamanızı hata ayıklayıcısı ekli uygulama işlemi
 
 ## <a name="restart-your-app-quickly"></a>Uygulamanızı hızlı bir şekilde yeniden başlatın
 
-1. Tıklatın **yeniden** ![yeniden uygulama](../debugger/media/dbg-tour-restart.png "RestartApp") hata ayıklama araç çubuğunda düğmesini (Ctrl + Shift + F5).
+Tıklatın **yeniden** ![yeniden uygulama](../debugger/media/dbg-tour-restart.png "RestartApp") hata ayıklama araç çubuğunda düğmesini (Ctrl + Shift + F5).
 
-    Bastığınızda **yeniden**, uygulama durdurup hata ayıklayıcı karşı zamandan tasarruf sağlar. Hata ayıklayıcı kodu yürüterek isabet ilk kesme noktasındaki duraklatır.
+Bastığınızda **yeniden**, uygulama durdurup hata ayıklayıcı karşı zamandan tasarruf sağlar. Hata ayıklayıcı kodu yürüterek isabet ilk kesme noktasındaki duraklatır.
 
-    Hata ayıklayıcı yeniden de, ayarlayabileceğiniz kesme noktasında durur `MainWindow` Oluşturucusu.
+Hata ayıklayıcı yeniden de, ayarlayabileceğiniz kesme noktasında durur `MainWindow` Oluşturucusu.
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Kod adım komutlarını kullanarak hata ayıklayıcısında gidin
 
@@ -148,20 +158,20 @@ Almak için en iyi yolu olduğundan çoğunlukla, klavye kısayollarını burada
 
 ## <a name="examine-the-call-stack"></a>Çağrı yığını inceleyin
 
-- İçinde duraklatıldı sırada `Update` yöntemi tıklatın **çağrı yığını** , varsayılan alt sağ bölmede açık olan penceresinin.
+İçinde duraklatıldı sırada `Update` yöntemi tıklatın **çağrı yığını** , varsayılan alt sağ bölmede açık olan penceresinin.
 
-     ![Çağrı yığınını incelemek](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+![Çağrı yığınını incelemek](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
 
-    **Çağrı yığını** penceresi içinde yöntemleri ve işlevleri denir sipariş gösterir. Üst çizgi geçerli işlevi gösterir ( `Update` turu uygulama yönteminde). İkinci satır gösterir `Update` çağırıldığı `Path.set` özelliği ve benzeri.
+**Çağrı yığını** penceresi içinde yöntemleri ve işlevleri denir sipariş gösterir. Üst çizgi geçerli işlevi gösterir ( `Update` turu uygulama yönteminde). İkinci satır gösterir `Update` çağırıldığı `Path.set` özelliği ve benzeri.
 
-    >  [!NOTE]
-    > **Çağrı yığını** penceresi benzer hata ayıklama perspektife Eclipse gibi bazı IDE içinde.
+>  [!NOTE]
+> **Çağrı yığını** penceresi benzer hata ayıklama perspektife Eclipse gibi bazı IDE içinde.
 
-    Çağrı yığınını incelemek ve bir uygulamanın yürütme akışını anlamak için iyi bir yoludur.
+Çağrı yığınını incelemek ve bir uygulamanın yürütme akışını anlamak için iyi bir yoludur.
 
-    Bu kaynak koduna bakmanız gitmek için kod satırı çift tıklatın ve hata ayıklayıcı tarafından denetlenmekte olan geçerli kapsam, ayrıca değiştirir. Bu eylem, hata ayıklayıcı ilerleyin değil.
+Bu kaynak koduna bakmanız gitmek için kod satırı çift tıklatın ve hata ayıklayıcı tarafından denetlenmekte olan geçerli kapsam, ayrıca değiştirir. Bu eylem, hata ayıklayıcı ilerleyin değil.
 
-    Sağ menülerden de kullanabilirsiniz **çağrı yığını** başka şeyler için penceresi. Örneğin, belirtilen işlevlerini kesme noktaları ekleme, kullanarak hata ayıklayıcı ilerletmek **çalıştırmak için imleç**ve kaynak kodunu incelemek gidin. Daha fazla bilgi için bkz: [nasıl yapılır: çağrı yığını inceleyin](../debugger/how-to-use-the-call-stack-window.md).
+Sağ menülerden de kullanabilirsiniz **çağrı yığını** başka şeyler için penceresi. Örneğin, belirtilen işlevlerini kesme noktaları ekleme, kullanarak hata ayıklayıcı ilerletmek **çalıştırmak için imleç**ve kaynak kodunu incelemek gidin. Daha fazla bilgi için bkz: [nasıl yapılır: çağrı yığını inceleyin](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="step-out"></a>Dışarı Adım
 
@@ -283,7 +293,9 @@ Yapılır olduğunu düşünelim inceleniyor `Update` yöntemi Data.cs ve istedi
 
 Hata ayıklayıcı özellikleri hakkında daha fazla bilgi için bkz: [hata ayıklayıcı ipuçları ve püf noktaları](../debugger/debugger-tips-and-tricks.md).
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="next-steps"></a>Sonraki adımlar
 
-[Visual Studio'da hata ayıklama](../debugger/index.md)  
-[Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)
+Bu öğreticide, adım kodlarda, hata ayıklayıcı başlatmak ve değişkenleri incelemek üzere nasıl öğrendiniz. Daha fazla bilgi için bağlantılar ile birlikte hata ayıklama özellikleri en üst düzey bir görünüm elde isteyebilirsiniz.
+
+> [!div class="nextstepaction"]
+> [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)

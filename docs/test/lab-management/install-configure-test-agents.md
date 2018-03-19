@@ -1,7 +1,7 @@
 ---
-title: "Yükleme ve Visual Studio'da test aracılarını yapılandırma | Microsoft Docs"
+title: "Test aracıları yükleyin ve Visual Studio için test denetleyicileri | Microsoft Docs"
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - configure test agents, test lab
@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e29676ec67bc3fd22313debe70ba8dbcd7fd76
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4eaba4be128042776382d63d1b0198a48cecef94
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="install-and-configure-test-agents"></a>Yükleme ve test aracılarını yapılandırma
+# <a name="install-test-agents-and-test-controllers"></a>Test denetleyicileri ve test aracılarını yükleme
 
 Visual Studio ve Visual Studio Team Services (VSTS) veya Team Foundation Server (TFS) kullanan test senaryoları için bir test denetleyicisi gerekmez. Visual Studio için aracıları VSTS veya TFS ile iletişim kurarak düzenleme işleyin. Senaryo yapı için sürekli testleri çalıştırın ve VSTS veya TFS iş akışlarında yayın olabilir.
 
@@ -32,7 +32,9 @@ Kullanmak daha iyi olup olmadığını de düşünebilirsiniz [oluşturabilir ve
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Test denetleyicisi ve test aracılarını yükleme
 
-Aracılar için Visual Studio 2017 ' indirebilirsiniz [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Ara *aracılar için Visual Studio 2017* seçin *Aracısı* veya *denetleyicisi*. Visual Studio 2015 ve Visual Studio 2013 için aracıları yükleyebilirsiniz [eski yüklemeleri](https://www.visualstudio.com/vs/older-downloads/) sayfası.
+Aracılar için Visual Studio 2017 ' indirebilirsiniz [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Sayfanın alt kısmına kaydırın ve Ara *aracılar için Visual Studio 2017*. Şunlardan birini seçin *Aracısı* veya *denetleyicisi*ve ardından *karşıdan*. Test aracısı veya denetleyicisi yüklemek için karşıdan yüklenen yürütülebilir dosyayı çalıştırmak.
+
+Visual Studio 2015 ve Visual Studio 2013 için aracıları yükleyebilirsiniz [eski yüklemeleri](https://www.visualstudio.com/vs/older-downloads/) sayfası.
 
 Bu yükleyiciler, sanal makinelerde kolay yükleme için ISO dosyaları olarak kullanılabilir.
 
@@ -59,10 +61,6 @@ Aşağıdaki tabloda, Visual Studio 2013 için aracıları ve alternatifleri Tea
 | Visual Studio 2013 için aracıları tarafından desteklenen senaryolar | TFS ve VSTS alternatif |
 | --- | --- |
 | Visual Studio'da derleme, dağıtma, Test iş akışı | Kullanıcılar bir [yapı tanımı](/vsts/build-release/) (XAML derleme değil) için derleme, dağıtma ve testi senaryolarında TFS'de. |
-| (Performans testi) sınama yük kullanarak uzak makineleri şirket içi | Kullanım Test denetleyicisi ve Test aracıları 2013 güncelleştirme 5 yük testleri şirket içi çalıştırmak için. Daha fazla bilgi için bkz: [bir yük testinde test denetleyicisi ve test aracıları kullanarak](https://msdn.microsoft.com/library/ff400223.aspx). |
+| (Performans testi) sınama yük kullanarak uzak makineleri şirket içi | Kullanım Test denetleyicisi ve Test aracıları 2013 güncelleştirme 5 yük testleri şirket içi çalıştırmak için. |
 | Otomatikleştirilmiş testleri Microsoft Test laboratuvarı ortamı kullanarak yöneticisinden, uzaktan yürütme | Şu anda bu senaryo için hiçbir seçenek yoktur. İşlevsel Testleri Çalıştır görev derlemede kullanma ve yayın tanımları (XAML derlemede değil) öneririz testleri uzaktan yürütün. |
 | Geliştiriciler Visual Studio uzaktan testleri çalıştırma | Artık desteklenmemektedir. |
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-* [Makineleri ayarlamanız ve tanılama bilgileri Topla](https://msdn.microsoft.com/library/dd286743%28v=vs.140%29.aspx)

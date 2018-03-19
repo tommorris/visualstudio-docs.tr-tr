@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio hata ayıklayıcısı kullanarak Visual C++ ile hata ayıklama | Microsoft Docs"
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ddf6aadc6b2debcb7423df589fb11739039c6476
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fce20f8c17b52b109b469bd439905e0edd66c9d3
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-with-c-using-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı kullanarak Visual C++ ile hata ayıklama
 
@@ -92,21 +92,21 @@ A *kesme noktası* Visual Studio, çalışan burada askıya gösteren bir işare
     Kesme noktası ayarladığınız hata ayıklayıcı duraklatır. Hata ayıklayıcı ve uygulama yürütme burada duraklatıldı deyimi sarı okla belirtilir. İçeren satırı `doWork` işlev çağrısı henüz çalıştırılmadı.
 
     > [!TIP]
-    > Döngü veya özyineleme bir kesme noktası varsa veya çok sık, adım adım kesme noktalarını varsa bir [koşullu kesme noktası](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) yalnızca belirli koşullar karşılandığında, kodunuzu askıya emin olmak için. Bu zamandan tasarruf sağlar ve ayrıca, yeniden sabit ayıklanır kolaylaştırabilir.
+    > Döngü veya özyineleme bir kesme noktası varsa veya sık, adım adım birçok kesme noktaları varsa bir [koşullu kesme noktası](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) yalnızca belirli koşullar karşılandığında, kodunuzu askıya emin olmak için. Koşullu kesme noktası zamandan tasarruf sağlar ve ayrıca, yeniden sabit ayıklanır kolaylaştırabilir.
 
     C++'ta bellekle ilgili hataları ayıklamak üzere çalışırken de kesme noktaları adres değerleri (NULL arayın) incelemek için kullanabilirsiniz ve başvuru sayısı. 
 
 ## <a name="navigate-code"></a>Kod gidin
 
-Devam etmek için hata ayıklayıcı istemek üzere farklı komutlar vardır. Visual Studio 2017 içinde yeni bir yararlı kod Gezinti komutu göstereceğiz.
+Devam etmek için hata ayıklayıcı istemek üzere farklı komutlar vardır. Visual Studio 2017 içinde yeni bir yararlı kod Gezinti komutu gösteriyoruz.
 
-- Duraklatılmış kesme noktasında olsa da, deyimi vurgulu `c1.push_back(20)` yeşil kadar **Çalıştır'ı tıklatın** düğmesini ![çalıştırmak için tıklatın](../debugger/media/dbg-tour-run-to-click.png "RunToClick") görünür ve tuşuna basın **Çalıştır'ı tıklatın** düğmesi.
+Duraklatılmış kesme noktasında olsa da, deyimi vurgulu `c1.push_back(20)` yeşil kadar **Çalıştır'ı tıklatın** düğmesini ![çalıştırmak için tıklatın](../debugger/media/dbg-tour-run-to-click.png "RunToClick") görünür ve tuşuna basın **Çalıştır'ı tıklatın** düğmesi.
 
-    ![Çalıştır'ı tıklatın](../debugger/media/dbg-qs-run-to-click.png "Çalıştır'ı tıklatın")
+![Çalıştır'ı tıklatın](../debugger/media/dbg-qs-run-to-click.png "Çalıştır'ı tıklatın")
 
-    Uygulama yürütülmeye çağırma `doWork`ve düğmesini tıklattığınız kod satırında duraklatır.
+Uygulama yürütülmeye çağırma `doWork`ve düğmesini tıklattığınız kod satırında duraklatır.
 
-    Ortak klavye komutları için kullanılan kod aracılığıyla adım dahil **F10** ve **F11**. Daha fazla ayrıntılı yönergeler için bkz: [Başlangıç Kılavuzu](../debugger/getting-started-with-the-debugger.md).
+Ortak klavye komutları için kullanılan kod aracılığıyla adım dahil **F10** ve **F11**. Daha fazla ayrıntılı yönergeler için bkz: [Başlangıç Kılavuzu](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Bir datatip değişkenlerde inceleyin.
 
@@ -136,9 +136,7 @@ Düzenle ve devam et kullanma ve özellik kısıtlamaları hakkında daha fazla 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Hata ayıklayıcı hakkında daha fazla bilgi için bkz: [hata ayıklayıcısını başlatma ve kod gidin](../debugger/getting-started-with-the-debugger.md).
-- Kesme noktaları hakkında daha fazla bilgi için bkz: [kesme noktalarını kullanma](../debugger/using-breakpoints.md).
+Bu öğreticide, adım kodlarda, hata ayıklayıcı başlatmak ve değişkenleri incelemek üzere nasıl öğrendiniz. Daha fazla bilgi için bağlantılar ile birlikte hata ayıklama özellikleri en üst düzey bir görünüm elde isteyebilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da hata ayıklama](../debugger/index.md)  
- [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)

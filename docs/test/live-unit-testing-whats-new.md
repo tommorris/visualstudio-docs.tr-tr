@@ -1,7 +1,7 @@
 ---
 title: Dinamik birim testi yenilikler | Microsoft Docs
 ms.date: 10-11-2017
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
@@ -9,12 +9,13 @@ helpviewer_keywords:
 - Live Unit Testing What's New
 author: rpetrusha
 ms.author: ronpet
-ms.workload: dotnet
-ms.openlocfilehash: 8ccfeec23d0fbe6edd186f63e890fbfc0e75aeef
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- dotnet
+ms.openlocfilehash: 5f979970b926e3a1a3d0ef7aee53f1e71e7fc0dc
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Dinamik birim testi yenilikler nelerdir?
 
@@ -57,9 +58,9 @@ Başlıca Bu eklemeleri ek olarak birim testi Canlı aşağıdaki geliştirmeler
 - Menü çubuğunda, Test/Canlı birim testi altında birkaç ek menü öğelerini eklenmiştir. **Temiz sıfırlama** kalıcı veri siler ve yeniden oluşturur. **Seçenek** Araçlar/Seçenekler/Canlı birim test/genel atlar.
   
 - Aşağıdaki öznitelikler artık canlı birim testi hedeflenen test yöntemleri dışlamak istediğiniz kaynak kodunda belirtmek için de kullanabilirsiniz:
-   - XUnit için:`[Trait("Category", "SkipWhenLiveUnitTesting")]`
-   - NUnit için:`[Category("SkipWhenLiveUnitTesting")]`
-   - Mstest'i için:`[TestCategory("SkipWhenLiveUnitTesting")]`
+   - XUnit için: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+   - NUnit için: `[Category("SkipWhenLiveUnitTesting")]`
+   - Mstest'i için: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 [Dinamik birim testi Tanıtımı](live-unit-testing-intro.md)   

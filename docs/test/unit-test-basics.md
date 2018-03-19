@@ -1,11 +1,7 @@
 ---
-title: Birim testi temelleri | Microsoft Docs
-ms.custom: 
+title: Visual Studio'da birim testi temelleri | Microsoft Docs
 ms.date: 2016-01-07
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -14,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a96315d7610e665ed32b669bea45f9318cffdb
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 939cbaa6cd99cbcc5f011a873f46c4e873c22543
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="unit-test-basics"></a>Birim testi temelleri
 
@@ -113,7 +109,7 @@ Genellikle birim testi projesi ve birim testi saplamalar kodunuzdan oluşturmak 
 3.  Microsoft birim test çerçevelerini birini kullanmayı da tercih **birim testi projesi** proje şablonları listesinden. Aksi takdirde, kullanmak istediğiniz test çerçevesi biriminin proje şablonu seçin. Test etmek için `Accounts` proje bizim örnek, proje adı `AccountsTests`.
 
     > [!WARNING]
-    >  Tüm üçüncü taraf ve açık kaynak birim test çerçevelerini Visual Studio Proje şablonu sağlar. Proje oluşturma hakkında daha fazla bilgi için framework belge başvurun.
+    > Tüm üçüncü taraf ve açık kaynak birim test çerçevelerini Visual Studio Proje şablonu sağlar. Proje oluşturma hakkında daha fazla bilgi için framework belge başvurun.
 
 4.  Birim testi projesi içinde örneğimizde hesapları projeye test altındaki kod projesine bir başvuru ekleyin.
 

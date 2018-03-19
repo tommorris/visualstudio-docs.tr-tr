@@ -1,7 +1,7 @@
 ---
-title: "Kodlanmış UI testinin anatomisi | Microsoft Docs"
+title: "Visual Studio'da kodlanmış UI testinin anatomisi | Microsoft Docs"
 ms.date: 11/04/2016
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - coded UI tests
@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 56de827abfc42f400be82763c046cdfc93054f2b
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 71e513978eb8d84ef2b8ac5ebea4105382808222
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Kodlanmış UI testinin anatomisi
 
@@ -266,8 +266,18 @@ public void MyTestCleanup()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls> <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls> <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName> <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute> <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)
-[kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md)
-[en iyi uygulamalar için kodlanmış UI testleri](../test/best-practices-for-coded-ui-tests.md)
-[test bir Birden çok UI eşlemesi bulunan büyük uygulamaları](../test/testing-a-large-application-with-multiple-ui-maps.md)
-[desteklenen yapılandırmalar ve platformlar kodlanmış UI testleri ve eylem kayıtları için](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>
+- <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName>
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName>
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
+- [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)
+- [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md)
+- [Kodlanmış UI Testleri için En İyi Yöntemler](../test/best-practices-for-coded-ui-tests.md)
+- [Birden Çok UI Eşlemesi Bulunan Büyük Uygulamaları Sınama](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

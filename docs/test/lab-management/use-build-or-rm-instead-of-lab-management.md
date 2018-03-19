@@ -1,7 +1,7 @@
 ---
 title: "Otomatikleştirilmiş test Visual Studio'da derleme veya yayın yönetimi kullanmak | Microsoft Docs"
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - automated testing, lab management, test lab
@@ -10,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b12bffb6f2e5df0209fd3dfe3ea5fd005897d58d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 5596dbbe65dc57dcb1862b74ed6379d1e2c080cf
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Derleme ve sürüm Yönetimi yerine Laboratuvar Yönetimi otomatikleştirilmiş test için kullanın.
 
@@ -43,7 +43,7 @@ Bu senaryo için derleme veya yayın Yönetimi kullanmanın avantajları bazıla
 
 ## <a name="self-service-management-of-scvmm-environments"></a>SCVMM ortamları Self Servis Yönetimi
 
-[Laboratuvar Merkezi Microsoft Test Yöneticisi'nde](https://msdn.microsoft.com/library/dd997438.aspx) yanı sıra bir ortam şablonları kitaplığı yönetme kullanarak isteğe bağlı üzerinde ortamları sağlama yeteneği destekleyen bir [SCVMM sunucusu](/system-center/vmm/overview?view=sc-vmm-1801).
+[Test Center Microsoft Test Yöneticisi'nde](/vsts/manual-test/mtm/guidance-mtm-usage) yanı sıra bir ortam şablonları kitaplığı yönetme kullanarak isteğe bağlı üzerinde ortamları sağlama yeteneği destekleyen bir [SCVMM sunucusu](/system-center/vmm/overview?view=sc-vmm-1801).
 
 Self Servis sağlama özelliklerini Laboratuvar Merkezi iki ayrı amacı vardır:
 

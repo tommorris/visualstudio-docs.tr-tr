@@ -1,18 +1,18 @@
 ---
-title: "Birim testleri kullanarak Visual Studio'da yapılandırma bir *.runsettings* dosya | Microsoft Docs"
+title: "Visual Studio'da .runsettings dosyasını ile birim testlerini yapılandırma | Microsoft Docs"
 ms.date: 02/28/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 94bcd0bc473a87246feb3b5e790ed060b615b4be
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Kullanarak birim testlerini yapılandırma bir *.runsettings* dosyası
 
@@ -57,7 +57,7 @@ Aşağıdadır tipik bir *.runsettings* dosya. Her değerin bir varsayılanı ol
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
-  
+
      <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
      <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
      <TestSessionTimeout>10000</TestSessionTimeout>
@@ -147,7 +147,7 @@ Kod kapsamı veri toplayıcısı uygulama kodu bölümlerinin testte uygulandı�
 
 Video veri toplayıcı testlerini çalıştırdığınızda, kaydı ekran yakalar. Bu kayıt, UI testleri sorun giderme için yararlıdır. Video veri toplayıcı sağlanmıştır **Visual Studio 2017 sürüm 15,5** ve daha sonra.
 
-Başka herhangi bir tür tanılama verisi bağdaştırıcısını özelleştirmek için test ayarları dosyası kullanmanız gerekir. Daha fazla bilgi için bkz: [Visual Studio testleri için Test ayarlarını belirtme](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).
+Başka herhangi bir tür tanılama verisi bağdaştırıcısını özelleştirmek için test ayarları dosyası kullanmanız gerekir.
 
 ### <a name="testrunparameters"></a>TestRunParameters
 
@@ -181,4 +181,4 @@ Bu ayarları sahip test yöntemleri çalıştıran test bağdaştırıcısı bel
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod Kapsamı Çözümlemeyi Özelleştirme](../test/customizing-code-coverage-analysis.md)
+- [Kod Kapsamı Çözümlemeyi Özelleştirme](../test/customizing-code-coverage-analysis.md)

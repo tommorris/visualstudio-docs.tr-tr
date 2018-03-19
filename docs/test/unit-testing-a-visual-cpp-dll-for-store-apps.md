@@ -1,22 +1,18 @@
 ---
-title: "UWP uygulamalar için Visual C++ DLL test etme | Microsoft Docs"
-ms.custom: 
+title: "Visual C++ DLL UWP uygulamalar için Visual Studio'da test etme | Microsoft Docs"
 ms.date: 02/15/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: eeece55fa36a7fa4077a814142698288b395c01b
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: c92e8a1b362bf6593897de526ef1791603292a29
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL test etme
 
@@ -186,7 +182,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
 1.  Yeni bir test ekleyin:
 
-    ```
+    ```cpp
     TEST_METHOD(RangeTest)
     {
         CRooterLib rooter;
@@ -198,13 +194,12 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
             Assert::AreEqual(expected, actual, tolerance);
         }
     };
-
     ```
 
     > [!TIP]
-    >  Başarılı olan testler değiştirmemenizi öneririz. Bunun yerine, yeni bir test ekleyin, kod test başarılı şekilde güncelleştirin ve sonra başka bir test ekleyin ve benzeri.
+    > Başarılı olan testler değiştirmemenizi öneririz. Bunun yerine, yeni bir test ekleyin, kod test başarılı şekilde güncelleştirin ve sonra başka bir test ekleyin ve benzeri.
     >
-    >  Kullanıcılarınızın kendi gereksinimleri değiştiğinde, artık doğru testleri devre dışı bırakın. Yeni testleri yazmak ve bunları bir seferde bir artımlı aynı şekilde çalışır duruma getirin.
+    > Kullanıcılarınızın kendi gereksinimleri değiştiğinde, artık doğru testleri devre dışı bırakın. Yeni testleri yazmak ve bunları bir seferde bir artımlı aynı şekilde çalışır duruma getirin.
 
 2.  Test Gezgini seçin **tümünü Çalıştır**.
 
@@ -213,7 +208,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
      ![RangeTest başarısız](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
-    >  Hemen yazdıktan sonra her bir test başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay hata önlemenize yardımcı olur.
+    > Hemen yazdıktan sonra her bir test başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay hata önlemenize yardımcı olur.
 
 4.  Yeni test sağlayacak şekilde test altındaki kodun geliştirin. Aşağıdakileri ekleyin **RooterLib.cpp**:
 
@@ -317,17 +312,16 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
 1.  Merkezi hesaplamadaki basitleştirmek `SquareRoot` işlevi:
 
-    ```
+    ```csharp
     // old code
     //result = result - (result*result - v)/(2*result);
     // new code
     result = (result + v/result) / 2.0;
-
     ```
 
 2.  Seçin **tümünü Çalıştır** test işlenmiş yöntemi ve bir gerileme sunulan henüz emin olun.
 
     > [!TIP]
-    >  İyi birim testleri kararlı bir dizi kodu değiştirdiğinizde, hatalar sunulmuştur değil, güven verir.
+    > İyi birim testleri kararlı bir dizi kodu değiştirdiğinizde, hatalar sunulmuştur değil, güven verir.
     >
-    >  Diğer değişiklikler ayrı yeniden düzenleme tutun.
+    > Diğer değişiklikler ayrı yeniden düzenleme tutun.

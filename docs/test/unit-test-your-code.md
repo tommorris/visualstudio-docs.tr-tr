@@ -1,7 +1,7 @@
 ---
 title: Birim testi Visual Studio'da | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio, unit tests
@@ -12,11 +12,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 019f99478c7cd8159ee65ebbfcbc0b9344ca3a0a
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: bb9ec1751c6c2c365528b678f7d209bb730495bb
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="unit-test-your-code"></a>Birim testi kodunuz
 
@@ -60,4 +60,3 @@ Birim testlerini anlamaya ve oluşturmaya yardımcı olmaları için aşağıdak
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Kod Kalitesini Geliştirme](/visualstudio/test/improve-code-quality)
-- [Visual Studio birim sınama Forumu](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsunittest)

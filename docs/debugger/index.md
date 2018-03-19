@@ -4,11 +4,11 @@ title: "Visual Studio uygulamalarınızda hata ayıklama | Microsoft Docs"
 description: "Bilgi nasıl uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde hata ayıklamak için Visual Studio 2017 kullanın."
 ms.topic: landing-page
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 6c81a60b706a02a66fce176613fce1e0dae2496c
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: b2b168c1a91011abf1d3c3c8277fdaacc8fff1d8
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio'da Hata Ayıklama
 
@@ -52,24 +52,6 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Hata ayıklayıcı koduyla gidin</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-        <li>
         <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
         <div class="cardSize">
             <div class="cardPadding">
@@ -106,7 +88,7 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/how-to-use-intellitrace-step-back">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -116,25 +98,25 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Çok iş parçacıklı uygulamalar hata ayıklama</h3>
+                        <h3>IntelliTrace anlık görüntüleri (Visual Studio Enterprise) görüntüleme</h3>
                     </div>
                 </div>
             </div>
         </div>
         </a>
     </li>
-        <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/intellitrace">
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debug-live-azure-applications">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>IntelliTrace (Visual Studio Enterprise) hakkında bilgi edinin</h3>
+                        <h3>Canlı Azure App Service uygulamalarda hata ayıklama</h3>
                     </div>
                 </div>
             </div>
@@ -153,6 +135,24 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
                     </div>
                     <div class="cardText">
                         <h3>Hata ayıklayıcı ipuçları ve püf noktaları</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_get-started.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Çok iş parçacıklı uygulamalar hata ayıklama</h3>
                     </div>
                 </div>
             </div>

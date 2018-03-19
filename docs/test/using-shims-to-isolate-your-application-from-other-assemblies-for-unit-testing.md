@@ -1,24 +1,20 @@
 ---
-title: "Uygulamanızı birim testi için diğer derlemelerden yalıtmak üzere dolgular kullanma | Microsoft Docs"
-ms.custom: 
+title: "Visual Studio'da Test birim için uygulamanızın yalıtmak üzere dolgular kullanma | Microsoft Docs"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e282fc834bddf961f11384db1ca0efd74db5e65e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: b2f096e7fafcebf5e30903590b569abfe564d9f9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Birim testi için uygulamanızı diğer derlemelerden yalıtmak üzere dolgular kullanma
+# <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Uygulamanızı birim testi için diğer derlemelerden yalıtmak üzere dolgular kullanma
 
 **Dolguya türleri** izin verecek şekilde Microsoft Fakes Framework kullanan iki teknolojilerden birine kolayca yalıtmak altında test ortamı'ndan bileşenleridir. Dolgular belirli yöntemler testinizi bir parçası olarak yazma koda çağrı yönlendir. Birçok yöntem farklı sonuçlar dış koşullar bağımlı döndürebilir ancak bir dolgu testinizi denetimi altındadır ve her çağrısında tutarlı sonuçlar döndürebilir. Bu testleri yazmak çok daha kolay hale getirir.
 

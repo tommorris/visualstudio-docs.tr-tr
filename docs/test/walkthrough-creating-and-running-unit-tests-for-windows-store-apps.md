@@ -1,11 +1,7 @@
 ---
 title: "Oluşturma ve Visual Studio UWP uygulamaları için birim testleri çalıştırma | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - unit tests, creating
@@ -17,11 +13,11 @@ manager: ghogen
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: bb69f8e8012fecef683f5b95bc4dd9aef7e26a3c
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: ec857cb2bf0aa8e5453180249ddeccf47236dcf1
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>İzlenecek yol: Oluşturma ve UWP uygulamaları için birim testleri çalıştırma
 
@@ -38,7 +34,7 @@ Aşağıdaki yordamlar oluşturmak, çalıştırmak ve bir UWP uygulaması için
 
      Yeni Proje iletişim kutusu görüntüler.
 
-2.  Şablonlar'ın altında birim testi oluşturma ve ilişkili Windows Evrensel birim test kitaplığının seçmek istediğiniz programlama dili seçin. Örneğin, tercih **Visual C#** , ardından **Windows Evrensel**ve ardından **birim testi kitaplığı (Evrensel Windows)**.
+2.  Şablonlar'ın altında birim testleri oluşturma ve ardından Kitaplık ilişkili Windows Evrensel birim test etmek istediğiniz programlama dili seçin. Örneğin, tercih **Visual C#** , ardından **Windows Evrensel**ve ardından **birim testi kitaplığı (Evrensel Windows)**.
 
 3.  (İsteğe bağlı) İçinde **adı** metin kutusuna, proje için kullanmak istediğiniz adı girin.
 
@@ -100,9 +96,9 @@ Kod Düzenleyicisi'nde, birim testi düzenleyebilir ve ekleme onaylar ve test i�
     > [!TIP]
     > Explorer'da listelenen bir veya daha fazla birim testleri seçebilir ve ardından sağ tıklatın ve seçin **seçili Testleri Çalıştır**.
     >
-    >  Ayrıca, seçebileceğiniz **seçili Testlerde Hata Ayıkla**, **açık Test**ve **özellikleri** seçeneği.
+    > Ayrıca, seçebileceğiniz **seçili Testlerde Hata Ayıkla**, **açık Test**ve **özellikleri** seçeneği.
     >
-    >  ![Birim testi Explorer &#45; UNI test bağlam menüsü](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![Birim testi Explorer &#45; UNI test bağlam menüsü](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
 
     Test çalışmasını birim. Tamamlandıktan sonra Test Gezgini geçen süre test durumu görüntüler ve kaynak için bir bağlantı sağlar.
 

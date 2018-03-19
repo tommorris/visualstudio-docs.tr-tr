@@ -1,37 +1,34 @@
 ---
-title: "Kod oluşturma, derleme ve adlandırma kuralları Microsoft Fakes | Microsoft Docs"
-ms.custom: 
+title: "Kod oluşturma, derleme ve adlandırma kuralları Microsoft Fakes Visual Studio için | Microsoft Docs"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 06fa4fba2d812d8d1628d42248bce60f231dd14c
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: f4990bd430f4a413bf3aafe3190656642b949d92
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes'te kod oluşturma, derleme ve adlandırma kuralları
 
-Bu konu, Fakes kodu oluşturma ve derleme seçenekleri ve sorunları açıklar ve oluşturulan Fakes türleri, üyeleri ve parametreleri için adlandırma kurallarını açıklar.
+Bu makalede, Fakes kodu oluşturma ve derleme seçenekleri ve konuları açıklanır ve oluşturulan Fakes türleri, üyeleri ve parametreleri için adlandırma kurallarını açıklar.
 
- **Gereksinimler**
+**Gereksinimler**
 
 -   Visual Studio Enterprise
 
-##  <a name="BKMK_Code_generation_and_compilation"></a> Kod oluşturma ve derleme
+## <a name="code-generation-and-compilation"></a>Kod oluşturma ve derleme
 
-###  <a name="BKMK_Configuring_code_generation_of_stubs"></a> Kod oluşturma yer tutucular olarak yapılandırma
- Saplama türlerini nesil .fakes dosya uzantılı bir XML dosyasında yapılandırılır. Fakes framework özel MSBuild görevleri aracılığıyla derleme işlemindeki tümleştirir ve bu dosyaların derleme zamanında algılar. Fakes kod oluşturucunun bir bütünleştirilmiş koda saplama türlerini derler ve projesine başvuru ekler.
+### <a name="configure-code-generation-of-stubs"></a>Kod oluşturma yer tutucular olarak yapılandırın
 
- Aşağıdaki örnek FileSystem.dll içinde tanımlanan saplama türleri gösterilmektedir:
+Saplama türlerini nesil .fakes dosya uzantılı bir XML dosyasında yapılandırılır. Fakes framework özel MSBuild görevleri aracılığıyla derleme işlemindeki tümleştirir ve bu dosyaların derleme zamanında algılar. Fakes kod oluşturucunun bir bütünleştirilmiş koda saplama türlerini derler ve projesine başvuru ekler.
+
+Aşağıdaki örnek FileSystem.dll içinde tanımlanan saplama türleri gösterilmektedir:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -39,10 +36,11 @@ Bu konu, Fakes kodu oluşturma ve derleme seçenekleri ve sorunları açıklar v
 </Fakes>
 ```
 
-###  <a name="BKMK_Type_filtering"></a> Tür filtreleme
- Filtreler .fakes dosyasında hangi tür tamamlanmamış kısıtlamak için ayarlanabilir. Sil, Ekle, Kaldır öğeleri seçili türlerinin bir listesini oluşturmak için StubGeneration öğesi altında sınırsız sayıda ekleyebilirsiniz.
+### <a name="type-filtering"></a>Tür filtreleme
 
- Örneğin, bu .fakes dosya türleri için sistem ve System.IO ad altında yer tutucular oluşturur, ancak "İşlemek" sistemde içeren herhangi bir türü dışlar:
+Filtreler .fakes dosyasında hangi tür tamamlanmamış kısıtlamak için ayarlanabilir. Sil, Ekle, Kaldır öğeleri seçili türlerinin bir listesini oluşturmak için StubGeneration öğesi altında sınırsız sayıda ekleyebilirsiniz.
+
+Örneğin, aşağıdaki .fakes dosya türleri için sistem ve System.IO ad altında yer tutucular oluşturur, ancak "İşlemek" sistemde içeren herhangi bir türü dışlar:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -58,7 +56,7 @@ Bu konu, Fakes kodu oluşturma ve derleme seçenekleri ve sorunları açıklar v
 </Fakes>
 ```
 
- Filtre dizeleri basit dilbilgisi eşleştirme nasıl yapılması gerektiğini tanımlamak için kullanın:
+Filtre dizeleri basit dilbilgisi eşleştirme nasıl yapılması gerektiğini tanımlamak için kullanın:
 
 -   Filtreleri, varsayılan olarak duyarsızdır; filtreler altdizgi eşleştirme gerçekleştirin:
 
@@ -80,8 +78,9 @@ Bu konu, Fakes kodu oluşturma ve derleme seçenekleri ve sorunları açıklar v
 
      `el;wo` "hello" ve "world" ile eşleşir
 
-###  <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> Stubbing somut sınıflar ve sanal yöntemler
- Varsayılan olarak, tüm korumalı olmayan sınıfları saplama türlerini üretilir. Soyut sınıflar .fakes yapılandırma dosyası için saplama türlerini kısıtlamaya mümkündür:
+### <a name="stub-concrete-classes-and-virtual-methods"></a>Saplama somut sınıflar ve sanal yöntemler
+
+Varsayılan olarak, tüm korumalı olmayan sınıfları saplama türlerini üretilir. Soyut sınıflar .fakes yapılandırma dosyası için saplama türlerini kısıtlamaya mümkündür:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -97,8 +96,9 @@ Bu konu, Fakes kodu oluşturma ve derleme seçenekleri ve sorunları açıklar v
 </Fakes>
 ```
 
-###  <a name="BKMK_Internal_types"></a> İç türleri
- Fakes Kod Oluşturucu dolgusu türleri ve oluşturulan Fakes derleme görünür türleri için saplama türlerini oluşturur. İç türleri shimmed derlemenin Fakes ve test derlemenizi görünür hale getirmek için ekleme <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> öznitelikleri için oluşturulan Fakes derleme ve test derlemesinin görünürlük sağlar shimmed bütünleştirilmiş kodu. Örnek buradadır:
+### <a name="internal-types"></a>İç türleri
+
+Fakes Kod Oluşturucu dolgusu türleri ve oluşturulan Fakes derleme görünür türleri için saplama türlerini oluşturur. İç türleri shimmed derlemenin Fakes ve test derlemenizi görünür hale getirmek için ekleme <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> öznitelikleri için oluşturulan Fakes derleme ve test derlemesinin görünürlük sağlar shimmed bütünleştirilmiş kodu. Örnek buradadır:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -122,7 +122,7 @@ Bu konu, Fakes kodu oluşturma ve derleme seçenekleri ve sorunları açıklar v
         PublicKey=<Test_assembly_public_key>)]
     ```
 
-Shimmed derleme güçlü olarak adlandırılmamış, Fakes framework kesinlikle otomatik olarak oluşturulan Fakes derleme oturum. Strong test derlemeyi imzalamak gerekir. Bkz: [oluşturma ve tanımlayıcı adlı derlemeler kullanma](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).
+Shimmed derleme güçlü olarak adlandırılmamış, Fakes framework kesinlikle otomatik olarak oluşturulan Fakes derleme oturum. Strong test derlemeyi imzalamak gerekir. Bkz: [tanımlayıcı adlı derlemeler](/dotnet/framework/app-domains/strong-named-assemblies).
 
 Oluşturulan tüm derlemeleri eklemek için bir başlangıç noktası olarak bu parçacığı kullanabilmeniz için imzalamak için aynı anahtar Fakes framework kullanan **InternalsVisibleTo** shimmed derleme kodunuzu fakes derlemeye özniteliği.
 
@@ -151,10 +151,11 @@ Daha sonra diğer ortak anahtarını kullanmak zorunda **.snk** InternalVisibleT
 
 Yukarıdaki değerleri örnekte `Alternate_public_key` ve `Test_assembly_public_key` aynı olabilir.
 
-###  <a name="BKMK_Optimizing_build_times"></a> Yapı kez en iyi duruma getirme
- Derleme Fakes derlemelerin, derleme zamanı önemli ölçüde artırabilir. Üçüncü taraf derlemeler ve Fakes derlemeleri .NET sistem derlemeler için ayrı bir merkezi projesi oluşturarak yapı süresini en aza indirebilirsiniz. Bu tür derlemeler nadiren makinenizde değiştiğinden, diğer projeler oluşturulan Fakes derlemelerde yeniden kullanabilirsiniz.
+### <a name="optimize-build-times"></a>Yapı kez en iyi duruma getirme
 
- Birim testi projelerini proje klasöründeki FakesAssemblies altına yerleştirilmiş derlenmiş Fakes derlemeler için bir başvuru ekleyin.
+Derleme Fakes derlemelerin, derleme zamanı önemli ölçüde artırabilir. Üçüncü taraf derlemeler ve Fakes derlemeleri .NET sistem derlemeler için ayrı bir merkezi projesi oluşturarak yapı süresini en aza indirebilirsiniz. Bu tür derlemeler nadiren makinenizde değiştiğinden, diğer projeler oluşturulan Fakes derlemelerde yeniden kullanabilirsiniz.
+
+Birim testi projelerini proje klasöründeki FakesAssemblies altına yerleştirilmiş derlenmiş Fakes derlemeler için bir başvuru ekleyin.
 
 1.  .NET çalışma zamanı sürümü test projelerinizi eşleşen yeni bir sınıf kitaplığı oluşturun. Şimdi Fakes.Prebuild çağırın. Class1.cs dosyası gerekli projeden kaldırın.
 
@@ -166,12 +167,13 @@ Yukarıdaki değerleri örnekte `Alternate_public_key` ve `Test_assembly_public_
 
     -   DLL Fakes çalışma zamanı için bir başvuru olduğundan emin olun:
 
-         C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll
+         *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
     -   İçin oluşturduğunuz her derlemesi için Fakes, projenizin Fakes.Prebuild\FakesAssemblies klasörüne karşılık gelen DLL dosyasının bir başvuru ekleyin.
 
-###  <a name="BKMK_Avoiding_assembly_name_clashing"></a> Derleme adı çakışan önleme
- Bir ekip ortamında, tüm yapı çıkışları tek bir dizin birleştirilir. Birden çok proje Fakes kullanırsanız, farklı sürüm Fakes derlemelerden birbirlerini geçersiz olabilir. Örneğin, .NET Framework 2.0 mscorlib.dll TestProject1 fakes ve her ikisi de bir mscorlib verecek TestProject2 mscorlib.dll için .NET Framework 4 fakes. Fakes.dll Fakes derleme.
+### <a name="avoid-assembly-name-clashing"></a>Derleme adı çakışan kaçının
+
+Bir ekip ortamında, tüm yapı çıkışları tek bir dizin birleştirilir. Birden çok proje Fakes kullanırsanız, farklı sürümlerini Fakes derlemelerden birbirlerini geçersiz olabilir. Örneğin, .NET Framework 2.0 mscorlib.dll TestProject1 fakes ve her ikisi de bir mscorlib verecek TestProject2 mscorlib.dll için .NET Framework 4 fakes. Fakes.dll Fakes derleme.
 
  Bu sorunu önlemek için Fakes otomatik olarak tam sürüm Fakes derleme adları olmayan proje başvuruları için .fakes dosya eklenirken oluşturmanız gerekir. Fakes derleme adı oluşturduğunuzda sürümü tam Fakes derleme adının bir sürüm numarası katıştırır:
 
@@ -185,12 +187,12 @@ attribute of the Assembly element in the .fakes:
   <Assembly Name="MyAssembly" Version="1.2.3.4" />
   ...
 </Fakes>
-
 ```
 
-##  <a name="BKMK_Fakes_naming_conventions"></a> Adlandırma kuralları fakes
+## <a name="fakes-naming-conventions"></a>Adlandırma kuralları fakes
 
-###  <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Adlandırma kuralları Dolgu türü ve saplama yazın
+### <a name="shim-type-and-stub-type-naming-conventions"></a>Adlandırma kuralları Dolgu türü ve saplama yazın
+
  **Ad Alanları**
 
 -   . Fakes soneki ad alanına eklenir.
@@ -215,8 +217,9 @@ attribute of the Assembly element in the .fakes:
 
 -   İç içe geçmiş tür yapısı dolgusu türleri için kopyalanır.
 
-###  <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Adlandırma kuralları dolgusu temsilci özelliği veya saplama temsilci alan
- **Temel kurallar** adlandırma, boş bir ad başlatma alan için:
+### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>Adlandırma kuralları dolgusu temsilci özelliği veya saplama temsilci alan
+
+**Temel kurallar** adlandırma, boş bir ad başlatma alan için:
 
 -   Yöntem adı eklenir.
 
@@ -239,15 +242,12 @@ attribute of the Assembly element in the .fakes:
 |Örneğin: + işleci|`op_Add`|`AddOp`|
 |İçin bir **dönüştürme işleci**, dönüş türü eklenir.|`T op_Implicit`|`ImplicitOpT`|
 
- **Notlar**
+> [!NOTE]
+> - **Alıcılar ve ayarlayıcılar dizin oluşturucular,** özelliğine benzer şekilde işlenir. Bir dizin oluşturucu için varsayılan ad `Item`.
+> - **Parametre türü** adları dönüştürülen ve birleştirilmiş.
+> - **Dönüş türü** aşırı belirsizlik olmadıkça göz ardı edilir. Aşırı amiguity ise, dönüş türü adının sonuna eklenir.
 
--   **Alıcılar ve ayarlayıcılar dizin oluşturucular,** özelliğine benzer şekilde işlenir. Bir dizin oluşturucu için varsayılan ad `Item`.
-
--   **Parametre türü** adları dönüştürülen ve birleştirilmiş.
-
--   **Dönüş türü** aşırı belirsizlik olmadıkça göz ardı edilir. Bu durumda, dönüş türü adının sonuna eklenir
-
-###  <a name="BKMK_Parameter_type_naming_conventions"></a> Parametre türü adlandırma kuralları
+### <a name="parameter-type-naming-conventions"></a>Parametre türü adlandırma kuralları
 
 |Verilen|Eklenen dizedir...|
 |-----------|-------------------------|
@@ -262,17 +262,14 @@ attribute of the Assembly element in the .fakes:
 |A **genel yöntem bağımsız değişkeni** `!!i` yöntemi `M<MMethod>`|`Mi`|
 |A **iç içe türü**`N.T`|`N` , ardından eklenir `T`|
 
-###  <a name="BKMK_Recursive_rules"></a> Özyinelemeli kuralları
- Aşağıdaki kurallar uygulanan yinelemeli olarak şunlardır:
+### <a name="recursive-rules"></a>Özyinelemeli kuralları
+
+Aşağıdaki kurallar uygulanan yinelemeli olarak şunlardır:
 
 -   Fakes kullandığı için C# Fakes derlemeleri oluşturma için geçersiz bir C# belirteci oluşturur herhangi bir karakter kaçışlı "_" (alt çizgi).
 
 -   Sonuçta elde edilen bir ad bildiri türü herhangi bir üyenin ile çakışıyor numaralandırma düzeni 01 ile başlayan iki basamaklı sayaç ekleyerek kullanılır.
 
-##  <a name="BKMK_External_resources"></a> Dış Kaynaklar
-
-###  <a name="BKMK_Guidance"></a> Kılavuzu
- [Visual Studio 2012 - bölüm 2 ile sürekli teslimat için test etme: birim testi: iç test etme](http://go.microsoft.com/fwlink/?LinkID=255188)
-
 ## <a name="see-also"></a>Ayrıca bkz.
- [Microsoft Fakes ile Test Edilen Kodu Yalıtma](../test/isolating-code-under-test-with-microsoft-fakes.md)
+
+- [Microsoft Fakes ile Test Edilen Kodu Yalıtma](../test/isolating-code-under-test-with-microsoft-fakes.md)

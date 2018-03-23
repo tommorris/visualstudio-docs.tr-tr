@@ -1,24 +1,24 @@
 ---
-title: "Xamarin uygulamalarıyla uygulama yaşam döngüsü yönetimi (ALM) | Microsoft Docs"
-ms.custom: 
+title: Xamarin uygulamalarıyla uygulama yaşam döngüsü yönetimi (ALM) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
-caps.latest.revision: 
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+caps.latest.revision: ''
+author: conceptdev
+ms.author: crdun
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: e7ee514a3ca121b9259f1c1b5f54b49d58b0ac47
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f6eea5a99245249a244dbb7cd31e61799f7c0103
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Xamarin uygulamalarıyla uygulama yaşam döngüsü yönetimi (ALM)
 Xamarin Android, iOS ve C#, .NET ve Visual Studio kullanarak Windows hedefleme platformlar arası mobil uygulamalar oluşturmanıza olanak sağlar. Xamarin platformlarıyla yalnızca platforma özgü olmasını gerektiren küçük bir yüzdesi arasında paylaşılmak üzere kod büyük bir kısmı sağlar. Xamarin kendisi hakkında daha fazla bilgi için bkz: [Visual Studio ve Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
@@ -32,7 +32,7 @@ Xamarin Android, iOS ve C#, .NET ve Visual Studio kullanarak Windows hedefleme p
  Aşağıdaki tablolarda tanımlayan hangi Visual Studio ALM özellikleri iyi bir Xamarin projeniz iş beklediğiniz ve hangilerinin sınırlamaları vardır. Özellikleri hakkında ayrıntılı bilgi için bağlantılı belgelerine bakın.  
   
 ## <a name="agile-tools"></a>Çevik Araçlar  
- Başvuru bağlantısı:  **[iş](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (Visual Studio Team Services veya TFS Takım Gezgini her yerde dahil olmak üzere, kullanarak)  
+ Başvuru bağlantısı: **[iş](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (Visual Studio Team Services veya TFS Takım Gezgini her yerde dahil olmak üzere, kullanarak)  
   
  Genel Açıklama: tüm planlama ve izleme özellikleri proje türüne ve dilleri kodlama bağımsızdır.  
   

@@ -1,23 +1,23 @@
 ---
-title: "Xamarin ortamınızı doğrulayın | Microsoft Docs"
-ms.custom: 
+title: Xamarin ortamınızı doğrulayın | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 03b5723ca0cbc3e6b8864bd49d2301e0485ff451
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 28983dc88e4259fce783ee3e2d502d30ec0712d8
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="verify-your-xamarin-environment"></a>Xamarin ortamınızı doğrulayın
 Yükleyicileri tamamladıktan sonra (bkz [Kurulum ve yükleme](../cross-platform/setup-and-install.md)), her şeyi Xamarin geliştirme deneyimi için hazır olduğunu doğrulamak için birkaç dakikanızı ayırın.  
@@ -33,7 +33,7 @@ Yükleyicileri tamamladıktan sonra (bkz [Kurulum ve yükleme](../cross-platform
   
  Ardından Visual Studio kullanarak yeni bir Xamarin çözüm oluşturun. **Dosya > Yeni proje**, iletişim kutusunda genişletin **şablonları > Diğer diller > Visual C# > platformlar arası**seçin  **Boş uygulama (yerel taşınabilir)**, Tamam'ı tıklatın. Bu çözüm paylaşılan taşınabilir sınıf kitaplığı proje ve tek tek projeleri ile Android, iOS ve Windows için oluşturur:  
   
- ![Boş uygulama &#40;yeni proje oluşturma sonuçlarını; Yerel taşınabilir &#41; Şablon](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin doğrula 1")  
+ ![Boş uygulamadan yeni proje oluşturma sonuçlarını &#40;yerel taşınabilir&#41; şablonu](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin doğrula 1")  
   
 > [!NOTE]
 >  Şablonları olan değil, görürseniz [eksik Xamarin proje şablonu? Bu deneyin](#missing) bu sayfanın sonundaki.  

@@ -1,8 +1,9 @@
-# [Visual Studio abonelikleri](index.md) 
+# [Visual Studio abonelikleri](index.md)
 ## Abone Deneyimleri
 ### [Abone Portalı’nı Kullanma](using-the-subscriber-portal.md)
 #### [Perakende Abonelikleri Etkinleştirme](activate-store-subscriptions.md)
 #### [Oturum Açılıyor](signing-in.md)
+#### [Alternatif kimlikler](vs-alternate-identity.md)
 ##### [Diğer Adlar ile Oturum Açma](aliasing.md)
 #### [Aboneliklerinizi Yönetme](manage-vs-subscriptions.md)
 ### [Yazılım İndirme](subscriber-downloads.md)
@@ -14,9 +15,9 @@
 ### [Abone Avantajları](subscriber-benefits.md)
 ## Abone Avantajlarını Kullanma
 ### Araçlar
-#### [Visual Studio IDE ](vs-ide-benefit.md) 
+#### [Visual Studio IDE ](vs-ide-benefit.md)
 #### [Visual Studio Team Services](vs-vsts.md)
-#### [Azure Kredisi](vs-azure.md) 
+#### [Azure Kredisi](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft ](vs-parasoft.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
@@ -61,15 +62,17 @@
 #### [Süresi Dolan Abonelikler](handle-expired-license.md)
 #### [Kişisel E-posta ile Oturum Açan Aboneler](personal-email-sign-ins.md)
 ## Visual Studio Abonelikleri Alma
-### [Abonelikleri Karşılaştırma](compare-subscriptions.md)
+### [Abonelik Seçeneklerini Karşılaştırma](https://www.visualstudio.com/vs/pricing)
 ### Bulut Abonelikleri Satın Alma
 #### [Genel bakış](vscloud-overview.md)
-#### [İlk Satın Alım](vscloud-first-purchase.md)
-#### [Yenilemeler](vscloud-renewals.md)
-#### [Daha Fazla Satın Alma](vscloud-buy-more.md)
-#### [İptal Etme](vscloud-cancel.md)
+#### [Faturalandırma hakkında SSS](vscloud-billing-faq.md)
+#### [CSP’ler için satın alma](vscloud-csp.md)
+### Programlar üzerinden sunulan abonelikler
+#### [Microsoft İş Ortağı Ağı](program-mpn.md)
+#### [MPN için Abonelikleri Yönetme](manage-mpn-subscriptions.md)
+#### [Startup’lar için Microsoft](program-startups.md)
 ## Kaynaklar
 ### [Visual Studio Lisans Koşulları](vs-license-terms.md)
-### [Visual Studio Lisanslama Teknik İncelemesi](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
+### [Visual Studio Lisanslama Teknik İncelemesi](http://aka.ms/vslicensing)
 ### [Abonelik seçeneklerini ve fiyatlandırmalarını karşılaştırma](https://www.visualstudio.com/vs/pricing)
 ### [Visual Studio IDE özelliklerini karşılaştırma](https://www.visualstudio.com/vs/compare)

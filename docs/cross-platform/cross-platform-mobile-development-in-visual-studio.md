@@ -1,24 +1,24 @@
 ---
-title: "Visual Studio'da platformlar arası Mobil Geliştirme | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'da platformlar arası Mobil Geliştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 12/06/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
-caps.latest.revision: 
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+caps.latest.revision: ''
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ace464f11d16f1498022cb1a0673b294a6ec408b
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 855ded366433f6ab3193d1046d9d5047449bd204
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio'da platformlar arası Mobil Geliştirme
 
@@ -94,7 +94,7 @@ Xamarin ile kod ve hatta UI paylaşımı aynı çözümde, Android, iOS ve Windo
 
  Bu API'leri platformlar arası olduğundan, tüm üç platformlar yazma çoğu paylaşabilirsiniz. Bu, geliştirme ve Bakım maliyetlerinizi azaltır. Ayrıca, baştan başlatmaya gerek yoktur. Web uygulamalarının diğer türleri oluşturduysanız, değiştirme veya bunların herhangi bir şekilde yeniden tasarlamanız gerek kalmadan, bu dosyaları Cordova uygulamanız ile paylaşabilirsiniz.
 
- ![Çoklu &#45; cihaz karma uygulamalar](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
+ ![Çoklu&#45;aygıt karma uygulamalar](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
 
  Başlamak için Visual Studio 2015 yükler ve **HTML/JavaScript (Apache Cordova)** Kurulum sırasında özelliği. Visual Studio 2013 kullanıyorsanız, Apache Cordova uzantısı için Visual Studio Araçları yükleyin. Her iki durumda da, Cordova araçları ve birden çok platform uygulamanızı oluşturmak için gerekli olan tüm üçüncü taraf yazılımları otomatik olarak yükler.
 
@@ -111,7 +111,7 @@ Xamarin ile kod ve hatta UI paylaşımı aynı çözümde, Android, iOS ve Windo
 |[Android için Visual Studio öykünücüsü hakkında bilgi edinin](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a> Android ve Windows (C++) için bir uygulama oluşturun
- ![C &#43; &#43;kullanın; Android, iOS ve Windows için oluşturmak için](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
+ ![Kullanım C&#43; &#43; Android, iOS ve Windows için oluşturmak için](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
 
  İlk olarak, Visual Studio 2015 ve Visual C++ platformlar arası mobil geliştirme araçlarını yükleyin. Ardından, Android veya Windows hedefleyen bir uygulama için bir yerel etkinlik uygulaması oluşturabilirsiniz. İOS hedefleyen C++ şablonları henüz kullanılabilir değil. Ve ardından aralarındaki platformlar arası statik veya dinamik paylaşılan bir kitaplık kullanılarak kod paylaşmak istiyorsanız aynı çözüm içinde Android ve Windows hedefleyebilirsiniz.
 

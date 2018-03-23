@@ -1,5 +1,5 @@
 ---
-title: "Kural ayarları için Visual Studio EditorConfig kodlama .NET | Microsoft Docs"
+title: Kural ayarları için Visual Studio EditorConfig kodlama .NET | Microsoft Docs
 ms.date: 02/28/2018
 ms.topic: article
 dev_langs:
@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 53345fa849715a8065b0bf569977393033608caa
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e69d7e291d1b13a5205aa4798c78c6a4e337db50
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET EditorConfig kuralı ayarlarını kodlama
 
@@ -77,10 +77,11 @@ Aşağıdaki liste, izin verilen dil kuralı kuralları gösterir:
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
         - dotnet\_style\_explicit\_tuple_names
-        - dotnet\_style\_coalesce_expression
-        - dotnet\_style\_null_propagation
         - dotnet\_prefer\_inferred\_tuple_names
         - DotNet\_tercih\_çıkarımı yapılan\_anonim\_türü\_member_names
+    - ["Null" Tercihler denetleniyor](#null_checking)
+        - dotnet\_style\_coalesce_expression
+        - dotnet\_style\_null_propagation
 - C# kod stili ayarları
     - [Örtük ve açık türleri](#var)
         - csharp\_style\_var\_for\_built\_in_types
@@ -102,7 +103,7 @@ Aşağıdaki liste, izin verilen dil kuralı kuralları gösterir:
         - csharp\_prefer\_simple\_default_expression
         - csharp\_style\_deconstructed\_variable_declaration
         - CSharp\_stili\_düzeni\_yerel\_üzerinden\_anonymous_function
-    - ["Null" Tercihler denetleniyor](#null_checking)
+    - ["Null" Tercihler denetleniyor](#null_checking_csharp)
         - csharp\_style\_throw_expression
         - csharp\_style\_conditional\_delegate_call
     - [Kod bloğu tercihleri](#code_block)
@@ -380,7 +381,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 #### <a name="expression_level">İfade düzeyi tercihleri</a>
 
-Nesne başlatıcılar, koleksiyon başlatıcıları, açık tanımlama grubu adları, Üçlü işleçler karşı null birleştirmesi ifadeleri ve null-conditional işleci kullanımı dahil olmak üzere bu bölümü sorunu ifade düzeyi tercihlerinde stili kuralları.
+Stil nesne başlatıcılar, koleksiyon başlatıcıları, açık veya oluşturulursa tanımlama grubu adları, kullanımı dahil olmak üzere bu bölümü sorunu ifade düzeyi tercihlerinde, kurallar ve anonim türler sonuçlandı.
 
 Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli programlama dilleri, varsayılan değerleri ve ilk desteklenen Visual Studio sürümünü gösterir:
 
@@ -389,10 +390,8 @@ Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli programlama di
 | dotnet_style_object_initializer | IDE0017 | C# ve Visual Basic | true:suggestion | İlk sürüm |
 | dotnet_style_collection_initializer | IDE0028 | C# ve Visual Basic | true:suggestion | İlk sürüm |
 | dotnet_style_explicit_tuple_names | IDE0033 | C# ' ta 7.0 + ve Visual Basic 15 + | true:suggestion | İlk sürüm |
-| dotnet_style_coalesce_expression | IDE0029 | C# ve Visual Basic | true:suggestion | İlk sürüm |
-| dotnet_style_null_propagation | IDE0031 | C# ' ta 6.0 + ve Visual Basic 14 + | true:suggestion | İlk sürüm |
-| dotnet_prefer_inferred_tuple_names | IDE0037 | C# ' ta 7.1 + ve Visual Basic 15 + | true:suggestion | 15.6 |
-| dotnet_prefer_inferred_anonymous_type_member_names | IDE0037 | C# ve Visual Basic | true:suggestion | 15.6 |
+| dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# ' ta 7.1 + ve Visual Basic 15 + | true:suggestion | 15.6 |
+| dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# ve Visual Basic | true:suggestion | 15.6 |
 
 **dotnet\_style\_object_initializer**
 
@@ -475,6 +474,60 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
+**dotnet\_style\_prefer\_inferred\_tuple_names**
+
+- Bu kural ayarlandığında **doğru**, oluşturulursa tanımlama grubu öğe adları tercih eder.
+- Bu kural ayarlandığında **yanlış**, açık tanımlama grubu öğe adları tercih eder.
+
+Kod örnekleri:
+
+```csharp
+// dotnet_style_prefer_inferred_tuple_names = true
+var tuple = (age, name);
+
+// dotnet_style_prefer_inferred_tuple_names = false
+var tuple = (age: age, name: name);
+```
+
+**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
+
+- Bu kural ayarlandığında **doğru**, oluşturulursa anonim tür üye adlarının tercih eder.
+- Bu kural ayarlandığında **yanlış**, açık anonim tür üye adlarının tercih eder.
+
+Kod örnekleri:
+
+```csharp
+// dotnet_style_prefer_inferred_anonymous_type_member_names = true
+var anon = new { age, name };
+
+// dotnet_style_prefer_inferred_anonymous_type_member_names = false
+var anon = new { age = age, name = name };
+
+```
+
+Bu kurallar bir .editorconfig dosyasında şu şekilde görünebilir:
+
+```EditorConfig
+# CSharp and Visual Basic code style settings:
+[*.{cs,vb}]
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+```
+
+#### <a name="null_checking">Null denetimi tercihleri</a>
+
+Bu bölümdeki stil kurallarını null denetimi Tercihler ilgilendiren.
+
+Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli programlama dilleri, varsayılan değerleri ve ilk desteklenen Visual Studio sürümünü gösterir:
+
+| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürümü |
+| --------- | ------- | -------------------- | ----------------------| ---- |
+| dotnet_style_coalesce_expression | IDE0029 | C# ve Visual Basic | true:suggestion | İlk sürüm |
+| dotnet_style_null_propagation | IDE0031 | C# ' ta 6.0 + ve Visual Basic 14 + | true:suggestion | İlk sürüm |
+
 **dotnet\_style\_coalesce_expression**
 
 - Bu kural ayarlandığında **doğru**, null birleştirmesi ifadeleri denetimi Üçlü işleci için tercih ettiğiniz.
@@ -525,49 +578,13 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-**dotnet\_prefer\_inferred\_tuple_names**
-
-- Bu kural ayarlandığında **doğru**, oluşturulursa tanımlama grubu öğe adları tercih eder.
-- Bu kural ayarlandığında **yanlış**, açık tanımlama grubu öğe adları tercih eder.
-
-Kod örnekleri:
-
-```csharp
-// dotnet_style_prefer_inferred_tuple_names = true
-var tuple = (age, name);
-
-// dotnet_style_prefer_inferred_tuple_names = false
-var tuple = (age: age, name: name);
-```
-
-**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
-
-- Bu kural ayarlandığında **doğru**, oluşturulursa anonim tür üye adlarının tercih eder.
-- Bu kural ayarlandığında **yanlış**, açık anonim tür üye adlarının tercih eder.
-
-Kod örnekleri:
-
-```csharp
-// dotnet_style_prefer_inferred_anonymous_type_member_names = true
-var anon = new { age, name };
-
-// dotnet_style_prefer_inferred_anonymous_type_member_names = false
-var anon = new { age = age, name = name };
-
-```
-
 Bu kurallar bir .editorconfig dosyasında şu şekilde görünebilir:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
-dotnet_style_object_initializer = true:suggestion
-dotnet_style_collection_initializer = true:suggestion
-dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
-dotnet_style_prefer_inferred_tuple_names = true:suggestion
-dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 ```
 
 ### <a name="c-code-style-settings"></a>C# kod stili ayarları
@@ -960,7 +977,7 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
-#### <a name="null_checking">"Null" Tercihler denetleniyor</a>
+#### <a name="null_checking_csharp">"Null" Tercihler denetleniyor</a>
 
 Bu kurallar sorunu çevresinde sözdizimi stil `null` denetimi, kullanımı dahil olmak üzere `throw` ifadeler veya `throw` deyimleri ve null denetimi gerçekleştirmek veya koşullu birleştirmesi işlecini kullanın (`?.`) bir çağrılırken,[lambda ifadesi](/dotnet/csharp/lambda-expressions).
 
@@ -1545,7 +1562,7 @@ MyMethod(argument);
 
 **csharp_space_between_parentheses**
 
-Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:
+Bu kural aşağıdaki tablodan bir veya daha fazla değerleri kabul eder:
 
 | Değer | Açıklama |
 | ----- |:------------|
@@ -1553,14 +1570,16 @@ Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine a�
 | ifadeler | İfadelerin ayraçlar arasında yer alan |
 | type_casts | Tür atamaları parantezlerde arasında yer alan |
 
+Bu kuralı atla veya başka bir değer kullanmak `control_flow_statements`, `expressions`, veya `type_casts`, ayar uygulanmaz.
+
 Kod örnekleri:
 
 ```csharp
 // csharp_space_between_parentheses = control_flow_statements
-for( int i;i<x;i++ ) { ... }
+for ( int i = 0; i < 10; i++ ) { }
 
 // csharp_space_between_parentheses = expressions
-var z = ( x * y ) - ( ( y - x ) * 3);
+var z = ( x * y ) - ( ( y - x ) * 3 );
 
 // csharp_space_between_parentheses = type_casts
 int y = ( int )x;

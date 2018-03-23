@@ -1,22 +1,24 @@
 ---
-title: "Visual Studio yükleme için komut satırı parametresi örnekleri | Microsoft Docs"
-ms.custom: 
+title: Visual Studio yükleme için komut satırı parametresi örnekleri | Microsoft Docs
+ms.custom: ''
 ms.date: 05/06/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f91810f53a27cc988c44e6c283364bb2d29e39e0
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: d9d13daf406dc0c39d6a2f3571acf5f60c763126
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Visual Studio 2017 yükleme için komut satırı parametresi örnekleri
 Göstermek için nasıl [Visual Studio'yu yüklemek için komut satırı parametrelerini kullanmak](use-command-line-parameters-to-install-visual-studio.md), gereksinimlerinize göre özelleştirebileceğiniz bazı örnekleri aşağıda bulabilirsiniz.
@@ -43,7 +45,7 @@ vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installP
 ```
 
 > [!NOTE]
-> Her iki komutları gereklidir. İlk komut, Visual Studio yükleyicisi güncelleştirir. İkinci komut, Visual Studio örneğini güncelleştirir. Bir kullanıcı hesabı denetimi iletişim önlemek için komut istemini yönetici olarak çalıştırın. 
+> Her iki komutları gereklidir. İlk komut, Visual Studio yükleyicisi güncelleştirir. İkinci komut, Visual Studio örneğini güncelleştirir. Bir kullanıcı hesabı denetimi iletişim önlemek için komut istemini yönetici olarak çalıştırın.
 
 * Visual Studio'nun Masaüstü örneği sessiz bir şekilde, yalnızca ürün yüklendiğinde döndürme Fransızca Dil Paketi ile yükleyin.
 ```

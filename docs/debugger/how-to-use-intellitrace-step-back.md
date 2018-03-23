@@ -1,26 +1,26 @@
 ---
-title: "IntelliTrace adım geri - Visual Studio kullanarak bir anlık görüntüyü görüntülemek | Microsoft Docs"
+title: IntelliTrace adım geri - Visual Studio kullanarak bir anlık görüntüyü görüntülemek | Microsoft Docs
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
 ms.date: 12/06/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9602aa5c75f9572f2ca0f5cd8ef3426cde8ed96a
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 8f9f0c65110ef1003c58c0a4002f90ec7e7e08e3
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Visual Studio IntelliTrace adım geri kullanarak görünüm anlık görüntüler
 
@@ -72,8 +72,6 @@ Bu öğreticide şunları yapacaksınız:
 2. Canlı yürütme dönmek için seçin **devam (F5)** veya **Canlı hata ayıklama için iade** Bilgi Çubuğu'nda bağlantı. 
 
 3. Bir anlık görüntüden de görüntüleyebilirsiniz **olayları** sekmesi. Bunu yapmak için bir anlık görüntü sahip bir olay seçin ve **geçmiş hata ayıklama etkinleştirme**.
-
-    Ayrıca, geçmiş hata ayıklamayı etkinleştirmek için kamera simgesine tıklayabilirsiniz.
 
     ![Bir olaya geçmiş hata ayıklama etkinleştirme](../debugger/media/intellitrace-activate-historical-debugging.png "etkinleştirmek geçmiş hata ayıklama olay")
 

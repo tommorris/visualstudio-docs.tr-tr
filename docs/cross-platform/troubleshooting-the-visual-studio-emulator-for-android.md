@@ -1,24 +1,24 @@
 ---
-title: "Android için Visual Studio öykünücüsü sorunlarını giderme | Microsoft Docs"
-ms.custom: 
+title: Android için Visual Studio öykünücüsü sorunlarını giderme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
-caps.latest.revision: 
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
+caps.latest.revision: ''
+author: mgmclemore
+ms.author: mamcle
+manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d99892d42190e64c54213c2b6b9e52fdd22dfd8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7d333295461617eb8a85f0970bc82e33f5a2ec68
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü’nde Sorun Giderme
 Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabileceğiniz sorunları gidermenize yardımcı olabilecek bilgiler içerir.  
@@ -62,22 +62,22 @@ Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabi
   
 -   [Destek kaynakları](#Support)  
   
-##  <a name="BeforeYouStart"></a>Başlamadan önce  
+##  <a name="BeforeYouStart"></a> Başlamadan önce  
  Sorun gidermeye başlamadan önce aşağıdaki konuları gözden geçirmek yararlı olabilir:  
   
 -   [Android için Visual Studio Öykünücüsü Sistem Gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
-##  <a name="NoInstall"></a>Öykünücü yüklenmesi başarısız  
+##  <a name="NoInstall"></a> Öykünücü yüklenmesi başarısız  
  Hyper-V'nin yüklü yoksa, öykünücü yüklemeye çalıştığınızda şu iletiyi görürsünüz. HyperV destekleyen bir makine olmalıdır ve etkinleştirilmesi gerekir.  
   
- ![Android &#95; AB &#95;Yükleme &#95; sorun](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")  
+ ![Android&#95;AB&#95;yükleme&#95;sorunu](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")  
   
 > [!NOTE]
 >  Bu ileti, hem Android için Visual Studio öykünücüsü ve Windows Phone öykünücüsü için geçerlidir. Windows 8.1 ve Windows 10 öykünücü destekler.  
   
  Bu iletiyi görürseniz, denetleme [Android için Visual Studio öykünücüsü sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) öykünücü çalıştırılıp çalıştırılmayacağını görmek için.  
   
-##  <a name="DomainNetwork"></a>Bir etki alanı veya kurumsal bir ağda ağ hedeflere bağlanamıyor  
+##  <a name="DomainNetwork"></a> Bir etki alanı veya kurumsal bir ağda ağ hedeflere bağlanamıyor  
  Android için Visual Studio öykünücüsü ağda ayrı bir aygıta kendi IP adresiyle olarak görünür. Bir Windows etki alanına katılmamışsa ve ana bilgisayar ile etki alanı veya çalışma grubu kimlik bilgileri paylaşmaz.  
   
  Ağınızın temel ağ ve Internet bağlantısı için etki alanı veya çalışma yetkilendirme gerektiriyorsa, bir özel durum için BT yöneticinize başvurun. Bu özel durumun geliştirme bilgisayarınıza bir sınır makine olarak hizmet verecek ve etki alanına birleştirilmemiş ağ aygıtlarını öykünücü gibi gelen bağlantıları kabul edecek sağlar.  
@@ -94,7 +94,7 @@ Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabi
   
 4.  Ağ sayfasında fiziksel adres girdilerini bulun.  
   
-##  <a name="ManualNetworkConfig"></a>Ağ ayarlarını el ile yapılandırma gerektirdiğinde ağ hedeflere bağlanamıyor  
+##  <a name="ManualNetworkConfig"></a> Ağ ayarlarını el ile yapılandırma gerektirdiğinde ağ hedeflere bağlanamıyor  
  Ağ hedeflere öykünücüsünden bağlanmak için ağınıza aşağıdaki gereksinimleri karşılaması gerekir:  
   
 -   DHCP. Kendi IP adresini ağ üzerinde ayrı bir aygıta olarak kendisini yapılandırır çünkü öykünücü DHCP gerektirir.  
@@ -103,7 +103,7 @@ Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabi
   
  Ağınız el ile yapılandırılan ayarları gerektiriyorsa, ağ bağlantısı için öykünücüsü nasıl etkinleştirebilirsiniz belirlemek için BT yöneticinize danışın.  
   
-##  <a name="SlowStart"></a>Öykünücü yavaş bir zaman aşımı nedeniyle başlatmak için başarısız başlatır veya uygulama dağıtımı başarısız oluyor  
+##  <a name="SlowStart"></a> Öykünücü yavaş bir zaman aşımı nedeniyle başlatmak için başarısız başlatır veya uygulama dağıtımı başarısız oluyor  
  Belirli koşullar altında öykünücü başlatmak için birkaç dakika sürer veya bir zaman aşımı nedeniyle başlatılamıyor. Öykünücü başlatma başarısız olduğunda, aşağıdaki iletiyi görürsünüz: `App deployment failed. Please try again`. Aşağıdaki koşullar, bu hatayı neden olabilir.  
   
 -   Android için Visual Studio öykünücüsü önyüklenebilir bir VHD'den çalışıyor. Bu yapılandırma desteklenmez.  
@@ -118,7 +118,7 @@ Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabi
   
 -   Genellikle, düşük performans sistem üzerindeki katkıda bulunan tüm faktörü. En düşük alt Denetim Masası'nın performans bilgileri ve araçları sayfasında bulabilirsiniz Windows Deneyimi Dizini olan bileşeni ile sorun giderme başlar.  
   
-##  <a name="NoStart2"></a>Öykünücü başlatılamıyor  
+##  <a name="NoStart2"></a> Öykünücü başlatılamıyor  
  Öykünücü daha önce çalışan, ancak artık çalışmaz, aşağıdaki görevleri gidin. Öykünücü ilk kez kullanıyorsanız bkz [öykünücüsü başarısız (ilk kullanımda) başlatmak](#NoStart) önce aşağıdaki adımları deneyin.  
   
 -   Öykünücü diğer Hyper-V örneklerini kaldırın.  
@@ -135,13 +135,13 @@ Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabi
   
 -   Hyper-V Yöneticisi'nde, iki ağ anahtarları olduğunu görmek için sanal Anahtar Yöneticisi'ni ve onay açın; ilk iç anahtar ve ikinci dış olduğunu doğrulayın.  
   
-     ![Android &#95; AB &#95; V &#95; Geçiş &#95; ADAM](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")  
+     ![Android&#95;AB&#95;V&#95;anahtar&#95;ADAM](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")  
   
      Kurulum yanlış ise ve Windows 10 kullanıyorsanız, için deneyebilirsiniz [netcfg -d komutu kullanarak ağ aygıtlarını yeniden](http://windows.microsoft.com/en-us/windows-10/fix-network-connection-issues) (Bölüm 6).  
   
 -   Bu adımlar sorunu çözmezse, bkz: [öykünücüsü başarısız (ilk kullanımda) başlatmak](#NoStart) öykünücü ile çakışabilecek 3 taraf yazılımlar hakkında bilgi için.  
   
-##  <a name="NoStart"></a>Öykünücü (ilk kullanın) başlatılamıyor  
+##  <a name="NoStart"></a> Öykünücü (ilk kullanın) başlatılamıyor  
  Öykünücü başlamazsa belirlemek ve sorunu düzeltmek için aşağıdaki görevleri gidin.  
   
 -   En düşük donanım gereksinimleri karşılandıktan ve BIOS ayarlarının doğru olduğundan emin olun.  
@@ -212,7 +212,7 @@ Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabi
   
     2.  VEthernet (iç Ethernet bağlantı noktası Windows Phone öykünücüsü iç anahtar) bağdaştırıcısı için **özellikleri** ve bağlam menüsünden.  
   
-         ![Hyper &#45;tarafından kullanılan sanal bağdaştırıcı; V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
+         ![Hyper tarafından kullanılan sanal bağdaştırıcı&#45;V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
   
          Bağdaştırıcı özelliklerini burada gösterilir.  
   
@@ -248,7 +248,7 @@ Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabi
   
      Şimdi öykünücüsünde başlatın. Çalışmalıdır.  
   
-##  <a name="NoBoot"></a>Bilgisayar öykünücüsü yüklendikten sonra önyükleme başarısız olur.  
+##  <a name="NoBoot"></a> Bilgisayar öykünücüsü yüklendikten sonra önyükleme başarısız olur.  
  Aşağıdaki koşullar doğru olduğunda bu sorun oluşabilir:  
   
 -   Bilgisayarınızda bir gigabayt ana kart vardır.  
@@ -259,7 +259,7 @@ Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabi
   
  Daha fazla bilgi için aşağıdaki Bilgi Bankası makalesine bakın: [gigabayt sistemlerinde Hyper-V rolü yüklendikten sonra önyükleme hatası](https://support.microsoft.com/en-us/kb/2693144).  
   
-##  <a name="ADB"></a>Visual Studio öykünücüsü uygulama dağıtılmaya çalışılırken takılmış veya öykünücü diğer IDE hata ayıklama hedefi olarak görünmez  
+##  <a name="ADB"></a> Visual Studio öykünücüsü uygulama dağıtılmaya çalışılırken takılmış veya öykünücü diğer IDE hata ayıklama hedefi olarak görünmez  
  Öykünücü çalışıyor, ancak ADB (Android hata ayıklama köprüsü) bağlanması gerekir görünmüyor ya da (örneğin, Android Studio veya Eclipse) ADB kullanan Android araçlarında görünmez, öykünücü ADB için burada görünür ayarlamanız gerekebilir. Öykünücü, Android SDK'sı temel konumunu tanımlamak için bir kayıt defteri anahtarı kullanır ve bu dizin altında \platform-tools\adb.exe dosyasını arar. Öykünücü tarafından kullanılan Android SDK yolunu değiştirmek için:  
   
 -   Kayıt Defteri Düzenleyicisi'ni seçerek açın **çalıştırmak** başlangıç düğmeleri bağlam menüsünden yazarak `regedit` iletişim kutusunda ve seçme **Tamam**.  
@@ -270,7 +270,7 @@ Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabi
   
  Öykünücü yeniden başlatın ve şimdi öykünücü ADB için bağlı ve Android araçları ilişkili görüyor olmanız gerekir.  
   
-##  <a name="XamarinPlayer"></a>UDP bağlantı noktası ayarlanamadı çünkü öykünücüsü askıda kalır  
+##  <a name="XamarinPlayer"></a> UDP bağlantı noktası ayarlanamadı çünkü öykünücüsü askıda kalır  
  Xamarin Player uyumsuzluk nedeniyle bu sorunla karşılaşabilirsiniz. Öykünücü askıda görünüyorsa veya bu hata iletisini görüyorsanız "öykünücü cihaz işletim sistemine bağlanamıyor: UDP bağlantı noktası ayarlanamadı.  Bazı işlevler devre dışı bırakılabilir", bu sorunu yaşıyor olabilir. Aşağıdaki adımları uygulayın.  
   
 1.  Xamarin Player kaldırın.  
@@ -281,7 +281,7 @@ Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabi
   
 4.  Kaldırma/Hyper-V olmayan fiziksel ağ bağdaştırıcısı kaldırdıktan sonra yeniden yüklemeyi deneyebilirsiniz.  
   
-##  <a name="Skylake"></a>Hata ayıklayıcı Xamarin projesine eklenemiyor  
+##  <a name="Skylake"></a> Hata ayıklayıcı Xamarin projesine eklenemiyor  
  Intel Skylake işlemcilere sahip Windows 10 çalıştırıyorsanız, Xamarin uygulamaları öykünücüsünde çalıştırmak başarısız olabilir veya Visual Studio hata ayıklayıcısı iliştirdiğiniz değil. Hyper-V ve Skylake işlemciler ile ilgili bir sorun nedeniyle budur. Geçici bir çözüm olarak aşağıdaki adımları uygulayın.  
   
 1.  Hyper-V Yöneticisi'ni açın ve öykünücü profil için VM seçin olduğunuz kullanma.  
@@ -296,22 +296,22 @@ Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabi
   
 6.  Hizmeti yeniden başlatın (altında **Eylemler**) ve yeniden deneyin.  
   
-##  <a name="GooglePlay"></a>Google Play hizmetleri kullanan uygulamalarda öykünücüsü çalışmaz  
+##  <a name="GooglePlay"></a> Google Play hizmetleri kullanan uygulamalarda öykünücüsü çalışmaz  
  Öykünücü kitaplıklarıyla Google Play Hizmetleri'ni gelmez. Ancak, öykünücü sürükle ve bırak yazılımına anlık olarak erişilebilen ZIP dosyaları yüklenmesini desteklemez.  
   
-##  <a name="DragAndDrop"></a>Sürükle ve bırak dosya, APK veya yazılımına anlık olarak erişilebilen zip dosyası çalışmıyor  
+##  <a name="DragAndDrop"></a> Sürükle ve bırak dosya, APK veya yazılımına anlık olarak erişilebilen zip dosyası çalışmıyor  
  Öykünücü ADB.exe bir dosya ekran üzerine sürükleyip zaman dosya aktarımı kolaylaştırmak için kullanır. Bir dosya sürükleyip denediğinizde bir hatayla karşılaşırsanız, bu büyük olasılıkla öykünücü ADB.exe için bağlanmamış gösterir. Gidermek için adımları [Visual Studio öykünücüsü uygulama dağıtılmaya çalışılırken takılmış veya öykünücü diğer IDE hata ayıklama hedefi olarak görünmez](#ADB).  
   
-##  <a name="Resolution"></a>Ekran çözünürlüğü yanlış  
+##  <a name="Resolution"></a> Ekran çözünürlüğü yanlış  
  Ekran sekmesindeki kullanarak bir ekran görüntüsü alın, **ek araçlar** penceresi ve elde edilen görüntü beklenmeyen bir boyutu, ekran yakınlaştırma düzeyi seçmeden önce ayarlamanız gerekebilir **Yakalama**. Öykünücü ekran görüntüleri, ana bilgisayar monitör ekranda çözünürlükte alır.  
   
-##  <a name="OpenGL"></a>OpenGL içeriğini işlemek öykünücüsü başarısız  
+##  <a name="OpenGL"></a> OpenGL içeriğini işlemek öykünücüsü başarısız  
  Öykünücü konak makinenizin GPU kullanarak OpenGL içerik işler ve bu çağrıları DirectX gelen ve giden dönüştürmek için AÇI proje kullanır. Uygulamanız doğru bir aygıtı ancak yanlış öykünücü işliyorsa, cihaz bir OpenGL çağrısı yanlış (örneğin, eşleşmiyor gölgelendirici değişkenler kullanarak) için Azaltıcı olasıdır.  
   
-##  <a name="Multitouch"></a>Öykünücü çok dokunma hareketleri yanıt vermiyor  
+##  <a name="Multitouch"></a> Öykünücü çok dokunma hareketleri yanıt vermiyor  
  Bazı durumlarda, öykünücü başlatın ve çok ya da ile doğrudan etkileşim Dokunmatik özellikli ekranınıza veya öykünücü araç çubuğunda çok dokunma aracını kullanarak yanıt değil. Bu durumda, seçin **Döndür** öykünücüsü araç çubuğunda düğmesini ve çok dokunma yeniden kullanmayı dener. Sorun devam ederse, okuma [öykünücüsü başarısız OpenGL içeriğini işlemek](#OpenGL) sorun.  
   
-##  <a name="Support"></a>Destek kaynakları  
+##  <a name="Support"></a> Destek kaynakları  
  Ana bilgisayarınız sistem gereksinimlerini karşıladığından ve bu sorun giderme Kılavuzu'nda kapsamında olmayan bir sorunla karşılaşırsanız ise:  
   
 -   StackOverflow kullanarak bir soru sorun [android öykünücüsü](http://stackoverflow.com/questions/tagged/android-emulator) ve visual studio etiketler.  

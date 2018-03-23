@@ -1,22 +1,22 @@
 ---
-title: "Birden çok kullanıcı hesabı ile çalışma | Microsoft Docs"
-ms.custom: 
+title: Birden çok kullanıcı hesabı ile çalışma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology: vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: def8b9347ec5c74cf369972602416c992dff39c7
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 535b01f8f0ef5840543013509d40b4b8393fa7f6
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Birden çok kullanıcı hesabıyla çalışma
 
@@ -24,7 +24,7 @@ Birden çok Microsoft hesabına ve/veya iş veya Okul hesapları varsa, böylece
 
 Bir makine üzerinde birden fazla hesap ekledikten sonra Visual Studio için başka bir makinede oturum hesapları kümesini sizinle dolaşıma. Hesap adlarını dolaşan rağmen kimlik bilgilerini desteklemez, dikkate almak önemlidir. Bu nedenle, yeni makineye kaynaklarını kullanma girişimi ilk kez diğer bu hesaplar için kimlik bilgilerini girmeniz istenir.
 
-Bu anlatımda Visual Studio'ya birden fazla hesap ekleme gösterilir ve bu hesaplarından erişilebilir kaynakları yansıtılır görmek nasıl yerleştirir gibi **bağlı hizmet Ekle** iletişim kutusunda, **Sunucu Gezgini** , ve **Takım Gezgini**.
+Bu anlatımda Visual Studio'ya birden fazla hesap ekleme gösterilir ve bu hesaplarından erişilebilir kaynakları yansıtılır görmek nasıl yerleştirir gibi **bağlı hizmet Ekle** iletişim kutusunda, **Sunucu Gezgini**, ve **Takım Gezgini**.
 
 ## <a name="sign-in-to-visual-studio"></a>Visual Studio'da oturum açın
 
@@ -51,9 +51,9 @@ Sunucu Gezgini, bir sonraki açışınızda bu aboneliği için kaynakları gör
 1. Çözüm Gezgini'nde proje düğümünü seçin ve ardından **Ekle, bağlı hizmet**. **Bağlı hizmet Ekle** Sihirbazı görünür ve Visual Studio oturum açma kimliğiyle ilişkili Azure hesabında hizmetlerin listesini gösterir Azure için ayrı olarak oturum açmak zorunda değilsiniz unutmayın. Ancak, diğer hesapları için belirli bir bilgisayardan kaynaklarına erişme girişimi ilk kez oturum açmak gerekir.
 
     > [!WARNING]
-    > Bu ilk kez ise Visual Studio'da belirli bir bilgisayarda bir UWP uygulaması oluşturuyorsanız, giderek cihazınız için geliştirme modunu etkinleştirmek için istenir **ayarlarını &#124;  Güncelleştirmeler ve güvenlik &#124; Geliştiriciler için** bilgisayarınızda. Daha fazla bilgi için bkz: [aygıtı etkinleştir geliştirme](/windows/uwp/get-started/enable-your-device-for-development).
+    > Bu ilk kez ise Visual Studio'da belirli bir bilgisayarda bir UWP uygulaması oluşturuyorsanız, giderek cihazınız için geliştirme modunu etkinleştirmek için istenir **ayarları &#124; güncelleştirmeleri ve güvenlik &#124; geliştiriciler için** üzerinde Bilgisayarınızı. Daha fazla bilgi için bkz: [aygıtı etkinleştir geliştirme](/windows/uwp/get-started/enable-your-device-for-development).
 
-### <a name="access_azure"></a>Erişim Azure Active Directory'de bir Web projesi
+### <a name="access_azure"></a> Erişim Azure Active Directory'de bir Web projesi
 
 Azure AD son kullanıcı çoklu oturum açma ASP.NET MVC web uygulamaları veya Web API Hizmetleri AD kimlik doğrulaması için destek sağlar. Etki alanı kimlik doğrulaması, tek tek kullanıcı hesabı kimlik doğrulamasını farklıdır; Active Directory etki alanınıza erişimi olan kullanıcılar, web uygulamalarınızı bağlanmak için var olan Azure AD hesaplarına kullanabilirsiniz. Office 365 uygulamaları, etki alanı kimlik doğrulamasını da kullanabilirsiniz. Bu eylem görmek için bir web uygulaması oluşturma (**dosya, yeni proje C#, bulut, ASP.NET Web uygulaması**). Yeni ASP.NET projesi iletişim kutusunda seçin **kimlik doğrulamayı Değiştir**. Kimlik Doğrulama Sihirbazı'nı görünür ve uygulamanızda kullanılacak kimlik doğrulama türlerini seçmenize olanak tanır.
 

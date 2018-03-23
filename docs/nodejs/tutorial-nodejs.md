@@ -1,13 +1,13 @@
 ---
-title: "Node.js ve hızlı uygulama - Visual Studio oluşturma | Microsoft Docs"
-description: "Bu öğreticide, Visual Studio Node.js ve hızlı bir uygulama oluşturma"
-ms.custom: 
+title: Node.js ve hızlı uygulama - Visual Studio oluşturma | Microsoft Docs
+description: Bu öğreticide, Visual Studio Node.js ve hızlı bir uygulama oluşturma
+ms.custom: ''
 ms.date: 03/13/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-nodejs
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 05e10e6016c4a6791b5bc80ba6a05616c1edb0f6
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 1ababcbc0903d474c2992b68e3571a71c4e88d99
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da bir Node.js ve hızlı uygulama oluşturma
 Node.js ve Express kullanarak Visual Studio geliştirme için bu öğreticideki basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).  
@@ -46,12 +46,14 @@ Bu öğreticide, bilgi nasıl yapılır:
 
     LTS sürümünden yüklü yoksa, yükleme [Node.js](https://nodejs.org/en/download/) Web sitesi. Genel olarak, Visual Studio yüklenmiş Node.js çalışma zamanı otomatik olarak algılar. Yüklü bir çalışma zamanı algılamazsa yüklü çalışma zamanı özellikleri sayfasında başvurmak için projenizi yapılandırabilirsiniz (bir proje oluşturduktan sonra proje düğümüne sağ tıklayın ve seçin **özellikleri**).
 
+    Bu öğretici 8.10.0 Node.js ile test edilmiştir.
+
 ## <a name="create-a-project"></a>Proje oluşturma
 İlk olarak, bir Node.js web uygulaması projesi oluşturacaksınız.
 
 1. Visual Studio 2017'ni açın.  
 
-1. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .  
+1. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...**.  
 
 1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **JavaScript**ve ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulama**ve ardından **Tamam**.   
 
@@ -119,6 +121,8 @@ Bu öğreticide, bilgi nasıl yapılır:
         res.render('index', { title: 'Express', "data" });
     });
     ```
+
+    Kodu içeren satırda bir hata var. `res.render`. Uygulamayı çalıştırmadan önce sorunu gidermek gerekir. Biz, sonraki bölümde hatayı düzeltin.
 
 ## <a name="use-intellisense"></a>IntelliSense kullanma
 

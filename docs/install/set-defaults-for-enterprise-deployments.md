@@ -1,11 +1,12 @@
 ---
-title: "Visual Studio Kurumsal dağıtımlar için varsayılan değerleri ayarlama | Microsoft Docs"
-description: "Etki alanı ilkeleri ve diğer yapılandırma işlemleri Visual Studio'nun kurumsal dağıtım için."
+title: Visual Studio Kurumsal dağıtımlar için varsayılan değerleri ayarlama | Microsoft Docs
+description: Etki alanı ilkeleri ve diğer yapılandırma işlemleri Visual Studio'nun kurumsal dağıtım için.
 ms.date: 05/05/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - gpo
@@ -15,14 +16,15 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 9B7B4608-7A3F-4FF4-BDCE-42D9F7CE6DBA
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f269e9c719ee685567161fbf8d5edb05b17ea9cd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cf2d25dad750e9d3ff1010ab65d44bde8518b9b4
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Visual Studio kuruluş dağıtımları için Varsayılanlarını Ayarla
 
@@ -40,7 +42,7 @@ Kuruluş varsayılanlarını, Grup İlkesi aracılığıyla veya doğrudan kayı
 
 1. `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\Setup`
 2. `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup`
-3. `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\VisualStudio\Setup`(64-bit işletim sistemlerinde)
+3. `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\VisualStudio\Setup` (64-bit işletim sistemlerinde)
 
 > [!IMPORTANT]
 > Ayarlanmamış ise `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\Setup` anahtarı ve bunun yerine ayarlanmış diğer anahtarları biri, diğer iki anahtarlar 64-bit işletim sistemlerinde ayarlanmalıdır. Bu sorun gelecekteki ürün güncelleştirmede değinilmiştir.
@@ -51,9 +53,9 @@ Aşağıdaki kayıt defteri değerlerini ayarlayabilirsiniz:
 
 | **Ad** | **Türü** | **Default** | **Açıklama** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ`veya`REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Burada paket bildirimleri dizini ve isteğe bağlı, yükü depolanır. Nasıl okumak için [devre dışı bırakmak veya paket önbellek taşıma](disable-or-move-the-package-cache.md) daha fazla bilgi için. |
+| `CachePath` | `REG_SZ` Veya `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Burada paket bildirimleri dizini ve isteğe bağlı, yükü depolanır. Nasıl okumak için [devre dışı bırakmak veya paket önbellek taşıma](disable-or-move-the-package-cache.md) daha fazla bilgi için. |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1. | Hatta yüklendikten sonra paket yükü tutun. Değer dilediğiniz zaman değiştirebilirsiniz. İlkeyi devre dışı bırakmak, tüm önbelleğe alınan paket yükü onarmak veya değiştirmek, örneğin kaldırır. Nasıl okumak için [devre dışı bırakmak veya paket önbellek taşıma](disable-or-move-the-package-cache.md) daha fazla bilgi için. |
-| `SharedInstallationPath` | `REG_SZ`veya`REG_EXPAND_SZ` | % ProgramFiles (x86) %\Microsoft Visual Studio\Shared | Visual Studio Örnekleri sürümleri arasında paylaşılan bazı paketler yüklendiği dizin. Değeri dilediğiniz zaman değiştirebilirsiniz, ancak gelecekte yükler yalnızca etkiler. Eski konuma yüklü ürünler taşınmaz gerekir veya doğru şekilde çalışmayabilir. |
+| `SharedInstallationPath` | `REG_SZ` Veya `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Visual Studio Örnekleri sürümleri arasında paylaşılan bazı paketler yüklendiği dizin. Değeri dilediğiniz zaman değiştirebilirsiniz, ancak gelecekte yükler yalnızca etkiler. Eski konuma yüklü ürünler taşınmaz gerekir veya doğru şekilde çalışmayabilir. |
 
 > [!IMPORTANT]
 > Değiştirirseniz `CachePath` mevcut pakete taşımak gerekir yükler önbelleğe yeni konuma ve emin olun sonra kayıt defteri ilke güvenli şekilde `SYSTEM` ve `Administrators` üzerinde tam denetime sahiptir ve `Everyone` okuma erişimine sahip.

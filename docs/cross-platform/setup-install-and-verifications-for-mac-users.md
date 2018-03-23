@@ -1,23 +1,23 @@
 ---
-title: "Kurulum, yükleme ve Doğrulamalar Mac kullanıcıları için | Microsoft Docs"
-ms.custom: 
+title: Kurulum, yükleme ve Doğrulamalar Mac kullanıcıları için | Microsoft Docs
+ms.custom: ''
 ms.date: 04/13/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 366dd699555cd3eed637687668fc194ba00d5be4
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 5590e2a66fe2b6bdec192343f22338f257a8e5ba
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Kurulum, yükleme ve Doğrulamalar Mac kullanıcıları için
 Bu konu öncelikle Mac üzerinde çalışan ve Visual Studio Mac üzerinde bir Windows sanal makine içinde isteğe bağlı olarak kullanacak geliştiriciler için tasarlanmıştır Öncelikle bir Windows bilgisayarda çalışan bir geliştirici olan ve ikincil Mac iOS hedeflemek için ayarlamanız gerekir, ana bkz [Kurulum ve yükleme](../cross-platform/setup-and-install.md) konu.
@@ -38,7 +38,7 @@ Bu konu öncelikle Mac üzerinde çalışan ve Visual Studio Mac üzerinde bir W
 
 1.  Boş bir Apple kimliği oluşturma [My Apple kimliği](https://appleid.apple.com/) zaten yoksa. Bu, yükleme ve Xcode imzalamak için gereklidir.
 
-2.  Xcode gelen yükleyip [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/).
+2.  Xcode gelen yükleyip [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/).
 
 3.  Karşıdan yükleyip Xamarin yönergeleri izleyerek [yükleme ve yapılandırma Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
 
@@ -74,7 +74,7 @@ Bu konu öncelikle Mac üzerinde çalışan ve Visual Studio Mac üzerinde bir W
 
  ![Doğru belge üzerinde Xamarin.com görmek için Xamarin Studio seçme](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")
 
-**Outlook Web Access (OWA)**
+**Android**
 
 1.  Yönergeleri izleyerek bir Android projesi oluşturma doğrulamak [bir Android projesi oluşturma](http://developer.xamarin.com/recipes/android/general/projects/create_an_android_project/) (xamarin.com).
 
@@ -91,7 +91,7 @@ Bu konu öncelikle Mac üzerinde çalışan ve Visual Studio Mac üzerinde bir W
 
  ![Doğru belge üzerinde Xamarin.com görmek için Visual Studio seçme](../cross-platform/media/crossplat-xamarin-mac-2.png "CrossPlat Xamarin Mac 2")
 
-**Outlook Web Access (OWA)**
+**Android**
 
 1.  Yönergeleri izleyerek bir Android projesi oluşturma doğrulamak [bir Android projesi oluşturma](http://developer.xamarin.com/recipes/android/general/projects/create_an_android_project/) (xamarin.com).
 

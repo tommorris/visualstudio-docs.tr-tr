@@ -1,23 +1,23 @@
 ---
-title: "Visual Studio için Xamarin yükleme | Microsoft Docs"
-ms.custom: 
+title: Visual Studio için Xamarin yükleme | Microsoft Docs
+ms.custom: ''
 ms.date: 04/13/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: bcaa49552c0e904b07cc90f3ae7e44aaa58a3895
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: a935ab3768d5e900aea681b392e920763cb53016
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="setup-and-install"></a>Kurulum ve yükleme
 
@@ -32,7 +32,7 @@ Yerel iOS, Android ve Windows oluşturmak için uygulamalardan ortak C# / .NET k
 Bu kurulum ve yükleme yaptıktan sonra Xamarin kullanarak sorunları varsa, sorunuzu ileti [forums.xamarin.com](http://forums.xamarin.com/).
 
 > [!NOTE]
-> 31 Mart 2016 tüm Xamarin dahil ile gibi hiçbir ek Visual Studio'ya'nin tüm sürümlerinde maliyet ve ayrı bir lisansı gerektirmez. Mac için Xamarin Studio Community, ayrıca Öğrenciler, OSS geliştiriciler ve küçük ekipleri için ücretsizdir. Önceki Xamarin lisansları ile yapılandırılmış olan mevcut yüklemelerinde Visual Studio, Xamarin sürüm 4.0.3.214 güncelleştirmesi gerektiğini not ya da daha yüksek. Bunu yapmak için şu adrese gidin **Araçlar > Seçenekler > Xamarin > diğer**, tıklatın **şimdi denetle** bağlantı ve indirme 4.0.3.214 güncelleştirme. Visual Studio'yu yeniden başlatın, Git **Araçlar > Xamarin hesap...**  ve güncelleştirilmiş durum görmeniz gerekir.
+> 31 Mart 2016 tüm Xamarin dahil ile gibi hiçbir ek Visual Studio'ya'nin tüm sürümlerinde maliyet ve ayrı bir lisansı gerektirmez. Mac için Xamarin Studio Community, ayrıca Öğrenciler, OSS geliştiriciler ve küçük ekipleri için ücretsizdir. Önceki Xamarin lisansları ile yapılandırılmış olan mevcut yüklemelerinde Visual Studio, Xamarin sürüm 4.0.3.214 güncelleştirmesi gerektiğini not ya da daha yüksek. Bunu yapmak için şu adrese gidin **Araçlar > Seçenekler > Xamarin > diğer**, tıklatın **şimdi denetle** bağlantı ve indirme 4.0.3.214 güncelleştirme. Visual Studio'yu yeniden başlatın, Git **Araçlar > Xamarin hesap...** ve güncelleştirilmiş durum görmeniz gerekir.
 
 ##  <a name="prereq"></a> Ön koşullar
 
@@ -82,9 +82,9 @@ Bu kurulum ve yükleme yaptıktan sonra Xamarin kullanarak sorunları varsa, sor
 
 ##  <a name="mac"></a> Mac kurulumu (Apple kimliği, Xcode ve Xamarin)
 
-1.  Boş bir Apple kimliği oluşturma [https://appleid.apple.com](https://appleid.apple.com/) zaten yoksa. Bu, yükleme ve Xcode imzalamak için gereklidir.
+1.  Boş bir Apple kimliği oluşturma [ https://appleid.apple.com ](https://appleid.apple.com/) zaten yoksa. Bu, yükleme ve Xcode imzalamak için gereklidir.
 
-2.  Xcode gelen yükleyip [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/), Apple Kimliğinizi açıklandığı gibi ekleyin [hesabınız ekleme XCode için](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
+2.  Xcode gelen yükleyip [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/), Apple Kimliğinizi açıklandığı gibi ekleyin [hesabınız ekleme XCode için](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
 
 3.  Karşıdan yükleyip Xamarin yönergeleri izleyerek [yükleme ve yapılandırma Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
 

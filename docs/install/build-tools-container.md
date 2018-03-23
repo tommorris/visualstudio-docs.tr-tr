@@ -1,22 +1,24 @@
 ---
-title: "Bir kapsayıcıya derleme araçlarını yükleme | Microsoft Docs"
-ms.custom: 
+title: Bir kapsayıcıya derleme araçlarını yükleme | Microsoft Docs
+ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 95f9c69ebca7dbdc7e576279b4e1ad3f17d2be25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 95b60369350ad099e53b143ff85adbcef250b8b9
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="install-build-tools-into-a-container"></a>Bir kapsayıcıya derleme araçlarını yükleme
 
@@ -56,7 +58,7 @@ Visual Studio Araçları - oluşturmak ve bir büyük ölçüde Visual Studio - 
 
 **Windows 10**:
 
-1. [Windows için Docker simgesine Rick tıklatma](https://docs.docker.com/docker-for-windows/#docker-settings) tıklatın ve sistem tepsisi **ayarları...** .
+1. [Windows için Docker simgesine Rick tıklatma](https://docs.docker.com/docker-for-windows/#docker-settings) tıklatın ve sistem tepsisi **ayarları...**.
 2. [Arka plan tıklatın](https://docs.docker.com/docker-for-windows/#docker-daemon) bölümü.
 3. [İki durumlu **temel** ](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) düğmesine **Gelişmiş**.
 4. (Daha fazla yapı araçları için yeterli büyümek için yeriniz olan) 120 GB disk alanı artırmak için aşağıdaki JSON dizisi özelliği ekleyin.

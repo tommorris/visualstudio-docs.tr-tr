@@ -1,22 +1,24 @@
 ---
-title: "Bilinen sorunlar kapsayıcıları için | Microsoft Docs"
-ms.custom: 
+title: Bilinen sorunlar kapsayıcıları için | Microsoft Docs
+ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6edcc59a2d726fbd76fee86b750f21dc468b727e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 94b3acaeffc709978cc9c49645fd7e788abef177
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="known-issues-for-containers"></a>Kapsayıcıları için bilinen sorunlar
 
@@ -34,7 +36,7 @@ Aşağıdaki bilinen sorunlar, Visual Studio derleme araçları 2017 Windows kap
 
 ## <a name="build-tools-container"></a>Araçlar kapsayıcı oluşturma
 
-Derleme araçları kapsayıcı kullandığınızda, aşağıdaki bilinen sorunlar ortaya çıkabilir. Sorunlar giderildi olup olmadığını veya diğer bilinen sorunlar olup olmadığını görmek için https://developercommunity.visualstudio.com ziyaret edin.
+Derleme araçları kapsayıcı kullandığınızda, aşağıdaki bilinen sorunlar ortaya çıkabilir. Diğer bilinen bir sorun varsa ziyaret edin veya sorunlar giderildi olup olmadığını görmek için https://developercommunity.visualstudio.com.
 
 * IntelliTrace çalışmayabilir [bazı senaryolar](https://github.com/Microsoft/vstest/issues/940) bir kapsayıcıdaki.
 

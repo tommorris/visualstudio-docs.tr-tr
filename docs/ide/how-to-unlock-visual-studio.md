@@ -1,23 +1,24 @@
 ---
-title: "Nasıl yapılır: Visual Studio kilidini | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: Visual Studio kilidini | Microsoft Docs'
+ms.custom: ''
 ms.date: 07/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
-caps.latest.revision: "8"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 87d937c456b875afa5234b61b57edb21ba32baf6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3bbdab7001ba8724c888b9fc20291ef253f73d4c
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-unlock-visual-studio"></a>Nasıl yapılır: Visual Studio kilidini açma
 
@@ -69,9 +70,8 @@ Kimlik bilgilerinizi girmek değil, eski gitmek belirteç başlatır ve hesap ay
 
 ### <a name="update-expired-licenses"></a>Süresi dolan lisansları güncelleştirin
 
- Aboneliğinizi tamamen süresi doldu ve artık erişim hakları Visual Studio yüklüyse, aboneliğinizi yenileyin veya bir aboneliğe sahip başka bir hesap ekleyin. Kullanmakta olduğunuz lisans hakkında daha fazla bilgi için şuraya gidin **dosya**, **hesap ayarlarını** ve iletişim kutusunun sağ tarafındaki lisans bilgilerini bakın. Farklı bir hesap ile ilişkilendirilmiş başka bir aboneliğiniz varsa, bu hesaba ekleme **tüm hesapları** seçerek iletişim kutusunun sol tarafında listede **Hesap Ekle...**  bağlantı.
+ Aboneliğinizi tamamen süresi doldu ve artık erişim hakları Visual Studio yüklüyse, aboneliğinizi yenileyin veya bir aboneliğe sahip başka bir hesap ekleyin. Kullanmakta olduğunuz lisans hakkında daha fazla bilgi için şuraya gidin **dosya**, **hesap ayarlarını** ve iletişim kutusunun sağ tarafındaki lisans bilgilerini bakın. Farklı bir hesap ile ilişkilendirilmiş başka bir aboneliğiniz varsa, bu hesaba ekleme **tüm hesapları** seçerek iletişim kutusunun sol tarafında listede **Hesap Ekle...** bağlantı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio'da Oturum Açma](../ide/signing-in-to-visual-studio.md)
- 

@@ -1,23 +1,23 @@
 ---
-title: "Visual Studio 2017 yapı numaralarını ve yayın tarihleri | Microsoft Docs"
-description: "Yayımlanan sürümleri ve tarihe göre sıralanmış Visual Studio 2017 için yapı numaraları listesi."
-keywords: 
+title: Visual Studio 2017 yapı numaralarını ve yayın tarihleri | Microsoft Docs
+description: Yayımlanan sürümleri ve tarihe göre sıralanmış Visual Studio 2017 için yapı numaraları listesi.
+keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 03/19/2018
+ms.date: 03/21/2018
 ms.topic: article
-helpviewer_keywords: 
+helpviewer_keywords: ''
 ms.technology:
 - vs-acquisition
-ms.service: 
+ms.service: ''
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fb2238d8a0afb8334a05585bf040931da81d66a
-ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
+ms.openlocfilehash: a3c7f0c1ea828cb1d63875c1646d33d7b70612f6
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 yapı numaralarını ve tarihleri bırakın
 
@@ -25,6 +25,7 @@ Aşağıdaki tabloda yapı numaraları ve yayın tarihleri tarih için Visual St
 
 | **Sürüm**| **Channel** | **Sürüm tarihi** | **Sürüm oluşturma** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.7.0 Önizleme 2.0 | Önizleme | 21 Mart 2018 | 15.7.27520.0 |
 | 15.6.3 | Sürüm | 19 Mart 2018 | 15.6.27428.2011 |
 | 15.7.0 Önizleme 1.0 | Önizleme | 13 Mart 2018 | 15.7.27512.0 |
 | 15.6.2 | Sürüm | 13 Mart 2018 | 15.6.27428.2005 |
@@ -124,7 +125,7 @@ Birkaç diğer destek seçenekleri şunlardır:
 * Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
 * ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio 2017 Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Visual Studio 2017 yüklemek için komut satırı parametreleri kullanın](use-command-line-parameters-to-install-visual-studio.md)

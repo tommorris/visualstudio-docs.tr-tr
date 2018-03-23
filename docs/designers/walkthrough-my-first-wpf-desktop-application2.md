@@ -1,11 +1,11 @@
 ---
-title: "İzlenecek yol: İlk WPF Masaüstü Uygulamam | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: İlk WPF Masaüstü Uygulamam | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c239e811ea47158dd63660e761f943b8f22e8e23
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95c35eae16f50b6fa8c0a8c86fa0d93732512a88
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>İzlenecek yol: İlk WPF Masaüstü Uygulamam
 
@@ -58,7 +58,7 @@ Bu bölümde, proje ve bir ana penceresi veya form içeren uygulama altyapısı 
 
      A **NavigationWindow** diğer kullanıcı Arabirimi öğeleri gibi bulunamaz bir **kılavuz**.
 
-1. İçinde **özellikleri** penceresinde genişletin **ortak** Kategori düğümü ve seçin **başlık** özelliği ve enter `ExpenseIt` ve tuşuna basın **girin**  anahtarı.
+1. İçinde **özellikleri** penceresinde genişletin **ortak** Kategori düğümü ve seçin **başlık** özelliği ve enter `ExpenseIt` ve tuşuna basın **girin** anahtarı.
 
      Dikkat **başlık** özniteliği XAML penceresinde değiştirir yeni değer ile eşleşmelidir. XAML penceresinde XAML özelliklerini değiştirebilirsiniz veya **özellikleri** penceresi ve değişiklikleri eşitlenir.
 
@@ -136,7 +136,7 @@ Bu bölümde, uygulama için iki sayfaları ve görüntü ekleyeceksiniz.
     </Page>
     ```
 
-    Visual Basic'te tarafından ilk satırı olacak biraz farklı:
+    Visual Basic'te ilk satırı farklılık gösterir:
 
     ```xaml
     <Page x:Class="ExpenseItHome"
@@ -160,7 +160,7 @@ Bu bölümde, uygulama için iki sayfaları ve görüntü ekleyeceksiniz.
     </NavigationWindow>
     ```
 
-    Visual Basic'te tarafından ilk satırı olacak biraz farklı:
+    Visual Basic'te ilk satırı farklılık gösterir:
 
     ```xaml
     <NavigationWindow x:Class="MainWindow"
@@ -573,7 +573,7 @@ Düzeni öğeleri yerleştirmek için sıralı bir yol sağlar ve formu yeniden 
 
     -   `listHeaderTextStyle`: List üstbilgisi Biçimlendirilecek **etiket**.
 
-    -   `buttonStyle`: Biçimlendirilecek `Button` üzerinde **ExpenseItHome.XAML** pppage.
+    -   `buttonStyle`: Biçimlendirilecek `Button` üzerinde **ExpenseItHome.XAML** sayfası.
 
 1. Açık **ExpenseItHome.XAML** ve arasındaki her şeyi değiştirin `<Grid>` ve `</Grid>` aşağıdaki XAML ile öğeleri:
 
@@ -674,7 +674,7 @@ Düzeni öğeleri yerleştirmek için sıralı bir yol sağlar ve formu yeniden 
 
 ### <a name="to-bind-data-to-a-control"></a>Bir denetime veri bağlamak için
 
-1. Açık **ExpenseItHome.XAML** ve `<Grid>` öğesi...
+1. Açık **ExpenseItHome.XAML** ve `<Grid>` öğesi.
 
 1. Aşağıdaki XAML kodu ekleyin:
 

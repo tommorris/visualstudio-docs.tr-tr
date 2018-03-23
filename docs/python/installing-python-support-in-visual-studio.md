@@ -1,15 +1,15 @@
 ---
-title: "Visual Studio'da Python desteği yükleme | Microsoft Docs"
-description: "İçin Visual Studio (PTVS) Visual Studio 2017, 2015, 2013, 2012 ve 2010 içinde Python Araçları'nı yükleme konusunda ayrıntılı yönergeler seçenekleri ve yükleme konumlarını dahil olmak üzere."
-ms.custom: 
+title: Visual Studio'da Python desteği yükleme | Microsoft Docs
+description: İçin Visual Studio (PTVS) Visual Studio 2017, 2015, 2013, 2012 ve 2010 içinde Python Araçları'nı yükleme konusunda ayrıntılı yönergeler seçenekleri ve yükleme konumlarını dahil olmak üzere.
+ms.custom: ''
 ms.date: 02/15/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: faa901c14bd5d115aa3e7384a5d3b63c0410b64b
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 8a6bf78c0f0abcef9158bfdb753f5c8ea4050c33
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python desteğini yükleme
 
@@ -43,7 +43,7 @@ Hızlı yükleme adımlarını izleyerek sonra Python desteği test etmek için 
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Karşıdan yükle ve en son Visual Studio 2017 yükleyiciyi çalıştırın. Visual Studio'nun zaten yüklü varsa, Visual Studio yükleyicisi, belirleyin **Değiştir** seçenekleri (bkz [değiştirmek Visual Studio](../install/modify-visual-studio.md)) ve 2. adıma geçin.
+1. Karşıdan yükle ve en son Visual Studio 2017 yükleyiciyi çalıştırın. Visual Studio'nun zaten yüklü varsa, Visual Studio yükleyicisi, belirleyin **Değiştir** seçeneği (bkz [değiştirmek Visual Studio](../install/modify-visual-studio.md)) ve 2. adıma geçin.
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Community yükle</a>

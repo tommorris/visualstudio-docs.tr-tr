@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio'da veri erişimi | Microsoft Docs"
+title: Visual Studio'da veri erişimi | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: article
 f1_keywords:
@@ -15,11 +15,11 @@ manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e7c4c9aada390259d4abd57484c20d25728ef91f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: f99c01ec5f10909e8236d6986836603553b4008d
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio'da veri erişimi
 
@@ -33,7 +33,7 @@ Aşağıdaki listeler, Visual Studio'dan kullanılabilir birçok veritabanı ve 
 
 ||||
 |-|-|-|
-|SQL veritabanı|DocumentDB|Depolama (BLOB'ları, tabloları, kuyrukları, dosyaları)|
+|SQL veritabanı|Azure Cosmos DB|Depolama (BLOB'ları, tabloları, kuyrukları, dosyaları)|
 |SQL veri ambarı|SQL Server Esnetme veritabanı|StorSimple|
 
 ve daha fazlası...

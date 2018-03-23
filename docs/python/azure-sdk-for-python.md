@@ -1,15 +1,15 @@
 ---
-title: "Python için Azure SDK | Microsoft Docs"
-description: "Python için Azure SDK'sı, Microsoft Azure hizmetlerini herhangi bir platformda çalışan Python uygulamalardan kullanma kolaylaştırır."
-ms.custom: 
+title: Python için Azure SDK | Microsoft Docs
+description: Python için Azure SDK'sı, Microsoft Azure hizmetlerini herhangi bir platformda çalışan Python uygulamalardan kullanma kolaylaştırır.
+ms.custom: ''
 ms.date: 01/22/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: kraigb
 ms.author: kraigb
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: baa206dfbb9caf58ce872d0c9dee22e183403adb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 728fc1249671025ca99f36f62aab19a1282f15aa
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="azure-sdk-for-python"></a>Python için Azure SDK
 
@@ -50,7 +50,7 @@ Belge üzerinde bulunabilir [python.readthedocs.org için azure sdk](http://azur
 - [BLOB Depolama](/azure/storage/storage-python-how-to-use-blob-storage)
 - [Tablo depolama](/azure/storage/storage-python-how-to-use-table-storage)
 - [Kuyruk depolama](/azure/storage/storage-python-how-to-use-queue-storage)
-- [DocumentDB](/azure/documentdb/documentdb-python-application)
+- [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
 - [Service Bus kuyrukları](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
 - [Hizmet veri yolu konuları/abonelikleri](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
 - [Hizmet Yönetimi](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
@@ -64,6 +64,6 @@ Belgeler olmadan ortak API'ler için birim testleri içinde [SDK'ın GitHub depo
 
 ## <a name="support"></a>Destek
 
-SDK'sı için Git deposu adresindedir [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
+SDK'sı için Git deposu adresindedir [ https://github.com/Azure/azure-sdk-for-python ](https://github.com/Azure/azure-sdk-for-python).
 
 [Depo sorunları dosya](https://github.com/Azure/azure-sdk-for-python/issues) sorunları bulmak ya da SDK'ın kullanımıyla ilgili sorularınız varsa.

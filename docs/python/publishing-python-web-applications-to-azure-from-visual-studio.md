@@ -1,16 +1,16 @@
 ---
-title: "Visual Studio'dan Azure App Service'e bir Python uygulama yayımlama | Microsoft Docs"
-description: "Nasıl bir Python web uygulamasından doğrudan Azure uygulama hizmeti için web.config dosyası için gerekli içerik dahil olmak üzere Visual Studio yayımlanır."
-ms.custom: 
+title: Azure App Service'e bir Python uygulama yayımlama | Microsoft Docs
+description: Nasıl bir Python web uygulamasından doğrudan Azure uygulama hizmeti için web.config dosyası için gerekli içerik dahil olmak üzere Visual Studio yayımlanır.
+ms.custom: ''
 ms.date: 09/27/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 73e82e70733e12116250e47850bbcf1edff13a6d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 110ae4660f81766b5e9fb93afc96f606b0549ec3
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Azure uygulama hizmeti yayımlama
 
@@ -144,7 +144,7 @@ Azure App Service için Visual Studio 2017 kopyalarından sunucuya projenizdeki 
 
     ![Azure 1. adım için Visual Studio 2017 mevcut abonelikleri yayımlama](media/tutorials-common-publish-1a-2017.png)
 
-    b. Geçici bir uygulama hizmeti üzerinde try.azurewebsites.net kullanıyorsanız veya aksi halde bir yayımlama profili kullanmak gerekirse, seçin  **>**  bulmak için Denetim **içe profil**, bu seçenek, ardından seçin seçin **Yayımla**. Bu konumunu ister `.publishsettings` dosyasını indirdiğiniz daha önce.
+    b. Geçici bir uygulama hizmeti üzerinde try.azurewebsites.net kullanıyorsanız veya aksi halde bir yayımlama profili kullanmak gerekirse, seçin **>** bulmak için Denetim **içe profil**, bu seçenek, ardından seçin seçin **Yayımla**. Bu konumunu ister `.publishsettings` dosyasını indirdiğiniz daha önce.
 
     ![Azure 1. adım için Visual Studio 2017 geçici uygulama hizmeti yayımlama](media/tutorials-common-publish-1b-2017.png)
 

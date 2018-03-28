@@ -1,26 +1,26 @@
 ---
-title: "Seçme ve Python yorumlayıcılar yükleme | Microsoft Docs"
-description: "Visual Studio'da kısa yönergelerle yükleyicilerinin nerede bulacağını üzerinde desteklenen Python yorumlayıcılar tam bir listesi."
-ms.custom: 
+title: Seçme ve Python yorumlayıcılar yükleme | Microsoft Docs
+description: Visual Studio'da kısa yönergelerle yükleyicilerinin nerede bulacağını üzerinde desteklenen Python yorumlayıcılar tam bir listesi.
+ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bdec69c45cbd6ebb7943ce38853fd2207000a0f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 3b8d1bf4f0ac6c66222f86e73b7c18cfdceb3354
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-python-interpreters"></a>Python yorumlayıcılar yükleme
 
@@ -28,7 +28,7 @@ Varsayılan olarak Visual Studio 2017 Python geliştirme iş yükü yükleme Pyt
 
 Visual Studio yükleyicisi dışında aşağıdaki tabloda listelenen yorumlayıcılar birini el ile de yükleyebilirsiniz. Örneğin, Visual Studio yüklemeden önce Anaconda 3 yüklediyseniz, Visual Studio yükleyicisi yeniden yüklemeniz gerekmez.
 
-Ve önceki sürümleri, Visual Studio 2015 için yorumlayıcılar biri el ile yüklemelisiniz.
+İçin **Visual Studio 2015 ve önceki**, yorumlayıcılar biri el ile yüklemelisiniz.
 
 Visual Studio (tüm sürümler) otomatik olarak algılar her yüklü Python yorumlayıcı ve ortamına kayıt denetleyerek (aşağıdaki [CESARETLENDİRİCİ 514 - Python kayıt Windows kayıt defterinde](https://www.python.org/dev/peps/pep-0514/)).
 

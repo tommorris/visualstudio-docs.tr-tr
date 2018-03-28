@@ -1,11 +1,11 @@
 ---
-title: "Kod parçacıkları için en iyi uygulamalar | Microsoft Docs"
-ms.custom: 
+title: Kod parçacıkları için en iyi uygulamalar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - code snippets, best practices
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 31951001512578446c4a3ab05efe3ade99223068
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6d5ac19f3caa795fc309b77d0845db0d412e1ccb
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Kod parçacıkları için en iyi uygulamalar
 
@@ -27,13 +27,13 @@ Kod parçacığı kodda bir şeyler yalnızca en temel yolu gösterir. Çoğu uy
 
 ## <a name="handling-exceptions"></a>Özel durumları işleme
 
-Genellikle, kod parçacığında Try... Catch blokları yakalamak ve tüm özel durumları yeniden oluşturma. Projeniz için doğru seçim olabilir. Her özel durum için yanıt birkaç yolu vardır. Örnekler için bkz: [nasıl yapılır: bir özel durum try/catch kullanarak (C#) işleme](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) ve [deneyin... Catch... Finally deyimi (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+Genellikle, kod parçacığında Try... Catch blokları yakalamak ve tüm özel durumları yeniden oluşturma. Projeniz için doğru seçim olabilir. Her özel durum için yanıt birkaç yolu vardır. Örnekler için bkz: [nasıl yapılır: try/catch (C#) kullanarak bir özel durum işleme](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) ve [deneyin... Catch... Finally deyimi (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Dosya konumları
 
 Dosya konumları uygulamanıza uyum, aşağıdakiler hakkında düşünün:
 
-- Erişilebilir bir konumda bulunuyor. Uygulama dosyaların dosya depolama çalışmayabilir böylece kullanıcılar bilgisayar Program dosyaları klasörü için erişiminiz olmayabilir.
+- Erişilebilir bir konumda bulunuyor. Kullanıcılar, erişimi olmayabilir *Program Files* uygulamayla dosyaların depolanması may iş dosyaları değil, böylece bilgisayarının klasör.
 
 - Güvenli bir konumda bulunuyor. Kök klasöründe dosyaların depolanması (*C:\\*) güvenli değildir. Uygulama verileri için öneririz *uygulama verilerini* klasör. Bireysel kullanıcı verileri için uygulamayı her kullanıcı için bir dosya oluşturabilirsiniz *belgeleri* klasör.
 
@@ -55,7 +55,7 @@ Ne kadar güvenli bir parçası olduğu kaynak kodunda kullanıldığı ve kodda
 
 - Komut dosyası teknolojilerini veri geçirme
 
-Daha fazla bilgi için bkz: [güvenli hale getirme uygulamaları](../ide/securing-applications.md).
+Daha fazla bilgi için bkz: [uygulamalarının güvenliğini sağlama](../ide/securing-applications.md).
 
 ## <a name="downloaded-code-snippets"></a>İndirilen kod parçacıkları
 
@@ -73,6 +73,6 @@ IntelliSense kod parçacıkları Visual Studio tarafından yüklenen kendileri b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Basic IntelliSense kodu parçacıkları](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[Uygulamalarının Güvenliğini Sağlama](../ide/securing-applications.md)  
-[Kod Parçacıkları](../ide/code-snippets.md)
+[Visual Basic IntelliSense kod parçacıkları](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
+[Uygulamalarının güvenliğini sağlama](../ide/securing-applications.md)  
+[Kod parçacıkları](../ide/code-snippets.md)

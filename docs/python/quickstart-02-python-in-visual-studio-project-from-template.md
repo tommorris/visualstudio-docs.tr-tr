@@ -1,15 +1,15 @@
 ---
-title: "Hızlı Başlangıç - bir şablon kullanarak Visual Studio'da Python projesi oluşturun | Microsoft Docs"
-description: "Yerleşik şablonlarından birini kullanarak bir Visual Studio projesi oluşturarak Python hızlı şekilde kullanmaya başlayın."
-ms.custom: 
-ms.date: 03/08/2018
-ms.reviewer: 
-ms.suite: 
+title: Hızlı Başlangıç - bir şablon kullanarak Visual Studio'da Python projesi oluşturun | Microsoft Docs
+description: Python için temel bir Flask uygulama yerleşik şablonu kullanarak bir Visual Studio projesi oluşturarak hızlı şekilde kullanmaya başlayın.
+ms.custom: ''
+ms.date: 03/22/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,74 +17,61 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4ab0f91022240d1fcf60bd6889ea9b2ec39f2db3
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 41b677dc41202012ba09908edf3110961139f416
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da bir şablondan bir Python projesi oluşturma
 
-Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installing-python-support-in-visual-studio.md), şablonları, çeşitli kullanarak yeni bir Python proje oluşturmak kolaydır.
+Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installing-python-support-in-visual-studio.md), şablonları, çeşitli kullanarak yeni bir Python proje oluşturmak kolaydır. Bu hızlı başlangıç bir şablon kullanarak basit bir Flask uygulaması oluşturursunuz. Elde edilen proje el ile oluşturduğunuz proje benzer [hızlı başlangıç - Flask ile bir web uygulaması oluşturma](../ide/quickstart-python.md).
 
-1. Visual Studio'yu başlatın.
+1. Visual Studio 2017 başlatın.
 
-1. Seçin **Dosya > Yeni > Proje** (Ctrl + Shift + N). İçinde **yeni proje** iletişim, arama "Python" ve istediğiniz şablonu seçin. Bir şablon seçerek şablonu sağlar kısa bir açıklama görüntüler unutmayın. (Ayrıca bkz. [Python projeleri](managing-python-projects-in-visual-studio.md#project-templates).)
+1. Üst menü çubuğundan seçin **Dosya > Yeni > Proje...** , ardından **yeni proje** "boş flask" iletişim Ara Orta listesinde "Boş Flask Web projesi" şablonunu seçin, proje bir ad verin ve seçin **Tamam**:
 
-    ![Python şablonuyla VS2017 yeni proje iletişim kutusu](media/projects-new-project-dialog2.png)
+    ![Boş Flask Web projesi şablonu ile yeni bir proje oluşturma](media/quickstart-python-06-blank-flask-template.png)
 
-1. Bu Hızlı Başlangıç için "Python uygulaması" şablonunu seçin, proje adı (örneğin, "MakePI") ve konum verin ve seçin **Tamam**.
+1. "Bu proje dış paketler gerekir." bildiren bir iletişim kutusu ister Visual Studio Şablonun içerdiği için bu iletişim kutusu görünür bir `requirements.txt` dosya Flask üzerinde bir bağımlılık belirtme. Visual Studio paketleri otomatik olarak yükleyebilir ve bunları yükleme seçeneğini verir *sanal ortam*. Sanal bir ortam kullanarak önerilir bir genel ortamına, bu nedenle select yükleme üzerinden **sanal bir ortama yükleme** devam etmek için.
 
-1. Visual Studio Proje dosyası oluşturur (bir `.pyproj` diskteki dosya) yanı sıra şablon tarafından açıklanan diğer dosyaları. "Python uygulama" şablonuyla proje projenizi aynı adlı yalnızca bir boş dosya içeriyor. Dosyanın varsayılan olarak Visual Studio düzenleyicisinde açın.
+    ![Flask sanal bir ortama yükleme](media/quickstart-python-07-install-into-virtual-environment.png)
 
-    ![Python uygulama şablonu kullanırken sonuç projesi](media/projects-new-structure.png)
+1. Visual Studio görüntüler **sanal ortam Ekle** iletişim. Varsayılanı kabul etmek ve seçin **oluşturma**, tüm yükseltme istekleri için onay.
 
-1. Aşağıdaki kod, hesaplar ve 1000 basamak pi'nin görüntüler gibi bazı kodu açık dosyaya ekleyin:
+    > [!Tip]
+    > Bir proje başladığınızda, çoğu Visual Studio şablonları yapmak için davet gibi yüksek oranda hemen, sanal bir ortam oluşturmak için önerilir. Kitaplıkları ekleyip gibi sanal ortamlar, projenizin tam gereksinimlerini zamanla güncelleştirin. Daha sonra kolayca oluşturabileceğiniz bir `requirements.txt` bu bağımlılıkların (zaman kullanarak denetim kaynağı gibi) diğer geliştirme bilgisayarlar üzerinde yeniden yüklemek için kullandığınız dosya ve Proje üretim sunucusuna dağıtırken. Sanal ortamları ve bunların avantajları hakkında daha fazla bilgi için bkz: [sanal ortamlar kullanarak](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) ve [requirements.txt ile gerekli paketleri yönetme](../python/managing-required-packages-with-requirements-txt.md).
+
+1. Visual Studio bu ortam oluşturduktan sonra konum **Çözüm Gezgini** olduğunu görmek için bir `app.py` ile birlikte dosya `requirements.txt`. Açık `app.py` şablon kodu gibi içinde sağlamıştır görmek için [hızlı başlangıç - Flask ile bir web uygulaması oluşturma](../ide/quickstart-python.md), iki bölümleri eklendi.
+
+    İlk satırı olan `wsgi_app = app.wsgi_app` , yararlı olabilir bir uygulama bir web ana bilgisayara dağıtırken.
+
+    İkinci ana bilgisayarı ve bağlantı noktası üzerinden bunları kodlamak yerine ortam değişkenleri ayarlamanıza olanak veren başlangıç kodudur. Bu kod, kodunu değiştirmeden geliştirme ve üretim makinelerde yapılandırma kolayca denetlemenizi sağlar:
 
     ```python
-    """ Print digits of PI; code adapted from the second, shorter solution
-    at http://www.codecodex.com/wiki/Calculate_digits_of_pi#Python
-    """
-
-    from time import perf_counter
-
-    def pi_digits_Python(digits):
-        scale = 10000
-        maxarr = int((digits / 4) * 14)
-        arrinit = 2000
-        carry = 0
-        arr = [arrinit] * (maxarr + 1)
-        output = ""
-
-        for i in range(maxarr, 1, -14):
-            total = 0
-            for j in range(i, 0, -1):
-                total = (total * j) + (scale * arr[j])
-                arr[j] = total % ((j * 2) - 1)
-                total = total / ((j * 2) - 1)
-
-            output += "%04d" % (carry + (total / scale))
-            carry = total % scale
-
-        return output
-
-    def test_py():
-        digits = 1000
-
-        start = perf_counter()
-        output = pi_digits_Python(digits)
-        elapsed = perf_counter() - start
-
-        print("PI to " + str(digits) + " digits in " + str(int(elapsed * 10000)/10000) + " seconds:")
-
-        ## replace inserts the decimal point
-        print(output.replace("3", "3.", 1))
-
-    if __name__ == "__main__":
-        test_py()
+    if __name__ == '__main__':
+        import os
+        HOST = os.environ.get('SERVER_HOST', 'localhost')
+        try:
+            PORT = int(os.environ.get('SERVER_PORT', '5555'))
+        except ValueError:
+            PORT = 5555
+        app.run(HOST, PORT)
     ```
 
-1. Ctrl + F5 tuşuna basarak veya seçerek program Çalıştır **hata ayıklama > hata ayıklama olmadan Başlat** menüsünde. Sonuçları konsol penceresinde görüntülenir.
+1. Seçin **hata ayıklama > hata ayıklama olmadan Başlat** uygulamayı çalıştırın ve bir tarayıcı penceresinde açmak için `localhost:5555`.
+
+**Soru: Visual Studio hangi bir Python şablonları sunar?**
+
+**Yanıt**: yüklü Python yüküyle Visual Studio Proje şablonları olanları için de dahil olmak üzere çeşitli sağlar [Flask, Bottle ve Django web çerçeveleri](../python/python-web-application-project-templates.md), Azure bulut Hizmetleri, farklı makine öğrenme senaryolar ve Python uygulaması içeren varolan bir klasör yapısından bir proje oluşturmak için bir şablon bile. Bunlar üzerinden erişim **Dosya > Yeni > Proje...**  seçerek iletişim kutusu **Python** dil düğümünü ve alt düğümlerini.
+
+Visual Studio ayrıca dosya çeşitli sağlar veya *öğe şablonlarını* Python sınıfı, bir Python paket, Python birim testi, web.config dosyaları ve daha hızlı bir şekilde oluşturmak için. Açık bir Python projeniz varsa, öğe şablonları üzerinden erişim **Proje > Yeni Öğe Ekle...**  menü komutu.
+
+Şablonları kullanarak önemli zamandan tasarruf ne zaman bir proje başlangıç veya bir dosya oluşturmak ve aynı zamanda farklı uygulama türleri hakkında bilgi edinin ve yapıları kod için kullanışlı bir yoludur. Bunlar sunar ile tanımak için çeşitli şablonlardan projeler ve öğeler oluşturmak için birkaç dakika sürebilir yararlıdır.
+
+**Soru: Ayrıca Cookiecutter şablonları kullanabilir miyim?**
+
+**Yanıt**: Evet! Aslında, Visual Studio aracılığıyla hakkında bilgi alabilirsiniz Cookiecutter doğrudan tümleştirmesi sağlayan [hızlı başlangıç: Cookiecutter şablondan bir proje oluşturma](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

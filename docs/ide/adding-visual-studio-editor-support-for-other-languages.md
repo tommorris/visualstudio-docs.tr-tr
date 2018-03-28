@@ -1,10 +1,10 @@
 ---
-title: "Visual Studio Düzenleyicisi diğer dilleri desteği ekleme | Microsoft Docs"
-ms.custom: 
+title: Visual Studio Düzenleyicisi diğer dilleri desteği ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - syntax colorization
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: 
+caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
 manager: ghogen
@@ -23,11 +23,11 @@ ms.technology:
 - vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd53222baf58b0c609967bc86e3051c428073e1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 885563b456ca27c319e8b1eafb1963e77d9d1cfa
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Visual Studio Düzenleyicisi diğer dilleri desteği ekleme
 Visual Studio düzenleyicisinde okuma ve farklı bir bilgisayara diller gezinme nasıl destekler ve diğer diller için Visual Studio Düzenleyicisi desteği eklemek için ne hakkında bilgi edinin.  
@@ -66,28 +66,28 @@ Visual Studio düzenleyicisinde okuma ve farklı bir bilgisayara diller gezinme 
   
 -   C#  
   
- Bu dosya türlerini belirli bir dile henüz yüklenmemiştir desteği özellikleri açıklandığı önceki olsa bile sahip. Bazı diller için özelleştirilmiş desteğini yükleme IntelliSense gibi ek dil desteği veya ampuller gibi diğer Gelişmiş dil özellikleri sağlayabilir.  
+Bu dosya türlerini belirli bir dile henüz yüklenmemiştir desteği özellikleri açıklandığı önceki olsa bile sahip. Bazı diller için özelleştirilmiş desteğini yükleme IntelliSense gibi ek dil desteği veya ampuller gibi diğer Gelişmiş dil özellikleri sağlayabilir.  
   
 ## <a name="adding-support-for-non-supported-languages"></a>Desteklenmeyen dilleri desteği ekleme  
  Visual Studio 2015 güncelleştirme 1 ve sonraki sürümlerinde sağlamak Düzenleyicisi'nde dil desteği kullanılarak [TextMate aynı](https://manual.macromates.com/en/language_grammars). Sık kullanılan programlama diliniz şu anda Visual Studio düzenleyicisinde desteklenmiyorsa, ilk olarak, web arama - TextMate paket dil için zaten var olabilir. Ancak, bir bulamazsanız, Visual Studio 2015 güncelleştirme 1 veya daha sonra dil aynı ve kod parçacıkları için bir TextMate paket modeli oluşturarak destek kendiniz ekleyebilirsiniz.  
   
  Visual Studio aşağıdaki klasörde bulunan tüm yeni TextMate aynı ekleyin:  
   
- %userprofile%\\.vs\Extensions  
+ *%userprofile%\\.vs\Extensions*  
   
  Durumunuza uygun yoksa bu temel yolu altında aşağıdaki klasörlerde ekleyin:  
   
 |Klasör adı|Açıklama|  
 |-----------------|-----------------|  
-|\\*\<dil adı >*|Dil klasörü. Değiştir  *\<dil adı >* dil adı. Örneğin, **\Matlab**.|  
-|\Syntaxes|Dilbilgisi klasör. Dil için dilbilgisi .json dosyaları gibi içeren **Matlab.json**.|  
-|\Snippets|Kod parçacıkları klasör. Dili için kod parçacıkları içerir.|  
+|\\*\<dil adı >*|Dil klasörü. Değiştir  *\<dil adı >* dil adı. Örneğin, *\Matlab*.|  
+|*\Syntaxes*|Dilbilgisi klasör. Dilbilgisi içeren *.json* dil için aşağıdaki gibi dosyalar *Matlab.json*.|  
+|*\Snippets*|Kod parçacıkları klasör. Dili için kod parçacıkları içerir.|  
   
- Windows, % USERPROFILE % yolunu Çözümler: c:\Users\\*\<kullanıcı adı >*. Uzantıları klasörünü, sisteminizde mevcut değilse, bunu oluşturmanız gerekir. Bu klasör zaten mevcutsa gizlenir.  
+ Windows, *% USERPROFILE %* yolunu Çözümler: *c:\Users\\*\<kullanıcı adı >*.* Uzantıları klasörünü, sisteminizde mevcut değilse, bunu oluşturmanız gerekir. Bu klasör zaten mevcutsa gizlenir.  
   
  TextMate aynı oluşturma hakkında daha fazla bilgi için bkz [TextMate - dil aynı giriş: kaynak kodu sözdizimi vurgulama ekleme HTML biçiminde katıştırılmış](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) ve [dil dilbilgisi ve özel oluşturma ile ilgili notlar Tema Textmate paket için](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio 2013 gidin geliştirmeleri](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Visual Studio 2013'na gitmek için geliştirmeleri](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)   
  [İzlenecek yol: kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md)   
- [İzlenecek Yol: Deyim Tamamlamayı Görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)
+ [İzlenecek yol: deyim tamamlama görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)

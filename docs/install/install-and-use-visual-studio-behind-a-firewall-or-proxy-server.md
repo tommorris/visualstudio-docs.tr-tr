@@ -1,35 +1,35 @@
 ---
-title: "Yükleme ve Visual Studio ve Azure Hizmetleri Güvenlik Duvarı veya proxy sunucunun arkasında kullanma | Microsoft Docs"
-description: 
-ms.custom: 
+title: Yükleme ve Visual Studio ve Azure Hizmetleri Güvenlik Duvarı veya proxy sunucunun arkasında kullanma | Microsoft Docs
+description: ''
+ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs
-ms.assetid: 
+ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 320b2492d73e0c15d806dac9aac3802bf957f83c
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 7eff12d026830fa5ab5b48657f79a640cb1b8c3b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve Visual Studio ve Azure Hizmetleri Güvenlik Duvarı veya proxy sunucunun arkasında kullanma
 Sizin veya kuruluşunuzun bir güvenlik duvarı veya proxy sunucu gibi güvenlik önlemleri kullanıyorsa, ardından vardır "beyaz liste" ve bağlantı noktaları ve böylece yüklediğinizde ve görsel Stu en iyi deneyimi sahip açmak isteyebilirsiniz protokolleri isteyebilirsiniz etki alanı URL'leri dio ve Azure Hizmetleri.
 
-* **[Visual Studio yükleme](#install-visual-studio)**: tüm bileşenleri ve istediğiniz iş yüklerini erişiminiz beyaz liste etki alanı URL'lere bu tablolar içerir.    
+* **[Visual Studio yükleme](#install-visual-studio)**: tüm bileşenleri ve istediğiniz iş yüklerini erişiminiz beyaz liste etki alanı URL'lere bu tablolar içerir.
 
 * **[Visual Studio ve Azure hizmetlerini kullanma](#use-visual-studio-and-azure-services)**: Bu tablo beyaz liste ve bağlantı noktalarını ve protokolleri tüm özellikleri ve istediğiniz hizmetleri erişiminiz açmak için etki alanı URL'lere içerir.
 
@@ -107,12 +107,13 @@ Bir güvenlik duvarı veya proxy sunucunun arkasındaki Visual Studio ya da Azur
 | Active Directory <br>Grafik | graph.windows.net | https | 443 | Yeni Azure Active Directory uygulamaları sağlamak için kullanılır. Ayrıca Office 365 MSGraph - bağlı hizmeti sağlayıcısı tarafından kullanılır |
 | Azure işlevleri <br>CLI güncelleştirme <br>Onay | functionscdn.azureedge.net | https | 443 | Azure işlevleri CLI güncelleştirilmiş sürümlerini denetlemek için kullanılır. Devre dışı bırakılırsa, önbelleğe alınmış kopyasını (veya Azure işlevleri bileşen tarafından gerçekleştirilen kopya) CLI bunun yerine kullanılacak |
 | Cordova | npmjs.org<br>gradle.org | HTTP/s | 80/443 | HTTP kullanılır Gradle derleme sırasında; yüklemeleri için HTTPS projelerinde Cordova eklenti eklemek için kullanılır|
-| Bulut Gezgini | 1. &#60;clusterendpoint&#62; <br>Service Fabric <br>2. &#60; yönetim uç noktası &#62;<br>Genel bulut Exp <br>3. &#60; grafik endpoint &#62;<br>Genel bulut Exp<br>4. &#60; depolama hesabınızın uç &#62;<br>Depolama düğümleri <br>5. &#60; Azure portal URL'leri &#62;<br>Genel bulut Exp <br>6. &#60; anahtar kasası uç noktaları &#62; <br>Azure Kaynak Yöneticisi'ni VM düğümleri<br>7. &#60; PublicIPAddressOfCluster &#62;<br>Service Fabric uzaktan hata ayıklama ve ETW izlemeleri |   <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7: tcp| 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. dinamik   | 1. Example: test12.eastus.cloudapp.com<br>2. Abonelikleri alır ve Azure kaynaklarını alır/yönetir<br>3. Azure yığın abonelikleri alır.<br>4. Depolama kaynaklarını yönetir (örnek: mystorageaccount.blob.core.windows.net)<br>5. "Portalı'nda Aç" bağlam menüsü seçeneğini (Azure portalında bir kaynak açılır)<br>6. Oluşturur ve VM hata ayıklama için anahtar kasalarını kullanır (örnek: myvault.vault.azure.net) <br><br>7. Dinamik olarak küme ve kullanılabilir bağlantı noktaları düğüm sayısına dayalı olarak bağlantı noktaları bloğunu ayırır. <br><br>Bir bağlantı noktası bloğu ile en az 10 bağlantı noktaları düğüm sayısını üç kez almaya çalışır.<br><br>Akış izlemeleri için 810 bağlantı noktası blok almak için bir deneme yapılır. Bu bağlantı noktası blok hiçbirini zaten kullanılıyor, girişiminde sonraki bloğu almak ve benzeri için yapılır. (810 bağlantı noktalarından büyük olasılıkla kullanılır, yük dengeleyici boştur) <br><br>Benzer şekilde, hata ayıklama için bağlantı noktalarını blokları dört kümesini ayrılmıştır: <br>-connectorPort: 30398, <br>-forwarderPort: 31398, <br>- forwarderPortx86: 31399,<br>-fileUploadPort: 32398<br>|
-| Cloud Services | 1. RDP<br><br>2. core.windows.net <br><br>3. management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60; kullanıcının bulut hizmeti &#62;. cloudapp.NET <br> &#60; kullanıcının VM &#62;. &#60; bölge &#62;. Azure.com | 1. rdp <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. tcp | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1.  Bulut Hizmetleri VM için Uzak Masaüstü <br><br> 2.  Depolama hesabı bileşeni özel tanılama yapılandırması <br><br> 3.  Azure portalı <br><br> 4. Sunucu Gezgini - Azure depolama &#42;  Depolama hesabı adlı müşteri  <br><br> 5.  Portal &#47;açmak için bağlantılar; Abonelik sertifikası &#47;yükle; Yayımlama ayarları dosyası <br><br>6. bir) Bağlayıcısı bulut hizmeti ve VM için uzaktan hata ayıklama için yerel bağlantı noktası<br> 6. b) bulut hizmeti ve VM için uzaktan hata ayıklama için bağlayıcı genel bağlantı noktası <br> 6. c) ileticisi bulut hizmeti ve VM için uzaktan hata ayıklama için yerel bağlantı noktası <br> 6. d) bulut hizmeti ve VM için uzaktan hata ayıklama ileticisi genel bağlantı noktası  <br> 6. e) dosya yükleyici bulut hizmeti ve VM için uzaktan hata ayıklama için yerel bağlantı noktası <br> 6. f) dosya yükleyici bulut hizmeti ve VM için uzaktan hata ayıklama için genel bağlantı noktası |
-| Service Fabric | 1. <br>ocs.Microsoft.com<br>aka.MS <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | https | 443 | 1. Belgeler <br><br> 2. Küme özellik oluşturma <br><br>3. &#42; Azure anahtar kasası adı (örnek:-test11220180112110108.vault.azure.net  <br><br>  4. &#42; dinamik olan (örnek: vsspsextprodch1su1.vsspsext.visualstudio.com) |
+| Bulut Gezgini | 1. &#60;clusterendpoint&#62; <br>Service Fabric <br>2. &#60;yönetim uç noktası&#62;<br>Genel bulut Exp <br>3. &#60;uç nokta grafiği&#62;<br>Genel bulut Exp<br>4. &#60;depolama hesabı uç noktası&#62;<br>Depolama düğümleri <br>5. &#60;azure portalı URL'leri&#62;<br>Genel bulut Exp <br>6. &#60;anahtar kasası uç noktaları&#62; <br>Azure Kaynak Yöneticisi'ni VM düğümleri<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric uzaktan hata ayıklama ve ETW izlemeleri |   <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7: tcp| 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. dinamik   | 1. Example: test12.eastus.cloudapp.com<br>2. Abonelikleri alır ve Azure kaynaklarını alır/yönetir<br>3. Azure yığın abonelikleri alır.<br>4. Depolama kaynaklarını yönetir (örnek: mystorageaccount.blob.core.windows.net)<br>5. "Portalı'nda Aç" bağlam menüsü seçeneğini (Azure portalında bir kaynak açılır)<br>6. Oluşturur ve VM hata ayıklama için anahtar kasalarını kullanır (örnek: myvault.vault.azure.net) <br><br>7. Dinamik olarak küme ve kullanılabilir bağlantı noktaları düğüm sayısına dayalı olarak bağlantı noktaları bloğunu ayırır. <br><br>Bir bağlantı noktası bloğu ile en az 10 bağlantı noktaları düğüm sayısını üç kez almaya çalışır.<br><br>Akış izlemeleri için 810 bağlantı noktası blok almak için bir deneme yapılır. Bu bağlantı noktası blok hiçbirini zaten kullanılıyor, girişiminde sonraki bloğu almak ve benzeri için yapılır. (810 bağlantı noktalarından büyük olasılıkla kullanılır, yük dengeleyici boştur) <br><br>Benzer şekilde, hata ayıklama için bağlantı noktalarını blokları dört kümesini ayrılmıştır: <br>-connectorPort: 30398, <br>-forwarderPort: 31398, <br>- forwarderPortx86: 31399,<br>-fileUploadPort: 32398<br>|
+| Cloud Services | 1. RDP<br><br>2. core.windows.net <br><br>3. management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;kullanıcının bulut hizmeti&#62;. cloudapp.net <br> &#60;kullanıcının VM&#62;. &#60;bölge&#62;. azure.com | 1. rdp <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. tcp | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1.  Bulut Hizmetleri VM için Uzak Masaüstü <br><br> 2.  Depolama hesabı bileşeni özel tanılama yapılandırması <br><br> 3.  Azure portalı <br><br> 4. Sunucu Gezgini - Azure depolama &#42; müşteri depolama hesabı adı  <br><br> 5.  Portalı'nı açmak için bağlantılar &#47; abonelik sertifikası indir &#47; yayımlama ayarları dosyası <br><br>6. bir) Bağlayıcısı bulut hizmeti ve VM için uzaktan hata ayıklama için yerel bağlantı noktası<br> 6. b) bulut hizmeti ve VM için uzaktan hata ayıklama için bağlayıcı genel bağlantı noktası <br> 6. c) ileticisi bulut hizmeti ve VM için uzaktan hata ayıklama için yerel bağlantı noktası <br> 6. d) bulut hizmeti ve VM için uzaktan hata ayıklama ileticisi genel bağlantı noktası  <br> 6. e) dosya yükleyici bulut hizmeti ve VM için uzaktan hata ayıklama için yerel bağlantı noktası <br> 6. f) dosya yükleyici bulut hizmeti ve VM için uzaktan hata ayıklama için genel bağlantı noktası |
+| Service Fabric | 1. <br>ocs.Microsoft.com<br>aka.MS <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | https | 443 | 1. Belgeler <br><br> 2. Küme özellik oluşturma <br><br>3. &#42; Azure anahtar kasası adı (örnek:-test11220180112110108.vault.azure.net  <br><br>  4. &#42; Dinamiktir (örnek: vsspsextprodch1su1.vsspsext.visualstudio.com) |
 | Anlık Görüntü <br>Hata ayıklayıcı | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (visual Studio sürümü bağımlı) | 1. Uygulama hizmeti SKU boyutunu .json dosyası sorgulama <br>2. Çeşitli Azure RM çağrıları <br>3. Site Isınma çağrısıyla  <br>4. Müşteri App Service Kudu endpoint hedeflenen <br>5. Nuget.org içinde yayımlanan sorgu Site uzantısı sürümü <br>6. Uzaktan hata ayıklama kanal |
 |Azure akış analizi <br><br>HDInsight | Management.azure.com |https|443 |Görüntülemek, gönderme, çalıştırmak ve ASA işleri yönetmek için kullanılır <br><br> HDI kümeleri göz atın ve göndermek için kullanılan, tanılama ve HDI işleri hata ayıklama |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Derleme, gönderme, görüntülemek, tanılama ve işleri hata ayıklamak için kullanılır. ADLS dosyalara göz atmak için kullanılır. dosyaları yükleme ve indirme için kullanılır |
+|Paketleme hizmeti | [hesap].visualstudio.com <br/> [hesap].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | *. Npmjs.org, *. nuget.org, ve *. nodejs.org: sadece belirli görev senaryoları (örneğin, NuGet aracı yükleyicisi, düğüm aracı Yükleyici) oluşturmak için gerekli veya ortak upstreams akışlarınızı ile kullanmak istiyorsanız.  Diğer üç etki alanı için çekirdek functinality Packaigng hizmetinin gereklidir. |
 |||||||
 
 

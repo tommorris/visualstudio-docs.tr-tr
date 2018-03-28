@@ -1,26 +1,26 @@
 ---
-title: "Örnek projeler için R araçları Visual Studio için | Microsoft Docs"
-description: "R ve Visual Studio ile çalışmaya başlamak için örnekleri koleksiyonunu dizini."
-ms.custom: 
+title: Örnek projeler için R araçları Visual Studio için | Microsoft Docs
+description: R ve Visual Studio ile çalışmaya başlamak için örnekleri koleksiyonunu dizini.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: f8bf96d4fcfdb29fdaf79fa5adba9b99375aaddd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6d09999f8dd0e53dc8ae3ae61537eb182eaeb6d4
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Visual Studio örnek projeler için R araçları
 
@@ -36,11 +36,11 @@ Bu koleksiyon örnekleri R, R araçları için Visual Studio (RTVS) ve Microsoft
 
 Bu örnek kapsamlı bir R giriş kapsamlı iki kaynak dosyalardaki açıklamalar aracılığıyla sağlar. En iyi deneyimi, dosyanın üst kısmında imleci yerleştirin ve kod satırı-tarafından-kalan için göndermek için Ctrl + Enter tuşlarına **R etkileşimli** penceresi. (Paketleri yüklemek satırları veya iki tamamlamak için bir dakika sürebilir.)
 
-- `1-Getting Started with R.R`paketleri kullanma, yükleme ve veri analizi ve Çizdirmek dahil olmak üzere birçok R temelleri kapsar.
+- `1-Getting Started with R.R` paketleri kullanma, yükleme ve veri analizi ve Çizdirmek dahil olmak üzere birçok R temelleri kapsar.
 
     ![1-Başlarken R.R örnek örnek çıkışı](media/samples-getting-started-output.png)
 
-- `2-Introduction to ggplot2.R`Basit sözdizimi ve görsel olarak çekici çizimleri için bilinen ggplot2 grafik paket tanıtır. Bu örnek Fiji deprem verilerden visualizes.
+- `2-Introduction to ggplot2.R` Basit sözdizimi ve görsel olarak çekici çizimleri için bilinen ggplot2 grafik paket tanıtır. Bu örnek Fiji deprem verilerden visualizes.
 
     ![Örnek 2 giriş ggplot2 için çıktı. R örnek](media/samples-ggplot-output.png)
 
@@ -50,25 +50,25 @@ Bu koleksiyonda örneklerin R makine öğrenimi modellerini oluşturmak için ve
 
 Tüm örnekler, dosyayı açma gibi en üstte imleci yerleştirin ve satır Ctrl + Enter ile kodlarda adım. Her klasör markdown dosyalarında da ek ayrıntıları içerir.
 
-- `Benchmarks`yoğun, paralel Lineer Cebir hesaplamalar performansı göstermek için bir dizi kazanır çalıştırır Microsoft R açık ve Intel matematik çekirdek kitaplığı (MKL) kullanımı ile mümkün olabilir. Benzetimli verilerle değerlendirmeler özellikle iki karşı bir iş parçacığı matris hesaplamaları karşılaştırın.
+- `Benchmarks` yoğun, paralel Lineer Cebir hesaplamalar performansı göstermek için bir dizi kazanır çalıştırır Microsoft R açık ve Intel matematik çekirdek kitaplığı (MKL) kullanımı ile mümkün olabilir. Benzetimli verilerle değerlendirmeler özellikle iki karşı bir iş parçacığı matris hesaplamaları karşılaştırın.
 
     ![Örnek Kıyaslama çizim](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS`Geçmiş verileri Microsoft R Server kullanarak kümesinde, temel bisiklet kiralama olanağı için isteğe bağlı bir tahmin modeli oluşturur. 
+- `Bike_Rental_Estimation_with_MRS` Geçmiş verileri Microsoft R Server kullanarak kümesinde, temel bisiklet kiralama olanağı için isteğe bağlı bir tahmin modeli oluşturur. 
 
-- `Data_Exploration`üç komut dosyaları içerir:
+- `Data_Exploration` üç komut dosyaları içerir:
 
-  - `Import Data from URL.R`bir URL tanımlanan veri dosyası r yüklemek nasıl gösterir
-  - `Import Data from URL to xdf.R`Microsoft R Sunucusu'na bir xdf olarak bir URL tanımlanan veri dosyasını yükleme gösterilmektedir. (MRS gerektirir.)
-  - `Using ggplot2.R`bir uzantısıdır `A First Look at R/2-Introduction to ggplot2.R` ggplot2'ın işlevselliği etkileşimli 3B Çizdirmek dahil olmak üzere daha geniş bir turu vermiş örnek.
+  - `Import Data from URL.R` bir URL tanımlanan veri dosyası r yüklemek nasıl gösterir
+  - `Import Data from URL to xdf.R` Microsoft R Sunucusu'na bir xdf olarak bir URL tanımlanan veri dosyasını yükleme gösterilmektedir. (MRS gerektirir.)
+  - `Using ggplot2.R` bir uzantısıdır `A First Look at R/2-Introduction to ggplot2.R` ggplot2'ın işlevselliği etkileşimli 3B Çizdirmek dahil olmak üzere daha geniş bir turu vermiş örnek.
 
       ![Ggplot2 kullanarak çıktı. R örneği](media/samples-3d-interactive.png)
 
-- `Datasets`üç içeren `.csv` diğer örnekleri tarafından kullanılan dosyaları
-- `Flight_Delays_Prediction_with_R`ve `Flight_Delays_Prediction_with_MRS` R, machine learning ve geçmiş zamanında performans ve hava durumu verilerini kullanarak uçuş gecikmeler tahmin gösterilmektedir. 
-- `Machine learning`Uçuş gecikmeler, muhafazası fiyatları ve bisiklet kiralamaları tahmin etmek öğrenme için üç örnekleri içerir. Birlikte, bu örnekleri uygulamaya R ve MRS gerçek dünyadaki sorunları gösterir. Ayrıca, birçok popüler makine öğrenimi modellerini kullanın ve bir Azure Web hizmetini kullanarak olarak dağıtma olarka bir [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) çalışma.
+- `Datasets` üç içeren `.csv` diğer örnekleri tarafından kullanılan dosyaları
+- `Flight_Delays_Prediction_with_R` ve `Flight_Delays_Prediction_with_MRS` R, machine learning ve geçmiş zamanında performans ve hava durumu verilerini kullanarak uçuş gecikmeler tahmin gösterilmektedir. 
+- `Machine learning` Uçuş gecikmeler, muhafazası fiyatları ve bisiklet kiralamaları tahmin etmek öğrenme için üç örnekleri içerir. Birlikte, bu örnekleri uygulamaya R ve MRS gerçek dünyadaki sorunları gösterir. Ayrıca, birçok popüler makine öğrenimi modellerini kullanın ve bir Azure Web hizmetini kullanarak olarak dağıtma olarka bir [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) çalışma.
 
-- `R_MRO_MRS_Comparison`benzerlikler ve komutlar, sözdizimi, yapılar ve performans ile R, Microsoft R açın ve Microsoft R Server farklar gösterilmektedir altı bölümü karşılaştırması bulunur.
+- `R_MRO_MRS_Comparison` benzerlikler ve komutlar, sözdizimi, yapılar ve performans ile R, Microsoft R açın ve Microsoft R Server farklar gösterilmektedir altı bölümü karşılaştırması bulunur.
 
 ## <a name="whats-special-about-microsoft-r-open-and-microsoft-r-server"></a>Microsoft R açın ve Microsoft R Server hakkında özel nedir?
 

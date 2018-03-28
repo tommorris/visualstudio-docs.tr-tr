@@ -1,16 +1,16 @@
 ---
-title: "Visual Studio'da Python için Azure bulut hizmeti proje şablonu | Microsoft Docs"
-description: "Visual Studio şablon rol dağıtımı, bağımlılıkları içeren ve sorun giderme Python içinde yazılmış Azure bulut Hizmetleri için genel bakış."
-ms.custom: 
+title: Python için Azure bulut hizmeti proje şablonu | Microsoft Docs
+description: Visual Studio şablon rol dağıtımı, bağımlılıkları içeren ve sorun giderme Python içinde yazılmış Azure bulut Hizmetleri için genel bakış.
+ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,17 +18,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e2c2fffddba8746ff2f5696a1eaccf701b83f314
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: b8e12d8823d3246da7c607ca63c056d1927b97d0
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python için Azure bulut hizmeti projeleri
 
 Visual Studio şablonları yardımcı olması için Python kullanarak Azure Cloud Services oluşturmaya başlamak sağlar.
 
-A [bulut hizmeti](http://go.microsoft.com/fwlink/?LinkId=306052) herhangi bir sayıda oluşur *çalışan rolleri* ve *web rolleri*, her biri kavramsal olarak ayrı bir görev gerçekleştiren ancak için ayrı olarak çoğaltılabilir arasında ölçeklendirme için görsel makineler gerektiği gibi. Web rolleri için ön uç web uygulamalarını barındırma sağlar. Bu tür bir uygulama yazmak için Python ilgilenen olduğu WSGI destekleyen herhangi bir web çerçevesidir kullanılabilir (tarafından desteklenen gibi [Web Proje şablonu](python-web-application-project-templates.md)). Çalışan rollerini doğrudan kullanıcılarınız ile etkileşim değil uzun süre çalışan işlemler için tasarlanmıştır. Genellikle yaptıkları kullanımı [veri](http://go.microsoft.com/fwlink/?LinkId=401571) ve [uygulama hizmeti](http://go.microsoft.com/fwlink/?LinkId=401572) ile yüklenebilir kitaplıkları [ `pip install azure` ](http://pypi.org/project/azure).
+A [bulut hizmeti](http://go.microsoft.com/fwlink/?LinkId=306052) herhangi bir sayıda oluşur *çalışan rolleri* ve *web rolleri*, her biri kavramsal olarak ayrı bir görev gerçekleştiren ancak için ayrı olarak çoğaltılabilir arasında sanal makine ölçekleme için gerektiği gibi. Web rolleri için ön uç web uygulamalarını barındırma sağlar. Bu tür bir uygulama yazmak için Python ilgilenen olduğu WSGI destekleyen herhangi bir web çerçevesidir kullanılabilir (tarafından desteklenen gibi [Web Proje şablonu](python-web-application-project-templates.md)). Çalışan rollerini doğrudan kullanıcılarınız ile etkileşim değil uzun süre çalışan işlemler için tasarlanmıştır. Genellikle yaptıkları kullanımı [veri](http://go.microsoft.com/fwlink/?LinkId=401571) ve [uygulama hizmeti](http://go.microsoft.com/fwlink/?LinkId=401572) ile yüklenebilir kitaplıkları [ `pip install azure` ](http://pypi.org/project/azure).
 
 Bu makale proje şablonu ve diğer Visual Studio (önceki sürümlerinde benzer, ancak bazı farklılıklar) 2017 desteği hakkında ayrıntılar içerir. Python'dan Azure ile çalışma hakkında daha fazla bilgi için ziyaret [Azure Python Geliştirici Merkezi](http://go.microsoft.com/fwlink/?linkid=254360).
 

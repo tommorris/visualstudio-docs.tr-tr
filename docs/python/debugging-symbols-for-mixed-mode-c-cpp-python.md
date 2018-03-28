@@ -1,27 +1,27 @@
 ---
-title: "Karışık mod Python/C++, Visual Studio'da hata ayıklama simgeleri | Microsoft Docs"
-description: "Nasıl Visual Studio tam karma mod C++ ve Python hata ayıklama simgeleri yükleme yeteneği sağlar."
-ms.custom: 
+title: Karışık mod Python/C++ hata ayıklama simgeleri | Microsoft Docs
+description: Nasıl Visual Studio tam karma mod C++ ve Python hata ayıklama simgeleri yükleme yeteneği sağlar.
+ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2f309e50337195dc0e4057ce34f56e2575ec1b61
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 02c7465df84776f57ef7748b9838acbb54f5be9b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-debugging-symbols-for-python-interpreters"></a>Hata ayıklama simgeleri Python yorumlayıcılar için yükleme
 

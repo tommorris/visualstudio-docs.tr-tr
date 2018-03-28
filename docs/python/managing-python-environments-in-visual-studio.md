@@ -1,26 +1,26 @@
 ---
-title: "Python ortamları ve Visual Studio yorumlayıcılar yönetme | Microsoft Docs"
-description: "Genel yönetmek için Visual Studio ve Python yorumlayıcılar yükleme, paketleri yükleme, arama yolları ayarlama ve ortamlar için Visual Studio Projeleri Yönetme özel ortamları ayarlama sanal ortamlar Python ortamları penceresini kullanma"
-ms.custom: 
-ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+title: Python ortamları ve yorumlayıcılar yönetme | Microsoft Docs
+description: Genel yönetmek için Visual Studio ve Python yorumlayıcılar yükleme, paketleri yükleme, arama yolları ayarlama ve ortamlar için Visual Studio Projeleri Yönetme özel ortamları ayarlama sanal ortamlar Python ortamları penceresini kullanma
+ms.custom: ''
+ms.date: 03/21/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 558ce58461b27bc9a86906278602d00d96377c63
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: a1bf9c9c016a71c816ed8cc40b675c520e9c9397
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Visual Studio'da Python ortamları yönetme
 
@@ -35,6 +35,8 @@ Windows, Visual Studio'da [Python ortamları](#managing-python-environments-in-v
 
 Ayrıca başka bir deyişle Python kodu için ortamları yönetemez not yalnızca bir klasör kullanılarak açılır olarak **Dosya > Aç > klasör** komutu. Bunun yerine, [var olan koddan Python projesi oluşturma](quickstart-01-python-in-visual-studio-project-from-existing-code.md) Visual Studio'nun ortam özellikleri keyfini için.
 
+Bir ortamda paketleri yüklemek istiyorsanız, başvurmak [Paketleri sekmesi](python-environments-window-tab-reference.md#packages-tab).
+
 ## <a name="types-of-environments"></a>Tür ortamlarda
 
 ### <a name="global-environments"></a>Genel ortamları
@@ -47,7 +49,7 @@ Genel ortamları, bilgisayardaki tüm projeleri için kullanılabilir. Visual St
 
 Genel bir ortama yüklenmişse paketler bu ortam kullanan tüm projeleri için kullanılabilir olduğundan, iki proje uyumsuz paketleri veya aynı paketin farklı sürümlerini gerektirdiğinde çakışmaları oluşabilir. Sanal ortamlar bu gibi çakışmaları yorumlayıcı ve standart kitaplığı genel ortamından kullanarak ancak kendi yalıtılmış klasörleri paket depolarında koruma kaçının.
 
-Visual Studio'da bir alt proje klasöründe depolanan belirli bir proje için sanal bir ortam oluşturabilirsiniz (bkz [sanal ortamları oluşturma](selecting-a-python-environment-for-a-project.md#creating-a-virtual-environment). Proje dosyası, aynı zamanda sanal ortam tanımlar. Visual Studio ayrıca, projenin bu sanal ortama yükleme herhangi bir paket kaydeder `requirements.txt` dosya. Proje sonra paylaşımı ve isteğe bağlı olarak diğer geliştiriciler bilgisayarlarında açarsanız, Visual Studio sanal ortamı yeniden oluşturmak için seçeneği sağlar.
+Visual Studio'da bir alt proje klasöründe depolanan belirli bir proje için sanal bir ortam oluşturabilirsiniz. Visual Studio sağlayan bir komut oluşturmak için bir `requirements.txt` dosya sanal ortamdan ortamında diğer bilgisayarlar üzerinde yeniden kolaylaşır. Daha fazla bilgi için bkz: [sanal ortamlar kullanarak](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ### <a name="conda-environments"></a>Conda ortamları
 
@@ -87,7 +89,7 @@ Ortamlar açılan Seçici için listesidir **genel bakış**, **paketleri**, ve 
 
 ### <a name="what-if-no-environments-appear"></a>Ne hiçbir ortamları görünür?
 
-Hiçbir ortamları görünüyorsa, herhangi bir Python yüklemesi standart konumlarda algılamak Visual Studio başarısız anlamına gelir. Örneğin, edebilirsiniz Visual Studio 2017 yüklü, ancak Python iş yükü için yükleyici seçenekleri tüm yorumlayıcı seçeneklerinde temizlendi. Benzer şekilde, Visual Studio 2015 veya önceki bir sürümünü yüklemiş olabilir ancak bir yorumlayıcı el ile yüklemedi (bkz [seçme ve Python yorumlayıcılar yükleme](installing-python-interpreters.md)).
+Hiçbir ortamları görünüyorsa, herhangi bir Python yüklemesi standart konumlarda algılamak Visual Studio başarısız anlamına gelir. Örneğin, edebilirsiniz Visual Studio 2017 yüklü, ancak Python iş yükü için yükleyici seçenekleri tüm yorumlayıcı seçeneklerinde temizlendi. Benzer şekilde, Visual Studio 2015 veya önceki bir sürümünü yüklemiş olabilir ancak bir yorumlayıcı el ile yüklemedi (bkz [yükleme Python yorumlayıcılar](installing-python-interpreters.md)).
 
 Bilgisayarınızda bir Python yorumlayıcısı var ancak Visual Studio (tüm sürümler) değil algılaması yeniden kullanın biliyorsanız **+ özel...**  konumuna el ile belirtmek için komutu. Sonraki bölüme bakın [el ile varolan bir ortama tanımlayan](#manually-identifying-an-existing-environment).
 

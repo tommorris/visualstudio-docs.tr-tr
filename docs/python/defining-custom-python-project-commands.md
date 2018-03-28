@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio'da Python projeleri için özel menü komutlarını tanımlama | Microsoft Docs"
-description: "Visual Studio'da Python proje bağlam menüsü özel komutları eklemek için proje ve hedefleri dosyaların nasıl düzenleneceğini gösterir. Komut, çalıştırılabilir program, komut dosyaları, modüller, satır içi kod parçacıkları ve PIP çağırabilirsiniz."
-ms.custom: 
+title: Python projeleri için özel menü komutlarını tanımlama | Microsoft Docs
+description: Visual Studio'da Python proje bağlam menüsü özel komutları eklemek için proje ve hedefleri dosyaların nasıl düzenleneceğini gösterir. Komut, çalıştırılabilir program, komut dosyaları, modüller, satır içi kod parçacıkları ve PIP çağırabilirsiniz.
+ms.custom: ''
 ms.date: 02/02/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ec06764bb898888657a144f682827896f52ce223
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 755313a85c96c826335d390235477d76d68cd17f
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Özel komutlar Python projeleri için tanımlama
 
@@ -98,7 +98,7 @@ Her özel komut Python dosyası, bir Python modülü, satır içi Python kodu, r
 
     ![Python bağlam menüdeki görünen özel komutu](media/custom-commands-walkthrough-menu-item.png)
 
-1. Seçin **başlangıç dosyasını çalıştırıp** komutunu ve "Merhaba özel komutlar ve ardından" metnini "devam etmek için tüm tuşuna basın. görünür bir komut penceresi görmeniz gerekir . .".  Pencereyi kapatmak için bir tuşa basın.
+1. Seçin **başlangıç dosyasını çalıştırıp** komutunu ve "Merhaba özel komutlar ve ardından" metnini "devam etmek için tüm tuşuna basın. görünür bir komut penceresi görmeniz gerekir biçimindeki telefon numarasıdır. .".  Pencereyi kapatmak için bir tuşa basın.
 
     ![Bir konsol penceresi özel komut çıktısında](media/custom-commands-walkthrough-console.png)
 
@@ -353,7 +353,7 @@ Keşfetmek için nasıl **başlangıç sunucu** ve **başlangıç hata ayıklama
 
 *Gelen [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) izniyle kullanılır.*
 
-## <a name="troubleshooting"></a>Sorun Giderme
+## <a name="troubleshooting"></a>Sorun giderme
 
 ### <a name="message-the-project-file-could-not-be-loaded"></a>İleti: "proje dosyası yüklenemedi"
 

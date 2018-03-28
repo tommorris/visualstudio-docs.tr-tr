@@ -1,28 +1,28 @@
 ---
-title: "C++ ve Visual Studio'da Python ile çalışma | Microsoft Docs"
-description: "Visual Studio'da Python için C++ uzantısı veya modülü yazmak için işlem amd adımları"
-ms.custom: 
+title: C++ ve Python ile çalışma | Microsoft Docs
+description: Visual Studio'da Python için C++ uzantısı veya modülü yazmak için işlem amd adımları
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: 
-ms.topic: tutorial
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1b2f570a75be94c3bff4b38a6d0641e3ecbce2f2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 12309747949e9f541c69fad64584e86627252907
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -50,6 +50,8 @@ Daha fazla bilgi için bkz: [Visual Studio için Python desteği yükleme](insta
 ## <a name="create-the-python-application"></a>Python uygulaması oluşturma
 
 1. Seçerek Visual Studio'da yeni bir Python projesi oluşturma **Dosya > Yeni > Proje**. Seçin "Python" için arama **Python uygulama** şablonu, bir uygun bir ad ve konum girin ve seçin **Tamam**.
+
+1. C++ birlikte çalışma 32 bit Python Yorumlayıcı (Python önerilen 3.6) kullanmanızı gerektirir. İçinde **Çözüm Gezgini** penceresi Visual Studio'nun proje düğümünü genişletin, sonra genişletin **Python ortamları** düğümü. Varsayılan (ya da kalın ya da "genel varsayılan" ile etiketlenmiş) olarak 32 bit bir ortamın görmüyorsanız, ardından yönergeleri izleyin [bir proje için bir Python ortamı seçme](selecting-a-python-environment-for-a-project.md). Yüklü bir 32 bit yorumlayıcı sahip değilseniz, bkz: [yükleme Python yorumlayıcılar](installing-python-interpreters.md).
 
 1. Projenin `.py` dosya, (daha kolay karşılaştırma için math kitaplığı kullanmadan uygulanan) hiperbolik tanjantını hesaplama benchmarks aşağıdaki kodu yapıştırın. El ile bazı deneyimi için kodu girmek çekinmeyin [düzenleme özellikleri Python](editing-python-code-in-visual-studio.md).
 
@@ -208,7 +210,7 @@ C++ DLL Python için uzantı yapmak için ilk Python türleri ile etkileşim kur
     };
     ```
 
-1. Adlandırılmalıdır modülü yüklediğinde, Python çağıran bir yöntem ekleyin `PyInit_<module-name>`, burada  *&lt;module_name&gt;*  C++ projenin tam olarak eşleşen **genel >hedefadı** özelliği (diğer bir deyişle, dosya adı ile eşleşen `.pyd` projenin oluşturduğu).
+1. Adlandırılmalıdır modülü yüklediğinde, Python çağıran bir yöntem ekleyin `PyInit_<module-name>`, burada *&lt;module_name&gt;* C++ projenin tam olarak eşleşen **genel >hedefadı** özelliği (diğer bir deyişle, dosya adı ile eşleşen `.pyd` projenin oluşturduğu).
 
     ```cpp
     PyMODINIT_FUNC PyInit_superfastcode() {

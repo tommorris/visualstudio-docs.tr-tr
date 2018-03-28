@@ -1,13 +1,13 @@
 ---
-title: "Windows oluşturma Visual Basic ile Visual Studio Forms uygulamasında | Microsoft Docs"
-description: "Visual Basic, adım adım ile Visual Studio'da bir Windows Forms uygulaması oluşturmayı öğrenin."
-ms.custom: 
+title: Windows oluşturma Visual Basic ile Visual Studio Forms uygulamasında | Microsoft Docs
+description: Visual Basic, adım adım ile Visual Studio'da bir Windows Forms uygulaması oluşturmayı öğrenin.
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.devlang: vb
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 592ad202ca41792c6a73a77b7c01bab71fdbcdc7
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: d3a6593a6e459b16541358a0e89dc5bc21fde982
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Windows oluşturma Visual Basic ile Visual Studio'da Forms uygulama
 Bu kısa giriş Visual Studio tümleşik geliştirme ortamı (IDE) için bir Windows tabanlı kullanıcı arabirimi (UI) olan basit bir Visual Basic uygulama oluşturacaksınız.
@@ -50,31 +50,31 @@ Visual Basic proje şablonu seçin ve dosyanızın adı sonra Visual Studio bir 
 
      ![Araç kutusu penceresini açmak için araç'e tıklayın](../ide/media/vb-toolbox-toolwindow.png)  
 
-     (Araç kutusu uçarak çıkış seçeneği görmüyorsanız, menü çubuğundan açabilirsiniz. Bunu yapmak için tıklatın **Görünüm** > **araç**. Veya basın **Ctrl**+**Alt**+**X**.)
+     (Görmüyorsanız **araç** uçarak çıkış seçeneği açabilirsiniz, menü çubuğundan. Bunu yapmak için tıklatın **Görünüm** > **araç**. Veya basın **Ctrl**+**Alt**+**X**.)
 
-2. Tıklatın **PIN** araç kutusu pencere sabitlemek için simge.
+2. Tıklatın **PIN** sabitlemek için simge **araç** penceresi.
 
      ![IDE araç kutusu penceresine sabitlemek için PIN simgesine tıklayın](../ide/media/vb-pin-the-toolbox-window.png)  
 3. Tıklatın **düğmesini** denetlemek ve form üzerine sürükleyin.
 
      ![Forma düğme ekleme](../ide/media/vb-add-a-button-to-form1.png)
 
-4. İçinde **Görünüm** bölümünü **özellikleri** penceresinde, "Bu tıklayın" yazın ve sonra basın **Enter**.
+4. İçinde **Görünüm** bölümünü **özellikleri** penceresinde, türü `Click this`ve tuşuna basarak **Enter**.
 
      ![Formdaki düğmesinde metin ekleyin](../ide/media/vb-button-control-text.png)  
 
-     (Özellikler penceresini görmüyorsanız, menü çubuğundan açabilirsiniz. Bunu yapmak için tıklatın **Görünüm** > **Özellikler penceresini**. Veya basın **F4**.)
+     (Görmüyorsanız **özellikleri** penceresinde açabilirsiniz, menü çubuğundan. Bunu yapmak için tıklatın **Görünüm** > **Özellikler penceresini**. Veya basın **F4**.)
 
-5. İçinde **tasarım** bölümünü **özellikleri** penceresinde "btnClickThis" için "Button1" adını değiştirmek ve tuşuna basarak **Enter**.
+5. İçinde **tasarım** bölümünü **özellikleri** penceresinde adını değiştirmek **Button1** için `btnClickThis`ve tuşuna basarak **Enter**.
 
      ![Bir işlev formundaki düğmesi ekleyin](../ide/media/vb-button-control-function.png)
 
 ### <a name="add-a-label-to-the-form"></a>Forma bir etiket ekleme
 Bir eylem oluşturmak için bir düğme denetimi ekledik, metne göndermek için bir etiket denetimi ekleyelim.
 
-1. Seçin **etiket** Denetim araç kutusu penceresinden form üzerine sürükleyin ve altında bırakma **tıklatın** düğmesi.
+1. Seçin **etiket** gelen denetim **araç kutusu** penceresinde ve ardından form üzerine sürükleyin ve altında bırakma **tıklatın** düğmesi.
 
-2. İçinde **tasarım** bölümünü **özellikleri** penceresinde "lblHelloWorld" için "Label1" adını değiştirmek ve tuşuna basarak **Enter**.
+2. İçinde **tasarım** bölümünü **özellikleri** penceresinde adını değiştirmek **Label1** için `lblHelloWorld`ve tuşuna basarak **Enter**.
 
 ### <a name="add-code-to-the-form"></a>Form için kod ekleme
 
@@ -91,9 +91,9 @@ Bir eylem oluşturmak için bir düğme denetimi ekledik, metne göndermek için
 
      ![Hata ayıklama ve uygulamayı çalıştırmak için Başlat'ı tıklatın](../ide/media/vb-click-start-hello-world.png)
 
-   Birkaç şey gerçekleşir. Visual Studio IDE tanılama araçları penceresini açın ve bir çıktı penceresi çok açılacaktır. Ancak IDE dışında bir Form1 iletişim kutusu görüntülenir. Dahil edilir, **tıklatın** düğmesi ve "Label1" diyor metin.
+   Birkaç şey gerçekleşir. Visual Studio IDE içinde **tanılama araçları** penceresi açılır ve bir **çıkış** penceresi açılır, çok. Ancak IDE dışında bir **Form1** iletişim kutusu görüntülenir. Dahil edilir, **tıklatın** düğmesi ve diyor metin **Label1**.
 
-2. Tıklatın **tıklatın** düğmesini **Form1** iletişim kutusu. "Label1" metin "İçin Hello World!" değiştiğine dikkat edin.
+2. Tıklatın **tıklatın** düğmesini **Form1** iletişim kutusu. Dikkat **Label1** metin değişiklikleri **Hello World!**.
 
     ![Label1 metin içeren bir Form1 iletişim kutusu ](../ide/media/vb-form1-dialog-hello-world.png)
 

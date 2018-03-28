@@ -1,26 +1,28 @@
 ---
 title: Derleme ve Visual Studio'da derleme | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: "28"
+caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 29101e8e82fa9babf553be17414f1330cd6f7e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d8ae644ee96bdad6520661414d101eede86cf180
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Derleme ve Visual Studio'da derleme
 
@@ -42,7 +44,7 @@ Bu bölümdeki belgelere Ayrıntılar IDE tabanlı derleme işleminin gider. Di�
 
 ## <a name="overview-of-building-from-the-ide"></a>IDE binanın genel bakış  
 
-Bir proje oluşturduğunuzda, Visual Studio Proje ve proje içeren çözüm derleme yapılandırmaları varsayılan oluşturulur.  Bu yapılandırmaları nasıl çözümler ve projeler yerleşik dağıtılan ve tanımlayın. Proje yapılandırmaları özellikle hedef Platformu (örneğin, Windows pr Linux) için benzersiz ve yapı türü (örneğin, hata ayıklama veya yayın). İster ve kendi yapılandırmaları gerektiği gibi oluşturabilirsiniz ancak bu yapılandırmalar düzenleyebilirsiniz.
+Bir proje oluşturduğunuzda, Visual Studio Proje ve proje içeren çözüm derleme yapılandırmaları varsayılan oluşturulur.  Bu yapılandırmaları nasıl çözümler ve projeler yerleşik dağıtılan ve tanımlayın. Proje yapılandırmaları özellikle hedef Platformu (örneğin, Windows veya Linux) için benzersiz ve yapı türü (örneğin, hata ayıklama veya yayın). İster ve kendi yapılandırmaları gerektiği gibi oluşturabilirsiniz ancak bu yapılandırmalar düzenleyebilirsiniz.
 
 IDE içinden derleme ilk bir giriş için bkz: [izlenecek yol: uygulama oluşturma](walkthrough-building-an-application.md).  
 
@@ -56,6 +58,6 @@ Buradan, çeşitli diğer görevleri gözden geçirebilirsiniz:
 - [Yapı seçeneklerini ayarlama](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Paralel olarak birden çok proje derleme](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
 
 - [Web sitesi proje oluşturma (derleme)](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   

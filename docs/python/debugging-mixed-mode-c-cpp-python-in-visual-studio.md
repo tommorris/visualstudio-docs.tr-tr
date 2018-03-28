@@ -1,28 +1,28 @@
 ---
-title: "Visual Studio'da Python için karışık mod hata ayıklaması | Microsoft Docs"
-description: "Aynı anda C++ ve Python ortamları, görüntüleme değerleri ve evaluting ifadeleri arasında atlama dahil olmak üzere Visual Studio'da hata ayıklama yapma."
-ms.custom: 
+title: Python için karışık mod hata ayıklaması | Microsoft Docs
+description: Aynı anda C++ ve Python ortamları, görüntüleme değerleri ve evaluting ifadeleri arasında atlama dahil olmak üzere Visual Studio'da hata ayıklama yapma.
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d33e4d15e9d0de5c3aa35354dd1c8840d0ed9bd2
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 4f555e24c1328a4d784e3f8c5b2d0f1a7c590f8b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Python ve C++ birlikte hata ayıklama
 
@@ -66,7 +66,7 @@ Karışık mod hata ayıklama özelliği, bu makalede anlatıldığı şunlardı
 
 1. Karışık modda hata ayıklama ilk kez başlattığınızda, görebileceğiniz bir **simgeleri Python gerekli** iletişim (bkz [karışık mod hata ayıklama simgeleri](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Verilen tüm Python ortamı için yalnızca bir kez simgeleri yüklemeniz gerekir. Visual Studio 2017 yükleyici Python desteğini yüklerseniz, simge otomatik olarak dahil edilir.
 
-1. Standart Python hata ayıklama sırasında kullanılabilir kendisini ziyaret etmek için kaynak kodunu olun [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/)sürümünüz için uygun arşiv indirin ve bir klasöre ayıklayın. Ardından belirli dosyaları noktası ne olursa olsun, o klasördeki için Visual Studio ister noktası.
+1. Standart Python hata ayıklama sırasında kullanılabilir kendisini ziyaret etmek için kaynak kodunu olun [ https://www.python.org/downloads/source/ ](https://www.python.org/downloads/source/)sürümünüz için uygun arşiv indirin ve bir klasöre ayıklayın. Ardından belirli dosyaları noktası ne olursa olsun, o klasördeki için Visual Studio ister noktası.
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Karışık mod C/C++ projesinde hata ayıklamayı etkinleştir
 

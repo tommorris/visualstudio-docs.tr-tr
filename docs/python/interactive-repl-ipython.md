@@ -1,27 +1,27 @@
 ---
-title: Visual Studio'da IPython REPL | Microsoft Docs
-description: "Visual Studio etkileşimli penceresini IPython modunda etkileşimli paralel bilgi işlem özelliklere sahip bir kullanıcı dostu etkileşimli geliştirme ortamı kullanarak."
-ms.custom: 
+title: IPython REPL (etkileşimli pencere) | Microsoft Docs
+description: Visual Studio etkileşimli penceresini IPython modunda etkileşimli paralel bilgi işlem özelliklere sahip bir kullanıcı dostu etkileşimli geliştirme ortamı kullanarak.
+ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f18ba5e7ce44766262851f68c829c887bfc9581
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 76f34e28e35af00ed6352177a00f669b351058d1
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Etkileşimli pencerede IPython kullanma
 
@@ -36,7 +36,7 @@ Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerek
 
 1. Bakmak **paketleri** (veya **PIP**) sekmesini ve emin `IPython` ve `matplotlib` listelenir. Yoksa, bunları burada yükleyin.
 
-1. Seçin **genel bakış** sekmesinde ve seçin **kullanım IPython etkileşimli mod.** (Visual Studio 2015'te seçin **etkileşimli seçenekleri yapılandırın** açmak için **seçenekleri** iletişim kutusunda, ardından **etkileşimli mod** IPython ve seçin **Tamam **).
+1. Seçin **genel bakış** sekmesinde ve seçin **kullanım IPython etkileşimli mod.** (Visual Studio 2015'te seçin **etkileşimli seçenekleri yapılandırın** açmak için **seçenekleri** iletişim kutusunda, ardından **etkileşimli mod** IPython ve seçin **Tamam** ).
 
 1. Seçin **açık etkileşimli pencere** IPython modunda etkileşimli penceresi getirmek için. Etkileşimli mod yalnızca değiştirdiyseniz penceresi sıfırlamanız gerekebilir; yalnızca Enter tuşuna basın gerekebilir bir >>> istemi belirir.
 

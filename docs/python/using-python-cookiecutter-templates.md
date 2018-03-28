@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio'da Python için CookieCutter uzantısı | Microsoft Docs"
-description: "Visual Studio için Python kodu şablonları bulmak ve bu şablonlardan proje oluşturmak için grafik Cookiecutter uzantısı destekler."
-ms.custom: 
+title: Python için CookieCutter uzantısı | Microsoft Docs
+description: Visual Studio için Python kodu şablonları bulmak ve bu şablonlardan proje oluşturmak için grafik Cookiecutter uzantısı destekler.
+ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96590d2856d14b8c74a9c30f73e3a933cf572164
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d70a6a4041892166b383574730ac1814a19ad39a
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-the-cookiecutter-extension"></a>Cookiecutter uzantısını kullanarak
 
@@ -35,7 +35,7 @@ Bir kez yüklendikten sonra seçin **Görünüm > Cookiecutter Explorer** onun p
 
 ## <a name="cookiecutter-workflow"></a>Cookiecutter iş akışı
 
-İzleyen bölümlerde açıklanan aynıdır, Cookiecutter çalışmak gözatma ve bir şablonu seçilmesi, yerel makinenize kopyalama seçeneklerini ayarlama ve bu şablondan kod oluşturma işlemi kullanır.
+İzleyen bölümlerde açıklanan aynıdır, Cookiecutter çalışmak gözatma ve bir şablonu seçilmesi, yerel bilgisayarınıza kopyalama seçeneklerini ayarlama ve bu şablondan kod oluşturma işlemi kullanır.
 
 ### <a name="browsing-templates"></a>Gözatma şablonları
 
@@ -43,7 +43,7 @@ Cookiecutter giriş sayfası aşağıdaki gruplara ayrılmış aralarından seç
 
 | Grup | Açıklama |
 | --- | --- |
-| yüklü | Yerel makinenize yüklü şablonlar. Çevrimiçi bir şablon kullanıldığında, kendi deposu için bir alt klasörü otomatik olarak kopyalanmış `~/.cookiecutters`. Seçili yüklü şablon basarak silebilirsiniz **Del**. |
+| yüklü | Yerel bilgisayarınızda yüklü şablonlar. Çevrimiçi bir şablon kullanıldığında, kendi deposu için bir alt klasörü otomatik olarak kopyalanmış `~/.cookiecutters`. Seçili yüklü şablon basarak silebilirsiniz **Del**. |
 | Önerilen | Şablonları önerilen akıştan yüklendi. Varsayılan akış Microsoft tarafından seçkin. Bkz: [Cookiecutter seçenekleri](#cookiecutter-options) aşağıda akış özelleştirme hakkında bilgi. |
 | GitHub | Cookiecutter anahtar sözcüğü için GitHub arama sonuçları. Sonuçları github'dan gelen geri anlatır, daha fazla sonuç mevcutsa, **yük daha fazla** listesinin sonunda görüntülenir. |
 | Özel | Özel bir konuma arama kutusuna girdiğinizde, bu grupta belirir. Yerel diskinize GitHub deposuna tam yolunu yazın veya bir klasörün tam yolunu kullanabilirsiniz. |
@@ -52,7 +52,7 @@ Cookiecutter giriş sayfası aşağıdaki gruplara ayrılmış aralarından seç
 
 Ardından bir şablonu seçtiğinizde, **sonraki**, Cookiecutter çalışabilmesi için yerel bir kopya yapar.
 
-Bir şablondan seçerseniz **önerilen** veya **GitHub** gruplar veya arama kutusuna özel bir URL girin ve bu şablonu seçin, kopyalanabilen ve yerel makinenize yüklü. Bu şablon önceki Visual Studio oturumunda yüklediyseniz, otomatik olarak silinir ve en son sürüm kopyalanamıyor.
+Bir şablondan seçerseniz **önerilen** veya **GitHub** gruplar veya arama kutusuna özel bir URL girin ve bu şablonu seçin, kopyalanabilen ve yerel bilgisayarınızda yüklü. Bu şablon önceki Visual Studio oturumunda yüklediyseniz, otomatik olarak silinir ve en son sürüm kopyalanamıyor.
 
 Bir şablondan seçerseniz **yüklü** grubuna veya arama kutusuna özel klasör yolu girin ve bu şablonu seçin Visual Studio Şablon Kopyalama olmadan yükler.
 
@@ -207,7 +207,7 @@ Bazı şablonlar Cookiecutter kullanıcı Arabirimi ile uyumlu olmayan sonrası 
 
 ### <a name="hook-script-not-supported-on-windows"></a>Kanca betik Windows desteklenmiyor
 
-Son betik ise `.sh`, sonra da Windows makinenizde bir uygulamayla ilişkili olmayabilir. Uyumlu bir uygulamayı Windows Mağazası'nda bulmak için isteyen bir Windows iletişim kutusu görebilirsiniz.
+Son betik ise `.sh`, sonra da, Windows bilgisayarınızdaki bir uygulamayla ilişkili olmayabilir. Uyumlu bir uygulamayı Windows Mağazası'nda bulmak için isteyen bir Windows iletişim kutusu görebilirsiniz.
 
 ### <a name="templates-with-known-issues"></a>Şablonları ile ilgili bilinen sorunlar
 

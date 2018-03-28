@@ -1,11 +1,11 @@
 ---
-title: "MSBuild ayrılmış ve tanınmış Özellikler | Microsoft Docs"
-ms.custom: 
+title: MSBuild ayrılmış ve tanınmış Özellikler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -15,22 +15,22 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reserved properties
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
-caps.latest.revision: 
+caps.latest.revision: ''
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 89610426b944c3b3948c23c246337fd7aa9c1af8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9eafd9de132e2fa71ddfb4016115d84ef222db26
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild Ayrılmış ve Tanınmış Özellikleri
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Proje dosyası hakkındaki bilgileri depolamak önceden tanımlanmış özellikler kümesi sağlar ve [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ikili dosyaları. Bu özellikler, diğer aynı şekilde değerlendirilir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] özellikleri. Örneğin, kullanılacak `MSBuildProjectFile` özelliği, yazdığınız `$(MSBuildProjectFile)`.  
   
- MSBuild ayrılmış ve tanınmış özellikleri önceden tanımlamayı aşağıdaki tabloda değerleri kullanır. Ayrılmış özellikler kılınamaz ancak tanınmış özellikler proje dosyasında aynı adlı ortam özellikleri, genel özellikleri veya bildirilir özellikleri kullanılarak geçersiz kılınabilir.  
+ MSBuild ayrılmış ve tanınmış özellikleri önceden tanımlamayı aşağıdaki tabloda değerleri kullanır. Ayrılmış özellikler kılınamaz ancak tanınmış özellikler proje dosyasında aynı adlı ortam özellikleri, genel özellikleri veya bildirilir özellikleri kullanılarak geçersiz kılınabilir.
   
 ## <a name="reserved-and-well-known-properties"></a>Ayrılmış ve Tanınmış Özellikler  
  Aşağıdaki tabloda açıklanmaktadır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] özellikleri önceden tanımlanmış.  
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/09/2018
 |`MSBuildExtensionsPath`|.NET Framework 4'te tanıtılan: varsayılan değerleri arasında fark yoktur `MSBuildExtensionsPath` ve `MSBuildExtensionsPath32`. Ortam değişkeni ayarlayabilirsiniz `MSBUILDLEGACYEXTENSIONSPATH` varsayılan değerini davranışı etkinleştirmek için bir null olmayan değere `MSBuildExtensionsPath` eski sürümlerinde.<br /><br /> .NET Framework 3.5 ve önceki sürümlerde varsayılan değerini `MSBuildExtensionsPath` \Program Files\ veya \Program dosyaları (x86) klasörü altında geçerli işlem verileri bağlı olarak MSBuild alt yolunu işaret eder. Örneğin, bir 64-bit makine üzerindeki 32-bit işlem için bu özelliği \Program Files (x86) klasörüne işaret ediyor. Bir 64-bit makine üzerindeki 64-bit işlem için bu özelliği \Program Files klasörüne işaret ediyor.<br /><br /> Bu özellik üzerinde son ters eğik çizgi eklemeyin.<br /><br /> Bu konum, özel hedef dosyaları yerleştirmek için kullanışlı bir yerdir. Örneğin, hedef dosyalarınızı \Program Files\MSBuild\MyFiles\Northwind.targets yüklenebilir ve daha sonra bu XML kodunu kullanarak proje dosyalarında alınan:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|İyi bilinen|  
 |`MSBuildExtensionsPath32`|Yolunu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] \Program Files veya \Program Files (x86) klasörü altında alt. Bu yolu her zaman bir 32-bit makine ve \Program 32-bit \Program Files klasöründeki bir 64-bit makine (x86) dosyalarda işaret eder. Ayrıca bkz. `MSBuildExtensionsPath` ve `MSBuildExtensionsPath64`.<br /><br /> Bu özellik üzerinde son ters eğik çizgi eklemeyin.|İyi bilinen|  
 `MSBuildExtensionsPath64`|Yolunu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] \Program Files klasöründeki altında alt. Bir 64-bit makine için bu yolu her zaman \Program Files klasörüne işaret ediyor. 32-bit makine için bu yol boştur. Ayrıca bkz. `MSBuildExtensionsPath` ve `MSBuildExtensionsPath32`.<br /><br /> Bu özellik üzerinde son ters eğik çizgi eklemeyin.|İyi bilinen|  
-|`MSBuildLastTaskResult`|`true`herhangi bir hata olmadan (uyarıları olsaydı bile), önceki görev tamamlandı varsa veya `false` önceki görev hatalar varsa. Bir görevde bir hata ortaya çıkarsa, genellikle, hata bu projede gerçekleşen son şeydir. Bu nedenle, bu özellik hiçbir zaman değeri `false`, bu senaryolarda dışındaki:<br /><br /> -Zaman `ContinueOnError` özniteliği [görev öğesi (MSBuild)](../msbuild/task-element-msbuild.md) ayarlanır `WarnAndContinue` (veya `true`) veya `ErrorAndContinue`.<br /><br /> -Zaman `Target` sahip bir [OnError öğesi (MSBuild)](../msbuild/onerror-element-msbuild.md) bir alt öğesi olarak.|Ayrılmış|  
+|`MSBuildLastTaskResult`|`true` herhangi bir hata olmadan (uyarıları olsaydı bile), önceki görev tamamlandı varsa veya `false` önceki görev hatalar varsa. Bir görevde bir hata ortaya çıkarsa, genellikle, hata bu projede gerçekleşen son şeydir. Bu nedenle, bu özellik hiçbir zaman değeri `false`, bu senaryolarda dışındaki:<br /><br /> -Zaman `ContinueOnError` özniteliği [görev öğesi (MSBuild)](../msbuild/task-element-msbuild.md) ayarlanır `WarnAndContinue` (veya `true`) veya `ErrorAndContinue`.<br /><br /> -Zaman `Target` sahip bir [OnError öğesi (MSBuild)](../msbuild/onerror-element-msbuild.md) bir alt öğesi olarak.|Ayrılmış|  
 |`MSBuildNodeCount`|En yüksek oluştururken kullanılan eşzamanlı işlem sayısı. İçin belirtilen değer budur **/maxcpucount** komut satırında. Belirttiyseniz **/maxcpucount** sonra bir değer belirtmeden `MSBuildNodeCount` bilgisayar işlemci sayısını belirtir. Daha fazla bilgi için bkz: [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md) ve [yapı paralel olarak birden çok proje](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).|Ayrılmış|  
 |`MSBuildProgramFiles32`|32-bit program klasörünün konumunu; Örneğin, `C:\Program Files (x86)`.<br /><br /> Bu özellik üzerinde son ters eğik çizgi eklemeyin.|Ayrılmış|  
 |`MSBuildProjectDefaultTargets`|Belirtilen hedefleri tam listesi `DefaultTargets` özniteliği `Project` öğesi. Örneğin, aşağıdaki `Project` öğesi sahip olabilir bir `MSBuildDefaultTargets` özellik değerinin `A;B;C`:<br /><br /> `<Project DefaultTargets="A;B;C" >`|Ayrılmış|  
@@ -61,6 +61,23 @@ ms.lasthandoff: 02/09/2018
 |`MSBuildThisFileName`|Dosya adı kısmını `MSBuildThisFileFullPath`, dosya adı uzantısı olmadan.|Ayrılmış|  
 |`MSBuildToolsPath`|Yükleme yolunun [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] değeriyle ilişkili sürüm `MSBuildToolsVersion`.<br /><br /> Son ters eğik çizgi yola dahil etmeyin.<br /><br /> Bu özellik değiştirilemiyor.|Ayrılmış|  
 |`MSBuildToolsVersion`|Sürümü [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projeyi oluşturmak için kullanılır Toolset.<br /><br /> Not: Bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] araç takımı, görevler, hedefler ve bir uygulama oluşturmak için kullanılan araçlar oluşur. Csc.exe ve vbc.exe gibi derleyicileri araçları içerir. Daha fazla bilgi için bkz: [araç takımı (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), ve [standart ve özel araç takımı yapılandırmaları](../msbuild/standard-and-custom-toolset-configurations.md).|Ayrılmış|  
-  
+
+## <a name="names-that-conflict-with-msbuild-elements"></a>MSBuild öğeleri ile çakışan adları
+
+Yukarıdakilerin yanı sıra kullanıcı tarafından tanımlanan özellikler, öğeleri veya öğe meta verileri için dil öğeleri kullanılamaz MSBuild karşılık gelen adları:
+
+* VisualStudioProject
+* Hedef
+* PropertyGroup
+* Çıkış
+* ItemGroup
+* UsingTask
+* ProjectExtensions
+* OnError
+* ImportGroup
+* Bunu seçin
+* ne zaman
+* Aksi takdirde
+
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MSBuild başvurusu](../msbuild/msbuild-reference.md) [MSBuild özellikleri](../msbuild/msbuild-properties.md)

@@ -1,12 +1,8 @@
 ---
 title: Visual Studio'da normal ifadeler kullanarak | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.custom: 03/26/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -21,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: cd7da9b9993f2a3ae2d1eb94cad18e99f5281fde
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Visual Studio'da normal ifadeler kullanma
 
@@ -33,7 +29,9 @@ Visual Studio kullanan [.NET Framework normal ifadeleri](/dotnet/standard/base-t
 
 ## <a name="replacement-patterns"></a>Değiştirme desenleri
 
-Değiştirme desenleri kullanılan normal ifadeler hakkında daha fazla bilgi için bkz: [(.NET Kılavuzu) normal ifadelerdeki değişimler](/dotnet/standard/base-types/substitutions-in-regular-expressions). Numaralı yakalama grubu kullanmak için söz dizimi `$1` numaralı grubu belirtmek için ve `(x)` söz konusu grup belirtmek için. Örneğin, gruplandırılmış normal ifade `(\d)([a-z])` aşağıdaki dizede dört eşleştiğini bulur: **1a 2b 3c 4d**. Değiştirme dizesini `z$1` Bu dizeye dönüştürür **z1 z2 z3 z4**.
+Numaralı yakalama grubu kullanmak için normal ifade deseni parantezlerde grubuyla koyun. Kullanım `$number`, burada `number` belirli, numaralandırılmış bir grubu değiştirme desende belirtmek için 1'den başlayarak bir tamsayıdır. Örneğin, gruplandırılmış normal ifade `(\d)([a-z])` iki grupları tanımlar: tek bir ondalık basamak içeren ilk grubu ve ikinci grup arasında tek bir karakter içeriyor **bir** ve **z**. İfade dört eşleşmeleri aşağıdaki dizeyi bulur: **1a 2b 3c 4d**. Değiştirme dizesini `z$1` yalnızca ilk grubu başvuruyor ve dizeye dönüştürür **z1 z2 z3 z4**.
+
+Değiştirme desenleri kullanılan normal ifadeler hakkında daha fazla bilgi için bkz: [(.NET Kılavuzu) normal ifadelerdeki değişimler](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
 ## <a name="regular-expression-examples"></a>Normal ifade örnekleri
 
@@ -52,7 +50,7 @@ Bazı örnekler şunlardır:
 |Satırın sonuna eşleşme dizeye sabitleme|\r?$|`End\r?$` "yalnızca ne zaman bir satırın sonunda görüntülenir son" ile eşleşir.|
 |Kümedeki herhangi bir tek karakterle eşleşen|[abc]|`b[abc]` "ba", "bb" ve "bc" ile eşleşir.|
 |Karakter aralığı içinde herhangi bir karakter eşleşmesi|[a-f]|`be[n-t]` "içindeki"arasında","altında"içindeki" ben"ve"bes"içindeki"yanındaki"ancak değil"altında"sonuç" eşleşir.|
-|Yakalama ve örtük olarak parantez içinde yer alan ifade sayı|()|`([a-z])X\1` "aXa" ve "bXb" ancak değil "aXb" ile eşleşir. ". İlk ifade grubu "[a-z]" "\1" başvuruyor.|
+|Yakalama ve örtük olarak parantez içinde yer alan ifade sayı|()|`([a-z])X\1` "aXa" ve "bXb" ancak değil "aXb" ile eşleşir. İlk ifade grubu "[a-z]" "\1" başvuruyor.|
 |Bir eşleşme geçersiz kıl|(?!abc)|`real (?!ity)` eşleşme "gerçek" "Gayrimenkul" ve "gerçekten" ancak değil söz "gerçekte." Bu ayrıca ikinci "gerçek" (ancak değil ilk "gerçek") "realityreal içinde" bulur.|
 |Belirli bir karakter kümesi değil herhangi bir karakter eşleşmesi|[^abc]|`be[^n-t]` "bef" ile eşleşen "önce", "arka plan", "beh" ve "bel" içindeki "altında" ancak değil "altında".|
 |Eşleşen ifadesinden önce veya simgesinden sonra bir.|&#124;|`(sponge&#124;mud) bath` eşleşme "Sünger banyo" ve "mud banyo."|

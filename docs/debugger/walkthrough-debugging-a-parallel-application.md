@@ -1,11 +1,12 @@
 ---
-title: "İzlenecek yol: paralel uygulamada hata ayıklama | Microsoft Docs"
+title: 'İzlenecek yol: paralel uygulamada hata ayıklama | Microsoft Docs'
 ms.custom: H1HackMay2017
-ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.date: 03/22/2018
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
@@ -21,16 +22,17 @@ helpviewer_keywords:
 - parallel applications, debugging [Visual Basic]
 - parallel applications, debugging [C#]
 ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
-caps.latest.revision: "28"
+caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b05192c2d57c280cef970d4b8887ff7eadbb27b9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: af74685428f15cebdcaf0992ae3ad529f2dd41b8
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>İzlenecek yol: Visual Studio paralel uygulamada hata ayıklama
 Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows. Bu windows anlamanıza ve kullanan kodu çalışma zamanı davranışını doğrulayın Yardım [görev paralel kitaplığı (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) veya [eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime). Bu kılavuzda yerleşik kesme noktaları olan örnek kodu sağlıyor. Kod keser sonra izlenecek nasıl kullanılacağını gösterir **Paralel Görevler** ve **Paralel Yığınlar** windows bunu inceleyin.  
@@ -103,13 +105,11 @@ Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Pa
   
      ![Paralel Yığınlar penceresini görünümünde iş parçacıkları](../debugger/media/pdb_walkthrough_1.png "PDB_Walkthrough_1")  
   
-     Çağrı yığını ana iş parçacığı bir kutusunda görünür ve diğer dört iş parçacığı çağrı yığınları başka bir kutusunda gruplandırılır. Kendi yığın çerçeveleri aynı yöntemi bağlamları paylaştığından dört iş parçacığı birlikte gruplandırılır; diğer bir deyişle, aynı yöntemleri oldukları: `A`, `B`, ve `C`. İş parçacığı kimlikleri ve adları Paylaş aynı kutusu iş parçacığı üzerine gelerek başlığı üzerindeyken görüntülenecek (**4 iş parçacığı**). Geçerli iş parçacığının görüntülenen içinde aşağıdaki çizimde gösterildiği gibi kalın.  
+     Çağrı yığını ana iş parçacığı bir kutusunda görünür ve diğer dört iş parçacığı çağrı yığınları başka bir kutusunda gruplandırılır. Kendi yığın çerçeveleri aynı yöntemi bağlamları paylaştığından dört iş parçacığı birlikte gruplandırılır; diğer bir deyişle, aynı yöntemleri oldukları: `A`, `B`, ve `C`. İş parçacığı kimlikleri ve adları Paylaş aynı kutusu iş parçacığı üzerine gelerek üstbilgi kutusuyla üzerinden görünümüne (**4 iş parçacığı**). Geçerli iş parçacığının kalın olarak görüntülenir.  
   
      ![İş parçacığı kimlikleri ve adları gösterir araç ipucu](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")  
   
-     Sarı ok geçerli iş parçacığının etkin yığın çerçevesi gösterir. Daha fazla bilgi için bunun üzerine getirin  
-  
-     ![Araç İpucu etkin yığın çerçevesinde](../debugger/media/pdb_walkthrough_1b.png "PDB_Walkthrough_1B")  
+     Sarı ok geçerli iş parçacığının etkin yığın çerçevesi gösterir.
   
      Yığın çerçevelerini göstermek için ne kadar ayrıntı ayarlayabilirsiniz (**modül adlarını**, **parametre türleri**, **parametre adları**, **parametre değerlerini**, **Satır numaralarını** ve **bayt kaydırır**) içinde sağ tıklanarak **çağrı yığını** penceresi.  
   
@@ -127,7 +127,7 @@ Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Pa
   
      Örneğin, kutusu üstbilgisi getirin **1 iş parçacığı** veya **2 iş parçacığı**, iş parçacığı iş parçacıklarının kimlikleri görmek için. İş parçacığı kimlikleri artı diğer çerçeve ayrıntıları görmek için yığın çerçeveleri gelebilirsiniz. Geçerli iş parçacığının mavi Vurgu gösterir ve geçerli iş parçacığının etkin yığın çerçevesi sarı ok gösterir.  
   
-     Havlu iş parçacığı simgesi (çakışan mavi ve kırmızı waved satırları) noncurrent iş parçacıklarının etkin yığın çerçeveleri belirtin. İçinde **çağrı yığını** penceresinde, çerçeve geçiş yapmak için S.B çift tıklayın. **Paralel Yığınlar** penceresi bir eğri gösteren yeşil ok simgesini kullanarak geçerli iş parçacığının geçerli yığın çerçevesini gösterir.  
+     (Satırları interweaved) havlu iş parçacığı simgesi noncurrent iş parçacıklarının etkin yığın çerçeveleri belirtin. İçinde **çağrı yığını** penceresinde, çerçeve geçiş yapmak için S.B çift tıklayın. **Paralel Yığınlar** penceresi bir eğri gösteren yeşil ok simgesini kullanarak geçerli iş parçacığının geçerli yığın çerçevesini gösterir.  
   
      İçinde **iş parçacığı** penceresinde, iş parçacıkları arasında geçiş yapın ve görüntülendiğini görünümünde **Paralel Yığınlar** penceresi güncelleştirilir.  
   
@@ -141,11 +141,13 @@ Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Pa
   
      Bir yöntem bağlamı tek bir yığın çerçevesi ile ilişkili olduğunda kutusu üstbilgisi görüntüler **1 iş parçacığı** ve ona çift tıklayarak geçin. 1'den fazla çerçeve ilişkili olan bir yöntemi bağlamı çift tıklayın, ardından menü otomatik olarak açılır. Yöntemi bağlamları gezinirken sağ siyah üçgen dikkat edin. Bu üçgen tıklatarak kısayol menüsünü görüntüler.  
   
-     Birçok iş parçacığı içeren büyük uygulamalar için yalnızca bir alt iş parçacığı üzerinde odaklanmak isteyebilirsiniz. **Paralel Yığınlar** pencere, yalnızca bayraklı iş parçacığı için çağrı yığınları görüntüleyebilir. Araç çubuğunda tıklatın **Göster'i yalnızca işaretlenen** liste kutusu yanındaki düğmesi.  
-  
-     ![Paralel Yığınlar penceresini açın ve araç ipucu boş](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")  
-  
-     İleri ' **iş parçacığı** penceresinde bayrağı iş parçacıkları kendi çağrı yığınları nasıl göründüğünü görmek için birer birer **Paralel Yığınlar** penceresi. İş parçacığı bayrak için kısayol menüsü veya bir iş parçacığı ilk hücrenin kullanın. Tıklatın **Göster'i yalnızca işaretlenen** yeniden tüm iş parçacıklarının göstermek için araç çubuğu düğmesi.  
+     Birçok iş parçacığı içeren büyük uygulamalar için yalnızca bir alt iş parçacığı üzerinde odaklanmak isteyebilirsiniz. **Paralel Yığınlar** pencere, yalnızca bayraklı iş parçacığı için çağrı yığınları görüntüleyebilir. İş parçacığı bayrak için kısayol menüsü veya bir iş parçacığı ilk hücrenin kullanın. 
+
+     Araç çubuğunda tıklatın **Göster'i yalnızca işaretlenen** liste kutusu yanındaki düğmesi.  
+
+     ![Paralel Yığınlar penceresini ve araç ipucu](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")  
+
+     Şimdi, yalnızca bayraklı iş parçacığı görünür **Paralel Yığınlar** penceresi.
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Yürütme üçüncü kesme noktası kadar devam etmek için  
   
@@ -157,7 +159,7 @@ Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Pa
   
      Else göründüğü görebilmeniz için S.L diğer iki kutularına kalın olduğuna dikkat edin. Görmek istiyorsanız S.L çağrısına çerçeveler ve hangi çerçeve onu çağrıları **yöntemi Görünümü Değiştir** araç çubuğunda. Aşağıdaki çizimde yöntemi görünümünü gösterir **Paralel Yığınlar** penceresi.  
   
-     ![Paralel Yığınlar penceresini yöntemi görünümünde](../debugger/media/pdw_walkthrough_4.png "PDW_Walkthrough_4")  
+     ![Paralel Yığınlar penceresini yöntemi görünümünde](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")  
   
      Nasıl diyagram seçili yöntemine özetlenebilir ve kendi kutusunda görünümün ortasında konumlandırılmış dikkat edin. Arayanlar ve callees üst ve alt taraflarına görünür. Tıklatın **yöntemi Görünümü Değiştir** düğmesini yeniden bu modda bırakın.  
   
@@ -165,17 +167,17 @@ Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Pa
   
     -   **Onaltılık görüntü** sayıları ondalık ve onaltılık arasında ipuçlarında değiştirir.  
   
-    -   **Simge yükleme bilgileri** ve **simge ayarlarını** ilgili iletişim kutusunu açın.  
+    -   **Simge Ayarları** ilgili iletişim kutusunu açın.  
   
-    -   **Kaynak kodu Git** ve **ayrıştırılmış Git** seçili yöntemine düzenleyicisinde gidin.  
+    -   **İş parçacığı kaynağında Göster** kaynak kodda iş parçacığı konumunu gösterir, kaynak kodda iş parçacığı işaretçileri görünümünü değiştirir.
   
     -   **Harici kod Göster** bunlar kullanıcı kodunda olmasa bile tüm çerçeveler görüntüler. Diyagramı (, simgeler kendileri için olmadığından, soluk) ek çerçeveleri uyum sağlayacak şekilde genişlet görmek için deneyin.  
+
+2.  İçinde **Paralel Yığınlar** penceresinde olduğundan emin olun **geçerli yığın çerçevesi için otomatik kaydırma** araç çubuğunda açıktır.  
+
+     Büyük diyagramlarını olan ve sonraki kesme adım, geçerli iş parçacığının etkin yığın çerçevesi için otomatik kaydırma görünümüne isteyebilirsiniz; diğer bir deyişle, ilk kesme noktası isabet iş parçacığı.
   
-     Büyük diyagramlarını olan ve sonraki kesme adım, geçerli iş parçacığının etkin yığın çerçevesi için otomatik kaydırma görünümüne isteyebilirsiniz; diğer bir deyişle, ilk kesme noktası isabet iş parçacığı. İçinde **Paralel Yığınlar** penceresinde olduğundan emin olun **geçerli yığın çerçevesi için otomatik kaydırma** araç çubuğunda açıktır.  
-  
-     ![Paralel Yığınlar penceresini Autoscrolling](../debugger/media/pdb_walkthrough_4a.png "PDB_Walkthrough_4A")  
-  
-2.  Buna devam etmeden önce **Paralel Yığınlar** penceresinde, tüm yol sola ve tüm aşağı kaydırın.  
+3.  Buna devam etmeden önce **Paralel Yığınlar** penceresinde, tüm yol sola ve tüm aşağı kaydırın.  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Dördüncü kesme noktası kadar yürütme devam etmek için  
   
@@ -183,17 +185,15 @@ Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Pa
   
      Bildirim nasıl yer içine görünüm autoscrolled. İş parçacıklarında geçiş **iş parçacığı** penceresi veya anahtar yığın çerçevelerini **çağrı yığını** penceresini açın ve bildirim nasıl görünümü her zaman doğru çerçeveye autoscrolls. Kapatma **otomatik kaydırma geçerli aracı çerçeveye** seçeneği ve farkı görüntüleyin.  
   
-     **Kuşbakışı Görünüm** ayrıca büyük diyagramlarda yardımcı **Paralel Yığınlar** penceresi. Gördüğünüz **Kuşbakışı Görünüm** aşağıdaki çizimde gösterildiği gibi penceresinin sağ alt köşedeki üzerinde kaydırma çubukları arasında düğmesini tıklatarak.  
+     **Kuşbakışı Görünüm** ayrıca büyük diyagramlarda yardımcı **Paralel Yığınlar** penceresi. Varsayılan olarak, **Kuşbakışı Görünüm** açıktır. Ancak, bunu penceresinin sağ alt köşedeki üzerinde kaydırma çubukları arasında düğmesine tıklayarak aşağıdaki çizimde gösterildiği gibi geçiş yapabilirsiniz.  
   
-     ![Kuşbakışı &#45; Paralel Yığınlar penceresini görüntülemek göz](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")  
+     ![Kuşbakışı&#45;göz Paralel Yığınlar penceresini görünümünde](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")  
   
-     Hızlı bir şekilde diyagramı kaydırmak için dikdörtgen taşıyabilirsiniz.  
+     Kuşbakışı görünüm içinde hızlı bir şekilde diyagramı kaydırmak için dikdörtgen taşıyabilirsiniz.  
   
      Diyagram herhangi bir yönde taşımak için başka bir diyagram boş bir alana tıklayın ve istediğiniz yere sürükleyin yoldur.  
   
      Diyagram ve yakınlaştırmak için tuşuna basın ve fare tekerleğinin taşırken CTRL basılı tutun. Alternatif olarak, araç çubuğundaki Yakınlaştır düğmesini tıklayın ve ardından Yakınlaştırma aracı kullanın.  
-  
-     ![Paralel Yığınlar penceresini yığınlarda uzaklaştırılacağını](../debugger/media/pdb_walkthrough_5a.png "PDB_Walkthrough_5A")  
   
      Ayrıca yığınları aşağıdan yukarıya, yerine yukarıdan aşağı yönde tıklayarak görüntüleyebilirsiniz **Araçları** tıklatarak menüsünde **seçenekleri**ve ardından seçin ya da altında seçeneğinin işaretini **hataayıklama** düğümü.  
   
@@ -212,9 +212,9 @@ Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Pa
   
 4.  Bir iş parçacığında çift **iş parçacığı** penceresine kılar geçerli. Geçerli iş parçacığı sarı ok vardır. Geçerli iş parçacığının değiştirdiğinizde, diğer windows güncelleştirilir. Ardından, görevleri inceleyeceğiz.  
   
-5.  Üzerinde **hata ayıklama** menüsündeki **Windows** ve ardından **Paralel Görevler**. Aşağıdaki çizimde gösterildiği **görevleri** penceresi.  
+5.  Üzerinde **hata ayıklama** menüsündeki **Windows**ve ardından **görevleri**. Aşağıdaki çizimde gösterildiği **görevleri** penceresi.  
   
-     ![Dört çalışan görevler Görevleri penceresinde](../debugger/media/pdw_walkthrough_6.png "PDW_Walkthrough_6")  
+     ![Dört çalışan görevler Görevleri penceresinde](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")  
   
      Çalışan her görev için aynı adlı özelliği, kimliği ve adını, konumunu (görüntüleyen tüm çağrı yığınına sahip bir araç ipucu bekleyerek) çalışan iş parçacığı tarafından döndürülen Kimliğini okuyabilir. Ayrıca, altında **görev** sütun göreve geçirilen yöntemi görebilirsiniz; diğer bir deyişle, başlangıç noktası.  
   
@@ -228,13 +228,13 @@ Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Pa
   
 1.  İkinci kesme noktası, üzerinde ulaşılır kadar yürütme devam etmek için **hata ayıklama** menüsünde tıklatın **devam**.  
   
-     Daha önce **durum** sütun olarak çalışan tüm görevler gösterdi, ancak şimdi iki görev bekliyor. Görevler, farklı nedenlerle engellenebilir. İçinde **durum** sütun, neden engellendi öğrenmek için bir bekleme görev üzerine getirin. Örneğin, aşağıdaki çizimde, görev 4 görev 3 bekliyor.  
+     Daha önce **durum** sütun tüm görevler etkin olarak gösterilen, ancak şimdi iki görev engellenir. Görevler, farklı nedenlerle engellenebilir. İçinde **durum** sütun, neden engellendi öğrenmek için bir bekleme görev üzerine getirin. Örneğin, aşağıdaki çizimde, görev 4 görev 3 bekliyor.  
   
      ![İki bekletme görevi Görevler penceresinde](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")  
   
-     Görev 4, 2 göreve atanan iş parçacığı tarafından sahip olunan bir monitörde sırayla bekliyor.  
+     Görev 4, 2 göreve atanan iş parçacığı tarafından sahip olunan bir monitörde sırayla bekliyor. (Başlık satırı sağ tıklatın ve seçin **sütunları** > **iş parçacığı atama** görev 2 iş parçacığı atama değerini görüntülemek için).
   
-     ![Görev ve araç ipucu Görevleri penceresinde bekleyen](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")  
+     ![Görev ve araç ipucu Görevleri penceresinde bekleyen](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
   
      İlk sütununda bayrağını tıklayarak görev işaretleyebilirsiniz **görevleri** penceresi.  
   
@@ -242,13 +242,11 @@ Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Pa
   
      Kullanıldığında, **Paralel Yığınlar** penceresi daha önce uygulama iş parçacığı görüntülenebilir. Görünüm **Paralel Yığınlar** penceresini tekrar, ancak bu kez uygulama görevleri görüntüleyin. Seçerek bunu **görevleri** sol üst kutusunda. Aşağıdaki çizimde Görevler görünümü gösterir.  
   
-     ![Paralel Yığınlar penceresini görünümünde iş parçacıkları](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")  
+     ![Paralel Yığınlar penceresini görünümünde görevleri](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")  
   
      Görev şu anda yürütülmekte değil iş parçacıkları Görevler görünümünde gösterilmez **Paralel Yığınlar** penceresi. Ayrıca, üst ve alt yığınının'da bazı görevler ilgili olmayan yığın çerçeveleri bir görevleri yürütün, iş parçacığı için filtrelenir.  
   
      Görünüm **görevleri** yeniden penceresi. Sütun için bir kısayol menü görmek için herhangi bir sütun başlığını sağ tıklatın.  
-  
-     ![Kısayol Görünüm menüsünde Görevleri penceresinde](../debugger/media/pdb_walkthrough_8a.png "PDB_Walkthrough_8A")  
   
      Sütun eklemek veya kaldırmak için kısayol menüsünü kullanabilirsiniz. Örneğin, AppDomain sütun seçilmedi; Bu nedenle, listede görüntülenmez. Tıklatın **üst**. **Üst** dört görevlerden herhangi biri için değer içermeyen sütun görünür.  
   
@@ -258,11 +256,11 @@ Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Pa
   
      Yeni bir görev, görev 5, şu anda çalışıyor ve görev 4 şimdi bekliyor. Bekleme görevde üzerine gelerek veya onları neden tarafından görebilirsiniz **durum** penceresi. İçinde **üst** sütun, bu görev 4 görev 5 üst olduğuna dikkat edin.  
   
-     Üst-alt ilişkisi daha iyi görselleştirmek için sağ **üst** sütun başlığına tıklayın ve sonra **üst alt Görünüm**. Aşağıdaki çizimde görmeniz gerekir.  
+     Üst-alt ilişkisi daha iyi görselleştirmek için sütun başlık satırı sağ tıklayın ve ardından **üst alt Görünüm**. Aşağıdaki çizimde görmeniz gerekir.  
   
-     ![Üst &#45; alt görevleri penceresinde görüntülemek](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")  
+     ![Üst&#45;alt Görünümü Görevleri penceresinde](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")  
   
-     Görev 4 ve 5 görevini aynı iş parçacığı üzerinde çalıştığını dikkat edin. Bu bilgiler görüntülenmez **iş parçacığı** ; burada olmasından başka bir yararı görmesini penceresi **görevleri** penceresi. Bunu doğrulamak için görüntülemek **Paralel Yığınlar** penceresi. Görüntülediğiniz emin olun **görevleri**. Görev 4 ve 5 bunları çift tıklatarak bulun **görevleri** penceresi. Bunu yaptığınızda, mavi Vurgu **Paralel Yığınlar** penceresi güncelleştirilir. Üzerinde araç ipuçları tarayarak görevleri 4 ve 5 bulabilir **Paralel Yığınlar** penceresi.  
+     Görev 4 ve 5 görevini aynı iş parçacığı üzerinde çalıştığını fark (Göster **iş parçacığı atama** gizli ise sütun). Bu bilgiler görüntülenmez **iş parçacığı** ; burada olmasından başka bir yararı görmesini penceresi **görevleri** penceresi. Bunu doğrulamak için görüntülemek **Paralel Yığınlar** penceresi. Görüntülediğiniz emin olun **görevleri**. Görev 4 ve 5 bunları çift tıklatarak bulun **görevleri** penceresi. Bunu yaptığınızda, mavi Vurgu **Paralel Yığınlar** penceresi güncelleştirilir. Üzerinde araç ipuçları tarayarak görevleri 4 ve 5 bulabilir **Paralel Yığınlar** penceresi.  
   
      ![Görev Paralel Yığınlar penceresini görünümünde](../debugger/media/pdb_walkthrough_9a.png "PDB_Walkthrough_9A")  
   
@@ -278,9 +276,9 @@ Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Pa
   
      ![Paralel Yığınlar penceresini Devletleri'nde dört görev](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")  
   
-     Görev 5 tamamlandığından artık görüntülenir. Bu durum, bilgisayarınızda değil ve kilitlenme gösterilmez, bir kez F11 tuşlarına basarak adım.  
+     Görev 5 tamamlandığından artık görüntülenir. Bu durum, bilgisayarınızda değil ve kilitlenme gösterilmez, bir kez basarak adım **F11**.  
   
-     Görev 3 ve görev 4 kilitli ve diğer bağlı şimdi bekleniyor. Görev 2 alt ve şimdi zamanlanmış 5 yeni görevleri de vardır. Zamanlanmış Görevler, kodda başladı, ancak henüz çalıştırmadıysanız görevlerdir. Bu nedenle, kendi **konumu** ve **iş parçacığı atama** sütunları boş.  
+     Görev 3 ve görev 4 bekleyen şimdi birbirine ve engellenir. Görev 2 alt ve şimdi zamanlanmış 5 yeni görevleri de vardır. Zamanlanmış Görevler, kodda başladı, ancak henüz çalıştırmadıysanız görevlerdir. Bu nedenle, kendi **konumu** ve **iş parçacığı atama** sütunları boş.  
   
      Görünüm **Paralel Yığınlar** yeniden penceresi. Her kutu üstbilgisi iş parçacığı kimlikleri ve adları gösteren bir araç ipucu sahiptir. Görevler görünümünde geçin **Paralel Yığınlar** penceresi. Aşağıdaki çizimde gösterildiği gibi görev kimliği ve adını ve görev durumunu görüntülemek için bir başlık gelin.  
   
@@ -290,13 +288,9 @@ Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Pa
   
      ![Gruplandırılmış Görevleri penceresinde görevleri](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")  
   
-     Herhangi bir sütuna göre de gruplandırabilirsiniz. Gruplandırma görevler tarafından görevleri alt kümesinde odaklanabilirsiniz. Daraltılabilir her grubun bir arada gruplandırılmış öğelerin sayısı vardır. Tıklayarak grup içindeki tüm öğeler de hızlı bir şekilde işaretleyebilirsiniz **bayrağı** sağındaki düğmeyi **Daralt** düğmesi.  
-  
-     ![Paralel Yığınlar penceresini yığınlarda gruplandırılmış](../debugger/media/pdb_walkthrough_12a.png "PDB_Walkthrough_12A")  
+     Herhangi bir sütuna göre de gruplandırabilirsiniz. Gruplandırma görevler tarafından görevleri alt kümesinde odaklanabilirsiniz. Daraltılabilir her grubun bir arada gruplandırılmış öğelerin sayısı vardır.
   
      Son özelliğini **görevleri** incelemek için penceredir göreve sağ tıklattığınızda görüntülenen kısayol menüsü.  
-  
-     ![Görevleri penceresini kısayol menüsünde](../debugger/media/pdb_walkthrough_12b.png "PDB_Walkthrough_12B")  
   
      Kısayol menüsü görev durumuna bağlı olarak farklı komutları görüntüler. Komutları içerebilir **kopya**, **Tümünü Seç**, **onaltılı görüntü**, **geçiş göreve**, **Dondur atanan İş parçacığı**, **, ancak bu tüm iş parçacıklarını dondurmak**, ve **atanan iş parçacığı çözme**, ve **bayrağı**.  
   

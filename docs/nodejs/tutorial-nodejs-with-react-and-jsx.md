@@ -1,13 +1,13 @@
 ---
-title: "Node.js ve tepki app - Visual Studio oluşturma | Microsoft Docs"
-description: "Bu öğreticide, Visual Studio'da bir Node.js ve tepki uygulaması oluşturma"
+title: Node.js ve tepki app - Visual Studio oluşturma | Microsoft Docs
+description: Bu öğreticide, Visual Studio'da bir Node.js ve tepki uygulaması oluşturma
 ms.custom: mvc
 ms.date: 02/19/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-nodejs
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3c0b387e29df6bc46b8a7c3e79ccb50fa16e3ed6
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 0d48d8ddb9c63ca83153ae4fe1b28015217bb072
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Öğretici: Visual Studio'da bir Node.js ve tepki uygulaması oluşturma
 Visual Studio kolayca bir Node.js projesi oluşturun ve IntelliSense ve Node.js destekleyen diğer yerleşik özellikleri yararlanan sağlar. Bu öğreticide Visual Studio için Visual Studio şablonundan bir Node.js web uygulaması projesi oluşturun. Ardından, tepki kullanarak basit bir uygulama oluşturun. 
@@ -149,7 +149,6 @@ Bu basit uygulama için proje kök dizininde yeni proje dosyalarını ekleyin. (
 
     ```javascript
     'use strict';
-    var http = require('http');
     var path = require('path');
     var express = require('express');
 

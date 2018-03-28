@@ -1,15 +1,15 @@
 ---
-title: "Visual Studio'da Python ile çalışma, adım 1, proje oluşturma | Microsoft Docs"
-description: "Visual Studio içinde Python ile çalışma, tüm öğretici anahat oluşturma, Önkoşullar açıklayan ve yeni bir Python projesi oluşturma işleminde size taramasını çekirdek öğreticinin 1. adım."
-ms.custom: 
+title: Visual Studio'da Python ile çalışma, adım 1, proje oluşturma | Microsoft Docs
+description: Visual Studio içinde Python ile çalışma, tüm öğretici anahat oluşturma, Önkoşullar açıklayan ve yeni bir Python projesi oluşturma işleminde size taramasını çekirdek öğreticinin 1. adım.
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 469494b2c0c4704ac1eab42d36934657adc2313d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 22588c1e8221375f05b9fb62870662d9aa3d2f5e
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Visual Studio'da Python ile çalışma
 
@@ -71,7 +71,7 @@ Bu öğreticide tek ve boş kod dosyasını içeren basit bir proje ile başlar.
 
     (3) altında projenizin kaynak dosyalarına bakın, bu tek bir durumda `.py` dosya. Bir dosya seçmek özelliklerini Özellikler penceresinde görüntüler. Bir dosyayı çift kararlaştırdığı bir yolla bu dosya için uygun olan açar.
 
-    (4) de altında projedir **Python ortamları** düğümü. Genişletilmiş olduğunda kullanılabilen kullanılabilir Python yorumlayıcılar bakın. Bu ortamına (5) yüklü kitaplıkları görmek için bir yorumlayıcı düğümünü genişletin.
+    (4) de altında projedir **Python ortamları** düğümü. Genişletilmiş olduğunda kullanılabilen Python yorumlayıcılar bakın. Bu ortamına (5) yüklü kitaplıkları görmek için bir yorumlayıcı düğümünü genişletin.
 
     Bir düğüm veya uygulanabilir komutların menüsüne erişmek için Çözüm Gezgininde öğenin sağ tıklayın. Örneğin, **yeniden adlandırma** komutu bir düğüm veya proje ve çözüm dahil olmak üzere öğe adını değiştirmenize olanak verir.
 

@@ -1,11 +1,11 @@
 ---
-title: "Proje ve çözüm dosya türleri | Microsoft Docs"
-ms.custom: 
+title: Proje ve çözüm dosya türleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - File Properties.CopyToOutputDirectory
@@ -26,12 +26,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d05b7b5f1510777c758998572e78757c47148fa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d239a5e129f12c4521ba190674d84430f8f2e646
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="project-and-solution-file-types"></a>Proje ve çözüm dosya türleri
 
@@ -43,14 +44,14 @@ Visual Studio iki dosya türleri (.sln ve .suo) çözümler için ayarları depo
 
 |Uzantısı|Ad|Açıklama|
 |---------------|----------|-----------------|
-|.sln|Visual Studio çözümü|Proje, proje öğeleri ve çözüm öğeleri çözüme düzenler.|
+|.sln|Visual Studio Solution|Proje, proje öğeleri ve çözüm öğeleri çözüme düzenler.|
 |.suo|Çözüm kullanıcı seçenekleri|Visual Studio için kesme noktaları gibi yapmış olduğunuz kullanıcı düzeyinde özelleştirmeleri takip eder.|
 
 ## <a name="project-files"></a>Proje dosyaları
 
 Projeleri birçok farklı dosya türleri içerebilir. Örneğin, C# kod dosyaları sahip bir **.cs** uzantısı ve C++ dosyaları sahip bir **.cpp** uzantısı. İçinde depolanan kaynaklar **.resx** dosyaları ve XAML'de **.xaml** dosyaları. [App.config](../../ide/managing-application-settings-dotnet.md) dosyaları içeren uygulama kodunda dahil edilmemesi gereken uygulama bilgilerini&mdash;örneğin bağlantı dizeleri.
 
-C++ projelerine dosya türleri hakkında daha fazla bilgi için bkz: [Visual C++ projeleri için oluşturulan dosya türleri](/cpp/ide/file-types-created-for-visual-cpp-projects) ve [Unicode Microsoft Foundation Class Kitaplığı](/cpp/mfc/unicode-in-mfc)
+C++ projelerine dosya türleri hakkında daha fazla bilgi için bkz: [Visual C++ projeleri için oluşturulan dosya türleri](/cpp/ide/file-types-created-for-visual-cpp-projects).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

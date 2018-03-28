@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio'da .runsettings dosyasını ile birim testlerini yapılandırma | Microsoft Docs"
+title: Visual Studio'da .runsettings dosyasını ile birim testlerini yapılandırma | Microsoft Docs
 ms.date: 02/28/2018
 ms.technology: vs-ide-test
 ms.topic: article
@@ -8,11 +8,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94bcd0bc473a87246feb3b5e790ed060b615b4be
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 813a2c003923159b6805280ab3a7f5c3c0559f13
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Kullanarak birim testlerini yapılandırma bir *.runsettings* dosyası
 
@@ -147,7 +147,7 @@ Kod kapsamı veri toplayıcısı uygulama kodu bölümlerinin testte uygulandı�
 
 Video veri toplayıcı testlerini çalıştırdığınızda, kaydı ekran yakalar. Bu kayıt, UI testleri sorun giderme için yararlıdır. Video veri toplayıcı sağlanmıştır **Visual Studio 2017 sürüm 15,5** ve daha sonra.
 
-Başka herhangi bir tür tanılama verisi bağdaştırıcısını özelleştirmek için test ayarları dosyası kullanmanız gerekir.
+Başka türde bir tanılama veri bağdaştırıcısı özelleştirmek için kullanmanız gerekir bir [test ayarları dosyası](../test/collect-diagnostic-information-using-test-settings.md).
 
 ### <a name="testrunparameters"></a>TestRunParameters
 

@@ -1,6 +1,5 @@
 # [Visual Studio Belgeleri](ide/index.md)
 # [Genel bakış](ide/visual-studio-ide.md)
-## [Yenilikler](ide/whats-new-in-visual-studio.md)
 # Yükleme
 ## [Visual Studio'yu yükleyin](install/install-visual-studio.md)
 ## [Visual Studio’da oturum açma](ide/signing-in-to-visual-studio.md)
@@ -449,6 +448,17 @@
 ### [Dotfuscator CE’yi Yükleme](ide/dotfuscator/install.md)
 ### [Dotfuscator CE’yi Yükseltme](ide/dotfuscator/upgrades.md)
 # Kaynaklar
+## [Yenilikler](ide/whats-new-in-visual-studio.md)
+## Sürüm notları ve sistem gereksinimleri
+### [Güncel sürüm notları](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+### [Önizleme sürüm notları](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default)
+### [Sürüm notları geçmişi](/visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default)
+### [Yayınlama sıklığı](/visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default)
+### [Sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+### [Platform uyumluluğu](/visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default)
+### [Lisans](https://www.visualstudio.com/license-terms/)
+### [Dağıtılabilir kod](/visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default)
+### [Destek yaşam döngüsü ve bakım](/visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default)
 ## [Visual Studio ile İlgili Sorun Bildirme](ide/how-to-report-a-problem-with-visual-studio-2017.md)
 ## [IDE Hataları için Sorun Giderme Kaynakları](ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
 ## [Bizimle İletişime Geçin](ide/talk-to-us.md)

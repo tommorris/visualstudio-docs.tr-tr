@@ -1,25 +1,27 @@
 ---
-title: "Yükleme sorunlarını giderme | Microsoft Docs"
-description: "Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemesi veya yükseltmesi başarısız olursa, bu sayfayı yardımcı olabilir."
+title: Yükleme sorunlarını giderme | Microsoft Docs
+description: Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemesi veya yükseltmesi başarısız olursa, bu sayfayı yardımcı olabilir.
 ms.date: 11/21/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
-author: timsneath
+author: tglee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9cd0a1b21cf7a61c9340c36be5db419d71c36e1b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5d947bef4f27308c9c45169c813dc564ab2ab6e2
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 yükleme ve yükseltme sorunlarını giderme
 
@@ -101,4 +103,4 @@ Birkaç diğer seçenekler şunlardır:
 ## <a name="see-also"></a>Ayrıca bkz.
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar](tools-for-managing-visual-studio-instances.md)
-* [Visual Studio 2017 Kaldır](remove-visual-studio.md)
+* [Remove Visual Studio 2017](remove-visual-studio.md)

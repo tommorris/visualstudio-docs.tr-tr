@@ -1,10 +1,10 @@
 ---
-title: "Visual Studio'da C++ kullanmaya başlama | Microsoft Docs"
+title: Visual Studio'da C++ kullanmaya başlama | Microsoft Docs
 ms.custom: mvc
 ms.date: 12/04/2017
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
 manager: ghogen
@@ -12,11 +12,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e0e0709b8a1737e3f78268ec324d4481dac285a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio'da C++ kullanmaya başlama
 
@@ -32,7 +32,7 @@ Bu hızlı başlangıç tamamlamak için C++ ile ilgili bilgi sahibi olmanız ge
 
 Henüz çalışmıyorsa, Visual Studio'yu başlatın.
 
-![Visual C# 43; &#43;IDE; uygulanan ayarları](../ide/media/get-started-cpp-ide-layout.png "IDE Visual C# 43; &#43; ile uygulanan ayarları")
+![Visual C ile IDE&#43; &#43; uygulanan ayarları](../ide/media/get-started-cpp-ide-layout.png "IDE Visual C ile&#43; &#43; uygulanan ayarları")
 
 Visual Studio açtıktan sonra IDE üç temel bölümlerini görebilirsiniz: aracı windows, menüleri ve araç çubukları ve ana penceresi alanı. Araç pencereleri ve uygulama penceresinin sol tarafında üzerinde sabitlenir. **Hızlı başlatma** kutusu, menü çubuğundaki ve standart araç en üstünde bulundu. Pencerenin merkezi içerir **başlangıç sayfası**. Bir çözüm ya da projeyi açtığınızda, düzenleyiciler ve tasarımcıları bu alanında görünür. Bir uygulama geliştirirken, çoğu zaman, bu merkezi alanında harcanır.
 

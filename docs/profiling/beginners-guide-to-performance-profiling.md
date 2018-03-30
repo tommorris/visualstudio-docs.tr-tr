@@ -1,13 +1,13 @@
 ---
-title: "Visual Studio'da Uygulama performansı profil | Microsoft Docs"
+title: Visual Studio'da Uygulama performansı profil | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: 
+caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 83268e1c7e4c4672caf17b6852cbf3fd38ea31b1
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 392bae77ffa2333fa9360dcda7f25b156e1601bc
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Visual Studio'da profili uygulama performansı
 Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözümlemek için kullanabilirsiniz. Bu yordam nasıl kullanılacağını gösterir **CPU kullanımı** sekmesi, uygulamanız için performans verilerini almak için tanılama araçları. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET, dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
@@ -43,6 +43,12 @@ Bu konuda, biz hata ayıklama normal iş akışınızda çözümlenirken CPU kul
 
 > [!NOTE]
 > .NET Core ve ASP.NET Core için CPU kullanımını aracı taşınabilir PBDs ile doğru sonuçlar şu anda sağlamaz. Bunun yerine tam pdb kullanın.
+
+Bu öğreticide şunları yapacaksınız:
+
+> [!div class="checklist"]
+> * CPU kullanım verilerini toplama
+> * CPU kullanım verilerini çözümleme
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 1. adım: profil oluşturma verilerini topla 
   
@@ -155,9 +161,10 @@ Aradığınız bir düğüm bulmak için arama kutusunu kullanın, sonra veriler
 
 > [!TIP]
 > Windows işlevlerini çağıran harici kod profil, en güncel .pdb dosyaları sahip olduğunuzdan emin olun. Bu dosyalar olmadan rapor görünümlerini şifreli ve anlaşılması zor Windows işlev adlarını listeler. İhtiyacınız olan dosyalara sahip olduğunuzdan emin olmak nasıl hakkında daha fazla bilgi için bkz: [belirtin simge (.pdb) ve kaynak dosyaları hata ayıklayıcı](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bellek kullanımı](../profiling/memory-usage.md)  
- [CPU kullanımı](../profiling/cpu-usage.md)  
- [Visual Studio'da profil oluşturma](../profiling/index.md)  
- [Özellik turu profil oluşturma](../profiling/profiling-feature-tour.md)
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Bu öğreticide, toplamak ve CPU kullanım verilerini analiz etme öğrendiniz. Zaten tamamladıysanız [profil oluşturucu Turu](../profiling/profiling-feature-tour.md), uygulamalarınızdaki bellek kullanımını analiz etme hızlı bir bakış almak isteyebilirsiniz.
+
+> [!div class="nextstepaction"]
+> [Bellek kullanımını çözümleme](../profiling/memory-usage.md) 

@@ -1,25 +1,27 @@
 ---
-title: "Visual Studio ağ tabanlı yüklemesini oluşturma | Microsoft Docs"
-description: "Visual Studio içinde bir kuruluş dağıtmak için bir ağ yükleme noktası oluşturmayı açıklar"
+title: Visual Studio ağ tabanlı yüklemesini oluşturma | Microsoft Docs
+description: Visual Studio içinde bir kuruluş dağıtmak için bir ağ yükleme noktası oluşturmayı açıklar
 ms.date: 10/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
-author: timsneath
+author: tglee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f5e6c5a94ac4c875922d2da09e9171f4929035f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4ab112faf1db5ebde4d92b34e349352187999fae
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Visual Studio 2017 bir ağ yüklemesi oluşturma
 
@@ -79,10 +81,10 @@ Diğer makinelerden çalıştırılabilir için bir ağ paylaşımında düzeni 
 
 Ağ düzeninizi özelleştirmek için kullanabileceğiniz birkaç seçenek vardır. Yalnızca belirli bir kümesini içeren bir kısmi düzeni oluşturabilirsiniz [dil yerel ayarları](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [iş yükleri, bileşenleri ve önerilen veya isteğe bağlı bağımlılıklarını](workload-and-component-ids.md). Bu, yalnızca bir alt iş yüklerinin istemci iş istasyonlarına dağıtmak zorunda kalacaklarını bilmek durumlarda yararlı olabilir. Düzen özelleştirmek için tipik komut satırı parametreleri içerir:
 
-* ```--add```belirtmek için [iş yükü ya da bileşen kimlikleri](workload-and-component-ids.md).  Varsa `--add` kullanılır, yalnızca iş yükleri ve bileşenleri ile belirtilen `--add` indirilir.  Varsa `--add` olan kullanılmaz, tüm iş yükü ve bileşenler indirilir.
-* ```--includeRecommended```Belirtilen iş yükü kimlikleri için önerilen tüm bileşenleri eklemek için
-* ```--includeOptional```Belirtilen iş yükü kimlikleri için tüm önerilen ve isteğe bağlı bileşenleri eklemek için.
-* ```--lang```belirtmek için [dil yerel ayarları](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
+* ```--add``` belirtmek için [iş yükü ya da bileşen kimlikleri](workload-and-component-ids.md).  Varsa `--add` kullanılır, yalnızca iş yükleri ve bileşenleri ile belirtilen `--add` indirilir.  Varsa `--add` olan kullanılmaz, tüm iş yükü ve bileşenler indirilir.
+* ```--includeRecommended``` Belirtilen iş yükü kimlikleri için önerilen tüm bileşenleri eklemek için
+* ```--includeOptional``` Belirtilen iş yükü kimlikleri için tüm önerilen ve isteğe bağlı bileşenleri eklemek için.
+* ```--lang``` belirtmek için [dil yerel ayarları](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
 
 Özel bir kısmi düzen oluşturmak bazı örnekleri aşağıda verilmiştir.
 
@@ -143,7 +145,7 @@ Kullandıysanız `--wait` parametresi, sonra işlemi sonucuna bağlı olarak `%E
 > [!NOTE]
 > Kullanılabilir Visual Studio 2017 Önyükleyiciler ile [VisualStudio.com](http://www.visualstudio.com) indirin ve çalıştıkları her koşulda kullanılabilir en son Visual Studio 2017 sürümü yükleyin. Visual Studio önyükleyici hemen indirin ve şu andan itibaren altı ay çalıştırırsanız, bu daha sonra kullanılabilir Visual Studio 2017 yayın yükler. Bir düzen oluşturursanız, o düzeninden Visual Studio'yu yükleme düzeninde mevcut Visual Studio belirli sürümünü yükler. Yeni bir sürümünü çevrimiçi mevcut olabilecek olsa bile, Düzen Visual Studio sürümünü alır.
 
-Visual Studio 2017 daha eski bir sürümü için bir düzen oluşturmanız gerekiyorsa, Visual Studio 2017 Önyükleyiciler ile "sabit" sürümlerini indirme https://my.visualstudio.com için gidebilirsiniz.
+Visual Studio 2017 daha eski bir sürümü için bir düzen oluşturmanız gerekiyorsa, gidebilirsiniz https://my.visualstudio.com "sabit" Visual Studio 2017 Önyükleyiciler ile sürümleri karşıdan yüklemek için.
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>Çevrimdışı yükleyici için destek alma
 

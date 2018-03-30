@@ -1,32 +1,32 @@
 ---
-title: "Visual Studio hata ayıklayıcısı ile çalışmaya başlama | Microsoft Docs"
+title: Visual Studio hata ayıklayıcısı ile çalışmaya başlama | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile çalışmaya başlama
 Visual Studio hata ayıklayıcısı herhangi bir dilde kullanımı kolaydır. Basit bir C# programı hata ayıklamak nasıl burada göstereceğiz, ancak C++ ve JavaScript gibi başka bir dilde kodu aynı adımları uygulayabilirsiniz.
 
 Benzer özellikleri gösteren bir video izlemek için bkz: [hata ayıklayıcısı ile çalışmaya başlama](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a>Temel C# projesinde hata ayıklama  
+##  <a name="BKMK_Start_debugging_a_VS_project"></a> Temel C# projesinde hata ayıklama  
  Basit bir C# konsol uygulaması ile başlayalım (**Dosya > Yeni > Proje**seçeneğini belirleyip **Visual C#** ve ardından **konsol uygulaması**). Hiçbir zaman önce Visual Studio çalıştıysanız bkz [izlenecek yol: basit bir uygulama oluşturmak](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Ana** yöntemi yalnızca 1 10 kez bir tamsayı değişken ekler ve sonuç konsola yazdırır:  
   
 ```csharp  
@@ -51,14 +51,14 @@ static void Main(string[] args)
   
  Kesme noktaları hakkında daha fazla bilgi için bkz: [kullanarak kesme noktaları](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a>Değişkenleri inceleyin.  
+##  <a name="BKMK_Inspect_Variables"></a> Değişkenleri inceleyin.  
  Genellikle hata ayıklama, belirli bir noktada beklediğiniz değerleri içermeyen değişkenleri bulma içerir. Değişkenleri inceleyebilirsiniz yollardan bazılarını göstereceğiz.  
   
  Hata ayıklamayı yeniden başlatın. Yürütme durdurur önce `Console.WriteLine` kodu yürütür. Şimdi adımla yürütmek için neden olabilir (tıklatın **hata ayıklama > Step Over** veya **F10**). Bu durumda, seçtiğiniz **Step Into** (**F11**) ve aynı sonucu; onayınızı fark daha sonra açıklayacağız. Son büyük ayraç yönteminin satırıyla sarı kapatmış. Konsol penceresine bakın. Görmeniz gerekir **10**.  
   
  Üzerine getirin **testInt** değişken bir veri ipucunda geçerli değerini görüntülemek için.  
   
- ![DBG &#95; Temel kavramları &#95; veri &#95; İpuçları](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
+ ![DBG&#95;Temelleri&#95;veri&#95;ipuçları](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
   
  Yalnızca kod penceresini görmeniz gerekir **otomobiller**, **Yereller**, ve **izleme** windows. Bu windows değişkenlerin geçerli değerleri yürütme aynı anda gösterin. Her iki **otomobiller** ve **Yereller** windows Göster **testInt** değerini **10**.  
   

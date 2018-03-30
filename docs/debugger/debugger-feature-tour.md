@@ -1,29 +1,30 @@
 ---
-title: "Özellik turu hata ayıklayıcı | Microsoft Docs"
-ms.custom: H1HackMay2017
-ms.date: 05/19/2017
-ms.reviewer: 
-ms.suite: 
+title: Özellik tur - Visual Studio hata ayıklayıcısı | Microsoft Docs
+description: Visual Studio hata ayıklayıcısı gezin
+ms.custom: mvc
+ms.date: 03/27/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 2e031716c68d44a9d08a4b074c5dcb58d5553041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="feature-tour-of-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı özelliği turu
+# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>Hızlı Başlangıç: Visual Studio hata ayıklayıcısı ilk bakış
 
 Bu konu, Visual Studio hata ayıklayıcısı özelliklerini tanıtır. Visual Studio'da kendi uygulamanızı açarak izlemek isterseniz, bunu yapabilirsiniz veya bir örnek uygulamasını kullanarak yanı sıra izleyebilirsiniz [Başlangıç Kılavuzu](../debugger/getting-started-with-the-debugger.md).
 
@@ -234,4 +235,4 @@ Daha fazla bilgi için bkz: [görüntülemek IntelliTrace adım geri kullanarak 
 -   [Hata ayıklama arabirimi Erişim SDK'sı](../debugger/debug-interface-access/debug-interface-access-sdk.md) Microsoft hata ayıklama arabirimi erişim Yazılım Geliştirme Seti (DIA SDK) açıklar. DIA SDK'sı Microsoft postcompiler araçları tarafından oluşturulan program veritabanı (.pdb) dosyalarında depolanan bilgileri hata ayıklamak için erişim sağlar.  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da hata ayıklama](../debugger/index.md)
+ [Visual Studio’da hata ayıklama](../debugger/index.md)

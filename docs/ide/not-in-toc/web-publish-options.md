@@ -1,27 +1,27 @@
 ---
-title: "Benim için en uygun Yayımlama seçenekleri nelerdir? | Microsoft Docs"
-ms.custom: 
+title: Benim için en uygun Yayımlama seçenekleri nelerdir? | Microsoft Docs
+ms.custom: ''
 ms.date: 03/09/2017
 ms.reviewer: riande
-ms.suite: 
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: 
+caps.latest.revision: 1
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 5e9eb5423b33fbdd27921afcd6ae6f5758bfc910
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/30/2018
 ---
 # Benim için en uygun Yayımlama seçenekleri nelerdir?
 
@@ -32,7 +32,7 @@ Gelen Visual Studio Web uygulamaları için doğrudan aşağıdaki hedefleri yay
 - [Dosya sistemi](#file-system)
 - [Özel hedefleri (IIS, FTP, vb.) ](#custom-targets), tüm rasgele web sunucuları içerir.
 
-Üzerinde **Yayımla** sekmesi, varolan bir yayımlama profili seçin, mevcut bir alma veya açıklanan seçenekler burada kullanarak yeni bir tane oluşturun.
+Üzerinde **Yayımla** sekmesi, varolan bir yayımlama profili seçin, mevcut bir alma veya açıklanan seçenekler burada kullanarak yeni bir tane oluşturun. Yayımlama seçeneklerini farklı uygulama türleri için IDE içinde gezinmek için bkz: [ilk dağıtım sırasında bakış](../../deployment/deploying-applications-services-and-components.md).
 
 ## Azure App Service Web Apps
 

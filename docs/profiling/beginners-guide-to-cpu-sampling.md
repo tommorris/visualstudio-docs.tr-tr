@@ -1,13 +1,13 @@
 ---
-title: "CPU örnekleme Visual Studio için Başlangıç Kılavuzu | Microsoft Docs"
+title: CPU örnekleme Visual Studio için Başlangıç Kılavuzu | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 - performance tools, wizard
 - Performance Wizard
 ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 69bc0ae15a33cd3f7fd9b06a25a34f7dc88c083c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3113a04ba6f6f893c285cf02f6f23cb5979dad1
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU örnekleme için Başlangıç Kılavuzu
 Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözümlemek için kullanabilirsiniz. Bu yordam nasıl kullanılacağını gösterir **örnekleme** veri.
@@ -42,7 +42,7 @@ Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözü
 > [!TIP]
 >  Windows işlevlerini çağıran kodu profil, en güncel .pdb dosyaları sahip olduğunuzdan emin olun. Bu dosyalar olmadan rapor görünümlerini şifreli ve anlaşılması zor Windows işlev adlarını listeler. İhtiyacınız olan dosyalara sahip olduğunuzdan emin olmak nasıl hakkında daha fazla bilgi için bkz: [nasıl yapılır: başvuru pencereleri sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
   
-##  <a name="Step1"></a>Oluşturma ve Performans oturumunu çalıştırma  
+##  <a name="Step1"></a> Oluşturma ve Performans oturumunu çalıştırma  
  Analiz etmek için gereken verileri almak için öncelikle bir performans oturumu oluşturmanız ve oturum çalıştırın. **Performans Sihirbazı** her ikisini de yapmanızı sağlar.  
   
  Bir Windows masaüstü uygulaması veya ASP.NET uygulama profil değil, bir profil oluşturma araçları birini kullanmanız gerekir. Bkz: [Profil Araçları](../profiling/profiling-tools.md).  
@@ -68,7 +68,7 @@ Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözü
   
      Uygulama çalıştıran tamamladıktan sonra **Özet** profil oluşturma verileri görünümünü ana Visual Studio penceresinde görüntülenir ve yeni oturum için bir simge görüntülenir **performans Gezgini** penceresi.  
   
-##  <a name="Step2"></a>2. adım: Örnekleme verileri analiz etme  
+##  <a name="Step2"></a> 2. adım: Örnekleme verileri analiz etme  
  Bir performans oturumu çalışması tamamlandığında **Özet** profil oluşturma raporu görünümünü Visual Studio ana penceresinde görünür.  
   
  Verilerinizi inceleyerek incelemeye başlamak öneririz **etkin yolunuzda** sonra en fazla çalışmayı yapan ve son olarak göre odaklanan diğer işlevleri kullanarak işlevlerin listesi **Özet zaman çizelgesi** . Profil oluşturma önerileri ve Uyarılar ile de görüntüleyebilirsiniz **hata listesi** penceresi.  
@@ -83,7 +83,7 @@ Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözü
   
 1.  İçinde **Özet** görünümü **etkin yolunuzda** yüksek dahil örnekleri ile uygulamanızın çağrı ağacı dalı gösterir. Toplanan veriler, en etkin yürütme yolu budur. Çağrı ağacı üreten algoritma iyileştirilebilir yüksek dahil değerler belirtebilirsiniz. Kodunuzdaki yolu en düşük işlevi bulun. Yolun ayrıca sistem işlevleri veya İşlevler dış modülleri ekleyebilirsiniz dikkat edin.  
   
-     ![Profil Oluşturucu etkin yolunuzda](../profiling/media/profiler_hotpath.png "Profiler_HotPath")  
+     ![Profiler Hot Path](../profiling/media/profiler_hotpath.png "Profiler_HotPath")  
   
     1.  **Kapsayıcı örnekleri** ne kadar iş işlevi ve tarafından çağrılan tüm işlevler tarafından yapılmadı gösterir. Yüksek dahil sayıları genel en pahalı İşlevler seçeneğine gidin.  
   
@@ -113,7 +113,7 @@ Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözü
   
     -   Uyarı hakkında ayrıntılı bilgi görüntülemek için hata sağ tıklayın ve ardından **hata yardımını göster**  
   
-##  <a name="Step3"></a>3. adım: kod gözden geçirme ve bir oturumu yeniden çalıştırın  
+##  <a name="Step3"></a> 3. adım: kod gözden geçirme ve bir oturumu yeniden çalıştırın  
  Bul ve bir veya daha fazla işlevler en iyi duruma getirme sonra profil Çalıştır yineleyin ve değişikliklerinizi uygulamanızın performansını yapmış olduğunuz farkı görmek için veri karşılaştırın.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Kod gözden geçirme ve profil oluşturucu yeniden çalıştırın  

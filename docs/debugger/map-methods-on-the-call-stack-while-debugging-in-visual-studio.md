@@ -1,13 +1,13 @@
 ---
-title: "Çağrı yığını visual haritasını oluşturmak | Microsoft Docs"
-ms.custom: 
+title: Çağrı yığını visual haritasını oluşturmak | Microsoft Docs
+ms.custom: ''
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
 dev_langs:
@@ -30,17 +30,17 @@ helpviewer_keywords:
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
-caps.latest.revision: 
+caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f388fea1d6512760f99615256f71002099e9be
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: f5fc0025c9d7870b0de042922d87d3a23d7728c5
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Visual Studio kuruluş içinde hata ayıklarken çağrı yığını visual haritasını oluşturmak
 Hatalarını ayıkladığınız sırada görsel olarak çağrı yığınını izleme için bir kod Haritası oluşturun. Hataları bulmaya odaklanabilmeniz amacıyla kodun ne yaptığını izlemek için harita üzerine not alabilirsiniz.
@@ -73,7 +73,7 @@ Aşağıda, bir kod Haritası hızlı bir bakış verilmiştir:
   
  Kullanabileceğiniz kod haritalarını ile çalışırken, eylemleri ve komutları ayrıntıları için bkz: [göz atın ve haritalar kod sıralama](../modeling/browse-and-rearrange-code-maps.md).  
   
-##  <a name="MapStack"></a>Çağrı yığınını eşleme  
+##  <a name="MapStack"></a> Çağrı yığınını eşleme  
   
 1.  Hata ayıklama başlatılamıyor. (Klavye: **F5**)  
   
@@ -87,17 +87,17 @@ Aşağıda, bir kod Haritası hızlı bir bakış verilmiştir:
   
      Hata ayıklama devam ederken harita otomatik olarak güncelleştirir. Bkz: [harita sonraki çağrı yığını ile güncelleştirme](#UpdateMap).  
   
-##  <a name="MakeNotes"></a>Kod ile ilgili notlar olun  
+##  <a name="MakeNotes"></a> Kod ile ilgili notlar olun  
  Kod içinde neler olduğunu izlemek için açıklamalar ekleyin. Yeni bir satır bir yorum eklemek için basın **Shift + dönmek**.  
   
  ![Kod haritasında çağrı yığını açıklama eklemek](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")  
   
-##  <a name="UpdateMap"></a>Güncelleştirme eşlemesi sonraki çağrı yığını ile  
+##  <a name="UpdateMap"></a> Güncelleştirme eşlemesi sonraki çağrı yığını ile  
  Uygulamanızı sonraki kesme noktasına kadar çalıştırın veya bir işleve adımlayın. Eşleme yeni bir çağrı yığını ekler.  
   
  ![Sonraki çağrı yığınına sahip güncelleştirme kod Haritası](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
-##  <a name="AddRelatedCode"></a>Eşleme için ilgili kod ekleme  
+##  <a name="AddRelatedCode"></a> Eşleme için ilgili kod ekleme  
  Şimdi, bir harita - ne sonraki var? Visual C# veya Visual Basic ile çalışıyorsanız, alanları, özellikleri ve kodda neler olduğunu izlemek için diğer yöntemleri gibi öğeleri ekleyin.  
   
  Kod tanımı görmek için bir yöntem çift tıklatın veya yöntemi için kısayol menüsünü kullanın. (Klavye: basın ve harita yöntemi seçin **F12**)  
@@ -121,7 +121,7 @@ Aşağıda, bir kod Haritası hızlı bir bakış verilmiştir:
   
  ![Çağrı yığını kod haritasında bir alan kullanan yöntemleri](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")  
   
-##  <a name="FindBugs"></a>Haritanın kullanarak hataları bulma  
+##  <a name="FindBugs"></a> Haritanın kullanarak hataları bulma  
  Kodunuzu görselleştirmeniz, hataları daha hızlı şekilde bulmanıza yardımcı olabilir. Örneğin, bir çizim programı hatada çalışıyoruz varsayalım. Bir çizgi çizip geri almayı denediğinizde, başka bir çizgi çizinceye kadar hiçbir şey olmaz.  
   
  Kesme noktalarını ayarlayın şekilde `clear`, `undo`, ve `Repaint` yöntemleri, hata ayıklamayı Başlat ve bunun gibi bir harita oluşturur:  
@@ -134,7 +134,7 @@ Aşağıda, bir kod Haritası hızlı bir bakış verilmiştir:
   
  ![Kod haritasında yeni yöntem çağrısı için çağrı yığını eklemek](../debugger/media/debuggermap_addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")  
   
-##  <a name="QA"></a>SORU- CEVAP  
+##  <a name="QA"></a> SORU- CEVAP  
   
 -   **Tüm çağrıları harita üzerinde görünür. Neden?**  
   
@@ -172,7 +172,7 @@ Aşağıda, bir kod Haritası hızlı bir bakış verilmiştir:
   
 -   **Yeni çağrı yığınları otomatik olarak eklemeden harita nasıl Durdur?**  
   
-     Seçin ![düğmesi &#45; Çağrı yığını otomatik olarak kod haritasında Göster](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") map araç. Geçerli çağrı yığını eşlemesine el ile eklemek için basın **Ctrl** + **Shift** + **`**.  
+     Seçin ![düğmesini &#45; Göster çağrı yığınını kod haritasında otomatik olarak](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") map araç. Geçerli çağrı yığını eşlemesine el ile eklemek için basın **Ctrl** + **Shift** + **`**.  
   
      Harita, hatalarını ayıkladığınız sırada mevcut çağrı yığınları harita üzerinde vurgulama devam eder.  
   

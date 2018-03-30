@@ -1,25 +1,27 @@
 ---
-title: "Algılama ve Visual Studio Örnekleri yönetmek için Araçlar | Microsoft Docs"
-description: '{{YER TUTUCU}}'
+title: Algılama ve Visual Studio Örnekleri yönetmek için Araçlar | Microsoft Docs
+description: '{{PLACEHOLDER}}'
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
-author: timsneath
+author: tglee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ad0dfcdaf353d94b7d0ea255def0839069b0a39e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1931866f15f1902de659fcd8a43f05c82affc832
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Algılama ve Visual Studio Örnekleri yönetmek için Araçlar
 
@@ -33,7 +35,7 @@ Biz kullanılabilir algılamak ve istemci makinelerde yüklü Visual Studio Örn
 Ayrıca, [kurulum yapılandırma API'si](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.setup.configuration.aspx) Visual Studio Örnekleri interrogating için kendi yardımcı programları derleme isteyen geliştiriciler için arabirim sağlar.
 
 ## <a name="using-vswhereexe"></a>Vswhere.exe kullanma
-`vswhere.exe`Visual Studio 2017 sürüm 15.2 veya üzerini, otomatik olarak bulunan veya buradan indirebilirsiniz [sürümleri sayfa](https://github.com/Microsoft/vswhere/releases). Kullanım `vswhere -?` aracı hakkında Yardım bilgilerine ulaşmak için. Örnek olarak, bu komut ürün ve önsürümlerin, eski sürümleri dahil olmak üzere Visual Studio tüm sürümleri gösterir ve sonuçları JSON biçiminde çıkarır:
+`vswhere.exe` Visual Studio 2017 sürüm 15.2 veya üzerini, otomatik olarak bulunan veya buradan indirebilirsiniz [sürümleri sayfa](https://github.com/Microsoft/vswhere/releases). Kullanım `vswhere -?` aracı hakkında Yardım bilgilerine ulaşmak için. Örnek olarak, bu komut ürün ve önsürümlerin, eski sürümleri dahil olmak üzere Visual Studio tüm sürümleri gösterir ve sonuçları JSON biçiminde çıkarır:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
@@ -57,7 +59,7 @@ Bu girişler genel kayıt defterinde depolanmaz gibi kayıt defteri ayarları de
    ```
 
 > [!NOTE]
-> `<config>`Dosyaya Gözat ister Visual Studio örneğine karşılık gelir.
+> `<config>` Dosyaya Gözat ister Visual Studio örneğine karşılık gelir.
 
 Yalıtılmış hive adı haline gelen bir hive adı sağlamanız istenir. Bunu yaptıktan sonra oluşturduğunuz yalıtılmış hive altında kayıt defterine Gözat yapabiliyor olmanız gerekir.
 

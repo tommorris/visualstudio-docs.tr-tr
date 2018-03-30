@@ -1,13 +1,13 @@
 ---
-title: "Çok iş parçacıklı uygulamalarda hata ayıklama kullanmaya başlama | Microsoft Docs"
+title: Çok iş parçacıklı uygulamalarda hata ayıklama kullanmaya başlama | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: 
+caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2766a394c88d2040a8f062c33add4e3f7af019
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 48e912fdd04e25f9ad8f7babcf565afb5b739f05
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Visual Studio'da çok iş parçacıklı uygulamada hata ayıklama kullanmaya başlama
 Visual Studio çeşitli araçları ve birden çok iş parçacıklı uygulamalarda hata ayıklama yardımcı olması için kullanıcı arabirimi öğeleri sağlar. Bu öğretici iş parçacığı işaretçileri kullanmayı gösterir **Paralel Yığınlar** penceresinde **paralel Gözcü** penceresi, koşullu kesme noktaları ve filtre kesme noktaları. Bu öğretici yalnızca birkaç dakika sürer ancak tamamlanması, çok iş parçacıklı uygulamalarda hata ayıklama için özelliklerle alışmanızı.
@@ -319,7 +319,7 @@ Bu öğreticiye başlamadan birden çok iş parçacıklı uygulama projesi gerek
 
 İş parçacıklarını bayrakla için bir veya daha fazla bayraklı parçacıklarında tıklayabilir **paralel Gözcü** penceresi ve **Unflag**.
 
-## <a name="bkmk_freeze"></a>Dondurma ve iş parçacığı yürütmeyi çözme 
+## <a name="bkmk_freeze"></a> Dondurma ve iş parçacığı yürütmeyi çözme 
 
 > [!TIP]
 > Dondurma ve çözme (askıya alma ve sürdürme) iş parçacıklarının iş gerçekleştirmek sırasını denetlemek için iş parçacığı sayısı. Bu, kilitlenmeleri gibi eşzamanlılık sorunları çözün ve koşullar durumunu yardımcı olabilir.
@@ -340,7 +340,7 @@ Bu öğreticiye başlamadan birden çok iş parçacıklı uygulama projesi gerek
 
     Uygulamanın, ayrıca bazı yeni iş parçacıkları örneği. Tüm yeni iş parçacıkları bayrak yok ve değil dondurulmuş dikkat edin.
 
-## <a name="bkmk_follow_a_thread"></a>Koşullu kesme noktaları kullanarak tek bir iş parçacığı izleyin
+## <a name="bkmk_follow_a_thread"></a> Koşullu kesme noktaları kullanarak tek bir iş parçacığı izleyin
 
 Bazı durumlarda, tek bir iş parçacığı hata ayıklayıcısında yürütülmesini izlemek faydalı olabilir. Bunu yapabilirsiniz bir yolu ilgilendiğiniz değil iş parçacıklarını dondurmak tarafından ancak bazı senaryolarda (için yeniden oluşturma belirli bir hata, örneğin) diğer iş parçacıklarını dondurmak olmadan tek bir iş parçacığı izleyin isteyebilirsiniz. Diğer iş parçacıklarını dondurmak olmadan bir iş parçacığı izlemek için ilgilendiğiniz iş parçacığı dışında kodu parçalamak kaçınmalısınız. Bunu ayarlayarak yapabilirsiniz bir [koşullu kesme noktası](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 

@@ -1,29 +1,31 @@
 ---
-title: "Visual Studio'da bellek kullanımını çözümleme | Microsoft Docs"
+title: Visual Studio'da bellek kullanımını çözümleme | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d6fc25c3a9d7306332c704453f22073df4e76546
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 38f4457146f8373ad0e4ce3a5477c98a43424538
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Visual Studio profil bellek kullanımı
 Bellek sızıntıları ve verimsiz bellek hata ayıklayıcısı ile tümleşik hatalarını ayıkladığınız sırada Bul **bellek kullanımı** tanı aracı. Uygulamanız bir veya daha fazla bellek kullanımı araç sağlar *anlık görüntüleri* nesne türlerini bellek kullanımı etkisini anlamanıza yardımcı olması için yönetilen ve yerel bellek heap öğesinin. .NET, yerel ya da karma mod (.NET ve yerel) uygulamaları anlık görüntüleri toplayabilirsiniz.  
   
  Aşağıdaki grafik gösterir **tanılama araçları** penceresi (Visual Studio 2015 güncelleştirme 1 ve sonraki sürümlerinde kullanılabilir):  
   
- ![DiagnosticTools &#45; Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools Update1")  
+ ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools Update1")  
   
  İçinde herhangi bir zamanda bellek anlık görüntüleri toplamak rağmen **bellek kullanımı** aracı, performans sorunları incelemeye sırasında uygulamanızı nasıl yürütür denetlemek için Visual Studio hata ayıklayıcısı kullanabilirsiniz. Kesme noktalarını ayarlama, Adımlama, kesme tüm ve diğer hata ayıklayıcı eylemleri, performans araştırmalar en uygun olan kodu yazmalar odaklanmanıza yardımcı olabilir. Uygulamanızı çalışırken bu eylemleri gerçekleştirme sizi ilgilendirmeyen ve bir sorunu tanılamak için geçen süreyi önemli ölçüde düşürebilirsiniz kodundan gürültü ortadan kaldırabilirsiniz.  
   
@@ -33,6 +35,12 @@ Bellek sızıntıları ve verimsiz bellek hata ayıklayıcısı ile tümleşik h
 >  **Özel ayırıcısı Destek** yerel bellek profil oluşturucu çalışır ayırma toplayarak [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) göre çalışma zamanı sırasında gösterilen olay verileri.  Böylece ayırma verilerini yakalanabilir allocators CRT ve Windows SDK kaynak düzeyinde açıklama.  Kendi allocators yazma sonra yeni ayrılan yığın bellek için bir işaretçi döndüren tüm işlevler ile donatılmış [__declspec](/cpp/cpp/declspec)(myMalloc için bu örnekte görüldüğü gibi ayırıcısı):  
 >   
 >  `__declspec(allocator) void* myMalloc(size_t size)` 
+
+Bu öğreticide şunları yapacaksınız:
+
+> [!div class="checklist"]
+> * Bellek anlık görüntülerini alın
+> * Bellek kullanım verilerini çözümleme
 
 ## <a name="collect-memory-usage-data"></a>Bellek kullanım verilerini toplama
 
@@ -108,7 +116,7 @@ Bellek kullanımı çözümlemek için ayrıntılı bir rapor bellek kullanımı
 ### <a name="managed-types-reports"></a>Yönetilen türler raporları  
  Geçerli bağlantıyı seçin bir **nesneleri (fark)** veya **ayırmaları (fark)** bellek kullanımı Özet tablodaki hücre.  
   
- ![Yönetilen tür rapor &#45;hata ayıklayıcı; Kök yolları](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
+ ![Yönetilen tür rapor hata ayıklayıcı &#45; kök yollara](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
  Üst bölme sayısı ve türleri boyutu türü tarafından başvurulan tüm nesnelerin boyutunu dahil olmak üzere anlık görüntüyü gösterir (**kapsayıcı boyutu**).  
   
@@ -139,13 +147,13 @@ Bellek kullanımı çözümlemek için ayrıntılı bir rapor bellek kullanımı
   
 -   Seçin **yığınlar görünümü** içinde **görüntüleme modu** seçili türünün ayırma yığını görmek için liste.  
   
-     ![Yığınlar Görünüm](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")  
+     ![Stacks View](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
 ### <a name="change-diff-reports"></a>(Fark) raporları değiştirme  
   
 -   Özet tablosunu hücrede değiştir bağlantısını seçin **bellek kullanımı** sekmesi **tanılama araçları** penceresi.  
   
-     ![Bir değişiklik &#40; DIF &#41; f raporu'ı seçin.](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+     ![Bir değişiklik seçin &#40;DIF&#41;f rapor](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
 -   İçindeki bir anlık görüntüsünü seçin **karşılaştırmak için** yönetilen veya yerel rapor listesi.  
   
@@ -165,6 +173,9 @@ Bellek kullanımı çözümlemek için ayrıntılı bir rapor bellek kullanımı
   
  [Visual C++ Blog: Visual C++ 2015'te bellek profili oluşturma](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
-## <a name="see-also"></a>Ayrıca Bkz.
- [Visual Studio'da profil oluşturma](../profiling/index.md)  
- [Özellik turu profil oluşturma](../profiling/profiling-feature-tour.md)
+## <a name="next-steps"></a>Sonraki adımlar
+
+Bu öğreticide, toplamak ve bellek kullanım verilerini analiz etme öğrendiniz. Zaten tamamladıysanız [profil oluşturucu Turu](../profiling/profiling-feature-tour.md), uygulamalarınızdaki CPU kullanımı analiz etme hızlı bir bakış almak isteyebilirsiniz.
+
+> [!div class="nextstepaction"]
+> [CPU kullanımını analiz etme](../profiling/beginners-guide-to-performance-profiling.md) 

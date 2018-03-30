@@ -1,25 +1,27 @@
 ---
-title: "Visual Studio çevrimdışı yükleme için gerekli sertifikaları yükleyin | Microsoft Docs"
-description: "Visual Studio çevrimdışı yükleme için sertifikaları yüklemek için gereken adımları açıklar"
+title: Visual Studio çevrimdışı yükleme için gerekli sertifikaları yükleyin | Microsoft Docs
+description: Visual Studio çevrimdışı yükleme için sertifikaları yüklemek için gereken adımları açıklar
 ms.date: 08/30/2017
 ms.reviewer: tims
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
-author: timsneath
+author: tglee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4d462120e7b51551ca7f15cc2d23387824a1f9f1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a1ffca50b849a273b4ab49955eaf92e4e637cfbb
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio çevrimdışı yükleme için gerekli sertifikaları yükleyin
 
@@ -98,7 +100,7 @@ Yükleme sistemde kontrol etmenin bir yolu şu adımları takip etmektir:
   e. Genişletme **güvenilen kök sertifika yetkilileri**ve ardından **Sertifikalar**.<br/>
     * Bu gerekli kök sertifikalar listesini denetler.<br/>
 
-   F Genişletme **Ara Sertifika Yetkilileri**ve ardından **Sertifikalar**.<br/>
+   f. Genişletme **Ara Sertifika Yetkilileri**ve ardından **Sertifikalar**.<br/>
     * Gerekli Ara sertifikaları için bu listeyi kontrol edin.<br/>
 
 2. Dosya ve Seç'i tıklatın **Ekle/Kaldır ek bileşenini**.<br/>

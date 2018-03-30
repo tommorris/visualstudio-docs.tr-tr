@@ -1,25 +1,27 @@
 ---
-title: "Visual Studio ağ tabanlı yüklemesini güncelleştirme | Microsoft Docs"
-description: "Kullanarak ağ tabanlı bir Visual Studio yükleme güncelleştirme öğrenin düzeni komutu"
+title: Visual Studio ağ tabanlı yüklemesini güncelleştirme | Microsoft Docs
+description: Kullanarak ağ tabanlı bir Visual Studio yükleme güncelleştirme öğrenin düzeni komutu
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
-author: timsneath
+author: tglee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 63b9b8b85eeb300ba9a8a534aee25bfdd55b10d0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 61c4660bca0a2956537485224d369df2dc03ee4d
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio ağ tabanlı yüklemesini güncelleştirme
 

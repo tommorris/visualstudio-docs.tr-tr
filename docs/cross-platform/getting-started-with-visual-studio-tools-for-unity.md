@@ -1,23 +1,23 @@
 ---
-title: "Unity için Visual Studio araçlarını kullanmaya başlama | Microsoft Docs"
-ms.custom: 
+title: Unity için Visual Studio araçlarını kullanmaya başlama | Microsoft Docs
+ms.custom: ''
 ms.date: 04/07/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
 author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 009dc69f1c21cc984ce7eb79e5a0ce69ad026382
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 3cac4d31611ae1facdf7ac2ba628e06622f10b59
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Unity için Visual Studio araçlarını kullanmaya başlama
 Bu bölümde, Unity için Visual Studio araçlarını yükleme ve Unity projeniz Visual Studio ile çalışmak için yapılandırma hakkında bilgi edineceksiniz.
@@ -81,7 +81,7 @@ Bu bölümde, Unity için Visual Studio araçlarını yükleme ve Unity projeniz
 
  Son olarak, bir yapı hedef aracılığıyla ayarladığınızdan emin olun **Build Settings** sayfası ve, **komut dosyasında hata ayıklama** etkinleştirilir.
 
- ![Hata ayıklama için Unity derleme ayarlarını yapılandırın. ] (../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
+ ![Hata ayıklama için Unity derleme ayarlarını yapılandırın.](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
 
 #### <a name="3---launch-visual-studio-from-the-unity-editor"></a>3 - Visual Studio'yu Unity Düzenleyicisi'nden başlatın
  Unity 5.2 ile başlayan **Visual Studio Araçları** uzantısı menüsü Visual Studio'yu başlatın veya Unity için Visual Studio Araçları yapılandırmak için artık gerekli. Visual Studio Dış betik düzenleyicisi olarak yapılandırıldıktan sonra bunun yerine, yalnızca Visual Studio'da Unity Düzenleyicisi'ni ve kodunuzu betik dosyasından açılacak seçin.
@@ -103,7 +103,7 @@ Bu bölümde, Unity için Visual Studio araçlarını yükleme ve Unity projeniz
 
  Son olarak, bir yapı hedef aracılığıyla ayarladığınızdan emin olun **Build Settings** sayfası ve, **komut dosyasında hata ayıklama** etkinleştirilir.
 
- ![Hata ayıklama için Unity derleme ayarlarını yapılandırın. ] (../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
+ ![Hata ayıklama için Unity derleme ayarlarını yapılandırın.](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
 
 #### <a name="3---launch-visual-studio-from-unity-editor"></a>3 - Visual Studio'yu Unity Düzenleyicisi'nden başlatın
  Son adım, Unity Visual Studio başlatmaktır. Bu projeniz için bir Visual Studio çözümü oluşturur ve ardından Visual Studio'da açar.

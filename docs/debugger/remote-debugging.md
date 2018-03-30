@@ -1,13 +1,13 @@
 ---
-title: "Visual Studio uzaktan hata ayıklama | Microsoft Docs"
+title: Visual Studio uzaktan hata ayıklama | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
 dev_langs:
@@ -19,17 +19,17 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
+caps.latest.revision: 65
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 21867feae0d313c3ac5f93e51cf85ebe14bbba0b
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: ddba7e3d75f796ed0667dc39efc08555034e2a59
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 Başka bir bilgisayara dağıtılan bir Visual Studio uygulama ayıklayabilirsiniz. Bunu yapmak için Visual Studio uzaktan hata ayıklayıcı kullanın.
@@ -52,7 +52,7 @@ Yalnızca uzaktan hata ayıklayıcı karşıdan yükleyip istiyorsanız ve senar
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="fileshare_msvsmon"></a>(İsteğe bağlı) Uzaktan hata ayıklayıcı dosya paylaşımından çalıştırmak için
+### <a name="fileshare_msvsmon"></a> (İsteğe bağlı) Uzaktan hata ayıklayıcı dosya paylaşımından çalıştırmak için
 
 Uzaktan hata ayıklayıcı bulabilirsiniz (**msvsmon.exe**) Visual Studio Community, Professional veya Enterprise zaten yüklü olan bir bilgisayarda. Bazı senaryolarda, uzaktan hata ayıklama Kurulumu en kolay yolu uzaktan hata ayıklayıcı (msvsmon.exe) bir dosya paylaşımından çalıştırmaktır. Kullanım kısıtlamaları için uzaktan hata ayıklayıcı'nın yardım sayfasına bakın (**Yardım > kullanım** uzaktan hata ayıklayıcı).
 
@@ -69,7 +69,7 @@ Uzaktan hata ayıklayıcı bulabilirsiniz (**msvsmon.exe**) Visual Studio Commun
 > [!TIP] 
 > Komut satırı yüklemesi ve komut satırı başvurusu için yönelik yardım sayfasına bakın **msvsmon.exe** yazarak ``msvsmon.exe /?`` Visual Studio'nun yüklü olan bilgisayarda bir komut satırında (veya gitmek **Yardım > kullanım**uzaktan hata ayıklayıcı).
   
-## <a name="requirements_msvsmon"></a>Gereksinimleri
+## <a name="requirements_msvsmon"></a> Gereksinimleri
 
 [!INCLUDE [remote-debugger-requirements](../debugger/includes/remote-debugger-requirements.md)]
   
@@ -77,7 +77,7 @@ Uzaktan hata ayıklayıcı bulabilirsiniz (**msvsmon.exe**) Visual Studio Commun
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-### <a name="configure_msvsmon"></a>Uzaktan hata ayıklayıcı yapılandırın  
+### <a name="configure_msvsmon"></a> Uzaktan hata ayıklayıcı yapılandırın  
 İlk kez başlattıktan sonra bazı yönleri uzaktan hata ayıklayıcı yapılandırmasını değiştirebilirsiniz.
   
 -   Uzaktan hata ayıklayıcıya bağlanmak için seçin diğer kullanıcılar için izinler eklemeniz gerekiyorsa, **Araçlar > izinleri**. İzinleri vermek veya reddetmek için yönetici ayrıcalıklarınızın olması gerekir.
@@ -94,7 +94,7 @@ Uzaktan hata ayıklayıcı bulabilirsiniz (**msvsmon.exe**) Visual Studio Commun
      > [!WARNING]
      >  Uzak araçları Kimlik Doğrulaması Yok modunda çalıştırmayı seçebilirsiniz, fakat bu mod kesinlikle önerilmez. Bu modda çalıştırdığınızda, ağ güvenliği yoktur. Yalnızca ağ kötü amaçlı veya saldırgan trafiğinden risk kullanılmadığından emin olduğunuzda Hayır kimlik doğrulama modu seçin.
 
-##  <a name="bkmk_configureService"></a>(İsteğe bağlı) Uzaktan hata ayıklayıcı bir hizmet olarak yapılandırma
+##  <a name="bkmk_configureService"></a> (İsteğe bağlı) Uzaktan hata ayıklayıcı bir hizmet olarak yapılandırma
 ASP.NET ve diğer sunucu ortamlara hata ayıklama için uzaktan hata ayıklayıcı yönetici olarak çalıştırın veya, her zaman çalışmasını istiyorsanız, uzaktan hata ayıklayıcı bir hizmet olarak çalıştırın.
   
  Uzaktan hata ayıklayıcı bir hizmet olarak yapılandırmak istiyorsanız, aşağıdaki adımları izleyin.  

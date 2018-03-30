@@ -10,17 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9f0c65110ef1003c58c0a4002f90ec7e7e08e3
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 6634a72b7bbed51e3ae250289696511d67c70041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Visual Studio IntelliTrace adım geri kullanarak görünüm anlık görüntüler
 
@@ -39,11 +39,11 @@ Bu öğreticide şunları yapacaksınız:
 
 1. Projenizi Visual Studio kuruluş içinde açın.
 
-1. Git **Araçlar > Seçenekler > IntelliTrace** ayarları ve seçeneğini seçin **IntelliTrace olayları ve anlık görüntüleri**. 
+1. Açık **Araçları** > **seçenekleri** > **IntelliTrace** Ayarları ' nı seçip seçeneği **IntelliTrace olayları ve anlık görüntüleri** . 
 
     ![IntelliTrace olayları ve anlık görüntüleri modunu etkinleştirme](../debugger/media/intellitrace-enable-snapshots.png "IntelliTrace olayları etkinleştirmek ve anlık görüntü modu")
 
-1. Projenizde bir veya daha fazla kesme noktaları ayarlayın ve hata ayıklamayı Başlat (basın **F5**), ya da kodunuzu adımla hata ayıklamayı Başlat (**F10** veya **F11**).
+1. Projeniz, bir veya daha fazla kesme noktaları ayarlayın ve hata ayıklamayı Başlat (basın **F5**), ya da kodunuzu adımla hata ayıklamayı Başlat (**F10** veya **F11**).
 
     IntelliTrace anlık görüntüsü uygulama işlemi her hata ayıklayıcısını adım ve kesme olayı alır. Bu olaylar kaydedilir **olayları** sekmesinde **tanılama araçları** diğer IntelliTrace olayları birlikte penceresi. Bu pencereyi açmak için **hata ayıklama** > **Windows** > **tanılama araçları Göster**.
 

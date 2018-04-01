@@ -1,16 +1,16 @@
 ---
-title: "Öğe işlevleri | Microsoft Docs"
-ms.custom: 
+title: Öğe işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - msbuild, Item functions
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
-caps.latest.revision: 
+caps.latest.revision: 28
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen

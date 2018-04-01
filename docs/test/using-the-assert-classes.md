@@ -1,5 +1,5 @@
 ---
-title: "Birim Visual Studio'da Test etmek için onay sınıfları kullanma | Microsoft Docs"
+title: Birim Visual Studio'da Test etmek için onay sınıfları kullanma | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
 ms.topic: article

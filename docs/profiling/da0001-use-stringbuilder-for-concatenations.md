@@ -1,11 +1,12 @@
 ---
-title: "DA0001: Birleştirmeler için StringBuilder kullanın | Microsoft Docs"
-ms.custom: 
+title: 'DA0001: Birleştirmeler için StringBuilder kullanın | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.performance.DA0001
@@ -13,11 +14,12 @@ f1_keywords:
 - vs.performance.1
 - vs.performance.rules.DA0001
 ms.assetid: a7cc7613-ad5f-48c8-bd2b-56372cc12dfc
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8e7393d3a42193c5d25eadc40fcbc02a38cfcdfd
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

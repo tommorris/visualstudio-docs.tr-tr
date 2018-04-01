@@ -1,11 +1,12 @@
 ---
 title: 'CA1307: StringComparison belirtme | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - CA1307
@@ -14,11 +15,12 @@ helpviewer_keywords:
 - CA1307
 - SpecifyStringComparison
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 7087cfe23f7911ec33891a70cd88cf47ee9e4a7b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,10 +1,10 @@
 ---
-title: "İzlenecek yol: veri kümesi tasarımcısında DataTable oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: veri kümesi tasarımcısında DataTable oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 10/19/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - DataTable objects, creating
@@ -15,7 +15,8 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.workload: data-storage
+ms.workload:
+- data-storage
 ms.openlocfilehash: 7df2579f5556e0e35b4203c700ca3f96f46a7d2f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

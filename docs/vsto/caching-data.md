@@ -1,11 +1,12 @@
 ---
-title: "Verileri önbelleğe alma | Microsoft Docs"
-ms.custom: 
+title: Verileri önbelleğe alma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- office-development
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 0d036f11d60a8da1362464a875fdc0f2771cac0e
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

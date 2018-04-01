@@ -1,11 +1,12 @@
 ---
-title: "CA1045: türleri başvuruya göre geçmeyin | Microsoft Docs"
-ms.custom: 
+title: 'CA1045: türleri başvuruya göre geçmeyin | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - CA1045
@@ -14,11 +15,12 @@ helpviewer_keywords:
 - CA1045
 - DoNotPassTypesByReference
 ms.assetid: bcc3900a-e092-4bb8-896f-cb83f6289968
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 7542e21963f272dd10180203a52bee9994de2cdc
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

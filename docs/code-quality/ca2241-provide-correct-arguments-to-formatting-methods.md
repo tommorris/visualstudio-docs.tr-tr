@@ -1,11 +1,12 @@
 ---
-title: "CA2241: biçimlendirme yöntemlerine doğru bağımsız değişkenleri sağlayın | Microsoft Docs"
-ms.custom: 
+title: 'CA2241: biçimlendirme yöntemlerine doğru bağımsız değişkenleri sağlayın | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - CA2241
@@ -15,11 +16,12 @@ helpviewer_keywords:
 - ProvideCorrectArgumentsToFormattingMethods
 - CA2241
 ms.assetid: 83639bc4-4c91-4a07-a40e-dc5e49a84494
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: f5f71926705169d4ed7dc40318e83f265e8603f5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

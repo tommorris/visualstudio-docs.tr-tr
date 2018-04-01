@@ -1,19 +1,22 @@
 ---
-title: "XML (XElement dinamik özellik) | Microsoft Docs"
-ms.custom: 
+title: XML (XElement dinamik özellik) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-designers
+ms.tgt_pltfrm: ''
 ms.topic: article
-apiname: XElement.Xml
+apiname:
+- XElement.Xml
 ms.assetid: 69ab2a33-4fe7-4cfa-97f8-eaf063decb18
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: b03c03ce5980b1c6042d1670d33d43fea6c7edc4
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,11 +1,12 @@
 ---
-title: "CA1021: out parametrelerinden kaçının | Microsoft Docs"
-ms.custom: 
+title: 'CA1021: out parametrelerinden kaçının | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - CA1021
@@ -14,11 +15,12 @@ helpviewer_keywords:
 - AvoidOutParameters
 - CA1021
 ms.assetid: 970f2304-842c-4fb7-9734-f3871da8d479
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: f8748b9943f3a3aa31a6585de07bdc9eff3cc5ab
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

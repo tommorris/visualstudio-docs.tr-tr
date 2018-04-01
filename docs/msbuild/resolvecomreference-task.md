@@ -1,11 +1,11 @@
 ---
-title: "ResolveComReference görevi | Microsoft Docs"
-ms.custom: 
+title: ResolveComReference görevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - MSBuild, ResolveCOMReference task
 - ResolveCOMReference task [MSBuild]
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
-caps.latest.revision: 
+caps.latest.revision: 26
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen

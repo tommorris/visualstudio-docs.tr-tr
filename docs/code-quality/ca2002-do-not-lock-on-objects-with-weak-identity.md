@@ -1,9 +1,9 @@
 ---
-title: "CA2002: zayıf kimliği olan nesneleri kilitlemeyin | Microsoft Docs"
-ms.custom: 
+title: 'CA2002: zayıf kimliği olan nesneleri kilitlemeyin | Microsoft Docs'
+ms.custom: ''
 ms.date: 01/31/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 f1_keywords:

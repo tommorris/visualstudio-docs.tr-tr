@@ -1,18 +1,20 @@
 ---
-title: ".NET framework kullanımı performans kuralları | Microsoft Docs"
-ms.custom: 
+title: .NET framework kullanımı performans kuralları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ffc5a37378248e331e9a8b594f6d39f842fa3e78
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

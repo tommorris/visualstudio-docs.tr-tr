@@ -1,18 +1,20 @@
 ---
-title: "İzlenecek yol: ampul önerileri görüntüleme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: ampul önerileri görüntüleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 97ab32d4bfe0772d7b50ea1ca5a0b0ec143ed536
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

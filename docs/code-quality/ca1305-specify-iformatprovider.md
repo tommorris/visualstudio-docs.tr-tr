@@ -1,11 +1,12 @@
 ---
 title: 'CA1305: Iformatprovider belirtme | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - SpecifyIFormatProvider
@@ -14,11 +15,12 @@ helpviewer_keywords:
 - CA1305
 - SpecifyIFormatProvider
 ms.assetid: fb34ed9a-4eab-47cc-8eef-3068a4a1397e
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8bb3d993cc79ebf683f0a2622628bfc87d7c065a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

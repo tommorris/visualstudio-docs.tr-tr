@@ -1,20 +1,23 @@
 ---
-title: "Değer (XAttribute dinamik özellik) | Microsoft Docs"
-ms.custom: 
+title: Değer (XAttribute dinamik özellik) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-designers
+ms.tgt_pltfrm: ''
 ms.topic: article
-apiname: XAttribute.Value
+apiname:
+- XAttribute.Value
 apitype: Assembly
 ms.assetid: 019733d2-e050-4120-b537-831cd3fc008e
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 4807a84b9e1de5186e72cbe138f0f54e2f33525e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

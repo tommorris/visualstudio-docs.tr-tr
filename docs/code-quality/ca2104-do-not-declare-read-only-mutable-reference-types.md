@@ -1,11 +1,12 @@
 ---
-title: "CA2104: Okuma yalnızca kesilebilir başvuru türleri bildirmeyin | Microsoft Docs"
-ms.custom: 
+title: 'CA2104: Okuma yalnızca kesilebilir başvuru türleri bildirmeyin | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
@@ -14,11 +15,12 @@ helpviewer_keywords:
 - CA2104
 - DoNotDeclareReadOnlyMutableReferenceTypes
 ms.assetid: 81b83ee5-4db5-4be0-9f8d-90b53894ec3b
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: bbd12d09c95f1ec93c7232901270cfbece311693
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

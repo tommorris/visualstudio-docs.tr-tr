@@ -1,12 +1,12 @@
 ---
-title: "Yönetilen koddaki onaylar | Microsoft Docs"
-ms.custom: 
+title: Yönetilen koddaki onaylar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
@@ -23,7 +23,7 @@ helpviewer_keywords:
 - Trace.Listeners property
 - assertions, managed code
 ms.assetid: 70ab2522-6486-4076-a1a9-e0f11cd0f3a1
-caps.latest.revision: 
+caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

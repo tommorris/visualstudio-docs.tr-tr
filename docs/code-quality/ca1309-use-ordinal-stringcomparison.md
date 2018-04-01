@@ -1,11 +1,12 @@
 ---
-title: "CA1309: sıralı StringComparison kullanın | Microsoft Docs"
-ms.custom: 
+title: 'CA1309: sıralı StringComparison kullanın | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - UseOrdinalStringComparison
@@ -14,11 +15,12 @@ helpviewer_keywords:
 - UseOrdinalStringComparison
 - CA1309
 ms.assetid: 19be0854-cb6e-4efd-a4c8-a5c1fc6f7a71
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: cf913eea3f156595c9b9194b3d8a74e71b848367
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

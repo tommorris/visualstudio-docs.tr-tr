@@ -1,11 +1,12 @@
 ---
-title: "CA1820: Dize uzunluğunu kullanarak boş dizeler için sınayın | Microsoft Docs"
-ms.custom: 
+title: 'CA1820: Dize uzunluğunu kullanarak boş dizeler için sınayın | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - TestForEmptyStringsUsingStringLength
@@ -14,11 +15,12 @@ helpviewer_keywords:
 - TestForEmptyStringsUsingStringLength
 - CA1820
 ms.assetid: da1e70c8-b1dc-46b9-8b8f-4e6e48339681
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: d044f09ca26b65506bcfb7466f59da73acfad1e4
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

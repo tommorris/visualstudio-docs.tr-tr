@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio'da bir özel HTTP Gövde Düzenleyicisi için Web Performans Testi Düzenleyicisi oluşturma | Microsoft Docs"
+title: Visual Studio'da bir özel HTTP Gövde Düzenleyicisi için Web Performans Testi Düzenleyicisi oluşturma | Microsoft Docs
 ms.date: 10/19/2016
 ms.topic: article
 helpviewer_keywords:

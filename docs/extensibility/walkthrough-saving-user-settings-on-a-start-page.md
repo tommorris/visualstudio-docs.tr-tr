@@ -1,18 +1,20 @@
 ---
-title: "İzlenecek yol: Bir başlangıç sayfasında kullanıcı ayarları kaydetme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Bir başlangıç sayfasında kullanıcı ayarları kaydetme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 16de0e205d71e2a71b14f523dedbb45354157355
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

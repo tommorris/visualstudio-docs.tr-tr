@@ -1,18 +1,20 @@
 ---
-title: "Kimliğe göre performans kuralları | Microsoft Docs"
-ms.custom: 
+title: Kimliğe göre performans kuralları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a1c934c-4798-4df9-a8ef-eb17ef06b6a2
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 48072da90145fbb60157b18bde5f38ce3cd8a8dc
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

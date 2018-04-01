@@ -1,18 +1,20 @@
 ---
-title: "CA3075: Güvensiz DTD işleme | Microsoft Docs"
-ms.custom: 
+title: 'CA3075: Güvensiz DTD işleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 34f3d518e282650f9369aa3af8fe1600b4f28662
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

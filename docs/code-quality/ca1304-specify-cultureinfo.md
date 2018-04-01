@@ -1,11 +1,12 @@
 ---
 title: 'CA1304: CultureInfo belirtme | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - SpecifyCultureInfo
@@ -14,11 +15,12 @@ helpviewer_keywords:
 - SpecifyCultureInfo
 - CA1304
 ms.assetid: b912d76a-54fd-4c93-b25d-16491e0ae319
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 932ac7e8f731974896991cea5ae504e452e9a036
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

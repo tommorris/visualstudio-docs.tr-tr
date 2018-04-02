@@ -1,8 +1,8 @@
 
 # [Profil oluşturma belgeleri](index.md)
 # Genel Bakış
-## [Profil oluşturma özelliği turu](profiling-feature-tour.md)
 # Hızlı Başlangıçlar
+## [Profil oluşturmaya ilk bakış](profiling-feature-tour.md)
 ## [CPU kullanımını analiz etme (yönetilen)](quickstart-cpu-usage-managed.md)
 ## [CPU kullanımını analiz etme (yerel)](quickstart-cpu-usage-native.md)
 ## [CPU kullanımını analiz etme (ASP.NET)](quickstart-cpu-usage-aspnet.md)

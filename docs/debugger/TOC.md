@@ -1,7 +1,7 @@
 # [Hata ayıklayıcısı belgeleri](index.md)
-# Genel Bakış
-## [Hata ayıklayıcısı özellik turu](debugger-feature-tour.md)
+# [Genel bakış](debugger-overview.md)
 # Hızlı Başlangıçlar
+## [Hata ayıklayıcıya ilk bakış](debugger-feature-tour.md)
 ## [Yönetilen uygulamaların hatalarını ayıklama](quickstart-debug-with-managed.md)
 ## [Yerel uygulamaların hatalarını ayıklama](quickstart-debug-with-cplusplus.md)
 ## [ASP.NET uygulamalarının hatalarını ayıklama](quickstart-debug-aspnet.md)
@@ -26,9 +26,6 @@
 ### [Görselleştiricide dize değerlerini görüntüleme](string-visualizer-dialog-box.md)
 ### [Ayrıştırılmış kodu görüntüleme](how-to-use-the-disassembly-window.md)
 #### [Nasıl yapılır: Bellekte bir sayfa yukarı veya aşağı gitme](how-to-page-up-or-down-in-memory.md)
-### [Çağrı yığınını görüntüleme](how-to-use-the-call-stack-window.md)
-#### [Çağrı Yığını penceresinde karışık kod ve eksik bilgiler](mixed-code-and-missing-information-in-the-call-stack-window.md)
-#### [Nasıl yapılır: Yerel çerçeveler çağrı yığını Penceresinde olmadığında yönetilen kodların dışına adımlama](how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)
 ### [Yazmaç değerlerini görüntüleme](how-to-use-the-registers-window.md)
 #### [Yazmaçlar penceresi hakkında](debugging-basics-registers-window.md)
 #### [Nasıl yapılır: Yazmaç gruplarını görüntüleme ve gizleme](how-to-display-and-hide-register-groups.md)

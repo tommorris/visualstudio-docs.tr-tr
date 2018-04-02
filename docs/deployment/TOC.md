@@ -1,7 +1,8 @@
 # [Dağıtım belgeleri](index.md)
 # Genel Bakış
-## [Dağıtıma genel bakış](deploying-applications-services-and-components.md)
+## [Dağıtıma genel bakış](deploying-applications-services-and-components-resources.md)
 # Hızlı Başlangıçlar
+## [Dağıtıma ilk bakış](deploying-applications-services-and-components.md)
 ## [Yerel klasöre dağıtma](quickstart-deploy-to-local-folder.md)
 ## [Web sitesine dağıtma](quickstart-deploy-to-a-web-site.md)
 ## [Azure’a dağıtma](quickstart-deploy-to-azure.md)
@@ -131,6 +132,4 @@
 #### [<Signature> Öğesi (ClickOnce Dağıtımı)](signature-element-clickonce-deployment.md)
 #### [<customErrorReporting> Öğesi (ClickOnce Dağıtımı)](customerrorreporting-element-clickonce-deployment.md)
 ### [ClickOnce Yönetilmeyen API Başvurusu](clickonce-unmanaged-api-reference.md)
-# Kaynaklar
-## [Uygulamaları, Hizmetleri ve Bileşenleri Dağıtma](deploying-applications-services-and-components-resources.md)
 

@@ -20,6 +20,7 @@
 #### [Blend’de erişilebilirlik ürünleri ve hizmetleri](accessibility-products-and-services-blend.md)
 ### [XAML Tasarımcısı için klavye kısayolları](keyboard-shortcuts-for-xaml-designer.md)
 ### [XAML Tasarımcısı'nda Proje Kodu Hatalarını Ayıklama veya Proje Kodunu Devre Dışı Bırakma](debugging-or-disabling-project-code-in-xaml-designer.md)
+### [XAML Hataları ve Uyarıları](xaml-errors-warnings.md)
 ## [Windows Presentation Foundation ile Modern Masaüstü Uygulamaları Oluşturma](create-modern-desktop-applications-with-windows-presentation-foundation.md)
 ### [WPF Kullanmaya Başlarken](getting-started-with-wpf.md)
 #### [WPF'ye Giriş](introduction-to-wpf.md)

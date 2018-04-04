@@ -1,24 +1,24 @@
 ---
 title: Bir Azure sanal makinede Visual Studio kullanarak | Microsoft Docs
-description: "Bir Azure sanal makinede Visual Studio kullanmayı öğrenin"
+description: Bir Azure sanal makinede Visual Studio kullanmayı öğrenin
 ms.date: 03/03/2018
 ms.technology: vs-acquisition
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - azure services
 - virtual machine; VM
 - installation
 - visual studio
 author: PhilLee-MSFT
-ms.author: phillee
-manager: sacalla
+ms.author: tglee
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4492a35c7d58aa92c2c3e86de5bd6be8f8ad9eca
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 0a7e1a3646e2e30302548f2445b0ab657f8e3ec4
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a id="top"> </a> Azure üzerinde Visual Studio görüntüleri
 Önceden yapılandırılmış Azure sanal makinede (VM) Visual Studio kullanarak herhangi bir şey için bir yukarı ve çalışan geliştirme ortamı gitmek için hızlı ve kolay bir yoludur. Sistem görüntüleri farklı Visual Studio yapılandırmalarla kullanılabilir [Azure Marketi](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1).
@@ -28,12 +28,13 @@ Azure yeni misiniz? [Ücretsiz bir Azure hesabı oluşturma](https://azure.micro
 ## <a name="what-configurations-and-versions-are-available"></a>Hangi yapılandırmaları ve sürümleri kullanılabilir?
 Görüntüleri en son ana sürüm, Visual Studio 2017 ve Visual Studio 2015 için Azure Marketi'nde bulunabilir. Her ana sürümü için yayınlanmış (RTW) sürümü ve en son güncelleştirilmiş sürümlerine bakın. Bu sürümlerin her biri, Visual Studio Enterprise ve Visual Studio Community sürümleri sunar. Bu görüntüler en az her ay en son Visual Studio ve Windows güncelleştirmeleri içerecek şekilde güncelleştirildi. Görüntüleri adları aynı kalsa da her görüntünün açıklaması yüklü ürün sürümü ve görüntünün "itibariyle" tarihini içerir.
 
-| Yayın sürümü              | Sürümler            | Ürün sürümü:     |
-|:-----------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: En son (sürüm 15,6) |    Enterprise, Community     |      Sürüm 15.6.0     |
-|         Visual Studio 2017: RTW           |    Enterprise, Community     |      Sürüm 15.0.10    |
-|   Visual Studio 2015: En son (güncelleştirme 3)   |    Enterprise, Community     |  Sürüm 14.0.25431.01  |
-|         Visual Studio 2015: RTW           |             Yok.             | (Bakım için süresi) |
+| Yayın sürümü                                              | Sürümler                     |     Ürün sürümü:     |
+|:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
+| Visual Studio 2017: En son (sürüm 15,6)                    |    Enterprise, Community     |      Sürüm 15.6.4     |
+| Visual Studio 2017: En son Önizleme (sürüm 15.7, Preview 3) |    Enterprise, Community     |      Sürüm 15.7.0     |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Sürüm 15.0.10    |
+|   Visual Studio 2015: En son (güncelleştirme 3)                      |    Enterprise, Community     |  Sürüm 14.0.25431.01  |
+|         Visual Studio 2015: RTW                              |             Yok.             | (Bakım için süresi) |
 
 > [!NOTE]
 > İlke bakım Microsoft uygun olarak, bakım için Visual Studio 2015 yayınlanan özgün (RTW) sürümünün süresi sona erdi. Visual Studio 2015 güncelleştirme 3, Visual Studio 2015 ürün çizgi sunulan yalnızca kalan sürümüdür.
@@ -54,7 +55,7 @@ Görüntüleri oluştururken Visual Studio'yu yüklemek için aşağıdaki komut
 ```shell
     vs_enterprise.exe --allWorkloads --includeRecommended --passive ^
        add Microsoft.Net.Component.4.7.SDK ^
-       add Microsoft.Net.Component.4.7.TargetingPack ^ 
+       add Microsoft.Net.Component.4.7.TargetingPack ^
        add Microsoft.Net.Component.4.6.2.SDK ^
        add Microsoft.Net.Component.4.6.2.TargetingPack ^
        add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
@@ -75,14 +76,14 @@ Azure sanal makine boyutlarının sunmaktadır. Visual Studio güçlü çok iş 
    * Standard_D2_v2
    * Standard_D2S_v2
    * Standard_D3_v2
-    
+
 En son makine boyutları hakkında daha fazla bilgi için bkz: [boyutları için Windows Azure sanal makineleri](/azure/virtual-machines/windows/sizes).
 
 Azure ile VM boyutlandırarak ilk seçiminiz yeniden dengelemeniz. Daha uygun bir boyutu ile yeni bir VM sağlamak veya farklı temel alınan donanım için mevcut VM'yi yeniden boyutlandırın. Daha fazla bilgi için bkz: [Windows VM yeniden boyutlandırma](/azure/virtual-machines/windows/resize-vm).
 
 ## <a name="after-the-vm-is-running-whats-next"></a>VM çalışmaya başladığında, sonraki nedir?
 Visual Studio Azure "kendi lisansını getir" modelinde izler. Bir yüklemede gibi özel donanım ile ilk adımlarından biri Visual Studio yüklemenizin lisans. Visual Studio ya da kilidini açmak için:
-- Visual Studio abonelikle ilişkili bir Microsoft hesabıyla oturum açın 
+- Visual Studio abonelikle ilişkili bir Microsoft hesabıyla oturum açın
 - İlk satın alma işleminiz ile birlikte gelen ürün anahtarı ile Visual Studio kilidini açma
 
 Daha fazla bilgi için bkz: [Visual Studio'ya oturum](../ide/signing-in-to-visual-studio.md) ve [Visual Studio kilidini açma](../ide/how-to-unlock-visual-studio.md).

@@ -1,31 +1,31 @@
 ---
-title: "Yüklediğinizde veya Visual Studio kullandığınızda ağ ile ilgili sorun giderme | Microsoft Docs"
-description: 
-ms.custom: 
+title: Yüklediğinizde veya Visual Studio kullandığınızda ağ ile ilgili sorun giderme | Microsoft Docs
+description: ''
+ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs, Visual Studio
 - proxy errors, Visual Studio
-ms.assetid: 
+ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4d1e330a6ab378c61876b3f869f88b2a29c35a1
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: fc5f1c07f709c1cdb8e20704dbea9cb5550b14b3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Yüklediğinizde veya Visual Studio kullandığınızda ağ ile ilgili sorun giderme
 Yüklediğinizde veya bir güvenlik duvarı veya proxy sunucunun Visual Studio'yu kullanma karşılaşabileceğiniz en tipik ağ veya proxy ilgili hataları biz çözümleri açıyor.
@@ -38,7 +38,7 @@ Bu hata genellikle kullanıcılar bir proxy sunucu üzerinden Internet'e bağlı
 
 - Visual Studio'yu yeniden başlatın. Proxy kimlik doğrulaması iletişim kutusu görünür. İletişim kutusunda istendiğinde, kimlik bilgilerinizi girin.
 
-- Visual Studio'yu yeniden başlatmayı sorunu çözmezse, proxy sunucusu için http kimlik bilgileri istenmez olabilir: &#47; &#47;go.microsoft.com adresleri ancak bunu yapar &#42;. visualStudio.com adresleri. Bu sunucular için Visual Studio tüm oturum açma senaryoları engellemesini kaldırmak için aşağıdaki URL'ler uygulamaları güvenilir listeye almayı göz önünde bulundurun:
+- Visual Studio'yu yeniden başlatmayı sorunu çözmezse, proxy sunucusu için http kimlik bilgileri istenmez olabilir:&#47;&#47;go.microsoft.com adresleri ancak bunu yapar &#42;. visualStudio.com adresleri. Bu sunucular için Visual Studio tüm oturum açma senaryoları engellemesini kaldırmak için aşağıdaki URL'ler uygulamaları güvenilir listeye almayı göz önünde bulundurun:
 
     - &#42;.windows.net
 
@@ -50,7 +50,7 @@ Bu hata genellikle kullanıcılar bir proxy sunucu üzerinden Internet'e bağlı
 
     - &#42;.live.com
 
-- Aksi takdirde http kaldırabilirsiniz: &#47; &#47;go.microsoft.com http için proxy kimlik doğrulaması iletişim kutusu görünür böylece beyaz liste adres: &#47; &#47;go.microsoft.com adresi ve Visual Studio olduğunda sunucu uç noktaları yeniden.
+- Aksi takdirde http kaldırabilirsiniz:&#47;&#47;go.microsoft.com adres beyaz liste böylece http için proxy kimlik doğrulaması iletişim kutusu görüntülenir:&#47;&#47;go.microsoft.com adresi ve Visual Studio olduğunda sunucu uç noktaları yeniden.
 
     VEYA
 
@@ -86,19 +86,19 @@ Aşağıdaki URL'ler için bağlantılar sağlar:
 
 - https:&#47;&#47;management.core.windows.net
 
-- https: &#47; &#47;app.vssps.visualstudio.com
+- https:&#47;&#47;app.vssps.visualstudio.com
 
 - https:&#47;&#47;login.microsoftonline.com
 
-- https: &#47; &#47;login.live.com
+- https:&#47;&#47;login.live.com
 
-- https: &#47; &#47;go.microsoft.com
+- https:&#47;&#47;go.microsoft.com
 
 - https:&#47;&#47;graph.windows.net
 
-- https: &#47; &#47;app.vsspsext.visualstudio.com
+- https:&#47;&#47;app.vsspsext.visualstudio.com
 
-- &#42;. azurewebsites.NET (Azure bağlantıları için)
+- &#42;. azurewebsites.net (Azure bağlantıları için)
 
 - &#42;.visualstudio.com
 

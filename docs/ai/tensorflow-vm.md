@@ -1,7 +1,7 @@
 ---
-title: "Bulutta TensorFlow modeli Çalıştır"
-description: "azure vm öğrenme derin tensorflow modeli Çalıştır"
-keywords: "AI, visual studio, sanal makine öğrenme derin"
+title: Bulutta TensorFlow modeli Çalıştır
+description: azure vm öğrenme derin tensorflow modeli Çalıştır
+keywords: AI, visual studio, sanal makine öğrenme derin
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -12,15 +12,15 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f02a03ca314138715b46e098416c7eef49e6d72
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 7006802f38076283221b9351ba9660448e64a696
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Bulutta TensorFlow modeli eğitmek
 
-Bu öğreticide, bir TensorFlow modelini kullanarak biz eğitmek [MNIST dataset](http://yann.lecun.com/exdb/mnist/) bir Azure [derin öğrenme](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) sanal makine.
+Bu öğreticide, bir TensorFlow modelini kullanarak biz eğitmek [MNIST dataset](http://yann.lecun.com/exdb/mnist/) bir Azure üzerinde [derin öğrenme](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) sanal makine.
 
 MNIST veritabanı 60.000 örnekler Eğitim kümesi ve el yazısı basamak 10.000 örnekleri test kümesi vardır.
 
@@ -42,7 +42,7 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 ### <a name="download-sample-code"></a>Örnek kodu indirin
 
-Bu karşıdan [GitHub deposunu](https://github.com/Microsoft/samples-for-ai) TensorFlow, CNTK, Theano ve daha fazlasını arasında derin öğrenmeye Başlarken örnekleri içeren.
+Bu karşıdan [GitHub deposunu](https://github.com/Microsoft/samples-for-ai) TensorFlow, CNTK, Theano ve daha derin öğrenme ile çalışmaya başlama örnekleri içeren.
 
 ## <a name="open-project"></a>Proje Aç
 

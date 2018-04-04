@@ -1,13 +1,14 @@
 ---
-title: "Visual Studio 2017 değiştirme | Microsoft Docs"
-description: "Visual Studio, adım adım değiştirme hakkında bilgi edinin."
+title: Visual Studio 2017 değiştirme | Microsoft Docs
+description: Visual Studio, adım adım değiştirme hakkında bilgi edinin.
 ms.custom: H1Hack27Feb2017
 ms.date: 11/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -16,13 +17,14 @@ helpviewer_keywords:
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8278b138e8cf7a8780ad83d591a823fdb85f2b08
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 597da9be2ce4c6d22beaa6fc5fc419ef785ece94
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Visual Studio 2017 ekleyerek veya kaldırarak iş yükleri ve bileşenleri değiştirme
 Biz yalnızca yaptığınız daha kolay gerçekleştirmek istediğiniz görevlerin eşleştirmek için Visual Studio kişiselleştirmek için de, Visual Studio, çok özelleştirmek daha kolay yaptık. Bunu yapmak için Denetim Masası'nda arama fazla; Bunun yerine, yeni Visual Studio Yükleyicisi'ni başlatın ve istediğiniz değişiklikleri yapın.
@@ -42,7 +44,7 @@ Biz yalnızca yaptığınız daha kolay gerçekleştirmek istediğiniz görevler
      ![Visual Studio yükleyicisi](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio yükleyicisi bulun")
 
      >[!NOTE]
-     Bazı bilgisayarlarda, Visual Studio yükleyicisi harf altında listelenebilir **"M"** olarak **Microsoft Visual Studio yükleyicisi**.<br/><br/> Alternatif olarak, Visual Studio yükleyicisi şu konumda bulabilirsiniz:`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     Bazı bilgisayarlarda, Visual Studio yükleyicisi harf altında listelenebilir **"M"** olarak **Microsoft Visual Studio yükleyicisi**.<br/><br/> Alternatif olarak, Visual Studio yükleyicisi şu konumda bulabilirsiniz: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2.  ' I tıklatın veya yükleyiciyi başlatmak için'a dokunun ve ardından **Değiştir**.  
 

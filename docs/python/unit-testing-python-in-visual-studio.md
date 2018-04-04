@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d68b2b8a4060d3c77bed996aa0b20054d989487b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: eee1ec05a46050c5a994aa2d774a5be0090171f3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Birim testi için Python kodu ayarlama
 
@@ -37,7 +37,7 @@ Bu makalede, Visual Studio'da Python ile test etme özelliklerini birim kısa bi
 
 ## <a name="discovering-and-viewing-tests"></a>Keşfetmek ve testleri görüntüleme
 
-Kurala göre Visual Studio testleri tanımlayan olan adları başlayan ile yöntemleri olarak `test`. Bu davranış görmek için aşağıdakileri yapın:
+Kurala göre Visual Studio testleri adları başlayan ile yöntemleri tanımlar. `test`. Bu davranış görmek için aşağıdakileri yapın:
 
 1. Açık bir [Python proje](managing-python-projects-in-visual-studio.md) Visual Studio'da yüklenen, projenize sağ tıklayın, **Ekle > Yeni öğe...** seçeneğini belirleyip **Python birim testi** arkasından **Ekle**.
 

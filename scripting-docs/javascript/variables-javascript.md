@@ -1,12 +1,13 @@
 ---
-title: "Değişkenleri (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Değişkenleri (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - coercion
 - case sensitivity, JavaScript variable name
 ms.assetid: 12a450e5-4818-4a09-9878-cd7c6cd2a248
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f30946899ad35286dfb1e786cf903d58f5c98cb6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1d09f634bd4901e4015766bf55f272926a0a31c
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="variables-javascript"></a>Değişkenler (JavaScript)
 İçinde [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], bir değişken "Hello ifadesini" veya 5 gibi bir değer içeriyor. Değişkeni kullandığınızda, verileri temsil eder, örneğin başvurmak `NumberOfDaysLeft = EndDate - TodaysDate`.  
@@ -46,9 +47,9 @@ var count = 0, amount = 100;
  Değişken başlatmazsanız `var` deyimi, otomatik olarak sürdüğünü değerine `undefined`.  
   
 ## <a name="naming-variables"></a>Adlandırma değişkenleri  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]büyük küçük harfe duyarlı bir dildir. Bir değişken adı gibi buna **Sayacım** değişken adından farklı **Sayacım**. Değişken adlarının herhangi bir uzunlukta olabilir. Yasal değişken adları oluşturmak için kurallar aşağıdaki gibidir:  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] büyük küçük harfe duyarlı bir dildir. Bir değişken adı gibi buna **Sayacım** değişken adından farklı **Sayacım**. Değişken adlarının herhangi bir uzunlukta olabilir. Yasal değişken adları oluşturmak için kurallar aşağıdaki gibidir:  
   
--   İlk karakteri bir ASCII harf (büyük veya küçük harf) veya kısa çizgi (_) karakteri olmalıdır. Bir sayı ilk karakter olarak kullanılan unutmayın.  
+-   İlk karakteri bir ASCII harf (büyük veya küçük harf), Unicode değişken adlandırma kuralları veya kısa çizgi (_) karakteri ile uyumlu bir harf olmalıdır. Bir sayı ilk karakter olarak kullanılan unutmayın.  
   
 -   Sonraki karakterler harf, rakam veya alt çizgi (_) olmalıdır.  
   
@@ -103,7 +104,7 @@ var area = length * width;
 ```  
   
 ## <a name="coercion"></a>Zorlama  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]C++ gibi güçlü şekilde yazılan diller aksine gevşek yazılmış bir dil değil. Bu, JavaScript değişkenleri önceden belirlenmiş bir tür olduğu anlamına gelir. Bunun yerine, bir değişkenin değerini türünü türüdür. Bu davranış, farklı bir tür değilmiş gibi bir değer kabul olanak sağlar.  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] C++ gibi güçlü şekilde yazılan diller aksine gevşek yazılmış bir dil değil. Bu, JavaScript değişkenleri önceden belirlenmiş bir tür olduğu anlamına gelir. Bunun yerine, bir değişkenin değerini türünü türüdür. Bu davranış, farklı bir tür değilmiş gibi bir değer kabul olanak sağlar.  
   
  İçinde [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], bir özel duruma neden olmadan farklı türlerde değerler üzerinde işlemler gerçekleştirebilirsiniz. [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Yorumlayıcı örtük olarak dönüştürür, veya *olacak şekilde zorlar*, verileri biri, diğer türleri, sonra işlemi gerçekleştirir. Dize, sayı ve Boole değerleri zorlama için kurallar şunlardır:  
   

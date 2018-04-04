@@ -1,9 +1,6 @@
 ---
-title: "Visual Studio'da kod çözümleme uyarılarını bastırma | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'da kod çözümleme uyarılarını bastırma | Microsoft Docs
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 helpviewer_keywords:
@@ -18,13 +15,13 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef69462dc9b51fbd92da11bc5adb1bfa61e8a792
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="suppressing-code-analysis-warnings"></a>Kod çözümleme uyarıları gizleme
+# <a name="suppress-code-analysis-warnings"></a>Kod çözümleme uyarılarını bastırma
 
 Genellikle, bir uyarı geçerli olmadığını göstermek kullanışlıdır. Bu kodu gözden ve uyarı gizlenebilir ekip üyelerine gösterir. Kaynak gizleme (ISS) kullanan <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> bir gizlemek için öznitelik. Öznitelik uyarı oluşturulan kod kesimi yakın yerleştirilebilir. Ekleyebileceğiniz <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği kaynak dosyasını, yazarak veya kısayol menüsünden bir uyarı kullanabilirsiniz **hata listesi** otomatik olarak eklemek için.
 
@@ -94,7 +91,7 @@ Kaynak gizleme meta verileri en aza indirmek için katı Performans nedeniyle va
 
 Bakım nedeniyle, kural adı atlama önerilmez.
 
-## <a name="suppressing-selective-violations-within-a-method-body"></a>Yöntem gövdesi içinde seçmeli ihlalleri gizleme
+## <a name="suppress-selective-violations-within-a-method-body"></a>Yöntem gövdesi içinde seçmeli ihlali bastırma
 
 Gizleme öznitelikler için bir yöntem uygulanabilir, ancak bir yöntem gövdesinde katıştırılmış. Bu, eklerseniz, belirli bir kural tüm ihlalleri bastırılan anlamına gelir <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği yöntemi.
 
@@ -160,7 +157,7 @@ Genel düzey suppressions açıkça sağlanan kullanıcı kaynağına eşlemiyor
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target`her zaman tam öğe adı içerir.
+> `Target` her zaman tam öğe adı içerir.
 
 ## <a name="global-suppression-file"></a>Genel gizleme dosyası
 
@@ -168,4 +165,5 @@ Genel gizleme dosyası genel düzeyde suppressions ya da bir hedef belirtmeyin s
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-<xref:System.Diagnostics.CodeAnalysis>
+- <xref:System.Diagnostics.CodeAnalysis>
+- [Roslyn çözümleyiciler kullanın](../code-quality/use-roslyn-analyzers.md)

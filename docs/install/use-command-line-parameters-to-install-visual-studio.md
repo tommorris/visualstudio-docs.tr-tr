@@ -1,12 +1,13 @@
 ---
-title: "Visual Studio'yu yüklemek için komut satırı parametreleri kullanın | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'yu yüklemek için komut satırı parametreleri kullanın | Microsoft Docs
+ms.custom: ''
 ms.date: 01/17/2018
 ms.reviewer: tims
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - command-line parameters
 - switches
@@ -14,13 +15,14 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 41e66e9fabd84bac7ed7e413d51f08e55ef93a6e
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 348634224d76b3a7f51246f2be49720173ab8cd3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017 yüklemek için komut satırı parametreleri kullanın
 Visual Studio 2017 bir komut isteminden yüklediğinizde, denetim veya yüklemeyi özelleştirmek için çeşitli komut satırı parametreleri kullanabilirsiniz. Komut satırından aşağıdaki eylemleri gerçekleştirebilirsiniz:
@@ -38,14 +40,14 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 ## <a name="list-of-command-line-parameters"></a>Komut satırı parametreleri listesi  
  Visual Studio komut satırı parametreleri büyük/küçük harfe duyarsızdır.
 
-> Sözdizimi:`vs_enterprise.exe [command] <options>...`
+> Sözdizimi: `vs_enterprise.exe [command] <options>...`
 
 (Değiştir `vs_enterprise.exe` ürün sürümü için uygun şekilde yüklemekte.)
 
 >[!TIP]
 > Visual Studio 2017 yüklemek için komut satırını kullanmak nasıl daha fazla örnekleri için bkz: [komut satırı parametresi örnekler](command-line-parameter-examples.md) sayfası.)
 
-| **Komutu** | **Açıklama** |
+| **komutu** | **Açıklama** |
 | ----------------------- | --------------- |
 | (boş) | Ürünü yükler. |
 | `modify` | Yüklü ürün değiştirir. |

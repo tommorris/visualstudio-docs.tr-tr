@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2dac5f48f69ce00ae914929638f08cf35f5a96ac
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: cc37a3185224a66fbe0533c615737de7e0124dcf
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>.NET geliştiricileri için Visual Studio 2017 üretkenlik Kılavuzu
 
@@ -31,12 +31,7 @@ Başka bir IDE içinden gelen veya ortam kodlama bu uzantıları faydalı birini
 - [Visual Studio (ReSharper/Intellij) için kısayol tuşları](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-![Visual Studio uzantı Galerisi](../ide/media/VSIDE_Productivity_Extensibility.png)
-
-Popüler Visual Studio kısayolları verilmiştir. 
-
-> [!NOTE]
-> Aşağıdaki komutları kullanarak geri yüklemeniz gerekir böylece bazı uzantılar varsayılan Visual Studio taşıyan bağlantı kesme. Taşıyan giderek Visual Studio'nun ayarlarına geri yüklemek: **Araçlar > içeri ve dışarı aktarma ayarları... > tüm ayarlara** veya **Araçlar > Seçenekler > klavye > sıfırlama**.
+Popüler Visual Studio kısayolları şunlardır: 
 
 | Kısayol (tüm profilleri) | Komut | Açıklama |
 |-|-|-|
@@ -52,6 +47,9 @@ Popüler Visual Studio kısayolları verilmiştir.
 | **Ctrl+F5** | Hata ayıklama olmadan çalıştırma | Uygulamanızı yerel olarak hata ayıklama olmadan çalıştırma |
 | **CTRL + K, D** (varsayılan profili) veya **Ctrl + E, D** (C# profili) | Belgeyi Biçimlendir | Yeni satır, aralık ve girinti ayarlarını göre dosyanızdaki ihlalleri biçimlendirme temizler |
 | **CTRL +\\, E** (varsayılan profili) veya **Ctrl + W, E** (C# profili) | Görünüm hata listesi | Belge, proje veya çözüm tüm hatalar görebilirsiniz |
+
+> [!NOTE]
+> Bazı uzantılar varsayılan Visual Studio taşıyan bağlantı kesme. Aşağıdaki komutları kullanmak için taşıyan Visual Studio'nun ayarlarına giderek geri yüklemek **Araçlar > içeri ve dışarı aktarma ayarları... > tüm ayarlara** veya **Araçlar > Seçenekler > klavye >Sıfırla**.
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>I dosyaları veya türleri için hızlı bir şekilde gitmek için bir yönteme ihtiyacınız vardır.
 Visual Studio 2017 adlı bir özelliği olan _tüm Git_ (**Ctrl + T**). Tüm gidin, tüm dosya, türü, üye veya sembol bildirimi hızla atlamak sağlar.

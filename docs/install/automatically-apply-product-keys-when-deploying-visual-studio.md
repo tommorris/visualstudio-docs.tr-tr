@@ -1,28 +1,30 @@
 ---
-title: "Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak Uygula | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak Uygula | Microsoft Docs
+ms.custom: ''
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3fbea34afa4e82ea360a0dfefe4f18dc74d11f19
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e9bfd9f72162d354d7e606d65146f602393d286
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak Uygula
 Ürün anahtarınızı program aracılığıyla Visual Studio dağıtımını otomatik hale getirmek için kullanılan bir komut dosyasının parçası olarak uygulayabilirsiniz. Bir ürün anahtarı bir aygıtta program aracılığıyla Visual Studio veya bir yükleme tamamlandıktan sonra bir yükleme sırasında ya da ayarlayabilirsiniz.
 
 ## <a name="apply-the-license-after-installation"></a>Yüklemeden sonra lisans Uygula
- Kullanarak bir yüklü olan sürümü Visual Studio ürün anahtarıyla etkinleştirebilirsiniz `StorePID.exe` sessiz modda hedef makinelere yardımcı programı. `StorePID.exe`Visual Studio 2017 aşağıdaki varsayılan konuma yükler bir yardımcı programdır: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE`
+ Kullanarak bir yüklü olan sürümü Visual Studio ürün anahtarıyla etkinleştirebilirsiniz `StorePID.exe` sessiz modda hedef makinelere yardımcı programı. `StorePID.exe` Visual Studio 2017 aşağıdaki varsayılan konuma yükler bir yardımcı programdır: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE`
 
  Çalıştırma `StorePID.exe` yükseltilmiş ayrıcalıklarla ya da kullanarak System Center aracı veya yükseltilmiş bir komut istemi. Ürün anahtarı ve Microsoft ürün kodu (MPC) ile izleyin.
 
@@ -41,7 +43,7 @@ ms.lasthandoff: 12/22/2017
 
  Aşağıdaki tabloda her Visual Studio sürümü için MPC kodlarını listeler:
 
-| Visual Studio sürümü                | MPC   |
+| Visual Studio Edition                | MPC   |
 |--------------------------------------|-------|
 | Visual Studio Enterprise 2017        | 08860 |
 | Visual Studio Professional 2017      | 08862 |

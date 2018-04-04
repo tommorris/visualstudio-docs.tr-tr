@@ -1,26 +1,26 @@
 ---
-title: "Hedef derleme sırası | Microsoft Docs"
-ms.custom: 
+title: Hedef derleme sırası | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-caps.latest.revision: 
+caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf76debbaca82f9f60769ff5b5b166e40156c4c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9936c1529f0fbb5161d4cd766b1ce5eb0fc847c1
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="target-build-order"></a>Hedef Derleme Sırası
 Bir hedef girdisi başka bir hedef Çıkışta bağımlıysa hedefleri sıralanmalıdır. Bu öznitelikler hedefleri çalıştığı sırayı belirtmek için kullanabilirsiniz:  
@@ -31,7 +31,7 @@ Bir hedef girdisi başka bir hedef Çıkışta bağımlıysa hedefleri sıralanm
   
 -   `DependsOnTargets`. Bu `Target` özniteliği, bu hedef çalıştırmadan önce çalıştırmanız gereken hedefleri belirtir.  
   
--   `BeforeTargets`ve `AfterTargets`. Bunlar `Target` öznitelikleri belirtin Bu hedef önce veya sonra belirtilen hedefleri (MSBuild 4.0) çalıştırmalısınız.  
+-   `BeforeTargets` ve `AfterTargets`. Bunlar `Target` öznitelikleri belirtin Bu hedef önce veya sonra belirtilen hedefleri (MSBuild 4.0) çalıştırmalısınız.  
   
  Bir sonraki hedef derlemede bağımlı olsa bile bir hedef hiçbir zaman bir derleme sırasında iki kez çalıştırılır. Bir hedef çalıştırdığınızda, yapı katkısı tamamlanır.  
   
@@ -109,11 +109,11 @@ Bir hedef girdisi başka bir hedef Çıkışta bağımlıysa hedefleri sıralanm
 ## <a name="determining-the-target-build-order"></a>Hedef Derleme Sırasını Belirleme  
  MSBuild hedef derleme sırası şu şekilde belirler:  
   
-1.  `InitialTargets`hedefleri çalıştırılır.  
+1.  `InitialTargets` hedefleri çalıştırılır.  
   
 2.  Komut satırı tarafından belirtilen hedefleri **/target** anahtar çalıştırılır. Komut satırında hedef belirtirseniz, sonra `DefaultTargets` hedefleri çalıştırılır. Hiçbiri mevcut değilse karşılaştı ilk hedef çalıştırılır.  
   
-3.  `Condition` Özniteliği hedef değerlendirildiği. Varsa `Condition` özniteliği var ve değerlendiren `false`, hedef yürütülen değil ve daha fazla yapı etkisi yoktur.  
+3.  `Condition` Özniteliği hedef değerlendirildiği. Varsa `Condition` özniteliği var ve değerlendiren `false`, hedef yürütülen değil ve daha fazla yapı etkisi yoktur.
   
 4.  Bir hedef yürütülmeden önce kendi `DependsOnTargets` hedefleri çalıştırılır.  
   

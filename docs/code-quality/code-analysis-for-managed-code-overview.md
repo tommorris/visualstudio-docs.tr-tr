@@ -1,12 +1,8 @@
 ---
-title: "Kod çözümleme için yönetilen kod genel bakış | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Kod çözümleme Visual Studio'daki yönetilen kod için | Microsoft Docs
+ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
@@ -17,13 +13,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8209e17985ef7f9924fc677b91b5cfe539977cb9
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="code-analysis-for-managed-code-overview"></a>Yönetilen kod genel bakış için Kod Analizi
+# <a name="overview-of-code-analysis-for-managed-code"></a>Yönetilen kod için Kod Analizine genel bakış
+
+Visual Studio 2017 iki yolla yönetilen kodu analiz eder: eski ile *FxCop* statik çözümleme Yönetilen derlemeler ve .NET derleyici platformuyla *çözümleyiciler*. Bu konu FxCop statik kod analizi kapsar. .NET derleme platformu Çözümleyicileri kullanarak kod çözümleme hakkında daha fazla bilgi için bkz: [genel bakış, Roslyn çözümleyiciler](../code-quality/roslyn-analyzers-overview.md).
 
 Yönetilen kod için Kod Analizi Yönetilen derlemeler analiz eder ve İleri Microsoft .NET Framework tasarım yönergeleri Tasarım Kuralları ve programlama ihlalleri gibi derlemeler hakkında bilgi raporlar.
 
@@ -76,5 +74,6 @@ Bu iade ilkelerini belirterek gerçekleştirebilirsiniz. Daha fazla bilgi için 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod çözümleme kurallarını gruplandırmak için kural kullanarak ayarlar](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
-[Nasıl yapılır: etkinleştirme ve devre dışı otomatik kod çözümleme](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Roslyn çözümleyiciler genel bakış](../code-quality/roslyn-analyzers-overview.md)
+- [Kod Analizi Kurallarını Gruplandırmak için Kural Kümeleri Kullanma](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+- [Nasıl yapılır: etkinleştirme ve devre dışı otomatik kod çözümleme](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

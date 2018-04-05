@@ -8,7 +8,7 @@ ms.suite: ''
 ms.technology:
 - vs-acquisition
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -17,14 +17,14 @@ helpviewer_keywords:
 ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7eff12d026830fa5ab5b48657f79a640cb1b8c3b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 13f9f83c89e09e07d6024b779a89b9a6c4374112
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve Visual Studio ve Azure Hizmetleri Güvenlik Duvarı veya proxy sunucunun arkasında kullanma
 Sizin veya kuruluşunuzun bir güvenlik duvarı veya proxy sunucu gibi güvenlik önlemleri kullanıyorsa, ardından vardır "beyaz liste" ve bağlantı noktaları ve böylece yüklediğinizde ve görsel Stu en iyi deneyimi sahip açmak isteyebilirsiniz protokolleri isteyebilirsiniz etki alanı URL'leri dio ve Azure Hizmetleri.

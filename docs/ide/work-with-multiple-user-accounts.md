@@ -6,17 +6,17 @@ ms.reviewer: ''
 ms.suite: ''
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 535b01f8f0ef5840543013509d40b4b8393fa7f6
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 73b3ae67cc4396a7fc9041cb5074c84ffa2aa73a
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Birden çok kullanıcı hesabıyla çalışma
 
@@ -24,7 +24,7 @@ Birden çok Microsoft hesabına ve/veya iş veya Okul hesapları varsa, böylece
 
 Bir makine üzerinde birden fazla hesap ekledikten sonra Visual Studio için başka bir makinede oturum hesapları kümesini sizinle dolaşıma. Hesap adlarını dolaşan rağmen kimlik bilgilerini desteklemez, dikkate almak önemlidir. Bu nedenle, yeni makineye kaynaklarını kullanma girişimi ilk kez diğer bu hesaplar için kimlik bilgilerini girmeniz istenir.
 
-Bu anlatımda Visual Studio'ya birden fazla hesap ekleme gösterilir ve bu hesaplarından erişilebilir kaynakları yansıtılır görmek nasıl yerleştirir gibi **bağlı hizmet Ekle** iletişim kutusunda, **Sunucu Gezgini**, ve **Takım Gezgini**.
+Bu anlatımda Visual Studio'ya birden fazla hesap ekleme gösterilir ve bu hesaplarından erişilebilir kaynakları yansıtılır görmek nasıl yerleştirir gibi **bağlı hizmet Ekle** iletişim kutusunda, **Sunucu Gezgini** , ve **Takım Gezgini**.
 
 ## <a name="sign-in-to-visual-studio"></a>Visual Studio'da oturum açın
 

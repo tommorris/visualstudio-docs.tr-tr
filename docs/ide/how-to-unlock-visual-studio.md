@@ -7,18 +7,18 @@ ms.suite: ''
 ms.technology:
 - vs-acquisition
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bbdab7001ba8724c888b9fc20291ef253f73d4c
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 8e08831347c09d80427d1fba38c926f7d1b227f4
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="how-to-unlock-visual-studio"></a>Nasıl yapılır: Visual Studio kilidini açma
 
@@ -70,7 +70,7 @@ Kimlik bilgilerinizi girmek değil, eski gitmek belirteç başlatır ve hesap ay
 
 ### <a name="update-expired-licenses"></a>Süresi dolan lisansları güncelleştirin
 
- Aboneliğinizi tamamen süresi doldu ve artık erişim hakları Visual Studio yüklüyse, aboneliğinizi yenileyin veya bir aboneliğe sahip başka bir hesap ekleyin. Kullanmakta olduğunuz lisans hakkında daha fazla bilgi için şuraya gidin **dosya**, **hesap ayarlarını** ve iletişim kutusunun sağ tarafındaki lisans bilgilerini bakın. Farklı bir hesap ile ilişkilendirilmiş başka bir aboneliğiniz varsa, bu hesaba ekleme **tüm hesapları** seçerek iletişim kutusunun sol tarafında listede **Hesap Ekle...** bağlantı.
+ Aboneliğinizi tamamen süresi doldu ve artık erişim hakları Visual Studio yüklüyse, aboneliğinizi yenileyin veya bir aboneliğe sahip başka bir hesap ekleyin. Kullanmakta olduğunuz lisans hakkında daha fazla bilgi için şuraya gidin **dosya**, **hesap ayarlarını** ve iletişim kutusunun sağ tarafındaki lisans bilgilerini bakın. Farklı bir hesap ile ilişkilendirilmiş başka bir aboneliğiniz varsa, bu hesaba ekleme **tüm hesapları** seçerek iletişim kutusunun sol tarafında listede **Hesap Ekle...**  bağlantı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

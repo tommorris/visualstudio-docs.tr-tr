@@ -13,15 +13,15 @@ ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 33b9a56d88b4f64c4253126dafa5e3515aa498c6
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 6276c70cebd8f4d71e056142258422645c50cdfa
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python desteğini yükleme
 
@@ -80,6 +80,16 @@ Hızlı yükleme adımlarını izleyerek sonra Python desteği test etmek için 
 |   |   |
 |---|---|
 | ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | [(Microsoft Virtual Academy) bir video izlemek](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) Visual Studio'da Python desteği yükleme.|
+
+### <a name="troubleshooting"></a>Sorun giderme
+
+Yüklerken veya Visual Studio'da Python çalıştırırken sorunlarla karşılaşırsanız, aşağıdakileri deneyin:
+
+- Aynı hata Python CLI kullanarak diğer bir deyişle, çalışan oluşup oluşmadığını belirleyin `python.exe` bir komut isteminden.
+- Kullanım [onarım seçeneği Visual Studio yükleyicisinde](../install/repair-visual-studio.md).
+- Onarım veya Python aracılığıyla yeniden **ayarlar > uygulamalar ve Özellikler** Windows.
+
+**Örnek hata**: etkileşimli işlem başlatılamadı: System.ComponentModel.Win32Exception (0x80004005): Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext() sırasında bilinmeyen hata (0xc0000135).
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 

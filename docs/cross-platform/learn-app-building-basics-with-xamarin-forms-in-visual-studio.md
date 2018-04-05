@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da Xamarin.Forms ile uygulama oluşturma temellerini öğrenin | Microsoft Docs
 ms.custom: ''
-ms.date: 01/19/2018
+ms.date: 03/30/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,19 +13,23 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 6c0659e63feb685f002b7be969ee827e5e047cdd
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 6982768950ffe0e4afb664f1cfeb7423e65bbbc4
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Visual Studio'da Xamarin.Forms ile uygulama oluşturma temellerini öğrenin
 
-Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-install.md) ve [Xamarin ortamınızı doğrulayın](../cross-platform/verify-your-xamarin-environment.md), bu kılavuzda (aşağıda Xamarin.Forms ile gösterilmiştir) temel bir uygulama oluşturmak gösterilmektedir. Xamarin.Forms ile tüm kullanıcı Arabirimi kodunuzu kez .NET standart bir sınıf kitaplığı'nda yazacaksınız. Xamarin sonra otomatik olarak sokacak iOS, Android ve evrensel Windows için yerel kullanıcı Arabirimi denetimlerini platformlar. Bu yaklaşım (Paylaşılan proje yerine) .NET standart kitaplığı yalnızca bu .NET tüm hedef platformlar arasında desteklenen API'lerini içerdiğinden öneririz ve Xamarin.Forms izin verdiğinden UI kod platformları arasında paylaşın.  
+Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-install.md) ve [Xamarin ortamınızı doğrulayın](../cross-platform/verify-your-xamarin-environment.md), bu kılavuzda Xamarin.Forms ile temel bir uygulama oluşturmak gösterilmektedir. Xamarin.Forms ile tüm kullanıcı Arabirimi kodunuzu kez .NET standart bir sınıf kitaplığı'nda yazacaksınız. Xamarin sonra otomatik olarak sokacak iOS, Android ve evrensel Windows için yerel kullanıcı Arabirimi denetimlerini platformlar. 
+
+Genellikle bu ortak kodu için bir paylaşılan proje yerine .NET standart kitaplığı kullanmak daha iyidir. .NET standart kitaplığı, tüm hedef platformlarda çalışabilir bu .NET API'lerini içerir.  
+
+Burada, oluşturacağınız uygulama verilmiştir. (Yazmak için soldan) iOS ve Android telefonlar ve Windows 10 Evrensel Windows Platformu (UWP) üzerinde çalıştığı:
   
-![Android, iOS ve Windows hava durumu uygulaması örneği](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
+[![İOS, Android ve UWP hava durumu uygulaması örneği](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")](../cross-platform/media/crossplat-xamarin-formsguide-1-Large.png#lightbox)
   
-Bu derleme için bunlardan gerçekleştirirsiniz:  
+Bu uygulama oluşturmak için aşağıdaki adımları gerçekleştirirsiniz:  
   
 -   [Çözümünüzü ayarlarken ayarlayın](#solution)  
   
@@ -40,25 +44,27 @@ Bu derleme için bunlardan gerçekleştirirsiniz:
 > [!TIP]
 > Bu proje için tam kaynak kodunu bulabilirsiniz [xamarin forms örnekleri deposu github'da](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).  
   
-##  <a name="solution"></a> Çözümünüzü ayarlarken ayarlayın  
+<a name="solution" />
 
-Bu adımları bir .NET standart paylaşılan kod sınıf kitaplığı ve iki eklenen NuGet paketlerini içeren bir Xamarin.Forms çözümünü oluşturun.  
-  
-1.  Visual Studio'da yeni bir oluşturma **platformlar arası uygulama (Xamarin.Forms)** çözüm ve adlandırın **WeatherApp**. Şablonu seçerek görüneceğini **Visual C#** ve **platformlar arası** soldaki listeden.  
-  
-     Yoksa, olabilir Xamarin yükleyin veya Visual Studio 2017 özelliğini etkinleştirmek için bkz: [Kurulum ve yükleme](../cross-platform/setup-and-install.md).  
-  
-     ![Yeni bir boş uygulaması oluşturma &#40;platformlar arası Xamarin.Forms uygulaması&#41; proje](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin FormsGuide 2")
+## <a name="set-up-your-solution"></a>Çözümünüzü ayarlarken ayarlayın  
 
-2.  Tamam'ı tıklattıktan sonra bazı seçenekler seçme fırsatı sahip olacaksınız. Çekme **boş uygulama**, **Xamarin.Forms** ve **.NET standart**:
-
-     ![Yeni bir Çapraz Platform uygulama projesi oluşturma](../cross-platform/media/crossplat-xamarin-formsguide-3.png "CrossPlat Xamarin FormsGuide 3")
+Bu adımları bir .NET standart paylaşılan kod sınıf kitaplığı ve iki eklenen NuGet paketlerini içeren bir Xamarin.Forms çözümünü oluşturun. 
   
-3.  Çözüm oluşturmak için Tamam'ı tıklattıktan sonra tek tek projelerinin sayısına sahip olursunuz:  
+1. Visual Studio'da yeni bir oluşturma **platformlar arası uygulama (Xamarin.Forms)** çözüm ve adlandırın **WeatherApp**. Şablonu seçerek görüneceğini **Visual C#** ve **platformlar arası** soldaki listeden.  
+    
+    ![Yeni bir platformlar arası Xamarin.Forms uygulaması projesi oluşturma](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin FormsGuide 2")
+
+    Şablon yoksa, Xamarin yükleyin veya Visual Studio 2017 özelliğini etkinleştirmeniz gerekebilir. Bkz: [Kurulum ve yükleme](../cross-platform/setup-and-install.md).  
+
+2.  Tamam'ı tıklattıktan sonra bazı seçenekler seçme fırsatı sahip olacaksınız. Çekme **boş uygulama** ve **.NET standart**:
+
+    ![Yeni bir Çapraz Platform uygulama projesi oluşturma](../cross-platform/media/crossplat-xamarin-formsguide-3.png "CrossPlat Xamarin FormsGuide 3")
+  
+3.  Çözüm oluşturmak için Tamam'ı tıklattıktan sonra dört projeleri ile bir çözüm gerekir:  
   
     -   **WeatherApp**: Burada,, ortak iş mantığı ve UI kodu Xamarin.Forms kullanarak da dahil olmak üzere platformları arasında paylaşılan kod yazma .NET standart kitaplığı.  
   
-    -   **WeatherApp.Android**: yerel Android kodu içeren projeye. Bu varsayılan başlangıç projesi olarak ayarlanır.  
+    -   **WeatherApp.Android**: yerel Android kodu içeren projeye.  
   
     -   **WeatherApp.iOS**: projenin yerel iOS kodunu içerir.  
   
@@ -67,27 +73,29 @@ Bu adımları bir .NET standart paylaşılan kod sınıf kitaplığı ve iki ekl
     > [!NOTE]
     >  Değil hedefleme bir platformu projelerin silmek boş.   
   
-     Her yerel proje içinde karşılık gelen platform yerel Tasarımcı Erişimi ve platform belirli ekranları ve gerektiğinde işlevselliği uygulayabilirsiniz.  
+     Yerel her proje içinde karşılık gelen platform yerel Tasarımcı Erişimi ve platforma özgü ekranları ve gerektiğinde işlevselliği uygulayabilirsiniz.  
   
-4.  Çözümünüzü Xamarin.Forms NuGet paketi en son kararlı sürümü aşağıdaki gibi yükseltin. Yeni bir Xamarin çözüm oluşturduğunuzda bunu öneririz:  
+4.  Çözümünüzü Xamarin.Forms NuGet paketi en son kararlı sürümü gibi yükseltin:  
   
     -   Seçin **Araçlar > NuGet Paket Yöneticisi > çözüm için NuGet paketlerini Yönet**.  
   
-    -   Altında **güncelleştirmeleri** sekmesi, onay **Xamarin.Forms** paketini ve çözümünüzdeki tüm projeleri güncelleştirmek için denetleyin. (Not: tüm güncelleştirmeler için Xamarin.Android.Support işaretini kaldırın.)  
+    -   Altında **güncelleştirmeleri** sekmesi, onay **Xamarin.Forms** paketini ve çözümünüzdeki tüm projeleri güncelleştirmek için denetleyin. (Xamarin Android destek kitaplıkları için güncelleştirme seçmeyin.)  
   
     -   Güncelleştirme **sürüm** alanı **en son kararlı** kullanılabilir sürüm.  
   
     -   **Yükle**'ye tıklatın.  
   
          ![Xamarin.Forms NuGet paketi güncelleştirme](../cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Xamarin FormsGuide 4")  
+
+    Yeni bir Xamarin.Forms çözüm oluşturduğunuzda, bir Xamarin.Forms sürümünden yükseltme alýþkanlýk almanız gerekir. Tüm Android destek kitaplıkları güncelleştirmez. Xamarin.Forms sürüm güncelleştirdiğinizde gerekirse, bu kitaplıklar güncelleştirilir.
   
-5.  Ekleme **Newtonsoft.Json** NuGet paketi **WeatherApp** hava veri hizmetinden alınan bilgileri işlemek için kullanacağınız proje:  
+5.  Ekleme **Newtonsoft.Json** NuGet paketi **WeatherApp** projesi. Bu kitaplık, hava durumu veri hizmetinden alınan bilgileri işlemek için kullanılır:  
   
     -   NuGet Paket Yöneticisi'nde (4. adımdan hala açık) seçin **Gözat** sekmesinde ve arama **Newtonsoft**.  
   
     -   Seçin **Newtonsoft.Json**.  
   
-    -   Denetleme **WeatherApp** proje (Bu durum, paket yüklemeniz gereken yalnızca proje).  
+    -   Denetleme **WeatherApp** içinde paketini yüklemeniz gereken tek proje projesi.  
   
     -   Olun **sürüm** alan ayarlanmış **en son kararlı** sürümü.  
   
@@ -95,21 +103,23 @@ Bu adımları bir .NET standart paylaşılan kod sınıf kitaplığı ve iki ekl
   
     ![Bulma ve Newtonsoft.Json NuGet paketi Yükleniyor](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
   
-6.  Bulmak ve yüklemek için 5. adım yineleme **Microsoft.Net.Http** paket.  
+6.  Bulmak ve yüklemek için 5. adım yineleme **Microsoft.CSharp** .NET standart proje paketinde. C# kullanmak bu kitaplığı gereklidir `dynamic` .NET standart Kitaplığı'nda veri türü.
   
 7.  Çözümünüzü derlemek ve hiçbir derleme hataları olduğunu doğrulayın.  
   
-##  <a name="dataservice"></a> Paylaşılan veri hizmeti kod yazma  
+<a name="dataservice" /> 
 
-**WeatherApp** projedir burada tüm platformlarda paylaşılan .NET standart kitaplığı için kod yazacaksınız. Bu kitaplığı otomatik olarak uygulamada bulunan paketleri, projeler iOS, Android ve Windows tarafından oluşturmak.  
+## <a name="write-shared-data-service-code"></a>Paylaşılan veri hizmeti kod yazma  
+
+**WeatherApp** .NET standart kitaplığı projedir burada tüm platformlarda paylaşılan kod yazacaksınız. Bu kitaplık uygulama tarafından başvurulan paketleri, projeler iOS, Android ve Windows tarafından oluşturmak.  
   
 Bu örneği çalıştırmak için önce boş bir API anahtarda için kaydolmanız gerekir [ http://openweathermap.org/appid ](http://openweathermap.org/appid).  
   
 Aşağıdaki adımlar bu durumda, hava durumu hizmetinden veri depolamak ve erişmek için .NET standart kitaplığı kodu ekleyin:  
   
-1.  Sağ **WeatherApp** proje ve seçin **Ekle > sınıfı...**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, dosya adı **Weather.cs**. Bu sınıf, hava durumu veri hizmetinden veri depolamak için kullanacaksınız.  
+1.  Sağ **WeatherApp** proje ve seçin **Ekle > sınıfı...** . İçinde **Yeni Öğe Ekle** iletişim kutusunda, dosya adı **Weather.cs**. Bu sınıf, hava durumu veri hizmetinden veri depolamak için kullanacaksınız.  
   
-2.  Tüm içeriğini değiştirin **Weather.cs** aşağıdaki:  
+2.  Tüm içeriğini değiştirin **Weather.cs** aşağıdaki kod ile:  
   
     ```csharp  
     namespace WeatherApp
@@ -160,9 +170,9 @@ Aşağıdaki adımlar bu durumda, hava durumu hizmetinden veri depolamak ve eri�
     }  
     ```  
   
-5.  Bir üçüncü sınıfına ekleyin **WeatherApp** adlı projesi **çekirdek** burada gireceğiniz paylaşılan iş mantığı. Bu kod bir posta koduyla bir sorgu dizesi oluşturur, hava durumu veri hizmeti çağırır ve örneği doldurur **hava durumu** sınıfı.  
+5.  Bir üçüncü sınıfına ekleyin **WeatherApp** adlı projesi **Core.cs** burada gireceğiniz paylaşılan iş mantığı. Bu kod bir posta koduyla bir sorgu dizesi oluşturur, hava durumu veri hizmeti çağırır ve örneği doldurur `Weather` sınıfı.  
   
-6.  Değiştir **Core.cs** aşağıdaki:  
+6.  Değiştir **Core.cs** aşağıdaki kod ile:  
   
     ```csharp  
     using System;  
@@ -175,7 +185,7 @@ Aşağıdaki adımlar bu durumda, hava durumu hizmetinden veri depolamak ve eri�
             public static async Task<Weather> GetWeather(string zipCode)  
             {  
                 //Sign up for a free API key at http://openweathermap.org/appid  
-                string key = "YOUR KEY HERE";  
+                string key = "YOUR API KEY HERE";  
                 string queryString = "http://api.openweathermap.org/data/2.5/weather?zip="  
                     + zipCode + ",us&appid=" + key + "&units=imperial";  
   
@@ -205,20 +215,24 @@ Aşağıdaki adımlar bu durumda, hava durumu hizmetinden veri depolamak ve eri�
         }  
     }  
     ```  
-  
-7.  Yapı **WeatherApp** kitaplığı proje kodunun doğru olduğundan emin olun.  
-  
-##  <a name="uicode"></a> Paylaşılan kullanıcı Arabirimi kod yazmaya başlayın  
 
-Xamarin.Forms .NET standart Kitaplığı'nda paylaşılan UI kodu uygulamanıza olanak sağlar. Bu adımlarda önceki bölümde eklediğiniz kodun kendi verilerle hava durumu verileri tarafından döndürülen güncelleştirmeleri hizmet düğmesiyle projesine bir sayfa ekleyeceksiniz:  
+7. Değiştir *burada bilgisayarınızı API anahtarı* elde ettiğiniz API anahtarı ile. Hala, etrafına tırnak işareti gerekiyor!     
   
-1.  Ekle bir **içerik sayfasını** adlı **WeatherPage.cs** sağ tıklanarak **WeatherApp** proje ve seçerek **Ekle > Yeni öğe...**. İçinde **Yeni Öğe Ekle** iletişim kutusunda **içerik sayfasını**. I dikkatli olun **içerik sayfası (C#)** veya **içerik görünümü**. Bu ad **WeatherPage.cs**.  
+8.  Yapı **WeatherApp** kitaplığı proje kodunun doğru olduğundan emin olun.  
   
-     ![Yeni bir Xamarin.Forms XAML sayfası ekleme](../cross-platform/media/crossplat-xamarin-formsguide-6.png "CrossPlat Xamarin FormsGuide 6")  
+ <a name="uicode" /> 
+
+## <a name="begin-writing-shared-ui-code"></a>Paylaşılan kullanıcı Arabirimi kod yazmaya başlayın  
+
+Xamarin.Forms .NET standart Kitaplığı'nda paylaşılan UI kodu uygulamanıza olanak sağlar. Bu adımlarda, bir sayfa bir düğme projeyle eklenecektir. Önceki bölümde gördüğünüz metin verilerle sayfasında hava hizmet tarafından döndürülen bu düğme güncelleştirmeleri:  
   
-     Xamarin.Forms XAML tabanlı, bu adımı oluşturur bir **WeatherPage.xaml** iç içe geçmiş arka plan kodu dosyasıyla birlikte dosya **WeatherPage.xaml.cs**. Bu, kullanıcı Arabirimi üzerinden XAML veya kod oluşturmak üzere sağlar. Bu kılavuzda hem de bazıları gerçekleştirirsiniz.  
+1.  Ekle bir **içerik sayfasını** adlı **WeatherPage** sağ tıklanarak **WeatherApp** proje ve seçerek **Ekle > Yeni öğe...** . İçinde **Yeni Öğe Ekle** iletişim kutusunda **içerik sayfasını**. I dikkatli olun **içerik sayfası (C#)** veya **içerik görünümü**. Bu ad **WeatherPage.xaml**.  
   
-2.  Düğme WeatherPage ekranına eklemek için içeriğini değiştirmek **WeatherPage.xaml** aşağıdaki:  
+    ![Yeni bir Xamarin.Forms XAML sayfası ekleme](../cross-platform/media/crossplat-xamarin-formsguide-6.png "CrossPlat Xamarin FormsGuide 6")  
+  
+     Xamarin.Forms XAML tabanlı, bu adımı oluşturur bir **WeatherPage.xaml** iç içe geçmiş arka plan kodu dosyasıyla birlikte dosya **WeatherPage.xaml.cs**. Kullanıcı arabirimi mantığı XAML veya kod yazabilirsiniz. Bu kılavuzda hem de bazıları gerçekleştirirsiniz.  
+  
+2.  Düğme eklemek için **WeatherPage** ekranında, Değiştir **WeatherPage.xaml** aşağıdaki biçimlendirme ile:  
   
     ```xaml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -232,9 +246,9 @@ Xamarin.Forms .NET standart Kitaplığı'nda paylaşılan UI kodu uygulamanıza 
     </ContentPage>  
     ```  
   
-     Düğmenin adı kullanılarak tanımlanmalıdır fark **x: Name** arka plan kod dosyası içinde adıyla bu düğme başvurabilmek özniteliği.  
+     Düğmenin adı kullanılarak tanımlanmalıdır fark `x:Name` arka plan kod dosyası içinde adıyla bu düğme başvurabilmek özniteliği.  
   
-3.  Düğme için bir olay işleyicisi eklemek için **tıklama** Değiştir düğmesi metni güncelleştirmek için olay **WeatherPage.xaml.cs** aşağıdaki kod ile. ("60601" değiştirmek için başka bir posta kodu çekinmeyin.)  
+3.  Düğme için bir olay işleyicisi eklemek için `Clicked` Değiştir düğmesi metni güncelleştirmek için olay **WeatherPage.xaml.cs** aşağıdaki kod ile. ("60601" değiştirmek için başka bir posta kodu çekinmeyin.)  
   
     ```csharp  
     using System;  
@@ -261,7 +275,7 @@ Xamarin.Forms .NET standart Kitaplığı'nda paylaşılan UI kodu uygulamanıza 
     }  
     ```  
   
-4.  Açmak için **WeatherPage** uygulama başlattığında, ilk ekran olarak varsayılan oluşturucuda Değiştir **App.cs** aşağıdaki kod ile:  
+4.  Açmak için **WeatherPage** uygulama başlattığında, ilk ekran olarak varsayılan oluşturucuda Değiştir **App.xaml.cs** aşağıdaki kod ile:  
   
     ```csharp  
     public App()  
@@ -274,7 +288,9 @@ Xamarin.Forms .NET standart Kitaplığı'nda paylaşılan UI kodu uygulamanıza 
   
 5.  Yapı **WeatherApp** proje kodunun doğru olduğundan emin olun.  
   
-##  <a name="test"></a> Android için Visual Studio öykünücüsü kullanarak uygulamanızı test etme  
+<a name="test" /> 
+
+## <a name="test-your-app-using-the-visual-studio-emulator-for-android"></a>Android için Visual Studio öykünücüsü kullanarak uygulamanızı test etme  
 
 Şimdi uygulamayı çalıştırmak hazırsınız! Şimdi uygulamayı hava durumu hizmetinden veri alınırken doğrulamak şu an yalnızca Android sürümü çalıştırın. Daha sonra daha fazla kullanıcı Arabirimi öğeleri ekledikten sonra da iOS ve UWP sürümlerinde çalıştıracaksınız.   
   
@@ -282,17 +298,22 @@ Xamarin.Forms .NET standart Kitaplığı'nda paylaşılan UI kodu uygulamanıza 
   
 2.  Visual Studio araç çubuğunda göreceğiniz **WeatherApp.Android** hedef projesi olarak listelenir. Hata ayıklama için Android öykünücüsünü birini seçin ve isabet **F5**. Aşağıdakilerden birini kullanmanızı öneririz **Visual Studio** uygulama Android için Visual Studio öykünücüsünde çalışacaktır öykünücüsü seçenekleri.  
   
-     ![Bir Android öykünücüsü hata ayıklama hedefi seçme](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")  
+    ![Bir Android öykünücüsü hata ayıklama hedefi seçme](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")
+
+    > [!NOTE]
+    > Visual Studio Android projesi Newtonsoft.Json dosyası bulunamıyor gösteriyorsa, bu NuGet paketi Android projeye ekleyin.   
   
-3.  Uygulama öykünücüsünde başlattığında tıklatın **hava durumu alma** düğmesi. Düğmenin metni için güncelleştirilmiş görmelisiniz **Chicago**, olduğu *başlık* verileri özelliği hava durumu hizmetinden alınan.  
+3.  Uygulama öykünücüsünde başlattığında tıklatın **hava durumu alma** düğmesi. Düğmenin metni için güncelleştirilmiş görmelisiniz **Chicago**, olduğu `Title` verileri özelliği hava durumu hizmetinden alınan.  
   
      ![Önce ve sonra düğmesine uygulama hava durumu](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin FormsGuide 8")  
-  
-##  <a name="finish"></a> Platformlar arası yerel bir görünümüne sahip kullanıcı arabirimini son  
 
-Uygulamanızı otomatik olarak yerel bir görünümüne sahip olması Xamarin.Forms her platform için yerel kullanıcı Arabirimi denetimlerini işler. Bu görmek için daha fazla Açıkçası, giriş alanını bir posta kodu için kullanıcı Arabirimi şimdi son ve hizmetten döndürülen hava durumu verileri görüntüleyin.  
+<a name="finish" /> 
+
+## <a name="finish-the-ui-with-a-native-look-and-feel-across-platforms"></a>Platformlar arası yerel bir görünümüne sahip kullanıcı arabirimini son  
+
+Uygulamanızı otomatik olarak yerel bir görünümüne sahip olması Xamarin.Forms her platform için yerel kullanıcı Arabirimi denetimlerini işler. Bir posta kodu ve hava durumu verilerini göstermek için denetimleri için giriş alanını dahil etmek için UI tamamlanmasıyla, yerel bu görünümüne daha net bir şekilde görebilirsiniz.  
   
-1.  Değiştir **WeatherPage.xaml** aşağıdaki kod ile. Kullanarak adlı öğeleri **x: Name** daha önce açıklandığı gibi özniteliği koddan başvuruda bulunabilir. Xamarin.Forms de sağlayan bir dizi [Düzen Seçenekleri](http://developer.xamarin.com/guides/xamarin-forms/controls/layouts/) (xamarin.com). Burada, WeatherPage kullanarak [kılavuz](http://developer.xamarin.com/api/type/Xamarin.Forms.Grid/) (xamarin.com) ve [StackLayout](http://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) (xamarin.com).  
+1.  Değiştir **WeatherPage.xaml** biçimlendirme ile. Kullanarak adlı öğeleri `x:Name` daha önce açıklandığı gibi özniteliği koddan başvuruda bulunabilir. Xamarin.Forms de sağlayan bir dizi [Düzen Seçenekleri](/xamarin/xamarin-forms/controls/layouts/). Burada, WeatherPage kullanarak [kılavuz](http://developer.xamarin.com/api/type/Xamarin.Forms.Grid/) ve [StackLayout](http://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/).  
   
     ```xaml  
     <?xml version="1.0" encoding="utf-8" ?>
@@ -384,9 +405,9 @@ Uygulamanızı otomatik olarak yerel bir görünümüne sahip olması Xamarin.Fo
     </ContentPage>  
      ```  
   
-     Burada gösterilmese kullanabileceğiniz **OnPlatform** uygulamayı çalıştıran geçerli platforma özgü bir özellik değeri seçmek için etiket (bkz [temel XAML sözdizimi](http://developer.xamarin.com/guides/xamarin-forms/user-interface/xaml-basics/essential_xaml_syntax/) (xamarin.com). Arka plan kod dosyasına kullandığınız [Device.OnPlatform API](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) aynı amaçla.  
+     Burada gösterilmese kullanabileceğiniz `OnPlatform` uygulamayı çalıştıran geçerli platforma özgü bir özellik değeri seçmek için XAML dosyaları etiketinde (bkz [temel XAML sözdizimi](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax/).) Arka plan kod dosyasına, uygulama üzerinde çalıştığından karşılaştırarak hangi platformu belirleyebilirsiniz [ `Device.RuntimePlatform` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Device.RuntimePlatform/) tanımlanan sabitleri özelliğiyle [ `Device` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Device/) adlısınıfı[ `Device.iOS` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.iOS/), [ `Device.Android` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.Android/), ve [ `Device.UWP` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.UWP/).  
   
-2.  İçinde **WeatherPage.xaml.cs**, yerine **GetWeatherBtn_Clicked** aşağıdaki kod ile olay işleyicisi. Bu kod doğrular olmadığını girişi alanında bir posta kodu, bu posta kodu için verileri alır, elde edilen için tüm sayfanın bağlama bağlamını ayarlar **hava durumu** örnek sonra düğme metni "Yeniden arama." ayarlar Her etiket kullanıcı arabiriminde bir özelliğe bağlar Not **hava durumu** sınıfı, bunu, ekran bağlama bağlamı ayarladığınızda bir **hava durumu** örneği, etiketlerin güncelleştirme otomatik olarak.  
+2.  İçinde **WeatherPage.xaml.cs**, yerine `GetWeatherBtn_Clicked` aşağıdaki kod ile olay işleyicisi. Bu kod bir posta kodu girişi alanında olmadığını ve bu posta kodu verilerini alır doğrular. Elde edilen için sonra tüm sayfanın bağlama bağlamını ayarlar `Weather` örneği. Düğme metni "Yeniden arama." ayarlayarak kod burada son bulur Her etiket kullanıcı arabiriminde bir özelliğe bağlar `Weather` sınıfı. Belirlediğinizde ekranının bağlama bağlamı bir `Weather` örneği, etiketlerin güncelleştirme otomatik olarak.  
   
     ```csharp  
     private async void GetWeatherBtn_Clicked(object sender, EventArgs e)  
@@ -400,8 +421,8 @@ Uygulamanızı otomatik olarak yerel bir görünümüne sahip olması Xamarin.Fo
     }  
     ```  
   
-3.  Uygulama tüm üç platformlarında çalışan — Android, iOS ve Windows — göre uygun projesine sağ tıklatıp, seçme **başlangıç projesi olarak ayarla**ve bir cihaz veya öykünücü veya benzetici uygulama başlatma. Geçerli Amerika Birleşik Devletleri beş basamaklı posta kodu ve tuşuna basın **alma hava** aşağıda gösterildiği gibi bu bölge için hava durumu verileri görüntülemek için düğmesi. Visual Studio iOS projesinin ağınızdaki bir Mac OS X bilgisayara bağlı olması gerekir.  
+3.  Uygun projeyi sağ tıklayarak uygulamanın tüm üç platformlarında çalışan seçme **başlangıç projesi olarak ayarla**ve bir cihaz veya öykünücü üzerinde uygulama başlatma. Geçerli Amerika Birleşik Devletleri beş basamaklı posta kodu ve tuşuna basın **hava durumu alma** bu bölge için hava durumu verileri görüntülemek için düğmesi. Visual Studio iOS projesinin ağınızdaki bir Mac bilgisayara bağlı olması gerekir.  
   
-     ![Android, iOS ve Windows Phone hava durumu uygulaması örneği](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
+     [![İOS, Android ve UWP hava durumu uygulaması örneği](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")](../cross-platform/media/crossplat-xamarin-formsguide-1-Large.png#lightbox)
   
 Bu proje için tam kaynak kodu [xamarin forms örnekleri deposu github'da](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).

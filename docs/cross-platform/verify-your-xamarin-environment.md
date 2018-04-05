@@ -1,118 +1,96 @@
 ---
 title: Xamarin ortamınızı doğrulayın | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 03/30/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 ms.technology: vs-ide-mobile
-author: asb3993
-ms.author: amburns
+author: charlespetzold
+ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 28983dc88e4259fce783ee3e2d502d30ec0712d8
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 401aabd0567aa48a956c1424ca48562decaa96d6
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="verify-your-xamarin-environment"></a>Xamarin ortamınızı doğrulayın
+
 Yükleyicileri tamamladıktan sonra (bkz [Kurulum ve yükleme](../cross-platform/setup-and-install.md)), her şeyi Xamarin geliştirme deneyimi için hazır olduğunu doğrulamak için birkaç dakikanızı ayırın.  
   
- Bu Doğrulamalar tamamladıktan sonra ya da aşağıdaki izlenecek her ikisi de yapabilirsiniz:  
+ Yüklemeyi doğrulama tamamladıktan sonra ya da aşağıdaki izlenecek deneyin:  
   
--   [Visual Studio'da Xamarin.Forms ile uygulama oluşturmaya yönelik temel bilgileri öğrenin](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md)  
+-   [Visual Studio'da Xamarin.Forms ile uygulama oluşturma temellerini öğrenin](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md) bir Xamarin.Forms uygulaması oluşturmak için.
   
--   [Visual Studio’da Xamarin kullanarak yerel kullanıcı arabirimi ile uygulama oluşturma](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)  
+-   [Xamarin Visual Studio kullanarak yerel kullanıcı Arabirimi ile uygulamalar oluşturma](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md) yerel kullanıcı arabirimleri her platformda kullanın, ancak bir .NET standart kitaplığında biraz kod paylaşmak için.
   
-## <a name="all-platforms"></a>Tüm platformlar  
- İlk olarak seçin **Araçlar > Seçenekler**, genişletin **Xamarin > diğer**, tıklatıp **şimdi denetle** güncelleştirmeleri için bağlantı. Xamarin 4.0.3.214 kullanıyor veya daha önceki lisans sorunlarını önlemek için gerekir.  
+## <a name="all-platforms"></a>Tüm platformlar 
+ 
+Visual Studio'da ilk seçin **Araçlar > Uzantılar ve güncelleştirmeler** ve Xamarin bileşenleri güncelleştirmeleri kullanmanızın gerekli olup olmadığını denetleyin.  
   
- Ardından Visual Studio kullanarak yeni bir Xamarin çözüm oluşturun. **Dosya > Yeni proje**, iletişim kutusunda genişletin **şablonları > Diğer diller > Visual C# > platformlar arası**seçin  **Boş uygulama (yerel taşınabilir)**, Tamam'ı tıklatın. Bu çözüm paylaşılan taşınabilir sınıf kitaplığı proje ve tek tek projeleri ile Android, iOS ve Windows için oluşturur:  
+Ardından, Visual Studio kullanarak yeni bir Xamarin.Forms çözümünü oluşturun. **Dosya > Yeni proje**. İletişim kutusunda, genişletin **Visual C# > platformlar arası**seçin **mobil uygulama (Xamarin.Forms)**, Tamam'ı tıklatın. Aşağıdaki iletişim kutusunda, seçin **boş uygulama**. Altında **kod paylaşımı stratejisini**seçin **.NET standart**. Tamam'ı tıklatın.
+
+Bu eylemler dört projelerle bir çözümü oluşturun: paylaşılan bir .NET standart 2.0 kitaplığı proje ve uygulama projeleri Android, iOS ve evrensel Windows Platformu (UWP):  
   
- ![Boş uygulamadan yeni proje oluşturma sonuçlarını &#40;yerel taşınabilir&#41; şablonu](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin doğrula 1")  
-  
-> [!NOTE]
->  Şablonları olan değil, görürseniz [eksik Xamarin proje şablonu? Bu deneyin](#missing) bu sayfanın sonundaki.  
-  
+![Boş uygulama Xamarin.Forms şablondan yeni bir proje oluşturma sonuçlarını](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin doğrula 1")  
+   
 ## <a name="android"></a>Android  
   
-1. En son Android SDK Araçları giderek yüklü olup olmadığını kontrol edin **Araçlar > Android > Android SDK Manager** ve Android SDK Araçları'nın en yeni sürümünü yükleme Android SDK platformunuzun Araçlar ve Android SDK derleme araçları bileşenleri. Her zaman en son Android API düzeyi yüklemek için gerekli olmadığını göz önünde bulundurun; ihtiyaç duyduğunuz API'yi hedeflemek istediğiniz platform düzeyi bağlıdır. Genel olarak, Xamarin yüklendiğinde gerektirdiği platform düzeyi yüklenir.  
-
-2.  Android Tasarımcısı'nı doğrulayın: Çözüm Gezgini'nde Android projeyi açın **Kaynakları > Düzen > Main.axml** dosya. (Bu dosyayı doğrudan için Çözüm Gezgini'nde; aramayı deneyin görmüyorsanız, yalnızca Android projesi ve iOS projesinde bulunmaktadır.)  
+1. En son Android SDK Araçları giderek yüklü olup olmadığını kontrol edin **Araçlar > Android > Android SDK Manager**. En yeni sürümler, Android SDK Araçları, Android SDK platformu araçları ve Android SDK derleme araçlarını yükleyin. Her zaman en son Android API düzeyi yüklemek gerekli değildir. Gereksinim duyduğunuz API düzeyi hedeflemek istediğiniz platform düzeyi bağlıdır. Genel olarak, Xamarin platform yüklendiğinde gerektirdiği Android platformu düzeyi yüklenir.  
   
-    - "Yüklü Android SDK çok eski" bildiren bir hata alırsanız, tıklatın **açık Android SDK** seçin ve yeni SDK sürüm kullanılabilen araçlar olarak yüklemek için bu iletiyi yukarıdaki 1. adımda. 
-  
-3.  Derleme ve hata ayıklama öykünücü (veya cihaz) doğrulama:  
+2.  Derleme ve bir cihaz veya öykünücü hata ayıklama doğrulama:  
   
     -   Çözüm Gezgini'nde Android projesine sağ tıklatın ve **başlangıç projesi olarak ayarla**.  
   
-         ![Visual Studio ayarlamak başlangıç projesi seçeneği olarak](../cross-platform/media/crossplat-xamarin-verify-2.png "CrossPlat Xamarin doğrula 2")  
+    -   Araç çubuğunda bir kullanılabilir Android aygıtlar ve Öykünücüler listesini içeren aşağı açılır görmeniz gerekir. 
+    
+    Android cihazlar USB hata ayıklama cihazın ayarları sayfasının Geliştirici seçenekleri için etkinleştirilmesi gerekir. Cihaz ardından USB kablosuyla bilgisayara eklenir. 
+    
+    Ayrıca Öykünücüler listelenmiştir. Aygıtları veya Visual Studio Öykünücüler birini seçin:
+
+  ![Hata ayıklama hedefi olarak Android için Visual Studio öykünücüsü seçme](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin doğrulayın 3")  
   
-    -   Hedef Android sürüme göre uygun bir öykünücü seçin; bilgisayarınıza bağlı bir Android geliştirme cihazınız varsa, burada Öykünücüler listelenen de görürsünüz:  
+  Daha ayrıntılı bilgi için bkz: [Android için giriş Visual Studio öykünücüsü](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blog). Çalışmak için bkz: öykünücü almada sorunlarla karşılaşmanız halinde [Android için Visual Studio öykünücüsü sorun giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Seçerek öykünücüsü yeni cihaz profilleri oluşturabilirsiniz **Araçlar > Android > Android Emulator Manager**.  
   
-        -   Windows 8 +: seçin bir **VS öykünücüsü** aşağıda gösterildiği gibi Visual Studio'nun hata ayıklama açılır hedeflemek ve hata ayıklayıcısı tuşlarına basarak Başlat **F5**. Daha fazla ayrıntı için bkz: [Android için giriş Visual Studio öykünücüsü](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blog). Çalışmak için bkz: öykünücü almada sorunlarla karşılaşmanız halinde [Android için Visual Studio öykünücüsü sorun giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Seçerek öykünücüsü yeni cihaz profilleri oluşturabilirsiniz **Araçlar > Android için Visual Studio öykünücüsü...** .  
+3. Derleme ve Android cihaz veya öykünücü program dağıtmak için F5 tuşuna basın.
   
-             ![Hata ayıklama hedefi olarak Android için Visual Studio öykünücüsü seçme](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin doğrulayın 3")  
+## <a name="windows"></a>Windows 
   
-             Not: görmüyorsanız, **Araçlar > Android için Visual Studio öykünücüsü...**  menü seçeneği öykünücüsü kendisini yüklü değil sahip olabilir. Git **Denetim Masası > Programlar ve Özellikler**seçin **Microsoft Visual Studio**, tıklatıp **değişiklik** yükleyici yeniden çalıştırmak için. Tıklatın **Değiştir** Yükleyicisi'nde için kutuyu **platformlar arası mobil geliştirme > Android için Microsoft Visual Studio öykünücüsü**, tıklatıp **güncelleştirme**.  
-  
-        -   Windows 7 ve önceki sürümleri: açılan Android için Xamarin Player yerine seçin ve çalıştırmak için F5 tuşuna basın. Xamarin Player hakkında daha fazla bilgi için Aygıt Yöneticisi'ni ve sorun giderme ipuçları, okuma [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com).  
-  
-> [!NOTE]
->  Visual Studio'da özel olarak Google Android öykünücüsü yapılandırmak için kullanılan Aygıt Yöneticisi'ni açar (Göster aşağıdaki), araç Android Emulator Manager (AVD) düğmesini varlığını fark edebilirsiniz.  Bu üzerinde ya da Visual Studio öykünücüsü Android veya Xamarin profillerini yapılandırmak için her biri kendi Aygıt Yöneticisi'ni sahip Player etkisi yoktur.  Bkz: [Android için giriş Visual Studio öykünücüsü](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blog) ve [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) ayrıntıları için.  
-> ![CrossPlat Xamarin doğrulayın 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin 7 doğrulayın")  
-  
-## <a name="windows-phone"></a>Windows Phone  
-  
-1.  Windows Phone Tasarımcısı'nı doğrulayın: Windows Phone Çözüm Gezgini'nde projeye açmak **MainPage.xaml** dosya.  
-  
-2.  Derleme ve hata ayıklama öykünücü veya bir cihazı doğrulamak (Not: Bu adım ya da internet paylaşımlı cihaz için Visual Studio Kurulumu aracılığıyla yüklenen Windows Phone öykünücüsü olması gerekir):  
-  
-    -   Çözüm Gezgini'nde Windows Phone projesine sağ tıklatın ve **başlangıç projesi olarak ayarla**.  
-  
-    -   Seçin bir **öykünücüsü 8.1** hedef ya da aşağıda gösterildiği gibi açılır hata ayıklama ve F5 tuşuna basarak hata ayıklayıcısını başlatma ekli bir cihaz Visual Studio'nun içinde.  
-  
-         ![Hata ayıklama hedefi olarak bir Windows Phone öykünücüsü seçme](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Xamarin 4 doğrulayın")  
-  
-    -   İş, okumak için öykünücü almada sorunlarla karşılaşmanız halinde [Windows Phone 8 öykünücüsü sorun giderme](/previous-versions/windows/apps/jj681694\(v%3dvs.105\)).  
+1.  Çözüm Gezgini'nde Evrensel Windows projesine sağ tıklatın ve **başlangıç projesi olarak ayarla**.  
+
+2.  İçinde **çözüm platformları** açılan listesinde, select **x86** veya **x64**. Seçin **yerel makine**.
+
+3.  Masaüstüne program dağıtmak için F5 tuşuna basın.
   
 ## <a name="ios"></a>iOS  
   
-1.  Mac açıklandığı gibi Visual Studio ile eşleştirilmiş ve ağ üzerindeki kullanılabilir olduğundan emin olun [Mac bilgisayara bağlayarak](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (xamarin.com).  
+1.  Mac açıklandığı gibi Visual Studio ile eşleştirilmiş ve ağ üzerindeki kullanılabilir olduğundan emin olun [Mac bilgisayara bağlayarak](/xamarin/ios/get-started/installation/windows/connecting-to-mac/).  
   
-2.  Film şeridi Tasarımcısı'nı doğrulayın: iOS Çözüm Gezgini'nde projeye açmak **Main.storyboard** dosya. Visual Studio uzaktan Mac üzerinde çalışan Tasarımcısı burada barındırma  
+2.  Çözüm Gezgini'nde iOS projesine sağ tıklatın ve **başlangıç projesi olarak ayarla**.  
   
-3.  Derleme ve hata ayıklama doğrulama:  
+3.  Seçin **iPhoneSimulator** aşağıda gösterildiği gibi Visual Studio'nun yapı açılan listeden hedef veya **iPhone** bir Mac için internet paylaşımlı cihaz varsa, hedef   
   
-    1.  Çözüm Gezgini'nde iOS projesine sağ tıklatın ve **başlangıç projesi olarak ayarla**.  
+ ![Hedef derleme iPhoneSimulator seçerek](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin 5 doğrulayın") 
+
+ Hiçbir benzeticileri listelenmiyorsa, Mac, select Xcode başlatma **Xcode > Tercihler**, tıklatıp **karşıdan**. Altında **bileşenleri** , başlık indirilebilir simulator sürümleri görmeniz gerekir. Hata ayıklama için ek yönergeler bulunur [iOS hata ayıklama](/xamarin/ios/deploy-test/debugging-in-xamarin-ios/?tabs=vsmac#Debugging_on_the_Simulator) sayfası.
   
-    2.  Seçin **iPhoneSimulator** aşağıda gösterildiği gibi Visual Studio'nun yapı açılan listeden hedef veya **iPhone** internet paylaşımlı cihaz varsa hedefleyin. Hiçbir benzeticileri listelenmiyorsa, Mac, select Xcode başlatma **Xcode -> Tercihler**, tıklatıp **karşıdan**. Altında **bileşenleri** indirilebilir simulator sürümleri görmeniz gerekir. Hata ayıklama için ek yönergeler Xamarin üzerinde 's bulunabilir [hata ayıklama](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) sayfa (xamarin.com).  
+4.  Bir öykünücü cihaz hedef Visual Studio açılan listeden seçin:
+
+ ![Bir iPhone hata ayıklama hedefi seçme](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin 6 doğrulayın")
+
+5. Hata ayıklayıcı F5 tuşuna basarak başlatın. Benzetici, burada hata ayıklama Visual Studio'da gerçekleşirken uygulamayla etkileşim kuracağınızı Mac üzerinde başlatılır. Bir fiziksel iPhone veya iPad mac'e bağlı varsa listesinde görünür ve bunun yerine seçebilirsiniz. Herhangi bir aygıt veya listelenen benzeticileri görmüyorsanız, Mac bağlantısını denetleyin 1. adımda bağlı makalesini gözden geçirin veya gitmek **Araçlar > iOS > Mac çifti**  
   
-         ![Hedef derleme iPhoneSimulator seçerek](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin 5 doğrulayın")  
+6.  Mac bilgisayara bağlayarak sorunlarla karşılaşırsanız, okuma [bağlantı sorunlarını giderme](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/).  
   
-    3.  Aşağıda gösterildiği gibi bir iPhone hedef Visual Studio'nun hata ayıklama açılır listesinden seçin ve F5 tuşuna basarak hata ayıklayıcı başlatın. Bu, burada hata ayıklama Visual Studio'da gerçekleşirken uygulamayla etkileşim kuracağınızı Mac simulator'da çalıştırır. Fiziksel iPhone veya iPad mac'e bağlı varsa, burada görünür ve bunun yerine seçebilirsiniz. Herhangi bir aygıt veya listelenen benzeticileri görmüyorsanız, yukarıdaki 1. adımda bağlantılı konu gözden geçirme ya da gidip Mac bağlantısını denetleyin **Araçları** >**iOS**  > **Xamarin Mac arası**  
+7.  "İmzalama anahtarlarının yüklü iOS yüklü hiçbir sağlama profilleri Eşleştir" bildiren bir hata görürseniz, aşağıdaki önerileri deneyin:  
   
-         ![Bir iPhone hata ayıklama hedefi seçme](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin 6 doğrulayın")  
+  - Apple kimliği hesabınızı, açıklandığı gibi Mac xcode'da eklendiğini denetleyin [hesabınız ekleme Xcode için](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  Hesabınızı eklendikten sonra Visual Studio ve Xcode yeniden başlattığınızdan emin olun.  
+    
+  - İOS imzalama sekmesini iOS proje özelliklerinde paket, özel yetkilendirme alan etkin hata ayıklama yapılandırması boş olduğundan emin olun.  Not: Bu ayar, yukarıdaki hata iletisini karşılaştıysanız kaldırma yalnızca denemelisiniz.  
   
-    4.  Mac bilgisayara bağlayarak sorunlarla karşılaşırsanız, okuma [bağlantı sorunlarını giderme](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/xma-troubleshooting/) (xamarin.com).  
-  
-    5.  Bir hata bildiren görürseniz "yüklü hiçbir sağlama profilleri imzalama anahtarlarının yüklü iOS eşleşmiyor, aşağıdakileri yapın:  
-  
-        -   Apple kimliği hesabınızı, açıklandığı gibi Mac xcode'da eklendiğini denetleyin [hesabınız ekleme Xcode için](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  Hesabınızı eklendikten sonra Visual Studio ve Xcode yeniden başlattığınızdan emin olun.  
-  
-             ![CrossPlat Xamarin doğrulayın 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin 8 doğrulayın")  
-  
-        -   İOS imzalama sekmesini iOS proje özelliklerinde paket, özel yetkilendirme alan etkin hata ayıklama yapılandırması boş olduğundan emin olun.  Not: Bu ayar, yukarıdaki hata iletisini karşılaştıysanız kaldırma yalnızca denemelisiniz.  
-  
-##  <a name="missing"></a> Xamarin proje şablonları eksik olabilir mi? Bu deneyin  
- Şablonları Xamarin doğrudan Xamarin Web sitesinden yükleyin ve Visual Studio 2013 varsa ve yan yana Visual Studio 2015 yüklü eksik olabilir. Düzeltme, ancak daha kolaydır: yalnızca etkinleştir **Visual Studio 2015 için Xamarin** Xamarin Kurulum programını özelliği.  
-  
-1.  Denetim Masası'nda açmak **programlar ve Özellikler**, seçin **Xamarin** öğesi öğesini tıklatıp **değişiklik**.  
-  
-2.  Görüntülenen Xamarin için Kurulum sihirbazındaki düğmesini **sonraki** ve ardından **değişiklik**.  
-  
-3.  Yüklemek için isteğe bağlı özellikler listesinde genişletin **Visual Studio 2015 için Xamarin**, seçin **yerel sürücüye yüklenecek**, tıklatıp **sonraki** eklemeye devam etme özelliği.
+  ![CrossPlat Xamarin doğrulayın 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin 8 doğrulayın")  

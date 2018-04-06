@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio abonelikleri Yönetici portalı'nda yönetici hakları yönetme"
+title: Visual Studio abonelikleri Yönetici portalı'nda yönetici hakları yönetme
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,15 +10,15 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 83bf27d5aaa99c2095ad8a1fafd7541df90f316b
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="managing-administrator-rights-in-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio abonelikleri Yönetici portalı'nda yönetici hakları yönetme
 
 ## <a name="overview"></a>Genel Bakış 
-Visual Studio abonelikleri Yönetici portalı'nda (https://manage.visualstudio.com), iki Yönetim rolleri vardır:
+Visual Studio abonelikleri Yönetici portalı'nda (https://manage.visualstudio.com), iki Yönetim rolü vardır:
 
 **Süper yönetici:** bir kuruluş ilk ayarlama bağlı birincil ya da bildirimler kişi Süper yönetici varsayılan olarak olur. Birincil ya da bildirimler kişi ek Süper admins ya da yöneticiler atamak seçebilirsiniz. Tek tek aboneleri için abonelikler yönetmeye ek olarak, süper yöneticileri ekleyin ve diğer yöneticiler ve Süper admins kaldırın. Sistemde ikiden fazla Süper admins varsa, bir süper Yönetici güvenlik için son iki dışında tümünü silebilirsiniz. 
 

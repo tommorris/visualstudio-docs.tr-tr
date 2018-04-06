@@ -1,5 +1,5 @@
 ---
-title: "Yönetici portalına erişim | Visual Studio Market"
+title: Yönetici portalına erişim | Visual Studio Market
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 41bee30e54411a3b9bcaed6c72be3909f2d1cfab
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio abonelikleri Yönetici portalına erişim
 ## <a name="for-mpsa"></a>MPSA için
@@ -35,22 +35,22 @@ Yönetici ayarlama hakkında bilgi gerekiyorsa, lütfen izleme [bu videoyu](http
 Zaten bir yönetici olarak ayarlanmış olan sonra Visual Studio abonelikleri doğrudan gidebilirsiniz [Yönetici portalı](https://manage.visualstudio.com).
 
 ## <a name="for-cloud-subscriptions"></a>İçin bulut abonelikleri
-Visual Studio bulut aboneliği satın aldığınızda, otomatik olarak bu abonelik için yönetici olarak ayarlanır.  Bunları satın zaten aldığınız, onları yönetebilirsiniz [https://manage.visualstudio.com](https://manage.visualstudio.com).
+Visual Studio bulut aboneliği satın aldığınızda, otomatik olarak bu abonelik için yönetici olarak ayarlanır.  Bunları satın zaten aldığınız, onları yönetebilirsiniz [ https://manage.visualstudio.com ](https://manage.visualstudio.com).
 
-Visual Studio bulut abonelikleri satın almak için Visual Studio Market'ten ziyaret [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscriptions).
+Visual Studio bulut abonelikleri satın almak için Visual Studio Market'ten ziyaret [ https://marketplace.visualstudio.com/subscriptions ](https://marketplace.visualstudio.com/subscriptions).
 
 
 ## <a name="for-programs-subscriptions"></a>Programları abonelikler için
 
 ### <a name="microsoft-bizspark"></a>Microsoft BizSpark
-Microsoft BizSpark yöneticisiyseniz, kuruluşunuzun Visual Studio aboneliklerini yönetebilirsiniz **My BizSpark** oturum açarak en: [https://bizspark.microsoft.com/my/index](https://bizspark.microsoft.com/my/index).
+Microsoft BizSpark yöneticisiyseniz, kuruluşunuzun Visual Studio aboneliklerini yönetebilirsiniz **My BizSpark** oturum açarak en: [ https://bizspark.microsoft.com/my/index ](https://bizspark.microsoft.com/my/index).
 
-Microsoft BizSpark program hakkında daha fazla bilgi bulmak [https://bizspark.microsoft.com](https://bizspark.microsoft.com).
+Microsoft BizSpark program hakkında daha fazla bilgi bulmak [ https://bizspark.microsoft.com ](https://bizspark.microsoft.com).
 
 
 ### <a name="imagine"></a>Düşünün
-Bir Microsoft Imagine yöneticisi sizseniz, lütfen ziyaret [https://imagine.microsoft.com/institutions/index](https://imagine.microsoft.com/institutions/index).
+Bir Microsoft Imagine yöneticisi sizseniz, lütfen ziyaret [ https://imagine.microsoft.com/institutions/index ](https://imagine.microsoft.com/institutions/index).
 
 
 ### <a name="partner"></a>İş ortağı
-Microsoft Partner Network (MPN) Visual Studio abonelikler hakkında daha fazla bilgi için satın almak ve bunları yönetmenize yardımcı olacak kaynaklar için bu makaleye göz atın: [https://support.microsoft.com/help/4013871/ Microsoft-Partner-Network-MPN-Visual-Studio-Subscriptions](https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions).
+Microsoft Partner Network (MPN) Visual Studio abonelikler hakkında daha fazla bilgi için satın almak ve bunları yönetmenize yardımcı olacak kaynaklar için bu makaleye göz atın: [ https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions ](https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions).

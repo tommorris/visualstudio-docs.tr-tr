@@ -1,23 +1,25 @@
 ---
-title: "Özel Kod Analizi kural kümeleri oluşturma | Microsoft Docs"
-ms.custom: 
+title: Özel Kod Analizi kural kümeleri oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 88db3a0a-1b92-496d-9fae-b2bb980f5933
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 18f527f30afe21678874f3555b539ce9d60bd816
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Özel Kod Çözümlemesi Kural Kümeleri Oluşturma
 Bir veya daha fazla kuralları içeren bir kural kümesi belirterek yönetilen kod projesi için Kod Analizi kurallarını uygulayın. Microsoft Standart kural kümeleri grupları işlevi ve derinliği tarafından düzenlenir kuralları sağlar. Örneğin, Microsoft temel tasarım yönerge kuralları ve Microsoft genişletilmiş tasarım yönerge kuralları genişletilmiş kural kümesindeki adlandırma kuralları eklenen vurgulu kullanılabilirliğini ve bakım sorunları odaklanmak kuralları içerir.  

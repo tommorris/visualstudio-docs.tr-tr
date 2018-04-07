@@ -1,23 +1,22 @@
 ---
-title: "Ürün anahtarları kullanma | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to obtain and manage your product keys in Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Ürün anahtarları kullanma | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Elde ve ürün anahtarlarınızı Visual Studio aboneliklerini yönetme hakkında bilgi edinin.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 2d3ca72182c26e2e43bcdf97ea6277a4dd1375f0
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde ürün anahtarları kullanma
 
-## <a name="product-keys-overview"></a>Ürün anahtarları genel bakış
 Visual Studio abonelik çeşitli Microsoft ürünleri tasarlama, geliştirme, test ve gösteren uygulamalar için erişim sağlar. Yükleme sırasında bu ürünler bazıları ürün anahtarlarını gerektirir ve bazıları etkinleştirme gerektirir.
 
 Visual Studio abonelikleri genellikle, Windows ve Office ürünlerinin geçerli sürümleri için beş ürün anahtarlarını ve eski sürümleri için üç anahtar içerir.
@@ -48,7 +47,7 @@ Bizim araştırma çoğu aboneleri kendi aboneliğine dahil ürün anahtarları 
 ## <a name="locating-and-claiming-product-keys"></a>Bulma ve ürün anahtarları istenmesini
 Ürün anahtarlarınızı görüntülemek için Visual Studio aboneliğiniz oturum açmanız gerekir. Bireysel ürün anahtarları, mavi seçerek bulunduğunda **alma anahtar** bağlamak için belirli bir ürünü [indirir](https://my.visualstudio.com/downloads) sayfasında aşağıda gösterildiği gibi.  Tüm anahtarları üzerinde toplama içinde de kullanılabilir [ürün anahtarlarını](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) sayfası. Tek bir ürün için birden çok anahtar mevcut olduğunda notları hangi anahtarının kullanılması gerektiğini belirlemenize yardımcı olması yükleme için Notlar sütunda görüntülenir.
 
-![İndirme sayfasından anahtarı alma](_img/product-keys/download-get-key.png)
+   ![İndirme sayfasından anahtarı alma](_img/product-keys/download-get-key.png)
 
 Bazı ürünler birden çok ürün sürümleri tek bir yüklemeye içine paket. Bu durumda, ürün hangi sürümünün yüklü girilen ürün anahtarı belirler.
 Bazı anahtarlar, birden çok kez olarak etkinleştirme gerekli olmadığı için gerektiği şekilde kullanmanız "statik" anahtarlar gibi otomatik olarak sağlanır. Diğer anahtarlar seçerek talep gerekir **alma anahtar** ürün için bağlantı.
@@ -82,7 +81,7 @@ Bir ürün anahtarı talep için:
 1.  Visual Studio aboneliğiniz oturum açın.  Ürünleri indirir veya ürün anahtarlarını talep için oturum açmanız gerekir. 
 2.  Tıklayın [ürün anahtarlarını](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) sekmesi.
 3.  Ürün anahtarları, ürün adına göre alfabetik olarak listelenir.  İstenen ürün veya sayfanın en üstünde arama çubuğunu kullanarak ara adını ya da kaydırın kullanabilirsiniz.  
-![Ürün anahtarı arayın](_img\product-keys\visio-product-key-cropped.png)
+    ![Ürün anahtarı arayın](_img\product-keys\visio-product-key-cropped.png)
 
 Bu örnekte, Visio 2010 için bir ürün anahtarı bulmak için arama çubuğunu kullandığımız.
 Gördüğünüz gibi Visio 2010 listelenen birçok sürümü vardır.  Bir anahtar zaten Visio standart 2010 ve Visio Premium 2010 için istenmişti ve her ikisi de kalan dört anahtarlara sahip.  Talep anahtarları hem Perakende anahtarlar ve sayfasında görüntülenir.  Talep edilen anahtarlarında hakkında kısa bir not kaydedebilirsiniz fark **notları** sütun.  Bu tarihi ile birlikte kullanabileceğiniz **Claimed** talep anahtarları izlemek için sütun.  Örneğin, bir anahtar kullanarak ürün yüklemesini etkinleştirdiğinizde notları yapabilir.  
@@ -91,7 +90,7 @@ Gördüğünüz gibi Visio 2010 listelenen birçok sürümü vardır.  Bir anaht
 Size, otomatik olarak "sizin için istenen"olarak işaretlenmiş statik ve diğer anahtarları büyük seçimi birlikte talep tüm anahtarları listesini dışarı aktarabilirsiniz.  
 
 > [!IMPORTANT] 
-> Aboneliğinizin süresi dolarsa, artık yeni anahtarlar talep veya dışarı aktarma, talep edilen keys.* * kuramaz 
+> Aboneliğiniz sona ererse, artık yeni anahtarlar talep veya talep edilen anahtarlarınızı verme mümkün olacaktır. 
 
 Anahtarlarınızı dışarı aktarmak için yalnızca tıklayın **tüm anahtarları dışa** ürün anahtarları sayfanın sağ uçta bağlantı.  Dosyayı açmak veya kaydetmek için seçeneği elde edersiniz ve KeysExport.xml başlıklı bir .xml dosyası oluşturulur.  Dosyası .xml dosyaları işleme yeteneği olan bir uygulamayla açmanız gerekir.  Örneğin, bir salt okunur çalışma kitabını Excel'de olarak dosyasını açın.  
 

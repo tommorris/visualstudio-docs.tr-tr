@@ -1,13 +1,8 @@
 ---
-title: "Nasıl yapılır: bir özel kural kümesi oluşturma | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+title: Visual Studio'da ayarlayın özel kod analizi kural oluşturma | Microsoft Docs
+ms.date: 04/04/2018
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
@@ -17,35 +12,25 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 3095d5eff59506f3d7681f61f11f73d37258647d
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: a094b6c59eb4e1d95949dc35a5c0479edb4d5a76
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="how-to-create-a-custom-rule-set"></a>Nasıl yapılır: Özel Kural Kümesi Oluşturma
+# <a name="custom-rule-sets"></a>Özel kural kümeleri
 
-Visual Studio'da oluşturma ve özel bir değiştirme *kural kümesi* Kod Analizi ile ilişkilendirilmiş belirli proje gereksinimlerini karşılamak için. Özel bir kural oluşturmak için bir açın veya daha fazla standart kuralı kural kümesi Düzenleyicisi'nde ayarlar. Ekleyebilir veya belirli kuralları kaldırın ve Kod Analizi kural ihlal ettiğini belirlediğinde oluşan eylemi de değiştirebilirsiniz.
+Özel bir oluşturabileceğiniz *kural kümesi* kod analizi için belirli bir proje gereksinimlerini karşılamak için.
 
- Yeni özel bir kural oluşturmak için yeni bir dosya adı kullanarak kaydedin. Özel kural kümesi projeye otomatik olarak atanır.
+## <a name="create-a-custom-rule-set"></a>Bir özel kural kümesi oluşturma
 
-## <a name="opening-the-rule-set-editor"></a>Açma kural kümesi Düzenleyici
+Özel bir kural oluşturmak için yerleşik bir kural kümesi açabilirsiniz **kural kümesi düzenleyici**. Buradan, ekleme veya kaldırma belirli kurallar ve kural ihlal edildiğinde oluşan eylem değiştirebilir&mdash;Örneğin, bir uyarı veya hata gösterir.
 
-### <a name="to-open-an-empty-rule-set-file-in-the-rule-set-editor"></a>Kural boş bir açmak için kural kümesi Düzenleyicisi'nde dosya kümesi
+1. İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**.
 
-1. Üzerinde **dosya** menüsünü [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], işaret **yeni** ve ardından **dosya**.
+2. Üzerinde **özellikleri** sayfaları, select **Kod Analizi** sekmesi.
 
-2. İçinde **yeni dosya** iletişim kutusu, tıklatın **genel** içinde **yüklü şablonlar** listeleyin ve ardından **Kod Analizi kural kümesi**.
-
-3. Kural kümesi Düzenleyicisi görüntülenir. Hiçbir kural Düzenleyicisi listesinde seçilir.
-
-### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Tek bir var olan kural kümesinden özel bir kural oluşturmak için
-
-1. Çözüm Gezgini'nde projeye sağ tıklayın ve ardından **özellikleri**.
-
-2. Üzerinde **özellikleri** sekmesini tıklatın, **Kod Analizi**.
-
-3. İçinde **kural kümesi** aşağı açılan listesinde, aşağıdakilerden birini yapın:
+3. İçinde **bu kural kümesini çalıştırmak** aşağı açılan listesinde, aşağıdakilerden birini yapın:
 
     - Özelleştirmek istediğiniz kural kümesini seçin.
 
@@ -53,67 +38,48 @@ Visual Studio'da oluşturma ve özel bir değiştirme *kural kümesi* Kod Analiz
 
     - Seçin  **\<Gözat... >** mevcut bir kuralı kümesini belirlemek için listede değil.
 
-4. Tıklatın **açık** kuralları kural kümesi Düzenleyicisi'nde görüntülenecek.
+4. Seçin **açık** kuralları kural kümesi Düzenleyicisi'nde görüntülenecek.
 
-### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Özel bir kural oluşturmak için var olan birden çok kural kümesinden ayarlayın
+Yeni bir kural kümesi dosyasından oluşturabilirsiniz **yeni dosya** iletişim:
+
+1. Seçin **dosya** > **yeni** > **dosya**, veya basın **Ctrl**+**N**.
+
+2. İçinde **yeni dosya** iletişim kutusunda **genel** solda, kategori ve ardından **Kod Analizi kural kümesi**.
+
+3. **Aç**'ı seçin.
+
+   Yeni *.ruleset* dosya kural kümesi Düzenleyicisi'nde açılır.
+
+### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Birden çok kural kümesinden ayarlamak özel bir kural oluşturun
 
 1. Çözüm Gezgini'nde projeye sağ tıklayın ve ardından **özellikleri**.
 
-2. Üzerinde **özellikleri** sekmesini tıklatın, **Kod Analizi**.
+2. Üzerinde **özellikleri** sayfaları, select **Kod Analizi** sekmesi.
 
 3. Seçin  **\<birden çok kural kümesi... Seç >** gelen **bu kural kümesini çalıştırmak**.
 
-4. İçinde **Ekle veya Kaldır kural kümesi** kural ayarlar iletişim kutusunda, yeni kural kümesini temel ve ardından istediğiniz **Tamam**.
+4. İçinde **Ekle veya Kaldır kural kümesi** kural kümesi Seç iletişim kutusunda, istediğiniz yeni kural kümesinde dahil etmek.
 
-5. Yeni kural kümesi kaydedin.
+   ![Kural kümelerini iletişim kutusu Ekle Kaldır](media/add-remove-rule-sets.png)
 
-     Yeni Kural kümesinin adını seçili **bu kural kümesini çalıştırmak** listesi. Kural sonraki adımda kümesi görünen adını değiştirebilirsiniz.
+5. Seçin **Kaydet**, için bir ad girin *.ruleset* dosya ve ardından **kaydetmek**.
 
-6. (İsteğe bağlı) Kural kümesi görünen adını değiştirmek için **Görünüm** menüsünde tıklatın **Özellikler penceresini**. Görünen adı yazın **adı** kutusu.
+   Yeni kural kümesi içinde seçili **bu kural kümesini çalıştırmak** listesi.
 
-7. Eklemek için kaldırmak veya yeni kural kümesinde belirli bir kod çözümleme kurallarını değiştirmek, **açık**.
+6. Seçin **açmak** yeni kural kümesi kural kümesi Düzenleyicisi'nde açın.
 
-## <a name="modifying-a-rule-set"></a>Bir kural kümesini değiştirme
+## <a name="name-and-description"></a>Ad ve açıklama
 
-### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Bir kural değiştirmek için kural kümesi Düzenleyicisi'nde ayarlayın
+Düzenleyicide açık durumda olan bir kural kümesi görünen adını değiştirmek için açın **özellikleri** seçerek penceresi **Görünüm** > **Özellikler penceresini** menü çubuğunda. Görünen ad girin **adı** kutusu. Ayrıca kural kümesi için bir açıklama girebilirsiniz.
 
-- Kural kümesi görünen adını değiştirmek için **Görünüm** menüsünde tıklatın **Özellikler penceresini**. Görünen ad girin **adı** kutusu. Görünen adı dosya adından farklı olabilir dikkat edin.
+## <a name="next-steps"></a>Sonraki adımlar
 
-- Grubun tüm kuralları bir özel kural kümesine eklemek için Grup onay kutusunu seçin. Grubun tüm kuralları kaldırmak için onay kutusunu temizleyin.
+Bir kural kümesini sahip olduğunuza göre sonraki kurallar ekleyerek veya kuralları kaldırma veya kural ihlallerinin önemini düzenleyerek özelleştirmek için bir adımdır.
 
-- Özel bir kural kümesi için belirli bir kural eklemek, kuralın onay kutusunu seçin. Kural kural kümesinden kaldırmak için onay kutusunu temizleyin.
+> [!div class="nextstepaction"]
+> [Kuralları kural kümesi Düzenleyicisi'nde Değiştir](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-- Bir kural bir kod analizi ihlal edildiğinde gerçekleştirilecek eylemi değiştirmek için tıklayın **eylem** kural için alan ve ardından aşağıdaki değerlerden birini seçin:
+## <a name="see-also"></a>Ayrıca bkz.
 
-     **Uyar** -bir uyarı oluşturur.
-
-     **Hata** -bir hata oluşturur.
-
-     **Hiçbiri** -kural devre dışı bırakır. Bu eylem kural kümesi kuralı kaldırma aynıdır.
-
-## <a name="changing-the-rule-set-editor-display"></a>Kural değiştirme Düzenleyicisi görüntü ayarlama
-
-### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Gruplandırmak için filtre veya kural kümesi Düzenleyici araç çubuğunu kullanarak kural kümesi Düzenleyici alanları değiştirin
-
-- Tüm grupları kurallarında genişletmek için **Tümünü Genişlet**.
-
-- Tüm grupları kurallarında daraltmak için **Daralt tüm**.
-
-- Kurallar tarafından gruplandırılır alanını değiştirmek için alanından seçin **Group By** listesi. Gruplanmamış kurallarını görüntülemek için seçin  **\<Hiçbiri >**.
-
-- Eklemek veya kural sütunlarında alanları kaldırmak için **sütun seçenekleri**.
-
-- Geçerli çözüme uygulamayın kuralları gizlemek için **Gizle geçerli çözüme uygulamayın kuralları**.
-
-- Gösterme ve gizleme hata eylemi atanmış olan kurallar arasında geçiş yapmak için tıklatın **Göster Kod Analizi hatalara neden olabilir kuralları**.
-
-- Gösterme ve gizleme uyarı eylemi atanmış olan kurallar arasında geçiş yapmak için tıklatın **Göster Kod Analizi uyarıları oluşturan kuralları**.
-
-- Gösterme ve gizleme atanan kuralları arasında geçiş yapmak için **hiçbiri** eylemini tıklatın **Göster etkin olmayan kuralları**.
-
-- Ekleyin veya varsayılan kural kümesi geçerli kural kümesinde Microsoft kaldırmak için tıklatın **ekleme veya kaldırma alt kural kümeleri**.
-
-## <a name="see-also"></a>Ayrıca Bkz.
-
-[Nasıl yapılır: yönetilen kod projesi için kod analizini yapılandırma](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
-[Kod Analizi kural kümesi başvurusu](../code-quality/code-analysis-rule-set-reference.md)
+- [Nasıl yapılır: Yönetilen Kod Projesi İçin Kod Çözümlemesini Yapılandırma](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+- [Kod çözümleme kural kümesi başvurusu](../code-quality/rule-set-reference.md)

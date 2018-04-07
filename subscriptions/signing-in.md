@@ -1,19 +1,19 @@
 ---
-title: "Visual Studio abonelikler için oturum açma | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/11/2017
-Ms.topic: Get-Started-Article
-Description: How to Sign In to Your Visual Studio Subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: bb6313e06525967f7ac8dd0aa6dd74bb4417ffef
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio abonelikler için oturum açma | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/11/2017
+ms.topic: Get-Started-Article
+description: Visual Studio aboneliğiniz için oturum açma
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: a6a29a67882e36a23f5c61757b80cf9558b93be1
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="signing-in-to-your-visual-studio-subscription"></a>Visual Studio aboneliğiniz için oturum açma
 
@@ -25,7 +25,7 @@ Adımlar Visual Studio aboneliğiniz oturum açmak için kullandığınız hesap
 3. [Bir iş/Okul hesabınızda oturum açmak için Microsoft Account kullanma](#using-your-microsoft-account-to-sign-in-to-a-work-or-school-account)
 
 ## <a name="signing-in-with-your-microsoft-account-msa"></a>Microsoft hesabınızla (MSA) imzalama
-1. Lütfen şu adresi ziyaret [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Lütfen şu adresi ziyaret [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Ayarlayın ya da Visual Studio aboneliğiniz satın sağladığınız e-posta adresi girin.
     
    > [!NOTE] 
@@ -39,7 +39,7 @@ Adımlar Visual Studio aboneliğiniz oturum açmak için kullandığınız hesap
 Visual Studio geliştirme Essentials aboneliğinizi ilk kez eriştiğinde, bir Hoş Geldiniz iletişim kutusu görürsünüz.  Tıklatın **Onayla** programın hüküm ve koşulları kabul etmek için.
 
 ## <a name="signing-in-with-your-work-or-school-account"></a>İş veya Okul hesabınızla oturum imzalama 
-1. Lütfen şu adresi ziyaret [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Lütfen şu adresi ziyaret [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Yeni Visual Studio abonelik atanıp atanmadığını e-posta adresi girin.
     
    > [!NOTE]
@@ -58,7 +58,7 @@ Kullanmakta olduğunuz abonelik portal üstte mavi çubuğunda görüntülenen t
 
 ## <a name="using-your-microsoft-account-to-sign-in-to-a-work-or-school-account"></a>Bir iş veya Okul hesabınızda oturum açmak için Microsoft Account kullanma
 
-1. Git [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Git [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Yeni Visual Studio abonelik atandığı e-posta adresi girin 
 
    > [!NOTE]

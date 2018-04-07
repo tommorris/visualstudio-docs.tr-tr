@@ -1,19 +1,19 @@
 ---
-title: "Süresi dolan lisansları işlemek | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can handle expired Visual Studio subscriptions
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: ffe9a2367d2ce0933e7f57831400fafb9aeac26e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Süresi dolan lisansları işlemek | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Süresi dolan Visual Studio abonelik yöneticileri nasıl işleyebilir öğrenin
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: f4f1e049ce5f236fc1bce958d698b15637cb265d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="handling-expired-subscriptions"></a>Abonelikleri işleme süresi
 
@@ -21,4 +21,8 @@ Kullanıcının abonelik sona erdiğinde, bu portalda kırmızı çubuğu adın�
 
 ![Süresi dolan abonelikleri listesi](_img\expired-subscriptions\expired-list.png) 
 
-Abonelikleri yenilemek için Toplu Lisanslama satıcınızla veya Microsoft satıcıya başvurun. Bunları, anlaşma numarası ve satın alma hesap numarası sağlayın. Satıcınıza veya Microsoft seller yenileme veya ek abonelikleri işlem satın alma yoluyla yol gösterecektir. Sipariş veren veya sözleşme yenilendikten sonra yeni abonelikler kullanılabilir olur ve abonelerinize atanabilir.
+**Abonelikleri yenilemek için**
+1.  Toplu Lisanslama satıcınızla veya Microsoft satıcıya başvurun. 
+2.  Bunları, anlaşma numarası ve satın alma hesap numarası sağlayın. 
+
+Satıcınıza veya Microsoft seller yenileme veya ek abonelikleri işlem satın alma yoluyla yol gösterecektir. Yeni Abonelik Siparişi veren veya sözleşme yenilendikten sonra kullanılabilir olur ve olabilir [abonelerinize atanan](/assign-license/). 

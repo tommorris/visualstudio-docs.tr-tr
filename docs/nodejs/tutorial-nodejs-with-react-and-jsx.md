@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4a6a16f2e67c2e50b46109142d95db4ba07fcfaf
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f99b1bef93fcbe968f23f0bb63653d825235385e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Öğretici: Visual Studio'da bir Node.js ve tepki uygulaması oluşturma
 Visual Studio kolayca bir Node.js projesi oluşturun ve IntelliSense ve Node.js destekleyen diğer yerleşik özellikleri yararlanan sağlar. Bu öğreticide Visual Studio için Visual Studio şablonundan bir Node.js web uygulaması projesi oluşturun. Ardından, tepki kullanarak basit bir uygulama oluşturun. 
@@ -349,11 +349,20 @@ Her zaman yaptığınız değişiklikler *app.tsx*, webpack komutunu çalıştı
 
     Visual Studio'da DOM Gezgini ve JavaScript konsolu açtığınızda, hata ayıklayıcı doğru eklenmiş bildiğiniz. Bu hata ayıklama araçları Chrome geliştirici araçları ve kenar için F12 araçları benzerdir.
 
+    > [!NOTE]
+    > Hata ayıklayıcıyı Ekle değil ve "işleme iliştirilemiyor yüklenemiyor. ileti görüyorsanız Bir işlem geçerli durumda geçerli değil." ardından Chrome hata ayıklama modunda başlatmadan önce tüm Chrome örneklerini kapatmak için Görev Yöneticisi'ni kullanın. Chrome uzantıları çalıştıran ve tam hata ayıklama modu engelliyor.
+
 1. Kesme noktası koduyla zaten yürütülen olduğundan, kesme noktası isabet, tarayıcı sayfayı yenileyin.
 
     Hata ayıklayıcıda duraklatıldı olsa da, değişkenlerinden bekleyerek ve hata ayıklayıcı windows kullanarak, uygulama durumunu inceleyebilirsiniz. Hata ayıklayıcı kod üzerinden adımla ilerletebilirsiniz (**F5**, **F10**, ve **F11**).
 
-    Ortamı ve tarayıcı durumuna bağlı olarak ya da uygulama bundle.js kesme veya eşlenen app.tsx, konumunda isabet. Her iki durumda da kod üzerinden adım ve değişkenleri inceleyin. (Kodda içine bölün gerekiyorsa bir *.tsx* dosya ve bunu no'lu kullanmayı deneyin `debugger;` deyimi veya kümesi kesme noktaları Chrome Geliştirici Araçları'nda.)
+    Her ikisinde kesme noktası isabet *uygulama bundle.js* veya eşlenen konumunda *app.tsx*ortamı ve tarayıcı durumuna bağlı olarak. Her iki durumda da kod üzerinden adım ve değişkenleri inceleyin.
+
+    * Kodda içine bölün gerekiyorsa *app.tsx* ve bunu kullanmak **ekleme işlemi için** hata ayıklayıcısını önceki adımlarda açıklandığı gibi. Dinamik olarak üretilen açmak *app.tsx* açarak dosya Çözüm Gezgini'nden **betik belgelerini** > **app.tsx**, bir kesme noktası ayarlayın ve Yenile tarayıcınızda sayfası.
+
+        Alternatif olarak, kodda içine bölün gerekiyorsa *app.tsx* ve bunu, kullanmayı deneyin `debugger;` deyiminde *app.tsx*, veya bunun yerine Chrome Geliştirici Araçları'nda kesme noktalarını ayarlayın.
+
+    * Kodda içine bölün gerekiyorsa *uygulama bundle.js* ve bunu, kaynak eşleme dosyası Kaldır *uygulama bundle.js.map*.
 
     > [!TIP]
     > Aşağıdaki adımları izleyerek ilk kez işleme iliştirilemiyor sonra hızlı bir şekilde Visual Studio 2017 aynı işlem seçerek iliştirebilirsiniz **hata ayıklama** > **işlem için yeniden bağlayın**.

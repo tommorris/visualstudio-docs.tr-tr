@@ -1,22 +1,24 @@
 ---
-title: "Visual Studio geliştirme Essentials programı nasıl bırakılsın mı? | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/28/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to leave the Visual Studio Dev Essentials program
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 9fd0f2b2a2bd337e0531b84be4a20a55e8e135b4
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio geliştirme Essentials programı nasıl bırakılsın mı? | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/28/2017
+ms.topic: Get-Started-Article
+description: Visual Studio geliştirme Essentials programı bırakmak öğrenin
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 4a24547d29513d0e06531041b51d0dea897acace
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="how-do-i-leave-the-visual-studio-dev-essentials-program"></a>Visual Studio geliştirme Essentials programı nasıl bırakılsın mı? 
+# <a name="how-do-i-leave-the-visual-studio-dev-essentials-program"></a>Visual Studio geliştirme Essentials programın nasıl bırakılsın mı? 
+
 Visual Studio geliştirme Essentials program bırakmak isterseniz, lütfen şu adımları izleyin:
+
 1. Git [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 2. Aboneliğiniz için oturum açın.  (Yardım [oturum açma](/visualstudio/subscriptions/signing-in).)
 3. Başarılı oturum açma geçerli abonelik listesi görüntülenir.

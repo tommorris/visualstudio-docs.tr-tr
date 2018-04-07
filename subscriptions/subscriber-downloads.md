@@ -1,19 +1,19 @@
 ---
-title: "Abone kullanarak indirmeleri görselleri Studio Aboneliklerde | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to locate and download Microsoft products included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Abone kullanarak indirmeleri görselleri Studio Aboneliklerde | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Bulun ve Visual Studio aboneliğinizde yer alan Microsoft ürünlerini yükleyin öğrenin.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Abone kullanarak Visual Studio Aboneliklerde indirir
 Abone Avantajlarınızı bir parçası olarak, çeşitli yazılım yüklemelerini erişebilirsiniz.  
@@ -34,7 +34,7 @@ Neden belirli ürünleri abonelere kullanılamayabilir birkaç nedeni vardır:
 ## <a name="what-do-i-get"></a>Ne sağlarım?
 Sayısı ve türü indirme abonelik düzeyi ve program üyeliklerini temel bağlıdır.  Visual Studio Enterprise standart abonelikleri olan aboneler Örneğin, farklı yüklemeleri kullanabilecekleri bir Microsoft iş ortağı ağı veya BizSpark program abonelik aracılığıyla kendi aboneliklerini elde aboneleri daha olabilir.  Her abonelik düzeyi için hangi yüklemeleri kullanılabilir hakkında daha fazla bilgi için listesini indirir [ürünler tarafından avantajı düzeyi](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
 
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
+Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>İndirmeler abone Portalı'nda nasıl bulabilirim? 
 Yalnızca aboneliğinizde yer alan yüklemeleri sizin için görüntülenir [indirmeleri](https://my.visualstudio.com/downloads/featured) sayfası.  Birden fazla aboneliğiniz veya program üyeliği varsa, gösterilen yüklemeler için olacaktır **en yüksek abonelik** farklı bir abonelik görüntülemekte olduğunuz olsa bile, tutun.  Visual Studio Professional abonelik ve Visual Studio geliştirme Essentials üyeliği varsa, örneğin, her ikisi de aynı oturum açma kimliği ile şu anda bile olsa, bunlar Professional düzeyi abonelikte dahil edilecek gösterilen yüklemeleri ilişkili Geliştirme Essentials Avantajlarınızı görüntüleme.  

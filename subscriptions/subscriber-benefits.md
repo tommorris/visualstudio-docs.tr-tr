@@ -1,19 +1,19 @@
 ---
-title: "Visual Studio abonelikleri - abone avantajları"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 2/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the benefits included in your Visual Studio subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b42d4f826d6bc589ecf16db2d1d4eddb98d81ff9
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Visual Studio abonelikleri - abone avantajları
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 02/12/2018
+ms.topic: Get-Started-Article
+description: Visual Studio aboneliğinize dahil avantajları hakkında bilgi edinin
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio aboneliğinize dahil avantajları
 
@@ -22,9 +22,9 @@ Visual Studio abonelikleri kaynakları oluşturmak, dağıtmak ve tercih edilen 
 Avantajları üç kategorilerde gruplanır:
 
 ## <a name="tools"></a>Araçlar
-Araçlar kategori çok çeşitli flagship avantajları gibi yararlar erişim sağlayan [Visual Studio IDE](/vs-ide-benefit), [Visual Studio Team Services](/vs-vsts), ve [Azure](/vs-azure) .  Abonelik düzeyinizi bağlı olarak, Windows ve Office 365 Geliştirici hesaplarını, Visual Studio Uygulama Merkezi ve WhiteSource Cıvata ve ModernRequirements gibi ortaklardan avantajları da görürsünüz.
+Araçlar kategori çok çeşitli flagship avantajları gibi yararlar erişim sağlayan [Visual Studio IDE](/vs-ide-benefit/), [Visual Studio Team Services](/vs-vsts/), ve [Azure](/vs-azure/) .  Abonelik düzeyinizi bağlı olarak, Windows ve Office 365 Geliştirici hesaplarını, Visual Studio Uygulama Merkezi ve WhiteSource Cıvata ve ModernRequirements gibi ortaklardan avantajları da görürsünüz.
 
-## <a name="professional-development"></a>Profesyonel geliştirme
+## <a name="professional-development"></a>Profesyonel Geliştirme
 Skillset geliştirmek ve en son teknolojileriyle takip edin, continously yardımcı olmak için erişim bazı en iyi çevrimiçi eğitim kullanılabilir endüstri kılavuzları sunuyoruz. Kullanılabilir harika içeriği örnekleri şunlardır:
 - Azure App Insights ve Azure Cosmos DB Opsgility tarafından
 - Xamarin University tarafından platformlar arası Mobil Geliştirme

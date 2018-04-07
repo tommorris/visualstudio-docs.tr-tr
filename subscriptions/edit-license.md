@@ -1,25 +1,28 @@
 ---
-title: "Yönetici portalı'nda abonelikler düzenlenemedi | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can edit subscription assignments.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Yönetici portalı'nda abonelikler düzenlenemedi | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Yöneticiler abonelik atamaları düzenleme nasıl öğrenin.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Visual Studio abonelik atamalarını düzenlemek
 
+Bir abonelik Yöneticisi olarak kuruluşunuzdaki kişiler atanan abonelikleri değişiklik olanağına sahip.  Bu makalede yapabilir ve gerekli adımları sağlar değişiklik türleri açıklanmaktadır. 
+
 ## <a name="making-changes-to-subscriber-information"></a>Abone bilgisi değişiklikler
 Hataları düzeltin ya da bilgileri güncelleştirmek için bir abonenin bilgileri düzenleyebilirsiniz. 
-**Bir abonenin e-posta adresini düzenlemek tüm mevcut avantajları sıfırlanması neden olacak unutmayın.**
+> [!NOTE]
+> Bir abonenin e-posta adresi düzenlemek tüm mevcut avantajları sıfırlanması neden olacak.
 
 Bir abonenin düzenlemek için fare üzerine geldiğinizde abonenin e-posta adresi yanında görüntülenen üç noktaya (...) seçin. Bir açılır listesinde görünür.  Seçin **Düzenle** abonenin ayrıntılarını değiştirmek için. Düzen penceresini açmak üzere Izgara abonenin satırda çift tıklayabilirsiniz.
 
@@ -53,7 +56,7 @@ Toplu düzenleme işlemi aynı anda kullanarak birden çok aboneye düzenleyebil
 
     ![Bir lisans - düzenleme toplu düzenler karşıya dosya yükleme](_img\edit-license\edit-license-bulk-file-upload1.png)
 
-5.  Dosyayı yüklediğiniz sonra size başarılı olduğunu bildiren bir bildirim görürsünüz. 
+5.  Dosyayı yüklediğiniz sonra size başarılı olduğunu bildiren bir bildirim görürsünüz. Bu noktada, düzenlemeleriniz abone bilgileri yansıtılır. 
 
     ![Bir lisans - düzenleme toplu düzenler karşıya yükleme tamamlandı](_img\edit-license\edit-license-bulk-upload-complete.png)
 

@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8209e17985ef7f9924fc677b91b5cfe539977cb9
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 6d654cb3a7f0d0e952b447337603718c20eaee3e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Yönetilen kod için Kod Analizine genel bakış
 
@@ -33,11 +33,11 @@ Kod çözümleme projenizde el ile veya otomatik olarak çalıştırabilirsiniz.
 
 Kod çözümleme bir projeyi derleme her zaman çalıştırmak için seçin **etkinleştirmek Kod Analizi derlemede** projenin özellik sayfasındaki. Daha fazla bilgi için bkz: [nasıl yapılır: devre dışı otomatik kod analizini etkinleştirme ve](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Kod çözümleme el ile bir proje üzerinde çalıştırmak için menü çubuğundan seçin **Çözümle** > **Kod Analizi çalıştırmak** > **çalıştırmak kod çözümleme <project>** . Daha fazla bilgi için bkz: [nasıl yapılır: devre dışı otomatik kod analizini etkinleştirme ve](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Kod çözümleme el ile bir proje üzerinde çalıştırmak için menü çubuğundan seçin **Çözümle** > **Kod Analizi çalıştırmak** > **çalıştırmak kod çözümleme \<proje >**.
 
 ## <a name="rule-sets"></a>Kural kümeleri
 
-Yönetilen kod için Kod Analizi kurallarını halinde gruplandırılır *kural kümeleri*. Microsoft Standart kural kümeleri birini kullanabilir veya belirli bir gereksinimi karşılamak için özel bir kural oluşturabilirsiniz. Daha fazla bilgi için bkz: [kod çözümleme kurallarını gruplandırmak için kural kümeleri kullanma](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).
+Yönetilen kod için Kod Analizi kurallarını halinde gruplandırılır [kural kümeleri](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). Microsoft Standart kural kümeleri birini kullanabilir ya da yapabilecekleriniz [bir özel kural kümesi oluşturma](../code-quality/how-to-create-a-custom-rule-set.md) belirli bir gereksinimi karşılamak için.
 
 ## <a name="suppress-warnings"></a>Uyarıları bastırma
 
@@ -56,7 +56,7 @@ Public class MyClass
 Daha fazla bilgi için bkz: [uyarıları bastırma](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Bir proje için Visual Studio 2017 geçirirseniz, aniden zorlamayı bir kod çözümleme uyarıları sayısıyla karşılaştığı. Uyarıları gidermek ve Kod Analizi geçici olarak devre dışı istediğiniz hazır değilseniz, proje özellik sayfalarını açın (**proje** > ***proje* özellikler...** ) ve Git **Kod Analizi** sekmesi. Seçimini **etkinleştirmek Kod Analizi derlemede**ve projenizi yeniden derleyin. Alternatif olarak, farklı, daha küçük kural kodu çalıştırmak için kümesini seçebilirsiniz. Kod çözümleme uyarıları gidermek hazır olduğunuzda geri üzerinde açmayı unutmayın.
+> Bir proje için Visual Studio 2017 geçirirseniz, aniden çok sayıda kod analizi uyarıları karşılaştığı. Uyarıları gidermek ve hemen üretken olmak hazır değilseniz yapabilecekleriniz *temel* projenizin çözümleme durumu. Gelen **Çözümle** menüsünde, select **Kod Analizi çalıştırmak ve bastırmak etkin sorunlar**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Kod çözümleme iade ilkesi bir parçası olarak çalıştır
 

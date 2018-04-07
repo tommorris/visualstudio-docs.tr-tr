@@ -1,19 +1,19 @@
 ---
 title: İş ortaklarına Microsoft Partner Network (MPN) sunulan visual Studio abonelikleri
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/16/2018
-Ms.topic: Get-Started-Article
-Description: Details on what subscriptions are offered, what rules apply, and how many subscriptions are offered in MPN.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: f63185ac2a83557b3de5234c847f75f714829322
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/16/2018
+ms.topic: Get-Started-Article
+description: Ayrıntıları hangi abonelikleri sunulan, hangi kuralları geçerli ve kaç tane abonelikleri MPN sunulur.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 9593614b58f8f4c77ec24891cdb9ada33eac3e60
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>İş ortaklarına Microsoft Partner Network (MPN) sunulan visual Studio abonelikleri
 Kimin bir uzmanlığı kazanmak veya kimin MPN eylem paketinde satınalma iş ortakları, Visual Studio abonelikleri kullanmak uygundur. Bu abonelikleri kullanıcı başına lisanslanır ve yalnızca belirli bir iş ortağı şirket için çalışan kullanıcı adlandırılmış atanan olduğunda geçerlidir. 
@@ -21,7 +21,7 @@ Kimin bir uzmanlığı kazanmak veya kimin MPN eylem paketinde satınalma iş or
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>MPN uzmanlığına sahip iş ortakları için abonelikleri
 Düzey--bir iş ortağı uzmanlığı--kazandığı olduğunda da Gümüş veya altın ortakları Visual Studio Enterprise abonelik çekirdek sayısı kazanırsınız. Bu temel iş ortağı en az bir gold uzmanlığına kazandığı durumunda değişiklikler yararlanır. Visual Studio Enterprise abonelik için kabaca eşdeğerdir özel bir tekliftir [Visual Studio Enterprise yıllık bulut aboneliği](https://www.visualstudio.com/vs/pricing/), ancak (birçok sunulur ayrı olarak çok kaldırılan belirli avantajları İş ortakları genel MPN avantajları olarak yerine Visual Studio Enterprise abonelikleri bir parçası olarak MPN sunulur). 
 
-### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Çekirdek Visual Studio için herhangi bir türde en az bir uzmanlığı getirisi avantajı
+### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Herhangi bir türde en az bir uzmanlığı getirisi için Visual Studio avantajı çekirdek
 | Yalnızca Gümüş düzeyinde kazanılan yetkinlikleri               | Altın düzeyinde kazanılan en az bir uzmanlığı   | 
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 visual Studio Enterprise abonelikleri                   | 10 visual Studio Enterprise abonelikleri          |
@@ -55,12 +55,12 @@ Visual Studio Professional (MPN) aboneleri de indirin ve SQL Server Geliştirici
 
 Visual Studio Professional (MPN) abonelik VSTS avantajları, aylık Azure kredisi, teknik destek, eğitim veya ticari olarak sunulan Visual Studio abonelikleri ile kullanılabilir diğer abone Avantajlarınızı içermez.
 
-## <a name="internal-use-only-restriction"></a>Yalnızca dahili kullanım kısıtlaması
+## <a name="internal-use-only-restriction"></a>İç yalnızca kullanım kısıtlaması
 MPN kuralları programı teklifi yalnızca dahili olarak kullanılabilir olarak sunulan tüm yazılımların iznine. Bu, tek tek Visual Studio abonelerin kullanın ve genel MPN yazılım lisans yararları sunulan yazılım uygular. 
 
 Bu dahili yalnızca kullanım kısıtlaması temelde tarafların kendi kuruluşunuz dışındaki yaparlar iş parçası olarak iş ortaklarının yazılım kullanamayacağınız anlamına gelir. Bu nedenle ortak çalışanlar tarafından kullanılan bir uygulama oluşturmaya yalnızca sorun yoktur, ancak, istemci projesinin bir parçası olan bir uygulama oluşturmaya izin.
 
-## <a name="sign-in-required-with-visual-studio"></a>Visual Studio ile gerekli oturum açın
+## <a name="sign-in-required-with-visual-studio"></a>Oturum Visual Studio ile gerekli açma
 MPN sunulan Visual Studio aboneliklerle lisanslı kullanıcı için aynı kimlik/Visual Studio aboneliğini etkinleştirmek için kullanılan oturum açma kullanarak Visual Studio oturum gerekir. Ürün anahtarları ürün kilidini açmak için sunulmuyor, oturum açma Visual Studio çalıştırmak için tek seçenektir. Visual Studio abone çevrimdışı Visual Studio çalışmayı durduruyor önce en çok 30 gün boyunca çalışır. Çevrimiçi, Visual Studio sessizce çalışırken yenilemeleri kullanıcının lisans durumunu düzenli aralıklarla abonelik emin olmak için geçerlidir.
 
 ## <a name="resources"></a>Kaynaklar

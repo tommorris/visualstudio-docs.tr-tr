@@ -1,23 +1,23 @@
 ---
-title: "-Abone portalı kullanarak http://my.visualstudio.com | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/4/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the full range of benefits available to you on the Visual Studio subscriptions portal
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2c2939ff8b4d20f2db7dd736c6a0dee28785645c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: -Abone portalı kullanarak http://my.visualstudio.com | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/04/2018
+ms.topic: Get-Started-Article
+description: Visual Studio abonelikleri portalında kullanılabilir avantajları tam aralığını hakkında bilgi edinin
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cb6e33e442a5b4d63f4c1950df382da9a439643f
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>-Abone portalı kullanarak my. <span> </span>Visual Studio<span></span>.com
 
-Visual Studio abonelikleri Portal [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), tam aralığın Visual Studio aboneliğiniz ile sağlanan avantajlarından yararlanmak için hepsi bir arada kaynak. 
+Visual Studio abonelikleri Portal [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs), tam aralığın Visual Studio aboneliğiniz ile sağlanan avantajlarından yararlanmak için hepsi bir arada kaynak. 
 
 Portalı kullanarak aboneliğinizle ilişkili kimlik bilgilerinizle oturum gerektirir.  Bu, Microsoft hesabı (MSA) ya da size, işvereniniz ya da Okul gibi bir kuruluş tarafından sağlanan e-posta adresi olabilir.  Hakkında bilgi edinin [oturum açma](/visualstudio/subscriptions/signing-in).
 
@@ -29,7 +29,7 @@ Araçlar ve hizmetler aboneliğinizde yer alan "kutucukları olarak" avantajlar�
 ### <a name="tools"></a>Araçlar
 Araçlar kategori çekirdek geliştirme araçları, Visual Studio IDE, Visual Studio Team Services, yanı sıra, iş ortakları tarafından sağlanan araçları gibi burada bulabilirsiniz grubudur.  Azure ve Visual Studio Uygulama Merkezi gibi hizmetleri de görürsünüz.
 
-### <a name="professional-development"></a>Profesyonel geliştirme
+### <a name="professional-development"></a>Profesyonel Geliştirme
 Bu kategori, Microsoft ve tüm geliştirme becerilerinizi ilerleyin ve tüm öğeleri kodu gerisinde kalmak yardımcı olması için MSDN dergisi aboneliği yanı sıra ortaklarımızın çevrimiçi eğitim gibi fayda içerir.  
 
 ### <a name="support"></a>Destek

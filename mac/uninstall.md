@@ -1,17 +1,17 @@
 ---
-title: "Mac için Visual Studio kaldırma | Microsoft Docs"
-description: "Mac ve ilgili araçlar için Visual Studio kaldırmak için yönergeler."
+title: Mac için Visual Studio kaldırma | Microsoft Docs
+description: Mac ve ilgili araçlar için Visual Studio kaldırmak için yönergeler.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 193856ca96395db9a5b3bd494a5b8f1f7331f702
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: 985905c81acc5816c2b7a37debb4f5af3d93e94f
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Mac için Visual Studio kaldırma
 
@@ -158,12 +158,12 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 Eski sürümleri için aşağıdaki yapılar el ile kaldırmanız gerekir:
 
-* Çalışma kitapları uygulamaya Sil`"/Applications/Xamarin Workbooks.app"`
-* Inspector uygulamaya Sil`"Applications/Xamarin Inspector.app"`
-* Eklentileri silin: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` ve`"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
-* Inspector silin ve destek dosyaları burada: `/Library/Frameworks/Xamarin.Interactive.framework` ve`/Library/Frameworks/Xamarin.Inspector.framework`
+* Çalışma kitapları uygulamaya Sil `"/Applications/Xamarin Workbooks.app"`
+* Inspector uygulamaya Sil `"Applications/Xamarin Inspector.app"`
+* Eklentileri silin: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` ve `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
+* Inspector silin ve destek dosyaları burada: `/Library/Frameworks/Xamarin.Interactive.framework` ve `/Library/Frameworks/Xamarin.Inspector.framework`
 
-# <a name="uninstall-the-xamarin-profiler"></a>Xamarin profil oluşturucu kaldırma
+## <a name="uninstall-the-xamarin-profiler"></a>Xamarin profil oluşturucu kaldırma
 
 ```bash
 sudo rm -rf "/Applications/Xamarin Profiler.app"

@@ -1,25 +1,30 @@
 ---
-title: "Abonelik Yönetimi hakkında daha fazla bilgi nereden bulabilirim? | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/29/2017
-Ms.topic: Get-Started-Article
-Description: Find More Information About Subscription Management?
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: eca3bbc4c906639e1946776b17537480b816c32f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Abonelik Yönetimi hakkında bilgi edinin | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/13/2018
+ms.topic: Get-Started-Article
+description: Abonelik Yönetimi hakkında daha fazla bilgi
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: f3294d37202dd8a9454fdeb056f35b298fdba554
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="where-can-i-find-more-information-about-subscription-management"></a>Abonelik Yönetimi hakkında daha fazla bilgi nereden bulabilirim?
+# <a name="learn-about-subscription-management"></a>Abonelik Yönetimi hakkında bilgi edinin
 
-Abonelik Yönetimi özellikleri, Toplu Lisanslama hizmeti Merkezi (VLSC), bir Microsoft Product ve hizmetleri sözleşmesi (MPSA) aracılığıyla aboneliklerini veya Visual Studio bulut aboneliği satın alan müşteriler için kullanılabilir.  
+Abonelik Yönetimi özellikleri, bir Toplu Lisans Sözleşmesi'ni, Microsoft Product ve hizmetleri sözleşmesi (MPSA) aracılığıyla aboneliklerini veya Visual Studio bulut aboneliği satın alan müşteriler için kullanılabilir.  
 
-Farklı satın alma kanallar verildiğinde, abonelik yöneticileri kullanıcı kılavuzları ve uygun izinleri yararlanılabilir şekilde aboneliği nasıl temin bilmeniz önemlidir. 
+Farklı satın alma kanallar verildiğinde, abonelik yöneticileri uygun izinleri ve kullanıcı ayarı yararlanılabilir şekilde aboneliği nasıl temin bilmeniz önemlidir. Her anlaşma türünü erişme bulunabilir Yöneticiler ayarlamak nasıl öğrenmek için bilgi portalı bölümü. 
 
 Oluşturulan Visual Studio abonelikleri takım "Visual Studio [abonelikleri Yönetim Portalı](https://www.visualstudio.com/subscriptions-administration/)".  Abonelik hızla araçları ve yetenekleri atamak ve kuruluşlarında Aboneliklerini yönetmek için sahip oldukları anlamak tanıyabilmesine yardımcı olmak için bu portalı belirtilir. 
 
+Abonelik Yönetimi portalı gibi konularda bilgi alabilirsiniz:
+- Aboneliklerini Yönetme [abonelikleri Yönetim Portalı](https://manage.visualstudio.com).
+- Henüz Abonelik Yönetim Portalı'na geçirdiğiniz olmayan kuruluşlar için Toplu Lisans Hizmet Merkezi aracılığıyla aboneliklerini yönetme. 
+- Yeni portalına geçirme.
+- Diğer ipuçları ve püf noktaları abonelik yöneticileri için özel olarak.

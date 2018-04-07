@@ -50,6 +50,8 @@
 
 # [İş yükleri](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
+## [Azure](azure-workload.md)
+### [Bağlı Hizmetler](connected-services.md)
 ## [Unity Oyun Geliştirme](unity-tools.md)
 ### [Kurulum](setup-vsmac-tools-unity.md)
 ### [Unity Araçlarını Kullanma](using-vsmac-tools-unity.md)

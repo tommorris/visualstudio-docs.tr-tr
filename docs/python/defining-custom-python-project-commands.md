@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 755313a85c96c826335d390235477d76d68cd17f
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: a8e7f1f05ba6a93e696ee13e2f28305b8784d7c2
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Özel komutlar Python projeleri için tanımlama
 
@@ -50,7 +50,7 @@ Her özel komut Python dosyası, bir Python modülü, satır içi Python kodu, r
 
 Özel komutlar ile tanımak için bu bölümde Python.exe'yi kullanarak doğrudan bir projenin başlangıç dosyasını çalıştıran basit bir örnek anlatılmaktadır. (Bu tür bir komut etkili bir şekilde kullanarak aynıdır **hata ayıklama > hata ayıklama olmadan Başlat**.)
 
-1. "" Python uygulama"şablonu ile Python-CustomCommands" adlı yeni bir proje oluşturun. (Bkz [hızlı başlangıç: bir şablondan bir Python projesi oluşturma](quickstart-02-project-from-template.md) , zaten işlemle bilmiyorsanız yönergeler için.)
+1. "" Python uygulama"şablonu ile Python-CustomCommands" adlı yeni bir proje oluşturun. (Bkz [hızlı başlangıç: bir şablondan bir Python projesi oluşturma](quickstart-02-python-in-visual-studio-project-from-template.md) , zaten işlemle bilmiyorsanız yönergeler için.)
 
 1. İçinde `Python_CustomCommands.py`, aşağıdaki kodu ekleyip `print("Hello custom commands")`.
 
@@ -152,7 +152,7 @@ Tüm öznitelik değerleri büyük/küçük harfe duyarsızdır.
 | TargetType | Evet | Hangi hedef öznitelik içerir ve bağımsız değişkenler özniteliği ile birlikte nasıl kullanıldığını belirtir:<ul><li>**yürütülebilir**: bağımsız değişken değeri doğrudan komut satırında girdiyseniz gibi ekleme hedef adlı yürütülebilir dosyayı çalıştırmak. Değer bağımsız değişkenler olmadan yalnızca bir program adı içermelidir.</li><li>**komut dosyası**: çalıştırmak `python.exe` ile hedef dosya adını, ardından bağımsız değişkenleri değere sahip.</li><li>**Modül**: çalıştırmak `python -m` bağımsız değişkenleri değere sahip ve ardından hedef, modül adı ve ardından.</li><li>**kod**: hedef bulunan satır içi kod çalıştırın. Bağımsız değişken değeri yoksayılır.</li><li>**PIP**: çalıştırmak `pip` ExecuteIn ", ancak, PIP varsayar çıktısını almak için" ayarlanmış komut bağımsız değişkenleri tarafından; ardından hedefi içinde olduğu `install` komut ve hedef olarak paket adını kullanır.</li></ul> |
 | Hedef | Evet | Dosya adı, modül adı, kod veya TargetType bağlı olarak kullanılacak PIP komutu. |
 | Arguments | İsteğe Bağlı | Bir dize bağımsız değişkenleri, hedef vermek için (varsa) belirtir. TargetType olduğunda unutmayın `script`, bağımsız değişkenler Python programına verilmedi `python.exe`. İçin göz ardı `code` TargetType. |
-| ExecuteIn | Evet | Komutu çalıştırmak üzere ortam belirtir:<ul><li>**Konsol**: (varsayılan), hedef ve bağımsız değişkenler doğrudan komut satırında girilirse gibi çalışır. Hedef çalıştığından, sonra otomatik olarak kapatılır sırasında bir komut penceresi görünür.</li><li>**consolepause**: aynı bir konsol ancak bekler keypress için pencereyi önce.</li><li>**Çıktı**: çalıştırır hedef ve Visual Studio çıktı penceresinde sonuçlarını görüntüler. TargetType "PIP" ise, Visual Studio Paket adı olarak hedef kullanır ve bağımsız değişkenleri ekler.</li><li>**REPL**: çalıştırır hedef [Python etkileşimli pencere](interactive-repl.md); penceresinin başlık için kullanılan isteğe bağlı görünen adı.</li><li>**Hiçbiri**: konsolu ile aynı şekilde davranır.</li></ul>|
+| ExecuteIn | Evet | Komutu çalıştırmak üzere ortam belirtir:<ul><li>**Konsol**: (varsayılan), hedef ve bağımsız değişkenler doğrudan komut satırında girilirse gibi çalışır. Hedef çalıştığından, sonra otomatik olarak kapatılır sırasında bir komut penceresi görünür.</li><li>**consolepause**: aynı bir konsol ancak bekler keypress için pencereyi önce.</li><li>**Çıktı**: çalıştırır hedef ve Visual Studio çıktı penceresinde sonuçlarını görüntüler. TargetType "PIP" ise, Visual Studio Paket adı olarak hedef kullanır ve bağımsız değişkenleri ekler.</li><li>**REPL**: çalıştırır hedef [Python etkileşimli pencere](python-interactive-repl-in-visual-studio.md); penceresinin başlık için kullanılan isteğe bağlı görünen adı.</li><li>**Hiçbiri**: konsolu ile aynı şekilde davranır.</li></ul>|
 | Başlangıç | İsteğe Bağlı | Komutu çalıştırmak için klasör. |
 | ErrorRegex<br>WarningRegEx | İsteğe Bağlı | Yalnızca ExecuteIn olduğunda kullanılan `output`. Her iki değerin ile Visual Studio komut çıktısı hataları ve Uyarıları, hata listesi penceresini göster ayrıştırmak için normal bir ifadeyi belirtin. Belirtilmezse, komut hata listesi penceresini etkilemez. Bekliyor hangi Visual Studio hakkında daha fazla bilgi için bkz: [adlandırılmış yakalama grupları](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | İsteğe Bağlı | Bir paket için gereksinimleri listesi ile aynı biçimi kullanarak komutu [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). **Çalıştırmak PyLint** komutu, örneğin belirtir `pylint>=1.0.0`. Komutu çalıştırmadan önce Visual Studio listedeki tüm paketleri yüklü olup olmadığını denetler. Visual Studio PIP herhangi eksik paketleri yüklemek için kullanır. |

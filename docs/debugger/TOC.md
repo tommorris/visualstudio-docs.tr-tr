@@ -7,7 +7,7 @@
 ## [ASP.NET uygulamalarının hatalarını ayıklama](quickstart-debug-aspnet.md)
 # Öğreticiler
 ## [Visual Studio kullanarak hata ayıklamayı öğrenin](getting-started-with-the-debugger.md)
-## [Hata ayıklayıcıda Python kodu çalıştırma...](../python/vs-tutorial-01-04.md)
+## [Hata ayıklayıcıda Python kodu çalıştırma...](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Canlı bir Azure uygulamasında hata ayıklama](debug-live-azure-applications.md)
 ## [IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüleme](how-to-use-intellitrace-step-back.md)
 # Nasıl yapılır kılavuzları

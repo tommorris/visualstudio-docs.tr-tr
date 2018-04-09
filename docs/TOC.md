@@ -53,6 +53,7 @@
 ## [Python: Web Uygulaması Oluşturma](ide/quickstart-python.md)
 ## [Node.js: Web Uygulaması Oluşturma](ide/quickstart-nodejs.md)
 ## [C#: Web Uygulaması Oluşturma](ide/quickstart-aspnet-core.md)
+## [C#: UWP Uygulaması Oluşturma](ide/quickstart-uwp-csharp.md)
 ## [Visual Basic: Konsol Uygulaması Oluşturma](ide/quickstart-visual-basic-console.md)
 # Öğreticiler
 ## [Visual Studio’da C++...](/cpp/build/vscpp-step-0-installation)

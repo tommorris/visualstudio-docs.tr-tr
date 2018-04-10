@@ -15,10 +15,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 4caa011bb0c7cdea3f9a1eed9e2eeb4adb089eb4
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü
 Android için Visual Studio öykünücüsü bir Android cihaz öykünen bir masaüstü uygulamasıdır. Hata ayıklama ve bir fiziksel aygıt olmadan Android uygulamalarını test sanallaştırılmış bir ortam sağlar. Ayrıca, uygulama prototipleri için yalıtılmış bir ortam sağlar.  

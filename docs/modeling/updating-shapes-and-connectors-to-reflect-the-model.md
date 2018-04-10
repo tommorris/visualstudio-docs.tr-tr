@@ -1,9 +1,9 @@
 ---
-title: "Şekiller ve bağlayıcılar modeli yansıtacak şekilde güncelleştirme | Microsoft Docs"
-ms.custom: 
+title: Şekiller ve bağlayıcılar modeli yansıtacak şekilde güncelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 6d50d0258a44553451deed68a8ccf17c60d88965
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Modeli Yansıtacak Şekilleri ve Bağlayıcıları Güncelleştirme
 Bir etki alanına özgü dilde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], temel alınan model durumunu yansıtacak bir şekli görünümünü yapabilirsiniz.  
@@ -110,7 +110,7 @@ partial class MyLanguageDiagram
   
  Bu yöntem, hem etki alanı özellikleri ve şeklin boyutunu gibi deposu olmayan özellikler için kullanılabilir.  
   
-##  <a name="OnAssociatedProperty"></a>Diğer bir şekli özelliklerini güncelleştirmek için AssociateValueWith() kullanın  
+##  <a name="OnAssociatedProperty"></a> Diğer bir şekli özelliklerini güncelleştirmek için AssociateValueWith() kullanın  
  Şeklin gölge ya da bir bağlayıcı ok stilini sahip olup olmadığı gibi bazı özellikler için özellik bir etki alanı özelliği olarak gösterme yerleşik bir yöntem yoktur.  Bu tür özellikleri için değişiklikler hareket sistemi denetiminde değildir. Bu nedenle, bunları güncelleştirmek uygun değil kullanıcı Undo komutu gerçekleştirdiğinde kuralları çağrılmaz kurallarını kullanarak.  
   
  Bunun yerine, gibi özellikleri kullanarak güncelleştirebileceğinizi <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. Aşağıdaki örnekte, bir bağlayıcı ok stilini ilişkisinde, bağlayıcı görüntüler bir etki alanı özellik değeri tarafından denetlenir:  
@@ -154,6 +154,6 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()`kaydetmek istediğiniz her bir etki alanı özellik için bir kez çağrılmalıdır. Bunu çağrıldıktan sonra belirtilen özellik değişiklikleri çağıracak `OnAssociatedPropertyChanged()` , özelliğin model öğesi sunan şekilleri içinde.  
+ `AssociateValueWith()` kaydetmek istediğiniz her bir etki alanı özellik için bir kez çağrılmalıdır. Bunu çağrıldıktan sonra belirtilen özellik değişiklikleri çağıracak `OnAssociatedPropertyChanged()` , özelliğin model öğesi sunan şekilleri içinde.  
   
  Bu çağrı gerekli değildir `AssociateValueWith()` her örneği için. InitializeResources örnek yöntemi olsa da, her shape sınıfı için yalnızca bir kez çağrılır.

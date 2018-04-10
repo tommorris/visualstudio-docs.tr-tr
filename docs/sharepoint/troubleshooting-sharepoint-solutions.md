@@ -1,12 +1,12 @@
 ---
-title: "SharePoint çözümlerinde sorun giderme | Microsoft Docs"
-ms.custom: 
+title: SharePoint çözümlerinde sorun giderme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>SharePoint Çözümlerinde Sorun Giderme
   Aşağıdaki sorunları veya uyarıları kullanarak SharePoint çözümlerini hata ayıklarken oluşabilecek [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı. Daha fazla bilgi için bkz: [hata ayıklama SharePoint 2007 iş akışı çözümleri](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/10/2018
  İçeri aktarılan liste örneği yeniden adlandırın ve ardından çalışmasında Bu sorun oluşur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ### <a name="error-message"></a>Hata İletisi  
- Yapı hatası: hata oluştu 'Özellikleri etkinleştir' dağıtım adımda: Template\Features dosya\\[*projeyi alın**özelliği**adı*] \Files\Lists \\[*eski**listesi adı*] \Schema.xml mevcut değil.  
+ Yapı hatası: hata oluştu 'Özellikleri etkinleştir' dağıtım adımda: Template\Features dosya\\[*projeyi alın**özelliği**adı*] \Files\Lists\\[*eski ** listesi adı*] \Schema.xml mevcut değil.  
   
 ### <a name="resolution"></a>Çözüm  
  Bir liste örneği içe aktardığınızda, CustomSchema adlı bir öznitelik listesi örneği Elements.xml dosyasına eklenir. Elements.XML liste örneği için özel bir schema.xml yolunu içerir. Ne zaman yeniden adlandırmadan Listesi örneğinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]özel schema.xml dağıtım yol değiştirir, ancak CustomSchema özniteliğinin yol değeri güncelleştirilmez. Sonuç olarak, liste örneği özelliği etkinleştirildiğinde CustomSchema özniteliği tarafından belirtilen eski yolunda schema.xml dosyası bulunamıyor.  

@@ -1,12 +1,12 @@
 ---
-title: "Araç kutusu, bileşenler sekmesi | Microsoft Docs"
-ms.custom: 
+title: Araç kutusu, bileşenler sekmesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Components tab
@@ -16,10 +16,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: aa91db706d7e1236162ef69e6fd31e791ed44dbb
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="toolbox-components-tab"></a>Araç Kutusu, Bileşenler Sekmesi
 
@@ -60,7 +60,7 @@ Visual Basic ve C# tasarımcıları ekleyebilirsiniz bileşenleri görüntüler.
  **İşlem**  
  Oluşturur bir <xref:System.Diagnostics.Process> bileşen örneği durdurun, başlatın ve sisteminizdeki işlemlerle ilişkili verileri işlemek için kullanabilirsiniz.
   
- **SerialPort**  
+ **Seri bağlantı noktası**  
  Oluşturur bir `System.IO.Ports.SerialPort` zaman uyumlu ve olay denetimli g/ç, PIN ve sonu durumları için erişim ve seri sürücü özelliklerine erişimi sağlayan bileşen örneği.  
   
  **ServiceController**  

@@ -1,9 +1,9 @@
 ---
-title: "Öğe oluşturma ve taşıma özelleştirme | Microsoft Docs"
-ms.custom: 
+title: Öğe oluşturma ve taşıma özelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Öğe Oluşturma ve Hareketini Özelleştirme
 Bir öğenin başka araç veya bir Yapıştır sürüklenen veya taşıma işlemi için izin verebilirsiniz. Belirttiğiniz ilişkilerini kullanarak hedef öğelerine bağlı taşınan öğeler bulunabilir.  
@@ -50,7 +50,7 @@ Bir öğenin birleştirme yönergesi rolü
 ## <a name="defining-an-element-merge-directive"></a>Bir öğenin birleştirme yönergesi tanımlama  
  Etki alanı sınıfları, etki alanı ilişkilerini, şekiller, bağlayıcılar ve diyagramları öğesi birleştirme yönergeleri ekleyebilirsiniz. Ekleyebilir veya bunları DSL Gezgini'nde alıcı etki alanı sınıfının altında bulun. Alıcı sınıfı modelinde ve yeni ya da kopyalanan öğesi birleştirilecek üzerine zaten öğenin etki alanı sınıftır.  
   
- ![DSL &#45; EMD &#95; Ayrıntılar](../modeling/media/dsl-emd_details.png "DSL EMD_Details")  
+ ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
   
  **Dizin sınıfı** alıcı sınıfı üyeleri birleştirilebilir öğelerinin etki alanı sınıftır. Alt sınıfların dizin oluşturma sınıfının örneklerini de birleştirilir bu EMD tarafından ayarladığınız sürece **alt sınıfların uygulandığı** false.  
   

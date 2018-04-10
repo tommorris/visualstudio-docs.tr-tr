@@ -1,9 +1,9 @@
 ---
 title: DSL kodu anlama | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, generated code
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 41cf1f19e03c1197c6266b5057af993b677c9c53
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="understanding-the-dsl-code"></a>DSL Kodunu Anlama
 Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL örneklerini güncellemek için kullanabileceğiniz bir API üretir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bu API DSL tanımından oluşturulan kodda tanımlanır. Bu konuda oluşturulan API açıklanmaktadır.  
@@ -59,7 +59,7 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL örneklerini güncel
 ## <a name="generated-files-in-dsl"></a>Dsl oluşturulan dosyaları  
  Aşağıdaki oluşturulan dosyaları görünür **Dsl** projesi.  
   
- *YourDsl*`Schema.xsd`  
+ *YourDsl* `Schema.xsd`  
   
  DSL örneklerini içeren dosyalar için şema. Bu dosya için derleme kopyalanır (**bin**) dizini. DSL yüklediğinizde, bu dosyaya kopyalayabilirsiniz **\Program Visual Studio 11.0\Xml\Schemas** böylece model dosyalarında doğrulanabilir. Daha fazla bilgi için bkz: [etki alanına özgü dil çözümleri dağıtma](../modeling/deploying-domain-specific-language-solutions.md).  
   
@@ -85,7 +85,7 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL örneklerini güncel
   
  `Connectors.cs`  
   
- Genellikle başvuru ilişkileri gösteren diyagram öğeler bağlayıcıları için sınıflar içerir. Her sınıf DSL tanımındaki bir bağlayıcı oluşturulur. Öğesinden türetilen her bağlayıcı sınıfı<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>  
+ Genellikle başvuru ilişkileri gösteren diyagram öğeler bağlayıcıları için sınıflar içerir. Her sınıf DSL tanımındaki bir bağlayıcı oluşturulur. Öğesinden türetilen her bağlayıcı sınıfı <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>  
   
  Rengi ve başka bazı stil özellikleri değişken çalışma zamanında kullanabilmek için DSL tanımı diyagramında sınıfı sağ tıklatın ve işaret **eklemek açığa**.  
   
@@ -180,7 +180,7 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL örneklerini güncel
   
  Rengi ve başka bazı stil özellikleri değişken çalışma zamanında kullanabilmek için DSL tanımı diyagramında sınıfı sağ tıklatın ve işaret **eklemek açığa**.  
   
- Çalışma zamanında ek stil özellikleri değişken olmak için örneğin bakın <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> ve<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>  
+ Çalışma zamanında ek stil özellikleri değişken olmak için örneğin bakın <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> ve <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>  
   
  `ToolboxHelper.cs`  
   

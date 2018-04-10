@@ -1,11 +1,11 @@
 ---
-title: "AL (derleme bağlayıcı) görevi | Microsoft Docs"
-ms.custom: 
+title: AL (derleme bağlayıcı) görevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AL
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - AL task [MSBuild]
 - MSBuild, AL task
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
-caps.latest.revision: 
+caps.latest.revision: 22
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d9d3b433e7ae14603a41b7ad802ff386c7aac52
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="al-assembly-linker-task"></a>AL (Derleme Bağlayıcı) Görevi
 AL görevi AL.exe, ile dağıtılmış bir aracı sarmalar [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Bu derleme bağlayıcı aracı, bir derlemeyi ya da modüller bir veya daha fazla dosya veya kaynak dosyaları bildirimden oluşturmak için kullanılır. Bu görevi doğrudan kullanmak gerekli olan genelde şekilde derleyicileri ve geliştirme ortamlarını zaten bu yetenekleri sağlayabilir. Derleme Bağlayıcı tek bir derleme karışık dil geliştirme üretilen olanlar gibi birden çok bileşen dosyaları oluşturmak ihtiyaç duyan geliştiriciler için kullanışlıdır. Bu görev, bir tek derleme dosyasına modülleri birleştirmek değil; tek tek modülleri hala dağıtılmış ve doğru bir şekilde yüklemek sonuçta elde edilen derleme sırada kullanılabilir olması gerekir. AL.exe hakkında daha fazla bilgi için bkz: [Al.exe (derleme bağlayıcı)](/dotnet/framework/tools/al-exe-assembly-linker).  
@@ -44,7 +44,7 @@ AL görevi AL.exe, ile dağıtılmış bir aracı sarmalar [!INCLUDE[winsdklong]
 |`Configuration`|İsteğe bağlı `String` parametresi.<br /><br /> Bir dize belirtir `Configuration` derlemesindeki alan. Daha fazla bilgi için belgelerine bakın `/config[uration]` seçeneğini [Al.exe (derleme bağlayıcı)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Copyright`|İsteğe bağlı `String` parametresi.<br /><br /> Bir dize belirtir `Copyright` derlemesindeki alan. Daha fazla bilgi için belgelerine bakın `/copy[right]` seçeneğini [Al.exe (derleme bağlayıcı)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Culture`|İsteğe bağlı `String` parametresi.<br /><br /> Derleme ile ilişkilendirilecek için kültür dizeyini belirtir. Daha fazla bilgi için belgelerine bakın `/c[ulture]` seçeneğini [Al.exe (derleme bağlayıcı)](/dotnet/framework/tools/al-exe-assembly-linker).|  
-|`DelaySign`|İsteğe bağlı `Boolean` parametresi.<br /><br /> `true`yalnızca ortak anahtar derlemede yerleştirmek için; `false` tam olarak derlemeyi imzalamak için. Daha fazla bilgi için belgelerine bakın `/delay[sign]` seçeneğini [Al.exe (derleme bağlayıcı)](/dotnet/framework/tools/al-exe-assembly-linker).|  
+|`DelaySign`|İsteğe bağlı `Boolean` parametresi.<br /><br /> `true` yalnızca ortak anahtar derlemede yerleştirmek için; `false` tam olarak derlemeyi imzalamak için. Daha fazla bilgi için belgelerine bakın `/delay[sign]` seçeneğini [Al.exe (derleme bağlayıcı)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Description`|İsteğe bağlı `String` parametresi.<br /><br /> Bir dize belirtir `Description` derlemesindeki alan. Daha fazla bilgi için belgelerine bakın `/descr[iption]` seçeneğini [Al.exe (derleme bağlayıcı)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`EmbedResources`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Belirtilen kaynakları içeren derleme bildirimi görüntüyü katıştırır. Bu görev görüntüsüne kaynak dosyasının içeriği kopyalar. Bu parametreye geçirilen öğeleri iliştirilmiş adlı isteğe bağlı meta veriler olabilir `LogicalName` ve `Access`. `LogicalName` Meta veri kaynağı için iç tanımlayıcı belirtmek için kullanılır.  `Access` Meta verileri ayarlanabilir `private` kaynak diğer derlemelerden görünür yapmak için. Daha fazla bilgi için belgelerine bakın `/embed[resource]` seçeneğini [Al.exe (derleme bağlayıcı)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`EvidenceFile`|İsteğe bağlı `String` parametresi.<br /><br /> Derleme kaynak adı ile belirtilen dosya katıştırır `Security.Evidence`.<br /><br /> Kullanamazsınız `Security.Evidence` normal kaynaklar için. Bu parametre karşılık gelen `/e[vidence]` seçeneğini [Al.exe (derleme bağlayıcı)](/dotnet/framework/tools/al-exe-assembly-linker).|  

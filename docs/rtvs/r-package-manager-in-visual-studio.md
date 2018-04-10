@@ -1,15 +1,15 @@
 ---
-title: "Paket Yöneticisi'nde Visual Studio için R araçları | Microsoft Docs"
-description: "R paketi Yöneticisi'ni yüklemek için Visual Studio ve Yöneticisi R paketleri kullanma"
-ms.custom: 
+title: Paket Yöneticisi'nde Visual Studio için R araçları | Microsoft Docs
+description: R paketi Yöneticisi'ni yüklemek için Visual Studio ve Yöneticisi R paketleri kullanma
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: kraigb
 ms.author: kraigb
@@ -17,10 +17,10 @@ manager: ghogen
 ms.workload:
 - data-science
 ms.openlocfilehash: 14948b0680e570e9045d724ae00adb67bd6b19cd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="package-manager"></a>Paket Yöneticisi
 
@@ -47,5 +47,5 @@ Paket Yöneticisi üç sekme bulunur. Her sekme sol tarafta ilgili paketlerin li
 
 Paketleri aşağıdaki konumlara yüklenir:
 
-- RTVS ile birlikte çekirdek paketleri yüklenir`C:\Program Files\Microsoft\R Client\R_SERVER\library`
-- Ek paketler için yüklenir`%userprofile%\Documents\R\win-library\3.3`
+- RTVS ile birlikte çekirdek paketleri yüklenir `C:\Program Files\Microsoft\R Client\R_SERVER\library`
+- Ek paketler için yüklenir `%userprofile%\Documents\R\win-library\3.3`

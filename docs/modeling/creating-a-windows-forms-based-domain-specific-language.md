@@ -1,9 +1,9 @@
 ---
-title: "Windows Forms tabanlı bir etki alanına özgü dil oluşturma | Microsoft Docs"
-ms.custom: 
+title: Windows Forms tabanlı bir etki alanına özgü dil oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows Forms Tabanlı Etki Alanına Özgü Dil Oluşturma
 Windows Formları DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) modeli durumunu görüntülemek için kullanabilirsiniz. Bu konu size kılavuzluk bir Windows formunda bir DSL bağlama, kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görselleştirme ve modelleme SDK.  
@@ -53,9 +53,9 @@ Bir Windows formu kullanıcı Arabirimi ve model Gezgini gösteren bir DSL örne
   
  Ana örneğindeki [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aşağıdaki noktaları DSL çözümü hakkında dikkat edin:  
   
--   `DslDefinition.dsl`hiçbir diyagramı öğeleri içerir. Bu DSL örneği modellerinin görüntülemek için DSL diyagramları kullanmayacak olmasıdır. Bunun yerine, bir Windows formunda modele bağlarsınız ve formda öğeleri model görüntüler.  
+-   `DslDefinition.dsl` hiçbir diyagramı öğeleri içerir. Bu DSL örneği modellerinin görüntülemek için DSL diyagramları kullanmayacak olmasıdır. Bunun yerine, bir Windows formunda modele bağlarsınız ve formda öğeleri model görüntüler.  
   
--   Ek olarak `Dsl` ve `DslPackage` projeleri, çözümü içeren adlı üçüncü projesi `UI.` **UI** projesi bir Windows Forms denetimi tanımını içerir. `DslPackage`bağımlı `UI`, ve `UI` bağlıdır `Dsl`.  
+-   Ek olarak `Dsl` ve `DslPackage` projeleri, çözümü içeren adlı üçüncü projesi `UI.` **UI** projesi bir Windows Forms denetimi tanımını içerir. `DslPackage` bağımlı `UI`, ve `UI` bağlıdır `Dsl`.  
   
 -   İçinde `DslPackage` projesi `UI\DocView.cs` tanımlanan Windows Forms denetimi görüntüler kodunu içerir `UI` projesi.  
   
@@ -88,9 +88,9 @@ Bir Windows formu kullanıcı Arabirimi ve model Gezgini gösteren bir DSL örne
   
 4.  Kullanım **adlı etki alanı sınıf** aracı aşağıdaki etki alanı sınıfları oluşturmak için:  
   
-    -   `Field`-Bu adlı bir ek etki alanı özellik size `Size`.  
+    -   `Field` -Bu adlı bir ek etki alanı özellik size `Size`.  
   
-    -   `Animal`-Özellikler penceresinde ayarlayın **devralma değiştiricisi** için **soyut**.  
+    -   `Animal` -Özellikler penceresinde ayarlayın **devralma değiştiricisi** için **soyut**.  
   
 5.  Kullanım **etki alanı sınıfı** aracı aşağıdaki sınıflar oluşturmak için:  
   
@@ -130,7 +130,7 @@ Bir Windows formu kullanıcı Arabirimi ve model Gezgini gösteren bir DSL örne
   
      Özellikler ve ilişkiler modeli sınıfınızın veri kaynakları penceresinde görünür.  
   
-     ![DslWpf &#45; 3](../modeling/media/dslwpf-3.png "DslWpf-3")  
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")  
   
 #### <a name="to-connect-your-model-to-a-form"></a>Forma modelinizi bağlanmak için  
   
@@ -148,7 +148,7 @@ Bir Windows formu kullanıcı Arabirimi ve model Gezgini gösteren bir DSL örne
   
      Denetimleri kümesini görünür, her bir özellik için bir tane. İlişki özelliklerini denetimleri oluşturmaz.  
   
-5.  Delete **farmBindingNavigator**. Bu da otomatik olarak üretildi `FarmControl` Tasarımcısı, ancak bu uygulama için yararlı değildir.  
+5.  Silme **farmBindingNavigator**. Bu da otomatik olarak üretildi `FarmControl` Tasarımcısı, ancak bu uygulama için yararlı değildir.  
   
 6.  Araç kutusu kullanarak oluşturduğunuz iki örneğini **DataGridView**ve bunları `AnimalGridView` ve `FieldGridView`.  
   
@@ -223,7 +223,7 @@ Veri kaynakları ve görünümler arasında bağlantılar şema.
   
 3.  İçinde **FarmApp Explorer**, kısayol menüsünü açmak **grubu** kök düğümü ve seçin **ekleme yeni Goat**.  
   
-     `Goat1`görünür **hayvanlar** görünümü.  
+     `Goat1` görünür **hayvanlar** görünümü.  
   
     > [!WARNING]
     >  Kısayol menüsünün kullanmanız gerekir **grubu** düğümü değil **hayvanlar** düğümü.  

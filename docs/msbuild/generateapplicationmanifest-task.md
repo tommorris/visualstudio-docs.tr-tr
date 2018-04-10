@@ -26,10 +26,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 76a2fc5e184b566e0c9783f6f64beecc7ca882a2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest Görevi
 Oluşturan bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi ya da yerel bir bildirim. Yerel bir bildirim bileşen için benzersiz bir kimlik tanımlayarak ve tüm derlemeleri ve yedekleme bileşeni olun dosyaları tanımlayan bir bileşen açıklar. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi uygulamanın giriş noktası belirten ve uygulama güvenlik düzeyi belirterek yerel bir bildirim genişletir.  
@@ -81,10 +81,10 @@ Oluşturan bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 |Meta veri adı|Açıklama|  
 |-------------------|-----------------|  
 |`DependencyType`|Bağımlılık yayımlanan ve uygulama veya bir önkoşulu yüklü olup olmadığını gösterir. Bu meta veriler için tüm bağımlılıkların geçerlidir, ancak dosyaları için kullanılmaz. Bu meta verileri için kullanılabilir değerler şunlardır:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Yükleme varsayılan değerdir.|  
-|`AssemblyType`|Bağımlılık yönetilen olup veya yerel bir derleme gösterir. Bu meta veriler için tüm bağımlılıkların geçerlidir, ancak dosyaları için kullanılmaz. Bu meta verileri için kullanılabilir değerler şunlardır:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified`Bildirim oluşturucu derleme türü otomatik olarak belirler gösteren varsayılan değerdir.|  
+|`AssemblyType`|Bağımlılık yönetilen olup veya yerel bir derleme gösterir. Bu meta veriler için tüm bağımlılıkların geçerlidir, ancak dosyaları için kullanılmaz. Bu meta verileri için kullanılabilir değerler şunlardır:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` Bildirim oluşturucu derleme türü otomatik olarak belirler gösteren varsayılan değerdir.|  
 |`Group`|Ek dosyalar isteğe bağlı indirme için grubu gösterir. Grup adı uygulama tarafından tanımlanır ve herhangi bir dize olabilir. Boş bir dize dosyanın varsayılan yükleme bir grubun parçası olduğunu gösterir. Dosyaları bir gruptaki ilk uygulama indirme bir parçasıdır. Açıkça kullanılarak uygulama tarafından istendiğinde, bir grup içindeki dosyaları karşıdan yalnızca <xref:System.Deployment.Application>.<br /><br /> Bu meta veriler tüm dosyalar için geçerli nerede `IsDataFile` olan `false` ve tüm bağımlılıkları nerede `DependencyType` olan `Install`.|  
 |`TargetPath`|Yolun oluşturulan bildiriminde nasıl tanımlanmalıdır belirtir. Bu öznitelik tüm dosyalar için geçerli değil. Bu özniteliği belirtilmezse, öğesi belirtimi kullanılır. Bu öznitelik tüm dosyaları ve bağımlılıkları olan geçerli bir `DependencyType` değerini `Install`.|  
-|`IsDataFile`|A `Boolean` dosyayı bir veri dosyası olup olmadığını gösteren meta veri değeri. Uygulama güncelleştirmeleri arasında geçiş, bir veri dosyası özeldir. Bu meta veriler yalnızca dosyalar için geçerlidir. `False`varsayılan değerdir.|  
+|`IsDataFile`|A `Boolean` dosyayı bir veri dosyası olup olmadığını gösteren meta veri değeri. Uygulama güncelleştirmeleri arasında geçiş, bir veri dosyası özeldir. Bu meta veriler yalnızca dosyalar için geçerlidir. `False` varsayılan değerdir.|  
   
 ## <a name="example"></a>Örnek  
  Bu örnekte `GenerateApplicationManifest` oluşturmak için görev bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi ve `GenerateDeploymentManifest` tek bir derleme olan bir uygulama için dağıtım bildirimi oluşturmak için görev. Daha sonra kullanır `SignFile` bildirimlerini imzalamak için görev.  

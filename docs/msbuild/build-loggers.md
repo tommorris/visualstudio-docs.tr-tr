@@ -1,28 +1,28 @@
 ---
-title: "Günlükçüleri derleme | Microsoft Docs"
-ms.custom: 
+title: Günlükçüleri derleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, writing loggers
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
-caps.latest.revision: 
+caps.latest.revision: 11
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d059cd9b9b108d9feba4c3878a3efc42c4f1403c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="build-loggers"></a>Günlükçüleri Derleme
 Günlükçüleri yapınızın çıktısını özelleştirmek ve belirli yapı olaylarına yanıt olarak iletileri, hatalar veya uyarılar görüntülemek bir yol sağlar. Her Günlükçü uygulayan bir .NET sınıfı olarak uygulanan <xref:Microsoft.Build.Framework.ILogger> Microsoft.Build.Framework.dll derlemede tanımlanan arabirimi.  
@@ -31,7 +31,7 @@ Günlükçüleri yapınızın çıktısını özelleştirmek ve belirli yapı ol
   
 -   Uygulama <xref:Microsoft.Build.Framework.ILogger> doğrudan arabirim.  
   
--   Sınıfınızda yardımcı sınıfından türetilen <xref:Microsoft.Build.Utilities.Logger>, Microsoft.Build.Utilities.dll derlemede tanımlanmış. <xref:Microsoft.Build.Utilities.Logger>uygulayan <xref:Microsoft.Build.Framework.ILogger> ve bazı varsayılan uygulamalarını sağlar <xref:Microsoft.Build.Framework.ILogger> üyeleri.  
+-   Sınıfınızda yardımcı sınıfından türetilen <xref:Microsoft.Build.Utilities.Logger>, Microsoft.Build.Utilities.dll derlemede tanımlanmış. <xref:Microsoft.Build.Utilities.Logger> uygulayan <xref:Microsoft.Build.Framework.ILogger> ve bazı varsayılan uygulamalarını sağlar <xref:Microsoft.Build.Framework.ILogger> üyeleri.  
   
  Bu konuda türetilen basit bir Günlükçü yazma açıklanacaktır <xref:Microsoft.Build.Utilities.Logger>, ve derleme olaylarını konsolunda yanıt olarak belirli iletileri görüntüler.  
   

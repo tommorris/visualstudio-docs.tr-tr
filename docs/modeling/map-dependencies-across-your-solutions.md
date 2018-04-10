@@ -32,10 +32,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: aea44beeb2a8e6380bd9a568acdece79873e3050
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Çözümlerinizdeki bağımlılıkları eşleme
 
@@ -128,7 +128,7 @@ Kodunuz boyunca bağımlılıkları anlamak istediğinizde, kod haritalarını o
 
 2.  Kullanım **gösterge** düğmesini proje türü simgeler (örneğin, Test, Web ve telefon Proje), Listesi'ni göster veya gizle için kod Haritası araç çubuğundaki kod öğeleri (örneğin, sınıfları, yöntemleri ve özellikleri) ve ilişki türleri (örneğin, devralır gelen Uygular ve çağrıları).  
 
-     ![Üst&#45;düzeyi bağımlılık grafiğinin derlemelerin](../modeling/media/dependencygraph_toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
+     ![Top&#45;level dependency graph of assemblies](../modeling/media/dependencygraph_toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
 
      Bu örnek bir çözüm çözüm klasörleri içerir (**testleri** ve **bileşenleri**), Test projeleri, Web projeleri ve derlemeler. Varsayılan olarak tüm kapsama ilişkileri görünür *grupları*, genişletme ve daraltma. **Externals** grubu platform bağımlılıklar dahil olmak üzere çözümünüzü dışında her şeyi içerir. Dış derlemeler yalnızca kullanılan öğeleri gösterir. Varsayılan olarak, sistem temel türleri görünmesine eşlemek gizlenir.  
 

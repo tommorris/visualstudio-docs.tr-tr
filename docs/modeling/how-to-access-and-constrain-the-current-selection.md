@@ -1,9 +1,9 @@
 ---
-title: "Nasıl yapılır: erişmek ve geçerli seçim sınırlamak | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: erişmek ve geçerli seçim sınırlamak | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, accessing the current selection
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 81036e04abc9eac2cbed2879839e95cce52166fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Nasıl yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama
 Etki alanına özgü dil için bir komut veya hareket işleyicisi yazdığınızda, kullanıcı sağ hangi öğe belirleyebilirsiniz. Ayrıca bazı şekiller veya alanlar seçilmesini engelleyebilirsiniz. Örneğin, kullanıcı bir simge oluşturma öğesi tıkladığında, içerdiği şekli yerine seçili düzenleyebilirsiniz. Bu şekilde seçim sınırlama yazmak zorunda işleyicileri sayısını azaltır. Ayrıca, herhangi bir yere şeklinde oluşturma öğesi kaçının gerek kalmadan tıklatabilirsiniz kullanıcıya, kolaylaştırır.  
@@ -33,14 +33,14 @@ Etki alanına özgü dil için bir komut veya hareket işleyicisi yazdığınız
   
     |Üye|Açıklama|  
     |------------|-----------------|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A>yöntemi|Döndürür `true` herhangi bir modeli Tasarımcısı'nda seçili ise, bir bölme şekli; Aksi halde, `false`.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>yöntemi|Döndürür `true` diyagram modeli Tasarımcısı'nda seçilen; Aksi takdirde ise `false`.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>yöntemi|Döndürür `true` tam olarak bir öğe, model Tasarımcısı'nda seçilen Aksi takdirde `false`.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>yöntemi|Döndürür `true` tam olarak bir öğe varsa etkin penceresinde seçili; Aksi takdirde `false`.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>özelliği|Modeli Tasarımcısı'nda seçili öğe salt okunur bir koleksiyonunu alır.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>özelliği|Etkin penceresinde seçili öğe salt okunur bir koleksiyonunu alır.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>özelliği|Seçimi birincil öğenin modeli Tasarımcısı'nda alır.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>özelliği|Seçimin birincil öğe Etkin pencerede alır.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A> Yöntemi|Döndürür `true` herhangi bir modeli Tasarımcısı'nda seçili ise, bir bölme şekli; Aksi halde, `false`.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A> Yöntemi|Döndürür `true` diyagram modeli Tasarımcısı'nda seçilen; Aksi takdirde ise `false`.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A> Yöntemi|Döndürür `true` tam olarak bir öğe, model Tasarımcısı'nda seçilen Aksi takdirde `false`.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A> Yöntemi|Döndürür `true` tam olarak bir öğe varsa etkin penceresinde seçili; Aksi takdirde `false`.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> Özelliği|Modeli Tasarımcısı'nda seçili öğe salt okunur bir koleksiyonunu alır.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> Özelliği|Etkin penceresinde seçili öğe salt okunur bir koleksiyonunu alır.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> Özelliği|Seçimi birincil öğenin modeli Tasarımcısı'nda alır.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> Özelliği|Seçimin birincil öğe Etkin pencerede alır.|  
   
 2.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> Özelliği <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> sınıfı erişim sağlar <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> modeli Tasarımcısı penceresi temsil eder ve seçilen öğeleri modeli Tasarımcısı'nda ek erişim sağlayan nesne.  
   

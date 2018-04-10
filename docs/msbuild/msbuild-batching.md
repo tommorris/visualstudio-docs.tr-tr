@@ -1,27 +1,27 @@
 ---
-title: "MSBuild toplu işleme | Microsoft Docs"
-ms.custom: 
+title: MSBuild toplu işleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
-caps.latest.revision: 
+caps.latest.revision: 9
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 4411b82fc5a86e4f3eeae965fefd65e2c38d207e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-batching"></a>MSBuild Toplu İşleme
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğe listelerini farklı kategorileri veya toplu işlemi bölme yeteneği, öğe meta verileri temel alarak ve bir hedef ya da görev her batch ile bir kez çalıştırın.  
@@ -61,7 +61,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="target-batching"></a>Toplu hedef işlemede  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Hedef çalıştırılmadan önce girişleri ve çıkışları hedefinin güncel olup olmadığını denetler. Girişleri ve çıkışları güncel varsa, hedef atlanır. Toplu işleme, bir hedef içinde bir görevi kullanıyorsa, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] girişleri ve çıkışları öğelerinin her bir toplu iş için güncel olup olmadığını gerekiyor. Aksi takdirde, isabet edildiğinde hedef yürütülür.  
   
- Aşağıdaki örnekte gösterildiği bir `Target` içeren öğe bir `Outputs` ile öznitelik %(*ItemMetaDataName*) gösterimi. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]bölecek `Example` toplu öğeyi listeye temel alarak `Color` öğe meta verileri ve çıkış dosyalarının her toplu işlemi için zaman damgaları çözümleyin. Bir toplu çıkışlarından güncel değilse, hedef çalıştırılır. Aksi takdirde, hedef atlanır.  
+ Aşağıdaki örnekte gösterildiği bir `Target` içeren öğe bir `Outputs` ile öznitelik %(*ItemMetaDataName*) gösterimi. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bölecek `Example` toplu öğeyi listeye temel alarak `Color` öğe meta verileri ve çıkış dosyalarının her toplu işlemi için zaman damgaları çözümleyin. Bir toplu çıkışlarından güncel değilse, hedef çalıştırılır. Aksi takdirde, hedef atlanır.  
   
 ```xml  
 <Project  

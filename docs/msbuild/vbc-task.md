@@ -25,10 +25,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 01b38f523a3a1c97798cdd629290791ab5e480f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="vbc-task"></a>Vbc Görevi
 Yürütülebilir dosyalar (.exe), dinamik bağlantı kitaplıkları (.dll) veya kod modülleri (.netmodule) üretir vbc.exe sarmalar. Vbc.exe hakkında daha fazla bilgi için bkz: [Visual Basic komut satırı derleyicisi](/dotnet/visual-basic/reference/command-line-compiler/index).  

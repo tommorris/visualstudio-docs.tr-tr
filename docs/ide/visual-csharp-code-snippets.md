@@ -1,11 +1,11 @@
 ---
-title: "C# kod parçacıkları | Microsoft Docs"
-ms.custom: 
+title: C# kod parçacıkları | Microsoft Docs
+ms.custom: ''
 ms.date: 06/05/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - snippets [C#]
@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0328ceb6c1420b038ca424c42dd408e36da6f891
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="c-code-snippets"></a>C# kod parçacıkları
 
@@ -44,7 +44,7 @@ Varsayılan olarak aşağıdaki kod parçacıkları Visual Studio'da C# ' ta dah
 |checked|Oluşturur bir [işaretli](/dotnet/csharp/language-reference/keywords/checked) bloğu.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|
 |sınıf|Sınıf bildirimi oluşturur.|(Genel ad alanı dahil) bir ad alanı, bir sınıf veya yapı içinde.|
 |ctor|İçeren sınıf için bir oluşturucu oluşturur.|Bir sınıf içinde.|
-|FA|Çağrı oluşturur <xref:System.Console.WriteLine%2A>.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|
+|cw|Çağrı oluşturur <xref:System.Console.WriteLine%2A>.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|
 |do|Oluşturur bir [yapmak](/dotnet/csharp/language-reference/keywords/do) `while` döngü.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|
 |else|Oluşturur bir [başka](/dotnet/csharp/language-reference/keywords/if-else) bloğu.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|
 |enum|Oluşturur bir [enum](/dotnet/csharp/language-reference/keywords/enum) bildirimi.|(Genel ad alanı dahil) bir ad alanı, bir sınıf veya yapı içinde.|
@@ -54,7 +54,7 @@ Varsayılan olarak aşağıdaki kod parçacıkları Visual Studio'da C# ' ta dah
 |foreach|Oluşturur bir [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) döngü.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|
 |forr|Oluşturur bir [için](/dotnet/csharp/language-reference/keywords/for) bu azaltır Döngü değişkeninin her yinelemeden sonra döngü.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|
 |if|Oluşturur bir [varsa](/dotnet/csharp/language-reference/keywords/if-else) bloğu.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|
-|indexer|Bir dizin oluşturucu bildirimi oluşturur.|Bir sınıf veya yapı içinde.|
+|Dizin Oluşturucu|Bir dizin oluşturucu bildirimi oluşturur.|Bir sınıf veya yapı içinde.|
 |arabirim|Oluşturur bir [arabirimi](/dotnet/csharp/language-reference/keywords/interface) bildirimi.|(Genel ad alanı dahil) bir ad alanı, bir sınıf veya yapı içinde.|
 |Çağırma|Bir olay güvenle çağıran bir blok oluşturur.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|
 |iterator|Yineleyici oluşturur.|Bir sınıf veya yapı içinde.|

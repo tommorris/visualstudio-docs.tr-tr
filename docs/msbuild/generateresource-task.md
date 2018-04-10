@@ -25,10 +25,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 37aacbfd2095cf4edae78393569702fe4fea6c7e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="generateresource-task"></a>GenerateResource Görevi
 .Txt, .resx (XML tabanlı kaynak biçimi) dosyaları ve bir çalışma zamanı ikili yürütülebilir dosya katıştırılmış veya uydu derlemelerini derlenmiş ortak dil çalışma zamanı ikili .resources dosyaları arasındaki dönüştürür. Bu görev, genellikle .txt veya .resx dosyaları .resource dosyalarına dönüştürmek için kullanılır. `GenerateResource` Görev benzer işlevsellik [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  

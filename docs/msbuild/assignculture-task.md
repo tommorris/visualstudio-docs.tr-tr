@@ -1,11 +1,11 @@
 ---
-title: "AssignCulture görevi | Microsoft Docs"
-ms.custom: 
+title: AssignCulture görevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AssignCulture
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - MSBuild, AssignCulture task
 - AssignCulture task [MSBuild]
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
-caps.latest.revision: 
+caps.latest.revision: 10
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 40fb47caea1b9fcb0d25d45495cf3e3c1d3e04fb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="assignculture-task"></a>AssignCulture Görevi
 Bu görev, dosya adının bir parçası olarak geçerli bir .NET kültür tanımlayıcısı dizesi içerebilir öğelerin listesini kabul eder ve adlı bir meta veri içermeyen öğeleri üreten `Culture` karşılık gelen içeren kültür tanımlayıcısı. Bu görev meta verileri aynı adla sahip bir öğe üretecektir Örneğin, dosya adı Form1.fr fr.resx katıştırılmış bir kültür tanımlayıcısı "fr-fr", sahiptir, bu nedenle `Culture` eşit `fr-fr`. Görev dosya adları listesini dosya adı kaldırıldı kültür ile de üretir.  
@@ -77,9 +77,9 @@ Bu görev, dosya adının bir parçası olarak geçerli bir .NET kültür tanım
   
 |Öğe koleksiyonu|İçindekiler|  
 |---------------------|--------------|  
-|`OutAssignedFiles`|`MyResource1.fr.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx`(hiçbir ek meta veriler)|  
+|`OutAssignedFiles`|`MyResource1.fr.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx` (hiçbir ek meta veriler)|  
 |`OutAssignedFilesWithCulture`|`MyResource1.fr.resx (Culture="fr")`|  
-|`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx`(hiçbir ek meta veriler)|  
+|`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx` (hiçbir ek meta veriler)|  
 |`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (`ek meta veri yok)|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

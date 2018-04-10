@@ -1,9 +1,9 @@
 ---
-title: "T4 Parametre yönergesi | Microsoft Docs"
-ms.custom: 
+title: T4 Parametre yönergesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f44e25f9256cd37692970e92744d7564bc3abd19
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="t4-parameter-directive"></a>T4 Parametre Yönergesi
 İçinde bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metin şablonu `parameter` yönergesi dış bağlamdan geçirilen değerlerinden başlatılmış şablon kodunuzu özelliklerinde bildirir. Metin dönüştürmeyi çağıran kodu yazarsanız, bu değerleri ayarlayabilirsiniz.  

@@ -1,9 +1,9 @@
 ---
-title: "Program kodunda katman modellerini gezinme ve güncelleştirme | Microsoft Docs"
-ms.custom: 
+title: Program kodunda katman modellerini gezinme ve güncelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - layer models, navigating in program code
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: e79479e97efd953c1366348454eee70773faf07a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Program kodunda katman modellerini gezinme ve güncelleştirme
 Bu konu öğeleri ve gezinme ve program kodunu kullanarak güncelleştirme katman modellerini ilişkilerde açıklar. Kullanıcının bakış açısı bağımlılık diyagramlarından hakkında daha fazla bilgi için bkz: [bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md) ve [bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md).  
@@ -94,12 +94,12 @@ IEnumerable<ILayerComment> comments =
   
  <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. Sınıfı, yürütülebilir dosya veya derleme gibi ne tür bir yapı başvuruluyor kategorileri özelliği gösterir. Kategoriler belirler nasıl hedef yapı tanımlayıcısını tanımlar.  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A>bir yapı başvurusundan oluşturur bir <xref:EnvDTE.Project> veya <xref:EnvDTE.ProjectItem>. Bu zaman uyumsuz bir işlemdir. Bu nedenle, genellikle oluşturma tamamlandıktan sonra çağrılan bir geri çağırma sağlar.  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> bir yapı başvurusundan oluşturur bir <xref:EnvDTE.Project> veya <xref:EnvDTE.ProjectItem>. Bu zaman uyumsuz bir işlemdir. Bu nedenle, genellikle oluşturma tamamlandıktan sonra çağrılan bir geri çağırma sağlar.  
   
  Katman yapı başvuruları kullanım örneği diyagramları yapılar ile karıştırılmamalıdır.  
   
 ## <a name="shapes-and-diagrams"></a>Şekiller ve diyagramları  
- Her bir öğesinde bir katman modeli temsil etmek için kullanılan iki nesneleri: bir <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>ve bir <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` Konumu ve boyutu diyagramda şeklin temsil eder. Katman modelleri, her `ILayerElement` varsa `IShape`ve her `IShape` bir bağımlılığı diyagramı varsa `ILayerElement`. `IShape`UML modelleri için de kullanılır. Bu nedenle, her `IShape` bir katman öğeye sahip.  
+ Her bir öğesinde bir katman modeli temsil etmek için kullanılan iki nesneleri: bir <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>ve bir <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` Konumu ve boyutu diyagramda şeklin temsil eder. Katman modelleri, her `ILayerElement` varsa `IShape`ve her `IShape` bir bağımlılığı diyagramı varsa `ILayerElement`. `IShape` UML modelleri için de kullanılır. Bu nedenle, her `IShape` bir katman öğeye sahip.  
   
  Aynı şekilde <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel> birinde görüntülenir <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram>.  
   
@@ -122,7 +122,7 @@ public void ... (...)
   
  ![Her ILayerElement IShape tarafından sunulur. ] (../modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>ve <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> UML modellerini görüntülemek için de kullanılır. 
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> ve <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> UML modellerini görüntülemek için de kullanılır. 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağımlılık diyagramlarına komut ve hareket ekleme](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   

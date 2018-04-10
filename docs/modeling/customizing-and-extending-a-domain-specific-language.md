@@ -1,9 +1,9 @@
 ---
-title: "Özelleştirme ve bir etki alanına özgü dil genişletme | Microsoft Docs"
-ms.custom: 
+title: Özelleştirme ve bir etki alanına özgü dil genişletme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7617deb73ecaec835b0100d243b75bc26fd54a17
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Etki Alanına Özgü Dili Özelleştirme ve Genişletme
 Visual Studio modelleme ve görselleştirme SDK (VMSDK) modelleme araçları tanımlamak birkaç düzeyleri sağlar:  
@@ -33,7 +33,7 @@ Visual Studio modelleme ve görselleştirme SDK (VMSDK) modelleme araçları tan
 > [!NOTE]
 >  DSL tanımları dosya güncelleştirildiğinde tıklamayı değil **tüm şablonları dönüştürme** çözümünüzü yeniden önce araç çubuğundaki Çözüm Gezgini.  
   
-##  <a name="customShapes"></a>Bu bölümde  
+##  <a name="customShapes"></a> Bu bölümde  
   
 |Bu etkiyi elde etmek için|Bu konuya bakın|  
 |----------------------------|-------------------------|  
@@ -55,7 +55,7 @@ Visual Studio modelleme ve görselleştirme SDK (VMSDK) modelleme araçları tan
 |Kopyalama, kesme ve yapıştırma etkinleştir|Ayarlama **etkinleştirmek kopyalayıp yapıştırın** özelliği **Düzenleyicisi** DSL Gezgininde düğümü.|  
 |Bir öğenin kopyalanan veriler referans bağlantıları ve hedeflerine kopyalayın. Örneğin, bir öğeye bağlı yorumlar kopyalayın.|Ayarlama **yayar kopyalama** (DSL tanımı diyagramdaki etki alanı ilişkisinin bir tarafı satırında tarafından temsil edilen) kaynak rolünün özelliği.<br /><br /> Daha karmaşık efektler elde etmek için ProcessOnCopy geçersiz kılmak için kod yazma.<br /><br /> Bkz: [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md).|  
 |Silme, üst öğesini değiştirme veya bir öğe silindiğinde ile ilgili öğeleri yeniden bağlayın.|Ayarlama **yayar silme** bir ilişki rolü değeri. Daha karmaşık efektler için geçersiz kılma `ShouldVisitRelationship` ve `ShouldVisitRolePlayer` yöntemleri `MyDslDeleteClosure` , tanımlanmış sınıf **DomainModel.cs**<br /><br /> Bkz: [silme davranışı özelleştirme](../modeling/customizing-deletion-behavior.md)|  
-|Şekil düzenini ve kopyalama ve sürükle ve bırak görünümünü korur.|Şekilleri ve bağlayıcıları kopyalanan eklemek `ElementGroupPrototype`. Geçersiz kılmak için en uygun yöntemi`ElementOperations.CreateElementGroupPrototype()`<br /><br /> Bkz: [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md).|  
+|Şekil düzenini ve kopyalama ve sürükle ve bırak görünümünü korur.|Şekilleri ve bağlayıcıları kopyalanan eklemek `ElementGroupPrototype`. Geçersiz kılmak için en uygun yöntemi `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Bkz: [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md).|  
 |Geçerli imleç konumu gibi seçtiğiniz bir konumda şekiller yapıştırın.|Geçersiz kılma `ClipboardCommandSet.ProcessOnCopy()` konuma özgü sürümünü kullanmak üzere `ElementOperations.Merge().` bkz [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md).|  
 |Ek bağlantılar Yapıştır üzerinde oluşturma|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Etkinleştirme sürükleyip bu diyagramdan, diğer DSL'ler ve Windows öğeleri|Bkz: [nasıl yapılır: bir Sürükle ve bırak işleyici ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)|  

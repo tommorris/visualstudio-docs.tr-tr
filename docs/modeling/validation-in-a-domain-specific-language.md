@@ -1,9 +1,9 @@
 ---
-title: "Bir etki alanına özgü dil doğrulama | Microsoft Docs"
-ms.custom: 
+title: Bir etki alanına özgü dil doğrulama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, constraints
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb2e734bd94608584ca700223fb75387eb484fb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Etki Alanına Özgü bir Dilde Doğrulama
 Bir etki alanına özgü dil (DSL) yazar olarak, kullanıcı tarafından oluşturulan model anlamlı olduğunu doğrulamak için doğrulama kısıtlamaları tanımlayabilirsiniz. Örneğin, kişiler ve kendi üst öğelerinden ailesi ağacının çizmek kullanıcılar, DSL izin veriyorsa, alt öğe üst sonraki Doğum tarihleri sahip olmasını sağlar bir kısıtlama yazabilirsiniz.  
@@ -303,7 +303,7 @@ namespace Company.FamilyTree
   
  İşleyicileri bağlantıları veya öğeleri etkileyen geri alma veya yineleme işlemlerinden sonra da denir.  
   
-##  <a name="custom"></a>Özel doğrulama kategorileri  
+##  <a name="custom"></a> Özel doğrulama kategorileri  
  Menü ve açık gibi standart doğrulama kategorilerin yanı sıra kendi kategorileri tanımlayabilir. Program kodunda Bu kategorilerden çağırabilirsiniz. Kullanıcı bunları doğrudan çağrılamaz.  
   
  Bir tipik özel kategorileri için belirli bir aracı önkoşulları model karşılayıp karşılamadığını testleri bir kategori tanımlamak için kullanılır.  
@@ -331,7 +331,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a>Doğrulama alternatifleri  
+##  <a name="alternatives"></a> Doğrulama alternatifleri  
  Doğrulama kısıtlamaları hata raporu, ancak model değiştirmeyin. Geçersiz hale modeli engellemek istiyorsanız bunun yerine, diğer teknikleri kullanabilirsiniz.  
   
  Ancak, bu teknikler önerilmez. Geçersiz model düzeltmek nasıl karar kullanıcı izin vermek genellikle daha iyi olur.  
@@ -341,7 +341,7 @@ validationController.ValidateCustom
  **Geçersiz bir değişikliği denenmesi durumunda işlemi geri.** Bir kural bu amaçla tanımlayabilirsiniz, ancak bazı durumlarda bir özellik işleyicisi geçersiz kılmanıza olanak **OnValueChanging()**, veya bir yöntem gibi geçersiz kılmak için `OnDeleted().` bir işlemi geri almak için kullanmak `this.Store.TransactionManager.CurrentTransaction.Rollback().` daha fazla bilgi için bilgi, bkz: [etki alanı özellik değeri değişiklik işleyicileri](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
->  Kullanıcı değişiklik ayarlanmış veya bırakıldığı geri olduğunu bilir emin olun. Örneğin, kullanın`System.Windows.Forms.MessageBox.Show("message").`  
+>  Kullanıcı değişiklik ayarlanmış veya bırakıldığı geri olduğunu bilir emin olun. Örneğin, kullanın `System.Windows.Forms.MessageBox.Show("message").`  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Gezinme ve bir modeli Program kodunda güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md)   

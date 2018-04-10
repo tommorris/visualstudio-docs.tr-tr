@@ -16,10 +16,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: ef69462dc9b51fbd92da11bc5adb1bfa61e8a792
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="suppress-code-analysis-warnings"></a>Kod çözümleme uyarılarını bastırma
 
@@ -95,7 +95,7 @@ Bakım nedeniyle, kural adı atlama önerilmez.
 
 Gizleme öznitelikler için bir yöntem uygulanabilir, ancak bir yöntem gövdesinde katıştırılmış. Bu, eklerseniz, belirli bir kural tüm ihlalleri bastırılan anlamına gelir <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği yöntemi.
 
-Bazı durumlarda, böylece gelecekteki kod Kod Analizi kural dışında otomatik olarak muafiyet değil ihlali, örneğin belirli bir örneği bastırmak isteyebilirsiniz. Belirli kod çözümleme kurallarını kullanarak bunu izin `MessageId` özelliğinin <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği. Genel olarak, belirli simgesi (yerel değişken veya parametre) saygı üzerinde ihlalleri için eski kuralları `MessageId` özelliği. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) is an example of such a rule. Ancak, eski kuralları yürütülebilir kod (symbol olmayan) üzerinde ihlalleri için saygı `MessageId` özelliği. Ayrıca, .NET derleme Platformu ("Roslyn") çözümleyiciler saygı `MessageId` özelliği.
+Bazı durumlarda, böylece gelecekteki kod Kod Analizi kural dışında otomatik olarak muafiyet değil ihlali, örneğin belirli bir örneği bastırmak isteyebilirsiniz. Belirli kod çözümleme kurallarını kullanarak bunu izin `MessageId` özelliğinin <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği. Genel olarak, belirli simgesi (yerel değişken veya parametre) saygı üzerinde ihlalleri için eski kuralları `MessageId` özelliği. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) böyle bir kural örneğidir. Ancak, eski kuralları yürütülebilir kod (symbol olmayan) üzerinde ihlalleri için saygı `MessageId` özelliği. Ayrıca, .NET derleme Platformu ("Roslyn") çözümleyiciler saygı `MessageId` özelliği.
 
 Bir kural belirli sembol ihlal gizlemek için sembol adını belirtin `MessageId` özelliğinin <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği. Aşağıdaki örnek, iki ihlalleri koduyla gösterir [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;için bir tane `name` değişkeni, diğeri de `age` değişkeni. Yalnızca ihlali için `age` simgesi geçersiz kılınır.
 

@@ -1,12 +1,12 @@
 ---
-title: "Excel Çözümlerini Genelleştirme ve yerelleştirme | Microsoft Docs"
-ms.custom: 
+title: Excel Çözümlerini Genelleştirme ve yerelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -19,10 +19,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 66c997dd8de6801d790b7653ca414cac0996ddc9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel Çözümlerini Genelleştirme ve Yerelleştirme
   Bu bölüm, Windows için İngilizce olmayan ayarlara sahip bilgisayarlarda çalışan Microsoft Office Excel çözümleri için özel konular hakkında bilgi içerir. Visual Studio kullanarak çözümleri diğer tür oluşturduğunuzda karşılaştığınız çoğu yönlerini Genelleştirme ve Microsoft Office Çözümlerini Yerelleştirme aynı olduğunu. Genel bilgi için bkz: [Globalizing ve yerelleştirme uygulamaları](/visualstudio/ide/globalizing-and-localizing-applications).  

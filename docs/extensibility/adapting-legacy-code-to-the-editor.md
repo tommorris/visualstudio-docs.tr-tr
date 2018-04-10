@@ -1,27 +1,27 @@
 ---
-title: "Eski kod düzenleyicisine uyarlama | Microsoft Docs"
-ms.custom: 
+title: Eski kod düzenleyicisine uyarlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapters
 ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
-caps.latest.revision: 
+caps.latest.revision: 25
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: ef1bce81e20772660a6074c15bd5dad494804373
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Eski kod düzenleyicisine uyarlama
 Visual Studio düzenleyicisinde var olan kodu bileşenlerini erişmek için birçok özelliğe sahiptir. Aşağıdaki yönergeler, bir MEF olmayan bileşeni, düzenleyici işlevselliği kullanmak için örneğin, bir VSPackage, uyum gösterilmektedir. Yönergeler ayrıca bağdaştırıcıları Düzenleyicisi Hizmetleri yönetilen ve yönetilmeyen kodu almak için nasıl kullanılacağını gösterir.  

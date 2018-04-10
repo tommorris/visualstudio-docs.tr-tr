@@ -1,9 +1,9 @@
 ---
-title: "Nasıl yapılır... metin şablonları ile | Microsoft Docs"
-ms.custom: 
+title: Nasıl yapılır... metin şablonları ile | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to--with-text-templates"></a>Nasıl yapılır ... Metin Şablonları ile
 Metin şablonlarında [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] herhangi bir türde metin oluşturma kullanışlı bir yöntem sunar. Metin şablonları, uygulamanızı bir parçası olarak çalışma zamanında ve bazı proje kodunu oluşturmak için tasarım zamanında metin oluşturmak için kullanabilirsiniz. Bu konu en sık özetler "Nasıl yedeklerim...?" sorular Sorular.  
@@ -79,7 +79,7 @@ Metin şablonlarında [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 
   
      Daha fazla bilgi için bkz: [etki alanına özgü dil ile çalışmaya başlama](../modeling/getting-started-with-domain-specific-languages.md) ve [bir etki alanına özgü dil oluşturma koddan](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Veri alma[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Veri alma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
  Sağlanan hizmetleri kullanmaya [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], kümesi tarafından `hostSpecific` özniteliği ve yük `EnvDTE` derleme. Örneğin:  
   
 ```csharp  
@@ -101,7 +101,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ## <a name="more-general-questions"></a>Daha fazla genel sorular  
   
-###  <a name="starting"></a>Metin şablonu yazmaya başlamak için en iyi yolu nedir?  
+###  <a name="starting"></a> Metin şablonu yazmaya başlamak için en iyi yolu nedir?  
   
 1.  Oluşturulan dosya belirli bir örneği yazma.  
   

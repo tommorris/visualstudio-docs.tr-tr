@@ -1,27 +1,27 @@
 ---
-title: "Eski API kullanarak metin arabelleği erişim | Microsoft Docs"
-ms.custom: 
+title: Eski API kullanarak metin arabelleği erişim | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffers
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
-caps.latest.revision: 
+caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 77002e095690da85e73f1a79d405cb5174b96851
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Eski API kullanarak metin arabelleği erişme
 Metni metin akışları ve dosya Kalıcılık yönetilmesinden sorumludur. Arabellek okuma veya diğer biçimlere yazma rağmen arabellek ile tüm sıradan iletişim Unicode kullanılarak gerçekleştirilir. Eski API'leri metin arabelleği bir - ya da iki boyutlu bir koordinat sistemi arabelleği karakter konumları tanımlamak için kullanabilirsiniz.  

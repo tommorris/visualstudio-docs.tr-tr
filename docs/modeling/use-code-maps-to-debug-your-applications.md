@@ -21,10 +21,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ab5d32c6a25eb9db21970ade0034aa1afd219a61
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma
 Kod haritaları büyük kod temelleri, tanınmayan kod veya eski kod kayıp önlemenize yardımcı olabilir. Örneğin, hatalarını ayıkladığınız, çok sayıda dosya ve projeleri koduna bakmanız gerekebilir. Kod parçalarını gidin ve aralarındaki ilişkilerin anlamak için kod haritalarını kullanma. Böylece, bu kodu, head, izlemek ya da ayrı bir diyagramı gerekmez. Bu nedenle, çalışmanızı kesintiye uğradığında oluşan kod, bellek, üzerinde çalıştığınız kodu hakkında Yardım yenileme eşler.  

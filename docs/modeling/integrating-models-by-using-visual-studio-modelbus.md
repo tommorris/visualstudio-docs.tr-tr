@@ -1,9 +1,9 @@
 ---
-title: "Visual Studio Modelbus kullanarak modelleri tümleştirme | Microsoft Docs"
-ms.custom: 
+title: Visual Studio Modelbus kullanarak modelleri tümleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus'ı Kullanarak Modelleri Tümleştirme
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus modellerini diğer Araçları'ndan ve modelleri arasında bağlantılar oluşturmak için bir yöntem sağlar. Örneğin, etki alanına özgü dil (DSL) modelleri ve UML modellerini bağlayabilirsiniz. Tümleşik bir DSL'ler kümesi oluşturabilirsiniz.  
@@ -33,10 +33,10 @@ ms.lasthandoff: 02/09/2018
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
-##  <a name="provide"></a>Bir DSL erişim sağlama  
+##  <a name="provide"></a> Bir DSL erişim sağlama  
  Bir model veya öğeleri ModelBus başvurular oluşturabilmeniz için önce bir ModelBusAdapter için DSL tanımlamanız gerekir. Bunu yapmanın en kolay yolu kullanmaktır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komutları DSL Designer'a ekler Model veri yolu uzantısı.  
   
-###  <a name="expose"></a>Model veri yolu DSL tanımına kullanıma sunmak için  
+###  <a name="expose"></a> Model veri yolu DSL tanımına kullanıma sunmak için  
   
 1.  İndirin ve Visual Studio modeli Bus uzantısı zaten yüklemiş olduğunuz sürece yükleyin. Daha fazla bilgi için bkz: [Görselleştirme ve modelleme SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 02/09/2018
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Kimlikleri kalıcı o öğeye emin olmak için  
   
-1.  Open DslDefinition.dsl.  
+1.  DslDefinition.dsl açın.  
   
 2.  DSL Explorer'da genişletin **Xml serileştirme davranışı**, ardından **sınıf veri**.  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 02/09/2018
   
 -   Geçersiz kılma `ResolveElementReference` bir Model veri yolu başvuru doğru öğeyi bulmak için.  
   
-##  <a name="editRef"></a>Başka bir DSL DSL erişme  
+##  <a name="editRef"></a> Başka bir DSL DSL erişme  
  Model veri yolu başvuruları DSL etki alanı özelliğinde depolayabilirsiniz ve bunları kullanan özel kod yazabilirsiniz. Ayrıca kullanıcının bir model dosyası ve bir öğede seçerek bir model veri yolu başvurusu oluşturmasını sağlayabilirsiniz.  
   
  Başka bir DSL başvurular kullanılacak DSL etkinleştirmek için öncelikle bunu olmalısınız bir *tüketici* model veri yolu başvuruları.  
@@ -383,7 +383,7 @@ ModelBusReference elementReferenceRestored =
   
  MBR iki aşamada seri:  
   
--   `ModelBusReferencePropertySerializer`MBR üstbilgiyle ilgilenir standart seri hale getirici ' dir. Standart DSL kullanan `SerializationContext` depolanan özellik paketi `ReferenceContext` anahtar kullanılarak `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. Özellikle, `SerializationContext` örneği içermelidir `ModelBus`.  
+-   `ModelBusReferencePropertySerializer` MBR üstbilgiyle ilgilenir standart seri hale getirici ' dir. Standart DSL kullanan `SerializationContext` depolanan özellik paketi `ReferenceContext` anahtar kullanılarak `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. Özellikle, `SerializationContext` örneği içermelidir `ModelBus`.  
   
 -   ModelBus bağdaştırıcınızı MBR bağdaştırıcıya özgü parçası ile ilgilidir. MBR ReferenceContext içinde depolanan ek bilgileri kullanabilirsiniz. Anahtarlar kullanılarak kök dosya yolları basit dosya tabanlı bağdaştırıcısı tutar `FilePathLoadContextKey` ve `FilePathSaveContextKey`.  
   
@@ -506,7 +506,7 @@ private const string INVALID_REF_FORMAT =
   
 -   Yeni bir proje `ModelBusAdapter` çözüme eklendi.  
   
--   Bir başvuru `ModelBusAdapter` eklenen `DslPackage` projesi. `ModelBusAdapter`bir başvuru içeriyor `Dsl` projesi.  
+-   Bir başvuru `ModelBusAdapter` eklenen `DslPackage` projesi. `ModelBusAdapter` bir başvuru içeriyor `Dsl` projesi.  
   
 -   İçinde **DslPackage\source.extention.tt**, `|ModelBusAdapter|` MEF Bileşeni olarak eklenir.  
   

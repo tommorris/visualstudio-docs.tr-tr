@@ -1,9 +1,9 @@
 ---
-title: "Nasıl yapılır: bir komut için kısayol menüsü ekleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: bir komut için kısayol menüsü ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 4f65964e1d7fd4221746d8ec17a498cf9ee3a354
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Nasıl yapılır: Kısayol Menüsüne Komut Ekleme
 Kullanıcılarınızın, DSL belirli görevleri gerçekleştirebilmeleri için menü komutlarını, etki alanına özgü dil (DSL) ekleyebilirsiniz. Kullanıcıların Diyagramı sağ tıklattığınızda komutları (kısayol) bağlam menüsünde görüntülenir. Yalnızca belirli durumlarda menüsünde görünen komut tanımlayabilirsiniz. Yalnızca kullanıcı öğesi veya öğeleri belirli durumlarda belirli türlerdeki tıklattığında Örneğin, komut görünür duruma getirebilirsiniz.  
@@ -51,7 +51,7 @@ Kullanıcılarınızın, DSL belirli görevleri gerçekleştirebilmeleri için m
   
  Aksi takdirde, komutları tanımlamak için MEF yöntemi kullanmayı düşünün. Daha fazla bilgi için bkz: [MEF kullanarak, DSL genişletme](../modeling/extend-your-dsl-by-using-mef.md).  
   
-##  <a name="VSCT"></a>Commands.Vsct komutunda bildirme  
+##  <a name="VSCT"></a> Commands.Vsct komutunda bildirme  
  Menü komutları DslPackage\Commands.vsct bildirilir. Bu tanımları menü öğelerinin ve menülerde nerede göründüklerinden etiketlerini belirtin.  
   
  Düzenleme, dosya Commands.vsct, tanımları dizininde bulunan birkaç .h dosyaları alır *Visual Studio SDK yükleme yolu*\VisualStudioIntegration\Common\Inc. Ayrıca, DSL tanımından oluşturulan GeneratedVsct.vsct içerir.  
@@ -131,7 +131,7 @@ Kullanıcılarınızın, DSL belirli görevleri gerçekleştirebilmeleri için m
   
     -   `My Context Menu Command`  
   
-##  <a name="version"></a>Package.tt paket sürümünü güncelleştir  
+##  <a name="version"></a> Package.tt paket sürümünü güncelleştir  
  Ekleme veya bir komut değiştirme her güncelleştirme `version` parametresinin <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> uygulanan paketi sınıfına yeni etki alanına özgü dil sürümünü bırakmadan önce.  
   
  Paket sınıfı oluşturulan dosyasında tanımlı olduğundan Package.cs dosyasını oluşturur metin şablonu dosyasını özniteliğinde güncelleştirin.  
@@ -146,7 +146,7 @@ Kullanıcılarınızın, DSL belirli görevleri gerçekleştirebilmeleri için m
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
-##  <a name="CommandSet"></a>Komut davranışını tanımlayın  
+##  <a name="CommandSet"></a> Komut davranışını tanımlayın  
  İçinde DslPackage\GeneratedCode\CommandSet.cs bildirilmiş bir parçalı sınıf uygulanan bazı komutlar, DSL zaten var. Yeni komut eklemek için aynı sınıfın kısmi bildirimi içeren yeni bir dosya oluşturarak bu sınıfı genişletmeniz gerekir. Sınıf genellikle adıdır  *\<YourDslName >*`CommandSet`. Sınıfın adını doğrulama ve içeriğini İnceleme başlamak kullanışlıdır.  
   
  Komut kümesi sınıfı türetilir <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -224,15 +224,15 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
 -   `this.CurrentSelection`. Kullanıcı sağ şekli bu listede her zaman dahil edilir. Kullanıcı diyagramı boş bir bölümünü tıklarsa, diyagram listesi yalnızca üyesidir.  
   
--   `this.IsDiagramSelected()` - `true`Kullanıcı diyagramı boş bir kısmına tıkladıysanız.  
+-   `this.IsDiagramSelected()` - `true` Kullanıcı diyagramı boş bir kısmına tıkladıysanız.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()`-Kullanıcı birden fazla nesne seçmediğiniz  
+-   `this.IsSingleSelection()` -Kullanıcı birden fazla nesne seçmediğiniz  
   
--   `this.SingleSelection`-Şekil veya kullanıcı sağ diyagramı  
+-   `this.SingleSelection` -Şekil veya kullanıcı sağ diyagramı  
   
--   `shape.ModelElement as MyLanguageElement`-bir şekli tarafından temsil edilen model öğesi.  
+-   `shape.ModelElement as MyLanguageElement` -bir şekli tarafından temsil edilen model öğesi.  
   
  Genel bir kılavuz olarak olun `Visible` özelliği ne seçili olursa bağlıdır ve olun `Enabled` özellik seçilen öğeleri durumuna bağlıdır.  
   
@@ -299,7 +299,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 >  VSCT dosyasının simgeleri bölümü değiştirirseniz, bu bildirimleri eşleşecek şekilde değiştirmeniz gerekir. Package.tt sürüm numarasını Artır  
   
- Menü komutları bu komut kümesinin bir parçası kaydedin. `GetMenuCommands()`Diyagram zaman başlatıldıktan sonra çağrılır:  
+ Menü komutları bu komut kümesinin bir parçası kaydedin. `GetMenuCommands()` Diyagram zaman başlatıldıktan sonra çağrılır:  
   
 ```  
 protected override IList<MenuCommand> GetMenuCommands()  

@@ -1,11 +1,11 @@
 ---
-title: "CSC görevi | Microsoft Docs"
-ms.custom: 
+title: CSC görevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-caps.latest.revision: 
+caps.latest.revision: 26
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: a74f8c43d35104957b62fb3da93d2acbf6a9a303
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="csc-task"></a>Csc Görevi
 CSC.exe sarmalar ve yürütülebilir dosyalar (.exe dosyaları), dinamik bağlantı kitaplıkları (.dll dosyaları) veya kod modülleri (.netmodule dosyaları) üretir. CSC.exe hakkında daha fazla bilgi için bkz: [C# Derleyici Seçenekleri](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -45,7 +45,7 @@ CSC.exe sarmalar ve yürütülebilir dosyalar (.exe dosyaları), dinamik bağlan
 |`BaseAddress`|İsteğe bağlı `String` parametresi.<br /><br /> Tercih edilen temel adrese DLL yükleneceği belirtir. Bir DLL için varsayılan taban adresi belirlediği [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ortak dil çalışma zamanı. Daha fazla bilgi için bkz: [/baseaddress (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).|  
 |`CheckForOverflowUnderflow`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Tamsayı veri türü sınırlarına taşar aritmetik çalışma zamanında bir özel durum neden olup olmayacağını belirtir. Daha fazla bilgi için bkz: [/ checked (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).|  
 |`CodePage`|İsteğe bağlı `Int32` parametresi.<br /><br /> Derlemedeki tüm kaynak kodu dosyaları için kullanmak üzere kod sayfasını belirtir. Daha fazla bilgi için bkz: [/codepage (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option).|  
-|`DebugType`|İsteğe bağlı `String` parametresi.<br /><br /> Hata ayıklama türünü belirtir. `DebugType`olabilir `full` veya `pdbonly`. Varsayılan değer `full`, çalışan bir program eklenmesi gereken bir hata ayıklayıcısı sağlar. Belirtme `pdbonly` etkinleştirir kaynak program hata ayıklayıcısı'ndaki başlatılır, ancak çalışan program hata ayıklayıcıya eklendiğinde yalnızca assembler görüntüler kodda hata ayıklama.<br /><br /> Bu parametre geçersiz kılar `EmitDebugInformation` parametresi.<br /><br /> Daha fazla bilgi için bkz: [/Debug (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).|  
+|`DebugType`|İsteğe bağlı `String` parametresi.<br /><br /> Hata ayıklama türünü belirtir. `DebugType` olabilir `full` veya `pdbonly`. Varsayılan değer `full`, çalışan bir program eklenmesi gereken bir hata ayıklayıcısı sağlar. Belirtme `pdbonly` etkinleştirir kaynak program hata ayıklayıcısı'ndaki başlatılır, ancak çalışan program hata ayıklayıcıya eklendiğinde yalnızca assembler görüntüler kodda hata ayıklama.<br /><br /> Bu parametre geçersiz kılar `EmitDebugInformation` parametresi.<br /><br /> Daha fazla bilgi için bkz: [/Debug (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).|  
 |`DefineConstants`|İsteğe bağlı `String` parametresi.<br /><br /> Önişlemci simgelerini tanımlar. Daha fazla bilgi için bkz: [/ define (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option).|  
 |`DelaySign`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, tam imzalı bir derleme istediğinizi belirtir. Varsa `false`, yalnızca ortak anahtar derlemede yerleştirmek istediğinizi belirtir.<br /><br /> Bu parametre ile birlikte kullanılan sürece herhangi bir etkisi olmaz `KeyFile` veya `KeyContainer` parametresi.<br /><br /> Daha fazla bilgi için bkz: [/delaysign (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option).|  
 |`DisabledWarnings`|İsteğe bağlı `String` parametresi.<br /><br /> Devre dışı bırakılması uyarıların listesini belirtir. Daha fazla bilgi için bkz: [/nowarn (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option).|  
@@ -57,7 +57,7 @@ CSC.exe sarmalar ve yürütülebilir dosyalar (.exe dosyaları), dinamik bağlan
 |`KeyContainer`|İsteğe bağlı `String` parametresi.<br /><br /> Şifreleme anahtarı kapsayıcısının adını belirtir. Daha fazla bilgi için bkz: [/keycontainer (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/keycontainer-compiler-option).|  
 |`KeyFile`|İsteğe bağlı `String` parametresi.<br /><br /> Şifreleme anahtarını içeren dosya adını belirtir. Daha fazla bilgi için bkz: [/keyfile (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/keyfile-compiler-option).|  
 |`LangVersion`|İsteğe bağlı `String` parametresi.<br /><br /> Kullanılacak dili sürümünü belirtir. Daha fazla bilgi için bkz: [/langversion (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).|  
-|`LinkResources`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Bir bağlantı oluşturur bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] kaynak çıktı dosyasında; kaynak dosyası çıktı dosyasına yerleştirilmedi.<br /><br /> Bu parametre geçirilen öğe adlı isteğe bağlı meta veriler girdiler olabilir `LogicalName` ve `Access`. `LogicalName`karşılık gelen `identifier` parametresinin `/linkresource` geçin, ve `Access` karşılık gelen `accessibility-modifier` parametresi. Daha fazla bilgi için bkz: [/linkresource (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option).|  
+|`LinkResources`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Bir bağlantı oluşturur bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] kaynak çıktı dosyasında; kaynak dosyası çıktı dosyasına yerleştirilmedi.<br /><br /> Bu parametre geçirilen öğe adlı isteğe bağlı meta veriler girdiler olabilir `LogicalName` ve `Access`. `LogicalName` karşılık gelen `identifier` parametresinin `/linkresource` geçin, ve `Access` karşılık gelen `accessibility-modifier` parametresi. Daha fazla bilgi için bkz: [/linkresource (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option).|  
 |`MainEntryPoint`|İsteğe bağlı `String` parametresi.<br /><br /> Konumunu belirten `Main` yöntemi. Daha fazla bilgi için bkz: [/Main (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option).|  
 |`ModuleAssemblyName`|İsteğe bağlı `String` parametresi.<br /><br /> Bu modül bir parçası olacak bütünleştirilmiş kodun adını belirtir.|  
 |`NoConfig`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, csc.rsp dosyasıyla derleme değil bildirir. Daha fazla bilgi için bkz: [/noconfig (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option).|  
@@ -70,7 +70,7 @@ CSC.exe sarmalar ve yürütülebilir dosyalar (.exe dosyaları), dinamik bağlan
 |`PdbFile`|İsteğe bağlı `String` parametresi.<br /><br /> Hata ayıklama bilgileri dosya adını belirtir. Çıktı dosyası adını .pdb uzantılı varsayılan addır.|  
 |`Platform`|İsteğe bağlı `String` parametresi.<br /><br /> Çıkış dosyası tarafından hedeflenecek işlemci platformunu belirtir. Bu parametre değerini olabilir `x86`, `x64`, veya `anycpu`. Varsayılan değer `anycpu`. Daha fazla bilgi için bkz: [/Platform (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).|  
 |`References`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Geçerli projede belirtilen öğelerden genel tür bilgileri almak görev neden olur. Daha fazla bilgi için bkz: [/Reference (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Belirleyebileceğiniz bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] başvuru diğer adı içinde bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] meta veriler ekleyerek dosya `Aliases` özgün "Başvurusu" öğesine. Örneğin, diğer adı "LS1" aşağıdaki CSC komut satırında ayarlamak için şunu yazın:<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> kullanırsınız:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
-|`Resources`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Katıştırır bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] çıktı dosyasına kaynak.<br /><br /> Bu parametre geçirilen öğe adlı isteğe bağlı meta veriler girdiler olabilir `LogicalName` ve `Access`. `LogicalName`karşılık gelen `identifier` parametresinin `/resource` geçin, ve `Access` karşılık gelen `accessibility-modifier` parametresi. Daha fazla bilgi için bkz: [/Resource (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option).|  
+|`Resources`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Katıştırır bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] çıktı dosyasına kaynak.<br /><br /> Bu parametre geçirilen öğe adlı isteğe bağlı meta veriler girdiler olabilir `LogicalName` ve `Access`. `LogicalName` karşılık gelen `identifier` parametresinin `/resource` geçin, ve `Access` karşılık gelen `accessibility-modifier` parametresi. Daha fazla bilgi için bkz: [/Resource (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option).|  
 |`ResponseFiles`|İsteğe bağlı `String` parametresi.<br /><br /> Bu görev için komutlar içerir yanıt dosyasını belirtir. Daha fazla bilgi için bkz: [@ (yanıt dosyasını belirtin)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option).|  
 |`Sources`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Bir veya daha fazla belirtir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] kaynak dosyaları.|  
 |`TargetType`|İsteğe bağlı `String` parametresi.<br /><br /> Çıkış dosyasının dosya biçimini belirtir. Bu parametre değerini olabilir `library`, bir kod kitaplığı oluşturan `exe`, bir konsol uygulaması oluşturan `module`, bir modül oluşturur veya `winexe`, bir Windows programı oluşturur. Varsayılan değer `library` şeklindedir. Daha fazla bilgi için bkz: [/target (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option).|  

@@ -1,11 +1,11 @@
 ---
-title: "Bağlantı görevi | Microsoft Docs"
-ms.custom: 
+title: Bağlantı görevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceFileOutput
@@ -30,17 +30,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), Link task
 - Link task (MSBuild (Visual C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-caps.latest.revision: 
+caps.latest.revision: 12
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: a5c92a6faa558445bf85637f2e51ab7fb0e7a856
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="link-task"></a>Bağlantı Görevi
 Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesne dosyası biçimi (COFF) nesne dosyaları ve kitaplıkları bir yürütülebilir dosyanın (.exe) dosyayı oluşturmak için veya bir dinamik bağlantı kitaplığı (DLL) bağlar. Daha fazla bilgi için bkz: [bağlayıcı seçenekleri](/cpp/build/reference/linker-options).  
@@ -104,7 +104,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Daha fazla bilgi için bkz: [/ASSEMBLYDEBUG (DebuggableAttribute ekleme)](/cpp/build/reference/assemblydebug-add-debuggableattribute).  
   
--   **Assemblylınkresource**  
+-   **AssemblyLinkResource**  
   
      İsteğe bağlı **String []** parametresi.  
   
@@ -168,7 +168,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Daha fazla bilgi için bkz: [/CLRSUPPORTLASTERROR (korumak için son hata kodunu PInvoke çağrıları)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).  
   
--   **CLRThreadAttribute**  
+-   **Clrthreadattrıbute**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -176,7 +176,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Her biri için bir bağlayıcı seçeneği karşılık gelen aşağıdaki değerlerden birini belirtin.  
   
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: yok**  
+    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**  
   
     -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
   
@@ -234,7 +234,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Daha fazla bilgi için bkz: [/delaysign (derlemenin kısmen imzalayın)](/cpp/build/reference/delaysign-partially-sign-an-assembly).  
   
--   **Driver**  
+-   **Sürücü**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -242,7 +242,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Her biri için bir bağlayıcı seçeneği karşılık gelen aşağıdaki değerlerden birini belirtin.  
   
-    -   **NotSet** - *\<none>*  
+    -   **NotSet** - *\<yok >*  
   
     -   **Sürücü** - **Driver**  
   
@@ -304,7 +304,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
     -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
   
-    -   **UndefinedSymbolOnly** -   **/FORCE: ÇÖZÜMLENMEMİŞ**  
+    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
   
      Daha fazla bilgi için bkz: [/Force (dosya çıktısını zorla)](/cpp/build/reference/force-force-file-output).  
   
@@ -502,11 +502,11 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
     -   **PGUpdate**  
   
-         \-**/LTCG:PGUpdate**  
+         \- **/LTCG:PGUpdate**  
   
      Daha fazla bilgi için bkz: [/LTCG (bağlama zamanı kodu oluşturma)](/cpp/build/reference/ltcg-link-time-code-generation).  
   
--   **Manıfestfıle**  
+-   **ManifestFile**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -596,7 +596,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Daha fazla bilgi için bkz: `REF` değişkeninde [OPT (iyileştirmeler)](/cpp/build/reference/opt-optimizations).  
   
--   **ÇıktıDosyası**  
+-   **OutputFile**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -686,7 +686,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **NotSet** - *\<none>*  
+    -   **NotSet** - *\<yok >*  
   
     -   **LinkVerbose** - **/VERBOSE**  
   
@@ -740,7 +740,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Daha fazla bilgi için bkz: [/PDBSTRIPPED (özel simgeleri)](/cpp/build/reference/pdbstripped-strip-private-symbols).  
   
--   **Alt sistemi**  
+-   **SubSystem**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -748,7 +748,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **NotSet** - *\<none>*  
+    -   **NotSet** - *\<yok >*  
   
     -   **Konsol** - **/SUBSYSTEM:CONSOLE**  
   
@@ -762,7 +762,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
     -   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
   
-    -   **EFI çalışma zamanı** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
     -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
   
@@ -818,7 +818,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **NotSet** - *\<none>*  
+    -   **NotSet** - *\<yok >*  
   
     -   **MachineARM** - **/MACHINE:ARM**  
   
@@ -840,7 +840,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
     -   **MachineX64** - **/MACHINE:X64**  
   
-    -   **MachineX86** - **/MACHINE:X86**  
+    -   **MachineX86** - **/MACHINE:X 86**  
   
      Daha fazla bilgi için bkz: [/MACHINE (hedef platformu belirtin)](/cpp/build/reference/machine-specify-target-platform).  
   

@@ -1,9 +1,9 @@
 ---
-title: "Özel T4 metin şablonu yönerge işlemcileri oluşturma | Microsoft Docs"
-ms.custom: 
+title: Özel T4 metin şablonu yönerge işlemcileri oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, custom directive processors
@@ -14,17 +14,17 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 305eb97d18e8513a92637cd92b1f28798677f314
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Özel T4 Metin Şablonu Yönerge İşlemcileri Oluşturma
 *Metin şablonu dönüştürme süreci* geçen bir *metin şablonu* dosyası olarak giriş ve çıkış olarak bir metin dosyası oluşturur. *Metin şablonu dönüştürme altyapısı* işlemi ve altyapı metin şablonu dönüştürme ana bilgisayar ve bir veya daha fazla metin şablonu ile etkileşim denetimleri *yönerge işlemcileri* tamamlamak için işlem. Daha fazla bilgi için bkz: [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).  
   
  Özel yönerge işlemcisi oluşturmak için herhangi birinden devralan bir sınıf oluşturun. <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> veya <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  
   
- Bu iki arasındaki fark <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> kullanıcıdan parametreleri almak ve şablon çıktı dosyası üreten kodunu oluşturmak için gerekli olan minimum arabirimini uygular. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>uygulayan tasarım deseni gerektirir/sağlar. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>iki özel parametre işleme `requires` ve `provides`.  Örneğin, özel yönerge işlemcisi, açık şekilde kullanıcıdan dosya adını kabul etmek ve dosyayı okuma ve ardından dosyanın metni adlı bir değişkende saklayın `fileText`. Öğesinin bir alt <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> sınıfı alabilir bir dosya adı kullanıcıdan değeri olarak `requires` parametresi ve değeri olarak metin depolanacağı değişkeninin adı `provides` parametresi. Bu işlemci açın ve dosyayı okuma ve ardından dosyanın metni belirtilen değişkende saklayın.  
+ Bu iki arasındaki fark <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> kullanıcıdan parametreleri almak ve şablon çıktı dosyası üreten kodunu oluşturmak için gerekli olan minimum arabirimini uygular. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> uygulayan tasarım deseni gerektirir/sağlar. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> iki özel parametre işleme `requires` ve `provides`.  Örneğin, özel yönerge işlemcisi, açık şekilde kullanıcıdan dosya adını kabul etmek ve dosyayı okuma ve ardından dosyanın metni adlı bir değişkende saklayın `fileText`. Öğesinin bir alt <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> sınıfı alabilir bir dosya adı kullanıcıdan değeri olarak `requires` parametresi ve değeri olarak metin depolanacağı değişkeninin adı `provides` parametresi. Bu işlemci açın ve dosyayı okuma ve ardından dosyanın metni belirtilen değişkende saklayın.  
   
  Bir metin şablonunda özel yönerge işlemcisi çağırmadan önce [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], kaydetmeniz gerekir.  
   
@@ -50,17 +50,17 @@ ms.lasthandoff: 02/09/2018
   
  En önemli `DirectiveProcessor` uygulamanız gereken yöntemler aşağıdaki gibidir.  
   
--   `bool IsDirectiveSupported(string directiveName)`-Dönüş `true` yönerge işlemcisi adlandırılmış yönergesiyle başa durumunda.  
+-   `bool IsDirectiveSupported(string directiveName)` -Dönüş `true` yönerge işlemcisi adlandırılmış yönergesiyle başa durumunda.  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)`-Şablon motoru şablon yönergesinde her örneği için bu yöntemi çağırır. İşlemci sonuçları kaydetmeniz gerekir.  
+-   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Şablon motoru şablon yönergesinde her örneği için bu yöntemi çağırır. İşlemci sonuçları kaydetmeniz gerekir.  
   
  ProcessDirective() tüm çağrıları sonra şablon altyapısı bu yöntemleri çağırır:  
   
--   `string[] GetReferencesForProcessingRun()`-Şablon kodu gerektirir derlemeleri adlarını döndürür.  
+-   `string[] GetReferencesForProcessingRun()` -Şablon kodu gerektirir derlemeleri adlarını döndürür.  
   
--   `string[] GetImportsForProcessingRun()`-Kullanılabilir ad alanlarının şablon kodunda döndür.  
+-   `string[] GetImportsForProcessingRun()` -Kullanılabilir ad alanlarının şablon kodunda döndür.  
   
--   `string GetClassCodeForProcessingRun()`-Yöntemler, özellikler ve şablon kodu kullanabileceğiniz diğer bildirimleri kodunu döndürür. Bunu yapmanın en kolay yolu C# veya Visual Basic kodu içeren bir dize oluşturmaktır. Yönerge işlemcisi herhangi bir CLR dil kullanan bir şablondan çağrılan yeteneğine yapmak için deyimleri CodeDom ağaç olarak oluşturun ve şablon tarafından kullanılan dil ağacında seri hale getirme sonucunu döndürür.  
+-   `string GetClassCodeForProcessingRun()` -Yöntemler, özellikler ve şablon kodu kullanabileceğiniz diğer bildirimleri kodunu döndürür. Bunu yapmanın en kolay yolu C# veya Visual Basic kodu içeren bir dize oluşturmaktır. Yönerge işlemcisi herhangi bir CLR dil kullanan bir şablondan çağrılan yeteneğine yapmak için deyimleri CodeDom ağaç olarak oluşturun ve şablon tarafından kullanılan dil ağacında seri hale getirme sonucunu döndürür.  
   
 -   Daha fazla bilgi için bkz: [izlenecek yol: özel yönerge işlemcisi oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   

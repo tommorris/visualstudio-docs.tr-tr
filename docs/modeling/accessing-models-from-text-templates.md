@@ -1,9 +1,9 @@
 ---
-title: "Metin şablonlardan modelleri erişme | Microsoft Docs"
-ms.custom: 
+title: Metin şablonlardan modelleri erişme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, accessing models
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>Metin Şablonlarından Modellere Erişme
 Metin şablonları kullanarak raporu dosyalarını, kaynak kodu dosyaları ve etki alanına özgü dil modellerinde bağlı diğer metin dosyaları oluşturabilirsiniz. Metin şablonları hakkında temel bilgiler için bkz: [kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md). Metin şablonları, DSL ayıklarken Deneysel modunda çalışır ve DSL dağıtmış olan bir bilgisayarda da çalışır.  
@@ -64,7 +64,7 @@ Here is a list of elements in the model:
   
 -   Kod parçaları yazılmış olan dil C# olsa da, herhangi bir türde metin oluşturabilir. Alternatif olarak kod yazabilirsiniz [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] özelliği ekleyerek `language="VB"` için `template` yönergesi.  
   
--   Şablon hatalarını ayıklamak için ekleme `debug="true"` için `template` yönergesi. Şablon başka bir kopyasında açılır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir özel durum oluşursa. Hata ayıklayıcı kodda belirli bir noktada içine kesmek istediğinizden, deyim takın.`System.Diagnostics.Debugger.Break();`  
+-   Şablon hatalarını ayıklamak için ekleme `debug="true"` için `template` yönergesi. Şablon başka bir kopyasında açılır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir özel durum oluşursa. Hata ayıklayıcı kodda belirli bir noktada içine kesmek istediğinizden, deyim takın. `System.Diagnostics.Debugger.Break();`  
   
      Daha fazla bilgi için bkz: [T4 metin şablonuna ilişkin hata ayıklama](../modeling/debugging-a-t4-text-template.md).  
   
@@ -99,7 +99,7 @@ Here is a list of elements in the model:
   
  Bir hata bulunursa, hatalar penceresinde bildirilir ve sonuç dosyası bir hata iletisi içerir.  
   
-##  <a name="Multiple"></a>Metin şablonundan birden fazla modeli erişme  
+##  <a name="Multiple"></a> Metin şablonundan birden fazla modeli erişme  
   
 > [!NOTE]
 >  Bu yöntem, aynı şablonu birden fazla modellerinde Okuma olanak tanır ancak ModelBus başvuruları desteklemez. ModelBus başvurular birbirine modelleri okumak için bkz: [kullanarak Visual Studio ModelBus metin şablonunda](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
@@ -177,7 +177,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
 ```  
   
- `LoopSplitter.tt`çağırır `LoopTemplate.t4`ve sonra sonuçta elde edilen dosyasını kendi parçalara ayırır. Model okumaz çünkü bu şablonu bir modelleme şablonu olmasını olmadığından emin dikkat edin.  
+ `LoopSplitter.tt` çağırır `LoopTemplate.t4`ve sonra sonuçta elde edilen dosyasını kendi parçalara ayırır. Model okumaz çünkü bu şablonu bir modelleme şablonu olmasını olmadığından emin dikkat edin.  
   
 ```  
 <#@ template hostspecific="true" language="C#" #>  

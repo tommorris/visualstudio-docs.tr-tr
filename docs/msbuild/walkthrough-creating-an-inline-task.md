@@ -1,27 +1,27 @@
 ---
-title: "İzlenecek yol: satır içi göre oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: satır içi göre oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, tutorial
 - MSBuild, tasks
 ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
-caps.latest.revision: 
+caps.latest.revision: 14
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: fb08d3f4774f0d21c44a29414955f30509456757
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>İzlenecek Yol: Satır İçi Göre Oluşturma
 MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluşturulan <xref:Microsoft.Build.Framework.ITask> arabirimi. .NET Framework sürüm 4 ile başlayarak, proje dosyasında görevleri satır içi oluşturabilirsiniz. Görev barındırmak için ayrı bir derleme oluşturmak zorunda değildir. Daha fazla bilgi için bkz: [satır içi görevleri](../msbuild/msbuild-inline-tasks.md).  
@@ -234,11 +234,11 @@ MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluştu
   
  Bu kod RegX olarak adlandırılır ve şu üç parametreyi olan bir satır içi görev tanımlar:  
   
--   `Expression`eşleştirilecek normal ifade bir değere sahip bir dize gerekli giriş parametresi değil. Bu örnekte, "Genel" veya "korumalı" sözcüklerini ifadeyi eşleştirir.  
+-   `Expression` eşleştirilecek normal ifade bir değere sahip bir dize gerekli giriş parametresi değil. Bu örnekte, "Genel" veya "korumalı" sözcüklerini ifadeyi eşleştirir.  
   
--   `Files`eşleşme için aranacak dosyaların listesini bir değere sahip gerekli öğe listesi giriş parametresi değil. Bu örnekte, `Files` ayarlanır `Compile` proje kaynak dosyalarını listeler öğesi.  
+-   `Files` eşleşme için aranacak dosyaların listesini bir değere sahip gerekli öğe listesi giriş parametresi değil. Bu örnekte, `Files` ayarlanır `Compile` proje kaynak dosyalarını listeler öğesi.  
   
--   `Result`bir değere sahip bir çıktı parametresini normal ifadeyle eşleşen içeriğe sahip dosyaların listesi verilmiştir.  
+-   `Result` bir değere sahip bir çıktı parametresini normal ifadeyle eşleşen içeriğe sahip dosyaların listesi verilmiştir.  
   
  Giriş parametresi değeri TestBuild hedef RegX görev çalıştırdığında ayarlanır. RegX görev her dosyasını okur ve normal ifade ile eşleşen dosyaları listesini döndürür. Bu liste olarak döndürülür `Result` MSBuild öğesi olarak gösterilen çıktı parametresi `MatchedFiles`.  
   

@@ -1,11 +1,11 @@
 ---
-title: "CL görevi | Microsoft Docs"
-ms.custom: 
+title: CL görevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing
@@ -21,17 +21,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), CL task
 - CL task (MSBuild (Visual C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-caps.latest.revision: 
+caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b5609ac97d9322ddf4af5bc5638212a3ccfd045
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="cl-task"></a>CL Görevi
 Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanın (.exe) dosyaları, dinamik bağlantı kitaplığı (.dll) dosyaları ya da kod Modülü (.netmodule) dosyaları oluşturur. Daha fazla bilgi için bkz: [derleyici seçenekleri](/cpp/build/reference/compiler-options).  
@@ -181,11 +181,11 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **false** - *\<none>*  
+    -   **yanlış** - *\<yok >*  
   
     -   **doğru** -   **/CLR**  
   
-    -   **Pure** - **/clr:pure**  
+    -   **Saf** -   **/CLR: pure**  
   
     -   **Safe** - **/clr:safe**  
   
@@ -289,11 +289,11 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **false** - *\<none>*  
+    -   **yanlış** - *\<yok >*  
   
-    -   **Zaman uyumsuz** - **/EHa**  
+    -   **Async** - **/EHa**  
   
-    -   **Eşitleme** - **/EHsc**  
+    -   **Sync** - **/EHsc**  
   
     -   **SyncCThrow** - **/EHs**  
   
@@ -487,7 +487,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
     -   **MinSpace** - **/O1**  
   
-    -   **MaxSpeed** - **/O2**  
+    -   **MaxSpeed** - **O2**  
   
     -   **Tam** - **/Ox**  
   
@@ -503,7 +503,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
     -   **NotUsing** - *\<yok >*  
   
-    -   **Create** - **/Yc**  
+    -   **Oluşturma** - **/Yc**  
   
     -   **Kullanım** - **/Yu**  
   
@@ -593,7 +593,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **Birden çok iş parçacıklı** -   **/MT**  
+    -   **MultiThreaded** - **/MT**  
   
     -   **MultiThreadedDebug** - **/MTd**  
   
@@ -611,7 +611,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
      Daha fazla bilgi için bkz: [/GR (çalışma zamanı türü bilgileri etkinleştir)](/cpp/build/reference/gr-enable-run-time-type-information).  
   
--   **ShowIncludes**  
+-   **Showıncludes**  
   
      İsteğe bağlı `Boolean` parametresi.  
   
@@ -649,9 +649,9 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **Varsayılan** - **/Zp1**  
+    -   **Default** - **/Zp1**  
   
-    -   **1 bayt** - **/Zp1**  
+    -   **1Byte** - **/Zp1**  
   
     -   **2Bytes** - **/Zp2**  
   
@@ -753,7 +753,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
     -   **Level4** - **/W4**  
   
-    -   **EnableAllWarnings** -   **/duvar**  
+    -   **EnableAllWarnings** - **/Wall**  
   
      Daha fazla bilgi için bkz: **/W *** n* seçeneğini [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, wln, /wd, / biz, /wo, /Wv, /WX (uyarı düzeyi)](/cpp/build/reference/compiler-option-warning-level).  
   

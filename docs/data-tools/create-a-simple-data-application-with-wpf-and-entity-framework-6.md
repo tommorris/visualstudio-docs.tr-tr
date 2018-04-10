@@ -1,10 +1,10 @@
 ---
-title: "WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma | Microsoft Docs"
-ms.custom: 
+title: WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
@@ -15,10 +15,10 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma
 
@@ -118,7 +118,7 @@ Kendi veri bağlamasını kod yazmak mümkündür, ancak bunu sizin için Visual
         </Grid.RowDefinitions>
     ```
 
-5.  Şimdi Tasarımcısı'nda görüntülediğiniz şekilde MainWindow.xaml açın. Bu araç Visual Studio penceresi kenar bir seçenek olarak görünmesi veri kaynakları penceresinden neden olur. Penceresini veya başka sekmesini tıklatın **Shift + Alt + D** veya seçin **Görünüm &#124; Diğer Windows &#124; Veri kaynakları**. Kendi tek tek metin kutusuna müşteriler sınıftaki her bir özellik görüntülemek olacak. İlk Müşteriler birleşik giriş kutusu oku tıklatın ve seçin **ayrıntıları**. Böylece ikinci satırda gitmek istediğiniz Tasarımcı bilir düğüm tasarım yüzeyine Orta parça üzerine sürükleyin.  Bu misplace, satır XAML daha sonra el ile belirtebilirsiniz. Varsayılan olarak, denetimleri dikey bir kılavuz öğesi içinde yer alır ancak formda istiyor ancak bu noktada, bunları düzenleyebilirsiniz.  Örneğin, bu adres yukarıda üstte adı metin kutusuna yerleştirmek için mantıklı olabilir. Bu makalede örnek uygulama alanları yeniden sıralar ve iki sütunlara dağıtır.  
+5.  Şimdi Tasarımcısı'nda görüntülediğiniz şekilde MainWindow.xaml açın. Bu araç Visual Studio penceresi kenar bir seçenek olarak görünmesi veri kaynakları penceresinden neden olur. Penceresini veya başka sekmesini tıklatın **Shift + Alt + D** veya seçin **Görünüm &#124; diğer pencereler &#124; veri kaynakları**. Kendi tek tek metin kutusuna müşteriler sınıftaki her bir özellik görüntülemek olacak. İlk Müşteriler birleşik giriş kutusu oku tıklatın ve seçin **ayrıntıları**. Böylece ikinci satırda gitmek istediğiniz Tasarımcı bilir düğüm tasarım yüzeyine Orta parça üzerine sürükleyin.  Bu misplace, satır XAML daha sonra el ile belirtebilirsiniz. Varsayılan olarak, denetimleri dikey bir kılavuz öğesi içinde yer alır ancak formda istiyor ancak bu noktada, bunları düzenleyebilirsiniz.  Örneğin, bu adres yukarıda üstte adı metin kutusuna yerleştirmek için mantıklı olabilir. Bu makalede örnek uygulama alanları yeniden sıralar ve iki sütunlara dağıtır.  
   
      ![Müşteriler veri kaynağına bağlama ayrı ayrı denetimler için](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "raddata müşteriler veri kaynağı tek tek denetimlerine bağlama")  
   

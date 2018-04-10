@@ -1,9 +1,9 @@
 ---
-title: "MSI ve DSL VSIX dağıtımı | Microsoft Docs"
-ms.custom: 
+title: MSI ve DSL VSIX dağıtımı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,15 +12,15 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL'nin MSI ve VSIX Dağıtımı
-Bir etki alanına özgü dil kendi bilgisayarınızda veya diğer bilgisayarlara yükleyebilirsiniz. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Hedef bilgisayarda yüklü olması gerekir.  
+Bir etki alanına özgü dil kendi bilgisayarınızda veya diğer bilgisayarlara yükleyebilirsiniz. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Hedef bilgisayarda yüklü olması gerekir.  
   
-##  <a name="which"></a>VSIX ve MSI dağıtım arasında seçim yapma  
+##  <a name="which"></a> VSIX ve MSI dağıtım arasında seçim yapma  
  Bir etki alanına özgü dil dağıtmak için iki yöntem vardır:  
   
 |Yöntem|Yararları|  
@@ -28,7 +28,7 @@ Bir etki alanına özgü dil kendi bilgisayarınızda veya diğer bilgisayarlara
 |VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uzantısı)|Dağıtımı kolay: kopyalama ve yürütme **.vsix** DslPackage proje dosyasından.<br /><br /> Daha fazla bilgi için bkz: [yükleme ve VSX kullanarak DSL kaldırma](#Installing).|  
 |MSI (yükleyici dosyası)|-Açmak kullanıcının sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] DSL dosyasını çift tıklatarak.<br />-Hedef bilgisayardaki DSL dosya türü ile bir simge ilişkilendirir.<br />-Bir XSD (XML Şeması) DSL dosya türü ile ilişkilendirir. İçine dosya yüklendiğinde bu uyarıları önler [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> Çözümünüze bir MSI oluşturmak için bir kurulum projesi eklemeniz gerekir.<br /><br /> Daha fazla bilgi için bkz: [bir MSI dosyası kullanarak bir DSL dağıtma](#msi).|  
   
-##  <a name="Installing"></a>Yükleme ve DSL VSX kullanarak kaldırma  
+##  <a name="Installing"></a> Yükleme ve DSL VSX kullanarak kaldırma  
  Bu yöntem tarafından DSL yüklendiğinde, kullanıcı bir DSL dosyasını içinden açabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ancak Windows Gezgini'nden dosya açılamıyor.  
   
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>DSL VSX kullanarak yüklemek için  
@@ -65,7 +65,7 @@ Bir etki alanına özgü dil kendi bilgisayarınızda veya diğer bilgisayarlara
   
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
   
-##  <a name="msi"></a>Bir MSI içinde DSL dağıtma  
+##  <a name="msi"></a> Bir MSI içinde DSL dağıtma  
  MSI (Windows Yükleyici) dosyasının, DSL için tanımlayarak, DSL dosyalar Windows Gezgini'nden açmasına izin verebilirsiniz. Ayrıca, dosya adı uzantısı ile bir simge ve kısa bir açıklama ilişkilendirebilirsiniz. Ayrıca, MSI DSL dosyaları doğrulamak için kullanılan bir XSD yükleyebilirsiniz. İsterseniz, aynı anda yüklü MSI içine diğer bileşenleri ekleyebilirsiniz.  
   
  MSI dosyaları ve diğer dağıtım seçenekleri hakkında daha fazla bilgi için bkz: [dağıtma uygulamaları, hizmetleri ve bileşenleri](../deployment/deploying-applications-services-and-components.md).  

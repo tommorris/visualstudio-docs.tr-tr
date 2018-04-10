@@ -17,10 +17,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ca0ed4d1f895216e9fb3a015796a2f9e4f95087
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="item-functions"></a>Öğe İşlevleri
 MSBuild 4.0 ile başlayarak, görev ve hedeflerini kodu projede öğeleri hakkında bilgi almak için öğe işlevleri çağırabilir. Bu işlevler alma Distinct() öğeleri basitleştirmek ve öğeler arasında döngü daha hızlıdır.  

@@ -1,11 +1,11 @@
 ---
-title: "MSBuild araç takımı (ToolsVersion) | Microsoft Docs"
-ms.custom: 
+title: MSBuild araç takımı (ToolsVersion) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/31/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, multitargeting
@@ -19,10 +19,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: e274fa60ff209436be9d11f52464d7b42972ef47
-ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Araç Takımı (ToolsVersion)
 MSBuild araç takımı görevleri, hedefler ve araçları, bir uygulama oluşturmak için kullanır. Genellikle, MSBuild araç takımı microsoft.common.tasks dosya, microsoft.common.targets dosya ve csc.exe ve vbc.exe gibi derleyicileri içerir. Çoğu Toolsets, .NET Framework'ün birden fazla sürümünü ve birden fazla sistem platformu uygulamaları derlemek için kullanılabilir. Ancak, MSBuild 2.0 araç takımı, yalnızca .NET Framework 2.0 hedeflemek için kullanılabilir.  

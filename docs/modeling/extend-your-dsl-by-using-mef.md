@@ -1,9 +1,9 @@
 ---
-title: "MEF kullanarak, DSL genişletme | Microsoft Docs"
-ms.custom: 
+title: MEF kullanarak, DSL genişletme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 735de60d18bc5cbca7dc2ba509372d81622038be
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF kullanarak DSL'nizi genişletme
 Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak etki alanına özgü dil (DSL) genişletebilirsiniz. Siz veya diğer geliştiriciler DSL tanımı ve programın kodunu değiştirmeden uzantıları için DSL yazabilmesi olacaktır. Bu tür uzantılar menü komutları, sürükle ve bırak işleyicileri ve doğrulama içerir. Kullanıcılar, DSL yükleyin ve ardından isteğe bağlı olarak uzantıları için yüklemek mümkün olacaktır.  
@@ -28,7 +28,7 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak etki alanına özg�
   
 1.  Adlı yeni bir klasör oluşturun **MefExtension** içinde **DslPackage** projesi. Aşağıdaki dosyaları ekleyin:  
   
-     Dosya adı:`CommandExtensionVSCT.tt`  
+     Dosya adı: `CommandExtensionVSCT.tt`  
   
     > [!IMPORTANT]
     >  Bu dosyadaki DslPackage\GeneratedCode\Constants.tt içinde tanımlanan GUID CommandSetId aynı olacak şekilde GUID'i ayarlayın  
@@ -44,21 +44,21 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak etki alanına özg�
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
     ```  
   
-     Dosya adı:`CommandExtensionRegistrar.tt`  
+     Dosya adı: `CommandExtensionRegistrar.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
     ```  
   
-     Dosya adı:`ValidationExtensionEnablement.tt`  
+     Dosya adı: `ValidationExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
     ```  
   
-     Dosya adı:`ValidationExtensionRegistrar.tt`  
+     Dosya adı: `ValidationExtensionRegistrar.tt`  
   
      Bu dosya eklerseniz, doğrulama, DSL anahtarları en az birini kullanarak etkinleştirmelisiniz **EditorValidation** DSL Explorer'da.  
   
@@ -67,7 +67,7 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak etki alanına özg�
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
     ```  
   
-     Dosya adı:`PackageExtensionEnablement.tt`  
+     Dosya adı: `PackageExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -76,21 +76,21 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak etki alanına özg�
   
 2.  Adlı yeni bir klasör oluşturun **MefExtension** içinde **Dsl** projesi. Aşağıdaki dosyaları ekleyin:  
   
-     Dosya adı:`DesignerExtensionMetaDataAttribute.tt`  
+     Dosya adı: `DesignerExtensionMetaDataAttribute.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
     ```  
   
-     Dosya adı:`GestureExtensionEnablement.tt`  
+     Dosya adı: `GestureExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
     ```  
   
-     Dosya adı:`GestureExtensionController.tt`  
+     Dosya adı: `GestureExtensionController.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -176,7 +176,7 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak etki alanına özg�
 ### <a name="menu-commands"></a>Menü Komutları  
  Menü komutu yazmak için uygulayan bir sınıf tanımlama <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> ve adlandırılmış, DSL içinde tanımlı öznitelik sınıfı önek *YourDsl*`CommandExtension`. Birden çok menü komutu sınıfı yazabilirsiniz.  
   
- `QueryStatus()`Kullanıcı diyagramda sağ tıklatır olduğunda çağrılır. Geçerli seçim inceleyebilir ve ayarlama `command.Enabled` komutu uygulanabilir olduğunda belirtmek için.  
+ `QueryStatus()` Kullanıcı diyagramda sağ tıklatır olduğunda çağrılır. Geçerli seçim inceleyebilir ve ayarlama `command.Enabled` komutu uygulanabilir olduğunda belirtmek için.  
   
 ```  
 using System.ComponentModel.Composition;  

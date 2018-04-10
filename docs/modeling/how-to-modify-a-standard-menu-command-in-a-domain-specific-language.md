@@ -1,9 +1,9 @@
 ---
-title: "Nasıl yapılır: bir standart menü komutu bir etki alanına özgü dil değiştirme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: bir standart menü komutu bir etki alanına özgü dil değiştirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c11a559fb8ef3cc6eb951950d8779691ad20c3b5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dilde Standart Menü Komutunu Değiştirme
 Bazı, DSL otomatik olarak tanımlanan standart komutlar davranışını değiştirebilirsiniz. Örneğin, değiştirebileceği **Kes** böylece hassas bilgileri dışlar. Bunu yapmak için bir komut kümesi sınıftaki yöntemleri geçersiz kılın. Bu sınıfların CommandSet.cs dosyasında DslPackage proje tanımlanan ve türetilmiş <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -36,7 +36,7 @@ Bazı, DSL otomatik olarak tanımlanan standart komutlar davranışını değiş
 > [!NOTE]
 >  Kendi menü komutlarını oluşturmak istiyorsanız, bkz: [nasıl yapılır: bir komut için kısayol menüsü ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="what"></a>Hangi komutların, değişiklik yapabilirsiniz?  
+##  <a name="what"></a> Hangi komutların, değişiklik yapabilirsiniz?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Bulmak için hangi komutları değiştirebilirsiniz  
   
@@ -53,7 +53,7 @@ Bazı, DSL otomatik olarak tanımlanan standart komutlar davranışını değiş
     > [!NOTE]
     >  Genellikle, oluşturulan dosyaları düzenleme yapmamanız gerekir. Tüm düzenlemeleri oluşturulan dosyaları açtığında kaybolur.  
   
-##  <a name="extend"></a>Uygun komut kümesi sınıfını genişletir  
+##  <a name="extend"></a> Uygun komut kümesi sınıfını genişletir  
  Komut kümesi sınıfı kısmi bildirimini içeren yeni bir dosya oluşturun.  
   
 #### <a name="to-extend-the-command-set-class"></a>Set sınıfı komutu genişletmek için  
@@ -78,7 +78,7 @@ Bazı, DSL otomatik olarak tanımlanan standart komutlar davranışını değiş
   
      **Not** yeni dosyası oluşturmak için sınıfı dosya şablonu kullandıysanız, ad alanı ve sınıf adı düzeltmeniz gerekir.  
   
-##  <a name="override"></a>Komut yöntemlerini geçersiz kılın  
+##  <a name="override"></a> Komut yöntemlerini geçersiz kılın  
  Çoğu komutların ilişkili iki yöntem vardır: bir ad yöntemiyle ister `ProcessOnStatus`... komutu görünür ve etkin olup olmayacağını belirler. Kullanıcı Diyagramı sağ tıklatır her adlı hızla yürütün ve hiçbir değişiklik. `ProcessOnMenu`... kullanıcı komutu tıklar ve komutunun işlevi gerçekleştirmesi gereken zaman çağrılır. Bir ya da bu yöntemlerin her ikisi de geçersiz kılma isteyebilirsiniz.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Komut bir menüsünde göründüğünde değiştirmek için  
@@ -137,15 +137,15 @@ protected override void ProcessOnMenuDeleteCommand()
   
 -   `this.CurrentSelection`. Kullanıcı sağ şekli şekilleri ve bağlayıcıların bu listede her zaman dahil edilir. Kullanıcı diyagramı boş bir bölümünü tıklarsa, diyagram listesi yalnızca üyesidir.  
   
--   `this.IsDiagramSelected()` - `true`Kullanıcı diyagramı boş bir kısmına tıkladıysanız.  
+-   `this.IsDiagramSelected()` - `true` Kullanıcı diyagramı boş bir kısmına tıkladıysanız.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()`-Kullanıcı birden çok şekil seçmediğiniz  
+-   `this.IsSingleSelection()` -Kullanıcı birden çok şekil seçmediğiniz  
   
--   `this.SingleSelection`-Şekil veya kullanıcı sağ diyagramı  
+-   `this.SingleSelection` -Şekil veya kullanıcı sağ diyagramı  
   
--   `shape.ModelElement as MyLanguageElement`-bir şekli tarafından temsil edilen model öğesi.  
+-   `shape.ModelElement as MyLanguageElement` -bir şekli tarafından temsil edilen model öğesi.  
   
  Nesneler ve bağlantılar oluşturma ve öğesi başka bir öğe gidin hakkında daha fazla bilgi için bkz: [gezinme ve Program kodundaki bir modeli güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   

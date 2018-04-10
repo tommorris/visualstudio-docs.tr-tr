@@ -1,12 +1,12 @@
 ---
-title: "HTML ve CSS UWP uygulamalarında hata ayıklama | Microsoft Docs"
-ms.custom: 
+title: HTML ve CSS UWP uygulamalarında hata ayıklama | Microsoft Docs
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-caps.latest.revision: 
+caps.latest.revision: 101
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - uwp
 ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>HTML ve CSS Visual Studio UWP uygulamalarında hata ayıklama
   
@@ -37,7 +37,7 @@ ms.lasthandoff: 01/19/2018
   
  JavaScript Konsolu penceresi kullanarak ve kesme noktaları, ayarlama gibi özellikleri, hata ayıklama diğer JavaScript ilişkin bilgi için bkz: [hızlı başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md) ve [Visual Studio uygulamalarında hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InspectingDOM"></a>Canlı DOM inceleniyor  
+##  <a name="InspectingDOM"></a> Canlı DOM inceleniyor  
  DOM Gezgini işlenen sayfa görünümünü gösterir ve değerleri değiştirmek ve hemen sonuçları görmek için DOM Gezgini'ni kullanın. Bu değişiklikleri hata ayıklayıcı durdurup olmadan test etmenizi sağlar. Bu yöntemi kullanarak sayfa ile etkileşim kurarken, projenizi kaynak kodunda değiştirmez istenen kod düzeltmeleri bulduğunuzda, kaynak kodunuzu değişiklik yaparsınız.  
   
 > [!TIP]
@@ -165,7 +165,7 @@ ms.lasthandoff: 01/19/2018
   
 11. DOM Gezgini penceresi Kimliğine sahip bölüm DIV öğesinin seçin `"fView"`. Görüntülemek ve doğru DIV öğesinin seçmek için ok tuşlarını kullanın. (Sağ ok tuşuna bir öğenin alt öğelerini görüntülemenize izin verir.)  
   
-     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
+     ![DOM Gezgini](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  Yazarak JavaScript konsol penceresinin sol alt köşesinde DIV öğesinin seçebilirsiniz `select(fView)` adresindeki >> giriş istem ve sonra Enter tuşuna basın.  
@@ -235,7 +235,7 @@ ms.lasthandoff: 01/19/2018
   
      Yenileme özelliği hakkında daha fazla bilgi için bkz: [bir uygulama (JavaScript) yenileme](../debugger/refresh-an-app-javascript.md).  
   
-##  <a name="SelectingElements"></a>Öğeler seçme  
+##  <a name="SelectingElements"></a> Öğeler seçme  
  Bir uygulama hata ayıklama sırasında üç yolla DOM öğeleri seçebilirsiniz:  
   
 -   Öğeleri doğrudan DOM Gezgini penceresi (veya ok tuşlarını kullanarak) tıklayarak.  

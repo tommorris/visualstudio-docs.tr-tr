@@ -1,9 +1,9 @@
 ---
-title: "Visual Studio ModelBus metin şablonuyla | Microsoft Docs"
-ms.custom: 
+title: Visual Studio ModelBus metin şablonuyla | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 0184e3b543e509d0e523504c0ea07f6fcc36775f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Metin Şablonunda Visual Studio ModelBus'ı Kullanma
 İçeren modeli okuma metin şablonları yazma varsa [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus başvuruyor, hedef modelleri erişmek için başvuruları çözümlemek isteyebilirsiniz. Bu durumda, metin şablonları ve başvurulan etki alanına özgü dil (DSL'ler) uyum vardır:  
@@ -263,7 +263,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
 1.  En az bir dil çözüm şablonu kullanarak yeni bir DSL oluşturun. MBConsumer dil adı ve dosya uzantısının ".consume" olarak ayarlayın.  
   
-2.  DSL projesinde MBProvider DSL derlemesine başvuru ekleyin. Sağ `MBConsumer\Dsl\References` ve ardından **Başvuru Ekle**. İçinde **Gözat** sekmesinde, bulun`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
+2.  DSL projesinde MBProvider DSL derlemesine başvuru ekleyin. Sağ `MBConsumer\Dsl\References` ve ardından **Başvuru Ekle**. İçinde **Gözat** sekmesinde, bulun `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
   
      Bu, diğer DSL kullanan kodu oluşturmanızı sağlar. Birkaç DSL'ler başvuruları oluşturmak istiyorsanız, bunları da ekleyin.  
   

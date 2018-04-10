@@ -1,9 +1,9 @@
 ---
-title: "Bağımlılık diyagramlarına özel mimari doğrulaması ekleme | Microsoft Docs"
-ms.custom: 
+title: Bağımlılık diyagramlarına özel mimari doğrulaması ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7679398e5acfc2f23d51ea7f943e35d0d82e500e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Bağımlılık diyagramlarına özel mimari doğrulaması ekleme
 Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visual Studio'da katman modeli karşı bir proje kaynak kodunda kullanıcılar doğrulayabilirsiniz. Standart doğrulama algoritması yoktur, ancak kendi doğrulama uzantıları tanımlayabilirsiniz.  
@@ -92,7 +92,7 @@ Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visu
   
     2.  İçinde **ekleme yeni varlık** iletişim kutusu, ayarla:  
   
-         **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Bu seçenekler aşağı açılan listesinde biri değil. Klavyeden girmelisiniz.  
+         **Tür** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Bu seçenekler aşağı açılan listesinde biri değil. Klavyeden girmelisiniz.  
   
          **Kaynak** = **geçerli çözümdeki bir proje ile**  
   
@@ -120,7 +120,7 @@ Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visu
   
      Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
   
-##  <a name="programming"></a>Programlama doğrulama  
+##  <a name="programming"></a> Programlama doğrulama  
  Katman doğrulaması uzantısı tanımlamak için aşağıdaki özelliklere sahip bir sınıf tanımlama:  
   
 -   Genel form bildirimiyle aşağıdaki gibidir:  
@@ -189,7 +189,7 @@ Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visu
   
  Kodda öğelerine bağlantılar katmanlardan "Temsil eder" kategorisi vardır.  
   
-##  <a name="debugging"></a>Doğrulama hata ayıklama  
+##  <a name="debugging"></a> Doğrulama hata ayıklama  
  Katman doğrulaması uzantınızı hata ayıklamak için CTRL + F5 tuşuna basın. Visual Studio Deneysel bir örneğini açar. Bu örnekte, bir katman modeli oluşturun veya açın. Bu model kodu ile ilişkilendirilmelidir ve en az bir bağımlılığa sahip olması gerekir.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Bağımlılıklar içeren bir çözüm ile test  
@@ -216,7 +216,7 @@ Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visu
 ### <a name="deploying-a-validation-extension"></a>Bir doğrulama uzantısı dağıtma  
  Doğrulama uzantınızın Visual Studio uygun bir sürümü yüklü olduğu bir bilgisayara yüklemek için hedef bilgisayarda VSIX dosyasını açın. Bir bilgisayara yüklemek için [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] olan yüklü, el ile VSIX içeriğini uzantıları klasörüne ayıklamanız gerekir. Daha fazla bilgi için bkz: [katman modeli uzantısı dağıtma](../modeling/deploy-a-layer-model-extension.md).  
   
-##  <a name="example"></a>Örnek kod  
+##  <a name="example"></a> Örnek kod  
   
 ```csharp  
 using System;  

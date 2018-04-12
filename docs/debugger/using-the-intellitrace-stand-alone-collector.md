@@ -74,7 +74,7 @@ ms.lasthandoff: 04/10/2018
   
 5.  [Bir Web uygulaması veya SharePoint uygulaması veri toplayın](#BKMK_Collect_Data_from_IIS_Application_Pools)  
   
-     veya  
+     -veya-  
   
      [Yönetilen bir uygulamadan veri toplama](#BKMK_Collect_Data_from_Executables)  
   
@@ -195,7 +195,7 @@ ms.lasthandoff: 04/10/2018
   
              `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
   
-         veya  
+         -veya-  
   
     -   Windows Gezgini (veya dosya Gezgini'ni) izinleriyle ayarlamak için:  
   

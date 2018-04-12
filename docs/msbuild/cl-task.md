@@ -755,7 +755,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
     -   **EnableAllWarnings** - **/Wall**  
   
-     Daha fazla bilgi için bkz: **/W *** n* seçeneğini [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, wln, /wd, / biz, /wo, /Wv, /WX (uyarı düzeyi)](/cpp/build/reference/compiler-option-warning-level).  
+     Daha fazla bilgi için bkz: **/W***n* seçeneğini [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, wln, /wd, / biz, /wo, /Wv, /WX (uyarı düzeyi)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **WholeProgramOptimization**  
   

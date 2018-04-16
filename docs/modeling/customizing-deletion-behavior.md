@@ -17,7 +17,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/10/2018
 ---
@@ -79,7 +79,7 @@ Bir öğe genellikle silinmesi, ilgili öğeler de silinecek neden olur. Tüm il
 >  Program kodunu DSL tanımınızı eklemek için ayrı kod dosyasında oluşturma **Dsl** proje ve oluşturulan kod klasörü sınıflarda büyütmek için kısmi tanımları yazma. Daha fazla bilgi için bkz: [bir etki alanına özgü dil kişiselleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a> Bir silme kapanışı tanımlama  
- Silme işlemi sınıfını kullanır *YourModel *** DeleteClosure**, bir başlangıç seçimi silmek için hangi öğelerin belirlemek için. Çağırır `ShouldVisitRelationship()` ve `ShouldVisitRolePlayer()` tekrar tekrar ilişkileri grafik taramasını. Bu yöntemleri geçersiz kılabilirsiniz. ShouldVisitRolePlayer bir bağlantı ve bağlantının rollerinden birini konumundaki öğe kimliği ile birlikte sağlanır. Aşağıdaki değerlerden birini döndürmesi gerekir:  
+ Silme işlemi sınıfını kullanır *YourModel***DeleteClosure** , bir başlangıç seçimi silmek için hangi öğelerin belirlemek için. Çağırır `ShouldVisitRelationship()` ve `ShouldVisitRolePlayer()` tekrar tekrar ilişkileri grafik taramasını. Bu yöntemleri geçersiz kılabilirsiniz. ShouldVisitRolePlayer bir bağlantı ve bağlantının rollerinden birini konumundaki öğe kimliği ile birlikte sağlanır. Aşağıdaki değerlerden birini döndürmesi gerekir:  
   
 -   **VisitorFilterResult.Yes**- öğenin silinip silinmeyeceği ve walker denemeye devam etmemelisiniz öğesi diğer bağlantılar kullanıcının.  
   

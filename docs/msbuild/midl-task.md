@@ -34,7 +34,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 51ed6c8c34fd5aa37eebffabcda077ca8554c498
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/10/2018
 ---
@@ -56,7 +56,7 @@ Microsoft arabirimi tanım dili (MIDL) derleyici aracı sarmalar midl.exe. Daha 
   
      İsteğe bağlı **dize** parametresi.  
   
-     Komut satırı seçeneklerinin listesi. Örneğin, **"*** / seçenek 1 /option2 /option#*". Tüm diğer MIDL görevi parametresi tarafından temsil edilmeyen komut satırı seçeneklerini belirtmek için bu parametreyi kullanın.  
+     Komut satırı seçeneklerinin listesi. Örneğin, **"***/seçenek 1 /option2 /option#*". Tüm diğer MIDL görevi parametresi tarafından temsil edilmeyen komut satırı seçeneklerini belirtmek için bu parametreyi kullanın.  
   
      Daha fazla bilgi için "MIDL komut satırı başvurusu" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   

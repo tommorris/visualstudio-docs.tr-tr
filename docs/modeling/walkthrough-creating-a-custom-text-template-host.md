@@ -16,12 +16,12 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ad2bc2a049a0a96a8093289af4648f077f2d1478
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>İzlenecek yol: Özel Metin Şablonu Konağı Oluşturma
-A *metin şablonu ** konak* sağlayan bir ortam sağlar *metin şablonu dönüştürme altyapısı* çalıştırmak için. Ana bilgisayar, motorun dosya sistemiyle etkileşimini yönetmekten sorumludur. Altyapısı veya *yönerge işlemcisi* bir dosya gerekiyor veya bir derleme bir kaynak ana bilgisayardan isteyebilir. Böylece, ana bilgisayar, istenen kaynağın yerini belirlemek amacıyla dizinlerde ve genel derleme önbelleğinde arama yapabilir. Daha fazla bilgi için bkz: [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).  
+A *metin şablonu**konak* sağlayan bir ortam sağlar *metin şablonu dönüştürme altyapısı* çalıştırmak için. Ana bilgisayar, motorun dosya sistemiyle etkileşimini yönetmekten sorumludur. Altyapısı veya *yönerge işlemcisi* bir dosya gerekiyor veya bir derleme bir kaynak ana bilgisayardan isteyebilir. Böylece, ana bilgisayar, istenen kaynağın yerini belirlemek amacıyla dizinlerde ve genel derleme önbelleğinde arama yapabilir. Daha fazla bilgi için bkz: [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).  
   
  Özel bir sunucu kullanmak isterseniz yazabilirsiniz *metin şablonu dönüştürme* işlevinden dışında [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] veya özel araçlar işlevselliğini tümleştirmek istiyorsanız. Özel bir sunucu oluşturmak için öğesinden devralınan bir sınıf oluşturun <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Tek tek yöntemleri için belgelere bakın <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   

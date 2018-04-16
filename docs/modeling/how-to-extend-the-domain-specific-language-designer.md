@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/10/2018
 ---
@@ -70,7 +70,7 @@ Uzantıları DSL tanımları düzenlemek için kullandığınız Tasarımcı yap
   
  Uzantıları için ana dağıtmak için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ve diğer bilgisayarlar için aşağıdaki adımları izleyin:  
   
-1.  VSIX projenizde depo VSIX yükleme dosyasını bulmak\\*\\\*.vsix  
+1.  VSIX projenizde depo VSIX yükleme dosyasını bulmak\\*\*\\\*.vsix  
   
 2.  Bu dosyayı hedef bilgisayara kopyalayın ve ardından Windows Gezgini (veya dosya Gezgini'ni) çift tıklayın.  
   

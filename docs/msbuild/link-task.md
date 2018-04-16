@@ -38,7 +38,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a5c92a6faa558445bf85637f2e51ab7fb0e7a856
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/10/2018
 ---
@@ -76,7 +76,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      İsteğe bağlı **dize** parametresi.  
   
-     Komut satırında belirtilen bağlayıcı seçenekleri listesi. Örneğin, **"*** / seçenek 1 /option2 /option#*". Diğer tarafından temsil edilmez bağlayıcı seçeneklerini belirtmek için bu parametreyi kullanın **bağlantı** görev parametresi.  
+     Komut satırında belirtilen bağlayıcı seçenekleri listesi. Örneğin, **"***/seçenek 1 /option2 /option#*". Diğer tarafından temsil edilmez bağlayıcı seçeneklerini belirtmek için bu parametreyi kullanın **bağlantı** görev parametresi.  
   
      Daha fazla bilgi için bkz: [bağlayıcı seçenekleri](/cpp/build/reference/linker-options).  
   

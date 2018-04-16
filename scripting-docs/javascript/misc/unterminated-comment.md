@@ -27,7 +27,7 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/10/2018
 ---
 # <a name="unterminated-comment"></a>Sonlandırılmayan açıklama
-Çok satır yorum blok başladı, ancak bunu doğru olarak sonlandırılmadı. Çok satırlı açıklamalar başlar ile bir "/ *" birleşimi ve geriye doğru ile biten "\*/" birleşimi. Bir örnek verilmiştir:  
+Çok satır yorum blok başladı, ancak bunu doğru olarak sonlandırılmadı. Çok satırlı açıklamalar başlar ile bir "/\*" birleşimi ve geriye doğru ile biten "\*/" birleşimi. Bir örnek verilmiştir:  
   
 ```JavaScript  
 /* This is a comment  
@@ -36,7 +36,7 @@ This is another part of the same comment.*/
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Çok satırlı yorumlarla sonlandırmak mutlaka "* /".  
+-   Çok satırlı yorumlarla sonlandırmak mutlaka "*/".  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Açıklama Deyimleri](../../javascript/reference/comment-statements-javascript.md)

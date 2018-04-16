@@ -33,7 +33,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 13b6ceb908e45cf98f32f89605bf48f8e747b7aa
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/10/2018
 ---
@@ -47,7 +47,7 @@ Microsoft 32 Bit Kitaplık Yöneticisi Aracı sarmalar lib.exe. Kitaplığı Yö
 |---------------|-----------------|  
 |**AdditionalDependencies**|İsteğe bağlı **String []** parametresi.<br /><br /> Komut satırına eklenecek ek öğelerini belirtir.|  
 |**AdditionalLibraryDirectories**|İsteğe bağlı **String []** parametresi.<br /><br /> Ortam Kitaplığı yol geçersiz kılar. Bir dizin adı belirtin.<br /><br /> Daha fazla bilgi için bkz: [/Libpath (ek Libpath)](/cpp/build/reference/libpath-additional-libpath).|  
-|**AdditionalOptions**|İsteğe bağlı **dize** parametresi.<br /><br /> Komut satırında belirtilen lib.exe seçenekleri listesi. Örneğin, **"*** / seçenek 1 /option2 /option#*". Diğer tarafından temsil edilmez lib.exe seçenekleri belirtmek için bu parametreyi kullanın **LIB** görev parametresi.<br /><br /> Daha fazla bilgi için bkz: [çalıştıran LIB](/cpp/build/reference/running-lib).|  
+|**AdditionalOptions**|İsteğe bağlı **dize** parametresi.<br /><br /> Komut satırında belirtilen lib.exe seçenekleri listesi. Örneğin, **"***/seçenek 1/option2 /option#*". Diğer tarafından temsil edilmez lib.exe seçenekleri belirtmek için bu parametreyi kullanın **LIB** görev parametresi.<br /><br /> Daha fazla bilgi için bkz: [çalıştıran LIB](/cpp/build/reference/running-lib).|  
 |**DisplayLibrary**|İsteğe bağlı **dize** parametresi.<br /><br /> Çıktı Kitaplığı hakkında bilgileri görüntüler. Bir dosyaya bilgi yönlendirmek için bir dosya adı belirtin. "CON" veya hiçbir şey bilgileri konsola yeniden yönlendirmek için belirtin.<br /><br /> Bu parametre karşılık gelen **/LIST** lib.exe seçeneği.|  
 |**ErrorReporting**|İsteğe bağlı **dize** parametresi.<br /><br /> Çalışma zamanında lib.exe başarısız olursa iç hata bilgilerini Microsoft'a göndermek nasıl belirtir.<br /><br /> Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.<br /><br /> -   **NoErrorReport** -   **/errorreport: yok**<br />-   **PromptImmediately** - **/ERRORREPORT:PROMPT**<br />-   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**<br />-   **SendErrorReport** - **/ERRORREPORT:SEND**<br /><br /> Daha fazla bilgi için bkz: **/errorreport** komut satırı seçeneği [çalıştıran LIB](/cpp/build/reference/running-lib).|  
 |**ExportNamedFunctions**|İsteğe bağlı **String []** parametresi.<br /><br /> Dışarı aktarmak için bir veya daha fazla işlevleri belirtir.<br /><br /> Bu parametre karşılık gelen **/dışarı aktarma:** lib.exe seçeneği.|  

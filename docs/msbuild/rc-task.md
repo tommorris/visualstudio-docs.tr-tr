@@ -30,7 +30,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2a785ae38f76f58c20baec6a0705d68feb9cbbf2
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/10/2018
 ---
@@ -43,7 +43,7 @@ Microsoft Windows Kaynak Derleyicisi aracı sarmalar rc.exe. **RC** görev imle�
 |Parametre|Açıklama|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|İsteğe bağlı **String []** parametresi.<br /><br /> Bir dizin için dosyaları Ekle aranır dizinlerin listesi ekler.<br /><br /> Daha fazla bilgi için bkz: **/I** seçeneğini [kullanarak RC (RC komut satırı)](http://go.microsoft.com/fwlink/?LinkId=155730) MSDN Web sitesinde.|  
-|**AdditionalOptions**|İsteğe bağlı **dize** parametresi.<br /><br /> Komut satırı optionsor örnek listesi **"*** / seçenek 1 /option2 /option#*". Diğer tarafından temsil edilmez komut satırı seçeneklerini belirtmek için bu parametreyi kullanın **RC** görev parametresi.<br /><br /> Seçenekler, daha fazla bilgi için bkz: [kullanarak RC (RC komut satırı)](http://go.microsoft.com/fwlink/?LinkId=155730) MSDN Web sitesinde.|  
+|**AdditionalOptions**|İsteğe bağlı **dize** parametresi.<br /><br /> Komut satırı optionsor örnek listesi **"***/seçenek 1 /option2 /option#*". Diğer tarafından temsil edilmez komut satırı seçeneklerini belirtmek için bu parametreyi kullanın **RC** görev parametresi.<br /><br /> Seçenekler, daha fazla bilgi için bkz: [kullanarak RC (RC komut satırı)](http://go.microsoft.com/fwlink/?LinkId=155730) MSDN Web sitesinde.|  
 |**Kültür**|İsteğe bağlı **dize** parametresi.<br /><br /> Kaynakları kullanılan kültür temsil eden bir yerel ayar Kimliğini belirtir.<br /><br /> Daha fazla bilgi için bkz: **/l** seçeneğini [kullanarak RC (RC komut satırı)](http://go.microsoft.com/fwlink/?LinkId=155730) MSDN Web sitesinde.|  
 |**IgnoreStandardIncludePath**|İsteğe bağlı **Boolean** parametresi.<br /><br /> Varsa `true`, üst bilgi veya kaynak dosyaları için aradığında INCLUDE ortam değişkeni kontrol kaynak derleyicisi engeller.<br /><br /> Daha fazla bilgi için bkz: **/x** seçeneğini [kullanarak RC (RC komut satırı)](http://go.microsoft.com/fwlink/?LinkId=155730) MSDN Web sitesinde.|  
 |**NullTerminateStrings**|İsteğe bağlı **Boolean** parametresi.<br /><br /> Varsa `true`, tüm dizelerini dize tablosunda null sonlandırır.<br /><br /> Daha fazla bilgi için bkz: **/n** seçeneğini [kullanarak RC (RC komut satırı)](http://go.microsoft.com/fwlink/?LinkId=155730) MSDN Web sitesinde.|  

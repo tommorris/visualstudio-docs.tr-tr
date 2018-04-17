@@ -1,27 +1,23 @@
 ---
-title: "Nasıl yapılır: performans kurallarını yapılandırma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: performans kurallarını yapılandırma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.ruleseditor
 ms.assetid: a148b468-b849-4858-880a-808a6b47e596
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9b389f570a1dd0a16fb4266268be953433aaa1e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3c6ed583f4ad9db369ed1b05fd23a42c104bad31
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-performance-rules"></a>Nasıl yapılır: performans kurallarını yapılandırma
 Th Visual Studio profil oluşturma araçları için performans uyarıları program yürütme yavaşlatabilir profili uygulamasında sorunları gösterir. Uyarılar, daha kullanışlı verileri toplamak için koleksiyon yöntemleri değiştirmeniz gerekebilir de belirtebilirsiniz. Performans uyarıları bir profil oluşturma oturumu otomatik olarak oluşturulur ve görüntülenir **hata listesi** bir profil oluşturma veri dosyası açıldığında penceresi [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Belirli uyarılar ilgilendiğiniz ve bazı uyarılar yanlış olarak yükseltilmiş senaryoları için geçerli olmayabilir. Performans uyarıları göstermek veya belirli uyarıları gizlemek için yapılandırabilirsiniz.  

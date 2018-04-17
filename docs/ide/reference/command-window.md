@@ -1,13 +1,10 @@
 ---
 title: Komut penceresinde | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.CommandWindow
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3b1de69c905757c8d28922cd09eadd5abf7d05e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5093c409a86e4488ef7c572c9f4f847bd803bbfd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-window"></a>Komut Penceresi
 **Komutu** penceresi komutları veya diğer adlar doğrudan yürütmek için kullanılan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Hiçbir menüde menü komutları ve görünmez komutlar yürütebilir. Görüntülenecek **komutu** penceresinde, seçin **diğer pencereler** gelen **Görünüm** menü ve seçin **komut penceresi**.  
@@ -60,7 +56,7 @@ ms.lasthandoff: 12/22/2017
   
 |Eylem|İmleç konumu|KeyBinding|  
 |------------|---------------------|----------------|  
-|Önceden girilen komutların listesini geçiş yapın.|Giriş hattı|YUKARI OK & AŞAĞI OK|  
+|Önceden girilen komutların listesini geçiş yapın.|Giriş hattı|YUKARI OK &AMP; AŞAĞI OK|  
 |Pencereyi kaydırın.|Komut penceresi içeriği|CTRL + YUKARI OK|  
 |Pencere aşağı kaydırın.|Komut penceresi içeriği|Aşağı Ok veya CTRL + AŞAĞI OK|  
   
@@ -86,13 +82,13 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   
  Bu örnekte,  
   
--   `Edit.ReplaceInFiles`komut  
+-   `Edit.ReplaceInFiles` komut  
   
--   `/case`ve `/pattern:regex` anahtarlara (eğik çizgi [/] karakteriyle başlayan)  
+-   `/case` ve `/pattern:regex` anahtarlara (eğik çizgi [/] karakteriyle başlayan)  
   
--   `regex`değeri `/pattern` ; anahtar `/case` anahtar değere sahip değil  
+-   `regex` değeri `/pattern` ; anahtar `/case` anahtar değere sahip değil  
   
--   `var[1-3]+`ve `oldpar` parametreleri  
+-   `var[1-3]+` ve `oldpar` parametreleri  
   
     > [!NOTE]
     >  Komut, parametresi, anahtar veya boşluk içeren değer çift tırnak işaretleri iki tarafında olması gerekir.  

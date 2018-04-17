@@ -1,27 +1,23 @@
 ---
-title: "Çağrı ağacı görünümü - izleme verileri | Microsoft Docs"
-ms.custom: 
+title: Çağrı ağacı görünümü - izleme verileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d528c4161b2fcdf61a7357e74e64caa124f995de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9a95971c2c84d7a816446a4e6229d55f60e43de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Çağrı ağacı görünümü - izleme verileri
 Bir işlev çağrısı ağacında değerlerini çağrısı ağacında üst işlevi tarafından çağrılan işlev örnekleri için zaman belirtin. Yüzde değerleri, toplam geçen dahil süre işlevi örneklerine profil çalıştırmada tüm işlevlerin değerini karşılaştırılmasıyla hesaplanır.  
@@ -42,7 +38,7 @@ Bir işlev çağrısı ağacında değerlerini çağrısı ağacında üst işle
 |**İşlem adı**|İşleme atanan adı.|  
 |**Zaman özel araştırma ek yükü**|Bu işlev süredir yükü, araçları tarafından neden oldu. Araştırma yükünü tüm özel sürelerinden çıkarılır.|  
 |**Zaman dahil araştırması ek yükü**|Bu işlev ve onun alt işlevleri için ek yükü süresi, araçları tarafından neden oldu. Araştırma yükü tüm kapsayıcı sürelerinden çıkarılır.|  
-|**Düzeyi**|Çağrı ağacı işlevinde derinliği. Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
+|**düzeyi**|Çağrı ağacı işlevinde derinliği. Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
   
 ## <a name="elapsed-inclusive-values"></a>Geçen dahil değerleri  
  Geçen dahil değerleri çağrısı ağacında üst işlevi tarafından çağrılan işlev örneklerine çağrı yığınını zamanını gösterir. Zaman harcanan zamanın işlevin adı veriliyordu alt işlevleri ve bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarını içerir.  

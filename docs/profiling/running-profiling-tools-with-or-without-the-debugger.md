@@ -1,23 +1,21 @@
 ---
-title: "Profil Araçları ile veya hata ayıklayıcı olmadan çalışan | Microsoft Docs"
-ms.custom: 
+title: Profil Araçları ile veya hata ayıklayıcı olmadan çalışan | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 462b164d0a6d3e9cba0f9698b7dba3b01aa5fee5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 31ae64a24cab971ff54a92ec447371ad24bb7c24
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Profil Araçları ile veya hata ayıklayıcı olmadan çalıştırma
 Visual Studio şimdi sunar performans seçimine araçları, bazıları (örneğin, **CPU kullanımı** ve **bellek kullanımı**) ile veya hata ayıklayıcı olmadan çalıştırılabilir. Hata ayıklayıcı olmayan performans araçları araçları hata ayıklayıcı tümleşik hata ayıklama yapılandırmaları üzerinde çalıştırmak için tasarlanmış olsa da yayın yapılandırmalarında çalıştırmak üzere tasarlanmıştır.  
@@ -39,7 +37,7 @@ Visual Studio şimdi sunar performans seçimine araçları, bazıları (örneği
   
      Yayın derlemeleri sağlayan bazı en iyi duruma getirme derlemeleri olmaması hata ayıklama, örneğin satır içi kullanım işlev çağrılarını ve sabitleri, ayıklama kullanılmayan kod yolları ve hata ayıklayıcı tarafından kullanılan şekilde depolanmasını değişkenleri. (Örneğin özel durumu ve modülü yük olaylarını kesintiye uğratan) hata ayıklama için gereken belirli işlemler gerçekleştirdiğinden debugger performansı kez değiştirir. Hata ayıklayıcı iyileştirmeler için hesap değil ancak hala hata ayıklama sırasında alınan diğer göreli ölçümlere ile karşılaştırıldığında yararlı olabilir hata ayıklayıcı tümleşik araçları performans numaraları daha düşüktür. Hata ayıklayıcı olmayan araçlarla yayın yapılandırmaları için performans numaraları çok daha kesin.
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>Hata ayıklama sırasında profil oluşturma verileri toplama  
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Hata ayıklama sırasında profil oluşturma verileri toplama  
  Aşağıdaki bölümde, yerel olarak hata ayıklama ile ilgilidir. Bir aygıt veya uzaktan, sonraki bölümlerde hata ayıklama hata ayıklama hakkında öğrenebilirsiniz.  
   
 1.  Açık hata ayıklamak için istediğiniz projeyi ardından **hata ayıklama / hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).  
@@ -52,7 +50,7 @@ Visual Studio şimdi sunar performans seçimine araçları, bazıları (örneği
   
      Aşağıdaki grafik gösterir **tanılama araçları** Visual Studio 2015 güncelleştirme 1 penceresinde:  
   
-     ![DiagnosticTools &#45; Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools Update1")  
+     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools Update1")  
   
 4.  Görmek isteyip istemediğinizi seçebilirsiniz **bellek kullanımı** veya **CPU kullanımı** (veya her ikisi de) ile **seçtiğiniz Araçları** araç çubuğunda ayarlama. Visual Studio Enterprise çalıştırıyorsanız, etkinleştirme veya IntelliTrace içinde devre dışı **Araçlar / Seçenekler / IntelliTrace**.  
   

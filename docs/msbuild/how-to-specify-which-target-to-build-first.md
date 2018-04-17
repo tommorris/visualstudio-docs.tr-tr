@@ -1,28 +1,24 @@
 ---
-title: "Nasıl yapılır: derleme için önce hangi hedefin belirtme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: derleme için önce hangi hedefin belirtme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - DefaultTargets attribute [MSBuild]
 - MSBuild, specifying the defalut target
 - MSBuild, DefaultTargets attribute
 ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9004bb5335cb06656e378485460ea87093e4372
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ad48e38142949f10256780281becebeb5d4a0dcd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Nasıl Yapılır: Önce Hangi Hedefin Derleneceğini Belirtme
 Bir veya daha fazla proje dosyası içerebilir `Target` proje nasıl yapılandırıldığını tanımlayan öğeleri. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Altyapısı derlemeler ilk proje dosyası içermedikçe bulur ve bağımlılıkları, bu proje bir `DefaultTargets` öznitelik, bir `InitialTargets` özniteliği ya da bir hedef belirtilen komut satırını kullanarak **/ Hedef** geçin.  

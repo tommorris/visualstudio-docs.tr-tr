@@ -1,23 +1,21 @@
 ---
-title: "Hesaplanan ve özel depolama özellikleri | Microsoft Docs"
-ms.custom: 
+title: Hesaplanan ve özel depolama özellikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1b5d89a621c0f325fd20dbff47c30975f760a6f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 153ff58e5ace618fbf9e6f0e3bb25614d21fc98a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Hesaplanan ve Özel Depolama Özellikleri
 Bir etki alanına özgü dil (DSL) tüm etki alanı özelliklerinde diyagramında ve dil Gezgini'nde kullanıcıya görüntülenen ve program kodu tarafından erişilebilir. Ancak, Özellikler değerlerine depolanan şekilde farklılık gösterir.  
@@ -84,7 +82,7 @@ Bir etki alanına özgü dil (DSL) tüm etki alanı özelliklerinde diyagramınd
   
 10. Test özelliği. Deneyin olduğundan emin olun **geri** ve **Yinele**.  
   
-##  <a name="setters"></a>İşlemler ve özel ayarlayıcıları  
+##  <a name="setters"></a> İşlemler ve özel ayarlayıcıları  
  Yöntem genellikle etkin bir işlem çağrıldığı için özel depolama özellik kümesi yönteminde, bir işlem açmak zorunda değildir.  
   
  Ancak, ayarlama yöntemi kullanıcı geri alma veya yineleme çağırırsa ya da bir işlemi geri alınıyor çağrılabilir. Zaman <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> kümesi yönteminizi davranır gibi doğrudur:  

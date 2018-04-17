@@ -1,12 +1,9 @@
 ---
-title: "ItemGroup öğesi (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: ItemGroup öğesi (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ItemGroup
 dev_langs:
@@ -18,23 +15,22 @@ helpviewer_keywords:
 - ItemGroup element [MSBuild]
 - <ItemGroup> element [MSBuild]
 ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c202e58c8e28bd446dba54ecf7b9afcab49b7b9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8495669be8ff83584e0eba793c183822643e0b13
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup Öğesi (MSBuild)
 Kullanıcı tanımlı bir kümesini içerir [öğesi](../msbuild/item-element-msbuild.md) öğeleri. Kullanılan her öğe bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bir alt öğesi olarak proje belirtilen bir `ItemGroup` öğesi.  
   
- \<Project>  
- \<ItemGroup>  
+ \<Proje >  
+ \<ItemGroup >  
   
 ## <a name="syntax"></a>Sözdizimi  
   

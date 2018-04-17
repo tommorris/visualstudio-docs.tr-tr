@@ -1,16 +1,13 @@
 ---
-title: C++ ve Python ile çalışma | Microsoft Docs
+title: C++ ve Python ile çalışma
 description: Visual Studio'da Python için C++ uzantısı veya modülü yazmak için işlem amd adımları
 ms.custom: ''
 ms.date: 04/03/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -18,11 +15,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3f81a9f14d64e014fd2b40b0628d7d71884810a3
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: d7545f22f7fd19d37cfdbe90839ff83bd9d0ec38
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 

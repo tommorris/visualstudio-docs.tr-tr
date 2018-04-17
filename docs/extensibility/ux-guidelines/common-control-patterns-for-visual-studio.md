@@ -1,26 +1,24 @@
 ---
-title: "Visual Studio için ortak denetim düzenleri | Microsoft Docs"
-ms.custom: 
+title: Visual Studio için ortak denetim düzenleri | Microsoft Docs
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ded7ed6dd843a7879100704276766bfcb528b6f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8383537a7e9d49f79e98da4dd95a3474803315d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio için ortak denetim desenleri
-##  <a name="BKMK_CommonControls"></a>Ortak Denetimler  
+##  <a name="BKMK_CommonControls"></a> Ortak Denetimler  
   
 ### <a name="overview"></a>Genel Bakış  
 Ortak Denetimler Visual Studio kullanıcı arabiriminde çoğunluğu oluşturur. Visual Studio arabiriminde kullanılan en yaygın denetimleri izlemelidir [Windows Masaüstü etkileşim kuralları](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx). Bu konu için Visual Studio özeldir ve özel durumlar veya bu Windows yönergeleri büyütmek ayrıntıları ele alınmaktadır.  
@@ -52,10 +50,10 @@ Denetimlere stil ekleme yaparken dikkate alınması gereken ilk denetimleri konu
   
 -   **Aracı windows, belge düzenleyicileri, tasarım yüzeyleriyle ve tema uygulanabilir iletişim kutuları:** renk hizmetini kullanarak özel konulu görünümünü kullanın.  
   
-###  <a name="BKMK_Scrollbars"></a>Kaydırma çubukları  
+###  <a name="BKMK_Scrollbars"></a> Kaydırma çubukları  
  Kaydırma çubukları izlemelidir [Windows için ortak etkileşim desenler kaydırma çubukları](https://msdn.microsoft.com/en-us/library/windows/desktop/bb787527\(v=vs.85\).aspx) içerik bilgilerle engagement'ta sürece, Kod düzenleyicisinde ister.  
   
-###  <a name="BKMK_InputFields"></a>Giriş alanları  
+###  <a name="BKMK_InputFields"></a> Giriş alanları  
  Tipik etkileşim davranışını izleyin [metin kutuları için Windows Masaüstü yönergeleri](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742442\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Görsel stili  
@@ -78,7 +76,7 @@ Denetimlere stil ekleme yaparken dikkate alınması gereken ilk denetimleri konu
   
      ![Giriş alanı uzunluğu düzeltin: beklenen içerik için makul bir genişliği giriş alanıdır. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Giriş alanı uzunluğu düzeltin: beklenen içerik için makul bir genişliği giriş alanıdır.
   
-###  <a name="BKMK_ComboBoxesAndDropDowns"></a>Birleşik giriş kutusu ve aşağı açılır listeler  
+###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Birleşik giriş kutusu ve aşağı açılır listeler  
 Tipik etkileşim davranışını izleyin [aşağı açılır listeler ve birleşik giriş kutuları için Windows Masaüstü yönergeleri](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742404\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Görsel stili  
@@ -94,7 +92,7 @@ Birleşik giriş kutusu ve aşağı açılan listeler, bunlar gösterilir pencer
   
 ![Doğru: açılan çeviri artışa izin verme, ancak değil gereksiz yere uzun boyutlandırılır. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Doğru: açılan çeviri artışa izin verme, ancak değil gereksiz yere uzun boyutlandırılır. 
   
-###  <a name="BKMK_CheckBoxes"></a>Onay kutuları  
+###  <a name="BKMK_CheckBoxes"></a> Onay kutuları  
 Tipik etkileşim davranışını izleyin [onay kutuları için Windows Masaüstü yönergeleri](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742401\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Görsel stili  
@@ -113,7 +111,7 @@ Tipik etkileşim davranışını izleyin [onay kutuları için Windows Masaüst�
   
      ![Doğru: onay kutusunu metninin ilk satırı ile hizalanır. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Doğru: onay kutusunu metninin ilk satırı ile hizalanır.
   
-###  <a name="BKMK_RadioButtons"></a>Radyo düğmeleri  
+###  <a name="BKMK_RadioButtons"></a> Radyo düğmeleri  
 Tipik etkileşim davranışını izleyin [radyo düğmeleri için Windows Masaüstü yönergeleri](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742436\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Görsel stili  
@@ -122,7 +120,7 @@ Yardımcı programı iletişim kutularında, stil radyo düğmeleri yapın. Dene
 #### <a name="specialized-interactions"></a>Özel etkileşimler  
 Grup ayrım sıkı bir düzende korumak gerekli olmadıkça radyo seçimler kapsamak için bir grup çerçevesini kullanmak gerekli değildir.  
   
-###  <a name="BKMK_GroupFrames"></a>Grup çerçeveler  
+###  <a name="BKMK_GroupFrames"></a> Grup çerçeveler  
 Tipik etkileşim davranışını izleyin [Grup çerçeveler için Windows Masaüstü yönergeleri](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742405\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Görsel stili  
@@ -136,7 +134,7 @@ Yardımcı programı iletişim kutularında, grubu çerçeve stili yok. Denetime
   
 -   Bazen, bir grup çerçeve kapsayıcısını yerine yatay bir kural kullanmanız için kabul edilebilir.  
   
-##  <a name="BKMK_TextControls"></a>Metin denetimleri
+##  <a name="BKMK_TextControls"></a> Metin denetimleri
 
 ### <a name="static-text-fields"></a>Statik metin alanları
 
@@ -217,7 +215,7 @@ Dinamik metin iletişim veya kalıcı olmayan UI iki yolla kullanılan biri olab
 
 Kullanıcıların bilgi kopyalama becerisini sahip olmasını istiyorsanız, salt okunur metin alanındaki dinamik metin olmalıdır.
   
-##  <a name="BKMK_ButtonsAndHyperlinks"></a>Düğmeleri ve bağlar  
+##  <a name="BKMK_ButtonsAndHyperlinks"></a> Düğmeleri ve bağlar  
   
 ### <a name="overview"></a>Genel Bakış  
 Düğme ve bağlantı denetimleri (köprü) izlemelidir [köprüleri temel Windows Masaüstü yönergeler](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742406\(v=vs.85\).aspx) ifadesi, boyutlandırma ve aralık kullanım için.  
@@ -331,11 +329,11 @@ Köprüler Yardım konusu, kalıcı iletişim veya Sihirbazı'nı açma gibi Gez
   
 -   Alt çizgiler gidildiğinde görünür döndürmemelidir. Bunun yerine, geri bildirim bağlantısı etkin olduğunu kullanıcıya hafif renk değişikliği ve uygun bağlantıyı imleci ' dir.  
   
-##  <a name="BKMK_TreeViews"></a>Ağaç görünümleri  
+##  <a name="BKMK_TreeViews"></a> Ağaç görünümleri  
   
 Üst-alt gruplar halinde karmaşık düzenlemek için bir yöntem listeler ağaç görünümleri sağlar. Bir kullanıcı genişletin veya ortaya veya temel alınan alt öğeleri gizlemek için üst gruplar daraltın. Ağaç görünümü içinde her öğe, daha fazla eylem sağlamak için seçilebilir.  
   
-###  <a name="BKMK_TreeViewVisualStyle"></a>Ağaç görünümü görsel stili  
+###  <a name="BKMK_TreeViewVisualStyle"></a> Ağaç görünümü görsel stili  
   
 #### <a name="expanders"></a>Genişleticileri  
 Ağaç görünümü denetimleri, Windows ve Visual Studio tarafından kullanılan genişletici tasarımı için uygun olmalıdır. Her düğüm genişletici denetimi ortaya temel alınan öğeleri veya gizlemek için kullanır. Genişletici denetimi kullanarak, Windows ve Visual Studio içinde farklı ağaç görünümleri karşılaşabileceğiniz kullanıcılar için tutarlılık sağlar.  
@@ -359,7 +357,7 @@ Bunlar görsel öğeleri arasındaki farklar belirlemenize yardımcı simgeleri 
   
 ![Ağaç görünümü denetiminin sınırları içeriği aştığınızdan iki dikey ve yatay kaydırma çubukları görüntülenir. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Ağaç görünümü denetiminin sınırları içeriği aştığınızdan iki dikey ve yatay kaydırma çubukları görüntülenir.
   
-###  <a name="BKMK_TreeViewInteractions"></a>Ağaç görünümü etkileşimleri  
+###  <a name="BKMK_TreeViewInteractions"></a> Ağaç görünümü etkileşimleri  
   
 #### <a name="context-menus"></a>Bağlam menüleri  
 Alt menü seçenekleri bir bağlam menüsündeki bir ağaç görünümü düğümü ortaya çıkarabilir. Bir kullanıcı bir öğeyi sağ veya menü öğesi seçili ile Windows klavyede tuşa genellikle, bu oluşur. Düğüm odağı kazanır ve seçili önemlidir. Bu alt ait hangi öğesinin tanımlamak kullanıcı yardımcı olur.  

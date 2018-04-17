@@ -1,27 +1,23 @@
 ---
-title: "Görünüm - çakışma verileri işlemek | Microsoft Docs"
-ms.custom: 
+title: Görünüm - çakışma verileri işlemek | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Process view
 ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4de13644837c3fd21b38e0be6f4414700eb92414
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 41212ffb6b317d7c98a50b074d93c128977a5a82
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="process-view---contention-data"></a>İşlem görünümü - çakışma verileri
 İşlem görünümü işlemleri ve profil oluşturma çalışması sırasında yürütüldü iş parçacıklarını Çekişme verilerini görüntüler.  
@@ -38,7 +34,7 @@ ms.lasthandoff: 12/22/2017
 |**Çekişmeleri**|İş parçacığı ve işlem işlevlerini yürütülmesini engellendi sayısı.|  
 |**Çekişmeleri %**|Profil çalıştıran tüm çekişmeleri yüzdesi işlem veya iş parçacığı çekişmeleri yoktu.|  
 |**Bitiş saati**|Milisaniye veya işlemci döngülerinin sayısı işlemin veya iş parçacığı sonuna profil oluşturma başından.|  
-|**KİMLİĞİ**|Sistem tarafından oluşturulan tanımlayıcısını iş parçacığı ve işlem.|  
+|**ID**|Sistem tarafından oluşturulan tanımlayıcısını iş parçacığı ve işlem.|  
 |**Yaşam süresi**|Milisaniye veya işlemci döngülerinin sayısı işlemin veya iş parçacığı iş parçacığı ve işlem sonuna veya profil sonu başlangıcı.|  
 |**Türü**|Satırın, türü işlem veya iş parçacığı.<br /><br /> Yalnızca **VSReport** komut satırı raporlar. Daha fazla bilgi için bkz: [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Ad**|İş parçacığı ve işlem adı.|  

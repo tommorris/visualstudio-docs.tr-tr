@@ -1,28 +1,24 @@
 ---
-title: "Nasıl yapılır: derleme dosyalarına seçin | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: derleme dosyalarına seçin | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
 - MSBuild, including files
 - Include attribute [MSBuild]
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cccc76ed4adcd8339bc3f125bce759400ac4643d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c336dd93bdd8a5e9b98883fa8274e04a21a19ad2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-select-the-files-to-build"></a>Nasıl Yapılır: Derlenecek Dosyaları Seçme
 Bir projeyi derlerken birkaç dosyaları içeren, proje dosyası içinde ayrı ayrı her dosya listesi veya bir dizin veya dizinleri iç içe geçmiş bir dizi tüm dosyaları eklemek için joker karakterleri kullanabilirsiniz.  

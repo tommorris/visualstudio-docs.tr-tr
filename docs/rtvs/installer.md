@@ -1,26 +1,23 @@
 ---
-title: "Visual Studio için R Araçları'na Hoş | Microsoft Docs"
-description: "R araçları Visual Studio için yüklemiş olan geliştiriciler için Özet bilgiler."
-ms.custom: 
+title: R araçları Visual Studio için Hoş Geldiniz
+description: R araçları Visual Studio için yüklemiş olan geliştiriciler için Özet bilgiler.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0314bd144cc43fc6a1bf2589c4ae407258076d3d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0871380a91b18bd6f14c305b83f455d75e890a80
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>R araçları Visual Studio için Hoş Geldiniz
 
@@ -40,6 +37,6 @@ R araçları Visual Studio (RTVS için) yüklediğiniz için teşekkür ederiz! 
 
 RTVS CRAN R ve dağıtılmış R ile SQL Server 2016 sürümünü de dahil olmak üzere Microsoft R dağıtımlarını destekler. Aşağıdaki bağlantılar farklı Microsoft R dağıtımları hakkında daha fazla bilgi sağlar:
 
-- [Microsoft R Open](https://mran.microsoft.com/download/)
+- [Microsoft R Aç](https://mran.microsoft.com/download/)
 - [Microsoft R istemci](/machine-learning-server/r-client/what-is-microsoft-r-client)
 - [Microsoft Machine Learning Server (önceki adıyla R Server)](/machine-learning-server/)

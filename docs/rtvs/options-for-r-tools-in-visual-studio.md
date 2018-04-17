@@ -1,31 +1,28 @@
 ---
-title: "Visual Studio'da R Araçlar Seçenekler | Microsoft Docs"
-description: "Visual Studio'da R dil ve seçeneklerini ilişkili özellikleri başvurusunu."
-ms.custom: 
+title: R Araçlar Seçenekler
+description: Visual Studio'da R dil ve seçeneklerini ilişkili özellikleri başvurusunu.
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
 - vs.toolsoptionspages.r_tools
 - vs.toolsoptionspages.r_tools.advanced
 - vs.toolsoptionspages.r_tools.#150
-ms.topic: article
+ms.topic: reference
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 2a2671c5a234d4a30d64823794880dc648d219b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3a80b787d1d2631afbdac90092f9fd251758dcf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio seçenekleri için R araçları
 
@@ -105,7 +102,7 @@ Bu seçenekler değerlerin nasıl işleneceğini kontrol [değişken Explorer](v
 
 | Seçenek | Varsayılan değer | Açıklama |
 | --- | --- | --- |
-| HTML sayfaları tarayıcı | `External` | İçerik gibi yerlerde belirler bir `ggvis` çizim, veya bir `shiny` uygulama işlenir. `Internal`Visual Studio'da bir araç penceresi içinde olan HTML çıktısı gösterir; `External` varsayılan tarayıcınızda HTML çıktısını görüntüler. |
+| HTML sayfaları tarayıcı | `External` | İçerik gibi yerlerde belirler bir `ggvis` çizim, veya bir `shiny` uygulama işlenir. `Internal` Visual Studio'da bir araç penceresi içinde olan HTML çıktısı gösterir; `External` varsayılan tarayıcınızda HTML çıktısını görüntüler. |
 
 ### <a name="logging"></a>Günlüğe Kaydetme
 
@@ -117,14 +114,14 @@ Bu seçenekler değerlerin nasıl işleneceğini kontrol [değişken Explorer](v
 
 | Seçenek | Varsayılan değer | Açıklama |
 | --- | --- | --- |
-| Markdown önizlemesini tarayıcı | `External` | RMarkdown HTML çıktısı görüntülenir burada belirler. `Internal`Visual Studio'da bir araç penceresi içinde RMarkdown HTML belgesi gösterir; `External` RMarkdown varsayılan tarayıcı kullanarak HTML görüntüler. |
+| Markdown önizlemesini tarayıcı | `External` | RMarkdown HTML çıktısı görüntülenir burada belirler. `Internal` Visual Studio'da bir araç penceresi içinde RMarkdown HTML belgesi gösterir; `External` RMarkdown varsayılan tarayıcı kullanarak HTML görüntüler. |
 
 ### <a name="r-engine"></a>R altyapısı
 
 | Seçenek | Varsayılan değer | Açıklama |
 | --- | --- | --- |
 | Kod sayfası | `(OS Default)` | Kod sayfası (yerel) r için ayarlar Varsayılan olarak işletim sisteminin temel alınan yerel kullanır. | 
-| CRAN Mirror | `(Use .Rprofile)` | Paket yüklemeleri için varsayılan CRAN yansıtma ayarlar. Varsayılan ayar `Use .Rprofile` CRAN yansıtma ayarlarında dikkate alır, `.RProfile` dosya. |
+| CRAN yansıtma | `(Use .Rprofile)` | Paket yüklemeleri için varsayılan CRAN yansıtma ayarlar. Varsayılan ayar `Use .Rprofile` CRAN yansıtma ayarlarında dikkate alır, `.RProfile` dosya. |
 
 ### <a name="workspace"></a>Çalışma alanı
 

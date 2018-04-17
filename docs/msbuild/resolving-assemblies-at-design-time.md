@@ -1,26 +1,22 @@
 ---
-title: "Tasarım zamanında derlemeleri çözme | Microsoft Docs"
-ms.custom: 
+title: Tasarım zamanında derlemeleri çözme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10c327995363b2064498f88d9ec1a02a18650970
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 37974c23c96b73ffc0ccdd174028fd8936d6b9bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Tasarım Zamanında Derlemeleri Çözme
 Bir derleme başvurusu Ekle iletişim kutusunun .NET sekmesi aracılığıyla başvuru eklediğinizde, başvuru Ara başvuru bütünleştirilmiş türü ve imza tüm bilgileri içeren, ancak, mutlaka içermediğinden bir derlemeyi başka bir deyişle, gösterir. kod. .NET sekmesi, .NET Framework çalışma zamanı derlemeleri karşılık başvuru derlemeleri listeler. Ayrıca, çalışma zamanı derlemeleri üçüncü taraflar tarafından kullanılan kayıtlı AssemblyFoldersEx klasörlerde karşılık başvuru derlemeleri listeler.  

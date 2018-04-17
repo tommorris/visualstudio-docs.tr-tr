@@ -1,27 +1,23 @@
 ---
-title: "Geri alma tasarımcıları için destek sağlama | Microsoft Docs"
-ms.custom: 
+title: Geri alma tasarımcıları için destek sağlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98243c15f5f69a9aecba589b966d56a68201ab2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5fc289426c2560e978819efcd8eaf17e56b224a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supplying-undo-support-to-designers"></a>Tasarımcılar geri alma desteği sağlama
 Tasarımcıları, düzenleyiciler gibi genellikle böylece kullanıcılar kendi son değişiklikler code öğesi değiştirirken çevirebilirsiniz geri alma işlemleri desteklemesi gerekir.  
@@ -30,7 +26,7 @@ Tasarımcıları, düzenleyiciler gibi genellikle böylece kullanıcılar kendi 
   
  Geri alma özelliğini desteklemek için gereken Tasarımcı uygulamaları:  
   
--   Özet temel sınıf uygulayarak geri yönetimi sağlar<xref:System.ComponentModel.Design.UndoEngine>  
+-   Özet temel sınıf uygulayarak geri yönetimi sağlar <xref:System.ComponentModel.Design.UndoEngine>  
   
 -   Sağlar kalıcılığını ve CodeDOM destek uygulayarak <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> ve <xref:System.ComponentModel.Design.IComponentChangeService> sınıfları.  
   
@@ -73,7 +69,7 @@ Tasarımcıları, düzenleyiciler gibi genellikle böylece kullanıcılar kendi 
   
  Ortamı SDK'sı sağlayarak CodeDOM ve kalıcılığı desteği sağlar:  
   
--   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>bir uygulamaları olarak<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+-   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> bir uygulamaları olarak <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
  A <xref:System.ComponentModel.Design.IComponentChangeService> tarafından sağlanan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]'' tasarım ana bilgisayar.  
   
@@ -100,7 +96,7 @@ Tasarımcıları, düzenleyiciler gibi genellikle böylece kullanıcılar kendi 
   
 -   Özellik değişiklikleri aracılığıyla yapılır <xref:System.ComponentModel.TypeDescriptor> nesnesi.  
   
--   <xref:System.ComponentModel.Design.IComponentChangeService>geri alınamaz bir değişiklik işlendiğinde olayları el ile oluşturulur.  
+-   <xref:System.ComponentModel.Design.IComponentChangeService> geri alınamaz bir değişiklik işlendiğinde olayları el ile oluşturulur.  
   
 -   Tasarımcı değişikliği bağlamı içinde oluşturulduğu bir <xref:System.ComponentModel.Design.DesignerTransaction>.  
   

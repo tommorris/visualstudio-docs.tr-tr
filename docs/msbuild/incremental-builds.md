@@ -1,26 +1,22 @@
 ---
-title: "Artımlı derlemeler | Microsoft Docs"
-ms.custom: 
+title: Artımlı derlemeler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee1e8a136937b1291950a9df71b93a1e5c90f8c2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0c2290b7e8dc7d642967ee0c7ef2b7808ccef0c2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="incremental-builds"></a>Artımlı Derlemeler
 Artımlı derlemeler en iyi duruma getirilir ve böylece ilgili giriş dosyalarına göre güncel çıkış dosyalarınız hedefleri yürütülmez derlemeleri ' dir. Hedef öğe hem de sahip olabilir bir `Inputs` hangi hedef öğeler belirten özniteliği giriş olarak bekliyor ve bir `Outputs` hangi üretir çıkış olarak öğeler belirten özniteliği. MSBuild, bu öznitelik değerleri 1-1 eşlemesini bulmaya çalışır. 1-1 eşleme varsa, MSBuild giriş her zaman damgasını öğesine karşılık gelen kendi çıktı öğenin zaman damgasını karşılaştırır. 1-1 eşleme çıkış dosyaları için tüm giriş dosyaları karşılaştırılır. Kendi çıktı dosyasını aynı yaş ise güncel ya da kendi giriş dosya veya dosyalar daha yeni bir öğe olarak kabul edilir.  
@@ -70,7 +66,7 @@ Artımlı derlemeler en iyi duruma getirilir ve böylece ilgili giriş dosyalar�
   
  Bu öğe türü hedef yürütülen veya atlandı olsun veya olmasın olan iki öğe, "a.cs" ve "b.cs" Basit oluşturur.  
   
- MSBuild 3. 5'ten başlayarak, çıktı çıkarım, bir hedef öğe ve özellik grupları otomatik olarak gerçekleştirilir. `CreateItem`görevler bir hedef gerekli değildir ve kaçınılmalıdır. Ayrıca, `CreateProperty` görevler yalnızca bir hedef gerçekleştirilip gerçekleştirilmediğini belirlemek için bir hedef olarak kullanılmalıdır.  
+ MSBuild 3. 5'ten başlayarak, çıktı çıkarım, bir hedef öğe ve özellik grupları otomatik olarak gerçekleştirilir. `CreateItem` görevler bir hedef gerekli değildir ve kaçınılmalıdır. Ayrıca, `CreateProperty` görevler yalnızca bir hedef gerçekleştirilip gerçekleştirilmediğini belirlemek için bir hedef olarak kullanılmalıdır.  
   
 ## <a name="determining-whether-a-target-has-been-run"></a>Bir hedef çalıştırılıp çalıştırılmadığını belirleme  
  Çıktı çıkarım nedeniyle eklemek zorunda bir `CreateProperty` Görev hedef gerçekleştirilip gerçekleştirilmediğini belirleyebilmesi özellikleri ve öğelerini incelemek için bir hedef. Ekleme `CreateProperty` görev için hedef ve şablona bir `Output` öğesi, `TaskParameter` "ValueSetByTask" olan.  

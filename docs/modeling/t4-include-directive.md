@@ -1,21 +1,19 @@
 ---
-title: "T4 Include yönergesi | Microsoft Docs"
-ms.custom: 
+title: T4 Include yönergesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0de398b381cd1e45ff43b3eb1df79c9becd829c4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4cfa7742a75b24288ef3617d8195a75e13d8e817
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="t4-include-directive"></a>T4 Include Yönergesi
 Metin şablonu içindeki [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], kullanarak başka bir dosyadan metin içerebilir bir `<#@include#>` yönergesi. Yerleştireceğiniz `include` yönergeleri metin şablonu birinci sınıf özelliği bloğu önce başka bir yerindeki `<#+ ... #>`. Eklenen dosyalar da içerebilir `include` yönergeleri ve diğer yönergeleri. Bu şablon kodunu ve demirbaş metni şablonlar arasında paylaşmanızı sağlar.  
@@ -26,13 +24,13 @@ Metin şablonu içindeki [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md
 <#@ include file="filePath" [once="true"] #>  
 ```  
   
--   `filePath`mutlak veya göreli geçerli şablon dosyası olabilir.  
+-   `filePath` mutlak veya göreli geçerli şablon dosyası olabilir.  
   
      Ayrıca, belirli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uzantıları için dosyaları Ekle aramak için kendi dizinleriyle belirtebilirsiniz. Örneğin, Görselleştirme ve modelleme SDK (DSL araçları) yüklendiğinde şu klasörü ekleme listesine eklenir: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
   
-     Bu ek içerme klasörleri içeren dosyanın dosya uzantısına bağlı olabilir. Örneğin, DSL araçlarda klasör dosya uzantısına sahip dosyaları dahil olmak üzere için erişilebilir durumda yalnızca`.tt`  
+     Bu ek içerme klasörleri içeren dosyanın dosya uzantısına bağlı olabilir. Örneğin, DSL araçlarda klasör dosya uzantısına sahip dosyaları dahil olmak üzere için erişilebilir durumda yalnızca `.tt`  
   
--   `filePath`"%" ile sınırlandırılmış ortam değişkenleri içerebilir. Örneğin:  
+-   `filePath` "%" ile sınırlandırılmış ortam değişkenleri içerebilir. Örneğin:  
   
     ```  
     <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
@@ -111,7 +109,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a>MSBuild ve Visual Studio Proje özelliklerini kullanma  
+##  <a name="msbuild"></a> MSBuild ve Visual Studio Proje özelliklerini kullanma  
  Visual Studio makrosu $(SolutionDir) gibi bir içerme yönergesi kullanabilmenize karşın, bunların Msbuild'de çalışmıyor. Şablonları yapı makinenizde dönüştürmek isterseniz, bunun yerine proje özelliklerini kullanmanız gerekir.  
   
  Proje özelliği tanımlamak için .csproj veya .vbproj dosyanızı düzenleyin. Bu örnek adlı bir özelliğini tanımlar `myIncludeFolder`:  

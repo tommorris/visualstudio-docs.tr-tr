@@ -1,13 +1,10 @@
 ---
-title: "Dosyalarda Değiştir komutu | Microsoft Docs"
-ms.custom: 
+title: Dosyalarda Değiştir komutu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - edit.replaceinfiles
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - Replace In Files command
 - ReplaceInFiles command
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb81bffa6845e4e644294916a508820445da263
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fcf12ba2c439e9ecb77aeecf47e7fe4fc535b4aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="replace-in-files-command"></a>Dosyalarda Değiştir Komutu
 Bir alt kümesi üzerinde kullanılabilir seçenekleri kullanarak dosyaları metinde değiştirir **dosyalarda Değiştir** sekmesinde **bulma ve değiştirme** penceresi.  
@@ -52,13 +48,13 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  /Case veya /c  
  İsteğe bağlı. Eşleşme ortaya yalnızca zaman büyük ve küçük harfleri tam olarak belirtilen eşleşiyorsa `findwhat` bağımsız değişkeni.  
   
- /ext:`extensions`  
+ /ext: `extensions`  
  İsteğe bağlı. Aranacak dosyaların dosya uzantıları belirtir.  
   
  /Keep veya/k  
  İsteğe bağlı. Tüm değiştirilen dosyalar açık bırakılır belirtir.  
   
- /lookin:`searchpath`  
+ /lookin: `searchpath`  
  İsteğe bağlı. Arama dizini. Yol boşluk içeriyorsa, yolun tamamını tırnak işaretleri içine alın.  
   
  / Options veya /t  

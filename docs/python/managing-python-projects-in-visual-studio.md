@@ -1,27 +1,24 @@
 ---
-title: Python uygulama projeleri yönetme | Microsoft Docs
+title: Python uygulama projeleri yönetme
 description: Visual Studio projelerinde amacını açıklayan, Python kodu için proje oluşturma ve yönetme gösterir ve Python için kullanılabilen farklı proje şablonları özetler.
 ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dccac11e0ffedf90b72812806b1161f7c270571b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 9009dcb8ae65aa73b85d27458c14c1a866c321c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="python-projects"></a>Python projeleri
 

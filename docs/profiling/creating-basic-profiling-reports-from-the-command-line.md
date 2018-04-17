@@ -1,23 +1,21 @@
 ---
-title: "Profil oluşturma raporları komut satırından Basic oluşturma | Microsoft Docs"
-ms.custom: 
+title: Profil oluşturma raporları komut satırından Basic oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8915f71d4dcb84a481c0223a64afbddf9b0c722a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 23f807892e769e56cbc1caf6f9a6371ed5116924
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Komut Satırından Temel Profil Oluşturma Raporları Oluşturma
 Bu konuda .vsp ya da veri dosyası profil .vsps virgülle ayrılmış değer (.csv) raporlar üretmek temel VSPerfReport komutları açıklanmaktadır. Tüm rapor seçeneklerini açıklaması için bkz: [VSPerfReport](../profiling/vsperfreport.md).  

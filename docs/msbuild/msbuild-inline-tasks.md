@@ -1,26 +1,22 @@
 ---
-title: "MSBuild satır içi görevleri | Microsoft Docs"
-ms.custom: 
+title: MSBuild satır içi görevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 09/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 021107e4048a990c7c207d8d868db581ea0bfd4e
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 73f68b878c4333255a518850245f7efa160abf50
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild Satır İçi Görevleri
 MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluşturulan <xref:Microsoft.Build.Framework.ITask> arabirimi. Daha fazla bilgi için bkz: [görevleri](../msbuild/msbuild-tasks.md).  

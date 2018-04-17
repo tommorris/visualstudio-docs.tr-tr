@@ -1,10 +1,8 @@
 ---
-title: "DGML dosyalarını düzenleyerek kod haritalarını özelleştirme | Microsoft Docs"
-ms.custom: 
+title: DGML dosyalarını düzenleyerek kod haritalarını özelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency graphs, creating path aliases
 - dependency graphs, linking items to nodes
@@ -20,15 +18,15 @@ helpviewer_keywords:
 - dependency graphs, assigning categories and properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a0000482b34ea3c98ac6467cbebccc83bd8b5a74
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2a23bc9b82941fda5a771f49a2aaf5c944a210bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML dosyalarını düzenleyerek kod haritalarını özelleştirme
 Kod Haritası özelleştirmek için bir haritanın yönlendirilmiş grafik biçimlendirme dili (.dgml) dosyasını düzenleyebilirsiniz. Örneğin, özel stiller belirtin, özellikleri ve kategorileri kod öğeleri ve bağlantıları veya bağlantı belgeleri veya URL'leri kod öğeleri veya bağlantılar atamak için öğelerini düzenleyebilirsiniz. DGML öğeleri hakkında daha fazla bilgi için bkz: [yönlendirilmiş grafik biçimlendirme dili (DGML) başvurusu](../modeling/directed-graph-markup-language-dgml-reference.md).  
@@ -38,14 +36,14 @@ Kod Haritası özelleştirmek için bir haritanın yönlendirilmiş grafik biçi
 > [!NOTE]
 >  Kod haritaları oluşturmak için Visual Studio Enterprise olması gerekir. Visual Studio'da kod Haritası düzenlediğinizde, kullanılmayan DGML öğelerini ve özniteliklerini .dgml dosyasını kaydettiğinizde, onları silerek temizler. Yeni bağlantıları el ile eklediğinizde ayrıca kod öğeleri otomatik olarak oluşturur. .dgml dosyasını kaydettiğinizde, bir öğeye eklediğiniz tüm öznitelikler kendilerini alfabetik sırada yeniden düzenleyebilir.  
   
-##  <a name="OrganizeNodes"></a>Grup kod öğeleri  
+##  <a name="OrganizeNodes"></a> Grup kod öğeleri  
  Yeni gruplar eklemek veya bir gruba varolan düğümleri dönüştürebilirsiniz.  
   
 1.  .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.  
   
 2.  Kod öğesi için bir grubu dönüştürmek için Bul `<Node/>` bu kodu öğesinin öğesinin.  
   
-     \-veya -  
+     \- veya -  
   
      Yeni bir grup eklemek için Bul `<Nodes>` bölümü. Yeni bir ekleme `<Node/>` öğesi.  
   
@@ -79,7 +77,7 @@ Kod Haritası özelleştirmek için bir haritanın yönlendirilmiş grafik biçi
   
      Hakkında daha fazla bilgi için `Category` özniteliği için bkz: [kod öğeleri ve bağlantıları için kategoriler atayın](#AssignCategories).  
   
-##  <a name="ChangeGraphStyle"></a>Harita stilini değiştirme  
+##  <a name="ChangeGraphStyle"></a> Harita stilini değiştirme  
  Haritanın .dgml dosyasını düzenleyerek haritanın kenarlık renk ve arka plan rengini değiştirebilirsiniz. Bağlantıların ve kod öğeleri stilini değiştirmek için bkz: [bağlantıların ve kod öğeleri stilini değiştirme](#Highlight).  
   
 1.  .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.  
@@ -107,7 +105,7 @@ Kod Haritası özelleştirmek için bir haritanın yönlendirilmiş grafik biçi
     </DirectedGraph>  
     ```  
   
-##  <a name="Highlight"></a>Bağlantıların ve kod öğeleri stilini değiştirme  
+##  <a name="Highlight"></a> Bağlantıların ve kod öğeleri stilini değiştirme  
   
 ###  <a name="CreateCustomStyles"></a>   
  Aşağıdaki kod öğeleri özel stiller uygulayabilirsiniz:  
@@ -294,7 +292,7 @@ Kod Haritası özelleştirmek için bir haritanın yönlendirilmiş grafik biçi
   
      <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
   
-     <Operator>:: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "veya" &#124; "ve" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
+     <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "veya" &#124; "ve" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
      <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
   
@@ -302,15 +300,15 @@ Kod Haritası özelleştirmek için bir haritanın yönlendirilmiş grafik biçi
   
      <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
   
-     <PropertyGet>:: Tanıtıcısı =  
+     <PropertyGet> :: Tanıtıcısı =  
   
      <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
   
      <Identifier> ::= [^. ]*  
   
-     <Literal>:: = tek veya çift tırnak içine alınmış dize sabit değeri  
+     <Literal> :: = tek veya çift tırnak içine alınmış dize sabit değeri  
   
-     <Number>:: isteğe bağlı bir ondalık ayırıcısı olan rakam dizesiyle =  
+     <Number> :: isteğe bağlı bir ondalık ayırıcısı olan rakam dizesiyle =  
   
      Birden çok belirtebilirsiniz `<Condition/>` öğeleri tüm stil uygulamak için true olmalıdır.  
   
@@ -437,7 +435,7 @@ Kod Haritası özelleştirmek için bir haritanın yönlendirilmiş grafik biçi
 </DirectedGraph>  
 ```  
   
-##  <a name="AssignProperties"></a>Kod öğeleri ve bağlantılara özellikler ata  
+##  <a name="AssignProperties"></a> Kod öğeleri ve bağlantılara özellikler ata  
  Kod öğeleri ve bağlantıları özellikler atayarak düzenleyebilirsiniz. Örneğin, böylece bunları grup kendi stilini değiştirin veya gizleme belirli özelliklere sahip kod öğeleri seçebilirsiniz.  
   
 #### <a name="to-assign-a-property-to-a-code-element"></a>Kod öğesi için bir özellik atamak için  
@@ -482,7 +480,7 @@ Kod Haritası özelleştirmek için bir haritanın yönlendirilmiş grafik biçi
     </Properties>  
     ```  
   
-##  <a name="AssignCategories"></a>Kod öğeleri ve bağlantıları için kategoriler atayın  
+##  <a name="AssignCategories"></a> Kod öğeleri ve bağlantıları için kategoriler atayın  
  Aşağıdaki bölümlerde, kategoriler atayarak kod öğeleri nasıl düzenleyebilirsiniz göstermek ve hiyerarşik oluşturabilirsiniz nasıl yardımcı kategorileri kod öğelerini düzenlemek ve devralma kullanarak alt kategorileri öznitelikleri ekleyin.  
   
 #### <a name="to-assign-a-category-to-a-code-element"></a>Kod öğesi için bir kategori atamak için  
@@ -553,7 +551,7 @@ Kod Haritası özelleştirmek için bir haritanın yönlendirilmiş grafik biçi
   
      Bu örnekte, arka planını `MyFirstNode` yeşil olduğundan kendi `Category` öznitelik devralır `Background` özniteliği `MyParentCategory`.  
   
-##  <a name="AddReferences"></a>Bağlantı belge veya kod öğeleri ve bağlantıları URL'leri  
+##  <a name="AddReferences"></a> Bağlantı belge veya kod öğeleri ve bağlantıları URL'leri  
  Belgeler veya URL'ler kod öğeleri veya bağlantılar haritanın .dgml dosyasını düzenleyerek ve ekleyerek bağlayabilirsiniz bir `Reference` özniteliğini `<Node/>` kod öğesinin öğesinin veya `<Link/>` öğesi için bir bağlantı. Ardından, açın ve bu içeriği code öğesi veya bağlantı görüntüleyin. `Reference` Özniteliği o içeriğin yolunu belirtir. Bu, .dgml dosya konumu veya mutlak yol ile göreli bir yol olabilir.  
   
 > [!CAUTION]

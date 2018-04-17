@@ -1,13 +1,10 @@
 ---
-title: "Nasıl yapılır: derleme olayları belirtme (Visual Basic) | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: derleme olayları belirtme (Visual Basic) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe2ab7f174f71933d474aa4737dc713c6540492
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 87727728c2a307475e9640b1212dec1bc0eaae99
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Nasıl Yapılır: Derleme Olayları Belirtme (Visual Basic)
 Derleme olayları Visual Basic komut dosyaları, makroları veya başka eylemler derlemeyi işleminin bir parçası olarak çalıştırmak için kullanılabilir. Oluşturma öncesi olaylar derleme önce oluşur; derleme sonrası olayları derleme sonra oluşur.  

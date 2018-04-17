@@ -1,27 +1,24 @@
 ---
-title: Adım 0, yükleme Python ile çalışma | Microsoft Docs
+title: Python, adım 0, yükleme ile çalışma
 description: Visual Studio'da Python desteği yükleme kapsayan Visual Studio içinde Python ile çalışmak için bir çekirdek öğreticinin adımı 0 (Önkoşullar).
 ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: af6bfa2e1739e60e6c0a5eca625f358b528ebd85
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 10446d37c2e9e756af4bffdb7186845bd619b348
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>Visual Studio'da Python desteğini yükleme
 

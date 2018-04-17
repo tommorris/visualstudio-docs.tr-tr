@@ -1,23 +1,21 @@
 ---
 title: PF | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 548a4cedf715faf998912500bf3e2390ac07070b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eb0f9088b5c5ac40c1edf96eaac14616891ba722
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pf"></a>PF
 VSPerfCmd.exe **PF** seçeneği sayfa hataları örneklenen profil olayını ayarlar ve bir örnekleme aralığı 10 varsayılan sayfa hatalarının sayısı isteğe bağlı olarak değişir.  
@@ -44,10 +42,10 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="required-options"></a>Gerekli seçenekler  
  **PF** yalnızca aşağıdaki seçeneklerden birini içeren bir komut satırında belirtilebilir.  
   
- **Başlatma:**`AppName`  
+ **Başlat:** `AppName`  
  Profil Oluşturucu ve AppName tarafından belirtilen uygulamayı başlatır.  
   
- **Ekle:**`PID`  
+ **Ekle:** `PID`  
  Profil Oluşturucu AppName tarafından belirtilen işlem ekler.  
   
 ## <a name="invalid-options"></a>Geçersiz seçenekleri  
@@ -62,7 +60,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
  **Sayaç:** `Name`[`,Reload`[`,FriendlyName`]]  
  Sayaç tarafından belirtilen CPU performans örnekleme olay ayarlar `Name` ve örnekleme aralığı ayarlar `Reload`.  
   
- **GC**[**:**{**ayırma**&#124; **Ömür**}]  
+ **GC**[**:**{**ayırma**&#124;**ömrü**}]  
  .NET bellek verileri toplar. Varsayılan olarak (**ayırma**), her bellek ayırma etkinlikte toplanan veriler. Zaman **ömrü** parametresi belirtilmişse, veri her atık toplama etkinlikte de toplanır.  
   
 ## <a name="example"></a>Örnek  

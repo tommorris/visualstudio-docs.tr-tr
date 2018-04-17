@@ -1,7 +1,7 @@
 ---
-title: "Visual Studio'da yük kullanılacak test aracıları testi senaryolarında belirtin | Microsoft Docs"
+title: Visual Studio'da yük kullanılacak test aracıları testi senaryolarında belirtin | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - test agents, load tests
 - load tests, scenarios
@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1871078022efb153c1ceea9bdeb29cb9552179ab
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: dd6ca0c9b92f8eaa27c2a8726cc9d2cea49636b2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Nasıl yapılır: Yük Testi Senaryolarında Kullanılacak Test Aracılarını Belirtme
 
@@ -65,6 +65,6 @@ Test aracısı makine CPU kullanımı yüzde 75'inden daha vardır veya kullanı
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yük testi senaryolarını düzenleme](../test/edit-load-test-scenarios.md)
-- [İzlenecek yol: Oluşturma ve bir yük testi çalıştırma](../test/walkthrough-create-and-run-a-load-test.md)
+- [İzlenecek yol: Yük testi oluşturma ve çalıştırma](../test/walkthrough-create-and-run-a-load-test.md)
 - [Test denetleyicileri ve test aracıları](configure-test-agents-and-controllers-for-load-tests.md)
 - [Yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md)

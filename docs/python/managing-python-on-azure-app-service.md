@@ -1,30 +1,27 @@
 ---
-title: Azure uygulama hizmeti Python yorumlayıcılar ve kitaplıkları yükleme | Microsoft Docs
+title: Azure uygulama hizmeti Python yorumlayıcılar ve kitaplıkları yükleme
 description: Bir Python yorumlayıcısı ve kitaplıkları Azure App Service ve düzgün bir şekilde bu yorumlayıcı başvurmak için yapılandırma web uygulamalarını nasıl yüklenir.
 ms.custom: ''
 ms.date: 09/13/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f48a8040203f50970aa16d511f94222bf1578bb1
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 31028de1c077712b56b27c96003b5fd88eb68cbd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="managing-python-on-azure-app-service"></a>Azure uygulama Hizmeti'nde Python yönetme
+# <a name="managing-python-on-azure-app-service"></a>Azure App Service’te Python’u yönetme
 
 [Azure uygulama hizmeti](https://azure.microsoft.com/services/app-service/) siteleri REST API'ları, kendi istemcileri veya olayı tarafından tetiklenen işlem tarafından kullanılan bir tarayıcı aracılığıyla erişilen oldukları olup, bir hizmet olarak platform sunumu web uygulamaları için. Uygulama hizmeti uygulamalarını uygulamak için Python kullanarak tam olarak destekler.
 
@@ -171,7 +168,7 @@ Doğrudan sunucu ortamında paketleri yüklemek için aşağıdaki yöntemlerden
 | Yöntemler | Kullanım |
 | --- | --- |
 | [Azure App Service Kudu konsol](#azure-app-service-kudu-console) | Paketleri etkileşimli olarak yükler. Paket saf Python olmalıdır veya tekerlek yayımlamanız gerekir. |
-| [Kudu REST API](#kudu-rest-api) | Paket yükleme otomatik hale getirmek için kullanılabilir.  Paket saf Python olmalıdır veya tekerlek yayımlamanız gerekir. |
+| [Kudu REST API'si](#kudu-rest-api) | Paket yükleme otomatik hale getirmek için kullanılabilir.  Paket saf Python olmalıdır veya tekerlek yayımlamanız gerekir. |
 | Uygulamayla paketini | Paketleri doğrudan projenize yükleyin ve ardından bunları App Service'e dağıtma uygulamanızı parçası değilmiş gibi. Bağlı olarak kaç bağımlılıkları vardır ve ne sıklıkta bunları güncelleştirin, bu yöntem olmaya çalışma dağıtım almak için en kolay yolu olabilir. Dikkat edin kitaplıkları Python sürümü sunucuda eşleşmelidir, aksi takdirde dağıtımdan sonra belirsiz hatalar görebilirsiniz. Python site uzantılarını tam olarak üzerinde python.org yayımlanan bu sürümler ile aynı olan App Service'te sürümleri, uyumlu bir sürüm yerel geliştirme için kolayca edinebileceği olduğundan, bununla. |
 | Sanal ortamlar | Desteklenmez. Bunun yerine, paketleme kullanın ve ayarlayın `PYTHONPATH` paketleri konumuna işaret etmek için ortam değişkeni. |
 
@@ -204,7 +201,7 @@ Doğrudan sunucu ortamında paketleri yüklemek için aşağıdaki yöntemlerden
 > [!Note]
 > Olmadığından C Derleyici uygulama hizmeti, yerel uzantısı modüllerle herhangi bir paket için tekerlek yüklemeniz gerekir. Birçok popüler paketleri kendi Tekerlek sağlar. Verme paketlerini kullanma `pip wheel <package_name>` yerel geliştirme bilgisayarınıza ve Tekerlek sitenize karşıya yükleme. Bir örnek için bkz: [requirements.txt ile gerekli paketleri yönetme](managing-required-packages-with-requirements-txt.md).
 
-### <a name="kudu-rest-api"></a>Kudu REST API
+### <a name="kudu-rest-api"></a>Kudu REST API'si
 
 Azure portalı üzerinden Kudu konsol kullanmak yerine, komutları uzaktan Kudu REST API aracılığıyla komutu göndererek çalıştırabilirsiniz `https://yoursite.scm.azurewebsites.net/api/command`. Örneğin, yüklemek için `bottle` paket, aşağıdaki JSON sonrası `/api/command`:
 

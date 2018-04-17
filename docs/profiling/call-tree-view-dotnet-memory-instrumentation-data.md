@@ -1,27 +1,23 @@
 ---
-title: ".NET bellek izleme verileri çağrı ağacı görünümü - | Microsoft Docs"
-ms.custom: 
+title: .NET bellek izleme verileri çağrı ağacı görünümü - | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: dd359707-245a-4a36-8305-2e980b9edd53
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 043259d4ffd403abcffcfdfa724c8a8044caf5ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 09c87c3bcde262eac0865bd43046eea722a94b8d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Çağrı ağacı görünümü - .NET bellek izleme verileri
 Çağrı ağacı görünümü izleme metodunu kullanarak toplanan .NET bellek ayırma profil oluşturma veri profili uygulamada geçiş işlevi yürütme yollarını görüntüler. Ağaç kökü uygulamanın veya bileşenin içine giriş noktasıdır. Her işlevi düğümü adlı, tüm işlevlere ve .NET bellek ve zamanlama verileri işlevi için listeler.  

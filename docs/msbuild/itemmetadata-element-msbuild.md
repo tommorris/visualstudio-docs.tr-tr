@@ -1,12 +1,9 @@
 ---
-title: "Itemmetadata öğesi (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: Itemmetadata öğesi (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,23 +13,22 @@ helpviewer_keywords:
 - ItemMetadata Element [MSBuild]
 - <ItemMetadata> Element [MSBuild]
 ms.assetid: e3db5122-202d-43a9-b2f4-3e0ec4ed3d08
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d74c2aa1e7364ae8138f491c3469734e12f5aee
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7c943243a1fc3a9ca2c6dc95bfc9c3e1824083ed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata Öğesi (MSBuild)
 Öğe meta veri değeri içeren bir kullanıcı tanımlı öğeyi meta verileri anahtar içerir. Bir öğe meta verileri anahtar-değer çiftleri herhangi bir sayıda olabilir.  
 
- \<Project>  
- \<ItemGroup>  
+ \<Proje >  
+ \<ItemGroup >  
  \<Öğe >  
 
 ## <a name="syntax"></a>Sözdizimi  

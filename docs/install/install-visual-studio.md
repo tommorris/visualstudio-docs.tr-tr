@@ -3,11 +3,8 @@ title: Visual Studio 2017 yükleme | Microsoft Docs
 description: Visual Studio, adım adım yüklemeyi öğrenin.
 ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -22,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f6acdd338b0ae8d23fba338c8564d2bd95ad45
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 84aff338342d00c173176493b5509372e3a868c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017 yükleyin
 Visual Studio'yu yüklemek için yeni bir yolunu Hoş Geldiniz! Bizim en son sürümünde, onu seçin ve yalnızca gereken özellikleri yüklemek için daha kolay yaptık. Böylece daha hızlı ve daha önce hiç olmadığı kadar sistemi daha az etkileyerek yükler biz de Visual Studio minimum ayak azaltılmış.
@@ -143,7 +140,7 @@ Birkaç diğer destek seçenekleri şunlardır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 * [Visual Studio 2017 güncelleştir](update-visual-studio.md)
-* [Modify Visual Studio 2017](modify-visual-studio.md)
+* [Visual Studio 2017 değiştirme](modify-visual-studio.md)
 * [Visual Studio 2017 kaldırma](uninstall-visual-studio.md)
 * [Visual Studio 2017 çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
 * [Visual Studio 2017 Yönetici Kılavuzu](visual-studio-administrator-guide.md)

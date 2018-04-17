@@ -1,12 +1,9 @@
 ---
-title: "İçeri aktarma öğesi (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: İçeri aktarma öğesi (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Import
 dev_langs:
@@ -18,22 +15,21 @@ helpviewer_keywords:
 - Import element [MSBuild]
 - <Import> element [MSBuild]
 ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d13f376068d7f5f32a55768dbd02520152f0a30
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f1a3ec67938bacf45adb0524cdb3ebe73fa3809a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="import-element-msbuild"></a>İçeri Aktarma Öğesi (MSBuild)
 Bir proje dosyası içeriği başka bir proje dosyasına aktarır.  
 
- \<Project>  
+ \<Proje >  
  \<İçeri aktarma >  
 
 ## <a name="syntax"></a>Sözdizimi  
@@ -61,12 +57,12 @@ Bir proje dosyası içeriği başka bir proje dosyasına aktarır.
 |Öğe|Açıklama|  
 |-------------|-----------------|  
 |[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesinin bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
-|[ImportGroup](../msbuild/importgroup-element.md)|Bir koleksiyonu içerir `Import` öğeleri gruplandırılmış isteğe bağlı bir koşul altında.|  
+|[Importgroup](../msbuild/importgroup-element.md)|Bir koleksiyonu içerir `Import` öğeleri gruplandırılmış isteğe bağlı bir koşul altında.|  
 
 ## <a name="remarks"></a>Açıklamalar  
  Kullanarak `Import` öğesi, çok sayıda proje dosyalarına ortak olan kod yeniden. Bu paylaşılan kodunda yaptığınız tüm güncelleştirmeleri almak için tüm projeleri yayılan için kod bakımını kolaylaştırır.  
 
- Kurala göre paylaşılan alınan proje dosyalarını .targets dosyaları olarak kaydedilir, ancak standart [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyaları. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]farklı bir dosya adı uzantısına sahip olan bir projeyi içeri aktarma önleme değil, ancak .targets uzantısı tutarlılık için kullanmanızı öneririz.  
+ Kurala göre paylaşılan alınan proje dosyalarını .targets dosyaları olarak kaydedilir, ancak standart [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyaları. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] farklı bir dosya adı uzantısına sahip olan bir projeyi içeri aktarma önleme değil, ancak .targets uzantısı tutarlılık için kullanmanızı öneririz.  
 
  İçeri aktarılan projelerinde göreli yollar alma projenin dizini göre değerlendirilir. Bu nedenle, farklı konumlarda birkaç proje dosyalarına bir proje dosyası aldıysanız, göreli yolları alınan proje dosyasında farklı bir şekilde içeri aktarılan her proje için yorumlanacak.  
 

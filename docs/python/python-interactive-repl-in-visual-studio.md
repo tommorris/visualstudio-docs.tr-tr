@@ -1,27 +1,24 @@
 ---
-title: Python etkileşimli pencere (REPL) | Microsoft Docs
+title: Python etkileşimli pencere (REPL)
 description: Hızlı kod geliştirme için Visual Studio'da Python kodu için etkileşimli pencere (REPL) kullanma
 ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3492bdc10b94a58804ab31c71d2bdc7a66a77509
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: ad13db08bb9af31fcbe3f0f9d7faef4743ccb688
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Python etkileşimli pencere ile çalışma
 
@@ -108,7 +105,7 @@ Girme `dir()` bir kapsamda geçerli tanımlayıcıları işlev adları, sınıfl
 
 ![İmportlib kapsamında etkileşimli penceresi](media/interactive-importlib-scope.png)
 
-<a name="sending-code-to-interactive"</a>
+< a name = "gönderme kod-için-etkileşimli"</a>
 
 ## <a name="send-code-to-interactive-command"></a>Etkileşimli komutuna kod Gönder
 

@@ -1,26 +1,24 @@
 ---
-title: "Seçenekler sayfası, metin düzenleyici düğümü özellikleri | Microsoft Docs"
-ms.custom: 
+title: Seçenekler sayfası, metin düzenleyici düğümü özellikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
 ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0c4e4021dd1d54013f10f8b4bd4e7da3e81d91d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6678901da33593f8a73b9a0af42eabe721bf91d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-page-text-editor-node-properties"></a>Seçenekler Sayfası, Metin Düzenleyici Düğümü Özellikleri
 Bazı sayfaları (veya özellikleri koleksiyonları) Bu belgede açıklanan ile ilişkili **metin düzenleyici** kategorisi, `DTE.Properties("TextEditor", <Property Page>)`, **seçenekleri** iletişim kutusu. Her alt bölüm başlığı kullanılan çağrıdır erişimi `Properties` toplama ve her alt tabloda bir koleksiyondaki özellikleri listeler.  
@@ -32,7 +30,7 @@ Bazı sayfaları (veya özellikleri koleksiyonları) Bu belgede açıklanan ile 
   
 |Özellik Öğesi Adı|Değer|Açıklama|  
 |------------------------|-----------|-----------------|  
-|GoToAnchorAfterEscape|Get/Set (Boole)|Varsa `True`, seçim modundayken kaçış tuşuna basarak seçimi oluşturulan eylem başlatıldığı taşımak ekleme noktasını neden olur. `False`ekleme noktasını seçimi diğer ucundaki taşır.|  
+|GoToAnchorAfterEscape|Get/Set (Boole)|Varsa `True`, seçim modundayken kaçış tuşuna basarak seçimi oluşturulan eylem başlatıldığı taşımak ekleme noktasını neden olur. `False` ekleme noktasını seçimi diğer ucundaki taşır.|  
 |DragNDropTextEditing|Get/Set (Boole)|Seçilen bir metin bölümünü, kopyala veya kes/yapıştır işlemleri için belge içinde bir yerden başka bir yere sürükleyip sürükleyemeyeceğinizi belirler.|  
 |HorizontalScrollBar|Get/Set (Boole)|Düzenleyici pencerelerinde yatay kaydırma çubuğu olup olmadığını belirler.|  
 |VerticalScrollBar|Get/Set (Boole)|Düzenleyici pencerelerinde dikey kaydırma çubuğu olup olmadığını belirler.|  

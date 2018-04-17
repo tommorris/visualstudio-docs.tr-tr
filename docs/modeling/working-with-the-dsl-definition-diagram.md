@@ -1,10 +1,8 @@
 ---
-title: "DSL tanımı diyagram ile çalışma | Microsoft Docs"
-ms.custom: 
+title: DSL tanımı diyagram ile çalışma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.diagram
 - vs.dsltools.dsldesigner.dsldiagram
@@ -16,15 +14,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Bring Tree Here
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 603189cdc4ac65c4b12fae0e736025b622765c81
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5d9f0f89345b7c6ee024e3df2ea9f0dca58449cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>DSL Tanım Diyagramı ile Çalışma
 Diyagramı bir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tanımı etki alanına özgü dil tanımlamak için önemli bir araçtır. Etki alanınızı öğelerine model ve diyagramı ilişkileri tanımlayın ve daha okunabilir yapmak için diyagramın düzenini değiştirebilirsiniz ekleyebilirsiniz.  

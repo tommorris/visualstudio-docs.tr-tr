@@ -1,24 +1,22 @@
 ---
-title: "Bağımlılık diyagramlarına komut ve hareket ekleme | Microsoft Docs"
-ms.custom: 
+title: Bağımlılık diyagramlarına komut ve hareket ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5a8f1a2ff8e5ffc95d885b847a17e6cc16965837
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 276098a2c288f98441e8a111ed8807e22d5cfda2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Bağımlılık diyagramlarına komut ve hareket ekleme
 Visual Studio'da bağımlılık diyagramları işleyicileri hareket ve bağlam menüsü komutları tanımlayın. Bu uzantılar içine bir Visual Studio Tümleştirme Uzantısı (diğer Visual Studio kullanıcılara dağıtabileceğiniz VSIX) paketleyebilirsiniz.  
@@ -88,12 +86,12 @@ Visual Studio'da bağımlılık diyagramları işleyicileri hareket ve bağlam m
   
 |**Başvuru**|**Ne bu yapmanıza izin verir**|  
 |-------------------|------------------------------------|  
-|Program Files\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Oluşturma ve düzenleme katmanları|  
+|Program Files\Microsoft Visual Studio [sürüm] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Oluşturma ve düzenleme katmanları|  
 |Microsoft.VisualStudio.Uml.Interfaces|Oluşturma ve düzenleme katmanları|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Diyagramdaki şekilleri değiştirin|  
 |System.ComponentModel.Composition|Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak bileşenleri tanımlayın|  
 |Microsoft.VisualStudio.Modeling.Sdk.[version]|Model uzantılarını tanımlayın|  
-|Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|Şekilleri Güncelleştirme ve diyagramları|  
+|Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [sürüm]|Şekilleri Güncelleştirme ve diyagramları|  
   
 1.  Uzantınızı kodunu içerecek şekilde C# projesinde sınıf kitaplığı sınıfı dosyasını düzenleyin. Daha fazla bilgi için aşağıdaki bölümlerden birine bakın:  
   
@@ -109,7 +107,7 @@ Visual Studio'da bağımlılık diyagramları işleyicileri hareket ve bağlam m
   
      Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
   
-##  <a name="command"></a>Menü komutu tanımlama  
+##  <a name="command"></a> Menü komutu tanımlama  
  Daha fazla menü komutu tanımları varolan hareketi ya da komut projeye ekleyebilirsiniz. Her komut aşağıdaki özelliklere sahip bir sınıf tarafından tanımlanır:  
   
 -   Sınıfı aşağıdaki gibi bildirilmiş:  
@@ -124,11 +122,11 @@ Visual Studio'da bağımlılık diyagramları işleyicileri hareket ve bağlam m
   
 -   Uygulama yöntemleri `ICommandExtension` aşağıdaki gibidir:  
   
-    -   `string Text {get;}`-Menüde görünen etiketi.  
+    -   `string Text {get;}` -Menüde görünen etiketi.  
   
-    -   `void QueryStatus(IMenuCommand command)`-Kullanıcı diyagramda sağ tıklatır ve komut görünür ve kullanıcının geçerli seçim için etkin olup olmayacağını belirler olduğunda çağrılır.  
+    -   `void QueryStatus(IMenuCommand command)` -Kullanıcı diyagramda sağ tıklatır ve komut görünür ve kullanıcının geçerli seçim için etkin olup olmayacağını belirler olduğunda çağrılır.  
   
-    -   `void Execute(IMenuCommand command)`-Kullanıcı komutu seçtiğinde çağrılır.  
+    -   `void Execute(IMenuCommand command)` -Kullanıcı komutu seçtiğinde çağrılır.  
   
 -   Geçerli seçim belirlemek için aktarabilirsiniz `IDiagramContext`:  
   
@@ -214,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="gesture"></a>Hareket işleyicisi tanımlama  
+##  <a name="gesture"></a> Hareket işleyicisi tanımlama  
  Hareket işleyicisi kullanıcı bağımlılık diyagram üzerine öğeleri sürüklendiğinde ve kullanıcı herhangi bir yere diyagramda tıklattığında yanıt verir.  
   
  Varolan bir komutu veya hareket işleyicisi VSIX proje için hareket işleyicisi tanımlayan bir kod dosyası ekleyebilirsiniz:  

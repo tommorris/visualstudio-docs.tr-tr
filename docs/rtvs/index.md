@@ -1,26 +1,23 @@
 ---
-title: "Visual Studio için R araçları | Microsoft Docs"
-description: "R araçları için Visual Studio (RTVS) IntelliSense, hata ayıklama ve uzak çalışma alanları dahil olmak üzere birçok dil özellikleri sağlayan ücretsiz, açık kaynaklı bir uzantısıdır."
-ms.custom: 
+title: Visual Studio için R Araçları
+description: R araçları için Visual Studio (RTVS) IntelliSense, hata ayıklama ve uzak çalışma alanları dahil olmak üzere birçok dil özellikleri sağlayan ücretsiz, açık kaynaklı bir uzantısıdır.
+ms.custom: ''
 ms.date: 11/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 7e5fd1c6f2e2d33fe3841923f1b25728ad002f6e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: ec4eb7c0b8eb00667283e9e7051ff03fcd5b2791
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Visual Studio'da R ile çalışma
 
@@ -40,7 +37,7 @@ Ardından R güvenlikle ilgili özellikler ve bunun yanı sıra, Visual Studio'n
 
 | Özellik | Açıklama | Genel Visual Studio belgeleri | 
 | --- | --- | --- |
-| [Visual Studio project system](r-projects-in-visual-studio.md) | Düzenleyebilir ve kullanışlı bir yapı ilişkili dosyaları yönetmek ve R kodu, R belgeleri, R Markdown, SQL sorguları ve saklı yordamlar gibi öğeleri için yararlı şablonlar yararlanın. Ayrıca keyfini [Paket Yöneticisi](r-package-manager-in-visual-studio.md) ve [SQL Server Integration](integrating-sql-server-with-r.md).  | [Visual Studio’da Çözümler ve Projeler](../ide/solutions-and-projects-in-visual-studio.md) |
+| [Visual Studio Proje sistemi](r-projects-in-visual-studio.md) | Düzenleyebilir ve kullanışlı bir yapı ilişkili dosyaları yönetmek ve R kodu, R belgeleri, R Markdown, SQL sorguları ve saklı yordamlar gibi öğeleri için yararlı şablonlar yararlanın. Ayrıca keyfini [Paket Yöneticisi](r-package-manager-in-visual-studio.md) ve [SQL Server Integration](integrating-sql-server-with-r.md).  | [Visual Studio’da Çözümler ve Projeler](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Çalışma alanı](r-workspaces-in-visual-studio.md) | RTVS R kodu daha küçük veri kümeleri ile yerel olarak geliştirmenize olanak tanıyan yerel ve uzak çalışma alanları için bağ sonra kolayca daha güçlü bulut tabanlı bilgisayarlarda çok daha büyük veri kümeleriyle kodu çalıştırın. | yok |
 | [R Araçlar Seçenekler](options-for-r-tools-in-visual-studio.md) | RTVS çeşitli yönlerini denetler. | [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md) |
 | [Zengin düzenleme, IntelliSense ve kod parçacıkları](editing-r-code-in-visual-studio.md) | Söz dizimi renklendirme, içeren [IntelliSense](r-intellisense.md) tüm kodunuz ve kitaplıkları arasında kod, imza Yardım biçimlendirme Git tanımı, tüm başvuruları Bul [kod parçacıkları](code-snippets-for-r.md)ve daha fazlası. | [Kod ve Metin Düzenleyici'de Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md) |

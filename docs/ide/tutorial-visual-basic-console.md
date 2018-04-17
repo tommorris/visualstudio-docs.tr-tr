@@ -2,11 +2,8 @@
 title: Visual Basic Visual Studio ile çalışmaya başlama | Microsoft Docs
 ms.custom: ''
 ms.date: 12/08/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -16,11 +13,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: e1818c12090737511b6460145b994bf58e6ad9ab
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 34c3fe8351196e11073e836d875e940a9ce17d36
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Visual Basic Visual Studio ile çalışmaya başlama
 Bu öğreticide için Visual Basic (VB), oluşturmak ve birkaç farklı konsol uygulamaları çalıştırmak için Visual Studio'yu kullanın ve bazı Visual Studio özelliklerini keşfedin [tümleşik geliştirme ortamı (IDE)](visual-studio-ide.md) bunu yaparken.

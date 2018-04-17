@@ -1,13 +1,10 @@
 ---
-title: "SharePoint paketleme ve dağıtımını genişletme | Microsoft Docs"
-ms.custom: 
+title: SharePoint paketleme ve dağıtımını genişletme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fa807472a0787f0f1ae4c61f074fd8bb3ad5055
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c91c78e6ab78ac39eb5c53c32a70ead895129df0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-packaging-and-deployment"></a>SharePoint Paketleme ve Dağıtımını Genişletme
   Paketleme ve dağıtım işlemini SharePoint projeleri için genişletebilirsiniz.
@@ -33,7 +30,7 @@ ms.lasthandoff: 01/10/2018
  Bir dağıtım adımı oluşturma izlenecek yol için bkz: [izlenecek yol: SharePoint projeleri için bir özel dağıtım adımı oluşturma](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
 ##  <a name="creating-deployment-configurations"></a>Dağıtım yapılandırmaları oluşturma  
- Dağıtım yapılandırması için belirli bir projenin yürütülür, ancak tüm SharePoint Proje öğeleri etkileyebilecek dağıtım adımları kümesidir. Her dağıtım yapılandırması Proje dağıtıldığında çalıştırılan adımları bir kümesini ve projeyi geri çekilebilir durumda çalıştırılan başka bir kümesini içerir. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)]iki yerleşik dağıtım yapılandırmaları içerir, ancak Ayrıca kendi oluşturabilirsiniz. Dağıtım Yapılandırması oluşturduğunuzda, yerleşik dağıtım ve oluşturduğunuz dağıtım adımlar içerebilir.  
+ Dağıtım yapılandırması için belirli bir projenin yürütülür, ancak tüm SharePoint Proje öğeleri etkileyebilecek dağıtım adımları kümesidir. Her dağıtım yapılandırması Proje dağıtıldığında çalıştırılan adımları bir kümesini ve projeyi geri çekilebilir durumda çalıştırılan başka bir kümesini içerir. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] iki yerleşik dağıtım yapılandırmaları içerir, ancak Ayrıca kendi oluşturabilirsiniz. Dağıtım Yapılandırması oluşturduğunuzda, yerleşik dağıtım ve oluşturduğunuz dağıtım adımlar içerebilir.  
   
  Dağıtım yapılandırmasının nasıl oluşturulacağını izlenecek yol için bkz: [izlenecek yol: SharePoint projeleri için bir özel dağıtım adımı oluşturma](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   

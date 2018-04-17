@@ -1,26 +1,24 @@
 ---
-title: "VSIX proje şablonu | Microsoft Docs"
-ms.custom: 
+title: VSIX proje şablonu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - deploy packages
 - publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: de8de116a9853391249a7a37a35bd54d0a6946d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bff05b0b1b05a6b00b7924f0fb5bfc957adba41c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsix-project-template"></a>VSIX proje şablonu
 Bir veya daha fazla Visual Studio uzantıları VSIX projesinde sarmalamak için VSIX proje şablonu kullanın ve üzerinde paket yayımlama [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesi.  
@@ -82,7 +80,7 @@ Bir veya daha fazla Visual Studio uzantıları VSIX projesinde sarmalamak için 
   
 8.  Çözümü oluşturun.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX bildirim dosyası, [Content_Types] .xml dosyasını ve tüm projeye eklendi ve uzantı varlıkları içeren bir .vsix dosyası oluşturur.  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX bildirim dosyası, [Content_Types] .xml dosyasını ve tüm projeye eklendi ve uzantı varlıkları içeren bir .vsix dosyası oluşturur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSIX uzantısı 2.0 şema başvurusu](../extensibility/vsix-extension-schema-2-0-reference.md)   

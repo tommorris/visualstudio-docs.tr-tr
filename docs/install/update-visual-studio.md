@@ -2,11 +2,8 @@
 title: Visual Studio 2017 güncelleştirme | Microsoft Docs
 description: Visual Studio, adım adım güncelleştirme konusunda bilgi edinin.
 ms.date: 03/06/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 helpviewer_keywords:
 - update Visual Studio
@@ -17,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa2e4e46fb2e4d51c83a559bbb9cda58d636e69a
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 174083cf89e182b5c8ff9c4e711cd357df1230bc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Visual Studio 2017 en son sürüme güncelleştir
 
@@ -156,6 +153,6 @@ Birkaç diğer destek seçenekleri şunlardır:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio 2017 yükleyin](install-visual-studio.md)
-* [Modify Visual Studio 2017](modify-visual-studio.md)
+* [Visual Studio 2017 değiştirme](modify-visual-studio.md)
 * [Visual Studio 2017 kaldırma](uninstall-visual-studio.md)
 * [Visual Studio Yöneticiler Kılavuzu](visual-studio-administrator-guide.md)

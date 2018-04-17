@@ -1,30 +1,26 @@
 ---
-title: "Varolan öğeyi Ekle komutu | Microsoft Docs"
-ms.custom: 
+title: Varolan öğeyi Ekle komutu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - project.addexistingitem
 helpviewer_keywords:
 - File.AddExistingItem command
 - Add Existing Item command
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a94546b8e480a661c175f946cc376fa92b30cbf8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 47e1dab5259f5df2a5fee925e70bcec6c3021059
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-existing-item-command"></a>Varolan Öğeyi Ekle Komutu
 Varolan bir dosyayı geçerli çözüme ekler ve açar.  
@@ -40,7 +36,7 @@ File.AddExistingItem filename [/e:editorname]
  Gerekli. Tam yol ve dosya adı, geçerli çözüme eklemek için öğesinin uzantısına sahip. Dosya yolu veya dosya adı boşluk içeriyorsa, yolun tamamını tırnak işaretleri içine alın.  
   
 ## <a name="switches"></a>Anahtarlar  
- / e:`editorname`  
+ / e: `editorname`  
  İsteğe bağlı. Dosya açılacak düzenleyicinin adı. Bağımsız değişken belirtildi, ancak hiçbir Düzenleyici adı sağlanan **birlikte Aç** iletişim kutusu görüntülenir.  
   
  / E:`editorname` bağımsız değişkeni söz dizimini kullanır Düzenleyici adları içinde göründükleri gibi **ile iletişim kutusunu aç**, tırnak işaretleri içindeki kapalı. Örneğin, bir stil sayfası kaynak kod düzenleyicisinde açmak için aşağıdaki / e: için girersiniz`editorname` bağımsız değişkeni.  

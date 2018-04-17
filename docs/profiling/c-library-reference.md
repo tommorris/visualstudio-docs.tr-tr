@@ -1,27 +1,23 @@
 ---
-title: "C Kitaplık Başvurusu | Microsoft Docs"
-ms.custom: 
+title: C Kitaplık Başvurusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Concurrency Visualizer SDK, C Library Reference
 ms.assetid: 46907a60-25e2-470d-a650-ae7349f868fd
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 690c1cf6ff64e71bcf9ad96ab5cb2c9f472d9855
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 08b99cb3091f3727aa8f6dbc2fab205f25976ec1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="c-library-reference"></a>C Kitaplık Başvurusu
 Bu bölüm eşzamanlılık görselleştiricisi SDK'sı için başvuru bilgileri içerir.  

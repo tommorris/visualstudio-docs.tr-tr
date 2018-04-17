@@ -14,14 +14,14 @@ helpviewer_keywords:
 - regular expressions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d8dca622fd5af546971b1c8d3451b27c183584
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: b2cd32695eb07217205048040cc888e097b4fe5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Visual Studio'da normal ifadeler kullanma
 
@@ -52,7 +52,7 @@ Bazı örnekler şunlardır:
 |Karakter aralığı içinde herhangi bir karakter eşleşmesi|[a-f]|`be[n-t]` "içindeki"arasında","altında"içindeki" ben"ve"bes"içindeki"yanındaki"ancak değil"altında"sonuç" eşleşir.|
 |Yakalama ve örtük olarak parantez içinde yer alan ifade sayı|()|`([a-z])X\1` "aXa" ve "bXb" ancak değil "aXb" ile eşleşir. İlk ifade grubu "[a-z]" "\1" başvuruyor.|
 |Bir eşleşme geçersiz kıl|(?!abc)|`real (?!ity)` eşleşme "gerçek" "Gayrimenkul" ve "gerçekten" ancak değil söz "gerçekte." Bu ayrıca ikinci "gerçek" (ancak değil ilk "gerçek") "realityreal içinde" bulur.|
-|Belirli bir karakter kümesi değil herhangi bir karakter eşleşmesi|[^abc]|`be[^n-t]` "bef" ile eşleşen "önce", "arka plan", "beh" ve "bel" içindeki "altında" ancak değil "altında".|
+|Belirli bir karakter kümesi değil herhangi bir karakter eşleşmesi|[^ abc]|`be[^n-t]` "bef" ile eşleşen "önce", "arka plan", "beh" ve "bel" içindeki "altında" ancak değil "altında".|
 |Eşleşen ifadesinden önce veya simgesinden sonra bir.|&#124;|`(sponge&#124;mud) bath` eşleşme "Sünger banyo" ve "mud banyo."|
 |Kaçış aşağıdaki ters eğik çizgi karakteri| \\ |`\^` karakterle eşleşir ^.|
 |Önceki karakter veya grubun yinelenme sayısını belirtin|{x}, x yineleme sayısı,|`x(ab){2}x` "xababx" ile eşleşen ve `x(ab){2,3}x` "xababx" ve "xabababx" ancak değil "xababababx" ile eşleşir.|
@@ -65,7 +65,7 @@ Bazı örnekler şunlardır:
 |Unicode karakter eşleşmesi|\uXXXX burada XXXX Unicode karakter değerini belirtir.|`\u0065` "e" karakteri ile eşleşir.|
 |Tanımlayıcı eşleşmesi|\b(_\w+&#124;[\w-[0-9\_]]\w*)\b|Eşleşme "type1" ama & type1 "veya" #define ".|
 |Tırnak işaretleri içine bir dizeyle eşleştir|((\\".+?\\")&#124;('.+?'))|Tek veya çift tırnak içine herhangi bir dizeyle eşleşir.|
-|Bir onaltılık sayı eşleşmesi|\b0[xX]([0-9a-fA-F]\)\b|"0xc67f" ancak değil "0xc67fc67f" ile eşleşmez.|
+|Bir onaltılık sayı eşleşmesi|\b0[xx]([0-9a-FA-F]\)\b|"0xc67f" ancak değil "0xc67fc67f" ile eşleşmez.|
 |Eşleşme tamsayılar ve ondalık basamaklar|\b[0-9]*\\.\*[0-9]+\b|"1,333" eşleşir.|
 
 > [!TIP]

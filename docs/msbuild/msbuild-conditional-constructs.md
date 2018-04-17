@@ -1,12 +1,9 @@
 ---
-title: "MSBuild koşullu yapıları | Microsoft Docs"
-ms.custom: 
+title: MSBuild koşullu yapıları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - Otherwise Element [MSBuild]
 - When Element [MSBuild]
 ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f018ec733248f6663e2cf2292599df9d2afdc81c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e1e642cf3e4578d42489578bdafb15134276c6ed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild Koşullu Yapıları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] için bir mekanizma sağlar / veya işlem ile [Seç](../msbuild/choose-element-msbuild.md), [zaman](../msbuild/when-element-msbuild.md), ve [Aksi durumda](../msbuild/otherwise-element-msbuild.md) öğeleri.  
@@ -40,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="using-the-choose-element"></a>Kullanarak öğe seç  
  `Choose` Öğesi içeren bir dizi `When` öğeleriyle `Condition` değerlendiren bir kadar sırayla üstten alta test öznitelikleri `true`. Birden fazla ise `When` öğesi hesaplar için `true`, yalnızca ilki kullanılır. Bir `Otherwise` öğesi, varsa, değerlendirilmesi üzerinde herhangi bir koşul ise bir `When` öğesi hesaplar için `true`.  
   
- `Choose`öğeleri alt öğeleri olarak kullanılabilir `Project`, `When` ve `Otherwise` öğeleri. `When`ve `Otherwise` öğeleri olabilir `ItemGroup`, `PropertyGroup`, veya `Choose` alt öğeleri.  
+ `Choose` öğeleri alt öğeleri olarak kullanılabilir `Project`, `When` ve `Otherwise` öğeleri. `When` ve `Otherwise` öğeleri olabilir `ItemGroup`, `PropertyGroup`, veya `Choose` alt öğeleri.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek kullanır `Choose` ve `When` öğeleri ya da / veya işlem. Proje öğeleri ve Özellikler değeri bağlı olarak ayarlanır `Configuration` özelliği.  

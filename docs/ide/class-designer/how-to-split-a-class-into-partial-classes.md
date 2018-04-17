@@ -1,28 +1,24 @@
 ---
-title: "Nasıl yapılır: bir sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: bir sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e9d1b0dca7c8e9d152a84273410e4bd7d768508
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 672f0c5a6170b169e9fcfff6332724e2e1bff62f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Nasıl Yapılır: Sınıfı Kısmi Sınıflara Bölme (Sınıf Tasarımcısı)
 Kullanarak bir sınıf veya yapı birkaç bildirimler arasında bildirimi bölebilirsiniz `Partial` Visual Basic anahtar sözcüğü veya `partial` C# anahtar sözcüğü. İstediğiniz sayıda farklı kaynak dosyaları veya bir kaynak dosyasında istediğiniz sayıda kısmi bildirimleri kullanabilirsiniz. Ancak, tüm bildirimler aynı bütünleştirilmiş kodda ve aynı ad olmalıdır.  

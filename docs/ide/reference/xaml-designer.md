@@ -1,26 +1,22 @@
 ---
-title: "XAML Tasarımcısı seçenekler sayfası | Microsoft Docs"
-ms.custom: 
+title: XAML Tasarımcısı seçenekler sayfası | Microsoft Docs
+ms.custom: ''
 ms.date: 03/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: bf71bb6f2d52159ab203d14c690a73525af091ae
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 1158a9fb39f9f848aa6fd326fbff85238cd87013
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xaml-designer-options-page"></a>XAML Tasarımcısı Seçenekleri sayfası
 
@@ -49,7 +45,7 @@ XAML Tasarımcısı XAML belge düzenlerken görüntülendiği zaman ve nasıl d
 |||  
 |-|-|  
 |**Dikey**|XAML kaynağı XAML görünümü sol tarafında görünür ve XAML Tasarımcısı diğer tarafında görünür.|  
-|**Horizontal**|XAML Tasarımcısı XAML görünüm üst kısmında görünür ve XAML kaynağı altında görünür.|  
+|**Yatay**|XAML Tasarımcısı XAML görünüm üst kısmında görünür ve XAML kaynağı altında görünür.|  
 |**Default**|XAML belge belgenin projenin hedeflediği platform için önerilen bölünmüş yönlendirmesi kullanır. Çoğu platformda bu eşdeğer olan **yatay**.|  
 
 ## <a name="zoom-by-using"></a>Kullanarak Yakınlaştır

@@ -2,11 +2,8 @@
 title: CPU örnekleme Visual Studio için Başlangıç Kılavuzu | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - performance tools, wizard
 - Performance Wizard
 ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3113a04ba6f6f893c285cf02f6f23cb5979dad1
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: ba3cf69441767ce483901e68f5ac775d43544930
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU örnekleme için Başlangıç Kılavuzu
 Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözümlemek için kullanabilirsiniz. Bu yordam nasıl kullanılacağını gösterir **örnekleme** veri.
@@ -83,7 +79,7 @@ Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözü
   
 1.  İçinde **Özet** görünümü **etkin yolunuzda** yüksek dahil örnekleri ile uygulamanızın çağrı ağacı dalı gösterir. Toplanan veriler, en etkin yürütme yolu budur. Çağrı ağacı üreten algoritma iyileştirilebilir yüksek dahil değerler belirtebilirsiniz. Kodunuzdaki yolu en düşük işlevi bulun. Yolun ayrıca sistem işlevleri veya İşlevler dış modülleri ekleyebilirsiniz dikkat edin.  
   
-     ![Profiler Hot Path](../profiling/media/profiler_hotpath.png "Profiler_HotPath")  
+     ![Profil Oluşturucu etkin yolunuzda](../profiling/media/profiler_hotpath.png "Profiler_HotPath")  
   
     1.  **Kapsayıcı örnekleri** ne kadar iş işlevi ve tarafından çağrılan tüm işlevler tarafından yapılmadı gösterir. Yüksek dahil sayıları genel en pahalı İşlevler seçeneğine gidin.  
   

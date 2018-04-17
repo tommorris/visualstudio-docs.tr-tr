@@ -1,13 +1,10 @@
 ---
-title: "Nasıl yapılır: örnekleme olayları seçme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: örnekleme olayları seçme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.sampling
 helpviewer_keywords:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - performance counter sample event
 - performance tools, sample events
 ms.assetid: ce7cb734-80ac-4930-a4ef-e24395e1cc07
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8475544d6ecb822a25a423b73543d7364d79da10
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 04cf11c9ec69eed8524bbfce884539b0586458c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-choose-sampling-events"></a>Nasıl Yapılır: Örnekleme Olayları Seçme
 Varsayılan olarak, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları profili işlem tarafından kullanılan işlemci döngülerinin sayısı olarak belirtilen bir aralıkta performans verilerini toplar. Varsayılan döngüleri bir aralık içinde 10,000,000, yaklaşık 1 GH bilgisayarda 0,01 saniye olan sayısıdır. Bir aralık içinde döngüsü sayısını değiştirebilirsiniz ve örnek olay değiştirebilirsiniz. Aşağıdaki örnek olayları kullanılabilir:  

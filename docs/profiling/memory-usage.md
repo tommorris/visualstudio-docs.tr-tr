@@ -2,23 +2,19 @@
 title: Visual Studio'da bellek kullanımını çözümleme | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
-caps.latest.revision: 13
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38f4457146f8373ad0e4ce3a5477c98a43424538
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 2b1c7f9420c2e5a9d3225ae0e8ab0d9023afb275
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Visual Studio profil bellek kullanımı
 Bellek sızıntıları ve verimsiz bellek hata ayıklayıcısı ile tümleşik hatalarını ayıkladığınız sırada Bul **bellek kullanımı** tanı aracı. Uygulamanız bir veya daha fazla bellek kullanımı araç sağlar *anlık görüntüleri* nesne türlerini bellek kullanımı etkisini anlamanıza yardımcı olması için yönetilen ve yerel bellek heap öğesinin. .NET, yerel ya da karma mod (.NET ve yerel) uygulamaları anlık görüntüleri toplayabilirsiniz.  
@@ -147,7 +143,7 @@ Bellek kullanımı çözümlemek için ayrıntılı bir rapor bellek kullanımı
   
 -   Seçin **yığınlar görünümü** içinde **görüntüleme modu** seçili türünün ayırma yığını görmek için liste.  
   
-     ![Stacks View](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")  
+     ![Yığınlar Görünüm](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
 ### <a name="change-diff-reports"></a>(Fark) raporları değiştirme  
   

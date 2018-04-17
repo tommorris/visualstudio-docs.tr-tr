@@ -1,12 +1,10 @@
 ---
 title: "Nasıl yapılır: Visual Studio IDE'de gezinme | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - environments [Visual Studio], navigation
 - documents [Visual Studio], navigating
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - Window.NextDocumentWindowNav
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
-caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 175a22ecb56f8c41d76512309df2b0443a7481b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 90b10759ac6eead46ef9c131c98bcbed7a835c2b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Nasıl Yapılır: Visual Studio IDE’de Gezinme
 Tümleşik geliştirme ortamı (IDE) pencereden diğerine taşımanızı izin vermek için tasarlanmış ve dosyaya tercih ya da proje gereksinimlerinize bağlı olarak birkaç farklı şekillerde olmuştur. Düzenleyicideki açık dosyalar arasında geçiş yapma veya IDE içindeki tüm etkin araç pencereleri dolaşma seçebilirsiniz. Herhangi Dosya Aç bağımsız olarak, en son erişildiği sırası düzenleyicisinde için doğrudan geçiş yapabilirsiniz. Bu özellikler, IDE içinde çalışırken üretkenliğinizi artırmaya yardımcı olabilir.  
@@ -57,7 +55,7 @@ Belirli bir dosyayı dosya son erişilen zaman bağımsız olarak düzenleyicide
   
 ![Visual Studio IDE Gezgini](../ide/media/vs2015_ide_navigator.png "VS2015_IDE_Navigator")  
   
-`Window.PreviousDocumentWindowNav`en son erişilen dosya taşımanızı sağlar ve `Window.NextDocumentWindowNav` ters sırada taşımanızı sağlar. Genel Geliştirme Ayarları atar **Shift**+**Alt**+**F7** için `Window.PreviousDocumentWindowNav` ve **Alt** + **F7** için `Window.NextDocumentWindowNav`.
+`Window.PreviousDocumentWindowNav` en son erişilen dosya taşımanızı sağlar ve `Window.NextDocumentWindowNav` ters sırada taşımanızı sağlar. Genel Geliştirme Ayarları atar **Shift**+**Alt**+**F7** için `Window.PreviousDocumentWindowNav` ve **Alt** + **F7** için `Window.NextDocumentWindowNav`.
   
 > [!NOTE]
 > Kullanmakta olduğunuz ayarları bileşimi bu komuta atanan bir kısayol tuş bileşimini zaten yoksa, kendi özel komutunu kullanarak atayabilirsiniz **klavye** sayfasında **seçenekleri** iletişim bir kutu. Daha fazla bilgi için bkz: [tanımlama ve özelleştirme klavye kısayolları](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
@@ -69,18 +67,18 @@ Belirli bir dosyayı dosya son erişilen zaman bağımsız olarak düzenleyicide
     > [!TIP]
     >  İçinde gitmenizi sırasını tersine çevirmek için **etkin dosyalar** listesinde, basılı **Ctrl**+**Shift** anahtarları ve tuşuna **sekmesini**.  
   
-    \-veya -  
+    \- veya -  
   
 -   Düzenleyici sağ üst köşesinde seçin **etkin dosyalar** düğmesine tıklayın ve ardından geçmek için listeden bir dosya seçin.  
   
-    \-veya -  
+    \- veya -  
   
 -   Menü çubuğunda seçin **penceresi**, **Windows**.  
   
 -   Listesinde, görüntülemek ve ardından istediğiniz dosyayı seçin **etkinleştirme**.  
   
 ## <a name="navigating-among-tool-windows-in-the-ide"></a>Araç Pencereleri IDE içinde arasında gezinme  
-**IDE Gezgini** de sahip olduğunuz aracı Windows'un döngüsü sağlar IDE içinde açın. İki komutlardan herhangi birini erişmek için kullanabileceğiniz **IDE Gezgini** arasında geçiş yapmak istediğiniz sipariş bağlı olarak, aracı windows dolaşmak için. `Window.PreviousToolWindowNav`en son erişilen dosya taşımanızı sağlar ve `Window.NextToolWindowNav` ters sırada taşımanızı sağlar. Genel Geliştirme Ayarları atar **Shift**+**Alt**+**F7** için `Window.PreviousDocumentWindowNav` ve **Alt** + **F7** için `Window.NextDocumentWindowNav`.
+**IDE Gezgini** de sahip olduğunuz aracı Windows'un döngüsü sağlar IDE içinde açın. İki komutlardan herhangi birini erişmek için kullanabileceğiniz **IDE Gezgini** arasında geçiş yapmak istediğiniz sipariş bağlı olarak, aracı windows dolaşmak için. `Window.PreviousToolWindowNav` en son erişilen dosya taşımanızı sağlar ve `Window.NextToolWindowNav` ters sırada taşımanızı sağlar. Genel Geliştirme Ayarları atar **Shift**+**Alt**+**F7** için `Window.PreviousDocumentWindowNav` ve **Alt** + **F7** için `Window.NextDocumentWindowNav`.
   
 > [!NOTE]
 > Kullanmakta olduğunuz ayarları bileşimi bu komuta atanan bir kısayol tuş bileşimini zaten yoksa, kendi özel komutunu kullanarak atayabilirsiniz **klavye** sayfasında **seçenekleri** iletişim bir kutu. Daha fazla bilgi için bkz: [tanımlama ve özelleştirme klavye kısayolları](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
@@ -94,4 +92,4 @@ Belirli bir dosyayı dosya son erişilen zaman bağımsız olarak düzenleyicide
   
 ## <a name="see-also"></a>Ayrıca bkz.
 [Pencere düzenlerini özelleştirme](../ide/customizing-window-layouts-in-visual-studio.md)   
-[Klavye kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md)
+[Varsayılan Klavye Kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md)

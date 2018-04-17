@@ -3,10 +3,8 @@ title: Visual Studio'yu yüklemek için komut satırı parametreleri kullanın |
 ms.custom: ''
 ms.date: 01/17/2018
 ms.reviewer: tims
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -18,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 348634224d76b3a7f51246f2be49720173ab8cd3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: e3b347d257e5eeb5b5672223fc06941f5513583b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017 yüklemek için komut satırı parametreleri kullanın
 Visual Studio 2017 bir komut isteminden yüklediğinizde, denetim veya yüklemeyi özelleştirmek için çeşitli komut satırı parametreleri kullanabilirsiniz. Komut satırından aşağıdaki eylemleri gerçekleştirebilirsiniz:
@@ -35,7 +33,7 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 
 * [Visual Studio 2017 Enterprise](https://aka.ms/vs/15/release/vs_enterprise.exe)
 * [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
-* [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
+* [Visual Studio 2017 topluluk](https://aka.ms/vs/15/release/vs_community.exe)
 
 ## <a name="list-of-command-line-parameters"></a>Komut satırı parametreleri listesi  
  Visual Studio komut satırı parametreleri büyük/küçük harfe duyarsızdır.

@@ -1,23 +1,21 @@
 ---
-title: "Bir etki alanına özgü dil çözüm şablonu seçme | Microsoft Docs"
-ms.custom: 
+title: Bir etki alanına özgü dil çözüm şablonu seçme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0723e5d5e9e2d1d216bdeaf91f1fd2b7752e208c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: bfbb5c7fc82f4f41d0c15b0462b0eb7202df78aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Etki Alanına Özgü Dil Çözümü Şablonu Seçme
 Bir etki alanına özgü dil çözüm oluşturmak için etki alanına özgü dil Tasarımcısı Sihirbazı'nda kullanılabilir çözüm şablonlardan birini seçin. Oluşturmak istediğiniz dil en çok benzeyen bir şablon seçerek başlangıç çözüme yapmak zorunda değişiklikler en aza indirebilirsiniz.  

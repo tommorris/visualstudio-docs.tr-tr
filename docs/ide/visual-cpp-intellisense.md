@@ -1,23 +1,20 @@
 ---
 title: Visual C++ IntelliSense | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d375ebccd96f6b8e987bd74f229abd70bfa9ab6
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: bfebee340a880cdef1b8721bd5f57e3be5db8e47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
@@ -31,7 +28,7 @@ IntelliSense kodlama daha kullanışlı hale özellikler kümesi için verilen b
 
 IntelliSense erişmek için menü öğeleri ve aşağıdaki görüntüde gösterilen klavye kısayollarını kullanabilirsiniz.
 
-![IntelliSense menu](../ide/media/vs2015_cpp_intellisense_menu.png)
+![IntelliSense menüsü](../ide/media/vs2015_cpp_intellisense_menu.png)
 
 ### <a name="statement-completion-and-member-list"></a>Deyim tamamlama ve üye listesi
 
@@ -39,29 +36,29 @@ Bir anahtar sözcük, türü, işlev, değişken adı veya derleyicisi tanır ba
 
 Simgeler ve anlamlarını listesi için bkz: [sınıf görünümü ve Nesne Tarayıcısı simgeleri](../ide/class-view-and-object-browser-icons.md).
 
-![Visual C# 43; &#43; Tam sözcük penceresi](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
+![Visual C&#43; &#43; tam sözcüğü penceresi](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
 
 Üye listesi çağrılan ilk kez geçerli bağlam için erişilebilir üyeleri yalnızca gösterir. Basarsanız **Ctrl**+**J** bundan sonra erişilebilirlik bağımsız olarak tüm üyeleri gösterir. Üçüncü bir kez çağırma durumunda bile daha geniş bir program öğeleri listesi gösterilir. Üye listesinde kapatabilirsiniz **seçenekleri** iletişim kutusunda **metin düzenleyici** > **C/C++** > **genel**  >  **Otomatik listesi üyeleri**.
 
-![Visual C# 43; &#43; Üye listesi](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
+![Visual C&#43; &#43; üye listesi](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
 
 ### <a name="parameter-help"></a>Parametre Yardım
 
 Bir sınıf şablonu değişken bildirimi bir işlev çağrısı veya açılı ayraç açılan parantez yazdığınızda, düzenleyici küçük bir pencere işlevi veya oluşturucusu her yüklemesini parametre türleri ile gösterir. "Geçerli" parametre&mdash;imleç konumu temel&mdash;kalın değil. Parametre bilgileri kapatabilirsiniz **seçenekleri** iletişim kutusunda **metin düzenleyici** > **C/C++** > **genel**  >  **Parametre bilgilerini**.
 
-![Visual C# 43; &#43; Parametre Yardım](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
+![Visual C&#43; &#43; parametresi Yardım](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
 
 ### <a name="quick-info"></a>Hızlı Bilgi
 
 Fare imlecini bir değişken geldiğinizde türü bilgilerini gösteren satır içi ve türünün tanımlandığı üstbilgi küçük bir pencere görüntülenir. İşlev imzası görmek için işlev çağrısı gelin. Hızlı bilgisini kapatabilirsiniz **seçenekleri** iletişim kutusunda **metin düzenleyici** > **C/C++** > **Gelişmiş**  >  **Otomatik hızlı bilgi**.
 
-![Visual C# 43; &#43; Quıckınfo](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
+![Visual C&#43; &#43; Quıckınfo](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
 
 ### <a name="error-squiggles"></a>Hata dalgalı çizgiler
 
 Bir program öğesi (değişkeni, anahtar sözcüğü, kuşak, tür adı ve benzeri) altında dalgalı çizgiler dikkatinizi bir hata veya olası hata kodu çağırın. Hala uygulama yazmak ihtiyacınız olduğunu anımsatmak için bir iletme bildirimi yazdığınızda yeşil dalgalı görüntülenir. Olduğunda mor dalgalı paylaşılan bir proje Android bağlamında bir hata olacaktır Windows bağlamında çalışan, ancak bir şey girin, örneğin şu anda etkin değil, kodda bir hata görüntülenir. Derleyici hatası veya uyarısı uğraşmanız gereken active kodda kırmızı dalgalı gösterir.
 
-![Visual C# 43; &#43; hata dalgalı çizgiler](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
+![Visual C&#43; &#43; hata dalgalı çizgiler](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
 
 ### <a name="code-colorization-and-fonts"></a>Kod renklendirme ve yazı tipleri
 
@@ -89,7 +86,7 @@ Aşağıdakilere dikkat edin:
 
 Aşağıdakilere dikkat edin:
 
-- Satır &#6;ifdef şube etkin olmayan bölge belirtmek için çünkü gri __ANDROID\_ \_ iOS projesi için tanımlı değil.
+- Satır 6 #ifdef şube etkin olmayan bölge belirtmek için çünkü gri __ANDROID\_ \_ iOS projesi için tanımlı değil.
 
 - Satırı 11 Tebrik değişkeni şimdi kırmızı dalgalı sahip HELLO tanımlayıcısıyla başlatılır. Hiçbir tanımlayıcı HELLO şu anda etkin iOS projesinde tanımlanmış olmasıdır.
 
@@ -99,7 +96,7 @@ Aşağıdakilere dikkat edin:
 
 Herhangi bir projenin dışında tek bir dosyayı açtığınızda, IntelliSense hala alın. Etkinleştirmek veya belirli IntelliSense özelliklerini devre dışı **seçenekleri** iletişim kutusunda **metin düzenleyici** > **C/C++**  >  **Gelişmiş**. IntelliSense, projesinin bir parçası olmayan tek dosyaları için yapılandırmak için Ara **IntelliSense ve proje dışı dosyaları için gözatma** bölümü.
 
-![Visual C# 43; &#43; tek dosya IntelliSense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
+![Visual C&#43; &#43; tek dosya IntelliSense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 
 Varsayılan olarak, tek dosyalı IntelliSense yalnızca kullanan standart üstbilgi dosyaları bulmak için içeren dizinler. Ek dizinler eklemek için çözüm düğümde kısayol menüsünü açın ve dizininize eklemek **hata ayıklama kaynak kodu** listesinde, aşağıdaki çizimde gösterildiği gibi:
 

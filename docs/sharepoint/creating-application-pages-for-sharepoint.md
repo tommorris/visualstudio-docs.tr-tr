@@ -1,12 +1,10 @@
 ---
-title: "SharePoint için uygulama sayfaları oluşturma | Microsoft Docs"
-ms.custom: 
+title: SharePoint için uygulama sayfaları oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0ae0580ed4f684f888175ae83afe21dbcd9bf42c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 68731e2a0c933f3f48f3a2211a9d17ca21e50242
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-application-pages-for-sharepoint"></a>SharePoint için Uygulama Sayfaları Oluşturma
   Bir *uygulama sayfası* bir SharePoint Web sitesinde kullanılmak üzere tasarlanmış bir ASP.NET Web sayfası. Uygulama sayfaları, ASP.NET sayfası özel türüdür. Uygulama sayfası ve standart bir ASP.NET sayfası arasındaki birincil fark, bir uygulama sayfasını bir SharePoint ana sayfa ile birleştirilmiş içeriğin bulunduğu ' dir. Bir ana sayfa diğer sayfalarda bir site olarak aynı görünümü ve davranışı paylaşmak uygulama sayfaları sağlar.  

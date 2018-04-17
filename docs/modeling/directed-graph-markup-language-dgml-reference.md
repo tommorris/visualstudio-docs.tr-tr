@@ -1,21 +1,19 @@
 ---
-title: "Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) başvurusu | Microsoft Docs"
-ms.custom: 
+title: Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) başvurusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cfa143669f757a3a71ddb89ea731ffbfc5059d24
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 49ae2e854908afa6b7decb7ea94cca63b4203fbe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Yönlendirilmiş Grafik İşaretleme Dili (DGML) başvurusu
 Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) Görselleştirme ve karmaşıklık analizi yapmak için kullanılan bilgileri açıklar ve biçimi Visual Studio'da kod haritalarına kalıcı hale getirmek için kullanılır. Döngüsel ve döngüsel olmayan yönlendirilmiş grafiklerini açıklamak için basit XML kullanır. Yönlendirilmiş bir grafik, bağlantılarla veya kenarlarla bağlanmış bir düğüm kümesidir. Düğümler ve bağlantılar, bir yazılım projesindeki öğeler gibi ağ yapılarını açıklamak için kullanılabilir.  
@@ -25,7 +23,7 @@ Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) Görselleştirme ve karmaşı
 > [!NOTE]
 >  Bir .dgml dosyasını düzenlerken, IntelliSense her öğe için kullanılabilen öznitelikleri ve değerlerini belirlemenize yardımcı olur. Bir öznitelikte renk belirlemek için "Mavi" gibi genel renklerin adlarını veya "#ffa0b1c3" gibi ARGB onaltılık değerlerini kullanın. DGML Windows Presentation Foundation (WPF) renk tanımı biçimlerinin küçük bir alt kümesini kullanır. Daha fazla bilgi için bkz: [renkleri sınıfı](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a>DGML sözdizimi  
+##  <a name="DGML"></a> DGML sözdizimi  
  Aşağıdaki tabloda DGML içinde kullanılan öğelerinin türleri açıklanmaktadır:  
   
 -   `<DirectedGraph></DirectedGraph>`  
@@ -34,15 +32,15 @@ Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) Görselleştirme ve karmaşı
   
      Aşağıdaki liste dahil edebileceğiniz isteğe bağlı öznitelikleri tanımlar:  
   
-     `Background`-Harita arka plan rengi  
+     `Background` -Harita arka plan rengi  
   
-     `BackgroundImage`-Harita arka planı olarak kullanılacak bir görüntü dosyasının konumu.  
+     `BackgroundImage` -Harita arka planı olarak kullanılacak bir görüntü dosyasının konumu.  
   
-     `GraphDirection`-Map ayarlandığında ağaç düzenine (`Sugiyama`), bağlantıların çoğu belirtilen yönde akması düğümleri düzenleyin: `TopToBottom`, `BottomToTop`, `LeftToRight`, veya `RightToLeft`. Bkz: [harita düzenini değiştirme](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+     `GraphDirection` -Map ayarlandığında ağaç düzenine (`Sugiyama`), bağlantıların çoğu belirtilen yönde akması düğümleri düzenleyin: `TopToBottom`, `BottomToTop`, `LeftToRight`, veya `RightToLeft`. Bkz: [harita düzenini değiştirme](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
-     `Layout`-Map şu düzenlere ayarlayın: `None`, `Sugiyama` (ağaç düzeni) `ForceDirected` (hızlı kümeler) veya `DependencyMatrix`. Bkz: [harita düzenini değiştirme](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+     `Layout` -Map şu düzenlere ayarlayın: `None`, `Sugiyama` (ağaç düzeni) `ForceDirected` (hızlı kümeler) veya `DependencyMatrix`. Bkz: [harita düzenini değiştirme](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
-     `NeighborhoodDistance`Harita ağaç düzenine veya hızlı kümeler düzenine ayarlandığında, seçilen düğümlerdeki çıktığınızda bağlantılar belirtilen sayıda (1-7) olan düğümler gösterir. Bkz: [harita düzenini değiştirme](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+     `NeighborhoodDistance` Harita ağaç düzenine veya hızlı kümeler düzenine ayarlandığında, seçilen düğümlerdeki çıktığınızda bağlantılar belirtilen sayıda (1-7) olan düğümler gösterir. Bkz: [harita düzenini değiştirme](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
      Örnek:  
   
@@ -91,23 +89,23 @@ Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) Görselleştirme ve karmaşı
   
      Bu öğenin öznitelikleri şunlardır:  
   
-     `Id`-Benzersiz bir ad düğüm ve varsayılan değerini `Label` ayrı özniteliği `Label` özniteliği belirtildi. Bu adı eşleşmelidir `Source` veya `Target` başvurduğu bağlantı özniteliği.  
+     `Id` -Benzersiz bir ad düğüm ve varsayılan değerini `Label` ayrı özniteliği `Label` özniteliği belirtildi. Bu adı eşleşmelidir `Source` veya `Target` başvurduğu bağlantı özniteliği.  
   
      Aşağıdaki liste, dahil edebileceğiniz isteğe bağlı özniteliklerin bazılarını açıklar:  
   
-     `Label`-Düğüm görünen adı.  
+     `Label` -Düğüm görünen adı.  
   
      Stil öznitelikleri. Bkz: [Özelleştir kod eşlemeleri DGML dosyalarını düzenleyerek](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-     `Category`-Bu özniteliği paylaşan öğeleri tanımlayan bir kategori adı. Daha fazla bilgi için bkz: `<Category/>` öğesi.  
+     `Category` -Bu özniteliği paylaşan öğeleri tanımlayan bir kategori adı. Daha fazla bilgi için bkz: `<Category/>` öğesi.  
   
-     `Property`-Aynı özellik değerine sahip öğeleri tanımlayan bir özellik adı. Daha fazla bilgi için bkz: `<Property/>` öğesi.  
+     `Property` -Aynı özellik değerine sahip öğeleri tanımlayan bir özellik adı. Daha fazla bilgi için bkz: `<Property/>` öğesi.  
   
-     `Group`-Düğümü diğer düğümlere içeriyorsa, bu öznitelik ayarlanırsa `Expanded` veya `Collapsed` göstermek veya gizlemek içeriği. Olmalıdır bir `<Link/>` içeren öğe `Category="Contains"` özniteliği ve üst düğümü kaynak ve hedef düğüm olarak alt düğümlerini olarak belirtir. Bkz: [Grup kod öğeleri](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).  
+     `Group` -Düğümü diğer düğümlere içeriyorsa, bu öznitelik ayarlanırsa `Expanded` veya `Collapsed` göstermek veya gizlemek içeriği. Olmalıdır bir `<Link/>` içeren öğe `Category="Contains"` özniteliği ve üst düğümü kaynak ve hedef düğüm olarak alt düğümlerini olarak belirtir. Bkz: [Grup kod öğeleri](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).  
   
-     `Visibility`-Bu öznitelik ayarlanırsa `Visible`, `Hidden`, veya `Collapsed`. Kullanan `System.Windows.Visibility`. Bkz: [Gizle veya Göster düğümleri ve bağlantıları](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).  
+     `Visibility` -Bu öznitelik ayarlanırsa `Visible`, `Hidden`, veya `Collapsed`. Kullanan `System.Windows.Visibility`. Bkz: [Gizle veya Göster düğümleri ve bağlantıları](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).  
   
-     `Reference`-Bir belge veya URL bağlamak için bu özniteliği ayarlayın. Bkz: [bağlantı belgeler veya URL'ler kod öğeleri ve bağlantıları](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).  
+     `Reference` -Bir belge veya URL bağlamak için bu özniteliği ayarlayın. Bkz: [bağlantı belgeler veya URL'ler kod öğeleri ve bağlantıları](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).  
   
      Örnek:  
   
@@ -154,19 +152,19 @@ Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) Görselleştirme ve karmaşı
   
      Bu öğenin öznitelikleri şunlardır:  
   
-     `Source`-Bağlantının kaynak düğümü  
+     `Source` -Bağlantının kaynak düğümü  
   
-     `Target`-Bağlantının hedef düğüm  
+     `Target` -Bağlantının hedef düğüm  
   
      Aşağıdaki liste, dahil edebileceğiniz isteğe bağlı özniteliklerin bazılarını açıklar:  
   
-     `Label`-Bağlantının görünen adı  
+     `Label` -Bağlantının görünen adı  
   
      Stil öznitelikleri. Bkz: [Özelleştir kod eşlemeleri DGML dosyalarını düzenleyerek](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-     `Category`-Bu özniteliği paylaşan öğeleri tanımlayan bir kategori adı. Daha fazla bilgi için bkz: `<Category/>` öğesi.  
+     `Category` -Bu özniteliği paylaşan öğeleri tanımlayan bir kategori adı. Daha fazla bilgi için bkz: `<Category/>` öğesi.  
   
-     `Property`-Aynı özellik değerine sahip öğeleri tanımlayan bir özellik adı. Daha fazla bilgi için bkz: `<Property/>` öğesi.  
+     `Property` -Aynı özellik değerine sahip öğeleri tanımlayan bir özellik adı. Daha fazla bilgi için bkz: `<Property/>` öğesi.  
   
      Örnek:  
   
@@ -209,13 +207,13 @@ Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) Görselleştirme ve karmaşı
   
      Bu öğenin öznitelikleri şunlardır:  
   
-     `Id`-Benzersiz bir ad, kategori ve varsayılan değerini `Label` ayrı özniteliği `Label` özniteliği belirtildi.  
+     `Id` -Benzersiz bir ad, kategori ve varsayılan değerini `Label` ayrı özniteliği `Label` özniteliği belirtildi.  
   
      Aşağıdaki liste, dahil edebileceğiniz isteğe bağlı özniteliklerin bazılarını açıklar:  
   
-     `Label`-Kategori bir okuyucu kolay adı.  
+     `Label` -Kategori bir okuyucu kolay adı.  
   
-     `BasedOn`-Üst kategoriden `<Category/>` geçerli öğenin devralır.  
+     `BasedOn` -Üst kategoriden `<Category/>` geçerli öğenin devralır.  
   
      Bu öğe için örnekte `FailedTest` kategori devralır kendi `Stroke` özniteliğini `PassedTest` kategorisi. "Hiyerarşik kategoriler oluşturmak için" bölümüne bakın [Özelleştir kod eşlemeleri DGML dosyalarını düzenleyerek](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
@@ -266,9 +264,9 @@ Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) Görselleştirme ve karmaşı
   
      Bu öğenin öznitelikleri şunlardır:  
   
-    -   `Id`-Benzersiz bir ad özelliği ve varsayılan değerini `Label` ayrı özniteliği `Label` özniteliği belirtildi.  
+    -   `Id` -Benzersiz bir ad özelliği ve varsayılan değerini `Label` ayrı özniteliği `Label` özniteliği belirtildi.  
   
-    -   `DataType`-Özelliği tarafından depolanan veri türü  
+    -   `DataType` -Özelliği tarafından depolanan veri türü  
   
      Özellik görünmesini istiyorsanız **özellikleri** penceresi, kullanım `Label` özelliği Özelliğin görünen ad belirtin.  
   
@@ -301,7 +299,7 @@ Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) Görselleştirme ve karmaşı
     </DirectedGraph>  
     ```  
   
-###  <a name="AddAlias"></a>Sık kullanılan yolları için diğer adlar  
+###  <a name="AddAlias"></a> Sık kullanılan yolları için diğer adlar  
  Yaygın olarak kullanılan yolların takma adlarla değiştirilmesi .dgml dosyasının boyutunu azaltır ve dosyayı yüklemek veya kaydetmek için gereken süreyi kısaltır. Bir diğer adı oluşturmak için Ekle bir `<Paths></Paths>` .dgml dosyanın sonunda bölüm. Bu bölümde, ekleme bir `<Path/>` öğe yolu için bir diğer ad tanımlayın:  
   
 ```xml  

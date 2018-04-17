@@ -1,32 +1,28 @@
 ---
-title: "Araçları verilerini kaydetme ve performans dışarı aktarma | Microsoft Docs"
-ms.custom: 
+title: Araçları verilerini kaydetme ve performans dışarı aktarma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, saving and exporting reports
 ms.assetid: 2e9b28fe-3ed2-4e1d-b9cb-0a5e384380b0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37306636da74637cb950ca1502b94a750a51ccba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: da2f15eee4e5fab64e0847f8e6d964c03b954833
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Araçları verilerini kaydetme ve performans dışarı aktarma
 Bu konu, kaydetme ve performans veri dosyaları dışarı aktarma açıklar.  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a>Nasıl yapılır: performans veri dosyalarına çözümlenen rapor dosyaları olarak Kaydet  
+##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Nasıl yapılır: performans veri dosyalarına çözümlenen rapor dosyaları olarak Kaydet  
  Profil oluşturma veri (.vsp) dosyaları çözümlenen rapor (.vsps) dosyaları olarak filtrelenmiş veya filtrelenmemiş görünümlerini kaydedebilirsiniz. Çözümlenen rapor dosyası rapor görünümü penceresinde görüntülenebilir ve önemli ölçüde özgün .vsp dosyadan daha küçüktür. Ancak, bir .vsps dosya verileri için bir filtre uygulayamazsınız. Tümleşik geliştirme ortamı (IDE) dosyasını açmadan performans Gezgini'nden çözümlenen rapor dosyası oluşturabilir veya açabilir ve .vsp dosyasında filtre ve sonuçları kaydedin.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Performans Gezgini'nden bir çözümlenen performans raporu kaydetmek için  
@@ -71,7 +67,7 @@ Bu konu, kaydetme ve performans veri dosyaları dışarı aktarma açıklar.
   
 6.  Tıklatın **verme**.  
   
-     Her rapor görünümü adlı ayrı bir dosyaya kaydedilir \<öneki > _\<rapor görünümü adı >.\< CSV &#124; xml >  
+     Her rapor görünümü adlı ayrı bir dosyaya kaydedilir \<öneki > _\<rapor görünümü adı >.\< CSV&#124;xml >  
   
 #### <a name="to-export-performance-reports-from-the-report-view-window"></a>Performans raporları rapor görünümü penceresinden dışarı aktarmak için  
   
@@ -91,7 +87,7 @@ Bu konu, kaydetme ve performans veri dosyaları dışarı aktarma açıklar.
   
 8.  Tıklatın **verme**.  
   
-     Her rapor görünümü adlı ayrı bir dosyaya kaydedilir \<öneki > _\<rapor görünümü adı >.\< CSV &#124; xml >  
+     Her rapor görünümü adlı ayrı bir dosyaya kaydedilir \<öneki > _\<rapor görünümü adı >.\< CSV&#124;xml >  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans Gezgini](../profiling/performance-explorer.md)   

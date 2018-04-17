@@ -1,23 +1,21 @@
 ---
-title: "Etki alanına özgü diller hakkında | Microsoft Docs"
-ms.custom: 
+title: Etki alanına özgü diller hakkında | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 89293e0b684881767b6357b88469dc69ddc71902
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="about-domain-specific-languages"></a>Etki Alanına Özgü Diller Hakkında
 
@@ -81,7 +79,7 @@ Bir etki alanına özgü dil kolayca tanımlanabilir ve etki alanına özgü yap
   
 ### <a name="domain-model"></a>Etki alanı modeli
 
-Bir etki alanına özgü dil öğeleri ve bunları tutarlı dilbilgisi arasındaki ilişkileri kümesini birleştirmeniz gerekir. Öğe ve ilişki birleşimlerini geçerli olup olmadığını tanımlamalısınız. Örneğin, programlama dilleri, genellikle ikinci sınıfından türetilmiş bir sınıf ve ilk sınıfından türetilen ikinci sınıfı döngüsel devralma engeller. Kısıtlamaları, iş mantığı ifade etmek için de kullanılabilir, örneğin, bir kişi, kendisine bağımlı olamaz. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]kısıtlamaları en etki alanına özgü dil gerektiren kısıtlamaları türlerini ifade etmek için kullanır.  
+Bir etki alanına özgü dil öğeleri ve bunları tutarlı dilbilgisi arasındaki ilişkileri kümesini birleştirmeniz gerekir. Öğe ve ilişki birleşimlerini geçerli olup olmadığını tanımlamalısınız. Örneğin, programlama dilleri, genellikle ikinci sınıfından türetilmiş bir sınıf ve ilk sınıfından türetilen ikinci sınıfı döngüsel devralma engeller. Kısıtlamaları, iş mantığı ifade etmek için de kullanılabilir, örneğin, bir kişi, kendisine bağımlı olamaz. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] kısıtlamaları en etki alanına özgü dil gerektiren kısıtlamaları türlerini ifade etmek için kullanır.  
   
 ### <a name="artifact-generation"></a>Yapı oluşturma
 
@@ -89,7 +87,7 @@ Bir etki alanına özgü dil'ın ana amaçlarından biri, kaynak kodu, bir XML d
   
 ### <a name="serialization"></a>Serileştirme
 
-Bir etki alanına özgü dil düzenlenemez, kaydedildi, kapalı, yeniden ve yönetilebilen bazı formunda kalıcı gerekir. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]tanımlama ve etki alanına özgü dil nasıl serileştirilmiş veya kalıcı özelleştirme olanak sağlayan bir XML biçimi kullanır.  
+Bir etki alanına özgü dil düzenlenemez, kaydedildi, kapalı, yeniden ve yönetilebilen bazı formunda kalıcı gerekir. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tanımlama ve etki alanına özgü dil nasıl serileştirilmiş veya kalıcı özelleştirme olanak sağlayan bir XML biçimi kullanır.  
   
 ### <a name="integration-with-visual-studio"></a>Visual Studio ile Tümleştirme
 

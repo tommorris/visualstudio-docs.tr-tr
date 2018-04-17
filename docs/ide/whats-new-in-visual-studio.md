@@ -2,11 +2,8 @@
 title: Visual Studio 2017 yenilikler | Microsoft Docs
 ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,14 +13,14 @@ helpviewer_keywords:
 ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bddaec413e1a0b0a9e2096a614d7b5a574e0e7e
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: c7c2ce39143bbc4be2e7dc2e077d93ee7a1fff52
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Ne&#39;s Visual Studio 2017'deki yenilikler
 #### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>İçin güncelleştirilmiş [15.6 sürüm](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -245,7 +242,7 @@ Daha fazla bilgi için bkz: [Visual Studio ve Xamarin](../cross-platform/visual-
 
 ![Animasyon Xamarin Canlı Player çifti, dağıtım ve canlı düzenleme modları](../ide/media/xamarinliveplayer.gif)
 
-### <a name="visual-studio-app-center"></a>Visual Studio App Center
+### <a name="visual-studio-app-center"></a>Visual Studio Uygulama Merkezi
 **15,5 yeni**: Visual Studio Uygulama Merkezi&mdash;olduğu artık Android, iOS, macOS ve Windows uygulamaları için genel olarak kullanılabilir&mdash;gereken her şeyi otomatik yapılar dahil olmak üzere, uygulamaları yaşam döngüsü yönetmek için gerçek üzerinde test sahip bulutta, beta Test edenlere ve uygulama mağazaları ve kilitlenme ve analitik veriler aracılığıyla gerçek kullanımını izlemek için dağıtım cihazlar. Objective-C, Swift, Java, C#, Xamarin ve tepki yerel içinde yazılmış uygulamalar genelinde tüm özellikleri desteklenir.
 
   ![Visual Studio Uygulama Merkezi test ortamı](../ide/media/app-center-test-env.png)

@@ -1,24 +1,24 @@
 ---
-title: "Visual Studio için değer başvuru renk | Microsoft Docs"
-description: "Başvuru: onaltılık kodları yeni Visual Studio renk belirteçleri oluşturmak"
-keywords: "rengi, onaltılık kodunu ton, konulu UI, tema oluşturma"
+title: Visual Studio için değer başvuru renk | Microsoft Docs
+description: 'Başvuru: onaltılık kodları yeni Visual Studio renk belirteçleri oluşturmak'
+keywords: rengi, onaltılık kodunu ton, konulu UI, tema oluşturma
 author: brickgeorge
 ms.author: v-brickg
 ms.date: 08/04/2017
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
-ms.custom: 
+ms.custom: ''
 ms.reviewer: Jamie.Young
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-manager: ghogen
-ms.workload: v-brickg
-ms.openlocfilehash: 001e9db65209f8ae60cd070d5d68b9f72ef62672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-sdk
+manager: douge
+ms.workload:
+- v-brickg
+ms.openlocfilehash: 421fca16db2ed2792a539ead2ab46d325cee3a11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio için renk değeri başvurusu
 Bu konu, yeni renk belirteçleri oluşturmak için bir başvurudur. Yeni kullanıcı arabirimini oluştururken, her ana Tema renkleri ve yüksek karşıtlıklı tema için bu öğe için sistem renk adı seçmek için mevcut UI benzer renkleri kullanabilirsiniz. 
@@ -162,9 +162,9 @@ Bu başvuru kılavuzunda kullanırken unutmayın:
 | Arka plan: basılı | ![#FF007ACC örneğini](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC örneği")<br />`#FF007ACC` | ![#FF007ACC örneğini](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC örneği")<br />`#FF007ACC` | ![#FF007ACC örneğini](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC örneği")<br />`#FF007ACC` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk örneği")<br />`Highlight` |
 | Ön plan: devre dışı | ![#FFA2A4A5 örneğini](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 örneği")<br />`#FFA2A4A5` | ![#FF656565 örneğini](../../extensibility/ux-guidelines/media/656565.png "#FF656565 örneği")<br />`#FF656565` | ![#FFA2A4A5 örneğini](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 örneği")<br />`#FFA2A4A5` | ![GrayText örneğini](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText örneği")<br />`GrayText` |
 | Arka plan: devre dışı | ![#FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFF6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 örneği")<br />`#FFF6F6F6` | ![Pencere örneği](../../extensibility/ux-guidelines/media/HCWindow.png "penceresi örneği")<br />`Window` |
-| Kenarlık: vurgulu | ![#FFC9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 örneği")<br />`#FFC9DEF5` | ![#FF3E3E40 örneğini](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 örneği")<br />`#FF3E3E40` |![#FFFEFEFE örneğini](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE örneği")<br /> `#FFFEFEFE` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
-| Kenarlık: basılı | ![#FF007ACC örneğini](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC örneği")<br />`#FF007ACC` | ![#FF007ACC örneğini](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC örneği")<br />`#FF007ACC` |![#FF007ACC örneğini](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC örneği")<br /> `#FF007ACC` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
-| Kenarlık: devre dışı | ![#FFCCCEDB örneğini](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB örneği")<br />`#FFCCCEDB` | ![#FF434346 örneğini](../../extensibility/ux-guidelines/media/434346.png "#FF434346 örneği")<br />`#FF434346` | ![#FFC6C6C6 örneğini](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 örneği")<br />`#FFC6C6C6` | ![WindowFrame örneğini](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame örneği")<br />`WindowFrame` |
+| Kenarlık: vurgulu | ![#FFC9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 örneği")<br />`#FFC9DEF5` | ![ #FF3E3E40 örneğini](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 örneği")<br />`#FF3E3E40` |![#FFFEFEFE örneğini](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE örneği")<br /> `#FFFEFEFE` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
+| Kenarlık: basılı | ![#FF007ACC örneğini](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC örneği")<br />`#FF007ACC` | ![ #FF007ACC örneğini](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC örneği")<br />`#FF007ACC` |![#FF007ACC örneğini](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC örneği")<br /> `#FF007ACC` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
+| Kenarlık: devre dışı | ![#FFCCCEDB örneğini](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB örneği")<br />`#FFCCCEDB` | ![ #FF434346 örneğini](../../extensibility/ux-guidelines/media/434346.png "#FF434346 örneği")<br />`#FF434346` | ![#FFC6C6C6 örneğini](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 örneği")<br />`#FFC6C6C6` | ![WindowFrame örneğini](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame örneği")<br />`WindowFrame` |
 
 ## <a name="properties-grid-control-elements"></a>Özellikler kılavuz denetim öğeleri
 
@@ -309,7 +309,7 @@ Bu başvuru kılavuzunda kullanırken unutmayın:
 | Ön plan (metin): vurgulu | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
 | Arka plan: vurgulu | ![#FFC9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 örneği")<br />`#FFC9DEF5` | ![#FF606060 örneğini](../../extensibility/ux-guidelines/media/606060.png "#FF606060 örneği")<br />`#FF606060` | ![#FFFDF4BF örneğini](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF örneği")<br />`#FFFDF4BF` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk örneği")<br />`Highlight` |
 | Ön plan (metin): basılı | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
-| Arka plan: basılı | ![#FF3399FF örneğini](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF örneği")<br />`#FF3399FF` | ![#FF3399FF örneğini](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF örneği")<br />`#FF3399FF` | ![#FF3399FF örneğini](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF örneği")<br />`#FF3399FF` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk örneği")<br />`Highlight` |
+| Arka plan: basılı | ![#FF3399FF örneğini](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF örneği")<br />`#FF3399FF` | ![ #FF3399FF örneğini](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF örneği")<br />`#FF3399FF` | ![#FF3399FF örneğini](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF örneği")<br />`#FF3399FF` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk örneği")<br />`Highlight` |
 | Ön plan (metin): Seçili | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
 | Arka plan: Seçili | ![#FF3399FF örneğini](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF örneği")<br />`#FF3399FF` | ![#FF3399FF örneğini](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF örneği")<br />`#FF3399FF` | ![#FF3399FF örneğini](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF örneği")<br />`#FF3399FF` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk örneği")<br />`Highlight` |
 
@@ -398,7 +398,7 @@ Bu başvuru kılavuzunda kullanırken unutmayın:
 | Arka Plan | ![#FEFEFE örneğini](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE örneği")<br />`#FEFEFE` | ![#252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#252526 örneği")<br />`#252526` | ![#FEFEFE örneğini](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE örneği")<br />`#FEFEFE` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
 | Kenarlık | ![#717171 örneğini](../../extensibility/ux-guidelines/media/717171.png "#717171 örneği")<br />`#717171` | ![#999999 örneğini](../../extensibility/ux-guidelines/media/999999.png "#999999 örneği")<br />`#999999` | ![#717171 örneğini](../../extensibility/ux-guidelines/media/717171.png "#717171 örneği")<br />`#717171` | ![ControlDark örneğini](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark örneği")<br />`ControlDark` |
 | Metin | ![#1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E örneği")<br />`#1E1E1E` | ![#F1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 örneği")<br />`#F1F1F1` | ![#1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E örneği")<br />`#1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
-| Karakter | ![renk örneği](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E örneği")<br />`#1E1E1E` | ![#F1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 örneği")<br />`#F1F1F1` | ![#1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E örneği")<br />`#1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
+| Karakter | ![ renk örneği](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E örneği")<br />`#1E1E1E` | ![#F1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 örneği")<br />`#F1F1F1` | ![#1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E örneği")<br />`#1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
 
 ### <a name="disabled"></a>Devre dışı
 

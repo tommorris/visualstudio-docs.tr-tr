@@ -1,23 +1,21 @@
 ---
 title: Ekleme | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c1c2331081115e9d622c7c643af999f983e425f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 437d281f0bd965cbe652cfe9961203ee7123b6d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="attach"></a>İliştir
 VSPerfCmd.exe **Attach** seçeneği başlar çalışan işleminin işlem kimliği (PID) tarafından belirtilen örnek profil.  
@@ -43,7 +41,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  **Crosssession**  
  Oturumlarında oturum dışında profil oluşturma uygulamaları etkinleştirir. Gerekli olursa **Başlat** seçeneği ile belirtilen **Crosssession** seçeneği.  
   
- **Başlangıç:**`Method`  
+ **Başlat:** `Method`  
  Komut satırı Profil Oluşturucu oturumu başlatır ve belirtilen profil oluşturma yöntemini ayarlar.  
   
  **TargetCLR**  
@@ -52,7 +50,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  **GlobalOn GlobalOff**  
  Sürdürür (**GlobalOn**) veya duraklatır (**GlobalOff**) profil, ancak profil oluşturma oturumu bitmez.  
   
- **ProcessOn:** `PID` **ProcessOff:**`PID`  
+ **ProcessOn:** `PID` **ProcessOff:** `PID`  
  Sürdürür (**ProcessOn**) veya duraklatır (**ProcessOff**) belirtilen işlem için profil oluşturma.  
   
 ## <a name="interval-options"></a>Aralık Seçenekleri  

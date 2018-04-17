@@ -1,29 +1,25 @@
 ---
-title: "Engelleme zamanı Profil raporu | Microsoft Docs"
-ms.custom: 
+title: Engelleme zamanı Profil raporu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.blocking
 helpviewer_keywords:
 - Concurrency Visualizer, Blocking Time Profile Report
 ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 748b547cda2a3c07ed84337d37f2a7e096ee112d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5c18e3124bb602b65d087a2acf74a7107b754708
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="blocking-time-profile-report"></a>Engelleme Zamanı Profil Raporu
 Profil raporları engelleme zaman veri toplama için engelleme her kategori (örneğin "G/ç" veya "Eşitleme") belirli çağrı yığınları sağlar. Önalım rapor önalım örnek sayısı ile birlikte geçerli işlem etkisiz işlemleri listeler. Engelleme Profil raporu oluşturmak için aracı engelleme API çağrıları toplar ve çağrı yığınları ağacına birikir. Bu raporlarda gösterilen verileri geçerli zaman aralığı, gizli iş parçacıkları ve uygulanabilir aşağıdaki iki filtre olarak değişir:  

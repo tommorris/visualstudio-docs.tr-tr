@@ -1,27 +1,23 @@
 ---
-title: "Nasıl yapılır: belirli işlevler için araçları sınırlama | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: belirli işlevler için araçları sınırlama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69cc476dc43562e5226ebd6564dfb2733f1d57ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a7c5cc56dec707fadc30602fb1b912d17f1dc8f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Nasıl yapılır: Belirli İşlevler için İzlemeyi Sınırlama
 Bir veya daha fazla işlevler için araçları ve veri toplama seçeneklerini ayarlayarak sınırlayabilirsiniz **Gelişmiş** sayfasında **Performans oturumunu** veya hedef ikili özellik sayfaları:  
@@ -45,9 +41,9 @@ Bir veya daha fazla işlevler için araçları ve veri toplama seçeneklerini ay
   
 3.  İçinde **ek izleme seçeneklerini** metin kutusunda, istediğiniz işlevleri adını yazmanız için aşağıdaki sözdizimini kullanın gereç:  
   
-     **/ içerir:** `FuncSpec` **[;** `FuncSpec` **]**`...`  
+     **/ içerir:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-     `FuncSpec`ad alanı ve işlev adıdır. Biçime sahip `Namespace` **::**`FunctionName`. Birden çok işlevleri ayırmak için noktalı virgül kullanın. Bir yıldız işareti kullanın (\*) bir veya daha fazla karakter için joker karakter belirtmek için. Örneğin, **/ içerir: MyNS::\***  MyNS ad alanındaki tüm işlevleri belirtir.  
+     `FuncSpec` ad alanı ve işlev adıdır. Biçime sahip `Namespace` **::**`FunctionName`. Birden çok işlevleri ayırmak için noktalı virgül kullanın. Bir yıldız işareti kullanın (\*) bir veya daha fazla karakter için joker karakter belirtmek için. Örneğin, **/ içerir: MyNS::\***  MyNS ad alanındaki tüm işlevleri belirtir.  
   
     > [!NOTE]
     >  Bir ikili işlevlerde listelemek için profil oluşturma araçları yükleme dizininde bir komut istemi penceresi açın (genellikle \Team Tools\Performance araçları dizini altında [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] yükleme dizini) ve ardından **vsınstr / DumpFuncs**  
@@ -64,9 +60,9 @@ Bir veya daha fazla işlevler için araçları ve veri toplama seçeneklerini ay
   
 4.  İçinde **ek izleme seçeneklerini** metin kutusunda, istediğiniz işlevleri adını yazmanız için aşağıdaki sözdizimini kullanın gereç:  
   
-     **/ içerir:** `FuncSpec` **[;** `FuncSpec` **]**`...`  
+     **/ içerir:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-     `FuncSpec`ad alanı ve işlev adıdır. Biçime sahip `Namespace` **::**`FunctionName`. Birden çok işlevleri ayırmak için noktalı virgül kullanın. Bir yıldız işareti kullanın (\*) bir veya daha fazla karakter için joker karakter belirtmek için. Örneğin, **/ içerir: MyNS::\***  MyNS ad alanındaki tüm işlevleri belirtir.  
+     `FuncSpec` ad alanı ve işlev adıdır. Biçime sahip `Namespace` **::**`FunctionName`. Birden çok işlevleri ayırmak için noktalı virgül kullanın. Bir yıldız işareti kullanın (\*) bir veya daha fazla karakter için joker karakter belirtmek için. Örneğin, **/ içerir: MyNS::\***  MyNS ad alanındaki tüm işlevleri belirtir.  
   
     > [!NOTE]
     >  Bir ikili işlevlerde listelemek için profil oluşturma araçları yükleme dizininde bir komut istemi penceresi açın (genellikle \Team Tools\Performance araçları dizini altında [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] yükleme dizini) ve ardından **vsınstr / DumpFuncs**  

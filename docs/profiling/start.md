@@ -1,23 +1,21 @@
 ---
-title: "Başlat | Microsoft Docs"
-ms.custom: 
+title: Başlat | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 78e052b11046f3af517a97da7fea089625613fb9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 563120e107b6b6e16c9a1512cc073e0866f61ef1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="start"></a>Başlat
 **Başlat** belirtilen profil oluşturma yöntemi için profil oluşturucu başlatır VSPerfCmd.exe seçeneği bir seçenektir.  
@@ -43,13 +41,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>Gerekli seçenekler  
  **Çıkış** seçeneği olmalıdır belirtilen **Başlat** komut satırında belirtilen.  
   
- **Çıkış:**`filename`  
+ **Çıktı:** `filename`  
  Çıktı dosyası adını belirtir.  
   
 ## <a name="exclusive-options"></a>Dışlayan seçenekleri  
  Aşağıdaki seçenekler yalnızca kullanılabilir **Başlat** bir komut satırı seçeneği.  
   
- **CrossSession**&#124; **CS**  
+ **CrossSession**&#124;**CS**  
  Etkinleştirir çapraz profil işlem. Seçenek adları **CrossSession** ve **CS** desteklenen olan iki.  
   
  **Kullanıcı:**[`domain\`]`username`  

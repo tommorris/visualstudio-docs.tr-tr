@@ -1,12 +1,10 @@
 ---
-title: "Visual Studio'da SharePoint araçları genişletme | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'da SharePoint araçları genişletme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: db0afa41641cd9d5ae04cfe6d391dbf0fe814f0f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d5ad6f27574fcb7bd8a859bcd21ac65e159596e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-sharepoint-tools-in-visual-studio"></a>SharePoint Araçlarını Visual Studio'da Genişletme
   Visual Studio'da SharePoint araçları birçok uygulama geliştirme senaryoları gereksinimlerini karşılamak. Ancak, bunlar burada, veya diğer geliştiriciler gerektiren işlevselliği sağlamaz durumlarda fark edebilirsiniz. Bu durumlarda, ihtiyacınız olan işlevselliği oluşturmak için SharePoint araçları genişletebilirsiniz.  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
  [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [SharePoint araç uzantıları için programlama kavramları ve Özellikler](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
- [Başvuru &#40; SharePoint araçları genişletilebilirliği &#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
+ [Başvuru &#40;SharePoint araçları genişletilebilirliği&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
  [Visual Studio'da SharePoint araçları için hata ayıklama uzantıları](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
  [Visual Studio'da SharePoint Araçları için Hata Ayıklama Uzantıları](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   

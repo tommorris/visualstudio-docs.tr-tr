@@ -2,11 +2,8 @@
 title: MIDL görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
 - VC.Project.VCMidlTool.ApplicationConfigurationMode
@@ -26,17 +23,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), MIDL task
 - MIDL task (MSBuild (Visual C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-caps.latest.revision: 8
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51ed6c8c34fd5aa37eebffabcda077ca8554c498
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: HT
+ms.openlocfilehash: 69b46143ed997e4f23600ff3a5d389adc62fa62e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="midl-task"></a>MIDL Görevi
 Microsoft arabirimi tanım dili (MIDL) derleyici aracı sarmalar midl.exe. Daha fazla bilgi için "MIDL komut satırı başvurusu" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
@@ -190,7 +186,7 @@ Microsoft arabirimi tanım dili (MIDL) derleyici aracı sarmalar midl.exe. Daha 
     |Değer|Komut satırı seçeneği|  
     |-----------|--------------------------|  
     |**Yok**|**/ Server yok**|  
-    |**Stub**|**/server stub**|  
+    |**Stub**|**/ Server saplama**|  
   
      Daha fazla bilgi için bkz: **/Server** "MIDL komut satırı başvurusu" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
@@ -412,7 +408,7 @@ Microsoft arabirimi tanım dili (MIDL) derleyici aracı sarmalar midl.exe. Daha 
   
     |Değer|Komut satırı seçeneği|  
     |-----------|--------------------------|  
-    |**0**|**/W0**|  
+    |**0**|**/ W0**|  
     |**1**|**/ W1**|  
     |**2**|**/ W2**|  
     |**3**|**/ W3**|  

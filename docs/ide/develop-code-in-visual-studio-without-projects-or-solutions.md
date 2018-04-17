@@ -1,30 +1,28 @@
 ---
-title: "Visual Studio projeleri veya çözümler olmadan kod geliştirme | Microsoft Docs"
+title: Visual Studio projeleri veya çözümler olmadan kod geliştirme | Microsoft Docs
 ms.date: 02/21/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c50a07992a1856ad0d5f45c0200e0b8a232cb7
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: 082e64d80080eec48c311254461b85812a969841
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Visual Studio projeleri veya çözümler olmadan kod geliştirme
 
 Visual Studio 2017 ', kod neredeyse tüm dizin tabanlı proje türünden Visual Studio'ya bir çözüm ya da proje dosyası gerek kalmadan açabilirsiniz. Bu,, örneğin, github'da depoyu kopyalama, doğrudan Visual Studio'ya açın ve bir çözüm ya da proje oluşturmak zorunda kalmadan geliştirmeye başlamak anlamına gelir. Gerekirse, özel derleme görevleri belirtin ve parametreler aracılığıyla basit JSON dosyaları başlatın.
 
-Visual Studio'da kod dosyalarınızın açtıktan sonra Çözüm Gezgini klasördeki tüm dosyaları görüntüler. Düzenlemeye başlamak için herhangi bir dosya tıklatabilirsiniz. Arka planda, IntelliSense, gezinme ve düzenleme özellikleri etkinleştirmek için dosyaların dizinini Visual Studio başlatır. Düzenleme, oluşturma, taşıma veya dosyaları sil gibi Visual Studio değişiklikleri otomatik olarak izler ve IntelliSense dizinini sürekli olarak güncelleştirir. Kod söz dizimi renklendirme ve çoğu durumda, görünür temel IntelliSense deyim tamamlama içerir.
+Visual Studio'da kod dosyalarınızın açtıktan sonra **Çözüm Gezgini** klasördeki tüm dosyaları görüntüler. Düzenlemeye başlamak için herhangi bir dosya tıklatabilirsiniz. Arka planda, IntelliSense, gezinme ve düzenleme özellikleri etkinleştirmek için dosyaların dizinini Visual Studio başlatır. Düzenleme, oluşturma, taşıma veya dosyaları sil gibi Visual Studio değişiklikleri otomatik olarak izler ve IntelliSense dizinini sürekli olarak güncelleştirir. Kod söz dizimi renklendirme ve çoğu durumda, görünür temel IntelliSense deyim tamamlama içerir.
 
 ## <a name="open-any-code"></a>Herhangi bir kod açın
 
@@ -32,7 +30,7 @@ Kod aşağıdaki yollardan herhangi birini kullanarak bir Visual Studio'ya açab
 
 - Visual Studio menü çubuğunda seçin **dosya** > **açık** > **klasörü**ve kod konuma göz atın.
 - Kodu içeren bir klasör (sağ tıklatma) bağlam menüsünde seçin **Visual Studio'da Aç** komutu.
-- Seçin **Klasör Aç** Visual Studio Başlangıç sayfası bağlantısına.
+- Seçin **Klasör Aç** Visual Studio bağlantıdaki **başlangıç sayfası**.
 - Klavye kullanıcısıysanız basın **Ctrl**+**Shift**+**Alt**+**O** Visual içinde Studio.
 - Kopyalanan bir GitHub deposuna açık koddan.
 
@@ -46,7 +44,7 @@ Aşağıdaki örnek, bir GitHub deposuna kopyalamak ve kendi kod Visual Studio'd
 
    ![GitHub kopya düğmesi](./media/VSIDE_Code_Clone.png)
 
-1. Visual Studio'da, **Takım Gezgini** sekmesini Takım Gezgini'ni açın. Sekmesini görmüyorsanız, ondan açmak **Görünüm** > **Takım Gezgini**.
+1. Visual Studio'da, **Takım Gezgini** sekmesini açmak için **Takım Gezgini**. Sekmesini görmüyorsanız, ondan açmak **Görünüm** > **Takım Gezgini**.
 
 1. Takım Gezgini'nde altında **yerel Git depoları** bölümünde, seçin **kopya** komut ve GitHub sayfasının URL'sini metin kutusuna yapıştırın.
 
@@ -54,11 +52,11 @@ Aşağıdaki örnek, bir GitHub deposuna kopyalamak ve kendi kod Visual Studio'd
 
 1. Seçin **kopya** proje dosyalarını yerel bir Git deposuna kopyalamak için düğmesi. Depodaki boyutuna bağlı olarak, bu işlem birkaç dakika sürebilir.
 
-1. Takım Gezgini'nde, sisteminize depoyu klonlanmış sonra tercih **açık** yeni kopyalanmış depo bağlamını (sağ tıklatma) menüsünde komutu.
+1. Depoyu üzere, sisteminize içinde klonlanmış sonra **Takım Gezgini**, seçin **açık** yeni kopyalanmış depo bağlamını (sağ tıklatma) menüsünde komutu.
 
    ![Kopyalanan deposu](./media/VSIDE_Code_Clone3.png)
 
-1. Seçin **klasör görünümü göster** komut dosyaları Çözüm Gezgini'nde görüntülemek için
+1. Seçin **klasör görünümü göster** dosyaları görüntülemek için komut **Çözüm Gezgini**.
 
    ![Klasör Görünümü Göster](./media/VSIDE_Code_Clone3_show.png)
 

@@ -1,23 +1,21 @@
 ---
-title: "Roslyn Çözümleyicileri ve ImmutableArrays için kod algılayan kitaplığı | Microsoft Docs"
-ms.custom: 
+title: Roslyn Çözümleyicileri ve ImmutableArrays için kod algılayan kitaplığı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6870f1733d507f2cf46d196b2bba027b998b5ba4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6ebafdd09e6fca0e1266c4eb03c4f6cb66554d06
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn Çözümleyicileri ve ImmutableArrays için kod algılayan kitaplığı
 
@@ -28,8 +26,8 @@ ms.lasthandoff: 12/22/2017
 Bu örnek oluşturmak için aşağıdakilere sahip olmanız gerekir:
 
 * Visual Studio 2015 (olmayan bir Express Edition) veya sonraki bir sürümü.  Ücretsiz kullanabileceğiniz [Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
-* [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  Ayrıca, Visual Studio yüklenirken, Visual Studio genişletilebilirlik araçları aynı anda SDK yüklemek için ortak Araçlar altındaki kontrol edebilirsiniz.  Visual Studio'nun zaten yüklediyseniz, aynı zamanda bu SDK ana menüsüne giderek yükleyebilirsiniz **dosyası &#124; Yeni &#124; Proje...** , C# sol gezinti bölmesinde seçerek ve genişletilebilirlik seçme.  Seçtiğinizde "**Visual Studio genişletilebilirlik Araçları'nı yükleme**" içerik haritası proje şablonu, onu ister indirmenizi ve SDK'sını yükleyin.
-* [.NET derleme Platformu ("Roslyn") SDK](http://aka.ms/roslynsdktemplates).  Ana menüsüne giderek bu SDK yükleyebilirsiniz **dosyası &#124; Yeni &#124; Proje...** , seçme **C#** sol gezinti bölmesinde, ve ardından seçme **genişletilebilirlik**.  Seçtiğinizde "**.NET derleyici Platform SDK'sını indirin**" içerik haritası proje şablonu, onu ister indirmenizi ve SDK'sını yükleyin.  Bu SDK'sı içerir [Roslyn sözdizimi Görselleştirici](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  Hangi kod modeli türleri şekil bu son derece yararlı aracı yardımcı olur, Çözümleyicisi'nde göz önünde bulundurmanız gerekenler.  Çözümleyici altyapı çağrılarını kodunuz için özel kod modeli türleri, böylece kodunuzu yalnızca gerekli olduğunda yürütür ve yalnızca ilgili kod çözümleme üzerinde odaklanabilirsiniz.
+* [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  Ayrıca, Visual Studio yüklenirken, Visual Studio genişletilebilirlik araçları aynı anda SDK yüklemek için ortak Araçlar altındaki kontrol edebilirsiniz.  Visual Studio'nun zaten yüklediyseniz, aynı zamanda bu SDK ana menüsüne giderek yükleyebilirsiniz **dosya &#124; yeni &#124;proje...** , C# sol gezinti bölmesinde seçerek ve genişletilebilirlik seçme.  Seçtiğinizde "**Visual Studio genişletilebilirlik Araçları'nı yükleme**" içerik haritası proje şablonu, onu ister indirmenizi ve SDK'sını yükleyin.
+* [.NET derleme Platformu ("Roslyn") SDK](http://aka.ms/roslynsdktemplates).  Ana menüsüne giderek bu SDK yükleyebilirsiniz **dosya &#124; yeni &#124; proje...** , seçme **C#** sol gezinti bölmesinde, ve ardından seçme **genişletilebilirlik**.  Seçtiğinizde "**.NET derleyici Platform SDK'sını indirin**" içerik haritası proje şablonu, onu ister indirmenizi ve SDK'sını yükleyin.  Bu SDK'sı içerir [Roslyn sözdizimi Görselleştirici](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  Hangi kod modeli türleri şekil bu son derece yararlı aracı yardımcı olur, Çözümleyicisi'nde göz önünde bulundurmanız gerekenler.  Çözümleyici altyapı çağrılarını kodunuz için özel kod modeli türleri, böylece kodunuzu yalnızca gerekli olduğunda yürütür ve yalnızca ilgili kod çözümleme üzerinde odaklanabilirsiniz.
 
 ## <a name="whats-the-problem"></a>Sorun nedir?
 
@@ -59,13 +57,13 @@ Koleksiyon başlatıcıları hatasıyla ImmutableArray.Add yöntemi her çağır
 
 ## <a name="finding-relevant-syntax-node-types-to-trigger-your-analyzer"></a>İlgili sözdizimi düğüm türleri, Çözümleyicisi tetiklemek için bulma
 
- Çözümleyici oluşturmaya başlamak için önce ne tür bir SyntaxNode arayın gerek çıkışı şekil. Başlat menüsünde sözdizimi Görselleştirici **Görünüm &#124; Diğer Windows &#124; Roslyn sözdizimi Görselleştirici**.
+ Çözümleyici oluşturmaya başlamak için önce ne tür bir SyntaxNode arayın gerek çıkışı şekil. Başlat menüsünde sözdizimi Görselleştirici **Görünüm &#124; diğer pencereler &#124; Roslyn sözdizimi Görselleştirici**.
 
 Düzenleyicinin şapka bildiren satıra yerleştirin `b1`.  Sözdizimi Görselleştirici gösterir bulunduğunuz görürsünüz bir `LocalDeclarationStatement` sözdizimi ağacı düğümü.  Bu düğüm bir `VariableDeclaration`, sırayla sahip olduğu bir `VariableDeclarator`, sırayla sahip olduğu bir `EqualsValueClause`ve son olarak bir `ObjectCreationExpression`.  Düğümleri sözdizimi Görselleştirici ağacında tıkladığınızda, bu düğüm tarafından temsil edilen kod göstermek için sözdizimi Düzenleyicisi penceresinde vurgular.  C# dilbilgisi içinde kullanılan adları SyntaxNode alt türleri adlarıyla.
 
 ## <a name="creating-the-analyzer-project"></a>Çözümleyici projesi oluşturma
 
-Ana menüden **dosyası &#124; Yeni &#124; Proje...** .  İçinde **yeni proje** iletişim altında **C#** projeleri sol gezinti çubuğunda genişletilebilirlik seçin ve sağ bölmede seçin **Çözümleyicisi kod düzeltme ile** proje Şablon.  Bir ad girin ve iletişim kutusunda onaylayın.
+Ana menüden **dosya &#124; yeni &#124; proje...** .  İçinde **yeni proje** iletişim altında **C#** projeleri sol gezinti çubuğunda genişletilebilirlik seçin ve sağ bölmede seçin **Çözümleyicisi kod düzeltme ile** proje Şablon.  Bir ad girin ve iletişim kutusunda onaylayın.
 
 Şablon DiagnosticAnalyzer.cs dosyasını açar.  Bu düzenleyici arabellek sekmesini seçin.  Bu dosyayı bir Çözümleyicisi sınıfı vardır (biçimlendirilmiş proje verdiğiniz adından), türetilen `DiagnosticAnalyzer` (Roslyn API türü).  Yeni sınıfınıza sahip bir `DiagnosticAnalyzerAttribute` , Çözümleyicisi bildirme C# dili için ilgili böylece derleyici bulur ve, Çözümleyicisi yükler.
 

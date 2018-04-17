@@ -1,28 +1,26 @@
 ---
-title: "-Dağıtma (devenv.exe) | Microsoft Docs"
-ms.custom: 
+title: -Dağıtma (devenv.exe) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Devenv, /deploy switch
 - deploy Devenv switch
 - deploying applications [Visual Studio], after build
 - /deploy Devenv switch
 ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2f7697217d59d430e2b4661548b7f922f8fd8c95
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dee247f9c948ae5a5d0ac6926679b7849c4c1fbc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 Bir çözüm oluşturma veya yeniden oluşturma sonra dağıtır. Yalnızca yönetilen kod projeler için geçerlidir.  
@@ -40,10 +38,10 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
  `SolutionName`  
  Gerekli. Tam yol ve çözüm dosyasının adı.  
   
- / Project`ProjName`  
+ / Project `ProjName`  
  İsteğe bağlı. Yol ve çözüm içinde proje dosyasının adı. Gelen göreli bir yol girin `SolutionName` klasörü proje dosyası veya projenin görünen adı veya tam yolunu ve proje dosyasının adı.  
   
- / projectconfig`ProjConfigName`  
+ / projectconfig `ProjConfigName`  
  İsteğe bağlı. Bir proje adını derleme oluştururken kullanılacak yapılandırma `/project` adlı.  
   
 ## <a name="remarks"></a>Açıklamalar  

@@ -1,28 +1,26 @@
 ---
-title: "2. adım: Programınızı çalıştırma | Microsoft Docs"
-ms.custom: 
+title: '2. adım: Programınızı çalıştırma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
-caps.latest.revision: "14"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 78b85460ad7edf7163a8a53c7c4706790f493b58
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d28e5eda70a03e0a7423458bc9794da3902ee744
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-2-run-your-program"></a>2. Adım: Programınızı Çalıştırma
 Yeni bir çözüm oluşturduğunuzda, çalışan bir programı gerçekte yerleşiktir. Çok yapmaz henüz — yalnızca gösterir boş bir pencere görüntüler **Form1** başlık çubuğunda. Ancak hakkında bilgi almak için yaptığınız gibi çalıştırın.  
   
- ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo")bu konuda video sürümü için bkz: [Eğitmen 1: Visual Basic'te - Video 1 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205209) veya [Eğitmen 1: bir resim görüntüleyici oluşturma C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Bazı menü komutları ve diğer kullanıcı arabirimi öğeleri küçük farklar olduklarından bu videolar Visual Studio'nun önceki bir sürümünü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde geçerli sürümünde Visual Studio çalışır.  
+ ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo")bu konuda video sürümü için bkz: [Eğitmen 1: Visual Basic'te - Video 1 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205209) veya [Öğreticisi 1: Resim Görüntüleyici C# ' - oluşturma Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Bazı menü komutları ve diğer kullanıcı arabirimi öğeleri küçük farklar olduklarından bu videolar Visual Studio'nun önceki bir sürümünü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde geçerli sürümünde Visual Studio çalışır.  
   
 ### <a name="to-run-your-program"></a>Programınızı çalıştırmak için  
   

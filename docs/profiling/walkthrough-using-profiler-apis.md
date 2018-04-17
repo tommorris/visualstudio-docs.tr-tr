@@ -1,26 +1,24 @@
 ---
 title: "İzlenecek yol: Profilini Oluşturucu API'ler kullanma | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
 ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a592082cac8cf493a742c9ce6f7de3bb0c706aad
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 79670dff57e7b7340c815b1d163875a34cd4976d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profilini Oluşturucu API'ler Kullanma
 İzlenecek yol bir C# uygulamasını nasıl kullanılacağını göstermek için kullanır. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları API'leri. İzleme profili oluşturma sırasında toplanan veri miktarını sınırlamak için profil oluşturucu API kullanır.  

@@ -1,28 +1,26 @@
 ---
-title: "Derleme ve bildirim imzalamayı yönetme | Microsoft Docs"
-ms.custom: 
+title: Derleme ve bildirim imzalamayı yönetme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
 - signing manifests [Visual Studio]
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d8227a514887150e3477e026a238df608fe98d11
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2104ea0a86b351d0300bb7327c338dfcb0cd1818
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Derleme ve Bildirim İmzalamayı Yönetme
 Tanımlayıcı ad imzası bir yazılım bileşeni genel olarak benzersiz bir kimliği verir. Tanımlayıcı adlar derleme başka birisi tarafından gibi görünerek edilemez olduğunu garanti ve bileşen bağımlılıklar ve yapılandırma deyimleri doğru bileşeni ve bileşen sürümü harita sağlamak için kullanılır.  
@@ -51,7 +49,7 @@ Aşağıdaki varlık türlerini oturum açmanız gerekir:
   
 1.  Derlemeleri genel derleme önbelleği (GAC) dağıtmak istiyorsanız.  
   
-2.  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Uygulama ve dağıtım bildirimlerini. Visual Studio, varsayılan olarak bu uygulamalar için imzalama sağlar.  
+2.  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Uygulama ve dağıtım bildirimlerini. Visual Studio, varsayılan olarak bu uygulamalar için imzalama sağlar.  
   
 3.  COM birlikte çalışabilirlik için kullanılan birincil birlikte çalışma derlemeleri. Birincil birlikte çalışma derlemesi COM tür kitaplığından oluştururken, TLBIMP yardımcı programı güçlü adlandırma zorlar.  
   

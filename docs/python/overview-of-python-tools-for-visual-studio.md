@@ -1,15 +1,12 @@
 ---
-title: Windows Visual Studio'da Python desteği'ne genel bakış | Microsoft Docs
+title: Windows Visual Studio'da Python desteği'ne genel bakış
 description: Visual Studio, Windows üzerinde en iyi Python IDE kolaylaştırarak özellikleri özeti (Ayrıca Visual Studio, PTVS Python araçları olarak bilinir)
 ms.custom: ''
 ms.date: 04/06/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -17,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b76c83db283a2cb0940d8817c04e6052157ada4
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 799476fa7e9506ecb1a078e349ccb44c7426a944
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Python Visual Studio (Windows) ile çalışma
 
@@ -159,22 +156,22 @@ Daha fazla bilgi için:
 
 **Q. Python desteği Mac için Visual Studio ile var mı?**
 
-A. Şu anda değil, ancak en fazla istek oy kullanabilir [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). [Mac için Visual Studio](/visualstudio/mac/) belgelerine destekliyor mu geliştirme geçerli türlerini tanımlar. Bu arada, Visual Studio Code Windows, Mac ve Linux [çalışır kullanılabilir uzantıları yoluyla Python ile iyi](https://code.visualstudio.com/docs/languages/python).
+BİR. Şu anda değil, ancak en fazla istek oy kullanabilir [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). [Mac için Visual Studio](/visualstudio/mac/) belgelerine destekliyor mu geliştirme geçerli türlerini tanımlar. Bu arada, Visual Studio Code Windows, Mac ve Linux [çalışır kullanılabilir uzantıları yoluyla Python ile iyi](https://code.visualstudio.com/docs/languages/python).
 
 **Q. Ne Python ile kullanıcı Arabirimi oluşturmak için kullanabilir miyim?**
 
-A. Bu alandaki ana bir tekliftir [Qt proje](https://www.qt.io/qt-for-application-development/), olarak bilinen Python için bağlamalarla [PySide (resmi bağlama)](http://wiki.qt.io/PySide) (Ayrıca bkz. [PySide indirmeleri](https://download.qt.io/official_releases/pyside/.)) ve [ PyQt](https://wiki.python.org/moin/PyQt). Şu anda herhangi belirli araçları UI geliştirme için Visual Studio'da Python desteği içermez.
+BİR. Bu alandaki ana bir tekliftir [Qt proje](https://www.qt.io/qt-for-application-development/), olarak bilinen Python için bağlamalarla [PySide (resmi bağlama)](http://wiki.qt.io/PySide) (Ayrıca bkz. [PySide indirmeleri](https://download.qt.io/official_releases/pyside/.)) ve [ PyQt](https://wiki.python.org/moin/PyQt). Şu anda herhangi belirli araçları UI geliştirme için Visual Studio'da Python desteği içermez.
 
 **Q. Python proje tek başına yürütülebilir dosya oluşturabilir mi?**
 
-A. Python ile kod Visual Studio ile web sunucuları gibi uygun bir Python özellikli ortamda isteğe bağlı çalıştığı bir yorumlama dili genellikle içindir. Visual Studio kendisini şu anda temelde katıştırılmış bir Python yorumlayıcısı sahip bir program anlamına gelir bir tek başına yürütülebilir oluşturulacağı anlamına gelir sağlamaz. Ancak, yürütülebilir dosyalar açıklandığı gibi oluşturmak için çeşitli anlamına gelir Python topluluk içinde vardır [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython de destekler yerel bir uygulama içinde yerleşik blog gönderisi konusunda açıklandığı gibi [kullanarak CPython'ın gömülebilir ZIP dosyasını](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
+BİR. Python ile kod Visual Studio ile web sunucuları gibi uygun bir Python özellikli ortamda isteğe bağlı çalıştığı bir yorumlama dili genellikle içindir. Visual Studio kendisini şu anda temelde katıştırılmış bir Python yorumlayıcısı sahip bir program anlamına gelir bir tek başına yürütülebilir oluşturulacağı anlamına gelir sağlamaz. Ancak, yürütülebilir dosyalar açıklandığı gibi oluşturmak için çeşitli anlamına gelir Python topluluk içinde vardır [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython de destekler yerel bir uygulama içinde yerleşik blog gönderisi konusunda açıklandığı gibi [kullanarak CPython'ın gömülebilir ZIP dosyasını](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
 
 ## <a name="features-matrix"></a>Özellikler Matrisi
 
 Python özellikleri açıklandığı gibi aşağıdaki Visual Studio sürümlerinde yüklenebilir [Yükleme Kılavuzu](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2017 (tüm sürümler)](https://www.visualstudio.com/vs/)
-- [Visual Studio 2015 (tüm sürümler)](https://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs)
+- Visual Studio 2015 (tüm sürümler)
 - Visual Studio 2013 Community Edition
 - Web, güncelleştirme 2 veya üzeri için Visual Studio 2013 Express
 - Masaüstü, güncelleştirme 2 veya üzeri için Visual Studio 2013 Express
@@ -182,10 +179,12 @@ Python özellikleri açıklandığı gibi aşağıdaki Visual Studio sürümleri
 - Visual Studio 2012 (Pro sürümü veya üzeri)
 - Visual Studio 2010 SP1 (Pro sürümü veya üzeri; .NET 4.5 gerekiyor)
 
+Visual Studio 2015 ve önceki kullanılabilir [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/).
+
 > [!Important]
 > Özelliklerin tam olarak desteklenir ve yalnızca en son sürümü Visual Studio için sağlanmıştır. Özellikleri, eski sürümlerinde kullanılabilir, ancak etkin bir şekilde korunmuyor.
 
-| Python desteği | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| Python desteği | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Birden çok yorumlayıcılar yönetme | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Popüler yorumlayıcılar otomatik algıla | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
@@ -194,7 +193,7 @@ Python özellikleri açıklandığı gibi aşağıdaki Visual Studio sürümleri
 | PIP/kolay yükleme | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Proje sistemi | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| Proje sistemi | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Var olan koddan yeni proje | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Tüm dosyaları göster | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
@@ -202,7 +201,7 @@ Python özellikleri açıklandığı gibi aşağıdaki Visual Studio sürümleri
 | Git tümleştirmesi | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004;<sup>1</sup> | &#10007; |
 <br/>
 
-| Düzenleme | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| Düzenleme | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | söz dizimi vurgulama | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Otomatik Tamamlama | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
@@ -221,20 +220,20 @@ Python özellikleri açıklandığı gibi aşağıdaki Visual Studio sürümleri
 | PyLint | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Etkileşimli penceresi | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| Etkileşimli penceresi | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Etkileşimli penceresi | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Satır içi grafikleri ile IPython | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Masaüstü | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| Masaüstü | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Windows konsol uygulaması | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | IronPython WPF (ile XAML Tasarımcısı) | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | IronPython Windows Forms | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Web | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| Web | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Django web projesi | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Bottle web projesi | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
@@ -242,24 +241,24 @@ Python özellikleri açıklandığı gibi aşağıdaki Visual Studio sürümleri
 | Genel web projesi | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Azure | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| Azure | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Web sitesine dağıtma | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004;<sup>2</sup> |
 | Web rolü için dağıtma | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
 | Çalışan rolü için dağıtma | ? | ? | ? | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
 | Azure öykünücüsünde çalıştırın | ? | ? | ? | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
 | Uzaktan hata ayıklama | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>6</sup> | &#10004;<sup>8</sup> | &#10004;<sup>8</sup> | &#10007; |
-| Attach Server Explorer | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> | &#10007; | &#10007; |
+| Sunucu Gezgini ekleme | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> | &#10007; | &#10007; |
 <br/>
 
-| Django şablonları | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| Django şablonları | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Hata Ayıklama | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Otomatik Tamamlama | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004; | &#10004; |
 | CSS ve JavaScript için otomatik olarak tamamlama | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007; | &#10007; |
 <br/>
 
-| Hata Ayıklama | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| Hata Ayıklama | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Hata Ayıklama | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Projeyi olmadan hata ayıklama | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
@@ -271,12 +270,12 @@ Python özellikleri açıklandığı gibi aşağıdaki Visual Studio sürümleri
 
 <a name="matrix-profiling"></a>
 
-| Profil Oluşturma | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| Profil Oluşturma | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Profil Oluşturma | &#10004; | &#10004; | &#10004; | &#10007; | &#10007; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Test | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| Test | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Test Gezgini | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
 | Testi çalıştırma | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |

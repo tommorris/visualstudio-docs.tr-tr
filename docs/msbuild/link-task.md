@@ -2,11 +2,8 @@
 title: Bağlantı görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceFileOutput
 - VC.Project.VCLinkerTool.LinkStatus
@@ -30,17 +27,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), Link task
 - Link task (MSBuild (Visual C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-caps.latest.revision: 12
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c92a6faa558445bf85637f2e51ab7fb0e7a856
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: HT
+ms.openlocfilehash: f8fb520b1582c14c629c28cb0822cc825f303c49
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="link-task"></a>Bağlantı Görevi
 Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesne dosyası biçimi (COFF) nesne dosyaları ve kitaplıkları bir yürütülebilir dosyanın (.exe) dosyayı oluşturmak için veya bir dinamik bağlantı kitaplığı (DLL) bağlar. Daha fazla bilgi için bkz: [bağlayıcı seçenekleri](/cpp/build/reference/linker-options).  
@@ -88,7 +84,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Daha fazla bilgi için bkz: [/ASSEMBLYMODULE (derlemeye MSIL Modülü Ekle)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).  
   
--   **AllowIsolation**  
+-   **Allowısolatıon**  
   
      İsteğe bağlı **Boolean** parametresi.  
   
@@ -104,7 +100,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Daha fazla bilgi için bkz: [/ASSEMBLYDEBUG (DebuggableAttribute ekleme)](/cpp/build/reference/assemblydebug-add-debuggableattribute).  
   
--   **AssemblyLinkResource**  
+-   **Assemblylınkresource**  
   
      İsteğe bağlı **String []** parametresi.  
   
@@ -176,7 +172,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Her biri için bir bağlayıcı seçeneği karşılık gelen aşağıdaki değerlerden birini belirtin.  
   
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**  
+    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: yok**  
   
     -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
   
@@ -304,7 +300,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
     -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
   
-    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
+    -   **UndefinedSymbolOnly** -   **/FORCE: ÇÖZÜMLENMEMİŞ**  
   
      Daha fazla bilgi için bkz: [/Force (dosya çıktısını zorla)](/cpp/build/reference/force-force-file-output).  
   
@@ -506,7 +502,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Daha fazla bilgi için bkz: [/LTCG (bağlama zamanı kodu oluşturma)](/cpp/build/reference/ltcg-link-time-code-generation).  
   
--   **ManifestFile**  
+-   **Manıfestfıle**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -740,7 +736,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      Daha fazla bilgi için bkz: [/PDBSTRIPPED (özel simgeleri)](/cpp/build/reference/pdbstripped-strip-private-symbols).  
   
--   **SubSystem**  
+-   **Alt sistemi**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -762,7 +758,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
     -   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
   
-    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+    -   **EFI çalışma zamanı** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
     -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
   
@@ -838,7 +834,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
     -   **MachineTHUMB** - **/MACHINE:THUMB**  
   
-    -   **MachineX64** - **/MACHINE:X64**  
+    -   **MachineX64** - **/MACHINE:X 64**  
   
     -   **MachineX86** - **/MACHINE:X 86**  
   
@@ -902,7 +898,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
     -   **HighestAvailable** - `level='highestAvailable'`  
   
-    -   **RequireAdministrator** - `level='requireAdministrator'`  
+    -   **RequireAdministrator'a** - `level='requireAdministrator'`  
   
      Daha fazla bilgi için bkz: `level` bağımsız değişkeni [/MANIFESTUAC (bildirimdeki UAC bilgilerini katıştırır)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).  
   

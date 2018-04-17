@@ -1,12 +1,10 @@
 ---
-title: "SharePoint çözümleri için güvenlik | Microsoft Docs"
-ms.custom: 
+title: SharePoint çözümleri için güvenlik | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, security
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6e9aff74a49f738f4a0ed0df68ffe2e9a5b33525
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 471de3ab69a969f5153723658c628d659038c3a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint Çözümleri için Güvenlik
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint uygulamaları güvenliğini artırmaya yardımcı olmak için aşağıdaki özellikleri içerir.  
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint uygulamaları güvenliğini artırmaya yardımcı olmak için aşağıdaki özellikleri içerir.  
   
 ## <a name="safe-control-entries"></a>Güvenli denetim girişleri  
  Her SharePoint proje öğesi oluşturulan [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sahip bir **güvenli denetim girişleri** güvenli temsil eden özellik koleksiyonu denetler. Kendi **güvenli** alt güvenli göz önünde bulundurun denetimleri belirtmenize olanak sağlar. Daha fazla bilgi için bkz: [sağlama paketleme ve dağıtım bilgileri proje öğelerinde](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) ve [belirtme güvenli Web Bölümleri](http://go.microsoft.com/fwlink/?LinkId=177521).  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
  *Komut dosyası ekleme* kötü amaçlı olabilecek kod ekleme denetimlerini veya Web sayfaları. SharePoint 2010 sitelerine komut dosyası ekleme karşı korunmasına yardımcı olmak için katkıda bulunanlar görüntüleyemez veya varsayılan Web Bölümleri veya özelliklerini düzenleyin. Bu davranış SafeAgainstScript adlı SafeControl bir öznitelik tarafından denetlenir. İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], bu öznitelik bir proje öğesi, kullanıcının ayarlamak **güvenli denetim girişleri** alt **karşı güvenli betik**. Daha fazla bilgi için bkz: [sağlama paketleme ve dağıtım bilgileri proje öğelerinde](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) ve [nasıl yapılır: işareti denetimleri güvenli denetim olarak](../sharepoint/how-to-mark-controls-as-safe-controls.md).  
   
 ## <a name="vista-and-windows-7-user-account-control"></a>Vista ve Windows 7 kullanıcı hesabı denetimi  
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)]ve [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] kullanıcı hesabı denetimi (UAC) olarak bilinen bir güvenlik özelliği ekleyebilirsiniz. SharePoint çözümleri geliştirmek için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] üzerinde [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] ve [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] sistemleri UAC gerektirir, çalıştırmanız [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bir sistem yöneticisi olarak. Gelen **Başlat** menüsünde için kısayol menüsünü açın [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ve ardından **yönetici olarak çalıştır**.  
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] ve [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] kullanıcı hesabı denetimi (UAC) olarak bilinen bir güvenlik özelliği ekleyebilirsiniz. SharePoint çözümleri geliştirmek için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] üzerinde [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] ve [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] sistemleri UAC gerektirir, çalıştırmanız [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bir sistem yöneticisi olarak. Gelen **Başlat** menüsünde için kısayol menüsünü açın [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ve ardından **yönetici olarak çalıştır**.  
   
  Yapılandırmak için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] her zaman yönetici olarak çalıştır, kendi kısayol menüsünü açın, seçmek için kısayol **özellikleri**, seçin **Gelişmiş** düğmesini **özellikleri**iletişim kutusunu ve ardından **yönetici olarak çalıştır** onay kutusu.  
   

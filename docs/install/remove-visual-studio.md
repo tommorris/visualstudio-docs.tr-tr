@@ -3,11 +3,8 @@ title: Visual Studio 2017 kaldırma | Microsoft Docs
 description: Visual Studio, adım adım kaldırmayı öğrenin.
 ms.custom: ''
 ms.date: 09/12/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - uninstall
@@ -24,11 +21,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3234dad8a68e4a6ac5560122a971f26e90158ce4
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: ac7facd4b588ef87136a15db4a09fbc1770ff440
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-visual-studio"></a>Visual Studio Kaldır
 
@@ -65,5 +62,5 @@ Birkaç diğer destek seçenekleri şunlardır:
 ## <a name="see-also"></a>Ayrıca bkz.
 * [Visual Studio 2017 yükleyin](install-visual-studio.md)
 * [Visual Studio 2017 güncelleştir](update-visual-studio.md)
-* [Modify Visual Studio 2017](modify-visual-studio.md)
+* [Visual Studio 2017 değiştirme](modify-visual-studio.md)
 * [Visual Studio 2017 kaldırma](uninstall-visual-studio.md)

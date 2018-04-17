@@ -1,23 +1,21 @@
 ---
-title: "9. adım: Gözden geçirme, açıklama ve kodunuzu Test | Microsoft Docs"
-ms.custom: 
+title: '9. adım: Gözden geçirme, açıklama ve kodunuzu Test | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
-caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: af541817ec73cf81aa339f9a57a584286e843e46
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b46e51ac48ffab06bf17508f6c99ccc2fd7fa7c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9. Adım: Kodunuzu Gözden Geçirme, Açıklama ve Test Etme
 Sonraki kodunuz için bir açıklama ekleyin. Bir açıklamadır programın davranışını değiştirmez unutmayın. Ne yapacağını anlamak için kodunuzu okuyan yapılandırabilecek için kolaylaştırır. Kodunuz için açıklama ekleme almak için iyi bir alışkanlıktır. Visual C# ' ta iki eğik (/ /) satırını açıklama olarak işaretleyin. Visual Basic'te, tek tırnak işareti ('), bir satırı açıklama olarak işaretlemek için kullanılır. Açıklama ekledikten sonra programınızı sınayın. Çalıştırmak ve catch ve kodu daha karmaşık büyümeden sorunları erken, düzeltmek için sık projelerinizi üzerinde çalışırken kodunuzu test etmek için iyi bir uygulamadır. Bu adlı *yinelemeli test*.  
@@ -46,7 +44,7 @@ Sonraki kodunuz için bir açıklama ekleyin. Bir açıklamadır programın davr
   
      Deyimler ne şeyler programlarınızı olun şunlardır. Visual C# ' ta her zaman bir deyimi noktalı virgül sonlandırır. Visual Basic'te bir satırın sonuna bir deyim sonudur. (Hiçbir noktalı Visual Basic'te gerekli değildir.) Önceki deyimi söyler, `PictureBox` ile kullanıcı seçilen dosyasını yüklemek için Denetim **OpenFileDialog** bileşeni.  
   
- ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo")bu konuda video sürümü için bkz: [Eğitmen 1: Visual Basic'te - Video 5 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205216) veya [Eğitmen 1: bir resim görüntüleyici oluşturma C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Bazı menü komutları ve diğer kullanıcı arabirimi öğeleri küçük farklar olduklarından bu videolar Visual Studio'nun önceki bir sürümünü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde geçerli sürümünde Visual Studio çalışır.  
+ ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo")bu konuda video sürümü için bkz: [Eğitmen 1: Visual Basic'te - Video 5 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205216) veya [Öğreticisi 1: Resim Görüntüleyici C# ' - oluşturma Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Bazı menü komutları ve diğer kullanıcı arabirimi öğeleri küçük farklar olduklarından bu videolar Visual Studio'nun önceki bir sürümünü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde geçerli sürümünde Visual Studio çalışır.  
   
 ### <a name="to-add-comments"></a>Açıklama eklemek için  
   

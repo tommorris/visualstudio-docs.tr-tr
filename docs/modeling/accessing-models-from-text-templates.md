@@ -2,22 +2,20 @@
 title: Metin şablonlardan modelleri erişme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: da230b9b5da994a123aff04b1f588d9761c9820e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>Metin Şablonlarından Modellere Erişme
 Metin şablonları kullanarak raporu dosyalarını, kaynak kodu dosyaları ve etki alanına özgü dil modellerinde bağlı diğer metin dosyaları oluşturabilirsiniz. Metin şablonları hakkında temel bilgiler için bkz: [kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md). Metin şablonları, DSL ayıklarken Deneysel modunda çalışır ve DSL dağıtmış olan bir bilgisayarda da çalışır.  

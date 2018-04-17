@@ -3,28 +3,24 @@ title: Node.js ve tepki app - Visual Studio oluşturma | Microsoft Docs
 description: Bu öğreticide, Visual Studio'da bir Node.js ve tepki uygulaması oluşturma
 ms.custom: mvc
 ms.date: 02/19/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f99b1bef93fcbe968f23f0bb63653d825235385e
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 21debd24f69b79cb2dbbf9e9ceea928ac9dd851e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Öğretici: Visual Studio'da bir Node.js ve tepki uygulaması oluşturma
-Visual Studio kolayca bir Node.js projesi oluşturun ve IntelliSense ve Node.js destekleyen diğer yerleşik özellikleri yararlanan sağlar. Bu öğreticide Visual Studio için Visual Studio şablonundan bir Node.js web uygulaması projesi oluşturun. Ardından, tepki kullanarak basit bir uygulama oluşturun. 
+Visual Studio kolayca bir Node.js projesi oluşturun ve IntelliSense ve Node.js destekleyen diğer yerleşik özellikleri yararlanan sağlar. Bu öğreticide Visual Studio için Visual Studio şablonundan bir Node.js web uygulaması projesi oluşturun. Ardından, tepki kullanarak basit bir uygulama oluşturun.
 
 Bu öğreticide, bilgi nasıl yapılır:
 > [!div class="checklist"]
@@ -51,17 +47,17 @@ Bu öğreticide, bilgi nasıl yapılır:
 ## <a name="create-a-project"></a>Proje oluşturma
 İlk olarak, bir Node.js web uygulaması projesi oluşturun.
 
-1. Visual Studio 2017'ni açın.  
+1. Visual Studio 2017'ni açın.
 
-1. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .  
+1. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .
 
-1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **JavaScript**ve ardından **Node.js**. Orta bölmede seçin **boş Node.js Web uygulaması**, bir ad yazın **NodejsWebAppBlank**ve ardından **Tamam**.   
+1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **JavaScript**ve ardından **Node.js**. Orta bölmede seçin **boş Node.js Web uygulaması**, bir ad yazın **NodejsWebAppBlank**ve ardından **Tamam**.
 
-     Görmüyorsanız, **boş Node.js Web uygulaması** proje şablonu, Node.js geliştirme iş yükü önce yüklemeniz gerekir. 
+     Görmüyorsanız, **boş Node.js Web uygulaması** proje şablonu, Node.js geliştirme iş yükü önce yüklemeniz gerekir.
 
     Visual Studio yeni çözüm oluşturur ve projenizin açar.
 
-    ![Çözüm Gezgini'nde node.js projesi](../nodejs/media/tutorial-nodejs-react-project-structure.png)  
+    ![Çözüm Gezgini'nde node.js projesi](../nodejs/media/tutorial-nodejs-react-project-structure.png)
 
     - Kalın olarak vurgulanmış olan, vermiş adını kullanarak projenize **yeni proje** iletişim kutusu. Dosya sisteminde, bu proje tarafından temsil edilen bir *.njsproj* proje klasörünüzdeki dosya. Özellikler ve projeye sağ tıklayıp seçerek projeyle ilişkili ortam değişkenleri ayarlayabilirsiniz **özellikleri**. Proje dosyası Node.js projesi kaynağına özel değişiklikler yapmaz beri gidiş diğer geliştirme araçları ile yapabilirsiniz.
 
@@ -117,7 +113,7 @@ Bu uygulama npm modülleri düzgün çalışması için bir dizi gerektirir.
 
     Burada, onlar yüklendikten sonra Çözüm Gezgini'nde göründükleri gibi npm modülleri bulunmaktadır.
 
-    ![npm paket](../nodejs/media/tutorial-nodejs-react-npm-modules.png) 
+    ![npm paket](../nodejs/media/tutorial-nodejs-react-npm-modules.png)
 
     > [!NOTE]
     > Komut satırını kullanarak npm paketleri yüklemek tercih ederseniz, proje düğümüne sağ tıklayın ve seçin **burada açık bir komut istemi**. Paketleri yüklemek için standart Node.js komutları kullanın.
@@ -126,9 +122,9 @@ Bu uygulama npm modülleri düzgün çalışması için bir dizi gerektirir.
 
 Bu adımlarda, dört yeni dosyalar projenize ekleyin.
 
-* *app.tsx*
+* *app.TSX*
 * *webpack-config.js*
-* *index.html*
+* *index.HTML*
 * *tsconfig.json*
 
 Bu basit uygulama için proje kök dizininde yeni proje dosyalarını ekleyin. (Çoğu uygulamalarında genellikle alt klasörlere dosyaları ekleyin ve göreli yol başvuruları buna uygun olarak ayarlamak.)
@@ -171,7 +167,7 @@ Bu basit uygulama için proje kök dizininde yeni proje dosyalarını ekleyin. (
 
     ```javascript
     declare var require: any
-    
+
     var React = require('react');
     var ReactDOM = require('react-dom');
 
@@ -267,7 +263,7 @@ Bu basit uygulama için proje kök dizininde yeni proje dosyalarını ekleyin. (
 
     Komut İstemi penceresini sonucu gösterir.
 
-    ![Webpack Çalıştır](../nodejs/media/tutorial-nodejs-react-run-webpack.png) 
+    ![Webpack Çalıştır](../nodejs/media/tutorial-nodejs-react-run-webpack.png)
 
     Önceki çıkış yerine herhangi bir hata görürseniz, uygulamanızı çalışmadan önce çözmeniz gerekir. Npm Paket sürümü Bu öğreticide gösterilen sürümlerinden farklı ise, hataların bir kaynak olabilir. Hataları düzeltin yollarından biri önceki adımlarda gösterilen tam sürümünü kullanmaktır. Ayrıca, bir veya daha fazla bu paketi sürümleri kullanım dışı bırakıldı ve bir hatayla sonuçlanır, hataları düzeltmek için daha yeni bir sürümünü yüklemeniz gerekebilir.
 
@@ -279,7 +275,7 @@ Bu basit uygulama için proje kök dizininde yeni proje dosyalarını ekleyin. (
 
 1. Dışarıdan değiştirilmiş dosyaları yeniden yüklemek isteyip istemediğiniz sorulduğunda tıklatın **Tümüne Evet**.
 
-    ![Değiştirilen dosyalar yükleme](../nodejs/media/tutorial-nodejs-react-reload-files.png) 
+    ![Değiştirilen dosyalar yükleme](../nodejs/media/tutorial-nodejs-react-reload-files.png)
 
 Her zaman yaptığınız değişiklikler *app.tsx*, webpack komutunu çalıştırmanız gerekir.
 
@@ -287,7 +283,7 @@ Her zaman yaptığınız değişiklikler *app.tsx*, webpack komutunu çalıştı
 
 1. Chrome geçerli hata ayıklama hedefi olarak seçildiğinden emin olun.
 
-    ![Hata ayıklama hedefi olarak Chrome seçin](../nodejs/media/tutorial-nodejs-react-debug-target.png)  
+    ![Hata ayıklama hedefi olarak Chrome seçin](../nodejs/media/tutorial-nodejs-react-debug-target.png)
 
 1. Uygulamayı çalıştırmak için basın **F5** (**hata ayıklama** > **hata ayıklamayı Başlat**) veya yeşil ok tuşunu.
 
@@ -295,7 +291,7 @@ Her zaman yaptığınız değişiklikler *app.tsx*, webpack komutunu çalıştı
 
     Visual Studio Başlangıç dosyayı başlatarak uygulamayı başlatır *server.js*.
 
-    ![Tarayıcıda çalışan tepki](../nodejs/media/tutorial-nodejs-react-running-react.png) 
+    ![Tarayıcıda çalışan tepki](../nodejs/media/tutorial-nodejs-react-running-react.png)
 
 1. Tarayıcı penceresini kapatın.
 
@@ -305,9 +301,9 @@ Her zaman yaptığınız değişiklikler *app.tsx*, webpack komutunu çalıştı
 
 1. İçinde *server.js*, sol tarafındaki cilt payı tıklayın `staticPath` bildirimi bir kesme noktası ayarlamak için:
 
-    ![Bir kesme noktası ayarlama](../nodejs/media/tutorial-nodejs-react-set-breakpoint.png) 
+    ![Bir kesme noktası ayarlama](../nodejs/media/tutorial-nodejs-react-set-breakpoint.png)
 
-    Kesme noktaları güvenilir hata ayıklama en temel ve temel özelliğidir. Bir kesme noktası değişkenlerin değerleri veya bellek davranışını göz olabilmesi için Visual Studio çalışan kodunuzu nereye askıya almanız veya kod dalı çalıştırmak destekleyip desteklemediğini belirtir. 
+    Kesme noktaları güvenilir hata ayıklama en temel ve temel özelliğidir. Bir kesme noktası değişkenlerin değerleri veya bellek davranışını göz olabilmesi için Visual Studio çalışan kodunuzu nereye askıya almanız veya kod dalı çalıştırmak destekleyip desteklemediğini belirtir.
 
 1. Uygulamayı çalıştırmak için basın **F5** (**hata ayıklama** > **hata ayıklamayı Başlat**).
 
@@ -333,7 +329,7 @@ Her zaman yaptığınız değişiklikler *app.tsx*, webpack komutunu çalıştı
 
 1. Geçiş için Visual Studio ve bir kesme noktası kümesinde *uygulama bundle.js* kod `render()` işlev aşağıdaki çizimde gösterildiği gibi:
 
-    ![Bir kesme noktası ayarlama](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png) 
+    ![Bir kesme noktası ayarlama](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
 1. Visual Studio'da hata ayıklama hedefi olarak seçilen Chrome ile basın **Ctrl + F5** (**hata ayıklama** > **hata ayıklama olmadan Başlat**) tarayıcıda uygulamayı çalıştırmak için.
 
@@ -345,7 +341,7 @@ Her zaman yaptığınız değişiklikler *app.tsx*, webpack komutunu çalıştı
 
 1. Seçin doğru konak Chrome işlemine (Bu örnekte 1337) bağlantı noktası ve ' **Attach**.
 
-    ![İşleme iliştirilemiyor](../nodejs/media/tutorial-nodejs-react-attach-to-process.png) 
+    ![İşleme iliştirilemiyor](../nodejs/media/tutorial-nodejs-react-attach-to-process.png)
 
     Visual Studio'da DOM Gezgini ve JavaScript konsolu açtığınızda, hata ayıklayıcı doğru eklenmiş bildiğiniz. Bu hata ayıklama araçları Chrome geliştirici araçları ve kenar için F12 araçları benzerdir.
 
@@ -367,7 +363,7 @@ Her zaman yaptığınız değişiklikler *app.tsx*, webpack komutunu çalıştı
     > [!TIP]
     > Aşağıdaki adımları izleyerek ilk kez işleme iliştirilemiyor sonra hızlı bir şekilde Visual Studio 2017 aynı işlem seçerek iliştirebilirsiniz **hata ayıklama** > **işlem için yeniden bağlayın**.
 
-## <a name="next-steps"></a>Sonraki adımlar 
+## <a name="next-steps"></a>Sonraki adımlar
 
 Bu öğreticide, Node.js ve tepki uygulama, transpile JSX ve hata ayıklama nasıl oluşturulacağı hakkında bilgi edindiniz. Visual Studio için Node.js araçları hakkında daha fazla bilgi edinmek için Wiki sayfasına bakın.
 

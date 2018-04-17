@@ -1,23 +1,21 @@
 ---
 title: ProcessOn ve ProcessOff | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e8a94b52ba8d2fc0ce4208014e40ab3821ecb1e9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 743893d61de8589f15d8a1380f8a49af21308b5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="processon-and-processoff"></a>ProcessOn ve ProcessOff
 VSPerfCmd.exe **ProcessOff** ve **ProcessOn** subcommands duraklatıp belirtilen işlem için bir komut satırı profil oluşturma oturumu profil oluşturma. **ProcessOff** profil oluşturma işlemi durdurur ve **ProcessOn** profil oluşturma işlemini başlatır.  
@@ -51,19 +49,19 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 ## <a name="valid-subcommands"></a>Geçerli komutları  
  **ProcessOn** ve **ProcessOff** de aşağıdaki komutları içeren komut satırları belirtilebilir.  
   
- **Başlangıç:**`Method`  
+ **Başlat:** `Method`  
  Komut satırı profil oluşturma oturumu başlatır ve belirtilen profil oluşturma yöntemini ayarlar.  
   
- **Başlatma:**`AppName`  
+ **Başlat:** `AppName`  
  Belirtilen uygulamayı başlatır ve profil oluşturma örnekleme yöntemi ile başlar.  
   
- **Ekle:**`PID`  
+ **Ekle:** `PID`  
  Belirtilen işlem profil başlar.  
   
- **GlobalOff**&#124; **GlobalOn**  
+ **GlobalOff**&#124;**GlobalOn**  
  Durdurur veya bir komut satırı profil oluşturma oturumu tüm işlemler için profil başlatır.  
   
- {**ThreadOff**&#124; **ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
  Durdurur veya belirtilen iş parçacığı (yalnızca izleme metodunu) için profil oluşturma başlatır.  
   
 ## <a name="example"></a>Örnek  

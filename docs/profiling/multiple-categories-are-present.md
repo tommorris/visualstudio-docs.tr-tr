@@ -1,29 +1,25 @@
 ---
-title: "Birden çok kategori mevcut | Microsoft Docs"
-ms.custom: 
+title: Birden çok kategori mevcut | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.multicategory
 helpviewer_keywords:
 - Concurrency Visualizer, Multiple Categories Are Present
 ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1986f1cf206774303ea9d3c040d7f10c05ffe491
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ce165520d4580b755ffae2fcd1fa5c4106039fee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="multiple-categories-are-present"></a>Birden Çok Kategori Mevcut
 Belirli bir zaman aralığı için etkinlik birden fazla tür içeren bir bölümü seçilir. İki renkten görüntülenen dikkat edin, bir dikey diğer bağlı yığın. Bu renkleri üst iki en sık rastlanan etkinlikleri yalnızca belirli bir zaman aralığında gösterir. Bu iki etkinlik sıklıkları birbirine göre Üçe veya dikey çubuk yarısının gösterilir. Daha fazla ayrıntı için iş parçacığı görünüm bu bölümünü yakınlaştırmayı deneyin.  

@@ -1,27 +1,23 @@
 ---
-title: "Visual Studio'da ayarlarınızı eşitleme | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'da ayarlarınızı eşitleme | Microsoft Docs
+ms.custom: ''
 ms.date: 01/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef4179c5bc0fb80e2fb65d54885c342ca49bce3b
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+ms.openlocfilehash: d0f289fb10cfdbd79a639247a3d14a5a8ced6c10
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>Visual Studio'da ayarlarınızı eşitleyin
 
@@ -33,7 +29,7 @@ Varsayılan olarak, aşağıdaki ayarları eşitlenir.
 
 - Geliştirme Ayarları (ayarlar belirlemeniz ilk kez Visual Studio çalıştırın, ancak seçimi dilediğiniz zaman değiştirebilirsiniz. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).)
 
-- Aşağıdaki seçenekleri **Araçları &#124; Seçenekler** sayfaları:
+- Aşağıdaki seçenekleri **Araçları &#124; seçenekleri** sayfaları:
 
     - **Tema** ve menü çubuğunda ayarlar, büyük/küçük harfleri çubuğu **ortam**, **genel** Seçenekleri sayfası
 
@@ -51,11 +47,11 @@ Varsayılan olarak, aşağıdaki ayarları eşitlenir.
 
 - Kullanıcı tanımlı komut diğer adları. Komut diğer adları tanımlama hakkında daha fazla bilgi için bkz: [Visual Studio komut diğer adları](../ide/reference/visual-studio-command-aliases.md).
 
-- Kullanıcı tanımlı pencere düzenlerini de **pencere &#124; Pencere düzenlerini yönetmek** sayfası
+- Kullanıcı tanımlı pencere düzenlerini de **penceresi &#124; yönetmek pencere düzenlerini** sayfası
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Belirli bir bilgisayardaki eşitlenmiş ayarlar devre dışı bırakma
 
-Visual Studio için eşitlenmiş ayarlar varsayılan olarak açıktır. Bir bilgisayarda eşitlenmiş ayarlar giderek kapatabilirsiniz **Araçları &#124; Seçenekler &#124; Ortam &#124; Hesapları** onay kutusunu işaretleyerek ve sayfa.  Örneğin, bir bilgisayardaki Visual Studio'nun ayarları senkronize değil karar verirseniz, ayarı yapılan herhangi bir değişiklik bilgisayarda bilgisayar b'de gösterilmiyor yapın veya bilgisayar C. bilgisayar B ve C devam birbirleriyle ancak değil bilgisayarla A. eşitlemek
+Visual Studio için eşitlenmiş ayarlar varsayılan olarak açıktır. Bir bilgisayarda eşitlenmiş ayarlar giderek kapatabilirsiniz **Araçları &#124; seçenekleri &#124; ortam &#124; hesapları** onay kutusunu işaretleyerek ve sayfa.  Örneğin, bir bilgisayardaki Visual Studio'nun ayarları senkronize değil karar verirseniz, ayarı yapılan herhangi bir değişiklik bilgisayarda bilgisayar b'de gösterilmiyor yapın veya bilgisayar C. bilgisayar B ve C devam birbirleriyle ancak değil bilgisayarla A. eşitlemek
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Visual Studio ailesi ürünleri ve sürümleri üzerinden ayarları eşitleme
 

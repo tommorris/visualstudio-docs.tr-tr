@@ -1,23 +1,21 @@
 ---
-title: "8. adım: Kodu için bir resim Göster düğmesi olay işleyicisi yazma | Microsoft Docs"
-ms.custom: 
+title: '8. adım: Kodu için bir resim Göster düğmesi olay işleyicisi yazma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
-caps.latest.revision: "24"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b7c76492e3d07b0c32edb4ea91a5b3c152f1a206
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d72997e827db9842761aadbb70a7e464995d2d74
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8. Adım: Resim Göster Düğmesi Olay İşleyicisi için Kod Yazma
 Bu adımda, yaptığınız **resim Göster** düğmesini iş şuna benzer:  
@@ -28,7 +26,7 @@ Bu adımda, yaptığınız **resim Göster** düğmesini iş şuna benzer:
   
  IDE kod yazmanıza yardımcı olur IntelliSense adlı güçlü bir araç vardır. Kod girerken, IDE girdiğiniz kısmi sözcükler için önerilen tamamlamalar içeren bir kutusu açar. Sonraki yapmak istediğinizi belirlemek çalışır ve otomatik olarak son öğeyi listeden seçin atlar. Yukarı veya aşağı taşımak için okları veya seçimleri daraltmak için harf yazarak tutmak. İstediğiniz seçimi gördüğünüzde, seçmek için SEKME tuşunu seçin. Veya, öneriler yoksayabilirsiniz değilse gerekli.  
   
- ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo")bu konuda video sürümü için bkz: [Eğitmen 1: Visual Basic'te - Video 4 Resim Görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205215) veya [Eğitmen 1: bir resim görüntüleyici oluşturma C# - Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Bazı menü komutları ve diğer kullanıcı arabirimi öğeleri küçük farklar olduklarından bu videolar Visual Studio'nun önceki bir sürümünü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde geçerli sürümünde Visual Studio çalışır.  
+ ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo")bu konuda video sürümü için bkz: [Eğitmen 1: Visual Basic'te - Video 4 Resim Görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205215) veya [Öğreticisi 1: Resim Görüntüleyici C# ' - oluşturma Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Bazı menü komutları ve diğer kullanıcı arabirimi öğeleri küçük farklar olduklarından bu videolar Visual Studio'nun önceki bir sürümünü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde geçerli sürümünde Visual Studio çalışır.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Kod için bir resim Göster düğmesi olay işleyicisi yazma için  
   
@@ -36,12 +34,12 @@ Bu adımda, yaptığınız **resim Göster** düğmesini iş şuna benzer:
   
 2.  Tür bir `i` ikisi arasındaki boş satırdaki küme ayraçları {}. (Visual Basic'te özel alternatifi.. ve End Sub arasında boş satırdaki yazın.) Bir **IntelliSense** aşağıdaki resimde gösterildiği gibi penceresi açılır.  
   
-     ![IntelliSense Visual C &#35; kod](../ide/media/express_ifintellisense.png "Express_IfIntellisense")  
+     ![Visual C IntelliSense&#35; kod](../ide/media/express_ifintellisense.png "Express_IfIntellisense")  
 Visual C# koduyla IntelliSense  
   
 3.  **IntelliSense** penceresi sözcüğü vurgulamanın **varsa**. (Aksi takdirde, küçük harf girin `f`, ve çıkarır.) Biraz nasıl dikkat edin *araç ipucu* yanına kutusunda **IntelliSense** penceresi görünür açıklamasıyla **IF için kod parçacığını deyimi**. (Visual Basic'te, araç ipucu de bunun bir parçası olduğunu bildiren ancak biraz farklı ifadesi.) Bu kod parçacığında kullanın, böylece eklemek için SEKME tuşunu seçin istediğiniz **varsa** kodunuzu içine. Daha sonra yeniden kullanmak için SEKME tuşunu seçin **,** parçacığı. (Başka bir yere seçerseniz ve **IntelliSense** penceresi üzerinden kayboldu, geri **ı** ve onu yeniden yazın ve **IntelliSense** penceresi açılır yeniden.)  
   
-     ![Visual C &#35; kod](../ide/media/express_highlighttrue.png "Express_HighlightTrue")  
+     ![Visual C&#35; kod](../ide/media/express_highlighttrue.png "Express_HighlightTrue")  
 Visual C# kodu  
   
 4.  Ardından, IntelliSense açmak için daha fazla kodu girmek için kullandığınız bir **Dosya Aç** iletişim kutusu. Kullanıcı seçerseniz **Tamam** düğmesini PictureBox kullanıcı seçilen dosyayı yükler. Aşağıdaki adımlar kodu girmek nasıl gösterir ve çok sayıda adımları olmasına rağmen yalnızca birkaç tuş vuruşları alır:  

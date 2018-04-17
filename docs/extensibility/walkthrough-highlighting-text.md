@@ -1,27 +1,23 @@
 ---
-title: "İzlenecek yol: Metni vurgulama | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Metni vurgulama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b54dabbe00b0df920655b595cab32ed21126415b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 90bf22bfe65b1120f5cc149d95eea25357b8ffa4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-highlighting-text"></a>İzlenecek yol: Metni vurgulama
 Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşeni bölümleri oluşturarak düzenleyiciye farklı görsel efektler ekleyebilirsiniz. Bu kılavuz, bir metin dosyasındaki geçerli sözcüğü her geçtiği vurgulamak gösterilmiştir. Bir sözcük, bir metin dosyasına birden fazla kez oluşur ve bir yineleme şapka getirin, her oluşumu vurgulanır.  

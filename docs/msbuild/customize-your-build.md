@@ -1,27 +1,23 @@
 ---
-title: "Yapınızın özelleştirme | Microsoft Docs"
-ms.custom: 
+title: Yapınızın özelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 06/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b11acd4360aa86d4727a4c697a56eaa753d522c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ed8497c937006d53bf6cd6f8f5b1a773fdf44137
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-your-build"></a>Yapınızın özelleştirme
 MSBuild 15. sürümden önceki sürümler çözümünüz projelerine yeni, özel bir özellik sağlamak istiyorsanız çözümdeki her proje dosyası el ile bu özellik için bir başvuru ekleyin içeriyor. Veya özelliğinde tanımlamak zorunda kalındı bir *.props* dosya ve açıkça alma *.props* başka şeylerin çözümdeki her projeye dosyasında.
@@ -91,7 +87,7 @@ MSBuild'ın genel yaklaşım özetini aşağıdaki gibidir:
 - Belirli bir proje için ilk MSBuild bulur *Directory.Build.props* yukarı isteğe bağlı olarak çözümü yapısında öndeğerlerini birleştirir ve daha fazla bilgi için taramayı durdurur
 - Bulunan ve ardından birleştirildiği için birden çok düzeyi isteyip istemediğinizi [ `<Import...>` ](../msbuild/property-functions.md#msbuild-getpathoffileabove) (yukarıda gösterilen) "İç" dosyasından "dış" dosyası
 - "Dış" dosya kendisi olursa Ayrıca, üzerinde bir şey içeri sonra taramayı var. durdurur
-- Tarama ve birleştirme işlemi denetlemek için kullandığı `$(DirectoryBuildPropsPath)` ve`$(ImportDirectoryBuildProps)`
+- Tarama ve birleştirme işlemi denetlemek için kullandığı `$(DirectoryBuildPropsPath)` ve `$(ImportDirectoryBuildProps)`
 
 Ya da daha basit bir şekilde: ilk *Directory.Build.props* , herhangi bir şey içe aktarmaz olduğu yere MSBuild durdurur.
 

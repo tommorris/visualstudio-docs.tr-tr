@@ -1,12 +1,10 @@
 ---
-title: "Güvenlik sayfası, Proje Tasarımcısı | Microsoft Docs"
-ms.custom: 
+title: Güvenlik sayfası, Proje Tasarımcısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vb.ProjectPropertiesSecurity
 - vb.XBAPProjectPropertiesSecurity
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Security page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3d7a0f5651171d8c3b361d9e8b30b004a4e3136c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 749cf38a70f8d6ab4c53c6c198a42412a4aa3f90
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-page-project-designer"></a>Güvenlik Sayfası, Proje Tasarımcısı
 **Güvenlik** sayfasında **Proje Tasarımcısı** kullanılarak dağıtılan uygulamalar için kod erişimi güvenlik ayarlarını yapılandırmak için kullanılan [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] dağıtım. Daha fazla bilgi için bkz: [ClickOnce uygulamaları için kod erişimi güvenliği](../../deployment/code-access-security-for-clickonce-applications.md).  

@@ -1,23 +1,20 @@
 ---
-title: "GPU kullanımı | Microsoft Docs"
-ms.custom: 
+title: GPU kullanımı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fdb367336d5e5a539f63fefbe97c04524bbdf6a
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: a7c9ca5624ecdafb4079bb58d69ff72727104c1e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="gpu-usage"></a>GPU Kullanımı
 Visual Studio performans ve tanılama hub'ı GPU kullanım aracını daha iyi Direct3D uygulamanızı üst düzey donanım kullanımını anlayın. Uygulamanızın performansını CPU bağımlı veya platformun donanım daha etkili bir şekilde nasıl kullanabileceğinizi içine GPU bağlanmış ve kazanç Insight olup olmadığını belirlemek için kullanabilirsiniz. GPU kullanımı Direct3D 12, Direct3D 11 ve Direct3D 10 kullanan uygulamaları destekler; diğer grafik Direct2D veya OpenGL gibi API'leri desteklemez.  
@@ -68,11 +65,11 @@ Visual Studio performans ve tanılama hub'ı GPU kullanım aracını daha iyi Di
   
 2.  Raporun üst kısmında bir bölüm araştırmak istediğiniz sorunu gösteren grafikleri birini seçin. Seçiminiz en fazla 3 saniye uzunluğunda olabilir; uzun bölümler doğrultusunda başına kesilir.  
   
-     ![POST &#45; koleksiyon ayrıntılarını görüntülemek için bir aralığı seçin,](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
+     ![POST&#45;koleksiyonu, ayrıntıları görüntülemek için bir aralığı select](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
   
 3.  Rapor alt kısmında seçin **ayrıntıları görüntüleyin** bağlamak **.. Bu aralık için GPU kullanım ayrıntılarını görüntülemek için burayı** seçiminizin ayrıntılı bir zaman çizelgesi görüntülenecek ileti.  
   
-     ![POST &#45; koleksiyonuyla aralık seçili](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
+     ![POST&#45;koleksiyonuyla aralık seçili](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
  Bu raporda yeni bir sekmeli belge açar. GPU kullanım raporu, grafik olay CPU'da başlatıldığında, GPU ulaştığında ve çalıştırmak üzere GPU süreyi görmek için yardımcı olur. Bu bilgiler performans sorunlarını ve artan paralellik kodunuzda olanaklarını belirlemenize yardımcı olabilir.  
 
@@ -138,12 +135,12 @@ Visual Studio 2017 ile başlayarak, bu verileri ile açılabilir [GPUView](/wind
   
  Uygulamanızı altında GPU kullanım Aracı'nı çalıştırdığınızda, ek bir bağlantı bu ayarı kullanarak profil bilgilerini koleksiyonunu ertelediğinizde GPU kullanım aracı pencerenin alt kısmında kullanılabilir hale gelir. Profil bilgilerini toplamaya başlamak için tercih **Başlat** bağlamak **başlangıç ek toplama ayrıntılı GPU kullanım verilerini** ileti.  
   
-##  <a name="hwsupport"></a>Donanım ve sürücü desteği  
+##  <a name="hwsupport"></a> Donanım ve sürücü desteği  
  Aşağıdaki GPU donanım ve sürücüler desteklenir:  
   
 |Satıcı|GPU açıklaması|Gerekli sürücü sürümü|  
 |------------|---------------------|-----------------------------|  
-|Intel®|4. nesil Intel® çekirdekli işlemciler ('Haswell')<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|--(en son sürücülere kullanın)|  
+|Intel®|4. nesil Intel® çekirdekli işlemciler ('Haswell')<br /><br /> -Intel® HD grafikleri (GT1)<br />-Intel® HD grafikleri 4200 (GT2)<br />-Intel® HD grafikleri 4400 (GT2)<br />-Intel® HD grafikleri 4600 (GT2)<br />-Intel® HD grafik P4600 (GT2)<br />-Intel® HD grafik P4700 (GT2)<br />-Intel® HD grafikleri 5000 (GT3)<br />-Intel® Iris™ grafik 5100 (GT3)<br />-Intel® Iris™ Pro grafik 5200 (GT3e)|--(en son sürücülere kullanın)|  
 |AMD®|Çoğu AMD Radeon™ HD 7000-Serisi (AMD Radeon™ HD 7350 7670 hiç tutar) itibaren<br /><br /> AMD Radeon™ GPU, AMD FirePro™ GPU ve AMD FirePro GPU Hızlandırıcıları grafik çekirdek sonraki (GCN) mimarisi özelliklerine sahip.<br /><br /> AMD® E-serisi ve AMD A-series hızlandırılmış işleme grafik çekirdek sonraki (GCN) mimarisi ('Kaveri', 'Kabini', 'Temash', 'Beema', 'Mullins') özelliklerine sahip birimler (APUs)|14.7 RC3 veya üzeri|  
 |NVIDIA®|Çoğu NVIDIA GeForce® 400-serisi itibaren.<br /><br /> NVIDIA® GeForce® GPU, NVIDIA Quadro® GPU ve NVIDIA® Tesla™ GPU Hızlandırıcıları Fermi™, Kepler™ veya Maxwell™ mimarisi özelliklerine sahip.|343.37 veya üzeri|  
   

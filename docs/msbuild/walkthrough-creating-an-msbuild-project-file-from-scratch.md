@@ -1,26 +1,22 @@
 ---
-title: "İzlenecek yol: sıfırdan MSBuild proje dosyası oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: sıfırdan MSBuild proje dosyası oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: e3acff7c-cb4e-4ae1-8be2-a871bcff847b
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf71d7a62352e09e9024bef3f5d2c35b9c57b484
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b01e917d0e46c6e5a5d91473332062a75ff1e33d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>İzlenecek Yol: Sıfırdan MSBuild Proje Dosyası Oluşturma
 .NET Framework hedefleyen programlama dilleri açıklar ve uygulama oluşturma işlemi denetlemek için MSBuild proje dosyalarını kullanın. MSBuild proje dosyası oluşturmak için Visual Studio kullandığınızda uygun XML dosyasına otomatik olarak eklenir. Ancak, XML nasıl düzenlendiğini anlaşılması yararlı ve bu derleme denetlemek için nasıl değiştirebilirsiniz.  

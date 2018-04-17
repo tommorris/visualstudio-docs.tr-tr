@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: çalışma sayfalarına Grafik denetimleri ekleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: çalışma sayfalarına Grafik denetimleri ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 74ea64dc0f73d642d3d5ea7e693eda42c8d882c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d951b70566231db956ef8771b022937af5ee5807
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Nasıl Yapılır: Çalışma Sayfalarına Grafik Denetimleri Ekleme
   Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.Chart> Microsoft Office Excel çalışma zamanında ve belge düzeyi özelleştirmelerinde çalışma zamanında denetimler. Ayrıca ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.Chart> VSTO eklentileri çalışma zamanında denetimler.  
@@ -38,7 +37,7 @@ ms.lasthandoff: 01/10/2018
   
  Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Excel.Chart> denetimleri bkz [grafik denetiminin](../vsto/chart-control.md).  
   
-##  <a name="designtime"></a>Tasarım zamanında grafik denetimleri ekleme  
+##  <a name="designtime"></a> Tasarım zamanında grafik denetimleri ekleme  
  Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.Chart> eklemek uygulamadan bir grafik aynı şekilde, bir çalışma sayfasına denetim.  
   
 > [!NOTE]  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  İçinde **veri kaynağı Seç** iletişim kutusu, tıklatın **Tamam**.  
   
-##  <a name="runtimedoclevel"></a>Belge düzeyi projesindeki çalışma zamanında grafik denetimleri ekleme  
+##  <a name="runtimedoclevel"></a> Belge düzeyi projesindeki çalışma zamanında grafik denetimleri ekleme  
  Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.Chart> çalışma zamanında dinamik olarak denetim. Dinamik olarak oluşturulmuş grafikler belgede sürdürülmez belge kapatıldığında konak kontrolü olarak. Daha fazla bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Grafik denetimi bir çalışma sayfasına programlı olarak eklemek için  
@@ -68,7 +67,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]  
   
-##  <a name="runtimeaddin"></a>Bir VSTO eklenti projesindeki çalışma zamanında grafik denetimleri ekleme  
+##  <a name="runtimeaddin"></a> Bir VSTO eklenti projesindeki çalışma zamanında grafik denetimleri ekleme  
  Ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Excel.Chart> VSTO eklenti projesindeki herhangi bir açık çalışma sayfasına program aracılığıyla denetimine. Daha fazla bilgi için bkz: [genişletme Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
  Dinamik olarak oluşturulmuş grafik denetimleri çalışma sayfasında sürdürülmez çalışma kapatıldığında konak kontrolü olarak. Daha fazla bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  

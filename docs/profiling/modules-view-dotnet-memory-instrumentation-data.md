@@ -1,27 +1,23 @@
 ---
-title: "Modüller görünümü - .NET bellek izleme verileri | Microsoft Docs"
-ms.custom: 
+title: Modüller görünümü - .NET bellek izleme verileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e67b1676495b6217a6134bc7e0f3f4cf74b1faf6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d5282f5ef2bddaa505222b7622a3482b64e8122a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Modüller görünümü - .NET bellek izleme verileri
 .NET bellek ayırma verileri izleme metodunu kullanarak toplanan modülleri görünümünü profil Çalıştır yürütüldü modüller tarafından bellek ve zamanlama verileri gruplandırır. Profil oluşturma verilerini modülü işlevler için modülü düğümünün altında listelenir.  

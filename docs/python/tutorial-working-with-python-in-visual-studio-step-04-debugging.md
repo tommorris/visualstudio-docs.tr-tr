@@ -1,27 +1,24 @@
 ---
-title: Python ile çalışma, adım 4, hata ayıklama | Microsoft Docs
+title: Adım 4, hata ayıklama Python ile çalışma
 description: Hata ayıklayıcıda Python kodu çalıştırmak nasıl kapsayan Visual Studio içinde Python ile çalışmak için çekirdek öğreticinin 4 adımı.
 ms.custom: mvc
 ms.date: 03/08/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49f29f310997b685369142e21cc71df8a21871cd
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: df55dbc9630487a01a769f62d8477dbcc53a5579
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>4. adım: hata ayıklayıcıda kodu çalıştırma
 
@@ -97,7 +94,7 @@ Bir zengin düzenleme deneyimi ve etkileşimli pencere sağlama projeleri yönet
 
 1. Sonraki kesme ulaşılana kadar program çalıştırmaya devam etmek için kullanmak **devam** (F5). Bir kesme noktası olduğundan `for` döngü, sonraki yinelemesinde bölün.
 
-1. Yineleme döngüsü yüzlerce atlama olabilir can sıkıcı, Visual Studio eklemenize olanak sağlayan şekilde bir *koşulu* bir kesme noktası için. Yalnızca koşul karşılandığında hata ayıklayıcı daha sonra program kesme noktasındaki duraklatılır. Örneğin, bir koşul ile kesme kullanabileceğinizi `for` şekilde yalnızca duraklatır şekilde deyimi zaman değerini `i` 1600 aşıyor. Bu koşul ayarlamak için kırmızı kesme noktası nokta sağ tıklatın ve seçin **koşullar...** (Alt+F9,C). İçinde **kesme noktası ayarları** görünür, açılan girin `i > 1600` seçin ve ifade olarak **Kapat**. Devam etmek ve programı sonraki sonundan önceki fazla yineleme çalıştırır gözlemlemek için F5 tuşuna basın.
+1. Yineleme döngüsü yüzlerce atlama olabilir can sıkıcı, Visual Studio eklemenize olanak sağlayan şekilde bir *koşulu* bir kesme noktası için. Yalnızca koşul karşılandığında hata ayıklayıcı daha sonra program kesme noktasındaki duraklatılır. Örneğin, bir koşul ile kesme kullanabileceğinizi `for` şekilde yalnızca duraklatır şekilde deyimi zaman değerini `i` 1600 aşıyor. Bu koşul ayarlamak için kırmızı kesme noktası nokta sağ tıklatın ve seçin **koşullar...** (Alt + F9 C). İçinde **kesme noktası ayarları** görünür, açılan girin `i > 1600` seçin ve ifade olarak **Kapat**. Devam etmek ve programı sonraki sonundan önceki fazla yineleme çalıştırır gözlemlemek için F5 tuşuna basın.
 
     ![Bir kesme noktası koşul ayarlama](media/vs-getting-started-python-21-debugging4.png)
 

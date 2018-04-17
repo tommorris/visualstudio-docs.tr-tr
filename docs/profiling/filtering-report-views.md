@@ -1,27 +1,23 @@
 ---
-title: "Rapor görünümlerini filtreleme | Microsoft Docs"
-ms.custom: 
+title: Rapor görünümlerini filtreleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e82450286d5da47a11217401ebbc17133530b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a591f93c2cfb4cc744d8bde3a7d48a7c678d28a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="filtering-report-views"></a>Rapor Görünümlerini Filtreleme
 Profil oluşturma veri dosyalarıyla performans raporu görünümlerde görüntülenmesi ve verilen rapor dosyaları için profil oluşturma verileri sınırlamak için için filtreler uygulayabilirsiniz. Belirli işlemleri ve iş parçacıklarını verileri sınırlayabilir ve zaman damgası değerlerini arasındaki verileri için bir rapor sınırlayabilirsiniz. Dosya filtreleri Kaydet ve kaydedilmiş filtre içeri aktararak Bu filtre farklı bir profil oluşturma veri dosyası oluşturun.  
@@ -44,7 +40,7 @@ Profil oluşturma veri dosyalarıyla performans raporu görünümlerde görünt�
     |-----------|-----------------|  
     |**Ve/veya**|Seçin **ve** bir sonuç eşleşiyorsa bu yan tümce sonraki yan tümcesi hem de girintili için olmalıdır. Seçin **veya** bir sonuç eşleşiyorsa bu yan tümcesi veya sonraki yan tümcesi girintili olabilir.|  
     |**Alan**|Filtre yan tümcesi veri alanları görüntülenen listesinden kullanmak için rapor alanı seçin.|  
-    |**İşleci**|Alan ve değer arasında yan tümcesinde istediğiniz ilişkiyi belirten işleci seçin.<br /><br /> = Eşittir<br /><br /> <> Eşit değildir<br /><br /> < Küçüktür<br /><br /> > Büyüktür<br /><br /> < = küçüktür veya eşittir<br /><br /> > = büyüktür veya eşittir|  
+    |**işleci**|Alan ve değer arasında yan tümcesinde istediğiniz ilişkiyi belirten işleci seçin.<br /><br /> = Eşittir<br /><br /> <> Eşit değildir<br /><br /> < Küçüktür<br /><br /> > Büyüktür<br /><br /> < = küçüktür veya eşittir<br /><br /> > = büyüktür veya eşittir|  
     |**Değer**|Aranacak bir değer girin veya seçin. Bazı alanları alan için kullanılabilir değerleri listeler.|  
   
 3.  

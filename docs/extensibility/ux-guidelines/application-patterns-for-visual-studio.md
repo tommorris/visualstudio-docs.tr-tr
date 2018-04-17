@@ -1,26 +1,24 @@
 ---
-title: "Visual Studio için uygulama düzenleri | Microsoft Docs"
-ms.custom: 
+title: Visual Studio için uygulama düzenleri | Microsoft Docs
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a793651660c456213c0e91c0d6c6474cccf3f7d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio için uygulama düzenleri
-##  <a name="BKMK_WindowInteractions"></a>Pencere etkileşimleri  
+##  <a name="BKMK_WindowInteractions"></a> Pencere etkileşimleri  
   
 ### <a name="overview"></a>Genel Bakış  
 Visual Studio'da kullanılan iki ana penceresi belge düzenleyicileri ve aracı windows türleridir. Büyük kalıcı olmayan iletişim kutuları, Rare ancak mümkün değildir. Bunlar Kabuğu'nda tüm engelleyici olsa da, bunların şekillerine temelde farklı. Bu bölüm, belge windows, aracı windows ve kalıcı olmayan iletişim kutuları arasındaki farkı kapsar. Kalıcı iletişim düzenleri ele alınmıştır [iletişim kutularını](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).  
@@ -42,7 +40,7 @@ Dikkatle hangi kapsayıcı türü hakkında ihtiyacınız düşünün. Genel kul
 | **Örnekler** | *Çok örnekli*<br /><br /> Bazı düzenleyiciler aynı zamanda birden fazla düzenleyicisinde açılması aynı dosyayı izin verirken, birkaç düzenleyicileri düzenleme farklı dosya ve aynı anda açık olabilir (kullanarak **penceresi &gt; yeni pencere** komutu).<br /><br /> Tek bir düzenleyici (Proje Tasarımcısı) aynı anda bir veya birden çok dosya düzenleme. | *Tek veya birden çok instance*<br /><br /> Bağlam (olduğu gibi özellik tarayıcısı) yansıtmak veya odak/bağlam diğer windows (görev listesi, Çözüm Gezgini) anında iletme için içeriği değiştirin.<br /><br /> Değil olmadıkça ilgi çekici bir nedenle için tek örnekli ve çok örnekli aracı windows etkin belge penceresi ile ilişkili olmalıdır. | *Tek örnek* |  
 | **Örnekler** | **Metin düzenleyicileri**, ister Kod Düzenleyicisi<br /><br /> **Tasarım yüzeyleri**form tasarımcısı veya bir model yüzey gibi<br /><br /> **Denetim düzenleri iletişim kutuları için benzer**, ister bildirim Tasarımcısı | **Çözüm Gezgini** bir çözüm ve çözüm içinde yer alan projeleri sağlar<br /><br /> **Sunucu Gezgini** pencerede açmak için kullanıcının seçtiği sunucuları ve veri bağlantısı hiyerarşik bir görünümünü sağlar. Bir nesne gibi bir sorgu veritabanı hiyerarşisini açma bir belge penceresi açar ve sorgu düzenlemesine olanak tanır.<br /><br /> **Özellik tarayıcısı** belge penceresini veya başka bir araç penceresinde seçili nesnenin özelliklerini görüntüler. Özellikler hiyerarşik ızgara görünümünde veya karmaşık iletişim benzeri denetimler sunulur ve bu özelliklerin değerlerini ayarlamak izin verin. | |  
   
-##  <a name="BKMK_ToolWindows"></a>Araç pencereleri  
+##  <a name="BKMK_ToolWindows"></a> Araç pencereleri  
   
 ### <a name="overview"></a>Genel Bakış  
 Araç pencereleri belge Windows'da olur kullanıcının iş destekler. Visual Studio işleyebilir ve sağlayan bir temel kök nesneyi temsil eden bir hiyerarşi görüntülemek için kullanılabilir.  
@@ -149,7 +147,7 @@ Bazı aracı windows kullanıcı etkileşim kurabildikleri gezinebilir öğeleri
 | Kaydeder ||  
 | İş Parçacıkları ||  
   
-##  <a name="BKMK_DocumentEditorConventions"></a>Belge Düzenleyicisi kuralları  
+##  <a name="BKMK_DocumentEditorConventions"></a> Belge Düzenleyicisi kuralları  
   
 ### <a name="document-interactions"></a>Belge etkileşimleri  
 "İyi belge" IDE içinden en geniş alanı ve burada kullanıcı genellikle dikkatini ek aracı windows tarafından destekli görevlerini tamamlamak için odaklı. Belge düzenleyicileri kullanıcı açar ve Visual Studio içinde kaydeden iş temel birimleri temsil eder. Çözüm Gezgini'nde veya diğer etkin olan hiyerarşi windows bağlı seçimi güçlü bir fikir korurlar. Kullanıcının bu hiyerarşi windows birini işaret ve çözüm, proje ya da Visual Studio paketi tarafından sağlanan başka bir kök nesnesi için belge bulunduğu ve ilişkisini biliyor olması gerekir.  
@@ -257,7 +255,7 @@ Belge kullanmaktadır birkaç Düzenleyicisi olmayan türü vardır. Belgeleri k
   
 -   Kullanıcıların Düzenleyicisi'ni etkinleştirme ve denetimlerde sekme veya standart anımsatıcıları kullanarak yalnızca klavye kullanma denetimleri ile etkileşim kurabilmesi gerekir.  
   
-##  <a name="BKMK_Dialogs"></a>İletişim kutuları  
+##  <a name="BKMK_Dialogs"></a> İletişim kutuları  
   
 ### <a name="introduction"></a>Giriş  
 Visual Studio'da iletişim kutuları, genellikle kullanıcının iş bir ayrık birimi desteklemelidir ve sonra kapatılır.  
@@ -313,12 +311,12 @@ Konulu bir iletişim kutusu oluşturulurken uygun ortam renkleri kullanın ve do
   
 -   [Sihirbazlar](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) bir görevin tamamlanma yönelik adımlar mantıksal bir dizi kullanıcı yönlendirerek için kullanışlıdır. Bir dizi seçenek, farklı iş akışları ("dalları") önceki panelinde yapılan bir seçime bağlı bazen Tanıtımı sıralı paneller sunulur.  
   
-####  <a name="BKMK_SimpleDialogs"></a>Basit iletişim kutuları  
+####  <a name="BKMK_SimpleDialogs"></a> Basit iletişim kutuları  
 Basit bir iletişim kutusu denetimleri tek bir kalıcı penceresinde sunumu ' dir. Bu sunu alan Seçici gibi karmaşık denetim düzenleri varyasyonları içerebilir. Basit iletişim kutuları için standart genel düzeni gibi karmaşık denetim gruplandırmaları için gerekli herhangi bir belirli düzeni izleyin.
   
 ![> oluşturma güçlü ad anahtarı Visual Studio'da basit bir iletişim kutusu bir örnektir. ] (../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704 01_CreateStrongNameKey")<br />Oluşturma güçlü ad anahtarı Visual Studio'da basit bir iletişim kutusu bir örnektir.
   
-####  <a name="BKMK_LayeredDialogs"></a>Katmanlı iletişim kutuları  
+####  <a name="BKMK_LayeredDialogs"></a> Katmanlı iletişim kutuları  
 Katmanlı iletişim kutuları sekmeler, panolar ve katıştırılmış ağaçları içerir. Tek bir kullanıcı Arabirimi içinde sunulan denetimlerin birden çok grubu olduğunda Gayrimenkul en üst düzeye çıkarmak için kullanılır. Böylece kullanıcı herhangi bir zamanda görmek için hangi gruplandırma gruplandırmaları katmanlı.  
   
 En basit durumda gruplandırmaları arasında geçiş yapmak için bir sekme denetimi mekanizmadır. Birkaç alternatifleri kullanılabilir. Önceliklendirme ve katmanlama en uygun stili seçme için bkz.  
@@ -327,7 +325,7 @@ En basit durumda gruplandırmaları arasında geçiş yapmak için bir sekme den
   
 ![Araçlar > Seçenekler Visual Studio'da katmanlı bir iletişim kutusu bir örnektir. ] (../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704 02_ToolsOptions")<br />Araçlar > Seçenekler Visual Studio'da katmanlı bir iletişim kutusu bir örnektir.
   
-####  <a name="BKMK_Wizards"></a>Sihirbazlar  
+####  <a name="BKMK_Wizards"></a> Sihirbazlar  
 Sihirbazlar, bir görev tamamlandığında mantıksal bir dizi adımdan kullanıcı yönlendirerek için faydalıdır. Bir dizi seçenek içinde sıralı paneller sunulur ve kullanıcı sonraki geçmeden önce her adımın üzerinden devam etmeniz gerekir. Yeterli Varsayılanları kullanılabilir sonra **son** düğmesi etkindir.  
   
  Kalıcı sihirbazları görevler için kullanılan:  
@@ -408,7 +406,7 @@ Erişim tuşları kullanmayın **Tamam**, **iptal**, veya **yardımcı** düğme
 #### <a name="imagery"></a>Görüntüler  
 Görüntüleri tutumlu iletişim kutularında kullanın. Büyük simgeler iletişim kutularında yalnızca alanını kullanmak için kullanmayın. Yalnızca uyarı simgeleri veya durum animasyonları gibi kullanıcı iletiye saymayı önemli bir bölümü varsa görüntüleri kullanın.  
   
-###  <a name="BKMK_PrioritizingAndLayering"></a>Öncelik ve katmanlama  
+###  <a name="BKMK_PrioritizingAndLayering"></a> Öncelik ve katmanlama  
   
 #### <a name="prioritizing-your-ui"></a>UI önceliğini belirleme  
 Belirli kullanıcı Arabirimi öğeleri için forefront getirmek ve daha gelişmiş davranışı ve iletişim kutuları (belirsiz komutları dahil) seçeneklere yerleştirmek gerekli olabilir. Yaygın olarak kullanılan işlevselliği, onu yer yaparak ve iletişim kutusu görüntülendiğinde yaparak onu görünen varsayılan olarak kullanıcı arabiriminde bir metin etiketi ile forefront duruma getirin.  
@@ -423,7 +421,7 @@ Olumlu ve olumsuz yönleri için kullanıcı Arabirimi aracılığıyla sekmesin
 | Geçiş mekanizması | Avantajları ve uygun kullanın | Olumsuz yönleri ve uygunsuz kullanım |  
 | --- | --- | --- |  
 | Sekme denetimi | İlgili ayarlar iletişim kutusu sayfaları mantıksal Grup<br /><br />Daha az beş (veya tek bir satırda arasında iletişim uygun sekme sayısı) için yararlı iletişim ilgili denetimlerin sayfaları<br /><br />Sekme etiketleri kısa olmalıdır: içeriği kolayca tanıyacak bir veya iki sözcükler<br /><br />Bir ortak sistem iletişim stili<br /><br />Örnek: **dosya Gezgini &gt; öğe özellikleri** | Tanımlayıcı kısa etiketler yapmak zor olabilir<br /><br />Genellikle bir iletişim kutusunda beş sekme geçmiş ölçeklendirilmediğini<br /><br />Bir satır (kullanın bir alternatif katmanlama teknik) için çok fazla sekme varsa uygunsuz<br /><br />Değil Genişletilebilir |  
-| Kenar gezinme | Sekmeleri'den daha fazla kategori uyum basit geçiş aygıtı<br /><br />Düz listesini kategorileri (hiyerarşi yok)<br /><br />Genişletilebilir<br /><br />Örnek: **Özelleştir... &gt;Komut ekleme** | İyi kullanılmıyor üçten grupları varsa yatay alanı<br /><br />Görev daha iyi bir açılan için uygun olabilir |  
+| Kenar gezinme | Sekmeleri'den daha fazla kategori uyum basit geçiş aygıtı<br /><br />Düz listesini kategorileri (hiyerarşi yok)<br /><br />Genişletilebilir<br /><br />Örnek: **Özelleştir... &gt; Komut ekleme** | İyi kullanılmıyor üçten grupları varsa yatay alanı<br /><br />Görev daha iyi bir açılan için uygun olabilir |  
 | Ağaç denetimi | Sınırsız kategorileri sağlar<br /><br />Gruplandırma ve/veya kategori hiyerarşisi sağlar<br /><br />Genişletilebilir<br /><br />Örnek: **Araçları &gt; seçenekleri** | Yoğun bir şekilde iç içe geçmiş hiyerarşileri aşırı yatay kaydırma neden olabilir<br /><br />Visual Studio bir overabundance ağaç görünümlerinin olan |  
 | Sihirbazı | Kullanıcı görev tabanlı, sıralı adımlarda size kılavuzluk ederek görev tamamlama yardımcı olur: sihirbazın üst düzey bir görevi temsil eder ve ayrı ayrı paneller genel görevi gerçekleştirmek için gereken görevleri temsil eder<br /><br />Yararlı görev zaman kullanıcı Aksi durumda birden çok düzenleyicilerini kullanın görevi tamamlamak için windows aracı gerekirdi olarak UI sınırları kestiği<br /><br />Görev dallanma gerektirdiğinde yararlı<br /><br />Görev bağımlılıkları adımlar arasındaki içerdiğinde yararlı<br /><br />Yararlı bir karar çatalı ile birkaç benzer görevleri farklı benzer iletişim kutuları sayısını azaltmak için bir iletişim kutusunda sunulabilir | Sıralı iş akışı gerektirmez herhangi bir görev için uygun olmayan<br /><br />Kullanıcıların kısası ve çok fazla adım sihirbaz tarafından kafası hale gelebilir<br /><br />Sihirbazlar kendiliğinden ekran Gayrimenkul sınırlı |  
   
@@ -437,7 +435,7 @@ Alternatif olarak, daha az ortak işlevsellik ayrı konumlar yeniden düzenleme 
 ##### <a name="adaptive-ui"></a>Uyarlamalı kullanıcı Arabirimi  
 Gösterme veya gizleme UI kullanımı dikkate alarak veya bir kullanıcının kendi kendine bildirilen deneyimini diğer bölümleri gizleme çalışırken gerekli UI sunan başka bir yoludur. Bu Visual Studio'da göstermek veya gizlemek UI karar verme algoritmaları zor olabilir ve kuralların her zaman bazı durumlarda kümesi için yanlış olur önerilmez.  
   
-##  <a name="BKMK_Projects"></a>Projeleri  
+##  <a name="BKMK_Projects"></a> Projeleri  
   
 ### <a name="projects-in-the-solution-explorer"></a>Çözüm Gezgini'nde projeleri  
 Çoğu projeleri olarak tabanlı başvurusu, dizin tabanlı veya karma sınıflandırılır. Üç tür projeleri Çözüm Gezgini'nde eşzamanlı olarak desteklenir. Projeleri ile çalışırken kullanıcı deneyiminin kök bu penceresinin içinde gerçekleşir. Farklı proje düğümleri başvurusu, dizin veya karma mod türü projelerini olsa da, bir başlangıç noktası olarak projeye özgü kullanıcı desenleri uzaklaşan önce uygulanması gereken bir ortak etkileşim düzeni yoktur.  
@@ -508,19 +506,19 @@ Kullanıcının her zaman bir öğeyi seçerek, hedef konuma sürükleyerek ve �
 | Hiçbir değiştiricisi | Eylem | Taşıma | Bağlantı |  
 | Hiçbir değiştiricisi | Hedef | Özgün öğe başvuru ekler | Özgün öğe başvuru ekler |  
 | Hiçbir değiştiricisi | Kaynak | Özgün öğe siler referansı | Özgün öğe korur |  
-| Hiçbir değiştiricisi | Sonuç | `DROPEFFECT_MOVE`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_LINK`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |  
+| Hiçbir değiştiricisi | Sonuç | `DROPEFFECT_MOVE` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_LINK` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |  
 | Shift + sürükleyin | Eylem | Taşıma | Hiçbir bırakma |  
 | Shift + sürükleyin | Hedef | Özgün öğe başvuru ekler | Hiçbir bırakma |  
 | Shift + sürükleyin | Kaynak | Özgün öğe siler referansı | Hiçbir bırakma |  
-| Shift + sürükleyin | Sonuç | `DROPEFFECT_MOVE`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | Hiçbir bırakma |  
+| Shift + sürükleyin | Sonuç | `DROPEFFECT_MOVE` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | Hiçbir bırakma |  
 | CTRL + sürükle | Eylem | Kopyala | Hiçbir bırakma |  
 | CTRL + sürükle | Hedef | Özgün öğe başvuru ekler | Hiçbir bırakma |  
 | CTRL + sürükle | Kaynak | Özgün öğesine başvuruda korur | Hiçbir bırakma |  
-| CTRL + sürükle | Sonuç | `DROPEFFECT_COPY`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | Hiçbir bırakma |  
+| CTRL + sürükle | Sonuç | `DROPEFFECT_COPY` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | Hiçbir bırakma |  
 | Ctrl + Shift + sürükleyin | Eylem | Bağlantı | Bağlantı |  
 | Ctrl + Shift + sürükleyin | Hedef | Özgün öğe başvuru ekler | Özgün öğe başvuru ekler |  
 | Ctrl + Shift + sürükleyin | Kaynak | Özgün öğesine başvuruda korur | Özgün öğe korur |  
-| Ctrl + Shift + sürükleyin | Sonuç | `DROPEFFECT_LINK`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_LINK`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |  
+| Ctrl + Shift + sürükleyin | Sonuç | `DROPEFFECT_LINK` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_LINK` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |  
 | Ctrl + Shift + sürükleyin | Not | Windows Gezgini'nde kısayolları için sürükle ve bırak davranışı ile aynıdır. ||  
 | Kes/Yapıştır | Eylem | Taşıma | Bağlantı |  
 | Kes/Yapıştır | Hedef | Özgün öğe başvuru ekler | Özgün öğe başvuru ekler |  
@@ -538,15 +536,15 @@ Aşağıdaki tabloda, hedef dizin tabanlı projelerde basılı kaynak öğesi ve
 | --- | --- | --- | --- |  
 | Hiçbir değiştiricisi | Eylem | Taşıma | Taşıma |  
 | Hiçbir değiştiricisi | Hedef | Hedef konuma kopyalar öğesi | Hedef konuma kopyalar öğesi |  
-| Hiçbir değiştiricisi | Kaynak | Özgün öğe siler referansı | Özgün öğe siler referansı | | Hiçbir değiştiricisi | Sonuç | `DROPEFFECT_MOVE`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_MOVE`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |  
+| Hiçbir değiştiricisi | Kaynak | Özgün öğe siler referansı | Özgün öğe siler referansı | | Hiçbir değiştiricisi | Sonuç | `DROPEFFECT_MOVE` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_MOVE` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |  
 | Shift + sürükleyin | Eylem | Taşıma | Taşıma |  
 | Shift + sürükleyin | Hedef | Hedef konuma kopyalar öğesi | Hedef konuma kopyalar öğesi |  
 | Shift + sürükleyin | Kaynak | Özgün öğe siler referansı | Öğeyi özgün konumundan siler |
-| Shift + sürükleyin | Sonuç | `DROPEFFECT_MOVE`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_MOVE`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |  
+| Shift + sürükleyin | Sonuç | `DROPEFFECT_MOVE` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_MOVE` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |  
 | CTRL + sürükle | Eylem | Kopyala | Kopyala |  
 | CTRL + sürükle | Hedef | Hedef konuma kopyalar öğesi | Hedef konuma kopyalar öğesi |  
 | CTRL + sürükle | Kaynak | Özgün öğesine başvuruda korur | Özgün öğesine başvuruda korur |  
-| CTRL + sürükle | Sonuç | `DROPEFFECT_COPY`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_COPY`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |  
+| CTRL + sürükle | Sonuç | `DROPEFFECT_COPY` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_COPY` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |  
 | Ctrl + Shift + sürükleyin | | Hiçbir bırakma | Hiçbir bırakma |  
 | Kes/Yapıştır | Eylem | Taşıma | Taşıma |  
 | Kes/Yapıştır | Hedef | Hedef konuma kopyalar öğesi | Hedef konuma kopyalar öğesi |  
@@ -565,19 +563,19 @@ Aşağıdaki tablo karışık hedef projelerde basılı kaynak öğesi ve deği�
 | Hiçbir değiştiricisi | Eylem | Taşıma | Taşıma |
 | Hiçbir değiştiricisi | Hedef | Özgün öğe başvuru ekler | Hedef konuma kopyalar öğesi |
 | Hiçbir değiştiricisi | Kaynak | Özgün öğe siler referansı | Özgün öğe siler referansı |
-| Hiçbir değiştiricisi | Sonuç | `DROPEFFECT_ MOVE`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_ MOVE`eylem olarak döndürülen `::Drop` ve depolama özgün konumundan öğe silindi |
+| Hiçbir değiştiricisi | Sonuç | `DROPEFFECT_ MOVE` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_ MOVE` eylem olarak döndürülen `::Drop` ve depolama özgün konumundan öğe silindi |
 | Shift + sürükleyin | Eylem | Taşıma | Taşıma |
 | Shift + sürükleyin | Hedef | Özgün öğe başvuru ekler | Hedef konuma kopyalar öğesi |
 | Shift + sürükleyin | Kaynak | Özgün öğe siler referansı | Öğeyi özgün konumundan siler | 
-| Shift + sürükleyin | Sonuç | `DROPEFFECT_ MOVE`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_ MOVE`eylem olarak döndürülen `::Drop` ve depolama özgün konumundan öğe silindi |
+| Shift + sürükleyin | Sonuç | `DROPEFFECT_ MOVE` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_ MOVE` eylem olarak döndürülen `::Drop` ve depolama özgün konumundan öğe silindi |
 | CTRL + sürükle | Eylem | Kopyala | Kopyala |
 | CTRL + sürükle | Hedef | Özgün öğe başvuru ekler | Hedef konuma kopyalar öğesi |
 | CTRL + sürükle | Kaynak | Özgün öğesine başvuruda korur | Özgün öğe korur |
-| CTRL + sürükle | Sonuç | `DROPEFFECT_ COPY`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_ COPY`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |
+| CTRL + sürükle | Sonuç | `DROPEFFECT_ COPY` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_ COPY` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |
 | Ctrl + Shift + sürükleyin | Eylem | Bağlantı | Bağlantı |
 | Ctrl + Shift + sürükleyin | Hedef | Özgün öğe başvuru ekler | Özgün kaynak öğe başvuru ekler |
 | Ctrl + Shift + sürükleyin | Kaynak | Özgün öğesine başvuruda korur | Özgün öğe korur |
-| Ctrl + Shift + sürükleyin | Sonuç | `DROPEFFECT_ LINK`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_ LINK`eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |
+| Ctrl + Shift + sürükleyin | Sonuç | `DROPEFFECT_ LINK` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama | `DROPEFFECT_ LINK` eylem olarak döndürülen `::Drop` ve madde kalır özgün konumda depolama |
 | Kes/Yapıştır | Eylem | Taşıma | Taşıma |
 | Kes/Yapıştır | Hedef | Hedef konuma kopyalar öğesi | Hedef konuma kopyalar öğesi |
 | Kes/Yapıştır | Kaynak | Özgün öğe siler referansı | Öğeyi özgün konumundan siler |

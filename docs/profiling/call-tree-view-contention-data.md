@@ -1,27 +1,23 @@
 ---
-title: "Çağrı ağacı görünümü - Çekişme verileri | Microsoft Docs"
-ms.custom: 
+title: Çağrı ağacı görünümü - Çekişme verileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c829f11efd5eddda0ea819422856cb2bcc30c2ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2a3cac90523578def42be2d73bfffaf688682af5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="call-tree-view---contention-data"></a>Çağrı ağacı görünümü - Çekişme verileri
 Çağrı ağacı görünümü profili uygulamada geçiş işlevi yürütme yollarını görüntüler. Ağaç kök uygulama veya bileşenin giriş noktasıdır. Her işlevi düğümü adlı tüm işlevleri, işlevi engellendi sayısı ve diğer iş parçacıkları veya işlemler sahip bir kaynak için contending çünkü işlev engellendi süreyi listeler.  
@@ -50,7 +46,7 @@ ms.lasthandoff: 12/22/2017
 |**Kapsayıcı engellenen süresi %**|Profil çalıştıran tüm engellenen zamanın yüzde olarak dahil engellenen süre bu işlev bu yürütme yolunda örnekleri için oluştu.|  
 |**Kapsayıcı çekişmeleri**|Bu işlev bu yürütme yolunda örneklerini engellenen çekişmeleri toplam sayısı. İşlev tarafından çağrılan alt işlevleri çekişmeleri sayısını içerir.|  
 |**Kapsayıcı çekişmeleri %**|Profil çalıştıran tüm çekişmeleri yüzdesi bu işlev bu yürütme yolunda örneklerinin dahil çekişmeleri yoktu.|  
-|**Düzeyi**|Çağrı ağacı işlev düzeyi. Yalnızca VSReport komut satırı raporlarda. Daha fazla bilgi için bkz [VSPerfReport](../profiling/vsperfreport.md).|  
+|**düzeyi**|Çağrı ağacı işlev düzeyi. Yalnızca VSReport komut satırı raporlarda. Daha fazla bilgi için bkz [VSPerfReport](../profiling/vsperfreport.md).|  
 |**İşlev satır numarası**|Bu işlev kaynak dosyadaki başlangıç satır sayısı.|  
 |**Modül adı**|İşlevi içeren modülü adı.|  
 |**Modül yolu**|İşlevi içeren modülü yolu.|  

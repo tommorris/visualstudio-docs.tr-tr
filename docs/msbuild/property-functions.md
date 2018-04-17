@@ -1,26 +1,22 @@
 ---
-title: "Özellik işlevleri | Microsoft Docs"
-ms.custom: 
+title: Özellik işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 02/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3bd5d35e3d996a1507a5ce14d40fbb59c24cbdb
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: b02591886ae1d140efb2239361ce13ee43727df7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="property-functions"></a>Özellik İşlevleri
 .NET Framework sürüm 4 ve 4.5, özellik işlevleri MSBuild komut değerlendirmek için kullanılabilir. Özellik işlevleri özellikleri görünür her yerde kullanılabilir. Görevler, farklı özellik işlevleri dışında hedefleri kullanılabilen ve tüm hedef çalışmadan önce değerlendirilir.  
@@ -64,7 +60,7 @@ ms.lasthandoff: 03/17/2018
 
 -   System.Char  
 
--   System.Convert  
+-   System.Convert'i  
 
 -   System.DateTime  
 

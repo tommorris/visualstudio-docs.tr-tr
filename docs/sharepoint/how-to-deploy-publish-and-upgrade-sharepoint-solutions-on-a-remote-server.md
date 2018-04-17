@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: dağıtma, yayımlama ve yükseltme uzak bir sunucudaki SharePoint çözümlerini | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: dağıtma, yayımlama ve yükseltme uzak bir sunucudaki SharePoint çözümlerini | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 154af4ba9ac4a83c40c5d53a6b292c212aa71503
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 108474e725c95f495bf6eec0f9a2224ca971b3d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Nasıl yapılır: Uzak bir Sunucudaki SharePoint Çözümlerini Dağıtma, Yayımlama ve Yükseltme
   SharePoint çözümleri için yerel sistem dağıtımına ek olarak, korumalı SharePoint çözümlerini uzak siteleri veya yerel SharePoint siteleri için yayımlayabilirsiniz. Uzak yayımlama işlemi .wsp dosyasını SharePoint sunucusuna kopyalar, çözüm yükler ve ardından çözüm etkinleştirmek sağlar. Kendisine değişiklikler yapıldıktan sonra uzak bir SharePoint çözüm yüklemesi yükseltme yapabilirsiniz.  
@@ -32,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  İçinde **Çözüm Gezgini**, yayımlama ve ardından istediğiniz korumalı SharePoint proje için kısayol menüsünü açın **Yayımla**.  
   
-2.  İçinde **Yayımla** iletişim kutusunda, seçin **SharePoint sitesi için Yayımlama** seçenek düğmesi ve aşağıdaki örnek gibi bir çevrimiçi yayımlama site için bir URL girin: **https:// mytestsite.SharePoint.microsoftonline.com**.  
+2.  İçinde **Yayımla** iletişim kutusunda, seçin **SharePoint sitesi için Yayımlama** seçenek düğmesi ve aşağıdaki örnek gibi bir çevrimiçi yayımlama site için bir URL girin: **https://mytestsite.sharepoint.microsoftonline.com** .  
   
 3.  Seçin **Çözüm Galerisi'ne yayımladıktan sonra tarayıcıda açın** çözümlerinde listesini görüntülemek için seçenek düğmesi **çözüm Galerisi** yayımlama sonra sayfa.  
   

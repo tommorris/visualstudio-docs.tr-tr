@@ -1,8 +1,8 @@
 ---
-title: "Visual Studio devenv komut satırı anahtarları | Microsoft Docs"
+title: Visual Studio devenv komut satırı anahtarları | Microsoft Docs
 ms.date: 02/28/2018
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - switches, Devenv
 - command-line switches, Devenv
@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b507ff8710e3257f2da61a32baa81a18441c3aff
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 3adde520b76de347da025c819ec39dce50660f2b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="devenv-command-line-switches"></a>Devenv komut satırı anahtarları
 
@@ -63,13 +63,13 @@ Aşağıdaki komut satırı anahtarları IDE görüntülemek ve açıklanan gör
 |[/ Komutu](../../ide/reference/command-devenv-exe.md)|IDE başlatır ve belirtilen komut yürütür.|
 |[/ DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Hata ayıklayıcı denetimi altında bir C++ yürütülebilir dosyayı yükler. Bu anahtar, Visual Basic veya C# yürütülebilir dosyaları için kullanılamıyor. Daha fazla bilgi için bkz: [bir işlem hata ayıklayıcısı'ndaki otomatik olarak Başlat](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
 |[/ LCID veya /l](../../ide/reference/lcid-devenv-exe.md)|IDE için varsayılan dili ayarlar. Belirtilen dil Visual Studio yüklemenizin bulunmuyorsa, bu ayar yok sayılır.|
-|[/Log](../../ide/reference/log-devenv-exe.md)|Visual Studio başlatılır ve tüm etkinlik günlük dosyasına kaydeder.|
+|[/ Log](../../ide/reference/log-devenv-exe.md)|Visual Studio başlatılır ve tüm etkinlik günlük dosyasına kaydeder.|
 |[/ Run veya/r](../../ide/reference/run-devenv-exe.md)|Derler ve belirtilen çözüm çalıştırır.|
-|[/Runexit](../../ide/reference/runexit-devenv-exe.md)|Derler ve belirtilen çözüm için çözümü çalıştırılır ve çözüm çalışması bittikten sonra IDE kapandığında IDE en aza indirir.|
+|[/ Runexit](../../ide/reference/runexit-devenv-exe.md)|Derler ve belirtilen çözüm için çözümü çalıştırılır ve çözüm çalışması bittikten sonra IDE kapandığında IDE en aza indirir.|
 |[/ UseEnv](../../ide/reference/useenv-devenv-exe.md)|VC ++ dizinleri kısmında belirtilen ayarlara yerine C++ derleme yolu, Ekle ve LIB ortam değişkenleri kullanılmak üzere IDE neden **projeleri** içinde seçenekleri **seçenekleri** iletişim kutusu. Bu anahtarı ile yüklenen **C++ ile masaüstü geliştirme** iş yükü. Daha fazla bilgi için bkz: [komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
 |[/ Düzenle](../../ide/reference/edit-devenv-exe.md)|Belirtilen dosyaları bu uygulamanın çalışan bir örneğini açar. Hiçbir çalışan örneği varsa, Basitleştirilmiş pencere düzenini ile yeni bir örneğini başlatır.|
 |[/SafeMode](../../ide/reference/safemode-devenv-exe.md)|Visual Studio güvenli modda başlatır ve yalnızca varsayılan ortamı ve hizmetleri yükler ve üçüncü taraf paketlerden sürümleri sevk.|
-|[/ResetSkipPkgs](../../ide/reference/resetskippkgs-devenv-exe.md)|VSPackages için sorun VSPackages yüklenmesini önlemek için istediğiniz kullanıcılar tarafından eklenen tüm SkipLoading etiketleri temizler.|
+|[/ ResetSkipPkgs](../../ide/reference/resetskippkgs-devenv-exe.md)|VSPackages için sorun VSPackages yüklenmesini önlemek için istediğiniz kullanıcılar tarafından eklenen tüm SkipLoading etiketleri temizler.|
 |[/ Kurulumu](../../ide/reference/setup-devenv-exe.md)|Menüleri, araç çubukları ve komut gruplarından tüm VSPackages kullanılabilir açıklar kaynak meta verileri birleştirmek için Visual Studio zorlar. Bu komutu bir yönetici olarak çalıştırmanız gerekir.|
 
 Aşağıdaki komut satırı anahtarları IDE görüntülemez.
@@ -78,7 +78,7 @@ Aşağıdaki komut satırı anahtarları IDE görüntülemez.
 |-------------------------|-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|Devenv anahtarları için yardımı görüntüler **komut istemi penceresi**.<br /><br /> **Devenv /?**|
 |[/ Yapı](../../ide/reference/build-devenv-exe.md)|Belirtilen çözüm ya da belirtilen çözüm yapılandırmasına göre proje oluşturur.<br /><br /> **Devenv myproj.csproj/BUILD**|
-|[/ Temizle](../../ide/reference/clean-devenv-exe.md)|Kaynak dosyaları etkilemeden yapı komutu tarafından oluşturulan tüm dosyaları siler.<br /><br /> **Devenv myproj.csproj /clean**|
+|[/ Temizle](../../ide/reference/clean-devenv-exe.md)|Kaynak dosyaları etkilemeden yapı komutu tarafından oluşturulan tüm dosyaları siler.<br /><br /> **Devenv myproj.csproj / Temizle**|
 |[/ Dağıt](../../ide/reference/deploy-devenv-exe.md)|Çözümleri yapılandırmasına dağıtımı için gerekli dosyaları yanı sıra çözüm oluşturur.<br /><br /> **Devenv myproj.csproj / dağıtma**|
 |[/ Fark](../../ide/reference/diff.md)|İki dosyayı karşılaştırır. Dört parametre alır: SourceFile TargetFile, SourceDisplayName (isteğe bağlı), TargetDisplayName (isteğe bağlı).|
 |[/ Out](../../ide/reference/out-devenv-exe.md)|Oluşturma sırasında hatalar almak için bir dosya belirtmenize olanak sağlar.<br /><br /> **Devenv myproj.csproj/BUILD/log.txt out**|

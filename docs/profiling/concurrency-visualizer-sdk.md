@@ -1,27 +1,23 @@
 ---
-title: "Eşzamanlılık görselleştiricisi SDK | Microsoft Docs"
-ms.custom: 
+title: Eşzamanlılık görselleştiricisi SDK | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3745e863a94c0e2b899da0bf9d81589570c6ac0
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: d23903d7438d185250ddb4c3eca54ee2c290c865
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="concurrency-visualizer-sdk"></a>Eşzamanlılık Görselleştiricisi SDK
 Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için eşzamanlılık görselleştiricisi SDK'sını kullanarak kaynak kodunuzu işaretleyebilir. Ek verileri kodunuzda aşamaları ve olaylarla ilişkilendirebilirsiniz. Bu ek görsel olarak da bilinir *işaretçileri*.  Bir giriş için bkz [eşzamanlılık görselleştiricisi SDK'sı giriş](http://go.microsoft.com/fwlink/?LinkId=235405).  

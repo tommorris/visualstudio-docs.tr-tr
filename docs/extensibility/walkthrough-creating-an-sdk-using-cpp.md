@@ -1,23 +1,21 @@
 ---
-title: "İzlenecek yol: C++ kullanarak bir SDK oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: C++ kullanarak bir SDK oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7a4091506bcd16222ff02600bd924d3526d57c38
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 33880dc3b9c359798c47c666debc3d5564524794
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>İzlenecek yol: C++ kullanarak bir SDK oluşturma
 Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı (VSIX) olarak SDK paketini oluşturma ve bir uygulama oluşturmak için kullanma gösterilmektedir. İzlenecek yol aşağıdaki adımları ayrılır:  
@@ -31,7 +29,7 @@ Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı 
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuzda izlemek için Visual Studio SDK'yı yüklemeniz gerekir. Daha fazla bilgi için bkz: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createClassLibrary"></a>Yerel ve Windows çalışma zamanı kitaplıkları oluşturmak için  
+##  <a name="createClassLibrary"></a> Yerel ve Windows çalışma zamanı kitaplıkları oluşturmak için  
   
 1.  Menü çubuğunda seçin **dosya**, **yeni**, **proje**.  
   
@@ -59,7 +57,7 @@ Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı 
   
 9. Menü çubuğunda seçin **yapı**, **yapı çözümü**.  
   
-##  <a name="createVSIX"></a>NativeMathVSIX uzantı projesi oluşturmak için  
+##  <a name="createVSIX"></a> NativeMathVSIX uzantı projesi oluşturmak için  
   
 1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'**ve ardından **Ekle**, **yeni proje**.  
   
@@ -143,7 +141,7 @@ Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı 
   
 18. Seçin **yükleme** düğmesi, yüklemesinin tamamlanması için bekleyin ve ardından Visual Studio'yu başlatın.  
   
-##  <a name="createSample"></a>Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için  
+##  <a name="createSample"></a> Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için  
   
 1.  Menü çubuğunda seçin **dosya**, **yeni**, **proje**.  
   
@@ -171,7 +169,7 @@ Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı 
   
 9. Uygulamayı çalıştırmak için F5 tuşuna seçin.  
   
-10. Uygulamada, herhangi iki sayıyı girin, bir işlem seçin ve ardından  **=**  düğmesi.  
+10. Uygulamada, herhangi iki sayıyı girin, bir işlem seçin ve ardından **=** düğmesi.  
   
      Doğru sonucu görünür.  
   

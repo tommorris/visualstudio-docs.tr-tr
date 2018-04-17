@@ -2,11 +2,8 @@
 title: MT görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
 - VC.Project.VCManifestTool.SuppressDependencyElement
@@ -24,17 +21,16 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: 6
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: HT
+ms.openlocfilehash: d990de8959ec508aeab0550e32e84e753d3a6bb1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mt-task"></a>MT Görevi
 Microsoft Bildirimi aracı sarmalar mt.exe. Daha fazla bilgi için "Mt.exe" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
@@ -49,7 +45,7 @@ Microsoft Bildirimi aracı sarmalar mt.exe. Daha fazla bilgi için "Mt.exe" bak�
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|İsteğe bağlı **String []** parametresi.<br /><br /> Bir veya daha fazla bildirim dosya adını belirtir.<br /><br /> Daha fazla bilgi için bkz: **/bildirimi** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
 |**AdditionalOptions**|İsteğe bağlı **dize** parametresi.<br /><br /> Komut satırı seçeneklerinin listesi. Örneğin, "*/option1 /option2 /option#*". Diğer tarafından temsil edilmez komut satırı seçeneklerini belirtmek için bu parametreyi kullanın **MT** görev parametresi.<br /><br /> Daha fazla bilgi için "Mt.exe" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
-|**AssemblyIdentity**|İsteğe bağlı **dize** parametresi.<br /><br /> Öznitelik değerlerini belirtir **assemblyIdentity** bildiriminin öğesi. İlk bileşen değerini bulunduğu bir virgülle ayrılmış listesini belirtin `name` özniteliği, formu sahip bir veya daha fazla ad/değer çiftleri tarafından izlenen  *\<öznitelik adı > < attribute_value > =*.<br /><br /> Daha fazla bilgi için bkz: **/identity** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
+|**assemblyIdentity**|İsteğe bağlı **dize** parametresi.<br /><br /> Öznitelik değerlerini belirtir **assemblyIdentity** bildiriminin öğesi. İlk bileşen değerini bulunduğu bir virgülle ayrılmış listesini belirtin `name` özniteliği, formu sahip bir veya daha fazla ad/değer çiftleri tarafından izlenen  *\<öznitelik adı > < attribute_value > =*.<br /><br /> Daha fazla bilgi için bkz: **/identity** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
 |**ComponentFileName**|İsteğe bağlı **dize** parametresi.<br /><br /> .rgs veya .tlb dosyaları oluşturmak istiyorsanız dinamik bağlantı kitaplığı adını belirtir. Belirtirseniz, bu parametre gereklidir **RegistrarScriptFile** veya **TypeLibraryFile** MT görevi parametreleri.<br /><br /> Daha fazla bilgi için bkz: **/dll** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
 |**DependencyInformationFile**|İsteğe bağlı **dize** parametresi.<br /><br /> Bildirim aracı için yapı bağımlılık bilgileri izlemek için Visual Studio tarafından kullanılan bağımlılık bilgi dosyasını belirtir.|  
 |**EmbedManifest**|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, bildirim dosyası derlemeye katıştırır. Varsa `false`, tek başına bir bildirim dosyası oluşturur.|  

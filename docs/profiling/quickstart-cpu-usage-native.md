@@ -1,26 +1,25 @@
 ---
-title: "CPU kullanımı verilerini (C++) çözümleme | Microsoft Docs"
-ms.custom: 
+title: CPU kullanımı verilerini (C++) çözümleme | Microsoft Docs
+ms.custom: ''
 ms.date: 12/05/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: quickstart
-f1_keywords: 
+f1_keywords:
+- ''
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
-caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7540203c395d51d6372aad908ec028180f41bd7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ebe10dbcf5b03288ae4d0e6d2fb93444abe1064a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-c"></a>CPU kullanım verileri, Visual Studio (C++) analiz etme
 
@@ -111,7 +110,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
     }
     ```
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>1. adım: profil oluşturma verilerini topla 
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 1. adım: profil oluşturma verilerini topla 
   
 1.  İlk olarak, bu kod satırı üzerinde uygulamanızda bir kesme noktası belirleyerek `main` işlevi:
 
@@ -150,7 +149,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
 
-## <a name="Step2"></a>2. adım: CPU kullanım verilerini çözümleme
+## <a name="Step2"></a> 2. adım: CPU kullanım verilerini çözümleme
 
 CPU kullanımı altında işlevlerin listesi inceleyerek, en fazla çalışmayı yapan işlevleri tanımlama ve her biri daha ayrıntılı bir bakış alma verilerinizi incelemeye başlamak öneririz.
 

@@ -1,10 +1,8 @@
 ---
-title: "Görüntü şekiller özelliklerini | Microsoft Docs"
-ms.custom: 
+title: Görüntü şekiller özelliklerini | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectimagedialog
 - vs.dsltools.dsldesigner.imageshape
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, image shape
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d4e2c06252659c126fc2e73b7a90973d3d624636
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6b1edd5ffadedd0af66b43902bc865b71243a92d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-image-shapes"></a>Görüntü Şekillerinin Özellikleri
 Görüntü şekiller, etki alanı sınıflarını oluşturulan Tasarımcısı'nda görüntülenme şeklini belirlemek için kullanabilirsiniz. Bir resim şekli ayarlayarak tanımlama `Image` önceden tanımlanmış görüntü dosyasına sınıfın özelliği. Aşağıdaki biçimler desteklenir:  
@@ -29,7 +27,7 @@ Görüntü şekiller, etki alanı sınıflarını oluşturulan Tasarımcısı'nd
   
 -   .jpg  
   
--   .jpeg  
+-   .JPEG  
   
 -   .bmp  
   
@@ -37,7 +35,7 @@ Görüntü şekiller, etki alanı sınıflarını oluşturulan Tasarımcısı'nd
   
 -   .emf  
   
--   .png  
+-   .PNG  
   
  Varsayılan olarak, görüntü dosyaları gibi tasarımcı kaynak dosyalarını yer **kaynakları**klasöründe **Dsl** projesi.  
   
@@ -54,7 +52,7 @@ Görüntü şekiller, etki alanı sınıflarını oluşturulan Tasarımcısı'nd
 |Kenarlık Çizgi stili|Bu şekil (düz, çizgi, nokta, çizgi nokta, çizgi nokta nokta veya özel) anahat çizgi stili.|Düz|  
 |Anahat kalınlığı|Bu şeklin Anahat kalınlığı.|0.03125|  
 |Metin rengi|Bu şeklin ile ilişkili metin dekoratörler için kullanılan rengi.|Siyah|  
-|Access Modifier|Geometri şekli (ortak veya dahili) erişim değiştiricisi.|Ortak|  
+|Erişim değiştiricisi|Geometri şekli (ortak veya dahili) erişim değiştiricisi.|Ortak|  
 |Özel Öznitelikler|Bu şekle oluşturulan kaynak kodu sınıfı öznitelikler eklemek için kullanılır.|\<yok >|  
 |Çift oluşturur türetilmiş|Varsa `True`, bir taban sınıf ve bir parçalı sınıf (geçersiz kılmaları özelleştirmeyi desteklemek için) oluşturulur. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Özel bir oluşturucuya sahip|Varsa `True`, özel bir oluşturucu kaynak kodunda sağlanacaktır. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  

@@ -2,11 +2,8 @@
 title: CSC görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-caps.latest.revision: 26
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a74f8c43d35104957b62fb3da93d2acbf6a9a303
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: a86a5aa1b9be17948ac735f7ede148f2a2d398f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="csc-task"></a>Csc Görevi
 CSC.exe sarmalar ve yürütülebilir dosyalar (.exe dosyaları), dinamik bağlantı kitaplıkları (.dll dosyaları) veya kod modülleri (.netmodule dosyaları) üretir. CSC.exe hakkında daha fazla bilgi için bkz: [C# Derleyici Seçenekleri](/dotnet/csharp/language-reference/compiler-options/index).  

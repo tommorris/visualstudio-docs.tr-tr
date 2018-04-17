@@ -1,32 +1,29 @@
 ---
-title: "Nasıl yapılır: IDE erişilebilirlik seçeneklerini ayarlama | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: IDE erişilebilirlik seçeneklerini ayarlama | Microsoft Docs'
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6881e90a0035ed7c918acab924832013d9b17088
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: b44f31b03dae1c553008685553548d886a8943a2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Nasıl Yapılır: IDE Erişilebilirlik Seçeneklerini Ayarlama
 > [!TIP]
 > Son erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz: [Visual Studio 2017 sürüm 15.3 erişilebilirlik geliştirmeleri](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog postası.
 
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]zorluğu yazılacak olan kişiler ve okumak için görme engelli kişiler için kolaylaştıran özellikler içerir. Bu özellikler, boyut ve birkaçıdır metin ve düğmeleri araç çubukları ve yöntemleri ve parametreleri için otomatik tamamlama boyutunu değiştirme düzenleyicileri içindeki metnin rengi değiştirme içerir.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zorluğu yazılacak olan kişiler ve okumak için görme engelli kişiler için kolaylaştıran özellikler içerir. Bu özellikler, boyut ve birkaçıdır metin ve düğmeleri araç çubukları ve yöntemleri ve parametreleri için otomatik tamamlama boyutunu değiştirme düzenleyicileri içindeki metnin rengi değiştirme içerir.  
 
  Ayrıca, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] desteklediği en sık olun Dvorak klavye düzenleri, yazdığınız karakterler daha erişilebilir. İle kullanılabilen varsayılan kısayol tuşlarını özelleştirebilirsiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Daha fazla bilgi için bkz: [tanımlama ve özelleştirme klavye kısayolları](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
 

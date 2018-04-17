@@ -1,13 +1,10 @@
 ---
-title: "CPU ve Windows sayaçları | Microsoft Docs"
-ms.custom: 
+title: CPU ve Windows sayaçları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
 helpviewer_keywords:
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - CPU counters in Profiling Tools
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96de12221c123049f3c5021751229e02bb938c0f
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 7aac7bf93ce13e56d86e8d827fe894c4f1d91add
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cpu-and-windows-counters"></a>CPU ve Windows Sayaçları
 
@@ -100,7 +97,7 @@ Visual Studio IDE içinde bir bilgisayarda kullanılabilir sayaçlar listelemek 
 
          **Not** tıklatın **iptal** önceki örnekleme yapılandırmaya dönmek için.
 
-     veya
+     -veya-
 
     -   Seçin **CPU sayaçları**ve ardından **toplamak CPU sayaçları**. CPU sayaçları listelenen **kullanılabilir sayaçlar**.
 

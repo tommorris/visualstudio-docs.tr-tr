@@ -1,27 +1,23 @@
 ---
-title: "Bayrak işaretleyicileri | Microsoft Docs"
-ms.custom: 
+title: Bayrak işaretleyicileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.markers.flag
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79105e43cba14c12cf0f82edd05b57286c012ee5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 291734a72c26fac5d23efcbb86ccff8c4ae0721e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="flag-markers"></a>Bayrak İşaretleyicileri
 Bayrak işaret anlık bir uygulama sürede oluşan bir şeyi temsil eder. Bir bayrak pek çok uygulama olayları temsil edebilir. Örneğin, bir bayrak belirli iş öğesini zaman zamanlandığı veya ne zaman bir özel durum oluştu gösterebilirsiniz. Görev paralel kitaplığı gibi çalışma zamanları bayrakları de oluşturabilirsiniz.  

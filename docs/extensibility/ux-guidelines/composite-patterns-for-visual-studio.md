@@ -1,23 +1,21 @@
 ---
-title: "Visual Studio için bileşik desenleri | Microsoft Docs"
-ms.custom: 
+title: Visual Studio için bileşik desenleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6515b5aefc0536ea92f09a92b1a17050b820008d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio için bileşik desenleri
 Bileşik desenleri farklı yapılandırmayı etkileşim ve tasarım öğeleri birleştirin. Visual Studio tutarlılık açısından en önemli bileşik düzenleri bazıları şunlardır:  
@@ -32,7 +30,7 @@ Bileşik desenleri farklı yapılandırmayı etkileşim ve tasarım öğeleri bi
   
 -   [Dokunmatik giriş](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)  
   
-##  <a name="BKMK_DataVisualization"></a>Veri Görselleştirme  
+##  <a name="BKMK_DataVisualization"></a> Veri Görselleştirme  
   
 ### <a name="overview"></a>Genel Bakış  
  Grafikler, toplama ve işlerinize geliştirmek için verileri görselleştirmek için görsel bir yoludur. Bunlar çok miktarda veri ancak bkz: ne dikkat hak ve hangi eylemin gerekebilecek küçük anlamına gelir ile karşılaştığı kullanıcıların yardımcı olur.  
@@ -85,7 +83,7 @@ Bileşik desenleri farklı yapılandırmayı etkileşim ve tasarım öğeleri bi
 |![Renk örneği 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
 |![Renk örneği B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
   
-##  <a name="BKMK_OnObjectUI"></a>Nesne üzerinde kullanıcı Arabirimi ve gözatma  
+##  <a name="BKMK_OnObjectUI"></a> Nesne üzerinde kullanıcı Arabirimi ve gözatma  
  Bu bölümde, kod gözlem görünümü olarak da bilinen, nesne üzerindeki UI Visual Studio için benzersiz bir tür gözatma için bağlamı sağlar.  
   
 ### <a name="overview"></a>Genel Bakış  
@@ -251,7 +249,7 @@ Bileşik desenleri farklı yapılandırmayı etkileşim ve tasarım öğeleri bi
   
 -   **Hiçbir zaman** düzenlenebilir gibi görünüyor veya kullanıcı etkileşimi başvurulmasını gidildiğinde içeriği görüntüle. İmleci, üretilen içeriği asıl artık olduğunda hemen kapatmak için bir araç ipucu için standart davranış olduğu gibi imleci ayrıntı içerik taşımaya çalışırsanız bu davranış kullanıcıları rahatsız.  
   
-##  <a name="BKMK_SelectionModels"></a>Seçim modelleri  
+##  <a name="BKMK_SelectionModels"></a> Seçim modelleri  
   
 ### <a name="overview"></a>Genel Bakış  
  Bir seçim modeli belirtmek ve bir veya daha fazla nesneleri kullanıcı arabiriminden ilgi işlemleri onaylamak için kullanılan mekanizmadır. Bu konuda seçimi etkileşim desenleri Visual Studio belge düzenleyiciler içinde ele alınmıştır: metin düzenleyicileri, tasarım yüzeyleriyle ve modelleme yüzeyleri.  
@@ -309,7 +307,7 @@ Bileşik desenleri farklı yapılandırmayı etkileşim ve tasarım öğeleri bi
 #### <a name="region-selection-box-selection"></a>Bölge Seçimi (kutusu seçimi)  
  Visual Studio bölgesi seçimlerin Metin Düzenleyicisi'nde destekler ve bu kutusu seçimi çağrılır. Kutusu seçimi normal metin akış izlemez metnin bir bölge seçin olanak tanır. Standart metin seçimle gibi seçimi bitişik olmalıdır. Kutusu seçimi fareyle sürükleme sırasında Alt tuşunu basılı tutarak başlatılır. Kutusu seçimi, Alt ve üst karakter tuşları aşağı seçimi bölge belirtmek için ok tuşlarını kullanırken tutarak da başlatılabilir. Kutusu seçimi normal seçim Vurgusu kullanır ve seçim alanı sonunda yanıp sönen ekleme noktası imleç gösterir.  
   
- ![Bölge &#40; kutusunu &#41; Visual Studio'da seçimi](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713 04_BoxSelection")  
+ ![Bölgesel &#40;kutusunu&#41; Visual Studio'da seçimi](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713 04_BoxSelection")  
   
  **Visual Studio'da bölge (kutusu) Seçimi**  
   
@@ -394,19 +392,19 @@ Bileşik desenleri farklı yapılandırmayı etkileşim ve tasarım öğeleri bi
   
  **İki ikincil seçimleri birincil seçimi**  
   
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a>Grafik nesne seçim görünümü  
+####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Grafik nesne seçim görünümü  
  Sınırlama kutusu nesnenin etrafında dikdörtgen desende çizilmiş kareler seçimi tanıtıcılarıdır. Grafik bir grafik nesnesi tanıtıcı, boyutlandırma ve yerinde düzenleme görünümü olabilir çeşitli durumlarını örnekleri gösterilir. Tanıtıcıları boyutunu pencere kenarlık ve kenar ölçümleri kullanarak bağlı olması **GetSystemMetrics** API.  
   
 |Durum|Görünüm|Visual ayrıntıları|  
 |-----------|----------------|--------------------|  
 |**Seçilmemiş**|Varsayılan|![Varsayılan düğme durumu](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState")||  
-|**Birincil seçimi**|Yeniden boyutlandırılabilir|![Birincil seçimi ile yeniden boyutlandırın tanıtıcıları](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize")|![Birincil seçimle tanıtıcıları &#40;yeniden boyutlandırma; uzaklaştırılacağını &#41; ] (../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713 12_PrimaryResizeZoom")|  
-|**Birincil seçimi**|Yeniden boyutlandırılabilir değil|![Birincil seçim olmadan yeniden boyutlandırma tanıtıcıları](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize")|![Birincil seçim olmadan yeniden boyutlandırma tanıtıcıları &#40; uzaklaştırılacağını &#41; ] (../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713 14_PrimaryNoResizeZoom")|  
-|**Birincil seçimi**|Kilitli|![Kilitli birincil seçimi](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked")|![Kilitli birincil seçimi &#40; uzaklaştırılacağını &#41; ] (../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713 16_PrimaryLockedZoom")|  
-|**İkincil seçimi**|Yeniden boyutlandırılabilir|![İkincil seçimi ile yeniden boyutlandırın tanıtıcıları](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713 17_SecondaryResize")|![İkincil seçimle tanıtıcıları &#40;yeniden boyutlandırma; uzaklaştırılacağını &#41; ] (../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713 18_SecondaryResizeZoom")|  
-|**İkincil seçimi**|Yeniden boyutlandırılabilir değil|![İkincil seçim olmadan yeniden boyutlandırma tanıtıcıları](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713 19_SecondaryNoResize")|![Yeniden boyutlandırma &#40; olmadan ikincil seçimi uzaklaştırılacağını &#41; ] (../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713 20_SecondaryNoResizeZoom")|  
-|**İkincil seçimi**|Kilitli|![Kilitli ikincil seçimi](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713 21_SecondaryLocked")|![Kilitli ikincil seçimi &#40; uzaklaştırılacağını &#41; ] (../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713 22_SecondaryLockedZoom")|  
-|**Etkin kullanıcı Arabirimi**|Varsayılan|![Kullanıcı Arabirimi etkin durumu](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive")|![UI etkin duruma &#40; uzaklaştırılacağını &#41; ] (../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713 24_UIActiveZoom")|  
+|**Birincil seçimi**|Yeniden boyutlandırılabilir|![Birincil seçimi ile yeniden boyutlandırın tanıtıcıları](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize")|![Birincil seçimi ile yeniden boyutlandırın tanıtıcıları &#40;uzaklaştırılacağını&#41;](../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713 12_PrimaryResizeZoom")|  
+|**Birincil seçimi**|Yeniden boyutlandırılabilir değil|![Birincil seçim olmadan yeniden boyutlandırma tanıtıcıları](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize")|![Birincil seçim olmadan yeniden boyutlandırma tanıtıcıları &#40;uzaklaştırılacağını&#41;](../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713 14_PrimaryNoResizeZoom")|  
+|**Birincil seçimi**|Kilitli|![Kilitli birincil seçimi](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked")|![Kilitli birincil seçimi &#40;uzaklaştırılacağını&#41;](../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713 16_PrimaryLockedZoom")|  
+|**İkincil seçimi**|Yeniden boyutlandırılabilir|![İkincil seçimi ile yeniden boyutlandırın tanıtıcıları](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713 17_SecondaryResize")|![İkincil seçimi ile yeniden boyutlandırın tanıtıcıları &#40;uzaklaştırılacağını&#41;](../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713 18_SecondaryResizeZoom")|  
+|**İkincil seçimi**|Yeniden boyutlandırılabilir değil|![İkincil seçim olmadan yeniden boyutlandırma tanıtıcıları](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713 19_SecondaryNoResize")|![Yeniden boyutlandırma olmadan ikincil seçimi &#40;uzaklaştırılacağını&#41;](../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713 20_SecondaryNoResizeZoom")|  
+|**İkincil seçimi**|Kilitli|![Kilitli ikincil seçimi](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713 21_SecondaryLocked")|![Kilitli ikincil seçimi &#40;uzaklaştırılacağını&#41;](../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713 22_SecondaryLockedZoom")|  
+|**Etkin kullanıcı Arabirimi**|Varsayılan|![Kullanıcı Arabirimi etkin durumu](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive")|![Kullanıcı Arabirimi etkin durumu &#40;uzaklaştırılacağını&#41;](../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713 24_UIActiveZoom")|  
   
 ### <a name="view-selection-models"></a>Seçim modelleri görüntüle  
   
@@ -475,7 +473,7 @@ Bileşik desenleri farklı yapılandırmayı etkileşim ve tasarım öğeleri bi
   
 -   Şu anda seçili hücre için yerinde düzenleme F2 anahtar etkinleştirir.  
   
-##  <a name="BKMK_PersistenceAndSavingSettings"></a>Kalıcılığı ve ayarları kaydediliyor  
+##  <a name="BKMK_PersistenceAndSavingSettings"></a> Kalıcılığı ve ayarları kaydediliyor  
   
 ### <a name="overview"></a>Genel Bakış  
  Visual Studio'da her yazılım bileşeni kendi durumu ve kalıcılığı genellikle sorumlu olsa da, Visual Studio gibi bazı durumlarda, ayarları otomatik olarak pencere boyutları ve konumları ile kaydeder. Aşağıdaki tabloda, otomatik olarak kaydedilir ve açık bir kullanıcının gerektiren veya gerçekleştirilecek eylemin programlanmış ayarlarını birleşimidir.  
@@ -510,7 +508,7 @@ Bileşik desenleri farklı yapılandırmayı etkileşim ve tasarım öğeleri bi
 #### <a name="profile-specific-layouts"></a>Profil özel düzenler  
  Her profil özel Geliştirici kişiler için tanıdık bir şekilde düzenlenmiştir aracı pencere düzenlerini içerir (Visual C++ geliştiriciler beklediğiniz görmek **Çözüm Gezgini** C# geliştiricileri görmeyibeklediğinizsıradaIDEsoltarafındaki **Çözüm Gezgini** sağ taraftaki). Kullanıcı profili başlangıçta seçtikten sonra profili özel pencere düzenlerini yüklenir. Bir paket yazarına, müşterinin deneyim için en uygun pencere düzenini penceresini yapılandırmanın kullanıcının yaptığı değişiklikler sonra kalıcı olduğunu bilmek belirlemeniz gerekir.  
   
-##  <a name="BKMK_TouchInput"></a>Dokunmatik giriş  
+##  <a name="BKMK_TouchInput"></a> Dokunmatik giriş  
  Kullanıcılar, dokunmatik aygıtlarda Microsoft geliştirme ürün giderek kullanıyor. Ancak, dokunmatik aygıtlarda geliştirme araçlarını kullanmayı zor hale engelleri vardır. Kullanıcıların bir güvenilir ve kesin dokunma deneyimi sağlamak için Ürünlerimiz beklediğiniz. Bu yönergeleri amacı, hangi dokunma özellikleri eklemenizi ve Visual Studio ve ilgili ürünler arasında tutarlı dokunmatik deneyimini teşvik eden hakkında kararlar bildirmek sağlamaktır.  
   
 ### <a name="levels-of-experience"></a>Deneyimi düzeyleri  

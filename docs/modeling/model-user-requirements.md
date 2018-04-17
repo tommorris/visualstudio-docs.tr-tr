@@ -1,24 +1,22 @@
 ---
-title: "Model kullanıcı gereksinimleri | Microsoft Docs"
-ms.custom: 
+title: Model kullanıcı gereksinimleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1401328b53f03d6ff1121e93ac7e56ebba0e585e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3837c6876c8eb1beecea13fb501a78c764555d9e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-user-requirements"></a>Kullanıcı gereksinimlerini modelleme
 
@@ -59,7 +57,7 @@ Kullanıcıların gereksinimlerini birkaç farklı görünümlerini oluşturabil
   
  Diyagram türlerinin çoğu diğer amaçlar için kullanılabilir dikkat edin. Diyagram türlerine genel bakış için bkz: [uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md).
   
-##  <a name="BusinessRules"></a>İş kurallarını gösterme
+##  <a name="BusinessRules"></a> İş kurallarını gösterme
 
 Bir iş kuralı belirli kullanım örneği ile ilişkili değil ve sistem genelinde uyulması bir gereksinimdir.  
   
@@ -79,7 +77,7 @@ Bir iş kuralı belirli kullanım örneği ile ilişkili değil ve sistem geneli
 |--------------------|----------|  
 |İş kurallarına uyduğundan kod nasıl geliştirilir|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a>Hizmet gereksinimlerinin kalitesini açıklayan
+##  <a name="QoSRequirements"></a> Hizmet gereksinimlerinin kalitesini açıklayan
 
 Hizmet kalitesi gereksinimleri birkaç kategorisi vardır. Bunlar aşağıdakileri içerir:  
   

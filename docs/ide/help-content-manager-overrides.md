@@ -1,34 +1,32 @@
 ---
-title: "Yardım İçerik Yöneticisi geçersiz kılmaları | Microsoft Docs"
-ms.custom: 
+title: Yardım İçerik Yöneticisi geçersiz kılmaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/01/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 35bc6ae23fdbc89f6bdeaa57bd37d5d961d87286
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7a943724d10241b5f0d7abb236964be51c38b79c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="help-content-manager-overrides"></a>Yardım İçerik Yöneticisi Geçersiz Kılmaları
+# <a name="help-content-manager-overrides"></a>Yardım İçerik Yöneticisi geçersiz kılar
 Yardım Görüntüleyicisi'ni ve Visual Studio IDE Yardım ilgili özellikleri varsayılan davranışını değiştirebilirsiniz. Bazı seçenekler oluşturarak belirtilir bir [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) çeşitli kayıt defteri anahtarı değerlerini ayarlamak için dosya. Başkalarının doğrudan kayıt defterinde ayarlanır.
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Yardım Görüntüleyici davranışı .pkgdef dosyasını kullanarak denetleme
 
-1. Bir .pkgdef dosyası ilk satırı ile oluşturmak `[$RootKey$\Help]`.
+1. Oluşturma bir *.pkgdef* ilk satır olarak dosyasıyla `[$RootKey$\Help]`.
 
 2. Kayıt defteri anahtarı değerlerini açıklandığı gibi ayrı satırlara aşağıdaki tabloda bir bölümünü veya tamamını eklemek `“UseOnlineHelp”=dword:00000001`.
 
-3. % ProgramFiles (x86) %\Microsoft Visual Studio\2017 dosyasını kopyalayın\\< edition\>\Common7\IDE\CommonExtensions.
+3. Dosyaya Kopyala *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\< edition\>\Common7\IDE\CommonExtensions*.
 
 4. Çalıştırma `devenv /updateconfiguration` Geliştirici komut istemindeki.
 
@@ -36,11 +34,11 @@ Yardım Görüntüleyicisi'ni ve Visual Studio IDE Yardım ilgili özellikleri v
 |Kayıt defteri anahtarı değeri|Tür|Veri|Açıklama|  
 |------------------|----|----|-----------|  
 |NewContentAndUpdateService|dize|\<Hizmet uç noktası için http URL'si\>|Benzersiz bir hizmet uç noktası tanımlayın|
-|UseOnlineHelp|DWORD|`0`Yerel Yardım belirtmek için `1` çevrimiçi Yardım belirtmek için|Çevrimiçi veya çevrimdışı Yardım varsayılan tanımlayın|
+|UseOnlineHelp|dword|`0` Yerel Yardım belirtmek için `1` çevrimiçi Yardım belirtmek için|Çevrimiçi veya çevrimdışı Yardım varsayılan tanımlayın|
 |OnlineBaseUrl|dize|\<Hizmet uç noktası için http URL'si\>|Benzersiz bir F1 bitiş noktasını tanımlayın|
-|OnlineHelpPreferenceDisabled|DWORD|`0`etkinleştirmek için veya `1` çevrimiçi Yardım tercih seçeneği devre dışı bırakmak için|Çevrimiçi Yardım tercih seçeneği devre dışı bırak|
-|DisableManageContent|DWORD|`0`etkinleştirmek için veya `1` devre dışı bırakmak için **içeriği Yönet** Yardım Görüntüleyici'de sekmesi|İçeriği Yönet sekmesini devre dışı bırak|
-|DisableFirstRunHelpSelection|DWORD|`0`etkinleştirmek için veya `1` Visual Studio başlatır ilk kez yapılandırılmış Yardım özellikleri devre dışı bırakmak için|Visual Studio'nun ilk kez başlatıldığında içerik yüklenmesini devre dışı bırak|
+|OnlineHelpPreferenceDisabled|dword|`0` etkinleştirmek için veya `1` çevrimiçi Yardım tercih seçeneği devre dışı bırakmak için|Çevrimiçi Yardım tercih seçeneği devre dışı bırak|
+|DisableManageContent|dword|`0` etkinleştirmek için veya `1` devre dışı bırakmak için **içeriği Yönet** Yardım Görüntüleyici'de sekmesi|Devre dışı **içeriği Yönet** sekmesi|
+|DisableFirstRunHelpSelection|dword|`0` etkinleştirmek için veya `1` Visual Studio başlatır ilk kez yapılandırılmış Yardım özellikleri devre dışı bırakmak için|Visual Studio'nun ilk kez başlatıldığında içerik yüklenmesini devre dışı bırak|
 
 ### <a name="example-pkgdef-file-contents"></a>Örnek .pkgdef dosya içerikleri
 ```
@@ -63,6 +61,6 @@ Aşağıdaki iki davranışları, Kayıt Defteri Düzenleyicisi'nde kayıt defte
   
 ## <a name="see-also"></a>Ayrıca bkz.
 [Yardım Görüntüleyicisi Yönetici Kılavuzu](../ide/help-viewer-administrator-guide.md)  
-[Yardım İçeriği Yöneticisi İçin Komut Satırı Bağımsız Değişkenleri](../ide/command-line-arguments-for-the-help-content-manager.md)  
+[Komut satırı bağımsız değişkenleri için Yardım içeriği Yöneticisi](../ide/command-line-arguments-for-the-help-content-manager.md)  
 [Microsoft Yardım Görüntüleyicisi](../ide/microsoft-help-viewer.md)  
 [Yalıtılmış Kabuk .pkgdef dosyasını kullanarak değiştirme](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

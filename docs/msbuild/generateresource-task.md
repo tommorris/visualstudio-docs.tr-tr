@@ -2,11 +2,8 @@
 title: GenerateResource görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, GenerateResource task
 - GenerateResource task [MSBuild]
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
-caps.latest.revision: 15
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37aacbfd2095cf4edae78393569702fe4fea6c7e
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: c5c5ae31c7eaed2f9fa77dec4fb4205eca5a6dd1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="generateresource-task"></a>GenerateResource Görevi
 .Txt, .resx (XML tabanlı kaynak biçimi) dosyaları ve bir çalışma zamanı ikili yürütülebilir dosya katıştırılmış veya uydu derlemelerini derlenmiş ortak dil çalışma zamanı ikili .resources dosyaları arasındaki dönüştürür. Bu görev, genellikle .txt veya .resx dosyaları .resource dosyalarına dönüştürmek için kullanılır. `GenerateResource` Görev benzer işlevsellik [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  

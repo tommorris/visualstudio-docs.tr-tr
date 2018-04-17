@@ -1,10 +1,8 @@
 ---
-title: "Kodunuz aracılığıyla bağımlılık diyagramları oluşturma | Microsoft Docs"
-ms.custom: 
+title: Kodunuz aracılığıyla bağımlılık diyagramları oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, dependency diagrams
 - dependency diagrams
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18477479255ff7af8216d093830c6c0d60fa50dc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9acc63c676463743ad598736f1d095f0ced0b388
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Kodunuz aracılığıyla bağımlılık diyagramları oluşturma
 
@@ -32,7 +30,7 @@ Bir bağımlılık diyagramı, Visual Studio çözüm öğeleri olarak adlandır
 
 [Video: mimarisi bağımlılıklarınızı gerçek zamanlı doğrula](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
 
-##  <a name="CreateDiagram"></a>Bir bağımlılık diyagramı oluşturma
+##  <a name="CreateDiagram"></a> Bir bağımlılık diyagramı oluşturma
 
 Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü modelleme projesine sahip olduğundan emin olun.
 
@@ -51,7 +49,7 @@ Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü modelleme pro
   
 4.  İçinde **eklemek modelleme projesine**bulun ve var olan bir modelleme projesi, çözümünüz seçin.  
   
-     veya  
+     -veya-  
   
      Seçin **yeni bir modelleme projesi oluşturma** çözüme yeni bir modelleme projesi eklemek için.  
   
@@ -78,7 +76,7 @@ Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü modelleme pro
 
 ![Kod eşlemesinden oluşturulan bağımlılık diyagramı](media/dependency-validation-01.png)
   
-##  <a name="CreateLayers"></a>Yapılardan katmanlar oluşturma  
+##  <a name="CreateLayers"></a> Yapılardan katmanlar oluşturma  
  Visual Studio çözüm öğelerinden projeler, kod dosyaları, ad alanları, sınıflar ve yöntemler gibi katmanlar oluşturabilirsiniz. Bu, katmanlar ve öğeler arasında otomatik olarak bağlantılar oluşturarak bunları katman doğrulama işlemine dahil eder.  
   
  Katmanları Word belgeleri veya PowerPoint sunumları gibi doğrulamayı desteklemeyen öğelere de ekleyebilir ve böylece bir katmanı belirtimlerle veya planlarla ilişkilendirebilirsiniz. Katmanları birden fazla uygulama arasında paylaşılan projelerdeki dosyalara da bağlayabilirsiniz, ancak doğrulama işlemi "Katman 1" ve "Katman 2" gibi genel adlarla görünen bu katmanları içermez.  
@@ -107,7 +105,7 @@ Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü modelleme pro
   
 -   Bir katman yapılarla bağlantılı diğer katmanları içeriyorsa, kapsayıcı katman da üzerindeki sayı bu yapıları içermese bile bu yapılara bağlıdır.  
   
-##  <a name="Managing"></a>Katmanlar ve Yapılar arasındaki bağlantıları yönetme  
+##  <a name="Managing"></a> Katmanlar ve Yapılar arasındaki bağlantıları yönetme  
   
 1.  Bağımlılık diyagramdaki katman için kısayol menüsünü açın ve ardından **bağlantıları görüntüleme**.  
   
@@ -123,7 +121,7 @@ Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü modelleme pro
 |Varolan yapı bağlantısından yeni bir katman oluşturma|Yapı bağlantısını diyagramdaki boş bir alana sürükleyin.|  
 |Bağlantılı bir yapı bağımlılık diyagramına dayalı doğrulamayı desteklediğini doğrulayın.|Bakmak **doğrulamayı destekler** yapı bağlantısı için sütun.|  
   
-##  <a name="Discovering"></a>Ters mühendislik Varolan bağımlılıkları  
+##  <a name="Discovering"></a> Ters mühendislik Varolan bağımlılıkları  
  Bir bağımlılık, bir katman ile ilişkili yapının başka bir katman ile ilişkili bir yapıya başvurusu olduğu yerde var olur. Örneğin, bir katmandaki sınıf başka bir katmanda sınıfı olan değişkeni bildirir. Diyagramdaki katmanlara bağlanmış yapılar için varolan bağımlılıklara ters mühendislik uygulayabilirsiniz.  
   
 > [!NOTE]
@@ -133,7 +131,7 @@ Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü modelleme pro
   
  Genellikle var olmaması gereken bazı bağımlılıklar göreceksiniz. Bu bağımlılıkları hedeflenen tasarım ile uyumlu hale getirmek için düzenleyebilirsiniz.  
   
-##  <a name="EditDependencies"></a>Katmanları ve bağımlılıkları hedeflenen tasarımı göstermek için düzenleme  
+##  <a name="EditDependencies"></a> Katmanları ve bağımlılıkları hedeflenen tasarımı göstermek için düzenleme  
  Sisteminiz veya hedeflenen mimari yapmayı planladığınız değişiklikleri açıklamak için bağımlılık diyagramı düzenleyin:  
   
 |**Hedef**|**Bu adımları uygulayın**|  
@@ -144,10 +142,10 @@ Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü modelleme pro
 |Bir katman ile ilişkili yapıların belirli ad alanlarına ait olmaması gerektiğini belirtme|Katmanın içinde ad alanlarını yazın **Yasak Ad alanları** özelliği. Noktalı virgül kullanın (**;**) ad alanlarını ayırmak için.|  
 |Bir katman ile ilişkili yapıların belirli ad alanlarından birine ait olması gerektiğini belirtme|Katmanın içinde ad alanını yazın **gereken ad alanlarını** özelliği. Noktalı virgül kullanın (**;**) ad alanlarını ayırmak için.|  
   
-##  <a name="EditLayout"></a>Öğeleri diyagramı görüntülenme şeklini değiştirme  
+##  <a name="EditLayout"></a> Öğeleri diyagramı görüntülenme şeklini değiştirme  
  Özelliklerini düzenleyerek katmanların boyutunu, şeklini, rengini ve konumunu veya bağımlılıkların rengini değiştirebilirsiniz.  
   
-##  <a name="Codemaps"></a>Desenleri ve bir kod Haritası bağımlılıkları Bul  
+##  <a name="Codemaps"></a> Desenleri ve bir kod Haritası bağımlılıkları Bul  
  Bağımlılık diyagramları oluşturulurken, aynı zamanda oluşturabilirsiniz **kod eşlemeleri**. Bu diyagramları kodu keşfetmenize sırada desenleri ve bağımlılıkları keşfetmenize yardımcı olabilir. Çözüm Gezgini, sınıf görünümü ve Nesne Tarayıcısı derlemeler, ad alanları ve genellikle de mevcut katmanlara karşılık gelen sınıflar - keşfetmek için kullanın. Kod eşlemeleri hakkında daha fazla bilgi için bkz:  
   
 -   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)  

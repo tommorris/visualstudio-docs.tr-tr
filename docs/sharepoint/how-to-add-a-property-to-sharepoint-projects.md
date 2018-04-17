@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: SharePoint projelerine özellik ekleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: SharePoint projelerine özellik ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a4318550e74d5324195de173659d96abaf952979
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fe3b94d7f2072565b2adc2ab7c3c9825ca21ad57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Nasıl yapılır: SharePoint Projelerine Özellik Ekleme
   Herhangi bir SharePoint projesine bir özellik eklemek için bir proje uzantısı kullanabilirsiniz. Özellik görünür **özellikleri** proje seçildiğinde penceresi **Çözüm Gezgini**.  
@@ -48,9 +47,9 @@ ms.lasthandoff: 01/10/2018
   
  Özellik değerleri, değişiklikleri kalıcı hale getirmek için **ayarlamak** erişimciler özellikleri için aşağıdaki API'leri kullanın:  
   
--   `CustomUserFileProperty`kullanan <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> özellik değerini proje kullanıcı seçeneği dosyasına kaydedin.  
+-   `CustomUserFileProperty` kullanan <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> özellik değerini proje kullanıcı seçeneği dosyasına kaydedin.  
   
--   `CustomProjectFileProperty`kullanan <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> değerini proje dosyasına kaydetmek için yöntem.  
+-   `CustomProjectFileProperty` kullanan <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> değerini proje dosyasına kaydetmek için yöntem.  
   
  Bu dosyalardaki kalıcı veriler hakkında daha fazla bilgi için bkz: [SharePoint Proje sisteminin uzantılarında veri kaydetme](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   

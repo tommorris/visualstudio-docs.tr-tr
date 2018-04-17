@@ -1,12 +1,10 @@
 ---
 title: SharePoint Proje hizmetini kullanma | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: aa1bc8d5853e8f8f3253273aff4dd8eb0d44e177
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: efe2e2073ead64bfbc697b9d6c824066af947580
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-sharepoint-project-service"></a>SharePoint Proje Hizmetini Kullanma
   SharePoint Proje sisteminin proje sisteme ilgili görevleri gerçekleştirmek için kullanabileceğiniz bir proje hizmeti içerir. Proje hizmeti bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> nesnesi.  
@@ -33,17 +32,17 @@ ms.lasthandoff: 01/10/2018
   
 |Görev|Kullanılacak üye|  
 |----------|-------------------|  
-|Visual Studio'da açık olan herhangi bir SharePoint projeye erişin.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Projects%2A>özellik.|  
-|Tüm SharePoint proje öğesi türleri (yerleşik ve özel proje öğesi türleri dahil) kullanılabilir erişebilirsiniz.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ProjectItemTypes%2A>özellik.|  
-|Tüm SharePoint projelerine (yerleşik ve özel dağıtım adımları dahil) kullanılabilir dağıtım adımları erişin.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.DeploymentSteps%2A>özellik.|  
-|Bir SharePoint Proje kodda bir geliştirici refactors olduğunda ortaya erişim olayları.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.CodeRefactoringEvents%2A>özellik.|  
-|Özel bir yürütme *SharePoint komutu* SharePoint sunucusu nesne modeline çağırır. SharePoint komutları hakkında daha fazla bilgi için bkz: [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A>özellik.|  
-|SharePoint Proje sistem Visual Studio Otomasyon nesne modeli veya tümleştirme nesne modeli, bir tür için bir tür dönüştürme ve tersi. Daha fazla bilgi için bkz: [dönüştürme arasında SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A>yöntem.|  
-|İletileri yazma **çıkış** penceresi veya **hata listesi** Visual Studio'daki.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Logger%2A>özellik.|  
-|Visual Studio'da kullanılabilir olan diğer hizmetler erişir.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ServiceProvider%2A>özellik.|  
-|Çözüm hata ayıklama için kullanılan yerel SharePoint sitesi yükleme klasörü yolunu alır.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointInstallPath%2A>özellik.|  
-|Belirlemek olup olmadığını [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] veya [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] bilgisayara yüklendi.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.IsSharePointInstalled%2A>özellik.|  
-|Bir özellik veya bir SharePoint çözüm paketi doğrulayın.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.PackageValidationProvider%2A>özellik.|  
+|Visual Studio'da açık olan herhangi bir SharePoint projeye erişin.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Projects%2A> özellik.|  
+|Tüm SharePoint proje öğesi türleri (yerleşik ve özel proje öğesi türleri dahil) kullanılabilir erişebilirsiniz.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ProjectItemTypes%2A> özellik.|  
+|Tüm SharePoint projelerine (yerleşik ve özel dağıtım adımları dahil) kullanılabilir dağıtım adımları erişin.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.DeploymentSteps%2A> özellik.|  
+|Bir SharePoint Proje kodda bir geliştirici refactors olduğunda ortaya erişim olayları.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.CodeRefactoringEvents%2A> özellik.|  
+|Özel bir yürütme *SharePoint komutu* SharePoint sunucusu nesne modeline çağırır. SharePoint komutları hakkında daha fazla bilgi için bkz: [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> özellik.|  
+|SharePoint Proje sistem Visual Studio Otomasyon nesne modeli veya tümleştirme nesne modeli, bir tür için bir tür dönüştürme ve tersi. Daha fazla bilgi için bkz: [dönüştürme arasında SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> yöntem.|  
+|İletileri yazma **çıkış** penceresi veya **hata listesi** Visual Studio'daki.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Logger%2A> özellik.|  
+|Visual Studio'da kullanılabilir olan diğer hizmetler erişir.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ServiceProvider%2A> özellik.|  
+|Çözüm hata ayıklama için kullanılan yerel SharePoint sitesi yükleme klasörü yolunu alır.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointInstallPath%2A> özellik.|  
+|Belirlemek olup olmadığını [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] veya [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] bilgisayara yüklendi.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.IsSharePointInstalled%2A> özellik.|  
+|Bir özellik veya bir SharePoint çözüm paketi doğrulayın.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.PackageValidationProvider%2A> özellik.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   

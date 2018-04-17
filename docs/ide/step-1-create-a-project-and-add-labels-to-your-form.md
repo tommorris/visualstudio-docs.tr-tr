@@ -1,25 +1,21 @@
 ---
-title: "1. adım: Proje oluşturma ve formunuza etiketler ekleme | Microsoft Docs"
-ms.custom: 
+title: '1. adım: Proje oluşturma ve formunuza etiketler ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
-caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab50592e345a54853e9cfbd95d0b9bd1bc86d794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 992541fe80067a6255ae0909edba0bf8f239c004
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1. Adım: Proje Oluşturma ve Formunuza Etiketler Ekleme
 Bu test geliştirme ilk adımlar, olarak projesi oluşturun ve etiketler, bir düğmeyi ve diğer denetimlerin bir forma ekleyin. Ayrıca, eklediğiniz her denetim için özellikler de ayarlayın. Proje formu denetimlerini içerir ve (sonraki öğreticide) kodu. Test sorunları etiketlerini göster düğmesini test başlatır ve diğer denetimlerin test yanıtlar ve test tamamlamak için kalan süreyi gösterir.  
@@ -104,11 +100,11 @@ Yazı tipi boyutunu gösteren Özellikler penceresi
   
      Boşluk ve bunları satır ayırıcı satırları kullanabilirsiniz.  
   
-11. İkinci etiketin değerini **metin** özelliğine  **+**  (artı işareti).  
+11. İkinci etiketin değerini **metin** özelliğine **+** (artı işareti).  
   
 12. Üçüncü etiketin değerini **(ad)** özelliğine **plusRightLabel**.  
   
-13. Dördüncü etiketin değerini **metin** özelliğine  **=**  (eşittir işareti).  
+13. Dördüncü etiketin değerini **metin** özelliğine **=** (eşittir işareti).  
   
 14. Ekleme bir **NumericUpDown** Denetim Araç Kutusu'ndan, yazı tipi boyutunu ayarlamak **18**ve genişliğini ayarlamak **100**.  
   
@@ -133,7 +129,7 @@ Matematik testi ilk satırının
   
      Ayırıcı satırları iki satır arasındaki yeterli uzaklığı vermek için kullanabilirsiniz.  
   
-3.  Değerini değiştirme **metin** ikinci label özelliği  **-**  (eksi).  
+3.  Değerini değiştirme **metin** ikinci label özelliği **-** (eksi).  
   
 4.  İlk soru işareti etiketi adı **minusLeftLabel**.  
   

@@ -1,27 +1,24 @@
 ---
-title: Python için Web Uygulama Şablonları | Microsoft Docs
+title: Python için Web Uygulama Şablonları
 description: Visual Studio şablonları Python yapılandırmaları hata ayıklama ve Azure App Service'te yayımlama da dahil olmak üzere Bottle, Flask ve Django çerçeveler kullanılarak yazılmış web uygulamaları için genel bakış.
 ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c406aec010e45ea37de15366adfd014b5aa74f6b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 76204573b5717e9424fc9444e4f918bae8c93d81
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="python-web-application-project-templates"></a>Python web uygulaması proje şablonları
 
@@ -103,7 +100,7 @@ Piramit uygulamalar, kullanarak şu anda en iyi oluşturulur `pcreate` komut sat
 
 Paylaşma veya başka bir framework ayarlarını isteği istiyorsanız açmak istediğiniz başka bir framework ayarlarını varsa bir [GitHub sorunu](https://github.com/Microsoft/PTVS/issues).
 
-## <a name="publishing-to-azure-app-service"></a>Azure uygulama hizmeti yayımlama
+## <a name="publishing-to-azure-app-service"></a>Azure App Service’e yayımlama
 
 Azure uygulama hizmeti yayımlamak için birincil iki yolu vardır. İlk olarak, kaynak denetiminden dağıtım diğer diller için olduğu gibi aynı şekilde açıklandığı gibi kullanılabilir [Azure belgelerine](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/). Doğrudan Visual Studio'dan yayımlamak için projeye sağ tıklayın ve seçin **Yayımla**:
 

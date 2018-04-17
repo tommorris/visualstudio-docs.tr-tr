@@ -1,24 +1,22 @@
 ---
-title: "Olay işleyicileri Model dışındaki değişiklikleri yaymak | Microsoft Docs"
-ms.custom: 
+title: Olay işleyicileri Model dışındaki değişiklikleri yaymak | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8b5c957fbc3ae5eb3e71f087c57cbf07188de2ff
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c91264d459648315fa7ce2c0d58651383ea9edd2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Değişiklikleri Modelin Dışına Yayan Olay İşleyicileri
 Görselleştirme ve modelleme SDK, depolama olmayan değişkenleri, dosyaları, diğer depoları veya başka modellerinin gibi mağazasının dışında bir kaynağa değişiklikleri yaymak için depolama olay işleyicileri tanımlayabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uzantıları. Mağaza olay işleyicileri tetikleme olayın oluştuğu işlem sonunda yürütülür. Bunlar, ayrıca bir geri alma veya yineleme işlemi yürütülür. Bu nedenle, depolama kurallarından farklı olarak, depolama olayların deponun dışında olan değerleri güncelleştirmek için en kullanışlıdır. Bir sınıfa dinlemek için kayıtlı .NET olaylarının tersine deposu olay işleyicileri: her örneği için ayrı bir işleyici kaydetmeniz gerekmez. Değişiklikleri yürütmek için farklı yollar arasında seçim yapma hakkında daha fazla bilgi için bkz: [yanıtlama ve yayılıyor değişiklikleri](../modeling/responding-to-and-propagating-changes.md).  
@@ -29,13 +27,13 @@ Görselleştirme ve modelleme SDK, depolama olmayan değişkenleri, dosyaları, 
   
 1.  İzlemek istediğiniz olay türünü seçin. Tam bir listesi için özelliklerine bakmak <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Her bir özellik olay türüne karşılık gelir. En sık türler olay kullanılır:  
   
-    -   `ElementAdded`-bir model öğesi harekete, ilişki bağlantısı, Şekil veya bağlayıcı oluşturulur.  
+    -   `ElementAdded` -bir model öğesi harekete, ilişki bağlantısı, Şekil veya bağlayıcı oluşturulur.  
   
     -   ElementPropertyChanged - tetiklenen değerini bir `Normal` etki alanı özelliği değiştirildi. Yalnızca eski ve yeni değerler eşit değilse olay tetiklenir. Olay hesaplanan ve özel depolama özelliklerine uygulanamaz.  
   
          İlişki bağlantılar karşılık gelen rol özellikleri uygulanamaz. Bunun yerine, kullanın `ElementAdded` etki alanı ilişkisinin izlemek için.  
   
-    -   `ElementDeleted`-bir model öğesi sonra tetiklenen, ilişki, Şekil veya bağlayıcı silinmiş olabilir. Öğesinin özellik değerlerini erişmeye devam edebilirsiniz, ancak hiçbir ilişki diğer öğelere sahip olur.  
+    -   `ElementDeleted` -bir model öğesi sonra tetiklenen, ilişki, Şekil veya bağlayıcı silinmiş olabilir. Öğesinin özellik değerlerini erişmeye devam edebilirsiniz, ancak hiçbir ilişki diğer öğelere sahip olur.  
   
 2.  İçin bir parçalı sınıf tanımı eklemek *YourDsl *** DocData** ayrı kod dosyasında **DslPackage** projesi.  
   
@@ -43,7 +41,7 @@ Görselleştirme ve modelleme SDK, depolama olmayan değişkenleri, dosyaları, 
   
 4.  Geçersiz kılma `OnDocumentLoaded()` işleyici kaydetmek için. Birden fazla işleyici varsa, bunların tümü aynı yerde kaydedebilirsiniz.  
   
- Kayıt kodu konumunu kritik değildir. `DocView.LoadView()`Alternatif bir konum değil.  
+ Kayıt kodu konumunu kritik değildir. `DocView.LoadView()` Alternatif bir konum değil.  
   
 ```  
 using System;  
@@ -174,7 +172,7 @@ private static void AlbumTitleAdjuster(object sender,
 ## <a name="store-event-types"></a>Mağaza olay türleri  
  Her olay türü Store.EventManagerDirectory koleksiyonunda karşılık gelir. Ekleyip olay işleyicileri dilediğiniz zaman kaldırabilirsiniz, ancak belge yüklendiğinde bunları eklemek için normal.  
   
-|`EventManagerDirectory`Özellik adı|Yürütülmesi|  
+|`EventManagerDirectory` Özellik adı|Yürütülmesi|  
 |-------------------------------------------|-------------------|  
 |ElementAdded|Bir etki alanı sınıfı, etki alanı ilişkisinin, şekil, bağlayıcı veya diyagramı örneği oluşturulur.|  
 |ElementDeleted|Bir model öğesi deponun öğesi Directory'den kaldırıldı ve artık kaynak ya da herhangi bir ilişki hedefi değil. Öğe gerçekte bellekten silinmez, ancak gelecekteki bir geri alma durumunda korunur.|  

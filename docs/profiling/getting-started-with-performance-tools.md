@@ -1,28 +1,24 @@
 ---
-title: "Performans araçları ile çalışmaya başlama | Microsoft Docs"
-ms.custom: 
+title: Performans araçları ile çalışmaya başlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, performance
 - getting started, profiling tools
 ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e63be8c89de677cf1cb644db2fcdecf4a20399b0
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: d0a7aa099328c014ffe1937fc3642aa42462ff8f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-performance-tools"></a>Performans araçları ile çalışmaya başlama
 Bu bölümde, kavramlar ve toplamak, görüntülemek ve Visual Studio performans araçları kullanarak kod performansını analiz uygulayacağınız görevlerinin genel bakış sağlar.  

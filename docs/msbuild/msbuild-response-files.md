@@ -1,12 +1,9 @@
 ---
-title: "MSBuild yanıt dosyaları | Microsoft Docs"
-ms.custom: 
+title: MSBuild yanıt dosyaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,20 +15,19 @@ helpviewer_keywords:
 - MSBuild, .rsp files
 - .rsp files
 ms.assetid: 9f53987b-20ee-470a-ab62-fce997bb5e15
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a9f7b6e1456c511e70937ac6a1cff23dad30d0
-ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
+ms.openlocfilehash: c619a21588ed2026e360e01be05af7012cf1304b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msbuild-response-files"></a>MSBuild Yanıt Dosyaları
-Yanıt (.rsp) dosyaları MSBuild.exe komut satırı anahtarları içeren metin dosyalarıdır. Her anahtar ayrı bir satırda veya tüm anahtarları tek bir satırda olabilir. Yorum Satırları ile başlayan bir  **#**  simgesi.  **@**  Anahtar MSBuild.exe için başka bir yanıt dosyası geçirmek için kullanılır.  
+Yanıt (.rsp) dosyaları MSBuild.exe komut satırı anahtarları içeren metin dosyalarıdır. Her anahtar ayrı bir satırda veya tüm anahtarları tek bir satırda olabilir. Yorum Satırları ile başlayan bir **#** simgesi. **@** Anahtar MSBuild.exe için başka bir yanıt dosyası geçirmek için kullanılır.  
   
 ## <a name="msbuildrsp"></a>MSBuild.rsp
 Otomatik yanıt dosyası kullanan MSBuild.exe otomatik olarak bir proje oluşturulurken bir özel .rsp dosyasıdır. Bu dosya, MSBuild.rsp, MSBuild.exe ile aynı dizinde olmalıdır, aksi takdirde, bulunamayacaktır. MSBuild.exe için varsayılan komut satırı anahtarları belirtmek için bu dosyayı düzenleyebilirsiniz. Örneğin, bir projeyi derleme her zaman aynı Günlükçü kullanırsanız, ekleyebileceğiniz **/logger** geçiş için MSBuild.rsp ve bir proje yerleşik her zaman MSBuild.exe Günlükçü kullanır.  

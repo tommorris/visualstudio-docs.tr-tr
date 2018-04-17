@@ -2,24 +2,20 @@
 title: Renkleri ve Visual Studio için stil | Microsoft Docs
 ms.custom: ''
 ms.date: 07/31/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af9522d5773fd74eabcd3b7fce84b7bd56e0cd2a
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 5cee3ec1308ee103d279a0d77ded4092e4ccf9b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Renkleri ve Visual Studio için stil oluşturma
 ## <a name="using-color-in-visual-studio"></a>Visual Studio'da renk kullanma
@@ -53,7 +49,7 @@ En iyi kullanıcı Arabirimi öğelerine uygun yöntemi seçin.
 | Bir ayrı özellik ya da Özellikler grubunu olduğunu ve benzer öğelerin paylaşılan hiçbir rengi. | **Özel renkler** | Bir alana özeldir ve diğer kullanıcı Arabirimi ile paylaşılacak düşünülmemiştir renk belirteci adları |
 | Kullanıcı Arabirimi veya içeriği (örneğin, metin düzenleyiciler veya özelleştirilmiş Tasarımcı windows için) özelleştirmek son kullanıcı izin vermek istediğiniz. | **Son kullanıcı özelleştirme**<br /><br />**(Araçlar &gt; Seçenekleri iletişim kutusu)** | "Yazı tiplerini ve renkleri" sayfasında tanımlanan ayarlar **Araçları &gt; seçenekleri** iletişim kutusu veya bir kullanıcı Arabirimi özelliğinin belirli bir özel sayfa. |
 
-### <a name="visual-studio-themes"></a>Visual Studio themes
+### <a name="visual-studio-themes"></a>Visual Studio temaları
 Visual Studio özellikleri üç farklı renk temaları: açık, koyu ve mavi. Ayrıca, erişilebilirlik için tasarlanmış bir sistem genelinde renk temasını olan yüksek karşıtlık modunda algılar.
 
 Kullanıcılar kendi Visual Studio'nun ilk kullanım sırasında bir tema seçmek için istenir ve Temalar giderek daha sonra geçiş yapabilir **Araçları &gt; seçenekleri &gt; ortam &gt; genel** ve yeni bir temayı seçme "renk temasını" açılır menü.
@@ -398,7 +394,7 @@ Bunu yapmak için bir VSPackage gerekir:
 
 -   **IDE tarafından oluşturulan olayları ele** uygulayarak [IVsFontAndColorEvents](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) arabirimi. IDE yazı tiplerini ve renkleri sayfasının kullanıcı değişiklikleri izleyen uygun yöntemini çağırır. Örneğin, çağıran [OnFontChanged](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) yeni bir yazı tipi seçtiyseniz yöntemi.
 
- **OR**
+ **VEYA**
 
 -   **IDE değişiklikleri için yoklama**. Bu sistem uygulanan yapılabilir [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) arabirimi. Öncelikle desteği için Kalıcılık, ancak [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) yöntemi görüntü öğeleri için yazı tipi ve renk bilgi elde edebilirsiniz. Yazı tipi ve renk ayarları hakkında daha fazla bilgi için MSDN makalesine bakın [erişme depolanan yazı tipi ve renk ayarlarını](../accessing-stored-font-and-color-settings.md).
 

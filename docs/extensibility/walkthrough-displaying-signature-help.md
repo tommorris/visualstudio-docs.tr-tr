@@ -1,27 +1,23 @@
 ---
-title: "İzlenecek yol: İmza Yardım görüntüleme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: İmza Yardım görüntüleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced0eb5d3545a75ee31cff55d0e4fb9dab8c8bcb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a714fdb268f44fd2a65d04184d899ced3de53bb9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-signature-help"></a>İzlenecek yol: İmza Yardım görüntüleme
 İmza Yardım (olarak da bilinen *parametre bilgisi*) kullanıcı parametre listesi başlangıç karakteri (genellikle bir açma ayracı) yazdığında bir yöntem imzası ipucunda görüntüler. Bir parametre ve parametre ayırıcı (genellikle bir virgül) yazılan gibi araç ipucu sonraki parametrenin kalın olarak göstermek üzere güncelleştirilir. Bir dil hizmeti bağlamında imza yardımcı tanımlayabilirsiniz kendi dosya adı uzantısı ve içerik türünü tanımlayın ve yalnızca bu tür için imza Yardımı'nı görüntülemek veya varolan bir içerik türü (örneğin, "metin") için imza Yardım görüntüleyebilirsiniz. Bu kılavuzda "metin" içerik türü için imza Yardımı'nı görüntülemek nasıl gösterir.  

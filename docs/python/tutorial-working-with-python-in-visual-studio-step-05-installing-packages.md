@@ -1,27 +1,24 @@
 ---
-title: Python ile 5. adım paketlerini yükleme çalışma | Microsoft Docs
+title: Python paketlerini yükleme, 5. adım ile çalışma
 description: Python paket Python ortamında yönetmek için Visual Studio'nun özellikleri gösteren Visual Studio içinde çalışmak için 5. adım çekirdek öğreticinin.
 ms.custom: mvc
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 509c601c6f3cf31cb7772182e0ecb771c232b8a6
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 31e7bff4eec7939481a6fa6091fdc1333d6ac646
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>5. adım: Python ortamınızda paketleri yükleniyor
 

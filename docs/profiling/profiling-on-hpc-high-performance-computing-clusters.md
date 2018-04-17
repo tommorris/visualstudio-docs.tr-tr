@@ -1,13 +1,10 @@
 ---
-title: "Profil oluşturma HPC (yüksek performanslı hesaplama) kümelerinde | Microsoft Docs"
-ms.custom: 
+title: Profil oluşturma HPC (yüksek performanslı hesaplama) kümelerinde | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
 - vs.performance.hpc.wizard.summary
@@ -22,14 +19,14 @@ helpviewer_keywords:
 - HPC profiling
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 148610eadf05c26247ad813f7be733fade6d4a48
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: ba816c7d69d148aab498076d29cbaaf33a79026b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>HPC (Yüksek Performanslı Hesaplama) Kümelerinde Profil Oluşturma
 
@@ -51,7 +48,7 @@ Bir HPC işlem düğümünde profil için aşağıdakileri yapmanız gerekir:
 
     1. `clusrun /all /scheduler:` *% HeadNode % FxPath %* `/q /norestart`
 
-    2. `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
+    2. `clusrun /all /scheduler:` *% HeadNode %* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
 
     3. `clusrun /all /scheduler:` *% HeadNode % ProfilerPath %* `/q /norestart`
 
@@ -145,7 +142,7 @@ HPC profili oluşturma Sihirbazı'nı performans oturum özellikleri sayfasını
 |**Proje adı**|Geçerli adını [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] proje ya da çözüm.|
 |**Profil Oluşturucu durdurulduğunda temizleme**|Doğru olduğunda, yürütme dizinine dağıtılan ikili dosyaları kaldırır. Bu adımda, dosyalar ve dizinler kullanıcı program tarafından oluşturulan kaldırılmaz. Dağıtım dizini ve yürütme dizinine IDE tarafından oluşturulmuşsa IDE bunları kaldırmak çalışır ancak IDE tarafından dağıtılan dosyalarınız varsa bunu yapmaz.|
 |**Dağıtmak için ek dosyalar**|İşlem düğümü üzerinde dağıtmak için ek dosyalardan noktalı virgülle ayrılmış listesini belirtir. Üç nokta düğmesini tıklatabilirsiniz (**...** ) iletişim kutusunu kullanarak birden çok dosya seçin.|
-|**Mpiexec command**|MPI uygulama başladığında uygulama belirtir. Varsayılan değer **mpiexec.exe**|
+|**Mpiexec komutu**|MPI uygulama başladığında uygulama belirtir. Varsayılan değer **mpiexec.exe**|
 |**Mpiexec bağımsız değişkenleri**|Mpiexec.exe komutuna geçirilecek bağımsız değişkenleri belirtir.|
 |**İstenen küme düğümlerinde**|Uygulamayı çalıştırmak için kümedeki düğüm sayısını belirtir.|
 |**CRT dosyaları dağıtma**|Doğru olduğunda, C/C++ çalışma zamanı kümede dağıtır.|

@@ -1,23 +1,21 @@
 ---
-title: "Eğitmen 1: Resim Görüntüleyici oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'Eğitmen 1: Resim Görüntüleyici oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
-caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b0537b1f335d46854dd43727ade695909db421ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0061ca517fd75fbfe76fbb4c47431e3438a7f614
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Eğitmen 1: Resim Görüntüleyici Oluşturma
 Bu öğreticide, bir dosyadan bir resim yükler ve bir pencerede görüntüleyen bir program oluşturun. Düğmelerin ve resim kutularının formunuzda, bunların özelliklerini ayarlamak ve sorunsuz formu yeniden boyutlandırmak için kapsayıcılar kullanma gibi denetimleri sürükleyin öğrenin. Ayrıca, kod yazmaya başlayın. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:  

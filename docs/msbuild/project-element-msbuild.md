@@ -1,12 +1,9 @@
 ---
-title: "Proje öğesi (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: Proje öğesi (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Project
 dev_langs:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - <Project> element [MSBuild]
 - Project element [MSBuild]
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf347f135368b2452170e7ebfa9c987ed19adf77
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 334ec27a41bbfa9e8dcdde274b968ed8a490ad3a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-element-msbuild"></a>Proje Öğesi (MSBuild)
 Gerekli kök öğesinin bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.  
@@ -66,13 +62,13 @@ Gerekli kök öğesinin bir [!INCLUDE[vstecmsbuild](../extensibility/internals/i
 |`Sdk`|İsteğe bağlı öznitelik. <br /><br /> Örtük oluşturmak için kullanılacak isteğe bağlı bir sürüm ve SDK adını .proj dosyasına eklenen deyimleri içeri aktarın. Hiçbir sürüm belirtilmezse, MSBuild varsayılan sürüm çözümlemeye çalışır.  Örneğin, `<Project Sdk="Microsoft.NET.Sdk" />` veya `<Project Sdk="My.Custom.Sdk/1.0.0" />`.|  
 |`ToolsVersion`|İsteğe bağlı öznitelik.<br /><br /> MSBuild araç takımı sürümü $(MSBuildBinPath) ve $(MSBuildToolsPath) için değerleri belirlemek için kullanır.|  
 |`TreatAsLocalProperty`|İsteğe bağlı öznitelik.<br /><br /> Genel olarak kabul edilebilir olmaz özellik adları. Bu öznitelik, belirli komut satırı özelliklerini bir proje veya hedefleri dosyasını ve tüm sonraki almalar ayarlama özelliği değerler önlemiş olursunuz. Noktalı virgülle (;) birden çok özelliklerdir ayrılmış.<br /><br /> Normalde, genel özellikler proje veya hedefleri dosyasında ayarlanan özellik değerlerini geçersiz kılar. Özellik listelenmişse `TreatAsLocalProperty` değer, genel özellik değerini değil geçersiz bu dosyayı ve sonraki tüm içeri aktarmalar ayarlanmış olan özellik değerlerini. Daha fazla bilgi için bkz: [nasıl yapılır: farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Not:** genel özelliklerini kullanarak bir komut isteminde set **/property** (veya **/p**) geçin. Ayrıca ayarlayın veya birden çok proje derleme alt projeler için genel özellikleri kullanarak değiştirme `Properties` MSBuild görevi özniteliğidir. Daha fazla bilgi için bkz: [MSBuild görevi](../msbuild/msbuild-task.md).|  
-|`Xmlns`|İsteğe bağlı öznitelik.<br /><br /> Belirtildiğinde, `xmlns` özniteliği "http://schemas.microsoft.com/developer/msbuild/2003" değerine sahip olmalıdır.|  
+|`Xmlns`|İsteğe bağlı öznitelik.<br /><br /> Belirtildiğinde, `xmlns` öznitelik değeri olmalıdır "http://schemas.microsoft.com/developer/msbuild/2003".|  
 
 ### <a name="child-elements"></a>Alt Öğeler  
 
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Seçin](../msbuild/choose-element-msbuild.md)|İsteğe bağlı öğe.<br /><br /> Bir grubu seçmek için alt öğeler değerlendirir `ItemGroup` öğeleri ve/veya `PropertyGroup` değerlendirmek için öğeleri.|  
+|[seçin](../msbuild/choose-element-msbuild.md)|İsteğe bağlı öğe.<br /><br /> Bir grubu seçmek için alt öğeler değerlendirir `ItemGroup` öğeleri ve/veya `PropertyGroup` değerlendirmek için öğeleri.|  
 |[İçeri aktarma](../msbuild/import-element-msbuild.md)|İsteğe bağlı öğe.<br /><br /> Başka bir proje dosyasını içeri aktarmak bir proje dosyası sağlar. Sıfır veya daha fazla olabilir `Import` proje öğelerinde.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|İsteğe bağlı öğe.<br /><br /> Grouping öğesi tek tek öğelerin. Öğelerini belirtilen kullanarak [öğesi](../msbuild/item-element-msbuild.md) öğesi. Sıfır veya daha fazla olabilir `ItemGroup` proje öğelerinde.|  
 |[ProjectExtensions](../msbuild/projectextensions-element-msbuild.md)|İsteğe bağlı öğe.<br /><br /> Kalıcı olmayan bir yol sağlar[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bilgilerinde bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası. Sıfır veya bir olabilir `ProjectExtensions` proje öğelerinde.|  

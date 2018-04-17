@@ -1,10 +1,8 @@
 ---
-title: "Bağımlılık diyagramları ile kod doğrulama | Microsoft Docs"
-ms.custom: 
+title: Bağımlılık diyagramları ile kod doğrulama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, validating
 - validation, dependency diagrams
@@ -19,15 +17,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 484afcd70717162719e9eaf8ace294cb1f71cbcd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cd799e5114c64b075592ddbe35670907fc81fa9c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Bağımlılık diyagramları ile kod doğrulama
 
@@ -92,21 +90,21 @@ Visual Studio'nun bu sürümünde, gerçek zamanlı olarak bağımlılık doğru
 
 * Yeni bir bağımlılık doğrulama proje Tetikleyicileri project güncelleştirmesi ekleniyor. 
   
-##  <a name="SupportsValidation"></a>Bir öğeyi doğrulama destekleyip desteklemediğini görmek  
+##  <a name="SupportsValidation"></a> Bir öğeyi doğrulama destekleyip desteklemediğini görmek  
  Web siteleri, Office belgeleri, düz metin dosyaları ve birden çok uygulama arasında paylaşılan projelerin dosyalarını Katmanları bağlayabilirsiniz, ancak doğrulama işlemi bunları içermez. Doğrulama hataları, aralarında hiçbir bağımlılığın görünmediği ayrı katmanlara bağlanmış projelere veya derlemelere olan başvurular için görünmez. Kod bu başvuruları kullanmazsa böyle başvurular bağımlılık olarak düşünülmez.  
   
 1.  Bir veya daha fazla katmanları bağımlılık diyagramda seçin, seçiminize sağ tıklayın ve ardından **bağlantıları görüntüleme**.  
   
 2.  İçinde **Katman Gezgini**, bakmak **doğrulamayı destekler** sütun. Değer false ise, öğe doğrulamayı desteklemez.  
   
-##  <a name="IncludeReferences"></a>Diğer .NET derlemelerini ve doğrulama için projeleri içerir  
+##  <a name="IncludeReferences"></a> Diğer .NET derlemelerini ve doğrulama için projeleri içerir  
  Bağımlılık diyagramı öğeleri sürüklediğinizde, karşılık gelen .NET derlemeleri veya projeleri başvurular otomatik olarak eklenen **katman başvuruları** modelleme projesi klasöründe. Bu klasör, doğrulama sırasında analiz edilen derlemeler ve projeler için başvurular içerir. Diğer .NET derlemelerini ve doğrulama projelerde bağımlılık diyagrama sürükleyerek olmadan el ile ekleyebilirsiniz.  
   
 1.  İçinde **Çözüm Gezgini**, modelleme projesine sağ tıklayın veya **katman başvuruları** klasörünü ve ardından **Başvuru Ekle**.  
   
 2.  İçinde **Başvuru Ekle** iletişim kutusu, derlemeleri veya projeleri seçin ve ardından **Tamam**.  
   
-##  <a name="ValidateManually"></a>El ile kod doğrulama  
+##  <a name="ValidateManually"></a> El ile kod doğrulama  
  Çözüm öğeleri bağlantılı bir açık bağımlılık diyagramı varsa, çalıştırabilirsiniz **doğrulama** diyagramdan kısayol komutu. Komut isteminde çalıştırmak için de kullanabilirsiniz **msbuild** komutunu **/p: ValidateArchitecture** özel özellik kümesine **doğru**. Örneğin, kodda değişiklik yaparken bağımlılık çakışmalarını önceden yakalayabilmek için düzenli olarak katman doğrulama gerçekleştirin.  
   
 #### <a name="to-validate-code-from-an-open-dependency-diagram"></a>Bir açık bağımlılık diyagramdan kodunu doğrulamak için   
@@ -163,7 +161,7 @@ Visual Studio'nun bu sürümünde, gerçek zamanlı olarak bağımlılık doğru
   
  Doğrulama hataları hakkında daha fazla bilgi için bkz: [anlayın ve çözümleme katman doğrulama hatalarını](#UnderstandingValidationErrors).  
   
-###  <a name="ManageErrors"></a>Doğrulama hatalarını yönetme  
+###  <a name="ManageErrors"></a> Doğrulama hatalarını yönetme  
  Geliştirme işlemi sırasında, doğrulama esnasında bildirilen çakışmaların bazılarını gizlemek isteyebilirsiniz. Örneğin, zaten çözdüğünüz veya özel senaryonuzla ilgili olmayan hataları gizlemek isteyebilirsiniz. Bir hatayı bastırmak, bir iş öğesi oturum açmak için iyi bir uygulama olur [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].  
   
 > [!WARNING]
@@ -182,7 +180,7 @@ Visual Studio'nun bu sürümünde, gerçek zamanlı olarak bağımlılık doğru
 |Tüm gizlenen hataları geri **hata listesi** penceresi|Herhangi bir yere sağ **hata listesi** penceresinde, noktasına **doğrulama hatalarını Yönet**ve ardından **tüm gizlenen hataları göster**.|  
 |Tüm gizlenen hataları gizleyin **hata listesi** penceresi|Herhangi bir yere sağ **hata listesi** penceresinde, noktasına **doğrulama hatalarını Yönet**ve ardından **tüm gizlenen Hataları Gizle**.|  
   
-##  <a name="ValidateAuto"></a>Otomatik olarak kod doğrulama  
+##  <a name="ValidateAuto"></a> Otomatik olarak kod doğrulama  
  Her yerel bir yapı çalıştırışınızda katman doğrulama gerçekleştirebilirsiniz. Takınınız Team Foundation Yapısı kullanıyorsa, özel bir MSBuild görevi oluşturarak belirtebileceğiniz geçitli iadelerle katman doğrulaması gerçekleştirebilir ve doğrulama hatalarını toplamak için yapı raporları kullanabilirsiniz. Geçitli iade etme yapıları oluşturmak için bkz: [değişiklikleri doğrulamak için Geçitli iade derleme süreci kullanma](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Kodu yerel yapı sırasında otomatik olarak doğrulamak için  
@@ -193,7 +191,7 @@ Visual Studio'nun bu sürümünde, gerçek zamanlı olarak bağımlılık doğru
 <ValidateArchitecture>true</ValidateArchitecture>  
 ```  
   
- \-veya -  
+ \- veya -  
   
 1.  İçinde **Çözüm Gezgini**, bağımlılık diyagramı veya diyagramları içeren modelleme projesine sağ tıklayın ve ardından **özellikleri**.  
   
@@ -229,14 +227,14 @@ Visual Studio'nun bu sürümünde, gerçek zamanlı olarak bağımlılık doğru
   
 -   [Bir çalışan yapı ilerlemeyi izleme](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
-##  <a name="TroubleshootingValidation"></a>Katman doğrulama sorunlarını giderme  
+##  <a name="TroubleshootingValidation"></a> Katman doğrulama sorunlarını giderme  
  Aşağıdaki tabloda katman doğrulama sorunları ve bunların çözümü açıklanmaktadır. Bu sorunlar, kod ve tasarım arasındaki çakışmalarla sonuçlanan hatalardan ayrılır. Bu hatalar hakkında daha fazla bilgi için bkz: [anlayın ve çözümleme katman doğrulama hatalarını](#UnderstandingValidationErrors).  
   
 |**Sorunu**|**Olası neden**|**Çözümleme**|  
 |---------------|------------------------|--------------------|  
 |Doğrulama hataları beklendiği gibi gerçekleşmez.|Doğrulama, Çözüm Gezgini'nde diğer bağımlılık diyagramlarından kopyalanır ve aynı modelleme projesinde olan bağımlılık diyagramlarındaki çalışmaz. Bu şekilde kopyalanır bağımlılık diyagramları özgün bağımlılık diyagram olarak aynı başvurular içeriyor.|Yeni bir bağımlılık diyagramı modelleme projesine ekleyin.<br /><br /> Öğeleri Kaynak bağımlılığı diyagramdan yeni diyagrama kopyalayın.|  
   
-##  <a name="UnderstandingValidationErrors"></a>Anlama ve katman doğrulama hatalarını çözme  
+##  <a name="UnderstandingValidationErrors"></a> Anlama ve katman doğrulama hatalarını çözme  
  Kod bir bağımlılık diyagramı karşı doğrulama kodu tasarım ile çakışıyor olduğunda doğrulama hataları oluşur. Örneğin, aşağıdaki durumlar doğrulama hatalarının oluşmasına neden olabilir:  
   
 -   Yapı yanlış katmana atanmış. Bu durumda, yapıyı taşıyın.  

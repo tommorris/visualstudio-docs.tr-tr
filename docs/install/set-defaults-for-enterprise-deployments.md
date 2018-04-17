@@ -2,11 +2,8 @@
 title: Visual Studio Kurumsal dağıtımlar için varsayılan değerleri ayarlama | Microsoft Docs
 description: Etki alanı ilkeleri ve diğer yapılandırma işlemleri Visual Studio'nun kurumsal dağıtım için.
 ms.date: 05/05/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - gpo
@@ -20,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 942d8993cc23df3cec6dc4aa81d36a75aed8b704
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 37ad99baceb80c248a702333df74b9a3e500c883
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Visual Studio kuruluş dağıtımları için Varsayılanlarını Ayarla
 
@@ -55,7 +52,7 @@ Aşağıdaki kayıt defteri değerlerini ayarlayabilirsiniz:
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` Veya `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Burada paket bildirimleri dizini ve isteğe bağlı, yükü depolanır. Nasıl okumak için [devre dışı bırakmak veya paket önbellek taşıma](disable-or-move-the-package-cache.md) daha fazla bilgi için. |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1. | Hatta yüklendikten sonra paket yükü tutun. Değer dilediğiniz zaman değiştirebilirsiniz. İlkeyi devre dışı bırakmak, tüm önbelleğe alınan paket yükü onarmak veya değiştirmek, örneğin kaldırır. Nasıl okumak için [devre dışı bırakmak veya paket önbellek taşıma](disable-or-move-the-package-cache.md) daha fazla bilgi için. |
-| `SharedInstallationPath` | `REG_SZ` Veya `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Visual Studio Örnekleri sürümleri arasında paylaşılan bazı paketler yüklendiği dizin. Değeri dilediğiniz zaman değiştirebilirsiniz, ancak gelecekte yükler yalnızca etkiler. Eski konuma yüklü ürünler taşınmaz gerekir veya doğru şekilde çalışmayabilir. |
+| `SharedInstallationPath` | `REG_SZ` Veya `REG_EXPAND_SZ` | % ProgramFiles (x86) %\Microsoft Visual Studio\Shared | Visual Studio Örnekleri sürümleri arasında paylaşılan bazı paketler yüklendiği dizin. Değeri dilediğiniz zaman değiştirebilirsiniz, ancak gelecekte yükler yalnızca etkiler. Eski konuma yüklü ürünler taşınmaz gerekir veya doğru şekilde çalışmayabilir. |
 
 > [!IMPORTANT]
 > Değiştirirseniz `CachePath` mevcut pakete taşımak gerekir yükler önbelleğe yeni konuma ve emin olun sonra kayıt defteri ilke güvenli şekilde `SYSTEM` ve `Administrators` üzerinde tam denetime sahiptir ve `Everyone` okuma erişimine sahip.

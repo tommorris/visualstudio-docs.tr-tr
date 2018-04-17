@@ -1,12 +1,10 @@
 ---
-title: "Visual Studio'da kod yapısını görüntüleme | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'da kod yapısını görüntüleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - object browser
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9a92948bf03cbe712d28962e82ac1840a5aafae7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52c924b56a1f33c0e1cbfef567442dd521db79e8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-the-structure-of-code"></a>Kod yapısını görüntüleme
 
@@ -64,7 +63,7 @@ Sınıf Görünümü araç aşağıdaki komutları içerir.
 |-|-|
 |**Yeni klasör**|Bir sanal klasör veya sık kullanılan öğeleri düzenleyebilirsiniz alt klasör oluşturur. Bunlar etkin çözüm (.suo) dosyasına kaydedilir. Yeniden adlandırma veya öğenin kodunuzda sildikten sonra sanal bir klasörde bir hata düğümü olarak görünebilir. Bu sorunu düzeltmek için hata düğümü silin. Bir öğeyi yeniden adlandırdıysanız, bu proje hiyerarşiden klasöre yeniden taşıyabilirsiniz.|
 |**Geri**|Daha önce seçilen öğeye gider.|
-|**İletme**|Sonraki seçilen öğeye gider.|
+|**İlet**|Sonraki seçilen öğeye gider.|
 |**Sınıf diyagramında görüntülemek** (yönetilen kod projeleri yalnızca)|Bir ad seçin veya yazın kullanılabilir duruma gelir **sınıf görünümü**. Bir ad alanı seçildiğinde, sınıf diyagramı içinde tüm türleri gösterilmektedir. Bir Türü seçildiğinde, sınıf diyagramı yalnızca o türünü gösterir.|
 
 ### <a name="class-view-settings"></a>Sınıf Görünümü Ayarları
@@ -128,7 +127,7 @@ Kısayol menüsünde **çağrı hiyerarşisi** penceresinde aşağıdaki komutla
 |**Kopyala**|Seçili düğümün (ancak, alt düğümleri) kopyalar.|
 |**Yenileme**|Bilgileri yeniler.|
 
-## <a name="BKMK_ObjectBrowser"></a>Nesne Tarayıcısı
+## <a name="BKMK_ObjectBrowser"></a> Nesne Tarayıcısı
 
 **Nesne Tarayıcısı** penceresi projelerinizde kodu açıklamalarını görüntüler.
 
@@ -208,7 +207,7 @@ Kısayol menüsünde **kod tanımı** penceresinde aşağıdakileri içerebilir:
 |**Testleri hata ayıklama**||
 |**Kesme noktası**|Bir kesme noktası (veya bir tracepoint) ekler.|
 |**İmleci çalıştırın**|Program imleç konumu için hata ayıklama modunda çalışır.|
-|**Kod parçacığında**||
+|**kod parçacığında**||
 |**Kesme**, **kopya**, **Yapıştır**||
 |**Ek Açıklama**||
 |**Anahat Oluşturma**|Standart anahat komutları.|

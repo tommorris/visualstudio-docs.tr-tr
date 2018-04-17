@@ -1,25 +1,23 @@
 ---
-title: "Dosya depolama ve XML serileştirme özelleştirme | Microsoft Docs"
-ms.custom: 
+title: Dosya depolama ve XML serileştirme özelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a15a331d465c2450f0f1e6230eac3415106e860b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2ca1b9f8e6261ae04217b0d74e13073a3683915c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dosya Depolamayı ve XML Serileştirmeyi Özelleştirme
 Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına özgü dil (DSL) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], bir XML dosyası oluşturulmuş veya güncelleştirilmiş. Dosya depolama modelinde yeniden oluşturmak için yeniden.  
@@ -144,13 +142,13 @@ Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına
   
     2.  Özellikler penceresinde ayarlayın **ad anahtarı** için `true`.  
   
--   \-veya -  
+-   \- veya -  
   
      Kullanarak yeni bir etki alanı sınıfı oluşturmak **adlı etki alanı sınıf** aracı.  
   
      Bu aracı adı olarak adlandırılan bir etki alanı özelliği var. yeni bir sınıf oluşturur. **Öğesi adını** ve **ad anahtarı** bu etki alanı özellik özelliklerini başlatılır `true`.  
   
--   \-veya -  
+-   \- veya -  
   
      Bir devralma ilişkisi etki alanı sınıfından bir bilinen ad anahtar özelliğine sahip başka bir sınıf oluşturun.  
   
@@ -275,7 +273,7 @@ Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına
 |Özel|Bu ayar **doğru** , bu etki alanı sınıfı için kendi seri hale getirme ve seri durumdan çıkarma kod yazmak istiyorsanız.<br /><br /> Çözümü derlemek ve ayrıntılı yönergeler bulmak için hataları inceleyin.|  
 |Etki alanı sınıfı|Bu sınıf veri düğümü uygulandığı etki alanı sınıf. Salt okunur.|  
 |Öğe adı|Bu sınıfın öğeler için XML düğüm adı. Varsayılan değer, etki alanı sınıf adı küçük sürümüdür.|  
-|Ad öznitelik adı|Başvuru içerecek şekilde ad öğelerinde kullanılan özniteliğin adı. Boşsa, anahtar özellik veya kimliği adı kullanılır.<br /><br /> Bu örnekte, "ad" dir:`<personMoniker name="/Mike Nash"/>`|  
+|Ad öznitelik adı|Başvuru içerecek şekilde ad öğelerinde kullanılan özniteliğin adı. Boşsa, anahtar özellik veya kimliği adı kullanılır.<br /><br /> Bu örnekte, "ad" dir:  `<personMoniker name="/Mike Nash"/>`|  
 |Ad öğe adı|Bu sınıf öğelerine başvuran adları için kullanılan xml öğesi adı.<br /><br /> Varsayılan değer "Ad" ile sonekine sınıf adı küçük bir sürümüdür. Örneğin, `personMoniker`.|  
 |Ad türü adı|Bu sınıfın öğelerine adlar için oluşturulan xsd türünün adı. XSD bulunduğu **Dsl\Generated kod\\\*Schema.xsd**|  
 |Kimliği serileştirme|TRUE ise, öğesi GUID'si dosyasına dahil edilir. Bu işaretlenen bir özellik varsa true olmalıdır **ad anahtarı** ve bu sınıf için başvuru ilişkileri DSL tanımlar.|  
@@ -300,7 +298,7 @@ Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
-|Has Custom Moniker|Bu oluşturmak ve bu ilişkinin çapraz takma ad çözme için kendi kodunuzu sağlamak istiyorsanız, true olarak ayarlayın.<br /><br /> Ayrıntılı yönergeler için çözümü derleme ve hata iletileri çift tıklayın.|  
+|Özel takma sahip|Bu oluşturmak ve bu ilişkinin çapraz takma ad çözme için kendi kodunuzu sağlamak istiyorsanız, true olarak ayarlayın.<br /><br /> Ayrıntılı yönergeler için çözümü derleme ve hata iletileri çift tıklayın.|  
 |Etki alanı ilişkisi|Bu seçenekler uygulandığı ilişki belirtir. Salt okunur.|  
 |Öğe atlayın|TRUE ise, kaynak role karşılık gelen XML düğümü şemadan atlanır.<br /><br /> Kaynak ve hedef sınıflarını arasında birden fazla ilişki varsa, bu rolü düğüm iki ilişki ait bağlantıları arasında ayırır. Bu nedenle, bu seçenek bu durumda ayarlamayın öneririz.|  
 |Rol öğe adı|Kaynak rolünden türetilmiş XML öğesi adını belirtir. Rol özellik adı varsayılan değerdir.|  

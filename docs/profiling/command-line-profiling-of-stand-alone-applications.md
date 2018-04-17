@@ -1,26 +1,24 @@
 ---
-title: "Bağımsız uygulamaların komut satırı profili oluşturma | Microsoft Docs"
-ms.custom: 
+title: Bağımsız uygulamaların komut satırı profili oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profillng tools,stand-alone applications
 - profling stand-alone applications
 ms.assetid: a47f2bf2-186d-4120-bb79-34e2f3a1ee42
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dd2b50ae03263cd072143481a91679663f126c53
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ba6fb365a6ac9818afe76cbab337757d4bffdda4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Bağımsız Uygulamaların Komut Satırından Profilinin Oluşturulması
 Bu bölümdeki yordamlar ve kullanarak tek başına (istemci) uygulamaları için performans verilerini toplamak için seçenekleri açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komut satırından profil oluşturma araçları.  

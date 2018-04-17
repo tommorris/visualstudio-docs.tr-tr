@@ -1,28 +1,26 @@
 ---
-title: "[Content_types] .xml dosyasının yapısı | Microsoft Docs"
-ms.custom: 
+title: '[Content_types] .xml dosyasının yapısı | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - content_types
 - content types
 - opc
 - vsix
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 08f1bb76f27f7ae0923eed43339f656c90f4856f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 38e65f484411abcfb2acd78b124b77ff3f2c49cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types] .xml dosyasının yapısı
 VSIX paketi içerik türleri hakkında bilgi içerir. Paketi yüklemek için Visual Studio [Content_Types] .xml dosyası kullanır, ancak dosya yüklemez.  
@@ -49,7 +47,7 @@ VSIX paketi içerik türleri hakkında bilgi içerir. Paketi yüklemek için Vis
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
-|http://schemas.openformats.org/Package/2006/Content-Types|İçerik türleri şema konumu.|  
+|http://schemas.openformats.org/package/2006/content-types|İçerik türleri şema konumu.|  
   
 ### <a name="child-elements"></a>Alt Öğeler  
  `Types` Öğesi, herhangi bir sayıda içerebilir `Default` öğeleri.  

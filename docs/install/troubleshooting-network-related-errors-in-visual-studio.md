@@ -3,12 +3,9 @@ title: Yüklediğinizde veya Visual Studio kullandığınızda ağ ile ilgili so
 description: ''
 ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -21,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5f1c07f709c1cdb8e20704dbea9cb5550b14b3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 2a2bf89073549d794e13e5907d4044a24b653656
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Yüklediğinizde veya Visual Studio kullandığınızda ağ ile ilgili sorun giderme
 Yüklediğinizde veya bir güvenlik duvarı veya proxy sunucunun Visual Studio'yu kullanma karşılaşabileceğiniz en tipik ağ veya proxy ilgili hataları biz çözümleri açıyor.
@@ -40,15 +37,15 @@ Bu hata genellikle kullanıcılar bir proxy sunucu üzerinden Internet'e bağlı
 
 - Visual Studio'yu yeniden başlatmayı sorunu çözmezse, proxy sunucusu için http kimlik bilgileri istenmez olabilir:&#47;&#47;go.microsoft.com adresleri ancak bunu yapar &#42;. visualStudio.com adresleri. Bu sunucular için Visual Studio tüm oturum açma senaryoları engellemesini kaldırmak için aşağıdaki URL'ler uygulamaları güvenilir listeye almayı göz önünde bulundurun:
 
-    - &#42;.windows.net
+    - &#42;. windows.net
 
     - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.com
+    - &#42;. visualstudio.com
 
-    - &#42;.microsoft.com
+    - &#42;. microsoft.com
 
-    - &#42;.live.com
+    - &#42;. live.com
 
 - Aksi takdirde http kaldırabilirsiniz:&#47;&#47;go.microsoft.com adres beyaz liste böylece http için proxy kimlik doğrulaması iletişim kutusu görüntülenir:&#47;&#47;go.microsoft.com adresi ve Visual Studio olduğunda sunucu uç noktaları yeniden.
 
@@ -100,9 +97,9 @@ Aşağıdaki URL'ler için bağlantılar sağlar:
 
 - &#42;. azurewebsites.net (Azure bağlantıları için)
 
-- &#42;.visualstudio.com
+- &#42;. visualstudio.com
 
-- cdn.vsassets.io (hosts content delivery network, or CDN, content)
+- CDN.vsassets.io (ana içerik teslim ağı veya CDN, içerik)
 
 - &#42;. gallerycdn.vsassets.io (ana bilgisayar VSTS uzantıları)
 

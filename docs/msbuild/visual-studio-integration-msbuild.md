@@ -1,12 +1,9 @@
 ---
-title: "Visual Studio tümleştirmesi (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: Visual Studio tümleştirmesi (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1495fa1ae7408874f2c1cfcede2ed495fea3f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 13a278a2206d7d2c5791a441552f30f196e925e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio Tümleştirmesi (MSBuild)
 Visual Studio konakları [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yüklemek ve yönetilen projeler derlemek için. Çünkü [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projesi, neredeyse her proje için sorumlu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] biçimi başarıyla kullanılabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]proje farklı bir aracı tarafından yönetilmiyor ve özelleştirilmiş derleme sürecinde sahip olsa bile.  
@@ -38,7 +34,7 @@ Visual Studio konakları [!INCLUDE[vstecmsbuild](../extensibility/internals/incl
  C++ projeleri hakkında daha fazla bilgi için bkz: [proje dosyalarını](/cpp/ide/project-files).  
   
 ## <a name="project-file-name-extensions"></a>Proje Dosya Adı Uzantıları  
- MSBuild.exe desen eşleştirme proje dosya adı uzantısını tanır. * proj. Ancak, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yalnızca bir alt kümesini projeye yükler dile özgü proje sistem belirlemek bu proje dosya adı uzantılarını tanır. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]bir dilden yok [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje sistemi tabanlı.  
+ MSBuild.exe desen eşleştirme proje dosya adı uzantısını tanır. * proj. Ancak, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yalnızca bir alt kümesini projeye yükler dile özgü proje sistem belirlemek bu proje dosya adı uzantılarını tanır. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir dilden yok [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje sistemi tabanlı.  
   
  Örneğin, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proje sistem .csproj dosyaları yükler ancak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .xxproj dosyasını yüklemek mümkün değil. Rastgele bir dilde kaynak dosyaları için bir proje dosyası olarak aynı uzantı kullanmalısınız [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] veya [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proje içinde yüklenecek dosyaları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
@@ -46,7 +42,7 @@ Visual Studio konakları [!INCLUDE[vstecmsbuild](../extensibility/internals/incl
  Tıklatarak **yapı** komutunu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] varsayılan hedef projede yürütülür. Genellikle, bu hedef aynı zamanda adlı `Build`. Seçme **yeniden** veya **temiz** komut aynı ada sahip bir hedef projede yürütme deneyecek. Tıklatarak **Yayımla** adlı bir hedef yürütecek `PublishOnly` projesinde.  
   
 ## <a name="configurations-and-platforms"></a>Yapılandırmalar ve Platformlar  
- Yapılandırmaları temsil içinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projeleri özelliklerine göre gruplandırılmış bir `PropertyGroup` içeren öğe bir `Condition` özniteliği. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Proje yapılandırmaları ve görüntülemek için platformlar listesini oluşturmak için bu koşullar arar. Bu liste başarılı biçimde koşulları aşağıdakine benzer bir biçimde olmalıdır:  
+ Yapılandırmaları temsil içinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projeleri özelliklerine göre gruplandırılmış bir `PropertyGroup` içeren öğe bir `Condition` özniteliği. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Proje yapılandırmaları ve görüntülemek için platformlar listesini oluşturmak için bu koşullar arar. Bu liste başarılı biçimde koşulları aşağıdakine benzer bir biçimde olmalıdır:  
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
@@ -127,9 +123,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Bul ve çıkış derlemesi başlatın ve hata ayıklayıcısını için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] özelliklere sahip olması `OutputPath`, `AssemblyName`, ve `OutputType` doğru tanımlanmadı. Hata ayıklayıcı yapı işlemi .pdb dosyasını oluşturmak derleyici neden değil, iliştirmek başarısız olur.  
   
 ## <a name="design-time-target-execution"></a>Tasarım Zamanı Hedef Yürütme  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir projeye yüklendiğinde hedefleri belirli adlarıyla yürütmek çalışır. Bu hedeflerde dahil `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, ve `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Bu hedeflerde derleyici IntelliSense sağlamak için başlatılabilir, hata ayıklayıcı başlatılabilir ve Çözüm Gezgini'nde görüntülenen başvuruları çözümlenebilir çalışır. Bu hedeflerde mevcut değilse, proje yük ve tasarım zamanı deneyimi ancak doğru şekilde derlenmesi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tam olarak işlevsel olmayacak.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir projeye yüklendiğinde hedefleri belirli adlarıyla yürütmek çalışır. Bu hedeflerde dahil `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, ve `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Bu hedeflerde derleyici IntelliSense sağlamak için başlatılabilir, hata ayıklayıcı başlatılabilir ve Çözüm Gezgini'nde görüntülenen başvuruları çözümlenebilir çalışır. Bu hedeflerde mevcut değilse, proje yük ve tasarım zamanı deneyimi ancak doğru şekilde derlenmesi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tam olarak işlevsel olmayacak.  
   
-##  <a name="BKMK_EditingProjects"></a>Visual Studio proje dosyalarını düzenleme  
+##  <a name="BKMK_EditingProjects"></a> Visual Studio proje dosyalarını düzenleme  
  Düzenlemek için bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doğrudan proje, proje dosyası Visual Studio XML düzenleyicisinde açın.  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Visual Studio'da bir proje dosyasının yüklemesini kaldırmak ve düzenlemek için  
@@ -155,10 +151,10 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Proje dosyaları ve proje dosyalarını tarafından içeri aktarılan dosyaların içeriğini önbelleğe alır. Yüklenen proje dosyası düzenlerseniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otomatik olarak değişikliklerin etkili olması için projeyi yeniden yüklemek isteyip istemediğinizi sorar. Ancak tarafından yüklenen bir proje alınan bir dosyayı düzenlerseniz, yeniden yükleme istemini olacaktır ve kaldırma ve el ile etkili değişiklikler yapmak için projeyi yeniden yükleyin.  
   
 ## <a name="output-groups"></a>Çıkış Grupları  
- Microsoft.Common.targets içinde tanımlanan birkaç hedefler biten adlara sahip `OutputGroups` veya `OutputGroupDependencies`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]proje çıktıları belirli listesini almak için bu hedeflerde çağırır. Örneğin, `SatelliteDllsProjectOutputGroup` hedef bir yapı oluşturur tüm uydu derlemelerinin bir liste oluşturur. Bu çıktı grupları, yayımlama ve dağıtım projesi için proje başvuruları gibi özellikler tarafından kullanılır. Bunları tanımlamayın projeleri yüklemek ve yapı içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ancak bazı özellikler çalışmayabilir.  
+ Microsoft.Common.targets içinde tanımlanan birkaç hedefler biten adlara sahip `OutputGroups` veya `OutputGroupDependencies`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje çıktıları belirli listesini almak için bu hedeflerde çağırır. Örneğin, `SatelliteDllsProjectOutputGroup` hedef bir yapı oluşturur tüm uydu derlemelerinin bir liste oluşturur. Bu çıktı grupları, yayımlama ve dağıtım projesi için proje başvuruları gibi özellikler tarafından kullanılır. Bunları tanımlamayın projeleri yüklemek ve yapı içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ancak bazı özellikler çalışmayabilir.  
   
 ## <a name="reference-resolution"></a>Başvuru Çözümleme  
- Başvuru çözümlemesi gerçek derlemeleri bulmak için bir proje dosyasında depolanan başvuru öğelerini kullanarak işlemidir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Her başvurusunda ayrıntılı özelliklerini göstermek için başvuru çözümlemesi tetiklemek gerekir **özellikleri** penceresi. Aşağıdaki listede üç tür başvuruları ve nasıl çözümleneceğini açıklar.  
+ Başvuru çözümlemesi gerçek derlemeleri bulmak için bir proje dosyasında depolanan başvuru öğelerini kullanarak işlemidir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Her başvurusunda ayrıntılı özelliklerini göstermek için başvuru çözümlemesi tetiklemek gerekir **özellikleri** penceresi. Aşağıdaki listede üç tür başvuruları ve nasıl çözümleneceğini açıklar.  
   
 -   Derleme başvuruları:  
   

@@ -1,21 +1,19 @@
 ---
-title: "İzlenecek yol: uygulama oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: uygulama oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 09/25/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 485c8445f24dbd0aaec501649885df50d173347a
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: b94f9b9ba60279c359ce7c6cc3c9646bfbbe7c5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-building-an-application"></a>İzlenecek yol: Uygulama Oluşturma
 
@@ -87,7 +85,7 @@ Sonraki biz derleyici tarafından üretilen bir uyarı neden olan bazı kodlar e
 
 ![Çıktı penceresi Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
 
-![Çıktı penceresi Visual C &#35; ] (../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+![Çıktı penceresi Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
 
 Geçici olarak derleme sırasında belirli uyarı iletileri Gizle yerine, bunları yapı çıktıda karmaşıklığa.
 
@@ -109,7 +107,7 @@ Geçici olarak derleme sırasında belirli uyarı iletileri Gizle yerine, bunlar
   
      **Çıkış** penceresi yalnızca derleme için Özet bilgiler görüntüler.
   
-     ![Çıktı penceresi, Visual C &#35; Uyarıları yapı](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")  
+     ![Çıktı penceresi, Visual C&#35; uyarıları yapı](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")  
   
 ### <a name="to-suppress-all-visual-basic-build-warnings"></a>Tüm Visual Basic derleme uyarıları gizlemek için
 

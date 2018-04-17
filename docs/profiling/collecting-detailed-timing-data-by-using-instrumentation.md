@@ -1,26 +1,24 @@
 ---
-title: "Toplama ayrıntılı zamanlama verileri araçları kullanarak | Microsoft Docs"
-ms.custom: 
+title: Toplama ayrıntılı zamanlama verileri araçları kullanarak | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation method
 - instrumentation profiling method
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
-caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7bc5b81349c64c3b3422fb16b9cf578d0b8496ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 11f16376ca9fe86dcb7d68cc7a0ca7e4f2d36db2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>İzleme Kullanarak Ayrıntılı Zamanlama Verileri Toplama
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil oluşturma araçları izleme yöntemini profil kodu bir modülün bir kopyasını yerleştirir. Kodu her giriş, çıkış ve işlevlerin işlev çağrısı modülünde bir çalıştırma profili oluşturma sırasında kaydeder. Araçları yöntem kodunuzu bir bölümünü hakkında ayrıntılı zamanlama bilgi toplama ve girdi ve çıktı işlemleri uygulama performansı üzerindeki etkisini anlamak için kullanışlıdır.  
@@ -34,11 +32,11 @@ ms.lasthandoff: 12/22/2017
 -   Üzerinde **genel** select performans oturumu için Özellikler iletişim kutusunun sayfası **Araçları**.  
   
 ## <a name="common-tasks"></a>Ortak Görevler  
- Ek seçenekler belirtebilirsiniz *Performans oturumunu***özellik sayfaları** performans oturumunun iletişim kutusu. Bu iletişim kutusunu açmak için:  
+ Ek seçenekler belirtebilirsiniz *Performans oturumunu *** özellik sayfaları** performans oturumunun iletişim kutusu. Bu iletişim kutusunu açmak için:  
   
 -   İçinde **performans Gezgini**, performans oturumu adına sağ tıklayın ve ardından **özellikleri**.  
   
- Aşağıdaki tabloda yer alan görevler, belirtebilirsiniz seçenekleri açıklanmıştır *Performans oturumunu***özellik sayfaları** izleme metodunu kullanarak profil, iletişim kutusu.  
+ Aşağıdaki tabloda yer alan görevler, belirtebilirsiniz seçenekleri açıklanmıştır *Performans oturumunu *** özellik sayfaları** izleme metodunu kullanarak profil, iletişim kutusu.  
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  

@@ -1,8 +1,8 @@
 ---
-title: "Yapı özelleştirebilir ve görevleri tasks.vs.json ve launch.vs.json kullanarak Visual Studio'da hata ayıklama | Microsoft Docs"
+title: Yapı özelleştirebilir ve görevleri tasks.vs.json ve launch.vs.json kullanarak Visual Studio'da hata ayıklama | Microsoft Docs
 ms.date: 02/21/2018
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
 - makefiles [Visual Studio]
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d40bd35d893afeb8e76e18d46185b3d63add1c5
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: bc193c8c54c09a7d2950cd80994d62512d9232d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Yapı özelleştirebilir ve görevler "Klasör Aç" geliştirme için hata ayıklama
 
@@ -38,7 +38,7 @@ Visual Studio tanımıyor özel derleme araçları codebase kullanıyorsa, çal�
 Bunlar *.json* dosyaları adlı gizli bir klasörde bulunan *.vs* temelinizde kök klasöründe. *Tasks.vs.json* ve *launch.vs.json* dosyaları oluşturulur Visual Studio tarafından gerektiği ölçüde temeline göre ya da seçtiğinizde **yapılandırma görevleri** veya **hata ayıklama ve başlatma ayarları** bir dosya veya klasörde **Çözüm Gezgini**. Bunlar *.json* dosyaları, kullanıcıların kaynak denetimine denetlemek genellikle istemediğiniz çünkü gizlidir. Ancak, kaynak denetimine denetlemek istiyorsanız, dosyaları burada görünür kod temeliniz kök sürükleyin.
 
 > [!TIP]
-> Visual Studio'da gizli dosyaları görüntülemek için seçin **tüm dosyaları göster** Çözüm Gezgini araç çubuğunda.
+> Visual Studio'da gizli dosyaları görüntülemek için seçin **tüm dosyaları göster** düğmesini **Çözüm Gezgini** araç.
 
 ## <a name="define-tasks-with-tasksvsjson"></a>Tasks.vs.json görevlerle tanımlayın
 
@@ -54,7 +54,7 @@ Bu oluşturur (veya açar) *tasks.vs.json* dosyasını *.vs* klasör. Bu dosyada
 
 Ardından temelinizde Visual Studio tanımıyor özel derleme araçları kullanıyorsa, çalıştırmak ve bazı yapılandırma adımları tamamlanana kadar Visual Studio kodda hata ayıklama olamaz. Visual Studio sağlar *derleme görevleri* nasıl oluşturulacağını Visual Studio anlayabilirsiniz burada yeniden oluşturun ve kodunuzu temizleme. *Tasks.vs.json* Visual Studio iç geliştirme döngüsü özel derleme araçlarını temelinizde tarafından kullanılan görev dosya tüm çiftler oluşturun.
 
-Adlı bir tek C# dosyasından oluşur codebase göz önünde bulundurun *hello.cs*. Bu tür bir codebase için derleme görevleri dosyası şuna benzeyebilir:
+Adlı bir tek C# dosyasından oluşur codebase göz önünde bulundurun *hello.cs*. *Derleme görevleri dosyası* için bir tür codebase şuna benzeyebilir:
 
 ```makefile
 build: directory hello.exe
@@ -73,7 +73,7 @@ bin:
     md bin
 ```
 
-Yapı, temiz ve yeniden hedefleri içeren bu tür bir derleme görevleri dosyası için aşağıdaki tanımlayabilirsiniz *tasks.vs.json* dosya. Oluşturma, yeniden oluşturma ve NMAKE derleme aracını kullanarak codebase Temizleme için üç derleme görevleri içerir.
+İlgili konularda bir *derleme görevleri dosyası* , yapı, temiz içerir ve hedefleri derleyin, aşağıdaki tanımlayabilirsiniz *tasks.vs.json* dosya. Oluşturma, yeniden oluşturma ve NMAKE derleme aracını kullanarak codebase Temizleme için üç derleme görevleri içerir.
 
 ```json
 {
@@ -117,7 +117,7 @@ Yapı, temiz ve yeniden hedefleri içeren bu tür bir derleme görevleri dosyas�
 }
 ```
 
-Derleme görevleri tanımladıktan sonra *tasks.vs.json*, ek bağlam menüsü öğelerine, ilgili dosyaları eklenir **Çözüm Gezgini**. Bu örnek için **yapı**, **yeniden**, ve **temiz** seçenekleri herhangi bağlam menüsüne eklenen *derleme görevleri dosyası* dosyaları.
+Derleme görevleri tanımladıktan sonra *tasks.vs.json*, ek bağlam menüsü öğelerine, ilgili dosyaları eklenir **Çözüm Gezgini**. Bu örnekte, "oluşturma", "yeniden" ve "temiz" seçeneklerini herhangi bağlam menüsü eklenen *derleme görevleri dosyası* dosyaları.
 
 ![derleme görevleri dosyası bağlam menüsü yapı ile yeniden oluşturma ve temizleme](media/customize-build-rebuild-clean.png)
 
@@ -205,23 +205,23 @@ Görevler için herhangi bir dosya veya klasör adını belirterek oluşturabile
 |-|-|
 |`"*"`| Görev tüm dosyalara ve klasörlere çalışma alanında kullanılabilir|
 |`"*/"`| Görev çalışma alanındaki tüm klasörler için kullanılabilir|
-|`"*.js"`| Görev çalışma alanında uzantısı .js sahip tüm dosyaları için kullanılabilir|
-|`"/*.js"`| Görev çalışma kök uzantısı .js sahip tüm dosyaları için kullanılabilir|
-|`"src/*/"`| Görev için "src" klasörünün tüm alt klasörleri kullanılabilir|
-|`"makefile"`| Görev çalışma alanındaki tüm derleme görevleri dosyaları için kullanılabilir|
-|`"/makefile"`| görev yalnızca çalışma kök derleme görevleri dosyası kullanılabilir|
+|`"*.js"`| Görev, uzantılı tüm dosyaları kullanılabilir *.js* çalışma|
+|`"/*.js"`| Görev, uzantılı tüm dosyaları kullanılabilir *.js* çalışma kök|
+|`"src/*/"`| tüm alt görev kullanılabilir *src* klasörü|
+|`"makefile"`| Görev kullanılabilir tüm *derleme görevleri dosyası* çalışma dosyaları|
+|`"/makefile"`| yalnızca görev kullanılabilir *derleme görevleri dosyası* çalışma kök|
 
 #### <a name="macros-for-tasksvsjson"></a>Tasks.vs.json makroları
 
 |||
 |-|-|
 |`${env.<VARIABLE>}`| herhangi bir ortam değişkeni (örneğin, ${env. belirtir YOL}, ${env.COMSPEC} vb.) için geliştirici komut istemi ayarlayın. Daha fazla bilgi için bkz: [Visual Studio için geliştirici komut istemi](/dotnet/framework/tools/developer-command-prompt-for-vs).|
-|`${workspaceRoot}`| Çalışma klasörü (örneğin, "C:\sources\hello") için tam yolu|
-|`${file}`| Dosya veya klasör (örneğin, "C:\sources\hello\src\hello.js") karşı bu görevi çalıştırmak için seçili tam yolu|
-|`${relativeFile}`| Göreli yol dosya veya klasöre (örneğin, "src\hello.js")|
-|`${fileBasename}`| Yolu ya da (örneğin, "hello") uzantısı olmadan dosya adı|
-|`${fileDirname}`| Dosya adı (örneğin, "C:\sources\hello\src") hariç olmak üzere dosyanın tam yolu|
-|`${fileExtname}`| Seçilen dosya (örneğin, ".js") uzantısı|
+|`${workspaceRoot}`| Çalışma alanı klasörün tam yolunu (örneğin, *C:\sources\hello*)|
+|`${file}`| Dosya veya klasör karşı bu görevi çalıştırmak için seçili tam yolunu (örneğin, *C:\sources\hello\src\hello.js*)|
+|`${relativeFile}`| Dosya veya klasöre göreli yolu (örneğin, *src\hello.js*)|
+|`${fileBasename}`| Yol veya uzantısı olmadan dosya adını (örneğin, *hello*)|
+|`${fileDirname}`| Dosya adı hariç olmak üzere dosyanın tam yolunu (örneğin, *C:\sources\hello\src*)|
+|`${fileExtname}`| Seçilen dosya uzantısı (örneğin, *.js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Launch.vs.JSON ile hata ayıklama yapılandırın
 

@@ -1,37 +1,30 @@
 ---
-title: "Visual Studio performans ipuçları ve püf noktaları | Microsoft Docs"
+title: Visual Studio performans ipuçları ve püf noktaları | Microsoft Docs
 ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- debugger
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9182abea676958891afb789217a056f16ff1c11e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio performans ipuçları ve püf noktaları
 
 Visual Studio performans önerileri nadir durumlarda oluşabilir düşük bellek durumlar için tasarlanmıştır. Bu durumlarda, değil kullanıyor olabilecek bazı Visual Studio özellikleri en iyi duruma getirebilirsiniz. Aşağıdaki ipuçları genel öneriler amaçlanmamıştır.
 
 > [!NOTE]
-> Bellek sorunları nedeniyle ürün kullanmakta zorluk yaşıyorsanız, geri bildirim aracı aracılığıyla bize bildirin.
+> Bellek sorunları nedeniyle ürün kullanmakta zorluk yaşıyorsanız, aracılığıyla bize [geri bildirim aracı](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="optimize-your-environment"></a>Ortamınıza en iyi duruma getirme
 
-- **64 bit işletim sistemi kullanın**
+- **Bir 64-bit işletim sistemi kullanın**
 
     Sisteminiz Windows 32-bit sürümünden bir 64-bit sürümüne yükseltirseniz, sanal bellek miktarı için Visual Studio 2 GB ile 4 GB'den genişletin. Bu, 32 bitlik işlem olsa bile önemli ölçüde daha büyük iş yüklerini işlemek üzere Visual Studio sağlar.
 
@@ -86,7 +79,7 @@ Bazı araçlar ya da uzantıları performansı için devre dışı bırakılmı�
 
 ### <a name="managed-language-services-roslyn"></a>Yönetilen dil Hizmetleri (Roslyn)
 
-[Büyük çözümler için başarım düşünceleri] .NET derleyici Platformu ("Roslyn") performans konuları hakkında daha fazla bilgi için bkz: (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+.NET derleme Platformu ("Roslyn") performans konuları hakkında daha fazla bilgi için bkz: [büyük çözümler için başarım düşünceleri](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Tam çözüm analizini devre dışı bırak**
 
@@ -94,7 +87,7 @@ Bazı araçlar ya da uzantıları performansı için devre dışı bırakılmı�
 
     Devre dışı bırakmak için **tam çözüm analizini**, seçin **Araçlar > Seçenekler > Metin Düzenleyicisi >< Visual Basic veya C# >**. Ardından **Gelişmiş** ve seçimini **tam çözüm analizini etkinleştir**.
 
-- **Disable CodeLens**
+- **CodeLens devre dışı bırak**
 
     Visual Studio gerçekleştirir bir **tüm başvuruları Bul** görüntülendiği her yöntemini görev. CodeLens başvuru sayısı satır içi görüntüsünü gibi özellikler sağlar. İş, ayrı bir işlemde (örneğin, ServiceHub.RoslynCodeAnalysisService32) gerçekleştirilir. Düşük öncelikli olarak çalıştırılan olsa bile bu özellik çok büyük çözümlerde ya da kısıtlı kaynak sistemlerde performansı önemli etkiye sahiptir. Bu işlem yüksek CPU karşılaştığınız ya da (örneğin, 4 GB makine üzerinde büyük bir çözümde yüklenirken) bellek sorunları varsa, kaynakları boşaltmak için bu özelliği devre dışı bırakma deneyebilirsiniz.
 
@@ -108,7 +101,7 @@ Bazı araçlar ya da uzantıları performansı için devre dışı bırakılmı�
 
     Uzantıları yeni işlevsellik sağlayan veya varolan işlevlerini genişletmek için Visual Studio eklenen ek yazılım bileşenleridir. Uzantıları genellikle bir kaynak bellek kaynağı sorunları olabilir. Bellek kaynağı sorunla karşılaşıyorsanız, senaryo veya iş akışının nasıl etkilediğini görmek için aynı anda tek uzantıları devre dışı bırakmayı deneyin.
 
-    Uzantılarını devre dışı bırakmak için şu adrese gidin **Araçlar | Uzantılar ve güncelleştirmeler**, belirli bir uzantıyı devre dışı bırakın.
+    Uzantılarını devre dışı bırakmak için şu adrese gidin **Araçları** > **Uzantılar ve güncelleştirmeler**, belirli bir uzantıyı devre dışı bırakın.
 
 - **XAML Tasarımcısı devre dışı bırak**
 
@@ -128,8 +121,9 @@ CLR bir atık toplama bellek yönetimi sistemi kullanır. Bu sistemde, bazen bel
 
 Çöp toplama güvenilir bir şekilde zorlama çalışma, Visual Studio geri bildirim aracı ile bir rapor dosyası bu davranış büyük olasılıkla bir hata olduğundan, senaryonuzun yapar.
 
-CLR atık toplayıcı ayrıntılı bir açıklaması için bkz: [temel çöp koleksiyonu](/dotnet/standard/garbage-collection/fundamentals).
+CLR atık toplayıcı ayrıntılı bir açıklaması için bkz: [çöp toplamanın Temelleri](/dotnet/standard/garbage-collection/fundamentals).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio performansı en iyi duruma getirme](../ide/optimize-visual-studio-performance.md)
+- [Visual Studio günlüğü - Visual Studio 2017 sürüm 15,6 daha hızlı yük çözümleri](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

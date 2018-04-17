@@ -1,23 +1,21 @@
 ---
 title: TargetCLR | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
-caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a69edb2730ff89a50dd45252258fc57e7205de3d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 64c87f53de999a65294a6bb388e7a90420dc6cd1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="targetclr"></a>TargetCLR
 **TargetCLR** seçeneği CLR birden fazla sürümünü bir uygulama yüklendiğinde bu ortak dil çalışma zamanı (CLR) sürümünü profiline belirtir.  
@@ -37,10 +35,10 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ## <a name="required-options"></a>Gerekli seçenekler  
  **TargetCLR** seçeneği yalnızca kullanılabilir ile **başlatma** veya **Attach** seçenekleri.  
   
- **Başlatma:**`AppName`  
+ **Başlat:** `AppName`  
  Belirtilen uygulamayı başlatır ve profiline başlatır.  
   
- **Ekle:**`PID`  
+ **Ekle:** `PID`  
  Belirtilen işlem profilini başlatır.  
   
 ## <a name="example"></a>Örnek  

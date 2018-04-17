@@ -1,28 +1,25 @@
 ---
-title: Python için karışık mod hata ayıklaması | Microsoft Docs
-description: Aynı anda C++ ve Python ortamları, görüntüleme değerleri ve evaluting ifadeleri arasında atlama dahil olmak üzere Visual Studio'da hata ayıklama yapma.
+title: Karışık mod Python için hata ayıklama
+description: Aynı anda C++ ve Python ortamlar arasında adımlama, değerlerini görüntüleme ve ifadeleri değerlendirme dahil olmak üzere Visual Studio'da hata ayıklama yapma.
 ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4f555e24c1328a4d784e3f8c5b2d0f1a7c590f8b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 40ab75cfd35f3d748d5e000ff1a45d2999fc649e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Python ve C++ birlikte hata ayıklama
 

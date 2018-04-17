@@ -1,29 +1,25 @@
 ---
-title: "Geçerli sekme | Microsoft Docs"
-ms.custom: 
+title: Geçerli sekme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.current
 helpviewer_keywords:
 - Concurrency Visualizer, Callstack at Selection Point
 ms.assetid: 2c7b1ae5-3756-4795-bc59-f6bb113f2ba5
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb69f11081015960cd79d54fb90893a9202c9bae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5f5628091ed462a08173bbaef7dcb5b873e1ec18
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="current-tab"></a>Geçerli Sekme
 Tıklayarak **geçerli** sekmesinde, gördüğünüz bir çağrı yığını (varsa) olan en yakın zaman çizelgesi geçerli seçim noktaya CPU iş parçacığı kesimi seçtiyseniz.  Bu durumda, seçim noktası siyah ok veya yukarıdaki zaman çizelgesi düzeltme işareti ile temsil edilir. Engelleme kesimi seçildiğinde, hiçbir yürütme olduğundan şapka görüntülenmez. Ancak, kesim hala vurgulanır ve çağrı yığını görüntülenir.  

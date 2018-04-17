@@ -1,29 +1,25 @@
 ---
-title: "Yürütme Profil raporu | Microsoft Docs"
-ms.custom: 
+title: Yürütme Profil raporu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.execution
 helpviewer_keywords:
 - Concurrency Visualizer, Execution Profile Report
 ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 263ff80703a680ab799e373fad62c05ced62028f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b2f878efffd658cbfa243ae4947613603db59777
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="execution-profile-report"></a>Yürütme Profil Raporu
 Yürütme Profil raporu geleneksel örnekleme profilidir. Örnekler, ne zaman bir iş parçacığı bir mantıksal çekirdeği üzerinde çalıştığından ve örnek yığınları birikmiş kümesini harmanlama tarafından tipik çağrı ağacı eşzamanlılık görselleştiricisi oluşturur dönemlerde yaklaşık her milisaniyelik alınır. Bu tablodaki verileri uygulanabilir bu filtreler ve geçerli zaman aralığı ve gizli iş parçacıkları tarafından etkilenebilir:  

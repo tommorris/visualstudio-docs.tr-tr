@@ -1,25 +1,21 @@
 ---
-title: "Visual Studio'da CPU kullanımı analiz | Microsoft Docs"
+title: Visual Studio'da CPU kullanımı analiz | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2324c857807f2f15762ce36539df3d7c2ad01b4b
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 40e64e9865a1306c448c5934c8ae899ecf42bf37
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyze-cpu-usage"></a>CPU kullanımı analiz
 Uygulamanızda performans sorunları araştırmak gerektiğinde başlatmak için uygun bir yerdir nasıl CPU kullandığı anlamaktır. **CPU kullanımı** aracı gösterir, CPU Visual C++, Visual C# yürütme süresi yeri harcıyorsa / Visual Basic ve JavaScript kodu. Visual Studio 2015 güncelleştirme 1'de başlayarak, hata ayıklayıcı ayrılmadan CPU kullanımı işlevi başına dökümünü görebilirsiniz. Hata ayıklama sırasında CPU açma ve kapatma profil açın ve yürütme, örneğin bir kesme noktasında durdurulduğunda sonuçları görüntüleyin.  

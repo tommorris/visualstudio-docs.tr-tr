@@ -1,10 +1,8 @@
 ---
-title: "Araçlar ve araç kutusunu özelleştirme | Microsoft Docs"
-ms.custom: 
+title: Araçlar ve araç kutusunu özelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 160c1c27ab9d01dc76d6a5c76feb07179f7966b9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0644aa33d0e091fc3a2ff856109fe9661e2dc805
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Araçları ve Araç Kutusunu Özelleştirme
 Kullanıcıların kendi model ekleme izin vermek istediğiniz öğeleri için araç kutusu öğelerini tanımlamanız gerekir. Araçlar iki tür vardır: öğesi araçları ve bağlantı araçları. Oluşturulan Tasarımcısı'nda kullanıcı şekiller diyagrama sürüklemek için bir öğe aracı seçebilirsiniz ve bağlantıları arasında şekiller çizmek için bir bağlantı aracı seçebilirsiniz. Genel olarak, kullanıcı etki alanı sınıfların örnekleri için modellerini Ekle öğesi araçları sağlar ve bunları etki alanı ilişkilerini örneklerini eklemek bağlantı araçları sağlayabilirsiniz.  
@@ -36,7 +34,7 @@ Kullanıcıların kendi model ekleme izin vermek istediğiniz öğeleri için ar
   
 -   [Bağlantı Araçları özelleştirme](#connections)  
   
-##  <a name="ToolboxDef"></a>Araç kutusu nasıl tanımlanır  
+##  <a name="ToolboxDef"></a> Araç kutusu nasıl tanımlanır  
  DSL Explorer'da Düzenleyici düğümü ve bunun altındaki düğümleri genişletin. Genellikle bu benzer bir hiyerarşi görürsünüz:  
   
 ```  
@@ -93,7 +91,7 @@ Editor
   
      Aracı görünmüyorsa Deneysel durdurmak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Windows **Başlat** çalıştırmak menüsünde **Microsoft Visual Studio 2010 deneysel örneği sıfırlama**. Üzerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **yapı** menüsünde tıklatın **çözümü yeniden derle**. DSL yeniden sınayın.  
   
-##  <a name="customizing"></a>Öğe araçları özelleştirme  
+##  <a name="customizing"></a> Öğe araçları özelleştirme  
  Varsayılan olarak, aracı belirtilen sınıf tek bir örneğini oluşturur, ancak bu iki yolla değişebilir:  
   
 -   Öğe birleştirme yönergeleri, bunları yeni bu sınıfın örnekleri, kabul etmek etkinleştirme ve bunları yeni öğe oluşturulduğunda ek bağlantılar oluşturmak üzere etkinleştirme diğer sınıflarında tanımlayın. Örneğin, kullanıcının başka bir öğenin üzerine yorum bırakın izin verin ve dolayısıyla iki arasında bir referans bağlantı oluşturun.  
@@ -104,7 +102,7 @@ Editor
   
 -   Öğe gruplarını oluşturabilmesi için Aracı'nı özelleştirmek için kod yazma. Aracı geçersiz kılabilirsiniz ToolboxHelper.cs yöntemleri tarafından başlatılır. Daha fazla bilgi için bkz: [oluşturma grupları öğeleri bir aracından](#groups).  
   
-##  <a name="groups"></a>Bir aracından öğelerinin grupları oluşturma  
+##  <a name="groups"></a> Bir aracından öğelerinin grupları oluşturma  
  Her öğe aracı oluşturmanız gerekir öğeleri prototipi içerir. Varsayılan olarak, her öğe aracı, tek bir öğe oluşturur, ancak bir aracı ile ilgili nesneler bir grup oluşturmak mümkündür. Bunu yapmak için aracı ile başlatılamıyor. bir <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> ilgili öğeler içerir.  
   
  Aşağıdaki örnek, bir tür transistör olduğu DSL alınır. Her transistör üç adlandırılmış Terminal sahiptir. Transistörler öğesi aracı dört model öğelerini ve üç ilişki bağlantıları içeren bir prototip depolar. Kullanıcı aracı diyagram üzerine sürüklendiğinde prototip örneği ve model köküne bağlanır.  
@@ -154,7 +152,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-##  <a name="connections"></a>Bağlantı Araçları özelleştirme  
+##  <a name="connections"></a> Bağlantı Araçları özelleştirme  
  Genellikle, yeni bir bağlayıcı sınıfı oluşturduğunuzda, bir öğenin aracı oluşturun. Alternatif olarak, ilişki türünü belirlemek için iki uca türlerini sağlayarak bir aracı aşırı yüklenebilir. Örneğin, kişi kişi ilişkileri ve kişi Şehir ilişkileri oluşturabilirsiniz bir bağlantı aracını tanımlayabilirsiniz.  
   
  Bağlantı Araçları bağlantı oluşturucular çağırır. Bağlantı oluşturucular öğelerine oluşturulan Tasarımcısı'nda kullanıcıların nasıl bağlayabilirsiniz belirtmek için kullanın. Bağlantı oluşturucular bağlanabilir öğeleri ve bunlar arasında oluşturulan bağlantı türünü belirtin.  

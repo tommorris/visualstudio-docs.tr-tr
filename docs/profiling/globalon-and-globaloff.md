@@ -1,23 +1,21 @@
 ---
 title: GlobalOn ve GlobalOff | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9998f0f4d46a37b1eccd3cdf5dc48dd994f651a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ceef6ca8a472c5ea87228d8b40963c31e82c6c45
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn ve GlobalOff
 VSPerfCmd.exe **GlobalOff** ve **GlobalOn** seçenekleri duraklatıp tüm işlemleri ve iş parçacıklarını için bir komut satırı profil oluşturma oturumu profil oluşturma.  
@@ -52,19 +50,19 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ## <a name="valid-options"></a>Geçerli seçenekleri  
  **GlobalOn** ve **GlobalOff** aşağıdaki seçenekleri de içeren komut satırları belirtilebilir.  
   
- **Başlangıç:**`Method`  
+ **Başlat:** `Method`  
  Komut satırı Profil Oluşturucu oturumu başlatır ve belirtilen profil oluşturma yöntemini ayarlar.  
   
- **Başlatma:**`AppName`  
+ **Başlat:** `AppName`  
  Belirtilen uygulamayı başlatır ve profil oluşturma örnekleme yöntemi ile başlar.  
   
- **Ekle:**`PID`  
+ **Ekle:** `PID`  
  Belirtilen işlem profil başlar.  
   
- {**ProcessOff**&#124; **ProcessOn**}**:**`PID`  
+ {**ProcessOff**&#124;**ProcessOn**}**:**`PID`  
  Durdurur veya belirtilen işlem için profil oluşturma başlatır.  
   
- {**ThreadOff**&#124; **ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
  Durdurur veya (yalnızca izleme metodunu) belirtilen işlem için profil oluşturma başlatır.  
   
 ## <a name="example"></a>Örnek  

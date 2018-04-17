@@ -1,25 +1,23 @@
 ---
-title: "Uygulamanızı &#39; model s mimarisi | Microsoft Docs"
-ms.custom: 
+title: Uygulamanızı model&#39;s mimarisi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3d77abff4595502ab27f56be10cb973361eef413
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 65a49873056878be9651aa7580618e778f217651
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="model-your-app39s-architecture"></a>Uygulamanızı &#39; model s mimarisi
+# <a name="model-your-app39s-architecture"></a>Uygulamanızı model&#39;s mimarisi
 Yazılım sistem veya uygulama kullanıcılarınızın karşıladığından emin olmak için gereken, Visual Studio'da modelleri genel yapısı, açıklaması ve yazılımı sistem veya uygulama davranışını bir parçası olarak oluşturabilirsiniz. Modelleri kullanarak tasarım boyunca kullanılan desenleri de tanımlayabilirsiniz. Bu modeller var olan mimarisi anlamak, değişiklikleri ele ve, ilkenizin amacını açıkça iletişim yardımcı olur.  
   
  Bu özellik, Visual Studio'nun hangi sürümleri desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -35,7 +33,7 @@ Yazılım sistem veya uygulama kullanıcılarınızın karşıladığından emin
   
 -   [Tasarım desenleri](#Patterns) ve bileşenlerin tasarımları boyunca kullanılan kuralları. Bir programlama hedefini sağlamak için belirli bir yaklaşım bir deseni açıklar. Bir tasarım boyunca aynı desenleri kullanarak, ekibiniz değişiklik yapmadan ve yeni bir yazılım geliştirme maliyetini azaltabilir.  
   
-##  <a name="Structure"></a>Üst düzey tasarımı  
+##  <a name="Structure"></a> Üst düzey tasarımı  
  Üst düzey tasarımı, sisteminize ve tasarım hedeflerinize ulaşmak için birbirleriyle nasıl etkileşim kurduklarını ana bileşenlerini açıklar. Aşağıdaki listede etkinlikleri, mutlaka belirli bir sırada ancak üst düzey tasarımı geliştirirken ilgilidir.  
   
  Var olan kodu güncelleştiriyorsanız başlıca bileşenleri açıklayarak başlayabilirsiniz. Kullanıcı gereksinimlerinde yapılacak değişiklikler anlamak ve eklediğinizde veya değiştirdiğinizde bileşenler arasındaki etkileşimler emin olun. Yeni bir sistem geliştiriyorsanız, kullanıcıların ihtiyaçlarını ana özelliklerini anlayarak başlayın. Ana kullanım örnekleri için etkileşim dizileri keşfedin ve bileşen tasarım dizilere birleştirin.  
@@ -48,7 +46,7 @@ Yazılım sistem veya uygulama kullanıcılarınızın karşıladığından emin
   
 -   Veri modeli, bileşenleri ve arabirimleri. Bileşenleri arasında geçirilen ve bileşenler içinde depolanan bilgileri açıklamak için sınıf diyagramları çizebilirsiniz.  
   
-##  <a name="Requirements"></a>Gereksinimleri anlama  
+##  <a name="Requirements"></a> Gereksinimleri anlama  
  Tam bir uygulamanın üst düzey tasarımı gereksinimler modeli veya diğer kullanıcıların ihtiyaçlarını açıklaması ile birlikte en verimli şekilde geliştirilmiştir. Gereksinimleri modelleri hakkında daha fazla bilgi için bkz: [Model kullanıcı gereksinimlerini](../modeling/model-user-requirements.md).  
   
  Geliştirdiğiniz sistem daha büyük bir sistem bileşenidir, bir kısmı veya tümü gereksinimlerinizi programlama arabirimleri gerçekleştirilen.  
@@ -67,7 +65,7 @@ Yazılım sistem veya uygulama kullanıcılarınızın karşıladığından emin
   
  Gereksinimler veya bir mimari modeli yerleştirileceği ayrıntı miktarını ve proje boyutu ölçeği ve dağıtım ekibi bağlıdır. Kısa bir projedeki küçük bir ekip iş kavramları ve bazı tasarım desenleri sınıf diyagramı tasarlamaktan daha başka geçebilir; içinde birden fazla bölgeye dağıtılmış büyük bir proje önemli ölçüde daha fazla ayrıntı gerekir.  
   
-##  <a name="BigDecisions"></a>Mimari desenleri  
+##  <a name="BigDecisions"></a> Mimari desenleri  
  Geliştirme içinde bir ana teknolojileri ve tasarım bağlı öğeleri seçmeniz gerekir. Bu seçenekler hale getirilmesi gereken alanlar şunlardır:  
   
 -   Bir veritabanı ve dosya sistemi ve ağa bağlı bir uygulama ve bir Web istemcisi arasında seçim arasında seçim gibi teknoloji seçimleri temel vb. kullanın.  
@@ -80,7 +78,7 @@ Yazılım sistem veya uygulama kullanıcılarınızın karşıladığından emin
   
  Yaptığınız seçimleri kullanın ve Mimari modeli yorumlama nasıl etkiler. XML dosyalarını temel alan bir sistemde, ilişkilendirmeleri XPath kullanmak çapraz işaret ediyor olabilir ancak örneğin, bir veritabanı kullanan bir sistemde, sınıf diyagramında ilişkilendirmeleri ilişkileri veya veritabanındaki yabancı anahtarlar gösterebilir. Dağıtılmış bir sistemde, sıralı diyagram iletilerinde kablo üzerindeki iletileri gösterebilir; kendi içinde bulunan bir uygulamada işlev çağrılarını temsil edebilir.  
   
-##  <a name="Patterns"></a>Tasarım desenleri  
+##  <a name="Patterns"></a> Tasarım desenleri  
  Bir tasarım deseni belirli bir yazılım sistem farklı kısımlarını yinelenen bir özellikle durumuyla tasarlamak nasıl ana hattı ' dir. Tekdüzen bir yaklaşım projede kabul ederek, tasarımın maliyetini azaltabilir, kullanıcı arabiriminde tutarlılığı sağlamak ve maliyetini anlama ve kodunu değiştirme.  
   
  Bazı genel tasarım desenleri gözlemci gibi bilinen ve yaygın olarak uygulanabilir. Ayrıca, yalnızca projenize uygulanabilir desenleri vardır. Örneğin, bir Web satış sisteminde olacaktır koddaki çeşitli işlemleri değişiklikler Müşteri'nin siparişe burada yapılır. Sipariş durumunu doğru şekilde her aşamada görüntülendiğinden emin olmak için tüm bu işlemler veritabanını güncelleştirmek için belirli bir protokol izlemeniz gerekir.  

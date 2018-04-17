@@ -1,23 +1,21 @@
 ---
-title: "Nasıl yapılır: Konu Arama | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: Konu Arama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e93a3ca0c6cf7446b4b943c2e6a19018f1a16c7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e76a1e87da99d8504620ed2881dcc60b8ce99a57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-search-for-topics"></a>Nasıl yapılır: Konu Arama
 Belirli bir sözcük içeren tüm konuları bulmak için tam metin arama özelliğini kullanın. Ayrıca, daraltın ve joker karakter ifadeleri, mantıksal işleçler ve Gelişmiş arama işleçleri kullanarak aramanızı özelleştirin.  
@@ -69,7 +67,7 @@ Arama algoritması derece yardımcı olmak için belirli ölçütlere geçerlidi
   
 3.  Arama sözcükleri daha yüksek yoğunluğu bulunduğu içeriği arama sözcükleri daha düşük yoğunluğu olan içeriği, daha yüksek önem derecesi.  
   
-### <a name="stopwords">Aramaları (Durma sözcükleri) yok sayılan sözcükler</a>
+### <a name="stopwords"> Aramaları (Durma sözcükleri) yok sayılan sözcükler </a>
 Otomatik olarak sık tekrarlanan sözcükleri veya bazen Durma sözcükleri adı verilen sayı bir tam metin araması sırasında göz ardı edilir. Tümcecik "geçiş" için arama yaparsanız, örneğin, arama sonuçları "geçiş" sözcüğünü içeren konular değil "ile ancak" görüntüler.  
   
 ## <a name="see-also"></a>Ayrıca bkz.

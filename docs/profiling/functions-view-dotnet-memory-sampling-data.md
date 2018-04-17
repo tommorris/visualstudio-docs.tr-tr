@@ -1,27 +1,23 @@
 ---
-title: "İşlevler görünümü - .NET bellek örnekleme verileri | Microsoft Docs"
-ms.custom: 
+title: İşlevler görünümü - .NET bellek örnekleme verileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92d2df0182f976af36e9182d080ef6b51130c826
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1e3ee9fa3b927d05de9c08e913d5c8f96ead59db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>İşlevler görünümü - .NET bellek örnekleme verileri
 .NET bellek ayırma örnekleme yöntemini kullanarak toplanan verileri profil işlevleri görünümünü ayırmaları sayısı ve boyutu raporları ve profil oluşturma çalışması sırasında bellek tahsis işlevleri listeler.  

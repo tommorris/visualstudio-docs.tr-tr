@@ -1,29 +1,26 @@
 ---
-title: Python için CookieCutter uzantısı | Microsoft Docs
+title: Python için CookieCutter uzantısı
 description: Visual Studio için Python kodu şablonları bulmak ve bu şablonlardan proje oluşturmak için grafik Cookiecutter uzantısı destekler.
 ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d70a6a4041892166b383574730ac1814a19ad39a
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: e9eb0f4c00392d24c79a22de26ca317425c9638f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="using-the-cookiecutter-extension"></a>Cookiecutter uzantısını kullanarak
+# <a name="using-the-cookiecutter-extension"></a>Cookiecutter uzantısını kullanma
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) şablonları bulmak, şablon seçenekleri giriş ve projeler ve dosyaları oluşturmak için bir grafik kullanıcı arabirimi sağlar. Visual Studio 2017 ile eklemiştir ve Visual Studio'nun önceki sürümleri ayrı olarak yüklenebilir.
 
@@ -213,18 +210,18 @@ Son betik ise `.sh`, sonra da, Windows bilgisayarınızdaki bir uygulamayla ili�
 
 Kopya hataları:
 
-- **wildfish/cookiecutter-django-crud** (invalid character `|` in subfolder name)
+- **wildfish/cookiecutter-django-crud** (geçersiz karakter `|` alt klasör adı)
 - **cookiecutter pyvanguard** (geçersiz karakter `|` alt klasör adı)
 
 Yükleme Hataları:
 
-- **chrisdev/wagtail-cookiecutter-foundation** (uses a boolean type in cookiecutter.json)
-- **quintoandar/cookiecutter-android** (no template folder)
+- **chrisdev/wagtail-cookiecutter-foundation** (bir boolean türü içinde cookiecutter.json kullanır)
+- **cookiecutter/quintoandar-android** (hiçbir şablon klasör)
 
 Hataları çalıştırın:
 
-- **iknite/cookiecutter-ansible-role** (post hook script requires console input)
-- **benregn/cookiecutter-django-ansible** (Jinja error)
+- **iknite/cookiecutter-ansible-role** (son kanca betik, konsol giriş gerektirir)
+- **benregn/cookiecutter-django-ansible** (Jinja hatası)
 
 Kullanır bash (önemli değildir):
 

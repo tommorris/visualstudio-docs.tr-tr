@@ -1,18 +1,18 @@
 ---
-title: "Örnek Excel Eklentisi: Öğe sınıfları | Microsoft Docs"
+title: 'Örnek Excel Eklentisi: Öğe sınıfları | Microsoft Docs'
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 91f3e3055d2ba98052ec2fd368db9aea08b81971
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 1dce9745db1acf031c67d5221f6a176d94fb6f77
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-excel-extension-element-classes"></a>Örnek Excel Eklentisi: Öğe Sınıfları
 Türetilmiş sınıflar uzantısını kullanır <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> ve çalışma sayfası ve hücre denetimi temsil [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].
@@ -28,7 +28,7 @@ Türetilmiş sınıflar uzantısını kullanır <xref:Microsoft.VisualStudio.Tes
 #### <a name="queryid-property"></a>QueryId özelliği
  Bu özellik denetimi kayıttan yürütme sırasında benzersizce özelliği ad-değer çiftleri yapılan bir koşul döndürür. Her türetilmiş denetim sınıfı için geliştirici döndürmek için bu özelliği geçersiz kılmanız gerekir bir <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement> framework denetimi kullanıcı Arabiriminde bulmak için kullanabileceğiniz nesne.
 
-#### <a name="cacheproperties-method"></a>CacheProperties Method
+#### <a name="cacheproperties-method"></a>CacheProperties yöntemi
  Bu yöntem, bir anlık görüntü önemli özellikleri kaydetmek için öğeye söylemek için kayıt işlemi sırasında test çerçevesi tarafından çağrılır. Gerçek UI denetimi artık ekranda olsa bile bu özellikleri kullanılabilir durumda tutar.
 
 ## <a name="worksheetelement-and-worksheetinformation-classes"></a>WorksheetElement ve WorksheetInformation sınıfları

@@ -1,28 +1,24 @@
 ---
-title: "Nasıl yapılır: MSBuild.exe kullanarak çözümlerde belirli hedefleri derleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: MSBuild.exe kullanarak çözümlerde belirli hedefleri derleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building specific targets in a solution
 - msbuild.exe, building specific targets in a solution
 - MSBuild, msbuild.exe
 ms.assetid: f46feb9b-4c16-4fec-b6e1-36a959692ba3
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4437c8030f66ae24d94a83d796c0d0edf7e59c79
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2bb8191e46c2c466d5c33111af6bfc468629e9d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Nasıl Yapılır: MSBuild.exe Kullanarak Çözümlerde Belirli Hedefleri Derleme
 MSBuild.exe belirli projelerin bir çözümde belirli hedefler derleme için kullanabilirsiniz.  
@@ -31,7 +27,7 @@ MSBuild.exe belirli projelerin bir çözümde belirli hedefler derleme için kul
   
 1.  Komut satırında `MSBuild.exe <SolutionName>.sln`, burada `<SolutionName>` yürütmek istediğiniz hedef içeren çözümü dosya adına karşılık gelir.  
   
-2. Sonra hedef belirtin `/target:` geçiş biçiminde  **`ProjectName`**  `:`  **`TargetName`** . Proje adı karakterlerden herhangi birini içeriyorsa, `%`, `$`, `@`, `;`, `.`, `(`, `)`, veya `'`, bunlarla yerine bir `_` belirtilen Hedef adı.
+2. Sonra hedef belirtin `/target:` geçiş biçiminde **`ProjectName`** `:` **`TargetName`**. Proje adı karakterlerden herhangi birini içeriyorsa, `%`, `$`, `@`, `;`, `.`, `(`, `)`, veya `'`, bunlarla yerine bir `_` belirtilen Hedef adı.
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek yürütür `Rebuild` hedefinin `NotInSlnFolder` proje ve ardından yürütür `Clean` hedefinin `InSolutionFolder` bulunan proje `NewFolder` Çözüm klasörü.  

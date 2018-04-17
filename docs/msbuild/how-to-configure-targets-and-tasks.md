@@ -1,24 +1,20 @@
 ---
-title: "Nasıl yapılır: hedefleri ve görevleri yapılandırma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: hedefleri ve görevleri yapılandırma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46cb7a1234e6fafe9c2f9f3b795e05424c25dfb7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6b6416ae909d126ceafc83e9aa22eb872a8d619a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Nasıl Yapılır: Hedefleri ve Görevleri Yapılandırma
 Seçili MSBuild görevleri, bunlar geliştirme bilgisayar ortamı bağımsız olarak hedef ortamdaki çalıştırmak için ayarlanabilir. Örneğin, bu hedefleri 32-bit mimari bir uygulama oluşturmak için bir 64-bit bilgisayarda kullandığınızda, seçili görevleri bir 32 bit işlemde çalıştırılır.  
@@ -105,7 +101,7 @@ Seçili MSBuild görevleri, bunlar geliştirme bilgisayar ortamı bağımsız ol
  Diğer görev parametreleri aksine `MSBuildRuntime` ve `MSBuildArchitecture` görev için görünür değildir.  İçinde çalıştığı bağlamı kullanan bir görev yazmak için gerekir, .NET Framework çağırarak bağlam test veya diğer görev parametreleri üzerinden bağlam bilgileri geçirmek için yapı özelliklerini kullanmak.  
   
 > [!NOTE]
->  `UsingTask`öznitelikleri araç takımını ve ortam özelliklerinden ayarlayabilirsiniz.  
+>  `UsingTask` öznitelikleri araç takımını ve ortam özelliklerinden ayarlayabilirsiniz.  
   
  `MSBuildRuntime` Ve `MSBuildArchitecture` en esnek bir şekilde ayarlanmış hedef bağlamı, ancak ayrıca en sınırlı kapsam için parametreleri sağlayın.  Bir yandan, değerlendirme süresi ve derleme zamanı sırasında kullanılabilen özelliklerin tam kapsamı kendi değerinden türetilemeyeceğini çünkü bunlar görev örneğinin kendisinde ayarlanmış olan ve çalıştırmak üzere görev olana kadar değerlendirilmez.  Öte yandan, bu parametrelerden yalnızca belirli bir hedefe görevde belirli bir örneği için geçerlidir.  
   

@@ -1,10 +1,8 @@
 ---
-title: "T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma | Microsoft Docs"
-ms.custom: 
+title: T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -15,15 +13,15 @@ helpviewer_keywords:
 - text templates, generating code for your application
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff7f01274b47b8c7c333aedbbb6dc646e14b89d3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: fea82e3343016ab4221a482e2c7975a6d39c1afb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 Tasarım zamanı T4 metin şablonları program kodunu ve diğer dosyalar oluşturmanıza izin, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projesi. Genellikle, böylece kullanıcılar verilerinden göre oluşturdukları kod farklılık şablonları yazma bir *modeli*. Bir dosya veya uygulama gereksinimleri hakkında önemli bilgiler içeren bir veri modelidir.  
@@ -124,7 +122,7 @@ Tasarım zamanı T4 metin şablonları program kodunu ve diğer dosyalar oluştu
   
  Deyimleri içine alınmış olduğunu fark `<#...#>`ve tek içinde ifadeleri `<#=...#>`. Daha fazla bilgi için bkz: [T4 metin şablonu yazma](../modeling/writing-a-t4-text-template.md).  
   
- Şablonunuzda kod yazarsanız [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `template` yönergesi içermelidir `language="VB"`. `"C#"`varsayılandır.  
+ Şablonunuzda kod yazarsanız [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `template` yönergesi içermelidir `language="VB"`. `"C#"` varsayılandır.  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>Tasarım zamanı T4 metin şablonuna ilişkin hata ayıklama  
  Metin şablonu hata ayıklamak için:  
@@ -140,7 +138,7 @@ Tasarım zamanı T4 metin şablonları program kodunu ve diğer dosyalar oluştu
  Şablon çalıştırın ve kesme noktalarında durdurun. Değişkenleri inceleyin ve kod üzerinden Normal yollardan adım.  
   
 > [!TIP]
->  `debug="true"`oluşturulan kodun yönergeleri numaralandırma veya daha fazla satır ekleyerek metin şablonu için daha doğru bir şekilde eşleme oluşturulan kod yapar. Teslim değiştirmeden bırakırsanız, kesme noktaları durumu yanlış Çalıştır durabilir.  
+>  `debug="true"` oluşturulan kodun yönergeleri numaralandırma veya daha fazla satır ekleyerek metin şablonu için daha doğru bir şekilde eşleme oluşturulan kod yapar. Teslim değiştirmeden bırakırsanız, kesme noktaları durumu yanlış Çalıştır durabilir.  
 >   
 >  Ancak bile, değil ayıklarken yan tümcesi içinde şablon yönergesi bırakabilirsiniz. Bu, performans çok küçük bir açılan neden olur.  
   
@@ -275,7 +273,7 @@ Tasarım zamanı T4 metin şablonları program kodunu ve diğer dosyalar oluştu
   
  Türü `this.Host` (VB içinde `Me.Host`) olan `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.  
   
-### <a name="getting-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>İçinden verileri alma[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+### <a name="getting-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>İçinden verileri alma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
  Sağlanan hizmetleri kullanmaya [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ayarlayın `hostSpecific` özniteliği ve yük `EnvDTE` derleme. Ardından IServiceProvider.GetCOMService() DTE ve diğer hizmetlere erişmek için de kullanabilirsiniz. Örneğin:  
   
 ```scr  
@@ -294,7 +292,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Metin şablonu kendi uygulama etki alanında çalışır ve Hizmetleri hazırlama tarafından erişilir. Bu durumda GetCOMService() GetService() daha büyük/küçük harf güvenilirdir.  
   
-##  <a name="Regenerating"></a>Kodu otomatik olarak yeniden oluşturuluyor  
+##  <a name="Regenerating"></a> Kodu otomatik olarak yeniden oluşturuluyor  
  Genellikle, birkaç dosyalarında bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözümü ile bir giriş model oluşturulur. Her dosya kendi şablonu, ancak tüm aynı modelin başvurur şablonları oluşturulur.  
   
  Kaynak modeli değişirse, Çözümdeki tüm şablonları yeniden çalıştırmanız gerekir. Bunu el ile yapmak için seçin **tüm şablonları dönüştürme** üzerinde **yapı** menüsü.  
@@ -322,7 +320,7 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a>Varolan bir dosyanın bir şablona dönüştürme  
+##  <a name="Converting"></a> Varolan bir dosyanın bir şablona dönüştürme  
  Yararlı şablonları bunlar çok, bazı eklenen program kod ile birlikte oluşturdukları dosyaları gibi göründüğünü özelliğidir. Bu şablon oluşturma, kullanışlı bir yöntem önerir. Bir sıradan dosyası gibi bir prototip olarak oluşturmanız bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] dosya ve sonuçta elde edilen dosyasını değişir oluşturma koduna kademeli olarak tanıtır.  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Varolan bir dosyanın bir tasarım zamanı şablona dönüştürmek için  

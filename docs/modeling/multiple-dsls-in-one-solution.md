@@ -1,21 +1,19 @@
 ---
-title: "Bir çözümde birden çok DSL'ler | Microsoft Docs"
-ms.custom: 
+title: Bir çözümde birden çok DSL'ler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e7b1ef7fc26cb0e46ecaf1853d6c9490016e68a5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f7614189f73880bcf07f418e3bd72400f460f721
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Bir Çözümde Birden Çok DSL
 Böylece birlikte yüklenir tek bir çözümün bir parçası olarak birkaç DSL'ler paketleyebilirsiniz.  
@@ -50,11 +48,11 @@ Böylece birlikte yüklenir tek bir çözümün bir parçası olarak birkaç DSL
   
     2.  Her DSL, seçin **İçerik Ekle** ekleyin:  
   
-        -   `Dsl*`Proje olarak bir **MEF Bileşeni**  
+        -   `Dsl*` Proje olarak bir **MEF Bileşeni**  
   
-        -   `DslPackage*`Proje olarak bir **MEF Bileşeni**  
+        -   `DslPackage*` Proje olarak bir **MEF Bileşeni**  
   
-        -   `DslPackage*`Proje olarak bir **VS Paketi**  
+        -   `DslPackage*` Proje olarak bir **VS Paketi**  
   
 3.  Çözümü oluşturun.  
   

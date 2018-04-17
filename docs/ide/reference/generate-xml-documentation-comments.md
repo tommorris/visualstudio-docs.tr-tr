@@ -1,21 +1,19 @@
 ---
-title: "Visual Studio'daki XML belge açıklamaları ekleme | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'daki XML belge açıklamaları ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 01/26/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a98373280aa789e3c2381c5afc7d6c60c53dd171
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0fae2411a77f405404e34c7a2357554c1e5398ab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Nasıl yapılır: ekleme belgeleri oluşturma için XML açıklamaları
 
@@ -36,7 +34,7 @@ Visual Studio size yardımcı olabilir belge kod öğeleri sınıflar ve yöntem
 
    - Sağ tıklatın veya bağlam menüsünden veya yalnızca code öğesi üstü seçin **parçacığı** > **Açıklama Ekle**
 
-   XML şablonu hemen kod öğenin üstüne oluşturulur. Örneğin, bir yöntem yorum, ürettiği  **\<Özet\>**  öğesi, bir  **\<param\>**  öğesi her bir parametreyi ve bir için **\<döndürür\>**  dönüş değeri belge öğesi.
+   XML şablonu hemen kod öğenin üstüne oluşturulur. Örneğin, bir yöntem yorum, ürettiği **\<Özet\>** öğesi, bir **\<param\>** öğesi her bir parametreyi ve bir için**\<döndürür\>** dönüş değeri belge öğesi.
 
    ![XML açıklama şablon - C#](media/doc-preview-cs.png)
 

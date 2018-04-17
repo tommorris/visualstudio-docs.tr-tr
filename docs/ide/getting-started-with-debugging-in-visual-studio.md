@@ -1,32 +1,28 @@
 ---
-title: "Visual Studio'da hata ayıklamaya başlama | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'da hata ayıklamaya başlama | Microsoft Docs
+ms.custom: ''
 ms.date: 12/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 085ea00f95124eb6ae2ed7ccc96eed692be0d649
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Visual Studio'da hata ayıklamaya başlama
 Visual Studio Proje derleme ve hata ayıklama araçları güçlü tümleşik kümesi sağlar. Bu konuda, kullanıcı Arabirimi özelliklerini hata ayıklama en temel kümesi'ni kullanmaya başlamak öğrenin.  
 
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa.
 
-## <a name="my-code-doesnt-work-help-me-visual-studio"></a>Kodumu işe yaramaz. Help me, Visual Studio!  
+## <a name="my-code-doesnt-work-help-me-visual-studio"></a>Kodumu işe yaramaz. Bana, Visual Studio Yardım!  
  Out Düzenleyicisi dahil edilir böylece ve bazı kodlar oluşturduysanız. Şimdi, bu kod hata ayıklamayı başlatmak istiyor. Visual Studio'da çoğu IDE gibi ile hata ayıklama için iki aşama vardır: yakalamak ve proje ve derleyici hataları; çözümlemek için kod oluşturma Bu kodu yakalamak ve çalışma zamanı ve dinamik hatalarını gidermek için ortamında ve çalıştırma.  
 
 ### <a name="build-your-code"></a>Kodunuzu oluşturma  
@@ -49,7 +45,7 @@ Projenizi derleme için en kolay yolu basmaktır **F7**, ancak derleme seçerek 
 
  ![Visual Studio çıkış ve hata listesi](../ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
 
- Tıklatın hata satırında **hata listesi** penceresini açın ve hata oluşuyor satır atlanır. (Veya satır numaralarını tıklayarak açmak **hızlı başlatma** "numaraları içine satır" yazın ve Enter tuşuna basarak sağ üst, çubuğunda. Bu almak için en hızlı yoludur **seçenekleri** Burada, açmanız satır numaralarını penceresi girişi. Kullanmayı öğrenin **hızlı başlatma** çubuğunu ve kendiniz çok UI tıklama kaydedin!)  
+ Tıklatın hata satırında **hata listesi** penceresini açın ve hata oluşuyor satır atlanır. (Veya satır numaralarını tıklayarak açmak **hızlı başlatma** "satır numaralarını" içine yazarak ve basarak sağ üst, çubuğunda **Enter**. Bu almak için en hızlı yoludur **seçenekleri** Burada, açmanız satır numaralarını penceresi girişi. Kullanmayı öğrenin **hızlı başlatma** çubuğunu ve kendiniz çok UI tıklama kaydedin!)  
 
  ![Satır numaraları ile Visual Studio düzenleyicisinde](../ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
 
@@ -85,9 +81,9 @@ Projenizi derleme için en kolay yolu basmaktır **F7**, ancak derleme seçerek 
 
  Ampuller, düzenleme, düzeltmek veya kodunuzu iyileştirmek için bir fırsat kodu çözümleyiciler belirlemek her yerde kullanılabilir. Herhangi bir kod satırında, bağlam menüsünü açmak için sağ tıklayıp **hızlı Eylemler** (veya yeniden, verimliliği tercih ederseniz, basın **Ctrl +**.). Yeniden düzenleme veya geliştirme seçenekleri yoksa bunlar görüntülenir; Aksi takdirde, ileti `No quick options available here` IDE sol alt köşesinde çerçeve içinde görüntülenir.  
 
- ![Visual Studio ampul 'seçeneği' metin](../ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
+ ![Visual Studio 'seçeneği' metin göre ampul](../ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
 
- Deneyim, hızlı bir şekilde ok tuşlarını kullanabilirsiniz ve **Ctrl +**. Hızlı fırsatları yeniden düzenleme seçeneği işaretleyin ve kodunuzu temizlemek amacıyla!  
+ Deneyim, hızlı bir şekilde ok tuşlarını kullanabilirsiniz ve **Ctrl +**. fırsatları yeniden düzenleme hızlı seçeneklerini denetleme ve kodunuzu Temizleme için!  
 
  Ampuller hakkında daha fazla bilgi için okuma [ampullerle hızlı eylemler gerçekleştirme](../ide/perform-quick-actions-with-light-bulbs.md).  
 
@@ -117,7 +113,7 @@ Projenizi derleme için en kolay yolu basmaktır **F7**, ancak derleme seçerek 
 
 4.  C veya C++ kodu, kod durdurmak için kullanım kesme noktaları bunu yazıyorsanız, bellekle ilgili hataları için hata ayıklama sırasında adres değerleri (NULL bakın) ve başvuru sayıları inceleyebilirsiniz.  
 
- Kesme noktaları kullanma hakkında daha fazla bilgi için okuma [kullanarak kesme noktaları](../debugger/using-breakpoints.md).  
+ Kesme noktaları kullanma hakkında daha fazla bilgi için okuma [kesme noktalarını kullanma](../debugger/using-breakpoints.md).  
 
 ### <a name="inspect-your-code-at-run-time"></a>Çalışma zamanında kodunuzu inceleyin.  
  Çalışan kodunuzu bir kesme noktası ve duraklatır geldiğinde, sarı (geçerli deyimi) olarak işaretlenmiş kod satırı henüz yürüttü değil. Bu noktada, geçerli deyimini yürütün ve sonra değiştirilmiş değerleri incelemek isteyebilirsiniz. Birkaç kullanabilirsiniz *adım* Hata Ayıklayıcısı'ndaki kod yürütmek için komutları. İşaretli kodu yöntem çağrısı ise, içine tuşlarına basarak adım **F11**. Ayrıca *üzerinden adım* basarak kod satırı **F10**. Ek komutlar ve aracılığıyla koda adım hakkında ayrıntılar için okuma [kod hata ayıklayıcısını kullanmaya gidin](../debugger/navigating-through-code-with-the-debugger.md).
@@ -132,7 +128,7 @@ Projenizi derleme için en kolay yolu basmaktır **F7**, ancak derleme seçerek 
 
  Şu anda içeren alanlara ve değerleri görmek için bir değişken gelin. Beklemediğiniz bir değer görürseniz, önceki veya arama kod satırıyla, büyük olasılıkla bir hata bulunmaktadır.  Daha ayrıntılı bilgi için [daha fazla bilgi edinin](../debugger/getting-started-with-the-debugger.md) hata ayıklayıcıyı kullanma hakkında.
 
- Ayrıca, Visual Studio Burada, uygulamanızın CPU ve bellek kullanımı zamanla inceleyebileceğiniz tanılama araçları penceresini görüntüler. Daha sonra uygulama geliştirme, beklenmeyen yoğun CPU kullanımı veya bellek ayırma için aramak için bu araçları kullanabilirsiniz. İle birlikte kullanmak **izleme** penceresini açın ve ne beklenmeyen ağır kullanımı veya yayımlanmamış kaynakları neden olduğunu belirlemek için kesme noktaları.  Daha fazla bilgi için bkz: [özelliği turu profil](../profiling/profiling-feature-tour.md).
+ Ayrıca, Visual Studio görüntüler **tanılama araçları** penceresinde, burada, gözlemlemek uygulamanızın CPU ve bellek kullanımı Zamanla. Daha sonra uygulama geliştirme, beklenmeyen yoğun CPU kullanımı veya bellek ayırma için aramak için bu araçları kullanabilirsiniz. İle birlikte kullanmak **izleme** penceresini açın ve ne beklenmeyen ağır kullanımı veya yayımlanmamış kaynakları neden olduğunu belirlemek için kesme noktaları.  Daha fazla bilgi için bkz: [özelliği turu profil](../profiling/profiling-feature-tour.md).
 
 ### <a name="run-unit-tests"></a>Birim testleri çalıştırma  
  Birim testleri çünkü doğru yapıldığında, bunlar tek bir kod, tek bir işlev genellikle, "Birim" test, ilk karşı savunma hattı kod hataları ve tam programınızı hata ayıklama daha hata ayıklamak genellikle çok daha kolay. Visual Studio hem yönetilen hem de yerel kod için Microsoft birim test çerçevelerini yükler. Birim testleri oluşturmak, bunları çalıştırmak ve sonuçları bu testler, rapor için bir birim testi çerçevesi kullanın. Kodunuzun doğru şekilde çalışıp çalışmadığını sınamak için değişiklik yaptığınız zaman yeniden çalıştır birim testleri. Visual Studio Enterprise edition kullandığınızda, her yapıdan sonra otomatik olarak testleri çalıştırabilirsiniz.  
@@ -157,5 +153,5 @@ Projenizi derleme için en kolay yolu basmaktır **F7**, ancak derleme seçerek 
  ![Visual Studio kod çözümleme uyarısı vurgulu](../ide/media/vs_ide_gs_debug_code_analysis_warning_hover.png "vs_ide_gs_debug_code_analysis_warning_hover")  
 
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)  
+ [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)  
  [Hata ayıklayıcıyı kullanma hakkında daha fazla bilgi edinin](../debugger/getting-started-with-the-debugger.md)

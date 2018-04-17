@@ -1,28 +1,26 @@
 ---
-title: "Nasıl yapılır: sınıf diyagramlarını (Sınıf Tasarımcısı) özelleştirme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: sınıf diyagramlarını (Sınıf Tasarımcısı) özelleştirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, customizing
 - shapes, removing type from class diagrams
 - type shapes, removing from class diagrams
 - class diagrams, removing type shapes
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
-caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ab6776ccdf8f3abe98190855ec41dc226677db61
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5a2f58626008ba50f436f7836fe13ca92fcce155
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Nasıl Yapılır: Sınıf Diyagramlarını Özelleştirme (Sınıf Tasarımcısı)
 Sınıf diyagramlarının bilgileri görüntüleme biçimini değiştirebilirsiniz. Tüm diyagramı veya tasarım yüzeyinde tek tek türleri özelleştirebilirsiniz.  
@@ -54,7 +52,7 @@ Tür üyelerini içeren bölümlere (bir sınıf içindeki Özellikler bölümü
   
 -   [Türü şekli ve arka plandaki kod silme](how-to-customize-class-diagrams.md#DeleteTypeShapeAndCode)  
   
-##  <a name="ZoomInOut"></a>Sınıf diyagramında ve Yakınlaştır  
+##  <a name="ZoomInOut"></a> Sınıf diyagramında ve Yakınlaştır  
   
 1.  Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
   
@@ -67,7 +65,7 @@ Tür üyelerini içeren bölümlere (bir sınıf içindeki Özellikler bölümü
     > [!NOTE]
     >  Yakınlaştırma seviyesinin değiştirilmesi sınıf diyagramı çıktınızın ölçeğini etkilemez.  
   
-##  <a name="CustomizeGroupingSorting"></a>Gruplandırma ve türü üyeleri sıralama özelleştirme  
+##  <a name="CustomizeGroupingSorting"></a> Gruplandırma ve türü üyeleri sıralama özelleştirme  
   
 1.  Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
   
@@ -81,7 +79,7 @@ Tür üyelerini içeren bölümlere (bir sınıf içindeki Özellikler bölümü
   
     3.  **Alfabetik olarak sıralamak** öğeleri, bir varlığın tek alfabetik listesi olarak oluşturan gösterir. Liste artan düzende sıralanır.  
   
-##  <a name="HideCompartments"></a>Bir türdeki bölmeler Gizle  
+##  <a name="HideCompartments"></a> Bir türdeki bölmeler Gizle  
   
 1.  Sınıf tasarımcısında bir sınıf diyagramı dosyasını açın ve seçin.  
   
@@ -91,7 +89,7 @@ Tür üyelerini içeren bölümlere (bir sınıf içindeki Özellikler bölümü
   
      Seçili bölme tür kapsayıcısından kaybolur.  
   
-##  <a name="HideMembers"></a>Bir türdeki tek tek üyeleri Gizle  
+##  <a name="HideMembers"></a> Bir türdeki tek tek üyeleri Gizle  
   
 1.  Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
   
@@ -101,7 +99,7 @@ Tür üyelerini içeren bölümlere (bir sınıf içindeki Özellikler bölümü
   
      Seçili üye tür kapsayıcısından kaybolur.  
   
-##  <a name="DisplayHiddenCompartmentsAndMemberrs"></a>Bir türde gizli bölmeler ve üyeleri Göster  
+##  <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Bir türde gizli bölmeler ve üyeleri Göster  
   
 1.  Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
   
@@ -111,7 +109,7 @@ Tür üyelerini içeren bölümlere (bir sınıf içindeki Özellikler bölümü
   
      Tüm gizli bölmeler ve üyeler tür kapsayıcısında görünür.  
   
-##  <a name="HideAssociationAndInheritance"></a>İlişkileri Gizle  
+##  <a name="HideAssociationAndInheritance"></a> İlişkileri Gizle  
   
 1.  Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
   
@@ -123,7 +121,7 @@ Tür üyelerini içeren bölümlere (bir sınıf içindeki Özellikler bölümü
   
      Tüm gizli bölmeler ve üyeler tür kapsayıcısında görünür.  
   
-##  <a name="DisplayAssociationAndInheritance"></a>Gizli ilişkileri göster  
+##  <a name="DisplayAssociationAndInheritance"></a> Gizli ilişkileri göster  
   
 1.  Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
   
@@ -131,7 +129,7 @@ Tür üyelerini içeren bölümlere (bir sınıf içindeki Özellikler bölümü
   
  Tıklatın **tüm üyeleri Göster** ilişkilendirme satırları ve tıklatın **Göster temel sınıf** veya **türetilmiş sınıfları Göster** devralma satırlar için.  
   
-##  <a name="RemoveCodeAndShape"></a>Bir şekli bir sınıf diyagramdan Kaldır  
+##  <a name="RemoveCodeAndShape"></a> Bir şekli bir sınıf diyagramdan Kaldır  
 Türün temelini oluşturan koda etkisi olmaksızın, bir tür şeklini sınıf diyagramından kaldırabilirsiniz. Tür şekillerinin bir sınıf diyagramından kaldırılması yalnızca o diyagramı etkiler: Türü tanımlayan temel kod ve türü görüntüleyen diğer diyagramlar bundan etkilenmez.  
   
 1.  Sınıf diyagramında, diyagramdan kaldırmak istediğiniz tür şeklini seçin.  
@@ -140,7 +138,7 @@ Türün temelini oluşturan koda etkisi olmaksızın, bir tür şeklini sınıf 
   
      Tür şekli ve varsa bu şekle bağlı ilişkilendirme ya da devralma çizgileri bundan böyle diyagramda görünmez.  
   
-##  <a name="DeleteTypeShapeAndCode"></a>Türü şekli ve arka plandaki kod silme  
+##  <a name="DeleteTypeShapeAndCode"></a> Türü şekli ve arka plandaki kod silme  
   
 1.  Tasarım yüzeyinde şekle sağ tıklayın.  
   
@@ -152,4 +150,4 @@ Türün temelini oluşturan koda etkisi olmaksızın, bir tür şeklini sınıf 
 [Sınıf diyagramları ile çalışma](working-with-class-diagrams.md)   
 [Nasıl yapılır: üye gösterimi ile ilişkilendirme gösterimi arasında değişiklik](how-to-change-between-member-notation-and-association-notation.md)   
 [Nasıl yapılır: Varolan türleri görüntüleme](how-to-view-existing-types.md)   
-[Türleri ve ilişkilendirmeleri görüntüleme](viewing-types-and-relationships.md)
+[Türleri ve İlişkileri Görüntüleme](viewing-types-and-relationships.md)

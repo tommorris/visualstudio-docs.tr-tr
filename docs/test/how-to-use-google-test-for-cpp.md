@@ -1,18 +1,18 @@
 ---
-title: "Visual Studio'da C++ için Google Test kullanma | Microsoft Docs"
+title: Visual Studio'da C++ için Google Test kullanma | Microsoft Docs
 ms.date: 11/04/2017
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 35cc31bbe7a1d83270035217dc36fce5f3a8ab6d
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: d525a9aae0f376ada2cbb48b2ac07acbb21f436c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Visual Studio'da C++ için Google Test kullanma
 İçinde **Visual Studio 2017 sürüm 15,5** ve daha sonra Visual Studio IDE içinde varsayılan bileşeni olarak Google Test tümleşiktir **C++ ile masaüstü Develoment** iş yükü. Makinenize yüklü olduğunu doğrulamak için Visual Studio Yükleyicisi'ni açın ve Google Test iş yükü bileşenlerin listesi altında bulabilirsiniz:

@@ -1,13 +1,10 @@
 ---
-title: ".NET bellek ayırma görünümü | Microsoft Docs"
-ms.custom: 
+title: .NET bellek ayırma görünümü | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - profiling tools, Allocation view
 - profiling tools reports, Allocation view
 ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3e191509b7b0ed80447399eeb533c4a318ad8c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef4e52257941192b12a2f7eb57393a536ab02e32
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-memory-allocations-view"></a>.NET Bellek Ayırma Görünümü
 Ayırmalar görünümü profil çalışması sırasında oluşturulan türlerini listeler. Her tür ayırma sonuçlandı işlevi yürütme yollarını görüntüler bir çağrı ağacı kök düğümü türüdür.  
@@ -53,7 +49,7 @@ Ayırmalar görünümü profil çalışması sırasında oluşturulan türlerini
 |**Modül yolu**|Tür veya işleve içeren modülü yolu.|  
 |**Kaynak dosya**|Tür veya işlev için tanım içeriyor kaynak dosya.|  
 |**İşlev satır numarası**|Bu tür tanımı veya kaynak dosya işlevi başlangıç satır sayısı.|  
-|**Düzeyi**|Verileri bir tür veya işlev için olup olmadığını gösterir.|  
+|**düzeyi**|Verileri bir tür veya işlev için olup olmadığını gösterir.|  
 |**Kapsayıcı ayırmaları**|-Bir işlev için üst türü işlev tarafından oluşturulan nesnelerin toplam sayısı. Bu sayı, alt işlevlerde oluşturulan nesneleri içerir.<br />-Bir türü için oluşturulan örnekleri bu türdeki toplam sayısı.|  
 |**Kapsayıcı ayırmaları %**|-Bir işlev için işlevi tarafından üst tür (bunlar dahil) tahsis edilen profil Çalıştır oluşturulan tüm nesneler yüzdesi.<br />-İçin bir tür, profil çalıştırdığınızda oluşturulan nesneleri toplam sayısı yüzdesi türdeki örneklerin yoktu.|  
 |**Özel ayırmaları**|-Bir işlev için işlevi, doğrudan çağrı yığını üstünde yürütülürken zaman, oluşturulan nesne sayısı. Bu sayı, alt işlevlerde oluşturulan nesneler içermez.<br />-Bir türü için oluşturulan örnekleri bu türdeki toplam sayısı.|  

@@ -1,23 +1,21 @@
 ---
-title: "3. adım: geri sayım Zamanlayıcısı ekleme | Microsoft Docs"
-ms.custom: 
+title: '3. adım: geri sayım Zamanlayıcısı ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
-caps.latest.revision: "23"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 09d956f897e81d5e785c561a69cc8b716375676d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 15f398aa90ea4565fea5645abeb1b2570a7ffc29
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-3-add-a-countdown-timer"></a>3. Adım: Geri Sayım Zamanlayıcısı Ekleme
 Bu öğreticinin üçüncü bölümünde test alanın tamamlamak kalan saniye sayısını izlemek için geri sayım Zamanlayıcısı ekleyeceksiniz.  

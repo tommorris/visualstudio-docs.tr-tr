@@ -1,12 +1,10 @@
 ---
-title: "Visual Studio'da Office çözümleri mimarisi | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'da Office çözümleri mimarisi | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], architecture
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 021d080cd37044f0365b8535f1df99c1669cf092
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5b62fc532ba2caeaaf07bb4069aaa5a41820f804
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio'da Office Çözümleri Mimarisi
   Bu bölümdeki konular, Visual Studio'da Office geliştirici araçları kullanılarak oluşturulan çözümlerin nasıl çalıştığı hakkında bilgi sağlar.  
@@ -47,16 +46,16 @@ ms.lasthandoff: 01/10/2018
  Belge düzeyi özelleştirmelerinde özel belge özelliklerini nasıl çalıştığı açıklanmıştır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  İşletme Çözümleri geliştirmek için Microsoft Office bir platform olarak kullanmaya giriş bilgileri sağlar.  
   
- [Başlarken &#40; Office geliştirme Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Başlarken &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Office çözümleri, çözümleri oluşturmaya başlamak nasıl ve ne Visual Studio'da Office geliştirici araçları önceki sürümlerinde bu yana değişti oluşturmak için geliştirme bilgisayarı yapılandırma hakkında daha fazla bilgi için bağlantılar sağlar.  
   
  [Office Çözümleri Tasarlama ve Oluşturma](../vsto/designing-and-creating-office-solutions.md)  
  Office çözümleri oluşturma hakkında daha fazla bilgi için bağlantılar sağlar.  
   
- [Genel başvuru &#40; Office geliştirme Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Genel başvuru &#40;Visual Studio'da Office geliştirme&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  Office projeleri ve API'leri için arabirim öğeleri Office projeleri, uygulama ve dağıtım bildirimlerini kullanıcı hakkında bilgilere bağlantılar sağlar [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
   

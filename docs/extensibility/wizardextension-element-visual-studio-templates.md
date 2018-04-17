@@ -1,30 +1,26 @@
 ---
-title: "WizardExtension öğesi (Visual Studio şablonları) | Microsoft Docs"
-ms.custom: 
+title: WizardExtension öğesi (Visual Studio şablonları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
 helpviewer_keywords:
 - WizardExtension element [Visual Studio Templates]
 - <WizardExtension> element [Visual Studio Templates]
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb0922d0d3666d1bb00f01c0151dfa14c24a3931
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5544f0d97fec3ae0b3102ed02c284b9c22a98b54
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension Öğesi (Visual Studio Şablonları)
 Şablon Sihirbazı'nı özelleştirme kayıt öğeleri içerir.  
@@ -62,7 +58,7 @@ ms.lasthandoff: 12/22/2017
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Proje şablonu, öğe şablonu veya starter kit tüm meta veriler içeriyor.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `WizardExtension`bir isteğe bağlı bir alt öğenin `VSTemplate`.  
+ `WizardExtension` bir isteğe bağlı bir alt öğenin `VSTemplate`.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, standart proje şablonu için meta verileri gösterir. bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows uygulaması.  

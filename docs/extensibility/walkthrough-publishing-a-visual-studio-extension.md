@@ -1,26 +1,24 @@
 ---
-title: "İzlenecek yol: Visual Studio uzantısı yayımlama | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Visual Studio uzantısı yayımlama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
 - web controls, publishing
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: be1402da1677388712472d4309c40ce767358f7b
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: f823334f3686bdba3406daac69b2a98d203780a7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>İzlenecek yol: Visual Studio uzantısını yayımlama
 
@@ -40,7 +38,7 @@ Bu durumda biz varsayılan VSPackage uzantısı kullanır, ancak aynı adımlar�
 
 1. Ürün adı, yazar ve sürüm doğru bilgilerle uzantısı vsixmanifest güncelleştirin.
 
-  ![update extension vsixmanifest](media/update-extension-vsixmanifest.png)
+  ![Uzantı vsixmanifest güncelleştir](media/update-extension-vsixmanifest.png)
 
 2. Uzantınızı yapı içinde **sürüm** modu. Şimdi uzantınızı VSIX \bin\Release klasöründeki olarak paketlenmiş.
 

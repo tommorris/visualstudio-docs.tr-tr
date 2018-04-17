@@ -1,23 +1,21 @@
 ---
 title: PerfTips | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cfcb4fdf488233a2be7ea55b57d041641f2ea882
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 301132b08e9d7cd6e1bedb12d8e92940e2615408
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="perftips"></a>PerfTips
 Visual Studio hata ayıklayıcısı *PerfTips* ve hata ayıklayıcısı ile tümleşik **tanılama araçları** izleme ve hata ayıklarken, uygulamanızın performansını analiz yardımcı olur.  
@@ -34,7 +32,7 @@ Visual Studio hata ayıklayıcısı *PerfTips* ve hata ayıklayıcısı ile tüm
   
  Aşağıdaki grafikte tanılama araçları penceresini Visual Studio 2015 güncelleştirme 1'de gösterilmektedir:  
   
- ![DiagnosticTools &#45; Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools Update1")  
+ ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools Update1")  
   
 -   **Kesme olayları** zaman çizelgesi hata ayıklama oturumunda isabet kesme noktaları işaretleyin. Tıklatma seçmek için bir olay **hata ayıklayıcı** ayrıntıları listesi.  
   

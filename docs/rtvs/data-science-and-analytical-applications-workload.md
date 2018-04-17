@@ -1,25 +1,22 @@
 ---
-title: "Visual Studio'da veri bilimi ve analitik uygulamaları iş yükü | Microsoft Docs"
+title: Veri bilimi ve analitik uygulamaları iş yükü
 description: "Visual Studio'da veri bilimi ve analitik uygulamaları iş yükü Python, R, F # ve Anaconda dahil olmak üzere kendi ilgili çalışma zamanı dağıtımları bir araya getirir."
-ms.custom: 
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 - devlang-python
-ms.tgt_pltfrm: 
-ms.topic: landing-page
+ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 3c84e2f3f79d49596ccd24f9f99da06eecc04351
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5b2a1eccfbf90784d19ded18667e8b336d920892
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>Veri bilimi ve analitik uygulamaları iş yükü
 
@@ -45,7 +42,7 @@ Varsayılan olarak, Visual Studio yükleyicisi iş yükü için Özet bölümün
   - Python dil desteği
   - [Anaconda3 64-bit](https://www.continuum.io) (kapsamlı veri bilimi kitaplıkları ve bir Python yorumlayıcısı içerir A Python distro)
   - Python web desteği
-  - - Cookiecutter şablon desteği
+  - Cookiecutter şablon desteği
 - R:
   - R dil desteği
   - R geliştirme araçları çalışma zamanı desteği
@@ -89,7 +86,7 @@ Veri bilimi ve analizi uygulamaları iş yükü doğrudan nedir yanı sıra, Azu
 
 Python için Azure SDK'sını kullanabilir ve Windows, Mac ve Linux üzerinde çalışan uygulamalardan Microsoft Azure hizmetlerini yönetmek kolaylaştırır. Daha fazla bilgi için bkz: [Python için Azure SDK'sı](../python/azure-sdk-for-python.md)
 
-(Şu anda önizlemede) Azure not defterlerini bulutta Microsoft Azure üzerinde çalışan Jupyter not defterleri için ücretsiz çevrimiçi erişim sağlar. Hizmet, Python, R ve F # başlamanıza yardımcı olmak için örnek not defterlerini içerir. Visit[notebooks.azure.com](https://notebooks.azure.com/).
+(Şu anda önizlemede) Azure not defterlerini bulutta Microsoft Azure üzerinde çalışan Jupyter not defterleri için ücretsiz çevrimiçi erişim sağlar. Hizmet, Python, R ve F # başlamanıza yardımcı olmak için örnek not defterlerini içerir. Ziyaret[notebooks.azure.com](https://notebooks.azure.com/).
 
 <!--Note link on the image because this one is large -->
 [![R örnek giriş ile Azure Not ekran görüntüleri](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png)

@@ -1,12 +1,10 @@
 ---
-title: "SharePoint özellikleri oluşturma | Microsoft Docs"
-ms.custom: 
+title: SharePoint özellikleri oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9fa42efc654bd3835a4f1ec1a5002136813550a0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-features"></a>SharePoint Özellikleri Oluşturma
   Daha kolay dağıtım için ilgili SharePoint Proje öğeleri gruplandırmak için bir SharePoint özelliğini kullanabilirsiniz. Özellikleri oluşturma kapsamlarını ayarlayın ve diğer özellikleri SharePoint özelliği Designer kullanarak bağımlılıklar olarak işaretleyin. Tasarımcı aynı zamanda her bir özelliğin tanımlayan bir XML dosyasıdır bir bildirim oluşturur.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
-|Başlık|İsteğe bağlı. Özelliğin varsayılan başlık kümesine *SolutionName**FeatureName*.|  
+|Başlık|İsteğe bağlı. Özelliğin varsayılan başlık kümesine *SolutionName ** FeatureName*.|  
 |Açıklama|İsteğe bağlı. SharePoint özelliğinin açıklaması.|  
 |Kapsam|Gerekli. Bir özellik kullanarak oluşturduysanız **Çözüm Gezgini**, kapsam Web'e varsayılan olarak ayarlanır.<br /><br /> -Grup: tüm sunucu grubu için özelliği etkinleştirin.<br /><br /> -Site: site koleksiyonundaki tüm web siteleri için özelliği etkinleştirin.<br /><br /> -Web: belirli bir web sitesi için özelliği etkinleştirin.<br /><br /> -WebApplication: bir web uygulamasındaki tüm web siteleri için özelliği etkinleştirin.|  
 |Çözüm öğeleri|Özelliği için eklenen tüm SharePoint öğeleri.|  

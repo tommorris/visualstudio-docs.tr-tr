@@ -2,22 +2,20 @@
 title: Özel T4 metin şablonu yönerge işlemcileri oluşturma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 305eb97d18e8513a92637cd92b1f28798677f314
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: e55ff7c1c0041e386980b55c9cca7c9263f0b62e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Özel T4 Metin Şablonu Yönerge İşlemcileri Oluşturma
 *Metin şablonu dönüştürme süreci* geçen bir *metin şablonu* dosyası olarak giriş ve çıkış olarak bir metin dosyası oluşturur. *Metin şablonu dönüştürme altyapısı* işlemi ve altyapı metin şablonu dönüştürme ana bilgisayar ve bir veya daha fazla metin şablonu ile etkileşim denetimleri *yönerge işlemcileri* tamamlamak için işlem. Daha fazla bilgi için bkz: [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).  

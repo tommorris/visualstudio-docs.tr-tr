@@ -1,25 +1,23 @@
 ---
-title: "Kulvarları özelliklerini | Microsoft Docs"
-ms.custom: 
+title: Kulvarları özelliklerini | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.swimlane
 helpviewer_keywords:
 - Domain-Specific Language, swimlane
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 39bb6be4146cf7e9e163b6da5ada6f447a930bc8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9a9a07549773d9881b3512bdb1b84c0cb6654280
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-swimlanes"></a>Kulvarların Özellikleri
 Bir diyagrama kulvarları ekleyebilirsiniz. Kulvarları diyagram dikey veya yatay alanlarına bölün. İçinde kulvarları görüntülenecek diğer şekiller tanımlayabilirsiniz. Daha fazla bilgi için bkz: [bir etki alanına özgü dil tanımlamak nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikleri kullanma hakkında daha fazla bilgi için bkz: [özelleştirme ve bir etki alanına özgü dil genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -29,12 +27,12 @@ Bir diyagrama kulvarları ekleyebilirsiniz. Kulvarları diyagram dikey veya yata
 |Özellik|Açıklama|Varsayılan|  
 |--------------|-----------------|-------------|  
 |Gövde dolgu rengi|Kulvar gövdesi için dolgu rengi.|Beyaz|  
-|Üstbilgi dolgu rengi|Kulvar üstbilgisinin dolgu rengi.|DarkGray|  
+|Üstbilgi dolgu rengi|Kulvar üstbilgisinin dolgu rengi.|Koyu gri|  
 |Ayırıcı rengi|Ayırıcı çizginin rengi.|LightGray|  
 |Ayırıcı çizgi stili|Ayırıcı çizgi stilini (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`, veya `Custom`).|`Dash`|  
 |Ayırıcı kalınlığı|İnç ayırıcı çizgi kalınlığı.|0.03125|  
 |Metin rengi|Bu Kulvar ile ilişkili metin dekoratörler için kullanılan rengi.|Siyah|  
-|Access Modifier|Sınıfının erişim düzeyini (`public` veya `internal`).|Ortak|  
+|Erişim değiştiricisi|Sınıfının erişim düzeyini (`public` veya `internal`).|Ortak|  
 |Özel Öznitelikler|Bu Kulvar oluşturulan kod sınıfı öznitelikler eklemek için kullanılır.|\<yok >|  
 |Çift oluşturur türetilmiş|Varsa `True`, bir taban sınıf ve bir parçalı sınıf (geçersiz kılmaları özelleştirmeyi desteklemek için) oluşturulur. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Özel bir oluşturucuya sahip|Varsa `True`, özel bir oluşturucu kaynak kodunda sağlanacaktır. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  

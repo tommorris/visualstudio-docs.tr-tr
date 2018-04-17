@@ -1,23 +1,21 @@
 ---
 title: Olaylar (VSPerfCmd) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3cfbeaa9c11bdb24b561e0dfdc10e8ab2a10053a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c3f7201c65a6ac3b5c7b58c547898589ffdcba9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="events-vsperfcmd"></a>Olaylar (VSPerfCmd)
 VSPerfCmd.exe **olayları** seçeneği olay Windows için izleme (ETW) günlüğe kaydedilmesini denetler. ETW verilerini Profil Oluşturucu veri dosyasından ayrı bir .etl dosyasına kaydedilir. Verileri kullanarak bir rapor görüntülenebilir [VSPerfReport](../profiling/vsperfreport.md) /summary:etw komutu.  
@@ -31,7 +29,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- **Üzerinde**&#124; **Kapalı**  
+ **Üzerinde**&#124;**devre dışı**  
  Başlatır veya olay veri toplamayı durdurur.  
   
  `Guid`  
@@ -44,7 +42,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  "0 x"-Olay sağlayıcısı tarafından tanımlanan onaltılık flags değeri öneki.  
   
  `Level`  
- Toplanan veri miktarını belirtir. `Level`Olay sağlayıcısı tarafından tanımlanır.  
+ Toplanan veri miktarını belirtir. `Level` Olay sağlayıcısı tarafından tanımlanır.  
   
  **Olayları** seçeneği anlar sağlayıcı adları olarak aşağıdaki çekirdek anahtar sözcükler:  
   
@@ -57,7 +55,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Görüntü**  
  Yük görüntü ve olayları kaldırma  
   
- **Disk**  
+ **disk**  
  Disk g/ç olayları  
   
  **Dosya**  

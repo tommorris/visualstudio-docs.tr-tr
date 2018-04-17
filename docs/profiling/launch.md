@@ -1,23 +1,21 @@
 ---
-title: "Başlatma | Microsoft Docs"
-ms.custom: 
+title: Başlatma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3b8a584e8e024416ec9c3feca63297eed4497624
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 11f9e850c43c615b6878bd1ff9e18be313bf1a79
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="launch"></a>Başlat
 **Başlatma** seçeneği profil oluşturucu örnekleme yöntemini kullanarak başlar ve ayrıca belirtilen uygulamayı başlatır.  
@@ -37,7 +35,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>Geçerli seçenekleri  
  Aşağıdaki VSPerfCmd seçenekleri ile birleştirilebilir **başlatma** tek bir komut satırı seçeneği.  
   
- **Başlangıç:**`Method`  
+ **Başlat:** `Method`  
  Komut satırı Profil Oluşturucu oturumu başlatır ve belirtilen profil oluşturma yöntemini ayarlar.  
   
  **GlobalOn**ve **GlobalOff**  
@@ -55,7 +53,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Console**  
  Yeni bir pencerede belirtilen komut satırı uygulamasını başlatır.  
   
- **Bağımsız değişken:**`ArgList`  
+ **Bağımsız değişken:** `ArgList`  
  Uygulamaya geçirilecek bağımsız değişkenleri listesini belirtir.  
   
  **LineOff**  
@@ -64,7 +62,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>Örnekleme seçenekleri  
  Örnekleme aralığı şunlardan biri belirtilebilir üzerinde **başlatma** komut satırı. Varsayılan örnekleme aralığı 10,000,000 işlemci saat döngüsü ' dir.  
   
- **Zamanlayıcı**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`] **Sayaç**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**ayırma**&#124; **Ömür**]  
+ **Zamanlayıcı**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`] **Sayaç**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**ayırma** &#124;  **Ömür**]  
  Örnekleme aralığı türü ve numarası belirtir.  
   
 -   **Zamanlayıcı** -Samples her `Cycles` durdurulamaz harici işlemci saat döngüsü. Varsa `Cycles` belirtilmezse, 10,000,000 döngüleri kullanılır.  

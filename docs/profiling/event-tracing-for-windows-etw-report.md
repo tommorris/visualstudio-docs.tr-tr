@@ -1,26 +1,24 @@
 ---
-title: "Windows (ETW) raporu için olay izleme | Microsoft Docs"
-ms.custom: 
+title: Windows (ETW) raporu için olay izleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Event tracing for Windows profiling report
 - ETW profiling report
 ms.assetid: 81e88162-b88a-40b6-8b85-a232c8096a47
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7fb851cbeed74bf34768a930297477f54eacf7f1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b195a8259ddec91ed2c84ee8c6571de87d53638d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Windows için Olay İzleme (ETW) Raporu
 Olay izleme için Windows (ETW) raporu bir performans oturumda kaydedilmiş ETW olayları listeler [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları. ETW verilerini bir ikili (.etl) dosyasında toplanır.  
@@ -36,7 +34,7 @@ Olay izleme için Windows (ETW) raporu bir performans oturumda kaydedilmiş ETW 
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**Zaman damgası**|Olay oluştuğunda tanımlar.|  
+|**zaman damgası**|Olay oluştuğunda tanımlar.|  
 |**İşlem kimliği**|Olayı oluşturan işlem tanımlar.|  
 |**İş parçacığı kimliği**|Olayı oluşturan iş parçacığı tanımlar.|  
 |**Açıklama**|Olay sağlayıcısı tanımlar.|  

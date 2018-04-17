@@ -1,27 +1,24 @@
 ---
-title: "SQL Server, Visual Studio için R araçları ile tümleştirme | Microsoft Docs"
-description: "Visual Studio oluşturma ve çalıştırma R gelen SQL sorguları ve saklı yordamlar ile çalışmak R özelliği destekler."
-ms.custom: 
+title: SQL Server R ile tümleştirme
+description: Visual Studio oluşturma ve çalıştırma R gelen SQL sorguları ve saklı yordamlar ile çalışmak R özelliği destekler.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
 - SQL
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 4733d51d40b0aabffa108a1f99e4e492599b67c2
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 1775cce355c8d793f25847ca9e618b3d06751a4d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-sql-server-and-r"></a>SQL Server ve R ile çalışma
 

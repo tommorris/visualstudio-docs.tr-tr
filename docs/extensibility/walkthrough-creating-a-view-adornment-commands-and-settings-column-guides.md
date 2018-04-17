@@ -1,23 +1,21 @@
 ---
-title: "Bir görünüm Adornment, komutları ve ayarlar oluşturma | Microsoft Docs"
-ms.custom: 
+title: Bir görünüm Adornment, komutları ve ayarlar oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 57a7696eae0da92d88babf64c580a4767775dffd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>İzlenecek yol: bir görünüm Adornment, komutları ve ayarları (sütun kılavuzları) oluşturma
 Visual Studio metin/Kod düzenleyicisinde komutlar ve görünüm efektleri ile genişletebilirsiniz.  Bu konu popüler uzantısına sahip bir özellik, sütun kılavuzları başlayacağınızı gösterir.  Sütun kılavuzları kodunuzu belirli sütun genişliklerini yönetmenize yardımcı olmak için metin düzenleyici görünümünde çizilmiş görsel olarak açık satırlar gelir.  Özel olarak biçimlendirilmiş kod belgeleri, blog gönderileri, dahil etmek veya raporları hata örnekleri için önemli olabilir.  
@@ -54,13 +52,13 @@ Visual Studio metin/Kod düzenleyicisinde komutlar ve görünüm efektleri ile g
   
 -   Var olan bir `ColumnGuideCommands` kullanıcı komutları uygulayan ve komutlar için komut işleyicileri kancalarını nesne .vsct dosyasında bildirildi.  
   
- **VSIX**.  Kullanım **dosyası &#124; Yeni...**  bir proje oluşturmak için komutu.  Sol Gezinti Bölmesi'nde genişletilebilirlik düğümünde C# ' ı seçin ve Seç **VSIX proje** sağ bölmede.  ColumnGuides adı girin ve seçin **Tamam** projesi oluşturmak için.  
+ **VSIX**.  Kullanım **dosya &#124; yeni...**  bir proje oluşturmak için komutu.  Sol Gezinti Bölmesi'nde genişletilebilirlik düğümünde C# ' ı seçin ve Seç **VSIX proje** sağ bölmede.  ColumnGuides adı girin ve seçin **Tamam** projesi oluşturmak için.  
   
- **Görüntüleme adornment**.  Çözüm Gezgini'nde proje düğümüne sağ işaretçi düğmesine basın.  Seçin **eklemek &#124; Yeni öğe...**  yeni bir görünüm adornment öğesi eklemek için komutu.  Seçin **genişletilebilirlik &#124; Düzenleyici** sol gezinti bölmesinde ve **Düzenleyicisi görünüm penceresinin Adornment** sağ bölmede.  Öğe adı olarak ColumnGuideAdornment adını girin ve seçin **Ekle** ekleyin.  
+ **Görüntüleme adornment**.  Çözüm Gezgini'nde proje düğümüne sağ işaretçi düğmesine basın.  Seçin **ekleme &#124; yeni öğe...**  yeni bir görünüm adornment öğesi eklemek için komutu.  Seçin **genişletilebilirlik &#124; Düzenleyicisi** sol gezinti bölmesinde ve **Düzenleyicisi görünüm penceresinin Adornment** sağ bölmede.  Öğe adı olarak ColumnGuideAdornment adını girin ve seçin **Ekle** ekleyin.  
   
  Proje (yanı sıra başvuruları ve benzeri) Bu öğe şablonu eklenen iki dosya görebilirsiniz: ColumnGuideAdornment.cs ve ColumnGuideAdornmentTextViewCreationListener.cs.  Şablonları yalnızca görünümünde mor dikdörtgen çizin.  Aşağıda birkaç görünüm oluşturma dinleyicisi satırları değiştirmek ve ColumnGuideAdornment.cs içeriğini değiştirin.  
   
- **Komutları**.  Çözüm Gezgini'nde proje düğümüne sağ işaretçi düğmesine basın.  Seçin **eklemek &#124; Yeni öğe...**  yeni bir görünüm adornment öğesi eklemek için komutu.  Seçin **genişletilebilirlik &#124; VSPackage** sol gezinti bölmesinde ve **özel komut** sağ bölmede.  Öğe adı olarak ColumnGuideCommands adını girin ve seçin **Ekle** ekleyin.  Birkaç başvuruları ek olarak, komutlar ve paket ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs ve ColumnGuideCommandsPackage.vsct eklenmeden.  Aşağıda tanımlamak ve komutları uygulamak için ilk ve son dosyaların içeriğini yerini alır.  
+ **Komutları**.  Çözüm Gezgini'nde proje düğümüne sağ işaretçi düğmesine basın.  Seçin **ekleme &#124; yeni öğe...**  yeni bir görünüm adornment öğesi eklemek için komutu.  Seçin **genişletilebilirlik &#124; VSPackage** sol gezinti bölmesinde ve **özel komut** sağ bölmede.  Öğe adı olarak ColumnGuideCommands adını girin ve seçin **Ekle** ekleyin.  Birkaç başvuruları ek olarak, komutlar ve paket ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs ve ColumnGuideCommandsPackage.vsct eklenmeden.  Aşağıda tanımlamak ve komutları uygulamak için ilk ve son dosyaların içeriğini yerini alır.  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>Metin görünümü oluşturma dinleyicisi ayarlama  
  ColumnGuideAdornmentTextViewCreationListener.cs düzenleyicisinde açın.  Visual Studio metin görünümler her oluşturur için bu kodu bir işleyici uygular.  İşleyici görünümü özelliklere bağlı olarak zaman çağrıldığını denetim özniteliği vardır.  
@@ -1214,7 +1212,7 @@ private int GetApplicableColumn(EventArgs e)
   
 ```  
   
- `GetCurrentEditorColumn`biraz almak için araştırma yapmak sahip bir <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> kod görünümü.  Aracılığıyla izleme varsa `GetActiveTextView`, `GetActiveView`, ve `GetTextViewFromVsTextView`, bunun nasıl yapılacağını görebilirsiniz.  Geçerli seçim ile başlayan seçimin çerçeve alma sonra çerçeve DocView olarak alma soyutlanır, ilgili kodu verilmiştir bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, ardından alınırken bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> IVsTextView silip bir görünüm konak alma ve Son olarak IWpfTextView:  
+ `GetCurrentEditorColumn` biraz almak için araştırma yapmak sahip bir <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> kod görünümü.  Aracılığıyla izleme varsa `GetActiveTextView`, `GetActiveView`, ve `GetTextViewFromVsTextView`, bunun nasıl yapılacağını görebilirsiniz.  Geçerli seçim ile başlayan seçimin çerçeve alma sonra çerçeve DocView olarak alma soyutlanır, ilgili kodu verilmiştir bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, ardından alınırken bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> IVsTextView silip bir görünüm konak alma ve Son olarak IWpfTextView:  
   
 ```csharp  
    IVsMonitorSelection selection =  
@@ -1288,7 +1286,7 @@ private static int GetCaretColumn(IWpfTextView textView)
  Kullanıcı tıklattınız burada geçerli sütunla ele kod yalnızca eklemek veya sütunu kaldırmak için ayarları Yöneticisi çağırır.  Ayarlar Yöneticisi için tüm olay harekete `ColumnGuideAdornment` nesneleri dinleme.  Olay başlatıldığında, bu nesnelerin kendi ilişkili metin görünümler yeni sütun kılavuzu ayarlarıyla güncelleştirin.  
   
 ## <a name="invoking-command-from-the-command-window"></a>Komut penceresinde bildirilecekse komutu  
- Sütun kılavuzları örnek komut penceresinde iki komutları genişletilebilirlik form olarak çağırmak kullanıcıların sağlar.  Kullanırsanız **Görünüm &#124; Diğer Windows &#124; Komut penceresinde** komutu, komut penceresinde görebilirsiniz.  "Düzenle" girerek komut penceresi ile etkileşim kurabilir ve komut adı tamamlama ve 120 bağımsız değişkeni sağladığını ile aşağıdakilere sahip:  
+ Sütun kılavuzları örnek komut penceresinde iki komutları genişletilebilirlik form olarak çağırmak kullanıcıların sağlar.  Kullanırsanız **Görünüm &#124; diğer pencereler &#124; komut penceresi** komutu, komut penceresinde görebilirsiniz.  "Düzenle" girerek komut penceresi ile etkileşim kurabilir ve komut adı tamamlama ve 120 bağımsız değişkeni sağladığını ile aşağıdakilere sahip:  
   
 ```  
 > Edit.AddColumnGuide 120  

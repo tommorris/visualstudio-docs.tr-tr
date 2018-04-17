@@ -1,12 +1,9 @@
 ---
-title: "XDCMake görevi | Microsoft Docs"
-ms.custom: 
+title: XDCMake görevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.task.xdcmake
 dev_langs:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - XDCMake task (MSBuild (Visual C++))
 - MSBuild (Visual C++), XDCMake task
 ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab068fde2d0d30d0043fabad116e08dbc182d52d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f513580dfbb17ce21bc12252d1c1dd67304216ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xdcmake-task"></a>XDCMake Görevi
 XML Belge açıklama (.xdc) dosyaları bir .xml dosyasına birleştirir XML belgeleri Aracı (xdcmake.exe) sarmalar.  
@@ -47,7 +43,7 @@ XML Belge açıklama (.xdc) dosyaları bir .xml dosyasına birleştirir XML belg
 |**AdditionalDocumentFile**|İsteğe bağlı **String []** parametresi.<br /><br /> Birleştirmek için bir veya daha fazla ek .xdc dosyalarını belirtir.<br /><br /> Daha fazla bilgi için bkz: **ek belge dosyaları** açıklamasında [XML belgesi oluşturma aracı özellik sayfaları](/cpp/ide/xml-document-generator-tool-property-pages). Ayrıca bkz. **/eski** ve **/Fs** xdcmake.exe için komut satırı seçenekleri.|  
 |**AdditionalOptions**|İsteğe bağlı **dize** parametresi.<br /><br /> Komut satırında belirtilen seçeneklerinin listesi. Örneğin, "*/option1 /option2 /option#*". Diğer tarafından temsil edilmez seçeneklerini belirtmek için bu parametreyi kullanın **XDCMake** görev parametresi.<br /><br /> Daha fazla bilgi için bkz: [XDCMake başvurusu](/cpp/ide/xdcmake-reference), [XML belgesi oluşturma aracı özellik sayfaları](/cpp/ide/xml-document-generator-tool-property-pages)ve komut satırı Yardım (**/?**) xdcmake.exe için.|  
 |**DocumentLibraryDependencies**|İsteğe bağlı **Boolean** parametresi.<br /><br /> Varsa `true` ve geçerli projenin bir statik kitaplık (.lib) projede çözümdeki bir bağımlılığa sahiptir, kitaplığı proje .xdc dosyaları geçerli proje için .xml dosyası çıkış eklenir.<br /><br /> Daha fazla bilgi için bkz: **belge kitaplığı bağımlılıkları** açıklamasında [XML belgesi oluşturma aracı özellik sayfaları](/cpp/ide/xml-document-generator-tool-property-pages).|  
-|**ÇıktıDosyası**|İsteğe bağlı **dize** parametresi.<br /><br /> Varsayılan çıkış dosyası adı geçersiz kılar. Varsayılan adı işlenir ilk .xdc dosya adından türetilir.<br /><br /> Daha fazla bilgi için bkz: **/out:** `filename` seçeneğini [XDCMake başvurusu](/cpp/ide/xdcmake-reference). Ayrıca bkz. **/eski** ve **/Fo** xdcmake.exe için komut satırı seçenekleri.|  
+|**OutputFile**|İsteğe bağlı **dize** parametresi.<br /><br /> Varsayılan çıkış dosyası adı geçersiz kılar. Varsayılan adı işlenir ilk .xdc dosya adından türetilir.<br /><br /> Daha fazla bilgi için bkz: **/out:** `filename` seçeneğini [XDCMake başvurusu](/cpp/ide/xdcmake-reference). Ayrıca bkz. **/eski** ve **/Fo** xdcmake.exe için komut satırı seçenekleri.|  
 |**ProjectName**|İsteğe bağlı **dize** parametresi.<br /><br /> Geçerli projenin adı.|  
 |**SlashOld**|İsteğe bağlı **Boolean** parametresi.<br /><br /> Varsa `true`, ek xdcmake.exe seçeneklerini etkinleştirir.<br /><br /> Daha fazla bilgi için bkz: **/eski** xdcmake.exe için komut satırı seçeneği.|  
 |**Kaynakları**|Gerekli `ITaskItem[]` parametresi.<br /><br /> Tüketilen ve görevler tarafından gösterilen MSBuild kaynak dosya öğeleri dizisi tanımlar.|  

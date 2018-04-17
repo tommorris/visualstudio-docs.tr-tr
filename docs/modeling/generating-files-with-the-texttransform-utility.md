@@ -1,21 +1,21 @@
 ---
 title: Visual Studio'da TextTransform yardımcı programı ile dosyalar oluşturma | Microsoft Docs
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5ecc5af3c37889bc79dc5978c33caf8249433978
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 930d8982f8d34bae2870276623ae2d71a24372d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>TextTransform yardımcı programı ile dosya oluştur
 
@@ -59,8 +59,8 @@ TextTransform [<options>] <templateName>
 |**-u** \<ad alanı >|Şablon derlemek için kullanılan ad.|
 |**-I** \<includedirectory >|Belirtilen metni şablona dahil metin şablonlarını içeren bir dizin.|
 |**-P** \<referencepath >|Metin şablonu içinde belirtilen derlemeler için veya kullanarak aramak için bir dizin **- r** seçeneği.<br /><br /> Örneğin, Visual Studio API için kullanılan derlemeleri eklemek için kullanın<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
-|**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|Adı, tam tür adı ve metin şablonu içinde özel yönergeleri işlemek için kullanılan bir yönerge işlemcisi derleme.|
-|**-a** [processorName]![directiveName]!\<parameterName>!\<parameterValue>|Bir yönerge işlemcisi için parametre değeri belirtin. Yalnızca parametre adı ve değeri belirtirseniz, tüm yönerge işlemcileri için parametresi kullanılabilir. Bir yönerge işlemcisi belirtirseniz, yalnızca belirtilen işlemciyi kullanılabilir bir parametredir. Bir yönerge adı belirtirseniz, yalnızca belirtilen yönergesi işlenirken parametresi kullanılabilir.<br /><br /> Bir yönerge işlemcisi veya metin şablonu parametre değerlerini erişmek için [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). Bir metin şablonuna eklemek `hostspecific` şablon yönergesi ve ileti üzerinde çağırma `this.Host`. Örneğin:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Türü her zaman '!' yönerge adları ve isteğe bağlı işlemci bile atlarsanız, işaretler. Örneğin:<br /><br /> `-a !!param!value`|
+|**-dp** \<processorName >!\< className >! \<assemblyName&#124;codeBase >|Adı, tam tür adı ve metin şablonu içinde özel yönergeleri işlemek için kullanılan bir yönerge işlemcisi derleme.|
+|**-a** [processorName]! [ directiveName]! \<parameterName >! \<parameterValue >|Bir yönerge işlemcisi için parametre değeri belirtin. Yalnızca parametre adı ve değeri belirtirseniz, tüm yönerge işlemcileri için parametresi kullanılabilir. Bir yönerge işlemcisi belirtirseniz, yalnızca belirtilen işlemciyi kullanılabilir bir parametredir. Bir yönerge adı belirtirseniz, yalnızca belirtilen yönergesi işlenirken parametresi kullanılabilir.<br /><br /> Bir yönerge işlemcisi veya metin şablonu parametre değerlerini erişmek için [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). Bir metin şablonuna eklemek `hostspecific` şablon yönergesi ve ileti üzerinde çağırma `this.Host`. Örneğin:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Türü her zaman '!' yönerge adları ve isteğe bağlı işlemci bile atlarsanız, işaretler. Örneğin:<br /><br /> `-a !!param!value`|
 |**-h**|Yardım sağlar.|
 
 ## <a name="related-topics"></a>İlgili konular

@@ -2,11 +2,8 @@
 title: CL görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing
 - vc.task.cl
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), CL task
 - CL task (MSBuild (Visual C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b5609ac97d9322ddf4af5bc5638212a3ccfd045
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: f587eded84863a36fb2c293680cebd7668864c76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cl-task"></a>CL Görevi
 Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanın (.exe) dosyaları, dinamik bağlantı kitaplığı (.dll) dosyaları ya da kod Modülü (.netmodule) dosyaları oluşturur. Daha fazla bilgi için bkz: [derleyici seçenekleri](/cpp/build/reference/compiler-options).  
@@ -341,7 +337,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
     -   **Precise** - **/fp:precise**  
   
-    -   **Strict** - **/fp:strict**  
+    -   **Katı** - **/fp: katı**  
   
     -   **Fast** - **/fp:fast**  
   
@@ -593,7 +589,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **MultiThreaded** - **/MT**  
+    -   **Birden çok iş parçacıklı** -   **/MT**  
   
     -   **MultiThreadedDebug** - **/MTd**  
   
@@ -649,7 +645,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **Default** - **/Zp1**  
+    -   **Varsayılan** - **/Zp1**  
   
     -   **1Byte** - **/Zp1**  
   
@@ -753,7 +749,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanı
   
     -   **Level4** - **/W4**  
   
-    -   **EnableAllWarnings** - **/Wall**  
+    -   **EnableAllWarnings** -   **/duvar**  
   
      Daha fazla bilgi için bkz: **/W***n* seçeneğini [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, wln, /wd, / biz, /wo, /Wv, /WX (uyarı düzeyi)](/cpp/build/reference/compiler-option-warning-level).  
   

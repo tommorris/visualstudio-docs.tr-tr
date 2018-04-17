@@ -1,11 +1,8 @@
 ---
-title: "Seçenekler, metin düzenleyici, genel | Microsoft Docs"
+title: Seçenekler, metin düzenleyici, genel | Microsoft Docs
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.General
@@ -48,58 +45,71 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccc9628b5757f1ab4533b084736602274d8c92
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: d215503d182078196337e6ad1110e41b0e888865
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-text-editor-general"></a>Seçenekler, Metin Düzenleyici, Genel
-Bu iletişim kutusu için genel ayarları değiştirmenize olanak sağlayan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kod ve metin düzenleyici. Bu iletişim kutusunu görüntülemek için tıklatın **seçenekleri** üzerinde **Araçları** menüsünde genişletin **metin düzenleyici** klasörünü ve ardından **genel**.  
-  
+
+Bu iletişim kutusunu Visual Studio kod ve Metin Düzenleyicisi için genel ayarları değiştirmenize olanak verir. Bu iletişim kutusunu görüntülemek için seçin **seçenekleri** üzerinde **Araçları** menüsünde genişletin **metin düzenleyici** klasörünü ve ardından **genel**.
+
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="settings"></a>Ayarlar  
- Sürükle ve bırak metin düzenleme  
- Seçili olduğunda, seçerek ve geçerli belge veya herhangi bir açık belgeye içinde başka bir konuma fareyle sürükleyerek metin taşımanızı sağlar.  
-  
- Otomatik sınırlayıcı vurgulama  
- Seçili olduğunda, parametreleri veya öğesi-değer çiftleri yanı sıra, eşleşen küme parantezleri ayrı sınırlayıcı karakterleri vurgulanır.  
-  
- Değişiklikleri İzle  
- Kod Düzenleyicisi seçildiğinde, dikey sarı bir çizgi dosyanın en son kaydedilişinden değişti kodu işaretlemek için Seçim kenar görünür. Değişiklikleri kaydetmek, dikey çizgileri yeşil olur.  
-  
- UTF-8 kodlamasını imza olmadan otomatik olarak algıla  
- Varsayılan olarak, bayt sırası işaretleri veya charset etiketleri için arama yaparak kodlama Düzenleyicisi algılar. Hiçbiri geçerli belgede bulunursa, Kod düzenleyicisinde bayt dizileri tarayarak UTF-8 kodlaması otomatik algıla dener. Kodlama otomatik algılama devre dışı bırakmak için bu seçeneği temizleyin.  
-  
-## <a name="display"></a>Ekran  
- Seçim kenar boşluğu  
- Seçili olduğunda düzenleyici metin alanı sol kenarı boyunca dikey boşluğu görüntüler. Bir metin satırının tamamına seçin veya tıklatın ve ardışık satırlık metin seçmek için sürükleyin bu kenar tıklatabilirsiniz.  
-  
-|Seçim kenar boşluğu|Seçim kenar devre dışı|  
-|-------------------------|--------------------------|  
-|![HTMLpageSelectionMarginOn ekran görüntüsü](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff ekran görüntüsü](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
-  
- Gösterge Boşluğu  
- Seçili olduğunda, metin alanı düzenleyicinin sol kenarı dışında dikey boşluğu görüntüler. Bu kenar boşluğunda tıklattığınızda, bir simge ve metin için ilgili araç ipucu görünür. Örneğin, kesme noktası ya da görev listesi kısayollarını göstergesi kenar boşluğunda görünür. Gösterge kenar boşluğu bilgileri yazdırma değil.  
-  
- Dikey kaydırma çubuğu  
- Seçili olduğunda, görünüm öğelerine Düzenleyicisi görüntüleme alanı dışında kalan yukarı ve aşağı kaydırma olanak tanıyan dikey bir kaydırma çubuğu görüntüler. Dikey kaydırma çubukları kullanılabilir değilse, Page Up, Page Down ve imleci anahtarları kaydırmak için kullanabilirsiniz.  
-  
- Yatay kaydırma çubuğu  
- Seçili olduğunda, görünüm öğelerine Düzenleyicisi görüntüleme alanı dışında kalan yan yana kaydırma olanak tanıyan bir yatay kaydırma çubuğu görüntüler. Yatay kaydırma çubukları kullanılamıyorsa, kaydırmak için imleç tuşlarını kullanabilirsiniz.  
-  
- Geçerli satırı vurgulayın  
- Seçili olduğunda, imlecin bulunduğu kod satırı çevresinde gri bir kutu görüntüler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Seçenekler, metin düzenleyici, tüm diller](../../ide/reference/options-text-editor-all-languages.md)   
- [Seçenekler, metin düzenleyici, tüm diller, sekmeler](../../ide/reference/options-text-editor-all-languages-tabs.md)   
- [Seçenekler, metin düzenleyici, dosya uzantısı](../../ide/reference/options-text-editor-file-extension.md)   
- [Klavye kısayollarını tanımlama ve özelleştirme](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
- [Düzenleyiciyi özelleştirme](../../ide/customizing-the-editor.md)   
- [IntelliSense Kullanma](../../ide/using-intellisense.md)
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
+
+## <a name="settings"></a>Ayarlar
+
+### <a name="drag-and-drop-text-editing"></a>Sürükle ve bırak metin düzenleme
+
+Seçili olduğunda, seçerek ve geçerli belge veya herhangi bir açık belgeye içinde başka bir konuma fareyle sürükleyerek metin taşımanızı sağlar.
+
+### <a name="automatic-delimiter-highlighting"></a>Otomatik sınırlayıcı vurgulama
+
+Seçili olduğunda, parametreleri veya öğesi-değer çiftleri yanı sıra, eşleşen küme parantezleri ayrı sınırlayıcı karakterleri vurgulanır.
+
+### <a name="track-changes"></a>Değişiklikleri İzle
+
+Kod Düzenleyicisi seçildiğinde, dikey sarı bir çizgi dosyanın en son kaydedilişinden değişti kodu işaretlemek için Seçim kenar görünür. Değişiklikleri kaydetmek, dikey çizgileri yeşil olur.
+
+### <a name="auto-detect-utf-8-encoding-without-signature"></a>UTF-8 kodlamasını imza olmadan otomatik olarak algıla
+
+Varsayılan olarak, bayt sırası işaretleri veya charset etiketleri için arama yaparak kodlama Düzenleyicisi algılar. Hiçbiri geçerli belgede bulunursa, Kod düzenleyicisinde bayt dizileri tarayarak UTF-8 kodlaması otomatik algıla dener. Kodlama otomatik algılama devre dışı bırakmak için bu seçeneği temizleyin.
+
+## <a name="display"></a>Ekran
+
+### <a name="selection-margin"></a>Seçim kenar boşluğu
+
+Seçili olduğunda düzenleyici metin alanı sol kenarı boyunca dikey boşluğu görüntüler. Bir metin satırının tamamına seçin veya tıklatın ve ardışık satırlık metin seçmek için sürükleyin bu kenar tıklatabilirsiniz.
+
+|Seçim kenar boşluğu|Seçim kenar devre dışı|
+|-------------------------|--------------------------|
+|![HTMLpageSelectionMarginOn ekran görüntüsü](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff ekran görüntüsü](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|
+
+### <a name="indicator-margin"></a>Gösterge Boşluğu
+
+Seçili olduğunda, metin alanı düzenleyicinin sol kenarı dışında dikey boşluğu görüntüler. Bu kenar boşluğunda tıklattığınızda, bir simge ve metin için ilgili araç ipucu görünür. Örneğin, kesme noktası ya da görev listesi kısayollarını göstergesi kenar boşluğunda görünür. Gösterge kenar boşluğu bilgileri yazdırma değil.
+
+### <a name="vertical-scroll-bar"></a>Dikey kaydırma çubuğu
+
+Seçili olduğunda, görünüm öğelerine Düzenleyicisi görüntüleme alanı dışında kalan yukarı ve aşağı kaydırma olanak tanıyan dikey bir kaydırma çubuğu görüntüler. Dikey kaydırma çubukları kullanılabilir değilse, Page Up, Page Down ve imleci anahtarları kaydırmak için kullanabilirsiniz.
+
+### <a name="horizontal-scroll-bar"></a>Yatay kaydırma çubuğu
+
+Seçili olduğunda, görünüm öğelerine Düzenleyicisi görüntüleme alanı dışında kalan yan yana kaydırma olanak tanıyan bir yatay kaydırma çubuğu görüntüler. Yatay kaydırma çubukları kullanılamıyorsa, kaydırmak için imleç tuşlarını kullanabilirsiniz.
+
+### <a name="highlight-current-line"></a>Geçerli satırı vurgulayın
+
+Seçili olduğunda, imlecin bulunduğu kod satırı çevresinde gri bir kutu görüntüler.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Seçenekler, metin düzenleyici, tüm diller](../../ide/reference/options-text-editor-all-languages.md)
+- [Seçenekler, metin düzenleyici, tüm diller, sekmeler](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [Seçenekler, metin düzenleyici, dosya uzantısı](../../ide/reference/options-text-editor-file-extension.md)
+- [Klavye Kısayollarını Tanımlama ve Özelleştirme](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Düzenleyiciyi Özelleştirme](../../ide/customizing-the-editor.md)
+- [IntelliSense Kullanma](../../ide/using-intellisense.md)

@@ -1,12 +1,9 @@
 ---
 title: Dosyalarda Bul | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
 - vs.findinfiles
@@ -21,13 +18,14 @@ helpviewer_keywords:
 - Find in Files tab, Find and Replace window
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e87022cb3159e48a92e35ee07987bef6ce68f9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e7e181883fff125349949f081826157f2a3aa36f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-in-files"></a>Dosyalarda Bul
 
@@ -37,7 +35,7 @@ Görüntülemek için aşağıdaki yöntemlerden herhangi birini kullanabilirsin
 
 ## <a name="to-display-find-in-files"></a>Dosyalarda Bul görüntülemek için
 
-1. Menü çubuğunda seçin **Düzenle**, **bulma ve değiştirme**.
+1. Menü çubuğunda seçin **Düzenle** > **bulma ve değiştirme**.
 
 1. Seçin **dosyalarda Bul**.
 
@@ -71,16 +69,20 @@ Belirtir, alt **konum** klasörü arama yapılır.
 
 Genişlet veya daralt **bulma seçeneklerini** bölümü. Aşağıdaki seçenekler seçilen veya temizlenmiş:
 
-Büyük küçük harf duyarlı  
+**Büyük küçük harf duyarlı**  
+
 Seçili olduğunda, bir **Bul sonuçları** arama büyük küçük harfe duyarlı olur
 
-Tam sözcükleri eşleştir  
+**Tam sözcükleri eşleştir**  
+
 Seçili olduğunda, **Bul sonuçları** windows yalnızca tam sözcük eşleşmeleri döndürür.
 
-Normal ifadeleri kullanma  
+**Normal İfadeler Kullanma**  
+
 Bu onay kutusunu seçtiyseniz eşleştiği metnin desenlerini tanımlamak için özel gösterimler kullanabilirsiniz **Aranan** veya **yerine** metin kutuları. Bu gösterimler listesi için bkz: [Visual Studio'da normal ifadeler kullanarak](../ide/using-regular-expressions-in-visual-studio.md).
 
-Bu dosya türlerini arayın  
+**Bu dosya türlerini arayın**  
+
 Bu liste içinde arama yapmak dosya türlerini gösterir **konum** dizinleri. Bu alan ise boş, tüm dosyaların **konum** dizinleri arama yapılır.
 
 Herhangi bir öğeyi listeden, bu belirli türdeki dosyaları bulacağı önceden yapılandırılmış arama dizesini girmek için seçin.
@@ -89,20 +91,24 @@ Herhangi bir öğeyi listeden, bu belirli türdeki dosyaları bulacağı öncede
 
 Genişlet veya daralt **neden seçenekleri** bölümü. Aşağıdaki seçenekler seçilen veya temizlenmiş:
 
-Sonuçları 1 pencere Bul  
+**Sonuçları 1 pencere Bul**  
+
 Seçili olduğunda, geçerli arama sonuçları içeriğinin yerine geçecek **Bul sonuçları 1** penceresi. Bu pencere arama sonuçlarınızı görüntülemesi için otomatik olarak açılır. Bu pencere el ile açın, seçin **diğer pencereler** gelen **Görünüm** menü ve seçin **Bul sonuçları 1**.
 
-Sonuçları 2 pencere Bul  
+**Sonuçları 2 pencere Bul**
+
 Seçili olduğunda, geçerli arama sonuçları içeriğinin yerine geçecek **Bul sonuçları 2** penceresi. Bu pencere arama sonuçlarınızı görüntülemesi için otomatik olarak açılır. Bu pencere el ile açın, seçin **diğer pencereler** gelen **Görünüm** menü ve seçin **Bul sonuçları 2**.
 
-Dosya adları yalnızca görüntüleme  
+**Dosya adları yalnızca görüntüleme**
+
 Arama görüntüleme kendilerini eşleşen yerine arama içeren dosyaların bir listesini görüntüler eşleşir.
 
-Sonuçları ekleme  
+**Sonuçları ekleme**
+
 Önceki arama sonuçlarının arama sonuçları ekler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Metin Bulma ve Değiştirme](../ide/finding-and-replacing-text.md)  
+[Metin bulma ve değiştirme](../ide/finding-and-replacing-text.md)  
 [Dosyalarda Değiştir](../ide/replace-in-files.md)  
-[Visual Studio Komutları](../ide/reference/visual-studio-commands.md)
+[Visual Studio komutları](../ide/reference/visual-studio-commands.md)

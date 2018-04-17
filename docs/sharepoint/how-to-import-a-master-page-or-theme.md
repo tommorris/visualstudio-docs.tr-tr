@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: bir ana sayfa veya temayı içeri aktarma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: bir ana sayfa veya temayı içeri aktarma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,17 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 07c3e9fb88ea562a85e1c7555d2c57cb04d769ff
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e60977a44593953b4858ea0262befc61c3189cec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Nasıl yapılır: Bir Ana Sayfa veya Temayı İçeri Aktarma
-  Sayfalar, SharePoint sitesinde tutarlı bir görünüm oluşturma ve ana sayfalar ve Temalar kullanma verebilirsiniz. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Bu öğeler için şablonlar sağlamaz, ancak bunları SharePoint Tasarımcısı'nda oluşturabilir ve bunları almak [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Daha fazla bilgi için bkz: [yapı taşı: sayfaları ve kullanıcı arabirimi](http://go.microsoft.com/fwlink/?LinkID=182095) Microsoft Web sitesinde.  
+  Sayfalar, SharePoint sitesinde tutarlı bir görünüm oluşturma ve ana sayfalar ve Temalar kullanma verebilirsiniz. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Bu öğeler için şablonlar sağlamaz, ancak bunları SharePoint Tasarımcısı'nda oluşturabilir ve bunları almak [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Daha fazla bilgi için bkz: [yapı taşı: sayfaları ve kullanıcı arabirimi](http://go.microsoft.com/fwlink/?LinkID=182095) Microsoft Web sitesinde.  
   
 ### <a name="to-import-a-master-page-or-theme"></a>Bir ana sayfa veya temayı içeri aktarmak için  
   

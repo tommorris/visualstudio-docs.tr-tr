@@ -1,21 +1,19 @@
 ---
-title: "Salt okunur segmentleri oluşturmak için bir kilitleme ilkesi tanımlama | Microsoft Docs"
-ms.custom: 
+title: Salt okunur segmentleri oluşturmak için bir kilitleme ilkesi tanımlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dc7e620c04e31a063bbe8fada68527d391f0a903
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 75fe3205f1b43cb21fa78976ac2547ef3bd2fdfc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama
 Girişi API'si [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görselleştirme ve modelleme SDK böylece okuma ancak değişmez bir programa kilit bölümünü veya tümünü bir etki alanına özgü dil (DSL) modeli sağlar. Bu salt okunur seçeneği, örneğin, böylece kullanıcı açıklama ve DSL modeli gözden geçirmek için iş arkadaşlarınızı isteyebilir, ancak bunları özgün değiştirmesini engellemek kullanılabilir.  
@@ -70,7 +68,7 @@ partition.SetLocks(Locks.Delete);
 -   Ekleme ve silme öğelerinin ve belirli sınıfları ilişkilerini engellemek, ancak özellik değişikliklerine izin. Bu kullanıcılar özellikleri doldurabilir için sabit bir form sağlar.  
   
 ## <a name="lock-values"></a>Kilit değerleri  
- Kilit deposu, bölüm veya tek tek model öğesi ayarlayabilirsiniz. Kilitleri olan bir `Flags` numaralandırma: kullanarak kendi değerlerini birleştirebilirsiniz ' &#124;'.  
+ Kilit deposu, bölüm veya tek tek model öğesi ayarlayabilirsiniz. Kilitleri olan bir `Flags` numaralandırma: kullanarak kendi değerlerini birleştirebilirsiniz '&#124;'.  
   
 -   Bir model öğesi kilitler her zaman kendi bölümünün kilitler ekleyin.  
   
@@ -103,7 +101,7 @@ partition.SetLocks(Locks.Delete);
 -   Bu sınıf, DSL DocData kullanılabilir hizmetlerini ekleyin.  
   
 ### <a name="to-define-a-locking-policy"></a>Kilitleme ilkesi tanımlamak için  
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>Aşağıdaki tanımı vardır:  
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> Aşağıdaki tanımı vardır:  
   
 ```  
 public interface ILockingPolicy  
@@ -146,7 +144,7 @@ namespace Company.YourDsl.DslPackage // Change
   
 ```  
   
- Diğer kod çağırır olsa bile kullanıcılar öğeleri, her zaman silebilir emin olmak için`SetLocks(Lock.Delete):`  
+ Diğer kod çağırır olsa bile kullanıcılar öğeleri, her zaman silebilir emin olmak için `SetLocks(Lock.Delete):`  
   
  `return proposedLocks & (Locks.All ^ Locks.Delete);`  
   

@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: bir Bulucu yöntemi ekleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: bir Bulucu yöntemi ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], Finder method
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c2c7bf2eed200b8ed223f266ca35b5af90862cd6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b1660d440b72c48787af2cf2c653a420982c8799
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-finder-method"></a>Nasıl yapılır: Bir Bulucu Yöntemi Ekleme
   Bir web bölümü veya listedeki varlıkların listesini görüntülemek iş verileri bağlantı hizmeti etkinleştirmek için oluşturmalısınız bir *Bulucu* yöntemi. Bir Bulucu yöntemi varlık örneklerinin bir koleksiyonunu döndürür özel bir yöntemdir. Daha fazla bilgi için bkz: [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  

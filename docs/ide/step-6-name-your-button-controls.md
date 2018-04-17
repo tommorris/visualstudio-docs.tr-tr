@@ -1,25 +1,21 @@
 ---
-title: "6. adım: Düğme denetimlerinizi adlandırma | Microsoft Docs"
-ms.custom: 
+title: '6. adım: Düğme denetimlerinizi adlandırma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
-caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1981e8003941f14295cd137ba238808ec49229a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0d5c402439ccb30b4803a4b1863254287bc7c2dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-6-name-your-button-controls"></a>6. Adım: Düğme Denetimlerinizi Adlandırma
 Formunuzda tek PictureBox yoktur. Eklendiğinde, IDE otomatik olarak da adlandırılan **pictureBox1**. Adlı yalnızca bir onay kutusu yok **checkBox1**. En kısa sürede, biraz kod yazılır ve bu kod onay kutusunu ve PictureBox başvurur. Her bu denetimlerin yalnızca biri, çünkü gördüğünüzde ne anlama geldiğini bilirsiniz **pictureBox1** veya **checkBox1** kodunuzda.  
@@ -29,7 +25,7 @@ Formunuzda tek PictureBox yoktur. Eklendiğinde, IDE otomatik olarak da adlandı
   
  Formunuzda dört düğme vardır ve bunları IDE adlı **button1**, **button2**, **button3**, ve **button4**. Yalnızca geçerli adlarını bakarak hangi düğme bilmiyorsanız **Kapat** düğmesi ve hangisinin olduğuna **resim Göster** düğmesi. İşte bu nedenle daha bilgilendirici adları düğme denetimlerinizi vermek yararlıdır.  
   
- ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo")bu konuda video sürümü için bkz: [Eğitmen 1: Visual Basic'te - Video 3 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205213) veya [Eğitmen 1: bir resim görüntüleyici oluşturma C# - Video 3](http://go.microsoft.com/fwlink/?LinkId=205202). Bazı menü komutları ve diğer kullanıcı arabirimi öğeleri küçük farklar olduklarından bu videolar Visual Studio'nun önceki bir sürümünü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde geçerli sürümünde Visual Studio çalışır.  
+ ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo")bu konuda video sürümü için bkz: [Eğitmen 1: Visual Basic'te - Video 3 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205213) veya [Öğreticisi 1: Resim Görüntüleyici C# ' - oluşturma Video 3](http://go.microsoft.com/fwlink/?LinkId=205202). Bazı menü komutları ve diğer kullanıcı arabirimi öğeleri küçük farklar olduklarından bu videolar Visual Studio'nun önceki bir sürümünü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde geçerli sürümünde Visual Studio çalışır.  
   
 ### <a name="to-name-your-button-controls"></a>Düğme denetimlerinizi adlandırma için  
   
@@ -45,7 +41,7 @@ Kapat düğmesi adıyla Özellikler penceresi
   
 3.  Çift **resim Göster** formundaki düğmesi. Alternatif olarak, seçin **resim Göster** formda'düğmesine tıklayın ve ardından ENTER tuşuna seçin. Bunu yaptığınızda, IDE ek bir sekme adlı ana penceresinde açar. **Form1.cs** (**Form1.vb** Visual Basic kullanıyorsanız). Bu sekme, aşağıdaki resimde gösterildiği gibi formun arkasındaki kod dosyası gösterir.  
   
-     ![Form1.cs sekmesini Visual C &#35; kod](../ide/media/express_showbuttoncode.png "Express_ShowButtonCode")  
+     ![Visual C ile Form1.cs sekmesini&#35; kod](../ide/media/express_showbuttoncode.png "Express_ShowButtonCode")  
 Visual C# kodu Form1.cs sekmesi  
   
 4.  Bu kod parçası, üzerinde odaklanın. (Seçin **VB** Visual Basic kodu Visual Basic sürümünü görüntülemek için kullanıyorsanız, aşağıda sekmesinde.)  

@@ -3,10 +3,8 @@ title: Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak Uyg
 ms.custom: ''
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 author: TerryGLee
@@ -14,11 +12,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e9bfd9f72162d354d7e606d65146f602393d286
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f6a8e00d15e49aeab990c797197fec445db45b59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak Uygula
 Ürün anahtarınızı program aracılığıyla Visual Studio dağıtımını otomatik hale getirmek için kullanılan bir komut dosyasının parçası olarak uygulayabilirsiniz. Bir ürün anahtarı bir aygıtta program aracılığıyla Visual Studio veya bir yükleme tamamlandıktan sonra bir yükleme sırasında ya da ayarlayabilirsiniz.
@@ -43,7 +41,7 @@ ms.lasthandoff: 04/03/2018
 
  Aşağıdaki tabloda her Visual Studio sürümü için MPC kodlarını listeler:
 
-| Visual Studio Edition                | MPC   |
+| Visual Studio sürümü                | MPC   |
 |--------------------------------------|-------|
 | Visual Studio Enterprise 2017        | 08860 |
 | Visual Studio Professional 2017      | 08862 |

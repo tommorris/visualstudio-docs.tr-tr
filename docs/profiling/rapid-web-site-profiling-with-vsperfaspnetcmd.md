@@ -1,26 +1,23 @@
 ---
-title: "VSPerfASPNETCmd ile Hızlı Web sitesi profili oluşturma | Microsoft Docs"
-ms.custom: 
+title: VSPerfASPNETCmd ile Hızlı Web sitesi profili oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - proflilng tools,VSPerfASPNETCmd
 - VSPerfASPNETCmd
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd26d5b17d6dbd2e2c1dbacb1a23d81ffe733fdf
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f54a4d164819d3a36d4c95d0506b933797235231
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd ile Hızlı Web Sitesi Profili Oluşturma
 
@@ -50,7 +47,7 @@ Profil için bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] W
 
 Ayrıntılı zamanlama verileri bir dinamik olarak derlenmiş toplamak için aşağıdaki komut satırını kullanın [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması:
 
-**vsperfaspnetcmd /trace**  *websiteUrl*
+**vsperfaspnetcmd/Trace***websiteUrl* 
 
 Statik olarak derlenmiş .dll dosyaları, Web uygulamanızda profil isterseniz, kullanarak dosyaları izleme gerekir [Vsınstr](../profiling/vsinstr.md) komut satırı aracı. Vsperfaspnetcmd/Trace komut Araçlı dosyalarından verileri içerir.
 
@@ -66,7 +63,7 @@ Statik olarak derlenmiş .dll dosyaları, Web uygulamanızda profil isterseniz, 
 
  Aynı zamanda **/izleme** .NET bellek verileri ayrıntılı zamanlama bilgilerle ekleme seçeneği:
 
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[**: ömrü**]   **/izleme**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Katman etkileşim verileri toplamak için
 
@@ -81,11 +78,11 @@ Veri örnekleme ile Katman etkileşim verileri toplamak için:
 
 Katman etkileşim verileri ile izleme verileri toplamak için:
 
-**vsperfaspnetcmd /trace /tip** *websiteUrl*
+**vsperfaspnetcmd/Trace /tip** *websiteUrl*
 
 Katman etkileşim verileri ile .NET bellek verileri toplamak için:
 
-**vsperfaspnetcmd /memory**[**:lifetime**] **/tip***websiteUrl*
+**vsperfaspnetcmd /memory**[**: ömrü**] *  */ipucu *** websiteUrl*
 
 ## <a name="UsingNoWait"></a> / Nowait seçeneğini kullanma
 
@@ -93,11 +90,11 @@ Varsayılan olarak, sonra Komut İstemi'ni döndürmüyor bir **vsperfaspnetcmd*
 
 Profil oluşturmayı başlatmak için:
 
-**vsperfaspnetcmd** [*/Options*] **/nowait***websiteUrl*
+**vsperfaspnetcmd** [*/seçenekleri*] *  */nowait *** websiteUrl*
 
 Profil oluşturma sona erdirmek için:
 
-**vsperfaspnetcmd /shutdown** *websiteUrl*
+**vsperfaspnetcmd shutdown** *websiteUrl*
 
 ## <a name="additional-options"></a>Ek Seçenekler
 
@@ -106,4 +103,4 @@ Aşağıdaki seçeneklerden birini dışında bu bölümde, daha önce listelene
 |Seçenek|Açıklama|
 |------------|-----------------|
 |**/ Çıktı:** `VspFile`|Varsayılan olarak, profil oluşturma veri (.vsp) dosyası geçerli dizinde dosya adıyla oluşturulur **PerformanceReport.vsp**. Farklı bir konum, dosya adı veya her ikisini belirtmek için/Output seçeneği kullanın.|
-|**/PackSymbols:Off**|Varsayılan olarak, VsPerfASPNETCmd simgeler (işlev ve parametre adları, vb.) .vsp dosyasında katıştırır. Simgeler katıştırma profil oluşturma veri dosyası çok büyük hale getirebilirsiniz. Verileri analiz ederken, sembolleri içeren .pdb dosyaları erişim olacaksa, /packsymbols kullanın: simgelerini katıştırma devre dışı bırakma seçeneği kapalı.|
+|**/ Paket sembolleri: kapalı**|Varsayılan olarak, VsPerfASPNETCmd simgeler (işlev ve parametre adları, vb.) .vsp dosyasında katıştırır. Simgeler katıştırma profil oluşturma veri dosyası çok büyük hale getirebilirsiniz. Verileri analiz ederken, sembolleri içeren .pdb dosyaları erişim olacaksa, /packsymbols kullanın: simgelerini katıştırma devre dışı bırakma seçeneği kapalı.|

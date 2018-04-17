@@ -1,12 +1,9 @@
 ---
-title: "OnError öğesi (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: OnError öğesi (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#OnError
 dev_langs:
@@ -18,24 +15,23 @@ helpviewer_keywords:
 - OnError Element [MSBuild]
 - <OnError Element [MSBuild]
 ms.assetid: 765767d3-ecb7-4cd9-ba1e-d9468964dddc
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8d48fe390f5a5990506a6b7eeab3d1efe8b5ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f70588c512716cac854bab446c7a7d695e392a28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="onerror-element-msbuild"></a>OnError Öğesi (MSBuild)
 Yürütmek bir veya daha fazla hedefleri neden `ContinueOnError` özniteliği `false` başarısız bir görev için.  
 
- \<Project>  
+ \<Proje >  
  \<Hedef >  
- \<OnError>  
+ \<OnError >  
 
 ## <a name="syntax"></a>Sözdizimi  
 

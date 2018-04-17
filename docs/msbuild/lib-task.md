@@ -2,11 +2,8 @@
 title: LIB görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
 - VC.Project.VCLibrarianTool.TreatLibWarningsAsErrors
@@ -25,17 +22,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), LIB task
 - LIB task (MSBuild (Visual C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-caps.latest.revision: 7
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b6ceb908e45cf98f32f89605bf48f8e747b7aa
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: HT
+ms.openlocfilehash: 2ff55341bd41854f9d181613b3364b20873bdbaa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="lib-task"></a>LIB Görevi
 Microsoft 32 Bit Kitaplık Yöneticisi Aracı sarmalar lib.exe. Kitaplığı Yöneticisi'ni oluşturur ve ortak nesne dosyası biçimi (COFF) nesne dosyaları içeren bir kitaplık yönetir. Kitaplık Yöneticisi ayrıca dışarı aktarma dosyaları oluşturabilir ve kitaplıkları için dışa aktarılan başvuru tanımını içeri aktarın. Daha fazla bilgi için bkz: [LIB başvurusu](/cpp/build/reference/lib-reference) ve [çalıştıran LIB](/cpp/build/reference/running-lib).  
@@ -62,13 +58,13 @@ Microsoft 32 Bit Kitaplık Yöneticisi Aracı sarmalar lib.exe. Kitaplığı Yö
 |**OutputFile**|İsteğe bağlı **dize** parametresi.<br /><br /> Varsayılan geçersiz kılar ad ve konum programının bu lib.exe oluşturur.<br /><br /> Bu parametre karşılık gelen **/OUT** geçen lib.exe seçeneği bir `filename` bağımsız değişkeni.|  
 |**RemoveObjects**|İsteğe bağlı **String []** parametresi.<br /><br /> Belirtilen nesne çıkış kitaplığından atlar. Lib.exe bir çıktı kitaplığı tüm nesneler (nesne dosya ya da kitaplıkları kullanılıp) birleştirerek ve bu seçeneği tarafından belirtilen herhangi bir nesne silme oluşturur.<br /><br /> Bu parametre karşılık gelen **/Kaldır** geçen lib.exe seçeneği bir `membername` bağımsız değişkeni.|  
 |**Kaynakları**|Gerekli `ITaskItem[]` parametresi.<br /><br /> Kaynak dosyaları boşluklarla ayrılmış listesini belirtir.|  
-|**SubSystem**|İsteğe bağlı **dize** parametresi.<br /><br /> Yürütülebilir dosya ortamını belirtir. Alt sistemi seçimi giriş noktası simgesi veya giriş noktası işlevi etkiler.<br /><br /> Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.<br /><br /> -   **Console** - **/SUBSYSTEM:CONSOLE**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **Yerel** - **/SUBSYSTEM:NATIVE**<br />-   **EFI uygulama** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **EFI Önyükleme hizmeti sürücü** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**<br />-   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**ReplaceThisText<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Daha fazla bilgi için bkz: [/SUBSYSTEM (alt sistemi belirtin)](/cpp/build/reference/subsystem-specify-subsystem).|  
+|**Alt sistemi**|İsteğe bağlı **dize** parametresi.<br /><br /> Yürütülebilir dosya ortamını belirtir. Alt sistemi seçimi giriş noktası simgesi veya giriş noktası işlevi etkiler.<br /><br /> Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.<br /><br /> -   **Konsol** - **/SUBSYSTEM:CONSOLE**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **Yerel** - **/SUBSYSTEM:NATIVE**<br />-   **EFI uygulama** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **EFI Önyükleme hizmeti sürücü** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**<br />-   **EFI çalışma zamanı** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**ReplaceThisText<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Daha fazla bilgi için bkz: [/SUBSYSTEM (alt sistemi belirtin)](/cpp/build/reference/subsystem-specify-subsystem).|  
 |**SuppressStartupBanner**|İsteğe bağlı **Boolean** parametresi.<br /><br /> Varsa `true`, görev başladığında telif hakkı ve sürüm numarası iletisini görüntülenmesini engeller.<br /><br /> Daha fazla bilgi için bkz: **/nologo** adresindeki seçeneği [çalıştıran LIB](/cpp/build/reference/running-lib).|  
-|**TargetMachine**|İsteğe bağlı **dize** parametresi.<br /><br /> Hedef platformu program veya DLL belirtir.<br /><br /> Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.<br /><br /> -   **MachineARM** - **/MACHINE:ARM**<br />-   **MachineEBC** - **/MACHINE:EBC**<br />-   **MachineIA64** - **/MACHINE:IA64**<br />-   **MachineMIPS** - **/MACHINE:MIPS**<br />-   **MachineMIPS16** - **/MACHINE:MIPS16**<br />-   **MachineMIPSFPU** -**/MACHINE:MIPSFPU**<br />-   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**<br />-   **MachineSH4** - **/MACHINE:SH4**<br />-   **MachineTHUMB** - **/MACHINE:THUMB**<br />-   **MachineX64** - **/MACHINE:X64**<br />-   **MachineX86** - **/MACHINE:X86**<br /><br /> Daha fazla bilgi için bkz: [/MACHINE (hedef platformu belirtin)](/cpp/build/reference/machine-specify-target-platform).|  
+|**TargetMachine**|İsteğe bağlı **dize** parametresi.<br /><br /> Hedef platformu program veya DLL belirtir.<br /><br /> Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.<br /><br /> -   **MachineARM** - **/MACHINE:ARM**<br />-   **MachineEBC** - **/MACHINE:EBC**<br />-   **MachineIA64** - **/MACHINE:IA64**<br />-   **MachineMIPS** - **/MACHINE:MIPS**<br />-   **MachineMIPS16** - **/MACHINE:MIPS16**<br />-   **MachineMIPSFPU** -**/MACHINE:MIPSFPU**<br />-   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**<br />-   **MachineSH4** - **/MACHINE:SH4**<br />-   **MachineTHUMB** - **/MACHINE:THUMB**<br />-   **MachineX64** - **/MACHINE:X 64**<br />-   **MachineX86** - **/MACHINE:X86**<br /><br /> Daha fazla bilgi için bkz: [/MACHINE (hedef platformu belirtin)](/cpp/build/reference/machine-specify-target-platform).|  
 |**TrackerLogDirectory**|İsteğe bağlı **dize** parametresi.<br /><br /> İzleyici günlük dizinini belirtir.|  
 |**TreatLibWarningAsErrors**|İsteğe bağlı **Boolean** parametresi.<br /><br /> Varsa `true`, neden **LIB** lib.exe bir uyarı oluşturursa bir çıktı dosyası değil oluşturulacak görev. Varsa `false`, bir çıktı dosyası oluşturulur.<br /><br /> Daha fazla bilgi için bkz: **/WX** adresindeki seçeneği [çalıştıran LIB](/cpp/build/reference/running-lib).|  
 |**UseUnicodeResponseFiles**|İsteğe bağlı **Boolean** parametresi.<br /><br /> Varsa `true`, kitaplığı kökenli zaman UNICODE yanıt dosyaları oluşturmak için proje sistemi bildirir. Belirtin `true` projedeki dosyaları UNICODE yolları olduğunda.|  
-|**Verbose**|İsteğe bağlı **Boolean** parametresi.<br /><br /> Varsa `true`, ilerleme durumunu; oturumu hakkındaki ayrıntıları görüntüler bu eklenmekte olan .obj dosyaları adlarını içerir. Bilgiler, standart çıktıya gönderilir ve bir dosyaya yönlendirilebilir.<br /><br /> Daha fazla bilgi için bkz: **/VERBOSE** seçeneğini [çalıştıran LIB](/cpp/build/reference/running-lib).|  
+|**Ayrıntılı**|İsteğe bağlı **Boolean** parametresi.<br /><br /> Varsa `true`, ilerleme durumunu; oturumu hakkındaki ayrıntıları görüntüler bu eklenmekte olan .obj dosyaları adlarını içerir. Bilgiler, standart çıktıya gönderilir ve bir dosyaya yönlendirilebilir.<br /><br /> Daha fazla bilgi için bkz: **/VERBOSE** seçeneğini [çalıştıran LIB](/cpp/build/reference/running-lib).|  
   
 ## <a name="remarks"></a>Açıklamalar  
   

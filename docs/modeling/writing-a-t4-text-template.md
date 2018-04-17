@@ -1,25 +1,23 @@
 ---
-title: "T4 metin şablonu yazma | Microsoft Docs"
-ms.custom: 
+title: T4 metin şablonu yazma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e640583f42154497ffe5bd25d3c6860fb9d20ca8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 140e49af62b2ea1a9bb43b7cf3fb95ccc7b257e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-a-t4-text-template"></a>T4 Metin Şablonu Yazma
 Metin şablonu ondan oluşturulan metni içerir. Örneğin, bir web sayfası oluşturan bir şablonu içerir "\<html >..." ve diğer tüm standart bölümleri HTML sayfası. Şablona eklenmiş olan *denetim blokları*, program kod parçalarını olduğu. Denetim blokları değişen değerler sağlayın ve koşullu ve yinelenen metni bölümlerini sağlar.  
@@ -104,7 +102,7 @@ Hello!
 ### <a name="expression-control-blocks"></a>İfade denetim blokları  
  Bir ifade denetim bloğu bir ifadeyi değerlendirir ve bir dizeye dönüştürür. Bu çıktı dosyasına eklenir.  
   
- İfade denetim blokları simgeleriyle ayrılmış`<#= ... #>`  
+ İfade denetim blokları simgeleriyle ayrılmış `<#= ... #>`  
   
  Örneğin, aşağıdaki denetim bloğu "5" içerecek şekilde çıktı dosyası neden olur:  
   
@@ -131,7 +129,7 @@ This is hello number <#= i+1 #>: Hello!
 ### <a name="class-feature-control-blocks"></a>Sınıf özelliği denetim blokları  
  Bir sınıf özelliği denetim bloğu özellikleri, yöntemleri veya ana dönüştürme dahil edilmemesi gereken herhangi bir kod tanımlar. Sınıf özelliği bloklar sık yardımcı işlevleri için kullanılır.  Böylece olabilirler sınıf özelliği blokları ayrı dosyalarda genellikle yerleştirilir [dahil](#Include) birden fazla metin şablonu tarafından.  
   
- Sınıf özelliği denetim blokları simgeleriyle ayrılmış`<#+ ... #>`  
+ Sınıf özelliği denetim blokları simgeleriyle ayrılmış `<#+ ... #>`  
   
  Örneğin, aşağıdaki şablon dosyası bildirir ve bir yöntemi kullanır:  
   
@@ -211,7 +209,7 @@ private void WriteSquareLine(int i)
   
  Daha fazla bilgi için bkz: [T4 içe aktarma yönergesi](../modeling/t4-import-directive.md).  
   
-###  <a name="Include"></a>Kod ve metin dahil  
+###  <a name="Include"></a> Kod ve metin dahil  
  `include` Yönergesi başka bir şablon dosyasından metin ekler. Örneğin, bu yönergesi içeriğini ekler `test.txt`.  
   
  `<#@ include file="c:\test.txt" #>`  
@@ -241,7 +239,7 @@ private void WriteSquareLine(int i)
   
  **Bir dosya gezinebilir modeli olarak yükleme**. Metin şablonu kodunuzu gidebilirsiniz bir model olarak veri okuma daha güçlü bir yöntemdir. Örneğin, bir XML dosyasını ve XPath ifadelerle gidin. De kullanabilirsiniz [XSD.exe'nin](http://go.microsoft.com/fwlink/?LinkId=178765) ile edinebilirsiniz XML veri sınıfları kümesi oluşturmak için.  
   
- **Bir diyagram veya biçiminde model dosyasını düzenleyin.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]model bir diyagram ya da Windows form olarak düzenlemenize olanak sağlayan araçlar sağlar. Bu model oluşturulan uygulama kullanıcılarla tartışın kolaylaştırır. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]Ayrıca modeli yapısını yansıtacak türü kesin belirlenmiş sınıf kümesi oluşturur. Daha fazla bilgi için bkz: [bir etki alanına özgü dil oluşturma koddan](../modeling/generating-code-from-a-domain-specific-language.md).  
+ **Bir diyagram veya biçiminde model dosyasını düzenleyin.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] model bir diyagram ya da Windows form olarak düzenlemenize olanak sağlayan araçlar sağlar. Bu model oluşturulan uygulama kullanıcılarla tartışın kolaylaştırır. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Ayrıca modeli yapısını yansıtacak türü kesin belirlenmiş sınıf kümesi oluşturur. Daha fazla bilgi için bkz: [bir etki alanına özgü dil oluşturma koddan](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ### <a name="relative-file-paths-in-design-time-templates"></a>Tasarım zamanı şablonlarındaki göreli dosya yolları  
  İçinde bir [tasarım zamanı metin şablonu](../modeling/design-time-code-generation-by-using-t4-text-templates.md), metin şablonu, kullanım konumuna dosyasında başvurmak istiyorsanız `this.Host.ResolvePath()`. De ayarlamalısınız `hostspecific="true"` içinde `template` yönergesi:  

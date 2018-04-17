@@ -1,7 +1,7 @@
 ---
-title: "Visual Studio Yük testi senaryosunda sanal ağ türlerini belirtme | Microsoft Docs"
+title: Visual Studio Yük testi senaryosunda sanal ağ türlerini belirtme | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, adding networks
@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: c301a8d72228ed450479fd39b010db5682ae6adc
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: f40c1d26d1b8f28fd72bbcc5eb4842724e2d1e89
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Bir yük testi senaryosunda sanal ağ türlerini belirtme
 
@@ -93,9 +93,9 @@ Gerçek ağ öykünmesini ağ tabanlı uygulama geliştiricileri ve sınayıcıl
 > [!WARNING]
 > **Dağıt** düğmesi kilitli olan tüm öğeleri geçersiz kılar.
 
- Yüzde değerleri doğrudan yazmanız da mümkündür  **%**  Kaydırıcıları kullanmak yerine sütun. Bir yüzde değeri doğrudan girerseniz, diğer öğeler otomatik olarak ayarlar değil.
+ Yüzde değerleri doğrudan yazmanız da mümkündür **%** Kaydırıcıları kullanmak yerine sütun. Bir yüzde değeri doğrudan girerseniz, diğer öğeler otomatik olarak ayarlar değil.
 
 > [!NOTE]
-> Kaydırıcıları toplamı % 100 eklemez veya yüzde değerleri girilen devre dışı bırakılır  **%**  sütunu olan ondalık basamaktır.
+> Kaydırıcıları toplamı % 100 eklemez veya yüzde değerleri girilen devre dışı bırakılır **%** sütunu olan ondalık basamaktır.
 
 Yüzde değerlerini el ile girdiğinizde, tüm öğelerin toplamının %100 olduğundan emin olmanız gerekir. Toplamı % 100 değilse bir karışımını kaydettiğinizde, oldukları gibi yüzde değerleri kabul edin veya geri dönün ve bunları ayarlamanız istenir. Oldukları gibi bunları kabul etmeyi seçerseniz, bunlar % 100'e eşit olarak bölünecek.  Örneğin, iki öğe varsa ve el ile bunları % 80 ve % 40 olarak ayarlamanız, ilk öğe (120 bölünmüş 80) % 66.67 ayarlamak ve ikinci öğe %33.33 (120 bölünmüş 40) ayarlayın.

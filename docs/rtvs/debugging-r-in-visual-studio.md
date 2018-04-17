@@ -1,26 +1,23 @@
 ---
-title: "R araçları ile hata ayıklama için Visual Studio | Microsoft Docs"
-description: "Visual Studio için kesme noktaları da dahil olmak üzere R tam hata ayıklama deneyimi sağlar, ekleme, yığını ve değişkenleri inceleniyor çağırın."
-ms.custom: 
+title: R kodda hata ayıklama
+description: Visual Studio için kesme noktaları da dahil olmak üzere R tam hata ayıklama deneyimi sağlar, ekleme, yığını ve değişkenleri inceleniyor çağırın.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 185896840be089c8a74e018e3fd66fa2816c5d76
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ee8ed2cef9296b0d73be01f1bc5d2438c931d7eb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-r-in-visual-studio"></a>Visual Studio'da R hata ayıklama
 
@@ -64,11 +61,11 @@ Ortam tarayıcı özel komutlar destekler:
 | --- | --- |
 | n | Sonraki: çalıştırır kodda next deyimi dosya (Adımlama olarak aynı). |
 | s | adımla: next deyimi işlev çağrısı ise işlevi kapsamı içine Adımlama kod dosyasında next deyimi çalıştırır. |
-| f | Son: geçerli işlev kapsamı kalanını çalıştırır ve çağırana (adım ile aynı) döndürür. |
+| F | Son: geçerli işlev kapsamı kalanını çalıştırır ve çağırana (adım ile aynı) döndürür. |
 | c, devamı | devam: sonraki kesme programı çalıştırır. |
 | Q | çıkar: hata ayıklama oturumu sona erer. |
 | Burada | yığını göster: çağrı yığını etkileşimli penceresinde görüntüler. |
 | Yardım | Yardımı Göster: kullanılabilir komutlar etkileşimli penceresinde görüntüler. |
-| &lt;expr&gt; | İfade değerlendirme *expr*. |
+| &lt;ifade&gt; | İfade değerlendirme *expr*. |
 
 ![Etkileşimli penceresinde ortamı tarayıcı](media/debugger-environment-browser.png)

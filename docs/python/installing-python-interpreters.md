@@ -1,26 +1,23 @@
 ---
-title: Seçme ve Python yorumlayıcılar yükleme | Microsoft Docs
+title: Seçme ve Python yorumlayıcılar yükleniyor
 description: Visual Studio'da kısa yönergelerle yükleyicilerinin nerede bulacağını üzerinde desteklenen Python yorumlayıcılar tam bir listesi.
 ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3b8d1bf4f0ac6c66222f86e73b7c18cfdceb3354
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: f60d8cde8e729745bb8efd4a5df9f41ade15752a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="installing-python-interpreters"></a>Python yorumlayıcılar yükleme
 
@@ -36,7 +33,7 @@ Visual Studio yüklü bir ortam algılamazsa bkz [el ile varolan bir ortama tan�
 
 Visual Studio gösteren tüm bilinen ortamlarda [Python ortamları penceresi](managing-python-environments-in-visual-studio.md)ve varolan yorumlayıcılar güncelleştirmeleri otomatik olarak algılar.
 
-| Interpreter | Açıklama |
+| Yorumlayıcı | Açıklama |
 | --- | --- |
 | [CPython](https://www.python.org/) | "Yerel" ve en sık kullanılan Yorumlayıcı, 32 bit ve 64 bit sürümleri (32-bit önerilir) içinde kullanılabilir. En son dil özellikleri, maksimum Python paket uyumluluk, hata ayıklama için tam destek ve birlikte çalışma içeren [IPython](http://ipython.org/). Ayrıca bkz: [Python 2 veya Python 3 kullanmalıyım?](http://wiki.python.org/moin/Python2orPython3). Visual Studio 2015 ve önceki Python 3.6 desteklemez ve "Python sürümü 3.6 desteklenmiyor" hata verebilirsiniz unutmayın. Python 3.5 veya önceki kullanmak yerine. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Bir .NET uygulaması sağlama C# /F #/ Visual Basic birlikte çalışabilirliği, Python, 32 bit ve 64 bit sürümlerinde kullanılabilir olan erişim .NET API'leri, hata ayıklama standart Python (ancak değil C++ karışık modda hata ayıklama için) ve IronPython karma / C# hata ayıklama. IronPython, ancak sanal ortamları desteklemez. |

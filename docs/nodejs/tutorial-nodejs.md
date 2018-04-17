@@ -3,28 +3,24 @@ title: Node.js ve hızlı uygulama - Visual Studio oluşturma | Microsoft Docs
 description: Bu öğreticide, Visual Studio Node.js ve hızlı bir uygulama oluşturma
 ms.custom: ''
 ms.date: 03/13/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7d0774753178c9cb0dbcae1800da6b00ab02a0e
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 47bf06fabba9197029831382b6ad6e9068e7829c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da bir Node.js ve hızlı uygulama oluşturma
-Node.js ve Express kullanarak Visual Studio geliştirme için bu öğreticideki basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).  
+Node.js ve Express kullanarak Visual Studio geliştirme için bu öğreticideki basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
 
 Bu öğreticide, bilgi nasıl yapılır:
 > [!div class="checklist"]
@@ -51,13 +47,13 @@ Bu öğreticide, bilgi nasıl yapılır:
 ## <a name="create-a-project"></a>Proje oluşturma
 İlk olarak, bir Node.js web uygulaması projesi oluşturacaksınız.
 
-1. Visual Studio 2017'ni açın.  
+1. Visual Studio 2017'ni açın.
 
-1. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .  
+1. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .
 
-1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **JavaScript**ve ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulama**ve ardından **Tamam**.   
+1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **JavaScript**ve ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulama**ve ardından **Tamam**.
 
-     Görmüyorsanız, **temel Azure Node.js Express 4 uygulama** proje şablonu, yüklemelisiniz **Node.js geliştirme** iş yükü ilk. 
+     Görmüyorsanız, **temel Azure Node.js Express 4 uygulama** proje şablonu, yüklemelisiniz **Node.js geliştirme** iş yükü ilk.
 
     Visual Studio yeni çözüm oluşturur ve projenizin açar. *App.js* proje dosyası (sol bölme) Düzenleyicisi'nde açar.
 
@@ -130,11 +126,11 @@ Bu öğreticide, bilgi nasıl yapılır:
 
 1. Sonra `data` dize, yazın `: get` ve IntelliSense gösterir, `getData` işlevi. Seçin `getData`.
 
-    ![IntelliSense kullanma](../nodejs/media/tutorial-nodejs-intellisense.png) 
+    ![IntelliSense kullanma](../nodejs/media/tutorial-nodejs-intellisense.png)
 
 1. Virgül Kaldır (`,`) önce `"data"` ve ifade yeşil sözdizimi vurgulama bakın. Söz dizimi vurgulamayı üzerine gelin.
 
-    ![Görünüm sözdizimi hatası](../nodejs/media/tutorial-nodejs-syntax-checking.png) 
+    ![Görünüm sözdizimi hatası](../nodejs/media/tutorial-nodejs-syntax-checking.png)
 
     Bu ileti son satırının JavaScript yorumlayıcı virgül beklenen söyler (`,`).
 
@@ -152,15 +148,15 @@ Bu öğreticide, bilgi nasıl yapılır:
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
-    Kesme noktaları güvenilir hata ayıklama en temel ve temel özelliğidir. Bir kesme noktası değişkenlerin değerleri veya bellek davranışını göz olabilmesi için Visual Studio çalışan kodunuzu nereye askıya almanız veya kod dalı çalıştırmak destekleyip desteklemediğini belirtir. 
+    Kesme noktaları güvenilir hata ayıklama en temel ve temel özelliğidir. Bir kesme noktası değişkenlerin değerleri veya bellek davranışını göz olabilmesi için Visual Studio çalışan kodunuzu nereye askıya almanız veya kod dalı çalıştırmak destekleyip desteklemediğini belirtir.
 
-    ![Bir kesme noktası ayarlama](../nodejs/media/tutorial-nodejs-set-breakpoint.png) 
+    ![Bir kesme noktası ayarlama](../nodejs/media/tutorial-nodejs-set-breakpoint.png)
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırın
 
 1. Hata ayıklama araç çubuğundaki hata ayıklama hedefi seçin.
 
-    ![Hata ayıklama hedefi seçin](../nodejs/media/tutorial-nodejs-deploy-target.png) 
+    ![Hata ayıklama hedefi seçin](../nodejs/media/tutorial-nodejs-deploy-target.png)
 
 1. Tuşuna **F5** (**hata ayıklama** > **hata ayıklamayı Başlat**) uygulamayı çalıştırın.
 
@@ -178,15 +174,15 @@ Bu öğreticide, bilgi nasıl yapılır:
 
 1. Farklı görüntüleri göstermek için düğmeler'i tıklatın.
 
-    ![Tarayıcıda çalışan uygulama](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+    ![Tarayıcıda çalışan uygulama](../nodejs/media/tutorial-nodejs-running-in-browser.png)
 
-1. Web tarayıcısını kapatın.  
+1. Web tarayıcısını kapatın.
 
 ## <a name="optional-publish-to-azure-app-service"></a>(İsteğe bağlı) Azure App Service'te yayımlama
 
 1. Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Yayımla**.
 
-   ![Azure App Service'te yayımlama](../nodejs/media/tutorial-nodejs-publish-to-azure.png)  
+   ![Azure App Service'te yayımlama](../nodejs/media/tutorial-nodejs-publish-to-azure.png)
 
 1. Seçin **Microsoft Azure uygulama hizmeti**.
 
@@ -198,11 +194,11 @@ Bu öğreticide, bilgi nasıl yapılır:
 
     Başarılı dağıtım üzerinde uygulamanızı Azure App Service içinde çalışan bir tarayıcıda açılır. Görüntüyü görüntülemek için bir düğmeye tıklayın.
 
-   ![Azure App Service içinde çalışan uygulama](../nodejs/media/tutorial-nodejs-running-in-azure.png)  
+   ![Azure App Service içinde çalışan uygulama](../nodejs/media/tutorial-nodejs-running-in-azure.png)
 
 Bu öğreticiyi tamamlamak Tebrikler!
 
-## <a name="next-steps"></a>Sonraki adımlar 
+## <a name="next-steps"></a>Sonraki adımlar
 
 Bu öğreticide, oluşturmak ve Express kullanarak bir Node.js uygulaması çalıştırmak ve hata ayıklayıcıyı kullanma bir kesme noktası isabet öğrendiniz.
 

@@ -1,27 +1,23 @@
 ---
-title: "Arayan Aranan görünümü - .NET bellek örnekleme verileri | Microsoft Docs"
-ms.custom: 
+title: Arayan Aranan görünümü - .NET bellek örnekleme verileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 275ec14b1b6a0d43d2c8fdb88bbf1056db86d097
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d803cf59bb26f46cfcf3c7bd536f987db26055ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Arayan/Aranan görünümü - .NET bellek örnekleme verileri
 Arayan/Aranan görünümü .NET bellek profili oluşturma seçili işlev ve üst ve alt işlevleri için verileri görüntüler. Arayan/Aranan görünümü üç kılavuzları içerir.  
@@ -45,7 +41,7 @@ Arayan/Aranan görünümü .NET bellek profili oluşturma seçili işlev ve üst
 |**İşlev satır numarası**|Bu işlev kaynak dosyadaki başlangıç satır sayısı.|  
 |**İşlev adresi**|İşlev adresi.|  
 |**Türü**|İşlev Bağlam:<br /><br /> **0** -geçerli işlevi<br /><br /> **1** -geçerli işlevi çağıran bir işlev<br /><br /> **2** -geçerli işlev tarafından çağrılan bir işlevi<br /><br /> Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
-|**Düzeyi**|Çağrı ağacı işlevinde derinliği. Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
+|**düzeyi**|Çağrı ağacı işlevinde derinliği. Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
 |**Kapsayıcı ayırmaları**|-Geçerli işlev için profil oluşturma işlevi tarafından ayrılan nesne sayısını çalıştırın. Bu sayı, aranan işlevlerde oluşturulan nesneleri içerir.<br />-Çağıran işlev için geçerli işlev çağrıları bu işlevden tarafından oluşturulan dahil ayrılmasını sayısı.<br />-Çağrılan işlev için geçerli işlev tarafından çağrılan bu işlev örnekleri tarafından ayrılan nesne sayısı. Çağrılan işlev tarafından çağrılan işlevler tarafından yapılan ayırmaları sayısını içerir.|  
 |**Kapsayıcı ayırmaları %**|Profil çalıştırdığınızda oluşturulan tüm nesneler yüzdesi bu işlevin kapsayıcı ayırmaları yoktu.|  
 |**Özel ayırmaları**|-Geçerli işlev, işlev kodunu işlev gövdesi yürütülürken oluşturulan nesneleri sayısı için (diğer bir deyişle, ne zaman işlevi çağrı yığını üstünde olduğu). Sayı işlev tarafından adı veriliyordu işlevlerinde oluşturulan nesneleri içermez.<br />-Çağıran işlev için geçerli işlev çağrıları bu işlevden tarafından oluşturulan özel ayrılmasını sayısı.<br />-Çağrılan işlev için geçerli işlev tarafından çağrılan bu işlev örnekleri tarafından oluşturulan nesne sayısı. Sayı çağrılan işlev tarafından çağrılan işlevler tarafından oluşturulan nesneleri içermez.|  

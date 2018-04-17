@@ -2,8 +2,6 @@
 title: Çözümlerinizdeki bağımlılıkları eşleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -27,15 +25,15 @@ helpviewer_keywords:
 - code exploration, visualizing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: aea44beeb2a8e6380bd9a568acdece79873e3050
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 8ce84bfc59782a27e517ae1813f3ee43d6cb3718
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Çözümlerinizdeki bağımlılıkları eşleme
 
@@ -128,7 +126,7 @@ Kodunuz boyunca bağımlılıkları anlamak istediğinizde, kod haritalarını o
 
 2.  Kullanım **gösterge** düğmesini proje türü simgeler (örneğin, Test, Web ve telefon Proje), Listesi'ni göster veya gizle için kod Haritası araç çubuğundaki kod öğeleri (örneğin, sınıfları, yöntemleri ve özellikleri) ve ilişki türleri (örneğin, devralır gelen Uygular ve çağrıları).  
 
-     ![Top&#45;level dependency graph of assemblies](../modeling/media/dependencygraph_toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
+     ![Üst&#45;düzeyi bağımlılık grafiğinin derlemelerin](../modeling/media/dependencygraph_toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
 
      Bu örnek bir çözüm çözüm klasörleri içerir (**testleri** ve **bileşenleri**), Test projeleri, Web projeleri ve derlemeler. Varsayılan olarak tüm kapsama ilişkileri görünür *grupları*, genişletme ve daraltma. **Externals** grubu platform bağımlılıklar dahil olmak üzere çözümünüzü dışında her şeyi içerir. Dış derlemeler yalnızca kullanılan öğeleri gösterir. Varsayılan olarak, sistem temel türleri görünmesine eşlemek gizlenir.  
 
@@ -287,7 +285,7 @@ Kodunuz boyunca bağımlılıkları anlamak istediğinizde, kod haritalarını o
 ##  <a name="SeeSourceHeader"></a> C ve C++ kaynak dosya ve üstbilgi dosyası arasındaki bağımlılıkları bakın  
  C++ projeleri için daha kapsamlı eşlemeleri oluşturmak isterseniz, Gözat bilgi derleyici seçeneği ayarlayın (**/FR**) o projelerde. Aksi durumda, bir ileti görüntülenir ve bu seçeneği ayarlamanızı ister. Seçerseniz **Tamam**, bu seçeneği yalnızca geçerli eşlemesi için ayarlar. Tüm sonraki eşlemeleri için iletisini gizlemek seçebilirsiniz. Bu iletiyi Gizle varsa, bunu yeniden görünür duruma getirebilirsiniz. Aşağıdaki kayıt defteri anahtarını ayarlamak `0` veya anahtarı silin:  
 
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
 
  Visual C++ projeleri içeren bir çözümü açtığınızda, IntelliSense veritabanını güncelleştirmek biraz zaman alabilir. Bu süre boyunca, üstbilgi için kod haritalarını oluşturmak mümkün olmayabilir (.h veya `#include`) IntelliSense veritabanı güncelleştirme tamamlanana kadar dosyaları. Visual Studio durum çubuğunda güncelleştirme ilerleme durumunu izleyebilirsiniz. Sorunları veya belirli IntelliSense ayarları devre dışı bırakıldığı için görüntülenen iletileri çözümlemek için bkz: [maps C ve C++ kodu için sorun giderme](#Troubleshooting).  
 
@@ -345,7 +343,7 @@ Kodunuz boyunca bağımlılıkları anlamak istediğinizde, kod haritalarını o
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Harita diğer Visual Studio kullanıcılarla paylaşma  
  Kullanım **dosya** harita kaydetmek için menüsünden.  
 
- veya  
+ -veya-  
 
  Harita belirli projesinin bir parçası harita kaydetmek için araç çubuğunda, seçin **paylaşımı**, **taşıma** \< *CodeMapName*>**.dgml içine**ve harita kaydetmek istediğiniz projesi'ni seçin.  
 

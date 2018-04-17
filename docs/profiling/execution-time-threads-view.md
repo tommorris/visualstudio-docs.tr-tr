@@ -1,29 +1,25 @@
 ---
-title: "Yürütme zamanı (iş parçacıkları görünümü) | Microsoft Docs"
-ms.custom: 
+title: Yürütme zamanı (iş parçacıkları görünümü) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.execution
 helpviewer_keywords:
 - Concurrency Visualizer, Execution Time (Threads View)
 ms.assetid: 80c100f8-2502-4613-bfef-4f4f2e09cc8d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91fda110b3bf73b59d7c9d7d8ff6f7226f9ec5fa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 62752f183a56f8c0f9fdd280fc84ccbb0b2c6653
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="execution-time-threads-view"></a>Yürütme Zamanı (İş Parçacıkları Görünümü)
 İş parçacığının etkin bir sistemde mantıksal çekirdek çalışma yaparken bu kesimler iş parçacıkları görünümü zaman çizelgesi yürütme zamanı temsil eder.  

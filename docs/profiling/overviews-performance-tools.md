@@ -1,23 +1,21 @@
 ---
-title: "Genel Bakış (performans araçları) | Microsoft Docs"
-ms.custom: 
+title: Genel Bakış (performans araçları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 00ec00f549198972714e95d9c586b0a3e30f2ffb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a71ca4dbffbba1599ebc0423142cdac1ae268b2a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overviews-performance-tools"></a>Genel Bakış (performans araçları)
 Bu bölümde kavramsal sağlar ve terminolojisi genel bakışlar için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir uygulama geliştirme altında performans özelliklerini ölçmek için kullanabileceğiniz profil oluşturma araçları.  

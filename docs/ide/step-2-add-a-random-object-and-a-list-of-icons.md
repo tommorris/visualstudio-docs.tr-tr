@@ -1,25 +1,21 @@
 ---
-title: "2. adım: rasgele nesne ve simge listesi ekleme | Microsoft Docs"
-ms.custom: 
+title: '2. adım: rasgele nesne ve simge listesi ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
-caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c54c94c27b21e120d2e3fe187a6598e0115d737f
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 2a4f6cf0b5b12c93de788e83c181c445a5fc6a50
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>2. Adım: Rasgele Nesne ve Simge Listesi Ekleme
 Bu adımda, oyun için bir grup eşleşen simge oluşturuyorsunuz. Her simge, form üzerindeki TableLayoutPanel denetiminde rasgele iki hücreye eklenir. Bunu yapmak için iki kullandığınız `new` deyimleri iki nesne oluşturma. İlki bir `Random` gibi matematik testi oyunda kullanılan nesne. Bu koddaki kullanım amacıysa, TableLayoutPanel denetiminde rasgele hücre seçmektir. Size yeni olabilir, ikinci nesne bir `List` rastgele seçilmiş simgeleri depolamak için kullanılan nesne.

@@ -1,23 +1,21 @@
 ---
-title: "Model aracılığıyla test geliştirme | Microsoft Docs"
-ms.custom: 
+title: Model aracılığıyla test geliştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2937edee2040d8e48938b9cbbf8e78e48780884
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0982bc72a98be6f015d580f3170a5790fe941867
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 Sisteminiz ve bileşenlerinin testlerini düzenlemenize yardımcı olması için gereksinimleri ve mimari modelleri kullanabilirsiniz. Bu yöntem kullanıcılar ve diğer Paydaşlar için önemli olan gereksinimleri test ve gereksinimleri değiştiğinde testleri hızlı bir şekilde güncelleştirmenize yardımcı sağlamaya yardımcı olur. Kullanırsanız [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], modeller ve testler arasındaki bağlantıları da koruyabilirsiniz.  
@@ -131,7 +129,7 @@ Assert (countAfter == countBefore = 1);
   
  Bir sınama açısından bakıldığında, gereksinimler modeli testler için bir toplu olarak görülebilir. Bu nedenle, testler ve model proje boyunca arasındaki ilişkiyi korumak önemlidir.  
   
-##  <a name="Attaching"></a>Model öğelere test çalışmaları ekleme  
+##  <a name="Attaching"></a> Model öğelere test çalışmaları ekleme  
  Projeniz kullanıyorsa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], testleri modelinizdeki öğelere bağlayabilirsiniz. Bu, hızlı bir şekilde bir gereksinimlerdeki etkilenen testleri bulma sağlar ve bir gereksinim gerçekleşti ölçüde izlemenize yardımcı olur.  
   
  Öğesi her türlü testleri bağlayabilirsiniz. Bazı örnekler şunlardır:  

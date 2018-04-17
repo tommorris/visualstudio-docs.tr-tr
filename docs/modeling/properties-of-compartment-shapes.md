@@ -1,25 +1,23 @@
 ---
-title: "Bölme şekiller özelliklerini | Microsoft Docs"
-ms.custom: 
+title: Bölme şekiller özelliklerini | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.compartmentshape
 helpviewer_keywords:
 - Domain-Specific Language, compartment shape
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e87af6c7b95fc05ab7e018f4b9adeb0ea9708868
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 17e3b9dcc045cbcf1d2e0f2553c925bb99573865
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-compartment-shapes"></a>Bölme Şekillerinin Özellikleri
 Bölme şekiller bir etki alanı sınıfının bir etki alanına özgü dil görüntülemek için kullanabilirsiniz şekiller biridir. Genişletin ve bölmeler daraltın.  
@@ -40,7 +38,7 @@ Bölme şekiller bir etki alanı sınıfının bir etki alanına özgü dil gör
 |Kenarlık Çizgi stili|Bu şekil (düz, çizgi, nokta, çizgi nokta, çizgi nokta nokta, özel) anahat çizgi stili.|Düz|  
 |Anahat kalınlığı|Bu şeklin Anahat kalınlığı.|0.03125|  
 |Metin rengi|Bu şeklin ile ilişkili metin dekoratörler için kullanılan renk.|Siyah|  
-|Access Modifier|Bölme şeklin erişim düzeyini (`public` veya `internal`).|Ortak|  
+|Erişim değiştiricisi|Bölme şeklin erişim düzeyini (`public` veya `internal`).|Ortak|  
 |Özel Öznitelikler|Bu bölme şekli'ndan oluşturulan kaynak kodu sınıfı öznitelikler eklemek için kullanılır|\<yok >|  
 |Çift oluşturur türetilmiş|Varsa `True`, bir taban sınıf ve bir parçalı sınıf (geçersiz kılmaları özelleştirmeyi desteklemek için) oluşturulur. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Özel bir oluşturucuya sahip|Varsa `True`, özel bir oluşturucu kaynak kodunda sağlanacaktır. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  

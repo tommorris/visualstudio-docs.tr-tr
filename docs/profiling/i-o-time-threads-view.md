@@ -1,29 +1,25 @@
 ---
-title: "T-O zamanı (iş parçacıkları görünümü) | Microsoft Docs"
-ms.custom: 
+title: T-O zamanı (iş parçacıkları görünümü) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.io
 helpviewer_keywords:
 - Concurrency Visualizer, I/O time (Threads View)
 ms.assetid: 0c4ec14d-d8dd-49c1-999c-dcbf4e8e1dc8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abea2c5ed246fe3463205894326a7f9611b56043
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 070e47d42b5d00058480cf5c4f94437855bfd80b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="io-time-threads-view"></a>G/Ç Zamanı (İş Parçacıkları Görünümü)
 Bu kesimler Zaman Çizelgesi'nde, g/ç olarak sınıflandırılır kez engelleme ile ilişkilendirilir. Başka bir deyişle, bir iş parçacığı bir g/ç işlemi tamamlamak bekliyor. İş parçacığı bir API veya eşzamanlılık görselleştiricisi g/ç olarak sayım bir g/Ç ile ilgili çekirdek bekleme engellenmiş. API'leri gibi `CreateFile()`, `ReadFile()`, ve `WSARecv()` bu gruba ayrılır.  

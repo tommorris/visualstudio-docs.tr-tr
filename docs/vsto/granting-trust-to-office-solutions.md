@@ -1,12 +1,10 @@
 ---
-title: "Office çözümlerine güven verme | Microsoft Docs"
-ms.custom: 
+title: Office çözümlerine güven verme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 41ecf50a7306025913f228500036d133918dd31b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4d3e89f9d864e80c3f3343b0d352105365e95e82
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="granting-trust-to-office-solutions"></a>Office Çözümlerine Güven Verme
   Office çözümlerine güven çözümü derleme, uygulama bildirimi, dağıtım bildirimi ve belge güvenmeyi her hedef bilgisayarın güvenlik ilkesini değiştirmek anlamına gelir. Güven Office çözümü için ya da son kullanıcı tarafından verilebilir.  
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-##  <a name="Signing"></a>Uygulama ve dağıtım imzalayarak çözümü güvenen bildirimleri  
+##  <a name="Signing"></a> Uygulama ve dağıtım imzalayarak çözümü güvenen bildirimleri  
  Tüm uygulama ve dağıtım bildirimlerini Office çözümleri yayımcıyı tanımlayan bir sertifika ile imzalanmalıdır. Sertifikalar, güven kararları almak için bir temel sağlar.  
   
  Geçici bir sertifika sizin için oluşturulur ve siz hata ayıklarken çözümü çalıştıracak şekilde güven derleme zamanında verilir. Geçici bir sertifikayla imzalanmış bir çözüm yayımlarsanız, son kullanıcı bir güven kararı vermeniz istenir.  
@@ -43,8 +42,8 @@ ms.lasthandoff: 01/10/2018
   
  Bir geliştirici çözüm geçici bir sertifika ile oturum açtığında, yönetici özelleştirme bilinen ve güvenilen bir sertifika ile bildirim oluşturma ve düzenleme Microsoft .NET Framework Araçları biri olan Aracı (mage.exe) kullanarak yeniden oturum açabilirsiniz. Çözümleri imzalama hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office çözümlerini imzalama](../vsto/how-to-sign-office-solutions.md) ve [nasıl yapılır: oturum uygulama ve dağıtım bildirimlerini](/visualstudio/ide/how-to-sign-application-and-deployment-manifests).  
   
-##  <a name="TrustPrompt"></a>ClickOnce güven istemi kullanarak çözüm güvenme  
- [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]çözümün sertifikasına güvenen kuruluş genelinde ilke yok ise güven kararı için son kullanıcıya sorar. Son kullanıcı çözüme güven verirse, bu güven kararı depolamak için bir URL ve ortak anahtar içeren bir ekleme listesi girdisi oluşturulur. Güvenilir özelleştirme daha sonra çalıştırdığınızda, son kullanıcı yeniden istenmez.  
+##  <a name="TrustPrompt"></a> ClickOnce güven istemi kullanarak çözüm güvenme  
+ [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] çözümün sertifikasına güvenen kuruluş genelinde ilke yok ise güven kararı için son kullanıcıya sorar. Son kullanıcı çözüme güven verirse, bu güven kararı depolamak için bir URL ve ortak anahtar içeren bir ekleme listesi girdisi oluşturulur. Güvenilir özelleştirme daha sonra çalıştırdığınızda, son kullanıcı yeniden istenmez.  
   
  Yöneticiler devre dışı bırakabilir [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi veya Authenticode sertifikası ile imzalanmış çözümleri için isteme gerek duyabilir. Bilgisayarım, LocalIntranet, Internet, TrustedSites ve UntrustedSites bölgeler için bu ayarları değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: ClickOnce güven istemi davranışını yapılandırma](/visualstudio/deployment/how-to-configure-the-clickonce-trust-prompt-behavior).  
   

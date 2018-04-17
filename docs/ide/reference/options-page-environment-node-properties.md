@@ -1,26 +1,24 @@
 ---
-title: "Seçenekler sayfası, ortam düğümü özellikleri | Microsoft Docs"
-ms.custom: 
+title: Seçenekler sayfası, ortam düğümü özellikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ddc53a84ca6cc09c5682bc874503849eee98eae8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3cd05ebf4c0161611789214295003eced4ca0d4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-page-environment-node-properties"></a>Seçenekler Sayfası, Ortam Düğümü Özellikleri
 Bu belgede sayfaları (veya özellikleri koleksiyonları) açıklanır ile ilişkili **ortam** kategorisi, `DTE.Properties("Environment", <Property Page>)`, **seçenekleri** iletişim kutusu. Her alt bölüm başlığı özellikleri koleksiyonuna erişmek için kullanılan çağrıdır ve her alt tabloda bir koleksiyondaki özellikleri listeler.  
@@ -54,7 +52,7 @@ Bu belgede sayfaları (veya özellikleri koleksiyonları) açıklanır ile iliş
   
 |Özellik Öğesi Adı|Değer|Açıklama|  
 |------------------------|-----------|-----------------|  
-|ReuseSavedActiveDocWindow|Get/Set (Boole)|Geçerli belge kaydedilirse, yeni bir dosyanın açılması geçerli pencereyi yeniden kullanır olup olmadığını belirler. `false`her zaman açık her belge için yeni bir belge penceresi açık anlamına gelir.|  
+|ReuseSavedActiveDocWindow|Get/Set (Boole)|Geçerli belge kaydedilirse, yeni bir dosyanın açılması geçerli pencereyi yeniden kullanır olup olmadığını belirler. `false` her zaman açık her belge için yeni bir belge penceresi açık anlamına gelir.|  
 |DetectFileChangesOutsideIDE|Get/Set (Boole)|Ortamında işletim sistemi dosyaları diskte değiştirilmiş IDE bildirdiğinde IDE içinde açılan dosyaları otomatik olarak yükler olup olmadığını belirler.|  
 |AutoloadExternalChanges|Get/Set (Boole)|Açık belgeyi değil değiştirilirse belgeleri otomatik olarak açmak için dış değişiklikler değiştirilmiş dosyayı yeniden algılanan olup olmadığını belirler. Açık belge değiştirilir ve bu özellik `true`, bu özellik değilmiş gibi IDE ister sonra `false`.|  
 |InitializeOpenFileFromCurrentDocument|Get/Set (Boole)|Belirler olup olmadığını <xref:EnvDTE.DTEClass.OpenFile%2A> komutu çekirdeğini oluşturur son etkin belgedeki dizin ve dosya adı veya bir dosya açıldığında son yerden.|  
@@ -158,7 +156,7 @@ Bu belgede sayfaları (veya özellikleri koleksiyonları) açıklanır ile iliş
 |------------------------|-----------|-----------------|  
 |Giriş sayfası|Get/Set (dize)|Giriş sayfası URL'si temsil eder.|  
 |SearchPage|Get/Set (dize)|Arama sayfası URL'si temsil eder.|  
-|ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource>(Kaynak, tasarım, dış).|  
+|ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (Kaynak, tasarım, dış).|  
 |ViewSourceExternalProgram|Get/Set (dize)|Dış kaynak Görüntüleyicisi'ni yolu.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

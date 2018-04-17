@@ -1,23 +1,21 @@
 ---
-title: "Kaynak izleme performans kuralları | Microsoft Docs"
-ms.custom: 
+title: Kaynak izleme performans kuralları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 32ddf4774de92a24a5839f320d09eb61898c69d4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 75c84bba3939a273fec69b349a393860037f1091
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resource-monitoring-performance-rules"></a>Kaynak İzleme Performans Kuralları
 Kaynak İzleme kategorideki performans iletileri, uygulamanızın performansı ile ilgili ek bilgiler sağlar. Bu veriler, performans sorunlarını analiz etmek için kullanabilirsiniz. Bu, bilgi ve her çalıştırma profili oluşturma için bildirilen kurallardır.  

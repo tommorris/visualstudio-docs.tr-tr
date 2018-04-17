@@ -1,13 +1,10 @@
 ---
-title: "Çağrı ağacı görünümü | Microsoft Docs"
-ms.custom: 
+title: Çağrı ağacı görünümü | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.calltree
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - performance reports, Call Tree view
 - profiling tools, Call Tree view
 ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e55e469112053d7a78416c21a685d423a6bfa31
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d14d0e7252c28e2d73f2c58f4a14be97722f68aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="call-tree-view"></a>Çağrı Ağacı Görünümü
 Çağrı ağacı görünümü profili uygulamada geçiş işlevi yürütme yollarını görüntüler. Ağaç kök uygulama veya bileşenin giriş noktasıdır. Her işlevi düğüm tüm adlı işlevleri ve bu işlev çağrıları hakkında performans verilerini listeler.  

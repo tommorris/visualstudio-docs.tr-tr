@@ -1,13 +1,10 @@
 ---
-title: "ProjectItem öğesi | Microsoft Docs"
-ms.custom: 
+title: ProjectItem öğesi | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - ProjectItem element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 949aef0655db4536c8690080870a03f52f09fdf4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ea55cbba9115b88ab9bbf763ec489dce7ad7556e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectitem-element"></a>ProjectItem Öğesi
   Bir SharePoint proje öğesi temsil eder. .Spdata dosyasının gerekli kök öğesidir.  
@@ -64,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 |-------------|-----------------|  
 |[ExtensionData](../sharepoint/extensiondata-element.md)|İsteğe bağlı öğe.<br /><br /> SharePoint proje öğesi ile ilişkili olan özel veri öğeleri koleksiyonunu temsil eder.<br /><br /> Yalnızca bir tane içerebilir **ExtensionData** öğesi.|  
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|İsteğe bağlı öğe.<br /><br /> SharePoint için dağıtıldığında sahip bir özellik dahil olan özellik değerlerini koleksiyonunu temsil eder.<br /><br /> Yalnızca bir tane içerebilir **FeatureProperties** öğesi.|  
-|[Dosyaları](../sharepoint/files-element.md)|İsteğe bağlı **FileCollectionType** öğesi.<br /><br /> SharePoint proje öğesi özellik öğesi dosyaları gibi ve SharePoint olmayan bağımlı projeleri çıktısını dağıtmak için dosyaları belirtir.<br /><br /> Ya da içermelidir bir **dosyaları** veya **Projectıtemfolder** öğesi, ancak ikisini birden değil.|  
+|[Dosyalar](../sharepoint/files-element.md)|İsteğe bağlı **FileCollectionType** öğesi.<br /><br /> SharePoint proje öğesi özellik öğesi dosyaları gibi ve SharePoint olmayan bağımlı projeleri çıktısını dağıtmak için dosyaları belirtir.<br /><br /> Ya da içermelidir bir **dosyaları** veya **Projectıtemfolder** öğesi, ancak ikisini birden değil.|  
 |[Projectıtemfolder](../sharepoint/projectitemfolder-element.md)|İsteğe bağlı **ProjectItemFolderType** öğesi.<br /><br /> Eşlenmiş bir klasörde temsil eder.<br /><br /> Ya da içermelidir bir **dosyaları** veya **Projectıtemfolder** öğesi, ancak ikisini birden değil.|  
 |[SafeControls](../sharepoint/safecontrols-element.md)|İsteğe bağlı öğe.<br /><br /> ASPX denetimleri ve SharePoint sitesindeki herhangi bir ASPX sayfasında erişmek herhangi bir kullanıcı için güvenli olarak tasarlanmış Web Bölümleri koleksiyonunu temsil eder.<br /><br /> Yalnızca bir tane içerebilir **SafeControls** öğesi.|  
   

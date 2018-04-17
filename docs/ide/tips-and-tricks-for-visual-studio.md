@@ -1,26 +1,25 @@
 ---
-title: "Visual Studio klavye kısayolları | Microsoft Docs"
+title: Visual Studio klavye kısayolları | Microsoft Docs
 ms.date: 06/21/2017
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: a4d53ec38ee006e73f7d3f0d454e928527cc0120
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="keyboard-tips-for-visual-studio"></a>Visual Studio için klavye ipuçları
+# <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio için klavye kısayolları
 
 Bu makalede klavye kısayollarını kullanarak Visual Studio'da daha kolay gidebilirsiniz.
 
-Burada listelenen kısayolları kullanılabilir klavye kısayolları yalnızca bir alt kümesidir. Daha kapsamlı bir liste için bkz: [varsayılan klavye kısayolları Visual Studio'da](../ide/default-keyboard-shortcuts-in-visual-studio.md).
-
-Visual Studio'nun erişilebilirlik için en iyi duruma getirme hakkında daha fazla bilgi için bkz: [erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md).
+> [!TIP]
+> Burada listelenen kısayolları kullanılabilir klavye kısayolları yalnızca bir alt kümesidir. Daha kapsamlı bir liste için bkz: [varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="window-management"></a>Pencere Yönetimi
 
@@ -30,7 +29,7 @@ Visual Studio'nun erişilebilirlik için en iyi duruma getirme hakkında daha fa
 |Kayan penceresinin ekranı kaplamasını sağlayın|Başlık çubuğunda çift tıklatın|
 |Yüzen pencere yeniden yerleştirme|CTRL + çift tıklatma başlık çubuğu|
 |Etkin belgeyi Kapat|Ctrl+F4|
-|Dosya Aç listesini göster|Ctrl+Alt+Down|
+|Dosya Aç listesini göster|Ctrl + Alt + Aşağı Ok|
 |Tüm kayan Windows Göster|Ctrl+Shift+M|
 
 ## <a name="window-shortcuts"></a>Pencere kısayolları
@@ -39,9 +38,9 @@ Visual Studio'nun erişilebilirlik için en iyi duruma getirme hakkında daha fa
 |-|-|
 |Windows kayan taşıma/yerleştirme|Win + Sol / Win + sağ ok|
 |En üst düzeye/pencereleri simge durumuna küçültün|Win + yukarı / Win + aşağı ok|
-|Atlama listesi göster|Win+Alt+n|
-|Yeni örnek Başlat|Win+Shift+n|
-|Windows arasında geçiş yapma|Win+n|
+|Atlama listesi göster|Win + Alt + N|
+|Yeni örnek Başlat|Win + Shift + N|
+|Windows arasında geçiş yapma|Win + N|
 
 ## <a name="visual-studio-search"></a>Visual Studio arama
 
@@ -51,7 +50,7 @@ Visual Studio'nun erişilebilirlik için en iyi duruma getirme hakkında daha fa
 |Herhangi bir aracı penceresi arama kutusuna odakta Yerleştir|Alt +' odak olduğunda araç penceresi|
 |Hızlı Başlat|Ctrl+Q|
 |Hızlı Başlatma kapsam sonuçları|- @opt Seçenekleri<br />- @cmd Komutları<br />- @mru En son kullanılan<br />- @doc Belgeleri Aç|
-|Araçlar Seçenekler arama|Ctrl+E|
+|Araçlar Seçenekler arama|Ctrl + E|
 
 ## <a name="editor-find"></a>Düzenleyici Bul
 
@@ -64,7 +63,7 @@ Visual Studio'nun erişilebilirlik için en iyi duruma getirme hakkında daha fa
 |Bul kapatın|Esc|
 |Hızlı Değiştir|Ctrl+H|
 |Hızlı sonraki değiştirin|Alt+R|
-|Hızlı Değiştir Tümünü Değiştir|Alt+A|
+|Hızlı Değiştir Tümünü Değiştir|Alt + A|
 |Dosyalarda Bul|Ctrl+Shift+F|
 |Dosyalarda Değiştir|Ctrl+Shift+H|
 
@@ -75,13 +74,13 @@ Visual Studio'nun erişilebilirlik için en iyi duruma getirme hakkında daha fa
 |IntelliSense Öneri Modu|Ctrl + Alt + boşluk (geçiş)||
 |Zorla Göster IntelliSense|Ctrl+J||
 |Hızlı Eylemler|Ctrl+.||
-|Snippet Picker|CTRL + K, X veya?, sekme (VB)||
-|İle surround|Ctrl+K,S||
-|Hızlı bilgi göster|Ctrl+K,I||
-|Gidin|Ctrl+,||
+|Parçacığı Seçici|CTRL + K, X veya?, sekme (VB)||
+|İle surround|CTRL + K, S||
+|Hızlı bilgi göster|CTRL + K, t||
+|Gidin|**CTRL**+**,**||
 |Vurgulanan başvuruları gidin|Ctrl + Shift + Yukarı (önceki), Ctrl + Shift + aşağı ok (İleri)||
-|Düzenleyici yakınlaştırma|Ctrl + Shift + > (gelen), Ctrl + Shift + < (giden)||
-|Blok seçimi|Alt basılı tutun ve fare, Shift + Alt + ok tuşları sürükleyin||
+|Düzenleyici yakınlaştırma|**CTRL**+**Shift** + **>** (gelen) **Ctrl**+**Shift** + **<** (Giden)||
+|Blok seçimi|Tutun **Alt** ve fare, Shift + Alt + ok tuşları sürükleyin||
 |Satırı Yukarı/Aşağı Taşı|Alt + Yukarı / Alt + Aşağı Ok||
 |Yinelenen satır|Ctrl+E,V|Visual Studio 2017 sürüm 15,6|
 |Seçimi genişletin|**Shift**+**Alt**+**=**|Visual Studio 2017 sürüm 15,5|
@@ -91,16 +90,16 @@ Visual Studio'nun erişilebilirlik için en iyi duruma getirme hakkında daha fa
 |Tanımı yığınına gidin|Ctrl + Shift + 8 (arka), Ctrl + Shift + 7 (İleri)||
 |Peek tanımı penceresini kapatın|Esc||
 |Normal belge sekmesine Peek tanımı penceresi Yükselt|Ctrl+Alt+Home||
-|Birden çok tanımı gözatma pencereleri arasında gezinme|Ctrl+Alt+- ve Ctrl+Alt+=||
-|Birden çok gözlem sonuçları arasında gezinme|F8ve Shift+F8||
+|Birden çok tanımı gözatma pencereleri arasında gezinme|**CTRL**+**Alt** + **-** ve **Ctrl**+**Alt**+**=**||
+|Birden çok gözlem sonuçları arasında gezinme|**F8** ve **Shift**+**F8**||
 |Kod Düzenleyicisi penceresini ve Peek tanımı penceresi arasında geçiş yapma|Shift+Esc||
 
 ## <a name="toolbars"></a>Araç Çubukları
 
 |||
 |-|-|
-|Düğme ekleme|Araç çubuğu taşma düğmesini tıklatın|
-|Standart araç çubuğundaki açılan Bul|Ctrl+D|
+|Düğme ekleme|Araç çubuğu taşma düğmesini seçin|
+|Standart araç çubuğundaki açılan Bul|**Ctrl**+**D**|
 |TextBox komut modu Bul|Türü ">"|
 |Yeni diğer adı oluştur|> diğer ad NewAlias komutu|
 
@@ -125,9 +124,6 @@ Visual Studio'nun erişilebilirlik için en iyi duruma getirme hakkında daha fa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+- [Erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md)
 - [Klavye kısayolları (VSTS ve TFS)](/vsts/collaborate/keyboard-shortcuts)
-- [Visual Studio Blog](http://blogs.msdn.com/b/visualstudio)
 - [Visual Studio ipuçları ve püf noktaları blogu](http://blogs.msdn.com/b/zainnab)
-- [Visual Studio araç kutusu kanalda 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
-- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
-- [Visual Studio bağlanmak hataları](http://connect.microsoft.com/VisualStudio)

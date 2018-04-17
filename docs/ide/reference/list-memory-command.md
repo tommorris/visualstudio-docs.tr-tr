@@ -1,13 +1,10 @@
 ---
-title: "Liste belleği komutu | Microsoft Docs"
-ms.custom: 
+title: Liste belleği komutu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - debug.listmemory
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - ListMemory command
 - list memory command
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6780ffc846d3710b78bbfa994ca3e73d14209e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 141754e9b298885266aee6d90850b4f0a5c159aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-memory-command"></a>Belleği Listele Komutu
 Belirtilen aralığı bellek içeriğini görüntüler.  
@@ -42,7 +38,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  İsteğe bağlı. Bellek görüntüleme başlayacağı bellek adresi.  
   
 ## <a name="switches"></a>Anahtarlar  
- / ANSI &#124; Unicode  
+ / ANSI&#124;Unicode  
  İsteğe bağlı. Bellek, bellek, ANSI veya Unicode bayt için karşılık gelen karakter olarak görüntüleyin.  
   
  / Sayısı:`number`  
@@ -51,7 +47,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  / Biçimi:`formattype`  
  İsteğe bağlı. Biçim türü bellek bilgileri görüntülemek için **bellek** olabilir; penceresi OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bit) veya çift (64 bit). OneByte kullanılırsa, `/Unicode` kullanılamıyor.  
   
- /Hex &#124; İmzalı &#124; İmzasız  
+ / Onaltılık&#124;imzalı&#124;imzalanmamış  
  İsteğe bağlı. Numaralarını görüntüleme için kullanılacak biçimi belirtir: olarak imzalanmış, imzasız veya onaltılık.  
   
 ## <a name="remarks"></a>Açıklamalar  

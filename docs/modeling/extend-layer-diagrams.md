@@ -1,24 +1,22 @@
 ---
-title: "Bağımlılık diyagramlarını genişletme | Microsoft Docs"
-ms.custom: 
+title: Bağımlılık diyagramlarını genişletme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-modeling
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, creating extensions
 - layer models
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3358d5e74b121bcf670a0092f3064882d6960b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b359507946a68ee457d4840fc8652f7f48e3e11a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extend-dependency-diagrams"></a>Bağımlılık diyagramlarını genişletme
 Kod oluşturma ve bağımlılık diyagramları güncelleştirir ve Visual Studio'da bağımlılık diyagramları karşı program kodunuzu yapısını doğrulamak için yazabilirsiniz. Diyagramları (içerik) kısayol menüsünde görüntülenen, sürükle ve bırak hareketleri özelleştirmek ve katman modeli metin şablonlardan erişim komutları ekleyebilirsiniz. Bu uzantılar bir Visual Studio Tümleştirme Uzantısı (VSIX) paketini ve diğer Visual Studio kullanıcılara dağıtın.  
@@ -33,7 +31,7 @@ Kod oluşturma ve bağımlılık diyagramları güncelleştirir ve Visual Studio
   
 -   [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)  
   
-##  <a name="prereqs"></a>Gereksinimleri  
+##  <a name="prereqs"></a> Gereksinimleri  
  Aşağıdaki katman uzantılar geliştirmek üzere istediğiniz bilgisayarda yüklü olması gerekir:  
   
 -   Visual Studio  

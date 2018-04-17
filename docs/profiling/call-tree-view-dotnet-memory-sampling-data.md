@@ -1,27 +1,23 @@
 ---
-title: "Çağrı ağacı görünümü - .NET bellek örnekleme verileri | Microsoft Docs"
-ms.custom: 
+title: Çağrı ağacı görünümü - .NET bellek örnekleme verileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: fbb6cb60-420b-4ca9-8306-2494f7d321fe
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c81f9b5ff7d0bad9c0a05bd4b43374ac9451cf1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0beae2d3f95fdf06120898eb7ec75731c69a35d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Çağrı ağacı görünümü - .NET bellek örnekleme verileri
 Çağrı ağacı görünümü profili uygulamada geçiş işlevi yürütme yollarını görüntüler. Ağaç kök uygulama veya bileşenin giriş noktasıdır. Her işlevi düğümü adlı tüm işlevleri ve bu işlev çağrıları hakkında .NET bellek ayırma verileri listeler.  
@@ -46,7 +42,7 @@ ms.lasthandoff: 12/22/2017
 |**İşlev adı**|İşlev tam adı.|  
 |**İşlev satır numarası**|Bu işlev kaynak dosyadaki başlangıç satır sayısı.|  
 |**İşlev adresi**|İşlev adresi.|  
-|**Düzeyi**|Çağrı ağacı işlevinde derinliği.|  
+|**düzeyi**|Çağrı ağacı işlevinde derinliği.|  
 |**Kapsayıcı ayırmaları**|Bu işlev çağrısı ağacında üst işlevi tarafından adı veriliyordu örnekler tarafından ayrılan nesnelerin sayısı. Bu sayı, alt işlevleri tarafından yapılan ayırmaları içerir.|  
 |**Kapsayıcı ayırmaları %**|Profil çalıştırdığınızda oluşturulan tüm nesneler yüzdesi bu işlevin kapsayıcı ayırmaları yoktu.|  
 |**Özel ayırmaları**|Bu işlev çağrısı ağacında üst işlevi tarafından adı veriliyordu örnekler tarafından ayrılan nesnelerin sayısı. Bu sayı, alt işlevleri tarafından yapılan ayırmaları içermez.|  

@@ -1,21 +1,21 @@
 ---
 title: Kod derleme sürecinde Visual Studio'da oluşturma | Microsoft Docs
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5c79cc30e7619ddd02fe05d4f8911d4d9b81f330
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 9c3a7d67b4e3652ea1e0a474aed174c9596012e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>Derleme sürecinde kod oluşturma
 
@@ -41,7 +41,7 @@ Varsa [yapı sunucunuz](http://msdn.microsoft.com/Library/788443c3-0547-452e-959
 
     -   Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+-   $(ProgramFiles) \Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
     -   Microsoft.VisualStudio.TextTemplating.*.0.dll
 
@@ -49,7 +49,7 @@ Varsa [yapı sunucunuz](http://msdn.microsoft.com/Library/788443c3-0547-452e-959
 
     -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+-   $(ProgramFiles) \Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
     -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 

@@ -1,23 +1,21 @@
 ---
 title: Sys (VSPerfCmd) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2fa8b11d6f7ca080980234fde4fef5659f376a2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 81661358dbc000f871015099ab40ee8bbfb56195
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 VSPerfCmd.exe **Sys** seçeneği sistem çağrısı olayları (işletim sistemi profili uygulamasından işlev çağrıları) örnekleme profil olay ayarlar ve isteğe bağlı olarak değişiklik sistem bir örnekleme ek çağrı sayısı Varsayılan olarak 10 Aralık.  
@@ -41,10 +39,10 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 ## <a name="required-options"></a>Gerekli seçenekler  
  **Sys** aşağıdaki seçeneklerden birini gerektirir.  
   
- **Başlatma:**`AppName`  
+ **Başlat:** `AppName`  
  Profil Oluşturucu ve tarafından belirtilen uygulamayı başlatır `AppName`.  
   
- **Ekle:**`PID`  
+ **Ekle:** `PID`  
  Profil Oluşturucu tarafından belirtilen işlem ekler `PID`.  
   
 ## <a name="invalid-options"></a>Geçersiz seçenekleri  
@@ -59,7 +57,7 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
  **Sayaç:** `Name`[`,Reload`[`,FriendlyName`]]  
  Sayaç tarafından belirtilen CPU performans örnekleme olay ayarlar `Name` ve örnekleme aralığı ayarlar `Reload`.  
   
- **GC**[**:**{**ayırma**&#124; **Ömür**}]  
+ **GC**[**:**{**ayırma**&#124;**ömrü**}]  
  .NET bellek verileri toplar. Varsayılan olarak (**ayırma**), her bellek ayırma etkinlikte toplanan veriler. Zaman **ömrü** parametresi belirtilmişse, veri her atık toplama etkinlikte de toplanır.  
   
 ## <a name="example"></a>Örnek  

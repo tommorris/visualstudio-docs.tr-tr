@@ -1,27 +1,23 @@
 ---
-title: "Visual Studio SDK sözlüğü | Microsoft Docs"
-ms.custom: 
+title: Visual Studio SDK sözlüğü | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa0f7eaed09df717eb0746076715f9c780464df1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0a08985c4977896e35fa8cd94014385ac32dd8bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK sözlüğü
 Bu sözlük kullanılan terimler için tanımları sağlar, [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] belgeleri.  
@@ -76,7 +72,7 @@ Bu sözlük kullanılan terimler için tanımları sağlar, [!INCLUDE[vsipsdk](.
  Genel bir bütün olarak belge başvurmak için kullanılan — hem `DocData` ve `DocView`. Örneğin, bir DocumentFrame içeren bir `DocView`, ancak aynı zamanda bir başvuru korur `DocData` Kalıcılık işlemek için.  
   
  DocView  
- DocObject/katıştırma/görüntülemek ve arka plandaki işlemek için kullanıcı ile etkileşim WindowPane `DocData`. Kullanıcıların parçası olan belge/görünüm ayrımı avantajlarından yararlanabilir mi Not `DocObject` tasarım arabirim. Kullanıcılar, temel alınan veri olarak bilinen daha soyut (ve daha az resmileştirilmiş) kavramını kullanmak yerine bir görünüm olarak davranacak şekilde tüm DocObject kullanmak `DocData`. `DocView`Belge çerçeve nesneleriyle IDE (MDI alt pencereleri) katıştırılmış nesneler her zaman.  
+ DocObject/katıştırma/görüntülemek ve arka plandaki işlemek için kullanıcı ile etkileşim WindowPane `DocData`. Kullanıcıların parçası olan belge/görünüm ayrımı avantajlarından yararlanabilir mi Not `DocObject` tasarım arabirim. Kullanıcılar, temel alınan veri olarak bilinen daha soyut (ve daha az resmileştirilmiş) kavramını kullanmak yerine bir görünüm olarak davranacak şekilde tüm DocObject kullanmak `DocData`. `DocView` Belge çerçeve nesneleriyle IDE (MDI alt pencereleri) katıştırılmış nesneler her zaman.  
   
  DTE  
  `DTE` (Geliştirme araçları genişletilebilirliği) nesnesidir program aracılığıyla otomatikleştirmek ve IDE genişletmek sağlar Visual Studio Otomasyon modelinde en üstteki erişim noktası.  

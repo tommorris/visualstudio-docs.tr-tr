@@ -1,24 +1,22 @@
 ---
-title: "T4 metin şablonuna ilişkin hata ayıklama | Microsoft Docs"
-ms.custom: 
+title: T4 metin şablonuna ilişkin hata ayıklama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 86d8bb0fafefab8a0273012ed8e45b44c31eac47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Bir T4 Metin Şablonuna İlişkin Hata Ayıklama
 Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı metin şablonu hata ayıklamak için metin şablonu dosyasını kaydedin ve ardından **hata ayıklama T4 şablon** Çözüm Gezgini'nde dosyasının kısayol menüsünde. Çalışma zamanı metin şablonu hata ayıklamak için basitçe ait olduğu uygulama hata ayıklama.  
@@ -72,7 +70,7 @@ Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı meti
 |'{0}' dosyası için bir içerme yönergesi sonsuz bir döngüye neden olur.|Döngüsel yönergeleri eklerseniz görüntülenen belirtilir (örneğin, dosya A Dosya A içeren dosya B içerir).|Döngüsel belirtmeyin yönergeleri içerir.|  
 |Dönüştürme çalıştırma:|Tüm hatalar veya dönüştürme çalıştırılırken oluşturulan uyarılar için bu dizeyi başına.|Yok.|  
 |Beklenmeyen bir başlangıç veya bitiş etiketi bloğu içinde bulunamadı. Bir başlangıç veya bitiş etiketi yanlış yazmadınız ve şablonda herhangi iç içe geçmiş bir bloğu yoksa emin olun.|Beklenmeyen bir olduğunda görüntülenen \<# veya #>. Diğer bir deyişle, varsa bir \<# kapalı başka bir açık etiketinden sonra veya sahip bir #> önceki kapatılmamış bir açma etiketi yok olduğunda. İleti eşleşmeyen etiketi satır sayısını sağlar.|Eşleşmeyen başlangıç veya bitiş etiketi Kaldır ya da bir kaçış karakteri kullanın.|  
-|Bir yönerge biçimi yanlış belirtildi. Yönergesi yoksayılacak. Lütfen yönergesi biçiminde belirtin`<#@ name [parametername="parametervalue"]*  #>`|Bir yönerge doğru biçimde belirtilmezse ayrıştırıcı tarafından görüntülenir. İleti hatalı yönergesi satır sayısını sağlar.|Tüm yönergeleri biçiminde olduğundan emin olmanız `<#@ name [parametername="parametervalue"]*  #>`. Daha fazla bilgi için bkz: [T4 metin şablonu yönergeleri](../modeling/t4-text-template-directives.md).|  
+|Bir yönerge biçimi yanlış belirtildi. Yönergesi yoksayılacak. Lütfen yönergesi biçiminde belirtin `<#@ name [parametername="parametervalue"]*  #>`|Bir yönerge doğru biçimde belirtilmezse ayrıştırıcı tarafından görüntülenir. İleti hatalı yönergesi satır sayısını sağlar.|Tüm yönergeleri biçiminde olduğundan emin olmanız `<#@ name [parametername="parametervalue"]*  #>`. Daha fazla bilgi için bkz: [T4 metin şablonu yönergeleri](../modeling/t4-text-template-directives.md).|  
 |Kayıtlı yönerge işlemcisi '{1}' için '{0}' derlemesi yüklenemedi<br /><br /> {2}|Bir yönerge işlemcisi ana bilgisayar tarafından yüklenemedi oluşur. İleti yönerge işlemcisi ve yönerge işlemcisi ad için sağlanan derleme tanımlar.|Yönerge işlemcisi doğru şekilde kaydedildiğini ve derleme var olduğundan emin olun.|  
 |'{0}' türünün '{1}' derlemesinde kayıtlı yönerge işlemcisi '{2}' bulunamadı.<br /><br /> {3}|Bir yönerge işlemcisi türü, Derleme yüklenemedi oluşur. İleti türü, derleme ve yönerge işlemcisi adı sağlar.|Vshost yönerge işlemcisi bilgileri (adı, derleme ve türü) kayıt defterinde bulur. Yönerge işlemcisi doğru şekilde kaydedildiğini ve türü derlemede var olduğundan emin olun.|  
 |'{0}' derlemesi yüklenirken bir sorun oluştu|Bir derlemesi yüklenirken bir sorun olduğunda oluşur. İleti derlemenin adını sağlar.|İçinde yüklenecek derlemeler belirtebilirsiniz \<@# assembly #> yönergeleri ve yönerge işlemcileri tarafından. Bu dize aşağıdaki hata iletisini daha fazla veri derleme yük neden başarısız sağlamalıdır.|  

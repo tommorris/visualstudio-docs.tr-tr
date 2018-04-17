@@ -1,13 +1,10 @@
 ---
-title: "SharePoint paketleme ve dağıtım sorunlarını giderme | Microsoft Docs"
-ms.custom: 
+title: SharePoint paketleme ve dağıtım sorunlarını giderme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.WorkflowDeployment.Troubleshooting
 - VS.SharePointTools.Project.PackageRetraction
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b30c17b9b20c59085fc8a684e3b9735daa0e019c
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95dfd93433fc70895baa9056ce1b1522845bf497
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>SharePoint Paketleme ve Dağıtım Sorunlarını Giderme
   Bu konuda paketini ve SharePoint çözümlerini dağıtırken karşılaşabileceğiniz çeşitli sorunlar ele alınmaktadır.
@@ -42,7 +39,7 @@ ms.lasthandoff: 03/02/2018
  Visual Studio, SharePoint ve diğer katmanları arasında tanılamak için yığın izlemesi görüntülemek için EnableDiagnostics kayıt defteri anahtarını kullanabilirsiniz. Daha fazla bilgi için bkz: [hata ayıklama SharePoint çözümlerini](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="adding-project-output-to-the-solution-package"></a>Çözüm Paketine Proje Çıktısı Ekleme
- Bir paketi paket tasarımcısını aracılığıyla proje çıktı ekleyebilirsiniz. Ancak, proje çıktı eklediğinizde, projenin platform SharePoint çözüm platformu eşleştiğinden emin olun. Kullanmanızı öneririz **herhangi bir CPU** SharePoint sunucusuna dağıtmak istediğiniz derlemeler için platform hedefi. Daha fazla bilgi için bkz: [derleme sayfası, Proje Tasarımcısı &#40; Visual Basic &#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) ve [Gelişmiş derleyici Ayarları iletişim kutusu &#40; Visual Basic &#41; ](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ Bir paketi paket tasarımcısını aracılığıyla proje çıktı ekleyebilirsiniz. Ancak, proje çıktı eklediğinizde, projenin platform SharePoint çözüm platformu eşleştiğinden emin olun. Kullanmanızı öneririz **herhangi bir CPU** SharePoint sunucusuna dağıtmak istediğiniz derlemeler için platform hedefi. Daha fazla bilgi için bkz: [derleme sayfası, Proje Tasarımcısı &#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) ve [Gelişmiş derleyici Ayarları iletişim kutusu &#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
 
 ## <a name="validation-warnings-and-errors"></a>Doğrulama Uyarıları ve Hataları
  Visual Studio'da SharePoint geliştirme araçları çözüm paketi doğru biçimlendirildiğinden emin doğrulamak için doğrulama adımlarını gerçekleştirin. Özel doğrulama adımlarını, özellikleri ve paketler için de oluşturabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: özel özellik oluşturmak ve paket doğrulama kuralları SharePoint çözümleri için](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
@@ -55,7 +52,7 @@ ms.lasthandoff: 03/02/2018
 |Değer|Açıklama|
 |-----------|-----------------|
 |Otomatik|Çakışmaları algılar ve çakışma otomatik olarak çözer.|
-|Prompt|Çakışmaları algılar ve bunları çakışmalarını çözme önce geliştiriciye raporlar.|
+|istemi|Çakışmaları algılar ve bunları çakışmalarını çözme önce geliştiriciye raporlar.|
 |Yok.|Çakışmaları algılamaz.|
 
 ## <a name="differences-between-f5-deployment"></a>F5 Dağıtımı Arasındaki Farklar

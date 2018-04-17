@@ -1,27 +1,24 @@
 ---
-title: Python kodu yeniden düzenleme | Microsoft Docs
+title: Python kodu yeniden düzenleme
 description: Nasıl kolayca düzenleme yöntemleri, ayıklama tanımlayıcıları yeniden adlandırarak Visual Studio'da Python kodu içeri aktarmalar ekleme ve kullanılmayan kaldırma içeri aktarır.
 ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3538cded73c285cbdcf7d142b71d0adf02f746bc
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 32d25159063930ba489bcc5fbb350a931c653d31
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="refactoring-python-code"></a>Python kodu yeniden düzenleme
 
@@ -75,7 +72,7 @@ Benzer şekilde, Visual Studio diğer modüller ya da yerleşik ad alanı içe i
 
 Son olarak, bir şey normalde dışlanan ancak diğer (adı modülünde bir değer örneğin atandığından), dahil olacak değerleri, Visual Studio hala sahip alma dışlar. Bu davranış değeri başka bir modülde tanımlanır ve böylece ek ataması da aktarılmaz bir kukla değer olması olasıdır çünkü dışarı döndürmemelidir olduğunu varsayar.
 
-<a name="remove-imports"</a>
+< a name = "remove-imports"</a>
 
 ## <a name="remove-unused-imports"></a>Kullanılmayan içeri aktarmalar Kaldır
 

@@ -1,13 +1,10 @@
 ---
-title: "İzlenecek yol: kod parçacığı oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: kod parçacığı oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 10/27/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -16,19 +13,18 @@ helpviewer_keywords:
 - code snippets, references
 - code snippets, imports
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac4cef411bb6304e4033de1850e6c428e34285e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 59aff5d84f81b1e9dea9cd3e4c08527b14dc7f34
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>İzlenecek Yol: Kod Parçacığı Oluşturma
 Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapmanız gereken olan XML dosyası oluşturma, uygun öğeleri doldurun ve kodunuzu ekleyin. Kodunuzu başvuruları ve değiştirme parametreleri de ekleyebilirsiniz. Kod parçacıkları yöneticisinde İçe Aktar düğmesini kullanarak Visual Studio yüklemenizin kod parçacığını ekleyebilirsiniz (**Araçları**, **kod parçacıkları Yöneticisi...** ).  
@@ -87,7 +83,7 @@ Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapman
   
 6.  Visual Basic projesinde açarak ve bir kod dosyasını açma, kod parçacığında sınayın. Dosya **parçacıkları**, **Ekle parçacığı** bağlam menüsünde **My kod parçacıkları**. Adlı bir parçacığı görmelisiniz **My Visual Basic kod parçacığını**. Çift tıklatın.  
   
-    `Console.WriteLine("Hello, World!")`kod dosyasında eklenir.  
+    `Console.WriteLine("Hello, World!")` kod dosyasında eklenir.  
   
 ### <a name="adding-description-and-shortcut-fields"></a>Açıklama ve kısayol alanlarını ekleme  
   

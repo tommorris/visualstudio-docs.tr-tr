@@ -1,26 +1,23 @@
 ---
-title: "R araçlarını Visual Studio için yükleme | Microsoft Docs"
-description: "R araçları Visual Studio 2017 ve çevrimdışı yüklemeleri de dahil olmak üzere Visual Studio 2015, Visual Studio için nasıl yüklenir."
-ms.custom: 
+title: R araçlarını yükleme
+description: R araçları Visual Studio 2017 ve çevrimdışı yüklemeleri de dahil olmak üzere Visual Studio 2015, Visual Studio için nasıl yüklenir.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
-ms.tgt_pltfrm: 
 dev_langs:
 - R
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: bb8f380ce17242f7ac9953226db7ad683c17a2de
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: e996add7a17a60673fe5e6323be9c13e4b0fb785
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>R araçları Visual Studio için nasıl yüklenir
 
@@ -62,7 +59,7 @@ Visual Studio 2015 ile birlikte bir R yorumlayıcı ve R araçları ayrı olarak
 
 RTVS R sürüm 3.2.1 64-bit yüklemesini gerektirir ya da daha yüksek bir veya daha fazla aşağıdaki kaynaklardan gelen:
 
-- [Microsoft R Open](https://mran.microsoft.com/download/)
+- [Microsoft R Aç](https://mran.microsoft.com/download/)
 - [Microsoft R istemci](/machine-learning-server/r-client/what-is-microsoft-r-client)
 - [CRAN R](https://cran.r-project.org/bin/windows/base/)
 

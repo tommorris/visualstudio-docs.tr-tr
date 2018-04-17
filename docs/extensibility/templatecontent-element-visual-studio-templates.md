@@ -1,29 +1,25 @@
 ---
-title: "TemplateContent öğesi (Visual Studio şablonları) | Microsoft Docs"
-ms.custom: 
+title: TemplateContent öğesi (Visual Studio şablonları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateContent
 helpviewer_keywords:
 - TemplateContent element [Visual Studio project templates]
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0be1f5cdbd5fb4770724c53be2d939e68a0d9bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 01391248aee2fdb6eb8605be30056cf424a9f4d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent Öğesi (Visual Studio Şablonları)
 Şablon içeriğini belirtir.  
@@ -53,8 +49,8 @@ ms.lasthandoff: 12/22/2017
 |Öğe|Açıklama|  
 |-------------|-----------------|  
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|İsteğe bağlı öğe.<br /><br /> Birden fazla projeli şablonların içeriğini ve düzenini belirtir.|  
-|[Proje](../extensibility/project-element-visual-studio-templates.md)|İsteğe bağlı öğe.<br /><br /> Dosya veya dizinlerin projeye eklemek için belirtir.|  
-|[Başvuruları](../extensibility/references-element-visual-studio-templates.md)|İsteğe bağlı öğe.<br /><br /> Bir öğe şablonu için gerekli derleme başvurularını belirtir.|  
+|[Project](../extensibility/project-element-visual-studio-templates.md)|İsteğe bağlı öğe.<br /><br /> Dosya veya dizinlerin projeye eklemek için belirtir.|  
+|[Başvurular](../extensibility/references-element-visual-studio-templates.md)|İsteğe bağlı öğe.<br /><br /> Bir öğe şablonu için gerekli derleme başvurularını belirtir.|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|İsteğe bağlı öğe.<br /><br /> Şablondaki bir dosyayı belirtir.|  
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|İsteğe bağlı öğe.<br /><br /> Şablonu bir proje veya öğesi oluşturulurken kullanılacak olan herhangi bir özel parametre belirtir.|  
   
@@ -65,7 +61,7 @@ ms.lasthandoff: 12/22/2017
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Gerekli öğe.<br /><br /> Proje şablonu, öğe şablonu veya starter kit tüm meta veriler içeriyor.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `TemplateContent`gerekli bir öğedir.  
+ `TemplateContent` gerekli bir öğedir.  
   
 ## <a name="example"></a>Örnek  
  Meta veriler için bir proje şablonu için aşağıdaki örnekte bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] uygulama.  

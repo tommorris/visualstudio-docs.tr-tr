@@ -1,12 +1,9 @@
 ---
-title: "Madde öğesi (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: Madde öğesi (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,23 +13,22 @@ helpviewer_keywords:
 - Item Element [MSBuild]
 - <Item> Element [MSBuild]
 ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c57923c75d1ae62b45b6ac288e75ef4e34a2f742
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: d8c577b50dd92a7a6e9b157d97706137200196ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="item-element-msbuild"></a>Öğe Unsuru (MSBuild)
 Kullanıcı tanımlı bir öğesiyle, meta verilerini içerir. Kullanılan her öğe bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bir alt öğesi olarak proje belirtilen bir `ItemGroup` öğesi.  
 
- \<Project>  
- \<ItemGroup>  
+ \<Proje >  
+ \<ItemGroup >  
  \<Öğe >  
 
 ## <a name="syntax"></a>Sözdizimi  
@@ -88,7 +84,7 @@ MSBuild 15.1 veya sonraki sürümlerde, herhangi bir meta veri öznitelikleri ge
 
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Öğe meta veri değeri içeren bir kullanıcı tanımlı meta verileri, öğe anahtarı. Sıfır veya daha fazla olabilir `ItemMetadata` öğeyi öğeler.|  
+|[Itemmetadata](../msbuild/itemmetadata-element-msbuild.md)|Öğe meta veri değeri içeren bir kullanıcı tanımlı meta verileri, öğe anahtarı. Sıfır veya daha fazla olabilir `ItemMetadata` öğeyi öğeler.|  
 
 ### <a name="parent-elements"></a>Üst Öğeler  
 

@@ -2,11 +2,8 @@
 title: ResolveAssemblyReference görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveAssemblyReference
 - MSBuild.ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - ResolveAssemblyReference task [MSBuild]
 - MSBuild, ResolveAssemblyReference task
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
-caps.latest.revision: 29
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91585ea5e72bc2ceebf07d02c2398454f775b5b7
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 4d0481026169f7ddda1431a1f00f9f41d001ca9b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference Görevi
 Belirtilen derlemelerini bağlı tüm derlemelerde belirler. Bu ikinci içerir ve `n`th sırası bağımlılıkları.  
@@ -66,7 +62,7 @@ Belirtilen derlemelerini bağlı tüm derlemelerde belirler. Bu ikinci içerir v
 |`LatestTargetFrameworkDirectories`|İsteğe bağlı `String[]` parametresi.<br /><br /> Makinede hedeflenen en güncel framework redist listeleri içeren dizinlerin listesini belirtir. Bu ayarlanmamışsa verilen hedef framework tanımlayıcı için makinede yüklü en yüksek framework kullanılır.|  
 |`ProfileName`|İsteğe bağlı `String` parametresi.<br /><br /> -Hedeflenecek framework profilin adını belirtir. Örneğin, istemci, Web veya ağ.|  
 |`RelatedFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur çıktı parametresi.<br /><br /> Bir başvuru olarak aynı taban adına sahip XML ve .pdb dosyaları gibi ilgili dosyaları içerir.<br /><br /> Bu parametrede listelenen dosyaları isteğe bağlı olarak aşağıdaki öğe meta verileri içerebilir:<br /><br /> -   `Primary`: `Boolean` değeri. Varsa `true`, dosya öğesi dizisi tarafından içine kullanarak geçildi sonra `Assemblies` parametresi. Varsayılan değer `false`.<br />-   `CopyLocal`: `Boolean` değeri. Verilen başvurunun çıktı dizinine kopyalanıp olup olmadığını gösterir.|  
-|`ResolvedDependencyFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur çıktı parametresi.<br /><br /> İçeren  *n* bağımlılıkları th sipariş yolları. Bu parametre, bulunan ilk sipariş birincil başvuruları içermez `ResolvedFiles` parametresi.<br /><br /> Bu parametre öğeler isteğe bağlı olarak aşağıdaki öğe meta verileri içerir:<br /><br /> -   `CopyLocal`: `Boolean` değeri. Verilen başvurunun çıktı dizinine kopyalanıp olup olmadığını gösterir.<br />-   `FusionName`: `String` değeri. Bu bağımlılık adını belirtir.<br />-   `ResolvedFrom`: `String` değeri. Bu dosyayı gelen çözümlendiği değişmez değer arama yolu belirtir.|  
+|`ResolvedDependencyFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur çıktı parametresi.<br /><br /> İçeren *n*bağımlılıkları th sipariş yolları. Bu parametre, bulunan ilk sipariş birincil başvuruları içermez `ResolvedFiles` parametresi.<br /><br /> Bu parametre öğeler isteğe bağlı olarak aşağıdaki öğe meta verileri içerir:<br /><br /> -   `CopyLocal`: `Boolean` değeri. Verilen başvurunun çıktı dizinine kopyalanıp olup olmadığını gösterir.<br />-   `FusionName`: `String` değeri. Bu bağımlılık adını belirtir.<br />-   `ResolvedFrom`: `String` değeri. Bu dosyayı gelen çözümlendiği değişmez değer arama yolu belirtir.|  
 |`ResolvedFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur çıktı parametresi.<br /><br /> Tüm birincil başvuruları tam yollara çözümlendi listesini içerir.<br /><br /> Bu parametre öğeler isteğe bağlı olarak aşağıdaki öğe meta verileri içerir:<br /><br /> -   `CopyLocal`: `Boolean` değeri. Verilen başvurunun çıktı dizinine kopyalanıp olup olmadığını gösterir.<br />-   `FusionName`: `String` değeri. Bu bağımlılık adını belirtir.<br />-   `ResolvedFrom`: `String` değeri. Bu dosyayı gelen çözümlendiği değişmez değer arama yolu belirtir.|  
 |`SatelliteFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur çıktı parametresi.<br /><br /> Bulunan tüm uydu dosyaları belirtir. Bunlar CopyLocal olacaktır başvuru veya mevcut için bu öğeyi neden bağımlılık CopyLocal ise = true = true.<br /><br /> Bu parametre öğeler isteğe bağlı olarak aşağıdaki öğe meta verileri içerir:<br /><br /> -   `CopyLocal`: `Boolean` değeri. Verilen başvurunun çıktı dizinine kopyalanıp olup olmadığını gösterir. Bu değer `true` başvuru ya da mevcut için bu öğeyi neden bağımlılık varsa bir `CopyLocal` değerini `true`.<br />-   `DestinationSubDirectory`: `String` değeri. Bu öğeye kopyalamak için göreli hedef dizinini belirtir.|  
 |`ScatterFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur çıktı parametresi.<br /><br /> Verilen derlemeler ile ilişkilendirilmiş dağılım dosyalarını içerir.<br /><br /> Bu parametre öğeler isteğe bağlı olarak aşağıdaki öğe meta verileri içerir:<br /><br /> -   `CopyLocal`: `Boolean` değeri. Verilen başvurunun çıktı dizinine kopyalanıp olup olmadığını gösterir.|  

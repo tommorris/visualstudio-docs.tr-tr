@@ -1,30 +1,26 @@
 ---
 title: Derlenecek dosya | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - compiland symbol
 - compilands, compiland symbol
 ms.assetid: c798eb2b-664a-41ec-ae90-5e9d292507ca
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f11216e437488a918a439166afb9000193e565a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f6420c235098414d09de2f0c269ebf85333d5c1f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compiland"></a>Compiland
 Bir `SymTagCompiland` her derlenecek .exe dosyasına bağlı için simge. Derlenecek dosya bilgileri sembolleriyle arasında bölünür bir `SymTagCompiland` ek derlenecek simgeleri yüklemeden alınabilir, etiket ve ile simgeler bir `SymTagCompilandDetails` ek simgeleri yüklenirken gerektirebilir etiketi.  
@@ -34,7 +30,7 @@ Bir `SymTagCompiland` her derlenecek .exe dosyasına bağlı için simge. Derlen
   
 |Özellik|Veri türü|Açıklama|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE`Düzenle ve devam et etkindir, derleme.|  
+|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` Düzenle ve devam et etkindir, derleme.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Simge .exe dosyası için.|  
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Sözcük üst simge kimliği.|  
 |[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|Burada nesne öğesinden yüklendi kitaplığı veya nesne dosyanın adı.|  

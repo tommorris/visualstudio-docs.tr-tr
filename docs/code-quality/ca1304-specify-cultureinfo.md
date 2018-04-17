@@ -2,12 +2,9 @@
 title: 'CA1304: CultureInfo belirtme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SpecifyCultureInfo
 - CA1304
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - SpecifyCultureInfo
 - CA1304
 ms.assetid: b912d76a-54fd-4c93-b25d-16491e0ae319
-caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 932ac7e8f731974896991cea5ae504e452e9a036
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ee1a90d2499cc0a22f695cdf0840bd1c9b50b941
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo belirtme
 |||  
@@ -64,7 +60,7 @@ ms.lasthandoff: 12/22/2017
  Bu kural bir uyarıdan varsayılan kültür/biçim sağlayıcısı doğru seçim olduğunu belirli olduğunda ve kod bakımı önemli geliştirme öncelik olmadığı gizlemek güvenlidir.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte, `BadMethod` bu kuralın iki ihlalleri neden olur. `GoodMethod`Sabit kültür için System.String.Compare geçirerek ilk ihlali düzeltir ve geçerli kültür geçirerek ikinci ihlali düzeltir <xref:System.String.ToLower%2A> çünkü `string3` kullanıcıya görüntülenir.  
+ Aşağıdaki örnekte, `BadMethod` bu kuralın iki ihlalleri neden olur. `GoodMethod` Sabit kültür için System.String.Compare geçirerek ilk ihlali düzeltir ve geçerli kültür geçirerek ikinci ihlali düzeltir <xref:System.String.ToLower%2A> çünkü `string3` kullanıcıya görüntülenir.  
   
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]  
   

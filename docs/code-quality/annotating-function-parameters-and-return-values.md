@@ -1,12 +1,10 @@
 ---
-title: "İşlev parametrelerini ve dönüş değerlerini açıklama | Microsoft Docs"
-ms.custom: 
+title: İşlev parametrelerini ve dönüş değerlerini açıklama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
 - _Inout_updates_all_opt_
@@ -125,16 +123,16 @@ f1_keywords:
 - _Result_nullonfailure_
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ac25f8bbda4431850f613f2b41b1d9ed4908c118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: daeed5dd92116af4346cd8aa2086e6a3dd3af216
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>İşlev Parametrelerini ve Dönüş Değerlerini Açıklama
 Bu makalede tipik ek açıklamaları kullanımları basit işlev parametreleri — skalerler ve yapılar ve sınıflar işaretçileri — ve çoğu arabellek.  Bu makalede ayrıca ek açıklamalar için ortak kullanım desenlerini gösterilmektedir. İşlevler ilişkili ek açıklama için bkz: [işlev davranışını yorumlama](../code-quality/annotating-function-behavior.md)  
@@ -188,7 +186,7 @@ Bu makalede tipik ek açıklamaları kullanımları basit işlev parametreleri �
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     Bu örnekte, çağıran bir arabellek sağlar `size` için öğeleri `p1`.  `MyStringCopy`Bu öğelerin bazıları geçerli hale getirir. Daha da önemlisi, `_Null_terminated_` ek açıklamayı `PWSTR` anlamına `p1` sonrası null ile sonlandırılmış durumda.  Bu şekilde, geçerli öğe sayısını hala iyi tanımlanmış, ancak belirli öğe sayısını gerekli değildir.  
+     Bu örnekte, çağıran bir arabellek sağlar `size` için öğeleri `p1`.  `MyStringCopy` Bu öğelerin bazıları geçerli hale getirir. Daha da önemlisi, `_Null_terminated_` ek açıklamayı `PWSTR` anlamına `p1` sonrası null ile sonlandırılmış durumda.  Bu şekilde, geçerli öğe sayısını hala iyi tanımlanmış, ancak belirli öğe sayısını gerekli değildir.  
   
      `_bytes_` Değişken öğeleri yerine bayt cinsinden boyutu sağlar. Yalnızca boyutu öğeleri olarak ifade edilemeyecek bunu kullanın.  Örneğin, `char` dizeleri kullandığınız `_bytes_` yalnızca bir benzer, çalışmazsa varyantı kullanır `wchar_t` gerekir.  
   

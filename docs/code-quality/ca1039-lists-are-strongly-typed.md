@@ -1,12 +1,10 @@
 ---
-title: "CA1039: Listeleri kesin türü belirtilmiş | Microsoft Docs"
-ms.custom: 
+title: 'CA1039: Listeleri kesin türü belirtilmiş | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1039
 - ListsAreStronglyTyped
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1039
 - ListsAreStronglyTyped
 ms.assetid: 5ac366c4-fd87-4d5c-95d5-f755510c8e5c
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 358ae06a2913f7b89338027c79f81c298253d23b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a52479c5c89cf2098ac90e3f755110fb81bb2697
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listelerin türü kesin olarak belirlenmiştir
 |||  
@@ -51,7 +49,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Kural Tanımı  
  Bu kural gerektirir <xref:System.Collections.IList> kesinlikle sağlamak için uygulamaları, böylece kullanıcılar, cast bağımsız değişken gerekmez. üyeleri yazılan <xref:System.Object?displayProperty=fullName> arabirimi tarafından sağlanan işlevselliği kullanılırken yazın. <xref:System.Collections.IList> Arabirimi dizini tarafından erişilen nesne koleksiyonları tarafından gerçekleştirilir. Bu kural türü uygulayan varsayar <xref:System.Collections.IList> bu daha güçlü bir türün örneklerinin bir koleksiyonunu yönetmenizi <xref:System.Object>.  
   
- <xref:System.Collections.IList>uygulayan <xref:System.Collections.ICollection?displayProperty=fullName> ve <xref:System.Collections.IEnumerable?displayProperty=fullName> arabirimleri. Öğesini uygularsanız <xref:System.Collections.IList>, gerekli kesin türü belirtilmiş üyeler için sağlamalısınız <xref:System.Collections.ICollection>. Koleksiyonundaki nesneleri genişletirseniz <xref:System.ValueType?displayProperty=fullName>, kesin türü belirtilmiş bir üye için sağlamalısınız <xref:System.Collections.IEnumerable.GetEnumerator%2A> performans düşüşünü önlemek için tarafından kutulama neden; koleksiyonu nesnelerin bir başvuru türü olduğunda bu zorunlu değildir.  
+ <xref:System.Collections.IList> uygulayan <xref:System.Collections.ICollection?displayProperty=fullName> ve <xref:System.Collections.IEnumerable?displayProperty=fullName> arabirimleri. Öğesini uygularsanız <xref:System.Collections.IList>, gerekli kesin türü belirtilmiş üyeler için sağlamalısınız <xref:System.Collections.ICollection>. Koleksiyonundaki nesneleri genişletirseniz <xref:System.ValueType?displayProperty=fullName>, kesin türü belirtilmiş bir üye için sağlamalısınız <xref:System.Collections.IEnumerable.GetEnumerator%2A> performans düşüşünü önlemek için tarafından kutulama neden; koleksiyonu nesnelerin bir başvuru türü olduğunda bu zorunlu değildir.  
   
  Bu kurala uygun için arabirim üyelerini açıkça adları gibi InterfaceName.InterfaceMemberName, formunda kullanarak uygulama <xref:System.Collections.IList.Add%2A>. Açık arabirim üyeleri arabirimi tarafından bildirilen veri türlerini kullanın. Kesin türü belirtilmiş üyeler arabirim üye adı gibi kullanarak uygulama `Add`. Genel olarak kesin türü belirtilmiş üyeleri bildirme ve parametreleri bildirme ve dönüş değerleri koleksiyon tarafından yönetilen güçlü türünde olmalıdır. Güçlü türleri gibi zayıf türlerini değiştirecek <xref:System.Object> ve <xref:System.Array> arabirimi tarafından bildirilmedi.  
   

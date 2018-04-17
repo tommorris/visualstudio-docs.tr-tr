@@ -1,12 +1,10 @@
 ---
-title: "CA2118: Gözden geçirme SuppressUnmanagedCodeSecurityAttribute kullanımını | Microsoft Docs"
-ms.custom: 
+title: 'CA2118: Gözden geçirme SuppressUnmanagedCodeSecurityAttribute kullanımını | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2118
 - ReviewSuppressUnmanagedCodeSecurityUsage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ReviewSuppressUnmanagedCodeSecurityUsage
 - CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6a6c5e60ed84a79e6e81d4cd066d75b1270bdb71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8d862f285efa3487c428aed2e5aed3a67c3baef6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: SuppressUnmanagedCodeSecurityAttribute kullanımını gözden geçir
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Genel veya korumalı tür veya üye olan <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> özniteliği.  
   
 ## <a name="rule-description"></a>Kural Tanımı  
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>COM birlikte çalışma veya platform çağırma kullanma yönetilmeyen kod yürütmek için üyeleri için varsayılan güvenlik sistem davranışını değiştirir. Genellikle, sistem yapar bir [veri ve modelleme](/dotnet/framework/data/index) yönetilmeyen kod izni. Bu isteğe bağlı üye her çalıştırılışı için çalışma zamanında gerçekleşir ve her çağıran çağrı yığınında izin denetler. Öznitelik mevcut olduğunda, sistemin yapar bir [bağlantı talepleri](/dotnet/framework/misc/link-demands) izni: arayan JIT derlenmiş olduğunda anında arayanlar izinleriyle denetlenir.  
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> COM birlikte çalışma veya platform çağırma kullanma yönetilmeyen kod yürütmek için üyeleri için varsayılan güvenlik sistem davranışını değiştirir. Genellikle, sistem yapar bir [veri ve modelleme](/dotnet/framework/data/index) yönetilmeyen kod izni. Bu isteğe bağlı üye her çalıştırılışı için çalışma zamanında gerçekleşir ve her çağıran çağrı yığınında izin denetler. Öznitelik mevcut olduğunda, sistemin yapar bir [bağlantı talepleri](/dotnet/framework/misc/link-demands) izni: arayan JIT derlenmiş olduğunda anında arayanlar izinleriyle denetlenir.  
   
  Bu öznitelik, öncelikle performansı artırmak için kullanılır; ancak, gelen performans artışı önemli güvenlik riskleri ile gelir. Yerel yöntemlerini çağıran ortak üye öznitelik yerleştirirseniz (dışında anında arayanlar) çağrı yığınında arayanlar yönetilmeyen kod yönetilmeyen kod yürütme izni gerekmez. Ortak üyenin eylemleri ve giriş işleme bağlı olarak, normalde güvenilir kodu kısıtlı erişim işlevselliği güvenilmez arayanlara izin verebilir.  
   

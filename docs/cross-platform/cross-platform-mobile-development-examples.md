@@ -1,26 +1,22 @@
 ---
-title: "Platformlar arası mobil geliştirme örnekleri | Microsoft Docs"
-ms.custom: 
+title: Platformlar arası mobil geliştirme örnekleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
+manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 8a6c2ba508afdd209713c8c1a514377e8e322868
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9fc4b9df68890caee9d8f79b8ecf2080c408db2e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Platformlar arası mobil geliştirme örnekleri
 Platformlar arası Mobil Geliştirme için Visual C++'ın yüklü şablonlar çeşitli öğrenmek için kullanabileceğiniz tam örnekleri oluşturur. Ayrıca, Windows Geliştirme Merkezi, indirin ve Visual Studio'da denemenin birkaç örnek uygulama vardır.  

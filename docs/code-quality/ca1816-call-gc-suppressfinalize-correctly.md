@@ -1,12 +1,10 @@
 ---
-title: "CA1816: GC çağırın. SuppressFinalize doğru | Microsoft Docs"
-ms.custom: 
+title: 'CA1816: GC çağırın. SuppressFinalize doğru | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1816
 - DisposeMethodsShouldCallSuppressFinalize
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DisposeMethodsShouldCallSuppressFinalize
 - CA1816
 ms.assetid: 47915fbb-103f-4333-b157-1da16bf49660
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8d0287b570ed1ff5393ff0ff04b9e5d2252c29bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9d6d65561e9b902202d4fc69d15d200482880cf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: GC.SuppressFinalize öğesini doğru çağırın
 |||  
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 -   Bir yöntemi çağırır <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> ve bu (Me Visual Basic'te) dışında bir şey geçirir.  
   
 ## <a name="rule-description"></a>Kural Tanımı  
- <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Yöntemi çöp koleksiyonu için kullanılabilir hale nesne önce herhangi bir zamanda kaynakları serbest bırakmak kullanıcıların olanak tanır. Varsa <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> yöntemi çağrıldığında, nesnenin kaynakları serbest bırakır. Bu, sonlandırma gereksiz kılar. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>çağırmalıdır <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> atık toplayıcı nesnesi sonlandırıcıyı çağırmaz şekilde.  
+ <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Yöntemi çöp koleksiyonu için kullanılabilir hale nesne önce herhangi bir zamanda kaynakları serbest bırakmak kullanıcıların olanak tanır. Varsa <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> yöntemi çağrıldığında, nesnenin kaynakları serbest bırakır. Bu, sonlandırma gereksiz kılar. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> çağırmalıdır <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> atık toplayıcı nesnesi sonlandırıcıyı çağırmaz şekilde.  
   
  Türetilen türlerin sonlandırıcılar ile yeniden uygulamak bırakılmasını engellemek için <xref:System.IDisposable> ve onu aramak için korumasız türleri sonlandırıcılar olmadan hala çağırmalıdır <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.  
   

@@ -1,23 +1,20 @@
 ---
-title: "Seçilen sınıf için bir veya daha fazla DataContext yöntemleri bir dönüş türü olarak kullanıldığından silinemiyor | Microsoft Docs"
-ms.custom: 
+title: Seçilen sınıf için bir veya daha fazla DataContext yöntemleri bir dönüş türü olarak kullanıldığından silinemiyor | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 78107218af8c4b32e1cace3137fa15fe31fcbc52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 0b5781508083524a5cf7374a12fd962f0fe34aaf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Seçilen sınıf için bir veya daha fazla DataContext yöntemleri bir dönüş türü olarak kullanıldığından silinemiyor
 Bir veya daha fazla dönüş türü <xref:System.Data.Linq.DataContext> yöntemleri olan seçili varlık sınıfı. Silme için dönüş türü olarak kullanılan bir varlık sınıfı bir <xref:System.Data.Linq.DataContext> yöntemi başarısız projeyi derleme neden olur. Seçilen varlık sınıfını silmek için tanımlamak <xref:System.Data.Linq.DataContext> farklı varlık sınıfı için kendi dönüş türleri ayarlamak ve bunu kullanan yöntemleri.  

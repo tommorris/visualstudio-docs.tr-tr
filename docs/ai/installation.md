@@ -1,22 +1,22 @@
 ---
-title: "Visual Studio için AI araçlarını yükleme"
-description: "Visual Studio için AI araçları yükleme"
-keywords: ai, visual studio
+title: Visual Studio için AI araçlarını yükleme
+description: Visual Studio için AI araçları yükleme
+keywords: AI, visual studio
 author: lisawong19
 ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e182a000dc9c8aaeb721b81036f878430260618
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 93e28558b1d09ded8de5bc6c4eb45230435cb807
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="installation"></a>Yükleme
 
@@ -45,7 +45,7 @@ Eğitim emin olmanız gerekir, yerel bilgisayarınızda modelleri öğrenme deri
 >
 > Aşağıdaki alt bölümlerde yazılım girişte kendi giriş sayfaları alınmıştır.
 
-### <a name="nvidia-gpu-driver"></a>NVIDIA GPU driver
+### <a name="nvidia-gpu-driver"></a>NVIDIA GPU sürücüsünün
 
 Derin öğrenme çerçeveleri NVIDIA doğruluk bir hızda öğrenin ve doğru yapay zeka doğru ölçeklendirme makineleri olanak GPU yararlanın. Bilgisayarınızda NVIDIA GPU kartlarına varsa, lütfen ziyaret [burada](http://www.nvidia.com/Download/index.aspx) veya en son sürücü yüklemek için işletim sistemi güncelleştirmeyi deneyin.
 
@@ -134,7 +134,7 @@ pip3.5 install -U numpy scipy
 
 > [!NOTE]
 >
-> Varolan eski ya da resmi olmayan yukarıdaki komut yükseltmeleri (örn. üçüncü taraf paketlerden Windows için http://www.lfd.uci.edu/~gohlke/pythonlibs/) NumPy ve en son resmi olanlara SciPy.
+> Varolan eski ya da resmi olmayan yukarıdaki komut yükseltmeleri (örn. üçüncü taraf paketlerden http://www.lfd.uci.edu/~gohlke/pythonlibs/ Windows için) NumPy ve en son resmi olanlara SciPy.
 
 ### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft Bilişsel Araç Seti (CNTK)
 
@@ -170,7 +170,7 @@ Ziyaret [burada](https://caffe2.ai/docs/getting-started.html) kaynak kodundan ol
 İmkan tanır **karışımı** [sembolik ve kesinlik temelli programlama](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) verimliliğini ve üretkenliğini en üst düzeye çıkarmak için.
 
 MXNet yüklemek için bir terminal aşağıdaki komutu çalıştırın:
-- With GPU
+- GPU ile
     ```bash
     pip3.5 install mxnet-cu80==0.12.0
     ```

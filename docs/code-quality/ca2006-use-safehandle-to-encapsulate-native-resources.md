@@ -1,12 +1,10 @@
 ---
-title: "CA2006: yerel kaynakları kapsamak için SafeHandle kullanın | Microsoft Docs"
-ms.custom: 
+title: 'CA2006: yerel kaynakları kapsamak için SafeHandle kullanın | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2006
 - UseSafeHandleToEncapsulateNativeResources
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - UseSafeHandleToEncapsulateNativeResources
 - CA2006
 ms.assetid: a71950bd-bcc1-463d-b1f2-5233bc451456
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d70c453e502dd0a7f4eda2e9247dbc3ec3229ebe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0fdef78fdad92eb08012a474afff5c4c8c4d7ab8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: Yerel kaynakları kapsamak için SafeHandle kullanın
 |||  
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
  Birden çok iş parçacıklı erişime izin verilip verilmediğini gibi senaryolarda, güvenlik ve güvenilirlik sorunları da bulunacağı `IntPtr` ve tarafından temsil edilen kaynak yayınlama şekilde `IntPtr` sağlanır. Bu sorunları, geri dönüşüm içeren `IntPtr` kaynak eşzamanlı kullanımı başka bir iş parçacığında yapıldığı sırada kaynak sürüm değeri. Bu, burada bir iş parçacığı okuma veya yazma yanlış kaynakla ilişkili verileri yarış durumları neden olabilir. Örneğin, bir işletim sistemi tanıtıcısı olarak türünüz depolar bir `IntPtr` ve kullanıcıların her ikisi de çağrı olanak tanır **Kapat** ve aynı anda hem bir tür eşitleme olmadan o tanıtıcının kullanan başka bir yöntem, kodunuzun geri dönüştürme tanıtıcı sahiptir. sorun.  
   
- Sorun geri dönüştürme bu tanıtıcıyı veri bozulması ve genellikle, bir güvenlik açığı neden olabilir. `SafeHandle`ve onun eşdüzey sınıfını <xref:System.Runtime.InteropServices.CriticalHandle> tür iş parçacığı oluşturma sorunları önlenebilir böylece bir kaynak için yerel bir tanıtıcı kapsülleyen bir mekanizma sağlar. Ayrıca, kullanabileceğiniz `SafeHandle` ve onun eşdüzey sınıfını `CriticalHandle` dikkatle yerel yöntem çağrıları üzerinden yerel işleyici bir kopyasını içeren yönetilen nesnelerin ömrü denetlemek için diğer iş parçacığı oluşturma sorunları, örneğin,. Bu durumda, genellikle çağrıları kaldırabilirsiniz `GC.KeepAlive`. Tabi kullanırken performans genel gider thay `SafeHandle` ve daha düşük bir dereceye `CriticalHandle`, sık dikkatli tasarım azaltılabilir.  
+ Sorun geri dönüştürme bu tanıtıcıyı veri bozulması ve genellikle, bir güvenlik açığı neden olabilir. `SafeHandle` ve onun eşdüzey sınıfını <xref:System.Runtime.InteropServices.CriticalHandle> tür iş parçacığı oluşturma sorunları önlenebilir böylece bir kaynak için yerel bir tanıtıcı kapsülleyen bir mekanizma sağlar. Ayrıca, kullanabileceğiniz `SafeHandle` ve onun eşdüzey sınıfını `CriticalHandle` dikkatle yerel yöntem çağrıları üzerinden yerel işleyici bir kopyasını içeren yönetilen nesnelerin ömrü denetlemek için diğer iş parçacığı oluşturma sorunları, örneğin,. Bu durumda, genellikle çağrıları kaldırabilirsiniz `GC.KeepAlive`. Tabi kullanırken performans genel gider thay `SafeHandle` ve daha düşük bir dereceye `CriticalHandle`, sık dikkatli tasarım azaltılabilir.  
   
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
  Dönüştürme `IntPtr` kullanımı `SafeHandle` yerel kaynaklara erişimi güvenli bir şekilde yönetmek için. Bkz: <xref:System.Runtime.InteropServices.SafeHandle> örnekleri için başvuru konusu.  

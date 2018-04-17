@@ -1,30 +1,26 @@
 ---
-title: "Dia2dump örneği | Microsoft Docs"
-ms.custom: 
+title: Dia2dump örneği | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - sample applications [DIA SDK]
 - Dia2dump sample [DIA SDK]
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd21806dee94031c6d5486daf1696e1f97e2956f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: acec3fa2def0c478c9d94d71a80b89cda6709897
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dia2dump-sample"></a>Dia2dump Örneği
 Dia2dump örneği ile Visual Studio yüklenmiş ve Dia2dump.cpp kaynak dosyası içerir. Derlenmiş yürütülebilir komut satırından çalıştırır ve bir bütün program veritabanı (.pdb) dosyasının içeriğini görüntüler.  
@@ -39,7 +35,7 @@ Dia2dump örneği ile Visual Studio yüklenmiş ve Dia2dump.cpp kaynak dosyası 
   
 1.  Dia2dump.sln dosyasını Visual Studio'da açın. (Gerekirse, Visual Studio ilk Dia2dump proje yükseltmenize yardımcı olur.)  
   
-2.  Proje özellik sayfalarındaki içinde **C/C++** &#124; **Genel** &#124; **Ek içeren dizinler** özelliği belirtin `..\DIA SDK\include` dizin. Başka bir garanti derleyici dia2.h dosyasını bulabilirsiniz.  
+2.  Proje özellik sayfalarındaki içinde **C/C++** &#124; **genel** &#124; **ek içeren dizinler** özelliği belirtin `..\DIA SDK\include` dizini. Başka bir garanti derleyici dia2.h dosyasını bulabilirsiniz.  
   
 3.  Üzerinde **yapı** menüsünde tıklatın **çözümü yeniden derle**.  
   

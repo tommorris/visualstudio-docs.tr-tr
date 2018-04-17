@@ -1,12 +1,10 @@
 ---
-title: "CA2232: İşareti Windows Forms giriş noktalarını STAThread ile | Microsoft Docs"
-ms.custom: 
+title: 'CA2232: İşareti Windows Forms giriş noktalarını STAThread ile | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - MarkWindowsFormsEntryPointsWithStaThread
 - CA2232
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2232
 - MarkWindowsFormsEntryPointsWithStaThread
 ms.assetid: a3c95130-8e7f-4419-9fcd-b67d077e8efb
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fe12ce5947a22414aaf07c59945fd667b106101f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2d28300d33d02fa4ca11ee1b7110a10a677b64bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Windows Forms giriş noktalarını STAThread ile işaretleyin
 |||  
@@ -37,10 +35,10 @@ ms.lasthandoff: 12/22/2017
  Bir derlemeye başvurur <xref:System.Windows.Forms> ad alanı ve kendi giriş noktası işaretlenmemiş ile <xref:System.STAThreadAttribute?displayProperty=fullName> özniteliği.  
   
 ## <a name="rule-description"></a>Kural Tanımı  
- <xref:System.STAThreadAttribute>iş parçacığı modeli uygulama için COM tek iş parçacıklı olduğunu gösterir. Bu öznitelik Windows Forms kullanan herhangi bir uygulamanın girişinde sunulur; atlanırsa, Windows bileşenleri doğru çalışmayabilir. Öznitelik yoksa, uygulama Windows Forms için desteklenmeyen birden çok iş parçacıklı apartman modeli kullanır.  
+ <xref:System.STAThreadAttribute> iş parçacığı modeli uygulama için COM tek iş parçacıklı olduğunu gösterir. Bu öznitelik Windows Forms kullanan herhangi bir uygulamanın girişinde sunulur; atlanırsa, Windows bileşenleri doğru çalışmayabilir. Öznitelik yoksa, uygulama Windows Forms için desteklenmeyen birden çok iş parçacıklı apartman modeli kullanır.  
   
 > [!NOTE]
->  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Uygulama Çerçevesi kullanan projelerin işaretlemek gerekmez **ana** STAThread ile yöntemi. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Derleyici yapar, otomatik olarak.  
+>  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Uygulama Çerçevesi kullanan projelerin işaretlemek gerekmez **ana** STAThread ile yöntemi. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Derleyici yapar, otomatik olarak.  
   
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
  Bu kural ihlal düzeltmek için add <xref:System.STAThreadAttribute> özniteliği için giriş noktası. Varsa <xref:System.MTAThreadAttribute?displayProperty=fullName> özniteliği varsa, bunu kaldırın.  

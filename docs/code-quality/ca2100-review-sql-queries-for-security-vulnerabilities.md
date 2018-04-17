@@ -1,12 +1,10 @@
 ---
-title: "CA2100: Gözden SQL sorgularını güvenlik açıkları için | Microsoft Docs"
-ms.custom: 
+title: 'CA2100: Gözden SQL sorgularını güvenlik açıkları için | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - Review SQL queries for security vulnerabilities
 - ReviewSqlQueriesForSecurityVulnerabilities
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - CA2100
 - ReviewSqlQueriesForSecurityVulnerabilities
 ms.assetid: 79670604-c02a-448d-9c0e-7ea0120bc5fe
-caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 06d214a8726ea03cc16aff8391db1acceb3f91f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 76e1ed96221242676557011b69e0547144d34ffa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: SQL sorgularını güvenlik açıkları için gözden geçirin
 |||  
@@ -48,13 +46,13 @@ ms.lasthandoff: 12/22/2017
   
  Aşağıdaki [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] türleri uygulayan <xref:System.Data.IDbCommand.CommandText%2A> özelliği veya dize bağımsız değişkeni kullanarak özelliğini ayarlamak oluşturucular sağlayın.  
   
--   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName>ve<xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>  
+-   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> Ve <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>  
   
--   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName>ve<xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>  
+-   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> Ve <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>  
   
--   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName>ve<xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>  
+-   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> Ve <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>  
   
--   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName>ve<xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>  
+-   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> Ve <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>  
   
  ToString yöntemi türü açık veya örtülü olarak kullanıldığında, bu kural ihlal fark sorgu dizesi oluşturulamadı. Bir örnek verilmiştir.  
   

@@ -1,29 +1,25 @@
 ---
-title: "Icon öğesi (Visual Studio şablonları) | Microsoft Docs"
-ms.custom: 
+title: Icon öğesi (Visual Studio şablonları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Icon
 helpviewer_keywords:
 - Icon element [Visual Studio project templates]
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b2fb918d7545655b70a20629ff71427e66030b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4cc1c64e6347f7ea5183efa013504c9e672f5010
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon Öğesi (Visual Studio Öğe Şablonları)
 Yol ve dosya adı ya da görüntülenen simge görevi gören görüntü dosyasının belirtir **yeni proje** veya **Yeni Öğe Ekle** şablonu için iletişim kutusu.  
@@ -69,7 +65,7 @@ Yol ve dosya adı ya da görüntülenen simge görevi gören görüntü dosyası
  Metin görünür şablon simgesi yolu ve dosya adını sağlayan **yeni proje** iletişim kutusu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `Icon`gerekli bir alt öğesidir `TemplateData`.  
+ `Icon` gerekli bir alt öğesidir `TemplateData`.  
   
 ## <a name="example"></a>Örnek  
  Meta veriler için bir proje şablonu için aşağıdaki örnekte bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] uygulama.  

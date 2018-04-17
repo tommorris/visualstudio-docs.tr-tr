@@ -1,26 +1,24 @@
 ---
-title: "Birlikte çalışma derlemeleri sözleşmelerinde komut | Microsoft Docs"
-ms.custom: 
+title: Birlikte çalışma derlemeleri sözleşmelerinde komut | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - command handling with interop assemblies, command contracts
 - interop assemblies, command contracts
 ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d32a49d780f6ae7929f1442ee70a8085724ca6e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bfb60bb4fdc0a633ecee92c47b8465f794416bec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Birlikte çalışma derlemeleri komutu sözleşmeleri
 Komutları işlemek için temel sözleşme <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimidir ortamı çağırdığı <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> yöntemi komutu desteklenip desteklenmediğini ve bu desteklenip desteklenmediğini belirlemek için durumu ve metin belirlemek için. Ardından, ortam çağrıları <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> yöntemi komutu yürütün.  

@@ -1,8 +1,8 @@
 ---
-title: "Visual Basic 6.0 deyimi desteği | Microsoft Docs"
+title: Visual Basic 6.0 deyimi desteği | Microsoft Docs
 ms.date: 08/28/2017
 ms.technology: devlang-vb
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -13,11 +13,11 @@ author: paulyuk
 ms.author: paulyuk
 ms.workload:
 - paulyuk
-ms.openlocfilehash: cb25f85be6c77dfbef6969435d14f2cae61debf2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cc55dec5960717e3807602bc76031f7502ec90c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Visual Basic 6.0 Windows deyimi desteği
 
@@ -33,7 +33,7 @@ Aşağıdaki desteklenen Windows işletim sistemlerinde Visual Basic 6.0 uygulam
 - Windows Server 2012 R2'de dahil olmak üzere
 - Windows Server 2008 R2'de dahil olmak üzere
 
-Visual Basic takımınızın hedefinin, Visual Basic 6.0 uygulamalarını desteklenen Windows sürümleri üzerinde çalışmasını devam edemiyor. Bu belgedeki olarak ayrıntılı, çekirdek Visual Basic 6.0 çalışma zamanı desteklenen Windows sürümlerine tam ömrü boyunca tarafından beş yıl genişletilmiş destek (http://support.microsoft.com/gp/lifepolicy) ve ardından temel desteğinin beş yıl olduğu desteklenmez. Destek Çubuğu ciddi gerileme ve mevcut uygulamalar için kritik güvenlik sorunları için sınırlı olacaktır.
+Visual Basic takımınızın hedefinin, Visual Basic 6.0 uygulamalarını desteklenen Windows sürümleri üzerinde çalışmasını devam edemiyor. Bu belgedeki olarak ayrıntılı, çekirdek Visual Basic 6.0 Çalışma Zamanı Genişletilmiş desteğinin beş yıl tarafından izlenen temel desteğinin beş yıl olan desteklenen Windows sürümlerine tam ömrü desteklenecektir (http://support.microsoft.com/gp/lifepolicy). Destek Çubuğu ciddi gerileme ve mevcut uygulamalar için kritik güvenlik sorunları için sınırlı olacaktır.
 
 ## <a name="technical-summary"></a>Teknik özeti
 
@@ -61,7 +61,7 @@ Visual Basic 6.0 çalışma zamanı, başlangıçta yeniden dağıtımı için V
 
 - Çalışma zamanı dosyalarını – desteklenen-genişletilmiş ile uygulamanızı dağıtmak için dosyaları
 
-   Bu Genişletilmiş liste anahtar denetimleri, kitaplıklar ve IDE medyadan yükleme veya Microsoft.com Geliştirici makineye yüklenir araçları oluşur. Genellikle, VB6 IDE bu denetimleri Geliştirici makineye varsayılan olarak yüklenir. Geliştirici hala uygulamayla bu dosyaları yeniden dağıtmanız gerekir. Dosyaları'nın desteklenen sürümünü, çevrimiçi Microsoft Download Center (http://go.microsoft.com/fwlink/?LinkID=142927) kullanılabilir.
+   Bu Genişletilmiş liste anahtar denetimleri, kitaplıklar ve IDE medyadan yükleme veya Microsoft.com Geliştirici makineye yüklenir araçları oluşur. Genellikle, VB6 IDE bu denetimleri Geliştirici makineye varsayılan olarak yüklenir. Geliştirici hala uygulamayla bu dosyaları yeniden dağıtmanız gerekir. Dosya desteklenen bir sürümü Microsoft Download Center çevrimiçidir (http://go.microsoft.com/fwlink/?LinkID=142927).
 
 - Desteklenmeyen çalışma zamanı dosyaları
 
@@ -73,8 +73,8 @@ Her destek grubu içinde bulunan dosyalar üzerinde belirli Ayrıntılar için b
 
 Destek İlkesi destekleme ve/veya Visual Basic 6.0 çalışma zamanı ikili dosyalarını desteklenen Windows sürümlerine sevkiyat Visual Basic 6.0 IDE veya Visual Studio 6.0 IDE için bir bütün olarak değiştirmez. Genişletilmiş Destek 8 Nisan 2008 dışında bu ürünlerden taşındı.
 
-Microsoft ürün desteği yaşam döngüsü hakkında ayrıntılar http://support.microsoft.com/gp/lifepolicy bulunabilir. Bu destek yaşam döngüsü kapsamında, Microsoft Visual Basic 6.0 çalışma zamanı bu işletim sistemleri için destek ömrü desteklenen Windows sürümlerine desteklemeye devam eder. Bu, örneğin, Visual Basic 6.0 çalışma zamanı Windows Server 2003'te Haziran 2008 için temel destek ve genişletilmiş destek Haziran 2013 kadar desteklenecek anlamına gelir.
-Destek yaşam döngüsü veya ek destek seçenekleri hakkında bilgi almak için daha fazla ayrıntı için lütfen http://www.microsoft.com/support adresindeki destek sayfamızı ziyaret edin.
+Microsoft ürün desteği yaşam döngüsü hakkında ayrıntılar bulunabilir http://support.microsoft.com/gp/lifepolicy. Bu destek yaşam döngüsü kapsamında, Microsoft Visual Basic 6.0 çalışma zamanı bu işletim sistemleri için destek ömrü desteklenen Windows sürümlerine desteklemeye devam eder. Bu, örneğin, Visual Basic 6.0 çalışma zamanı Windows Server 2003'te Haziran 2008 için temel destek ve genişletilmiş destek Haziran 2013 kadar desteklenecek anlamına gelir.
+Daha fazla ayrıntı destek yaşam döngüsü veya ek destek seçenekleri hakkında bilgi almak için lütfen ziyaret için destek sayfamızı http://www.microsoft.com/support.
 
 ## <a name="64-bit-windows"></a>64 bit Windows
 
@@ -149,7 +149,7 @@ Bu bölümde, belirli bir düzeyde VB6 desteği sunar işletim sistemleri ile il
 
 
 > [!NOTE]
-> &#42;  Windows destek yaşam döngüsü tarafından sınırlı bir VB6 çalışma zamanı desteği.  Örneğin, hedef işletim sistemi genişletilmiş destekte yer ise, VB6 genişletilmiş destek destek daha üst bir düzeyde olamaz.  [Windows destek yaşam döngüsü olgu sayfası](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) geçerli ve önceki Windows sürümleri hakkında ek yaşam döngüsü bilgi içerir.
+> &#42;Windows destek yaşam döngüsü tarafından sınırlı bir VB6 çalışma zamanı desteği.  Örneğin, hedef işletim sistemi genişletilmiş destekte yer ise, VB6 genişletilmiş destek destek daha üst bir düzeyde olamaz.  [Windows destek yaşam döngüsü olgu sayfası](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) geçerli ve önceki Windows sürümleri hakkında ek yaşam döngüsü bilgi içerir.
 
 ## <a name="visual-basic-60-runtime-usage-inside-vba-and-office"></a>Visual Basic 6.0 çalışma zamanı kullanım VBA ve Office içinde
 
@@ -179,26 +179,26 @@ Listelenen Windows işletim sistemlerinden birini çalıştıran Visual Basic 6.
 
 | | | | |
 |---|---|---|---|
-|atl.dll|         msadcor.dll|     msorcl32.dll|   ole2.dll|
-|asycfilt.dll|    msadcs.dll|      msvbvm60.dll|   ole32.dll|
+|ATL.|         msadcor.dll|     msorcl32.dll|   ole2.dll|
+|Asycfilt.dll|    msadcs.dll|      msvbvm60.dll|   ole32.dll|
 |comcat.dll|      msadds.dll|      msvcirt.dll|    oleaut32.dll|
 |compobj.dll|     msaddsr.dll|     msvcrt.dll|     oleaut32.dll|
-|dbnmpntw.dll|    msader15.dll|    msvcrt40.dll|   oledb32.dll|
-|dcomcnfg.exe|    msado15.dll|     mtxdm.dll|      oledb32r.dll|
+|dbnmpntw.dll|    msader15.dll|    msvcrt40.dll|   Oledb32.dll|
+|Dcomcnfg.exe'yi|    msado15.dll|     mtxdm.dll|      oledb32r.dll|
 |dllhost.exe|     msador15.dll|    mtxoci.dll|     oledlg.dll|
-|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   olepro32.dll|
+|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   Olepro32.dll|
 |ds32gt.dll|      mscpxl32.dll|    odbc32.dll|     olethk32.dll|
 |expsrv.dll|      msdadc.dll|      odbc32gt.dll|   regsvr32.exe|
 |hh.exe|          msdaenum.dll|    odbcad32.exe|   rpcns4.dll|
-|hhctrl.ocx|      msdaer.dll|      odbccp32.cpl|   rpcrt4.dll|
-|imagehlp.dll|    msdaora.dll|     odbccp32.dll|   scrrun.dll|
+|Hhctrl.ocx|      msdaer.dll|      odbccp32.cpl|   rpcrt4.dll|
+|imagehlp.dll|    msdaora.dll|     odbccp32.dll|   Scrrun.dll|
 |iprop.dll|       msdaosp.dll|     odbccr32.dll|   secur32.dll|
-|itircl.dll|      msdaprst.dll|    odbccu32.dll|   simpdata.tlb|
-|itss.dll|        msdaps.dll|      odbcint.dll|    sqloledb.dll|
+|Itircl.dll|      msdaprst.dll|    odbccu32.dll|   simpdata.tlb|
+|itss.dll|        msdaps.dll|      odbcint.dll|    Sqloledb.dll|
 |mfc40.dll|       msdasc.dll|      odbcji32.dll|   sqlsrv32.dll|
 |mfc42.dll|       msdasql.dll|     odbcjt32.dll|   stdole2.tlb|
-|mfc42enu.dll|    msdasqlr.dll|    odbctrac.dll|   stdole32.tlb|
-|msadce.dll|      msdatsrc.tlb|    oddbse32.dll|   storage.dll|
+|mfc42enu.dll|    msdasqlr.dll|    Odbctrac.dll|   stdole32.tlb|
+|msadce.dll|      msdatsrc.tlb|    oddbse32.dll|   Storage.dll|
 |msadcer.dll|     msdatt.dll|      odexl32.dll|    vbajet32.dll|
 |msadcf.dll|      msdfmap.dll|     odfox32.dll|    vfpodbc.dll|
 |msadcfr.dll|     msdfmap.ini|     odpdx32.dll|                |
@@ -212,7 +212,7 @@ Listelenen Windows işletim sistemlerinden birini çalıştıran Visual Basic 6.
 |comct332.ocx |mscdrun.dll  |msflxgrd.ocx  |msstkprp.dll| 
 |comctl32.ocx |mschrt20.ocx |mshflxgd.ocx  |mswcrun.dll|  
 |comdlg32.ocx |mscomct2.ocx |mshtmpgr.dll  |mswinsck.ocx| 
-|dbadapt.dll  |mscomctl.ocx |msinet.ocx    |picclp32.ocx| 
+|dbadapt.dll  |Mscomctl.ocx |msinet.ocx    |picclp32.ocx| 
 |dbgrid32.ocx |mscomm32.ocx |msmapi32.ocx  |richtx32.ocx| 
 |dblist32.ocx |msdatgrd.ocx |msmask32.ocx  |sysinfo.ocx|  
 |mci32.ocx    |msdatlst.ocx |msrdc20.ocx   |tabctl32.ocx| 
@@ -224,7 +224,7 @@ Listelenen Windows işletim sistemlerinden birini çalıştıran Visual Basic 6.
 |---|---|---|---|
 |dao350.dll|   msexch35.dll| msjter35.dll| msrepl35.dll|
 |mdac_typ.exe| msexcl35.dll| msjtor35.dll| mstext35.dll|
-|mschart.ocx|  msjet35.dll|  msltus35.dll| msxbse35.dll|
+|MSChart.ocx|  msjet35.dll|  msltus35.dll| msxbse35.dll|
 |msdaerr.dll|  msjint35.dll| mspdox35.dll| odbctl32.dll|
 |msdatl2.dll|  msjt4jlt.dll| msrd2x35.dll| oledb32x.dll|
 
@@ -232,11 +232,11 @@ Listelenen Windows işletim sistemlerinden birini çalıştıran Visual Basic 6.
 
 | | | | |
 |---|---|---|---|
-|anibtn32.ocx| spin32.ocx|   rpcltscm.dll|  rdocurs.dll|
+|anibtn32.ocx| spin32.ocx|   rpcltscm.dll|  RDOCURS.dll|
 |graph32.ocx|  gauge32.ocx|  rpcmqcl.dll|   vbar332.dll|
 |keysta32.ocx| gswdll32.dll| rpcmqsvr.dll|  visdata.exe|
-|autmgr32.exe| ciscnfg.exe|  rpcss.exe|     vsdbflex.srg|
-|autprx32.dll| olecnv32.dll| dbmsshrn.dll|  threed32.ocx|
+|autmgr32.exe| ciscnfg.exe|  Rpcss.exe|     vsdbflex.srg|
+|autprx32.dll| Olecnv32.dll| dbmsshrn.dll|  threed32.ocx|
 |racmgr32.exe| rpcltc1.dll|  dbmssocn.dll|  MSWLess.ocx|
 |racreg32.dll| rpcltc5.dll|  windbver.exe|  tlbinf32.dll|
 |grid32.ocx|   rpcltccm.dll| msderun.dll|   triedit.dll|

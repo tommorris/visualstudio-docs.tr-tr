@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: çalışma kitaplarını program aracılığıyla koruma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: çalışma kitaplarını program aracılığıyla koruma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - workbooks, protecting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1799366258786bafb3b24b5580ccf29be1d59927
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 03cab4591bbca62c237877e39dabf40328768ccf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Nasıl yapılır: Çalışma Kitaplarını Program Aracılığıyla Koruma
   Böylece kullanıcılar eklenemez veya çalışma sayfalarını silme ve aynı zamanda da program aracılığıyla çalışma kitabının korumasını kaldırın, Microsoft Office Excel çalışma kitabı koruyabilirsiniz. İsteğe bağlı olarak, bir parola belirtin, (kullanıcıların sayfaları taşıyamazsınız şekilde) korumalı yapısı isterseniz ve çalışma kitabının windows korumalı isteyip istemediğinizi belirtin olup olmadığını gösterir.  

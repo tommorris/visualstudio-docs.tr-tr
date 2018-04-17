@@ -1,13 +1,10 @@
 ---
-title: "Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları | Microsoft Docs"
-ms.custom: 
+title: Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, installation scenarios
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c63f5e4cef88ed927326b69f1fa389e34b06c8b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f5671f078d6650842c704437ce04a625a4fcb944
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Office Çalışma Zamanı Yükleme Senaryoları için Visual Studio Araçları
   Office çalışma zamanı için Visual Studio 2010 Araçları üç şekilde yükleyebilirsiniz:  
@@ -40,10 +37,10 @@ ms.lasthandoff: 01/10/2018
   
  Aşağıdaki tabloda, hangi çalışma zamanı bileşenlerini her çalışma zamanı yükleme senaryosunda varsayılan olarak yüklenen gösterir. Her senaryo hakkında daha fazla bilgi daha sonra görünür.  
   
-|Çalışma zamanı yükleme senaryoları|Office çözüm yükleyicisi|.NET Framework 3.5 için Office uzantıları|Office uzantıları[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|Office uzantıları[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|  
+|Çalışma zamanı yükleme senaryoları|Office çözüm yükleyicisi|.NET Framework 3.5 için Office uzantıları|Office uzantıları [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|Office uzantıları [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|  
 |-----------------------------------|----------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------|  
 |İle [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ve sonraki sürümler|Evet|Evet, .NET Framework 3.5 yüklü ise.|Evet|Evet|  
-|İle[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Evet|Evet, .NET Framework 3.5 yüklü ise.|Hayır|Hayır|  
+|İle [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Evet|Evet, .NET Framework 3.5 yüklü ise.|Hayır|Hayır|  
 |Office 2010 Service Pack 1 (SP1) veya daha yenisi|Evet|Evet, .NET Framework 3.5 yüklü ise.|Evet, varsa [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] zaten yüklü.|Hayır|  
 |Çalışma zamanı yeniden dağıtılabilir|Evet|Evet, .NET Framework 3.5 yüklüyse|Evet, varsa [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] zaten yüklü.|Evet, varsa [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] zaten yüklü.|  
   

@@ -1,12 +1,10 @@
 ---
-title: "Özel görev bölmeleri | Microsoft Docs"
-ms.custom: 
+title: Özel görev bölmeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6a99fd7cc89190a8360341684dee91a7cf93f0e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: acbe91b0a7150ac3a04f9a0b33c8b95d371caf53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-task-panes"></a>Özel Görev Bölmeleri
   Görev bölmeleri genellikle bir tarafa bir Microsoft Office uygulamasında penceresinin yerleştirilmiş kullanıcı arabirimi bölmeleri sunulmuştur. Özel görev bölmeleri kendi görev bölmesi oluşturmak ve kullanıcıların çözümünüzün özelliklerine erişmek için tanıdık bir arabirim sağlamak için bir yol sağlar. Örneğin, arabirim belgelerini değiştirme veya bir veri kaynağından görüntülemek için kodu çalıştırma denetimlerini içerebilir.  
@@ -129,7 +128,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] VSTO Eklenti kaldırıldığında özel görev bölmesi tarafından kullanılan kaynakları otomatik olarak temizlenir. Çağırmayın <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> veya <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> yöntemleri `ThisAddIn_Shutdown` projenizdeki olay işleyicisi. Bu yöntemler özel durum oluşturacak bir <xref:System.ObjectDisposedException>, çünkü [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] tarafından kullanılan kaynakları temizler <xref:Microsoft.Office.Tools.CustomTaskPane> önce nesne `ThisAddIn_Shutdown` olarak adlandırılır. Hakkında daha fazla bilgi için `ThisAddIn_Shutdown`, bkz: [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md)  
   
-##  <a name="Managing"></a>Birden çok uygulama penceresi özel görev bölmeleri yönetme  
+##  <a name="Managing"></a> Birden çok uygulama penceresi özel görev bölmeleri yönetme  
  Belgeler ve diğer öğeleri görüntülemek için birden çok windows kullanan bir uygulamayı özel görev bölmesini oluşturduğunuzda, kullanıcı olmasını beklerken görev bölmesinde görünür olduğundan emin olmak için ek adımlar gerekir.  
   
  Özel görev bölmeleri tüm uygulamalarda, kullanıcıya bir belgenin veya bir öğenin görünümünü sunan bir belge çerçeve penceresi ile ilişkilendirilmiş. Yalnızca ilişkili pencere görünür olduğunda görev bölmesinde görünür olur. Ancak, tüm uygulamalar aynı şekilde belge çerçeve pencereleri kullanın.  
@@ -142,7 +141,7 @@ ms.lasthandoff: 01/10/2018
   
  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl yapmak I: Yönetme görev bölmeleri Word VSTO eklentileri?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
-##  <a name="Outlook"></a>Outlook  
+##  <a name="Outlook"></a> Outlook  
  Outlook için özel görev bölmesini oluşturduğunuzda, özel görev bölmesini belirli Explorer veya Inspector penceresi ile ilişkilidir. Gezginler bir klasörün içeriğini görüntülemek windows, ve denetçiler bir e-posta iletisi veya bir görev gibi bir öğe görüntülemek windows.  
   
  Çoklu Explorer veya Inspector windows birlikte özel görev bölmesini görüntülemek istiyorsanız, bir Explorer veya Inspector penceresi açıldığında özel görev bölmesini yeni bir örneğini oluşturmanız gerekir. Bunu yapmak için bir Explorer veya Inspector penceresi oluşturulduğunda bir olayı işlemek ve sonra görev bölmesi olay işleyicisini oluşturun. Görüntü görev bölmeleri hangi pencerenin bağlı olarak görünür veya gizlemek için Explorer veya Inspector olaylarını de işleyebilirsiniz.  
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
  Özel görev bölmesini açıkça kaldırmazsanız, Outlook windows özel görev bölmesini birden çok örneğini görüntüleyebilir. Outlook bazen pencereleri geri dönüştürür ve bunlara bağlı herhangi bir özel görev bölmeleri başvurular geri dönüştürüldüğünde windows korumak.  
   
-##  <a name="WordAndInfoPath"></a>Word, InfoPath ve PowerPoint  
+##  <a name="WordAndInfoPath"></a> Word, InfoPath ve PowerPoint  
  Word, InfoPath ve PowerPoint her belge farklı belge çerçeve penceresinde görüntüler. Bu uygulamalar için bir özel görev bölmesi oluşturduğunuzda, özel görev bölmesini yalnızca belirli bir belge ile ilişkilidir. Kullanıcı farklı bir belge açarsa, önceki belge yeniden görünür olana kadar özel görev bölmesini gizlenir.  
   
  Birden çok belge birlikte özel görev bölmesini görüntülemek istiyorsanız, kullanıcı yeni bir belge oluşturur veya var olan bir belgeyi açtığında özel görev bölmesini yeni bir örneğini oluşturun. Bunu yapmak için bir belge oluşturulduğunda veya açılan başlatılan olayları işlemek ve sonra görev bölmesinde olay işleyicisi oluşturun. Görüntü görev bölmeleri hangi belge bağlı olarak görünür veya gizlemek için belge olaylarını de işleyebilirsiniz.  

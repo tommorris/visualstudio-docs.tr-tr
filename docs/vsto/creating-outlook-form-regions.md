@@ -1,13 +1,10 @@
 ---
-title: "Outlook Form bölgeleri oluşturma | Microsoft Docs"
-ms.custom: 
+title: Outlook Form bölgeleri oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.OFFICE.TOOLS.OUTLOOK.FORMREGION
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], form regions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86f325784fdd175b5b449eb4d55d920a3f9df2d4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 550514444e7931b188951bbf05f8d371bc361aca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-outlook-form-regions"></a>Outlook Form Bölgeleri Oluşturma
   Form bölgeleri, Microsoft Office Outlook formları özelleştirmek için kullanabilirsiniz. Visual Studio tasarlama, geliştirme ve form bölgeleri hata ayıklama kolaylaştıran gelişmiş araçlar sağlar.  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Form bölgesini dağıtma](#Deploying)  
   
-##  <a name="Enhance"></a>Form bölgeleri kullanmanın yararları  
+##  <a name="Enhance"></a> Form bölgeleri kullanmanın yararları  
  Form bölgeleri geleneksel Outlook Form geliştirmesine birçok iyileştirme sunar:  
   
 -   Herhangi bir standart formun varsayılan sayfasını özelleştirin.  
@@ -64,10 +61,10 @@ ms.lasthandoff: 01/10/2018
   
  Daha fazla bilgi için bkz: [özelleştirme Form sayfaları ve Form bölgeleri](http://msdn.microsoft.com/library/office/ff869060.aspx).  
   
-##  <a name="Adding"></a>Outlook Form bölgesi projenize ekleme  
+##  <a name="Adding"></a> Outlook Form bölgesi projenize ekleme  
  Kullanabileceğiniz **yeni Outlook Form bölgesi** yeni bir form bölgesi tasarlama veya Outlook'ta tasarlanan form bölgesini içeri aktarmak için Sihirbazı. Ayrıca, Outlook VSTO eklenti başka bir projede kullanıldı bir form bölgesi varsa, varolan form bölgenizi yeniden kullanabilirsiniz.  
   
-###  <a name="CreatingFormRegion"></a>Sihirbazı'nı kullanarak yeni bir Form bölgesi oluşturma  
+###  <a name="CreatingFormRegion"></a> Sihirbazı'nı kullanarak yeni bir Form bölgesi oluşturma  
  Bir form bölgesi oluşturmak için Ekle bir **Outlook Form bölgesi** Outlook VSTO eklenti projesindeki öğesine. Bu başlatır **yeni Outlook Form bölgesi** Sihirbazı.  
   
  Sihirbazın yeni bir form bölgesi tasarlama veya Outlook'ta tasarlanan form bölgesini içeri isteyip istemediğinizi belirtmek için kullanın. Yeni bir form bölgesi tasarlama hakkında daha fazla bilgi için bkz: [Form bölgesi tasarımcısını kullanarak](#UsingFormRegionDesigner). Outlook'ta tasarlanan form bölgesini kullanma hakkında daha fazla bilgi için bkz: [bir Form bölgesi tasarlanmış Outlook'ta alma](#UsingFormRegionDesignedOutlook).  
@@ -106,12 +103,12 @@ ms.lasthandoff: 01/10/2018
   
  Form bölgesi üretici sınıfı çoğunu form bölgesi tasarımcı dosyasında uygulanır. Ancak, `FormRegionInitializing` olay işleyicisi form bölgesi kod dosyasında gösterilir. Outlook form bölgesi görüntüleyip görüntülemeyeceğini belirtmek için bu olay işleyicisi kullanabilirsiniz. Daha fazla bilgi için bkz: [Form bölgesi olaylarını işleme](#HandlingFormRegionEvents).  
   
-###  <a name="AddingExistingFormRegion"></a>Varolan bir Form bölgesi projenize ekleme  
+###  <a name="AddingExistingFormRegion"></a> Varolan bir Form bölgesi projenize ekleme  
  Başka bir Outlook projesinde kullanılan bir Outlook form bölgesi varsa, onu geçerli Outlook VSTO eklenti projenizde kullanarak tekrar kullanabilirsiniz **varolan öğeyi Ekle** iletişim kutusu.  
   
  Varolan form bölgesi kod dosyasının (.vb veya .cs); olması gerekir Outlook Form Depolama (.ofs) dosyalarını kullanarak ekleyemezsiniz **varolan öğeyi Ekle** iletişim kutusu. Ancak, bir Outlook Form Depolama dosyasını içeri aktararak yeni bir form bölgesi oluşturabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: Outlook eklenti projesine Form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
-##  <a name="UsingFormRegionDesigner"></a>Form bölgesi tasarımcısını kullanarak  
+##  <a name="UsingFormRegionDesigner"></a> Form bölgesi tasarımcısını kullanarak  
  Form bölgesi tasarımcısını bir form bölgesi görünümünü ve düzeni tasarlamanıza yardımcı olur. Yönetilen denetimleri Tasarımcı yüzeyine sürükleyin, olay işleyicilerini açmak için denetimleri çift tıklayın ve kümesinde özellikleri **özellikleri** penceresi.  
   
 > [!NOTE]  
@@ -129,7 +126,7 @@ ms.lasthandoff: 01/10/2018
   
  Sadece yönetilen denetimleri form bölgesi tasarımcı destekler. Yerel Outlook denetimlerini ekleyemezsiniz.  
   
-##  <a name="UsingFormRegionDesignedOutlook"></a>Outlook'ta tasarlanan Form bölgesini içeri aktarma  
+##  <a name="UsingFormRegionDesignedOutlook"></a> Outlook'ta tasarlanan Form bölgesini içeri aktarma  
  Outlook'ta tasarlarken, yerel Outlook denetimleri form bölgesine ekleyebilirsiniz. Yerel Outlook denetimleri, tasarım zamanında Outlook'a veri bağlamanıza olanak sağlar. Ancak, yönetilen denetimleri eklemek veya form bölgesini tasarımını değiştirmek için ardından form bölgesi tasarımcısını kullanamazsınız.  
   
  Form bölgeleri kullanarak bir Outlook VSTO eklenti projesine içeri aktarabilirsiniz **yeni Outlook Form bölgesi** Sihirbazı. Üzerinde **nasıl form bölgesi oluşturmak istediğinizi seçin** sayfasında **bir Outlook Form Depolama (.ofs) dosyasını içeri**. Ardından, bir Outlook Form Depolama dosyası (.ofs) dosyasının konumuna göz atabilirsiniz. (Outlook form bölgeleri .ofs dosyalarını kaydeder.)  
@@ -138,7 +135,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Basic projesinde olayları işlemek için Kod Düzenleyicisi'nin üstünde yöntemi adı listesinden bir olay seçin.  
   
- C# projesinde olayları işlemek için denetim olayları abone <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> yöntemi. Daha fazla bilgi için bkz: [nasıl yapılır: abone olma ve aboneliği olayları &#40; C &#35; Programlama Kılavuzu &#41; ](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events).  
+ C# projesinde olayları işlemek için denetim olayları abone <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> yöntemi. Daha fazla bilgi için bkz: [nasıl yapılır: abone olma ve aboneliği olaylarından &#40;C&#35; Programlama Kılavuzu&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events).  
   
  Form bölgesi özelliklerini değiştirebilirsiniz `InitializeManifest` form bölgesi üretici sınıfı yöntemi.  
   
@@ -148,12 +145,12 @@ ms.lasthandoff: 01/10/2018
 ### <a name="updating-an-imported-form-regions-design"></a>İçeri aktarılan Form bölgesinin tasarımını güncelleme  
  Eklemek, kaldırmak veya form bölgesini denetimlere değiştirin. Bunu yapabilmeniz için form bölgesi kod dosyası eklediğiniz herhangi bir kod yedekleyin. Ardından, Outlook içinde .ofs dosyasını açın, form bölgesini değiştirin ve değişiklikleri kaydedin. Kullanım **yeni Outlook Form bölgesi** değiştirilmiş .ofs dosyasını içeri aktarmak için Sihirbazı. Sonra kodunuzu yeni form bölgesi kod dosyası yapıştırabilirsiniz.  
   
-##  <a name="AddingCustomCode"></a>Bir Form bölgesi için özel kod ekleme  
+##  <a name="AddingCustomCode"></a> Bir Form bölgesi için özel kod ekleme  
  <xref:Microsoft.Office.Tools.Outlook> Ad alanı form bölgesini temsil eden sınıflar, form bölgesini görüntüleyen Outlook öğesi ve diğer yararlı öğelere erişim sağlar. **Outlook Form bölgesi** öğesine otomatik olarak projede bu derleme için bir başvuru ekler ve uygun ekler **kullanarak** veya **içeri aktarmalar** en üstündeki deyimi Form bölgesi kod dosyası.  
   
  Outlook programlama görevlerinin çoğunu gerçekleştirmek için Microsoft.Office.Interop.Outlook ad alanındaki sınıfları, yöntemleri ve özellikleri kullanabilirsiniz. Outlook nesne modeli hakkında daha fazla bilgi için bkz: [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md). Outlook nesne modelini kullanmak için bkz: yapan tipik görev örnekleri için [Outlook çözümleri](../vsto/outlook-solutions.md).  
   
-###  <a name="HandlingFormRegionEvents"></a>Form bölgesi olaylarını işleme  
+###  <a name="HandlingFormRegionEvents"></a> Form bölgesi olaylarını işleme  
  **Outlook Form bölgesi** öğesi aşağıdaki üç olay işleyicileri için form bölgesi kod dosyası otomatik olarak ekler.  
   
 |Olay|Açıklama|  
@@ -162,7 +159,7 @@ ms.lasthandoff: 01/10/2018
 |FormRegionShowing|Form bölgesini örneği oluşturulur ancak form bölgesi görünmeden önce sonra gerçekleşir.|  
 |FormRegionClosed|Form bölgesi kapatılmadan önce gerçekleşir.|  
   
-##  <a name="Building"></a>Proje derleme  
+##  <a name="Building"></a> Proje derleme  
  Form bölgesi içeren Outlook VSTO eklenti projesi derlerken, Visual Studio aşağıdaki bilgileri kayıt defterine ekler:  
   
 -   Bir veya daha fazla form bölgeleri ile ilişkili her ileti sınıfı için bir anahtar.  
@@ -171,12 +168,12 @@ ms.lasthandoff: 01/10/2018
   
  Outlook form bölgeleri yüklemek için bu bilgileri kullanır.  
   
-##  <a name="Debugging"></a>Bir Form bölgesi hata ayıklama  
+##  <a name="Debugging"></a> Bir Form bölgesi hata ayıklama  
  Outlook VSTO yalnızca hatalarını, diğer gibi bir form bölgesi içeren eklenti ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeleri. Başlattığınızda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı, Visual Studio otomatik olarak Outlook'u başlatır.  
   
  Form bölgesini görüntülemek için uygun Outlook öğesini açmanız gerekir. Bitişik bir form bölgesi bir posta öğesinin altına eklenirse, örneğin, bir posta öğesini açın.  
   
-##  <a name="Deploying"></a>Form bölgesini dağıtma  
+##  <a name="Deploying"></a> Form bölgesini dağıtma  
  Form bölgeleri ilişkili Outlook VSTO eklentisi ile otomatik olarak dağıtılır. Bu nedenle, form bölgesini dağıtmak için herhangi bir özel görevi gerçekleştirmeniz gerekmez. VSTO eklentileri dağıtma hakkında daha fazla bilgi için bkz: [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="related-topics"></a>İlgili Konular  

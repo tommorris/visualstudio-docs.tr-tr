@@ -1,12 +1,10 @@
 ---
-title: "Office birincil birlikte çalışma derlemeleri | Microsoft Docs"
-ms.custom: 
+title: Office birincil birlikte çalışma derlemeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office primary interop assemblies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 906100a572170f218a23b1887ab7fddee37251b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2ab565dfbc4fec21c646aa72b54f3694d99e6a1f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-primary-interop-assemblies"></a>Office Birincil Birlikte Çalışma Derlemeleri
   Bir Microsoft Office uygulamasından bir Office proje özelliklerini kullanmak için uygulama için birincil birlikte çalışma derlemesi (PIA) kullanmanız gerekir. PIA bir Microsoft Office uygulamasının COM tabanlı nesne modeli ile etkileşim kurmak yönetilen kod sağlar.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  Birincil birlikte çalışma derlemeleri hakkında daha fazla bilgi için bkz: [birincil birlikte çalışma derlemeleri](http://msdn.microsoft.com/en-us/b977a8be-59a0-40a0-a806-b11ffba5c080).  
   
-##  <a name="separateassemblies"></a>Birincil birlikte çalışma derlemeleri oluşturma ve çalıştırma projeler için ayrı  
+##  <a name="separateassemblies"></a> Birincil birlikte çalışma derlemeleri oluşturma ve çalıştırma projeler için ayrı  
  Visual Studio geliştirme bilgisayarınızda PIA farklı kümesi kullanır. Derlemelerin farklı bu kümeleri aşağıdaki konumlarda bulunur:  
   
 -   Program files dizini klasöründe.  
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
  Office PIA son kullanıcı bilgisayarlarında Office çözümlerini çalıştırmak için gerekli değildir. Daha fazla bilgi için bkz: [tasarlama ve oluşturma Office çözümleri](../vsto/designing-and-creating-office-solutions.md).  
   
-##  <a name="usingfeatures"></a>Tek bir projede birden çok Microsoft Office uygulamaları özelliklerini kullanma  
+##  <a name="usingfeatures"></a> Tek bir projede birden çok Microsoft Office uygulamaları özelliklerini kullanma  
  Visual Studio içindeki her Office proje şablonu, tek bir Microsoft Office uygulaması ile çalışmak üzere tasarlanmıştır. Birden çok Microsoft Office uygulamalarında özelliklerini kullanmak ya da bir uygulama ya da Visual Studio Proje yok bileşeni özellikleri kullanmak için gerekli PIA bir başvuru eklemeniz gerekir.  
   
  Çoğu durumda, Visual Studio tarafından %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Araçları Office\PIA\ dizini altında yüklü olan PIA başvuruları eklemeniz gerekir. Derlemeleri'nın bu sürümlerini görünür **Framework** sekmesinde **başvuru Yöneticisi** iletişim kutusu. Daha fazla bilgi için bkz: [nasıl yapılır: hedef Office uygulamaları aracılığıyla birincil birlikte çalışma derlemeleri](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
@@ -80,7 +79,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Bunları başvuruda bulunan bir derleme eklendiğinde bazı derlemeleri projeye otomatik olarak eklenir. Örneğin, Word, Excel, Outlook, Microsoft Forms veya grafik derlemeleri başvuru eklediğinizde Office.dll ve Microsoft.Vbe.Interop.dll derlemelerine başvurular otomatik olarak eklenir.  
   
-##  <a name="pialist"></a>Microsoft Office uygulamaları için birincil birlikte çalışma derlemeleri  
+##  <a name="pialist"></a> Microsoft Office uygulamaları için birincil birlikte çalışma derlemeleri  
  Aşağıdaki tabloda kullanılabilir birincil birlikte çalışma derlemeleri listeler [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ve [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
   
 |Office uygulaması veya bileşeni|Birincil birlikte çalışma derleme adı|  
@@ -118,6 +117,6 @@ ms.lasthandoff: 01/10/2018
  [Proje çözümleri](../vsto/project-solutions.md)   
  [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)   
  [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)   
- [Genel başvuru &#40; Office geliştirme Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Genel başvuru &#40;Visual Studio'da Office geliştirme&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
   
   

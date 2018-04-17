@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: özel görev bölmesini Şerit düğmesi ile eşitleme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: özel görev bölmesini Şerit düğmesi ile eşitleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +23,14 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7368c580d2f00d929bdeefd11665e9f579af17f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff3252a1ae234615cc4d4ed83a07d98a15092bee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>İzlenecek Yol: Özel Görev Bölmesini Şerit Düğmesi ile Eşitleme
   Bu kılavuzda, kullanıcıların Gizle veya Şerit üzerindeki iki durumlu düğmeye tıklayarak görüntülemek bir özel görev bölmesi oluşturmak gösterilmiştir. Microsoft Office uygulamaları kullanıcıların özel görev bölmeleri göstermek veya gizlemek varsayılan bir yol sağlamadığından, görüntüleme ya da, özel görev bölmesini gizleme için tıklatabileceği bir düğme gibi bir kullanıcı arabirimi (UI) öğesini her zaman oluşturmanız gerekir.  
@@ -65,7 +64,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Adında bir Excel eklenti projesi oluşturun **SynchronizeTaskPaneAndRibbon**, Excel eklentisi proje şablonunu kullanarak. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]açılır **ThisAddIn.cs** veya **ThisAddIn.vb** kod dosyası ve ekler **SynchronizeTaskPaneAndRibbon** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] açılır **ThisAddIn.cs** veya **ThisAddIn.vb** kod dosyası ve ekler **SynchronizeTaskPaneAndRibbon** için proje **Çözüm Gezgini**.  
   
 ## <a name="adding-a-toggle-button-to-the-ribbon"></a>Şerit'e iki durumlu düğme ekleme  
  Office uygulaması tasarım yönergeleri kullanıcıların Office uygulama kullanıcı Arabirimi her zaman denetlemeleri biridir. Özel görev bölmesini denetlemek için kullanıcıları etkinleştirmek üzere gösterir ve görev bölmesini gizler Şerit iki durumlu düğme ekleyebilirsiniz. İki durumlu düğme oluşturmak için Ekle bir **Şerit (Görsel Tasarımcı)** proje öğesi. Tasarımcı ekleyin ve denetimleri getirin, denetim özelliklerini ayarlamak ve denetim olayları işlemek yardımcı olur. Daha fazla bilgi için bkz: [Şerit Tasarımcısı](../vsto/ribbon-designer.md).  

@@ -1,23 +1,21 @@
 ---
-title: "Şema önbelleğinin | Microsoft Docs"
-ms.custom: 
+title: Şema önbelleğinin | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a7a089e799c2480f667eb000d39c3036220d02e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="schema-cache"></a>Şema önbelleği
 XML Düzenleyicisi'ni %InstallRoot%\Xml\Schemas dizininde yer alan bir şema önbelleği sağlar. Şema önbelleği, bilgisayardaki tüm kullanıcılar için geneldir ve IntelliSense ve XML belge doğrulama için kullanılan standart XML şemaları içerir.  
@@ -34,17 +32,17 @@ XML Düzenleyicisi'ni %InstallRoot%\Xml\Schemas dizininde yer alan bir şema ön
 |MSDATA.xsd|Tarafından eklenen XSD ek açıklamalar için şema <xref:System.Data.DataSet> sınıfı, "urn: şemaları-microsoft-com: xml-msdata".|  
 |msxsl.xsd|Microsoft XSLT betik bloğu uzantıları, urn: şemaları için şema-microsoft-com:xslt.|  
 |SnippetFormat.xsd|Kod parçacığı XML dosyaları için şema. % InstallDir%\VC#\Expansions örnekler için bkz.|  
-|Soap1.1.xsd|Basit Nesne Erişim Protokolü (SOAP) 1.1 için şema, http://schemas.xmlsoap.org/soap/envelope/.|  
+|Soap1.1.xsd|Basit Nesne Erişim Protokolü (SOAP) 1.1 için şema http://schemas.xmlsoap.org/soap/envelope/.|  
 |Soap1.2.xsd|Basit Nesne erişim protokolü 1.2 için şema.|  
 |SiteMapSchema.xsd|Şema ASP.NET site haritası XML dosyası için "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|  
 |WSDL.xsd|Web Service Description Language için şema http://schemas.xmlsoap.org/wsdl/.|  
 |xenc.xsd|XML şifrelemesi için şema http://www.w3.org/2000/09/xmldsig#.|  
-|XHTML.xsd|XHTML http://www.w3.org/1999/xhtml için şema.|  
+|XHTML.xsd|XHTML için şema http://www.w3.org/1999/xhtml.|  
 |XLink.xsd|XLink1.0, şema http://www.w3.org/1999/xlink.|  
-|XML.xsd|Şema açıklayan XML: Space ve XML: lang öznitelikleri, http://www.w3.org/XML/1998/namespace.|  
+|XML.xsd|XML: Space ve XML: lang özniteliklerini tanımlayan şeması http://www.w3.org/XML/1998/namespace.|  
 |xmlsig.xsd|XML dijital imzalar, şema http://www.w3.org/2000/09/xmldsig#.|  
-|xsdschema.xsd|Açıklayan XSD şema kendisi, http://www.w3.org/2001/XMLSchema.|  
-|XSLT.xsd|Http://www.w3.org/1999/XSL/Transform XML Şeması dönüştürür.|  
+|xsdschema.xsd|XSD kendisini tanımlayan şeması http://www.w3.org/2001/XMLSchema.|  
+|XSLT.xsd|XML Şeması dönüşümleri, http://www.w3.org/1999/XSL/Transform.|  
   
 ## <a name="updating-schemas-in-the-cache"></a>Önbellek şemalarda güncelleştiriliyor  
  XML Düzenleyicisi paket yüklenir ve çalışırken değişiklikleri izleyen Düzenleyicisi şema önbellek dizini yükler. Bir şema eklediyseniz bilinen şemalar bellek içi dizine otomatik olarak yüklenir. Bir şema kaldırdıysanız bellek içi dizinden otomatik olarak kaldırılır. Otomatik olarak bir şema güncelleştirildiyse, bu şemanın bellek içi önbellek geçersiz kılar.  

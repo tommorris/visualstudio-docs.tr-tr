@@ -1,12 +1,10 @@
 ---
-title: "Belge düzeyi özelleştirmelerinde verileri önbelleğe | Microsoft Docs"
-ms.custom: 
+title: Belge düzeyi özelleştirmelerinde verileri önbelleğe | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1fe9465c3f238941ace0d5b6fc438c7d5d93ec64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0919e046f9e50578df46853c6db9f60cea2f71e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Belge Düzeyi Özelleştirmelerdeki Önbelleğe Alınmış Veriler
   Office belgelerindeki görünümünden veri ayırmak için belge düzeyi özelleştirmeleri birincil amacı olan. Veri sayılar ve metin dahil olmak üzere belgede depolanan bilgileri gösterir. Görünüm kullanıcı arabirimi hem de Microsoft Office Word ve Microsoft Office Excel nesne modeline anlamına gelir.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Belge düzeyi özelleştirmeleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) ve [belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md).  
+ Belge düzeyi özelleştirmeleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) ve [belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md).  
   
 ## <a name="understanding-the-cached-data-programming-model"></a>Önbelleğe alınan veriler programlama modelini anlama  
  Veri adası çözümünüzdeki belirli gereksinimleri karşılayan herhangi bir nesne içerebilir. Bu nesneler dahil <xref:System.Data.DataSet> nesneleri <xref:System.Data.DataTable> nesneleri ve sıralanabilen herhangi bir nesne <xref:System.Xml.Serialization.XmlSerializer> sınıfı. Daha fazla bilgi için bkz: [veri önbelleğe alma](../vsto/caching-data.md).  

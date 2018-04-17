@@ -1,12 +1,10 @@
 ---
-title: "Belge düzeyi özelleştirmelerini programlama | Microsoft Docs"
-ms.custom: 
+title: Belge düzeyi özelleştirmelerini programlama | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - Sheet3
 - thisWorkbook
@@ -29,13 +27,14 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a614173fc33547c3512c031b7e0bd8a5575e7cb2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5f44b7d5a283d6e2946eb26e5036f47b09729de8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-document-level-customizations"></a>Belge Düzeyi Özelleştirmelerini Programlama
   Belge düzeyi özelleştirme kullanarak Microsoft Office Word veya Microsoft Office Excel genişlettiğinizde, aşağıdaki görevleri gerçekleştirebilirsiniz:  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
   
  Belge düzeyi projelerine kod yazmaya bazı yönleri, diğer Visual Studio Proje türleri farklıdır. Bu farklılıklar birçoğu Office nesne modelleri için yönetilen kod gösterilen şekilde hatalardır. Daha fazla bilgi için bkz: [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md).  
   
- Visual Studio'da Office geliştirme araçlarını kullanarak oluşturabilirsiniz belge düzeyi özelleştirmeleri ve çözümlerin diğer türleri hakkında genel bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Visual Studio'da Office geliştirme araçlarını kullanarak oluşturabilirsiniz belge düzeyi özelleştirmeleri ve çözümlerin diğer türleri hakkında genel bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="using-the-generated-classes-in-document-level-projects"></a>Belge düzeyi projelerine oluşturulan sınıflarını kullanma  
  Belge düzeyi projesi oluşturduğunuzda, Visual Studio bir sınıf kodunuzu yazmaya başlamak için kullanabileceğiniz projede otomatik olarak oluşturur. Visual Studio, Word ve Excel için farklı sınıflar oluşturur:  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 -   `ThisWorkbook`: türetir <xref:Microsoft.Office.Tools.Excel.WorkbookBase>.  
   
--   `Sheet` *n* : türetilen <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.  
+-   `Sheet` *n*: türetilen <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.  
   
  Temel sınıflar tüm çağrıları kendi üyelerine karşılık gelen ana bilgisayar öğesi arabirimlerde iç uygulamalarına yönlendirir [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Örneğin, çağırırsanız <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> yöntemi `ThisDocument` sınıfı, <xref:Microsoft.Office.Tools.Word.DocumentBase> sınıfı bu çağrıyı iç uygulamalarına yönlendirir <xref:Microsoft.Office.Tools.Word.Document> arabiriminde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   

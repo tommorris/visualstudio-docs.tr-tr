@@ -1,12 +1,10 @@
 ---
-title: "SharePoint Çözümlerini Yerelleştirme | Microsoft Docs"
-ms.custom: 
+title: SharePoint Çözümlerini Yerelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.GlobalAndFeatureResource
 - VS.SharePoint.Project.AddResourceDialog
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7a1ca2b08bda0a3336b573da7df910872e13470b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>SharePoint Çözümlerini Yerelleştirme
   Böylece tüm dünyada kullanılabilir uygulamalarınız Hazırlama işlemi yerelleştirme bilinir. Yerelleştirme, belirli bir kültür kaynaklara çevirme. Daha fazla bilgi için bkz: [Globalizing ve yerelleştirme uygulamaları](/visualstudio/ide/globalizing-and-localizing-applications). Bu konu, bir SharePoint çözüm yerelleştirme hakkında genel bir bakış sağlar.  
@@ -113,7 +112,7 @@ $Resources:String ID
 ### <a name="localizing-code"></a>Kod yerelleştirme  
  Özellik dizeleri yerelleştirme yanı sıra ve [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] biçimlendirme da sahip ileti dizeleri ve çözüm kodunuzda görünen hata dizeleri yerelleştirme. Bilgilendirme yerelleştirilmiş ve hata iletileri uydu derlemeleri bulunur. Uydu derlemeleri içermesi gibi kullanıcılar tarafından görülebilir dizeleri [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] metin ve çıktı iletileri özel durumlar ister.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Standart .NET Framework hub ve bağlı bileşen modeli kullanır. Hub veya ana program derleme, varsayılan dil kaynakları içerir. Dile özgü kaynaklar bağlı bileşen ya da uydu derlemelerini içerir. Daha fazla bilgi için bkz: [paketleme ve dağıtma kaynakları](http://go.microsoft.com/fwlink/?LinkId=179280). Uydu derlemeleri kaynak (.resx) dosyalarından derlenir. Dile özgü kaynak dosyaları, proje ve çözüm paketi eklediğinizde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adlı uydu derlemelerini kaynak dosyalarını derler *proje adı*. resources.dll.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Standart .NET Framework hub ve bağlı bileşen modeli kullanır. Hub veya ana program derleme, varsayılan dil kaynakları içerir. Dile özgü kaynaklar bağlı bileşen ya da uydu derlemelerini içerir. Daha fazla bilgi için bkz: [paketleme ve dağıtma kaynakları](http://go.microsoft.com/fwlink/?LinkId=179280). Uydu derlemeleri kaynak (.resx) dosyalarından derlenir. Dile özgü kaynak dosyaları, proje ve çözüm paketi eklediğinizde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adlı uydu derlemelerini kaynak dosyalarını derler *proje adı*. resources.dll.  
   
  Projeniz için ayrı kaynak dosyası proje öğeleri ekleyerek ASPX biçimlendirmesini ile SharePoint uygulama kod yerelleştirme gibi; bir varsayılan dil ve her bir dil yerelleştirilmiş. Ancak, ASPX biçimlendirmesini yerelleştirme için kaynak dosyaları zaten varsa, daha önce belirtildiği gibi bunları kod yerelleştirme için yeniden kullanabilirsiniz. Kaynak dosyaları oluşturmanız gerekiyorsa, varsayılan dil kaynak dosyasına .resx uzantısıyla eklenmiş tercih ettiğiniz bir ad verin. Yerelleştirilmiş kaynak dosyaları, dile özgü kültür ile eklenen aynı adı [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Her kaynak dosyasının yapı eylemi özelliği uydu kaynak derlemelerini oluşturulmasını sağlamak üzere katıştırılmış kaynak olarak ayarlayın.  
   

@@ -1,7 +1,7 @@
 ---
-title: "Visual Studio'da bir yük testinde sayfa yanıt süresi | Microsoft Docs"
+title: Visual Studio'da bir yük testinde sayfa yanıt süresi | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, response times
 - response times in load tests
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 055bb9b9ae369cd6b62741f7d23295c34b7d1d32
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 42cde7bda2c97d0e64589d0679b14a93d97c66cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Nasıl yapılır: Yük Testi Çözümleyicisi Kullanarak Bir Yük Testinde Web Sayfası Yanıt Süresini Görüntüleme
 
@@ -53,10 +53,10 @@ Bir yük testinde Web performans testi yoğunluk altında çalıştırırsanız,
     |**Ave**|Ortalama sayfa yanıt süresi.<br /><br /> Varsayılan olarak, bu veriler toplanmaz. İçinde bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** düğümü, değiştirilecek çalışma ayarı düğümünü seçin. İçinde **özellikleri** penceresinde için **zamanlama ayrıntıları depolama** özelliği, select **AllIndividualDetails**.|
     |**Min**|En düşük sayfa yanıt süresi.<br /><br /> Varsayılan olarak, bu veriler toplanmaz. İçinde bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** düğümü, değiştirilecek çalışma ayarı düğümünü seçin. İçinde **özellikleri** penceresinde için **zamanlama ayrıntıları depolama** özelliği, select **AllIndividualDetails**.|
     |**ORTANCA**|Ortanca sayfa yanıt süresi.<br /><br /> Varsayılan olarak, bu veriler toplanmaz. İçinde bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** düğümü, değiştirilecek çalışma ayarı düğümünü seçin. İçinde **özellikleri** penceresinde için **zamanlama ayrıntıları depolama** özelliği, select **AllIndividualDetails**.|
-    |**90%**|Yanıt süresi 90 yüzdebirlik. Bu sayfa % 90'ını bu sayıdan daha hızlı yanıt verdiğini ve sayfaların % 10 daha yavaş yanıt gösterir.<br /><br /> Varsayılan olarak, bu veriler toplanmaz. İçinde bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** düğümü, değiştirilecek çalışma ayarı düğümünü seçin. İçinde **özellikleri** penceresinde için **zamanlama ayrıntıları depolama** özelliği, select **AllIndividualDetails**.|
-    |**95%**|Yanıt süresi için 95 yüzdebirlik. Bu sayfaların % 95 bu sayıdan daha hızlı yanıt verdiğini ve %5 sayfaların daha yavaş yanıt gösterir.|
-    |**99%**|İçin 99 yanıt süresi. Bu sayfaların % 99 bu sayıdan daha hızlı yanıt verdiğini ve %1 sayfaların daha yavaş yanıt gösterir.<br /><br /> Varsayılan olarak, bu veriler toplanmaz. İçinde bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** düğümü, değiştirilecek çalışma ayarı düğümünü seçin. İçinde **özellikleri** penceresinde için **zamanlama ayrıntıları depolama** özelliği, select **AllIndividualDetails**.|
-    |**Max**|En fazla sayfa yanıt süresi.<br /><br /> Varsayılan olarak, bu veriler toplanmaz. İçinde bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** düğümü, değiştirilecek çalışma ayarı düğümünü seçin. İçinde **özellikleri** penceresinde için **zamanlama ayrıntıları depolama** özelliği, select **AllIndividualDetails**.|
+    |**% 90**|Yanıt süresi 90 yüzdebirlik. Bu sayfa % 90'ını bu sayıdan daha hızlı yanıt verdiğini ve sayfaların % 10 daha yavaş yanıt gösterir.<br /><br /> Varsayılan olarak, bu veriler toplanmaz. İçinde bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** düğümü, değiştirilecek çalışma ayarı düğümünü seçin. İçinde **özellikleri** penceresinde için **zamanlama ayrıntıları depolama** özelliği, select **AllIndividualDetails**.|
+    |**% 95**|Yanıt süresi için 95 yüzdebirlik. Bu sayfaların % 95 bu sayıdan daha hızlı yanıt verdiğini ve %5 sayfaların daha yavaş yanıt gösterir.|
+    |**% 99**|İçin 99 yanıt süresi. Bu sayfaların % 99 bu sayıdan daha hızlı yanıt verdiğini ve %1 sayfaların daha yavaş yanıt gösterir.<br /><br /> Varsayılan olarak, bu veriler toplanmaz. İçinde bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** düğümü, değiştirilecek çalışma ayarı düğümünü seçin. İçinde **özellikleri** penceresinde için **zamanlama ayrıntıları depolama** özelliği, select **AllIndividualDetails**.|
+    |**max**|En fazla sayfa yanıt süresi.<br /><br /> Varsayılan olarak, bu veriler toplanmaz. İçinde bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** düğümü, değiştirilecek çalışma ayarı düğümünü seçin. İçinde **özellikleri** penceresinde için **zamanlama ayrıntıları depolama** özelliği, select **AllIndividualDetails**.|
     |**Standart sapma**|Varsayılan olarak, standart sapma verileri toplanmaz. İçinde bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** düğümü, değiştirilecek çalışma ayarı düğümünü seçin. İçinde **özellikleri** penceresinde için **zamanlama ayrıntıları depolama** özelliği, select **AllIndividualDetails**.|
     |**Sayfa süresi**|Web sayfası için yapılan tüm istekleri için ortalama yanıt süresi.|
     |**Hedef**|Sayfa zamanı hedefi. Bu sayfa için sabit bir değerdir. **Not:** sayfa saati hedefi yalnızca hedef Web performans testinde istek için tanımlandığında görüntülenir.|

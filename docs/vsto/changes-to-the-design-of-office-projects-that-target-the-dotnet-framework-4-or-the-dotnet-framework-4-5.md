@@ -1,12 +1,10 @@
 ---
-title: ".NET Framework 4 veya .NET Framework 4.5 hedefleyen Office projelerinde tasarımını değişiklikleri | Microsoft Docs"
-ms.custom: 
+title: .NET Framework 4 veya .NET Framework 4.5 hedefleyen Office projelerinde tasarımını değişiklikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - what's new [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2c6f050e98665d55c7a64261131cef7ba31c684f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5'i Hedefleyen Office Projelerinin Tasarımı Üzerinde Yapılan Değişiklikler
   İtibariyle [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio hedefleyen Office projelerinin tasarımı için bazı değişiklikler sunulan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya sonraki bir sürümü. Visual Studio'nun önceki sürümleri Office projelerinde biliyorsanız, bu .NET Framework 4.0 veya sonraki sürümlerini hedefleyen Office projelerinde geliştirmek önce bu değişikliklerden haberdar olmanız gerekir. Varsayılan olarak, Visual Studio 2013 veya üzeri kullanarak oluşturduğunuz tüm projeleri .NET Framework 4.0 veya üzeri hedefleyin.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 |GetVstoObject ve HasVstoObject yöntemlerini sözdizimi değişti|Yerel nesneler birincil birlikte çalışma derlemeleri (PIA) üzerinden bunlara erişim ya da bu yöntemlere projenizdeki Globals.Factory özelliği tarafından döndürülen nesne erişebilmeniz için bu yöntemlere Globals.Factory nesne geçmesi gerekir. Daha fazla bilgi için bkz: [güncelleştirme Excel ve Word projelerini, .NET Framework 4 veya .NET Framework 4. 5'e geçiş](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Word içerik denetimlerinin olayları yeni temsilciler ile ilişkilendirilir.|Yeni temsilcileri belirtmek için Word içerik denetimlerinin olaylarını işleme herhangi bir kodu değiştirmeniz gerekir. Daha fazla bilgi için bkz: [güncelleştirme Excel ve Word projelerini, .NET Framework 4 veya .NET Framework 4. 5'e geçiş](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |OLEObject ve OLEControl sınıfları yeniden adlandırılmıştır.|Kullanmak için bu sınıfların örnekleri kullanan herhangi bir kod değiştirmelisiniz <xref:Microsoft.Office.Tools.Excel.ControlSite> veya <xref:Microsoft.Office.Tools.Word.ControlSite> nesnelerini. Daha fazla bilgi için bkz: [güncelleştirme Excel ve Word projelerini, .NET Framework 4 veya .NET Framework 4. 5'e geçiş](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|Öğe sınıfları gibi konak `ThisWorkbook`, `Sheet`  *n* , `ThisDocument`, ve `ThisAddIn`, artık geçersiz kılabilirsiniz Dispose yöntemini sağlar.|Herhangi bir kod Dispose yöntemini geçersiz kılma seçeneğinde kapatma olay işleyicisine konak öğesi sınıf, örneğin, taşımanız `ThisAddIn_Shutdown`ve konak öğesi sınıfından Dispose yöntemini geçersiz kılmayı kaldıracak.|  
+|Öğe sınıfları gibi konak `ThisWorkbook`, `Sheet` *n*, `ThisDocument`, ve `ThisAddIn`, artık geçersiz kılabilirsiniz Dispose yöntemini sağlar.|Herhangi bir kod Dispose yöntemini geçersiz kılma seçeneğinde kapatma olay işleyicisine konak öğesi sınıf, örneğin, taşımanız `ThisAddIn_Shutdown`ve konak öğesi sınıfından Dispose yöntemini geçersiz kılmayı kaldıracak.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümlerini geçirme .NET Framework 4 veya üstü](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   

@@ -1,19 +1,19 @@
 ---
 title: Visual Studio bulut aboneliği CSP'ler için satın alma
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Information for Cloud Solution Providers on how to buy and manage Visual Studio cloud subscriptions for your customers.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: e6bbaa7e84da44b53bc7cea0d0b0746e4680caf2
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Satın alın ve müşterileriniz için Visual Studio bulut aboneliklerini yönetme hakkında daha fazla bilgi için bulut çözüm sağlayıcıları.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Satın alma ve müşterileriniz için Visual Studio bulut Abonelikleri Yönetme
 
@@ -78,7 +78,7 @@ Bu elektronik tabloda gördükleri yorumlama şöyledir:
 %5 iskonto (için belirli bir müşteri) her ayın her Visual Studio abonelik satın 6 biriminde sunuyoruz. İşte bu nedenle, her abonelik seçeneği iki satır görürsünüz. Bir satır birimleri 1 ile 5 arasındaki için taban fiyat yorumlamak 0 "Minimum değeri" gösterir. Bu birimleri 6 ve üstü geçerlidir %5 indirimli fiyat olacak şekilde diğer satır "Minimum"5 değerini, gösterir.
 
 
-## <a name="faq"></a>SSS
+## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>S: nasıl olan **aylık** bulut işlenen Abonelik ücretleri?
 A: ilk satın alma sırasında kalan gün geçerli ay içinde kapsayacak şekilde eşit olarak bölünmüş bir miktar faturalandıracaktır. Örneğin, olduğundan 5 birimleri ücret sonra 10 Visual Studio Professional aylık bulut abonelikleri satın 15 Nisan yapılmışsa 30 günlük ay içinde 15 gün sol veya %50 ve % 50 ücret birimleri prorate. İptal kadar ilk Mayıs ve bundan sonra her ay tam 10 birim Fatura edilecek.
 
@@ -99,7 +99,7 @@ Yıllık abonelikler, özgün purchase 12 ay sonraki ayın ilk gününü iptalle
 Y:, 6 ve sonraki tüm Aboneliklerde %5 İndirim almak *her türü içinde* aboneliğin:
 
 * Aylık Visual Studio Professional
-* Visual Studio Professional annual
+* Visual Studio Professional yıllık
 * Aylık Visual Studio Enterprise
 * Visual Studio Enterprise yıllık
 

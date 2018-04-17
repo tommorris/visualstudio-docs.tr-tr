@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: Şeritte Geliştirici sekmesini gösterme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: Şeritte Geliştirici sekmesini gösterme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Developer tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b0a4793de32956e3aa3de2965eef15623785716d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9921c10d8a886eb4051b3d5f3d8392ddc77c2da7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Nasıl Yapılır: Şeritte Geliştirici Sekmesini Gösterme
   Erişim için **Geliştirici** sekmesinde bir Office uygulaması Şerit'te, varsayılan olarak görünmez olduğundan bu sekme göstermek için yapılandırmanız gerekir. Örneğin, eklemek istediğiniz sekmenin Göster gerekir bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> Word için belge düzeyi özelleştirme için.  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
   
      ![Outlook 2013 Önizleme Seçenekler düğmesini](../vsto/media/vsto-office2013-optionsbutton.png "Outlook 2013 Önizleme Seçenekleri düğmesi")  
   
-3.  İçinde *ApplicationName***seçenekleri** iletişim kutusunda, seçin **Şeridi Özelleştir** düğmesi.  
+3.  İçinde *ApplicationName *** seçenekleri** iletişim kutusunda, seçin **Şeridi Özelleştir** düğmesi.  
   
      Aşağıdaki şekil gösterir **seçenekleri** iletişim kutusu ve **Şeridi Özelleştir** Excel 2010 düğmesini. Bu düğme konumunu, bu konunun ilk "uygulandığı" bölümünde listelenen tüm diğer uygulamalarda benzer.  
   

@@ -1,13 +1,10 @@
 ---
-title: "Şerit nesne modeline genel bakış | Microsoft Docs"
-ms.custom: 
+title: Şerit nesne modeline genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bda61cd7ca0e169a4f62fbc0c33b24e3c4ec0048
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c0d6defc160d08d0c92dd21370144c1ef748e7e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-object-model-overview"></a>Şerit Nesne Modeline Genel Bakış
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Almak ve Şerit denetimlerini çalışma zamanında ayarlamak için kullanabileceğiniz bir kesin türü belirtilmiş nesne modeli sunar. Örneğin, dinamik olarak menü denetimleri doldurmak veya gösterebilir ve denetimleri bağlam gizle. Şerit, ancak yalnızca Şerit Office uygulaması tarafından yüklenmeden sekmeler, gruplar ve denetimler de ekleyebilirsiniz. Bilgi için bkz: [ayarı özellikleri, hale salt okunur](#SettingReadOnlyProperties).  
@@ -31,12 +28,12 @@ ms.lasthandoff: 01/10/2018
   
  Şerit nesne modeli çoğunlukla oluşan [Şerit sınıfı](#RibbonClass), [Şerit olayları](#RibbonEvents), ve [Şerit denetim sınıfları](#RibbonControlClasses).  
   
-##  <a name="RibbonClass"></a>Şerit sınıfı  
+##  <a name="RibbonClass"></a> Şerit sınıfı  
  Yeni bir eklediğinizde **Şerit (Görsel Tasarımcı)** öğesi bir proje için Visual Studio ekler bir **Şerit** projenize sınıfı. **Şerit** sınıfının devraldığı <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> sınıfı.  
   
  Bu sınıf, Şerit kod dosyası ve Şerit Tasarımcısı kod dosyası arasında bölünmüş bir parçalı sınıf olarak görünür.  
   
-##  <a name="RibbonEvents"></a>Şerit olayları  
+##  <a name="RibbonEvents"></a> Şerit olayları  
  **Şerit** sınıfı, aşağıdaki üç olayı içerir:  
   
 |Olay|Açıklama|  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Şerit yüklediğinde Şerit özelleştirme önbellek görüntülere sağlar. Bu olay işleyicisi Şerit görüntülerinde önbelleğe almak için kod yazma küçük bir performans kazancı elde edebilirsiniz. Daha fazla bilgi için bkz. <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Şerit örneği kapandığında ortaya çıkar.|  
   
-##  <a name="RibbonControlClasses"></a>Şerit denetimleri  
+##  <a name="RibbonControlClasses"></a> Şerit denetimleri  
  <xref:Microsoft.Office.Tools.Ribbon> Ad alanında gördüğünüz her denetim için bir tür **Office Şerit denetimleri** grubunu **araç**.  
   
  Aşağıdaki tabloda türü her biri için gösterilir `Ribbon` denetim. Her denetim açıklaması için bkz: [Şerite Genel Bakış](../vsto/ribbon-overview.md).  
@@ -59,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
 |**Açılır**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
 |**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
-|**Galerisi**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
+|**Galeri**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**Grup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Etiket**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
 |**Menü**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
@@ -87,14 +84,14 @@ ms.lasthandoff: 01/10/2018
 |Bir denetimde görüntülenen resmi alın.|Görüntü özelliğini kullanın.|  
 |Bir denetimin etiket değiştirin.|Etiket özelliğini kullanın.|  
 |Kullanıcı tanımlı veri için bir denetim ekleyin.|Tag özelliği kullanın.|  
-|Öğeleri alma bir <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, veya<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>Denetim.|Öğeleri özelliğini kullanın.|  
+|Öğeleri alma bir <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, veya<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> Denetim.|Öğeleri özelliğini kullanın.|  
 |Öğeleri Ekle bir <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, veya <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> denetim.|Öğeleri özelliğini kullanın.|  
 |Denetimler ekleme bir <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Öğeleri özelliğini kullanın.<br /><br /> Denetimler eklemek için <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> Şerit Office uygulamasına yüklendikten sonra ayarlamalısınız <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> özelliğine **true** Şerit Office uygulamasına yüklenmeden önce. Bilgi için bkz: [ayarı özellikleri, hale salt okunur](#SettingReadOnlyProperties).|  
 |Seçilen öğe, almak bir <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, veya <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|SelectedItem özelliğini kullanın. İçin bir <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, kullanın <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> özelliği.|  
 |Grupları alma bir <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Kullanım <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A> özelliği.|  
 |Satır ve sütun sayısı, görünen belirtin bir <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Kullanım <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> ve <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> özellikleri.|  
   
-##  <a name="SettingReadOnlyProperties"></a>Salt okunur ayarı özellikleri  
+##  <a name="SettingReadOnlyProperties"></a> Salt okunur ayarı özellikleri  
  Şerit yüklemeden önce bazı özellikleri yalnızca ayarlayabilirsiniz. Bu özellikleri ayarlamak için üç yerde vardır:  
   
 -   Visual Studio'da **özellikleri** penceresi.  
@@ -131,7 +128,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
   
-###  <a name="ReadOnlyProperties"></a>Salt okunur özellikler  
+###  <a name="ReadOnlyProperties"></a> Salt okunur özellikler  
  Aşağıdaki tabloda Şerit yüklemeden önce yalnızca ayarlanabilir özellikleri gösterir.  
   
 > [!NOTE]  
@@ -144,12 +141,12 @@ ms.lasthandoff: 01/10/2018
 |**ColumnCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
-|**Dinamik**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
+|**dinamik**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Genel**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Grupları**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**Görüntü adı**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
+|**maxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Ad**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**Konumu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
@@ -186,7 +183,7 @@ ms.lasthandoff: 01/10/2018
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|*gönderen*|Bir <xref:System.Object> olayı denetimi temsil eder.|  
+|*Gönderen*|Bir <xref:System.Object> olayı denetimi temsil eder.|  
 |*e*|A <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> içeren bir <xref:Microsoft.Office.Core.IRibbonControl>. Tarafından sağlanan Şerit nesne modeli kullanılamıyor herhangi bir özelliğe erişmek için bu denetimi kullanın [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

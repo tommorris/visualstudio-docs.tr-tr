@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: öğe şablonu ile bir özel eylem proje öğesi oluşturma, bölüm 1 | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: öğe şablonu ile bir özel eylem proje öğesi oluşturma, bölüm 1 | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: dae92a4c20130425fa93a413856f3d2cb5a37387
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e690d18bae72b59234f2f90cbcf903b9941df7d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>İzlenecek yol: bir öğe şablonu, bölüm 1 ile bir özel eylem proje öğesi oluşturma
   Visual Studio'da SharePoint Proje sistem öğesi türleri kendi projesi oluşturarak genişletebilirsiniz. Bu kılavuzda, bir SharePoint sitesinde özel bir eylem oluşturmak için bir SharePoint projesine eklenen bir proje öğesi oluşturur. Özel eylem menü öğesine ekler **Site eylemleri** SharePoint sitesinin menüsü.  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
  Tek başına bir kılavuz budur. Bu kılavuzu tamamladıktan sonra proje öğesi öğe şablonu için bir sihirbaz ekleyerek geliştirebilirsiniz. Daha fazla bilgi için bkz: [izlenecek yol: bir öğe şablonu, bölüm 2 ile özel eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
->  Tamamlanan projeleri, kod ve bu kılavuz aşağıdaki konumdan diğer dosyalarını içeren bir örnek indirebilirsiniz: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Tamamlanan projeleri, kod ve bu kılavuz aşağıdaki konumdan diğer dosyalarını içeren bir örnek indirebilirsiniz: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarındaki aşağıdaki bileşenler gerekir:  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  İçinde **adı** kutusuna **CustomActionProjectItem**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **CustomActionProjectItem** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **CustomActionProjectItem** için proje **Çözüm Gezgini**.  
   
 #### <a name="to-create-the-item-template-project"></a>Öğe şablonu projesi oluşturmak için  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  İçinde **adı** kutusuna **ItemTemplate**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **ItemTemplate** çözüme proje.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **ItemTemplate** çözüme proje.  
   
 #### <a name="to-create-the-extension-project"></a>Uzantı projesi oluşturmak için  
   
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  İçinde **adı** kutusuna **ProjectItemDefinition**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **ProjectItemDefinition** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **ProjectItemDefinition** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
   
 5.  Class1 kod dosyasının projeden silin.  
   
@@ -430,7 +429,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Varsa **komut dosyası hata ayıklama devre dışı** seçin iletişim kutusu görüntülenirse, **Evet** projede hataları ayıklamak devam düğmesine.  
   
-4.  Üzerinde **Site eylemleri** menüsünde seçin **SharePoint Geliştirici Merkezi**, tarayıcı Web sitesi http://msdn.microsoft.com/sharepoint/default.aspx açıldığını doğrulayın ve web tarayıcısı kapatın.  
+4.  Üzerinde **Site eylemleri** menüsünde seçin **SharePoint Geliştirici Merkezi**, tarayıcı Web sitesi açıldığını doğrulayın http://msdn.microsoft.com/sharepoint/default.aspx, web tarayıcısı kapatın.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Geliştirme bilgisayarı temizleme  
  Proje öğesi testi tamamladıktan sonra proje öğesi şablonu Visual Studio Deneysel örnekten kaldırın.  
@@ -459,6 +458,6 @@ ms.lasthandoff: 01/10/2018
  [SharePoint Proje hizmetini kullanma](../sharepoint/using-the-sharepoint-project-service.md)   
  [Visual Studio Şablon Şeması Başvurusu](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [Simgeler için görüntü Düzenleyicisi](/cpp/windows/image-editor-for-icons)   
- [Simge veya başka görüntü &#40; görüntü Düzenleyicisi simgeler &#41;oluşturma;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Simge veya başka görüntü oluşturma &#40;simgeler için görüntü Düzenleyicisi&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

@@ -1,12 +1,10 @@
 ---
-title: "SharePoint Proje öğeleri için öğe şablonları ve proje şablonları oluşturma | Microsoft Docs"
-ms.custom: 
+title: SharePoint Proje öğeleri için öğe şablonları ve proje şablonları oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating custom templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7f64abf2327d4e7702020a53c88d0d2c640e0756
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3f71352dad7b77b2ce92816e84a7c90ec16710ed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>SharePoint Proje Öğeleri için Öğe Şablonları ve Proje Şablonları Oluşturma
   Özel bir SharePoint Proje öğe türüne tanımladığınızda, diğer geliştiriciler Visual Studio Proje öğesi kullanabilmesi, onu bir öğe şablonu veya bir proje şablonu ile ilişkilendirebilirsiniz. Şablon için bir sihirbaz de oluşturabilirsiniz.  
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/10/2018
   
  Öğe şablonları ve proje şablonları bir proje öğesi veya projesi oluşturmak için Visual Studio tarafından kullanılan dosyaları içeren .zip dosyalarıdır. Öğe şablonları ve proje şablonları temelleri hakkında daha fazla bilgi için bkz: [oluşturma proje ve öğe şablonlarını](/visualstudio/ide/creating-project-and-item-templates).  
   
-##  <a name="creatingitemtemplates"></a>Öğe şablonları oluşturma  
+##  <a name="creatingitemtemplates"></a> Öğe şablonları oluşturma  
  Bir SharePoint proje öğesi için bir öğe şablonu oluşturduğunuzda, bazı her zaman gerekli dosyaları ve belirli türde bir proje öğeleri tarafından kullanılan isteğe bağlı dosyalar vardır. Bir SharePoint Proje öğe türüne tanımlamak ve bir öğe şablonu oluşturmak nasıl izlenecek yol için bkz: [izlenecek yol: bir öğe şablonu, bölüm 1 ile bir özel eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Aşağıdaki tabloda, bir SharePoint proje öğesi için bir öğe şablonu oluşturmak için gereken dosyalar listelenmektedir.  

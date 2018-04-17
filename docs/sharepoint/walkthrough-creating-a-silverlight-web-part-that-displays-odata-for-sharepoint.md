@@ -1,13 +1,10 @@
 ---
-title: "İzlenecek yol: bir Silverlight Web parçası oluşturma SharePoint için OData görüntüleyen | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: bir Silverlight Web parçası oluşturma SharePoint için OData görüntüleyen | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.SilverlightWebPart
 dev_langs:
@@ -15,14 +12,14 @@ dev_langs:
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3c2c66490e0eb46508fce0f346fe44563548b407
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 019c1d4b20f1d7a53fc68ef561d45989e93eee28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>İzlenecek yol: SharePoint için OData Görüntüleyen bir Silverlight Web Parçası Oluşturma
   SharePoint 2010 listesi verilerini OData yoluyla kullanıma sunar. SharePoint'te OData hizmeti ListData.svc RESTful hizmeti tarafından uygulanır. Bu kılavuzda Silverlight uygulamasını barındıran bir SharePoint web bölümü oluşturulacağını gösterir. Silverlight uygulaması ListData.svc kullanarak SharePoint duyuru listesi bilgilerini görüntüler. Daha fazla bilgi için bkz: [SharePoint Foundation REST arabirimini](http://go.microsoft.com/fwlink/?LinkId=225999) ve [açık veri Protokolü](http://go.microsoft.com/fwlink/?LinkId=226000).  
@@ -32,7 +29,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
   
--   Microsoft Windows ve SharePoint sürümleri desteklenir. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Microsoft Windows ve SharePoint sürümleri desteklenir. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
@@ -82,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Adresi kutusunda **hizmet Başvurusu Ekle** iletişim kutusunda, SharePoint sitenizi URL'sini girin **http://MySPSite**ve ardından **Git** düğmesi.  
   
-     Silverlight SharePoint OData hizmeti ListData.svc bulduğunda, tam hizmet URL'si ile adresini değiştirir. Örneğin, http://myserver http://myserver/_vti_bin/ListData.svc olur.  
+     Silverlight SharePoint OData hizmeti ListData.svc bulduğunda, tam hizmet URL'si ile adresini değiştirir. Bu örnek için http://myserver hale http://myserver/_vti_bin/ListData.svc.  
   
 4.  Seçin **Tamam** projesine hizmet Başvurusu Ekle düğmesi ve varsayılan hizmet adı, ServiceReference1 kullanın.  
   

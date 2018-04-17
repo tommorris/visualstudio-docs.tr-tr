@@ -1,24 +1,23 @@
 ---
-title: "VSTO Eklentileri Office için Visual Studio kullanarak oluşturma | Microsoft Docs"
-ms.custom: 
+title: VSTO Eklentileri Office için Visual Studio kullanarak oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9a1b95c057163f3a90c8277744d1ec39a2f24cde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 76a81b61c585c0a35b5b535988e559f5e045da13
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio kullanarak Office için VSTO Eklentileri oluşturma
   Office genişletmek .NET Framework uygulamaları oluşturmak için Visual Studio'da Microsoft Office geliştirici araçlarını kullanabilirsiniz. Bu uygulamaları olarak da adlandırılır *Office çözümleri*.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
 -   [Microsoft Office Developer Center'da](http://go.microsoft.com/fwlink/?LinkId=83467) teknik makaleler, kod örnekleri, yüklemeleri, topluluk bilgileri, destek ve Office özelleştirmeleri ve Office Business uygulamaları (OBU hakkında diğer belgelere bağlantılar içerir ).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Başlarken &#40; Office geliştirme Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Başlarken &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Office çözümleri oluşturmak için geliştirme bilgisayarı yapılandırma, Office çözümleri oluşturmaya başlamak nasıl ve Visual Studio'da Office geliştirme yenilikler hakkında bilgi için bağlantılar sağlar.  
   
  [Office Çözümlerini Yükseltme ve Geçirme](../vsto/upgrading-and-migrating-office-solutions.md)  
@@ -86,13 +85,13 @@ ms.lasthandoff: 01/10/2018
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)  
  Örnek uygulamalar ve ortak görevleri gerçekleştirmek için adım adım yönergeler verir konulara bağlantılar sağlar.  
   
- [Genel başvuru &#40; Office geliştirme Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Genel başvuru &#40;Visual Studio'da Office geliştirme&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  Office birincil birlikte çalışma derlemeleri, bildirimler, kullanıcı arabirimi öğeleri ve hata iletileri hakkında ayrıntılı bilgi için bağlantılar sağlar.  
   
- [Yönetilen başvuru &#40; Office geliştirme Visual Studio &#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
+ [Yönetilen başvuru &#40;Visual Studio'da Office geliştirme&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
  API ad alanları ve ofisinde kullanılan türler hakkında bilgilere bağlantılar hedefleyen projeler sağlar [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Ad alanları ve .NET Framework 3.5 hedefleyen Office projelerinde kullanılan türler hakkında API başvuru belgeleri için Visual Studio 2008 belgelerinde şu bölüme bakın: [2007 Sistem yönetilen başvuru](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
- [Yönetilmeyen API Başvurusu &#40; Office geliştirme Visual Studio &#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
+ [Yönetilmeyen API Başvurusu &#40;Visual Studio'da Office geliştirme&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Yönetilen VSTO Eklentileri Office uygulamalarında kaldırma ve yük gibi eylemleri gerçekleştirmek için kullanabileceğiniz COM arabirimleri hakkında bilgilere bağlantılar içerir.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

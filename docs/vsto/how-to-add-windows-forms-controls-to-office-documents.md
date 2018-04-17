@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: Windows Forms denetimleri Office belgelerine ekleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: Windows Forms denetimleri Office belgelerine ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 937c64f8fadf8763d4e5b3ad32489262cddafdfd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ebd26c78e30e522b3d961d42226fc42825eb2a2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Nasıl Yapılır: Office Belgelerine Windows Forms Denetimleri Ekleme
   Belge düzeyi projelerine tasarım zamanında Microsoft Office Excel ve Microsoft Office Word belgelerine Windows Forms denetimleri ekleyebilirsiniz. Çalışma zamanında denetimler belge düzeyi özelleştirmeleri ve VSTO eklentileri ekleyebilirsiniz. Örneğin, ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> kullanıcılar Seçenekleri listesinden seçebilmeniz için çalışma sayfasına denetim.  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl yapmak I: ekleme denetimlerini çalışma zamanında bir belge yüzeyine?](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
-##  <a name="designtime"></a>Tasarım zamanında denetimler ekleme  
+##  <a name="designtime"></a> Tasarım zamanında denetimler ekleme  
  Belge düzeyi projede tasarım zamanında Windows Forms denetimleri eklemenin birkaç yolu vardır.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -102,8 +101,8 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Excel'de denetim seçtiğinizde göreceğiniz **=EMBED("WinForms.Control.Host","")** içinde **formül çubuğu**. Bu metin gereklidir ve silinmemelidir.  
   
-##  <a name="runtimedoclevel"></a>Belge düzeyi projelerine çalışma zamanında denetimler ekleme  
- Belgeye çalışma zamanında Windows Forms denetimlerini programlı olarak ekleyebilirsiniz. Word'de yöntemlerini kullanın <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> özelliği `ThisDocument` sınıfı. Excel'de yöntemlerini kullanın <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> özelliği bir `Sheet`  *n*  sınıfı. Her yöntem farklı şekilde denetimin konumunu belirtmenizi sağlayan birçok aşırı yüklemeye sahip.  
+##  <a name="runtimedoclevel"></a> Belge düzeyi projelerine çalışma zamanında denetimler ekleme  
+ Belgeye çalışma zamanında Windows Forms denetimlerini programlı olarak ekleyebilirsiniz. Word'de yöntemlerini kullanın <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> özelliği `ThisDocument` sınıfı. Excel'de yöntemlerini kullanın <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> özelliği bir `Sheet` *n* sınıfı. Her yöntem farklı şekilde denetimin konumunu belirtmenizi sağlayan birçok aşırı yüklemeye sahip.  
   
  Çalışma zamanında bir belge için bir Windows Forms denetimi eklediğinizde, Denetim belge kapatıldığında belgede kalıcı yapılmaz. Belge bir sonraki açılışında denetimi yeniden oluşturabilirsiniz. Daha fazla bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#4)]  
   
-##  <a name="runtimeaddin"></a>VSTO eklentilerini çalışma zamanında denetimler ekleme  
+##  <a name="runtimeaddin"></a> VSTO eklentilerini çalışma zamanında denetimler ekleme  
  Çalışma zamanında Windows Forms denetimleri herhangi bir açık belgeye programlı olarak ekleyebilirsiniz. İlk olarak, açık bir belge veya çalışma sayfası üzerinde temel bir ana bilgisayar öğesi oluşturun. Word'de yöntemlerini kullanın <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> yeni konak öğesi özelliği. Excel'de yöntemlerini kullanın <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> yeni konak öğesi özelliği. Her yöntem farklı şekilde denetimin konumunu belirtmenizi sağlayan birçok aşırı yüklemeye sahip.  
   
  Çalışma zamanında bir belge için bir Windows Forms denetimi eklediğinizde, Denetim belge kapatıldığında belgede kalıcı yapılmaz. Belge bir sonraki açılışında denetimi yeniden oluşturabilirsiniz. Daha fazla bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  

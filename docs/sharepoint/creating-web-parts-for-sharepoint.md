@@ -1,12 +1,10 @@
 ---
-title: "SharePoint için Web bölümleri oluşturma | Microsoft Docs"
-ms.custom: 
+title: SharePoint için Web bölümleri oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
 - Microsoft.SharePoint.WebControls.CssLink
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d0c5acfac06702894f67a8bfc1547462a0069e15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 52f35f095c91422f8882724074c54ad48edd88f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>SharePoint için Web Bölümleri Oluşturma
   Web Bölümleri'ni kullanarak, içerik, Görünüm ve bir SharePoint sitesinin sayfalarının davranışını bir tarayıcı kullanarak değiştirebilirsiniz. Web Bölümleri olan bir web bölümü sayfası içinde çalışan sunucu tarafı denetimleri: bir SharePoint sitesinde sayfaları yapı taşlarını oldukları. Bkz: [yapı taşı: Web Bölümleri](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -105,7 +104,7 @@ ms.lasthandoff: 01/10/2018
  Korumalı çözümler hakkında daha fazla bilgi için bkz: [korumalı arasındaki farklar ve küme çözümleri](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
 ## <a name="creating-older-style-sharepoint-based-web-parts"></a>Eski Stil SharePoint Tabanlı Web Bölümleri Oluşturma  
- Özel oluşturmak için Visual Studio şablonları kullanabilirsiniz [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] için SharePoint web bölümleri. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]Web Bölümleri üstünde yerleşiktir [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] web bölümü altyapı ve yeni projeler için önerilen türüdür.  
+ Özel oluşturmak için Visual Studio şablonları kullanabilirsiniz [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] için SharePoint web bölümleri. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] Web Bölümleri üstünde yerleşiktir [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] web bölümü altyapı ve yeni projeler için önerilen türüdür.  
   
  Çok az durumlarda, SharePoint tabanlı web bölümü eski stil kullanarak bir web bölümü oluşturma gerekebilir. Web bölümleri'nin bu türleri oluşturmak için Visual Studio'yu kullanabilirsiniz, ancak Visual Studio özellikle bunları oluşturmanıza yardımcı olmak için tasarlanmış şablonları sağlamaz.  
   

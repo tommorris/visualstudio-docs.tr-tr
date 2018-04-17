@@ -1,13 +1,10 @@
 ---
 title: Imanagedaddin arabirimi | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - IManagedAddin interface
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce339bb56368ab5c7e88d1cc8956a3b19a7e89b3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: d626257d3a2683a6fbb6032e8053572fd1301645
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin Arabirimi
   Uygulama yükleyen bir bileşen oluşturmak için Imanagedaddin arabirimi VSTO eklentileri yönetilen. Bu arabirim 2007 Microsoft Office sistemi eklendi.  
@@ -90,6 +87,6 @@ interface IManagedAddin : IUnknown
 >  Bu CLSID içinde VSTOLoader.dll tarafından da kullanılan [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Bu nedenle, kendi VSTO Eklenti Yükleyicisi ve çalışma zamanı bileşeni oluşturma Imanagedaddin kullanırsanız VSTO Bel eklentileri çalıştıran bilgisayarlara bileşeniniz dağıtamazsınız [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönetilmeyen API Başvurusu &#40; Office geliştirme Visual Studio &#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
+ [Yönetilmeyen API Başvurusu &#40;Visual Studio'da Office geliştirme&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
   
   

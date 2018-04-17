@@ -2,7 +2,7 @@
 title: "İzlenecek yol: Oluşturmak ve çalıştırmak için birim testleri Visual Studio'da kodu yönetilen | Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -10,15 +10,15 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 74e364b9ea3660c8daa58b75bb6ba74f9af26c69
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: a34fded72a0d04f3920e0d7a76f9550993b520e7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Oluşturmak ve yönetilen kod için birim testleri çalıştırma
 
@@ -234,7 +234,7 @@ using BankAccountNS;
 ##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Kodunuzu düzeltin ve testleri yeniden çalıştırın
  **Test sonuçlarını analiz etme**
 
- Test sonucu hatayı açıklayan bir ileti içerir. İçin `AreEquals` yöntemi, ileti görüntüler, ne bekleniyordu ((**beklenen\<*XXX*>**parametresi) ve ne gerçekte alındı (  **Gerçek\<*YYY* >**  parametresi). Başlangıç bakiyenin dışında reddetmek için Bakiye şuydu, ancak bunun yerine mevzuatı tutarına göre artırılmıştır.
+ Test sonucu hatayı açıklayan bir ileti içerir. İçin `AreEquals` yöntemi, ileti görüntüler, ne bekleniyordu ((**beklenen\<*XXX*>**parametresi) ve ne gerçekte alındı ( **Gerçek\<*YYY* >** parametresi). Başlangıç bakiyenin dışında reddetmek için Bakiye şuydu, ancak bunun yerine mevzuatı tutarına göre artırılmıştır.
 
  ATM kod reexamination birim test hata bulma başarılı olduğunu gösterir. Mevzuatı miktarını çıkarılsın mı hesap bakiyesini eklenir.
 

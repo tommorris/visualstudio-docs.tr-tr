@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: bir sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: bir sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 68836c8e95d7a9a53a1e1c2b90f7ee48e91106e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4951d9960a3027e8d72bb0fbc72d551f123993ce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>İzlenecek yol: Bir Sunucu Gezgini Uzantısında SharePoint İstemcisi Nesne Modelini Çağırma
   Bu kılavuz bir uzantı için SharePoint istemcisi nesne modelini nasıl çağırılacağını **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**. SharePoint istemcisi nesne modelini kullanma hakkında daha fazla bilgi için bkz: [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -82,7 +81,7 @@ Aşağıdaki kavramlar bilgisi yararlı, ancak gerekli değildir, izlenecek yolu
   
 6.  İçinde **adı** kutusuna **WebPartNode**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **WebPartNode** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **WebPartNode** için proje **Çözüm Gezgini**.  
   
 #### <a name="to-create-the-extension-project"></a>Uzantı projesi oluşturmak için  
   
@@ -96,7 +95,7 @@ Aşağıdaki kavramlar bilgisi yararlı, ancak gerekli değildir, izlenecek yolu
   
 5.  İçinde **adı** kutusuna **WebPartNodeExtension**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **WebPartNodeExtension** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **WebPartNodeExtension** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
   
 6.  Class1 kod dosyasının projeden silin.  
   
@@ -287,6 +286,6 @@ Aşağıdaki kavramlar bilgisi yararlı, ancak gerekli değildir, izlenecek yolu
  [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [İzlenecek yol: Web bölümlerini görüntülemek için Sunucu Gezgini genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Simgeler için görüntü Düzenleyicisi](/cpp/windows/image-editor-for-icons)   
- [Simge veya başka görüntü &#40; görüntü Düzenleyicisi simgeler &#41;oluşturma;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Simge veya başka görüntü oluşturma &#40;simgeler için görüntü Düzenleyicisi&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

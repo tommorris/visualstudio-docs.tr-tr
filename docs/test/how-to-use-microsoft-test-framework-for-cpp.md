@@ -1,18 +1,18 @@
 ---
-title: "Microsoft Visual Studio'da C++ Framework sınama birim kullanın | Microsoft Docs"
+title: Microsoft Visual Studio'da C++ Framework sınama birim kullanın | Microsoft Docs
 ms.date: 11/15/2017
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: a8d9ee2c53ba012f977c283eb3d7b81dbb3a9267
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: a2d0998185a7b550b22d0cbfaad43477bb036ad7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Microsoft Visual Studio'da C++ Framework sınama birim kullanın
 
@@ -28,7 +28,7 @@ Genellikle, test kodunuzu test etmek istediğiniz kod olarak aynı çözüme ken
 
     1.  Çözüm Gezgini'nde, test ve ardından program için proje düğümüne sağ tıklayın **özellikleri | Yapılandırma özellikleri | VC ++ dizinleri**.
 
-    3.  Aşağıdaki satırları aşağı oka tıklayın ve seçin  **<Edit>**  :
+    3.  Aşağıdaki satırları aşağı oka tıklayın ve seçin **<Edit>** :
 
         |||
         |-|-|

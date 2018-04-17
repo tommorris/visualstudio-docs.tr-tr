@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Outlook için ilk VSTO eklentinizi oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Outlook için ilk VSTO eklentinizi oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3f92c898b6eb8ba0f143e0a2069e35c70cc6e6b2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d748ef190ef60de5ae7f7300051bb1b524462d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-outlook"></a>İnceleme: Outlook için İlk VSTO Eklentinizi Oluşturma
-  Bu kılavuzda nasıl Microsoft Office Outlook için VSTO eklentisi oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin Outlook öğesi açık olduğu bağımsız olarak kullanılabilir. Daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  Bu kılavuzda nasıl Microsoft Office Outlook için VSTO eklentisi oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin Outlook öğesi açık olduğu bağımsız olarak kullanılabilir. Daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  **Tamam**'ı tıklatın.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]oluşturur **FirstOutlookAddIn** proje ve açılır **ThisAddIn** Düzenleyicisi'nde kod dosyası.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturur **FirstOutlookAddIn** proje ve açılır **ThisAddIn** Düzenleyicisi'nde kod dosyası.  
   
 ## <a name="writing-code-that-adds-text-to-each-new-mail-message"></a>Her yeni bir posta iletisi metin ekleyen kod yazma  
  Ardından, kodu ThisAddIn kod dosyasına ekleyin. Yeni kod Outlook nesne modeline metin her yeni posta iletisine eklemek için kullanır. Varsayılan olarak, aşağıdaki oluşturulmuş kodu ThisAddIn kod dosyasını içerir:  

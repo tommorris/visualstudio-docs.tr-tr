@@ -1,32 +1,28 @@
 ---
-title: "Kaynak denetim paketleri için model | Microsoft Docs"
-ms.custom: 
+title: Kaynak denetim paketleri için model | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], model
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1960b5fe7b7c507b5b3275315ea6ae1715c27f76
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa0dcdd930412e4e53c59509848f0b7c1503c47b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-for-source-control-packages"></a>Kaynak denetim paketleri için modeli
 Aşağıdaki modeli kaynak denetim uygulaması örneği temsil eder. Modeldeki uygulamanız gereken arabirimleri ve çağırmalısınız Ortam Hizmetleri bakın. Tüm hizmetler gibi gerçekten hizmeti aracılığıyla elde belirli bir arabirim yöntemleri çağırın. Sınıf adları, kaynak denetimi nasıl gerçekleştirildiği görmeyi kolaylaştırmak için tanımlanır.  
   
- ![SCC &#95; TUP örnekler](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")  
+ ![SCC&#95;TUP örnekler](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")  
 Örnek kaynak denetimi projesi  
   
 ## <a name="interfaces"></a>Arabirimler  

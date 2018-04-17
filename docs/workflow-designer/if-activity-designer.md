@@ -1,5 +1,5 @@
 ---
-title: "Varsa etkinlik Tasarımcısı | Microsoft Docs"
+title: Varsa etkinlik Tasarımcısı | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38315b493bd1349efcea5c511378d38eb05ca97d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 948359e0c6458fb0ad03d0d032676439d8062ca4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="if-activity-designer"></a>Varsa etkinlik Tasarımcısı
 <xref:System.Activities.Statements.If> Etkinlik bir koşulu değerlendirir ve bu değerlendirme sonuçlarını bağlı olarak bir etkinlik yürütür. Bu etkinlik programlama stilini modelleme bir yordam kullanırken kullanışlıdır. Bir <xref:System.Activities.Statements.If> etkinlik iç içe geçirilemez içinde bir <xref:System.Activities.Statements.Sequence> etkinlik veya <xref:System.Activities.Statements.Parallel> örneğin etkinlik. Kullanıyorsanız bir <xref:System.Activities.Statements.Flowchart> etkinliği kullanmayı bir <xref:System.Activities.Statements.FlowDecision> etkinlik yerine.

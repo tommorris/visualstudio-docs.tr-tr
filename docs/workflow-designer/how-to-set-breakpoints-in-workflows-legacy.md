@@ -1,5 +1,5 @@
 ---
-title: "Nasıl yapılır: kesme (eski) iş akışlarında | Microsoft Docs"
+title: 'Nasıl yapılır: kesme (eski) iş akışlarında | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 78e0be39-3e99-487c-bfef-19db0daf6f42
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3da1fc5d16591140e59c30422e7ad087b5c7bd
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 71d62395a4b719827cf33eacad46a650bd057c43
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Nasıl yapılır: kesme iş akışları (eski)
 Bu konuda kesme noktaları kümesinde açıklar [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] uygulamaları derleme eski Windows iş akışı Tasarımcısı'nı kullanarak. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] olduğunda, [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] uygulamanın gerekir ya da hedeflemek [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

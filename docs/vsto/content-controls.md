@@ -2,12 +2,9 @@
 title: İçerik denetimleri | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.DropDownListContentControl
 - VST.Toolbox.RichTextContentControl
@@ -41,14 +38,14 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e06075c0e748aab34c4a1df425f95592856217db
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a1c56b7e48ce42699330e8eb40595d9cc761736e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="content-controls"></a>İçerik Denetimleri
   İçerik denetimleri tasarım belgeleri ve bu özelliklere sahip şablonları sağlamak sizin için bir yol:  
@@ -130,7 +127,7 @@ ms.lasthandoff: 01/10/2018
 |İçerik denetimi yineleme belgeye eklendikten sonra kodu çalıştırmak veya geri alma işlemi.|Tanıtıcı <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> denetiminin olayı.|  
 |İçerik denetimi belgeden yalnızca silinmeden önce kodu çalıştırın.|Tanıtıcı <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> denetiminin olayı.|  
   
-##  <a name="Protection"></a>İçerik denetimlerini kullanarak belge bölümlerini koruma  
+##  <a name="Protection"></a> İçerik denetimlerini kullanarak belge bölümlerini koruma  
  Belgenin bir bölümünü koruduğunuzda, değiştirme veya silme belgenin bu bölümü içeriği kullanıcıların engellemiş olursunuz. İçerik denetimlerini kullanarak belge bölümlerini korumak için birkaç yol vardır.  
   
  Korumak istediğiniz alan içerik denetiminin içinde ise, kullanıcıların düzenleme veya silmesini önlemek için içerik denetimi özelliklerini kullanabilirsiniz:  
@@ -146,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
  İçerik denetimleri belge parçalarını korumak için nasıl kullanılacağı hakkında daha fazla bilgi için bkz: [nasıl yapılır: korumak bölümleri belgeler kullanarak içerik denetimleri tarafından](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
-##  <a name="DataBinding"></a>İçerik denetimlerine veri bağlama  
+##  <a name="DataBinding"></a> İçerik denetimlerine veri bağlama  
  İçerik denetimi bir veri kaynağına bağlayarak veri belgeleri görüntüleyebilirsiniz. Veri kaynağı güncelleştirildiğinde, içerik denetimi değişiklikleri yansıtır. Veri kaynağına değişiklikler da kaydedebilirsiniz.  
   
  İçerik denetimleri aşağıdaki veri bağlama seçenekleri sağlar:  
@@ -168,7 +165,7 @@ ms.lasthandoff: 01/10/2018
 |---------------|-----------------------------|----------------------------------------------------------------|  
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
-|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte>dizi|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Yok.|  
+|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> Dizi|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Yok.|  
   
  Belge düzeyi ve VSTO eklentisi projelerine, içerik denetimi bir veri kaynağına program aracılığıyla kullanarak bağlayabilirsiniz <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> yöntemi <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> denetiminin özelliği. Bunu yaparsanız bir dizeyi geçirmek **metin** için *propertyName* parametresinin <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> yöntemi. **Metin** içerik denetimlerinin varsayılan veri bağlama özelliği bir özelliktir.  
   
@@ -233,7 +230,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
   
  İçerik denetimi içeriğini kullanıcının ne zaman düzenlediğini belirlemek için denetimini özel bir XML parçasına bağlama ve ardından işlemek <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> olay. Kullanıcı için özel bir XML parçasına bağlı bir denetimin içeriğini değiştirdiğinde bu olay tetiklenir. İçerik denetimi için özel bir XML parçasına bağlama nasıl izlenecek yol için bkz: [izlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
-###  <a name="checkbox"></a>Word projelerinde onay kutusu içerik denetimleri  
+###  <a name="checkbox"></a> Word projelerinde onay kutusu içerik denetimleri  
  Word 2010 temsil eden bir onay kutusu içerik denetimi yeni bir tür sunmuştur. Ancak, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Office projelerinde kullanabilmeniz için karşılık gelen bir CheckBoxContentControl türü sağlamaz. Bir onay kutusu içerik denetimi oluşturmak için bir [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] veya Word 2010 proje kullanın, <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> yöntemi oluşturmak için bir <xref:Microsoft.Office.Tools.Word.ContentControl> nesne ve geçirin <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> yöntemine bir onay kutusu içerik denetimi belirtmek için değer. Aşağıdaki kod örneğinde bunun nasıl yapılacağı gösterilmektedir.  
   
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]

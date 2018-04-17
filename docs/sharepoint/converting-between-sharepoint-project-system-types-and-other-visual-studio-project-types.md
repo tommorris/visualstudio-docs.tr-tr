@@ -1,13 +1,10 @@
 ---
-title: "SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme | Microsoft Docs"
-ms.custom: 
+title: SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint project service
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 837907172d4e093dec231e6b21b92da050dcbd19
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6cf039f3d5330b2f4869ae323ac358a1220c2fbf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>SharePoint Proje Sistem Türleri ve Diğer Visual Studio Proje Türleri Arasında Dönüştürme
   Bazı durumlarda SharePoint Proje sistemi nesnenin olabilir ve Visual Studio Otomasyon nesne modeli veya tümleştirme nesne modeli, karşılık gelen bir nesne özelliklerini kullanmak istediğiniz veya tam tersi. Bu durumlarda, kullandığınız <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> farklı nesne modeline nesneyi dönüştürmek için SharePoint Proje hizmeti yöntemi.  

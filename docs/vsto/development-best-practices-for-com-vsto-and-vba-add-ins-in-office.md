@@ -1,23 +1,24 @@
 ---
-title: "En iyi geliştirme eklentilerinde Office COM, VSTO ve VBA yöntemler | Microsoft Docs"
-ms.custom: 
+title: En iyi geliştirme eklentilerinde Office COM, VSTO ve VBA yöntemler | Microsoft Docs
+ms.custom: ''
 ms.date: 07/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: 
-helpviewer_keywords: 
+ms.technology:
+- office-development
+ms.topic: conceptual
+dev_langs:
+- ''
+helpviewer_keywords:
+- ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2a1b6b9270207b3d0f8d415655231af4456e61b4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>COM, VSTO ve VBA eklentilerinde Office için en iyi uygulamaları geliştirme
   COM, VSTO veya VBA eklentiler için Office geliştiriyorsanız, bu makalede açıklanan geliştirme en iyi uygulamaları izleyin.   Bu, olmanıza yardımcı olur:
@@ -62,7 +63,7 @@ Müşteriler kendi COM, VSTO ve VBA ofisinde çalıştırılan eklentileri için
 
 Office istemci uygulamaları (Word veya Excel gibi) için destek bildirimleri sağlamak için önce eklentilerinizi geçerli Office sürümü çalıştırın ve eklentinizi gelecekteki bir sürümde bozarsa güncelleştirmeleri sağlamayı Yürüt doğrulayın. Microsoft yeni bir yapı ya da Office için bir güncelleştirme yayımlandığında eklentilerinizi test etmek zorunda değildir. Microsoft Office COM, VSTO ve VBA genişletilebilirlik platform nadiren değişiklikleri ve bu değişiklikleri belgelendiğinden.
 
->Önemli: Microsoft hazır olma durumunu raporlar ve ISV kişi bilgileri için desteklenen eklentiler listesini tutar. Listelenen eklentiniz almak için bkz: [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
+>Önemli: Microsoft hazır olma durumunu raporlar ve ISV kişi bilgileri için desteklenen eklentiler listesini tutar. Listelenen eklentiniz almak için bkz: [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>İşlem İzleyicisi yükleme veya sorunları yüklenirken hata ayıklamaya yardımcı olması için kullanın
 Eklentiniz uyumluluk sorunları yük veya yükleme sırasında varsa, bunlar dosya veya kayıt defteri erişim ile ilgili sorunlar için ilişkili. Kullanım [işlem İzleyicisi](/sysinternals/downloads/procmon) veya oturum ve sorunu belirlemeye yardımcı olmak için çalışma ortamını karşı davranışı karşılaştırmak için benzer bir hata ayıklama aracı.

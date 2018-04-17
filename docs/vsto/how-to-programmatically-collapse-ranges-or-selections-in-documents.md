@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: program aracılığıyla daraltma aralıkları veya seçimleri | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: program aracılığıyla daraltma aralıkları veya seçimleri | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,20 +16,21 @@ helpviewer_keywords:
 - collapsing ranges
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c3d3c4d81f8da08e90d7d5588ecaed8e548824a5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d4ce27e141e03b6a3cc84b00321026052893ad9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Nasıl yapılır: Belgelerde Aralıkları veya Seçimleri Program Aracılığıyla Daraltma
   İle çalışıyorsanız bir <xref:Microsoft.Office.Interop.Word.Range> veya <xref:Microsoft.Office.Interop.Word.Selection> nesnesi, varolan metnin üzerine yazılmasını önlemek için bir metin eklemeden önce bir ekleme noktası seçimi değiştirmek isteyebilirsiniz. Hem <xref:Microsoft.Office.Interop.Word.Range> ve <xref:Microsoft.Office.Interop.Word.Selection> nesneler sahip kullanan bir Daralt yöntemi <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> numaralandırma değerlerinin:  
   
--   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart>Seçimi seçimi başlangıcına daraltır. Bir numaralandırma değeri belirtmezseniz, varsayılan değer budur.  
+-   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> Seçimi seçimi başlangıcına daraltır. Bir numaralandırma değeri belirtmezseniz, varsayılan değer budur.  
   
--   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd>Seçimi seçimi sonuna daraltır.  
+-   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> Seçimi seçimi sonuna daraltır.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   

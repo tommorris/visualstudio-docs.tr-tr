@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8d37dde0027e33af16bdb6c146ec74076c686cf6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9bb85c10b2a66741bf0405d4a1313fb2343a708b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>İzlenecek Yol: Word İçin İlk Belge Düzeyi Özelleştirmeyi Oluşturma
   Bu tanıtıcı kılavuz Microsoft Office Word için belge düzeyi özelleştirme oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler, yalnızca belirli bir belge açık olduğunda kullanılabilir. Belge düzeyi özelleştirme uygulama çapında değişiklik yapmak için kullanamazsınız, örneğin, herhangi bir belge açık olduğunda yeni bir Şerit sekmesi görüntüleme gibi.  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Seçin **bir yeni belge oluşturun**, tıklatıp **Tamam**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]oluşturur **FirstDocumentCustomization** proje ve ekler **FirstDocumentCustomization** belge ve ThisDocument kod dosyası projeye. **FirstDocumentCustomization** belge otomatik olarak Tasarımcısı'nda açılır.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturur **FirstDocumentCustomization** proje ve ekler **FirstDocumentCustomization** belge ve ThisDocument kod dosyası projeye. **FirstDocumentCustomization** belge otomatik olarak Tasarımcısı'nda açılır.  
   
 ## <a name="closing-and-reopening-the-document-in-the-designer"></a>Tasarımcısı'nda belgeyi yeniden açmayı  
  Projenizi geliştirirken kasıtlı olarak veya yanlışlıkla tasarımcısındaki belgede kapatırsanız, yeniden açabilirsiniz.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  İçinde **Çözüm Gezgini**, sağ **ThisDocument** tıklayın ve kod dosyası **Görünüm Tasarımcısı**.  
   
-     \-veya -  
+     \- veya -  
   
      İçinde **Çözüm Gezgini**, çift **ThisDocument** kod dosyası.  
   
@@ -158,7 +157,7 @@ ms.lasthandoff: 01/10/2018
 -   Word için belge düzeyi özelleştirmelerini dağıtma: [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Word çözümleri](../vsto/word-solutions.md)   
  [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)   
  [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)   

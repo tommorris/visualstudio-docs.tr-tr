@@ -1,23 +1,21 @@
 ---
-title: "Nasıl yapılır: bir XSD şemasını temel alan bir XML belgesi oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: bir XSD şemasını temel alan bir XML belgesi oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 63ce40fb765d3aab4cb91ebff8a3552f69d92586
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 042b5d2975468cbaa8260d830235381904dad7e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Nasıl yapılır: bir XSD şemasını temel alan bir XML belgesi oluşturma
 **Örnek XML oluşturmak** özelliği XML Şeması (XSD) dosyasını temel alan bir örnek XML dosyası oluşturur.  
@@ -34,7 +32,7 @@ Bu özellik genellikle geçerli XML belgelerini oluşturur. Şema bir veya daha 
   
 -   `xs:key`, `xs:keyref`, Ve `xs:unique` kimlik kısıtlamaları.  
   
--   `xs:pattern`yönü.  
+-   `xs:pattern` yönü.  
   
 -   Numaralandırmalar `xs:QName` türü.  
   

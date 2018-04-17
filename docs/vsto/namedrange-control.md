@@ -1,13 +1,10 @@
 ---
 title: NamedRange denetimi | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Range
 dev_langs:
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - NamedRange control
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22adc003c10e95de0e701eb3f382d9e530b28acf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 5273baec024da8eb339e8f3d12541fc6e98e97c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="namedrange-control"></a>NamedRange Denetimi
   <xref:Microsoft.Office.Tools.Excel.NamedRange> Denetimidir benzersiz bir ada sahip olayları gösterir ve verilere bağlanabilen bir aralık. Daha fazla bilgi için bkz: [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md).  
@@ -42,7 +39,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Varsayılan olarak, dinamik olarak oluşturulmuş adlandırılmış aralıklar çalışma sayfasında sürdürülmeyen çalışma kapatıldığında konak kontrolü olarak. Daha fazla bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- <xref:Microsoft.Office.Tools.Excel.NamedRange>denetimleri yalnızca belirli sayfalardaki aralıklardan oluşabilir. <xref:Microsoft.Office.Tools.Excel.NamedRange>denetimleri tüm sayfalara uygulanabilen göreli adlara sahip olamaz ve iki veya daha fazla çalışma kitabında (3-b aralıkları) yayılamaz.  
+ <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimleri yalnızca belirli sayfalardaki aralıklardan oluşabilir. <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimleri tüm sayfalara uygulanabilen göreli adlara sahip olamaz ve iki veya daha fazla çalışma kitabında (3-b aralıkları) yayılamaz.  
   
 ## <a name="binding-data-to-the-control"></a>Denetimine veri bağlama  
  Adlandırılmış bir aralık fazla hücre içerebileceğinden karmaşık veri bağlama için iyi bir aday olarak görünebilir; Ancak, bir aralık yalnızca belirli bir sütuna bir veri kümesinden kolayca eşlenemez hücreleri koleksiyonudur. Bu nedenle, <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimleri yalnızca basit veri bağlama destekler. <xref:Microsoft.Office.Tools.Excel.ListObject> Denetimi karmaşık veri bağlama için kullanılabilir. Daha fazla bilgi için bkz: [ListObject denetimi](../vsto/listobject-control.md).  

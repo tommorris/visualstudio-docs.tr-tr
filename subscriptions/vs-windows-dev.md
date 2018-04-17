@@ -1,51 +1,23 @@
 ---
-title: "Windows Geliştirici hesabı teklifi Visual Studio Aboneliklerde | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Windows Developer Account included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 0d063d04fd071cf6da2c1ae9bd06897aa3a853a5
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Windows Geliştirici hesabı teklifi Visual Studio Aboneliklerde | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Visual Studio aboneliğinizle dahil Windows Geliştirici hesabı hakkında bilgi edinin.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7b014583b4f5afb331f22ad822a487482dc310b7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 #  <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Windows Geliştirici hesabı
 
-## <a name="overview"></a>Genel Bakış
-
 Seçili Visual Studio subscriptoins ile dahil Windows Geliştirici hesabınız, ücretsiz ve Ücretli Windows uygulamalarını Windows Mağazası'na gönderin olanak sağlar.     
-
-## <a name="eligibility"></a>Uygunluk
-| Abonelik düzeyinde / Program                                                  | Faydası               | Yenilenebilir?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise standart                                             | Dahil              |  Evet                                                               |
-| Visual Studio Enterprise yıllık                                               | Dahil              |  Evet                                                               |
-| Aylık Visual Studio Enterprise                                              | Yok         |                                                                    |
-| Visual Studio Professional Standard                                           | Dahil              |  Evet                                                               |
-| Visual Studio Professional annual                                             | Dahil              |  Evet                                                               | 
-| Aylık Visual Studio Professional                                            | Yok         |                                                                    |
-| Visual Studio Test Pro                                                        | Yok         |                                                                    |
-| MSDN platformları                                                                | Yok         |                                                                    |
-| Visual Studio geliştirme temelleri                                                  | Yok         |                                                                    |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | Dahil              |  Evet                                                               |
-| Visual Studio Enterprise - FTE                                                | Dahil              |  Evet                                                               |
-| Visual Studio Enterprise - Microsoft iş ortağı ağı                          | Yok         |                                                                    |
-| Visual Studio Professional - Microsoft iş ortağı ağı                        | Yok         |                                                                    |
-| Visual Studio Enterprise – (standart) düşünün                                 | Yok         |                                                                    |
-| Visual Studio Enterprise – (Premium) düşünün                                  | Yok         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Dahil              |  Evet                                                               |
-| Microsoft yazılım ve Hizmetleri Eğitmen - sertifikalı                             | Yok         |                                                                    |
-| Microsoft yazılım ve Hizmetleri Geliştirici Eğitmen - sertifikalı                   | Dahil              |  Evet                                                               |
-
-<sup>1</sup>*değil satışı (NFR), Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP) içerir*   
-
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 
@@ -53,16 +25,15 @@ Windows Geliştirici hesabınızı kullanmak için bir hesap ayarlamanızı veya
 
 Bu işlem için bir "özel" tarayıcı penceresi oluşturmanızı öneririz.  Örneğin, Google Chrome içinde yeni bir "incongnito" penceresi oluşturun.  Internet Explorer'da yeni bir "InPRivate" penceresi oluşturun.
 
-1.  Oturum [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Windows Geliştirici hesabı kutucuğu Araçlar bölümünde bulun ve tıklayın **kodunu Al** avantajı döşemenin altındaki bağlantıyı.  Kodunu panonuza kopyalayın ve ardından **etkinleştirme**. 
 
     ![Windows Geliştirici avantajı döşeme](_img\vs-windows-dev\vs-windows-dev-tile.png)
 
-2.  Üzerinde [https://developer.microsoft.com](https://developer.microsoft.com) kayıt işlemine başlamak site.  Tıklatın **kaydolun** devam etmek için. 
+2.  Üzerinde [ https://developer.microsoft.com ](https://developer.microsoft.com) kayıt işlemine başlamak site.  Tıklatın **kaydolun** devam etmek için. 
 
     ![Windows Geliştirici avantajı kaydı](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
-
 
 3.  Aboneliğiniz için oturum açın.  Birden çok hesabı varsa, Kurumsal aboneliğinizle ilişkili bir seçin. 
 4.  Sonraki sayfada yaşadığınız veya işletmenizin bulunduğu ülke veya bölgeyi seçin ve ardından **sonraki**. 
@@ -74,12 +45,23 @@ Bu işlem için bir "özel" tarayıcı penceresi oluşturmanızı öneririz.  Ö
 
     ![Windows Geliştirici avantajı kaydı](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
 
-
 10. Hesap bilgilerinizi gözden geçirin, uygulama geliştiricisi sözleşmesini gözden geçirin ve kabul ettiğiniz hüküm ve koşulları belirten onay kutusuna tıklayın.  Ardından **son**. 
 11. Tıklatın **panoya gitmek** Windows Geliştirici hesabınızı kullanmaya başlamak için!
 
-## <a name="faq"></a>SSS
-*Burada Güncelleştirmeleri denetle*
+## <a name="eligibility"></a>Uygunluk
+| Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standart, yıllık bulut)   | Toplu Lisans, Azure, perakende, seçili NFR<sup>1</sup> | Dahil       |  Evet|
+| Visual Studio Professional (standart, yıllık bulut) | Toplu Lisans, Azure, perakende                                       | Dahil                                                            |Evet|
+| Visual Studio Test uzmanı (standart)                         | Toplu Lisans, perakende                                              | Yok                                            |  Yok|
+| MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              |  Yok                                            |  Yok|
+| Visual Studio Dev Essentials | Yok  | Yok                                            |  Yok|
+| Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
+
+<sup>1</sup>*içerir: satışı (NFR), FTE, Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve Hizmetleri geliştirici için değil.   Dışlar: Microsoft iş ortağı ağı (MPN) düşünün, Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD), MCT yazılım ve Hizmetleri.*
+
+Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
+
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  Windows Geliştirici hesabınızı kullanarak Yardım gerekiyor mu?  Kullanıma [Destek](https://developer.microsoft.com/windows/support) kaynaklardaki [Windows Geliştirme Merkezi](https://developer.microsoft.com/windows).

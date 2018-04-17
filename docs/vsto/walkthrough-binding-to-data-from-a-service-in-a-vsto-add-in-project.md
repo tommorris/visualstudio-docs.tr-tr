@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Veri bağlamanın bir VSTO içinde hizmet eklenti proje | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Veri bağlamanın bir VSTO içinde hizmet eklenti proje | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], scrolling database records
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 386a8c14ebb831a47c6d08d6fd45f9c3d614263d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a89b9455051031b3faa0a44102f2fe97dca97d89
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>İzlenecek yol: Bir VSTO eklenti projesindeki içinde hizmetinden veri bağlama
   Konak denetimleri VSTO eklentisi projelerine veri bağlayabilirsiniz. Bu kılavuz, Microsoft Office Word belgesine denetimleri ekleme, MSDN içerik hizmetinden alınan verilere denetimler bağlama ve çalışma zamanında olaylara yanıt gösterilmiştir.  
@@ -44,7 +43,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]veya [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] veya [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
 ## <a name="creating-a-new-project"></a>Yeni proje oluşturma  
  İlk adım bir Word VSTO eklenti projesi oluşturmaktır.  
@@ -68,7 +67,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  İçinde **adresi** alan, şu URL'yi yazın:  
   
-     **http://Services.msdn.microsoft.com/ContentServices/contentservice.asmx**  
+     **http://services.msdn.microsoft.com/ContentServices/ContentService.asmx**  
   
 4.  tıklatın **Git**.  
   

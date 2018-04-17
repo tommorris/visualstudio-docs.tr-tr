@@ -1,22 +1,22 @@
 ---
-title: "Kodlanmış UI testleri Visual Studio'da düzenleme | Microsoft Docs"
+title: Kodlanmış UI testleri Visual Studio'da düzenleme | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 77aa1fd259d671e4ba97eaa6eef29bbff87c18bf
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 942d532aa2ee370b65ae8dfb81a5a383b8c68cc2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Kodlanmış UI Test Düzenleyicisi'ni Kullanarak Kodlanmış UI Testlerini Düzenleme
 Kodlanmış UI Test Düzenleyicisi'ni kolayca kodlanmış UI testleri değiştirmenize olanak tanır. Kodlanmış UI Test Düzenleyicisi'ni kullanarak bulun, görüntülemek ve test yöntemleri ve UI eylemlerini özelliklerini düzenleyin. Ayrıca, görüntülemek ve bunların karşılık gelen denetimleri düzenlemek için kullanıcı Arabirimi denetim eşlemesi kullanabilirsiniz.
@@ -28,7 +28,7 @@ Kodlanmış UI Test Düzenleyicisi'ni kolayca kodlanmış UI testleri değiştir
 ## <a name="why-should-i-do-this"></a>Neden bunu yapmam gerekir?
  Kodlanmış UI Test Düzenleyicisi'ni kullanarak daha hızlı ve kod düzenleyicisini kullanarak kodlanmış UI test yöntemlerinizi kod düzenleme daha etkilidir. Kodlanmış UI Test Düzenleyicisi ile hızla bulup UI eylemlerini ve denetimleri ile ilgili özellik değerlerini değiştirmek için araç ve kısayol menüleri kullanabilirsiniz. Örneğin, aşağıdaki komutları gerçekleştirmek için kodlanmış UI Test Düzenleyicisi araç kullanabilirsiniz:
 
- ![UI Test Edito](../test/media/uitesteditor.png "UITestEditor")
+ ![UI Test Düzenleyicisi](../test/media/uitesteditor.png "UITestEditor")
 
 1.  [Bul](../ide/finding-and-replacing-text.md) UI eylemlerini ve denetimlerini bulmanıza yardımcı olur.
 
@@ -71,7 +71,7 @@ Visual Studio Enterprise sürümünü 2012'den önceki kullanıyor. Kodlanmış 
 
  UI eylem özelliklerini değiştirmek için **UI eylem** bölmesinde UI eylem özelliklerini, select düzenlemek istediğiniz bir UI eyleminden içeren test yöntemi genişletin ve ardından Özellikler penceresini kullanarak özelliklerini değiştirin.
 
- Örneğin, bir sunucu kullanılamaz ve Web tarayıcınız ile ilişkili bir UI eyleminden sahip belirten **'http://Contoso1/default.aspx' Web sayfasına gidin**, URL'ye değişebilir `'http://Contoso2/default.aspx'`.
+ Örneğin, bir sunucu kullanılamaz ve Web tarayıcınız ile ilişkili bir UI eyleminden sahip belirten **Web sayfasına gidin 'http://Contoso1/default.aspx'**, URL'ye değişebilir `'http://Contoso2/default.aspx'`.
 
  ![Denetim Özellikleri](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")
 
@@ -120,7 +120,7 @@ Visual Studio Enterprise sürümünü 2012'den önceki kullanıyor. Kodlanmış 
 
 - Yeni yöntemi yeniden adlandırabilirsiniz. UI Eylemler bölmesinde seçin ve Seç **yeniden adlandırma** kodlanmış UI Test Düzenleyicisi araç çubuğu düğmesi.
 
-     veya
+     -veya-
 
      Yeni test yöntemi ve seçmek için kısayol menüsünü açın **yeniden adlandırma**.
 

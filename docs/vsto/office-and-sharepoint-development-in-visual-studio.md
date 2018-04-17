@@ -1,12 +1,10 @@
 ---
-title: "Office ve Visual Studio'da SharePoint geliştirme | Microsoft Docs"
-ms.custom: 
+title: Office ve Visual Studio'da SharePoint geliştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - Office, development with Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b0692b0320a8741351391f82b694089910bae4f8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 03863489f17672e1d72074633d353b041e022b78
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio'da Office ve SharePoint Geliştirme
   Microsoft Office ve SharePoint basit bir uygulama oluşturarak genişletebilir ve kullanıcılar indirir, eklenti [Office deposu](https://store.office.com/) ya da bir kuruluş katalog veya .NET Framework tabanlı bir çözümdür, kullanıcıların oluşturarak yüklemek bir bilgisayar.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Bir SharePoint çözüm oluşturma](#Solutions)  
   
-##  <a name="Apps"></a>Office ve SharePoint için eklentileri oluşturma  
+##  <a name="Apps"></a> Office ve SharePoint için eklentileri oluşturma  
  Office 2013 ve SharePoint 2013 oluşturmak, dağıtmak ve Office ve SharePoint genişletmek eklentiler paraya çevirme yardımcı olan yeni bir eklenti modeli sunar.  Bu eklenti Office veya SharePoint Online çalıştırabilir ve kullanıcılar bunlarla birçok aygıtlardan etkileşim kurabilirsiniz.  
   
  Yeni nasıl öğrenmek [Office eklenti modeli](https://msdn.microsoft.com/library/office/jj220082.aspx) kullanıcılarınız için Office deneyimi genişletmek için.  
@@ -92,7 +91,7 @@ ms.lasthandoff: 01/10/2018
 |Bir SharePoint eklentisi veya bir SharePoint çözüm oluşturmak isteyip istemediğinizi seçin.|[SharePoint eklentiler ve SharePoint çözümleri arasında seçim yapma](https://msdn.microsoft.com/library/office/jj163114.aspx)|  
 |Napa Office 365 geliştirme araçları hakkında daha fazla bilgi edinin.|[Napa Office 365 geliştirme araçları](https://msdn.microsoft.com/library/dn974046.aspx)|  
   
-##  <a name="Add-ins"></a>Bir VSTO eklentisi oluşturma  
+##  <a name="Add-ins"></a> Bir VSTO eklentisi oluşturma  
  Bir VSTO eklentisinin Office 2007 veya Office 2010'u hedefleyecek şekilde ya da Office 2013 ve Office 2016 ile Office eklentileri olası nedir ötesine genişletmek için oluşturun. VSTO eklentilerini yalnızca masaüstünde çalıştırın. Kullanıcıların VSTO eklentileri, dağıtmak ve Destek genellikle daha zor bulunmaları yüklemeniz gerekir.  Ancak, VSTO eklentinizi daha yakından Office ile tümleştirilebilir. Örneğin, bunu sekmeler ve denetimler için Office Şerit ekleyin ve belgelerin birleştirilmesi veya grafikleri değiştirme gibi gelişmiş bir otomatikleştirme görevleri gerçekleştirin. Office nesnelerle etkileşim kurmak için C# ve Visual Basic kullanın ve .NET Framework yararlanın.  
   
  Burada, hangi bir VSTO eklentisinin yapmak için bir örnek verilmiştir. Bu VSTO eklentisinin PowerPoint'e Şerit denetimleri, özel görev bölmesini ve bir iletişim kutusu ekler.  
@@ -106,7 +105,7 @@ ms.lasthandoff: 01/10/2018
 |İçinde Office ve genişletmek için kullanabileceğiniz, bir VSTO eklentisinin veya bir Office Eklentisi kullanıp kullanmayacağınızı karar farklı yolları karşılaştırın.|[Office eklentileri, VSTO ve VBA için yol haritası](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
 |Bir VSTO eklentisinin oluşturun.|[Visual Studio ile VSTO eklentileri oluşturma](https://msdn.microsoft.com/library/jj620922.aspx)|  
   
-##  <a name="Solutions"></a>Bir SharePoint çözüm oluşturma  
+##  <a name="Solutions"></a> Bir SharePoint çözüm oluşturma  
  Hedef SharePoint Foundation 2010 ve SharePoint Server 2010 veya SharePoint 2013 ve SharePoint 2016 yolla SharePoint eklentisi ile olası olanların ötesine genişletmek için bir SharePoint çözüm oluşturun.  
   
  SharePoint çözümleri şirket içi SharePoint grubunun sunucuları gerektirir. Yöneticiler bunları yüklemeniz ve çözümleri SharePoint'te yürüttüğünden, sunucu performansını etkileyebilir. Ancak, çözümleri daha derin SharePoint nesnelerine erişimi sağlar. Ayrıca, bir SharePoint çözüm oluşturduğunuzda, .NET Framework yararlanır ve SharePoint nesnelerle etkileşim kurmak için C# ve Visual Basic kullanabilirsiniz.  

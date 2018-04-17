@@ -1,12 +1,10 @@
 ---
-title: "Word nesne modeline genel bakış | Microsoft Docs"
-ms.custom: 
+title: Word nesne modeline genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a6f9163543272d784b0f8347acf275f74023ccf8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: aae1d5648b2db72a4e5ddd6b792f2b3aed846e76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="word-object-model-overview"></a>Word Nesne Modeline Genel Bakış
   Visual Studio'da Word çözümleri geliştirdiğinizde, Word nesne modeli ile etkileşim. Bu nesne modeli sınıfları ve Word için birincil birlikte çalışma derlemesindeki sağlanan ve içinde tanımlanan arabirimleri oluşur <xref:Microsoft.Office.Interop.Word> ad alanı.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Sekmelerle Çalışma](../vsto/working-with-tables.md)  
   
-##  <a name="understanding"></a>Word nesne modelini anlama  
+##  <a name="understanding"></a> Word nesne modelini anlama  
  Word ile etkileşim kurabilen nesneleri yüzlerce sağlar. Bu nesneler kullanıcı arabirimini yakından takip eden hiyerarşik olarak düzenlenir. Hiyerarşisinin en üstünde olduğu <xref:Microsoft.Office.Interop.Word.Application> nesnesi. Bu nesne Word'ün geçerli örneğini temsil eder. <xref:Microsoft.Office.Interop.Word.Application> Nesnesini içeren <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>, ve <xref:Microsoft.Office.Interop.Word.Range> nesneleri. Bu nesnelerin her biri birçok yöntem ve ve nesnesi ile etkileşime için erişebileceği özellikler vardır.  
   
  Aşağıdaki çizimde, bu nesnelerin bir görünüm Word nesne modeli hiyerarşi içinde gösterir.  
@@ -112,13 +111,13 @@ ms.lasthandoff: 01/10/2018
   
 -   Tasarım zamanında yer işareti adı verebilirsiniz.  
   
--   <xref:Microsoft.Office.Interop.Word.Bookmark>nesneleri belgeyle kaydedilir ve böylece kod çalışmadığında veya belge kapatıldığında silinmez.  
+-   <xref:Microsoft.Office.Interop.Word.Bookmark> nesneleri belgeyle kaydedilir ve böylece kod çalışmadığında veya belge kapatıldığında silinmez.  
   
 -   Yer işaretleri gizli ya da ayarlayarak görünür hale <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> özelliği <xref:Microsoft.Office.Interop.Word.View> nesnesini **false** veya **doğru**.  
   
  Visual Studio genişletir <xref:Microsoft.Office.Interop.Word.Bookmark> sağlayarak nesne <xref:Microsoft.Office.Tools.Word.Bookmark> konak kontrolü. <xref:Microsoft.Office.Tools.Word.Bookmark> Konak kontrolü yerel gibi davranır <xref:Microsoft.Office.Interop.Word.Bookmark>, ancak ek olaylar ve veri bağlama özellikleri vardır. Bir Windows formunda metin kutusu denetimine veri bağlama aynı şekilde verileri bir belgedeki yer işareti denetimi bağlayabilirsiniz. Daha fazla bilgi için bkz: [yer işareti denetimi](../vsto/bookmark-control.md).  
   
-##  <a name="WordOMDocumentation"></a>Word nesne modeli belgelerini kullanma  
+##  <a name="WordOMDocumentation"></a> Word nesne modeli belgelerini kullanma  
  Word nesne modeli hakkında tam bilgi için Word birincil birlikte çalışma derlemesi (PIA) başvuru ve Visual Basic for Applications (VBA) nesne modeli başvurusu başvurabilirsiniz.  
   
 ### <a name="primary-interop-assembly-reference"></a>Birincil birlikte çalışma derleme başvurusu  

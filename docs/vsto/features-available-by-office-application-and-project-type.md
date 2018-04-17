@@ -1,12 +1,10 @@
 ---
-title: "Office uygulaması ve proje türüne göre kullanılabilen özellikler | Microsoft Docs"
-ms.custom: 
+title: Office uygulaması ve proje türüne göre kullanılabilen özellikler | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b79c7a913e8ce06b1d833f78aad9e8565d54aff2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff8128f9c142193d9fcde2f139e29a3fb4f3326e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Office Uygulaması ve Proje Türüne Göre Kullanılabilir Özellikler
   Visual Studio aşağıdaki türleri dahil olmak üzere Microsoft Office uygulamaları, farklı iş senaryolarını desteklemek proje şablonları çeşitli türleri vardır:  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
   
 -   VSTO eklentileri.  
   
- Tüm uygulamalar her proje türü kullanabilirsiniz. Örneğin, yalnızca Microsoft Office Word ve Microsoft Office Excel için belge düzeyi projelerine kullanılabilir. Benzer şekilde, bazı özellikler yalnızca belirli türdeki projeleri veya uygulamalar için kullanılabilir. Örneğin, Eylemler bölmesinde yalnızca belge düzeyi projelerine kullanılabilir ve Şerit uzantıları sadece bazı uygulamalar için kullanılabilir. Farklı proje türleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Tüm uygulamalar her proje türü kullanabilirsiniz. Örneğin, yalnızca Microsoft Office Word ve Microsoft Office Excel için belge düzeyi projelerine kullanılabilir. Benzer şekilde, bazı özellikler yalnızca belirli türdeki projeleri veya uygulamalar için kullanılabilir. Örneğin, Eylemler bölmesinde yalnızca belge düzeyi projelerine kullanılabilir ve Şerit uzantıları sadece bazı uygulamalar için kullanılabilir. Farklı proje türleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 > [!NOTE]  
 >  Office proje şablonları yalnızca bazı sürümlerinde kullanılabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Daha fazla bilgi edinmek için bkz. [Bir Bilgisayarı Office Çözümleri Geliştirmek Üzere Yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -69,8 +68,8 @@ ms.lasthandoff: 01/10/2018
 |Görsel belge Tasarımcısı.|Belge düzeyi projelerine.|[Visual Studio Ortamında Office Projeleri](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Başlarken &#40; Office geliştirme Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Başlarken &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)   
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
  [Outlook Form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   

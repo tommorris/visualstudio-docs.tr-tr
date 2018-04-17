@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: bir SharePoint uygulama profili oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: bir SharePoint uygulama profili oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 91952e2f10f025568d356149f63bff63e0c0b1fc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f6eb4e9f78a9defaafb774551e301d6101cc40d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>İzlenecek Yol: SharePoint Uygulaması için Profil Oluşturma
   Bu kılavuz, profil oluşturma araçları Visual Studio'da SharePoint uygulaması performansını iyileştirmek için nasıl kullanılacağını gösterir. Örnek Uygulama özellik olay alıcısı performansını düşürür bir boşta döngü içeren bir SharePoint özelliğini olay alıcıdır. Visual Studio profil oluşturucu bulun ve proje en pahalı (yavaş gerçekleştirerek) parçası olarak da bilinen ortadan kaldırmanıza olanak tanır *etkin yolunuzda*.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
   
--   Microsoft Windows ve SharePoint sürümleri desteklenir. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Microsoft Windows ve SharePoint sürümleri desteklenir. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Seçin **son** düğmesi. Proje görünür **Çözüm Gezgini**.  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a>Bir özellik ve özellik olay alıcısı ekleme  
+##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> Bir özellik ve özellik olay alıcısı ekleme  
  Ardından, bir özellik proje özelliği için olay alıcı birlikte ekleyin. Bu olay alıcısı profili için kodu içerir.  
   
 #### <a name="to-add-a-feature-and-feature-event-receiver"></a>Bir özellik ve özellik olay alıcısı eklemek için  
@@ -191,7 +190,7 @@ ms.lasthandoff: 01/10/2018
   
 9. Projeyi kaydedin.  
   
-##  <a name="BKMK_ConfigSharePointApp"></a>Yapılandırma ve SharePoint uygulaması dağıtma  
+##  <a name="BKMK_ConfigSharePointApp"></a> Yapılandırma ve SharePoint uygulaması dağıtma  
  SharePoint Proje hazırdır, yapılandırın ve SharePoint sunucusuna dağıtın.  
   
 #### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Yapılandırma ve SharePoint uygulaması dağıtma  
@@ -214,7 +213,7 @@ ms.lasthandoff: 01/10/2018
   
      Sihirbazın sunucu uygulama profilini sağlar, görüntüler **performans Gezgini** penceresi ve ardından derlemeleri dağıtır ve SharePoint uygulaması çalıştırır.  
   
-##  <a name="BKMK_RunSPApp"></a>SharePoint uygulaması çalıştırma  
+##  <a name="BKMK_RunSPApp"></a> SharePoint uygulaması çalıştırma  
  SharePoint'teki özelliği etkinleştir tetikleme `FeatureActivation` çalıştırmak için olay kod.  
   
 #### <a name="to-run-the-sharepoint-application"></a>SharePoint uygulamayı çalıştırmak için  
@@ -235,7 +234,7 @@ ms.lasthandoff: 01/10/2018
   
      SharePoint kapattıktan sonra Profil Oluşturucu oluşturur ve bir örnek profil oluşturma raporu görüntüler ve .vsp dosyası olarak kaydeder **ProfileTest** projenin klasör.  
   
-##  <a name="BKMK_ViewResults"></a>Görüntüleme ve profil oluşturma sonuçları yorumlama  
+##  <a name="BKMK_ViewResults"></a> Görüntüleme ve profil oluşturma sonuçları yorumlama  
  Çalıştırın ve SharePoint uygulama profili, test sonuçlarını görüntüleyin.  
   
 #### <a name="to-view-and-interpret-the-profiling-results"></a>Görüntülemek ve profil oluşturma sonuçları yorumlamak için  

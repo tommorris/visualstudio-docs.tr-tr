@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: program aracılığıyla arama ve belgelerdeki metni değiştirme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: program aracılığıyla arama ve belgelerdeki metni değiştirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text searches
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 658da08ee7d61651b02d7d42158637dad7ab16c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9967fb6bb0b9ecf377763c25037089bf600145c6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text--in-documents"></a>Nasıl yapılır: Belgelerde Program Aracılığıyla Metin Arama ve Değiştirme
   <xref:Microsoft.Office.Interop.Word.Find> Nesne her ikisi de üyesi olduğu <xref:Microsoft.Office.Interop.Word.Selection> ve <xref:Microsoft.Office.Interop.Word.Range> nesneleri ve bunlardan birini Microsoft Office Word belgelerinde metin aramak için kullanabilirsiniz. Değiştir komutu, Bul komutu uzantısıdır.  
@@ -113,11 +112,11 @@ ms.lasthandoff: 01/10/2018
   
 2.  Kullanım <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Find> bulunan her öğenin değiştirmek için nesne. Hangi öğelerin değişeceğini belirtmek için kullanın *Değiştir* parametresi. Bu parametre şunlardan biri olabilir <xref:Microsoft.Office.Interop.Word.WdReplace> değerler:  
   
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll>tüm öğeleri değiştirir.  
+    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> tüm öğeleri değiştirir.  
   
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone>bulunan öğelerin hiçbiri yerini alır.  
+    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> bulunan öğelerin hiçbiri yerini alır.  
   
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne>bulunan ilk öğeyi değiştirir.  
+    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> bulunan ilk öğeyi değiştirir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: program aracılığıyla arama seçeneklerini ayarlama Word'de](../vsto/how-to-programmatically-set-search-options-in-word.md)   

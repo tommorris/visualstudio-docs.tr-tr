@@ -1,12 +1,10 @@
 ---
 title: "&lt;postAction&gt; öğesi (Visual Studio'da Office Geliştirme) | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - postAction element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 63e15e2a02ac58ee385e38d5ed2d435c0e80dddb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2934b0ad761dcd512b21e2424515c06fb896dda5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; öğesi (Visual Studio'da Office Geliştirme)
   `postAction` Öğesinin `vstav3` ad alanında `entrypoint` öğeleri ve tüm `postActionData` Office çözümleri yüklendikten sonra çalıştırmak dağıtım sonrası eylemleri ile ilişkili olan öğeler.  
@@ -43,13 +42,13 @@ ms.lasthandoff: 01/10/2018
   
  `postAction` Öğesi özniteliklere sahip değildir.  
   
- `postAction`Aşağıdaki öğeler vardır.  
+ `postAction` Aşağıdaki öğeler vardır.  
   
 ### <a name="entrypoint"></a>EntryPoint  
- İsteğe bağlı. Rolü `entryPoint` öğesinde `vstav3` ad alanı tanımlanmış [&#60; giriş noktaları &#62; Öğe &#40; Office geliştirme Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ İsteğe bağlı. Rolü `entryPoint` öğesinde `vstav3` ad alanı tanımlanmış [ &#60;giriş noktaları&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ### <a name="postactiondata"></a>postActionData  
- İsteğe bağlı. Rolü `postActionData` öğesinde `vstav3` ad alanı tanımlanmış [&#60; postActionData &#62; Öğe &#40; Office geliştirme Visual Studio &#41; ](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
+ İsteğe bağlı. Rolü `postActionData` öğesinde `vstav3` ad alanı tanımlanmış [ &#60;postActionData&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
   
 ## <a name="post-deployment-action-example"></a>Dağıtım sonrası eylemi örneği  
   

@@ -3,17 +3,17 @@ title: Visual Studio Aboneliklerde Pluralsight avantajı | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 1/4/2018
+ms.date: 01/04/2018
 ms.topic: Get-Started-Article
 description: Visual Studio aboneliğinizde yer alan Pluralsight eğitim aboneliği hakkında bilgi edinin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 973909a6ebc2730bfa7f4b9a0c576960175a8b7e
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 8f1a8485f71bb1d9162077730d3fca42478e45a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde Pluralsight eğitim avantajları
 
@@ -23,43 +23,16 @@ Aşağıdaki tabloda, her Visual Studio abonelik türü için hangi Pluralsight 
 
  Abonelik sahip oldukları, Visual Studio aboneliğiniz ile sağlanan abonelik kullanmak mümkün olacaktır Pluralsight önceden kullanmış olan tüm abonelerin türüne bağlı olarak yeni Pluralsight avantajını sunar. Ek Pluralsight eğitim avantajları kullanmak uygun değilse, Pluralsight Web sitesinde avantajı etkinleştirmeye çalıştığınızda bir bildirim alırsınız.  
 
-## <a name="eligibility"></a>Uygunluk
-| Abonelik düzeyinde / Program                                 | Faydası               | Yenilenebilir?                                                         |
-|--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise standart                            | 6 aylığına abonelik | Hayır.  12 ay sınırlı katalog süre sonu kullanılabilir. |
-| Visual Studio Enterprise yıllık                              | 6 aylığına abonelik | Hayır.  12 ay sınırlı katalog süre sonu kullanılabilir. |
-| Aylık Visual Studio Enterprise                             | Yok         |                                                                    |
-| Visual Studio Professional Standard                          | 3 ay abonelik | Hayır.  12 ay sınırlı katalog süre sonu kullanılabilir. |
-| Visual Studio Professional annual                            | 3 ay abonelik | Hayır.  12 ay sınırlı katalog süre sonu kullanılabilir. |
-| Aylık Visual Studio Professional                           | Yok         |                                                                    |
-| Visual Studio Test Pro                                       | 3 ay abonelik | Hayır.  12 ay sınırlı katalog süre sonu kullanılabilir. |
-| MSDN platformları                                               | 3 ay abonelik | Hayır.  12 ay sınırlı katalog süre sonu kullanılabilir. |
-| Visual Studio Dev Essentials                                 | 3 ay abonelik | Hayır.                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                               | Yok         |                                                                    |
-| Visual Studio Enterprise - FTE                               | Yok         |                                                                    |
-| Visual Studio Enterprise - MPN                               | Yok         |                                                                    |
-| Visual Studio Professional - MPN                             | Yok         |                                                                    |
-| Visual Studio Enterprise - MVP/RD                            | Yok         |                                                                    |
-| Visual Studio Enterprise – (standart) düşünün                | Yok         |                                                                    |
-| Visual Studio Enterprise – (Premium) düşünün                 | Yok         |                                                                    |
-| Visual Studio Enterprise – BizSpark                          | Yok         |                                                                    |
-| Visual Studio Enterprise – MCT yazılım ve Hizmetleri           | Yok         |                                                                    |
-| Visual Studio Enterprise – MCT yazılım ve Hizmetleri Geliştirici | Yok         |                                                                    |
-<sup>1</sup>*değil satışı (NFR), Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP) içerir*   
-
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
- 
-
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 1. Aboneliğinizi etkinleştirmek için bağlanmak [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ve tıklayın **kodunu Al** Professional geliştirme bölümünde bulunan Pluralsight avantajı kutucuğa bağlantı. 
 
     ![Pluralsight avantajı döşeme](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
 
-> [!IMPORTANT]
-> Pluralsight avantajı döşeme "Kodunu Al" bağlantısına tıkladığınızda, aşağıdaki iletiyi alabilirsiniz:
->
-> **"Lütfen unutmayın: Visual Studio aboneliğiniz daha önce farklı bir Pluralsight teklif etkinleştirdiyseniz, bu kod, yeni bir Pluralsight hesabı oluşturmak etkinleştirmemeniz."**
+    > [!IMPORTANT]
+    > Pluralsight avantajı döşeme "Kodunu Al" bağlantısına tıkladığınızda, aşağıdaki iletiyi alabilirsiniz:
+    >
+    > **"Lütfen unutmayın: Visual Studio aboneliğiniz daha önce farklı bir Pluralsight teklif etkinleştirdiyseniz, bu kod, yeni bir Pluralsight hesabı oluşturmak etkinleştirmemeniz."**
 
 2. Kupon kodu başarıyla alındıktan bir bildirim alırsınız.  Tıklatın **etkinleştirme**.   
 
@@ -82,8 +55,8 @@ Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visu
 
     ![Pluralsight avantajı onayı](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
 
-> [!NOTE]
-> Hesabınıza yeni teklifleri kullanmak uygun değilse, aldığınız e-posta hesabınızı uygun olmadığından oluşturulurken bir sorunla karşılaşıldı anlatılmıştır.  Ayrıca, kimin, hesabınız hakkında yaptığınız herhangi bir sorunuz yanıtlayabilir Pluralsight'in Destek ekibine başvurun yardımcı olacak bilgiler de içerecektir.
+    > [!NOTE]
+    > Hesabınıza yeni teklifleri kullanmak uygun değilse, aldığınız e-posta hesabınızı uygun olmadığından oluşturulurken bir sorunla karşılaşıldı anlatılmıştır.  Ayrıca, kimin, hesabınız hakkında yaptığınız herhangi bir sorunuz yanıtlayabilir Pluralsight'in Destek ekibine başvurun yardımcı olacak bilgiler de içerecektir.
 
 6.  Hesabınız başarıyla oluşturulduktan sonra aldığınız e-posta adınızı içeren ve bir parola oluşturmanızı isteyin.  Parolanızı girin, yeniden onaylamak ve'girin **Pluralsight için oturum açma**.
 
@@ -97,14 +70,31 @@ Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visu
 
     ![Pluralsight avantajı giriş](_img\vs-pluralsight\vs-pluralsight-home.png)
 
-## <a name="faq"></a>SSS
+## <a name="eligibility"></a>Uygunluk
+| Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standart, yıllık bulut)   | Toplu Lisans, Azure, perakende | 6 ay       |  Hayır<sup>2</sup>|
+| Visual Studio Professional (standart, yıllık bulut) | Toplu Lisans, Azure, perakende                                       | 3 ay                                                           |Hayır<sup>2</sup>         |
+| Visual Studio Test uzmanı (standart)                         | Toplu Lisans, perakende                                              | 3 ay                                                           |Hayır<sup>2</sup>         |
+| MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | 3 ay                                                           |Hayır<sup>2</sup>         |
+| Visual Studio Dev Essentials | Yok  | 3 ay |Hayır|
+| Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                  |Yok|
+| Visual Studio Enterprise (NFR<sup>1</sup> ) | Program                                       | Yok                                  |Yok|
+<sup>1</sup>*içerir: değil satışı (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve Hizmetleri geliştirici, MCT yazılım ve hizmet için Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı Ağ (MPN) FTE, düşünün.* 
+
+<sup>2</sup>*Pluralsight abonelik sona erme üç çalışma alanları birinde 50 seçili Pluralsight kursları erişim 12 ay almak uygun olabilir.    Aşağıdaki sık sorulan sorular daha fazla ayrıntı için bkz.*
+
+Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
+
+## <a name="frequently-asked-questions"></a>Sık sorulan sorular
+
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>S: bir Visual Studio Enterprise abonelik sahip, ancak Pluralsight döşeme avantajları sayfasında görmüyorum. Ne oldu? 
 Y: tüm Visual Studio Enterprise abonelikleri Pluralsight avantajı içerir.  Denetleme [eligility tablo](#eligibility) aboneliğinizi uygun olup olmadığını görmek için tablo.
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>S: Pluralsight Aboneliğimi dolmadan ne olur?  
 A: sonunda boş Pluralsight aboneliğinizi, iki seçeneğiniz vardır:
-1. Ücretsiz 12 aylık erişmek (denetleyin [eligility tablo](#eligibility) aboneliğinizi uygun olup olmadığını görmek için tablo) dahil olmak üzere üç temel alanlar birinde 50 kurslar sınırlı bir dizi: uygulama geliştirme buluttaki; AI, machine learning ve veri; ve bulutta DevOps. Gözcü tarihten sonra ücretsiz erişiminizi talep Pluralsight bir e-posta için. Gördüğünüz bir [kurslar listesi](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit) kısmi her kitaplık altında bulunabilir.
-2. Kendi tam indirmelere kataloğa hangi erişmenizi % 10 indirimle Pluralsight doğrudan bir abonelik satın seçebilirsiniz.  Temasa [Pluralsight](http://www.pluralsight.com) tam Ayrıntılar için.  
+- Ücretsiz 12 aylık erişmek (denetleyin [eligility tablo](#eligibility) aboneliğinizi uygun olup olmadığını görmek için tablo) dahil olmak üzere üç temel alanlar birinde 50 kurslar sınırlı bir dizi: uygulama geliştirme buluttaki; AI, machine learning ve veri; ve bulutta DevOps. Gözcü tarihten sonra ücretsiz erişiminizi talep Pluralsight bir e-posta için. Gördüğünüz bir [kurslar listesi](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit) kısmi her kitaplık altında bulunabilir.
+- Kendi tam indirmelere kataloğa hangi erişmenizi % 10 indirimle Pluralsight doğrudan bir abonelik satın seçebilirsiniz.  Temasa [Pluralsight](http://www.pluralsight.com) tam Ayrıntılar için.  
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  [Pluralsight Yardım Merkezi](https://help.pluralsight.com/help) Pluralsight kurslar sürüyor veya Pluralsight Web sitesini kullanarak Yardım sağlar. 

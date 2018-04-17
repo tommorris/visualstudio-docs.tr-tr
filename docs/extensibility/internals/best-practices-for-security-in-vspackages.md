@@ -1,27 +1,25 @@
 ---
-title: "En iyi uygulamalar VSPackages güvenliği | Microsoft Docs"
-ms.custom: 
+title: En iyi uygulamalar VSPackages güvenliği | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio SDK]
 - security best practices, VSPackages
 - best practices, security
 ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 71f06fdd67e4f1789637c2d935f0d25a06eb9863
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 689c85e090e44612a87474e8c77dc0e146706e84
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>VSPackages güvenlik için en iyi yöntemler
 Yüklemek için [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , bilgisayarınızda, yönetici kimlik bilgilerine sahip bir bağlamda çalıştırması gerekir. Güvenlik ve dağıtımını temel birimi bir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uygulama [VSPackages](../../extensibility/internals/vspackages.md). Kullanarak bir VSPackage kaydedilmelidir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], yönetici kimlik bilgilerini de gerektirir.  

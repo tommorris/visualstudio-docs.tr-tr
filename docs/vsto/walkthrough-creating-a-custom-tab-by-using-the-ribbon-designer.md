@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cdbbd7ee286c97a986e89ccdb5bdcfdde4ef7578
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7fdae2b6a867b6d87c6579fc1d24f9d0ebd07cf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>İzlenecek Yol: Şerit Tasarımcısını Kullanarak Özel Sekme Oluşturma
   Şerit Tasarımcısını kullanarak, özel sekme oluşturabilir ve ardından ekleyin ve onu denetimlere getirin.  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio Tasarımcısı'nda yeni bir çalışma kitabı açılır ve ekler **ne MyExcelRibbon** için proje **Çözüm Gezgini**.  
   
-##  <a name="BKMK_CreateActionsPanes"></a>Eylemler bölmeleri oluşturma  
+##  <a name="BKMK_CreateActionsPanes"></a> Eylemler bölmeleri oluşturma  
  İki Özel Eylemler bölmeleri projenize ekleyin. Daha sonra gösterme ve gizleme bu Eylemler bölmeleri özel sekmesine düğmeleri ekler.  
   
 #### <a name="to-create-actions-panes"></a>Eylemler bölmeleri oluşturmak için  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  1 ile ikinci eylemler bölmesini ve etiket oluşturmak için 5 arasındaki adımları yineleyin. Ayarlama **metin** İkinci etiketin özelliğini **Eylemler bölmesi 2**.  
   
-##  <a name="BKMK_CreateCustomTab"></a>Özel sekme oluşturma  
+##  <a name="BKMK_CreateCustomTab"></a> Özel sekme oluşturma  
  Office uygulaması tasarım yönergeleri kullanıcıların Office uygulama kullanıcı Arabirimi her zaman denetlemeleri biridir. Eylemler bölmeleri için bu özelliği eklemek için gösterir ve her özel sekme Şerit üzerindeki Eylemler bölmesinden gizleyen düğmeler ekleyebilirsiniz. Özel sekme oluşturmak için Ekle bir **Şerit (Görsel Tasarımcı)** proje öğesi. Tasarımcı ekleyin ve denetimleri getirin, denetim özelliklerini ayarlamak ve denetim olayları işlemek yardımcı olur.  
   
 #### <a name="to-create-a-custom-tab"></a>Özel sekme oluşturmak için  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 14. Ayarlama **etiket** özelliğine **Eylemler Bölmesini Gizle**.  
   
-##  <a name="BKMK_HideShowActionsPane"></a>Gizleme ve özel sekmesinde düğmeleri kullanarak Eylemler bölmeleri gösterme  
+##  <a name="BKMK_HideShowActionsPane"></a> Gizleme ve özel sekmesinde düğmeleri kullanarak Eylemler bölmeleri gösterme  
  Son adım, kullanıcıya yanıt kodu eklemektir. Olay işleyicileri ekleme <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> iki düğmelerin olayları ve <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> iki durumlu düğme olayı. Kod gizleme ve Eylemler bölmeleri gösterme etkinleştirmek için bu olay işleyicileri ekleyin.  
   
 #### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Eylemler bölmeleri özel sekmede düğmelerini kullanarak gösterme ve gizleme için  

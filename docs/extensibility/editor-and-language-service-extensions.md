@@ -1,27 +1,23 @@
 ---
-title: "Düzenleyici ve dil uzantıları hizmet | Microsoft Docs"
-ms.custom: 
+title: Düzenleyici ve dil uzantıları hizmet | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK]
 ms.assetid: 5653bac9-724f-4948-a820-68ce6aa96365
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59de764dfcb976dfac303f44a67340e117ae5e06
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d2fceb0487c23dc34d3f4f4937d7a5998340ae3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editor-and-language-service-extensions"></a>Düzenleyici ve dil hizmeti uzantıları
 Visual Studio kod düzenleyicisini çoğu özelliklerini genişletebilirsiniz. Düzenleyici, Windows Presentation Foundation (WPF) dayanır ve yönetilen kodda yazılır. Tasarımlar, Visual Studio'nun önceki sürümleri, bu tasarım farklıdır rağmen aynı özelliklerin çoğunu sağlar. Düzenleyiciyi genişletmek için Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanın.  

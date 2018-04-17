@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Belge düzeyi projede basit veri bağlama | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Belge düzeyi projede basit veri bağlama | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 95029c946939bf0918e15034625ad31c1e5897b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 939d45246ea36f4227a0b914210cb0470b325c20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>İzlenecek Yol: Belge Düzeyi Projede Basit Veri Bağlama
   Bu anlatımda bir belge düzeyi projede veri bağlama ile ilgili temel bilgiler gösterilir. Microsoft Office Excel adlandırılmış aralıkta bir SQL Server veritabanı bir tek veri alanına bağlı. İzlenecek yol da tablosundaki tüm kayıtları arasında kaydırma sağlayan denetimlerin nasıl ekleneceğini gösterir.  
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 -   Northwind SQL Server örnek veritabanı sunucusuyla erişim.  
   
@@ -181,7 +180,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  İlk kaydı hücrelerde görüntülendiğini doğrulamak **A1** ve **B1**.  
   
-3.  Tıklatın  **>**  (`Button3`) düğmesine tıklayın ve sonraki kaydın hücresinde göründüğünü doğrulayın **A1** ve **B1**.  
+3.  Tıklatın **>** (`Button3`) düğmesine tıklayın ve sonraki kaydın hücresinde göründüğünü doğrulayın **A1** ve **B1**.  
   
 4.  Diğer kaydırma düğmelerini kaydı beklendiği gibi değişiklikleri onaylamak için tıklatın.  
   

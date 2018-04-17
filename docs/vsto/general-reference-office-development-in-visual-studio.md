@@ -1,13 +1,10 @@
 ---
-title: "Genel başvuru (Visual Studio'da Office Geliştirme) | Microsoft Docs"
-ms.custom: 
+title: Genel başvuru (Visual Studio'da Office Geliştirme) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb41929716fe89e6723f55ce7b87c8dcc7a78bcc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a1bc2816f696d72fd8d574c452701698cc6b655d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Genel Başvuru (Visual Studio'da Office Geliştirme)
   Bu bölümde, Visual Studio'daki Microsoft Office Project hakkında teknik ayrıntılar içerir.  
@@ -40,14 +37,14 @@ ms.lasthandoff: 01/10/2018
  [Office Çözümleri İçin Dağıtım Bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)  
  Dağıtım bildirimleri kullanılan Office çözümleri nasıl birleştirileceğini açıklar.  
   
- [Kullanıcı arabirimi başvurusu &#40; Office geliştirme Visual Studio &#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
+ [Kullanıcı arabirimi başvurusu &#40;Visual Studio'da Office geliştirme&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
  Çeşitli iletişim kutularında, windows ve diğer kullanıcı arabirimleri görünen seçenekleri açıklayan konulara listeler.  
   
- [Hata iletileri &#40; Office geliştirme Visual Studio &#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
+ [Hata iletileri &#40;Visual Studio'da Office geliştirme&#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
  Office projeleri için hata iletileri açıklayan konulara listeler.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Başlarken &#40; Office geliştirme Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Başlarken &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Kurulum, proje şablonları, Office birincil birlikte çalışma derlemeleri ve Office geliştirme yenilikler hakkında bilgi için bağlantılar sağlar.  
   
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)  

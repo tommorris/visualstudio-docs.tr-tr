@@ -2,7 +2,7 @@
 title: Visual Studio'da kodunuzu test etmek için UI otomasyonunu kullanma | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUITest
 - vs.codedUITest.recorder
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - coded UI test
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4424db170240714ad3a74c84107e7a794a9dad54
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 9235cf218ab5eed64140f4ae1dc6e4d54ea73e1b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Kodunuzu Test Etmek için UI Otomasyonunu Kullanma
 
@@ -120,7 +120,7 @@ Hangi platformlar ve yapılandırmaları desteklenir kodlanmış UI testleri tar
 
 7. Test eylemleri ve onayları ayrıntılarını düzenleyin.
 
-     Open UIMap.uitest. Bu dosya kodlanmış UI testi Burada, kaydettiğiniz eylemleri herhangi bir dizi Düzenle yanı sıra onayları Düzen Düzenleyicisi'nde açılır.
+     UIMap.uitest açın. Bu dosya kodlanmış UI testi Burada, kaydettiğiniz eylemleri herhangi bir dizi Düzenle yanı sıra onayları Düzen Düzenleyicisi'nde açılır.
 
      ![Kodlanmış UI Test Düzenleyicisi'ni](../test/media/cuit_editor_edit.png "CUIT_Editor_edit")
 
@@ -220,7 +220,7 @@ Bazı durumlarda, kullanılmakta olan belirli bir denetim kodlanmış bir UI tes
 
 Kodlanmış UI testi gerçekleştirdiğinizde, denetimin üzerine gelin. Tuşuna basın ve Ctrl, basılı klavyenizde kaydırma ve R tuşlarını basılı tutarak. Tuşları serbest bırakın. Fare vurgulu olay kodlanmış UT Test Oluşturucusu tarafından kaydedilir.
 
-![CodedUI&#95;Hover](../test/media/codedui_hover.png "CodedUI_Hover")
+![CodedUI&#95;vurgulu](../test/media/codedui_hover.png "CodedUI_Hover")
 
 Test yöntemi oluşturduktan sonra aşağıdaki örneğe benzer bir kod UIMap.Desinger.cs dosyasına eklenecek:
 
@@ -240,7 +240,7 @@ Gerekirse, varsayılan atama, klavye, **Ctrl**+**Shift**+**R** kodlanmış UI te
 
 Klavye atamalarını değiştirmek için aşağıdaki yapılandırma dosyası değiştirin:
 
-*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
+*% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
 
 Yapılandırma dosyasında değerlerini değiştirmek `HoverKeyModifier` ve `HoverKey` anahtarları klavye atamalarını değiştirmek için:
 
@@ -259,7 +259,7 @@ Belirli bir denetime geldiğinizde birçok Web sitesi bu ek ayrıntılar göster
 
 Örtük gezinen bir Web tarayıcısında kaydını etkinleştirmek için yapılandırma dosyasını açın:
 
-*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
+*% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
 
 Yapılandırma dosyası anahtar olduğunu doğrulayın `RecordImplicitiHovers` kümesine bir değerine `true` aşağıdaki örnekte gösterildiği gibi:
 

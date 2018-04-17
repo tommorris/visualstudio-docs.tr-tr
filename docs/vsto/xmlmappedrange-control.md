@@ -1,12 +1,10 @@
 ---
 title: XmlMappedRange denetimi | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - XMLMappedRange control, events
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f4b78da11efafff45f34b3dc4ab9e7f1349a2e8a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1bc4516f0ca14427e5e63a40ae58ddd60436dfd6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange Denetimi
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Denetimidir yalnızca bir yinelenmeyen şema öğesi Microsoft Office Excel hücresine eşlendiğinde oluşturan bir aralık. Örneğin, `maxOccurs` şema öğesinin özniteliği 1 değerine eşittir. Visual Studio XML eşlenmiş aralığı oluşturduktan sonra Excel nesne modeline çapraz geçiş yapmak zorunda kalmadan doğrudan karşı programlama yapabilirsiniz. Yalnızca silebilirsiniz bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> öğe eşlemesi kaldırıldığında Excel'den denetim.  

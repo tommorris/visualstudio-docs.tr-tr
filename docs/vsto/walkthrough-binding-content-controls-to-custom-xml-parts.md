@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - DatePickerContentControl, binding to a custom XML part
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1a8c8eff138e2c736750040dc896e610975c25ab
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7ca9c3e049d29874419327ec4ac7d71e0537466c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>İzlenecek Yol: İçerik Denetimlerini Özel XML Bölümlerine Bağlama
   Bu kılavuz, Word için belge düzeyi özelleştirmelerinde içerik denetimlerini belgede depolanan XML veri bağlamak gösterilmiştir.  
@@ -64,7 +63,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Adlı bir Word belgesi projesi oluşturun **ÇalışanDenetimleri**. Çözüm için yeni bir belge oluşturun. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]tasarımcıda yeni Word belgesini açar ve ekler **ÇalışanDenetimleri** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tasarımcıda yeni Word belgesini açar ve ekler **ÇalışanDenetimleri** için proje **Çözüm Gezgini**.  
   
 ## <a name="adding-content-controls-to-the-document"></a>Belgeye içerik denetimleri ekleme  
  Burada kullanıcının görüntüleyebilir veya bir çalışan hakkındaki bilgileri düzenleyebilirsiniz içerik denetimleri üç farklı türde içeren bir tablo oluşturun.  

@@ -1,12 +1,10 @@
 ---
-title: "Office çözümlerinde isteğe bağlı parametreler | Microsoft Docs"
-ms.custom: 
+title: Office çözümlerinde isteğe bağlı parametreler | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,20 +18,21 @@ helpviewer_keywords:
 - parameters [Office development in Visual Studio], optional
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe40b6bc0af9df294408079c8a27dfac42df97b0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d417b5126989736c6126ae7c80bfcbc86f336a09
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office Çözümlerinde İsteğe Bağlı Parametreler
   Microsoft Office uygulamalarının nesne modelleri yöntemlere birçoğu, isteğe bağlı parametreleri kabul eder. Visual Studio'da Office çözümü geliştirmek için Visual Basic kullanırsanız, her eksik parametre için varsayılan değerleri otomatik olarak kullanıldığından isteğe bağlı parametre için bir değer geçirmek zorunda değildir. Çoğu durumda, Visual C# projelerine isteğe bağlı parametreler atlayabilirsiniz. Ancak, atlayamazsınız **ref** parametrelerinin `ThisDocument` belge düzeyi Word projeleri sınıfta.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Visual C# ve Visual Basic projelerinde isteğe bağlı parametreler ile çalışma hakkında daha fazla bilgi için bkz: [adlandırılmış ve isteğe bağlı bağımsız değişkenler &#40; C &#35; Programlama Kılavuzu &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) ve [isteğe bağlı parametreler &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).  
+ Visual C# ve Visual Basic projelerinde isteğe bağlı parametreler ile çalışma hakkında daha fazla bilgi için bkz: [adlandırılmış ve isteğe bağlı bağımsız değişkenler &#40;C&#35; Programlama Kılavuzu&#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) ve [isteğe bağlı parametreler &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).  
   
 > [!NOTE]  
 >  Visual Studio'nun önceki sürümleri, Visual C# projelerinde her isteğe bağlı bir parametre için bir değer geçmesi gerekir. Kolaylık olması için bu projeler adlı bir genel değişkeni dahil `missing` parametresinin varsayılan değeri kullanmak istediğinizde isteğe bağlı bir parametre geçirebilirsiniz. Visual Studio'da Office için Visual C# projeleri hala dahil `missing` değişkeni, ancak genellikle gerekmez Office çözümleri geliştirirken kullanmak [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], isteğe bağlı yöntemlerini çağırdığınızda dışında **ref** Parametrelerde `ThisDocument` Word için belge düzeyi projelerine sınıfı.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Değer ve başvuru türü parametreleri hakkında daha fazla bilgi için bkz: [geçirme bağımsız değişkenleri değere göre ve başvuru &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic için) ve [parametreleri &#40; geçirme C &#35; Programlama Kılavuzu &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+ Değer ve başvuru türü parametreleri hakkında daha fazla bilgi için bkz: [geçirme bağımsız değişkenleri değere ve başvuruya göre &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic için) ve [geçirme parametreleri &#40;C&#35; Programlama Kılavuzu&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)   

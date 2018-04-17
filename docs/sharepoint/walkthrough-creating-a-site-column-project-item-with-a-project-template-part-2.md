@@ -1,25 +1,24 @@
 ---
-title: "İzlenecek yol: Proje şablonu ile bir Site sütunu proje öğesi oluşturma, bölüm 2 | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Proje şablonu ile bir Site sütunu proje öğesi oluşturma, bölüm 2 | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f0472688f9f36d2b14c89cc904bf6ce4badd6ca6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>İzlenecek yol: bir proje şablonu, bölüm 2 ile bir Site sütunu proje öğesi oluşturma
   Özel bir SharePoint proje öğesi türü tanımlama ve Visual Studio Proje şablonu ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Proje öğesi içeren yeni bir proje oluşturmak için şablonunuzu kullanılırken kullanıcılardan bilgi toplamak için sihirbazı kullanabilirsiniz. Topladığınız bilgileri, proje öğesi başlatmak için kullanılabilir.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
 -   Hata ayıklama ve Sihirbazı'nı test etme.  
   
 > [!NOTE]  
->  Tamamlanan projeleri, kod ve bu kılavuz aşağıdaki konumdan diğer dosyalarını içeren bir örnek indirebilirsiniz: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Tamamlanan projeleri, kod ve bu kılavuz aşağıdaki konumdan diğer dosyalarını içeren bir örnek indirebilirsiniz: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuzda gerçekleştirmek için önce SiteColumnProjectItem çözüm tamamlayarak oluşturmalısınız [izlenecek yol: bir proje şablonu, bölüm 1 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 -   SharePoint site sütunları. Daha fazla bilgi için bkz: [sütunları](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
-##  <a name="wizardcomponents"></a>Sihirbaz bileşenlerini anlama  
+##  <a name="wizardcomponents"></a> Sihirbaz bileşenlerini anlama  
  Bu kılavuzda gösterilen Sihirbazı çeşitli bileşenleri içerir. Aşağıdaki tabloda, bu bileşenlerin açıklanmaktadır.  
   
 |Bileşen|Açıklama|  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Proje şablonları listesinden seçip **WPF kullanıcı denetimi Kitaplığı**, proje adı **ProjectTemplateWizard**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **ProjectTemplateWizard** çözüme proje ve varsayılan da UserControl1.XAML'i dosyasını açar.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **ProjectTemplateWizard** çözüme proje ve varsayılan da UserControl1.XAML'i dosyasını açar.  
   
 6.  Da UserControl1.XAML'i dosyasını projeden silin.  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Seçin **sınıf kitaplığı** proje şablonu, proje adı **SharePointCommands**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **SharePointCommands** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **SharePointCommands** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
   
 5.  Class1 kod dosyasının projeden silin.  
   
@@ -163,7 +162,7 @@ ms.lasthandoff: 01/10/2018
   
 13. Visual Basic projesinde geliştiriyorsanız ProjectTemplateWizard ad alanı, projeye kullanarak içeri **Proje Tasarımcısı**.  
   
-     Daha fazla bilgi için bkz: [nasıl yapılır: ekleme veya içeri aktarılan ad alanları &#40; Kaldır Visual Basic &#41; ](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Daha fazla bilgi için bkz: [nasıl yapılır: ekleme veya içeri aktarılan ad alanlarını kaldırma &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>SharePointCommands projeyi yapılandırmak için  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Oku seçin **Ekle** düğmesine tıklayın ve ardından **bağlantı olarak Ekle** seçeneği menüsünde görüntülenir.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]kod dosyasına ekler **SharePointCommands** projesi bir bağlantı olarak. Kod dosyası bulunan **ProjectTemplateWizard** proje ancak dosyasındaki kodu aynı zamanda derlenmiş içinde **SharePointCommands** projesi.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kod dosyasına ekler **SharePointCommands** projesi bir bağlantı olarak. Kod dosyası bulunan **ProjectTemplateWizard** proje ancak dosyasındaki kodu aynı zamanda derlenmiş içinde **SharePointCommands** projesi.  
   
 5.  İçinde **SharePointCommands** projesi, komutları adlı başka bir kod dosyası ekleyin.  
   
@@ -406,7 +405,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Hakkında daha fazla bilgi için `WizardExtension` öğesi, bkz: [WizardExtension öğesi &#40; Visual Studio şablonları &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Hakkında daha fazla bilgi için `WizardExtension` öğesi, bkz: [WizardExtension öğesi &#40;Visual Studio şablonları&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Dosyayı kaydedin ve kapatın.  
   

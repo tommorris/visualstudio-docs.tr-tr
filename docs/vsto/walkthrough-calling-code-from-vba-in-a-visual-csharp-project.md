@@ -1,12 +1,10 @@
 ---
 title: "İzlenecek yol: Visual C# Projesinde VBA'dan Kod Çağırma | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 109ae2e89cf30078c910ff313ea203c576906037
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8fa0edceac7ca98e958419efe4a70acf278857da
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>İzlenecek Yol: Visual C# Projesinde VBA'dan Kod Çağırma
   Bu kılavuz bir yöntem bir belge düzeyi özelleştirmelerinde Microsoft Office Excel için Visual Basic for Applications (VBA) kodunu çalışma kitabı nasıl çağrılacağını gösterir. Yordam üç temel adımdan oluşur: bir yöntem ekleme `Sheet1` konak öğesi sınıfına, çalışma kitabı VBA kodunda yöntemi oluşturma ve çalışma kitabı VBA kodundan yöntemini çağırın.  
@@ -118,7 +117,7 @@ ms.lasthandoff: 01/10/2018
   
 9. **Son**'a tıklayın.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]açılır **WorkbookWithVBA** çalışma kitabı Tasarımcısı'nda ve ekler **CallingCodeFromVBA** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] açılır **WorkbookWithVBA** çalışma kitabı Tasarımcısı'nda ve ekler **CallingCodeFromVBA** için proje **Çözüm Gezgini**.  
   
 ## <a name="trusting-the-location-of-the-workbook"></a>Çalışma kitabının konumuna güvenme  
  VBA kodu çalışma kitabı Çözümünüzdeki kodu oluşturmadan önce çalıştırmak için çalışma kitabını VBA güvenmesi gerekir. Bunu yapmanın birkaç yolu vardır. Bu kılavuzda, bu görevin çalışma kitabında konumunu güvenerek yapabiliriz **Güven Merkezi** Excel'de.  
@@ -185,7 +184,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  **Tamam**'ı tıklatın.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]adlı yeni bir arayüz yaratır `ISheet1`, ve tanımını değiştirdiği `Sheet1` bunu uygulayan sınıfının `ISheet1` arabirimi. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ayrıca açar **Isheet1.cs** Kod Düzenleyicisi'nde dosya.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adlı yeni bir arayüz yaratır `ISheet1`, ve tanımını değiştirdiği `Sheet1` bunu uygulayan sınıfının `ISheet1` arabirimi. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ayrıca açar **Isheet1.cs** Kod Düzenleyicisi'nde dosya.  
   
 5.  İçinde **Isheet1.cs** dosya, yerine `ISheet1` arayüzü bildirimini aşağıdaki kodla. Bu kod yapar `ISheet1` ortak arabirim ve uygular <xref:System.Runtime.InteropServices.ComVisibleAttribute> arabirimi COM görünür yapmak için özniteliği  
   
@@ -253,6 +252,6 @@ ms.lasthandoff: 01/10/2018
  [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md)   
  [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)   
  [Nasıl yapılır: Visual Basic projesinde VBA kodu kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Nasıl yapılır: Visual C &#35; VBA kodu kullanımına sunma Proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Nasıl yapılır: Visual c VBA kodu kullanımına sunma&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [İzlenecek Yol: Visual Basic Projesinde VBA'dan Kod Çağırma](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
   

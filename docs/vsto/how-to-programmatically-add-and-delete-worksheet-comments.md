@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: program aracılığıyla ekleme ve silme çalışma sayfası açıklamaları | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: program aracılığıyla ekleme ve silme çalışma sayfası açıklamaları | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - comments, worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9351dd018c2db4832db20a4abbdaa050f060793e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0891524a9172c3c7adf0ca0ce55173dffb0ad19b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Nasıl yapılır: Program Aracılığıyla Çalışma Sayfası Açıklamaları Ekleme ve Silme
   Program aracılığıyla ekleyin ve Microsoft Office Excel çalışma sayfası açıklamaları silin. Birden çok hücre aralıkları için tek hücrelere yalnızca açıklamalar eklenebilir.  

@@ -1,20 +1,20 @@
 ---
-title: "Microsoft Excel kullanarak Visual Studio Yük testi başarım raporları oluşturma | Microsoft Docs"
+title: Microsoft Excel kullanarak Visual Studio Yük testi başarım raporları oluşturma | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, creating Excel reports
 - load tests, reporting
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: c3897a9f316a7bcb0bf52d6730c3622434b6b396
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 95be1cd0e6e5ab4d5fd3b487465ba09711f97714
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Nasıl yapılır: Microsoft Excel Kullanarak Yük Testi Başarım Raporları Oluşturma
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 03/19/2018
 
      Microsoft Excel açılır **bir yük testi raporu oluşturmak** Sihirbazı.
 
-     veya
+     -veya-
 
     1.  Microsoft Excel'ni açın, **yük testi** sekmesinde Office şeritte ve ardından **yük testi raporu**.
 
@@ -113,7 +113,7 @@ ms.lasthandoff: 03/19/2018
 
      Microsoft Excel açılır **bir yük testi raporu oluşturmak** Sihirbazı.
 
-     veya
+     -veya-
 
     1.  Microsoft Excel'ni açın, **yük testi** sekmesinde Office şeritte ve ardından **yük testi raporu**.
 

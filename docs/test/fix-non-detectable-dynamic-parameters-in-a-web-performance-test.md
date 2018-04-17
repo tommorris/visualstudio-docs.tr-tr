@@ -1,7 +1,7 @@
 ---
-title: "Visual Studio'da web performans testindeki dinamik parametreleri algılayamama düzeltme | Microsoft Docs"
+title: Visual Studio'da web performans testindeki dinamik parametreleri algılayamama düzeltme | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs, load tests
 - load tests, walkthroughs
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: dc92b65ba26b11fe65919fd94ac16c8480427f6b
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: a696f03e715e2b3bede34f45bce90596a14897aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Web performans testindeki dinamik parametreleri algılayamama sorununu çözme
 
@@ -72,7 +72,7 @@ Bir algılanabilir ve algılanamayan bir dinamik parametreyi göstermek için bi
     }
     ```
 
-6.  Add a second web form named ASPQuery.aspx.
+6.  ASPQuery.aspx adlı ikinci bir web formu ekleyin.
 
 7.  Tasarım görünümünde, bir etiket sayfaya sürükleyin ve IndexLabel (ID) özelliğinin değeri değiştirin.
 
@@ -86,7 +86,7 @@ Bir algılanabilir ve algılanamayan bir dinamik parametreyi göstermek için bi
 
      ![NavigateURL özelliğini Düzenle](../test/media/web_test_dynamicparameter_hyperlink_navurl.png "Web_Test_DynamicParameter_Hyperlink_NavURL")
 
-     Select Querystring.aspx.
+     Querystring.aspx seçin.
 
      ![Querystring.aspx olmasını URL'si seçin](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png "Web_Test_DynamicParameter_Hyperlink_NavURL2")
 
@@ -126,7 +126,7 @@ Bir algılanabilir ve algılanamayan bir dinamik parametreyi göstermek için bi
 
      ![Web uygulamasını çalıştırmak](../test/media/web_test_dynamicparameter_runapp.png "Web_Test_DynamicParameter_RunApp")
 
-     ![Success&#33;](../test/media/web_test_dynamicparameter_runapp2.png "Web_Test_DynamicParameter_RunApp2")
+     ![Başarı&#33;](../test/media/web_test_dynamicparameter_runapp2.png "Web_Test_DynamicParameter_RunApp2")
 
 ## <a name="create-a-web-performance-test"></a>Web performans testi oluşturma
 

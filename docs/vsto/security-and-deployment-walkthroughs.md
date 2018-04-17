@@ -1,12 +1,10 @@
 ---
-title: "Güvenlik ve Dağıtmada İzlenecek yollar | Microsoft Docs"
-ms.custom: 
+title: Güvenlik ve Dağıtmada İzlenecek yollar | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1a4b8fa57868e0631e528fd73e199b5c6a017c08
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0a0d68bceffaf26297ca8a1709978cf3447520c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Güvenlik ve Dağıtmada İzlenecek Yollar
   Aşağıdaki konular nasıl çözümünüzün çalışmasına izin veren güvenlik ilkesini ayarlayabilirsiniz ve Office çözümünün nasıl dağıtabileceğini gösterir.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
  [Office Çözümlerindeki Verilerde İzlenecek Yol](../vsto/data-in-office-solutions-walkthroughs.md)  
  Çözümlerinizdeki veri ile nasıl çalışılacağını adım adım kılavuzlar listeler.  
   
- [Başlarken &#40; Office geliştirme Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Başlarken &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Kurulum, proje şablonları, Office birincil birlikte çalışma derlemeleri ve Office geliştirme yenilikler hakkında bilgi için bağlantılar sağlar.  
   
  [Office Programlarındaki Ortak Görevler](../vsto/common-tasks-in-office-programming.md)  

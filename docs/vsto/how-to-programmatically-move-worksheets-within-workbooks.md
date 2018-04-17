@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: program aracılığıyla çalışma kitaplarındaki çalışma sayfalarını taşıma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: program aracılığıyla çalışma kitaplarındaki çalışma sayfalarını taşıma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - workbooks, moving worksheets in
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5f0869ad6a63e4a499d9fdca2cbaa538d11eef0d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5b34374b7795422aef83c7f79fe49931b1b69acc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Nasıl yapılır: Çalışma Kitaplarındaki Çalışma Sayfalarını Program Aracılığıyla Taşıma
   Program aracılığıyla çalışma kitabını çalışma sayfaları diğer çalışma göreli konumunu değiştirebilirsiniz. Taşınmış sayfa için bir konum belirtmezseniz, onu içeren yeni bir çalışma kitabı Excel oluşturur.  

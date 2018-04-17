@@ -2,19 +2,19 @@
 title: Visual Studio'da birim testi temelleri | Microsoft Docs
 ms.date: 2016-01-07
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 939cbaa6cd99cbcc5f011a873f46c4e873c22543
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 2e6bfbd65a7f242a14f1aebf2c554d481aa570ee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="unit-test-basics"></a>Birim testi temelleri
 
@@ -40,7 +40,7 @@ Doğrudan kodlama içine alır birim testi giriş için aşağıdaki konulardan 
 
 Bu konuda, kullandığımız adlı kurgusal bir uygulamanın geliştirilmesi `MyBank` bir örnek olarak. Bu konudaki Açıklamalar izlemeniz gereken gerçek bir kod gerekmez. Test yöntemleri C# ile yazılmış ve yönetilen kod için Microsoft birim testi çerçevesi kullanarak sunulan, ancak kavramları kolayca diğer dilleri ve çerçeveleri aktarılır.
 
- ![MyBank Solution](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")
+ ![MyBank çözüm](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")
 
  Bizim için tasarım ilk teşebbüs `MyBank` uygulama, tek bir hesap ve hareketlerini banka ile temsil eden bir hesapları bileşeni ve toplama ve yönetmek için işlevleri temsil eden bir veritabanı bileşeni içerir Bireysel hesaplar.
 
@@ -203,7 +203,7 @@ public void My_Test ()
 
 Test projesi derlerken, testleri Test Gezgini'nde görünür. Test Gezgini görünür durumda değilse, seçin **Test** Visual Studio menüsünde, **Windows**ve ardından **Test Gezgini**.
 
- ![Unit Test Explorer](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Birim Test Gezgini](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
  Çalıştırmak, yazma ve testleri yeniden gibi Test Gezgini varsayılan görünümü sonuçları gruplar halinde görüntülenir. **başarısız testler**, **testleri geçti**, **atlandı testleri** ve  **Testler değil**. Tüm testler o grupta görüntüler görünümünü açmak için bir Grup başlığını seçebilirsiniz.
 

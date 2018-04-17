@@ -1,13 +1,10 @@
 ---
 title: "İzlenecek yol: IntelliTrace'i kullanarak SharePoint uygulama hata ayıklama | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - IntelliTrace
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9f3e5ae5997f7ae4f7c7f94bc61dc526404f144
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>İzlenecek yol: IntelliTrace'i Kullanarak SharePoint Uygulamasında Hata Ayıklama
 
@@ -58,7 +55,7 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 - Visual Studio Enterprise.
 
-## <a name="BKMK_CreateReceiver">Özellik alıcısı oluşturma</a>
+## <a name="BKMK_CreateReceiver"></a> Özellik alıcısı oluşturma
 
 İlk olarak bir özellik alıcısı sahip boş bir SharePoint projesi oluşturun.
 
@@ -76,7 +73,7 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 4. Feature1.feature için kısayol menüsünü açın ve ardından **olay alıcısı Ekle** bir kod modülüne özelliği eklemek için.
 
-## <a name="BKMK_AddCode">Özellik alıcısı için kod ekleme</a>
+## <a name="BKMK_AddCode"></a> Özellik alıcısı için kod ekleme
 
 Ardından, özellik alıcısı öğesinde iki yöntem için kodu ekleyin: `FeatureActivated` ve `FeatureDeactivating`. Bu yöntemlerin her bir özelliği etkinleştirilmiş veya SharePoint'te sırasıyla devre dışı tetikler.
 
@@ -250,7 +247,7 @@ Ardından, özellik alıcısı öğesinde iki yöntem için kodu ekleyin: `Featu
     }
     ```
 
-## <a name="BKMK_Test1">Projeyi test</a>
+## <a name="BKMK_Test1"></a> Projeyi test
 
 Özellik alıcısı kodu eklenir ve veri toplayıcısı çalışıyor göre dağıtın ve düzgün çalıştığını olup olmadığını sınamak için SharePoint çözüm çalıştırın.
 
@@ -277,7 +274,7 @@ Ardından, özellik alıcısı öğesinde iki yöntem için kodu ekleyin: `Featu
 
      FeatureDeactivating() olay işleyicisi bir hata oluşturur.
 
-## <a name="BKMK_CollectDiagnosticData">Microsoft Monitoring Agent'ı kullanarak IntelliTrace verilerini toplama</a>
+## <a name="BKMK_CollectDiagnosticData"></a> Microsoft Monitoring Agent'ı kullanarak IntelliTrace verilerini toplama
 
 SharePoint çalıştıran sistemde Microsoft İzleme Aracısı yüklerseniz, IntelliTrace genel bilgileri daha fazla özel veriler kullanarak SharePoint çözümlerini ayıklayabilirsiniz. Aracı, SharePoint çözüm çalışmalarınız sırasında hata ayıklama bilgileri yakalamak için PowerShell cmdlet'lerini kullanarak Visual Studio dışında çalışır.
 
@@ -300,9 +297,9 @@ SharePoint çalıştıran sistemde Microsoft İzleme Aracısı yüklerseniz, Int
 
 3. PowerShell penceresinde çalıştırın [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) SharePoint çözümünüzü yeniden .iTrace dosyası oluşturun ve izlemeyi durdurmak için komutu.
 
-     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
+     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"*
 
-## <a name="BKMK_DebugSolution">Hata ayıklama ve SharePoint çözüm Düzelt</a>
+## <a name="BKMK_DebugSolution"></a> Hata ayıklama ve SharePoint çözüm Düzelt
 
 Artık bulmak ve SharePoint çözümde hatayı düzeltmek için Visual Studio IntelliTrace günlük dosyasını görüntüleyebilirsiniz.
 

@@ -1,5 +1,5 @@
 ---
-title: "Klavye kısayolları iş akışı Tasarımcısı'nda | Microsoft Docs"
+title: Klavye kısayolları iş akışı Tasarımcısı'nda | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90db2c7568190d5d76e7ca1d64d5f4a140308d42
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 29d96eb6d738fbf23749bec601743002a451ad06
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>İş Akışı Tasarımcısı'nda klavye kısayolları
 
@@ -30,16 +30,16 @@ Aşağıdaki tabloda özetlenmiştir atanmış varsayılan klavye kısayolları 
 
 |Kısayol|Amaç|
 |--------------|-------------|
-|CTRL+E, A|Gösterir veya bağımsız değişkeni Tasarımcısı gizler.|
+|CTRL + E, A|Gösterir veya bağımsız değişkeni Tasarımcısı gizler.|
 |CTRL+E, C|Seçili etkinlik yerinde daraltır.|
-|CTRL+E, E|Seçili etkinlik yerinde genişletir.|
-|CTRL+E, F|Bir akış çizelgesi seçili etkinlikler bağlanır.|
-|CTRL+E, I|Gösterir veya içeri aktarmalar Tasarımcısı gizler.|
-|CTRL+E, M|Klavye odağını sekme sırasında bir sonraki öğeye taşır.|
+|CTRL + E, E|Seçili etkinlik yerinde genişletir.|
+|CTRL + E, F|Bir akış çizelgesi seçili etkinlikler bağlanır.|
+|CTRL + E, T|Gösterir veya içeri aktarmalar Tasarımcısı gizler.|
+|CTRL + E, M|Klavye odağını sekme sırasında bir sonraki öğeye taşır.|
 |CTRL+E, N|Seçili etkinlik (veya en yakın) kapsamında yeni bir değişken oluşturur.|
-|CTRL+E, O|Gösterir veya gizler Genel İnceleme haritası.|
-|CTRL+E, P|Seçili etkinlik üst öğeye gider. Bu içerik haritası Gezinti bir düzey yukarı gider ve tasarımcı yüzeyine kök faaliyete değiştirir.|
-|CTRL+E, S|Öğe klavye odağını ile geçerli seçime ekler.|
+|CTRL + E, O|Gösterir veya gizler Genel İnceleme haritası.|
+|CTRL + E, P|Seçili etkinlik üst öğeye gider. Bu içerik haritası Gezinti bir düzey yukarı gider ve tasarımcı yüzeyine kök faaliyete değiştirir.|
+|CTRL + E, S|Öğe klavye odağını ile geçerli seçime ekler.|
 |CTRL+E, V|Gösterir veya değişken Tasarımcısı gizler.|
 |CTRL+E, X|İş akışındaki tüm etkinlikler genişletir.|
 |CTRL+ALT+F6|Klavye odağı geçerli kullanıcı Arabirimi alanından dizisi sonraki alanına taşır. Sipariş aşağıdaki gibidir:<br /><br /> 1.  İçerik haritası gezinti çubuğu.<br />2.  Tasarımcı yüzeyine<br />3.  Bağımsız değişkenler/değişkenleri/Imports Tasarımcısı açıksa<br />4.  Kabuk|

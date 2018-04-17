@@ -1,13 +1,10 @@
 ---
-title: "Başlarken (Visual Studio'da Office Geliştirme) | Microsoft Docs"
-ms.custom: 
+title: Başlarken (Visual Studio'da Office Geliştirme) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, getting started
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 04be00558cd3dd22cb9aa7546d6797778b1bae2c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2e0c945667f99fdd6df431413e3f1f96d06eca4b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-office-development-in-visual-studio"></a>Başlarken (Visual Studio'da Office Geliştirme)
   Bu bölüm, Yardım konuları içerir Microsoft Office geliştirici araçları Visual Studio'da kullanmaya başlayın.  
@@ -31,7 +28,7 @@ ms.lasthandoff: 01/10/2018
 >  Office deneyimi boyunca genişletmek çözümleri geliştirirken ilgileniyor [birden çok platform](https://dev.office.com/add-in-availability)? Yeni [Office eklentileri modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). VSTO eklentilerini ve çözümlerle karşılaştırıldığında küçük bir yer Office eklentileri sahip ve teknoloji, HTML5, JavaScript, CSS3 ve XML gibi programlama neredeyse her web kullanarak oluşturabilirsiniz.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  Visual Studio'da Office çözümleri geliştirmek için arka plan bilgileri sağlar.  
   
  [.NET Framework 4 veya .NET Framework 4.5'i Hedefleyen Office Projelerinin Tasarımı Üzerinde Yapılan Değişiklikler](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  

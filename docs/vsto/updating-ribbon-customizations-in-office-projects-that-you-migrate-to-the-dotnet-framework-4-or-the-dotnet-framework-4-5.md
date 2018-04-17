@@ -1,13 +1,10 @@
 ---
-title: ".NET Framework 4 veya .NET Framework 4. 5'e geçiş Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme | Microsoft Docs"
-ms.custom: 
+title: .NET Framework 4 veya .NET Framework 4. 5'e geçiş Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d3c2e834b3a618bf033ef7f37ca8bbac7d0efcf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 98c5dee34fd40506289cf4a9f31488c3acc710ba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5'e Geçirdiğiniz Office Projelerindeki Şerit Özelleştirmelerini Güncelleştirme
   Projenizi kullanılarak oluşturulmuş bir Şerit özelleştirme içeriyorsa **Şerit (Görsel Tasarımcı)** proje madde, hedef Framework'ü değiştirilirse proje kodunuza aşağıdaki değişiklikleri yapmalısınız [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya Daha sonra.  
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Visual Basic projelerinde bulun `ThisRibbonCollection` dosyanın sonunda sınıfı. Bu sınıf bildirimi Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection artık devralır şekilde değiştirin.  
   
-##  <a name="ribboncontrols"></a>Şerit denetimlerini örnekleme  
+##  <a name="ribboncontrols"></a> Şerit denetimlerini örnekleme  
  Dinamik olarak Şerit denetimleri başlatır herhangi bir kodu değiştirmeniz gerekir. Proje .NET Framework 3.5 hedefleyen Şerit denetimleri doğrudan belirli senaryolarda örneği sınıflardır. ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ya da daha sonra bu denetimlerin arabirimleri doğrudan örneği oluşturulamıyor. Tarafından sağlanan yöntemleri kullanarak denetimler oluşturmalısınız <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> nesnesi.  
   
  Erişim için iki yolla <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> nesnesi:  
@@ -151,14 +148,14 @@ ms.lasthandoff: 01/10/2018
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|  
   
-##  <a name="ribbonevents"></a>Şerit olaylarını işleme  
+##  <a name="ribbonevents"></a> Şerit olaylarını işleme  
  Şerit denetimlerini olaylarını işleme herhangi bir kodu değiştirmeniz gerekir. .NET Framework 3.5 hedefleyen projelerde, bu olaylar genel tarafından işlenen <xref:System.EventHandler%601> temsilci. ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra bu olayları artık diğer temsilciler tarafından ele alınır.  
   
  Aşağıdaki tabloda Şerit olayları ve hedefleyen projelerde bunlarla ilişkili temsilciler listelenmektedir [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya sonraki bir sürümü.  
   
 |Olay|Kullanılacak temsilci [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ve sonraki projeleri|  
 |-----------|---------------------------------------------------------------------------------------------------|  
-|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>oluşturulan Şerit sınıfı olayı|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
+|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> oluşturulan Şerit sınıfı olayı|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
   

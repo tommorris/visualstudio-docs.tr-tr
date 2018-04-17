@@ -2,21 +2,21 @@
 title: Birim testi Visual Studio'da | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bb9ec1751c6c2c365528b678f7d209bb730495bb
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: f8b2ec475a4c9d8cf5799c6f429519704329c2cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="unit-test-your-code"></a>Birim testi kodunuz
 
@@ -49,7 +49,7 @@ Birim testlerini anlamaya ve oluşturmaya yardımcı olmaları için aşağıdak
 |**Yalıtmak birim testleri**|-   [Microsoft Fakes ile Test edilen kodu yalıtma](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Projenizin kodunun ne oranda test belirlemek için kod kapsamı kullanın:** Visual Studio Test Araçları'nın kod kapsamı özelliği hakkında bilgi edinin.|-   [Test edildiğini belirlemek ne kadar kodun için kod kapsamını kullanma](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**Yük testleri kullanarak stres ve Performans Analizi gerçekleştirebilir:** bir yük testi oluşturma ve yalıtmak performans ve stres uygulamanızdaki sorunları gidermek için birim testleri ekleyin.|-   [Test (VSTS ve TFS) yükleme](/vsts/load-test/)|
-|**Kalite kapıları ayarlayın:** kalite kapıları kodu iade önce testleri çalıştırmak zorlamak için kod kalitesini sağlamaya yardımcı olmak için oluşturabilirsiniz.|-   [Check-in policies (VSTS)](/vsts/tfvc/add-check-policies)|
+|**Kalite kapıları ayarlayın:** kalite kapıları kodu iade önce testleri çalıştırmak zorlamak için kod kalitesini sağlamaya yardımcı olmak için oluşturabilirsiniz.|-   [İade ilkeleri (VSTS)](/vsts/tfvc/add-check-policies)|
 |**Testi seçenekleri ayarlayın:** Örneğin, test sonuçları nerede depolanacağını belirtebilirsiniz.|[.runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>API başvuru belgeleri

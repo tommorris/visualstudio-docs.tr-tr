@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: de2b241cd44adebecd91ee097ebf8f8875915937
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6c68bd90f1a0a106771bd011e9baf91552678ac6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-excel"></a>İnceleme: Excel için İlk VSTO Eklentinizi Oluşturma
   Bu tanıtıcı kılavuz bir uygulama düzeyi Ekle-Microsoft Office Excel için nasıl oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin çalışma kitaplarını açık olan bağımsız olarak kullanılabilir.  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 ## <a name="creating-the-project"></a>Projeyi Oluşturma  
   
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  **Tamam**'ı tıklatın.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]oluşturur **FirstExcelAddIn** proje ve düzenleyicide ThisAddIn kod dosyasını açar.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturur **FirstExcelAddIn** proje ve düzenleyicide ThisAddIn kod dosyasını açar.  
   
 ## <a name="writing-code-to-add-text-to-the-saved-workbook"></a>Kaydedilmiş çalışma kitabına metin eklemek için kod yazma  
  Ardından, kodu ThisAddIn kod dosyasına ekleyin. Yeni kod, etkin çalışma sayfasındaki ilk satırda Demirbaş metin eklemek için Excel nesne modeli kullanır. Etkin çalışma sayfasında kullanıcı çalışma kitabını kaydettiğinde, açık olan bir çalışma sayfasıdır. Varsayılan olarak, aşağıdaki oluşturulmuş kodu ThisAddIn kod dosyasını içerir:  
@@ -134,7 +133,7 @@ ms.lasthandoff: 01/10/2018
 -   Excel için VSTO eklentileri dağıtma: [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Excel çözümleri](../vsto/excel-solutions.md)   
  [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)   
  [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md)   

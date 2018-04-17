@@ -1,26 +1,27 @@
 ---
-title: "Visual Studio Abonelikteki öncelik desteği avantajı | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/16/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Priority Support benefit included in Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b62a60207f306c623d53f67fbe7e473c5ee8164d
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio Abonelikteki öncelik desteği avantajı | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/16/2018
+ms.topic: Get-Started-Article
+description: Visual Studio Aboneliklerde dahil öncelik desteği avantajı ile ilgili bilgi edinin.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: e2cad13b3904779bfaca86f7d3e66ac5dbbcfbb8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri öncelik desteği
 
-## <a name="overview"></a>Genel Bakış 
 Öncelik desteği avantajı yeni sorular sorar veya varolan postalar arayabileceğiniz destek topluluk forumları çeşitli erişim sağlar.  Sorunuzun yanıtını iki gün içinde topluluk tarafından yanıtlanan değil, Microsoft destek ekibi bir yanıt sağlar.  
 
 Seçili Visual Studio abonelikleri olan aboneler forumları çeşitli konularda kapsayan çok sayıda aracılığıyla öncelik destek almak uygundur.
+
+## <a name="included-forums"></a>Dahil edilen forumları
 
 ### <a name="net-framework"></a>.NET Framework
    - .NET framework Kurulum ve Bakım 
@@ -31,7 +32,7 @@ Seçili Visual Studio abonelikleri olan aboneler forumları çeşitli konularda 
 
    - Windows Presentation Foundation (WPF) 
 
-   - Windows Communication Foundation, Serialization, and Networking 
+   - Windows Communication Foundation, seri hale getirme ve ağ oluşturma 
 
 ### <a name="windows-forms-development"></a>Windows Forms geliştirme
    - Windows Forms veri denetimleri ve veri bağlama 
@@ -49,7 +50,7 @@ Seçili Visual Studio abonelikleri olan aboneler forumları çeşitli konularda 
    - Windows Evrensel uygulamaları geliştirme 
 
 ### <a name="internet-of-things-iot"></a>Nesnelerin interneti (IOT)
-   - Windows 10 IoT 
+   - Windows 10 IOT 
 
 ### <a name="office-development"></a>Office geliştirme
    - Geliştiriciler için Microsoft Office 
@@ -75,7 +76,7 @@ Seçili Visual Studio abonelikleri olan aboneler forumları çeşitli konularda 
 ### <a name="sql-server"></a>SQL Server
    - SQL Server ile çalışmaya başlama 
 
-   - SQL Server Data Access 
+   - SQL Server veri erişimi 
 
    - SQL Server Veritabanı Altyapısı 
 
@@ -93,13 +94,13 @@ Seçili Visual Studio abonelikleri olan aboneler forumları çeşitli konularda 
 
    - SQL Server çoğaltması 
 
-   - SQL Server Security 
+   - SQL Server güvenlik 
 
    - SQL Server Kurulum ve yükseltme 
 
    - SQL Server Araçları Genel 
 
-   - SQL Service Broker 
+   - SQL hizmet Aracısı 
 
    - SQL Server Compact 
 
@@ -130,7 +131,7 @@ Seçili Visual Studio abonelikleri olan aboneler forumları çeşitli konularda 
 
    - SharePoint 2010 – SharePoint Designer, InfoPath ve diğer özelleştirmeleri kullanma 
 
-   - SharePoint 2010 - Search 
+   - SharePoint 2010 - arama 
 
 ### <a name="visual-studio"></a>Visual Studio
    - Visual Studio genel sorular 
@@ -194,37 +195,9 @@ Seçili Visual Studio abonelikleri olan aboneler forumları çeşitli konularda 
    - SQL Server XML 
 
 
-
-### <a name="eligibility"></a>Uygunluk
-| Abonelik düzeyinde / Program                                 | Faydası               | Yenilenebilir?                                                         |
-|--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise standart                            | Dahil              | Evet                                                                |
-| Visual Studio Enterprise yıllık                              | Dahil              | Evet                                                                |
-| Aylık Visual Studio Enterprise                             | Yok         |                                                                    |
-| Visual Studio Professional Standard                          | Dahil              | Evet                                                                |
-| Visual Studio Professional annual                            | Dahil              | Evet                                                                | 
-| Aylık Visual Studio Professional                           | Yok         |                                                                    |
-| Visual Studio Test Pro                                       | Dahil              | Evet                                                                |
-| MSDN platformları                                               | Dahil              | Evet                                                                |
-| Visual Studio geliştirme temelleri                                 | Dahil              | Evet                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                               | Dahil              | Evet                                                                |
-| Visual Studio Enterprise - FTE                               | Dahil              | Evet                                                                |
-| Visual Studio Enterprise - MPN                               | Yok         |                                                                    |
-| Visual Studio Professional - MPN                             | Yok         |                                                                    |
-| Visual Studio Enterprise - MVP/RD                            | Yok         |                                                                    |
-| Visual Studio Enterprise – (standart) düşünün                | Dahil              | Evet                                                                |
-| Visual Studio Enterprise – (Premium) düşünün                 | Dahil              | Evet                                                                |
-| Visual Studio Enterprise – BizSpark                          | Yok         |                                                                    |
-| Visual Studio Enterprise – MCT yazılım ve Hizmetleri           | Yok         |                                                                    |
-| Visual Studio Enterprise – MCT yazılım ve Hizmetleri Geliştirici | Yok         |                                                                    |
-<sup>1</sup>*değil satışı (NFR), Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP) içerir*   
-
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
-
-
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 Önceki desteklemek için erişim sağlama çok basit bir işlemdir. 
-1. Oturum [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Öncelik desteği döşeme destek bölümüne bulun.  Tıklayın **yardım alın**.
 
@@ -238,8 +211,20 @@ Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [https://my.visua
 
     ![Öncelik desteği örneği](_img/vs-priority-support/vs-priority-support-example.png)
 
-## <a name="faq"></a>SSS
-*Burada Güncelleştirmeleri denetle*
+## <a name="eligibility"></a>Uygunluk
+| Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standart, yıllık bulut)   | Toplu Lisans, Azure, perakende, seçili NFR<sup>1</sup> | Dahil       |  Evet          |
+| Visual Studio Professional (standart, yıllık bulut) | Toplu Lisans, Azure, perakende                                       | Dahil                                                            |Evet |
+| Visual Studio Test uzmanı (standart)                         | Toplu Lisans, perakende                                              | Dahil                                                            |Evet |
+| MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Dahil                                                            |Evet |
+| Visual Studio Dev Essentials | Yok  | Dahil                                                            |Evet |
+| Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
+
+<sup>1</sup>*içerir: değil satışı için (NFR), FTE, Visual Studio Endüstri ortağı (VSIP) düşünün.    Dışlar: Microsoft iş ortağı ağı (MPN), MCT yazılım ve Hizmetleri, MCT yazılım ve Hizmetleri geliştirici, BizSpark, Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD).*
+
+Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
+
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://www.visualstudio.com/subscriptions/support/).

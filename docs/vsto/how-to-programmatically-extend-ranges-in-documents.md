@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: belgelerde aralıkları program aracılığıyla genişletme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: belgelerde aralıkları program aracılığıyla genişletme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], extending ranges
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 81d3535f7f4e449c5cb56bea78a255b5388d6e94
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 68c5e2811f437a01e171e33f9802503cf4d24922
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>Nasıl yapılır: Belgelerde Aralıkları Program Aracılığıyla Genişletme
   Tanımladıktan sonra bir <xref:Microsoft.Office.Interop.Word.Range> değiştirdiğinizde, başlangıç ve bitiş noktalarını kullanarak bir Microsoft Office Word belgesinde nesne <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> ve <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> yöntemleri. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> Ve <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> yöntemlerini ele aynı iki bağımsız değişken *birim* ve *sayısı*. *Sayısı* değişkendir taşımak için kullanılacak birim sayısını ve *birim* bağımsız değişkeni şunlardan biri olabilir <xref:Microsoft.Office.Interop.Word.WdUnits> değerler:  

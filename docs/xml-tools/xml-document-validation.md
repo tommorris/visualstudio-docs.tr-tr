@@ -1,23 +1,21 @@
 ---
-title: "XML belge doğrulama | Microsoft Docs"
-ms.custom: 
+title: XML belge doğrulama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c4be3c2f5428b7b2c246c1649a73ae8584ffe28e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e226590b31a7b6b96755199bdb93cd95d438f08
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-document-validation"></a>XML belge doğrulama
 XML Düzenleyicisi'ni XML 1.0 sözdizimi denetler ve yazarken veri doğrulama da gerçekleştirir. Düzenleyici bir belge türü tanımı (DTD) ya da bir şema kullanarak doğrulayabilirsiniz. Kırmızı dalgalı alt çizgiler, doğru biçimlendirilmiş XML 1.0 hatalarını vurgulayın. Mavi dalgalı alt çizgiler DTD ya da şema doğrulamasını dayalı semantik hatalar gösterir. Her hata hata listesinde ilişkili bir giriş var. Dalgalı alt çizginin fare duraklatarak, hata iletisi de görüntüleyebilirsiniz.  

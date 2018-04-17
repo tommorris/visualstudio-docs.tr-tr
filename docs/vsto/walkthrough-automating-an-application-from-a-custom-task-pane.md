@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: uygulamayı özel görev bölmesinden otomatikleştirme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: uygulamayı özel görev bölmesinden otomatikleştirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], automating applications
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 86f925cda43bf73354b94ecc966cdcae1a0c3ddd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: c7269690e9ab7835f355939340d6c91dc56dd008
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-automating-an-application-from-a-custom-task-pane"></a>İzlenecek Yol: Uygulamayı Özel Görev Bölmesinden Otomatikleştirme
   Bu kılavuzda nasıl PowerPoint'i otomatikleştiren bir özel görev bölmesi oluşturulacağını gösterir. Özel görev bölmesini kullanıcı tıklattığında slayta tarihler ekler bir <xref:System.Windows.Forms.MonthCalendar> özel görev bölmesi üzerindeki denetim.  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Adlı bir PowerPoint VSTO eklenti projesi oluşturun **MyAddIn**, PowerPoint Eklentisi proje şablonunu kullanarak. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]açılır **ThisAddIn.cs** veya **ThisAddIn.vb** kod dosyası ve ekler **MyAddIn** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] açılır **ThisAddIn.cs** veya **ThisAddIn.vb** kod dosyası ve ekler **MyAddIn** için proje **Çözüm Gezgini**.  
   
 ## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Özel görev bölmesini kullanıcı arabiriminin tasarlama  
  Özel görev bölmeleri için görsel tasarımcı yoktur, ancak, istediğiniz düzene sahip bir kullanıcı denetimi tasarlayabilirsiniz. Bu kılavuzda daha sonra kullanıcı denetimi için özel görev bölmesini ekleyeceksiniz.  

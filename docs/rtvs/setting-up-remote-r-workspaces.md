@@ -1,26 +1,23 @@
 ---
-title: "Visual Studio için R araçları ile uzak çalışma alanları | Microsoft Docs"
-description: "Uzak R çalışma alanları ayarlamak ve Visual Studio'dan bağlanmak nasıl."
-ms.custom: 
+title: R uzak çalışma alanları
+description: Uzak R çalışma alanları ayarlamak ve Visual Studio'dan bağlanmak nasıl.
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 52122b3b3a92ff7df292764e75175070e0b6b1db
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2534bc3d437737062d2731c81b0997f77209bca9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="setting-up-remote-workspaces"></a>Uzak çalışma alanları ayarlama
 
@@ -89,7 +86,7 @@ Uzak bilgisayarda sertifika yüklemek için `certlm.msc` (Sertifika Yöneticisi)
 
 ### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>SSL sertifikasının özel anahtarının okuma izni verme
 
-Sertifika içeri aktarıldığında vermek `NETWORK SERVICE` hesap özel anahtarı aşağıdaki yönergelerde açıklandığı gibi okuma izni. `NETWORK_SERVICE`Hesap, sunucu bilgisayara gelen SSL bağlantılarını sonlandırır hizmet R Hizmetleri Aracısı çalıştırmak için kullanılır.
+Sertifika içeri aktarıldığında vermek `NETWORK SERVICE` hesap özel anahtarı aşağıdaki yönergelerde açıklandığı gibi okuma izni. `NETWORK_SERVICE` Hesap, sunucu bilgisayara gelen SSL bağlantılarını sonlandırır hizmet R Hizmetleri Aracısı çalıştırmak için kullanılır.
 
 1. Çalıştırma `certlm.msc` (Sertifika Yöneticisi) bir yönetici komut isteminden.
 1. Genişletme **kişisel > sertifikaları**sertifikanızı sağ tıklatın ve seçin **tüm görevler > özel anahtarları Yönet**.
@@ -149,7 +146,7 @@ R kodu çalıştırmak için uzak bilgisayarda bir R yorumlayıcı gibi yüklü 
 
 1. Karşıdan yüklemek ve aşağıdakilerden birini yükleyin:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
+    - [Microsoft R Aç](https://mran.microsoft.com/open/)
     - [Windows için CRAN R](https://cran.r-project.org/bin/windows/base/)
 
     Her ikisi de aynı işlevselliğe sahiptir, ancak ek donanım Microsoft R açık avantajları hızlandırılmış Lineer Cebir kitaplıklarının courtesy [Intel Math çekirdek Kitaplığı](https://software.intel.com/intel-mkl).
@@ -174,7 +171,7 @@ R kodu çalıştırmak için uzak bilgisayarda bir R yorumlayıcı gibi yüklü 
 
 1. Karşıdan yüklemek ve aşağıdakilerden birini yükleyin:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
+    - [Microsoft R Aç](https://mran.microsoft.com/open/)
     - [Windows için CRAN R](https://cran.r-project.org/bin/linux/ubuntu/)
 
     Her ikisi de aynı işlevselliğe sahiptir, ancak ek donanım Microsoft R açık avantajları hızlandırılmış Lineer Cebir kitaplıklarının courtesy [Intel Math çekirdek Kitaplığı](https://software.intel.com/intel-mkl).

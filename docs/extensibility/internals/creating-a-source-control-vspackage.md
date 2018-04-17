@@ -1,26 +1,24 @@
 ---
-title: "Kaynak denetimi VSPackage oluşturma | Microsoft Docs"
-ms.custom: 
+title: Kaynak denetimi VSPackage oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
 - source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c3fac86583126e94bcfaea65a82c7cf923275769
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8eb34efef22510d1d8f83590a6bdb7960d70ce49
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-source-control-vspackage"></a>Kaynak denetimi VSPackage oluşturma
 Bu belge mimarisine genel bakış ile tümleştirilmiş bir kaynak denetimi paketin bağlantılarını içerir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], uygulanacak arabirimleri ve tüketilmesi hizmetler tarafından tanımlanan API ve basit bir kaynağı gösteren bir örnek paket uygulama denetler.  
@@ -34,7 +32,7 @@ Bu belge mimarisine genel bakış ile tümleştirilmiş bir kaynak denetimi pake
  [Mimari](../../extensibility/internals/source-control-vspackage-architecture.md)  
  Bir diyagramını sunar ve kaynak denetimi paketi bileşenlerinin açıklanmaktadır.  
   
- [Özellikleri](../../extensibility/internals/source-control-vspackage-features.md)  
+ [Özellikler](../../extensibility/internals/source-control-vspackage-features.md)  
  Kaynak denetimi paketi çeşitli özelliklerini açıklar.  
   
  [Tasarım öğeleri](../../extensibility/internals/source-control-vspackage-design-elements.md)  

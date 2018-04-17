@@ -1,13 +1,10 @@
 ---
-title: "Yer işareti denetimi | Microsoft Docs"
-ms.custom: 
+title: Yer işareti denetimi | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Bookmark
 dev_langs:
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - Bookmark control
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38e3286d24f0591ca4ced3339118b6d0d4bfe1d7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f70fa1016762e0811da0e4850eda0428278c463e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bookmark-control"></a>Yer İşareti Denetimi
   <xref:Microsoft.Office.Tools.Word.Bookmark> Denetimidir benzersiz bir ada sahip olayları gösterir ve verilere bağlanabilen bir yer işareti. Yer işareti yer tutucu olarak bir öğe veya Microsoft Office Word belgesi konumda işaretlemek için kullanılabilir. <xref:Microsoft.Office.Tools.Word.Bookmark> Denetim birleşimidir bir <xref:Microsoft.Office.Interop.Word.Bookmark> nesne ve <xref:Microsoft.Office.Interop.Word.Range> nesne.  

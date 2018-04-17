@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: program aracılığıyla kopyalama ve yapıştırma şekiller Visio belgelerinde | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: program aracılığıyla kopyalama ve yapıştırma şekiller Visio belgelerinde | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], copying and pasting Visio shapes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b3c5074c4d7979672a79b7d09749035af840e543
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 488cda5519a211754498b50a88995de64a8ed366
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Nasıl yapılır: Visio Belgelerinde Program Aracılığıyla Şekilleri Kopyalama ve Yapıştırma
   Program aracılığıyla şekilleri belgenin bir sayfaya kopyalayın ve yeni bir sayfa aynı belgedeki yapıştırın. Özgün sayfasında sahip oldukları gibi varsayılan konuma (Etkin pencereyi Merkezi) veya aynı koordinat konumlarına bunları yapıştırmak seçebilirsiniz.  

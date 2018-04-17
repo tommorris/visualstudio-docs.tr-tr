@@ -1,12 +1,10 @@
 ---
-title: "Office programlarındaki ortak görevler | Microsoft Docs"
-ms.custom: 
+title: Office programlarındaki ortak görevler | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, frequently asked questions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 65a20b5d65ba49789aea857459bd6a4d316195eb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 32e24833e77ffd6f178a70c5548e9bc1277b06b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-tasks-in-office-programming"></a>Office Programlarındaki Ortak Görevler
   Bu konu, aşağıdaki kategorisinden Visual Studio kullanarak Office çözümleri programlama hakkında genel soruların yanıtları bulmanıza yardımcı olmak için tasarlanmıştır.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Dağıtım görevleri](#deployment).  
   
-##  <a name="projects"></a>Kurulum ve genel görevler  
+##  <a name="projects"></a> Kurulum ve genel görevler  
   
 -   [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
@@ -63,7 +62,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Nasıl yapılır: eklenti kullanıcı arayüzü hatalarını gösterme](../vsto/how-to-show-add-in-user-interface-errors.md).  
   
-##  <a name="ui"></a>Kullanıcı arabirimi özelleştirme görevleri  
+##  <a name="ui"></a> Kullanıcı arabirimi özelleştirme görevleri  
   
 ### <a name="controls-on-documents-and-worksheets"></a>Belgeler ve çalışma sayfası üzerinde denetimleri  
   
@@ -109,7 +108,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Nasıl yapılır: kısayol menülerine komut eklemek](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
-##  <a name="excel"></a>Excel otomasyon görevleri  
+##  <a name="excel"></a> Excel otomasyon görevleri  
   
 -   [Nasıl yapılır: program aracılığıyla çalışma sayfası hücresinde dize görüntüleme](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md).  
   
@@ -143,7 +142,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Nasıl yapılır: çalışma sayfalarında verileri programlamayla sıralama](../vsto/how-to-programmatically-sort-data-in-worksheets.md).  
   
-##  <a name="word"></a>Word otomasyon görevleri  
+##  <a name="word"></a> Word otomasyon görevleri  
   
 -   [Nasıl yapılır: program aracılığıyla yeni belgeler oluşturma](../vsto/how-to-programmatically-create-new-documents.md).  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Nasıl yapılır: program aracılığıyla belgelerdeki karakterleri sayma](../vsto/how-to-programmatically-count-characters-in-documents.md).  
   
-##  <a name="data"></a>Veri görevleri  
+##  <a name="data"></a> Veri görevleri  
   
 ### <a name="data-bound-controls"></a>Veri bağlama denetimleri  
   
@@ -207,17 +206,17 @@ ms.lasthandoff: 01/10/2018
   
 -   [Nasıl yapılır: VSTO eklentilerini kullanarak belgelere özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
   
-##  <a name="server"></a>Sunucu tarafı belge yönetim görevleri  
+##  <a name="server"></a> Sunucu tarafı belge yönetim görevleri  
   
 -   [Nasıl yapılır: belgelerden yönetilen kod uzantılarını kaldırma](../vsto/how-to-remove-managed-code-extensions-from-documents.md).  
   
 -   [Nasıl yapılır: belgelere yönetilen kod uzantıları ekleme](../vsto/how-to-attach-managed-code-extensions-to-documents.md).  
   
-##  <a name="security"></a>Güvenlik görevleri  
+##  <a name="security"></a> Güvenlik görevleri  
   
 -   [Nasıl yapılır: Office çözümlerini imzalama](../vsto/how-to-sign-office-solutions.md).  
   
-##  <a name="deployment"></a>Dağıtım görevleri  
+##  <a name="deployment"></a> Dağıtım görevleri  
   
 -   [Nasıl yapılır: ClickOnce kullanarak Office çözümü yayımlama](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
@@ -234,7 +233,7 @@ ms.lasthandoff: 01/10/2018
 -   [Nasıl yapılır: Office çözümü yükleme konumunu değiştirmek](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Başlarken &#40; Office geliştirme Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Başlarken &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office uygulaması ve proje türüne göre kullanılabilir özellikler](../vsto/features-available-by-office-application-and-project-type.md)   
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)  
   

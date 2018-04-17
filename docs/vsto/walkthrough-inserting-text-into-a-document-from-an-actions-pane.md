@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Eylemler bölmesinden belgeye metin ekleme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Eylemler bölmesinden belgeye metin ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 26d79087a4dbf7fc176ab3deb2c98cd5fdb5ba8a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9e562f66dd43b4adc45727c8de1457a24ddf97b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>İzlenecek Yol: Eylemler Bölmesinden Belgeye Metin Ekleme
   Bu kılavuz, Microsoft Office Word belgesinde Eylemler bölmesi oluşturmak gösterilmiştir. Eylemler bölmesinde giriş toplayan ve ardından metin belgesine göndermek iki denetimi içerir.  
@@ -44,7 +43,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]veya [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] veya [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
 ## <a name="creating-the-project"></a>Projeyi Oluşturma  
  İlk adım bir Word belgesi proje oluşturmaktır.  
@@ -114,7 +113,7 @@ ms.lasthandoff: 01/10/2018
   
     |Özellik|Değer|  
     |--------------|-----------|  
-    |**Ad**|**getName**|  
+    |**Ad**|**GetName**|  
     |**Boyutu**|**130, 20**|  
   
 5.  İkinci bir ekleme **etiket** Eylemler bölmesi denetimine denetlemek ve değiştirme **metin** özelliğine **adresi**.  
@@ -123,7 +122,7 @@ ms.lasthandoff: 01/10/2018
   
     |Özellik|Değer|  
     |--------------|-----------|  
-    |**Ad**|**getAddress**|  
+    |**Ad**|**GetAddress**|  
     |**Return kabul eder**|**TRUE**|  
     |**Çok satırlı**|**TRUE**|  
     |**Boyutu**|**130, 40**|  

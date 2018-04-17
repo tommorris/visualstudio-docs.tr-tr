@@ -1,12 +1,10 @@
 ---
-title: "Excel çözümleri | Microsoft Docs"
-ms.custom: 
+title: Excel çözümleri | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,16 +26,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], Excel
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: be6bd28b0a565e77988c06f77cc61e792c9a8f06
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: bfbb56e3e11cd260065adb8a25be4eccefdd40ad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="excel-solutions"></a>Excel Çözümleri
-  Visual Studio Proje şablonları Microsoft Office Excel için belge düzeyi özelleştirmeleri ve VSTO eklentileri oluşturmak için kullanabileceğiniz sağlar. Excel otomatikleştirmek, Excel özelliklerini genişletmek ve Excel kullanıcı arabirimini (UI) özelleştirmek için bu çözümleri kullanabilirsiniz. Belge düzeyi özelleştirmeleri ve VSTO eklentileri arasındaki farklar hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  Visual Studio Proje şablonları Microsoft Office Excel için belge düzeyi özelleştirmeleri ve VSTO eklentileri oluşturmak için kullanabileceğiniz sağlar. Excel otomatikleştirmek, Excel özelliklerini genişletmek ve Excel kullanıcı arabirimini (UI) özelleştirmek için bu çözümleri kullanabilirsiniz. Belge düzeyi özelleştirmeleri ve VSTO eklentileri arasındaki farklar hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
@@ -54,12 +53,12 @@ ms.lasthandoff: 01/10/2018
   
 -   [Excel kullanıcı arabirimini özelleştirme](#UI).  
   
-##  <a name="automating"></a>Excel'i otomatikleştirme  
+##  <a name="automating"></a> Excel'i otomatikleştirme  
  Excel nesne modeline Excel otomatikleştirmek için kullanabileceğiniz birçok türü ortaya çıkarır. Örneğin, program aracılığıyla grafik oluşturma, çalışma sayfaları biçimlendirmek ve aralıkları ve hücre değerlerini ayarlayın. Daha fazla bilgi için bkz: [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md).  
   
  Visual Studio'daki Excel çözümleri geliştirirken de kullanabilirsiniz *konak öğelerini* ve *konak denetimlerini* Çözümlerinizdeki. Excel nesne modeli, yaygın olarak kullanılan belirli nesneleri gibi genişletmek nesneleri bunlar <xref:Microsoft.Office.Interop.Excel.Worksheet> ve <xref:Microsoft.Office.Interop.Excel.Range> nesneleri. Genişletilmiş nesneler esas alan Excel nesneleri gibi davranır, ancak nesnelere ek olaylar ve veri bağlama özellikleri ekleyin. Daha fazla bilgi için bkz: [otomatikleştirme Excel genişletilmiş nesneleri kullanarak tarafından](../vsto/automating-excel-by-using-extended-objects.md).  
   
-##  <a name="doclevel"></a>Excel için belge düzeyi özelleştirmelerini geliştirme  
+##  <a name="doclevel"></a> Excel için belge düzeyi özelleştirmelerini geliştirme  
  Microsoft Office Excel için belge düzeyi özelleştirme belirli bir çalışma kitabı ile ilişkili bir derlemeyi oluşur. Derleme, genellikle UI özelleştirerek ve Excel'i otomatikleştirme çalışma kitabını genişletir. Yalnızca ilişkili çalışma kitabını Excel'de açık olduğunda bir VSTO Excel ile ilişkili olan eklenti, özelleştirmesinde uygulamak işlevselliği kullanılabilir.  
   
  Excel için belge düzeyi özelleştirme projesi oluşturmak için Excel çalışma kitabı veya Excel Şablonu proje şablonlarını kullanın **yeni proje** Visual Studio'nun iletişim kutusu. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
@@ -71,7 +70,7 @@ ms.lasthandoff: 01/10/2018
   
  Bunlar hakkında daha fazla bilgi için oluşturulan sınıflar ve kullanabileceğiniz diğer özellikler bir belge düzeyi projede görmek [belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md).  
   
-##  <a name="applevel"></a>Excel için VSTO eklentileri geliştirme  
+##  <a name="applevel"></a> Excel için VSTO eklentileri geliştirme  
  Microsoft Office Excel bir VSTO eklentisini Excel tarafından yüklenen bir derleme oluşur. Derleme, genellikle UI özelleştirerek ve Excel'i otomatikleştirme Excel genişletir. Belirli bir çalışma kitabı ile ilişkili olan bir belge düzeyi özelleştirme, bir VSTO eklenti uygulamak işlevsellik herhangi bir tek çalışma kitabına sınırlı değildir.  
   
  Excel için VSTO eklenti projesi oluşturmak için Excel çalışma kitabı veya Excel Şablonu proje şablonlarını kullanın **yeni proje** Visual Studio'nun iletişim kutusu. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
@@ -85,7 +84,7 @@ ms.lasthandoff: 01/10/2018
   
  Hakkında daha fazla bilgi için `ThisAddIn` sınıfı ve bir VSTO eklenti, kullanabileceğiniz diğer Visual Studio özellikler bkz [programlama VSTO eklentileri](../vsto/programming-vsto-add-ins.md).  
   
-##  <a name="UI"></a>Excel kullanıcı arabirimini özelleştirme  
+##  <a name="UI"></a> Excel kullanıcı arabirimini özelleştirme  
  Excel kullanıcı arabirimini özelleştirmek için birçok farklı yol vardır. Bazı seçenekler için tüm proje türleri kullanılabilir ve diğer seçenekleri yalnızca VSTO eklentileri ya da belge düzeyi özelleştirmeleri için kullanılabilir.  
   
 ### <a name="options-for-all-project-types"></a>Tüm proje türleri için seçenekleri  

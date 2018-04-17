@@ -1,13 +1,10 @@
 ---
-title: "Visual Studio'da SharePoint araçları için hata ayıklama uzantıları | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'da SharePoint araçları için hata ayıklama uzantıları | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80cc884e45d9db10f6552fa44e611e87b7b4f801
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio'da SharePoint Araçları için Hata Ayıklama Uzantıları
   Bir SharePoint araçları uzantısı dağıtmak için Oluştur bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantı derlemesi ve uzantısıyla dağıtmak istediğiniz diğer dosyaları içeren uzantısı (VSIX) paketi. VSIX paketi açık paketleme kuralları (OPC) standart izleyen sıkıştırılmış bir dosyadır. VSIX paket .vsix uzantısına sahiptir.  
@@ -132,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  İçinde **Çözüm Gezgini**proje şablonu veya öğe şablonu projeniz için kısayol menüsünü açın ve ardından **projeyi**.  
   
-7.  Proje düğümünün kısayol menüsünün yeniden açın ve ardından **Düzenle***YourTemplateProjectName***.csproj** veya **Düzenle**  *YourTemplateProjectName***.vbproj**.  
+7.  Proje düğümünün kısayol menüsünün yeniden açın ve ardından **Düzenle***YourTemplateProjectName***.csproj** veya **Düzenle***YourTemplateProjectName***. vbproj**.  
   
 8.  Aşağıdaki bulun `VSTemplate` proje öğesi.  
   

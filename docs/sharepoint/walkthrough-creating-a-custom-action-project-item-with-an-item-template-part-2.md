@@ -1,25 +1,24 @@
 ---
-title: "İzlenecek yol: bir özel eylem proje öğesi ile bir öğe şablonu, bölüm 2 oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: bir özel eylem proje öğesi ile bir öğe şablonu, bölüm 2 oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 55794f7976e90e34ba24654400f755de9244e13e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>İzlenecek yol: Öğe Şablonu, Bölüm 2 ile Özel bir Eylem Proje Öğesi Oluşturma
   Özel bir SharePoint proje öğesi türü tanımlama ve Visual Studio öğe şablonunda ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Yeni bir proje öğesi örneğini bir projeye eklemek için şablon kullanılırken kullanıcılardan bilgi toplamak için sihirbazı kullanabilirsiniz. Topladığınız bilgileri, proje öğesi başlatmak için kullanılabilir.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Seçin **WPF kullanıcı denetimi Kitaplığı** proje şablonu, proje adı **ItemTemplateWizard**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **ItemTemplateWizard** çözüme proje.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **ItemTemplateWizard** çözüme proje.  
   
 6.  UserControl1 öğeyi projeden silin.  
   
@@ -209,7 +208,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Hakkında daha fazla bilgi için `WizardExtension` öğesi, bkz: [WizardExtension öğesi &#40; Visual Studio şablonları &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Hakkında daha fazla bilgi için `WizardExtension` öğesi, bkz: [WizardExtension öğesi &#40;Visual Studio şablonları&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Dosyayı kaydedin ve kapatın.  
   
@@ -327,7 +326,7 @@ ms.lasthandoff: 01/10/2018
   
      **Listesi ayarları** sayfası görüntülenir.  
   
-4.  Altında **iletişim** sayfanın üstünde başlığını seçin **SharePoint Geliştirici Merkezi** bağlantı, tarayıcı Web sitesi http://msdn.microsoft.com/sharepoint/ açıldığını doğrulayın default.aspx ve ardından Kapat tarayıcı.  
+4.  Altında **iletişim** sayfanın üstünde başlığını seçin **SharePoint Geliştirici Merkezi** bağlantı, tarayıcı Web sitesi açıldığını doğrulayın http://msdn.microsoft.com/sharepoint/default.aspxve tarayıcıyı kapatın.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Geliştirme bilgisayarı temizleme  
  Proje öğesi testi tamamladıktan sonra proje öğesi şablonu Visual Studio Deneysel örnekten kaldırın.  

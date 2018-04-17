@@ -1,23 +1,21 @@
 ---
 title: "Nasıl yapılır: XML Düzenleyicisi'nden XSLT dönüştürmesi yürütme | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7f2cd765b36024048a4bba5680a0fdc2445a1cc3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2ce56195d0bc9750af3b869cb3e8bb0a780fdcde
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Nasıl yapılır: XML Düzenleyicisi'nden XSLT dönüştürmesi yürütme
 XML Düzenleyicisi'ni dönüştürme gerçekleştirmek ve çıktı görüntülemek XSLT stil sayfasını bir XML belgesi ile ilişkilendirmenizi sağlar. XSLT dönüşümü sonuç çıktısı, yeni bir belge penceresi görüntülenir.  
@@ -34,7 +32,7 @@ XML Düzenleyicisi'ni dönüştürme gerçekleştirmek ve çıktı görüntülem
   
     -   Ekleme bir `xml-stylesheet` işleme yönergesi için XML belgesi. Örneğin, aşağıdaki satırı ekleyin `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` belge giriş için.  
   
-         veya  
+         -veya-  
   
     -   XSLT stil sayfası kullanılarak eklemek **özellikleri** penceresi. Belgedeki **Özellikler penceresini**, tıklatın **Gözat** için düğmesini **stil sayfası** alanına XSLT stil sayfası seçin ve'ı tıklatın **açmak**.  
   

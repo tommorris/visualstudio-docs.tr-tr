@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: içerik denetimlerini kullanarak şablon oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: içerik denetimlerini kullanarak şablon oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - content controls [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6d221b9374bf71df3d66400289c50310263c2e9e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8c7f5026d4cbe8b7c38b8163ce00d893e1e406f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-template-by-using-content-controls"></a>İzlenecek Yol: İçerik Denetimlerini Kullanarak Şablon Oluşturma
   Bu kılavuzda nasıl yapılandırılmış ve yeniden kullanılabilir içerik bir Microsoft Office Word şablonu oluşturmak için içerik denetimleri kullanan bir belge düzeyi özelleştirme oluşturulacağını gösterir.  
@@ -61,7 +60,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Adlı bir Word şablonu projesi oluşturun **ne MyBuildingBlockTemplate**. Sihirbazda, çözümdeki yeni belge oluşturun. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Yeni Word şablonu Tasarımcısı'nda açılır ve ekler **ne MyBuildingBlockTemplate** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Yeni Word şablonu Tasarımcısı'nda açılır ve ekler **ne MyBuildingBlockTemplate** için proje **Çözüm Gezgini**.  
   
 ## <a name="creating-the-employee-table"></a>Çalışan tablosu oluşturma  
  Kullanıcı bir çalışan hakkındaki bilgileri girebilecekleri içerik denetimleri dört farklı türde içeren bir tablo oluşturun.  

@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: Visual Basic projesinde VBA kodu kullanımına sunma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: Visual Basic projesinde VBA kodu kullanımına sunma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,20 +16,21 @@ helpviewer_keywords:
 - host items [Office development in Visual Studio], exposing code to VBA
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8d3d007024cdca160c194285da8f0a741100253d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 39dc659f7c8841bcf350249332278091232a32d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Nasıl Yapılır: Visual Basic Projesinde Kodu VBA Kullanımına Sunma
   Kodda getirebilir bir [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] iki tür kod birbirleri ile etkileşim kurmak istiyorsanız, Visual Basic for Applications (VBA) kodundaki proje.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Visual Basic Visual C# işleminden farklı bir işlemdir. Daha fazla bilgi için bkz: [nasıl yapılır: Visual C &#35; VBA'ya kodu kullanıma sunma Proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+ Visual Basic Visual C# işleminden farklı bir işlemdir. Daha fazla bilgi için bkz: [nasıl yapılır: Visual c VBA'ya kodu kullanıma&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
  Diğer sınıf kodları için farklı bir ana bilgisayar öğesi sınıf kodu için bir işlemdir:  
   
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl yapmak I: çağrı VSTO Kodu VBA'dan?](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
-##  <a name="HostItemCode"></a>Konak öğesi sınıf kodu gösterme  
+##  <a name="HostItemCode"></a> Konak öğesi sınıf kodu gösterme  
  Visual Basic kodu bir konak öğesi sınıfında çağırmak VBA kodu etkinleştirmek için ayarlanmış **EnableVbaCallers** konak öğesi özelliği **doğru**.  
   
  Konak öğesi sınıf yöntemi göstermek ve VBA'dan çağırmak nasıl izlenecek yol için bkz: [izlenecek yol: Visual Basic Projesinde VBA'dan Kod Çağırma](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Konak öğeleri hakkında daha fazla bilgi için bkz: [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Projeyi oluşturun.  
   
-##  <a name="NonHostItem"></a>Bir konak öğesi sınıfında değil kodu gösterme  
+##  <a name="NonHostItem"></a> Bir konak öğesi sınıfında değil kodu gösterme  
  Bir konak öğesi sınıfında değil Visual Basic kodu çağırmak VBA kodu etkinleştirmek için kodu VBA için görünür olacak şekilde değiştirin.  
   
 #### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>VBA konak öğesi sınıfına değil kod kullanıma sunmak için  
@@ -125,6 +124,6 @@ ms.lasthandoff: 01/10/2018
  [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)   
  [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md)   
  [İzlenecek yol: Visual Basic Projesinde VBA'dan Kod Çağırma](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [Nasıl yapılır: Visual C &#35; VBA kodu kullanımına sunma Proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
+ [Nasıl yapılır: Visual c VBA kodu kullanımına sunma&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
   
   

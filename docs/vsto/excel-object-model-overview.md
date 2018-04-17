@@ -1,12 +1,10 @@
 ---
-title: "Excel nesne modeline genel bakış | Microsoft Docs"
-ms.custom: 
+title: Excel nesne modeline genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bbf76579baeebfabf3ec796498c20b32feed4cac
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6b700d3834cf432ff9af2ec17e1daa3011763cac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="excel-object-model-overview"></a>Excel Nesne Modeline Genel Bakış
   Microsoft Office Excel kullanan çözümleri geliştirmek için Excel nesne modeli tarafından sağlanan nesnelerle etkileşim kurabilirsiniz. Bu konu en önemli nesneleri sunar:  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
  Bu konu Excel nesne modeline kısa bir genel bakış sağlar. Burada, öğrenin tüm Excel nesne modeli hakkında daha fazla kaynaklar için bkz [Excel nesne modeli belgelerini kullanarak](#ExcelOMDocumentation).  
   
- ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl yapmak I: kullanım olay işleyicileri içinde bir Excel 2007 eklenti?](http://go.microsoft.com/fwlink/?LinkID=130291), ve [nasıl yapmak I: kullanımı bir kabarcık oluşturmak için şekiller Excel'de grafik? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl yapmak I: kullanım olay işleyicileri içinde bir Excel 2007 eklenti?](http://go.microsoft.com/fwlink/?LinkID=130291), ve [nasıl yapmak I: kullanım kabarcık grafiği oluşturmak için şekiller Excel'de? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="accessing-objects-in-an-excel-project"></a>Excel projesinde nesnelere erişme  
  Excel için yeni bir VSTO eklenti projesi oluşturduğunuzda, Visual Studio ThisAddIn.vb veya ThisAddIn.cs kod dosyasını otomatik olarak oluşturur. Uygulama nesnesi kullanarak erişebilirsiniz `Me.Application` veya `this.Application`.  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 |Sheet2.vb|Sheet2.cs|  
 |Sheet3.vb|Sheet3.cs|  
   
- Kullanabileceğiniz `Globals` erişmek için projenizdeki sınıfı `ThisWorkbook`, `Sheet1`, `Sheet2`, veya `Sheet3` gelen ilgili sınıf dışında. Daha fazla bilgi için bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md). Aşağıdaki örnek çağrıları <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> yöntemi `Sheet1` kod birinde olup yerleştirilir bağımsız olarak `Sheet`  *n*  sınıfları veya `ThisWorkbook` sınıfı.  
+ Kullanabileceğiniz `Globals` erişmek için projenizdeki sınıfı `ThisWorkbook`, `Sheet1`, `Sheet2`, veya `Sheet3` gelen ilgili sınıf dışında. Daha fazla bilgi için bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md). Aşağıdaki örnek çağrıları <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> yöntemi `Sheet1` kod birinde olup yerleştirilir bağımsız olarak `Sheet` *n* sınıfları veya `ThisWorkbook` sınıfı.  
   
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]  
@@ -102,7 +101,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio genişletir <xref:Microsoft.Office.Interop.Excel.Range> sağlayarak nesne <xref:Microsoft.Office.Tools.Excel.NamedRange> ve <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> türleri. Bu tür aynı özelliklerin çoğunu sahip bir <xref:Microsoft.Office.Interop.Excel.Range> veri bağlama yetenekleri ve yeni olaylar gibi yeni özellikler yanı sıra nesnesi. Daha fazla bilgi için bkz: [NamedRange denetimi](../vsto/namedrange-control.md) ve [XmlMappedRange denetimi](../vsto/xmlmappedrange-control.md).  
   
-##  <a name="ExcelOMDocumentation"></a>Excel nesne modeli belgelerini kullanma  
+##  <a name="ExcelOMDocumentation"></a> Excel nesne modeli belgelerini kullanma  
  Excel nesne modeli hakkında tam bilgi için Excel birincil birlikte çalışma derlemesi (PIA) başvurusu ve VBA nesne modeli başvurusu başvurabilir.  
   
 ### <a name="primary-interop-assembly-reference"></a>Birincil birlikte çalışma derleme başvurusu  

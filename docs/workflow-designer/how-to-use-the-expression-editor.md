@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be43ad439c8868064fc7e0bab79e051abb991e0d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f9873d341238f3278779277d70da6df56f29f721
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-expression-editor"></a>Nasıl yapılır: ifade Düzenleyicisi'ni kullanın
 İfade Düzenleyicisi birçok iş akışı etkinlikleri girme ve bu ifadeleri değerlendirme bir araç olarak kullanılan bir Windows iş akışı Tasarımcısı denetimdir. İfade Düzenleyicisi düzenleme deneyimi IntelliSense de dahil olmak üzere tam özellikli bir IDE sağlar renklendirme, Paramınfo, diğer özellikler arasında hata dalgalı çizgiler. Bunu girildikten sonra derleyici ifade doğrular. İfade geçersiz ise, bir hata simgesi görüntülenir. Düzenleyici olarak da açılabilir bir **ifade Düzenleyicisi** iletişim kutusu.

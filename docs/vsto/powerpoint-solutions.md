@@ -1,12 +1,10 @@
 ---
-title: "PowerPoint çözümleri | Microsoft Docs"
-ms.custom: 
+title: PowerPoint çözümleri | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,18 +17,19 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], PowerPoint
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9dfa41bdecc7e47a0bf367409aac79d354daaad3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3808ecf78e8a7e110561c558a6278ee4873843c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint Çözümleri
   Visual Studio Proje şablonları, Microsoft Office PowerPoint için VSTO eklentileri oluşturma için kullanabileceğiniz sağlar. VSTO eklentileri PowerPoint'i otomatikleştirmek, PowerPoint özelliklerini genişletmek veya PowerPoint kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz.  
   
- VSTO eklentileri hakkında daha fazla bilgi için bkz: [başlatılan programlama VSTO alma eklentileri](../vsto/getting-started-programming-vsto-add-ins.md) ve [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md). Microsoft Office ile programlamada yeniyseniz, bkz: [Başlarken &#40; Visual Studio &#41; Office geliştirme](../vsto/getting-started-office-development-in-visual-studio.md).  
+ VSTO eklentileri hakkında daha fazla bilgi için bkz: [başlatılan programlama VSTO alma eklentileri](../vsto/getting-started-programming-vsto-add-ins.md) ve [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md). Microsoft Office ile programlamada yeniyseniz, bkz: [Başlarken &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
   
@@ -50,9 +49,9 @@ ms.lasthandoff: 01/10/2018
   
  Bir VSTO eklentiden PowerPoint nesne modeline erişmek için `Application` alanını `ThisAddIn` projenizdeki sınıfı. `Application` Alan döndürür bir <xref:Microsoft.Office.Interop.PowerPoint.Application> PowerPoint geçerli örneği temsil eden nesne. Daha fazla bilgi için bkz: [programlama VSTO eklentileri](../vsto/programming-vsto-add-ins.md).  
   
- PowerPoint nesne modelini çağırdığınızda, PowerPoint için birincil birlikte çalışma derlemesindeki sağlanan türleri kullanabilirsiniz. Birincil birlikte çalışma derlemesi için VSTO eklentisi yönetilen kodda ve PowerPoint COM nesne modelinde arasında bir köprü gibi davranır. PowerPoint birincil birlikte çalışma derlemesi içindeki tüm türler tanımlanan <xref:Microsoft.Office.Interop.PowerPoint> ad alanı. Birincil birlikte çalışma derlemeleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) ve [Office birincil birlikte çalışma derlemeleri](../vsto/office-primary-interop-assemblies.md).  
+ PowerPoint nesne modelini çağırdığınızda, PowerPoint için birincil birlikte çalışma derlemesindeki sağlanan türleri kullanabilirsiniz. Birincil birlikte çalışma derlemesi için VSTO eklentisi yönetilen kodda ve PowerPoint COM nesne modelinde arasında bir köprü gibi davranır. PowerPoint birincil birlikte çalışma derlemesi içindeki tüm türler tanımlanan <xref:Microsoft.Office.Interop.PowerPoint> ad alanı. Birincil birlikte çalışma derlemeleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) ve [Office birincil birlikte çalışma derlemeleri](../vsto/office-primary-interop-assemblies.md).  
   
-##  <a name="WordOMDocumentation"></a>PowerPoint nesne Model belgelerini kullanma  
+##  <a name="WordOMDocumentation"></a> PowerPoint nesne Model belgelerini kullanma  
  PowerPoint nesne modeli hakkında tam bilgi için PowerPoint birincil birlikte çalışma derlemesi (PIA) başvuru ve VBA nesne modeli başvurusu başvurabilir.  
   
 ### <a name="primary-interop-assembly-reference"></a>Birincil birlikte çalışma derleme başvurusu  
@@ -79,7 +78,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: PowerPoint için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
  [Başlarken VSTO eklentilerini programlama](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)   

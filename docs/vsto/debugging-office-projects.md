@@ -1,12 +1,10 @@
 ---
-title: "Office projelerinde hata ayıklama | Microsoft Docs"
-ms.custom: 
+title: Office projelerinde hata ayıklama | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,16 +17,17 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], projects
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c3a3b4d3eebd5b20c4e9eb56b30a8980ceafb8bf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8080e1ffacff73592517e5c1b2cb3d06c3654f15
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-office-projects"></a>Office Projelerinde Hata Ayıklama
-  Aynı Microsoft kullanarak Office projelerinde ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] diğer için kullandığınız araçları [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeleri. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]hata ayıklayıcı, kesme noktaları ekleme ve değişkenleri görüntüleme olanağı gibi özellikleri **Yereller** penceresinde, Office projelerinde hata ayıklama işlemi yaparken de kullanılabilir. Hakkında daha fazla bilgi için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklama araçları, bkz: [Visual Studio'da hata ayıklamayı](/visualstudio/debugger/debugging-in-visual-studio).  
+  Aynı Microsoft kullanarak Office projelerinde ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] diğer için kullandığınız araçları [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeleri. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı, kesme noktaları ekleme ve değişkenleri görüntüleme olanağı gibi özellikleri **Yereller** penceresinde, Office projelerinde hata ayıklama işlemi yaparken de kullanılabilir. Hakkında daha fazla bilgi için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklama araçları, bkz: [Visual Studio'da hata ayıklamayı](/visualstudio/debugger/debugging-in-visual-studio).  
   
 > [!TIP]  
 >  Hata ayıklama işlemini basitleştirmek için derleme ve hata ayıklama önce Office uygulamasının açık tüm örneklerini kapatın.  

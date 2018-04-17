@@ -1,13 +1,10 @@
 ---
-title: "Belge düzeyi özelleştirmeler mimarisi | Microsoft Docs"
-ms.custom: 
+title: Belge düzeyi özelleştirmeler mimarisi | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,17 +19,17 @@ helpviewer_keywords:
 - architecture [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09a8700086ec8a718e14764f807e57fcb1f882f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 659950fee0e292a0e0c37a82bb8a18fe2783824d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-document-level-customizations"></a>Belge Düzeyi Özelleştirmeler Mimarisi
-  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]Microsoft Office Word ve Microsoft Office Excel için belge düzeyi özelleştirmeleri oluşturmak için projeleri içerir. Bu konuda belge düzeyi özelleştirmeleri şu yönlerini açıklanmaktadır:  
+  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] Microsoft Office Word ve Microsoft Office Excel için belge düzeyi özelleştirmeleri oluşturmak için projeleri içerir. Bu konuda belge düzeyi özelleştirmeleri şu yönlerini açıklanmaktadır:  
   
 -   [Özelleştirmeleri anlama](#UnderstandingCustomizations)  
   
@@ -42,14 +39,14 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Belge düzeyi özelleştirmeleri oluşturma hakkında daha fazla genel bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md), [Word için belge düzeyi özelleştirme programlamasına başlama](../vsto/getting-started-programming-document-level-customizations-for-word.md), ve [Excel için belge düzeyi özelleştirme programlamasına başlama](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
+ Belge düzeyi özelleştirmeleri oluşturma hakkında daha fazla genel bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [alma başlatıldı programlama belge düzeyi özelleştirme programlamasına ](../vsto/getting-started-programming-document-level-customizations-for-word.md), ve [Excel için belge düzeyi özelleştirme programlamasına başlama](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
   
-##  <a name="UnderstandingCustomizations"></a>Özelleştirmeleri anlama  
+##  <a name="UnderstandingCustomizations"></a> Özelleştirmeleri anlama  
  Belge düzeyi özelleştirme oluşturmak için Visual Studio'da Office geliştirici araçlarını kullanırken belirli bir belge ile ilişkili bir yönetilen kod derleme oluşturun. Bir belge veya çalışma kitabı bağlı derlemesi ile yönetilen kod uzantılarına sahiptir kabul edilir. Daha fazla bilgi için bkz: [tasarlama ve oluşturma Office çözümleri](../vsto/designing-and-creating-office-solutions.md).  
   
  Belgeyi bir kullanıcı oturum açtığında, derleme Microsoft Office uygulaması tarafından yüklenir. Derleme yüklendikten sonra belge açıkken özelleştirme olaylara yanıt verebilir. Özelleştirme otomatikleştirmek ve belge açık olduğunda ve sınıflarda birini kullanabilirsiniz ancak uygulama genişletmek için nesne modelini de çağırabilirsiniz [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  
   
- Derleme uygulamanın COM bileşenlerini birincil birlikte çalışma derlemesi uygulamanın üzerinden iletişim kurar. Daha fazla bilgi için bkz: [Office birincil birlikte çalışma derlemeleri](../vsto/office-primary-interop-assemblies.md) ve [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Derleme uygulamanın COM bileşenlerini birincil birlikte çalışma derlemesi uygulamanın üzerinden iletişim kurar. Daha fazla bilgi için bkz: [Office birincil birlikte çalışma derlemeleri](../vsto/office-primary-interop-assemblies.md) ve [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Her derleme farklı uygulama etki alanında bir kullanıcı aynı anda birden çok belge düzeyi özelleştirmeleri açarsa yüklenir. Başka bir deyişle, hatalı davranan bir çözüm diğer çözümlerin başarısız olmasına sebep olamaz. Belge düzeyi özelleştirmeleri, tek bir uygulama etki alanındaki tek bir belgenin ile çalışmak üzere tasarlanmıştır. Belge arası iletişim için tasarlanmamıştır. Uygulama etki alanları hakkında daha fazla bilgi için bkz: [uygulama etki alanları](/dotnet/framework/app-domains/application-domains).  
   
@@ -102,7 +99,7 @@ ms.lasthandoff: 01/10/2018
   
  Bu dosya biçimlerinde özelleştirmeleri kullanmak için son kullanıcılarınız istiyorsanız, yapı ve yukarıdaki tabloda belirtilen desteklenen dosya biçimleri birini kullanan bir özelleştirme dağıtın. Özelleştirme yükledikten sonra son kullanıcıların Word XML belgesinde kaydedebilirsiniz (* xml) biçimi veya Word 2003 XML belgesi (\*xml) biçimi ve özelleştirme çalışmaya devam edecektir beklendiği gibi.  
   
-##  <a name="Components"></a>Özelleştirmelerin bileşenleri  
+##  <a name="Components"></a> Özelleştirmelerin bileşenleri  
  Ana özelleştirmesinde belge ve derleme bileşenleridir. Bu bileşenlerin yanı sıra nasıl Microsoft Office uygulamaları bulmak ve yükledikleri önemli bir rol oynar birkaç bölümden vardır.  
   
 ### <a name="deployment-manifest-and-application-manifest"></a>Dağıtım bildirimi ve uygulama bildirimi  
@@ -113,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
  Daha fazla bilgi için bkz: [Office çalışma zamanı genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
-##  <a name="HowCustomizationsWork"></a>Microsoft Office uygulamalarıyla özelleştirmeler nasıl çalışır  
+##  <a name="HowCustomizationsWork"></a> Microsoft Office uygulamalarıyla özelleştirmeler nasıl çalışır  
  Microsoft Office Özelleştirme parçası olan bir belgeyi bir kullanıcı oturum açtığında, uygulama bulmak ve özelleştirme derlemesinin en güncel sürümünü yüklemek için belgeye bağlı dağıtım bildirimini kullanır. Dağıtım bildirimi konumunu _AssemblyLocation isimli özel belge özelliğinde depolanır. Çözümü yapılandırdığınızda bu konum tanımlayan dize özelliğe eklenir.  
   
  Dağıtım bildirim noktalarına en güncel derlemeye işaret eden uygulama bildirimi. Daha fazla bilgi için bkz: [uygulama ve dağıtım bildirimlerini Office çözümlerinde](../vsto/application-and-deployment-manifests-in-office-solutions.md).  

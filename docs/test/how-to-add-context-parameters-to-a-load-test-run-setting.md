@@ -1,20 +1,20 @@
 ---
-title: "Bağlam parametreleri bir yük testi çalışma ayarına Visual Studio'da ekleme | Microsoft Docs"
+title: Bağlam parametreleri bir yük testi çalışma ayarına Visual Studio'da ekleme | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 03db08b701574a4e910b96c843d0f2638e71a4f7
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0d563adc5e6b43aa5371fe08f410880a6aba0a09
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Nasıl yapılır: Bir Yük Testi Çalışma Ayarına Bağlam Parametreleri Ekleme
 
@@ -34,19 +34,19 @@ Websunucusu1 bağlam parametresi değerini atamaktır `http://CorporateStagingWe
 
 Ayrıca, farklı bir yük testi çalışma ayarlarında aynı adı kullanarak bir bağlam parametresi için farklı değerler atama tarafından yük testi farklı ortamlar kullanarak çalıştırabilirsiniz:
 
--   Kurumsal hazırlama Web Server çalıştırma ayarı: WebServer1 adlı bağlam parametresi http://CorporateStagingWebServer =
+-   Kurumsal hazırlama Web Server çalıştırma ayarı: WebServer1 adlı bağlam parametresi =http://CorporateStagingWebServer
 
--   Kurumsal üretim Web Server çalıştırma ayarı: WebServer1 adlı bağlam parametresi http://CorporateProductionWebServer =
+-   Kurumsal üretim Web Server çalıştırma ayarı: WebServer1 adlı bağlam parametresi =http://CorporateProductionWebServer
 
  **Komut satırından çalıştırma ayarını değiştirme**
 
  Bağlam parametresi stratejisi yararlanmak için komut satırından farklı çalışma ayarları kullanmak istiyorsanız, aşağıdaki komutları kullanın:
 
- **Set Test.UseRunSetting= CorporateStagingWebServer**
+ **Test.UseRunSetting= CorporateStagingWebServer ayarlayın**
 
  - ve -
 
- **mstest /testcontainer:loadtest1.loadtest**
+ **mstest'i /testcontainer:loadtest1.loadtest**
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Bir çalışma ayarına bağlam parametresi eklemek için
 
@@ -58,7 +58,7 @@ Ayrıca, farklı bir yük testi çalışma ayarlarında aynı adı kullanarak bi
 
      Yeni bir bağlam parametresi eklenen **bağlam parametreleri** klasöründe **çalıştırma ayarları** yük testi ağacı klasöründe.
 
-     veya
+     -veya-
 
      Zaten çalışma ayarı içeriyorsa, bir **bağlam parametreleri** klasörünü sağ tıklatın ve ardından **bağlam parametresi Ekle**.
 

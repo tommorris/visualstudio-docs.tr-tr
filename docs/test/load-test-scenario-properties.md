@@ -1,20 +1,20 @@
 ---
-title: "Visual Studio Yük testi senaryosu özellikleri | Microsoft Docs"
+title: Visual Studio Yük testi senaryosu özellikleri | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, properties
 - load tests, scenarios
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7bbda0aeeab1182d2f94300bee557d3973944c6f
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 144a875822034ef3ae10a4f0cb5f1771ebf61fb7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="load-test-scenario-properties"></a>Yük Testi Senaryosu Özellikleri
 
@@ -30,7 +30,7 @@ Yük testi gereksinimlerini karşılamak için Visual Studio, yük test senaryos
 
 |Özellik|Tanım|
 |--------------|----------------|
-|**Browser Mix**|Yük testi için Web tarayıcısı karışımını belirtir. Farklı Web tarayıcısı türleri ve yük dağılımını belirtebilirsiniz.<br /><br />Tarayıcı Karışımını Düzenle iletişim kutusunu açın ve kullanmak için üç nokta (...) düğmesini seçin **Ekle** ve **kaldırmak** yük testinde Web tarayıcısı türlerini seçin.<br /><br />Daha fazla bilgi için bkz: [Web tarayıcısı türlerini belirtme](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
+|**Tarayıcı karışımı**|Yük testi için Web tarayıcısı karışımını belirtir. Farklı Web tarayıcısı türleri ve yük dağılımını belirtebilirsiniz.<br /><br />Tarayıcı Karışımını Düzenle iletişim kutusunu açın ve kullanmak için üç nokta (...) düğmesini seçin **Ekle** ve **kaldırmak** yük testinde Web tarayıcısı türlerini seçin.<br /><br />Daha fazla bilgi için bkz: [Web tarayıcısı türlerini belirtme](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
 |**Ağ karışımı**|Yük testi için ağ karışımı belirtir. Eklenecek hangi ağ türlerini ve bunların yük dağıtımı belirtebilirsiniz.<br /><br />Açmak için üç nokta (...) düğmesini seçin **Ağ Karışımını Düzenle** iletişim kutusu ve kullanım **Ekle** ve **kaldırmak** yük testinde ağ türlerini seçin.<br /><br />Daha fazla bilgi için bkz: [sanal ağ türlerini belirtme](../test/specify-virtual-network-types-in-a-load-test-scenario.md).|
 |**Test karışımı**|Web performans ve birim test karışımı yük testi için belirtir. Hangi testlerin ekleneceğini ve yük dağılımını belirtebilirsiniz.<br /><br />Açmak için üç nokta (...) düğmesini seçin **Test Karışımını düzenleme** iletişim kutusu ve kullanım **Ekle** ve **kaldırmak** yük testinde testleri seçmek için.<br /><br />Daha fazla bilgi için [bir yük testi senaryosu için Test Karışımını düzenleme](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
 |**Test karışım türü**|Yük testi için test karışımı modeli belirtir.<br /><br />Açmak için üç nokta (...) düğmesini seçin **Test Karışımını düzenleme** iletişim kutusu ve kullanım açılan altında **Test karışımı modeli** yük testinde kullanmak için test karışımı modeli seçin.<br /><br />Daha fazla bilgi için bkz: [karışımı modellerini düzenleme](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).|

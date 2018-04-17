@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Karmaşık veri bağlamada VSTO eklenti proje | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Karmaşık veri bağlamada VSTO eklenti proje | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - complex data [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 95f8d2d30bb5d8bedfe70f0b15f9e956d91f4345
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 46225b8010ade4eaa7188f50ed7c31775e49b39d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>İzlenecek yol: Karmaşık veri bağlama VSTO eklenti projesindeki
   Konak denetimleri ve VSTO eklentisi projelerine Windows Forms denetimlerine veri bağlayabilirsiniz. Bu kılavuz, Microsoft Office Excel çalışma sayfasına denetimler ekleme ve çalışma zamanında verilere denetimler bağlama gösterilmiştir.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 -   SQL Server 2005 veya SQL Server 2005 Express'in çalışan bir örneğini erişimi `AdventureWorksLT` bağlı örnek veritabanı. İndirebilirsiniz `AdventureWorksLT` veritabanını [CodePlex Web sitesinde](http://go.microsoft.com/fwlink/?LinkId=115611). Veritabanı ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   

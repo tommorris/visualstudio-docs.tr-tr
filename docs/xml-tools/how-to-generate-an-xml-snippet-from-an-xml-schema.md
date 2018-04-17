@@ -1,23 +1,21 @@
 ---
-title: "Nasıl yapılır: XML şemasından bir XML parçacığını oluştur | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: XML şemasından bir XML parçacığını oluştur | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e8b30c782cea694fdc400cd84047f7ab1add823b
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 68e306cfcc967c169622b8a02903fcde22c5c0c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Nasıl yapılır: XML şemasından bir XML parçacığını oluştur
 XML Düzenleyicisi'ni bir XML Şeması Tanım Dili (XSD) şemadan XML parçacıkları oluşturabilme özelliği vardır. Örneğin, öğe adı yanındaki konumlandırılmış sırada bir XML dosyasına yazma gibi öğenin bu öğe için şema bilgileri üretilen XML verileri ile doldurmak için SEKME tuşuna basabilirsiniz.  
@@ -36,7 +34,7 @@ XML Düzenleyicisi'ni bir XML Şeması Tanım Dili (XSD) şemadan XML parçacık
   
 -   İmleç hemen öğe adının sağında yer alması gerekir.  
   
-Oluşturulan kod parçacığında, tüm gerekli öznitelikler ve öğeler içerir. Varsa `minOccurs` biri, gerekli en az bu öğenin örnek sayısı en çok 100 örnekleri parçacığı dahil sayısından daha büyük. Herhangi bir kod parçacığını sabit değerleri şema sonucunda bulunan değerleri sabit. `xsd:any`ve `xsd:anyAttribute` öğeleri göz ardı edilir ve hiçbir ek kod parçacığında yapılardan sonucu.  
+Oluşturulan kod parçacığında, tüm gerekli öznitelikler ve öğeler içerir. Varsa `minOccurs` biri, gerekli en az bu öğenin örnek sayısı en çok 100 örnekleri parçacığı dahil sayısından daha büyük. Herhangi bir kod parçacığını sabit değerleri şema sonucunda bulunan değerleri sabit. `xsd:any` ve `xsd:anyAttribute` öğeleri göz ardı edilir ve hiçbir ek kod parçacığında yapılardan sonucu.  
   
 Varsayılan değerler oluşturulan ve düzenlenebilir değerleri olarak kaydedilir. Şema varsayılan bir değer belirtir, bu varsayılan değer kullanılır. Ancak, şema varsayılan değer boş bir dize ise, düzenleyici varsayılan değerleri aşağıdaki şekilde oluşturur:  
   

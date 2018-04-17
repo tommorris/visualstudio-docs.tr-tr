@@ -1,12 +1,10 @@
 ---
-title: "Tasarlama ve Office çözümleri oluşturma | Microsoft Docs"
-ms.custom: 
+title: Tasarlama ve Office çözümleri oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Office project types in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7f5a0163d422e5bb04e3c43b5455cc94dde06f09
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e43824ed3fa34a7cd22b98fb25f946f36cb8eab6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-and-creating-office-solutions"></a>Office Çözümleri Tasarlama ve Oluşturma
   Visual Studio birkaç farklı türde Office çözümleri oluşturmak için kullanabileceğiniz proje şablonları sağlar. Bu bölümde belgelerin proje şablonlarını açıklar ve Office projeleri oluşturma hakkında yönergeler sağlar. Projenizi oluşturduktan sonra kod ve kullanıcı arabirimi özelleştirmelerini uygulamak hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirme](../vsto/developing-office-solutions.md).  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
  Visual Studio, projenizin hedef .NET Framework değiştirir ve çözümünüzü dağıtmak için ClickOnce kullanarak, .NET Framework'ün karşılık gelen sürümü de seçtiğinizden emin olun **Önkoşullar** iletişim kutusu. Projeniz için hedef Framework'ü değiştirdiğinizde, bu seçimi otomatik olarak değişmez. Daha fazla bilgi için bkz: [nasıl yapılır: Office çözümlerini çalıştırmak için yükleme önkoşulları son kullanıcı bilgisayarlarında](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
->  .NET Framework 3.5 veya önceki kullanarak oluşturduğunuz Office projelerinde hedefleyemez [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Kullanarak oluşturduğunuz office projeleri [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] sürümünde ilk yapılan özellikleri gerektirir[!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
+>  .NET Framework 3.5 veya önceki kullanarak oluşturduğunuz Office projelerinde hedefleyemez [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Kullanarak oluşturduğunuz office projeleri [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] sürümünde ilk yapılan özellikleri gerektirir [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
   
 ### <a name="understanding-when-the-office-pias-are-required-on-end-user-computers"></a>Son kullanıcı bilgisayarlarında Office PIA gerektiğinde anlama  
  Varsayılan olarak, Office birincil birlikte çalışma derlemeleri (PIA) son kullanıcı bilgisayarlarında yüklü gerekmez **birlikte çalışma türlerini katıştır** projesinde her Office PIA başvuru özelliği ayarlanmış **doğru**, hangi varsayılan değerdir. Bu senaryoda, projeyi derlerken çözümünüz tarafından kullanılan PIA türleri için tür bilgisi çözüm derlemeye katıştırılır. Çalışma zamanında gömülü tür bilgileri yerine PIA Office uygulamasının COM tabanlı nesne modelini çağırmak için kullanılır. PIA türlerinden çözümünüze nasıl katıştırılmış hakkında daha fazla bilgi için bkz: [tür Eşdeğerliği ve katıştırılmış birlikte çalışma türlerini](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).  

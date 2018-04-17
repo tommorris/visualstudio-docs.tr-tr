@@ -1,13 +1,10 @@
 ---
-title: "Outlook nesne modeline genel bakış | Microsoft Docs"
-ms.custom: 
+title: Outlook nesne modeline genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.OutlookAddin
 dev_langs:
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 481a18d40f17aa5488afabf1dd04f3cf6ed345b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 9dbf629961a72bc1294da4f3abea563476922716
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="outlook-object-model-overview"></a>Outlook Nesne Modeline Genel Bakış
   Microsoft Office Outlook için VSTO eklentileri geliştirmek için Outlook nesne modeli tarafından sağlanan nesnelerle etkileşim kurabilirsiniz. Outlook nesne modeli sınıfları ve kullanıcı arabirimi öğelerini temsil eden arabirimler sağlar. Örneğin, <xref:Microsoft.Office.Interop.Outlook.Application> nesnesini temsil eden tüm uygulama <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> nesnesi, e-posta veya diğer öğeleri içeren bir klasörü temsil eder ve <xref:Microsoft.Office.Interop.Outlook.MailItem> nesnesi, bir e-posta iletisini temsil eder.  
@@ -104,7 +101,7 @@ ms.lasthandoff: 01/10/2018
  Varsayılan erişim gösteren bir örnek <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> ve yeni bir <xref:Microsoft.Office.Interop.Outlook.MAPIFolder>, bkz: [nasıl yapılır: program aracılığıyla özel klasör öğeleri Oluştur](../vsto/how-to-programmatically-create-custom-folder-items.md).  
   
 ### <a name="mailitem-object"></a>MailItem Nesnesi  
- <xref:Microsoft.Office.Interop.Outlook.MailItem> Nesnesi, bir e-posta iletisini temsil eder. <xref:Microsoft.Office.Interop.Outlook.MailItem>nesneleridir genellikle klasörler gibi **gelen**, **Gönderilmiş öğeler**, ve **Giden Kutusu**. <xref:Microsoft.Office.Interop.Outlook.MailItem>özellikleri ve oluşturmak ve e-posta iletileri göndermek için kullanılan yöntemleri gösterir.  
+ <xref:Microsoft.Office.Interop.Outlook.MailItem> Nesnesi, bir e-posta iletisini temsil eder. <xref:Microsoft.Office.Interop.Outlook.MailItem> nesneleridir genellikle klasörler gibi **gelen**, **Gönderilmiş öğeler**, ve **Giden Kutusu**. <xref:Microsoft.Office.Interop.Outlook.MailItem> özellikleri ve oluşturmak ve e-posta iletileri göndermek için kullanılan yöntemleri gösterir.  
   
  E-posta iletisine oluşturmayı gösteren bir örnek için bkz: [nasıl yapılır: program aracılığıyla e-posta öğesi oluşturma](../vsto/how-to-programmatically-create-an-e-mail-item.md).  
   
@@ -114,16 +111,16 @@ ms.lasthandoff: 01/10/2018
  Randevu oluşturmayı gösteren bir örnek için bkz: [nasıl yapılır: program aracılığıyla toplantı isteği oluşturma](../vsto/how-to-programmatically-create-a-meeting-request.md).  
   
 ### <a name="taskitem-object"></a>TaskItem nesnesi  
- <xref:Microsoft.Office.Interop.Outlook.TaskItem> Nesnesi, belirli bir zaman çerçevesinde gerçekleştirilecek bir görevi temsil eder. <xref:Microsoft.Office.Interop.Outlook.TaskItem>nesneleri içinde bulunur **görevleri** klasör.  
+ <xref:Microsoft.Office.Interop.Outlook.TaskItem> Nesnesi, belirli bir zaman çerçevesinde gerçekleştirilecek bir görevi temsil eder. <xref:Microsoft.Office.Interop.Outlook.TaskItem> nesneleri içinde bulunur **görevleri** klasör.  
   
  Bir görev oluşturmak için kullanmak [CreateItem](http://msdn.microsoft.com/en-us/771707fb-5f34-473d-9fdf-09a6a7f55ece) yöntemi <xref:Microsoft.Office.Interop.Outlook.Application> nesne ve değer geçirmek <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> parametresi için.  
   
 ### <a name="contactitem-object"></a>ContactItem nesnesi  
- <xref:Microsoft.Office.Interop.Outlook.ContactItem>Nesnesini temsil eden bir kişi **kişiler** klasör. <xref:Microsoft.Office.Interop.Outlook.ContactItem>Bunlar, adresini, e-posta adresleri ve telefon numaraları gibi temsil eden kişiler için kişi bilgilerini, çeşitli nesneleri içerir.  
+ <xref:Microsoft.Office.Interop.Outlook.ContactItem>Nesnesini temsil eden bir kişi **kişiler** klasör. <xref:Microsoft.Office.Interop.Outlook.ContactItem> Bunlar, adresini, e-posta adresleri ve telefon numaraları gibi temsil eden kişiler için kişi bilgilerini, çeşitli nesneleri içerir.  
   
  Yeni bir kişinin nasıl oluşturulduğunu gösteren bir örnek için bkz: [nasıl yapılır: Outlook Kişilerine program aracılığıyla giriş ekleme](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Var olan bir kişi arama gösteren örnek için bkz: [nasıl yapılır: program aracılığıyla belirli bir kişi için arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md).  
   
-##  <a name="refdoc"></a>Outlook nesne modeli belgelerini kullanma  
+##  <a name="refdoc"></a> Outlook nesne modeli belgelerini kullanma  
  Outlook nesne modeli hakkında tam bilgi için Outlook birincil birlikte çalışma derlemesi (PIA) başvuru ve VBA nesne modeli başvurusu başvurabilir.  
   
 ### <a name="primary-interop-assembly-reference"></a>Birincil birlikte çalışma derleme başvurusu  

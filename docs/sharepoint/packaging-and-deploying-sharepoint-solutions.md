@@ -1,12 +1,10 @@
 ---
-title: "Paketleme ve SharePoint çözümlerini dağıtma | Microsoft Docs"
-ms.custom: 
+title: Paketleme ve SharePoint çözümlerini dağıtma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging and deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e25d0829305f414712590296b6121d62583736a2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8faeb21b7c32f1af91a9149b1b9f6bcadafeed7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="packaging-and-deploying-sharepoint-solutions"></a>SharePoint Çözümlerini Paketleme ve Dağıtma
   Genellikle, bir SharePoint çözüm, bir çözüm paketi (.wsp) dosyası kullanarak bir SharePoint sunucusuna dağıtılır. SharePoint Proje öğeleri özelliklerini düzenlemek ve SharePoint özelliklerinizi dağıtmak üzere paket oluşturmak için Visual Studio'yu kullanabilirsiniz.  
@@ -39,12 +38,12 @@ ms.lasthandoff: 01/10/2018
   
 -   [SharePoint çözümlerini dosyalarında dağıtma](#DeployingFiles)  
   
-##  <a name="Creating"></a>Özellikleri ve paketleri oluşturma  
+##  <a name="Creating"></a> Özellikleri ve paketleri oluşturma  
  Visual Studio ilgili SharePoint elemanlara gruplamak için kullanabileceğiniz bir *özelliği*. Örneğin, bir kişi listesi tanımı için bir özellik listesi örneği ve liste tanımını bulunabilir. Tek bir özellik dağıtım amacıyla bu iki öğenin birleştirebilirsiniz. Özellikleri hakkında daha fazla bilgi için bkz: [yapı taşı: Özellikler](http://go.microsoft.com/fwlink/?LinkID=169183).  
   
  Ardından, SharePoint tarafından sunucuya dosyaları dağıtmak için gereken bir biçimde dosyaları depolayan birden çok özellikleri, site tanımları, derlemeler ve diğer dosyaları tek bir pakete, paket için bir SharePoint çözüm paketi (.wsp) oluşturabilirsiniz. Daha fazla bilgi için bkz: [yapı taşı: çözümleri](http://go.microsoft.com/fwlink/?LinkID=169186).  
   
-##  <a name="Tools"></a>Özellik ve aracı desteği paketleme  
+##  <a name="Tools"></a> Özellik ve aracı desteği paketleme  
  Hızlı bir şekilde özellikleri ve çözüm paketler daha kolay dağıtım için SharePoint dosyalarınızı düzenlemek için Visual Studio'da SharePoint geliştirme araçlarını kullanabilirsiniz. Özellik ve çözüm paketi yapılandırmak için aşağıdaki araçları kullanabilirsiniz.  
   
 -   Özellik Tasarımcısı ve paket tasarımcısını.  
@@ -88,12 +87,12 @@ ms.lasthandoff: 01/10/2018
 ### <a name="solution-explorer"></a>Çözüm Gezgini  
  Çözüm Gezgini gidin ve SharePoint proje dosyalarını açmak için kullanabilirsiniz. Bağlam menüsü özellikleri, özellik Olay alıcıları eklemek için Çözüm Gezgini'nde kullanın ve kaynaklar özellik. Ayrıca, paket tasarımcıların ve özellik tasarımcıları dağıtımı için paketleri ve özellikleri yapılandırmak için açabilirsiniz.  
   
-##  <a name="Deploying"></a>SharePoint çözümlerini dağıtma  
+##  <a name="Deploying"></a> SharePoint çözümlerini dağıtma  
  Visual Studio'da paket ve Özellikler özelleştirdikten sonra SharePoint sunucularına dağıtmak için bir .wsp dosyası oluşturabilirsiniz. Hata ayıklama ve yalnızca geliştirme bilgisayarındaki SharePoint sunucusundaki .wsp test etmek için Visual Studio'yu kullanabilirsiniz. Uzak bir SharePoint server, SharePoint çözümlerini dağıtma hakkında daha fazla bilgi için bkz: [bir çözüm dağıtma](http://go.microsoft.com/fwlink/?LinkID=169194).  
   
  Ayrıca geliştirme bilgisayarındaki dağıtım adımları özelleştirebilirsiniz. Daha fazla bilgi için bkz: [dağıtma, yayımlama ve yükseltme SharePoint çözüm paketlerini](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
   
-##  <a name="DeployingFiles"></a>SharePoint çözümlerini dosyalarında dağıtma  
+##  <a name="DeployingFiles"></a> SharePoint çözümlerini dosyalarında dağıtma  
  SharePoint çözümünüze bir SharePoint proje öğesi eklediğinizde, genellikle, tüm dosyaları dahil gereklidir. Derlenmiş olabilir dosyalar (kod dosyaları) çözümü çıkış derlemeye oluşturulur. Ancak, aynı zamanda derlenebilir olmayan dosyaları, örneğin, .xml, .txt veya kaynak dosyaları, bir SharePoint projesine eklemeniz gerekebilir. Bu dosyalar otomatik olarak çözüm içinde paketlenmiş değil. Paketlenmiş emin olmak için ya da dosyaları eşlenmiş bir klasörde veya bir SharePoint proje öğesi ekleyin.  
   
  Çözüm dağıtıldığında eşlenen klasörler için eklenen dosyalar için SharePoint hive otomatik olarak kopyalanır. Bir SharePoint proje öğesi eklenen dosyaların dağıtılan belirtilen bir konuma **dağıtım konumu** kısmen ayarlanır her dosya için özelliği temel alarak **dağıtım türü** özelliği. Varsayılan olarak, **dağıtım türü** özellik değeri **NoDeployment**, yani dosya çözümüyle dağıtılmaz. Dosyanın pakete dahil etmek özellik için başka bir değer ayarlamanız gerekir.  

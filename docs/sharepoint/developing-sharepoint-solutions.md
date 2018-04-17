@@ -1,13 +1,10 @@
 ---
-title: "SharePoint çözümleri geliştirme | Microsoft Docs"
-ms.custom: 
+title: SharePoint çözümleri geliştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
 - VS.SharePointTools.Project.ProjectItemProperties
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 848ddab54dd9e7617cce7758fa06d939700f2c3b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>SharePoint Çözümleri Geliştirme
   Birkaç SharePoint proje türü şablonları kullanılabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint siteleri ve site öğeleri oluşturmak için. Kullanılabilir proje türleri listesi için bkz: [SharePoint Proje ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md). Bir SharePoint Proje özelliklerini ve bir açıklama öğelerin aşağıda verilmiştir.  
@@ -56,7 +53,7 @@ ms.lasthandoff: 01/10/2018
  Bir özelliği bir SharePoint projesine eklendiğinde görünür **Çözüm Gezgini** varsayılan bir düğüm olarak özellik adını*x*.feature, burada *x* benzersiz bir sayıdır. Bir özelliğin SharePoint sunucusuna dağıtıldıktan sonra bir SharePoint Yöneticisi, SharePoint sitesini kullanıcılar için kullanılabilir duruma etkinleştirebilirsiniz.  
   
 #### <a name="package-node"></a>Paket düğümü  
- **Paket** düğümü SharePoint proje için dağıtım mekanizması olarak görev yapar tek bir dosya içerir. Olarak bilinen bu dosyayı bir *çözüm**paket*, değil. CAB tabanlı bir. WSP uzantısı. Bir çözüm paketi özellikleri, site tanımları ve SharePoint sitelerine Uygula ve etkinleştir veya tek tek devre dışı bırakan derlemeler kümesini içeren dağıtılabilir, yeniden kullanılabilir bir dosyadır. **Paket** düğüm ayrıca her zaman Package.wspdef, adlı bir dosyayı içeren bir [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] paket tanımı dosyası. Bir paket SharePoint çalıştıran sunucuya dağıtıldıktan sonra SharePoint Yöneticisi yükleyin ve onun özelliklerini etkinleştirin.  
+ **Paket** düğümü SharePoint proje için dağıtım mekanizması olarak görev yapar tek bir dosya içerir. Olarak bilinen bu dosyayı bir *çözüm ** paket*, değil. CAB tabanlı bir. WSP uzantısı. Bir çözüm paketi özellikleri, site tanımları ve SharePoint sitelerine Uygula ve etkinleştir veya tek tek devre dışı bırakan derlemeler kümesini içeren dağıtılabilir, yeniden kullanılabilir bir dosyadır. **Paket** düğüm ayrıca her zaman Package.wspdef, adlı bir dosyayı içeren bir [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] paket tanımı dosyası. Bir paket SharePoint çalıştıran sunucuya dağıtıldıktan sonra SharePoint Yöneticisi yükleyin ve onun özelliklerini etkinleştirin.  
   
  Görüntülemek veya paket düğümünde çift tıklatarak veya kısayol menüsünü açarak ve ardından paket tasarımcısını paketin içeriğini değiştirme **açık**. Daha fazla bilgi için bkz: [SharePoint çözüm paketleri oluşturma](../sharepoint/creating-sharepoint-solution-packages.md).  
   
@@ -132,10 +129,10 @@ ms.lasthandoff: 01/10/2018
 |[Nasıl yapılır: Eşlenmiş Klasörler Ekleme ve Kaldırma](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Nasıl eşlenen klasörler açıklar SharePoint kaynaklarını daha kolay erişim sağlamak için projenize eklenebilir.|  
 |[Korumalı Çözümle İlgili Konular](../sharepoint/sandboxed-solution-considerations.md)|Korumalı çözümler ile ilişkili sorunlar açıklanmaktadır.|  
 |[SharePoint Çözümleri için Güvenlik](../sharepoint/security-for-sharepoint-solutions.md)|SharePoint çözümleri geliştirmek için güvenlik konuları açıklar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[URL Seçici iletişim kutusu &#40; SharePoint geliştirme Visual Studio &#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Projenizdeki veya yerel SharePoint sunucusuna kaynaklara yolu başvurular eklemek için kullanabileceğiniz bir iletişim kutusu açıklar.|  
+|[URL Seçici iletişim kutusu &#40;Visual Studio'da SharePoint geliştirme&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Projenizdeki veya yerel SharePoint sunucusuna kaynaklara yolu başvurular eklemek için kullanabileceğiniz bir iletişim kutusu açıklar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Başlarken &#40; SharePoint geliştirme Visual Studio &#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
+ [Başlarken &#40;Visual Studio'da SharePoint geliştirme&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Sunucu Gezgini kullanarak SharePoint bağlantılarına gözatma](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [SharePoint Çözümlerini Paketleme ve Dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

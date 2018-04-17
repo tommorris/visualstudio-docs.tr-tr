@@ -1,12 +1,10 @@
 ---
-title: "Korumalı çözüm değerlendirmeleri | Microsoft Docs"
-ms.custom: 
+title: Korumalı çözüm değerlendirmeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b510097dc21c385f67a9358eaca3997cbdc2316
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff85f3407fb24d6d49856bb11ff1852c544cad35
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sandboxed-solution-considerations"></a>Korumalı Çözümle İlgili Konular
   *Korumalı çözümler* Microsoft SharePoint 2010'de, site koleksiyonu kullanıcıların kendi özel kod çözümleri yüklemesine olanak sağlayan bir özelliktir. Yaygın bir korumalı kullanıcılar kendi Web Bölümleri karşıya çözümüdür.  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  Korumalı bir SharePoint uygulama sınırlı bir Web grubu parçası erişimi güvenli, izlenen işlem çalıştırır. Microsoft SharePoint 2010 korumalı çözümler sağlamak için özellikler, çözüm galerileri, izleme çözümü ve doğrulama çerçevesinin bileşimini kullanır.  
   
 ## <a name="specifying-project-trust-level"></a>Proje güven düzeyi belirtme  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]korumalı çözümler Boolean proje özelliği aracılığıyla adlı destekler *Korumalı çözüm*. Projedeki herhangi bir zamanda bu özelliği ayarlayın veya projede oluşturduğunuzda belirtilebilir **SharePoint Özelleştirme Sihirbazı'nı**.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] korumalı çözümler Boolean proje özelliği aracılığıyla adlı destekler *Korumalı çözüm*. Projedeki herhangi bir zamanda bu özelliği ayarlayın veya projede oluşturduğunuzda belirtilebilir **SharePoint Özelleştirme Sihirbazı'nı**.  
   
 > [!NOTE]  
 >  Değiştirme *Korumalı çözüm* oluşturulduktan sonra bir projenin özellik doğrulama hatalarına neden olabilir.  
@@ -74,7 +73,7 @@ ms.lasthandoff: 01/10/2018
  WSS 3. 0'da, yalnızca grup düzeyinde çözümleri dağıtılamıyor. Bu, olası zararlı veya destabilizing çözümleri, etkilenen tüm Web grubu ve tüm diğer site koleksiyonları ve onun altında çalışan uygulamaları dağıtılamıyor olduğunu anlamına gelir. Ancak, korumalı çözümler kullanarak bir alt grup, belirli site koleksiyonu, bu alan için çözümlerinizi dağıtabilirsiniz. Ek koruma sağlamak üzere çözümün derlemesi ana yüklü değil [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] işleminin (w3wp.exe). Bunun yerine, ayrı bir işlemde (SPUCWorkerProcess.exe) yüklenir. Bu işlem izlenir ve kotalar ve CPU döngülerini tüketebilir sıkı döngüler çalıştırma gibi zararlı etkinlikleri gerçekleştirmesine korumalı çözümler grubunu korumak için azaltma uygular.  
   
 ## <a name="site-collection-solution-gallery"></a>Site koleksiyonu çözüm Galerisi  
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]2010 "site koleksiyonu çözüm Galerisi." bilinen bir özelliği vardır Bu özellik SharePoint 2010 Yönetim Merkezi sayfasından veya açarak erişebilir **Site eylemleri** menüsünde seçerek **Site Ayarları**ve ardından **çözümleri** altında bağlantı **galerileri** SharePoint sitesi. Çözüm galerileri kendi site koleksiyonlarında çözümleri yönetmek site koleksiyonu yöneticileri sağlayan çözümleri depolarının ' dir.  
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 "site koleksiyonu çözüm Galerisi." bilinen bir özelliği vardır Bu özellik SharePoint 2010 Yönetim Merkezi sayfasından veya açarak erişebilir **Site eylemleri** menüsünde seçerek **Site Ayarları**ve ardından **çözümleri** altında bağlantı **galerileri** SharePoint sitesi. Çözüm galerileri kendi site koleksiyonlarında çözümleri yönetmek site koleksiyonu yöneticileri sağlayan çözümleri depolarının ' dir.  
   
  Çözüm Galerisi Web SharePoint sitesinin kök dizininde depolanmış bir Belge Kitaplığı ' dir. Çözüm Galerisi site şablonları değiştirir ve çözüm paketlerini destekler. Bir SharePoint çözüm paketi (.wsp) dosyası karşıya yüklendiğinde, korumalı bir çözüm olarak işlenir.  
   
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
   
 -   SPWebEventReceiver  
   
--   Öğesinden türetilen tüm Web bölümleri için destek`System.Web.UI.WebControls.WebParts.WebPart`  
+-   Öğesinden türetilen tüm Web bölümleri için destek `System.Web.UI.WebControls.WebParts.WebPart`  
   
 -   Web Bölümleri  
   

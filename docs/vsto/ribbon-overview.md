@@ -1,12 +1,10 @@
 ---
-title: "Şerit genel bakış | Microsoft Docs"
-ms.custom: 
+title: Şerit genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - custom Ribbon, multiple Ribbons
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b7effa41d667a33d43159df4688403321f24eeea
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: dcd53d1b5d38ff144536f0dea62e441cb2b23072
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-overview"></a>Şerite Genel Bakış
   Şerit, böylece daha kolay bulmak için ilgili komutları düzenlemek için bir yoldur. Şerit üzerindeki denetimleri olarak komutlar görüntülenir. Denetimleri içine düzenlenir *grupları* bir uygulama penceresinin üst kenarında yatay bir bant boyunca. İlgili gruplar sekmelerinde düzenlenir.  

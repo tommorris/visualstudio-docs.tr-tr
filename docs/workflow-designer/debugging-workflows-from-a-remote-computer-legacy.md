@@ -1,5 +1,5 @@
 ---
-title: "İş akışları uzak bir bilgisayardan (eski) hata ayıklama | Microsoft Docs"
+title: İş akışları uzak bir bilgisayardan (eski) hata ayıklama | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 44eaec8f-9959-4ae7-a374-670946f933c1
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be8c1f6a049224cc5b79a82dc6bc100840c72fd0
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: e6a3058d61d2aff0369fd52e1f03726a91a2267c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-workflows-from-a-remote-computer-legacy"></a>Hata ayıklama iş akışları uzak bir bilgisayardan (eski)
 Bu konu, uzak eski hata ayıklamak açıklar [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] eski Windows iş akışı Tasarımcısı ile oluşturulan uygulamaların. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] uygulamanızı gerektiği zaman ya da hedeflemek [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

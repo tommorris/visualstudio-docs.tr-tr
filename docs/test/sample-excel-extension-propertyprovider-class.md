@@ -1,26 +1,26 @@
 ---
-title: "Örnek Excel uzantısı: PropertyProvider Sınıfı | Microsoft Docs"
+title: 'Örnek Excel uzantısı: PropertyProvider Sınıfı | Microsoft Docs'
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c8917661d4df4034cfb97a94c7a515659c558da5
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: a3da33b0c99c84f3680f323b483cebf31448ba62
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-excel-extension-propertyprovider-class"></a>Örnek Excel Uzantısı: PropertyProvider Sınıfı
 Bu dahili sınıfını genişleten <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> sınıf ve özellik hizmetleri sağlar. [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] kaydetmek ve kullanıcı arabirimi (UI) testleri oynatmak için öğeleri.
 
-## <a name="getcontrolsupportlevel-method"></a>GetControlSupportLevel Method
+## <a name="getcontrolsupportlevel-method"></a>GetControlSupportLevel yöntemi
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A> Yöntemi için sağlanan denetim özellik sağlayıcısı sunan destek düzeyini gösteren bir sayı döndürür. Döndürülen değer arttıkça daha fazla özellik sağlayıcısı denetimi destekleyebilir. Bu durumda, yöntem denetler <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IUITechnologyElement.TechnologyName%2A> sağlanan denetiminin özelliği. Değer "Excel" ise ve <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IUITechnologyElement.ControlTypeName%2A> olduğu gösteren bir `CellElement`, yöntemi en yüksek değeri döndürür; Aksi takdirde hiçbir destek sağlanmadığını gösteren sıfır döndürür.
 
-## <a name="getpropertynames-method"></a>GetPropertyNames Method
+## <a name="getpropertynames-method"></a>GetPropertyNames yöntemi
  Özellik adları ve özellik tanımlayıcıları bir Excel hücre denetiminin desteklenen özellikleri için bir sözlüğü döndürür.
 
 ## <a name="getpropertydescriptor-method"></a>GetPropertyDescriptor yöntemi

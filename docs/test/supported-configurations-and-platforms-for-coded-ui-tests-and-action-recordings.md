@@ -1,20 +1,20 @@
 ---
-title: "Yapılandırmalar ve platformlar için kodlanmış UI testleri Visual Studio'da | Microsoft Docs"
+title: Yapılandırmalar ve platformlar için kodlanmış UI testleri Visual Studio'da | Microsoft Docs
 ms.date: 2015-10-04
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2ceb36ded51c39b8f8eb5cdb906343c3a11d4d83
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 82d44d08353ed048ff51c90ea9a4b5c061a2dc2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar
 
@@ -34,7 +34,7 @@ Desteklenen yapılandırmalar ve platformlar için Visual Studio Enterprise içi
 |İşletim Sistemleri|[!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10|
 |32 bit / 64 bit Desteği|32 bit çalışan 32 bit Windows [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 32-bit uygulamaları test edebilirsiniz.<br /><br /> 32-bit çalıştıran 64 bit Windows [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] UI Synchronization.n 32-bit WOW uygulamaları test edebilirsiniz.<br /><br /> 32-bit çalıştıran 64 bit Windows [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 64-bit Windows Forms ve WPF UI Eşitlemesi olmayan uygulamaları test edebilirsiniz.|
 |Mimari|x86 hem x64 **Not:** Internet Explorer altında olduğunda çalışan dışında 64-bit modunda desteklenmez [!INCLUDE[win8](../debugger/includes/win8_md.md)] veya sonraki sürümler.|
-|.NET|.NET 2.0, 3.0, 3.5, 4 ve 4.5. **Not:** [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] ve Visual Studio hem de gerektirecektir çalışması .NET 4.   Ancak, listelenen .NET sürümleri kullanılarak geliştirilen uygulamalar desteklenir.|
+|.NET|.NET 2.0, 3.0, 3.5, 4 ve 4.5. **Not:** [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] ve Visual Studio hem de gerektirecektir çalışması .NET 4. Ancak, listelenen .NET sürümleri kullanılarak geliştirilen uygulamalar desteklenir.|
 
 > [!NOTE]
 >  *UI eşitleme* burada kayıttan doğrulanır her denetim ileti sırasına bir özelliktir. Bir denetim kendisine gönderilen olaya yanıt vermiyorsa, olay yeniden gönderilir.
@@ -43,7 +43,7 @@ Desteklenen yapılandırmalar ve platformlar için Visual Studio Enterprise içi
 
 |Platform|Destek Düzeyi|
 |--------------|----------------------|
-|Windows Phone Apps|Yalnızca WinRT XAML uygulamaları desteklenmez telefonla.|
+|Windows Phone uygulamaları|Yalnızca WinRT XAML uygulamaları desteklenmez telefonla.|
 |UWP uygulamaları|Yalnızca XAML tabanlı UWP uygulamaları desteklenmez.|
 |Evrensel Windows Uygulamaları|Yalnızca XAML tabanlı Evrensel Windows uygulamaları telefonu ve Masaüstü üzerinde desteklenir.|
 |Kenar|Eylem adımından kaydı veya nesne özelliklerini görüntülemek için oluşturucu kullanılarak desteklenmiyor. Testleri yürütülen geri Visual Studio 2015 güncelleştirme 2 ve sonraki sürümleri kullanarak Edge tarayıcısında [kodlanmış UI arası tarayıcı testi uzantısı](https://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d)|

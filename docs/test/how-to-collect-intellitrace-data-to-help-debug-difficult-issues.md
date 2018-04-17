@@ -1,7 +1,7 @@
 ---
 title: Visual Studio IntelliTrace verilerini | Microsoft Docs
 ms.date: 10/13/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, configuring test settings
 - Diagnostic Data Adapter, InteliTrace
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04c4c1cd4429228ffa90e06ac9675901602c3cd0
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: e1f36aefaad2e43d8875c9c0164ac938b004999d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Nasıl yapılır: Hata Ayıklama Zorluklarını Çözmeye Yardımcı Olması için IntelliTrace Verilerini Toplama
 
@@ -79,7 +79,7 @@ Bu yordamdaki adımları gerçekleştirmeden önce Microsoft Test Yöneticisi'ni
 
 7.  Seçin **modülleri** sekmesi. Şunlardan birini seçin **aşağıdakiler dışında tüm modüllerdeki verileri toplama** ve **Ekle** modülleri listesine eklemek için ve **kaldırmak** modülü kaldırmak için. Bu seçenek, belirttiğiniz modüller dışında sistemde çalışan tüm modülleri dahil etmenizi sağlar.
 
-     veya
+     -veya-
 
      Seçin **yalnızca aşağıdaki modüllerden verileri toplama** ve **Ekle** modülleri listesine eklemek için ve **kaldırmak** modülü kaldırmak için. Bu seçenek tam olarak hangi modüllerin istediğinizi belirtmenize olanak sağlar.
 
@@ -88,7 +88,7 @@ Bu yordamdaki adımları gerçekleştirmeden önce Microsoft Test Yöneticisi'ni
 
 8.  Seçin **işlemleri** sekmesi. Seçin **aşağıdakiler dışında tüm işlemlerden verileri toplama** ve **Ekle** işlemler listesine eklemek için ve **kaldırmak** işlemi kaldırmak için. Bu seçenek, belirttiğiniz işlemler dışında sistemde çalışan tüm işlemleri dahil etmenizi sağlar.
 
-     veya
+     -veya-
 
      Seçin **verileri yalnızca belirtilen işlemlerini toplama** ve **Ekle** işlemler listesine eklemek için ve **kaldırmak** işlemi kaldırmak için. Bu seçenek tam olarak hangi işlemlerin istediğinizi belirtmenize olanak sağlar.
 

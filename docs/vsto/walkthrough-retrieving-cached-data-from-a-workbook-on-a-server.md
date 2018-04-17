@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Sunucudaki çalışma kitabından veri önbelleğe alma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Sunucudaki çalışma kitabından veri önbelleğe alma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 080cbf3d8985f9bcbf1affebfc988a7be61f7818
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e259142ce37115196c7bc0dd0390d162020c476d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-retrieving-cached-data-from-a-workbook-on-a-server"></a>İzlenecek Yol: Sunucudaki Çalışma Kitabından Önbelleğe Alınmış Verileri Alma
   Bu kılavuz, Microsoft Office Excel çalışma kitabında kullanarak Excel'i başlatmadan önbelleğe alınmış bir veri kümesinden veri almak gösterilmiştir <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı.  
@@ -53,7 +52,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 -   Microsoft SQL Server ya da Microsoft SQL Server ekli AdventureWorksLT örnek veritabanı olan Express çalışan örneğine erişim. AdventureWorksLT veritabanından indirebilirsiniz [CodePlex Web sitesinde](http://go.microsoft.com/fwlink/?linkid=87843). Veritabanı ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  **Tamam**'ı tıklatın.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **AdventureWorksDataSet** için proje **Çözüm Gezgini** ve açılır **Class1.cs** veya **Class1.vb'ye** kod dosyası.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **AdventureWorksDataSet** için proje **Çözüm Gezgini** ve açılır **Class1.cs** veya **Class1.vb'ye** kod dosyası.  
   
 9. İçinde **Çözüm Gezgini**, sağ **Class1.cs** veya **Class1.vb'ye**ve ardından **silmek**. Bu kılavuz için bu dosyayı gerekmez.  
   
@@ -144,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Emin **bir yeni belge oluşturun** seçilir ve tıklatın **Tamam**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]açılır **AdventureWorksReport** çalışma kitabı Tasarımcısı'nda ve ekler **AdventureWorksReport** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] açılır **AdventureWorksReport** çalışma kitabı Tasarımcısı'nda ve ekler **AdventureWorksReport** için proje **Çözüm Gezgini**.  
   
 ## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Excel çalışma kitabı projesindeki veri kaynaklarına veri ekleme  
  Excel çalışma kitabında veri kümesi görüntülemeden önce Excel çalışma kitabı projesindeki veri kaynaklarına ilk veri kümesi eklemeniz gerekir.  
@@ -239,7 +238,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  **Tamam**'ı tıklatın.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **DataReader** için proje **Çözüm Gezgini** ve açılır **Program.cs** veya **Module1.vb** kod dosyası.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **DataReader** için proje **Çözüm Gezgini** ve açılır **Program.cs** veya **Module1.vb** kod dosyası.  
   
 ## <a name="retrieving-data-from-the-cached-dataset-by-using-the-console-application"></a>Konsol uygulaması kullanarak önbelleğe alınmış veri kümesinden veri alma  
  Kullanım <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> yerel verileri okumak için konsol uygulaması sınıfında `AdventureWorksLTDataSet` nesnesi. Yerel veri kümesi önbelleğe alınmış veri kümesini verilerle başlatıldı onaylamak için uygulama yerel veri kümesinde satır sayısını görüntüler.  

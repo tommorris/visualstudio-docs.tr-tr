@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: program aracılığıyla, yer işareti metnini güncelleştirme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: program aracılığıyla, yer işareti metnini güncelleştirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Bookmark control, updating contents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: af3252f87bd3c7d6a6c6e75ae85cea4cd75bd1e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d041ff303a27d4eefee4f36776d5c5eda7c16b32
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Nasıl yapılır: Yer İşareti Metnini Program Aracılığıyla Güncelleştirme
   Sonraki bir zamanda veya bir yer işareti metinde değiştirmek için metin alabilmeleri Microsoft Office Word belgesinde yer tutucu yer işareti içine metin ekleyebilirsiniz. Belge düzeyi özelleştirme geliştiriyorsanız metinde da güncelleştirebilirsiniz bir <xref:Microsoft.Office.Tools.Word.Bookmark> veriye bağlı denetim. Daha fazla bilgi için bkz: [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).  
@@ -33,11 +32,11 @@ ms.lasthandoff: 01/10/2018
   
 -   A <xref:Microsoft.Office.Tools.Word.Bookmark> konak kontrolü.  
   
-     <xref:Microsoft.Office.Tools.Word.Bookmark>denetimleri uzatma yerel <xref:Microsoft.Office.Interop.Word.Bookmark> verileri bağlama ve olayları açığa etkinleştirerek nesneleri. Konak denetimleri hakkında daha fazla bilgi için bkz: [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
+     <xref:Microsoft.Office.Tools.Word.Bookmark> denetimleri uzatma yerel <xref:Microsoft.Office.Interop.Word.Bookmark> verileri bağlama ve olayları açığa etkinleştirerek nesneleri. Konak denetimleri hakkında daha fazla bilgi için bkz: [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
   
 -   Yerel bir <xref:Microsoft.Office.Interop.Word.Bookmark> nesnesi.  
   
-     <xref:Microsoft.Office.Interop.Word.Bookmark>nesneleri olayları ya da veri bağlama özellikleri yok.  
+     <xref:Microsoft.Office.Interop.Word.Bookmark> nesneleri olayları ya da veri bağlama özellikleri yok.  
   
  Bir yer işaretine metin atadığınızda, davranışı arasında farklı bir <xref:Microsoft.Office.Interop.Word.Bookmark> ve <xref:Microsoft.Office.Tools.Word.Bookmark>. Daha fazla bilgi için bkz: [yer işareti denetimi](../vsto/bookmark-control.md).  
   

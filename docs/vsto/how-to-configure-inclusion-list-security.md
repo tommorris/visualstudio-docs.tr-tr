@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: ekleme listesi güvenliğini yapılandırma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: ekleme listesi güvenliğini yapılandırma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b95b85f028ac003cedb05248b6884c24ca32008
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f8995e95ed1a35841aab945daa1ea35854946b56
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Nasıl Yapılır: Ekleme Listesi Güvenliğini Yapılandırma
   Yönetici izinlerine sahipseniz, yapılandırabileceğiniz [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] denetlemek için son kullanıcıların Office çözümleri listesine bir güven kararı kaydederek yükleme seçeneği verilip verilmediğini güven istemi. Ekleme listeleri hakkında daha fazla bilgi için bkz: [güvenen Office çözümleri ekleme listeleri kullanarak tarafından](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
     |Dize değeri alt anahtarı|Değer|  
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
-    |**UntrustedSites**|**Devre dışı**|  
+    |**UntrustedSites**|**devre dışı**|  
     |**Bilgisayarım**|**Etkin**|  
     |**LocalIntranet**|**Etkin**|  
     |**TrustedSites**|**Etkin**|  
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
   
     |Dize değeri alt anahtarı|Değer|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**Devre dışı**|  
+    |**UntrustedSites**|**devre dışı**|  
     |**Internet**|**AuthenticodeRequired**|  
     |**Bilgisayarım**|**AuthenticodeRequired**|  
     |**LocalIntranet**|**AuthenticodeRequired**|  
@@ -173,11 +172,11 @@ ms.lasthandoff: 01/10/2018
   
     |Dize değeri alt anahtarı|Değer|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**Devre dışı**|  
-    |**Internet**|**Devre dışı**|  
-    |**Bilgisayarım**|**Devre dışı**|  
-    |**LocalIntranet**|**Devre dışı**|  
-    |**TrustedSites**|**Devre dışı**|  
+    |**UntrustedSites**|**devre dışı**|  
+    |**Internet**|**devre dışı**|  
+    |**Bilgisayarım**|**devre dışı**|  
+    |**LocalIntranet**|**devre dışı**|  
+    |**TrustedSites**|**devre dışı**|  
   
 #### <a name="to-disable-the-inclusion-list-programmatically"></a>Ekleme listesi program aracılığıyla devre dışı bırakmak için  
   

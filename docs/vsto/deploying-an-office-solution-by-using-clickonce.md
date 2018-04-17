@@ -1,12 +1,10 @@
 ---
-title: "ClickOnce kullanarak Office çözümü dağıtma | Microsoft Docs"
-ms.custom: 
+title: ClickOnce kullanarak Office çözümü dağıtma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a989fe2bc88d25ad81238b65bf8ecd775c39bc35
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0b5e1b9437412f343874b8cca6513a551d9900d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-clickonce"></a>ClickOnce Kullanarak Office Çözümü Dağıtma
   ClickOnce kullanıyorsanız, Office çözümünüzde daha az adım dağıtabilirsiniz. Güncelleştirmeleri yayımlarsanız, çözümünüz bunları otomatik olarak algılar ve yükler. Bununla birlikte, ClickOnce, çözümünüzü bir bilgisayarın her kullanıcısı için ayrı ayrı yüklemenizi gerektirir. Bu nedenle, aynı bilgisayarda çözümünüzü birden fazla kullanıcı çalıştıracaksa Windows Installer (.msi) kullanmayı düşünmelisiniz.  
@@ -48,8 +47,8 @@ ms.lasthandoff: 01/10/2018
   
  Bir Windows Installer dosyası oluşturarak Office çözümü dağıtma hakkında daha fazla bilgi için bkz: [tarafından Windows Installer kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Publish"></a>Çözüm yayımlama  
- Çözümünüzü kullanarak yayımlayabilirsiniz **Yayımlama Sihirbazı** veya **Proje Tasarımcısı**. Bu yordamda kullanacağınız **Proje Tasarımcısı** çünkü tam Yayımlama seçenekleri kümesi sağlar. Bkz: [Sihirbazı &#40; Office geliştirme Visual Studio &#41; yayımlama](../vsto/publish-wizard-office-development-in-visual-studio.md).  
+##  <a name="Publish"></a> Çözüm yayımlama  
+ Çözümünüzü kullanarak yayımlayabilirsiniz **Yayımlama Sihirbazı** veya **Proje Tasarımcısı**. Bu yordamda kullanacağınız **Proje Tasarımcısı** çünkü tam Yayımlama seçenekleri kümesi sağlar. Bkz: [Yayımlama Sihirbazı &#40;Visual Studio'da Office geliştirme&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
   
 #### <a name="to-publish-the-solution"></a>Çözümü yayımlamak için  
   
@@ -136,12 +135,12 @@ ms.lasthandoff: 01/10/2018
   
 14. Çözüm dosyalarını, bu yordamda daha önce belirttiğiniz yükleme konumuna kopyalayın.  
   
-##  <a name="Trust"></a>Çözüme güven vermek istediğiniz nasıl karar verin  
+##  <a name="Trust"></a> Çözüme güven vermek istediğiniz nasıl karar verin  
  Bir çözümün kullanıcı bilgisayarları üzerinde çalışması için önce, sizin güven kazandırmanız ya da kullanıcıların çözümü yükledikleri sırada bir güvenlik istemine yanıt vermeleri gerekir. Çözüme güven kazandırmak için, bilinen ve güvenilir bir yayımcıyı tanımlayan bir sertifika kullanarak bildirimleri imzalayın. Bkz: [uygulama ve dağıtım imzalayarak çözümü güvenen bildirimleri](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
  Belge düzeyi özelleştirme dağıtıyorsanız ve belgenin kullanıcının bilgisayarda bir klasöre yerleştirin veya belge bir SharePoint sitesinde kullanılabilir yapmak istediğiniz, Office belgesinin konumunu güvenleri emin olun. Bkz: [belgelere güven verme](../vsto/granting-trust-to-documents.md).  
   
-##  <a name="Helping"></a>Çözümü kullanıcıların Yardım  
+##  <a name="Helping"></a> Çözümü kullanıcıların Yardım  
  Kullanıcılar kurulum programını çalıştırarak, dağıtım bildirimini açarak veya belge düzeyinde bir özelleştirme olması durumunda belgeyi doğrudan açarak çözümü yükleyebilirler. En iyi uygulama olarak, kullanıcılar çözümünüzü kurulum programını kullanarak yüklemelidir. Diğer iki yaklaşım önkoşul yazılımı yüklü olduğundan emin olun yok. Kullanıcılar belgeyi yükleme konumundan açmak isterse, Office uygulamasının Güven Merkezi'nde bu konumu güvenilir konumlar listesine eklemeleri gerekir.  
   
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Belge düzeyinde bir özelleştirmenin belgesini açma  
@@ -190,7 +189,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Değişikliklerin etkili olması için, World Wide Web Yayımlama Hizmeti'ni yeniden başlatmalı veya çalışan işleminin tekrar geri dönmesini beklemelisiniz. Bundan sonra tarayıcının disk önbelleğini temizlemeli ve .vsto dosyasını yeniden açmayı denemelisiniz.  
   
-##  <a name="Put"></a>(Yalnızca belge düzeyi özelleştirmeleri) son kullanıcının bilgisayarına bir çözüm belge yerleştirin  
+##  <a name="Put"></a> (Yalnızca belge düzeyi özelleştirmeleri) son kullanıcının bilgisayarına bir çözüm belge yerleştirin  
  Çözümünüzü son kullanıcının bilgisayarına belgenin bunları için dağıtım sonrası eylemi oluşturarak kopyalayabilirsiniz. Böylece, kullanıcı çözümünüzü yükledikten sonra belgeyi kendi bilgisayarlarına yükleme konumundan el ile kopyalamak sahip değil. Dağıtım sonrası eylemi tanımlayan bir sınıf oluşturun, yapı ve Çözümü yayımlamak, uygulama bildirimini değiştirin ve uygulama ve dağıtım bildirimini yeniden imzalamak gerekir.  
   
  Aşağıdaki yordamlar projenizin adına olduğunu varsayar **ExcelWorkbook** ve çözüme yayımlama **C:\publish** bilgisayarınızda dizin.  
@@ -309,7 +308,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  ExcelWorkbook.vsto dosyaya Kopyala **c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_ dizini.  
   
-##  <a name="SharePoint"></a>SharePoint (yalnızca belge düzeyi özelleştirmeleri) çalıştıran bir sunucuya bir çözüm belge yerleştirin  
+##  <a name="SharePoint"></a> SharePoint (yalnızca belge düzeyi özelleştirmeleri) çalıştıran bir sunucuya bir çözüm belge yerleştirin  
  Belge düzeyinde özelleştirmenizi SharePoint kullanarak son kullanıcılara yayımlayabilirsiniz. Kullanıcılar SharePoint sitesine gidip belgeyi açtığında, çalışma zamanı çözümü paylaşılan ağ klasöründen kullanıcının yerel bilgisayarına otomatik olarak yükler. Çözüm yerel olarak yüklendikten sonra, belge başka bir yere (örneğin, masaüstüne) kopyalansa bile özelleştirme işlevini yerine getirmeye devam eder.  
   
 #### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>Belgeyi SharePoint çalıştıran bir sunucuya koymak için  
@@ -338,7 +337,7 @@ ms.lasthandoff: 01/10/2018
   
              Kullanıcılar belgeyi SharePoint sitesinden açtığında, belge açılır ve özelleştirme yüklenir. Kullanıcılar belgeyi kendi masaüstlerine kopyalayabilir. Belgedeki özellikler belgenin ağ konumuna işaret ettiğinden, özelleştirme çalışmaya devam edecektir.  
   
-##  <a name="Custom"></a>Özel bir yükleyici oluşturma  
+##  <a name="Custom"></a> Özel bir yükleyici oluşturma  
  Çözümü yayımladığınızda, sizin için oluşturduğu kurulum programını kullanmak yerine, Office çözümünüz için özel bir yükleyici oluşturabilirsiniz. Örneğin, yüklemeyi başlatmak için bir oturum açma komut dosyası kullanabilir veya çözümü, kullanıcı etkileşimi olmadan yüklemek için bir toplu iş dosyası kullanabilirsiniz. Bu senaryolar en çok, önkoşullar son kullanıcı bilgisayarlarında zaten yüklü olduğunda işe yarar.  
   
  Özel yükleme işleminizin bir parçası olarak, Office çözümleri için yükleyici aracını (VSTOInstaller.exe) çağırın; bu araç varsayılan olarak aşağıdaki konuma yüklenir:  
@@ -372,12 +371,12 @@ ms.lasthandoff: 01/10/2018
 |-401|Çözüm kaldırılması tamamlanamadı.|  
 |-500|Çözüm yüklenemediğinden ya da kaldırılamadığından veya dağıtım bildirimi indirilemediğinden işlem iptal edildi.|  
   
-##  <a name="Update"></a>Bir güncelleştirme yayımlama  
+##  <a name="Update"></a> Bir güncelleştirme yayımlama  
  Bir çözüm güncelleştirmek için yeniden kullanarak yayımlamadan **Proje Tasarımcısı** veya **Yayımlama Sihirbazı**, ve ardından güncelleştirilmiş çözüm yükleme konumuna kopyalayın. Dosyaları yükleme konumuna kopyalarken, önceki dosyaların üzerine yazdığınızdan emin olun.  
   
  Çözüm denetleyen bir sonraki seferde bir güncelleştirme bulmak ve en yeni sürümü otomatik olarak yüklemek.  
   
-##  <a name="Location"></a>Çözümün yükleme konumunu değiştirme  
+##  <a name="Location"></a> Çözümün yükleme konumunu değiştirme  
  Bir çözüm yayımlandıktan sonra yükleme yolunu ekleyebilir veya değiştirebilirsiniz. Yükleme yolunu değiştirmek istemenizin nedeni şunlardan biri veya daha fazlası olabilir:  
   
 -   Kurulum programı, henüz yükleme yolu bilinmezken derlenmiştir.  
@@ -435,7 +434,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Çözümü belirtilen konuma yüklemek için, kurulum programını /url parametresi olmadan çalıştırın.  
   
-##  <a name="Roll"></a>Bir çözümü bir önceki sürüme geri  
+##  <a name="Roll"></a> Bir çözümü bir önceki sürüme geri  
  Bir çözümü geri aldığınızda, kullanıcıları bu çözümün önceki bir sürümüne geri döndürmüş olursunuz.  
   
 #### <a name="to-roll-back-a-solution"></a>Bir çözümü geri almak için  

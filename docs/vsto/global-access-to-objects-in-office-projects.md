@@ -1,12 +1,10 @@
 ---
-title: "Office projelerindeki nesnelere genel erişim | Microsoft Docs"
-ms.custom: 
+title: Office projelerindeki nesnelere genel erişim | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -32,13 +30,14 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bdfc9b62e6dc94560693c072526e1f2989ddec15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fda3dee12cdea7442d0f92a2ba794551d76b14cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Office Projelerindeki Nesnelere Genel Erişim
   Bir Office proje oluşturduğunuzda, Visual Studio adlı bir sınıf otomatik olarak oluşturur. `Globals` projesinde. Kullanabileceğiniz `Globals` projesinde herhangi bir koddan çalışma zamanında birçok farklı proje öğesine erişmek için sınıf.  
@@ -46,9 +45,9 @@ ms.lasthandoff: 01/10/2018
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="how-to-use-the-globals-class"></a>Globals sınıfı kullanma  
- `Globals`projenizdeki belirli öğelere başvurular tutan statik bir sınıftır. Kullanarak `Globals` sınıfı, çalışma zamanında projedeki herhangi bir koddan aşağıdaki öğeleri erişebilirsiniz:  
+ `Globals` projenizdeki belirli öğelere başvurular tutan statik bir sınıftır. Kullanarak `Globals` sınıfı, çalışma zamanında projedeki herhangi bir koddan aşağıdaki öğeleri erişebilirsiniz:  
   
--   `ThisWorkbook` Ve `Sheet`  *n*  Excel çalışma kitabı veya şablon projesindeki sınıfları. Bu nesneler kullanarak erişebilirsiniz `Globals.ThisWorkbook` ve `Sheet`  *n*  özellikleri.  
+-   `ThisWorkbook` Ve `Sheet` *n* Excel çalışma kitabı veya şablon projesindeki sınıfları. Bu nesneler kullanarak erişebilirsiniz `Globals.ThisWorkbook` ve `Sheet` *n* özellikleri.  
   
 -   `ThisDocument` Bir Word belgesi veya şablonu projesinde sınıfı. Bu nesneyi kullanarak erişebilirsiniz `Globals.ThisDocument` özelliği.  
   

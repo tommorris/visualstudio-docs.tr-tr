@@ -1,56 +1,27 @@
 ---
-title: "WhiteSource Cıvata avantajı | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/11/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to activate the WhiteSource Bolt subscription included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: fe8e731e26765ec17b56383e04362efa25b2f141
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: WhiteSource Cıvata avantajı | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/11/2017
+ms.topic: Get-Started-Article
+description: Visual Studio aboneliğinizde yer alan WhiteSource Cıvata abonelik etkinleştirme konusunda bilgi edinin.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 0c2eed9efdcca076c20a240d60b4d38cdda23019
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde WhiteSource Cıvata
 
-## <a name="overview"></a>Genel Bakış
-
 Bul ve açık kaynak güvenlik açıkları düzeltin ve yapı içinde tüm açık kaynak bileşenlerinin kapsamlı Envanter ve lisans raporları oluşturun.  Visual Studio abonelikleri altı ay ücretsiz erişim içerir seçin. 
-
-## <a name="eligibility"></a>Uygunluk
-
-| Abonelik düzeyinde / Program                                                  | Faydası               | Yenilenebilir?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise standart                                             | 6 ay              | Evet                                                                |
-| Visual Studio Enterprise yıllık                                               | 6 ay              | Evet                                                                |
-| Aylık Visual Studio Enterprise                                              | Yok         |                                                                    |
-| Visual Studio Professional Standard                                           | Yok         |                                                                    |
-| Visual Studio Professional annual                                             | Yok         |                                                                    | 
-| Aylık Visual Studio Professional                                            | Yok         |                                                                    |
-| Visual Studio Test Pro                                                        | Yok         |                                                                    |
-| MSDN platformları                                                                | Yok         |                                                                    |
-| Visual Studio geliştirme temelleri                                                  | Yok         |                                                                    |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | Yok         |                                                                    |
-| Visual Studio Enterprise - FTE                                                | Yok         |                                                                    |
-| Visual Studio Enterprise - Microsoft iş ortağı ağı                          | 6 ay              | Evet                                                                |
-| Visual Studio Professional - Microsoft iş ortağı ağı                        | Yok         |                                                                    |
-| Visual Studio Enterprise – (standart) düşünün                                 | Yok         |                                                                    |
-| Visual Studio Enterprise – (Premium) düşünün                                  | Yok         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Yok         |                                                                    |
-| Microsoft yazılım ve Hizmetleri Eğitmen - sertifikalı                             | Yok         |                                                                    |
-| Microsoft yazılım ve Hizmetleri Geliştirici Eğitmen - sertifikalı                   | Yok         |                                                                    |
-
-<sup>1</sup>*değil satışı (NFR), Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP) içerir*   
-
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 
-1.  WhiteSource Cıvata avantajı etkinleştirmek için oturumu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
+1.  WhiteSource Cıvata avantajı etkinleştirmek için oturumu [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
 
 2.  Araçlar bölümünde WhiteSource Cıvata döşeme bulun ve tıklayın **kodunu Al** avantajı döşemenin altındaki bağlantıyı.    
 
@@ -98,11 +69,23 @@ Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [https://my.visua
     - Lisans riskleri ve uyumluluk Panosu
     - Envanter raporu
 
-## <a name="faq"></a>SSS
-*Burada Güncelleştirmeleri denetle*
+## <a name="eligibility"></a>Uygunluk
+| Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standart, yıllık bulut)   | Toplu Lisans, Azure, perakende, seçili NFR<sup>1</sup> | 6 ay       |  Evet          |
+| Visual Studio Professional (standart, yıllık bulut) | Toplu Lisans, Azure, perakende                                       | Mevcut değil                                                           |Yok         |
+| Visual Studio Test uzmanı (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok         |
+| MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              | Yok         |
+| Visual Studio Dev Essentials | Yok  | Yok |Yok |
+| Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
+
+<sup>1</sup>*içerir: Microsoft iş ortağı ağı (Kurumsal).    Dışlar: Diğer değil Microsoft iş ortağı satışı (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve Hizmetleri geliştirici, BizSpark, Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD), MCT yazılım ve hizmetlerini düşünün için (ağ Professional).*
+
+Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
+
 
 ## <a name="support-resources"></a>Destek kaynakları
--  Yardım WhiteSource Cıvata mı gerekiyor?  Https://www.whitesourcesoftware.com/vse_whitesource_bolt/ canlı bir WhiteSource Cıvata temsilcisi sohbet 
+-  Yardım WhiteSource Cıvata mı gerekiyor?  Sohbet WhiteSource Cıvata temsilcisi ile canlı https://www.whitesourcesoftware.com/vse_whitesource_bolt/ 
 -  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://www.visualstudio.com/subscriptions/support/).
 -  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://www.visualstudio.com/support/). 
 

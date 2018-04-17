@@ -1,53 +1,27 @@
 ---
-title: "Visual Studio Aboneliklerde Microsoft E-öğrenme avantajı | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Get started using Microsoft E-learning courses included in selected Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b5db9111203da5e4bd47c7b7439c6eb6be8ca3bf
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio Aboneliklerde Microsoft E-öğrenme avantajı | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Seçili Visual Studio aboneliğine dahil Microsoft E-öğrenme kurslar kullanmaya başlayın.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 8f0f3c79fbeba38ab2bcd5c7e572e9a51dd7dd81
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 #  <a name="the-microsoft-e-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde Microsoft E-öğrenme avantajı
 
-## <a name="overview"></a>Genel Bakış
 Bir teknoloji öğrenin, Yukarı düzeyi becerileri veya Microsoft Certification alıştırmalar için eğitimi.  Erişebileceğiniz indirmelere koleksiyon sayısı, Visual Studio abonelik düzeyinde bağlıdır.  Tüm abonelikleri bu avantajı içerir. 
 
-## <a name="eligibility"></a>Uygunluk
-| Abonelik düzeyinde / Program                                                  | Faydası               | Yenilenebilir?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise standart                                             | 2 indirmelere koleksiyonları  |  Evet                                                               |
-| Visual Studio Enterprise yıllık                                               | 2 indirmelere koleksiyonları  |  Evet                                                               |
-| Aylık Visual Studio Enterprise                                              | Yok         |                                                                    |
-| Visual Studio Professional Standard                                           | 1 indirmelere koleksiyonu   |  Evet                                                               |
-| Visual Studio Professional annual                                             | 1 indirmelere koleksiyonu   |  Evet                                                               | 
-| Aylık Visual Studio Professional                                            | Yok         |                                                                    |
-| Visual Studio Test Pro                                                        | 1 indirmelere koleksiyonu   |  Evet                                                               |
-| MSDN platformları                                                                | 1 indirmelere koleksiyonu   |  Evet                                                               |
-| Visual Studio geliştirme temelleri                                                  | Yok         |                                                                    |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | 2 indirmelere koleksiyonları  |  Evet                                                               |
-| Visual Studio Enterprise - FTE                                                | 2 indirmelere koleksiyonları  |  Evet                                                               |
-| Visual Studio Enterprise - Microsoft iş ortağı ağı                          | 2 indirmelere koleksiyonları  |  Evet                                                               |
-| Visual Studio Professional - Microsoft iş ortağı ağı                        | Yok         |                                                                    |
-| Visual Studio Enterprise – (standart) düşünün                                 | Yok         |                                                                    |
-| Visual Studio Enterprise – (Premium) düşünün                                  | Yok         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | 2 indirmelere koleksiyonları  |  Evet                                                               |
-| Microsoft yazılım ve Hizmetleri Eğitmen - sertifikalı                             | Yok         |                                                                    |
-| Microsoft yazılım ve Hizmetleri Geliştirici Eğitmen - sertifikalı                   | Yok         |                                                                    |
-
-<sup>1</sup>*değil satışı (NFR), Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP) içerir*   
-
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
-1.  Oturum [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Professional geliştirme bölümünde avantajları sayfasında Microsoft E-öğrenme döşeme bulun ve tıklatın **alma kodu** avantajı döşemenin altındaki bağlantıyı.
 
@@ -80,8 +54,25 @@ Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [https://my.visua
 
     ![Microsoft E-öğrenme avantajı portalı](_img\vs-elearn\vs-elearn-portal.png)
 
-## <a name="faq"></a>SSS
-*Burada Güncelleştirmeleri denetle*
+
+## <a name="eligibility"></a>Uygunluk
+
+| Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standart, yıllık bulut)   | Toplu Lisans, Azure, perakende, NFR<sup>1</sup>  | 2 indirmelere koleksiyonları      |  Evet           |
+| Visual Studio Professional (standart<sup>2</sup> , yıllık bulut) | Toplu Lisans, Azure, perakende                                       | 1 indirmelere koleksiyonu                                                            |  Evet             |
+| Visual Studio Test uzmanı (standart)                         | Toplu Lisans, perakende                                              | 1 indirmelere koleksiyonu                                             |  Evet             |
+| MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | 1 indirmelere koleksiyonu                                              |  Evet             |
+| Visual Studio Dev Essentials | Yok  | Yok | Yok
+| Visual Studio Enterprise, Visual Studio Professional (aylık bulut)  | Azure |Yok  | Yok |
+
+
+<sup>1</sup>*içerir: değil satışı için (NFR) FTE, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), BizSpark.    Dışlar: Düşünün, Microsoft Sertifikalı Eğitmen (MCT)*
+
+<sup>2</sup>*dışlar: Microsoft iş ortağı ağı (MPN)* 
+
+Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
+
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  Microsoft E-öğrenme hakkında bir sorunuz mu var?  Bu kaynaklara gözatın:

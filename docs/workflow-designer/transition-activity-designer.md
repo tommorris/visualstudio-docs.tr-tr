@@ -1,20 +1,20 @@
 ---
-title: "Etkinlik Tasarımcısı geçiş | Microsoft Docs"
+title: Etkinlik Tasarımcısı geçiş | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e245df7132075c0a7b691e5fee1069ebffd47ca0
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 25b00c38110e8a97d5e5465f3e170bef9c28bb88
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="transition-activity-designer"></a>Geçiş etkinlik Tasarımcısı
 A <xref:System.Activities.Statements.Transition> iki durumları arasında geçiş temsil eder.
@@ -44,6 +44,6 @@ A <xref:System.Activities.Statements.Transition> iki durumları arasında geçi�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [StateMachine](../workflow-designer/statemachine-activity-designer.md)
+- [Durum makinesi](../workflow-designer/statemachine-activity-designer.md)
 - [Son durum](../workflow-designer/finalstate-activity-designer.md)
 - [Durumu](../workflow-designer/state-activity-designer.md)

@@ -1,33 +1,31 @@
 ---
-title: "İfade değerlendirme uyarlamasını örnek | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirme uyarlamasını örnek | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
 - expression evaluation, examples
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: fe39048edb15e3997b74ca3a7047085da6f042fc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 9edc31a8bc403f4f6dfcb16847d3cfce5d99b526
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>İfade değerlendirme için örnek uygulama
 > [!IMPORTANT]
 >  Visual Studio 2015'te ifade değerlendiricisi uygulama bu şekilde kullanım dışıdır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricileri](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- İçin bir **izleme** penceresi ifade, Visual Studio çağrıları [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) üretmek için bir [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) nesnesi. `IDebugExpressionContext2::ParseText`bir ifade değerlendiricisi (EE) ve çağrıları başlatır [ayrıştırma](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) elde etmek için bir [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) nesnesi.  
+ İçin bir **izleme** penceresi ifade, Visual Studio çağrıları [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) üretmek için bir [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) nesnesi. `IDebugExpressionContext2::ParseText` bir ifade değerlendiricisi (EE) ve çağrıları başlatır [ayrıştırma](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) elde etmek için bir [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) nesnesi.  
   
  Bu uygulaması, `IDebugExpressionEvaluator::Parse` aşağıdaki görevleri gerçekleştirir:  
   

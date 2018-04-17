@@ -1,12 +1,10 @@
 ---
-title: "Office belgelerine kalıcı Dinamik denetimleri | Microsoft Docs"
-ms.custom: 
+title: Office belgelerine kalıcı Dinamik denetimleri | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], persisting in the document
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 10f5840b085ce55485734c9287972a743859c3ef
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 220a6e2c0b7e4633f91e7391448d27dddb5895c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="persisting-dynamic-controls-in-office-documents"></a>Office Belgelerinde Dinamik Denetimleri Kalıcı Kılma
   Belge veya çalışma kitabı kaydedilmiş ve kapandığında çalışma zamanında eklenen denetimleri kalıcı değildir. Tam ana bilgisayar denetimleri ve Windows Forms denetimleri için farklı bir davranıştır. Her iki durumda da, kullanıcının belgeyi açana zaman denetimlerin yeniden oluşturması için çözümünüze kod ekleyebilirsiniz.  
@@ -75,9 +74,9 @@ ms.lasthandoff: 01/10/2018
   
 1.  Belge kaydedildiğinde veya boyutu, konumu ve denetimlerin durumu hakkındaki bilgileri depolar. Belge düzeyi özelleştirmelerinde belgedeki verileri önbelleğe almak için bu verileri kaydedebilirsiniz. Bir VSTO eklenti, bu veriler özel bir XML parçasına belgedeki kaydedebilirsiniz.  
   
-2.  Belge açıldığında bir olayda denetimleri yeniden oluşturun. Belge düzeyi projelerine Bunu yapmak için `Sheet`  *n*  `_Startup` veya `ThisDocument_Startup` olay işleyicileri. VSTO eklenti projelerinde bu olay işleyicileri yapabileceğiniz <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> veya <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> olaylar.  
+2.  Belge açıldığında bir olayda denetimleri yeniden oluşturun. Belge düzeyi projelerine Bunu yapmak için `Sheet` *n* `_Startup` veya `ThisDocument_Startup` olay işleyicileri. VSTO eklenti projelerinde bu olay işleyicileri yapabileceğiniz <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> veya <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> olaylar.  
   
-###  <a name="removingActiveX"></a>Bir ek bileşenindeki ActiveX sarmalayıcıları kaldırma  
+###  <a name="removingActiveX"></a> Bir ek bileşenindeki ActiveX sarmalayıcıları kaldırma  
  Bir VSTO eklenti kullanarak belgeye dinamik Windows Forms denetimleri eklediğinizde, denetimler için ActiveX sarmalayıcıları belgede aşağıdaki yollarla sonraki açıldığında görünmesini önleyebilirsiniz.  
   
 #### <a name="removing-activex-wrappers-when-the-document-is-opened"></a>Belge açıldığında ActiveX sarmalayıcıları kaldırma  

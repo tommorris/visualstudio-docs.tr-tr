@@ -1,12 +1,10 @@
 ---
-title: "Word belgelerini ve Excel çalışma kitaplarını VSTO eklentilerini çalışma zamanında genişletme | Microsoft Docs"
-ms.custom: 
+title: Word belgelerini ve Excel çalışma kitaplarını VSTO eklentilerini çalışma zamanında genişletme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - HasVstoObject method
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5cd29d7de596704087eb1326791e4fc9df9921a6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0f95c7cb0dfa5fb867807e32366157839725db85
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>VSTO Eklentilerindeki Word Belgelerini ve Excel Çalışma Kitaplarını Çalışma Zamanında Genişletme
   Bir VSTO eklentisi, Word belgelerini ve Excel çalışma kitapları aşağıdaki şekillerde özelleştirmek için kullanabilirsiniz:  
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]  
   
-##  <a name="AddControls"></a>Belgeler ve çalışma sayfalarını yönetilen denetimler ekleme  
+##  <a name="AddControls"></a> Belgeler ve çalışma sayfalarını yönetilen denetimler ekleme  
  Oluşturduğunuz sonra bir <xref:Microsoft.Office.Tools.Word.Document> veya <xref:Microsoft.Office.Tools.Excel.Worksheet>bu genişletilmiş çalışma nesneleri temsil etmek veya belgeye denetimleri ekleyebilirsiniz. Bunu yapmak için denetim özelliğini kullanın <xref:Microsoft.Office.Tools.Word.Document> veya <xref:Microsoft.Office.Tools.Excel.Worksheet>. Daha fazla bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Windows Forms denetimleri ekleme veya *konak denetimlerini*. Bir konak kontrolü tarafından sağlanan bir denetimdir [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , karşılık gelen bir denetim Word veya Excel birincil birlikte çalışma derlemesindeki sarmalar. Konak kontrolü tüm yerel Office nesnesini davranışını gösterir, ancak aynı zamanda olayları başlatır ve verilere Windows Forms veri bağlama modelini kullanarak bağlanabilir. Daha fazla bilgi için bkz: [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]  
   
-##  <a name="HasVstoObject"></a>Office nesne genişletilmiş olup olmadığını belirleme  
+##  <a name="HasVstoObject"></a> Office nesne genişletilmiş olup olmadığını belirleme  
  Genişletilmiş nesne için belirli bir yerel Office nesnesi zaten oluşturulmuş olup olmadığını belirlemek için HasVstoObject yöntemi kullanın. Bu yöntem **true** genişletilmiş bir nesne zaten oluşturulduysa; Aksi takdirde, döndürür **false**.  
   
  Globals.Factory.HasVstoMethod yöntemini kullanın. Yerel Word veya Excel nesnesi gibi geçirmek bir <xref:Microsoft.Office.Interop.Word.Document> veya <xref:Microsoft.Office.Interop.Excel.Worksheet>, Genişletilmiş nesne için test etmek istediğiniz.  

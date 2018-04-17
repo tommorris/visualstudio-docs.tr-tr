@@ -1,18 +1,18 @@
 ---
-title: "Kodlanmış UI denetimlerinizi Visual Studio'da sınamasını etkinleştirme | Microsoft Docs"
+title: Kodlanmış UI denetimlerinizi Visual Studio'da sınamasını etkinleştirme | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c6ad93e71c4208fb4d9ce9abd75e2bac554ba238
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 7c3906b84995716072d4df0a1b518930a521cdb6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Denetimlerinizin kodlanmış UI testlerini etkinleştirme
 
@@ -77,7 +77,7 @@ Kaydı ve kayıttan yürütme ve özelliği doğrulama için temel destek uygula
 
 ### <a name="to-support-custom-property-validation"></a>Özel özellik doğrulamayı desteklemek için
 
-![CUIT&#95;Props](../test/media/cuit_props.png "CUIT_Props")
+![CUIT&#95;özellik](../test/media/cuit_props.png "CUIT_Props")
 
 1. Eğri gösterge erişilebilir nesnenin geçersiz kılma <xref:System.Windows.Forms.AccessibleObject.Description%2A> zengin özellik değerlerini açıklama dizesine geçmenizi özelliği. Birden çok değerleri noktalı virgülle (;) ayırın.
 

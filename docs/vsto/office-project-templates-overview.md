@@ -1,12 +1,10 @@
 ---
-title: "Office proje şablonlarına genel bakış | Microsoft Docs"
-ms.custom: 
+title: Office proje şablonlarına genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -32,13 +30,14 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], project templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 634ebd13d214f2d354e150b47f9dd50757bd2817
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: c8b82da48e04e9c38f16af3cdcc504f7c1fd070f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-project-templates-overview"></a>Office Proje Şablonlarına Genel Bakış
   Microsoft Office geliştirici araçları Visual Studio Proje şablonları Office çözümleri aşağıdaki türleri oluşturmak için şunları içerir:  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [VSTO eklentileri](#AppLevel)  
   
- Office çözümleri bu tür ayrıntılı karşılaştırması için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Office çözümleri bu tür ayrıntılı karşılaştırması için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Office proje şablonları kullanılabilir **yeni proje** iletişim kutusunda **Office** düğümünün **Visual C#** ve **Visual Basic**dil düğümleri. Her şablon, derleme başvuruları ve hata ayıklama ayarları dahil olmak üzere, hedef uygulamaya uygun yapılandırmaya sahip bir proje oluşturur.  
   
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Office geliştirme araçları Visual Studio'nun belirli sürümlerinde yer alır. Daha fazla bilgi edinmek için bkz. [Bir Bilgisayarı Office Çözümleri Geliştirmek Üzere Yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
-##  <a name="DocLevel"></a>Belge düzeyi özelleştirmeleri  
+##  <a name="DocLevel"></a> Belge düzeyi özelleştirmeleri  
  **Office** düğümünde **yeni proje** iletişim kutusu, Word ve Excel için belge düzeyi özelleştirmeleri oluşturmaya başlamanızı sağlamak için aşağıdaki proje şablonlarını sunar:  
   
 -   **Word 2013 ve 2016 VSTO belgesi**  
@@ -94,7 +93,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [İzlenecek Yol: Excel İçin İlk Belge Düzeyi Özelleştirmeyi Oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
   
-##  <a name="AppLevel"></a>VSTO eklentileri  
+##  <a name="AppLevel"></a> VSTO eklentileri  
  **Office/SharePoint** düğümünde **yeni proje** sağlamak için aşağıdaki proje şablonlarını başlatılan VSTO eklentileri oluşturma iletişim kutusu sağlar.  
   
 -   **Excel 2013 ve 2016 VSTO eklentisi**  
@@ -160,7 +159,7 @@ ms.lasthandoff: 01/10/2018
 |Kullanıcılar, salt okunur olmadığı sürece belgeyi açıp değiştirebilir. Kaydedilen tüm değişiklikler özgün belgede tutulur.|Kullanıcılar yeni bir belge olarak yerel kopya oluşturmak üzere şablonu açabilir. Özel izinler verilmediği sürece özgün belgede değişiklik yapamazlar.|  
 |Belge açıldığında, başlatır <xref:Microsoft.Office.Tools.Word.Document.Open> olay.|Açıldığında, şablon başlatır <xref:Microsoft.Office.Tools.Word.Document.New> olay.|  
   
-##  <a name="Limitations"></a>Genel Şablonlar ve Excel eklentileri (.xla dosyaları) sınırlamaları  
+##  <a name="Limitations"></a> Genel Şablonlar ve Excel eklentileri (.xla dosyaları) sınırlamaları  
  Belgeler, çalışma kitapları ve şablonları, genel şablonları veya Excel VSTO eklentileri (.xla dosyaları) olarak düzgün çalışmayabilir.  
   
 ## <a name="word-templates"></a>Word Şablonları  

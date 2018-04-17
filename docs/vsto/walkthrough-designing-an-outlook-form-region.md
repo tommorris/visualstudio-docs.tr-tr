@@ -1,13 +1,10 @@
 ---
-title: "İzlenecek yol: Outlook Form Bölgesi Tasarlama | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Outlook Form Bölgesi Tasarlama | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: afe17d19ebe87d34ae4857b1477be6cb3e894bb7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 22d67ffe14b261911d220dfeb64a0204a6a16032
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>İzlenecek Yol: Outlook Form Bölgesi Tasarlama
   Özel form bölgeleri standart veya özel Microsoft Office Outlook Form genişletir. Bu kılavuzda, bir kişi öğesinin Inspector penceresinde yeni bir sayfa olarak görünen özel form bölgesi tasarlama. Bu form bölgesi Windows Live yerel arama Web sitesine adres bilgilerini göndererek kişi için listelenen her adresin haritasını görüntüler. Form bölgeleri hakkında daha fazla bilgi için bkz: [Outlook Form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md).  
@@ -49,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)]veya [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
+-   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] veya [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") bu konuda video sürümü için bkz: [Video nasıl yapılır: Outlook Form Bölgesi Tasarlama](http://go.microsoft.com/fwlink/?LinkID=140824).  
   

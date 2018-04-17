@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: özel bir ana sayfa ve Site içeri aktarma bir görüntüyle | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: özel bir ana sayfa ve Site içeri aktarma bir görüntüyle | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 544c3c727046fdcabcde90f221f4b630c11cf29f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f90f85e7f22cf3bdecf90aaf6f8d61af3f399a68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>İzlenecek yol: Bir Görüntü İçeren Özel bir Ana Sayfa ve Site Sayfasını İçeri Aktarma
   Bu anlatımda bir SharePoint özel ana sayfa ve görüntüye sahip bir site sayfası nasıl içeri aktarılacağı gösterilir bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenler yüklü olmalıdır:  
   
--   Desteklenen sürümleri [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] ve SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Desteklenen sürümleri [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] ve SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Dağıtılan öğeleri görüntülemek için SharePoint sitesini açın.  
   
- Dosyaları içine aktarmak için alternatif bir yol [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve onlara dağıtmanız SharePoint olan modüllere dosyaları eklemek için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Nasıl yapılır: bir ana sayfa veya temayı içeri aktarma](../sharepoint/how-to-import-a-master-page-or-theme.md) ve [çözümde dosyaları eklemeyi modüllerini kullanma](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+ Dosyaları içine aktarmak için alternatif bir yol [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve onlara dağıtmanız SharePoint olan modüllere dosyaları eklemek için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Nasıl yapılır: bir ana sayfa veya temayı içeri aktarma](../sharepoint/how-to-import-a-master-page-or-theme.md) ve [çözümde dosyaları eklemeyi modüllerini kullanma](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Mevcut bir SharePoint sitesinden öğeleri içeri aktarma](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   

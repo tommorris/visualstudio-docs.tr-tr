@@ -1,55 +1,28 @@
 ---
-title: "Sanallaştırmak Parasoft/SOAtest Professional masaüstü avantajı | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to activate the Parasoft Virtualize/SOA Test Professional subscription included in your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4468cc99db6437606570d70cdb7ece31a53ca3a3
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Sanallaştırmak Parasoft/SOAtest Professional masaüstü avantajı | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Visual Studio aboneliğinize dahil Parasoft Sanallaştırılacak/SOA Test Professional abonelik etkinleştirme konusunda bilgi edinin.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 75ce02de0f7d534154ac075462484b2fc40f9328
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde sanallaştırmak Parasoft/SOAtest Professional masaüstü
-
-## <a name="overview"></a>Genel Bakış
+# <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde Parasoft Sanallaştırılacak/SOAtest Professional masaüstü
 
 Daha önce ve daha sık sınayın.  Benzetimini ve sınamasını kullanılamaz gelişen uygulamalar ve sistemler davranışını.  Altı aylık aboneliğini ücretsiz, avantajı içerir.  Altı aylık aboneliğinizi sonunda % 25 indirimli fiyat bir yıllık abonelik için uygun.  
 
-## <a name="eligibility"></a>Uygunluk
-
-| Abonelik düzeyinde / Program                                 | Faydası                     | Yenilenebilir?                                                   |
-|--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|
-| Visual Studio Enterprise standart                            | 6 ay                    |   Evet                                                        |
-| Visual Studio Enterprise yıllık                              | 6 ay                    |   Evet                                                        |
-| Aylık Visual Studio Enterprise                             | Yok               |                                                              |
-| Visual Studio Professional Standard                          | Yok               |                                                              |
-| Visual Studio Professional annual                            | Yok               |                                                              | 
-| Aylık Visual Studio Professional                           | Yok               |                                                              |
-| Visual Studio Test Pro                                       | Yok               |                                                              |
-| MSDN platformları                                               | Yok               |                                                              |
-| Visual Studio geliştirme temelleri                                 | Yok               |                                                              |
-| Visual Studio Enterprise - NFR*                              | Yok               |                                                              |
-| Visual Studio Enterprise - FTE                               | Yok               |                                                              |
-| Visual Studio Enterprise - Microsoft iş ortağı ağı         | 6 ay                    |   Evet                                                        |
-| Visual Studio Professional - Microsoft iş ortağı ağı       | Yok               |                                                              |
-| Visual Studio Enterprise – (standart) düşünün                | Yok               |                                                              |
-| Visual Studio Enterprise – (Premium) düşünün                 | Yok               |                                                              |
-| Visual Studio Enterprise – BizSpark                          | Yok               |                                                              |
-| Visual Studio Enterprise – MCT yazılım ve Hizmetleri           | Yok               |                                                              |
-| Visual Studio Enterprise – MCT yazılım ve Hizmetleri Geliştirici | Yok               |                                                              |
-* Değil satışı (NFR), Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP) içerir  
-
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 
-1.  Parasoft Sanallaştırılacak/SOAtest Professional masaüstü avantajını kullanmak için oturum açın [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Parasoft Sanallaştırılacak/SOAtest Professional masaüstü avantajını kullanmak için oturum açın [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Araçlar bölümünde Parasoft döşeme bulun ve tıklayın **kodunu Al** avantajı döşemenin altındaki bağlantıyı.   Kod başarıyla alındığını bir bildirim alırsınız.  Tıklatın **etkinleştirme**.
 
@@ -98,12 +71,23 @@ Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [https://my.visua
 
 17. Kurulum tamamlandıktan sonra tıklatın **son**. Artık, Parasoft Sanallaştırılacak/SOAtest Professional masaüstü avantajı kullanmaya başlamak hazırsınız!
 
-## <a name="faq"></a>SSS
-*Burada Güncelleştirmeleri denetle*
- 
+## <a name="eligibility"></a>Uygunluk
+| Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standart, yıllık bulut)   | Toplu Lisans, Azure, perakende, seçili NFR<sup>1</sup> | 6 ay       |  Evet       |
+| Visual Studio Professional (standart, yıllık bulut) | Toplu Lisans, Azure, perakende                                       | Yok                                                           |Yok         |
+| Visual Studio Test uzmanı (standart)                         | Toplu Lisans, perakende                                              | Yok                                                           |Yok         |
+| MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                                           |Yok         |
+| Visual Studio Dev Essentials | Yok  | Yok|Yok |
+| Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
+
+<sup>1</sup>*içerir: Microsoft iş ortağı ağı (Kurumsal).    Dışlar: Değil satışı için (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve Hizmetleri geliştirici, BizSpark, düşünün, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
+
+
+
 ## <a name="support-resources"></a>Destek kaynakları
 -  Parasoft ürünlerle Yardım gerekiyor mu?  Bu kaynaklara gözatın:
-    - Teknik Destek: https://www.parasoft.com/support/ 
-    - Parasoft Kaynak Merkezi: https://www.parasoft.com/resources/ 
+    - Teknik Destek:  https://www.parasoft.com/support/ 
+    - Parasoft Kaynak Merkezi:  https://www.parasoft.com/resources/ 
 -  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://www.visualstudio.com/subscriptions/support/).
 -  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://www.visualstudio.com/support/). 

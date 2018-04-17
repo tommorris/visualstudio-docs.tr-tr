@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: SharePoint projeleri için özel bir dağıtım adımı oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: SharePoint projeleri için özel bir dağıtım adımı oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 036f8d135e535547e9e5f790135186bf1f5728bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>İzlenecek Yol: SharePoint Projeleri için Özel bir Dağıtım Adımı Oluşturma
   Bir SharePoint projesi dağıttığınızda, Visual Studio belirli bir sıraya göre bir dizi dağıtım adımı yürütür. Visual Studio birçok yerleşik dağıtım adımlarını içerir, ancak Ayrıca kendi oluşturabilirsiniz.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Seçin **VSIX proje** şablonu, proje adı **UpgradeDeploymentStep**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **UpgradeDeploymentStep** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **UpgradeDeploymentStep** için proje **Çözüm Gezgini**.  
   
 #### <a name="to-create-the-extension-project"></a>Uzantı projesi oluşturmak için  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Seçin **sınıf kitaplığı** proje şablonu, proje adı **DeploymentStepExtension**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **DeploymentStepExtension** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **DeploymentStepExtension** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
   
 5.  Class1 kod dosyasının projeden silin.  
   
@@ -271,7 +270,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Seçin **son** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]EmployeesListDefinition projesi oluşturur.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] EmployeesListDefinition projesi oluşturur.  
   
 8.  EmployeesListDefinition proje için kısayol menüsünü açın, seçin **Ekle**ve ardından **yeni öğe**.  
   
@@ -289,7 +288,7 @@ ms.lasthandoff: 01/10/2018
   
     3.  **Varsayılan (boş)** seçilir **göre özelleştirilebilir bir liste oluşturur:** listesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Çalışanlar liste öğesi bir başlık sütunu ve boş bir örnek oluşturur ve Liste Tasarımcısı'nı açar.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Çalışanlar liste öğesi bir başlık sütunu ve boş bir örnek oluşturur ve Liste Tasarımcısı'nı açar.  
   
 12. Liste Tasarımcısı'nda üzerinde **sütunları** sekmesinde, seçin **yeni veya var olan sütun adı yazın** satır ve ardından aşağıdaki sütunlarda ekleyin **sütun görünen adı** listesi:  
   
@@ -433,7 +432,7 @@ ms.lasthandoff: 01/10/2018
   
      Özellikler Düzenleyicisi/Tasarımcısı'nı açar.  
   
-4.  Üzerinde **görünümleri** sekmesinde, seçin **e-posta** sütun ve ardından  **<**  bu sütunundan taşımak için anahtar **seçili sütunların**listesinin **kullanılabilir sütunlar** listesi.  
+4.  Üzerinde **görünümleri** sekmesinde, seçin **e-posta** sütun ve ardından **<** bu sütunundan taşımak için anahtar **seçili sütunların**listesinin **kullanılabilir sütunlar** listesi.  
   
      Bu eylem bu alanlar varsayılan görünümden kaldırır **çalışanlar** SharePoint sitesinde listesi.  
   

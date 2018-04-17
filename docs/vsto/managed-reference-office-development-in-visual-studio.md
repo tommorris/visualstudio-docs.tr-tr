@@ -1,12 +1,10 @@
 ---
-title: "Yönetilen başvuru (Visual Studio'da Office Geliştirme) | Microsoft Docs"
-ms.custom: 
+title: Yönetilen başvuru (Visual Studio'da Office Geliştirme) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3304d104a0ccf308c02a770f3e79fb08f6d06049
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5b0b6d7b6fdbb55030088f33fc235429d0b6142e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Yönetilen Başvuru (Visual Studio'da Office Geliştirme)
-  Bu bölüm, ad alanları için API başvuru belgeleri içerir ve ofisinde kullanılan türleri hedefleyen projeler [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Ad alanları ve .NET Framework 3.5 hedefleyen Office projelerinde kullanılan türler hakkında API başvuru belgeleri için Visual Studio belgelerinde şu bölüme bakın: [http://go.microsoft.com/fwlink/? LinkId 160658 =](http://go.microsoft.com/fwlink/?LinkId=160658).  
+  Bu bölüm, ad alanları için API başvuru belgeleri içerir ve ofisinde kullanılan türleri hedefleyen projeler [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Ad alanları ve .NET Framework 3.5 hedefleyen Office projelerinde kullanılan türler hakkında API başvuru belgeleri için Visual Studio belgelerinde şu bölüme bakın: [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
 > [!NOTE]  
 >  Office deneyimi boyunca genişletmek çözümleri geliştirirken ilgileniyor [birden çok platform](https://dev.office.com/add-in-availability)? Yeni [Office eklentileri modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). VSTO eklentilerini ve çözümlerle karşılaştırıldığında küçük bir yer Office eklentileri sahip ve teknoloji, HTML5, JavaScript, CSS3 ve XML gibi programlama neredeyse her web kullanarak oluşturabilirsiniz.  
@@ -65,7 +64,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çalışma zamanı genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Başlarken &#40; Office geliştirme Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Başlarken &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)   
  [Office Çözümleri Tasarlama ve Oluşturma](../vsto/designing-and-creating-office-solutions.md)  
   

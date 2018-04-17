@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Web bölümlerini görüntülemek için Sunucu Gezgini genişletme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Web bölümlerini görüntülemek için Sunucu Gezgini genişletme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e8b613f19a23bdb60452b50cf927af08b399d180
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>İzlenecek yol: Sunucu Gezginini Web Bölümlerini Görüntülemek Üzere Genişletme
   Visual Studio'da kullandığınız **SharePoint bağlantıları** düğümünün **Sunucu Gezgini** SharePoint sitelerinde bileşenleri görüntülemek için. Ancak, **Sunucu Gezgini** bazı bileşenler varsayılan olarak görüntülemez. Bu kılavuzda, genişletme **Sunucu Gezgini** Web Bölümü Galerisi görüntüler böylece her SharePoint sitesine bağlı.  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Seçin **VSIX proje** şablonu, proje adı **WebPartNode**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **WebPartNode** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **WebPartNode** için proje **Çözüm Gezgini**.  
   
 #### <a name="to-create-the-extension-project"></a>Uzantı projesi oluşturmak için  
   
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Proje şablonları listesinden seçip **sınıf kitaplığı**, proje adı **WebPartNodeExtension**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **WebPartNodeExtension** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **WebPartNodeExtension** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
   
 5.  Class1 kod dosyasının projeden silin.  
   
@@ -112,7 +111,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Proje şablonları listesinden seçip **sınıf kitaplığı**, proje adı **WebPartCommands**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **WebPartCommands** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **WebPartCommands** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
   
 6.  Class1 kod dosyasının projeden silin.  
   
@@ -159,7 +158,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Oku seçin **Ekle** düğmesine tıklayın ve ardından **bağlantı olarak Ekle** menüde görünür.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]kod dosyaları bağlantılar olarak WebPartCommands projeye ekler. Sonuç olarak, kod dosyaları WebPartNodeExtension projesinde bulunur, ancak dosyalarındaki kod ayrıca WebPartCommands projesinde derlenmiş.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kod dosyaları bağlantılar olarak WebPartCommands projeye ekler. Sonuç olarak, kod dosyaları WebPartNodeExtension projesinde bulunur, ancak dosyalarındaki kod ayrıca WebPartCommands projesinde derlenmiş.  
   
 5.  Kısayol menüsünü açın **WebPartCommands** yeniden proje ve seçin **Başvuru Ekle**.  
   
@@ -188,7 +187,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Seçin **kaynakları** sekmesini ve ardından **bu projenin varsayılan kaynak dosya içermiyor. Bir oluşturmak için buraya tıklayın** bağlantı.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]kaynak dosyası oluşturur ve Tasarımcısı'nda açar.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kaynak dosyası oluşturur ve Tasarımcısı'nda açar.  
   
 4.  En üstünde Tasarımcısı'nın yanındaki oku seçin **kaynak ekleme** menü komutunu ve ardından **ekleme yeni simgesine** görüntülenen menüde.  
   
@@ -378,6 +377,6 @@ ms.lasthandoff: 01/10/2018
  [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [İzlenecek yol: bir sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Simgeler için görüntü Düzenleyicisi](/cpp/windows/image-editor-for-icons)   
- [Simge veya başka görüntü &#40; görüntü Düzenleyicisi simgeler &#41;oluşturma;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Simge veya başka görüntü oluşturma &#40;simgeler için görüntü Düzenleyicisi&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

@@ -1,12 +1,10 @@
 ---
 title: "İzlenecek yol: Outlook'ta e-posta iletileri ile birlikte özel görev bölmelerini görüntüleme | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ad77a685f3100533f790ec6ae82cd11201128902
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e1fd5acf3ea2c4c6d12931b04f6360ada697378f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook"></a>İzlenecek Yol: Outlook'ta E-Posta İletileri ile Birlikte Özel Görev Bölmelerini Görüntüleme
   Bu kılavuz, oluşturulan veya açılan her e-posta iletisi birlikte özel görev bölmesini benzersiz bir örneğini görüntülemek gösterilmiştir. Kullanıcılar, görüntüleme ya da her e-posta iletisi Şerit üzerinde bir düğmeyi kullanarak özel görev bölmesini gizleme.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Oluşturma bir **Outlook eklentisi** adlı proje **OutlookMailItemTaskPane**. Kullanım **Outlook eklentisi** proje şablonu. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]açılır **ThisAddIn.cs** veya **ThisAddIn.vb** kod dosyası ve ekler **OutlookMailItemTaskPane** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] açılır **ThisAddIn.cs** veya **ThisAddIn.vb** kod dosyası ve ekler **OutlookMailItemTaskPane** için proje **Çözüm Gezgini**.  
   
 ## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Özel görev bölmesini kullanıcı arabiriminin tasarlama  
  Özel görev bölmeleri için görsel tasarımcı yoktur, ancak istediğiniz kullanıcı Arabirimi ile bir kullanıcı denetimi tasarlayabilirsiniz. Bu VSTO eklenti özel görev bölmesinde içeren basit bir kullanıcı Arabirimi olan bir <xref:System.Windows.Forms.TextBox> denetim. Bu kılavuzda daha sonra kullanıcı denetimi için özel görev bölmesini ekleyeceksiniz.  

@@ -1,12 +1,10 @@
 ---
-title: "Office çözümleri geliştirmesine genel bakış (VSTO) | Microsoft Docs"
-ms.custom: 
+title: Office çözümleri geliştirmesine genel bakış (VSTO) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f36b75b8c8c3cde4441520819ab566696d1d9066
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office Çözümleri Geliştirmesine Genel Bakış (VSTO)
   Microsoft Office ön ucu olarak çözümleri için kullanarak, size tanıdık Microsoft Office kullanıcı arabirimleri ve Word, Excel veri çözümleme özelliklerini ve Outlook e-posta yönetimi özelliklerini sözcük işleme özellikleri gibi araçları yararlanabilir . Office uygulamalarını özelleştirmek ve İş süreçlerinizi için gerek duyduğunuz belirli özellikler eklemek için Visual Studio'da çözüm geliştirebilirsiniz. Örneğin, Word düzenlenebilir veya düzenlenemez yapılan önceden var olan bölümleri çıkışı sözleşmeleri çeviren bir sözleşme oluşturucuyu kapatabilirsiniz. Excel ile farklı projeler için özelleştirilmiş bir otomatik bütçe çalışma sayfası oluşturabilirsiniz. Kullanıcılarınızın, karmaşık çözümleri web tabanlı bir mimari kullanırsanız olması çok daha pratik hale getirdiği office çözümlerini çevrimdışı da alabilir.  
@@ -29,7 +28,7 @@ ms.lasthandoff: 01/10/2018
  Bu konu, Visual Studio'da Office geliştirici araçları bulunan Office (VSTO) şablonları için Visual Studio araçları kullanarak oluşturabilirsiniz Office çözümlerinin türlerine genel bakış sağlar. Office ile geliştirme hakkında genel bilgi için bkz: [Office Geliştirici Merkezi](https://dev.office.com/).  
   
 ## <a name="choosing-an-office-project-type"></a>Bir Office proje türünü seçme  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]VSTO tabanlı Office geliştirme için proje şablonları aşağıdaki türlerini sağlar:  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO tabanlı Office geliştirme için proje şablonları aşağıdaki türlerini sağlar:  
   
 -   **Belge düzeyi özelleştirmeleri** belirli bir belge ile ilişkilendirilmiş.  
   
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="document-level-customizations"></a>Belge Düzeyinde Özelleştirmeler  
  Belge düzeyi özelleştirmelerini tek bir belge, çalışma kitabı veya Microsoft Office Word veya Microsoft Office Excel şablonu ile ilişkili bir derlemeyi oluşur. İlişkili belge açıldığında derleme yüklenir. Oluşturduğunuz özelleştirmelerinde özellikleri yalnızca ilişkili belge açık olduğunda kullanılabilir. Özelleştirmeleri herhangi bir belge açık olduğunda, yeni bir menü öğesi veya Şerit sekmesi görüntüleme gibi uygulama çapında değişiklik yapamazsınız.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Belge düzeyi özelleştirmeleri oluşturmanıza yardımcı olacak araçlar içerir. Bir tasarım yüzeyi olarak özelleştirdiğiniz belge barındırılan [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], sürükleyip bırakarak üzerine denetimleri belge tasarım sağlar. Diğer birçok [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Windows Forms denetimleri, sürükle ve bırak veri bağlama ve tümleşik bir hata ayıklayıcı gibi belge düzeyi projelerine özellikleri kullanılabilir.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Belge düzeyi özelleştirmeleri oluşturmanıza yardımcı olacak araçlar içerir. Bir tasarım yüzeyi olarak özelleştirdiğiniz belge barındırılan [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], sürükleyip bırakarak üzerine denetimleri belge tasarım sağlar. Diğer birçok [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Windows Forms denetimleri, sürükle ve bırak veri bağlama ve tümleşik bir hata ayıklayıcı gibi belge düzeyi projelerine özellikleri kullanılabilir.  
   
  Özelleştirmeler hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="vsto-add-ins"></a>VSTO eklentileri  
  VSTO eklentileri Microsoft Office uygulama ile ilişkilendirilen bir derlemeyi oluşur. İlişkili uygulama başlatıldığında, uygulama çalışmaya başladıktan sonra kullanıcılar ayrıca VSTO eklentileri yükleyebilir ancak genellikle, VSTO eklenti çalışır. VSTO oluşturduğunuz eklentileri özelliklerinde uygulamanın kendisinin belgeler açık olan bağımsız olarak kullanılabilir.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]VSTO eklentileri oluşturmanıza yardımcı olacak araçlar içerir. Eklenti projeleri için VSTO eklentisi temsil eden bir otomatik olarak oluşturulan sınıf içerir. Bu sınıf, özellikleri ve ana bilgisayar uygulamasının nesne modeline erişme ve VSTO eklentisi yüklenir ve kapandığında kodu çalıştırmak için kullanabileceğiniz olayları sağlar. Diğer birçok [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO eklentisi projelerine, Windows Forms ve tümleşik bir hata ayıklayıcı gibi özellikleri kullanılabilir.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO eklentileri oluşturmanıza yardımcı olacak araçlar içerir. Eklenti projeleri için VSTO eklentisi temsil eden bir otomatik olarak oluşturulan sınıf içerir. Bu sınıf, özellikleri ve ana bilgisayar uygulamasının nesne modeline erişme ve VSTO eklentisi yüklenir ve kapandığında kodu çalıştırmak için kullanabileceğiniz olayları sağlar. Diğer birçok [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO eklentisi projelerine, Windows Forms ve tümleşik bir hata ayıklayıcı gibi özellikleri kullanılabilir.  
   
  VSTO eklentileri hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
@@ -89,7 +88,7 @@ ms.lasthandoff: 01/10/2018
  Güvenlik VSTO Office çözümleri zorlanır için tarafından bir dizi denetim [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] yükler ve çözüm yüklendiğinde duruma getirir. Bu denetimler dağıtım bildirimi konumunu Güvenilen ya da dağıtım bildirimini imzalamak için kullanılan sertifikanın güvenilir olup olmadığını doğrulamayı içerir. Daha fazla bilgi için bkz: [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Başlarken &#40; Office geliştirme Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Başlarken &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
  [Excel için belge düzeyi özelleştirme programlamasına başlama](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   

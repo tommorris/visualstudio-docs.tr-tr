@@ -1,5 +1,5 @@
 ---
-title: "Kural Ayarla iletişim kutusu (eski) seçin | Microsoft Docs"
+title: Kural Ayarla iletişim kutusu (eski) seçin | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: cb2bc3f9-7730-4fb2-9f7b-303a9d9f0c8e
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df8d8675d7a3a94aa9bc4e72da6c52de65df3545
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 376b76e93849e58ac2d26f5c9360dc7673f2a3f0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Select kural Ayarla iletişim kutusu (eski)
 Bu konuda açıklanmaktadır kullanma **seçin kural kümesi** eski Windows iş akışı Tasarımcısı'nda iletişim kutusu. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

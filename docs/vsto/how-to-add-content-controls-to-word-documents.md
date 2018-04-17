@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: Word belgelerine içerik denetimleri ekleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: Word belgelerine içerik denetimleri ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +26,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], restricted permissions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b1dd59fc777c012f92baaf96302f7cf031ad151c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6edddf79bea7c3d4cd3cd5ef762dd9757509c754
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Nasıl Yapılır: Word Belgelerine İçerik Denetimleri Ekleme
   Belge düzeyi Word projelerinde, içerik denetimleri belgeye projenizde tasarım zamanında veya çalışma zamanında ekleyebilirsiniz. Word VSTO eklenti projelerinde içerik denetimlerini herhangi bir açık belgeye çalışma zamanında ekleyebilirsiniz.  
@@ -51,7 +50,7 @@ ms.lasthandoff: 01/10/2018
   
  İçerik denetimleri hakkında daha fazla bilgi için bkz: [içerik denetimleri](../vsto/content-controls.md).  
   
-##  <a name="designtime"></a>Tasarım zamanında içerik denetimleri ekleme  
+##  <a name="designtime"></a> Tasarım zamanında içerik denetimleri ekleme  
  Belge düzeyi projede tasarım zamanında içerik denetimleri eklemenin birkaç yolu vardır:  
   
 -   İçerik denetimden eklemek **Word denetimleri** sekmesinde **araç**.  
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  İçinde **denetimleri** grubunda, eklemek istediğiniz içerik denetimi simgesini tıklatın.  
   
-##  <a name="runtimedoclevel"></a>Belge düzeyi projesindeki çalışma zamanında içerik denetimleri ekleme  
+##  <a name="runtimedoclevel"></a> Belge düzeyi projesindeki çalışma zamanında içerik denetimleri ekleme  
  İçerik denetimlerine programlı olarak belgenize çalışma zamanında yöntemlerini kullanarak ekleyebileceğiniz <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> özelliği `ThisDocument` projenizdeki sınıfı. Her yöntemi aşağıdaki yollarla içerik denetimi eklemek için kullanabileceğiniz üç aşırı yüklemeye sahip:  
   
 -   Bir denetimi geçerli seçimi daha ekleyin.  
@@ -138,7 +137,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]  
   
-##  <a name="runtimeaddin"></a>Bir VSTO eklenti projesindeki çalışma zamanında içerik denetimleri ekleme  
+##  <a name="runtimeaddin"></a> Bir VSTO eklenti projesindeki çalışma zamanında içerik denetimleri ekleme  
  İçerik denetimlerini programlı olarak herhangi bir açık belgeye çalışma zamanında VSTO eklenti kullanarak ekleyebilirsiniz. Bunu yapmak için Oluştur bir <xref:Microsoft.Office.Tools.Word.Document> barındırma açık olan bir belgeye bağlı öğesi ve yöntemlerini kullanın <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> bu konak öğesi özelliği. Her yöntemi aşağıdaki yollarla içerik denetimi eklemek için kullanabileceğiniz üç aşırı yüklemeye sahip:  
   
 -   Bir denetimi geçerli seçimi daha ekleyin.  

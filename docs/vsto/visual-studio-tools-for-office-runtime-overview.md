@@ -1,12 +1,10 @@
 ---
-title: "Office çalışma zamanı genel bakış için Visual Studio Araçları | Microsoft Docs"
-ms.custom: 
+title: Office çalışma zamanı genel bakış için Visual Studio Araçları | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +26,14 @@ helpviewer_keywords:
 - runtime [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ed9f3657fcb49a7b39ee41d2ce9b73dddda7fd93
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f357e593c7fe1e3dc5e4803b93ac515911ed9f75
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Office Çalışma Zamanı İçin Visual Studio Araçlarına Genel Bakış
   Visual Studio'da Microsoft Office geliştirici araçları kullanılarak oluşturulan çözümleri çalıştırmak için Office çalışma zamanı için Visual Studio 2010 Araçları son kullanıcı bilgisayarlarında yüklenmesi gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Office Çalışma Zamanı için Visual Studio 2010 Araçları iki ana bileşenden oluşur:  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
   
  Çalışma zamanı birkaç farklı yolla yüklenebilir. Bilgisayarın yapılandırmasına bağlı olarak, çalışma zamanını yüklediğinizde farklı çalışma zamanı bileşenlerinin yüklemesi gerçekleşir. Daha fazla bilgi için bkz: [Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
-##  <a name="officeextensions"></a>.NET Framework için Office uzantıları anlama  
+##  <a name="officeextensions"></a> .NET Framework için Office uzantıları anlama  
  Office çalışma zamanı için Visual Studio 2010 Araçları, .NET Framework 3.5 için Office uzantıları içeren [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ve daha sonra. Her bir .NET Framework sürümünü hedefleyen çözümler, ilgili sürüm için uygun uzantıları kullanır.  
   
  Bu uzantılar, çözümlerinizin Office uygulamalarını otomatikleştirmek ve genişletmek için kullandığı derlemelerden oluşur. Bir Office projesi oluşturduğunuzda, Visual Studio projenin .NET Framework hedefi ve proje türü için kullanılan derlemelerin başvurularını otomatik olarak ekler. Office uzantılarında derlemeler hakkında daha fazla bilgi için bkz: [Office çalışma zamanı için Visual Studio araçlarında derlemeler](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).  
@@ -77,7 +76,7 @@ ms.lasthandoff: 01/10/2018
   
  Bu değişikliği yaptıktan sonra, projeyi oluşturduğunuzda, proje tarafından kullanılan tüm çalışma zamanı türlerine ilişkin tür bilgileri çözüm derlemesine eklenir. Çözüm, başvurulan derlemelerdeki bilgi türü yerine, bu katıştırılmış bilgi türünü çalışma zamanında kullanılır.  
   
-##  <a name="UnmanagedLoader"></a>Office çözüm yükleyicisi anlama  
+##  <a name="UnmanagedLoader"></a> Office çözüm yükleyicisi anlama  
  Office çalışma zamanı için Visual Studio Araçları çalışma zamanı ve Office çözümleri yüklemek için Office uygulamalarını kullanmaktadır bazı yönetilmeyen DLL dosyaları içerir. Hiçbir zaman bu DLL'ler ile doğrudan çalışmanız gerekmese de, bu DLL'lerin amaçlarını bilmeniz, Office çözümlerinin mimarisini daha iyi anlamanıza yardımcı olabilir.  
   
  Bu bileşenler yükleme işlemi sırasında nasıl kullanıldığı konusunda daha fazla bilgi için bkz: [belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md) ve [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md).  
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
  VSTOLoader.dll ayrıca VSTO eklentileri için belirli birkaç şey yapar:  
   
--   Bunu uygulayan <xref:Extensibility.IDTExtensibility2> arabirimi. <xref:Extensibility.IDTExtensibility2>Tüm VSTO eklentileri Microsoft Office uygulamaları için uygulamalıdır bir COM arabirimidir. Bu arabirim uygulama çağırır ve VSTO eklentisi ile iletişim kurmak için yöntemleri tanımlar.  
+-   Bunu uygulayan <xref:Extensibility.IDTExtensibility2> arabirimi. <xref:Extensibility.IDTExtensibility2> Tüm VSTO eklentileri Microsoft Office uygulamaları için uygulamalıdır bir COM arabirimidir. Bu arabirim uygulama çağırır ve VSTO eklentisi ile iletişim kurmak için yöntemleri tanımlar.  
   
 -   Imanagedaddin arabirimi uygular. Bu arabirim, Office uygulamaları tarafından VSTO eklentileri yük yardımcı olmak için kullanılır. Daha fazla bilgi için bkz: [Imanagedaddin arabirimi](../vsto/imanagedaddin-interface.md).  
   

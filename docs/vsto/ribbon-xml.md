@@ -1,13 +1,10 @@
 ---
-title: "Şerit XML | Microsoft Docs"
-ms.custom: 
+title: Şerit XML | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.Ribbon.RibbonXMLItem
 dev_langs:
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - customizing the Ribbon, displaying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e12489431a7496b1d64d5aef93a24fcc239be81a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 76527949bcfc5b3023ebd75fe15726b02938d39e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-xml"></a>Şerit XML
   Şerit (XML) öğesi bir Şerit XML kullanarak özelleştirmenize olanak sağlar. Şerit (Görsel Tasarımcı) öğesi tarafından desteklenmeyen bir yolla Şerit'özelleştirmek istiyorsanız Şerit (XML) öğesini kullanın. Her bir öğeyle ne yapabileceğinizi karşılaştırması için bkz: [Şerite Genel Bakış](../vsto/ribbon-overview.md).  
@@ -82,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
  Farklı türlerde Şerit denetimleri atayabilirsiniz geri arama yöntemleri vardır. Her denetim için geri çağırma yöntemlerini tam bir listesi için teknik makalesine bakın [geliştiriciler (Bölüm 3 / 3) için Office (2007) Şerit kullanıcı arabirimi özelleştirme](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15).  
   
-###  <a name="CallBackMethods"></a>Geri arama yöntemleri tanımlama  
+###  <a name="CallBackMethods"></a> Geri arama yöntemleri tanımlama  
  Şerit kod dosyası Şerit sınıfındaki geri arama yöntemleri tanımlar. Bir geri çağırma yöntemi birkaç gereksinimlere sahiptir:  
   
 -   Bu genel olarak bildirilmesi gerekir.  
@@ -98,7 +95,7 @@ ms.lasthandoff: 01/10/2018
  [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
  [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
   
-##  <a name="RibbonDescriptorFile"></a>Şerit XML dosya başvurusu  
+##  <a name="RibbonDescriptorFile"></a> Şerit XML dosya başvurusu  
  Şerit XML dosyasına, özel bir Şerit ekleme öğeleri ve öznitelikleri tarafından tanımlayabilirsiniz. Varsayılan olarak, aşağıdaki XML Şerit XML dosyası içeriyor.  
   
 ```  
@@ -122,8 +119,8 @@ ms.lasthandoff: 01/10/2018
 |-------------|-----------------|  
 |**customUI**|Özel Şerit VSTO eklenti projesindeki temsil eder.|  
 |**Şerit**|Şerit temsil eder.|  
-|**sekmeleri**|Şerit Sekmeleri kümesini temsil eder.|  
-|**sekmesi**|Tek bir Şerit sekmesini temsil eder.|  
+|**Sekmeleri**|Şerit Sekmeleri kümesini temsil eder.|  
+|**Sekmesi**|Tek bir Şerit sekmesini temsil eder.|  
 |**Grup**|Şerit sekmesindeki denetimleri grubunu temsil eder.|  
   
  Bu öğeleri görünümünü ve özel Şerit davranışını belirtin özniteliklere sahiptir. Aşağıdaki tabloda Şerit XML dosyasındaki varsayılan öznitelikleri açıklanmaktadır.  
@@ -131,20 +128,20 @@ ms.lasthandoff: 01/10/2018
 |Öznitelik|Üst öğesi|Açıklama|  
 |---------------|--------------------|-----------------|  
 |**Yüklendiğinde**|**customUI**|Uygulama Şerit yüklediğinde çağrılan bir yöntemi tanımlar.|  
-|**idMso**|**sekmesi**|Şerit'i görüntülemek üzere yerleşik bir sekmeyi tanımlar.|  
+|**idMso**|**Sekmesi**|Şerit'i görüntülemek üzere yerleşik bir sekmeyi tanımlar.|  
 |**id**|**Grup**|Grubu tanımlar.|  
 |**Etiket**|**Grup**|Görüntülenen metni grubunda belirtir.|  
   
  Varsayılan öğeleri ve öznitelikleri Şerit XML dosyasındaki öğeleri ve kullanılabilir özniteliklerinin küçük bir alt kümesidir. Kullanılabilir öğeleri ve öznitelikleri tam listesi için teknik makalesine bakın [geliştiriciler (Kısım 2 / 3) için Office (2007) Şerit kullanıcı arabirimi özelleştirme](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
   
-##  <a name="RibbonExtensionClass"></a>Şerit sınıfı başvurusu  
+##  <a name="RibbonExtensionClass"></a> Şerit sınıfı başvurusu  
  Visual Studio Şerit sınıfı Şerit kod dosyasında oluşturur. Şerit üzerindeki denetimleri için geri çağırma yöntemleri bu sınıfına ekleyin. Bu sınıf uygulayan <xref:Microsoft.Office.Core.IRibbonExtensibility> arabirimi.  
   
  Aşağıdaki tabloda bu sınıftaki varsayılan yöntemleri açıklar.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|`GetCustomUI`|Şerit XML dosyasının içeriğini döndürür. Microsoft Office uygulamaları, özel bir Şerit kullanıcı arabiriminin tanımlayan bir XML dizesini elde etmek için bu yöntemi çağırır. Bu yöntem uygulayan <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> yöntemi. **Not:** `GetCustomUI` sadece Şerit XML dosyasının; içeriğini döndürmek için uygulanması VSTO Eklentinizi başlatmak için kullanılmamalıdır. Özellikle, iletişim kutularını veya diğer windows görüntülemeye denemelisiniz değil, `GetCustomUI` uygulaması. Aksi takdirde, özel Şerit doğru çalışmayabilir. VSTO eklentinizi başlatır kodu çalıştırmak varsa, kodu ekleyin `ThisAddIn_Startup` olay işleyicisi.|  
+|`GetCustomUI`|Şerit XML dosyasının içeriğini döndürür. Microsoft Office uygulamaları, özel bir Şerit kullanıcı arabiriminin tanımlayan bir XML dizesini elde etmek için bu yöntemi çağırır. Bu yöntem uygulayan <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> yöntemi. **Not:** `GetCustomUI` sadece Şerit XML dosyasının; içeriğini döndürmek için uygulanması VSTO Eklentinizi başlatmak için kullanılmamalıdır.   Özellikle, iletişim kutularını veya diğer windows görüntülemeye denemelisiniz değil, `GetCustomUI` uygulaması. Aksi takdirde, özel Şerit doğru çalışmayabilir. VSTO eklentinizi başlatır kodu çalıştırmak varsa, kodu ekleyin `ThisAddIn_Startup` olay işleyicisi.|  
 |`OnLoad`|Atar <xref:Microsoft.Office.Core.IRibbonControl> parametresi `ribbon` alan. Özel Şerit yüklediğinizde Microsoft Office uygulamaları bu yöntemi çağırın. Özel Şerit dinamik olarak güncelleştirmek için bu alanı kullanabilirsiniz. Daha fazla bilgi için teknik makalesine bakın [geliştiriciler (Kısım 1 / 3) için Office (2007) Şerit kullanıcı arabirimi özelleştirme](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Tarafından çağrılır `GetCustomUI` Şerit XML dosyasının içeriğini elde etmek için yöntemi.|  
   

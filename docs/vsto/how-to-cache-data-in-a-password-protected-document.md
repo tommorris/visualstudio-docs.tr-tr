@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: bir parola korumalı belgede veriyi önbelleğe alma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: bir parola korumalı belgede veriyi önbelleğe alma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 240debad9945c397290375f1931f4bce9ffa1f34
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 71ce65cd253ea6473a07a98542449a1e47ae9d7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Nasıl Yapılır: Parola Korumalı Belgede Veriyi Önbelleğe Alma
   Bir belge veya bir parolayla korunduğu çalışma kitabının veri önbelleğindeki veri eklerseniz, önbelleğe alınmış verilerde yapılan değişiklikleri otomatik olarak kaydedilmez. Projenizdeki iki yöntemi geçersiz kılarak önbelleğe alınmış veri değişikliklerini kaydedebilir.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Parola korumalı Excel çalışma kitabında veriyi önbelleğe almak için  
   
-1.  İçinde `ThisWorkbook` sınıf veya biri `Sheet`  *n*  sınıfları, işaretlemek ortak alan veya önbelleğe alınacak özelliği. Daha fazla bilgi için bkz: [veri önbelleğe alma](../vsto/caching-data.md).  
+1.  İçinde `ThisWorkbook` sınıf veya biri `Sheet` *n* sınıfları, işaretlemek ortak alan veya önbelleğe alınacak özelliği. Daha fazla bilgi için bkz: [veri önbelleğe alma](../vsto/caching-data.md).  
   
 2.  Geçersiz kılma <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> yönteminde `ThisWorkbook` sınıfı ve koruma çalışma kitabından kaldırın.  
   

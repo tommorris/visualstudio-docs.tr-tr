@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: bir Site sütunu, içerik türü ve SharePoint listesi oluşturun | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: bir Site sütunu, içerik türü ve SharePoint listesi oluşturun | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4db9ed078131e7152f3987c80f4e6181f888e540
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>İzlenecek yol: SharePoint için Site Sütunu, İçerik Türü ve Liste Oluşturma
   Aşağıdaki yordamlar özel SharePoint site sütunları oluşturulacağını göstermektedir — veya *alanları*— yanı sıra site sütunlarını kullanan bir içerik türü. Ayrıca, yeni içerik türünü kullanan bir listesinin nasıl oluşturulacağı gösterilir.  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Visual Studio.  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a>Özel Site sütunları oluşturma  
+##  <a name="BKMK_CreatingCustSiteCols"></a> Özel Site sütunları oluşturma  
  Bu örnek, hastaneler hastalar yönetmek için bir liste oluşturur. İlk olarak, bir SharePoint Proje oluşturmalısınız [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve site sütunları, aşağıdaki gibi ekleyin.  
   
 #### <a name="to-create-the-project"></a>Proje oluşturmak için  
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Aynı yordamı kullanarak, iki daha fazla site sütunları projeye ekleyin: **hasta kimliği** (tür = "Tamsayı") ve **Doctor adı** (tür = "Text"). Grup değerlerine ayarlayın **Clinic Site sütunları**.  
   
-##  <a name="BKMK_CreateCustContType"></a>Özel bir içerik türü oluşturma  
+##  <a name="BKMK_CreateCustContType"></a> Özel bir içerik türü oluşturma  
  Ardından, bir içerik türü oluşturma — kişiler içerik türüne göre — önceki yordamda oluşturduğunuz site sütunları içerir. Varolan bir içerik türü bir içerik türü alma tarafından temel içerik türü için yeni içerik türü kullanımda birkaç site sütunları sağladığından zamandan tasarruf edebilirsiniz.  
   
 #### <a name="to-create-a-custom-content-type"></a>Özel bir içerik türü oluşturmak için  
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 11. Menü çubuğunda seçin **dosya**, **Tümünü Kaydet**, içerik türü Tasarımcısı'nı kapatın.  
   
-##  <a name="BKMK_CreateList"></a>Liste oluşturma  
+##  <a name="BKMK_CreateList"></a> Liste oluşturma  
  Artık, yeni içerik türü ve site sütunlarını kullanan bir liste oluşturur.  
   
 #### <a name="to-create-a-list"></a>Bir liste oluşturmak için  
@@ -205,7 +204,7 @@ ms.lasthandoff: 01/10/2018
   
 15. İçinde **sütun adı** listesinde, seçin **hasta adı**, olduğundan emin olun **sıralama** sütunu olarak ayarlanmış **artan**ve ardından seçin **Tamam** düğmesi.  
   
-##  <a name="BKMK_TestApp"></a>Uygulamayı test etme  
+##  <a name="BKMK_TestApp"></a> Uygulamayı test etme  
  Özel site sütunları, içerik türü ve liste hazır, SharePoint'e dağıtmak ve test için uygulamayı çalıştırın.  
   
 #### <a name="to-test-the-application"></a>Uygulamayı test etmek için  
@@ -231,6 +230,6 @@ ms.lasthandoff: 01/10/2018
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)   
  [Nasıl yapılır: özel alan türü oluşturma](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [İçerik türleri](http://go.microsoft.com/fwlink/?LinkId=192080)   
- [Sütunları](http://go.microsoft.com/fwlink/?LinkId=192081)  
+ [sütunları](http://go.microsoft.com/fwlink/?LinkId=192081)  
   
   

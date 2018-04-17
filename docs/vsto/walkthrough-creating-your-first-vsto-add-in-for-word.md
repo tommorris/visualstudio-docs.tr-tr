@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Word için ilk VSTO eklentinizi oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Word için ilk VSTO eklentinizi oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3452bd5e550ab724dc6c236515579869814a9237
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d7bddcf43d275dc30b0f3825fbb2dbe665e46025
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>İnceleme: Word için İlk VSTO Eklentinizi Oluşturma
   Bu tanıtıcı kılavuz nasıl Microsoft Office Word için VSTO eklentisi oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin belgeler açık olan bağımsız olarak kullanılabilir.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  **Tamam**'ı tıklatın.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]oluşturur **FirstWordAddIn** proje ve düzenleyicide ThisAddIn kod dosyasını açar.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturur **FirstWordAddIn** proje ve düzenleyicide ThisAddIn kod dosyasını açar.  
   
 ## <a name="writing-code-to-add-text-to-the-saved-document"></a>Kaydedilmiş belgeye metin eklemek için kod yazma  
  Ardından, kodu ThisAddIn kod dosyasına ekleyin. Yeni kod, kaydedilen her belge için standart bir metin eklemek için Word nesne modeli kullanır. Varsayılan olarak, aşağıdaki oluşturulmuş kodu ThisAddIn kod dosyasını içerir:  
@@ -137,7 +136,7 @@ ms.lasthandoff: 01/10/2018
 -   Word için VSTO eklentileri dağıtma: [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Word çözümleri](../vsto/word-solutions.md)   
  [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)   
  [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)   

@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Proje şablonu ile bir Site sütunu proje öğesi oluşturma, bölüm 1 | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Proje şablonu ile bir Site sütunu proje öğesi oluşturma, bölüm 1 | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2266fc715322c024625e5f52f83805d0d582416b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>İzlenecek yol: Proje Şablonu, Bölüm 1 ile bir Site Sütunu Proje Öğesi Oluşturma
   SharePoint projeleri için bir veya daha fazla SharePoint Proje öğeleri kapsayıcılardır. Visual Studio'da SharePoint Proje sistem kendi SharePoint proje öğesi türleri oluşturarak ve bunları bir proje şablonu ile ilişkilendirme genişletebilirsiniz. Bu kılavuzda, bir site sütunu oluşturmak için bir proje öğesi türü tanımlayacaksınız ve sonra bir site sütunu proje öğesi içeren yeni bir proje oluşturmak için kullanılan bir proje şablonu oluşturur.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
  Tek başına bir kılavuz budur. Bu kılavuzu tamamladıktan sonra proje şablonu için bir sihirbaz ekleyerek proje öğesi geliştirebilirsiniz. Daha fazla bilgi için bkz: [izlenecek yol: bir proje şablonu, bölüm 2 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
 > [!NOTE]  
->  Tamamlanan projeleri, kod ve bu kılavuz aşağıdaki konumdan diğer dosyalarını içeren bir örnek indirebilirsiniz: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Tamamlanan projeleri, kod ve bu kılavuz aşağıdaki konumdan diğer dosyalarını içeren bir örnek indirebilirsiniz: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarındaki aşağıdaki bileşenler gerekir:  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  İçinde **adı** kutusuna **SiteColumnProjectItem**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **SiteColumnProjectItem** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **SiteColumnProjectItem** için proje **Çözüm Gezgini**.  
   
 #### <a name="to-create-the-project-template-project"></a>Proje şablonu projesi oluşturmak için  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  İçinde **adı** kutusuna **SiteColumnProjectTemplate**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **SiteColumnProjectTemplate** çözüme proje.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **SiteColumnProjectTemplate** çözüme proje.  
   
 6.  Class1 kod dosyasının projeden silin.  
   
@@ -126,7 +125,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  İçinde **adı** kutusuna **ProjectItemTypeDefinition** ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **ProjectItemTypeDefinition** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **ProjectItemTypeDefinition** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
   
 5.  Class1 kod dosyasının projeden silin.  
   
@@ -434,7 +433,7 @@ ms.lasthandoff: 01/10/2018
   
     -   Ekler `ProjectItem` her filethat için öğeleri her proje örnek dahil.  
   
-    -   "Http://schemas.microsoft.com/developer/vstemplate/2005" ad alanı kullanır. Bu çözümdeki başka proje dosyalarına "http://schemas.microsoft.com/developer/msbuild/2003" ad alanını kullanın. Bu nedenle, XML Şeması uyarı iletilerini oluşturulur, ancak bu kılavuzda yoksayabilirsiniz.  
+    -   Ad alanı kullanır "http://schemas.microsoft.com/developer/vstemplate/2005". Bu çözüm kullanımda başka proje dosyalarına "http://schemas.microsoft.com/developer/msbuild/2003" ad alanı. Bu nedenle, XML Şeması uyarı iletilerini oluşturulur, ancak bu kılavuzda yoksayabilirsiniz.  
   
      .Vstemplate dosyaları içeriği hakkında daha fazla bilgi için bkz: [Visual Studio şablon şeması başvurusu](/visualstudio/extensibility/visual-studio-template-schema-reference).  
   

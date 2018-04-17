@@ -1,12 +1,10 @@
 ---
-title: "Mevcut bir SharePoint sitesinden öğeleri içeri aktarma | Microsoft Docs"
-ms.custom: 
+title: Mevcut bir SharePoint sitesinden öğeleri içeri aktarma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
@@ -22,24 +20,25 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a542a74bf162c4fc2bb2fe2c725b02742d568547
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b5a4f282923b073a87307d88f0c3e3b4365d1057
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="importing-items-from-an-existing-sharepoint-site"></a>Mevcut bir SharePoint Sitesinden Öğeleri İçeri Aktarma
   Yeni bir içerik türlerini ve alanların varolan SharePoint siteleri gibi öğeleri yeniden alma SharePoint çözüm paketi proje şablonu sağlar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint çözüm. En alınan çözümler değişiklik yapmadan çalıştırabilirsiniz, ancak olup olmadığını bazı kısıtlamalar ve dikkate alınacak konular özellikle içeri aktardıktan sonra herhangi bir öğeyi değiştirin.  
   
 > [!NOTE]  
->  Yeniden kullanılabilir iş akışlarını almak için yeniden kullanılabilir iş akışı içe proje şablonu kullanın. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Yeniden kullanılabilir iş akışlarını içeri aktarma yönergeleri](../sharepoint/guidelines-for-importing-reusable-workflows.md).  
+>  Yeniden kullanılabilir iş akışlarını almak için yeniden kullanılabilir iş akışı içe proje şablonu kullanın. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Yeniden kullanılabilir iş akışlarını içeri aktarma yönergeleri](../sharepoint/guidelines-for-importing-reusable-workflows.md).  
   
 ## <a name="supported-sharepoint-solutions"></a>Desteklenen SharePoint çözümleri  
- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]tam olarak oluşturulan çözümleri alma destekleyen [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] ve [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
+ [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] tam olarak oluşturulan çözümleri alma destekleyen [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] ve [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]Aşağıdaki uygulamalarda oluşturduğu çözümleri alma desteklemez:  
+ [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] Aşağıdaki uygulamalarda oluşturduğu çözümleri alma desteklemez:  
   
 -   [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
   
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
   
  ExpenseForms listesi tanımını içe aktarırsanız, örneğin, bu adı taşıyan bir liste tanımı altında görünür **liste tanımları** klasöründe **Çözüm Gezgini** kendi Elements.xml birlikte ve Schema.XML dosyaları. Ancak, ilişkili ASPX ve HTML formları adlı bir klasöre yerleştirilebilir **ExpenseForms** altında **diğer içe aktarılan dosyaları** klasör. Alma işlemini tamamlamak için bu dosyaları ExpenseForms listesi tanımı'nda altında taşıma **Çözüm Gezgini** değiştirip **DeploymentType** özelliği her bir dosyanın **NoDeployment** için **ElementFile**.  
   
- Olay alıcıları alırken Elements.xml dosyayı doğru konuma kopyalanır, ancak çözümüyle dağıtır, el ile derleme çözüm paketinde içermesi gerekir. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)]Bunu yapmak için bkz: nasıl [nasıl yapılır: ekleme ve kaldırma ek derlemeler](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+ Olay alıcıları alırken Elements.xml dosyayı doğru konuma kopyalanır, ancak çözümüyle dağıtır, el ile derleme çözüm paketinde içermesi gerekir. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] Bunu yapmak için bkz: nasıl [nasıl yapılır: ekleme ve kaldırma ek derlemeler](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
  İş akışlarını içeri aktarırken formlara kopyalanır **diğer içe aktarılan dosyaları** klasör. Bir Web şablonu .wsp dosya içeriyorsa, başlangıç sayfası olarak ayarlanır **Çözüm Gezgini**.  
   
@@ -112,13 +111,13 @@ ms.lasthandoff: 01/10/2018
  Çözümler içe aktarırken, bazı isteğe bağlı özellik öznitelikleri içeri aktarılan özellik bildirimden göz ardı edilir. Yeni özellik dosyası içinde bu özniteliklerin geri yüklemek istiyorsanız, yeni bir özellik bildirimi özgün özellik dosyasına karşılaştırarak eksik öznitelikleri tanımlamak ve konu'ndaki yönergeleri izleyin [nasıl yapılır: bir SharePoint özelliğiniözelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Dağıtım çakışma algılaması yerleşik listesi örneklerinde gerçekleştirilmez  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Dağıtım çakışma algılaması (SharePoint ile gelen diğer bir deyişle, varsayılan liste örnekleri) yerleşik listesi örneklerinde gerçekleştirmez. Çakışma algılaması gerçekleştirme değil, SharePoint yerleşik listesi örneklerinde üzerine yazılmasını önlemek için yapılır. Hala örnekleridir yerleşik listesi dağıtılan veya güncelleştirildi, ancak hiçbir zaman silinmiş veya üzerine. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][SharePoint paketleme ve dağıtım sorunlarını giderme](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Dağıtım çakışma algılaması (SharePoint ile gelen diğer bir deyişle, varsayılan liste örnekleri) yerleşik listesi örneklerinde gerçekleştirmez. Çakışma algılaması gerçekleştirme değil, SharePoint yerleşik listesi örneklerinde üzerine yazılmasını önlemek için yapılır. Hala örnekleridir yerleşik listesi dağıtılan veya güncelleştirildi, ancak hiçbir zaman silinmiş veya üzerine. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint paketleme ve dağıtım sorunlarını giderme](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
   
 ## <a name="importing-sharepoint-server-2010-workflows"></a>SharePoint Server 2010 iş akışlarını içeri aktarma  
- İçinde oluşturulan bir iş akışını içeri aktarırsanız [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], onu dağıttıktan sonra düzgün çalışmaz. Belirli derlemeleri eksik olduğu için iş akışı düzgün çalışmaz ve [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] iş akışlarınızı içeren şu anda desteklenmez InfoPath formları [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] iş akışı çözümleri. Ancak, içeri aktarılan [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] başvuruları ekleme gibi bazı öğeler düzelttikten sonra düzgün çalışması için iş akışları yapılabilir [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] derlemeler ve formlara yeniden bağlanıyor. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][SharePoint Server 2010 iş akışlarını içeri aktarma](http://go.microsoft.com/fwlink/?LinkId=182226).  
+ İçinde oluşturulan bir iş akışını içeri aktarırsanız [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], onu dağıttıktan sonra düzgün çalışmaz. Belirli derlemeleri eksik olduğu için iş akışı düzgün çalışmaz ve [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] iş akışlarınızı içeren şu anda desteklenmez InfoPath formları [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] iş akışı çözümleri. Ancak, içeri aktarılan [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] başvuruları ekleme gibi bazı öğeler düzelttikten sonra düzgün çalışması için iş akışları yapılabilir [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] derlemeler ve formlara yeniden bağlanıyor. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint Server 2010 iş akışlarını içeri aktarma](http://go.microsoft.com/fwlink/?LinkId=182226).  
   
 ## <a name="item-name-character-limit"></a>Öğe adı karakter sınırı  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Proje ve proje öğesi adları için yol dahil, toplam 260 karakterlik bir sınırı vardır. Bir öğe adı bu sınırı aşarsa, bir çözüm içe aktarırken, hata iletisi:  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Proje ve proje öğesi adları için yol dahil, toplam 260 karakterlik bir sınırı vardır. Bir öğe adı bu sınırı aşarsa, bir çözüm içe aktarırken, hata iletisi:  
   
  **Belirtilen yol, dosya adı veya her ikisini birden çok uzun. Tam dosya adı 260 karakterden az olmalıdır ve dizin adı 248 karakterden kısa olmalıdır.**  
   

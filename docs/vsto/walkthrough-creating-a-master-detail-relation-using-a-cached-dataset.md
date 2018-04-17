@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: önbellekteki veri kümesini kullanarak ana ayrıntı ilişkisi oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: önbellekteki veri kümesini kullanarak ana ayrıntı ilişkisi oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], Master/Detail Relation
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 161fdc5e35a24b1318a44d2102867961330ba559
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: abe0b766214c1906afcf443c23948c492a6bde90
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-master-detail-relation-using-a-cached-dataset"></a>İzlenecek yol: önbellekteki veri kümesini kullanarak ana ayrıntı ilişkisi oluşturma
   Bu kılavuz, bir çalışma sayfasında bir ana öğe/ayrıntı ilişkisi oluşturma ve veriyi önbelleğe almayı çözümü çevrimdışı kullanılabilir gösterir.  
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 -   Northwind SQL Server örnek veritabanına erişim. Veritabanı geliştirme bilgisayarınızda veya bir sunucuda olabilir.  
   

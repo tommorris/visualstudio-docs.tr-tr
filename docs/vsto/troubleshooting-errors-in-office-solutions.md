@@ -1,13 +1,10 @@
 ---
-title: "Office çözümlerinde sorun giderme | Microsoft Docs"
-ms.custom: 
+title: Office çözümlerinde sorun giderme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a077949de07d89adad76c6fc68754d2018fa461
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1166f183e49bfc01592a645916ce12c1148ec8de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Office Çözümleri Hatalarında Sorun Giderme
   Visual Studio'da Office çözümleri geliştirirken, aşağıdaki görevleri gerçekleştirdiğinizde sorunlarla karşılaşabilirsiniz:  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Projelerde hata ayıklama](#debugging)  
   
-##  <a name="creating"></a>Projeler oluşturma ve yükseltme  
+##  <a name="creating"></a> Projeler oluşturma ve yükseltme  
  Office projeleri oluşturduğunuzda veya açtığınızda aşağıdaki hatalarla karşılaşabilirsiniz.  
   
 ### <a name="the-project-cannot-be-created"></a>Proje oluşturulamaz  
@@ -89,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  Proje yükseltme işlemini tamamladıktan sonra diğer Office çözümleri tarafından kullanılmadığından, Visual Studio 2005 araçları Office ikinci Edition çalışma zamanı için geliştirme bilgisayardan kaldırabilirsiniz.  
   
-##  <a name="designers"></a>Tasarımcılar kullanma  
+##  <a name="designers"></a> Tasarımcılar kullanma  
  Belge, çalışma kitabı veya belge düzeyi projelerine çalışma Tasarımcısı ile çalışırken aşağıdaki hatalarla karşılaşabilirsiniz.  
   
 ### <a name="designer-failed-to-load-correctly"></a>Tasarımcı düzgün yüklenemedi  
@@ -110,7 +107,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Küçük Resim Ekle komutu, Visual Studio Tasarımcısı'nda hiçbir şey yapmıyor  
  Excel veya Word'den Visual Studio Tasarımcısı'nda açıkken tıklatarak **küçük resim** düğmesini **çizimler** sekmesini Şeritte açık değil **küçük resim** görev bölmesi. Küçük resim eklemek için çalışma kitabı veya ana proje klasöründeki (\bin klasöründe yer alan kopya değil) dışında Visual Studio belgesinde kopyasını açın, küçük resim eklemek ve ardından çalışma kitabını veya belgeyi kaydedin.  
   
-##  <a name="code"></a>Kod yazma  
+##  <a name="code"></a> Kod yazma  
  Office projelerinde kodu yazarken aşağıdaki hatalarla karşılaşabilirsiniz.  
   
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Office nesneleri bazı olayların C# kullanırken erişilebilir değil  
@@ -128,7 +125,7 @@ ms.lasthandoff: 01/10/2018
   
  Office PIA olay arabirimlerde hakkında daha fazla bilgi için bkz: [genel bakış, sınıflar ve arabirimler Office birincil birlikte çalışma derlemeleri](http://msdn.microsoft.com/en-us/da92dc3c-8209-44de-8095-a843659368d5).  
   
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Hedefleyen Office projelerinde PIA sınıflar başvuramaz [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Hedefleyen Office projelerinde PIA sınıflar başvuramaz [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], bir Office PIA tanımlanan bir sınıftan başvuran kodu varsayılan olarak derlenmez. PIA sınıfları kullanın adlandırma kuralı *objectname*gibi sınıfı <xref:Microsoft.Office.Interop.Word.DocumentClass> ve <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Örneğin, aşağıdaki kodu Word VSTO eklenti projesindeki derlenmez.  
   
 ```vb  
@@ -175,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  Word veya Excel ad alanı içe aktardıktan ve onun içindeki tüm sınıflara erişiminiz olsa bile, tüm türleriyle Word veya Excel ad alanı belirsizliğini kaldırmak için tam olarak nitelemek gerekir.  
   
-##  <a name="building"></a>Proje oluşturma  
+##  <a name="building"></a> Proje oluşturma  
  Office projeleri oluşturma sırasında şu hatalarla karşılaşabilirsiniz.  
   
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Sınırlı izinlere sahip bir belge dayalı bir belge düzeyi proje oluşturamaz  
@@ -188,7 +185,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>NamedRange denetimi silindikten sonra derleyici hataları oluşur.  
  Silerseniz bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetim etkin çalışma sayfasında otomatik olarak oluşturulan kodu Tasarımcısı'nda olmayan bir çalışma kitabından kaldırılmaması projenizden ve derleyici hataları oluşabilir. Kod kaldırılır emin olmak için her zaman içeren çalışma seçmelisiniz <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi silmeden önce etkin çalışma yapmak için denetim. Denetim sildiğinizde otomatik olarak oluşturulan kodu silinmez, kodu çalışma etkinleştirme ve böylece çalışma değiştirilmiş olarak işaretlenmiş hale bir değişiklik yapmadan silmek Tasarımcı neden olabilir. Projeyi yeniden kod kaldırılır.  
   
-##  <a name="debugging"></a>Projelerde hata ayıklama  
+##  <a name="debugging"></a> Projelerde hata ayıklama  
  Office projelerinde hata ayıklama işlemi yaparken aşağıdaki hatalarla karşılaşabilirsiniz.  
   
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Yayımlama ve bir çözüm geliştirme bilgisayarınızda yüklediğinizde kaldırmak için istemi belirir.  

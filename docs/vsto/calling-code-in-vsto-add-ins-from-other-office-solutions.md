@@ -1,12 +1,10 @@
 ---
-title: "VSTO eklentilerinde diğer Office Çözümlerinden kod çağırma | Microsoft Docs"
-ms.custom: 
+title: VSTO eklentilerinde diğer Office Çözümlerinden kod çağırma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - calling code from VBA
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c21ea9555a125503230faa92a5e6508c192a8175
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1f256cf8fd0b5c89a0d9e6a9733680aac9257cd4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calling-code-in-vsto-add-ins-from-other-office-solutions"></a>VSTO Eklentilerinde Diğer Office Çözümlerinden Kod Çağırma
   VSTO eklentinizi diğer Microsoft Office çözümleri dahil olmak üzere diğer çözümleri için de bir nesne getirebilir. VSTO eklentinizi diğer çözümlerin kullanması için etkinleştirmek istediğiniz bir hizmet sağlarsa, bu yararlıdır. Bir Web hizmetinden finansal verileri hesaplamalar gerçekleştirir. Microsoft Office Excel için VSTO eklenti varsa, örneğin, diğer çözümleri bu hesaplamalar çağırarak Excel VSTO eklenti çalışma zamanında gerçekleştirebilirsiniz.  
@@ -87,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  Bunun yerine getirebilir [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) ayarlayarak arabirimi <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> özniteliği AutoDispatch ya AutoDual değerine <xref:System.Runtime.InteropServices.ClassInterfaceType> numaralandırması. Bunu yaparsanız, ayrı bir arabirim yöntemleri bildirme gerekmez. VBA kodu gibi temel sınıflardan elde edilen yöntemler de dahil olmak üzere sınıfınızda herhangi bir ortak ve statik olmayan yöntem ancak çağırabilir <xref:System.Object>. Ayrıca, erken bağlama kullanan işlem dışı istemciler sınıfınız çağrılamaz.  
   
-###  <a name="outofproc"></a>İşlem dışı istemcilere sınıfları gösterme  
+###  <a name="outofproc"></a> İşlem dışı istemcilere sınıfları gösterme  
  VSTO eklentinizi işlem dışı istemcilere bir sınıfta kullanıma sunmak istiyorsanız, sınıfından türetilmelidir <xref:System.Runtime.InteropServices.StandardOleMarshalObject> işlem dışı istemciler VSTO eklenti nesnenizin çağırabilirsiniz emin olmak için. Aksi takdirde, nesnenizin örneği bir işlem dışı istemcisinde almanın girişimleri beklenmedik şekilde başarısız olabilir.  
   
  Bir Office uygulamasının nesne modeline tüm çağrıları ana UI iş parçacığında yapılması gerekir, ancak bir işlem dışı istemcisinden gelen çağrıları nesnenize rasgele bir RPC (uzak yordam çağrısı) parçacığında ulaşır budur. .NET Framework'teki COM hazırlama mekanizması iş parçacığı geçiş yapmaz ve bunun yerine ana kullanıcı Arabirimi iş parçacığı yerine gelen RPC iş nesnenize çağrısı hazırlamak çalışır. Nesnenizin türeyen bir sınıf örneği olup olmadığını <xref:System.Runtime.InteropServices.StandardOleMarshalObject>, nesnenize gelen çağrıları otomatik olarak konak uygulamanın ana kullanıcı Arabirimi iş parçacığı olacağı sunulan nesnenin oluşturulduğu, iş parçacığına sıralanmış.  

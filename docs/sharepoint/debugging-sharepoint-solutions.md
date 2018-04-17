@@ -1,13 +1,10 @@
 ---
-title: "SharePoint çözümlerinde hata ayıklama | Microsoft Docs"
-ms.custom: 
+title: SharePoint çözümlerinde hata ayıklama | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.WebConfigModificationDialog
 - VS.SharePointTools.Project.DebuggingNotEnabled
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85317332cd6b142bb8e0e916e3d7ac80e4aa836c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>SharePoint Çözümlerinde Hata Ayıklama
   SharePoint çözümlerini kullanarak ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı. Hata ayıklama, başlattığınızda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proje dosyalarını SharePoint sunucusuna dağıtır ve sonra SharePoint sitesine örneği Web tarayıcısında açar. Aşağıdaki bölümlerde, SharePoint uygulamalarında hata ayıklama açıklanmaktadır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -42,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Gelişmiş hata ayıklama bilgilerini etkinleştirme](#EnhancedDebug)  
   
-##  <a name="EnableDebug"></a>Hata ayıklamayı etkinleştirme  
+##  <a name="EnableDebug"></a> Hata ayıklamayı etkinleştirme  
  Ne zaman önce hata ayıklama bir SharePoint çözüm [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], bir iletişim kutusu, web.config dosyasında hata ayıklamayı etkinleştirmek için yapılandırılmamış sizi uyarır. (SharePoint sunucusu yüklediğinizde, web.config dosyası oluşturulur. Daha fazla bilgi için bkz: [Web.config dosyaları ile çalışma](http://go.microsoft.com/fwlink/?LinkID=149266).) İletişim kutusunun hata ayıklamayı etkinleştirmek için her iki projeyi hata ayıklama veya web.config dosyasında değişiklik olmadan çalıştıran seçeneği sunar. İlk seçeneği belirlerseniz, projeyi normal şekilde çalışır. İkinci seçeneği belirlerseniz, web.config dosyasında yapılandırılır:  
   
 -   Çağrı yığınındaki Aç (`CallStack="true"`)  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Derleme hata ayıklamasını devre dışı (`<compilation debug="false">`)  
   
-##  <a name="Deployment"></a>F5 hata ayıklama ve dağıtım işlemi  
+##  <a name="Deployment"></a> F5 hata ayıklama ve dağıtım işlemi  
  SharePoint Proje hata ayıklama modunda çalıştırdığınızda, SharePoint dağıtım işlemi aşağıdaki görevleri gerçekleştirir:  
   
 1.  Özelleştirilebilir dağıtım öncesi komutları çalıştırır.  
@@ -118,16 +115,16 @@ ms.lasthandoff: 01/10/2018
   
 12. Uygun kitaplık, liste veya site sayfası Web tarayıcısında görüntüler.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Her görev tamamlandıktan sonra çıktı penceresinde bir durum iletisini görüntüler. Bir görev tamamlandığında, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Hata Listesi penceresi bir hata iletisi görüntüler.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Her görev tamamlandıktan sonra çıktı penceresinde bir durum iletisini görüntüler. Bir görev tamamlandığında, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Hata Listesi penceresi bir hata iletisi görüntüler.  
   
-##  <a name="Features"></a>SharePoint Proje Özellikleri  
+##  <a name="Features"></a> SharePoint Proje Özellikleri  
  Bir özellik değişikliği sitelerin site tanımları kullanılarak basitleştirilir işlevlerin taşınabilir ve modüler bir birimdir. Ayrıca bir paketi olan [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] , etkinleştirilmesi için belirli bir kapsam ve belirli hedef ya da görev gerçekleştirmek kullanıcılara yardımcı olur (WSS) öğeleri. Şablonları özellikleri dağıtılır.  
   
  Bir projeyi hata ayıklama modunda çalıştırdığınızda, dağıtım işlemi bir klasörde oluşturur *özelliği* %COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES konumundaki dizin. Özellik adlarının biçime sahip *proje adı*_Feature*x*, TestProject_Feature1 gibi.  
   
  Özellik dizinine çözümün klasöründe içeren bir *özelliği tanımı* dosyası ve bir *iş akışı tanımı* dosya. Özellik tanım dosyası (Feature.xml dosyasına) dosyalarını açıklar projenin özelliğinin proje şablonu proje tanım dosyası (Elements.xml) açıklar. Elements.XML bulunabilir **Çözüm Gezgini**, ancak Feature.xml dosyasına çözüm paketi oluşturduğunuzda oluşturulur. Bu dosyalar hakkında daha fazla bilgi için bkz: [SharePoint Proje ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
-##  <a name="Workflow"></a>İş akışları hata ayıklama  
+##  <a name="Workflow"></a> İş akışları hata ayıklama  
  İş akışı projelerinde hata ayıklama işlemi yaparken [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (türüne bağlı olarak kendi) iş akışı şablonu bir kitaplık veya bir listesine ekler. İş akışı şablonu sonra el ile veya eklemek veya bir öğe tarafından da başlatabilirsiniz. Daha sonra kullanabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] iş akışı hata ayıklamak için.  
   
 > [!NOTE]  
@@ -137,12 +134,12 @@ ms.lasthandoff: 01/10/2018
   
  İş akışını el ile başlatılabilir belirtilmişse, örneğin, kitaplık veya liste öğesi doğrudan iş akışı'nı başlatın. Bir iş akışı el ile başlatma hakkında daha fazla bilgi için bkz: [el ile bir belge öğesi üzerinde bir iş akışı başlatmalarını](http://go.microsoft.com/fwlink/?LinkID=79938).  
   
-##  <a name="FeatureEvents"></a>Hata ayıklama özellik Olay alıcıları  
+##  <a name="FeatureEvents"></a> Hata ayıklama özellik Olay alıcıları  
  Varsayılan olarak çalıştırdığınızda, bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint uygulaması özelliklerini otomatik olarak sizin için SharePoint sunucusu üzerine etkinleştirilir. Özellik Olay alıcıları, hata ayıklama işlemi yaparken bir özellik tarafından etkinleştirildiğinde ancak, bu sorunlara neden olur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], hata ayıklayıcı farklı bir işlemde çalıştırır. Başka bir deyişle, kesme noktaları gibi bazı hata ayıklama işlevleri düzgün çalışmaz.  
   
  SharePoint özelliğinde otomatik etkinleştirmeyi devre dışı bırakın ve uygun özellik Olay alıcıları hata ayıklama izin vermek için projenin değerini ayarlamak **etkin Dağıtım Yapılandırması** özelliğine **Hayır etkinleştirme** hata ayıklama önce. Ardından, SharePoint uygulamanızda hata ayıklama başladıktan sonra [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], el ile SharePoint'teki özelliği etkinleştir. Özelliğini etkinleştirmek için açık **Site eylemleri** SharePoint menüde seçin **Site Ayarları**, seçin **yönetmek Site özellikleri** bağlamak ve ardından **Etkinleştirme** normal olarak hata ayıklama devam etmek için özellik yanındaki düğmesi.  
   
-##  <a name="EnhancedDebug"></a>Gelişmiş hata ayıklama bilgilerini etkinleştirme  
+##  <a name="EnhancedDebug"></a> Gelişmiş hata ayıklama bilgilerini etkinleştirme  
  Arasındaki bazen karmaşık etkileşimleri nedeniyle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] işlemi (devenv.exe) [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint ana bilgisayar işlemi (vssphost4.exe), SharePoint ve WCF katman, derleme, dağıtma ve benzeri sırasında oluşan hataları tanılama olabilir bir sınama. Bu tür hatalar çözmenize yardımcı olacak Gelişmiş hata ayıklama bilgilerini etkinleştirebilirsiniz. Bunu yapmak için Windows Kayıt Defteri'nde aşağıdaki kayıt defteri anahtarına gidin:  
   
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools]  

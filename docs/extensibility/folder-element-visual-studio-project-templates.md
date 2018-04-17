@@ -1,29 +1,25 @@
 ---
-title: "Folder öğesi (Visual Studio Proje şablonları) | Microsoft Docs"
-ms.custom: 
+title: Folder öğesi (Visual Studio Proje şablonları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
 helpviewer_keywords:
 - Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c561564f75d4e5557c64f94adfb9caed6abce83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder Öğesi (Visual Studio Proje Şablonları)
 Projeye eklenen bir klasörü belirtir.  
@@ -56,17 +52,17 @@ Projeye eklenen bir klasörü belirtir.
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|`Folder`|Projeye eklemek için bir klasör belirtir. `Folder`alt öğeler içerebilir `Folder` öğeleri.|  
+|`Folder`|Projeye eklemek için bir klasör belirtir. `Folder` alt öğeler içerebilir `Folder` öğeleri.|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Projeye eklemek için dosyayı belirtir.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Proje](../extensibility/project-element-visual-studio-templates.md)|İsteğe bağlı bir alt öğenin [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
+|[Project](../extensibility/project-element-visual-studio-templates.md)|İsteğe bağlı bir alt öğenin [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `Folder`İsteğe bağlı bir alt `Project`.  
+ `Folder` İsteğe bağlı bir alt `Project`.  
   
  Proje öğeleri şablonunda klasörler halinde düzenlemek için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz:  
   

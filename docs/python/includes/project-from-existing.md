@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 5423ccf6f441c5eca61e7994c2579e6dc068a38f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 04/16/2018
+---
 1. Visual Studio'yu başlatın ve seçin **Dosya > Yeni > Proje**.
 
 1. İçinde **yeni proje** iletişim kutusu, "Python" Ara "Varolan Python kodundan" şablonunu seçin, bir ad ve konum proje verin ve seçin **Tamam**.

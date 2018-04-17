@@ -1,12 +1,10 @@
 ---
-title: "Araç uzantıları SharePoint programlama modeline genel bakış | Microsoft Docs"
-ms.custom: 
+title: Araç uzantıları SharePoint programlama modeline genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +14,20 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8eaa1f5d1cfe8120ec6a01c2fe7f646cf90be44a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a52d05dd22ae88deecc2d79d3ab3de7d3c3b6344
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>SharePoint Araç Uzantılarının Programlama Modeline Genel Bakış
   Visual Studio'da SharePoint araçları için uzantı oluştururken SharePoint araçları tarafından kullanıma sunulan bir veya daha fazla genişletilebilirlik arabirimleri uygulayarak başlar. Çoğu durumda, uzantı özellikleri uygulamak için SharePoint araçları tarafından sağlanan diğer türleri de kullanır. Bazı senaryolarda, Visual Studio ve SharePoint tarafından sağlanan diğer nesne modelleri türlerinde de kullanabilirsiniz. Bu nesne modellerinin her biri amacını anlama ve bunların birbirleriyle SharePoint araçları için Uzantılar oluşturmak için nasıl kullanılacağını bilmeniz gerekir.  
   
 ## <a name="extending-the-sharepoint-tools-by-implementing-extensibility-interfaces"></a>Genişletilebilirlik arabirimleri uygulayarak SharePoint araçları genişletme  
- Visual Studio için SharePoint araçları genişletilebilirliği modeli sağlamak için .NET Framework 4'te Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanır. MEF olduğu (System.ComponentModel.Composition derlemede uygulanan) bir API genişletilebilirlik noktaları kullanıma ve bulmak ve çalışma zamanında uzantıları yüklemek uygulamaları etkinleştirir. MEF hakkında daha fazla bilgi için bkz: [Genişletilebilirlik Çerçevesi ile yönetilen &#40; MEF &#41; ](/dotnet/framework/mef/index).  
+ Visual Studio için SharePoint araçları genişletilebilirliği modeli sağlamak için .NET Framework 4'te Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanır. MEF olduğu (System.ComponentModel.Composition derlemede uygulanan) bir API genişletilebilirlik noktaları kullanıma ve bulmak ve çalışma zamanında uzantıları yüklemek uygulamaları etkinleştirir. MEF hakkında daha fazla bilgi için bkz: [Genişletilebilirlik Çerçevesi ile yönetilen &#40;MEF&#41;](/dotnet/framework/mef/index).  
   
  SharePoint araçları genişletmek için Visual Studio tarafından sunulan bir veya daha fazla genişletilebilirlik arabirimlerini uygular. Ayrıca uygulamalısınız <xref:System.ComponentModel.Composition.ExportAttribute>, ve ek SharePoint araçları özgü arabirimi uygulamanız gerektiğinde, öznitelikleri. Aşağıdaki tabloda, SharePoint araçları genişletmek için uygulayabileceğiniz arabirimlerini listeler.  
   
@@ -88,7 +87,7 @@ ms.lasthandoff: 01/10/2018
  Tümleştirme nesne modeli hakkında daha fazla bilgi için bkz: [Otomasyon modeline genel bakış](/visualstudio/extensibility/internals/automation-model-overview) ve [Visual Studio SDK'sı başvurusu](/visualstudio/extensibility/visual-studio-sdk-reference).  
   
 ### <a name="sharepoint-object-models"></a>SharePoint nesne modelleri  
- SharePoint araç uzantıları SharePoint API'leri bir SharePoint sitesi değiştirmek veya bir SharePoint sitesinden veri almak için kullanabilirsiniz. [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]ve [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] iki farklı nesne modelleri sağlar: bir sunucu nesne modeli ve bir istemci nesne modeli.  
+ SharePoint araç uzantıları SharePoint API'leri bir SharePoint sitesi değiştirmek veya bir SharePoint sitesinden veri almak için kullanabilirsiniz. [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] ve [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] iki farklı nesne modelleri sağlar: bir sunucu nesne modeli ve bir istemci nesne modeli.  
   
  İki nesne modelinde bir SharePoint araçları uzantısında API'leri kullanabilirsiniz, ancak her nesne modeli SharePoint araç uzantıları bağlamında bazı avantajları ve sakıncaları vardır. Daha fazla bilgi için bkz: [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   

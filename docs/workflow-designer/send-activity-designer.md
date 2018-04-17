@@ -1,5 +1,5 @@
 ---
-title: "Etkinlik Tasarımcısı gönderme | Microsoft Docs"
+title: Etkinlik Tasarımcısı gönderme | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ad913623480599f8d299cba438b108a4511ae7
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 13cc79a498ca25e6aada15e4efd20c1928b4379a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-activity-designer"></a>Etkinlik Tasarımcısı Gönder
 
@@ -46,8 +46,8 @@ ms.lasthandoff: 03/12/2018
 |<xref:System.ServiceModel.Activities.Send.KnownTypes%2A>|False|Hizmet işlemi bilinen türleri bu tarafından çağrılacak bir koleksiyonunu <xref:System.ServiceModel.Activities.Send> etkinlik. Bu özellik ile birlikte kullanılması gereken <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> özelliğini <xref:System.Runtime.Serialization.DataContractSerializer>. Varsa bu değer yoksayılır <xref:System.Xml.Serialization.XmlSerializer> kullanılır.<br /><br /> Yanındaki üç nokta düğmesini **KnownTypes** görüntülemek için özellik kılavuzunu alanındaki **türü Koleksiyonu Düzenleyicisi** ilgili türleri ile ekleyebileceğiniz iletişim.<br /><br /> Yanındaki üç nokta düğmesini **KnownTypes** görüntülemek için özellik kılavuzunu alanındaki **türü Koleksiyonu Düzenleyicisi** ile ilgili türleri iletişim kutusunu. Bu kutu kullanma hakkında daha fazla bilgi için bkz: [türü koleksiyon Düzenleyicisi iletişim kutusu](../workflow-designer/type-collection-editor-dialog-box.md) konu.|
 |<xref:System.ServiceModel.Activities.Send.ProtectionLevel%2A>|Doğru|Belirtir <xref:System.Net.Security.ProtectionLevel> ileti.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> yalnızca kimlik doğrulaması anlamına gelir.<br />2. <xref:System.Net.Security.ProtectionLevel> oturum aktarılan veri bütünlüğünü sağlamaya yardımcı olmak için veri anlamına gelir.<br />3. <xref:System.Net.Security.ProtectionLevel> şifrelemek ve oturum gizliliği ve aktarılan veri bütünlüğünü sağlamaya yardımcı olmak için veri anlamına gelir.|
 |<xref:System.ServiceModel.Activities.Send.SerializerOption%2A>|Doğru|Çağrılacak hizmet işlemi için kullanılacak serileştirici <xref:System.ServiceModel.Activities.Send> etkinlik. Varsayılan değer <xref:System.Runtime.Serialization.DataContractSerializer>, serileştirir ve bir XML akışı veya sağlanan veri sözleşmesi kullanarak belge türünün bir örneği seri durumdan çıkarır.|
-|<xref:System.ServiceModel.Activities.Send.Action%2A>|False|İletinin eylem üstbilgisini belirtir. Değeri açıkça ayarlanmazsa, varsayılan: https://tempuri.org/ {hizmet sözleşmesi ad} / {hizmet sözleşmesi adı} / {işlem adı}. Belirtilen varsa bir <xref:System.ServiceModel.Activities.Send> etkinliği <xref:System.ServiceModel.Activities.Receive> iletiyi alır etkinliği iletisinin doğru şekilde teslim edilmesi aynı değere sahip olmalıdır.|
-|<xref:System.ServiceModel.Activities.Send.TokenImpersonationLevel%2A>||<xref:System.Security.Principal.TokenImpersonationLevel> İleti alıcısı için izin verilir. Bir sunucu işlemi istemci işlem adına işlem yapabileceği derece yöneten Güvenlik kimliğe bürünme düzeyleri tanımlar. <xref:System.Security.Principal.TokenImpersonationLevel> kimliğe bürünme düzeyi atanmamıştır gösterir. <xref:System.Security.Principal.TokenImpersonationLevel> Sunucu işlemi istemci kimlik bilgilerini alamaz ve istemci alamadığı gösterir. <xref:System.Security.Principal.TokenImpersonationLevel> Sunucu işlemi güvenlik tanımlayıcılarını ve öncelikleri gibi istemci hakkında bilgi elde edebilirsiniz, ancak istemci kimliğini belirleyemez gösterir. Bu, örneğin, tabloları ve görünümleri verme veritabanı ürünleri kendi nesneleri dışarı aktarmak sunucuları için faydalıdır. Alınan istemci güvenlik bilgileri kullanarak, sunucu erişimi doğrulaması istemcinin güvenlik bağlamını kullanarak diğer hizmetler kullanabilmeye olmadan kararlarını verebilir. <xref:System.Security.Principal.TokenImpersonationLevel> Sunucu işlemi istemcinin güvenlik bağlamı, yerel sistemde bürünebileceğini gösterir. Sunucu uzak sistemlere istemci kimliğini belirleyemez. <xref:System.Security.Principal.TokenImpersonationLevel> Sunucu işlemi istemcinin güvenlik bağlamı uzak sistemlere bürünebileceğini gösterir.|
+|<xref:System.ServiceModel.Activities.Send.Action%2A>|False|İletinin eylem üstbilgisini belirtir. Değeri açıkça ayarlanmazsa, varsayılan: https://tempuri.org/{service ad alanı sözleşme} / {hizmet sözleşmesi adı} / {işlem adı}. Belirtilen varsa bir <xref:System.ServiceModel.Activities.Send> etkinliği <xref:System.ServiceModel.Activities.Receive> iletiyi alır etkinliği iletisinin doğru şekilde teslim edilmesi aynı değere sahip olmalıdır.|
+|<xref:System.ServiceModel.Activities.Send.TokenImpersonationLevel%2A>||<xref:System.Security.Principal.TokenImpersonationLevel> İleti alıcısı için izin verilir. Bir sunucu işlemi istemci işlem adına işlem yapabileceği derece yöneten Güvenlik kimliğe bürünme düzeyleri tanımlar.<xref:System.Security.Principal.TokenImpersonationLevel> Kimliğe bürünme düzeyi atanmamıştır gösterir. <xref:System.Security.Principal.TokenImpersonationLevel> Sunucu işlemi istemci kimlik bilgilerini alamaz ve istemci alamadığı gösterir. <xref:System.Security.Principal.TokenImpersonationLevel> Sunucu işlemi güvenlik tanımlayıcılarını ve öncelikleri gibi istemci hakkında bilgi elde edebilirsiniz, ancak istemci kimliğini belirleyemez gösterir. Bu, örneğin, tabloları ve görünümleri verme veritabanı ürünleri kendi nesneleri dışarı aktarmak sunucuları için faydalıdır. Alınan istemci güvenlik bilgileri kullanarak, sunucu erişimi doğrulaması istemcinin güvenlik bağlamını kullanarak diğer hizmetler kullanabilmeye olmadan kararlarını verebilir. <xref:System.Security.Principal.TokenImpersonationLevel> Sunucu işlemi istemcinin güvenlik bağlamı, yerel sistemde bürünebileceğini gösterir. Sunucu uzak sistemlere istemci kimliğini belirleyemez. <xref:System.Security.Principal.TokenImpersonationLevel> Sunucu işlemi istemcinin güvenlik bağlamı uzak sistemlere bürünebileceğini gösterir.|
 |<xref:System.ServiceModel.Activities.Send.Endpoint%2A>||<xref:System.ServiceModel.Endpoint> , <xref:System.ServiceModel.Activities.Send> Etkinlik iletiyi gönderir. Bu özellik ayarlanırsa <xref:System.ServiceModel.Activities.Send.EndpointConfigurationName%2A> özelliği ayarlanmalıdır **null**.|
 |<xref:System.ServiceModel.Activities.Send.EndpointAddress%2A>||<xref:System.ServiceModel.EndpointAddress> İletinin gönderildiği için.|
 |<xref:System.ServiceModel.Activities.Send.EndpointConfigurationName%2A>||Uç nokta Yapılandırması adı. Bir yapılandırma dosyasında bir uç nokta yapılandırırken bu özelliği ayarlayın. Verilen adı için bu özelliği ayarlayın  **\<uç noktası >** yapılandırma dosyanızda öğesi. Bu özellik ayarlanırsa, <xref:System.ServiceModel.Activities.Send.Endpoint%2A> özelliği ayarlanmalıdır **null**.|

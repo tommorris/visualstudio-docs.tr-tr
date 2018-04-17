@@ -1,18 +1,18 @@
 ---
-title: "Nasıl yapılır: bir etkinlik kitaplığı oluşturma | Microsoft Docs"
+title: 'Nasıl yapılır: bir etkinlik kitaplığı oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 151e3f84636273de253937ebf5c91cff066b9f85
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: faa7c593d27474c0980e7c7df7bf932bd2d5431d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-activity-library"></a>Nasıl yapılır: bir etkinlik kitaplığı oluşturma
 Özel etkinlikler belirli İş süreçlerinizi bir iş akışında model oluşturmak için kullanılır. Etkinlik kitaplığı şablonunda [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] görsel olarak Windows iş akışı Tasarımcısı'nı kullanarak bu tür özel etkinlikler oluşturmanıza olanak sağlaması için sağlanan.
@@ -36,7 +36,7 @@ ms.lasthandoff: 03/12/2018
 7.  İçinde **çözüm** kutusunda, çözümünüz için açıklayıcı bir ad yazın ve ardından **Tamam**.
 
     > [!NOTE]
-    > Varolan bir çözümü bir iş akışı konsol uygulama eklemek istiyorsanız, bu çözümde açmak [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından  **Yeni proje...**  açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklandığı gibi devam edin.
+    > Varolan bir çözümü bir iş akışı konsol uygulama eklemek istiyorsanız, bu çözümde açmak [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından **Yeni proje...** açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklandığı gibi devam edin.
 
 8.  Proje şablonu XAML içinde bir etkinlik tanımı oluşturur. Windows iş akışı Tasarımcısı açar ve özel etkinliklerinizi tuvale görüntüler.
 

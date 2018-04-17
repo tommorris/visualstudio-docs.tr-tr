@@ -1,19 +1,19 @@
 ---
-title: "Visual Studio abonelikleri lisans koşulları"
+title: Visual Studio abonelikleri lisans koşulları
 author: evanwindom
 ms.author: jaunger
-Manager: evelynp
-ms.date: 10/3/2017
+manager: evelynp
+ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-description: "Visual Studio abonelikleri lisans koşulları."
+description: Visual Studio abonelikleri lisans koşulları.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 68e5a55156b3a5e67f047df585f20c83e808386a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/16/2018
 ---
 **AŞAĞIDAKİ VISUAL STUDIO ABONELİKLER İÇİN MICROSOFT YAZILIMI LİSANS KOŞULLARI:**
 
@@ -35,7 +35,7 @@ BU LİSANS KOŞULLARINA UYMANIZ DURUMUNDA, ALMAK İÇİN HER LİSANS AŞAĞIDA H
 
    b. Lisans modeli. Yazılım, bir kullanıcı başına temelinde lisanslanmıştır.
 
-2. **YÜKLEME VE KULLANIM HAKLARI.** 
+2. **1.KURULUM VE KULLANIM HAKLARI.** 
 
    a. **Genel.** Bir kullanıcı yükleyebilir ve geliştirme ve uygulamalarınızı test etme için yazılımın kopyasını kullanın. Yazılım, bir aygıt veya sunucuda bir üretim ortamında kullanamazsınız.
 
@@ -45,17 +45,17 @@ BU LİSANS KOŞULLARINA UYMANIZ DURUMUNDA, ALMAK İÇİN HER LİSANS AŞAĞIDA H
 
    d. **Dahil Olan Microsoft Programları.** Bu konuda açıklandığı gibi dışında 2.e bölümler ve 2.f. Bu lisans koşulları, yazılım abonelikle dahil tüm Microsoft programları için geçerlidir. Lisans koşulları o programları biriyle açıkça bu lisans koşullarına çakışmadığından diğer haklar verirseniz, bu haklara da sahip olursunuz.
 
-   e. **Windows 10 IOT ürün.** Tüm Windows IOT ürünleri ve Hizmetleri yazılımın içerdiği kendi lisans koşulları tarafından yönetilir. Ayrıca, Windows 10 IOT Core Runtime görüntüsü ("çalışma zamanı görüntü") dağıtmak istiyorsanız ve dağıtımınız bir ticari amaçla ise, öncelikle yürütün ve hüküm ve koşulları veya Microsoft ticari lisans uyumlu Ülkeniz hizmet veren bağlı. Lisans, kiralama ya da çalışma zamanı modülü çalışma zamanı görüntünün uygulamanızda Değerlendirme amacıyla dağıtma müşterilere dağıtma görüntüyü içeren uygulamanızı satış işletme işlemleri çalışan ticari amaçlarla örnekleri içerir. çalışma zamanı çalışma zamanı görüntüyü oluşturma veya ticari ürünler veya siz veya başkaları için ticari kazanç elde etmek için hangi amacı olan başka bir etkinliğin kullanımını kullanarak görüntü ticari ürünleriyle kullanmak için. Daha fazla bilgi için lütfen gidin [http://go.microsoft.com/fwlink/?LinkID=614849](http://go.microsoft.com/fwlink/?LinkID=614849&clcid=0x409).
+   e. **Windows 10 IOT ürün.** Tüm Windows IOT ürünleri ve Hizmetleri yazılımın içerdiği kendi lisans koşulları tarafından yönetilir. Ayrıca, Windows 10 IOT Core Runtime görüntüsü ("çalışma zamanı görüntü") dağıtmak istiyorsanız ve dağıtımınız bir ticari amaçla ise, öncelikle yürütün ve hüküm ve koşulları veya Microsoft ticari lisans uyumlu Ülkeniz hizmet veren bağlı. Lisans, kiralama ya da çalışma zamanı modülü çalışma zamanı görüntünün uygulamanızda Değerlendirme amacıyla dağıtma müşterilere dağıtma görüntüyü içeren uygulamanızı satış işletme işlemleri çalışan ticari amaçlarla örnekleri içerir. çalışma zamanı çalışma zamanı görüntüyü oluşturma veya ticari ürünler veya siz veya başkaları için ticari kazanç elde etmek için hangi amacı olan başka bir etkinliğin kullanımını kullanarak görüntü ticari ürünleriyle kullanmak için. Daha fazla bilgi için lütfen gidin [ http://go.microsoft.com/fwlink/?LinkID=614849 ](http://go.microsoft.com/fwlink/?LinkID=614849&clcid=0x409).
 
-   F **Visual Studio özellik paketleri, Visual Studio 2015, Visual Studio 2015, yazılım geliştirme setleri (SDK), sürücü geliştirme setleri (DDKs), modelleri ve yöntemleri serbest bırakır ve üçüncü taraf programları için IntelliTrace Toplayıcı aracıları.** Aboneliğiniz, yazılım bileşenleri "Visual Studio özellik paketleri", "Visual Studio 2015 için aracıları", "Visual Studio 2015 için IntelliTrace Toplayıcı", "Uzak araçlar Visual Studio 2015 için", yayın öncesi ve deneme yazılımı, "SDK" sınıflandırılmış içerebilir , "DDKs", "düzenleri & yöntemler" veya üçüncü taraf programları. Bu size Visual Studio abone indirmeleri kullanılabilir hale getirilir. Başka koşullar tüm yazılım programları veya bileşenleri geliyorsa, bu koşullar bunların kullanımınız için geçerlidir.
+   f. **Visual Studio özellik paketleri, Visual Studio 2015, Visual Studio 2015, yazılım geliştirme setleri (SDK), sürücü geliştirme setleri (DDKs), modelleri ve yöntemleri serbest bırakır ve üçüncü taraf programları için IntelliTrace Toplayıcı aracıları.** Aboneliğiniz, yazılım bileşenleri "Visual Studio özellik paketleri", "Visual Studio 2015 için aracıları", "Visual Studio 2015 için IntelliTrace Toplayıcı", "Uzak araçlar Visual Studio 2015 için", yayın öncesi ve deneme yazılımı, "SDK" sınıflandırılmış içerebilir , "DDKs", "düzenleri & yöntemler" veya üçüncü taraf programları. Bu size Visual Studio abone indirmeleri kullanılabilir hale getirilir. Başka koşullar tüm yazılım programları veya bileşenleri geliyorsa, bu koşullar bunların kullanımınız için geçerlidir.
 
    G. **Abonelik hizmetleri.** İndirmeler, ürün anahtarları, Windows Azure avantajları, e-öğrenme, teknik destek, Windows mağazası avantajları ve diğer hizmetler içerebilen visual Studio abonelik hizmetleri yalnızca abonelik etkin tutulan sırada kullanılabilir.
 
    h. **Yazı tipi bileşenleri.** Yazılım çalışırken, içerik görüntülemek ve yazdırmak için kendi yazı tipleri kullanabilir. Yalnızca olabilir: (i) yazı tipleri; katıştırma kısıtlamaları tarafından izin verildiğinde içeriği yazı tiplerini katıştırma ve, (II yazıcıyı veya yazdırma içerik yardımcı olmak için başka bir çıkış aygıtına geçici olarak indirin).
 
-   ı. **Microsoft Azure üzerinde çalışan yazılım**
+   i. **Microsoft Azure üzerinde çalışan yazılım**
 
-    ı.   Microsoft Azure üzerinde yazılımı, lisanslı kullanıcı olarak çalıştırabilirsiniz.
+    i.   Microsoft Azure üzerinde yazılımı, lisanslı kullanıcı olarak çalıştırabilirsiniz.
 
     II.  Yazılımın kullanımı lisans koşullarına ve şartlarına kalır.
 
@@ -80,9 +80,9 @@ BU LİSANS KOŞULLARINA UYMANIZ DURUMUNDA, ALMAK İÇİN HER LİSANS AŞAĞIDA H
 
    e. **Ağlar, veriler ve Internet kullanımı.** Bazı özellikleri yazılım ve hizmetlerinin yazılım aracılığıyla erişilen Internet'e erişmek için Cihazınızı gerektirebilir. Erişim ve kullanım (giderler dahil), cep koşullarına tabi olabilir ya da Internet sağlayıcısı anlaşma. Bazı özellikleri yazılım Internet daha verimli bir şekilde erişmenize yardımcı olması, ancak yazılımın kullanımı hesaplamalar hizmet sağlayıcınızın ölçümler farklı olabilir. Her zaman (i) anlamak için sorumlu ve kendi planları ve anlaşmalar ve (II) kullanarak ya da ortak/açık ağlar da dahil olmak üzere ağlara erişim kaynaklanan sorunlar şartlarını uymak. Bunu yapmak için izniniz yalnızca varsa yazılımı ağlara bağlanmak ve bu ağları ilgili bilgilere erişim paylaşmak için kullanabilirsiniz.
 
-   F **Internet tabanlı özellikleri.** Internet tabanlı özellikleri kullanırken kullanımıyla başkasının bunların ya da erişmek veya herhangi bir hizmet, veri, hesap veya ağa yetkisiz bir şekilde kullanmayı denemek için engelleyebilir herhangi bir yolla bu özellikleri kullanamazsınız.
+   f. **Internet tabanlı özellikleri.** Internet tabanlı özellikleri kullanırken kullanımıyla başkasının bunların ya da erişmek veya herhangi bir hizmet, veri, hesap veya ağa yetkisiz bir şekilde kullanmayı denemek için engelleyebilir herhangi bir yolla bu özellikleri kullanamazsınız.
 
-   G. **Bing Haritalar.** Yazılım Bing Haritalar kullanımını içerebilir. Geocodes, dahil olmak üzere Bing Haritalar ile sağlanan herhangi bir içeriği yalnızca içeriğe üzerinden sağlanan ürün içinde kullanılabilir. Bing Haritalar müşterinin kullanımını Bing Haritalar son kullanıcı Kullanım Koşulları'nı adresinde tarafından yönetilir [http://go.microsoft.com/?linkid=9710837](http://go.microsoft.com/?linkid=9710837) ve Bing Haritalar gizlilik bildirimini adresinde [http://go.microsoft.com/ fwlink /? LinkId 248686 =](http://go.microsoft.com/fwlink/?LinkID=248686).
+   G. **Bing Haritalar.** Yazılım Bing Haritalar kullanımını içerebilir. Geocodes, dahil olmak üzere Bing Haritalar ile sağlanan herhangi bir içeriği yalnızca içeriğe üzerinden sağlanan ürün içinde kullanılabilir. Bing Haritalar müşterinin kullanımını Bing Haritalar son kullanıcı Kullanım Koşulları'nı adresinde tarafından yönetilir [ http://go.microsoft.com/?linkid=9710837 ](http://go.microsoft.com/?linkid=9710837) ve Bing Haritalar gizlilik bildirimini adresinde [ http://go.microsoft.com/fwlink/?LinkID=248686 ](http://go.microsoft.com/fwlink/?LinkID=248686).
 
    h. **Üçüncü taraf bileşenleri.** Yazılım üçüncü taraf bileşenleri ayrı yasal uyarılar ile içerebilir veya diğer, Microsoft yazılımı ile birlikte gelen ThirdPartyNotices dosyasında açıklandığı gibi sözleşmelerine. Bu tür bileşenleri üzerinde yönetilir diğer sözleşmelerin, bildirimler ve sınırlamaları ve zararların aşağıdaki dışlamaları de geçerli olsa bile.
 
@@ -97,15 +97,15 @@ BU LİSANS KOŞULLARINA UYMANIZ DURUMUNDA, ALMAK İÇİN HER LİSANS AŞAĞIDA H
        You may run, at any one time, only one instance of SQL Server 2014 Standard Edition in one physical or virtual operating system environment on one server solely to support the software. You do not need SQL Server CALs for this use.
 
 
-   b.  **Yardımcı programları.** Yazılım yardımcı programlar listesi üzerinde bazı öğeler içeriyor [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Kopyalayabilir ve öğelerden veya diğer üçüncü taraf makinelere yükleyin. Lütfen yardımcı programları tasarlanmıştır, geçici kullanım için Microsoft düzeltme eki veya yardımcı programlarını yazılım geri kalanından ayrı olarak güncelleştirmek mümkün olmayabilir ve bazı yardımcı yapılarına, başkalarının bunların olduğu makinelere erişmek için olası duruma getirebilir olduğunu unutmayın. yüklü. Sonuç olarak, hata ayıklama veya uygulamaları ve veritabanları dağıtma işlemini tamamladıktan sonra yüklediğiniz tüm yardımcı programları silmeniz gerekir. Microsoft herhangi bir üçüncü taraf kullanın veya yardımcı programlarını herhangi bir makinede yüklemek erişim sorumlu değildir.
+   b.  **Yardımcı programları.** Yazılım yardımcı programlar listesi üzerinde bazı öğeler içeriyor [ http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Kopyalayabilir ve öğelerden veya diğer üçüncü taraf makinelere yükleyin. Lütfen yardımcı programları tasarlanmıştır, geçici kullanım için Microsoft düzeltme eki veya yardımcı programlarını yazılım geri kalanından ayrı olarak güncelleştirmek mümkün olmayabilir ve bazı yardımcı yapılarına, başkalarının bunların olduğu makinelere erişmek için olası duruma getirebilir olduğunu unutmayın. yüklü. Sonuç olarak, hata ayıklama veya uygulamaları ve veritabanları dağıtma işlemini tamamladıktan sonra yüklediğiniz tüm yardımcı programları silmeniz gerekir. Microsoft herhangi bir üçüncü taraf kullanın veya yardımcı programlarını herhangi bir makinede yüklemek erişim sorumlu değildir.
 
-   c. **Sunucu oluşturun.** Yazılım yapı sunucu listesini üzerinde bazı öğeler içeriyor [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Kopyalayabilir ve bu öğeler, yapı makinelere yazılım dahil değilse yükleyin. Siz ve kuruluşunuzdaki diğer kişiler bu öğeler yalnızca derleme, derleme, doğrulama ve uygulamalarınızı arşivleme veya kalite veya performans testleri oluşturma işleminin bir parçası olarak çalışan amacıyla yapı makinelerde kullanabilir.
+   c. **Sunucu oluşturun.** Yazılım yapı sunucu listesini üzerinde bazı öğeler içeriyor [ http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Kopyalayabilir ve bu öğeler, yapı makinelere yazılım dahil değilse yükleyin. Siz ve kuruluşunuzdaki diğer kişiler bu öğeler yalnızca derleme, derleme, doğrulama ve uygulamalarınızı arşivleme veya kalite veya performans testleri oluşturma işleminin bir parçası olarak çalışan amacıyla yapı makinelerde kullanabilir.
 
    d. **Lisans kapsamı.** Düzgün tersine mühendislik, uygulayamaz veya yazılım Ayır veya aksi halde dışında ve yalnızca ölçüde yazılım için kaynak kodunu çıkarmaya çalışabilir: (i); bu sınırlamaya rağmen ilgili yasalar tarafından izin verilen veya GNU küçük genel ortak olan ve birlikte gelen yazılım tarafından bağlantılı lisansı altında lisanslanmıştır kitaplıklarda yapılan değişiklikler hata ayıklamak için (II) gerekiyor.
 
    e. **Geliştirici Kaynakları.** Yazılımı derleyicileri, diller, çalışma zamanları, ortamları ve diğer kaynakları içerir. Bu bileşenleri ayrı bir sözleşmelerine ve ilkelerini destekleyecek kendi ürün vardır. Bu diğer bileşenlerin bir listesi bulunur [www.support.microsoft.com/common/international.aspx.](http://www.support.microsoft.com/common/international.aspx)
 
-   F **Microsoft platformları.** Yazılım Microsoft Windows bileşenlerini içerebilir; Microsoft Windows Server; Microsoft SQL Server; Microsoft Exchange; Microsoft Office; ve Microsoft SharePoint. Bu bileşen için yükleme dizinini veya yazılıma eşlik eden "Licenses" klasöründe bulunan Lisans Koşulları'nı açıklandığı gibi bu bileşenleri ayrı anlaşmalar ve kendi ürün destek ilkeleri tarafından yönetilir.
+   f. **Microsoft platformları.** Yazılım Microsoft Windows bileşenlerini içerebilir; Microsoft Windows Server; Microsoft SQL Server; Microsoft Exchange; Microsoft Office; ve Microsoft SharePoint. Bu bileşen için yükleme dizinini veya yazılıma eşlik eden "Licenses" klasöründe bulunan Lisans Koşulları'nı açıklandığı gibi bu bileşenleri ayrı anlaşmalar ve kendi ürün destek ilkeleri tarafından yönetilir.
 
    G. **Paket Yöneticisi.** Veya uygulama olduğunuz yazılım, yazılım ile kullanmak için diğer Microsoft ve üçüncü taraf yazılım paketlerini yükleme seçeneği size paket yöneticileri, NuGet gibi içerir. Bu, kendi lisansları ve bu sözleşme altında paketlerdir. Microsoft dağıtabilir, lisans veya herhangi bir üçüncü taraf paketler için tüm garantileri sağlar.
 
@@ -170,7 +170,7 @@ BU LİSANS KOŞULLARINA UYMANIZ DURUMUNDA, ALMAK İÇİN HER LİSANS AŞAĞIDA H
 
     a. **Sağ kullanın ve dağıtmak için.** Aşağıda listelenen kod ve metin dosyaları olan "Dağıtılabilir kod." 
 
-    - *REDIST. TXT dosyaları*. Kopyalayabilir ve yazılımın ve konumunda bulunan REDIST listesi Redist.txt'e dosyasında listelenen kodunun nesne kodu biçiminde dağıtmak [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409) .
+    - *REDIST. TXT dosyaları*. Kopyalayabilir ve yazılımın ve konumunda bulunan REDIST listesi Redist.txt'e dosyasında listelenen kodunun nesne kodu biçiminde dağıtmak [ http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409 ](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409) .
 
     - *Örnek kod, şablonları ve stilleri.* Kopyalayabilir, değiştirmek ve kaynak ve nesne kodu biçiminde "örnek", "Şablon", "Basit stiller" ve "Taslak stilleri" işaretlenmiş kodunun dağıtabilirsiniz.
 
@@ -192,7 +192,7 @@ BU LİSANS KOŞULLARINA UYMANIZ DURUMUNDA, ALMAK İÇİN HER LİSANS AŞAĞIDA H
 
     a. **Sunucu yazılımı.** Herhangi bir sunucu yazılımı veya birlikte gelen ek yazılım Kıyaslama test sonuçlarını bir üçüncü tarafa ifşa etmeye Microsoft'un önceki yazılı onay almanız gerekir. Bu, .NET Framework (aşağıya bakın) uygulanmaz.
 
-    b. **Microsoft .NET Kıyaslama test etme.** Yazılımı (".NET bileşenleri") .NET Framework'ün bir veya daha fazla bileşenleri içerir. Bu bileşenlerden iç Kıyaslama testleri yürütün. Adresinde koşullara uyması koşuluyla, bu bileşenlerin herhangi bir Kıyaslama test sonuçlarını açıklayabilir [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406). Başka bir anlaşma olsa bile, yaptığınız gibi Kıyaslama test sonuçları ifşa Microsoft ile Microsoft Kıyaslama sonuçlarını testleri, geçerli .NET bileşeni ile rekabet ürünlerinizi yürütür ifşa hakkı varsa adresinde koşullarla uyumlu sağlanan [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406).
+    b. **Microsoft .NET Kıyaslama test etme.** Yazılımı (".NET bileşenleri") .NET Framework'ün bir veya daha fazla bileşenleri içerir. Bu bileşenlerden iç Kıyaslama testleri yürütün. Adresinde koşullara uyması koşuluyla, bu bileşenlerin herhangi bir Kıyaslama test sonuçlarını açıklayabilir [ http://go.microsoft.com/fwlink/?LinkID=66406 ](http://go.microsoft.com/fwlink/?LinkID=66406). Başka bir anlaşma olsa bile, yaptığınız gibi Kıyaslama test sonuçları ifşa Microsoft ile Microsoft Kıyaslama sonuçlarını testleri, geçerli .NET bileşeni ile rekabet ürünlerinizi yürütür ifşa hakkı varsa adresinde koşullarla uyumlu sağlanan [ http://go.microsoft.com/fwlink/?LinkID=66406 ](http://go.microsoft.com/fwlink/?LinkID=66406).
 
 14. **LİSANS KAPSAMI.** Yazılımın satışı yapılmamakta, lisansı verilmektedir. Bu anlaşma yalnızca yazılımı kullanımınızla ilgili bazı haklar vermektedir. Microsoft diğer hakların tümünü saklı tutar. Bu sınırlamalara rağmen ilgili yasalar ilave haklar sağlamıyorsa yazılımı yalnızca bu anlaşmada açıkça izin verildiği şekilde kullanabilirsiniz. Bunu yaparken, yazılımda size yazılımı yalnızca belirli şekillerde kullanma izni veren her türlü teknik sınırlamaya uymanız gerekir. Daha fazla bilgi için bkz: [www.microsoft.com/licensing/userights](https://www.microsoft.com/licensing/userights). Şunları yapamazsınız: 
     - Microsoft önceki olmadan herhangi bir üçüncü taraf yazılımı, herhangi bir Kıyaslama test sonuçlarını onay yazılmış ifşa, ancak, bu Microsoft .NET Framework için geçerli değildir (bkz. bölümüne 13b);
@@ -268,14 +268,14 @@ H. **SINIRLAMA VE ZARARLARIN HARİÇ GARANTİ İDDİALARI. SINIRLAMA VE ZARARLAR
 
 
 _____
-<div style="text-align:center"><span style="color:white;">INTERNET TABANLI HİZMETLER EK</span></div>
-<div style="text-align:center"><span style="color:white;">AŞAĞIDAKİ VISUAL STUDIO ABONELİKLERİ YAZILIMI</span></div> 
+<div style="text-align:center"><span style="color:white;">INTERNET TABANLI HİZMETLER EK </span></div>
+<div style="text-align:center"><span style="color:white;">AŞAĞIDAKİ VISUAL STUDIO ABONELİKLERİ YAZILIMI </span></div> 
 
   
 
 **Visual Studio 2015 ürünlerinin:** 
 
-**VERİLER.** Yazılım ve yazılımı kullanımınız hakkında bilgi toplamak ve Microsoft'a göndermek. Microsoft bu bilgileri hizmetleri sağlamak ve ürünlerimizi ve hizmetlerimizi geliştirmek için kullanabilir. Bu senaryoların birçoğu, ancak tümü, ürün belgelerinde açıklandığı gibi çevirin. Ayrıca bazı özellikler vardır uygulamalarınızı kullanıcılardan veri toplamak üzere kısaltmanıza yazılım. Uygulamalarınızda veri toplamayı etkinleştirmek için bu özellikleri kullanırsanız, uygulamalarınızı kullanıcılara uygun bildirimler sağlayan dahil olmak üzere ilgili yasalar uymanız gerekir. Veri toplama hakkında daha fazla bilgi ve Yardım belgelerine ve adresindeki Gizlilik Bildirimi'ne kullanma [http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409). Bu uygulamalar için onay yazılımı kullanımınız çalışır.
+**VERİLER.** Yazılım ve yazılımı kullanımınız hakkında bilgi toplamak ve Microsoft'a göndermek. Microsoft bu bilgileri hizmetleri sağlamak ve ürünlerimizi ve hizmetlerimizi geliştirmek için kullanabilir. Bu senaryoların birçoğu, ancak tümü, ürün belgelerinde açıklandığı gibi çevirin. Ayrıca bazı özellikler vardır uygulamalarınızı kullanıcılardan veri toplamak üzere kısaltmanıza yazılım. Uygulamalarınızda veri toplamayı etkinleştirmek için bu özellikleri kullanırsanız, uygulamalarınızı kullanıcılara uygun bildirimler sağlayan dahil olmak üzere ilgili yasalar uymanız gerekir. Veri toplama hakkında daha fazla bilgi ve Yardım belgelerine ve adresindeki Gizlilik Bildirimi'ne kullanma [ http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409 ](http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409). Bu uygulamalar için onay yazılımı kullanımınız çalışır.
 
   
 

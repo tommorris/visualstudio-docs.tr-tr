@@ -1,18 +1,18 @@
 ---
-title: "Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere Öykünücüler kullanma | Microsoft Docs"
+title: Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere Öykünücüler kullanma | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ffdf83bbdb60a1a5ab98665883c9f1702567ec47
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 994e13d7155dd5490d3f3f02865b14845bae498b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere öykünücüler kullanma
 Microsoft.SharePoint.Emulators paketi, Microsoft SharePoint 2010 uygulamaları için yalıtılmış birim testleri oluşturmak için yardımcı olacak bir dizi sağlar. Öykünücüler kullanma [dolgular](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) gelen [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) en sık kullanılan nesneleri ve yöntemleri SharePoint API taklit hafif bellek içi nesneler oluşturmak için yalıtım framework. Bir SharePoint yöntem değil benzetilmiş veya bir öykünücü varsayılan davranışını değiştirmek istediğiniz istediğiniz sonuçları sağlamak için Fakes dolgular oluşturabilirsiniz.
@@ -21,7 +21,7 @@ Microsoft.SharePoint.Emulators paketi, Microsoft SharePoint 2010 uygulamaları i
 
 ##  <a name="BKMK_Requirements"></a> Gereksinimleri
 
--   Microsoft SharePoint 2010 (SharePoint 2010 Server or SharePoint 2010 Foundation)
+-   Microsoft SharePoint 2010 (SharePoint Server 2010 veya SharePoint 2010 Foundation)
 
 -   Microsoft Visual Studio Enterprise
 

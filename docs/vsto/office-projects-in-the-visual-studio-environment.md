@@ -1,12 +1,10 @@
 ---
-title: "Visual Studio ortamında Office projeleri | Microsoft Docs"
-ms.custom: 
+title: Visual Studio ortamında Office projeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.WordDocument
 - VST.ProjectItem.ExcelWorkbook
@@ -43,13 +41,14 @@ helpviewer_keywords:
 - VST.Designer.ExcelVST.Designer.Word
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a937f98a11ab9c8cb9723637be902808dce86563
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 80a8f866cb43eb6279cca45bebc94c54af898eab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Visual Studio Ortamında Office Projeleri
   Microsoft Office projeleri, Visual Studio'daki diğer proje türlerine (Windows Forms projeleri gibi) benzer bir geliştirme deneyimine sahiptir. Proje öğeleri Office projesi oluşturduğunuzda veya açtığınızda görüntülenen **Çözüm Gezgini**. Belge düzeyinde projeler için, belge (yani, Word belgesi veya Excel çalışma kitabı) Visual Studio'da açılır ve belge bir görsel tasarımcı gibi davranır.  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="temporary-certificates"></a>Geçici Sertifikalar  
  Office projeleri de dahil adlı geçici bir sertifika *proje adı*_TemporaryKey.pfx. Bu sertifika, geliştirme sırasında projenin uygulama ve dağıtım bildirimlerini imzalamak için kullanılır. Daha fazla bilgi için bkz: [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md) ve [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md).  
   
-###  <a name="hiddenfiles"></a>Gizli proje dosyaları  
+###  <a name="hiddenfiles"></a> Gizli proje dosyaları  
  Bazı proje dosyaları varsayılan olarak gizlidir. Bu dosyalar Visual Studio tarafından oluşturulur ve proje türüne göre farklılık gösterir. Gizli dosyaları görüntülemek için tıklatın **tüm dosyaları göster** içinde **Çözüm Gezgini**.  
   
  Gizli proje dosyalarında değişiklik yapmayın. Bu dosyaların doğrudan değiştirilmesi desteklenmez ve projenizin bozulmasına neden olabilir. Gizli proje dosyaları, belgede belirli değişiklikler olduğu durumlarda yeniden oluşturulur. Gizli bir proje dosyasında el ile değişiklikler yaparsanız, dosya yeniden oluşturulduğunda bu değişiklikler kaybolur.  

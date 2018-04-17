@@ -1,19 +1,19 @@
 ---
 title: Visual Studio aboneleri için VSTS yararları | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7fbfdd5a23196afeeb24b2ce380fce44d457fb99
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Visual Studio abone olarak Visual Studio Team Services (VSTS) nasıl kullanabileceğinizi anlamak.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Visual Studio aboneleri için Visual Studio Team Services (VSTS) avantajları
 
@@ -26,12 +26,14 @@ Oturum açtığınızda VSTS kullanarak Visual Studio aboneliğinizi etkinleşti
 ## <a name="eligibility"></a>Uygunluk
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut, aylık bulut)   | Toplu Lisans, Azure, perakende, MPN, BizSpark, NFR<sup>1</sup>, FTE  | Temel, Test Yöneticisi, paket Yönetimi CI/CD kendi kendini barındırır       |  Evet          |
-| Visual Studio Professional (standart, yıllık bulut, aylık bulut) | Toplu Lisans, Azure, perakende                                       | Temel                                                            |  Evet          |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Temel, Test Yöneticisi                                              |  Evet          |
-| MSDN platformları (standart)                                          | VL, Retail                                              | Temel, Test Yöneticisi                                              |  Evet          |
+| Visual Studio Enterprise (standart, yıllık bulut, aylık bulut)   | Toplu Lisans, Azure, perakende, seçili NFR<sup>1</sup>, FTE  | Temel, Test Yöneticisi, paket Yönetimi CI/CD kendi kendini barındırır       |  Evet          |
+| Visual Studio Professional (standart, yıllık bulut, aylık bulut) | Toplu Lisans, Azure, perakende,                                        | Temel                                                            |  Evet          |
+| Visual Studio Test uzmanı (standart)                         | Toplu Lisans, perakende                                              | Temel, Test Yöneticisi                                              |  Evet          |
+| MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Temel, Test Yöneticisi                                              |  Evet          |
 
-<sup>1</sup>*içerir: değil satışı (NFR) için Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP)*
+<sup>1</sup>*içerir: değil satışı (NFR) için Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (Kurumsal), BizSpark, MCT yazılım ve Hizmetleri Geliştirici.   Dışlar: MCT yazılım ve hizmetlerini düşünün.*
+
+
 
 VSTS özellikler hakkında daha fazla bilgi edinin:
 - [Temel](https://www.visualstudio.com/team-services/compare-features/)

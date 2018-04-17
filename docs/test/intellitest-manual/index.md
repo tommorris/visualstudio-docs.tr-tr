@@ -1,27 +1,27 @@
 ---
-title: "Intellitest başvuru el ile | Microsoft Developer Test Araçları | Microsoft Docs"
+title: Intellitest başvuru el ile | Microsoft Developer Test Araçları | Microsoft Docs
 ms.date: 05/02/2017
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest Reference Manual, IntelliTest
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8216d8b4f27bb1211bc90d829233602edc915e43
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 581533a92807a009696ec1cb4fb715d7272c3897
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intellitest-reference-manual"></a>Intellitest başvuru el ile
 
 ## <a name="contents"></a>İçindekiler
 
-* **[Overview of IntelliTest](introduction.md)**
-  - [The Hello World of IntelliTest](introduction.md#the-hello-world-of-intellitest)
+* **[Intellitest genel bakış](introduction.md)**
+  - [Intellitest Merhaba Dünya](introduction.md#the-hello-world-of-intellitest)
   - [Sınırlamalar](introduction.md#limitations)
     * [Nondeterminism](introduction.md#nondeterminism)
     * [Eşzamanlılık](introduction.md#concurrency)
@@ -43,8 +43,8 @@ ms.lasthandoff: 03/19/2018
   - [Özel durumlara izin verme](test-generation.md#allowing-exceptions)
   - [İç türleri test etme](test-generation.md#internal-types)
   - [Varsayımlar ve onaylar](test-generation.md#assumptions-and-assertions)
-  - [Precondition](test-generation.md#precondition)
-  - [Postcondition](test-generation.md#postcondition)
+  - [Önkoşulu](test-generation.md#precondition)
+  - [Sonkoşul](test-generation.md#postcondition)
   - [Test başarısızlıklarının](test-generation.md#test-failures)
   - [Kurulum ve kesmeden](test-generation.md#setup-teardown)
   - [Daha fazla bilgi](test-generation.md#further-reading)<p>&nbsp;</p>
@@ -102,13 +102,13 @@ ms.lasthandoff: 03/19/2018
   - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)<p>&nbsp;</p>
 
 * **[Uyarıları ve hataları](warnings-and-errors.md)**
-  - [MaxBranches exceeded](warnings-and-errors.md#maxbranches-exceeded)
-  - [MaxConstraintSolverTime exceeded](warnings-and-errors.md#maxconstraintsolvertime-exceeded)
-  - [MaxConditions exceeded](warnings-and-errors.md#maxconditions-exceeded)
+  - [MaxBranches aşıldı](warnings-and-errors.md#maxbranches-exceeded)
+  - [MaxConstraintSolverTime aşıldı](warnings-and-errors.md#maxconstraintsolvertime-exceeded)
+  - [MaxConditions aşıldı](warnings-and-errors.md#maxconditions-exceeded)
   - [MaxCalls aşıldı](warnings-and-errors.md#maxcalls-exceeded)
-  - [MaxStack exceeded](warnings-and-errors.md#maxstack-exceeded)
-  - [MaxRuns exceeded](warnings-and-errors.md#maxruns-exceeded)
-  - [MaxRunsWithoutNewTests exceeded](warnings-and-errors.md#maxrunswithoutnewtests-exceeded)
+  - [MaxStack aşıldı](warnings-and-errors.md#maxstack-exceeded)
+  - [MaxRuns aşıldı](warnings-and-errors.md#maxruns-exceeded)
+  - [MaxRunsWithoutNewTests aşıldı](warnings-and-errors.md#maxrunswithoutnewtests-exceeded)
   - [Çözüm concretize olamaz](warnings-and-errors.md#cannot-concretize-solution)
   - [Nesnesi oluşturmak için Yardım gerekiyor](warnings-and-errors.md#help-construct)
   - [Türlerini bulmak için Yardım gerekiyor](warnings-and-errors.md#help-types)

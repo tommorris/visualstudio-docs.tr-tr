@@ -1,13 +1,10 @@
 ---
-title: "Office çözümü dağıtımında sorunu giderme | Microsoft Docs"
-ms.custom: 
+title: Office çözümü dağıtımında sorunu giderme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8940cd30b4e573b7438b45b13fdd30735a504809
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 29c3cfdcf31609eb5b6aec0111fe2297ba8c01ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-office-solution-deployment"></a>Office Çözümü Dağıtımında Sorunu Giderme
   Bu konu, Office çözümlerini dağıtırken karşılaşabileceğiniz yaygın sorunların nasıl çözüleceği hakkında bilgi içerir.  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
  .NET Framework ekleyebilirsiniz [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]ve Office birincil birlikte çalışma derlemeleri Kurulum paketinize Office çözümünüzle birlikte dağıtılan bir önkoşul olarak. Birincil birlikte çalışma derlemelerini yükleme hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md) ve [nasıl yapılır: yükleme Office birincil birlikte çalışma derlemeleri](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publishing-using-localhost-can-cause-installation-problems"></a>'Localhost' kullanarak yayımlamanın yükleme sorunlarına neden olabilir  
- Belge düzeyi çözümlerde yayımlama ya da yükleme konumu olarak "http://localhost" kullandığınızda **Yayımlama Sihirbazı** dize gerçek bilgisayar adına dönüştürmez. Bu durumda, çözüm geliştirme bilgisayarına yüklenmesi gerekir. Dağıtılan çözümleri geliştirme bilgisayarınızda IIS kullanan yapmak için localhost yerine tüm HTTP/HTTPS/FTP konumları için tam ad kullanın.  
+ Kullandığınızda, "http://localhost" için belge düzeyi çözümleri yayımlama ya da yükleme konumu olarak **Yayımlama Sihirbazı** dize gerçek bilgisayar adına dönüştürmez. Bu durumda, çözüm geliştirme bilgisayarına yüklenmesi gerekir. Dağıtılan çözümleri geliştirme bilgisayarınızda IIS kullanan yapmak için localhost yerine tüm HTTP/HTTPS/FTP konumları için tam ad kullanın.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Önbelleğe alınan derlemelerin yerine güncelleştirilen derlemelerin yüklü olduğundan  
  Fusion, .NET Framework derleme yükleyicisi proje çıktı yolu bir ağ dosya paylaşımında olduğunda, derleme tanımlayıcı bir ad ile imzalanır ve özelleştirme derleme sürümü değişmez derlemeleri önbelleğe alınmış bir kopyasını yükler. Bu koşullara uyan bir derlemeyi güncelleştirirseniz, güncelleştirme önbelleğe alınan kopya yüklendiği proje sonraki çalıştırmanızda görünmez.  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Önbelleğe alınan kopyaları yüklenirken yerine derlemeleri indirmek için  
   
-1.  Menü çubuğunda seçin **proje**, *ProjectName***özellikleri**.  
+1.  Menü çubuğunda seçin **proje**, * ProjectName ***özellikleri**.  
   
 2.  Üzerinde **uygulama** sayfasında, **derleme bilgilerini**.  
   
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="reinstalling-office-solutions-causes-an-argument-out-of-range-exception"></a>Office çözümleri yeniden aralığı özel durum dışında bir bağımsız değişken neden olur.  
  Office çözümünü yeniden yüklediğinizde bir <xref:System.ArgumentOutOfRangeException> özel durum şu hata iletisiyle görüntülenebilir: Belirtilen bağımsız değişken geçerli değer aralığının dışında.  
   
- Yükleme konumu için URL için büyük/küçük harf farklıysa, bu durum oluşur. Örneğin, Office çözümünü yüklü değilse bu hata görüneceği [http://fabrikam.com/ExcelSolution.vsto](http://fabrikam.com/ExcelSolution.vsto) ilk kez ve ardından kullanılan [http://fabrikam.com/excelsolution.vsto](http://fabrikam.com/excelsolution.vsto) ikinci kez.  
+ Yükleme konumu için URL için büyük/küçük harf farklıysa, bu durum oluşur. Örneğin, Office çözümünü yüklü değilse bu hata görüneceği [ http://fabrikam.com/ExcelSolution.vsto ](http://fabrikam.com/ExcelSolution.vsto) ilk kez ve ardından kullanılan [ http://fabrikam.com/excelsolution.vsto ](http://fabrikam.com/excelsolution.vsto) ikinci kez.  
   
  İletinin görüntülenmesini engellemek için Office çözümleri yüklediğinizde aynı büyük küçük harf kullanın.  
   

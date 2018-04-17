@@ -1,12 +1,10 @@
 ---
-title: "Sekmelerle çalışma | Microsoft Docs"
-ms.custom: 
+title: Sekmelerle çalışma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], tables
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e43da4d8ff2aa5c07d640e332b619b0a38fa9e1b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: cf1611226e16ca54c412845b6e6fa46d5ae6ae26
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-tables"></a>Sekmelerle Çalışma
   Bu bölümdeki konularda, Microsoft Office Word nesne modeli kullanarak Office projelerinde tablolar ile çalışmak için adım adım yordamlar ve kod örnekleri sağlar. Bazı durumlarda, VSTO eklentileri bu görevleri gerçekleştirmek yolları belge düzeyi özelleştirmelerindeki bunları gerçekleştirmek yolları farklıdır.  
@@ -37,6 +36,6 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)   
- [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
   
   

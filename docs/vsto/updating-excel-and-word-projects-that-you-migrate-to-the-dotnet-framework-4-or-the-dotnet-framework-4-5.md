@@ -1,13 +1,10 @@
 ---
-title: "Excel ve .NET Framework 4 veya .NET Framework 4. 5'e geçiş Word projelerini güncelleştirme | Microsoft Docs"
-ms.custom: 
+title: Excel ve .NET Framework 4 veya .NET Framework 4. 5'e geçiş Word projelerini güncelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 974071c68edd685bd23b29d6d37c520f50a78078
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 8a1c7022af6a02a036476e55bdfc57becbd9d7f5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="updating-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5'e Geçirdiğiniz Excel ve Word Projelerini Güncelleştirme
   Aşağıdaki özelliklerden herhangi birini kullanan bir Excel veya Word'den proje varsa, hedef Framework'ü değiştirilirse kodunuzu değiştirmelisiniz [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ya da daha sonra:  
@@ -86,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
     ```  
   
-##  <a name="GetVstoObject"></a>GetVstoObject ve HasVstoObject yöntemlerini kullanan kodu güncelleştiriliyor  
+##  <a name="GetVstoObject"></a> GetVstoObject ve HasVstoObject yöntemlerini kullanan kodu güncelleştiriliyor  
  .NET Framework 3.5 hedefleyen projelerde GetVstoObject veya HasVstoObject yöntemleri projenizdeki yerel nesnelerini genişletme yöntemi olarak kullanılabilir: <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Excel.Workbook>, <xref:Microsoft.Office.Interop.Excel.Worksheet>, veya <xref:Microsoft.Office.Interop.Excel.ListObject>. Bu yöntemleri çağırırken parametre geçirmek gerekmez. Aşağıdaki kod örneğinde bir Word VSTO .NET Framework 3.5 hedefleyen eklenti GetVstoObject yöntemi kullanmayı gösterir.  
   
 ```vb  
@@ -127,7 +124,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
   
  Daha fazla bilgi için bkz: [genişletme Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-##  <a name="generatedclasses"></a>Belge düzeyi projelerine oluşturulan sınıfları kullanan kodu güncelleştiriliyor  
+##  <a name="generatedclasses"></a> Belge düzeyi projelerine oluşturulan sınıfları kullanan kodu güncelleştiriliyor  
  .NET Framework 3.5 hedefleyen belge düzeyi projelerde aşağıdaki sınıflarda projelerindeki oluşturulan sınıflar türetmek [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]:  
   
 -   `ThisDocument`: <xref:Microsoft.Office.Tools.Word.Document>  
@@ -150,7 +147,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
   
  Projenizdeki kod türetildiği temel sınıf olarak oluşturulan sınıflar birinin örneğine başvuruyorsa, kodu değiştirmeniz gerekir.  
   
- Örneğin, .NET Framework 3.5 hedefleyen bir Excel çalışma kitabı projesinde, oluşturulan örneklerinde bazı çalışma gerçekleştirir yardımcı bir yöntem olabilir `Sheet`  *n*  projenizdeki sınıfları.  
+ Örneğin, .NET Framework 3.5 hedefleyen bir Excel çalışma kitabı projesinde, oluşturulan örneklerinde bazı çalışma gerçekleştirir yardımcı bir yöntem olabilir `Sheet` *n* projenizdeki sınıfları.  
   
 ```vb  
 Private Sub DoSomethingToSheet(ByVal worksheet As Microsoft.Office.Tools.Excel.Worksheet)  
@@ -192,7 +189,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
     }  
     ```  
   
-##  <a name="winforms"></a>Windows kullanan kodu güncelleştirme belgelerindeki denetimler formlar  
+##  <a name="winforms"></a> Windows kullanan kodu güncelleştirme belgelerindeki denetimler formlar  
  Eklemelisiniz bir **kullanarak** (C#) veya **içeri aktarmalar** (Visual Basic) deyimini <xref:Microsoft.Office.Tools.Excel> veya <xref:Microsoft.Office.Tools.Word> Windows Forms eklemek için denetimleri özelliği kullanan herhangi bir kod dosyasının en üstüne ad alanı Belge ya da çalışma sayfasına program aracılığıyla denetler.  
   
  .NET Framework 3.5 hedefleyen projelerde, (örneğin, AddButton yöntemi) Windows Forms denetimleri ekleme yöntemleri tanımlanan <xref:Microsoft.Office.Tools.Excel.ControlCollection> ve <xref:Microsoft.Office.Tools.Word.ControlCollection> sınıfları.  
@@ -201,7 +198,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
   
  Daha fazla bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-##  <a name="ccevents"></a>Word içerik denetimi olayları tanıtıcıları kodunu güncelleme  
+##  <a name="ccevents"></a> Word içerik denetimi olayları tanıtıcıları kodunu güncelleme  
  .NET Framework 3.5 hedefleyen projelerde, Word içerik denetimlerinin olayları genel tarafından işlenen <xref:System.EventHandler%601> temsilci. ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra bu olaylar diğer temsilciler tarafından işlenir.  
   
  Aşağıdaki tabloda Word içerik denetimi olayları ve hedefleyen projelerde bunlarla ilişkili temsilciler listelenmektedir [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya sonraki bir sürümü.  
@@ -215,21 +212,21 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Exiting>|<xref:Microsoft.Office.Tools.Word.ContentControlExitingEventHandler>|  
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlStoreUpdatingEventHandler>|  
   
-##  <a name="ole"></a>OLEObject ve OLEControl sınıfları kullanan kodu güncelleştiriliyor  
+##  <a name="ole"></a> OLEObject ve OLEControl sınıfları kullanan kodu güncelleştiriliyor  
  Projeleri hedefleyen .NET Framework 3.5, özel denetimler (örneğin, Windows Forms kullanıcı denetimi) bir belge ya da çalışma sayfasına Microsoft.Office.Tools.Excel.OLEObject ve Microsoft.Office.Tools.Word.OLEControl sınıflarını kullanarak ekleyebilirsiniz.  
   
  ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra bu sınıfları tarafından değiştirilmiş <xref:Microsoft.Office.Tools.Excel.ControlSite> ve <xref:Microsoft.Office.Tools.Word.ControlSite> arabirimleri. Microsoft.Office.Tools.Excel.OLEObject ve Microsoft.Office.Tools.Word.OLEControl başvuracak şekilde başvurduğu kodu değiştirmeniz gerekir <xref:Microsoft.Office.Tools.Excel.ControlSite> ve <xref:Microsoft.Office.Tools.Word.ControlSite>. Yeni adları dışında bu denetimler, .NET Framework 3.5 hedefleyen projelerde aynı şekilde davranır.  
   
  Daha fazla bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-##  <a name="itemproperty"></a>Controls.Item(Object) özelliği kullanan kodu güncelleştiriliyor  
+##  <a name="itemproperty"></a> Controls.Item(Object) özelliği kullanan kodu güncelleştiriliyor  
  .NET Framework 3.5 hedefleyen projelerde, belge veya çalışma olup olmadığını belirlemek için Microsoft.Office.Tools.Excel.Worksheet.Controls veya Item(Object) koleksiyonunu Item(Object) özelliğini kullanabilirsiniz bir Belirtilen denetim.  
   
  ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra bu koleksiyonları Item(Object) özelliği kaldırıldı. Belge veya çalışma belirtilen denetim içerip içermediğini belirlemek için Contains(System.Object) yöntemini kullanmak <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> veya <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> koleksiyon yerine.  
   
  Belgeleri çalışma sayfaları ve denetimleri toplama ile ilgili daha fazla bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-##  <a name="collections"></a>CollectionBase'den türetilen koleksiyonları kullanan kodu güncelleştiriliyor  
+##  <a name="collections"></a> CollectionBase'den türetilen koleksiyonları kullanan kodu güncelleştiriliyor  
  .NET Framework 3.5 hedefleyen projelerde, birkaç koleksiyon türleri içinde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] öğesinden türetilen <xref:System.Collections.CollectionBase> , Microsoft.Office.Tools.SmartTagCollection gibi Microsoft.Office.Tools.Excel.ControlCollection, sınıf ve Microsoft.Office.Tools.Word.ControlCollection.  
   
  ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ya da daha sonra bu koleksiyon türleri şimdi öğesinden türetilen değil arabirimleri <xref:System.Collections.CollectionBase>. Bazı üyeler artık gibi bu koleksiyon türlerinde kullanılabilir <xref:System.Collections.CollectionBase.Capacity%2A>, <xref:System.Collections.CollectionBase.List%2A>, ve <xref:System.Collections.CollectionBase.InnerList%2A>.  

@@ -1,23 +1,21 @@
 ---
-title: ".NET derleme Platformu (&quot;Roslyn&quot;) genişletilebilirlik | Microsoft Docs"
-ms.custom: 
+title: .NET derleme Platformu (&quot;Roslyn&quot;) genişletilebilirlik | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
-caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b292593c6a6c426bb184acd67a920b5e76e3a51f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 09287c48285bfcdc32b1a7d558d44f9d212f1b41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET derleme Platformu (&quot;Roslyn&quot;) genişletilebilirliği
 .NET derleme Platformu ("Roslyn"), çekirdek görev C# ve Visual Basic derleyicileri açma ve araçlar sağlayan ve programlar hakkında zengin bilgi derleyicileri paylaşmak için geliştiricilere sahiptir. Kod çözümleme araçları kod kalitesini geliştirme ve uygulama yapı içinde oluşturucuları yardımcı kod. Araçlar akıllı aldıkça, çok daha da fazla yalnızca derleyicileri sahip derin kod bilgi erişim. Donuk çevirmenler (kaynak kodu ve nesne kodu) yerine Roslyn derleyicileri araç ve uygulama kodu ilgili görevler için kullanabileceğiniz bir API sunar.  

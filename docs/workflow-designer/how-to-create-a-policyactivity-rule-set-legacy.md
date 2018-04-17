@@ -1,5 +1,5 @@
 ---
-title: "Nasıl yapılır: bir PolicyActivity kural kümesi (eski) oluşturma | Microsoft Docs"
+title: 'Nasıl yapılır: bir PolicyActivity kural kümesi (eski) oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: f272489d-3342-4511-8b59-6a0fd7a42d70
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96fcb8dd8e1255863840cae8edd90759af605f1d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 4911912aa46f5dc8a6aea9b9b20e87c1f83e576f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Nasıl yapılır: bir PolicyActivity kural kümesi (eski) oluşturma
 
@@ -39,11 +39,11 @@ Bu konuda hedefleyen bir ilke etkinlik kural eski Windows iş akışı Tasarımc
 
     -   Tıklatın **RuleSetReference** üç nokta **[...]** ve ardından var olan bir kural kümesi [kural kümesi iletişim kutusunu (eski)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Ardından 10. adıma gidin.
 
-         veya
+         -veya-
 
     -   Bir kural kümesi için bir ad yazın. Tıklatın **RuleSetReference** üç nokta **[...]** ve ardından **Düzenle** içinde [kural kümesi iletişim kutusunu (eski)](../workflow-designer/select-rule-set-dialog-box-legacy.md).
 
-         veya
+         -veya-
 
     -   Bir kural kümesi için bir ad yazın. Genişletme **RuleSetReference** özelliği ve select üç nokta **[...]**  içinde **RuleSet tanımı** özelliği.
 

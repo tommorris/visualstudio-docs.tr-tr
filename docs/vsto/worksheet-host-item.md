@@ -1,13 +1,10 @@
 ---
-title: "Çalışma sayfası konak öğesi | Microsoft Docs"
-ms.custom: 
+title: Çalışma sayfası konak öğesi | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: af372b261b5d8527600d672c9017d7235385c170
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c89fa79a73393afa2919554de790c307b2ea68b5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="worksheet-host-item"></a>Çalışma Sayfası Konak Öğesi
   <xref:Microsoft.Office.Tools.Excel.Worksheet> Konak öğesi türüdür genişleten bir <xref:Microsoft.Office.Interop.Excel.Worksheet> Excel için birincil birlikte çalışma derlemesinden türü. <xref:Microsoft.Office.Tools.Excel.Worksheet> Konak öğesi tüm özellikleri, yöntemleri ve olayları olarak sağlayan bir <xref:Microsoft.Office.Interop.Excel.Worksheet> nesnesi, ancak ayrıca ek olayları gösterir ve ana bilgisayar denetimleri ve Windows Forms denetimleri için kapsayıcı görevi görür.  

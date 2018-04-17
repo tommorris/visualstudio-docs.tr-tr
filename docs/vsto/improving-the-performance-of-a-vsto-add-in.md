@@ -1,24 +1,23 @@
 ---
-title: "Bir VSTO eklentisinin performansını iyileştirme | Microsoft Docs"
-ms.custom: 
+title: Bir VSTO eklentisinin performansını iyileştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 17fbb8d0d1bdb2c3924645f494d8bd5eccd457a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>Bir VSTO Eklentisinin Performansını İyileştirme
   VSTO uygulamaları kapatın, bunlar hızlı bir şekilde başlatmak için Office için oluşturduğunuz eklentileri iyileştirerek, kullanıcılarınızın daha iyi bir deneyim sağlamak, öğeleri açın ve başka görevler gerçekleştirebilirsiniz. VSTO eklentinizi Outlook için ise, VSTO eklentinizi olacaktır fırsat da azaltabilir performansın nedeniyle devre dışı. Aşağıdaki stratejilerden uygulayarak VSTO eklentinizi performansını artırabilirsiniz:  
@@ -33,7 +32,7 @@ ms.lasthandoff: 01/10/2018
   
  Bir Outlook VSTO eklenti en iyi duruma getirme hakkında daha fazla bilgi için bkz: [etkin VSTO eklentileri tutmak için performans ölçütleri](http://go.microsoft.com/fwlink/?LinkID=266503).  
   
-##  <a name="Load"></a>VSTO eklentileri isteğe bağlı yükleme  
+##  <a name="Load"></a> VSTO eklentileri isteğe bağlı yükleme  
  Bir VSTO yalnızca aşağıdaki durumlarda yüklemek için eklenti yapılandırabilirsiniz:  
   
 -   VSTO eklenti yüklendikten sonra kullanıcı uygulamayı başlatır ilk kez.  
@@ -82,11 +81,11 @@ ms.lasthandoff: 01/10/2018
   
     ```  
   
-     Bir C# projesi oluşturma sonrası olay oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Yapı olaylarını belirtme &#40; C &#35; &#41; ](/visualstudio/ide/how-to-specify-build-events-csharp).  
+     Bir C# projesi oluşturma sonrası olay oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Yapı olaylarını belirtme &#40;C&#35;&#41;](/visualstudio/ide/how-to-specify-build-events-csharp).  
   
-     Visual Basic projesinde oluşturma sonrası olay oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Yapı olaylarını belirtme &#40; Visual Basic &#41; ](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
+     Visual Basic projesinde oluşturma sonrası olay oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Yapı olaylarını belirtme &#40;Visual Basic&#41;](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
   
-##  <a name="Publish"></a>Windows Installer kullanarak Office çözümleri yayımlama  
+##  <a name="Publish"></a> Windows Installer kullanarak Office çözümleri yayımlama  
  Windows Installer kullanarak çözümünüzü yayımladığınızda Office çalışma zamanı için Visual Studio 2010 Araçları VSTO eklenti yüklediğinde, aşağıdaki adımları atlar.  
   
 -   Bildirim şema doğrulama.  
@@ -100,7 +99,7 @@ ms.lasthandoff: 01/10/2018
   
  Daha fazla bilgi için bkz: [tarafından Windows Installer kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Bypass"></a>Atlama Şerit yansıma  
+##  <a name="Bypass"></a> Atlama Şerit yansıma  
  Bir çözümü kullanarak yapılandırdıysanız [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], kullanıcılarınızın çözümü dağıttığınızda Office çalışma zamanı için Visual Studio 2010 Araçları en son sürümünü yüklediğinizden emin olun. Bu çalışma zamanı eski sürümleri Şerit Özelleştirmelerini bulmak için çözüm derlemelerine yansıtılır. Bu işlem, VSTO daha yavaş yüklemek eklenti neden olabilir.  
   
  Alternatif olarak, Şerit Özelleştirmelerini tanımlamak için yansıma kullanarak Office çalışma zamanı için Visual Studio 2010 Araçları herhangi bir sürümünü engelleyebilirsiniz. Bu strateji izlemek için geçersiz kılma `CreateRibbonExtensibility` yöntemi ve açıkça dönüş Şerit nesneleri. VSTO eklentinizi Şerit özelleştirmeler içermiyorsa, dönüş `null` yöntemi içinde.  
@@ -110,7 +109,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
   
-##  <a name="Perform"></a>Bir ayrı yürütme iş parçacığı, pahalı işlemleri  
+##  <a name="Perform"></a> Bir ayrı yürütme iş parçacığı, pahalı işlemleri  
  Ayrı bir iş parçacığı (örneğin, uzun süre çalışan görevler, veritabanı bağlantılarını veya diğer tür ağ çağrıları) uzun süren görevler gerçekleştirmeyi düşünün. Daha fazla bilgi için bkz: [Office iş parçacığı oluşturma desteği](../vsto/threading-support-in-office.md).  
   
 > [!NOTE]  

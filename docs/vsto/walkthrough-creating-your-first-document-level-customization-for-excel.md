@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 656486b691c030839fbb2f0d0ebb568d72ca36e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f1a8335c301d8eba2ec170c9b1b462d09364904f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>İzlenecek Yol: Excel İçin İlk Belge Düzeyi Özelleştirmeyi Oluşturma
   Bu tanıtıcı kılavuz Microsoft Office Excel için belge düzeyi özelleştirme oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler, yalnızca belirli bir çalışma kitabı açık olduğunda kullanılabilir. Belge düzeyi özelleştirme uygulama çapında değişiklik yapmak için kullanamazsınız, örneğin, herhangi bir çalışma kitabı açık olduğunda yeni bir Şerit sekmesi görüntüleme gibi.  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 ## <a name="creating-the-project"></a>Projeyi Oluşturma  
   
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Seçin **bir yeni belge oluşturun**, tıklatıp **Tamam**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]oluşturur **FirstWorkbookCustomization** proje ve aşağıdaki dosyaları projeye ekler.  
+    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturur **FirstWorkbookCustomization** proje ve aşağıdaki dosyaları projeye ekler.  
   
     -   *FirstWorkbookCustomization*.xlsx - projedeki Excel çalışma kitabını temsil eder. Çalışma sayfaları ve grafikler içerir.  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  İçinde **Çözüm Gezgini**, sağ **Sheet1** tıklayın ve kod dosyası **Görünüm Tasarımcısı**.  
   
-     \-veya -  
+     \- veya -  
   
      İçinde **Çözüm Gezgini**, çift **Sheet1** kod dosyası.  
   
@@ -170,7 +169,7 @@ ms.lasthandoff: 01/10/2018
 -   Excel için belge düzeyi özelleştirmelerini dağıtma: [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Excel çözümleri](../vsto/excel-solutions.md)   
  [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)   
  [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md)   

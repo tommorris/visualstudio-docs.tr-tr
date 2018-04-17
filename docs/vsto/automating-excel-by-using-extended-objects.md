@@ -1,12 +1,10 @@
 ---
-title: "Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirme | Microsoft Docs"
-ms.custom: 
+title: Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], Excel host controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 85f1d3b869d98f12bff1c7bb3ca1be5d2ea0a090
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 63c200a3d3a6a64dfc100cc9365f142a8dddae4c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automating-excel-by-using-extended-objects"></a>Genişletilmiş Nesneleri Kullanarak Excel'i Otomatikleştirme
   Visual Studio'daki Excel çözümleri geliştirdiğinizde, kullanabileceğiniz *konak öğelerini* ve *konak kontrolü*Çözümlerinizdeki s. Bunlar gibi bazı yaygın olarak kullanılan nesneler Excel nesne modeli (Excel için birincil birlikte çalışma derlemesi tarafından sunulan başka bir deyişle, nesne modeli) genişleten nesnelerdir <xref:Microsoft.Office.Interop.Excel.Worksheet> ve <xref:Microsoft.Office.Interop.Excel.Range> nesneleri. Genişletilmiş nesneler esas alan Excel nesneleri gibi davranır, ancak bunlar nesnelere yeni olaylar ve veri bağlama özellikleri gibi ek özellikler ekleyin.  

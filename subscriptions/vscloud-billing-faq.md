@@ -1,25 +1,27 @@
 ---
 title: Visual Studio Enterprise ve Visual Studio Professional bulut abonelikler için faturalama hakkında SSS
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/2/2018
-Ms.topic: Get-Started-Article
-Description: Billing questions for cloud subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7c89c562ab49ffd95af7cfce699d13aa8a639c81
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/02/2018
+ms.topic: Get-Started-Article
+description: Abonelikler için faturalama soruları.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 284b448c6c5eade7e85793c2d21196b83de9fdc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>SSS faturalama visual Studio bulut abonelikleri
 Emin olun [bulut aboneliği avantajları karşılaştırın ve fiyatlandırma](https://www.visualstudio.com/vs/pricing/) abonelikle Bulut ve standart Visual Studio abonelikleri arasındaki karşılaştırmaları abone Avantajlarınızı ayrıntıları her Visual Studio yararları anlamak için ve daha fazlası.
 
+## <a name="general-purchasing-questions"></a>Satın alma genel sorular
+
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-using-a-purchase-order"></a>S: Visual Studio bulut abonelikleri satınalma siparişi kullanılarak satın?
-A: No. Tüm Visual Studio bulut abonelikleri kullanarak bir Azure aboneliği satın alınması gerekir. (Bunu Azure faturalama hesabınız olarak düşünün.)
+Y: No Tüm Visual Studio bulut abonelikleri kullanarak bir Azure aboneliği satın alınması gerekir. (Bunu Azure faturalama hesabınız olarak düşünün.)
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>S: ne türleri Azure abonelikleri Visual Studio bulut abonelikleri satın almak için kullanılabilir?
 Y: neredeyse tüm Azure abonelikleri olabilir kullanılan--bağlı Azure abonelikleri destekliyoruz, [Kurumsal Anlaşma (Kurumsal Sözleşme)](https://azure.microsoft.com/pricing/enterprise-agreement/), bulut çözüm sağlayıcıları (CSP'ler) tarafından ayarlanan Azure abonelikleri Azure abonelikleri ayarlanan aracılığıyla Microsoft Open Lisansı satıcılar, Kullandıkça Öde Azure abonelikleri ve Visual Studio abonelerinden abone avantaj olarak ayarlanan Azure abonelikleri kullanarak bile satın alabilirsiniz (ancak daha fazla Visual Studio abonelikleri için ödeme yapmak için aylık kredinizin Hayır, kullanamazsınız ).
@@ -67,7 +69,7 @@ Yıllık abonelikler, özgün purchase 12 ay sonraki ayın ilk gününü iptalle
 Y:, 6 ve sonraki tüm Aboneliklerde %5 İndirim almak *her türü içinde* aboneliğin:
 
 * Aylık Visual Studio Professional
-* Visual Studio Professional annual
+* Visual Studio Professional yıllık
 * Aylık Visual Studio Enterprise
 * Visual Studio Enterprise yıllık
 
@@ -79,7 +81,7 @@ Ayrıca, indirim yalnızca belirli bir aylık fatura döneminde görülecektir �
 
 ### <a name="q-can-i-use-the-monthly-azure-credits-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>S: aylık Azure kredisi bir Visual Studio abone olarak daha fazla Visual Studio bulut abonelik satın almak için kullanabilir miyim?
 
-A: Hayır kullanamazsınız, [Visual Studio abone olarak aylık Azure kredisi](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) Visual Studio Market satın için ödeme yapmak. Tüm Visual Studio bulut aboneliği satın alma işlemleri kredi kartınızdan Fatura edilecek.
+A: Hayır kullanamazsınız, [aylık Azure kredisi](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) Visual Studio Market satın için ödeme yapmak için bir Visual Studio abone olarak. Tüm Visual Studio bulut aboneliği satın alma işlemleri kredi kartınızdan Fatura edilecek.
 Satın alma işlemleri yapmadan önce gerekecektir [harcama limitinizi kaldırmak](https://azure.microsoft.com/pricing/spending-limits/).
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>S: yıllık ve aylık bulut abonelikleri arasındaki fark nedir?
@@ -98,6 +100,6 @@ A: satıcınızla bulut çözümü sağlayıcısı (CSP) programına katılması
 ## <a name="buy-cloud-subscriptions-now"></a>Bulut abonelikleri hemen satın alın
 
 * [Aylık Visual Studio Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
-* [Visual Studio Professional annual](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)
+* [Visual Studio Professional yıllık](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)
 * [Aylık Visual Studio Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
 * [Visual Studio Enterprise yıllık](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual)

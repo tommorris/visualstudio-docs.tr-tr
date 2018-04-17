@@ -1,20 +1,20 @@
 ---
-title: "Visual Studio Test Araçları Geliştirici | Microsoft Docs"
+title: Visual Studio Test Araçları Geliştirici | Microsoft Docs
 ms.date: 05/02/2017
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ae3b475cb6f50f9c6ec623b7dfc588ada9b27163
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0eb2fb58e984f5c3de172590c48a603d6ddac21b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Geliştirici Araçları, senaryolarını ve özelliklerini test etme
 
@@ -69,7 +69,7 @@ Test yöntemlerini Test Gezgini'ni kullanarak çalıştırdığınızda kod kaps
 
 Geliştiriciler oluşturmak, yönetmek ve en fazla birim testi elde Explorer Yardımı sınayın.
 
-![Visual Studio Test Explorer](media/devtest-testexplorer.png)
+![Visual Studio Test Gezgini](media/devtest-testexplorer.png)
 
 * [Birim testi ile çalışmaya başlama](unit-test-your-code.md)
 * [Test Gezgini ile birim testleri çalıştırma](run-unit-tests-with-test-explorer.md)

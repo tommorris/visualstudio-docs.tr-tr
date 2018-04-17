@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Oluşturma ve bir SharePoint iş akışı çözümü hata ayıklama | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Oluşturma ve bir SharePoint iş akışı çözümü hata ayıklama | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 687116b1fc7f3ad935583b41ff9c19d2d5d13613
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 90015dce107eb15859fcb707cc265b84840ca546
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-and-debugging-a-sharepoint-workflow-solution"></a>İzlenecek yol: Bir SharePoint İş Akışı Çözümü Oluşturma ve Hatalarını Ayıklama
   Bu kılavuz temel sıralı iş akışı şablonunun nasıl oluşturulacağını gösterir. İş akışı bir belgeyi gözden olup olmadığını belirlemek için paylaşılan bir belge kitaplığı özelliğini denetler. Belge gözden, iş akışı tamamlanır.  

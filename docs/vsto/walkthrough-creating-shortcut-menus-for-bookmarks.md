@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Yer işaretleri için kısayol menüleri oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Yer işaretleri için kısayol menüleri oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6d54d23330c6d5fab836f168a291b15b90379117
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>İzlenecek Yol: Yer İşaretleri İçin Kısayol Menüleri Oluşturma
   Bu anlatımda için kısayol menüleri oluşturma gösterilir <xref:Microsoft.Office.Tools.Word.Bookmark> Word için belge düzeyi özelleştirmelerinde kontrol eder. Bir kullanıcı bir yer işareti metinde tıklattığında bir kısayol menüsü görüntülenir ve metin biçimlendirme için kullanıcı seçenekler sunar.  
@@ -47,9 +46,9 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]veya[!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] Veya [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
   
-##  <a name="BKMK_CreateProject"></a>Proje oluşturma  
+##  <a name="BKMK_CreateProject"></a> Proje oluşturma  
  İlk adım, Visual Studio'da bir Word belgesi projesi oluşturmaktır.  
   
 #### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio tasarımcıda yeni Word belgesini açar ve ekler **My yer işareti kısayol menüsünü** için proje **Çözüm Gezgini**.  
   
-##  <a name="BKMK_addtextandbookmarks"></a>Belgeye metin ve yer işaretleri ekleme  
+##  <a name="BKMK_addtextandbookmarks"></a> Belgeye metin ve yer işaretleri ekleme  
  Bazı metinleri belgenize ekleyin ve sonra iki örtüşen yer işareti ekleyin.  
   
 #### <a name="to-add-text-to-your-document"></a>Metin belgenize eklemek için  
@@ -75,18 +74,18 @@ ms.lasthandoff: 01/10/2018
   
 2.  "Metni sağ tıklattığınızda bir kısayol menüsü oluşturma" sözcükler seçin ve ardından **Tamam**.  
   
-     `bookmark1`belgeye eklenir.  
+     `bookmark1` belgeye eklenir.  
   
 3.  Başka bir tane eklemek <xref:Microsoft.Office.Tools.Word.Bookmark> "yer işareti metnin sağ" sözcükleri denetim.  
   
-     `bookmark2`belgeye eklenir.  
+     `bookmark2` belgeye eklenir.  
   
     > [!NOTE]  
     >  "Metnin sağ tıklayın", olan hem de sözcükler `bookmark1` ve `bookmark2`.  
   
  Tasarım zamanında bir belge için bir yer işareti eklediğinizde bir <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi oluşturulur. Yer işareti birkaç olaylara karşı programlama yapabilirsiniz. Kod yazabilirsiniz <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> olay işaretinin kullanıcı yer işareti metinde tıklattığında bir kısayol menüsü görüntülenir.  
   
-##  <a name="BKMK_AddCmndsShortMenu"></a>Komut için kısayol menüsü ekleme  
+##  <a name="BKMK_AddCmndsShortMenu"></a> Komut için kısayol menüsü ekleme  
  Düğme belge sağ tıklattığınızda görüntülenen kısayol menüsü ekleme.  
   
 #### <a name="to-add-commands-to-a-shortcut-menu"></a>Bir kısayol menü komutları eklemek için  
@@ -146,7 +145,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]  
   
-##  <a name="BKMK_formattextbkmk"></a>Yer işareti metni biçimlendirme  
+##  <a name="BKMK_formattextbkmk"></a> Yer işareti metni biçimlendirme  
   
 #### <a name="to-format-the-text-in-the-bookmark"></a>Yer işareti metinde biçimlendirmek için  
   

@@ -2,17 +2,17 @@
 title: "Nasıl yapılır: C++ DLL'ler için birim testleri yazma | Microsoft Docs"
 ms.date: 11/04/2017
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 40ec25b25c3aefd6cc5e759c70362cf7e5f1855e
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: e4ff7d931b614d6d3c243539efc42bf051878fb0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Nasıl yapılır: C++ DLL'ler için birim testleri yazma
 
@@ -327,7 +327,7 @@ Bu kılavuz, yerel C++ önce test yöntemi kullanarak DLL'den geliştirmek açı
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Mevcut C++ uygulamalarına birim testleri ekleme](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
-- [Using Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)
+- [Microsoft.VisualStudio.TestTools.CppUnitTestFramework kullanma](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)
 - [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)
 - [İzlenecek yol: Dinamik Bağlantı Kitaplığı Oluşturma ve Kullanma (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [İçeri ve Dışarı Aktarma](/cpp/build/importing-and-exporting)

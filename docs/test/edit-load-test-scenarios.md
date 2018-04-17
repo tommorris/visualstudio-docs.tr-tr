@@ -1,7 +1,7 @@
 ---
-title: "Visual Studio Yük testi senaryolarını düzenleme | Microsoft Docs"
+title: Visual Studio Yük testi senaryolarını düzenleme | Microsoft Docs
 ms.date: 10/03/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, user activities
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5b4abcb0b75e379df360c045527790a708c55c6e
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 69416ed6a4e06cccd606e705d97bef94d0825bd7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-load-test-scenarios"></a>Yük testi senaryolarını düzenleme
 
@@ -36,7 +36,7 @@ Senaryoları aşağıdaki bileşenleri içerir:
 |Terim|Tanım|
 |Tarayıcı karışımı|Sanal kullanıcı Web tarayıcıları çeşitli bir Web sitesine erişim benzetimini yapar.|
 |Yük düzeni|Bir yük testi ve yeni kullanıcılar başladığı oranı sırasında etkin olan sanal kullanıcıların sayısını belirtir. Örneğin: adım, sabit ve hedef tabanlı.|
-|Test Mix Model|Bir yük testi senaryosunda belirli bir test çalıştıran sanal kullanıcı olasılığını belirtir. Örneğin: % 20 olasılık TestA çalıştırmak için ve % 80 olasılık. Test karışımı modeli her belirli bir senaryo için hedefini yansıtmalıdır.|
+|Test karışımı modeli|Bir yük testi senaryosunda belirli bir test çalıştıran sanal kullanıcı olasılığını belirtir. Örneğin: % 20 olasılık TestA çalıştırmak için ve % 80 olasılık. Test karışımı modeli her belirli bir senaryo için hedefini yansıtmalıdır.|
 |Test karışımı|Test karışımı senaryoyu oluşturan Web performansı ve birim testleri seçimi ve bu testlerin dağıtımını ' dir.|
 |Ağ karışımı|Sanal kullanıcıların çeşitli ağ bağlantıları bir Web sitesine erişim benzetimini yapar. Ağ karışımı LAN, kablolu modem ve diğer seçenekleri dahil seçenekleri sunar.|
 

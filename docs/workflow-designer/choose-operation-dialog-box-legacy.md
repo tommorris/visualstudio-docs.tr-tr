@@ -1,5 +1,5 @@
 ---
-title: "Seç işlemi iletişim kutusu (eski) | Microsoft Docs"
+title: Seç işlemi iletişim kutusu (eski) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: bc3ec902-7797-494e-af48-e70c97eb6779
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2d26d97fd147ea39e8d074ea65f4a4121f9be71
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 5b4bd8318c4b10dab878ffd96667ce7057e653ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>İşlem iletişim kutusu (eski) seçin
 
@@ -26,7 +26,7 @@ Bu konuda açıklanmaktadır kullanma **seçin işlemi** eski Windows iş akış
 
 |Arabirim Öğesi|Açıklama|
 |----------------|-----------------|
-|**Add Contract**|Yeni bir sözleşme sizin için oluşturur. Bu sözleşmede yeni işlem tanımlayabilirsiniz. (Bu ile birlikte kullanılan <xref:System.Workflow.Activities.ReceiveActivity> yalnızca.)|
+|**Sözleşme Ekle**|Yeni bir sözleşme sizin için oluşturur. Bu sözleşmede yeni işlem tanımlayabilirsiniz. (Bu ile birlikte kullanılan <xref:System.Workflow.Activities.ReceiveActivity> yalnızca.)|
 |**Ekleme işlemi**|Yeni işlem içinde oluşturulan yeni bir sözleşme ekler **seçin işlemi** iletişim kutusu. **Not:** yeni işlem aracılığıyla oluşturduğunuz sözleşmeleri ekleyebileceğiniz **seçin işlemi** iletişim kutusu. <br /><br /> (Bu ile birlikte kullanılan <xref:System.Workflow.Activities.ReceiveActivity> yalnızca.)|
 |**İçeri Aktar...**|Önceden tanımlanmış bir sözleşme alır ve bir işlem bu sözleşmeden seçmenize olanak sağlar.|
 |**İşlem adı**|Şu anda seçili olan işlemin adı. Bu metin kutusu yalnızca bir işlem aracılığıyla oluşturduysanız düzenlemek için kullanılabilir **seçin işlemi** iletişim kutusu.|

@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Sunucudaki çalışma kitabındaki veriler, önbelleğe değiştirme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Sunucudaki çalışma kitabındaki veriler, önbelleğe değiştirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fcea73cfbd87a4e541654b91463091b08c47b8c0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d9303c165b0c04d36a873ee2ff2aae22365b24e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-changing-cached-data-in-a-workbook-on-a-server"></a>İzlenecek Yol: Sunucudaki Çalışma Kitabında Bulunan Önbelleğe Alınmış Verileri Değiştirme
   Bu kılavuzda Microsoft Office Excel çalışma kitabında kullanarak Excel'i başlatmadan önbelleğe alınmış bir veri kümesinin nasıl değiştirileceği gösterilmektedir <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı.  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  **Tamam**'ı tıklatın.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **AdventureWorksDataSet** için proje **Çözüm Gezgini** ve açılır **Class1.cs** veya **Class1.vb'ye** kod dosyası.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **AdventureWorksDataSet** için proje **Çözüm Gezgini** ve açılır **Class1.cs** veya **Class1.vb'ye** kod dosyası.  
   
 9. İçinde **Çözüm Gezgini**, sağ **Class1.cs** veya **Class1.vb'ye**ve ardından **silmek**. Bu kılavuz için bu dosyayı gerekmez.  
   
@@ -144,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Emin **bir yeni belge oluşturun** seçilir ve tıklatın **Tamam**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]açılır **AdventureWorksReport** çalışma kitabı Tasarımcısı'nda ve ekler **AdventureWorksReport** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] açılır **AdventureWorksReport** çalışma kitabı Tasarımcısı'nda ve ekler **AdventureWorksReport** için proje **Çözüm Gezgini**.  
   
 ## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Excel çalışma kitabı projesindeki veri kaynaklarına veri ekleme  
  Excel çalışma kitabında veri kümesi görüntülemeden önce Excel çalışma kitabı projesindeki veri kaynaklarına ilk veri kümesi eklemeniz gerekir.  
@@ -239,7 +238,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  **Tamam**'ı tıklatın.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **DataWriter** için proje **Çözüm Gezgini** ve açılır **Program.cs** veya **Module1.vb** kod dosyası.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **DataWriter** için proje **Çözüm Gezgini** ve açılır **Program.cs** veya **Module1.vb** kod dosyası.  
   
 ## <a name="changing-data-in-the-cached-dataset-by-using-the-console-application"></a>Konsol uygulaması kullanarak önbelleğe alınmış veri kümesindeki veriler değiştirme  
  Kullanım <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> yerel verileri okumak için konsol uygulaması sınıfında `AdventureWorksLTDataSet` nesnesi, bu veriyi değiştirin ve tekrar önbelleğe alınmış veri kümesine kaydedin.  

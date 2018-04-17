@@ -1,12 +1,10 @@
 ---
-title: "Yayımlama Sihirbazı (Visual Studio'da Office Geliştirme) | Microsoft Docs"
-ms.custom: 
+title: Yayımlama Sihirbazı (Visual Studio'da Office Geliştirme) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
 - VST.PublishWizard.Publish.2007System
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Publish Wizard, Office solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 43b4869435c34a29cac5fd18a13d2b4b140e8b6c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Yayımlama Sihirbazı (Visual Studio'da Office Geliştirme)
   Kullanım **Yayımlama Sihirbazı** belirtilen bir konuma çözüm dosyalarını kopyalamak için bildirim dosyalarını oluşturmak ve Kurulum programını oluşturun.  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Bir Evrensel Adlandırma Kuralı (UNC) yolu gibi \\\ServerName\MyApplication\\.  
   
--   Http://www.microsoft.com/MyApplication gibi bir web sitesi URL'si.  
+-   Bir URL bir Web sitesi, gibi http://www.microsoft.com/MyApplication.  
   
  Varsayılan olarak, yayımlama konumdur *http://localhost/projectname/* IIS yüklü veya bunu yaparsanız publish\ dizin IIS yüklü.  
   
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Sayfası, Proje Tasarımcısı &#40; Office geliştirme Visual Studio &#41;yayımlamak;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [Yayımla Sayfası, Proje Tasarımcısı &#40;Visual Studio'da Office geliştirme&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Office Çözümünü Dağıtma](../vsto/deploying-an-office-solution.md)  
   
   

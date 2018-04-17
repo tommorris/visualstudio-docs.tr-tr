@@ -1,5 +1,5 @@
 ---
-title: "Nasıl yapılır: iş akışı projeleri (eski) oluşturma | Microsoft Docs"
+title: 'Nasıl yapılır: iş akışı projeleri (eski) oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 32299555-662c-469d-a90d-89f4700dc78c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc38c6b323ee06ed9b312811eb892e7654134d05
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: ca6fdbbd8a744c472c06fdefbdafce77679ec2c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Nasıl yapılır: iş akışı projeleri (eski) oluşturma
 Oluşturmak için bu adımları bir [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] hedefleyen projede [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Bu yordam eski Windows iş akışı tasarımcısı tarafından sağlanan kullanır [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].

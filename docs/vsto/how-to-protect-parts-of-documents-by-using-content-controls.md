@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: içerik denetimlerini kullanarak belge bölümlerini koruma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: içerik denetimlerini kullanarak belge bölümlerini koruma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - GroupContentControl
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 444fd63ecfe1fc74161920b17a3c7caead5a434a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0a72603f71395bbbf8e167b6a2361f7d8b2a30a6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Nasıl Yapılır: İçerik Denetimlerini Kullanarak Belge Bölümlerini Koruma
   Belgenin bir bölümünü koruduğunuzda, değiştirme veya silme belgenin bu bölümü içeriği kullanıcıların engellemiş olursunuz. İçerik denetimlerini kullanarak Microsoft Office Word belgesi kısımlarını korumak için birkaç yol vardır:  
@@ -37,7 +36,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-##  <a name="EditDeleteControl"></a>İçerik denetimi koruma  
+##  <a name="EditDeleteControl"></a> İçerik denetimi koruma  
  Kullanıcıların düzenleme veya içerik denetimi tasarım zamanında veya çalışma zamanında bir belge düzeyi projede denetimin özelliklerini ayarlayarak silme engelleyebilir.  
   
  Bir VSTO eklenti projesi kullanarak belgeye çalışma zamanında ekleme içerik denetimleri de koruyabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: Word belgelerine içerik denetimlerine ekleme](../vsto/how-to-add-content-controls-to-word-documents.md).  

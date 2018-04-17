@@ -1,19 +1,19 @@
 ---
-title: "Visual Studio Yük testleri için eşik ihlallerini | Microsoft Docs"
+title: Visual Studio Yük testleri için eşik ihlallerini | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, threshold violations
 ms.assetid: 0126d7b7-0538-4ea9-9046-6556654b3b9d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c511bb3edf8ad8277b367733f85108d9587898e
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 6acb9eec16107134dc03765da82008a01b599e4b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Nasıl yapılır: Yük Testi Düzenleyicisi'nde Sayaçlar Panelini Kullanılarak Eşik İhlallerini Çözümleme
 
@@ -58,7 +58,7 @@ Bir yük testi çalışırken ya da bir yük testi sonuç çözümlerken Sayaçl
 
     -   **Sayaç göstergede Göster**: göstergede performans sayacı eklenir ve seçilir. Daha fazla bilgi için bkz: [yük testlerini çözümlemek için grafik görünümü göstergesini kullanma](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
 
-    -   **Add Graph**:
+    -   **Grafik ekleyin**:
 
     1.  **Grafik adı girin** iletişim kutusu görüntülenir.
 

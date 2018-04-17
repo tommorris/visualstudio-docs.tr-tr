@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Proje için ilk VSTO eklentinizi oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Proje için ilk VSTO eklentinizi oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1e1b768a8d812d3a4c0222bbb3e762c0f5046f56
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3572f07a9bb0e3fc9a38ec55ae260e19dd671620
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-project"></a>İzlenecek yol: Proje için ilk VSTO eklentinizi oluşturma
-  Bu kılavuzda nasıl Microsoft Office Project için VSTO eklenti oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin projeleri açık olan bağımsız olarak kullanılabilir. Daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  Bu kılavuzda nasıl Microsoft Office Project için VSTO eklenti oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin projeleri açık olan bağımsız olarak kullanılabilir. Daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]  
   
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Project_15_short](../vsto/includes/project-15-short-md.md)]veya [!INCLUDE[Project_14_short](../vsto/includes/project-14-short-md.md)].  
+-   [!INCLUDE[Project_15_short](../vsto/includes/project-15-short-md.md)] veya [!INCLUDE[Project_14_short](../vsto/includes/project-14-short-md.md)].  
   
 ## <a name="creating-the-project"></a>Projeyi Oluşturma  
   
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  **Tamam**'ı tıklatın.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]oluşturur **FirstProjectAddIn** proje ve açılır **ThisAddIn** Düzenleyicisi'nde kod dosyası.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturur **FirstProjectAddIn** proje ve açılır **ThisAddIn** Düzenleyicisi'nde kod dosyası.  
   
 ## <a name="writing-code-that-adds-a-new-task-to-a-project"></a>Bir projeye yeni bir görev ekler kod yazma  
  Ardından, kodu ThisAddIn kod dosyasına ekleyin. Yeni kod, bir projeye yeni bir görev eklemek için proje nesne modelini kullanır. Varsayılan olarak, aşağıdaki oluşturulmuş kodu ThisAddIn kod dosyasını içerir:  

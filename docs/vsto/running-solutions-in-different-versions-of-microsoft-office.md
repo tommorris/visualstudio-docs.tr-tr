@@ -1,12 +1,10 @@
 ---
-title: "Çözümleri Microsoft Office'in farklı sürümlerinde çalıştırma | Microsoft Docs"
-ms.custom: 
+title: Çözümleri Microsoft Office'in farklı sürümlerinde çalıştırma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - multiple Office versions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5f39217b456694b7e611e0386cede9fdf3c11baf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e228f407edd38e173da78c092c0cca7061a661a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="running-solutions-in-different-versions-of-microsoft-office"></a>Çözümleri Microsoft Office'in Farklı Sürümlerinde Çalıştırma
     
@@ -32,10 +31,10 @@ ms.lasthandoff: 01/10/2018
   
 |Proje şablonu tarafından hedeflenen Office sürümü|Hedef .NET Framework projenin<sup>1</sup>|Çözümü çalıştırmadan Office sürümleri|Son kullanıcı bilgisayarda gerekli çalışma zamanı|  
 |--------------------------------------------------------|------------------------------------------------------|--------------------------------------------------|-------------------------------------------|  
-|Office 2016 ve[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]veya üzeri|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> 2007 Microsoft Office sistemi<sup>2</sup>|Office çalışma zamanı için Visual Studio 2010 Araçları|  
-|[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]veya üzeri|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> 2007 Microsoft Office sistemi<sup>2</sup>|Office çalışma zamanı için Visual Studio 2010 Araçları|  
+|Office 2016 ve [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> 2007 Microsoft Office sistemi<sup>2</sup>|Office çalışma zamanı için Visual Studio 2010 Araçları|  
+|[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> 2007 Microsoft Office sistemi<sup>2</sup>|Office çalışma zamanı için Visual Studio 2010 Araçları|  
 |[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|.NET Framework 3.5|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Office çalışma zamanı için Visual Studio 2010 Araçları|  
-|2007 Microsoft Office sistemi|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]veya sonraki sürümlerde,<br /><br /> veya<br /><br /> .NET Framework 3.5|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> 2007 Microsoft Office sistemi|Office çalışma zamanı için Visual Studio 2010 Araçları|  
+|2007 Microsoft Office sistemi|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya sonraki sürümlerde,<br /><br /> veya<br /><br /> .NET Framework 3.5|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> 2007 Microsoft Office sistemi|Office çalışma zamanı için Visual Studio 2010 Araçları|  
   
  1. .NET Framework sürümünü, projenizin hedeflediği çalıştırmak, çözümünüz için son kullanıcı bilgisayarlarında gereklidir. Örneğin, .NET Framework 3.5 projeniz .NET Framework 3.5 hedefliyorsa, son kullanıcı bilgisayarlarında gereklidir. Bu örnekte, çözümünüzü yalnızca çalışmaz [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] son kullanıcı bilgisayarlara yüklenir.  
   
@@ -48,11 +47,11 @@ ms.lasthandoff: 01/10/2018
   
 |Visual Studio çözümü oluşturmak için kullanılan sürümü|Proje şablonu tarafından hedeflenen Office sürümü|Çözümü çalıştırmadan Office sürümleri|Son kullanıcı bilgisayarda gerekli çalışma zamanı|Son kullanıcı bilgisayarda gerekli .NET Framework sürümü|  
 |----------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------|-------------------------------------------|----------------------------------------------------------|  
-|Visual Studio 2008 Professional<br /><br /> veya<br /><br /> Visual Studio Team System 2008|2007 Microsoft Office sistemi|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]ve [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] <sup>1</sup><br /><br /> 2007 Microsoft Office sistemi|Office çalışma zamanı için Visual Studio 2010 Araçları<sup>1</sup><br /><br /> veya<br /><br /> Microsoft Office sistemi için Visual Studio Araçları (sürüm 3.0 çalışma zamanı)|.NET Framework 3.5|  
-|Visual Studio 2005 VSTO 2005 SE ile aşağıdaki sürümlerinden birini<sup>2</sup> yüklü:<br /><br /> -Office için visual Studio 2005 Araçları<br />-Visual Studio Team System 2005<br />-Visual Studio 2005 Professional|2007 Microsoft Office sistemi|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]ve [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (yalnızca 32-bit<sup>3</sup>)<br /><br /> 2007 Microsoft Office sistemi|Office için Visual Studio 2005 Araçları Edition çalışma zamanı saniye|.NET framework 2.0, .NET Framework 3.0 veya .NET Framework 3.5|  
-|Visual Studio aşağıdaki sürümlerinden birini:<br /><br /> -Visual Studio 2008 Professional<br />-Visual Studio Team System 2008<br />-Office için visual Studio 2005 Araçları (ile veya olmadan VSTO 2005 SE<sup>2</sup> yüklü)<br />-Visual Studio Team System 2005 (ile veya olmadan VSTO 2005 SE<sup>2</sup> yüklü)<br />-VSTO 2005 SE visual Studio 2005 Professional<sup>2</sup> yüklü|Microsoft Office 2003|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]ve [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (yalnızca 32-bit<sup>3</sup>)<br /><br /> 2007 Microsoft Office sistemi<br /><br /> Microsoft Office 2003|Office için Visual Studio 2005 Araçları Edition çalışma zamanı saniye|.NET framework 2.0, .NET Framework 3.0 veya .NET Framework 3.5|  
+|Visual Studio 2008 Professional<br /><br /> veya<br /><br /> Visual Studio Team System 2008|2007 Microsoft Office sistemi|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ve [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] <sup>1</sup><br /><br /> 2007 Microsoft Office sistemi|Office çalışma zamanı için Visual Studio 2010 Araçları<sup>1</sup><br /><br /> veya<br /><br /> Microsoft Office sistemi için Visual Studio Araçları (sürüm 3.0 çalışma zamanı)|.NET Framework 3.5|  
+|Visual Studio 2005 VSTO 2005 SE ile aşağıdaki sürümlerinden birini<sup>2</sup> yüklü:<br /><br /> -Office için visual Studio 2005 Araçları<br />-Visual Studio Team System 2005<br />-Visual Studio 2005 Professional|2007 Microsoft Office sistemi|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ve [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (yalnızca 32-bit<sup>3</sup>)<br /><br /> 2007 Microsoft Office sistemi|Office için Visual Studio 2005 Araçları Edition çalışma zamanı saniye|.NET framework 2.0, .NET Framework 3.0 veya .NET Framework 3.5|  
+|Visual Studio aşağıdaki sürümlerinden birini:<br /><br /> -Visual Studio 2008 Professional<br />-Visual Studio Team System 2008<br />-Office için visual Studio 2005 Araçları (ile veya olmadan VSTO 2005 SE<sup>2</sup> yüklü)<br />-Visual Studio Team System 2005 (ile veya olmadan VSTO 2005 SE<sup>2</sup> yüklü)<br />-VSTO 2005 SE visual Studio 2005 Professional<sup>2</sup> yüklü|Microsoft Office 2003|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ve [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (yalnızca 32-bit<sup>3</sup>)<br /><br /> 2007 Microsoft Office sistemi<br /><br /> Microsoft Office 2003|Office için Visual Studio 2005 Araçları Edition çalışma zamanı saniye|.NET framework 2.0, .NET Framework 3.0 veya .NET Framework 3.5|  
   
- 1. [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]ve [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] uygulamalar Office çalışma zamanı için Visual Studio 2010 araçları içerir. Bu nedenle, bu uygulamalar her zaman Visual Studio 2010 Araçları Microsoft Office sistemi için Visual Studio Araçları yerine Office çalışma zamanı için kullanın (sürüm 3.0 çalışma zamanı) Bu senaryoda. Office çalışma zamanı veya Microsoft Office sistemi için Visual Studio Araçları, Visual Studio 2010 Araçları 2007 Microsoft Office sistemi uygulamalarında kullanabilirsiniz (sürüm 3.0 çalışma zamanı).  
+ 1. [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ve [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] uygulamalar Office çalışma zamanı için Visual Studio 2010 araçları içerir. Bu nedenle, bu uygulamalar her zaman Visual Studio 2010 Araçları Microsoft Office sistemi için Visual Studio Araçları yerine Office çalışma zamanı için kullanın (sürüm 3.0 çalışma zamanı) Bu senaryoda. Office çalışma zamanı veya Microsoft Office sistemi için Visual Studio Araçları, Visual Studio 2010 Araçları 2007 Microsoft Office sistemi uygulamalarında kullanabilirsiniz (sürüm 3.0 çalışma zamanı).  
   
  2. VSTO 2005 SE Microsoft Office 2003 ve 2007 Microsoft Office sistemi için VSTO eklentisi proje şablonları sağlayan ücretsiz bir Visual Studio eklentisidir. Visual Studio 2005 Professional, Office için Visual Studio 2005 Araçları veya Visual Studio Team System 2005'teki bir sürüm ile yüklenebilir. Daha fazla bilgi için bkz: [Office ikinci sürümü için Visual Studio 2005 Araçları](http://go.microsoft.com/fwlink/?LinkId=148446).  
   

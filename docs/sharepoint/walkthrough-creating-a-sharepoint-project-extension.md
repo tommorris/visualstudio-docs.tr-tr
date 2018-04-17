@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: bir SharePoint proje uzantısı oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: bir SharePoint proje uzantısı oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a03dd09525d29aaea31ef5c376814bd09747f90e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 17722233c5215858dce59a0d85a05f668de85446
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-sharepoint-project-extension"></a>İzlenecek Yol: SharePoint Proje Uzantısı Oluşturma
   Bu kılavuzda nasıl SharePoint projeleri için bir uzantı oluşturulacağı gösterilmektedir. Bir proje zaman eklenmiş, silinmiş veya yeniden adlandırılmış gibi proje düzeyi olaylarına tepki vermek için bir proje uzantısı kullanabilirsiniz. Ayrıca, özel özellikler ekleyebilir veya bir özellik değeri değiştiğinde yanıt. Proje öğesi uzantılarının aksine, project uzantıları belirli bir SharePoint proje türü ile ilişkilendirilemez. Bir proje uzantısı oluşturma, herhangi bir SharePoint proje türünü açıldığında uzantıyı yükler [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  İçinde **adı** kutusuna **ProjectExtension**ve ardından **Tamam** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ekler **ProjectExtension** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **ProjectExtension** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
   
 5.  Class1 kod dosyasının projeden silin.  
   
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  İçinde **Çözüm Gezgini**source.extension.vsixmanifest dosya için kısayol menüsünü açın ve ardından **açmak** düğmesi.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dosya bildirim Tasarımcısı'nda açılır. İçinde görüntülenen bilgileri **meta veri** sekmesi de görüntülenir **Uzantılar ve güncelleştirmeler**. Tüm VSIX paketi extension.vsixmanifest dosya gerektirir. Bu dosya hakkında daha fazla bilgi için bkz: [VSIX uzantı şema 1.0 başvurusu](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dosya bildirim Tasarımcısı'nda açılır. İçinde görüntülenen bilgileri **meta veri** sekmesi de görüntülenir **Uzantılar ve güncelleştirmeler**. Tüm VSIX paketi extension.vsixmanifest dosya gerektirir. Bu dosya hakkında daha fazla bilgi için bkz: [VSIX uzantı şema 1.0 başvurusu](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  İçinde **ürün adı** kutusuna **özel Proje özelliği**.  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  Hata ayıklama derlemesi projenizin seçerek Başlat **F5** anahtar veya menü çubuğu seçme **hata ayıklama**, **hata ayıklamayı Başlat**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom proje Property\1.0 uzantıyı yükleyen ve Deneysel bir örneğini başlatır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom proje Property\1.0 uzantıyı yükleyen ve Deneysel bir örneğini başlatır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 3.  Deneysel örneğinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], bir Grup çözümü için SharePoint projesi oluşturun ve sihirbazdaki diğer değerler için varsayılan değerleri kullanın.  
   

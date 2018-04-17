@@ -1,23 +1,21 @@
 ---
-title: "İçerik modeli View | Microsoft Docs"
-ms.custom: 
+title: İçerik modeli View | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 582082504b713988039af609d59150715f75ecfe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1ee6860702fe672df5bebca38002ff7a8388cddd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="content-model-view"></a>İçerik modeli görünümü
 İçerik modeli görünümü yerel ve genel şema düğümleri ve basit ve karmaşık türleri, öğeleri, model grupları, öznitelikleri ve öznitelik grupları dahil olmak üzere bileşenleri, grafik bir gösterimini sağlar. XML açıklamaları ve işleme talimatları içerik modeli görünümünde görüntülenemiyor. İçerik modeli görünümü iki bölme içerir: bir **çalışma** düğümlerin listesini içeren paneli [XML şema Tasarımcısı çalışma](../xml-tools/xml-schema-designer-workspace.md)ve burada görebilirsiniz şema içerik modeli tasarım yüzeyi Seçili düğümleri **çalışma** paneli. İçerik modeli görünümü, XML şema Tasarımcısı araç ve içerik haritası çubuğunu de içerir.  

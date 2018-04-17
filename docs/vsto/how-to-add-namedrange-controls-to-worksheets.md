@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ef0ec1846a4ef75200fa6d37f137ca1ab1d70f48
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fff4299b694dacd00d5f32adced3ef5a6a10f1c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Nasıl yapılır: Çalışma Sayfalarına NamedRange Denetimleri Ekleme
   Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.NamedRange> Microsoft Office Excel çalışma zamanında ve belge düzeyi projelerine çalışma zamanında denetimler.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimleri bkz [NamedRange denetimi](../vsto/namedrange-control.md).  
   
-##  <a name="designtime"></a>Tasarım zamanında NamedRange denetimleri ekleme  
+##  <a name="designtime"></a> Tasarım zamanında NamedRange denetimleri ekleme  
  Eklemek için çeşitli yollar vardır <xref:Microsoft.Office.Tools.Excel.NamedRange> tasarım zamanında belge düzeyi projesindeki çalışma sayfasına denetimler: gelen Excel'den Visual Studio içinde **araç**, gelen ve giden **veri kaynakları** penceresi.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -76,17 +75,17 @@ ms.lasthandoff: 01/10/2018
   
      Veri bağlama <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi çalışma sayfasına eklenir. Daha fazla bilgi için bkz: [verileri bağlama ve Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
-##  <a name="runtimedoclevel"></a>Belge düzeyi projesindeki çalışma zamanında NamedRange denetimleri ekleme  
+##  <a name="runtimedoclevel"></a> Belge düzeyi projesindeki çalışma zamanında NamedRange denetimleri ekleme  
  Ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Excel.NamedRange> program aracılığıyla çalışma zamanında denetimi. Bu, olaylara yanıt olarak ana bilgisayar denetimleri oluşturmanıza olanak sağlar. Dinamik olarak oluşturulmuş adlandırılmış aralıklar çalışma sayfasında sürdürülmez çalışma kapatıldığında konak kontrolü olarak. Daha fazla bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>NamedRange denetimi bir çalışma sayfasına programlı olarak eklemek için  
   
-1.  İçinde <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> olay işleyicisi `Sheet1`, eklemek için aşağıdaki kodu ekleyin <xref:Microsoft.Office.Tools.Excel.NamedRange> hücre denetimine **A1** ve kendi <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> özelliğine`Hello world!`  
+1.  İçinde <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> olay işleyicisi `Sheet1`, eklemek için aşağıdaki kodu ekleyin <xref:Microsoft.Office.Tools.Excel.NamedRange> hücre denetimine **A1** ve kendi <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> özelliğine `Hello world!`  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#3)]
      [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]  
   
-##  <a name="runtimeaddin"></a>Bir VSTO eklenti projesindeki çalıştırma zamanında NamedRange denetimleri ekleme  
+##  <a name="runtimeaddin"></a> Bir VSTO eklenti projesindeki çalıştırma zamanında NamedRange denetimleri ekleme  
  Ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Excel.NamedRange> VSTO eklenti projesindeki herhangi bir açık çalışma sayfasına program aracılığıyla denetimine. Dinamik olarak oluşturulmuş adlandırılmış aralıklar çalışma sayfasında sürdürülmez çalışma kapatıldığında konak kontrolü olarak. Daha fazla bilgi için bkz: [genişletme Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 #### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>NamedRange denetimi bir çalışma sayfasına programlı olarak eklemek için  

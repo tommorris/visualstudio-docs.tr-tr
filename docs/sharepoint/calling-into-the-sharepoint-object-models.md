@@ -1,12 +1,10 @@
 ---
-title: "SharePoint nesne modellerini çağırma | Microsoft Docs"
-ms.custom: 
+title: SharePoint nesne modellerini çağırma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,18 +15,19 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cbb1b8f573c6dd28280e30fd5602dff2dc30ae02
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3795b7c920415ee733e08132234de381cf610aba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calling-into-the-sharepoint-object-models"></a>SharePoint Nesne Modellerini Çağırma
   Visual Studio'da SharePoint araçları için Uzantılar oluşturduğunuzda, bazı görevleri gerçekleştirmek üzere SharePoint API'leri çağırmak gerekebilir. Örneğin, SharePoint projeleri için bir özel dağıtım adımı oluşturursanız, SharePoint çözümlerini dağıtmak için görevlerden bazılarını gerçekleştirmek için API çağrısı olabilir.  
   
- [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]ve [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] SharePoint araç uzantıları kullanabileceğiniz iki farklı nesne modelleri sağlar: bir sunucu nesne modeli ve bir istemci nesne modeli. Her nesne modeli SharePoint araç uzantıları bağlamında avantajları ve sakıncaları vardır.  
+ [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] ve [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] SharePoint araç uzantıları kullanabileceğiniz iki farklı nesne modelleri sağlar: bir sunucu nesne modeli ve bir istemci nesne modeli. Her nesne modeli SharePoint araç uzantıları bağlamında avantajları ve sakıncaları vardır.  
   
  SharePoint nesne modellerini genel bakış için bkz: [programlama modeli, SharePoint araç uzantıları genel bakış](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
   

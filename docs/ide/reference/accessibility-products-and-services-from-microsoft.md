@@ -1,12 +1,10 @@
 ---
-title: "Erişilebilirlik ürünleri ve Hizmetleri Microsoft'tan | Microsoft Docs"
-ms.custom: 
+title: Erişilebilirlik ürünleri ve Hizmetleri Microsoft'tan | Microsoft Docs
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - TT/TDD services
 - recorded documentation
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
-caps.latest.revision: "14"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e6d59464050c3233e09e9d0d0844916ae3517408
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e058a4e501f49d58239c86e74157570fb854713
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft'tan Erişilebilirlik Ürünleri ve Hizmetleri
 > [!TIP]
@@ -46,7 +44,7 @@ Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay 
 > [!NOTE]
 >  Bu bölümdeki bilgiler yalnızca Microsoft ürünlerini ABD'de lisanslayan kullanıcılar için geçerli olabilir. Bu ürünü birleşik Devletler'in dışında edindiyseniz, yazılım paketinizle birlikte verilen temsilci bilgi kartını kullanabilir veya ziyaret [Microsoft Erişilebilirlik Web sitesi](http://go.microsoft.com/fwlink/?LinkId=8431) Microsoft listesi için Destek Hizmetleri telefon numaraları ve adresleri. Bu bölümde açıklanan ürün ve hizmet türlerinin bölgenizde olup olmadığını bulmak amacıyla yan kuruluşa başvurabilirsiniz. Erişilebilirlik hakkında bilgiler Japonca ve Fransızca'nın dahil olduğu farklı dillerde mevcuttur.  
 
-##  <a name="windows"></a>Windows'un erişilebilirlik özellikleri  
+##  <a name="windows"></a> Windows'un erişilebilirlik özellikleri  
  Windows işletim sistemi yazmada veya Fare kullanmada zorluk, görme engelli kişiler için veya görme engelli veya işitme engelli veya işitme birçok erişilebilirlik özelliğine sahiptir. Özellikler Kurulum sırasında yüklenir. Bu özellikler hakkında daha fazla bilgi için Windows'ta Yardım'a bakın ve [Microsoft Erişilebilirlik Web sitesi](http://go.microsoft.com/fwlink/?LinkId=8431).  
 
 ### <a name="free-step-by-step-tutorials"></a>Ücretsiz adım adım öğreticiler  
@@ -59,18 +57,18 @@ Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay 
 
  Yardımcı teknoloji kullanıyorsanız, yazılımınızı veya donanımınızı olası uyumluluk sorunlarına karşı yükseltmeden önce yardımcı teknoloji satıcınızla iletişime emin olun.  
 
-##  <a name="altfortmats"></a>Alternatif biçimlerdeki belgeler  
+##  <a name="altfortmats"></a> Alternatif biçimlerdeki belgeler  
  Yazdırılan malzemelerin zorluk okunmasında veya varsa, belgeleri Microsoft ürününe daha erişilebilir bir biçimde edinebilirsiniz. Erişilebilir ürün belgelerinin dizinini görüntüleyebilirsiniz [Microsoft Erişilebilirlik Web sitesi](http://go.microsoft.com/fwlink/?LinkId=8431).  
 
  Ayrıca, Recording for the Blind & Dyslexic, Inc (RFB&D) şirketinden de ek Microsoft yayınlarını elde edebilirsiniz. RFB&D bu belgeleri dağıtım hizmetlerine kayıtlı, uygun üyelere dağıtmaktadır. Microsoft ürün belgelerinin ve Microsoft Press kitaplarının uygunluğu hakkında bilgi için başvurun:  
 
 |Recording for the Blind & Dyslexic, Inc.|  
 |----------------------------------------------|  
-|20 Roszel yol<br /><br /> Princeton, NJ 08540<br /><br /> Telefon numarası ABD içindeki: (800) 221-4792<br /><br /> Telefon numarası ABD ve Kanada dışında: (609) 452-0606<br /><br /> Faks: (609) 987-8116<br /><br /> Blind & Dyslexic Web sitesi için kaydı: [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|  
+|20 Roszel yol<br /><br /> Princeton, NJ 08540<br /><br /> Telefon numarası ABD içindeki: (800) 221-4792<br /><br /> Telefon numarası ABD ve Kanada dışında: (609) 452-0606<br /><br /> Faks: (609) 987-8116<br /><br /> Blind & Dyslexic Web sitesi için kaydı: [ http://www.rfbd.org ](http://go.microsoft.com/fwlink/?LinkId=62504).|  
 
  Web adresleri değişebilir, bu Web sitesine veya sitelerine burada sözü edilen bağlanamıyor kalmış olabilir.  
 
-##  <a name="hearing"></a>İşitme zorluğu yaşayan kişiler için Müşteri Hizmetleri  
+##  <a name="hearing"></a> İşitme zorluğu yaşayan kişiler için Müşteri Hizmetleri  
  İşitme engelliyseniz veya işitme varsa, Microsoft Ürün ve müşteri hizmetlerine tam erişim metin telefonu (TTY/TDD) hizmeti üzerinden kullanılabilir:  
 
 -   Müşteri Hizmetleri için 6:30 ve 17:30:00 saatleri Pasifik saati, Pazartesi-Cuma arasında (800) 892-5234 adresindeki Microsoft Sales Information tatiller hariç olmak üzere Center başvurun.  
@@ -79,7 +77,7 @@ Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay 
 
  Microsoft Destek Hizmetleri hizmetin kullanıldığı zaman ücretlendirmeye, hüküm ve koşullara tabidir bağlıdır.  
 
-##  <a name="moreinfo"></a>Daha fazla bilgi için  
+##  <a name="moreinfo"></a> Daha fazla bilgi için  
  Nasıl erişilebilir teknolojinin engelli kişilerin yaşamlarını iyileştirmeye bilgisayarları yardımcı olduğu hakkında daha fazla bilgi için bkz: [Microsoft Erişilebilirlik Web sitesi](http://go.microsoft.com/fwlink/?LinkId=8431).  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  

@@ -1,13 +1,10 @@
 ---
-title: "Hızlı Başlangıç: İlk Python web uygulamanızı oluşturmak için Visual Studio'yu kullanın. | Microsoft Docs"
+title: "Hızlı Başlangıç: İlk Python web uygulamanızı oluşturmak için Visual Studio'yu kullanın."
 description: Bu hızlı başlangıç bir Python Flask framework kullanarak basit bir web uygulamasını oluşturmak için Visual Studio kullanın.
 ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71501e113bc744f430c6935dbf20bfd2ec533758
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 0666fa6fcb169ada6cb2a495e1c91290b127ce24
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Hızlı Başlangıç: Kullanım ilk Python web uygulamanızı oluşturmak için Visual Studio
 
@@ -121,7 +118,7 @@ Artık bir en az bir web uygulaması uygulamak için Python kodu biraz eklemek h
 
 **Soru: Burada Flask hakkında daha fazla bilgi edinebilirim?**
 
-**Yanıt**: başlayarak Flask belgelerine başvurun [Flask Quickstart](https://flask.pocoo.org/docs/0.12/quickstart/) (flask.pocoo.org).
+**Yanıt**: başlayarak Flask belgelerine başvurun [Flask Quickstart](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) (flask.pocoo.org).
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırın
 

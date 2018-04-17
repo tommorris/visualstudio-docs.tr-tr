@@ -1,22 +1,19 @@
 ---
 title: Kod bildirim | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
-caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 74a2fac33ed9e464dd6a54e5a63f46a6cd29a0d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 12fc742ae77df98b67593318e08d4151e2991a4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manifest-to-code"></a>Kod bildirim
 Kod aracı bildirime Visual Studio görüntü Hizmeti'ne ilişkin bir .imagemanifest dosyasının sürer ve sarmalayıcı dosya ya da C++, C#, VB veya Visual Studio uzantıları için .vsct dosyaları görüntü bildirim değerleri başvuran için dosyaları oluşturur bir konsol uygulamasıdır. Bu araç, istekte bulunan görüntüleri için Visual Studio görüntü hizmetinden doğrudan ya da kod kendi kullanıcı Arabirimi ve işleme işlemiyor varsa API'leri aracılığıyla bildirim değerleri geçirme için kullanılan sarmalayıcı dosyaları oluşturur.  

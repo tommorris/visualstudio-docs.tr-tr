@@ -1,26 +1,24 @@
 ---
 title: MSSCCPRJ. SCC dosya | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ef076a93d27cc2c133404d6fe6463d32cb449956
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. SCC dosyası
 Visual Studio çözüm ya da proje IDE kullanarak kaynak denetimi altında yerleştirildiğinde, IDE iki temel bilgiler dizeleri formunda eklenti kaynak denetiminden alır. "AuxPath" ve "ProjName" Bu dizeler IDE opak, ancak bunlar eklenti tarafından sürüm denetimindeki proje ve çözüm bulmak için kullanılır. IDE genellikle bu dizeler ilk kez çağırarak edinir [SccGetProjPath](../extensibility/sccgetprojpath-function.md), ve ardından bunları sonraki çağrılar için çözüm ya da proje dosyasında kaydeder [SccOpenProject](../extensibility/sccopenproject-function.md). Bir kullanıcı, çatallarını, dallandırır ya da sürüm denetimindeki çözüm ve proje dosyalarını kopyalar çözüm ve proje dosyalarında yerleşik "AuxPath" ve "ProjName" dizelerini otomatik olarak güncelleştirilmez. Çözüm ve proje dosyalarını doğru konumlarına sürüm denetimindeki işaret ettiğinden emin olmak için kullanıcılar dizeleri el ile güncelleştirmelisiniz. Dizeleri donuk olma amacını taşır olduğundan, bu her zaman nasıl güncelleştirileceği Temizle olmayabilir.  
@@ -46,23 +44,23 @@ Visual Studio çözüm ya da proje IDE kullanarak kaynak denetimi altında yerle
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ gösterimi. SCC dosya biçimi  
  Aşağıdaki MSSCCPRJ örneğidir. (Satır numaralarını yalnızca bir kılavuz olarak sağlanır ve dosya gövdesinde eklenmemelidir) SCC dosya biçimi:  
   
- [1. satırına]`SCC = This is a Source Code Control file`  
+ [1. satırına] `SCC = This is a Source Code Control file`  
   
  [Satır 2]  
   
- [Satır 3]`[TestApp.sln]`  
+ [Satır 3] `[TestApp.sln]`  
   
- [Satır 4]`SCC_Aux_Path = "\\server\vss\"`  
+ [Satır 4] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Satır 5]`SCC_Project_Name = "$/TestApp"`  
+ [Satır 5] `SCC_Project_Name = "$/TestApp"`  
   
  [Satır 6]  
   
- [Satır 7]`[TestApp.csproj]`  
+ [Satır 7] `[TestApp.csproj]`  
   
- [Satır 8]`SCC_Aux_Path = "\\server\vss\"`  
+ [Satır 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Satır 9]`SCC_Project_Name = "$/TestApp"`  
+ [Satır 9] `SCC_Project_Name = "$/TestApp"`  
   
  İlk satırı dosyasının amacı durumları ve bu türdeki tüm dosyaları için imza görevi görür. Bu satır, tam olarak bu tüm MSSCCPRJ gibi görünmelidir. SCC dosyalar:  
   

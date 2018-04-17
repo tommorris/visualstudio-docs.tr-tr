@@ -1,27 +1,23 @@
 ---
-title: "Yükleme sonrasında çalışan komutlar | Microsoft Docs"
-ms.custom: 
+title: Yükleme sonrasında çalışan komutlar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ff4b1e572fd1e0c5c500fbd756d01063665bd1f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 84f1651f311fbad7aefe40a2744c61dc7d81725c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Yükleme sonrasında çalışan komutlar
 Dahili bir .msi dosyası aracılığıyla dağıtırsanız, çalıştırmalısınız `devenv /setup` yüklemenizi uzantılarınızın bulmak Visual Studio için sırayla bir parçası olarak.  
@@ -73,7 +69,7 @@ Dahili bir .msi dosyası aracılığıyla dağıtırsanız, çalıştırmalısı
  Özel Eylemler, bunları yükleme sırasında yürütülmek zamanlamak için InstallExecuteSequence tablosuna yazılan gerekir. Bu, çalıştırılan özel eylemin engellemek için koşul sütunundaki her satır bir karşılık gelen özellik kullanın sürümü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sistemde yüklü değil.  
   
 > [!NOTE]
->  `Null`özellikleri değerlendirmek için `False` koşullarında kullanıldığında.  
+>  `Null` özellikleri değerlendirmek için `False` koşullarında kullanıldığında.  
   
  Her özel eylem için dizisi sütunun değeri, Windows Installer paketi diğer sırası değerleri bağlıdır. Farklı Çalıştır devenv.exe özel eylemler olmadığı Installfinalize standart eylem hemen önce mümkün olduğunca kapatın, sırası değerleri olmalıdır.  
   

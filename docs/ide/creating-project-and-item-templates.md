@@ -1,12 +1,9 @@
 ---
-title: "Projeler ve dosyalar için Visual Studio şablonları | Microsoft Docs"
-ms.custom: 
+title: Projeler ve dosyalar için Visual Studio şablonları | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - templates [Visual Studio], project
 - templates [Visual Studio], item
@@ -14,12 +11,12 @@ helpviewer_keywords:
 - project templates [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3959b01fdfc0ff77bdd5a3ffa0c96366b9da87d7
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: 900b750df391029a1bed15b2da003f94c085148a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-and-item-templates"></a>Proje ve öğe şablonları
 
@@ -27,21 +24,21 @@ Proje ve öğe şablonları, bazı temel kod ve kendi amaçları için özelleş
 
 ## <a name="visual-studio-templates"></a>Visual Studio şablonları
 
-Bir dizi önceden tanımlanmış proje ve öğe şablonları, Visual Studio ile yüklenir. Örneğin, Visual Basic ve C# **Windows Forms uygulaması** ve **sınıf kitaplığı** 'nda gösterilen şablonları **yeni proje** iletişim kutusu, proje şablonlardır. Öğe şablonları gösterilmiştir **Yeni Öğe Ekle** iletişim kutusuna ve kod dosyaları, XML dosyalarını, HTML sayfaları ve stil sayfalarını gibi öğeleri içerir.
+Bir dizi önceden tanımlanmış proje ve öğe şablonları, Visual Studio ile yüklenir. Örneğin, Visual Basic ve C# **Windows Forms uygulaması** ve **sınıf kitaplığı** 'nda gösterilen şablonları **yeni proje** iletişim kutusu, proje şablonlardır. Öğe şablonları göster **Yeni Öğe Ekle** iletişim kutusuna ve kod dosyaları, XML dosyalarını, HTML sayfaları ve stil sayfalarını gibi öğeleri içerir.
 
-Bu şablonlar projeleri oluşturmaya başlamak için ya da mevcut projeleri genişletmek için kullanıcılar için bir başlangıç noktası sağlar. Proje şablonları belirli proje türü için gerekli olan dosyalar sağlamak, standart derleme başvurularını içerir ve varsayılan proje özelliklerini ve derleyici seçeneklerini ayarlama. Öğe şablonları, içerir, örneğin bir çok dosyalı öğe için belirli dosya uzantısına sahip tek bir boş dosya, saplama koda sahip kaynak kodu dosyaları, Tasarımcı bilgi dosyaları ve katıştırılmış kaynakları karmaşıklığı aralığında değişebilir.
+Bu şablonlar projeleri oluşturmaya başlamak için ya da mevcut projeleri genişletmek için kullanıcılar için bir başlangıç noktası sağlar. Proje şablonları belirli proje türü için gerekli olan dosyalar sağlamak, standart derleme başvurularını içerir ve varsayılan proje özelliklerini ve derleyici seçeneklerini ayarlama. Öğe şablonları, birden çok kaynak kodu dosyaları saplama koduyla, Tasarımcı bilgi dosyaları ve katıştırılmış kaynaklara belirli dosya uzantısına sahip tek bir boş dosya karmaşıklığı aralığında değişebilir.
 
-Yüklü Şablonlar, ek olarak **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları, kendi şablonları veya indirme ve topluluk tarafından oluşturulan kullanım şablonları yazabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md) ve [nasıl yapılır: öğe şablonları oluşturma](../ide/how-to-create-item-templates.md).
+Yüklü şablonlarında kullanabilirsiniz **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları, kendi şablonlarınızı yazmak veya karşıdan yüklemek ve topluluk tarafından oluşturulan şablonlar kullanın. Daha fazla bilgi için bkz: [nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md) ve [nasıl yapılır: öğe şablonları oluşturma](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Bir şablon içeriği
 
 Tüm proje ve öğe şablonları, Visual Studio ile yüklü ya da sizin tarafınızdan oluşturulan aynı ilkeleri kullanarak işlev ve benzer içeriğe sahip. Tüm şablonları aşağıdaki öğeleri içerir:
 
-- Şablon kullanıldığında, oluşturulan dosyalar. Bu, kaynak kodu dosyaları, katıştırılmış kaynakları, proje dosyalarını vb. içerir.
+- Şablon kullanıldığında, oluşturulan dosyalar. Bu dosyalar, kaynak kodu dosyaları, katıştırılmış kaynakları, proje dosyalarını vb. içerir.
 
-- Bir .vstemplate dosyası. Bu dosya şablonda görüntülemek için gereken bilgileri sağlar meta veriler içeriyor **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları ve bir proje veya öğeyi şablonu oluşturun. .Vstemplate dosyaları hakkında daha fazla bilgi için bkz: [şablon parametreleri](../ide/template-parameters.md).
+- Bir *.vstemplate* şablonda görüntülemek için gereken meta verileri içeren dosya **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları ve bir proje oluşturun veya gelen öğesi Şablon. Hakkında daha fazla bilgi için *.vstemplate* dosyaları görmek [şablon parametreleri](../ide/template-parameters.md).
 
-Bu dosyaları bir .zip dosyasına sıkıştırılır ve doğru klasöre yerleştirin, Visual Studio bunları otomatik olarak aşağıdaki konumlarda görüntüler:
+Ne zaman bu dosyaları sıkıştırılır içine bir *.zip* dosya ve doğru klasöre yerleştirin, Visual Studio otomatik olarak aşağıdaki konumlarda görüntüler:
 
 - Proje şablonları görünür **yeni proje** iletişim kutusu.
 
@@ -51,7 +48,7 @@ Bu dosyaları bir .zip dosyasına sıkıştırılır ve doğru klasöre yerleşt
 
 ## <a name="starter-kits"></a>Başlangıç Paketleri
 
-Başlangıç paketleri diğer topluluk üyeleriyle paylaşılabilir Gelişmiş şablonlarıdır. Starter Kit, belgeleri ve yararlı, gerçek uygulamaları derleme oluştururken yeni araçları ve programlama tekniklerinin öğrenin kullanıcılara yardımcı olmak için diğer kaynakları derle kod örnekleri içerir. Temel içeriğini ve yordamlar başlangıç paketleri için şablonlar olanlarla aynıdır. Daha fazla bilgi için bkz: [nasıl yapılır: başlangıç paketleri oluşturma](../ide/how-to-create-starter-kits.md).
+Başlangıç paketleri diğer topluluk üyeleriyle paylaşılabilir Gelişmiş şablonlarıdır. Başlangıç paketleri Derlenebilir kod örnekleri, belgelerine ve kullanıcıların yeni araçları ve programlama tekniklerinin yararlı, gerçek uygulamaları oluştururken öğrenin yardımcı olmak için diğer kaynakları içerir. Başlangıç paketleri için yordamları ve temel içeriğini şablonları aynıdır. Daha fazla bilgi için bkz: [nasıl yapılır: başlangıç paketleri oluşturma](../ide/how-to-create-starter-kits.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

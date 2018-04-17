@@ -1,23 +1,21 @@
 ---
-title: "Visual Studio için renkleri paylaşılan | Microsoft Docs"
-ms.custom: 
+title: Visual Studio için renkleri paylaşılan | Microsoft Docs
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b9093eef6166c86eb6e1ffdf602b4fb75841834d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio için paylaşılan renkleri
 Ortak Visual Studio Kabuğu öğeler kullanan kullanıcı Arabirimi tasarladığınız ya da benzer özellikleri ile tutarlı olacak şekilde arabirimi Öğenizde istediğiniz varolan belirteci adları paket tanımlama dosyaları seçin ve renkleri atamak için kullanın. Bu, kullanıcı Arabirimi ile genel Visual Studio ortamında tutarlı kalmasını ve Temalar eklenen veya güncelleştirilen zaman onu otomatik olarak güncelleştirir sağlar.  
@@ -858,7 +856,7 @@ Arama kutusunda aşağı açılan menüden diğer aşağı açılır menüler Vi
 | Bağlantı arka plan | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Bu belirtece konulu kullanıcı Arabiriminde kullanılmayan gradyan durur.) |
 | Ön plan (bağlantı metni) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a>Ağaç görünümleri  
+###  <a name="BKMK_TreeView"></a> Ağaç görünümleri  
 Çözüm Gezgini, Sunucu Gezgini ve sınıf görünümü de dahil olmak üzere birkaç aracı windows renklerini renk adlarında tarafından denetlenen hiyerarşik bir kuruluş şeması uygulayan `TreeView` kategorisi. Ağaç görünümünde tüm öğeleri arka plan ve metin renkleri vardır. Alt öğeler yuvalanmış öğeleri öğesi genişletilmiş mi, yoksa daraltılmış mı olduğunu belirtmek karakterlerin de vardır.  
 
 ![Ağaç görünümü (kırmızı çizgi)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303 147_TreeViewRedline")<br />Ağaç görünümü (kırmızı çizgi)
@@ -1041,7 +1039,7 @@ Bildirim Tasarımcısı Windows 8 ve Windows Phone 8 projeleri bildirim dosyası
 
 ## <a name="command-structures"></a>Komut yapıları  
 
-###  <a name="BKMK_CommandMenus"></a>Menüleri  
+###  <a name="BKMK_CommandMenus"></a> Menüleri  
 Menüleri, Visual Studio içinde çeşitli yerlerde oluşabilir: belge veya aracı Windows'da ya da sağ IDE boyunca çeşitli konumlarda katıştırılmış ana menü çubuğu. Diğer kullanıcı Arabirimi öğeleri ile ilişkili menüleri uygulamaları ilgili öğesi için bölümünde ele alınmıştır. Visual Studio ortamı tarafından sağlanan standart menü uygulama her zaman kullanmalısınız. Ancak, bazı ender durumlarda, standart Visual Studio menüler erişimi olmayabilir. Bu durumlarda, kullanıcı Arabirimi diğer menüleri Visual Studio ile tutarlı olduğundan emin olmak için aşağıdaki belirteci adları kullanın.  
 
 ![Visual Studio menü (kırmızı çizgi)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303 000_MenuRedline")<br />Visual Studio menü (kırmızı çizgi)
@@ -1282,7 +1280,7 @@ Komut çubuğu grubu ilgili komut çubuğu denetimleri kümesini oluşur ve herh
 | Ön plan (metin) | `Environment.CommandBarTextInactive` |
 | Kenarlık | Yok |
 
-####  <a name="BKMK_CommandComboBox"></a>Komut çubuğu birleşik giriş kutuları
+####  <a name="BKMK_CommandComboBox"></a> Komut çubuğu birleşik giriş kutuları
 
 > [!IMPORTANT]
 > Birleşik giriş kutuları açılır listeleri benzerdir, ancak bir düzenlenebilir metin bölge içerir. Açılan bir düzenlenebilir metin bölge içermiyorsa için renk belirteçlerini kullanmak [aşağı açılan listeler çubuğu komutu](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
@@ -1307,7 +1305,7 @@ Komut çubuğu grubu ilgili komut çubuğu denetimleri kümesini oluşur ve herh
 
 **Komut çubuğu açılır düğmesi: varsayılan durumu**  
 
-![Birleşik giriş kutusu açılan &#45; Aşağı düğmesi](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Komut çubuğu açılır düğmesi
+![Birleşik giriş kutusu açılan&#45;düğmesini basılı](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Komut çubuğu açılır düğmesi
 
 | Öğe | Belirteç adını: Category.color |
 | --- | --- |
@@ -1414,7 +1412,7 @@ Komut çubuğu grubu ilgili komut çubuğu denetimleri kümesini oluşur ve herh
 | Arka Plan | Yok. |
 | Ön plan (karakter) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a>Komut çubuğu aşağı açılan listeler
+####  <a name="BKMK_CommandDropDown"></a> Komut çubuğu aşağı açılan listeler
 
 > [!IMPORTANT]
 >  Aşağı açılan listeler birleşik giriş kutuları benzerdir, ancak düzenlenebilir metin bölgeler eksik. Düzenlenebilir metin bölge, açılan içeriyorsa, renk belirteçleri kullanmanız [birleşik giriş kutuları çubuğu komutu](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
@@ -1489,7 +1487,7 @@ Komut çubuğu grubu ilgili komut çubuğu denetimleri kümesini oluşur ve herh
 
  **Komut çubuğu aşağı açılan seçimi alanını: durumu basılı**  
 
-![Açılan &#45; tuşunu basılı seçimi alanını](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Komut aşağı açılan seçimi alanını basılı
+![Bırakma&#45;tuşunu basılı seçimi alanını](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Komut aşağı açılan seçimi alanını basılı
 
 | Öğe | Belirteç adını: Category.color |
 | --- | --- |

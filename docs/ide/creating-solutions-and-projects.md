@@ -1,12 +1,9 @@
 ---
-title: "Visual Studio'da çözümler ve projeler oluşturma | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'da çözümler ve projeler oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4bb984c1a6947438df663e228bb21bda4eea763c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-solutions-and-projects"></a>Çözümler ve projeler oluşturma
 
@@ -32,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 ![Çözüm/proje hiyerarşisi](./media/vside-proj-soln.png)
 
-Çözümler ve projeler adlı bir araç penceresinde görüntüleyebilirsiniz **Çözüm Gezgini**. Aşağıdaki ekran görüntüsünde iki proje içeren bulunan Çözüm Gezgini'nde (UWP BikeSharing.Xamarin) örnek bir çözüm gösterilmektedir: BikeSharing.Clients.Core ve BikeSharing.Clients.Windows. Her proje birden çok dosyaları, klasörleri ve başvurular içerir. Kalın yazı tipiyle proje adı *başlangıç projesi*; diğer bir deyişle, uygulamayı çalıştırdığınızda başlayan projesi. Başlangıç projesi projedir belirtebilirsiniz.
+Çözümler ve projeler adlı bir araç penceresinde görüntüleyebilirsiniz **Çözüm Gezgini**. Aşağıdaki ekran görüntüsünde bir örnek bir çözüm gösterilmektedir **Çözüm Gezgini** (**BikeSharing.Xamarin UWP**) iki proje içerir: **BikeSharing.Clients.Core** ve **BikeSharing.Clients.Windows**. Her proje birden çok dosyaları, klasörleri ve başvurular içerir. Kalın yazı tipiyle proje adı *başlangıç projesi*; diğer bir deyişle, uygulamayı çalıştırdığınızda başlayan projesi. Başlangıç projesi projedir belirtebilirsiniz.
 
 ![Çözüm Gezgini projeleri](./media/vside-solution-explorer-projects.png)
 
@@ -45,7 +42,7 @@ Başka bir deyişle, çözümler ve projeler Visual Studio'daki uygulamaları ge
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Bir proje şablonu bir proje oluşturmak için
 
-1. Visual Studio'da yeni bir proje oluşturmak için birden çok yolu vardır. Başlangıç sayfasında, bir proje şablonu adını **arama proje şablonları** kutusunda ya da seçin **yeni proje oluştur** açmak için bağlantı **yeni proje** iletişim kutusu. Ayrıca seçebilirsiniz **dosya** > **yeni** > **proje...**  menüsünde çubuğunu ya da seçin **yeni proje** araç çubuğunda.
+1. Visual Studio'da yeni bir proje oluşturmak için birden çok yolu vardır. Üzerinde **başlangıç sayfası**, bir proje şablonu adını girin **arama proje şablonları** kutusunda ya da seçin **yeni proje oluştur** açmak için bağlantı **yeni Proje** iletişim kutusu. Ayrıca seçebilirsiniz **dosya** > **yeni** > **proje...**  menüsünde çubuğunu ya da seçin **yeni proje** araç çubuğunda.
 
   ![Başlangıç sayfası](./media/vside-newproject1.png)
 
@@ -68,7 +65,7 @@ Başka bir deyişle, çözümler ve projeler Visual Studio'daki uygulamaları ge
 
 1. Seçin **Tamam** çözüm ve proje oluşturmak için düğmesi.
 
-1. Ek bir proje çözüme eklemek istiyorsanız, Çözüm Gezgini'nde çözüm düğümünü seçin ve menü çubuğunda, ardından **proje** > **Yeni Öğe Ekle**.
+1. Ek bir proje çözüme eklemek istiyorsanız, çözüm düğümünde seçin **Çözüm Gezgini**ve ardından menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Varolan kod dosyalarından proje oluşturma
 
@@ -122,10 +119,10 @@ Geçici bir proje oluşturmak için ilk Git **Araçları** > **seçenekleri** > 
 
 ## <a name="delete-a-solution-project-or-item"></a>Çözüm, proje veya öğesini sil
 
-Çözümler ve içeriklerini kalıcı olarak silebilir ancak Visual Studio IDE kullanarak değil. Visual Studio içindeki öğeleri silme yalnızca bunları geçerli çözüme ya da projeye kaldırır. Bir çözüm ya da başka bir bileşeni, sistemden kalıcı olarak silmek mi .sln ve .suo çözüm dosyalarını içeren klasörü silmek için dosya Gezgini'ni kullanın. Ancak, bir çözümü kalıcı olarak silmeden önce yeniden gerektiğinde tüm projeleri veya dosyaları yedekle önerilir.
+Çözümler ve içeriklerini kalıcı olarak silebilir ancak Visual Studio IDE kullanarak değil. Visual Studio içindeki öğeleri silme yalnızca bunları geçerli çözüme ya da projeye kaldırır. Bir çözüm ya da başka bir bileşeni, sistemden kalıcı olarak silmek mi içeren klasörü silmek için dosya Gezgini'ni kullanın *.sln* ve *.suo* çözüm dosyaları. Ancak, bir çözümü kalıcı olarak silmeden önce yeniden gerektiğinde tüm projeleri veya dosyaları yedekle önerilir.
 
 > [!NOTE]
-> .Suo dosyanın varsayılan dosya Gezgini ayarlar altında görüntülenmeyen gizli bir dosyadır. Gizli dosyaları göstermek için **Görünüm** menüsünde dosya Gezgini'nde, select **gizli öğeleri** onay kutusu.
+> *.Suo* varsayılan dosya Gezgini ayarlar altında görüntülenmeyen gizli bir dosya bir dosyadır. Gizli dosyaları göstermek için **Görünüm** menüsünde dosya Gezgini'nde, select **gizli öğeleri** onay kutusu.
 
 ### <a name="to-permanently-delete-a-solution"></a>Bir çözümü kalıcı olarak silmek için
 

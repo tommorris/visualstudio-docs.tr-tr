@@ -1,30 +1,26 @@
 ---
-title: "Sınıf tasarımcısında Visual C++ Typedefs | Microsoft Docs"
-ms.custom: 
+title: Sınıf tasarımcısında Visual C++ Typedefs | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.typedef
 - vs.classdesigner.aliasofline
 helpviewer_keywords:
 - Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96d7e8cee6ce024040184aca50b5f5cb6facf388
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 91bd88938a093f18ea4f83a41de0972daa35bf6c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Sınıf Tasarımcısında Visual C++ Typedefs
 TypeDef deyimleri yöneltme bir ad ve temel alınan türü arasında bir veya daha fazla katmanı oluşturun. Sınıf Tasarımcısı anahtar sözcüğüyle bildirilen C++ typedef türlerini destekler `typedef`, örneğin:  
@@ -143,7 +139,7 @@ typedef
   
 örneği  
   
-`MyB`bir iç içe geçmiş typedef şekli olur.  
+`MyB` bir iç içe geçmiş typedef şekli olur.  
   
 `#include <vector>`  
   
@@ -155,7 +151,7 @@ typedef
   
 `typedef vector<int> MyIntVect;`  
   
-`vector<T>`Sınıfı  
+`vector<T>`sınıfı  
   
 `MyIntVect : vector<int>`  
   
@@ -171,7 +167,7 @@ typedef
   
 typedef  
   
--> B  
+B -&GT;  
   
 `B`  
   
@@ -179,7 +175,7 @@ typedef
   
 örneği  
   
--> MyB  
+MyB ->  
   
 Sınıf Tasarımcısı bir bağlam menüsü komutu kullanarak bu tür bir ilişki görüntüleme desteklemez.  
   
@@ -201,7 +197,7 @@ typedef
   
 örneği  
   
--> MyIntVect  
+MyIntVect ->  
   
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,26 +1,24 @@
 ---
-title: "Örnek Yereller uygulaması | Microsoft Docs"
-ms.custom: 
+title: Örnek Yereller uygulaması | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], local variables
 - expression evaluation, local variables
 ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3e8157d6ecede516ca1dcb2900cf081c11a2b790
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 56ac92989abe929884ac029e3b9c9c7dafad5fd9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-implementation-of-locals"></a>Yerel öğeler için örnek uygulama
 > [!IMPORTANT]
@@ -30,17 +28,17 @@ ms.lasthandoff: 12/22/2017
   
 1.  Visual Studio hata ayıklama altyapısının (DE) çağırır [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) almak için bir [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) yerel öğeler de dahil olmak üzere yığın çerçevesi tüm özelliklerini temsil eden nesne.  
   
-2.  `IDebugStackFrame2::GetDebugProperty`çağrıları [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) kesme içinde gerçekleştiği yöntemi açıklayan bir nesne elde edilir. Sembol sağlayıcısının DE sağladığı ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), adres ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) ve bir bağlayıcı ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
+2.  `IDebugStackFrame2::GetDebugProperty` çağrıları [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) kesme içinde gerçekleştiği yöntemi açıklayan bir nesne elde edilir. Sembol sağlayıcısının DE sağladığı ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), adres ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) ve bir bağlayıcı ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
   
-3.  `IDebugExpressionEvaluator::GetMethodProperty`çağrıları [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) ile sağlanan `IDebugAddress` nesnesi bir [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) belirtilen adresi içeren yöntemi temsil eden.  
+3.  `IDebugExpressionEvaluator::GetMethodProperty` çağrıları [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) ile sağlanan `IDebugAddress` nesnesi bir [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) belirtilen adresi içeren yöntemi temsil eden.  
   
 4.  `IDebugContainerField` Arabirimi için sorgulanan [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) arabirimi. Bu yöntemin Yereller erişim sağlayan bu arabirimidir.  
   
-5.  `IDebugExpressionEvaluator::GetMethodProperty`bir sınıf oluşturur (adlı `CFieldProperty` örnekteki) uygulayan `IDebugProperty2` yöntemin Yereller temsil etmek için arabirim. `IDebugMethodField` Nesne bu yerleştirilir `CFieldProperty` ile birlikte nesne `IDebugSymbolProvider`, `IDebugAddress` ve `IDebugBinder` nesneleri.  
+5.  `IDebugExpressionEvaluator::GetMethodProperty` bir sınıf oluşturur (adlı `CFieldProperty` örnekteki) uygulayan `IDebugProperty2` yöntemin Yereller temsil etmek için arabirim. `IDebugMethodField` Nesne bu yerleştirilir `CFieldProperty` ile birlikte nesne `IDebugSymbolProvider`, `IDebugAddress` ve `IDebugBinder` nesneleri.  
   
 6.  Zaman `CFieldProperty` nesne başlatılır, [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) üzerinde adlı `IDebugMethodField` elde etmek için nesne bir [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) yöntemi görüntülenebilecek tüm bilgileri içeren yapısı .  
   
-7.  `IDebugExpressionEvaluator::GetMethodProperty`döndürür `CFieldProperty` nesnesinin bir `IDebugProperty2` nesnesi.  
+7.  `IDebugExpressionEvaluator::GetMethodProperty` döndürür `CFieldProperty` nesnesinin bir `IDebugProperty2` nesnesi.  
   
 8.  Visual Studio çağrıları [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) döndürülen üzerinde `IDebugProperty2` filtre nesnesiyle `guidFilterLocalsPlusArgs`. Bu döndürür bir [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) yöntemin Yereller içeren nesne. Bu numaralandırma çağrıları tarafından doldurulur [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) ve [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).  
   

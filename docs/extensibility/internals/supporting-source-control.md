@@ -1,30 +1,26 @@
 ---
 title: Kaynak denetimi destekleyen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5dd2a98ec84b656dc70a00236775710266c54ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9ae3590a5d02c2b3f1d4b67f724d0177f671f7d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supporting-source-control"></a>Kaynak denetimi destekleme
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Dosya kullanıma, iadeler ve diğer kaynak denetimi işlemleri proje veya Düzenleyicisi'ni destekler. Kaynak Denetim istemcisi olarak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bir kaynak denetimi paketiyle gibi etkileşim kuracak şekilde tasarlanmıştır [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], arşivleme, sürüm ve dosyaları dinamik olarak tanımlanan bir dizi denetim tesislerinde sağlar.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Dosya kullanıma, iadeler ve diğer kaynak denetimi işlemleri proje veya Düzenleyicisi'ni destekler. Kaynak Denetim istemcisi olarak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bir kaynak denetimi paketiyle gibi etkileşim kuracak şekilde tasarlanmıştır [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], arşivleme, sürüm ve dosyaları dinamik olarak tanımlanan bir dizi denetim tesislerinde sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Kaynak Denetimi Paketleri için Model](../../extensibility/internals/model-for-source-control-packages.md)  

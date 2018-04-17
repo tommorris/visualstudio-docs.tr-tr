@@ -1,26 +1,24 @@
 ---
-title: "Proje derleme için yapılandırma | Microsoft Docs"
-ms.custom: 
+title: Proje derleme için yapılandırma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2d8f37068d197d133ba8798703c8f82093261aca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4d78ac1cabc356db162639d3eb19d0bff71e295e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-configuration-for-building"></a>Proje yapılandırması oluşturmak için
 Belirli bir çözüm için çözüm yapılandırmaları listesi çözüm yapılandırmaları iletişim kutusu tarafından yönetilir.  
@@ -51,9 +49,9 @@ Proje bağımlılıkları
 > [!NOTE]
 >  Seçili onay kutularını ancak soluk görünür Projeler listesinde tarafından belirtilen belirli bağımlılıkları nedeniyle ortamı tarafından eklenmiştir <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> arabirimleri ve değiştirilemez. Örneğin, bir proje başvuru ekleme bir [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] başka bir projeye projesine başvuru silerek yalnızca kaldırılabilir bir derleme bağımlılığına otomatik olarak ekler. Bunun yapılması bir bağımlılık döngüsünün oluşturabileceğinden, onay kutularını temizleyin ve soluk görünür projeleri seçilemez (örneğin, Project1 Project2 bağımlı olacaktır ve Project2 Project1 bağımlı olur), hangi derleme kabin.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Yapı işlemleri tipik derleme ve tek bir derleme komutla çağrılan bağlantı işlemlerini içerir. Diğer iki yapı işlemler de desteklenebilir: önceki yapıdan ve çıktı öğeyi yapılandırmasında değişip değişmediğini belirlemek için güncel bir onay tüm çıktı öğeleri silmek için temizleme işlemi.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Yapı işlemleri tipik derleme ve tek bir derleme komutla çağrılan bağlantı işlemlerini içerir. Diğer iki yapı işlemler de desteklenebilir: önceki yapıdan ve çıktı öğeyi yapılandırmasında değişip değişmediğini belirlemek için güncel bir onay tüm çıktı öğeleri silmek için temizleme işlemi.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>nesneler döndürmeye karşılık gelen <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (döndürülen <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) derleme süreçlerinin yönetmek için. Yapılandırmalar, gerçekleştirildiği sırada bir yapı işlemin durumunu bildirmek için çağrı yapmak <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, arayüz ortamı tarafından uygulanan ve herhangi bir nesnenin yapı durum olayları ilgileniyor.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> nesneler döndürmeye karşılık gelen <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (döndürülen <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) derleme süreçlerinin yönetmek için. Yapılandırmalar, gerçekleştirildiği sırada bir yapı işlemin durumunu bildirmek için çağrı yapmak <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, arayüz ortamı tarafından uygulanan ve herhangi bir nesnenin yapı durum olayları ilgileniyor.  
   
  Bir kez oluşturulduktan sonra yapılandırma ayarlarını hata ayıklayıcı denetiminde çalıştırılabilir olup olmadığını belirlemek için kullanılabilir. Yapılandırmalar uygulamanız <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> hata ayıklamayı desteklemek için.  
   

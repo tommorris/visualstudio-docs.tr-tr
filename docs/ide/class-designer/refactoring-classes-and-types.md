@@ -1,13 +1,10 @@
 ---
-title: "Sınıfları ve türleri (Sınıf Tasarımcısı) yeniden düzenlemesi | Microsoft Docs"
-ms.custom: 
+title: Sınıfları ve türleri (Sınıf Tasarımcısı) yeniden düzenlemesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
 helpviewer_keywords:
@@ -20,17 +17,16 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], refactoring classes
 - refactoring, classes
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bdf6237fdbfb6e15df0d58835c260252cd8efdb
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d9f84c0b6fe661b480f13f03221360c8f7bc6583
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Sınıfları ve Türleri Yeniden Düzenleme (Sınıf Tasarımcısı)
 
@@ -47,7 +43,7 @@ Kodu yeniden düzenleyin, daha kolay anlamak, bakımını yapmak ve iç yapısı
 |**Arabirimleri ile çalışma:** Sınıf Tasarımcısı'nda, uygulayabilirsiniz arabirim sınıf diyagramında arabirim yöntemleri için kod sağlayan bir sınıf bağlanarak.|-   [Nasıl yapılır: bir arabirim](how-to-implement-an-interface.md)|  
 |**Türleri, tür üyeleri ve parametreleri yeniden düzenleme:** Sınıf Tasarımcısı kullanarak yapabilir türleri yeniden adlandırmak, tür üyeleri geçersiz kılma veya bir türden diğerine taşıyabilirsiniz. Boş değer atanabilir türler de oluşturabilirsiniz.|-   [Yeniden adlandırma türleri ve tür üyeleri](refactoring-classes-and-types.md#RenamingTypesAndMembers)<br />-   [Tür üyeleri bir türden diğerine taşıma](refactoring-classes-and-types.md#MovingTypeMembers)<br />-   [Nasıl yapılır: boş değer atanabilir tür oluşturma](how-to-create-a-nullable-type.md)|  
   
-###  <a name="RenamingTypesAndMembers"></a>Yeniden adlandırma türleri ve tür üyeleri  
+###  <a name="RenamingTypesAndMembers"></a> Yeniden adlandırma türleri ve tür üyeleri  
 Sınıf Tasarımcısı'nda bir tür veya üye türü sınıf diyagramında veya özellikleri penceresinde adlandırabilirsiniz. Sınıf Ayrıntıları penceresinde üyesi ancak bir tür adını değiştirebilirsiniz. Bir tür veya tür üyesi yeniden adlandırma, tüm windows ve burada eski adı görünen kodu konumları yayar.  
   
 ##### <a name="to-rename-a-name-in-the-class-designer"></a>Sınıf Tasarımcısı'nda bir ad yeniden adlandırmak için  
@@ -81,7 +77,7 @@ Sınıf Tasarımcısı'nda bir tür veya üye türü sınıf diyagramında veya 
   
      Yeni bir ad, tüm windows ve burada eski adı görünen kodu konumları geçerli projedeki yayar.  
   
-###  <a name="MovingTypeMembers"></a>Tür üyeleri bir türden diğerine taşıma  
+###  <a name="MovingTypeMembers"></a> Tür üyeleri bir türden diğerine taşıma  
 Kullanarak **Sınıf Tasarımcısı**, her ikisi de geçerli sınıf diyagramında görünür durumdaysa başka bir tür için bir tür üyesi bir türden diğerine taşıyabilirsiniz.  
   
 ##### <a name="to-move-a-type-member-from-one-type-to-another"></a>Bir tür üyesi bir türden diğerine taşımak için  

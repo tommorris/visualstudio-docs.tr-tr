@@ -1,26 +1,24 @@
 ---
-title: "İlgili hizmet ve arabirimi (kaynak denetimi VSPackage) | Microsoft Docs"
-ms.custom: 
+title: İlgili hizmet ve arabirimi (kaynak denetimi VSPackage) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7d19c7e2560fafbf54257bf4c46303874bfc717b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1f9e8e90fdda61524a9af107df452bc2b13cd90c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>İlgili hizmet ve arabirimi (kaynak denetimi VSPackage)
 Bu bölümde tüm Kaynak Denetim VSPackage ilgili arabirimlerde listeler [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Kaynak denetimi VSPackage bazı bu arabirimlerini uygular ve diğerleri kaynak denetimi görevlerini gerçekleştirmek için kullanır.  

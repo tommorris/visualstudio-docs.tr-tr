@@ -1,26 +1,24 @@
 ---
-title: "Visual Studio'da hiyerarşileri | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'da hiyerarşileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - hierarchies, Visual Studio IDE
 - IDE, hierarchies
 ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e4b0bc2e7c60a4b474f54fd32fd522712326c157
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8d1f018b9cc48d059761a26721c808024f60bb3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio'da hiyerarşileri
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE) görüntüleyen bir proje olarak bir *hiyerarşi*. IDE içinde bir hiyerarşi, her düğümün sahip olduğu ilişkili özellikler kümesi düğümlerinin ağacıdır. A *proje hiyerarşi* projenin öğeleri, öğeleri ilişkileri ve öğeleri ilişkili özellikler ve komutlar tutan bir kapsayıcıdır.  

@@ -1,30 +1,26 @@
 ---
-title: "SupportsMasterPage öğesi (Visual Studio şablonları) | Microsoft Docs"
-ms.custom: 
+title: SupportsMasterPage öğesi (Visual Studio şablonları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage
 helpviewer_keywords:
 - <SupportsMasterPage> element [Visual Studio Templates]
 - SupportsMasterPage element [Visual Studio Templates]
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 347a41c604913b21c5718642bc87c4cfa54ecfb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 94d7db9c00e75b255f5cfe1486b45a5d9460faac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage Öğesi (Visual Studio Şablonları)
 Belirtir ya da olmasın olup olmadığını **ana sayfa seçin** onay kutusunu etkin **Yeni Öğe Ekle** iletişim kutusu.  
@@ -60,7 +56,7 @@ Belirtir ya da olmasın olup olmadığını **ana sayfa seçin** onay kutusunu e
  Metin ya da olmalıdır `true` veya `false`, belirten desteklemediğini **ana sayfa seçin** onay kutusunu etkin **Yeni Öğe Ekle** iletişim kutusu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `SupportsMasterPage`İsteğe bağlı bir öğedir. Varsayılan değer `false` şeklindedir.  
+ `SupportsMasterPage` İsteğe bağlı bir öğedir. Varsayılan değer `false` şeklindedir.  
   
  `SupportsMasterPage` Öğesidir yalnızca Web öğe şablonları için kullanılabilir.  
   

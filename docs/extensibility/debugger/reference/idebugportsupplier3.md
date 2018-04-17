@@ -1,29 +1,25 @@
 ---
 title: IDebugPortSupplier3 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier3
 helpviewer_keywords:
 - IDebugPortSupplier3 interface
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0e1c5c252e0674ee3de8371080e298f42de2112
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d5a35e212c98d6e62b667c4305d8ae4874feb3aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Bu arabirim, çağıran bir bağlantı noktası Tedarikçi ve bağlantı noktaları (bunları diske yazarak) hata ayıklayıcı çağırmaları arasında korumak korunan Bu bağlantı noktalarının bir listesini alma belirlemek verir.  

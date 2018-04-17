@@ -1,27 +1,23 @@
 ---
-title: "Derleme olaylarını Visual Studio'da özel belirtme | Microsoft Docs"
-ms.custom: 
+title: Derleme olaylarını Visual Studio'da özel belirtme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede663f1053f6a3261de542b31b73fc9c8a10bb8
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 68068a88744484e0f9d1849a430a32fd3f4c1899
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Visual Studio'da Özel Derleme Olayları Belirtme
 Özel derleme olay belirterek, otomatik olarak komutları bir yapı başlamadan önce ya da sona erdikten sonra çalıştırabilirsiniz. Örneğin, .bat dosyası derleme önce başlar çalıştırmak veya yapı tamamlandıktan sonra yeni dosyaları bir klasöre kopyalayın. Yalnızca derleme derleme işlemindeki bu noktalarına başarıyla ulaşırsa derleme olaylarını çalıştırın.  
@@ -41,9 +37,9 @@ ms.lasthandoff: 01/29/2018
   
 -   Ekleme bir `call` tüm olayları, oluşturmadan önce deyimi .bat dosyaları çalıştırın.  
   
-     Örnek:`call C:\MyFile.bat`  
+     Örnek: `call C:\MyFile.bat`  
   
-     Örnek:`call C:\MyFile.bat call C:\MyFile2.bat`  
+     Örnek: `call C:\MyFile.bat call C:\MyFile2.bat`  
   
 -   Dosya yolları tırnak işaretleri içine alın.  
   
@@ -56,7 +52,7 @@ ms.lasthandoff: 01/29/2018
      Örnek: `for %I in (*.txt *.doc *.html) do copy %I c:\` *mydirectory*`\`  
   
     > [!NOTE]
-    >  `%I`Yukarıdaki kod olmalıdır `%%I` toplu komut.  
+    >  `%I` Yukarıdaki kod olmalıdır `%%I` toplu komut.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)   

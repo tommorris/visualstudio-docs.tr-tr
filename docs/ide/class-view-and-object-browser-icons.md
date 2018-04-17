@@ -2,12 +2,9 @@
 title: Sınıf Görünümü ve Nesne Tarayıcısı simgeleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - icons, in Object Browser
 - signal icons
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - Object Browser, icons in Class View
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0a4371ae086e158f3fd7025e9867ffb99c92090
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 4893b38ceed7709f6b306b0cb84da47f205c911f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="class-view-and-object-browser-icons"></a>Sınıf Görünümü ve Nesne Tarayıcısı simgeleri
 
@@ -37,14 +34,14 @@ ms.lasthandoff: 03/28/2018
 |![Namespace simgesi](../ide/media/vxnamespace_icon.gif "vxNamespace_Icon")|Ad Alanı|![Bildirim sembolü](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Yöntem veya işlevi|
 |![Simge sınıf](../ide/media/vxclass_icon.gif "vxClass_Icon")|örneği|![İşleç simgesi](../ide/media/vxoperator_icon.gif "vxOperator_Icon")|İşleç|  
 |![Lolipop arabirimi sembolü](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|Arabirim|![Özellik simgesi](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|Özellik|
-|![Yapı simgesi](../ide/media/vxstruct_icon.gif "vxStruct_Icon")|Yapı|![Field Icon](../ide/media/vxfield_icon.gif "vxField_Icon")|Alan veya değişken|  
-|![Union Symbol](../ide/media/vxunion_icon.gif "vxUnion_Icon")|UNION|![Olay simgesi](../ide/media/vxevent_icon.gif "vxEvent_Icon")|Olay|  
-|![Numaralandırma simgesi](../ide/media/vxenum_icon.gif "vxEnum_Icon")|Enum|![Constant Icon](../ide/media/vxconstant_icon.gif "vxConstant_Icon")|Sabit|  
+|![Yapı simgesi](../ide/media/vxstruct_icon.gif "vxStruct_Icon")|Yapı|![Alan simgesi](../ide/media/vxfield_icon.gif "vxField_Icon")|Alan veya değişken|  
+|![Birleşim simgesi](../ide/media/vxunion_icon.gif "vxUnion_Icon")|UNION|![Olay simgesi](../ide/media/vxevent_icon.gif "vxEvent_Icon")|Olay|  
+|![Numaralandırma simgesi](../ide/media/vxenum_icon.gif "vxEnum_Icon")|Enum|![Sabit simgesi](../ide/media/vxconstant_icon.gif "vxConstant_Icon")|Sabit|  
 |![Tür tanımı simgesi](../ide/media/vxtypedef_icon.gif "vxTypeDef_Icon")|TypeDef|![Öğe numaralandırma sembolü](../ide/media/vxenumitem_icon.gif "vxEnumItem_Icon")|Enum öğesi|  
-|![Visual Studio Module Symbol](../ide/media/vxmodule_icon.gif "vxModule_Icon")|Modül|![Eşleme öğesi sembolü](../ide/media/vxmapitem_icon.gif "vxMapItem_Icon")|Harita öğesi|  
+|![Visual Studio modülü simgesi](../ide/media/vxmodule_icon.gif "vxModule_Icon")|Modül|![Eşleme öğesi sembolü](../ide/media/vxmapitem_icon.gif "vxMapItem_Icon")|Harita öğesi|  
 |![Uzantı yöntemi simgesi](../ide/media/extensionmethod.gif "ExtensionMethod")|Genişletme yöntemi|![Bildirim sembolü](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Dış bildirimi|  
 |![Sembol temsilci](../ide/media/vxdelegate_icon.gif "vxDelegate_Icon")|Temsilci|![Sınıf Görünümü ve nesne tarayıcısı için hata simgesi](../ide/media/erroricon.gif "ErrorIcon")|Hata|  
-|![Exception Symbol](../ide/media/vxexception_icon.gif "vxException_Icon")|Özel Durum|![Şablon simgesi](../ide/media/vxtemplate_icon.gif "vxTemplate_Icon")|Şablon|  
+|![Özel durum simgesi](../ide/media/vxexception_icon.gif "vxException_Icon")|Özel Durum|![Şablon simgesi](../ide/media/vxtemplate_icon.gif "vxTemplate_Icon")|Şablon|  
 |![Eşleme Sembolü](../ide/media/vxmap_icon.gif "vxMap_Icon")|eşleme|![Hata ünlem işareti sembolü](../ide/media/vxerror_icon.gif "vxError_Icon")|Bilinmiyor|  
 |![Tür iletme simgesi](../ide/media/ob_type_forward.gif "ob_type_forward")|Tür iletme|||  
 

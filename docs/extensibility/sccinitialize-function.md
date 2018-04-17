@@ -1,29 +1,25 @@
 ---
-title: "SccInitialize işlevi | Microsoft Docs"
-ms.custom: 
+title: SccInitialize işlevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccInitialize
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bf217218dcc1830cc2acf2833aa7e31e85745d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1146573f3d969ffc5cd56576ba92faa4e6ffdce0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccinitialize-function"></a>SccInitialize işlevi
 Bu işlev, eklenti kaynak denetimi başlatır ve özellikleri ve sınırları tümleşik geliştirme ortamına (IDE) sağlar.  
@@ -85,7 +81,7 @@ SCCRTN SccInitialize (
   
  `lpCallerName` Ve `lpSccName` parametreleri IDE ve kaynak denetim eklentisi adları Exchange etkinleştirme. Bu adları, yalnızca birden çok örnekler arasında ayrım yapmak için kullanılan veya bunlar aslında menüleri ve iletişim kutularında görünebilir.  
   
- `lpAuxPathLabel` Parametredir çözüm dosyasında depolanır ve kaynak denetimi çağrıda eklenti geçirilen yardımcı proje yolu tanımlamak için bir açıklama olarak kullanılan bir dize [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]bir dizeyi kullanan "SourceSafe proje:"; diğer kaynak denetim eklentileri bu belirli dize kullanmamalıdır.  
+ `lpAuxPathLabel` Parametredir çözüm dosyasında depolanır ve kaynak denetimi çağrıda eklenti geçirilen yardımcı proje yolu tanımlamak için bir açıklama olarak kullanılan bir dize [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] bir dizeyi kullanan "SourceSafe proje:"; diğer kaynak denetim eklentileri bu belirli dize kullanmamalıdır.  
   
  `lpSccCaps` Parametresi verir kaynak denetimi eklenti eklentinin özelliklerini belirten bit işaretleri depolamak için bir yer. (Yetenek bit işaretleri tam bir listesi için bkz: [yetenek bayrakları](../extensibility/capability-flags.md)). Örneğin, eklenti özelliği ayarlardı sonuçları bir çağıran tarafından sağlanan geri çağırma işlevini yazmak için eklenti planları SCC_CAP_TEXTOUT bit durumunda. Bu sürüm denetimi sonuçları için bir pencere oluşturmak için IDE sinyal.  
   

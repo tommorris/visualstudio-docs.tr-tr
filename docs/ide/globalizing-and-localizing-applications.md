@@ -1,13 +1,10 @@
 ---
-title: "Uygulamaları Genelleştirme ve yerelleştirme | Microsoft Docs"
-ms.custom: 
+title: Uygulamaları Genelleştirme ve yerelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Visual Studio]
 - Visual Basic code, international applications
@@ -16,41 +13,39 @@ helpviewer_keywords:
 - world-ready applications
 - international applications [Visual Studio]
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c687a7513356a086a231a6b13a1f16112d7d5eea
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 7886b9dfa08882efd372c7c915a1fc2e444e8691
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="globalizing-and-localizing-applications"></a>Uygulamaları Genelleştirme ve Yerelleştirme
+# <a name="globalizing-and-localizing-applications"></a>Uygulamaları Genelleştirme ve yerelleştirme
 
 Uluslararası bir hedef kitle uygulamanıza dağıtmayı planlıyorsanız, tasarım ve geliştirme aşamaları sırasında birkaç şey aklınızda tutmanız gerekir. Bu tür planlarınız olmasa dahi çaba Önden şeyler önemli ölçüde planlarınızı gelecekte uygulamanızın sürümünü değiştirmelisiniz kolaylaştırabilir. Yerleşik Hizmetleri [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yönetilen geliştirme ile Visual Studio kullanarak farklı yerel ayarlara uyarlayabilirsiniz tek bir uygulama geliştirmek kolaylaştırır.  
   
- Visual Studio başından yerleşik Hizmetleri yararlanarak bir Uluslararası kitlesi kolay geliştirmeyi kolaylaştırmak için tasarlanmış [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Aşağıdaki sayfalarda Visual Studio'ya yerleşik uluslararası duruma getirme özellikleri dağıtır yardımcı olur.  
+ Visual Studio başından yerleşik Hizmetleri yararlanarak bir Uluslararası kitlesi kolay geliştirmeyi kolaylaştırmak için tasarlanmış [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Aşağıdaki makaleler, Visual Studio'ya yerleşik uluslararası duruma getirme özellikleri dağıtır yardımcı olur.  
   
-## <a name="in-this-section"></a>Bu Bölümde
 
- [.NET Framework Tabanlı Uluslararası Uygulamalara Giriş](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
+ [.NET Framework tabanlı Uluslararası uygulamalara giriş](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Visual Studio kullanarak bir Uluslararası pazar için yazılım geliştirme ile ilgili kavramları tanıtır ve [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
- [Uygulamaları Yerelleştirme](../ide/localizing-applications.md)  
+ [Uygulamaları yerelleştirme](../ide/localizing-applications.md)  
  Uygulamalar belirli bir kültür için özelleştirme hakkında sayfalar için bağlantılar sağlar.  
   
  [Uygulamaları Genelleştirme](../ide/globalizing-applications.md)  
  Birden çok kültürü destekleyen uygulamalar oluşturma hakkında daha fazla sayfalar için bağlantılar sağlar.  
   
-## <a name="related-sections"></a>İlgili Bölümler
+### <a name="see-also"></a>Ayrıca bkz.
   
- [Dünya Çapında Kullanılmaya Hazır Uygulamalar Geliştirmek için En İyi Yöntemler](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Dünya çapında kullanılmaya hazır uygulamalar geliştirmek için en iyi uygulamalar](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Uluslararası bir izleyici için programlama hakkında arka plan bilgileri sağlar.  
   
- [Sınıf Kitaplığına Genel Bakış](/dotnet/standard/class-library-overview)  
+ [Sınıf kitaplığına genel bakış](/dotnet/standard/class-library-overview)  
  Sınıflar, arabirimler ve hızlandırmak ve geliştirme sürecinin en iyi duruma getirme ve sistem işlevlere erişim sağlayan değer türleri tanıtır.  
   
  <xref:System.Globalization>  

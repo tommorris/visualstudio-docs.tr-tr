@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: radyo düğmelerini kullanarak belgede grafik güncelleme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: radyo düğmelerini kullanarak belgede grafik güncelleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], updating documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1f1340c3e67ca0647448228fb2414fa4ba7d4003
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 60daf98d02c358e3a288a7dbb6a8a02df3a1258f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-updating-a-chart-in-a-document-using-radio-buttons"></a>İzlenecek Yol: Radyo Düğmelerini Kullanarak Belgede Grafik Güncelleme
   Bu anlatımda radyo düğmeleri Microsoft Office Word için belge düzeyi özelleştirmelerinde kullanıcıların belgede grafik türlerini seçmek için seçenek sunmak amacıyla nasıl kullanılacağı gösterilir.  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]veya [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] veya [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
 ## <a name="creating-the-project"></a>Projeyi Oluşturma  
  İlk adım bir Word belgesi proje oluşturmaktır.  

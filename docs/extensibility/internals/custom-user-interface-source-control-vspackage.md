@@ -1,26 +1,24 @@
 ---
-title: "Özel kullanıcı arabirimi (kaynak denetimi VSPackage) | Microsoft Docs"
-ms.custom: 
+title: Özel kullanıcı arabirimi (kaynak denetimi VSPackage) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3d3c223b45d0228781779a73f057ef3518374344
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ebd2361e94e9b1430f5bac99f2e71dc53a02ebf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Özel kullanıcı arabirimi (kaynak denetimi VSPackage)
 Bir VSPackage Visual Studio komut tablosu (.vsct) dosyası aracılığıyla kendi menü öğelerini ve varsayılan durumlarını bildirir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE) VSPackage yüklenene kadar bu menü öğelerini varsayılan durumlarını görüntüler. Sonuç olarak, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> yöntemi etkinleştirmek veya menü öğelerini devre dışı bırakmak için çağrılır.  
@@ -49,7 +47,7 @@ Bir VSPackage Visual Studio komut tablosu (.vsct) dosyası aracılığıyla kend
   
  Gerekli <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, ve ayrıca kaynak denetimi ile ilişkilendirilmiş tüm isteğe bağlı arabirimler çağrılmaz VSPackage kaynak denetimi devre dışı olduğunda.  
   
- Zaman [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE başlar, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] komutu UI bağlamı için geçerli varsayılan kaynak denetimi VSPackage kimliği Kimliğini ayarlar Bu, etkin kaynak denetimi VSPackage yüklemeden IDE içinde görünmesi VSPackage statik UI neden olur. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]duraklatır ile kaydetmek VSPackage için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aracılığıyla <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> önce VSPackage yapılan her çağrı yapar.  
+ Zaman [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE başlar, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] komutu UI bağlamı için geçerli varsayılan kaynak denetimi VSPackage kimliği Kimliğini ayarlar Bu, etkin kaynak denetimi VSPackage yüklemeden IDE içinde görünmesi VSPackage statik UI neden olur. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] duraklatır ile kaydetmek VSPackage için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aracılığıyla <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> önce VSPackage yapılan her çağrı yapar.  
   
  Aşağıdaki tabloda belirli ayrıntılar hakkında nasıl açıklanmaktadır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE farklı kullanıcı Arabirimi öğeleri gizler.  
   

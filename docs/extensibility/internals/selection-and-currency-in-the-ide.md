@@ -1,28 +1,26 @@
 ---
-title: "Seçimi ve IDE içinde para birimini | Microsoft Docs"
-ms.custom: 
+title: Seçimi ve IDE içinde para birimini | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - currency, Visual Studio IDE
 - IDE, selection
 - selection, Visual Studio IDE
 - IDE, currency
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e46c18f424130a29085aaccad19328c9f86682f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf8c58cb08f82b10970424600843b0fedcf477fc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Seçim ve IDE içinde para birimi
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE) tutar kullanıcıların hakkında bilgi seçili nesneler seçimi kullanarak *bağlamı*. Seçim bağlamla VSPackages iki yolla izleme para yer alabilir:  
@@ -38,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 |-------------|-----------------|  
 |Geçerli hiyerarşi|Geçerli projenin genellikle; NULL geçerli hiyerarşi bir bütün olarak çözüm geçerli olduğunu gösterir.|  
 |Geçerli öğe kimliği|Seçili öğenin geçerli hiyerarşi içinde; bir proje penceresinde birden çok seçimin olduğunda, birden çok geçerli öğe olabilir.|  
-|Geçerli`SelectionContainer`|Özellikler penceresini Özellikler'e görüntülemesi gereken bir veya daha fazla nesneleri tutar.|  
+|Geçerli `SelectionContainer`|Özellikler penceresini Özellikler'e görüntülemesi gereken bir veya daha fazla nesneleri tutar.|  
   
  Ayrıca, ortamın genel listelerini tutar:  
   

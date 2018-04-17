@@ -1,32 +1,30 @@
 ---
 title: Proje Subtypes | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 21d7f013989607f7f5416a57829bc9b2b29b61d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e91a16ad11f7089230138919519922d58f3cc472
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-subtypes"></a>Proje alt türleri
 Proje subtypes özelleştirme veya proje sistemleri davranış flavor izin [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Özelleştirmeleri içeren proje dosyasında ekleme veya öğeleri filtreleme ek verileri kaydetme **Yeni Öğe Ekle** iletişim kutusu, derlemeler nasıl hata ayıklaması ve dağıtılan, denetleme ve projeyi genişletme **özelliği Sayfaları** iletişim kutusu. VSPackages proje alt türleri COM birleştirme kullanarak uygular.  
   
 > [!NOTE]
->  Visual C++ proje sistemi proje alt türleri desteklemez. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]kendi SQL Server ve akıllı aygıt projeleri uygulamak için proje subtypes kullanır.  
+>  Visual C++ proje sistemi proje alt türleri desteklemez. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kendi SQL Server ve akıllı aygıt projeleri uygulamak için proje subtypes kullanır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Proje Alt Türleri Tasarımı](../../extensibility/internals/project-subtypes-design.md)  

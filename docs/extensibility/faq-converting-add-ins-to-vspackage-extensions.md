@@ -1,23 +1,21 @@
 ---
-title: "Sık sorulan sorular: Eklentiler VSPackage Uzantıları dönüştürme | Microsoft Docs"
-ms.custom: 
+title: 'Sık sorulan sorular: Eklentiler VSPackage Uzantıları dönüştürme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 43376b304637ffe59d443ee82350d5492133db2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: daec495ee71bf27bc40174b74cd95a6df47c247f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>SSS: Eklentileri VSPackage Uzantılarına Dönüştürme
 Eklentiler artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio uzantısı yapmak için bir VSIX uzantısı oluşturmanız gerekir. Burada, VSIX uzantısı için bir Visual Studio eklentisi dönüştürmek hakkında sık sorulan bazı sorular için yanıtlar bulunmaktadır.  
@@ -41,7 +39,7 @@ Eklentiler artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio u
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Eklenti proje VSIX projeye dönüştürebilir miyim?  
  VSIX projelerinde kullanılan mekanizmaları eklenti projelerinde olanlarla aynı olmadığından bir eklenti projesi doğrudan bir VSIX proje dönüştürülemiyor. VSIX proje şablonu yanı sıra, doğru proje öğesi şablonları görece kolay hale getirmek ve bir VSIX uzantısı olarak çalışan kolaylaştırır kodu çok vardır.  
   
-##  <a name="BKMK_StartDeveloping"></a>VSIX Uzantıları Geliştirme nasıl başlamanız gerekir?  
+##  <a name="BKMK_StartDeveloping"></a> VSIX Uzantıları Geliştirme nasıl başlamanız gerekir?  
  Menü komutu sahip bir VSIX nasıl yaptığınız aşağıda verilmiştir:  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Menü komutu sahip bir VSIX uzantısı yapma  
@@ -56,7 +54,7 @@ Eklentiler artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio u
   
      Üzerinde **Araçları** menüde (deneysel örneği) adlı bir düğme görmeniz gerekir **My komut adı**. Bu düğme seçtiğinizde, bir ileti görüntülenmelidir: **içinde TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a>Bir VSPackage eklenti kodumu nasıl çalıştırabilirim?  
+##  <a name="BKMK_RunAddin"></a> Bir VSPackage eklenti kodumu nasıl çalıştırabilirim?  
  Eklenti kodu genellikle iki yoldan biriyle çalıştırır:  
   
 -   Menü komutu tarafından tetiklenen (kod `IDTCommandTarget.Exec` yöntemi)  

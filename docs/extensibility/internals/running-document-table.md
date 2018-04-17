@@ -1,12 +1,10 @@
 ---
-title: "Belge tablosu çalıştıran | Microsoft Docs"
-ms.custom: 
+title: Belge tablosu çalıştıran | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4a49a5267fcccbde60e194e3fc58b0f6b6ea7552
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="running-document-table"></a>Çalışan belge tablosu
 IDE çalışan belge tablosu (RDT) olarak adlandırılan bir iç yapısındaki tüm açık belgelerin listesini tutar. Bu liste, bellekte olup bu belgeleri şu anda düzenlenmekte olan bağımsız olarak tüm açık belgeleri içerir. Kalıcı, dosyaları bir proje veya ana proje dosyası (örneğin, bir .vcxproj) dahil olmak üzere herhangi bir öğeyi belgedir.  
@@ -36,7 +34,7 @@ IDE çalışan belge tablosu (RDT) olarak adlandırılan bir iç yapısındaki t
 |Belge ad|Belge verileri nesneyi benzersiz şekilde tanımlayan bir dize. Bu dosyaları (örneğin, C:\MyProject\MyFile) yöneten bir proje sistemine mutlak dosya yolunu olacaktır. Bu dize bir veritabanında depolanan yordamları gibi dosya sistemleri dışında mağazalarındaki kaydedilmiş projeleri için de kullanılır. Bu durumda, proje sistemi algılar ve belge depolamak nasıl belirlemek için büyük olasılıkla ayrıştırma benzersiz bir dize stok.|  
 |Hiyerarşi sahibi|Belge tarafından temsil edilen sahibi olan hiyerarşi nesnesi bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> arabirimi.|  
 |Öğe kimliği|Hiyerarşi içindeki belirli bir öğenin öğe tanımlayıcısı. Bu değer bu belgenin sahibi hiyerarşideki tüm belgeler arasında benzersiz olduğundan, ancak bu değer farklı hiyerarşileri arasında benzersiz olması garanti edilmez.|  
-|Belge veri nesnesi|En azından bu olan bir`IUnknown`<br /><br /> nesne. IDE herhangi belirli bir arabirim ötesinde gerektirmez `IUnknown` özel düzenleyicinin belge veri nesnesi için arabirim. Ancak, standart bir düzenleyici için düzenleyicisinin uyarlamasını <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> arabirimi projeye ait dosya Kalıcılık çağrıları işlemek için gereklidir. Daha fazla bilgi için bkz: [kaydetme bir standart belge](../../extensibility/internals/saving-a-standard-document.md).|  
+|Belge veri nesnesi|En azından bu olan bir `IUnknown`<br /><br /> nesne. IDE herhangi belirli bir arabirim ötesinde gerektirmez `IUnknown` özel düzenleyicinin belge veri nesnesi için arabirim. Ancak, standart bir düzenleyici için düzenleyicisinin uyarlamasını <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> arabirimi projeye ait dosya Kalıcılık çağrıları işlemek için gereklidir. Daha fazla bilgi için bkz: [kaydetme bir standart belge](../../extensibility/internals/saving-a-standard-document.md).|  
 |Bayraklar|Girişleri RDT eklendiğinde bir okuma veya düzenleme kilidi uygulanmış olup olmadığını denetleyen belge kaydedilip kaydedilmediğini bayrakları ve benzeri belirtilebilir. Daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> numaralandırması.|  
 |Kilit sayısı Düzenle|Düzen sayısı kilitler. Bir düzen kilit bazı Düzenleyicisi belgeyi düzenlemek için açık olduğunu gösterir. Düzen kilit sayısı sıfır olarak geçiş yaptığında değiştirildi kullanıcı belgeyi kaydedin istenir. Örneğin, bir belge kullanarak bir düzenleyicide açın her zaman **yeni pencere** komutu, bir düzenleme kilit RDT bu belgede için eklenir. Ayarlanacak bir düzen kilitleme sırayla belge gerekir bir hiyerarşiye sahip veya kimliği öğesi|  
 |Okuma kilit sayısı|Kilit sayısı okuyun. Belge bir sihirbaz gibi bazı mekanizması aracılığıyla okunduğu okuma kilidi gösterir. Okuma kilidi, belge düzenlenemez belirten çalışırken bir belge RDT canlı tutar. Belge olmayan bir hiyerarşiye sahip ya da kimliği öğesi olsa bile okuma kilidi ayarlayabilirsiniz Bu özellik, bellekte bir belgeyi açın ve herhangi bir hiyerarşi tarafından ait olan belge olmadan RDT girmek sağlar. Bu özellik nadiren kullanılır.|  

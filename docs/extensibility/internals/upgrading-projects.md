@@ -1,27 +1,25 @@
 ---
-title: "Projeleri yükseltme | Microsoft Docs"
-ms.custom: 
+title: Projeleri yükseltme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 060823a04127480ef8de387200425a34c6ef1178
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cb64d71a50cb59a3c981dd87695bbb685f793761
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-projects"></a>Projeleri yükseltme
 Proje modele bir sürümünden değiştirir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sonraki daha yeni sürümüne çalıştırabilmeniz için projeler ve çözümler yükseltilmesi gerektirebilir. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Yükseltme desteği kendi projelerinde uygulamak için kullanılan arabirimleri sağlar.  
@@ -57,7 +55,7 @@ Proje modele bir sürümünden değiştirir [!INCLUDE[vsprvs](../../code-quality
   
  Yedekleme ve projeleri yükseltme hakkında daha fazla bilgi için yorumlar için IVsProjectUpgrade içinde vsshell2.idl bakın.  
   
-## <a name="upgrading-custom-projects"></a>Özel projelerini yükseltme
+## <a name="upgrading-custom-projects"></a> Özel projelerini yükseltme
 Değiştirirseniz ürününüzü farklı Visual Studio sürümleri arasında proje dosyasındaki bilgileri kalıcı sonra proje dosyanızı eski en yeni sürüme yükseltme desteklemesi gerekir. ' Na katılmak izin veren yükseltme desteklemek için **Visual Studio Dönüştürme Sihirbazı**, uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> arabirimi. Bu arabirim kopyalama yükseltme yalnızca mekanizması kullanılabilir içerir. Açılır çözümün bir parçası olarak yükseltme projesi olur. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Arabirimi proje fabrikası tarafından uygulanan veya en azından proje fabrikası'ndan elde edilebilir olmalıdır.  
   
  Kullanan eski mekanizması <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> arabirimi hala desteklenmektedir, ancak kavramsal olarak proje sistemini açık projenin bir parçası olarak yükseltir. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Arabirimi adlandırılan bu nedenle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] olsa bile ortamı <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> arabirimi adlı ya da uygulanmadı. Bu yaklaşım sayesinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> yerinde (büyük olasılıkla yeni konumda) yapılacak işleri geri kalanı tarafından temsilci kopyalama uygulamak ve yükseltme yalnızca bölümlerini proje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> arabirimi.  
@@ -92,7 +90,7 @@ Değiştirirseniz ürününüzü farklı Visual Studio sürümleri arasında pro
   
 5.  Yöntemlerini kullanın <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> iletileri Visual Studio Geçiş Sihirbazı'nı kullanarak kullanıcı için ilgili yükseltme sonrası.  
   
-6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade>arabirim, her türlü proje yükseltmesinin bir parçası gerçekleşmesi dosya yükseltme uygulamak için kullanılır. Bu arabirim gelen çağrılmaz <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, ancak proje sistemi, ancak ana proje sisteminin bir parçası olan dosyaları yükseltmek için bir mekanizma doğrudan farkında olmayabilir olarak sağlanır. Örneğin, dosyaları ve özelliklerini proje sisteminin rest işleyen aynı geliştirme ekibi tarafından işlenmez derleyici ilgili değilse bu durum meydana gelebilecek.  
+6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> arabirim, her türlü proje yükseltmesinin bir parçası gerçekleşmesi dosya yükseltme uygulamak için kullanılır. Bu arabirim gelen çağrılmaz <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, ancak proje sistemi, ancak ana proje sisteminin bir parçası olan dosyaları yükseltmek için bir mekanizma doğrudan farkında olmayabilir olarak sağlanır. Örneğin, dosyaları ve özelliklerini proje sisteminin rest işleyen aynı geliştirme ekibi tarafından işlenmez derleyici ilgili değilse bu durum meydana gelebilecek.  
   
 ### <a name="ivsprojectupgrade-implementation"></a>IVsProjectUpgrade uygulama  
  Proje sisteminizi uyguluyorsa <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> yalnızca katılabilmesi için değil **Visual Studio Dönüştürme Sihirbazı**. Ancak, uygulamanız olsa bile <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> arabirimi, dosya yükseltme hala temsilci <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> uygulaması.  

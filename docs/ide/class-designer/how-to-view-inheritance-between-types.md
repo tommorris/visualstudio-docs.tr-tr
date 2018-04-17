@@ -1,13 +1,10 @@
 ---
-title: "Nasıl yapılır: türler (Sınıf Tasarımcısı) arasında devralmayı görüntüleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: türler (Sınıf Tasarımcısı) arasında devralmayı görüntüleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.AssociationTypeNotFoundError
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - types [Visual Studio], base
 - types [Visual Studio], derived
 ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 303e2a9a00804e13d1c6fe37d9e2fe0f659ae460
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 729affb724b109b767053b41e1c5e95da616f614
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>Nasıl Yapılır: Türler Arasında Devralmayı Görüntüleme (Sınıf Tasarımcısı)
 Bir taban türü ve türetilmiş türlerinden sınıf tasarımcısında sınıf diyagramında arasında varsa devralma ilişkisi bulabilirsiniz. Zamanlama, iki tür arasında yoksa bir devralma ilişkisi oluşturmak için bkz [nasıl yapılır: devralma türleri arasında oluşturma](how-to-create-inheritance-between-types.md).  
@@ -52,4 +48,4 @@ Ayrıca türetilmiş türlerini görmek ve seçmek istediğiniz türü sağ **t�
   
 ## <a name="see-also"></a>Ayrıca bkz.
 [Nasıl yapılır: türleri arasındaki ilişkilendirmeleri oluşturma](how-to-create-associations-between-types.md)   
-[Türleri ve ilişkilendirmeleri görüntüleme](viewing-types-and-relationships.md)
+[Türleri ve İlişkileri Görüntüleme](viewing-types-and-relationships.md)

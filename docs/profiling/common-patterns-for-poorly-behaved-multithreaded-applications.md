@@ -1,27 +1,24 @@
 ---
-title: "Hatalı davranan çok iş parçacıklı uygulamalar için ortak desenler | Microsoft Docs"
-ms.custom: 
+title: Hatalı davranan çok iş parçacıklı uygulamalar için ortak desenler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.gallery
 helpviewer_keywords:
 - Concurrency Visualizer, common patterns for poorly-behaved multithreaded applications
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b7b9ad17c4d0c16066b9c10e3cc5b51f152c9dc
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 6896cdfd4257df55ce2e891bbfd9618b3c525e1c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Hatalı Davranan Çok İş Parçacıklı Uygulamalar için Ortak Desenler
 
@@ -41,13 +38,13 @@ Aşağıdaki çizimde gösterildiği gibi eşzamanlılık görselleştiricisi de
 
 ## <a name="uneven-workload-distribution"></a>Düzensiz iş yükü dağıtım
 
-![Uneven Workload](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![Düzensiz iş yükü](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
 
 Bir uygulama birden fazla paralel iş parçacıkları arasında düzensiz bir dağıtım iş ortaya çıktığında, her iş parçacığının kendi iş tamamlandıktan gibi tipik Merdiven adım düzeni önceki örnekte gösterildiği gibi görünür. Eşzamanlılık görselleştiricisi çoğunlukla her eş zamanlı iş parçacığı için çok yakın başlangıç zamanlarını gösterir. Ancak, bu iş parçacıkları, aynı anda bitiş yerine bir düzensiz şekilde genellikle sonlandırın. Bu desen çalışma grubu performansın için yol açabilecek paralel iş parçacıkları arasında düzensiz bir dağıtımı gösterir. En iyi bir sorun için kullandığı iş paralel iş parçacıkları arasında bölünmüş algoritması yeniden değerlendirmeye yaklaşımdır.
 
 Aşağıdaki çizimde gösterildiği gibi eşzamanlılık görselleştiricisi de bu belirti CPU Kullanımı görünümü içinde aşamalı step-down CPU kullanımında olarak hale getirebilir.
 
-![Uneven Workload](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
+![Düzensiz iş yükü](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
 
 ## <a name="oversubscription"></a>Aşırı abonelik
 
@@ -63,13 +60,13 @@ Bu sorunu değerlendirirken aşağıdakileri dikkate alın:
 
 ## <a name="inefficient-io"></a>Verimsiz g/ç
 
-![Verimsiz &#47; O](../profiling/media/inefficient_io.png "Inefficient_IO")
+![Verimsiz ı&#47;O](../profiling/media/inefficient_io.png "Inefficient_IO")
 
 Aşırı kullanımı ya da g/ç kötüye kullanılması verimsiz uygulamalarında yaygın bir nedenidir. Önceki çizimde göz önünde bulundurun. Görünür zaman çizelgesi profili görünür iş parçacığı zaman 44 yüzdesi g/ç tarafından tüketilmesi gösterir. Zaman Çizelgesi profili uygulama sık sık g/ç tarafından engellendiğini gösterir g/ç, büyük miktarlarda gösterir. G/ç ve burada programınızı engellendi türleri hakkındaki ayrıntıları görmek için sorunlu bölgelere yakınlaştırma, görünür zaman çizelgesi profili inceleyin ve geçerli çağrı yığınları görmek için belirli bir g/ç blok'ye tıklayın.
 
 ## <a name="lock-convoys"></a>Kilit Konvoyları
 
-![Lock Convoys](../profiling/media/lock_convoys.png "Lock_Convoys")
+![Kilitleme Konvoyları](../profiling/media/lock_convoys.png "Lock_Convoys")
 
 Kilit Konvoyları uygulama, ilk hizmet önce gelen bir order kilitler elde ettiğinde ve kilidi varış hızında edinme hızından daha yüksek olduğunda oluşur. Bu iki koşulun birleşimi yedekleme başlatmak Lock istekleri neden olur. Bu sorunu mücadele etmek için bir yolu "haksız" kilitleri ya da kilidi Devletleri'nde bulmak için ilk iş parçacığı erişmenizi kilitleri kullanmaktır. Önceki çizimde, bu convoy davranış gösterir. Sorunu çözmek için eşitleme nesneleri için Çekişme azaltmayı deneyin ve haksız kilitleri kullanmayı deneyin.
 

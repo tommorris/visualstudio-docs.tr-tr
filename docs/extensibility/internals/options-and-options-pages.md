@@ -1,12 +1,10 @@
 ---
-title: "Seçenekleri ve seçenekleri sayfaları | Microsoft Docs"
-ms.custom: 
+title: Seçenekleri ve seçenekleri sayfaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
 - managed package framework, Tools Options pages support
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], layouts
 - Tools Options pages [Visual Studio SDK], attributes
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
-caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1177a9a4df1f07c93540fa039117c5fa81289e17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d85b900779a5df8af077b292b2e2f70b0592e35c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-and-options-pages"></a>Seçenekleri ve seçenekleri sayfaları
 Tıklatarak **seçenekleri** üzerinde **Araçları** menüsü açılır **seçenekleri** iletişim kutusu. Bu iletişim kutusundaki seçenekler topluca seçenekleri sayfaları olarak adlandırılır. Seçenekler sayfası her kategori vardır ve gezinti bölmesindeki ağaç denetimi seçenekleri kategorileri içerir. Bir sayfa seçtiğinizde, onun seçeneklerini sağ bölmede görünür. Bu sayfa bir VSPackage durumunu belirlemek seçeneklerin değerlerini değiştirmenize olanak sağlar.  
@@ -56,11 +54,11 @@ Tıklatarak **seçenekleri** üzerinde **Araçları** menüsü açılır **seçe
 ## <a name="option-attributes-and-layout"></a>Seçenek öznitelikleri ve düzeni  
  Sayfa sağlayan kullanıcı arabirimi (UI) bir özel seçenekler sayfası seçeneklerinde görünümünü belirler. Düzen, etiketleme ve bir genel seçenekleri sayfasında seçeneklerinin açıklaması aşağıdaki özniteliklere göre belirlenir:  
   
--   <xref:System.ComponentModel.CategoryAttribute>seçenek kategorisini belirler.  
+-   <xref:System.ComponentModel.CategoryAttribute> seçenek kategorisini belirler.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>seçenek görünen adını belirler.  
+-   <xref:System.ComponentModel.DisplayNameAttribute> seçenek görünen adını belirler.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>seçenek açıklaması belirler.  
+-   <xref:System.ComponentModel.DescriptionAttribute> seçenek açıklaması belirler.  
   
     > [!NOTE]
     >  Eşdeğer öznitelikleri, SRCategory, LocDisplayName ve SRDescription, yerelleştirme için dize kaynaklarını kullanın ve içinde tanımlanan [yönetilen projenin örnek](http://go.microsoft.com/fwlink/?LinkId=122774).  

@@ -1,18 +1,20 @@
 ---
-title: "Visual Studio'da F1 için varsayılan sayfasını | Microsoft Docs"
+title: Visual Studio'da F1 için varsayılan sayfasını | Microsoft Docs
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 - vs.ambient
-manager: ghogen
+manager: douge
+author: gewarren
+ms.author: gewarren
 ms.technology: vs-ide-general
-ms.openlocfilehash: 65f5e31060f745adfd5dd18460b0a9984064f660
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2d5b027041e9b5ff31126af5e44e22415240ea55
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # F1 Yardımı
 
@@ -20,7 +22,7 @@ Aradığınız ne bulamadık gibi görünüyor ve özür dileriz. Lütfen [geli�
 
 ## İmleç konumu
 
-Bir anahtar sözcüğü veya API adı F1 Yardımı arıyorsanız, imleç içinde veya yalnızca sağındaki tuşlarına basarak önce word'ün konumlandırılır emin olun **F1**. Bu halen işe yaramazsa, seçim [yararlı bağlantılar](#useful-links) listelemek veya https://docs.microsoft.com bir arama yapın.
+Bir anahtar sözcüğü veya API adı F1 Yardımı arıyorsanız, imleç içinde veya yalnızca sağındaki tuşlarına basarak önce word'ün konumlandırılır emin olun **F1**. Bu halen işe yaramazsa, seçim [yararlı bağlantılar](#useful-links) listesinde ya da bir arama yapmak https://docs.microsoft.com.
 
 ## Yararlı bağlantılar
 

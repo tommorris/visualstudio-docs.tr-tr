@@ -2,10 +2,7 @@
 title: Visual Studio Düzenleyicisi diğer dilleri desteği ekleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax colorization
 - IntelliSense
@@ -15,19 +12,18 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology:
 - vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 885563b456ca27c319e8b1eafb1963e77d9d1cfa
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 8082a2d52929b8ec03d904bd365f15f143448037
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Visual Studio Düzenleyicisi diğer dilleri desteği ekleme
 Visual Studio düzenleyicisinde okuma ve farklı bir bilgisayara diller gezinme nasıl destekler ve diğer diller için Visual Studio Düzenleyicisi desteği eklemek için ne hakkında bilgi edinin.  
@@ -45,7 +41,7 @@ Visual Studio düzenleyicisinde okuma ve farklı bir bilgisayara diller gezinme 
 |Clojure|Git|JavaDoc|Objective-C|ShaderLab|C#|  
 |CMake|Modaya uygun|JSON|Perl|ShellScript|Visual C++|  
 |CoffeeScript|HTML|DAHA AZ|Python|SQL|VBNet|  
-|CSS|INI|LUA|R|Swift|XML|  
+|CSS|INI|LUA|R|SWIFT|XML|  
 |Docker|Jade|Marka|Ruby|TypeScript|YAML|  
   
  Söz dizimi renklendirme ve temel deyim tamamlama ek olarak, Visual Studio ayrıca adlı bir özelliği olan [gitmek için](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Bu özellik, hızlı bir şekilde kod dosyaları, dosya yolları ve kod simgeleri aramanıza olanak sağlar. Visual Studio aşağıdaki diller için gitmek için destek sağlar.  
@@ -83,7 +79,7 @@ Bu dosya türlerini belirli bir dile henüz yüklenmemiştir desteği özellikle
 |*\Syntaxes*|Dilbilgisi klasör. Dilbilgisi içeren *.json* dil için aşağıdaki gibi dosyalar *Matlab.json*.|  
 |*\Snippets*|Kod parçacıkları klasör. Dili için kod parçacıkları içerir.|  
   
- Windows, *% USERPROFILE %* yolunu Çözümler: *c:\Users\\*\<kullanıcı adı >*.* Uzantıları klasörünü, sisteminizde mevcut değilse, bunu oluşturmanız gerekir. Bu klasör zaten mevcutsa gizlenir.  
+ Windows, *% USERPROFILE %* yolunu Çözümler: *c:\Users\\\<kullanıcı adı >*. Uzantıları klasörünü, sisteminizde mevcut değilse, bunu oluşturmanız gerekir. Bu klasör zaten mevcutsa gizlenir.  
   
  TextMate aynı oluşturma hakkında daha fazla bilgi için bkz [TextMate - dil aynı giriş: kaynak kodu sözdizimi vurgulama ekleme HTML biçiminde katıştırılmış](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) ve [dil dilbilgisi ve özel oluşturma ile ilgili notlar Tema Textmate paket için](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).  
   

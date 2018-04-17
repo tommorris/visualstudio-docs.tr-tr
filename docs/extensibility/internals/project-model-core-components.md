@@ -1,26 +1,24 @@
 ---
-title: "Proje modeli çekirdek bileşenleri | Microsoft Docs"
-ms.custom: 
+title: Proje modeli çekirdek bileşenleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d2de7b73238589786c1e8a4ba42389201123c2b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2cfb9db9c354eb4c10ece0f5a8259f3d4a104e28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-model-core-components"></a>Proje modeli çekirdek bileşenleri
 Aşağıdaki tablolarda proje modeline genişletin. Tabloları kısa açıklamaları model ve arabirimleri ve belirli nesneler ile ilişkili hizmetler tanımlanan Hizmetleri ve arabirimleri sunar. Ayrıca, isteğe bağlı olarak proje oluşturma ve Bakım, belirli bir proje türü gereksinimlerine bağlı olarak diğer arabirimleri tabloları ayrıntılarını gösterir.  
@@ -101,7 +99,7 @@ Aşağıdaki tablolarda proje modeline genişletin. Tabloları kısa açıklamal
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Oluşturma ve aracı veya belge windows numaralandırmak için veya kullanıcıya hata raporlama özelliği gibi temel kullanıcı Arabirimi ile ilgili IDE işlevleri sağlar.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>|IDE'nin durum çubuğu erişim sağlar.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Otomasyon modeli uygulamak için kullanılır. Proje modelinizde, döndürülecek olanak sağlayan bir özellikler söz konusu nesne örneği oluşturur.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Hiyerarşideki proje nesnesinde Pano olayları gerçekleştirmek için kullanılır. `SVsUIHierWinClipboardHelper`doğru tanıtıcı kesme, kopyalama ve yapıştırma işlemlerine olanak sağlar.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Hiyerarşideki proje nesnesinde Pano olayları gerçekleştirmek için kullanılır. `SVsUIHierWinClipboardHelper` doğru tanıtıcı kesme, kopyalama ve yapıştırma işlemlerine olanak sağlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

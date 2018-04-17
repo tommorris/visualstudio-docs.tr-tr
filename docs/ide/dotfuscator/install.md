@@ -1,10 +1,11 @@
 ---
-title: "Dotfuscator Community Edition (CE) yükleme | Microsoft Docs"
+title: Dotfuscator Community Edition (CE) yükleme | Microsoft Docs
 ms.date: 2017-06-22
 ms.devlang: dotnet
-ms.technology: vs-ide-general
-ms.topic: article
-keywords: "Dotfuscator Dotfuscator CE, PreEmptive, PreEmptive tarafından çözümleri PreEmptive tarafından koruma, koruma, community edition, gizleme, .NET, ücretsiz, Visual Studio 2017 yükleyin"
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
+keywords: Dotfuscator Dotfuscator CE, PreEmptive, PreEmptive tarafından çözümleri PreEmptive tarafından koruma, koruma, community edition, gizleme, .NET, ücretsiz, Visual Studio 2017 yükleyin
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - install Dotfuscator
 - installing Dotfuscator
 - set up Dotfuscator
-description: "Ücretsiz Dotfuscator Community Edition Visual Studio 2017 dahil yüklemeyi öğrenin."
+description: Ücretsiz Dotfuscator Community Edition Visual Studio 2017 dahil yüklemeyi öğrenin.
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
-manager: ghogen
-ms.openlocfilehash: 6e3151a7ce26fcc998df7fbce1cefda54249a384
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+manager: douge
+ms.openlocfilehash: 871ec8c98bac4477ef95c85688484011027e2d20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE) yükleyin
 
@@ -35,7 +36,7 @@ Ancak, Visual Studio'nun zaten yüklü olsa bile Dotfuscator CE yükle kolaydır
 
 > [!NOTE]
 > Dotfuscator Visual Studio sürümleriyle birlikte CE sürümleri yanı sıra, PreEmptive tarafından çözümleri, güncelleştirilmiş sürümleri düzenli aralıklarla da kendi Web sitesinde sağlar.
-> Karşıdan yüklemek isterseniz **en son sürümünü** Visual Studio'dan yüklemek yerine doğrudan  **[Dotfuscator Yüklemeler sayfasına gitmek için buraya tıklayın] [ download]** .
+> Karşıdan yüklemek isterseniz **en son sürümünü** Visual Studio'dan yüklemek yerine doğrudan **[Dotfuscator Yüklemeler sayfasına gitmek için buraya tıklayın] [ download]**.
 
 ## <a name="within-visual-studio"></a>Visual Studio içinde
 

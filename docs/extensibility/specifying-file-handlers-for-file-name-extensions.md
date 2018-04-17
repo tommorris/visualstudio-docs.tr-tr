@@ -1,27 +1,23 @@
 ---
-title: "Dosya adı uzantıları için dosya işleyicisi belirtme | Microsoft Docs"
-ms.custom: 
+title: Dosya adı uzantıları için dosya işleyicisi belirtme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5db7a218a718e27f584abbf350b49907b56fb17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d0086f8badb32431c85f16e1f74fe8f186c9b2e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Dosya adı uzantıları için dosya işleyicisi belirtme
 Bir belirli bir uzantıya sahip bir dosya işler uygulamayı belirlemek için çeşitli yöntemler vardır. OpenWithList ve OpenWithProgids fiilleri dosya uzantısı için kayıt defteri girdisinin altındaki dosya işleyicisi belirtmek için iki yollarıdır.  
@@ -53,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |.Extension|ProductName. extension.versionMajor.versionMinor|  
   
- Belirli dosya uzantısı sürümlü ProgID değeri olarak HKEY_CLASSES_ROOT ekleyerek açabilmelisiniz farklı uygulamaları kaydedebilir\\*\<uzantısı >*\OpenWithProgids anahtarı. Bu kayıt defteri anahtarı dosya uzantısı ile ilişkili diğer ProgID listesini içerir. Listelenen ProgID ile ilişkili uygulamaları görünür **birlikte Aç***ürün adı* alt. İkisi de aynı uygulama belirtilirse `OpenWithList` ve `OpenWithProgids` anahtarları, işletim sistemi çoğaltmaların birleştirir.  
+ Belirli dosya uzantısı sürümlü ProgID değeri olarak HKEY_CLASSES_ROOT ekleyerek açabilmelisiniz farklı uygulamaları kaydedebilir\\*\<uzantısı >*\OpenWithProgids anahtarı. Bu kayıt defteri anahtarı dosya uzantısı ile ilişkili diğer ProgID listesini içerir. Listelenen ProgID ile ilişkili uygulamaları görünür **birlikte Aç *** ürün adı* alt. İkisi de aynı uygulama belirtilirse `OpenWithList` ve `OpenWithProgids` anahtarları, işletim sistemi çoğaltmaların birleştirir.  
   
 > [!NOTE]
 >  `OpenWithProgids` Anahtarı yalnızca Windows XP'de desteklenir. Bu anahtar diğer işletim sistemlerinin yoksay çünkü dosya işleyicileri için yalnızca kayıt olarak kullanmayın. Windows XP'de daha iyi bir kullanıcı deneyimi sağlamak için bu anahtarı kullanın.  

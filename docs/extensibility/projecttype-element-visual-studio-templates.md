@@ -1,29 +1,25 @@
 ---
-title: "ProjectType öğesi (Visual Studio şablonları) | Microsoft Docs"
-ms.custom: 
+title: ProjectType öğesi (Visual Studio şablonları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectType
 helpviewer_keywords:
 - ProjectType element [Visual Studio project templates]
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46f9f748f683558e6fb82607d4c87a0a0dbc1cae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb16116994648ec70c770af7ca4932cd1443bd30
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType Öğesi (Visual Studio Şablonları)
 Böylece belirtilen grubunda altında görüntülenen proje şablonu kategorilere ayıran **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.  
@@ -68,7 +64,7 @@ Böylece belirtilen grubunda altında görüntülenen proje şablonu kategoriler
 -   `Web`: Belirtir şablonu bir Web projesi veya öğesi oluşturur. Varsa `ProjectType` öğe içeriyorsa bu değer, proje ve öğe dilinin tanımlanan [ProjectSubType öğesi (Visual Studio şablonları)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `ProjectType`gerekli bir alt öğesidir `TemplateData`.  
+ `ProjectType` gerekli bir alt öğesidir `TemplateData`.  
   
  Değeri `ProjectType` öğesi belirttiğinden şablonu içinde bulunduğu **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu. Örneğin, bir şablonla bir `ProjectType` değerini `CSharp` altında görünür **Visual C#** düğümünde **yeni proje** iletişim kutusu.  
   

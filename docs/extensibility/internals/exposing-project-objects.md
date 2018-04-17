@@ -1,26 +1,24 @@
 ---
-title: "Proje nesneleri gösterme | Microsoft Docs"
-ms.custom: 
+title: Proje nesneleri gösterme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project objects, exposing
 - extensibility, project objects
 ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 668287dc8b0b5ac9dd37cb450582e3a56fb7f25e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4eaa2a5e8c5c153698069084b9f0cfe406cad7db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-project-objects"></a>Proje nesneleri gösterme
 Özel proje türleri Otomasyon arabirimleri kullanarak proje erişmesine izin vermek için Otomasyon nesneleri sağlayabilir. Her proje türü standart sağlaması beklenir <xref:EnvDTE.Project> erişilen Otomasyon nesnesi <xref:EnvDTE.Solution>, IDE içinde açık olan tüm projeleri koleksiyonunu içerir. Proje içinde her öğe tarafından sunulan beklenen bir <xref:EnvDTE.ProjectItem> erişilen nesne `Project.ProjectItems`. Bu standart Otomasyon nesneleri ek olarak, projeye özgü Otomasyon nesneleri sunmak projeleri seçebilirsiniz.  

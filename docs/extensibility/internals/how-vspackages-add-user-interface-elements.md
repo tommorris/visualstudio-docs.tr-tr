@@ -1,27 +1,25 @@
 ---
-title: "Kullanıcı arabirimi öğeleri nasıl VSPackages eklemek | Microsoft Docs"
-ms.custom: 
+title: Kullanıcı arabirimi öğeleri nasıl VSPackages eklemek | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 142e2a24f866db7e3ae20217b60b1ea0c201c749
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 930ab9e741b2fd5bbc0ca2954192fe5e2c4313d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir
 Bir VSPackage kullanıcı arabirimi (UI) öğeleri, örneğin, menüler, araç çubukları, eklemek ve Visual Studio .vsct dosya yoluyla windows aracı.  
@@ -64,7 +62,7 @@ Bir VSPackage kullanıcı arabirimi (UI) öğeleri, örneğin, menüler, araç �
 </Symbols>  
 ```  
   
- Üst düzey öğenin `Symbols` bölüm [GuidSymbol öğesi](../../extensibility/guidsymbol-element.md). `GuidSymbol`öğe adları tarafından IDE paketleri ve bunların bileşen bölümleri tanımlamak için kullanılan GUID'ler eşleyin.  
+ Üst düzey öğenin `Symbols` bölüm [GuidSymbol öğesi](../../extensibility/guidsymbol-element.md). `GuidSymbol` öğe adları tarafından IDE paketleri ve bunların bileşen bölümleri tanımlamak için kullanılan GUID'ler eşleyin.  
   
 > [!NOTE]
 >  GUID, Visual Studio Paketi şablon tarafından otomatik olarak oluşturulur. Benzersiz bir GUID tıklatarak da oluşturabilirsiniz **Create GUID** üzerinde **Araçları** menüsü.  
@@ -195,11 +193,11 @@ priority="0x0100" type="Menu">
 |Öğe|Bu komut tablo bölümünde tanımlanan|Yer alabilecek (üst öğe olarak ya da yerleşimini tarafından `CommandPlacements` bölüm veya her ikisi de)|İçerebilir (üst öğe olarak adlandırılır)|  
 |-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
 |Grup|[Gruplar öğesi](../../extensibility/groups-element.md), IDE, diğer VSPackages|Bir menüyü bir Grup öğesi|Menüleri, gruplar ve komutlar|  
-|Menü|[Menü öğesi](../../extensibility/menus-element.md), IDE, diğer VSPackages|1  *n*  grupları|0 olarak  *n*  grupları|  
-|Araç Çubuğu|[Menü öğesi](../../extensibility/menus-element.md), IDE, diğer VSPackages|Öğenin kendisi|0 olarak  *n*  grupları|  
-|Menü Öğesi|[Düğme öğesi](../../extensibility/buttons-element.md), IDE, diğer VSPackages|1  *n*  gruplar, öğesi|-0 olarak  *n*  grupları|  
-|Düğme|[Düğme öğesi](../../extensibility/buttons-element.md), IDE, diğer VSPackages|1  *n*  gruplar, öğesi||  
-|Birleşik giriş|[Birleşik öğesi](../../extensibility/combos-element.md), IDE, diğer VSPackages|1  *n*  gruplar, öğesi||  
+|Menü|[Menü öğesi](../../extensibility/menus-element.md), IDE, diğer VSPackages|1 *n* grupları|0 olarak *n* grupları|  
+|Araç Çubuğu|[Menü öğesi](../../extensibility/menus-element.md), IDE, diğer VSPackages|Öğenin kendisi|0 olarak *n* grupları|  
+|Menü Öğesi|[Düğme öğesi](../../extensibility/buttons-element.md), IDE, diğer VSPackages|1 *n* gruplar, öğesi|-0 olarak *n* grupları|  
+|Düğme|[Düğme öğesi](../../extensibility/buttons-element.md), IDE, diğer VSPackages|1 *n* gruplar, öğesi||  
+|Birleşik giriş|[Birleşik öğesi](../../extensibility/combos-element.md), IDE, diğer VSPackages|1 *n* gruplar, öğesi||  
   
 ### <a name="menu-command-and-group-placement"></a>Menü, komut ve Grup yerleştirme  
  Menü, Grup veya komut IDE içinde birden fazla konumda yer alabilir. Bir öğenin birden fazla konumda görünmesini onu eklenmeli `CommandPlacements` olarak bölümünde bir [CommandPlacement öğesi](../../extensibility/commandplacement-element.md). Hiçbir menüsü, Grup veya komutu bir komut yerleşimi eklenebilir. Ancak, birden çok bağlama duyarlı konumda yer alamaz çünkü araç çubukları bu şekilde konumlandırılmış olamaz.  
@@ -214,7 +212,7 @@ priority="0x0100" type="Menu">
 ##### <a name="visibility-constraints"></a>Görünürlüğü kısıtlama  
  Görünürlüğü kısıtlama olarak ayarlanmış olan bir [VisibilityItem öğesi](../../extensibility/visibilityitem-element.md) içinde `VisibilityConstraints` bölümü. Görünürlüğü kısıtlama hedef öğesi görülebilir belirli UI bağlamları tanımlar. Yalnızca biri tanımlanmış bağlamları etkin olduğunda bir menü veya bu bölümde komut görünür olur. Bu bölümde bir menü veya komut başvurulmuyorsa her zaman varsayılan olarak görülebilir. Bu bölümde gruplarına uygulanmaz.  
   
- `VisibilityItem`öğeleri özniteliklerine sahip olmalıdır üç, aşağıdaki gibi: `guid` ve `id` hedef UI öğesinin ve `context`. `context` Özniteliği, ne zaman hedef öğesi görünür ve değeri olarak geçerli bir kullanıcı Arabirimi bağlamı alan belirtir. Visual Studio için kullanıcı Arabirimi bağlam sabitleri üyesi <xref:Microsoft.VisualStudio.VSConstants> sınıfı. Her `VisibilityItem` öğesi yalnızca bir içerik değeri alabilir. İkinci bir bağlam uygulamak için ikinci bir oluşturma `VisibilityItem` aşağıdaki örnekte gösterildiği gibi aynı öğesine işaret öğesi.  
+ `VisibilityItem` öğeleri özniteliklerine sahip olmalıdır üç, aşağıdaki gibi: `guid` ve `id` hedef UI öğesinin ve `context`. `context` Özniteliği, ne zaman hedef öğesi görünür ve değeri olarak geçerli bir kullanıcı Arabirimi bağlamı alan belirtir. Visual Studio için kullanıcı Arabirimi bağlam sabitleri üyesi <xref:Microsoft.VisualStudio.VSConstants> sınıfı. Her `VisibilityItem` öğesi yalnızca bir içerik değeri alabilir. İkinci bir bağlam uygulamak için ikinci bir oluşturma `VisibilityItem` aşağıdaki örnekte gösterildiği gibi aynı öğesine işaret öğesi.  
   
 ```xml  
 <VisibilityConstraints>  
@@ -233,24 +231,24 @@ priority="0x0100" type="Menu">
  AlwaysCreate  
  Menü grupları ya da düğmeleri sahip olsa bile oluşturulur.  
   
- Geçerlilik süresi:`Menu`  
+ Geçerlilik süresi: `Menu`  
   
  CommandWellOnly  
  Bu bayrak komutu en üst düzey menüsünde görünmez ve ek Kabuk özelleştirmesi için kullanılabilir hale getirmek istediğiniz örneğin, bir anahtara bağlama uygulayın. VSPackage yüklendikten sonra bir kullanıcı bu komutları açarak özelleştirebilir **seçenekleri** iletişim kutusunu ve ardından komut yerleşimi altında düzenleme **klavye ortamı** kategorisi. Kısayol menüleri, araç çubukları, menü denetleyicileri veya alt menüler yerleştirme etkilemez.  
   
- İçin geçerli: `Button`,`Combo`  
+ İçin geçerli: `Button`, `Combo`  
   
  DefaultDisabled  
  Varsayılan olarak, komut uygulayan VSPackage yüklenmedi veya QueryStatus yöntemi çağrılmazsa komutu devre dışıdır.  
   
- İçin geçerli: `Button`,`Combo`  
+ İçin geçerli: `Button`, `Combo`  
   
  DefaultInvisible  
  Varsayılan olarak, komut komutu uygulayan VSPackage yüklenmedi veya QueryStatus yöntemi çağrılmazsa görünmez olur.  
   
  İle birleştirilmelidir `DynamicVisibility` bayrağı.  
   
- İçin geçerli: `Button`, `Combo`,`Menu`  
+ İçin geçerli: `Button`, `Combo`, `Menu`  
   
  DynamicVisibility  
  Komut görünürlüğünü QueryStatus yöntemi veya bağlam dahil GUID kullanarak değiştirilebilir `VisibilityConstraints` bölümü.  
@@ -261,12 +259,12 @@ priority="0x0100" type="Menu">
   
  İle birleştirilmelidir `DefaultInvisible` bayrağı.  
   
- İçin geçerli: `Button`, `Combo`,`Menu`  
+ İçin geçerli: `Button`, `Combo`, `Menu`  
   
  NoShowOnMenuController  
  Bu bayrak sahip bir komut bir menü denetleyicisinde konumlandırılır, komut aşağı açılan listede görünmez.  
   
- Geçerlilik süresi:`Button`  
+ Geçerlilik süresi: `Button`  
   
  Komut bayrakları hakkında daha fazla bilgi için bkz: [komutu bayrağı öğesi](../../extensibility/command-flag-element.md) belgeleri.  
   
@@ -291,7 +289,7 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Arabirim öğesi görünümü  
  Seçme ve komut öğeleri konumlandırma hakkında önemli noktalar aşağıdaki gibidir:  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]farklı yerleştirme bağlı olarak görünen birçok kullanıcı Arabirimi öğeleri sunar.  
+-   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] farklı yerleştirme bağlı olarak görünen birçok kullanıcı Arabirimi öğeleri sunar.  
   
 -   Kullanılarak tanımlanmış bir kullanıcı Arabirimi öğesi `DefaultInvisible` bayrağı görüntülenmeyecek IDE içinde ya da kendi VSPackage uygulaması tarafından görüntülenen olmadıkça <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> yöntemini veya belirli bir kullanıcı Arabirimi bağlamında ilişkili `VisibilityConstraints` bölümü.  
   

@@ -1,13 +1,10 @@
 ---
-title: "Visual Studio kodlama ve satır sonu karakterleri | Microsoft Docs"
-ms.custom: 
+title: Visual Studio kodlama ve satır sonu karakterleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.Encoding
 helpviewer_keywords:
@@ -18,19 +15,18 @@ helpviewer_keywords:
 - line break characters
 - Visual Studio, line break characters
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a472a09a4d4d67f59d7879d03b466932d1445e6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 15bc6faab8fab1eb943bc087c8730f800c11febd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="encodings-and-line-breaks"></a>Kodlamalar ve Satır Sonları
+# <a name="encodings-and-line-breaks"></a>Kodlamalar ve satır sonları
 Visual Studio'da satır sonları gibi karakterlerden yorumlanır:  
   
 -   Satır başı + satır besleme CR LF:, 000 D + 000A Unicode karakter  
@@ -47,14 +43,14 @@ Diğer uygulamalardan kopyalanan metni özgün kodlama ve satır sonu karakterle
   
 Farklı bir satır sonu karakterleri içeren bir dosyayı açtığınızda, tutarsız satır sonu karakterleri normalleştirilmiş ve seçmek için hangi tür satır sonları olup olmadığını soran bir iletişim kutusu görebilirsiniz.
 
-Kullanabileceğiniz **dosya**, **Gelişmiş kaydetme seçenekleri** iletişim kutusunu istediğiniz satır sonu karakterleri türü belirlenemedi. Ayrıca, aynı ayarlarla bir dosyanın kodlamasını değiştirebilirsiniz.
+Kullanabileceğiniz **dosya** > **Gelişmiş kaydetme seçenekleri** iletişim kutusunu istediğiniz satır sonu karakterleri türü belirlenemedi. Ayrıca, aynı ayarlarla bir dosyanın kodlamasını değiştirebilirsiniz.
 
 ![Gelişmiş Kaydetme Seçenekleri iletişim kutusu](media/line_endings.png)
   
 > [!NOTE]
->  Görmüyorsanız, **Gelişmiş kaydetme seçenekleri** üzerinde **dosya** menüsünde, ekleyebilir. Seçin **Araçları**, **Özelleştir...** ve ardından **komutları** sekmesi. İçinde **menü çubuğu** aşağı açılan listesinde, seçin **dosya**, ardından **komut Ekle...**  düğmesi. İçinde **Add komutunu** iletişim kutusunda **kategorileri**, seçin **dosya**ve ardından **komutları** listesinde, seçin  **Gelişmiş Seçenekleri...** . Seçin **Tamam** ve ardından **Aşağı Taşı** menüsünden herhangi bir yere komutu taşımak için düğmesi. Seçin **kapatmak** kapatmak için **Özelleştir** iletişim kutusu. Daha fazla bilgi için bkz: [menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+>  Görmüyorsanız, **Gelişmiş kaydetme seçenekleri** üzerinde **dosya** menüsünde, ekleyebilir. Seçin **Araçları**, **Özelleştir...** ve ardından **komutları** sekmesi. İçinde **menü çubuğu** aşağı açılan listesinde, seçin **dosya**, ardından **komut Ekle...**  düğmesi. İçinde **Add komutunu** iletişim kutusunda **kategorileri**, seçin **dosya**ve ardından **komutları** listesinde, seçin **Gelişmiş Seçenekleri...**. Seçin **Tamam** ve ardından **Aşağı Taşı** menüsünden herhangi bir yere komutu taşımak için düğmesi. Seçin **kapatmak** kapatmak için **Özelleştir** iletişim kutusu. Daha fazla bilgi için bkz: [menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+>
+>Alternatif olarak, erişim **Gelişmiş kaydetme seçenekleri** seçerek iletişim kutusu **dosya** > **kaydetmek \<dosya\> olarak...** . İçinde **dosyasını Farklı Kaydet** iletişim kutusunda, açılır üçgen seçin **kaydetmek** düğmesini tıklatın ve seçin **kodlama ile Kaydet...** .
 
-Alternatif olarak, erişim **Gelişmiş kaydetme seçenekleri** seçerek iletişim kutusu **dosya**, **kaydetmek \<dosya\> olarak...** . İçinde **dosyasını Farklı Kaydet** iletişim kutusunda, açılır üçgen seçin **kaydetmek** düğmesini tıklatın ve seçin **kodlama ile Kaydet...** .
-
-## <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 [Kod Düzenleyicisi'nde yazma](../ide/writing-code-in-the-code-and-text-editor.md)

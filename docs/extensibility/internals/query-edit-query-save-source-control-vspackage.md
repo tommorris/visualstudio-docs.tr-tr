@@ -1,30 +1,28 @@
 ---
-title: "Sorgu düzenleme sorgu (kaynak denetimi VSPackage) kaydetme | Microsoft Docs"
-ms.custom: 
+title: Sorgu düzenleme sorgu (kaynak denetimi VSPackage) kaydetme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - QEQS events
 - Query Edit Query Save events
 - source control packages, Query Edit Query Save events
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e3428e51dda2f8cc8410b6ac67f5779f7c2300ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf4fd74544e0646a84e4fdc37f35ba84b301f693
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Sorgu düzenleme sorgusu (kaynak denetimi VSPackage) Kaydet
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Düzenleyiciler Sorgu Düzenle sorgu kaydedin (QEQS) olayları yayınlayabilirsiniz. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Alıcı QEQS olayların olmasını kaynak denetimi saplama QEQS hizmeti uygular. Bu olaylar sonra şu anda etkin kaynak denetimine VSPackage verilmiş. VSPackage uygulayan etkin kaynak denetimi <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> ve onun yöntemleri. Yöntemlerinin `IVsQueryEditQuerySave2` arabirimi genellikle ilk kez ve hemen bir belge kaydedilmeden önce bir belge düzenlenmiş hemen önce çağrılır.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Düzenleyiciler Sorgu Düzenle sorgu kaydedin (QEQS) olayları yayınlayabilirsiniz. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Alıcı QEQS olayların olmasını kaynak denetimi saplama QEQS hizmeti uygular. Bu olaylar sonra şu anda etkin kaynak denetimine VSPackage verilmiş. VSPackage uygulayan etkin kaynak denetimi <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> ve onun yöntemleri. Yöntemlerinin `IVsQueryEditQuerySave2` arabirimi genellikle ilk kez ve hemen bir belge kaydedilmeden önce bir belge düzenlenmiş hemen önce çağrılır.  
   
 ## <a name="queryeditquerysave-events"></a>QueryEditQuerySave olayları  
  Kaynak denetimi VSPackage uygulayarak QEQS olayları işlemelidir `IVsQueryEditQuerySave2` arabirimi ve gerekli yöntemleri. Aşağıda VSPackage en azından uygulamalıdır iki yöntem kısa bir açıklaması verilmiştir. Gerçek uygulamayı kaynak denetimi modeli mantığı uygun olmalıdır.  

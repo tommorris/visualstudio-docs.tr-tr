@@ -2,26 +2,22 @@
 title: Düzenleyici içeri aktarmalar | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
-caps.latest.revision: 19
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 937bf977090699f5d3bf52414f57f6066dd55a17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f01567efa411187bede4f6daf15012da81c2331f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editor-imports"></a>Düzenleyici içeri aktarmalar
 Düzenleyici Hizmetleri, oluşturucuları ve farklı türde erişim çekirdek düzenleyiciye uzantınızı sağlayan aracıların sayısı içeri aktarabilirsiniz. Örneğin, alabileceğiniz <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> sizinle sağlamak için bir <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> verilen bir içerik türü için. (Bu Gezgin aramaları farklı türde bir metin arabelleği gerçekleştirmek izin verir.)  
@@ -75,11 +71,11 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="services"></a>Hizmetler  
  Düzenleyici, bir hizmet sağlamak ve birden çok bileşenler genelinde paylaşılan genellikle tek varlıkları hizmetleridir.  
   
-|İçeri aktarma|Sağlar|  
+|{1&gt;İçeri Aktar&lt;1}|Sağlar|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Dosya uzantıları arasındaki ilişkiyi ve <xref:Microsoft.VisualStudio.Utilities.IContentType> nesneleri.|  
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Koleksiyonu <xref:Microsoft.VisualStudio.Utilities.IContentType> nesneleri.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation>nesneleri|  
+|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation> Nesneleri|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Birçok Düzenleyicisi bağdaştırıcısı nesneler:<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|  
 |<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|Bir <xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch> verilen metin görünümü için nesne.|  
 |<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>|Bir <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|  
@@ -117,7 +113,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="other-imports"></a>Diğer içeri aktarmalar  
  Sağlayıcı üreteçlerinin ve aracıların genellikle birden çok bileşeni birden çok örneği olan varlıklardır.  
   
-|İçeri aktarma|Sağlar|  
+|{1&gt;İçeri Aktar&lt;1}|Sağlar|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|Bir <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> türü <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>) için verilen arabellek.|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Bir metin işaretçisi etiketleme (bir <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> türü <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>).|  

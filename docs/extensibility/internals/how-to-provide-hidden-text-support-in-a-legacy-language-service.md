@@ -1,27 +1,25 @@
 ---
-title: "Nasıl yapılır: eski dil hizmetindeki gizli metin desteği | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: eski dil hizmetindeki gizli metin desteği | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - hidden text, supporting
 - editors [Visual Studio SDK], hidden text
 - language services, implementing hidden text regions
 ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 664ab99af45e8c449247c5515184293ecb1a469f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 54e508c6bcbb9cb79459e0b61a97f51350c00708
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Nasıl yapılır: eski dil hizmetindeki gizli metin desteği sağlar
 Anahat bölgeler yanı sıra gizli metni bölgeler oluşturabilirsiniz. Gizli metni bölgeler, istemci tarafından denetlenen veya Düzenleyicisi denetimli olabilir ve bir bölge metnin tamamen gizlemek için kullanılır. Düzenleyici gizli bir bölge yatay çizgiler olarak görüntüler. Bu komut yalnızca görünümünde HTML düzenleyicisi örneğidir.  

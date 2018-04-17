@@ -1,27 +1,23 @@
 ---
-title: "Web sitesi desteği şablonları | Microsoft Docs"
-ms.custom: 
+title: Web sitesi desteği şablonları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8be16e2bf1532b99f0c9c594394c3f0cbf8b1f75
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: af8e0d845157b475e4a5527443f55286828023cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-site-support-templates"></a>Web sitesi şablonları destekler
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Web sitesi proje ve öğe şablonları, yeni Web sitesi projeler ve öğeler sıfırdan oluşturma gereksinimini ortadan kaldırarak geliştirme işlemi hızlandırmak yeniden kullanılabilir ve özelleştirilebilir Web sitesi proje ve öğe saplamalar sağlar. Daha fazla bilgi için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] şablonları için bkz: [oluşturma proje ve öğe şablonlarını](../../ide/creating-project-and-item-templates.md).
@@ -63,7 +59,7 @@ ms.lasthandoff: 03/02/2018
 
      Yeni Web sitesi için varsayılan giriş sayfası. Language özniteliği arkasındaki koda dilini belirtir ve bu sayfayla ilişkili arkasındaki koda kodunu içerir bağımlı dosya CodeFile özniteliği belirtir.
 
--   Default.aspx.*extension*
+-   Default.aspx. *uzantısı*
 
      Varsayılan giriş sayfası arkasındaki koda kodunu içerir bağımlı dosya. Arkasındaki koda dilini belirler *uzantısı* bu dosyanın.
 
@@ -82,11 +78,11 @@ ms.lasthandoff: 03/02/2018
 ### <a name="web-service-projects"></a>Web hizmeti projeleri
  Bu dosyaları yanıt olarak yeni bir Web sitesi oluşturmak **ASP.NET Web hizmeti** seçtikten sonra kullanılabilir komut **dosya** > **yeni Web sitesi**:
 
--   Service.asmx
+-   QuoteService.asmx'e değiştirin
 
      Yeni Web hizmeti için HTML sayfası. Language özniteliği arkasındaki koda dilini belirler ve bu hizmetle ilişkilendirilen arkasındaki koda kodunu içerir bağımlı dosyayı arkasındaki koda özniteliği belirtir.
 
--   Hizmet. *extension*
+-   Hizmet. *Uzantısı*
 
      Hizmet sınıfı uygulayan bağımlı dosya. Arkasındaki koda dilini belirler *uzantısı* bu dosyanın.
 
@@ -119,7 +115,7 @@ ms.lasthandoff: 03/02/2018
 ### <a name="new-class"></a>Yeni bir sınıf
  Bu şablon yanıt olarak boş bir sınıf tanımlayan yeni bir kaynak dosyası oluşturur **yeni sınıf Ekle** komutu.
 
--   Sınıf. *extension*
+-   Sınıf. *Uzantısı*
 
      Boş sınıfı uygulayan kaynak dosya. Arkasındaki koda dilini belirler *uzantısı* bu dosyanın.
 
@@ -153,7 +149,7 @@ ms.lasthandoff: 03/02/2018
 
      Web sayfasının başlangıç içeriği. Bu Web sayfasında ilişkili arkasındaki koda bağımlı dosya vardır.
 
--   Arkasındaki koda. *extension*
+-   Arkasındaki koda. *Uzantısı*
 
      Webform sınıfı uygulayan bağımlı dosya. Arkasındaki koda dilini belirler *uzantısı* bu dosyanın.
 

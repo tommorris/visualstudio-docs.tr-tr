@@ -2,28 +2,24 @@
 title: VSPackages kaynaklarında | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, resources in
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-caps.latest.revision: 23
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee9d108e7a7a6a5bd971b20c12858edf28ac0cf3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d252f61a9f634f4bb8435626c41c586bbe5cb839
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resources-in-vspackages"></a>VSPackages kaynakları
 Yerelleştirilmiş kaynaklar yerel uydu UI DLL'ler, yönetilen Uydu DLL'leri veya bir yönetilen VSPackage eklenebilir.  
@@ -87,7 +83,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```  
   
 ## <a name="implementation-notes"></a>Uygulama Notları  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]mümkün olduğunda VSPackages yüklenmesini gecikmeler. Bir VSPackage Teknolojiden dosya katıştırma bir sonuç [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] böyle VSPackages bellekte bir birleştirilmiş komutu tablosu oluşturduğunda, Kurulum sırasında yüklemeniz gerekir. Kaynaklar meta veriler VSPackage kod çalıştırmadan inceleyerek VSPackage ayıklanabilir. Performans kaybı en az olacak şekilde VSPackage şu anda başlatılamadı.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mümkün olduğunda VSPackages yüklenmesini gecikmeler. Bir VSPackage Teknolojiden dosya katıştırma bir sonuç [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] böyle VSPackages bellekte bir birleştirilmiş komutu tablosu oluşturduğunda, Kurulum sırasında yüklemeniz gerekir. Kaynaklar meta veriler VSPackage kod çalıştırmadan inceleyerek VSPackage ayıklanabilir. Performans kaybı en az olacak şekilde VSPackage şu anda başlatılamadı.  
   
  Zaman [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage Kur tamamlandıktan sonra kaynak isteği, bu paket zaten yüklenmiş ve başlatılmış, olası performans kaybı en az olacak şekilde.  
   

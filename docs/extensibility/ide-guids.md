@@ -3,22 +3,21 @@ title: IDE GUID'ler | Microsoft Docs
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9732fa16d3c51fc5b413f4e116d9182fe7ab540f
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 10acb5be1caacbbe496ad98f48516206bc14b1cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ide-guids"></a>IDE GUID'leri
 
@@ -31,9 +30,9 @@ ms.lasthandoff: 03/28/2018
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.HtmDocData_guid>|62C81794-A9EC-11D0-8198-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_HtmedPackage>|1B437D20-F8FE-11D2-A6AE-00104BCC7269|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_HtmlLanguageService>|58E975A0-F8FE-11D2-A6AE-00104BCC7269|
-|<xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>|A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3|
-|<xref:Microsoft.VisualStudio.VSConstants.CLSID.SolutionItemsProject_guid>|D1DCDB85-C5E8-11d2-BFCA-00C04F990235|
-|<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsEnvironmentPackage_guid>|DA9FB551-C724-11d0-AE1F-00A0C90FFFC3|
+|<xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>|A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3|
+|<xref:Microsoft.VisualStudio.VSConstants.CLSID.SolutionItemsProject_guid>|D1DCDB85-C5E8-11D2-BFCA-00C04F990235|
+|<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsEnvironmentPackage_guid>|DA9FB551-C724-11D0-AE1F-00A0C90FFFC3|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_HTMEDAllowExistingDocData>|5742D216-8071-4779-BF5F-A24D5F3142BA|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_HtmlEditorFactory>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_TextEditorFactory>|8B382828-6202-11d1-8870-0000F87579D2|
@@ -71,7 +70,7 @@ ms.lasthandoff: 03/28/2018
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>|adfc4e64-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>|adfc4e60-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>|f1536ef8-92ec-443c-9ed7-fdadf150da82|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11d1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11D1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>|adfc4e66-0397-11d1-9f4e-00a0c911004f|
 
 ## <a name="output-pane"></a>Çıkış bölmesi
@@ -90,7 +89,7 @@ ms.lasthandoff: 03/28/2018
 |Sabit|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>|5EFC7975-14BC-11CF-9B2B-00AA00573819|
-|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
+|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11D1-aaf8-00a0c9055a90|
 
 ## <a name="iunknown"></a>IUnknown
 
@@ -118,7 +117,7 @@ ms.lasthandoff: 03/28/2018
 
 |Sabitler|GUID|
 |---------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.GUID_COMClassicPage>|9A341D96-5A64-11d3-BFF9-00C04F990235|
+|<xref:Microsoft.VisualStudio.VSConstants.GUID_COMClassicPage>|9A341D96-5A64-11D3-BFF9-00C04F990235|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage>|9A341D95-5A64-11d3-BFF9-00C04F990235|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_SolutionPage>|9A341D97-5A64-11d3-BFF9-00C04F990235|
 

@@ -1,12 +1,10 @@
 ---
-title: "Sınıf Tasarımcısı hataları hakkında ek bilgi | Microsoft Docs"
-ms.custom: 
+title: Sınıf Tasarımcısı hataları hakkında ek bilgi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CPlusPlusViewInDiagramNoTypeFound
 - vs.classdesigner.CPlusPlusNoTypeFound
@@ -28,23 +26,23 @@ helpviewer_keywords:
 - error messages, class diagrams
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 53b61b1fa49ffcbc047d47dd26586b45ae883c5f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8cd6223786db06506c1fa4ac9b6bd3118eb5e3d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Sınıf Tasarımcısı Hataları Hakkında Ek Bilgiler
 Sınıf Tasarımcısı, kaynak dosyalarının konumunu böylece proje yapınızı değiştirme izlemez veya projedeki kaynak dosyalarını taşıma sınıfı Designer'ın türü (özellikle bir typedef, temel sınıfların veya ilişki türleri kaynak türü) kaybetmesine neden olabilir. Hata gibi alabilirsiniz **Sınıf Tasarımcısı bu tür görüntüleyemiyor**. Bunu yaparsanız, yeniden yeniden görüntülemek için sınıf diyagramı konumlandırılan veya değiştirilen kaynak kodunu sürükleyin.  
   
 Aşağıdaki kaynakları diğer hataları ve Uyarıları ile Yardım bulabilirsiniz:  
   
-[Visual C++ kodu ile çalışma](working-with-visual-cpp-code.md)  
+[Visual C++ Kodu ile Çalışma](working-with-visual-cpp-code.md)  
 Sorun giderme C++ sınıf diyagramında görüntüleme hakkında bilgi içerir.  
   
 [Visual Studio Sınıf Tasarımcısı Forumu](http://go.microsoft.com/fwlink/?LinkId=160754)  

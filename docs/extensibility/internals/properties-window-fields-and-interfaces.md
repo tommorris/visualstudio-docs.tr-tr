@@ -1,27 +1,23 @@
 ---
-title: "Özellikler penceresi alanları ve arabirimleri | Microsoft Docs"
-ms.custom: 
+title: Özellikler penceresi alanları ve arabirimleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f238cceb189723e3ec10fbf8db4abbd9675ae21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a286d8cc782305b746789f56af431d7a62f8e2fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Özellikler penceresi alanları ve arabirimleri
 Hangi bilgilerin görüntüleneceğini belirlemek seçim için model **özellikleri** penceresi IDE'de odaklanmış penceresi dayanır. Her pencere ve nesneyi seçili penceresinde genel seçimi bağlamına gönderilir, Seçim bağlam nesnesi olabilir. Bu pencere odağa sahip olduğunda ortamı genel seçimi bağlam pencere çerçevesi değerlerle güncelleştirir. Bu nedenle odak değiştiğinde, Seçim bağlam yapar.  
@@ -49,7 +45,7 @@ Hangi bilgilerin görüntüleneceğini belirlemek seçim için model **özellikl
   
  Son olarak, listenin sonuna **özellikleri** penceresinde seçili alanının açıklaması de bulunur **özellikleri** penceresi kılavuz. Daha fazla bilgi için bkz: [alma alan açıklamaları Özellikler penceresinde](#getting-field-descriptions-from-the-properties-window).  
   
-## <a name="updating-property-values-in-the-properties-window"></a>Özellik değerlerini Özellikleri penceresinde güncelleştiriliyor
+## <a name="updating-property-values-in-the-properties-window"></a> Özellik değerlerini Özellikleri penceresinde güncelleştiriliyor
 Tutmak için iki yolla **özellikleri** penceresi özellik değeri değişiklikleri ile eşitlenmiş. İlk çağırmaktır <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> ortamı tarafından sağlanan araç ve belge pencereleri oluşturulmasını ve erişim de dahil olmak üzere temel Pencereleme işlevine erişim sağlayan arabirim. Aşağıdaki adımlar bu eşitleme işlemi açıklar.  
   
 ### <a name="updating-property-values-using-ivsuishell"></a>Özellik değerlerini IVsUIShell kullanarak güncelleştirme  
@@ -67,7 +63,7 @@ Tutmak için iki yolla **özellikleri** penceresi özellik değeri değişiklikl
   
 #### <a name="considerations-in-implementing-the-iconnection-interface"></a>Iconnection arabirimini uygulayan ilişkin düşünceler  
   
-1.  `IConnection`olan bir numaralandırıcı alt nesne erişim sağlayan <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> arabirimi. Ayrıca tüm bağlantı noktası alt nesnelerin erişim sağlayan her hangi uygulayan <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> arabirimi.  
+1.  `IConnection` olan bir numaralandırıcı alt nesne erişim sağlayan <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> arabirimi. Ayrıca tüm bağlantı noktası alt nesnelerin erişim sağlayan her hangi uygulayan <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> arabirimi.  
   
 2.  Herhangi bir Gözat nesnesi uygulamak için sorumlu olduğu bir <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> olay. **Özellikleri** penceresi öneri olay aracılığıyla ayarlamak için `IConnection`.  
   
@@ -75,9 +71,9 @@ Tutmak için iki yolla **özellikleri** penceresi özellik değeri değişiklikl
   
 4.  Bir istemci çağırabilirsiniz `IConnection` sahip numaralandırıcısı alt nesneye erişim elde etmek için arabirim <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> arabirimi. <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> Arabirimi sonra çağrılabilir her giden bir arabirim kimliği'ni (IID) için bağlantı noktaları numaralandırılamıyor.  
   
-5.  `IConnection`bağlantı noktası alt nesneler ile erişim sağlamak için çağrılabilir <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> her giden IID için arabirim. Aracılığıyla <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> arabirimi, bir istemci başlatıldığında veya bir danışma döngü bağlanılabilirlik nesne ve istemcinin kendi eşitleme ile sona erer. İstemci ayrıca çağırabilirsiniz <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> bir Numaralayıcı nesnesi ile almak için arabirimi <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> hakkında bilgi sahibi bağlantıları numaralandırmak için arabirim.  
+5.  `IConnection` bağlantı noktası alt nesneler ile erişim sağlamak için çağrılabilir <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> her giden IID için arabirim. Aracılığıyla <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> arabirimi, bir istemci başlatıldığında veya bir danışma döngü bağlanılabilirlik nesne ve istemcinin kendi eşitleme ile sona erer. İstemci ayrıca çağırabilirsiniz <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> bir Numaralayıcı nesnesi ile almak için arabirimi <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> hakkında bilgi sahibi bağlantıları numaralandırmak için arabirim.  
   
-## <a name="getting-field-descriptions-from-the-properties-window"></a>Özellikler penceresinden alan açıklamaları alma
+## <a name="getting-field-descriptions-from-the-properties-window"></a> Özellikler penceresinden alan açıklamaları alma
 Ekranın alt kısmındaki **özellikleri** penceresinde, bir açıklama alanı, seçili özellik alanıyla ilgili bilgileri görüntüler. Bu özellik varsayılan olarak açıktır. Açıklama alanı gizlemek istiyorsanız, sağ **özellikleri** penceresini açın ve **açıklama**. Bunun yapılması ayrıca kaldırır onay işareti yanına **açıklama** menü penceresinin başlık. Geçiş yapmak için aynı adımları izleyerek alan yeniden görüntüleyebilirsiniz **açıklama** yeniden açın.  
   
  Açıklama alanı bilgilerinde geldiği <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>. Her yöntem, arabirim, coclass'ı ve benzeri bir yerelleştirilmemiş olabilir `helpstring` tür kitaplığı özniteliği. **Özellikleri** penceresi alır, dizeden <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>.  

@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d751e122d0c9eca23d0349761054d092a438ba8
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 9bc6041adf0fdfb35e13fd8c3c989f149d69950a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-quick-actions"></a>Genel Hızlı eylemleri
 
@@ -252,7 +252,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 |  Tanılama kimliği | Geçerli diller |  Desteklenen sürüm |
 | ------- | -------------------- | ----------------  |
-| IDE0034 | C# 7.1+ | Visual Studio 2017 sürüm 15.3 |
+| IDE0034 | C# ' TA 7.1 + | Visual Studio 2017 sürüm 15.3 |
 
 ## <a name="actions-that-add-missing-code"></a>Eksik kod ekleme Eylemler
 
@@ -714,7 +714,7 @@ class MyClass4
 
 |  Tanılama kimliği | Geçerli diller |  Desteklenen sürüm |
 | ------- | -------------------- | ----------------  |
-| IDE0021-27 | C# 6.0+ | Visual Studio 2017 RTW |
+| IDE0021-27 | C# ' TA 6.0 + | Visual Studio 2017 RTW |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>Yerel işleve Çevir anonim işlevi
 
@@ -925,7 +925,7 @@ var tuple = (age, name);
 | Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
 | ------- | -------------------- | ----------------  |
 | IDE0037 | C# | Visual Studio 2017 v. 15.5 |
-| IDE0037 | C# 7.1+ | Visual Studio 2017 v. 15.5 |
+| IDE0037 | C# ' TA 7.1 + | Visual Studio 2017 v. 15.5 |
 
 ### <a name="deconstruct-tuple-declaration"></a>Tuple bildirimi deconstruct
 

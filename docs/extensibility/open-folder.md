@@ -2,23 +2,20 @@
 title: Visual Studio açık klasör genişletilebilirlik genel bakış | Microsoft Docs
 ms.custom: ''
 ms.date: 02/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 94c3f8bf-1de3-40ea-aded-7f40c4b314c7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bbe9638777bc672a0cec494498a38f4bd8ce1f4
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: d916ea30dd9b72a2d8bd59e8d3d34f9e73c74877
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="open-folder-extensibility"></a>Açık klasör genişletilebilirliği
 
@@ -31,7 +28,7 @@ ms.lasthandoff: 03/28/2018
 
 .NET ve C++ geliştirme ettirilmesi gibi iş yükleri ile kullanıldığında, kullanıcılar ayrıca alın:
 
-* Rich Intellisense
+* Zengin IntelliSense
 * Dile özgü işlevi
 
 Açık klasörüyle uzantısı yazarlar Zengin özellikleri herhangi bir dil için oluşturabilirsiniz. Kullanıcının bir kullanıcı herhangi bir dosyada codebase yapı, hata ayıklama ve sembol arama desteği için API'ler vardır. Geçerli Extender'larının kodu projeleri veya bir çözüm yedekleme olmadan anlamak için mevcut Visual Studio özelliklerine güncelleştirebilirsiniz.

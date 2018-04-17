@@ -2,12 +2,9 @@
 title: Uygulama sayfası, Proje Tasarımcısı (Visual Basic) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
 - vb.ProjectPropertiesApplication
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a84db9a4e1d2617fd38229cfca6ebe6d20a1d3f
-ms.sourcegitcommit: 627708d128a91656e34ce5d8e061102da4c66b4d
+ms.openlocfilehash: 9372f915fb1914bea971ffb287fa5788a9372449
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Uygulama Sayfası, Proje Tasarımcısı (Visual Basic)
 
@@ -172,7 +169,7 @@ Seçin **üzerinde ana pencereyi kapatmak** uygulamanın ana penceresi kapatıld
 
 Bu ayarı kullanma hakkında daha fazla bilgi için bkz: <xref:System.Windows.Application.Shutdown%2A>
 
-### <a name="edit-xaml"></a>Edit XAML
+### <a name="edit-xaml"></a>XAML Düzenle
 
 Açın ve XAML Düzenleyicisi'nde uygulama tanımı dosyası (Application.xaml) değiştirmek için bu düğmeye tıklayın. Bu düğmeye tıkladığınızda, uygulama tanım düğümde Application.xaml açar. Kaynakları tanımlama gibi belirli görevleri gerçekleştirmek için bu dosyayı düzenlemek zorunda kalabilirsiniz. Uygulama tanımı dosyası mevcut değilse, Proje Tasarımcısı tane oluşturur.
 

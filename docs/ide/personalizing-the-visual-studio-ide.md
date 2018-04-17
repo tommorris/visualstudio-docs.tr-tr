@@ -1,21 +1,20 @@
 ---
-title: "Visual Studio IDE özelleştirme | Microsoft Docs"
-ms.custom: 
+title: Visual Studio IDE özelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ff7461fc5880f744a2a32141155deb6c4b309fa0
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cecb3d9d1c221fc35f9a0c16ff7d5f685a85978e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE'yi kişiselleştirme
 
@@ -60,5 +59,5 @@ Tanımlar ve birden çok pencere düzenlerini kaydedin ve aralarında geçiş. �
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio IDE overview](../ide/visual-studio-ide.md)  
+[Visual Studio IDE genel bakış](../ide/visual-studio-ide.md)  
 [Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)

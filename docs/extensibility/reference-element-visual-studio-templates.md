@@ -1,30 +1,26 @@
 ---
-title: "Başvuru öğesi (Visual Studio şablonları) | Microsoft Docs"
-ms.custom: 
+title: Başvuru öğesi (Visual Studio şablonları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Reference
 helpviewer_keywords:
 - Reference element [Visual Studio templates]
 - <Reference> element [Visual Studio templates]
 ms.assetid: 852772ea-c324-42e9-8c8a-6d565414a109
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1006e85611044805c0f3bd1e0035595288a5b32d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9e0217360b2a8e9c6c8e723561aff383ed3226d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference Öğesi (Visual Studio Şablonları)
 Öğe bir projeye eklendiğinde eklemek için derleme başvurusu belirtir.  
@@ -58,10 +54,10 @@ ms.lasthandoff: 12/22/2017
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Başvuruları](../extensibility/references-element-visual-studio-templates.md)|Şablon projelerine ekler derleme başvurularını gruplandırır.|  
+|[Başvurular](../extensibility/references-element-visual-studio-templates.md)|Şablon projelerine ekler derleme başvurularını gruplandırır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `Reference`gerekli bir alt öğesidir `References`.  
+ `Reference` gerekli bir alt öğesidir `References`.  
   
  `Reference` Ve `References` öğeleri sahip .vstemplate dosyaları yalnızca kullanılabilir bir `Type` öznitelik değerini `Item`.  
   

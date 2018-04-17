@@ -1,21 +1,19 @@
 ---
-title: "İzlenecek yol: bir Model erişen bir metin şablonuna ilişkin hata ayıklama | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: bir Model erişen bir metin şablonuna ilişkin hata ayıklama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d0cc9d59e4dfbe98312d44cceb91e729f0b81126
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c509a4769323696c56d69bbd5a632f28413cbe91
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>İzlenecek yol: Modele Erişen Metin Şablonunda Hata Ayıklama
 Değiştirme veya bir etki alanına özgü dil çözümde metin şablonları ekleme, şablonu kaynak koduna veya oluşturulan kod derlediğinde altyapısı dönüştüren olduğunda hataları alabilirsiniz. Aşağıdaki yönergeler metin şablonu hata ayıklamak için yapabileceği şeylerden bazıları gösterir.  
@@ -30,7 +28,7 @@ Değiştirme veya bir etki alanına özgü dil çözümde metin şablonları ekl
   
 -   Çözüm şablonu: en az bir dil  
   
--   File extension: .ddd  
+-   Dosya uzantısı: .ddd  
   
 -   Şirket adı: Fabrikam  
   

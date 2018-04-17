@@ -1,27 +1,23 @@
 ---
-title: "Bir çözümde proje yükleme yönetme | Microsoft Docs"
-ms.custom: 
+title: Bir çözümde proje yükleme yönetme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, managing project loading
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dbbb8ddcf574f2e3db81ce63db257e21ff88839
-ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
+ms.openlocfilehash: d0e479a96252710d1f7e6285ffaaa2baf383c061
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Bir çözümde yönetme proje yükleniyor
 Visual Studio çözümleri, çok sayıda projeleri içerebilir. Varsayılan Visual Studio çözümü açıldığında bir çözümdeki tüm projeleri yüklemek için ve bunların tümünün Yükleme tamamlanana kadar projelerin hiçbiri erişmek kullanıcı izin vermeyecek şekilde davranıştır. Proje yükleme işlemini iki dakikadan fazla en son ne zaman, yüklenen projelerinin sayısına ve projeleri toplam sayısını gösteren bir ilerleme çubuğu görüntülenir. Bir çözümde birden çok proje ile çalışırken, kullanıcı projeleri unload, ancak bu yordamı bazı dezavantajları vardır: bellekten projeleri, çözümü yeniden derle komutun bir parçası oluşturulan değil ve IntelliSense açıklamaları türleri ve üyeleri kapalı projeleri görüntülenmez.  

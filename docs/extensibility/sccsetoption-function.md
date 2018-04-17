@@ -1,29 +1,25 @@
 ---
-title: "SccSetOption işlevi | Microsoft Docs"
-ms.custom: 
+title: SccSetOption işlevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccSetOption
 helpviewer_keywords:
 - SccSetOption function
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70fe624984adce58191ee7d354185eac0bb527ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 916378ea594d14c9493535b3a28e72ea49ed4733
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccsetoption-function"></a>SccSetOption işlevi
 Bu işlev, kaynak denetim eklentisi davranışını denetleyen seçenekler ayarlar.  
@@ -75,7 +71,7 @@ SCCRTN SccSetOption(
  Varsa `nOption` olan `SCC_OPT_EVENTQUEUE`, IDE devre dışı bırakma (yeniden etkinleştirme ya da) arka plan işleme. Örneğin, bir derleme sırasında IDE üzerinde boşta işleme herhangi bir türde durdurmak için eklenti kaynak denetimi taramasını sağlayabilirsiniz. Derlemeden sonra bu eklentinin olay sırası güncel tutmak için arka plan işleme yeniden etkinleştirmeniz. Karşılık gelen `SCC_OPT_EVENTQUEUE` değerini `nOption`, iki olası değerler için `dwVal`, yani, `SCC_OPT_EQ_ENABLE` ve `SCC_OPT_EQ_DISABLE`.  
   
 ## <a name="sccopthascancelmode"></a>SCC_OPT_HASCANCELMODE  
- Varsa değeri `nOption` olan `SCC_OPT_HASCANCELMODE`, uzun işlemlerini iptal etme kullanıcıların IDE verir. Ayarı `dwVal` için `SCC_OPT_HCM_NO` (varsayılan) IDE iptal modu yok olduğunu gösterir. Kaynak Denetim eklentisi, iptal etmek kullanıcı istiyorsa, kendi iptal düğmesi sağlaması gerekir. `SCC_OPT_HCM_YES`IDE eklenti SCC kendi iptal düğmesi görüntülemek gerek kalmayacak şekilde, bir işlem iptal etme olanağı sağlar gösterir. IDE ayarlarsa `dwVal` için `SCC_OPT_HCM_YES`, yanıt vermesi için hazırlanan `SCC_MSG_STATUS` ve `DOCANCEL` gönderilen iletileri `lpTextOutProc` geri çağırma işlevi (bkz [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). IDE Bu değişken ayarlı değil, eklenti bu iki iletiyle göndermemelisiniz.  
+ Varsa değeri `nOption` olan `SCC_OPT_HASCANCELMODE`, uzun işlemlerini iptal etme kullanıcıların IDE verir. Ayarı `dwVal` için `SCC_OPT_HCM_NO` (varsayılan) IDE iptal modu yok olduğunu gösterir. Kaynak Denetim eklentisi, iptal etmek kullanıcı istiyorsa, kendi iptal düğmesi sağlaması gerekir. `SCC_OPT_HCM_YES` IDE eklenti SCC kendi iptal düğmesi görüntülemek gerek kalmayacak şekilde, bir işlem iptal etme olanağı sağlar gösterir. IDE ayarlarsa `dwVal` için `SCC_OPT_HCM_YES`, yanıt vermesi için hazırlanan `SCC_MSG_STATUS` ve `DOCANCEL` gönderilen iletileri `lpTextOutProc` geri çağırma işlevi (bkz [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). IDE Bu değişken ayarlı değil, eklenti bu iki iletiyle göndermemelisiniz.  
   
 ## <a name="sccoptnamechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
  NOption ayarlanmışsa `SCC_OPT_NAMECHANGEPFN`ve her iki kaynak denetimi eklentisini ve IDE izin verebilirsiniz, eklenti gerçekte yeniden adlandırabilir veya bir kaynak denetimi işlemi sırasında dosya taşıma. `dwVal` Türü için bir işlev işaretçisi ayarlanacak [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md). Bir kaynak denetimi işlemi sırasında üç parametre geçirme, bu işlev eklenti çağırabilirsiniz. Bu eski adı (tam yolu) dosyasının, yeni adıyla (tam yolu), dosya ve IDE ilgisi olan bilgileri için bir işaretçi var. IDE üzerinde son this işaretçisi çağırarak gönderir `SccSetOption` ile `nOption` kümesine `SCC_OPT_USERDATA`, ile `dwVal` verilere işaret eden. Bu işlev için destek isteğe bağlıdır. VSSCI Tak-kullanır bu özelliği kendi işlevi işaretçisi ve kullanıcı verisi değişkenleri başlatmalıdır `NULL`, ve onu bir verildi sürece, bir yeniden adlandırma işlevini çağırmanız gerekir değil. Bu ayrıca verilen değer tutun veya yanıt için yeni bir çağrı olarak değiştirmek için hazırlıklı olmalıdır `SccSetOption`. Bu kaynak denetimi komutu işlemi ortasında yapılmaz, ancak komut arasında gerçekleşebilir.  

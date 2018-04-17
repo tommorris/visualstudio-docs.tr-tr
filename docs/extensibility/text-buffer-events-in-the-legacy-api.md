@@ -1,27 +1,23 @@
 ---
-title: "Metin arabelleği olayları eski API'sindeki | Microsoft Docs"
-ms.custom: 
+title: Metin arabelleği olayları eski API'sindeki | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e7847cdca2065cadd6adaf0d4b3e6ea10444725
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ab2812d30c0f02063e9ed3672e9b01855c77da22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Eski API metin arabelleği olayları
 Metin arabellek nesnesi farklı durumlarda yanıt olanak sağlayan birkaç farklı olayları gösterir.  
@@ -52,8 +48,8 @@ Metin arabellek nesnesi farklı durumlarda yanıt olanak sağlayan birkaç farkl
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents>|Tek boyutlu koordinatlarında temel metin arabellek değişiklikleri istemcilere bildirir.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>|Temel metin arabellek iki boyutlu koordinatlarında değişiklikleri istemcilere bildirir.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserDataEvents>|Kullanıcı verilerde yapılan değişiklikleri istemcilere bildirir.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Olayı tetiklemek için son yürütme hareketi istemcilere bildirir ve değiştirilen metin aralığını sağlar. `IVsPreliminaryTextChangeCommitEvents` Arabirimi değil geri veya komutları yinelemek için yanıt olarak tetiklenir. Olaylar, yalnızca bir geri alma yöneticisi olan arabelleklerini kov. `IVsPreliminaryTextChangeCommitEvents`Asıl listenin gibi diğer olayları önce değişiklikler kaydedilmeden önce diğer olaylarla metni değiştirmeyin emin olmak için tetiklenir. VSPackage ya da izlemelisiniz `IVsPreliminaryTextChangeCommitEvents` arabirimi veya `IVsFinalTextChangeCommitEvents` arabirimi, ancak ikisini birden değil.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Olayı tetiklemek için son yürütme hareketi istemcilere bildirir ve değiştirilen metin aralığını sağlar. `IVsFinalTextChangeCommitEvents` Arabirimi değil geri veya komutları yinelemek için yanıt olarak tetiklenir. Olaylar, yalnızca bir geri alma yöneticisi olan arabelleklerini kov. `IVsFinalTextChangeCommitEvents`Yalnızca dil hizmetler veya düzenleme üzerinde tam denetime sahip diğer nesneleri tarafından kullanılmaya yöneliktir. VSPackage ya da izlemelisiniz `IVsPreliminaryTextChangeCommitEvents` arabirimi veya `IVsFinalTextChangeCommitEvents` arabirimi, ancak ikisini birden değil.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Olayı tetiklemek için son yürütme hareketi istemcilere bildirir ve değiştirilen metin aralığını sağlar. `IVsPreliminaryTextChangeCommitEvents` Arabirimi değil geri veya komutları yinelemek için yanıt olarak tetiklenir. Olaylar, yalnızca bir geri alma yöneticisi olan arabelleklerini kov. `IVsPreliminaryTextChangeCommitEvents` Asıl listenin gibi diğer olayları önce değişiklikler kaydedilmeden önce diğer olaylarla metni değiştirmeyin emin olmak için tetiklenir. VSPackage ya da izlemelisiniz `IVsPreliminaryTextChangeCommitEvents` arabirimi veya `IVsFinalTextChangeCommitEvents` arabirimi, ancak ikisini birden değil.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Olayı tetiklemek için son yürütme hareketi istemcilere bildirir ve değiştirilen metin aralığını sağlar. `IVsFinalTextChangeCommitEvents` Arabirimi değil geri veya komutları yinelemek için yanıt olarak tetiklenir. Olaylar, yalnızca bir geri alma yöneticisi olan arabelleklerini kov. `IVsFinalTextChangeCommitEvents` Yalnızca dil hizmetler veya düzenleme üzerinde tam denetime sahip diğer nesneleri tarafından kullanılmaya yöneliktir. VSPackage ya da izlemelisiniz `IVsPreliminaryTextChangeCommitEvents` arabirimi veya `IVsFinalTextChangeCommitEvents` arabirimi, ancak ikisini birden değil.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski API kullanarak metin arabelleği erişme](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   

@@ -1,27 +1,23 @@
 ---
-title: "Özellikler penceresi genel bakış | Microsoft Docs"
-ms.custom: 
+title: Özellikler penceresi genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f766fe903df4f7a7ea36fb4ec1654b889457f65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e255795a52064723477eda4e1aca532adedb6be1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-overview"></a>Özellikler penceresi genel bakış
 **Özellikleri** penceresi windows bulunan iki ana tür seçili nesnelerin özelliklerini görüntülemek için kullanılan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Bu iki windows türleri şunlardır:  
@@ -44,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Kategorilere listesini sağlar **özellikleri** penceresi ve her bir özellik için bir kategori eşler.|  
 |[IDispatch arabirimi](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)|Bir nesnenin yöntemleri ve programlama araçları ve Otomasyon destekleyen diğer uygulamalar için özellikler sunar.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Adlı üç nokta (...) düğmeler sağlar *oluşturucular* nesne tarafından uygulanan modal iletişim windows açın. Bir değer kolayca bir metin alanı kullanıcı tarafından yazılan değil olduğunda kullanılır. Örneğin, sizin için RGB değerini belirleyen bir renk seçici açmak için kullanılabilir.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Görüntülenen bilgileri güncelleştirmek için kullanılan nesneleri erişim sağlayan **özellikleri** penceresi. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>VSPackages tarafından görüntülenecek ilgili özellikleri seçilebilir nesneleriyle içeren her bir pencere için uygulanır.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Görüntülenen bilgileri güncelleştirmek için kullanılan nesneleri erişim sağlayan **özellikleri** penceresi. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> VSPackages tarafından görüntülenecek ilgili özellikleri seçilebilir nesneleriyle içeren her bir pencere için uygulanır.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Bir arabirim ve bir yapı alanları yöntemleri gibi bir nesne türü hakkında bilgi verilmektedir.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|VSPackages seçimi olayların bildirim almak ve geçerli proje hiyerarşisi, öğesi, öğenin değeri ve komut UI bağlamı hakkında bilgi almak için etkinleştirir.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Birden çok seçimin erişimi olan bir ortam sağlar.|  

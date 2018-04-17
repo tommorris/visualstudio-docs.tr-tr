@@ -1,31 +1,29 @@
 ---
 title: Proje Modelleme | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], implementing project objects
 - project models, automation
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 31c3d87a44838ead7663ff4c156985ab1b8e98eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: adb0204afd889ab487070578d136aea736bb63a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-modeling"></a>Proje Modelleme
 Projenizi standart proje nesneleri uygulamak için Otomasyon sağlayan bir sonraki adım: <xref:EnvDTE.Projects> ve `ProjectItems` koleksiyonları; `Project` ve <xref:EnvDTE.ProjectItem> ; ve uygulamanız için benzersiz kalan nesneleri. Bu standart nesneleri Dteinternal.h dosyasında tanımlanır. Standart nesneleri uygulaması BscPrj örnekte sağlanır. Bu sınıfların modelleri olarak yan yana göze kendi standart proje nesneleri oluşturmak için kullanabileceğiniz diğer proje türleri proje nesneleri ile.  
   
- Çağrı yapabilmek için bir Otomasyon tüketici varsayar <xref:EnvDTE.Solution>("`<UniqueProjName>")` ve <xref:EnvDTE.ProjectItems> (`n`) n, çözümdeki belirli bir proje alma dizin numarası. Bu Otomasyon araması yapmadan neden çağırmak ortam <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> VSITEMID_ROOT VSHPROPID_ExtObject VSHPROPID parametre olarak ve ItemId parametre olarak geçirme uygun proje hiyerarşisi üzerinde. `IVsHierarchy::GetProperty`döndüren bir `IDispatch` çekirdek sağlayarak Otomasyon nesnesine işaretçi `Project` uyguladıysanız arabirimi.  
+ Çağrı yapabilmek için bir Otomasyon tüketici varsayar <xref:EnvDTE.Solution>("`<UniqueProjName>")` ve <xref:EnvDTE.ProjectItems> (`n`) n, çözümdeki belirli bir proje alma dizin numarası. Bu Otomasyon araması yapmadan neden çağırmak ortam <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> VSITEMID_ROOT VSHPROPID_ExtObject VSHPROPID parametre olarak ve ItemId parametre olarak geçirme uygun proje hiyerarşisi üzerinde. `IVsHierarchy::GetProperty` döndüren bir `IDispatch` çekirdek sağlayarak Otomasyon nesnesine işaretçi `Project` uyguladıysanız arabirimi.  
   
  Söz dizimi aşağıdaki gibidir `IVsHierarchy::GetProperty`.  
   

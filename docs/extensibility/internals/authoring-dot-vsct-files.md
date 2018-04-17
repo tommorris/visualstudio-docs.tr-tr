@@ -1,27 +1,23 @@
 ---
-title: "Yazma. Vsct dosyaları | Microsoft Docs"
-ms.custom: 
+title: Yazma. Vsct dosyaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa274c807aaa1ed212a7b283a35e510615561eb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65fc62d5685ca7c81b3ebb7f524db3cdbebe72c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-vsct-files"></a>Yazma. Vsct dosyaları
 Bu belge, menü öğeleri, araç çubukları ve diğer kullanıcı arabirimi (UI) öğeleri Visual Studio tümleşik geliştirme ortamı (IDE) eklemek için bir .vsct dosyasını yazar gösterilmektedir. Visual Studio .vsct dosya zaten sahip olmayan paket (VSPackage) kullanıcı Arabirimi öğeleri eklediğinizde, aşağıdaki adımları kullanın.  
@@ -234,7 +230,7 @@ Bu belge, menü öğeleri, araç çubukları ve diğer kullanıcı arabirimi (UI
  Bazı menü ve düğme türleri özel davranışları içerir. Aşağıdaki tabloda bazı özel menü ve düğme türleri açıklanmaktadır. Diğer türleri için bkz: `types` özniteliği açıklamasında [menü öğesi](../../extensibility/menu-element.md), [Button öğesi](../../extensibility/button-element.md), ve [açılan öğesi](../../extensibility/combo-element.md).  
   
  Birleşik giriş kutusu  
- Birleşik giriş kutusu araç çubuğunda kullanılabilecek açılan listesidir. Birleşik giriş kutuları için kullanıcı Arabirimi eklemek için oluşturma bir [birleşik](../../extensibility/combos-element.md) öğesinde `Commands` öğesi. Daha sonra ekleyin `Combos` öğesi bir `Combo` eklemek her birleşik giriş kutusu öğesi. `Combo`aynı öznitelikleri ve alt öğeleri olarak öğelere sahip `Button` öğeleri ve ayrıca `DefaultWidth` ve `idCommandList` öznitelikleri. `DefaultWidth` Öznitelik piksel cinsinden genişliği ayarlar ve `idCommandList` özniteliği noktaları birleşik giriş kutusunu doldurmak için kullanılan bir komut kimliği. Daha fazla bilgi için bkz: `Combo` öğesi belgeleri.  
+ Birleşik giriş kutusu araç çubuğunda kullanılabilecek açılan listesidir. Birleşik giriş kutuları için kullanıcı Arabirimi eklemek için oluşturma bir [birleşik](../../extensibility/combos-element.md) öğesinde `Commands` öğesi. Daha sonra ekleyin `Combos` öğesi bir `Combo` eklemek her birleşik giriş kutusu öğesi. `Combo` aynı öznitelikleri ve alt öğeleri olarak öğelere sahip `Button` öğeleri ve ayrıca `DefaultWidth` ve `idCommandList` öznitelikleri. `DefaultWidth` Öznitelik piksel cinsinden genişliği ayarlar ve `idCommandList` özniteliği noktaları birleşik giriş kutusunu doldurmak için kullanılan bir komut kimliği. Daha fazla bilgi için bkz: `Combo` öğesi belgeleri.  
   
  MenuController  
  Menü denetleyicisi yanında bir ok olan bir düğme vardır. Okunu listesini açar. UI menü denetleyicisi eklemek için Oluştur bir `Menu` öğesi ve kümesi kendi `type` özniteliğini **MenuController** veya **MenuControllerLatched**istediğiniz davranış bağlı olarak. Menü denetleyicisi doldurmak için üst öğesi olarak ayarlanmış bir `Group` öğesi. Menü denetleyicisi o grubun tüm alt öğeleri, aşağı açılan listede görüntülenir.  

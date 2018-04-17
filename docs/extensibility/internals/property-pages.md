@@ -1,27 +1,25 @@
 ---
-title: "Özellik sayfaları | Microsoft Docs"
-ms.custom: 
+title: Özellik sayfaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: cedf021321b66c47690450823a7da92cd19888eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1b08e210a57388d77859600c02c0e6a30a404884
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="property-pages"></a>Özellik Sayfaları
 Kullanıcıları görüntülemek ve özellik sayfalarını kullanarak proje yapılandırmaya bağlı ve - bağımsız özelliklerini değiştirin. A **özellik sayfaları** düğmesi etkinleşir **özellikleri** penceresi veya bir özellik sayfası görünümü seçili nesnenin sağlamak nesneleri için Çözüm Gezgini araç. Özellik sayfaları ortamı tarafından oluşturulan ve çözümler ve projeler için kullanılabilir. Ancak, aynı zamanda olabilirler olun proje öğeleri yapılandırmaya bağlı özelliklerini kullanmak için kullanılabilir. Projedeki dosyaları düzgün bir şekilde oluşturmak farklı derleyici anahtar ayarları gerektirdiğinde bu özellik kullanılabilir.  
@@ -50,7 +48,7 @@ Alan biçimi ve ağaç yapısı proje özellik sayfaları iletişim kutusu
   
  Bir üst düzey kategori altında görüntülenen her kategori ayrı özellik sayfasını temsil eder. Kategori ve alt kategori girişleri kullanılabilir iletişim kutusunda, uygulamanız tarafından belirlenir `ISpecifyPropertyPages` ve `IVsPropertyPage`.  
   
- `IDispatch`özellik sayfaları uygulama üzerinde görüntülenecek özellikleri olan seçimi kapsayıcı öğeleri için nesnelerini `ISpecifyPropertyPages` sınıfı kimliklerinin listesini numaralandıramıyor. Sınıf kimlikleri için değişkenleri olarak geçirilir `ISpecifyPropertyPages` ve özellik sayfaları örneği oluşturmak için kullanılır. Sınıf kimlikleri listesini de geçirilir `IVsPropertyPage` iletişim kutusunun soldaki ağaç yapısı oluşturmak için. Özellik sayfaları sonra geçişi bilgi geri `IDispatch` uygulayan nesne `ISpecifyPropertyPages` ve her bir sayfa için bilgi doldurur.  
+ `IDispatch` özellik sayfaları uygulama üzerinde görüntülenecek özellikleri olan seçimi kapsayıcı öğeleri için nesnelerini `ISpecifyPropertyPages` sınıfı kimliklerinin listesini numaralandıramıyor. Sınıf kimlikleri için değişkenleri olarak geçirilir `ISpecifyPropertyPages` ve özellik sayfaları örneği oluşturmak için kullanılır. Sınıf kimlikleri listesini de geçirilir `IVsPropertyPage` iletişim kutusunun soldaki ağaç yapısı oluşturmak için. Özellik sayfaları sonra geçişi bilgi geri `IDispatch` uygulayan nesne `ISpecifyPropertyPages` ve her bir sayfa için bilgi doldurur.  
   
  Gözat nesnesinin özelliklerini kullanarak alınır `IDispatch` seçimi kapsayıcıdaki her nesne için.  
   
@@ -73,11 +71,11 @@ Alan biçimi ve ağaç yapısı proje özellik sayfaları iletişim kutusu
   
      Bir proje veya kullanıcı F5 tuşuna bastığında ya da çalışma derle menüsünde seçer, başlatılacak çözümün özellik sayfasından projeleri belirtebilirsiniz. Bu, eski etkin proje adının kalın yazı tipiyle Çözüm Gezgini'nde görüntülenen algılama ile benzer bir şekilde çalışır.  
   
-     Çağırarak otomasyon modeli özelliği olarak başlangıç projesi alabilir `DTE.Solution.SolutionBuild.StartupProjects`. Bir VSPackage içinde çağırırsınız <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> yöntemleri. `IVsSolutionBuildManager`bir hizmet olarak kullanılabilir `QueryService` SID_SVsSolutionBuildManager üzerinde. Daha fazla bilgi için bkz: [proje yapılandırma nesnesi](../../extensibility/internals/project-configuration-object.md) ve [çözüm yapılandırması](../../extensibility/internals/solution-configuration.md).  
+     Çağırarak otomasyon modeli özelliği olarak başlangıç projesi alabilir `DTE.Solution.SolutionBuild.StartupProjects`. Bir VSPackage içinde çağırırsınız <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> yöntemleri. `IVsSolutionBuildManager` bir hizmet olarak kullanılabilir `QueryService` SID_SVsSolutionBuildManager üzerinde. Daha fazla bilgi için bkz: [proje yapılandırma nesnesi](../../extensibility/internals/project-configuration-object.md) ve [çözüm yapılandırması](../../extensibility/internals/solution-configuration.md).  
   
 -   Etkin çözüm yapı yapılandırması  
   
-     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]uygulayarak Otomasyon modelinde kullanılabilir bir etkin çözüm yapılandırmasına sahip `DTE.Solution.SolutionBuild.ActiveConfiguration`. (Her proje birden çok yapılandırmaları, farklı adlara sahip birden çok platformdaki olabilir) çözümüne için her bir proje yapılandırması içeren bir koleksiyon bir çözüm yapılandırmadır. Çözümün özellik sayfaları ile ilgili daha fazla bilgi için bkz: [çözüm yapılandırması](../../extensibility/internals/solution-configuration.md).  
+     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uygulayarak Otomasyon modelinde kullanılabilir bir etkin çözüm yapılandırmasına sahip `DTE.Solution.SolutionBuild.ActiveConfiguration`. (Her proje birden çok yapılandırmaları, farklı adlara sahip birden çok platformdaki olabilir) çözümüne için her bir proje yapılandırması içeren bir koleksiyon bir çözüm yapılandırmadır. Çözümün özellik sayfaları ile ilgili daha fazla bilgi için bkz: [çözüm yapılandırması](../../extensibility/internals/solution-configuration.md).  
   
 -   Şu anda seçili proje  
   

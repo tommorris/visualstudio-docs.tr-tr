@@ -1,26 +1,24 @@
 ---
-title: "Kullanıcı arabirimini güncelleştirme | Microsoft Docs"
-ms.custom: 
+title: Kullanıcı arabirimini güncelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, updating
 - commands, updating UI
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
-caps.latest.revision: "41"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: bea4f89d2894344069b8aa5b3037bd00b973a40e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6b3bc8c4b87aefe62cbd27e64fc426ddb7abf96e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="updating-the-user-interface"></a>Kullanıcı arabirimi güncelleştiriliyor
 Bir komut uygulandıktan sonra kullanıcı arabirimi yeni komutlarınızı durumunu güncelleştirmek için kod ekleyebilirsiniz.  

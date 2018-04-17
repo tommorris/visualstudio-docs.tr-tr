@@ -1,22 +1,19 @@
 ---
-title: "Visual Studio için üretkenlik ipuçları | Microsoft Docs"
-ms.custom: 
+title: Visual Studio için üretkenlik ipuçları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e91411539f1e511b04fd455b8ee775fa7abccc2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e6b79f7d36358a875b45b7a705674060b05969cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio için üretkenlik ipuçları
 
@@ -28,7 +25,7 @@ Ortak klavye kısayolları hakkında daha fazla bilgi için bkz: [klavye ipuçla
 
 Kod, aşağıdaki özellikleri kullanarak daha hızlı bir şekilde yazın.
 
-- **Kolaylık komutlarını kullanmak**. Visual Studio daha hızlı yaygın düzenleme görevlerini gerçekleştirmenize yardımcı olmak için çeşitli komutlarını içerir. Örneğin, **Visual Studio 2017 sürüm 15,6** ve daha sonra kolayca kopyalayın, imleç yeniden konumlandırmak ve sonra yapıştırmak zorunda kalmadan bir kod satırı çoğaltmak için bir komut seçebilirsiniz. Seçin **Düzenle** > **yinelenen** veya basın **Ctrl**+**E**,**V**. Ayrıca hızlı bir şekilde genişletebilir veya seçerek metin seçimini sözleşme **Düzenle** > **Gelişmiş** > **genişletin seçimi** veya **Düzenle** > **Gelişmiş** > **sözleşme seçimi**, basarak veya **Shift** + **Alt** +  **=**  veya **Shift**+**Alt** +  **-**  (kullanılabilir **Visual Studio 2017 sürüm 15,5** ve üzeri).
+- **Kolaylık komutlarını kullanmak**. Visual Studio daha hızlı yaygın düzenleme görevlerini gerçekleştirmenize yardımcı olmak için çeşitli komutlarını içerir. Örneğin, **Visual Studio 2017 sürüm 15,6** ve daha sonra kolayca kopyalayın, imleç yeniden konumlandırmak ve sonra yapıştırmak zorunda kalmadan bir kod satırı çoğaltmak için bir komut seçebilirsiniz. Seçin **Düzenle** > **yinelenen** veya basın **Ctrl**+**E**,**V**. Ayrıca hızlı bir şekilde genişletebilir veya seçerek metin seçimini sözleşme **Düzenle** > **Gelişmiş** > **genişletin seçimi** veya **Düzenle** > **Gelişmiş** > **sözleşme seçimi**, basarak veya **Shift** + **Alt** + **=** veya **Shift**+**Alt** + **-** (kullanılabilir **Visual Studio 2017 sürüm 15,5** ve üzeri).
 
 - **IntelliSense kullanma**. Kod Düzenleyicisi'nde girerken, listesi üyeleri, parametre bilgisi, hızlı bilgi, imza yardımcı olmak ve tam sözcüğü gibi IntelliSense bilgiler görüntülenir. Bu özellikler, metnin benzer eşleştirme destekler; Örneğin, sonuçları listeler listesi üyeleri için değil yalnızca, girdiğiniz karakterlerle Başlat girişleri aynı zamanda adlarını başka bir yerindeki karakter bileşimi içeren girdileri içerir. Daha fazla bilgi için bkz: [kullanarak IntelliSense](../ide/using-intellisense.md).
 

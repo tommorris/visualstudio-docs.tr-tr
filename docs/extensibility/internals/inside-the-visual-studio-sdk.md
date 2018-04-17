@@ -1,27 +1,25 @@
 ---
-title: "Visual Studio SDK içinde | Microsoft Docs"
-ms.custom: 
+title: Visual Studio SDK içinde | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e8b1374b6934e09bbf3ce1012d551dab2831292c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: fff6b720c11f3342a5894489186f57d397dd91b5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK’nın İçinde
 Bu bölümde, Visual Studio mimarisi, bileşenleri, hizmetleri, şemalar, yardımcı programlar ve benzeri dahil olmak üzere Visual Studio uzantıları hakkında ayrıntılı bilgi sağlar.  
@@ -94,7 +92,7 @@ Visual Studio mimari genelleştirilmiş görünümü
   
  Daha fazla bilgi için bkz: [projeleri](../../extensibility/internals/projects.md) ve [çözümleri](../../extensibility/internals/solutions.md).  
   
-## <a name="project-and-item-templates"></a>Proje ve öğe şablonları  
+## <a name="project-and-item-templates"></a>Proje ve Öğe Şablonları  
  Visual Studio, önceden tanımlanmış proje şablonları ve proje öğesi şablonları içerir. Ayrıca kendi şablonlarınızı olun veya topluluk şablonlardan edinmeli ve bunları Visual Studio'ya tümleştirin. [MSDN kod Galerisi'nden](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) şablonları ve uzantıları için Git yerdir.  
   
  Şablonlar proje yapısını ve belirli bir uygulama, Denetim, kitaplığı veya sınıf türünü yapılandırmak için gerekli olan temel dosyaları içerir. Şablonlardan birini benzer yazılım geliştirme istediğinizde, şablona dayalı bir proje oluşturun ve bu proje dosyalarında değiştirin.  

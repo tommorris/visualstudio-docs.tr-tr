@@ -3,8 +3,7 @@ title: IDE sabitleri | Microsoft Docs
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IDE, errors
 - logical views
@@ -14,17 +13,16 @@ helpviewer_keywords:
 - IDE, constants
 - physical views
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0184cd4654f07b407a12ca12f0ff9da39c9ec890
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: e9c7e870b02dbe5a903ca8195954ffd5a8f63549
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ide-constants"></a>IDE sabitleri
 
@@ -47,8 +45,8 @@ ms.lasthandoff: 03/28/2018
 |-----------|-----------------|
 |[CEF.CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|Geçersiz bayrak birleşik ilk parametresi olarak Bitsel <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> yöntemi.|
 |[CEF.OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Öğesinin ilk parametresi olarak Bitsel birleştirilmiş <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, yöntem, bu gösterir Düzenleyici üreteci gerekli düzeltmeleri gerçekleştirmeniz.|
-|[CEF.OpenFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|Öğesinin ilk parametresi olarak Bitsel birleştirilmiş <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> yöntemi, bu bayrak olduğu birbirini exclusive [olduğunda CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>).|
-|[CEF.Silent](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|Öğesinin ilk parametresi olarak Bitsel birleştirilmiş <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> yöntemi, bu gösterir Düzenleyici üreteci oluşturma Düzenleyicisi kullanıcı arabirimini (UI) görüntülemeden.|
+|[OLDUĞUNDA CEF. OpenFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|Öğesinin ilk parametresi olarak Bitsel birleştirilmiş <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> yöntemi, bu bayrak olduğu birbirini exclusive [olduğunda CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>).|
+|[OLDUĞUNDA CEF. Sessiz](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|Öğesinin ilk parametresi olarak Bitsel birleştirilmiş <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> yöntemi, bu gösterir Düzenleyici üreteci oluşturma Düzenleyicisi kullanıcı arabirimini (UI) görüntülemeden.|
 
 ## <a name="visual-studio-errors"></a>Visual Studio hataları
 
@@ -76,8 +74,8 @@ ms.lasthandoff: 03/28/2018
 |<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Özel bir sabit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aracılığıyla bir bildirim iletisi yayınlamak üzere <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> şekil sonunu gösterir yöntemi.|
 |<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Özel bir sabit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aracılığıyla bir bildirim iletisi yayınlamak üzere <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> komut çubuğu ölçümleri değiştiğini gösteren yöntemi.|
 |<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Özel bir sabit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] belirten bir tanımlama bilgisi ayarlanmamışsa.|
-|[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir proje öğesi yokluğu temsil eden öğe tanımlayıcısı. Bu değer, geçerli seçim olduğunda kullanılır.|
-|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir proje hiyerarşisi kökünü temsil eder ve tüm hiyerarşi için tek bir öğe aksine tanımlamak için kullanılan öğe tanımlayıcısı.|
+|[VSITEMID. Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir proje öğesi yokluğu temsil eden öğe tanımlayıcısı. Bu değer, geçerli seçim olduğunda kullanılır.|
+|[VSITEMID. Kök](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir proje hiyerarşisi kökünü temsil eder ve tüm hiyerarşi için tek bir öğe aksine tanımlamak için kullanılan öğe tanımlayıcısı.|
 |[VSITEMID. Seçimi](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] şu anda seçili öğe veya hiyerarşisinin kökü içerebilir öğelerini temsil eden öğe tanımlayıcısı.|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents

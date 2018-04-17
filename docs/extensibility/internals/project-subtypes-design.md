@@ -1,27 +1,23 @@
 ---
-title: "Proje Subtypes tasarım | Microsoft Docs"
-ms.custom: 
+title: Proje Subtypes tasarım | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a931d6509b5a8a90f371986f4ddb8955c64387d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-subtypes-design"></a>Proje Subtypes tasarım
 Proje subtypes Microsoft Build Engine üzerinde (MSBuild) tabanlı projeleri genişletme VSPackages olanak tanır. Uygulanan yönetilen çekirdek proje sisteminin toplu yeniden toplama kullanımı sağlayan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] henüz hala belirli bir senaryo davranışını özelleştirebilirsiniz.  
@@ -63,7 +59,7 @@ Proje subtypes Microsoft Build Engine üzerinde (MSBuild) tabanlı projeleri gen
  Üç düzeyi, bir proje alt tarafından toplanan sonra daha gelişmiş proje alt tarafından toplanan temel bir projeyi, çok düzeyli proje alt toplama oluşur. Şekil bir parçası olarak sağlanan destekleyen arabirimleri bazıları odaklanır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proje alt mimarisi.  
   
 ##### <a name="deployment-mechanisms"></a>Dağıtım mekanizmaları  
- Çoğu temel proje sistemi arasında dağıtım düzenekleri tarafından proje alt gelişmiş işlevler bulunur. Proje alt yapılandırma arabirimleri uygulayarak dağıtım düzenekleri etkiler (gibi <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) üzerinde QueryInterface çağırarak alınır <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. Burada proje alt ve Gelişmiş proje alt eklemek farklı yapılandırma uygulamaları bir senaryoda, temel projesini çağıran `QueryInterface` Gelişmiş proje alt 's üzerinde `IUnknown`. İç proje alt temel proje için isteyen yapılandırma uygulanması içeriyorsa, iç proje alt tarafından sağlanan uygulama için Gelişmiş proje alt atar. Bir toplama düzeyi bir durumdan diğerine kalıcı hale getirmek için bir mekanizma proje alt düzeyde tüm uygulamanızı <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> XML veri proje dosyalarıyla ilgili derleme dışı kalır. Daha fazla bilgi için bkz: [kalıcı veri MSBuild proje dosyası içinde](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider>Otomasyon Extender'larının proje subtypes almak için bir mekanizma olarak uygulanır.  
+ Çoğu temel proje sistemi arasında dağıtım düzenekleri tarafından proje alt gelişmiş işlevler bulunur. Proje alt yapılandırma arabirimleri uygulayarak dağıtım düzenekleri etkiler (gibi <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) üzerinde QueryInterface çağırarak alınır <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. Burada proje alt ve Gelişmiş proje alt eklemek farklı yapılandırma uygulamaları bir senaryoda, temel projesini çağıran `QueryInterface` Gelişmiş proje alt 's üzerinde `IUnknown`. İç proje alt temel proje için isteyen yapılandırma uygulanması içeriyorsa, iç proje alt tarafından sağlanan uygulama için Gelişmiş proje alt atar. Bir toplama düzeyi bir durumdan diğerine kalıcı hale getirmek için bir mekanizma proje alt düzeyde tüm uygulamanızı <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> XML veri proje dosyalarıyla ilgili derleme dışı kalır. Daha fazla bilgi için bkz: [kalıcı veri MSBuild proje dosyası içinde](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> Otomasyon Extender'larının proje subtypes almak için bir mekanizma olarak uygulanır.  
   
  Aşağıdaki çizimde temel proje sistemini genişletmek için proje alt türleri tarafından kullanılan Otomasyon genişletici uygulaması, proje yapılandırma Gözat nesnesi özellikle odaklanır.  
   

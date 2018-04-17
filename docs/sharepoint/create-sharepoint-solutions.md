@@ -1,13 +1,10 @@
 ---
-title: "SharePoint çözümleri oluşturma | Microsoft Docs"
-ms.custom: 
+title: SharePoint çözümleri oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 84cc2df4bd683315676acaa7e3f0eead1c36e859
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 807fa532961edb4f2723858a47dcf1fe87134338
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-sharepoint-solutions"></a>SharePoint çözümleri oluşturma
   SharePoint Tasarımcısı'nda oluşturma alternatif olarak, Visual Studio'da SharePoint uygulamaları oluşturabilirsiniz. Visual Studio, Gelişmiş hata ayıklama araçları, IntelliSense, deyim tamamlama ve proje şablonları gibi özellikler sağlayarak hızlı SharePoint geliştirme yükseltir. Visual Studio de Gelişmiş .NET Framework tabanlı araçlar ve dilleri yararlanır. Visual Basic veya Visual C# kullanarak SharePoint projeleri geliştirebilir ve JavaScript kullanarak SharePoint projeleri için uygulama geliştirme yapabilirsiniz.  
@@ -36,7 +33,7 @@ ms.lasthandoff: 01/10/2018
   
 |||  
 |-|-|  
-|![Belge](../sharepoint/media/vs-icon-documentation.gif "belgeleri")|**Belgeler**<br /><br /> -   [Başlarken &#40; SharePoint geliştirme Visual Studio &#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)<br />-   [SharePoint Çözümlerini Yerelleştirme](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Visual Studio'da SharePoint araçları genişletme](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
+|![Belge](../sharepoint/media/vs-icon-documentation.gif "belgeleri")|**Belgeler**<br /><br /> -   [Başlarken &#40;Visual Studio'da SharePoint geliştirme&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)<br />-   [SharePoint Çözümlerini Yerelleştirme](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Visual Studio'da SharePoint araçları genişletme](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
 |![Belge](../sharepoint/media/vs-icon-documentation.gif "belgeleri")|**Öne çıkan görevleri**<br /><br /> -   [İzlenecek yol: bir Site sütunu, içerik türü ve SharePoint listesi oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [Nasıl yapılır: bir BDC modeli oluşturma](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [Nasıl yapılır: bir SharePoint Web Bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [Nasıl yapılır: bir kullanıcı denetimi oluşturmak için SharePoint uygulama sayfası veya Web Bölümü](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
 |![İzlenecek yollar](../sharepoint/media/vs-icon-walkthroughs.gif "izlenecek yollar")|**İzlenecek Yollar**<br /><br /> -   [SharePoint geliştirme yönergeleri](../sharepoint/sharepoint-development-walkthroughs.md)|  
 |![Kod örnekleri](../sharepoint/media/vs-icon-codesamples.gif "kod örnekleri")|**Kod örnekleri**<br /><br /> -   [SharePoint geliştirme örnekleri](../sharepoint/sharepoint-development-samples.md)<br />-   [SharePoint Geliştirici indirir](http://msdn.microsoft.com/sharepoint/aa905690.aspx)|  

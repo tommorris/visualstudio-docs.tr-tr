@@ -1,27 +1,23 @@
 ---
-title: "Öğeler ekleme yeni öğe Ekle iletişim kutuları | Microsoft Docs"
-ms.custom: 
+title: Öğeler ekleme yeni öğe Ekle iletişim kutuları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a24a6d531812a170768f8c100f14ad64ab1e68c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Öğeler ekleme yeni öğe Ekle iletişim kutuları
 Öğeler ekleme işlemi **Yeni Öğe Ekle** iletişim kutusu ile kayıt defteri anahtarlarını başlatır. Aşağıdaki kayıt defteri girdileri gösterildiği gibi AddItemTemplates bölüm içinde kullanılabilir hale hangi öğelerin dizininde adını ve yolunu içerir **Yeni Öğe Ekle** iletişim kutusu konur.  
@@ -69,7 +65,7 @@ ms.lasthandoff: 12/22/2017
  Örneğin, bir Visual Basic projesinde Web projeleri ve istemci projeler olabilir. Web forms istemci projesine eklemek için yararlı öğeleri değildir ve windows forms bir Web sunucusu projeye eklemek için yararlı öğeler değil. Bu nedenle, her iki proje türleri için tüm dosyaları içeren bir şablon dizin oluşturabilirsiniz. Ardından uygulayarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>, proje veya proje ayarları proje türüne göre gösterilmesi öğeleri gizleyebilirsiniz.  
   
 ## <a name="filtering-project-items"></a>Proje öğeleri filtreleme  
- `IVsFilterAddProjectItemDlg2`öğeleri ağaç (sol bölme) ve proje dosyalarını (sağ bölme), aşağıdaki yollarla filtreleme için sağlar:  
+ `IVsFilterAddProjectItemDlg2` öğeleri ağaç (sol bölme) ve proje dosyalarını (sağ bölme), aşağıdaki yollarla filtreleme için sağlar:  
   
 -   Yerelleştirilmiş adlar (.vsdir dosyasında yer alan iletişim kutusunda görüntülenen açıklamalı alt yazıları) tarafından sağlanan `IVsFilterAddProjectItemDlg`.  
   

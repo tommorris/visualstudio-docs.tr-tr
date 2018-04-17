@@ -1,13 +1,10 @@
 ---
-title: "Office çözümlerinde kod yazma | Microsoft Docs"
-ms.custom: 
+title: Office çözümlerinde kod yazma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
 dev_langs:
@@ -36,14 +33,14 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9670bb35023b2a2cf4147d3d30008243203c9c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c6119db86fdd67079b63434a6bb494cb04cd31d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-in-office-solutions"></a>Office Çözümlerinde Kod Yazma
   Bazı yönlerini diğer Visual Studio Proje türleri farklıdır Office projelerinde kod yazma vardır. Bu farklılıklar birçoğunu Office nesne modelleri için yönetilen kod gösterilen şekilde ilişkilidir. Diğer farklar Office projelerinin tasarımı için ilişkilidir.  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  Daha fazla bilgi için bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ### <a name="namespace-considerations-in-office-solutions"></a>Office çözümlerinde Namespace konuları  
- Değiştiremezsiniz *varsayılan ad alanı* (veya *kök ad alanı* Visual Basic'te) projesi oluşturduktan sonra bir Office Project'in. Varsayılan ad alanı her zaman proje oluşturduğunuzda, belirttiğiniz proje adı ile eşleşir. Projenizi yeniden adlandırırsanız, varsayılan ad alanını değiştirmez. Varsayılan ad alanı projelerinde hakkında daha fazla bilgi için bkz: [uygulama sayfası, Proje Tasarımcısı &#40; C &#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) ve [uygulama sayfası, Proje Tasarımcısı &#40; Visual Basic &#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ Değiştiremezsiniz *varsayılan ad alanı* (veya *kök ad alanı* Visual Basic'te) projesi oluşturduktan sonra bir Office Project'in. Varsayılan ad alanı her zaman proje oluşturduğunuzda, belirttiğiniz proje adı ile eşleşir. Projenizi yeniden adlandırırsanız, varsayılan ad alanını değiştirmez. Varsayılan ad alanı projelerinde hakkında daha fazla bilgi için bkz: [uygulama sayfası, Proje Tasarımcısı &#40;C&#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) ve [uygulama sayfası, Proje Tasarımcısı &#40;Visual Basic&#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="changing-the-namespace-of-host-item-classes-in-c-projects"></a>C# projelerine konak öğesi sınıflarının Namespace değiştirme  
  Konak öğesi sınıflarının (örneğin, `ThisAddIn`, `ThisWorkbook`, veya `ThisDocument` sınıfları), kendi ad Visual C# Office projelerinde sahip. Varsayılan olarak, ana bilgisayar öğeleri projenizdeki için ad alanı proje oluşturduğunuzda, belirttiğiniz proje adı ile eşleşir.  
@@ -110,7 +107,7 @@ ms.lasthandoff: 01/10/2018
 |Özellik|Açıklama|Visual Basic desteği|Visual C# desteği|  
 |-------------|-----------------|--------------------------|------------------------|  
 |İsteğe bağlı parametreler|Birçok Microsoft Office yöntemi yöntemini çağırdığınızda, gerekli olmayan parametrelere sahip. Parametresi için değer iletilmezse, varsayılan değer kullanılır.|Visual Basic isteğe bağlı parametreleri destekler.|Visual C# çoğu durumda isteğe bağlı parametreleri destekler. Daha fazla bilgi için bkz: [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md).|  
-|Parametreleri başvuruya göre geçirme|Microsoft Office birincil birlikte çalışma derlemeleri çoğunu isteğe bağlı parametre değerine göre geçirilebilir. Ancak, bazı birincil birlikte çalışma derlemeleri içinde başvuruya göre başvuru türlerini kabul eden isteğe bağlı parametreler geçirilmelidir.<br /><br /> Değer ve başvuru türü parametreleri hakkında daha fazla bilgi için bkz: [geçirme bağımsız değişkenleri değere göre ve başvuru &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic için) ve [parametreleri &#40; geçirme C &#35; Programlama Kılavuzu &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Ek bir iş tarafından başvuru parametreleri geçirmek için gereklidir. Visual Basic derleyici parametreleri gerektiğinde başvuru tarafından otomatik olarak geçirir.|Çoğu durumda, Visual C# Derleyici gerektiğinde başvuruya göre parametreleri otomatik olarak geçirir. Daha fazla bilgi için bkz: [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md).|  
+|Parametreleri başvuruya göre geçirme|Microsoft Office birincil birlikte çalışma derlemeleri çoğunu isteğe bağlı parametre değerine göre geçirilebilir. Ancak, bazı birincil birlikte çalışma derlemeleri içinde başvuruya göre başvuru türlerini kabul eden isteğe bağlı parametreler geçirilmelidir.<br /><br /> Değer ve başvuru türü parametreleri hakkında daha fazla bilgi için bkz: [geçirme bağımsız değişkenleri değere ve başvuruya göre &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic için) ve [geçirme parametreleri &#40;C&#35; Programlama Kılavuzu&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Ek bir iş tarafından başvuru parametreleri geçirmek için gereklidir. Visual Basic derleyici parametreleri gerektiğinde başvuru tarafından otomatik olarak geçirir.|Çoğu durumda, Visual C# Derleyici gerektiğinde başvuruya göre parametreleri otomatik olarak geçirir. Daha fazla bilgi için bkz: [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md).|  
 |Parametreli özellikleri|Bazı özellikler parametreleri kabul eder ve salt okunur işlevler olarak davranır.|Visual Basic parametreleri kabul eden özellikleri destekler.|Visual C# parametreleri kabul eden özellikleri destekler.|  
 |Geç bağlama|Geç bağlama atama değişkenleri tasarım zamanında nesne türü için yerine çalışma zamanında nesnelerin özelliklerini belirleme içerir.|Visual Basic geç bağlamayı gerçekleştirir **Option Strict** kapalıdır. Zaman **Option Strict** açıktır, gerekir açıkça dönüştürdüğünüz nesneleri ve kullanım türlerinde <xref:System.Reflection> geç bağlama üyelere erişmek için ad alanı. Daha fazla bilgi için bkz: [Office çözümlerinde geç bağlama](../vsto/late-binding-in-office-solutions.md).|Visual C# gerçekleştiren hedefleyen projelerde geç bağlama [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Daha fazla bilgi için bkz: [Office çözümlerinde geç bağlama](../vsto/late-binding-in-office-solutions.md).|  
   
@@ -119,7 +116,7 @@ ms.lasthandoff: 01/10/2018
   
 |Özellik|Açıklama|Visual Basic ve Visual C# desteği|  
 |-------------|-----------------|-----------------------------------------|  
-|Dizi dizinleri|Microsoft Office uygulamalarında koleksiyonların düşük dizi sınırı 1 ile başlar. Visual Basic ve Visual C# 0 tabanlı diziler kullanın. Daha fazla bilgi için bkz: [diziler &#40; C &#35; Programlama Kılavuzu &#41; ](/dotnet/csharp/programming-guide/arrays/index) ve [Visual Basic'de diziler](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Microsoft Office uygulamasının nesne modelinde bir koleksiyonun ilk öğeye erişmek için dizin 1 yerine 0 kullanın.|  
+|Dizi dizinleri|Microsoft Office uygulamalarında koleksiyonların düşük dizi sınırı 1 ile başlar. Visual Basic ve Visual C# 0 tabanlı diziler kullanın. Daha fazla bilgi için bkz: [diziler &#40;C&#35; Programlama Kılavuzu&#41; ](/dotnet/csharp/programming-guide/arrays/index) ve [Visual Basic'de diziler](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Microsoft Office uygulamasının nesne modelinde bir koleksiyonun ilk öğeye erişmek için dizin 1 yerine 0 kullanın.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)   

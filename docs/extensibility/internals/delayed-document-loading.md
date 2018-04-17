@@ -1,23 +1,21 @@
 ---
-title: "Belge yükleme Gecikmeli | Microsoft Docs"
-ms.custom: 
+title: Belge yükleme Gecikmeli | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
-caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e69ee994f434e122894989d82b97ea79e4bd995c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc10d7807633433b38fa8587d41c2ac3c0273ebe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="delayed-document-loading"></a>Belge yüklemesi ertelendi
 Bir kullanıcı bir Visual Studio çözümü açana, ilişkili belgelere çoğunu hemen yüklü değil. Belge pencere çerçevesi başlatma bekleyen durumunda oluşturulur ve (bir saplama çerçeve olarak adlandırılır) bir yer tutucu belge çalıştıran belge Table'nın (RDT) yerleştirilir.  
@@ -49,7 +47,7 @@ Bir kullanıcı bir Visual Studio çözümü açana, ilişkili belgelere çoğun
   
  İlgili özelliklerini isteyin önce aşağıdaki yöntemlerden birini çağırarak gereksiz belge yükleme önleyebilirsiniz: önce diğer özellikler için isteyin.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>kullanarak <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> kullanarak <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. Bu yöntem bir <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> için bir değer içeren nesnesinin <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> belgeyi henüz başlatılmamış durumunda.  
   

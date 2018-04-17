@@ -1,27 +1,25 @@
 ---
 title: Eski dil Service2 kaydetme | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 364b17e6759d0ca337b69c89c51dfba8d26f3e32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6cb7750f55bd9175c552aa765d21b1334f5f1dfe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-legacy-language-service"></a>Eski dil hizmeti kaydetme
 Aşağıdaki bölümler kayıt defteri girdileri listesi çeşitli dil için kullanılabilir hizmet seçenekleri sağlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -33,9 +31,9 @@ Aşağıdaki bölümler kayıt defteri girdileri listesi çeşitli dil için kul
   
 |Ad|Tür|Aralık|Açıklama|  
 |----------|----------|-----------|-----------------|  
-|(Varsayılan)|REG_SZ|*\<GUID >*|Dil hizmetinin GUID.|  
+|(Varsayılan)|REG_SZ|*\<GUID &GT;*|Dil hizmetinin GUID.|  
 |LangResID|REG_DWORD|0x0 0xffff|Dil yerelleştirilmiş metin adı için kaynak tanımlayıcısı (ResID) dize.|  
-|Paket|REG_SZ|*\<GUID >*|VSPackage GUID.|  
+|Paket|REG_SZ|*\<GUID &GT;*|VSPackage GUID.|  
 |ShowCompletion|REG_DWORD|0-1|Belirtir olup olmadığını **deyim tamamlama** içinde seçenekleri **seçenekleri** iletişim kutusu etkinleştirilir.|  
 |ShowSmartIndent|REG_DWORD|0-1|Belirtir olup olmadığını belirleme seçeneği **akıllı** içinde girintileme **seçenekleri** iletişim kutusu etkindir.|  
 |RequestStockColors|REG_DWORD|0-1|Belirtir özel olup olmadığını veya varsayılan renkleri anahtar sözcükleri renk için kullanılır.|  
@@ -144,8 +142,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|Düzenleyici etkin olduğunda varsayılan yapmak için araç kutusu sekmesi adı.|  
 |Görünen adı|REG_SZ|resID|Görüntülenecek ad **birlikte Aç** iletişim kutusu. Dize kaynak kimliği veya adı standart biçiminde addır.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|İçin kullanılan **birlikte Aç** menü komutu. Belirli bir dosya türü için kullanılabilir düzenleyicileri listesi varsayılan metin düzenleyicide listelemek istemiyorsanız, bu değer 1 olarak ayarlayın.|  
-|LinkedEditorGUID|REG_SZ|*\<GUID >*|Bir dosyayı codepage desteğiyle açabilirsiniz hiçbir dil hizmetini kullanılır. Örneğin, açtığınızda .txt dosyası kullanarak **birlikte Aç** komut seçenekleri ile ve kodlamasız kaynak kod düzenleyicisini kullanarak için sağlanır.<br /><br /> Alt adına belirtilen kod sayfası düzenleyici üreteci için GUID'dir; Bu belirli kayıt defteri girdisinde belirtilen bağlı normal Düzenleyici üreteci için GUID'dir. IDE IDE varsayılan Düzenleyicisi'ni kullanarak bir dosya açılmazsa, listede sonraki Düzenleyicisi'ni kullanmayı dener, bu girdi amacı budur. Bu düzenleyici üreteci temelde aynı başarısız Düzenleyici üreteci olduğundan bu sonraki Düzenleyici codepage Düzenleyici üreteci olmamalıdır.|  
-|Paket|REG_SZ|*\<GUID >*|Görünen ad ResID için VSPackage GUID.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|Bir dosyayı codepage desteğiyle açabilirsiniz hiçbir dil hizmetini kullanılır. Örneğin, açtığınızda .txt dosyası kullanarak **birlikte Aç** komut seçenekleri ile ve kodlamasız kaynak kod düzenleyicisini kullanarak için sağlanır.<br /><br /> Alt adına belirtilen kod sayfası düzenleyici üreteci için GUID'dir; Bu belirli kayıt defteri girdisinde belirtilen bağlı normal Düzenleyici üreteci için GUID'dir. IDE IDE varsayılan Düzenleyicisi'ni kullanarak bir dosya açılmazsa, listede sonraki Düzenleyicisi'ni kullanmayı dener, bu girdi amacı budur. Bu düzenleyici üreteci temelde aynı başarısız Düzenleyici üreteci olduğundan bu sonraki Düzenleyici codepage Düzenleyici üreteci olmamalıdır.|  
+|Paket|REG_SZ|*\<GUID &GT;*|Görünen ad ResID için VSPackage GUID.|  
   
 ### <a name="example"></a>Örnek  
   
@@ -166,7 +164,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Ad|Tür|Aralık|Açıklama|  
 |----------|----------|-----------|-----------------|  
 |(Varsayılan)|REG_SZ||Kullanılmayan.|  
-|*\<GUID >*|REG_SZ|""|Desteklenen mantıksal görünümleri anahtardır. Gereksinim duyduğunuz gibi bu kadar olabilir. Kayıt defteri girdisini önemli, adıdır her zaman boş bir dize değil değeri.|  
+|*\<GUID &GT;*|REG_SZ|""|Desteklenen mantıksal görünümleri anahtardır. Gereksinim duyduğunuz gibi bu kadar olabilir. Kayıt defteri girdisini önemli, adıdır her zaman boş bir dize değil değeri.|  
   
 ### <a name="example"></a>Örnek  
   

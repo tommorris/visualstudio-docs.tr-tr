@@ -1,27 +1,23 @@
 ---
-title: "İzlenecek yol: Özellik için bir özel düzenleyici ekleme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Özellik için bir özel düzenleyici ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c207b80686a66d9a06b8c50321b4dce2257ada
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 14642a13553f3c4a09b86daa2d7638183fe7d8d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>İzlenecek yol: Bir özel düzenleyici özellik ekleme
 Özel bir düzenleyici oluşturduktan sonra daha fazla özelliği ekleyebilirsiniz.  
@@ -148,7 +144,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Menü komutu kullanıcı Arabiriminde doldurmak önlemek için mevcut komutları IDE'de yeni komutları inventing önce kullanmanız gerekir. Paylaşılan komutları SharedCmdDef.vsct ve ShellCmdDef.vsct tanımlanır. Bu dosyalar VisualStudioIntegration\Common\Inc alt varsayılan olarak yüklenir, [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] yükleme.  
   
--   `ISelectionContainer`hem tek hem de birden çok seçim hızlı. Seçilen her nesnenin olarak uygulanan bir `IDispatch` nesnesi.  
+-   `ISelectionContainer` hem tek hem de birden çok seçim hızlı. Seçilen her nesnenin olarak uygulanan bir `IDispatch` nesnesi.  
   
 -   IDE uygulayan `IOleUndoManager` erişilebilen bir hizmet olarak bir <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> veya aracılığıyla örneği bir nesne olarak <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Düzenleyici uygulayan `IOleUndoUnit` arabirimi her `Undo` eylem.  
   

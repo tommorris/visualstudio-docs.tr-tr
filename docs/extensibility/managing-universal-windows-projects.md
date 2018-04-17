@@ -1,23 +1,21 @@
 ---
-title: "Evrensel Windows projeleri yönetme | Microsoft Docs"
-ms.custom: 
+title: Evrensel Windows projeleri yönetme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: eb8abbcb335aad7b65466ee40cfa70d656a3ea3a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d251818d9fba0c025b94fa17611a725daad3cec8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-universal-windows-projects"></a>Evrensel Windows projeleri yönetme
 Evrensel Windows uygulamaları, Windows 8.1 ve Windows Phone 8.1, kod ve diğer varlıkları hem platformlarda geliştiriciler izin vererek hedef uygulamalardır. Ayrı projeler, bir Windows ve Windows Phone için diğer kaynaklar ve platforma özgü kodu tutulan sırada kaynakların ve paylaşılan kodu paylaşılan bir proje tutulur. Evrensel Windows uygulamaları hakkında daha fazla bilgi için bkz: [Evrensel Windows uygulamaları](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Projeleri Yönetme visual Studio uzantıları Evrensel Windows uygulaması projeleri tek platform uygulamalardan farklı bir yapıya sahip bilmeniz gerekir. Bu kılavuzda paylaşılan bir proje gidin ve paylaşılan öğelerini yönetmek nasıl gösterir.  

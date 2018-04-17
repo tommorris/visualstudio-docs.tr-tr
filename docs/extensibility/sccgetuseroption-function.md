@@ -1,29 +1,25 @@
 ---
-title: "SccGetUserOption işlevi | Microsoft Docs"
-ms.custom: 
+title: SccGetUserOption işlevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGetUserOption
 helpviewer_keywords:
 - SccGetUserOption function
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c23e1fd5614963d8f52edc019e99287187fd9a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b735b8ae53ef484417ae007c6ec74ec03fe4b849
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption işlevi
 Bu işlev, çeşitli kullanıcıya özgü seçenekleri alır.  
@@ -62,7 +58,7 @@ SCCRTN SccGetUserOption(
   
 |Kullanıcı seçeneği|Açıklama|  
 |-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Kullanıcının dosyaları yerel sürümlerini kullanıma almak istediği olup olmadığını belirler. `lpVal`atanan `SCC_USEROPT_COLV_YES` (kullanıcının istediği yerel dosyalar kullanıma) veya `SCC_USEROPT_COLV_NO`.|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Kullanıcının dosyaları yerel sürümlerini kullanıma almak istediği olup olmadığını belirler. `lpVal` atanan `SCC_USEROPT_COLV_YES` (kullanıcının istediği yerel dosyalar kullanıma) veya `SCC_USEROPT_COLV_NO`.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetim eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)   

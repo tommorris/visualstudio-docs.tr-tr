@@ -1,30 +1,28 @@
 ---
-title: "Kaynak denetimi tümleştirmesi Essentials | Microsoft Docs"
-ms.custom: 
+title: Kaynak denetimi tümleştirmesi Essentials | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0c3e93eb86fdc252f162331033207db5bdaa1569
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-essentials"></a>Kaynak denetimi tümleştirmesi hakkında temel bilgiler
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Kaynak denetimi tümleştirmesinin iki türlerini destekler: temel işlevleri sağlayan ve kaynak denetimi Eklentisi (önceki adıyla MSSCCI API olarak bilinen) API ve VSPackage tabanlı kaynak denetimi tümleştirmesi çözümü kullanılarak oluşturulan bir kaynak denetimi eklentisi, daha sağlam işlevselliği sağlar.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kaynak denetimi tümleştirmesinin iki türlerini destekler: temel işlevleri sağlayan ve kaynak denetimi Eklentisi (önceki adıyla MSSCCI API olarak bilinen) API ve VSPackage tabanlı kaynak denetimi tümleştirmesi çözümü kullanılarak oluşturulan bir kaynak denetimi eklentisi, daha sağlam işlevselliği sağlar.  
   
 ## <a name="source-control-plug-in"></a>Kaynak Denetimi Eklentisi  
  Kaynak Denetim Eklentisi Kaynak Denetim eklentisi API'yi uygulayan DLL olarak yazılır. Kayıt ve kaynak denetimi tümleştirmesi işlevi API aracılığıyla sağlanır. Bu yaklaşım kaynak denetimi VSPackage kolaydır ve kullandığı [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] çoğu kaynak denetimi işlemleri için kullanıcı arabirimi (UI).  

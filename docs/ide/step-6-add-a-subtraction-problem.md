@@ -1,25 +1,21 @@
 ---
-title: "6. adım: çıkarma problemi ekleme | Microsoft Docs"
-ms.custom: 
+title: '6. adım: çıkarma problemi ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
-caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d13e5a8e7bb1e15b1eef57fc6bcff55ef21cc729
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 4660d4b1ad5f4aa5200fb8c64cfa24f6a02d49a2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>6. Adım: Çıkarma Problemi Ekleme
 Bu öğreticinin altıncı bölümünde çıkarma problemi ekleme ve aşağıdaki görevleri nasıl gerçekleştireceğinizi öğrenin:
@@ -59,7 +55,7 @@ Bu öğreticinin altıncı bölümünde çıkarma problemi ekleme ve aşağıdak
 
      Araç İpucu gösterir **(+ 2 overload(s))**, çağırabilirsiniz anlamına `Next()` iki yolla yöntemi. Böylece birbirinden biraz farklı çalıştığını aşırı farklı sayılar veya bağımsız değişken türleri içerir. Örneğin, bir yöntem tek tamsayı bağımsız değişkeni sürebilir ve onun aşırı birini bir tamsayı ve bir dize alabilir. Ne yapmak istiyorsunuz üzerinde göre doğru aşırı seçin. Koda eklediğinizde `StartTheQuiz()` yöntemi, daha fazla bilgi IntelliSense penceresinde görünür girdiğiniz hemen `randomizer.Next(`. Aşırı yükleme geçiş yapmak için yukarı ve aşağı ok tuşları aşağıdaki çizimde gösterildiği gibi seçin:
 
-     ![Aşırı İleri &#40; &#41; IntelliSense yönteminde](../ide/media/express_nextoverload.png "Express_NextOverload") IntelliSense Next() yöntemi için aşırı yükleme
+     ![Sonraki aşırı&#40; &#41; IntelliSense yönteminde](../ide/media/express_nextoverload.png "Express_NextOverload") IntelliSense Next() yöntemi için aşırı yükleme
 
      Bu durumda, minimum ve maksimum değerleri belirttiğinden son aşırı seçin istiyorsunuz.
 

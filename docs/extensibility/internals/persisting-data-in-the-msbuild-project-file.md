@@ -1,27 +1,23 @@
 ---
-title: "MSBuild proje dosyası içinde kalıcı veri | Microsoft Docs"
-ms.custom: 
+title: MSBuild proje dosyası içinde kalıcı veri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2bb73602a6cba07fe9cbde4ddae4219f5a2b350
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 324f9dfd4e381e9580e4940f06f652ef64d9d3ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild proje dosyası içinde kalıcı veri
 Proje alt alt özgü veriler daha sonra kullanmak için proje dosyasına kalıcı olması gerekebilir. Proje alt proje dosyası Kalıcılık aşağıdaki gereksinimleri karşılaması için kullanır:  
@@ -45,7 +41,7 @@ Proje alt alt özgü veriler daha sonra kullanmak için proje dosyasına kalıc�
 ## <a name="persisting-build-related-information"></a>Kalıcı yapı ilgili bilgiler  
  Proje derleme için yararlı verilerinin kalıcılığı MSBuild gerçekleştirilir. MSBuild sistem bir ana tablo yapı ile ilgili bilgileri tutar. Proje alt türleri, özellik değerlerini almak ve ayarlamak için bu veri erişimi için sorumludur. Kalıcı için ek özellikler ekleyerek ve kalıcı değildir şekilde özellikleri kaldırarak proje alt yapı ile ilgili veri tablosu da genişletebilirsiniz.  
   
- MSBuild verileri değiştirmek için bir proje alt temel proje sisteminden MSBuild özelliği nesnesini almak için sorumlu <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>Çekirdek proje sistemi ve aggregating proje alt sorgular için çalıştırarak uygulanan bir arabirimi `QueryInterface`.  
+ MSBuild verileri değiştirmek için bir proje alt temel proje sisteminden MSBuild özelliği nesnesini almak için sorumlu <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> Çekirdek proje sistemi ve aggregating proje alt sorgular için çalıştırarak uygulanan bir arabirimi `QueryInterface`.  
   
  Aşağıdaki yordamı kullanarak bir özelliği kaldırmak için gereken adımları özetler <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>.  
   

@@ -1,30 +1,26 @@
 ---
-title: "SupportsCodeSeparation öğesi (Visual Studio şablonları) | Microsoft Docs"
-ms.custom: 
+title: SupportsCodeSeparation öğesi (Visual Studio şablonları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
 - SupportsCodeSeparation element [Visual Studio Templates]
 - <SupportsCodeSeparation> element [Visual Studio Templates]
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: affe4d6c73271bea467e373bd8100b3b7f06c0ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: edd8eb9bbabb47444754d3756216fc81d02c7d7d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation Öğesi (Visual Studio Şablonları)
 Belirtir desteklemediğini **kod ayrı bir dosyaya yerleştirin** onay kutusunu etkinleşir **Yeni Öğe Ekle** iletişim kutusu.  
@@ -60,11 +56,11 @@ Belirtir desteklemediğini **kod ayrı bir dosyaya yerleştirin** onay kutusunu 
  Metin ya da olmalıdır `true` veya `false`, belirten desteklemediğini **kod ayrı bir dosyaya yerleştirin** onay kutusunu etkinleşir **Yeni Öğe Ekle** iletişim kutusu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `SupportsCodeSeparation`İsteğe bağlı bir öğedir. Varsayılan değer `false` şeklindedir.  
+ `SupportsCodeSeparation` İsteğe bağlı bir öğedir. Varsayılan değer `false` şeklindedir.  
   
  `SupportsCodeSeparation` Öğesidir yalnızca Web öğe şablonları için kullanılabilir.  
   
- Kod ayrımı veya arka plandaki kod sayfası modeli, bir dosya ve başka bir dosyaya programlama kodu işaretleme tutmanızı sağlar. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]ve diğer .NET dilleri bu modelini kullanır.  
+ Kod ayrımı veya arka plandaki kod sayfası modeli, bir dosya ve başka bir dosyaya programlama kodu işaretleme tutmanızı sağlar. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ve diğer .NET dilleri bu modelini kullanır.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek görüntülenecek belirtir **kod ayrı bir dosyaya yerleştirin** seçeneği.  

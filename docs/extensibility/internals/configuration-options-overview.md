@@ -1,26 +1,24 @@
 ---
-title: "Yapılandırma seçenekleri genel bakış | Microsoft Docs"
-ms.custom: 
+title: Yapılandırma seçenekleri genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 85ee328b278ef9eb1d81acfc5a8299920a221e59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuration-options-overview"></a>Yapılandırma seçeneklerine genel bakış
 Projelerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oluşturulabilir, hata ayıklaması, çalıştırma ve/veya dağıtılan birden çok yapılandırmayı destekler. Bir yapılandırma özellikleri, genellikle derleyici anahtarları ve dosya konumları adlandırılmış kümesi ile tanımlanan bir yapı türüdür. Varsayılan olarak, iki yapılandırmaları, hata ayıklama ve yayın yeni çözümler içerir. Bu yapılandırmalar, kendi varsayılan ayarları kullanarak ya da belirli çözüm ve/veya proje gereksinimlerinizi karşılayacak şekilde değiştirilmiş uygulanabilir. Bazı paketler iki şekilde oluşturulabilir: bir ActiveX Düzenleyicisi'ni veya bir yerinde bileşeni olarak. Projeleri ancak birden çok yapılandırmayı destekler gerekmez. Kullanılabilir yalnızca bir yapılandırma varsa, bu yapılandırma tüm çözüm yapılandırmaları eşlenir.  
@@ -57,15 +55,15 @@ Yapılandırma arabirimleri
   
  Önceki diyagrama ilgili birkaç Notlar:  
   
--   `IDispatch`Yapılandırma nesnesinde isteğe bağlı olarak işaretlenir. Özellikle, gözatma nesnesini yapılandırma arabirimlere sahip isteğe bağlıdır.  
+-   `IDispatch` Yapılandırma nesnesinde isteğe bağlı olarak işaretlenir. Özellikle, gözatma nesnesini yapılandırma arabirimlere sahip isteğe bağlıdır.  
   
--   `IVsDebuggableProjectCfg`Yapılandırma nesnesinde isteğe bağlı olarak işaretlenmiş, ancak hata ayıklama desteği için gereklidir.  
+-   `IVsDebuggableProjectCfg` Yapılandırma nesnesinde isteğe bağlı olarak işaretlenmiş, ancak hata ayıklama desteği için gereklidir.  
   
--   `IVsProjectCfg2`Yapılandırma nesnesinde isteğe bağlı olarak işaretlenmiş, ancak destek gruplandırma çıktı için gereklidir.  
+-   `IVsProjectCfg2` Yapılandırma nesnesinde isteğe bağlı olarak işaretlenmiş, ancak destek gruplandırma çıktı için gereklidir.  
   
 -   `Config Provider` Nesnesi, isteğe bağlı bir nesne olarak işaretlenmiş, ancak seçeneğini uygulamak yerdir. Proje nesnesi veya ayrı bir nesne üzerinde nesne uygulayabilir.  
   
--   `IVsCfgProvider2`platform desteği ve yapılandırmasını düzenleme için gereklidir. `IVsCfgProvider`Bu işlevselliği kullanılmaz, yeterli olur.  
+-   `IVsCfgProvider2` platform desteği ve yapılandırmasını düzenleme için gereklidir. `IVsCfgProvider` Bu işlevselliği kullanılmaz, yeterli olur.  
   
 -   Bazı pratik burada aynı sınıfına ayrı nesneler birleştirilebilir olarak diyagramda gösterildiği bu nesnelerin özel tasarım gereksinimlerinize göre temel. Bu bölümdeki diğer konulara göz ancak, nesneleri ve bu nesnelerle ilişkili arabirimleri diyagramda sunulan senaryo göre incelenecektir.  
   

@@ -1,26 +1,24 @@
 ---
-title: "Proje ve yapılandırma özellikleri için destek | Microsoft Docs"
-ms.custom: 
+title: Proje ve yapılandırma özellikleri için destek | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
 - configuration properties, suppporting with Visual Studio SDK
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 823bfa0453d3e33fea2daa51779b1fe4800a1a86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Proje ve yapılandırma özellikleri için destek
 **Özellikleri** penceresinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE), proje ve yapılandırma özelliklerini görüntüleyebilirsiniz. Kullanıcının, uygulamanın özelliklerini ayarlayıp böylece kendi proje türü için özellik sayfası sağlayabilir.  
@@ -32,7 +30,7 @@ ms.lasthandoff: 01/22/2018
 ## <a name="persistence-of-project-and-configuration-properties"></a>Proje ve yapılandırma özelliklerini kalıcılığı  
  Örneğin proje türüyle ilişkili dosya adı uzantısı, .csproj, .vbproj ve .myproj sahip bir proje dosyasında proje ve yapılandırma özelliklerini kalıcıdır. Dil projeleri, bir şablon dosyası genellikle proje dosyası oluşturmak için kullanın. Ancak, proje türleri ve şablonları ilişkilendirmek için gerçekten birkaç yolu vardır. Daha fazla bilgi için bkz: [şablon dizin açıklaması (. Vsdir) dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Proje ve yapılandırma özelliklerini şablon dosyasına öğeleri ekleyerek oluşturulur. Bu özellikleri daha sonra bu şablonu kullanan proje türü kullanılarak oluşturulan herhangi bir projesi için kullanılabilir. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]Projeler ve her ikisini de kullanmanız MPFProj [yapı içinde değil: MSBuild genel bakış](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) şablon dosyalarını için şema. Bu dosyaları her yapılandırma için bir PropertyGroup bölümü vardır. Proje özellikleri genellikle bir yapılandırma bağımsız değişkeni boş bir dize belirlenmiş olan ilk PropertyGroup bölümünde, kalıcıdır.  
+ Proje ve yapılandırma özelliklerini şablon dosyasına öğeleri ekleyerek oluşturulur. Bu özellikleri daha sonra bu şablonu kullanan proje türü kullanılarak oluşturulan herhangi bir projesi için kullanılabilir. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projeler ve her ikisini de kullanmanız MPFProj [yapı içinde değil: MSBuild genel bakış](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) şablon dosyalarını için şema. Bu dosyaları her yapılandırma için bir PropertyGroup bölümü vardır. Proje özellikleri genellikle bir yapılandırma bağımsız değişkeni boş bir dize belirlenmiş olan ilk PropertyGroup bölümünde, kalıcıdır.  
   
  Aşağıdaki kod bir temel MSBuild proje dosyası başlangıcını gösterir.  
   
@@ -62,9 +60,9 @@ ms.lasthandoff: 01/22/2018
   
  `SettingsPage` Sınıfı ve `Microsoft.VisualStudio.Package.ProjectNode` sınıfı proje ve yapılandırma özelliklerini kalıcı hale getirmek için bu yöntemleri sunar:  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty`ve `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` proje özellikleri kalır.  
+-   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` ve `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` proje özellikleri kalır.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty`ve `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` yapılandırma özellikleri kalır.  
+-   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` ve `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` yapılandırma özellikleri kalır.  
   
     > [!NOTE]
     >  Uygulamaları `Microsoft.VisualStudio.Package.SettingsPage` ve `Microsoft.VisualStudio.Package.ProjectNode` sınıfları kullanım `Microsoft.Build.BuildEngine` almak ve proje dosyasından proje ve yapılandırma özelliklerini ayarlamak için (MSBuild) yöntemleri.  

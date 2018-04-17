@@ -1,27 +1,25 @@
 ---
-title: "Proje türü kaydetme | Microsoft Docs"
-ms.custom: 
+title: Proje türü kaydetme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8e6c91f2c92dd121cd135aef4291c7f7983206ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-project-type"></a>Proje türü kaydetme
 Yeni bir proje türü oluşturduğunuzda, etkinleştirme kayıt defteri girdileri oluşturmalısınız [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] algılar ve bu proje türü ile çalışmak için. Bu kayıt defteri girdileri genellikle bir kayıt defteri (.rgs) komut dosyası kullanarak oluşturun.  
@@ -85,7 +83,7 @@ Yeni bir proje türü oluşturduğunuzda, etkinleştirme kayıt defteri girdiler
   
 |Ad|Tür|Veri|Açıklama|  
 |----------|----------|----------|-----------------|  
-|`@`(Varsayılan)|REG_SZ|`FigPrj Project VSPackage`|Bu yerelleştirilebilir adı VSPackage (proje türü) kaydedilmiş.|  
+|`@` (Varsayılan)|REG_SZ|`FigPrj Project VSPackage`|Bu yerelleştirilebilir adı VSPackage (proje türü) kaydedilmiş.|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Proje türü DLL yolu. IDE bu DLL'yi yükler ve VSPackage CLSID geçirir `DllGetClassObject` almak için <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> oluşturmak için <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> nesnesi.|  
 |`CompanyName`|REG_SZ|`Microsoft`|Proje türü geliştirilen şirketin adı.|  
 |`ProductName`|REG_SZ|`Figure Project Sample`|Proje türü adı.|  

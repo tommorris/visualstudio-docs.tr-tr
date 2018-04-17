@@ -1,29 +1,25 @@
 ---
-title: "SccGet işlevi | Microsoft Docs"
-ms.custom: 
+title: SccGet işlevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGet
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73f5c55b39d855eb084206ef27e2254d50377b86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb793eb5c35c4ca9ee22a58496ebe175b83c68e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccget-function"></a>SccGet işlevi
 Bu işlev, görüntüleme ve derleme ancak düzenlemek için bir veya daha fazla dosyalarının bir kopyasını alır. Çoğu sistemlerinde, dosyalar salt okunur olarak etiketlenir.  
@@ -81,7 +77,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL` Bayrağı ile birleştirilebilir `SCC_GET_RECURSIVE` belirli dizinlerdeki tüm dosyaları ve tüm alt dizinler de almak için bayrak.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE`hiçbir zaman olmadan iletilmesi gereken `SCC_GET_ALL`. Ayrıca, dizinleri C:\A ve C:\A\B üzerinde bir özyinelemeli geçirilen her ikisini de almak istiyorsanız C:\A\B ve onun tüm alt dizinler gerçekte iki kez alınır olduğunu unutmayın. IDE'nin sorumluluğundadır — ve kaynak denetim eklentinin — bu gibi çoğaltmaları dizi dışında tutulduğundan emin olmak için.  
+>  `SCC_GET_RECURSIVE` hiçbir zaman olmadan iletilmesi gereken `SCC_GET_ALL`. Ayrıca, dizinleri C:\A ve C:\A\B üzerinde bir özyinelemeli geçirilen her ikisini de almak istiyorsanız C:\A\B ve onun tüm alt dizinler gerçekte iki kez alınır olduğunu unutmayın. IDE'nin sorumluluğundadır — ve kaynak denetim eklentinin — bu gibi çoğaltmaları dizi dışında tutulduğundan emin olmak için.  
   
  Son olarak, bir kaynak denetim olsa bile eklenti belirtilen `SCC_CAP_GET_NOUI` bayrağı belirten bir Get komutu için bir kullanıcı arabirimi yok, bu işlev hala dosyaları almak için IDE tarafından çağrılan başlatma. Bayrağı yalnızca IDE Get menü öğesi göstermez ve herhangi bir UI sağlamak eklenti olmadığını beklenen anlamına gelir.  
   

@@ -1,32 +1,30 @@
 ---
-title: "Sözdizimi renklendirmesi uygulama | Microsoft Docs"
-ms.custom: 
+title: Sözdizimi renklendirmesi uygulama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5502bd30378130e5977d427acb9df5b73226a05b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-syntax-coloring"></a>Sözdizimi renklendirmesi uygulama
-Dil hizmeti söz dizimi renklendirme sağladığında, ayrıştırıcı metin satırının colorable öğelerini bir diziye dönüştürür ve belirteç türleri colorable bu öğeler karşılık gelen döndürür. Ayrıştırıcının colorable öğeler listesine ait belirteç türleri döndürmelidir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]colorable her öğe için uygun belirteç türü Renklendirici nesne tarafından atanan öznitelikleri göre kod penceresi görüntüler.  
+Dil hizmeti söz dizimi renklendirme sağladığında, ayrıştırıcı metin satırının colorable öğelerini bir diziye dönüştürür ve belirteç türleri colorable bu öğeler karşılık gelen döndürür. Ayrıştırıcının colorable öğeler listesine ait belirteç türleri döndürmelidir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] colorable her öğe için uygun belirteç türü Renklendirici nesne tarafından atanan öznitelikleri göre kod penceresi görüntüler.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Bir Ayrıştırıcı arabirimi belirtmiyor ve ayrıştırıcı uygulamasıdır tamamen size kalmıştır. Ancak, varsayılan ayrıştırıcı uygulama Visual Studio dil paketi projede sağlanır. Yönetilen kod için yönetilen paket framework (MPF) metin renklendirme için tam destek sağlar.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Bir Ayrıştırıcı arabirimi belirtmiyor ve ayrıştırıcı uygulamasıdır tamamen size kalmıştır. Ancak, varsayılan ayrıştırıcı uygulama Visual Studio dil paketi projede sağlanır. Yönetilen kod için yönetilen paket framework (MPF) metin renklendirme için tam destek sağlar.  
   
  Eski dil hizmetler bir VSPackage bir parçası olarak uygulanır, ancak dil hizmet özellikleri uygulamak için daha yeni MEF uzantıları kullanmak için bir yoludur. Söz dizimi renklendirme uygulamak için yeni yolu hakkında daha fazla bilgi için bkz: [izlenecek yol: Metin vurgulama](../../extensibility/walkthrough-highlighting-text.md).  
   

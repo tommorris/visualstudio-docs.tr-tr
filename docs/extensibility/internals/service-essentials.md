@@ -1,34 +1,30 @@
 ---
 title: Hizmet Essentials | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4db5404ed4cb307064d9d913c240b16051c25977
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c5a9858109c9fe0d8af0d00621b717417a0c0e53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="service-essentials"></a>Hizmet temelleri
-İki VSPackages arasında bir sözleşme hizmetidir. Bir VSPackage arabirimleri kullanmak üzere başka bir VSPackage için belirli bir dizi sağlar. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]kendisi için diğer VSPackages hizmetleri sağlayan VSPackages koleksiyonudur.  
+İki VSPackages arasında bir sözleşme hizmetidir. Bir VSPackage arabirimleri kullanmak üzere başka bir VSPackage için belirli bir dizi sağlar. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kendisi için diğer VSPackages hizmetleri sağlayan VSPackages koleksiyonudur.  
   
  Örneğin, etkinlik günlüğüne yazmak için kullanabileceğiniz bir IVsActivityLog arabirimi sağlamak için SVsActivityLog hizmetini kullanabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: etkinlik günlüğü kullanın](../../extensibility/how-to-use-the-activity-log.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]kayıtlı değil bazı yerleşik hizmetleri de sağlar. VSPackages yerleşik veya diğer hizmetler hizmeti geçersiz kılma sağlayarak değiştirebilirsiniz. Yalnızca bir hizmeti geçersiz kılma için herhangi bir hizmeti izin verilir.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kayıtlı değil bazı yerleşik hizmetleri de sağlar. VSPackages yerleşik veya diğer hizmetler hizmeti geçersiz kılma sağlayarak değiştirebilirsiniz. Yalnızca bir hizmeti geçersiz kılma için herhangi bir hizmeti izin verilir.  
   
  Hizmetler hiçbir bulunabilirliği sahiptir. Bu nedenle, kullanmak istediğiniz bir hizmetin hizmet tanımlayıcısı (SID) bilmeniz gerekir ve sağladığı hangi arabirimlerin bilmeniz gerekir. Başvuru belgeleri hizmeti için bu bilgileri sağlar.  
   
@@ -70,7 +66,7 @@ Bazen bir aracı penceresinden get bir hizmet ya da değil tarihli, aksi takdird
   
 Statik çağırarak çoğu Visual Studio Hizmetleri alabilirsiniz <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> yöntemi.  
   
-<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>bağımlı bir önbelleğe alınan hizmette herhangi VSPackage türetilmiş paketinden ilk kez başlatıldı sağlayıcısı tarihli. Bu koşul karşılanır, aksi takdirde null bir hizmet için hazırlanması güvence altına almalıdır.  
+<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> bağımlı bir önbelleğe alınan hizmette herhangi VSPackage türetilmiş paketinden ilk kez başlatıldı sağlayıcısı tarihli. Bu koşul karşılanır, aksi takdirde null bir hizmet için hazırlanması güvence altına almalıdır.  
   
 Neyse ki, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> çoğu zaman düzgün çalışır.  
   

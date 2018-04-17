@@ -1,22 +1,19 @@
 ---
-title: "Görüntü hizmet ve Katalog | Microsoft Docs"
-ms.custom: 
+title: Görüntü hizmet ve Katalog | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d9b393d9dcf732d9042338dc0786d824351deca3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-service-and-catalog"></a>Yansıma hizmeti ve Katalog
 Bu kılavuzu yönerge ve Visual Studio Görüntü hizmeti ve görüntü Visual Studio 2015'te tanıtılan Kataloğu'nu benimseme için en iyi yöntemler içerir.  
@@ -108,7 +105,7 @@ Bu kılavuzu yönerge ve Visual Studio Görüntü hizmeti ve görüntü Visual S
 |||  
 |-|-|  
 |**Alt öğe**|**Tanım**|  
-|İçeri aktarma|Geçerli bildirimi kullanmak için belirtilen bildirim dosyası simgelerini alır|  
+|{1&gt;İçeri Aktar&lt;1}|Geçerli bildirimi kullanmak için belirtilen bildirim dosyası simgelerini alır|  
 |Guid|Simgenin bir GUID temsil eder ve GUID biçimlendirme eşleşmelidir|  
 |Kimlik|Simgenin bir Kimliğini temsil eder ve negatif olmayan bir tamsayı olmalıdır|  
 |Dize|Simgenin bir isteğe bağlı bir dize değeri temsil eder|  
@@ -660,7 +657,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ### <a name="samples"></a>Örnekler  
  Visual Studio Örnekleri github'da çeşitli görüntü Hizmeti'nin çeşitli Visual Studio genişletilebilirlik noktaları bir parçası olarak nasıl kullanılacağını göstermek için güncelleştirilmiştir.  
   
- Denetleme [http://github.com/Microsoft/VSSDK-Extensibility-Samples](http://github.com/Microsoft/VSSDK-Extensibility-Samples) son örnekleri için.  
+ Denetleme [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) son örnekleri için.  
   
 ### <a name="tooling"></a>Araçları  
  Yansıma hizmeti için destek araçları kümesi oluşturma/resim hizmeti ile çalışan kullanıcı arabirimini güncelleştirme yardımcı olmak için oluşturuldu. Her aracı hakkında daha fazla bilgi için araçları ile birlikte gelen belgelere bakın. Araçlar parçası olarak dahil [Visual Studio 2015 SDK.](http://msdn.microsoft.com/library/bb166441.aspx)  

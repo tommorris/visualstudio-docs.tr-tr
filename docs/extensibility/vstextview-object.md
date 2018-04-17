@@ -1,30 +1,26 @@
 ---
 title: VSTextView nesne | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTextView
 helpviewer_keywords:
 - VSTextView object, reference
 - views [Visual Studio SDK], reference
 ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f169c3302b3e6fd72e5017193e34836ed3e5340e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5be89d01a668fd05e70e73e31ffaf3742317c272
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vstextview-object"></a>VSTextView nesnesi
 Metin görünümü, kullanıcıların metin arabelleğinin Unicode metni görüntüleyin ve düzenleyin olanak veren bir penceredir. Esas olarak, hangi kullanıcıların çoğunun düzenleyicisi olarak başvurmak görünümüdür. Görünüm arabelleğinden çeşitli metin katmanları (sözcük kaydırma, anahat metin vb.) ayrı olması nedeniyle görünümü metin arabelleği tam bir temsili olması garanti edilmez. Metin görünümü hakkında daha fazla bilgi için bkz: [eski API kullanarak getirip metin görünümü erişme](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
@@ -38,7 +34,7 @@ Metin görünümü, kullanıcıların metin arabelleğinin Unicode metni görün
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|Standart OLE arabirimi.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Standart OLE arabirimi.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Bileşik eylemleri (diğer bir deyişle, bir tek geri alma/yineleme biriminde gruplandırılır Eylemler) oluşturulmasını sağlar.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Temel yöntemler yönetme ve görünüm erişim sağlar. `IVsTextView`iş parçacığı güvenli değil.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Temel yöntemler yönetme ve görünüm erişim sağlar. `IVsTextView` iş parçacığı güvenli değil.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Oluşturur ve bir pencere bölmesine yönetir.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|Metin katmanları ile etkileşime girer.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Farklı bir iş parçacığından görünümü işlemleri gerçekleştirir.|  

@@ -1,26 +1,24 @@
 ---
-title: "Tasarımcı başlatma ve meta veri yapılandırması | Microsoft Docs"
-ms.custom: 
+title: Tasarımcı başlatma ve meta veri yapılandırması | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
 - designers [Visual Studio SDK], configuring metadata
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 61624d9926f4d984386f1a8b3fe8a575ce465331
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a6334f65b942b2eab3543d866ae1b98a186569ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Tasarımcı başlatma ve meta verileri yapılandırma
 Bir tasarımcı veya Tasarımcısı bileşen ile ilişkili meta verileri ve filtre öznitelikleri işlenmesini hangi araçların farklı işlemek için belirli bir tasarımcı tarafından kullanılan tanımlamak üzere uygulamalar için bir mekanizma sağlar <xref:System.Type> nesne (örneğin, veri yapıları sınıfları veya grafik varlıklar), Tasarımcı kullanılabilir olduğunda ve Visual Studio IDE designer'ı desteklemek üzere nasıl yapılandırılır (örnek hangi **araç** kategori veya sekmesinde kullanılabilir).  

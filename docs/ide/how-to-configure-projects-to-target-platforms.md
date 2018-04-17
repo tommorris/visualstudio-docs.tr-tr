@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: projeleri hedef platformlar için yapılandırma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: projeleri hedef platformlar için yapılandırma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project settings [Visual Studio], targeting platforms
 - platforms, targeting specific CPUs
@@ -17,19 +15,19 @@ helpviewer_keywords:
 - CPUs, targeting specific
 - 64-bit applications [Visual Studio]
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0ccca87721c39daa7e613d7426c9d5fed6a144cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4dfccc6fcbfbd3f5844421a97b6ad9e7c40bd0c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Nasıl Yapılır: Projeleri Hedef Platformlar İçin Yapılandırma
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]uygulamalarınızı 64-bit platformları da dahil olmak üzere, farklı platformları hedeflemesi için ayarlamanıza olanak tanır. 64-bit platformu hakkında daha fazla bilgi için destek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], bkz: [64-bit uygulamalar](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uygulamalarınızı 64-bit platformları da dahil olmak üzere, farklı platformları hedeflemesi için ayarlamanıza olanak tanır. 64-bit platformu hakkında daha fazla bilgi için destek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], bkz: [64-bit uygulamalar](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>Configuration Manager ile platformları hedefleme  
  **Configuration Manager** hızla yeni bir platformu projenizle hedef eklemek bir yol sağlar. İle birlikte gelen platformları birini seçerseniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], seçilen platform için projeyi derlemek için projenizi özelliklerini değiştirdi.  

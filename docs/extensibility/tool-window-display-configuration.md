@@ -1,26 +1,24 @@
 ---
-title: "Araç penceresi ekran yapılandırması | Microsoft Docs"
-ms.custom: 
+title: Araç penceresi ekran yapılandırması | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 585ea78e0591ad979d09a3e5b208635c3f75f903
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 175e2005047312f6815e90c21c60ab831c036064
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tool-window-display-configuration"></a>Araç penceresi ekran yapılandırması
 Ne zaman bir VSPackage araç penceresi, varsayılan konumu, boyutu, yerleştirme stilini ve diğer görünürlük bilgileri kaydeder, isteğe bağlı değerleri belirtilir. Araç penceresi kayıt hakkında daha fazla bilgi için bkz: [kayıt defterinde araç pencereleri](../extensibility/tool-windows-in-the-registry.md)  
@@ -44,7 +42,7 @@ HKEY_LOCAL_MACHINE\
 |Ad|REG_SZ|"Kısa ad buraya"|Araç penceresi açıklayan kısa bir ad. Yalnızca kayıt defterinde referans için kullanılır.|  
 |Kayan nokta|REG_SZ|"X1, Y1, X2, Y2"|Dört virgülle ayrılmış değerler. X1, Y1 olan aracı penceresinin sol üst köşesindeki koordinatı. X2, Y2 olduğu sağ alt köşedeki koordinatı. Ekran koordinatları olarak tüm değerlerdir.|  
 |Stil|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Bağlı"<br /><br /> "Sekmeli"<br /><br /> "AlwaysFloat"|İlk belirten bir anahtar sözcük araç penceresi durumunu görüntüler.<br /><br /> "MDI" = ile MDI pencere yerleştirildi.<br /><br /> "Float" kayan =.<br /><br /> "Bağlı" = (penceresi girdisinde belirtilen) başka bir pencere ile bağlantılı.<br /><br /> "Sekmeli" = başka bir araç penceresi ile birlikte.<br /><br /> "AlwaysFloat" = yerleşik olamaz.<br /><br /> Daha fazla bilgi için aşağıdaki Açıklamalar bölümüne bakın.|  
-|Pencere|REG_SZ|*\<GUID >*|Bir pencere için araç penceresi bağlı sekmeli veya GUID. GUID, kendi windows birini ya da windows biri ait olabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
+|Pencere|REG_SZ|*\<GUID &GT;*|Bir pencere için araç penceresi bağlı sekmeli veya GUID. GUID, kendi windows birini ya da windows biri ait olabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
 |Yönlendirme|REG_SZ|"Sol"<br /><br /> "Sağ"<br /><br /> "Top"<br /><br /> "Alt"|Aşağıdaki Açıklamalar bölümüne bakın.|  
 |DontForceCreate|REG_DWORD|0 veya 1|Bu girdi varsa ve değeri sıfır olmadığında penceresi yüklendi ancak hemen görüntülenir.|  
   
@@ -91,7 +89,7 @@ HKEY_LOCAL_MACHINE\
 |Ad|Tür|Veri|Açıklama|  
 |----------|----------|----------|-----------------|  
 |(Varsayılan)|REG_SZ|Yok.|Boş bırakın.|  
-|*\<GUID >*|REG_DWORD veya REG_SZ|0 veya tanımlayıcı bir dize.|İsteğe bağlı. Girişin adı görünürlük gerektiren bir komut GUID olması gerekir. Değer, yalnızca bilgilendirici bir dize tutar. Genellikle, değeri olan bir `reg_dword` 0 olarak ayarlayın.|  
+|*\<GUID &GT;*|REG_DWORD veya REG_SZ|0 veya tanımlayıcı bir dize.|İsteğe bağlı. Girişin adı görünürlük gerektiren bir komut GUID olması gerekir. Değer, yalnızca bilgilendirici bir dize tutar. Genellikle, değeri olan bir `reg_dword` 0 olarak ayarlayın.|  
   
 ### <a name="example"></a>Örnek  
   

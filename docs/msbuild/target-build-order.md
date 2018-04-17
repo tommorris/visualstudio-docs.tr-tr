@@ -2,25 +2,21 @@
 title: Hedef derleme sırası | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9936c1529f0fbb5161d4cd766b1ce5eb0fc847c1
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 875e51b2ce91c1a430b2e521fc392def4a53f6a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="target-build-order"></a>Hedef Derleme Sırası
 Bir hedef girdisi başka bir hedef Çıkışta bağımlıysa hedefleri sıralanmalıdır. Bu öznitelikler hedefleri çalıştığı sırayı belirtmek için kullanabilirsiniz:  
@@ -114,6 +110,8 @@ Bir hedef girdisi başka bir hedef Çıkışta bağımlıysa hedefleri sıralanm
 2.  Komut satırı tarafından belirtilen hedefleri **/target** anahtar çalıştırılır. Komut satırında hedef belirtirseniz, sonra `DefaultTargets` hedefleri çalıştırılır. Hiçbiri mevcut değilse karşılaştı ilk hedef çalıştırılır.  
   
 3.  `Condition` Özniteliği hedef değerlendirildiği. Varsa `Condition` özniteliği var ve değerlendiren `false`, hedef yürütülen değil ve daha fazla yapı etkisi yoktur.
+
+    Koşullu hedef listesinde hedefleri `BeforeTargets` veya `AfterTargets` belirlenen sırada çalıştırmaya devam
   
 4.  Bir hedef yürütülmeden önce kendi `DependsOnTargets` hedefleri çalıştırılır.  
   

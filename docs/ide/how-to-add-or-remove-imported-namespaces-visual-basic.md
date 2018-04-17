@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: ekleme veya içeri aktarılan ad alanlarını (Visual Basic) kaldırma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: ekleme veya içeri aktarılan ad alanlarını (Visual Basic) kaldırma | Microsoft Docs'
+ms.custom: ''
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - adding imported namespaces
 - removing imported namespaces
@@ -14,21 +12,21 @@ helpviewer_keywords:
 - imported namespaces [Visual Studio]
 - references [Visual Studio], imported namespaces
 ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 015f2efa352b5ff2d8b87e356972270c175d0168
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 70cffeb24c8eb13823b381b7cc5d0c2034a57b80
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Nasıl Yapılır: İçeri Aktarılan Ad Uzaylarını Ekleme veya Kaldırma (Visual Basic)
+# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Nasıl yapılır: ekleme veya kaldırma içeri aktarılan ad alanlarını (Visual Basic)
 Bir ad alanı içe aktarma öğesi tam olarak niteleme olmadan bu ad alanındaki öğeler kodunuzda kullanmanıza olanak sağlar. Erişmek istiyorsanız, örneğin, `Create` yönteminde `System.Messaging.MessageQueue` alabileceğiniz sınıfı, `System.Messaging` ad alanı ve yalnızca gereksinim duyduğunuz kodda öğesine başvuruda `MessageQueue.Create`.  
 
- İçeri aktarılan ad alanları üzerindeki yönetilen **başvuruları** sayfasında **Proje Tasarımcısı**. Bu iletişim kutusunda belirttiğiniz içeri aktarmalar doğrudan derleyiciye geçirilir (`/imports`) ve projenizdeki tüm dosyalara uygulayabilirsiniz. Kullanmak `Imports` deyimi bir tek kaynak kodu dosyasına bir ad kullanın.  
+ İçeri aktarılan ad alanları üzerindeki yönetilen **başvuruları** sayfasında **Proje Tasarımcısı**. Bu iletişim kutusunda belirttiğiniz içeri aktarmalar doğrudan derleyiciye geçirilir (*/Imports*) ve projenizdeki tüm dosyalara uygulayabilirsiniz. Kullanmak `Imports` deyimi bir tek kaynak kodu dosyasına bir ad kullanın.  
 
 ### <a name="to-add-an-imported-namespace"></a>İçeri aktarılan ad eklemek için  
 
@@ -50,11 +48,11 @@ Bir ad alanı içe aktarma öğesi tam olarak niteleme olmadan bu ad alanındaki
 3.  İçinde **içeri aktarılan ad alanları** listesinde, kaldırmak istediğiniz ad alanı için onay kutusunu temizleyin.  
 
 ## <a name="user-imports"></a>Kullanıcı içeri aktarmalar  
- Kullanıcı içeri aktarmalar, belirli bir sınıfın tüm ad alanı yerine bir ad alanı içinde almaya izin verir. Örneğin, uygulamanız için alma olabilir `Systems.Diagnostics` ad alanı, ancak ilgilendiğiniz bu ad alanındaki tek sınıf `Debug` sınıfı. Tanımlayabileceğiniz `System.Diagnostics.Debug` bir kullanıcı olarak içeri aktarma ve alma için Kaldır'ı `System.Diagnostics`.  
+ Kullanıcı içeri aktarmalar, belirli bir sınıfın tüm ad alanı yerine bir ad alanı içinde almaya izin verir. Örneğin, uygulamanız için alma olabilir <xref:System.Diagnostics> ad alanı, ancak ilgilendiğiniz bu ad alanındaki tek sınıf `Debug` sınıfı. Tanımlayabileceğiniz <xref:System.Diagnostics.Debug> bir kullanıcı olarak içeri aktarma ve alma için Kaldır'ı <xref:System.Diagnostics>.  
 
- Daha sonra fikir değiştirirseniz ve yalnızca karar verirseniz, gerçekten `EventLog` girin, gerekli sınıfı, `System.Diagnostics.EventLog` bir kullanıcı olarak alma ve üzerine yazma `System.Diagnostics.Debug` güncelleştirme işlevini kullanarak.  
+ Daha sonra fikir değiştirirseniz ve yalnızca karar verirseniz, gerçekten `EventLog` girin, gerekli sınıfı, <xref:System.Diagnostics.EventLog> bir kullanıcı olarak alma ve üzerine yazma <xref:System.Diagnostics.Debug> güncelleştirme işlevini kullanarak.  
 
-#### <a name="to-add-a-user-import"></a>Bir kullanıcı alma eklemek için  
+### <a name="to-add-a-user-import"></a>Bir kullanıcı alma eklemek için  
 
 1.  İçinde **Çözüm Gezgini**, çift **My proje** projesi için düğüm.  
 
@@ -67,7 +65,7 @@ Bir ad alanı içe aktarma öğesi tam olarak niteleme olmadan bu ad alanındaki
     > [!NOTE]
     >  **Kullanıcı alma ekleme** düğmesi devre dışı bırakılacak ad alanı zaten listeden birini eşleşirse; bir alma işlemi iki kez eklenemiyor.  
 
-#### <a name="to-update-a-user-import"></a>Bir kullanıcı alma güncelleştirmek için  
+### <a name="to-update-a-user-import"></a>Bir kullanıcı alma güncelleştirmek için  
 
 1.  İçinde **Çözüm Gezgini**, çift **My proje** projesi için düğüm.  
 
@@ -79,5 +77,5 @@ Bir ad alanı içe aktarma öğesi tam olarak niteleme olmadan bu ad alanındaki
 
 5.  Tıklatın **güncelleştirme kullanıcı alma** ad alanını güncelleştirmek için düğmesini **içeri aktarılan ad alanları** listesi.  
 
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md)

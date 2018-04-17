@@ -1,13 +1,10 @@
 ---
-title: "Nasıl yapılır: Sınıf Tasarımcısı kullanarak türleri oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: Sınıf Tasarımcısı kullanarak türleri oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - attributes [Visual Studio], applying custom
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db46a4fa0faa568597deccddb528d8765e048e22
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22260ee75a1c64de842da41b292fbeebeb6cf6ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Nasıl Yapılır: Sınıf Tasarımcısı Kullanarak Tür Oluşturma
 C# ve Visual Basic projeleri için yeni türleri tasarlamak için bir sınıf diyagramında oluşturun. Varolan türlerini görmek için bkz: [nasıl yapılır: Varolan görünüm türleri](how-to-view-existing-types.md).  
@@ -39,7 +35,7 @@ C# ve Visual Basic projeleri için yeni türleri tasarlamak için bir sınıf di
   
 -   [Özel bir öznitelik türü üyesi Uygula](#CustAttributeMember)  
   
-##  <a name="CreateType"></a>Yeni bir tür oluşturun  
+##  <a name="CreateType"></a> Yeni bir tür oluşturun  
   
 1.  Araç Kutusu'nda, Sınıf Tasarımcısı'nın altında aşağıdakilerden birini bir sınıf diyagramına sürükleyin:  
   
@@ -47,11 +43,11 @@ C# ve Visual Basic projeleri için yeni türleri tasarlamak için bir sınıf di
   
     -   **Enum**  
   
-    -   **Interface**  
+    -   **Arabirimi**  
   
     -   **Yapı** (VB) veya **yapısı** (C#)  
   
-    -   **Delegate**  
+    -   **Temsilci**  
   
     -   **Modül** (yalnızca VB)  
   
@@ -69,7 +65,7 @@ C# ve Visual Basic projeleri için yeni türleri tasarlamak için bir sınıf di
   
     |||  
     |-|-|  
-    |**İçin**|**Ekle**|  
+    |**için**|**Ekle**|  
     |Sınıflar, soyut sınıflar, yapılar veya struct'lar|Yöntemler, özellikler, alanlar, olaylar, yapıcılar (yöntem), yıkıcılar (yöntem) ve türü tanımlayan sabitler|  
     |Numaralandırmalar|Numaralandırmayı oluşturan alan değerleri|  
     |Arabirimler|Yöntemler, özellikler ve arabirimi oluşturan olaylar|  
@@ -78,7 +74,7 @@ C# ve Visual Basic projeleri için yeni türleri tasarlamak için bir sınıf di
   
      Bkz: [üye oluşturma](creating-and-configuring-type-members.md#CreateMembers).  
   
-##  <a name="CustAttributeType"></a>Özel bir öznitelik türü için geçerli  
+##  <a name="CustAttributeType"></a> Özel bir öznitelik türü için geçerli  
   
 1.  Bir sınıf diyagramında türe ait şekle tıklayın.  
   
@@ -88,7 +84,7 @@ C# ve Visual Basic projeleri için yeni türleri tasarlamak için bir sınıf di
   
      İşiniz bittiğinde özel öznitelikler türe uygulanır.  
   
-##  <a name="CustAttributeMember"></a>Özel bir öznitelik türü üyesi Uygula  
+##  <a name="CustAttributeMember"></a> Özel bir öznitelik türü üyesi Uygula  
   
 1.  Bir sınıf diyagramında kendi türünün şeklinde üyenin adına veya Sınıf Ayrıntıları penceresinde satırına tıklayın.  
   

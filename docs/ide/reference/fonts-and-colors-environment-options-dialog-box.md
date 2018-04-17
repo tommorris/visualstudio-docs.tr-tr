@@ -1,12 +1,10 @@
 ---
-title: "Yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu | Microsoft Docs"
-ms.custom: 
+title: Yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 23e6712dbf66c898757176aca9e89b98de2f65bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a089bc9fe61d1ddc8e4510c4da03235c7ab782ee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu
 **Yazı tiplerini ve renkleri** sayfasında **seçenekleri** iletişim kutusu çeşitli kullanıcı arabirimi öğeleri için özel bir yazı tipi ve renk şeması tümleşik geliştirme ortamı (IDE) oluşturmanızı sağlar. Bu iletişim kutusunu tıklatarak erişebilirsiniz **Araçlar / Seçenekler**, seçilerek **ortam / yazı tipleri ve renkler**. Bu sayfayı listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.  
@@ -128,7 +126,7 @@ Kullanılabilen listelerini vurgulanan yazı tipi boyutlarını gelin. Yazı tip
 |**Kapsama alanı işlemdeki değil**|Birim testi tarafından kapsanmayan kodu.|  
 |**Kapsama alanı kısmen işlemdeki**|Birim testi tarafından bir kısmen kapsanan kodu.|  
 |**Kapsama alanı işlemdeki**|Birim testi tarafından bir tamamen kapsamdaki kodu.|  
-|**CSS açıklama**|Geçişli stil sayfaları bir yorum. Örneğin:<br /><br /> / * Açıklama\*/|  
+|**CSS açıklama**|Geçişli stil sayfaları bir yorum. Örneğin:<br /><br /> / * Açıklama \*/|  
 |**CSS anahtar sözcüğü**|Geçişli stil sayfası dilindeki anahtar sözcükler.|  
 |**CSS özellik adı**|Arka plan gibi bir özelliğin adı.|  
 |**CSS özellik değeri**|Mavi gibi özelliğine atanan değer.|  
@@ -151,7 +149,7 @@ Kullanılabilen listelerini vurgulanan yazı tipi boyutlarını gelin. Yazı tip
 |**Bellek verileri**|M içindeki verileri görüntülemek için kullanılan metin rengini**bellek** penceresi.|  
 |**Bellek okunamıyor**|İçinde okunamaz bellek alanları görüntülemek için kullanılan metin rengini **bellek** penceresi.|  
 |**Sayı**|Gerçek bir sayısal değer temsil eden kod bir sayı.|  
-|**İşleci**|İşleçler gibi +, -, ve! =.|  
+|**işleci**|İşleçler gibi +, -, ve! =.|  
 |**Diğer hata**|Diğer hata dalgalı çizgiler tarafından kapsanmayan diğer hata türleri. Şu anda bu utangaç düzenlemeleri Düzenle ve devam et içerir.|  
 |**Önişlemci anahtar sözcüğü**|Anahtar sözcükler gibi önişlemci tarafından kullanılan #include.|  
 |**Salt okunur bölge**|Düzenlenemez kodu. Kod tanımı Görünümü penceresi veya Düzenle ve devam et sırasında değiştirilemez kod görüntülenen örnek kod.|  

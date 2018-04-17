@@ -1,30 +1,28 @@
 ---
-title: "Adlandırma kuralları EditorConfig için .NET dosyaları | Microsoft Docs"
-ms.custom: 
+title: Adlandırma kuralları EditorConfig için .NET dosyaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ca33a9dfa2eb4d0eb8250df2d99337ab4d550938
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 14b284c797add9545efdd291b06ce62b0b75cf03
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET EditorConfig için adlandırma kuralları
 
-Adlandırma kuralları kod öğeleri sınıfları, özellikleri ve yöntemleri gibi adlandırma ilgilendiren. Örneğin, Genel üyeler büyük harfle yazılmalıdır veya zaman uyumsuz yöntemleri "Zaman uyumsuz" bitmelidir belirtebilirsiniz. Bunları belirterek bu kuralları zorunlu kılabilir bir [.editorconfig dosya](../ide/create-portable-custom-editor-options.md). Kural ihlallerinin adlandırma ya da hata listesi görüntülenir veya adı altında bir öneri olarak önem derecesine bağlı olarak, kuralınız için seçin. İhlalleri görmek için projeyi derlemek için gerek yoktur.
+Adlandırma kuralları kod öğeleri sınıfları, özellikleri ve yöntemleri gibi adlandırma ilgilendiren. Örneğin, Genel üyeler büyük harfle yazılmalıdır veya zaman uyumsuz yöntemleri "Zaman uyumsuz" bitmelidir belirtebilirsiniz. Bunları belirterek bu kuralları zorunlu kılabilir bir [.editorconfig dosya](../ide/create-portable-custom-editor-options.md). Adlandırma kuralı ihlallerini görünür ya da **hata listesi** veya adı altında bir öneri olarak önem derecesine bağlı olarak, kuralınız için seçin. İhlalleri görmek için projeyi derlemek için gerek yoktur.
 
-Adlandırma kuralları en belirgin sıralı çok az özgü .editorconfig dosyasında. Uygulanabilir ilk kural karşılaştı uygulanan yalnızca kuralıdır.
+Adlandırma kuralları en belirgin sıralı çok az özgü içinde *.editorconfig* dosya. Uygulanabilir ilk kural karşılaştı uygulanan yalnızca kuralıdır.
 
 Her adlandırma kuralı için aşağıda açıklanan özelliklerini kullanarak uygulandığı sembolleri, adlandırma bir tarzını ve kural zorlama bir önem derecesi belirtmelisiniz. Özelliklerin sırası önemli değildir.
 
@@ -147,15 +145,15 @@ Aşağıdaki tabloda, izin verilen önem derecesi değerlerini ve ne anlama geld
 ------------ | -------------
 None veya Sessiz | Bu stili ardından, herhangi bir şey kullanıcıya gösterme; Ancak, otomatik olarak oluşturulan kod bu stili izler.
 Öneri | Bu stili ardından, kullanıcıya ilk iki karakter üzerinde temel alınan noktaların bir öneri olarak göster. Derleme zamanında hiçbir etkisi yoktur.
-uyarı | Bu stili ardından, derleyici uyarısı hata listesinde göster.
-Hata | Bu stili ardından, bir derleyici hatası hata listesinde göster.
+uyarı | Bu stili ardından, bir derleyici uyarısı göster **hata listesi**.
+Hata | Bu stili ardından, bir derleyici hatası Göster **hata listesi**.
 
 > [!NOTE]
-> Kural ihlallerinin adlandırma görmeniz için projenizi derleme gerekmez. Hata listesi veya bir öneri olarak kod düzenlendikten olarak görünürler.
+> Kural ihlallerinin adlandırma görmeniz için projenizi derleme gerekmez. Kodu düzenlenmiş olarak göründükleri ya da **hata listesi** veya bir öneri olarak.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki .editorconfig dosya ortak özellikleri, yöntemleri, alanları, olaylar ve temsilciler büyük harfle yazılmalıdır olduğunu belirten bir adlandırma kuralı içerir. Bu adlandırma kuralını değerleri ayırmak için virgül kullanarak, kuralın uygulanacağı simge birden çok türde belirtir dikkat edin.
+Aşağıdaki *.editorconfig* dosyası ortak özellikleri, yöntemleri, alanları, olaylar ve temsilciler büyük harfle yazılmalıdır olduğunu belirten bir adlandırma kuralı içerir. Bu adlandırma kuralını değerleri ayırmak için virgül kullanarak, kuralın uygulanacağı simge birden çok türde belirtir dikkat edin.
 
 ```EditorConfig
 # Public members must be capitalized (public_members_must_be_capitalized)
@@ -171,7 +169,7 @@ dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-Aşağıdaki ekran görüntüsünde Düzenleyicisi'nde bu adlandırma kuralını etkisini gösterir. İki ortak değişken ilk harfini büyük harf adlı. Biridir bir `const`, ve `readonly`. Adlandırma kuralı yalnızca uygular beri *readonly* simge, yalnızca `readonly` değişkeni, bir adlandırma kuralı öneri gösterir.
+Aşağıdaki ekran görüntüsünde Düzenleyicisi'nde bu adlandırma kuralını etkisini gösterir. İki ortak değişken ilk harfini büyük harf adlı. Biridir bir `const`, ve `readonly`. Adlandırma kuralı yalnızca uygular beri `readonly` simge, yalnızca `readonly` değişkeni, bir adlandırma kuralı öneri gösterir.
 
 ![Adlandırma kuralı önerisi](media/editorconfig-naming-rule-suggestion.png)
 
@@ -181,7 +179,7 @@ Aşağıdaki ekran görüntüsünde Düzenleyicisi'nde bu adlandırma kuralını
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Öneri adı ihlali altında görmesini yerine kod dosyasını kapatıp varsa dalgalı yeşil ve bir uyarı hata listesinde bakın:
+Dalgalı yeşil ve bir uyarı adı ihlali altında öneri görmesini yerine kod dosyasını kapatıp, gördüğünüz **hata listesi**:
 
 ![Adlandırma kuralı uyarı](media/editorconfig-naming-rule-warning.png)
 

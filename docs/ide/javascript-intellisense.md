@@ -1,12 +1,10 @@
 ---
 title: JavaScript IntelliSense | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 06/28/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript]
 - <reference> JavaScript XML tag
@@ -26,24 +24,25 @@ helpviewer_keywords:
 - XML documentation comments [JavaScript]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c958958ca3b0621a4e348ebcbc4cffaf35d3cce9
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eb4d95dcc53926f7ae8b0b295b7552185a4a934c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
-[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]düzenleme deneyimi kutunun sağ dışında güçlü bir JavaScript sağlar. Bir temel TypeScript dil hizmeti tarafından açık, Visual Studio'nun daha zengin IntelliSense, modern JavaScript özellikleri için destek sağlar ve verimliliğin yeniden düzenleme, Tanıma Git gibi özellikleri ve daha fazlası.
+[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] düzenleme deneyimi kutunun sağ dışında güçlü bir JavaScript sağlar. Bir temel TypeScript dil hizmeti tarafından açık, Visual Studio'nun daha zengin IntelliSense, modern JavaScript özellikleri için destek sağlar ve verimliliğin yeniden düzenleme, Tanıma Git gibi özellikleri ve daha fazlası.
 
 > [!NOTE]
 > JavaScript dil hizmetinde [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] dil hizmeti (çağrılan "Salsa") için yeni bir altyapısı kullanır. Ayrıntılar bu konuda yer alan ve bu da okuyabilirsiniz [blog gönderisi](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc). Yeni düzenleme deneyimi de çoğunlukla Visual Studio Code için geçerlidir. Bkz: [VS Code belgeleri](https://code.visualstudio.com/docs/languages/javascript) daha fazla bilgi için.
 
 Visual Studio genel IntelliSense işlevselliği hakkında daha fazla bilgi için bkz: [kullanarak IntelliSense](../ide/using-intellisense.md).
 
-## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Yeni JavaScript dil hizmeti nedir[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Yeni JavaScript dil hizmeti nedir [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 İtibariyle [!include[vs_dev15](../misc/includes/vs_dev15_md.md)], JavaScript IntelliSense, parametre ve üye listelerde çok daha fazla bilgi görüntüler.
 Bu yeni bilgiler kodunuzu daha iyi anlamak için arka planda statik çözümlemesini kullanır TypeScript dil hizmeti tarafından sağlanır.
@@ -90,7 +89,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
-### <a name="JsDoc"></a>JSDoc üzerinde temel IntelliSense
+### <a name="JsDoc"></a> JSDoc üzerinde temel IntelliSense
 
 Burada tür çıkarımı sağlamaz istenen türü bilgileri (veya belgeleri desteklemek için), tür bilgilerini sağlanmalı açıkça JSDoc ek açıklamaları.  Örneğin, belirli bir tür kısmen bildirilen nesne vermek için kullanabileceğiniz `@type` etiketi aşağıda gösterildiği gibi:
 
@@ -116,7 +115,7 @@ function Foo(param1) {
 
 Bkz: [bu belge](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) şu anda desteklenen JsDoc ek açıklamaları.
 
-### <a name="TsDeclFiles"></a>TypeScript bildirimi dosyalarını temel IntelliSense
+### <a name="TsDeclFiles"></a> TypeScript bildirimi dosyalarını temel IntelliSense
 
 JavaScript ve TypeScript aynı dil hizmette şimdi tabanlı olduğundan, bunlar daha zengin bir biçimde etkileşemeyebilirsiniz. Bildirilen değerler için JavaScript IntelliSense gibi sağlanabilir bir `.d.ts` dosyası ([daha fazla bilgi](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), ve arabirimleri ve TypeScript içinde bildirilen sınıflar gibi türleri kullanılabilir JsDoc açıklamaları türü olarak. 
 
@@ -124,7 +123,7 @@ Aşağıda, basit bir örnek (üzerinden bir arayüzü) gibi tür bilgilerini sa
 
 <img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
 
-### <a name="Auto"></a>Tür tanımları otomatik alımını
+### <a name="Auto"></a> Tür tanımları otomatik alımını
 
 TypeScript dünyanın en popüler JavaScript kitaplıklarını tarafından açıklanan kendi API sahip `.d.ts` dosyaları ve bu tür tanımları için en yaygın depo açıktır [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 

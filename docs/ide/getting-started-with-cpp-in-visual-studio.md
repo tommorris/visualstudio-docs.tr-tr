@@ -3,20 +3,19 @@ title: Visual Studio'da C++ kullanmaya başlama | Microsoft Docs
 ms.custom: mvc
 ms.date: 12/04/2017
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: ec0ab12b1df5a36c81a394406610c16fe184f0d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio'da C++ kullanmaya başlama
 
@@ -24,7 +23,7 @@ Bu hızlı başlangıç araçları ve Visual Studio ile C++ uygulamaları geliş
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu hızlı başlangıç tamamlamak için C++ ile ilgili bilgi sahibi olmanız gerekmez, ancak bazı genel programlama ve hata ayıklama kavramlarını bilgi sahibi olmanız gerekir. Visual Studio belgelerinde nasıl c++'ta programlanacağı öğretmek değildir. C++ öğrenme kaynakları için iyi bir kılavuzdur [Get Started](https://isocpp.org/get-started) ISO C++ Web sayfasında.
+Bu hızlı başlangıç tamamlamak için C++ ile ilgili bilgi sahibi olmanız gerekmez, ancak bazı genel programlama ve hata ayıklama kavramlarını bilgi sahibi olmanız gerekir. Visual Studio belgelerinde nasıl c++'ta programlanacağı öğretmek değildir. C++ öğrenme kaynakları için iyi bir kılavuzdur [başlama](https://isocpp.org/get-started) ISO C++ Web sayfasında.
 
 İzlemek için Visual Studio 2017 sürüm kopyasını 15.3 veya sonrasını ihtiyacınız **C++ ile masaüstü geliştirme** yüklü iş yükü. Yükleme için hızlı bir kılavuz için bkz: [Visual Studio yükleme C++ Destek](/cpp/build/vscpp-step-0-installation).
 
@@ -52,7 +51,7 @@ Visual Studio kullanan *projeleri* bir uygulama kodunu düzenlemenizi ve *çöz�
 
 1. Seçin **Tamam** uygulama proje ve çözüm oluşturmak için düğmesi.
 
-   HelloApp proje ve çözüm, bir Windows konsol uygulaması için temel dosyalarla oluşturulur ve otomatik olarak yüklenen **Çözüm Gezgini**. Kod Düzenleyicisi'nde HelloApp.cpp dosya açılır. Bu öğe görünür **Çözüm Gezgini**:
+   HelloApp proje ve çözüm, bir Windows konsol uygulaması için temel dosyalarla oluşturulur ve otomatik olarak yüklenen **Çözüm Gezgini**. *HelloApp.cpp* dosya Kod Düzenleyicisi'nde açılır. Bu öğe görünür **Çözüm Gezgini**:
 
    ![Çözüm Gezgini'ndeki çözüme dosyaları](../ide/media/get-started-cpp-solution-explorer.png "Çözüm Gezgini'ndeki çözüme dosyaları")
 
@@ -62,7 +61,7 @@ Ardından, word görüntülemek için kod konsol penceresinde "Hello ifadesini" 
 
 ### <a name="to-edit-code-in-the-editor"></a>Kod Düzenleyicisi'nde düzenlemek için
 
-1. HelloApp.cpp dosyasında satırdan önce boş bir satır girin `return 0;` ve ardından bu kodu girin:
+1. İçinde *HelloApp.cpp* dosya, satırından önce boş bir satıra girin `return 0;` ve ardından bu kodu girin:
 
    ```cpp
    cout << "Hello\n";
@@ -76,9 +75,9 @@ Ardından, word görüntülemek için kod konsol penceresinde "Hello ifadesini" 
 
    ![Hata Listesi penceresini hata](../ide/media/get-started-cpp-error-list.png "hata listesi penceresini hatası")
 
-   Kodunuz için bir bildirim eksik [std::cout](/cpp/standard-library/iostream), içinde bulunan \<iostream > Üstbilgi dosyası.
+   Kodunuz için bir bildirim eksik [std::cout](/cpp/standard-library/iostream), içinde bulunan  *\<iostream >* üstbilgi dosyası.
 
-1. İostream üstbilgisi eklemek için sonra bu kodu girin `#include "stdafx.h"`:
+1. Eklenecek *iostream* başlığı, sonra bu kodu girin `#include "stdafx.h"`:
 
    ```cpp
    #include <iostream>
@@ -105,11 +104,11 @@ Kodunuzu oluşturmak kolaydır. Menü çubuğunda seçin **Yapı > Yapı çözü
 
 ### <a name="to-debug-the-app"></a>Uygulama hata ayıklamak için
 
-1. Hata ayıklayıcı başlatmayı seçin **hata ayıklama > hata ayıklamayı Başlat** menü çubuğunda.
+Hata ayıklayıcı başlatmayı seçin **hata ayıklama > hata ayıklamayı Başlat** menü çubuğunda.
 
-   ![Hata ayıklama menüsündeki komutu hata ayıklamayı Başlat](../ide/media/get-started-cpp-start-debugging-menu.png "hata ayıklamayı Başlat menüsündeki hata ayıklama")
+![Hata ayıklama menüsündeki komutu hata ayıklamayı Başlat](../ide/media/get-started-cpp-start-debugging-menu.png "hata ayıklamayı Başlat menüsündeki hata ayıklama")
 
-   Hata ayıklayıcı başlar ve kodu çalıştırır. Konsol penceresi (bir komut istemi gibi görünüyor ayrı bir pencerede) birkaç saniye görünür ancak hata ayıklayıcı çalışmayı durdurduğunda hızlı bir şekilde kapatır. Metin görmek için program yürütme durdurmak için kesme noktası ayarlamanız gerekir.
+Hata ayıklayıcı başlar ve kodu çalıştırır. Konsol penceresi (bir komut istemi gibi görünüyor ayrı bir pencerede) birkaç saniye görünür ancak hata ayıklayıcı çalışmayı durdurduğunda hızlı bir şekilde kapatır. Metin görmek için program yürütme durdurmak için kesme noktası ayarlamanız gerekir.
 
 ### <a name="to-add-a-breakpoint"></a>Bir kesme noktası eklemek için
 
@@ -153,8 +152,8 @@ Bu hızlı başlangıç Tamamlanıyor Tebrikler! Daha fazla örnek keşfetmek, b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Masaüstü Geliştirmesi için Visual Studio IDE Kullanma](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
+[C++ Masaüstü geliştirmesi için Visual Studio IDE kullanma](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
 [İzlenecek yol: C# veya Visual Basic ile basit uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Visual Studio için Üretkenlik İpuçları](../ide/productivity-tips-for-visual-studio.md)  
+[Visual Studio için üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md)  
 [Visual Studio Örnekleri](../ide/visual-studio-samples.md)  
-[Visual Studio ile Geliştirmeye Başlama](../ide/get-started-developing-with-visual-studio.md)
+[Visual Studio ile Geliştirmeye Başlarken](../ide/get-started-developing-with-visual-studio.md)

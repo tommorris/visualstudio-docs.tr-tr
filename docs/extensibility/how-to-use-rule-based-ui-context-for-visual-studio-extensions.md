@@ -1,21 +1,18 @@
 ---
-title: "Nasıl yapılır: Visual Studio uzantıları için kural tabanlı UI bağlam kullanın | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: Visual Studio uzantıları için kural tabanlı UI bağlam kullanın | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-ms.workload: vssdk
-ms.openlocfilehash: 92166106c1470aaf1af7198a133495dba333c121
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8597c413c899b54e61e848649c3c524cbdb20724
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Nasıl yapılır: Visual Studio uzantıları için kural tabanlı UI bağlam kullanın
 Visual Studio VSPackages belirli zaman yüklenmesini sağlar iyi bilinen <xref:Microsoft.VisualStudio.Shell.UIContext>s etkinleşir. Ancak, bu UI bağlamları düzey, hiçbir tercih uzantısı yazarlar bırakarak çok iyi değildir ancak noktasından önce etkinleştirir kullanılabilir bir UI bağlamı seçmek için gerçekten yüklemek için VSPackage istedikleri. İyi bilinen UI bağlamları listesi için bkz: <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
@@ -137,7 +134,7 @@ Visual Studio VSPackages belirli zaman yüklenmesini sağlar iyi bilinen <xref:M
 |ConfigSettingsStoreQuery:\<sorgu >|"sorgu" sıfır olmayan bir değere değerlendirilmelidir yapılandırma ayarları depolama alanı içine tam yolu temsil eder. Sorgu "toplama" ve "propertyName" en son eğik çizgi ayrılır.|  
 |ActiveProjectFlavor:\<projectTypeGuid >|Şu anda seçili proje özellikli her terim true olur (toplanan) ve verilen proje türü GUID eşleşen bir özellik vardır.|  
 |ActiveEditorContentType:\<contentType >|Seçili dosyayı bir metin düzenleyicisi verilen içerik türüne sahip olduğunda terimi true olur.|  
-|ActiveProjectCapability:\<ifade >|Etkin proje özellikleri sağlanan ifade eşleştiğinde true bir terimdir. Bir ifadenin bir şey VB &#124;gibi olabilir; CSharp|  
+|ActiveProjectCapability:\<ifade >|Etkin proje özellikleri sağlanan ifade eşleştiğinde true bir terimdir. Bir ifade VB şöyle olabilir &#124; CSharp|  
 |SolutionHasProjectCapability:\<ifade >|Yukarıdaki benzer; ancak terim olduğunda true ifadeyle eşleşen tüm yüklenen proje çözümü vardır.|  
 |SolutionHasProjectFlavor:\<projectTypeGuid >|Bir çözüm (toplanan) özellikli proje ve verilen proje türü GUID eşleşen bir özellik sahip her terim true olur.|
 

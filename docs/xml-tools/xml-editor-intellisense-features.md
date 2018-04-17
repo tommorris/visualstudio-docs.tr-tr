@@ -1,23 +1,21 @@
 ---
-title: "XML Düzenleyicisi IntelliSense özellikleri | Microsoft Docs"
-ms.custom: 
+title: XML Düzenleyicisi IntelliSense özellikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f98f11cf9f4aef491951e1968105a30a679e687a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bc4a0e9cc3da9d2cfad86d1891514a68dd2b87fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-editor-intellisense-features"></a>XML Düzenleyicisi IntelliSense özellikleri
 XML Düzenleyicisi'ni Visual Studio'da sağlanan diğer dil düzenleyicileri karşılaştırılabilir tam IntelliSense özellikleri sağlar. Bu bölümde, XML Şeması Tanım Dili (XSD) ve XSLT belgelerle IntelliSense nasıl kullanabileceğinizi açıklar.  
@@ -67,13 +65,13 @@ Daha fazla bilgi için bkz: [izlenecek yol: kullanarak XSLT IntelliSense](../xml
   
  Benzer şekilde, XML Düzenleyicisi'ni de aşağıdaki XML sözdizimi otomatik olarak ekler:  
   
--   Bir işleme yönergesi Bitir:`?>`  
+-   Bir işleme yönergesi Bitir:  `?>`  
   
--   CDATA bloğu Bitir:`]]>`  
+-   CDATA bloğu Bitir: `]]>`  
   
--   Açıklama bitiş:`-->`  
+-   Açıklama bitiş: `-->`  
   
--   DTD bildirimi Bitir:`>`  
+-   DTD bildirimi Bitir: `>`  
   
 XML Düzenleyicisi'ni bir ad alanı ekleme olanağı da sahip bir ad alanı tam öğesi seçin veya bir IntelliSense listesi ve bu öğe veya öznitelik için ad alanı özniteliğinden henüz kapsamında değilse bildirimi.  
   

@@ -1,28 +1,24 @@
 ---
-title: "Nasıl yapılır: sınıf diyagramlarını (Sınıf Tasarımcısı) projelerine ekleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: sınıf diyagramlarını (Sınıf Tasarımcısı) projelerine ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4017c5944a6cbc2e8f04980cdd349be92c02717
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: e1e67d5a1ca899605d3456d8d68f4b3c04fc8bd2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)
 Tasarlama, düzenleme ve sınıfları ve diğer türleri yeniden düzenlemeniz için bir sınıf diyagramı C#, Visual Basic veya C++ projenize ekleyin. Bir proje kodda farklı kısımlarını görselleştirmek için birden çok sınıf diyagramları projeye ekleyin.  
@@ -43,7 +39,7 @@ Sınıf diyagramları kod birden çok uygulama arasında paylaşmak projelerden 
   
 1.  Çözüm Gezgini'nde sınıf dosya bağlam menüsünü açın ve ardından **görünüm sınıfı diyagramı**.  
   
-     veya  
+     -veya-  
   
      İçinde **sınıf görünümü**, ad alanı veya tür bağlam menüsünü açın ve ardından seçin **görünüm sınıfı diyagramı**.  
   

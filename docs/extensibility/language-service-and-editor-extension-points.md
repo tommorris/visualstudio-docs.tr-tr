@@ -2,26 +2,22 @@
 title: Dil hizmeti ve düzenleyici uzantı noktaları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
-caps.latest.revision: 33
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e62f1f3cac8f279dedbc79f283b908119d66ff2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3c253ba52da1fd6bb9133e44ba6858e8f1a4151
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="language-service-and-editor-extension-points"></a>Dil hizmeti ve düzenleyici uzantı noktaları
 Düzenleyici çoğu dil hizmet özellikleri dahil olmak üzere Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşeni parçaları olarak genişletebilirsiniz uzantı noktaları sağlar. Bu ana uzantısı noktası kategorileri şunlardır:  
@@ -47,9 +43,9 @@ Düzenleyici çoğu dil hizmet özellikleri dahil olmak üzere Yönetilen Geniş
 ## <a name="extending-content-types"></a>İçerik türlerini genişletme  
  Metin Düzenleyicisi tarafından örneğin ele, "metin", "code" veya "CSharp" tür tanımlarını içerik türleridir. Türünde bir değişken bildirerek yeni bir içerik türü tanımladığınız <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> ve yeni içerik türü benzersiz bir ad verip. İçerik türü Düzenleyicisi ile kaydetmek için aşağıdaki öznitelikler birlikte dışarı aktarın:  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>içerik türü adıdır.  
+-   <xref:Microsoft.VisualStudio.Utilities.NameAttribute> içerik türü adıdır.  
   
--   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>Bu içerik türü türetildiği içerik türü adıdır. Bir içerik türü diğer birden çok içerik türlerinden devralır.  
+-   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> Bu içerik türü türetildiği içerik türü adıdır. Bir içerik türü diğer birden çok içerik türlerinden devralır.  
   
  Çünkü <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> sınıfın korumalı, hiçbir tür parametresi ile dışarı aktarabilirsiniz.  
   
@@ -298,7 +294,7 @@ internal IViewTagAggregatorFactoryService ViewTagAggregatorFactoryService { get;
   
 -   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: Bu kullanıcı Arabiriminde görünen biçimde neden olur  
   
- Oluşturucuda etiketi görünümünü ve görünen ad tanımlayın. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A>Dolgu rengi tanımlar ve <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> kenarlık rengini tanımlar. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> Biçim tanımını yerelleştirilebilir adıdır.  
+ Oluşturucuda etiketi görünümünü ve görünen ad tanımlayın. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> Dolgu rengi tanımlar ve <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> kenarlık rengini tanımlar. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> Biçim tanımını yerelleştirilebilir adıdır.  
   
  Bir biçim tanımını örneği verilmiştir:  
   
@@ -346,7 +342,7 @@ internal AdornmentLayerDefinition testLayerDefinition;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: adornment olduğu geçerli içerik (örneğin, "metin" veya "code") türü.  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: Bu adornment olduğu geçerli metin görünüm türü. Sınıf <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> tanımlanmış metin görünümü rolleri kümesi vardır. Örneğin, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> dosyaları metin görünümler için temel olarak kullanılır. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>Kullanıcı düzenleme veya fare ve klavye kullanarak gezinme metin görünümler için kullanılır. Örnekleri <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> görünümlerdir düzenleyici metin görünümü ve **çıkış** penceresi.  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: Bu adornment olduğu geçerli metin görünüm türü. Sınıf <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> tanımlanmış metin görünümü rolleri kümesi vardır. Örneğin, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> dosyaları metin görünümler için temel olarak kullanılır. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> Kullanıcı düzenleme veya fare ve klavye kullanarak gezinme metin görünümler için kullanılır. Örnekleri <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> görünümlerdir düzenleyici metin görünümü ve **çıkış** penceresi.  
   
  Aşağıdaki örnek adornment sağlayıcısı verme öznitelikleri gösterir.  
   
@@ -374,7 +370,7 @@ internal AdornmentLayerDefinition testAdornmentLayer;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: içerik (örneğin, "metin" veya "code"), adornment olduğu geçerli türü.  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: metin görünümü bu tür etiketi veya adornment geçerlidir. Sınıf <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> tanımlanmış metin görünümü rolleri kümesi vardır. Örneğin, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> dosyaları metin görünümler için temel olarak kullanılır. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>Kullanıcı düzenleme veya fare ve klavye kullanarak gezinme metin görünümler için kullanılır. Örnekleri <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> görünümlerdir düzenleyici metin görünümü ve **çıkış** penceresi.  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: metin görünümü bu tür etiketi veya adornment geçerlidir. Sınıf <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> tanımlanmış metin görünümü rolleri kümesi vardır. Örneğin, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> dosyaları metin görünümler için temel olarak kullanılır. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> Kullanıcı düzenleme veya fare ve klavye kullanarak gezinme metin görünümler için kullanılır. Örnekleri <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> görünümlerdir düzenleyici metin görünümü ve **çıkış** penceresi.  
   
 -   <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: etiketi veya tanımlamış olduğunuz adornment türü. İkinci bir eklemelisiniz <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> için <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>.  
   
@@ -514,7 +510,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource>Şunun için kullanım <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> Şunun için kullanım <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Ayrıca, aynı türde bir sağlayıcı uygulamanız gerekir:  
   
@@ -527,7 +523,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider>Şunun için kullanım <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> Şunun için kullanım <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  Aşağıdaki öznitelikler birlikte sağlayıcısı dışarı aktarmanız gerekir:  
   

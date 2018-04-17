@@ -1,25 +1,24 @@
 ---
-title: "Visual Studio'nun erişilebilirlik özellikleri | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'nun erişilebilirlik özellikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
 - accessibility [Visual Studio]
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e947fa523b2d5e79e1df1966e6a4c3d9b6c8e7af
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 04312a3de8590637db7ad0c8e794450476eac9c6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio'nun Erişilebilirlik Özellikleri
 > [!TIP]
@@ -46,7 +45,7 @@ Erişilebilirlik özelliklerine ve yardımcı programlar Windows ek olarak, aşa
 
 -   [Nasıl Yapılır: Klavyeyi Özel Olarak Kullanma](../../ide/reference/how-to-use-the-keyboard-exclusively.md)  
 
--   [Klavye kısayolları](../../ide/default-keyboard-shortcuts-in-visual-studio.md)  
+-   [Varsayılan Klavye Kısayolları](../../ide/default-keyboard-shortcuts-in-visual-studio.md)  
 
 -   [Erişilebilirlik İpuçları ve Püf Noktaları](../../ide/reference/accessibility-tips-and-tricks.md)  
 

@@ -1,12 +1,10 @@
 ---
-title: "Konak öğelerine ve denetimlerine genel bakış | Microsoft Docs"
-ms.custom: 
+title: Konak öğelerine ve denetimlerine genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -38,13 +36,14 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], deleting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1512b4774efea9639f01135932ad076f6630ea12
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 84e0b2cf74eb8c0d3faca8d1c28d3bea91c87f76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="host-items-and-host-controls-overview"></a>Konak Öğelerine ve Denetimlerine Genel Bakış
   Konak denetimlerinin ve konak öğelerinin programlama modeli için Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan Office çözümleri sağlamak türleridir. Konak denetimlerinin ve konak öğelerinin COM üzerinde daha fazla Windows Forms denetimleri gibi yönetilen nesnelerle etkileşim gibi dayalı Microsoft Office Word ve Microsoft Office Excel nesne modelleri ile etkileşimi olun.  
@@ -77,7 +76,7 @@ ms.lasthandoff: 01/10/2018
   
  <xref:Microsoft.Office.Tools.Excel.Workbook> Konak öğesi bir kullanıcı arabirimine sahip denetimler için bir kapsayıcı olarak hareket değil. Bunun yerine, bu konak öğesi için tasarımcı bir bileşeni gibi sürükleyin olanak tanır ve bileşen alanı işlevleri bir <xref:System.Data.DataSet>, kendi tasarım yüzeyine. Daha fazla bilgi için bkz: [çalışma kitabı konak öğesi](../vsto/workbook-host-item.md).  
   
- Konak öğeleri program aracılığıyla belge düzeyi projelerine oluşturulamıyor. Bunun yerine, kullanın `ThisDocument`, `ThisWorkbook`, veya `Sheet`  *n*  Visual Studio projenizde tasarım zamanında otomatik olarak oluşturur. sınıfları. Bu oluşturulan sınıflar konak öğelerinden türetilir ve kodunuz için giriş noktası sağlar. Daha fazla bilgi için bkz: [programsal sınırlamalar, ana bilgisayar öğeleri ve ana bilgisayar denetimleri](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+ Konak öğeleri program aracılığıyla belge düzeyi projelerine oluşturulamıyor. Bunun yerine, kullanın `ThisDocument`, `ThisWorkbook`, veya `Sheet` *n* Visual Studio projenizde tasarım zamanında otomatik olarak oluşturur. sınıfları. Bu oluşturulan sınıflar konak öğelerinden türetilir ve kodunuz için giriş noktası sağlar. Daha fazla bilgi için bkz: [programsal sınırlamalar, ana bilgisayar öğeleri ve ana bilgisayar denetimleri](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ### <a name="understanding-host-items-in-vsto-add-in-projects"></a>VSTO eklentisi projelerine konak öğelerini anlama  
  Bir VSTO eklenti oluşturduğunuzda, varsayılan olarak tüm ana bilgisayar öğelerine erişimi sahip değil. Ancak, oluşturabileceğiniz <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, ve <xref:Microsoft.Office.Tools.Excel.Worksheet> çalışma zamanında konak öğelerini Word ve Excel VSTO eklentileri.  

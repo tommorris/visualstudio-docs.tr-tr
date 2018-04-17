@@ -2,11 +2,8 @@
 title: Yürütme görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, Exec task
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
-caps.latest.revision: 20
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec3a4f2507baa3a1ee5f2543722d5c13503af2b0
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 139739524b2c5c4a37f04b7d12dbfe725c6e068c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exec-task"></a>Yürütme Görevi
 Belirtilen program veya komut belirtilen bağımsız değişkenler kullanılarak çalıştırılır.  
@@ -53,7 +49,7 @@ Belirtilen program veya komut belirtilen bağımsız değişkenler kullanılarak
 |`WorkingDirectory`|İsteğe bağlı `String` parametresi.<br /><br /> Komutun çalıştırılacağı dizini belirtir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu görevin belirli bir zaman yararlıdır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görevi gerçekleştirmek istediğiniz işlemi kullanılabilir değil. Ancak, `Exec` daha belirli bir görevi aksine görev aracından çıktıyı toplayabilir veya, çalıştığını komutu.  
+ Bu görevin belirli bir zaman yararlıdır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görevi gerçekleştirmek istediğiniz işlemi kullanılabilir değil. Ancak, `Exec` ek işleme veya sonucuna aracı veya çalıştırdığı komutu göre koşullu işlemleri daha belirli bir görevi farklı olarak görev yapamaz.
   
  `Exec` Görev doğrudan bir işlem çağırma yerine cmd.exe çağırır.  
   

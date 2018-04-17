@@ -1,26 +1,24 @@
 ---
-title: "Kayıt ve seçim (kaynak denetimi VSPackage) | Microsoft Docs"
-ms.custom: 
+title: Kayıt ve seçim (kaynak denetimi VSPackage) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
-caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b0f02abe4cad58db27700aee3c29ec8d2dd7a7e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1d7bcdb8f930430ac00335777e2c088ce52a34bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Kayıt ve seçim (kaynak denetimi VSPackage)
 VSPackage kayıtlı, kendisine kullanıma sunmak için bir kaynak denetimi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Birden fazla kaynak denetimi VSPackage kaydettiyseniz, kullanıcı uygun zamanlarda yüklemek için hangi VSPackage seçebilirsiniz. Bkz: [VSPackages](../../extensibility/internals/vspackages.md) VSPackages ve bunları kaydetmek nasıl daha ayrıntılı bilgi için.  
@@ -53,7 +51,7 @@ VSPackage kayıtlı, kendisine kullanıma sunmak için bir kaynak denetimi [!INC
 ## <a name="selecting-a-source-control-package"></a>Kaynak denetimi paketi seçme  
  Birden fazla kaynak denetim eklentisi API tabanlı eklentiler ve kaynak denetimi VSPackages eşzamanlı olarak kaydedilebilir. Kaynak denetimi eklenti veya VSPackage seçme emin olmanız gerekir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] eklenti yükler veya VSPackage uygun zaman ve gerektiği kadar gereksiz Bileşenler yüklenirken erteler. Ayrıca, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menü öğeleri, iletişim kutuları ve araç çubukları gibi diğer etkin olmayan VSPackages tüm kullanıcı Arabirimi kaldırmanız ve kullanıcı arabirimini görüntülemek için etkin VSPackage gerekiyor.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]aşağıdaki işlemleri herhangi biri gerçekleştirildiğinde kaynak denetimi VSPackage yükler:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aşağıdaki işlemleri herhangi biri gerçekleştirildiğinde kaynak denetimi VSPackage yükler:  
   
 -   Çözüm (Çözüm kaynak denetimi altında olduğunda) açılır.  
   
@@ -64,14 +62,14 @@ VSPackage kayıtlı, kendisine kullanıma sunmak için bir kaynak denetimi [!INC
  Bir kaynak denetimi VSPackage yalnızca bunlar aslında olacak olduğunda, gereken tüm bileşenleri yüklenecektir (Aksi Gecikmeli yükleme olarak bilinir) kullanılır.  
   
 ### <a name="automatic-solution-based-vspackage-swapping"></a>Otomatik çözüm tabanlı VSPackage değiştirme  
- Kaynak denetimi VSPackages el ile takas edebilirsiniz aracılığıyla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **seçenekleri** iletişim kutusunda altında **kaynak denetimi** kategorisi. Otomatik çözüm tabanlı paket değiştirme, bu çözüm açıldığında, belirli bir çözümü için belirtilen kaynak denetim paketi etkin olarak otomatik olarak ayarlanmış anlamına gelir. Her kaynak denetimi paketi uygulamalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]her ikisi arasında geçiş yapma işleme kaynağı (kaynak denetimi eklentisi API uygulama) denetim eklentiler ve kaynak denetimi VSPackages.  
+ Kaynak denetimi VSPackages el ile takas edebilirsiniz aracılığıyla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **seçenekleri** iletişim kutusunda altında **kaynak denetimi** kategorisi. Otomatik çözüm tabanlı paket değiştirme, bu çözüm açıldığında, belirli bir çözümü için belirtilen kaynak denetim paketi etkin olarak otomatik olarak ayarlanmış anlamına gelir. Her kaynak denetimi paketi uygulamalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] her ikisi arasında geçiş yapma işleme kaynağı (kaynak denetimi eklentisi API uygulama) denetim eklentiler ve kaynak denetimi VSPackages.  
   
  Kaynak denetimi bağdaştırıcı paketi her kaynak denetimi eklentisi API tabanlı geçiş yapmak için kullanılan eklentisi. Ara kaynak denetimi bağdaştırıcı paketi geçiş ve hangi kaynak denetim eklentisi belirleme işleminin etkin veya devre dışı kullanıcı için saydamdır ayarlanması gerekir. Eklenti herhangi bir kaynak denetimi etkin olduğunda bağdaştırıcı paketini her zaman etkindir. Sadece yükleme ve eklenti DLL'i kaldırma iki kaynak denetimi eklentileri tutarlarının arasında geçiş yapma. Kaynak denetimi VSPackage değiştirme, ancak uygun VSPackage yüklemek için IDE ile etkileşim içerir.  
   
  Kaynak denetimi VSPackage herhangi bir çözüm açılır ve çözüm dosyasında VSPackage kayıt defteri anahtarı olduğunda çağrılır. Çözüm açıldığında [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kayıt defteri değerini bulur ve uygun kaynak denetimi VSPackage yükler. Tüm kaynak denetimi VSPackages yukarıda açıklanan kayıt defteri girişleri olması gerekir. Kaynak denetimi altında bir çözüm, belirli kaynak denetimi VSPackage ile ilişkili olarak işaretlenir. Kaynak denetimi VSPackages uygulanmalı <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> otomatik çözüm tabanlı VSPackage takas etkinleştirmek için.  
   
 ### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Visual Studio Paketi seçimi ve geçişi için kullanıcı Arabirimi  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]bir kaynak denetimi VSPackage için kullanıcı Arabirimi ve eklenti seçimde sağlayan **seçenekleri** iletişim kutusunda altında **kaynak denetimi** kategori. Eklenti etkin kaynak denetim seçmek için kullanıcı veya VSPackage sağlar. Aşağı açılan listesini içerir:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bir kaynak denetimi VSPackage için kullanıcı Arabirimi ve eklenti seçimde sağlayan **seçenekleri** iletişim kutusunda altında **kaynak denetimi** kategori. Eklenti etkin kaynak denetim seçmek için kullanıcı veya VSPackage sağlar. Aşağı açılan listesini içerir:  
   
 -   Tüm kaynak denetim paketleri yüklü  
   

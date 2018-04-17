@@ -1,26 +1,24 @@
 ---
-title: "Kesme noktaları eski dil hizmetindeki doğrulanıyor | Microsoft Docs"
-ms.custom: 
+title: Kesme noktaları eski dil hizmetindeki doğrulanıyor | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 85d9add1e66fdde2fcdbfd5c83bf99b6180a4642
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 03bf1534789ba24e1bbf597874ea427057073b61
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Kesme noktaları eski dil hizmetindeki doğrulanıyor
 Bir kesme noktası, bir hata ayıklayıcıda çalıştırılırken program yürütme belirli bir noktada durması gerektiğini belirtir. Düzenleyici bir kesme noktası için geçerli bir konum nelerin oluşturduğunu, hiçbir bilgiye sahip olduğundan kullanıcı kaynak dosyasında her satırda bir kesme noktası yerleştirebilirsiniz. Hata ayıklayıcı başlatıldığında, tüm (kesme noktaları olarak adlandırılır) işaretli kesme noktaları çalışan program uygun konuma bağlıdır. Kesme noktaları emin olmak için doğrulanır aynı anda bunlar geçerli kod konumlarını işaretler. Örneğin, kaynak kodu bu konumda hiçbir kod olduğundan bir yorum üzerinde bir kesme noktası geçerli değil. Hata ayıklayıcı geçersiz kesme noktaları devre dışı bırakır.  

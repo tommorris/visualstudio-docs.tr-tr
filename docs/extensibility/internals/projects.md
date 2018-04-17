@@ -1,12 +1,10 @@
 ---
 title: Projeleri | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
 - custom tools [Visual Studio SDK]
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - projects [Visual Studio SDK]
 - project types [Visual Studio SDK]
 ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
-caps.latest.revision: "43"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ff9f1a9d22511fe6a4c388d6d84ec1992a185ec5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b2ca4edabcee9f561dea51ea4b579ce194d13fa8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projects"></a>Projeler
 Visual Studio'da projeler geliştiricilerin kaynak kodu dosyaları ve görünen diğer kaynakları düzenlemek için kullandığınız kapsayıcılardır **Çözüm Gezgini**. Genellikle, projeler kaynak kodu dosyaları ve bit eşlem dosyaları gibi kaynaklara başvurular depolayan (örneğin, C# projesi için .csproj dosyasını) dosyalarıdır. Düzenleme, yapı, hata ayıklama ve kaynak kodu dağıtmanıza olanak sağlayan projeleri, Web Hizmetleri ve veritabanları ve diğer kaynaklara başvuruyor. VSPackages Visual Studio Proje sistemi üç temel şekilde genişletebilir: *proje türleri*, *proje subtypes*, ve *özel Araçlar*.  

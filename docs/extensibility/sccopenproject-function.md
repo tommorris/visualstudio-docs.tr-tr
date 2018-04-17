@@ -1,29 +1,25 @@
 ---
-title: "SccOpenProject işlevi | Microsoft Docs"
-ms.custom: 
+title: SccOpenProject işlevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccOpenProject
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10afe84716153b67c419f4ddbd1a7b838b68cbf9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 15d9cf6d5fa4533b5ee0ff65f8aeae86df3d571a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject işlevi
 Bu işlev, mevcut bir kaynak denetimi projesini açar veya yeni bir tane oluşturur.  
@@ -70,7 +66,7 @@ SCCRTN SccOpenProject (
  [in] Eklenti kaynak denetiminden çıkış metni görüntülemek için bir isteğe bağlı geri çağırma işlevi.  
   
  dwFlags  
- [in] Yeni bir proje proje kaynağına bilinmeyen ise oluşturulması gerekip gerekmediğini sinyalleri eklenti denetler. Değer bir bileşimi olabilir `SCC_OP_CREATEIFNEW` ve`SCC_OP_SILENTOPEN.`  
+ [in] Yeni bir proje proje kaynağına bilinmeyen ise oluşturulması gerekip gerekmediğini sinyalleri eklenti denetler. Değer bir bileşimi olabilir `SCC_OP_CREATEIFNEW` ve `SCC_OP_SILENTOPEN.`  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürmek için bu işlevi kaynak denetimi eklenti uyarlamasını beklenen:  
@@ -94,9 +90,9 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 >  IDE gereken gerçekleştirmek için ilk eylem çağrısı olabilir `SccOpenProject` işlevi veya [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Bu nedenle, bunların her ikisi de aynı olması `lpUser` parametresi.  
   
- `lpAuxProjPath`ve`lpProjName` çözüm dosyasından okuma veya çağrısından döndürülen `SccGetProjPath` işlevi. Bu parametreler eklenti kaynak denetimi proje ile ilişkilendirir dizeler içeriyor ve yalnızca eklenti için anlamlı. Bu tür bir dize çözüm dosyasında varsa ve kullanıcı göz atmak için istenmedi (hangi döndürebildiği bir dize aracılığıyla `SccGetProjPath` işlevi), IDE boş dizeler için her ikisini de geçirir `lpAuxProjPath` ve `lpProjName`ve güncelleştirilmesi için bu değeri bekler tarafından eklenti olduğunda bu işlev döndürür.  
+ `lpAuxProjPath` ve`lpProjName` çözüm dosyasından okuma veya çağrısından döndürülen `SccGetProjPath` işlevi. Bu parametreler eklenti kaynak denetimi proje ile ilişkilendirir dizeler içeriyor ve yalnızca eklenti için anlamlı. Bu tür bir dize çözüm dosyasında varsa ve kullanıcı göz atmak için istenmedi (hangi döndürebildiği bir dize aracılığıyla `SccGetProjPath` işlevi), IDE boş dizeler için her ikisini de geçirir `lpAuxProjPath` ve `lpProjName`ve güncelleştirilmesi için bu değeri bekler tarafından eklenti olduğunda bu işlev döndürür.  
   
- `lpTextOutProc`IDE komut sonuç çıktısı görüntüleme amacıyla eklenti kaynak denetimi tarafından sağlanan bir geri çağırma işlevi için bir işaretçidir. Bu geri çağırma işlevi içinde ayrıntılı olarak açıklanmıştır [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
+ `lpTextOutProc` IDE komut sonuç çıktısı görüntüleme amacıyla eklenti kaynak denetimi tarafından sağlanan bir geri çağırma işlevi için bir işaretçidir. Bu geri çağırma işlevi içinde ayrıntılı olarak açıklanmıştır [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
   
 > [!NOTE]
 >  Bu yararlanmak kaynak denetim eklentisi çalışırsa, onu ayarlamış olmanız gerekir `SCC_CAP_TEXTOUT` içinde bayrak [SccInitialize](../extensibility/sccinitialize-function.md). Bu bayrak ayarlanmadı veya IDE bu özelliği desteklemez `lpTextOutProc` olacaktır `NULL`.  

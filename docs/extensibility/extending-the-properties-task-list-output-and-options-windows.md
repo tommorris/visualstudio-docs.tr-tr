@@ -1,12 +1,10 @@
 ---
-title: "Özellikler, görev listesi, çıkış ve seçenekleri Windows genişletme | Microsoft Docs"
-ms.custom: 
+title: Özellikler, görev listesi, çıkış ve seçenekleri Windows genişletme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
 - task list
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 631c336d0350fdf8a43d747eb6bda7b01e9d1eba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4db9bb9101bd06921814132856fab0335a4a2530
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Özellikler, görev listesi, çıkış ve seçenekleri Windows genişletme
 Visual Studio'da herhangi bir araç penceresi erişebilir. Bu kılavuz, araç penceresi hakkında bilgi yeni bir tümleştirme gösterilmektedir **seçenekleri** sayfası ve yeni bir ayar **özellikleri** sayfası ve nasıl yazılacağını **görevlistesi** ve **çıkış** windows.  
@@ -150,7 +148,7 @@ Visual Studio'da herhangi bir araç penceresi erişebilir. Bu kılavuz, araç pe
   
      Araç penceresi kullanıcılar için kullanılabilir olduğunda, liste öğeleri Todoıtems temsil edilir. Kullanıcı bu öğelerden birini liste kutusunda seçtiğinde **özellikleri** pencere öğesiyle ilgili bilgileri görüntüler.  
   
-     Verileri kullanılabilir yapmak için **özellikleri** penceresinde, açmanız verileri iki özel özniteliklere sahip genel özelliklerini `Description` ve `Category`. `Description`en altında görüntülenen metin **özellikleri** penceresi. `Category`özelliği zaman nerede görüneceğini belirler **özellikleri** penceresi görüntülenir **kategoriler** görünümü. Aşağıdaki resimde **özellikleri** penceredir içinde **kategoriler** görünümü **adı** özelliğinde **Yapılacaklar alanları** kategorisi Seçili ve açıklamasını **adı** özelliği, pencerenin alt kısmında görüntülenir.  
+     Verileri kullanılabilir yapmak için **özellikleri** penceresinde, açmanız verileri iki özel özniteliklere sahip genel özelliklerini `Description` ve `Category`. `Description` en altında görüntülenen metin **özellikleri** penceresi. `Category` özelliği zaman nerede görüneceğini belirler **özellikleri** penceresi görüntülenir **kategoriler** görünümü. Aşağıdaki resimde **özellikleri** penceredir içinde **kategoriler** görünümü **adı** özelliğinde **Yapılacaklar alanları** kategorisi Seçili ve açıklamasını **adı** özelliği, pencerenin alt kısmında görüntülenir.  
   
      ![Özellikler penceresi](../extensibility/media/t5properties.png "T5Properties")  
   

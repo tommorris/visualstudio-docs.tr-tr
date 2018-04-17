@@ -1,28 +1,24 @@
 ---
-title: "Nasıl yapılır: boş değer atanabilir bir tür (Sınıf Tasarımcısı) oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: boş değer atanabilir bir tür (Sınıf Tasarımcısı) oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcef9fc80bbc55b07cd9dad68e217c9982a3b1f7
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: cd01d0fd62e37ddca915caf367777b62a0aa6246
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Nasıl Yapılır: Boş Değer Atanabilir Tür Oluşturma (Sınıf Tasarımcısı)
 Belirli değer türleri her zaman sahip (gereksinim tanımlı bir değer veya). Bu ortak veritabanlarında olduğu bazı alanlar herhangi bir değer atanabilir olmayan uygulamadır. Örneğin, bir null değer, henüz bir değer atanmadı olduğunu belirtmek için bir veritabanı alanı atayabilirsiniz.  
@@ -31,9 +27,9 @@ A *boş değer atanabilir tür* genişletir ve böylece bu tür ve ayrıca bir n
   
 Boş değer atanabilir türler örnekleridir <xref:System.Nullable%601> yapısı. İki ortak salt okunur özellikler, her bir boş değer atanabilir tür örneğine sahip `HasValue` ve `Value`:  
   
--   `HasValue`tür `bool` ve değişken tanımlı bir değer içerip içermediğini belirtir. `True`değişkeni boş olmayan bir değer içeren anlamına gelir. Bir deyimi kullanarak için tanımlanmış bir değer sınayabilirsiniz `if (x.HasValue)` veya `if (y != null)`.  
+-   `HasValue` tür `bool` ve değişken tanımlı bir değer içerip içermediğini belirtir. `True` değişkeni boş olmayan bir değer içeren anlamına gelir. Bir deyimi kullanarak için tanımlanmış bir değer sınayabilirsiniz `if (x.HasValue)` veya `if (y != null)`.  
   
--   `Value`temel alınan türü olarak aynı türde değil. Varsa `HasValue` olan `True`, `Value` anlamlı bir değer içeriyor. Varsa `HasValue` olan `False`, erişilirken `Value` geçersiz işlemi özel durum oluşturur.  
+-   `Value` temel alınan türü olarak aynı türde değil. Varsa `HasValue` olan `True`, `Value` anlamlı bir değer içeriyor. Varsa `HasValue` olan `False`, erişilirken `Value` geçersiz işlemi özel durum oluşturur.  
   
 Bir değişken null olabilir bir tür olarak bildirirken varsayılan olarak, bu tanımlanmış değeri yok (`HasValue` olan `False`), temel alınan değer türü varsayılan değerini diğer.  
   

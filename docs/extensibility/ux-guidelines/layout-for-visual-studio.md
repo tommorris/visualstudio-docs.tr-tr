@@ -1,28 +1,26 @@
 ---
-title: "Visual Studio için Düzen | Microsoft Docs"
-ms.custom: 
+title: Visual Studio için Düzen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ef3c590a82fc3a7b89d21684ffe2e4b0f216ca98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e26caa6e47f0f2ee2a20611cf12e166832e007b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio için düzeni
 Visual Studio iletişim kutuları çoğunluğu olan [yardımcı programı iletişim düzeni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), bu izleme standart iletişim kutuları unthemed olduğu [Windows Masaüstü iletişim düzeni ilkeleri](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx). Kullanıcı Arabiriminde yenilemek Visual Studio taşır gibi bazı daha belirgin iletişim kutuları gibi ürün tanımlama deneyimleri kurar yeni bir tasarım sahiptir. Bunlar [konulu iletişim düzeni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) konulu bir görünümü vardır.  
   
-##  <a name="BKMK_UtilityDialogLayout"></a>Yardımcı programı iletişim düzeni  
+##  <a name="BKMK_UtilityDialogLayout"></a> Yardımcı programı iletişim düzeni  
   
 -   Bir yardımcı programı iletişim içindeki tüm denetimler üst/sol başlatmak ve aşağı akış gerekir.  
   
@@ -104,7 +102,7 @@ Visual Studio iletişim kutuları çoğunluğu olan [yardımcı programı ileti�
   
 -   Satır uzunluğu ayrıştırma ve okumak bir kullanıcı için bir rahat genişliği olmalıdır. Orta iletişim en fazla 550 piksel genişliğinde olmalıdır.  
   
-####  <a name="BKMK_InteriorCommandButtons"></a>İç komut düğmeleri  
+####  <a name="BKMK_InteriorCommandButtons"></a> İç komut düğmeleri  
  Daha karmaşık iletişim kutularında, bir iç denetim iletişim kutusu yürütme düğmeleri bulunduğu etkileyebilecek kendi ilgili düğmeleri olabilir.  
   
 -   Bir dikey hizalamasını (sütun) iç düğmeleri kullanın **Tamam**/**iptal** sağ alt köşedeki yatay olarak yerleştirilir.  
@@ -124,7 +122,7 @@ Visual Studio iletişim kutuları çoğunluğu olan [yardımcı programı ileti�
 #### <a name="browse-button"></a>[Gözat...] düğmesi  
  **[Gözat...]**  bir metin kutusu izleyin düğmeleri üç nokta dahil olmak üzere, tam olarak "Gözat..." Yazım. Alan sıkı veya birden çok varsa **[Gözat...]**  düğmesi ekrandaki düğmeleri yalnızca üç nokta sınırlı.  
   
-##  <a name="BKMK_ThemedDialogLayout"></a>Konulu iletişim düzeni  
+##  <a name="BKMK_ThemedDialogLayout"></a> Konulu iletişim düzeni  
  Visual Studio'da konulu iletişim kutuları açık bir görünümü vardır ve daha fazla boşluk sunar. Tipografi vurgu ve daha açık satır aralığı ve yazı tipi boyutlarını ve ağırlıklarını Çeşitleme sunumunun ilgi daha fazla sağlar. Mümkünse, chrome ve başlık çubukları azaltılmış veya kaldırılan. Bu iletişim kutularının düzenini temel bu deseni izlemelidir:  
   
 1.  İletişim kutusunun arka plan Beyaz ' dir.  

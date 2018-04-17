@@ -1,13 +1,10 @@
 ---
-title: "Uygulama sayfası, Proje Tasarımcısı (C#) | Microsoft Docs"
-ms.custom: 
+title: Uygulama sayfası, Proje Tasarımcısı (C#) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
 - cs.ProjectPropertiesApplication
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7f9b348ad39b26b22e1678e76a1310e2c3f9b863
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 4ea0e0f38b96f7ba48a8a88ebf41986350fe73f5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-page-project-designer-c"></a>Uygulama Sayfası, Proje Tasarımcısı (C#)
 
@@ -46,7 +43,7 @@ Erişim için **uygulama** sayfası, proje düğümüne seçin (değil **çözü
   
  Bu özellik programlı olarak erişmek için bkz: <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
- **Hedef çerçevesi**  
+ **Hedef Çerçeve**  
  .NET Framework sürümünü belirtir, uygulama hedefler. Bu seçenek bilgisayarınızda yüklü sürümlerini .NET Framework'ün bağlı olarak farklı değerlere sahip olabilir.  
   
  Varsayılan olarak, seçtiğiniz hedef Framework'ü aynı değer **yeni proje** iletişim kutusu.  
@@ -71,7 +68,7 @@ Erişim için **uygulama** sayfası, proje düğümüne seçin (değil **çözü
  **Derleme bilgileri**  
  Bu düğmeye tıkladığınızda görüntüler [derleme bilgileri iletişim kutusu](../../ide/reference/assembly-information-dialog-box.md).  
   
- **Startup object**  
+ **Başlangıç nesnesi**  
  Uygulama yüklendiğinde çağrılacak giriş noktası tanımlar. Bu, uygulamanızın veya çok ana formuna ya da genellikle ayarlanır `Main` yordamı, uygulama başladığında çalıştırmanız gerekir. Sınıf kitaplıkları bir giriş noktası olmadığı için tek seçenektir bu özellik için **(ayarlanmamış)**.  
   
  Varsayılan olarak, WPF tarayıcı uygulaması projesinde, bu seçenek olan **(ayarlanmamış)**. Diğer seçenek *Projectname*. uygulama. Proje bu tür, uygulama başlatıldığında bir UI kaynak yüklemek için URI başlangıç ayarlamanız gerekir. Bunu yapmak için projenize Application.xaml dosyasını açın ve ayarlama `StartupUri` Window1.xaml gibi projenizi .xaml dosyasında özelliğine. Kabul edilebilir kök öğe listesi için bkz: <xref:System.Windows.Application.StartupUri%2A>. Tanımlamak de bir `public static void Main()` projede sınıfındaki yöntemi. Bu sınıf, görünür **Başlangıç nesnesi** olarak listesinde *ProjectName.ClassName*. Bu gibi durumlarda, sınıf sonra Başlangıç nesnesi olarak seçebilirsiniz.  

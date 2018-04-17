@@ -2,28 +2,24 @@
 title: Visual Basic'te uyarıları yapılandırma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 265d86365c9084dac9d75a04df1e1ea243b3b585
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Visual Basic'te uyarıları yapılandırma
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Derleyici uyarıları çalışma zamanı hataları neden olabilir kodu hakkında bir dizi içerir. Temizleyici, daha hızlı ve daha az hataları ile daha iyi bir kod yazmak için bu bilgileri kullanabilirsiniz. Derleyici örneğin veya kullanıcı atanmamış nesne değişkeni, dönüş değeri ayarı olmadan bir işlevden dönüş üyesi çağırma girişiminde bulunduğunda bir uyarı üretir yürütme bir `Try` bloğu özel durumları yakalamak için mantığı hatalı.  
@@ -70,12 +66,12 @@ ms.lasthandoff: 03/28/2018
 ### <a name="implicit-conversion-warning"></a>Örtük dönüştürme uyarı  
  İçin oluşturulan örtük dönüşüm örnekleri. Bunlar bir dize için geçerli bir sayısal tür gelen örtük dönüşümler kullanırken içermez `&` işleci. Yeni projeler kapatmak için varsayılan.  
   
- ID: 42016  
+ KİMLİĞİ: 42016  
   
 ### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>Geç yöntemi çağırma bağlı ve çözümleme uyarı aşırı yükleme  
  İçin oluşturulan örnekleri olarak geç bağlama. Yeni projeler kapatmak için varsayılan.  
   
- ID: 42017  
+ KİMLİĞİ: 42017  
   
 ### <a name="operands-of-type-object-warnings"></a>Türü 'Nesnesi' uyarıları işlenenleri  
  Oluşturulan türündeki işlenenler `Object` hatayla oluşturmak ortaya **Option Strict On**. Yeni projeler üzerinde için varsayılan.  
@@ -90,17 +86,17 @@ ms.lasthandoff: 03/28/2018
 ### <a name="possible-null-reference-exception-warnings"></a>Olası null başvuru özel durumu uyarıları  
  Bir değişkene bir değer atanan önce kullanıldığında oluşturulur. Yeni projeler üzerinde için varsayılan.  
   
- ID: 42104, 42030  
+ KİMLİĞİ: 42104, 42030  
   
 ### <a name="unused-local-variable-warning"></a>Kullanılmayan yerel değişken uyarı  
  Yerel bir değişken bildirilmiş ancak hiçbir zaman başvurulan oluşturulur. Varsayılan açıktır.  
   
- ID: 42024  
+ KİMLİĞİ: 42024  
   
 ### <a name="access-of-shared-member-through-instance-variable-warning"></a>Örnek değişken uyarı aracılığıyla paylaşılan üye erişimi  
  Örneğinden paylaşılan bir üyeye erişme yan etkileri olabilir veya bir örnek değişkeni paylaşılan bir üyeye erişme ve sağ taraftaki ifade değil ya da bir parametre olarak geçirilen zaman oluşturulur. Yeni projeler üzerinde için varsayılan.  
   
- ID: 42025  
+ KİMLİĞİ: 42025  
   
 ### <a name="recursive-operator-or-property-access-warnings"></a>Özyinelemeli işleci veya özellik erişim uyarıları  
  Bir yordam gövdesi aynı işleci veya içinde tanımlanan özelliğini kullandığında oluşturulur. Yeni projeler üzerinde için varsayılan.  
@@ -115,12 +111,12 @@ ms.lasthandoff: 03/28/2018
 ### <a name="overloads-modifier-used-in-a-module-warning"></a>Bir modülü uyarı kullanılan aşırı değiştiricisi  
  Oluşturulan `Overloads` kullanılan bir `Module`. Yeni projeler üzerinde için varsayılan.  
   
- ID: 42028  
+ KİMLİĞİ: 42028  
   
 ### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Yinelenen veya örtüşen catch blokları uyarıları  
  Oluşturulan bir `Catch` bloğu diğer ilişkisi nedeniyle hiçbir zaman ulaşıldığında `Catch` tanımlanmış engeller. Yeni projeler üzerinde için varsayılan.  
   
- ID: 42029, 42031  
+ KİMLİĞİ: 42029, 42031  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Hata türleri](/dotnet/visual-basic/programming-guide/language-features/error-types)   

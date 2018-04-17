@@ -1,27 +1,23 @@
 ---
-title: "İzlenecek yol: Küme ayraçları eşleşen görüntüleme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Küme ayraçları eşleşen görüntüleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3dde61c10d0a8c9fc5578b02cc713f648409cbf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 370340246cd75e53580d1ac2b6c591f0854cb23e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>İzlenecek yol: Eşleşen küme parantezleri görüntüleme
 Eşleştirmek istediğiniz küme ayraçları tanımlama ve düzeltme işareti küme ayraçları biri olduğunda bir metin işaretçisi etiketi için eşleşen küme parantezleri ekleyerek eşleşen ayraç gibi dil tabanlı özellikler uygulayabilirsiniz. Bir dil bağlamında küme ayraçları tanımlayabilirsiniz, kendi dosya adı uzantısı ve içerik türünü tanımlayın ve etiketler yalnızca o türü için geçerli veya varolan bir içerik türüyle (örneğin, "metin") etiketleri uygulayabilirsiniz. Aşağıdaki örneklerde, "metin" içerik türü etiketleri eşleşen ayraç uygulamak gösterilmiştir.  

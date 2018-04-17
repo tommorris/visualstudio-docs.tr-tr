@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: program aracılığıyla bir veri kaynağı Office belgesinden önbelleğe | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: program aracılığıyla bir veri kaynağı Office belgesinden önbelleğe | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 09d4b46aaa68a92ffb9ddfe70f329e97a1b7526d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 29451bab5caeeaf3f9de0b9344ae52430ec045a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Nasıl Yapılır: Veri Kaynağını Programlamayla Office Belgesinden Önbelleğe Alma
   Program aracılığıyla bir veri nesnesi bir belge veri önbelleğindeki çağırarak ekleyebileceğiniz `StartCaching` gibi bir konak yöntemi öğesi bir <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, veya <xref:Microsoft.Office.Tools.Excel.Worksheet>. Bir veri nesnesi çağırarak veri önbelleğinden kaldırma `StopCaching` konak öğesinin yöntemi.  

@@ -1,23 +1,21 @@
 ---
-title: "Düğümleri filtreleme | Microsoft Docs"
-ms.custom: 
+title: Düğümleri filtreleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f7cae2dc-e9a7-49d4-8be5-58b79868624e
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0a2ddcccfb3499be583b4965bd45352b63b0be8e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2b1b27feacee7aee57b773d78b3680bef6b99567
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="filter-nodes"></a>Filtre Düğümleri
 Gölgelendirici Tasarımcısı'nda giriş filtre düğümlerinin dönüştürme — Örneğin, bir renk veya doku örnek — içine mecazi renk değeri. Bu mecazi renk değerleri, fotoğraf kalitesinde olmayan işleme veya diğer görsel efektler bileşen olarak yaygın olarak kullanılır.  

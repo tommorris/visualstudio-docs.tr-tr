@@ -1,27 +1,23 @@
 ---
-title: "Özel komutlar tarafından kullanılan bit işaretleri | Microsoft Docs"
-ms.custom: 
+title: Özel komutlar tarafından kullanılan bit işaretleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3bc59c79e0f047cc7880332c4c23643ab2136c86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Özel komutlar tarafından kullanılan bit işaretleri
 Kaynak Denetim eklentisi API işlevlerinde sayısı davranışını tek bir değer bir veya daha fazla BITS ayarlayarak değiştirilebilir. Bu değerleri bit işaretleri bilinir. Kaynak Denetim eklentisi API tarafından kullanılan çeşitli bit işaretleri, bunları kullanan bir işlev tarafından gruplandırılmış burada açıklanmıştır.  
@@ -40,7 +36,7 @@ Kaynak Denetim eklentisi API işlevlerinde sayısı davranışını tek bir değ
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Kaynak Denetim eklentisi otomatik olarak dosyanın metin veya ikili olup olmadığını algılamak için bekleniyor.|  
 |`SCC_FILETYPE_TEXT`|0x01|Dosya türü metindir.|  
-|`SCC_FILETYPE_BINARY`|0x04|İkili dosya türü olabilir. **Not:** `SCC_FILETYPE_TEXT` ve `SCC_FILETYPE_BINARY` bayrakları karşılıklı olarak birbirini dışlar. Tam olarak bir ya da hiçbirini ayarlayın.|  
+|`SCC_FILETYPE_BINARY`|0x04|İkili dosya türü olabilir. **Not:** `SCC_FILETYPE_TEXT` ve `SCC_FILETYPE_BINARY` bayrakları karşılıklı olarak birbirini dışlar.   Tam olarak bir ya da hiçbirini ayarlayın.|  
 |`SCC_ADD_STORELATEST`|0x02|Yalnızca en son sürümünü (farkları yok) depolar.|  
   
 ## <a name="diff-flags"></a>Diff bayrakları  
@@ -48,8 +44,8 @@ Kaynak Denetim eklentisi API işlevlerinde sayısı davranışını tek bir değ
   
 |Bayrağı|Değer|Açıklama|  
 |----------|-----------|-----------------|  
-|`SCC_DIFF_IGNORECASE`|0X0002|Büyük/küçük farklar yoksay.|  
-|`SCC_DIFF_IGNORESPACE`|0X0004|Boşluk farklılıklarını yoksay. **Not:** `SCC_DIFF_IGNORECASE` ve `SCC_DIFF_IGNORESPACE` bayrakların isteğe bağlı bit işaretleri.|  
+|`SCC_DIFF_IGNORECASE`|0x0002|Büyük/küçük farklar yoksay.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Boşluk farklılıklarını yoksay. **Not:** `SCC_DIFF_IGNORECASE` ve `SCC_DIFF_IGNORESPACE` bayrakların isteğe bağlı bit işaretleri.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|Tüm dosya içerikleri karşılaştırarak QD.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|QD tarafından sağlama toplamı.|  
 |`SCC_DIFF_QD_TIME`|0x0040|QD dosya tarih damgası tarafından.|  
@@ -68,8 +64,8 @@ Kaynak Denetim eklentisi API işlevlerinde sayısı davranışını tek bir değ
 |Seçenek değeri|Değer|Açıklama|  
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|Dizinlerin (varsayılan değer budur) dizinler için yalnızca bir düzey inceleyin.|  
-|SCC_PDL_RECURSIVE|0X0001|Yinelemeli olarak verilen her dizini altındaki tüm dizinleri inceleyin.|  
-|SCC_PDL_INCLUDEFILES|0X0002|Dosya adları İnceleme işleminde içerir.|  
+|SCC_PDL_RECURSIVE|0x0001|Yinelemeli olarak verilen her dizini altındaki tüm dizinleri inceleyin.|  
+|SCC_PDL_INCLUDEFILES|0x0002|Dosya adları İnceleme işleminde içerir.|  
   
 ## <a name="openproject-flags"></a>OpenProject bayrakları  
  Bu bayrakların tarafından kullanılan [SccOpenProject](../extensibility/sccopenproject-function.md) içinde `dwFlags` parametresi.  

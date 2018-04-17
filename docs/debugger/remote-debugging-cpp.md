@@ -1,13 +1,10 @@
 ---
-title: "Uzaktan hata ayıklama Visual C++ projesinde | Microsoft Docs"
+title: Uzaktan hata ayıklama Visual C++ projesinde | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fb8230c2a70cf98a20993db930ddc1d494e989d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: df0caacf8d3d99117208ce197e075f20f6df8b5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Uzaktan Visual C++ projesinde Visual Studio'da hata ayıklama
 Farklı bir bilgisayara Visual Studio uygulama hata ayıklama, yükleme ve uygulamanızı dağıtacağı bilgisayarda Uzak araçları çalıştırmak için projenizi Visual Studio'dan uzak bilgisayara bağlanın ve ardından dağıtmak ve uygulamanızı çalıştırmak için yapılandırın.
@@ -50,14 +46,14 @@ Windows 7 ve daha yeni uzaktan hata ayıklayıcı desteklenir (telefon değil) v
 > [!TIP]
 > Bazı senaryolarda, bir dosya paylaşımından uzaktan hata ayıklayıcı çalıştırmak için etkili olabilir. Daha fazla bilgi için bkz: [dosya paylaşımından uzaktan hata ayıklayıcı çalıştırmak](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Uzaktan hata ayıklayıcı ayarlayın
+## <a name="BKMK_setup"></a> Uzaktan hata ayıklayıcı ayarlayın
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Gerektiğinde ek kullanıcılar için izinler eklemek için kimlik doğrulaması modunu değiştirme veya bağlantı noktası numarası uzaktan hata ayıklayıcı için bkz: [uzaktan hata ayıklayıcı yapılandırma](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_cplusplus"></a>Uzaktan hata ayıklama Visual C++ projesi  
+## <a name="remote_cplusplus"></a> Uzaktan hata ayıklama Visual C++ projesi  
  Aşağıdaki yordamda adı ve yolu projenin C:\remotetemp\MyMfc ve uzak bilgisayarın adını **MJO DL**.  
   
 1.  Adlı bir MFC uygulaması oluşturma **mymfc.**  
@@ -96,7 +92,7 @@ Windows 7 ve daha yeni uzaktan hata ayıklayıcı desteklenir (telefon değil) v
   
 10. İstenirse, uzak makineye bağlanmak için ağ kimlik bilgilerini girin.  
   
-     Ağınızın güvenlik yapılandırması için gerekli kimlik bilgilerini özgüdür. Örneğin, bir etki alanı bilgisayarında bir güvenlik sertifikası seçin veya etki alanı adınızı ve parolanızı girin. Bir etki alanı dışı makinede, makine adı ve geçerli kullanıcı hesabı adı gibi girebilir  **MJO-DL\name@something.com** , doğru parolayı yanı sıra.  
+     Ağınızın güvenlik yapılandırması için gerekli kimlik bilgilerini özgüdür. Örneğin, bir etki alanı bilgisayarında bir güvenlik sertifikası seçin veya etki alanı adınızı ve parolanızı girin. Bir etki alanı dışı makinede, makine adı ve geçerli kullanıcı hesabı adı gibi girebilir **MJO-DL\name@something.com**, doğru parolayı yanı sıra.  
   
 11. Visual Studio bilgisayarda yürütme kesme noktasında durdurulur görmeniz gerekir.  
   

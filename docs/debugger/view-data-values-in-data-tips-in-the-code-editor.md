@@ -1,12 +1,10 @@
 ---
-title: "Görüntüleme veri değerleri DataTips Kod düzenleyicisinde | Microsoft Docs"
-ms.custom: 
+title: Görüntüleme veri değerleri DataTips Kod düzenleyicisinde | Microsoft Docs
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], DataTips
 - DataTips tool
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 178bd1768474eaaaf760e2ef4feecfe0e1519bee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0c098e4b4ae94c5145a193e1903aa04a0eb757b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Kod düzenleyicisinde DataTips görünüm veri değerleri
 DataTips hata ayıklama sırasında programınıza değişkenleri hakkında bilgi görüntülemek için kolay bir yol sağlamak. Kesme modunda yalnızca ve yalnızca yürütme geçerli kapsamdaki değişkenler DataTips çalışın.
@@ -75,7 +73,7 @@ DataTips hata ayıklama sırasında programınıza değişkenleri hakkında bilg
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Öğeleri görmek için bir değişken genişletmek için  
   
--   Fare işaretçisini bir DataTip içinde yerleştirin  **+**  değişken adından önce gelen oturum.  
+-   Fare işaretçisini bir DataTip içinde yerleştirin **+** değişken adından önce gelen oturum.  
   
     Ağaç biçiminde öğeleri göstermek için değişkeni genişletir.
 
@@ -105,7 +103,7 @@ DataTips hata ayıklama sırasında programınıza değişkenleri hakkında bilg
   
 -   Büyüteç simgesini ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Görselleştirici simgesi") veri türü için varsayılan Görselleştirici seçin.  
   
-     veya  
+     -veya-  
   
      Veri türü için uygun görselleştiriciler listesinden seçmek için Görselleştirici yanındaki açılan oka tıklayın.  
   

@@ -1,12 +1,10 @@
 ---
 title: "Nasıl yapılır: ClickOnce dağıtımı'nda bağımsız Önkoşullar için destek URL'sini belirtme | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, prerequisites
 - ClickOnce deployment, URLs
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
-caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4a73d6cd0996f3f0e91b5a5381ee1b8ccd58a2a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 86d4b765dc5e6c56fdc8e7a3b082afaa72accf49
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Nasıl yapılır: Bir ClickOnce Dağıtımı'nda Bağımsız Önkoşullar için Destek URL'sini Belirtme
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım için istemci bilgisayarda kullanılabilir olması gereken önkoşulları test [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamasını çalıştırmak için. Gerekli en düşük sürümü bunlar [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], işletim sistemi ve genel derleme önbelleğinde (GAC) önceden herhangi bir derleme sürümü. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], ancak bu önkoşullardan hiçbirini kendisi yükleyemez; bir önkoşul bulunmazsa, sadece yüklemeyi durdurur ve yüklemenin neden başarısız açıklayan bir iletişim kutusu görüntüler.  

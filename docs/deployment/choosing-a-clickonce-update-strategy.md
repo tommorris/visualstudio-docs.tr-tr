@@ -1,12 +1,10 @@
 ---
-title: "ClickOnce güncelleştirme stratejisini seçme | Microsoft Docs"
-ms.custom: 
+title: ClickOnce güncelleştirme stratejisini seçme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +14,19 @@ helpviewer_keywords:
 - updates, ClickOnce
 - ClickOnce deployment, update strategies
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
-caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a056b8d7d7581b63941fb952def0892c25382b44
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c1099ea3a37491e28929e3452c6364a904aee4d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>ClickOnce Güncelleştirme Stratejisini Seçme
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]otomatik uygulama güncelleştirmeleri sağlayabilir. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması düzenli aralıklarla uygulama güncelleştirmeleri kullanılabilir olup olmadığını görmek için dağıtım bildirim dosyasını okur. Kullanılabilir olması durumunda uygulamanın yeni sürümü indirilir ve çalıştırılır. Verimlilik için, sadece değişen dosyalar indirilir.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] otomatik uygulama güncelleştirmeleri sağlayabilir. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması düzenli aralıklarla uygulama güncelleştirmeleri kullanılabilir olup olmadığını görmek için dağıtım bildirim dosyasını okur. Kullanılabilir olması durumunda uygulamanın yeni sürümü indirilir ve çalıştırılır. Verimlilik için, sadece değişen dosyalar indirilir.  
   
  Tasarlarken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama sahip uygulama kullanılacağını denetlemek için kullanılabilir güncelleştirmeleri hangi stratejisini belirlemek. Kullanabileceğiniz üç temel strateji vardır: Uygulama başlangıcında güncelleştirmeleri denetleme, uygulama başlangıcından sonra güncelleştirmeleri denetleme (Arka planda bir iş parçacığı çalıştırılır.) veya güncelleştirmeler için bir kullanıcı arayüzü sağlama.  
   
@@ -116,7 +114,7 @@ ms.lasthandoff: 12/22/2017
  Ayrıca güncelleştirme kaldırarak denetimini engelleyebilirsiniz `<Subscription>` dağıtım bildirimi etiketinden.  
   
 ## <a name="permission-elevation-and-updates"></a>İzin Yükseltilmesi ve Güncelleştirmeler  
- Yeni bir sürümü varsa bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama daha yüksek bir önceki sürümünden çalıştırmak için güven düzeyini gerektirir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ona bu daha yüksek güven düzeyi verilebilmesi için uygulama istediğini isteyen kullanıcıyı uyarır. Kullanıcı daha yüksek güven düzeyi vermeyi reddederse, güncelleştirme yüklenmez. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]sonraki yeniden başlatıldığında uygulamayı yeniden yüklemek için kullanıcıya sorar. Bu noktada kullanıcı daha yüksek güven düzeyi verilmesini reddedip güncelleştirme gerekli değil şeklinde işaretlenirse, uygulamanın eski sürümü çalışacaktır. Ancak güncelleştirme gerekli ise, uygulama kullanıcı daha yüksek güven düzeyini kabul edene kadar çalışmaz.  
+ Yeni bir sürümü varsa bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama daha yüksek bir önceki sürümünden çalıştırmak için güven düzeyini gerektirir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ona bu daha yüksek güven düzeyi verilebilmesi için uygulama istediğini isteyen kullanıcıyı uyarır. Kullanıcı daha yüksek güven düzeyi vermeyi reddederse, güncelleştirme yüklenmez. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sonraki yeniden başlatıldığında uygulamayı yeniden yüklemek için kullanıcıya sorar. Bu noktada kullanıcı daha yüksek güven düzeyi verilmesini reddedip güncelleştirme gerekli değil şeklinde işaretlenirse, uygulamanın eski sürümü çalışacaktır. Ancak güncelleştirme gerekli ise, uygulama kullanıcı daha yüksek güven düzeyini kabul edene kadar çalışmaz.  
   
  Güvenilir Uygulama Dağıtımı kullanıyorsanız, güven düzeyleri için hiçbir uyarı ile karşılaşmazsınız. Daha fazla bilgi için bkz: [güvenilir uygulama dağıtımına genel bakış](../deployment/trusted-application-deployment-overview.md).  
   

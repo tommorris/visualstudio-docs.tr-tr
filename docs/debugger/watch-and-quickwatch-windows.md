@@ -1,13 +1,10 @@
 ---
-title: "Visual Studio'da değişkenleri bir izleme ayarlama | Microsoft Docs"
+title: Visual Studio'da değişkenleri bir izleme ayarlama | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 264ac3f21dd7799bc4aa1f36909801eac854b755
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Bir izleme izleme ve QuickWatch Windows Visual Studio kullanarak değişkenleri ayarlayın
 Hata ayıklarken, kullanabileceğiniz **izleme** ve **QuickWatch** değişkenleri ve ifadeler izlemek için windows.  Aralarındaki fark **izleme** penceresi birkaç değişkenleri görüntüleyebilir sırada **QuickWatch** penceresi, aynı anda tek bir değişken görüntüler. 
@@ -122,7 +119,7 @@ int main()
   
  ![İfade hata izleme](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-##  <a name="bkmk_refreshWatch"></a>Eski Gözcü değerlerini yenileme  
+##  <a name="bkmk_refreshWatch"></a> Eski Gözcü değerlerini yenileme  
  Bazı durumlarda bir yenileme simgesi (döngüsel bir ok) görebilirsiniz ne zaman bir ifadenin değerlendirileceği içinde **izleme** penceresi.  Özellik değerlendirmesi kapalı varsa, örneğin, (**Araçlar > Seçenekler > hata ayıklama > özellik değerlendirmesi ve diğer dolaylı işlev çağrılarını etkinleştirme**), ve aşağıdaki kodu sahip:  
   
 ```csharp  
@@ -153,7 +150,7 @@ static void Main(string[] args)
   
  İş parçacığı benzer iki dalgalı çizgiler ile bir daire simge görürseniz, potansiyel iş parçacıkları arası bağımlılık nedeniyle ifade Hesaplandı değil. Diğer bir deyişle, kodu değerlendirme, geçici olarak çalıştırmak için uygulamanızda başka bir iş parçacığı gerektirir. Kesme modunda olduğunda, uygulamanızdaki tüm iş parçacıklarının genellikle durdurulur. Geçici olarak çalıştırmak başka bir iş parçacığı izin vererek olabilir beklenmeyen etkiler, programın durumunu ve olayları kesme noktaları ve bu iş parçacıklarında oluşturulan özel durumları gibi yoksaymak hata ayıklayıcı neden olur.  
   
-##  <a name="bkmk_sideEffects"></a>Yan etkiler ve ifadeler  
+##  <a name="bkmk_sideEffects"></a> Yan etkiler ve ifadeler  
  Bazı ifadeleri değerlendirme bir değişkenin değerini değiştirebilir veya aksi halde, programın durumunu etkiler. Örneğin, aşağıdaki ifade değerlendirme değerini değiştirir `var1`:  
   
 ```  
@@ -168,7 +165,7 @@ var1 = var2
   
  Değerlendirme özellikleri ya da dolaylı işlev çağrıları devre dışı bırakıldığında kullanarak değerlendirme zorlayabilirsiniz **ac** biçimi değiştiricisi (C# için yalnızca). Bkz: [biçim belirticileri C#](../debugger/format-specifiers-in-csharp.md).  
   
-## <a name="bkmk_objectIds"></a>Gözcü penceresi (C# ve Visual Basic) içinde nesne kimlikleri kullanma  
+## <a name="bkmk_objectIds"></a> Gözcü penceresi (C# ve Visual Basic) içinde nesne kimlikleri kullanma  
 
  Belirli bir nesnenin davranışını gözlemlemek istediğiniz zaman zamanlar vardır. Örneğin, bu değişken fazlası kapsam dışında sonra yerel bir değişkeni tarafından başvurulan nesne izlemek isteyebilirsiniz. C# ve Visual Basic nesne başvuru türleri belirli örnekleri için kimlikleri oluşturabilir ve bunları Gözcü penceresi ve kesme noktası koşulları kullanın. Nesne Kimliği hizmetlerinde hata ayıklama ortak dil çalışma zamanı tarafından (CLR) oluşturulur ve nesneyle ilişkilendirilmiş.  
   
@@ -217,7 +214,7 @@ public class Program
   
 2.  Hata ayıklama başlatın ve yürütme kesme durduğunda değişken bulun **Yereller** penceresinin sağ tıklatın ve seçin **olun nesne kimliği**.  
   
-3.  Görmeniz gerekir bir  **$**  bir süre içinde artı **Yereller** nesne kimliği temsil eden penceresi  
+3.  Görmeniz gerekir bir **$** bir süre içinde artı **Yereller** nesne kimliği temsil eden penceresi  
   
 4.  Nesne Kimliği Gözcü penceresi ekleyin.  
   

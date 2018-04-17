@@ -1,12 +1,10 @@
 ---
-title: "CA2111: İşaretçiler görünür olmamalıdır | Microsoft Docs"
-ms.custom: 
+title: 'CA2111: İşaretçiler görünür olmamalıdır | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - PointersShouldNotBeVisible
 - CA2111
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2111
 - PointersShouldNotBeVisible
 ms.assetid: b3a8d466-895b-43bc-a2df-5d7058fe915f
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 31ae25892b6b5a153a0a4d1e52047eb5be2368d1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ce027b8e6bcf39623e07a862d4f9fb23c33b9967
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: İşaretçiler görünür olmamalıdır
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Genel veya korumalı bir <xref:System.IntPtr?displayProperty=fullName> veya <xref:System.UIntPtr?displayProperty=fullName> alan salt okunur değil.  
   
 ## <a name="rule-description"></a>Kural Tanımı  
- <xref:System.IntPtr>ve <xref:System.UIntPtr> yönetilmeyen bellek erişmek için kullanılan işaretçi türleridir. Bir işaretçi özel, iç veya salt okunur durumda değilse, kötü amaçlı kod olası bellek rasgele konumlarda izin veren veya uygulama veya sistem hatalarına neden işaretçi değeri değiştirebilirsiniz.  
+ <xref:System.IntPtr> ve <xref:System.UIntPtr> yönetilmeyen bellek erişmek için kullanılan işaretçi türleridir. Bir işaretçi özel, iç veya salt okunur durumda değilse, kötü amaçlı kod olası bellek rasgele konumlarda izin veren veya uygulama veya sistem hatalarına neden işaretçi değeri değiştirebilirsiniz.  
   
  İmleç alanı içeren tür güvenli erişim yapmak istiyorsanız, bkz: [CA2112: güvenli türler alanları değil kullanıma](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
   

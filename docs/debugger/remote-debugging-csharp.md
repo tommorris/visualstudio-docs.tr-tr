@@ -1,13 +1,10 @@
 ---
-title: "Uzaktan hata ayıklama bir C# veya Visual Studio'da VB projesi | Microsoft Docs"
+title: Uzaktan hata ayıklama bir C# veya Visual Studio'da VB projesi | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: a9753fbb-e7f4-47f0-9dbe-9de90c6c8457
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a7c6892eb43191c69608e66b05f8177777e3e006
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Uzaktan Visual Studio C# veya Visual Basic projesinde hata ayıklama
 Başka bir bilgisayara dağıtılan bir Visual Studio uygulama hatalarını ayıklamak için yüklemek ve uygulamanızı dağıtıldığı bilgisayarda Uzak araçları çalıştırmak, projeniz Visual Studio'dan uzak bilgisayara bağlanmak için yapılandırın ve uygulamanızı çalıştırın.
@@ -50,14 +46,14 @@ Windows 7 ve daha yeni uzaktan hata ayıklayıcı desteklenir (telefon değil) v
 > [!TIP]
 > Bazı senaryolarda, bir dosya paylaşımından uzaktan hata ayıklayıcı çalıştırmak için etkili olabilir. Daha fazla bilgi için bkz: [dosya paylaşımından uzaktan hata ayıklayıcı çalıştırmak](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Uzaktan hata ayıklayıcı ayarlayın
+## <a name="BKMK_setup"></a> Uzaktan hata ayıklayıcı ayarlayın
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Gerektiğinde ek kullanıcılar için izinler eklemek için kimlik doğrulaması modunu değiştirme veya bağlantı noktası numarası uzaktan hata ayıklayıcı için bkz: [uzaktan hata ayıklayıcı yapılandırma](../debugger/remote-debugging.md#configure_msvsmon).
   
-## <a name="remote_csharp"></a>Uzaktan hata ayıklama proje
+## <a name="remote_csharp"></a> Uzaktan hata ayıklama proje
 Hata ayıklayıcıyı uzak makineye Visual C# veya Visual Basic Masaüstü uygulamaları dağıtamazsınız, ancak hala bunları aşağıdaki gibi uzaktan hata ayıklama. Aşağıdaki yordam adlı bir bilgisayarda hata ayıklama istediğinizi varsayar **MJO DL**, aşağıdaki çizimde gösterildiği gibi.
   
 1.  Adlı bir WPF projesi oluşturma **MyWpf**.  
@@ -97,7 +93,7 @@ Hata ayıklayıcıyı uzak makineye Visual C# veya Visual Basic Masaüstü uygul
   
 13. İstenirse, uzak makineye bağlanmak için ağ kimlik bilgilerini girin.  
   
-     Gerekli kimlik bilgilerini, ağınızın güvenlik yapılandırmasına bağlı olarak değişir. Örneğin, bir etki alanı bilgisayarında etki alanı adınızı ve parolanızı girebilirsiniz. Bir etki alanı dışı makinede, makine adı ve geçerli kullanıcı hesabı adı gibi girebilir  **MJO-DL\name@something.com** , doğru parolayı yanı sıra.
+     Gerekli kimlik bilgilerini, ağınızın güvenlik yapılandırmasına bağlı olarak değişir. Örneğin, bir etki alanı bilgisayarında etki alanı adınızı ve parolanızı girebilirsiniz. Bir etki alanı dışı makinede, makine adı ve geçerli kullanıcı hesabı adı gibi girebilir **MJO-DL\name@something.com**, doğru parolayı yanı sıra.
 
      WPF uygulamanın ana penceresinde uzak bilgisayarda açık olduğunu görmeniz gerekir.
   

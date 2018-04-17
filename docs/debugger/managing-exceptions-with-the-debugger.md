@@ -1,13 +1,10 @@
 ---
-title: "Özel durumlar Visual Studio hata ayıklayıcısı ile yönetme | Microsoft Docs"
-ms.custom: 
+title: Özel durumlar Visual Studio hata ayıklayıcısı ile yönetme | Microsoft Docs
+ms.custom: ''
 ms.date: 04/05/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -33,17 +30,16 @@ helpviewer_keywords:
 - native run-time checks
 - exceptions, debugging
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 978c78ba68460a2f038d85afb92246275acfb9ef
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 063f4581a741325ce34022b731322cf0a4e37e39
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Özel durumlar Visual Studio hata ayıklayıcısı ile yönetme
 
@@ -145,7 +141,7 @@ Bir özel durum seçerseniz **Exception ayarlarını** penceresi, hata ayıklay�
   
  ![Özel durum ayarlarında Varsayılanları Geri Yükle](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-##  <a name="BKMK_UserUnhandled"></a>Kullanıcının işlemediği özel durumları devam etmek için hata ayıklayıcı söyleyin  
+##  <a name="BKMK_UserUnhandled"></a> Kullanıcının işlemediği özel durumları devam etmek için hata ayıklayıcı söyleyin  
  Hata ayıklama ile .NET veya JavaScript kodu varsa [sadece kendi kodumu](../debugger/just-my-code.md), içinde kullanıcı kodu işlenmez ancak başka bir yere işlenir kesilecek değil için hata ayıklayıcı anlayabilirsiniz.  
   
 1.  İçinde **Exception ayarlarını** penceresinde penceresinde sağ tıklayıp ardından seçerek bağlam menüsünü açmak **sütunları göster**. (Kapalı durumunda **sadece kendi kodumu**, bu komut görmezsiniz.)  
@@ -156,7 +152,7 @@ Bir özel durum seçerseniz **Exception ayarlarını** penceresi, hata ayıklay�
   
  Örneğin, ASP.NET web uygulamaları için bir HTTP 500 durum kodu dönüştürerek özel durumları işleme ([özel durum işleme ASP.NET API'sindeki](http://www.asp.net/web-api/overview/error-handling/exception-handling)), hangi değil yardımcı olabilir, özel durumun kaynağı belirlemek için. Aşağıdaki örnekte, kullanıcı kodu çağrıda bulunur `String.Format()` oluşturur, bir <xref:System.FormatException>. Yürütme aşağıdaki gibi ayırır:  
   
- ![Kullanıcı &#45;sonları; unhanlded özel durum](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+ ![keser kullanıcı&#45;unhanlded özel durum](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ## <a name="add-and-delete-exceptions"></a>Ekleme ve özel durumları silme  
  Ekleme ve özel durumlarını silin. Herhangi bir özel durum türü özel seçerek ve tıklayarak herhangi bir kategoride silebilirsiniz **silmek** düğmesine (eksi işareti) **Exception ayarlarını** araç veya özel durum sağ tıklayarak ve seçme **silmek** ve bağlam menüsünden. Bir özel durum silinmesi bu oluştuğunda hata ayıklayıcı kesintiye uğrar değil, olan denetlenmeyen, özel durum olarak aynı etkiye sahiptir.  
@@ -190,7 +186,7 @@ public class GenericException<T> : Exception
 Özel durumları üzerinde koşulları ayarlayabilirsiniz **Exception ayarlarını** iletişim kutusu. Şu anda desteklenen koşullar dahil etmek veya hariç özel durumuna modül adlarını içerir. Modül adlarını koşul olarak ayarlayarak, özel durum yalnızca belirli kod modülleri için bölüneceği seçebilir veya belirli modüller hakkında en son önleyebilirsiniz.
 
 > [!NOTE]
-> Yeni bir özel durum koşulları ekleme[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+> Yeni bir özel durum koşulları ekleme [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Koşullu özel durumlar eklemek için **koşulu Düzenle** özel ayarlar iletişim kutusu simgesine kutusuna veya özel durum sağ tıklatın ve seçin **koşulları Düzenle**.
 

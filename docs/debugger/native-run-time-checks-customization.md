@@ -1,13 +1,10 @@
 ---
-title: "Yerel çalışma zamanı denetler özelleştirme | Microsoft Docs"
-ms.custom: 
+title: Yerel çalışma zamanı denetler özelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crt
 dev_langs:
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - customizing CRT error checking
 - native run-time checks, customizing
 ms.assetid: 76a365fe-6439-49db-8603-34058b78e5a8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9483983b6cbd5644827af8f647425cce61502ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2c0318a5a711fd99338fb3d4e812cb3b07c449fc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="native-run-time-checks-customization"></a>Yerel Çalışma Zamanı Denetimlerini Özelleştirme
 İle derleme zaman **eş yordamlarla/RTC** (çalışma zamanı denetimleri) veya `runtime_checks` pragma, C çalışma zamanı kitaplığı, yerel çalışma zamanı denetimleri sağlar. Bazı durumlarda, çalışma zamanı denetimi özelleştirmek isteyebilirsiniz:  
@@ -58,7 +54,7 @@ ms.lasthandoff: 12/22/2017
  Özel raporlama işlevi kullanıyorsanız `_RTC_SetErrorType` bir hata raporu türü ile ilişkilendirmek için.  
   
 ## <a name="query-for-information-about-run-time-checks"></a>Çalışma zamanı denetimleri hakkında bilgi için sorgu  
- `_RTC_NumErrors`çalışma zamanı hata denetimleri tarafından algılanan hata türlerinin sayısını döndürür. Her hata kısa bir açıklamasını almak için 0'dan dönüş değerini döngüye girer `_RTC_NumErrors`, yineleme değerine geçirme `_RTC_GetErrDesc` her döngüde. Daha fazla bilgi için bkz: [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) ve [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).  
+ `_RTC_NumErrors` çalışma zamanı hata denetimleri tarafından algılanan hata türlerinin sayısını döndürür. Her hata kısa bir açıklamasını almak için 0'dan dönüş değerini döngüye girer `_RTC_NumErrors`, yineleme değerine geçirme `_RTC_GetErrDesc` her döngüde. Daha fazla bilgi için bkz: [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) ve [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: yerel çalışma zamanı denetimlerini kullanma](../debugger/how-to-use-native-run-time-checks.md)   

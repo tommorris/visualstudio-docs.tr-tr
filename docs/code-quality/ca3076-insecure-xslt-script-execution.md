@@ -1,21 +1,19 @@
 ---
-title: "CA3076: Güvensiz XSLT komut dosyası yürütme | Microsoft Docs"
-ms.custom: 
+title: 'CA3076: Güvensiz XSLT komut dosyası yürütme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 66d415b792558dce91de0205ee688fecb5caa182
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9793d0af1c2207b5201cb9e0e7bebe0d7bf4ef1c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Güvensiz XSLT komut dosyası yürütme
 
@@ -34,11 +32,11 @@ ms.lasthandoff: 01/23/2018
 
 **XSLT** XML verileri dönüştürme World Wide Web Konsorsiyumu (W3C) standardıdır. XSLT genellikle sabit uzunluk metin, virgülle ayrılmış metin veya farklı bir XML biçim HTML gibi diğer biçimlere XML verileri dönüştürmek için stil sayfaları yazmak için kullanılır. Varsayılan olarak yasaklanmış rağmen projeniz için etkinleştirmeyi seçebilirsiniz.
 
-Tetikleyiciler olduğunda bu kural, değil gösterme bir saldırı yüzeyini emin olmak için XslCompiledTransform. <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> güvensiz birleşimi örneklerini alan <xref:System.Xml.Xsl.XsltSettings> ve <xref:System.Xml.XmlResolver>, kötü amaçlı komut dosyası işleme izin verir.
+Tetikleyiciler olduğunda bu kural, değil gösterme bir saldırı yüzeyini emin olmak için XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> güvenli olmayan birleşimi örneklerini alan <xref:System.Xml.Xsl.XsltSettings> ve <xref:System.Xml.XmlResolver>, kötü amaçlı komut dosyası işleme izin verir.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
 
-- Güvenli olmayan XsltSettings bağımsız değişkeni XsltSettings ile değiştirin. <xref:System.Xml.Xsl.XsltSettings.Default%2A> veya örneğiyle belge işlev ve betik yürütme devre dışı bıraktı.
+- Güvenli olmayan XsltSettings bağımsız değişkeni XsltSettings ile değiştirin.<xref:System.Xml.Xsl.XsltSettings.Default%2A> veya bir örneğiyle, belge işlev ve betik yürütme devre dışı bıraktı.
 
 - Değiştir <xref:System.Xml.XmlResolver> bağımsız değişkeni null ile veya bir <xref:System.Xml.XmlSecureResolver> örneği.
 
@@ -48,7 +46,7 @@ Giriş güvenilir bir kaynaktan olmadığı biliniyor emin değilseniz, bu uyar�
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Violation&mdash;uses XsltSettings.TrustedXslt
+### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>İhlali&mdash;XsltSettings.TrustedXslt kullanır
 
 ```csharp
 using System.Xml;  

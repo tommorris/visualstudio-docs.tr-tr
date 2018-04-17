@@ -1,23 +1,21 @@
 ---
-title: "LINQ-XML dinamik özellikleri | Microsoft Docs"
-ms.custom: 
+title: LINQ-XML dinamik özellikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 0455f47c-4a68-4f2e-a3f8-dd1d85b99012
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bf92d22b3c27d23fa90b6d9be13cf4fa6604384a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0d54a37b58f46d8c3d1de145cc623ac3138621da
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>LINQ-XML Dinamik Özellikler
 Bu bölümde, XML LINQ dinamik özellikleri hakkında başvuru bilgileri sağlar. Özellikle, bu özellikler tarafından kullanıma sunulan <xref:System.Xml.Linq.XAttribute> ve <xref:System.Xml.Linq.XElement> bulunan sınıflar <xref:System.Xml.Linq> ad alanı.  

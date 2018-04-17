@@ -1,23 +1,21 @@
 ---
-title: "Nasıl yapılır: geometri tabanlı gradyan gölgelendirici oluşturun | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: geometri tabanlı gradyan gölgelendirici oluşturun | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f7d46fe01947e7f2813ae7eea8df81ae0b35f4f9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6ec140a434ebee19eb64292d38216d567a60d8bc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Nasıl Yapılır: Geometri Tabanlı Gradyan Gölgelendirici Oluşturma
 Bu belgede gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendirici dili geometri tabanlı gradyan gölgelendirici oluşturmak için nasıl kullanılacağı gösterilmektedir. Bu gölgelendirici sabit bir RGB rengi değer yüksekliğini dünya uzayındaki nesnenin her bir noktanın göre ölçeklendirir.  
@@ -68,7 +66,7 @@ Bu belgede gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendi
   
  Örneklerde gösterildiği 3B Sahne uygulanan bu belgede açıklanan gölgelendirici aşağıda gösterilmiştir [nasıl yapılır: Model 3-b Terrain](../designers/how-to-model-3-d-terrain.md). Yüksekliğini dünya noktanın ile Rengin yoğunluğunu artırır.  
   
- ![3 &#45;uygulanan gradyan efektinin; D terrain modeli](../designers/media/digit-gradient-effect-result.png "basamaklı gradyan etkisi sonucu")  
+ ![3'e uygulanan gradyan efektinin&#45;D terrain modeli](../designers/media/digit-gradient-effect-result.png "basamaklı gradyan etkisi sonucu")  
   
  3B modele gölgelendirici uygulama hakkında daha fazla bilgi için bkz: [nasıl yapılır: Gölgelendirici uygulama 3B modele](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   

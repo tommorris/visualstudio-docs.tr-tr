@@ -1,26 +1,23 @@
 ---
-title: "Nasıl yapılır: LINQ tabloları ve görünümleri (O R Tasarımcısı) eşlenen SQL sınıfları için oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: LINQ tabloları ve görünümleri (O R Tasarımcısı) eşlenen SQL sınıfları için oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 3d295cc9527aae2f566f5ec4d1ba92a2b129fbd4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: cc3c70ca70170de630dc28a10ff5d1352a610bfb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Nasıl yapılır: LINQ tabloları ve görünümleri (O/R Tasarımcısı) eşlenen SQL sınıfları için oluşturma
-[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]Veritabanı tabloları ve görünümleri eşlenen sınıfları çağrılır *sınıflar*. Bir kaydı oluşturan sütunları tek tek tek tek bir varlık sınıfı özelliklerini Eşle ancak varlık sınıfı bir kayda eşler. Tabloları veya görünümleri sürükleyerek veritabanı tabloları veya görünümleri göre varlık sınıfları oluşturmak **Sunucu Gezgini**/**Database Explorer** üzerine [LINQ-SQL araçları Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Sınıfları oluşturur ve belirli geçerlidir [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] etkinleştirmek için öznitelikler [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] işlevi (veri iletişimi ve özelliklerini düzenleme <xref:System.Data.Linq.DataContext>). Hakkında ayrıntılı bilgi için [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sınıfları için bkz [LINQ to SQL nesne modeli](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] Veritabanı tabloları ve görünümleri eşlenen sınıfları çağrılır *sınıflar*. Bir kaydı oluşturan sütunları tek tek tek tek bir varlık sınıfı özelliklerini Eşle ancak varlık sınıfı bir kayda eşler. Tabloları veya görünümleri sürükleyerek veritabanı tabloları veya görünümleri göre varlık sınıfları oluşturmak **Sunucu Gezgini**/**Database Explorer** üzerine [LINQ-SQL araçları Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Sınıfları oluşturur ve belirli geçerlidir [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] etkinleştirmek için öznitelikler [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] işlevi (veri iletişimi ve özelliklerini düzenleme <xref:System.Data.Linq.DataContext>). Hakkında ayrıntılı bilgi için [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sınıfları için bkz [LINQ to SQL nesne modeli](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  
   
 > [!NOTE]
 >  [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Basit Nesne İlişkisel Eşleyici olduğundan yalnızca 1:1 eşleme ilişkileri destekler. Diğer bir deyişle, bir varlık sınıfı bir veritabanı tablosu veya görünümü ile yalnızca bir 1:1 eşleme ilişkisi olabilir. Birden çok tablo için bir varlık sınıfı eşleme gibi karmaşık eşleme desteklenmiyor. Ancak, birden fazla ilgili tablo katıldığı bir görünüm için bir varlık sınıfı eşleyebilirsiniz.  

@@ -1,24 +1,22 @@
 ---
-title: "Kod kusurları için yönetilen kod gözden geçirme analiz etme | Microsoft Docs"
-ms.custom: 
+title: Kod kusurları için yönetilen kod gözden geçirme analiz etme | Microsoft Docs
+ms.custom: ''
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1c708f31d31dd811017015cd37c7e60d49beef9
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>İzlenecek yol: Kod çözümleme yönetilen kod kusurlarını
 
@@ -112,7 +110,7 @@ Bu kılavuzda Microsoft .NET Framework tasarım yönergeleri ile uyumluluk için
 
    1. Aşağıdaki kodu ekleyip `using System.Runtime.Serialization;` Class1.cs dosyası başlangıcına.
 
-   1. Ardından, bir oluşturucu ekleyin`protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   1. Ardından, bir oluşturucu ekleyin `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
    [CA1032: Standart özel durum oluşturucuları uygulayın](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Bu sınıfına aşağıdaki oluşturucuyu ekleyin: ortak demo()
 

@@ -1,29 +1,27 @@
 ---
-title: "Hata: İşlem &#39; incelemek için izniniz yok s kimlik | Microsoft Docs"
-ms.custom: 
+title: 'Hata: İşlem incelemek için izniniz yok&#39;s kimlik | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f51087d4f7882c34826942a898328640107a5ac6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8f62f612d4b07e0799c318ae972220459e0700e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Hata: İşlem &#39; incelemek için izniniz yok s kimliği
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Hata: İşlem incelemek için izniniz yok&#39;s kimliği
 İşlem kimliğini İnceleme iznine sahip değil. Bu, sisteminizin yapılandırması nedeniyle olabilir.  
   
  Hata ayıklayıcısı hata ayıklama için gerekli bilgileri işlem kimliğini İnceleme mümkün değildi. Terminal Hizmetleri devre dışı bırakılıyor en olası nedeni. Terminal Hizmetleri hizmeti varsayılan olarak etkindir. Yeniden etkinleştirmek için aşağıdaki adımları izleyin.  

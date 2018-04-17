@@ -1,11 +1,8 @@
 ---
-title: "Bir veri kümesine WPF denetimleri bağlama | Microsoft Docs"
-ms.custom: 
+title: Bir veri kümesine WPF denetimleri bağlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 072adcf912e5921164647cf77ee561617f844786
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: f4034651b68194906285c6d1911f7f650287074d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Bir veri kümesine WPF denetimleri bağlama
 Bu kılavuzda, veri bağlama denetimleri içeren bir WPF uygulaması oluşturacaksınız. Denetimler için bir veri kümesinde kapsüllenmiş ürün kayıtları bağlıdır. Ayrıca ürünleri üzerinden göz atın ve ürün kayıtları için değişiklikleri kaydetmek için düğmeler ekler.  
@@ -183,11 +180,11 @@ Aşağıdaki kavramlar önceki bilgi de yararlı, ancak izlenecek yolu tamamlama
 7.  İçinde **özellikleri** yanındaki onay kutusunu penceresinde, seçin **IsReadOnly** özelliği.  
   
 ## <a name="navigating-product-records"></a>Ürün kayıt gezinme  
- Kullanarak ürün kayıtları arasında kaydırma yapma olanağı sağlayan kodu eklemek  **\<**  ve  **>**  düğmeler.  
+ Kullanarak ürün kayıtları arasında kaydırma yapma olanağı sağlayan kodu eklemek **\<** ve **>** düğmeler.  
   
 #### <a name="to-enable-users-to-navigate-product-records"></a>Ürün kaydı gitmek kullanıcıların etkinleştirmek için  
   
-1.  Tasarımcıda çift  **<**  penceresini yüzeyinde düğmesi.  
+1.  Tasarımcıda çift **<** penceresini yüzeyinde düğmesi.  
   
      Visual Studio arka plan kod dosyasını açar ve yeni bir `backButton_Click` için olay işleyicisini <xref:System.Windows.Controls.Primitives.ButtonBase.Click> olay.  
   
@@ -201,7 +198,7 @@ Aşağıdaki kavramlar önceki bilgi de yararlı, ancak izlenecek yolu tamamlama
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]  
   
-4.  Dönüş Tasarımcısı ve çift  **>**  düğmesi.  
+4.  Dönüş Tasarımcısı ve çift **>** düğmesi.  
   
 5.  Aşağıdaki kodu ekleyin `nextButton_Click` olay işleyicisi:  
   
@@ -236,7 +233,7 @@ Kullanarak ürün kayıtları için değişiklikleri kaydetmek kullanıcıların
   
     -   Metin kutuları fotoğraf olan ilk ürün kaydını verileri görüntüler. Bu ürünün ürün kimliği 713 ve adına sahip **uzun manşon logosu bölgesi, S**.  
   
-    -   Tıklayabilirsiniz  **>**  veya  **<**  diğer ürün kayıtlarında gezinmek için düğmeler.  
+    -   Tıklayabilirsiniz **>** veya **<** diğer ürün kayıtlarında gezinmek için düğmeler.  
   
 2.  Ürün kaydı her birinde değiştirme **boyutu** değer ve ardından **değişiklikleri kaydetmek**.  
   

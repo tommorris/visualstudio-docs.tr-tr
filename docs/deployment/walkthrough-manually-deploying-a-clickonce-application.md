@@ -1,13 +1,10 @@
 ---
-title: "İzlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - manual ClickOnce deployments
 - manifests [ClickOnce]
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 001aa8f3436e1594b198a81779c77258ca829a21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>İzlenecek yol: ClickOnce Uygulamasını El ile Dağıtma
 Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama veya gelişmiş dağıtım özelliklerini kullanmanız gereken güvenilir uygulama dağıtımı gibi oluşturmak için Mage.exe komut satırı aracını kullanmanız gerekir, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bildirimleri. Bu kılavuzda nasıl oluşturulacağını açıklar bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] komut satırı sürümünü (Mage.exe) veya grafik sürümünü (MageUI.exe) bildirim oluşturma ve düzenleme aracı kullanarak dağıtım.  
@@ -70,7 +66,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 -   Uygulamanın istemci bilgisayarda önkoşullar gerekli olup olmadığını belirler.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Visual Studio'dan dağıtılan uygulamaları dağıtımınız ile birlikte bir önkoşul önyükleyicisi (setup.exe) içerebilir. Bu kılavuz için gerekli iki bildirim oluşturur bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım. Kullanarak bir önkoşul önyükleyicisi oluşturabilirsiniz [GenerateBootstrapper görevi](../msbuild/generatebootstrapper-task.md).  
+     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Visual Studio'dan dağıtılan uygulamaları dağıtımınız ile birlikte bir önkoşul önyükleyicisi (setup.exe) içerebilir. Bu kılavuz için gerekli iki bildirim oluşturur bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım. Kullanarak bir önkoşul önyükleyicisi oluşturabilirsiniz [GenerateBootstrapper görevi](../msbuild/generatebootstrapper-task.md).  
   
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Mage.exe komut satırı aracını kullanarak bir uygulamayı dağıtmak için  
   
@@ -128,7 +124,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 10. Dağıtım hedefi veya medya tüm dosyaları dağıtım dizininde kopyalayın. Bu bir Web sitesi veya FTP sitesi, bir dosya paylaşımı veya bir CD-ROM ya da bir klasör olabilir.  
   
-11. Kullanıcılarınızın URL, UNC veya uygulamanızı yüklemek için gereken fiziksel ortam sağlar. Bir URL veya UNC sağlarsanız, kullanıcılarınız için dağıtım bildirimi tam yolunu vermeniz gerekir. Örneğin, AppToDeploy http://webserver01/ AppToDeploy dizininde dağıtılırsa, tam URL yolu http://webserver01/AppToDeploy/AppToDeploy.application olacaktır.  
+11. Kullanıcılarınızın URL, UNC veya uygulamanızı yüklemek için gereken fiziksel ortam sağlar. Bir URL veya UNC sağlarsanız, kullanıcılarınız için dağıtım bildirimi tam yolunu vermeniz gerekir. Örneğin, AppToDeploy dağıtılırsa http://webserver01/ AppToDeploy dizininde tam URL yolu olacaktır http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>MageUI.exe grafik Aracı'yla bir uygulamayı dağıtmak için  
   
@@ -165,7 +161,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 13. Dosya sisteminizi dosya olarak depolanan bir sertifika varsa, **sertifika dosyası işaretiyle** seçeneği ve üç nokta kullanarak dosya sisteminden sertifikayı seçin (**...** ) düğmesi. Sertifika parolanızı yazın.  
   
-     veya  
+     -veya-  
   
      Sertifikanızı sertifika deposunda bilgisayarınızdan erişilebilir kaldığı seçin **depolanan bir sertifika ile oturum** seçeneği ve verilen listeden sertifikayı seçin.  
   
@@ -193,7 +189,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 25. Dosya sisteminizi dosya olarak depolanan bir sertifika varsa, **sertifika dosyası işaretiyle** seçeneği ve üç nokta kullanarak dosya sisteminden sertifikayı seçin (**...** ) düğmesi. Sertifika parolanızı yazın.  
   
-     veya  
+     -veya-  
   
      Sertifikanızı sertifika deposunda bilgisayarınızdan erişilebilir kaldığı seçin **depolanan bir sertifika ile oturum** seçeneği ve verilen listeden sertifikayı seçin.  
   
@@ -203,7 +199,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 28. Dağıtım hedefi veya medya tüm dosyaları dağıtım dizininde kopyalayın. Bu bir Web sitesi veya FTP sitesi, bir dosya paylaşımı veya bir CD-ROM ya da bir klasör olabilir.  
   
-29. Kullanıcılarınızın URL, UNC veya uygulamanızı yüklemek için gereken fiziksel ortam sağlar. Bir URL veya UNC sağlarsanız, dağıtım bildirimi tam yolu, kullanıcılarınızın vermeniz gerekir. Örneğin, AppToDeploy http://webserver01/ AppToDeploy dizininde dağıtılırsa, tam URL yolu http://webserver01/AppToDeploy/AppToDeploy.application olacaktır.  
+29. Kullanıcılarınızın URL, UNC veya uygulamanızı yüklemek için gereken fiziksel ortam sağlar. Bir URL veya UNC sağlarsanız, dağıtım bildirimi tam yolu, kullanıcılarınızın vermeniz gerekir. Örneğin, AppToDeploy dağıtılırsa http://webserver01/ AppToDeploy dizininde tam URL yolu olacaktır http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulamanın yeni bir sürümünü dağıtmak gerektiğinde, sonra yeni sürümü adlı yeni bir dizin oluşturma — Örneğin, 1.0.0.1 yeni uygulama dosyaları kopyalama yeni dizine. Ardından, oluşturmak ve yeni bir uygulama bildirimi oturum ve güncelleştirme ve uygulama bildirimini imzalamak için önceki adımları izlemeniz gerekir. Mage.exe içinde aynı yüksek bir sürüme belirtilmesi konusunda dikkatli olun `-New` ve `-Update` çağrıları, olarak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yalnızca daha sonraki sürümler en soldaki tamsayı en önemli güncelleştirir. MageUI.exe kullandıysanız, dağıtım bildirimi, açarak seçerek güncelleştirebilirsiniz **uygulama başvurusu** sekmesini tıklatarak, **seçin bildirim** düğmesine tıklayın ve ardından güncelleştirilmiş seçme Uygulama bildirimi.  

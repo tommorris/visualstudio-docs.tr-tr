@@ -1,27 +1,23 @@
 ---
-title: "Altyapısı hatalarını ayıklama | Microsoft Docs"
-ms.custom: 
+title: Altyapısı hatalarını ayıklama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1816d19425897a2f63fa7e5cbe30771bd5eac3d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-engine"></a>Altyapısı hata ayıklama
 Hata ayıklama altyapısı (DE) yorumlayıcı veya işletim sistemi hata ayıklama Hizmetleri yürütme denetimi, kesme noktaları ve ifade değerlendirme gibi sunmak için birlikte çalışır. Ayıklanacak bir programın durumunu izlemek için DE sorumludur. Bunu gerçekleştirmek için CPU veya API çalışma zamanı tarafından sağlanan olup olmadığını ne olursa olsun yöntemleri desteklenen çalışma zamanında kullanabileceği DE kullanır.  
@@ -37,7 +33,7 @@ Hata ayıklama altyapısı (DE) yorumlayıcı veya işletim sistemi hata ayıkla
 > [!NOTE]
 >  Transact-SQL için ayrı DE uygulamaları varken ve [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)], VBScript ve [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] tek SE paylaşın.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]hata ayıklama motorları iki yoldan biriyle çalıştırmak için hata ayıklama etkinleştirir: ya da aynı süreci [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kabuk ya da hedef programın aynı işlemde ayıklanacak. İkinci form genellikle ayıklanacak işlemi gerçekte bir yorumlayıcı altında çalışan bir komut dosyasıdır ve hata ayıklama altyapısı intimate yorumlayıcı betiği izlemek için bilmelidir ortaya çıkar. Bu durumda, yorumlayıcı gerçekte bir çalışma zamanı olduğunu unutmayın; hata ayıklama altyapıları için belirli çalışma zamanı uygulamalarıdır. Ayrıca, tek SE uygulaması (örneğin, uzaktan hata ayıklama) işlem ve makine sınırlarındaki bölünebilir.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hata ayıklama motorları iki yoldan biriyle çalıştırmak için hata ayıklama etkinleştirir: ya da aynı süreci [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kabuk ya da hedef programın aynı işlemde ayıklanacak. İkinci form genellikle ayıklanacak işlemi gerçekte bir yorumlayıcı altında çalışan bir komut dosyasıdır ve hata ayıklama altyapısı intimate yorumlayıcı betiği izlemek için bilmelidir ortaya çıkar. Bu durumda, yorumlayıcı gerçekte bir çalışma zamanı olduğunu unutmayın; hata ayıklama altyapıları için belirli çalışma zamanı uygulamalarıdır. Ayrıca, tek SE uygulaması (örneğin, uzaktan hata ayıklama) işlem ve makine sınırlarındaki bölünebilir.  
   
  DE ortaya çıkarır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hata ayıklama arabirimleri. COM tüm iletişimidir DE işlem içi, çıkış işleminin veya başka bir bilgisayarda yüklü olup olmadığını bileşen iletişimini etkilemez.  
   

@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: dağıtım güncelleştirmeleri için alternatif bir konum belirtme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: dağıtım güncelleştirmeleri için alternatif bir konum belirtme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - deployment update, alternative locations
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
-caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 637f4517734d3a0bbf86c3894c4f0fc7dd5b5e8d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 107fb4680b2ee5600c2cee847ebb3d2b5efd7da4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Nasıl yapılır: Dağıtım Güncelleştirmeleri için Alternatif Bir Konum Belirtme
 Yükleyebilirsiniz, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamadan başlangıçta bir CD veya bir dosya paylaşımı, ancak uygulama Web'de düzenli güncelleştirmeleri denetle gerekir. Böylece, uygulamanızın kendisini Web'den kendi ilk yüklemeden sonra güncelleştirebilirsiniz Dağıtım bildiriminizi güncelleştirmeler için alternatif bir konum belirtebilirsiniz.  
@@ -50,9 +48,9 @@ Yükleyebilirsiniz, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md
   
 1.  .NET Framework komut istemini açın.  
   
-2.  Aşağıdaki komutu kullanarak güncelleştirme konumunu ayarlayın. Bu örnekte, **HelloWorld.exe.application** yolu, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] her zaman .application uzantısına sahiptir, uygulama bildirimi ve **http://adatum.com/Update/Path** URL'si [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama güncelleştirmelerini kontrol eder.  
+2.  Aşağıdaki komutu kullanarak güncelleştirme konumunu ayarlayın. Bu örnekte, **HelloWorld.exe.application** yolu, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] her zaman .application uzantısına sahiptir, uygulama bildirimi ve **http://adatum.com/Update/Path** bu URL'si:[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama güncelleştirmelerini kontrol eder.  
   
-     **Mage-HelloWorld.exe.application güncelleştir - ProviderUrl http://adatum.com/Update/Path**  
+     **Mage-HelloWorld.exe.application - ProviderUrl güncelleştir http://adatum.com/Update/Path**  
   
 3.  Dosyayı kaydedin.  
   

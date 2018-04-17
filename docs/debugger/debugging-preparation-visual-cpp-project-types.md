@@ -1,12 +1,10 @@
 ---
-title: "Hata ayıklama hazırlığı: Visual C++ proje türleri | Microsoft Docs"
-ms.custom: 
+title: 'Hata ayıklama hazırlığı: Visual C++ proje türleri | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,23 +16,23 @@ helpviewer_keywords:
 - debug builds, project settings
 - debugging [C++]
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8cc51e55af477edfac65b79ca29e26b720510c55
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e02be24447d5383388be0a7208bf84e36333732f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Hata Ayıklama Hazırlığı: Visual C++ Proje Türleri
 Bu bölümde temel proje türleri tarafından oluşturulan hata ayıklama açıklar [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] proje şablonları.  
   
  DLL'leri çıktılarını oluşturma bu proje türleri halinde gruplandırılır Not [DLL projelerinde hata ayıklama](../debugger/debugging-dll-projects.md) paylaştıkları genel özellikleri nedeniyle.  
   
-##  <a name="BKMK_In_this_topic"></a>Bu konudaki  
+##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
  [Önerilen özellik ayarları](#BKMK_Recommended_Property_Settings)  
   
  [Win32 projeleri](#BKMK_Win32_Projects)  
@@ -45,16 +43,16 @@ Bu bölümde temel proje türleri tarafından oluşturulan hata ayıklama açık
   
  [Windows Forms uygulamaları (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
-##  <a name="BKMK_Recommended_Property_Settings"></a>Önerilen özellik ayarları  
+##  <a name="BKMK_Recommended_Property_Settings"></a> Önerilen özellik ayarları  
  Bazı özellikler tüm yönetilmeyen hata ayıklama senaryoları için aynı şekilde ayarlamanız gerekir. Aşağıdaki tablolarda, önerilen özellik ayarları görüntüleyin. Burada listelenmeyen ayarları farklı yönetilmeyen proje türleri arasında farklılık gösterebilir. Daha fazla bilgi için bkz: [bir C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
   
-### <a name="configuration-properties-124-cc-124-optimization-node"></a>Yapılandırma özellikleri &#124; C/C++ &#124; En iyi duruma getirme düğümü  
+### <a name="configuration-properties-124-cc-124-optimization-node"></a>Yapılandırma özellikleri &#124; C/C++ &#124; en iyi duruma getirme düğümü  
   
 |Özellik adı|Ayar|  
 |-------------------|-------------|  
 |**En iyi duruma getirme**|Kümesine **devre dışı (/ 0 d).** Oluşturulan yönergeleri doğrudan kaynak koduna karşılık gelmediğinden en iyi duruma getirilmiş daha zor hata ayıklamak için kodudur. Programınızı sahip yalnızca iyileştirilmiş kodda görüntülenen hata fark ederseniz, bu ayarı etkinleştirmek, ancak gösterilen kodu unutmayın **ayrıştırılmış** penceresi kaynak gördükleri eşleşmeyebilir en iyi duruma getirilmiş kaynağından oluşturulur Windows. Atlama gibi diğer özellikleri, beklendiği gibi çalışmayabilir.|  
   
-### <a name="configuration-properties-124-linker-124-debugging-node"></a>Yapılandırma özellikleri &#124; Bağlayıcı &#124; Hata ayıklama düğümü  
+### <a name="configuration-properties-124-linker-124-debugging-node"></a>Yapılandırma özellikleri &#124; bağlayıcı &#124; hata ayıklama düğümü  
   
 |Özellik adı|Ayar|  
 |-------------------|-------------|  
@@ -62,14 +60,14 @@ Bu bölümde temel proje türleri tarafından oluşturulan hata ayıklama açık
   
  [Bu konudaki](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Win32_Projects"></a>Win32 projeleri  
+##  <a name="BKMK_Win32_Projects"></a> Win32 projeleri  
  Win32 uygulamaları C veya C++ ile yazılmış geleneksel Windows programlardır. Bu tür bir uygulamada hata ayıklama [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] basittir.  
   
  Win32 uygulamaları MFC uygulamaları ve ATL projeleri içerir. Windows API'larını kullanın ve MFC ya da ATL kullanabilir, ancak ortak dil çalışma zamanı (CLR) kullanmayın. Ancak, CLR kullanan yönetilen kodu çağrısı olabilir.  
   
  Aşağıdaki yordam içinden bir Win32 projenin hata ayıklamasını açıklanmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dışında uygulamayı başlatmak için bir Win32 uygulaması hata ayıklamak için başka bir yol olduğu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve ekleyebilir. Daha fazla bilgi için bkz: [eklemek için çalışan işlemler](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a>C veya C++ Win32 uygulama hata ayıklamak için  
+###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> C veya C++ Win32 uygulama hata ayıklamak için  
   
 1.  Projesini Visual Studio'da açın.  
   
@@ -77,7 +75,7 @@ Bu bölümde temel proje türleri tarafından oluşturulan hata ayıklama açık
   
 3.  İçinde açıklanan teknikleri kullanarak hata ayıklama [hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md).  
   
-###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a>Hata ayıklama yapılandırmasını el ile ayarlamak için  
+###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Hata ayıklama yapılandırmasını el ile ayarlamak için  
   
 1.  Üzerinde **Görünüm** menüsünde tıklatın **özellik sayfaları**.  
   
@@ -99,7 +97,7 @@ Bu bölümde temel proje türleri tarafından oluşturulan hata ayıklama açık
   
  [Bu konudaki](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Windows_Forms_Applications___NET_"></a>Windows Forms uygulamaları (.NET)  
+##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms uygulamaları (.NET)  
  **Windows Forms uygulaması (.NET)** şablon oluşturur bir [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows Forms uygulaması. Daha fazla bilgi için bkz: [nasıl yapılır: bir Windows uygulaması projesi oluşturduğunuzda](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Bu tür bir uygulamada hata ayıklama [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yönetilen Windows Forms uygulamalarında benzer.  

@@ -1,28 +1,26 @@
 ---
-title: "Görselleştirici mimarisi | Microsoft Docs"
-ms.custom: 
+title: Görselleştirici mimarisi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 6aad395f-7170-4d9e-b2b8-a5faf453380e
-caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d2cf2e4b68ba8902d5b93935ea188243fb36d68f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 42410fede088c02992f223efc209c9edd7fc23b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visualizer-architecture"></a>Görselleştirici Mimarisi
 Hata ayıklayıcı Görselleştirici mimarisi iki bölümden oluşur:  
@@ -71,7 +69,7 @@ Hata ayıklayıcı Görselleştirici mimarisi iki bölümden oluşur:
   
  Nesne sağlayıcısı ya da kullanabilirsiniz bildirim <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> veya <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A>. Her iki API çağrısı sonuçlanıyor <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A> nesne kaynağı. Çağrı <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A?displayProperty=fullName> doldurur bir <xref:System.IO.Stream?displayProperty=fullName>, görselleştirilen nesnenin seri hale getirilmiş bir formu temsil eder.  
   
- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName>Forma sonra ile oluşturduğunuz kullanıcı arabiriminde görüntüleyebilen geri nesnesi, verileri seri durumdan çıkarır <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName>bir ham verileri doldurur `Stream`, hangi kendiniz seri durumdan gerekir. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName>çalışır çağırarak <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> serileştirilmiş almak için `Stream`, verileri seri durumdan sonra. Kullanım <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> zaman nesne tarafından .NET seri hale getirilebilir değil ve özel seri hale getirme gerektirir. Bu durumda, ayrıca geçersiz kılmanız gerekir <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName> yöntemi.  
+ <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> Forma sonra ile oluşturduğunuz kullanıcı arabiriminde görüntüleyebilen geri nesnesi, verileri seri durumdan çıkarır <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> bir ham verileri doldurur `Stream`, hangi kendiniz seri durumdan gerekir. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> çalışır çağırarak <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> serileştirilmiş almak için `Stream`, verileri seri durumdan sonra. Kullanım <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> zaman nesne tarafından .NET seri hale getirilebilir değil ve özel seri hale getirme gerektirir. Bu durumda, ayrıca geçersiz kılmanız gerekir <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName> yöntemi.  
   
  Oluşturmakta olduğunuz, salt okunur Görselleştirici, tek yönlü iletişim <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> veya <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A> yeterlidir. Veri nesnelerini düzenleme destekleyen Görselleştirici oluşturuyorsanız, daha fazla yapmanız gerekir. Nesne kaynak nesne Sağlayıcısı'ndan bir veri nesnesi da Gönder olması gerekir. Aşağıdaki tabloda, nesne kaynak bu amaç için kullanılan API'leri ve nesne sağlayıcısı gösterilmektedir:  
   
@@ -81,7 +79,7 @@ Hata ayıklayıcı Görselleştirici mimarisi iki bölümden oluşur:
   
  Yeniden nesne sağlayıcısı kullanabileceğiniz iki API'leri olduğuna dikkat edin. Verileri her zaman gönderildiği nesne Sağlayıcısı'ndan nesnesi kaynağı olarak bir `Stream`, ancak <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> nesnesine seri hale gerektiren bir `Stream` kendiniz.  
   
- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A>sağlarsanız, nesne bir içine serileştiren bir `Stream`, daha sonra çağırır <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> göndermek için `Stream` için <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.  
+ <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> sağlarsanız, nesne bir içine serileştiren bir `Stream`, daha sonra çağırır <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> göndermek için `Stream` için <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.  
   
  Değiştir yöntemlerden birini kullanarak yeni bir veri nesnesi görselleştirilen nesnenin yerini ayıklayıcı içinde oluşturur. Özgün nesne içeriğini değiştirme olmadan değiştirmek istiyorsanız, aşağıdaki tabloda gösterilen aktarımı yöntemlerden birini kullanın. Bu API'leri görselleştirilen nesne değiştirmeden aynı anda iki yönde de veri aktarın:  
   

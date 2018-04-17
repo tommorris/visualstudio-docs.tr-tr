@@ -1,11 +1,8 @@
 ---
-title: "TableAdapters kullanarak veri kümelerini doldurma | Microsoft Docs"
-ms.custom: 
+title: TableAdapters kullanarak veri kümelerini doldurma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,17 +15,17 @@ helpviewer_keywords:
 - data [Visual Studio], retrieving
 - data [Visual Studio], datasets
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: e338335263a9c0757bbf6305a42fd092d4f90c04
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: efd40aa9e702ce855438e29f65e5bcd221bae9a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters kullanarak veri kümelerini doldurma
 Bir TableAdapter bileşeni veritabanından bir veya daha fazla sorgular veya belirttiğiniz saklı yordamlar göre verileri içeren bir veri kümesi doldurur. TableAdapters de gerçekleştirebilir ekler, güncelleştirmeleri ve veri kümesi için yaptığınız değişiklikleri kalıcı hale getirmek için veritabanı üzerinde siler. Ayrıca, belirli bir tabloya ilgisiz Genel komutlar da verebilir.  
@@ -120,10 +117,10 @@ Bir TableAdapter bileşeni veritabanından bir veya daha fazla sorgular veya bel
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|`UpdateAll`yöntemi|Tüm veri tablolarından tüm verileri kaydeder.|  
-|`BackUpDataSetBeforeUpdate`özelliği|Veri kümesi yedek bir kopyasını yürütmeden önce oluşturulup oluşturulmayacağını belirler `TableAdapterManager.UpdateAll` yöntemi. Boole değeri.|  
+|`UpdateAll` Yöntemi|Tüm veri tablolarından tüm verileri kaydeder.|  
+|`BackUpDataSetBeforeUpdate` Özelliği|Veri kümesi yedek bir kopyasını yürütmeden önce oluşturulup oluşturulmayacağını belirler `TableAdapterManager.UpdateAll` yöntemi. Boole değeri.|  
 |*tableName* `TableAdapter` özelliği|Temsil eden bir `TableAdapter`. Oluşturulan `TableAdapterManager` her biri için bir özellik içeriyor `TableAdapter` yönettiği. Örneğin, müşteriler ve siparişler bir tablo içeren bir veri kümesi ile oluşturulan bir `TableAdapterManager` içeren `CustomersTableAdapter` ve `OrdersTableAdapter` özellikleri.|  
-|`UpdateOrder`özelliği|Tek tek INSERT, update ve delete komutları sırasını denetler. Bu ayarlar değerlerden birine `TableAdapterManager.UpdateOrderOption` numaralandırması.<br /><br /> Varsayılan olarak, `UpdateOrder` ayarlanır **InsertUpdateDelete**. Ekler, sonra güncelleştirir ve ardından siler deyişle kümesindeki tüm tablolar için gerçekleştirilir.|
+|`UpdateOrder` Özelliği|Tek tek INSERT, update ve delete komutları sırasını denetler. Bu ayarlar değerlerden birine `TableAdapterManager.UpdateOrderOption` numaralandırması.<br /><br /> Varsayılan olarak, `UpdateOrder` ayarlanır **InsertUpdateDelete**. Ekler, sonra güncelleştirir ve ardından siler deyişle kümesindeki tüm tablolar için gerçekleştirilir.|
 
 ## <a name="security"></a>Güvenlik  
 Ayarlanan CommandType özelliği ile veri komutları kullandığınızda <xref:System.Data.CommandType.Text>, dikkatlice veritabanınıza geçirmeden önce bir istemciden gönderilen bilgilere bakın. Kötü niyetli kullanıcılar göndermeyi deneyin (Ekle) yetkisiz erişim elde veya veritabanının zarar verecek çaba değiştirilmiş veya ek SQL deyimlerinde. Bir veritabanı için kullanıcı girişi aktarmadan önce her zaman bilgilerin geçerli olduğunu doğrulayın. Her zaman parametreli sorgular veya saklı yordamlar mümkün olduğunda kullanmak iyi bir uygulamadır.  

@@ -1,11 +1,8 @@
 ---
-title: "Veri aramak için bir Windows formu oluşturma | Microsoft Docs"
-ms.custom: 
+title: Veri aramak için bir Windows formu oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms, searching data
 - Windows Forms, displaying data
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - data [Visual Studio], parameterizing queries
 - data [Visual Studio], searching
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
-caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 31ec03dbc2eda481d4de82a848d696b80e99cb2e
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: d725459f3623803cbcd02d83e3050ccd9c7f6aed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Veri aramak için bir Windows formu oluşturma
 Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görüntülemektir. Örneğin, belirli bir müşterinin siparişlerini veya belirli bir siparişin ayrıntılarını görüntülemek isteyebilirsiniz. Bu senaryoda, kullanıcı bilgileri forma girer ve sonra kullanıcının girişi parametre olarak kullanılarak bir sorgu yürütülür; diğer bir deyişle veriler parametreli bir sorgu temel alınarak seçilir. Sorgu sadece kullanıcı tarafından girilen ölçütleri karşılayan verileri getirir. Bu kılavuzda, belirli bir şehirdeki müşterileri getiren bir sorgu oluşturma ve kullanıcı arabirimini kullanıcıların şehir adı girip bir düğmeye basarak sorguyu çalıştırabilecekleri şekilde değiştirme işlemleri gösterilmiştir.  
@@ -117,7 +114,7 @@ Bu adım bir veri kaynağı kullanarak bir veritabanı oluşturur **veri kaynağ
   
 2.  Sürükleme **müşteriler** düğümden **veri kaynakları** formunuza penceresi.  
   
-     A <xref:System.Windows.Forms.DataGridView> ve araç şeridinde (<xref:System.Windows.Forms.BindingNavigator>) kayıtları gezinmek için form üzerinde görüntülenir. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
+     A <xref:System.Windows.Forms.DataGridView> ve araç şeridinde (<xref:System.Windows.Forms.BindingNavigator>) kayıtları gezinmek için form üzerinde görüntülenir. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
 ## <a name="add-parameterization-search-functionality-to-the-query"></a>Sorguya parametrelemeyi (arama işlevini) ekleyin  
  Özgün kullanarak sorgu WHERE yan tümcesi ekleyebilirsiniz **arama ölçütleri Oluşturucu** iletişim kutusu.  

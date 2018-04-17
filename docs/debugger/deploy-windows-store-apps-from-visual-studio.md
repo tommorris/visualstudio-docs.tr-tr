@@ -1,27 +1,25 @@
 ---
-title: "Visual Studio'dan UWP uygulamaları dağıtma | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'dan UWP uygulamaları dağıtma | Microsoft Docs
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: dec0b32b0be121e15c81b93f5ed7dd6aa0b9c324
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio'dan UWP uygulamaları dağıtma
   
@@ -39,7 +37,7 @@ ms.lasthandoff: 01/19/2018
   
 -   Başlatıldığında hata ayıklaması bir uygulama başka bir uygulama veya yöntemi tarafından dağıtma.
   
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>Bir UWP uygulaması dağıtma  
+##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Bir UWP uygulaması dağıtma  
  El ile bir uygulama dağıtımı basit bir işlemdir:  
   
 1.  Uzak bir aygıta dağıtıyorsanız, uygulamanın başlangıç projesi özellik Proje sayfasında adını veya aygıtın IP adresi belirtin. (Bu öğeler yapmak için bu konudaki daha aşağı listelenen adımları.).  
@@ -50,7 +48,7 @@ ms.lasthandoff: 01/19/2018
   
 3.  Üzerinde **yapı** menüsünde seçin **Dağıt**  
   
-##  <a name="BKMK_How_to_specify_a_remote_device"></a>Uzak aygıt belirtme  
+##  <a name="BKMK_How_to_specify_a_remote_device"></a> Uzak aygıt belirtme  
 
 **Önkoşullar**  
   
@@ -81,7 +79,7 @@ Dağıtım uzaktan hata ayıklayıcı ağ kanalının uzak aygıta uygulama dosy
   
  **Uzak aygıt bir JavaScript veya Visual C++ proje sayfasında belirtme**  
   
- ![C# 43; &#43; Proje özellikleri uzaktan hata ayıklama için](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
+ ![C&#43; &#43; proje uzaktan hata ayıklama için özellikleri](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
   
 1.  Seçin **uzaktan hata ayıklayıcı** gelen **başlatmak için hata ayıklayıcı** listesi.  
   
@@ -95,7 +93,7 @@ Dağıtım uzaktan hata ayıklayıcı ağ kanalının uzak aygıta uygulama dosy
   
 2.  Uzak aygıt ağ adını girin **uzak makine** kutusu veya tıklatın **bulmak** aygıttan seçmek için **seçin uzaktan hata ayıklayıcı bağlantı** iletişim kutusu.  
   
-##  <a name="BKMK_Deployment_options"></a>Dağıtım seçenekleri  
+##  <a name="BKMK_Deployment_options"></a> Dağıtım seçenekleri  
  Başlangıç projesi hata ayıklama özellik sayfasında aşağıdaki dağıtım seçeneklerini ayarlayabilirsiniz.  
   
  **Ağ geri döngü izin ver**  

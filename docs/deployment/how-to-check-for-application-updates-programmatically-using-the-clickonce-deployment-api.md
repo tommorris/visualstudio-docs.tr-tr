@@ -1,12 +1,10 @@
 ---
 title: "Nasıl yapılır: program aracılığıyla ClickOnce dağıtım API'sini kullanarak uygulama güncelleştirmelerini denetleme | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - application updates
 ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
-caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 02e6a4c0b69bf9e9d6170175b4324ccb226854e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2812a12541d71d29beff453c66344f85be904f5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Nasıl yapılır: ClickOnce Dağıtım API'sini Kullanarak Program Aracılığıyla Uygulama Güncelleştirmelerini Denetleme
 ClickOnce dağıtıldıktan sonra bir uygulamayı güncelleştirmek için iki yöntem sunar. Listedeki ilk yöntem, güncelleştirmeleri belirli aralıklarla otomatik olarak denetlemek için ClickOnce dağıtımı yapılandırabilirsiniz. İkinci yöntemde kullanan kodu yazabilirsiniz <xref:System.Deployment.Application.ApplicationDeployment> güncelleştirmeleri denetlemek için sınıf dayalı bir kullanıcı isteği gibi bir olay.  
@@ -50,7 +48,7 @@ ClickOnce dağıtıldıktan sonra bir uygulamayı güncelleştirmek için iki y�
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Mage.exe kullanarak güncelleştirmeleri program aracılığıyla denetleyen bir uygulamayı dağıtma  
   
--   Mage.exe açıklandığı gibi kullanarak uygulamanızı dağıtmak için yönergeleri izleyin [izlenecek yol: bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Dağıtım bildirimi oluşturmak için Mage.exe çağrılırken, komut satırı anahtarını kullandığınızdan emin olun `providerUrl`ve burada ClickOnce güncelleştirmeleri denetle URL'yi belirtmek için. Uygulamanızı gelen güncelleştirecekseniz [http://www.adatum.com/MyApp](http://www.adatum.com/MyApp), örneğin, dağıtım bildirimi oluşturmak için yapacağınız çağrı şuna benzeyebilir:  
+-   Mage.exe açıklandığı gibi kullanarak uygulamanızı dağıtmak için yönergeleri izleyin [izlenecek yol: bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Dağıtım bildirimi oluşturmak için Mage.exe çağrılırken, komut satırı anahtarını kullandığınızdan emin olun `providerUrl`ve burada ClickOnce güncelleştirmeleri denetle URL'yi belirtmek için. Uygulamanızı gelen güncelleştirecekseniz [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), örneğin, dağıtım bildirimi oluşturmak için yapacağınız çağrı şuna benzeyebilir:  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  

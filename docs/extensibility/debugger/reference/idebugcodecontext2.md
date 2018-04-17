@@ -1,29 +1,25 @@
 ---
 title: IDebugCodeContext2 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugCodeContext2
 helpviewer_keywords:
 - IDebugCodeContext2 interface
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75403c0597b2285aa9117f3ffb51acd01c967f3d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b46ec36a93ac91647a3f17aac28187519ca2447
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Bu arabirim bir kod yönergesi başlangıç konumunu temsil eder. Çoğu çalışma zamanı mimari için bugün, bir kod bağlamı, adresi bir programın yürütme akış olarak düşünülebilir.  
@@ -49,7 +45,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Bu kodu bağlamı için dil bilgilerini alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Arasındaki temel farklılık bir `IDebugCodeContext2` arabirimi ve bir [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) arabirimi olan bir `IDebugCodeContext2` her zaman yönerge hizalanır. Bunun anlamı bir `IDebugCodeContext2` ancak bir yönerge başlangıcına işaret her zaman bir `IDebugMemoryContext2` tüm çalışma zamanı mimarisi bellekte baytını işaret edebilir. `IDebugCodeContext2`yönergeler yerine temel depolama boyutu (genellikle bayt) göre artırılır.  
+ Arasındaki temel farklılık bir `IDebugCodeContext2` arabirimi ve bir [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) arabirimi olan bir `IDebugCodeContext2` her zaman yönerge hizalanır. Bunun anlamı bir `IDebugCodeContext2` ancak bir yönerge başlangıcına işaret her zaman bir `IDebugMemoryContext2` tüm çalışma zamanı mimarisi bellekte baytını işaret edebilir. `IDebugCodeContext2` yönergeler yerine temel depolama boyutu (genellikle bayt) göre artırılır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Başlık: msdbg.h  

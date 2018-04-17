@@ -2,12 +2,9 @@
 title: Yönetilen koddaki onaylar | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -23,22 +20,21 @@ helpviewer_keywords:
 - Trace.Listeners property
 - assertions, managed code
 ms.assetid: 70ab2522-6486-4076-a1a9-e0f11cd0f3a1
-caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 90e39956f777ddd79fad080d8bb6d13b30d4ccd0
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: f682768aeb3f3a0f3cc22da8a68f8db4a225b375
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assertions-in-managed-code"></a>Yönetilen Koddaki Onaylar
 Onaylama işlemi, bir ya da `Assert` deyimi, bağımsız değişken olarak belirttiğiniz bir koşulu sınar `Assert` deyimi. Koşul doğru olarak değerlendirilirse, hiçbir eylem oluşur. Koşul false olarak değerlendirilirse, onaylama işlemi başarısız olur. İle hata ayıklama derlemesi çalıştırıyorsanız, programınızı Kesme moduna girer.  
   
-##  <a name="BKMK_In_this_topic"></a>Bu konudaki  
+##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
  [System.Diagnostics Namespace onaylar](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
   
  [Debug.Assert yöntemi](#BKMK_The_Debug_Assert_method)  
@@ -53,14 +49,14 @@ Onaylama işlemi, bir ya da `Assert` deyimi, bağımsız değişken olarak belir
   
  [Yapılandırma dosyalarında onayları ayarlama](#BKMK_Setting_assertions_in_configuration_files)  
   
-##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a>System.Diagnostics Namespace onaylar  
- Visual Basic ve Visual C#, kullanabileceğiniz `Assert` ya da yönteminden <xref:System.Diagnostics.Debug> veya <xref:System.Diagnostics.Trace>, içinde olduğu <xref:System.Diagnostics> ad alanı. <xref:System.Diagnostics.Debug>Bunlar etmeyin boyutunu artırın veya yayın kodunuzu hızına azaltmak için sınıf yöntemlerini programınızı, bir yayın sürümüne dahil edilmez.  
+##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> System.Diagnostics Namespace onaylar  
+ Visual Basic ve Visual C#, kullanabileceğiniz `Assert` ya da yönteminden <xref:System.Diagnostics.Debug> veya <xref:System.Diagnostics.Trace>, içinde olduğu <xref:System.Diagnostics> ad alanı. <xref:System.Diagnostics.Debug> Bunlar etmeyin boyutunu artırın veya yayın kodunuzu hızına azaltmak için sınıf yöntemlerini programınızı, bir yayın sürümüne dahil edilmez.  
   
  C++ desteklemiyor <xref:System.Diagnostics.Debug> sınıfı yöntemlerinin. Kullanarak aynı sonucu elde edebilirsiniz <xref:System.Diagnostics.Trace> gibi ile koşullu derleme, sınıf `#ifdef DEBUG`... `#endif`.  
   
  [Bu konudaki](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_The_Debug_Assert_method"></a>Debug.Assert yöntemi  
+##  <a name="BKMK_The_Debug_Assert_method"></a> Debug.Assert yöntemi  
  Kullanım <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> serbestçe kodunuzun doğru ise, doğru tutun koşullarda test etmek için yöntem. Örneğin, bir tamsayı bölme işlevi yazmış olduğunuzu varsayın. Matematik kuralları tarafından bölen hiçbir zaman sıfır olamaz. Bu bir onaylama kullanarak test:  
   
 ```VB  
@@ -114,7 +110,7 @@ savingsAccount.Withdraw ( amount );
   
  [Bu konudaki](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Side_effects_of_Debug_Assert"></a>Debug.Assert yan etkileri  
+##  <a name="BKMK_Side_effects_of_Debug_Assert"></a> Debug.Assert yan etkileri  
  Kullandığınızda <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>, herhangi bir içindeki kod emin olun `Assert` program sonuçlarını değişmez `Assert` kaldırılır. Aksi takdirde, yalnızca programınızın yayın sürümünü görünür bir hatayı yanlışlıkla getirebilir. Özellikle dikkatli olun hakkında işlev veya yordam içeren onaylar çağrısı, aşağıdaki örnek gibi:  
   
 ```VB  
@@ -143,27 +139,27 @@ Debug.Assert ( temp != 0 );
   
  [Bu konudaki](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Trace_and_Debug_Requirements"></a>İzleme ve hata ayıklama gereksinimleri  
+##  <a name="BKMK_Trace_and_Debug_Requirements"></a> İzleme ve hata ayıklama gereksinimleri  
  Kullanarak projesi oluşturursanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sihirbazlar, izleme simgesi varsayılan sürüm ve hata ayıklama yapılandırmaları olarak tanımlanır. Hata ayıklama simgesi varsayılan yalnızca hata ayıklama derlemesi olarak tanımlanır.  
   
  Aksi takdirde için <xref:System.Diagnostics.Trace> çalışmak için yöntemler programınızı kaynak dosyasının en üstte şunlardan biri olması gerekir:  
   
--   `#Const TRACE = True`Visual Basic'te  
+-   `#Const TRACE = True` Visual Basic'te  
   
--   `#define TRACE`Visual C# ve C++  
+-   `#define TRACE` Visual C# ve C++  
   
  Veya programınız izleme seçeneği ile oluşturulmalıdır:  
   
--   `/d:TRACE=True`Visual Basic'te  
+-   `/d:TRACE=True` Visual Basic'te  
   
--   `/d:TRACE`Visual C# ve C++  
+-   `/d:TRACE` Visual C# ve C++  
   
  Hata ayıklama yöntemleri bir C# veya Visual Basic yayın derleme kullanmanız gerekiyorsa, yayın yapılandırmanızda hata ayıklama simgesi tanımlamanız gerekir.  
   
  C++ desteklemiyor <xref:System.Diagnostics.Debug> sınıfı yöntemlerinin. Kullanarak aynı sonucu elde edebilirsiniz <xref:System.Diagnostics.Trace> gibi ile koşullu derleme, sınıf `#ifdef DEBUG`... `#endif`. Bu simgeleri tanımlayabilirsiniz  **\<Proje > özellik sayfaları** iletişim kutusu. Daha fazla bilgi için bkz: [bir Visual Basic hata ayıklama yapılandırması proje ayarları değiştirme](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) veya [C veya C++ hata ayıklama yapılandırması proje ayarları değiştirme](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
-##  <a name="BKMK_Assert_arguments"></a>Bağımsız değişkenler onaylama  
- <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>ve <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> en fazla üç bağımsız değişkenleri alır. Zorunludur, ilk bağımsız denetlemek istediğiniz durumdur. Çağırırsanız <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> veya <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> yalnızca tek bir bağımsız değişken ile `Assert` yöntemi koşulu denetler ve sonucu yanlışsa, çağrı yığını içeriğini çıkarır **çıkış** penceresi. Aşağıdaki örnekte gösterildiği <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> ve <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>:  
+##  <a name="BKMK_Assert_arguments"></a> Bağımsız değişkenler onaylama  
+ <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> ve <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> en fazla üç bağımsız değişkenleri alır. Zorunludur, ilk bağımsız denetlemek istediğiniz durumdur. Çağırırsanız <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> veya <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> yalnızca tek bir bağımsız değişken ile `Assert` yöntemi koşulu denetler ve sonucu yanlışsa, çağrı yığını içeriğini çıkarır **çıkış** penceresi. Aşağıdaki örnekte gösterildiği <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> ve <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>:  
   
 ```VB  
 Debug.Assert(stacksize > 0)  
@@ -202,7 +198,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  [Bu konudaki](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Customizing_Assert_behavior"></a>Assert davranışını özelleştirme  
+##  <a name="BKMK_Customizing_Assert_behavior"></a> Assert davranışını özelleştirme  
  Kullanıcı arabirimi modunda uygulamanızı çalıştırırsanız `Assert` yöntemi görüntüler **onaylama başarısız** koşulu başarısız olduğunda iletişim kutusu. Bir onaylama başarısız olduğunda meydana gelecek eylemleri tarafından denetlenen <xref:System.Diagnostics.Debug.Listeners%2A> veya <xref:System.Diagnostics.Trace.Listeners%2A> özelliği.  
   
  Ekleyerek çıktı davranışını özelleştirebilirsiniz bir <xref:System.Diagnostics.TraceListener> nesnesini `Listeners` kaldırarak koleksiyonu, bir <xref:System.Diagnostics.TraceListener> gelen `Listeners` koleksiyonu veya kılarak <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> varolan yöntemi `TraceListener` yapmak için farklı şekilde davranır.  
@@ -215,7 +211,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  [Bu konudaki](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Setting_assertions_in_configuration_files"></a>Yapılandırma dosyalarında onayları ayarlama  
+##  <a name="BKMK_Setting_assertions_in_configuration_files"></a> Yapılandırma dosyalarında onayları ayarlama  
  Onaylar kodunuzu olduğu gibi program yapılandırma dosyanızda de ayarlayabilirsiniz. Daha fazla bilgi için bkz. <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> veya <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

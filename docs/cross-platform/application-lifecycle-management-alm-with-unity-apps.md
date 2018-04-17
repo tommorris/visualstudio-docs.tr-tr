@@ -2,22 +2,19 @@
 title: Unity uygulamaları ile uygulama yaşam döngüsü yönetimi (ALM) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
 author: dantogno
 ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 05196d7c9e6b1b441db61f599dcfe39c4d5cba56
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: e58aab3f09c3f79a3c62760a7a39f5616df884d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Unity Uygulamaları ile Uygulama Yaşam Döngüsü Yönetimi (ALM)
 Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha fazla etkinlik içerir. Bu etkinlikler başvurulan için DevOps (geliştirme + işlemleri) uygulamanın tam yaşam döngüsü span ve planlama ve iş izleme, tasarlama ve kod, uygulama bir kaynak kod deposu yönetme derlemeleri, çalışan sürekli tümleştirmeler yönetme içerir dağıtımlar, test (dahil, birim testleri ve UI testleri) tanılama çeşitli biçimlerde hem geliştirme hem de üretim ortamlarında çalışan ve uygulama performansı ve kullanıcı davranışlarını telemetri ve analiz ile gerçek zamanlı izleme.

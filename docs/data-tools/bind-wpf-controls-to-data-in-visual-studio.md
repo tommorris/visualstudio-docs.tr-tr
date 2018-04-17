@@ -1,11 +1,8 @@
 ---
-title: "Visual Studio - 1. Bölüm verilere WPF denetimleri bağlama | Microsoft Docs"
-ms.custom: 
+title: Visual Studio - 1. Bölüm verilere WPF denetimleri bağlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - data [WPF], displaying
 - WPF, data binding in Visual Studio
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 77c56d70c6fc3dd3dac9a563c146d8bab2c6f699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 4c059013703a73a83a9a6f35b3c89f7b27c523d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere WPF denetimleri bağlama
 Veri bağlama tarafından uygulamanızı kullanıcılara verileri görüntüleyebilir [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] kontrol eder. Bu veri bağlama denetimleri oluşturmak için öğelerinden sürükleyebilirsiniz **veri kaynakları** penceresi üzerine [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bu konuda en yaygın görevleri, Araçlar ve veri bağlama oluşturmak için kullanabileceğiniz sınıfları bazıları açıklanmaktadır [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] uygulamalar.  
@@ -64,7 +61,7 @@ Veri bağlama tarafından uygulamanızı kullanıcılara verileri görüntüleye
   
 -   Denetim için bir veri bağlama oluşturur. Öğeyi tasarımcıda varolan bir denetime sürüklerseniz, XAML denetimi öğeye bağlar. Bir kapsayıcıya öğeyi sürükleyin, XAML için sürüklenen öğe seçilmedi denetimi oluşturur ve denetimi öğesine bağlar. Denetim içinde yeni oluşturulan <xref:System.Windows.Controls.Grid>.  
   
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Ayrıca arka plan kod dosyasına aşağıdaki değişiklikleri yapar:  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ayrıca arka plan kod dosyasına aşağıdaki değişiklikleri yapar:  
   
 -   Oluşturur bir <xref:System.Windows.FrameworkElement.Loaded> için olay işleyicisini [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] denetimi içeren öğe. Olay işleyicisi verilerle alır tabloyu doldurur <xref:System.Windows.Data.CollectionViewSource> kapsayıcının kaynakları ve yapar sonra geçerli öğenin ilk veri öğesi. Varsa bir <xref:System.Windows.FrameworkElement.Loaded> olay işleyicisi zaten var, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mevcut olay işleyicisine bu kodu ekler.  
   
@@ -96,7 +93,7 @@ Visual Studio arka plan kod dosyasında aşağıdaki değişiklikleri de yapar:
 > [!NOTE]
 >  Özel sınıflar gerekir ortak ve, varsayılan olarak, parametresiz bir oluşturucusu olmalıdır. Bunlar, kendi sözdiziminde "nokta" olan can'tbe iç içe geçmiş sınıf. Daha fazla bilgi için bkz: [XAML ve WPF için özel sınıfları](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]oluşturur [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] şunları yapar:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oluşturur [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] şunları yapar:  
   
 -   Yeni bir ekler <xref:System.Windows.Data.CollectionViewSource> öğesine sürüklenen kapsayıcısının kaynaklarına. <xref:System.Windows.Data.CollectionViewSource> Gidin ve nesne verileri görüntülemek için kullanılan bir nesnedir.  
   

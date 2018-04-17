@@ -1,11 +1,8 @@
 ---
-title: "N katmanlı veri kümesine doğrulama ekleme | Microsoft Docs"
-ms.custom: 
+title: N katmanlı veri kümesine doğrulama ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - validation [Visual Basic], n-tier data applications
 - validating n-tier data applications
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
-caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: a3f37b734bb9d109634fc272fca3140d40c040f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: addcbd4640acd86cc40097742dcdfd515308f256
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>N katmanlı veri kümesine doğrulama ekleme
 N katmanlı çözümünü ayrılmış bir veri kümesine doğrulama ekleme temelde tek dosya dataset (veri kümesinde tek bir proje) için doğrulama ekleme ile aynıdır. Verileri doğrulama gerçekleştirmek için önerilen sırasında konumdur <xref:System.Data.DataTable.ColumnChanging> ve/veya <xref:System.Data.DataTable.RowChanging> veri tablosu olayları.  
@@ -62,7 +59,7 @@ End Sub
 2.  Doğrulamak istediğiniz sütun çift tıklayın. Bu eylem oluşturur <xref:System.Data.DataTable.ColumnChanging> olay işleyicisi.  
   
     > [!NOTE]
-    >  Veri kümesi Tasarımcısı C# olayı için bir olay işleyicisi otomatik olarak oluşturmaz. C# olayını işlemek gerekli olan kod bir sonraki bölümde eklenmiştir. `SampleColumnChangingEvent`oluşturulur ve en çok sayfaya <xref:System.Data.DataTable.ColumnChanging> olayında <xref:System.Data.DataTable.EndInit%2A> yöntemi.  
+    >  Veri kümesi Tasarımcısı C# olayı için bir olay işleyicisi otomatik olarak oluşturmaz. C# olayını işlemek gerekli olan kod bir sonraki bölümde eklenmiştir. `SampleColumnChangingEvent` oluşturulur ve en çok sayfaya <xref:System.Data.DataTable.ColumnChanging> olayında <xref:System.Data.DataTable.EndInit%2A> yöntemi.  
   
 3.  Doğrulamak için kodu ekleyin `e.ProposedValue` uygulamanızı gereksinimlerini karşılayan verileri içerir. Önerilen değer kabul edilebilir değilse, bir hata var. göstermek için sütun ayarlayın.  
   

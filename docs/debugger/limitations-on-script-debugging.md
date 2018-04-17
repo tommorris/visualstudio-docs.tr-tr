@@ -1,12 +1,10 @@
 ---
-title: "Betik hata ayıklamasında sınırlamalar | Microsoft Docs"
-ms.custom: 
+title: Betik hata ayıklamasında sınırlamalar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,26 +15,26 @@ helpviewer_keywords:
 - script debugging, limitations
 - breakpoint mapping, limitations
 ms.assetid: 280eead5-693c-47af-967f-dfe9d23f84db
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c51a9b9ad5a349261d1898310ccb0125293ab5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b2b959428d940fd61c9c343f468fca71d56332c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="limitations-on-script-debugging"></a>Betik Hata Ayıklamasında Sınırlamalar
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Bu konudaki sınırlamalar istemci tarafı komut dosyası hata ayıklamayı destekler.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Bu konudaki sınırlamalar istemci tarafı komut dosyası hata ayıklamayı destekler.  
   
 ## <a name="limitations-on-breakpoint-mapping-with-client-side-script"></a>Kesme noktası eşleme istemci tarafı komut dosyası ile ilgili bir sınırlama  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]bir istemci-tarafı dosyaya çalışma zamanında dönüştürülen bir sunucu tarafı ASPX veya HTML dosyasında bir kesme noktası ayarlamanıza olanak tanır. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]istemci-tarafı dosyasında, aşağıdaki sınırlamalara tabi karşılık gelen bir kesme noktası için sunucu tarafı dosyasından bir kesme noktası eşler:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir istemci-tarafı dosyaya çalışma zamanında dönüştürülen bir sunucu tarafı ASPX veya HTML dosyasında bir kesme noktası ayarlamanıza olanak tanır. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] istemci-tarafı dosyasında, aşağıdaki sınırlamalara tabi karşılık gelen bir kesme noktası için sunucu tarafı dosyasından bir kesme noktası eşler:  
   
 -   Kesme noktalarını ayarlayın, içinde `<script>` engeller. Satır içi komut dosyasında kesme noktaları veya `<% %>` blokları eşlenemez.  
   
--   Sayfa için tarayıcı URL'si sayfa adı içermelidir. Örneğin, http://microsoft.com/default.apsx. Kesme noktası eşleme http://microsoft.com gibi bir adresinden varsayılan sayfası yeniden yönlendirme tanıyamıyor.  
+-   Sayfa için tarayıcı URL'si sayfa adı içermelidir. Örneğin, http://microsoft.com/default.apsx. Kesme noktası eşleme yapılamıyor tanıması bir adresinden yeniden yönlendirme gibi http://microsoft.com varsayılan sayfası.  
   
 -   Kesme noktası ayarlama sayfası veya bu sayfa tarafından dahil başka bir dosyaya, bir ASPX denetim (ascx) dosyası değil, tarayıcı URL'sinde belirtilen sayfası ana. Kesme noktaları dahil sayfalarında ayarlamak eşlenemez.  
   

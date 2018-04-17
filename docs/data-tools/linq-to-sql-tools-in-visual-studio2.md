@@ -1,23 +1,20 @@
 ---
-title: "Visual Studio O/R Tasarımcısı genel bakış | Microsoft Docs"
-ms.custom: 
+title: Visual Studio O/R Tasarımcısı genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: a160cce25814cd2e110f8896ed6752a18b5dd0da
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 09fe5a8cbec1ba1ab5a45abda4c88864e25a1751
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ-SQL Visual Studio Araçları
 LINQ-SQL Microsoft tarafından yayınlanan ilk nesne ilişkisel eşleme teknolojisi oluştu. İyi temel senaryolarında çalışır ve Visual Studio'da desteklenmeye devam eder, ancak artık etkin geliştirilme aşamasındadır. LINQ-zaten kullanıyor eski bir uygulamayı korurken SQL ya da SQL Server kullanan ve birden çok tablo eşlemesi gerektirmeyen basit uygulamalarda kullanın. Genel olarak, bir nesne ilişkisel Eşleyici katmanı gerekli olduğunda yeni uygulamalar Entity Framework kullanmalıdır.  

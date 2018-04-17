@@ -1,26 +1,24 @@
 ---
-title: "Gölgelendirici Tasarımcısı | Microsoft Docs"
-ms.custom: 
+title: Gölgelendirici Tasarımcısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c8d0f7a2ee52930a74566e0f7b4ddc10747204ce
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9aeef6cb38643dd8c1bbf862a396f8632d2630df
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shader-designer"></a>Gölgelendirici Tasarımcısı
 Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gölgelendirici Designer'ın oluşturmak, değiştirmek ve olarak bilinen özel görsel efektler verme *gölgelendiriciler*.  
@@ -69,8 +67,8 @@ Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-qu
   
 |Araç Çubuğu Öğesi|Açıklama|  
 |------------------|-----------------|  
-|**Seçin**|Düğümler ve grafik kenarları ile etkileşim sağlar. Bu modda, düğümleri seçin ve taşıyabilir veya silin ve kenarları oluşturmak veya bunları bölün.|  
-|**Yatay kaydırma**|Bir gölgelendirici grafiği pencere çerçevesi göre hareketini sağlar. Kaydırmak için tasarım yüzeyine noktasında seçin ve taşıyabilirsiniz.<br /><br /> İçinde **seçin** modu tuşuna basın ve etkinleştirmek için Ctrl basılı **Pan** geçici olarak modu.|  
+|**seçin**|Düğümler ve grafik kenarları ile etkileşim sağlar. Bu modda, düğümleri seçin ve taşıyabilir veya silin ve kenarları oluşturmak veya bunları bölün.|  
+|**Pan**|Bir gölgelendirici grafiği pencere çerçevesi göre hareketini sağlar. Kaydırmak için tasarım yüzeyine noktasında seçin ve taşıyabilirsiniz.<br /><br /> İçinde **seçin** modu tuşuna basın ve etkinleştirmek için Ctrl basılı **Pan** geçici olarak modu.|  
 |**Yakınlaştır**|Pencere çerçevesi göre daha az veya gölgelendirici grafik ayrıntı görünümünü sağlar. İçinde **yakınlaştırma** modu, tasarım yüzeyine bir nokta seçin ve ardından sağa taşıyın veya yakınlaştırmak için aşağı veya sol veya en fazla yakınlaştırma yetersiz.<br /><br /> İçinde **seçin** modu tuşuna basın ve yakınlaştırmak veya uzaklaştırmak fare tekerleği kullanarak Ctrl basılı tutun.|  
 |**Sığdırmak için Yakınlaştır**|Tam gölgelendirici grafiği pencere çerçevede görüntüler.|  
 |**Gerçek zamanlı işleme modu**|Gerçek zamanlı işleme etkinleştirildiğinde, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bile herhangi bir kullanıcı eylemi gerçekleştirildiğinde tasarım yüzeyi yeniden çizer. Bu mod, zamanla değişen gölgelendiriciler ile çalıştığınızda kullanışlıdır.|  
@@ -116,7 +114,7 @@ Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-qu
   
 -   Üzerinde **gölgelendirici Tasarımcısı modları** araç, istediğiniz şekli seçin.  
   
-####  <a name="WWS_MaterialParameters"></a>Dokular ve malzeme parametreleri  
+####  <a name="WWS_MaterialParameters"></a> Dokular ve malzeme parametreleri  
  Birçok gölgelendirici dokular ve uygulamanızı nesnesinde her tür için benzersiz bir görünüm oluşturmak için malzeme özelliklerine güvenir. Gölgelendirici uygulamanızı nasıl görüneceğini görmek için doku ve dokular ve uygulamanızda kullanabilirsiniz parametreleri eşleştirmek için Önizleme'yi işlemek için kullanılan malzeme özellikleri ayarlayabilirsiniz.  
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Bir doku kasaya farklı bir doku bağlamak veya diğer malzeme parametreleri değiştirmek için  

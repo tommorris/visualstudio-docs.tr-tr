@@ -1,28 +1,26 @@
 ---
-title: "Benzetici UWP uygulamaları çalıştırma | Microsoft Docs"
-ms.custom: 
+title: Benzetici UWP uygulamaları çalıştırma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
-caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: b3ec07f7bf36ba606e9f1ddb45bdcde75d570a32
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Benzetici UWP uygulamaları çalıştırma
 UWP uygulamalar için Visual Studio simulator, bir UWP uygulaması taklit eden bir masaüstü uygulamasıdır. Genellikle, yerel makine, bağlı bir aygıt veya bir uzak makine hata ayıklama istersiniz. Ancak, bazı senaryolarda, farklı fiziksel ekran boyutu ve çözüm benzetmek için Visual Studio simulator kullanmak isteyebilirsiniz. Ayrıca, ortak dokunma ve döndürme olaylarının benzetimini yapma ve ağ bağlantısı özellikleri benzetimini yapma.
@@ -34,12 +32,12 @@ UWP uygulamalar için Visual Studio simulator, bir UWP uygulaması taklit eden b
 > [!IMPORTANT]
 >  Visual Studio 2015 simulator coğrafi konuma düğmesi içermez. Bu durum, Windows 10 simulator coğrafi konuma benzetimi dahil değildir çünkü.
   
-##  <a name="BKMK_Set_the_simulator_as_the_target"></a>Simulator hedef olarak ayarlanmış  
+##  <a name="BKMK_Set_the_simulator_as_the_target"></a> Simulator hedef olarak ayarlanmış  
  Benzetici UWP uygulamanızı çalıştırmak için seçin **Simulator** bulunan aşağı açılan listesinde yanına **hata ayıklamayı Başlat** hata ayıklayıcı düğmesinde **standart** araç. Bu seçenek yalnızca kullanılabilir değilse, uygulamanızın **hedef Platform Min. Sürüm** geliştirme makinenizdeki işletim sistemi küçük veya eşit. 
   
  ![Benzetici çalıştıran](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
   
-##  <a name="BKMK_Choose_an_interaction_mode"></a>Bir etkileşim modu seçin  
+##  <a name="BKMK_Choose_an_interaction_mode"></a> Bir etkileşim modu seçin  
  Aşağıdaki etkileşim modlarından birini seçebilirsiniz  
   
 -   ![Fare Modu düğmesini](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") fare modu: fare hareketleri etkileşim modunu ayarlar. Fare hareketleri dahil tıklama çift tıklamalar ve drags.  
@@ -78,10 +76,10 @@ UWP uygulamalar için Visual Studio simulator, bir UWP uygulaması taklit eden b
   
     -   Sol düğmesine basın ve nesneyi saat yönünde döndürmek için fare tekerleğinin (İleri) döndürün.  
   
-##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a>Etkinleştirmek veya her zaman üst modunu devre dışı  
+##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Etkinleştirmek veya her zaman üst modunu devre dışı  
  Simulator penceresini her zaman diğer windows en üstünde olacak şekilde ayarlayabilirsiniz. **En üstteki pencere geçişi** düğmesini etkinleştirir veya devre dışı bırakır **her zaman üstte** simulator penceresinin modu.  
   
-##  <a name="BKMK_Change_the_device_orientation"></a>Cihaz yönlendirmesini değiştirme  
+##  <a name="BKMK_Change_the_device_orientation"></a> Cihaz yönlendirmesini değiştirme  
  Herhangi bir yönde 90 derece simulator döndürerek cihaz yönlendirmesini dikey ve yatay arasında geçiş yapabilirsiniz.  
   
 > [!NOTE]
@@ -90,7 +88,7 @@ UWP uygulamalar için Visual Studio simulator, bir UWP uygulaması taklit eden b
 > [!NOTE]
 >  Bir simulator kenarına görüntülendiği ekran daha büyük şekilde simulator döndürme olursa simulator içinde ekran sığması için otomatik olarak boyutlandırılır. Yeniden döndürme olursa simulator özgün boyutuna boyutlandırılır değil.  
   
-##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a>Çözümleme ve sanal ekran boyutu değiştirme  
+##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Çözümleme ve sanal ekran boyutu değiştirme  
  Benzetimli ekran boyutu ve çözünürlüğü değiştirmek için tercih **değiştirmek çözümleme** paletini temel düğmesine tıklayın ve yeni boyutunu ve çözüm listeden seçin.  
   
  Ekran boyutu ve çözüm olarak listelenen *ekran genişliği inç, piksel genişlik X piksel yükseklik*. Ekran boyutu ve çözümleme benzetilir unutmayın. Seçilen aygıt boyutu ve çözümleme ortak ordinates için konum ortak ordinates simulator üzerinde çevrilir.  
@@ -98,7 +96,7 @@ UWP uygulamalar için Visual Studio simulator, bir UWP uygulaması taklit eden b
 > [!NOTE]
 >  Bit eşlem görüntülerinin ölçeklendirilmiş sürümleri uygulamanızda kaydedebilir ve Windows geçerli ölçek için doğru görüntüyü yükler. Daha fazla bilgi için bkz: [tasarım ve kullanıcı Arabirimi giriş](/windows/uwp/layout/design-and-ui-intro). Ancak, Windows çözümleme sığması için farklı bir resim Çekmeleri şekilde simulator çözümleme değiştirirseniz, durdurmak ve yeni görüntüyü görüntülemek için hata ayıklama oturumu yeniden başlatması.  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Microsoft Store göndermelerini, uygulamanızın bir ekran görüntüsü alma  
+##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Microsoft Store göndermelerini, uygulamanızın bir ekran görüntüsü alma  
  Bir uygulamaya Microsoft Store gönderdiğinizde, uygulama ekran görüntüleri eklemeniz gerekir.  
   
 > [!NOTE]
@@ -110,7 +108,7 @@ UWP uygulamalar için Visual Studio simulator, bir UWP uygulaması taklit eden b
   
      ![Ekran ayarları bağlam menüsü](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
-##  <a name="BKMK_Simulate_network_connection_properties"></a>Ağ bağlantısı özellikleri benzetimi  
+##  <a name="BKMK_Simulate_network_connection_properties"></a> Ağ bağlantısı özellikleri benzetimi  
  Uygulamanızın kullanıcıları ağ bağlantı maliyeti veya veri planı durum değişikliklerini tanıma koruma ve dolaşım veya aşan ek maliyetlerin oluşmasını önlemek için bu bilgileri kullanmak uygulamanızı etkinleştirme tarafından tarifeli ağ bağlantılarında maliyetini Yönet yardımcı olabilecek bir Belirtilen veri aktarımı sınırı. [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API'ler sağlar, yanıt [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) ve [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) oturum olayları. Bkz: [hızlı başlangıç: tarifeli ağ yönetme maliyet kısıtlamaları](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Hata ayıklama veya ağ maliyet uyumlu kodunuzu test etmek için simulator aracılığıyla sunulan bir ağ özelliklerini taklit edebilirsiniz [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) tarafından döndürülen nesne [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
@@ -147,7 +145,7 @@ UWP uygulamalar için Visual Studio simulator, bir UWP uygulaması taklit eden b
   
  [UWP uygulamalarında askıya alma, sürdürme ve arka plan olayları tetikleme](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
-##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a>Klavye ile simulator gidin  
+##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Klavye ile simulator gidin  
  Simulator araç çubuğu tuşlarına basarak gezinebilirsiniz **CTRL + ALT + YUKARI OK** odak simulator penceresinden simulator araç çubuğuna geçiş yapmak için. Kullanım **yukarı ok** ve **aşağı ok** araç çubuğu düğmeleri arasında taşımak için.  
   
  Simulator tuşlarına basarak kapatabilirsiniz **CTRL + ALT + F4**.  

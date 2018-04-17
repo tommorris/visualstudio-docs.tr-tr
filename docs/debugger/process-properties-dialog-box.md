@@ -1,26 +1,24 @@
 ---
-title: "İşlem özellikleri iletişim kutusu | Microsoft Docs"
-ms.custom: 
+title: İşlem özellikleri iletişim kutusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Spy++. process properties
 - process properties, Spy++
 ms.assetid: fe6c9d32-4b81-4dc4-a307-848d23af66ce
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e1178cd848cbac3589faeb2292e2ceadf52c11b
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 11bf3460d0c38aa2b259c48da48cfb1d7cb76bd2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="process-properties-dialog-box"></a>İşlem Özellikleri İletişim Kutusu
 Belirli bir işlemle ilgili daha fazla bilgi edinmek için bu iletişim kutusunu kullanın. Bu iletişim kutusunu görüntülemek için odağı taşımak bir [işlemler görünümü](../debugger/processes-view.md) penceresi. Ağaçta herhangi bir işlem düğümü seçin ve ardından **özellikleri** gelen **Görünüm** menüsü.  

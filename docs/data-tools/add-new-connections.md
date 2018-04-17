@@ -1,22 +1,19 @@
 ---
-title: "Yeni bağlantı ekleme | Microsoft Docs"
-ms.custom: 
+title: Yeni bağlantı ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-caps.latest.revision: "14"
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 26a45e8fe44e2e0945a105711ae84b1082d5c891
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 0355b4fe3c05fb089e6feaac5bb52ff7f3f56da0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-new-connections"></a>Yeni bağlantı ekleme
 
@@ -30,7 +27,7 @@ Bir veritabanı veya hizmet bağlantınızı test ve veritabanı içeriklerini v
 
    Visual Studio uzantısı olarak el ile yüklemeniz seçerek bu pencereyi **Araçları**, **Uzantılar ve güncelleştirmeler**, **çevrimiçi**, **Visual Studio Markeplace**. Keşfetmek ve Azure hizmetlerine bağlanmak için özel işlevler sağlar.
 
-- SQL Server Nesne Gezgini
+- SQL Server Object Explorer
 
    SQL Server veri araçları ile birlikte yüklenir ve altında görünür **Görünüm** menüsü. Var. görmüyorsanız, Git **programlar ve Özellikler** Denetim Masası ' nda Visual Studio bulun ve ardından **değişiklik** SQL Server veri araçları için onay kutusunu işaretledikten sonra yükleyiciyi yeniden çalıştırın. Kullanım **SQL Server Nesne Gezgini** görünümü SQL veritabanları (bunlar bir ADO.NET sağlayıcısı varsa) için yeni veritabanları oluşturma, şemalar değiştirmek, saklı yordamlar oluşturma, bağlantı dizeleri almak, verileri görüntüleyebilir. Yüklü hiçbir ADO.NET sağlayıcısı SQL veritabanları burada görünmez, ancak hala kendisine programlı olarak bağlayabilirsiniz.
 

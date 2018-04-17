@@ -1,23 +1,21 @@
 ---
-title: "Nasıl yapılır: Model 3-b Terrain | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: Model 3-b Terrain | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cccd65c62d8b5a0f75052c3121e313507ad5d8b8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ec1cf2d86ddb052b1f12310fb80d192aee080596
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-model-3-d-terrain"></a>Nasıl Yapılır: Model 3B Arazi
 Bu belge Model Düzenleyicisinde 3-b terrain modeli oluşturmak için nasıl kullanılacağını gösterir.  
@@ -39,7 +37,7 @@ Bu belge Model Düzenleyicisinde 3-b terrain modeli oluşturmak için nasıl kul
   
  İşlemi tamamladığınızda, model aşağıdaki gibi görünmelidir:  
   
- ![3 &#45; terrain modelini gösteren D Sahne](../designers/media/digit-terrain-model.png "basamaklı Terrain modeli")  
+ ![3&#45;terrain modelini gösteren D Sahne](../designers/media/digit-terrain-model.png "basamaklı Terrain modeli")  
   
  Başlamadan önce emin olun **özellikleri** penceresi ve **araç** görüntülenir.  
   
@@ -67,7 +65,7 @@ Bu belge Model Düzenleyicisinde 3-b terrain modeli oluşturmak için nasıl kul
   
  Tam terrain modelidir. İşte son modeli yeniden uygulanan Phong gölgelendirme ile:  
   
- ![3 &#45; terrain modelini gösteren D Sahne](../designers/media/digit-terrain-model.png "basamaklı Terrain modeli")  
+ ![3&#45;terrain modelini gösteren D Sahne](../designers/media/digit-terrain-model.png "basamaklı Terrain modeli")  
   
  Açıklanan gradyan gölgelendirici etkisini göstermek için bu terrain modelini kullanabilirsiniz [nasıl yapılır: bir geometri tabanlı gradyan gölgelendirici oluşturma](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
   

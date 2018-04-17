@@ -1,12 +1,10 @@
 ---
-title: "&lt;Dosya&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs"
-ms.custom: 
+title: '&lt;Dosya&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - <file> element [ClickOnce application manifest]
 - manifests [ClickOnce], file element
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
-caps.latest.revision: "24"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9575fd84a5bd17777aaf540c72bfff62c27adf15
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;Dosya&gt; öğesi (ClickOnce uygulaması)
 İndirilen ve uygulama tarafından kullanılan tüm nonassembly dosyaları tanımlar.  
@@ -95,7 +93,7 @@ ms.lasthandoff: 12/22/2017
 |`name`|Gerekli. Dosyanın adını tanımlar.|  
 |`size`|Gerekli. Boyutu dosyasının bayt cinsinden belirtir.|  
 |`group`|İsteğe bağlı `optional` özniteliği belirtilmemişse veya kümesine `false`; gereklidir `optional` olan `true`. Bu dosyayı ait olduğu grubu adı. Ad geliştirici tarafından seçilen herhangi bir Unicode dize değeri olabilir ve ile isteğe bağlı dosyaları indirmek için kullanılan <xref:System.Deployment.Application.ApplicationDeployment> sınıfı.|  
-|`optional`|İsteğe bağlı. Bu dosya gerekip gerekmediğini uygulama ilk çalıştırıldığında veya isteğe bağlı olarak uygulama talep edene kadar dosya yalnızca sunucuda bulunup bulunmaması gerektiğini belirtir. Varsa `false` veya tanımlanmamışsa, uygulamayı ilk kez çalıştırdığınızda veya dosya indirilir. Varsa `true`, `group` geçerli olması uygulama bildirimi için belirtilmelidir. `optional`TRUE olamaz, `writeableType` değeriyle belirtilen `applicationData`.|  
+|`optional`|İsteğe bağlı. Bu dosya gerekip gerekmediğini uygulama ilk çalıştırıldığında veya isteğe bağlı olarak uygulama talep edene kadar dosya yalnızca sunucuda bulunup bulunmaması gerektiğini belirtir. Varsa `false` veya tanımlanmamışsa, uygulamayı ilk kez çalıştırdığınızda veya dosya indirilir. Varsa `true`, `group` geçerli olması uygulama bildirimi için belirtilmelidir. `optional` TRUE olamaz, `writeableType` değeriyle belirtilen `applicationData`.|  
 |`writeableType`|İsteğe bağlı. Bu dosyayı bir veri dosyası olduğunu belirtir. Şu anda yalnızca geçerli değer: `applicationData`.|  
   
 ## <a name="typelib"></a>tür kitaplığı  
@@ -160,7 +158,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="hash"></a>hash  
  `hash` İsteğe bağlı bir alt öğedir `file` öğesi. `hash` Öğesi özniteliklere sahip değildir.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]bir uygulamadaki tüm dosyaların algoritmik bir karma dosyaların hiçbiri dağıtımdan sonra değişmediğinden emin olmak için güvenlik denetimi olarak kullanır. Varsa `hash` öğesi dahil değildir, bu onay işlemi gerçekleştirilmez. Bu nedenle, atlama `hash` öğesi önerilmez.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bir uygulamadaki tüm dosyaların algoritmik bir karma dosyaların hiçbiri dağıtımdan sonra değişmediğinden emin olmak için güvenlik denetimi olarak kullanır. Varsa `hash` öğesi dahil değildir, bu onay işlemi gerçekleştirilmez. Bu nedenle, atlama `hash` öğesi önerilmez.  
   
  Bir bildirim değil karma bir dosya içeriyorsa, bu bildirim dijital olarak olamaz kullanıcıların bütün bir dosyanın içeriğini doğrulayamadığı için imzalı.  
   

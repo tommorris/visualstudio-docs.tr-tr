@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: bir Windows formunda hata ayıklama | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: bir Windows formunda hata ayıklama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - Windows Forms, debugging
 - debugging Windows Forms, walkthroughs
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1d0ab1ccdf6f5365c04c4a7ee0cac8ce75ab5f17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 20013d5af0cd06f37c5e502618253354e9410374
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>İzlenecek Yol: Windows Formunda Hata Ayıklama
 Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows formu, standart bir Windows uygulaması oluşturur. Bu adım adım işlemleri Visual Basic, C# ya da C++ kullanarak tamamlayabilirsiniz.  

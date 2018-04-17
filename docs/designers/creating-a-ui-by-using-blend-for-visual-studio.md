@@ -1,24 +1,21 @@
 ---
-title: "Visual Studio için Blend'i kullanarak kullanıcı Arabirimi oluşturma | Microsoft Docs"
-ms.custom: 
+title: Visual Studio için Blend'i kullanarak kullanıcı Arabirimi oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a087af717e60eab3b9a1091ae46b9263e7342887
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: bd36d0cc4a3aba697e7c9b54e1a73c5404f7fcbb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma
 
@@ -46,7 +43,7 @@ Kullanabileceğiniz **Araçları** uygulamanızdaki nesneleri oluşturup değiş
 |![](../designers/media/b1_3.png "B1_3")|**Fırça Araçları** fırça dönüştürme, bir nesne boyama veya başka bir nesneye uygulamak için bir nesne öznitelikleri seçerek gibi bir nesne visual özniteliklerini ile çalışırsınız.|![Belirtme çizgisi C](../designers/media/b5_label_c.png "b5_label_C")|**Şekil araçları**|
 |![](../designers/media/b1_4.png "B1_4")|**Nesne Araçları** yüzeyinde yolları, şekiller, Düzen panelleri, metin ve denetimleri gibi en yaygın nesneleri çizin.|![Belirtme çizgisi D](../designers/media/b5_label_d.png "b5_label_D")|**Düzen panelleri**|
 |![](../designers/media/b1_5.png "B1_5")|**Varlık Araçları** erişim **varlıklar** panel ve en son göstermek için varlık kitaplıktan kullanılır.|![Belirtme çizgisi E](../designers/media/b5_label_e.png "b5_label_E")|**Metin denetimleri**|
-|||![Callout F](../designers/media/b5_label_f.png "b5_label_F")|**Ortak Denetimler**|
+|||![Belirtme çizgisi F](../designers/media/b5_label_f.png "b5_label_F")|**Ortak Denetimler**|
 
 **Kısa bir video izlemek:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [araç](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 

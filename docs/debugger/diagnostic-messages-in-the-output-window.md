@@ -1,12 +1,10 @@
 ---
-title: "Çıktı penceresi tanılama iletileri gönderme | Microsoft Docs"
-ms.custom: 
+title: Çıktı penceresi tanılama iletileri gönderme | Microsoft Docs
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], diagnostic messages in Output window
 - Debug class
 ms.assetid: 386e9524-be17-4573-83fb-4f7c5cae0be0
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: df071834a6ae36da0156c527284f6ffbfcee0e4e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 36b85d16fffe8ddf6e0523eecca09e044283b7e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Çıktı penceresi tanılama iletileri gönder
 Çalışma zamanı iletileri yazma **çıkış** penceresini kullanarak `Debug` sınıfı veya `Trace` parçasıdır sınıfı, <xref:System.Diagnostics> sınıf kitaplığı. Hata ayıklama sınıfı programınızın hata ayıklama sürümü yalnızca çıktı kullanın. Hata ayıklama ve yayın sürümleri çıktısında istiyorsanız, izleme sınıfı kullanın.  
@@ -45,7 +43,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Çeşitli `Write` yürütme bozmadan bilgileri çıkış yöntemleri. Bu yöntem Değiştir `Debug.Print` Visual Basic önceki sürümlerinde kullanılan yöntem.  
   
--   <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>ve <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> belirtilen bir koşul başarısız olursa, yürütme ve çıkışları bilgileri bölün yöntemleri. Varsayılan olarak, `Assert` yöntemi, bir iletişim kutusu bilgileri görüntüler. Daha fazla bilgi için bkz: [yönetilen koddaki onaylar](../debugger/assertions-in-managed-code.md).  
+-   <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> ve <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> belirtilen bir koşul başarısız olursa, yürütme ve çıkışları bilgileri bölün yöntemleri. Varsayılan olarak, `Assert` yöntemi, bir iletişim kutusu bilgileri görüntüler. Daha fazla bilgi için bkz: [yönetilen koddaki onaylar](../debugger/assertions-in-managed-code.md).  
   
 -   <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> Ve <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> her zaman yürütme keser ve bilgi çıkaran yöntemleri. Varsayılan olarak, `Fail` yöntemleri bir iletişim kutusu bilgileri görüntüler.  
   

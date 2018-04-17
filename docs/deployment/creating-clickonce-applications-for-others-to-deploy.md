@@ -1,12 +1,10 @@
 ---
-title: "Dağıtmak için ClickOnce uygulamaları başkalarının oluşturma | Microsoft Docs"
-ms.custom: 
+title: Dağıtmak için ClickOnce uygulamaları başkalarının oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,16 +22,16 @@ helpviewer_keywords:
 - ClickOnce applications, deployed by others
 - ClickOnce applications, previous .NET Framework
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
-caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: d3a9762872f74b39d8cef387703488c01647dbcc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c3cd93353cd20ac52f95d7852c306124561cdf0e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Başkalarının Dağıtması için ClickOnce Uygulamaları Oluşturma
 Uygulamaları dağıtmak ClickOnce Dağıtımları oluşturmakta olduğunuz tüm geliştiriciler planlayın. Bunların çoğu, yalnızca ClickOnce kullanarak kendi uygulama paketini ve ardından dosyaları kapalı büyük bir kuruluşa gibi bir müşteriye el. Müşteri, bir alt ağı üzerinde uygulamayı barındırmak için sorumlu olur. Bu konuda bazı sürümlerinde .NET Framework sürüm 3.5 önce bu tür dağıtımlarda devralınmış sorunları ele alınmıştır. Ardından, .NET Framework 3. 5'yeni "bildirimi güven için kullan" özelliğini kullanarak tarafından sağlanan yeni bir çözüm açıklanır. Son olarak, .NET Framework'ün daha eski sürümleri hala kullanan müşteriler için ClickOnce dağıtımları oluşturmak için önerilen stratejileri ile sonlanır.  

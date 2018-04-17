@@ -1,27 +1,25 @@
 ---
 title: VSIX paketi anatomisi | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
 - vsix
 - packages
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e728fbe2a9e430224a3da822cbcae45745eeb29e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d811c1539dde655657331b7ca3511bbd4e80063f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX paketi anatomisi
 VSIX paketi bir veya daha fazla Visual Studio uzantıları, sınıflandırmak ve Uzantıları'nı yüklemek için Visual Studio kullanan meta verileri ile birlikte içeren bir .vsix dosyasıdır. Bu meta veri VSIX bildirimini ve [Content_Types] .xml dosyasında yer alır. VSIX paketi yerelleştirilmiş Kurulum metin sağlamak için bir veya daha fazla Extension.vsixlangpack dosyalar da içerebilir ve bağımlılıklarını yüklemek için ek VSIX paket içerebilir.  

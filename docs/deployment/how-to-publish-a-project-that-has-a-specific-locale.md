@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: özel yerel ayara sahip olan bir projeyi yayımlama | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: özel yerel ayara sahip olan bir projeyi yayımlama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - macros, deploying with
 - macros, publishing with
 ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
-caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b2560275ae08a9a860d62f11e0fb011e5e7a5b31
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 69ac0441a42070ce0b7ac9edc18c826961ebb83f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Nasıl yapılır: Özel Yerel Ayara Sahip Olan Bir Projeyi Yayımlama
 Bir uygulamanın farklı yerel ayarlara sahip bileşenleri içeren için seyrek değil. Bu senaryoda, birkaç projesi olan bir çözümü oluşturun ve sonra her yerel ayar için ayrı projeleri yayımlamak. Bu yordam bir makrosu 'tr' yerel ayarını kullanarak bir çözümde ilk projeyi yayımlamak için nasıl kullanılacağını gösterir. 'Tr' dışındaki yerel ayar ile bu yordamı denemek istiyorsanız, ayarladığınızdan emin olun `localeString` (örneğin, 'de' veya 'de-DE') kullanarak yerel eşleşecek şekilde makrosu içinde.  

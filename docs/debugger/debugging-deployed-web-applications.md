@@ -1,12 +1,10 @@
 ---
-title: "Dağıtılan ASP.NET uygulamalarında hata ayıklama | Microsoft Docs"
-ms.custom: 
+title: Dağıtılan ASP.NET uygulamalarında hata ayıklama | Microsoft Docs
+ms.custom: ''
 ms.date: 06/30/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - ASP.NET, debugging Web applications
 - XML Web services, debugging
 ms.assetid: b938a91b-be96-416f-83bc-4177e7f3929a
-caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 072c5cde6a4a0af81397863db36bbf861b7ef0ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 036b5b5df360631ad10deaff7f63b51cf55cbd3a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Dağıtılan ASP.NET uygulamalarında hata ayıklama
 Kullanılacak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dağıtılan bir uygulama hata ayıklama için ilişkilendirmeniz gerekir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlem ve hata ayıklayıcı uygulama simgeleri için erişimi olduğundan emin olun. Ayrıca, bulun ve uygulama için kaynak dosyaları açın gerekir. Daha fazla bilgi için bkz: [belirtin simge (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [nasıl yapılır: ASP.NET işleminin adını bulma](../debugger/how-to-find-the-name-of-the-aspnet-process.md), ve [sistem gereksinimleri](../debugger/aspnet-debugging-system-requirements.md).  

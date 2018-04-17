@@ -1,12 +1,10 @@
 ---
-title: "Uygulama dağıtımının önkoşulları | Microsoft Docs"
-ms.custom: 
+title: Uygulama dağıtımının önkoşulları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-caps.latest.revision: "51"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5fdeb1d5e543216e0cbb9cab72ecd98001caff3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-deployment-prerequisites"></a>Uygulama Dağıtımının Önkoşulları
 Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması sağlamak için önce uygulamanızın bağımlı olduğu tüm bileşenleri, hedef bilgisayarda zaten yüklü emin olmalısınız. Örneğin, çoğu uygulamayı kullanılarak oluşturulan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] üzerinde bir bağımlılığa sahip [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; uygulama yüklenmeden önce ortak dil çalışma zamanı doğru sürümü hedef bilgisayarda mevcut olması gerekir.  
@@ -48,7 +46,7 @@ Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması sağla
   
 -   En düşük sürüm tüm derlemelerin derleme bağımlılığı bildirimleri derleme bildiriminde belirtildiği gibi genel derleme önbelleğinde (GAC) önceden yüklenmiş gerekir.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]eksik Önkoşullar algılayabilir ve bir önyükleyici kullanarak önkoşullar yükleyebilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: ClickOnce uygulamasına Önkoşullar yükleme](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] eksik Önkoşullar algılayabilir ve bir önyükleyici kullanarak önkoşullar yükleyebilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: ClickOnce uygulamasına Önkoşullar yükleme](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Gibi araçları tarafından oluşturulan bildirimlerdeki değerleri değiştirmek için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve MageUI.exe uygulama bildirimini bir metin düzenleyicisinde düzenleyin ve uygulama ve dağıtım bildirimlerini yeniden imzalama vermeniz gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: yeniden imzalama uygulama ve dağıtım bildirimlerini](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
@@ -78,9 +76,9 @@ Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması sağla
 |---------------------------|-----------------|  
 |**-?, -h, - Yardım**|Yardım iletişim kutusunu görüntüler.|  
 |**-url, - componentsurl**|Saklı URL'yi ve bu ayarlama bileşenleri URL'sini gösterir.|  
-|**-url =**`location`|Burada Setup.exe arar URL'sini ayarlar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.|  
-|**-componentsurl =**`location`|Burada Setup.exe bağımlılıklar için aşağıdaki gibi görünür URL'sini ayarlar [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
-|**-homesite =** `true` **&#124;**`false`|Zaman `true`, satıcının sitesindeki tercih edilen konumdan bağımlılıkları indirir. Bu geçersiz kılmaları **- componentsurl** ayarı. Zaman `false`, tarafından belirtilen URL'den bağımlılıkları indirir **- componentsurl**.|  
+|**-url =** `location`|Burada Setup.exe arar URL'sini ayarlar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.|  
+|**-componentsurl =** `location`|Burada Setup.exe bağımlılıklar için aşağıdaki gibi görünür URL'sini ayarlar [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
+|**-homesite =** `true`**&#124;** `false`|Zaman `true`, satıcının sitesindeki tercih edilen konumdan bağımlılıkları indirir. Bu geçersiz kılmaları **- componentsurl** ayarı. Zaman `false`, tarafından belirtilen URL'den bağımlılıkları indirir **- componentsurl**.|  
   
 ## <a name="operating-system-support"></a>İşletim sistemi desteği  
  Windows Server 2008 Server Core veya Windows Server 2008 R2 Server düşük bakım sunucu ortamı ile sınırlı işlevsellik sağlayan Core, Visual Studio önyükleyici desteklenmiyor. Örneğin, .NET Framework üzerinde tam bağımlı Visual Studio özellikleri çalıştırılamıyor Sunucu Çekirdeği yükleme seçeneği yalnızca .NET Framework 3.5 Server Core profilini destekler.  

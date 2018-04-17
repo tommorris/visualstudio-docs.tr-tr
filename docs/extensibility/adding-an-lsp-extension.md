@@ -1,25 +1,21 @@
 ---
-title: "Bir dil sunucusu Protokolü uzantısı ekleme | Microsoft Docs"
-ms.custom: 
+title: Bir dil sunucusu Protokolü uzantısı ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: bb6c82eab6878e99c9840ed593d9b9993056d391
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Dil sunucu protokolü uzantısına ekleme
 
@@ -57,16 +53,16 @@ kapatma | Evet
 Çıkış | Evet
 $/ cancelRequest | Evet
 Pencere/showMessage | Evet
-window/showMessageRequest | Evet
+Pencere/showMessageRequest | Evet
 Pencere/logMessage | Evet
 telemetri/olay |
 İstemci/registerCapability |
 İstemci/unregisterCapability |
-workspace/didChangeConfiguration | Evet
+Çalışma alanı/didChangeConfiguration | Evet
 workspace/didChangeWatchedFiles | Evet
 Çalışma alanı/simgesi | Evet
 workspace/executeCommand | Evet
-workspace/applyEdit | Evet
+Çalışma alanı/applyEdit | Evet
 textDocument/publishDiagnostics | Evet
 textDocument/didOpen | Evet
 textDocument/didChange | Evet
@@ -87,9 +83,9 @@ textDocument/onTypeFormatting |
 textDocument/tanımı | Evet
 textDocument/codeAction | Evet
 textDocument/codeLens |
-codeLens/resolve |
+codeLens/Çöz |
 textDocument/documentLink |
-documentLink/resolve |
+documentLink/Çöz |
 textDocument/yeniden adlandır | Evet
 
 ## <a name="getting-started"></a>Başlarken
@@ -100,7 +96,7 @@ Bir dil LSP tabanlı sunucusu kullanarak bir dil hizmeti uzantı oluşturmak iç
 
 Sonraki giderek yeni bir boş VSIXProject oluşturma **dosya** > **yeni proje** > **Visual C#**  >   **Genişletilebilirlik** > **VSIX proje**:
 
-![create vsix project](media/lsp-vsix-project.png)
+![VSIX proje oluşturma](media/lsp-vsix-project.png)
 
 Önizleme sürümü için bir VSIX formunda LSP VS desteği olacaktır ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)). LSP dil sunucuları kullanarak bir uzantı oluşturmak ister uzantısı geliştiriciler bu VSIX üzerinde bir bağımlılık almanız gerekir. Bu nedenle, bir dil sunucu uzantısını yüklemek isteyen müşteriler **dil sunucu Protokolü istemci Önizleme VSIX yüklemeniz gerekir.**
 
@@ -252,7 +248,7 @@ Yeni bir varlık oluşturmak için Yeni'yi tıklatın:
 
 ![MEF varlık tanımlayın](media/lsp-define-asset.png)
 
-* **Type**: Microsoft.VisualStudio.MefComponent
+* **Tür**: Microsoft.VisualStudio.MefComponent
 * **Kaynak**: geçerli çözümdeki bir proje ile
 * **Proje**: [projenizi]
 
@@ -336,7 +332,7 @@ LSP dil hizmeti uzantınızı ayarları desteği eklemek için bu adımları izl
 
   ![VSPackage varlık Düzenle](media/lsp-add-vspackage-asset.png)
 
-  * **Type**: Microsoft.VisualStudio.VsPackage
+  * **Tür**: Microsoft.VisualStudio.VsPackage
   * **Kaynak**: dosya sistemi üzerindeki dosya
   * **Yol**: [pkgdef dosyanızın yolu]
 

@@ -1,25 +1,22 @@
 ---
-title: "Grafik Çerçeve analizi | Microsoft Docs"
-ms.custom: 
+title: Grafik Çerçeve analizi | Microsoft Docs
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 95544a030870feaace585d62a8027c17dbc56c64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-frame-analysis"></a>Grafik Çerçeve Çözümlemesi
 Grafik Çerçeve Çözümlemesi Visual Studio grafik Çözümleyicisi çözümlemek ve Direct3D oyun veya uygulama işleme performansını iyileştirmek için kullanın.  
@@ -75,7 +72,7 @@ Grafik Çerçeve Çözümlemesi Visual Studio grafik Çözümleyicisi çözümle
 #### <a name="timeline"></a>Zaman Çizelgesi  
  Zaman Çizelgesi çizim çağrısı zamanlamaları birbirine göre özetini gösterir. Daha büyük çubukları uzun çizim kez karşılık geldiğinden en pahalı çizim çağrıları çerçevede hızla bulmak için kullanabilirsiniz. Yakalanan çerçeve çizim çağrıları çok fazla sayıda içeriyorsa, tek uzunluğunu çubuk bu toplamıdır birden çok çizim çağrıları birleştirilir çağrıları çizin.  
   
- ![Zaman Çizelgesi &#45;Çiz gösterir; maliyetleri çağırın. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![Zaman Çizelgesi çizim gösterir&#45;maliyetleri çağırın. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  Çubuğu karşılık gelen hangi çizim çağırma olayı görmeye çubuğundaki işaretçiyi tutun. Çubuğu belirlenmesi olayı eşitlemek olay listesi neden olur.  
   
@@ -137,7 +134,7 @@ Grafik Çerçeve Çözümlemesi Visual Studio grafik Çözümleyicisi çözümle
   
  Çerçeve analizi 10 deneme sayısını sınırlar. Platformunuz agresif güç yönetimi veya saat geçişi varsa, başarısız ve yeniden deneme sınırını aştığından bir hata raporu çerçeve analizi neden olabilir. Platformunuza ait güç yönetimi sıfırlayarak bu sorunu azaltmak ve platform etkinleştirirse daha az agresif olmasını hızı azaltma saat mümkün olabilir.  
   
-##  <a name="HardwareSupport"></a>Donanım desteği  
+##  <a name="HardwareSupport"></a> Donanım desteği  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Zaman damgaları ve kapanması sorguları  
  Zaman damgaları çerçeve analizi destekleyen tüm platformlarda desteklenir. Derinlik kapanması sorguları — piksel Occluded sayaç için gerekli — 9.2 veya üzeri özellik düzeyinde destek platformlarında desteklenir.  
@@ -172,18 +169,18 @@ Grafik Çerçeve Çözümlemesi Visual Studio grafik Çözümleyicisi çözümle
 > [!NOTE]
 >  Bu, kullanmakta olduğunuz yalnızca Direct3D API çağrıları olmayan özellik düzeylerini geçerlidir.
 
-### <a name="warp"></a>WARP  
+### <a name="warp"></a>TÜNELİ  
  Çerçeve analizi profil ve gerçek donanım üzerinde işleme performansı artırmak için kullanılmak üzere tasarlanmıştır. Çerçeve analizi TÜNELİ cihazlarda çalıştırılan engelledi değil, ancak genellikle faydalı takip TÜNELİ birinci sınıf bir CPU üzerinde çalışan bile en az özellikli modern GPU yavaş olduğundan ve TÜNELİ performans belirli CPU bağlı olarak büyük ölçüde farklılık gösterebileceğinden değil üzerinde çalıştırıldığı.  
   
-##  <a name="Variants"></a>Çeşitleri  
+##  <a name="Variants"></a> Çeşitleri  
  Bir çerçeve kayıttan yürütme sırasında işlenen şekilde çerçeve analizi yaptığı her değişiklik olarak bilinen bir *değişken*. Çerçeve analizi inceler çeşitleri işleme performansı veya uygulamanızı görsel kalitesini artırmak için yapabilir ortak, görece kolay değişiklikleri için karşılık gelen — örneğin, doku boyutunun azaltılması, doku sıkıştırma kullanılarak veya etkinleştirme yumuşatma farklı türde. Çeşitleri normal işleme bağlamını ve uygulamanızın parametreleri geçersiz. Bir özeti aşağıda verilmiştir:  
   
 |Değişken|Açıklama|  
 |-------------|-----------------|  
 |**1 x 1 Görünüm penceresi boyutu**|Tüm işleme hedefleri görünüm penceresinin boyutlarında 1 x 1 piksel azaltır.<br /><br /> Daha fazla bilgi için bkz: [1 x 1 Görünüm penceresi boyutu değişken](1x1-viewport-size-variant.md)|  
 |**0x MSAA**|Birden çok örnek yumuşatma (MSAA) tüm işleme hedeflerde devre dışı bırakır.<br /><br /> Daha fazla bilgi için bkz: [0 x / 2 x / 4 x MSAA çeşitleri](0x-2x-4x-msaa-variants.md)|  
-|**2x MSAA**|Birden çok örnek yumuşatma (MSAA) tüm işleme hedeflerde x 2 sağlar.<br /><br /> Daha fazla bilgi için bkz: [0 x / 2 x / 4 x MSAA çeşitleri](0x-2x-4x-msaa-variants.md)|  
-|**4x MSAA**|Birden çok örnek yumuşatma (MSAA) tüm işleme hedeflerde x 4 sağlar.<br /><br /> Daha fazla bilgi için bkz: [0 x / 2 x / 4 x MSAA çeşitleri](0x-2x-4x-msaa-variants.md)|  
+|**2 x MSAA**|Birden çok örnek yumuşatma (MSAA) tüm işleme hedeflerde x 2 sağlar.<br /><br /> Daha fazla bilgi için bkz: [0 x / 2 x / 4 x MSAA çeşitleri](0x-2x-4x-msaa-variants.md)|  
+|**4 x MSAA**|Birden çok örnek yumuşatma (MSAA) tüm işleme hedeflerde x 4 sağlar.<br /><br /> Daha fazla bilgi için bkz: [0 x / 2 x / 4 x MSAA çeşitleri](0x-2x-4x-msaa-variants.md)|  
 |**Noktası doku filtreleme**|Filtreleme modunu ayarlar `DXD11_FILTER_MIN_MAG_MIP_POINT` (doku filtreleme noktası) için tüm uygun doku örnekleri.<br /><br /> Daha fazla bilgi için bkz: [noktası, ikili, Trilinear ve Eşyönsüz doku filtreleme çeşitleri](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Çift doğrusal doku filtreleme**|Filtreleme modunu ayarlar `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (çift doğrusal doku filtreleme) tüm uygun doku örnekleri için.<br /><br /> Daha fazla bilgi için bkz: [noktası, ikili, Trilinear ve Eşyönsüz doku filtreleme çeşitleri](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Trilinear doku filtreleme**|Filtreleme modunu ayarlar `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilinear doku filtreleme) tüm uygun doku örnekleri için.<br /><br /> Daha fazla bilgi için bkz: [noktası, ikili, Trilinear ve Eşyönsüz doku filtreleme çeşitleri](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  

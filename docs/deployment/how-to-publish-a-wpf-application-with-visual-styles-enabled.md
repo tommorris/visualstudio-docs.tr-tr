@@ -1,23 +1,21 @@
 ---
-title: "Nasıl yapılır: görsel stiller etkinken WPF uygulaması yayımlama | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: görsel stiller etkinken WPF uygulaması yayımlama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
-caps.latest.revision: "3"
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: bab4660d0e76e467bc95c373002a9035a4ccd672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2fbf3c2573d02111f5d1309fb80ceb09aa09f2e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Nasıl yapılır: Görsel Stiller Etkinken WPF Uygulaması Yayımlama
 Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için ortak denetimlerin görünümünü sağlar. Bu nedenle el ile etkinleştirmeniz gerekir varsayılan olarak, Windows Presentation Foundation (WPF) uygulamaları için görsel stiller etkin değildir. Ancak, WPF uygulaması için görsel stiller etkinleştirme ve çözüm yayımlamaya bir hataya neden olur. Bu konu, bu hatayı ve görsel stiller etkinken WPF uygulaması yayımlama işlemi çözümlemeye açıklar. Görsel stiller hakkında daha fazla bilgi için bkz: [görsel stilleri genel bakış](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Hata iletisi hakkında daha fazla bilgi için bkz: [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -34,7 +32,7 @@ Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için 
   
  Sonra son kullanıcıların uygulamayı yüklemek istediğiniz konuma yayımlanan dosyalarını taşıyabilirsiniz.  
   
-##  <a name="BKMK_publishsolwovs"></a>Görsel stiller etkinken çözümü yayımlama  
+##  <a name="BKMK_publishsolwovs"></a> Görsel stiller etkinken çözümü yayımlama  
   
 1.  Projenizi görsel stiller etkinken olmadığından emin olun. İlk olarak, projenizin bildirim dosyası için aşağıdaki XML denetleyin. XML varsa, daha sonra XML açıklama etiketi ile alın.  
   
@@ -48,7 +46,7 @@ Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için 
   
     ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Visual Basic projesinde bildirim dosyasını açmak için  
   
-    1.  Menü çubuğunda seçin **proje**, *ProjectName***özellikleri**, burada *ProjectName* WPF projenizi adıdır.  
+    1.  Menü çubuğunda seçin **proje**, * ProjectName ***özellikleri**, burada *ProjectName* WPF projenizi adıdır.  
   
          Özellik sayfaları WPF projeniz için görünür.  
   
@@ -58,7 +56,7 @@ Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için 
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Bir C# projesinde bildirim dosyasını açmak için  
   
-    1.  Menü çubuğunda seçin **proje**, *ProjectName***özellikleri**, burada *ProjectName* WPF projenizi adıdır.  
+    1.  Menü çubuğunda seçin **proje**, * ProjectName ***özellikleri**, burada *ProjectName* WPF projenizi adıdır.  
   
          Özellik sayfaları WPF projeniz için görünür.  
   
@@ -73,7 +71,7 @@ Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için 
   
 2.  Derleme ve çözümünüzü yayımlayın. Çözüm yayımlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-##  <a name="BKMK_CreateManifest"></a>Bildirim dosyası oluştur  
+##  <a name="BKMK_CreateManifest"></a> Bildirim dosyası oluştur  
   
 1.  Aşağıdaki XML Notepad dosyaya yapıştırın.  
   
@@ -94,7 +92,7 @@ Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için 
     > [!NOTE]
     >  Kalan yordamlar bu dosyasının adı olduğunu varsayar **themes.manifest** ve dosyayı bilgisayarınızda C:\temp dizinine kaydedilir.  
   
-##  <a name="BKMK_embedmanifest"></a>Bildirim dosyası yayımlanmış çözüm yürütülebilir dosyasına katıştırma  
+##  <a name="BKMK_embedmanifest"></a> Bildirim dosyası yayımlanmış çözüm yürütülebilir dosyasına katıştırma  
   
 1.  Açık **Visual Studio komut istemi**.  
   
@@ -107,7 +105,7 @@ Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için 
     > -   Çözüm aşağıdaki dizinde bulunur: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
     >   
     >      Çözüm şu dizine yayımlanır: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   Yayımlanan uygulama dosyaların en son sürümünü şu dizinde bulunur:`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+    > -   Yayımlanan uygulama dosyaların en son sürümünü şu dizinde bulunur: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
     >   
     >  Adı veya yukarıda açıklanan dizin konumları kullanmak zorunda değil. Yukarıda açıklanan konumları ve adını yalnızca çözümünüzü yayımlamak için gerekli olan adımları göstermek için kullanılır.  
   
@@ -123,7 +121,7 @@ Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için 
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
-##  <a name="BKMK_signappdeplyman"></a>Uygulama ve dağıtım bildirimlerini imzalama  
+##  <a name="BKMK_signappdeplyman"></a> Uygulama ve dağıtım bildirimlerini imzalama  
   
 1.  Komut isteminde kaldırmak için aşağıdaki komutu çalıştırın `.deploy` yürütülebilir dosya geçerli dizinde uzantı.  
   

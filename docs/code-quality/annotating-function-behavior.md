@@ -1,12 +1,10 @@
 ---
-title: "İşlev davranışını yorumlama | Microsoft Docs"
-ms.custom: 
+title: İşlev davranışını yorumlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _On_failure_
 - _Return_type_success_
@@ -20,16 +18,16 @@ f1_keywords:
 - _Check_return_
 - _Use_decl_annotations_
 ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
-caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 60cebdd015263ac5d05045e168d3f1063e0527a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9c061c12e7c34a67692af41b72ea7b04b6f06e07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-function-behavior"></a>İşlev Davranışını Yorumlama
 Ek açıklama olarak [işlev parametrelerini ve dönüş değerleri](../code-quality/annotating-function-parameters-and-return-values.md), tüm işlevi özelliklerini açıklama ekleyebilirsiniz.  
@@ -39,7 +37,7 @@ Ek açıklama olarak [işlev parametrelerini ve dönüş değerleri](../code-qua
   
 |Ek Açıklama|Açıklama|  
 |----------------|-----------------|  
-|`_Called_from_function_class_(name)`|Tek başına üzere tasarlanmamıştır; Bunun yerine, bir koşul ile kullanılacak olan `_When_` ek açıklama. Daha fazla bilgi için bkz: [belirtirken ve bir ek açıklama geçerli olduğu](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> `name` Parametredir de görünür rasgele bir dizeyi bir `_Function_class_` bazı işlevler bildiriminde ek açıklama.  `_Called_from_function_class_`şu anda ayrıştırılıyor işlevi kullanarak ek açıklama eklenmişse sıfır olmayan döndürür `_Function_class_` , aynı değere sahip `name`; Aksi halde, sıfır döndürür.|  
+|`_Called_from_function_class_(name)`|Tek başına üzere tasarlanmamıştır; Bunun yerine, bir koşul ile kullanılacak olan `_When_` ek açıklama. Daha fazla bilgi için bkz: [belirtirken ve bir ek açıklama geçerli olduğu](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> `name` Parametredir de görünür rasgele bir dizeyi bir `_Function_class_` bazı işlevler bildiriminde ek açıklama.  `_Called_from_function_class_` şu anda ayrıştırılıyor işlevi kullanarak ek açıklama eklenmişse sıfır olmayan döndürür `_Function_class_` , aynı değere sahip `name`; Aksi halde, sıfır döndürür.|  
 |`_Check_return_`|Dönüş değeri açıklama ekler ve arayan da incelemelisiniz durumları. Void bağlamda işlevi çağrıldıysa denetleyicisi bir hata bildirir.|  
 |`_Function_class_(name)`|`name` Kullanıcı tarafından belirlenen rasgele bir dizeyi bir parametredir.  Diğer ad alanlarını farklı bir ad alanı bulunmaktadır. İşlev, işlev işaretçisi veya — en usefully — bir işlev işaretçisi türü, bir veya daha fazla işlevi sınıflarına ait olarak atanabilir.|  
 |`_Raises_SEH_exception_`|Her zaman yapılan bir yapılandırılmış özel durum işleyicisi (SEH) özel durumu oluşturan işlevi açıklama ekler `_When_` ve `_On_failure_` koşulları. Daha fazla bilgi için bkz: [belirtirken ve bir ek açıklama geçerli olduğu](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
@@ -54,8 +52,8 @@ Ek açıklama olarak [işlev parametrelerini ve dönüş değerleri](../code-qua
 |----------------|-----------------|  
 |`_Always_(anno_list)`|Eşdeğer `anno_list _On_failure_(anno_list)`; diğer bir deyişle, ek açıklamalar `anno_list` işlevi başarılı olup olmadığına bakılmaksızın uygulayın.|  
 |`_On_failure_(anno_list)`|Kullanılacak yalnızca `_Success_` işlevi açıklama eklemek için de kullanılır — açıkça ya da örtük olarak aracılığıyla `_Return_type_success_` bir typedef üzerinde. Zaman `_On_failure_` bir işlevi parametresi veya dönüş değeri, her ek açıklama içinde ek açıklama varsa `anno_list` (saat) olarak kodlanmış sanki gibi davranır `_When_(!expr, anno)`, burada `expr` parametresi gerekli `_Success_` ek açıklama. Kapsanan uygulamasının buna `_Success_` sonrası koşulların tümü için geçerli değildir `_On_failure_`.|  
-|`_Return_type_success_(expr)`|Typedef için uygulanabilir. Tüm İşlevler, yazın ve açıkça bulunmayan o return gösterir `_Success_` sahip oldukları gibi açıklama `_Success_(expr)`. `_Return_type_success_`bir işlev veya işlev işaretçisi typedef kullanılamaz.|  
-|`_Success_(expr)`|`expr`bir rvalue döndüren bir ifadedir. Zaman `_Success_` ek açıklama varsa bir işlev bildirimi veya tanımı, her ek açıklama (`anno`) işlevi ve sonrası koşulu olarak kodlanmış gibi davranır `_When_(expr, anno)`. `_Success_` Ek açıklama parametreleri değil, bir işlev yalnızca üzerinde kullanılabilir veya dönüş türü. En çok bir olabilir `_Success_` bir işlev ve ek açıklamayı birinde olamaz `_When_`, `_At_`, veya `_Group_`. Daha fazla bilgi için bkz: [belirtirken ve bir ek açıklama geçerli olduğu](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
+|`_Return_type_success_(expr)`|Typedef için uygulanabilir. Tüm İşlevler, yazın ve açıkça bulunmayan o return gösterir `_Success_` sahip oldukları gibi açıklama `_Success_(expr)`. `_Return_type_success_` bir işlev veya işlev işaretçisi typedef kullanılamaz.|  
+|`_Success_(expr)`|`expr` bir rvalue döndüren bir ifadedir. Zaman `_Success_` ek açıklama varsa bir işlev bildirimi veya tanımı, her ek açıklama (`anno`) işlevi ve sonrası koşulu olarak kodlanmış gibi davranır `_When_(expr, anno)`. `_Success_` Ek açıklama parametreleri değil, bir işlev yalnızca üzerinde kullanılabilir veya dönüş türü. En çok bir olabilir `_Success_` bir işlev ve ek açıklamayı birinde olamaz `_When_`, `_At_`, veya `_Group_`. Daha fazla bilgi için bkz: [belirtirken ve bir ek açıklama geçerli olduğu](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

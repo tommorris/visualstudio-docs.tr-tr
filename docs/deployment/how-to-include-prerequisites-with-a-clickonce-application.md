@@ -1,23 +1,21 @@
 ---
-title: "Nasıl yapılır: ClickOnce uygulamasına Önkoşullar dahil | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: ClickOnce uygulamasına Önkoşullar dahil | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
-caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4fbab9bacc8c5272588a4b2dfe819650bfc6110f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 7283ce590770c1ed2d14ffb79ec71d594c8b21f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulamasına Önkoşullar Dahil Etme
 Önkoşul yazılım dağıtabilmeniz için önce bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama, ilk indirmeniz gerekir bu Önkoşullar geliştirme bilgisayarınıza yükleyicisi paketleri. Ne zaman bir uygulamayı yayımlamak ve seçin **Uygulamamla aynı konumda önkoşulları karşıdan**, yükleyici paketlerini, yoksa bir hata meydana gelir **paketleri** klasör.  
@@ -25,7 +23,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  .NET Framework için bir yükleyici paketi eklemek için bkz: [geliştiriciler için .NET Framework Dağıtım Kılavuzu](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
-##  <a name="Package"></a>Package.xml kullanarak bir yükleyici paketi eklemek için  
+##  <a name="Package"></a> Package.xml kullanarak bir yükleyici paketi eklemek için  
   
 1.  Dosya Gezgini'nde Aç **paketleri** klasör.  
   
@@ -38,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 4.  Bulun **adı** içeren öğeyi **http://go.microsoft.com/fwlink**ve URL'yi kopyalayın. Dahil **LinkId** bölümü.  
   
     > [!NOTE]
-    >  Yoksa **adı** ögesinin **http://go.microsoft.com/fwlink**, açık **Product.xml** dosya önkoşul kök klasöründe ve bulun  **fwlink** dize.  
+    >  Yoksa **adı** ögesinin **http://go.microsoft.com/fwlink**, açık **Product.xml** dosya önkoşul kök klasöründe ve bulun **fwlink** dize.  
   
     > [!IMPORTANT]
     >  Bazı ön koşullar (örneğin, 32-bit veya 64-bit sistemler için) birden çok yükleme paketine sahiptirler. Birden çok **adı** öğeleri içeren **fwlink**, bunların her biri için kalan adımları yinelemeniz gerekir.  

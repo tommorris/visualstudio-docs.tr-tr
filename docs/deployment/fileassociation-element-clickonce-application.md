@@ -1,12 +1,10 @@
 ---
-title: "&lt;fileAssociation&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs"
-ms.custom: 
+title: '&lt;fileAssociation&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - <fileAssociation> element [ClickOnce application manifest]
 - manifests [ClickOnce], fileAssociation element
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
-caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: bd5d7ed1a37923cefc4a6b7975610b6016fd0ae6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4da80f852526afa4692b7ecd6eefea3cc3c3de7e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; öğesi (ClickOnce uygulaması)
 Uygulamayla ilişkilendirilecek bir dosya uzantısı tanımlar.  
@@ -54,7 +52,7 @@ Uygulamayla ilişkilendirilecek bir dosya uzantısı tanımlar.
 ## <a name="remarks"></a>Açıklamalar  
  Bu öğe bir XML ad alanı referansı içermelidir "urn: şemaları-microsoft-com:clickonce.v1". Varsa `<fileAssociation>` öğesi kullanılırsa, sonra gelmelidir `<application>` , üst öğedeki [ \<derleme > öğesi](../deployment/assembly-element-clickonce-application.md).  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]dosya ilişkilendirmeleri üzerine yazmaz. Ancak, bir ClickOnce uygulamasını yalnızca geçerli kullanıcı için dosya uzantısı geçersiz kılabilirsiniz. Bu ClickOnce Uygulama kaldırıldıktan sonra dosya ilişkilendirme kullanıcı için ClickOnce siler ve makine başına ilişkilendirme yeniden etkindir.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dosya ilişkilendirmeleri üzerine yazmaz. Ancak, bir ClickOnce uygulamasını yalnızca geçerli kullanıcı için dosya uzantısı geçersiz kılabilirsiniz. Bu ClickOnce Uygulama kaldırıldıktan sonra dosya ilişkilendirme kullanıcı için ClickOnce siler ve makine başına ilişkilendirme yeniden etkindir.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği gösterilmektedir `fileAssociation` bildiriminde bir uygulamada kullanılarak dağıtılan bir metin düzenleyici uygulaması için [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Bu kod örneği de içeren [ \<Dosya > öğesi](../deployment/file-element-clickonce-application.md) gerektirdiği `defaultIcon` özniteliği.  

@@ -1,12 +1,10 @@
 ---
-title: "Oyun veya uygulama 3B varlıkları kullanma | Microsoft Docs"
-ms.custom: 
+title: Oyun veya uygulama 3B varlıkları kullanma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
 - VC.Project.MeshContentTask.ContentOutput
@@ -15,16 +13,16 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5f1e8888461026f734ac08c5ec3f23b10f310174
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0e5d8625ab7925327a773bdab3183834f7af1117
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Oyunlarda veya Uygulamalarda 3B Varlıklar Kullanma
 Bu makalede nasıl kullanabileceğiniz açıklanır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 3-b varlıkları işlemek ve derlemeleriniz içerir.  
@@ -32,7 +30,7 @@ Bu makalede nasıl kullanabileceğiniz açıklanır [!INCLUDE[vsprvs](../code-qu
  Araçları kullanıldıktan sonra [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 3-b varlıklar oluşturmak için uygulamanızda kullanmak için sonraki adım içerir. Ancak varlıklarınızı kullanabilmek için önce DirectX anlayabileceği bir biçimine dönüştürülmesi gerekir. Varlıklarınızı, dönüştürme yardımcı olması için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] derleme özelleştirmeleri oluşturmak üzere varlık her türdeki sağlar. Varlıklar, yapı, tüm yapmanız gereken eklemektir projenizi derleme özelleştirmeleri, varlıkları projenize ekleyin ve varlıkları doğru yapı özelleştirme kullanmak için yapılandırmak için yapılandırın. Bundan sonra uygulamanıza varlıklar yükleyin ve bunları oluşturarak ve diğer bir DirectX uygulamada gibi DirectX kaynakları doldurma kullanın.  
   
 ## <a name="configuring-your-project"></a>Projenizi yapılandırma  
- Yapılandırma, bir parçası olarak 3-b varlıklarınızı dağıtmadan önce [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dağıtmak istediğiniz varlıklar türleri hakkında bilmesi gerekir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]birçok ortak dosya türleri hakkında zaten bilir, ancak uygulamalar yalnızca belirli türdeki 3-b varlıklar kullandığından [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje bu tür dosyaları oluşturacaksınız varsayın değil. Size söyleyebilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kullanarak uygulamanızı varlıklar bu tür kullandığını *özelleştirmeleri yapı*— söyleyin dosyaları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] farklı dosya türleri kullanışlı şekilde işlemek nasıl — her varlık türü için sağlanan. Bu özelleştirmeler bir proje başına temelinde uygulandığından, yapmanız gereken tek şey uygun özelleştirmeleri projenize ekleyin.  
+ Yapılandırma, bir parçası olarak 3-b varlıklarınızı dağıtmadan önce [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dağıtmak istediğiniz varlıklar türleri hakkında bilmesi gerekir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] birçok ortak dosya türleri hakkında zaten bilir, ancak uygulamalar yalnızca belirli türdeki 3-b varlıklar kullandığından [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje bu tür dosyaları oluşturacaksınız varsayın değil. Size söyleyebilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kullanarak uygulamanızı varlıklar bu tür kullandığını *özelleştirmeleri yapı*— söyleyin dosyaları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] farklı dosya türleri kullanışlı şekilde işlemek nasıl — her varlık türü için sağlanan. Bu özelleştirmeler bir proje başına temelinde uygulandığından, yapmanız gereken tek şey uygun özelleştirmeleri projenize ekleyin.  
   
 #### <a name="to-add-the-build-customizations-to-your-project"></a>Derleme özelleştirmeleri projenize eklemek için  
   

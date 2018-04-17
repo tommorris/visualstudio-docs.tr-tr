@@ -1,13 +1,8 @@
 ---
-title: "Bir projedeki başvuruları yönetme | Microsoft Docs"
-ms.custom: 
-ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+title: Bir projedeki başvuruları yönetme
+ms.date: 04/11/2018
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
 - cs.ProjectPropertiesReferencePaths
@@ -24,24 +19,24 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: ef62d3ab0436ff8b20766f2ffe88506d73c8f03b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="managing-references-in-a-project"></a>Bir projedeki başvuruları yönetme
+# <a name="manage-references-in-a-project"></a>Bir projedeki başvuruları yönetme
 
 Dış bileşen karşı kod yazın veya hizmeti bağlı önce projenize önce bir başvuru içermelidir. Aslında Visual Studio bileşen veya hizmet bulmak gerekli bilgileri içeren bir proje dosyasındaki bir giriş başvurudur.
 
-Bir başvuru eklemek için Çözüm Gezgini'nde başvurular düğümünü sağ tıklatın ve seçin **Başvuru Ekle**. Daha fazla bilgi için bkz: [nasıl yapılır: başvuru ekleme veya kaldırma başvuru Yöneticisi'ni kullanarak](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Bir başvuru eklemek için sağ tıklayın **başvuruları** veya **bağımlılıkları** düğümünde **Çözüm Gezgini** ve **Başvuru Ekle**. Ayrıca proje düğümüne sağ tıklayın ve seçin **Ekle** > **başvuru**. Daha fazla bilgi için bkz: [nasıl yapılır: başvuru ekleme veya kaldırma](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
-![Visual C bir başvuru ekleyin&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
+![Visual C bir başvuru ekleyin&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 
-Aşağıdaki bileşenler ve hizmetlerle türlerini başvuru yapabilirsiniz:
+Aşağıdaki bileşenler ve hizmetlerle türlerini başvuru ekleyebilirsiniz:
 
 - .NET framework sınıf kitaplıkları veya derlemeler
 
@@ -81,11 +76,11 @@ Karar verirseniz, uygulamanız tarafından başvurulan uzantısı SDK desteklenm
 
 1. Visual Studio'yu yeniden başlatın ve uygulamanızı açın.
 
-1. Sağ **başvuruları** hata neden oldu ve proje düğümüne **Başvuru Ekle**.
+1. Sağ tıklayın **başvuruları** veya **bağımlılıkları** hata neden oldu ve proje düğümüne **Başvuru Ekle**.
 
 1. Tıklatın **Windows** sekmesini ve ardından **uzantıları** alt sekmesinde, eski uzantısı SDK'ları için onay kutusunun işaretini kaldırın ve yeni uzantı SDK'ları için onay kutularını denetleyin. **Tamam**'ı tıklatın.
 
-## <a name="adding-a-reference-at-design-time"></a>Tasarım zamanında bir başvuru ekleme
+## <a name="add-a-reference-at-design-time"></a>Tasarım zamanında bir başvuru ekleyin
 
 Projenizi derleme için bir başvuru yaptığınızda, Visual Studio derleme aşağıdaki konumlarda arar:
 
@@ -94,7 +89,9 @@ Projenizi derleme için bir başvuru yaptığınızda, Visual Studio derleme aş
 - Diğer aynı çözüme proje dizinlerde. (Bu derlemeler bulabilirsiniz **projeleri** sekmesi.)
 
 > [!NOTE]
-> Tüm projeleri mscorlib dolaylı bir başvuru içeriyor. Visual Basic projeleri için dolaylı bir başvuru içeren `Microsoft.VisualBasic`. Tüm projeleri için dolaylı bir başvuru içeren `System.Core`olsa bile `System.Core` başvuruları listesinden kaldırılır.
+> - Tüm projeleri mscorlib dolaylı bir başvuru içeriyor.
+> - Tüm projeleri için dolaylı bir başvuru içeren `System.Core`olsa bile `System.Core` başvuruları listesinden kaldırılır.
+> - Visual Basic projeleri için dolaylı bir başvuru içeren `Microsoft.VisualBasic`.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Paylaşılan bileşenler çalışma zamanında başvurular
 
@@ -104,9 +101,9 @@ GAC içinde kayıtlı bir özel bileşenine bir başvuru içeren bir uygulamayı
 
 Varsayılan olarak, <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> özelliği ayarlanmış **False** derleme veya bileşeni Genel Derleme Önbelleği'ya bir çerçeve bileşeni ise. Değer kümesine Aksi halde, **doğru**. Proje Proje başvuruları her zaman ayarlanır **doğru**.
 
-## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Başvuran bir proje veya farklı bir .NET Framework sürümünü hedefler derleme
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Bir proje veya farklı bir .NET Framework sürümünü hedefler derleme başvurusu
 
-Projeleri veya farklı bir .NET Framework sürümünü hedef derlemeleri başvuruda bulunan uygulamaları oluşturabilirsiniz. Örneğin, bir uygulama hedefleyen oluşturabilirsiniz [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)], hedefleyen bir derlemeyi başvuran [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. Önceki bir sürümünü hedefleyen bir projede oluşturursanız [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], bu proje bir proje veya daha yeni bir sürümü hedefler derleme için bir başvuru ayarlanamıyor.
+Projeleri veya farklı bir .NET Framework sürümünü hedef derlemeleri başvuruda bulunan uygulamaları oluşturabilirsiniz. Örneğin, .NET Framework 4. 5'i hedefleyen bir derlemeyi başvuran hedef .NET Framework 4.6, bir uygulama oluşturabilirsiniz. .NET Framework'ün önceki bir sürümünü hedefleyen bir projede oluşturursanız, bu proje bir proje veya daha yeni bir sürümü hedefler derleme için bir başvuru ayarlanamıyor.
 
 Daha fazla bilgi için bkz: [çoklu sürüm desteğine genel bakış](../ide/visual-studio-multi-targeting-overview.md).
 
@@ -125,5 +122,5 @@ Dosya başvuruları Visual Studio projesi bağlamı dışında derlemeleri doğr
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bozuk başvurularda sorun giderme](../ide/troubleshooting-broken-references.md)
-[nasıl yapılır: başvuru ekleme veya kaldırma başvuru Yöneticisi'ni kullanarak](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+- [Bozuk başvurularda sorun giderme](../ide/troubleshooting-broken-references.md)
+- [Nasıl yapılır: Başvuru Ekle Kaldır](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

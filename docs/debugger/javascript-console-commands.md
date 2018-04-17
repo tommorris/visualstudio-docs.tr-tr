@@ -1,28 +1,25 @@
 ---
-title: "JavaScript Konsolu komutları Visual Studio'da | Microsoft Docs"
-ms.custom: 
+title: JavaScript Konsolu komutları Visual Studio'da | Microsoft Docs
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
 - debugging JavaScript, console [UWP apps]
-caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 1f2d6f356d4e886488f4b6558c6cfb92d7b9c974
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: df4055790cf715b3a521b6ccc09d5c6920a47136
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio'da JavaScript Konsolu komutları
   
@@ -58,7 +55,7 @@ ms.lasthandoff: 01/19/2018
 |`msIsIndependentlyComposed(element)`|Web uygulamalarında kullanılır. JavaScript kullanarak UWP uygulamalarında desteklenmiyor.|Desteklenmez.|  
 |`profile(reportName)`|Web uygulamalarında kullanılır. JavaScript kullanarak UWP uygulamalarında desteklenmiyor.|Desteklenmez.|  
 |`profileEnd()`|Web uygulamalarında kullanılır. JavaScript kullanarak UWP uygulamalarında desteklenmiyor.|Desteklenmez.|  
-|`select(element)`|Belirtilen HTML seçer `element` içinde [DOM Gezgini](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
+|`select(element)`|Belirtilen HTML seçer `element` içinde [DOM Gezgini](../debugger/quickstart-debug-html-and-css.md).|Console.Select(element);|  
 |`time (name)`|İsteğe bağlı olarak tanımlanan bir süreölçer başlatır `name` parametresi. İle kullanıldığında `console.timeEnd`, hesaplar arasında geçen sürenin `time` ve `timeEnd`ve (milisaniye olarak ölçülür) sonucu konsolunu kullanarak gönderir `name` öneki olarak dize. Uygulama kodunun performansını ölçmek için Araçları'nı etkinleştirmek için kullanılır.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|İsteğe bağlı olarak tanımlanan bir süreölçer durdurur `name` parametresi. Bkz: `time` konsol komutu.|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Yığın izlemesi konsol penceresine gönderir. İzleme tam çağrı yığını dahildir ve dosya adı, satır numarası ve sütun numarası gibi bilgileri içerir.|`console.trace();`|  
@@ -69,7 +66,7 @@ ms.lasthandoff: 01/19/2018
   
 |Komut|Açıklama|Örnek|  
 |-------------|-----------------|-------------|  
-|`$0`, `$1`, `$2`, `$3`, `$4`|Belirtilen öğe konsol penceresine döndürür. `$0`DOM Gezgini'nde seçili öğeyi döndürür `$1` DOM Gezgini ve benzeri, dördüncü daha önce seçilen öğeyi kadar daha önce seçilen öğeyi döndürür.|$3|  
+|`$0`, `$1`, `$2`, `$3`, `$4`|Belirtilen öğe konsol penceresine döndürür. `$0` DOM Gezgini'nde seçili öğeyi döndürür `$1` DOM Gezgini ve benzeri, dördüncü daha önce seçilen öğeyi kadar daha önce seçilen öğeyi döndürür.|$3|  
 |`$(id)`|Kimliğine göre bir öğeyi döndürür Bu, için kısayol komuttur `document.getElementById(id)`, burada `id` öğesi kimliği temsil eden bir dize|`$("contenthost")`|  
 |`$$(selector)`|CSS Seçici söz dizimini kullanarak belirtilen Seçici eşleşen öğeleri bir dizi döndürür. Bu, için kısayol komuttur `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|İfade değerlendirme bağlamının belirtilen çerçeve penceresi için sayfanın varsayılan en üst düzey penceresinden değiştirmenize olanak tanır. Çağırma `cd()` en üst düzey penceresine bağlam olmadan parametrelerini döndürür.|`cd();`<br /><br /> `cd(myframe);`|  
@@ -89,7 +86,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>JavaScript Konsolu penceresinde, nesneler inceleniyor  
  JavaScript Konsolu penceresi kullandığınızda kapsamında olan herhangi bir nesne ile etkileşim kurabilirsiniz. Konsol penceresinde bir kapsam nesne incelemek için kullanın `console.log` , `console.dir`, ya da kodunuzdan diğer komutlar. Kodunuzda bir kesme noktası ayarlayarak kapsamda iken alternatif olarak, konsol penceresi nesnesinden etkileşim kurabilirsiniz (**kesme noktası** > **kesme noktası Ekle**).  
   
-##  <a name="ConsoleLog"></a>Console.log çıktı biçimlendirmesi  
+##  <a name="ConsoleLog"></a> Console.log çıktı biçimlendirmesi  
  Birden fazla bağımsız değişken geçirirseniz `console.log`, konsol bağımsız bir dizi olarak kabul eder ve çıktı birleştirme.  
   
 ```javascript  
@@ -103,18 +100,18 @@ console.log(user.first, user.last);
   
 ```  
   
- `console.log`Ayrıca, çıktı biçimlendirmek için "printf" değiştirme desenleri destekler. Değiştirme desenleri ilk bağımsız değişkeninde kullanırsanız, ek bağımsız değişkenler kullanıldıkları sırayla belirtilen desenleri değiştirmek için kullanılır.  
+ `console.log` Ayrıca, çıktı biçimlendirmek için "printf" değiştirme desenleri destekler. Değiştirme desenleri ilk bağımsız değişkeninde kullanırsanız, ek bağımsız değişkenler kullanıldıkları sırayla belirtilen desenleri değiştirmek için kullanılır.  
   
  Aşağıdaki değiştirme desenleri desteklenir:  
   
 -   %s - dize  
-     %i - integer  
+     %i - tamsayı  
      %d - tamsayı  
      %f - float  
      %o - nesnesi  
      %b - ikili  
      %x - onaltılık  
-     %e - exponent  
+     %e - üs  
   
  Değiştirme desenleri kullanmanın bazı örnekler şunlardır `console.log`:  
   

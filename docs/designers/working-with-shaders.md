@@ -1,23 +1,21 @@
 ---
-title: "Gölgelendiriciler ile çalışma | Microsoft Docs"
-ms.custom: 
+title: Gölgelendiriciler ile çalışma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
-caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bf96f1cdbdf8e3f995d8a1020a655b73d369cf7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d9fae275bde5ecfe5a2f359c82519d1e9a8f6eb6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-shaders"></a>Gölgelendiricilerle Çalışma
 Grafik tabanlı gölgelendirici Tasarımcısı'nda kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tasarımı özel gölgelendirici etkilerini için. DirectX tabanlı oyun veya uygulama bu gölgelendiriciler kullanabilirsiniz.  

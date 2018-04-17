@@ -1,23 +1,21 @@
 ---
-title: "İzlenecek yol: Köşe gölgeleme nedeniyle nesnelerin eksikliği | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Köşe gölgeleme nedeniyle nesnelerin eksikliği | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f374bbbdf30a80bdea70b789da5d5febbeee7a82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 226f6177b98aae8159de10f752cde37632dca901
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>İzlenecek Yol: Köşe Gölgeleme Nedeniyle Nesnelerin Eksikliği
 Bu kılavuzda nasıl kullanılacağı ortaya [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] köşe gölgelendirici aşamasında oluşan bir hata nedeniyle eksik bir nesne araştırmak için grafik tanılama araçları.  
@@ -124,7 +122,7 @@ Bu kılavuzda nasıl kullanılacağı ortaya [!INCLUDE[vsprvs](../../code-qualit
   
  Sorunu düzeltmek için değeri ayarlar kod satırı taşıma `m_marbleConstantBufferData.projection` yerel değişkenin değerini başlatır satırdan `projection`.  
   
- ![Düzeltilmiş C &#43; &#43; Kaynak kodu](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
+ ![Düzeltilmiş C&#43; &#43; kaynak kodu](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
  Kod düzelttikten sonra yeniden oluşturmak ve uygulamayı yeniden işleme sorun çözülür bulmak için çalıştırın:  
   

@@ -2,12 +2,9 @@
 title: Biçim belirticiler hata ayıklayıcı (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -28,17 +25,16 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: f1b6151350faa55b3e2918a45908111ab96edf6a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında C++ içindeki Biçim belirticileri
 İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **izleme** penceresi biçim belirticilerini kullanma.  
@@ -78,9 +74,9 @@ int main() {
 |c|tek bir karakter|0x0065, c|101 'e'|  
 |s|const char * dizesini|\<Konum > "hello world"|"hello world"|  
 |**sb**|const char * dizesini (tırnak işareti)|\<Konum > "hello world"|Merhaba Dünya|  
-|s8|UTF-8 dize|\<Konum > "UTF-8 Kahve fincanı â˜• olduğu"|"This is a UTF-8 coffee cup ☕"|
+|s8|UTF-8 dize|\<Konum > "UTF-8 Kahve fincanı â˜• olduğu"|"UTF-8 Kahve fincanı ☕ olduğu"|
 |**s8b**|UTF-8 dize (tırnak işareti)|\<Konum > "hello world"|Merhaba Dünya|  
-|su|Unicode (UTF-16 kodlamasını) dizesi|\<Konum > L "hello world"|L "hello world"<br /><br /> u"hello world"|  
+|Su|Unicode (UTF-16 kodlamasını) dizesi|\<Konum > L "hello world"|L "hello world"<br /><br /> U "hello world"|  
 |Sub|Unicode (UTF-16 kodlamasını) dizesi (tırnak işareti)|\<Konum > L "hello world"|Merhaba Dünya|  
 |bstr|BSTR dizesi|\<Konum > L "hello world"|L "hello world"|  
 |env|Ortam öbeği (çift null sonlandırılmış dize)|\<Konum > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
@@ -88,8 +84,8 @@ int main() {
 |**s32b**|UTF-32 dize (tırnak işareti)|\<Konum > U "hello world"|Merhaba Dünya|  
 |**tr**|enum|Saturday(6)|Cumartesi|  
 |**hv**|İşaretçi türü - Denetlenmekte olan işaretçi değeri, dizi yığın ayırma sonucunu örneğin olduğunu gösterir `new int[3]`.|\<Konum > {\<ilk üye >}|\<Konum > {\<ilk üye >, \<ikinci üye >,...}|  
-|**na**|Bir nesne işaretçinin bellek adresi gizler.|\<Konum >, {üye = değer...}|{member=value...}|  
-|**nd**|Türetilen sınıflar yoksayılıyor yalnızca temel sınıf bilgileri görüntüler|`(Shape*) square` taban sınıfı içerir ve türetilmiş sınıf bilgileri|Görüntüler yalnızca temel sınıf bilgileri|  
+|**na**|Bir nesne işaretçinin bellek adresi gizler.|\<Konum >, {üye = değer...}|{üye = değer...}|  
+|**ND**|Türetilen sınıflar yoksayılıyor yalnızca temel sınıf bilgileri görüntüler|`(Shape*) square` taban sınıfı içerir ve türetilmiş sınıf bilgileri|Görüntüler yalnızca temel sınıf bilgileri|  
 |İK|HRESULT veya Win32 hata kodu. (Bu belirleyici bu gibi durumlarda gerekli değil için hata ayıklayıcı şimdi HRESULTs otomatik olarak kodunu çözer.|S_OK|S_OK|  
 |WC|Pencere sınıfı bayrağı|0x0010|WC_DEFAULTCHAR|  
 |WM|Windows ileti numarası|16|WM_CLOSE|  
@@ -112,17 +108,17 @@ int main() {
   
 |Belirleyici|Biçimi|Özgün izleme değeri|Görüntülenen değeri|  
 |---------------|------------|--------------------------|---------------------|  
-|**d,i**|imzalanmış ondalık tamsayı|0xF000F065|-268373915|  
+|**d, t**|imzalanmış ondalık tamsayı|0xF000F065|-268373915|  
 |**u**|İmzasız ondalık tamsayı|0x0065|101|  
 |o|İmzasız sekizlik tamsayı|0xF065|0170145|  
-|x,X|onaltılık tamsayı|61541|0x0000f065|  
-|**l, h**|long or short prefix for: d, i, u, o, x, X|00406042|0x0c22|  
+|x, X|onaltılık tamsayı|61541|0x0000f065|  
+|**l, h**|uzun veya kısa önekini: d, i, u, x, o|00406042|0x0c22|  
 |**f**|kayan nokta imzalandı|(3./2.), f|1.500000|  
 |**e**|İmzalı bilimsel gösterim|(3.0/2.0)|1.500000e+000|  
 |**g**|kayan nokta veya bilimsel gösterim imzalı, hangisi daha kısa imzalanır|(3.0/2.0)|1,5|  
 |c|tek bir karakter|\<Konum >|101 'e'|  
 |s|const char *|\<Konum >|"hello world"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|\<Konum >|L "hello world"|  
+|Su|const wchar_t*<br /><br /> const char16_t\*|\<Konum >|L "hello world"|  
 |Sub|const wchar_t*<br /><br /> const char16_t\*|\<Konum >|Merhaba Dünya|  
 |s8|const char *|\<Konum >|"hello world"|  
 |İK|HRESULT veya Win32 hata kodu. (Bu belirleyici bu gibi durumlarda gerekli değil için hata ayıklayıcı şimdi HRESULTs otomatik olarak kodunu çözer.|S_OK|S_OK|  
@@ -139,7 +135,7 @@ int main() {
 |**m**|Onaltılık, 16 bayt ardından tarafından 16 ASCII karakterleri|0x0012ffac|0X0012FFAC B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
 |**mb**|Onaltılık, 16 bayt ardından tarafından 16 ASCII karakterleri|0x0012ffac|0X0012FFAC B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
 |**mw**|8 sözcükler|0x0012ffac|0X0012FFAC 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
-|**md**|4 doublewords|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
+|**MD**|4 doublewords|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 quadwords|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2-bayt karakter (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
@@ -148,4 +144,4 @@ int main() {
   
 |Belirleyici|Biçimi|İfade|Görüntülenen değeri|  
 |---------------|------------|----------------|---------------------|  
-|n|ondalık tamsayı|pBuffer[32]|Görüntüler `pBuffer` 32 öğesi dizi olarak.|
+|n|ondalık tamsayı|pBuffer [32]|Görüntüler `pBuffer` 32 öğesi dizi olarak.|

@@ -1,29 +1,25 @@
 ---
 title: BP_LOCATION_TYPE | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION_TYPE
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 919cef75834c6606cf4980b3a0e861302f29b73a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: db35e354b2cfbe91b9c6041dc6239d2dfd2531f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 Kesme noktası bir kesme noktası isteği için konum türünü belirtir.  
@@ -122,7 +118,7 @@ public enum enum_BP_LOCATION_TYPE {
   
  Kesme noktası konum türü bir kesme noktası türü ve konumu türü oluşur. Bu bir kesme noktası konum türü hiçbir zaman yalnızca bir kesme noktası türü olduğu anlamına gelir (örneğin, `BPT_CODE`) veya bir konum yazın (örneğin, `BPLT_FILE_LINE`). Bu numaralandırma şu anda desteklenen tüm kesme noktası konumu türleri için önceden tanımlanmış sabitleri dahil edilen (`BPLT_CODE_FILE_LINE` aracılığıyla `BPLT_DATA_STRING`).  
   
- `BPT_CODE`ve `BPT_DATA` üyeleri olan [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) numaralandırması.  
+ `BPT_CODE` ve `BPT_DATA` üyeleri olan [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) numaralandırması.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Başlık: msdbg.h  

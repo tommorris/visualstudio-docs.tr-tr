@@ -1,12 +1,9 @@
 ---
-title: "Hata: Güvenlik denetimi başarısız IIS Yönetici Hizmeti yanıt vermediğinden | Microsoft Docs"
-ms.custom: 
+title: 'Hata: Güvenlik denetimi başarısız IIS Yönetici Hizmeti yanıt vermediğinden | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.iis_not_responding
@@ -17,17 +14,16 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debugger, Web application errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b96d9e1396933519da71e93bac075ee51af001
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 87a0379848f17ebe875e8680e95948e9d15e0671
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Hata: IIS Yönetici Hizmeti Yanıt Vermediğinden Güvenlik Denetimi Başarısız
 IIS Yönetici Hizmeti yanıt vermiyor bu hata oluşur. Bu, genellikle IIS yükleme ile ilgili bir sorun olduğunu gösterir. İlk olarak, hizmet kullanarak çalıştığını doğrulayın **Hizmetleri** öğesinden aracı **Yönetimsel Araçlar**.  
@@ -36,7 +32,7 @@ IIS Yönetici Hizmeti yanıt vermiyor bu hata oluşur. Bu, genellikle IIS yükle
   
 -   Kullanarak IIS'yi yeniden **Program Ekle veya Kaldır** Denetim Masası.  
   
--   veya  
+-   -veya-  
   
 -   IIS, Program Ekle veya Kaldır Denetim Masası'nı kullanarak makinenizden kaldırın. IIS kaldırdınız ve hala sorunları varsa, kayıt defterini denetleyin ve bu anahtar artık var olduğundan emin olun:  
   
@@ -44,7 +40,7 @@ IIS Yönetici Hizmeti yanıt vermiyor bu hata oluşur. Bu, genellikle IIS yükle
     HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}  
     ```  
   
-     veya  
+     -veya-  
   
 -   Yönetimsel Araçlar Denetim Masası'nı kullanarak IIS Yönetim hizmeti devre dışı bırakın. Bu IIS makinenizde devre dışı bırakır.  
   

@@ -1,12 +1,10 @@
 ---
-title: "&lt;bağımlılık&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs"
-ms.custom: 
+title: '&lt;bağımlılık&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - manifests [ClickOnce], dependency element
 - <dependency> element [ClickOnce application manifest]
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
-caps.latest.revision: "34"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 7c3319661a4c0df298cd844c4d71c6855cad818c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: be31fafb64b44d6d98917edb11f82a69fbc41c76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;bağımlılık&gt; öğesi (ClickOnce uygulaması)
 Uygulama için gerekli olan bir platform veya derleme bağımlılığı tanımlar.  
@@ -98,7 +96,7 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılığı tanımla
 ### <a name="dependentos"></a>dependentOS  
  İsteğe bağlı. İçeren `osVersionInfo` öğesi. `dependentOS` Ve `dependentAssembly` öğeleri karşılıklı olarak birbirini dışlar: birini veya diğerini için bulunmalıdır bir `dependency` öğesi, ancak ikisini birden değil.  
   
- `dependentOS`Aşağıdaki öznitelikleri destekler.  
+ `dependentOS` Aşağıdaki öznitelikleri destekler.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
@@ -124,7 +122,7 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılığı tanımla
 ### <a name="dependentassembly"></a>dependentAssembly  
  İsteğe bağlı. İçeren `assemblyIdentity` öğesi. `dependentOS` Ve `dependentAssembly` öğeleri karşılıklı olarak birbirini dışlar: birini veya diğerini için bulunmalıdır bir `dependency` öğesi, ancak ikisini birden değil.  
   
- `dependentAssembly`Aşağıdaki özniteliklere sahiptir.  
+ `dependentAssembly` Aşağıdaki özniteliklere sahiptir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
@@ -140,7 +138,7 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılığı tanımla
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
 |`name`|Gerekli. Uygulamanın adını tanımlar.|  
-|`version`|Gerekli. Uygulamanın sürüm numarasını şu biçimde belirtir:`major.minor.build.revision`|  
+|`version`|Gerekli. Uygulamanın sürüm numarasını şu biçimde belirtir: `major.minor.build.revision`|  
 |`publicKeyToken`|İsteğe bağlı. Son 8 baytını temsil eden bir 16 karakter onaltılık dize belirtir `SHA-1` karma altında uygulama imzalanan derleme veya ortak anahtar değeri. Kataloğu imzalamak için kullanılan ortak anahtar 2048 bit veya daha fazla olmalıdır.|  
 |`processorArchitecture`|İsteğe bağlı. İşlemci belirtir. Geçerli değerler `x86` 32-bit Windows için ve `I64` 64-bit Windows için.|  
 |`language`|İsteğe bağlı. Örneğin EN-US, derlemenin iki parçalı dil kodlarını tanımlar.|  
@@ -148,7 +146,7 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılığı tanımla
 ### <a name="hash"></a>hash  
  `hash` İsteğe bağlı bir alt öğedir `assemblyIdentity` öğesi. `hash` Öğesi özniteliklere sahip değildir.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]bir uygulamadaki tüm dosyaların algoritmik bir karma dosyaların hiçbiri dağıtımdan sonra değişmediğinden emin olmak için güvenlik denetimi olarak kullanır. Varsa `hash` öğesi dahil değildir, bu onay işlemi gerçekleştirilmez. Bu nedenle, atlama `hash` öğesi önerilmez.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bir uygulamadaki tüm dosyaların algoritmik bir karma dosyaların hiçbiri dağıtımdan sonra değişmediğinden emin olmak için güvenlik denetimi olarak kullanır. Varsa `hash` öğesi dahil değildir, bu onay işlemi gerçekleştirilmez. Bu nedenle, atlama `hash` öğesi önerilmez.  
   
 ### <a name="dsigtransforms"></a>dsig:TRANSFORMS  
  `dsig:Transforms` , Gerekli bir alt öğedir `hash` öğesi. `dsig:Transforms` Öğesi özniteliklere sahip değildir.  

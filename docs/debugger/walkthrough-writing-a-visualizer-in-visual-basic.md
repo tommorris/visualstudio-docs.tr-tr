@@ -1,12 +1,10 @@
 ---
 title: "İzlenecek yol: Visual Basic'de Görselleştirici yazma | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
 ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7ad673736334daec79860b9832a056c17781a082
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7076e85701551e884c3126c7acd235b45a81aff5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>İzlenecek Yol: Visual Basic'de Görselleştirici Yazma
 Bu kılavuzu kullanarak basit Görselleştirici yazma gösterilmektedir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Bu kılavuzda oluşturacak Görselleştirici bir Windows Forms ileti kutusu kullanarak bir dize içeriğini görüntüler. Bu basit bir dize Görselleştirici nasıl görselleştiriciler diğer veri türleri için daha uygun projelerinize oluşturabilirsiniz göstermek için basit bir örnektir.  
@@ -58,7 +56,7 @@ Bu kılavuzu kullanarak basit Görselleştirici yazma gösterilmektedir [!INCLUD
 2.  Ad Class1.vb'ye DebuggerSide.vb gibi anlamlı bir şey değiştirin.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]otomatik olarak yeni dosya adı ile eşleşmesi için DebuggerSide.vb sınıfı bildiriminde değiştirir.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otomatik olarak yeni dosya adı ile eşleşmesi için DebuggerSide.vb sınıfı bildiriminde değiştirir.  
   
 3.  İçinde **Çözüm Gezgini**, sağ **My ilk Görselleştirici**ve kısayol menüsünde **Başvuru Ekle**.  
   
@@ -90,7 +88,7 @@ Bu kılavuzu kullanarak basit Görselleştirici yazma gösterilmektedir [!INCLUD
     Inherits DialogDebuggerVisualizer  
     ```  
   
- `DialogDebuggerVisualizer`bir Özet yöntem, sahip `Show`, geçersiz kılmanız gerekir.  
+ `DialogDebuggerVisualizer` bir Özet yöntem, sahip `Show`, geçersiz kılmanız gerekir.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>DialogDebuggerVisualizer.Show yöntemi geçersiz kılmak için  
   

@@ -1,12 +1,10 @@
 ---
-title: "ASP.NET uygulamaları için hata ayıklamayı etkinleştirme | Microsoft Docs"
+title: ASP.NET uygulamaları için hata ayıklamayı etkinleştirme | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 09/21/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - Web.config configuration file, debug mode
 - debugging [Visual Studio], ASP.NET
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
-caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 397dbe26aafd7ec385e6afeb11b3ca19155dfbcc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Visual Studio ASP.NET uygulamalarında hata ayıklama
 
@@ -38,7 +36,7 @@ Bu konudaki yönergeleri izleyin, gerekir:
 
 - IIS, Visual Studio 2012 ve sonraki sürümlerinde varsayılan olarak bulunan Express
 
-    veya
+    -veya-
 
 - Yerel bir IIS web doğru bir şekilde yapılandırıldığından ve ASP.NET uygulaması hatasız çalıştırabilirsiniz sunucusu (sürüm 8.0 veya daha yüksek).
 
@@ -142,7 +140,7 @@ Yerel IIS web sunucusu kullanıyorsanız, aşağıdaki adımları izleyin.
     > [!NOTE]
     > Windows Server 2008 R2 kullanıyorsanız, bunun yerine bu komutu kullanarak ASP.NET 4'ü yükleyin:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Açık **Internet Information Services (IIS) Yöneticisi**. (Sunucu Yöneticisi'nin sol bölmesinde, seçin **IIS**. Sunucuya sağ tıklayın ve seçin **Internet Information Services (IIS) Yöneticisi'ni**.)
 

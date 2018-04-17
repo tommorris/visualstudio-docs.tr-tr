@@ -1,26 +1,24 @@
 ---
-title: "Geri arama işlevleri IDE tarafından uygulanan | Microsoft Docs"
-ms.custom: 
+title: Geri arama işlevleri IDE tarafından uygulanan | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3c1845a82947286800145ff898f8f49f8c3c2477
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ffdcc7d92770f486f9a345acf14e12e14214a2b1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE tarafından uygulanan geri arama işlevleri
 Bir birleşik son kullanıcı deneyimi sağlamak için ve mümkün olduğunca sorunsuz olarak tümleşik geliştirme ortamı (IDE) ile tümleştirme yapmak için kaynak denetim eklentisi IDE tarafından uygulanan geri arama işlevleri kullanabilirsiniz. Eklenti bu işlevler IDE bilgi aktarmak için bir kaynak denetimi işlemi sırasında uygun zamanlarda çağırabilirsiniz; IDE yerel kullanıcı Arabiriminde katıştırılmış öğeleri olarak bu bilgiler daha sonra görüntüleyebilirsiniz. Kullanıcı Bu senaryoda eklenti kendi UI işe varsa daha az parçalanmış deneyimi sahip değil.  

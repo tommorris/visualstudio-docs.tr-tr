@@ -1,11 +1,8 @@
 ---
-title: "Verileri veritabanına kaydetmek | Microsoft Docs"
-ms.custom: 
+title: Verileri veritabanına kaydetmek | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - datasets [Visual Basic], validating data
 - data validation, datasets
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 733a495c7f6865e9973f5288c9c324baef7f1d8e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1e7d2b27f0d90677d99d3f0fbc434493fdc7da83
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="save-data-back-to-the-database"></a>Veritabanına veri kaydetme
 Veri kümesi, veri bir bellek içi kopyasıdır. Bu verileri değiştirirseniz, bu değişiklikleri veritabanına kaydetmek için iyi bir uygulamadır. Bu üç yöntemden birini yapın:  
@@ -158,7 +155,7 @@ Aşağıdaki tabloda olası değerlerini ayrıntıları <xref:System.Data.DataRo
   
  Kullanarak değiştirilen kayıt kümelerine oluşturabilirsiniz `GetChanges` veri tablosunun yöntemi (<xref:System.Data.DataTable.GetChanges%2A>) veya veri kümesinin (<xref:System.Data.DataSet.GetChanges%2A>) kendisi. Veri tablosu için yöntemini çağırırsanız, yalnızca değiştirilen kayıtları tabloyla kopyasını döndürür. Veri kümesine yöntemini çağırırsanız, benzer şekilde, yalnızca değiştirilen kayıtları sahip yeni bir veri kümesi içinde alırsınız.  
   
- `GetChanges`tek başına, tüm kayıtlar döndürür. Buna karşılık, geçirerek istenen <xref:System.Data.DataRowState> bir parametre olarak `GetChanges` yöntemi, hangi alt istediğiniz değiştirilen kayıt kümesinin belirtebilirsiniz: yeni kayıtlar, silinmek üzere işaretlenmiş kayıtları ayrılmış kayıtları eklenemez veya kayıtları değiştirilemez.  
+ `GetChanges` tek başına, tüm kayıtlar döndürür. Buna karşılık, geçirerek istenen <xref:System.Data.DataRowState> bir parametre olarak `GetChanges` yöntemi, hangi alt istediğiniz değiştirilen kayıt kümesinin belirtebilirsiniz: yeni kayıtlar, silinmek üzere işaretlenmiş kayıtları ayrılmış kayıtları eklenemez veya kayıtları değiştirilemez.  
   
  Değiştirilen kayıtların bir alt kümesini alma işleme için başka bir bileşen kayıtları göndermek istediğinizde kullanışlıdır. Tüm veri kümesinin göndermek yerine yalnızca bir bileşeni gerektiren kayıtları alarak diğer bileşeniyle iletişim ek yükü azaltabilir.   
   

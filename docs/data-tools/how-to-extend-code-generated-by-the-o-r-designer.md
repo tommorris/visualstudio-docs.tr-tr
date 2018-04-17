@@ -1,23 +1,20 @@
 ---
-title: "Nasıl yapılır: O-R tasarımcısı tarafından oluşturulan kod genişletmek | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: O-R tasarımcısı tarafından oluşturulan kod genişletmek | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: e5b38288cc8d0d58e18e4aea3de2b80470783ea6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 7d1c8df8dfeb6f6aec7acaf0545f348e81b97192
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Nasıl yapılır: O/R tasarımcısı tarafından oluşturulan kod genişletme
 Tarafından oluşturulan kodu [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] sınıflar ve diğer nesnelere Tasarımcı yüzey üzerinde değişiklik yapıldığında yeniden oluşturur. Tasarımcı kodu yeniden oluşturur, bu kod yeniden oluşturma işlemi nedeniyle, oluşturulan kod eklediğiniz herhangi bir kod genellikle üzerine yazılır. [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Yazılmaz kodu parçalı sınıf dosyaları Ekle oluşturma yeteneği sağlar. Bir örneği tarafından oluşturulan kodu kendi kodunuzu ekleme [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] veri doğrulama LINQ-SQL (varlık) sınıfları için ekleme. Bilgi için bkz: [nasıl yapılır: sınıflar için doğrulama ekleme](../data-tools/how-to-add-validation-to-entity-classes.md).  

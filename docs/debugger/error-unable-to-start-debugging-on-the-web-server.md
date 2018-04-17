@@ -1,12 +1,9 @@
 ---
-title: "Hata: Web sunucusunda hata ayıklama başlatılamıyor | Microsoft Docs"
-ms.custom: 
+title: 'Hata: Web sunucusunda hata ayıklama başlatılamıyor | Microsoft Docs'
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
@@ -27,17 +24,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 459df1ca9ffed246116c71adac8a38039b6602ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Hata: Web Sunucusunda Hata Ayıklama Başlatılamıyor
 
@@ -59,58 +55,58 @@ Bu hata genellikle, bir güncelleştirme, uygulama havuzları, bir IIS sıfırla
 - [Hata ayıklayıcıyı uzak bilgisayara bağlanamıyor](#cannot_connect)
 - [Bkz. ortak yapılandırma hataları için Yardım. Web sayfası hata ayıklayıcı dışında çalışan daha fazla bilgi sağlayabilir.](#see_help)
 
-## <a name="IISlist"></a>IIS başlatma eşleşen bir Web sitesi listesinde değil URL'si
+## <a name="IISlist"></a> IIS başlatma eşleşen bir Web sitesi listesinde değil URL'si
 
 - Yönetici olarak Visual Studio'yu yeniden başlatın ve hata ayıklama yeniden deneyin. (Bazı ASP.NET hata ayıklama senaryoları yükseltilmiş ayrıcalıklar gerektirir.)
 
     Her zaman Visual Studio kısayol simgesini sağ tıklayarak bir yönetici olarak çalıştırmak için Visual Studio yapılandırabilirsiniz seçme **Özellikler > Gelişmiş**ve her zaman bir yönetici olarak çalıştır seçeneğini belirleyin.
 
-## <a name="web_server_config"></a>Web sunucusu doğru yapılandırılmamış
+## <a name="web_server_config"></a> Web sunucusu doğru yapılandırılmamış
 
 - Bkz: [hata: web sunucusu doğru yapılandırılmamış](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
-## <a name="unabletoconnect"></a>Web sunucusu için bağlantı kurulamıyor
+## <a name="unabletoconnect"></a> Web sunucusu için bağlantı kurulamıyor
 
 - Visual Studio ile Web sunucusu aynı makine üzerinde çalışan ve kullanarak hata ayıklama olduğunuz **F5** (yerine **ekleme işlemi için**)? Proje özelliklerini açın ve proje doğru Web sunucusuna bağlanmak ve URL başlatmak için yapılandırıldığından emin olun. (Açık **Özellikler > Web > sunucuları** veya **Özellikler > hata ayıklama** proje türüne bağlı olarak. Web Forms projesi için açık **özellik sayfaları > Başlangıç Seçenekleri > sunucu**.)
 
 - Aksi takdirde, uygulama havuzunu yeniden başlatın ve IIS'yi sıfırlayın. Daha fazla bilgi için bkz: [IIS yapılandırmanızı denetleyin](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="webservertimeout"></a>Web sunucu zamanında yanıt vermedi
+## <a name="webservertimeout"></a> Web sunucu zamanında yanıt vermedi
 
 - IIS'yi sıfırlayın ve hata ayıklama yeniden deneyin. Hata ayıklayıcı birden çok IIS işlemine bağlı; sıfırlama bunları sonlandırır. Daha fazla bilgi için bkz: [IIS yapılandırmanızı denetleyin](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="msvsmon"></a>Microsoft visual studio uzaktan hata ayıklama monitor(msvsmon.exe) uzak bilgisayar üzerinde çalışıyor görünmüyor
+## <a name="msvsmon"></a> Microsoft visual studio uzaktan hata ayıklama monitor(msvsmon.exe) uzak bilgisayar üzerinde çalışıyor görünmüyor
 
 - Uzak makinede ayıkladığınız durumunda olduğundan emin olun [yüklenir ve uzaktan hata ayıklayıcı çalıştıran](../debugger/remote-debugging.md). İleti bir güvenlik duvarı değinmektedir emin olun [düzeltmek güvenlik duvarı bağlantı noktaları](../debugger/remote-debugger-port-assignments.md) özellikle bir üçüncü taraf güvenlik duvarı kullanıyorsanız, açıktır.
 - HOSTS dosyasını kullanıyorsanız, doğru bir şekilde yapılandırıldığından emin olun. Örneğin, kullanarak hata ayıklama **F5** (yerine **ekleme işlemi için**), ana proje özelliklerinizi olduğu gibi aynı proje URL'sini içermesi gerekir dosya **Özellikler > Web > sunucuları**  veya **Özellikler > hata ayıklama**proje türüne bağlı olarak.
 
-## <a name="server_error"></a>Uzak sunucu bir hata döndürdü
+## <a name="server_error"></a> Uzak sunucu bir hata döndürdü
 
 Denetleyin, [IIS günlük dosyasına](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) hata kodlarını ve ek bilgiler ve bu IIS 7 için [blog gönderisi](https://blogs.iis.net/tomkmvp/troubleshoot-a-403).
 
 Ayrıca, yaygın hata kodları ve bazı öneriler şunlardır.
 - (403) Yasak. Bu hatanın birçok olası nedenleri vardır, günlük dosyası ve web sitesi için IIS güvenlik ayarlarını kontrol edin. Sunucunun web.config içerdiğinden emin olun `debug=true` derleme öğesindeki. Web uygulaması klasörünüze doğru izinlere sahip olduğunu ve uygulama havuzu yapılandırması (parola değişmiş olabilir) doğru olduğundan emin olun. Bkz: [IIS yapılandırmanızı denetleyin](#vxtbshttpservererrorsthingstocheck). Bu ayarları zaten doğru olduğundan ve yerel olarak hata ayıklama yaptığınız, ayrıca doğru sunucu türünü ve URL bağlanan doğrulayın (içinde **Özellikler > Web > sunucuları** veya **Özellikler > hata ayıklama**, proje türüne bağlı olarak).
 - (503) sunucu kullanılamıyor. Uygulama havuzu bir hata veya yapılandırma değişikliği nedeniyle durdurulmuş. Uygulama havuzunu yeniden başlatın.
-- (404) Not Found. Uygulama havuzu ASP.NET doğru sürümü için yapılandırıldığından emin olun.
+- (404) bulunamadı. Uygulama havuzu ASP.NET doğru sürümü için yapılandırıldığından emin olun.
 
-## <a name="aspnet"></a>ASP.NET hata ayıklama başlatılamıyor
+## <a name="aspnet"></a> ASP.NET hata ayıklama başlatılamıyor
 
 - Uygulama havuzunu yeniden başlatın ve IIS'yi sıfırlayın. Daha fazla bilgi için bkz: [IIS yapılandırmanızı denetleyin](#vxtbshttpservererrorsthingstocheck).
 - URL yeniden yazdırmaya yapıyorsanız, bir URL yeniden yazdırmaya ile temel bir web.config sınayın. Bkz: **Not** hakkında URL yeniden yazma modülünde [IIS yapılandırmanızı denetleyin](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="cannot_connect"></a>Hata ayıklayıcıyı uzak bilgisayara bağlanamıyor
+## <a name="cannot_connect"></a> Hata ayıklayıcıyı uzak bilgisayara bağlanamıyor
 
 Yerel olarak hata ayıklama yaptığınız, Visual Studio uzaktan hata ayıklayıcı 64-bit sürümü 64-bit uygulamalar hata ayıklamak için kullanan 32 bit bir uygulama olduğundan bu hata oluşabilir. Proje özelliklerini açın ve proje doğru Web sunucusu ve URL bağlanmak için yapılandırıldığından emin olun. (Açık **Özellikler > Web > sunucuları** veya **Özellikler > hata ayıklama** proje türüne bağlı olarak.)
 
 Ayrıca, bir ana bilgisayar dosyası kullanıyorsanız, doğru bir şekilde yapılandırıldığından emin olun. Örneğin, ana proje özelliklerinizi olduğu gibi aynı proje URL'sini içermesi gerekir dosya **Özellikler > Web > sunucuları** veya **Özellikler > hata ayıklama**proje türüne bağlı olarak.
 
-## <a name="see_help"></a>Bkz. ortak yapılandırma hataları için Yardım. Web sayfası hata ayıklayıcı dışında çalışan daha fazla bilgi sağlayabilir.
+## <a name="see_help"></a> Bkz. ortak yapılandırma hataları için Yardım. Web sayfası hata ayıklayıcı dışında çalışan daha fazla bilgi sağlayabilir.
 
 - Visual Studio ile Web sunucusu aynı makinede çalışan? Proje özelliklerini açın ve proje doğru Web sunucusuna bağlanmak ve URL başlatmak için yapılandırıldığından emin olun. (Açık **Özellikler > Web > sunucuları** veya **Özellikler > hata ayıklama** proje türüne bağlı olarak.)
 
 - İşe veya uzaktan hata ayıklama yaptığınız, izleyeceğiniz adımlar [IIS yapılandırmanızı denetleyin](#vxtbshttpservererrorsthingstocheck).
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a>IIS yapılandırmanızı denetleyin
+##  <a name="vxtbshttpservererrorsthingstocheck"></a> IIS yapılandırmanızı denetleyin
 
 Burada sorunu gidermek için ayrıntılı adımlar aldıktan sonra ve hata ayıklamak yeniden denemeden önce IIS sıfırlamanız gerekebilir. Yükseltilmiş bir komut istemi'ni açıp yazarak bunu, `iisreset`. 
 

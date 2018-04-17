@@ -1,12 +1,10 @@
 ---
-title: "Ürün ve paket şema başvurusu | Microsoft Docs"
-ms.custom: 
+title: Ürün ve paket şema başvurusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -25,16 +23,16 @@ helpviewer_keywords:
 - package files [ClickOnce]
 - Windows Installer, bootstrapper elements
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
-caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 149dd62b38bdcb0863d30f4280b35950361f58cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c4df5288f05f14c146c934c8d9d5b916a4bb2fc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="product-and-package-schema-reference"></a>Ürün ve Paket Şema Başvurusu
 A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML bildirim bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. Dış bağımlılıkları örneklerindendir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ve Microsoft Data Access Components (MDAC). Bir paket dosyası ürün dosyasına benzer ancak bir bağımlılığın yerelleştirilmiş derlemeler, lisans sözleşmelerini ve belgeler gibi kültüre bağlı bileşenlerini yüklemek için kullanılır.  
@@ -54,7 +52,7 @@ A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML b
 ## <a name="remarks"></a>Açıklamalar  
  Paket şema Setup.exe, kendi küçük sabit kodlanmış mantığı içeren MS Build önyükleme görevi tarafından oluşturulan bir saplama programını tarafından kullanılır. Şema yükleme işleminin tüm yönlerini sürücüleri.  
   
- `InstallChecks`testler o setup.exe belirli bir paket varlığını gerçekleştirmeniz gerekir. `PackageFiles`Tüm Kurulum işlemi yüklemek için belirli bir test başarısız olması olabilir paketler listeler. Her komut giriş komutları altında tarafından açıklanan testleri birini yürütür `InstallChecks`ve belirten `PackageFile` çalıştırmak için test başarısız olması. Kullanabileceğiniz `Strings` ürün adları ve hata iletileri, böylece uygulamanız herhangi bir sayıda diller için yüklemek için tek bir yükleme ikili kullanabilirsiniz yerelleştirmeye öğesi.  
+ `InstallChecks` testler o setup.exe belirli bir paket varlığını gerçekleştirmeniz gerekir. `PackageFiles` Tüm Kurulum işlemi yüklemek için belirli bir test başarısız olması olabilir paketler listeler. Her komut giriş komutları altında tarafından açıklanan testleri birini yürütür `InstallChecks`ve belirten `PackageFile` çalıştırmak için test başarısız olması. Kullanabileceğiniz `Strings` ürün adları ve hata iletileri, böylece uygulamanız herhangi bir sayıda diller için yüklemek için tek bir yükleme ikili kullanabilirsiniz yerelleştirmeye öğesi.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği yüklemek için bir tam ürün dosyası gösterir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  

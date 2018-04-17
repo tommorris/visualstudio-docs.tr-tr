@@ -1,11 +1,8 @@
 ---
-title: "Formlar arasında veri iletmek | Microsoft Docs"
-ms.custom: 
+title: Formlar arasında veri iletmek | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,17 @@ helpviewer_keywords:
 - forms, passing data between
 - Windows Forms, walkthroughs
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b93cacb9f64a4fbf0b6478feb922c74b35a3f7ea
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: 87fdd9c898b0705c2a3463cb8f9932fda22734ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pass-data-between-forms"></a>Formlar arasında veri geçirme
 Bu kılavuz, verileri bir biçimden diğerine geçirmek için adım adım yönergeler sağlar. Northwind siparişleri tablolardan ve müşteriler kullanarak, bir form kullanıcıların bir müşteri seçmesine izin verir ve seçilen müşterinin siparişleri ikinci bir form görüntüler. Bu kılavuzda ilk formundan verileri alan ikinci form üzerinde bir yöntem oluşturulacağını gösterir.  
@@ -116,7 +113,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
   
 -   Ana sürükleyin **müşteriler** düğümden **veri kaynakları** penceresi üzerine **Form1**.  
   
-     A <xref:System.Windows.Forms.DataGridView> ve araç şeridinde (<xref:System.Windows.Forms.BindingNavigator>) kayıtları gezinmek için görünür **Form1**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
+     A <xref:System.Windows.Forms.DataGridView> ve araç şeridinde (<xref:System.Windows.Forms.BindingNavigator>) kayıtları gezinmek için görünür **Form1**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
 ## <a name="create-the-second-form-form2"></a>İkinci form (Form2) oluşturun  
   
@@ -128,7 +125,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
   
 3.  Ana sürükleyin **siparişleri** düğümden **veri kaynakları** penceresi üzerine **Form2**.  
   
-     A <xref:System.Windows.Forms.DataGridView> ve araç şeridinde (<xref:System.Windows.Forms.BindingNavigator>) kayıtları gezinmek için görünür **Form2**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
+     A <xref:System.Windows.Forms.DataGridView> ve araç şeridinde (<xref:System.Windows.Forms.BindingNavigator>) kayıtları gezinmek için görünür **Form2**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
 4.  Silme **OrdersBindingNavigator** bileşen gelen.  
   

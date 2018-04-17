@@ -1,12 +1,10 @@
 ---
-title: "ClickOnce güvenliği ve dağıtımı | Microsoft Docs"
-ms.custom: 
+title: ClickOnce güvenliği ve dağıtımı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,21 +15,21 @@ helpviewer_keywords:
 - ClickOnce deployment
 - publishing, ClickOnce
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
-caps.latest.revision: "32"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 1923c39669d50303f907974816fbb54297c477c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 24ebab9776c6cb0b829e1b79cb089ef6b826f726
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce Güvenliği ve Dağıtımı
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]yüklü ve minimum kullanıcı etkileşimi ile çalıştırın kendi kendini güncelleştirme ve Windows tabanlı uygulamalar oluşturmanıza olanak tanıyan bir dağıtım teknolojisidir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Yayımlama ve projelerinizi Visual Basic ve Visual C# ile geliştirdiyseniz ClickOnce teknolojisiyle dağıtılan uygulamaları güncelleştirmek için tam destek sağlar. Visual C++ uygulamalarını dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ uygulamaları için ClickOnce dağıtımı](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yüklü ve minimum kullanıcı etkileşimi ile çalıştırın kendi kendini güncelleştirme ve Windows tabanlı uygulamalar oluşturmanıza olanak tanıyan bir dağıtım teknolojisidir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yayımlama ve projelerinizi Visual Basic ve Visual C# ile geliştirdiyseniz ClickOnce teknolojisiyle dağıtılan uygulamaları güncelleştirmek için tam destek sağlar. Visual C++ uygulamalarını dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ uygulamaları için ClickOnce dağıtımı](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Dağıtım üç önemli sorunları dağıtımda üstesinden gelen:  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Dağıtım üç önemli sorunları dağıtımda üstesinden gelen:  
   
 -   **Uygulamaları güncelleştirmede karşılaşılan zorluklar.** Microsoft Windows Installer dağıtımı ile bir uygulama güncelleştirildiğinde, kullanıcı bir msp dosyası bir güncelleştirmeyi yüklemek ve yüklü ürün uygulayabilirsiniz; ile [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtımı, güncelleştirmeleri otomatik olarak sağlayabilirsiniz. Yalnızca değiştirilen uygulama bölümlerinin indirilir ve ardından tam, güncelleştirilmiş uygulama yan yana bir klasörden yeniden yüklenir.  
   
@@ -44,9 +42,9 @@ ms.lasthandoff: 12/22/2017
 ## <a name="what-is-a-clickonce-application"></a>ClickOnce uygulaması nedir?  
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamasıdır Windows Presentation Foundation (.xbap), Windows Forms (.exe), konsol uygulaması (.exe) veya Office çözümü (.dll) kullanılarak yayımlanan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] teknolojisi. Yayımlayabilirsiniz bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] üç farklı yolla uygulama: bir Web sayfası, bir ağ dosya paylaşımı veya bir CD-ROM gibi medya. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bir son kullanıcının bilgisayarda yüklü ve hatta bilgisayarı çevrimdışı olduğunda veya kalıcı olarak herhangi bir şey son kullanıcının bilgisayarda yüklemeden yalnızca çevrimiçi modda çalıştırılabilir yerel olarak çalıştırın. Daha fazla bilgi için bkz: [ClickOnce dağıtım stratejisini seçme](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]uygulamaları kendi kendini güncelleştirme; Bunlar için kullanılabilir hale gelir ve güncelleştirilmiş dosyaları otomatik olarak değiştirme gibi daha yeni sürümleri kontrol edebilirsiniz. Geliştirici, güncelleştirme davranışını belirtebilirsiniz; bir ağ yöneticisi de denetleyebilirsiniz güncelleştirme stratejileri, örneğin, güncelleştirme zorunlu olarak işaretleme. Güncelleştirmeleri de yeniden önceki bir sürüme son kullanıcı tarafından veya bir yönetici tarafından alınabilir. Daha fazla bilgi için bkz: [ClickOnce güncelleştirme stratejisini seçme](../deployment/choosing-a-clickonce-update-strategy.md).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları kendi kendini güncelleştirme; Bunlar için kullanılabilir hale gelir ve güncelleştirilmiş dosyaları otomatik olarak değiştirme gibi daha yeni sürümleri kontrol edebilirsiniz. Geliştirici, güncelleştirme davranışını belirtebilirsiniz; bir ağ yöneticisi de denetleyebilirsiniz güncelleştirme stratejileri, örneğin, güncelleştirme zorunlu olarak işaretleme. Güncelleştirmeleri de yeniden önceki bir sürüme son kullanıcı tarafından veya bir yönetici tarafından alınabilir. Daha fazla bilgi için bkz: [ClickOnce güncelleştirme stratejisini seçme](../deployment/choosing-a-clickonce-update-strategy.md).  
   
- Çünkü [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamalar, yüklenmesini veya çalıştırılmasını yalıtılmış bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama varolan uygulamaları kesemez. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]uygulamaları kendi içinde bulunan; Her [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması için yüklenebilir ve bir güvenli kullanıcı, uygulama başına önbellek çalıştırılabilir. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]uygulamaları Internet veya Intranet güvenlik bölgeleri'nde çalıştırın. Gerekirse, uygulama yükseltilmiş güvenlik izinlerini isteyebilir. Daha fazla bilgi için bkz: [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md).  
+ Çünkü [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamalar, yüklenmesini veya çalıştırılmasını yalıtılmış bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama varolan uygulamaları kesemez. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları kendi içinde bulunan; Her [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması için yüklenebilir ve bir güvenli kullanıcı, uygulama başına önbellek çalıştırılabilir. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları Internet veya Intranet güvenlik bölgeleri'nde çalıştırın. Gerekirse, uygulama yükseltilmiş güvenlik izinlerini isteyebilir. Daha fazla bilgi için bkz: [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md).  
   
 ## <a name="how-clickonce-security-works"></a>ClickOnce güvenliği nasıl çalışır  
  Çekirdek [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] güvenlik sertifikaları, kod erişim güvenliği ilkeleri ve ClickOnce güven istemi dayanır.  
@@ -87,7 +85,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  **Yayımlama Sihirbazı** Visual Studio'da bu adımları gerçekleştirmek için kullanılabilir.  
   
- Dağıtım konumu yanı sıra dağıtım bildirimi burada uygulama için güncelleştirilmiş sürümleri denetler bir güncelleştirme konumu (bir Web sayfası veya ağ dosya paylaşımı) de içerir. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]**Yayımla** özellikleri, zaman ve ne sıklıkta uygulama güncelleştirmeleri denetlemesi gerektiğini belirlemek için kullanılır. Güncelleştirme davranışı dağıtım bildiriminde belirtilebilir ya da kullanıcı seçenekleri yoluyla uygulamanın kullanıcı arabiriminde olarak sunulabilir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API'leri. Ayrıca, **Yayımla** özellikleri işe zorunlu güncelleştirmeleri yapmak veya önceki bir sürüme geri almak için. Daha fazla bilgi için bkz: [ClickOnce güncelleştirme stratejisini seçme](../deployment/choosing-a-clickonce-update-strategy.md).  
+ Dağıtım konumu yanı sıra dağıtım bildirimi burada uygulama için güncelleştirilmiş sürümleri denetler bir güncelleştirme konumu (bir Web sayfası veya ağ dosya paylaşımı) de içerir. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **Yayımlama** özellikleri, zaman ve ne sıklıkta uygulama güncelleştirmeleri denetlemesi gerektiğini belirlemek için kullanılır. Güncelleştirme davranışı dağıtım bildiriminde belirtilebilir ya da kullanıcı seçenekleri yoluyla uygulamanın kullanıcı arabiriminde olarak sunulabilir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API'leri. Ayrıca, **Yayımla** özellikleri işe zorunlu güncelleştirmeleri yapmak veya önceki bir sürüme geri almak için. Daha fazla bilgi için bkz: [ClickOnce güncelleştirme stratejisini seçme](../deployment/choosing-a-clickonce-update-strategy.md).  
   
 ### <a name="third-party-installers"></a>Üçüncü taraf yükleyicileri  
  Uygulamanızı birlikte üçüncü taraf bileşenleri yüklemek için ClickOnce Yükleyicinizle özelleştirebilirsiniz. Yeniden dağıtılabilir paketi (.exe veya .msi dosyası) sahip ve bir dilden bağımsız ürün bildirimi ve dile özgü paket bildirimi paketiyle açıklanmaktadır. Daha fazla bilgi için bkz: [önyükleyici paketleri oluşturma](../deployment/creating-bootstrapper-packages.md).  

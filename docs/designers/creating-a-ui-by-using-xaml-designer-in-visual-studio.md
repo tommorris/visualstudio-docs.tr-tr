@@ -1,28 +1,26 @@
 ---
-title: "Visual Studio'da XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'da XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
 - VS.XamlEditor
 - VS.DocumentOutline
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
-caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 9b628769c5945817aebd790820f1f16085f6564a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: eee5da84104e559d8e95ef022e4496cd3942627f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio’da XAML Tasarımcısı’nı kullanarak kullanıcı arabirimi oluşturma
 Visual Studio'da XAML Tasarımcısı tasarım XAML tabanlı Windows ve Web uygulamaları yardımcı olması için görsel bir arabirim sağlar. Denetimlerden sürükleyerek, uygulamalarınız için kullanıcı arabirimleri oluşturabilirsiniz **araç** ve özelliklerini ayarlama **özellikleri** penceresi. XAML doğrudan XAML görünümünde de düzenleyebilirsiniz.  
@@ -45,12 +43,12 @@ Visual Studio'da XAML Tasarımcısı tasarım XAML tabanlı Windows ve Web uygul
  Dayama çizgileri olan *hizalama sınırları* zaman denetimlerin kenarlarını hizalanır veya ne zaman metin taban çizgileri hizalanmış göstermek için kırmızı kesikli satır olarak görünür. Hizalama sınırları yalnızca görünür **dayama çizgileri için tutturma** etkinleştirilir.  
   
  **Kılavuz rayları**  
- `Grid`rayları satırları ve sütunları yönetmek için kullanılan bir [kılavuz](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) paneli. Oluşturun ve satırları ve sütunları Sil ve bunların göreli genişlik ve yükseklik ayarlayabilirsiniz. Çalışma yüzeyi soldaki bölmede görünür, dikey kılavuz raylar satırlar için kullanılır ve üstünde görünür, yatay çizgi sütunlar için kullanılır.  
+ `Grid` rayları satırları ve sütunları yönetmek için kullanılan bir [kılavuz](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) paneli. Oluşturun ve satırları ve sütunları Sil ve bunların göreli genişlik ve yükseklik ayarlayabilirsiniz. Çalışma yüzeyi soldaki bölmede görünür, dikey kılavuz raylar satırlar için kullanılır ve üstünde görünür, yatay çizgi sütunlar için kullanılır.  
   
  **Kılavuz Donatıcılar**  
  A `Grid` donatıcı görünür üzerinde ekli dikey veya yatay çizgi bulunan bir üçgen olarak `Grid` raylar. Sürüklediğinizde bir `Grid` donatıcı, genişlik ve bitişik sütunlara veya satırlara uzunluklarının fareyi hareket ederken güncelleştirin.  
   
- `Grid`Donatıcılar genişlik ve yüksekliğini denetlemek için kullanılan bir `Grid`'s satırları ve sütunları. Tıklayarak yeni bir sütun veya satır ekleyebilirsiniz `Grid` rayları. İçin yeni bir satır veya sütun satır eklediğinizde bir `Grid` sahip iki veya daha fazla sütun veya satır, kısa bir araç çubuğu paneli genişlik ve yükseklik açıkça ayarlamanıza olanak tanır raylar dışında görüntülenir. Mini Araç boyutlandırma seçeneklerini ayarlamanıza olanak tanır `Grid` satırları ve sütunları.  
+ `Grid` Donatıcılar genişlik ve yüksekliğini denetlemek için kullanılan bir `Grid`'s satırları ve sütunları. Tıklayarak yeni bir sütun veya satır ekleyebilirsiniz `Grid` rayları. İçin yeni bir satır veya sütun satır eklediğinizde bir `Grid` sahip iki veya daha fazla sütun veya satır, kısa bir araç çubuğu paneli genişlik ve yükseklik açıkça ayarlamanıza olanak tanır raylar dışında görüntülenir. Mini Araç boyutlandırma seçeneklerini ayarlamanıza olanak tanır `Grid` satırları ve sütunları.  
   
  **Tanıtıcıları yeniden boyutlandırma**  
  Yeniden boyutlandırma tanıtıcıları seçili denetimlere görünür ve denetimi yeniden boyutlandırma imkan tanır. Denetim yeniden boyutlandırdığınızda genişlik ve yükseklik değerleri genellikle denetimi size yardımcı olması için görüntülenir. Tasarım görünümünde denetimleri düzenleme hakkında daha fazla bilgi için bkz: [XAML Tasarımcısı'nda öğeleri ile çalışma](../designers/working-with-elements-in-xaml-designer.md).  

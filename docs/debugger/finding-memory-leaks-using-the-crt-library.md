@@ -1,12 +1,10 @@
 ---
-title: "CRT kitaplığını kullanarak bellek sızıntılarını bulma | Microsoft Docs"
-ms.custom: 
+title: CRT kitaplığını kullanarak bellek sızıntılarını bulma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -29,16 +27,16 @@ helpviewer_keywords:
 - _CRTDBG_MAP_ALLOC
 - _CrtSetDbgFlag
 ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e67f3c3b8cc10e6aa3e7c9b996cd1c608d893eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c02fea4639d130840f3f5dbbd9e77693c676d304
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>CRT Kitaplığını Kullanarak Bellek Sızıntılarını Bulma
 Bellek sızıntıları, doğru önceden ayrılmış olan bellek ayırması hata olarak tanımlanan en ince ve sabit algılamak hataların C/C++ uygulamalarında arasındadır. Küçük bellek sızıntısı konumundaki ilk ancak zamanla fark edilmesi değil, aşamalı bellek sızıntısı belirtiler bu aralık performansın bellek yetersiz uygulamayı çalıştırdığında, kilitlenen için neden olabilir. Da kötüsü, tüm kullanılabilir bellek kullanan leaking bir uygulamayı Karışıklığı önlemek için hangi uygulama sorumludur oluşturma kilitlenme başka bir uygulamanın neden olabilir. Hatta görünen zararsız bellek sızıntıları düzeltilmesi diğer sorunlarını belirtisi olabilir.  
@@ -190,7 +188,7 @@ Bu sızan ayırma debug_new.cpp satır 20 olduğunu bildirir.
   
 3.  İçinde **izleme** penceresinde, türü `_crtBreakAlloc` içinde içinde **adı** sütun.  
   
-     CRT kitaplık (/MD seçeneği) birden çok iş parçacıklı DLL sürümü kullanıyorsanız, context işleci şunları içerir:`{,,ucrtbased.dll}_crtBreakAlloc`  
+     CRT kitaplık (/MD seçeneği) birden çok iş parçacıklı DLL sürümü kullanıyorsanız, context işleci şunları içerir: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
 4.  Tuşuna **iade**.  
   
@@ -223,7 +221,7 @@ _CrtMemCheckpoint( &s1 );
   
 ```  
   
- `_CrtMemCheckpoint`yapısında geçerli bellek durumunun bir anlık görüntüsü ile doldurur.  
+ `_CrtMemCheckpoint` yapısında geçerli bellek durumunun bir anlık görüntüsü ile doldurur.  
   
  İçeriğini çıktısını almak için bir **_CrtMemState** yapısı, yapısına geçirin `_ CrtMemDumpStatistics` işlevi:  
   
@@ -232,7 +230,7 @@ _CrtMemDumpStatistics( &s1 );
   
 ```  
   
- `_ CrtMemDumpStatistics`şuna benzer bellek durumu dökümünü çıkarır:  
+ `_ CrtMemDumpStatistics` şuna benzer bellek durumu dökümünü çıkarır:  
   
 ```  
 0 bytes in 0 Free Blocks.  
@@ -256,7 +254,7 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
    _CrtMemDumpStatistics( &s3 );  
 ```  
   
- `_CrtMemDifference`bellek durumları karşılaştırır `s1` ve `s2` ve bir sonuç döndürür (`s3`) diğer bir deyişle fark `s1` ve `s2`.  
+ `_CrtMemDifference` bellek durumları karşılaştırır `s1` ve `s2` ve bir sonuç döndürür (`s3`) diğer bir deyişle fark `s1` ve `s2`.  
   
  Bellek sızıntılarını bulma için bir yöntem başlar koyarak `_CrtMemCheckpoint` başlangıcını ve bitişini sonra kullanarak uygulamanızın çağrıları `_CrtMemDifference` sonuçları karşılaştırmak için. Varsa `_CrtMemDifference` ekleyebileceğiniz daha fazla bellek sızıntısı gösterir `_CrtMemCheckpoint` sızıntısı kaynak buluncaya kadar bir ikili arama'yı kullanarak programınızı bölmek için çağrıları.  
   

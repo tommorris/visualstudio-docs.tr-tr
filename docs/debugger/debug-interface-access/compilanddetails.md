@@ -1,32 +1,28 @@
 ---
 title: CompilandDetails | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - CompilandDetails symbol
 ms.assetid: ddc7d794-c622-4c63-b2a6-72f8b2d0022a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc892cbdf49ab883c2bd45f4ef13ddda21b23d83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 16f9239028cada1108092af3bc5a511964f89c6d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compilanddetails"></a>CompilandDetails
-Derlenecek dosya bilgileri sembolleriyle arasında bölünür bir `SymTagCompiland` etiketi (düşük ayrıntı) ve bir `SymTagCompilandDetails` etiketi (yüksek ayrıntı). `SymTagCompilandDetails`Ek simgeleri yüklenmesini gerektirir. Ancak, çok sayıda ile kullanılamıyor derlenecek hakkında bilgi sağlayan bir `SymTagCompiland` simgesi.  
+Derlenecek dosya bilgileri sembolleriyle arasında bölünür bir `SymTagCompiland` etiketi (düşük ayrıntı) ve bir `SymTagCompilandDetails` etiketi (yüksek ayrıntı). `SymTagCompilandDetails` Ek simgeleri yüklenmesini gerektirir. Ancak, çok sayıda ile kullanılamıyor derlenecek hakkında bilgi sağlayan bir `SymTagCompiland` simgesi.  
   
 ## <a name="properties"></a>Özellikler  
  Aşağıdaki tabloda bu simge türü için geçerli olan özellikleri gösterir.  
@@ -37,17 +33,17 @@ Derlenecek dosya bilgileri sembolleriyle arasında bölünür bir `SymTagCompila
 |[IDiaSymbol::get_backEndMajor](../../debugger/debug-interface-access/idiasymbol-get-backendmajor.md)|`DWORD`|Derleyici arka uç ana sürüm numarası.|  
 |[IDiaSymbol::get_backEndMinor](../../debugger/debug-interface-access/idiasymbol-get-backendminor.md)|`DWORD`|Derleyici arka uç ikincil sürüm numarası.|  
 |[IDiaSymbol::get_compilerName](../../debugger/debug-interface-access/idiasymbol-get-compilername.md)|`BSTR`|(Yalnızca DIA SDK V8.0 veya sonrası) bu derlenecek üretilen derleyici adı.|  
-|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE`Düzenle ve devam et derleme etkinleştirilmişse.|  
+|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` Düzenle ve devam et derleme etkinleştirilmişse.|  
 |[IDiaSymbol::get_frontEndBuild](../../debugger/debug-interface-access/idiasymbol-get-frontendbuild.md)|`DWORD`|Ön uç yapılandırma derleyici sayısı.|  
 |[IDiaSymbol::get_frontEndMajor](../../debugger/debug-interface-access/idiasymbol-get-frontendmajor.md)|`DWORD`|Derleyici ön uç ana sürüm numarası.|  
 |[IDiaSymbol::get_frontEndMinor](../../debugger/debug-interface-access/idiasymbol-get-frontendminor.md)|`DWORD`|Derleyici ön uç alt sürüm numarasını.|  
-|[IDiaSymbol::get_hasDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-hasdebuginfo.md)|`BOOL`|`TRUE`Bu derlenecek hata ayıklama bilgileri (yalnızca DIA SDK V8.0 veya sonrası) varsa.|  
-|[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|`BOOL`|`TRUE`Bu derlenecek (yalnızca DIA SDK v8.0 veya sonrası) yönetilen kodu içeriyorsa.|  
-|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE`derlenecek dosya ile derlenen varsa [/GS (arabellek güvenlik denetimi)](/cpp/build/reference/gs-buffer-security-check) derleyici anahtarı (yalnızca DIA SDK V8.0 veya üzeri).|  
-|[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|`BOOL`|`TRUE`derlenecek dosya ortak Ara dili (CIL) koddan yerel koda dönüştürüldü durumunda.|  
-|[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|`BOOL`|`TRUE`Kullanıcı tanımlı türler (UDT) için hizalı durumunda bazı bellek sınırı (yalnızca DIA SDK V8.0 veya sonrası) belirttiniz.|  
-|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|`BOOL`|`TRUE`derlenecek dosya ile derlenen varsa [/hotpatch (düzeltme eki eklenebilen görüntü oluşturma)](/cpp/build/reference/hotpatch-create-hotpatchable-image) derleyici anahtarı (yalnızca DIA SDK v8.0 veya üzeri).|  
-|[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|`BOOL`|`TRUE`derlenecek dosya ile derlenen varsa [/LTCG (bağlama zamanı kodu oluşturma)](/cpp/build/reference/ltcg-link-time-code-generation) derleyici anahtarı (yalnızca DIA SDK V8.0 veya üzeri).|  
+|[IDiaSymbol::get_hasDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-hasdebuginfo.md)|`BOOL`|`TRUE` Bu derlenecek hata ayıklama bilgileri (yalnızca DIA SDK V8.0 veya sonrası) varsa.|  
+|[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|`BOOL`|`TRUE` Bu derlenecek (yalnızca DIA SDK v8.0 veya sonrası) yönetilen kodu içeriyorsa.|  
+|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` derlenecek dosya ile derlenen varsa [/GS (arabellek güvenlik denetimi)](/cpp/build/reference/gs-buffer-security-check) derleyici anahtarı (yalnızca DIA SDK V8.0 veya üzeri).|  
+|[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|`BOOL`|`TRUE` derlenecek dosya ortak Ara dili (CIL) koddan yerel koda dönüştürüldü durumunda.|  
+|[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|`BOOL`|`TRUE` Kullanıcı tanımlı türler (UDT) için hizalı durumunda bazı bellek sınırı (yalnızca DIA SDK V8.0 veya sonrası) belirttiniz.|  
+|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|`BOOL`|`TRUE` derlenecek dosya ile derlenen varsa [/hotpatch (düzeltme eki eklenebilen görüntü oluşturma)](/cpp/build/reference/hotpatch-create-hotpatchable-image) derleyici anahtarı (yalnızca DIA SDK v8.0 veya üzeri).|  
+|[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|`BOOL`|`TRUE` derlenecek dosya ile derlenen varsa [/LTCG (bağlama zamanı kodu oluşturma)](/cpp/build/reference/ltcg-link-time-code-generation) derleyici anahtarı (yalnızca DIA SDK V8.0 veya üzeri).|  
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|`BOOL`|Derlenecek dosya Microsoft Ara dili (MSIL) Modülü (yalnızca DIA SDK v8.0 veya sonrası) ise TRUE.|  
 |[IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)|`DWORD`|Kaynak kodu dili.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Derlenecek dosya simgesi.|  

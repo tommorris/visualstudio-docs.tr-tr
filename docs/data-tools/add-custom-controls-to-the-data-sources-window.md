@@ -1,11 +1,8 @@
 ---
-title: "Veri kaynakları penceresine özel denetimler ekleme | Microsoft Docs"
-ms.custom: 
+title: Veri kaynakları penceresine özel denetimler ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
@@ -16,18 +13,17 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ffa55100e9bbec33fdbca19ab2757c4de63f5030
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d00e818c0cfaa2659f55e5eb8bb8e4e4a87e8abc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Veri kaynakları penceresine özel denetimler ekleme
 Bir öğeden sürüklediğinizde **veri kaynakları** veri bağlama denetimi oluşturmak için tasarım yüzeyi penceresine, oluşturduğunuz denetim türünü seçebilirsiniz. Her öğenin penceresinde seçebileceğiniz denetimleri görüntüleyen bir açılır liste vardır. Her öğeyle ilişkili denetimleri kümesini öğesi veri türüne göre belirlenir. Oluşturmak istediğiniz denetimi listede görünmüyorsa, denetim listesine eklemek için bu konudaki yönergeleri izleyebilir.  
@@ -37,7 +33,7 @@ Bir öğeden sürüklediğinizde **veri kaynakları** veri bağlama denetimi olu
 > [!NOTE]
 >  İletişim kutuları ve menü komutlarını gördüğünüz açıklanana Yardım'da etkin ayarlarınıza veya sürümünüze bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için **Araçları** menüsünde, select **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).  
   
-##  <a name="customizinglist"></a>Bir veri türü için bağlanabilirse denetimleri listesi özelleştirme  
+##  <a name="customizinglist"></a> Bir veri türü için bağlanabilirse denetimleri listesi özelleştirme  
  Denetimleri eklemek veya öğeler için kullanılabilir denetimler listesinden kaldırmak için **veri kaynakları** aşağıdaki adımları gerçekleştirin bir özel veri türüne sahip penceresi.  
   
 #### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Bir veri türü için listelenecek denetimleri seçmek için  
@@ -71,7 +67,7 @@ Bir öğeden sürüklediğinizde **veri kaynakları** veri bağlama denetimi olu
   
      Seçtiğiniz denetimleri **denetimleri ilişkili** kutusu artık görünür açılır menü öğesi için.  
   
-##  <a name="addingcontrols"></a>Bir veri türü için ilişkili denetimler listesine denetimleri ekleme  
+##  <a name="addingcontrols"></a> Bir veri türü için ilişkili denetimler listesine denetimleri ekleme  
  Bir veri türüne sahip bir denetim ilişkilendirmek istediğiniz, ancak denetim görünmez **denetimleri ilişkili** kutusu, denetim listesine eklemeniz gerekir. Geçerli çözümde veya başvurulan bir derleme denetimi bulunmalıdır. Bu da kullanılabilir olmalıdır **araç kutusu**, ve denetimin veri bağlama davranışı belirten bir özniteliği vardır.  
   
 #### <a name="to-add-controls-to-the-list-of-associated-controls"></a>Denetimleri ilişkili denetimler listesine eklemek için  

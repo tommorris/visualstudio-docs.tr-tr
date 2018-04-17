@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da veri erişimi | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - "80025080"
 helpviewer_keywords:
@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 82717e8b0eb8b4b751fc8c5ed983695ff6b6fc4a
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: ef1c833cb44d05a910cb3c042c295c372c9b4b06
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio'da veri erişimi
 
@@ -91,7 +91,7 @@ ADO.NET tüketilebilir olması için bir veritabanı için özel bir olmalıdır
 
 Bu teknolojiler birini kullanmak için gereksinimi yoktur. Özellikle performansı önemli olduğu bazı senaryolarda, yalnızca bir DataReader nesnesi veritabanından okunur ve liste gibi bir koleksiyon nesnesi, gereken değerleri kopyalayın için kullanabileceğiniz\<T >.
 
-## <a name="native-c"></a>Native C++
+## <a name="native-c"></a>Yerel C++
 
 SQL Server'a bağlanmak C++ uygulamaları kullanması gereken [SQL Server için Microsoft® ODBC sürücüsü 13,1](https://www.microsoft.com/download/details.aspx?id=53339) çoğu durumda. Sunucuları bağlıysa, OLE DB gerekli ise ve söz konusu kullandığınız [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Kullanarak diğer veritabanlarına erişebilirsiniz [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) veya OLE DB sürücüleri doğrudan. ODBC geçerli standart veritabanı arabirimdir, ancak çoğu veritabanı sistemleri ODBC arabirimi aracılığıyla erişilen özel işlevsellik sağlar. OLE DB, hala desteklenir, ancak yeni uygulamalar için önerilmez eski bir COM veri erişimi teknolojisidir. Daha fazla bilgi için bkz: [Visual C++'da veri erişimi](/cpp/data/data-access-in-cpp).
 

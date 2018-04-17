@@ -1,12 +1,10 @@
 ---
-title: "Sunucu ve istemci yapılandırma sorunları ClickOnce dağıtımlarında | Microsoft Docs"
-ms.custom: 
+title: Sunucu ve istemci yapılandırma sorunları ClickOnce dağıtımlarında | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - ClickOnce deployment, troubleshooting
 - Windows applications, ClickOnce deployments
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
-caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b50dbe51f58af79b8c1074c592f98abccbe8ba7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 11cc26689b20f989cb449f67387052caf3096811
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce Dağıtımlarında Sunucu ve İstemci Yapılandırma Sorunları
 Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız Windows tanımadığı bir dosya türü içeriyorsa, bir Microsoft Word dosyası gibi dosya aktarmak IIS reddeder ve dağıtımınız başarısız olur.  
@@ -51,9 +49,9 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama düzgün çalışır SSL üzerinden Internet Explorer SSL sertifikası hakkında bir istem zaman görüntülemesi dışında. Bir sorun olduğunda site adları eşleşmiyor gibi bir sertifika veya sertifika süresi doldu olduğunda istemi yükseltilebilir. Yapmak için [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bir SSL bağlantısı üzerinden çalışma, sertifikanın güncel olduğundan ve sertifika verileri site verilerini eşleştiğinden emin olun.  
   
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce ve Proxy kimlik doğrulaması  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].NET Framework 3. 5 ' başlayarak Windows tümleşik proxy kimlik doğrulaması için destek sağlar. Hiçbir özel machine.config yönergeleri gerekli değildir. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Temel veya Özet gibi diğer kimlik doğrulama protokolleri için destek sağlamaz.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .NET Framework 3. 5 ' başlayarak Windows tümleşik proxy kimlik doğrulaması için destek sağlar. Hiçbir özel machine.config yönergeleri gerekli değildir. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Temel veya Özet gibi diğer kimlik doğrulama protokolleri için destek sağlamaz.  
   
- Ayrıca, bu özelliği etkinleştirmek için .NET Framework 2.0 için bir düzeltme uygulayabilirsiniz. Daha fazla bilgi için http://go.microsoft.com/fwlink/?LinkId=158730 bakın.  
+ Ayrıca, bu özelliği etkinleştirmek için .NET Framework 2.0 için bir düzeltme uygulayabilirsiniz. Daha fazla bilgi için bkz. http://go.microsoft.com/fwlink/?LinkId=158730.  
   
  Daha fazla bilgi için bkz: [ \<defaultProxy > öğesi (ağ ayarları)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).  
   
@@ -96,7 +94,7 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
  ClickOnce uygulaması yayımlama için Visual Studio kullanırsanız, eşlenmiş sürücü yükleme konumu olarak belirtemezsiniz. Ancak, eşlenmiş sürücüden Bildirim oluşturucu ve düzenleyici (Mage.exe ve MageUI.exe) kullanarak yüklemek için ClickOnce uygulaması değiştirebilirsiniz. Daha fazla bilgi için bkz: [Mage.exe (bildirim üretme ve düzenleme aracı)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) ve [MageUI.exe (bildirim üretme ve düzenleme aracı, grafik istemci)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP protokolünü uygulamaları yüklemek için desteklenmiyor  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]herhangi bir HTTP 1.1 Web sunucusu veya dosya sunucusu uygulamaları yüklemeyi destekler. FTP, Dosya Aktarım Protokolü, uygulamaları yüklemek için desteklenmiyor. FTP yalnızca uygulamaları yayımlamak için kullanabilirsiniz. Aşağıdaki tabloda bu farklar özetlenmektedir:  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] herhangi bir HTTP 1.1 Web sunucusu veya dosya sunucusu uygulamaları yüklemeyi destekler. FTP, Dosya Aktarım Protokolü, uygulamaları yüklemek için desteklenmiyor. FTP yalnızca uygulamaları yayımlamak için kullanabilirsiniz. Aşağıdaki tabloda bu farklar özetlenmektedir:  
   
 |URL türü|Açıklama|  
 |--------------|-----------------|  
@@ -122,7 +120,7 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
   
 -   Uzantısı ile bir MIME türü oluşturursanız, "*" ve MIME türü "application/octet-stream" indirilmesi engellenmemiş dosya türlerinin sağlayacaktır. (Ancak, dosya türleri Örneğin, .aspx ve .asmx indirilemiyor engellenen.)  
   
- Windows Server'da MIME türlerini yapılandırma ile ilgili ayrıntılı yönergeler için Microsoft Bilgi Bankası makalesi KB326965, "IIS 6.0 mu değil hizmet bilinmeyen MIME türleri" başvurun [http://support.microsoft.com/default.aspx?scid=kb;en-us;326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+ Windows Server'da MIME türlerini yapılandırma ile ilgili ayrıntılı yönergeler için Microsoft Bilgi Bankası makalesi KB326965, "IIS 6.0 mu değil hizmet bilinmeyen MIME türleri" başvurun [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
   
 ## <a name="content-type-mappings"></a>İçerik türü eşlemeleri  
  HTTP üzerinden yayımlarken, içerik türü (MIME türü olarak da bilinir) .application dosyası için "application/x-ms-application." olması gerekir Varsa [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] sunucuda yüklüyse, bu sizin için otomatik olarak ayarlanır. Bu yüklü değil ise sonra bir MIME türü ilişkilendirmesini oluşturmanıza gerek [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması vroot (veya tüm sunucu).  

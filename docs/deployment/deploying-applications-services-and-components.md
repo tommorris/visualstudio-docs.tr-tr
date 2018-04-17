@@ -3,11 +3,8 @@ title: Dağıtım genel bakış - Visual Studio | Microsoft Docs
 description: Visual Studio'dan uygulamaları dağıtmak için seçenekleriniz hakkında bilgi edinin.
 ms.custom: mvc
 ms.date: 11/26/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], about deploying applications
 - components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca458c0234de89fec814cfa5e639c13db9e6ca9b
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 5d4367c5daad9c8514f472fe759d1dba9fb7e357
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Hızlı Başlangıç: İlk Visual Studio'daki dağıtımı bakın
 
@@ -43,7 +39,7 @@ Adım adım yönergeler için bkz.
 
 ### <a name="deploy-to-local-folder"></a>Yerel bir klasöre dağıtma
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, and **.NET Core**: Use the Publish tool to deploy to a local folder. Kullanılabilir seçenekler, uygulama türüne bağlıdır. Çözüm Gezgini'nde, projenize sağ tıklayın ve seçin **Yayımla**ve ardından **klasörü**. Daha fazla bilgi için bkz: [bir yerel klasöre dağıtma](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, ve **.NET Core**: yerel bir klasöre dağıtmak için yayımlama Aracı'nı kullanın. Kullanılabilir seçenekler, uygulama türüne bağlıdır. Çözüm Gezgini'nde, projenize sağ tıklayın ve seçin **Yayımla**ve ardından **klasörü**. Daha fazla bilgi için bkz: [bir yerel klasöre dağıtma](quickstart-deploy-to-local-folder.md).
 
     ![Seçin yayımlama](../deployment/media/quickstart-publish.png)
 
@@ -51,7 +47,7 @@ Adım adım yönergeler için bkz.
 
 ### <a name="publish-to-web-or-deploy-to-network-share"></a>Web'de Yayımla veya ağ paylaşımına dağıtma
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, and **.NET Core**: You can use the Publish tool to deploy to a website using FTP or Web Deploy. Daha fazla bilgi için bkz: [bir web sitesine dağıtma](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, ve **.NET Core**: Yayımla aracı dağıtmak için kullanabileceğiniz bir FTP veya Web dağıtımı kullanarak Web sitesi. Daha fazla bilgi için bkz: [bir web sitesine dağıtma](quickstart-deploy-to-a-web-site.md).
 
     Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Yayımla**. Yayımla aracında istediğiniz ve yapılandırma adımlarını izleyin seçeneğini belirleyin.
 

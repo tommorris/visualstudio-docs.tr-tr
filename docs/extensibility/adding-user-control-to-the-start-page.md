@@ -1,27 +1,25 @@
 ---
-title: "Başlangıç sayfasına kullanıcı denetimi ekleme | Microsoft Docs"
-ms.custom: 
+title: Başlangıç sayfasına kullanıcı denetimi ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - start page dll
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 448eba0d13a9501c328da79fa31fa66f4376d5df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2bec2b4ab834eb55bd34a80f9e6a30931e3cd325
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Kullanıcı denetimi için başlangıç sayfası ekleme
 Bu kılavuz, özel bir başlangıç sayfası DLL başvuru eklemek gösterilmiştir. Örnek bir kullanıcı denetimi çözüme kullanıcı denetimi oluşturur ve ardından başlangıç sayfası .xaml dosyasından yerleşik bütünleştirilmiş koduna başvuruyor ekler. Yeni bir sekme temel bir Web tarayıcısı olarak işlev kullanıcı Denetim barındırır.  
@@ -178,7 +176,7 @@ Bu kılavuz, özel bir başlangıç sayfası DLL başvuru eklemek gösterilmişt
   
 1.  XAML dosyanızı ve destekleyici metin dosyaları veya işaretleme dosyaları, çok kopya **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\**  klasör.  
   
-2.  Başlangıç sayfanızı herhangi bir denetimleri veya Visual Studio tarafından yüklenmemiş derlemelerindeki başvuruyorsa, derlemeler kopyalayıp sonra bunları *Visual Studio yükleme klasörü***\Common7\IDE\ PrivateAssemblies\\**.  
+2.  Başlangıç sayfanızı herhangi bir denetimleri veya Visual Studio tarafından yüklenmemiş derlemelerindeki başvuruyorsa, derlemeler kopyalayıp sonra bunları * Visual Studio yükleme klasörü ***\Common7\IDE\PrivateAssemblies\\** .  
   
 3.  Bir Visual Studio komut isteminde **devenv /rootsuffix Exp** Visual Studio deneysel örneği açın.  
   

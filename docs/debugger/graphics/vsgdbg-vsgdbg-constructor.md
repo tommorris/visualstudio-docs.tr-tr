@@ -1,23 +1,21 @@
 ---
-title: "VsgDbg::VsgDbg (oluşturucu) | Microsoft Docs"
-ms.custom: 
+title: VsgDbg::VsgDbg (oluşturucu) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 095fb9d8477a649c72204c018f28fe6636a3903f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 336fd55ddd4cd85daed7cebc9cadab321b50c189
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (Oluşturucu)
 Bir örneğini oluşturur `VsgDbg` sınıfı ile veya olmadan etkin şekilde yakalamak ve varsayılan olarak belirli Boole parametresi temelinde, grafik bilgilerini kaydetmek için grafik tanılamayı uygulama bileşeninin hazırlanıyor.  
@@ -32,7 +30,7 @@ VsgDbg(
   
 #### <a name="parameters"></a>Parametreler  
  `bDefaultInit`  
- `true`Grafik tanılama uygulama bileşeninin etkin olarak yakalamak ve grafik bilgilerini kaydetmek hazır olduğunu belirtmek için; `false` uygulama etkin olarak yakalamak ve şu anda grafik bilgilerini kaydetmek için hazırlıklı olmalıdır değil olduğunu belirtmek için.  
+ `true` Grafik tanılama uygulama bileşeninin etkin olarak yakalamak ve grafik bilgilerini kaydetmek hazır olduğunu belirtmek için; `false` uygulama etkin olarak yakalamak ve şu anda grafik bilgilerini kaydetmek için hazırlıklı olmalıdır değil olduğunu belirtmek için.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Zaman Oluşturucusu çağrılır ile `bDefaultInit` kümesine `true`, grafik günlük dosyasının dosya adı tarafından nasıl belirlenir `DONT_SAVE_VSGLOG_TO_TEMP` ve `VSG_DEFAULT_RUN_FILENAME` önişlemci sembolleri önce tanımlanır `vsgcapture.h` uygulamanızda eklenmiştir.  

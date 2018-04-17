@@ -1,13 +1,10 @@
 ---
-title: "Nasıl yapılır: COM sunucularında hata ayıklama | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: COM sunucularında hata ayıklama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - debugging [C++], ADI applications
 - container information
 ms.assetid: 9f013c2b-0306-4b34-ba7f-d4445a874da1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0aedd0f60464ed56bfeb8f6f2e3147680641ea6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ec74da221add5f7cc6c59014617ceec1593fdd9c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-com-servers"></a>Nasıl Yapılır: COM Sunucularında Hata Ayıklama
 COM sunucusu uygulamalarında hata ayıklama her zaman çözmek kolay olmayan sorunlar benzersiz bir kümesi oluşturur.  
@@ -52,5 +48,5 @@ COM sunucusu uygulamalarında hata ayıklama her zaman çözmek kolay olmayan so
  [COM ve ActiveX hata ayıklaması](../debugger/com-and-activex-debugging.md)   
  [Nasıl yapılır: COM istemcilerinde ve sunucularında RPC hata ayıklamasını kullanarak hata ayıklama](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [COM sunucusunda ve kapsayıcısında hata ayıklama](../debugger/com-server-and-container-debugging.md)   
- [Visual Studio'da hata ayıklama](../debugger/index.md)  
+ [Visual Studio’da hata ayıklama](../debugger/index.md)  
  [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)

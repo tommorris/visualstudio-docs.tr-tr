@@ -1,26 +1,24 @@
 ---
-title: "Görüntü Düzenleyicisi | Microsoft Docs"
-ms.custom: 
+title: Görüntü Düzenleyicisi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
 ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
-caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: df78a45b5bc5dded132b58cb37b87d4198ad1e7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 80dbd85aff0fa673297ad5899ca96abbc11d2510
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-editor"></a>Görüntü Düzenleyici
 Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] doku ve görüntü kaynakları görüntülemek ve değiştirmek için görüntü Düzenleyicisi.  
@@ -101,10 +99,10 @@ Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-qu
   
 |Araç Çubuğu Öğesi|Açıklama|  
 |------------------|-----------------|  
-|**Seçin**|Dikdörtgen bir bölgesi görüntü seçimi sağlar. Bir bölge seçtikten sonra kesme, kopyalayabilir, taşımak, ölçeklendirme, döndürme, Çevir veya silin. Çizim Araçları, yalnızca etkin bir seçim olduğunda, seçili bölgeye etkiler.|  
+|**seçin**|Dikdörtgen bir bölgesi görüntü seçimi sağlar. Bir bölge seçtikten sonra kesme, kopyalayabilir, taşımak, ölçeklendirme, döndürme, Çevir veya silin. Çizim Araçları, yalnızca etkin bir seçim olduğunda, seçili bölgeye etkiler.|  
 |**Düzensiz seçimi**|Düzensiz bir bölgenin görüntü seçimi sağlar. Bir bölge seçtikten sonra kesme, kopyalayabilir, taşımak, ölçeklendirme, döndürme, Çevir veya silin. Çizim Araçları, yalnızca etkin bir seçim olduğunda, seçili bölgeye etkiler.|  
 |**Değnek seçimi**|Benzer şekilde renkli bölgesinin görüntü seçimi sağlar. *Dayanıklılık*— diğer bir deyişle, maksimum fark içinde bunlar değerlendirilir benzer bitişik renkler arasındaki — benzer renkleri daha küçük veya daha geniş bir dizi içerecek şekilde yapılandırılabilir. Bir bölge seçtikten sonra kesme, kopyalayabilir, taşımak, ölçeklendirme, döndürme, Çevir veya silin. Çizim Araçları, yalnızca etkin bir seçim olduğunda, seçili bölgeye etkiler.|  
-|**Yatay kaydırma**|Görüntünün pencere çerçevesi göre hareketini sağlar. İçinde **Pan** modu, görüntünün bir nokta seçin ve ardından taşıyabilirsiniz.<br /><br /> Geçici olarak etkinleştirebilirsiniz **Pan** tuşuna basarak ve Ctrl tuşunu basılı tutarak modu.|  
+|**Pan**|Görüntünün pencere çerçevesi göre hareketini sağlar. İçinde **Pan** modu, görüntünün bir nokta seçin ve ardından taşıyabilirsiniz.<br /><br /> Geçici olarak etkinleştirebilirsiniz **Pan** tuşuna basarak ve Ctrl tuşunu basılı tutarak modu.|  
 |**Yakınlaştır**|Pencere çerçevesi göre daha az veya görüntü ayrıntı görünümünü sağlar. İçinde **yakınlaştırma** modu, görüntünün bir nokta seçin ve ardından sağa taşıyın veya yakınlaştırmak için aşağı veya sol veya en fazla yakınlaştırma yetersiz.<br /><br /> Tuşuna basarak ve fare tekerleğinin kullanabilir veya artı (+) basın Ctrl tutarken veya eksi işareti (-) yakınlaştırma veya uzaklaştırma.|  
 |**Gerçek boyutuna Büyüt**|Görüntüyü, görüntünün ve ekrandaki pikseller arasında 1:1 ilişki kullanarak görüntüler.|  
 |**Sığdırmak için Yakınlaştır**|Tam görüntüyü penceresi çerçevede görüntüler.|  
@@ -129,11 +127,11 @@ Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-qu
 |**Fırça**|Kenar yumuşatma vuruş çizmek için etkin renk seçimi kullanır. Renk ve vuruş kalınlığı ayarlayabilirsiniz **özellikleri** penceresi.|  
 |**Havalı fırça**|Görüntünün birlikte karıştırır ve süresinin bir işlevi olarak daha doymuş duruma bir kenar yumuşatma vuruşu çizmek için etkin renk seçimi kullanır. Renk ve vuruş kalınlığı ayarlayabilirsiniz **özellikleri** penceresi.|  
 |**Damlalık**|Etkin renk seçimi seçili piksel rengini belirler.|  
-|**Doldurma**|Görüntü bölgesi doldurmak için etkin renk seçimi kullanır. Etkilenen bölge burada dolgu, her piksel, aynı renkteki piksel bağlı olduğu ve aynı renk birlikte uygulanır piksel olarak tanımlanır. Dolgu etkin bir seçim uyguladıysanız, etkilenen bölge seçerek sınırlı değildir.<br /><br /> Varsayılan olarak, görüntünün alfa bileşen göre etkilenen bölge ile birlikte etkin renk seçimi karıştırılan. Etkilenen bölge üzerine yazmak için etkin renk seçimi kullanmak üzere dolgu Aracı'nı kullandığınızda Shift tuşunu basılı tutun.|  
+|**doldurma**|Görüntü bölgesi doldurmak için etkin renk seçimi kullanır. Etkilenen bölge burada dolgu, her piksel, aynı renkteki piksel bağlı olduğu ve aynı renk birlikte uygulanır piksel olarak tanımlanır. Dolgu etkin bir seçim uyguladıysanız, etkilenen bölge seçerek sınırlı değildir.<br /><br /> Varsayılan olarak, görüntünün alfa bileşen göre etkilenen bölge ile birlikte etkin renk seçimi karıştırılan. Etkilenen bölge üzerine yazmak için etkin renk seçimi kullanmak üzere dolgu Aracı'nı kullandığınızda Shift tuşunu basılı tutun.|  
 |**Silme**|Görüntünün bir alfa kanal destekliyorsa piksel için tamamen saydam rengini belirler. Aksi takdirde, piksel için etkin arka plan rengini belirler.|  
 |**Satır**, **dikdörtgen**, **yuvarlak dikdörtgen**, **elips**|Bir şekli görüntü üzerinde çizer. Renk ve hattaki kalınlığı ayarlayabilirsiniz **özellikleri** penceresi.<br /><br /> Eşit genişlik ve yükseklik sahip ilkel çizmek için tuşuna basın ve çizerken Shift basılı tutun.|  
 |**Metin**|Ön plan rengini seçimin metin çizme için kullanır. Arka plan rengi, arka plan rengi seçime göre belirlenir. Saydam arka plan, arka plan rengi seçim alfa değeri 0 olmalıdır. Metin bölge etkinken metin kenar yumuşatma vuruşu ile çizilir ve metin ayarlayabilirsiniz olup olmadığını ayarlayabilir **değeri**, **yazı tipi**, **boyutu**ve stil —**Kalın**, **italik**, veya **altı çizili**— içinde **özellikleri** penceresi. İçerik ve metin görünümünü kesin metin bölge artık etkin olduğunda.|  
-|**Döndürme**|Görüntüyü 90 derece saat yönünde döndürür.|  
+|**döndürme**|Görüntüyü 90 derece saat yönünde döndürür.|  
 |**Kırpma**|Etkin seçimi görüntüye kırpar.|  
   
 ### <a name="working-with-mip-levels"></a>MIP düzeyleri ile çalışma  
@@ -144,10 +142,10 @@ Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-qu
   
 |Aracı|Açıklama|  
 |----------|-----------------|  
-|**Kalem**, **fırça**, **havalı fırça**, **satır**, **dikdörtgen**, **yuvarlak dikdörtgen**, **Elips**, **metin**|Görüntü ile birlikte etkin renk seçimi de karıştırmak için **özellikleri** penceresinde genişletin **kanalları** özellik grubu ve kümesi **çizmek** onaykutusu **Alpha** kanal ve normal şekilde çizin.<br /><br /> Etkin renk seçim ile çizme ve görüntünün alfa değeri bırakın için temizleyin **çizin** , onay kutusu **alfa** kanal ve normal şekilde çizin.|  
-|**Doldurma**|Görüntü ile birlikte etkin renk seçimi karıştırmak için yalnızca doldurmak için alanı seçin.<br /><br /> Etkin renk seçimi kullanmak üzere — alfa kanal değeri de dahil olmak üzere — görüntünün üzerine yazmak için tuşuna basın ve Shift basılı tutun ve doldurmak için alanı seçin.|  
+|**Kalem**, **fırça**, **havalı fırça**, **satır**, **dikdörtgen**, **yuvarlak dikdörtgen** , **Elips**, **metin**|Görüntü ile birlikte etkin renk seçimi de karıştırmak için **özellikleri** penceresinde genişletin **kanalları** özellik grubu ve kümesi **çizmek** onaykutusu **Alpha** kanal ve normal şekilde çizin.<br /><br /> Etkin renk seçim ile çizme ve görüntünün alfa değeri bırakın için temizleyin **çizin** , onay kutusu **alfa** kanal ve normal şekilde çizin.|  
+|**doldurma**|Görüntü ile birlikte etkin renk seçimi karıştırmak için yalnızca doldurmak için alanı seçin.<br /><br /> Etkin renk seçimi kullanmak üzere — alfa kanal değeri de dahil olmak üzere — görüntünün üzerine yazmak için tuşuna basın ve Shift basılı tutun ve doldurmak için alanı seçin.|  
   
-###  <a name="ImageProperties"></a>Görüntü Özellikleri  
+###  <a name="ImageProperties"></a> Görüntü Özellikleri  
  Kullanabileceğiniz **özellikleri** görüntünün çeşitli özelliklerini belirtmek için penceresi. Örneğin, görüntüyü yeniden boyutlandırmak için genişlik ve yükseklik özellikleri ayarlayabilirsiniz.  
   
  Aşağıdaki tabloda görüntü özelliklerini açıklar.  
@@ -208,7 +206,7 @@ Bu belge ile nasıl çalışılacağını açıklar [!INCLUDE[vsprvs](../code-qu
 |CTRL|||Kopyalar ve seçili bölgeye içeriğini yeniden boyutlandırır.|  
 |CTRL|Kaydırma||Kopyalar ve ardından orantılı olarak seçili bölge içeriğini yeniden boyutlandırır.|  
   
-####  <a name="ToolProperties"></a>Aracı özellikleri  
+####  <a name="ToolProperties"></a> Aracı özellikleri  
  Bir aracı seçiliyken kullanabileceğiniz **özellikleri** penceresi görüntünün nasıl etkilediği hakkında ayrıntıları belirtin. Örneğin, kalınlığı ayarlayabilirsiniz **kalem** aracını veya rengini **fırça** aracı.  
   
  Ön plan rengini ve arka plan rengi ayarlayabilirsiniz. Hem kullanıcı tanımlı opaklık sağlamak için bir alfa kanal destekler. Ayarlar tüm araçlar için geçerlidir. Fare kullanıyorsanız, sol fare düğmesini ön plan rengini karşılık gelir ve farenin sağ düğmesiyle karşılık gelen arka plan rengi.  

@@ -1,30 +1,26 @@
 ---
-title: "CommandTable öğesi | Microsoft Docs"
-ms.custom: 
+title: CommandTable öğesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CommandTable
 helpviewer_keywords:
 - CommandTable element (VSCT XML schema)
 - VSCT XML schema elements, CommandTable
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fe68f25748df171ec6695554903b37854e7d8c6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5f2dd2ebd076d4225adc86e5ba0cdc9af6ca40df
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="commandtable-element"></a>CommandTable öğesi
 CommandTable .vsct dosyasının kök öğesinin ' dir. Bu gerçek düzeni ve bir VSPackage IDE sağlar komutları türünü tanımlayan dosyasıdır. Komutları menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları içerebilir. Daha fazla bilgi için bkz: [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
@@ -52,7 +48,7 @@ CommandTable .vsct dosyasının kök öğesinin ' dir. Bu gerçek düzeni ve bir
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|xmlns|Gerekli. XML ad alanları:<br /><br /> xmlns = "http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns:XS "http://www.w3.org/2001/XMLSchema" =|  
+|xmlns|Gerekli. XML ad alanları:<br /><br /> xmlns = "http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns:XS = "http://www.w3.org/2001/XMLSchema"|  
 |dil|İsteğe bağlı. Tüm varsayılan dili belirtmek için dil özniteliği kullanılabilir \<dizeleri > komutu tablodaki öğeler.  Dil belirtilmezse, geçerli işlemin dilinin kullanılacak:<br /><br /> Dil = "en-us"|  
   
 ### <a name="child-elements"></a>Alt Öğeler  

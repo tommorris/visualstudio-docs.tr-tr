@@ -1,13 +1,10 @@
 ---
-title: "Otomatik değişkenler ve yerel Windows değişkenler inceleyin. | Microsoft Docs"
+title: Otomatik değişkenler ve yerel Windows değişkenler inceleyin. | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - debugger, variable windows
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 763a079ec8da8c2c1e9e7d7864fc4d0cee6197ed
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 2b3bad753a18352ebbf68bef5f398a8039a9c4dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Otomatik değişkenler değişkenleri ve Visual Studio Yereller Windows inceleyin.
 **Otomobiller** penceresi (hata ayıklama, **CTRL + ALT + V, A**, veya **hata ayıklama > Windows > otomobiller**) ve **Yereller** (hata ayıklama penceresi **CTRL + ALT + V, L**, veya **hata ayıklama > Windows > Yereller**) hata ayıklarken değişken değerleri görmek istediğinizde oldukça faydalıdır. **Yereller** penceresi, işlev veya şu anda yürütülmekte olan yöntem genellikle olan yerel kapsamda tanımlanan değişkenler görüntüler. **Otomobiller** penceresi geçerli satırında (hata ayıklayıcı durduğu koyun) kullanılan değişkenler görüntüler. Tam olarak hangi değişkenleri Bu pencerede görüntüler farklı dillerde farklıdır. Bkz: [değişkenleri otomobiller penceresinde görüntülenecek?](#bkmk_whatvariables) aşağıda.  
@@ -35,9 +31,9 @@ Temel hata ayıklama hakkında daha fazla bilgiye ihtiyacınız varsa bkz [hata 
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Otomatik değişkenler ve yerel Windows nesneleri bakarak  
 Diziler ve nesneleri otomatik değişkenler ve Yereller pencerelerinde ağaç denetimleri görüntülenir. Alanları ve özellikleri göstermek için Görünümü genişletmek için değişken adının solundaki oka tıklayın. Bir örneği burada verilmiştir bir [FILESTREAM](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) nesnesinde **Yereller** penceresi:  
   
-![Yerel öğeler &#45; FILESTREAM](../debugger/media/locals-filestream.png "Yereller FILESTREAM")  
+![Yerel öğeler&#45;FILESTREAM](../debugger/media/locals-filestream.png "Yereller FILESTREAM")  
   
-## <a name="bkmk_whatvariables"></a>Otomatik değişkenler penceresi değişkenleri görüntülenecek?  
+## <a name="bkmk_whatvariables"></a> Otomatik değişkenler penceresi değişkenleri görüntülenecek?  
  Kullanabileceğiniz **otomobiller** C#, Visual Basic ve C++ kodu penceresinde. **Otomobiller** JavaScript veya F # penceresi desteklemez.  
   
  C# ve Visual Basic **otomobiller** geçerli veya önceki satıra kullanılan herhangi bir değişken penceresinde görüntülenir. Örneğin, dört değişkenleri bildirin ve aşağıdaki gibi ayarlayın:
@@ -55,7 +51,7 @@ Diziler ve nesneleri otomatik değişkenler ve Yereller pencerelerinde ağaç de
 
  Satırında bir kesme noktası ayarlarsanız `c = 3`; çalıştırıp yürütme durduğunda hata ayıklayıcı **otomobiller** penceresi şöyle görünür:  
 
- ![Otomatik değişkenler &#45; CSharp](../debugger/media/autos-csharp.png "otomobiller CSharp")  
+ ![Otomatik değişkenler&#45;CSharp](../debugger/media/autos-csharp.png "otomobiller CSharp")  
 
  Unutmayın değerini `c` 0, çünkü satır `c = 3` henüz yürütülmedi.  
 
@@ -75,13 +71,13 @@ Diziler ve nesneleri otomatik değişkenler ve Yereller pencerelerinde ağaç de
 
  Satırında bir kesme noktası ayarlarsanız `e = 5;` çalıştırıp yürütme durduğunda hata ayıklayıcı **otomobiller** penceresi şöyle görünür:  
   
- ![Otomatik değişkenler &#45; Cplus](../debugger/media/autos-cplus.png "otomobiller Cplus")  
+ ![Otomatik değişkenler&#45;Cplus](../debugger/media/autos-cplus.png "otomobiller Cplus")  
   
  Değişken e başlatılmamış olduğundan Not kod satırında `e = 5;` henüz yürütülmedi.  
   
  Dönüş değerleri işlevler ve bazı durumlarda yöntemler de görebilirsiniz. Bkz: [yöntem çağrılarının döndürülen değerlerini görüntüleme](#bkmk_returnValue) aşağıda.  
   
-##  <a name="bkmk_returnValue"></a>Yöntem çağrılarının döndürülen değerlerini görüntüleme  
+##  <a name="bkmk_returnValue"></a> Yöntem çağrılarının döndürülen değerlerini görüntüleme  
  .NET ve C++ kodu içinde veya dışında bir yöntem çağrısı adımı dönüş değerleri inceleyebilirsiniz. Bu işlevsellik, yöntem çağrısının sonucunu bir yöntemi, bir parametre veya başka bir yöntem dönüş değeri olarak kullanıldığında, örneğin bir yerel değişken depolanmaz yararlıdır.  
   
  Aşağıdaki C# kod iki işlevlerin dönüş değerlerini ekler:  

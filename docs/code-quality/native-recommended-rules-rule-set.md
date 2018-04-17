@@ -1,23 +1,20 @@
 ---
-title: "Yerel önerilen kurallar kural kümesi | Microsoft Docs"
-ms.custom: 
+title: Yerel önerilen kurallar kural kümesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd1a4319fb657580cc37544508659d0c9aeeb06a
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: 0c8be89a5b3f83ddd59d50b246452af1f0c3bd41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="native-recommended-rules-rule-set"></a>Yerel Önerilen Kurallar kural kümesi
 
@@ -87,7 +84,7 @@ Yerel önerilen kurallar olası güvenlik açıklarını ve uygulama çökme (Cr
 |[C6295](../code-quality/c6295.md)|Sonsuz bir döngü|
 |[C6296](../code-quality/c6296.md)|Yalnızca bir kere yürütülmesi döngüsü|
 |[C6297](../code-quality/c6297.md)|Shift sonucunu Cast daha büyük boyutu|
-|[C6299](../code-quality/c6299.md)|Bitfield To Boolean Comparison|
+|[C6299](../code-quality/c6299.md)|Bit alanını bir Boolean karşılaştırması|
 |[C6302](../code-quality/c6302.md)|İşlev biçimlendirmek için geçersiz bir karakter dizesi bağımsız değişkeni|
 |[C6303](../code-quality/c6303.md)|İşlev biçimlendirmek için geçersiz geniş karakter dizesi bağımsız değişkeni|
 |[C6305](../code-quality/c6305.md)|Eşleşmeyen boyutunu ve sayısını kullan|

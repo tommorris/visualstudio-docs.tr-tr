@@ -1,27 +1,23 @@
 ---
-title: "Grafik piksel geçmişi | Microsoft Docs"
-ms.custom: 
+title: Grafik piksel geçmişi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pixelhistory
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966f15e0aac212207e0f6afe96dececc8950aab2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 73e51108c4280d6e3ebf69000c9863610e4a25da
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-pixel-history"></a>Grafik Piksel Geçmişi
 Visual Studio grafik Çözümleyicisi grafik piksel geçmişi penceresinde, belirli bir piksel oyun veya uygulama bir çerçevesinde oluşan Direct3D olaylar tarafından nasıl etkilendiğini anlamanıza yardımcı olur.  
@@ -41,7 +37,7 @@ Visual Studio grafik Çözümleyicisi grafik piksel geçmişi penceresinde, beli
   
  Piksel gölgelendirici çıktısı sonuç rengini oluşturmak için varolan piksel rengiyle nasıl birleştirildiği incelemek için her ilkel genişletebilirsiniz. Buradan inceleyin ya da ilkel ilişkili piksel gölgelendirici kodda hata ayıklama ve daha fazla giriş köşe gölgelendirici incelemek için köşe gölgelendirici düğümü genişletebilirsiniz.  
   
-###  <a name="exclusion"></a>İlkel dışlama  
+###  <a name="exclusion"></a> İlkel dışlama  
  Basit bir tür piksel rengini etkilemesini dışlanırsa, dışlama çeşitli nedenlerden dolayı meydana gelebilir. Her neden bu tabloda açıklanan bir simge ile temsil edilir:  
   
 |Simge|Dışlama nedeni|  

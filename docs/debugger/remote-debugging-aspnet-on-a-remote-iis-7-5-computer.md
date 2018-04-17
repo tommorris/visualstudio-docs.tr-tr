@@ -1,25 +1,21 @@
 ---
-title: "Uzaktan hata ayıklama Uzak IIS bilgisayarda ASP.NET | Microsoft Docs"
+title: Uzaktan hata ayıklama Uzak IIS bilgisayarda ASP.NET | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 07/26/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6f11ec81c740a6930ce4eaef16d4e4e389aaca47
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: 1c8d2cfb57d3e96b845bc243575eb63af88720c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Uzaktan hata ayıklama Uzak IIS bilgisayarda ASP.NET
 IIS'ye dağıtılan bir ASP.NET uygulaması hata ayıklamak için yükleme ve uygulamanızı dağıtıldığı bilgisayarda Uzak araçları çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.
@@ -44,7 +40,7 @@ Uzaktan hata ayıklayıcı, Windows Server 2008 Service Pack 2 ile başlayarak W
 
 2. HomeController.cs dosyasını açın ve bir kesme noktası kümesinde `About()` yöntemi.
 
-## <a name="bkmk_configureIIS"></a>IIS yükle ve Windows Server'da Yapılandır
+## <a name="bkmk_configureIIS"></a> IIS yükle ve Windows Server'da Yapılandır
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -52,7 +48,7 @@ Uzaktan hata ayıklayıcı, Windows Server 2008 Service Pack 2 ile başlayarak W
 
 Güvenlik ayarlarınıza bağlı olarak, bu öğreticide anlatılan yazılım kolayca indirebilirsiniz şekilde tarayıcınıza aşağıdaki Güvenilen siteler eklemek için zamandan tasarruf. Bu sitelere erişimi gerekebilir:
 
-- microsoft.com
+- Microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
@@ -61,7 +57,7 @@ Internet Explorer kullanıyorsanız, Güvenilen siteler giderek ekleyebileceğin
 
 Yazılım yüklediğinizde, çeşitli web sitesi komut dosyaları ve kaynakları yükleme izni vermek için istekleri alabilirsiniz. Çoğu durumda, bu ek kaynakları yazılımı yüklemeniz gerekmez.
 
-## <a name="BKMK_deploy_asp_net"></a>Windows Server'da ASP.NET 4.5 yükleyin
+## <a name="BKMK_deploy_asp_net"></a> Windows Server'da ASP.NET 4.5 yükleyin
 
 IIS üzerinde ASP.NET yüklemek için daha ayrıntılı bilgi isterseniz bkz [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -76,11 +72,11 @@ IIS üzerinde ASP.NET yüklemek için daha ayrıntılı bilgi isterseniz bkz [II
 
 2. Sistemi yeniden başlatın (veya yürütme **net stop edildi /y** arkasından **net start w3svc** sistem yolu değişiklik seçmek için bir komut isteminden).
 
-## <a name="BKMK_install_webdeploy"></a>(İsteğe bağlı) Windows Server'da 3.6 yükleme Web dağıtımı
+## <a name="BKMK_install_webdeploy"></a> (İsteğe bağlı) Windows Server'da 3.6 yükleme Web dağıtımı
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-## <a name="BKMK_deploy_asp_net"></a>Windows Server bilgisayarında ASP.NET Web sitesi yapılandırması
+## <a name="BKMK_deploy_asp_net"></a> Windows Server bilgisayarında ASP.NET Web sitesi yapılandırması
 
 1. Windows Gezgini'ni açın ve yeni bir klasör oluşturun **C:\Publish**, ASP.NET projesi daha sonra dağıtacağı.
 
@@ -98,7 +94,7 @@ IIS üzerinde ASP.NET yüklemek için daha ayrıntılı bilgi isterseniz bkz [II
 
 8. IIS Yöneticisi'nde site seçiliyken, seçin **izinleri Düzenle**ve bu IUSR, IIS_IUSRS ya da okuma ve yürütme hakları olan yetkili bir kullanıcının uygulama havuzu için yapılandırılan kullanıcı emin olun. Bu kullanıcılar hiçbiri mevcut değilse, okuma ve yürütme hakları olan bir kullanıcı olarak IUSR ekleyin.
 
-## <a name="bkmk_webdeploy"></a>(İsteğe bağlı) Yayımlama ve Web dağıtımı Visual Studio'dan kullanarak uygulamayı dağıtma
+## <a name="bkmk_webdeploy"></a> (İsteğe bağlı) Yayımlama ve Web dağıtımı Visual Studio'dan kullanarak uygulamayı dağıtma
 
 [!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
 
@@ -125,7 +121,7 @@ Ayrıca, yayımlama ve dosya sistemi veya diğer araçları kullanarak uygulamay
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="BKMK_msvsmon"></a>İndirin ve Windows Server'da uzak Araçları'nı yükleme
+## <a name="BKMK_msvsmon"></a> İndirin ve Windows Server'da uzak Araçları'nı yükleme
 
 Bu öğreticide, Visual Studio 2017 kullanıyoruz.
 
@@ -134,7 +130,7 @@ Bu öğreticide, Visual Studio 2017 kullanıyoruz.
 > [!TIP]
 > Bazı senaryolarda, bir dosya paylaşımından uzaktan hata ayıklayıcı çalıştırmak için etkili olabilir. Daha fazla bilgi için bkz: [dosya paylaşımından uzaktan hata ayıklayıcı çalıştırmak](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Windows Server'da uzaktan hata ayıklayıcı ayarlama
+## <a name="BKMK_setup"></a> Windows Server'da uzaktan hata ayıklayıcı ayarlama
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -143,13 +139,13 @@ Bu öğreticide, Visual Studio 2017 kullanıyoruz.
 
 Uzaktan hata ayıklayıcı bir hizmet olarak çalışması hakkında daha fazla bilgi için bkz: [uzaktan hata ayıklayıcı bir hizmet olarak çalışması](../debugger/remote-debugging.md#bkmk_configureService).
 
-## <a name="BKMK_attach"></a>Visual Studio bilgisayardan ASP.NET uygulamasına ekleme
+## <a name="BKMK_attach"></a> Visual Studio bilgisayardan ASP.NET uygulamasına ekleme
 
 1. Visual Studio bilgisayarda açın **MyASPApp** çözümü.
 2. Visual Studio'da sırasıyla **hata ayıklama > ekleme işlemi için** (Ctrl + Alt + P).
 
     > [!TIP]
-    > Visual Studio 2017 ', daha önce iliştirilmiş kullanarak aynı işlem için iliştirebilirsiniz **hata ayıklama > işlem için yeniden bağlayın...** (Shift+Alt+P). 
+    > Visual Studio 2017 ', daha önce iliştirilmiş kullanarak aynı işlem için iliştirebilirsiniz **hata ayıklama > işlem için yeniden bağlayın...** (Shift + Alt + P). 
 
 3. Niteleyici alan kümesi'ne  **\<uzak bilgisayar adı >: 4022**.
 4. Tıklatın **yenileme**.
@@ -171,7 +167,7 @@ Uzaktan hata ayıklayıcı bir hizmet olarak çalışması hakkında daha fazla 
 
     Visual Studio'da kesme noktası isabet.
 
-## <a name="bkmk_openports"></a>Sorun giderme: Windows Server üzerinde gerekli bağlantı noktalarını açın
+## <a name="bkmk_openports"></a> Sorun giderme: Windows Server üzerinde gerekli bağlantı noktalarını açın
 
 Çoğu kurulumları ASP.NET ve uzaktan hata ayıklayıcı yüklemesi tarafından gerekli bağlantı noktaları açıldı. Ancak, bağlantı noktalarının açık olduğunu doğrulamak gerekebilir.
 

@@ -1,21 +1,18 @@
 ---
-title: "Blend'de Nesnlerin stilini değiştirme | Microsoft Docs"
-ms.custom: 
+title: Blend'de nesnlerin stilini değiştirme
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3073255564f81273fb6c6001538abf98d78766f7
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 627e2c3f6d81eed00923b6fc15fef453ae7634ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Blend'de nesnlerin stilini değiştirme
 
@@ -26,8 +23,6 @@ Yeniden kullanma ayarları veya ayar gruplarını istiyorsanız, yeniden kullan�
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Fırçalar: bir nesne görünümünü değiştirme
 
 Görünümünü değiştirmek istiyorsanız fırça nesneye uygulanır.
-
-**Kısa bir video izlemek:** ![Oynat düğmesini](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Fırçalar Düzenleyicisi](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Yinelenen bir resim veya desen bir nesne üzerinde boyama
 
@@ -47,8 +42,6 @@ Denetimindeki bir düğme gibi visual Fırça oluşturma. Aşağıdaki çizimler
 
 ![Görsel fırça](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![Döşenir visual fırça](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
 
-**Kısa bir video izlemek:** ![Oynat düğmesini](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Döşeme fırçaları](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).
-
 ## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Stilleri ve şablonları: denetimleri arasında tutarlı bir görünüm oluşturma
 
 Bir kez Tasarım görünümünü ve davranışını ve böylece tek tek korumak yok Bu tasarımı diğer denetimleri uygulayın.
@@ -59,7 +52,7 @@ Bir kez Tasarım görünümünü ve davranışını ve böylece tek tek korumak 
 
 ### <a name="create-a-template-or-style"></a>Bir şablonu veya stil oluşturma
 
-Şablon oluşturmanın iki yolu vardır. Bir denetime, yüzeyinde herhangi bir nesne dönüştürebilir veya varolan bir denetimi şablonunuzu temel alabilir.
+Bir şablon oluşturmak için iki yol demektir. Bir denetime, yüzeyinde herhangi bir nesne dönüştürebilir veya varolan bir denetimi şablonunuzu temel alabilir.
 
 Herhangi bir nesne için bir denetim şablonu dönüştürmek için nesneyi seçin ve ardından **Araçları** menüsünde seçin **olun içine denetim**.
 
@@ -81,7 +74,7 @@ Bir stil oluşturmak için nesneyi seçin ve ardından **nesne** menüsünde se�
 
 > [!NOTE]
 > Stilleri veya her tür denetimi için şablonlar oluşturulamıyor. Bir denetim bunları desteklemiyorsa, içerik haritası düğmesi çalışma yüzeyi gösterilmez.
-> Ana belgenizi düzenleme kapsamına dönmek için tıklatın **dönmek için kapsam** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Ana belgenizi düzenleme kapsamına dönmek için tıklatın **dönmek için kapsam** ![kapsam simge durumuna döndürmek](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Stil veya şablon için bir denetim Uygula
 
@@ -91,7 +84,7 @@ Bir nesneye sağ [nesneleri ve zaman çizelgesi](../designers/creating-a-ui-by-u
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Varsayılan stil veya şablon bir denetimin geri yükleme
 
-Denetimi seçin ve [özellikleri](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) paneli, bulun **stili** veya **şablonu** özelliği. Seçin **Gelişmiş Seçenekler** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png)ve ardından **sıfırlama** kısayol menüsünde.
+Denetimi seçin ve [özellikleri](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) paneli, bulun **stili** veya **şablonu** özelliği. Seçin **Gelişmiş Seçenekler**ve ardından **sıfırlama** kısayol menüsünde.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Görsel durumlar: kendi durumuna bağlı denetiminin görünümünü değiştirme
 
@@ -101,13 +94,11 @@ Denetimlerin Kullanıcı etkileşimlerine dayalı farklı görsel görünümler 
 
 **Kısa bir video izlemek:** ![Oynat düğmesini](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF denetimleri durumunu yöneten](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-##  <a name="Resources"></a>Kaynaklar: renk, stil ve şablonları oluşturmak ve bunları daha sonra yeniden
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Kaynaklar: renk, stil ve şablonları oluşturmak ve bunları daha sonra yeniden
 
 Bir kaynağa projenizdeki herhangi bir şeyi dönüştürebilirsiniz. Farklı yerlerde uygulamanızda yeniden bir nesne bir kaynaktır. Örneğin, bir kez bir renk oluşturmak, bir kaynak olun ve sonra o renk birkaç nesneler üzerinde kullanın. Tüm bu nesneleri rengini değiştirmek için yalnızca renk kaynağı değiştirin.
 
 ![Renk kaynak düğmeye Dönüştür](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Renk kaynak Oluştur iletişim kutusu](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
-
-**Kısa bir video izlemek:** ![Oynat düğmesini](../designers/media/bldadminconsoleinitialconfigicon.PNG) [kısa bir touch kaynaklardaki](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

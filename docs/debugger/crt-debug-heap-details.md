@@ -1,12 +1,10 @@
 ---
-title: "CRT hata ayıklama öbeği ayrıntıları | Microsoft Docs"
-ms.custom: 
+title: CRT hata ayıklama öbeği ayrıntıları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -73,21 +71,21 @@ helpviewer_keywords:
 - _CRTDBG_CHECK_CRT_DF macro
 - debug heap, reporting functions
 ms.assetid: bf78ace6-28e4-4a04-97c6-39e0cdd00ba4
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cc7b945a8c53d290f573eac4565f2240ec7a2d7b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e3bbbed8eb7e7ca7294ca23386b5b1ec9add31e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="crt-debug-heap-details"></a>CRT Hata Ayıklama Öbeği Ayrıntıları
 Bu konu CRT hata ayıklama yığınını ayrıntılı bir bakış sağlar.  
   
-##  <a name="BKMK_Contents"></a>İçeriği  
+##  <a name="BKMK_Contents"></a> içeriği  
  [Hata ayıklama yığınını ile arabellek taşmaları Bul](#BKMK_Find_buffer_overruns_with_debug_heap)  
   
  [Hata ayıklama yığınındaki blokları türleri](#BKMK_Types_of_blocks_on_the_debug_heap)  
@@ -102,7 +100,7 @@ Bu konu CRT hata ayıklama yığınını ayrıntılı bir bakış sağlar.
   
  [Yığın ayırma isteklerini izleme](#BKMK_Track_Heap_Allocation_Requests)  
   
-##  <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a>Hata ayıklama yığınını ile arabellek taşmaları Bul  
+##  <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Hata ayıklama yığınını ile arabellek taşmaları Bul  
  İki programcıları karşılaştığınız en yaygın ve çözümü sorunları (artık gerekli olmayan sonra ayırmaları boşaltmak başarısız olan) bir ayrılmış arabellek ve bellek sızıntıları sonuna üzerine. Hata ayıklama yığınını bu tür bellek ayırma sorunlarını çözmek için güçlü araçlar sağlar.  
   
  Heap işlevleri sürümleri sürümde kullanılan standart ya da temel sürümleri çağrısı hata ayıklama derlemeleri. Bir bellek bloğu istediğinde, hata ayıklama yığını Yöneticisi temel yığınından biraz daha büyük bir blok istenir ve bu bloğu, kısmı için bir işaretçi döndürür daha bellek ayırır. Örneğin, uygulamanızın içeren çağrı varsayalım: `malloc( 10 )`. Yayın derlemesi içinde [malloc](/cpp/c-runtime-library/reference/malloc) 10 bayt ayırma isteyen temel öbek ayırma yordamı çağırırdı. Ancak, bir hata ayıklama derlemesi içinde `malloc` çağırırdı [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg), hangi ardından çağıran bir ayırma 10 bayt artı yaklaşık 36 bayt ek bellek isteme temel öbek ayırma yordamı. Hata ayıklama yığınını ortaya çıkan tüm bellek blokları olduğunda bunlar ayrılan göre sıralanmış tek bağlı bir liste bağlanır.  
@@ -149,7 +147,7 @@ typedef struct _CrtMemBlockHeader
   
  ![Başa dön](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
-##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a>Hata ayıklama yığınındaki blokları türleri  
+##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Hata ayıklama yığınındaki blokları türleri  
  Her bellek bloğu hata ayıklama yığınındaki ayırma beş türden biri için atanır. Bu tür izlenen ve farklı sızıntısı algılama ve durumu raporlama amaçları doğrultusunda bildirdi. Hata ayıklama yığın ayırma işlevleri birine doğrudan çağrı gibi kullanarak ayırarak bir bloğun türünü belirtebilirsiniz [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). Bellek blokları hata ayıklama yığınındaki beş türleri (kümesinde **nBlockUse** üyesi **_CrtMemBlockHeader** yapısı) aşağıdaki gibidir:  
   
  **_NORMAL_BLOCK**  
@@ -183,7 +181,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  ![Başa dön](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
-##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a>Yığın bütünlüğü ve bellek sızıntıları denetle  
+##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Yığın bütünlüğü ve bellek sızıntıları denetle  
  Hata ayıklama yığınını ait özelliklerin çoğunu kodunuzu içinde erişilen gerekir. Aşağıdaki bölümde bazı özellikleri ve bunların nasıl kullanılacağını açıklar.  
   
  `_CrtCheckMemory`  
@@ -204,7 +202,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  ![Başa dön](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
-##  <a name="BKMK_Configure_the_debug_heap"></a>Hata ayıklama yığınını yapılandırın  
+##  <a name="BKMK_Configure_the_debug_heap"></a> Hata ayıklama yığınını yapılandırın  
  Heap işlevleri gibi tüm çağrıları `malloc`, `free`, `calloc`, `realloc`, `new`, ve `delete` hata ayıklama sürümleri hata ayıklama yığınında çalışması bu işlevlerin çözümlenemiyor. Bir bellek bloğu boş olduğunda hata ayıklama yığınını otomatik olarak ayrılmış alanınızı her iki tarafında arabellekleri bütünlüğünü denetler ve üzerine oluştu, hata raporu verir.  
   
  **Hata ayıklama yığınını kullanmak için**  
@@ -215,7 +213,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
 1.  Çağrı `_CrtSetDbgFlag` ile `newFlag` parametre kümesine `_CRTDBG_REPORT_FLAG` (geçerli edinme `_crtDbgFlag` durumu) ve döndürülen değer geçici bir değişkende saklayın.  
   
-2.  Herhangi bir BITS tarafından Aç `OR`- lık (bit düzeyinde &#124; sembol) (uygulama kodunda bildirim sabitler tarafından gösterilen) karşılık gelen bit maskesi geçici değişkenle.  
+2.  Herhangi bir BITS tarafından Aç `OR`- lık (bit düzeyinde &#124; simgesi) (uygulama kodunda bildirim sabitler tarafından gösterilen) karşılık gelen bit maskesi geçici değişkenle.  
   
 3.  Diğer BITS tarafından devre dışı bırakma `AND`- lık (bit düzeyinde & simgesi) değişkenle bir `NOT` (bit düzeyinde ~ simgesi), uygun bit maskesi.  
   
@@ -239,7 +237,7 @@ _CrtSetDbgFlag( tmpFlag );
   
  ![Başa dön](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
-##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a>Yeni, silme ve _CLIENT_BLOCKs c++ hata ayıklama yığını  
+##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> Yeni, silme ve _CLIENT_BLOCKs c++ hata ayıklama yığını  
  C çalışma zamanı kitaplığı hata ayıklama sürümleri C++ hata ayıklama sürümleri içeren `new` ve `delete` işleçler. Kullanırsanız `_CLIENT_BLOCK` ayırma türü, hata ayıklama sürümü çağırmalıdır `new` doğrudan işleci veya değiştirme makroları oluşturmak `new` hata ayıklama modunda aşağıdaki örnekte gösterildiği gibi işleci:  
   
 ```  
@@ -277,7 +275,7 @@ int main( )   {
   
  ![Başa dön](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a>Yığın durumu raporlama işlevleri  
+##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Yığın durumu raporlama işlevleri  
  **_CrtMemState**  
   
  Belirli bir zamanda öbek durumunun Özet bir anlık görüntü yakalamak için CRTDBG içinde tanımlanan _CrtMemState yapısı kullanın. Y:  
@@ -314,7 +312,7 @@ typedef struct _CrtMemState
   
  ![Başa dön](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
-##  <a name="BKMK_Track_Heap_Allocation_Requests"></a>Yığın ayırma isteklerini izleme  
+##  <a name="BKMK_Track_Heap_Allocation_Requests"></a> Yığın ayırma isteklerini izleme  
  Konumundaki kaynak dosya adı ve satır numarası yerini tam olarak belirtmekte rağmen bir assert ya da raporlama makrosu yürüten genellikle bir sorunun nedenini bulmak faydalıdır, aynı yığın ayırma işlevleri true olarak büyük olasılıkla uygun değildir. Bir uygulamanın mantığı ağacında birçok uygun noktalarda makroları eklenebilir, ancak bir ayırma genellikle birçok farklı yerlerden birçok farklı zamanlarda adlı özel bir yordama içinde kaçınma. Hangi satır kod hatalı bir ayırma oluşturulmayan soru genellikle olan ancak yerine hangisinin ayırmaları binlerce kod satırını tarafından yapılan hatalı ve neden oldu.  
   
  **Benzersiz ayırma isteği numaraları ve _crtBreakAlloc**  

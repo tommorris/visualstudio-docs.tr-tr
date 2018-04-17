@@ -1,13 +1,10 @@
 ---
-title: "&lt;Komutları&gt; öğe (Önyükleyici) | Microsoft Docs"
-ms.custom: 
+title: '&lt;Komutları&gt; öğe (Önyükleyici) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <Commands> element [bootstrapper]
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9d886d7fa7ea2ab6cb8c04810ab404a29898cd02
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Komutları&gt; öğe (Önyükleyici)
 `Commands` Öğesi uygulayan altındaki öğeler tarafından açıklanan testleri `InstallChecks` öğesi ve hangi paket bildirir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] önyükleyici sınama başarısız olursa yüklemelisiniz.  
@@ -96,7 +92,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="bypassif"></a>BypassIf  
  `BypassIf` Bir alt öğedir `InstallConditions` öğesi ve komut değil yürütülmelidir altında pozitif bir koşulu açıklar. Her `InstallConditions` öğesi sıfır veya daha fazla olabilir `BypassIf` öğeleri.  
   
- `BypassIf`Aşağıdaki özniteliklere sahiptir.  
+ `BypassIf` Aşağıdaki özniteliklere sahiptir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
@@ -108,7 +104,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="failif"></a>FailIf  
  `FailIf` Bir alt öğedir `InstallConditions` öğesi ve altında yüklemenin durması gereken pozitif bir koşulu açıklar. Her `InstallConditions` öğesi sıfır veya daha fazla olabilir `FailIf` öğeleri.  
   
- `FailIf`Aşağıdaki özniteliklere sahiptir.  
+ `FailIf` Aşağıdaki özniteliklere sahiptir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
@@ -119,10 +115,10 @@ ms.lasthandoff: 12/22/2017
 |`Schedule`|İsteğe bağlı. Adı bir `Schedule` bu kuralın ne zaman değerlendirilmelidir tanımlayan etiket.|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- `ExitCodes` Bir alt öğedir `Command` öğesi. `ExitCodes` Öğesi içeren bir veya daha fazla `ExitCode` yükleme paketinden yanıt olarak bir çıkış kodu yapmalısınız belirlemek öğeleri. Bir olabilir isteğe bağlı `ExitCode` öğesinin altında bir `Command` öğesi. `ExitCodes`öznitelikleri yok.  
+ `ExitCodes` Bir alt öğedir `Command` öğesi. `ExitCodes` Öğesi içeren bir veya daha fazla `ExitCode` yükleme paketinden yanıt olarak bir çıkış kodu yapmalısınız belirlemek öğeleri. Bir olabilir isteğe bağlı `ExitCode` öğesinin altında bir `Command` öğesi. `ExitCodes` Öznitelikleri yok.  
   
 ## <a name="exitcode"></a>exitCode  
- `ExitCode` Bir alt öğedir `ExitCodes` öğesi. `ExitCode` Öğesi belirler yükleme paketinden yanıt olarak bir çıkış kodu yapmalısınız. `ExitCode`Aşağıdaki özniteliklere sahiptir ve alt öğeleri içerir.  
+ `ExitCode` Bir alt öğedir `ExitCodes` öğesi. `ExitCode` Öğesi belirler yükleme paketinden yanıt olarak bir çıkış kodu yapmalısınız. `ExitCode` Aşağıdaki özniteliklere sahiptir ve alt öğeleri içerir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  

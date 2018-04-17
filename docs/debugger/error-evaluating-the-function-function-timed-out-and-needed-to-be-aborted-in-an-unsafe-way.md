@@ -1,26 +1,23 @@
 ---
-title: "Hata: gözden geçirilmesi işlevi &#39; işlevi &#39; zaman aşımına uğradı ve güvenli bir şekilde durdurulmasına gerek | Microsoft Docs"
-ms.custom: 
+title: 'Hata: işlevi hesaplama &#39;işlevi&#39; zaman aşımına uğradı ve güvenli bir şekilde durdurulmasına gerek | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d0d03efbb844c29195eca7c13303a850c168e0f
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 1c230c27c8d1c8dcc01910fa598fb8a97b314845
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Hata: gözden geçirilmesi işlevi &#39; işlevi &#39; zaman aşımına uğradı ve güvenli bir şekilde durdurulmasına gerekli
+# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Hata: işlevi hesaplama &#39;işlevi&#39; zaman aşımına uğradı ve güvenli bir şekilde durdurulmasına gerekli
 
 Tam ileti metni: 'function' işlevi değerlendirme zaman aşımına uğradı ve güvenli bir şekilde durdurulmasına gerekli. Bu hedef işlem bozulmuş olabilir. 
 
@@ -37,9 +34,9 @@ Bu sorun için üç olası çözümleri vardır.
 Hata ayıklayıcı ulaşmaya çalıştık işlevin adını hata iletisi size bildirir. Bu işlev değiştirebilir, özellik alıcısı veya ToString yöntemini çağırma hata ayıklayıcı engelleyebilir. Aşağıdakilerden birini deneyin:
  
 * Başka türde bir özellik alıcısı yanı sıra kodu yöntemini değiştirin veya ToString yöntemini ve sorun kaybolur.
-    veya
+    -veya-
 * (ToString için) DebuggerDisplay özniteliği türüne tanımlayın ve ToString dışında bir şey değerlendirmek hata ayıklayıcı olabilir.
-    veya
+    -veya-
 * (Özellik alıcısı için) PUT `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` özelliği özniteliği. Bu özellik API Uyumluluk nedenleriyle kalmak için gereken bir yöntem varsa yararlı olabilir, ancak gerçekten bir yöntemi olması gerekir.
  
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Çözüm #2: Değerlendirme iptal etmek için hata ayıklayıcı isteyin hedef koda sahip

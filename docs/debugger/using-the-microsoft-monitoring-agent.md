@@ -1,23 +1,21 @@
 ---
 title: Microsoft Monitoring Agent kullanma | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e5963568eac26e7f88acf3ba07466fd1261eed1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e1a0bb0567b4ff76bd6dfac1c28fe1eccd7f48c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft İzleme Aracısı’nı kullanma
 Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoint 2010 veya 2013 uygulamaları hataları, performans sorunlarını ya da diğer sorunlar için yerel olarak izleyebilirsiniz **Microsoft İzleme Aracısı**. Tanılama olaylarını aracıdan bir IntelliTrace günlük (.iTrace) dosyasına kaydedebilirsiniz. Ardından tüm Visual Studio tanılama araçları ile sorunları hata ayıklamak için Visual Studio Enterprise'ı (ancak Professional veya topluluk sürümleri) oturum açabilirsiniz. Aracısı'nı çalıştırarak IntelliTrace Tanılama verilerini ve yöntem verilerini de toplayabilirsiniz **izleme** modu. Microsoft Monitoring Agent ile tümleştirilebilir [Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) ve [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). Yüklendiğinde Microsoft Monitoring Agent hedef sistemin ortam değiştirmez.  
@@ -35,10 +33,10 @@ Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoi
   
 3.  [3. adım: Kaydet olayları kaydedilir.](#SaveEvents)  
   
-##  <a name="SetUpMonitoring"></a>1. adım: Microsoft İzleme Aracısı ayarlama  
+##  <a name="SetUpMonitoring"></a> 1. adım: Microsoft İzleme Aracısı ayarlama  
  Uygulamanızı değiştirmeden yerel izleme yapmak için web sunucunuz üzerinde bağımsız aracıyı ayarlayın. System Center 2012 kullanıyorsanız bkz [Microsoft İzleme Aracısı yükleme](http://technet.microsoft.com/library/dn465156.aspx).  
   
-###  <a name="SetUpStandaloneMMA"></a>Tek başına aracısını ayarlama  
+###  <a name="SetUpStandaloneMMA"></a> Tek başına aracısını ayarlama  
   
 1.  Olduğundan emin olun:  
   
@@ -67,7 +65,7 @@ Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoi
   
 ### <a name="q--a"></a>Soru - Yanıt  
   
-####  <a name="PowerShell2"></a>S: ı Windows PowerShell 2.0 yoksa ne?  
+####  <a name="PowerShell2"></a> S: ı Windows PowerShell 2.0 yoksa ne?  
  **Y:** PowerShell 3.0 kullanmanız önerilir. Aksi halde, PowerShell'i her çalıştırdığınızda Microsoft İzleme Aracısı PowerShell cmdlet'lerini içeri aktarmanız gerekir. Ayrıca, indirilebilen Yardım içeriğine de erişiminiz olmayacaktır.  
   
 1.  Açık bir **Windows PowerShell** veya **Windows PowerShell ISE** komut istemini yönetici olarak.  
@@ -78,7 +76,7 @@ Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoi
   
 3.  [TechNet ziyaret](http://technet.microsoft.com/systemcenter/default) en son Yardım içeriği almak için.  
   
-####  <a name="FullPermissionsITLog"></a>S: uygulama havuzu için izinleri nasıl ayarlarım?  
+####  <a name="FullPermissionsITLog"></a> S: uygulama havuzu için izinleri nasıl ayarlarım?  
  **Y:** pencerelerini kullanma **icacls** komutunu veya Windows Explorer (veya dosya Gezgini'ni) kullanın. Örneğin:  
   
 -   Windows izinleri ayarlamak için **icacls** komutu:  
@@ -91,7 +89,7 @@ Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoi
   
          `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-     veya  
+     -veya-  
   
 -   Windows Gezgini (veya dosya Gezgini'ni) izinleriyle ayarlamak için:  
   
@@ -109,7 +107,7 @@ Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoi
   
     7.  Uygulama havuzu olduğundan emin olun **okuma & yürütme** izinleri.  
   
-##  <a name="MonitorEvents"></a>2. adım: uygulamanızı İzlemeyi Başlat  
+##  <a name="MonitorEvents"></a> 2. adım: uygulamanızı İzlemeyi Başlat  
  Windows PowerShell kullanmak [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) uygulamanızı izlemeye başlamak için komutu. System Center 2012 kullanıyorsanız bkz [Microsoft Monitoring Agent ile Web uygulamalarını izleme](http://technet.microsoft.com/library/dn465157.aspx).  
   
 1.  Web sunucunuz üzerinde açık bir **Windows PowerShell** veya **Windows PowerShell ISE** komut istemini yönetici olarak.  
@@ -136,7 +134,7 @@ Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoi
   
     |||  
     |-|-|  
-    |*"\<uygulamaadı >"*|IIS içinde web sitesinin yolunu ve web uygulamasının adını belirtin. İsterseniz IIS yolunu da ekleyebilirsiniz.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> veya<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Bu yolu IIS Yöneticisi'nde bulabilirsiniz. Örneğin:<br /><br /> ![IIS web sitesi ve web uygulaması yolu](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Aynı zamanda [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) ve [alma WebApplication](http://technet.microsoft.com/library/ee790554.aspx) komutları.|  
+    |*"\<uygulamaadı >"*|IIS içinde web sitesinin yolunu ve web uygulamasının adını belirtin. İsterseniz IIS yolunu da ekleyebilirsiniz.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> -veya-<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Bu yolu IIS Yöneticisi'nde bulabilirsiniz. Örneğin:<br /><br /> ![IIS web sitesi ve web uygulaması yolu](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Aynı zamanda [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) ve [alma WebApplication](http://technet.microsoft.com/library/ee790554.aspx) komutları.|  
     |*\<monitoringMode >*|İzleme modunu belirtin:<br /><br /> <ul><li>**İzleyici**: özel durum olayları ve performans olaylarını en az ayrıntılarını kaydeder. Bu mod varsayılan toplama planını kullanır.</li><li>**İzleme**: kayıt işlev düzeyi ayrıntıları veya belirtilen koleksiyon planı kullanarak SharePoint 2010 ve SharePoint 2013 uygulamalarını izleyin. Bu mod, uygulamanızın daha yavaş çalışmasına neden olabilir.<br /><br /> <ul><li>[S: uygulama havuzu için izinleri nasıl ayarlarım?](#FullPermissionsITLog)</li><li>[S: en çok veri Uygulamam yavaşlamasının olmadan nasıl sağlarım?](#Minimizing)</li></ul><br />     Bu örnek, bir SharePoint sitesi üzerindeki SharePoint uygulaması için olayları kaydeder:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" izleme "C:\Program Files\Microsoft Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml izleme" "C:\IntelliTraceLogs"**</li><li>**Özel**: Belirtilen özel koleksiyon planı kullanarak özel ayrıntıları kaydedin. İzleme başladıktan sonra toplama planını değiştirirseniz izlemeyi yeniden başlatmanız gerekir.</li></ul>|  
     |*"\<outputPath >"*|IntelliTrace günlüklerinin depolanacağı tam dizin yolunu belirtin. Bu dizini izlemeye başlamadan önce oluşturduğunuzdan emin olun.|  
     |*\<UInt32 >*|IntelliTrace günlüğünün çıkabileceği en büyük boyutu belirtin. IntelliTrace günlüğü için varsayılan en büyük boyut 250 MB'tır.<br /><br /> Günlük bu sınıra ulaştığında, aracı yeni girişlere yer açmak için en eski girişlerin üzerine yazar. Bu sınırı değiştirmek için kullanın **- Maximumfilesizeınmegabytes** seçeneğini veya düzenleme `MaximumLogFileSize` koleksiyon planı özniteliği.|  
@@ -148,7 +146,7 @@ Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoi
   
 ### <a name="q--a"></a>Soru - Yanıt  
   
-####  <a name="Minimizing"></a>S: en çok veri Uygulamam yavaşlamasının olmadan nasıl sağlarım?  
+####  <a name="Minimizing"></a> S: en çok veri Uygulamam yavaşlamasının olmadan nasıl sağlarım?  
  **Y:** Microsoft İzleme Aracısı çok fazla veri toplayabilir ve toplamak için seçtiğiniz veri ve topladığınız nasıl bağlı olarak, uygulamanızın performansı etkiler. Uygulamanızı yavaşlamasının olmadan çoğu veri almak için bazı yöntemler şunlardır:  
   
 -   Web uygulamaları ve SharePoint uygulamaları için, aracı belirtilen uygulama havuzunu paylaşan her uygulama için veri kaydeder. Bu aynı uygulama havuzunu paylaşan herhangi bir uygulamayı, toplamayı tek bir uygulamanın modüllerine kısıtlamanıza rağmen yavaşlatabilir. Diğer uygulamaları yavaşlatmayı önlemek için, her uygulamayı kendi uygulama havuzunda barındırın.  
@@ -229,7 +227,7 @@ Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoi
   
  Aracı `id`, `Employee.Id` ve `Employee.Name` değerlerini ve `Employee` yönteminden döndürülen `AlterEmployee` nesnesini kaydeder. Ancak aracı `Address` nesnesi hakkında, nesnenin null olup olmadığı dışında bilgi kaydetmez. Aracı, ayrıca, `AlterEmployee` yöntemindeki yerel değişkenlerle ilgili olarak, diğer yöntemler bu yerel değişkenleri parametre olarak kullanıp onların yöntem parametresi olarak kaydedilmesini sağlamadığı sürece, veri kaydetmez.  
   
-##  <a name="SaveEvents"></a>3. adım: Kaydet olayları kaydedilir.  
+##  <a name="SaveEvents"></a> 3. adım: Kaydet olayları kaydedilir.  
  Bir hata veya performans sorunu bulduğunuzda, kayıtlı olayları bir IntelliTrace günlüğüne kaydedin. Aracı günlüğü yalnızca olay kaydettiyse oluşturur. System Center 2012 kullanıyorsanız bkz [Microsoft Monitoring Agent ile Web uygulamalarını izleme](http://technet.microsoft.com/library/dn465157.aspx).  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Kayıtlı olayları kaydedip izlemeye devam etme  
@@ -241,7 +239,7 @@ Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoi
   
      **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \-veya -  
+     \- veya -  
   
      **Checkpoint-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
@@ -249,7 +247,7 @@ Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoi
   
      **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
-     veya  
+     -veya-  
   
      **PS C: > Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
@@ -271,7 +269,7 @@ Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoi
   
      **Stop-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \-veya -  
+     \- veya -  
   
      **Stop-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
@@ -283,7 +281,7 @@ Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoi
   
      **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
-     \-veya -  
+     \- veya -  
   
      **PS C:\\> Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   

@@ -1,23 +1,21 @@
 ---
-title: "Nasıl yapılır: Direct2D veya Javascipt uygulamaları ile kullanmak için bir doku dışa | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: Direct2D veya Javascipt uygulamaları ile kullanmak için bir doku dışa | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cce24e1daeeded8482d43b64a3c81aebd06e22bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5b4aa613339fa169770b6999b5b2a335be7330c2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Nasıl yapılır: Direct2D veya Javascript Uygulamaları Kullanmak için Doku Dışa Aktarma
 Görüntü içerik ardışık düzen Direct2D'ın iç işleme kuralları ile uyumlu olan dokular oluşturabilirsiniz. Bu tür dokuları Direct2D kullanan uygulamalar ve JavaScript kullanılarak oluşturulan UWP uygulamalar için uygundur.  

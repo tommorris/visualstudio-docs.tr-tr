@@ -1,13 +1,10 @@
 ---
-title: "Hata ayıklayıcıdaki ifadeler | Microsoft Docs"
-ms.custom: 
+title: Hata ayıklayıcıdaki ifadeler | Microsoft Docs
+ms.custom: ''
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
 helpviewer_keywords:
@@ -20,17 +17,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 - debugging [Visual Studio], variable evaluation
 ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd1a477a7d02171eecea51b26f796d9c958c09eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 38d6c75aae31745ece9c3fde95ab9982c478b666
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio Hata ayıklayıcıdaki ifadeler
 Visual Studio hata ayıklayıcısı bir ifadede girdiğinizde, çalışan ifade değerlendiricisi içerir **QuickWatch** iletişim kutusu, **izleme** penceresinde veya **hemen** penceresi. İfade değerlendiricileri iş ayrıca altındadır **kesme noktaları** penceresi ve hata ayıklayıcısı diğer birçok yerde.
@@ -90,7 +86,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>Hata ayıklayıcı iç işlevler durumunu korumak için kullanma  
+###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Hata ayıklayıcı iç işlevler durumunu korumak için kullanma  
  Hata ayıklayıcı iç işlevler uygulama durumunu değiştirmeden ifadelerinde belirli C/C++ işlevleri çağırmak için bir yol sağlar.  
   
  Hata ayıklayıcı iç işlevler:  
@@ -122,7 +118,7 @@ int main()
   
 -   Kutulama ve kutudan çıkarma desteklenmiyor.  
   
--   `Sizeof`işleci desteklenmiyor.  
+-   `Sizeof` işleci desteklenmiyor.  
   
 ## <a name="c---unsupported-expressions"></a>C# - desteklenmeyen ifadeler  
   
@@ -131,7 +127,7 @@ int main()
   
  Dinamik nesneler aşağıdaki özellikleri desteklenmez:  
   
--   Bileşik işleçleri `+=`, `-=`, `%=`, `/=`, ve`*=`  
+-   Bileşik işleçleri `+=`, `-=`, `%=`, `/=`, ve `*=`  
   
 -   Sayısal atamalar ve tür bağımsız değişkeni atamalar da dahil olmak üzere birçok atamaları  
   
@@ -143,7 +139,7 @@ int main()
   
 -   Bir dizin oluşturucu atama  
   
--   Boole işleçleri `&&` ve`||`  
+-   Boole işleçleri `&&` ve `||`  
   
 ### <a name="anonymous-methods"></a>Anonim Yöntemler  
  Yeni anonim yöntemler oluşturulması desteklenmiyor.  
@@ -155,7 +151,7 @@ int main()
   
  Dinamik nesneler aşağıdaki özellikleri desteklenmez:  
   
--   Bileşik işleçleri `+=`, `-=`, `%=`, `/=`, ve`*=`  
+-   Bileşik işleçleri `+=`, `-=`, `%=`, `/=`, ve `*=`  
   
 -   Sayısal atamalar ve tür bağımsız değişkeni atamalar da dahil olmak üzere birçok atamaları  
   
@@ -167,7 +163,7 @@ int main()
   
 -   Bir dizin oluşturucu atama  
   
--   Boole işleçleri `&&` ve`||`  
+-   Boole işleçleri `&&` ve `||`  
   
 ### <a name="local-constants"></a>Yerel sabitleri  
  Yerel sabitleri desteklenmez.  

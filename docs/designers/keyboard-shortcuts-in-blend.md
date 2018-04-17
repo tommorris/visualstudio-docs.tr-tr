@@ -1,23 +1,21 @@
 ---
-title: "Klavye kısayolları blend'de | Microsoft Docs"
-ms.custom: 
+title: Klavye kısayolları blend'de | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: afdf338d300d67964499fc67ce260fc32b8664af
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 46fdb4f670bf6b893d721c01254ab780aa8ac405
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Blend'de klavye kısayolları
 ## <a name="project-shortcuts"></a>Proje kısayolları  
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 |Tüm belgeleri kaydetme|CTRL + SHIFT + S|  
 |Etkin belgeyi Kapat|CTRL + W|  
 |Tüm açık belgeleri kapatma|CTRL + SHIFT + W|  
-|Son eylemi geri al|CTRL + Z|  
+|Son eylemi geri al|CTRL+Z|  
 |Geri alınan son eylemi yinele|CTRL + Y veya CTRL + SHIFT + Z|  
 |Tasarım zamanı ek açıklama oluşturur|CTRL + SHIFT + T|  
 |Kes|CTRL+X|  

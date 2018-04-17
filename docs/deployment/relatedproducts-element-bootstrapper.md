@@ -1,13 +1,10 @@
 ---
-title: "&lt;RelatedProducts&gt; öğe (Önyükleyici) | Microsoft Docs"
-ms.custom: 
+title: '&lt;RelatedProducts&gt; öğe (Önyükleyici) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
 - MSBuild.GenerateBootstrapper.DuplicateItems
@@ -22,17 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - <RelatedProducts> element [bootstrapper]
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 548c1002eae581dc0e231f8dd2e28ee4a8376e27
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9fafc77df0bc557952bd5e197f3c950a3d028e3e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; öğe (Önyükleyici)
 `RelatedProducts` Öğesi bağlı ya da geçerli ürün dahil diğer ürünleri tanımlar.  
@@ -61,7 +57,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="dependsonproduct"></a>DependsOnProduct  
  `DependsOnProduct` Öğesi geçerli ürün adlandırılmış ürüne bağlı bağlıdır ve adlandırılmış ürünün geçerli bir önce yüklenmesi gerektiğini belirtir. Bir alt öğesi değil `RelatedProducts` öğesi. A `RelatedProducts` öğesi bir veya daha fazla olabilir `DependsOnProduct` öğeleri.  
   
- `DependsOnProduct`Aşağıdaki özniteliklere sahiptir.  
+ `DependsOnProduct` Aşağıdaki özniteliklere sahiptir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
@@ -73,7 +69,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="includesproduct"></a>IncludesProduct  
  `IncludesProduct` Öğesi güveninin bir ürünün geçerli yüklemede ve ayrı bir yükleme gerektirmez. Bir alt öğesi değil `RelatedProducts` öğesi. A `RelatedProducts` öğesi bir veya daha fazla olabilir `IncludesProduct` öğeleri.  
   
- `IncludesProduct`Aşağıdaki özniteliklere sahiptir.  
+ `IncludesProduct` Aşağıdaki özniteliklere sahiptir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  

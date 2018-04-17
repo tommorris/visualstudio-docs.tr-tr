@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: WPF izleme bilgilerini görüntüleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: WPF izleme bilgilerini görüntüleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,19 +14,19 @@ helpviewer_keywords:
 - WPF, debugging
 - debugging, WPF
 ms.assetid: be3c6859-06e1-459e-9fd0-46375b5f55ef
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e210d575b17552d7b5e4d6dc126335ff3711ee5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3584ae0d1dcd0e33bfa08954a2ad376485b6b71e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Nasıl Yapılır: WPF İzleme Bilgilerini Görüntüleme
-[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]WPF uygulamalardan hata ayıklama izleme bilgilerini alabilir ve bu bilgileri görüntülemek **çıkış** penceresi. Hata ayıklama izleme bilgilerini görüntülemek için WPF izleme etkinleştirilmesi gerekir.  
+[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] WPF uygulamalardan hata ayıklama izleme bilgilerini alabilir ve bu bilgileri görüntülemek **çıkış** penceresi. Hata ayıklama izleme bilgilerini görüntülemek için WPF izleme etkinleştirilmesi gerekir.  
   
  WPF izleme App.Config dosyası veya program aracılığıyla kullanarak etkinleştirebilirsiniz <xref:System.Diagnostics.PresentationTraceSources> sınıfı. Kullanarak WPF izlemeyi etkinleştirmek için daha kolay bir yoludur **seçenekleri** penceresi. WPF izleme web uygulamaları için desteklenmiyor.  
   

@@ -1,13 +1,10 @@
 ---
-title: "Visual Studio hata ayıklayıcısında kesme noktaları kullanın | Microsoft Docs"
+title: Visual Studio hata ayıklayıcısında kesme noktaları kullanın | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -35,17 +32,16 @@ f1_keywords:
 helpviewer_keywords:
 - breakpoints, about breakpoints
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95c6f87e120cd8a62aa3959548f968b70c820d39
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 755b167d49aed33aee30f4a616b7609bf2cd0d6c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı'ndaki kesme noktalarını kullanma
 Hata ayıklayıcı yürütme, belki de kod değişkenlerinin durumunu görmek için veya çağrı yığını aramak için durdurmak istediğinizde kesme noktaları ayarlayabilirsiniz. Bunlar, bir geliştirici araç en önemli hata ayıklama teknikleri biridir.  
@@ -197,7 +193,7 @@ Hata ayıklayıcı yürütme, belki de kod değişkenlerinin durumunu görmek i�
   
 2.  Hata ayıklama başlatın ve yürütme kesme durduğunda kesme bulun **Yereller** penceresinin sağ tıklatın ve seçin **olun nesne kimliği**.  
   
-     Görmeniz gerekir bir  **$**  bir süre içinde artı **Yereller** penceresi. Bu nesne kimliğidir.  
+     Görmeniz gerekir bir **$** bir süre içinde artı **Yereller** penceresi. Bu nesne kimliğidir.  
   
 3.  Araştırmak, örneğin koleksiyona eklenecek nesne olduğunda istediğiniz noktada yeni koşullu kesme noktası ekleyin.  
   

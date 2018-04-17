@@ -1,23 +1,21 @@
 ---
-title: "İzlenecek yol: Yanlış yapılandırılmış ardışık düzen nedeniyle nesnelerin eksikliği | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Yanlış yapılandırılmış ardışık düzen nedeniyle nesnelerin eksikliği | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8b6809f3238c4d239d6d07f0df35d9b4a035d945
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 172effd2abffd6a7467a2fcb3490e39331910d4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>İzlenecek Yol: Yanlış Yapılandırılmış Ardışık Düzen Nedeniyle Eksik Nesneler
 Bu kılavuzda nasıl kullanılacağı ortaya [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unset piksel gölgelendirici nedeniyle eksik olan bir nesneyi araştırmak için grafik tanılama araçları.  
@@ -88,7 +86,7 @@ Bu kılavuzda nasıl kullanılacağı ortaya [!INCLUDE[vsprvs](../../code-qualit
 1.  Bul `PSSetShader` eksik nesnesine karşılık gelen çağrısı. İçinde **grafik olay listesi** penceresinde "çizin; girin "İçinde PSSetShader **arama** sağ üst köşesinde kutusunda **grafik olay listesi** penceresi. Böylece yalnızca "PSSetShader" olayları ve "Çiz" başlıklarını olayları içeren bu listeyi filtreler. İlk seçin `PSSetShader` eksik nesne çizim çağrısından önce görüntülenen çağrısı.  
   
     > [!NOTE]
-    >  `PSSetShader`içinde görünmez **grafik olay listesi** penceresini bu çerçevesinde ayarlanmadı. Bu genellikle yalnızca tek bir piksel gölgelendirici tüm nesneler için kullanılıyorsa veya varsa oluşur `PSSetShader` çağrısı bu çerçevesinde istemeden atlandı. Her iki durumda da, uygulamanızın kaynak kodunu arama olan öneririz `PSSetShader` çağrıları ve kullanım ayıklama teknikleri geleneksel bu çağrıları davranışını incelemek için.  
+    >  `PSSetShader` içinde görünmez **grafik olay listesi** penceresini bu çerçevesinde ayarlanmadı. Bu genellikle yalnızca tek bir piksel gölgelendirici tüm nesneler için kullanılıyorsa veya varsa oluşur `PSSetShader` çağrısı bu çerçevesinde istemeden atlandı. Her iki durumda da, uygulamanızın kaynak kodunu arama olan öneririz `PSSetShader` çağrıları ve kullanım ayıklama teknikleri geleneksel bu çağrıları davranışını incelemek için.  
   
 2.  Açık **grafik olay Çağırma yığını** penceresi. Üzerinde **grafik tanılama** araç seçin **grafik olay Çağırma yığını**.  
   
@@ -101,7 +99,7 @@ Bu kılavuzda nasıl kullanılacağı ortaya [!INCLUDE[vsprvs](../../code-qualit
   
  Sorunu gidermek için ilk parametresinin kullanarak doğru piksel gölgelendirici atama `ID3D11DeviceContext::PSSetShader` API çağrısı.  
   
- ![Düzeltilmiş C &#43; &#43; Kaynak kodu](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+ ![Düzeltilmiş C&#43; &#43; kaynak kodu](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
  Kod düzelttikten sonra yeniden oluşturmak ve uygulamayı yeniden işleme sorun çözülür doğrulamak için çalıştırın:  
   

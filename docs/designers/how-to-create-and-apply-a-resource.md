@@ -1,26 +1,24 @@
 ---
-title: "Oluşturma ve kaynak uygulamak | Microsoft Docs"
-ms.custom: 
+title: Oluşturma ve kaynak uygulamak | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.CreateResource
 - VS.XamlDesigner.EditResource
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 77754f0243c8223dd55ba253fdde1e0b6a8aee57
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 60b832e1c4b1834e35cc2ab6427b2686f5d730a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Oluşturma ve kaynak Uygula
 Yeniden kullanılabilir varlıklar kaynakları adlı stilleri ve şablonları öğelerin XAML Tasarımcısı'nda depolanır. Stilleri öğesi özelliklerini ayarlamak ve çoklu öğeler arasında tutarlı bir görünüm için bu ayarları yeniden etkinleştirin. A [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) denetiminin görünümünü tanımlar ve ayrıca bir kaynak olarak uygulanabilir. Daha fazla bilgi için bkz: [hızlı başlangıç: stil denetimleri](http://go.microsoft.com/fwlink/?LinkID=248239) ve [hızlı başlangıç: denetim şablonları](http://go.microsoft.com/fwlink/?LinkID=247982).  

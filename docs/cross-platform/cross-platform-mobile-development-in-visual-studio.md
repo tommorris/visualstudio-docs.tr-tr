@@ -2,23 +2,19 @@
 title: Visual Studio'da platformlar arası Mobil Geliştirme | Microsoft Docs
 ms.custom: ''
 ms.date: 12/06/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
-caps.latest.revision: ''
 author: asb3993
 ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 855ded366433f6ab3193d1046d9d5047449bd204
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 3010c0b204c822ab598c7559634010295a86f5e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio'da platformlar arası Mobil Geliştirme
 
@@ -30,7 +26,7 @@ Oyun ya da derinlikli bir grafik uygulaması oluşturmak istiyorsanız, Unity i�
 
 ## <a name="build-an-app-for-android-ios-and-windows-net-framework"></a>Android, iOS ve Windows (.NET Framework) için bir uygulama oluşturun
 
-![Devices](../cross-platform/media/homedevices.png "HomeDevices")
+![Aygıtları](../cross-platform/media/homedevices.png "HomeDevices")
 
 Xamarin ile kod ve hatta UI paylaşımı aynı çözümde, Android, iOS ve Windows hedefleyebilirsiniz.
 
@@ -86,7 +82,7 @@ Xamarin ile kod ve hatta UI paylaşımı aynı çözümde, Android, iOS ve Windo
 |[Uygulamaları Evrensel Windows Platformu (UWP) geçirme](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
 
 ##  <a name="HTML"></a> Android, iOS ve Windows (HTML/JavaScript) için bir uygulama oluşturun
- ![Devices](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Aygıtları](../cross-platform/media/homedevices.png "HomeDevices")
 
  Web Geliştiriciyseniz ve HTML ve JavaScript hakkında bilginiz varsa, Apache Cordova için Visual Studio araçları kullanarak Windows, Android ve iOS hedefleyebilirsiniz. Bu uygulamaları, tüm üç platformlar hedefleyebilir ve yetenekleri ve en aşina işlemleri kullanarak oluşturabilirsiniz.
 

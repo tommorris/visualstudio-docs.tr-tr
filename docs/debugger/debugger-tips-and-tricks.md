@@ -1,27 +1,25 @@
 ---
-title: "İpuçları ve püf noktaları Visual Studio Hata Ayıklayıcısı'ndaki | Microsoft Docs"
-ms.custom: 
+title: İpuçları ve püf noktaları Visual Studio Hata Ayıklayıcısı'ndaki | Microsoft Docs
+ms.custom: ''
 ms.date: 06/15/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
-caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dacce06dc59724b7f8feba8f84d2b781ba56ed9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3d5a748541aa9c50b698eda441f38c88f1e791c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Hata ayıklayıcı Visual Studio için üretkenlik ipuçları ve püf noktaları öğrenin
 
@@ -80,7 +78,7 @@ Hata ayıklayıcı windows gibi kullanarak değişkenler görüntülemek kolayca
 
     ![Bir nesne kimliği oluşturma](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
   
-4.  Görmeniz gerekir bir  **$**  bir süre içinde artı **Yereller** penceresi. Bu değişken nesne kimliğidir.
+4.  Görmeniz gerekir bir **$** bir süre içinde artı **Yereller** penceresi. Bu değişken nesne kimliğidir.
   
 5.  Nesne Kimliği değişkeni sağ tıklatın ve seçin **Gözcü Ekle**.
 

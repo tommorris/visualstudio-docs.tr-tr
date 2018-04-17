@@ -1,11 +1,8 @@
 ---
-title: "Bir WCF veri hizmetine WPF denetimleri bağlama | Microsoft Docs"
-ms.custom: 
+title: Bir WCF veri hizmetine WPF denetimleri bağlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ec13e17aac37a24e92732b9b052147c7d9faa916
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: a10ce63d969f67c12197f13f0ab285bc05e258cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bir WCF veri hizmetine WPF denetimleri bağlama
 Bu kılavuzda, veri bağlama denetimleri içeren bir WPF uygulaması oluşturacaksınız. Denetimleri içinde kapsüllenmiş Müşteri kayıtlarını bağlı bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Aynı zamanda müşterilerin kayıtları görüntülemek ve güncelleştirmek için kullanabileceğiniz düğmeleri ekler.  
@@ -247,11 +244,11 @@ Hizmetinden satış verileri yüklemek için hizmet proxy nesnesi kullanın. Ver
      [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]  
   
 ## <a name="navigate-sales-records"></a>Satış kayıtları gidin  
-Kullanıcıların kullanarak satış kayıtlarda kaydırma olanak sağlayan kodu ekleyin  **\<**  ve  **>**  düğmeler.  
+Kullanıcıların kullanarak satış kayıtlarda kaydırma olanak sağlayan kodu ekleyin **\<** ve **>** düğmeler.  
   
 #### <a name="to-enable-users-to-navigate-sales-records"></a>Satış kayıtları gitmek kullanıcıların etkinleştirmek için  
   
-1.  Tasarımcıda çift  **<**  penceresini yüzeyinde düğmesi.  
+1.  Tasarımcıda çift **<** penceresini yüzeyinde düğmesi.  
   
      Visual Studio arka plan kod dosyasını açar ve yeni bir `backButton_Click` için olay işleyicisini <xref:System.Windows.Controls.Primitives.ButtonBase.Click> olay.  
   
@@ -260,7 +257,7 @@ Kullanıcıların kullanarak satış kayıtlarda kaydırma olanak sağlayan kodu
      [!code-csharp[Data_WPFWCF#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_3.cs)]
      [!code-vb[Data_WPFWCF#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_3.vb)]  
   
-3.  Çift tıklayın ve dönüş Designer'a  **>**  düğmesi.  
+3.  Çift tıklayın ve dönüş Designer'a **>** düğmesi.  
   
      Visual Studio arka plan kod dosyasını açar ve yeni bir `nextButton_Click` için olay işleyicisini <xref:System.Windows.Controls.Primitives.ButtonBase.Click> olay.  
   
@@ -302,7 +299,7 @@ Oluşturup görüntüleyebilir ve Müşteri kayıtlarını güncelleştirmek do�
   
     -   Metin kutuları sipariş Kimliğine sahip ilk satış kayıttan farklı veri alanlarını görüntüler **71774**.  
   
-    -   Tıklayabilirsiniz  **>**  veya  **<**  diğer satış kayıtlarında gezinmek için düğmeler.  
+    -   Tıklayabilirsiniz **>** veya **<** diğer satış kayıtlarında gezinmek için düğmeler.  
   
 5.  Satış kayıtları her birinde bazı metni yazın **açıklama** kutusuna ve ardından **değişiklikleri kaydetmek**.  
   

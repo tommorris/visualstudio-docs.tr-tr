@@ -1,13 +1,10 @@
 ---
-title: "Visual Studio Hata Ayıklayıcısı'ndaki çağrı yığınını görüntülemek | Microsoft Docs"
+title: Visual Studio Hata Ayıklayıcısı'ndaki çağrı yığınını görüntülemek | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,17 +26,16 @@ helpviewer_keywords:
 - stack, switching stack frames
 - Call Stack window, viewing disassembly code for functions on the call stack
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e10b81ff07b77e2fd6202d2f5fb27392fe8134c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a55f940c6310300b458f4497f8659bfc0897d4b7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Çağrı yığınını görüntülemek ve Visual Studio hata ayıklayıcısında çağrı yığını penceresini kullanma
 
@@ -71,7 +67,7 @@ Kullanıcı olmayan kodudur ne zaman gösterilmez herhangi bir kod [sadece kendi
   
 **[\<Harici kod >]**  
   
-## <a name="bkmk_switch"></a>Başka bir yığın çerçevesi (hata ayıklayıcı bağlamını değiştirme) geçiş
+## <a name="bkmk_switch"></a> Başka bir yığın çerçevesi (hata ayıklayıcı bağlamını değiştirme) geçiş
   
 1.  İçinde **çağrı yığını** penceresinde, yığın çerçeve olan kodu ve görüntülemek istediğiniz verileri sağ tıklatın.
 
@@ -113,9 +109,9 @@ Visual Studio Enterprise (yalnızca) kullanıyorsanız, hata ayıklarken çağr�
 
 ## <a name="change-the-optional-information-displayed"></a>Değişiklik görüntülenen isteğe bağlı bilgiler  
   
--   Sağ **çağrı yığını** penceresi ve kümesi ya da temizleyin **Göster \<**  *istediğiniz bilgileri*  **>** .  
+-   Sağ **çağrı yığını** penceresi ve kümesi ya da temizleyin **Göster \< ***istediğiniz bilgileri***>**.  
   
-## <a name="bkmk_symbols"></a>Bir modül için yük simgeleri
+## <a name="bkmk_symbols"></a> Bir modül için yük simgeleri
 İçinde **çağrı yığını** penceresinde, şu anda yüklenen simgeleri yok kod simgelerini hata ayıklama yükleyebilirsiniz. Bu simgeleri .NET Framework veya Microsoft ortak simgesi sunucularından indirilen sistem simgeleri ya da bir simge yolu ayıkladığınız bilgisayarda sembolleri olabilir.  
   
 Bkz: [simge (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  

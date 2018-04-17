@@ -1,23 +1,21 @@
 ---
-title: "Nasıl yapılır: bir temel renk gölgelendirici oluşturun | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: bir temel renk gölgelendirici oluşturun | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
-caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7c0992b8db46155a709f58714dfd427882674d2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 762b9076e36b53102abc89284ca06da2e6cdf56b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Nasıl Yapılır: Temel Renk Gölgelendiricisi Oluşturma
 Bu belgede gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendirici dili (DGSL) bir düz renk gölgelendirici oluşturmak için nasıl kullanılacağı gösterilmektedir. Bu gölgelendirici sabit bir RGB rengi değer son rengini belirler.  
@@ -54,7 +52,7 @@ Bu belgede gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendi
 > [!NOTE]
 >  Çizimde, daha iyi gölgelendirici etkisini göstermek için turuncu bir renk belirtildi.  
   
- ![Gölgelendirici grafik ve sonucu bir 3 &#45; D modeli](../designers/media/digit-flat-color-effect.png "düz renk efekti basamak")  
+ ![Gölgelendirici grafik ve sonucu 3&#45;D modeli](../designers/media/digit-flat-color-effect.png "düz renk efekti basamak")  
   
  Belirli şekillerin daha iyi önizlemeleri için bazı gölgelendiriciler sağlayabilir. Gölgelendirici Tasarımcısı'nda gölgelendiriciler önizleme hakkında daha fazla bilgi için bkz: [gölgelendirici Tasarımcısı](../designers/shader-designer.md).  
   

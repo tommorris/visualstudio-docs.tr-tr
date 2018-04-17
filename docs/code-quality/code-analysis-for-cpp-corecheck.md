@@ -2,25 +2,22 @@
 title: Visual Studio C++ çekirdek yönergeleri denetleyicisinin başvurusu | Microsoft Docs
 ms.custom: ''
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0825ea42ca74b224574299846504dfde7dd6f809
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: f0b657781981b6204bda42fcbf18f8945fb59004
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ çekirdek yönergeleri denetleyicisi başvurusu
 
@@ -45,11 +42,11 @@ Bu bölümde, C++ çekirdek yönergeleri denetleyicisi uyarıları listelenir. K
 
 [C26429 USE_NOTNULL](C26429.md) simge '% simgesi %' nullness için hiçbir zaman test, Nothing işaretlenebilir. Bkz: [C++ çekirdek yönergeleri F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
-[C26430 TEST_ON_ALL_PATHS](C26430.md) Symbol '%symbol%' is not tested for nullness on all paths. Bkz: [C++ çekirdek yönergeleri F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
+[C26430 TEST_ON_ALL_PATHS](C26430.md) simge '% simgesi %' nullness tüm yazmalar için test değil. Bkz: [C++ çekirdek yönergeleri F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
 [C26431 DONT_TEST_NOTNULL](C26431.md) ifadesi '% expr %' zaten gsl::not_null türüdür. Nullness için sınamayın. Bkz: [C++ çekirdek yönergeleri F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
-## <a name="rawpointer-group"></a>RAW_POINTER Group
+## <a name="rawpointer-group"></a>RAW_POINTER grubu
 
 [C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md) bir ayırma veya işlev çağrısının sonucunu sahip atamayın\<T > dönüş değeri ham işaretçi; sahibi kullanın\<T > bunun yerine. Bkz: [C++ çekirdek yönergeleri I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw).
 
@@ -63,7 +60,7 @@ Bu bölümde, C++ çekirdek yönergeleri denetleyicisi uyarıları listelenir. K
 
 [C26429 USE_NOTNULL](C26429.md) simge '% simgesi %' nullness için hiçbir zaman test, Nothing işaretlenebilir. Bkz: [C++ çekirdek yönergeleri F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
-[C26430 TEST_ON_ALL_PATHS](C26430.md) Symbol '%symbol%' is not tested for nullness on all paths. Bkz: [C++ çekirdek yönergeleri F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
+[C26430 TEST_ON_ALL_PATHS](C26430.md) simge '% simgesi %' nullness tüm yazmalar için test değil. Bkz: [C++ çekirdek yönergeleri F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
 [C26431 DONT_TEST_NOTNULL](C26431.md) ifadesi '% expr %' zaten gsl::not_null türüdür. Nullness için sınamayın. Bkz: [C++ çekirdek yönergeleri F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
@@ -82,7 +79,7 @@ Bu bölümde, C++ çekirdek yönergeleri denetleyicisi uyarıları listelenir. K
 
 [C26415 SMART_PTR_NOT_NEEDED](C26415.md) '% simgesi %' Akıllı işaretçi parametresi yalnızca kapsanan işaretçi erişmek için kullanılır. T * veya T kullanın ve bunun yerine. Bkz: [C++ çekirdek yönergeleri R.30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam).
 
-## <a name="sharedpointer-group"></a>SHARED_POINTER Group
+## <a name="sharedpointer-group"></a>SHARED_POINTER grubu
 
 [C26414 RESET_LOCAL_SMART_PTR](C26414.md) taşımak, kopyalama, yeniden atama veya yerel akıllı işaretçi '% simgesi %' Sıfırla. Bkz: [C++ çekirdek yönergeleri R.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).
 
@@ -125,7 +122,7 @@ Bu bölümde, C++ çekirdek yönergeleri denetleyicisi uyarıları listelenir. K
 
 ## <a name="style-group"></a>Stil grubu
 
-[C26438 NO_GOTO](C26438.md) Avoid `goto`. Bkz: [C++ çekirdek yönergeleri ES.76](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es76-avoid-goto).
+[C26438 NO_GOTO](C26438.md) kaçının `goto`. Bkz: [C++ çekirdek yönergeleri ES.76](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es76-avoid-goto).
 
 ## <a name="function-group"></a>İŞLEV grubu
 
@@ -162,7 +159,7 @@ Bkz: [C++ çekirdek yönergeleri: F.6: işlevinizi atabilir değil, noexcept bil
 
 [C26465 NO_CONST_CAST_UNNECESSARY](c26465.md) kullanmayan `const_cast` hemen yayınlanamıyor `const`. `const_cast` gerekli değildir; Bu dönüştürme kaldırılmıyor constness veya volatilite. Bkz: [C++ çekirdek yönergeleri Type.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).
 
-[C26466 NO_STATIC_DOWNCAST_POLYMORPHIC](c26466.md) Don't use `static_cast` downcasts. Çok biçimli türünden bir cast dynamic_cast kullanmanız gerekir. Bkz: [C++ çekirdek yönergeleri Type.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast).
+[C26466 NO_STATIC_DOWNCAST_POLYMORPHIC](c26466.md) kullanmayan `static_cast` downcasts. Çok biçimli türünden bir cast dynamic_cast kullanmanız gerekir. Bkz: [C++ çekirdek yönergeleri Type.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast).
 
 [C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR](c26471.md) Don't use `reinterpret_cast`. Bir dönüştürme void * kullanabilirsiniz `static_cast`. Bkz: [C++ çekirdek yönergeleri Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
 
@@ -197,9 +194,9 @@ Bkz: [C++ çekirdek yönergeleri: F.6: işlevinizi atabilir değil, noexcept bil
 
 [C26483 STATIC_INDEX_OUT_OF_RANGE](c26483.md) değeri % değeri olan sınırları dışında (0, bağlı %) '% değişken %' değişkeninin. Yalnızca dizine dizi sınırları içinde sabit ifadeler kullanarak dizileri. Bkz: [C++ çekirdek yönergeleri Bounds.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) Expression '%expr%': No array to pointer decay. Bkz: [C++ çekirdek yönergeleri Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) ifadesi '% expr %': işaretçi decay için dizisi yok. Bkz: [C++ çekirdek yönergeleri Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-## <a name="gsl-group"></a>GSL Group
+## <a name="gsl-group"></a>GSL grubu
 
 [C26445 NO_SPAN_REF](c26445.md) başvuru `gsl::span` veya `std::string_view` ömrü sorun belirtisi olabilir.
 Bkz: [C++ çekirdek yönergeleri GSL.view: görünümleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)

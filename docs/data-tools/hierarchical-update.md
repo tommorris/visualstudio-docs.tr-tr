@@ -1,11 +1,8 @@
 ---
-title: "Hiyerarşik güncelleştirme | Microsoft Docs"
-ms.custom: 
+title: Hiyerarşik güncelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,17 +17,17 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b02ef945136297287d18c2b29ea2d3afab1b3683
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1b374ac0b062069e11a5fa9b15822a4146cbaebf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="hierarchical-update"></a>Hiyerarşik güncelleştirme
 *Hiyerarşik güncelleştirme* bilgi tutarlılığı kuralları korurken (kümesindeki iki veya daha fazla ilişkili tabloları ile) güncelleştirilmiş verileri bir veritabanına geri kaydetme işlemi başvuruyor. *Başvuru bütünlüğü* bir veritabanında ve ekleme, güncelleştirme ve ilgili kayıtları silme davranışını denetleyen kısıtlamalar tarafından sağlanan tutarlık kuralları başvuruyor. Örneğin, o müşteri için siparişleri oluşturulmasına izin vermeden önce bir müşteri kaydı oluşturulmasını zorlar başvuru bütünlüğü olur.  Veri kümelerindeki ilişkiler hakkında daha fazla bilgi için bkz: [kümelerindeki ilişkiler](../data-tools/relationships-in-datasets.md)  
@@ -116,10 +113,10 @@ Verileri bir veritabanına kaydetme önce ilgili alt tabloda değişiklikleri i�
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|`UpdateAll`yöntemi|Tüm veri tablolarından tüm verileri kaydeder.|  
-|`BackUpDataSetBeforeUpdate`özelliği|Veri kümesi yedek bir kopyasını yürütmeden önce oluşturulup oluşturulmayacağını belirler `TableAdapterManager.UpdateAll` yöntemi. Boole değeri.|  
+|`UpdateAll` Yöntemi|Tüm veri tablolarından tüm verileri kaydeder.|  
+|`BackUpDataSetBeforeUpdate` Özelliği|Veri kümesi yedek bir kopyasını yürütmeden önce oluşturulup oluşturulmayacağını belirler `TableAdapterManager.UpdateAll` yöntemi. Boole değeri.|  
 |*tableName* `TableAdapter` özelliği|Temsil eden bir `TableAdapter`. Oluşturulan `TableAdapterManager` her biri için bir özellik içeriyor `TableAdapter` yönettiği. Örneğin, müşteriler ve siparişler bir tablo içeren bir veri kümesi ile oluşturulan bir `TableAdapterManager` içeren `CustomersTableAdapter` ve `OrdersTableAdapter` özellikleri.|  
-|`UpdateOrder`özelliği|Tek tek INSERT, update ve delete komutları sırasını denetler. Bu ayarlar değerlerden birine `TableAdapterManager.UpdateOrderOption` numaralandırması.<br /><br /> Varsayılan olarak, `UpdateOrder` ayarlanır **InsertUpdateDelete**. Ekler, sonra güncelleştirir ve ardından siler deyişle kümesindeki tüm tablolar için gerçekleştirilir.|  
+|`UpdateOrder` Özelliği|Tek tek INSERT, update ve delete komutları sırasını denetler. Bu ayarlar değerlerden birine `TableAdapterManager.UpdateOrderOption` numaralandırması.<br /><br /> Varsayılan olarak, `UpdateOrder` ayarlanır **InsertUpdateDelete**. Ekler, sonra güncelleştirir ve ardından siler deyişle kümesindeki tüm tablolar için gerçekleştirilir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)

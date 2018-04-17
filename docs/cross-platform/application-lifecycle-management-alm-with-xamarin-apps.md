@@ -2,23 +2,19 @@
 title: Xamarin uygulamalarıyla uygulama yaşam döngüsü yönetimi (ALM) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
-caps.latest.revision: ''
 author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: f6eea5a99245249a244dbb7cd31e61799f7c0103
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: e2af3c9ada788c195cffb811cbfded9c43604c7a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Xamarin uygulamalarıyla uygulama yaşam döngüsü yönetimi (ALM)
 Xamarin Android, iOS ve C#, .NET ve Visual Studio kullanarak Windows hedefleme platformlar arası mobil uygulamalar oluşturmanıza olanak sağlar. Xamarin platformlarıyla yalnızca platforma özgü olmasını gerektiren küçük bir yüzdesi arasında paylaşılmak üzere kod büyük bir kısmı sağlar. Xamarin kendisi hakkında daha fazla bilgi için bkz: [Visual Studio ve Xamarin](../cross-platform/visual-studio-and-xamarin.md).  

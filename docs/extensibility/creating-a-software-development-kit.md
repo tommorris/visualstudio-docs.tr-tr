@@ -1,23 +1,21 @@
 ---
-title: "Bir yazılım geliştirme seti oluşturma | Microsoft Docs"
-ms.custom: 
+title: Bir yazılım geliştirme seti oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4ea17b02cfa2e987c4a3c02acddf838001b4ae2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 55b62ac0ac448023793f511389146ebb1b07da0f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-software-development-kit"></a>Bir yazılım geliştirme seti oluşturma
 Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak başvurabilir API'leri koleksiyonudur. **Başvuru Yöneticisi** iletişim kutusu projeye uygun olan tüm SDK'ları listeler. Bir projeye bir SDK eklediğinizde API'lerini Visual Studio'da kullanılabilir.  
@@ -34,7 +32,7 @@ Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak baş
   
 -   [Uzantı SDK'ları](#ExtensionSDKs)  
   
-##  <a name="PlatformSDKs"></a>Platform SDK'ları  
+##  <a name="PlatformSDKs"></a> Platform SDK'ları  
  Platform SDK'ları bir platform için uygulamalarını geliştirmek için gereklidir. Örneğin, [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK için uygulama geliştirmek için gerekli olduğunu [!INCLUDE[win81](../debugger/includes/win81_md.md)].  
   
 ### <a name="installation"></a>Yükleme  
@@ -62,7 +60,7 @@ Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak baş
 |Mimari klasörü|Herhangi bir desteklenen mimari klasöründe bulunabilir. Visual Studio aşağıdaki mimariler destekler: x86, x64, ARM ve nötr. Not: Win32 için x86 eşler ve AnyCPU için nötr eşler.<br /><br /> MSBuild için Platform SDK'ları yalnızca \CommonConfiguration\neutral altında arar.|  
 |SDKManifest.xml|Bu dosya, Visual Studio SDK'yı nasıl kullanmak tanımlar. SDK bildirim bakabilir [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** Nesne Tarayıcısı Gözat listede görüntüler değeri.<br /><br /> **PlatformIdentity:** bu öznitelik varlığını Visual Studio ve MSBuild SDK'sı bir platform SDK'si olduğunu ve ondan eklenen başvuruları kopyalanan döndürmemelidir yerel olarak bildirir.<br /><br /> **TargetFramework:** bu öznitelik, yalnızca hedefleyen projelerde bu değeri belirtildiği gibi aynı çerçeveleri emin olmak için Visual Studio tarafından kullanılan öznitelik SDK tüketebileceği.<br /><br /> **MinVSVersion:** bu öznitelik yalnızca uygulayan SDK'lar kullanmak için Visual Studio tarafından kullanılır.<br /><br /> **Başvuru:** bu öznitelik yalnızca denetimleri içeren bu başvuruları için belirtilmesi gerekir. Bir başvuru denetimleri içerip içermediğini belirtme hakkında daha fazla bilgi için aşağıya bakın.|  
   
-##  <a name="ExtensionSDKs"></a>Uzantı SDK'ları  
+##  <a name="ExtensionSDKs"></a> Uzantı SDK'ları  
  Aşağıdaki bölümlerde, uzantı SDK dağıtmak için yapmanız gerekenler açıklanmaktadır.  
   
 ### <a name="installation"></a>Yükleme  
@@ -173,7 +171,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 6.  MaxPlatformVerson: En fazla hedef platform sürümü üzerinde uzantısı SDK çalışmaz platform sürümleri belirtmek için kullanılmalıdır. Örneğin, Microsoft Visual C++ çalışma zamanı paketi v11.0 yalnızca Windows 8 projeleri tarafından başvurulan. Bu nedenle, Windows 8 projenin MaxPlatformVersion 8.0 ' dir. Bu başvuru Yöneticisi Windows 8.1 projesi için Microsoft Visual C++ çalışma zamanı paketi filtreleri ve MSBuild bir hata oluşturduğunda anlamına gelir, bir [!INCLUDE[win81](../debugger/includes/win81_md.md)] proje başvurur. Not: Bu öğe itibaren desteklenir [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)].  
   
-7.  AppliesTo: başvuru Yöneticisi'nde kullanılabilir olan geçerli Visual Studio Proje türleri belirterek SDK'ları belirtir. Dokuz değerlerini tanınan: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, yönetilen ve yerel. SDK Yazar kullanabilirsiniz ve ("+'), ya da ("&#124;"), değil ("! ") tam olarak uygulamak için SDK proje türleri kapsamını belirtmek için işleçler.  
+7.  AppliesTo: başvuru Yöneticisi'nde kullanılabilir olan geçerli Visual Studio Proje türleri belirterek SDK'ları belirtir. Dokuz değerlerini tanınan: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, yönetilen ve yerel. SDK Yazar kullanabilirsiniz ve ("+'), ya da ("&#124;") değil ("! ") tam olarak uygulamak için SDK proje türleri kapsamını belirtmek için işleçler.  
   
      WindowsAppContainer tanımlayan projeleri için [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] uygulamalar.  
   
@@ -195,7 +193,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 16. Dosya başvurusu: yerel WinMDs denetimleri içeren ya da yalnızca bu başvuruları için belirtilen. Bir başvuru denetimleri içerip içermediğini belirtme hakkında daha fazla bilgi için bkz: [araç kutusu öğelerini konumu belirtme](#ToolboxItems) aşağıda.  
   
-##  <a name="ToolboxItems"></a>Araç kutusu öğelerini konumunu belirtme  
+##  <a name="ToolboxItems"></a> Araç kutusu öğelerini konumunu belirtme  
  ToolBoxItems öğesi SDKManifest.xml şemasının platform ve uzantı SDK'ları kategori ve araç kutusu öğelerini konumunu belirtir. Aşağıdaki örnekler, farklı konumlar belirtebilirsiniz gösterilmektedir. Bu, WinMD veya DLL başvurularını geçerlidir.  
   
 1.  Denetimleri araç varsayılan kategorisinde yerleştirin.  

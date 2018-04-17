@@ -1,12 +1,10 @@
 ---
-title: "ClickOnce yönetilmeyen API Başvurusu | Microsoft Docs"
-ms.custom: 
+title: ClickOnce yönetilmeyen API Başvurusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,19 +16,19 @@ helpviewer_keywords:
 - CleanOnlineAppCacheW interface [ClickOnce unmanaged]
 - GetDeploymentDataFromManifest [ClickOnce unmanaged]
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
-caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: cplusplus
-ms.openlocfilehash: 392ada2288adcc229834f617c2f6284bb2e7ed0f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8463976825d38c5ff5e8cb910df153737da9eeee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce Yönetilmeyen API Başvurusu
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]dfshim.DLL'den yönetilmeyen ortak API'leri.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dfshim.DLL'den yönetilmeyen ortak API'leri.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
  Temizler ve tüm çevrimiçi uygulamaları kaldırır [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama önbelleği.  
@@ -63,7 +61,7 @@ ms.lasthandoff: 12/22/2017
  Başarılı olursa, S_OK verir; Aksi takdirde hata temsil eden bir HRESULT döndürür. Arabellek çok küçük ise HRESULTFROMWIN32(ERROR_INSUFFICIENT_BUFFER) döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşaretçiler null olmamalıdır. `pcwzActivationUrl`ve `pcwzPathToDeploymentManifest` boş olmamalıdır.  
+ İşaretçiler null olmamalıdır. `pcwzActivationUrl` ve `pcwzPathToDeploymentManifest` boş olmamalıdır.  
   
  Etkinleştirme URL'sini temizlemek yapanın sorumluluğundadır. Örneğin, kaçış eklenmesi gereken yerlere veya sorgu dizesini kaldırma karakter.  
   

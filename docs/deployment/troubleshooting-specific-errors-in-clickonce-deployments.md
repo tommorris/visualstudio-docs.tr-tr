@@ -1,12 +1,10 @@
 ---
-title: "ClickOnce Dağıtımları içinde belirli hataları giderme | Microsoft Docs"
-ms.custom: 
+title: ClickOnce Dağıtımları içinde belirli hataları giderme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - troubleshooting ClickOnce deployments
 - ClickOnce deployment, troubleshooting
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
-caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ffa7449347fe5e898f2984237dfc8908e3bb2003
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b52caad3b6e4c98dd78e6c6be9835c11ac4d4175
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce Dağıtımları İçinde Belirli Hataları Giderme
 Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve her sorunu gidermek için adımları sağlar.  
@@ -72,13 +70,13 @@ Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir
   
 -   Dağıtım bildiriminde güncelleştirme aralığını doğrulayın. Bu aralık altı saatte bir kez gibi düzenli bir aralıkta ayarlanırsa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bu aralık geçene kadar bir güncelleştirme için tarama değil. Uygulama başladığında her zaman için bir güncelleştirme taraması yapması için bildirimi değiştirebilirsiniz. Güncelleştirme aralığını değiştirmek güncelleştirmeler yüklenir, ancak uygulama etkinleştirme yavaşlatır doğrulamak için bir kolay geliştirme süresince seçeneğidir.  
   
--   Uygulama başlangıç menüsünde yeniden başlatmayı deneyin. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Güncelleştirme arka planda algılamış olabilir, ancak sonraki etkinleştirmede BITS yüklemek isteyip istemediğinizi sorar.  
+-   Uygulama başlangıç menüsünde yeniden başlatmayı deneyin. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Güncelleştirme arka planda algılamış olabilir, ancak sonraki etkinleştirmede BITS yüklemek isteyip istemediğinizi sorar.  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Güncelleştirme sırasında aşağıdaki günlük girdisini içeren bir hata iletisi: "dağıtım başvurusunda uygulama bildiriminde tanımlanan kimlikle eşleşmiyor."  
  El ile dağıtım ve uygulama bildirimleri düzenlediniz ve derleme kimliğini açıklaması ile eşitlenmemiş hale gelmesine bir bildiriminde neden olmuş nedeniyle bu hata oluşabilir. Bir derlemenin kimliği, ad, sürüm, kültür ve ortak anahtar belirteci oluşur. Bildirimlerinizi kimlik açıklamasında inceleyin ve tüm farklılıkları düzeltin.  
   
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>İlk kez yerel disk veya CD-ROM'dan etkinleştirme başarılı ancak Başlat menüsünden sonraki etkinleştirme başarılı olmaz  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]uygulama için güncelleştirmeleri almak için dağıtım Provider URL'sini kullanır. URL'nin işaret konumun doğru olduğundan emin olun.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama için güncelleştirmeleri almak için dağıtım Provider URL'sini kullanır. URL'nin işaret konumun doğru olduğundan emin olun.  
   
 #### <a name="error-cannot-start-the-application"></a>Hata: "uygulaması başlatılamıyor"  
  Bu hata iletisi, genellikle bu uygulamanın yüklenmesi bir sorun olduğunu gösterir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] depolar. Uygulamada bir hata var ya da deposu bozuk. Günlük dosyası hatanın oluştuğu söyleyebilir.  
@@ -106,7 +104,7 @@ Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir
  Bir URL ile yayımlıyorsanız hedef bilgisayar FrontPage Server Extensions etkin olduğundan emin olun.  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Hata iletisi: Web sitesi oluşturulamadı '\<site >'. FrontPage Server Extensions ile iletişim kurmak için bileşenlerin yüklü değil.  
- Microsoft Visual Studio Web geliştirme yayımlamakta olduğunuz makinede bileşeni yüklü olduğundan emin olun. Express kullanıcıları için bu bileşeni varsayılan olarak yüklü değil. Daha fazla bilgi için bkz: [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
+ Microsoft Visual Studio Web geliştirme yayımlamakta olduğunuz makinede bileşeni yüklü olduğundan emin olun. Express kullanıcıları için bu bileşeni varsayılan olarak yüklü değil. Daha fazla bilgi için bkz. [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Hata iletisi: dosya bulunamadı. ' Microsoft.Windows.Common-denetimleri, sürüm 6.0.0.0, kültür = = *, PublicKeyToken 6595b64144ccf1df, ProcessorArchitecture = =\*, türü win32 ='  
  Görsel stiller etkinken WPF uygulaması yayımlamaya çalıştığınızda bu hata iletisi görüntülenir. Bu sorunu çözmek için bkz: [nasıl yapılır: görsel stiller etkinleştirilmiş olan bir WPF uygulaması yayımlama](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
@@ -132,11 +130,11 @@ Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir
 |Devam edemiyor. Uygulama yanlış biçimlendirilmiş. Yardım için uygulama yayımcısına başvurun.<br /><br /> Uygulama doğrulama başarılı olmadı. Devam edilemiyor.<br /><br /> Uygulama dosyaları alınamıyor. Dosyalar dağıtımda bozulur.|Dağıtımdaki bildirim dosyalarından birini sözdizimsel olarak geçerli değil veya karşılık gelen dosya ile uzlaştırılamıyor bir karma içerir. Bu hata, ayrıca derleme içine gömülü bildirimi bozuk olduğunu gösteriyor olabilir. Dağıtımınızı yeniden oluşturun ve uygulamanızı yeniden derleyin veya bulun ve hataları bildirimlerinizde bulunan el ile giderin.|  
 |Uygulama alınamıyor. Kimlik doğrulama hatası.<br /><br /> Uygulama yükleme başarılı olmadı. Sunucudaki uygulama dosyalarını bulamıyor. Yardım için uygulama yayımcısına veya yöneticinize başvurun.|Bunları erişim izni olmadığından dağıtımdaki bir veya daha fazla dosyalar indirilemiyor. Bunun nedeni dağıtımınızda bulunan dosyalardan biri korumalı bir dosyayı kabul Web sunucusu yapar uzantılı bir sona ererse, oluşabilecek bir Web sunucusu tarafından döndürülen 403 Yasak hatası olabilir. Ayrıca, bir veya daha fazla uygulamanın dosyaları içeren bir dizine erişmek için bir kullanıcı adı ve parola gerektirebilir.|  
 |Uygulama karşıdan yüklenemiyor. Uygulamayı gerekli dosyalar eksik. Yardım için uygulama satıcısına veya sistem yöneticinize başvurun.|Bir veya daha fazla uygulama bildiriminde listelenen dosya sunucusunda bulunamıyor. Dağıtımın tüm bağımlı dosyaları karşıya yüklediğiniz olduğunu doğrulayıp yeniden deneyin.|  
-|Uygulama yükleme başarılı olmadı. Ağ bağlantınızı denetleyin veya sistem yöneticinize veya ağ hizmeti sağlayıcısına başvurun.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Sunucunun ağ bağlantısı kurulamıyor. Sunucu kullanılabilirliğini ve ağ durumunu inceleyin.|  
+|Uygulama yükleme başarılı olmadı. Ağ bağlantınızı denetleyin veya sistem yöneticinize veya ağ hizmeti sağlayıcısına başvurun.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Sunucunun ağ bağlantısı kurulamıyor. Sunucu kullanılabilirliğini ve ağ durumunu inceleyin.|  
 |URLDownloadToCacheFile başarısız oldu; HRESULT '\<numarası >'. Yüklemeye çalışırken bir hata oluştu '\<Dosya >'.|Kullanıcı Internet Explorer Gelişmiş Güvenlik seçeneğini "Arasında güvenli değiştiriliyorsa uyar ve modu güvenli değil" dağıtım hedef bilgisayarda ayarlamışsa ve yüklenen ClickOnce uygulamasının kurulum URL'si güvenli olmayan güvenli bir siteye yönlendirilir (veya Internet Explorer uyarı keser tersi), yükleme başarısız olur.<br /><br /> Bu sorunu çözmek için şunlardan birini yapabilirsiniz:<br /><br /> -Güvenlik seçeneğini kaldırın.<br />-Olun emin Kurulum URL'SİNİN güvenlik modları değiştirecek bir şekilde yönlendiren değil.<br />-Gerçek kurulum URL'sine noktası ve yeniden yönlendirme tamamen kaldırın.|  
 |Bir sabit diske yazılırken bir hata oluştu. Olabilir yeterli alan kullanılabilir disk üzerinde. Yardım için uygulama satıcısına veya sistem yöneticinize başvurun.|Bu uygulamayı depolamak için yeterli disk alanı gösterebilir, ancak uygulama dosyaları diske kaydetmeye çalışırken de daha genel bir g/ç hatası gösteriyor olabilir.|  
 |Uygulama başlatılamıyor. Disk üzerinde yeterli alan yok.|Sabit disk dolu. Boş alan açın ve uygulamayı yeniden çalıştırmayı deneyin.|  
-|Çok fazla dağıtılan etkinleştirmeleri aynı anda yüklemeye çalışıyorsunuz.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aynı anda çalışabilecek farklı uygulama sayısını sınırlar. Bu büyük ölçüde yerel karşı hizmet reddi saldırılarını kötü amaçlı saldırılara karşı korunmaya yardımcı olur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] hizmeti; kullanıcılar aynı uygulama hızlı art arda tekrar tekrar başlatmaya çalışırsanız, yalnızca tek bir örneği ile son bulur uygulama.|  
+|Çok fazla dağıtılan etkinleştirmeleri aynı anda yüklemeye çalışıyorsunuz.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aynı anda çalışabilecek farklı uygulama sayısını sınırlar. Bu büyük ölçüde yerel karşı hizmet reddi saldırılarını kötü amaçlı saldırılara karşı korunmaya yardımcı olur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] hizmeti; kullanıcılar aynı uygulama hızlı art arda tekrar tekrar başlatmaya çalışırsanız, yalnızca tek bir örneği ile son bulur uygulama.|  
 |Kısayollar ağ üzerinden devre dışı bırakılamaz.|Kısayollar bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama yerel sabit diskte yalnızca başlatılabilir. Uzak bir sunucudaki bir kısayol dosyasına işaret eden bir URL açarak başlatılamaz.|  
 |Uygulama kısmi güvende çevrimiçi çalıştırmak için çok büyük. Yardım için uygulama satıcısına veya sistem yöneticinize başvurun.|Kısmi güvende çalışacak bir uygulama, varsayılan değer 250 MB olan çevrimiçi uygulama kotasını boyutunu yarısı büyük olamaz.|  
   

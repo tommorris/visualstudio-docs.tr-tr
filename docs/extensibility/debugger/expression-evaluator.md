@@ -1,27 +1,25 @@
 ---
-title: "İfade değerlendirici | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK]
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 55aaa595c49d0c50cff5f874d1b322c3adbb9729
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8dd2cc4409dbdb7650454715e133fd76dda5b780
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator"></a>İfade değerlendirici
 İfade değerlendiricileri (EE) IDE kesme modunda olduğunda kullanıcı tarafından görüntülenmesine izin vermeden ayrıştırma ve çalışma zamanında değişkenleri ve ifadeler değerlendirmek için bir dil söz dizimi inceleyin.  
@@ -33,7 +31,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  Hata ayıklama paketini alır bir `IDebugExpressionContext2` nesnesinin bir [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) arabirimi ve çağrıları `IDebugStackFrame2::ParseText` yöntemi elde etmek üzere bir [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) nesnesi.  
   
-3.  Hata ayıklama paket çağrıları [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) yöntemi veya [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) ifadesinin değerini almak için yöntemi. `IDebugExpression2::EvaluateAsync`Komut/hemen penceresinden olarak adlandırılır. Diğer tüm kullanıcı Arabirimi bileşenlerini çağrı `IDebugExpression2::EvaluateSync`.  
+3.  Hata ayıklama paket çağrıları [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) yöntemi veya [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) ifadesinin değerini almak için yöntemi. `IDebugExpression2::EvaluateAsync` Komut/hemen penceresinden olarak adlandırılır. Diğer tüm kullanıcı Arabirimi bileşenlerini çağrı `IDebugExpression2::EvaluateSync`.  
   
 4.  İfade değerlendirme sonucu bir [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) adını, türünü ve ifade değerlendirme sonucu değerini içeren nesne.  
   

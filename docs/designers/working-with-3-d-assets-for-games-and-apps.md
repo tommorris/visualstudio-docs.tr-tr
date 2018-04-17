@@ -1,27 +1,23 @@
 ---
-title: "Oyunlar ve uygulamalar için 3-b varlıklarla çalışmaya | Microsoft Docs"
-ms.custom: 
+title: Oyunlar ve uygulamalar için 3-b varlıklarla çalışmaya | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4b0cc6e7105f91a4192d2c079854c8953736eaf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e3b110f5f1a5ecc16d8cafe5f80630da05ed29b8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Oyunlar ve Uygulamalar için 3B Varlıklarla Çalışma
 Bu belgede açıklanan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oluşturmak veya 3-b modelleri, doku ve DirectX tabanlı oyunları ve uygulamaları için gölgelendiriciler değiştirmek için kullanabileceğiniz araçlar.  
@@ -50,7 +46,7 @@ Bu belgede açıklanan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
 >  DirectX programlama ile başlatma hakkında daha fazla bilgi için bkz: [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). DirectX tabanlı bir uygulamanın hata ayıklama hakkında daha fazla bilgi için bkz: [grafik tanılama (DirectX grafikleri hata ayıklama)](../debugger/visual-studio-graphics-diagnostics.md).  
   
 ## <a name="directx-version-compatibility"></a>DirectX sürümü uyumluluğu  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]DirectX 2 ve 3 boyutlu varlıkları işlemek için kullanır. DirectX 11 Oluşturucu ya da Windows Gelişmiş Tarama Platform (TÜNELİ) yazılım oluşturucusu seçebilirsiniz. DirectX 11 Oluşturucu DirectX 11 ve DirectX 10 GPU yüksek performanslı, donanım hızlandırılmış işleme sağlar. TÜNELİ Oluşturucu varlıklarınızı çok çeşitli bilgisayarlar çalışma emin olmaya yardımcı olur — bu modern grafik donanım olmayan bilgisayarları ve grafik donanımı tümleşik bilgisayarları içerir. TÜNELİ hakkında daha fazla bilgi için bkz: [Windows Gelişmiş Tarama Platform (TÜNELİ) Kılavuzu](http://go.microsoft.com/fwlink/p/?LinkId=224634).  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] DirectX 2 ve 3 boyutlu varlıkları işlemek için kullanır. DirectX 11 Oluşturucu ya da Windows Gelişmiş Tarama Platform (TÜNELİ) yazılım oluşturucusu seçebilirsiniz. DirectX 11 Oluşturucu DirectX 11 ve DirectX 10 GPU yüksek performanslı, donanım hızlandırılmış işleme sağlar. TÜNELİ Oluşturucu varlıklarınızı çok çeşitli bilgisayarlar çalışma emin olmaya yardımcı olur — bu modern grafik donanım olmayan bilgisayarları ve grafik donanımı tümleşik bilgisayarları içerir. TÜNELİ hakkında daha fazla bilgi için bkz: [Windows Gelişmiş Tarama Platform (TÜNELİ) Kılavuzu](http://go.microsoft.com/fwlink/p/?LinkId=224634).  
   
 ## <a name="related-topics"></a>İlgili konular  
   

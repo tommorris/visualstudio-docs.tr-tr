@@ -1,12 +1,10 @@
 ---
-title: "CA2116: APTCA yöntemleri yalnızca APTCA yöntemlerini çağırmalıdır | Microsoft Docs"
-ms.custom: 
+title: 'CA2116: APTCA yöntemleri yalnızca APTCA yöntemlerini çağırmalıdır | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
 ms.assetid: 8b91637e-891f-4dde-857b-bf8012270ec4
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3a7818c3d758e8e92724af37dfe955f9a466746
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52e757e2e83974a532a4dc16ce7075105606b1ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116Ç APTCA yöntemleri yalnızca APTCA yöntemlerini çağırmalıdır
 |||  
@@ -41,9 +39,9 @@ ms.lasthandoff: 12/22/2017
   
  APTCA özniteliği üzerinde tam olarak güvenilir bir derleme var ve derlemeyi kısmen güvenilen arayanlara izin verme başka bir derlemede kodu yürütür, güvenlik açığından yararlanma mümkün değildir. İki yöntem `M1` ve `M2` aşağıdaki koşullara uyan, zararlı çağıranlar yöntemi kullanabileceğiniz `M1` korur örtük tam güven bağlantı isteği atlamak için `M2`:  
   
--   `M1`genel yöntem APTCA özniteliği tam güvenilen bir derlemede bildirildi.  
+-   `M1` genel yöntem APTCA özniteliği tam güvenilen bir derlemede bildirildi.  
   
--   `M1`bir yöntemi çağırır `M2` dışında `M1`'s derleme.  
+-   `M1` bir yöntemi çağırır `M2` dışında `M1`'s derleme.  
   
 -   `M2`kişinin derleme APTCA özniteliği yok ve bu nedenle, kısmen güvenilen arayanlara adına ya da tarafından yürütülmesi gereken değil.  
   

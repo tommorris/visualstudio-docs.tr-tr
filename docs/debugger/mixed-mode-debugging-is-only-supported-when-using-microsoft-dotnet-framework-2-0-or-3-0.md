@@ -1,13 +1,10 @@
 ---
-title: "Karışık mod hata ayıklaması yalnızca desteklenen Microsoft .NET Framework 2.0 veya 3.0 kullanırken | Microsoft Docs"
-ms.custom: 
+title: Karışık mod hata ayıklaması yalnızca desteklenen Microsoft .NET Framework 2.0 veya 3.0 kullanırken | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_to_old
 dev_langs:
@@ -16,17 +13,16 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: f607af6f-57fe-472a-a32e-b6202067aa96
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c521592ed6ede141727d2ac9b40c7c350d72053b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e27c1d8681d2a20e58ede6279f5841c4213333b6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>Karışık Modda Hata Ayıklama Yalnızca Microsoft .NET Framework 2.0 veya 3.0 Sürümü Kullanılırken Desteklenir
 Daha önce Microsoft .NET Framework sürümleri 2.0, destek 64 bit işlemleri karışık modda hata ayıklama için sağlamaz. Bu hata ayıklarken, yerel koda yönetilen koddan ya da yerel koddan yönetilen koda adım edilemez olduğunu anlamına gelir.  

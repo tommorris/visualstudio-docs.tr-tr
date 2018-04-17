@@ -2,23 +2,19 @@
 title: Başvuru eklerken NuGet karşı uzantı SDK kullanma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
-caps.latest.revision: ''
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0be77be115e5ed271b1814b9cb42ca606d9e181
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 4d4bfd9be5fdcf4544f9bc5c28482cb579af5033
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Başvuru eklerken NuGet uzantı SDK ile kullanma
 
@@ -32,7 +28,7 @@ Visual Studio için NuGet uzantısı ya da bir yazılım geliştirme seti (SDK) 
 
 Aşağıdaki tabloda, bir SDK başvuruda bulunan özellikler NuGet başvuru özellikleri ile karşılaştırmanıza yardımcı olur.
 
-|Özellik|SDK'sı desteği|SDK notları|NuGet desteği|NuGet Notes|
+|Özellik|SDK'sı desteği|SDK notları|NuGet desteği|NuGet Notlar|
 |-------------|-----------------|---------------|-------------------|-----------------|
 |Bir varlık mekanizması başvuruyor ve tüm dosyaları ve işlevsellik sonra kullanılabilir.|Y|Kullanarak bir SDK'sı ekleme **başvuru Yöneticisi** iletişim kutusunda, tüm dosyaları ve işlevselliği geliştirme iş akışı sırasında kullanılabilir.|Y||
 |MSBuild otomatik olarak tüketir derlemeler ve Windows Meta veriler (*.winmd*) dosyaları.|Y|SDK başvurularında derleyiciye otomatik olarak geçirilir.|Y||

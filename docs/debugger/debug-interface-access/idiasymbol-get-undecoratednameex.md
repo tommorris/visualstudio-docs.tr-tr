@@ -1,29 +1,25 @@
 ---
 title: Idiasymbol::get_undecoratednameex | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_undecoratedNameEx method
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d0b25b2306cc957015ec4c205a22cd44660357
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d737ccfe9dbbcdf7a205fb847bb81344cd18ff0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Alır bölümünü veya tümünü bir C++ için ve bir ad (bağlantı) adı donatılmış.  
@@ -59,10 +55,10 @@ HRESULT get_undecoratedNameEx(
 |Bayrağı|Değer|Açıklama|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|Tam undecoration etkinleştirir.|  
-|UNDNAME_NO_LEADING_UNDERSCORES|0X0001|Anahtar sözcükler genişletilmiş Microsoft'tan alt çizgi baştaki kaldırır.|  
-|UNDNAME_NO_MS_KEYWORDS|0X0002|Anahtar sözcükler genişletilmiş Microsoft genişlemesi devre dışı bırakır.|  
-|UNDNAME_NO_FUNCTION_RETURNS|0X0004|Genişletme birincil bildirimi için dönüş türü devre dışı bırakır.|  
-|UNDNAME_NO_ALLOCATION_MODEL|0X0008|Genişletme bildirimi modelinin devre dışı bırakır.|  
+|UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Anahtar sözcükler genişletilmiş Microsoft'tan alt çizgi baştaki kaldırır.|  
+|UNDNAME_NO_MS_KEYWORDS|0x0002|Anahtar sözcükler genişletilmiş Microsoft genişlemesi devre dışı bırakır.|  
+|UNDNAME_NO_FUNCTION_RETURNS|0x0004|Genişletme birincil bildirimi için dönüş türü devre dışı bırakır.|  
+|UNDNAME_NO_ALLOCATION_MODEL|0x0008|Genişletme bildirimi modelinin devre dışı bırakır.|  
 |UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Bildirim dil belirleyici genişlemesi devre dışı bırakır.|  
 |UNDNAME_RESERVED1|0x0020|AYRILMIŞ.|  
 |UNDNAME_RESERVED2|0x0040|AYRILMIŞ.|  

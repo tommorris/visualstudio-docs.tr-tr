@@ -1,13 +1,10 @@
 ---
-title: "Hata ayıklayıcıda GPU iş parçacıkları görüntüleme | Microsoft Docs"
-ms.custom: 
+title: Hata ayıklayıcıda GPU iş parçacıkları görüntüleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
 - vs.debug.gputhreads
@@ -19,17 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - debugger, GPU threads window
 ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4782a1650034424d2616e47f46e07cec4d01ae5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4c222d193084dd66a18154e0a9139cdea5395244
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Nasıl Yapılır: GPU İş Parçacıkları Penceresini Kullanma
 GPU iş parçacıkları penceresinde inceleyin ve uygulamada hata ayıklama yaptığınız GPU üzerinde çalışan iş parçacıkları ile iş. GPU üzerinde çalışan uygulamalar hakkında daha fazla bilgi için bkz: [C++ AMP'ye genel bakış](/cpp/parallel/amp/cpp-amp-overview).  

@@ -2,23 +2,19 @@
 title: Xamarin Visual Studio kullanarak yerel kullanıcı Arabirimi ile uygulamalar oluşturma | Microsoft Docs
 ms.custom: ''
 ms.date: 03/30/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: 31
 author: charlespetzold
 ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 0ec6529e6a9c41d1b9a4fa99a79d756754df1f45
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: a8602915827c442fa2fc4cbddf4db2a25ef21749
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Xamarin Visual Studio kullanarak yerel kullanıcı Arabirimi ile uygulamalar oluşturma
 
@@ -252,11 +248,11 @@ Visual Studio .NET standart bir kitaplık paylaşımı yerel UI uygulamaları ol
   
     |Özellik|Değer|  
     |--------------|-----------|  
-    |**text**|**Posta kodu göre ara**|  
+    |**Metin**|**Posta kodu göre ara**|  
     |**id**|`@+id/ZipCodeSearchLabel`|  
     |**layout_marginStart**|`10dp`|  
     |**textColor**|`@android:color/white`|  
-    |**textStyle**|`bold`|  
+    |**metin stili**|`bold`|  
   
     > [!TIP]
     >  Pek çok özellik seçebileceğiniz değerler açılan listesini içermeyen dikkat edin.  Belirli bir özellik için kullanılacak dize değeri tahmin etmesi zor olabilir. Bir özelliğin adını arama önerileri için deneyin [R.attr](http://developer.android.com/reference/android/R.attr.html) sınıfı sayfası.  
@@ -283,7 +279,7 @@ Visual Studio .NET standart bir kitaplık paylaşımı yerel UI uygulamaları ol
   
     |Özellik|Değer|  
     |--------------|-----------|  
-    |**text**|**Posta Kodu**|  
+    |**Metin**|**Posta Kodu**|  
     |**id**|`@+id/ZipCodeLabel`|  
     |**layout_marginStart**|`10dp`|  
     |**layout_marginTop**|`6dp`|  
@@ -310,7 +306,7 @@ Visual Studio .NET standart bir kitaplık paylaşımı yerel UI uygulamaları ol
     |**id**|`@+id/zipCodeEntry`|  
     |**layout_marginStart**|`10dp`|  
     |**layout_marginBottom**|`10dp`|  
-    |**width**|`165dp`|  
+    |**Genişlik**|`165dp`|  
     |**textColor**|`@android:color/white`|  
   
     **Numarası** denetimidir kullanıcı beş basamaklı Amerika Birleşik Devletleri zip kodda girildiği. Bu denetim için karşılık gelen biçimlendirme aşağıdaki gibidir:  
@@ -333,10 +329,10 @@ Visual Studio .NET standart bir kitaplık paylaşımı yerel UI uygulamaları ol
     |Özellik|Değer|  
     |--------------|-----------|  
     |**id**|`@+id/weatherBtn`|  
-    |**text**|**Hava durumu Al**|  
+    |**Metin**|**Hava durumu Al**|  
     |**layout_marginStart**|`20dp`|  
     |**layout_alignBottom**|`@id/zipCodeEntry`|  
-    |**width**|`165dp`|  
+    |**Genişlik**|`165dp`|  
   
     ```xml  
     <Button

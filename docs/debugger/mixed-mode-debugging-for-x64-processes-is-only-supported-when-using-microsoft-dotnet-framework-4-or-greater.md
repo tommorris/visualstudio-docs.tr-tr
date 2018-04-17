@@ -1,13 +1,10 @@
 ---
-title: "Karışık modda hata ayıklama işlemleri Microsoft.NET Framework 4 kullanırken yalnızca desteklenen x64 için veya büyük | Microsoft Docs"
-ms.custom: 
+title: Karışık modda hata ayıklama işlemleri Microsoft.NET Framework 4 kullanırken yalnızca desteklenen x64 için veya büyük | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_x64
 dev_langs:
@@ -16,17 +13,16 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: b7495655-54c0-4315-8422-43bf63b8c22e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d5c52192c30ccc3b34bfa609c3f6a7ffb99566
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 224e4de9e3a00882cb065037005b7644343262d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>x64 işlemleri için karışık modda hata ayıklama yalnızca Microsoft.NET Framework 4 veya daha yenisi kullanılırken desteklenir
 .NET framework sürümleri 4 sağlıyor mu'den önceki x64 karışık modda hata ayıklama için destek işler. Bu, yerel koda yönetilen koddan ya da yerel koddan yönetilen koda hata ayıklama sırasında adım edilemez olduğunu anlamına gelir.  
@@ -35,11 +31,11 @@ ms.lasthandoff: 12/22/2017
   
 -   Microsoft .NET Framework 4 veya daha sonra kullanmak için projenizin güncelleştirin.  
   
-     veya  
+     -veya-  
   
      Yönetilen ve yerel kod hata ayıklama ayrı hata ayıklama oturumu.  
   
-     veya  
+     -veya-  
   
      Aşağıdaki yordamlarda açıklandığı gibi karma kodunuzu bir 32 bitlik işlem olarak hata ayıklama.  
   

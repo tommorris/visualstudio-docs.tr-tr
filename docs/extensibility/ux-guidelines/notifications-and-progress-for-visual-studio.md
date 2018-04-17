@@ -1,28 +1,24 @@
 ---
-title: "Bildirimler ve Visual Studio için ilerleme | Microsoft Docs"
-ms.custom: 
+title: Bildirimler ve Visual Studio için ilerleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 237ed5c382a6ac880b0be59165a33ad338370976
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Bildirimler ve Visual Studio için ilerleme durumu
-##  <a name="BKMK_NotificationSystems"></a>Bildirim sistemleri  
+##  <a name="BKMK_NotificationSystems"></a> Bildirim sistemleri  
   
 ### <a name="overview"></a>Genel Bakış  
  Visual Studio yazılım geliştirme görevlerini ilgili olarak neler olduğunu kullanıcıya bildirmek için birkaç yolu vardır.  
@@ -54,21 +50,21 @@ ms.lasthandoff: 02/01/2018
 |[Visual Studio bildirimler penceresi](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|Bildirimler penceresini herkese açık şekilde genişletilebilir değil. Ancak, bir dizi iletileri lisans ve bilgilendirici bildirimleri Visual Studio veya paketleri için güncelleştirmeleri, kritik sorunlar da dahil olmak üzere Visual Studio hakkında iletişim kurmak için kullanılır.|Diğer bildirim türleri için kullanmayın.|  
 |[Hata listesi](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|Bir sorun (uyarı/hata/bilgisi) sahip doğrudan kullanıcının açık çözüm için sorun ilgilidir, kod eyleme geçmek gerekebilir.<br /><br /> Bu, örneğin aşağıdakileri içerir:<br /><br /> -Derleyici iletilerini (uyarı/hata/bilgisi)<br /><br /> -Kod Çözümleyicisi/tanılama iletileri kod hakkında<br /><br /> -İletileri derleme<br /><br /> Proje ya da çözüm dosyaları ile ilgili sorunlar için uygun olabilir, ancak bir Çözüm Gezgini göstergesi önce göz önünde bulundurun.|Kullanıcının açık çözüm kodu herhangi ilişkisine sahip olmayan öğeler için kullanmayın.|  
 |Düzenleyici bildirimleri: ampul|Dosya Aç var olan bir sorunu gidermek için kullanılabilecek bir düzeltme sahip olduğunuzda kullanın.<br /><br /> Ampul ayrıca kullanıcının kodu yapan yeniden düzenlemeler gibi isteğe bağlı alınır ancak bu durumda "bildirim stili." görünmez hızlı Eylemler barındırmak için kullanılması gerektiğini unutmayın|Hiçbir ilişki açık dosyasına sahip olmayan öğeler için kullanmayın.|  
-|Editor notifications: Squiggles|Belirli bir aralık kendi açık kod (örneğin, bir kırmızı dalgalı hatalar için) ile ilgili bir sorun için kullanıcıyı uyarmak için kullanın.|Kendi açık kodunun belirli bir aralığa ilişkili olmayan öğeler için kullanmayın.|  
+|Düzenleyici bildirimleri: dalgalı çizgiler|Belirli bir aralık kendi açık kod (örneğin, bir kırmızı dalgalı hatalar için) ile ilgili bir sorun için kullanıcıyı uyarmak için kullanın.|Kendi açık kodunun belirli bir aralığa ilişkili olmayan öğeler için kullanmayın.|  
 |[Katıştırılmış durum çubukları](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|İçerik veya işlemi belirli araç penceresi, belge penceresine ya da iletişim kutusu penceresinin bağlam içinde ilgili durum sağlamak için kullanın.|Genel Ürün bildirimleri, işlemler veya içeriğe hiçbir ilişkisi belirli penceresi içinde olmayan öğeler için kullanmayın.|  
 |[Windows Tepsisi bildirimleri](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|İşlem dışı işlemler için bildirimler yüzey veya uygulamaları Yahoo! companion için kullanın.|IDE ilgili bildirimler için kullanmayın.|  
 |[Bildirim balonları](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|Bir uzak işlemini bildir veya değiştirmek için kullanın **dışında** IDE.|Bir araç olarak işlemler kullanıcı bilgilendirmek için kullanmayın **içinde** IDE.|  
   
 ### <a name="notification-methods"></a>Bildirim yöntemleri  
   
-####  <a name="BKMK_ModalErrorMessageDialogs"></a>Kalıcı hata iletisi iletişim kutuları  
+####  <a name="BKMK_ModalErrorMessageDialogs"></a> Kalıcı hata iletisi iletişim kutuları  
  Kalıcı hata iletisi iletişim kutusu, kullanıcı onayı veya eylem gerektiren bir hata iletisi görüntülemek için kullanılır.  
   
  ![Kalıcı hata iletisi](../../extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "0901 01_ModalErrorMessage")  
   
  **Geçersiz bağlantı dizesi veritabanına kullanıcı uyarı kalıcı hata iletisi iletişim kutusu**  
   
-####  <a name="BKMK_IDEStatusBar"></a>IDE durum çubuğu  
+####  <a name="BKMK_IDEStatusBar"></a> IDE durum çubuğu  
  Kullanıcıları durum çubuğu metni fark olasılığını çepeçevre bilgisayar deneyimi ve Windows platform belirli deneyimiyle hatalarla ilintilidir. Visual Studio müşteri tabanı olsa bile bilgili Windows kullanıcıları durum çubuğundaki değişiklikleri kaçırmış iki alanda deneyimli olma eğilimindedir. Bu nedenle, bilgileri başka bir yerde sunulan için durum çubuğunu en iyi bilgilendirici amaçlarla veya yedek ipucu olarak kullanılır. Bir iletişim kutusu veya bildirimleri aracı penceresinde kullanıcı hemen çözülmelidir kritik bilgilerin herhangi bir tür sağlanmalıdır.  
   
  Visual Studio durum çubuğu görüntülenecek çeşitli bilgi türleri için izin verecek şekilde tasarlanmıştır. Geri bildirim, Tasarımcısı, ilerleme çubuğu, animasyon ve istemci için bölgeler ayrılmıştır.  
@@ -81,24 +77,24 @@ ms.lasthandoff: 02/01/2018
   
  **IDE durum çubuğu renkleri**  
   
-####  <a name="BKMK_EmbeddedInfobar"></a>Katıştırılmış bilgi çubuğu  
+####  <a name="BKMK_EmbeddedInfobar"></a> Katıştırılmış bilgi çubuğu  
  Belge penceresine veya aracı penceresinin en üstünde bir bilgi çubuğu kullanıcı durumu ya da koşul bildirmek için kullanılır. Kullanıcı bir şekilde kolayca eylemde böylece komutları da sunabilir. Bilgi çubuğu standart Kabuk denetimdir. Kendi oluşturmamaya özen gösterin, hangi hareket ve IDE içinde başkalarıyla tutarsız görünür. Bkz: [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) uygulama ayrıntılarını ve kullanım kılavuzu için.  
   
  ![Bilgi çubuğu katıştırılmış](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901 03_EmbeddedInfobar")  
   
  **Bir bilgi çubuğu IDE geçmiş hata ayıklama modunda ve standart hata ayıklama modunda yaptığı gibi Düzenleyicisi aynı şekilde yanıt vermez kullanıcı uyarı belge penceresinde katıştırılmış.**  
   
-####  <a name="BKMK_MouseCursorChanges"></a>Fare imleci değişiklikleri  
+####  <a name="BKMK_MouseCursorChanges"></a> Fare imleci değişiklikleri  
  Fare imlecini değiştirirken VSColor hizmetine bağlanır ve zaten imleci ile ilişkili olan renkleri kullanın. İmleç devam eden bir işlem belirten için kullanılabilir, aynı zamanda kullanıcı sürüklenen, üzerine bırakılan veya bir nesneyi seçmek için kullanılan bir hedef nerede getirildiğinde bölgeleri isabet.  
   
  Kullanıcı başka bir giriş ifade önleme, bir işlem için tüm kullanılabilir CPU süresi yalnızca ayrılmalıdır meşgul bekleme fare imleci kullanın. Çoklu iş parçacığı kullanan iyi yazılmış uygulamalar ile çoğu durumda, diğer işlemlerin engel kullanıcıların ne zaman engellenir kez seyrek olmalıdır.  
   
  Bilgi için yedek bir işaret başka bir yerde sunulduğu şekilde imleç yararlıdır göz önünde bulundurun. Bir imleç değişiklik kullanıcı çözülmesi gereken önemli olan özellikle bir şey iletmek çalışırken kullanıcıyla iletişim tek yolu olarak kullanmayın.  
   
-####  <a name="BKMK_NotSysProgressIndicators"></a>İlerleme göstergesi  
+####  <a name="BKMK_NotSysProgressIndicators"></a> İlerleme göstergesi  
  İlerleme göstergesi, tamamlanması birkaç saniye sürebilir işlemleri sırasında kullanıcı geri bildirimde için önemlidir. İlerleme göstergesi gösterilmesi yerinde (yakın başlatma noktası işlem devam ediyor), katıştırılmış durum çubuğu, kalıcı bir iletişim kutusu veya Visual Studio durum çubuğu. Yönergeleri [İlerleme göstergesi](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) kendi kullanın ve uygulama ile ilgili.  
   
-####  <a name="BKMK_VSNotificationsToolWindow"></a>Visual Studio bildirimler penceresi  
+####  <a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio bildirimler penceresi  
  Visual Studio bildirimler penceresini geliştiriciler lisans, ortam (Visual Studio), uzantılar ve güncelleştirmeler hakkında uyarır. Kullanıcılar tek tek bildirimleri sayabilirsiniz veya belirli türdeki bildirimlerin göz ardı etmeyi seçebilir. Yoksayılan bildirimler listesi olarak yönetilen bir **Araçlar > Seçenekler** sayfası.  
   
  Bildirimler penceresini şu anda Genişletilebilir değil.  
@@ -107,33 +103,33 @@ ms.lasthandoff: 02/01/2018
   
  **Visual Studio bildirimleri araç penceresi**  
   
-####  <a name="BKMK_ErrorList"></a>Hata listesi  
+####  <a name="BKMK_ErrorList"></a> Hata listesi  
  Hata listesi içindeki bir bildirim hataları ve derleme sırasında oluştu ve derleme işlemi ve kullanıcının belirli bir kod hata kodu gitmek sağlayan uyarıları gösterir.  
   
  ![Hata listesi](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901 08_ErrorList")  
   
  **Visual Studio'da hata listesi**  
   
-####  <a name="BKMK_EmbeddedStatusBars"></a>Katıştırılmış durum çubukları  
+####  <a name="BKMK_EmbeddedStatusBars"></a> Katıştırılmış durum çubukları  
  Etkin belge penceresi ve kullanıcının bağlamında ve/veya sistem yanıtları üzerinde güncelleştirme bilgileri ayarlanan istemci bölgesi içerikli IDE durum çubuğu dinamik olduğu için bilgi sürekli bir görüntüsünü korumak ya da durum çubuğunda uzun vadeli vermek zor olabilir zaman uyumsuz işlemler. Örneğin, IDE durum çubuğu birden çok çalıştırır ve/veya hemen tıklatılabilir öğesi seçimleri testi sonuçlarını bildirimleri için uygun değil. Bağlamında, kullanıcı bir seçim yapar veya bir işlem başlatır belge veya aracı penceresi gibi durum bilgileri korumak önemlidir.  
   
  ![Katıştırılmış durum çubuğu](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901 09_EmbeddedStatusBar")  
   
  **Visual Studio'da katıştırılmış durum çubuğu**  
   
-####  <a name="BKMK_WindowsTray"></a>Windows Tepsisi bildirimleri  
+####  <a name="BKMK_WindowsTray"></a> Windows Tepsisi bildirimleri  
  Windows görev çubuğunda bildirim alanında Windows yanındaki sistem saati. Kullanıcının ekran çözünürlüğünü değiştirme veya yazılım güncelleştirmelerini alma gibi sistem genelinde görevler için bir bağlam menüsü alabilmesi adına, bu alandaki simgeler birçok yardımcı programları ve yazılım bileşenleri sağlar.  
   
  Visual Studio bildirim hub'ı, Windows bildirim alanındaki ortamı düzeyi bildirimleri ortaya.  
   
-####  <a name="BKMK_NotificationBubbles"></a>Bildirim balonları  
+####  <a name="BKMK_NotificationBubbles"></a> Bildirim balonları  
  Bildirim balonları bilgilendirici bir düzenleyici/Tasarımcısı'nda veya Windows bildirim alanında bir parçası olarak görünebilir. Kullanıcı bu balonları kritik olmayan bildirimler için bir avantajı olduğu daha sonra çözebilirsiniz sorunları algılar. Balonları kullanıcı hemen çözmeniz gerekir önemli bilgiler için uygun. Visual Studio'da bildirim balonları kullanıyorsanız, izleyin [bildirim balonları için Windows Masaüstü Kılavuzu](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742472\(v=vs.85\).aspx).  
   
  ![Bildirim Kabarcık](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901 07_NotificationBubbles")  
   
  **Visual Studio için kullanılan Windows bildirim alanında bildirim Kabarcık**  
   
-##  <a name="BKMK_ProgressIndicators"></a>İlerleme göstergesi  
+##  <a name="BKMK_ProgressIndicators"></a> İlerleme göstergesi  
   
 ### <a name="overview"></a>Genel Bakış  
  İlerleme göstergesi bildirim sistemi kullanıcı geri bildirimde için önemli bir parçasıdır. İşlemler ve işlemleri tamamladığınızda, bunlar kullanıcı söyleyin. İlerleme çubukları, dönen imleçler ve animasyonlu simgeleri tanıdık göstergesi türleri içerir. Bir İlerleme göstergesi yerleşimini ve türünü ne raporlanan dahil olmak üzere, bağlam ve ne kadar süre işlem veya işlem tamamlanması için gereken bağlıdır.  
@@ -158,7 +154,7 @@ ms.lasthandoff: 02/01/2018
 |İlerleme türü|Ne zaman ve nasıl kullanılacağını|Notlar|  
 |-------------------|-------------------------|-----------|  
 |İlerleme çubuğu (belirli)|Beklenen süresini > 5 saniye.<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.|**Verme** animasyonda metin ekleme.|  
-|Infobar|Bağlamsal kullanıcı Arabirimi ile ilişkili ileti. Bkz: [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.|**Verme** birden çok işlemlerini göstermek gerektiğinde birden çok infobars kullanın. Yığılmış ilerleme çubukları kullanın.|  
+|Bilgi Çubuğu|Bağlamsal kullanıcı Arabirimi ile ilişkili ileti. Bkz: [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.|**Verme** birden çok işlemlerini göstermek gerektiğinde birden çok infobars kullanın. Yığılmış ilerleme çubukları kullanın.|  
 |Çıktı Penceresi|Geçici bildirim: kullanıcı uygulama düzeyinde işlem istediğiniz **gözden** ayrıntılarını tamamlandıktan sonra.|**Verme** kullanıcı verilerini daha sonra başvurmak üzere gerekecekse kullanın.|  
 |Günlük dosyası|Önemli olduğunda durumlarda intransient bildirim eşleştirilmiş **kaydetmek** tamamlandıktan sonra ayrıntıları.||  
 |Durum çubuğu|Geçici bildirim: uygulama düzeyinde işlemi kullanıcının olacak **gerek** ayrıntılarını tamamlandıktan sonra.<br /><br /> Katıştırılmış ilerleme çubuğu içerir.<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.||  
@@ -170,7 +166,7 @@ ms.lasthandoff: 02/01/2018
 |İlerleme çubuğu (belirsiz)|Beklenen süresini > 5 saniye.<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.|**Verme** animasyonda metin ekleme.|  
 |Karıncaların (animasyonlu yatay nokta)|Sunucuya gidiş dönüş.<br /><br /> NEAR noktası bağlamının üst kapsayıcı üstte yerleştirilir.|**Verme** tüm kapsayıcı tarafından üst öğe değil kullanın.|  
 |Değer değiştirici (ilerleme halka)|Bağlamsal kullanıcı Arabirimi ile veya alanı önemli bir unsur olduğu ilişkili işlemi.<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.||  
-|Infobar|Bağlamsal kullanıcı Arabirimi ile ilişkili ileti. Bkz: [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).|**Verme** birden çok işlemlerini göstermek gerektiğinde birden çok infobars kullanın. Yığılmış ilerleme çubukları kullanın.|  
+|Bilgi Çubuğu|Bağlamsal kullanıcı Arabirimi ile ilişkili ileti. Bkz: [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).|**Verme** birden çok işlemlerini göstermek gerektiğinde birden çok infobars kullanın. Yığılmış ilerleme çubukları kullanın.|  
 |Çıktı Penceresi|Geçici bildirim:, kullanıcı uygulama düzeyinde işlem istediğiniz **gözden** ayrıntılarını tamamlandıktan sonra.|**Verme** oturumlarında kalıcı hale getirmek için gereken bilgileri belirtmek için kullanın.|  
 |Günlük dosyası|Önemli olduğunda durumlarda intransient bildirim eşleştirilmiş **kaydetmek** tamamlandıktan sonra ayrıntıları.||  
 |Durum çubuğu|Geçici bildirim: uygulama düzeyinde işlemi kullanıcının olacak **gerek** ayrıntılarını tamamlandıktan sonra.<br /><br /> Katıştırılmış ilerleme çubuğu içerir.<br /><br /> İşlem ayrıntıları metinsel açıklaması içerebilir.||  
@@ -231,7 +227,7 @@ ms.lasthandoff: 02/01/2018
   
  **Metinsel ile durum çubuğu**  
   
-##### <a name="infobar"></a>Infobar  
+##### <a name="infobar"></a>Bilgi Çubuğu  
  Durum çubuğu, Bilgi Çubuğu'nu benzer bağlamsal bildirim ve mesajlaşma, hangi da ilerleme çubuğu veya değer değiştirici gibi belirsiz İlerleme göstergesi ile eşleştirilmesi sağlar. Bilgi Çubuğu'nu ayrıntılı düzey ilerleme durumunu veya belirli İlerleme göstergesi sağlamalıdır değil. Bkz: [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).  
   
  ![İlerleme çubuğu ve mesajlaşma ile bilgi çubuğu](../../extensibility/ux-guidelines/media/0903-05_infobar.png "0903 05_InfoBar")  
@@ -287,7 +283,7 @@ ms.lasthandoff: 02/01/2018
   
  **Pencere çıkış ile devam eden işlem durumunu ve mesajlaşma bekleyin**  
   
-##  <a name="BKMK_Infobars"></a>Infobars  
+##  <a name="BKMK_Infobars"></a> Infobars  
   
 ### <a name="overview"></a>Genel Bakış  
  Infobars dikkatini kendi noktası yakın bir göstergesi kullanıcıya vermek ve paylaşılan bir bilgi çubuğu denetimini kullanarak görsel görünümünü ve etkileşim tutarlılık sağlar.  
@@ -476,13 +472,13 @@ public interface IVsInfoBarUIEvents
   
 ```  
   
-##  <a name="BKMK_ErrorValidation"></a>Hata doğrulama  
+##  <a name="BKMK_ErrorValidation"></a> Hata doğrulama  
  Kullanıcı kabul edilebilir, gerekli bir alan zaman atlanır gibi veya yanlış biçimde veri girildiğinde değil bilgi girdiğinde, kullanım denetim doğrulama ya da geribildirim engelleme açılan hata iletişim kutusu kullanmak yerine denetimi yakın için iyidir.  
   
 ### <a name="field-validation"></a>Alan doğrulama  
  Form ve alan doğrulama üç bileşenlerden oluşur: bir denetim, simge ve araç ipucu. Denetimleri çeşitli türleri bu kullanabilirsiniz, ancak bir metin kutusu örnek olarak kullanılır.  
   
- ![Alan doğrulama &#40; boş &#41; ] (../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905 01_FieldValidation")  
+ ![Alan doğrulama &#40;boş&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905 01_FieldValidation")  
   
  Alan gerekiyorsa, olmamalıdır metin belirten Filigran  **\<gerekli >** ve alan arka plan açık olmalıdır sarı (VSColor: `Environment.ControlEditRequiredBackground`) ve ön gri olmalıdır (VSColor: `Environment.ControlEditRequiredHintText`):  
   
@@ -515,13 +511,13 @@ public interface IVsInfoBarUIEvents
 #### <a name="in-place-warning-text"></a>Yerinde uyarı metni  
  Oda hata durumunda denetimi yakın hata iletisini almaya kullanılabilir olduğunda, bu tek başına araç ipucunu kullanmayı tercih edilir.  
   
- ![İçinde &#45; Yerleştir uyarı](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905 06_InPlaceWarning")  
+ ![İçinde&#45;uyarı yerleştirin](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905 06_InPlaceWarning")  
   
  **Yerinde uyarı metni**  
   
 #### <a name="watermarks"></a>Filigranlar  
  Bazen bir tüm denetim veya penceresi bir hata durumuna sahip. Bu durumda, filigran hata belirtmek için kullanın.  
   
- ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
+ ![Filigran](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905 07_Watermark")  
   
  **Filigran alan doğrulama**

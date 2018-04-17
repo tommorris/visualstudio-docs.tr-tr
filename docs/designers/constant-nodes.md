@@ -1,23 +1,21 @@
 ---
-title: "Sabit düğüm | Microsoft Docs"
-ms.custom: 
+title: Sabit düğüm | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1edbe90bf9f1002392374a17b8dd85270ec2fef5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1b3d9858605beb52c7a242f7589d4045e423a54b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="constant-nodes"></a>Sabit Düğümler
 Gölgelendirici Tasarımcısı'nda sabit düğümleri değişmez değerleri temsil eder ve köşe öznitelikleri piksel gölgelendirici hesaplamalarda Ara değerli. Köşe öznitelikleri ilişkilendirileceğini çünkü — ve bu nedenle, her bir piksel için farklı — her piksel gölgelendirici örneği sabiti farklı bir sürümünü alır. Bu her piksel benzersiz bir görünümünü sağlar.  
@@ -33,7 +31,7 @@ Gölgelendirici Tasarımcısı'nda sabit düğümleri değişmez değerleri tems
 |----------|-------------|----------------|  
 |**Kamera vektör**|Kameraya dünya uzayındaki geçerli piksel genişletir vektörü.<br /><br /> Dünya uzayındaki yansımaları hesaplamak için bunu kullanabilirsiniz.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Geçerli piksel öğesinden kameraya.|Yok.|  
 |**Renk sabiti**|Bir sabit renk değeri.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Renk değeri.|**Output**<br /> Renk değeri.|  
-|**Sabit**|Sabit skaler bir değer.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Sayı değeri.|**Output**<br /> Sayı değeri.|  
+|**sabiti**|Sabit skaler bir değer.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Sayı değeri.|**Output**<br /> Sayı değeri.|  
 |**2B sabiti**|İki bileşen vektör sabit.<br /><br /> **Output**<br /><br /> `Output`: `float2`<br /> Vektör değeri.|**Output**<br /> Vektör değeri.|  
 |**3B sabiti**|Üç bileşeni vektör sabit.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Vektör değeri.|**Output**<br /> Vektör değeri.|  
 |**4D sabiti**|Dört bileşen vektör sabit.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Renk değeri.|**Output**<br /> Vektör değeri.|  

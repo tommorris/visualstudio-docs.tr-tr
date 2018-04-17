@@ -1,28 +1,26 @@
 ---
-title: "Blend'de XAML hatalarını ayıklama | Microsoft Docs"
-ms.custom: 
+title: Blend'de XAML hatalarını ayıklama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 8406f07b6f74211b4df873c7eae054e9ab67749c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: efcb38238bfc1d8001e99d6755da1f3e2f02edcd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-xaml-in-blend"></a>Blend'de XAML hatalarını ayıklama
 Araçları kullanabilirsiniz [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] uygulamanızı XAML'de hata ayıklamak için. Proje oluşturma sırasında herhangi bir hata görüntülenir **sonuçları** paneli. Hata ile ilgili biçimlendirme bulmak için bir hata çift tıklayın. İş için daha fazla yer gerekiyorsa, gizleyebilirsiniz **sonuçları** F12 tuşuna basarak paneli.  
@@ -109,13 +107,13 @@ Araçları kullanabilirsiniz [!INCLUDE[blend_first](../debugger/includes/blend_f
   
 1.  Listedeki ilk hata çift tıklayın. Açıklama "değeri ' <' özniteliği geçerli değil." Hata çift tıkladığınızda işaretçinin kodda karşılık gelen konumu bulur. `<` Önceki `Button` geçerli olduğundan ve bir öznitelik değil hata iletisindeki önerilen olarak. Kod önceki satırında bakarsanız, kapanış tırnak özniteliğini işaretleri fark edeceksiniz `Top` eksik. Kapanış tırnak işaretleri yazın. Hata listesi bildirimi **sonuçları** panel yaptığınız değişiklikleri yansıtacak şekilde güncelleştirmeler.  
   
-2.  Açıklama çift tıklatın "'0' geçersiz bir ad başlangıcında." `Margin="0,149,0,0"`düzgün biçimlendirilmemiş görünüyor. Ancak, dikkat edin, renk kodlama `Margin` diğer örneklerini eşleşmiyor `Margin` kod. Kapanış tırnak işaretleri önceki ad/değer çiftini eksik olduğundan (`VerticalAlignment="Top`), `Margin="` önceki öznitelik ve 0 değerinin bir parçası olarak bir ad/değer çifti başlangıcı salt okunur olduğundan okuyun. İçin kapanış tırnak işareti yazın `Top`. Hata listesinde **sonuçları** panel yaptığınız değişiklikleri yansıtacak şekilde güncelleştirmeler.  
+2.  Açıklama çift tıklatın "'0' geçersiz bir ad başlangıcında." `Margin="0,149,0,0"` düzgün biçimlendirilmemiş görünüyor. Ancak, dikkat edin, renk kodlama `Margin` diğer örneklerini eşleşmiyor `Margin` kod. Kapanış tırnak işaretleri önceki ad/değer çiftini eksik olduğundan (`VerticalAlignment="Top`), `Margin="` önceki öznitelik ve 0 değerinin bir parçası olarak bir ad/değer çifti başlangıcı salt okunur olduğundan okuyun. İçin kapanış tırnak işareti yazın `Top`. Hata listesinde **sonuçları** panel yaptığınız değişiklikleri yansıtacak şekilde güncelleştirmeler.  
   
 3.  "XML etiketi 'Düğmesini' kapanış eşleşmiyor." kalan hatayı çift tıklatın İşaretçinin kapatma sırasında bulunduğu **kılavuz** etiketi (`</Grid>`), içinde hata olan öneren `Grid` nesne. Dikkat ikinci `Button` kapanış etiketi eksik. Kapatma ekledikten sonra `/`, **sonuçları** Masası listesi güncelleştirilir. Bu ilk hataları çözümlendi, iki ek hataları belirlenmiştir.  
   
 4.  "'Content' üye tanınmıyor veya erişilebilir değil." çift tıklatın `c` İçinde `content` büyük harf olmalıdır. Bir büyük harf ile "c" küçük "c" değiştirin  
   
-5.  "Özelliğini 'Mame' 'http://schemas.microsoft.com/winfx/2006/xaml' ad alanında mevcut değil." çift tıklayın "Mame" "M" "N" olması gerekir "N" ile "M" değiştirin XAML ayrıştırılabilir, uygulama tasarım yüzeyine görünür.  
+5.  Çift tıklatın "'Mame' bulunmuyor özelliği 'http://schemas.microsoft.com/winfx/2006/xaml' ad alanı." "Mame" "M" "N" olması gerekir "N" ile "M" değiştirin XAML ayrıştırılabilir, uygulama tasarım yüzeyine görünür.  
   
      ![Visual Studio için blend'de XAML hata ayıklama](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")  
   

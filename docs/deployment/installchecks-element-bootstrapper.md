@@ -1,13 +1,10 @@
 ---
-title: "&lt;InstallChecks&gt; öğe (Önyükleyici) | Microsoft Docs"
-ms.custom: 
+title: '&lt;InstallChecks&gt; öğe (Önyükleyici) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <InstallChecks> element [bootstrapper]
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 787134277f27e901c6afe6a8e9c41d224431a122
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dfd01eb4aa67af9e23a7c8c348bcacb263ccb6f6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; öğe (Önyükleyici)
 `InstallChecks` Öğesi tarafından desteklenen tüm uygulama için uygun önkoşulların yüklendiğinden emin olmak için yerel bilgisayara karşı testleri çeşitli başlatılıyor.  
@@ -88,9 +84,9 @@ ms.lasthandoff: 12/22/2017
 |`ProcessorArchitecture`|İsteğe bağlı. Bu yükleme tarafından hedeflenen bilgisayar işlemcisi. Varsayılan değer `msil`.|  
   
 ## <a name="externalcheck"></a>ExternalCheck  
- Bu öğe bir isteğe bağlı bir alt öğesi olan `InstallChecks`. Her örneği için `ExternalCheck`, önyükleyici adlandırılmış dış program ayrı bir işlemde yürütür ve çıkış kodu tarafından gösterilen özellik depolamak `Property`. `ExternalCheck`karmaşık bağımlılık denetimlerini uygulamak için veya bir bileşen varlığını denetlemek için tek yolu, örneği olduğunda yararlıdır.  
+ Bu öğe bir isteğe bağlı bir alt öğesi olan `InstallChecks`. Her örneği için `ExternalCheck`, önyükleyici adlandırılmış dış program ayrı bir işlemde yürütür ve çıkış kodu tarafından gösterilen özellik depolamak `Property`. `ExternalCheck` karmaşık bağımlılık denetimlerini uygulamak için veya bir bileşen varlığını denetlemek için tek yolu, örneği olduğunda yararlıdır.  
   
- `ExternalCheck`öğe içerir ve aşağıdaki özniteliklere sahiptir.  
+ `ExternalCheck` öğe içerir ve aşağıdaki özniteliklere sahiptir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
@@ -101,7 +97,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="filecheck"></a>FileCheck  
  Bu öğe bir isteğe bağlı bir alt öğesi olan `InstallChecks`. Her örneği için `FileCheck`, önyükleyici adlandırılmış dosyanın var olduğundan ve dosyanın sürüm numarasını döndürür olup olmadığını belirler. Dosya bir sürüm numarası yoksa önyükleyici tarafından adlı özelliği ayarlar `Property` 0. Dosya mevcut değilse `Property` herhangi bir değere ayarlı değil.  
   
- `FileCheck`öğe içerir ve aşağıdaki özniteliklere sahiptir.  
+ `FileCheck` öğe içerir ve aşağıdaki özniteliklere sahiptir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
@@ -114,7 +110,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="msiproductcheck"></a>MsiProductCheck  
  Bu öğe bir isteğe bağlı bir alt öğesi olan `InstallChecks`. Her örneği için `MsiProductCheck`, önyükleyici belirtilen Microsoft Windows Installer yükleme tamamlanana kadar çalıştırılıp çalıştırılmadığını görmek için kontrol eder. Özellik değeri bu yüklenen ürünün durumuna bağlı olarak ayarlanır. Ürününün yüklü olduğu, pozitif bir değer gösterir 0 veya -1 gösterir, yüklü değil. (Lütfen Windows Installer SDK MsiQueryFeatureState daha fazla bilgi için bkz.) . Windows Installer bilgisayarda yüklü değilse `Property` ayarlı değil.  
   
- `MsiProductCheck`öğe içerir ve aşağıdaki özniteliklere sahiptir.  
+ `MsiProductCheck` öğe içerir ve aşağıdaki özniteliklere sahiptir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
@@ -125,24 +121,24 @@ ms.lasthandoff: 12/22/2017
 ## <a name="registrycheck"></a>RegistryCheck  
  Bu öğe bir isteğe bağlı bir alt öğesi olan `InstallChecks`. Her örneği için `RegistryCheck`, önyükleyici belirtilen kayıt defteri anahtarının var olup var veya belirtilen değere olup olmadığını denetler.  
   
- `RegistryCheck`öğe içerir ve aşağıdaki özniteliklere sahiptir.  
+ `RegistryCheck` öğe içerir ve aşağıdaki özniteliklere sahiptir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
 |`Property`|Gerekli. Sonucu depolamak için özelliğinin adı. Bu özellik altındaki bir testten başvurulabilir `InstallConditions` alt öğesi olarak `Command` öğesi. Daha fazla bilgi için bkz: [ \<komutları > öğesi](../deployment/commands-element-bootstrapper.md).|  
 |`Key`|Gerekli. Kayıt defteri anahtarı adı.|  
-|`Value`|İsteğe bağlı. Almak için kayıt defteri değeri adı. Varsayılan değer metnin döndürmek için varsayılandır. `Value`bir dize veya bir DWORD olması gerekir.|  
+|`Value`|İsteğe bağlı. Almak için kayıt defteri değeri adı. Varsayılan değer metnin döndürmek için varsayılandır. `Value` bir dize veya bir DWORD olması gerekir.|  
   
 ## <a name="registryfilecheck"></a>RegistryFileCheck  
  Bu öğe bir isteğe bağlı bir alt öğesi olan `InstallChecks`. Her örneği için `RegistryFileCheck`, ilk yol dosyayı belirtilen kayıt defteri anahtarından almaya önyükleyici belirtilen dosya sürümünü alır. Kayıt defteri değer olarak belirtilen bir dizindeki dosyayı aramak istiyorsanız, bu özellikle yararlıdır.  
   
- `RegistryFileCheck`öğe içerir ve aşağıdaki özniteliklere sahiptir.  
+ `RegistryFileCheck` öğe içerir ve aşağıdaki özniteliklere sahiptir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
 |`Property`|Gerekli. Sonucu depolamak için özelliğinin adı. Bu özellik altındaki bir testten başvurulabilir `InstallConditions` alt öğesi olarak `Command` öğesi. Daha fazla bilgi için bkz: [ \<komutları > öğesi](../deployment/commands-element-bootstrapper.md).|  
 |`Key`|Gerekli. Kayıt defteri anahtarı adı. Değeri bir dosya yolu olarak sürece yorumlanır `File` özniteliği olarak ayarlanmış. Bu anahtar mevcut değilse `Property` ayarlı değil.|  
-|`Value`|İsteğe bağlı. Almak için kayıt defteri değeri adı. Varsayılan değer metnin döndürmek için varsayılandır. `Value`bir dize olmalıdır.|  
+|`Value`|İsteğe bağlı. Almak için kayıt defteri değeri adı. Varsayılan değer metnin döndürmek için varsayılandır. `Value` bir dize olmalıdır.|  
 |`FileName`|İsteğe bağlı. Bir dosya adı. Belirtilmişse, kayıt defteri anahtarından alınan değer bir dizin yolu olarak kabul edilir ve bu ad ona eklenir. Belirtilmezse, kayıt defterinden döndürülen değer dosyasının tam yolunu olduğu varsayılır.|  
 |`SearchDepth`|İsteğe bağlı. Derinliğinde adlandırılmış dosya alt klasörleri aramak için. Arama derinliği ilk olur. Varsayılan kayıt defteri anahtarının değeri tarafından belirtilen en üst düzey klasörü için arama kısıtlayan 0 ' dır.|  
   

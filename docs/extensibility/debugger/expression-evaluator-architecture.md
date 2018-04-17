@@ -1,27 +1,25 @@
 ---
-title: "İfade değerlendirici mimarisi | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici mimarisi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, expression evaluators
 - expression evaluators, architecture
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3ccfca52bb4fe2190837202342915e248dbd6167
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7fdcdfef67531af40027a2dfe8c731fe9ba5128f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator-architecture"></a>İfade değerlendirici mimarisi
 > [!IMPORTANT]
@@ -39,7 +37,7 @@ ms.lasthandoff: 12/22/2017
  DE uygulayan bir nesne oluşturur [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) arabirimi, yerleştirmelerin `IDebugParsedExpression` içine nesne `IDebugExpression2` nesne ve döndürür `IDebugExpression2` nesnesinin `IDebugExpressionContext2::ParseText`.  
   
 ### <a name="evaluating-the-expression"></a>İfade değerlendirme  
- Visual Studio ya da çağıran [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) veya [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) ayrıştırılmış ifadesini değerlendiremedi. Bu yöntemlerin her ikisi de çağrısı [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync` yöntemini çağırır hemen while `IDebugExpression2::EvaluateAsync` arka plan iş parçacığı aracılığıyla yöntemini çağırır) ayrıştırılmış ifade değerlendirmek ve döndürmek için bir [ IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) ayrıştırılmış ifade türü ve değeri temsil eden arabirim. `IDebugParsedExpression::EvaluateSync`Ayrıştırılmış ifade tarafından temsil edilen bir asıl değere dönüştürmek için sağlanan SH, adresi ve bağlayıcı kullanan `IDebugProperty2` arabirimi.  
+ Visual Studio ya da çağıran [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) veya [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) ayrıştırılmış ifadesini değerlendiremedi. Bu yöntemlerin her ikisi de çağrısı [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync` yöntemini çağırır hemen while `IDebugExpression2::EvaluateAsync` arka plan iş parçacığı aracılığıyla yöntemini çağırır) ayrıştırılmış ifade değerlendirmek ve döndürmek için bir [ IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) ayrıştırılmış ifade türü ve değeri temsil eden arabirim. `IDebugParsedExpression::EvaluateSync` Ayrıştırılmış ifade tarafından temsil edilen bir asıl değere dönüştürmek için sağlanan SH, adresi ve bağlayıcı kullanan `IDebugProperty2` arabirimi.  
   
 ### <a name="for-example"></a>Örneğin  
  Çalışan bir program bir kesme noktası isabet sonra bir değişkende görüntülemek kullanıcının seçmesi **QuickWatch** iletişim kutusu. Bu iletişim kutusunda, değişkenin adını, değeri ve türünü gösterir. Kullanıcı genellikle değeri değiştirebilirsiniz.  

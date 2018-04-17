@@ -1,23 +1,20 @@
 ---
-title: "Entity Framework Araçları Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Entity Framework Araçları Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: f288d794040c533f2d00e95d628f7d04e55e96e4
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- data-storage
+ms.openlocfilehash: c9335e5d5bba077a2fd517e80398fa452718fed3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio'da Entity Framework Araçları
 Entity Framework, .NET geliştiricilerinin etki alanına özgü nesneleri kullanılarak ilişkisel verilerle çalışmak bir nesne ilişkisel eşleme teknolojisidir. Genellikle geliştiricilerin yazmak zorunda olduğu çoğu veri erişim koduna yönelik gereksinimi ortadan kaldırır. Entity Framework teknolojisi yeni .NET uygulamaları için modelleme önerilen nesne ilişkisel eşleştirme (ORM) yapılır.  

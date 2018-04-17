@@ -1,29 +1,25 @@
 ---
-title: "İşler görünümü | Microsoft Docs"
-ms.custom: 
+title: İşler görünümü | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.processesview
 helpviewer_keywords:
 - Processes view
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2dc97cbe5c6bc178e4b14c89287a3f1c3794dca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40a92a65e4a10cd5321f513cb313035d8910022f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="processes-view"></a>İşlemler Görünümü
 İşlemler görünümü, tüm etkin işlemlerin bir ağaç sisteminizde görüntüler. İşlem kimliği ve modül adı gösterilir. Genellikle bir yürütme programına karşılık gelen bir belirli bir sistemi işlem incelemek isterseniz işlemleri görünümünü kullanın. İşlemler modülü adlarına göre tanımlanır ya da "sistem işlemleri" atanan  
@@ -38,7 +34,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  Gelen **Spy** menüsünde seçin **işlemleri**.  
   
- ![Spy &#43; &#43; İşler görünümü](../debugger/media/spy--_processes.png "Spy ++ _Processes")  
+ ![Spy&#43; &#43; işler görünümü](../debugger/media/spy--_processes.png "Spy ++ _Processes")  
 Spy ++ işlemler görünümü  
   
  Yukarıdaki şekilde genişletilmiş işlemi ve iş parçacığı düğümleriyle işlemleri görüntüler.  

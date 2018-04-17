@@ -1,26 +1,22 @@
 ---
-title: "Bir Android yerel etkinlik uygulaması oluşturma | Microsoft Docs"
-ms.custom: 
+title: Bir Android yerel etkinlik uygulaması oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
+manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: e03fb8fd62e7f9b2e37dfc2efe8f02580c7b32f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 51555b660b51c227dd7c80da04f2eecd699c5c96
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-an-android-native-activity-app"></a>Android yerel etkinlik uygulama oluşturma
 Platformlar arası mobil geliştirme seçeneği için Visual C++ yüklediğinizde Visual Studio 2015 tam olarak işlevsel Android yerel etkinlik uygulamaları oluşturmak için kullanılabilir. Android yerel Geliştirme Seti (NDK) saf C/C++ kod kullanarak Android uygulamanızı çoğunluğu uygulamak olanak tanıyan bir araç setidir. Bazı Java JNI kodu, C/C++ kodu Android ile etkileşim kurmasına izin vermek için bağlantılı olarak görev yapar. Android NDK yerel etkinlik uygulamaları ile Android API Düzey 9 oluşturabilme sunmuştur. Yerel etkinlik kod Unreal Engine veya OpenGL kullanan oyun ve grafik yoğun uygulamalar oluşturmak için yaygın olarak kullanılır. Bu konuda OpenGL kullanan basit bir yerel etkinlik uygulama oluşturulmasını yol gösterecektir. Ek konular düzenleme, oluşturma, hata ayıklama ve yerel etkinlik kod dağıtma Geliştirici yaşam döngüsü yol.  
@@ -29,10 +25,10 @@ Platformlar arası mobil geliştirme seçeneği için Visual C++ yüklediğinizd
  [Yeni bir yerel etkinlik projesi oluşturma](#Create)   
  [Derleme ve varsayılan Android yerel etkinlik uygulamayı çalıştırma](#BuildHello)  
   
-##  <a name="req"></a>Gereksinimleri  
+##  <a name="req"></a> Gereksinimleri  
  Android yerel etkinlik uygulamayı oluşturmadan önce tüm sistem gereksinimleri karşılanıyor ve Visual Studio 2015'te Visual C++ mobil geliştirme seçeneği yüklü emin olmanız gerekir. Daha fazla bilgi için bkz: [platformlar arası Mobil Geliştirme için Visual C++ yüklemek](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). SDK'ları ve gerekli üçüncü taraf araçları yüklemeye dahil edilir ve Android için Microsoft Visual Studio öykünücüsü yüklü olduğundan emin olun.  
   
-##  <a name="Create"></a>Yeni bir yerel etkinlik projesi oluşturma  
+##  <a name="Create"></a> Yeni bir yerel etkinlik projesi oluşturma  
  Bu öğreticide, önce yeni bir Android yerel etkinlik projesi oluşturun ve ardından oluşturup varsayılan uygulama Visual Studio öykünücüsü Android için çalıştırın.  
   
 #### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
@@ -55,7 +51,7 @@ Platformlar arası mobil geliştirme seçeneği için Visual C++ yüklediğinizd
   
 -   **MyAndroidApp.Packaging** bir Android cihaz veya öykünücü üzerinde dağıtım için .apk dosyası oluşturur. Bu, kaynakları ve bildirim özellikleri ayarladığınız AndroidManifest.xml dosyasında içerir. Ayrıca, Ant oluşturma işlemi denetimleri build.xml dosyası içerir. Böylece dağıtılan ve doğrudan Visual Studio'dan çalıştırma başlangıç projesi olarak varsayılan olarak ayarlanır.  
   
-##  <a name="BuildHello"></a>Derleme ve varsayılan Android yerel etkinlik uygulamayı çalıştırma  
+##  <a name="BuildHello"></a> Derleme ve varsayılan Android yerel etkinlik uygulamayı çalıştırma  
  Derleme ve yükleme ve Kurulum doğrulamak için şablon tarafından oluşturulan uygulama çalıştırın. Bu ilk test için Android için Visual Studio öykünücüsü tarafından yüklenen aygıt profillerinden birini uygulamayı çalıştırın. Başka bir hedef uygulamanızı test etmek isterseniz, hedef öykünücüsü yükünü ya da cihaz bilgisayarınıza bağlayın.  
   
 #### <a name="to-build-and-run-the-default-native-activity-app"></a>Derleme ve varsayılan yerel etkinlik uygulamayı çalıştırmak için  

@@ -1,26 +1,24 @@
 ---
-title: "Genel sekmesi, iş parçacığı Özellikleri iletişim kutusu | Microsoft Docs"
-ms.custom: 
+title: Genel sekmesi, iş parçacığı Özellikleri iletişim kutusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - threading [Visual Studio], thread properties
 - thread properties
 ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d8d53c373c58e31f2a2719df8afa6dd0da9cd3c6
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 11163da022c14eccd0ed886155bba5228cc01658
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Genel Sekmesi, İş Parçacığı Özellikleri İletişim Kutusu
 Belirli bir iş parçacığı hakkında daha fazla bilgi için bu iletişim kutusunu kullanın. Bu iletişim kutusunu görüntülemek için odağı taşımak bir [iş parçacıkları görünümü](../debugger/threads-view.md) penceresi veya açık [iletiler görünümünü](../debugger/messages-view.md) ve bir ileti genişletin. Herhangi bir iş parçacığı düğüm ağaçta seçin, sonra seçin **özellikleri** gelen **Görünüm** menüsü.  

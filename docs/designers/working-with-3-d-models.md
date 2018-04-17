@@ -1,23 +1,21 @@
 ---
-title: "3-b modellerle çalışma | Microsoft Docs"
-ms.custom: 
+title: 3-b modellerle çalışma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
-caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 372a1efccbfa211167930710418905d95411760c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8c58b65c15ab95049345f1323689df354bdafec4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-3-d-models"></a>3B Modelleriyle Çalışma
 Model Düzenleyicisi'nde kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 3-b modelleri oluşturmak için. DirectX tabanlı oyun veya uygulama modellerinde kullanabilirsiniz.  

@@ -1,24 +1,20 @@
 ---
-title: "Android için Visual Studio öykünücüsü sistem gereksinimleri | Microsoft Docs"
-ms.custom: 
+title: Android için Visual Studio öykünücüsü sistem gereksinimleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: def17f215bd157da8d0e31f400e6b353a4d38f12
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 42415e1a8814de8b7a9872bf619d0ae3a000fc69
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü Sistem Gereksinimleri
 Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürümler için sanallaştırma teknolojisi sanal makine olarak çalışır. Öykünücü çalıştırmak için bilgisayarınızı bu konu başlığı altında açıklandığı gibi Hyper-V çalıştırmak için gereksinimleri karşılaması gerekir.  
@@ -103,7 +99,7 @@ Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürü
   
 -   [Android için Visual Studio Öykünücüsü’nde Sorun Giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
-##  Hyper-V gereksinimleri  
+##  <a name="HyperV"></a> Hyper-V gereksinimleri  
  BIOS içinde Hyper-V gereksinimleri  
   
  Bilgisayarınızın BIOS aşağıdaki gereksinimleri desteklemesi ve etkinleştirilmiş olması gerekir:  
@@ -132,7 +128,7 @@ Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürü
 > [!IMPORTANT]
 >  Gruba katıldıktan sonra oturumunu veya etkili değişiklik yapmak için yeniden başlatın.  
   
- ![Hiper &#45;katılma; V Administrators güvenlik grubunun](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
+ ![Hyper birleştirme&#45;V Administrators güvenlik grubunun](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
  Kendiniz el ile bir gruba eklemek için yerel kullanıcılar ve Gruplar ek bileşenini açın. Daha fazla bilgi için bkz: [bir gruba bir kullanıcı hesabı eklemek](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Bu Windows 7 konu, aynı zamanda Windows 8 için geçerlidir.)  
   
@@ -146,7 +142,7 @@ Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürü
   
 -   %localappdata%\Microsoft\XDE  
   
--   C:\Program Files (x86)\Microsoft Emulator Manager  
+-   C:\Program dosyaları (x86) \Microsoft öykünücüsü yöneticisi  
   
 -   C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
   

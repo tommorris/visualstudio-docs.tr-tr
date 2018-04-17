@@ -1,12 +1,10 @@
 ---
 title: "CA2218: gethashcode'u eşittir'i geçersiz kılarak geçersiz kılın | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2218
 - OverrideGetHashCodeOnOverridingEquals
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - OverrideGetHashCodeOnOverridingEquals
 - CA2218
 ms.assetid: 69b020cd-29e8-45a6-952e-32cf3ce2e21d
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: eed9ae032a89eb30785acb71feac47d6c4f8cdc3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a7844f4bc10acabeef81001a0c0890c603410ec5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: GetHashCode'u Eşittir'i geçersiz kılarak geçersiz kılın
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Ortak tür geçersiz kılmaları <xref:System.Object.Equals%2A?displayProperty=fullName> ancak geçersiz <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
   
 ## <a name="rule-description"></a>Kural Tanımı  
- <xref:System.Object.GetHashCode%2A>karma algoritmaları ve veri yapıları gibi bir karma tablosu için uygun geçerli örnek, temel bir değer döndürür. Aynı türde olan ve eşit olan iki nesne türlerinden birini örnekleri düzgün çalışmasını sağlamak için aynı karma koda döndürmesi gerekir:  
+ <xref:System.Object.GetHashCode%2A> karma algoritmaları ve veri yapıları gibi bir karma tablosu için uygun geçerli örnek, temel bir değer döndürür. Aynı türde olan ve eşit olan iki nesne türlerinden birini örnekleri düzgün çalışmasını sağlamak için aynı karma koda döndürmesi gerekir:  
   
 -   <xref:System.Collections.Hashtable?displayProperty=fullName>  
   
@@ -55,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
 -   <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>  
   
--   Uygulama türleri<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>  
+-   Uygulama türleri <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>  
   
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
  Bu kural ihlal düzeltmek için uygulama sağlayın <xref:System.Object.GetHashCode%2A>. Aynı türde nesneleri çifti için uygulama aynı değeri döndürdüğünü emin olmalısınız uygulamanıza <xref:System.Object.Equals%2A> döndürür `true` çifti için.  

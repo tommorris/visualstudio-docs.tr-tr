@@ -1,26 +1,23 @@
 ---
-title: "İzlenecek yol: Tek tablo devralma (O R Tasarımcısı) kullanarak LINQ-SQL sınıfları oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Tek tablo devralma (O R Tasarımcısı) kullanarak LINQ-SQL sınıfları oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b6e255492f0859689b41723657338140ffee5931
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 8a0c6702a965ae2733d2461cf30f5fd91f27dba3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>İzlenecek yol: Tek tablo devralma (O/R Tasarımcısı) kullanarak LINQ-SQL sınıfları oluşturma
 [LINQ-SQL Visual Studio Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ilişkisel sistemlerinde genellikle gerçekleştirilir gibi tek Tablo Devralma destekler. Bu kılavuzda sağlanan genel adımlar üzerine genişletir [nasıl yapılır: devralma O/R Tasarımcısı kullanarak yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) konu ve devralma kullanımını göstermek için gerçek bazı veriler sağlar [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
@@ -55,10 +52,10 @@ ms.lasthandoff: 12/22/2017
   
     |Sütun adı|Veri Türü|Null değerlere izin ver|  
     |-----------------|---------------|-----------------|  
-    |**KİMLİĞİ**|**int**|**False**|  
+    |**ID**|**int**|**False**|  
     |**Türü**|**int**|**TRUE**|  
-    |**FirstName**|**nvarchar(200)**|**False**|  
-    |**Soyadı**|**nvarchar(200)**|**False**|  
+    |**FirstName**|**Nvarchar(200)**|**False**|  
+    |**Soyadı**|**Nvarchar(200)**|**False**|  
     |**Yöneticisi**|**int**|**TRUE**|  
   
 3.  ID sütunu birincil anahtar olarak ayarlayın.  
@@ -76,7 +73,7 @@ ms.lasthandoff: 12/22/2017
   
     ||||||  
     |-|-|-|-|-|  
-    |**KİMLİĞİ**|**Türü**|**FirstName**|**Soyadı**|**Yöneticisi**|  
+    |**ID**|**Türü**|**FirstName**|**Soyadı**|**Yöneticisi**|  
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|  
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|  
     |**3**|**1**|**Yael**|**Peled**|**NULL**|  

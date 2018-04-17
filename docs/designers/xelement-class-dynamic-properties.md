@@ -1,23 +1,21 @@
 ---
-title: "Dinamik özellikler XElement sınıfı | Microsoft Docs"
-ms.custom: 
+title: Dinamik özellikler XElement sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a9795dba-2afc-45f7-9b53-c6c67a23c40b
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5c2583014552cffacaa3e2f9760fd61ead0af605
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 31720ca312e350bf5f5216cbacf403b38a0ed237
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xelement-class-dynamic-properties"></a>Dinamik özellikler XElement sınıfı
 Bu bölümde dinamik özelliklerini açıklayan <xref:System.Xml.Linq.XElement?displayProperty=fullName> sınıfı.  
@@ -31,7 +29,7 @@ Bu bölümde dinamik özelliklerini açıklayan <xref:System.Xml.Linq.XElement?d
 |[Elements](../designers/elements-xelement-dynamic-property.md)|Belirtilen genişletilmiş adı ile eşleşen geçerli öğenin alt öğeleri almak için kullanılan bir dizin oluşturucu alır.|  
 |[Alt öğeleri](../designers/descendants-xelement-dynamic-property.md)|Belirtilen bir genişletilmiş adıyla eşleşen tüm alt öğeleri geçerli öğenin almak için kullanılan bir dizin oluşturucu alır.|  
 |[Değer](../designers/value-xelement-dynamic-property.md)|Alır veya bir öğenin içeriğini ayarlar.|  
-|[XML](../designers/xml-xelement-dynamic-property.md)|Bir öğenin biçimlendirilmemiş XML gösterimini alır.|  
+|[Xml](../designers/xml-xelement-dynamic-property.md)|Bir öğenin biçimlendirilmemiş XML gösterimini alır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Xml.Linq.XElement?displayProperty=fullName>   

@@ -1,23 +1,20 @@
 ---
-title: "Sorun giderme ve bilinen sorunlar (Unity için Visual Studio Araçları) | Microsoft Docs"
-ms.custom: 
-ms.date: 10/25/2017
-ms.reviewer: 
-ms.suite: 
+title: Sorun giderme ve bilinen sorunlar (Unity için Visual Studio Araçları) | Microsoft Docs
+ms.custom: ''
+ms.date: 04/10/2018
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
 author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 95d1724561886e1bcfa9a870bdf3bdadb787f9e8
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 03329be39ba94984424999c2878b060f01ccd6de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Sorun Giderme ve Bilinen Sorunlar (Unity için Visual Studio Araçları)
 Bu bölümde, bilinen sorunların açıklamaları Unity için Visual Studio Araçları ile sık karşılaşılan sorunlara çözümler bulmak ve hata bildirimi tarafından Unity için Visual Studio Araçları geliştirmek nasıl yardımcı olabileceğini öğrenin.
@@ -51,6 +48,17 @@ FMOD, bir geçici çözüm yoktur, FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE başlatma
 ### <a name="incompatible-project-in-visual-studio"></a>Visual Studio'da uyumsuz projesi
 İlk olarak, Visual Studio Dış betik düzenleyicinizde Unity (Tercihler/düzenleme/dış araçları) olarak ayarlanmış olduğundan emin olun. Visual Studio eklentisi Unity yüklendiğini denetleyin (Yardımı/hakkında Unity için Microsoft Visual Studio Araçları altındaki etkin gibi bir ileti görüntüler gerekir). Ardından uzantısı düzgün şekilde Visual Studio'da (Yardımı/hakkında) yüklenip yüklenmediğini denetleyin.
 
+### <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Ek yeniden yükler veya Visual Studio açık olan tüm pencereleri kaybetme
+Hiçbir zaman proje dosyalarını doğrudan bir varlık işlemci veya başka bir araç touch emin olun. Proje dosyası işlemek gerçekten ihtiyacınız varsa, size bir API için kullanıma sunar. Lütfen denetleyin [bütünleştirilmiş koduna başvuruyor sorunlar bölümüne](#Assembly-reference-issues).
+
+Ek yeniden yükler karşılaşırsanız veya Visual Studio kaybetme tüm açık pencereler yeniden, Lütfen doğru .NET yüklü paketleri hedefleme sahip olduğunuzdan emin olun. Daha fazla bilgi için çerçeveler hakkında aşağıdaki bölümü gözden geçirin.
+
+
+### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>Windows, Unity hedef Framework'ü indirmek Visual Studio ister.
+Unity için Visual Studio Araçları varsayılan olarak 10 veya Windows 8 yüklü değilse .NET framework 3.5, gerektirir. Bu sorunu gidermek için indirmek ve .NET framework 3.5 yüklemek için yönergeleri izleyin.
+
+Yeni Unity çalışma zamanı kullanırken, .NET hedefleme paketleri sürümü 4.6 ve 4.7.1 de gerekli. Hızlı bir şekilde bunları (VS2017 yükleme, tek bileşenlerin, .NET kategorisi, select paketleri hedefleyen tüm 4.x değiştirme) yüklemek için VS2017 yükleyici kullanmak da mümkündür.
+
 ### <a name="assembly-reference-issues"></a>Derleme başvurusu sorunları
 Projeniz reference-wise karmaşık ise veya daha iyi oluşturma adımını denetlemek istiyorsanız, kullanabileceğiniz bizim [API](../cross-platform/customize-project-files-created-by-vstu.md) oluşturulan proje ya da çözüm içeriği düzenleme için. Aynı zamanda [yanıt dosyaları](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) , Unity proje ve biz işlenecekleri.
 
@@ -58,7 +66,7 @@ Projeniz reference-wise karmaşık ise veya daha iyi oluşturma adımını denet
 Visual Studio belirli bir kesme noktası için bir kaynak konumu bulamıyor ise isabetini bir uyarı görürsünüz. Kullanmakta olduğunuz davranışa düzgün yüklenmiş/geçerli Unity Sahne kullanılan olup olmadığını denetleyin.
 
 ### <a name="breakpoints-not-hit"></a>Kesme noktası isabet değil
- Kullanmakta olduğunuz davranışa düzgün yüklenmiş/geçerli Unity Sahne kullanılan olup olmadığını denetleyin. Visual Studio ve Unity çıkın sonra oluşturulan tüm dosyaları (*.csproj, *.sln) ve tüm kitaplık klasörünü silin.
+Kullanmakta olduğunuz davranışa düzgün yüklenmiş/geçerli Unity Sahne kullanılan olup olmadığını denetleyin. Visual Studio ve Unity çıkın sonra oluşturulan tüm dosyaları (*.csproj, *.sln) ve tüm kitaplık klasörünü silin.
 
 ### <a name="unable-to-attach"></a>İliştirilemiyor
 -   Geçici olarak virüsten koruma devre dışı bırakmak veya VS ve Unity için dışlama kuralları oluşturmak deneyin.
@@ -69,22 +77,9 @@ Visual Studio belirli bir kesme noktası için bir kaynak konumu bulamıyor ise 
 ### <a name="unable-to-debug-android-players"></a>Android oynatıcıları hata ayıklamak için
 Çok noktaya yayın kullanıyoruz (Unity tarafından kullanılan varsayılan bir mekanizma olan) player algılamasını, ancak bundan sonra normal bir TCP bağlantısı hata ayıklayıcısını kullanırız. Android cihazlar için ana sorunu algılama aşamasıdır.
 
-USB hata ayıklama için süper hızlı ancak Unity player bulma mekanizmasından ile uyumlu değil.
-WiFi gecikme nedeniyle USB karşılaştırıldığında Süper yavaş ancak daha güçlüdür. Bazı yönlendiriciler veya (Nexus serisi bu bilinen) cihazları için uygun çok noktaya yayın desteği olmaması gördük.
+WiFi gecikme nedeniyle USB kıyasla çok yönlü ancak Süper yavaş. Bazı yönlendiriciler veya (Nexus serisi bu bilinen) cihazları için uygun çok noktaya yayın desteği olmaması gördük.
 
-Aşağıdaki çalışabilir bağlı cihazına (yukarı player ve hata ayıklama bağlantı noktası, her zaman formun 56xxx görebilmeniz için çalıştıran) açılan bağlantı noktaları görmek için USB kullanarak:
-
-```shell
-adb shell netstat
-```
-
-Yerel bilgisayar için bağlantı noktası ilet:
-
-```shell
-adb forward tcp:56xxx tcp:56xxx
-```
-
-Ardından, VSTU iletilen bağlantı noktası 127.0.0.1:56xxx kullanarak bağlanın.
+USB hata ayıklama için süper hızlıdır ve Unity için Visual Studio Araçları, USB aygıtları algılamaya ve hata ayıklama için bağlantı noktalarını düzgün bir şekilde iletmek için adb sunucuya konuşun bulabildiği.
 
 ### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları UnityVS geçirme
  Unity için Visual Studio Araçları için UnityVS geçiş, Unity projelerinizi yeni Visual Studio çözümleri oluşturmanız gerekir.
@@ -96,9 +91,6 @@ Ardından, VSTU iletilen bağlantı noktası 127.0.0.1:56xxx kullanarak bağlan�
 2.  Unity paketini için Visual Studio Araçları Unity projenize alın. VSTU paketini içeri aktarma hakkında daha fazla bilgi için Unity için Visual Studio Araçları yapılandırma bakın [Başlarken](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) sayfası.
 
 3.  Yeni çözüm ve proje dosyalarını oluşturur. Bunları şimdi, Unity Düzenleyicisi'nde, ana menüdeki oluşturmak istiyorsanız seçin **Visual Studio Araçları**, **proje dosyalarını oluşturmak**. Aksi takdirde istiyorsanız bu adımı atlayabilirsiniz; Unity için Visual Studio Araçları oluşturacağını yeni dosyalar otomatik olarak seçtiğinizde **Visual Studio Araçları**, **Visual Studio'da Aç**.
-
-### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>Windows, Unity hedef Framework'ü indirmek Visual Studio ister.
- Unity için Visual Studio Araçları varsayılan olarak 10 veya Windows 8 yüklü değilse .net framework 3.5, gerektirir. Bu sorunu gidermek için indirmek ve .net framework 3.5 yüklemek için yönergeleri izleyin.
 
 ## <a name="known-issues"></a>Bilinen Sorunlar
  Bilinen sorunlar vardır hata ayıklayıcı Unity'nın eski sürümü C# derleyici ile nasıl etkileşim gelen neden Visual Studio Araçları Unity için. Bu sorunları gidermeye yardımcı olmak için çalışıyoruz ancak bu arada aşağıdaki sorunlarla karşılaşabilirsiniz:
@@ -117,7 +109,7 @@ Ardından, VSTU iletilen bağlantı noktası 127.0.0.1:56xxx kullanarak bağlan�
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları ile hata ayıklama sırasında Visual Studio donuyor raporu
 
-*On Windows:*
+*Windows:*
 
 1.  Visual Studio yeni bir örneğini açın.
 
@@ -135,7 +127,7 @@ Ardından, VSTU iletilen bağlantı noktası 127.0.0.1:56xxx kullanarak bağlan�
 
     Yapmanız gerekebilecek **komutu** pencere görünür ilk. Visual Studio'da ana menüde seçin **Görünüm**, **diğer pencereler**, **komut penceresi**.
 
-*On Mac:*
+*Mac üzerinde:*
 
 1. Bir terminal açın ve Mac için PID, Visual Studio alın:
 

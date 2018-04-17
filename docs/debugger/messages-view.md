@@ -1,36 +1,32 @@
 ---
-title: "İletiler görünümünü | Microsoft Docs"
-ms.custom: 
+title: İletiler görünümünü | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
 helpviewer_keywords:
 - Messages view
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 206c0197d73e3bb95975309bdce84887dee283e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="messages-view"></a>İletiler Görünümü
 Her penceresinde bir ilişkili ileti akışı vardır. Bu ileti akışı iletilerin görüntüleme penceresi görüntüler. Bir pencere tanıtıcının, ileti kodu ve iletinizi gösterilir. Bir iş parçacığı veya işlem de iletiler görünümünü oluşturabilirsiniz. Bu, bir özel işlem veya pencere Başlatma iletilerinin yakalamak için özellikle yararlıdır iş parçacığı tarafından sahip olunan tüm windows gönderilen iletileri görüntülemenize olanak sağlar.  
   
  Tipik bir iletilerin görüntüleme penceresi, aşağıda yer almaktadır. Bir pencere tanıtıcının ilk sütun içerir ve ikinci sütunda ileti kodu içeren unutmayın (açıklandığı [iletisi kodlarını](../debugger/message-codes.md)). Kodu çözülmüş ileti parametreler ve dönüş değerleri sağda olduğu.  
   
- ![Spy &#43; &#43; İletiler görünümünü](../debugger/media/spy--_messagesview.png "Spy ++ _MessagesView")  
+ ![Spy&#43; &#43; iletiler görünümünü](../debugger/media/spy--_messagesview.png "Spy ++ _MessagesView")  
 Spy ++ iletiler görünümü  
   
 ## <a name="procedures"></a>Yordamlar  

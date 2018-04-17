@@ -1,13 +1,10 @@
 ---
-title: "&lt;bağımlılık&gt; öğesi (ClickOnce dağıtımı) | Microsoft Docs"
-ms.custom: 
+title: '&lt;bağımlılık&gt; öğesi (ClickOnce dağıtımı) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,17 +23,16 @@ dev_langs:
 helpviewer_keywords:
 - <dependency> element [ClickOnce deployment manifest]
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 8716da20c989a1a8d1e36d9e071e9802a06219bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8ffea3e279ba894f9990991ea620baaa50b3997d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;bağımlılık&gt; öğesi (ClickOnce dağıtımı)
 Yüklenecek uygulamayı sürümü ve uygulama bildirimi konumunu tanımlar.  
@@ -98,7 +94,7 @@ Yüklenecek uygulamayı sürümü ve uygulama bildirimi konumunu tanımlar.
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
 |`Name`|Gerekli. Uygulamanın adını tanımlar.|  
-|`Version`|Gerekli. Uygulamanın sürüm numarasını şu biçimde belirtir:`major.minor.build.revision`|  
+|`Version`|Gerekli. Uygulamanın sürüm numarasını şu biçimde belirtir: `major.minor.build.revision`|  
 |`publicKeyToken`|Gerekli. Derleme veya uygulama altında imzalandığı ortak anahtarın SHA-1 karma son 8 baytını temsil eden 16 karakter onaltılık dizeyi belirtir. İmzalamak için kullanılan ortak anahtar 2048 bit olmalı veya daha büyük.|  
 |`processorArchitecture`|Gerekli. Mikro belirtir. Geçerli değerler `x86` 32-bit Windows için ve `IA64` 64-bit Windows için.|  
 |`Language`|İsteğe bağlı. Derlemenin iki parçalı dil kodlarını tanımlar. Örneğin, EN-US, İngilizce (ABD) anlamına gelir. Varsayılan, `neutral` değeridir. Bu öğe `asmv2` ad alanı.|  
@@ -107,7 +103,7 @@ Yüklenecek uygulamayı sürümü ve uygulama bildirimi konumunu tanımlar.
 ## <a name="hash"></a>hash  
  `hash` İsteğe bağlı bir alt öğedir `file` öğesi. `hash` Öğesi özniteliklere sahip değildir.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]bir uygulamadaki tüm dosyaların algoritmik bir karma dosyaların hiçbiri dağıtımdan sonra değişmediğinden emin olmak için güvenlik denetimi olarak kullanır. Varsa `hash` öğesi dahil değildir, bu onay işlemi gerçekleştirilmez. Bu nedenle, atlama `hash` öğesi önerilmez.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bir uygulamadaki tüm dosyaların algoritmik bir karma dosyaların hiçbiri dağıtımdan sonra değişmediğinden emin olmak için güvenlik denetimi olarak kullanır. Varsa `hash` öğesi dahil değildir, bu onay işlemi gerçekleştirilmez. Bu nedenle, atlama `hash` öğesi önerilmez.  
   
 ## <a name="dsigtransforms"></a>dsig:TRANSFORMS  
  `dsig:Transforms` , Gerekli bir alt öğedir `hash` öğesi. `dsig:Transforms` Öğesi özniteliklere sahip değildir.  

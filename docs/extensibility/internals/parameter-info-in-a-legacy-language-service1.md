@@ -1,12 +1,10 @@
 ---
 title: Eski dil Service1 parametre bilgilerini | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
 - method tips
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 70f6a24a8d5a3d516286efe01cffc6e1d3514e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 50450d1968c626e0a5b32dee4c6f03d005d6ede9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Eski dil hizmetindeki parametre bilgisi
 Bir dil yapısı oldukları hakkında ipuçları kullanıcılara IntelliSense parametre bilgileri araç ipucu sağlar.  
@@ -40,7 +38,7 @@ Bir dil yapısı oldukları hakkında ipuçları kullanıcılara IntelliSense pa
   
  Parametre bilgisi araç ipuçları komutu kişiler tarafından ele aracılığıyla dil hizmeti tarafından başlatılır. Kullanıcı karakter kesmeye dil hizmeti nesnesi uygulamalıdır <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirim ve metin görünümü için bir işaretçi geçirin, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> çağırarak uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> yönteminde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> arabirimi. Komut filtresi kodu penceresine yazdığınız komutları kesintiye uğratır. Kullanıcıya parametre bilgilerini görüntülemek ne zaman bilmek komut bilgilerini izleyin. Deyim tamamlama, hata işaretçileri ve benzeri için aynı komutu filtresini kullanabilirsiniz.  
   
- Kendisi için dil hizmeti ipuçları sağlayabilir bir anahtar sözcük yazdığınızda dil hizmeti oluşturur bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> nesne ve çağrıları <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> yönteminde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> bir ipucu görüntülemek için IDE bildirmek için arabirim. Oluşturma <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> kullanarak nesne `VSLocalCreateInstance` ve coclass'ı belirterek `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance`çağıran üstbilgi dosyası vsdoc.h içinde tanımlanan bir işlev `QueryService` yerel kayıt defterinde ve aramalar için `CreateInstance` için bu nesnede `CLSID_VsMethodTipWindow`.  
+ Kendisi için dil hizmeti ipuçları sağlayabilir bir anahtar sözcük yazdığınızda dil hizmeti oluşturur bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> nesne ve çağrıları <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> yönteminde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> bir ipucu görüntülemek için IDE bildirmek için arabirim. Oluşturma <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> kullanarak nesne `VSLocalCreateInstance` ve coclass'ı belirterek `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance` çağıran üstbilgi dosyası vsdoc.h içinde tanımlanan bir işlev `QueryService` yerel kayıt defterinde ve aramalar için `CreateInstance` için bu nesnede `CLSID_VsMethodTipWindow`.  
   
 ## <a name="providing-a-method-tip"></a>Bir yöntem ipucu sağlama  
  Bir yöntem ipucu sağlamak için arama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> yönteminde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> arabirimi, uygulamanıza geçirme <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> arabirimi.  

@@ -1,37 +1,33 @@
 ---
-title: "Assembly öğesi (Visual Studio Şablon Sihirbazı uzantısı) | Microsoft Docs"
-ms.custom: 
+title: Assembly öğesi (Visual Studio Şablon Sihirbazı uzantısı) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
 - Assembly element [Visual Studio Template Wizard Extension]
 - <Assembly> element [Visual Studio Template Wizard Extension]
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80a8185961e53222b2aa9b71cd397b96c9368048
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1610df76bfce303bd13c69cb8298ac62106fd7e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly Öğesi (Visual Studio Şablon Sihirbazı Uzantısı)
 Adını veya güçlü uygulayan derlemenin adını belirtir `IWizard` arabirimi.  
   
  \<VSTemplate >  
 \<WizardExtension >  
-\<Derleme >  
+\<derleme >  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -60,7 +56,7 @@ Adını veya güçlü uygulayan derlemenin adını belirtir `IWizard` arabirimi.
  Bu metin uygulayan derlemenin belirtir `IWizard` arabirimi. Bu derleme adı bir tam derleme adı belirtilmelidir. Örneğin, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `Assembly`gerekli bir alt öğesidir `WizardExtension`.  
+ `Assembly` gerekli bir alt öğesidir `WizardExtension`.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, standart proje şablonu için meta verileri gösterir. bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows uygulaması.  

@@ -2,24 +2,20 @@
 title: 'CA3075: Güvensiz DTD işleme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
-caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34f3d518e282650f9369aa3af8fe1600b4f28662
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7b15c358c80a60b4ff91fd9c741fbddf2467ae8c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Güvensiz DTD işleme
 |||  
@@ -39,13 +35,13 @@ ms.lasthandoff: 12/22/2017
   
 -   <xref:System.Xml.XmlNode.InnerXml%2A> XML özelliği ayarlanmış.  
   
--   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>özelliği için ayrıştırma ayarlanır.  
+-   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> özelliği için ayrıştırma ayarlanır.  
   
 -   Giriş kullanılarak işlenir güvenilmeyen <xref:System.Xml.XmlResolver> yerine <xref:System.Xml.XmlSecureResolver> .  
   
--   XmlReader. <xref:System.Xml.XmlReader.Create%2A> yöntemi ile bir güvenli çağrıldığında <xref:System.Xml.XmlReaderSettings> örneği veya hiç örneği yok.  
+-   XmlReader.<xref:System.Xml.XmlReader.Create%2A> yöntemi, bir güvenli çağrılır <xref:System.Xml.XmlReaderSettings> örneği veya hiç örneği yok.  
   
--   <xref:System.Xml.XmlReader>Güvenli varsayılan ayarları veya değerleri ile oluşturulur.  
+-   <xref:System.Xml.XmlReader> Güvenli varsayılan ayarları veya değerleri ile oluşturulur.  
   
  Her durumda, sonucu aynıdır: XML işleneceği makineden dosya sistemi veya ağ paylaşımları içeriğini DoS vektör olarak kullanılabilir saldırgana gösterilir.  
   

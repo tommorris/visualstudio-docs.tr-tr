@@ -1,30 +1,26 @@
 ---
-title: BuildProjectOnLoad (Visual Studio Templates) | Microsoft Docs
-ms.custom: 
+title: BuildProjectOnLoad (Visual Studio şablonları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
 helpviewer_keywords:
 - <BuildOnLoad> element [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b3fc7842e71ff1bff3bd3e362f0c12afcf4292f
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 58493c8e3c4668f1cd94c7f892d727479b755f3f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (Visual Studio Şablonları)
 Oluşturulduktan hemen sonra projeyi derlemek belirtir.  
@@ -60,7 +56,7 @@ Oluşturulduktan hemen sonra projeyi derlemek belirtir.
  Metin ya da olmalıdır `true` veya `false`, oluşturulduktan hemen sonra projeyi derlemek tutulmayacağını gösteren.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `BuildProjectOnLoad`İsteğe bağlı bir özniteliktir. Varsayılan değer `false` şeklindedir.  
+ `BuildProjectOnLoad` İsteğe bağlı bir özniteliktir. Varsayılan değer `false` şeklindedir.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek için meta veriler gösterilmektedir bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] şablonu.  
@@ -91,6 +87,6 @@ Oluşturulduktan hemen sonra projeyi derlemek belirtir.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [TemplateContent Element (Visual Studio Templates)](../extensibility/templatecontent-element-visual-studio-templates.md)   
+ [TemplateContent öğesi (Visual Studio şablonları)](../extensibility/templatecontent-element-visual-studio-templates.md)   
  [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)

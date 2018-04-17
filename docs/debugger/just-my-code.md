@@ -1,30 +1,28 @@
 ---
-title: "Kullanıcı kodu sadece kendi kodumu ile hata ayıklama | Microsoft Docs"
-ms.custom: 
+title: Kullanıcı kodu sadece kendi kodumu ile hata ayıklama | Microsoft Docs
+ms.custom: ''
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 476ff209f96aa5729d20bd9a5a5d12c9e5a5c39a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bf41b8d264d353b6c47acd2e0a762a57d46412e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Hata ayıklama yalnızca sadece kendi kodumu Visual Studio kullanarak kullanıcı kodu belirtin
 Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları adım ve bu çağrıları çağrı yığını penceresinde daraltmak için Visual Studio yapılandırabilirsiniz. Sağlar veya bu davranışı devre dışı bırakır özelliği adlı *sadece kendi kodumu*. Bu konu, sadece kendi kodumu C#, Visual Basic, C++ ve JavaScript projelerinde kullanmayı açıklar.
 
 Çoğu programlama dili için sadece kendi kodumu varsayılan olarak etkindir.
   
-##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a>Etkinleştirmek veya sadece kendi kodumu devre dışı bırakma  
+##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Etkinleştirmek veya sadece kendi kodumu devre dışı bırakma  
  Etkinleştirmek ya da sadece kendi kodumu devre dışı bırakmak için seçin **Araçlar > Seçenekler** Visual Studio menüsünde. İçinde **hata ayıklama** > **genel** düğümü seçin veya temizleyin **sadece kendi kodumu etkinleştir**.
   
  ![Seçenekler iletişim kutusundaki sadece kendi kodumu etkinleştir](../debugger/media/dbg_justmycode_options.png "DBG_JustMyCode_Options")  
@@ -32,7 +30,7 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
 > [!NOTE]
 >  **Sadece kendi kodumu etkinleştir** tüm Visual Studio projeleri tüm dillerde uygulanan genel ayar bir ayardır.  
   
-###  <a name="BKMK_Override_call_stack_filtering"></a>Çağrı yığını görünümlerde kullanıcı olmayan kod Göster  
+###  <a name="BKMK_Override_call_stack_filtering"></a> Çağrı yığını görünümlerde kullanıcı olmayan kod Göster  
  Çağrı yığını gibi göster görünümlerinde **çağrı yığını** ve **görevleri** windows, sadece kendi kodumu daraltır kullanıcı olmayan kod etiketli bir açıklamalı çerçeveye `[External Code]`. Daraltılmış çerçeveleri görüntülemek için seçin **Göster harici kod** çağrı yığını bağlam menüsünde görüntüler.
 
  ![Çağrı yığını penceresinde harici kod Göster](../debugger/media/dbg_justmycode_showexternalcode.png "DBG_JustMyCode_ShowExternalCode")
@@ -40,35 +38,35 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
 > [!NOTE]
 >  **Göster harici kod** ayarı için geçerli kullanıcının profil oluşturucu kaydedildi. Kullanıcı tarafından açık olan tüm dillerdeki tüm projelere uygulanır.
   
-##  <a name="BKMK__NET_Framework_Just_My_Code"></a>.NET framework yalnızca kendi kodum  
+##  <a name="BKMK__NET_Framework_Just_My_Code"></a> .NET framework yalnızca kendi kodum  
   
-###  <a name="BKMK_NET_User_and_non_user_code"></a>Kullanıcı ve kullanıcı olmayan kod  
+###  <a name="BKMK_NET_User_and_non_user_code"></a> Kullanıcı ve kullanıcı olmayan kod  
  Kullanıcı kodu kullanıcı olmayan koddan ayırt etmek için sadece kendi kodumu simge (.pdb) dosyalarını ve program iyileştirmeleri arar. Hata ayıklayıcı kodunun kullanıcı olmayan kodunu ikili en iyi duruma getirilmiş veya .pdb dosyası mevcut olmadığında olmasını göz önünde bulundurur.
   
  Hata ayıklayıcı My kodu dikkate üç öznitelikler de etkiler:  
   
--   <xref:System.Diagnostics.DebuggerNonUserCodeAttribute>hata ayıklayıcı uygulandığı kod kendi kodumu değil söyler.  
+-   <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> hata ayıklayıcı uygulandığı kod kendi kodumu değil söyler.  
   
--   <xref:System.Diagnostics.DebuggerHiddenAttribute>Sadece kendi kodumu kapalı olsa bile hata ayıklayıcı kodundan gizler.  
+-   <xref:System.Diagnostics.DebuggerHiddenAttribute> Sadece kendi kodumu kapalı olsa bile hata ayıklayıcı kodundan gizler.  
   
--   <xref:System.Diagnostics.DebuggerStepThroughAttribute>koda adım yerine için uygulandığı kodlarda adım için hata ayıklayıcı söyler.  
+-   <xref:System.Diagnostics.DebuggerStepThroughAttribute> koda adım yerine için uygulandığı kodlarda adım için hata ayıklayıcı söyler.  
   
  Diğer tüm kod kullanıcı kodu olarak kabul edilir.  
   
-###  <a name="BKMK_NET_Stepping_behavior"></a>Davranış Adımlama  
+###  <a name="BKMK_NET_Stepping_behavior"></a> Davranış Adımlama  
  Olduğunda, **Step Into** (klavye kısayolu: F11) kullanıcı olmayan kodu, hata ayıklayıcı adımlarına kod üzerinde ileri kullanıcı bildirimi. Olduğunda, **Step Out** (klavye: Shift + F11), hata ayıklayıcı kodun sonraki satırında, kullanıcı için çalışır. Hiçbir kullanıcı kodu karşılaşıldı sonra yürütülmeye uygulama kadar yinelenir, bir kesme noktası isabet ya da bir özel durum oluşur.  
   
-###  <a name="BKMK_NET_Breakpoint_behavior"></a>Kesme noktası davranışı  
+###  <a name="BKMK_NET_Breakpoint_behavior"></a> Kesme noktası davranışı  
  Sadece kendi kodumu etkinleştirildiğinde, seçebileceğiniz **bölün tüm** (klavye: Ctrl + Alt + Break) durdurup yürütme bir konumda söz konusu olduğunda görüntülenecek kullanıcı kodu yok. Bu durumda, Hayır kaynağı penceresi görüntülenir. Hata ayıklayıcı adım komutu ardından seçerseniz, kullanıcı kodu bir sonraki satıra alır.  
   
-###  <a name="BKMK_NET_Exception_behavior"></a>Özel durum davranışı  
+###  <a name="BKMK_NET_Exception_behavior"></a> Özel durum davranışı  
  Kullanıcı olmayan kodda işlenmeyen bir özel durum oluşursa, hata ayıklayıcı satırında burada özel durum oluşturuldu kullanıcı kodunda keser.  
   
  İlk fırsat özel durumlar için özel durum etkinleştirilirse, kullanıcı kod satırı yeşil vurgulanır. Çağrı yığını etiketli bir açıklamalı çerçeve görüntüler **[dış kodu]**.  
   
-##  <a name="BKMK_C___Just_My_Code"></a>C++ yalnızca kendi kodum  
+##  <a name="BKMK_C___Just_My_Code"></a> C++ yalnızca kendi kodum  
   
-###  <a name="BKMK_CPP_User_and_non_user_code"></a>Kullanıcı ve kullanıcı olmayan kod  
+###  <a name="BKMK_CPP_User_and_non_user_code"></a> Kullanıcı ve kullanıcı olmayan kod  
  Sürüm davranışı çağrı yığını davranışını bağımsız olduğundan C++ sadece kendi kodumu .NET Framework ve JavaScript sadece kendi kodumu farklı değildir.  
   
  **Çağrı yığınları**  
@@ -87,15 +85,15 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
   
  Kendi oluşturabilirsiniz `.natstepfilter` ve `.natjmc` atlama özelleştirmek ve çağrı yığını penceresi davranışı için `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
-###  <a name="BKMK_CPP_Stepping_behavior"></a>Davranış Adımlama  
+###  <a name="BKMK_CPP_Stepping_behavior"></a> Davranış Adımlama  
  Olduğunda, **Step Into** (klavye kısayolu: F11) kullanıcı kodundan kullanıcı olmayan kodu, sonraki satırında, kullanıcı kodu için kod üzerinde hata ayıklayıcı adımları. Olduğunda, **Step Out** (klavye: Shift + F11), hata ayıklayıcı kodun sonraki satırında, kullanıcı için çalışır. Hiçbir kullanıcı kodu karşılaşıldı sonra yürütülmeye uygulama kadar yinelenir, bir kesme noktası isabet ya da bir özel durum oluşur.  
   
  Hata ayıklayıcı kullanıcı olmayan kodda bozarsa (örneğin kullanıcı olmayan kodda kesme tüm komut durursa), Adımlama kullanıcı olmayan kodda devam eder.  
   
-###  <a name="BKMK_CPP_Exception_behavior"></a>Özel durum davranışı  
+###  <a name="BKMK_CPP_Exception_behavior"></a> Özel durum davranışı  
  Hata ayıklayıcı bir özel durum geldiğinde, kullanıcı veya kullanıcı olmayan kod olmasından bağımsız olarak özel durumunda durdurur. **Kullanıcı işlenmemiş** içinde seçenekleri **özel durumları** iletişim kutusu yok sayılır.  
   
-###  <a name="BKMK_CPP_Customize_stepping_behavior"></a>Sürüm davranışını özelleştirme  
+###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Sürüm davranışını özelleştirme  
  Bunları kullanıcı olmayan kod olarak listeleniyor tarafından devralınırsa adım işlevleri belirtebilirsiniz `*.natstepfilter` dosyaları.  
   
 -   Visual Studio makinenin tüm kullanıcıları için kullanıcı olmayan kodu belirtmek için .natstepfilter dosyasına ekleyin `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` klasör.  
@@ -125,9 +123,9 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
 |İşlev|Gerekli. Bir veya daha fazla işlevleri kullanıcı olmayan işlevleri olarak belirtir.|  
 |`Name`|Gerekli. ECMA-262 eşleşmesi için tam işlevi adı belirterek normal ifade biçimlendirilmiş. Örneğin:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> hata ayıklayıcı bildiren tüm yöntemler `MyNS::MyClass` kullanıcı olmayan kod kabul edilip. Eşleşme büyük/küçük harf duyarlıdır.|  
 |`Module`|İsteğe bağlı. ECMA-262 işlevi içeren modülü tam yolunu belirtme normal ifade biçimlendirilmiş. Eşleşme büyük/küçük harf duyarlıdır.|  
-|`Action`|Gerekli. Büyük küçük harfe duyarlı şu değerlerden biri:<br /><br /> -   `NoStepInto`-eşleşen işlevi adım için hata ayıklayıcı söyler.<br />-   `StepInto`-eşleşen İşlevler, adım için hata ayıklayıcı söyler diğer geçersiz kılma `NoStepInto` eşleşen işlevler için.|  
+|`Action`|Gerekli. Büyük küçük harfe duyarlı şu değerlerden biri:<br /><br /> -   `NoStepInto`  -eşleşen işlevi adım için hata ayıklayıcı söyler.<br />-   `StepInto`  -eşleşen İşlevler, adım için hata ayıklayıcı söyler diğer geçersiz kılma `NoStepInto` eşleşen işlevler için.|  
   
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a>Çağrı yığını davranışı özelleştirme  
+###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Çağrı yığını davranışı özelleştirme  
  Modüller, kaynak dosyaları ve bunların belirterek çağrı yığınları kullanıcı olmayan kod olarak işlemek için işlevleri belirtebilirsiniz `*.natjmc` dosyaları.  
   
 -   Visual Studio makinenin tüm kullanıcıları için kullanıcı olmayan kodu belirtmek için .natjmc dosyasına ekleyin `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` klasör.  
@@ -177,9 +175,9 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
 |`Module`|İsteğe bağlı. İşlevi içeren modülü tam yolu ve adı. Bu öznitelik, aynı ada sahip işlevleri belirsizliğini ortadan kaldırmak için kullanabilirsiniz.|  
 |`ExceptionImplementation`|Ayarlandığında `true`, bu işlevi yerine bir özel durum belirtti işlevi çağrı yığını görüntüler.|  
   
-##  <a name="BKMK_JavaScript_Just_My_Code"></a>JavaScript yalnızca kendi kodum  
+##  <a name="BKMK_JavaScript_Just_My_Code"></a> JavaScript yalnızca kendi kodum  
   
-###  <a name="BKMK_JS_User_and_non_user_code"></a>Kullanıcı ve kullanıcı olmayan kod  
+###  <a name="BKMK_JS_User_and_non_user_code"></a> Kullanıcı ve kullanıcı olmayan kod  
  **Kod sınıflandırmaları**  
   
  JavaScript sadece kendi kodumu atlama ve çağrı yığını görünen kodu bu sınıflandırmalarını birinde sınıflandırarak denetler:  
@@ -206,7 +204,7 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
   
  Diğer tüm kod olarak sınıflandırılan **MyCode**.  
   
-###  <a name="BKMK_JS_Stepping_behavior"></a>Davranış Adımlama  
+###  <a name="BKMK_JS_Stepping_behavior"></a> Davranış Adımlama  
   
 -   Bir işlev kullanıcı değilse (**MyCode**) kod, **Step Into** (klavye kısayolu: F11) olarak davranan **Step Over** (klavye: F10).  
   
@@ -216,7 +214,7 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
   
 -   **Step Out** (klavye: Shift + F11) kullanıcı kodun sonraki satırında durdurur. Hiçbir kullanıcı kodu karşılaşıldı sonra yürütülmeye uygulama kadar yinelenir, bir kesme noktası isabet ya da bir özel durum oluşur.  
   
-###  <a name="BKMK_JS_Breakpoint_behavior"></a>Kesme noktası davranışı  
+###  <a name="BKMK_JS_Breakpoint_behavior"></a> Kesme noktası davranışı  
   
 -   Kesme noktaları kodda ayarlama bu kodu sınıflandırma bağımsız olarak her zaman temas eder  
   
@@ -226,7 +224,7 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
   
     -   **UnrelatedCode** kodu değil hata ayıklayıcıyı.  
   
-###  <a name="BKMK_JS_Exception_behavior"></a>Özel durum davranışı  
+###  <a name="BKMK_JS_Exception_behavior"></a> Özel durum davranışı  
  İşlenmeyen bir özel durum oluşması halinde:  
   
 -   **MyCode** veya **LibraryCode** kodu, hata ayıklayıcı her zaman keser.  
@@ -239,7 +237,7 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
   
 -   Özel durum işlenmemiş, hata ayıklayıcı keser.  
   
-###  <a name="BKMK_JS_Customize_Just_My_Code"></a>Yalnızca kendi kodum özelleştirme  
+###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Yalnızca kendi kodum özelleştirme  
  Kullanıcı ve kullanıcı olmayan tek bir Visual Studio Proje kodunu sınıflandırmak için adlı bir .json dosyası ekleme `mycode.json` projenin kök klasöre.  
   
  Sınıflandırmaları bu sırayla gerçekleştirilir:  
@@ -290,11 +288,11 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
   
  Değer şu anahtar sözcüklerden biri olarak değiştirebilirsiniz:  
   
--   `MyCode`komut dosyası olarak sınıflandırır **MyCode**.  
+-   `MyCode`  komut dosyası olarak sınıflandırır **MyCode**.  
   
--   `Library`komut dosyası olarak sınıflandırır **LibraryCode**.  
+-   `Library`  komut dosyası olarak sınıflandırır **LibraryCode**.  
   
--   `Unrelated`komut dosyası olarak sınıflandırır **UnrelatedCode**.  
+-   `Unrelated`  komut dosyası olarak sınıflandırır **UnrelatedCode**.  
   
  **MyCode, kitaplıklar ve ilgisiz**  
   
@@ -306,4 +304,4 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
 |**Kitaplıkları**|Bir dizi URL'leri veya olarak sınıflandırılan dosyalar **LibraryCode**.|  
 |**İlişkisiz**|Bir dizi URL'leri veya olarak sınıflandırılan dosyalar **UnrelatedCode**.|  
   
- Bir veya daha fazla url veya dosya dize içerebilir `*` sıfır veya daha fazla karakteri eşleştirmek karakter. `*`Normal ifade eşdeğerdir `.*`.
+ Bir veya daha fazla url veya dosya dize içerebilir `*` sıfır veya daha fazla karakteri eşleştirmek karakter. `*` Normal ifade eşdeğerdir `.*`.

@@ -1,23 +1,21 @@
 ---
-title: "CA3077: API tasarımı, XML belgesi ve XML metin okuyucu güvensiz işlemede | Microsoft Docs"
-ms.custom: 
+title: 'CA3077: API tasarımı, XML belgesi ve XML metin okuyucu güvensiz işlemede | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 7f33771b-f3c8-4c02-bef6-f581b623c303
-caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0cd580ca1764c037cf4c209cc8a1aa7144ab4175
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f660ee98462b46e5ac5a8ab23cdf17288c995c87
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: API tasarımı, XML belgesi ve XML metin okuyucu güvensiz işlemede
 |||  
@@ -33,7 +31,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Kural Tanımı  
  A *belge türü tanımı (DTD)* bir XML Ayrıştırıcı bir belgenin geçerlilik belirleyebilir iki yoldan biriyle tarafından tanımlanan olan [World Wide Web Konsorsiyumu (W3C) Genişletilebilir İşaretleme Dili (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Bu kural özelliklerini ve burada güvenilmeyen veri tarafından kabul edilir geliştiriciler olası hakkında uyarmak için örnekleri aradığı [bilgilerin açığa çıkmasına](/dotnet/framework/wcf/feature-details/information-disclosure) açabilir tehditleri [hizmet reddi (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) saldırıları. Bu kuralın ne zaman tetikler:  
   
--   <xref:System.Xml.XmlDocument>veya <xref:System.Xml.XmlTextReader> sınıflarını DTD işleme için varsayılan çözümleyici değerleri kullanın.  
+-   <xref:System.Xml.XmlDocument> veya <xref:System.Xml.XmlTextReader> sınıflarını DTD işleme için varsayılan çözümleyici değerleri kullanın.  
   
 -   Oluşturucu yok XmlDocument için tanımlı değil veya XmlTextReader türetilmiş sınıfları veya güvenli bir değerle için kullanılan <xref:System.Xml.XmlResolver>.  
   

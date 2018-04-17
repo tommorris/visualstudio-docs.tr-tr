@@ -1,23 +1,21 @@
 ---
 title: SAL anlama | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: deb1825bb514afec4db3bf705ac787aadb88cc11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-sal"></a>SAL'ı Anlama
 Microsoft kaynak kodu ek açıklama dili (SAL), bir işlev parametreleri, bunlarla ilgili kolaylaştırır varsayımları ve tamamlandığında kolaylaştıran garanti nasıl kullandığını tanımlamak için kullanabileceğiniz ek açıklamaları kümesi sağlar. Ek açıklamalar üstbilgi dosyasında tanımlanan `<sal.h>`. C++ için Visual Studio Kod Analizi SAL ek açıklamaları işlevleri çözümlemesini değiştirmek için kullanır. Windows Sürücü Geliştirme için SAL 2.0 hakkında daha fazla bilgi için bkz: [SAL 2.0 ek açıklamalar için Windows sürücülerini](http://go.microsoft.com/fwlink/?LinkId=250979).  
@@ -47,7 +45,7 @@ void * memcpy(
   
  Belgeler birkaç kodunuzu program doğruluğundan emin olmak için belirli özellikleri korumak sahip önerdiğinde BITS bilgi içermektedir:  
   
--   `memcpy`kopya `count` hedef arabelleği kaynak arabellekteki bayt.  
+-   `memcpy` kopya `count` hedef arabelleği kaynak arabellekteki bayt.  
   
 -   Hedef arabellek en az kaynak arabelleği kadar büyük olmalıdır.  
   
@@ -131,9 +129,9 @@ wchar_t * wmemcpy(
   
 -   Arayan arabellek sağlar ve başlatmanız gerekir.  
   
--   `_In_`"salt okunur" belirtir. Sık karşılaşılan hata uygulamaktır `_In_` olması gereken bir parametre `_Inout_` ek açıklama yerine.  
+-   `_In_` "salt okunur" belirtir. Sık karşılaşılan hata uygulamaktır `_In_` olması gereken bir parametre `_Inout_` ek açıklama yerine.  
   
--   `_In_`ancak Çözümleyicisi işaretçi olmayan skalerler'tarafından göz ardı izin verilir.  
+-   `_In_` ancak Çözümleyicisi işaretçi olmayan skalerler'tarafından göz ardı izin verilir.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  
@@ -161,7 +159,7 @@ void BadInCaller()
  Visual Studio Kod Analizi göre bu örnekte kullanırsanız, başlatılmış bir arabellek için Null olmayan işaretçi arayanlar geçtiğini doğruladığı `pInt`. Bu durumda, `pInt` işaretçisi NULL olamaz.  
   
 ### <a name="example-the-inopt-annotation"></a>Örnek: _In_opt\_ ek açıklaması  
- `_In_opt_`aynı `_In_`, giriş parametresinin NULL olmasına izin ve işlevi bu nedenle, denetlemelisiniz dışında.  
+ `_In_opt_` aynı `_In_`, giriş parametresinin NULL olmasına izin ve işlevi bu nedenle, denetlemelisiniz dışında.  
   
 ```cpp  
   
@@ -189,7 +187,7 @@ void InOptCaller()
  Visual Studio Kod Analizi arabellek erişim izni vermeden önce işlevi NULL denetler doğrular.  
   
 ### <a name="example-the-out-annotation"></a>Örnek: _bant\_ ek açıklaması  
- `_Out_`bir öğe arabellek işaret eden bir NULL olmayan işaretçi geçirilen ve öğe işlevi başlatır yaygın bir senaryo destekler. Arayan çağırmadan önce arabellek başlatmak zorunda değildir; Çağrılan işlev döndürdüğü önce başlatmak taahhüt eder.  
+ `_Out_` bir öğe arabellek işaret eden bir NULL olmayan işaretçi geçirilen ve öğe işlevi başlatır yaygın bir senaryo destekler. Arayan çağırmadan önce arabellek başlatmak zorunda değildir; Çağrılan işlev döndürdüğü önce başlatmak taahhüt eder.  
   
 ```cpp  
   
@@ -216,7 +214,7 @@ void OutCaller()
  Visual Studio kod analizi aracı doğrular çağıran bir arabellek için NULL olmayan işaretçi geçirir `pInt` ve onu döndürmeden önce arabellek işlevi tarafından başlatılır.  
   
 ### <a name="example-the-outopt-annotation"></a>Örnek: _Out_opt\_ ek açıklaması  
- `_Out_opt_`aynı `_Out_`, parametre NULL olmasına izin ve işlevi bu nedenle, denetlemelisiniz dışında.  
+ `_Out_opt_` aynı `_Out_`, parametre NULL olmasına izin ve işlevi bu nedenle, denetlemelisiniz dışında.  
   
 ```cpp  
   
@@ -244,7 +242,7 @@ void OutOptCaller()
  Visual Studio Kod Analizi doğrular bu işlev, önce NULL denetler `pInt` başvuru yapıldı ve `pInt` döndürdüğü önce arabellek işlevi tarafından başlatılır NULL değil.  
   
 ### <a name="example-the-inout-annotation"></a>Örnek: _Inout\_ ek açıklaması  
- `_Inout_`işlev tarafından değiştirilebilir bir işaretçi parametresi açıklama eklemek için kullanılır. İşaretçinin çağırmadan önce geçerli başlatılmış veri işaret etmelidir ve onu değişse bile, geçerli bir değer getirisi hala olmalıdır. Ek açıklamanın işlevi serbestçe okuma ve tek öğeli arabellek yazma belirtir. Arayan arabellek sağlar ve başlatmanız gerekir.  
+ `_Inout_` işlev tarafından değiştirilebilir bir işaretçi parametresi açıklama eklemek için kullanılır. İşaretçinin çağırmadan önce geçerli başlatılmış veri işaret etmelidir ve onu değişse bile, geçerli bir değer getirisi hala olmalıdır. Ek açıklamanın işlevi serbestçe okuma ve tek öğeli arabellek yazma belirtir. Arayan arabellek sağlar ve başlatmanız gerekir.  
   
 > [!NOTE]
 >  Gibi `_Out_`, `_Inout_` değiştirilebilir değerine uygulamanız gerekir.  
@@ -276,7 +274,7 @@ void BadInOutCaller()
  Visual Studio Kod Analizi doğrular başlatılmış bir arabellek için NULL olmayan işaretçi arayanlar geçtiğini `pInt`ve iade önce `pInt` hala NULL değilse ve arabellek başlatıldı.  
   
 ### <a name="example-the-inoutopt-annotation"></a>Örnek: _Inout_opt\_ ek açıklaması  
- `_Inout_opt_`aynı `_Inout_`, giriş parametresinin NULL olmasına izin ve işlevi bu nedenle, denetlemelisiniz dışında.  
+ `_Inout_opt_` aynı `_Inout_`, giriş parametresinin NULL olmasına izin ve işlevi bu nedenle, denetlemelisiniz dışında.  
   
 ```cpp  
   
@@ -306,7 +304,7 @@ void InOutOptCaller()
  Visual Studio Kod Analizi doğrular arabellek erişim izni vermeden önce ve bu işlev için NULL denetler `pInt` döndürdüğü önce arabellek işlevi tarafından başlatılır NULL değil.  
   
 ### <a name="example-the-outptr-annotation"></a>Örnek: _Outptr\_ ek açıklaması  
- `_Outptr_`bir işaretçi döndürmek için amaçlanan bir parametre öğesine açıklama eklemek için kullanılır.  Parametre NULL olmamalıdır ve çağrılan işlev NULL olmayan işaretçi döndürür ve bu işaretçiyi başlatılmış veri noktaları.  
+ `_Outptr_` bir işaretçi döndürmek için amaçlanan bir parametre öğesine açıklama eklemek için kullanılır.  Parametre NULL olmamalıdır ve çağrılan işlev NULL olmayan işaretçi döndürür ve bu işaretçiyi başlatılmış veri noktaları.  
   
 ```cpp  
   
@@ -337,7 +335,7 @@ void OutPtrCaller()
  Visual Studio Kod Analizi doğrular çağıran bir NULL olmayan işaretçi geçtiğini `*pInt`, ve bunu döndürmeden önce arabellek işlevi tarafından başlatılır.  
   
 ### <a name="example-the-outptropt-annotation"></a>Örnek: _Outptr_opt\_ ek açıklaması  
- `_Outptr_opt_`aynı `_Outptr_`, isteğe bağlı bir parametredir dışında — çağıran parametresi için bir NULL işaretçinin geçirebilirsiniz.  
+ `_Outptr_opt_` aynı `_Outptr_`, isteğe bağlı bir parametredir dışında — çağıran parametresi için bir NULL işaretçinin geçirebilirsiniz.  
   
 ```cpp  
   

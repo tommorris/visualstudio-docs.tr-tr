@@ -1,11 +1,8 @@
 ---
 title: Windows Communication Foundation Hizmetleri ve Visual Studio'da WCF Veri Hizmetleri | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -34,26 +31,26 @@ helpviewer_keywords:
 - WCF services, endpoints
 - service method, called asynchronously[Visual Studio]
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 898cdbd15367aef6ac48d35a44b1ccb4a3deded9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 2e1e44eeff16277b21a530bf4c5debcb02de7633
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri
 Windows Communication Foundation (WCF) ile çalışmak için Visual Studio araçları sağlar ve [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], oluşturmak için Microsoft teknolojilerini dağıtılmış uygulamalar. Bu konuda Hizmetleri'nden tanıtılmaktadır bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspektif. Tam belgeler için bkz: [WCF Veri Hizmetleri 4.5](/dotnet/framework/data/wcf/index).  
   
 ## <a name="what-is-wcf"></a>WCF nedir?  
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]güvenli, güvenilir, işlenen ve birlikte çalışabilir dağıtılmış uygulamaları oluşturmak için birleştirilmiş bir çerçevedir. ASMX Web Hizmetleri, .NET uzaktan iletişim, Kurumsal Hizmetleri (DCOM) ve MSMQ gibi eski işlemler arası iletişimi teknolojileri değiştirir. WCF bu teknolojiler birleşik bir programlama modeli altında işlevselliğini bir araya getirir. Bu, dağıtılmış uygulamaları geliştirme deneyimi kolaylaştırır.  
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] güvenli, güvenilir, işlenen ve birlikte çalışabilir dağıtılmış uygulamaları oluşturmak için birleştirilmiş bir çerçevedir. ASMX Web Hizmetleri, .NET uzaktan iletişim, Kurumsal Hizmetleri (DCOM) ve MSMQ gibi eski işlemler arası iletişimi teknolojileri değiştirir. WCF bu teknolojiler birleşik bir programlama modeli altında işlevselliğini bir araya getirir. Bu, dağıtılmış uygulamaları geliştirme deneyimi kolaylaştırır.  
   
 #### <a name="what-are-wcf-data-services"></a>WCF Veri Hizmetleri nelerdir  
- [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]Açık veri (OData) protokolü standart uygulamasıdır.  Tablo verisi REST API'leri gibi standart HTTP fiillerini kullanarak veri GET, POST, PUT veya silme döndürülecek sağlayarak, bir dizi kullanıma WCF veri hizmetleri sağlar. Sunucu tarafında WCF Veri Hizmetleri tarafından değiştirilen [ASP.NET Web API](http://www.asp.net/web-api) yeni OData hizmetleri oluşturmak için. WCF Veri Hizmetleri İstemci Kitaplığı Visual Studio .NET uygulamasından OData Hizmetleri'nde tüketimi için iyi bir seçimdir olmaya devam (**proje &#124; Hizmet Başvurusu Ekle**). Daha fazla bilgi için bkz: [WCF Veri Hizmetleri 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).  
+ [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] Açık veri (OData) protokolü standart uygulamasıdır.  Tablo verisi REST API'leri gibi standart HTTP fiillerini kullanarak veri GET, POST, PUT veya silme döndürülecek sağlayarak, bir dizi kullanıma WCF veri hizmetleri sağlar. Sunucu tarafında WCF Veri Hizmetleri tarafından değiştirilen [ASP.NET Web API](http://www.asp.net/web-api) yeni OData hizmetleri oluşturmak için. WCF Veri Hizmetleri İstemci Kitaplığı Visual Studio .NET uygulamasından OData Hizmetleri'nde tüketimi için iyi bir seçimdir olmaya devam (**proje &#124; hizmet Başvurusu Ekle**). Daha fazla bilgi için bkz: [WCF Veri Hizmetleri 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).  
   
 ### <a name="wcf-programming-model"></a>WCF programlama modeli  
  WCF programlama modeli iki varlık arasındaki iletişimi temel alır: bir WCF hizmeti ve bir WCF istemcisi. Programlama modeli içinde kapsüllenir <xref:System.ServiceModel> ad alanında [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
@@ -86,7 +83,7 @@ Windows Communication Foundation (WCF) ile çalışmak için Visual Studio araç
  [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]  
   
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio'da WCF araçları  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]WCF hizmetleri ve WCF istemcileri oluşturmanıza yardımcı olacak araçlar sağlar. Araçlar izlenecek yol için bkz: [izlenecek yol: Windows Forms'ta basit bir WCF hizmeti oluşturma](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] WCF hizmetleri ve WCF istemcileri oluşturmanıza yardımcı olacak araçlar sağlar. Araçlar izlenecek yol için bkz: [izlenecek yol: Windows Forms'ta basit bir WCF hizmeti oluşturma](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).  
   
 ### <a name="creating-and-testing-wcf-services"></a>Oluşturma ve sınama WCF hizmetleri  
  WCF kullanabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] şablonlar hızlı bir şekilde kendi hizmet oluşturmak için bir temel olarak. Hata ayıklama ve hizmet sınamak için WCF hizmeti otomatik ana bilgisayarı ve WCF Test İstemcisi ardından kullanabilirsiniz. Bu araçları birlikte hızlı ve kolay hata ayıklama ve test döngüsü sağlar ve barındırma modeli için erken bir aşamada yürütme gerekliliğini ortadan kaldırmak.  
@@ -113,7 +110,7 @@ Windows Communication Foundation (WCF) ile çalışmak için Visual Studio araç
  WCF Test İstemcisi hakkında daha fazla bilgi için bkz: [WCF Test İstemcisi (WcfTestClient.exe)](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe).  
   
 ### <a name="accessing-wcf-services-in-visual-studio"></a>Visual Studio'da WCF hizmetlerine erişme  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]WCF istemcileri, otomatik olarak bir proxy ve Hizmetleri kullanarak eklemek için bir uç nokta oluşturma oluşturma görevini basitleştirir **hizmet Başvurusu Ekle** iletişim kutusu. Tüm gerekli yapılandırma bilgilerini app.config dosyasına eklenir. Çoğu süresini tüm yapmanız gereken olan örneği hizmet bunu kullanmak için.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] WCF istemcileri, otomatik olarak bir proxy ve Hizmetleri kullanarak eklemek için bir uç nokta oluşturma oluşturma görevini basitleştirir **hizmet Başvurusu Ekle** iletişim kutusu. Tüm gerekli yapılandırma bilgilerini app.config dosyasına eklenir. Çoğu süresini tüm yapmanız gereken olan örneği hizmet bunu kullanmak için.  
   
  **Hizmet Başvurusu Ekle** iletişim kutusu için bir hizmet adresini girin ya da çözümünüz içinde tanımlı bir hizmet için aranacak sağlar. İletişim kutusu, hizmetleri ve bu hizmetleri tarafından sağlanan işlemleri listesini döndürür. Ayrıca kod Hizmetleri'nde başvurur ad alanı tanımlamanızı sağlar.  
   

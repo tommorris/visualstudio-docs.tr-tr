@@ -1,23 +1,21 @@
 ---
-title: "Nasıl yapılır: oluşturma ve MIP düzeylerini değiştirme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: oluşturma ve MIP düzeylerini değiştirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8fbc385f5bf00d8e54aadc21162a9174be71d416
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bf21fc327e8a425c07240a2453a67d7da0997566
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Nasıl yapılır: MIP Düzeyleri Oluşturma ve Değiştirme
 Bu belge nasıl kullanılacağını göstermektedir **görüntü Düzenleyicisi** oluşturmak ve değiştirmek için *MIP düzeyleri* ayrıntılı bilgi için doku alanı düzeyi-in-(LoD).  

@@ -1,12 +1,10 @@
 ---
-title: "Proje ayarları C# hata ayıklama yapılandırmaları için | Microsoft Docs"
-ms.custom: 
+title: Proje ayarları C# hata ayıklama yapılandırmaları için | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - project configurations, debug
 - debugging [C#], debugger settings
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 054a015c5fcd6a70696ed6945faa5cbd01547168
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7f51964a303641e8e430417d63d0241603d7f360
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# Hata Ayıklama Yapılandırması Proje Ayarları
 Bir C# hata ayıklama yapılandırması proje ayarları değiştirebileceğiniz **özellik sayfaları** anlatıldığı gibi penceresi [hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda hata ayıklayıcı gizlilikle ilgili ayarların nerede bulacağını Göster **özellik sayfaları** penceresi.  
@@ -37,7 +35,7 @@ Bir C# hata ayıklama yapılandırması proje ayarları değiştirebileceğiniz 
 > [!WARNING]
 >  Bu konu, UWP uygulamaları için geçerli değil. Bkz: [(VB, C#, C++ ve XAML) bir hata ayıklama oturumu Başlat](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a>Hata ayıklama sekmesi  
+##  <a name="BKMK_Debug_tab"></a> Hata ayıklama sekmesi  
   
 |**Ayarı**|**Açıklama**|  
 |-----------------|---------------------|  
@@ -49,7 +47,7 @@ Bir C# hata ayıklama yapılandırması proje ayarları değiştirebileceğiniz 
 |**Yönetilmeyen kod hata ayıklamayı etkinleştir**|Yerel (yönetilmeyen) Win32 kod çağrıları yönetilen uygulamanızdan ayıklamanızı sağlar.|  
 |**SQL Server hata ayıklamayı etkinleştir**|SQL Server veritabanı nesneleri hata ayıklama sağlar.|  
   
-##  <a name="BKMK_Build_tab"></a>Sekme oluşturma  
+##  <a name="BKMK_Build_tab"></a> Sekme oluşturma  
   
 |Ayar|Açıklama|  
 |-------------|-----------------|  

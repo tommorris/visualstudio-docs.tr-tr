@@ -1,27 +1,23 @@
 ---
-title: "İşlem sekmesi, pencere Özellikleri iletişim kutusu | Microsoft Docs"
-ms.custom: 
+title: İşlem sekmesi, pencere Özellikleri iletişim kutusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Process Tab
 ms.assetid: bb464429-4e7c-4919-98b5-1aaafe89bb5f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4fc56dc9a3b48450c5ad8384030a2f3c2baea0a
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: b9226d4db0600aa3be513b4ddc9909030a00d959
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>İşlem Sekmesi, Pencere Özellikleri İletişim Kutusu
 Kullanım **işlem** Seçili pencereyi işlemi tanımlamak için. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı taşımak [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin, sonra seçin **özellikleri** gelen **Görünüm** menüsü.  

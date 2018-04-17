@@ -1,12 +1,10 @@
 ---
-title: "Komut satırından ClickOnce uygulamalarını derleme | Microsoft Docs"
-ms.custom: 
+title: Komut satırından ClickOnce uygulamalarını derleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - publishing
 - publishing, ClickOnce
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
-caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 39a64737c3e34b7e0c4d89824b22f169d60d4fd0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 183cb81798841c6640ea1b17d8db3820e0229769
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Komut Satırından ClickOnce Uygulamalarını Derleme
 İçinde [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], tümleşik geliştirme ortamı (IDE) oluşturulmamış olsa bile, komut satırından projeleri oluşturabilirsiniz. İle oluşturulmuş bir projeyi yeniden aslında, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yalnızca sahip başka bir bilgisayarda [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yüklü. Bu, otomatik bir işlem kullanarak bir yapı oluşturmanızı sağlar, örneğin, merkezi bir yapı içinde Laboratuvar Gelişmiş ya da kullanarak teknikleri projeyi oluşturmayı kapsamı dışında.  
@@ -112,7 +110,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  Yayımlama özellikleri denetlenir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gelen **Yayımla**, **güvenlik**, ve **imzalama** özellik sayfalarından **Proje Tasarımcısı** . Her Uygulama Tasarımcısı çeşitli özellik sayfalarında nasıl ayarlanır, bir göstergesi ile birlikte yayımlama özellikleri açıklaması aşağıdadır:  
   
--   `AssemblyOriginatorKeyFile`imzalamak için kullanılan anahtar dosyası belirler, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimleri. Bu aynı anahtar derlemeleriniz için güçlü bir ad atamak için de kullanılabilir. Bu özellik üzerinde ayarlanır **imzalama** sayfasında **Proje Tasarımcısı**.  
+-   `AssemblyOriginatorKeyFile` imzalamak için kullanılan anahtar dosyası belirler, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimleri. Bu aynı anahtar derlemeleriniz için güçlü bir ad atamak için de kullanılabilir. Bu özellik üzerinde ayarlanır **imzalama** sayfasında **Proje Tasarımcısı**.  
   
  Aşağıdaki özellikler ayarlanır **güvenlik** sayfa:  
   
@@ -122,41 +120,41 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  Aşağıdaki özellikler ayarlanır **Yayımla** sayfa:  
   
--   `PublishUrl`Burada uygulama IDE içinde yayımlanacak konumdur. İçine eklenen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi ne `InstallUrl` veya `UpdateUrl` özellik belirtilmiş.  
+-   `PublishUrl` Burada uygulama IDE içinde yayımlanacak konumdur. İçine eklenen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi ne `InstallUrl` veya `UpdateUrl` özellik belirtilmiş.  
   
--   `ApplicationVersion`sürümünü belirtir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. Bu dört basamaklı sürüm numarasıdır. Son rakam ise bir "*", ardından `ApplicationRevision` derleme zamanında bildirim içine eklenen değerin değiştirdi.  
+-   `ApplicationVersion` sürümünü belirtir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. Bu dört basamaklı sürüm numarasıdır. Son rakam ise bir "*", ardından `ApplicationRevision` derleme zamanında bildirim içine eklenen değerin değiştirdi.  
   
--   `ApplicationRevision`Düzeltme belirtir. Bu, IDE içinde her yayımladığınızda artırır bir tamsayıdır. Bu otomatik olarak için artmaz dikkat edin, komut satırında gerçekleştirilen oluşturur.  
+-   `ApplicationRevision` Düzeltme belirtir. Bu, IDE içinde her yayımladığınızda artırır bir tamsayıdır. Bu otomatik olarak için artmaz dikkat edin, komut satırında gerçekleştirilen oluşturur.  
   
--   `Install`uygulamanın yüklü bir uygulama veya bir çalışma alanından Web uygulaması olup olmadığını belirler.  
+-   `Install` uygulamanın yüklü bir uygulama veya bir çalışma alanından Web uygulaması olup olmadığını belirler.  
   
--   `InstallUrl`(gösterilmez), kullanıcıların uygulamayı burada yükleyecek konumdur. Belirtilmişse, bu değer setup.exe önyükleyicisi içine `IsWebBootstrapper` özelliği etkin hale getirilir. Uygulama bildirim if eklenir `UpdateUrl` belirtilmedi.  
+-   `InstallUrl` (gösterilmez), kullanıcıların uygulamayı burada yükleyecek konumdur. Belirtilmişse, bu değer setup.exe önyükleyicisi içine `IsWebBootstrapper` özelliği etkin hale getirilir. Uygulama bildirim if eklenir `UpdateUrl` belirtilmedi.  
   
--   `SupportUrl`(gösterilmez) konumu bağlı olduğu **Program Ekle/Kaldır** yüklü bir uygulama için iletişim kutusu.  
+-   `SupportUrl` (gösterilmez) konumu bağlı olduğu **Program Ekle/Kaldır** yüklü bir uygulama için iletişim kutusu.  
   
  Aşağıdaki özellikleri ayarlayın **uygulama güncelleştirmeleri** iletişim kutusu, erişilen **Yayımla** sayfası.  
   
--   `UpdateEnabled`Uygulama Güncelleştirmeleri denetle olup olmadığını gösterir.  
+-   `UpdateEnabled` Uygulama Güncelleştirmeleri denetle olup olmadığını gösterir.  
   
--   `UpdateMode`ön plan güncelleştirmelerini ya da arka plan güncelleştirmeleri belirtir.  
+-   `UpdateMode` ön plan güncelleştirmelerini ya da arka plan güncelleştirmeleri belirtir.  
   
--   `UpdateInterval`Uygulama güncelleştirmeleri ne sıklıkta denetleyeceğini belirtir.  
+-   `UpdateInterval` Uygulama güncelleştirmeleri ne sıklıkta denetleyeceğini belirtir.  
   
--   `UpdateIntervalUnits`belirtir olup olmadığını `UpdateInterval` saat, gün veya hafta birimlerinde bir değerdir.  
+-   `UpdateIntervalUnits` belirtir olup olmadığını `UpdateInterval` saat, gün veya hafta birimlerinde bir değerdir.  
   
--   `UpdateUrl`(gösterilmez), uygulama güncelleştirmeleri alacağı konumdur. Belirtilmişse, bu değer uygulama bildirimine eklenir.  
+-   `UpdateUrl` (gösterilmez), uygulama güncelleştirmeleri alacağı konumdur. Belirtilmişse, bu değer uygulama bildirimine eklenir.  
   
 -   Aşağıdaki özellikleri ayarlayın **Yayımla Seçenekleri** iletişim kutusu, erişilen **Yayımla** sayfası.  
   
--   `PublisherName`yükleme veya uygulamayı çalıştırdığınızda gösterilen istemde yayımcının adını belirtir. Yüklü bir uygulama olması durumunda da klasör adı belirtmeniz kullanıldığı **Başlat** menüsü.  
+-   `PublisherName` yükleme veya uygulamayı çalıştırdığınızda gösterilen istemde yayımcının adını belirtir. Yüklü bir uygulama olması durumunda da klasör adı belirtmeniz kullanıldığı **Başlat** menüsü.  
   
--   `ProductName`yükleme veya uygulamayı çalıştırdığınızda gösterilen istemde ürün adını belirtir. Yüklü bir uygulama olması durumunda da kısayol adını belirtmek için kullanıldığı **Başlat** menüsü.  
+-   `ProductName` yükleme veya uygulamayı çalıştırdığınızda gösterilen istemde ürün adını belirtir. Yüklü bir uygulama olması durumunda da kısayol adını belirtmek için kullanıldığı **Başlat** menüsü.  
   
 -   Aşağıdaki özellikleri ayarlayın **Önkoşullar** iletişim kutusu, erişilen **Yayımla** sayfası.  
   
--   `BootstrapperEnabled`setup.exe önyükleyici oluşturulup oluşturulmayacağını belirler.  
+-   `BootstrapperEnabled` setup.exe önyükleyici oluşturulup oluşturulmayacağını belirler.  
   
--   `IsWebBootstrapper`setup.exe önyükleyici Web üzerinden mi disk tabanlı modunda çalışıp çalışmadığını belirler.  
+-   `IsWebBootstrapper` setup.exe önyükleyici Web üzerinden mi disk tabanlı modunda çalışıp çalışmadığını belirler.  
   
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallUrl, SupportUrl, PublishURL ve UpdateURL  
  Aşağıdaki tabloda ClickOnce dağıtım için dört URL seçeneklerini gösterir.  

@@ -1,27 +1,25 @@
 ---
-title: "Gözcü penceresi ifadesi değerlendirme | Microsoft Docs"
-ms.custom: 
+title: Gözcü penceresi ifadesi değerlendirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
 - Watch window, expressions
 - expression evaluation, Watch window expressions
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: fb109fd91e4c295bf372b14e26bc2a75c3be6b1d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: beb632b484659c3bc901142b35ab52d25b8067fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="evaluating-a-watch-window-expression"></a>Gözcü penceresi ifade değerlendirme
 > [!IMPORTANT]
@@ -35,13 +33,13 @@ ms.lasthandoff: 12/22/2017
   
 2.  Gözcü listesindeki her bir ifade için Visual Studio çağırır [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) ifade metni ayrıştırılmış bir ifadesine dönüştürmek için.  
   
-3.  `IDebugExpressionContext2::ParseText`çağrıları [ayrıştırma](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metin ve üretim ayrıştırma gerçek işlemlerini yapmak için bir [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) nesnesi.  
+3.  `IDebugExpressionContext2::ParseText` çağrıları [ayrıştırma](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metin ve üretim ayrıştırma gerçek işlemlerini yapmak için bir [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) nesnesi.  
   
-4.  `IDebugExpressionContext2::ParseText`oluşturur bir [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) nesne ve yerleştirmelerin `IDebugParsedExpression` içine nesne. Bu t`DebugExpression2` nesne için Visual Studio sonra döndürdü.  
+4.  `IDebugExpressionContext2::ParseText` oluşturur bir [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) nesne ve yerleştirmelerin `IDebugParsedExpression` içine nesne. Bu t`DebugExpression2` nesne için Visual Studio sonra döndürdü.  
   
 5.  Visual Studio çağrıları [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ayrıştırılmış ifadesini değerlendiremedi.  
   
-6.  `IDebugExpression2::EvaluateSync`Çağrı geçirir [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) gerçek değerlendirme yapmak ve üretmek için bir [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Visual Studio'ya döndürülen nesne.  
+6.  `IDebugExpression2::EvaluateSync` Çağrı geçirir [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) gerçek değerlendirme yapmak ve üretmek için bir [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Visual Studio'ya döndürülen nesne.  
   
 7.  Visual Studio çağrıları [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) sonra izleme liste görünümünde görüntülenen ifade değeri elde etmek için.  
   

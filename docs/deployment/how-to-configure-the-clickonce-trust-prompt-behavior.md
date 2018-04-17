@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: ClickOnce güven istemi davranışını yapılandırma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: ClickOnce güven istemi davranışını yapılandırma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - ClickOnce applications, trust prompt
 - ClickOnce deployment, trust prompt
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
-caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 8822d0aa9947dccbdfabc43d7090b52eba7d0844
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e3a399a9f075249f2457c431385132476b173191
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Nasıl yapılır: ClickOnce Güven İstemi Davranışını Yapılandırma
 Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları, konsol uygulamaları, WPF tarayıcı gibi ClickOnce uygulamalarını yükleme seçeneği izin verilip verilmeyeceğini denetlemek için ClickOnce güven istemi yapılandırabilirsiniz uygulamaları ve Office çözümleri. Güven istemi her son kullanıcının bilgisayarda kayıt defteri anahtarlarını ayarlayarak yapılandırın.  

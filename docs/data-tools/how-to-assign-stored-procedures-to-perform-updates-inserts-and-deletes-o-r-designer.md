@@ -1,23 +1,20 @@
 ---
-title: "Güncelleştirme gerçekleştirmek için saklı yordamları Ekle ve LINQ to SQL O/R Tasarımcısı Sil | Microsoft Docs"
-ms.custom: 
+title: Güncelleştirme gerçekleştirmek için saklı yordamları Ekle ve LINQ to SQL O/R Tasarımcısı Sil | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 20669a4ec19865e99a9498e87e896aa645321257
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 69071f0a49b5e2a8b0261aaf64b97cefaeb9aa9f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Nasıl yapılır: güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atayın
 Saklı yordamlar için O/R Tasarımcısı eklenebilir ve tipik olarak yürütülen <xref:System.Data.Linq.DataContext> yöntemleri. Varsayılan değer geçersiz kılmak için de kullanılabilir [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ekler, güncelleştirmeleri gerçekleştiren ve değişiklikleri veritabanına varlık sınıflardan kaydedildiğinde siler çalışma zamanı davranışı (örneğin, çağrılırken <xref:System.Data.Linq.DataContext.SubmitChanges%2A> yöntemi).  
@@ -26,7 +23,7 @@ Saklı yordamlar için O/R Tasarımcısı eklenebilir ve tipik olarak yürütül
 >  Saklı yordam istemciye gönderilmesi gereken değerler döndürürse (örneğin, hesaplanan değerler saklı yordamda), çıktı parametreleri saklı yordamlarda oluşturun. Çıkış parametreleri kullanamıyorsanız, O/R tasarımcısı tarafından oluşturulan yazma güvenmek yerine bir kısmi yöntemi uygulama geçersiz kılar. Veritabanı oluşturulan değerler için eşlenen üyelerinin ekleme veya güncelleştirme işlemleri başarıyla tamamlandıktan sonra uygun değerlere ayarlanmış olması gerekir. Daha fazla bilgi için bkz: [Geliştirici içinde geçersiz kılma varsayılan davranışı sorumluluklarını](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).  
   
 > [!NOTE]
->  [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]veritabanında oluşturulan tanıtıcıları değerleri otomatik olarak kimlik (otomatik artım), rowguıdcol (veritabanında oluşturulan GUID) ve zaman damgası sütunları. Diğer sütun türleri veritabanında oluşturulan değerlerde beklenmedik bir null değer neden olur. Veritabanında oluşturulan değer döndürmek için el ile ayarlamanız gerekir <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> için `true` ve <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> aşağıdakilerden birine: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, veya <xref:System.Data.Linq.Mapping.AutoSync>.  
+>  [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] veritabanında oluşturulan tanıtıcıları değerleri otomatik olarak kimlik (otomatik artım), rowguıdcol (veritabanında oluşturulan GUID) ve zaman damgası sütunları. Diğer sütun türleri veritabanında oluşturulan değerlerde beklenmedik bir null değer neden olur. Veritabanında oluşturulan değer döndürmek için el ile ayarlamanız gerekir <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> için `true` ve <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> aşağıdakilerden birine: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, veya <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="configuring-the-update-behavior-of-an-entity-class"></a>Bir varlık sınıfı güncelleştirme davranışını yapılandırma  
  Varsayılan olarak, verilerde yapılan değişikliklerle (ekler, güncelleştirmeleri ve silme) bir veritabanını güncelleştirmek için mantığı [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sınıflar tarafından sağlanan [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] çalışma zamanı. Çalışma zamanı temel alan INSERT, UPDATE ve DELETE komutları varsayılan oluşturur (sütun ve birincil anahtar bilgilerini) tablonun şeması. Varsayılan davranış değil istendiğinde, gerekli ekler, güncelleştirmeleri ve silme, tablodaki verileri işlemek için gerekli gerçekleştirmek için özel saklı yordamları atayarak güncelleştirme davranışını yapılandırabilirsiniz. Varlık sınıflarınızı görünümlerine eşlediğinizde varsayılan davranışı, örneğin, değil oluşturulduğunda de bunu yapabilirsiniz. Son olarak, veritabanı saklı yordamları aracılığıyla tablo erişim gerektirdiğinde varsayılan güncelleştirme davranışı geçersiz kılabilirsiniz.  

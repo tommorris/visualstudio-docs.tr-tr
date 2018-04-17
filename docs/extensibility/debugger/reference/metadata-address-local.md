@@ -1,29 +1,25 @@
 ---
 title: METADATA_ADDRESS_LOCAL | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - METADATA_ADDRESS_LOCAL
 helpviewer_keywords:
 - METADATA_ADDRESS_LOCAL structure
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74d59fb19d130ad53ddbf200e96cdf04e958e239
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 720f150be1b7cf992f0949750dd52218939c7d2e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 Bu yapı (genellikle bir işlev veya yöntem) kapsam içinde yerel değişkenin adresini temsil eder.  
@@ -61,7 +57,7 @@ public struct METADATA_ADDRESS_LOCAL {
 ## <a name="remarks"></a>Açıklamalar  
  Bu yapı birleşim içinde yer [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) ne zaman yapısı `dwKind` alanını `DEBUG_ADDRESS_UNION` yapısı ayarlanmış `ADDRESS_KIND_LOCAL` (arasında bir değer [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) numaralandırma).  
   
- `Warning:`[Yalnızca C++]  Varsa `pLocal` null değil çağırmalısınız sonra `Release` belirteci işaretçi üzerinde (`addr` bir alandır [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) yapısı):  
+ `Warning:` [Yalnızca C++]  Varsa `pLocal` null değil çağırmalısınız sonra `Release` belirteci işaretçi üzerinde (`addr` bir alandır [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) yapısı):  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  

@@ -1,12 +1,10 @@
 ---
-title: "ClickOnce uygulamalarını yerelleştirme | Microsoft Docs"
-ms.custom: 
+title: ClickOnce uygulamalarını yerelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,16 +19,16 @@ helpviewer_keywords:
 - Windows Forms, ClickOnce applications
 - console applications, ClickOnce applications
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
-caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: e1b5b9697445b2d8cc35a73841526db0bd69b5f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e14305b9a1c45c5a050e83fbcc5d20e49ca2a5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="localizing-clickonce-applications"></a>ClickOnce Uygulamalarını Yerelleştirme
 Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme işlemidir. Gerekirse, yansıtma denetimleri sağdan sola ve bu işlem, kullanıcı arabirimi (UI) metni doğru tarih ve para birimi biçimlendirme, bir form üzerinde denetimleri boyutunu ayarlama kullanarak bir bölgeye özgü dile çevirme içerir.  
@@ -60,7 +58,7 @@ Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme i�
 ## <a name="generate-one-deployment-for-each-culture"></a>Her kültür için bir dağıtım oluşturun  
  Bu dağıtım stratejisini birden çok dağıtım oluşturun. Her dağıtımda, yalnızca belirli bir kültür için gerekli uydu derlemeyi dahil etme ve dağıtım kültüre özgü olarak işaretleyin.  
   
- Bu yöntemi kullanmak için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ayarlayın **Dili Yayımla** özelliği **Yayımla** istediğiniz bölgeyi sekmesine. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]otomatik olarak seçin ve diğer tüm uydu derlemelerini dağıtımdan hariç bölge için gerekli uydu derlemesini dahil edilir.  
+ Bu yöntemi kullanmak için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ayarlayın **Dili Yayımla** özelliği **Yayımla** istediğiniz bölgeyi sekmesine. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otomatik olarak seçin ve diğer tüm uydu derlemelerini dağıtımdan hariç bölge için gerekli uydu derlemesini dahil edilir.  
   
  Microsoft MageUI.exe aracını kullanarak aynı şeyi gerçekleştirebilirsiniz [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Kullanım **Populate** düğmesini **dosyaları** diğer tüm uydu derlemelerini uygulama dizininden hariç tutmak ve daha sonra ayarlamak için uygulama bildiriminizi sekmesinde **kültür**alanını **adı** Dağıtım bildiriminizi MageUI.exe sekmesi. Bu adımlar yalnızca doğru derlemeyi içerir, ancak de ayarlar `language` özniteliği `assemblyIdentity` Dağıtım bildiriminizi kültüre karşılık gelen öğe.  
   

@@ -2,28 +2,24 @@
 title: IntelliTrace tek başına toplayıcıyı kullanma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
 helpviewer_keywords:
 - IntelliTrace, debugging applications in production
 ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
-caps.latest.revision: 105
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b627e1f3188a4e7e938f9446251b5be80b87e6
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 9533c2a79a8fb692e970cf2f59d4be6feaaefc5f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>IntelliTrace tek başına toplayıcıyı kullanma
 **IntelliTrace tek başına toplayıcıyı** IntelliTrace Tanılama verilerini uygulamalarınız için üretim sunucuları veya diğer ortamlara hedef makinede Visual Studio yükleme ve değiştirme olmadan toplamanıza olanak tanır sistemin ortam hedefleyin. IntelliTrace tek başına toplayıcıyı web, SharePoint, WPF ve Windows Forms uygulamalarında çalışır. Veri toplama bittiğinde, yalnızca kaldırmak için toplayıcı silin.  
@@ -217,7 +213,7 @@ ms.lasthandoff: 04/10/2018
   
 1.  Veri toplama başlatmak için yönetici olarak bir PowerShell komut penceresi açın ve şu komutu çalıştırın:  
   
-     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*  
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*  
   
     > [!IMPORTANT]
     >  Bu komutu çalıştırdıktan sonra yazın **Y** veri toplama başlatmak istediğinizi onaylamak için.  
@@ -229,7 +225,7 @@ ms.lasthandoff: 04/10/2018
     |||  
     |-|-|  
     |*ApplicationPool*|Uygulamanızın çalıştığı uygulama havuzu adı|  
-    |*PathToCollectionPlan*|Koleksiyon planı, Toplayıcı için ayarları yapılandırır bir .xml dosyası yolu.<br /><br /> Toplayıcı ile birlikte gelen bir plan belirtebilirsiniz. Aşağıdaki planları, Web uygulamaları ve SharePoint uygulamaları için çalışır:<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Yalnızca IntelliTrace olayları ve özel durumlar, veritabanı çağrılarını ve Web sunucusu isteklerinin dahil olmak üzere SharePoint olayları toplar.<br />-   collection_plan.ASP.NET.trace.xml<br />     Toplar işlev çağrılarını ve collection_plan.ASP.NET.default.xml tüm veriler. Bu plan için ayrıntılı bir analiz iyi olduğu, ancak uygulamanızı collection_plan.ASP.NET.default.xml'den fazla aşağı yavaşlatabilir.<br /><br /> Uygulamanızı yavaşlamasının önlemek için bu planlarını özelleştirebilir veya kendi planınızı oluşturabilirsiniz. Güvenlik için özel planların Toplayıcı dosyalarıyla aynı güvenli bir konuma yerleştirin. Bkz: [oluşturma ve özelleştirme IntelliTrace koleksiyonu planları](http://go.microsoft.com/fwlink/?LinkId=227871) ve [nasıl alabilirim en veri Uygulamam yavaşlamasının olmadan?](#Minimizing) **Not:** varsayılan olarak, .iTrace dosyasının en büyük boyutu 100 MB'dir. .İTrace dosya bu sınıra ulaştığında, Toplayıcı yeni girişler için yer açmak üzere dosyanın en erken girişleri siler. Bu sınırı değiştirmek için koleksiyon planın Düzenle `MaximumLogFileSize` özniteliği. <br /><br /> *Bu koleksiyon planlarını yerelleştirilmiş sürümleri nereden bulabilirim?*<br /><br /> Yerelleştirilmiş planları toplayıcının klasörlerdeki bulabilirsiniz.|  
+    |*PathToCollectionPlan*|Koleksiyon planı, Toplayıcı için ayarları yapılandırır bir .xml dosyası yolu.<br /><br /> Toplayıcı ile birlikte gelen bir plan belirtebilirsiniz. Aşağıdaki planları, Web uygulamaları ve SharePoint uygulamaları için çalışır:<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Yalnızca IntelliTrace olayları ve özel durumlar, veritabanı çağrılarını ve Web sunucusu isteklerinin dahil olmak üzere SharePoint olayları toplar.<br />-collection_plan.ASP.NET.trace.xml<br />     Toplar işlev çağrılarını ve collection_plan.ASP.NET.default.xml tüm veriler. Bu plan için ayrıntılı bir analiz iyi olduğu, ancak uygulamanızı collection_plan.ASP.NET.default.xml'den fazla aşağı yavaşlatabilir.<br /><br /> Uygulamanızı yavaşlamasının önlemek için bu planlarını özelleştirebilir veya kendi planınızı oluşturabilirsiniz. Güvenlik için özel planların Toplayıcı dosyalarıyla aynı güvenli bir konuma yerleştirin. Bkz: [oluşturma ve özelleştirme IntelliTrace koleksiyonu planları](http://go.microsoft.com/fwlink/?LinkId=227871) ve [nasıl alabilirim en veri Uygulamam yavaşlamasının olmadan?](#Minimizing) **Not:** varsayılan olarak, .iTrace dosyasının en büyük boyutu 100 MB'dir. .İTrace dosya bu sınıra ulaştığında, Toplayıcı yeni girişler için yer açmak üzere dosyanın en erken girişleri siler. Bu sınırı değiştirmek için koleksiyon planın Düzenle `MaximumLogFileSize` özniteliği. <br /><br /> *Bu koleksiyon planlarını yerelleştirilmiş sürümleri nereden bulabilirim?*<br /><br /> Yerelleştirilmiş planları toplayıcının klasörlerdeki bulabilirsiniz.|  
     |*FullPathToITraceFileDirectory*|.İTrace dosyası dizini tam yolu. **Güvenlik Notu:** göreli bir yol değil tam yolunu girin.|  
   
      Toplayıcı uygulama havuzuna ekler ve veri toplamayı başlatır.  
@@ -268,7 +264,7 @@ ms.lasthandoff: 04/10/2018
     |||  
     |-|-|  
     |*FullPathToIntelliTraceCollectorExecutable*|Toplayıcı yürütülebilir, IntelliTraceSC.exe tam yolu|  
-    |*PathToCollectionPlan*|Koleksiyon planı, Toplayıcı için ayarları yapılandırır bir .xml dosyası yolu.<br /><br /> Toplayıcı ile birlikte gelen bir plan belirtebilirsiniz. Aşağıdaki planlar yönetilen uygulamalar için çalışır:<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Yalnızca IntelliTrace olayları özel durumlar, veritabanı çağrılarını ve Web sunucusu isteklerinin dahil toplar.<br />-   collection_plan.ASP.NET.trace.xml<br />     Toplar işlev çağrılarını ve collection_plan.ASP.NET.default.xml tüm veriler. Bu plan için ayrıntılı bir analiz iyi olduğu, ancak uygulamanızı collection_plan.ASP.NET.default.xml'den fazla aşağı yavaşlatabilir.<br /><br /> Uygulamanızı yavaşlamasının önlemek için bu planlarını özelleştirebilir veya kendi planınızı oluşturabilirsiniz. Güvenlik için özel planların Toplayıcı dosyalarıyla aynı güvenli bir konuma yerleştirin. Bkz: [oluşturma ve özelleştirme IntelliTrace koleksiyonu planları](http://go.microsoft.com/fwlink/?LinkId=227871) ve [nasıl alabilirim en veri Uygulamam yavaşlamasının olmadan?](#Minimizing) **Not:** varsayılan olarak, .iTrace dosyasının en büyük boyutu 100 MB'dir. .İTrace dosya bu sınıra ulaştığında, Toplayıcı yeni girişler için yer açmak üzere dosyanın en erken girişleri siler. Bu sınırı değiştirmek için koleksiyon planın Düzenle `MaximumLogFileSize` özniteliği. <br /><br /> *Bu koleksiyon planlarını yerelleştirilmiş sürümleri nereden bulabilirim?*<br /><br /> Yerelleştirilmiş planları toplayıcının klasörlerdeki bulabilirsiniz.|  
+    |*PathToCollectionPlan*|Koleksiyon planı, Toplayıcı için ayarları yapılandırır bir .xml dosyası yolu.<br /><br /> Toplayıcı ile birlikte gelen bir plan belirtebilirsiniz. Aşağıdaki planlar yönetilen uygulamalar için çalışır:<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Yalnızca IntelliTrace olayları özel durumlar, veritabanı çağrılarını ve Web sunucusu isteklerinin dahil toplar.<br />-collection_plan.ASP.NET.trace.xml<br />     Toplar işlev çağrılarını ve collection_plan.ASP.NET.default.xml tüm veriler. Bu plan için ayrıntılı bir analiz iyi olduğu, ancak uygulamanızı collection_plan.ASP.NET.default.xml'den fazla aşağı yavaşlatabilir.<br /><br /> Uygulamanızı yavaşlamasının önlemek için bu planlarını özelleştirebilir veya kendi planınızı oluşturabilirsiniz. Güvenlik için özel planların Toplayıcı dosyalarıyla aynı güvenli bir konuma yerleştirin. Bkz: [oluşturma ve özelleştirme IntelliTrace koleksiyonu planları](http://go.microsoft.com/fwlink/?LinkId=227871) ve [nasıl alabilirim en veri Uygulamam yavaşlamasının olmadan?](#Minimizing) **Not:** varsayılan olarak, .iTrace dosyasının en büyük boyutu 100 MB'dir. .İTrace dosya bu sınıra ulaştığında, Toplayıcı yeni girişler için yer açmak üzere dosyanın en erken girişleri siler. Bu sınırı değiştirmek için koleksiyon planın Düzenle `MaximumLogFileSize` özniteliği. <br /><br /> *Bu koleksiyon planlarını yerelleştirilmiş sürümleri nereden bulabilirim?*<br /><br /> Yerelleştirilmiş planları toplayıcının klasörlerdeki bulabilirsiniz.|  
     |*FullPathToITraceFileDirectoryAndFileName*|.İTrace dosya dizinini ve .iTrace dosya adıyla tam yolunu **.itrace** uzantısı. **Güvenlik Notu:** göreli bir yol değil tam yolunu girin.|  
     |*PathToAppExecutableFileAndFileName*|Yönetilen uygulama yolu ve dosya adı|  
   
@@ -400,7 +396,7 @@ ms.lasthandoff: 04/10/2018
   
  [Üretim sunucularında IntelliTrace toplamasını en iyi duruma getirme](http://go.microsoft.com/fwlink/?LinkId=255233)  
   
- [Visual Studio ALM + TFS Blog](http://go.microsoft.com/fwlink/?LinkID=201340)  
+ [Visual Studio ALM + TFS blogu](http://go.microsoft.com/fwlink/?LinkID=201340)  
   
 ### <a name="forums"></a>Forumlar  
  [Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)  

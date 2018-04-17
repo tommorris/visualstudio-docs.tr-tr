@@ -1,12 +1,10 @@
 ---
-title: "Nasıl yapılır: DLL projesinde hata ayıklama | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: DLL projesinde hata ayıklama | Microsoft Docs'
+ms.custom: ''
 ms.date: 05/24/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - DLLs, debugging projects
 - debugging [Visual Studio], DLLs
 ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
-caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f50c41a18f6d018ca717fbfd0cd926da8e6dcf65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 903723616b55467a49c43986ccd6df63dea71491
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da bir DLL projeden hata ayıklama
 DLL projesinde hata ayıklamak için bir çağrı yapan uygulamanın DLL projesi Proje özelliklerini belirtmek için yoludur ve ardından DLL projesi kendisini hata ayıklama başlayabilirsiniz. Bu yöntem çalışmak uygulama DLL çağırmanız gerekir ve DLL burada uygulama bekler bulmak için konumda olması gerekir (Aksi takdirde uygulama DLL farklı bir sürümünü bulun ve bunun yerine, yükleme ve noktalarınıza isabet olmaz). DLL'lerde hata ayıklama diğer yöntemleri için bkz: [DLL projelerinde hata ayıklama](../debugger/debugging-dll-projects.md).

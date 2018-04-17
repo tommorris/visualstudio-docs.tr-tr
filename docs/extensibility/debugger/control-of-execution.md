@@ -1,27 +1,23 @@
 ---
-title: "Yürütme denetimi | Microsoft Docs"
-ms.custom: 
+title: Yürütme denetimi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a76b14f28bdb74345813931fc334f98090abd93c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c9fc47a0b73d07e4b24ef55c736ad80197f282cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="control-of-execution"></a>Yürütme denetimi
 Hata ayıklama altyapısı (DE) genellikle aşağıdaki olaylardan biri son başlatma olayı olarak gönderir:  
@@ -45,11 +41,11 @@ Hata ayıklama altyapısı (DE) genellikle aşağıdaki olaylardan biri son baş
   
 5.  Kullanıcı, üzerinde adımla ödememeyi ya da bir işlev dışında IDE programın çağırmak için hata ayıklama oturumu ister `Step` adım (yönerge, deyimi veya satırı) ve adım türü birimi geçirme yöntemi — diğer bir deyişle, üzerinde adımla verilip , veya işlev dışında. Adım tamamlandığında DE durdurma olayı hata ayıklama oturumu için adım complete olayını gönderir.  
   
-     veya  
+     -veya-  
   
      Kullanıcının geçerli yönerge işaretçi çalıştırmaya devam etmeyi seçerse, IDE programın çağırmak için hata ayıklama oturumu ister **yürütme** yöntemi. Sonraki durdurma koşulu bulduğu kadar program yürütme devam ettirir.  
   
-     veya  
+     -veya-  
   
      Hata ayıklama oturumu belirli durdurma olayı yoksayabilir olursa hata ayıklama oturumu programın çağırır **devam** yöntemi. Ardından durdurma koşulu karşılaştığında programın içine, üzerinden veya bir işlev dışında atlama, adım devam eder.  
   

@@ -1,12 +1,10 @@
 ---
-title: "Desteklenen kod değişiklikleri (C++) | Microsoft Docs"
-ms.custom: 
+title: Desteklenen kod değişiklikleri (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -23,23 +21,23 @@ helpviewer_keywords:
 - what's new [C#], supported code changes
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
-caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8b3ced43c776cc948467d68b2112fb808dd2a48c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8752cb6574a514baa121de744e381e7e37041f11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supported-code-changes-c"></a>Desteklenen Kod Değişiklikleri (C++)
 Düzenle ve devam et Visual C++ için kod değişiklikleri çoğu türlerini işler. Ancak, program yürütme sırasında bazı değişiklikler uygulanamıyor. Bu değişiklikleri uygulamak için yürütme durdurun ve kod yeni bir sürümünü oluşturabilir.  
   
  Bkz: [Düzenle ve devam et (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) Visual Studio'da c++ Düzenle ve devam et ile çalışma hakkında bilgi.  
   
-##  <a name="BKMK_Unsupported_changes"></a>Desteklenmeyen değişiklikler  
+##  <a name="BKMK_Unsupported_changes"></a> Desteklenmeyen değişiklikler  
  Aşağıdaki C/C++ değişiklikleri hata ayıklama oturumu sırasında uygulanamaz:  
   
 -   Genel veya statik verileri çoğu geçer.  
@@ -68,7 +66,7 @@ Düzenle ve devam et Visual C++ için kod değişiklikleri çoğu türlerini iş
   
 -   Düzenle ve devam et, statik kitaplıklar güncelleştirmez. Statik kitaplığa değişiklik yaparsanız, eski sürüm ile yürütme devam eder ve herhangi bir uyarı verilir.  
   
-##  <a name="BKMK_Unsupported_scenarios"></a>Desteklenmeyen senaryolar  
+##  <a name="BKMK_Unsupported_scenarios"></a> Desteklenmeyen senaryolar  
  Düzenle ve devam et C/C++ için aşağıdaki hata ayıklama senaryolarında kullanılamaz:  
   
 -   Hata ayıklama ile derlenmiş yerel uygulamaları [/Zo (geliştirmek en iyi duruma getirilmiş hata ayıklama)](/cpp/build/reference/zo-enhance-optimized-debugging)  
@@ -93,9 +91,9 @@ Düzenle ve devam et Visual C++ için kod değişiklikleri çoğu türlerini iş
   
 -   Derleme hataları nedeniyle oluşturmak yeni bir sürüm başarısız olduktan sonra kodunuzu eski bir sürümü hata ayıklama.  
   
-##  <a name="BKMK_Linking_limitations"></a>Bağlama kısıtlamaları  
+##  <a name="BKMK_Linking_limitations"></a> Bağlama kısıtlamaları  
   
-###  <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a>Düzenle ve devam et devre dışı bağlayıcı seçenekleri  
+###  <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Düzenle ve devam et devre dışı bağlayıcı seçenekleri  
  Aşağıdaki bağlayıcı seçeneklerini Düzenle ve devam et devre dışı bırakın:  
   
 -   Ayarı **/OPT:REF**, **/OPT:ICF**, veya **/INCREMENTAL:NO** devre dışı bırakır Düzenle ve devam et, şu uyarıyı vererek:  
@@ -112,7 +110,7 @@ Düzenle ve devam et Visual C++ için kod değişiklikleri çoğu türlerini iş
   
 -   Herhangi bir seçenek ayarı devre dışı bırakır düzenleyebilir ve belirli bir uyarı ile devam program veritabanı (.pdb) dosyası oluşturulmasını engeller.  
   
-###  <a name="BKMK_Auto_relinking_limitations"></a>Otomatik sınırlamaları yeniden bağlantılandırma  
+###  <a name="BKMK_Auto_relinking_limitations"></a> Otomatik sınırlamaları yeniden bağlantılandırma  
  Varsayılan olarak, Düzenle ve devam et i programınızı güncel yürütülebilir bir dosya oluşturmak için bir hata ayıklama oturumu sonunda.  
   
  Bu özgün yapı konumu dışında bir konumdan ayıkladığınız varsa Düzenle ve devam et programınızı yeniden olamaz. Bir ileti el ile yeniden gerektiğini bildirir.  
@@ -129,7 +127,7 @@ Düzenle ve devam et Visual C++ için kod değişiklikleri çoğu türlerini iş
   
 3.  Clear **hata ayıklama sonra yeniden Bağla kod değişiklikleri** onay kutusu.  
   
-##  <a name="BKMK_Precompiled_Header_Limitations"></a>Önceden derlenmiş üst bilgi sınırlamaları  
+##  <a name="BKMK_Precompiled_Header_Limitations"></a> Önceden derlenmiş üst bilgi sınırlamaları  
  Varsayılan olarak, Düzenle ve yükler ve işlemleri önceden derlenmiş üstbilgiler kod değişiklikleri işlemleri hızlandırmak için arka planda devam et. Önceden derlenmiş üst bilgiler yüklenirken bir sorun sınırlı RAM'i olan bir makinede derlediğiniz varsa olabilen fiziksel bellek ayırma gerektirir. Bu bir sorun hata ayıklarken kullanılabilir fiziksel bellek miktarını belirlemek için Windows Görev Yöneticisi'ni kullanarak olabilir, belirleyebilirsiniz. Bu miktar, önceden derlenmiş üstbilgi boyutu büyükse, Düzenle ve devam et hiçbir sorun olmalıdır. Tutar, önceden derlenmiş üst bilgilerin boyuttan daha az ise, önceden derlenmiş üstbilgi arka planda yüklenmesini Düzenle ve devam et engelleyebilir.  
   
  **Düzenle ve devam et için önceden derlenmiş üst bilgilerin arka planda yükleme devre dışı bırakmak için**  
@@ -140,7 +138,7 @@ Düzenle ve devam et Visual C++ için kod değişiklikleri çoğu türlerini iş
   
 3.  Clear **izin önceden derleme** onay kutusu.  
   
-##  <a name="BKMK_IDL_Attribute_Limitations"></a>IDL özniteliği sınırlamaları  
+##  <a name="BKMK_IDL_Attribute_Limitations"></a> IDL özniteliği sınırlamaları  
  Düzenle ve devam et değil yeniden arabirim tanımı (IDL) dosyaları. Bu nedenle, hata ayıklarken IDL özniteliklere yapılan değişiklikleri yansıtılmaz. IDL öznitelikleri değişiklikler sonuçlarını görmek için hata ayıklamayı durdurun ve uygulamanızı yeniden oluşturun. Düzenle ve devam et oluşturmaz bir hata veya uyarı IDL öznitelikleri değiştirdiyseniz. Daha fazla bilgi için bkz: [IDL öznitelikleri](/cpp/windows/idl-attributes).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

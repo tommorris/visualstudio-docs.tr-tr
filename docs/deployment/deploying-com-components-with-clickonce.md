@@ -1,12 +1,10 @@
 ---
-title: "ClickOnce ile COM bileşenleri dağıtma | Microsoft Docs"
-ms.custom: 
+title: ClickOnce ile COM bileşenleri dağıtma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,23 +16,23 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], COM components
 - components, deploying
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
-caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c735eff8e33a8eb8a363e97a9621abc6f06c18e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-com-components-with-clickonce"></a>ClickOnce ile COM Bileşenleri Dağıtma
 Eski COM bileşenlerini dağıtımını geleneksel zor bir görev olmuştur. Bileşenleri Genel kayıtlı olması gerekir ve bu nedenle örtüşen uygulamalar arasında istenmeyen yan etkileri neden olabilir. Bileşenler bir uygulama için tamamen yalıtılmış veya yan yana uyumlu değildir çünkü bu durum genelde .NET Framework uygulamalarında bir sorun değildir. Visual Studio yalıtılmış COM bileşenleri Windows XP veya daha yüksek işletim sistemi dağıtmanıza olanak tanır.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].NET uygulamaları dağıtmak için kolay ve güvenli bir mekanizma sağlar. Ancak, uygulamalarınızı eski COM bileşenleri kullanıyorsanız, bunları dağıtmak için ek adımlar uygulamanız gerekir. Bu konu, yalıtılmış COM bileşenlerini dağıtmak ve yerel bileşenleri (örneğin, Visual Basic 6.0 veya Visual C++) başvuru açıklar.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .NET uygulamaları dağıtmak için kolay ve güvenli bir mekanizma sağlar. Ancak, uygulamalarınızı eski COM bileşenleri kullanıyorsanız, bunları dağıtmak için ek adımlar uygulamanız gerekir. Bu konu, yalıtılmış COM bileşenlerini dağıtmak ve yerel bileşenleri (örneğin, Visual Basic 6.0 veya Visual C++) başvuru açıklar.  
   
- Yalıtılmış COM bileşenleri dağıtma hakkında daha fazla bilgi için bkz: "basitleştirin uygulama dağıtımı ile [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ve Kayıtsız COM" konumundaki [http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Yalıtılmış COM bileşenleri dağıtma hakkında daha fazla bilgi için bkz: "basitleştirin uygulama dağıtımı ile [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ve Kayıtsız COM" konumundaki [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
   
 ## <a name="registration-free-com"></a>Kayıtsız COM  
  Kayıtsız COM dağıtımı ve yalıtılmış COM bileşenlerini etkinleştirme için yeni bir teknolojidir. Bileşenin tüm tür kitaplığı ve genellikle bir bildirim adlı bir XML dosyasına sistem kayıt defterine yüklenir kayıt bilgileri koyarak çalıştığı uygulama ile aynı klasörde depolanır.  
@@ -44,7 +42,7 @@ Eski COM bileşenlerini dağıtımını geleneksel zor bir görev olmuştur. Bil
  Bildirim oluşturucu ayrılmış bir COM başvurusuna karşılaştığında, tüm numaralandırır `CoClass` girişleri her giriş karşılık gelen kayıt verilerini ile eşleşen ve oluşturma bileşenin türü Kitaplığı ' nda tüm COM tanımlarında bildirimi tür kitaplığı dosyasında sınıflar.  
   
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>ClickOnce kullanarak Kayıtsız COM bileşenleri dağıtma  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]çünkü dağıtım teknolojisi yalıtılmış COM bileşenlerini dağıtmak için oldukça uygun her ikisi de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ve Kayıtsız COM gerekli bir bileşen dağıtılması için bir bildirime sahip.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] çünkü dağıtım teknolojisi yalıtılmış COM bileşenlerini dağıtmak için oldukça uygun her ikisi de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ve Kayıtsız COM gerekli bir bileşen dağıtılması için bir bildirime sahip.  
   
  Genellikle, bileşenin yazarı bir bildirim sağlamalıdır. Aksi durumda, ancak, Visual Studio bir bildirim otomatik olarak bir COM bileşeni oluşturma yeteneğine sahiptir. Bildirim oluşturulması sırasında gerçekleştirilen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] işlem yayımlama; daha fazla bilgi için bkz: [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md). Bu özellik ayrıca, Visual Basic 6.0 gibi önceki geliştirme ortamlarında yazılmış eski bileşenleri yararlanmanızı sağlar.  
   

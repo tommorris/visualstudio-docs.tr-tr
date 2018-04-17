@@ -1,12 +1,10 @@
 ---
-title: "LINQ'de hata ayıklama | Microsoft Docs"
-ms.custom: 
+title: LINQ'de hata ayıklama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,21 +17,21 @@ helpviewer_keywords:
 - LINQ, stepping
 - LINQ, edit and continue
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b2e159e89fe1854f2d26267793e196aa91b570ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b08f98e7073ad1c0a42d596424d544d5624f272
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-linq"></a>LINQ'de Hata Ayıklama
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]hata ayıklama dilinin tümleşik destekler (LINQ) kodu, bazı kısıtlamalarla sorgu. Atlama, kesme noktalarını ayarlama ve hata ayıklayıcı pencerelerde sonuçları görüntüleme gibi LINQ ifadelerle en hata ayıklama özellikleri çalışmaz. Bu konuda LINQ hata ayıklama önemli sınırlamalar açıklanır.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata ayıklama dilinin tümleşik destekler (LINQ) kodu, bazı kısıtlamalarla sorgu. Atlama, kesme noktalarını ayarlama ve hata ayıklayıcı pencerelerde sonuçları görüntüleme gibi LINQ ifadelerle en hata ayıklama özellikleri çalışmaz. Bu konuda LINQ hata ayıklama önemli sınırlamalar açıklanır.  
   
-##  <a name="BKMK_ViewingLINQResults"></a>LINQ sonuçları görüntüleme  
+##  <a name="BKMK_ViewingLINQResults"></a> LINQ sonuçları görüntüleme  
  DataTips, Gözcü penceresi ve QuickWatch iletişim kutusunu kullanarak, bir LINQ ifadesi sonucu görüntüleyebilirsiniz. Bir kaynak penceresi kullandığınızda, kaynak penceresini sorguda işaretçisini duraklatabilirsiniz ve bir DataTip görüntülenir. LINQ değişkeni kopyalamak ve Gözcü penceresi veya QuickWatch iletişim kutusu yapıştırın.  
   
  LINQ, oluşturulduğunda veya bildirildi, ancak yalnızca sorgu kullanıldığında sorguda değerlendirilmez. Bu nedenle, sorgu ifadesine hesaplanmadan kadar bir değer yok. Sorgu oluşturma ve değerlendirme tam bir açıklaması için bkz: [LINQ sorgularını (C#) giriş](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) veya [yazma bilgisayarınızı ilk LINQ sorgusu](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
@@ -44,7 +42,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Bir sorgu değerlendirme veri veya programınız durumunu değerini yapılan değişiklikler yan etkileri neden olabilir. Tüm sorguları yan etkileri olabilir. Bir sorgu güvenle yan etkileri değerlendirilmesi olup olmadığını belirlemek için sorgu uygulayan kod anlamanız gerekir.  
   
-##  <a name="BKMK_SteppingAndLinq"></a>Atlama ve LINQ  
+##  <a name="BKMK_SteppingAndLinq"></a> Atlama ve LINQ  
  LINQ kod ayıklarken atlama hakkında bilmeniz gereken davranış bazı farklar vardır.  
   
 ### <a name="linq-to-sql"></a>LINQ - SQL  
@@ -108,7 +106,7 @@ End Function
   
  Düzenlenen sorgu işlevi çağırır `IsEven` her geçişte `items`. Her öğe belirtilen koşulu karşılıyorsa ve kodda aracılığıyla adım olup olmadığını görmek için hata ayıklayıcı windows kullanabilirsiniz `IsEven`. Bu örnekte koşulu oldukça basittir. Ancak, hata ayıklama zorunda daha zor bir koşul varsa, bu teknik çok kullanışlı olabilir.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>Düzenle ve devam et için LINQ desteklenmiyor  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Düzenle ve devam et için LINQ desteklenmiyor  
  Düzenle ve devam et sınırlamaları LINQ sorgularını değişiklikleri destekler. Ayrıntılar için bkz [Çözücü desteklenen değişiklikleri](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

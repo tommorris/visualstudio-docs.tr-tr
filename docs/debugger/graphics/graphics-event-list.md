@@ -1,27 +1,23 @@
 ---
 title: Grafik olay listesi | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 244f7dd8c89eb1dcb15b81bcb20c0db9cb6cf617
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-event-list"></a>Grafik Olay Listesi
 Grafik olay listesi Visual Studio grafik Çözümleyicisi'nde bir çerçeve oyun veya uygulama oluşturulmaya çalışılırken kaydedilmiş Direct3D olayları keşfetmek için kullanın.  
@@ -75,8 +71,8 @@ Grafik olay listesi Visual Studio grafik Çözümleyicisi'nde bir çerçeve oyun
 |----------|-----------------------|  
 |(simge yok)|Genel olay<br /> Değil bir kullanıcı tarafından tanımlanan olay, kullanıcı tanımlı olay grubu veya olay çizin herhangi bir olay.|  
 |![Draw olay simgesi](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Olay çizme<br /> Yakalanan çerçevesinde oluşan bir çizim olay işaretler.|  
-|![Kullanıcı &#45; tanımlanan olay işaretçi simgesi](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Kullanıcı tanımlı olay grubu<br /> Grupları, uygulama tarafından tanımlanan olayları, ilgili.|  
-|![Kullanıcı &#45; tanımlanan olay işaretçi simgesi](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Kullanıcı tanımlı olay işaretçisi<br /> Belirli bir konuma uygulama tarafından tanımlandığı şekilde işaretler.|  
+|![Kullanıcı&#45;olay işaretçi simgesi tanımlanan](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Kullanıcı tanımlı olay grubu<br /> Grupları, uygulama tarafından tanımlanan olayları, ilgili.|  
+|![Kullanıcı&#45;olay işaretçi simgesi tanımlanan](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Kullanıcı tanımlı olay işaretçisi<br /> Belirli bir konuma uygulama tarafından tanımlandığı şekilde işaretler.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Uygulamanızda işaretlenmesi kullanıcı tanımlı olayları  
  Kullanıcı tanımlı olayları uygulamanıza özeldir. Grafik olay listesi içindeki olaylarla uygulamanızda oluşan önemli olayları ilişkilendirmek için bunları kullanabilirsiniz. Örneğin, ilgili olaylar düzenlemek için kullanıcı tanımlı olay gruplar oluşturabilirsiniz — kullanıcı arabirimini oluşturmak olanlar gibi — böylece daha kolay olay listesine göz atabilir veya işaretçileri nesneleri belirli bir türde olduğunda oluşturabilirsiniz grubu veya Hiyerarşiler olan Grafik etkinliklerini olay listesinde kolayca bulabilmek çizilmiştir.  
@@ -106,7 +102,7 @@ Grafik olay listesi Visual Studio grafik Çözümleyicisi'nde bir çerçeve oyun
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
-##Kaynak geçmiş Visual Studio 2017 ve daha sonraki sürümleri içeren **kaynak geçmişi** penceresi.  İzleme simgesini seçerek ![izleme simgesi](media/gfx_watch.png) bir girişi yanındaki **olay listesi** penceresi getirecek **kaynak geçmişi** penceresi aşağıda gösterildiği:
+## Kaynak geçmiş Visual Studio 2017 ve daha sonraki sürümleri içeren **kaynak geçmişi** penceresi.  İzleme simgesini seçerek ![izleme simgesi](media/gfx_watch.png) bir girişi yanındaki **olay listesi** penceresi getirecek **kaynak geçmişi** penceresi aşağıda gösterildiği:
 
 ![Kaynak geçmişi](media/gfx_diag_resource_history.png)
 

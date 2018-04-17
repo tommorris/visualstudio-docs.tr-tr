@@ -1,28 +1,25 @@
 ---
-title: "Visual Studio'nun verilere bağlı denetimler için resim yazıları nasıl oluşturduğunu özelleştirme | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'nun verilere bağlı denetimler için resim yazıları nasıl oluşturduğunu özelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 60d98d6b8cefc2f7fb7829d841001f92bd9063de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 031301edc2fbf0c9acc08f92d3324160dd5383cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio'nun verilere bağlı denetimler için resim yazıları nasıl oluşturduğunu özelleştirme
 Öğelerden sürüklediğinizde [veri kaynakları penceresi](add-new-data-sources.md) bir tasarımcı bir ayrıcalık oyuna gelir: resim yazısı etiketleri içindeki sütun adlarının yeniden biçimlendirilen daha okunabilir bir dizeye iki veya daha fazla sözcükler olarak bulunan birlikte art arda eklenmiş. İçinde bu etiketler oluşturulur, ayarlayarak şekilde özelleştirebilirsiniz **SmartCaptionExpression**, **SmartCaptionReplacement**, ve **SmartCaptionSuffix** değerler **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data tasarımcıları** kayıt defteri anahtarı.  
@@ -44,14 +41,14 @@ Aşağıdaki tabloda, bu kayıt defteri değerlerini iç varsayılan ayarların�
   
 |Kayıt defteri öğesi|Varsayılan değer|Açıklama|  
 |-------------------|-------------------|-----------------|  
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124; _ +|Bir büyük harf karakter veya alt çizgiyle tarafından izlenen bir küçük harf karakterle eşleşir.|  
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Bir büyük harf karakter veya alt çizgiyle tarafından izlenen bir küçük harf karakterle eşleşir.|  
 |**SmartCaptionReplacement**|$1 $2|$1 ifade ilk parantez içinde eşleşen herhangi bir karakter ve $2 ikinci parantez içinde eşleşen herhangi bir karakteri temsil eder. İlk eşleşmeye, boşluk ve ardından ikinci eşleşme yerini alır.|  
-|**SmartCaptionSuffix**|:|Döndürülen dize eklenmiş bir karakteri temsil eder. Örneğin, resim yazısını ise `Company Name`, sonek kolaylaştırır`Company Name:`|  
+|**SmartCaptionSuffix**|:|Döndürülen dize eklenmiş bir karakteri temsil eder. Örneğin, resim yazısını ise `Company Name`, sonek kolaylaştırır `Company Name:`|  
   
 > [!CAUTION]
 > Kayıt Defteri Düzenleyicisi'nde hiçbir şey yaparken çok dikkatli olmanız gerekir. Düzenlemeye başlamadan önce kayıt defterini yedekleyin. Kayıt Defteri Düzenleyicisi'ni yanlış kullanırsanız, işletim sisteminizi yeniden yüklemenizi gerektirebilecek önemli sorunlara neden olabilir. Microsoft Kayıt Defteri Düzenleyicisi'ni kullanarak neden sorunları çözmek için garanti etmez. Kayıt Defteri Düzenleyicisi'ni kullanım riski size aittir.  
 >   
->  Aşağıdaki Bilgi Bankası makalesi yedekleme, düzenleme ve kayıt defterini geri yüklemek için yönergeleri içerir: [Microsoft Windows kayıt defterinin açıklaması](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb;en-us; 256986)  
+>  Aşağıdaki Bilgi Bankası makalesi yedekleme, düzenleme ve kayıt defterini geri yüklemek için yönergeleri içerir: [Microsoft Windows kayıt defterinin açıklaması](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)  
   
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Veri kaynakları penceresinden akıllı açıklamalı alt yazı davranışını değiştirmek için  
   

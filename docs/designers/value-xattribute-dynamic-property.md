@@ -2,27 +2,23 @@
 title: Değer (XAttribute dinamik özellik) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-designers
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - XAttribute.Value
 apitype: Assembly
 ms.assetid: 019733d2-e050-4120-b537-831cd3fc008e
-caps.latest.revision: 2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4807a84b9e1de5186e72cbe138f0f54e2f33525e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a0ca01f5d7aec5807343b98a3c402a89678fbe88
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="value-xattribute-dynamic-property"></a>Değer (XAttribute dinamik özellik)
 Alır veya XML özniteliğinin değerini ayarlar.  

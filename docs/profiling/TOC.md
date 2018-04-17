@@ -1,6 +1,6 @@
 
 # [Profil oluşturma belgeleri](index.md)
-# Genel Bakış
+# [Genel bakış](profiling-overview.md)
 # Hızlı Başlangıçlar
 ## [Profil oluşturmaya ilk bakış](profiling-feature-tour.md)
 ## [CPU kullanımını analiz etme (yönetilen)](quickstart-cpu-usage-managed.md)
@@ -208,15 +208,15 @@
 ##### [VSPerfASPNETCmd ile hızlı Web sitesi profili oluşturma](rapid-web-site-profiling-with-vsperfaspnetcmd.md)
 ##### [Komut satırından profil oluşturucu örnekleme kullanarak ASP.NET Web uygulamaları için uygulama istatistikleri toplama](collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)
 ###### [Nasıl yapılır: Komut satırını kullanarak uygulama istatistikleri verileri toplamak için bir ASP.NET Web uygulamasına profil oluşturucu ekleme](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)
-##### [Komut satırından profil oluşturucu izleme metodunu kullanarak bir ASP.NET Web uygulaması için ayrıntılı zamanlama verileri toplama](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)
+##### [Komut satırından profil oluşturucu izleme metodunu kullanarak bir ASP.NET Web uygulaması için ayrıntılı zamanlama verileri toplama](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)
 ###### [Nasıl yapılır: Profil oluşturucu ile komut satırını kullanarak statik olarak derlenmiş bir ASP.NET Web uygulamasını izleme ve ayrıntılı zamanlama verileri toplama](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
-###### [Nasıl yapılır: Profil oluşturucu ile komut satırını kullanarak dinamik olarak derlenmiş bir ASP.NET Web uygulamasını izleme ve ayrıntılı zamanlama verileri toplama](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
+###### [Nasıl yapılır: Profil oluşturucu ile komut satırını kullanarak dinamik olarak derlenmiş bir ASP.NET Web uygulamasını izleme ve ayrıntılı zamanlama verileri toplama](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler.md)
 ##### [Profil oluşturucu komut satırını kullanarak bir ASP.NET Web uygulaması için eşzamanlılık verileri toplama](collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)
 ###### [Nasıl yapılır: Profil oluşturucu komut satırını kullanarak eşzamanlılık verileri toplamak için bir ASP.NET Web uygulamasına profil oluşturucu ekleme](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)
 ##### [Profil oluşturucu komut satırını kullanarak bir ASP.NET Web uygulamasından bellek verileri toplama](collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)
 ###### [Nasıl yapılır: Profil oluşturucu komut satırını kullanarak bellek verileri toplamak için bir ASP.NET Web uygulamasına profil oluşturucu ekleme](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)
 ###### [Nasıl yapılır: Profil oluşturucu komut satırını kullanarak statik olarak derlenmiş bir ASP.NET Web uygulamasını izleme ve bellek verileri toplama](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
-###### [Nasıl yapılır: Profil oluşturucu komut satırını kullanarak dinamik olarak derlenmiş bir ASP.NET web uygulamasını izleme ve bellek verileri toplama](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+###### [Nasıl yapılır: Profil oluşturucu komut satırını kullanarak dinamik olarak derlenmiş bir ASP.NET web uygulamasını izleme ve bellek verileri toplama](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
 ##### [Nasıl yapılır: Dinamik olarak derlenmiş ASP.NET Web uygulamalarını izlemek ve profilini oluşturmak için Web.Config dosyalarını değiştirme](how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications.md)
 #### [Komut satırından hizmetler profili oluşturma](command-line-profiling-of-services.md)
 ##### [Profil oluşturucu örnekleme metodunu kullanarak hizmetler için uygulama istatistikleri toplama](collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)

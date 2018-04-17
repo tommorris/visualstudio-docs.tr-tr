@@ -1,12 +1,10 @@
 ---
-title: "CA1051: görünür örnek alanlarını bildirme | Microsoft Docs"
-ms.custom: 
+title: 'CA1051: görünür örnek alanlarını bildirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1051
 - DoNotDeclareVisibleInstanceFields
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1051
 - DoNotDeclareVisibleInstanceFields
 ms.assetid: 2805376c-824c-462c-81d1-c51aaf7cabe7
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a6a22653abb4b7112e1778bf671f368e8ee28894
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c89e5113e787ca59b4892c64de0077bd27204802
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Görünür örnek alanlarını bildirme
 |||  
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
  Bu kuraldan uyarıyı bastırmayın. Dışarıdan görünür alanları özelliklerine kullanılamaz avantajları sağlamaz. Ayrıca, genel alanlar tarafından korunamaz [bağlantı talepleri](/dotnet/framework/misc/link-demands). Bkz: [CA2112: güvenli türler alanları değil kullanıma](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir tür gösterir (`BadPublicInstanceFields`), bu kural ihlal ediyor. `GoodPublicInstanceFields`Düzeltilmiş kodu gösterir.  
+ Aşağıdaki örnek, bir tür gösterir (`BadPublicInstanceFields`), bu kural ihlal ediyor. `GoodPublicInstanceFields` Düzeltilmiş kodu gösterir.  
   
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]  
   

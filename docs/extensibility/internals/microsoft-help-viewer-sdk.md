@@ -1,23 +1,21 @@
 ---
-title: "Microsoft Yardım Görüntüleyicisi SDK | Microsoft Docs"
-ms.custom: 
+title: Microsoft Yardım Görüntüleyicisi SDK | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
-caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7c15956bc861f9eb20267dc97446cf5ea49cae31
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e3ddc23ab56df017ef0a37c56cd5b0a81ee33a07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK
 Bu makalede, Visual Studio Yardım Görüntüleyicisi tümleştiricileri için aşağıdaki görevleri içerir:  
@@ -134,17 +132,17 @@ Ardından, nasıl konu (kendi kendini veya markalı), sunulacak nasıl tanımlam
   
 Konu gövdesi (üstbilgi ve altbilgi dahil değil) sayfası bağlantıları, bir not bölümü, daraltılabilir bir alanla, bir kod parçacığı ve dil belirli metnin bir bölümünü içerir.  Sunulan konunun bu alanları hakkında bilgi için markalama bölümüne bakın.  
   
-1.  Bir konu başlığı etiketi ekleyin:`<div class="title">Contoso Topic 4</div>`  
+1.  Bir konu başlığı etiketi ekleyin:  `<div class="title">Contoso Topic 4</div>`  
   
-2.  Not bölümüne ekleyin:`<div class="alert"> add your table tag and text </div>`  
+2.  Not bölümüne ekleyin: `<div class="alert"> add your table tag and text </div>`  
   
-3.  Daraltılabilir bir alanla ekleyin:`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`  
+3.  Daraltılabilir bir alanla ekleyin:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`  
   
-4.  Kod parçacığını ekleyin:`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`  
+4.  Kod parçacığını ekleyin:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`  
   
 5.  Kod dili belirli bir metni ekleyin: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` bu devLangnu Not = diğer diller girmenize olanak sağlar. Örneğin, devLangnu = "Fortran" Fortran görüntüler, kod parçacığında DisplayLanguage Fortran =  
   
-6.  Sayfa bağlantılarının ekleyin:`<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`  
+6.  Sayfa bağlantılarının ekleyin: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`  
   
 > [!NOTE]
 >  Not: Desteklenmeyen yeni "için görüntüleme dilini" (örneğin, F #, Cobol, Fortran) kod renklendirme kod parçacığında bulunan tek renkli olacaktır.  
@@ -354,20 +352,20 @@ Aşağıdaki tabloda, köşeli ayraç görünen herhangi bir dize tarafından ta
   
 |Özellik (HTML gösterim)|Açıklama|  
 |--------------------------------------|-----------------|  
-|\<Meta name="Microsoft.Help.Locale" içerik = "[kodu dili]" / >|Bu konu için bir yerel ayarlar. Bu etiket bir konuda kullandıysanız, yalnızca bir kez kullanılmalıdır ve diğer Microsoft Help etiketleri eklenmesi gerekir. Bu etiket kullanılmazsa konunun gövde metni belirtilmişse, ürün yerel ayar ile ilişkili bir sözcük ayırıcı kullanarak dizinlenir; Aksi takdirde, en-us sözcük ayırıcı kullanılır. Bu etiket ISOC RFC 4646 için uygundur. Microsoft Help düzgün çalıştığından emin olmak için genel Language özniteliği yerine bu özelliği kullanın.|  
-|\<Meta name="Microsoft.Help.TopicLocale" içerik = "[kodu dili]" / >|Başka yerel ayarlara de kullanıldığında bu konu için bir yerel ayarlar. Bu etiket bir konuda kullanılırsa, yalnızca bir kez kullanılmalıdır. Katalog içeriği birden fazla dilde içerdiğinde bu etiketi kullanın. Birden çok konu katalogdaki aynı Kimliğe sahip olabilir, ancak her bir benzersiz TopicLocale belirtmeniz gerekir. Yerel katalog eşleşen bir TopicLocale belirtir konu içeriği tablosunda görüntülenen konu. Bununla birlikte, konu tüm dil sürümlerini arama sonuçlarında görüntülenir.|  
-|\<başlık > [başlık] \< /title >|Bu konu başlığı belirtir. Bu etiketi gereklidir ve yalnızca bir kez bir konuda kullanılması gerekir. Konu gövdesi bir başlık içermiyorsa \<div > bölümü, bu başlık, konu ve içindekiler görüntülenir.|  
-|\<Meta name = "Microsoft.Help.Keywords" içerik = "[aKeywordPhrase]" / >|Yardım Görüntüleyicisi'ni dizin bölmesinde görüntülenen bir bağlantı metnini belirtir. Bağlantı tıklatıldığında konu görüntülenir. Bir konu için birden çok dizin anahtar sözcükleri belirtebilir veya bağlantıları bu konuya dizinde görünmesini istemiyorsanız bu etiketi atlayabilirsiniz. Bu özellik için Yardım'ın önceki sürümlerinden "K" anahtar sözcükleri dönüştürülebilir.|  
-|\<Meta name="Microsoft.Help.Id" içerik = "[TopicID]" / >|Bu konuda tanımlayıcısını ayarlar. Bu etiketi gereklidir ve yalnızca bir kez bir konuda kullanılması gerekir. Kimliği kataloğunda aynı yerel ayara sahip konuları arasında benzersiz olması gerekir. Başka bir konuda, bu kimliği kullanarak bu konuda bir bağlantı oluşturabilirsiniz|  
-|\<Meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ >|Bu konu için F1 anahtar sözcüğü belirtir. Bir konu için birden çok F1 anahtar sözcükleri belirtebilir veya bir uygulamanın kullanıcı F1 tuşuna bastığında görüntülenmesi için bu konunun istemiyorsanız bu etiketi atlayabilirsiniz. Genellikle, yalnızca bir F1 anahtar sözcüğü bir konu için belirtilir. Bu özellik için Yardım'ın önceki sürümlerinden "F" anahtar sözcükleri dönüştürülebilir.|  
-|\<Meta adı "Açıklama" Content = "[konu açıklama]" / >|Bu konudaki içeriğin kısa bir özetini sağlar. Bu etiket bir konuda kullanılırsa, yalnızca bir kez kullanılmalıdır. Bu özellik, doğrudan sorgu kitaplığı tarafından erişilir; Dizin dosyasında depolanmaz.|  
+|\< Meta name="Microsoft.Help.Locale" içerik = "[kodu dili]" / >|Bu konu için bir yerel ayarlar. Bu etiket bir konuda kullandıysanız, yalnızca bir kez kullanılmalıdır ve diğer Microsoft Help etiketleri eklenmesi gerekir. Bu etiket kullanılmazsa konunun gövde metni belirtilmişse, ürün yerel ayar ile ilişkili bir sözcük ayırıcı kullanarak dizinlenir; Aksi takdirde, en-us sözcük ayırıcı kullanılır. Bu etiket ISOC RFC 4646 için uygundur. Microsoft Help düzgün çalıştığından emin olmak için genel Language özniteliği yerine bu özelliği kullanın.|  
+|\< Meta name="Microsoft.Help.TopicLocale" içerik = "[kodu dili]" / >|Başka yerel ayarlara de kullanıldığında bu konu için bir yerel ayarlar. Bu etiket bir konuda kullanılırsa, yalnızca bir kez kullanılmalıdır. Katalog içeriği birden fazla dilde içerdiğinde bu etiketi kullanın. Birden çok konu katalogdaki aynı Kimliğe sahip olabilir, ancak her bir benzersiz TopicLocale belirtmeniz gerekir. Yerel katalog eşleşen bir TopicLocale belirtir konu içeriği tablosunda görüntülenen konu. Bununla birlikte, konu tüm dil sürümlerini arama sonuçlarında görüntülenir.|  
+|\< başlık > [başlık] \< /title >|Bu konu başlığı belirtir. Bu etiketi gereklidir ve yalnızca bir kez bir konuda kullanılması gerekir. Konu gövdesi bir başlık içermiyorsa \<div > bölümü, bu başlık, konu ve içindekiler görüntülenir.|  
+|\< Meta name = "Microsoft.Help.Keywords" içerik = "[aKeywordPhrase]" / >|Yardım Görüntüleyicisi'ni dizin bölmesinde görüntülenen bir bağlantı metnini belirtir. Bağlantı tıklatıldığında konu görüntülenir. Bir konu için birden çok dizin anahtar sözcükleri belirtebilir veya bağlantıları bu konuya dizinde görünmesini istemiyorsanız bu etiketi atlayabilirsiniz. Bu özellik için Yardım'ın önceki sürümlerinden "K" anahtar sözcükleri dönüştürülebilir.|  
+|\< Meta name="Microsoft.Help.Id" içerik = "[TopicID]" / >|Bu konuda tanımlayıcısını ayarlar. Bu etiketi gereklidir ve yalnızca bir kez bir konuda kullanılması gerekir. Kimliği kataloğunda aynı yerel ayara sahip konuları arasında benzersiz olması gerekir. Başka bir konuda, bu kimliği kullanarak bu konuda bir bağlantı oluşturabilirsiniz|  
+|\< Meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ >|Bu konu için F1 anahtar sözcüğü belirtir. Bir konu için birden çok F1 anahtar sözcükleri belirtebilir veya bir uygulamanın kullanıcı F1 tuşuna bastığında görüntülenmesi için bu konunun istemiyorsanız bu etiketi atlayabilirsiniz. Genellikle, yalnızca bir F1 anahtar sözcüğü bir konu için belirtilir. Bu özellik için Yardım'ın önceki sürümlerinden "F" anahtar sözcükleri dönüştürülebilir.|  
+|\< Meta adı "Açıklama" Content = "[konu açıklama]" / >|Bu konudaki içeriğin kısa bir özetini sağlar. Bu etiket bir konuda kullanılırsa, yalnızca bir kez kullanılmalıdır. Bu özellik, doğrudan sorgu kitaplığı tarafından erişilir; Dizin dosyasında depolanmaz.|  
  Meta name="Microsoft.Help.TocParent" içerik = "[parent_Id]" / >|Bu konunun üst konu içindekilerde belirtir. Bu etiketi gereklidir ve yalnızca bir kez bir konuda kullanılması gerekir. Üst Microsoft.Help.Id değerdir. Bir konu tablo yalnızca tek bir konumda İçindekiler olabilir. "-1" İçindekiler kökü konu kimliği olarak kabul edilir. İçinde [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], o sayfası Yardım Görüntüleyici giriş sayfasıdır. Bu, özellikle TocParent = 1, en üstte düzeyi gösterilmediğini emin olmak için bazı konular eklediğimiz aynı nedenidir. Yardım Görüntüleyici giriş sayfası bir sistem sayfasıdır ve bu nedenle olmayan tarafından değiştirilebilir. -1 Kimliğine sahip bir sayfa eklemek bir VSP çalışırsa, içerik kümesine eklenir, ancak Yardım Görüntüleyici her zaman sistem sayfası - Yardım Görüntüleyicisi giriş kullanır|  
-|\<Meta name="Microsoft.Help.TocOrder" içerik = "[pozitif tamsayı]" / >|İçindekiler tablosuna göre kendi eş konular bu konuda göründüğü belirtir. Bu etiketi gereklidir ve yalnızca bir kez bir konuda kullanılması gerekir. Bir tamsayı değerdir. Bir alt değeri tamsayı belirten bir konu daha yüksek değer tamsayı belirten bir konu görünür.|  
-|\<Meta name="Microsoft.Help.Product" içerik = "[ürün kodu]" / >|Bu konuda açıklanan ürün belirtir. Bu etiket bir konuda kullanılırsa, yalnızca bir kez kullanılmalıdır. Bu bilgiler ayrıca Yardım dizin oluşturucu geçirilen parametre olarak sağlanabilir.|  
-|\<Meta name="Microsoft.Help.ProductVersion" içerik = "[sürüm numarası]" / >|Bu konuda açıklanan ürün sürümünü belirtir. Bu etiket bir konuda kullanılırsa, yalnızca bir kez kullanılmalıdır. Bu bilgiler ayrıca Yardım dizin oluşturucu geçirilen parametre olarak sağlanabilir.|  
-|\<Meta name="Microsoft.Help.Category" içerik = "[dize]" / >|Ürünü tarafından içerik alt bölümleri tanımlamak için kullanılır. Bir konu için birden çok alt bölümleri tanımlamak veya tüm alt bölümleri tanımlamak için bağlantıları istemiyorsanız bu etiketi atlayabilirsiniz. Bu etiket bir konuda Yardım'ın önceki bir sürümden dönüştürüldüğünde TargetOS ve TargetFrameworkMoniker öznitelikleri depolamak için kullanılır. İçerik AttributeName:AttributeValue biçimidir.|  
-|\<Meta name="Microsoft.Help.TopicVersion içerik ="[konu sürüm numarası]"/ >|Birden çok sürümü katalogdaki varken bu konuyu sürümünü belirtir. Microsoft.Help.Id benzersiz olması garanti edilmemiştir, bir konu birden fazla sürümünü katalogdaki, örneğin, bir katalog bir konu .NET Framework 3.5 ve bir konu için .NET Framework 4 için içerir ve her ikisi de aynı mikro sahip olduğunda mevcut olduğunda bu etiketi gereklidir çünkü yazılım. Help.Id.|  
-|\<Meta adı "SelfBranded" content = "[TRUE veya false değerini]" = / >|Bu konuda Yardım Kitaplığı Yöneticisi başlatma markalama paketinin veya konuya belirli bir marka paket kullanıp kullanmadığını belirtir. Bu etiket ya da TRUE olmalıdır ya da yanlış. Konu diğer içerik işleme farklıysa bile tasarlandığı gibi işlenir böylece Yardım Kitaplığı Yöneticisi başlatıldığında ayarlanır markalama paketi ilişkili konu için markalama paketinin geçersiz kılmaları sonra TRUE ise. FALSE ise, geçerli konuda Yardım Kitaplığı Yöneticisi başlatıldığında ayarlanır markalama paketi göre işlenir. Varsayılan olarak, Yardım Kitaplığı Yöneticisi SelfBranded değişkeni TRUE olarak bildirilir sürece false olarak kendi kendine marka varsayar; Bu nedenle, bildirmeniz gerekmez \<meta adı "SelfBranded" Content = "FALSE" / >.|  
+|\< Meta name="Microsoft.Help.TocOrder" içerik = "[pozitif tamsayı]" / >|İçindekiler tablosuna göre kendi eş konular bu konuda göründüğü belirtir. Bu etiketi gereklidir ve yalnızca bir kez bir konuda kullanılması gerekir. Bir tamsayı değerdir. Bir alt değeri tamsayı belirten bir konu daha yüksek değer tamsayı belirten bir konu görünür.|  
+|\< Meta name="Microsoft.Help.Product" içerik = "[ürün kodu]" / >|Bu konuda açıklanan ürün belirtir. Bu etiket bir konuda kullanılırsa, yalnızca bir kez kullanılmalıdır. Bu bilgiler ayrıca Yardım dizin oluşturucu geçirilen parametre olarak sağlanabilir.|  
+|\< Meta name="Microsoft.Help.ProductVersion" içerik = "[sürüm numarası]" / >|Bu konuda açıklanan ürün sürümünü belirtir. Bu etiket bir konuda kullanılırsa, yalnızca bir kez kullanılmalıdır. Bu bilgiler ayrıca Yardım dizin oluşturucu geçirilen parametre olarak sağlanabilir.|  
+|\< Meta name="Microsoft.Help.Category" içerik = "[dize]" / >|Ürünü tarafından içerik alt bölümleri tanımlamak için kullanılır. Bir konu için birden çok alt bölümleri tanımlamak veya tüm alt bölümleri tanımlamak için bağlantıları istemiyorsanız bu etiketi atlayabilirsiniz. Bu etiket bir konuda Yardım'ın önceki bir sürümden dönüştürüldüğünde TargetOS ve TargetFrameworkMoniker öznitelikleri depolamak için kullanılır. İçerik AttributeName:AttributeValue biçimidir.|  
+|\< Meta name="Microsoft.Help.TopicVersion içerik ="[konu sürüm numarası]"/ >|Birden çok sürümü katalogdaki varken bu konuyu sürümünü belirtir. Microsoft.Help.Id benzersiz olması garanti edilmemiştir, bir konu birden fazla sürümünü katalogdaki, örneğin, bir katalog bir konu .NET Framework 3.5 ve bir konu için .NET Framework 4 için içerir ve her ikisi de aynı mikro sahip olduğunda mevcut olduğunda bu etiketi gereklidir çünkü yazılım. Help.Id.|  
+|\< Meta adı "SelfBranded" content = "[TRUE veya false değerini]" = / >|Bu konuda Yardım Kitaplığı Yöneticisi başlatma markalama paketinin veya konuya belirli bir marka paket kullanıp kullanmadığını belirtir. Bu etiket ya da TRUE olmalıdır ya da yanlış. Konu diğer içerik işleme farklıysa bile tasarlandığı gibi işlenir böylece Yardım Kitaplığı Yöneticisi başlatıldığında ayarlanır markalama paketi ilişkili konu için markalama paketinin geçersiz kılmaları sonra TRUE ise. FALSE ise, geçerli konuda Yardım Kitaplığı Yöneticisi başlatıldığında ayarlanır markalama paketi göre işlenir. Varsayılan olarak, Yardım Kitaplığı Yöneticisi SelfBranded değişkeni TRUE olarak bildirilir sürece false olarak kendi kendine marka varsayar; Bu nedenle, bildirmeniz gerekmez \<meta adı "SelfBranded" Content = "FALSE" / >.|  
   
 ### <a name="creating-a-branding-package"></a>Marka paket oluşturma  
 Visual Studio sürümünü Isolated ve tümleşik Kabuk Visual Studio iş ortakları için de dahil olmak üzere farklı Visual Studio ürün sayısı kapsar.  Bu ürünlerinin her biri bazı konu tabanlı Yardım içeriği desteği, ürüne özgü markalama derecesini gerektirir.  ISO Kabuk sarmalar, SQL Studio'yu kendi benzersiz Yardım içerik için her konuda markalama gerekirken Örneğin, Visual Studio konuları tutarlı marka sunuyu olması gerekir.  Tümleşik Kabuk iş ortağı kendi konu markalama korurken Visual Studio ürün Yardım içeriği üst öğe içinde olması için Yardım konuları isteyebilirsiniz.  
@@ -559,22 +557,22 @@ Marka paket anahtar bilgileri örneğin hangi içerik kümeleri yüklü açıkla
 |-|-|-|  
 |**Dosya**|**Kullanın**|**Görüntülenen içerik kaynağı**|  
 |homepage.htm|Bu, şu anda yüklü olan içeriğin ve herhangi bir iletiyi içeriklerini hakkında kullanıcıya sunmak uygun görüntüleyen bir sayfasıdır.  Bu dosyanın ek meta veri özniteliği "Microsoft.Help.Id" içerik yok = yerel içerik TOC üstünde bu içerik koyan "-" 1.||  
-||< META_HOME_PAGE_TITLE_ADD / >|Branding.XML, etiket \<HomePageTitle >|  
-||< HOME_PAGE_INTRODUCTION_SECTION_ADD / >|Branding.XML, etiket \<HomePageIntroduction >|  
-||< HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / >|Branding.XML, etiket \<HomePageContentInstallText >|  
-||< HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / >|Bölüm Branding.xml etiketi başlık\<HomePageInstalledBooks >, uygulamasından, oluşturulan veri \<HomePageNoBooksInstalled > hiçbir books yüklü olduğunda.|  
-||< HOME_PAGE_SETTINGS_SECTION_ADD / >|Bölüm Branding.xml etiketi başlık \<HomePageHelpSettings >, bölüm metin \<HomePageHelpSettingsText >.|  
+||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, etiket \<HomePageTitle >|  
+||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, etiket \<HomePageIntroduction >|  
+||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.XML, etiket \<HomePageContentInstallText >|  
+||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|Bölüm Branding.xml etiketi başlık\<HomePageInstalledBooks >, uygulamasından, oluşturulan veri \<HomePageNoBooksInstalled > hiçbir books yüklü olduğunda.|  
+||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|Bölüm Branding.xml etiketi başlık \<HomePageHelpSettings >, bölüm metin \<HomePageHelpSettingsText >.|  
 |topiccorrupted.htm|Bir konu yerel kümesindeki mevcut olduğunda, ancak herhangi bir nedenle görüntülenemiyor (bozuk içeriği).||  
-||< META_TOPIC_CORRUPTED_TITLE_ADD / >|Branding.XML, etiket \<TopicCorruptedTitle >|  
-||< TOPIC_CORRUPTED_SECTION_ADD / >|Branding.XML, etiket \<TopicCorruptedViewOnlineText >|  
+||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.XML, etiket \<TopicCorruptedTitle >|  
+||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.XML, etiket \<TopicCorruptedViewOnlineText >|  
 |topicnotfound.htm|Ne zaman bir konu yerel içeriği çevrimiçi ayarlayın ya da kullanılabilir bulunamadı||  
-||< META_TOPIC_NOT_FOUND_TITLE_ADD / >|Branding.XML, etiket \<TopicNotFoundTitle >|  
-||< META_TOPIC_NOT_FOUND_ID_ADD / >|Branding.XML, etiket \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|  
-||< TOPIC_NOT_FOUND_SECTION_ADD / >|Branding.XML, etiket \<TopicNotFoundText >|  
+||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.XML, etiket \<TopicNotFoundTitle >|  
+||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Branding.XML, etiket \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|  
+||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.XML, etiket \<TopicNotFoundText >|  
 |contentnotinstalled.htm|Ürün için yüklü yerel içerik olmadığında.||  
-||< META_CONTENT_NOT_INSTALLED_TITLE_ADD / >|Branding.XML, etiket \<ContentNotInstalledTitle >|  
-||< META_CONTENT_NOT_INSTALLED_ID_ADD / >|Branding.XML, etiket \<ContentNotInstalledDownloadContentText >|  
-||< CONTENT_NOT_INSTALLED_SECTION_ADD / >|Branding.XML, etiket \<ContentNotInstalledText >|  
+||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.XML, etiket \<ContentNotInstalledTitle >|  
+||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.XML, etiket \<ContentNotInstalledDownloadContentText >|  
+||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.XML, etiket \<ContentNotInstalledText >|  
   
 **CSS dosyaları**  
   
@@ -737,7 +735,7 @@ Yalıtılmış kabuk uzantısı oluşturmak için:
   
 1.  Visual Studio'da altında **dosya**, seçin **yeni proje**altında **diğer proje türleri** seçin **genişletilebilirlik**ve ardından seçin **Visual Studio Kabuğu yalıtılmış**. Proje adı `ContosoHelpShell`) Visual Studio yalıtılmış Kabuk şablonunu temel alan bir genişletilebilirlik projesi oluşturmak için.  
   
-2.  Çözüm Gezgini'nde ApplicationCommands.vsct ContosoHelpShellUI projede kaynak dosyaları klasörü açın. Bu satırı ("No_Help" Ara) kılınmıştır emin olun:`<!-- <define name="No_HelpMenuCommands"/> -->`  
+2.  Çözüm Gezgini'nde ApplicationCommands.vsct ContosoHelpShellUI projede kaynak dosyaları klasörü açın. Bu satırı ("No_Help" Ara) kılınmıştır emin olun: `<!-- <define name="No_HelpMenuCommands"/> -->`  
   
 3.  Derlemek ve çalıştırmak için F5 tuşuna seçin **hata ayıklama**. Yalıtılmış Kabuk IDE Deneysel örneğini seçin **yardımcı** menüsü. Olduğundan emin olun **Yardımı Görüntüle**, **ekleme ve kaldırma Yardım içeriğini**, ve **Yardım tercih kümesini** komutlar görüntülenir.  
   
@@ -802,7 +800,7 @@ Bu gibi dağıttıysanız test etmek için:
   
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15  
   
-     [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]Tümleşik Kabuk:  
+     [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Tümleşik Kabuk:  
   
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-ABD  
   
@@ -833,4 +831,4 @@ Ek Yardım almak için deneyin [MSDN Geliştirici belgeleri ve Yardım sistemi f
   
 Sorun, bölme üzerinde güncelleştirmeleri lütfen bkz. [Yardım Görüntüleyicisi Benioku dosyası](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   
-Yardım Görüntüleyicisi PM takım doğrudan başvurmak için e-posta Gönderhlpfdbk@microsoft.com
+Yardım Görüntüleyicisi PM takım doğrudan başvurmak için e-posta Gönder hlpfdbk@microsoft.com

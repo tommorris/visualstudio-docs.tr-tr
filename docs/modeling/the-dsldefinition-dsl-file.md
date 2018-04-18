@@ -1,23 +1,21 @@
 ---
 title: DslDefinition.dsl dosya | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92bd27f1590aae455c0d5bba540720421338b63c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 361f723997f898091b05a80cfb55c9cc5680ceb3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl Dosyası
 Bu konuda Dsl projenin DslDefinition.dsl dosyasında yapısını açıklayan bir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tanımlar çözüm bir *etki alanına özgü dil*. Sınıflar ve ilişkiler diyagram, şekil, bağlayıcılar, seri hale getirme biçimi ile birlikte bir etki alanına özgü dil DslDefinition.dsl dosya tanımlar ve **araç** etki alanına özgü dil ve kendi düzenleme araçları. Bir etki alanına özgü dil çözümde bu araçlara tanımlayan kodu DslDefinition.dsl dosyasındaki bilgiler göre oluşturulur.  
@@ -38,7 +36,7 @@ Bu konuda Dsl projenin DslDefinition.dsl dosyasında yapısını açıklayan bir
  Bu bölümde her ilişki modelde tanımlar. Kaynak ve hedef bir ilişkinin iki tarafında temsil eder.  
   
  Türler  
- Bu bölümde, her tür ve ad alanını tanımlar. Etki alanı özellikleri, iki tür vardır. `DomainEnumerations`modelde tanımlanır ve DomainModel.cs türleri oluşturur. `ExternalTypes`başka bir yerde tanımlanan türlerini başvurun (gibi `String` veya `Int32`) ve hiçbir şey oluşturmaz.  
+ Bu bölümde, her tür ve ad alanını tanımlar. Etki alanı özellikleri, iki tür vardır. `DomainEnumerations` modelde tanımlanır ve DomainModel.cs türleri oluşturur. `ExternalTypes` başka bir yerde tanımlanan türlerini başvurun (gibi `String` veya `Int32`) ve hiçbir şey oluşturmaz.  
   
  Şekiller  
  Bu bölümde modeli Tasarımcısı'nda nasıl göründüğünü açıklayan şekiller tanımlar. Bu geometrik şekilleri modelin diyagramı bölümünde sınıflarda eşlenir.  
@@ -135,7 +133,7 @@ Bu konuda Dsl projenin DslDefinition.dsl dosyasında yapısını açıklayan bir
 </DomainClass>  
 ```  
   
- `NamedElement`bazı başka sınıfların gibi tabanıdır `Component`, ek olarak kendi özellikleri olan `Name` kaynağından devralındı özelliği `NamedElement`. BaseClass alt düğüm ad başvurusu içeriyor. Başvurulan sınıf aynı ad alanında olduğundan, yalnızca kendi ad ad gereklidir:  
+ `NamedElement` bazı başka sınıfların gibi tabanıdır `Component`, ek olarak kendi özellikleri olan `Name` kaynağından devralındı özelliği `NamedElement`. BaseClass alt düğüm ad başvurusu içeriyor. Başvurulan sınıf aynı ad alanında olduğundan, yalnızca kendi ad ad gereklidir:  
   
 ```  
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">  
@@ -473,7 +471,7 @@ Bu konuda Dsl projenin DslDefinition.dsl dosyasında yapısını açıklayan bir
       <XmlClassData ...>...</XmlClassData>  
 ```  
   
--   ConnectorHasDecorators arasında katıştırma ilişkisi olduğundan `Connector` ve `Decorator`. `UseFullForm`İlişki adı, her bağlantı için özellikler listesini ile bağlayıcı nesnesinden görüntülenmemesini ayarlandı. Ancak, `OmitElement` de ayarlayın böylece hiçbir `RoleElementName` içinde katıştırılmış birden çok bağlantı barındırır `Connector`:  
+-   ConnectorHasDecorators arasında katıştırma ilişkisi olduğundan `Connector` ve `Decorator`. `UseFullForm` İlişki adı, her bağlantı için özellikler listesini ile bağlayıcı nesnesinden görüntülenmemesini ayarlandı. Ancak, `OmitElement` de ayarlayın böylece hiçbir `RoleElementName` içinde katıştırılmış birden çok bağlantı barındırır `Connector`:  
   
 ```  
 <Connector Name="AssociationLink" ...>  
@@ -489,7 +487,7 @@ Bu konuda Dsl projenin DslDefinition.dsl dosyasında yapısını açıklayan bir
 ## <a name="shapes-and-connectors"></a>Şekiller ve bağlayıcılar  
  Şekil ve bağlayıcı tanımları, aşağıdaki ek etki alanı sınıflardan öznitelikler ve alt düğümleri devral:  
   
--   `Color`ve `Line``Style` öznitelikleri.  
+-   `Color` ve `Line``Style` öznitelikleri.  
   
 -   **ExposesFillColorAsProperty** ve birkaç benzer öznitelikleri. Bu Boolean öznitelikleri kullanıcı tarafından karşılık gelen özellik değişken yapın. Genellikle, bir dil kullanıcı diyagramdaki bir şekli tıkladığında özellikler görünen **özellikleri** penceresinde bu şeklin eşlendiği etki alanı sınıf örneği bulunur. Varsa `ExposesFillColorAsProperty` şeklin bir özelliği de görünen true olarak ayarlanır.  
   

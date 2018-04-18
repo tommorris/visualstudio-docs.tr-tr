@@ -328,7 +328,7 @@ Kodunuz boyunca bağımlılıkları anlamak istediğinizde, kod haritalarını o
 
 -   Otomatik ile üst öğelerinin ekleme devre dışı bırakma **dahil üst** kod Haritası araç çubuğunda.  
 
--   Doğrudan düğümleri ve gerekli olmayan bağlantıları kaldırmak için kod Haritası dosyasını düzenleyin. Harita değiştirme, arka plandaki kod etkilemez. Bkz: [Özelleştir kod eşlemeleri DGML dosyalarını düzenleyerek](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+-   Doğrudan düğümleri ve gerekli olmayan bağlantıları kaldırmak için kod Haritası dosyasını düzenleyin. Harita değiştirme, arka plandaki kod etkilemez. Bkz: [DGML dosyalarını düzenleyerek kod haritalarını özelleştirme](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
 
  ![Atla yapı ve dahil üst düğmeleri](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
 

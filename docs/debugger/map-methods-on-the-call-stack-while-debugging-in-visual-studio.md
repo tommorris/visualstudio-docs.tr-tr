@@ -2,8 +2,7 @@
 title: Çağrı yığını visual haritasını oluşturmak | Microsoft Docs
 ms.custom: ''
 ms.date: 05/18/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -32,11 +31,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cde16c31cfb05c07152bb4c6d40fefa4d44fe256
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9891686206e8780ebd25082cffb7479d26c6dfba
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Visual Studio kuruluş içinde hata ayıklarken çağrı yığını visual haritasını oluşturmak
 Hatalarını ayıkladığınız sırada görsel olarak çağrı yığınını izleme için bir kod Haritası oluşturun. Hataları bulmaya odaklanabilmeniz amacıyla kodun ne yaptığını izlemek için harita üzerine not alabilirsiniz.

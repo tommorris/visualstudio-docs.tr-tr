@@ -2,8 +2,7 @@
 title: 'Nasıl yapılır: yüksek performanslı kümede hata ayıklama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d90037fbf147dd0234ee356f217ab97e5af87a01
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97e692d4d376473f3eaf283a53117d0bf343ea71
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Nasıl Yapılır: Yüksek Performanslı Kümede Hata Ayıklama
 Bir çoklu işlem programı yüksek performanslı kümede hata ayıklama uzak bir bilgisayarda sıradan bir program hata ayıklama gibi değildir. Ancak, bazı ek noktalar vardır. Genel Uzaktan Kurulum gereksinimleri için bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md).  

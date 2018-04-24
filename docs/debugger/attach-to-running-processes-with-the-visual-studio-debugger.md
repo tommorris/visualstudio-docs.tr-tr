@@ -2,8 +2,7 @@
 title: Visual Studio hata ayıklayıcısı ile çalıştırma işlemine iliştirme | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -30,11 +29,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b726cd5d29093d88e27e7de6bd5a22fcb491d20
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe345773cfa4a91789681969623e2174db60c54c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı ile Çalıştırma İşlemleri İliştirme
 Yerel veya uzak bilgisayarda çalışan bir işlemi için Visual Studio hata ayıklayıcısı ekleyebilirsiniz. İşlemin çalıştığı sonra tıklayın **hata ayıklama > ekleme işlemi için** (veya basın **CTRL + ALT + P**) açmak için **ekleme işlemi için** iletişim kutusu.

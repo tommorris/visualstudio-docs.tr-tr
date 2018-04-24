@@ -2,8 +2,7 @@
 title: Uzaktan hata ayıklama Visual C++ projesinde | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df0caacf8d3d99117208ce197e075f20f6df8b5a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 334a0b964033282458c211d69af30aad20dbd6bc
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Uzaktan Visual C++ projesinde Visual Studio'da hata ayıklama
 Farklı bir bilgisayara Visual Studio uygulama hata ayıklama, yükleme ve uygulamanızı dağıtacağı bilgisayarda Uzak araçları çalıştırmak için projenizi Visual Studio'dan uzak bilgisayara bağlanın ve ardından dağıtmak ve uygulamanızı çalıştırmak için yapılandırın.

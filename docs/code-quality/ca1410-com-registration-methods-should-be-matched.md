@@ -1,10 +1,8 @@
 ---
-title: 'CA1410: COM kayıt yöntemleri eşleştirilmesini | Microsoft Docs'
-ms.custom: ''
+title: 'CA1410: COM kayıt yöntemleri eşleşmelidir'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1410
 - ComRegistrationMethodsShouldBeMatched
@@ -17,42 +15,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 431a85cceccee5114e138de108d8d222f0648065
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 216b500d243a0ffd51cd98e55f28b847c9804f4d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: COM kayıt yöntemleri eşleşmelidir
-|||  
-|-|-|  
-|TypeName|ComRegistrationMethodsShouldBeMatched|  
-|CheckId|CA1410|  
-|Kategori|Microsoft.Interoperability|  
-|Yeni Değişiklik|Bölünemez|  
-  
-## <a name="cause"></a>Sebep  
- Bir tür ile işaretli bir yöntem bildirir <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> özniteliği ancak ile işaretli bir yöntem bildirmiyor <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> özniteliği veya tam tersi.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Bileşen Nesne Modeli (COM) istemcilerin oluşturmak bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] türü, türü önce kaydedilmesi gerekir. Kullanılabilirse, ile işaretli bir yöntem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> öznitelik kullanıcı tarafından belirtilen kodu çalıştırmak için kayıt işlemi sırasında çağrılır. İle işaretlenen karşılık gelen bir yöntemi <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> özniteliği kayıt yöntemi operations tersine çevirmek için kayıt silme işlemi sırasında çağrılır.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlal düzeltmek için karşılık gelen bir kayıt veya silme yöntemi ekleyin.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu kuraldan uyarıyı bastırmayın.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek kuralını ihlal eden bir tür gösterir. Açıklamalı kod ihlali için düzeltmeyi gösterir.  
-  
+|||
+|-|-|
+|TypeName|ComRegistrationMethodsShouldBeMatched|
+|CheckId|CA1410|
+|Kategori|Microsoft.Interoperability|
+|Yeni Değişiklik|Bölünemez|
+
+## <a name="cause"></a>Sebep
+ Bir tür ile işaretli bir yöntem bildirir <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> özniteliği ancak ile işaretli bir yöntem bildirmiyor <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> özniteliği veya tam tersi.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Bileşen Nesne Modeli (COM) istemcilerin oluşturmak bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] türü, türü önce kaydedilmesi gerekir. Kullanılabilirse, ile işaretli bir yöntem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> öznitelik kullanıcı tarafından belirtilen kodu çalıştırmak için kayıt işlemi sırasında çağrılır. İle işaretlenen karşılık gelen bir yöntemi <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> özniteliği kayıt yöntemi operations tersine çevirmek için kayıt silme işlemi sırasında çağrılır.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlal düzeltmek için karşılık gelen bir kayıt veya silme yöntemi ekleyin.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu kuraldan uyarıyı bastırmayın.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek kuralını ihlal eden bir tür gösterir. Açıklamalı kod ihlali için düzeltmeyi gösterir.
+
  [!code-csharp[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/CSharp/ca1410-com-registration-methods-should-be-matched_1.cs)]
- [!code-vb[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/VisualBasic/ca1410-com-registration-methods-should-be-matched_1.vb)]  
-  
-## <a name="related-rules"></a>İlgili kuralları  
- [CA1411: COM kayıt yöntemleri görünebilir olmamalıdır](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>   
- [Derlemeleri COM ile kaydetme](/dotnet/framework/interop/registering-assemblies-with-com)   
- [Regasm.exe (Derleme Kayıt Aracı)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)
+ [!code-vb[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/VisualBasic/ca1410-com-registration-methods-should-be-matched_1.vb)]
+
+## <a name="related-rules"></a>İlgili kuralları
+ [CA1411: COM kayıt yöntemleri görünebilir olmamalıdır](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+ <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [Derlemeleri COM ile kaydetme](/dotnet/framework/interop/registering-assemblies-with-com) [Regasm.exe (derleme kayıt aracı)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)

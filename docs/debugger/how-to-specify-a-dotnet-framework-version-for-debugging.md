@@ -2,8 +2,7 @@
 title: 'Nasıl yapılır: hata ayıklama için .NET Framework sürümünü belirtin. | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1d3d94d4243e138d4b8f9753d02bbc184db6e377
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2cb8da54b53814e7f044c67855e8071c627cf2e1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Nasıl Yapılır: Hata Ayıklama İçin .NET Framework Sürümü Belirtme
 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] Hata ayıklayıcı destekleyen Microsoft eski sürümleri hata ayıklama [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] geçerli sürümü yanı sıra. Visual Studio'dan bir uygulama başlatırsanız, hata ayıklayıcı doğru sürümü her zaman tanımlayabilirsiniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ayıkladığınız uygulama için. Uygulama zaten çalışıyor ve kullanıyorsanız **ekleme**, hata ayıklayıcı her zaman daha eski bir sürümü belirlemek mümkün olmayabilir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Bu durumda, bildiren bir hata iletisi alırsınız,  

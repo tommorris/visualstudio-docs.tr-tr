@@ -1,10 +1,8 @@
 ---
-title: 'CA1050: ad alanlarında türleri bildirin | Microsoft Docs'
-ms.custom: ''
+title: 'CA1050: Ad alanlarında türleri bildirin'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1050
 - DeclareTypesInNamespaces
@@ -17,40 +15,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d47c63d066127780b629a93572593ed729651c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 174f30b8f4e58d7289b93cd9f5a8a8253c7a4fba
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Ad alanlarında türleri bildirin
-|||  
-|-|-|  
-|TypeName|DeclareTypesInNamespaces|  
-|CheckId|CA1050|  
-|Kategori|Microsoft.Design|  
-|Yeni Değişiklik|Yeni|  
-  
-## <a name="cause"></a>Sebep  
- Bir genel ya da korumalı türü adlandırılmış bir ad alanı kapsamı dışında tanımlanır.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Türleri ad çakışmaları önlemek için ad ve bir nesne hiyerarşisi ilgili türlerinde düzenlemek için bir yol olarak bildirilir. Herhangi bir adlandırılmış ad alanı dışında olan kodda başvurulamaz genel bir ad alanındaki türleridir.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlal düzeltmek için bir ad alanındaki türü yerleştirin.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu kural bir uyarıdan gizlemek hiçbir zaman sahip olsa da derlemeyi hiçbir zaman diğer derlemeler ile birlikte kullanılması durumunda bunu yapmak güvenlidir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, hatalı bir ad alanı dışında bildirilen bir türe sahip bir kitaplık ve bir ad alanında bildirilen aynı ada sahip bir tür gösterir.  
-  
+|||
+|-|-|
+|TypeName|DeclareTypesInNamespaces|
+|CheckId|CA1050|
+|Kategori|Microsoft.Design|
+|Yeni Değişiklik|Yeni|
+
+## <a name="cause"></a>Sebep
+ Bir genel ya da korumalı türü adlandırılmış bir ad alanı kapsamı dışında tanımlanır.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Türleri ad çakışmaları önlemek için ad ve bir nesne hiyerarşisi ilgili türlerinde düzenlemek için bir yol olarak bildirilir. Herhangi bir adlandırılmış ad alanı dışında olan kodda başvurulamaz genel bir ad alanındaki türleridir.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlal düzeltmek için bir ad alanındaki türü yerleştirin.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu kural bir uyarıdan gizlemek hiçbir zaman sahip olsa da derlemeyi hiçbir zaman diğer derlemeler ile birlikte kullanılması durumunda bunu yapmak güvenlidir.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, hatalı bir ad alanı dışında bildirilen bir türe sahip bir kitaplık ve bir ad alanında bildirilen aynı ada sahip bir tür gösterir.
+
  [!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
- [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki uygulama önceden tanımlanmış kitaplığını kullanır. Bir ad alanı dışında bildirilmiş türü ne zaman oluşturulduğunu unutmayın adı `Test` bir ad alanı tarafından yetkili değil. Erişim için ayrıca `Test` yazın `Goodspace`, ad alanı adı gereklidir.  
-  
+ [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
+
+## <a name="example"></a>Örnek
+ Aşağıdaki uygulama önceden tanımlanmış kitaplığını kullanır. Bir ad alanı dışında bildirilmiş türü ne zaman oluşturulduğunu unutmayın adı `Test` bir ad alanı tarafından yetkili değil. Erişim için ayrıca `Test` yazın `Goodspace`, ad alanı adı gereklidir.
+
  [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
  [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

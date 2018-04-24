@@ -2,8 +2,7 @@
 title: Benzetici UWP uygulamaları çalıştırma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b3ec07f7bf36ba606e9f1ddb45bdcde75d570a32
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99881b657f6d3cb6877c7ce6d1fbf80f4eb1d731
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Benzetici UWP uygulamaları çalıştırma
 UWP uygulamalar için Visual Studio simulator, bir UWP uygulaması taklit eden bir masaüstü uygulamasıdır. Genellikle, yerel makine, bağlı bir aygıt veya bir uzak makine hata ayıklama istersiniz. Ancak, bazı senaryolarda, farklı fiziksel ekran boyutu ve çözüm benzetmek için Visual Studio simulator kullanmak isteyebilirsiniz. Ayrıca, ortak dokunma ve döndürme olaylarının benzetimini yapma ve ağ bağlantısı özellikleri benzetimini yapma.

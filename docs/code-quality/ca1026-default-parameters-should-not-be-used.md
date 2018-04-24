@@ -1,10 +1,8 @@
 ---
-title: 'CA1026: Varsayılan parametreler kullanılmamalıdır | Microsoft Docs'
-ms.custom: ''
+title: 'CA1026: Varsayılan parametreler kullanılmamalıdır'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1026
 - DefaultParametersShouldNotBeUsed
@@ -17,41 +15,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3bc307b0c82400a209d09b490ba0882e6474db3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 173a9a62ea6a3106c50fd18f37180b583e0bb42c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Varsayılan parametreler kullanılmamalıdır
-|||  
-|-|-|  
-|TypeName|DefaultParametersShouldNotBeUsed|  
-|CheckId|CA1026|  
-|Kategori|Microsoft.Design|  
-|Yeni Değişiklik|Yeni|  
-  
-## <a name="cause"></a>Sebep  
- Harici olarak görünen bir türü varsayılan bir parametre kullanan dışarıdan görünür yöntemi içerir.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Varsayılan parametreleri kullanan yöntemleri ortak dil belirtimi (CLS) altında izin verilir; Ancak, bu parametreler için atanmış olan değerleri yok sayın derleyicileri CLS sağlar. Varsayılan parametre değerleri yok sayın derleyicileri için yazılan kod, açıkça her varsayılan parametresi için bağımsız değişkenleri belirtmeniz gerekir. Programlama dilleri arasında istediğiniz davranışı sağlamak için varsayılan parametreleri kullanan yöntemleri varsayılan parametreleri sağlamak yöntemi aşırı yüklemeleri ile değiştirilmelidir.  
-  
- Yönetilen kod eriştiğinde derleyici C++ için yönetilen uzantısı için varsayılan parametre değerlerini yoksayar. Visual Basic derleyici kullanan varsayılan parametrelere sahip yöntemlerini destekler [isteğe bağlı](/dotnet/visual-basic/language-reference/modifiers/optional) anahtar sözcüğü.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlal düzeltmek için varsayılan parametrelerini yöntemi aşırı yüklemeleri ile varsayılan parametreleri kullanan yöntem değiştirin.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu kuraldan uyarıyı bastırmayın.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, varsayılan parametreleri kullanan bir yöntem, eşdeğer bir işlevselliği sağlayan ve aşırı yüklenmiş yöntemleri gösterir.  
-  
- [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]  
-  
-## <a name="related-rules"></a>İlgili kuralları  
- [CA1025: Tekrarlanan bağımsız değişkenleri params dizisi ile değiştirin](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+|||
+|-|-|
+|TypeName|DefaultParametersShouldNotBeUsed|
+|CheckId|CA1026|
+|Kategori|Microsoft.Design|
+|Yeni Değişiklik|Yeni|
+
+## <a name="cause"></a>Sebep
+ Harici olarak görünen bir türü varsayılan bir parametre kullanan dışarıdan görünür yöntemi içerir.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Varsayılan parametreleri kullanan yöntemleri ortak dil belirtimi (CLS) altında izin verilir; Ancak, bu parametreler için atanmış olan değerleri yok sayın derleyicileri CLS sağlar. Varsayılan parametre değerleri yok sayın derleyicileri için yazılan kod, açıkça her varsayılan parametresi için bağımsız değişkenleri belirtmeniz gerekir. Programlama dilleri arasında istediğiniz davranışı sağlamak için varsayılan parametreleri kullanan yöntemleri varsayılan parametreleri sağlamak yöntemi aşırı yüklemeleri ile değiştirilmelidir.
+
+ Yönetilen kod eriştiğinde derleyici C++ için yönetilen uzantısı için varsayılan parametre değerlerini yoksayar. Visual Basic derleyici kullanan varsayılan parametrelere sahip yöntemlerini destekler [isteğe bağlı](/dotnet/visual-basic/language-reference/modifiers/optional) anahtar sözcüğü.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlal düzeltmek için varsayılan parametrelerini yöntemi aşırı yüklemeleri ile varsayılan parametreleri kullanan yöntem değiştirin.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu kuraldan uyarıyı bastırmayın.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, varsayılan parametreleri kullanan bir yöntem, eşdeğer bir işlevselliği sağlayan ve aşırı yüklenmiş yöntemleri gösterir.
+
+ [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
+
+## <a name="related-rules"></a>İlgili kuralları
+ [CA1025: Tekrarlanan bağımsız değişkenleri params dizisi ile değiştirin](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
  [Dil Bağımsızlığı ve Dilden Bağımsız Bileşenler](/dotnet/standard/language-independence-and-language-independent-components)

@@ -1,10 +1,8 @@
 ---
-title: 'CA1057: Dize URI aşırı yüklemeleri System.Uri aşırı çağrı | Microsoft Docs'
-ms.custom: ''
+title: 'CA1057: Dize URI aşırı yüklemeleri System.Uri aşırı yüklemelerini çağırır'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1057
 - StringUriOverloadsCallSystemUriOverloads
@@ -17,44 +15,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18b38dab9ad7a2a3065b78a1d73bbadee2c28f28
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4a2e140b4b861e2666350154d861814378f5d115
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Dize URI aşırı yüklemeleri System.Uri aşırı yüklemelerini çağırır
-|||  
-|-|-|  
-|TypeName|StringUriOverloadsCallSystemUriOverloads|  
-|CheckId|CA1057|  
-|Kategori|Microsoft.Design|  
-|Yeni Değişiklik|Bölünemez|  
-  
-## <a name="cause"></a>Sebep  
- Yalnızca bir dize parametresi ile değiştirilmesi tarafından farklı yöntemi aşırı bir tür bildirir bir <xref:System.Uri?displayProperty=fullName> parametre ve dize parametresi alan aşırı alan aşırı çağırmaz <xref:System.Uri> parametresi.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Yalnızca dizesiyle aşırı farklı olduğundan /<xref:System.Uri> parametresi dize Tekdüzen Kaynak Tanımlayıcısı (URI) göstermek için varsayılır. Bir URI'nın dize sunumu ayrıştırma ve hataları kodlama eğilimindedir ve güvenlik açıklarına yol açabilir. <xref:System.Uri> Sınıfı, güvenli ve güvenli bir şekilde bu hizmetleri sağlar. Avantajlarından yararlanmasını <xref:System.Uri> çağrı dize aşırı sınıfı, <xref:System.Uri> dize bağımsız değişkeni kullanan aşırı yükleme.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bir örneğini oluşturur, böylece URI dize gösterimini kullanan yöntemi yeniden uygulamak <xref:System.Uri> dize bağımsız değişkeni kullanarak sınıf ve daha sonra geçirir <xref:System.Uri> sahip aşırı nesnesine <xref:System.Uri> parametresi.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Dize parametresi bir URI temsil etmez, bu kural bir uyarıdan gizlemek güvenlidir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir doğru uygulanan dize aşırı gösterir.  
-  
+|||
+|-|-|
+|TypeName|StringUriOverloadsCallSystemUriOverloads|
+|CheckId|CA1057|
+|Kategori|Microsoft.Design|
+|Yeni Değişiklik|Bölünemez|
+
+## <a name="cause"></a>Sebep
+ Yalnızca bir dize parametresi ile değiştirilmesi tarafından farklı yöntemi aşırı bir tür bildirir bir <xref:System.Uri?displayProperty=fullName> parametre ve dize parametresi alan aşırı alan aşırı çağırmaz <xref:System.Uri> parametresi.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Yalnızca dizesiyle aşırı farklı olduğundan /<xref:System.Uri> parametresi dize Tekdüzen Kaynak Tanımlayıcısı (URI) göstermek için varsayılır. Bir URI'nın dize sunumu ayrıştırma ve hataları kodlama eğilimindedir ve güvenlik açıklarına yol açabilir. <xref:System.Uri> Sınıfı, güvenli ve güvenli bir şekilde bu hizmetleri sağlar. Avantajlarından yararlanmasını <xref:System.Uri> çağrı dize aşırı sınıfı, <xref:System.Uri> dize bağımsız değişkeni kullanan aşırı yükleme.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bir örneğini oluşturur, böylece URI dize gösterimini kullanan yöntemi yeniden uygulamak <xref:System.Uri> dize bağımsız değişkeni kullanarak sınıf ve daha sonra geçirir <xref:System.Uri> sahip aşırı nesnesine <xref:System.Uri> parametresi.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Dize parametresi bir URI temsil etmez, bu kural bir uyarıdan gizlemek güvenlidir.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, bir doğru uygulanan dize aşırı gösterir.
+
  [!code-csharp[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/CSharp/ca1057-string-uri-overloads-call-system-uri-overloads_1.cs)]
  [!code-cpp[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/CPP/ca1057-string-uri-overloads-call-system-uri-overloads_1.cpp)]
- [!code-vb[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/VisualBasic/ca1057-string-uri-overloads-call-system-uri-overloads_1.vb)]  
-  
-## <a name="related-rules"></a>İlgili kuralları  
- [CA2234: Dizeler yerine System.Uri nesneleri gönderin](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)  
-  
- [CA1056: URI özellikleri dize olmamalıdır](../code-quality/ca1056-uri-properties-should-not-be-strings.md)  
-  
- [CA1054: URI parametreleri dizeler olmamalıdır](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)  
-  
+ [!code-vb[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/VisualBasic/ca1057-string-uri-overloads-call-system-uri-overloads_1.vb)]
+
+## <a name="related-rules"></a>İlgili kuralları
+ [CA2234: Dizeler yerine System.Uri nesneleri gönderin](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
+
+ [CA1056: URI özellikleri dize olmamalıdır](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+
+ [CA1054: URI parametreleri dizeler olmamalıdır](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+
  [CA1055: URI dönüş değerleri dizeler olmamalıdır](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

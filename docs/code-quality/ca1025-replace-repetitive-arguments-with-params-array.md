@@ -1,10 +1,8 @@
 ---
-title: 'CA1025: Tekrarlanan bağımsız değişkenleri params dizisi ile değiştirin | Microsoft Docs'
-ms.custom: ''
+title: 'CA1025: Tekrarlanan bağımsız değişkenleri params dizisi ile değiştirin'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1025
 - ReplaceRepetitiveArgumentsWithParamsArray
@@ -17,33 +15,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d42e7109d75f14d51e0e7834bc996f6f8864dc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a5957b73789f751f5bd704c1a228994ee6187dc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Tekrarlanan bağımsız değişkenleri params dizisi ile değiştirin
-|||  
-|-|-|  
-|TypeName|ReplaceRepetitiveArgumentsWithParamsArray|  
-|CheckId|CA1025|  
-|Kategori|Microsoft.Design|  
-|Yeni Değişiklik|Bölünemez|  
-  
-## <a name="cause"></a>Sebep  
- Bir genel veya korumalı yöntemi genel türde birden fazla üç parametre vardır ve son üç parametreleri aynı türdeyse.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Bir parametre dizisi yerine yinelenen bağımsız değişken bağımsız değişken tam sayısı bilinmiyor ve değişken bağımsız değişkenleri aynı türde olan ya da aynı türde geçirilebilir kullanın. Örneğin, <xref:System.Console.WriteLine%2A> yöntemi sağlar herhangi bir sayıda kabul etmek için bir parametre dizisi kullanan bir genel amaçlı aşırı <xref:System.Object> bağımsız değişkenler.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlal düzeltmek için yinelenen bağımsız değişkenler bir parametre dizisi ile değiştirin.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Her zaman bir uyarı bu kuraldan gizlemek güvenlidir; Ancak, bu tasarım kullanılabilirlik sorunlara neden olabilir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bu kural ihlal eden bir tür gösterir.  
-  
+|||
+|-|-|
+|TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
+|CheckId|CA1025|
+|Kategori|Microsoft.Design|
+|Yeni Değişiklik|Bölünemez|
+
+## <a name="cause"></a>Sebep
+ Bir genel veya korumalı yöntemi genel türde birden fazla üç parametre vardır ve son üç parametreleri aynı türdeyse.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Bir parametre dizisi yerine yinelenen bağımsız değişken bağımsız değişken tam sayısı bilinmiyor ve değişken bağımsız değişkenleri aynı türde olan ya da aynı türde geçirilebilir kullanın. Örneğin, <xref:System.Console.WriteLine%2A> yöntemi sağlar herhangi bir sayıda kabul etmek için bir parametre dizisi kullanan bir genel amaçlı aşırı <xref:System.Object> bağımsız değişkenler.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlal düzeltmek için yinelenen bağımsız değişkenler bir parametre dizisi ile değiştirin.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Her zaman bir uyarı bu kuraldan gizlemek güvenlidir; Ancak, bu tasarım kullanılabilirlik sorunlara neden olabilir.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, bu kural ihlal eden bir tür gösterir.
+
  [!code-csharp[FxCop.Design.RepeatArgs#1](../code-quality/codesnippet/CSharp/ca1025-replace-repetitive-arguments-with-params-array_1.cs)]

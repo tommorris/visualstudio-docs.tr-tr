@@ -2,8 +2,7 @@
 title: 'Nasıl yapılır: Görünümü yenileme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - refreshing views
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 795df7290d4c06b213850c74fffad540d3c13953
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3da7466f7f1ac569378d5ce5053c72c55d4ae68
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-refresh-the-view"></a>Nasıl yapılır: Görünümü Yenileme
 Spy ++ sistem tablolarının "anlık görüntüsünü" alır ve bu bilgilere dayalı bir görünüm yeniler. Düzenli aralıklarla sistem görünümleri yenileme önemlidir. Açın ve görünüm yenilenmemiş Spy ++ görünüm varsa, bu işlemler, iş parçacıkları ve sonradan oluşturulan windows görürsünüz değil. Ayrıca, artık mevcut öğeleri görebilirsiniz. **Yenileme** komutu, iletileri görünümü dışındaki tüm görünümleri için kullanılabilir.  

@@ -2,8 +2,7 @@
 title: Desteklenen kod değişiklikleri (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -26,11 +25,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8752cb6574a514baa121de744e381e7e37041f11
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb97c08b8673854e0fe0d0bbd64efbe038227c43
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="supported-code-changes-c"></a>Desteklenen Kod Değişiklikleri (C++)
 Düzenle ve devam et Visual C++ için kod değişiklikleri çoğu türlerini işler. Ancak, program yürütme sırasında bazı değişiklikler uygulanamıyor. Bu değişiklikleri uygulamak için yürütme durdurun ve kod yeni bir sürümünü oluşturabilir.  

@@ -2,8 +2,7 @@
 title: Atama kanca işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
@@ -25,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b87c41a6a31a2c66663ed121204611b4964b9c4d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c46b498ea36459dff0eb538ac3e0371fd9c5707
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="allocation-hook-functions"></a>Atama Kanca İşlevleri
 Kullanılarak yüklenen bir ayırma kanca işlevini [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), bellek tahsis, yeniden tahsis veya serbest her zaman çağrılır. Kanca bu tür birçok farklı amaçlar için kullanılabilir. Uygulama yetersiz bellek durumlarda, örneğin, işleme biçimini test etmek veya ayırma desenleri incelemek için ya da daha sonraki analizler için ayırma bilgileri günlüğe kaydetmek için kullanın.  

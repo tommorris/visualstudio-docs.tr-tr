@@ -1,6 +1,5 @@
 ---
-title: Yeni bağlantı ekleme | Microsoft Docs
-ms.custom: ''
+title: Yeni bağlantı ekleme
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +8,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0355b4fe3c05fb089e6feaac5bb52ff7f3f56da0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28633fcc4c744269a2a90cc72c8136afbda6f561
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="add-new-connections"></a>Yeni bağlantı ekleme
 
@@ -37,9 +36,9 @@ Veritabanına bir bağlantı oluşturmak için tıklatın **Bağlantı Ekle** si
 
 ![Sunucu Gezgini yeni bağlantı simgesi](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata Sunucu Gezgini yeni bağlantı simgesi")
 
-Bu işlem sonrasında **Bağlantı Ekle** iletişim kutusu. Burada, biz SQL Server yerel veritabanı örneğinin adı girdiniz.  
+Bu işlem sonrasında **Bağlantı Ekle** iletişim kutusu. Burada, biz SQL Server yerel veritabanı örneğinin adı girdiniz.
 
-![Yeni bağlantı ekleme](../data-tools/media/raddata-add-new-connection-dialog.png "raddata Ekle yeni bağlantı iletişim kutusu")  
+![Yeni bağlantı ekleme](../data-tools/media/raddata-add-new-connection-dialog.png "raddata Ekle yeni bağlantı iletişim kutusu")
 
 ## <a name="change-the-provider"></a>Sağlayıcı değiştirme
 
@@ -57,4 +56,4 @@ Test başarılı olursa, oluşturmak için hazır bir *veri kaynağı*, gerçekt
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET için Visual Studio veri araçları](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [.NET için Visual Studio veri araçları](../data-tools/visual-studio-data-tools-for-dotnet.md)

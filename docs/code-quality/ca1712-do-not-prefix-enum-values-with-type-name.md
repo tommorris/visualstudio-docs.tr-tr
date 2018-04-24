@@ -1,10 +1,8 @@
 ---
-title: 'CA1712: numaralandırma değerleri tür adıyla önek kullanmayın | Microsoft Docs'
-ms.custom: ''
+title: 'CA1712: Numaralandırma değerleri için tür adıyla önek kullanmayın'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1712
 - DoNotPrefixEnumValuesWithTypeName
@@ -17,47 +15,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5858e29e680d33f3603ccc5a44bdf07d797b625
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b6d8a5ebba4f746c7418fcfb28a61d98949441e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Numaralandırma değerleri için tür adıyla önek kullanmayın
-|||  
-|-|-|  
-|TypeName|DoNotPrefixEnumValuesWithTypeName|  
-|CheckId|CA1712|  
-|Kategori|Microsoft.Naming|  
-|Yeni Değişiklik|Yeni|  
-  
-## <a name="cause"></a>Sebep  
- Numaralandırma adı numaralandırma türünün adı ile başlayan bir üye içeriyor.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Tür bilgileri geliştirme araçları tarafından sağlanacak beklendiğinden numaralandırma üyeleri adlarını tür adıyla önek değil.  
-  
- Adlandırma kuralları hedefleyen ortak dil çalışma zamanı kitaplıkları için genel bir bakış sağlar. Bu yeni bir yazılım kitaplığı öğrenmek için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığa sahip olan kişi tarafından geliştirilmiştir müşteri güvenini artırır süreyi azaltır.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlal gidermek için numaralandırma üyesi türü adı öneki kaldırın.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu kuraldan uyarıyı bastırmayın.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek düzeltilmiş sürüm tarafından izlenen yanlış adlandırılmış numaralandırma gösterir.  
-  
+|||
+|-|-|
+|TypeName|DoNotPrefixEnumValuesWithTypeName|
+|CheckId|CA1712|
+|Kategori|Microsoft.Naming|
+|Yeni Değişiklik|Yeni|
+
+## <a name="cause"></a>Sebep
+ Numaralandırma adı numaralandırma türünün adı ile başlayan bir üye içeriyor.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Tür bilgileri geliştirme araçları tarafından sağlanacak beklendiğinden numaralandırma üyeleri adlarını tür adıyla önek değil.
+
+ Adlandırma kuralları hedefleyen ortak dil çalışma zamanı kitaplıkları için genel bir bakış sağlar. Bu yeni bir yazılım kitaplığı öğrenmek için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığa sahip olan kişi tarafından geliştirilmiştir müşteri güvenini artırır süreyi azaltır.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlal gidermek için numaralandırma üyesi türü adı öneki kaldırın.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu kuraldan uyarıyı bastırmayın.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek düzeltilmiş sürüm tarafından izlenen yanlış adlandırılmış numaralandırma gösterir.
+
  [!code-csharp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CSharp/ca1712-do-not-prefix-enum-values-with-type-name_1.cs)]
  [!code-cpp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CPP/ca1712-do-not-prefix-enum-values-with-type-name_1.cpp)]
- [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]  
-  
-## <a name="related-rules"></a>İlgili kuralları  
- [CA1711: Tanımlayıcıların sonekleri yanlış olmamalıdır](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
-  
- [CA1027: Numaralandırmaları FlagsAttribute ile işaretleyin](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
-  
- [CA2217: Numaralandırmaları FlagsAttribute ile işaretlemeyin](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+ [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]
+
+## <a name="related-rules"></a>İlgili kuralları
+ [CA1711: Tanımlayıcıların sonekleri yanlış olmamalıdır](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+
+ [CA1027: Numaralandırmaları FlagsAttribute ile işaretleyin](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+
+ [CA2217: Numaralandırmaları FlagsAttribute ile işaretlemeyin](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.Enum?displayProperty=fullName>

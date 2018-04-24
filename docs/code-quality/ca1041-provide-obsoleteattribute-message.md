@@ -1,10 +1,8 @@
 ---
-title: 'CA1041: ObsoleteAttribute iletisi sağlayın | Microsoft Docs'
-ms.custom: ''
+title: 'CA1041: ObsoleteAttribute iletisi sağlayın'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1041
 - ProvideObsoleteAttributeMessage
@@ -17,38 +15,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc851ef4b4ef1cdca9bdb1f9692d3bbc7f0a795c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94a8204b2b19ae32fb8eb22438d747f4b4e0cf6c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: ObsoleteAttribute iletisi sağlayın
-|||  
-|-|-|  
-|TypeName|ProvideObsoleteAttributeMessage|  
-|CheckId|CA1041|  
-|Kategori|Microsoft.Design|  
-|Yeni Değişiklik|Bölünemez|  
-  
-## <a name="cause"></a>Sebep  
- Bir tür veya üye kullanarak işaretlenmiş bir <xref:System.ObsoleteAttribute?displayProperty=fullName> sahip olmayan özniteliği kendi <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> belirtilen özelliği.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- <xref:System.ObsoleteAttribute> kullanım dışı kitaplık türleri ve üyeleri işaretlemek için kullanılır. Kitaplık tüketiciler herhangi bir tür ya da kullanımdan kaldırılmış olarak işaretlenmiş üye kullanımını kaçınmalısınız. Desteklenmiyor ve daha sonra kitaplık sürümlerinden sonuç kaldırılacaktır olmasıdır. Ne zaman bir tür veya üye işaretlenmiş kullanarak <xref:System.ObsoleteAttribute> derlenir, <xref:System.ObsoleteAttribute.Message%2A> özniteliğin özelliği görüntülenir. Bu eski türü veya üye kullanıcı bilgilerini sağlar. Bu bilgiler genellikle ne kadar eski türü içerir veya üye kitaplığı tasarımcıları ve kullanmak için tercih edilen değiştirme tarafından desteklenmez.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlal düzeltmek için add `message` parametresi <xref:System.ObsoleteAttribute> Oluşturucusu.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu kural bir uyarıdan çünkü engelleme <xref:System.ObsoleteAttribute.Message%2A> özelliği geçersiz tür veya üye hakkında önemli bilgiler sağlar.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, doğru bildirilen sahip bir geçersiz üye gösterir <xref:System.ObsoleteAttribute>.  
-  
+|||
+|-|-|
+|TypeName|ProvideObsoleteAttributeMessage|
+|CheckId|CA1041|
+|Kategori|Microsoft.Design|
+|Yeni Değişiklik|Bölünemez|
+
+## <a name="cause"></a>Sebep
+ Bir tür veya üye kullanarak işaretlenmiş bir <xref:System.ObsoleteAttribute?displayProperty=fullName> sahip olmayan özniteliği kendi <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> belirtilen özelliği.
+
+## <a name="rule-description"></a>Kural Tanımı
+ <xref:System.ObsoleteAttribute> kullanım dışı kitaplık türleri ve üyeleri işaretlemek için kullanılır. Kitaplık tüketiciler herhangi bir tür ya da kullanımdan kaldırılmış olarak işaretlenmiş üye kullanımını kaçınmalısınız. Desteklenmiyor ve daha sonra kitaplık sürümlerinden sonuç kaldırılacaktır olmasıdır. Ne zaman bir tür veya üye işaretlenmiş kullanarak <xref:System.ObsoleteAttribute> derlenir, <xref:System.ObsoleteAttribute.Message%2A> özniteliğin özelliği görüntülenir. Bu eski türü veya üye kullanıcı bilgilerini sağlar. Bu bilgiler genellikle ne kadar eski türü içerir veya üye kitaplığı tasarımcıları ve kullanmak için tercih edilen değiştirme tarafından desteklenmez.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlal düzeltmek için add `message` parametresi <xref:System.ObsoleteAttribute> Oluşturucusu.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu kural bir uyarıdan çünkü engelleme <xref:System.ObsoleteAttribute.Message%2A> özelliği geçersiz tür veya üye hakkında önemli bilgiler sağlar.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, doğru bildirilen sahip bir geçersiz üye gösterir <xref:System.ObsoleteAttribute>.
+
  [!code-cpp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CPP/ca1041-provide-obsoleteattribute-message_1.cpp)]
  [!code-csharp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CSharp/ca1041-provide-obsoleteattribute-message_1.cs)]
- [!code-vb[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/VisualBasic/ca1041-provide-obsoleteattribute-message_1.vb)]  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+ [!code-vb[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/VisualBasic/ca1041-provide-obsoleteattribute-message_1.vb)]
+
+## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.ObsoleteAttribute?displayProperty=fullName>

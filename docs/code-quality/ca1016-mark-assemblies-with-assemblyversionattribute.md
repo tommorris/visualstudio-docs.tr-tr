@@ -1,10 +1,8 @@
 ---
-title: 'CA1016: Derlemeleri AssemblyVersionAttribute işaretleyin | Microsoft Docs'
-ms.custom: ''
+title: 'CA1016: Derlemeleri AssemblyVersionAttribute ile işaretleme'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkAssembliesWithAssemblyVersion
 - CA1016
@@ -17,49 +15,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dc5bea6f18265117c0d284ed048009ff9fdafcd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c4f05003fdd05a4dde82d19ba11e47c35666fbc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Derlemeleri AssemblyVersionAttribute ile işaretleme
-|||  
-|-|-|  
-|TypeName|MarkAssembliesWithAssemblyVersion|  
-|CheckId|CA1016|  
-|Kategori|Microsoft.Design|  
-|Yeni Değişiklik|Bölünemez|  
-  
-## <a name="cause"></a>Sebep  
- Derleme sürüm numarası yok.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Derleme kimliğini aşağıdaki bilgilerden oluşur:  
-  
--   Derleme adı  
-  
--   Sürüm numarası  
-  
--   Kültür  
-  
--   Ortak anahtarı (kesin adlandırılmış derlemeler).  
-  
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Sürüm numarasını bütünleştirilmiş benzersiz şekilde tanımlamak için ve kesin adlandırılmış derlemelerindeki bağlamak için kullanır. Sürüm numarası, sürüm ve yayımcı ilkesi ile birlikte kullanılır. Varsayılan olarak uygulamalar yalnızca oluşturulmuş derleme sürümlerini çalıştırır.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlal düzeltmek için bir sürüm numarası derlemeye kullanarak eklemek <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> özniteliği. Aşağıdaki örnekte bakın.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu kural bir uyarıdan, üçüncü taraflar tarafından veya bir üretim ortamında kullanılan derlemeler için engelleme.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir derlemeye gösterir <xref:System.Reflection.AssemblyVersionAttribute> özniteliği uygulanmıştır.  
-  
+|||
+|-|-|
+|TypeName|MarkAssembliesWithAssemblyVersion|
+|CheckId|CA1016|
+|Kategori|Microsoft.Design|
+|Yeni Değişiklik|Bölünemez|
+
+## <a name="cause"></a>Sebep
+ Derleme sürüm numarası yok.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Derleme kimliğini aşağıdaki bilgilerden oluşur:
+
+-   Derleme adı
+
+-   Sürüm numarası
+
+-   Kültür
+
+-   Ortak anahtarı (kesin adlandırılmış derlemeler).
+
+ [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Sürüm numarasını bütünleştirilmiş benzersiz şekilde tanımlamak için ve kesin adlandırılmış derlemelerindeki bağlamak için kullanır. Sürüm numarası, sürüm ve yayımcı ilkesi ile birlikte kullanılır. Varsayılan olarak uygulamalar yalnızca oluşturulmuş derleme sürümlerini çalıştırır.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlal düzeltmek için bir sürüm numarası derlemeye kullanarak eklemek <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> özniteliği. Aşağıdaki örnekte bakın.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu kural bir uyarıdan, üçüncü taraflar tarafından veya bir üretim ortamında kullanılan derlemeler için engelleme.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, bir derlemeye gösterir <xref:System.Reflection.AssemblyVersionAttribute> özniteliği uygulanmıştır.
+
  [!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
  [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
- [!code-cpp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CPP/ca1016-mark-assemblies-with-assemblyversionattribute_1.cpp)]  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme sürümü oluşturma](/dotnet/framework/app-domains/assembly-versioning)   
- [Nasıl yapılır: Yayımcı İlkesi Oluşturma](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)
+ [!code-cpp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CPP/ca1016-mark-assemblies-with-assemblyversionattribute_1.cpp)]
+
+## <a name="see-also"></a>Ayrıca Bkz.
+ [Derleme sürümü oluşturma](/dotnet/framework/app-domains/assembly-versioning) [nasıl yapılır: Yayımcı ilkesi oluşturma](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)

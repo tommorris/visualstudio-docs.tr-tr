@@ -2,8 +2,7 @@
 title: 'Hata ayıklama hazırlığı: Konsol projeleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0adeb1954620313bc482b2ff461036840723cc5b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b864ed1a1c0a105a0ab5f441f6d7a9a935dc6dc
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-preparation-console-projects"></a>Hata Ayıklama Hazırlığı: Konsol Projeleri
 Bir konsol projesi hata ayıklamaya hazırlanıyor bazı hususlar sahip bir Windows proje hata ayıklamaya hazırlanıyor için benzer. Daha fazla bilgi için bkz: [Windows Forms uygulamaları](../debugger/debugging-preparation-windows-forms-applications.md), ve [hata ayıklama hazırlığı: Windows Forms uygulamaları (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Tüm konsol uygulamaları benzerlik nedeniyle, bu konu aşağıdaki proje türleri şunları içerir:  

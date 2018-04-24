@@ -1,10 +1,8 @@
 ---
-title: 'CA1024: uygun yerlerde özellikler kullan | Microsoft Docs'
-ms.custom: ''
+title: 'CA1024: Uygun yerlerde özellikler kullan'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
 - CA1024
@@ -17,105 +15,105 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bf44541c9eca3d2b8027ff1b5811caf0ba6824f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03318241206b812f4ffb57dddfc6b4f021d600f1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Uygun yerlerde özellikler kullan
-|||  
-|-|-|  
-|TypeName|UsePropertiesWhereAppropriate|  
-|CheckId|CA1024|  
-|Kategori|Microsoft.Design|  
-|Yeni Değişiklik|Yeni|  
-  
-## <a name="cause"></a>Sebep  
- Bir ortak veya korumalı yöntemi ile başlayan bir ada sahip `Get`parametre almayan ve dizisi olmayan bir değer döndürür.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Çoğu durumda, Özellikler verilerini temsil eden ve yöntemleri eylemleri gerçekleştirebilirsiniz. Özellikleri kullanmak kolaylaştırır alanları gibi erişilir. Bir yöntemi, aşağıdaki durumlardan birinde varsa, bir özellik olacak şekilde iyi bir adaydır:  
-  
--   Bağımsız değişken almayan ve bir nesne durumu bilgilerini döndürür.  
-  
--   Bir nesnenin durumu kısmı ayarlamak için tek bir bağımsız değişken kabul eder.  
-  
- Alanları ise gibi özellikleri hareket etmesi gerektiğini; yöntem ayarlanmamışsa, bir özelliğe değiştirilmemelidir. Aşağıdaki durumlarda özellikleri daha iyi yöntemler şunlardır:  
-  
--   Yöntemi, bir uzun süren işlem gerçekleştirir. Yöntemi, perceivably ayarlayın veya bir alanın değerini almak için gereken süreden daha yavaştır.  
-  
--   Yöntemi, bir dönüştürme gerçekleştirir. Bir alan erişme depoladığı verilerin dönüştürülmüş bir sürümünü döndürmez.  
-  
--   Get yöntemini gözlemlenebilir bir yan etkisi yoktur. Bir alanın değerini alma herhangi yan etkileri üretmez.  
-  
--   Yürütme sırası önemlidir. Diğer işlemlerin tekrarlamasını üzerinde bir alanın değerini ayarlama bağlı değildir.  
-  
--   Art arda iki kez yöntemi çağırma farklı sonuçlar oluşturur.  
-  
--   Yöntem statik ancak çağıran tarafından değiştirilebilir. bir nesne döndürür. Bir alanın değerini alma alanı tarafından depolanan verileri değiştirmek arayan izin vermiyor.  
-  
--   Yöntemi, bir dizi döndürür.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlal düzeltmek için bir özelliğe yöntemini değiştirin.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu kural bir uyarıdan yöntemi en az bir daha önce listelenen ölçütlerini karşılıyorsa engelleyin.  
-  
-## <a name="controlling-property-expansion-in-the-debugger"></a>Hata ayıklayıcı denetleme özelliği genişletme  
- Otomatik-genişletmek için hata ayıklayıcı istemediğiniz programcıları özelliği kullanmaktan kaçının bir nedenidir. Örneğin, özelliği büyük nesne ayırma ya da P/Invoke çağırma gerektirebilir, ancak hiçbir observable yan etkileri gerçekte olmayabilir.  
-  
- Hata ayıklayıcı otomatik-aşmasını önlemek uygulayarak özellikleri <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Aşağıdaki örnekte bu öznitelik bir örnek özelliği için uygulanan gösterir.  
-  
-```vb  
-Imports System   
-Imports System.Diagnostics   
-  
-Namespace Microsoft.Samples   
-  
-    Public Class TestClass   
-  
-        ' [...]   
-  
-        <DebuggerBrowsable(DebuggerBrowsableState.Never)> _   
-        Public ReadOnly Property LargeObject() As LargeObject   
-            Get   
-                ' Allocate large object   
-                ' [...]   
-            End Get   
-        End Property   
-  
-    End Class   
-  
-End Namespace  
-```  
-  
-```csharp  
-  
-      using System;   
-using System.Diagnostics;   
-  
-namespace Microsoft.Samples   
-{   
-    publicclass TestClass   
-    {   
-        // [...]   
-  
-        [DebuggerBrowsable(DebuggerBrowsableState.Never)]   
-        public LargeObject LargeObject   
-        {   
-            get   
-            {   
-                // Allocate large object   
-                // [...]   
-  
-        }  
-    }  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, özelliklerine dönüştürüleceğini ve olmayan alanlar gibi davranırlar değil çünkü, birkaç gereken birkaç yöntem içerir.  
-  
+|||
+|-|-|
+|TypeName|UsePropertiesWhereAppropriate|
+|CheckId|CA1024|
+|Kategori|Microsoft.Design|
+|Yeni Değişiklik|Yeni|
+
+## <a name="cause"></a>Sebep
+ Bir ortak veya korumalı yöntemi ile başlayan bir ada sahip `Get`parametre almayan ve dizisi olmayan bir değer döndürür.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Çoğu durumda, Özellikler verilerini temsil eden ve yöntemleri eylemleri gerçekleştirebilirsiniz. Özellikleri kullanmak kolaylaştırır alanları gibi erişilir. Bir yöntemi, aşağıdaki durumlardan birinde varsa, bir özellik olacak şekilde iyi bir adaydır:
+
+-   Bağımsız değişken almayan ve bir nesne durumu bilgilerini döndürür.
+
+-   Bir nesnenin durumu kısmı ayarlamak için tek bir bağımsız değişken kabul eder.
+
+ Alanları ise gibi özellikleri hareket etmesi gerektiğini; yöntem ayarlanmamışsa, bir özelliğe değiştirilmemelidir. Aşağıdaki durumlarda özellikleri daha iyi yöntemler şunlardır:
+
+-   Yöntemi, bir uzun süren işlem gerçekleştirir. Yöntemi, perceivably ayarlayın veya bir alanın değerini almak için gereken süreden daha yavaştır.
+
+-   Yöntemi, bir dönüştürme gerçekleştirir. Bir alan erişme depoladığı verilerin dönüştürülmüş bir sürümünü döndürmez.
+
+-   Get yöntemini gözlemlenebilir bir yan etkisi yoktur. Bir alanın değerini alma herhangi yan etkileri üretmez.
+
+-   Yürütme sırası önemlidir. Diğer işlemlerin tekrarlamasını üzerinde bir alanın değerini ayarlama bağlı değildir.
+
+-   Art arda iki kez yöntemi çağırma farklı sonuçlar oluşturur.
+
+-   Yöntem statik ancak çağıran tarafından değiştirilebilir. bir nesne döndürür. Bir alanın değerini alma alanı tarafından depolanan verileri değiştirmek arayan izin vermiyor.
+
+-   Yöntemi, bir dizi döndürür.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlal düzeltmek için bir özelliğe yöntemini değiştirin.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu kural bir uyarıdan yöntemi en az bir daha önce listelenen ölçütlerini karşılıyorsa engelleyin.
+
+## <a name="controlling-property-expansion-in-the-debugger"></a>Hata ayıklayıcı denetleme özelliği genişletme
+ Otomatik-genişletmek için hata ayıklayıcı istemediğiniz programcıları özelliği kullanmaktan kaçının bir nedenidir. Örneğin, özelliği büyük nesne ayırma ya da P/Invoke çağırma gerektirebilir, ancak hiçbir observable yan etkileri gerçekte olmayabilir.
+
+ Hata ayıklayıcı otomatik-aşmasını önlemek uygulayarak özellikleri <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Aşağıdaki örnekte bu öznitelik bir örnek özelliği için uygulanan gösterir.
+
+```vb
+Imports System
+Imports System.Diagnostics
+
+Namespace Microsoft.Samples
+
+    Public Class TestClass
+
+        ' [...]
+
+        <DebuggerBrowsable(DebuggerBrowsableState.Never)> _
+        Public ReadOnly Property LargeObject() As LargeObject
+            Get
+                ' Allocate large object
+                ' [...]
+            End Get
+        End Property
+
+    End Class
+
+End Namespace
+```
+
+```csharp
+
+      using System;
+using System.Diagnostics;
+
+namespace Microsoft.Samples
+{
+    publicclass TestClass
+    {
+        // [...]
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        public LargeObject LargeObject
+        {
+            get
+            {
+                // Allocate large object
+                // [...]
+
+        }
+    }
+}
+```
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, özelliklerine dönüştürüleceğini ve olmayan alanlar gibi davranırlar değil çünkü, birkaç gereken birkaç yöntem içerir.
+
  [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

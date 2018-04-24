@@ -2,8 +2,7 @@
 title: Pencereler görünümü | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bea2801baab38f84b8af8f2154f2be4f05dc205f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1379071a095f5ad1e0c28ec69ed813cb6212fff
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="windows-view"></a>Pencereler Görünümü
 İlk Spy ++ açtığınızda, Windows görünüm sistemdeki tüm windows ve denetimleri ağacı görüntüler. Pencere tanıtıcısı ve sınıf adı gösterilir. Geçerli masaüstü ağacının en üstünde bir penceredir. Diğer tüm windows masaüstünün alt öğeleri ve standart pencere hiyerarşi göre listelenmiştir. Üst Girintili expansible listelerindeki eşdüzey windows görünür.  

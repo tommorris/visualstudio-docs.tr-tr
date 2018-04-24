@@ -2,8 +2,7 @@
 title: Çıktı penceresi tanılama iletileri gönderme | Microsoft Docs
 ms.custom: ''
 ms.date: 04/25/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -29,11 +28,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b85d16fffe8ddf6e0523eecca09e044283b7e3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfe7cb6660d16c093889395a082c9fd58e5d0431
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Çıktı penceresi tanılama iletileri gönder
 Çalışma zamanı iletileri yazma **çıkış** penceresini kullanarak `Debug` sınıfı veya `Trace` parçasıdır sınıfı, <xref:System.Diagnostics> sınıf kitaplığı. Hata ayıklama sınıfı programınızın hata ayıklama sürümü yalnızca çıktı kullanın. Hata ayıklama ve yayın sürümleri çıktısında istiyorsanız, izleme sınıfı kullanın.  

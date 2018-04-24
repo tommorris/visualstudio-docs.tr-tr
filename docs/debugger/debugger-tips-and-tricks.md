@@ -2,8 +2,7 @@
 title: İpuçları ve püf noktaları Visual Studio Hata Ayıklayıcısı'ndaki | Microsoft Docs
 ms.custom: ''
 ms.date: 06/15/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - stepping
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d5a748541aa9c50b698eda441f38c88f1e791c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 729ea8e59f0b6efd6006308719cba19fbc8b5690
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Hata ayıklayıcı Visual Studio için üretkenlik ipuçları ve püf noktaları öğrenin
 
@@ -166,4 +165,4 @@ Bu Web günlüğü postaları ek ipuçları ve püf noktaları ve daha ayrıntı
 - [Visual Studio'da 7 gizli gems](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Klavye kısayolları](../ide/tips-and-tricks-for-visual-studio.md)
+[Klavye Kısayolları](../ide/tips-and-tricks-for-visual-studio.md)

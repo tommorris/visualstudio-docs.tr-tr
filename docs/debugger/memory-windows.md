@@ -2,8 +2,7 @@
 title: Hata ayıklayıcı değişkenleri için bellek görüntülemek | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
@@ -26,11 +25,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e2c43f48a1a91c35c770f5f7150972bebb1a1a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 550c5ffe641fac5bb2d080a892143bf3ff9744b0
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında bellek pencerelerini kullanma
 **Bellek** pencere, uygulamanız tarafından kullanılan bellek alanına bir görünüm sağlar. **İzleme** penceresinde **QuickWatch** iletişim kutusu, **otomobiller** penceresinde ve **Yereller** penceresini olan değişkenlerinin içeriğini göster belirli konumlara bellekte depolanır. Ancak **bellek** penceresi büyük ölçekli resim gösterir. Bu görünüm büyük (arabellekleri veya örneğin büyük dizeleri) de diğer windows gösterme veri parçaları incelemek için kullanışlı olabilir. Ancak, **bellek** penceresi verileri görüntülemek için sınırlı değildir. İçerik atanmamış bellekte verileri, kod veya Çöp rastgele bitleri olup her şeyi bellek alanını görüntüler.  

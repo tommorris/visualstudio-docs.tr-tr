@@ -2,8 +2,7 @@
 title: (Hata ayıklama arabirimi Erişim SDK'sı) Başlarken | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c3c6df3fc92370d939771a7e94334db7f2cfc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1fdfe560f22374c0b46305d096bea32a784babe6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Başlarken (Arabirim Erişimi SDK'sında Hata Ayıklama)
 Hata ayıklama arabirimi erişim (DIA) SDK yönerge belgeleri ve nasıl DIA API kullanılacağını anlatan bir örnek sağlar. Arabirimleri ve yöntemleri DIA SDK'ın .pdb ve .dbg dosyaları açmak ve içeriklerini sembolleri, değerleri, öznitelikler, adresleri ve diğer hata ayıklama bilgileri için arama özel uygulamalar geliştirmek için kullanın. Bu SDK başvuru tabloları için C++ uygulamalarında bulunan simgeleri ile ilişkili özellikleri de sağlar.  
@@ -33,7 +32,7 @@ Hata ayıklama arabirimi erişim (DIA) SDK yönerge belgeleri ve nasıl DIA API 
   
 -   Örnek derleme için visual Studio tümleşik geliştirme ortamı (IDE)  
   
- DIA SDK ile Visual Studio normal şekilde yüklendiğinden ve varsayılan konumuna *[sürücü]*\Program Visual Studio 9.0\DIA SDK. Eklenecek kullanmak için yapmanız gereken tek şey şekilde yüklemesinin bir parçası olarak DIA SDK uygulayan msdia90.dll otomatik olarak kaydedilir `dia2.h` program ve bağlantı `diaguids.lib`.  
+ DIA SDK ile Visual Studio normal şekilde yüklendiğinden ve varsayılan konumuna *[sürücü]* \Program Visual Studio 9.0\DIA SDK. Eklenecek kullanmak için yapmanız gereken tek şey şekilde yüklemesinin bir parçası olarak DIA SDK uygulayan msdia90.dll otomatik olarak kaydedilir `dia2.h` program ve bağlantı `diaguids.lib`.  
   
  Başlık: include\dia2.h  
   

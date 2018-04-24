@@ -2,8 +2,7 @@
 title: Genel sekmesi, pencere Özellikleri iletişim kutusu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, General Tab
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0186b03bd599a3644321b186dbd19c8d7338aca5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f762d935edab5720ccd9add155dac3d0e5f2f186
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Genel Sekme, Pencere Özellikleri İletişim Kutusu
 Kullanım **genel** sekmesi seçili penceresi hakkında bilgi gösterir. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı taşımak [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin, sonra seçin **özellikleri** gelen **Görünüm** menüsü.  

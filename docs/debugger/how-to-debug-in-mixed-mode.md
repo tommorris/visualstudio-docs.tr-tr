@@ -2,8 +2,7 @@
 title: 'Nasıl yapılır: karışık modda hata ayıklama | Microsoft Docs'
 ms.custom: ''
 ms.date: 06/19/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b39191422eeb4c808faf858fc1ef8abb9a0a41e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 09d18fec3e8d3830764846d1c25c9109b79b6fe4
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Nasıl Yapılır: Karışık Modda Hata Ayıklama
 Aşağıdaki yordamlar, karışık mod hata ayıklaması olarak da bilinen, hem yönetilen hem de yerel kodda hata ayıklama açıklar. Olup DLL ya da uygulama yerel kodda yazılır bağlı olarak bunu yapmak için iki senaryo vardır:  

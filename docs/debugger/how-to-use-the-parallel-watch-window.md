@@ -2,8 +2,7 @@
 title: Paralel iş parçacıklarında değişkenleri bir izleme ayarlama | Microsoft Docs
 ms.custom: ''
 ms.date: 04/25/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelwatch
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7909553271e138ab3bddaa1f4d509a4f4b0b293d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a142b512c5bbaf5d93dc0302aa39db92fb7c7ae
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Visual Studio'da paralel iş parçacıklarında değişkenleri bir izleme ayarlama
 Paralel Gözcü penceresi içinde aynı anda tek bir ifade birden çok iş parçacığı üzerinde tutan değerleri görüntüleyebilirsiniz. Her satır bir uygulamada çalıştırılan bir iş parçacığını temsil eder, ancak bir iş parçacığı içinde birden çok satır temsil edilebilir. Daha açık belirtmek gerekirse, her satır, işlev imzası geçerli yığın çerçevesinde işlevi eşleşen bir işlev çağrısını temsil eder. Sıralama, yeniden sıralamak, kaldırmak ve sütunları öğeleri grubu. Bayrak, bayrakla dondurmak, (askıya) ve (devam) iş parçacıklarının çözme. Aşağıdaki sütunlar görüntülenir **paralel Gözcü** penceresi:  

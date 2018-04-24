@@ -2,8 +2,7 @@
 title: Otomatik değişkenler ve yerel Windows değişkenler inceleyin. | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3bad753a18352ebbf68bef5f398a8039a9c4dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Otomatik değişkenler değişkenleri ve Visual Studio Yereller Windows inceleyin.
 **Otomobiller** penceresi (hata ayıklama, **CTRL + ALT + V, A**, veya **hata ayıklama > Windows > otomobiller**) ve **Yereller** (hata ayıklama penceresi **CTRL + ALT + V, L**, veya **hata ayıklama > Windows > Yereller**) hata ayıklarken değişken değerleri görmek istediğinizde oldukça faydalıdır. **Yereller** penceresi, işlev veya şu anda yürütülmekte olan yöntem genellikle olan yerel kapsamda tanımlanan değişkenler görüntüler. **Otomobiller** penceresi geçerli satırında (hata ayıklayıcı durduğu koyun) kullanılan değişkenler görüntüler. Tam olarak hangi değişkenleri Bu pencerede görüntüler farklı dillerde farklıdır. Bkz: [değişkenleri otomobiller penceresinde görüntülenecek?](#bkmk_whatvariables) aşağıda.  

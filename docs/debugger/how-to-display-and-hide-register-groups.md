@@ -2,8 +2,7 @@
 title: 'Nasıl yapılır: görüntüleme ve gizleme yazmaç gruplarını | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.registergroups
@@ -22,11 +21,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 135a424281af0a65dc894eb8ae3aa3477daaa15e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a06c6da95cfbdd899557f228d607d1cb06b0ecb3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Nasıl Yapılır: Yazmaç Gruplarını Görüntüleme ve Gizleme
 **Kaydeder** penceredir yalnızca adres düzeyi hata ayıklama içinde etkinse kullanılabilir **seçenekleri** iletişim kutusu, **hata ayıklama** düğümü, **genel**kategorisi.  

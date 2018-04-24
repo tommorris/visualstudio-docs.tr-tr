@@ -2,8 +2,7 @@
 title: Visual Studio'da çok iş parçacıklı uygulamalarda hata ayıklama | Microsoft Docs
 ms.custom: ''
 ms.date: 09/05/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
@@ -24,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 276263f870337031cabbe466711e0a125b42a51c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd789bf9b820e13a265cceffbf3c6000ab4f0331
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio'da Çok İş Parçacıklı Uygulamalarda Hata Ayıklama
 Bir iş parçacığı, işletim sistemi işlemci zamanı tarafından ayrılan yönergeler dizisidir. İşletim sisteminde çalışan her işlem en az bir iş parçacığından oluşur. Birden çok iş parçacığı bulunan işlemlerin çok iş parçacıklı denir.  

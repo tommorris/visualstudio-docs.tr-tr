@@ -2,8 +2,7 @@
 title: Genel Bakış (hata ayıklama arabirimi Erişim SDK'sı) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -24,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6494ebe261128ba700cbb92467db78a3d77a3600
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 807690edaf5626e3ec007a005717622592c14ce9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Genel Bakış (Arabirim Erişimi SDK'sında Hata Ayıklama)
 Microsoft hata ayıklama bilgileri erişmek için DIA SDK'yı kullanın. Microsoft hata ayıklama bilgileri biçimi değiştiğinde kodunuzu yeniden yazma gereğini ortadan kaldırır API kümesi bir COM tabanlı DIA SDK'sı sağlar. DIA SDK'sı tarafından oluşturulan .pdb ve .dbg dosyaları bulunan hata ayıklama bilgileri önceki sürümlerinin bir dizi okuma da sağlar [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 5.0 ve sonraki sürümleri.  

@@ -2,8 +2,7 @@
 title: İşlem arama iletişim kutusu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process Search
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab606ecf245b0c2e2e33935a620a4593bce16ebf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a5f133833114398ceb257fcceeaab7e7f4f5da2c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="process-search-dialog-box"></a>İşlem Arama İletişim Kutusu
 Bulmak ve belirli bir işlemde düğümü seçmek için bu iletişim kutusunu kullanın [işlemleri Görünüm](../debugger/processes-view.md). Bu iletişim kutusunu görüntülemek için odağı taşımak bir **işlemleri** Görünümü penceresi. Ardından **bulma işlemi** gelen **arama** menüsü.  

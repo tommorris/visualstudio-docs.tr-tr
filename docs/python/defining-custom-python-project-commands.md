@@ -1,12 +1,9 @@
 ---
 title: Python projeleri için özel menü komutlarını tanımlama
 description: Visual Studio'da Python proje bağlam menüsü özel komutları eklemek için proje ve hedefleri dosyaların nasıl düzenleneceğini gösterir. Komut, çalıştırılabilir program, komut dosyaları, modüller, satır içi kod parçacıkları ve PIP çağırabilirsiniz.
-ms.custom: ''
 ms.date: 02/02/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -14,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d4a0e9834678ebe8c1800381de67d95bebc5ad38
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 93d7e01037712d633ed4c23534163924647183f4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Özel komutlar Python projeleri için tanımlama
 

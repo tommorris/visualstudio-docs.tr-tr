@@ -1,11 +1,9 @@
 ---
 title: Bir proje için bir ortam seçme
 description: Visual Studio Çözüm Gezgini'nde, belirli bir Python yorumlayıcısı (ortamı) için her zaman kullanım verilen her proje için varsayılan ortam yoksayılıyor atayabilirsiniz. Ayrıca, oluşturabilir ve sanal ortamlarını yönetebilir.
-ms.custom: ''
 ms.date: 03/21/2018
-ms.technology:
-- devlang-python
-ms.devlang: python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -13,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 50be456682594b881671a63364f45745ebb85409
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Bir Python yorumlayıcısı ve ortam kullanmak için bir proje ile seçme
 
@@ -108,7 +106,7 @@ Başka bir sanal ortam zaten oluşturduysanız, proje için şu şekilde etkinle
 
 Yeni paketleri yüklemek için ortam sağ tıklatın ve seçin **Python paketini yükle...**  geçmek için **paketleri** sekmesinde **Python ortamları** penceresi. Bir arama girin terim (genellikle paket adı) ve Visual Studio eşleşen paketleri görüntüler.
 
-Visual Studio içinde gelen yüklenen paketler (ve bağımlılıklarını) [Python paket dizini (Pypı)](https://pypi.python.org/pypi), burada da kullanılabilir paketler için arama yapabilirsiniz. Visual Studio'nun durum çubuğu ve çıktı penceresi yükleme hakkında bilgi gösterir. Bir paketi kaldırmak için sağ seçin **kaldırmak**.
+Visual Studio içinde gelen yüklenen paketler (ve bağımlılıklarını) [Python paket dizini (Pypı)](https://pypi.org), burada da kullanılabilir paketler için arama yapabilirsiniz. Visual Studio'nun durum çubuğu ve çıktı penceresi yükleme hakkında bilgi gösterir. Bir paketi kaldırmak için sağ seçin **kaldırmak**.
 
 Görüntülenen girişler her zaman doğru olmayabilir ve yükleme ve kaldırma güvenilir veya kullanılabilir olmayabilir unutmayın. Visual Studio varsa, PIP Paket Yöneticisi kullanır ve indirir ve gerektiğinde yükler. Visual Studio easy_install Paket Yöneticisi'ni de kullanabilirsiniz. Kullanarak yüklü olan paketleri `pip` veya `easy_install` komut satırından da görüntülenir.
 

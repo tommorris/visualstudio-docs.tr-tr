@@ -1,15 +1,14 @@
 ---
-title: "Blok Seçi | Microsoft Docs"
+title: Blok seçimi
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: dfc46f3297dccda0692332efc451aa04e7997d36
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fe304ea9ca76f34c403cea6e028603fce63accba
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="block-selection"></a>Blok seçimi
 Mac için Visual Studio seçin, kesme, kopyalama ve kodunuzu bölümlerini yapıştırmak kolay hale getirir. Dikdörtgen kod bloklarını vurgulanır ve kullanılarak seçilen **Option + sürükleyin** kod bloğunu komutunu. Bu blok seçim içinde biçimlendirme blok yapıştırılırken korunur.

@@ -3,7 +3,7 @@ title: ToolTaskExtension taban sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - MSBuild.ToolTask.ToolCommandFailed
 dev_langs:
@@ -12,16 +12,16 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d725779cf8ba81868163482d2421c9f61dfd937
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 01d2abbed85b891378b0a9d5c4a41029bdc46cf3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension Taban Sınıfı
 Birçok görevi devralınmalıdır <xref:Microsoft.Build.Tasks.ToolTaskExtension> devraldığı sınıfı <xref:Microsoft.Build.Utilities.ToolTask> sınıfı, kendisi <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu devralma zincirini aktarımlar görevleri birkaç parametre ekler. Bu parametreler, bu belgede listelenir.  

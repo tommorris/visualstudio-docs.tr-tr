@@ -2,8 +2,7 @@
 title: Visual Studio'da Uygulama performansı profil | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -18,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e19b88e5031222f45f0d5f71167c13ef5ef65d7e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f4415956aaa819881584b4298285ff878c1d7ccf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Visual Studio'da profili uygulama performansı
 Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözümlemek için kullanabilirsiniz. Bu yordam nasıl kullanılacağını gösterir **CPU kullanımı** sekmesi, uygulamanız için performans verilerini almak için tanılama araçları. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET, dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.

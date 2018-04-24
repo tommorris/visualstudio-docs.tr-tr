@@ -2,8 +2,7 @@
 title: İşlevler görünümü - izleme verileri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Function view
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c03d4f10857befb9626fed155e7271c8aee20cd1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ddbffefe729f0b4c5b89b46b96b32a90f05f297
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="functions-view---instrumentation-data"></a>İşlevler görünümü - izleme verileri
 İşlevler rapor görünümü profil oluşturma verileri işlevi adlarına göre listeler.  

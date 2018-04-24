@@ -1,10 +1,8 @@
 ---
-title: 'CA2119: Özel arabirimleri karşılayan yöntemleri mühürleyin | Microsoft Docs'
-ms.custom: ''
+title: 'CA2119: Özel arabirimleri karşılayan yöntemleri mühürleyin'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
 - CA2119
@@ -17,56 +15,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f54b6c58e30145759881a8a612ad6f7edfd044d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e80462b53e68d2feff540b3fd2ae4cfbcabc6da8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Özel arabirimleri karşılayan yöntemleri mühürleyin
-|||  
-|-|-|  
-|TypeName|SealMethodsThatSatisfyPrivateInterfaces|  
-|CheckId|CA2119|  
-|Kategori|Microsoft.Security|  
-|Yeni Değişiklik|Yeni|  
-  
-## <a name="cause"></a>Sebep  
- Geçersiz kılınabilir yöntemi uygulaması devralınabilir bir ortak türü sağlar bir `internal` (`Friend` Visual Basic'te) arabirimi.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Arabirim yöntemleri uygulama türüne göre değiştirilemez ortak erişilebilirlik vardır. Bir iç arabirim arabirimi tanımlayan derleme dışında uygulanacak amaçlanmamıştır bir sözleşme oluşturur. Bir iç arabirimini kullanarak bir yöntem uygulayan genel bir tür `virtual` (`Overridable` Visual Basic'te) değiştiricisi dışında derleme türetilmiş bir tür tarafından geçersiz kılınacak yöntemi sağlar. İkinci bir tür tanımlayıcı derlemesindeki yöntemini çağırır ve yalnızca iç sözleşme bekler, bunun yerine, bir dış derlemesindeki geçersiz kılınan yöntemi yürütüldüğünde davranışı tehlikeye. Bu bir güvenlik açığı oluşturur.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlal düzeltmek için aşağıdakilerden birini kullanarak derlemenin dışından kılınmasının yöntemi engelle:  
-  
--   Bildiren türü olun `sealed` (`NotInheritable` Visual Basic'te).  
-  
--   Bildiren türü erişilebilirliğini değiştirme `internal` (`Friend` Visual Basic'te).  
-  
--   Tüm ortak oluşturucu bildiren türünden kaldırın.  
-  
--   Kullanmadan yöntemi uygulaması `virtual` değiştiricisi.  
-  
--   Yöntem açıkça uygulama.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu uyarıdan gizlemek güvenlidir inceledikten sonra hiçbir güvenlik sorunları varsa, kural dışında derleme yöntemi geçersiz kılınırsa Etkilenme olabilir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir tür gösterir `BaseImplementation`, bu kural, ihlal ediyor.  
-  
+|||
+|-|-|
+|TypeName|SealMethodsThatSatisfyPrivateInterfaces|
+|CheckId|CA2119|
+|Kategori|Microsoft.Security|
+|Yeni Değişiklik|Yeni|
+
+## <a name="cause"></a>Sebep
+ Geçersiz kılınabilir yöntemi uygulaması devralınabilir bir ortak türü sağlar bir `internal` (`Friend` Visual Basic'te) arabirimi.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Arabirim yöntemleri uygulama türüne göre değiştirilemez ortak erişilebilirlik vardır. Bir iç arabirim arabirimi tanımlayan derleme dışında uygulanacak amaçlanmamıştır bir sözleşme oluşturur. Bir iç arabirimini kullanarak bir yöntem uygulayan genel bir tür `virtual` (`Overridable` Visual Basic'te) değiştiricisi dışında derleme türetilmiş bir tür tarafından geçersiz kılınacak yöntemi sağlar. İkinci bir tür tanımlayıcı derlemesindeki yöntemini çağırır ve yalnızca iç sözleşme bekler, bunun yerine, bir dış derlemesindeki geçersiz kılınan yöntemi yürütüldüğünde davranışı tehlikeye. Bu bir güvenlik açığı oluşturur.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlal düzeltmek için aşağıdakilerden birini kullanarak derlemenin dışından kılınmasının yöntemi engelle:
+
+-   Bildiren türü olun `sealed` (`NotInheritable` Visual Basic'te).
+
+-   Bildiren türü erişilebilirliğini değiştirme `internal` (`Friend` Visual Basic'te).
+
+-   Tüm ortak oluşturucu bildiren türünden kaldırın.
+
+-   Kullanmadan yöntemi uygulaması `virtual` değiştiricisi.
+
+-   Yöntem açıkça uygulama.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu uyarıdan gizlemek güvenlidir inceledikten sonra hiçbir güvenlik sorunları varsa, kural dışında derleme yöntemi geçersiz kılınırsa Etkilenme olabilir.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, bir tür gösterir `BaseImplementation`, bu kural, ihlal ediyor.
+
  [!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
  [!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
- [!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, önceki örnekte sanal yöntemi uyarlamasını yararlanan.  
-  
+ [!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, önceki örnekte sanal yöntemi uyarlamasını yararlanan.
+
  [!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
  [!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
- [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Arabirimleri](/dotnet/csharp/programming-guide/interfaces/index)   
- [Arabirimler](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)
+ [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
+
+## <a name="see-also"></a>Ayrıca Bkz.
+ [Arabirimleri](/dotnet/csharp/programming-guide/interfaces/index) [arabirimleri](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)

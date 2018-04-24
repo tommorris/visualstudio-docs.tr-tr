@@ -2,8 +2,7 @@
 title: Yürütme Profil raporu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.execution
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2f878efffd658cbfa243ae4947613603db59777
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 93a6d699845d8cce3eb1a410720d4e5fbbfd69d0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="execution-profile-report"></a>Yürütme Profil Raporu
 Yürütme Profil raporu geleneksel örnekleme profilidir. Örnekler, ne zaman bir iş parçacığı bir mantıksal çekirdeği üzerinde çalıştığından ve örnek yığınları birikmiş kümesini harmanlama tarafından tipik çağrı ağacı eşzamanlılık görselleştiricisi oluşturur dönemlerde yaklaşık her milisaniyelik alınır. Bu tablodaki verileri uygulanabilir bu filtreler ve geçerli zaman aralığı ve gizli iş parçacıkları tarafından etkilenebilir:  

@@ -2,8 +2,7 @@
 title: 'Nasıl yapılır: rapor görünümü sütunlarını özelleştirme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.test.columnchooser.dialogbox
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d96f1b4674d05762317a0ce06cc076b6b62de86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c030d001932d5b1cdeaa4c9b4a2ed82b321ee56f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-customize-report-view-columns"></a>Nasıl yapılır: Rapor Görünümü Sütunlarını Özelleştirme
 Performans araçları Visual Studio Team System geliştirme sürümü tümleşik geliştirme ortamına (IDE) sorunsuz bir kullanıcı deneyimi sağlamak için tam olarak tümleşiktir. Aşağıdaki liste, ekleme, kaldırma ve sütunları yeniden düzenleme özelleştirilmiş görünüm temsilcisidir:  

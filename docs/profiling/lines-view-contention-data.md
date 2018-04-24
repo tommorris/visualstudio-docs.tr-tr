@@ -2,8 +2,7 @@
 title: Satırlar görünümü - çakışma verileri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4207808e224cd2dbf31d737c7f7c5c967dfbae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b01c8aa176fe92cb4309990693063dcd27cf15a8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="lines-view---contention-data"></a>Satırlar görünümü - çakışma verileri
 Satırlar görünümü Çekişme veri örnekleri profil Çalıştır toplanan yükleyen yürütülmekte deyimleri için performans verilerini listeler. Bir kaynak dosyasında bir deyim bir kaynak dosyasında birden fazla satırı kapsayabilir ve tek bir satıra birden fazla deyim içerebilir.  

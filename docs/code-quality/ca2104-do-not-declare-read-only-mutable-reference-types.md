@@ -1,10 +1,8 @@
 ---
-title: 'CA2104: Okuma yalnızca kesilebilir başvuru türleri bildirmeyin | Microsoft Docs'
-ms.custom: ''
+title: 'CA2104: Salt okunur kesilebilir başvuru türleri bildirmeyin'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
 - CA2104
@@ -17,39 +15,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e14bc99d49ed7e089b3d6d6f63f49eb5b8d3ecae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fcf9379f9950264aca5c76355867ccb44ba40282
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Salt okunur kesilebilir başvuru türleri bildirmeyin
-|||  
-|-|-|  
-|TypeName|DoNotDeclareReadOnlyMutableReferenceTypes|  
-|CheckId|CA2104|  
-|Kategori|Microsoft.Security|  
-|Yeni Değişiklik|Bölünemez|  
-  
-## <a name="cause"></a>Sebep  
- Dışarıdan görünen bir tür, kesilebilir başvuru türü olan dışarıdan görünen bir salt okunur alan içerir.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Kesilebilir tür, örnek verileri değiştirilebilen bir türdür. <xref:System.Text.StringBuilder?displayProperty=fullName> Sınıfı kesilebilir başvuru türünde bir örnek verilmiştir. Sınıfının bir örneği değerini değiştirebilir üye içeriyor. Bir sabit başvuru türü örneğidir <xref:System.String?displayProperty=fullName> sınıfı. Örneği oluşturulduktan sonra değeri hiçbir zaman değiştirebilirsiniz.  
-  
- Salt okunur değiştiricisi ([readonly](/dotnet/csharp/language-reference/keywords/readonly) C# ' ta, [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) içinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], ve [const](/cpp/cpp/const-cpp) C++'ta) bir başvuru türü alan (c++ işaretçisi) alan engeller Başvuru türü farklı bir örneği tarafından değiştirildi. Ancak, değiştiricisi üzerinden başvuru türü değiştiren örnek veri alanının engellemez.  
-  
- Salt okunur dizi alanları bu kuraldan muafiyet ancak bunun yerine ihlal neden [CA2105: dizi alanları okunamadığı için yalnızca](../code-quality/ca2105-array-fields-should-not-be-read-only.md) kuralı.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlal düzeltmek için salt okunur değiştiricisi kaldırın veya önemli bir değişiklik kabul edilebilir ise, alan bir değişmez tür ile değiştirin.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Alan türü değişmez ise bir uyarı bu kuraldan gizlemek güvenlidir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bu kural ihlal neden olan bir alan bildiriminde gösterir.  
-  
+|||
+|-|-|
+|TypeName|DoNotDeclareReadOnlyMutableReferenceTypes|
+|CheckId|CA2104|
+|Kategori|Microsoft.Security|
+|Yeni Değişiklik|Bölünemez|
+
+## <a name="cause"></a>Sebep
+ Dışarıdan görünen bir tür, kesilebilir başvuru türü olan dışarıdan görünen bir salt okunur alan içerir.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Kesilebilir tür, örnek verileri değiştirilebilen bir türdür. <xref:System.Text.StringBuilder?displayProperty=fullName> Sınıfı kesilebilir başvuru türünde bir örnek verilmiştir. Sınıfının bir örneği değerini değiştirebilir üye içeriyor. Bir sabit başvuru türü örneğidir <xref:System.String?displayProperty=fullName> sınıfı. Örneği oluşturulduktan sonra değeri hiçbir zaman değiştirebilirsiniz.
+
+ Salt okunur değiştiricisi ([readonly](/dotnet/csharp/language-reference/keywords/readonly) C# ' ta, [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) içinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], ve [const](/cpp/cpp/const-cpp) C++'ta) bir başvuru türü alan (c++ işaretçisi) alan engeller Başvuru türü farklı bir örneği tarafından değiştirildi. Ancak, değiştiricisi üzerinden başvuru türü değiştiren örnek veri alanının engellemez.
+
+ Salt okunur dizi alanları bu kuraldan muafiyet ancak bunun yerine ihlal neden [CA2105: dizi alanları okunamadığı için yalnızca](../code-quality/ca2105-array-fields-should-not-be-read-only.md) kuralı.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlal düzeltmek için salt okunur değiştiricisi kaldırın veya önemli bir değişiklik kabul edilebilir ise, alan bir değişmez tür ile değiştirin.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Alan türü değişmez ise bir uyarı bu kuraldan gizlemek güvenlidir.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, bu kural ihlal neden olan bir alan bildiriminde gösterir.
+
  [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CPP/ca2104-do-not-declare-read-only-mutable-reference-types_1.cpp)]
  [!code-csharp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CSharp/ca2104-do-not-declare-read-only-mutable-reference-types_1.cs)]
  [!code-vb[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/VisualBasic/ca2104-do-not-declare-read-only-mutable-reference-types_1.vb)]

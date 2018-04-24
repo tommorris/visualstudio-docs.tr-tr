@@ -2,8 +2,7 @@
 title: 'Nasıl yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - components, bootstrapping
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f1d71d9bbabeb5e912ba01cf6237ddd94d00b3b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d803ae651d75dd6195e4046b86a77d46d3174fc4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulamasıyla Önkoşulları Yükleme
 Tüm [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları gerektirir çalıştırılabilmesi için önce .NET Framework'ün doğru sürümünü bir bilgisayara yüklenir; pek çok uygulama diğer Önkoşullar da vardır. Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama, uygulamanızın birlikte paketlenmesi önkoşul bileşenleri kümesini seçebilirsiniz. Yükleme sırasında her önkoşulu zaten olup olmadığını belirlemek bir denetim gerçekleştirilir; Bunu yüklemeden önce değil yüklenecekse [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.  

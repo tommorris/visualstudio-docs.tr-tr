@@ -2,8 +2,7 @@
 title: 'Nasıl yapılır: özel yerel ayara sahip olan bir projeyi yayımlama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,16 +17,16 @@ helpviewer_keywords:
 - macros, deploying with
 - macros, publishing with
 ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ac0441a42070ce0b7ac9edc18c826961ebb83f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5e8975c362039e347700e4256036998e8386c2e2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Nasıl yapılır: Özel Yerel Ayara Sahip Olan Bir Projeyi Yayımlama
 Bir uygulamanın farklı yerel ayarlara sahip bileşenleri içeren için seyrek değil. Bu senaryoda, birkaç projesi olan bir çözümü oluşturun ve sonra her yerel ayar için ayrı projeleri yayımlamak. Bu yordam bir makrosu 'tr' yerel ayarını kullanarak bir çözümde ilk projeyi yayımlamak için nasıl kullanılacağını gösterir. 'Tr' dışındaki yerel ayar ile bu yordamı denemek istiyorsanız, ayarladığınızdan emin olun `localeString` (örneğin, 'de' veya 'de-DE') kullanarak yerel eşleşecek şekilde makrosu içinde.  

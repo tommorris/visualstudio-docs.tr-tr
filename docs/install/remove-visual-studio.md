@@ -1,10 +1,10 @@
 ---
 title: Visual Studio 2017 kaldırma | Microsoft Docs
-description: Visual Studio, adım adım kaldırmayı öğrenin.
+description: Visual Studio, bilgisayarınızdan adım adım tamamen kaldırmak öğrenin.
 ms.custom: ''
 ms.date: 09/12/2017
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - uninstall
@@ -21,11 +21,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7facd4b588ef87136a15db4a09fbc1770ff440
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a143502c875acabca7b36bdd3070e5a441b842bd
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="remove-visual-studio"></a>Visual Studio Kaldır
 
@@ -51,15 +51,18 @@ Aşağıdaki yönergeleri aşağıdaki davranış ile farklı komut satırı ana
 Bulamadı, `InstallCleanup.exe` Visual Studio yükleyicisi dizini altında - her zaman bulunan `%ProgramFiles(x86)%\Microsoft Visual Studio` -yönergelerini izleyin [Visual Studio yükleme](install-visual-studio.md) ve iş yükünü seçme ekranı görüntülendiğinde, Kapat Pencere ve yukarıdaki yeniden adımları izleyin.
 
 ## <a name="get-support"></a>Destek alma
+
 Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
+
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 * [Visual Studio 2017 yükleyin](install-visual-studio.md)
 * [Visual Studio 2017 güncelleştir](update-visual-studio.md)
 * [Visual Studio 2017 değiştirme](modify-visual-studio.md)

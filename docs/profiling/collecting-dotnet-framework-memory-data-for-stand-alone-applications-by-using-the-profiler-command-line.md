@@ -2,8 +2,7 @@
 title: Profil oluşturucu komut satırını kullanarak .NET Framework bellek verileri toplamak | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: af52479710946098c004dd62987a0f73d0a525cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 71de1a690e872ad11e776a86dcfdb47ba41e2f97
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Profil oluşturucu komut satırını kullanarak .NET Framework bellek verileri toplama
 

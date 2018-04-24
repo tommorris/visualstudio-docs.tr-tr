@@ -2,8 +2,7 @@
 title: Rapor görünümlerini filtreleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a591f93c2cfb4cc744d8bde3a7d48a7c678d28a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c613e4b200df0153827fb10013416211a2eb2062
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="filtering-report-views"></a>Rapor Görünümlerini Filtreleme
 Profil oluşturma veri dosyalarıyla performans raporu görünümlerde görüntülenmesi ve verilen rapor dosyaları için profil oluşturma verileri sınırlamak için için filtreler uygulayabilirsiniz. Belirli işlemleri ve iş parçacıklarını verileri sınırlayabilir ve zaman damgası değerlerini arasındaki verileri için bir rapor sınırlayabilirsiniz. Dosya filtreleri Kaydet ve kaydedilmiş filtre içeri aktararak Bu filtre farklı bir profil oluşturma veri dosyası oluşturun.  

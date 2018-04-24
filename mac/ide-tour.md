@@ -1,16 +1,15 @@
 ---
-title: "Visual Studio Mac tur için | Microsoft Docs"
-description: "Mac için Visual Studio macOS ASP.NET Core Web siteleri ve Xamarin iOS, Android, Mac ve Xamarin.Forms projelerde dahil olmak üzere, .NET uygulamaları oluşturmak için bir tümleşik geliştirme ortamı sağlar."
+title: Visual Studio için Mac turu
+description: Mac için Visual Studio macOS ASP.NET Core Web siteleri ve Xamarin iOS, Android, Mac ve Xamarin.Forms projelerde dahil olmak üzere, .NET uygulamaları oluşturmak için bir tümleşik geliştirme ortamı sağlar.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 5fdac97248ce76157012ef913ea9057a4076e3c5
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: f81ae65090e79c7ab758be5c080b91e4b3bd8dfc
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio için Mac turu
 

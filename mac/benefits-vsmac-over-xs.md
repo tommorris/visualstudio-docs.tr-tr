@@ -1,18 +1,19 @@
 ---
-title: "Visual Studio için Xamarin Studio üzerinden Mac yararları | Microsoft Docs"
+title: Visual Studio için Xamarin Studio üzerinden Mac yararları
+description: ''
+ms.topic: overview
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
-ms.openlocfilehash: 08e693e92d6d07da21f8230f9c1de49f071c05e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: db4a328bceb79c1b99fdea95da89cc6cc7451523
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Visual Studio için Xamarin Studio üzerinden Mac yararları 
- 
+
 Visual Studio Mac için Xamarin Studio Mac üzerinde tam özellikli bir IDE olarak değiştirilmiştir Web uygulamaları ve Hizmetleri, platformlar arası mobil ve Masaüstü uygulamaları ve oyunları geliştirmenize olanak tanıyan özellikler sağlar. Ayrıca, Azure'a yayımlama veya Azure işlevlerin oluşturulması anlamına olup Azure ile çok kolay tümleştirme kolaylaştırır. Her şeyin tam özellikli Kaynak Düzenleyici, güçlü bir hata ayıklayıcı, özelleştirilebilir bir çalışma alanı, git tümleştirmesi ve yerel olarak Mac için tasarlanmış zengin uzantı sistemi de dahil olmak üzere modern bir IDE gelen beklediğiniz sahip 
 
 Diğer özellikler şunlardır: 
@@ -48,7 +49,7 @@ C# 7 kod Mac'inizde yazma yalnızca Visual Studio Mac için sunulan
 
 ## <a name="web-development"></a>Web geliştirme  
 
-### <a name="aspnet-core"></a>ASP.NET Çekirdeği 
+### <a name="aspnet-core"></a>ASP.NET Core 
 
 Mac için Visual Studio dışında kutusunu MVC ve Web API projeleri için ASP.NET Core şablonlar içerir.
  
@@ -153,7 +154,7 @@ Xamarin platformlar arası özellikleri her zaman birinci sınıf özelliği Xam
 
 ### <a name="ios-and-mac"></a>iOS ve Mac 
 
-* [iOS imzalama iş akışı güncelleştirmeleri](https://developer.xamarin.com/guides/cross-platform/macios/apple-account-management/) 
+* [iOS imzalama iş akışı güncelleştirmeleri ](https://developer.xamarin.com/guides/cross-platform/macios/apple-account-management/) 
     * İmzalama kimlikleri oluşturmak ve bunları yerel Anahtarlığa yükleyin. 
     * Sağlama profilleri oluşturun. 
     * Bir imza kimliği için varolan bir profili ekleyin.
@@ -161,7 +162,7 @@ Xamarin platformlar arası özellikleri her zaman birinci sınıf özelliği Xam
 * iOS 11, watchOS 4 ve tvOS 2 yalnızca Visual Studio'da Mac için Xamarin Studio desteklenmez 
 * MacOS yüksek Sierra yalnızca Visual Studio'da Mac için Xamarin Studio desteklenmez 
 
-### <a name="cross-platform"></a>Platformlar arası 
+### <a name="cross-platform"></a>Çoklu Platform 
 
 * [Xamarin Canlı Player](https://developer.xamarin.com/guides/cross-platform/live/) (**Önizleme**) 
 * [Xamarin IOT](https://developer.xamarin.com/guides/cross-platform/iot/) (**Önizleme**) 

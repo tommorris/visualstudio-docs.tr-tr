@@ -2,8 +2,7 @@
 title: Geçerli sekme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.current
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f5628091ed462a08173bbaef7dcb5b873e1ec18
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7855ddd258faf6b5c7b4b7825a67171d0fce0818
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="current-tab"></a>Geçerli Sekme
 Tıklayarak **geçerli** sekmesinde, gördüğünüz bir çağrı yığını (varsa) olan en yakın zaman çizelgesi geçerli seçim noktaya CPU iş parçacığı kesimi seçtiyseniz.  Bu durumda, seçim noktası siyah ok veya yukarıdaki zaman çizelgesi düzeltme işareti ile temsil edilir. Engelleme kesimi seçildiğinde, hiçbir yürütme olduğundan şapka görüntülenmez. Ancak, kesim hala vurgulanır ve çağrı yığını görüntülenir.  

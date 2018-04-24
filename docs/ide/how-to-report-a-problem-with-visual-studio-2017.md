@@ -10,11 +10,11 @@ manager: douge
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: a87d48007abc08044d41d6bb65f5511b955c45bc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eacb6ba97f79f2c66444bc79b11c51ef01a50672
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Visual Studio 2017 ile ilgili bir sorun bildirme
 
@@ -70,7 +70,7 @@ Zaten yapmadıysanız, oturum açma Visual Studio için önce bir sorunu bildiri
 
 ### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>Visual Studio Yükleyicisi'ni kullanarak bir sorunu bildirin
 
-Visual Studio yüklemeyi tamamlayamıyor veya Visual Studio içinde geri bildirim aracı erişemez, Visual Studio Yükleyicisi'ni kullanarak bir sorun bildirebilirsiniz. Bunu yapmak için Visual Studio yükleyicisi sağ üst köşesinde geri bildirim simgesini seçin.
+Visual Studio yüklemeyi tamamlayamıyor veya Visual Studio içinde geri bildirim aracı erişemiyor kullanarak bir sorun raporlayabilirsiniz **Visual Studio yükleyicisi**. Bunu yapmak için geri bildirim simgesine sağ üst köşesinde seçin **Visual Studio yükleyicisi**.
 
  ![Geri bildirim Aracı'nı açmak için Visual Studio yükleyicisi geri bildirim sağlayın düğmeye sekmesi](../install/media/report-a-problem.png)
 
@@ -82,7 +82,7 @@ Visual Studio yüklemeyi tamamlayamıyor veya Visual Studio içinde geri bildiri
 
 Rapor için bir sorun yoksa, ancak ürün geri bildirim veya bir öneri sağlamak istiyorsanız, yoktur, bir yer çok. Daha fazla bilgi için bkz: [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide) sayfası.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 * [Bizimle iletişime geçin](../ide/talk-to-us.md)
 * [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/)

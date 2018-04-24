@@ -2,8 +2,7 @@
 title: Visual Studio'da XAML uygulamaları kaynak tüketimini çözümlemek | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c7e1355a68644047369aa5cc6b257b9f0df9de2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1b8a01671ed37d8e83ca97218a3666cad40c60b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Kaynak tüketimini ve kullanıcı Arabirimi iş parçacığı etkinliği (XAML) çözümler.
 Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek için Profil Oluşturucu ile ilgili performans sorunları XAML uygulamaları. Bu araç, uygulamaları kaynak tüketimini ayrıntılı bir görünümünü sağlayarak XAML uygulamalarının performansını artırmaya yardımcı olur. UI çerçeveler (düzeni ve işleme) hazırlama, ağ ve disk isteklere hizmet uygulamanızı ve uygulama başlatma, sayfa yükleme ve Windows yeniden boyutlandırma gibi senaryolarda zamanın analiz edebilirsiniz.  

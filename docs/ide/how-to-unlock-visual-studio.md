@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44418feed8b2db54ec8864e6e2f5fd63d00f94da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8136d74f461d781fb395b534184b8d5b211421f7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-unlock-visual-studio"></a>Nasıl yapılır: Visual Studio kilidini açma
 
@@ -29,16 +29,16 @@ Visual Studio Ücretsiz 30 gün kadar değerlendirebilirsiniz. IDE içinde imzal
 
 Visual Studio kilidini açmak için bir MSDN veya Visual Studio Team Services aboneliğinden bir Microsoft hesabı veya bir iş veya Okul hesabı ile ilişkili:
 
-1. IDE'nin sağ üst köşesindeki "Oturum" düğmesini tıklatın (veya dosyaya gidin > Hesap ayarlarını hesap ayarları iletişim kutusunu açın ve "Oturum" düğmesini tıklatın).
+1. Tıklayın **oturum** IDE'nin sağ üst köşesindeki düğmesini (veya gitmek **dosya** > **hesap ayarlarını** açmak için **hesap ayarları**  iletişim ve tıklayarak **oturum** düğmesi).
 
 1. Bir Microsoft hesabı veya bir iş veya Okul hesabı için kimlik bilgilerini girin. Visual Studio, Visual Studio abonelik veya hesabınızla ilişkili Visual Studio Team Services abonelik bulur.
 
 > [!IMPORTANT]
-> Takım Gezgini aracı penceresinden bir Visual Studio Team Services hesabı bağlandığında, visual Studio ilişkili çevrimiçi abonelikler için otomatik olarak arar. Bir Visual Studio Team Services hesabı bağladığınızda, hem Microsoft hem de iş kullanarak oturum açın veya Okul hesapları. Bu kullanıcı hesabı için çevrimiçi bir aboneliğiniz varsa, Visual Studio IDE sizin için kilidini otomatik.
+> Visual Studio bir Visual Studio Team Services hesabından bağlandığınızda ilişkili çevrimiçi abonelikler için otomatik olarak arar **Takım Gezgini** araç penceresi. Bir Visual Studio Team Services hesabı bağladığınızda, hem Microsoft hem de iş kullanarak oturum açın veya Okul hesapları. Bu kullanıcı hesabı için çevrimiçi bir aboneliğiniz varsa, Visual Studio IDE sizin için kilidini otomatik.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Visual Studio ürün anahtarı ile kilidini açmak için
 
-1. Seçin **dosya**, **hesap ayarlarını** hesap ayarları iletişim kutusunu açmak için **lisans ürün anahtarıyla** bağlantı.
+1. Seçin **dosya** > **hesap ayarlarını** açmak için **hesap ayarlarını** iletişim ve tıklayarak **lisans ürün anahtarıyla**bağlantı.
 
 Sağlanan alana ürün anahtarını girin.
 
@@ -60,15 +60,15 @@ Sağlanan alana ürün anahtarını girin.
 
 Lisans belirteci eski geçmeden önce Visual Studio ilk kimlik bilgilerinizi yeniden girmek için isteyen bir uyarı iletisi gösterir.
 
-Kimlik bilgilerinizi girmek değil, eski gitmek belirteç başlatır ve hesap ayarları iletişim kutusunda belirtecinizi tam olarak dolacak önce bıraktığınız kaç gün söyler. Belirtecinizin süresi dolduktan sonra Visual Studio kullanarak devam etmeden önce bu hesabı veya lisans için kimlik bilgilerinizi başka bir yöntem ile yeniden girmeniz gerekir.
+Belirteç kimlik bilgilerinizi girmek değil, eski Git başlar ve **hesap ayarlarını** iletişim sol belirtecinizi tam olarak dolacak önce kaç gün bildirir. Belirtecinizin süresi dolduktan sonra Visual Studio kullanarak devam etmeden önce bu hesabı veya lisans için kimlik bilgilerinizi başka bir yöntem ile yeniden girmeniz gerekir.
 
 > [!Important]
 > Sınırlı veya internet erişimi olan ortamlarda uzun süre boyunca Visual Studio kullanıyorsanız, kesintiye uğramaması için Visual Studio kilidini açmak için bir ürün anahtarı kullanmanız gerekir.
 
 ### <a name="update-expired-licenses"></a>Süresi dolan lisansları güncelleştirin
 
- Aboneliğinizi tamamen süresi doldu ve artık erişim hakları Visual Studio yüklüyse, aboneliğinizi yenileyin veya bir aboneliğe sahip başka bir hesap ekleyin. Kullanmakta olduğunuz lisans hakkında daha fazla bilgi için şuraya gidin **dosya**, **hesap ayarlarını** ve iletişim kutusunun sağ tarafındaki lisans bilgilerini bakın. Farklı bir hesap ile ilişkilendirilmiş başka bir aboneliğiniz varsa, bu hesaba ekleme **tüm hesapları** seçerek iletişim kutusunun sol tarafında listede **Hesap Ekle...**  bağlantı.
+ Aboneliğinizi tamamen süresi doldu ve artık erişim hakları Visual Studio yüklüyse, aboneliğinizi yenileyin veya bir aboneliğe sahip başka bir hesap ekleyin. Kullanmakta olduğunuz lisans hakkında daha fazla bilgi için şuraya gidin **dosya** > **hesap ayarlarını** ve iletişim kutusunun sağ tarafındaki lisans bilgilerini bakın. Farklı bir hesap ile ilişkilendirilmiş başka bir aboneliğiniz varsa, bu hesaba ekleme **tüm hesapları** seçerek iletişim kutusunun sol tarafında listede **Hesap Ekle** bağlantı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio'da Oturum Açma](../ide/signing-in-to-visual-studio.md)
+* [Visual Studio’da oturum açma](../ide/signing-in-to-visual-studio.md)

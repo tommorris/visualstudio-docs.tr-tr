@@ -1,9 +1,10 @@
 ---
-title: Örnek kapsayıcı için Gelişmiş | Microsoft Docs
+title: Gelişmiş örnek kapsayıcıları için
+description: ''
 ms.custom: ''
-ms.date: 10/18/2017
-ms.technology:
-- vs-acquisition
+ms.date: 04/18/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
@@ -11,54 +12,77 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb4978bd6c1251d6b93339802e2b9d551ed38e72
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c941928495dc39dc6b6ecbe9600f39dad969fec2
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="advanced-example-for-containers"></a>Gelişmiş örnek kapsayıcıları için
 
-Dockerfile örnek içinde [bir kapsayıcı halinde derleme araçlarını yükleme](build-tools-container.md) her zaman en son microsoft/windowsservercore görüntü ve en son Visual Studio derleme araçları 2017 yükleyici kullanır. Bu görüntü yayımlarsanız bir [Docker kayıt defteri](https://azure.microsoft.com/services/container-registry) başkalarının çıkarmak bu görüntüyü birçok senaryo için uygun olabilir. Uygulamada, ancak hangi temel görüntü hakkında belirli olması için daha yaygın bir durumdur ve yüklediğiniz sürümleri aracı, karşıdan, hangi ikili dosyaları kullanın.
+Dockerfile örnek içinde [bir kapsayıcı halinde derleme araçlarını yükleme](build-tools-container.md) her zaman kullanır [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) görüntü tabanlı en son microsoft/windowsservercore görüntü ve en son Visual Studio derleme araçları 2017 yükleyicisi. Bu görüntü yayımlarsanız bir [Docker kayıt defteri](https://azure.microsoft.com/services/container-registry) başkalarının çıkarmak bu görüntüyü birçok senaryo için uygun olabilir. Bununla birlikte, pratikte hangi temel görüntü hakkında belirli olması için daha yaygın bir durumdur ve yüklediğiniz sürümleri aracı, karşıdan, hangi ikili dosyaları kullanın.
 
-Aşağıdaki örnek Dockerfile microsoft/windowsservercore görüntünün belirli sürüm etiketi kullanır. Belirli bir etiket için bir temel görüntü kullanarak sıradan bir hale ve bu binanın anımsaması kolay hale getirir ya da aynı temel sahip görüntüleri her zaman yeniden oluşturma.
+Aşağıdaki örnek Dockerfile belirli sürüm etiketi dotnet/microsoft-framework görüntünün kullanır. Belirli bir etiket için bir temel görüntü kullanarak sıradan bir hale ve bu binanın anımsaması kolay hale getirir ya da aynı temel sahip görüntüleri her zaman yeniden oluşturma.
 
 > [!NOTE]
-> Bir kapsayıcıda yükleyici başlatma sorunlara microsoft/windowsservercore:10.0.14393.1593 Visual Studio yükleyemiyor. Daha fazla bilgi için bkz: [bilinen sorunlar](build-tools-container-issues.md).
+> Microsoft/windowsservercore:10.0.14393.1593 veya bir kapsayıcı yükleyicisinde başlatma sorunları bilinen temel alan herhangi bir görüntü Visual Studio yükleyemiyor. Daha fazla bilgi için bkz: [bilinen sorunlar](build-tools-container-issues.md).
 
-Bu örnek ayrıca önyükleyici aynı zamanda yerleşik belirli bir sürümü yükler derleme araçları 2017 önyükleyici kullanır. Ürün sürümü kanal hala güncelleştirilemedi, ancak genellikle yeniden kapsayıcıları için kullanışlı bir senaryo değil. URL'ler için belirli bir kanalı almak istiyorsanız, kanaldan indirebilirsiniz https://aka.ms/vs/15/release/channelJSON dosyasını açın ve önyükleyici URL'leri inceleyin. Daha fazla bilgi için bkz: [Visual Studio bir ağ yüklemesi oluşturmak](create-a-network-installation-of-visual-studio.md).
+Aşağıdaki örnek derleme araçları 2017 en son sürümünü yükler. Derleme araçları yükleyebilirsiniz bir kapsayıcıya daha sonra eski bir sürümünü kullanmak istiyorsanız, öncelikle [oluşturma](create-an-offline-installation-of-visual-studio.md) ve [korumak](update-a-network-installation-of-visual-studio.md) bir düzeni.
+
+## <a name="install-script"></a>Komut dosyasını yükleyin
+
+Yükleme hata oluştuğunda günlükleri toplamak için çalışma dizinini aşağıdaki içerik ile "Install.cmd" adlı bir toplu betik oluşturun:
+
+```shell
+@if not defined _echo echo off
+setlocal enabledelayedexpansion
+
+call %*
+if "%ERRORLEVEL%"=="3010" (
+    exit /b 0
+) else (
+    if not "%ERRORLEVEL%"=="0" (
+        set ERR=%ERRORLEVEL%
+        call C:\TEMP\collect.exe -zip:C:\vslogs.zip
+
+        exit /b !ERR!
+    )
+)
+```
+
+## <a name="dockerfile"></a>Dockerfile
+
+Çalışma dizini "Dockerfile" ile aşağıdaki içeriği oluşturun:
 
 ```dockerfile
+# escape=`
+
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
-# You could also use the immutable tag @sha256:d841bd78721c74f9b88e2700f5f3c2d66b54cb855b8acb4ab2c627a76a46301d
-FROM microsoft/windowsservercore:10.0.14393.1770
+# You could also use the immutable tag @sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b
+ARG FROM_IMAGE=microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
+FROM ${FROM_IMAGE}
 
-# Use PowerShell commands to download, validate hashes, etc.
-SHELL ["powershell.exe", "-ExecutionPolicy", "Bypass", "-Command", "$ErrorActionPreference='Stop'; $ProgressPreference='SilentlyContinue'; $VerbosePreference = 'Continue';"]
+# Copy our Install script.
+COPY Install.cmd C:\TEMP\
 
-# Download Build Tools 15.4.27004.2005 and other useful tools.
-ENV VS_BUILDTOOLS_URI=https://aka.ms/vs/15/release/6e8971476/vs_buildtools.exe \
-    VS_BUILDTOOLS_SHA256=D482171C7F2872B6B9D29B116257C6102DBE6ABA481FAE4983659E7BF67C0F88 \
-    NUGET_URI=https://dist.nuget.org/win-x86-commandline/v4.1.0/nuget.exe \
-    NUGET_SHA256=4C1DE9B026E0C4AB087302FF75240885742C0FAA62BD2554F913BBE1F6CB63A0
+# Download collect.exe in case of an install failure.
+ADD https://aka.ms/vscollect.exe C:\TEMP\collect.exe
 
-# Download tools to C:\Bin and install Build Tools excluding workloads and components with known issues.
-RUN New-Item -Path C:\Bin, C:\TEMP -Type Directory | Out-Null; \
-    [System.Environment]::SetEnvironmentVariable('PATH', "\"${env:PATH};C:\Bin\"", 'Machine'); \
-    function Fetch ([string] $Uri, [string] $Path, [string] $Hash) { \
-      Invoke-RestMethod -Uri $Uri -OutFile $Path; \
-      if ($Hash -and ((Get-FileHash -Path $Path -Algorithm SHA256).Hash -ne $Hash)) { \
-        throw "\"Download hash for '$Path' incorrect\""; \
-      } \
-    }; \
-    Fetch -Uri $env:NUGET_URI -Path C:\Bin\nuget.exe -Hash $env:NUGET_SHA256; \
-    Fetch -Uri $env:VS_BUILDTOOLS_URI -Path C:\TEMP\vs_buildtools.exe -Hash $env:VS_BUILDTOOLS_SHA256; \
-    Fetch -Uri 'https://aka.ms/vscollect.exe' -Path C:\TEMP\collect.exe; \
-    $p = Start-Process -Wait -PassThru -FilePath C:\TEMP\vs_buildtools.exe -ArgumentList '--quiet --wait --norestart --nocache --installPath C:\BuildTools --all --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 --remove Microsoft.VisualStudio.Component.Windows81SDK'; \
-    if (($ret = $p.ExitCode) -and ($ret -ne 3010)) { C:\TEMP\collect.exe; throw ('Install failed with exit code 0x{0:x}' -f $ret) }
+# Use the latest release channel. For more control, specify the location of an internal layout.
+ARG CHANNEL_URL=https://aka.ms/vs/15/release/channel
+ADD ${CHANNEL_URL} C:\TEMP\VisualStudio.chman
 
-# Restore default shell for Windows containers.
-SHELL ["cmd.exe", "/s", "/c"]
+# Download and install Build Tools excluding workloads and components with known issues.
+ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
+RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+    --installPath C:\BuildTools `
+    --channelUri C:\TEMP\VisualStudio.chman `
+    --installChannelUri C:\TEMP\VisualStudio.chman `
+    --all `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+    --remove Microsoft.VisualStudio.Component.Windows81SDK
 
 # Start developer command prompt with any other commands specified.
 ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
@@ -67,36 +91,44 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
 
-Bu örnek, belirli araçları indirir ve karmaları eşleştiğini doğrular. Yükleme hatası oluşursa, bu hatayı çözümlemek için konak makine günlükleri kopyalayabilirsiniz. böylece en son Visual Studio ve .NET günlük toplama yardımcı programının de yükler.
+Geçerli çalışma dizini görüntüde oluşturmak için aşağıdaki komutu çalıştırın:
 
 ```shell
-> docker build -t buildtools:15.4.27004.2005 -t buildtools:latest -m 2GB .
+docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
+```
+
+İsteğe bağlı olarak her ikisi de geçirmek `FROM_IMAGE` veya `CHANNEL_URL` kullanarak bağımsız değişkenleri `--build-arg` farklı bir temel görüntüsü veya bir sabit görüntü korumak için bir iç düzeni konumunu belirtmek için komut satırı anahtarı.
+
+## <a name="diagnosing-install-failures"></a>Yükleme hatalarını tanılama
+
+Bu örnek, belirli araçları indirir ve karmaları eşleştiğini doğrular. Böylece bir yükleme hatası oluşursa, bu hatayı çözümlemek için konak makine günlükleri kopyalayabilirsiniz en son Visual Studio ve .NET günlük toplama yardımcı programının de yükler.
+
+```shell
+> docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
 Sending build context to Docker daemon
 ...
-Step 4/7 : RUN New-Item -Path C:\Bin, C:\TEMP -Type Directory | Out-Null; ...
+Step 8/10 : RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache ...
  ---> Running in 4b62b4ce3a3c
-Install failed with exit code 0x643
-At line:1 char:1
-+ throw ('Install failed with exit code 0x{0:x}' -f 1603)
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OperationStopped: (Install failed with exit code 0x643:String) [], RuntimeException
-    + FullyQualifiedErrorId : Install failed with exit code 0x643
+The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' returned a non-zero code: 1603
 
-> docker cp 4b62b4ce3a3c:C:\Users\ContainerAdministrator\AppData\Local\TEMP\vslogs.zip "%TEMP%\vslogs.zip"
+> docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
 ```
 
 Son satırı yürütme sona erdikten sonra "% TEMP%\vslogs.zip" makinenizde açın veya sorun gönderme sırasında [Geliştirici topluluğu](https://developercommunity.visualstudio.com) web sitesi.
 
 ## <a name="get-support"></a>Destek alma
-Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
+
+Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yükleme başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
+
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 * [Derleme Araçlarını Bir Kapsayıcıya Yükleme](build-tools-container.md)
 * [Kapsayıcılar için Bilinen Sorunlar](build-tools-container-issues.md)
 * [Visual Studio derleme araçları 2017 iş yükü ve Bileşen kimlikleri](workload-component-id-vs-build-tools.md)

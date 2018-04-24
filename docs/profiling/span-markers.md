@@ -2,8 +2,7 @@
 title: Span işaretçileri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.markers.span
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 697603cea62087163dea5115a74aae4c401b2c2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f6952408611bfdd59a3d488db2a7f34524588edf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="span-markers"></a>Kapsam İşaretleyicileri
 Bir aralık işaret uygulama anlamlı bir aşamasını temsil eder. Örneğin, belirli iş öğesini işleniyor zaman aralığını temsil etmek için bir aralığı kullanabilirsiniz. Uzunluğu karşılık gelen uygulama aşaması süresini temsil eder. Bu grafik bir aralık içinde eşzamanlılık görselleştiricisi göstermektedir:  

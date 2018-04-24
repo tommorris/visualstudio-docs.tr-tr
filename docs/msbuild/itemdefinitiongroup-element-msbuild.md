@@ -3,7 +3,7 @@ title: Itemdefinitiongroup öğesi (MSBuild) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/13/2017
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ItemDefinitionGroup
 dev_langs:
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - ItemDefinitionGroup Element [MSBuild]
 - <ItemDefinitionGroup> Element [MSBuild]
 ms.assetid: 4e9fb04b-5148-4ae5-a394-42861dd62371
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7513af3e3c4751f9bc70233fc77990e7b3cbb5c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c064f3398ac29cfa4187c19139e9264e2925689f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup Öğesi (MSBuild)
 `ItemDefinitionGroup` Öğesi varsayılan olarak uygulanan tüm öğeleri projesinde, meta veri değerler öğe tanımları kümesini tanımlamak olanak sağlar. Itemdefinitiongroup yerini kullanmaya gerek [CreateItem görevi](../msbuild/createitem-task.md) ve [CreateProperty görevi](../msbuild/createproperty-task.md). Daha fazla bilgi için bkz: [öğe tanımları](../msbuild/item-definitions.md).  

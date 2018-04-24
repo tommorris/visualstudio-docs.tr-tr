@@ -2,8 +2,7 @@
 title: Modüller görünümü - .NET bellek örnekleme verileri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0df8bca5648dddaa9449480db14b781f55ea9d41
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aba425823de9f6c9e935e987e2f574ac0733d262
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Modüller görünümü - .NET bellek örnekleme verileri
 .NET bellek ayırma verilerinin örnekleme yöntemini kullanarak toplanan modülleri görünümü bellek verileri profil Çalıştır yürütüldü modülleri göre gruplandırır. Her modül hiyerarşik bir köküdür. Modül işlevleri modülü düğümünün altında listelenir.  

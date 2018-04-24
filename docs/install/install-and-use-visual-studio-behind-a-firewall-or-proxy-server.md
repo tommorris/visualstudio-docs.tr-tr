@@ -1,10 +1,10 @@
 ---
 title: Yükleme ve Visual Studio ve Azure Hizmetleri Güvenlik Duvarı veya proxy sunucunun arkasında kullanma | Microsoft Docs
-description: ''
+description: Etki alanı URL'leri, bağlantı noktalarını ve beyaz liste ile istediğiniz olabilir veya kuruluşunuzun bir güvenlik duvarı veya proxy sunucusu kullanıyorsa açmak protokolleri gözden geçirin
 ms.custom: ''
 ms.date: 02/12/2018
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aca7e7ee5e7861028a5aa80fe54d02e71cf0458e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve Visual Studio ve Azure Hizmetleri Güvenlik Duvarı veya proxy sunucunun arkasında kullanma
+
 Sizin veya kuruluşunuzun bir güvenlik duvarı veya proxy sunucu gibi güvenlik önlemleri kullanıyorsa, ardından vardır "beyaz liste" ve bağlantı noktaları ve böylece yüklediğinizde ve görsel Stu en iyi deneyimi sahip açmak isteyebilirsiniz protokolleri isteyebilirsiniz etki alanı URL'leri dio ve Azure Hizmetleri.
 
 * **[Visual Studio yükleme](#install-visual-studio)**: tüm bileşenleri ve istediğiniz iş yüklerini erişiminiz beyaz liste etki alanı URL'lere bu tablolar içerir.
@@ -31,10 +32,13 @@ Sizin veya kuruluşunuzun bir güvenlik duvarı veya proxy sunucu gibi güvenlik
 * **[Visual Studio ve Azure hizmetlerini kullanma](#use-visual-studio-and-azure-services)**: Bu tablo beyaz liste ve bağlantı noktalarını ve protokolleri tüm özellikleri ve istediğiniz hizmetleri erişiminiz açmak için etki alanı URL'lere içerir.
 
 ## <a name="install-visual-studio"></a>Visual Studio yükleme
+
 ### <a name="urls-to-whitelist"></a>Beyaz liste URL'leri
+
 Visual Studio yükleyicisi dosyaları çeşitli etki alanlarına ve indirme sunucularını yüklediği için kullanıcı Arabirimi veya dağıtım betikleri güvenilir olarak beyaz liste isteyebilirsiniz etki alanı URL'leri aşağıda verilmiştir.
 
 #### <a name="microsoft-domains"></a>Microsoft etki alanları
+
 | Etki Alanı | Amaç |
 | ------ | ------- |
 | go.microsoft.com | Kurulum URL çözümleme |
@@ -54,6 +58,7 @@ Visual Studio yükleyicisi dosyaları çeşitli etki alanlarına ve indirme sunu
 |  |  | |
 
 #### <a name="non-microsoft-domains"></a>Microsoft olmayan etki alanları
+
 | Etki Alanı | Bu iş yükleri yükler |
 | ------ | ------- |
 | Archive.apache.org |  JavaScript (Cordova) ile Mobil Geliştirme |
@@ -69,7 +74,9 @@ Visual Studio yükleyicisi dosyaları çeşitli etki alanlarına ve indirme sunu
 |  |  | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Visual Studio ve Azure Hizmetleri kullanın
+
 ### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>Beyaz liste ve bağlantı noktalarını ve protokolleri açmak için URL'leri
+
 Bir güvenlik duvarı veya proxy sunucunun arkasındaki Visual Studio ya da Azure hizmetlerini kullanırken gereken her şeyi erişiminiz olduğundan emin olmak için beyaz liste ve bağlantı noktalarını ve protokolleri açmak isteyebilirsiniz gereken URL'leri şunlardır.
 
 | Hizmet veya senaryosu | DNS uç noktası | Protokol | Bağlantı Noktası | Açıklama |
@@ -113,18 +120,21 @@ Bir güvenlik duvarı veya proxy sunucunun arkasındaki Visual Studio ya da Azur
 |Paketleme hizmeti | [hesap].visualstudio.com <br/> [hesap].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | HTTPS | 443 | *. Npmjs.org, *. nuget.org, ve *. nodejs.org: sadece belirli görev senaryoları (örneğin, NuGet aracı yükleyicisi, düğüm aracı Yükleyici) oluşturmak için gerekli veya ortak upstreams akışlarınızı ile kullanmak istiyorsanız.  Diğer üç etki alanı için çekirdek functinality Packaigng hizmetinin gereklidir. |
 |||||||
 
-
 ## <a name="troubleshoot-network-related-errors"></a>Ağ ile ilgili hataları giderme
+
 Yüklediğinizde veya bir güvenlik duvarı veya proxy sunucunun Visual Studio'yu kullanın bazı durumlarda, ağ veya proxy ile ilgili hataları çalışmasında. Bu tür hata iletileri için çözümleri hakkında daha fazla bilgi için bkz: [yüklediğinizde veya Visual Studio kullandığınızda ağ ile ilgili sorun giderme](troubleshooting-network-related-errors-in-visual-studio.md) sayfası.
 
 ## <a name="get-support"></a>Destek alma
+
 Sizin için birkaç daha fazla destek seçenekleri şunlardır:
+
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 * [Visual Studio'da ağ ile ilgili sorun giderme hataları](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Visual Studio 2017 yükleyin](install-visual-studio.md)

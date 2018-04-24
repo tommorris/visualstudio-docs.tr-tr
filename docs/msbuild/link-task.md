@@ -3,7 +3,7 @@ title: Bağlantı görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceFileOutput
 - VC.Project.VCLinkerTool.LinkStatus
@@ -27,16 +27,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), Link task
 - Link task (MSBuild (Visual C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8fb520b1582c14c629c28cb0822cc825f303c49
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 25cea2311043f50ec08937f72d883e9334df2f81
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="link-task"></a>Bağlantı Görevi
 Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesne dosyası biçimi (COFF) nesne dosyaları ve kitaplıkları bir yürütülebilir dosyanın (.exe) dosyayı oluşturmak için veya bir dinamik bağlantı kitaplığı (DLL) bağlar. Daha fazla bilgi için bkz: [bağlayıcı seçenekleri](/cpp/build/reference/linker-options).  

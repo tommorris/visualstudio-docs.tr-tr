@@ -20,34 +20,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a883995f95c5eaab86a14f07f9372614078d3c79
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3696762d950c913effb10d1ce15f22bd2cfc075
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl Yapılır: Uygulama ve Dağıtım Bildirimlerini İmzalama
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl yapılır: uygulama ve dağıtım bildirimlerini imzalama
 ClickOnce dağıtımı kullanarak bir uygulama yayımlamak isterseniz, uygulama ve dağıtım bildirimlerini ortak/özel anahtar çifti ile oturum açmanız gerekir ve Authenticode teknolojisi kullanılarak imzalanmış. Windows sertifika deposunda veya bir anahtar dosyası bir sertifika kullanarak bildirimleri imzalayabilirsiniz.  
   
  ClickOnce dağıtımı hakkında daha fazla bilgi için bkz: [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md).  
   
- ClickOnce bildirimleri imzalama .exe tabanlı uygulamalar için isteğe bağlıdır. Daha fazla bilgi için bu belgenin "Oluşturma imzasız bildirimler" bölümüne bakın.  
+ ClickOnce bildirimleri imzalama için isteğe bağlı *.exe*-tabanlı uygulamaları. Daha fazla bilgi için bu belgenin "imzalanmamış bildirimler oluşturma" bölümüne bakın.  
   
  Anahtar dosyaları oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir genel-özel anahtar çifti oluşturma](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .pfx uzantılıdır yalnızca kişisel bilgi değişimi (PFX) anahtar dosyaları destekler. Geçerli kullanıcının Windows sertifika deposundan tıklayarak diğer tür sertifikaların ancak seçebilirsiniz **deposundan seçmek** üzerinde **imzalama** Proje Özellikleri'nin sayfa.  
+>  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yalnızca sahip kişisel bilgi değişimi (PFX) anahtar dosyaları destekleyen *.pfx* uzantısı. Geçerli kullanıcının Windows sertifika deposundan tıklayarak diğer tür sertifikaların ancak seçebilirsiniz **deposundan seçmek** üzerinde **imzalama** Proje Özellikleri'nin sayfa.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Uygulama ve dağıtım imzalamak için bir sertifika kullanılarak bildirimleri  
   
-1.  Proje Özellikleri penceresine gidin (proje düğümüne sağ tıklayın **Çözüm Gezgini** seçip **özellikleri**, veya türü **proje özellikleri** içinde**Hızlı başlatma** penceresinde, veya alt + ENTER içinde basın **Çözüm Gezgini** penceresi). Üzerinde **imzalama** sekmesine **ClickOnce bildirimlerini imzalayacak** onay kutusu.  
+1.  Proje Özellikleri penceresine gidin (proje düğümüne sağ tıklayın **Çözüm Gezgini** seçip **özellikleri**, veya türü **proje özellikleri** içinde**Hızlı başlatma** penceresi veya tuşuna **Alt**+**Enter** içinde **Çözüm Gezgini** penceresi). Üzerinde **imzalama** sekmesine **ClickOnce bildirimlerini imzalayacak** onay kutusu.  
   
 2.  Tıklatın **deposundan seçmek** düğmesi.  
   
      **Bir sertifika seçin** iletişim kutusu belirir ve Windows sertifika deposunda içeriğini görüntüler.  
   
     > [!TIP]
-    >  Tıklatırsanız **sertifika özelliklerini görüntülemek için burayı tıklatın**, **sertifika ayrıntıları** iletişim kutusu görüntülenir. Bu iletişim kutusunu sertifika ile ilgili ayrıntılı bilgiler içerir ve ek seçenekleri içerir. Tıklayabilirsiniz **sertifikaları** Ek Yardım bilgilerini görüntülemek için.  
+    >  Tıklatırsanız **sertifika özelliklerini görüntülemek için burayı tıklatın**, **sertifika ayrıntıları** iletişim kutusu görüntülenir. Bu iletişim kutusunu sertifika ile ilgili ayrıntılı bilgiler içerir ve ek seçenekleri içerir. Tıklayabilirsiniz **sertifikaları** ek görünümüne Yardım bilgisi.  
   
 3.  Bildirimlerini imzalamak için kullanmak istediğiniz sertifikayı seçin.  
   
@@ -61,14 +61,14 @@ ClickOnce dağıtımı kullanarak bir uygulama yayımlamak isterseniz, uygulama 
   
      **Dosya Seç** iletişim kutusu görüntülenir.  
   
-3.  İçinde **Dosya Seç iletişim** kutusunda, kullanın ve ardından istediğiniz anahtar dosyası (.pfx) konumuna göz atın **açık**.  
+3.  İçinde **Dosya Seç** iletişim kutusu, anahtar dosyasının konumuna göz atın (*.pfx*) kullanın ve ardından istediğiniz **açık**.  
   
     > [!NOTE]
-    >  Bu seçenek yalnızca .pfx uzantısı olan dosyaları destekler. Bir anahtar dosyası veya başka bir biçim, Windows sertifika deposunda depola ve sertifikayı seçin sertifika varsa önceki yordamda açıklanmıştır. Seçilen sertifikanın amacı, kod imzalama içermesi gerekir.  
+    >  Bu seçenek olan dosyaları destekler *.pfx* uzantısı. Bir anahtar dosyası veya başka bir biçim, Windows sertifika deposunda depola ve sertifikayı seçin sertifika varsa önceki yordamda açıklanmıştır. Seçilen sertifikanın amacı, kod imzalama içermesi gerekir.  
   
-     **Dosyayı açmak için parola gir** iletişim kutusu görüntülenir. (.Pfx dosyası, Windows sertifika deposunda zaten depolanmış veya değil parola korumalı, bir parola girmeniz istenmez.)  
+     **Dosyayı açmak için parola gir** iletişim kutusu görüntülenir. (Varsa *.pfx* dosyası, Windows sertifika deposunda zaten depolanmış veya değil parola korumalı, bir parola girmesi istenir değildir.)  
   
-4.  Anahtar dosyası erişim için parola girin ve ENTER tuşuna basın.  
+4.  Anahtar dosyası erişmek için parola girin ve basın **Enter**.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>Uygulama ve dağıtım imzalamak için bir test sertifikası kullanarak bildirimleri  
   
@@ -78,8 +78,8 @@ ClickOnce dağıtımı kullanarak bir uygulama yayımlamak isterseniz, uygulama 
   
 3.  İçinde **Test sertifikası oluşturma** iletişim kutusunda, test sertifikanızı güvenli hale getirmek için bir parola girin.  
   
-## <a name="generating-unsigned-manifests"></a>İmzalanmamış bildirimler oluşturma  
- ClickOnce bildirimleri imzalama .exe tabanlı uygulamalar için isteğe bağlıdır. Aşağıdaki yordamlar imzasız ClickOnce bildirimleri oluşturmak nasıl gösterir.  
+## <a name="generate-unsigned-manifests"></a>İmzasız bildirimleri oluşturmak  
+ ClickOnce bildirimleri imzalama için isteğe bağlı *.exe*-tabanlı uygulamaları. Aşağıdaki yordamlar imzasız ClickOnce bildirimleri oluşturmak nasıl gösterir.  
   
 > [!IMPORTANT]
 >  İmzasız bildirimleri geliştirme ve uygulamanızın veya sınama basitleştirebilirsiniz. Ancak, bir üretim ortamında önemli güvenlik riskleri imzalanmamış bildirimler tanıtmaktadır. Yalnızca Internet veya diğer kaynakları, kötü amaçlı kod tamamen yalıtılmış bir intranet içerisinde bilgisayarlarda ClickOnce uygulamanızı çalıştırıyorsa, imzalanmamış bildirimler kullanmayı düşünün.  
@@ -92,7 +92,7 @@ ClickOnce dağıtımı kullanarak bir uygulama yayımlamak isterseniz, uygulama 
   
 2.  Üzerinde **imzalama** sayfasında, Temizle **ClickOnce bildirimlerini imzalayacak** onay kutusu.  
   
-3.  Bu yalnızca bir sürümü, uygulamanızın kullanılabilir olacak şekilde Yayımla sürümü sıfırlayın. Varsayılan olarak, Visual Studio otomatik olarak uygulama yayımlama Yayımla sürümü her zaman değişiklik sayısını artırır. Daha fazla bilgi için bkz: [nasıl yapılır: ClickOnce yayımla sürümünü ayarlama](../deployment/how-to-set-the-clickonce-publish-version.md).  
+3.  Bu yalnızca bir sürümü, uygulamanızın kullanılabilir olacak şekilde Yayımla sürümü sıfırlayın. Varsayılan olarak, Visual Studio otomatik olarak uygulama yayımlama Yayımla sürümü her zaman değişiklik sayısını artırır. Daha fazla bilgi için bkz: [nasıl yapılır: kümesi ClickOnce yayım sürümünü](../deployment/how-to-set-the-clickonce-publish-version.md).  
   
 4.  Uygulamayı yayımlayın.  
   
@@ -107,8 +107,8 @@ ClickOnce dağıtımı kullanarak bir uygulama yayımlamak isterseniz, uygulama 
   
 3.  Uygulamayı yayımlayın.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Tanımlayıcı adlı derlemeler](/dotnet/framework/app-domains/strong-named-assemblies)   
  [Nasıl yapılır: bir genel-özel anahtar çifti oluşturma](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)   
  [İmzalama sayfası, Proje Tasarımcısı](../ide/reference/signing-page-project-designer.md)   
- [ClickOnce Güvenliği ve Dağıtımı](../deployment/clickonce-security-and-deployment.md)
+ [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)

@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d4ccb77a423ac254f5bba4846ffef3141c8de95
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 322b82e37851ef78c97664df9c33db9194d9db90
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>Nasıl Yapılır: Çoklu Başlangıç Projesi Ayarlama
+# <a name="how-to-set-multiple-startup-projects"></a>Nasıl yapılır: birden çok başlangıç projesi ayarlama
 Visual Studio belirtmenize olanak verir nasıl daha fazla hata ayıklayıcı başlatıldığında bir proje çalıştırmak.  
 
-### <a name="to-set-multiple-startup-projects"></a>Birden fazla başlangıç projesi ayarlamak için  
+## <a name="to-set-multiple-startup-projects"></a>Birden fazla başlangıç projesi ayarlamak için  
 
-1.  İçinde **Çözüm Gezgini**, (çok üst düğümü) çözümü seçin.  
+1.  İçinde **Çözüm Gezgini**, (üst düğümü) çözümü seçin.  
 
 2.  Çözüm düğümün (sağ tıklatma) bağlam menüsünü seçin ve ardından **özellikleri**. **Çözüm özellik sayfaları** iletişim kutusu görüntülenir.  
 
@@ -32,9 +32,8 @@ Visual Studio belirtmenize olanak verir nasıl daha fazla hata ayıklayıcı ba�
 
 4.  Seçin **birden fazla başlangıç projesi** seçeneği ve uygun eylemleri ayarlayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)
+## <a name="see-also"></a>Ayrıca bkz.
 
- [Çözümler ve Projeler Oluşturma](../ide/creating-solutions-and-projects.md)
-
- [Proje ve Çözüm Özelliklerini Yönetme](../ide/managing-project-and-solution-properties.md)
+- [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)
+- [Çözümler ve projeler oluşturma](../ide/creating-solutions-and-projects.md)
+- [Proje ve çözüm özelliklerini yönetme](../ide/managing-project-and-solution-properties.md)

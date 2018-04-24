@@ -1,23 +1,22 @@
 ---
-title: Visual Studio 2017 yapı numaralarını ve yayın tarihleri | Microsoft Docs
+title: Visual Studio 2017 yapı numaralarını ve tarihleri bırakın
 description: Yayımlanan sürümleri ve tarihe göre sıralanmış Visual Studio 2017 için yapı numaraları listesi.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 04/10/2018
+ms.date: 04/18/2018
 ms.topic: reference
 helpviewer_keywords: ''
-ms.technology:
-- vs-acquisition
-ms.service: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 1874ab8f88f87546ceef12432e93ba03a65ad496
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f24a293e3efe40f2003bf0ba993f7896d2d93c52
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 yapı numaralarını ve tarihleri bırakın
 
@@ -25,7 +24,9 @@ Aşağıdaki tabloda yapı numaraları ve yayın tarihleri tarih için Visual St
 
 | **Sürüm**| **Kanal** | **Sürüm tarihi** | **Sürüm oluşturma** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.6.6 | Sürüm | 10 Nisan 2018 | 15.6.27428.2037 | 
+| 15.7.0 Önizleme 4.0 | Önizleme | 18 Nisan 2018 | 15.7.27617.1 |
+| 15.6.6 | Sürüm | 10 Nisan 2018 | 15.6.27428.2037 |
+| 15.0.12 | Sürüm | 10 Nisan 2018 | 15.0.26228.30 |
 | 15.7.0 Önizleme 3.0 | Önizleme | 9 Nisan 2018 | 15.7.27604.0 |
 | 15.6.5 | Sürüm | 4 Nisan 2018 | 15.6.27428.2027 |
 | 15.6.4 | Sürüm | 22 Mart 2018 | 15.6.27428.2015 |
@@ -126,8 +127,8 @@ Birkaç diğer destek seçenekleri şunlardır:
 
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

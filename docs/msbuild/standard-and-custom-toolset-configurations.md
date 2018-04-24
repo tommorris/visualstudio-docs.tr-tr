@@ -8,16 +8,16 @@ helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 029abea9944b988b638681207a2e9e9a33746c31
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 855bd7af4372f5216abab3d6ddd45ec8f7809baa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standart ve Özel Araç Takımı Yapılandırmaları
 MSBuild araç takımı görevleri, hedefler ve bir uygulama projesi oluşturmak için kullanabileceğiniz araçları başvurular içeriyor. Standart bir araç takımı MSBuild içerir, ancak özel Toolsets de oluşturabilirsiniz. Bir araç takımı belirtme hakkında daha fazla bilgi için bkz: [araç takımı (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  

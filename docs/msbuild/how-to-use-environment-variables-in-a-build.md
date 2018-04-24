@@ -9,16 +9,16 @@ helpviewer_keywords:
 - projects [.NET Framework], environment variables
 - MSBuild, environment variables
 ms.assetid: 7f9e4469-8865-4b59-aab3-3ff26bd36e77
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d67b0c623f3d4e828270df64caecc98fe781df
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33156719cab40490b63ec945bf9c9600b3a92bda
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Nasıl Yapılır: Derlemede Ortam Değişkenlerini Kullanma
 Projeleri oluşturduğunuzda, genellikle proje dosyası ya da projenizi oluşturan dosyaların değil bilgileri kullanarak yapılandırma seçeneklerini ayarlamak gereklidir. Bu bilgileri genellikle ortam değişkenleri olarak depolanır.  

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: derleme olayları belirtme (Visual Basic) | Microsoft Docs'
+title: 'Nasıl yapılır: belirtin derleme olayları (Visual Basic) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,13 +17,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87727728c2a307475e9640b1212dec1bc0eaae99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 976db0262666da2ba0c275d9dae9530faf3f5c38
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Nasıl Yapılır: Derleme Olayları Belirtme (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Nasıl yapılır: belirtin derleme olayları (Visual Basic)
 Derleme olayları Visual Basic komut dosyaları, makroları veya başka eylemler derlemeyi işleminin bir parçası olarak çalıştırmak için kullanılabilir. Oluşturma öncesi olaylar derleme önce oluşur; derleme sonrası olayları derleme sonra oluşur.  
   
  Derleme olayları belirtilir **yapı olayları** iletişim kutusu, kullanılabilir **derleme** sayfasında **Proje Tasarımcısı**.  
@@ -44,13 +44,13 @@ Derleme olayları Visual Basic komut dosyaları, makroları veya başka eylemler
 4.  Oluşturma öncesi veya sonrası derleme eylemleriniz için komut satırı bağımsız değişkenleri girin ve ardından **Tamam**.  
   
     > [!NOTE]
-    >  Ekleme bir `call` .bat dosyaları çalıştıran tüm sonrası derleme komutları önce deyim. Örneğin, `call C:\MyFile.bat` veya `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    >  Ekleme bir `call` önce çalışan tüm oluşturma sonrası Komutlar deyim *.bat* dosyaları. Örneğin, `call C:\MyFile.bat` veya `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
     > [!NOTE]
     >  Oluşturma öncesi veya oluşturma sonrası olay başarıyla tamamlanmazsa, başarılı bir eylem gösteren bir ile dışında sıfır (0), çıkış kodu olay eyleminizi sağlayarak yapı sonlandırabilir.  
   
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Örnek: bir oluşturma sonrası olay kullanarak bildirim bilgisinin nasıl değiştirileceği  
- Aşağıdaki yordam en düşük işletim sistemi sürümünün bir oluşturma sonrası olay adlı bir .exe komutunu kullanarak uygulama bildiriminde nasıl ayarlanacağını gösterir (. proje dizininde exe.manifest dosyası). En düşük işletim sistemi sürümünü 4.10.0.0 gibi dört bölümden oluşan bir sayıdır. Bunu yapmak için komut değişir `<dependentOS>` bildirim bölümünü:  
+ Aşağıdaki yordamda, uygulamanın en düşük işletim sistemi sürümünü ayarlamak gösterilmiştir kullanarak bildirim bir *.exe* adlı bir oluşturma sonrası olay komut ( *. exe.manifest* proje dosyasında Dizin). En düşük işletim sistemi sürümünü 4.10.0.0 gibi dört bölümden oluşan bir sayıdır. Bunu yapmak için komut değişir `<dependentOS>` bildirim bölümünü:  
   
 ```  
 <dependentOS>  
@@ -66,7 +66,7 @@ Derleme olayları Visual Basic komut dosyaları, makroları veya başka eylemler
   
 2.  İçinde **yeni proje** iletişim kutusunda **Visual Basic** düğümü, select **Windows** ve ardından **konsol uygulaması** şablonu. Proje adı `ChangeOSVersionVB`.  
   
-3.  Module1.vb içinde aşağıdaki satırı ekleyin `Imports` dosyanın en üstüne deyimlerini:  
+3.  İçinde *Module1.vb*, diğer aşağıdaki satırı ekleyin `Imports` dosyanın en üstüne deyimlerini:  
   
     ```  
     Imports System.Xml  
@@ -115,11 +115,11 @@ Derleme olayları Visual Basic komut dosyaları, makroları veya başka eylemler
     End Sub  
     ```  
   
-     Komut iki bağımsız değişkeni alır. İlk bağımsız değişken uygulama bildirimi yoludur (diğer bir deyişle, klasör oluşturma işlemi genellikle Projectname.publish bildirimi oluşturur). İkinci bağımsız değişkeni yeni bir işletim sistemi sürümüdür.  
+     Komut iki bağımsız değişkeni alır. İlk bağımsız değişken uygulama bildirimi yoludur (diğer bir deyişle, yapı işlemi oluşturur, bildirim genellikle klasörü  *<Projectname>.publish*). İkinci bağımsız değişkeni yeni bir işletim sistemi sürümüdür.  
   
 5.  Üzerinde **yapı** menüsünde tıklatın **yapı çözümü**.  
   
-6.  .Exe dosyası gibi bir dizine kopyalayın `C:\TEMP\ChangeOSVersionVB.exe`.  
+6.  Kopya *.exe* bir dizine gibi dosya *C:\TEMP\ChangeOSVersionVB.exe*.  
   
  Ardından, uygulama bildirimi değiştirmek için bu komutu bir oluşturma sonrası olay çağırma.  
   
@@ -128,14 +128,13 @@ Derleme olayları Visual Basic komut dosyaları, makroları veya başka eylemler
 1.  Yayımlanacak projeyi için bir Windows uygulaması oluşturun. Gelen **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
   
 2.  İçinde **yeni proje** iletişim kutusunda **Visual Basic** düğümü, select **Windows Klasik Masaüstü** ve ardından **Windows Forms uygulaması** Şablon. Proje adı `VBWinApp`.  
-  
 3.  Seçili proje ile **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.  
   
-4.  Proje Tasarımcısı'nda Git **Yayımla** sayfasında ve ayarlama **konum yayımlama** için `C:\TEMP\`.  
+4.  İçinde **Proje Tasarımcısı**gidin **Yayımla** sayfasında ve ayarlama **konum yayımlama** için *C:\TEMP*.  
   
 5.  Tıklayarak projeyi yayımlama **Şimdi Yayımla**.  
   
-     Bildirim dosyası oluşturulur ve koyun `C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest`. Bildirim görüntülemek için dosyaya sağ tıklayın ve **birlikte Aç**, ardından **programı listeden seçin.**ve ardından **not defteri**.  
+     Bildirim dosyası oluşturulur ve koyun *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*. Bildirim görüntülemek için dosyaya sağ tıklayın ve **birlikte Aç**, ardından **programı listeden seçin.** ve ardından **not defteri**.  
   
      Arama için dosyasında `<osVersionInfo>` öğesi. Örneğin, sürüm olabilir:  
   
@@ -143,7 +142,7 @@ Derleme olayları Visual Basic komut dosyaları, makroları veya başka eylemler
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  Proje Tasarımcısı'nda Git **derleme** sekmesinde **yapı olayları** açmak için düğmeye **yapı olayları** iletişim kutusu.  
+6.  İçinde **Proje Tasarımcısı**gidin **derleme** sekmesinde **yapı olayları** açmak için düğmeye **yapı olayları** iletişim kutusu.  
   
 7.  İçinde **oluşturma sonrası olay komut satırı** kutusunda, aşağıdaki komutu girin:  
   
@@ -151,11 +150,11 @@ Derleme olayları Visual Basic komut dosyaları, makroları veya başka eylemler
   
      Projesi derlerken, bu komut uygulama bildiriminde en düşük işletim sistemi sürümü için 5.1.2600.0 değiştirin.  
   
-     `$(TargetPath)` Makrosu oluşturulan yürütülebilir dosyanın tam yolunu ifade eder. Bu nedenle, $(TargetPath) .manifest depo Directory'de oluşturulan uygulama bildirimi belirtmeniz gerekecektir. Yayımlama, daha önce belirlediğiniz yayımlama konumu için bu bildirimi kopyalayacak.  
+     `$(TargetPath)` Makrosu oluşturulan yürütülebilir dosyanın tam yolunu ifade eder. Bu nedenle, *$(TargetPath) .manifest* belirtin oluşturulan uygulama bildirimi *bin* dizin. Yayımlama, daha önce belirlediğiniz yayımlama konumu için bu bildirimi kopyalayacak.  
   
 8.  Projeyi yeniden yayımlayın. Git **Yayımla** sayfasında ve tıklayın **Şimdi Yayımla**.  
   
-     Bildirim yeniden görüntüleyin. Bildirim görüntülemek için Yayımla dizinine dosyasını sağ tıklatın ve gidin **birlikte Aç** ve ardından **programı listeden seçin.**ve ardından **not defteri**.  
+     Bildirim yeniden görüntüleyin. Bildirim görüntülemek için Yayımla dizinine dosyasını sağ tıklatın ve gidin **birlikte Aç** ve ardından **programı listeden seçin.** ve ardından **not defteri**.  
   
      Sürüm şimdi şöyle olmalıdır:  
   
@@ -168,4 +167,4 @@ Derleme olayları Visual Basic komut dosyaları, makroları veya başka eylemler
 [Derle sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
 [Yayımla Sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md)   
 [Derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
-[Nasıl Yapılır: Derleme Olayları Belirtme (C#)](../ide/how-to-specify-build-events-csharp.md)
+[Nasıl yapılır: belirtin derleme olayları (C#)](../ide/how-to-specify-build-events-csharp.md)

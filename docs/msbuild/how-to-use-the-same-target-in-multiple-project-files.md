@@ -8,16 +8,16 @@ helpviewer_keywords:
 - MSBuild, importing
 - MSBuild, using the same target in multiple project files
 ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 719a9ed86a219cf47b5275079b235beca7c555a2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41c1ed02a32136d6c80e24f0644e0fab660e8ed0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Nasıl Yapılır: Birden Çok Proje Dosyasında Aynı Hedefi Kullanma
 Birkaç yazmış varsa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyalarını, bulunan, aynı görev ve hedeflerini farklı proje dosyalarında kullanmanız gerekebilir. Bu görevler veya hedefleri tam açıklamasını her proje dosyasında dahil olmak üzere yerine ayrı proje dosyasında bir hedef kaydedin ve sonra proje hedef kullanması gereken diğer projeyi alın.  

@@ -3,7 +3,7 @@ title: AssignCulture görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AssignCulture
 dev_langs:
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - MSBuild, AssignCulture task
 - AssignCulture task [MSBuild]
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1c70378ff2953fd246aeb829376f2f2bf2aa685
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 26adf9bd97e10e25402db100ebb0140917ac6143
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="assignculture-task"></a>AssignCulture Görevi
 Bu görev, dosya adının bir parçası olarak geçerli bir .NET kültür tanımlayıcısı dizesi içerebilir öğelerin listesini kabul eder ve adlı bir meta veri içermeyen öğeleri üreten `Culture` karşılık gelen içeren kültür tanımlayıcısı. Bu görev meta verileri aynı adla sahip bir öğe üretecektir Örneğin, dosya adı Form1.fr fr.resx katıştırılmış bir kültür tanımlayıcısı "fr-fr", sahiptir, bu nedenle `Culture` eşit `fr-fr`. Görev dosya adları listesini dosya adı kaldırıldı kültür ile de üretir.  

@@ -16,19 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 399ff8e8b0c403eeaa6d765165f28dee9c56ee4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2bd9d2d458c671fc590326989026aa776795243a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-manage-editor-windows"></a>Nasıl Yapılır: Düzenleyici Pencerelerini Yönetme
+# <a name="how-to-manage-editor-windows"></a>Nasıl yapılır: Düzenleyici pencerelerini yönetme
 Çeşitli konumlardan kodunda üzerinde aynı anda çalışabilir. Bir düzenleyici penceresini bölme veya birden çok örneği düzenleyici pencereleri açarak bunu.  
   
 > [!NOTE]
 >  Tüm düzenleyici pencereleri birden çok örneği destekler.  
   
-## <a name="splitting-an-editor-window"></a>Bir düzenleyici penceresini bölme  
+## <a name="split-an-editor-window"></a>Bir düzenleyici penceresini bölme  
  Daha kolay düzenlemek için iki ayrı görünüm Düzenleyicisi penceresini örneği bölünebilir.  
   
 #### <a name="to-split-a-pane"></a>Bir bölme bölmek için  
@@ -46,7 +46,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Gelen **penceresi** menüsünde, select **Bölmeyi Kaldır**.  
   
-## <a name="creating-new-windows"></a>Yeni pencereler oluşturma  
+## <a name="create-new-windows"></a>Yeni pencereler oluşturma  
  Bir düzenleyici penceresini birden çok örneğini de oluşturabilirsiniz. Bu özellik, böylece görüntüleyebilir ve farklı bölümlerde aynı anda ayrı, tam boyutlu düzenleyici pencereleri düzenleme uzun bir belge bir düzenleyici birden fazla örneğini açmanızı sağlar.  
   
 #### <a name="to-create-a-new-window"></a>Yeni bir pencere oluşturmak için  
@@ -55,7 +55,7 @@ ms.lasthandoff: 04/16/2018
   
      Düzenleyici yeni sekmeli bir örneğini eklenir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Düzenleyiciyi özelleştirme](../ide/customizing-the-editor.md)   
  [Kod yazma](../ide/writing-code-in-the-code-and-text-editor.md)   
  [Pencere düzenlerini özelleştirme](../ide/customizing-window-layouts-in-visual-studio.md)

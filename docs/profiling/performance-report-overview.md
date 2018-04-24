@@ -2,8 +2,7 @@
 title: Performans Raporu genel bakış | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, about performance rerports
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 132bac5164289c18fe0cd379686db7eb6213589a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-report-overview"></a>Performans Raporu genel bakış
 Profil oluşturma verileri performans oturumun görüntüleyebilirsiniz **performans raporu** Visual Studio Team System geliştirme sürümü tümleşik geliştirme ortamı (IDE) penceresi. Profil oluşturma verileri .vsp ve .vsps dosyalarında kaydedilir. Rapor görünümü windows görüntülemek ve uygulama performans sorunları çözümlemek etkinleştirin.  

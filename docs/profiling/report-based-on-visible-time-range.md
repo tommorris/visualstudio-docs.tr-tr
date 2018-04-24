@@ -2,8 +2,7 @@
 title: Görünür zaman aralığı tabanlı rapor | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.profile
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a71ebbae22f9eafdb6c7a31cad07bb077d034736
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76c7217b9b4159a368575d5acef92b03775478b4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="report-based-on-visible-time-range"></a>Görünür Zaman Aralığı Tabanlı Rapor
 Profil görünümü şu anda görünür zaman aralığı ve kanallar dayalı raporlar gösterilir. Farklı veri alt kümesi ayrıntılarını görmek için gösterge öğelerini tıklatın.  

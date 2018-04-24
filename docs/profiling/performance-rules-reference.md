@@ -2,8 +2,7 @@
 title: Performans kuralları başvurusu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ef77220fa80cda468c5af9e9b1c91a82e6f8677
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7707dad3e839ccc1bd306cb840555d1091e75a8a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-rules-reference"></a>Performans Kuralları Başvurusu
 Profil Araçları performans kuralları, ek uyarılar ve uygulamanızın performansı hakkında bilgi sağlar. Performans kuralları, Windows ve işlemci performans sayaçları gibi kaynaklardan toplanan profil çalıştırmada verileri analiz edin. Kural iletileri hata çıktı penceresinde görünür [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] tümleşik geliştirme ortamı. İleti aşağıdaki kural düzeylerinden birini listelenmiştir:  

@@ -3,7 +3,7 @@ title: RC görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
 - vc.task.rc
@@ -19,16 +19,16 @@ helpviewer_keywords:
 - RC task (MSBuild (Visual C++))
 - MSBuild (Visual C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 700d94742f06605b385577bb92d252ef54e6b3f1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28f600d01765c37b3e9a896afa8b6d2a55c7df12
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="rc-task"></a>RC Görevi
 Microsoft Windows Kaynak Derleyicisi aracı sarmalar rc.exe. **RC** görev imleçler, simgeler, bit eşlemler, iletişim kutuları ve yazı tipleri gibi kaynaklar bir kaynak (.res) dosyasına derler. Daha fazla bilgi için "Kaynak derleyicisi" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  

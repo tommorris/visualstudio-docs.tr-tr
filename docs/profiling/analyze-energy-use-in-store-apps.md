@@ -2,8 +2,7 @@
 title: UWP uygulamalarında enerji kullanımını çözümleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 56c5644c72c6e78ffcdb8e2febb38f8b3fdfd746
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05b5b87afda20990f122597520b0e2cf7e9b7ac1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP uygulamalarında enerji kullanımını çözümleme
 Visual Studio **enerji tüketimi** profil oluşturucu UWP uygulamaları kendi pille saat bölümünü veya tümünü Çalıştır düşük güç tablet cihazlarda güç ve enerji tüketimi analiz etmenize yardımcı olur. Enerjisini pilden alan bir aygıtta çok fazla enerji kullanan bir uygulama, çok fazla müşteri memnuniyetsizliğine neden olabilir ve sonunda müşteriler uygulamayı kaldırmaya da karar verebilir. Enerji kullanımını en iyi duruma getirme, uygulamanızın benimseme artırmak ve müşteriler tarafından kullanın.  

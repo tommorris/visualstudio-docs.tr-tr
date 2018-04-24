@@ -2,8 +2,7 @@
 title: 'Nasıl yapılır: izinleri ayarla | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling, setting permissions
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72106d2cd7483bc9775cee92accdef17daee737b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b1f3cf4ca3cb79a6b58d4f3549d05d355764148f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-set-permissions"></a>Nasıl yapılır: izinleri ayarla
 
@@ -65,7 +64,7 @@ Bir yöneticinin bunları profil oluşturma araçları için yazılım sürücü
 
 2. Klasöre sağ tıklayın ve ardından **özellikleri**.
 
-      **\<Klasör adı > Özellikler** iletişim kutusu görüntülenir.
+     **\<Klasör adı > Özellikler** iletişim kutusu görüntülenir.
 
 3. Tıklatın **güvenlik** sekmesi.
 

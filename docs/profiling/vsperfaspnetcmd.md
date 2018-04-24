@@ -2,8 +2,7 @@
 title: VSPerfASPNetCmd | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,VSPerfASPNETCmd
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3455f129f37df05a6fc95f6d63c5c43d3fa2541
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e8ddfb73e6871a30cabcece0711b0cf5b4c63175
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 **VSPerfASPNetCmd.exe** komut satırı aracı sağlar, ASP.Net Web siteleri profiline gerektirmeden ortam değişkenlerini ayarlama veya bilgisayarınızı yeniden başlatın. Kullanım **VSPerfASPNetCmd.exe** yerine [VSPerfCmd](../profiling/vsperfcmd.md) zaman ASP.NET Web siteleri profil ve tarafından sağlanan ek işlevsellik gerekmez **VSPerfCmd**. Hakkında daha fazla bilgi için **VSPerfASPNetCmd**, bkz: [VSPerfASPNETCmd ile Hızlı Web sitesi profil](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNetCmd** bir ASP.NET Web sitesi profilini bağımsız profil oluşturucu kullanırken kullanmak için tercih edilen komut satırı aracıdır.  

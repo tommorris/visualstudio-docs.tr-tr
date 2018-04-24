@@ -1,9 +1,7 @@
 ---
-title: 3-b modellerle çalışma | Microsoft Docs
-ms.custom: ''
+title: 3B modeller ile çalışma
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 author: gewarren
@@ -11,25 +9,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c58b65c15ab95049345f1323689df354bdafec4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 539bcb9e0f5e1d2c439b372989e0e245737b478f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="working-with-3-d-models"></a>3B Modelleriyle Çalışma
-Model Düzenleyicisi'nde kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 3-b modelleri oluşturmak için. DirectX tabanlı oyun veya uygulama modellerinde kullanabilirsiniz.  
-  
-## <a name="3-d-models"></a>3B modeller  
- 3B Sahne oldukları gibi nesnelerin Şekil 3-b modelleri tanımlayın. Modelleri temel insanı yalnızlaştırıcı nesneleri, temel nesne veya hatta tüm 3B Sahne hiyerarşiden biçimlendiren karmaşık olabilir. 3B alanında noktalarının 3B nesnenin yapılan (olarak bilinen *köşeleri*), üçgenler, satırları veya bu noktalarının ve bir köşe başına veya ilkel başına temelinde uygulanabilir özniteliklerine yapılan başka ilkel tanımlama dizinlerini — için Örneğin, yüzey normalleri. Ayrıca, bazı bilgiler bir nesne başına temelinde geçerli — Örneğin, hangi gölgelendirici ve dokuları nesne benzersiz görünümünü verir.  
-  
- Temel 3-b modelleri oluşturmak için ihtiyacınız olan tek araç Model düzenleyicisidir — malzeme özellikleri, doku ve piksel gölgelendiriciler tam —, oyun ya da uygulama kullanabilirsiniz. Veya yer tutucu prototipi oluşturulurken ve modelleri sonlandırmaya Sanatçılar devreye önce sınamak için kullanılacak modeller oluşturabilirsiniz.  
-  
- Model düzenleyicisinde, tam özellikli araçları kullanılarak oluşturulan mevcut 3-b modelleri görüntülemek ve resim varlıklar sorunlarını gözlemlerseniz, bunları değiştirmek için de kullanabilirsiniz.  
-  
-## <a name="related-topics"></a>İlgili konular  
-  
-|Başlık|Açıklama|  
-|-----------|-----------------|  
-|[Model Düzenleyicisi](../designers/model-editor.md)|Model Düzenleyicisinde 3-b modelleri ile çalışmak için nasıl kullanılacağını açıklar.|  
-|[Model Düzenleyici Örnekleri](../designers/model-editor-examples.md)|Model Düzenleyicisinde ortak 3-b modelleme görevleri gerçekleştirmek için nasıl kullanılacağını gösteren konulara bağlantılar sağlar.|
+# <a name="work-with-3d-models"></a>3B modeller ile çalışma
+
+3B modeller oluşturmak için Visual Studio'da Model Düzenleyicisi'ni kullanın. DirectX tabanlı oyun veya uygulama modellerinde kullanabilirsiniz.
+
+## <a name="3d-models"></a>3B modelleri
+
+3B Sahne oldukları gibi 3D model nesneleri şeklini tanımlayın. Modelleri temel insanı yalnızlaştırıcı nesneleri, temel nesne veya hatta tüm 3B görüntülerin hiyerarşiden biçimlendiren karmaşık olabilir. 3B uzaydaki noktalarının 3B bir nesneyi yapılan (olarak bilinen *köşeleri*), üçgenler, satırları veya bu noktalarının ve bir köşe başına veya ilkel başına temelinde uygulanabilir özniteliklerine yapılan başka ilkel tanımlama dizinlerini — için Örneğin, yüzey normalleri. Ayrıca, bazı bilgiler bir nesne başına temelinde geçerli — Örneğin, hangi gölgelendirici ve dokuları nesne benzersiz görünümünü verir.
+
+Temel 3B modeller oluşturmak için ihtiyacınız olan tek araç Model düzenleyicisidir — malzeme özellikleri, doku ve piksel gölgelendiriciler tam —, oyun ya da uygulama kullanabilirsiniz. Veya yer tutucu prototipi oluşturulurken ve modelleri sonlandırmaya Sanatçılar devreye önce sınamak için kullanılacak modeller oluşturabilirsiniz.
+
+Model düzenleyicisinde, tam özellikli araçları kullanılarak oluşturulan varolan 3B modelleri görüntülemek ve resim varlıklar sorunlarını gözlemlerseniz, bunları değiştirmek için de kullanabilirsiniz.
+
+## <a name="related-topics"></a>İlgili konular
+
+|Başlık|Açıklama|
+|-----------|-----------------|
+|[Model Düzenleyicisi](../designers/model-editor.md)|Model Düzenleyicisinde 3B modeller ile çalışmak için nasıl kullanılacağını açıklar.|
+|[Model Düzenleyici Örnekleri](../designers/model-editor-examples.md)|Model Düzenleyicisinde görevleri modelleme ortak 3B gerçekleştirmek için nasıl kullanılacağını gösteren konulara bağlantılar sağlar.|

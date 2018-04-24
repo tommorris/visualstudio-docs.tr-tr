@@ -2,8 +2,7 @@
 title: Özet görünümü | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
@@ -18,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d10c3c69cccfe6b91d15d6cac6e5a599c766481
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51747dca8e11f7a23b911bbfe8ddcdb81d275d69
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="summary-view"></a>Özet Görünümü
 Özet görünümü profil çalıştırılmasıyla en performans pahalı işlevleri veya nesneler hakkındaki bilgileri görüntüler. Bu görünüm bir zaman çizelgesi grafik sağlar ve iki veya daha fazla listesi en pahalı işlevleri veya nesneler profil oluşturma yöntemi, performans ölçümleri temelinde. Bu görünümde veri kullanılan profil yöntemine bağlıdır (örnekleme, izleme veya eşzamanlılık) ve .NET bellek ayırma olup toplanan.  

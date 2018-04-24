@@ -1,9 +1,9 @@
 ---
-title: Visual Studio ağ tabanlı yüklemesini oluşturma | Microsoft Docs
-description: Visual Studio içinde bir kuruluş dağıtmak için bir ağ yükleme noktası oluşturmayı açıklar
+title: Visual Studio ağ tabanlı yüklemesini oluşturma
+description: Visual Studio içinde bir kuruluş dağıtmak için bir ağ yükleme noktası oluşturmayı öğrenin.
 ms.date: 10/17/2017
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe10a67ccb62e41edec12f40db639b30bd2a3bc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6fdecc141affcb88d0a04346767469ef5296557d
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Visual Studio 2017 bir ağ yüklemesi oluşturma
 
@@ -47,7 +47,7 @@ Bu adımı tamamlamak için bir Internet bağlantısına sahip olmalıdır. Çev
 
    > [!IMPORTANT]
    > Tam bir Visual Studio 2017 düzeni en az 35 GB disk alanı gerektirir ve indirmek için biraz zaman alabilir.  Bkz: [ağ düzeni özelleştirme](#customizing-the-network-layout) yüklemek istediğiniz bileşenleri ile bir düzen oluşturma hakkında ayrıntılar için bölüm.
-
+   >
    > [!TIP]
    > İndirme dizininizden komutu çalıştırdığınızdan emin olun. Genellikle, bu `C:\Users\<username>\Downloads` Windows 10 çalıştıran bir bilgisayarda.
 
@@ -110,7 +110,6 @@ Varolan bir düzen tam bir düzene güncelleştirmek istiyorsanız, kullanmak--t
 
 ```vs_enterprise.exe --layout c:\VS2017Layout --all```
 
-
 ## <a name="deploying-from-a-network-installation"></a>Bir ağ yüklemesinden dağıtma
 
 Yöneticiler, Visual Studio istemci iş istasyonlarında bir yükleme komut dosyası bir parçası olarak dağıtabilirsiniz. Veya yönetici haklarına sahip kullanıcılar kendi makinede Visual Studio'yu yüklemek için doğrudan paylaşımından Kurulumu çalıştırın.
@@ -151,15 +150,18 @@ Visual Studio 2017 daha eski bir sürümü için bir düzen oluşturmanız gerek
 Diğer destek seçenekleri, çok sahibiz. Bir listesi için bkz: bizim [konuşun bize](../ide/how-to-report-a-problem-with-visual-studio-2017.md) sayfası.
 
 ## <a name="get-support"></a>Destek alma
+
 Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
+
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 * [Visual Studio'yu yükleyin](install-visual-studio.md)
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)

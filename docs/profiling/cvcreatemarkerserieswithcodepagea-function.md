@@ -2,8 +2,7 @@
 title: CvCreateMarkerSeriesWithCodePageA işlevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmakers/CvCreateMarkerSeriesWithCodePageA
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94c9e1c6e0fdcefc542784f567798ec372eee90a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3bf258dbca695fe3f1516d977e02a21058377e02
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA İşlevi
 Belirtilen sağlayıcı ve belirtilen kod sayfası için işaret serisi oluşturur. Bu işlev, açıkça işaret API ANSI işlevleri tarafından yazılan metin kod sayfası belirlemek için kullanılabilir. İzleme yakalanan ve daha sonra farklı yerel ayarlara/dilleri ile farklı makinelerde analiz durumda kod sayfası ayarı yararlı olabilir. Varsayılan olarak GetACP() işlevi tarafından döndürülen kod sayfası kullanılır.  

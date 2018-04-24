@@ -1,11 +1,9 @@
 ---
 title: Seçme ve Python yorumlayıcılar yükleniyor
 description: Visual Studio'da kısa yönergelerle yükleyicilerinin nerede bulacağını üzerinde desteklenen Python yorumlayıcılar tam bir listesi.
-ms.custom: ''
 ms.date: 02/20/2018
-ms.technology:
-- devlang-python
-ms.devlang: python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -13,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f60d8cde8e729745bb8efd4a5df9f41ade15752a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed5ac9e470b55281d1273bfe665be0813b37bf55
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="installing-python-interpreters"></a>Python yorumlayıcılar yükleme
 

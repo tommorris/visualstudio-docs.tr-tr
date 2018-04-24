@@ -3,8 +3,8 @@ title: Visual Studio 2017 değiştirme | Microsoft Docs
 description: Visual Studio, adım adım değiştirme hakkında bilgi edinin.
 ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2018
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -17,24 +17,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 960a32aed9ed88b4d03aee5977bc81b45d7b2573
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dab0aa786dcaf5e99290dce79bc72deb9f0d5805
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Visual Studio 2017 ekleyerek veya kaldırarak iş yükleri ve bileşenleri değiştirme
+
 Biz yalnızca yaptığınız daha kolay gerçekleştirmek istediğiniz görevlerin eşleştirmek için Visual Studio kişiselleştirmek için de, Visual Studio, çok özelleştirmek daha kolay yaptık. Bunu yapmak için yeni Visual Studio Yükleyicisi'ni başlatın ve istediğiniz değişiklikleri yapın.
 
-İşte nasıl.  
+İşte nasıl.
 
-## <a name="modify-workloads"></a>İş yüklerini değiştirme  
- İş yükleri programlama dili veya kullanmakta olduğunuz platform için gerek duyduğunuz özellikler içerir. Böylece yapmak istediğiniz zaman yapmak istediğiniz iş destekleyen Visual Studio değiştirmek için iş yüklerini kullanın.  
+## <a name="modify-workloads"></a>İş yüklerini değiştirme
+
+ İş yükleri programlama dili veya kullanmakta olduğunuz platform için gerek duyduğunuz özellikler içerir. Böylece yapmak istediğiniz zaman yapmak istediğiniz iş destekleyen Visual Studio değiştirmek için iş yüklerini kullanın.
 
 >[!IMPORTANT]
 >Yüklemek, güncelleştirme veya Visual Studio değiştirmek için yönetim izinlerine sahip bir hesapla oturum açmalısınız. Daha fazla bilgi için bkz: [kullanıcı izinleri ve Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
-1.  Visual Studio yükleyicisi bilgisayarınızda bulun.  
+1. Visual Studio yükleyicisi bilgisayarınızda bulun.  
 
      Örneğin, Windows 10 çalıştıran bir bilgisayarda seçin **Başlat**ve ardından harfi kaydırma **V**, olarak listelenen burada **Visual Studio yükleyicisi**.  
 
@@ -43,7 +45,7 @@ Biz yalnızca yaptığınız daha kolay gerçekleştirmek istediğiniz görevler
      >[!NOTE]
      Bazı bilgisayarlarda, Visual Studio yükleyicisi harf altında listelenebilir **"M"** olarak **Microsoft Visual Studio yükleyicisi**.<br/><br/> Alternatif olarak, Visual Studio yükleyicisi şu konumda bulabilirsiniz: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2.  ' I tıklatın veya yükleyiciyi başlatmak için'a dokunun ve ardından **Değiştir**.  
+2. ' I tıklatın veya yükleyiciyi başlatmak için'a dokunun ve ardından **Değiştir**.  
 
      ![Başlatma veya Visual Studio değiştirmek](media/modify-visual-studio.png "Visual Studio 2017 değiştirme")
 
@@ -51,7 +53,7 @@ Biz yalnızca yaptığınız daha kolay gerçekleştirmek istediğiniz görevler
 
      ![Güncelleştirmek veya Visual Studio değiştirmek](media/modify-or-update-visual-studio.png "güncelleştirme veya Visual Studio 2017 değiştirme")
 
-3.  Gelen **iş yükleri** ekranında, seçin veya yüklemek veya kaldırmak istediğiniz iş yüklerini seçimini kaldırın.  
+3. Gelen **iş yükleri** ekranında, seçin veya yüklemek veya kaldırmak istediğiniz iş yüklerini seçimini kaldırın.
 
     ![Visual Studio 2017 Kurulum iletişim](media/vs2017-modify-workloads.PNG "bir iş yükü Visual Studio 2017 seçin")
 
@@ -61,18 +63,21 @@ Biz yalnızca yaptığınız daha kolay gerçekleştirmek istediğiniz görevler
 
 ## <a name="modify-individual-components"></a>Bileşenleri tek tek değiştirme
 
-Kullanışlı iş yükleri özelliği kullanmak Visual Studio yüklemenizi özelleştirmek için seçin istemiyorsanız **bileşenleri tek tek** seçeneği Visual Studio Yükleyicisi'nden, neleri istediğiniz ve ardından izleyin seçin ister.  
+Kullanışlı iş yükleri özelliği kullanmak Visual Studio yüklemenizi özelleştirmek için seçin istemiyorsanız **bileşenleri tek tek** seçeneği Visual Studio Yükleyicisi'nden, neleri istediğiniz ve ardından izleyin seçin ister.
 
 ## <a name="get-support"></a>Destek alma
+
 Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) Yardım sayfası. De bize yükleme yardımcı olmak için başvurabilirsiniz [canlı sohbet](https://www.visualstudio.com/vs/support/#talktous) (yalnızca İngilizce); daha fazla bilgi için bkz: ["Bize başvurun" sayfasında Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
+
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 * [Visual Studio 2017 yükleyin](install-visual-studio.md)
 * [Visual Studio 2017 güncelleştir](update-visual-studio.md)
 * [Visual Studio 2017 kaldırma](uninstall-visual-studio.md)

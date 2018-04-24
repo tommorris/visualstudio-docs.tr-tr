@@ -2,21 +2,20 @@
 title: 'Nasıl yapılır: görevlerdeki hataları yoksayma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
+ms.technology: msbuild - "vs-ide-sdk"
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, ignoring errors
 - ContinueOnError attribute [MSBuild]
 ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
-author: kempb
-ms.author: kempb
+author: mikejo5000
+ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 5013bec8da1cfd8e74fc6ae74724fea7a8eec636
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 348a026815d0d48390fed5741e6dba741fda9937
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Nasıl Yapılır: Görevlerdeki Hataları Yoksayma
 Bazen bir yapı hatalarının bazı görevler dayanıklı olmasını istiyorsunuz. Bu kritik olmayan görevleri başarısız olursa, yapı hala gerekli çıkış üretebilir çünkü devam etmek istiyorsunuz. Örneğin, bir proje kullanıyorsa, bir `SendMail` her bileşenin oluşturulduktan sonra bir e-posta iletisi göndermek için görev posta sunucuları kullanılamıyor ve durum iletileri gönderilemez bile tamamlanıncaya kadar devam etmek derleme için kabul edilebilir düşünebilirsiniz. Veya Ara dosyaları genellikle derleme sırasında silinirse, örneğin, bu dosyaları bile silinemez zaman tamamlanıncaya kadar devam etmek derleme için kabul edilebilir düşünebilirsiniz.  

@@ -12,17 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ea9217e0b7025c2c802d1a632e16ca30d99336a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7a388f14040cedd7fd05fd7ffdbb47ba7a8ff09
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="model-editor"></a>Model Düzenleyicisi
 
-Bu belge, görüntülemek, oluşturmak ve 3-b modellere değiştirmek için Visual Studio Model Düzenleyicisi ile çalışmak açıklar.
+Bu belge, görüntülemek, oluşturmak ve 3B modeller değiştirmek için Visual Studio Model Düzenleyicisi ile çalışmak açıklar.
 
-Sıfırdan 3B modeller oluşturmak veya tam özellikli 3B modelleme araçları kullanılarak oluşturulmuş daha karmaşık 3B modelleri görüntülemek veya değiştirmek için Model Düzenleyicisi'ni kullanabilirsiniz. Model Düzenleyicisi, DirectX uygulaması geliştirmede kullanılan çeşitli 3B model biçimlerini destekler.
+Temel 3B modelleri sıfırdan oluşturabilir veya görüntülemek ve tam özellikli 3B modelleme araçları kullanılarak oluşturulmuş olan daha karmaşık 3B modelleri değiştirmek için Model Düzenleyicisi'ni kullanabilirsiniz. Model Düzenleyicisinde kullanılan birkaç 3D modeli DirectX uygulaması geliştirme destekler.
 
 ## <a name="supported-formats"></a>Desteklenen biçimler
 
@@ -36,9 +36,9 @@ Model Düzenleyicisinde bu modeli biçimlerini destekler:
 
 ## <a name="get-started"></a>Kullanmaya başlayın
 
-Bu bölümde, Visual Studio projenizi bir 3B modelin eklemeyi açıklar ve başlamak için gereken temel bilgileri sağlar.
+Bu bölümde, Visual Studio projenizi 3D model eklemeyi açıklar ve başlamak için gereken temel bilgileri sağlar.
 
-### <a name="to-add-a-3-d-model-to-your-project"></a>Projenize 3B model eklemek için
+### <a name="to-add-a-3d-model-to-your-project"></a>Bir 3B modeli projenize eklemek için
 
 1. İçinde **Çözüm Gezgini**, görüntüsüne ekleyin ve ardından istediğiniz proje için kısayol menüsünü açın **Ekle** > **yeni öğe**.
 
@@ -57,19 +57,19 @@ Bu bölümde, Visual Studio projenizi bir 3B modelin eklemeyi açıklar ve başl
 
 ### <a name="axis-orientation"></a>Eksen yönlendirme
 
-Visual Studio 3-b eksen her yönünü destekler ve destekleyen model dosya biçimlerinden eksen yönlendirme bilgilerini yükler. Eksen yönlendirmesini belirtilmediği takdirde, Visual Studio sağ koordinat sistemi varsayılan olarak kullanır. **Eksen göstergesi** tasarım yüzeyine sağ alt köşesinde geçerli ekseni yönlendirmesini gösterir. Üzerinde **eksen göstergesi**kırmızı x ekseni temsil eder, yeşil y ekseni temsil eder ve mavi z ekseni temsil eder.
+Visual Studio 3B Eksen her yönünü destekler ve destekleyen model dosya biçimlerinden eksen yönlendirme bilgilerini yükler. Eksen yönlendirmesini belirtilmediği takdirde, Visual Studio sağ koordinat sistemi varsayılan olarak kullanır. **Eksen göstergesi** tasarım yüzeyine sağ alt köşesinde geçerli ekseni yönlendirmesini gösterir. Üzerinde **eksen göstergesi**kırmızı x ekseni temsil eder, yeşil y ekseni temsil eder ve mavi z ekseni temsil eder.
 
-### <a name="begin-your-3-d-model"></a>3-b modelinizi başlayın
+### <a name="begin-your-3d-model"></a>3B modelinizi başlayın
 
-Model Düzenleyicisi'nde, her yeni nesne her zaman temel 3-b şekiller biri olarak başlar — veya *Temelleri*— Model düzenleyicisine yerleşiktir. Yeni ve benzersiz nesneler oluşturmak için, görünüme bir temel öğe ekler ve sonra da köşeleriyle oynayarak şeklini değiştirirsiniz. Karmaşık şekiller için, kalıp veya alt bölüm kullanarak ek köşeler ekler ve sonra bunlarda değişiklik yaparsınız. Temel bir nesne, Sahne ekleme hakkında daha fazla bilgi için bkz: [oluşturma ve 3-b nesneleri içeri aktarma](#Adding3DObjects). Daha fazla köşeleri nesneye ekleme hakkında daha fazla bilgi için bkz: [nesneleri değiştirmeniz](#ModifyingObjects).
+Model Düzenleyicisi'nde, her yeni nesne her zaman temel 3B şekiller biri olarak başlar — veya *Temelleri*— Model düzenleyicisine yerleşiktir. Yeni ve benzersiz nesneler oluşturmak için, görünüme bir temel öğe ekler ve sonra da köşeleriyle oynayarak şeklini değiştirirsiniz. Karmaşık şekiller için, kalıp veya alt bölüm kullanarak ek köşeler ekler ve sonra bunlarda değişiklik yaparsınız. Temel bir nesne, Sahne ekleme hakkında daha fazla bilgi için bkz: [oluşturma ve 3B nesneleri içeri aktarma](#Adding3DObjects). Daha fazla köşeleri nesneye ekleme hakkında daha fazla bilgi için bkz: [nesneleri değiştirmeniz](#ModifyingObjects).
 
 ## <a name="work-with-the-model-editor"></a>Model Düzenleyicisi ile çalışma
 
-Aşağıdaki bölümlerde, 3B modellerle çalışmak için Model Düzenleyicisi'nin nasıl kullanılacağı açıklanmaktadır.
+Aşağıdaki bölümlerde Model Düzenleyicisinde 3B modeller ile çalışmak için nasıl kullanılacağı açıklanmaktadır.
 
 ### <a name="model-editor-toolbars"></a>Model Düzenleyicisi araç çubukları
 
-Model Düzenleyicisi araç çubukları, 3B modellerle çalışmanıza yardımcı olan komutlar içerir.
+Araç çubukları içeren Model Düzenleyicisinde 3D modellerle çalışma yardımcı komutları.
 
 Model Düzenleyicisi'nin durumunu etkileyen komutları bulunur **Model Düzenleyicisinde modu** ana Visual Studio penceresinde araç. Modelleme Araçları ve komut dosyalı komutları bulunur **Model Düzenleyicisinde** Model Düzenleyicisinde tasarım yüzeyine araç.
 
@@ -82,7 +82,7 @@ Bu tablo üzerinde öğeleri açıklar **Model Düzenleyicisinde modu** araç ç
 |Araç Çubuğu Öğesi|Açıklama|
 |------------------|-----------------|
 |**seçin**|Etkin seçim moduna bağlı olarak görünümdeki noktaların, kenarların, yüzeylerin ya da nesnelerin seçimini etkinleştirir.|
-|**Pan**|Pencere çerçevesine göre 3B görünümün hareketini sağlar. Kaydırmak için görünümde bir nokta seçip dolaştırın.<br /><br /> İçinde **seçin** modu tuşuna basın ve etkinleştirmek için Ctrl basılı **Pan** geçici olarak modu.|
+|**Pan**|Bir 3B Sahne pencere çerçevesi göre hareketini sağlar. Kaydırmak için görünümde bir nokta seçip dolaştırın.<br /><br /> İçinde **seçin** modu tuşuna basın ve etkinleştirmek için Ctrl basılı **Pan** geçici olarak modu.|
 |**Yakınlaştır**|Pencere çerçevesine göre daha az ya da daha fazla görünüm ayrıntısının görüntülenmesini sağlar. İçinde **yakınlaştırma** modu, Görünüm bir nokta seçin ve ardından sağa taşıyın veya yakınlaştırmak için aşağı veya sol veya en fazla yakınlaştırma yetersiz.<br /><br /> İçinde **seçin** modu, yakınlaştırma veya uzaklaştırma, Ctrl tuşuna basılı tutun durumdayken fare tekerleği kullanarak.|
 |**Yörünge**|Görünümü seçili nesnenin çevresinde dairesel bir yola yerleştirir. Hiçbir nesne seçili değilse, yol görünüm başlangıcında ortalanır. **Not:** Bu mod sahip olmayan zaman efekt **Dikçizgisel** projeksiyon etkindir.|
 |**Uluslararası yerel**|Bu öğe etkin olduğunda, seçili nesne üzerindeki dönüştürmeler dünya uzayında oluşur. Aksi takdirde, seçilen nesne üzerinde dönüştürmeler yerel uzayda oluşur.|
@@ -99,7 +99,7 @@ Bu tablo üzerinde öğeleri açıklar **Model Düzenleyicisinde modu** araç ç
 |**Araç Kutusu**|Alternatif olarak gösterir veya gizler **araç**.|
 |**Belge Anahattı**|Alternatif olarak gösterir veya gizler **belge anahattı** penceresi.|
 |**Özellikler**|Alternatif olarak gösterir veya gizler **özellikleri** penceresi.|
-|**Gelişmiş**|Gelişmiş komutları ve seçenekleri içerir.<br /><br /> **Grafik motorları**<br /><br /> **D3D11 ile işleme**<br /> Model Düzenleyicisi tasarım yüzeyini işlemek için Direct3D 11 kullanır.<br /><br /> **D3D11WARP ile işleme**<br /> Model Düzenleyicisi tasarım yüzeyini işlemek için Direct3D 11 Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) kullanır.<br /><br /> **Sahne Yönetimi**<br /><br /> **İçeri Aktar**<br /> Başka bir 3B model dosyasındaki nesneleri geçerli görünüme içeri aktarır.<br /><br /> **Üst öğeye bağlayın**<br /> Çoklu seçilen nesnelerin ilkini, kalan seçili nesnelerin üst öğesi olarak ayarlar.<br /><br /> **Üst öğeden ayırma**<br /> Seçili nesneyi üst öğesinden ayırır. Seçilen nesne olur bir *kök nesnesi* Sahne içindeki. Kök nesnenin bir üst nesnesi olmaz.<br /><br /> **Grup oluşturma**<br /> Seçili nesneleri eşdüzey nesneler olarak gruplandırır.<br /><br /> **Nesneleri birleştirme**<br /> Seçili nesneleri tek bir nesne halinde birleştirir.<br /><br /> **Çokgen seçimden yeni nesne oluşturma**<br /> Seçilen yüzeyleri geçerli nesneden kaldırır ve bu yüzeyleri içeren yeni bir nesneyi sahneye ekler.<br /><br /> **Araçlar**<br /><br /> **Çokgen sargı ters çevirin**<br /> Seçili çokgenleri çevirir ve böylece sargı sırasını ve yüzey normalini tersine çevirir.<br /><br /> **Tüm animasyon kaldırma**<br /> Nesnelerden animasyon verilerini kaldırır.<br /><br /> **Triangulate**<br /> Seçili nesneyi üçgenlere dönüştürür.<br /><br /> **Görünümü**<br /><br /> Arkayüz Ayrılması<br /> Arka yüz ayırmayı etkinleştirir veya devre dışı bırakır.<br /><br /> **Kare hızı**<br /> Tasarım yüzeyinin sağ üst köşesinde kare hızını görüntüler. Kare hızı, saniye başına çizilen çerçeve sayısıdır.<br /><br /> Bu seçenek, etkinleştirdiğinizde yararlıdır **gerçek zamanlı işleme modunu** seçeneği.<br /><br /> **Tümünü Göster**<br /> Sahnedeki tüm nesneleri gösterir. Bu sıfırlar **gizli** her nesnenin özelliğinin **False**.<br /><br /> **Yüz normalleri Göster**<br /> Her bir yüzeyin normalini gösterir.<br /><br /> **Eksik malzeme Göster**<br /> Atanmış malzemeleri olmayan nesneler üzerinde özel bir doku gösterir.<br /><br /> **Özet Göster**<br /> Etkin seçimin pivot noktasında 3B eksen işaretçisi görüntülenmesini etkinleştirir veya devre dışı bırakır.<br /><br /> **Yer tutucu düğümleri Göster**<br /> Yer tutucu düğümlerini gösterir. Nesneleri gruplandırdığınızda bir yer tutucu düğümü oluşturulur.<br /><br /> **Köşe normalleri Göster**<br /> Her köşenin normalini gösterir. **İpucu:** seçebileceğiniz **betikleri** düğmesi son komut dosyası yeniden çalıştırın.|
+|**Gelişmiş**|Gelişmiş komutları ve seçenekleri içerir.<br /><br /> **Grafik motorları**<br /><br /> **D3D11 ile işleme**<br /> Model Düzenleyicisi tasarım yüzeyini işlemek için Direct3D 11 kullanır.<br /><br /> **D3D11WARP ile işleme**<br /> Model Düzenleyicisi tasarım yüzeyini işlemek için Direct3D 11 Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) kullanır.<br /><br /> **Sahne Yönetimi**<br /><br /> **İçeri Aktar**<br /> Nesneler için geçerli Sahne başka bir 3B modeli dosyasından içeri aktarır.<br /><br /> **Üst öğeye bağlayın**<br /> Çoklu seçilen nesnelerin ilkini, kalan seçili nesnelerin üst öğesi olarak ayarlar.<br /><br /> **Üst öğeden ayırma**<br /> Seçili nesneyi üst öğesinden ayırır. Seçilen nesne olur bir *kök nesnesi* Sahne içindeki. Kök nesnenin bir üst nesnesi olmaz.<br /><br /> **Grup oluşturma**<br /> Seçili nesneleri eşdüzey nesneler olarak gruplandırır.<br /><br /> **Nesneleri birleştirme**<br /> Seçili nesneleri tek bir nesne halinde birleştirir.<br /><br /> **Çokgen seçimden yeni nesne oluşturma**<br /> Seçilen yüzeyleri geçerli nesneden kaldırır ve bu yüzeyleri içeren yeni bir nesneyi sahneye ekler.<br /><br /> **Araçlar**<br /><br /> **Çokgen sargı ters çevirin**<br /> Seçili çokgenleri çevirir ve böylece sargı sırasını ve yüzey normalini tersine çevirir.<br /><br /> **Tüm animasyon kaldırma**<br /> Nesnelerden animasyon verilerini kaldırır.<br /><br /> **Triangulate**<br /> Seçili nesneyi üçgenlere dönüştürür.<br /><br /> **Görünümü**<br /><br /> Arkayüz Ayrılması<br /> Arka yüz ayırmayı etkinleştirir veya devre dışı bırakır.<br /><br /> **Kare hızı**<br /> Tasarım yüzeyinin sağ üst köşesinde kare hızını görüntüler. Kare hızı, saniye başına çizilen çerçeve sayısıdır.<br /><br /> Bu seçenek, etkinleştirdiğinizde yararlıdır **gerçek zamanlı işleme modunu** seçeneği.<br /><br /> **Tümünü Göster**<br /> Sahnedeki tüm nesneleri gösterir. Bu sıfırlar **gizli** her nesnenin özelliğinin **False**.<br /><br /> **Yüz normalleri Göster**<br /> Her bir yüzeyin normalini gösterir.<br /><br /> **Eksik malzeme Göster**<br /> Atanmış malzemeleri olmayan nesneler üzerinde özel bir doku gösterir.<br /><br /> **Özet Göster**<br /> Etkinleştirir veya görüntülenmesini 3B Eksen işaret etkin seçimi Özet noktada devre dışı bırakır.<br /><br /> **Yer tutucu düğümleri Göster**<br /> Yer tutucu düğümlerini gösterir. Nesneleri gruplandırdığınızda bir yer tutucu düğümü oluşturulur.<br /><br /> **Köşe normalleri Göster**<br /> Her köşenin normalini gösterir. **İpucu:** seçebileceğiniz **betikleri** düğmesi son komut dosyası yeniden çalıştırın.|
 
 Burada **Model Düzenleyicisinde** araç çubuğu:
 
@@ -121,13 +121,13 @@ Burada **Model Düzenleyicisinde** araç çubuğu:
 
 ### <a name="control-the-view"></a>Denetim Görünüm
 
-3B sahne görünüme göre işlenir; bu bir konumu ve yönü olan sanal bir kamera olarak düşünülebilir. Yönlendirme ve konumu değiştirmek için görünümü denetimleri kullanın **Model Düzenleyicisinde modu** araç.
+3B Sahne, bir konum ve yön sahip sanal bir kamera olarak düşünülebilir görünümü göre işlenir. Yönlendirme ve konumu değiştirmek için görünümü denetimleri kullanın **Model Düzenleyicisinde modu** araç.
 
 Aşağıdaki tabloda birincil görünüm denetimleri açıklanmaktadır.
 
 |Görünüm Denetimi|Açıklama|
 |------------------|-----------------|
-|**Pan**|Pencere çerçevesine göre 3B görünümün hareketini sağlar. Kaydırmak için görünümde bir nokta seçip dolaştırın.<br /><br /> İçinde **seçin** modu tuşuna basın ve etkinleştirmek için Ctrl basılı **Pan** geçici olarak modu.|
+|**Pan**|Bir 3B Sahne pencere çerçevesi göre hareketini sağlar. Kaydırmak için görünümde bir nokta seçip dolaştırın.<br /><br /> İçinde **seçin** modu tuşuna basın ve etkinleştirmek için Ctrl basılı **Pan** geçici olarak modu.|
 |**Yakınlaştır**|Pencere çerçevesine göre daha az ya da daha fazla görünüm ayrıntısının görüntülenmesini sağlar. İçinde **yakınlaştırma** modu, Görünüm bir nokta seçin ve ardından sağa taşıyın veya yakınlaştırmak için aşağı veya sol veya en fazla yakınlaştırma yetersiz.<br /><br /> İçinde **seçin** modu, yakınlaştırma veya uzaklaştırma, Ctrl tuşuna basılı tutun durumdayken fare tekerleği kullanarak.|
 |**Yörünge**|Görünümü seçili nesnenin çevresinde dairesel bir yola yerleştirir. Hiçbir nesne seçili değilse, yol görünüm başlangıcında ortalanır. **Not:** Bu mod sahip olmayan zaman efekt **Dikçizgisel** projeksiyon etkindir.|
 |**Çerçeve nesnesi**|Seçili nesneyi, görünümün ortasında yer alacak şekilde çerçeveler.|
@@ -139,17 +139,17 @@ Görünüm sanal kamera ile belirlenir, ancak aynı zamanda bir projeksiyon ile 
 |**Perspektifi**|Perspektif projeksiyonunda, bakış açısından uzakta olan nesneler boyut olarak daha küçük görünür ve en sonunda uzaktaki bir noktaya doğru birleşir.|
 |**Ortografik**|Ortografik projeksiyonda, bakış açısına olan uzaklıklarına bakılmaksızın nesneler aynı boyutta görünür. Bir yakınlaşma görüntüsü olmaz. Zaman **Dikçizgisel** etkin projeksiyon kullanamaz **Yörünge** görünümü rasgele konumlandırmak için modu.|
 
-3 boyutlu bir görünümü bilinen bir konum ve açıdan görüntülemeyi (örneğin, iki benzer görünümü karşılaştırmak istediğinizde) kullanışlı bulabilirsiniz. Bu senaryo için, Model Düzenleyicisi önceden tanımlı çeşitli görünümler sağlar. Üzerinde önceden tanımlanmış bir görünümü kullanmak için **Model Düzenleyicisinde modu** araç seçin **Görünüm**ve ardından istediğiniz önceden tanımlanmış görünümü — ön, geri, sol, sağ, üst veya alt. Bu görünümlerde, sanal kamera doğrudan sahnenin başlangıç noktasına doğru bakar. Örneğin, seçtiğiniz **görünüm üst**, Sahne doğrudan yukarıda kökeni sanal kamera bakar.
+İki benzer Sahne karşılaştırmak istediğiniz zaman bir bilinen konumu ve açı, örneğin, 3B Sahne görüntülemek daha yararlı olabilir. Bu senaryo için, Model Düzenleyicisi önceden tanımlı çeşitli görünümler sağlar. Üzerinde önceden tanımlanmış bir görünümü kullanmak için **Model Düzenleyicisinde modu** araç seçin **Görünüm**ve ardından istediğiniz önceden tanımlanmış görünümü — ön, geri, sol, sağ, üst veya alt. Bu görünümlerde, sanal kamera doğrudan sahnenin başlangıç noktasına doğru bakar. Örneğin, seçtiğiniz **görünüm üst**, Sahne doğrudan yukarıda kökeni sanal kamera bakar.
 
 ### <a name="view-additional-geometry-details"></a>Ek geometri ayrıntıları görüntüle
 
-Bir 3B nesneyi veya sahneyi daha iyi anlamak için, her köşe için normal değerler, her yüz için normal değerler, etkin seçimin pivot noktaları ve diğer ayrıntılar gibi ek geometri ayrıntılarını görüntüleyebilirsiniz. Etkinleştirmek veya bunları devre dışı bırakmak **Model Düzenleyicisinde** araç seçin **betikleri**, **Görünüm**ve ardından istediğinizi seçin.
+Bir 3B nesne veya Sahne daha iyi anlamak için köşe başına normalleri, yüz başına normalleri, etkin seçimi Özet noktaları gibi ek geometri ayrıntıları ve diğer ayrıntıları görüntüleyebilirsiniz. Etkinleştirmek veya bunları devre dışı bırakmak **Model Düzenleyicisinde** araç seçin **betikleri**, **Görünüm**ve ardından istediğinizi seçin.
 
-### <a name="create-and-import-3-d-objects"></a>Oluşturma ve 3-b nesneleri içeri aktarma
+### <a name="create-and-import-3d-objects"></a>Oluşturma ve 3B nesneleri içeri aktarma
 
-Sahne için tanımlanmış bir 3-b şekle eklemek için **araç**, istediğiniz ve ardından tasarım yüzeyine taşıma birini seçin. Yeni şekiller sahnenin başlangıcına yerleştirilir. Model düzenleyicisinde yedi şekiller sağlar: **koni**, **küp**, **silindir**, **disk**, **düzlem**,  **Küre**, ve **Teapot**.
+Sahne için tanımlanmış bir 3B şekle eklemek için **araç**, istediğiniz ve ardından tasarım yüzeyine taşıma birini seçin. Yeni şekiller sahnenin başlangıcına yerleştirilir. Model düzenleyicisinde yedi şekiller sağlar: **koni**, **küp**, **silindir**, **disk**, **düzlem**,  **Küre**, ve **Teapot**.
 
-3B bir nesnenin bir dosyadan almak için **Model Düzenleyicisinde** araç seçin **Gelişmiş**, **Sahne Yönetim**, **alma**ve ardından belirtin içeri aktarmak istediğiniz dosyanın.
+Bir dosyadan 3B bir nesneyi almak için **Model Düzenleyicisinde** araç seçin **Gelişmiş**, **Sahne Yönetim**, **alma**ve ardından belirtin içeri aktarmak istediğiniz dosyanın.
 
 ### <a name="transform-objects"></a>Dönüşüm nesneleri
 
@@ -192,7 +192,7 @@ Pivot noktası kullanmak üzere nasıl oluşturulduğunu gösteren bir örnek i�
 
 ### <a name="modify-objects"></a>Nesneleri değiştirme
 
-Köşelerini, kenarlarını ve yüzeylerini taşıyarak veya silerek bir 3B nesnenin şeklini değiştirebilirsiniz. Varsayılan olarak, Model Düzenleyicisinde bulunduğu *nesne modu*, böylece seçin ve tüm nesneleri dönüştürme. Noktaları, kenarları veya yüzeyleri seçmek için uygun seçim modunu seçin. Üzerinde **Model Düzenleyicisinde modu** araç seçin **seçim modları**ve ardından istediğiniz modu seçin.
+Bir 3B nesnesinin şeklini taşıma veya köşeleri, kenarları ve yüzeyleri silme değiştirebilirsiniz. Varsayılan olarak, Model Düzenleyicisinde bulunduğu *nesne modu*, böylece seçin ve tüm nesneleri dönüştürme. Noktaları, kenarları veya yüzeyleri seçmek için uygun seçim modunu seçin. Üzerinde **Model Düzenleyicisinde modu** araç seçin **seçim modları**ve ardından istediğiniz modu seçin.
 
  Çıkarmayla veya alt bölümlere ayırmayla ek köşeler oluşturabilirsiniz. Çıkarma bir yüzün köşelerini (aynı düzlemli bir yüzler kümesi) çoğaltır ve yüz çoğaltılmış köşelerle bağlı kalır. Alt bölümlere ayırma, önceden bir tane olan yüzeyden birçok yüzey oluşturmak için köşeler ekler. Yeni yüzler oluşturmak için, biri özgün yüzün ortasına ve biri de her bir kenarın ortasına olmak üzere yeni köşeler eklenir ve sonra bunlar orijinal köşelerle birleştirilir. Eklenen yüzlerin sayısı, orijinal yüzdeki köşelerin sayısına eşittir. Her iki durumda da, nesnenin geometrisini değiştirmek için yeni köşeleri çevirebilir, döndürebilir ve ölçeklendirebilirsiniz.
 
@@ -256,7 +256,7 @@ Bir malzemenin neyi desteklediğine bağlı olarak aydınlatma özelliklerini, d
 
 Üzerinde bir nesneden tüm malzemeleri kaldırma hakkını **Model Düzenleyicisinde** araç seçin **betikleri**, **malzemeleri**, **malzemeleri kaldırma**.
 
-Kullanabileceğiniz **gölgelendirici Tasarımcısı** , 3B Sahne nesnelere uygulanan özel gölgelendirici malzemeleri oluşturmak için. Özel gölgelendirici malzemeleri oluşturma hakkında daha fazla bilgi için bkz: [gölgelendirici Tasarımcısı](../designers/shader-designer.md). Bir nesneye malzeme özel gölgelendirici uygulama hakkında daha fazla bilgi için bkz: [nasıl yapılır: Gölgelendirici uygulama 3B modele](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Kullanabileceğiniz **gölgelendirici Tasarımcısı** , 3B Sahne nesnelere uygulanan özel gölgelendirici malzemeleri oluşturmak için. Özel gölgelendirici malzemeleri oluşturma hakkında daha fazla bilgi için bkz: [gölgelendirici Tasarımcısı](../designers/shader-designer.md). Bir nesneye malzeme özel gölgelendirici uygulama hakkında daha fazla bilgi için bkz [nasıl yapılır: bir 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ### <a name="scene-management"></a>Sahne yönetimi
 
@@ -329,6 +329,6 @@ Model Düzenleyicisi, ilk seçilen nesneyi (üst öğe haline gelen) tanımlamak
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Oyunlar ve Uygulamalar için 3B Varlıklarla Çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md)|Grafik varlıklar dokuları, görüntüler, 3-b modellere ve gölgelendirici etkileri gibi çalışmak için kullanabileceğiniz Visual Studio Araçları Genel bir bakış sağlar.|
+|[3B varlıklarıyla oyunları ve uygulamaları için çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md)|Grafik varlıklar dokuları, görüntüler, 3B modeller ve gölgelendirici etkileri gibi çalışmak için kullanabileceğiniz Visual Studio Araçları Genel bir bakış sağlar.|
 |[Görüntü Düzenleyicisi](../designers/image-editor.md)|Visual Studio görüntü Düzenleyicisi dokuları ve görüntüleri ile çalışmak için nasıl kullanılacağını açıklar.|
 |[Gölgelendirici Tasarımcısı](../designers/shader-designer.md)|Visual Studio gölgelendirici Tasarımcısı gölgelendiriciler ile çalışmak için nasıl kullanılacağını açıklar.|

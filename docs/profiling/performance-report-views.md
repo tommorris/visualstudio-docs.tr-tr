@@ -2,8 +2,7 @@
 title: Performans rapor görünümlerini | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - reports, profiling tools
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd0d03d4943e5ca626d01ba8a61f05cf167795c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 553a2a53543f25d3794cf07ef760e42a010197f1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-report-views"></a>Performans rapor görünümleri
 Bu bölümde, görünümler ve raporlar için başvuru bilgileri [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları. Profil oluşturma veri dosyalarıyla, görünümler görüntülenir [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] tümleşik geliştirme environmentIDE. Tarafından oluşturulmuş raporları [VSPerfReport](../profiling/vsperfreport.md) komut satırı aracı.  

@@ -2,8 +2,7 @@
 title: Arayan Aranan görünümü - NET bellek izleme verileri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed54d6bfc1ca6c2e15dedb17f6df033268e89f7b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: baf4edeb67d9c1c66ce6e6542b9684b29a8c358b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Arayan/Aranan görünümü - NET bellek izleme verileri
 Arayan/Aranan görünümü .NET bellek izleme metodunu kullanarak toplanan verileri profil ayırma ve seçili işlev ve seçilen bu işlev üst ve alt işlevlerini için zamanlama verilerini görüntüler. Arayan/Aranan görünümü üç kılavuzları içerir.  

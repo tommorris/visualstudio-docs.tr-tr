@@ -20,21 +20,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dfccc6fcbfbd3f5844421a97b6ad9e7c40bd0c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc85686b9b60692a625e3e09403e0e7b571f2b2f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Nasıl Yapılır: Projeleri Hedef Platformlar İçin Yapılandırma
+# <a name="how-to-configure-projects-to-target-platforms"></a>Nasıl yapılır: projeleri hedef platformlar için yapılandırma
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uygulamalarınızı 64-bit platformları da dahil olmak üzere, farklı platformları hedeflemesi için ayarlamanıza olanak tanır. 64-bit platformu hakkında daha fazla bilgi için destek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], bkz: [64-bit uygulamalar](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
-## <a name="targeting-platforms-with-the-configuration-manager"></a>Configuration Manager ile platformları hedefleme  
+## <a name="target-platforms-with-the-configuration-manager"></a>Configuration Manager ile hedef platformlar  
  **Configuration Manager** hızla yeni bir platformu projenizle hedef eklemek bir yol sağlar. İle birlikte gelen platformları birini seçerseniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], seçilen platform için projeyi derlemek için projenizi özelliklerini değiştirdi.  
   
 #### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Bir 64-bit platformu hedeflemek için bir proje yapılandırma  
   
-1.  Menü çubuğunda seçin **yapı**, **Configuration Manager**.  
+1.  Menü çubuğunda seçin **yapı** > **Configuration Manager**.  
   
 2.  İçinde **etkin çözüm platformu** listesinde, hedef çözüme 64-bit platformu seçin ve ardından **Kapat** düğmesi.  
   
@@ -51,8 +51,8 @@ ms.lasthandoff: 04/16/2018
   
  64-bit platformu hedefleyen tüm projelerde özelliklerini güncelleştirilir ve sonraki derleme projesinin 64-bit platformları için iyileştirilir.  
   
-## <a name="targeting-platforms-in-the-project-designer"></a>Proje Tasarımcısı'nda platformları hedefleme  
- Proje Tasarımcısı da projenizle farklı platformları hedeflemesi için bir yol sağlar. Listede bulunan platformları birini seçerek, **yeni çözüm platformu** iletişim kutusu, çözümünüz için çalışmaz, özel yapılandırma adı oluşturun ve ayarlarında değişiklik **Proje Tasarımcısı**  doğru platform hedeflemek için.  
+## <a name="target-platforms-in-the-project-designer"></a>Proje Tasarımcısı'nda Hedef platformlar  
+ **Proje Tasarımcısı** de projenizle farklı platformları hedeflemesi için bir yol sağlar. Listede bulunan platformları birini seçerek, **yeni çözüm platformu** iletişim kutusu, çözümünüz için çalışmaz, özel yapılandırma adı oluşturun ve ayarlarında değişiklik **Proje Tasarımcısı**  doğru platform hedeflemek için.  
   
  Bu görevi gerçekleştirme kullandığınız programlama diline göre değişir. Daha fazla bilgi için aşağıdaki bağlantılara bakın:  
   
@@ -62,8 +62,8 @@ ms.lasthandoff: 04/16/2018
   
 -   İçin [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projeleri, bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](/cpp/build/reference/clr-common-language-runtime-compilation).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapı platformlarını anlama](../ide/understanding-build-platforms.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Derleme platformlarını anlama](../ide/understanding-build-platforms.md)   
  [/ Platform (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)   
  [64-bit uygulamalar](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Visual Studio IDE 64 Bit Desteği](../ide/visual-studio-ide-64-bit-support.md)
+ [Visual Studio IDE 64-Bit desteği](../ide/visual-studio-ide-64-bit-support.md)

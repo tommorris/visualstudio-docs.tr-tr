@@ -2,8 +2,7 @@
 title: Zamanlayıcı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b5998f90aeee14d903fdaa972166d61b0d2478c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: acd9a024ee20428bb8d90369da5b29994e939baa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="timer"></a>Zamanlayıcı
 VSPerfCmd.exe **Zamanlayıcı** seçeneği işlemci saat döngüsü örneklenen ve isteğe bağlı olarak bir örnekleme aralığı içinde döngüsü sayısını 10,000,000 varsayılandan değişiklikleri profil olayını ayarlar. 1GH (bir gigahertz) işlemci üzerinde 10,000,000 saat döngüleri saniyede yaklaşık 100 örnek olur. Minimum belirtilebilir döngüleri 50.000 sayısıdır.  

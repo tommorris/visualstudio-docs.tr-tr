@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Masaüstü Express 2017 iş yükü ve Bileşen kimlikleri | Microsoft Docs
+title: Visual Studio Masaüstü Express 2017 iş yükü ve Bileşen kimlikleri
 description: İş yükü ve Bileşen kimlikleri Visual Studio komut satırını kullanarak yükleme veya bağımlılık VSIX bildirim olarak belirtmek için kullanın
 keywords: ''
 author: TerryGLee
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.workload:
 - multiple
-ms.openlocfilehash: 651b2901c87e99d19c86edfe81e1767d64674a25
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 9eb69c881745f5de934030cda042fca2656916ee
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-desktop-express-2017-workload-and-component-ids"></a>Visual Studio Masaüstü Express 2017 iş yükü ve Bileşen kimlikleri
 
@@ -54,7 +54,7 @@ Microsoft.Component.VC.Runtime.OSSupport | UWP için Visual C++ çalışma zaman
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 paketi hedefleme | 15.6.27406.0 | Gerekli
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 paketi hedefleme | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 paketi hedefleme | 15.6.27406.0 | Gerekli
@@ -79,7 +79,7 @@ Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI desteği | 15.6.273
 Microsoft.VisualStudio.Component.VC.Tools.ARM | Visual C++ Derleyicileri ve ARM için kitaplıkları | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Visual C++ Derleyicileri ve ARM64 için kitaplıkları | 15.6.27309.0 | Gerekli
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 15.6.27406.0 | Gerekli
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Gerekli
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK'sı (10.0.14393.0) | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 Masaüstü C++ [x86 hem x64] için SDK (10.0.16299.0) | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 Masaüstü C++ [ARM ve ARM64] için SDK (10.0.16299.0) | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 için SDK'sı (10.0.16299.0) UWP: C#, VB, JS | 15.6.27406.0 | Gerekli
@@ -94,13 +94,15 @@ Bileşen kimliği | Ad | Sürüm
 yok | yok | yok
 
 ## <a name="get-support"></a>Destek alma
+
 Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
+
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -2,8 +2,7 @@
 title: Performans sorunlarını giderme araçları sorunları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f280fbe73e44062b3a5e53083a9ab7de643dde34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32782b5c2d303e54901462de589d076990f579d2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>Sorunları araçları performans sorunlarını giderme
 Profil oluşturma araçları kullandığınızda aşağıdaki sorunlardan biriyle karşılaşabilirsiniz:  

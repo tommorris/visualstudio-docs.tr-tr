@@ -30,21 +30,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8c28218f7dd2e695508fabb6410d05530438e94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9de1cef61395e6b2fd4c1a38000ead2367143e4e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Nasıl Yapılır: Visual Studio'da Menüleri ve Araç Çubuklarını Özelleştirme
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Nasıl yapılır: menüleri ve Visual Studio içinde araç çubuklarını özelleştirme
 Visual Studio yalnızca araç çubukları ve menü çubuğunda menüleri ekleyerek veya kaldırarak, ancak aynı zamanda tarafından ekleme ve kaldırma verilen araç veya menü komutlarını özelleştirebilirsiniz.  
   
 > [!WARNING]
 >  Araç çubuğu veya menü özelleştirdikten sonra onay kutusu içinde seçilen kaldığından emin olun **Özelleştir** iletişim kutusu. Aksi takdirde, Visual Studio'yu kapatıp yeniden açtıktan sonra değişiklikleriniz kalıcı olmaz.
   
-## <a name="adding-removing-or-moving-a-menu-on-the-menu-bar"></a>Menü çubuğundaki menüleri ekleme, kaldırma veya taşıma  
+## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>Eklemek, kaldırmak veya menü çubuğunda bir menü taşıma  
   
-1.  Menü çubuğunda seçin **Araçları**, **Özelleştir**.  
+1.  Menü çubuğunda seçin **Araçları** > **Özelleştir**.  
   
      **Özelleştir** iletişim kutusu açılır.  
   
@@ -58,9 +58,9 @@ Visual Studio yalnızca araç çubukları ve menü çubuğunda menüleri ekleyer
   
     -   Menü çubuğu içinde menüyü taşımak için menüsünde seçin **denetimleri** listeleyin ve ardından **Yukarı Taşı** veya **Aşağı Taşı** düğmesi.  
   
-## <a name="adding-removing-or-moving-a-toolbar"></a>Araç çubuklarını ekleme, kaldırma veya taşıma  
+## <a name="add-remove-or-move-a-toolbar"></a>Eklemek, kaldırmak veya bir araç çubuğu taşıma  
   
-1.  Menü çubuğunda seçin **Araçları**, **Özelleştir**.  
+1.  Menü çubuğunda seçin **Araçları** > **Özelleştir**.  
   
      **Özelleştir** iletişim kutusu açılır.  
   
@@ -80,11 +80,11 @@ Visual Studio yalnızca araç çubukları ve menü çubuğunda menüleri ekleyer
         Ayrıca, bir araç çubuğunu, ana yerleştirme alanında herhangi bir konuma taşımak için sol kenarından sürükleyebilirsiniz.  
   
         > [!NOTE]
-        >  Araç çubukları erişilebilirliğini ve kullanılabilirlik geliştirme konusunda daha fazla bilgi için bkz: [nasıl yapılır: IDE erişilebilirlik seçeneklerini ayarlama](../ide/reference/how-to-set-ide-accessibility-options.md).  
+        >  Kullanılabilirlik ve araç çubuklarını erişilebilirliğini geliştirme konusunda daha fazla bilgi için bkz: [nasıl yapılır: ayarlama IDE erişilebilirlik seçeneklerini](../ide/reference/how-to-set-ide-accessibility-options.md).  
   
 ## <a name="customizing_menu">Menü veya araç çubuğunu özelleştirme</a>
   
-1.  Menü çubuğunda seçin **Araçları**, **Özelleştir**.  
+1.  Menü çubuğunda seçin **Araçları** > **Özelleştir**.  
   
     **Özelleştir** iletişim kutusu açılır.  
   
@@ -104,9 +104,9 @@ Visual Studio yalnızca araç çubukları ve menü çubuğunda menüleri ekleyer
   
     -   Komutlar yatay çizgi altında gruplandırmak için ilk komutu seçin **denetimleri** listesinde, seçin **Seçimi Değiştir** düğmesine tıklayın ve ardından **Grup Başlat** içinde görünen menüsü.  
   
-## <a name="resetting-a-menu-or-a-toolbar"></a>Bir menü veya araç çubuğunu sıfırlama  
+## <a name="reset-a-menu-or-a-toolbar"></a>Menü veya araç Sıfırla  
   
-1.  Menü çubuğunda seçin **Araçları**, **Özelleştir**.  
+1.  Menü çubuğunda seçin **Araçları** > **Özelleştir**.  
   
     **Özelleştir** iletişim kutusu açılır.  
   

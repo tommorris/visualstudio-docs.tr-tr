@@ -2,8 +2,7 @@
 title: GPU etkinliği (diğer işlemler) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.gpuother
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edbe8a49ed65fbd51a53cf9e197154489d4ca271
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 586aeb9b2b6d674c14106a911872c967c272f3e6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="gpu-activity-other-processes"></a>GPU Etkinliği (Diğer İşlemler)
 **GPU etkinliği (diğer işlemler)** eşzamanlılık görselleştiricisi iş parçacıkları görünümü segmentlerinde ne zaman GPU işlem istekleri sistemdeki diğer işlemleri adına kez temsil eder. Bu istekler GPU doğrudan bellek erişimi (DMA) paketleri gönderilir.  Bir segment uzunluğu paket GPU tarafından işlenen süreyi temsil eder.  

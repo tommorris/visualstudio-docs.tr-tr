@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış olarak derleme yapılandırmalarını yönetme | Microsoft Docs'
+title: 'Nasıl yapılır: yönetmek Visual Basic Geliştirici ayarları uygulanmış derleme yapılandırmaları | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f207a44aa195466cb19eef1ab13394202e5bd7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 954a968de9840e6f23c3e8ff5ab0ff4d0fa761cb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Nasıl Yapılır: Visual Basic Geliştirici Ayarları Uygulanmış Olarak Derleme Yapılandırmalarını Yönetme
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Nasıl yapılır: yönetmek Visual Basic Geliştirici ayarları uygulanmış derleme yapılandırmaları
 Varsayılan olarak, tüm Gelişmiş yapı yapılandırma seçenekleri ile gizli [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Geliştirici ayarları uygulanmış. Bu konuda, bu ayarları el ile etkinleştirmek açıklanmaktadır.  
   
-## <a name="enabling-advanced-build-configurations"></a>Gelişmiş derleme yapılandırmaları etkinleştirme  
+## <a name="enable-advanced-build-configurations"></a>Gelişmiş derleme yapılandırmaları etkinleştir  
  Varsayılan olarak, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Geliştirici ayarları Gizle açma seçeneğini **Configuration Manager** iletişim kutusu ve **yapılandırma** ve **Platform** listeler [Proje Tasarımcısı](..//ide/reference/application-page-project-designer-visual-basic.md).  
   
 #### <a name="to-enable-advanced-build-configurations"></a>Gelişmiş derleme yapılandırmaları etkinleştirmek için  
@@ -44,8 +44,8 @@ Varsayılan olarak, tüm Gelişmiş yapı yapılandırma seçenekleri ile gizli 
   
 4.  **Tamam**'ı tıklatın.  
   
-     Üzerinde **yapı** menüsünde **Configuration Manager** şimdi kullanılabilir olduğundan ve **yapılandırma** ve **Platform** listeleridir görünür Proje Tasarımcısı.  
+     Üzerinde **yapı** menüsünde **Configuration Manager** şimdi kullanılabilir olduğundan ve **yapılandırma** ve **Platform** listeleridir görünür **Proje Tasarımcısı**.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md)   
- [Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)
+ [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)

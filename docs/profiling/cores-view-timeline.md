@@ -2,8 +2,7 @@
 title: Çekirdekler görünümü zaman çizelgesi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.timeline.threads
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa3edda7ca28e9db5f3970609a507644af17ce07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca61a511d5b65233aa0f7e979374ba5dd48d21ae
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cores-view-timeline"></a>Çekirdekler Görünümü Zaman Çizelgesi
 Her satırda bir zaman çizelgesi profili sistemde bir mantıksal işlemci çekirdeği temsil eder. Her satır için hangi iş parçacığı zamanında belirli bir noktada mantıksal çekirdek üzerinde çalıştığı yatay eksen gösterir. İş parçacığı tanımlayan araç ipucunu döndürmek için bir zaman çizelgesi ilgi rengini üzerine getirin. İş parçacığı kimliği yardımcı olmak için ne her rengi temsil eden pencerenin altındaki gösterge gösterir. Giriş ve çıkış tıklatarak ve sürükleyerek veya CTRL tuşuna basarak ve fare tekerleğinin taşıma yakınlaştırmak için Yakınlaştırma aracını kullanın. Çekirdekler görünümü ve iş parçacıkları görünümü arasında geçiş yaptığınızda yakınlaştırma tutarlılık korunur.  

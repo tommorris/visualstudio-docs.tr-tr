@@ -9,16 +9,16 @@ helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d807cee53bebc8ce94e04a325529fc85c35db3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 40ce48f8fc21c1c035586edf48446ce1d3f103d3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="build-loggers"></a>Günlükçüleri Derleme
 Günlükçüleri yapınızın çıktısını özelleştirmek ve belirli yapı olaylarına yanıt olarak iletileri, hatalar veya uyarılar görüntülemek bir yol sağlar. Her Günlükçü uygulayan bir .NET sınıfı olarak uygulanan <xref:Microsoft.Build.Framework.ILogger> Microsoft.Build.Framework.dll derlemede tanımlanan arabirimi.  

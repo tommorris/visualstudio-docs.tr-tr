@@ -1,6 +1,5 @@
 ---
-title: Bir etki alanına özgü dil çözüm şablonu seçme | Microsoft Docs
-ms.custom: ''
+title: Etki Alanına Özgü Dil Çözümü Şablonu Seçme
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,26 +10,27 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bfbb5c7fc82f4f41d0c15b0462b0eb7202df78aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6ec2d2210912011e09e439f25ecaa0e21ab6e918
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Etki Alanına Özgü Dil Çözümü Şablonu Seçme
-Bir etki alanına özgü dil çözüm oluşturmak için etki alanına özgü dil Tasarımcısı Sihirbazı'nda kullanılabilir çözüm şablonlardan birini seçin. Oluşturmak istediğiniz dil en çok benzeyen bir şablon seçerek başlangıç çözüme yapmak zorunda değişiklikler en aza indirebilirsiniz.  
-  
- Etki alanına özgü dil Tasarımcısı Sihirbazı'nda aşağıdaki çözüm şablonları kullanılabilir.  
-  
-|Şablon|Özellikler|Açıklama|  
-|--------------|--------------|-----------------|  
-|Sınıf diyagramları|-Bölme şekiller<br />-Sınıf devralma<br />-İlişki devralma<br />-Şekil devralma<br />-İlişki özellikleri|Etki alanına özgü dil varlıkları ve özelliklere sahip ilişkileri içeriyorsa, bu çözüm şablonu kullanın. Bu şablon UML sınıf diyagramları benzer bir etki alanına özgü dil oluşturur. Temel sınıflar ve arabirimler ilişkilendirme, Genelleştirme ve uygulama ilişkileri birlikte varlıklardır. Bir sınıf veya arabirim öznitelikler listesini içeren bir kutu olarak görünür.|  
-|Bileşen diyagramları|-Bağlantı noktaları|Etki alanına özgü dil bileşenler diğer bir deyişle, bir yazılım sistemin bölümleri içeriyorsa, bu çözüm şablonu kullanın. Bu şablon UML Bileşen diyagramları benzer bir etki alanına özgü dil oluşturur. Ana bileşenlerini ve dış bileşenlerinin küçük şekiller olarak görünür bağlantı noktaları varlıklardır.|  
-|Görev akış diyagramları|-Görüntü ve geometri şekiller<br />-   *Kulvarları*|İş akışları, durumları veya sıraları, etki alanına özgü dil içeriyorsa, bu çözüm şablonu kullanın. Bu şablon UML etkinlik diyagramları benzer bir etki alanına özgü dil oluşturur. Bir etkinlik ana varlıktır ve etkinlikler arasında bir geçiş ana ilişkidir. Şablon başlangıç durumu, son durumunu ve bir eşitleme çubuğu gibi birkaç diğer öğeleri içerir.|  
-|En az bir dil|-Bir sınıf ve Şekil<br />-Bir ilişkisi ve bağlayıcı|Etki alanına özgü dil diğer şablonlar benzemez Bu çözüm şablonu kullanın. Bu şablon, iki sınıf ve temsil edilen bir ilişkisi olan bir etki alanına özgü dil oluşturur **araç** olarak **kutusunu** ve **satır**. Sınıf ve ilişki bir örnek dize özelliğine sahip.|  
-|En az WinForm Tasarımcısı|-Küçük bir model.<br />-Modeli görüntüler bir Windows formu.|DSL grafik Tasarımcı yerine bir Windows formunda bağlandı bir uygulama oluşturmak istiyorsanız, bu şablonu kullanın.<br /><br /> Dili için kullanıcı arabirimi olarak görev yapar form Dsl\UI klasöründe bulunur.<br /><br /> Form tasarımcısı açmadan önce projeyi oluşturması gerekir.<br /><br /> Daha fazla bilgi için bkz: [Windows Forms-Based etki alanına özgü dil oluşturma](../modeling/creating-a-windows-forms-based-domain-specific-language.md).|  
-|En az WPF Tasarımcısı|-Küçük modeli<br />-Modeli görüntüler bir Windows Presentation Foundation kullanıcı arabirimi|DSL grafik Tasarımcı yerine bir WPF kullanıcı arabirimi bağlandı bir uygulama oluşturmak istiyorsanız, bu şablonu kullanın.<br /><br /> Kullanıcı arabirimi için tasarımcı Dsl\UI klasöründe bulunur.<br /><br /> UI Tasarımcısı açmadan önce projeyi oluşturması gerekir.<br /><br /> Daha fazla bilgi için bkz: [WPF-Based etki alanına özgü dil oluşturma](../modeling/creating-a-wpf-based-domain-specific-language.md).|  
-|DSL kitaplığı|-En az kitaplığı|Diğer DSL tanımları aktarılabilen bir kısmi DSL tanımı oluşturmak istiyorsanız bu şablonu kullanın.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki Alanına Özgü Dil Araçlarına Genel Bakış](../modeling/overview-of-domain-specific-language-tools.md)
+Bir etki alanına özgü dil çözüm oluşturmak için etki alanına özgü dil Tasarımcısı Sihirbazı'nda kullanılabilir çözüm şablonlardan birini seçin. Oluşturmak istediğiniz dil en çok benzeyen bir şablon seçerek başlangıç çözüme yapmak zorunda değişiklikler en aza indirebilirsiniz.
+
+ Etki alanına özgü dil Tasarımcısı Sihirbazı'nda aşağıdaki çözüm şablonları kullanılabilir.
+
+|Şablon|Özellikler|Açıklama|
+|--------------|--------------|-----------------|
+|Sınıf diyagramları|-Bölme şekiller<br />-Sınıf devralma<br />-İlişki devralma<br />-Şekil devralma<br />-İlişki özellikleri|Etki alanına özgü dil varlıkları ve özelliklere sahip ilişkileri içeriyorsa, bu çözüm şablonu kullanın. Bu şablon UML sınıf diyagramları benzer bir etki alanına özgü dil oluşturur. Temel sınıflar ve arabirimler ilişkilendirme, Genelleştirme ve uygulama ilişkileri birlikte varlıklardır. Bir sınıf veya arabirim öznitelikler listesini içeren bir kutu olarak görünür.|
+|Bileşen diyagramları|-Bağlantı noktaları|Etki alanına özgü dil bileşenler diğer bir deyişle, bir yazılım sistemin bölümleri içeriyorsa, bu çözüm şablonu kullanın. Bu şablon UML Bileşen diyagramları benzer bir etki alanına özgü dil oluşturur. Ana bileşenlerini ve dış bileşenlerinin küçük şekiller olarak görünür bağlantı noktaları varlıklardır.|
+|Görev akış diyagramları|-Görüntü ve geometri şekiller<br />-   *Kulvarları*|İş akışları, durumları veya sıraları, etki alanına özgü dil içeriyorsa, bu çözüm şablonu kullanın. Bu şablon UML etkinlik diyagramları benzer bir etki alanına özgü dil oluşturur. Bir etkinlik ana varlıktır ve etkinlikler arasında bir geçiş ana ilişkidir. Şablon başlangıç durumu, son durumunu ve bir eşitleme çubuğu gibi birkaç diğer öğeleri içerir.|
+|En az bir dil|-Bir sınıf ve Şekil<br />-Bir ilişkisi ve bağlayıcı|Etki alanına özgü dil diğer şablonlar benzemez Bu çözüm şablonu kullanın. Bu şablon, iki sınıf ve temsil edilen bir ilişkisi olan bir etki alanına özgü dil oluşturur **araç** olarak **kutusunu** ve **satır**. Sınıf ve ilişki bir örnek dize özelliğine sahip.|
+|En az WinForm Tasarımcısı|-Küçük bir model.<br />-Modeli görüntüler bir Windows formu.|DSL grafik Tasarımcı yerine bir Windows formunda bağlandı bir uygulama oluşturmak istiyorsanız, bu şablonu kullanın.<br /><br /> Dili için kullanıcı arabirimi olarak görev yapar form Dsl\UI klasöründe bulunur.<br /><br /> Form tasarımcısı açmadan önce projeyi oluşturması gerekir.<br /><br /> Daha fazla bilgi için bkz: [Windows Forms-Based etki alanına özgü dil oluşturma](../modeling/creating-a-windows-forms-based-domain-specific-language.md).|
+|En az WPF Tasarımcısı|-Küçük modeli<br />-Modeli görüntüler bir Windows Presentation Foundation kullanıcı arabirimi|DSL grafik Tasarımcı yerine bir WPF kullanıcı arabirimi bağlandı bir uygulama oluşturmak istiyorsanız, bu şablonu kullanın.<br /><br /> Kullanıcı arabirimi için tasarımcı Dsl\UI klasöründe bulunur.<br /><br /> UI Tasarımcısı açmadan önce projeyi oluşturması gerekir.<br /><br /> Daha fazla bilgi için bkz: [WPF-Based etki alanına özgü dil oluşturma](../modeling/creating-a-wpf-based-domain-specific-language.md).|
+|DSL kitaplığı|-En az kitaplığı|Diğer DSL tanımları aktarılabilen bir kısmi DSL tanımı oluşturmak istiyorsanız bu şablonu kullanın.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+- [Etki Alanına Özgü Dil Araçlarına Genel Bakış](../modeling/overview-of-domain-specific-language-tools.md)

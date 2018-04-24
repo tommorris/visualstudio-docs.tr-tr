@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.technology: msbuild
 ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5487d13c881dcf91475d62915b6e5bf3f6eb472e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e85bb64252a73195e4ab8226cfbdb141199107d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild Çoklu Sürüm Desteğine Genel Bakış
 MSBuild kullanarak herhangi bir .NET Framework'ün birçok sürümlerin ve birkaç sistemi platformları herhangi birini çalıştırmak için bir uygulama derleyebilirsiniz. Örneğin, .NET Framework 2.0 32 bit platformda çalışacak bir uygulama derleyin ve .NET Framework 4. 5 ' 64-bit platformda çalışacak şekilde aynı uygulamayı derleyin.  

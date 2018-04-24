@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Test denetleyicisi 2017 iş yükü ve Bileşen kimlikleri | Microsoft Docs
+title: Visual Studio Test denetleyicisi 2017 iş yükü ve Bileşen kimlikleri
 description: Visual Studio iş yükü ve Bileşen kimlikleri birden fazla makine için otomatikleştirilmiş testleri dağıtmak için kullanın
 keywords: ''
 author: TerryGLee
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b2787042e39653017013d07d5ff5f9153627297
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 7e4c6bd73ecff57152e01ba651f8a121edcad4e6
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test denetleyicisi 2017 bileşen dizini
 
@@ -59,10 +59,11 @@ yok | yok | yok
 Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
+
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

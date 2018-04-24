@@ -2,8 +2,7 @@
 title: ThreadOn ve ThreadOff | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58d875acbc4b5afc569661b9351173084ee51b54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 11038ebe930789967b2d0092805787a8d4f24f6c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn ve ThreadOff
 VSPerfCmd.exe **ThreadOff** ve **ThreadOn** subcommands izleme yöntemini kullanan komut satırı profil oturumlarında kullanılabilir yalnızca. **ThreadOff** ve **ThreadOn** belirtilen iş parçacığı için profil oluşturmayı durdur. **ThreadOff** iş parçacığı profil durdurur ve **ThreadOn** iş parçacığı profil başlatır.  

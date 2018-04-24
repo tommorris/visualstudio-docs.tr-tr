@@ -9,16 +9,16 @@ helpviewer_keywords:
 - MSBuild, including files
 - Include attribute [MSBuild]
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c336dd93bdd8a5e9b98883fa8274e04a21a19ad2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 651570ef83f5f87d96ed27538cc4f6ffd569d41f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-select-the-files-to-build"></a>Nasıl Yapılır: Derlenecek Dosyaları Seçme
 Bir projeyi derlerken birkaç dosyaları içeren, proje dosyası içinde ayrı ayrı her dosya listesi veya bir dizin veya dizinleri iç içe geçmiş bir dizi tüm dosyaları eklemek için joker karakterleri kullanabilirsiniz.  

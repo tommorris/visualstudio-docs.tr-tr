@@ -2,8 +2,7 @@
 title: Taşınabilir profil oluşturma veri dosyalarıyla komut satırından oluşturma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be653cd134eb54ab61c69553d1e0abe835ea5a59
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd329df74c88f5edadef27444bf3b3c89ee1b30d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>Komut Satırından Taşınabilir Profil Oluşturma Veri Dosyaları Oluşturma
 Profil oluşturma verilerini daha kolay paylaşımı yapmak için kullanabileceğiniz [VSPerfReport](../profiling/vsperfreport.md) profil .vsp dosyasına çalıştırmak için simgeleri eklemek için komut satırı aracı.  

@@ -2,8 +2,7 @@
 title: 'Nasıl yapılır: rapor görünümlerinde gürültü azaltmayı yapılandırma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.noisereduction.dialog
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c877a0da825062103b0dae36ce4b5c4de9875802
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa2ec4a797b7018a7a9e017760afd8849912cd35
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Nasıl yapılır: Rapor Görünümlerinde Gürültü Azaltmayı Yapılandırma
 Performans raporları çağrı ağacı görünümü ve ayırma görünümü sunulan veri miktarını sınırlayarak gürültü azaltma için yapılandırılabilir. Gürültü azaltma kullanarak, performans sorunlarını daha belirgin. Performans raporları çözümlediğinizde kullanışlıdır.  

@@ -2,8 +2,7 @@
 title: GPU etkinliği (Bu işlem) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.gpuexecution
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44d676fc69142e0ab8de4f63637b81578a0e2a00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d7fe5512cf131dfede701fb47df2ef956c01437d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="gpu-activity-this-process"></a>GPU Etkinliği (Bu İşlem)
 **GPU etkinliği (Bu işlem)** kesimleri eşzamanlılık görselleştiricisi iş parçacıkları görünümünde zaman GPU işlem istekleri geçerli işlem adına kez temsil eder. Bu istekler için GPU doğrudan bellek erişimi (DMA) paketleri gönderilir. Bir segment uzunluğu GPU geçerli işlem adına DMA paket işliyordu süresini temsil eder.  

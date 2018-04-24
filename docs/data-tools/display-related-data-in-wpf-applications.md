@@ -1,6 +1,5 @@
 ---
-title: WPF uygulamalarındaki ilgili verileri görüntüleme | Microsoft Docs
-ms.custom: ''
+title: WPF uygulamalarındaki ilgili verileri görüntüleme
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,11 +17,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5258f12a7ede6727736225e1e8308773db3c91c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b293656a0eeffeba304ef4692f9c021ae9639d22
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="display-related-data-in-wpf-applications"></a>WPF uygulamalarındaki ilgili verileri görüntüleme
 Bazı uygulamalarda, birden çok tablo veya bir üst-alt ilişkisinde birbiriyle ilişkili olan varlıkların gelen verilerle çalışmak isteyebilirsiniz. Örneğin, müşterilerden görüntüleyen bir kılavuz görüntülemek isteyebilirsiniz bir `Customers` tablo. Kullanıcı belirli bir müşteri seçtiğinde, başka bir kılavuz o müşteriden ilgili siparişleri görüntüler `Orders` tablo.
@@ -56,5 +55,6 @@ Konumundan öğeleri sürükleyerek ilgili verileri görüntüleme verilere bağ
      ![Veri kaynakları penceresi ilişkisini gösteren](../data-tools/media/datasources2.gif "DataSources2")
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
-[WPF uygulamalarında arama tabloları oluşturma](../data-tools/create-lookup-tables-in-wpf-applications.md)
+
+- [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
+- [WPF uygulamalarında arama tabloları oluşturma](../data-tools/create-lookup-tables-in-wpf-applications.md)

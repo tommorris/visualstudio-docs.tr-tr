@@ -13,15 +13,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96d3c84c926e399e6f873337e65f312726f1feb1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9465c098144f14db496bc1dbc382d6a30c8882cb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-update-existing-templates"></a>Nasıl yapılır: varolan şablonları güncelleme
 
-Bir şablon oluşturmak ve bir .zip dosyasına dosyaları sıkıştırın sonra şablonu değiştirmek isteyebilirsiniz. Şablon dosyaları el ile değiştirerek veya şablonu temel alan bir projeye ait yeni bir şablon vererek bunu yapabilirsiniz.
+Bir şablon oluşturun ve içine dosyaları sıkıştırın sonra bir *.zip* dosyası şablonu değiştirmek isteyebilirsiniz. Şablon dosyaları el ile değiştirerek veya şablonu temel alan bir projeye ait yeni bir şablon vererek bunu yapabilirsiniz.
 
 ## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>Var olan bir proje şablonu güncelleştirmek için şablonu Dışarı Aktarma Sihirbazı'nı kullanarak
 
@@ -33,44 +33,44 @@ Visual Studio sağlayan bir **şablonu Dışarı Aktarma Sihirbazı** mevcut bir
 
 1. Visual Studio Proje değiştirin.
 
-1. Üzerinde **proje** menüsünde seçin **şablonu dışarı aktar...** .
+1. Üzerinde **proje** menüsünde seçin **şablonu dışarı aktar**.
 
     **Şablonu Dışarı Aktarma Sihirbazı** açar.
 
-1. Şablonu bir .zip dosyası olarak dışarı aktarmak için sihirbazdaki yönergeleri izleyin.
+1. Şablon olarak dışarı aktarmak için sihirbazdaki yönergeleri izleyerek bir *.zip* dosyası.
 
-1. (İsteğe bağlı) Şablona eklemek için **yeni proje** iletişim kutusunda, aşağıdaki dizinde .zip dosyasını yerleştirin: %USERPROFILE%\Documents\Visual Studio \<sürüm\>\Templates\ProjectTemplates. Seçeneğini seçmediyseniz, bu adımı gerçekleştirmeniz gerekir **otomatik olarak şablon Visual Studio'ya içeri** içinde **şablonu Dışarı Aktarma Sihirbazı**.
+1. (İsteğe bağlı) Şablona eklemek için **yeni proje** iletişim kutusunda, yerine *.zip* aşağıdaki dizinde dosya: *%USERPROFILE%\Documents\Visual Studio \<sürüm\>\Templates\ProjectTemplates*. Seçeneğini seçmediyseniz, bu adımı gerçekleştirmeniz gerekir **otomatik olarak şablon Visual Studio'ya içeri** içinde **şablonu Dışarı Aktarma Sihirbazı**.
 
-1. Eski şablon .zip dosyasını silin.
+1. Eski şablonu silmek *.zip* dosyası.
 
-## <a name="manually-updating-an-existing-template"></a>Var olan bir şablonu el ile güncelleştirme
+## <a name="manually-update-an-existing-template"></a>Var olan bir şablonu el ile güncelleştirme
 
-Var olan bir şablonunu kullanmadan güncelleştirebilirsiniz **şablonu Dışarı Aktarma Sihirbazı**, dosyaları sıkıştırılmış .zip dosyasını değiştirerek.
+Var olan bir şablonunu kullanmadan güncelleştirebilirsiniz **şablonu Dışarı Aktarma Sihirbazı**, sıkıştırılmış dosyalarda değiştirerek *.zip* dosyası.
 
 ### <a name="to-manually-update-an-existing-template"></a>Var olan bir şablonu el ile güncelleştirmek için
 
-1. Şablonu içeren .zip dosyasını bulun. Kullanıcı proje şablonları konumlandırıldığını Studio %USERPROFILE%\Documents\Visual genellikle \<sürüm\>\Templates\ProjectTemplates.
+1. Bulun *.zip* şablonu içeren dosya. Kullanıcı proje şablonları adresindedir *%USERPROFILE%\Documents\Visual Studio \<sürüm\>\Templates\ProjectTemplates*.
 
-1. .Zip dosyasını ayıklayın.
+1. Extract *.zip* dosyası.
 
 1. Değiştirin veya geçerli şablon dosyaları silin veya yeni dosyalar şablonuna ekleyin.
 
-1. Açın, değiştirmek ve güncelleştirilmiş davranışı işlemek için .vstemplate XML dosyasını veya yeni dosyalar kaydedin.
+1. Açma, değiştirme ve kaydetme *.vstemplate* güncelleştirilmiş davranışı ya da yeni dosyaları işlemek için XML dosyası.
 
-    .Vstemplate şeması hakkında daha fazla bilgi için bkz: [Visual Studio Şablon Şeması Başvurusu (genişletilebilirlik)](../extensibility/visual-studio-template-schema-reference.md). Kaynak dosyalarda Parametreleştirme hakkında daha fazla bilgi için bkz: [şablon parametreleri](../ide/template-parameters.md).
+    Hakkında daha fazla bilgi için *.vstemplate* şeması, bkz: [Visual Studio Şablon Şeması Başvurusu (genişletilebilirlik)](../extensibility/visual-studio-template-schema-reference.md). Kaynak dosyalarda Parametreleştirme hakkında daha fazla bilgi için bkz: [şablon parametreleri](../ide/template-parameters.md).
 
 1. Şablonunuzda ve sağ tıklatın veya bağlam menüsünde dosyaları seçin ve **göndermek** > **sıkıştırılmış (daraltılmış) klasör**.
 
-    Seçtiğiniz dosyaların bir .zip dosyasına sıkıştırılır.
+    Seçtiğiniz dosyalar halinde sıkıştırılmış bir *.zip* dosyası.
 
-1. Yeni .zip dosyasını eski .zip dosyası ile aynı dizine koyun.
+1. Yeni put *.zip* eski ile aynı dizinde dosya *.zip* dosyası.
 
-1. Ayıklanan şablon dosyalarını ve eski şablonu .zip dosyasını silin.
+1. Ayıklanan şablon dosyalarını ve eski şablonu silmek *.zip* dosyası.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Şablonlarını özelleştirme](../ide/customizing-project-and-item-templates.md)  
-[Proje ve Öğe Şablonları Oluşturma](../ide/creating-project-and-item-templates.md)  
+[Şablonları özelleştirme](../ide/customizing-project-and-item-templates.md)  
+[Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)  
 [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)  
-[Şablon Parametreleri](../ide/template-parameters.md)  
-[Nasıl Yapılır: Başlangıç Paketleri Oluşturma](../ide/how-to-create-starter-kits.md)
+[Şablon parametreleri](../ide/template-parameters.md)  
+[Nasıl yapılır: başlangıç paketleri oluşturma](../ide/how-to-create-starter-kits.md)

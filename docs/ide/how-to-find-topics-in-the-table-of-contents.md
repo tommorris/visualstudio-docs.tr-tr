@@ -18,20 +18,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c97a2976f56ab4e5bb8273efc3da3adf9de6fa2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: db53125c30a2136500b6c99818b7143511bd2788
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-find-topics-in-the-table-of-contents"></a>Nasıl yapılır: içindekilerde konular bulma
+# <a name="how-to-find-topics-in-the-table-of-contents"></a>Nasıl yapılır: içindekilerde konu bulma
 İçinde **içeriği** sekmesinde bilgileri bulmak için içindekiler (İT) kullanabilirsiniz. İçindekiler tablosu tüm yüklü books konuları içeren genişletilebilir bir listesidir. Erişilebilirlik TOC gezinme konusunda bilgi için [kısayol tuşları (Yardım Görüntüleyici)](../ide/shortcut-keys-help-viewer.md).  
   
 > [!IMPORTANT]
 >  Seçtiğiniz filtre konuları TOC kullanılabilir kapsamına bağlıdır.  
   
 ## <a name="filter-the-toc"></a>İçindekiler tablosu filtreleme  
-Görünen konuları kapsamını daraltmak için TOC filtreleyebilirsiniz **içeriği** sekmesi. Yalnızca belirttiğiniz teriminin kök içeriyorsa başlıkları listede görüntülenir. Örneğin, "filtre olarak sorun giderme" belirtirseniz, yalnızca "sorun giderme" içeren başlıklarını veya "sorun giderme" görünür. Üç nokta (...) ile tek bir düğüme başlıkları terimini içermeyen düğümleri daraltılmış.  
+Görünen konuları kapsamını daraltmak için TOC filtreleyebilirsiniz **içeriği** sekmesi. Yalnızca belirttiğiniz teriminin kök içeriyorsa başlıkları listede görüntülenir. Örneğin, "filtre olarak sorun giderme" belirtirseniz, yalnızca "sorun giderme" içeren başlıklarını veya "sorun giderme" görünür. Başlıkları terimi içeren olmayan düğümler üç nokta ile tek bir düğüme daraltılmış (**...** ).  
   
 #### <a name="to-filter-the-toc"></a>İçindekiler Listesini filtrelemek için  
   
@@ -49,11 +49,11 @@ Dizin veya tam metin arama özellikleri kullanılarak bir konu açtıysanız, bu
   
 1.  Bir konu görüntüleyin.  
   
-2.  Tıklatın **içeriğini göster konudaki** araç veya tuşuna düğmesine **Ctrl + S**.  
+2.  Tıklatın **içeriğini göster konudaki** araç veya tuşuna düğmesine **Ctrl**+**S**.  
   
      **İçeriği** sekmesini açar ve TOC konunun konumu gösterir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
-[Nasıl yapılır: dizinde konuları Bul](../ide/how-to-find-topics-in-the-index.md)  
+[Nasıl yapılır: dizinde konu bulma](../ide/how-to-find-topics-in-the-index.md)  
 [Nasıl yapılır: Konu Arama](../ide/how-to-search-for-topics.md)  
 [Microsoft Yardım Görüntüleyicisi](../ide/microsoft-help-viewer.md)

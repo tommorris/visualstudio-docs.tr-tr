@@ -1,10 +1,10 @@
 ---
-title: Yüklediğinizde veya Visual Studio kullandığınızda ağ ile ilgili sorun giderme | Microsoft Docs
-description: ''
+title: Yüklediğinizde veya Visual Studio kullandığınızda ağ ile ilgili sorun giderme
+description: Yüklediğinizde veya bir güvenlik duvarı veya proxy sunucunun Visual Studio'yu kullanma karşılaşabileceğiniz ağ veya proxy ilgili hataları çözümler bulabilirsiniz.
 ms.custom: ''
 ms.date: 02/12/2018
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a2bf89073549d794e13e5907d4044a24b653656
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41fed015f4ad80c3c3b74bc77ea3b9cc6ed8eb18
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Yüklediğinizde veya Visual Studio kullandığınızda ağ ile ilgili sorun giderme
+
 Yüklediğinizde veya bir güvenlik duvarı veya proxy sunucunun Visual Studio'yu kullanma karşılaşabileceğiniz en tipik ağ veya proxy ilgili hataları biz çözümleri açıyor.
 
 ## <a name="error-proxy-authorization-required"></a>Hata: "Proxy kimlik doğrulaması gerekli"
 
 Bu hata genellikle kullanıcılar bir proxy sunucu üzerinden Internet'e bağlı ve proxy sunucusu için bazı ağ kaynaklarına Visual Studio yapar çağrıları engeller oluşur.
 
-### <a name="to-fix-this-error"></a>Bu hatayı düzeltmek için:
+### <a name="to-fix-this-proxy-error"></a>Bu proxy hatayı düzeltmek için
 
 - Visual Studio'yu yeniden başlatın. Proxy kimlik doğrulaması iletişim kutusu görünür. İletişim kutusunda istendiğinde, kimlik bilgilerinizi girin.
 
@@ -77,7 +78,7 @@ Bir güvenlik duvarı olan özel bir ağda Visual Studio kullanıyorsanız, Visu
 
 Visual Studio, ağ kaynaklarına bağlanmak için Aktarım Katmanı Güvenliği (TLS) 1.2 protokolünü kullanır. Visual Studio TLS 1.2 kullandığı durumlarda bazı özel ağlar üzerindeki güvenlik gereçlerinin bazı sunucu bağlantılarını Engellemesi.
 
-### <a name="to-fix-this-error"></a>Bu hatayı düzeltmek için:
+### <a name="to-fix-this-connection-error"></a>Bu bağlantı hatayı düzeltmek için
 
 Aşağıdaki URL'ler için bağlantılar sağlar:
 
@@ -110,17 +111,19 @@ Aşağıdaki URL'ler için bağlantılar sağlar:
  > [!NOTE]
  > Özel olarak sahip olunan NuGet sunucu URL'leri bu listede dahil. % APPData%\Nuget\NuGet.Config kullanmakta olduğunuz NuGet sunucularını denetleyebilirsiniz.
 
-
 ## <a name="get-support"></a>Destek alma
+
 Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımları yükleme hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
+
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 * [Visual Studio’yu bir güvenlik duvarı veya ara sunucusunun arkasına yükleme ve burada kullanma](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Visual Studio 2017 yükleyin](install-visual-studio.md)

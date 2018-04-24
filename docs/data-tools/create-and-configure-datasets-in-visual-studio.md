@@ -1,6 +1,5 @@
 ---
-title: Oluşturma ve Visual Studio'da veri kümelerini yapılandırma | Microsoft Docs
-ms.custom: ''
+title: Oluşturma ve Visual Studio'da veri kümelerini yapılandırma
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,11 +12,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1e71f7dcde2e1232f15b6c455f01ee30272b8f28
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d7aac502f32941d825fda77c43ae07e82c4e9db3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Oluşturma ve Visual Studio'da veri kümelerini yapılandırma
 
@@ -91,4 +90,4 @@ Bu yordamda, bir tablo ilk veri kümesi oluşturmak için kullanılan aynı veri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)

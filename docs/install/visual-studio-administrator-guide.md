@@ -1,10 +1,10 @@
 ---
-title: Visual Studio Yönetici Kılavuzu | Microsoft Docs
+title: Visual Studio Yönetici Kılavuzu
 description: Visual Studio bir kuruluş ortamında dağıtma hakkında daha fazla bilgi edinin.
 ms.custom: ''
 ms.date: 05/15/2017
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e202e28304ff19f93b085a74b191fe017601ec5a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39d9c6c3c63fe1c601a307ff006858a64db56c83
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 Yönetici Kılavuzu
 
@@ -50,21 +50,25 @@ Her hedef bilgisayar karşılıyorsa, Visual Studio 2017 istemci iş istasyonlar
 > Ağ üzerinden paylaşımı "kaynak konumu unutmayın" yüklemeleri bunlar geldiğini unutmayın. Bu, bir istemci makine onarımını istemci ilk olarak yüklenen ağ paylaşımı geri dönmek gerektiği anlamına gelir. Böylece, kuruluşunuzda çalışan Visual Studio 2017 istemcileri sahip olmayı beklediğiniz kullanım ömrü hizalar ağ konumunuzu dikkatle seçin.
 
 ## <a name="visual-studio-tools"></a>Visual Studio Araçları
+
 Yardımcı olması kullanılabilen çeşitli araçlar sahibiz [algılamak ve yüklü Visual Studio Örnekleri yönetmek](tools-for-managing-visual-studio-instances.md) istemci makinelerde.
 
 > [!TIP]
 > Yönetici Kılavuzu'ndaki belgeleri ek olarak, iyi bir Visual Studio 2017 kurulumu hakkında bilgi kaynağıdır [sistem durumu Ilgaz'ın blogu](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
 
 ## <a name="get-support"></a>Destek alma
+
 Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
+
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 * [Visual Studio 2017 yükleyin](install-visual-studio.md)
 * [Visual Studio 2017 yüklemek için komut satırı parametreleri kullanın](use-command-line-parameters-to-install-visual-studio.md)
   * [Komut satırı parametresi örnekleri](command-line-parameter-examples.md)

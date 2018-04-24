@@ -2,8 +2,7 @@
 title: Modüller görünümü - örnekleme veri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80bb263f395930b77ff31cbc68f4f9695879756a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8bc3fcbced64b7bcd460b1a25e0dc442b6970795
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modules-view---sampling-data"></a>Modüller görünümü - örnekleme verileri
 Profil oluşturma verileri örneklenen modülleri göre gruplandırılmış veri görüntüler performans verileri örnekleme modülleri görünümü. Her modül hiyerarşik bir köküdür. Örneklenen işlevleri modülün modül düğümünün altında listelenir.  

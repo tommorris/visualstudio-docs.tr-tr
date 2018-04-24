@@ -1,23 +1,20 @@
 ---
 title: R değişken Gezgini
 description: Visual Studio'da değişken Gezgini tüm değişkenleri belirli bir kapsamda geçerli R oturumda gösterir.
-ms.custom: ''
 ms.date: 01/24/2018
-ms.technology:
-- devlang-r
-dev_langs:
-- R
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 5d563d2a466181068a3495aaca70469f16dca27a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 467099581a746005ecbe686b5806943b3f16ac7e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="variable-explorer"></a>Değişken Gezgini
 

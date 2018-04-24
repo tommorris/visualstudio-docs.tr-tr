@@ -2,8 +2,7 @@
 title: Kullanım Görünümü | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.cpuutilization
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a05ff165d19744faabca783a369501cb11b6b3e4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb49d47dbd01b1d84228e1f01dc4cbf7f49dfc8d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="utilization-view"></a>Kullanım Görünümü
 **Kullanım görünümü** CPU, GPU ve geçerli işlem tarafından kullanılan diğer sistem kaynaklarını hakkındaki bilgileri görüntüler (seçin **Çözümle** > **eşzamanlılık Görselleştirici** eşzamanlılık görselleştiricisi başlatmak için). Çözümlenen işlemi, boşta işlemi, sistem işlem ve zaman içinde sistem üzerinde çalışan diğer işlemler tarafından ortalama Çekirdek kullanımını gösterir. Hangi belirli çekirdek herhangi bir anda etkin göstermez. Örneğin, iki çekirdek her belirli bir süre için yüzde 50 kapasiteyle çalıştırıyorsanız, bu görünüm kullanılan bir mantıksal çekirdek gösterir. Profil oluşturma süresi kısa bir süre parçalara bölerek oluşturulan görüntüleyin. Her segment için grafiğin üzerinde mantıksal çekirdekler bu zaman aralığı boyunca yürütülen işlem iş parçacıklarının ortalama sayısı çizer.  

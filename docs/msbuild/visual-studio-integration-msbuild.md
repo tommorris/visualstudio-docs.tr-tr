@@ -15,16 +15,16 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a278a2206d7d2c5791a441552f30f196e925e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd9dd101508fc55ff6287af534ee57e53e95d4e8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio Tümleştirmesi (MSBuild)
 Visual Studio konakları [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yüklemek ve yönetilen projeler derlemek için. Çünkü [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projesi, neredeyse her proje için sorumlu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] biçimi başarıyla kullanılabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]proje farklı bir aracı tarafından yönetilmiyor ve özelleştirilmiş derleme sürecinde sahip olsa bile.  
@@ -143,7 +143,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4.  İçinde **Çözüm Gezgini**kullanılamaz proje için kısayol menüsünü açın ve ardından **projeyi yeniden yükle**.  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense ve Doğrulama  
- Proje dosyalarını düzenlemek için XML Düzenleyicisi'ni kullanırken, IntelliSense ve doğrulama güdümlü tarafından [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] şema dosyaları. Bu bulunabilir şema önbelleğinde yüklendiğinden  *\<Visual Studio yükleme dizini >*\Xml\Schemas\1033\MSBuild.  
+ Proje dosyalarını düzenlemek için XML Düzenleyicisi'ni kullanırken, IntelliSense ve doğrulama güdümlü tarafından [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] şema dosyaları. Bu bulunabilir şema önbelleğinde yüklendiğinden  *\<Visual Studio yükleme dizini >* \Xml\Schemas\1033\MSBuild.  
   
  Çekirdek [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] türleri tanımlanmış Microsoft.Build.Core.xsd ve genel türleri tarafından kullanılan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Microsoft.Build.CommonTypes.xsd tanımlanır. Böylece özel öğe türü adları, özellikler ve görevler için IntelliSense ve doğrulama sahip şemaları özelleştirmek için Microsoft.Build.xsd düzenleyin veya CommonTypes veya çekirdek şemaları içeren kendi şeması oluşturun. Düzenleyicisi'ni kullanarak bulmak için XML yönlendirmek için olacaktır kendi şema oluşturursanız **özellikleri** penceresi.  
   

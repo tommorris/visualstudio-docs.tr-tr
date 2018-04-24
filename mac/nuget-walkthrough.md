@@ -1,16 +1,15 @@
 ---
-title: "İzlenecek yol - NuGet paketini projenize dahil olmak üzere | Microsoft Docs"
-description: "Bu belge, bir Xamarin projesinde bir NuGet paketi ekleme kapsar. Bulma ve bir paket indirilirken, yanı sıra aracılığıyla IDE tümleştirme özelliklerine giriş anlatılmaktadır."
+title: İzlenecek yol - NuGet paketini projenize dahil
+description: Bu belge, bir Xamarin projesinde bir NuGet paketi ekleme kapsar. Bulma ve bir paket indirilirken, yanı sıra aracılığıyla IDE tümleştirme özelliklerine giriş anlatılmaktadır.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: cb927b14e3637edd7e16c78fbed01fa4e9522652
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 05762df8b06a69647c6c7a628db54ac499248374
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>NuGet paketini projenize dahil
 
@@ -109,7 +108,7 @@ Farklı kaynaklar paketler için arama yaparken seçilebilir:
 
 ![Paket kaynaklarını ekleyin](media/nuget-walkthrough-PackageSource3.png)
 
-## <a name="version-control"></a>Sürüm denetimi
+## <a name="version-control"></a>Sürüm Denetimi
 
 NuGet belgelerine anlatılmaktadır [NuGet paketleri kaynak denetimine kaydetmeden kullanarak](https://docs.microsoft.com/nuget/consume-packages/packages-and-source-control). İkili dosyaları ve kullanılmayan bilgi kaynak denetiminde depolamamayı tercih ederseniz, Visual Studio paketlerini sunucudan otomatik olarak geri yüklemek Mac için yapılandırabilirsiniz. Bu bir geliştirici, projenin kaynak denetiminden ilk kez aldığında, Mac için Visual Studio otomatik olarak karşıdan yükle ve gerekli paketleri yüklemek anlamına gelir.
 

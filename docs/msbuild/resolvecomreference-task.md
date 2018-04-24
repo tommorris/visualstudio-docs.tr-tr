@@ -3,7 +3,7 @@ title: ResolveComReference görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
 dev_langs:
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - MSBuild, ResolveCOMReference task
 - ResolveCOMReference task [MSBuild]
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18065f0cd39ab70a9847ba14e4cc225e536b6b18
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ac8bf991ca4bec8befde5a11673dcb056f5e50f4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference Görevi
 Bir veya daha fazla tür kitaplığı adları ya da .tlb dosyaları listesini alır ve bu tür kitaplıklarının disk üzerindeki konumlara giderir.  

@@ -2,8 +2,7 @@
 title: Profil Araçları ile veya hata ayıklayıcı olmadan çalışan | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ae64a24cab971ff54a92ec447371ad24bb7c24
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d7208f687ea38475603b8bfcae7e9ee55ab3ae58
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Profil Araçları ile veya hata ayıklayıcı olmadan çalıştırma
 Visual Studio şimdi sunar performans seçimine araçları, bazıları (örneğin, **CPU kullanımı** ve **bellek kullanımı**) ile veya hata ayıklayıcı olmadan çalıştırılabilir. Hata ayıklayıcı olmayan performans araçları araçları hata ayıklayıcı tümleşik hata ayıklama yapılandırmaları üzerinde çalıştırmak için tasarlanmış olsa da yayın yapılandırmalarında çalıştırmak üzere tasarlanmıştır.  

@@ -2,8 +2,7 @@
 title: Komut satırından performans verilerini toplamak için profil oluşturma yöntemlerini kullanma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 056b65361576c1578b4985dc202863d77464652e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2117fc729ef7e7190e5f1a46fe05d0d91daf63c6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Komut Satırından Performans Verileri Toplamak için Profil Oluşturma Yöntemlerini Kullanma
 Tercih ettiğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları komut satırı araçları ve seçenekleri etkenlere bağlıdır tür bir uygulama gibi profil olduğunu, kullanmak istediğiniz ve olup hedef uygulama yazılmış yerel ya da Profiloluşturmayöntemi[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]kodu.  

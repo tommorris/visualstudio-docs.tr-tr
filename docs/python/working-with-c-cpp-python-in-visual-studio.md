@@ -1,13 +1,9 @@
 ---
 title: C++ ve Python ile çalışma
-description: Visual Studio'da Python için C++ uzantısı veya modülü yazmak için işlem amd adımları
-ms.custom: ''
+description: Karışık mod hata ayıklama izlenecek yol da dahil olmak üzere Visual Studio kullanarak Python için C++ uzantısı oluşturma kılavuz.
 ms.date: 04/03/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-- C++
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -15,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d7545f22f7fd19d37cfdbe90839ff83bd9d0ec38
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2be78ab073d688e8882dcfdedceef6a6fc73bde3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -112,7 +108,7 @@ Daha fazla bilgi için bkz: [Visual Studio için Python desteği yükleme](insta
     > [!Tip]
     > İle **Python yerel geliştirme araçları** Visual Studio 2017 yüklü olan başlatabilirsiniz **Python Uzantısı Modülü** şablonu bunun yerine, sahip olduğu çoğunu ne aşağıda zaten yerinde açıklanmıştır. Bu kılavuz için boş bir proje ile başlayarak adım adım uzantı modülü oluşturma gösterir. İşlem anladığınızda, zaman zaman şablonu kaydeder kendi uzantıları yazma.
 
-1. C++ dosyasına sağ tıklayarak yeni projede oluşturmak **kaynak dosyaları** düğümü, ardından **Ekle >... yeni öğe "**seçin **C++ dosya**, adlandırın `module.cpp`, ve seçin **Tamam**.
+1. C++ dosyasına sağ tıklayarak yeni projede oluşturmak **kaynak dosyaları** düğümü, ardından **Ekle >... yeni öğe "** seçin **C++ dosya**, adlandırın `module.cpp`, ve seçin **Tamam**.
 
     > [!Important]
     > Bir dosyayla `.cpp` adımları C++ özellik sayfalarında etkinleştirmek uzantısı gereklidir.

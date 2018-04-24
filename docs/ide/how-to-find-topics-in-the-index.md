@@ -1,5 +1,5 @@
 ---
-title: Kullanım Visual Studio Yardım Görüntüleyicisi dizini | Microsoft Docs
+title: Kullanım Visual Studio Yardım Görüntüleyicisi dizin | Microsoft Docs
 ms.custom: ''
 ms.date: 11/02/2017
 ms.technology:
@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc1b096a161ebca394abe4626c42db2ced883c4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ee913682452e94bb0e973dff9e98e496b8cb3c70
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="finding-topics-by-using-the-help-viewer-index"></a>Yardım Görüntüleyici dizini kullanılarak konular bulma
+# <a name="find-topics-by-using-the-help-viewer-index"></a>Yardım Görüntüleyici dizini kullanarak konular bulma
 Dizin konuları yüklü içerik ile ilişkili anahtar sözcükleri listesini içerir. Her bir konuda kendisiyle ilişkili birden fazla anahtar sözcüğü olabilir ve her anahtar sözcük birden fazla konu ile ilişkili olabilir. Bir dizin kitaptaki kullanırsınız gibi aynı şekilde bu dizini kullanın.  
   
 ## <a name="to-find-a-topic-by-using-the-index"></a>Dizini kullanarak bir konu bulma  
@@ -75,6 +75,6 @@ Sözcük veya tümcecik girdiğiniz bir giriş bulamazsanız, aşağıdakileri d
     Örneğin, "oluşturma" terimi girdiyseniz, "oluşturmayı" deneyin. 
   
 ## <a name="see-also"></a>Ayrıca bkz.
-[Nasıl yapılır: TOC konuları Bul](../ide/how-to-find-topics-in-the-table-of-contents.md)  
+[Nasıl yapılır: TOC konu bulma](../ide/how-to-find-topics-in-the-table-of-contents.md)  
 [Nasıl yapılır: Konu Arama](../ide/how-to-search-for-topics.md)  
 [Microsoft Yardım Görüntüleyicisi](../ide/microsoft-help-viewer.md)

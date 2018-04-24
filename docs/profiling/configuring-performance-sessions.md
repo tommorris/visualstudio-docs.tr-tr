@@ -2,8 +2,7 @@
 title: Performans oturumlarını yapılandırma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - common tasks, performance
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4928539df317ea498b68e1c5d6b4c3b7fc29c9c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 85155bb357f808b477d9d6041c16cdc2d0f3681b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="configuring-performance-sessions"></a>Performans Oturumlarını Yapılandırma
 Kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları, çok çeşitli çok sayıda uygulama türleri için performans verilerini toplayabilir. Bu bölümde Performans oturumunu ve hedef ikili performans Wizardand özelliklerini ilginizi çeken verileri toplamak için profil oluşturma araçları yapılandırmak için nasıl kullanılacağını gösterir. Profil oluşturma araçları yapılandırma özellikleri de profil çalıştırılmasıyla toplanan veri miktarını denetlemek için kullanılabilir. Daha fazla bilgi için bkz: [denetleme veri toplama](../profiling/controlling-data-collection.md).  

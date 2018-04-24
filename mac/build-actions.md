@@ -3,15 +3,14 @@ title: Eylemler derleme
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 78b0e715ca44c613b6a7ee839c0656e301308588
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: 3e876bbc20f2f2e86ba7ec4806f67f4a2573a089
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="build-actions"></a>Eylemler derleme 
+# <a name="build-actions"></a>Eylemler derleme
 
 Visual Studio'da tüm dosyaları Mac projesi için yapılandırma sırasında dosyaya olanlar denetleyen bir yapı eylemi sahiptir. Bu, üzerinde herhangi bir dosyayı sağ tıklayarak ve göz ayarlanabilir **yapı eylemi**aşağıda gösterildiği gibi:
 
@@ -26,4 +25,4 @@ C# projeleri için bazı yaygın eylemler oluşturun:
 
 Yapı eylem aynı anda çok sayıda dosyaya ayarlamanıza olanak veren Çözüm Gezgini'nde, birden fazla dosyayı seçmek mümkündür.
 
-Ayrıca, belirli projeler için yapı eylemler vardır. Örneğin, Xamarin.iOS projeleri sahip **BundleResource** derleme dosyası uygulama paketi bir parçası olarak ekleyecek eylemi. Xamarin.Android belirli yapı eylemler hakkında bilgi bulunabilir [derleme işlemi](https://developer.xamarin.com/guides/android/under_the_hood/build_process/#Build_Actions) developer.xamarin.com Kılavuzu.
+Ayrıca, belirli projeler için yapı eylemler vardır. Örneğin, Xamarin.iOS projeleri sahip **BundleResource** derleme dosyası uygulama paketi bir parçası olarak ekleyecek eylemi. Xamarin.Android belirli yapı eylemler hakkında bilgi bulunabilir [derleme işlemi](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions) Kılavuzu.

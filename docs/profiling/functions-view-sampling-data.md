@@ -2,8 +2,7 @@
 title: İşlevler görünümü - örnekleme veri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Functions View
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9577be16ac614bf3b7e2e196fe685f7f0e290b70
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4f4b1eddfd2d4b0ab0f285b727b6bc6638ca2e8d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="functions-view---sampling-data"></a>İşlevler görünümü - örnekleme verileri
 Örnekleme profili yöntemi için işlevleri rapor görünümü Çalıştır profili oluşturma sırasında örneklenen işlevleri listeler.  

@@ -1,12 +1,9 @@
 ---
 title: Hızlı Başlangıç - Python kodu bir depo kopyalama
 description: Bu hızlı başlangıç Visual Studio Takım Gezgini kullanarak Python koans depoyu kopyalama tarafından Visual Studio'da Python projesi oluşturun.
-ms.custom: mvc
 ms.date: 03/21/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -14,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 80b840e14332498e86f7136f19ea6b7b106812b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d66c3b5b62edc6963d92e27bcf6a94889741b27f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da Python kodu bir depoyu kopyalayın
 
@@ -28,7 +25,7 @@ Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installing-pytho
 
 2. Visual Studio'yu başlatın.
 
-3. Seçin **Görünüm > Takım Gezgini...**  açmak için **Takım Gezgini** , GitHub veya Visual Studio Team Services bağlanmak veya için bir depoyu kopyalayın penceresi. (Görmüyorsanız **Bağlan** gösterilen sayfasında Aşağıda, bu sayfasına gidersiniz üst araç çubuğundaki Tak simgesini seçin.)
+3. Seçin **Görünüm > Takım Gezgini** açmak için **Takım Gezgini** , GitHub veya Visual Studio Team Services bağlanmak veya için bir depoyu kopyalayın penceresi. (Görmüyorsanız **Bağlan** gösterilen sayfasında Aşağıda, bu sayfasına gidersiniz üst araç çubuğundaki Tak simgesini seçin.)
 
     ![Takım Gezgini penceresi gösteren Visual Studio Team Services, GitHub ve depo kopyalama](media/team-explorer.png)
 
@@ -39,7 +36,7 @@ Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installing-pytho
 
 5. Kopyalama tamamlandıktan sonra depo adını görünür **yerel Git depoları** listesi. Depo panosunda gitmek için bu adına çift tıklayın **Takım Gezgini**.
 
-6. Altında **çözümleri**seçin **yeni...** .
+6. Altında **çözümleri**seçin **yeni**.
 
     ![Takım Gezgini penceresi, bir kopya yeni proje oluşturma](media/team-explorer-new-project.png)
 
@@ -49,7 +46,7 @@ Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installing-pytho
 
 9. İçinde **Çözüm Gezgini**, genişletin `python3` düğümünü sağ tıklatın `contemplate_koans.py`seçip **başlangıç dosyası olarak ayarlayın**. Bu adım Visual Studio Proje çalıştırırken kullanması gereken hangi dosya söyler.
 
-10. Seçin **Proje > Koans özellikleri...**  menüsünden seçin **genel** sekmesini tıklatın ve ayarlama **çalışma dizini** "python3" için. Varsayılan olarak Visual Studio çalışma dizini başlangıç dosyasının konumu yerine Proje kök ayarladığından, bu adım gereklidir (`python3\contemplate_koans.py`, proje özelliklerinde de görebileceğiniz). Program kodu için bir dosya arar `koans.txt` çalışma klasöründe, bu nedenle bu değeri değiştirmeden gördüğünüz bir çalışma zamanı hatası.
+10. Seçin **Proje > Koans özellikleri** menüsünden seçin **genel** sekmesini tıklatın ve ayarlama **çalışma dizini** "python3" için. Varsayılan olarak Visual Studio çalışma dizini başlangıç dosyasının konumu yerine Proje kök ayarladığından, bu adım gereklidir (`python3\contemplate_koans.py`, proje özelliklerinde de görebileceğiniz). Program kodu için bir dosya arar `koans.txt` çalışma klasöründe, bu nedenle bu değeri değiştirmeden gördüğünüz bir çalışma zamanı hatası.
 
     ![Python proje için çalışma dizini ayarlama](media/projects-set-working-directory.png)
 

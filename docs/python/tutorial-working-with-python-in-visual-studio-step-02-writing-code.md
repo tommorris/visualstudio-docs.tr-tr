@@ -1,12 +1,9 @@
 ---
 title: Yazma ve kod çalıştırma Python, 2. adımı ile çalışma
 description: Adım 2 Python düzenleyin ve ardında, Visual Studio'nun düzenleme ve IntelliSense özellikleri gösteren daha ilginç koduyla basit bir Hello World program çalıştırma kapsayan Visual Studio içinde çalışmak için bir çekirdek öğretici olması gerekir.
-ms.custom: mvc
 ms.date: 01/16/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -14,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c49536b6592283b940aeff4ee4238cf7bfff92e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 607903093735c1ab49886afcf292121e0b7bafb8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>2. adım: Yazma ve kodu çalıştırma
 

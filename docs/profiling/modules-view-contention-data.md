@@ -2,8 +2,7 @@
 title: Modüller görünümü - Çekişme verileri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d3377de12be205c2cab06f93ee707de0943de0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 619e2a38c794a6823f7efcfb5606bd9fbe9f461c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modules-view---contention-data"></a>Modüller görünümü - çakışma verileri
 Profil oluşturma verileri örneklenen modülleri göre gruplandırılmış eşzamanlılık verileri çakışma verileri modülleri görünümünü görüntüler. Her modül hiyerarşik bir köküdür. Çekişme olayları meydana geldiği modülündeki işlevlerin modülü düğümünün altında listelenir.  

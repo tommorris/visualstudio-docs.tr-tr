@@ -2,8 +2,7 @@
 title: Toplama ayrıntılı zamanlama verileri komut satırından profil oluşturucu izleme yöntemini kullanarak bir ASP.NET Web uygulaması için | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,instrumentation method
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 754c93297ac9f3aede14785c2f85a9e328d3b825
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3665046320b644ebd9689e14c18cc68b79c95347
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Komut Satırından Profil Oluşturucu İzleme Metodunu Kullanarak bir ASP.NET Web Uygulaması için Ayrıntılı Zamanlama Verileri Toplama
 Bu bölümdeki yordamları ve ayrıntılı performans toplamak için seçenekleri açıklar için verileri bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması kullanarak **VSPerfCmd** komut satırı aracı ve izleme yöntemi.  

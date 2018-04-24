@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6375852a76da633707c90538945339e438aac4a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 117f82cca454a4d82e6789c17486e808912387be
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>Nasıl Yapılır: Dosyaları Kodlamayla Kaydetme ve Açma
+# <a name="how-to-save-and-open-files-with-encoding"></a>Nasıl yapılır: kaydedin ve açık dosyaları kodlamayla
 Özel karakter çift yönlü dilleri desteklemek için kodlama dosyalarını kaydedebilirsiniz. Ayrıca, böylece Visual Studio dosyanın doğru görüntüler bir bir dosyayı açarken kodlama belirtebilirsiniz.  
   
 ### <a name="to-save-a-file-with-encoding"></a>Dosya kodlama ile kaydetmek için  
@@ -60,4 +60,4 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Ayrıca bkz.
 [Kodlama ve satır sonları](encodings-and-line-breaks.md)  
 [Kodlama ve Windows Forms Genelleştirme](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
-[Uygulamaları Genelleştirme ve Yerelleştirme](../ide/globalizing-and-localizing-applications.md)
+[Globalize ve uygulamaları yerelleştirme](../ide/globalizing-and-localizing-applications.md)

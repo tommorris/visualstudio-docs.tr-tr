@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65aa95f5e4178805bc1b6d9cddbcd15fc9159c99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9dd1ce6aa91054ffee2f82386c016acc0fe5ba7c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Nasıl yapılır: yazı tiplerini ve renkleri Visual Studio'da değiştirme
 
@@ -33,7 +33,7 @@ IDE çerçeve ve aracı windows Visual Studio'da çeşitli şekillerde rengini �
 
 1. Seçenekler listesinde seçin **ortam** > **genel**.
 
-1. İçinde **renk temasını** listesinde, her iki varsayılan seçin **mavi** tema, **koyu** veya **açık**.
+1. İçinde **renk temasını** listesinde, her iki varsayılan seçin **mavi** tema, **koyu**, veya **açık**.
 
 > [!NOTE]
 > Renk temasını değiştirdiğinizde, IDE metinde varsayılan döner veya önceden özelleştirilmiş yazı tipleri ve boyutları.
@@ -43,7 +43,7 @@ IDE çerçeve ve aracı windows Visual Studio'da çeşitli şekillerde rengini �
 
 ## <a name="use-windows-high-contrast-colors"></a>Windows yüksek karşıtlık renklerini kullan
 
-Seçin **Sol Alt** + **sola kaydırma** + **PrtScn** anahtarları.
+Seçin **Sol Alt**+**sola kaydırma**+**PrtScn** anahtarları.
 
 > [!WARNING]
 > Bu seçenek, yüksek karşıtlık tüm uygulama ve kullanıcı Arabirimi için geçerli bilgisayarda ayarlar.
@@ -61,7 +61,7 @@ Tüm windows ve IDE içinde iletişim kutuları için yazı tipi ve metin boyutu
 1. İçinde **ayarlarını göster** listesinde, seçin **ortam yazı tipi**.
 
     > [!TIP]
-    > Yalnızca, aracı windows yazı tipini değiştirmek istiyorsanız, **ayarlarını göster** listesinde, seçin **[tüm metin Aracı Pencereleri]**.
+    > Yalnızca, aracı windows yazı tipini değiştirmek istiyorsanız, **ayarlarını göster** listesinde, seçin **tüm metin aracı pencereleri**.
 
 1. İçinde **yazı tipi** listesinde, bir yazı tipi seçin.
 
@@ -69,5 +69,6 @@ Tüm windows ve IDE içinde iletişim kutuları için yazı tipi ve metin boyutu
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'nun erişilebilirlik özellikleri](../ide/reference/accessibility-features-of-visual-studio.md)
-[nasıl yapılır: yazı tiplerini ve renkleri Düzenleyicisi'nde değiştirme](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+[Visual Studio'nun erişilebilirlik özellikleri](../ide/reference/accessibility-features-of-visual-studio.md)  
+
+[Nasıl yapılır: yazı tiplerini ve renkleri Düzenleyicisi'nde değiştirme](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

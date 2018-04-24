@@ -10,11 +10,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 03329be39ba94984424999c2878b060f01ccd6de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb1da2ec2c41fcbec78864868d116bcd1684a5b2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Sorun Giderme ve Bilinen Sorunlar (Unity için Visual Studio Araçları)
 Bu bölümde, bilinen sorunların açıklamaları Unity için Visual Studio Araçları ile sık karşılaşılan sorunlara çözümler bulmak ve hata bildirimi tarafından Unity için Visual Studio Araçları geliştirmek nasıl yardımcı olabileceğini öğrenin.
@@ -37,8 +37,11 @@ Bu sorunu çözer. Hala sorun yaşıyorsanız, geliştirici komut istemini yöne
  devenv /setup
 ```
 
-### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>VS2015 ve IntelliSense veya kod coloration sorunları.
+### <a name="issues-with-visual-studio-2015-and-intellisense-or-code-coloration"></a>Visual Studio 2015 ve IntelliSense veya kod coloration sorunları.
 3 güncelleştirmek için Visual Studio 2015 yükseltme çalışmanız gerekir.
+
+### <a name="shader-files-without-code-coloration-when-using-visual-studio-2017"></a>Visual Studio 2017 kullanırken kod coloration olmayan gölgelendirici dosyaları
+Lütfen "C++ ile masaüstü geliştirme" iş yükü, Visual Studio 2017 örneğinde yüklü olduğundan emin olun. C/C++ ayrıştırıcının kod coloration için kullanılan bu yüküyle paketlenebilir.
 
 ### <a name="visual-studio-hangs"></a>Visual Studio kilitleniyor
 Ayrıştırma FMOD, HAZNEYİ (Evrensel Media Player) ZFBrowser veya katıştırılmış tarayıcı gibi birkaç Unity eklentileri yerel iş parçacığı kullanıyor. İşletim sistemi engelleme çağrı yapar çalışma zamanı için bir yerel iş parçacığı ekleme yukarı bir eklenti sona erdiğinde bir sorundur. Bu Unity hata ayıklayıcısı (veya etki alanı yeniden yükle) o iş parçacığı kesme ve askıda anlamına gelir.
@@ -53,6 +56,12 @@ Hiçbir zaman proje dosyalarını doğrudan bir varlık işlemci veya başka bir
 
 Ek yeniden yükler karşılaşırsanız veya Visual Studio kaybetme tüm açık pencereler yeniden, Lütfen doğru .NET yüklü paketleri hedefleme sahip olduğunuzdan emin olun. Daha fazla bilgi için çerçeveler hakkında aşağıdaki bölümü gözden geçirin.
 
+###  <a name="the-debugger-does-not-break-on-exceptions"></a>Hata ayıklayıcı özel durumları kesme yok
+İşlenmeyen bir özel durum olduğunda eski Unity çalışma zamanı (.NET 3.5 eşdeğeri) kullanırken, hata ayıklayıcı her zaman çalışmamasına neden olur (try/catch bloğu dışında =). Özel durumun işlenip, hata ayıklayıcı özel ayarları penceresi bir sonu gerekli olup olmadığını belirlemek için kullanır.
+
+Yeni çalışma zamanı (.NET 4.6 eşdeğeri), kullanıcı özel durumları yönetmek için yeni bir yolunu Unity sunulan ve bir try/catch bloğu dışında olsalar bile, sonuç olarak, tüm özel durumları "kullanıcı işlenmiş" görülür. İşte bu nedenle şimdi açıkça ayırmak için hata ayıklayıcı istiyorsanız özel durum Ayarları penceresinde denetlemek üzere gerekir.
+
+Özel durum Ayarları penceresinde (hata ayıklama > Windows > özel ayarları), özel durumlar (örneğin, ortak dil çalışma zamanı .NET özel durumlarını anlamı özel durumları,) kategorisine düğümünü genişletin ve istediğiniz bir özel durum için onay kutusunu seçin Bu kategoride (örneğin System.NullReferenceException) yakalar. Özel durumların tüm bir kategorisini de seçebilirsiniz.
 
 ### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>Windows, Unity hedef Framework'ü indirmek Visual Studio ister.
 Unity için Visual Studio Araçları varsayılan olarak 10 veya Windows 8 yüklü değilse .NET framework 3.5, gerektirir. Bu sorunu gidermek için indirmek ve .NET framework 3.5 yüklemek için yönergeleri izleyin.

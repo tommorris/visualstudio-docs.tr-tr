@@ -2,19 +2,18 @@
 title: Visual Studio'da bellek kullanımını çözümleme | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b1c7f9420c2e5a9d3225ae0e8ab0d9023afb275
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: de4cf17e02391db4430bcd41fb8cfa2ea09b98f7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Visual Studio profil bellek kullanımı
 Bellek sızıntıları ve verimsiz bellek hata ayıklayıcısı ile tümleşik hatalarını ayıkladığınız sırada Bul **bellek kullanımı** tanı aracı. Uygulamanız bir veya daha fazla bellek kullanımı araç sağlar *anlık görüntüleri* nesne türlerini bellek kullanımı etkisini anlamanıza yardımcı olması için yönetilen ve yerel bellek heap öğesinin. .NET, yerel ya da karma mod (.NET ve yerel) uygulamaları anlık görüntüleri toplayabilirsiniz.  

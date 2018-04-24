@@ -2,8 +2,7 @@
 title: Birden çok kategori mevcut | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.multicategory
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce165520d4580b755ffae2fcd1fa5c4106039fee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7362f0a7495a75bc1d34d7f839bf0397787b6173
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="multiple-categories-are-present"></a>Birden Çok Kategori Mevcut
 Belirli bir zaman aralığı için etkinlik birden fazla tür içeren bir bölümü seçilir. İki renkten görüntülenen dikkat edin, bir dikey diğer bağlı yığın. Bu renkleri üst iki en sık rastlanan etkinlikleri yalnızca belirli bir zaman aralığında gösterir. Bu iki etkinlik sıklıkları birbirine göre Üçe veya dikey çubuk yarısının gösterilir. Daha fazla ayrıntı için iş parçacığı görünüm bu bölümünü yakınlaştırmayı deneyin.  

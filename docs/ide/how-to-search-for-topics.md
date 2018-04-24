@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e76a1e87da99d8504620ed2881dcc60b8ce99a57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 71b1de500398f9023bf63c5320fa4d92260a05ec
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-search-for-topics"></a>Nasıl yapılır: Konu Arama
 Belirli bir sözcük içeren tüm konuları bulmak için tam metin arama özelliğini kullanın. Ayrıca, daraltın ve joker karakter ifadeleri, mantıksal işleçler ve Gelişmiş arama işleçleri kullanarak aramanızı özelleştirin.  
   
-Ara sekmesini açmak için **arama** sekmesinde Yardım Görüntüleyici penceresinde veya klavye kullanıcısıysanız seçin **Ctrl + E**.  
+Açmak için **arama** sekmesinde, seçin **arama** sekmesinde **Yardım Görüntüleyici** penceresinde veya klavye kullanıcısıysanız seçin **Ctrl** + **E**.  
   
 ## <a name="to-perform-a-full-text-search"></a>Tam metin araması gerçekleştirmek için 
 1.  Arama kutusuna, bulmak istediğiniz sözcük yazın.  
@@ -72,6 +72,6 @@ Otomatik olarak sık tekrarlanan sözcükleri veya bazen Durma sözcükleri adı
   
 ## <a name="see-also"></a>Ayrıca bkz.
 [Mantıksal ve Gelişmiş işleçler](../ide/logical-operators-in-search-expressions.md)  
-[Nasıl yapılır: dizinde konuları Bul](../ide/how-to-find-topics-in-the-index.md)  
-[Nasıl yapılır: TOC konuları Bul](../ide/how-to-find-topics-in-the-table-of-contents.md)  
+[Nasıl yapılır: dizinde konu bulma](../ide/how-to-find-topics-in-the-index.md)  
+[Nasıl yapılır: TOC konu bulma](../ide/how-to-find-topics-in-the-table-of-contents.md)  
 [Microsoft Yardım Görüntüleyicisi](../ide/microsoft-help-viewer.md)

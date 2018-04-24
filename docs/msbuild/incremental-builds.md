@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2290b7e8dc7d642967ee0c7ef2b7808ccef0c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 17f33be85a5baf35235721c720386dd237d9ec85
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="incremental-builds"></a>Artımlı Derlemeler
 Artımlı derlemeler en iyi duruma getirilir ve böylece ilgili giriş dosyalarına göre güncel çıkış dosyalarınız hedefleri yürütülmez derlemeleri ' dir. Hedef öğe hem de sahip olabilir bir `Inputs` hangi hedef öğeler belirten özniteliği giriş olarak bekliyor ve bir `Outputs` hangi üretir çıkış olarak öğeler belirten özniteliği. MSBuild, bu öznitelik değerleri 1-1 eşlemesini bulmaya çalışır. 1-1 eşleme varsa, MSBuild giriş her zaman damgasını öğesine karşılık gelen kendi çıktı öğenin zaman damgasını karşılaştırır. 1-1 eşleme çıkış dosyaları için tüm giriş dosyaları karşılaştırılır. Kendi çıktı dosyasını aynı yaş ise güncel ya da kendi giriş dosya veya dosyalar daha yeni bir öğe olarak kabul edilir.  

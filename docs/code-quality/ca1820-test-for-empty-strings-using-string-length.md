@@ -1,10 +1,8 @@
 ---
-title: 'CA1820: Dize uzunluğunu kullanarak boş dizeler için sınayın | Microsoft Docs'
-ms.custom: ''
+title: 'CA1820: Dize uzunluğunu kullanarak boş dizeler için sınayın'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - TestForEmptyStringsUsingStringLength
 - CA1820
@@ -17,35 +15,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b70f2579a7c5afb0baa24cf1c6ad9b33ec5a47d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29af0d1ffacf3ec6b327228c242a0c6048e3216a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Dize uzunluğunu kullanarak boş dizeler için sınayın
-|||  
-|-|-|  
-|TypeName|TestForEmptyStringsUsingStringLength|  
-|CheckId|CA1820|  
-|Kategori|Microsoft.Performance|  
-|Yeni Değişiklik|Bölünemez|  
-  
-## <a name="cause"></a>Sebep  
- Dize boş dizeye kullanarak karşılaştırılır <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Karşılaştırma dizeleri kullanarak <xref:System.String.Length%2A?displayProperty=fullName> özelliği veya <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> yöntemdir kullanmaktan daha önemli ölçüde daha hızlı <xref:System.Object.Equals%2A>. Bunun nedeni, <xref:System.Object.Equals%2A> ya da daha önemli ölçüde daha fazla MSIL yönergelerini çalıştıran nesnedir <xref:System.String.IsNullOrEmpty%2A> ya da almak için yürütülen yönerge sayısını <xref:System.String.Length%2A> özellik değerine ve sıfır olarak karşılaştırır.  
-  
- Bilmeniz gereken, <xref:System.Object.Equals%2A> ve <xref:System.String.Length%2A> == 0 boş dizeler için farklı şekilde davranır. Değeri alınacak çalışırsanız <xref:System.String.Length%2A> boş bir dize özelliği, ortak dil çalışma zamanı oluşturur bir <xref:System.NullReferenceException?displayProperty=fullName>. Boş bir dize ve boş dize arasında bir karşılaştırma gerçekleştirirseniz, ortak dil çalışma zamanı bir özel durum değil; Karşılaştırma döndürür `false`. Null sınaması bu iki yaklaşım göreli performansını önemli ölçüde etkilemez. Hedeflerken [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], kullanın <xref:System.String.IsNullOrEmpty%2A> yöntemi. Aksi takdirde kullanın <xref:System.String.Length%2A> karşılaştırma mümkün olduğunca ==.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlal düzeltmek için kullanılacak karşılaştırma değiştirmek <xref:System.String.Length%2A> özelliği ve test için boş bir dize. Hedefleme varsa [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], kullanın <xref:System.String.IsNullOrEmpty%2A> yöntemi.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Performans sorunu değilse bir uyarı bu kuraldan gizlemek güvenlidir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, boş bir dize aramak için kullanılan farklı teknikleri gösterilmektedir.  
-  
+|||
+|-|-|
+|TypeName|TestForEmptyStringsUsingStringLength|
+|CheckId|CA1820|
+|Kategori|Microsoft.Performance|
+|Yeni Değişiklik|Bölünemez|
+
+## <a name="cause"></a>Sebep
+ Dize boş dizeye kullanarak karşılaştırılır <xref:System.Object.Equals%2A?displayProperty=fullName>.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Karşılaştırma dizeleri kullanarak <xref:System.String.Length%2A?displayProperty=fullName> özelliği veya <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> yöntemdir kullanmaktan daha önemli ölçüde daha hızlı <xref:System.Object.Equals%2A>. Bunun nedeni, <xref:System.Object.Equals%2A> ya da daha önemli ölçüde daha fazla MSIL yönergelerini çalıştıran nesnedir <xref:System.String.IsNullOrEmpty%2A> ya da almak için yürütülen yönerge sayısını <xref:System.String.Length%2A> özellik değerine ve sıfır olarak karşılaştırır.
+
+ Bilmeniz gereken, <xref:System.Object.Equals%2A> ve <xref:System.String.Length%2A> == 0 boş dizeler için farklı şekilde davranır. Değeri alınacak çalışırsanız <xref:System.String.Length%2A> boş bir dize özelliği, ortak dil çalışma zamanı oluşturur bir <xref:System.NullReferenceException?displayProperty=fullName>. Boş bir dize ve boş dize arasında bir karşılaştırma gerçekleştirirseniz, ortak dil çalışma zamanı bir özel durum değil; Karşılaştırma döndürür `false`. Null sınaması bu iki yaklaşım göreli performansını önemli ölçüde etkilemez. Hedeflerken [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], kullanın <xref:System.String.IsNullOrEmpty%2A> yöntemi. Aksi takdirde kullanın <xref:System.String.Length%2A> karşılaştırma mümkün olduğunca ==.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlal düzeltmek için kullanılacak karşılaştırma değiştirmek <xref:System.String.Length%2A> özelliği ve test için boş bir dize. Hedefleme varsa [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], kullanın <xref:System.String.IsNullOrEmpty%2A> yöntemi.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Performans sorunu değilse bir uyarı bu kuraldan gizlemek güvenlidir.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, boş bir dize aramak için kullanılan farklı teknikleri gösterilmektedir.
+
  [!code-csharp[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]

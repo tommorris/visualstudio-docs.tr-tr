@@ -10,16 +10,16 @@ helpviewer_keywords:
 - directories [.NET Framework], for output items
 - output, removing items
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 556aa4593165513d5dedf266f9d18a5481c852a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36e9af303b91cc0cdabc184f7ced329289eb7bd8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-clean-a-build"></a>Nasıl Yapılır: Derlemeyi Temizleme
 Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm ara ve çıktı dosyalarını silinir. Proje ve bileşen dosyalarından Ara yeni örneklerini ve çıktı dosyalarını sonra oluşturulabilir. Kitaplığı ile sağlanan ortak görevler [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] içeren bir [Exec](../msbuild/exec-task.md) sistem komutlarını çalıştırmak için kullanabileceğiniz bir görev. Görevler Kitaplığı hakkında daha fazla bilgi için bkz: [görev başvurusu](../msbuild/msbuild-task-reference.md).  

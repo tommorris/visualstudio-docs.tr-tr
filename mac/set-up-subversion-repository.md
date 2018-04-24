@@ -1,16 +1,15 @@
 ---
-title: "Mac için Visual Studio'da bir alt sürüme deposu ayarlama | Microsoft Docs"
-description: "Git ve alt sürüme Mac için Visual Studio kullanarak"
+title: Mac için Visual Studio'da bir alt sürüme deposu ayarlama
+description: Git ve alt sürüme Mac için Visual Studio kullanarak
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: 0757ad29b8614a86f059f525f6ffe3100595d09b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e6b6fd600d3f32c77651b9a4fbb0dff2cd754bcb
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="setting-up-a-subversion-repository"></a>Bir alt sürüme deposu ayarlama
 

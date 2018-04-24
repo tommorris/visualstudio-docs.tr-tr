@@ -3,7 +3,7 @@ title: MSBuild koşullu yapıları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -19,16 +19,16 @@ helpviewer_keywords:
 - Otherwise Element [MSBuild]
 - When Element [MSBuild]
 ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1e642cf3e4578d42489578bdafb15134276c6ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 46426fd77e86962762f8ac3beaf8aa6a490bc6ae
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild Koşullu Yapıları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] için bir mekanizma sağlar / veya işlem ile [Seç](../msbuild/choose-element-msbuild.md), [zaman](../msbuild/when-element-msbuild.md), ve [Aksi durumda](../msbuild/otherwise-element-msbuild.md) öğeleri.  

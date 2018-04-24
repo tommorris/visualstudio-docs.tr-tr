@@ -2,8 +2,7 @@
 title: LineOff | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42cceb5c2bc756a976cd1df2a0c74f5313a6df79
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 60692f77645857214c12ba04968d9acee0df5008
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="lineoff"></a>LineOff
 Örnekleme profili oluşturma yöntemi kullanırken varsayılan olarak, profil oluşturucu kaynak kodu satır sayısı ve satır numarası uzaklık verilerini toplar. VSPerfCmd **LineOff** seçeneği devre dışı bırakır satır numarası veri toplama VSPerfCmd uygulamayı başlatmak için kullanıldığında. Profil oluşturma verilerini işleve toplanır ne zaman düzey **LineOff** belirtilir.  

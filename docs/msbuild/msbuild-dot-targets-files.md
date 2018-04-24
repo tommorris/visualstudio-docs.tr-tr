@@ -3,7 +3,7 @@ title: MSBuild. Hedefler dosyaları | Microsoft Docs
 ms.custom: ''
 ms.date: 02/24/2017
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - .Targets files
 - MSBuild, .Targets files
 ms.assetid: f6d98eb4-d2fa-49b7-8e3c-bae1ca3cf596
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 255da529586ac7fcd15e045c970017d55eee2f74
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe88e0c8ee041682b8af4bbfaab2a83fb21defde
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets Dosyaları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğeleri, özellikler, hedefleri ve görevleri ortak senaryolar için içeren birkaç .targets dosyaları içerir. Bu dosyalar çoğu otomatik olarak içeri aktarılan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje Bakım ve okunabilirliği kolaylaştırmak için dosyaları.  

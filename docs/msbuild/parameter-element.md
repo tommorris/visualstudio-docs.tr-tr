@@ -3,7 +3,7 @@ title: Parametre öğesi | Microsoft Docs
 ms.custom: ''
 ms.date: 03/13/2017
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - Parameter element [MSBuild]
 - <Parameter> element [MSBuild]
 ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7816e859aebdbee6cb0765c76be4ebfb4906a8d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 544851ca500e417cbc3010c23ad122a4ab1f2cc0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="parameter-element"></a>Parametre öğesi
 Tarafından oluşturulan bir görev için söz konusu parametre hakkında bilgi içeren bir `UsingTask``TaskFactory`.  Öğesinin adı parametresi adıdır.  Daha fazla bilgiler için bkz: [UsingTask öğesi (MSBuild)](../msbuild/usingtask-element-msbuild.md).  

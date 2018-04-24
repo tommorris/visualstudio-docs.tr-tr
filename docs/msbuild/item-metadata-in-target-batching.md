@@ -9,16 +9,16 @@ helpviewer_keywords:
 - MSBuild, target batching
 - target batching [MSBuild]
 ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d96b90ecb4cbc79ffabb7ae3a6c69a34c60ed94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e512ad9f932e34a6ddd95e165b116465aa359a09
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="item-metadata-in-target-batching"></a>Toplu Hedef İşlemede Öğe Meta Verileri
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] girişleri ve çıkışları derleme hedefi üzerinde bağımlılık çözümlemesi özelliğine sahiptir. Giriş veya çıkış hedef güncel belirlenir, hedef atlanacak ve yapı procede olur. `Target` öğeleri kullanmak `Inputs` ve `Outputs` bağımlılık Çözümleme sırasında incelemek için öğelerini belirtmek için öznitelikler.  

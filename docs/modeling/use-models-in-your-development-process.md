@@ -1,6 +1,5 @@
 ---
-title: Geliştirme sürecinizde modelleri kullanma | Microsoft Docs
-ms.custom: ''
+title: Geliştirme sürecinizde modelleri kullanma
 ms.date: 11/04/2016
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
@@ -11,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee68a7db3691c7245dbe17fd4c23b948734f215a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b814f35e8c93ff8204fe39943dbaafbce03376a0
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-models-in-your-development-process"></a>Geliştirme sürecinizde modelleri kullanma
 
@@ -139,11 +138,11 @@ Farklı türlerdeki diyagram soyutlama farklı düzeylerde tasarım açıklamak 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çevik Geliştirme modelleri kullanma](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
-[uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)
-[Model kullanıcı gereksinimlerini](../modeling/model-user-requirements.md)
-[uygulamanızın modeli Mimari](../modeling/model-your-app-s-architecture.md)
-[model aracılığıyla test geliştirme](../modeling/develop-tests-from-a-model.md)
-[modelleme çözümünüzün yapısını](../modeling/structure-your-modeling-solution.md)
+- [Çevik Geliştirme modelleri kullanma](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)
+- [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)
+- [Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)
+- [Model aracılığıyla test geliştirme](../modeling/develop-tests-from-a-model.md)
+- [Modelleme çözümünüzün yapısını oluşturma](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

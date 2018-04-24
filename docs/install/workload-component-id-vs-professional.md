@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Professional 2017 iş yükü ve Bileşen kimlikleri | Microsoft Docs
+title: Visual Studio Professional 2017 iş yükü ve Bileşen kimlikleri
 description: İş yükü ve Bileşen kimlikleri Visual Studio komut satırını kullanarak yükleme veya bağımlılık VSIX bildirim olarak belirtmek için kullanın
 keywords: ''
 author: TerryGLee
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.workload:
 - multiple
-ms.openlocfilehash: 60b8746491934adf276f16b25aaad3ff42c9dcc3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 694ba2cfb381432ce5f7343dbc065c89c323a3cf
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-professional-2017-component-directory"></a>Visual Studio Professional 2017 bileşen dizini
 
@@ -62,14 +62,14 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Visual Studio Başlan
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor dili Hizmetleri | 15.0.26720.2 | Gerekli
-Component.Microsoft.VisualStudio.Web.AzureFunctions | Microsoft Azure WebJobs Tools | 15.6.27309.0 | Gerekli
+Component.Microsoft.VisualStudio.Web.AzureFunctions | Microsoft Azure Web işleri araçları | 15.6.27309.0 | Gerekli
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Gerekli
 Microsoft.Component.ClickOnce | ClickOnce yayımlama | 15.0.27205.0 | Gerekli
 Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Gerekli
 Microsoft.Component.NetFX.Core.Runtime | .NET çekirdeği çalışma zamanı | 15.0.26208.0 | Gerekli
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 paketi hedefleme | 15.6.27406.0 | Gerekli
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.6.27406.0 | Gerekli
 Microsoft.Net.Core.Component.SDK | .NET core 2.0 geliştirme araçları | 15.6.27406.0 | Gerekli
@@ -80,7 +80,7 @@ Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları |
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.0.26621.2 | Gerekli
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure Storage öykünücüsü | 15.6.27413.0 | Gerekli
-Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.6.27309.0 | Gerekli
+Microsoft.VisualStudio.Component.CloudExplorer | Bulut Gezgini | 15.6.27309.0 | Gerekli
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama araçları | 1.10.50912.1 | Gerekli
 Microsoft.VisualStudio.Component.DockerTools | Kapsayıcı geliştirme araçları | 15.6.27309.0 | Gerekli
 Microsoft.VisualStudio.Component.FSharp | F # dil desteği | 15.6.27406.0 | Gerekli
@@ -106,7 +106,7 @@ Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet b
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 15.6.27323.2 | Gerekli
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites | Azure geliştirme önkoşulları | 15.6.27406.0 | Gerekli
-Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Microsoft Azure WebJobs Tools | 15.6.27309.0 | Gerekli
+Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Microsoft Azure Web işleri araçları | 15.6.27309.0 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.Web | Önkoşullar ASP.NET ve web geliştirme araçları | 15.6.27323.2 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.0.27005.2 | Gerekli
 Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake ve akış analiz araçları | 15.0.27005.2 | Önerilen
@@ -115,7 +115,7 @@ Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 paketi hedefleme 
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 paketi hedefleme | 15.6.27406.0 | Önerilen
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4 – 4.6 geliştirme araçları | 15.6.27406.0 | Önerilen
 Microsoft.VisualStudio.Component.AspNet45 | Gelişmiş ASP.NET özellikleri | 15.6.27428.1 | Önerilen
-Microsoft.VisualStudio.Component.Azure.MobileAppsSdk | Azure Mobile Apps SDK | 15.6.27428.1 | Önerilen
+Microsoft.VisualStudio.Component.Azure.MobileAppsSdk | Azure Mobile Apps SDK'sı | 15.6.27428.1 | Önerilen
 Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools | Azure Resource Manager çekirdek araçları | 15.0.27005.2 | Önerilen
 Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools | Service Fabric Araçları | 15.0.26208.0 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure bulut Hizmetleri Çekirdek araçları | 15.6.27309.0 | Önerilen
@@ -125,7 +125,7 @@ Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools | Azure Kaynak
 Component.PowerShellTools.VS2017 | PowerShell araçları | 3.0.552 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.2.SDK | .NET framework 4.6.2 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET framework 4.6.2 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.7.1.SDK | .NET framework 4.7.1 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET framework 4.7.1 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.7.SDK | .NET framework 4.7 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.7.TargetingPack | .NET framework 4.7 paketi hedefleme | 15.6.27406.0 | İsteğe Bağlı
@@ -156,7 +156,7 @@ Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Önerilen
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 hedefleme paketi | 15.6.27406.0 | Önerilen
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 hedefleme paketi | 15.6.27406.0 | Önerilen
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 paketi hedefleme | 15.6.27406.0 | Önerilen
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Önerilen
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.6.27406.0 | Önerilen
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | Önerilen
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 paketi hedefleme | 15.6.27406.0 | Önerilen
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 paketi hedefleme | 15.6.27406.0 | Önerilen
@@ -169,7 +169,7 @@ Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkla
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.0.26621.2 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure Storage öykünücüsü | 15.6.27413.0 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure bulut Hizmetleri Çekirdek araçları | 15.6.27309.0 | Önerilen
-Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.6.27309.0 | Önerilen
+Microsoft.VisualStudio.Component.CloudExplorer | Bulut Gezgini | 15.6.27309.0 | Önerilen
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama araçları | 1.10.50912.1 | Önerilen
 Microsoft.VisualStudio.Component.DockerTools | Kapsayıcı geliştirme araçları | 15.6.27309.0 | Önerilen
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Önerilen
@@ -256,7 +256,7 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | ClickOnce yayımlama | 15.0.27205.0 | Gerekli
 Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Gerekli
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Yönetilen masaüstü iş yükü çekirdek | 15.6.27323.2 | Gerekli
@@ -277,10 +277,10 @@ Microsoft.Net.Component.4.TargetingPack | .NET framework 4 paketi hedefleme | 15
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4 – 4.6 geliştirme araçları | 15.6.27406.0 | Önerilen
 Microsoft.VisualStudio.Component.Debugger.JustInTime | Tam zamanında hata ayıklayıcı | 15.0.27005.2 | Önerilen
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 araçları | 15.6.27406.0 | Önerilen
-Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 15.0.26208.0 | İsteğe Bağlı
+Component.Dotfuscator | PreEmptive tarafından koruması - Dotfuscator | 15.0.26208.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.2.SDK | .NET framework 4.6.2 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET framework 4.6.2 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.7.1.SDK | .NET framework 4.7.1 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET framework 4.7.1 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.7.SDK | .NET framework 4.7 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.7.TargetingPack | .NET framework 4.7 paketi hedefleme | 15.6.27406.0 | İsteğe Bağlı
@@ -374,7 +374,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliş
 Component.Incredibuild | IncrediBuild - yapı hızlandırma | 15.6.27406.0 | İsteğe Bağlı
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | İsteğe Bağlı
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Evrensel CRT SDK'sı | 15.6.27309.0 | İsteğe Bağlı
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.140 | VC ++ 2015.3 v140 araç takımı Masaüstü (x86, x64) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.ATLMFC | MFC ve ATL desteği (x86 hem x64) | 15.6.27406.0 | İsteğe Bağlı
@@ -383,7 +383,7 @@ Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI desteği | 15.6.273
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Standart Kitaplığı (Deneysel) modülleri | 15.6.27309.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK'sı (10.0.10240.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK'sı (10.0.10586.0) | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK'sı (10.0.14393.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Windows 10 Masaüstü C++ [x86 hem x64] için SDK (10.0.15063.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Windows 10 için SDK'sı (10.0.15063.0) UWP: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Windows 10 için SDK'sı (10.0.15063.0) UWP: C++ | 15.6.27406.0 | İsteğe Bağlı
@@ -427,7 +427,7 @@ Microsoft.Component.VC.Runtime.UCRTSDK | Windows Evrensel CRT SDK'sı | 15.6.273
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 paketi hedefleme | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 paketi hedefleme | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 paketi hedefleme | 15.6.27406.0 | İsteğe Bağlı
@@ -437,7 +437,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn der
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 15.0.27205.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK'sı (10.0.10240.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK'sı (10.0.10586.0) | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK'sı (10.0.14393.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Windows 10 Masaüstü C++ [x86 hem x64] için SDK (10.0.15063.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Windows 10 için SDK'sı (10.0.15063.0) UWP: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Windows 10 için SDK'sı (10.0.15063.0) UWP: C++ | 15.6.27406.0 | İsteğe Bağlı
@@ -490,7 +490,7 @@ Microsoft.Component.ClickOnce | ClickOnce yayımlama | 15.0.27205.0 | Gerekli
 Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Gerekli
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 paketi hedefleme | 15.6.27406.0 | Gerekli
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.6.27406.0 | Gerekli
 Microsoft.Net.Core.Component.SDK | .NET core 2.0 geliştirme araçları | 15.6.27406.0 | Gerekli
@@ -521,16 +521,16 @@ Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet b
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.Web | Önkoşullar ASP.NET ve web geliştirme araçları | 15.6.27323.2 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.0.27005.2 | Gerekli
-Component.Microsoft.VisualStudio.Web.AzureFunctions | Microsoft Azure WebJobs Tools | 15.6.27309.0 | Önerilen
+Component.Microsoft.VisualStudio.Web.AzureFunctions | Microsoft Azure Web işleri araçları | 15.6.27309.0 | Önerilen
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 15.0.26621.2 | Önerilen
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 15.0.26208.0 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.0.26621.2 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure Storage öykünücüsü | 15.6.27413.0 | Önerilen
-Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.6.27309.0 | Önerilen
+Microsoft.VisualStudio.Component.CloudExplorer | Bulut Gezgini | 15.6.27309.0 | Önerilen
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET Profil Araçları | 15.6.27421.1 | Önerilen
 Microsoft.VisualStudio.Component.DockerTools | Kapsayıcı geliştirme araçları | 15.6.27309.0 | Önerilen
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 15.6.27323.2 | Önerilen
-Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Microsoft Azure WebJobs Tools | 15.6.27309.0 | Önerilen
+Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Microsoft Azure Web işleri araçları | 15.6.27309.0 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | Web geliştirme için bulut araçları | 15.6.27323.2 | Önerilen
 Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0 1.1 geliştirme araçları | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.NetCore.1x.ComponentGroup.Web | .NET core Web 1.0 1.1 geliştirme araçları | 15.6.27406.0 | İsteğe Bağlı
@@ -559,7 +559,7 @@ Microsoft.Component.ClickOnce | ClickOnce yayımlama | 15.0.27205.0 | Gerekli
 Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Gerekli
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 paketi hedefleme | 15.6.27406.0 | Gerekli
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.6.27406.0 | Gerekli
 Microsoft.Net.Core.Component.SDK | .NET core 2.0 geliştirme araçları | 15.6.27406.0 | Gerekli
@@ -616,7 +616,7 @@ Microsoft.Component.ClickOnce | ClickOnce yayımlama | 15.0.27205.0 | Gerekli
 Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Gerekli
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 paketi hedefleme | 15.6.27406.0 | Gerekli
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.6.27406.0 | Gerekli
 Microsoft.Net.Core.Component.SDK | .NET core 2.0 geliştirme araçları | 15.6.27406.0 | Gerekli
@@ -649,7 +649,7 @@ Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 1
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.Web | Önkoşullar ASP.NET ve web geliştirme araçları | 15.6.27323.2 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.0.27005.2 | Gerekli
-Component.Microsoft.VisualStudio.Web.AzureFunctions | Microsoft Azure WebJobs Tools | 15.6.27309.0 | Önerilen
+Component.Microsoft.VisualStudio.Web.AzureFunctions | Microsoft Azure Web işleri araçları | 15.6.27309.0 | Önerilen
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 hedefleme paketi | 15.6.27406.0 | Önerilen
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 paketi hedefleme | 15.6.27406.0 | Önerilen
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 paketi hedefleme | 15.6.27406.0 | Önerilen
@@ -659,15 +659,15 @@ Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları |
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 15.0.26208.0 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.0.26621.2 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure Storage öykünücüsü | 15.6.27413.0 | Önerilen
-Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.6.27309.0 | Önerilen
+Microsoft.VisualStudio.Component.CloudExplorer | Bulut Gezgini | 15.6.27309.0 | Önerilen
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET Profil Araçları | 15.6.27421.1 | Önerilen
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 araçları | 15.6.27406.0 | Önerilen
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.0.27205.0 | Önerilen
-Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Microsoft Azure WebJobs Tools | 15.6.27309.0 | Önerilen
+Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Microsoft Azure Web işleri araçları | 15.6.27309.0 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | Web geliştirme için bulut araçları | 15.6.27323.2 | Önerilen
 Microsoft.Net.Component.4.6.2.SDK | .NET framework 4.6.2 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET framework 4.6.2 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.7.1.SDK | .NET framework 4.7.1 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET framework 4.7.1 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.7.SDK | .NET framework 4.7 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.7.TargetingPack | .NET framework 4.7 paketi hedefleme | 15.6.27406.0 | İsteğe Bağlı
@@ -719,7 +719,7 @@ Microsoft.Component.ClickOnce | ClickOnce yayımlama | 15.0.27205.0 | Gerekli
 Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Gerekli
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 paketi hedefleme | 15.6.27406.0 | Gerekli
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 paketi hedefleme | 15.6.27406.0 | Gerekli
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.6.27406.0 | Gerekli
@@ -794,7 +794,7 @@ Microsoft.Component.VC.Runtime.UCRTSDK | Windows Evrensel CRT SDK'sı | 15.6.273
 Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python yerel geliştirme araçları | 15.0.27005.2 | İsteğe Bağlı
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 paketi hedefleme | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Core.Component.SDK | .NET core 2.0 geliştirme araçları | 15.6.27406.0 | İsteğe Bağlı
@@ -853,7 +853,7 @@ Microsoft.Component.ClickOnce | ClickOnce yayımlama | 15.0.27205.0 | Gerekli
 Microsoft.Component.NetFX.Native | .NET Yerel | 15.0.26208.0 | Gerekli
 Microsoft.ComponentGroup.Blend | Visual Studio için Blend | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 paketi hedefleme | 15.6.27406.0 | Gerekli
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
 Microsoft.Net.Core.Component.SDK | .NET core 2.0 geliştirme araçları | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 15.0.26621.2 | Gerekli
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET Profil Araçları | 15.6.27421.1 | Gerekli
@@ -875,7 +875,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard | .NET yerel ve .NE
 Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Xamarin için evrensel Windows platformu araçları | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.0.27005.2 | Gerekli
 Microsoft.Component.VC.Runtime.OSSupport | UWP için Visual C++ çalışma zamanı | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.7.1.SDK | .NET framework 4.7.1 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Graphics.Tools | Grafik hata ayıklayıcı ve DirectX GPU Profil Oluşturucu | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Graphics.Win81 | Grafik araçları Windows 8.1 SDK'sı | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Windows 10 mobil öykünücü (kalan oluşturucuları güncelleştirme) | 15.0.27406.0 | İsteğe Bağlı
@@ -884,7 +884,7 @@ Microsoft.VisualStudio.Component.VC.Tools.ARM | Visual C++ Derleyicileri ve ARM 
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 v141 araç takımı (x86, x64) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK'sı (10.0.10240.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK'sı (10.0.10586.0) | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK'sı (10.0.14393.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Windows 10 için SDK'sı (10.0.15063.0) UWP: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 için SDK'sı (10.0.16299.0) UWP: C++ | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ Evrensel Windows platformu araçları | 15.6.27323.2 | İsteğe Bağlı
@@ -901,7 +901,7 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | ClickOnce yayımlama | 15.0.27205.0 | Gerekli
 Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Gerekli
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 hedefleme paketi | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 paketi hedefleme | 15.6.27406.0 | Gerekli
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.6.27406.0 | Gerekli
@@ -914,7 +914,7 @@ Microsoft.VisualStudio.Component.VSSDK | Visual Studio SDK | 15.0.26919.1 | Gere
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites | Visual Studio uzantısı geliştirme önkoşulları | 15.6.27309.0 | Gerekli
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET Profil Araçları | 15.6.27421.1 | Önerilen
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 15.0.26208.0 | Önerilen
-Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 15.0.26208.0 | İsteğe Bağlı
+Component.Dotfuscator | PreEmptive tarafından koruması - Dotfuscator | 15.0.26208.0 | İsteğe Bağlı
 Microsoft.Component.CodeAnalysis.SDK | .NET Compiler Platform SDK’sı | 15.0.27323.2 | İsteğe Bağlı
 Microsoft.Component.VC.Runtime.OSSupport | UWP için Visual C++ çalışma zamanı | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 15.0.26621.2 | İsteğe Bağlı
@@ -991,13 +991,15 @@ Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Visual C++ Derleyicileri ve AR
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 Masaüstü C++ [ARM ve ARM64] için SDK (10.0.16299.0) | 15.6.27406.0
 
 ## <a name="get-support"></a>Destek alma
+
 Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
+
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

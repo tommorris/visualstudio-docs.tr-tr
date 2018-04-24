@@ -1,6 +1,5 @@
 ---
-title: 'Nasıl yapılır: oluştur veya güncelleştir standart kod çözümleme iade ilkeleri | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Standart Kod Çözümleme İade İlkeleri Oluşturma veya Güncelleme'
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d6a28c5dd0ae8d72f11c76d33ff15268d4dda4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb0642828daa96d7904d4e4bb967afc5f1c563d9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Nasıl yapılır: Standart Kod Çözümleme İade İlkeleri Oluşturma veya Güncelleme
 
@@ -50,10 +49,10 @@ Yönetilen kod için bir ilke belirttikten sonra takım üyeleri kod projeleri t
 
 Seçin veya aşağıdaki seçenekleri temizleyin:
 
-    |Seçenek|Açıklama|  
-    |------------|-----------------|  
-    |**Yalnızca geçerli çözümün bir parçası olan dosyaları içerecek şekilde iade uygulayın.**|Kod çözümleme yalnızca çözüm ve proje yapılandırma dosyalarında belirtilen dosyaları çalıştırabilirsiniz. Bu ilke bir çözümün bir parçası olan tüm kod analiz edilir güvence altına alır.|  
-    |**C/C++ Kod Analizi zorla (/ analyze)**|Tüm C veya C++ projeleri ile oluşturulması gerekir / analyze derleyici seçeneği Kod Analizi iade edilmeden önce çalıştırın.|  
+    |Seçenek|Açıklama|
+    |------------|-----------------|
+    |**Yalnızca geçerli çözümün bir parçası olan dosyaları içerecek şekilde iade uygulayın.**|Kod çözümleme yalnızca çözüm ve proje yapılandırma dosyalarında belirtilen dosyaları çalıştırabilirsiniz. Bu ilke bir çözümün bir parçası olan tüm kod analiz edilir güvence altına alır.|
+    |**C/C++ Kod Analizi zorla (/ analyze)**|Tüm C veya C++ projeleri ile oluşturulması gerekir / analyze derleyici seçeneği Kod Analizi iade edilmeden önce çalıştırın.|
     |**Yönetilen kod için Kod Analizi zorla**|Tüm yönetilen projeleri Kod Analizi çalıştırmak ve iade edilmeden önce yapı gerektirir.|
 
 ### <a name="to-specify-a-managed-rule-set"></a>Yönetilen kural kümesini belirtmek için
@@ -62,7 +61,7 @@ Seçin veya aşağıdaki seçenekleri temizleyin:
 
     - Bir Microsoft standart bir kural kümesi seçin.
 
-    - Özel bir kural kümesini seçmek için tıklatın  **\<... kaynak denetiminden kural kümesi seçin >**ve kural kaynak denetimi tarayıcıda kümesi sürüm denetim yolunu yazın. Sürüm denetimi yolu sözdizimi şöyledir:
+    - Özel bir kural kümesini seçmek için tıklatın  **\<... kaynak denetiminden kural kümesi seçin >** ve kural kaynak denetimi tarayıcıda kümesi sürüm denetim yolunu yazın. Sürüm denetimi yolu sözdizimi şöyledir:
 
     - **$/** `TeamProjectName` **/** `VersionControlPath`
 

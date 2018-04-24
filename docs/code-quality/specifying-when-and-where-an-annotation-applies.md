@@ -1,9 +1,7 @@
 ---
-title: Açıklamanın ne zaman ve nereye uygulanacağını belirtme | Microsoft Docs
-ms.custom: ''
+title: Açıklamanın Ne Zaman ve Nereye Uygulanacağını Belirtme
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Group_
@@ -13,34 +11,27 @@ f1_keywords:
 ms.assetid: 8e4f4f9c-5dfa-4835-87df-ecd1698fc650
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 4413f547429e88346c4d977cff4d5b93995a1741
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 288d422de6d4e4c0f372820d838d0173c990f2a8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Açıklamanın Ne Zaman ve Nereye Uygulanacağını Belirtme
-Ek açıklamanın koşullu olduğunda Çözümleyicisi belirtmek için diğer ek açıklamaları gerektirebilir.  Bir işlev zaman uyumlu veya zaman uyumsuz bir değişken varsa, örneğin, işlevi aşağıdaki gibi davranır: zaman uyumlu durumda her zaman sonunda başarılı ancak hemen gerçekleştirilemiyor zaman uyumsuz durumda, bir hata bildirir. İşlev zaman uyumlu olarak çağrıldığında değil döndüğünden çünkü sonuç değeri denetleme kodu Çözümleyicisi için herhangi bir değer sağlar.  Ancak, işlevi zaman uyumsuz olarak adlandırılır ve işlev sonucunu işaretli olduğunda, önemli bir hata meydana gelebilir. Bu örnek kullanmak bir durum gösterilir `_When_` ek açıklama — bu makalenin sonraki bölümlerinde açıklanan — denetimini etkinleştirmek için.  
-  
-## <a name="structural-annotations"></a>Yapısal ek açıklamaları  
- Ne zaman ve nerede ek açıklamaları uygulamak denetlemek için aşağıdaki yapısal ek açıklamaları kullanın.  
-  
-|Ek Açıklama|Açıklama|  
-|----------------|-----------------|  
-|`_At_(expr, anno-list)`|`expr` bir lvalue döndüren bir ifadedir. Ek açıklamalar `anno-list` tarafından adlı nesneye uygulanır `expr`. Her eklenti için `anno-list`, `expr` ön koşul ek açıklamanın ön koşul yorumlanır ve sonrası koşul IF ek açıklamanın sonrası koşul olarak yorumlanır yorumlanır.|  
-|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` bir lvalue döndüren bir ifadedir. Ek açıklamalar `anno-list` tarafından adlı nesneye uygulanır `expr`. Her eklenti için `anno-list`, `expr` ön koşul ek açıklamanın önkoşulu yorumlanır ve sonrası koşul IF ek açıklamanın sonrası koşul olarak yorumlanır yorumlanır.<br /><br /> `iter` ek açıklamanın için kapsamlı bir değişken adı (inclusive, `anno-list`). `iter` örtük türüne sahip `long`. Aynı adlı değişkenleri herhangi çevreleyen kapsamdaki değerlendirme sürümünden gizlenir.<br /><br /> `elem-count` bir tamsayı olarak değerlendiren bir ifadedir.|  
-|`_Group_(anno-list)`|Ek açıklamalar `anno-list` tüm her ek açıklama uygulanan Grup ek açıklama uygulandığı niteleyicisi sahibi olarak kabul edilir.|  
-|`_When_(expr, anno-list)`|`expr` dönüştürülebilir bir ifade `bool`. Sıfır olduğunda (`true`), belirtilen ek açıklamalar `anno-list` geçerli olarak kabul edilir.<br /><br /> Varsayılan olarak, her eklenti için `anno-list`, `expr` ek açıklamanın bir önkoşulu ve çıktı değerleri kullanarak olarak ek açıklama sonrası bir koşul ise giriş değerleri kullanılarak olarak yorumlanır. Varsayılan değer geçersiz kılmak için kullanabileceğiniz `_Old_` giriş değerleri kullanılması gerektiğini belirtmek için sonrası bir koşul değerlendirirken iç. **Not:** farklı ek açıklamaları kullanılarak gruplarındaki sonucu olarak etkinleştirilmesi `_When_` değişebilir bir değer — Örneğin, `*pLength`— çünkü söz konusu değerlendirilen sonucu `expr` önkoşulu kendi değerlendirilen farklı olabilir sonrası koşuluna neden.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Sal'ı Anlama](../code-quality/understanding-sal.md)   
- [İşlev parametrelerini ve dönüş değerlerini açıklama](../code-quality/annotating-function-parameters-and-return-values.md)   
- [İşlev davranışını yorumlama](../code-quality/annotating-function-behavior.md)   
- [Yapıları ve sınıfları yorumlama](../code-quality/annotating-structs-and-classes.md)   
- [Kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md)   
- [İç işlevler](../code-quality/intrinsic-functions.md)   
- [En iyi yöntemler ve örnekler](../code-quality/best-practices-and-examples-sal.md)
+Ek açıklamanın koşullu olduğunda Çözümleyicisi belirtmek için diğer ek açıklamaları gerektirebilir.  Bir işlev zaman uyumlu veya zaman uyumsuz bir değişken varsa, örneğin, işlevi aşağıdaki gibi davranır: zaman uyumlu durumda her zaman sonunda başarılı ancak hemen gerçekleştirilemiyor zaman uyumsuz durumda, bir hata bildirir. İşlev zaman uyumlu olarak çağrıldığında değil döndüğünden çünkü sonuç değeri denetleme kodu Çözümleyicisi için herhangi bir değer sağlar.  Ancak, işlevi zaman uyumsuz olarak adlandırılır ve işlev sonucunu işaretli olduğunda, önemli bir hata meydana gelebilir. Bu örnek kullanmak bir durum gösterilir `_When_` ek açıklama — bu makalenin sonraki bölümlerinde açıklanan — denetimini etkinleştirmek için.
+
+## <a name="structural-annotations"></a>Yapısal ek açıklamaları
+ Ne zaman ve nerede ek açıklamaları uygulamak denetlemek için aşağıdaki yapısal ek açıklamaları kullanın.
+
+|Ek Açıklama|Açıklama|
+|----------------|-----------------|
+|`_At_(expr, anno-list)`|`expr` bir lvalue döndüren bir ifadedir. Ek açıklamalar `anno-list` tarafından adlı nesneye uygulanır `expr`. Her eklenti için `anno-list`, `expr` ön koşul ek açıklamanın ön koşul yorumlanır ve sonrası koşul IF ek açıklamanın sonrası koşul olarak yorumlanır yorumlanır.|
+|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` bir lvalue döndüren bir ifadedir. Ek açıklamalar `anno-list` tarafından adlı nesneye uygulanır `expr`. Her eklenti için `anno-list`, `expr` ön koşul ek açıklamanın önkoşulu yorumlanır ve sonrası koşul IF ek açıklamanın sonrası koşul olarak yorumlanır yorumlanır.<br /><br /> `iter` ek açıklamanın için kapsamlı bir değişken adı (inclusive, `anno-list`). `iter` örtük türüne sahip `long`. Aynı adlı değişkenleri herhangi çevreleyen kapsamdaki değerlendirme sürümünden gizlenir.<br /><br /> `elem-count` bir tamsayı olarak değerlendiren bir ifadedir.|
+|`_Group_(anno-list)`|Ek açıklamalar `anno-list` tüm her ek açıklama uygulanan Grup ek açıklama uygulandığı niteleyicisi sahibi olarak kabul edilir.|
+|`_When_(expr, anno-list)`|`expr` dönüştürülebilir bir ifade `bool`. Sıfır olduğunda (`true`), belirtilen ek açıklamalar `anno-list` geçerli olarak kabul edilir.<br /><br /> Varsayılan olarak, her eklenti için `anno-list`, `expr` ek açıklamanın bir önkoşulu ve çıktı değerleri kullanarak olarak ek açıklama sonrası bir koşul ise giriş değerleri kullanılarak olarak yorumlanır. Varsayılan değer geçersiz kılmak için kullanabileceğiniz `_Old_` giriş değerleri kullanılması gerektiğini belirtmek için sonrası bir koşul değerlendirirken iç. **Not:** farklı ek açıklamaları kullanılarak gruplarındaki sonucu olarak etkinleştirilmesi `_When_` değişebilir bir değer — Örneğin, `*pLength`— çünkü söz konusu değerlendirilen sonucu `expr` önkoşulu kendi değerlendirilen farklı olabilir sonrası koşuluna neden.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+ [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [SAL anlama](../code-quality/understanding-sal.md) [işlev parametrelerini ve dönüş değerlerini açıklama](../code-quality/annotating-function-parameters-and-return-values.md) [işlevdavranışınıyorumlama](../code-quality/annotating-function-behavior.md) [Yapıları ve sınıfları yorumlama](../code-quality/annotating-structs-and-classes.md) [kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md) [iç işlevler](../code-quality/intrinsic-functions.md) [en iyi yöntemler ve örnekler](../code-quality/best-practices-and-examples-sal.md)

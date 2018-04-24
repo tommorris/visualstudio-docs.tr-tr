@@ -8,16 +8,16 @@ helpviewer_keywords:
 - MSBuild, multi-processor logging
 - MSBuild, logging
 ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21e2bd2bc1cb4f12dc05a02c538c4b9f62fb2106
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dedf90c51ec2cd4f1864d5573925ed17a0d69b2a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Birden Çok İşlemcili Ortamda Oturum Açma
 MSBuild birden çok işlemci kullanma yeteneğini zaman derleme projesi önemli ölçüde düşürebilir ancak de günlük tutmayı karmaşıklık ekler. Bir tek işlemcili ortamda Günlükçü gelen olayları, iletilerini, uyarıları ve hataları tahmin edilebilir ve sıralı bir şekilde işleyebilir. Ancak, birden çok işlemcili ortamda çeşitli kaynaklardan gelen olayların aynı anda veya sıra dışı ulaşır. MSBuild özel "iletme günlükçüleri." oluşturmayı etkinleştirir ve yeni bir çok işlemciye duyarlı Günlükçü sağlar  

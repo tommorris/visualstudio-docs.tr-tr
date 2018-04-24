@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Scrollbar özelleştirerek kodunuzu izlemek | Microsoft Docs'
+title: 'Nasıl yapılır: scrollbar özelleştirerek kodunuzu izlemek | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -9,13 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bca2835a17ddf26245e00ea2e9217360a89ba15
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ff36af9a034f3a369369a0916f468826c053d05
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Nasıl yapılır: Scrollbar özelleştirerek kodunuzu izleme
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Nasıl yapılır: scrollbar özelleştirerek kodunuzu izleme
 
 Uzun kod dosyaları ile çalışırken, her şeyi göz önünde bulundurmanız zor olabilir. Kaydırma çubuğu neler olduğuna dair kodunuzda bir Kuşbakışı görünüm vermek için kod penceresinin özelleştirebilirsiniz.
 
@@ -23,7 +23,7 @@ Uzun kod dosyaları ile çalışırken, her şeyi göz önünde bulundurmanız z
 
 1. Kod değişiklikleri, kesme noktaları, hataları ve yer işaretleri göstermek için kaydırma çubuğunun ayarlayabilirsiniz.
 
-    Açık **kaydırma çubuğu** seçerek seçenekleri sayfasında **Araçları** > **seçenekleri** > **metin düzenleyici**  >  **Tüm diller** veya belirli bir dil veya girerek **kaydırma çubuğu** hızlı başlatma penceresinde.
+    Açık **kaydırma çubuğu** seçerek seçenekleri sayfasında **Araçları** > **seçenekleri** > **metin düzenleyici**  >  **Tüm diller** veya belirli bir dil veya girerek **kaydırma çubuğu** içinde **hızlı başlatma** penceresi.
 
 2. Seçin **ek açıklamaları Göster dikey kaydırma çubuğu üzerinden**, görmek istediğiniz ek açıklamaları seçin.
 
@@ -45,7 +45,7 @@ Uzun kod dosyaları ile çalışırken, her şeyi göz önünde bulundurmanız z
 
     Üzerinde **kaydırma çubuğu** seçenekleri sayfasında, seçin **dikey kaydırma çubuğu için kullanım çubuk modu** veya **dikey kaydırma çubuğu için eşleme kullanma modu**. Genişliği seçebilirsiniz **kaynak genel bakış** açılır.
 
-    Arama örnek eşleme modu etkindir ve genişliği Orta olarak ayarlandığında nasıl göründüğünü aşağıda verilmiştir:
+    İşte eşleme modu açık olduğunda arama örnek nasıl göründüğünü ve genişliği ayarı **orta**:
 
     ![Kaydırma çubuğu harita modunda](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
 
@@ -57,4 +57,4 @@ Uzun kod dosyaları ile çalışırken, her şeyi göz önünde bulundurmanız z
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod Düzenleyicisi'nde yazma](../ide/writing-code-in-the-code-and-text-editor.md)
+[Düzenleyici'de kod yazma](../ide/writing-code-in-the-code-and-text-editor.md)

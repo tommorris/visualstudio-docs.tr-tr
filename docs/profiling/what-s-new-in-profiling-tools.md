@@ -2,8 +2,7 @@
 title: Profil yenilikler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6492a8876fbdae895836bba2c286d392b776a8b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec85de208c7761b69a73cc17a72bdb4a59fe6bb4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Profil oluşturma araçlarında içindeki yenilikler nelerdir? [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 Tanılama araçları uygulamanızda düzelttikten gereken sorunları tanımlamanıza yardımcı olması için yeni görselleştirmeler içerir. Tanılama araçları şimdi ASP.NET uygulamaları için destek içerir.

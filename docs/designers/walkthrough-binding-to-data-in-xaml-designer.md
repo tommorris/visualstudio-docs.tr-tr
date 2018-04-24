@@ -1,6 +1,5 @@
 ---
-title: "İzlenecek yol: XAML Tasarımcısı'nda verileri bağlama | Microsoft Docs"
-ms.custom: ''
+title: XAML Tasarımcısı'nda verilere bağlayın
 ms.date: 11/04/2016
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -14,13 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a770bd8224906ccd45a2d3f4be9e169368bb20cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a94f3c4637ab76b8b0d00d1899de5c475dc8e7e4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>İzlenecek yol: XAML Tasarımcısı'nda veri bağlama
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>İzlenecek yol: XAML Tasarımcısı'nda veri bağlama
 
 XAML Tasarımcısı'nda çalışma yüzeyi ve Özellikler penceresini kullanarak veri bağlama özellikleri ayarlayabilirsiniz. Bu kılavuzda örnek verinin bir denetime nasıl bağlanacağını gösterir. Özellikle, izlenecek olan basit bir alışveriş sepeti sınıfı oluşturma gösterilmektedir bir [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) adlı `ItemCount`ve ardından bağlamak `ItemCount` özelliğine **metin** özelliği bir [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) denetim.
 
@@ -100,5 +99,5 @@ XAML Tasarımcısı'nda çalışma yüzeyi ve Özellikler penceresini kullanarak
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)  
-[Değer dönüştürücüsü iletişim kutusu ekleme](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Değer dönüştürücüsü iletişim kutusu ekleme](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

@@ -9,16 +9,16 @@ helpviewer_keywords:
 - building multiple projects in parallel
 - msbuild, building projects in parallel
 ms.assetid: c8c9aadc-33ad-4aa1-b07d-b879e9eabda0
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ef276ef16f7bdb72c4dc3211ab994553a92e0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 164767c628a6b48a3d9479fdd4f7918f12093ea7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>MSBuild ile Paralel Olarak Birden Çok Proje Derleme
 Paralel olarak çalıştırarak daha hızlı birden çok proje oluşturmak için MSBuild kullanabilirsiniz. Derlemeleri paralel olarak çalıştırmak için çok çekirdekli veya birden çok işlemci bilgisayarda aşağıdaki ayarları kullanın:  

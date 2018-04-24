@@ -1,9 +1,9 @@
 ---
-title: Yükleme sorunlarını giderme | Microsoft Docs
+title: Yükleme sorunlarını giderme
 description: Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemesi veya yükseltmesi başarısız olursa, bu sayfayı yardımcı olabilir.
 ms.date: 11/21/2017
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,27 +14,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 346ee102b7c6db1494b831cd03a1e68632bbda38
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0009aa15919cf04c3ff8e56edf4f10adcb7e0ea
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 yükleme ve yükseltme sorunlarını giderme
 
 ## <a name="symptoms"></a>Belirtiler
+
 Veya Visual Studio 2017 güncelleştirmesini çalıştığınızda işlemi başarısız olur.
 
 ## <a name="workaround"></a>Geçici Çözüm
+
 Bu sorunu çözmek için şu adımları izleyin.
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>1. adım - bu sorunun bilinen bir sorun olup olmadığını denetleyin
+
 Düzeltmeye çalışan Microsoft Visual Studio yükleyicisi bilinen bazı sorunlar vardır. Geçici bir çözüm için sorunu olup olmadığını görmek için kontrol [bizim sürüm notları bilinen sorunlar bölümüne](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes#known-issues).
 
 ### <a name="step-2---check-with-the-developer-community"></a>2. adım - denetimi ile Geliştirici topluluğu
+
 Hata iletisiyle Search'te [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/8/index.html). Diğer topluluk üyeleri sorununuzu çözüme belgelenen.
 
 ### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>3. adım - yükseltme sorunlarını düzeltmek için Visual Studio yükleyicisi dizini silin
+
 Visual Studio yükleyicisi önyükleyici Visual Studio yükleyicisi kalan yükler en az bir hafif yürütülebilir ' dir. Visual Studio Installer dosyalarını silerek ve önyükleyici yeniden çalıştırma bazı güncelleştirme hataları düzeltebilir.
 
 >[!NOTE]
@@ -46,6 +51,7 @@ Aşağıdaki eylemleri gerçekleştirerek, Visual Studio Installer dosyalarını
 4. Yükleme veya Visual Studio güncelleştirmeyi yeniden deneyin. Yükleyici başarısız olmaya devam ederse sonraki adıma geçin.
 
 ### <a name="step-4---report-a-problem"></a>4. adım - bir sorunu bildirin
+
 Bozuk dosyaları, ilişkili olanlar gibi bazı durumlarda, bir olay temelinde aranması sorunlarla karşılaşabilirsiniz:
 
 1. Kurulum günlüklerini toplayın. Bkz: [Visual Studio yükleme günlüklerini alma](#how-to-get-the-visual-studio-installation-logs) Ayrıntılar için.
@@ -55,6 +61,7 @@ Bozuk dosyaları, ilişkili olanlar gibi bazı durumlarda, bir olay temelinde ar
 4. Tıklatın **sonraki** sorun raporu gözden geçirin ve ardından **gönderme**.
 
 ### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>Adım 5 - Çalıştır InstallCleanup.exe yükleme dosyalarını kaldırmak için
+
 Son çare olarak, şunları yapabilirsiniz [Visual Studio kaldırmak](remove-visual-studio.md) tüm yükleme dosyalarını ve ürün bilgileri kaldırmak için.
 
 1. ' Ndaki yönergeleri izleyin [kaldırmak Visual Studio](remove-visual-studio.md).
@@ -62,9 +69,11 @@ Son çare olarak, şunları yapabilirsiniz [Visual Studio kaldırmak](remove-vis
 3. Yükleme veya Visual Studio güncelleştirmeyi yeniden deneyin.
 
 ### <a name="step-6---contact-us-optional"></a>6. adım - (isteğe bağlı) bizimle iletişime geçin
+
 Diğer adımların hiçbiri başarılı bir şekilde yüklemeye izin verirseniz, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>Çevrimdışı bir yükleyici ile ilgili sorunları giderme
+
 Burada, yardımcı olabilecek bir yerel düzeni yüklerken bilinen sorunlar ve bazı geçici çözümler tablosu verilmiştir.
 
 | Sorun       | Öğe                   | Çözüm |
@@ -73,6 +82,7 @@ Burada, yardımcı olabilecek bir yerel düzeni yüklerken bilinen sorunlar ve b
 | Yeni iş yükleri, bileşenleri ve diller yüklenemedi.  | `--layout`  | Kısmi düzeninden yüklediğinizde ve iş yükleri, bileşenleri ya da yüklenemedi dilleri daha önce bu kısmi düzende seçin internet erişimi olduğundan emin olun. |
 
 ## <a name="how-to-get-the-visual-studio-installation-logs"></a>Visual Studio yükleme günlüklerini alma
+
 Kurulum günlükleri, çoğu yükleme sorunlarını gidermek için gereklidir. Ne zaman gönderdiğiniz bir sorun kullanarak [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) Visual Studio Yükleyicisi'nde, bu günlükler otomatik olarak raporunuza eklenir.
 
 Microsoft Support başvurursanız, bu kurulum günlüklerini kullanarak sağlamanız gerekebilir [Microsoft Visual Studio ve .NET Framework günlük toplama aracı](https://aka.ms/vscollect). Günlük koleksiyonu aracı Visual Studio .NET Framework, Windows SDK ve SQL Server dahil olmak üzere 2017, yüklü tüm bileşenleri Kurulum günlüklerini toplar. Ayrıca, bilgisayar bilgilerini, Windows Installer stok ve Visual Studio yükleyicisi, Windows Installer ve sistem geri yükleme için Windows olay günlüğü bilgileri de toplar.
@@ -92,12 +102,14 @@ Günlükleri toplamak için:
 Diğer adımların hiçbiri başarılı bir şekilde yüklemeye izin verirseniz, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
 
 Birkaç diğer seçenekler şunlardır:
+
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu gerektiren bir [GitHub](https://github.com/) hesabı.)
+* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar](tools-for-managing-visual-studio-instances.md)
 * [Visual Studio 2017 Kaldır](remove-visual-studio.md)

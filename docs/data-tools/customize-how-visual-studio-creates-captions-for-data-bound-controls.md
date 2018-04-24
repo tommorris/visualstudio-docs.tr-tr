@@ -1,6 +1,5 @@
 ---
-title: Visual Studio'nun verilere bağlı denetimler için resim yazıları nasıl oluşturduğunu özelleştirme | Microsoft Docs
-ms.custom: ''
+title: Visual Studio'nun verilere bağlı denetimler için resim yazıları nasıl oluşturduğunu özelleştirme
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,96 +14,97 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 031301edc2fbf0c9acc08f92d3324160dd5383cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 35bcc2ed38a8330e7eb4ab38416c91a5c51ec2d4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio'nun verilere bağlı denetimler için resim yazıları nasıl oluşturduğunu özelleştirme
-Öğelerden sürüklediğinizde [veri kaynakları penceresi](add-new-data-sources.md) bir tasarımcı bir ayrıcalık oyuna gelir: resim yazısı etiketleri içindeki sütun adlarının yeniden biçimlendirilen daha okunabilir bir dizeye iki veya daha fazla sözcükler olarak bulunan birlikte art arda eklenmiş. İçinde bu etiketler oluşturulur, ayarlayarak şekilde özelleştirebilirsiniz **SmartCaptionExpression**, **SmartCaptionReplacement**, ve **SmartCaptionSuffix** değerler **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data tasarımcıları** kayıt defteri anahtarı.  
-  
+Öğelerden sürüklediğinizde [veri kaynakları penceresi](add-new-data-sources.md) bir tasarımcı bir ayrıcalık oyuna gelir: resim yazısı etiketleri içindeki sütun adlarının yeniden biçimlendirilen daha okunabilir bir dizeye iki veya daha fazla sözcükler olarak bulunan birlikte art arda eklenmiş. İçinde bu etiketler oluşturulur, ayarlayarak şekilde özelleştirebilirsiniz **SmartCaptionExpression**, **SmartCaptionReplacement**, ve **SmartCaptionSuffix** değerler **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data tasarımcıları** kayıt defteri anahtarı.
+
 > [!NOTE]
-> Oluşturduğunuz kadar bu kayıt defteri anahtarı yok.  
-  
-Akıllı açıklamalı alt yazı değeri girdiğiniz normal ifade tarafından denetlenir **SmartCaptionExpression** değeri. Ekleme **veri tasarımcıları** kayıt defteri anahtarı başlık denetimleri varsayılan normal ifade geçersiz kılar. Normal ifadeler hakkında daha fazla bilgi için bkz: [Visual Studio'da normal ifadeler kullanarak](../ide/using-regular-expressions-in-visual-studio.md).  
-  
-Başlık denetleyen kayıt defteri değerleri aşağıdaki tabloda açıklanmaktadır.  
-  
-|Kayıt defteri öğesi|Açıklama|  
-|-------------------|-----------------|  
-|**SmartCaptionExpression**|Normal ifade alışkanlıklarınıza eşleştirmek için kullanılır.|  
-|**SmartCaptionReplacement**|İçinde eşleşen gruplarını görüntülemek için kullanılacak biçimi **SmartCaptionExpression**.|  
-|**SmartCaptionSuffix**|Resim yazısını sonuna eklenecek isteğe bağlı bir dize.|  
-  
-Aşağıdaki tabloda, bu kayıt defteri değerlerini iç varsayılan ayarlarını listeler.  
-  
-|Kayıt defteri öğesi|Varsayılan değer|Açıklama|  
-|-------------------|-------------------|-----------------|  
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Bir büyük harf karakter veya alt çizgiyle tarafından izlenen bir küçük harf karakterle eşleşir.|  
-|**SmartCaptionReplacement**|$1 $2|$1 ifade ilk parantez içinde eşleşen herhangi bir karakter ve $2 ikinci parantez içinde eşleşen herhangi bir karakteri temsil eder. İlk eşleşmeye, boşluk ve ardından ikinci eşleşme yerini alır.|  
-|**SmartCaptionSuffix**|:|Döndürülen dize eklenmiş bir karakteri temsil eder. Örneğin, resim yazısını ise `Company Name`, sonek kolaylaştırır `Company Name:`|  
-  
+> Oluşturduğunuz kadar bu kayıt defteri anahtarı yok.
+
+Akıllı açıklamalı alt yazı değeri girdiğiniz normal ifade tarafından denetlenir **SmartCaptionExpression** değeri. Ekleme **veri tasarımcıları** kayıt defteri anahtarı başlık denetimleri varsayılan normal ifade geçersiz kılar. Normal ifadeler hakkında daha fazla bilgi için bkz: [Visual Studio'da normal ifadeler kullanarak](../ide/using-regular-expressions-in-visual-studio.md).
+
+Başlık denetleyen kayıt defteri değerleri aşağıdaki tabloda açıklanmaktadır.
+
+|Kayıt defteri öğesi|Açıklama|
+|-------------------|-----------------|
+|**SmartCaptionExpression**|Normal ifade alışkanlıklarınıza eşleştirmek için kullanılır.|
+|**SmartCaptionReplacement**|İçinde eşleşen gruplarını görüntülemek için kullanılacak biçimi **SmartCaptionExpression**.|
+|**SmartCaptionSuffix**|Resim yazısını sonuna eklenecek isteğe bağlı bir dize.|
+
+Aşağıdaki tabloda, bu kayıt defteri değerlerini iç varsayılan ayarlarını listeler.
+
+|Kayıt defteri öğesi|Varsayılan değer|Açıklama|
+|-------------------|-------------------|-----------------|
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Bir büyük harf karakter veya alt çizgiyle tarafından izlenen bir küçük harf karakterle eşleşir.|
+|**SmartCaptionReplacement**|$1 $2|$1 ifade ilk parantez içinde eşleşen herhangi bir karakter ve $2 ikinci parantez içinde eşleşen herhangi bir karakteri temsil eder. İlk eşleşmeye, boşluk ve ardından ikinci eşleşme yerini alır.|
+|**SmartCaptionSuffix**|:|Döndürülen dize eklenmiş bir karakteri temsil eder. Örneğin, resim yazısını ise `Company Name`, sonek kolaylaştırır `Company Name:`|
+
 > [!CAUTION]
-> Kayıt Defteri Düzenleyicisi'nde hiçbir şey yaparken çok dikkatli olmanız gerekir. Düzenlemeye başlamadan önce kayıt defterini yedekleyin. Kayıt Defteri Düzenleyicisi'ni yanlış kullanırsanız, işletim sisteminizi yeniden yüklemenizi gerektirebilecek önemli sorunlara neden olabilir. Microsoft Kayıt Defteri Düzenleyicisi'ni kullanarak neden sorunları çözmek için garanti etmez. Kayıt Defteri Düzenleyicisi'ni kullanım riski size aittir.  
->   
->  Aşağıdaki Bilgi Bankası makalesi yedekleme, düzenleme ve kayıt defterini geri yüklemek için yönergeleri içerir: [Microsoft Windows kayıt defterinin açıklaması](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)  
-  
-### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Veri kaynakları penceresinden akıllı açıklamalı alt yazı davranışını değiştirmek için  
-  
-1.  Bir komut penceresi açın **Başlat** ve ardından **çalıştırmak**.  
-  
-2.  Tür `regedit` içinde **çalıştırmak** iletişim kutusu ve tıklatın **Tamam**.  
-  
-3.  Genişletme **HKEY_CURRENT_USER**, **yazılım*, **Microsoft**, **Visual Studio** düğümü.  
-  
-7.  Sağ **15.0** düğümü ve yeni bir **anahtar** adlı `Data Designers`.  
-  
+> Kayıt Defteri Düzenleyicisi'nde hiçbir şey yaparken çok dikkatli olmanız gerekir. Düzenlemeye başlamadan önce kayıt defterini yedekleyin. Kayıt Defteri Düzenleyicisi'ni yanlış kullanırsanız, işletim sisteminizi yeniden yüklemenizi gerektirebilecek önemli sorunlara neden olabilir. Microsoft Kayıt Defteri Düzenleyicisi'ni kullanarak neden sorunları çözmek için garanti etmez. Kayıt Defteri Düzenleyicisi'ni kullanım riski size aittir.
+>
+>  Aşağıdaki Bilgi Bankası makalesi yedekleme, düzenleme ve kayıt defterini geri yüklemek için yönergeleri içerir: [Microsoft Windows kayıt defterinin açıklaması](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+
+### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Veri kaynakları penceresinden akıllı açıklamalı alt yazı davranışını değiştirmek için
+
+1.  Bir komut penceresi açın **Başlat** ve ardından **çalıştırmak**.
+
+2.  Tür `regedit` içinde **çalıştırmak** iletişim kutusu ve tıklatın **Tamam**.
+
+3.  Genişletme **HKEY_CURRENT_USER**, **yazılım*, **Microsoft**, **Visual Studio** düğümü.
+
+7.  Sağ **15.0** düğümü ve yeni bir **anahtar** adlı `Data Designers`.
+
 8.  Sağ **veri tasarımcıları** düğümü ve üç yeni dize değerlerini oluşturun:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
-  
-11. Sağ **SmartCaptionExpression** değer ve seçin **Değiştir**.  
-  
-12. İstediğiniz normal ifade girin **veri kaynakları** penceresini kullanın.  
-  
-13. Sağ **SmartCaptionReplacement** değer ve seçin **Değiştir**.  
-  
-14. Değiştirme girin, normal ifade ile eşleşen desenleri görüntülemek istediğiniz şekilde biçimlendirilmiş dize.  
-  
-15. Sağ **SmartCaptionSuffix** değer ve seçin **Değiştir**.  
-  
-16. Resim yazısını sonunda görünmesini istediğiniz herhangi bir karakter girin.  
-  
-    Sonraki öğelerinden sürükleyin **veri kaynakları** penceresinin başlık etiketleri oluşturulur sağlanan yeni kayıt defteri değerleri kullanarak.  
-  
-### <a name="to-turn-off-the-smart-captioning-feature"></a>Akıllı açıklamalı alt yazı özelliği devre dışı bırakmak için  
-  
-1.  Bir komut penceresi açın **Başlat** ve ardından **çalıştırmak**.  
-  
-2.  Tür `regedit` içinde **çalıştırmak** iletişim kutusu ve tıklatın **Tamam**.  
-  
-3.  Genişletme **HKEY_CURRENT_USER**, **yazılım**, **Microsoft**, **Visual Studio** düğümü.  
-  
-7.  Sağ **15.0** düğümü ve yeni bir **anahtar** adlı `Data Designers`.  
-  
+
+11. Sağ **SmartCaptionExpression** değer ve seçin **Değiştir**.
+
+12. İstediğiniz normal ifade girin **veri kaynakları** penceresini kullanın.
+
+13. Sağ **SmartCaptionReplacement** değer ve seçin **Değiştir**.
+
+14. Değiştirme girin, normal ifade ile eşleşen desenleri görüntülemek istediğiniz şekilde biçimlendirilmiş dize.
+
+15. Sağ **SmartCaptionSuffix** değer ve seçin **Değiştir**.
+
+16. Resim yazısını sonunda görünmesini istediğiniz herhangi bir karakter girin.
+
+    Sonraki öğelerinden sürükleyin **veri kaynakları** penceresinin başlık etiketleri oluşturulur sağlanan yeni kayıt defteri değerleri kullanarak.
+
+### <a name="to-turn-off-the-smart-captioning-feature"></a>Akıllı açıklamalı alt yazı özelliği devre dışı bırakmak için
+
+1.  Bir komut penceresi açın **Başlat** ve ardından **çalıştırmak**.
+
+2.  Tür `regedit` içinde **çalıştırmak** iletişim kutusu ve tıklatın **Tamam**.
+
+3.  Genişletme **HKEY_CURRENT_USER**, **yazılım**, **Microsoft**, **Visual Studio** düğümü.
+
+7.  Sağ **15.0** düğümü ve yeni bir **anahtar** adlı `Data Designers`.
+
 8.  Sağ **veri tasarımcıları** düğümü ve üç yeni dize değerlerini oluşturun:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
-  
-11. Sağ **SmartCaptionExpression** öğesi ve seçin **Değiştir**.  
-  
-12. Girin `(.*)` değeri. Bu, tüm dizeyi eşleştir.  
-  
-13. Sağ **SmartCaptionReplacement** öğesi ve seçin **Değiştir**.  
-  
-14. Girin `$1` değeri. Bu dize tüm dize ve böylece değişmeden kalır eşleşen değeri ile değiştirir.  
-  
-    Sonraki öğelerinden sürükleyin **veri kaynakları** penceresinin başlık etiketleri değiştirilmemiş resim yazıları ile oluşturulur.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
-[Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)
+
+11. Sağ **SmartCaptionExpression** öğesi ve seçin **Değiştir**.
+
+12. Girin `(.*)` değeri. Bu, tüm dizeyi eşleştir.
+
+13. Sağ **SmartCaptionReplacement** öğesi ve seçin **Değiştir**.
+
+14. Girin `$1` değeri. Bu dize tüm dize ve böylece değişmeden kalır eşleşen değeri ile değiştirir.
+
+    Sonraki öğelerinden sürükleyin **veri kaynakları** penceresinin başlık etiketleri değiştirilmemiş resim yazıları ile oluşturulur.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)

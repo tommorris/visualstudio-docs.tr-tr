@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f68b878c4333255a518850245f7efa160abf50
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39bc1acd059c9a915f330c74140c89d5f4fa40ff
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild Satır İçi Görevleri
 MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluşturulan <xref:Microsoft.Build.Framework.ITask> arabirimi. Daha fazla bilgi için bkz: [görevleri](../msbuild/msbuild-tasks.md).  

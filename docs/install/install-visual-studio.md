@@ -3,8 +3,8 @@ title: Visual Studio 2017 yükleme | Microsoft Docs
 description: Visual Studio, adım adım yüklemeyi öğrenin.
 ms.custom: ''
 ms.date: 12/04/2017
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84aff338342d00c173176493b5509372e3a868c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c39496b09c72c6c5eb72fb1c5bedb59285d01347
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017 yükleyin
+
 Visual Studio'yu yüklemek için yeni bir yolunu Hoş Geldiniz! Bizim en son sürümünde, onu seçin ve yalnızca gereken özellikleri yüklemek için daha kolay yaptık. Böylece daha hızlı ve daha önce hiç olmadığı kadar sistemi daha az etkileyerek yükler biz de Visual Studio minimum ayak azaltılmış.
 
 Else bu sürümdeki yenilikler hakkında daha fazla öğrenmek ister misiniz? Bkz: bizim [sürüm notları](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
@@ -59,7 +60,7 @@ Ardından, Visual Studio önyükleyici dosyasını indirin. Bunu yapmak için a�
 
 Ardından, Visual Studio yükleyicisi yükleme önyükleyicisi dosyasını çalıştırın. Yeni Basit yükleyicinin hem yükleyin ve Visual Studio 2017 özelleştirmek için gereken her şeyi içerir.
 
-1.  Öğesinden, **indirmeleri** klasörü, eşleşen veya benzer bir aşağıdaki dosyaları önyükleyici çift tıklatın:
+1. Öğesinden, **indirmeleri** klasörü, eşleşen veya benzer bir aşağıdaki dosyaları önyükleyici çift tıklatın:
 
   * **vs_enterprise.exe** için Visual Studio Enterprise
   * **vs_professional.exe** Visual Studio Professional
@@ -67,7 +68,7 @@ Ardından, Visual Studio yükleyicisi yükleme önyükleyicisi dosyasını çal�
 
   Bir kullanıcı hesabı denetimi bildirimi alırsanız, tıklatın **Evet**.
 
-2.  Microsoft onaylamak için isteyeceğiz [Lisans Koşulları'nı](https://www.visualstudio.com/license-terms/) ve Microsoft [gizlilik bildirimi](https://go.microsoft.com/fwlink/?LinkID=824704). 
+2. Microsoft onaylamak için isteyeceğiz [Lisans Koşulları'nı](https://www.visualstudio.com/license-terms/) ve Microsoft [gizlilik bildirimi](https://go.microsoft.com/fwlink/?LinkID=824704). 
               **Devam**'a tıklayın.  
 
    ![Lisans koşullarını ve gizlilik bildirimini](media/vs2017-privacy-and-license-terms.PNG "Microsoft lisans koşullarını ve gizlilik bildirimi")
@@ -76,20 +77,20 @@ Ardından, Visual Studio yükleyicisi yükleme önyükleyicisi dosyasını çal�
 
 Yükleyici yüklendikten sonra bu özellik kümeleri seçerek yüklemenizi özelleştirmek için kullanabileceğiniz — veya iş yükleri — istediğiniz. İşte nasıl.
 
-1.  Bulmak istediğiniz iş yükünü **Visual Studio'yu yükleme** ekran.
+1. Bulmak istediğiniz iş yükünü **Visual Studio'yu yükleme** ekran.
 
  ![Visual Studio 2017 Kurulum iletişim kutusundan bir iş yükünü seçme](../install/media/install-visual-studio-enterprise.png)
 
      Örneğin, ".NET masaüstü geliştirme" iş yükünü seçin. Temel kod düzenleme açın ve bir projeye gerek kalmadan herhangi bir klasörden kodu düzenleme yeteneğini 20'den dil için destek içerir ve kaynak kodu denetimi tümleşik varsayılan çekirdek düzenleyicisiyle gelir.  
 
-2.  İstediğiniz workload(s) seçtikten sonra tıklayın **yükleme**.
+2. İstediğiniz workload(s) seçtikten sonra tıklayın **yükleme**.
 
     Ardından, durum ekranlar, Visual Studio yüklemenin ilerleme durumunu gösteren görünür.
 
-3.  Yeni iş yükleri ve bileşenleri yüklendikten sonra tıklatın **başlatma**.  
+3. Yeni iş yükleri ve bileşenleri yüklendikten sonra tıklatın **başlatma**.  
 
 > [!TIP]
->  Yükleme sonrasında herhangi bir zamanda iş yükleri veya başlangıçta nı yüklemediyseniz bileşenleri yükleyebilirsiniz. Visual Studio açmak varsa, Git **Araçları** > **alma araçları ve özelliklerinin...**  Visual Studio yükleyicisi açılır. Ya da açmak **Visual Studio yükleyicisi** Başlat menüsünden. Burada, iş yükleri veya yükleyin ve ardından istediğiniz bileşenleri seçebilirsiniz **Değiştir**.  
+> Yükleme sonrasında herhangi bir zamanda iş yükleri veya başlangıçta nı yüklemediyseniz bileşenleri yükleyebilirsiniz. Visual Studio açmak varsa, Git **Araçları** > **alma araçları ve özelliklerinin...**  Visual Studio yükleyicisi açılır. Ya da açmak **Visual Studio yükleyicisi** Başlat menüsünden. Burada, iş yükleri veya yükleyin ve ardından istediğiniz bileşenleri seçebilirsiniz **Değiştir**.  
 
 |         |         |
 |---------|---------|
@@ -119,26 +120,29 @@ Varsayılan olarak, yükleyici programı ilk kez çalıştırdığında, işleti
 
 Varsayılan dilini değiştirmek başka bir komut satırından yükleyici çalıştırarak yoludur. Örneğin, aşağıdaki komutu kullanarak İngilizce dilinde çalıştırmaya yükleyici zorlayabilirsiniz: `vs_installer.exe --locale en-US`. Sonraki sefer çalıştırıldığında yükleyici Bu ayar unutmayın. Yükleyici şu dili belirteçleri destekler: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-IT, ja-jp, ko-kr, pl-pl, pt-br, ru-ru ve tr-tr.
 
-
 ## <a name="step-7---start-developing"></a>7. adım - geliştirmeye başlayın
+
 1. Visual Studio yükleme tamamlandıktan sonra tıklayın **başlatma** düğmesine [Visual Studio ile geliştirmeye başlamak](../ide/get-started-developing-with-visual-studio.md).
 
 2. Tıklatın **dosya**ve ardından **yeni proje**.
 
 3. Proje türü seçin. <br><br>
-   Örneğin, [C++ uygulaması oluşturma](../ide/getting-started-with-cpp-in-visual-studio.md), tıklatın **yüklü**, genişletin **Visual C++**ve ardından oluşturmak istediğiniz C++ proje türü seçin. <br><br>
-   İçin [bir C# uygulaması derleme](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), tıklatın **yüklü**, genişletin **Visual C#**ve ardından oluşturmak istediğiniz C# proje türü seçin.
+   Örneğin, [C++ uygulaması oluşturma](../ide/getting-started-with-cpp-in-visual-studio.md), tıklatın **yüklü**, genişletin **Visual C++** ve ardından oluşturmak istediğiniz C++ proje türü seçin. <br><br>
+   İçin [bir C# uygulaması derleme](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), tıklatın **yüklü**, genişletin **Visual C#** ve ardından oluşturmak istediğiniz C# proje türü seçin.
 
 ## <a name="get-support"></a>Destek alma
+
 Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
+
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 * [Visual Studio 2017 güncelleştir](update-visual-studio.md)
 * [Visual Studio 2017 değiştirme](modify-visual-studio.md)
 * [Visual Studio 2017 kaldırma](uninstall-visual-studio.md)

@@ -2,8 +2,7 @@
 title: 'Nasıl yapılır: Profil oluşturucu komut satırını kullanarak izleme yerel hizmet ve ayrıntılı zamanlama verileri toplama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: dfe58b39-63f8-4a87-ab3a-2b5b14faa8d0
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 637bff952fad60c052d2f335ab2278fbbf81ae90
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9dcd4052078a3a7327b0a48fca8812a2d5393917
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: Profil Oluşturucu Komut Satırını Kullanarak Yerel bir Hizmeti İzleme ve Ayrıntılı Zamanlama Verileri Toplama
 Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yerel (C/C++) işaretlemesini profil oluşturma araçları komut satırı araçları hizmet ve ayrıntılı zamanlama verileri toplama.  

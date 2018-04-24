@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b5e2984e9da7d3df4187c1a32b481ed0a70c876d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd8616e1f16e12ab07bd30a2d88f728bc79212f6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Nasıl Yapılır: Uygulama Simgesi Belirtme (Visual Basic C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Nasıl yapılır: uygulama simgesi (Visual Basic, C#) belirtin
 
-`Icon` Özelliği bir proje için dosya Gezgini ve Windows görev çubuğunda gösterilecek simge dosyası (.ico) derlenmiş uygulama için belirtir.
+`Icon` Özelliği bir proje için simge dosyasını belirtir (*.ico*) derlenmiş uygulama gösterileceği **dosya Gezgini** ve Windows görev çubuğunda.
 
 `Icon` Özelliği, içinde erişilebilir **uygulama** bölmesinde **Proje Tasarımcısı**; projeye kaynaklar veya içerik dosyaları olarak eklenen simgeler listesini içerir.
 
@@ -37,11 +37,11 @@ ms.lasthandoff: 04/16/2018
 
 1. Zaman **Proje Tasarımcısı** görünen seçin **uygulama** sekmesi.
 
-1. **(Visual Basic)**  &mdash;İçinde **simgesi** listesinde, bir simge (.ico) dosyasını seçin.
+1. **(Visual Basic)**  &mdash;İçinde **simgesi** listesinde, bir simge seçin (*.ico*) dosyası.
 
     **C#**&mdash;yakınında **simgesi** listesinde, seçin  **\<Gözat... >** düğmesine tıklayın ve ardından istediğiniz simge dosyasının konumuna göz atın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Uygulama Sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
-[Uygulama Sayfası, Proje Tasarımcısı (C#)](../ide/reference/application-page-project-designer-csharp.md)
+[Uygulama sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
+[Uygulama sayfası, Proje Tasarımcısı (C#)](../ide/reference/application-page-project-designer-csharp.md)

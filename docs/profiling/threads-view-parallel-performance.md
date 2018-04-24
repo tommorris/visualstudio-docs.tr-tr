@@ -2,8 +2,7 @@
 title: İş Parçacıkları görünümü (paralel performans) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.threadblocking
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec01b8a8ae937d442496a076ca47260eab6a92db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ccb86d36429f8695222f69fbf6d78635a338bfe5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="threads-view-parallel-performance"></a>İş Parçacıkları Görünümü (Paralel Performans)
 **İş parçacıkları görünümü** en ayrıntılı ve zengin eşzamanlılık görselleştiricisi görünümde (seçin **Çözümle** > **eşzamanlılık görselleştiricisi** başlatmak için Eşzamanlılık görselleştiricisi). Bu görünümü kullanarak, iş parçacıkları yürütme veya eşitleme, g/ç veya başka bir nedenle nedeniyle engelleme olup olmadığını belirleyebilirsiniz.  

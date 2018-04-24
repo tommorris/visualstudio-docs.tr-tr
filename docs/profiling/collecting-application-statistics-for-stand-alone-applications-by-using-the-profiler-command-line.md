@@ -2,8 +2,7 @@
 title: Profil oluşturucu komut satırını kullanarak bağımsız uygulamalar için uygulama istatistikleri toplama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 941e5abb669d121426ad0197fb75924109918971
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1d102629c2a99c5ddf2e79809e58a76c96f1f79
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırını Kullanarak Bağımsız Uygulamalar için Uygulama İstatistikleri Toplama
 Bu bölümde, yordamlar ve komut satırından örnekleme yöntemini kullanarak bir istemci (tek başına) uygulaması için performans istatistikleri toplamak için seçenekleri açıklar.  

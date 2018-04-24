@@ -2,8 +2,7 @@
 title: 'Nasıl yapılır: ekleme ve çalışan işlemleri için performans araçları ayırma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.attach
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6cb7b108d67e5b525b6bda2519cfd37328f4373
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c53dcbec5d41b6aa93eef115bba966076fcfda2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Nasıl yapılır: ekleme ve ayırma işlemleri çalıştırmanın performans araçları
 Profil Oluşturucu ekleme veya örnekleme ve toplama performans verilerini daha kolay hale getirmek için bir çalışan işlemden ayırmak için kullanılabilir. Uygulama yükleme süresi hakkında veri toplamayı önlemek istiyorsanız veya sonraki bir işlem performansını izlemek için belirli bir durumu ulaştığında bir işlem profili için bu yöntemi kullanın.  

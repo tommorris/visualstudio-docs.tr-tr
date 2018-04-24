@@ -1,6 +1,5 @@
 ---
-title: 'Nasıl yapılır: derleme ve çalıştırma LinqToXmlDataBinding örnek | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: derleme ve LinqToXmlDataBinding örnek çalıştırma'
 ms.date: 11/04/2016
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -9,11 +8,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 348538e0e91db619aa1b4bb09c6ab5767f331e27
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: de5515d96d5aa0dff30082207e7f20fd7981fc89
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Nasıl yapılır: derleme ve LinqToXmlDataBinding örnek çalıştırma
 
@@ -79,6 +78,6 @@ LinqToXmlDataBinding programın görüntülemek ve katıştırılmış bir XML �
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[LINQ to XML Kullanarak WPF Verilerini Bağlama Örneği](../designers/wpf-data-binding-using-linq-to-xml-example.md)  
-[İzlenecek Yol: LinqToXmlDataBinding Örneği](../designers/walkthrough-linqtoxmldatabinding-example.md)  
-[Visual Studio IDE’ye Genel Bakış](../ide/visual-studio-ide.md)
+- [LINQ to XML Kullanarak WPF Verilerini Bağlama Örneği](../designers/wpf-data-binding-using-linq-to-xml-example.md)
+- [İzlenecek Yol: LinqToXmlDataBinding Örneği](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [Visual Studio IDE’ye Genel Bakış](../ide/visual-studio-ide.md)

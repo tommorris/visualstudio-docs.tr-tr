@@ -1,6 +1,5 @@
 ---
-title: Visual Studio için Blend'i kullanarak kullanıcı Arabirimi oluşturma | Microsoft Docs
-ms.custom: ''
+title: Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma
 ms.date: 07/17/2017
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -11,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd36d0cc4a3aba697e7c9b54e1a73c5404f7fcbb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8c7c5ab82c45ed183b8e6a6ae2031b50e2a086c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma
 
@@ -118,7 +117,7 @@ Bu panoyu görüntülemek ve bir nesne özelliklerini değiştirmek için kullan
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Denetimler ekleme ve bunların davranışlarını değiştirme](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)  
-[Nesnelere animasyon ekleme](../designers/animate-objects-in-xaml-designer.md)  
-[Şekiller ve yollar çizme](../designers/draw-shapes-and-paths.md)  
-[Visual Studio ve Visual Studio için Blend'de XAML tasarlama](../designers/designing-xaml-in-visual-studio.md)
+- [Denetimler ekleme ve bunların davranışlarını değiştirme](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)
+- [Nesnelere animasyon ekleme](../designers/animate-objects-in-xaml-designer.md)
+- [Şekiller ve yollar çizme](../designers/draw-shapes-and-paths.md)
+- [Visual Studio ve Visual Studio için Blend'de XAML tasarlama](../designers/designing-xaml-in-visual-studio.md)

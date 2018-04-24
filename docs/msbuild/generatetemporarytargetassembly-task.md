@@ -3,7 +3,7 @@ title: GenerateTemporaryTargetAssembly görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - GenerateTemporaryTargetAssembly task [WPF MSBuild], parameters
 - creating an assembly [WPF MSBuild], XAML page refers to a locally declared type
 ms.assetid: 92b6539c-6897-45e0-8989-0c234bbfe782
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: baa98721cb1fcf476f0033c8cbff9bd95075fe60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: efaeed873630113382630421258338e6624e14ee
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly Görevi
 <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> Görev oluşturursa bütünleştirilmiş en az bir [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] projesinde sayfasına başvuruda bu projede yerel olarak bildirilen bir türü. Oluşturulan derleme oluşturma işlemi tamamlandıktan sonra ya da oluşturma işlemi başarısız olursa kaldırılır.  

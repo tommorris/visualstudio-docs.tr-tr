@@ -8,16 +8,16 @@ helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8497c937006d53bf6cd6f8f5b1a773fdf44137
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dae51959313a7108c54466dff08b3641525818cd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="customize-your-build"></a>Yapınızın özelleştirme
 MSBuild 15. sürümden önceki sürümler çözümünüz projelerine yeni, özel bir özellik sağlamak istiyorsanız çözümdeki her proje dosyası el ile bu özellik için bir başvuru ekleyin içeriyor. Veya özelliğinde tanımlamak zorunda kalındı bir *.props* dosya ve açıkça alma *.props* başka şeylerin çözümdeki her projeye dosyasında.
@@ -76,7 +76,7 @@ Bu standart çözümü yapı olduğunu varsayalım:
     \Project2Tests
 ````
 
-Tüm projeleri için ortak olan özellikler için uygun olabilir *(1)*, ortak özelliklerini *src* projeleri *(2-src)*ve ortak özelliklerini  *Test* projeleri *(2-test)*.
+Tüm projeleri için ortak olan özellikler için uygun olabilir *(1)*, ortak özelliklerini *src* projeleri *(2-src)* ve ortak özelliklerini  *Test* projeleri *(2-test)*.
 
 MSBuild doğru "İç" dosyaları birleştirmek için (*2-src* ve *2 test*) "dış" dosyasıyla (*1*), bir kez MSBuild bir bulduğunudikkatealmanızgerekir*Directory.Build.props* dosyasını durdurur daha fazla tarama. Taramaya devam et ve dış dosyasına birleştirmek için bu iki iç dosyalarıyla koyun:
 

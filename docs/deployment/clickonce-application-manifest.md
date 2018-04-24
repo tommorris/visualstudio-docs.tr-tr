@@ -2,9 +2,8 @@
 title: ClickOnce Uygulama bildirimi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - application manifests [ClickOnce]
 - ClickOnce, application manifests
 ms.assetid: 29570cec-4e53-4660-a850-abc4fa150243
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7241995190c9384c1ed19cd4f9ae4cbf36f72f05
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52d5a288444b1e98df75e6748fa31176b27211b0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Uygulama Bildirimi
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimidir kullanılarak dağıtılan bir uygulamayı açıklayan bir XML dosyası [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  

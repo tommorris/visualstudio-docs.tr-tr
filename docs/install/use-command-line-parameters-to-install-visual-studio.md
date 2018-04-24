@@ -1,10 +1,10 @@
 ---
-title: Visual Studio'yu yüklemek için komut satırı parametreleri kullanın | Microsoft Docs
+title: Visual Studio'yu yüklemek için komut satırı parametreleri kullanma
+description: Komut satırı parametreleri denetlemek veya Visual Studio yüklemenizi özelleştirmek için nasıl kullanılacağını öğrenin.
 ms.custom: ''
 ms.date: 01/17/2018
-ms.reviewer: tims
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3b347d257e5eeb5b5672223fc06941f5513583b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 566e662c55589424f04e93d0dd182faed8a4b757
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017 yüklemek için komut satırı parametreleri kullanın
+
 Visual Studio 2017 bir komut isteminden yüklediğinizde, denetim veya yüklemeyi özelleştirmek için çeşitli komut satırı parametreleri kullanabilirsiniz. Komut satırından aşağıdaki eylemleri gerçekleştirebilirsiniz:
 
 - Yükleme önceden belirli seçenekler ile başlatır.
@@ -35,7 +36,8 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 * [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
 * [Visual Studio 2017 topluluk](https://aka.ms/vs/15/release/vs_community.exe)
 
-## <a name="list-of-command-line-parameters"></a>Komut satırı parametreleri listesi  
+## <a name="list-of-command-line-parameters"></a>Komut satırı parametreleri listesi
+
  Visual Studio komut satırı parametreleri büyük/küçük harfe duyarsızdır.
 
 > Sözdizimi: `vs_enterprise.exe [command] <options>...`
@@ -101,9 +103,11 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 | `--noWeb` | **15.3, isteğe bağlı olarak yeni**: Kurulum şimdi Internet'ten yükleme herhangi bir içerik indirir.  Yüklenmekte olan tüm içeriği çevrimdışı bir düzende kullanılabilir olması gerekir.  Düzen içeriği eksik kurulum başarısız olur.  Daha fazla bilgi için bkz: [bir ağ yüklemesinden dağıtma](create-a-network-installation-of-visual-studio.md). |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>İş yükü kimlikleri ve bileşen listesi
+
 İş yükü ve Visual Studio ürün tarafından sıralanan Bileşen kimlikleri listesi için bkz: [Visual Studio 2017 iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası.
 
 ## <a name="list-of-language-locales"></a>Dil yerel ayarları listesi
+
 | **Dil yerel ayar** | **Dil** |
 | ----------------------- | --------------- |
 | cs-CZ | Çekçe |
@@ -122,6 +126,7 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 | zh-TW | Geleneksel Çince- |
 
 ## <a name="error-codes"></a>Hata kodları
+
 İşlemin sonucunu bağlı olarak `%ERRORLEVEL%` ortam değişkeni aşağıdaki değerlerden birine ayarlanır:
 
 | **Değer** | **Sonuç** |
@@ -136,16 +141,18 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 Her bir işlemin birkaç günlük dosyalarında oluşturur `%TEMP%` yüklemenin ilerleme durumunu gösteren dizin. Klasör tarihe göre sıralayın ve ile başlayan dosyalarını aramaya `dd_bootstrapper`, `dd_client`, ve `dd_setup` önyükleyici için yükleyici uygulama ve Kurulum altyapısı, sırasıyla.
 
 ## <a name="get-support"></a>Destek alma
+
 Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
+
 * Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
 * Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izleyebilir [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/), soru sorun ve yanıtlarını bulun.
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye bizim [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio).  (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
- * [Visual Studio 2017 yükleme için komut satırı parametresi örnekleri](command-line-parameter-examples.md)
- * [Visual Studio 2017 çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
- * [Yanıt dosyası ile Visual Studio yüklemesini otomatikleştirme](automated-installation-with-response-file.md)
+* [Visual Studio 2017 yükleme için komut satırı parametresi örnekleri](command-line-parameter-examples.md)
+* [Visual Studio 2017 çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
+* [Yanıt dosyası ile Visual Studio yüklemesini otomatikleştirme](automated-installation-with-response-file.md)

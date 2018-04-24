@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6881d7569e1d8052c6bdd9db1b521b848ab54df7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Nasıl yapılır: Gözat tanımı (Alt + F12) kullanarak görüntüleme ve düzenleme kod
 
@@ -73,18 +73,18 @@ Bu klavye kısayollarını kullanabilirsiniz **Peek tanımı** penceresi:
 
 |İşlevi|Klavye kısayolu|
 |-------------------|:-----------------------:|
-|Tanım penceresini açma|Alt+F12|
-|Tanım penceresini kapatma|Esc|
-|Tanım penceresini bir normal belge sekmesine yükseltme|Shift+Alt+Home|
-|Tanım pencereleri arasında gezinme|Ctrl+Alt+- ve Ctrl+Alt+=|
-|Birden fazla sonuç arasında gezinme|F8ve Shift+F8|
-|Kod düzenleyicisi penceresi ile tanım penceresi arasında geçiş yapma|Shift+Esc|
+|Tanım penceresini açma|**Alt**+**F12**|
+|Tanım penceresini kapatma|**ESC**|
+|Tanım penceresini bir normal belge sekmesine yükseltme|**Shift**+**Alt**+**giriş**|
+|Tanım pencereleri arasında gezinme|**CTRL**+**Alt** + **-** ve **Ctrl**+**Alt**+**=**|
+|Birden fazla sonuç arasında gezinme|**F8** ve **Shift**+**F8**|
+|Kod düzenleyicisi penceresi ile tanım penceresi arasında geçiş yapma|**Shift**+**Esc**|
 
 > [!NOTE]
 > Kodda düzenlemek için aynı klavye kısayollarını kullanabilirsiniz bir **Peek tanımı** yazarken penceresini kullanma başka bir yerde Visual Studio'da.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kodda gezinme](../ide/navigating-code.md)  
+[Kod gidin](../ide/navigating-code.md)  
 [Tanıma ve Özet Tanıma Gitme](../ide/go-to-and-peek-definition.md)  
-[Üretkenlik İpuçları](../ide/productivity-tips-for-visual-studio.md)
+[Üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md)

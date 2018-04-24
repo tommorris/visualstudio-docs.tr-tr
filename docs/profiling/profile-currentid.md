@@ -2,8 +2,7 @@
 title: PROFILE_CURRENTID | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - PROFILE_CURRENTID
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e11076168dbcdbdd8cc617ab305f3f25550fcb1e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2e0f0275e7123db9febaeaf05f231053818665df
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
 PROFILE_CURRENTID NameProfile, StartProfile, StopProfile, SuspendProfile ve ResumeProfile işlevleri için bir çağrı iş parçacığı kimliği veya işlem kimliği için sahte belirteci döndürür. Geçerli iş parçacığının veya işlem yerine özellikle belirtilen bir çalışmaya işlevi neden kullanın.  

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: yapılandırmaları oluşturma ve düzenleme | Microsoft Docs'
+title: 'Nasıl yapılır: oluşturma ve düzenleme yapılandırmaları | Microsoft Docs'
 ms.custom: ''
 ms.date: 06/21/2017
 ms.technology:
@@ -21,42 +21,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c91995c2e81f111fbbaa114a4b0d863f1d8397f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97d30f421f7c893410e563b89fd7a33fe539f141
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-create-and-edit-configurations"></a>Nasıl Yapılır: Yapılandırmaları Oluşturma ve Düzenleme
+# <a name="how-to-create-and-edit-configurations"></a>Nasıl yapılır: oluşturma ve düzenleme yapılandırmaları
 Bir çözüm için birkaç derleme yapılandırmaları oluşturabilirsiniz. Örneğin, sınayıcılar bulmak ve sorunları gidermek için kullanabileceğiniz bir hata ayıklama derlemesi yapılandırabilirsiniz ve farklı müşterilere dağıtabilirsiniz derlemeleri farklı türde yapılandırabilirsiniz.  
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
 
-## <a name="creating-build-configurations"></a>Yapı yapılandırmaları oluşturma  
- Kullanabileceğiniz **Configuration Manager** derleme yapılandırmaları seçin veya mevcut değiştirmek için iletişim kutusu veya yenilerini oluşturabilirsiniz.  
+## <a name="create-build-configurations"></a>Yapı yapılandırmaları oluşturma  
 
-#### <a name="to-open-the-configuration-manager-dialog-box"></a>Yapılandırma Yöneticisi iletişim kutusunu açmak için  
+Kullanabileceğiniz **Configuration Manager** iletişim kutusunu işaretleyin veya var olan yapı yapılandırmaları değiştirmek için ya da yeni bir tane oluşturmak için.  
 
--   İçinde **Çözüm Gezgini**, çözüm için kısayol menüsünü açın ve ardından **Configuration Manager**.  
+Açmak için **Configuration Manager** iletişim kutusunda **Çözüm Gezgini**, çözüm için kısayol menüsünü açın ve ardından **Configuration Manager**.  
 
-    > [!NOTE]
-    >  Varsa **Configuration Manager** komutu görünmüyor kısayol menüsünde arama altında **yapı** menü çubuğundaki menüsü. Menü çubuğunda, ya da seçin var. görünmüyorsa **Araçları**, **seçenekleri**ve ardından sol bölmesinde **seçenekleri** iletişim kutusunda, genişletin **projeler ve Çözümleri**, **genel**, sağ bölmede seçip **Göster Gelişmiş derleme yapılandırmaları** onay kutusu.  
+> [!NOTE]
+> Varsa **Configuration Manager** komutu görünmüyor kısayol menüsünde arama altında **yapı** menü çubuğundaki menüsü. Menü çubuğunda, ya da seçin var. görünmüyorsa **Araçları** > **seçenekleri**ve ardından sol bölmesinde **seçenekleri** iletişim kutusunda, genişletin**Projeler ve çözümler** > **genel**, sağ bölmede seçip **Göster Gelişmiş derleme yapılandırmaları** onay kutusu.  
 
-     İçinde **Configuration Manager** kullanabileceğiniz iletişim kutusu, **etkin çözüm yapılandırması** bir çözüm genelinde yapı yapılandırması seçin, mevcut bir değiştirin veya yeni bir oluşturmak için aşağı açılan liste yapılandırma. Kullanabileceğiniz **etkin çözüm platformu** yapılandırma hedefleri mevcut bir değiştirme veya yeni bir platformu ekleme platform seçmek için aşağı açılan liste. **Proje bağlamları** bölmesi, çözümdeki projelerin listeler. Her proje için bir proje özgü yapılandırması ve platformu seçin, var olanları değiştirin veya yeni bir yapılandırma oluşturabilir veya yeni bir platformu ekleyin. Derleme veya çözümü dağıtmak için çözüm genelinde yapılandırması kullandığınızda her proje dahil olup olmadığını gösteren onay kutularını öğesini de seçebilirsiniz.  
+İçinde **Configuration Manager** kullanabileceğiniz iletişim kutusu, **etkin çözüm yapılandırması** bir çözüm genelinde yapı yapılandırması seçin, mevcut bir değiştirin veya yeni bir oluşturmak için aşağı açılan liste yapılandırma. Kullanabileceğiniz **etkin çözüm platformu** yapılandırma hedefleri mevcut bir değiştirme veya yeni bir platformu ekleme platform seçmek için aşağı açılan liste. **Proje bağlamları** bölmesi, çözümdeki projelerin listeler. Her proje için bir proje özgü yapılandırması ve platformu seçin, var olanları değiştirin veya yeni bir yapılandırma oluşturabilir veya yeni bir platformu ekleyin. Derleme veya çözümü dağıtmak için çözüm genelinde yapılandırması kullandığınızda her proje dahil olup olmadığını gösteren onay kutularını öğesini de seçebilirsiniz.  
 
  İstediğiniz yapılandırmaları ayarladıktan sonra bu yapılandırmalar için uygun olan proje özellikleri ayarlayabilirsiniz.  
 
-#### <a name="to-set-properties-based-on-configurations"></a>Yapılandırmalarını temel alan özelliklerini ayarlamak için  
+### <a name="to-set-properties-based-on-configurations"></a>Yapılandırmalarını temel alan özelliklerini ayarlamak için  
 
 -   İçinde **Çözüm Gezgini**, bir proje için kısayol menüsünü açın ve ardından **özellikleri**.  
 
      **Özellik sayfaları** penceresi açılır.  
 
-     Yapılandırmalarınızı için özellikleri ayarlayabilirsiniz. Örneğin, bir yayın yapılandırma için kod çözüm yerleşik olarak bulunur ve bu belirttiğinizde bir hata ayıklama yapılandırması için optimize edilmiştir belirtebilirsiniz `DEBUG` koşullu derleme simge bulunur. Özellik sayfası ayarları hakkında daha fazla bilgi için bkz: [yönetme proje ve çözüm özelliklerini](../ide/managing-project-and-solution-properties.md).  
+     Yapılandırmalarınızı için özellikleri ayarlayabilirsiniz. Örneğin, bir yayın yapılandırma için kod çözüm yerleşik olarak bulunur ve bu belirttiğinizde bir hata ayıklama yapılandırması için optimize edilmiştir belirtebilirsiniz `DEBUG` koşullu derleme simge bulunur. Özellik sayfası ayarları hakkında daha fazla bilgi için bkz: [proje ve çözüm özelliklerini yönetme](../ide/managing-project-and-solution-properties.md).  
 
-## <a name="creating-and-modifying-project-configurations"></a>Oluşturma ve proje yapılandırmaları değiştirme  
+## <a name="create-and-modify-project-configurations"></a>Oluşturma ve proje yapılandırmaları değiştirme  
 
-#### <a name="to-create-a-project-configuration"></a>Bir proje yapılandırma oluşturmak için  
+### <a name="to-create-a-project-configuration"></a>Bir proje yapılandırma oluşturmak için  
 
 1.  Açık **Configuration Manager** iletişim kutusu.  
 
@@ -72,7 +71,7 @@ Bir çözüm için birkaç derleme yapılandırmaları oluşturabilirsiniz. Örn
 
 6.  Aynı anda bir çözüm genelinde yapılandırması oluşturmak için seçin **oluştur yeni çözüm yapılandırması** onay kutusu.  
 
-#### <a name="to-rename-a-project-configuration"></a>Bir proje yapılandırma yeniden adlandırmak için  
+### <a name="to-rename-a-project-configuration"></a>Bir proje yapılandırma yeniden adlandırmak için  
 
 1.  Açık **Configuration Manager** iletişim kutusu.  
 
@@ -86,9 +85,9 @@ Bir çözüm için birkaç derleme yapılandırmaları oluşturabilirsiniz. Örn
 
 5.  Seçin **yeniden adlandırma**ve ardından yeni bir ad girin.  
 
-## <a name="creating-and-modifying-solution-wide-build-configurations"></a>Yapı yapılandırmaları oluşturma ve çözüm genelinde değiştirme  
+## <a name="create-and-modify-solution-wide-build-configurations"></a>Oluşturma ve çözüm genelinde yapı yapılandırmalarını değiştirme  
 
-#### <a name="to-create-a-solution-wide-build-configuration"></a>Bir çözüm genelinde yapı yapılandırması oluşturmak için  
+### <a name="to-create-a-solution-wide-build-configuration"></a>Bir çözüm genelinde yapı yapılandırması oluşturmak için  
 
 1.  Açık **Configuration Manager** iletişim kutusu.  
 
@@ -102,7 +101,7 @@ Bir çözüm için birkaç derleme yapılandırmaları oluşturabilirsiniz. Örn
 
 5.  Proje yapılandırmaları aynı anda oluşturmak isteyip istemediğinizi seçin **yeni proje yapılandırmaları oluşturma** onay kutusu.  
 
-#### <a name="to-rename-a-solution-wide-build-configuration"></a>Bir çözüm genelinde yapı yapılandırması yeniden adlandırmak için  
+### <a name="to-rename-a-solution-wide-build-configuration"></a>Bir çözüm genelinde yapı yapılandırması yeniden adlandırmak için  
 
 1.  Açık **Configuration Manager** iletişim kutusu.  
 
@@ -114,16 +113,16 @@ Bir çözüm için birkaç derleme yapılandırmaları oluşturabilirsiniz. Örn
 
 4.  Seçin **yeniden adlandırma**ve ardından yeni bir ad girin.  
 
-#### <a name="to-modify-a-solution-wide-build-configuration"></a>Bir çözüm genelinde derleme yapılandırmasını değiştirmek için  
+### <a name="to-modify-a-solution-wide-build-configuration"></a>Bir çözüm genelinde derleme yapılandırmasını değiştirmek için  
 
 1.  Açık **Configuration Manager** iletişim kutusu.  
 
 2.  İçinde **etkin çözüm yapılandırması** aşağı açılan listesinde, kullanmak istediğiniz yapılandırma seçin.  
 
-3.  İçinde **proje bağlamları** bölmesinde, select her proje için **yapılandırma** ve **Platform** ve seçin kullanılıp kullanılmayacağını **Yapı**onu görünüp görünmeyeceğini **dağıtma** ..  
+3.  İçinde **proje bağlamları** bölmesinde, select her proje için **yapılandırma** ve **Platform** ve seçin kullanılıp kullanılmayacağını **Yapı**onu görünüp görünmeyeceğini **dağıtma** onu.
 
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md)   
- [Projeler ve çözümler Visual Studio'da oluşturma ve temizleme](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [Proje ve Çözüm Özelliklerini Yönetme](managing-project-and-solution-properties.md)
+ [Derleme ve projeler ve çözümler Visual Studio'da Temizle](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
+ [Proje ve çözüm özelliklerini yönetme](managing-project-and-solution-properties.md)
 

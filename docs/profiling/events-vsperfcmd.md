@@ -2,8 +2,7 @@
 title: Olaylar (VSPerfCmd) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3f7201c65a6ac3b5c7b58c547898589ffdcba9d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4aa07333385951ba2ffd2f1bcf86aa5e8442982
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="events-vsperfcmd"></a>Olaylar (VSPerfCmd)
 VSPerfCmd.exe **olayları** seçeneği olay Windows için izleme (ETW) günlüğe kaydedilmesini denetler. ETW verilerini Profil Oluşturucu veri dosyasından ayrı bir .etl dosyasına kaydedilir. Verileri kullanarak bir rapor görüntülenebilir [VSPerfReport](../profiling/vsperfreport.md) /summary:etw komutu.  

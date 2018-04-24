@@ -2,8 +2,7 @@
 title: Komut satırından ClickOnce uygulamalarını derleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - publishing
 - publishing, ClickOnce
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 183cb81798841c6640ea1b17d8db3820e0229769
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4488f32b135d766f494bc94946fbf77d42eb1e95
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Komut Satırından ClickOnce Uygulamalarını Derleme
 İçinde [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], tümleşik geliştirme ortamı (IDE) oluşturulmamış olsa bile, komut satırından projeleri oluşturabilirsiniz. İle oluşturulmuş bir projeyi yeniden aslında, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yalnızca sahip başka bir bilgisayarda [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yüklü. Bu, otomatik bir işlem kullanarak bir yapı oluşturmanızı sağlar, örneğin, merkezi bir yapı içinde Laboratuvar Gelişmiş ya da kullanarak teknikleri projeyi oluşturmayı kapsamı dışında.  

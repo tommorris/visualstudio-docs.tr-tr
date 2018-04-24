@@ -3,7 +3,7 @@ title: MIDL görevi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
 - VC.Project.VCMidlTool.ApplicationConfigurationMode
@@ -23,16 +23,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), MIDL task
 - MIDL task (MSBuild (Visual C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69b46143ed997e4f23600ff3a5d389adc62fa62e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b46e4dc771ad5bb95185647a4769359427886f24
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="midl-task"></a>MIDL Görevi
 Microsoft arabirimi tanım dili (MIDL) derleyici aracı sarmalar midl.exe. Daha fazla bilgi için "MIDL komut satırı başvurusu" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  

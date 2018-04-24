@@ -1,12 +1,9 @@
 ---
 title: Python kodda hata ayıklama
 description: Visual Studio'da hata ayıklama özelliği özellikle kesme noktalarını ayarlama, Adımlama, değerleri inceleyerek, özel durumları görmek ve etkileşimli penceresinde hata ayıklama dahil olmak üzere Python kodu için bir kılavuz.
-ms.custom: ''
 ms.date: 03/05/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -14,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4434a854bf2b7da12ca1a05b9996593abd94660e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 576a8ffdd025667e811e96a712368de98bbe4cb4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="debugging-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 

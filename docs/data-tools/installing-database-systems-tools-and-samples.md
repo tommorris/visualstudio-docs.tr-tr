@@ -1,6 +1,5 @@
 ---
-title: Visual Studio veritabanı uyumluluk | Microsoft Docs
-ms.custom: ''
+title: Visual Studio veritabanı uyumluluk
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +13,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c8cffef6144c188fd5f53e504f6065c4e7d0c1d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1415ec8166ae98d6178c036fec043cc473aca7d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Visual Studio için uyumlu bir veritabanı sistemleri
 
@@ -56,5 +55,5 @@ Firebird bir açık kaynak SQL veritabanı sistemidir. Buradan indirebilirsiniz 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)  
-[Sürümüne ve SQL Server ve bileşenlerini belirleme](http://support.microsoft.com/kb/321185)
+- [Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)
+- [Sürümüne ve SQL Server ve bileşenlerini belirleme](http://support.microsoft.com/kb/321185)

@@ -2,8 +2,7 @@
 title: Araçları verilerini kaydetme ve performans dışarı aktarma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, saving and exporting reports
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da2f15eee4e5fab64e0847f8e6d964c03b954833
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2cd52c97d78c4b2b08244e7f4a8f626a536c8d04
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Araçları verilerini kaydetme ve performans dışarı aktarma
 Bu konu, kaydetme ve performans veri dosyaları dışarı aktarma açıklar.  

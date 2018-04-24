@@ -2,19 +2,18 @@
 title: 'Nasıl yapılır: Profil oluşturucu komut satırını kullanarak bellek verileri toplamak için bir .NET Framework bağımsız uygulamasına ekleme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3db82ba869923b98bbe0f99a3a0c1c604d0f101d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c81443332a05fbd60a295613c5f34c579482199
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Nasıl yapılır: Komut Satırını Kullanarak Bellek Verileri Toplamak için Profil Oluşturucuyu bir .NET Framework Bağımsız Uygulamasına Ekleme
 

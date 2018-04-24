@@ -1,5 +1,5 @@
 ---
-title: Surround kod parçacıkları ile kullanma | Microsoft Docs
+title: Çevrele kod parçacıklarını kullanma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0081d0d0e417f57a5fe9f0e2f52bb4f319e35e9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 044eb79eec4d0ee4ee4684c2e01ea73a94fef7ba
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Nasıl yapılır: Çevrele kod parçacıklarını kullanma
 
@@ -26,7 +26,7 @@ Aşağıdaki yordamlar Çevrele kod parçacıklarını kullanmayı açıklar. Ç
 
 1. Visual Studio IDE'de, düzenlemek istediğiniz dosyayı açın.
 
-1. Kod Düzenleyicisi'nde çevreleyen metne seçin.
+1. İçinde **Kod düzenleyicisinde**, çevreleyen metni seçin.
 
 1. Tür **Ctrl**+**K**, **Ctrl**+**S**.
 
@@ -36,7 +36,7 @@ Aşağıdaki yordamlar Çevrele kod parçacıklarını kullanmayı açıklar. Ç
 
 1. Visual Studio IDE'de, düzenlemek istediğiniz dosyayı açın.
 
-1. Kod Düzenleyicisi'nde çevreleyen metne seçin.
+1. İçinde **Kod düzenleyicisinde**, çevreleyen metni seçin.
 
 1. Gelen **Düzenle** menüsünde, select **IntelliSense** ve ardından **Surround With** komutu.
 
@@ -48,7 +48,7 @@ Aşağıdaki yordamlar Çevrele kod parçacıklarını kullanmayı açıklar. Ç
 
 1. Visual Studio IDE'de, düzenlemek istediğiniz dosyayı açın.
 
-1. Kod Düzenleyicisi'nde çevreleyen metne seçin.
+1. İçinde **Kod düzenleyicisinde**, çevreleyen metni seçin.
 
 1. Seçili metni sağ tıklayın ve ardından **Surround With** ve bağlam menüsünden komutu.
 
@@ -59,4 +59,4 @@ Aşağıdaki yordamlar Çevrele kod parçacıklarını kullanmayı açıklar. Ç
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C# kod parçacıkları](../ide/visual-csharp-code-snippets.md)  
-[Kod Parçacığı Seçici](../ide/reference/code-snippet-picker.md)
+[Kod parçacığı Seçici](../ide/reference/code-snippet-picker.md)

@@ -1,6 +1,5 @@
 ---
 title: Kod kusurları için yönetilen kod gözden geçirme analiz etme | Microsoft Docs
-ms.custom: ''
 ms.date: 01/29/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 98d1bbd347870bd704a0d17d7ae559da00e9adb5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>İzlenecek yol: Kod çözümleme yönetilen kod kusurlarını
 
@@ -30,7 +29,7 @@ Bu kılavuzda Microsoft .NET Framework tasarım yönergeleri ile uyumluluk için
 
 1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje...** .
 
-1. İçinde **yeni proje** iletişim kutusunda, genişletin **yüklü** > **Visual C#**ve ardından **Windows Klasik Masaüstü**.
+1. İçinde **yeni proje** iletişim kutusunda, genişletin **yüklü** > **Visual C#** ve ardından **Windows Klasik Masaüstü**.
 
 1. Seçin **sınıf kitaplığı (.NET Framework)** şablonu.
 
@@ -61,21 +60,21 @@ Bu kılavuzda Microsoft .NET Framework tasarım yönergeleri ile uyumluluk için
 ### <a name="to-analyze-a-managed-project-for-code-defects"></a>Kod kusurları için yönetilen bir proje çözümlemek için
 
 1. CodeAnalysisManagedDemo projesinde seçin **Çözüm Gezgini**.
-  
+
 1. Üzerinde **proje** menüsünde tıklatın **özellikleri**.
-  
+
      CodeAnalysisManagedDemo özellikleri sayfası görüntülenir.
-  
+
 1. Seçin **Kod Analizi** sekmesi.
-  
+
 1. Olduğundan emin olun **etkinleştirmek Kod Analizi derlemede** denetlenir.
-  
+
 1. Gelen **bu kural kümesini çalıştırmak** aşağı açılan listesinden, **Microsoft tüm kuralları**.
-  
+
 1. Üzerinde **dosya** menüsünde tıklatın **seçili öğeleri Kaydet**ve ardından özellikler sayfalarına kapatın.
-  
+
 1. Üzerinde **yapı** menüsünde tıklatın **yapı CodeAnalysisManagedDemo**.
-  
+
     CodeAnalysisManagedDemo proje oluşturma Uyarıları'nda gösterilen **hata listesi** ve **çıkış** windows.
 
 ## <a name="correct-the-code-analysis-issues"></a>Kod Analizi sorunlarını gidermek

@@ -1,6 +1,5 @@
 ---
-title: Veri bağlama ile bir Windows Forms kullanıcı denetimi oluşturma | Microsoft Docs
-ms.custom: ''
+title: Veri bağlama ile bir Windows Forms kullanıcı denetimi oluşturma
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7dac1b763e444349f741f72dae8c41fa8087a26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b7431ca6f0d4ac73a07a51893fd0c17c4fada57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Karmaşık veri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma
 
@@ -111,7 +110,7 @@ Bu adım ekler bir <xref:System.Windows.Forms.DataGridView> kullanıcı denetimi
 ## <a name="add-the-required-data-binding-attribute"></a>Gerekli veri bağlama öznitelik Ekle
 
 Karmaşık, destek veri bağlama denetimleri için uygulayabileceğiniz <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.
-  
+
 ### <a name="to-implement-the-complexbindingproperties-attribute"></a>ComplexBindingProperties özniteliği uygulamak için
 
 1. Anahtar **ComplexDataGridView** denetim kodu görüntülemek için. (Üzerinde **Görünüm** menüsünde, select **kod**.)
@@ -173,7 +172,7 @@ Verilere bağlı denetimler konumundan öğeleri sürükleyerek oluşturabilece�
 
 ### <a name="to-create-data-bound-controls-on-the-form"></a>Form üzerinde veri bağlama denetimleri oluşturmak için
 
-Ana sürükleyin **müşteriler** düğümden **veri kaynakları** forma penceresi. Doğrulayın **ComplexDataGridView** denetimi tablonun verileri görüntülemek için kullanılır.  
+Ana sürükleyin **müşteriler** düğümden **veri kaynakları** forma penceresi. Doğrulayın **ComplexDataGridView** denetimi tablonun verileri görüntülemek için kullanılır.
 
 ## <a name="running-the-application"></a>Uygulamayı çalıştırma
 
@@ -191,6 +190,6 @@ Uygulama gereksinimlerinize bağlı olarak, veri bağlamayı destekleyen bir den
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)  
-[Deneti veri kaynakları penceresinden sürüklendiğinde oluşturulacak şekilde ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)  
-[Windows Forms Denetimleri](/dotnet/framework/winforms/controls/index)
+- [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Deneti veri kaynakları penceresinden sürüklendiğinde oluşturulacak şekilde ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
+- [Windows Forms Denetimleri](/dotnet/framework/winforms/controls/index)

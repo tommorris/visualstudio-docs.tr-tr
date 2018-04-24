@@ -3,7 +3,7 @@ title: Yaygın MSBuild proje özellikleri | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2018
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60d2edb697895e91ce58cae2e8c264fbe6eba71e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd3483a47946d51890708186a38fc05ae2576ed1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild Proje Özellikleri
 Aşağıdaki tabloda sık Visual Studio Proje dosyasında tanımlanan özellikler kullanılan veya sağlayan MSBuild .targets dosyasında bulunur.  

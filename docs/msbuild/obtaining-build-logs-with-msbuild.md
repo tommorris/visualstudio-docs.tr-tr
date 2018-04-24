@@ -8,16 +8,16 @@ helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af54d4219a38c2fdf96f01d75ff8e8e2c8481a22
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6953017a034257900c467e7f2fac89897fa0d9e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>MSBuild ile Derleme Günlükleri Alma
 MSBuild ile anahtarlarını kullanarak gözden geçirme ve yapı verileri için bir veya daha fazla kaydetmek isteyip istemediğinizi istediğiniz yapı veri miktarını belirtebilirsiniz. Yapılandırma verilerini toplamak için özel bir Günlükçü de belirtebilirsiniz. Bu konuda kapsamıyordur MSBuild komut satırı anahtarları hakkında daha fazla bilgi için bkz: [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).  

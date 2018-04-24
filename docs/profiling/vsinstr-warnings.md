@@ -2,8 +2,7 @@
 title: Vsınstr uyarıları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - instrumentation, VSInstr tool
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90b5e679823baa437ff175f88c1cd1b50086e29c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 60ea2bcf1770e8c20db61c93a2b4ed6516b0daff
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="vsinstr-warnings"></a>VSInstr Uyarıları
 Aşağıdaki tabloda VSInstr.exe aracı tarafından verilen uyarılar listeler. Görünmesini gizlemek için uyarı numaralarını NOWARN seçeneğiyle kullanabilirsiniz.  

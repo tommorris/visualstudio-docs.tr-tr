@@ -1,19 +1,18 @@
 ---
-title: Etki alanı rollerinin özelliklerini | Microsoft Docs
-ms.custom: ''
+title: Etki Alanı Rollerinin Özellikleri
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 00ed4a86f2a00f9317f198d925fddbbc7f115481
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ead7128c998b8c4ed97acac0f6da0f08113e7bef
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="properties-of-domain-roles"></a>Etki Alanı Rollerinin Özellikleri
 Bir etki alanı rol ile ilişkili aşağıdaki tabloda özelliklerdir. Etki alanı rolleri hakkında daha fazla bilgi için bkz: [anlama modelleri, sınıflar ve ilişkiler](../modeling/understanding-models-classes-and-relationships.md). Bu özellikleri kullanma hakkında daha fazla bilgi için bkz: [özelleştirme ve bir etki alanına özgü dil genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -40,7 +39,8 @@ Bir etki alanı rol ile ilişkili aşağıdaki tabloda özelliklerdir. Etki alan
 |Özellik görünen adı|Oluşturulan rol özelliği için oluşturulan Tasarımcısı'nda görüntülenen ad.|Özellik adı özelliği ayarlanmış değeri.|
 
 > [!NOTE]
->  Varsayılan değer olan bir görünen ad, bir küçük harf karakter öncesinde ve başka bir büyük harf karakter tarafından izlenmeyen her büyük harf karakter önce boşluk ekleyerek ilişkili özelliğin değeri temel alır.
+> Varsayılan değer olan bir görünen ad, bir küçük harf karakter öncesinde ve başka bir büyük harf karakter tarafından izlenmeyen her büyük harf karakter önce boşluk ekleyerek ilişkili özelliğin değeri temel alır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Etki Alanı İlişkilerinin Özellikleri](../modeling/properties-of-domain-relationships.md)
+
+- [Etki Alanı İlişkilerinin Özellikleri](../modeling/properties-of-domain-relationships.md)

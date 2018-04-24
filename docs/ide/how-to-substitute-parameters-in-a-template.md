@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: be187dfca5f31e33d8f451177ba68b4288e29a53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0439ffd8e7994995dd3eaafed8e0b0fb2a57d282
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Nasıl yapılır: şablonda parametreleri ikame etme
 
@@ -34,7 +34,7 @@ Aşağıdaki bölümde "güvenli proje adı" bir ad alanı adıyla değiştirmek
     namespace $safeprojectname$
     ```
 
-1. Şablon .vstemplate dosyasını bulun `ProjectItem` bu dosyayı içeren öğe.
+1. İçinde *.vstemplate* için şablon dosyası, bulun `ProjectItem` bu dosyayı içeren öğe.
 
 1. Ayarlama `ReplaceParameters` özniteliğini `true` için `ProjectItem` öğe:
 
@@ -44,7 +44,7 @@ Aşağıdaki bölümde "güvenli proje adı" bir ad alanı adıyla değiştirmek
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Proje ve Öğe Şablonları Oluşturma](../ide/creating-project-and-item-templates.md)  
-[Şablon Parametreleri](../ide/template-parameters.md)  
+[Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)  
+[Şablon parametreleri](../ide/template-parameters.md)  
 [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)  
-[ProjectItem Öğesi (Visual Studio Öğe Şablonları)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+[ProjectItem öğesi (Visual Studio öğe şablonları)](../extensibility/projectitem-element-visual-studio-item-templates.md)

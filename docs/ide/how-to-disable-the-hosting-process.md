@@ -14,13 +14,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b5dc19a094e4e5aac8fe1777b3794f100e3f1cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47264ef7f1a6a2bd1a4ad3da59f53836f9ebb902
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-disable-the-hosting-process"></a>Nasıl Yapılır: Barındırma Sürecini Devre Dışı Bırakma
+# <a name="how-to-disable-the-hosting-process"></a>Nasıl yapılır: barındırma sürecini devre dışı bırakma
 Barındırma işlemi etkinleştirildiğinde, belirli API çağrıları etkilenebilir. Bu durumlarda, doğru sonuçlar döndürecek şekilde barındırma işlemini devre dışı bırakmak gereklidir.  
   
 ### <a name="to-disable-the-hosting-process"></a>Barındırma işlemini devre dışı bırakmak için  
@@ -46,4 +46,4 @@ Barındırma işlemi etkinleştirildiğinde, belirli API çağrıları etkileneb
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hata ayıklama ve barındırma işlemi](../debugger/debugging-and-the-hosting-process.md)   
-[Barındırma Süreci (vshost.exe)](../ide/hosting-process-vshost-exe.md)
+[Barındırma süreci (vshost.exe)](../ide/hosting-process-vshost-exe.md)

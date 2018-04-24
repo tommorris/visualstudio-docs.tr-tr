@@ -2,8 +2,7 @@
 title: İşlevler görünümü - .NET bellek izleme verileri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fbc9b3940a64c510ed362f80f0c3ee535d689794
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 71ea82ea9588315748a9c79eb9abd7b06eace680
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>İşlevler görünümü - .NET bellek izleme verileri
 İşlevler görünümü izleme metodunu kullanarak toplanan .NET bellek ayırma profil oluşturma verileri, profil oluşturma çalışması sırasında bellek tahsis işlevleri listeler. Bir işlev satır ayırma ve işlev için zamanlama verileri sayısı ve boyutu bildirir.  

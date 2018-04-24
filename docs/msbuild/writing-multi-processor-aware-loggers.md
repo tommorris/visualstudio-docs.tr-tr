@@ -9,16 +9,16 @@ helpviewer_keywords:
 - multi-proc loggers
 - loggers, multi-proc
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f879f0f0549219aef64f7adddecfba65190993b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2a01fb5d47f390c311f119e669e7fdb75619b058
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Birden Çok İşlemciye Duyarlı Günlükçüler Yazılıyor
 Özelliğini [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] birden çok işlemci yararlanmak için zaman derleme projesi düşmesine neden olur, ancak aynı zamanda olay günlüğü oluşturmak için karmaşıklık ekler. Bir tek işlemcili ortamda olayları, iletilerini, uyarıları ve hataları tahmin edilebilir ve sıralı bir şekilde Günlükçü ulaşır. Ancak, birden çok işlemcili ortamda farklı kaynaklardan gelen olayların aynı anda veya sıra dışı ulaşır. Bunun için sağlamak için [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] çok işlemciye duyarlı Günlükçü ve yeni bir günlük modeli sağlar ve özel "iletme günlükçüleri." oluşturmanıza olanak tanır  

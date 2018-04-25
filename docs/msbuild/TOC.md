@@ -194,4 +194,6 @@
 ##### [UidManager Görevi](uidmanager-task.md)
 ##### [UpdateManifestForBrowserApplication Görevi](updatemanifestforbrowserapplication-task.md)
 ### [Kaçış İçin Özel Karakterler](special-characters-to-escape.md)
+## [MSBuild’ı programlı olarak kullanma](msbuild-api.md)
+### [MSBuild 15’e güncelleştirme](updating-an-existing-application.md)
 ## [MSBuild Sözlüğü](msbuild-glossary.md)

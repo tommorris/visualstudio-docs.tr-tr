@@ -1,6 +1,6 @@
 ---
-title: Özellik tur - Visual Studio hata ayıklayıcısı | Microsoft Docs
-description: Visual Studio hata ayıklayıcısı gezin
+title: Hata ayıklayıcı ilk bakma
+description: Visual Studio hata ayıklayıcısı farklı özelliklerine hızlı göz atın.
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb84fbfa4b8916b963f3f3cc35e044593c5a47e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>Hızlı Başlangıç: Visual Studio hata ayıklayıcısı ilk bakış
+# <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ilk bakma
 
 Bu konu, Visual Studio hata ayıklayıcısı özelliklerini tanıtır. Visual Studio'da kendi uygulamanızı açarak izlemek isterseniz, bunu yapabilirsiniz veya bir örnek uygulamasını kullanarak yanı sıra izleyebilirsiniz [Başlangıç Kılavuzu](../debugger/getting-started-with-the-debugger.md).
 
@@ -157,7 +157,7 @@ Hata ayıklama, bir nesneyi sağ tıklatın ve seçin **Gözcü Ekle**.
 
 ![Gözcü penceresi](../debugger/media/dbg-tour-watch-window.png "Gözcü penceresi")
 
-Bu örnekte Ayarla izleme sahip `File` nesne ve hata ayıklayıcı taşırken değiştirme değeri görebilirsiniz. Diğer değişken windows aksine **izleme** windows her zaman, izlerken değişkenleri Göster (bunlar zaman kapsamının dışına gri).
+Bu örnekte Ayarla izleme sahip `f` nesne ve hata ayıklayıcı taşırken değiştirme değeri görebilirsiniz. Diğer değişken windows aksine **izleme** windows her zaman, izlerken değişkenleri Göster (bunlar zaman kapsamının dışına gri).
 
 Daha fazla bilgi için bkz: [izleme ve QuickWatch Windows kullanılarak izleme ayarlama](../debugger/watch-and-quickwatch-windows.md)
 
@@ -213,21 +213,9 @@ Gidin ve görüntülemek anlık görüntülerini kullanarak **adım geriye dön�
 
 Daha fazla bilgi için bkz: [görüntülemek IntelliTrace adım geri kullanarak anlık görüntüsünü](../debugger/how-to-use-intellitrace-step-back.md) sayfası.
 
-## <a name="more-features-to-look-at"></a>Bakmak için daha fazla özelliği
+## <a name="next-steps"></a>Sonraki adımlar
 
--   [Hata ayıklayıcı, ipuçları ve püf noktaları](../debugger/debugger-tips-and-tricks.md) hata ayıklayıcısı ile üretkenliğinizi öğrenin.
+Bu öğreticide, hata ayıklayıcı özelliklerinin hızlı bir bakış karşılaşmışsınız. Örnek bir uygulama kullanarak bu özellikleri daha derinlemesine göz isteyebilirsiniz
 
--   [Düzenle ve devam et](../debugger/edit-and-continue.md) dillerin bir alt kümesini (C#, C++, Visual Basic) için Düzenle ve devam et özelliği, kodu bir hata ayıklama oturumu ortasında düzenlemenize olanak sağlar.
-
--   [Birden çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md) birden çok iş parçacıklı uygulamalarda hata ayıklama açıklar. 
-
--   [Uzaktan hata ayıklama](../debugger/remote-debugging.md) diğer makineler veya aygıtlar üzerinde çalışan uygulamalar hata ayıklama açıklar. 
-  
--   [IntelliTrace](../debugger/intellitrace.md) Visual Studio Enterprise IntelliTrace özelliğinde açıklar. Bu kayıt ve izleme, kodun yürütme geçmişini kullanabilirsiniz.
-
--   [Ağ kullanımı](../profiling/network-usage.md) web hizmetleri ve diğer ağ kaynaklarına evrensel Windows uygulamaları (UWP) içinde hata ayıklamak için kullanabileceğiniz bir profil oluşturucu araç açıklanır. Yükü incelemek için Aracı'nı kullanın.
-
--   [Hata ayıklama arabirimi Erişim SDK'sı](../debugger/debug-interface-access/debug-interface-access-sdk.md) Microsoft hata ayıklama arabirimi erişim Yazılım Geliştirme Seti (DIA SDK) açıklar. DIA SDK'sı Microsoft postcompiler araçları tarafından oluşturulan program veritabanı (.pdb) dosyalarında depolanan bilgileri hata ayıklamak için erişim sağlar.  
-
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio’da hata ayıklama](../debugger/index.md)
+> [!div class="nextstepaction"]
+> [Visual Studio kullanarak hata ayıklamayı öğrenin](../debugger/getting-started-with-the-debugger.md)

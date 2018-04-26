@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Başlangıç süresini artırmak | Microsoft Docs
+title: Visual Studio başlama süresi geliştirmek
 ms.date: 11/15/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,15 @@ ms.author: gewarren
 manager: douge
 f1_keywords:
 - vs.performancecenter
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8098e52f0045c913495dce81d5005772eac836
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7ba4e3d3a32aa7921d23b8719ec63733b9e239e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio başlangıç zamanı en iyi duruma getirme
 
@@ -45,7 +46,7 @@ Visual Studio yavaş başlatma algılarsa, yavaşlama neden olan uzantı veya ar
 
 2. Devre dışı bırakın ve ardından istediğiniz uzantı seçin **devre dışı** düğmesi.
 
-Her zaman uzantısı sonraki oturumlar için Uzantı Yöneticisi'ni ya da Visual Studio performans Yönet iletişim kutusunu kullanarak yeniden etkinleştirebilirsiniz.
+Her zaman uzantısı sonraki oturumlar için kullanarak yeniden etkinleştirebilirsiniz **Uzantı Yöneticisi** veya **yönetmek Visual Studio performans** iletişim kutusu.
 
 ## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Başlangıç zamanını geliştirmek için araç penceresi ayarlarını değiştirmek için
 

@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f7da241dc6090339bd5d9d9e6f731041a27fe84
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: b1df5d53bacaaeb06a4475ab3c5da6b1ce181b8d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="model-your-app39s-architecture"></a>Uygulamanızı model&#39;s mimarisi
 Yazılım sistem veya uygulama kullanıcılarınızın karşıladığından emin olmak için gereken, Visual Studio'da modelleri genel yapısı, açıklaması ve yazılımı sistem veya uygulama davranışını bir parçası olarak oluşturabilirsiniz. Modelleri kullanarak tasarım boyunca kullanılan desenleri de tanımlayabilirsiniz. Bu modeller var olan mimarisi anlamak, değişiklikleri ele ve, ilkenizin amacını açıkça iletişim yardımcı olur.

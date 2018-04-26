@@ -1,27 +1,29 @@
 ---
-title: 'Nasıl yapılır: bir etkinlik kitaplığı oluşturma | Microsoft Docs'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: bir etkinlik kitaplığı oluşturma'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faa7c593d27474c0980e7c7df7bf932bd2d5431d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef62a5098581042a4995d6c522e0757c361e9d4f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-an-activity-library"></a>Nasıl yapılır: bir etkinlik kitaplığı oluşturma
-Özel etkinlikler belirli İş süreçlerinizi bir iş akışında model oluşturmak için kullanılır. Etkinlik kitaplığı şablonunda [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] görsel olarak Windows iş akışı Tasarımcısı'nı kullanarak bu tür özel etkinlikler oluşturmanıza olanak sağlaması için sağlanan.
+Özel etkinlikler belirli İş süreçlerinizi bir iş akışında model oluşturmak için kullanılır. Visual Studio 2010 etkinlik kitaplığı şablonunda görsel olarak Windows iş akışı Tasarımcısı'nı kullanarak bu tür özel etkinlikler oluşturmanıza olanak sağlaması için sağlanmıştır.
 
 ### <a name="to-create-a-workflow-activity-library"></a>Bir iş akışı etkinlik kitaplığı oluşturmak için
 
-1.  Başlat [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+1.  Visual Studio 2010'u başlatın.
 
-2.  Üzerinde **dosya** menüsündeki **yeni**ve ardından **proje...** .
+2.  Üzerinde **dosya** menüsündeki **yeni**ve ardından **proje**.
 
      **Yeni proje** iletişim kutusu açılır.
 
@@ -36,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 7.  İçinde **çözüm** kutusunda, çözümünüz için açıklayıcı bir ad yazın ve ardından **Tamam**.
 
     > [!NOTE]
-    > Varolan bir çözümü bir iş akışı konsol uygulama eklemek istiyorsanız, bu çözümde açmak [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından **Yeni proje...** açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklandığı gibi devam edin.
+    > Varolan bir çözümü bir iş akışı konsol uygulama eklemek istiyorsanız, bu çözüm Visual Studio 2010'da açın, çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından  **Yeni proje** açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklandığı gibi devam edin.
 
 8.  Proje şablonu XAML içinde bir etkinlik tanımı oluşturur. Windows iş akışı Tasarımcısı açar ve özel etkinliklerinizi tuvale görüntüler.
 

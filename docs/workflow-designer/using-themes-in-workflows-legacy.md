@@ -1,7 +1,9 @@
 ---
-title: (Eski) iş akışlarında Temalar kullanma | Microsoft Docs
+title: İş Akışı Tasarımcısı - (eski) iş akışlarında Temalar kullanma
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, themes
 - themes, in workflows
@@ -12,20 +14,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0297426568e9b15d668490becfd2ae0b2da86ab6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba81aaa54baa6e637290da92776d2d2680668a76
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-themes-in-workflows-legacy"></a>(Eski) iş akışlarında Temalar kullanma
-Bu konu, temalar kullanmayı açıklar [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] hedefler eski Windows iş akışı Tasarımcısı kullanırken [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Eski tasarımcı ile birlikte kullanarak, iş akışlarınızı görünümünü özelleştirebilirsiniz [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] tema. Bir tema arka plan ve ön plan renkleri, stiller, simgeler ve diğer görsel öğelere bir iş akışının tanımlar. Diğer iş akışları tarafından Temalar yeniden kullanmak üzere kaydedebilirsiniz.
+Bu konuda Temalar Windows Workflow Foundation (WF) eski Windows iş akışı Tasarımcısı hedefleyen kullanırken .NET Framework sürüm 3.5 veya WinFX nasıl kullanılacağını açıklar.
 
- Oluşturma ve Temalar kullanarak düzenleme [tema yapılandırma iletişim kutusu (eski)](../workflow-designer/theme-configuration-dialog-box-legacy.md). Bu iletişim kutusunu açmak için seçin **yeni Tema oluşturma** üzerinde **iş akışı** menüsü veya sağ iş akışı tasarım yüzeyi ve select **yeni Tema oluşturma**.
+Windows Workflow Foundation Temalar kullanarak eski Tasarımcısı ile iş akışlarınızı görünümünü özelleştirebilirsiniz. Bir tema arka plan ve ön plan renkleri, stiller, simgeler ve diğer görsel öğelere bir iş akışının tanımlar. Diğer iş akışları tarafından Temalar yeniden kullanmak üzere kaydedebilirsiniz.
 
- Varsayılan seçebilirsiniz ve özel temalar kullanarak kaydedilmiş [temalar, iş akışı Tasarımcısı'de, Seçenekler iletişim kutusu (eski)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md). Bu iletişim kutusunu açmak için **özel tema seçin** üzerinde **iş akışı** menü (veya iş akışı tasarım yüzeyine sağ tıklatın ve **özel tema seçin**) ve ardından seçin **iş akışı Tasarımcısı** seçeneği. İstediğiniz temaya **Tamam**.
+Oluşturma ve Temalar kullanarak düzenleme [tema yapılandırma iletişim kutusu (eski)](../workflow-designer/theme-configuration-dialog-box-legacy.md). Bu iletişim kutusunu açmak için seçin **yeni Tema oluşturma** üzerinde **iş akışı** menüsü veya sağ iş akışı tasarım yüzeyi ve select **yeni Tema oluşturma**.
+
+Varsayılan seçebilirsiniz ve özel temalar kullanarak kaydedilmiş [temalar, iş akışı Tasarımcısı'de, Seçenekler iletişim kutusu (eski)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md). Bu iletişim kutusunu açmak için **özel tema seçin** üzerinde **iş akışı** menü (veya iş akışı tasarım yüzeyine sağ tıklatın ve **özel tema seçin**) ve ardından seçin **iş akışı Tasarımcısı** seçeneği. İstediğiniz temaya **Tamam**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

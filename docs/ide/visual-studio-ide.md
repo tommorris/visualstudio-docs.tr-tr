@@ -1,7 +1,7 @@
 ---
-title: Visual Studio 2017 genel bakış | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 2017 genel bakış
 ms.date: 02/05/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6525b9d0bd0d5b394f09f0acd01b40a73bfc3bf2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 786077e4d02a430e78fe91aa1c405307325331eb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE genel bakış
 
@@ -83,7 +83,7 @@ Visual Studio zamankinden daha basit sunulmuştur. Modüler yükleyici seçin ve
 
 Sisteminizde Visual Studio'yu ayarlama hakkında daha fazla bilgi edinmek için [yükleme Visual Studio 2017](../install/install-visual-studio.md). İçin adımları izlemeniz [bir program oluşturmak](#create-a-program), seçtiğinizden emin olun **.NET Core platformlar arası geliştirme** yükleme sırasında iş yükü.
 
-![Visual Studio yükleyicisi](../ide/media/overview-net-core-workload.png)
+![Visual Studio Yükleyicisi](../ide/media/overview-net-core-workload.png)
 
 ## <a name="sign-in"></a>Oturum Aç
 
@@ -97,7 +97,7 @@ Bir konu hakkında bilgi edinmek için bir iyi kullanılacağını yoludur! Şim
 
   ![Dosya > Yeni Proje menü çubuğunda](../ide/media/VSIDE_Tour_NewProject1.png)
 
-1. **Yeni proje** iletişim kutusu birkaç proje şablonları gösterir. Seçin **.NET Core** kategorisi altında **Visual C#**ve ardından **konsol uygulaması (.NET Core)** şablonu. İçinde **adı** metin kutusuna, "HelloWorld" yazın. Seçin **Tamam** düğmesi.
+1. **Yeni proje** iletişim kutusu birkaç proje şablonları gösterir. Seçin **.NET Core** kategorisi altında **Visual C#** ve ardından **konsol uygulaması (.NET Core)** şablonu. İçinde **adı** metin kutusuna, "HelloWorld" yazın. Seçin **Tamam** düğmesi.
 
   ![.NET core uygulama şablonu](../ide/media/overview-new-project-dialog.png)
 

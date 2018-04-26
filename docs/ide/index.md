@@ -1,19 +1,20 @@
 ---
-title: Visual Studio belgeleri | Microsoft Docs
-description: "Visual Studio, çeşitli programlama dillerini kullanarak uygulama geliştirmeleri nasıl yardımcı olduğunu öğrenin."
+title: Visual Studio belgeleri
+description: Visual Studio, çeşitli programlama dillerini kullanarak uygulama geliştirmeleri nasıl yardımcı olduğunu öğrenin.
+ms.date: 01/01/2018
 layout: LandingPage
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d5005e4aa6a41b2062f2dab62d577edb5f91674
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: ed2caa7d2e70aa10ab9f8f4f37b08c1f59d6d325
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio belgeleri
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yük testi senaryosunda için test karışımını | Microsoft Docs
+title: Visual Studio Yük testi senaryosunda test karışımı
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c7f0cb4c25c99c7ab68400d63e1ec52253a5f61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Hangi Web başarımı, birim ve kodlanmış UI testleri bir yük testi senaryosunda içerecek şekilde belirlemek için Test Karışımını düzenleme
 
@@ -77,12 +78,14 @@ Yük Testi Düzenleyicisini kullanarak karışımına senaryo için daha fazla W
  **Dağıt** düğmesi yüzdeyi tüm öğeler arasında eşit ayırmak için kullanılır. Örneğin, üç öğe varsa, seçme **Dağıt** 34, 33 ve 33 yüzde değerlerini ayarlar.
 
 > [!WARNING]
->  **Dağıt** düğmesi kilitli olan tüm öğeleri geçersiz kılar.
+> **Dağıt** düğmesi kilitli olan tüm öğeleri geçersiz kılar.
+
 
  Yüzde değerleri doğrudan yazmanız da mümkündür **%** Kaydırıcıları kullanmak yerine sütun. Bir yüzde değeri doğrudan girerseniz, diğer öğeler otomatik olarak ayarlar değil.
 
 > [!NOTE]
->  Kaydırıcıları toplamı % 100 eklemez veya yüzde değerleri girilen devre dışı bırakılır **%** sütunu olan ondalık basamaktır.
+> Kaydırıcıları toplamı % 100 eklemez veya yüzde değerleri girilen devre dışı bırakılır **%** sütunu olan ondalık basamaktır.
+
 
  Yüzde değerlerini el ile girdiğinizde, tüm öğelerin toplamının %100 olduğundan emin olmanız gerekir. Bir karışımı kaydettiğinizde, toplam %100 değilse, yüzde değerlerini oldukları gibi kabul etmeniz veya geri gidip onları ayarlamanız istenir. Oldukları gibi bunları kabul etmeyi seçerseniz, bunlar % 100'e eşit olarak bölünecek.  Örneğin, iki öğe varsa ve el ile bunları % 80 ve % 40 olarak ayarlamanız, ilk öğe (120 bölünmüş 80) % 66.67 ayarlamak ve ikinci öğe %33.33 (120 bölünmüş 40) ayarlayın.
 

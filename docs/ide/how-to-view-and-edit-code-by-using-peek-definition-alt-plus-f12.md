@@ -1,7 +1,7 @@
 ---
-title: Visual Studio'da Özet tanımı kullanarak | Microsoft Docs
-ms.custom: ''
+title: Visual Studio'da Özet tanımı kullanma
 ms.date: 01/10/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Nasıl yapılır: Gözat tanımı (Alt + F12) kullanarak görüntüleme ve düzenleme kod
 
@@ -65,7 +65,7 @@ Kullanırsanız **Peek tanımı** birden fazla tanımı (örneğin, bir parçal�
 
 1. Tıklatın **Tamam** kapatmak için **seçenekleri** iletişim kutusu.
 
-   ![Fare tıklatma gözlem tanımı seçeneği ayarlama](../ide/media/editor_options_peek_view.png)  
+   ![Fare tıklatma gözlem tanımı seçeneği ayarlama](../ide/media/editor_options_peek_view.png)
 
 ### <a name="keyboard-shortcuts-for-peek-definition"></a>Peek tanımı için klavye kısayolları
 
@@ -85,6 +85,6 @@ Bu klavye kısayollarını kullanabilirsiniz **Peek tanımı** penceresi:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod gidin](../ide/navigating-code.md)  
-[Tanıma ve Özet Tanıma Gitme](../ide/go-to-and-peek-definition.md)  
-[Üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md)
+- [Kod gidin](../ide/navigating-code.md)
+- [Tanıma ve Özet Tanıma Gitme](../ide/go-to-and-peek-definition.md)
+- [Üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md)

@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b68345961e2209506b0c759d7197c1115083446
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: fc41a768b54ba3253b7dad6648b77aa8c03b0f49
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Nasıl yapılır: Etki Alanına Özgü Dil Tasarımcısını Genişletme
 Uzantıları DSL tanımları düzenlemek için kullandığınız Tasarımcı yapabilirsiniz. Menü komutları eklenmesi için işleyiciler sürükleyin ve hareketlerini ve belirli türlerdeki değerleri ilişkileri değiştirdiğinizde tetiklenen kuralları çift ekleme yapabileceğiniz uzantı türleri. Uzantılar bir Visual Studio Tümleştirme Uzantısı (VSIX olarak) paketlenir ve diğer kullanıcılara dağıtılacak.

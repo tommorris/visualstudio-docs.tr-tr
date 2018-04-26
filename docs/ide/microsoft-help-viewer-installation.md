@@ -1,7 +1,7 @@
 ---
-title: Visual Studio çevrimiçi Yardım yükleme | Microsoft Docs
-ms.custom: ''
+title: Visual Studio çevrimiçi Yardım yükleyin
 ms.date: 11/01/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b44a96bd0386fdcec7740b8cafdcd9f328b64892
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6eedfe24b1f7ff7243cb9856bd1ae1942b1dbc53
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Yardım Görüntüleyicisi'ni yükleme
 
@@ -24,7 +24,7 @@ Birkaç ürünleri, Microsoft Yardım Visual Studio ve SQL Server dahil olmak ü
 
 Yardım Görüntüleyicisi, Visual Studio'nun isteğe bağlı yükleme bileşendir. Visual Studio yükleyicisi yüklemek için aşağıdaki adımları izleyin:
 
-1. Açık **Visual Studio yükleyicisi** Başlat menüsünden veya Visual Studio açmak varsa, seçebilirsiniz **Araçları**, **alma araçları ve özelliklerinin...**  Visual Studio yükleyicisi açın.
+1. Açık **Visual Studio yükleyicisi** Başlat menüsünden veya Visual Studio açmak varsa, seçebilirsiniz **Araçları** > **alma araçları ve özelliklerinin** Visual açmak için Studio yükleyicisi.
 
 1. Seçin **bileşenleri tek tek** sekmesini ve ardından **Yardım Görüntüleyici** altında **kod Araçları** bölümü.
 
@@ -38,7 +38,7 @@ Aracılığıyla kolayca Microsoft Yardım Görüntüleyicisi'ni yüklemek için
 
    ![Hızlı Başlatma kutusu](media/help_viewer_quick_launch.png)
 
-1. Adlı yükleme sonucu seçin **Yardım Görüntüleyicisi'ni (Indiviual bileşeni)**.
+1. Adlı sonucu seçin **Yardım Görüntüleyicisi'ni (Indiviual bileşeni)**.
 
 1. Açılan iletişim kutusunda seçin **yükleme** düğmesi.
 
@@ -50,5 +50,5 @@ Aracılığıyla kolayca Microsoft Yardım Görüntüleyicisi'ni yüklemek için
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft Yardım Görüntüleyicisi](../ide/microsoft-help-viewer.md)  
-[Yardım Görüntüleyicisi'ni ve SQL Server için çevrimdışı içeriği](/sql/sql-server/sql-server-help-installation)
+- [Microsoft Yardım Görüntüleyicisi](../ide/microsoft-help-viewer.md)
+- [Yardım Görüntüleyicisi'ni ve SQL Server için çevrimdışı içeriği](/sql/sql-server/sql-server-help-installation)

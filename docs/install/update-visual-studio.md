@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2017 güncelleştir
 description: En son sürüm için adım adım Visual Studio güncelleştirme konusunda bilgi edinin.
-ms.date: 03/06/2018
+ms.date: 04/23/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a524fa630fbe9ea8e1cf4474cab2b7180fe582a8
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Visual Studio 2017 en son sürüme güncelleştir
 
@@ -53,6 +53,9 @@ Bir güncelleştirme olduğunda, Visual Studio'da karşılık gelen bir bildirim
 
      Güncelleştirme devam eder. Tamamlandığında, daha sonra Visual Studio yeniden başlatır.
 
+     > [!NOTE]
+     > Visual Studio'yu Yönetici modunda çalıştırın, Visual Studio Güncelleştirme tamamlandıktan sonra el ile yeniden başlatmalısınız.    
+
 ### <a name="use-the-ide"></a>IDE kullanın
 
 Bir güncelleştirme için denetleyin ve sonra Visual Studio menü çubuğundan güncelleştirmeyi yükleyin.
@@ -66,6 +69,9 @@ Bir güncelleştirme için denetleyin ve sonra Visual Studio menü çubuğundan 
 3. Zaman **güncelleştirme** iletişim kutusunu açar, seçin **Şimdi Güncelleştir**.
 
    Güncelleştirme, güncelleştirme başarıyla tamamlandıktan sonra yeniden başlatmaları önceki bölümde, ardından Visual Studio içinde açıklandığı gibi devam eder.
+
+   > [!NOTE]
+   > Visual Studio'yu Yönetici modunda çalıştırın, Visual Studio Güncelleştirme tamamlandıktan sonra el ile yeniden başlatmalısınız.  
 
 ### <a name="use-the-visual-studio-installer"></a>Visual Studio yükleyicisi kullanın
 

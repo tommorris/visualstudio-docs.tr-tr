@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 566558390e29f9198b2328463dfce26327f76565
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: cf990ea206a299c72ec55150bf2e4935b80fb473
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-element-tools"></a>Öğe Araçlarını Özelleştirme
 Bazı DSL tanımları, tek bir kavram öğeleri grubu olarak temsil eder. Örneğin, bir bileşenin sabit bir dizi bağlantı noktası olan bir model oluşturursanız, her zaman kendi üst bileşeni ile aynı zamanda oluşturulması için bağlantı noktalarını istiyorsunuz. Bu nedenle, öğelerin yerine tek bir grup oluşturur, böylece öğesi oluşturma aracı özelleştirmeniz gerekir. Bunu başarmak için öğe oluşturma Aracı nasıl başlatılır özelleştirebilirsiniz.

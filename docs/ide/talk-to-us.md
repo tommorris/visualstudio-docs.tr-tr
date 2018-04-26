@@ -1,7 +1,9 @@
 ---
-title: Bize konuşun | Microsoft Docs
+title: Bizimle iletişime geçin
 ms.custom: ''
 ms.date: 02/19/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -10,17 +12,15 @@ ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.technology:
-- vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f6e61a967d7d551013926dbd580c706192bf3a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4fa70cac665c5673416b62aed6aa6ae0a9ebd805
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="talk-to-us"></a>Bizimle İletişime Geçin
+# <a name="talk-to-us"></a>Bizimle iletişime geçin
 Ürünlerimizi ve belgeleri geliştirmek için fikirlerinizi ilginizi çalışıyoruz. Biz her zaman kişisel yanıt veremez, ancak biz görüşlerinizi doğru kişi ya da takım aldığından emin olmak.  
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Visual Studio ile ilgili bir sorun bildirmek istiyorum
@@ -52,5 +52,5 @@ Sorular ve yanıtlar diğer geliştiricilere paylaşmak istiyorsanız kullanabil
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Visual Studio belgelerini geliştirmeye yardımcı olmak istiyorum
 Lütfen kullanın **bu sayfayı yardımcı oldu?** sayfanın sonundaki geri bildirim düğmesini. Bu düğme bizim tüm belgeleri sayfalarında bulabilirsiniz. Alternatif olarak, size geri bildirim herhangi bir Visual Studio sayfasına ekleyebilirsiniz [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) kullanarak **belgelerine geribildirim vermek oturum** düğmesi, sayfanın sonundaki ayrıca.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
  [Visual Studio ile İlgili Sorun Bildirme](how-to-report-a-problem-with-visual-studio-2017.md)

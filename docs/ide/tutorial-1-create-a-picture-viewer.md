@@ -1,9 +1,9 @@
 ---
-title: 'Eğitmen 1: Resim Görüntüleyici oluşturma | Microsoft Docs'
+title: 'Eğitmen 1: Resim Görüntüleyici Oluşturma'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -11,47 +11,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0061ca517fd75fbfe76fbb4c47431e3438a7f614
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5be14bf68f88bc058adf3685cc30e3ab545a6354
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Eğitmen 1: Resim Görüntüleyici Oluşturma
 Bu öğreticide, bir dosyadan bir resim yükler ve bir pencerede görüntüleyen bir program oluşturun. Düğmelerin ve resim kutularının formunuzda, bunların özelliklerini ayarlamak ve sorunsuz formu yeniden boyutlandırmak için kapsayıcılar kullanma gibi denetimleri sürükleyin öğrenin. Ayrıca, kod yazmaya başlayın. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:  
-  
+
 -   Yeni bir proje oluşturun.  
-  
+
 -   Test (hata ayıklama) bir uygulama.  
-  
+
 -   Onay kutuları ve düğmeleri gibi temel denetimleri forma ekleyin.  
-  
+
 -   Düzenleri kullanarak bir form üzerinde denetimleri getirin.  
-  
+
 -   Ekleme **açık dosya** ve **renk** bir forma iletişim kutuları.  
-  
+
 -   IntelliSense ve kod parçacıkları kod yazın.  
-  
+
 -   Olay işleyici yöntemleri yazma.  
-  
+
  İşiniz bittiğinde, programınızı aşağıdaki resimde gibi görünecektir.  
-  
+
  ![Bu öğreticide oluşturduğunuz resim](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 Bu öğreticide oluşturduğunuz resmi  
-  
+
  Tamamlanmış bir örnek sürümünü indirmek için bkz: [tam resim görüntüleyici öğretici örnek](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
-  
+
  ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo")bu konuda video sürümü için bkz: [nasıl I: oluşturmak Resim Görüntüleyici'de Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) veya [nasıl I: oluşturmak resim görüntüleyici C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
-  
+
 > [!NOTE]
 >  Bazı menü komutları ve diğer kullanıcı arabirimi öğeleri küçük farklar olduklarından bu videolar Visual Studio'nun önceki bir sürümünü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde geçerli sürümünde Visual Studio çalışır. Visual C# ve Visual Basic hem de Bu öğretici kapsamında olduğunu, kullanmakta olduğunuz programlama diline özgü bilgileri böylece odaklanır.  
 >   
 >  Visual Basic kodu görmek için seçin **VB** sekmesinde kod blokları üstünde ve kod Visual C# için görmek için seçin **C#** sekmesi. Visual C++ öğrenmeye ilginizi çekiyorsa bkz [Başlarken](../ide/getting-started-with-cpp-in-visual-studio.md) ve [C++ dili Öğreticisi](http://www.cplusplus.com/doc/tutorial/).  
 >   
 >  Visual C# veya Visual Basic UWP uygulamaları yazmak için bkz: öğrenmek, [yapı UWP uygulamaları](https://developer.microsoft.com/windows/apps).
-  
+
 ## <a name="related-topics"></a>İlgili Konular  
-  
+
 |Başlık|Açıklama|  
 |-----------|-----------------|  
 |[1. Adım: Windows Forms Uygulaması Projesi Oluşturma](../ide/step-1-create-a-windows-forms-application-project.md)|Bir Windows Forms uygulaması projesi oluşturarak başlayın.|  

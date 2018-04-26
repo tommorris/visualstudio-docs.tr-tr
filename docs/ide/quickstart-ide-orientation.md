@@ -1,20 +1,19 @@
 ---
-title: Visual Studio IDE turu | Microsoft Docs
-ms.custom: ''
+title: Visual Studio IDE turu
 ms.date: 11/15/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9dfa3ba8f4e87b842d2ba8677f76aabd4931d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fd72de016e9f44987fae43e7b49820e21af0a288
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: Visual Studio IDE ilk bakış
 
@@ -24,11 +23,11 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://a
 
 ## <a name="start-page"></a>Başlangıç Sayfası
 
-Visual Studio'yu başlattıktan sonra göreceğiniz ilk büyük olasılıkla başlangıç sayfası şeydir. Başlangıç sayfası, proje dosyalarını daha hızlı gerekir ve komutları bulmanıza yardımcı olmak için "hub" olarak tasarlanmıştır. **Son** bölümünde projeleri ve klasörleri, çalıştığınız üzerinde yakın zamanda görüntülenir. Altında **yeni proje**, yeni proje iletişim kutusu çağrılırken veya altında bir bağlantıyı tıklatabilirsiniz **açmak**, varolan bir projeyi veya kod klasörünü açın. Sağ tarafta bir akış son geliştirici Haberler ' dir.
+Visual Studio'yu başlattıktan sonra göreceksiniz ilk şey büyük olasılıkla **başlangıç sayfası**. **Başlangıç sayfası** "hub" olarak komutları bulmanıza ve proje dosyalarını daha hızlı ihtiyacınız yardımcı olmak için tasarlanmıştır. **Son** bölümünde projeleri ve klasörleri, çalıştığınız üzerinde yakın zamanda görüntülenir. Altında **yeni proje**, ortaya çıkarmak için bir bağlantıya tıklayabilirsiniz **yeni proje** iletişim kutusu, ya da altında **açmak**, varolan bir projeyi veya kod klasörünü açın. Sağ tarafta bir akış son geliştirici Haberler ' dir.
 
 ![VS başlangıç sayfası](media/quickstart-IDE-start-page.png)
 
-Başlangıç sayfası ve yeniden görmek isterseniz kapatırsanız, ondan yeniden açabilirsiniz **dosya** menüsü.
+Kapatırsanız **başlangıç sayfası** ve yeniden görmek istiyorsanız, ondan yeniden **dosya** menüsü.
 
 ![Dosya menüsü](media/quickstart-IDE-file-menu-large.png)
 
@@ -38,41 +37,41 @@ IDE keşfetmeye devam etmek için yeni bir proje oluşturalım.
 
 1. İçinde **yeni proje** iletişim kutusunda, varsayılan proje adı kabul edin ve seçin **Tamam**.
 
-   Proje oluşturulur ve bir dosya adlı **Program.cs** veya **Program.vb** açılır **Düzenleyicisi** penceresi. Düzenleyici dosyaların içeriğini gösterir ve kodlama çalışmanızı Visual Studio'da çoğunu burada gerçekleştirirsiniz.
+   Proje oluşturulur ve bir dosya adlı *Program.cs* veya *Program.vb* açılır **Düzenleyicisi** penceresi. **Düzenleyicisi** dosyaların içeriğini gösterir ve kodlama çalışmanızı Visual Studio'da çoğunu burada gerçekleştirirsiniz.
 
 ## <a name="solution-explorer"></a>Çözüm Gezgini
 
-Çözüm Gezgini proje, çözüm veya kod klasörü içinde dosya ve klasörleri hiyerarşisini grafik gösterimi gösterir. Hiyerarşi göz atın ve Çözüm Gezgini'nde bir dosyaya gidin.
+**Çözüm Gezgini** proje, çözüm veya kod klasörü içinde dosya ve klasörleri hiyerarşisini grafik gösterimi gösterir. Hiyerarşi göz atın ve bir dosyaya gidin **Çözüm Gezgini**.
 
 ![Çözüm Gezgini](media/quickstart-IDE-solution-explorer.png)
 
 ## <a name="menus"></a>Menüler
 
-Menü çubuğu üstünde IDE komutları kategoriler halinde gruplandırır. Örneğin, **proje** menüsü içinde çalışırken projeyle ilgili komutları içerir. Üzerinde **Araçları** menüsünde seçerek IDE özelleştirebilirsiniz **seçenekleri**, veya özelliklerini seçerek yüklemenize ekleyin **alma araçları ve özelliklerinin...** .
+Menü çubuğu üstünde IDE komutları kategoriler halinde gruplandırır. Örneğin, **proje** menüsü içinde çalışırken projeyle ilgili komutları içerir. Üzerinde **Araçları** menüsünde seçerek IDE özelleştirebilirsiniz **seçenekleri**, veya özelliklerini seçerek yüklemenize ekleyin **alma araçları ve özelliklerinin**.
 
 ![Menü çubuğu](media/quickstart-IDE-menu-bar.png)
 
-Hata Listesi penceresini seçerek açalım **Görünüm** menüsünde ve ardından **hata listesi**.
+Açalım **hata listesi** seçerek penceresi **Görünüm** menüsünde ve ardından **hata listesi**.
 
 ## <a name="error-list"></a>Hata Listesi
 
-Hata listesi hataları, uyarı ve kodunuzu geçerli durumu ile ilgili iletileri gösterir. Dosyanızda veya herhangi bir projenizdeki hataları (örneğin, bir sözdizimi yazım hatası) varsa, burada listelenir.
+**Hata listesi** hataları, uyarı ve kodunuzu geçerli durumu ile ilgili iletileri gösterir. Dosyanızda veya herhangi bir projenizdeki hataları (örneğin, bir sözdizimi yazım hatası) varsa, burada listelenir.
 
 ![Hata Listesi](media/quickstart-IDE-error-list.png)
 
 ## <a name="output-window"></a>Çıktı penceresi
 
-Derleme ve kaynak denetimi iletileri çıktı çıkış penceresi şunu gösterir.
+**Çıkış** yapı ve kaynak denetimi iletileri çıkış penceresi şunu gösterir.
 
-Şimdi bazı çıktı günlüğünü görmek için projeyi oluşturun. Gelen **yapı** menüsünde seçin **yapı çözümü**. Çıktı penceresi otomatik olarak odağı alır ve başarılı yapı iletisini görüntüler.
+Şimdi bazı çıktı günlüğünü görmek için projeyi oluşturun. Gelen **yapı** menüsünde seçin **yapı çözümü**. **Çıkış** penceresi otomatik olarak odağı alır ve başarılı yapı iletisini görüntüler.
 
 ![Çıktı Penceresi](media/quickstart-IDE-output.png)
 
 ## <a name="quick-launch"></a>Hızlı Başlat
 
-Hızlı Başlatma kutusu kadar her şeyi IDE pretty için hızlı ve kolay bir yoludur. Yapmak istediğiniz ilgili bazı metinleri girin ve onu metne ait seçeneklerin bir listesini göstereceğiz. Örneğin, hakkında tam olarak yapı yaptığını ek günlük bilgileri görüntülemek için yapı çıkış ayrıntı düzeyini artırmak istiyoruz varsayalım:
+**Hızlı başlatma** kutusudur kadar her şeyi IDE pretty için hızlı ve kolay bir yol. Yapmak istediğiniz ilgili bazı metinleri girin ve onu metne ait seçeneklerin bir listesini göstereceğiz. Örneğin, hakkında tam olarak yapı yaptığını ek günlük bilgileri görüntülemek için yapı çıkış ayrıntı düzeyini artırmak istiyoruz varsayalım:
 
-1. Girin `verbosity` içine **hızlı başlatma** kutusuna ve ardından **projeler ve çözümler oluşturma ve çalıştırma ->** altında **seçenekleri** kategorisi.
+1. Girin `verbosity` içine **hızlı başlatma** kutusuna ve ardından **projeler ve çözümler oluşturma ve çalıştırma-->** altında **seçenekleri** kategorisi.
 
    ![Hızlı Başlatma kutusu](media/quickstart-IDE-quick-launch.png)
 
@@ -82,11 +81,11 @@ Hızlı Başlatma kutusu kadar her şeyi IDE pretty için hızlı ve kolay bir y
 
 1. Biz projeyi yeniden üzerinde sağ tıklayarak oluşturmak artık **ConsoleApp1** proje **Çözüm Gezgini**ve seçme **yeniden** ve bağlam menüsünden.
 
-   Bu zaman hangi dosyaları dahil olmak üzere where kopyalanan çıktı penceresi oluşturma işleminden daha ayrıntılı günlük kaydını gösterir.
+   Bu süre **çıkış** penceresi kopyalanan where hangi dosyaları dahil olmak üzere daha ayrıntılı günlük oluşturma işleminden gösterir.
 
 ## <a name="send-feedback-menu"></a>Geri bildirim menü Gönder
 
-Herhangi bir sorun, Visual Studio kullanıyorsanız ya da ürünü geliştirmemize ilgili öneriler varsa, kullanabileceğiniz karşılaşmamanız gerekir **geri bildirim gönder** hızlı başlatma kutusunun yanında IDE üstündeki menü.
+Herhangi bir sorun, Visual Studio kullanıyorsanız ya da ürünü geliştirmemize ilgili öneriler varsa, kullanabileceğiniz karşılaşmamanız gerekir **geri bildirim gönder** IDE üstündeki menü yanına **hızlı başlatma**kutusu.
 
 ![Geri bildirim menü Gönder](media/quickstart-IDE-send-feedback.png)
 
@@ -94,7 +93,7 @@ Herhangi bir sorun, Visual Studio kullanıyorsanız ya da ürünü geliştirmemi
 
 İnceledik kullanıcı arabirimiyle tanıyalım için Visual Studio IDE özelliklerinin birkaçı. Daha fazlasını keşfetmek için:
 
-- Windows hakkında daha fazla derinliği gibi girmeyeceğini VS belgelerine genel kullanıcı arabirimi öğeleri bölümünü Gözat [hata listesi](../ide/reference/error-list-window.md), [çıktı penceresi](../ide/reference/output-window.md), [Özellikler penceresini](../ide/reference/properties-window.md), ve [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md)
+- Gözat **genel kullanıcı arabirimi öğeleri** pencereleri hakkında daha fazla derinliği gibi girmeyeceğini VS belgelerine bölümünü [hata listesi](../ide/reference/error-list-window.md), [çıktı penceresi](../ide/reference/output-window.md), [ Özellikler penceresi](../ide/reference/properties-window.md), ve [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md)
 
 - Daha ayrıntılı IDE gezin ve hatta hata ayıklama, buna dabble [Visual Studio IDE genel bakış](../ide/visual-studio-ide.md)
 

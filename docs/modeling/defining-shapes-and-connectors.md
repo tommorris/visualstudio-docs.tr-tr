@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 98038aa6ab09333587abbefcd373bb4aba75f1b3
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: db80cada3f49c8ba6488af31f399373457017c18
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="defining-shapes-and-connectors"></a>Şekiller ve Bağlayıcıları Tanımlama
 Bir etki alanına özgü dil (DSL) şemada hakkındaki bilgileri görüntülemek için kullanılan şekiller birkaç temel tür vardır.

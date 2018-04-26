@@ -1,10 +1,9 @@
 ---
-title: İçeri ve dışarı aktarma ayarları komutu | Microsoft Docs
-ms.custom: ''
+title: Ayarları İçeri ve Dışarı Aktar Komutu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - Tools.ImportandExportSettings
 helpviewer_keywords:
@@ -16,31 +15,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad7da7f8d83cd45e7cc7801d430dbf70887747b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a95841d9b9b8e67f34883efcc1a55a2daba7e8b7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="import-and-export-settings-command"></a>Ayarları İçeri ve Dışarı Aktar Komutu
-Exports veya sıfırlar alır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ayarlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]  
-```  
-  
-## <a name="switches"></a>Anahtarlar  
- / Export:`filename`  
- İsteğe bağlı. Geçerli ayarları, belirtilen dosyaya aktarır.  
-  
- / import:`filename`  
- İsteğe bağlı. Belirtilen dosya ayarlarında alır.  
-  
- / Reset  
- İsteğe bağlı. Geçerli ayarları sıfırlar.  
-  
+Exports veya sıfırlar alır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ayarlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
+```
+
+## <a name="switches"></a>Anahtarlar
+ / Export:`filename`
+
+ İsteğe bağlı. Geçerli ayarları, belirtilen dosyaya aktarır.
+
+ / import:`filename`
+
+ İsteğe bağlı. Belirtilen dosya ayarlarında alır.
+
+ / Reset
+
+ İsteğe bağlı. Geçerli ayarları sıfırlar.
+
 ## <a name="remarks"></a>Açıklamalar
 
 Olmadan bu komutu çalıştırmak geçer açılır **içeri ve dışarı aktarma ayarları** Sihirbazı. Daha fazla bilgi için bkz: [ayarlarınızı eşitleme](../../ide/synchronized-settings-in-visual-studio.md).
@@ -55,5 +57,5 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md)  
-[Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md)
+- [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)

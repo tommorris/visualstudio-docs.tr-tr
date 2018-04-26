@@ -1,9 +1,8 @@
 ---
-title: JavaScript IntelliSense | Microsoft Docs
-ms.custom: ''
+title: JavaScript IntelliSense
 ms.date: 06/28/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript]
@@ -27,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4d95dcc53926f7ae8b0b295b7552185a4a934c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2aeabb8953d76b38dfa612e701eaeeb872cb64c3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -42,7 +41,7 @@ ms.lasthandoff: 04/16/2018
 
 Visual Studio genel IntelliSense işlevselliği hakkında daha fazla bilgi için bkz: [kullanarak IntelliSense](../ide/using-intellisense.md).
 
-## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Yeni JavaScript dil hizmeti nedir [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>' Deki JavaScript dil hizmetinin yenilikler nelerdir? [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 İtibariyle [!include[vs_dev15](../misc/includes/vs_dev15_md.md)], JavaScript IntelliSense, parametre ve üye listelerde çok daha fazla bilgi görüntüler.
 Bu yeni bilgiler kodunuzu daha iyi anlamak için arka planda statik çözümlemesini kullanır TypeScript dil hizmeti tarafından sağlanır.
@@ -53,7 +52,7 @@ Bu bilgileri oluşturmak için çeşitli kaynaklardan typeScript kullanır:
 - [TypeScript bildirimi dosyalarını temel IntelliSense](#TsDeclFiles)
 - [Tür tanımları otomatik alımını](#Auto)
 
-### <a name="TypeInference"></a>Tür çıkarımı dayalı IntelliSense
+### <a name="intellisense-based-on-type-inference"></a>Tür çıkarımı dayalı IntelliSense
 
 JavaScript'te, çoğu zaman hiçbir açık tür bilgisi mevcut değil. Genellikle çevresindeki kodu bağlamı verilen bir türü bulmak oldukça kolaydır.
 Bu işlem tür çıkarımı adı verilir.
@@ -70,7 +69,7 @@ nextItem; // now we know nextItem is a string
 
 Bir işlev için dönüş türü return deyimlerinde çıkarsanabileceği.
 
-İşlev parametreleri için şu anda hiçbir çıkarım olmakla birlikte, bu sorunu çözmek için yolla JSDoc veya TypeScript kullanarak `.d.ts` dosyaları (sonraki bölümlere bakın).
+İşlev parametreleri için şu anda hiçbir çıkarım olmakla birlikte, bu sorunu çözmek için yolla JSDoc veya TypeScript kullanarak *. d.ts* dosyaları (sonraki bölümlere bakın).
 
 Ayrıca, aşağıdakiler için özel çıkarım vardır:
 
@@ -89,7 +88,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
-### <a name="JsDoc"></a> JSDoc üzerinde temel IntelliSense
+### <a name="intellisense-based-on-jsdoc"></a>JSDoc üzerinde temel IntelliSense
 
 Burada tür çıkarımı sağlamaz istenen türü bilgileri (veya belgeleri desteklemek için), tür bilgilerini sağlanmalı açıkça JSDoc ek açıklamaları.  Örneğin, belirli bir tür kısmen bildirilen nesne vermek için kullanabileceğiniz `@type` etiketi aşağıda gösterildiği gibi:
 
@@ -113,29 +112,29 @@ function Foo(param1) {
 }
 ```
 
-Bkz: [bu belge](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) şu anda desteklenen JsDoc ek açıklamaları.
+Bkz: [JavaScript JSDoc desteği](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) şu anda desteklenen JsDoc ek açıklamaları.
 
-### <a name="TsDeclFiles"></a> TypeScript bildirimi dosyalarını temel IntelliSense
+### <a name="intellisense-based-on-typescript-declaration-files"></a>TypeScript bildirimi dosyalarını temel IntelliSense
 
-JavaScript ve TypeScript aynı dil hizmette şimdi tabanlı olduğundan, bunlar daha zengin bir biçimde etkileşemeyebilirsiniz. Bildirilen değerler için JavaScript IntelliSense gibi sağlanabilir bir `.d.ts` dosyası ([daha fazla bilgi](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), ve arabirimleri ve TypeScript içinde bildirilen sınıflar gibi türleri kullanılabilir JsDoc açıklamaları türü olarak. 
+JavaScript ve TypeScript aynı dil hizmette şimdi tabanlı olduğundan, bunlar daha zengin bir biçimde etkileşemeyebilirsiniz. Bildirilen değerler için JavaScript IntelliSense gibi sağlanabilir bir *. d.ts* dosyası (bkz [TypeScript belgelerine](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), ve arabirimleri ve TypeScript içinde bildirilen sınıflar gibi türleri JsDoc açıklamaları türü olarak kullanmak için kullanılabilir.
 
-Aşağıda, basit bir örnek (üzerinden bir arayüzü) gibi tür bilgilerini sağlamaktan TypeScript tanım dosyasının bir JavaScript dosyası (JsDoc etiketini kullanarak) aynı projede için gösteriyoruz.
+Aşağıda, bir TypeScript tanım dosyası (üzerinden bir arayüzü) gibi türü bilgileri sağlayan basit bir örneği aynı projede JavaScript dosyaya gösteriyoruz (kullanarak bir `JsDoc` etiketi).
 
 <img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
 
-### <a name="Auto"></a> Tür tanımları otomatik alımını
+### <a name="automatic-acquisition-of-type-definitions"></a>Tür tanımları otomatik alımını
 
-TypeScript dünyanın en popüler JavaScript kitaplıklarını tarafından açıklanan kendi API sahip `.d.ts` dosyaları ve bu tür tanımları için en yaygın depo açıktır [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
+TypeScript dünyanın en popüler JavaScript kitaplıklarını tarafından açıklanan kendi API sahip *. d.ts* dosyaları ve bu tür tanımları için en yaygın depo açıktır [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 
-Varsayılan olarak, hangi JavaScript kitaplıklarını kullanın ve otomatik olarak karşıdan yüklenir ve buna karşılık gelen başvuru saptamak amacıyla Salsa dil hizmeti deneyecek `.d.ts` daha zengin IntelliSense sağlamak amacıyla kitaplığını açıklar dosya. Kullanıcı klasörünün altındaki bir önbelleğine indirilen dosyaları `%LOCALAPPDATA%\Microsoft\TypeScript`.
+Varsayılan olarak, hangi JavaScript kitaplıklarını kullanın ve otomatik olarak karşıdan yüklenir ve buna karşılık gelen başvuru saptamak amacıyla Salsa dil hizmeti deneyecek *. d.ts* daha zengin sağlamak amacıyla kitaplığını açıklar dosyası IntelliSense. Kullanıcı klasörünün altındaki bir önbelleğine indirilen dosyaları *%LOCALAPPDATA%\Microsoft\TypeScript*.
 
 > [!NOTE]
-> Bu özellik **devre dışı** kullanıyorsanız, varsayılan olarak bir `tsconfig.json` yapılandırma dosyası, ancak Anahatlı olarak daha çok etkin aşağıda ayarlanabilir.
+> Bu özellik **devre dışı** kullanıyorsanız, varsayılan olarak bir *tsconfig.json* yapılandırma dosyası, ancak Anahatlı olarak daha çok etkin aşağıda ayarlanabilir.
 
-Şu anda npm indirilen bağımlılıklar için otomatik algılama çalışır (okuyarak `package.json` dosyası), Bower (okuyarak `bower.json` dosyası) ve projenizdeki kabaca üst 400 en popüler JavaScript kitaplıkları listesini eşleşen gevşek dosyalar için. Örneğin, `jquery-1.10.min.js` dosyayı projenize `jquery.d.ts` getirildi ve daha iyi düzenleme deneyimi sağlamak için yüklenir. Bu `.d.ts` dosya projeniz üzerinde olumsuz bir etkisi olacaktır.
+Şu anda npm indirilen bağımlılıklar için otomatik algılama çalışır (okuyarak *package.json* dosyası), Bower (okuyarak *bower.json* dosyası) ve bir listesiyle eşleşen gevşek dosyalarında projeniz için kabaca üst 400 en popüler JavaScript kitaplıklarını. Örneğin, *jquery 1.10.min.js* dosyayı projenize *jquery.d.ts* getirildi ve daha iyi düzenleme deneyimi sağlamak için yüklenir. Bu *. d.ts* dosya projeniz üzerinde olumsuz bir etkisi olacaktır.
 
 Otomatik edinme kullanmak istemiyorsanız, aşağıda özetlendiği gibi bir yapılandırma dosyası ekleyerek devre dışı bırakın. Hala tanım dosyalarını kullanmak için doğrudan projenize içinde el ile yerleştirebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IntelliSense Kullanma](../ide/using-intellisense.md)
+- [IntelliSense Kullanma](../ide/using-intellisense.md)

@@ -1,7 +1,9 @@
 ---
-title: Bir ASP.NET Core web uygulaması C# ' ta oluşturmak için Visual Studio'yu kullanın | Microsoft Docs
-ms.custom: ''
+title: Bir ASP.NET Core web uygulaması C# ' ta oluşturmak için Visual Studio
+description: C# ile adım adım Visual Studio'da ASP.NET Core web uygulaması oluşturmayı öğrenin.
+ms.custom: mvc
 ms.date: 10/10/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
 author: TerryGLee
@@ -12,11 +14,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 0f1a1397de407a4497961920762b0084069b3764
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e030a3e3870746cda7ae98f5c4b45d29c8ba4885
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Hızlı Başlangıç: Kullanım ilk ASP.NET Core web uygulamanızı oluşturmak için Visual Studio
 
@@ -30,7 +32,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://a
 
 1. Visual Studio 2017'ni açın.
 
-1. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .
+1. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje**.
 
 1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **Visual C#**, ardından **.NET Core**. Orta bölmede seçin **ASP.NET çekirdek Web uygulaması**, ardından **Tamam**.
 
@@ -68,7 +70,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://a
 
    ![Hata Listesi](../ide/media/quickstart-aspnet-errorlist.png)
 
-1. Düzenleyicisi penceresinde, imlecinizi hata içerir ve ardından sol kenar boşluğunda hızlı Eylemler ampul seçin ya da satırındaki yerleştirin. Aşağı açılır menüden **sistem; kullanarak** bu yönergesi dosyanızın en üstüne ekleyin ve hataları giderin.
+1. Düzenleyicisi penceresinde, imlecinizi hatasını içeriyor ya da satıra yerleştirin ve ardından **hızlı Eylemler ampul** sol kenar boşluğunda. Aşağı açılır menüden **sistem; kullanarak** bu yönergesi dosyanızın en üstüne ekleyin ve hataları giderin.
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırın
 
@@ -83,8 +85,8 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://a
 
 Bu hızlı başlangıç Tamamlanıyor Tebrikler! Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Lütfen yeteneklerini daha derin inceleyin istiyorsanız bir öğreticide devam **öğreticileri** içindekiler bölümü.
 
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 Bu hızlı başlangıç Tamamlanıyor Tebrikler! C# ASP.NET Core ve Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Daha fazla bilgi için aşağıdaki eğitici devam edin.
 
 > [!div class="nextstepaction"]
-> [C# ve Visual Studio'da ASP.NET ile çalışmaya başlama](tutorial-csharp-aspnet-core.md)
+> [C# ve Visual Studio'da ASP.NET kullanmaya başlama](tutorial-csharp-aspnet-core.md)

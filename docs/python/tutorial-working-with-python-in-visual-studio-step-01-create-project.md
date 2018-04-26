@@ -1,6 +1,6 @@
 ---
-title: Proje oluşturma Python, adım 1 ' ile çalışma
-description: Visual Studio içinde Python ile çalışma, tüm öğretici anahat oluşturma, Önkoşullar açıklayan ve yeni bir Python projesi oluşturma işleminde size taramasını çekirdek öğreticinin 1. adım.
+title: Python Öğreticisi, 1. adım, proje oluşturma ile çalışma
+description: Genel bakış ve Python özellikleri Visual Studio'da yeni bir Python proje oluşturma ve önkoşullar dahil, bir çekirdek Kılavuz 1. adım.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5857f06deea3bc4e7c8af481330e6c66162e2f2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6f6db6e33b100955c1819b037099f876b1da8014
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Visual Studio'da Python ile çalışma
 

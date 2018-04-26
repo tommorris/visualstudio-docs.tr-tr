@@ -1,20 +1,19 @@
 ---
-title: Visual Studio IDE özelleştirme | Microsoft Docs
-ms.custom: ''
+title: Visual Studio IDE özelleştirme
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cecb3d9d1c221fc35f9a0c16ff7d5f685a85978e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 609c1656fbea78bf23480f35e9f70802d5cb1098
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE'yi kişiselleştirme
 
@@ -24,7 +23,7 @@ Visual Studio kendi geliştirme stili ve gereksinimleri en iyi desteklemek üzer
 
 Birçok kişiselleştirme seçenekleri aracılığıyla sunulan [ortam seçenekleri](../ide/reference/environment-options-dialog-box.md) iletişim kutusu. Bu iletişim kutusunu erişmek için iki yol vardır:
 
-- Menü çubuğunda seçin **Araçları**, **seçenekleri**ve henüz genişletilmişse genişletin **ortam** düğümü.
+- Menü çubuğunda seçin **Araçları** > **seçenekleri**ve henüz genişletilmişse genişletin **ortam** düğümü.
 
 - Tür `environment` içinde **hızlı başlatma** kutusuna ve seçin **ortamı--> Genel** sonuçları listesinden.
 
@@ -41,7 +40,7 @@ Düzenleyicideki renklendirme seçeneklerini değiştirmek için şunu yazın `e
 
 Ana menü büyük/küçük harf arasında değiştirebilirsiniz **ilk harfler büyük** ("dosyası") ve **tümü büyük harf** ("dosyası"). Türü `environment` içinde **hızlı başlatma** kutusunda **ortamı--> Genel**ve ardından değiştirmek **menü çubuğu için başlık servis talebi stil uygulamak** seçeneği.
 
-### <a name="customzing-menus-and-toolbars"></a>Customzing menüleri ve araç çubukları
+### <a name="customze-menus-and-toolbars"></a>Customze menüleri ve araç çubukları
 
 Menü veya araç öğe eklemek veya kaldırmak için bkz: [nasıl yapılır: menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
@@ -55,9 +54,9 @@ Tanımlar ve birden çok pencere düzenlerini kaydedin ve aralarında geçiş. �
 
 ## <a name="external-tools"></a>Dış Araçlar
 
-Özelleştirebileceğiniz **Araçları** daha fazla bilgi için dış araçları başlatmak için menüsünde görmek [dış araçları yönetme](../ide/managing-external-tools.md).
+Özelleştirebileceğiniz **Araçları** dış araçları başlatmak için menüsü. Daha fazla bilgi için bkz: [dış araçları yönetme](../ide/managing-external-tools.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio IDE genel bakış](../ide/visual-studio-ide.md)  
-[Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)
+- [Visual Studio IDE genel bakış](../ide/visual-studio-ide.md)
+- [Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)

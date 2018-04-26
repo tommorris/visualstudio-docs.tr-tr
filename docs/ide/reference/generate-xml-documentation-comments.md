@@ -1,19 +1,19 @@
 ---
-title: Visual Studio'daki XML belge açıklamaları ekleme | Microsoft Docs
-ms.custom: ''
+title: Visual Studio'daki XML belge açıklamaları ekleme
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0fae2411a77f405404e34c7a2357554c1e5398ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3c38e46a5c73d1f8018f56f76b971939ba8c316
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Nasıl yapılır: ekleme belgeleri oluşturma için XML açıklamaları
 
@@ -49,9 +49,9 @@ Visual Studio size yardımcı olabilir belge kod öğeleri sınıflar ve yöntem
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[XML belgeleri yorumları (C# programlama Kılavuzu)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)  
-[XML açıklamaları (C# Kılavuzu) ile kodunuzu belgeleme](/dotnet/csharp/codedoc)  
-[Nasıl yapılır: XML belgeleri (Visual Basic) oluşturun](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)  
-[C++ açıklamaları](/cpp/cpp/comments-cpp)  
-[XML belgeleri (C++)](/cpp/ide/xml-documentation-visual-cpp)  
-[Kod oluşturma](../code-generation-in-visual-studio.md)
+- [XML belgeleri yorumları (C# programlama Kılavuzu)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
+- [XML açıklamaları (C# Kılavuzu) ile kodunuzu belgeleme](/dotnet/csharp/codedoc)
+- [Nasıl yapılır: XML belgeleri (Visual Basic) oluşturun](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [C++ açıklamaları](/cpp/cpp/comments-cpp)
+- [XML belgeleri (C++)](/cpp/ide/xml-documentation-visual-cpp)
+- [Kod oluşturma](../code-generation-in-visual-studio.md)

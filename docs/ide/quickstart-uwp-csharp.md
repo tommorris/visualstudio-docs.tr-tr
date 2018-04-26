@@ -2,6 +2,7 @@
 title: "Hızlı Başlangıç: Visual Studio'da XAML ve C# ile ilk Evrensel Windows platformu uygulamanızı oluşturma | Microsoft Docs"
 ms.custom: ''
 ms.date: 04/04/2018
+ms.prod: visual-studio-dev15
 ms.technology:
 - vs-acquisition
 ms.topic: quickstart
@@ -13,11 +14,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Hızlı Başlangıç: Visual Studio'da XAML ve C ile ilk Evrensel Windows platformu uygulamanızı oluşturma&#35;
 
@@ -31,9 +32,9 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://a
 
 1. Visual Studio 2017'ni açın.
 
-2. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .
+2. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje**.
 
-3. Sol bölmesinde **yeni proje** iletişim kutusunda, genişletin **Visual C#**ve ardından **Windows Evrensel**. Orta bölmede seçin **boş uygulama (Evrensel Windows)**. Sonra proje adı *HelloWorld* ve **Tamam**.
+3. Sol bölmesinde **yeni proje** iletişim kutusunda, genişletin **Visual C#** ve ardından **Windows Evrensel**. Orta bölmede seçin **boş uygulama (Evrensel Windows)**. Sonra proje adı *HelloWorld* ve **Tamam**.
 
    ![Visual Studio IDE'de yeni proje iletişim kutusunda Windows Evrensel proje şablonu](../ide/media/new-project-csharp-uwp-helloworld.png)
 
@@ -54,7 +55,7 @@ Geliştirmeye başlamak için zamanı. Düğme denetimi ekleyin eylem düğme ek
 
 ### <a name="add-a-button-to-the-design-canvas"></a>Tasarım tuvale düğme ekleme
 
-1. İçinde **Çözüm Gezgini**, çift **MainPage.xaml** bölünmüş görünümünü açın.
+1. İçinde **Çözüm Gezgini**, çift *MainPage.xaml* bölünmüş görünümünü açın.
 
   ![MainPage.xaml Çözüm Gezgini'nden açın ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
@@ -66,7 +67,7 @@ Geliştirmeye başlamak için zamanı. Düğme denetimi ekleyin eylem düğme ek
 
   ![Araç kutusu uçarak çıkış penceresini açmak için araç'e tıklayın](../ide/media/uwp-toolbox.png)
 
-  (Araç seçeneği görmüyorsanız, menü çubuğundan açabilirsiniz. Bunu yapmak için seçin **Görünüm** > **araç**. Veya basın **Ctrl**+**Alt**+**X**.)
+  (Görmüyorsanız **araç** seçeneğini açabilirsiniz, menü çubuğundan. Bunu yapmak için seçin **Görünüm** > **araç**. Veya basın **Ctrl**+**Alt**+**X**.)
 
 3. Tıklatın **PIN** araç kutusu pencere sabitlemek için simge.
 
@@ -76,17 +77,17 @@ Geliştirmeye başlamak için zamanı. Düğme denetimi ekleyin eylem düğme ek
 
    ![Düğme denetimi tıklatın ve tasarım tuvale sürükleyin](../ide/media/uwp-toolbox-add-button-control.png)
 
-  XAML Düzenleyicisi'nde kod bakarsanız, düğme vardır, çok eklendiğini görürsünüz:
+  Kodda bakarsanız **XAML Düzenleyicisi'ni**, düğme vardır, çok eklendiğini görürsünüz:
 
   ![Düğme denetimi tıklatın ve tasarım tuvale sürükleyin](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Etiket düğme ekleme
 
-1. XAML Düzenleyicisi'nde düğmesi içerik değeri "Düğmesinden" için "Hello World!" değiştirin
+1. İçinde **XAML Düzenleyicisi'ni**, düğme içerik değerini "Düğmesinden" için "Hello World!" değiştirin.
 
    ![Hello World düğmesi içerik değerini değiştirin](../ide/media/uwp-change-button-text-in-xaml-code-window.png)
 
-2. XAML Tasarımcısı'nda düğmesi, çok değiştiğine dikkat edin.
+2. Dikkat düğmesini **XAML Tasarımcısı** çok değiştirir.
 
    ![Düğme Hello World tasarım tuvalde değişir.](../ide/media/uwp-button-text-change-in-design-canvas.png)
 
@@ -96,7 +97,7 @@ Geliştirmeye başlamak için zamanı. Düğme denetimi ekleyin eylem düğme ek
 
 1. Düğme denetimi tasarım tuval üzerinde çift tıklatın.
 
-2.  Olay işleyicisini düzenleme *MainPage.xaml.cs*, arka plan kod sayfası.
+2. Olay işleyicisini düzenleme *MainPage.xaml.cs*, arka plan kod sayfası.
 
  Şeyler ilginç nereden budur. Varsayılan olay işleyicisini şöyle görünür:
 
@@ -121,7 +122,7 @@ Geliştirmeye başlamak için zamanı. Düğme denetimi ekleyin eylem düğme ek
 
 #### <a name="what-did-we-just-do"></a>Biz yalnızca ne?
 
-Kod bir konuşma Birleştirici nesnesi oluşturmak için bazı Windows API'larını kullanır ve söylemek için bazı metinleri sağlar. (SpeechSynthesis kullanma hakkında daha fazla bilgi için bkz: <xref:System.Speech.Synthesis>.)
+Kod bir konuşma Birleştirici nesnesi oluşturmak için bazı Windows API'larını kullanır ve söylemek için bazı metinleri sağlar. (Kullanma hakkında daha fazla bilgi için `SpeechSynthesis`, bkz: <xref:System.Speech.Synthesis>.)
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırın
 

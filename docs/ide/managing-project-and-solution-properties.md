@@ -1,7 +1,7 @@
 ---
-title: Proje ve çözüm özelliklerini yönetme | Microsoft Docs
-ms.custom: ''
+title: Proje ve çözüm özelliklerini yönetme
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a68cc558a52f7c8d66f76600cd68309ad67769c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b4b39c4d1e515530f50d086cb107d4ec0d297d48
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-project-and-solution-properties"></a>Proje ve çözüm özelliklerini yönetme
+# <a name="manage-project-and-solution-properties"></a>Proje ve çözüm özelliklerini yönetme
 
-Projeleri hata ayıklama, test etme ve dağıtma derleme pek çok görünüşünün yöneten özelliklere sahiptir. Bazı özellikler tüm proje türleri arasında ortak olan ve bazı belirli diller veya platformlar için benzersizdir. Çözüm Gezgini'nde proje düğümüne sağ tıklayıp seçerek proje özelliklerini erişim **özellikleri**, veya "Özellikler" içine yazarak **hızlı başlatma** menü çubuğunda arama kutusu.
+Projeleri hata ayıklama, test etme ve dağıtma derleme pek çok görünüşünün yöneten özelliklere sahiptir. Bazı özellikler tüm proje türleri arasında ortak olan ve bazı belirli diller veya platformlar için benzersizdir. Proje Özellikleri'nde proje düğümüne sağ tıklayarak erişim **Çözüm Gezgini** ve seçme **özellikleri**, veya "Özellikler" içine yazarak **hızlı başlatma** Menü çubuğunda arama kutusu.
 
 ![Proje bağlam menüsü](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")
 
@@ -31,11 +31,11 @@ Proje Özellikleri gruplar halinde düzenlenir ve her grup kendi özellik sayfas
 
 ### <a name="c-visual-basic-and-f-projects"></a>C#, Visual Basic ve Visual F # projeleri
 
-C#, Visual Basic ve F # projelerinde özellikler de sağlanmaktadır **Proje Tasarımcısı**. Aşağıdaki çizimde bir WPF projesi derleme özellik sayfasında C# dilinde gösterir:
+C#, Visual Basic ve F # projelerinde özellikler de sağlanmaktadır **Proje Tasarımcısı**. Aşağıdaki çizimde gösterildiği **yapı** C# bir WPF projesi için özellik sayfası:
 
 ![Visual Studio Proje Tasarımcısı](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")
 
-Her bir Proje Tasarımcısı'nda özellik sayfaları hakkında daha fazla bilgi için bkz: [proje özellikleri başvurusu](../ide/reference/project-properties-reference.md).
+Her bir özellik sayfaları hakkında bilgi için **Proje Tasarımcısı**, bkz: [proje özellikleri başvurusu](../ide/reference/project-properties-reference.md).
 
 > [!TIP]
 > Çözümleri birkaç özelliklere sahip ve bu nedenle öğeleri proje; Bu özellikleri erişilir [Özellikler penceresini](../ide/reference/properties-window.md)değil **Proje Tasarımcısı**.
@@ -46,12 +46,12 @@ C++ ve JavaScript projeleri proje özelliklerini yönetmek için farklı kullan�
 
 ![Visual C&#43; &#43; proje özellikleri](../ide/media/vs2015_projprops_cpp.png "VS2015_ProjProps_cpp")
 
-C++ proje özellikleri hakkında daha fazla bilgi için bkz: [proje özellikleri (C++) ile çalışma](/cpp/ide/working-with-project-properties). JavaScript özellikleri hakkında daha fazla bilgi için bkz: [özellik sayfaları, JavaScript](../ide/reference/property-pages-javascript.md).
+C++ proje özellikleri hakkında daha fazla bilgi için bkz: [(C++) proje özellikleriyle çalışma](/cpp/ide/working-with-project-properties). JavaScript özellikleri hakkında daha fazla bilgi için bkz: [özellik sayfaları, JavaScript](../ide/reference/property-pages-javascript.md).
 
 ## <a name="solution-properties"></a>Çözüm özellikleri
 
-Çözüm üzerinde özelliklere erişmek için sağ çözüm düğümünü tıklatın **Çözüm Gezgini** ve **özellikleri**. İletişim kutusunda, hata ayıklama için proje yapılandırmaları ayarlayabilirsiniz veya yayın oluşturur, F5 basılı ve kod çözümleme seçenekleri ayarladığınızda, projeleri başlangıç projesi olmalıdır'ı seçin.
+Çözüm üzerinde özelliklere erişmek için sağ çözüm düğümünü tıklatın **Çözüm Gezgini** ve **özellikleri**. Proje yapılandırmaları için ayarlayabileceğiniz iletişim kutusunda, **hata ayıklama** veya **sürüm** derlemeleri, seçin başlangıç projeleri olmalıdır ne zaman proje **F5** basılı ve kod ayarlayın Çözümleme seçenekleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio’da Çözümler ve Projeler](../ide/solutions-and-projects-in-visual-studio.md)
+- [Çözümler ve projeler Visual Studio'da](../ide/solutions-and-projects-in-visual-studio.md)

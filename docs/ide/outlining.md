@@ -1,7 +1,7 @@
 ---
-title: Visual Studio'da kodu bölgelerinin genişletme ve daraltma | Microsoft Docs
-ms.custom: ''
+title: Daraltma ve Visual Studio'da kodu bölgelerinin genişletin
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,17 +17,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8f672f6f9e82bb8fdaef2c159d09bdc95daec40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 62e6d5c7667bf697eeb190d69a996886fbee643f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="outlining"></a>Anahat Oluşturma
 
-Böylece bir artı işareti (+) altında görünür bir bölge kodu daraltarak biraz kod görünümünden gizlemek seçebilirsiniz. Daraltılmış bölge artı işaretine tıklayarak genişletin. Klavye kullanıcısıysanız seçebileceğiniz **Ctrl** + **M** + **M** daraltın ve genişletin. Anahat bölge satırıyla kodunun sol yalnızca görünür anahat Kenar çubuğunda bölgede çift tıklayarak da daraltabilirsiniz. Daraltılmış bölgesini üzerine geldiğinizde, araç ipucu olarak daraltılmış bir bölge içeriğini görebilirsiniz.
+Artı işareti altında görünmesi bir bölge kodu daraltarak biraz kod görünümünden gizlemek seçebilirsiniz (**+**). Daraltılmış bölge artı işaretine tıklayarak genişletin. Klavye kullanıcısıysanız seçebileceğiniz **Ctrl**+**M**+**M** daraltın ve genişletin. Anahat bölge satırıyla kodunun sol yalnızca görünür anahat Kenar çubuğunda bölgede çift tıklayarak da daraltabilirsiniz. Daraltılmış bölgesini üzerine geldiğinizde, araç ipucu olarak daraltılmış bir bölge içeriğini görebilirsiniz.
 
-Kenar boşluğu fareyle üzerine geldiğinizde anahat kenar boşluğu bölgelerde da vurgulanmıştır. Renk vurgulama varsayılan bazı renk yapılandırmalarda yerine soluk görünebilir. İçinde değiştirebileceğiniz **aracı**, **seçenekleri**, **ortam**, **yazı tiplerini ve renkleri**, **daraltılabilir bölge**.
+Kenar boşluğu fareyle üzerine geldiğinizde anahat kenar boşluğu bölgelerde da vurgulanmıştır. Renk vurgulama varsayılan bazı renk yapılandırmalarda yerine soluk görünebilir. İçinde değiştirebileceğiniz **Araçları** > **seçenekleri** > **ortam** > **yazı tiplerini ve renkleri**  >  **Daraltılabilir bölge**.
 
 Anahatları belirlenmiş kodda çalışırken, istediğiniz çalışma yapılır ve diğer bölümleri taşıma bunları Daralt bölümleri genişletebilirsiniz. Sahip olmasını istiyor musunuz anahat oluşturma görüntülenen, kullanabileceğiniz **durdurmak anahat oluşturma** temel kodunuzu etkilemeden anahat bilgileri kaldırmak için komutu.
 
@@ -36,21 +36,21 @@ Anahatları belirlenmiş kodda çalışırken, istediğiniz çalışma yapılır
 > [!CAUTION]
 > Anahatları belirlenmiş bir bölgeyi değiştirdiğinizde, anahat oluşturma kaybolmuş olabilir. Örneğin, silme veya bulma ve değiştirme işlemleri bölge sonuna silebilir.
 
-Aşağıdaki komutları bulunabilir **Düzenle**, **anahat** alt.
+Aşağıdaki komutları bulunabilir **Düzenle** > **anahat** alt.
 
 |||
 |-|-|
-|Seçimi Gizle|(CTRL + M, CTRL + H) - seçili bir normalde örneğin anahat oluşturma için kullanılabilir olmayacaktır kod bloğunu daraltır bir `if` bloğu. Özel bölge kaldırmak için kullanın **gizleme geçerli Durdur** (veya CTRL + M, CTRL + U). Visual Basic'te kullanılamaz.|  
-|İki durumlu genişletme anahat oluşturma|-İç içe geçmiş bir daraltılmış bölümü imleci gerektiği zaman bölüm anahat oluşturma en içteki geçerli gizli veya genişletilmiş durumunu tersine çevirir.|  
-|Tüm anahat oluşturma Değiştir|(CTRL + M, CTRL + L) - aynı tüm bölgelere daraltılmış veya genişletilmiş durumuna ayarlar. Bazı bölgelerde genişletilir ve bazı daraltılmış, ardından daraltılmış bölgeler genişletilmiş.|  
-|Anahat oluşturma Durdur|(CTRL + M, CTRL + P) - tüm belgeyi tüm anahat bilgilerini kaldırır.|  
-|Geçerli gizleme Durdur|(CTRL + M, CTRL + U) - şu anda seçili kullanıcı tanımlı bölgede anahat bilgilerini kaldırır. Visual Basic'te kullanılamaz.|  
-|Tanımları Daralt|(CTRL + M, CTRL + O) - tüm türleri üyeleri daraltır.|  
-|Daraltma engelle:\<mantıksal sınır >|(Visual C++) Ekleme noktasını içeren işlevi bir bölgede daraltır. Örneğin, ekleme noktasını bir döngü içinde yer alıyorsa, döngü gizlenir.|  
-|Tümünü Daralt: \<mantıksal yapıları >|(Visual C++) İşlevin içindeki tüm yapıları daraltır.|  
+|Seçimi Gizle|(**Ctrl**+**M**, **Ctrl**+**H**)-seçili değil normalde olacak kod bloğu daraltır Anahat oluşturma, örneğin için kullanılabilir bir `if` bloğu. Özel bölge kaldırmak için kullanın **gizleme geçerli Durdur** (veya **Ctrl**+**M**, **Ctrl** + **U**). Visual Basic'te kullanılamaz.|
+|İki durumlu genişletme anahat oluşturma|-İç içe geçmiş bir daraltılmış bölümü imleci gerektiği zaman bölüm anahat oluşturma en içteki geçerli gizli veya genişletilmiş durumunu tersine çevirir.|
+|Tüm anahat oluşturma Değiştir|(**Ctrl**+**M**, **Ctrl**+**L**)-aynı tüm bölgelere daraltılmış veya genişletilmiş durumuna ayarlar. Bazı bölgelerde genişletilir ve bazı daraltılmış, ardından daraltılmış bölgeler genişletilmiş.|
+|Anahat oluşturma Durdur|(**Ctrl**+**M**, **Ctrl**+**P**)-tüm belgeyi tüm anahat bilgilerini kaldırır.|
+|Geçerli gizleme Durdur|(**Ctrl**+**M**, **Ctrl**+**U**)-şu anda seçili anahat bilgilerini kaldırır Kullanıcı tanımlı bölgede. Visual Basic'te kullanılamaz.|
+|Tanımları Daralt|(**Ctrl**+**M**, **Ctrl**+**O**)-tüm türleri üyeleri daraltır.|
+|Daraltma engelle:\<mantıksal sınır >|(Visual C++) Ekleme noktasını içeren işlevi bir bölgede daraltır. Örneğin, ekleme noktasını bir döngü içinde yer alıyorsa, döngü gizlenir.|
+|Tümünü Daralt: \<mantıksal yapıları >|(Visual C++) İşlevin içindeki tüm yapıları daraltır.|
 
 Visual Studio SDK'sı, genişletmek veya daraltmak için istediğiniz metin bölgeleri tanımlamak için de kullanabilirsiniz. Bkz: [izlenecek yol: anahat oluşturma](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod Düzenleyicisi'nde yazma](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Düzenleyici'de kod yazma](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -1,9 +1,9 @@
 ---
-title: Visual Studio Proje ve öğe şablon parametreleri | Microsoft Docs
-ms.custom: ''
+title: Visual Studio Proje ve öğe şablon parametreleri
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -12,15 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c49514aeb164040ea374371cae6a61d1f7eb8948
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="template-parameters"></a>Şablon parametreleri
 
-Şablon örneği oluşturulduğunda, şablonlarınızı parametreleri kullanarak, sınıf adları ve ad alanları, gibi bir şablon anahtar kısımlarını değerlerini değiştirebilirsiniz. Bu parametre bir kullanıcı seçtiğinde, arka planda çalışan Şablon Sihirbazı tarafından değiştirilir **Tamam** veya **Ekle** içinde **yeni proje** veya **Yeni Öğe Ekle**  iletişim kutuları.
+Şablon örneği oluşturulduğunda şablonunuzda değerlerini değiştirebilirsiniz. Bu işlevini ayarlamak için kullanın *şablon parametreleri*. Şablon parametreleri sınıf adları ve şablon için ad alanları gibi değerleri değiştirmek için kullanılabilir. Şablon Sihirbazı, bir kullanıcı yeni bir öğe ekler veya bu parametreleri proje değiştirir arka planda çalışır.
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Bildirme ve şablon parametreleri etkinleştirme
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 
 1. Ayarlama `ReplaceParameters` özniteliği `ProjectItem` öğesine `true`.
 
-1. Proje öğesi için kod dosyasında, uygun olan yerlerde parametreleri içerir. Örneğin, aşağıdaki parametre güvenli proje adı ad alanında bir dosya için kullanılabilecek belirtir:
+1. Proje öğesi için kod dosyasında, uygun olan yerlerde parametreleri içerir. Örneğin, aşağıdaki parametre güvenli proje adı ad alanında bir dosya için kullanıldığını belirtir:
 
     ```csharp
     namespace $safeprojectname$
@@ -118,5 +118,5 @@ Proje şablonu .vstemplate dosyasına eklenecek `ReplaceParameters="true"` özni
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Şablonlarını özelleştirme](../ide/customizing-project-and-item-templates.md)  
-[Nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md)
+- [Şablonlarını özelleştirme](../ide/customizing-project-and-item-templates.md)
+- [Nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md)

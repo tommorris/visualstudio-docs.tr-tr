@@ -1,6 +1,7 @@
 ---
-title: Hızlı Eylemler | Microsoft Docs
+title: Hızlı Eylemler
 ms.date: 03/28/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -11,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 941980eff8fc2474df9555b326278abdb9b26dac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ec61924a9a08fc01c54f04bd8a7cc82fcc9525
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quick-actions"></a>Hızlı Eylemler
 
@@ -42,7 +43,7 @@ Herhangi bir dil için üçüncü tarafların özel tanılama ve öneriler, örn
 
 ## <a name="to-see-potential-fixes"></a>Olası düzeltmeleri görmek için
 
-Ya da aşağı oka veya olası ampul için uygulayabileceğiniz hızlı eylemlerin bir listesini görüntülemek için bağlantıyı düzeltmeleri Göster'i tıklatın.
+Aşağı oka tıklayın veya **olası düzeltmeleri göster** ampul için uygulayabileceğiniz hızlı eylemlerin bir listesini görüntülemek için bağlantı.
 
 ![Genişletilmiş ampul](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
@@ -51,4 +52,4 @@ Ya da aşağı oka veya olası ampul için uygulayabileceğiniz hızlı eylemler
 - [Visual Studio'da kod oluşturma](../ide/code-generation-in-visual-studio.md)
 - [Yaygın Hızlı Eylemler](../ide/common-quick-actions.md)
 - [Kod stilleri ve hızlı Eylemler](../ide/code-styles-and-quick-actions.md)
-- [Kod yazma ve yeniden düzenleme (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Yazma ve düzenleme kod (C++)](/cpp/ide/writing-and-refactoring-code-cpp)

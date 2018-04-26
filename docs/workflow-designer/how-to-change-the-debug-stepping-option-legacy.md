@@ -1,7 +1,9 @@
 ---
-title: 'Nasıl yapılır: hata ayıklama atlama seçeneği (eski) değiştirme | Microsoft Docs'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: hata ayıklama atlama seçeneği (eski) değiştirme'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - branch stepping
 - debugging, stepping options
@@ -14,28 +16,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aedb8e738dc2e6ca2b066dd9a2cd42e332bbd8be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31047cedd4e8772b9ebab4ef238a8fe32bc07663
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Nasıl yapılır: hata ayıklama atlama seçeneği (eski) değiştirme
-Bu konu, hata ayıklama sürüm seçeneğini değiştirmek açıklar [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] eş zamanlı eylemleri içeren uygulamalar eski Windows iş akışı Tasarımcısı'nda. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Ne zaman ayıkladığınız eş zamanlı yürütme sahip eski etkinlikler **ParallelActivity** veya **ConditionedActivityGroup**, kodunuzun içinde ilerleyebilir için iki seçenekten birini kullanabilirsiniz.
+Bu konu, atlama seçeneği eş zamanlı eylemleri eski Windows iş akışı Tasarımcısı'nda Windows Workflow Foundation (WF) uygulamaları için hata ayıklama değiştirmek açıklar. .NET Framework sürüm 3.5 veya WinFX hedeflemek gerektiğinde eski iş akışı Tasarımcısı kullanın.
 
- Hata ayıklama seçeneği eski iş akışı projenizdeki atlama değiştirmek için aşağıdaki adımları izleyin.
+Ne zaman ayıkladığınız eş zamanlı yürütme sahip eski etkinlikler **ParallelActivity** veya **ConditionedActivityGroup**, kodunuzun içinde ilerleyebilir için iki seçenekten birini kullanabilirsiniz.
+
+Hata ayıklama seçeneği eski iş akışı projenizdeki atlama değiştirmek için aşağıdaki adımları izleyin.
 
 ## <a name="procedures"></a>Yordamlar
 
-#### <a name="to-change-the-debug-stepping-option"></a>Hata ayıklama sürüm seçeneği değiştirmek için
+### <a name="to-change-the-debug-stepping-option"></a>Hata ayıklama sürüm seçeneği değiştirmek için
 
 1.  Visual Studio'yu başlatın.
 
-2.  Eşzamanlı etkinlikler kullanır ve ya da hedefleyen yeni bir proje oluşturun veya varolan bir eski iş akışı projesinde açın [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+2.  .NET Framework sürüm 3.5 veya WinFX eşzamanlı etkinlikler ve hedefleyen kullanan yeni bir proje oluşturun veya varolan bir eski iş akışı projesini açın.
 
-3.  Üzerinde **iş akışı** eski menüde [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], işaret **hata ayıklama**, üzerine gelin ve ardından **atlama seçenekleri**.
+3.  Üzerinde **iş akışı** menü eski iş akışı Tasarımcısı'nda, işaret **hata ayıklama**, üzerine gelin ve ardından **atlama seçenekleri**.
 
 4.  Şunlardan birini seçin **örneği** veya **şube**.
 

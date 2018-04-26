@@ -1,7 +1,9 @@
 ---
-title: .NET 3.0 ya da .NET 3.5 hedefleyen iş akışı uygulamaları geliştirme Framework | Microsoft Docs
+title: İş Akışı Tasarımcısı - .NET 3.0 ya da .NET 3.5 hedefleyen iş akışı uygulamaları geliştirme Framework
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Visual Studio 2005 Extensions for Windows Workflow Foundation
 ms.assetid: b60aadee-3bf9-48c3-b2eb-4d5524e927ad
@@ -10,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c95f383573241edb2bbc31961d60c16d06b03f9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 27082faa9e19df3113df34ef2c48b7165a9992ac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>.NET 3.0 ya da .NET 3.5 hedefleyen iş akışı uygulamaları geliştirme Framework
-[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] oluşturmak için Windows iş akışı Tasarımcısı sağlar [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] hedefleyen uygulamalar [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)]. Bilinen Tasarımcısı kullanır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] grafik oluşturma ve iş akışı uygulamalarının hata ayıklama için kullanıcı arabirimi.
 
- [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] Ayrıca erişim kullanılabilir bir eski iş akışı Tasarımcısı sağlar hedef [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Bu bölüm bu eski Tasarımcısını kullanarak konusunda yönergeler içerir.
+Visual Studio 2010, .NET Framework 4 hedef Windows Workflow Foundation (WF) uygulamaları oluşturmak için Windows iş akışı Tasarımcısı sağlar. Tasarımcı tanıdık Visual Studio kullanıcı arabirimi, grafik oluşturma ve iş akışı uygulamalarında hata ayıklama için kullanır.
+
+Visual Studio 2010'u da .NET Framework sürüm 3.5 veya WinFX hedeflemek için kullanılan bir eski iş akışı Tasarımcısı erişim sağlar. Bu bölüm bu eski Tasarımcısını kullanarak konusunda yönergeler içerir.
 
 ## <a name="related-sections"></a>İlgili Bölümler
- [Windows Workflow Foundation Programlama Kılavuzu](http://go.microsoft.com/fwlink?LinkID=65012)
+
+- [Windows Workflow Foundation Programlama Kılavuzu](http://go.microsoft.com/fwlink?LinkID=65012)

@@ -1,9 +1,8 @@
 ---
-title: Uygulamaları Genelleştirme | Microsoft Docs
-ms.custom: ''
+title: Uygulamaları Genelleştirme
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Basic code, international applications
@@ -15,27 +14,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfcdb9d78b58c4079664dfa3824c852ff9b43ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b63a455ac1ff27bbdcf4434a6a70bc17b0a4893
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="globalizing-applications"></a>Uygulamaları Genelleştirme
-Genelleştirme tasarlama ve bu işlevleri birden çok kültürü için bir yazılım ürünü geliştirmeye işlemidir. Aşağıdaki makalede Windows Formları ve web formları sayfaları için geçerlidir.  
-  
- [Genel Windows Formları ve web formları için kültüre özgü sınıflar](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)  
- Tarih, saat, sayılar, para birimi ve diğer bilgileri kültür ayarına göre biçimlendirin sınıfları açıklar.  
-  
-### <a name="see-also"></a>Ayrıca bkz.  
- [Windows forms Genelleştirme](/dotnet/framework/winforms/advanced/globalizing-windows-forms)  
- Windows forms genelleştirme hakkında yardım sayfalarına bağlantılar sağlar.  
-  
- [Genelleştirme ve yerelleştirme](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
- Formları sayfaları web genelleştirme hakkında yardım sayfalarına bağlantılar sağlar.  
-  
- [.NET Framework tabanlı Uluslararası uygulamalara giriş](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
- Visual Basic veya C# kullanarak uluslararası bir pazar için yazılım geliştirme hakkında temel kavramları açıklar.  
-  
- [Dünya çapında kullanılmaya hazır uygulamalar geliştirmek için en iyi uygulamalar](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
- Tasarım konuları ve terminolojisi gibi uluslararası bir izleyici için programlama hakkında bilgi sağlar.
+# <a name="globalize-applications"></a>Uygulamaları globalize
+
+Genelleştirme tasarlama ve bu işlevleri birden çok kültürü için bir yazılım ürünü geliştirmeye işlemidir. Aşağıdaki makalede Windows Formları ve web formları sayfaları için geçerlidir.
+
+ [Genel Windows Formları ve web formları için kültüre özgü sınıflar](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md) tarih, saat, sayılar, para birimi ve diğer bilgileri kültür ayarına göre biçimlendirin sınıfları açıklar.
+
+### <a name="see-also"></a>Ayrıca bkz.
+
+- [Windows forms Genelleştirme](/dotnet/framework/winforms/advanced/globalizing-windows-forms) Windows forms genelleştirme hakkında yardım sayfalarına bağlantılar sağlar.
+
+- [Genelleştirme ve Yerelleştirme](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) forms sayfaları web genelleştirme hakkında yardım sayfalarına bağlantılar sağlar.
+
+- [Uluslararası uygulamalara giriş .NET Framework'e dayalı](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Visual Basic veya C# kullanarak uluslararası bir pazar için yazılım geliştirme hakkında temel kavramları açıklar.
+
+- [En iyi uygulamalar dünya çapında kullanılmaya hazır uygulamalar geliştirmek için](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) tasarım konuları ve terminolojisi gibi uluslararası bir izleyici için programlama hakkında bilgi sağlar.

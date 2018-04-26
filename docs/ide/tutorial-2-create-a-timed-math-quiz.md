@@ -1,9 +1,9 @@
 ---
-title: 'Öğretici 2: zamanlı matematik testi oluşturma | Microsoft Docs'
+title: 'Eğitmen 2: Zamanlı Matematik Testi Oluşturma'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 author: TerryGLee
@@ -11,35 +11,35 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56466d91f336be679f2f82919c537a95e352a60d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 55142712972ce5d5fd44e76dbad042daca18edc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Eğitmen 2: Zamanlı Matematik Testi Oluşturma
 Bu öğreticide, test alanın belirtilen süre içinde dört rastgele aritmetik sorunları yanıtlamalısınız testi oluşturun. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:  
-  
+
 -   Kullanarak rastgele sayılar oluşturma `Random` sınıfı.  
-  
+
 -   Tetiklemek kullanarak belirli bir zamanda oluşacak şekilde olayları bir **Zamanlayıcı** denetim.  
-  
+
 -   Program akışı kullanarak denetim `if else` deyimleri.  
-  
+
 -   Temel aritmetik işlemler kodda gerçekleştirin.  
-  
+
  İşiniz bittiğinde, test aşağıdaki resimde gibi dışında farklı numaralarıyla arar.  
-  
+
  ![Matematik testi dört sorunlarıyla](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
 Bu öğreticide oluşturduğunuz test  
-  
+
  Test tamamlanmış bir sürümünü indirmek için bkz: [tam matematik testi öğretici örnek](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
-  
+
 > [!NOTE]
 >  Bu öğretici hem Visual C# ve Visual Basic kapsar, kullanmakta olduğunuz programlama diline özgü bilgileri böylece odaklanır.  
-  
+
 ## <a name="related-topics"></a>İlgili Konular  
-  
+
 |Başlık|Açıklama|  
 |-----------|-----------------|  
 |[1. Adım: Proje Oluşturma ve Formunuza Etiketler Ekleme](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Başlangıç projesi oluşturma özelliklerini değiştirme ve ekleme `Label` kontrol eder.|  

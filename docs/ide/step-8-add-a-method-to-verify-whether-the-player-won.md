@@ -1,9 +1,9 @@
 ---
-title: '8. adım: oyuncunun kazandığını doğrulamak için yöntem ekleme | Microsoft Docs'
+title: '8. Adım: Oyuncunun Kazandığını Doğrulamak için Yöntem Ekleme'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: TerryGLee
@@ -11,36 +11,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d14f386bfd22893aa18a5c5982a03314c2a31984
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b4a7d51a9f88d7ecb7425a2b72740169d03077b5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>8. Adım: Oyuncunun Kazandığını Doğrulamak için Yöntem Ekleme
 Eğlenceli bir oyun oluşturdunuz, ancak bitirmek için bir şeye daha ihtiyaç var. Player WINS, eklemeniz gerekir böylece oyun bitmelidir bir `CheckForWinner()` oyuncunun kazandığını doğrulamak için yöntem.  
-  
+
 ### <a name="to-add-a-method-to-verify-whether-the-player-won"></a>Oyuncunun kazanıp kazanmadığını doğrulamak üzere bir yöntem eklemek için  
-  
+
 1.  Ekleme bir `CheckForWinner()` , kodunuzu altına yöntemi aşağıda `timer1_Tick()` aşağıdaki kodda gösterildiği gibi olay işleyicisi.  
-  
+
      [!code-csharp[VbExpressTutorial4Step8#10](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_1.cs)]
      [!code-vb[VbExpressTutorial4Step8#10](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_1.vb)]  
-  
+
      Başka bir yöntem kullanır `foreach` döngü Visual C# veya `For Each` TableLayoutPanel içindeki her etiket gitmesi Visual Basic'te döngü. Eşitlik işleci kullanır (`==` Visual C# ve `=` Visual Basic'te) arka plan eşleşip eşleşmediğini doğrulamak için her etiketin simgenin rengi denetlemek için. Renkler eşleşiyorsa simge görünmez halde kalır ve oyuncu kalan simgelerin tümünü eşleştirmemiştir. Bu durumda, program kullanan bir `return` deyimi yöntemi kalanını atlayın. Döngü tüm etiketleri çalıştırmadan alır, `return` tüm form üzerindeki simgelerin eşleştirildiklerinden anlamına gelen deyimi. Program bir MessageBox kazanan üzerinde player kutlayın gösterir ve formun çağırır `Close()` oyun sonuna yöntemi.  
-  
+
 2.  Ardından, etiketin tıklatın sahip olay işleyicisi çağırma yeni `CheckForWinner()` yöntemi. Oyuncunun seçtiği ikinci simgeyi gösterdikten hemen sonra programınızın bir kazanan olup olmadığını denetlediğinden emin olun. Satır için ikinci seçilen simgenin rengi ayarladığınız arayın ve ardından çağıran `CheckForWinner()` yöntemi aşağıdaki kodda gösterildiği gibi bundan sonra doğru.  
-  
+
      [!code-csharp[VbExpressTutorial4Step8#11](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_2.cs)]
      [!code-vb[VbExpressTutorial4Step8#11](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_2.vb)]  
-  
+
 3.  Programı kaydedip çalıştırın. Oyunu oynayın ve tüm simgeleri eşleştirin. Kazandığınızda, program kutlama amaçlı bir MessageBox görüntüler (aşağıdaki resimde gösterildiği gibi) ve sonra da kutuyu kapatır.  
-  
+
      ![MessageBox ile eşleme oyunu](../ide/media/express_tut4step8.png "Express_Tut4Step8")  
 MessageBox ile eşleştirme oyunu  
-  
+
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
-  
+
 -   Öğretici bir sonraki adıma dönmek için bkz: [adım 9: diğer özellikleri deneyin](../ide/step-9-try-other-features.md).  
-  
+
 -   Eğitmen önceki adıma dönmek için bkz: [adım 7: çiftleri görünür](../ide/step-7-keep-pairs-visible.md).

@@ -1,8 +1,7 @@
 ---
-title: Seçenekler, metin düzenleyici, C/C++, Deneysel | Microsoft Docs
-ms.custom: ''
+title: Seçenekler, metin düzenleyici, C/C++, Deneysel
 ms.date: 08/02/2017
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Experimental
@@ -10,21 +9,21 @@ f1_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 205626b3778b056018d8803b41890fcd242a6015
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36826a998c579526487b440ebe9d3ddab228daab
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="options-text-editor-cc-experimental"></a>Seçenekler, metin düzenleyici, C/C++, Deneysel
 
 Bu seçeneklerinde değişiklik yaparak C veya C++ programlama zaman IntelliSense ve gözatma veritabanı ile ilgili davranışı değiştirebilirsiniz. Bu özellikler gerçekten Deneysel ve değiştirilebilir veya sonraki bir sürümde Visual Studio'dan kaldırıldı. Bu konuda yer alan Visual Studio 2017 seçenekler açıklanmaktadır. Visual Studio 2015 için bkz: [seçenekler, metin düzenleyici, C/C++, Experimental](https://msdn.microsoft.com/library/mt591979.aspx)
 
-Bu özellik sayfasında erişmek için basın **Control + Q** etkinleştirmek için `Quick Launch` ve "Deneysel" yazın. Hızlı Başlat Sayfası sonra ilk birkaç harfini bulur. Seçerek için de alabilirsiniz **Araçlar | Seçenekler** ve genişletme **metin düzenleyici**, ardından **C/C++**ve ardından **Experimental**.
+Bu özellik sayfasında erişmek için basın **Control + Q** etkinleştirmek için `Quick Launch` ve "Deneysel" yazın. Hızlı Başlat Sayfası sonra ilk birkaç harfini bulur. Seçerek için de alabilirsiniz **Araçlar | Seçenekler** ve genişletme **metin düzenleyici**, ardından **C/C++** ve ardından **Experimental**.
 
 Bu özellikler, Visual Studio 2017 yüklemesinde kullanılabilir.
 

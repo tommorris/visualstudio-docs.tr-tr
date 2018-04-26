@@ -1,7 +1,9 @@
 ---
-title: Bir etkinliğe bağlamak&#39;s özellik iletişim kutusu (eski) | Microsoft Docs
+title: İş Akışı Tasarımcısı - bir etkinliğe bağlamak&#39;s özellik iletişim kutusu (eski)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ActivityBindForm.UI
 helpviewer_keywords:
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a799b57169116343f5d83e54ce5bd87dedfd801
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8922864a32c08d8feaed11e530314176557a785f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Bir etkinliğe bağlamak&#39;s özellik iletişim kutusu (eski)
-Bu konuda açıklanmaktadır kullanma **bir etkinliğin özelliği Bağla** eski Windows iş akışı Tasarımcısı'nda iletişim kutusu. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+# <a name="bind-to-an-activitys-property-dialog-box-legacy"></a>Bir etkinliğin özellik iletişim kutusu (eski) bağlayın
+
+Bu konuda açıklanmaktadır kullanma **bir etkinliğin özelliği Bağla** eski Windows iş akışı Tasarımcısı'nda iletişim kutusu. .NET Framework sürüm 3.5 veya WinFX hedeflemek gerektiğinde eski iş akışı Tasarımcısı kullanın.
 
  Bir bağımlılık özelliğinin bir örneği türü, başka bir etkinliğin ortak özelliği veya olayı bağlanabilir. Etkinlik bağlama hakkında daha fazla bilgi için bkz: [kullanarak bağımlılık özelliklerini](http://go.microsoft.com/fwlink?LinkID=65007).
 

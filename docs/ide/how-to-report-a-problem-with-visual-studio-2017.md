@@ -1,20 +1,22 @@
 ---
-title: Visual Studio 2017 ile ilgili bir sorun bildirme | Microsoft Docs
+title: Visual Studio 2017 ile ilgili bir sorun bildirme
+description: Böylece biz tanılamak ve düzeltmek için Microsoft Visual Studio 2017 ile ilgili bir sorun bildirmek öğrenin.
 ms.custom: ''
 ms.date: 03/11/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: eacb6ba97f79f2c66444bc79b11c51ef01a50672
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Visual Studio 2017 ile ilgili bir sorun bildirme
 
@@ -28,7 +30,7 @@ Zaten yapmadıysanız, oturum açma Visual Studio için önce bir sorunu bildiri
 2. Oturumunuz açık değil, seçin **oturum**; aşağıdaki ekran görüntüsünde gösterildiği gibi aracı sağ tarafta olur.
 3. Ekran oturum açmak için yönergeleri izleyin.
 
- ![Bir sorunu bildirmek oturum](../ide/media/sign-in-new-ux.png "bir sorunu bildirmek oturum açın")  
+ ![Bir sorunu bildirmek oturum](../ide/media/sign-in-new-ux.png "bir sorunu bildirmek oturum açın")
 
 ## Arama ve oy benzer sorunlar için <a name="search_and_vote"></a>
 

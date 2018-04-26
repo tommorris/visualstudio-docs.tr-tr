@@ -1,9 +1,9 @@
 ---
-title: Visual Basic Visual Studio ile çalışmaya başlama | Microsoft Docs
+title: Visual Basic Visual Studio ile çalışmaya başlama
 ms.custom: ''
 ms.date: 12/08/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -13,32 +13,44 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c3fe8351196e11073e836d875e940a9ce17d36
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Visual Basic Visual Studio ile çalışmaya başlama
+
 Bu öğreticide için Visual Basic (VB), oluşturmak ve birkaç farklı konsol uygulamaları çalıştırmak için Visual Studio'yu kullanın ve bazı Visual Studio özelliklerini keşfedin [tümleşik geliştirme ortamı (IDE)](visual-studio-ide.md) bunu yaparken.
 
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
+
 Burada, bazı temel kavramları tanıtmak için bir hızlı sık sorulan sorular verilmiştir.
+
 ### <a name="what-is-visual-basic"></a>Visual Basic nedir?
+
 Visual Basic öğrenmek kolay olması için tasarlanmış bir tür kullanımı uyumlu programlama dilidir. "Başlangıç çok amaçlı simgesel yönerge kodu" anlamına gelir BASİC'ten türetilir.
+
 ### <a name="what-is-visual-studio"></a>Visual Studio nedir?
-Visual Studio, geliştiriciler için üretkenlik araçları'nın bir tümleşik geliştirme paketidir. Bunu, programları ve uygulamaları oluşturmak için kullanabileceğiniz bir program olarak düşünün.  
+
+Visual Studio, geliştiriciler için üretkenlik araçları'nın bir tümleşik geliştirme paketidir. Bunu, programları ve uygulamaları oluşturmak için kullanabileceğiniz bir program olarak düşünün.
+
 ### <a name="what-is-a-console-app"></a>Bir konsol uygulaması nedir?
+
 Bir konsol uygulaması girdi alır ve çıktı paketini bir komut satırı penceresinde görüntüler bir konsol.
+
 ### <a name="what-is-net-core"></a>.NET Core nedir?
+
 .NET core .NET Framework'ün Açılım sonraki adımdır. Burada .NET Framework, kod programlama dilleri arasında paylaşmak izin .NET Core kod platformları arasında paylaşmak yeteneği ekler. Bile, onu açık kaynak daha iyidir. (.NET Framework ve .NET Core kitaplıkları, kodunuzu çalıştırmak için bir sanal makine olarak davranan bir ortak dil çalışma zamanı (CLR) yanı sıra önceden oluşturulmuş işlevselliği içerir.)
 
 ## <a name="start-developing"></a>Geliştirmeye başlayın
+
 Geliştirmeye başlamak hazır mısınız? Gidelim!
 
 ### <a name="create-a-project"></a>Proje oluşturma
+
 İlk olarak, bir Visual Basic uygulama projesi oluşturacağız. Proje türü herhangi bir şey bile eklediğiniz önce ihtiyacınız vardır tüm şablonu dosyalarıyla birlikte verilir!
 
 1. Visual Studio 2017'ni açın.
@@ -62,11 +74,13 @@ Görmüyorsanız, **konsol uygulaması (.NET Core)** proje şablonu, alabilirsin
    ![Visual Studio yükleyicisi .NET core platformlar arası geliştirme iş yükü](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Seçenek 2: araçlar menü çubuğu'nu kullanın
+
 1. İşyeri dışında iptal **yeni proje** iletişim kutusuna ve üst menü çubuğundan seçin **Araçları** > **alma araçları ve özelliklerinin...** .
 
 2. Visual Studio yükleyicisi başlatır. Seçin **.NET Core platformlar arası geliştirme** iş yükü ve ardından **Değiştir**.   
 
 ## <a name="create-a-what-is-your-name-application"></a>"Ne olduğunu adınız" uygulaması oluşturma
+
 İçin adınızı ister ve sonra tarih ve saati ile birlikte görüntüleyen bir uygulama oluşturalım. İşte nasıl:
 
 1. Zaten açık değilse, ardından açın, *WhatIsYourName* projesi.
@@ -93,6 +107,7 @@ Görmüyorsanız, **konsol uygulaması (.NET Core)** proje şablonu, alabilirsin
 5. Konsol penceresini kapatmak için herhangi bir tuşa basın.
 
 ## <a name="create-a-calculate-this-application"></a>"Bu Hesapla" bir uygulama oluşturma
+
 1. Visual Studio 2017'ni açın ve ardından üst menü çubuğundan **dosya** > **yeni** > **proje...** .
 
 2. İçinde **yeni proje** iletişim kutusunun sol bölmesinde **Visual Basic**ve ardından **.NET Core**. Orta bölmede seçin **konsol uygulaması (.NET Core)**. Dosya adı *CalculateThis*.  
@@ -123,6 +138,7 @@ Görmüyorsanız, **konsol uygulaması (.NET Core)** proje şablonu, alabilirsin
     ![Hangi eylemler istemlerinde içeren CaluculateThis uygulama gösteren konsol penceresi.](../ide/media/vb-console-calculate-this.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
+
 Bu öğreticiyi tamamlamak Tebrikler! Visual Basic ve Visual Studio IDE hakkında daha fazla bilgi edinmek için şu sayfalara bakın.
 
 * [Visual Basic Kılavuzu](/dotnet/visual-basic/index)

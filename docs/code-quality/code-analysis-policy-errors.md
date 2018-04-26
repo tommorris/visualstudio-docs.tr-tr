@@ -1,6 +1,7 @@
 ---
 title: Kod Çözümleme İlkesi Hataları
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 625b67972095728d1e9f5c0fd9fa9e5d8da60786
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac981d51dd11b03d7ce35f2583f2c91274129714
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-analysis-policy-errors"></a>Kod Çözümleme İlkesi Hataları
 Kod çözümleme İlkesi giriş sırasında gerçekleşmedi aşağıdaki hatalar oluşur:
@@ -32,7 +33,7 @@ Kod çözümleme İlkesi giriş sırasında gerçekleşmedi aşağıdaki hatalar
 
 3.  Visual Studio'da belirtilen kural tüm kural takım projesi için Kod Analizi İade İlkesi'nde belirtilen kümesi içinde belirtilen kurallar içermiyor.
 
- **Kod çözümleme İlkesi başarısız oldu. Proje {0} hataları var veya yapı güncel değil.**
+ **Kod çözümleme İlkesi başarısız oldu. Projede hatalar var. {0} veya yapı güncel değil.**
 
  Derleme hataları içeriyor veya hataları düzeltilen ancak kod analizi sonra düzeltme gerçekleştirilmedi.
 
@@ -44,31 +45,31 @@ Kod çözümleme İlkesi giriş sırasında gerçekleşmedi aşağıdaki hatalar
 
  Kod çözümleme İlkesi iade edildi tüm dosyalar şu anda açık çözümde olmasını gerektirir. Bu hata, açık olan bir çözüm yoktur, ancak "bekleyen onay işareti" görünümünde bazı dosyalar şu anda açık çözüm parçası olmayan tetiklenir. Bu hatayı düzeltmek için iade edilmesi dosyasını içeren çözümü açın.
 
- **'{0}' sürümü doğru değil. Güçlü-ilkesinde belirtilen adı '{1}' dir.**
+ **Sürümü '{0}' doğru değil. Güçlü-ilkesinde belirtilen adı '{1}'.**
 
  Bu hata, .NET projeler için geçerlidir. Kod çözümleme İlkesi tarafından istenen bir kural .dll yerel bilgisayarda var ancak sürüm/ortak anahtar eşleşmiyor. Bu hatayı düzeltmek için ilke Oluşturucusu .dll güncelleştirmeniz gerekir *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static analiz Tools\FxCop\Rules\\*  bilgisayarlarında dizin.
 
- **ilkede belirtilen '{0}' derlemesi yok.**
+ **'{0}' ilkesinde belirtilen derleme yok.**
 
  Bu hata, .NET projeler için geçerlidir. Kod çözümleme İlkesi tarafından istenen bir kural, istemci bilgisayarda yüklü karşılık gelen dll yok. Bu hatayı düzeltmek için ilke Oluşturucusu DLL'de güncelleştirmelisiniz *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static analiz Tools\FxCop\Rules\\*  bilgisayarlarında dizin.
 
- **Proje {0} kural ayarları kod çözümleme İlkesi uyumlu değildir.**
+ **Proje {0} kural ayarları olmayan kod çözümleme İlkesi ile uyum içinde.**
 
  Bu hata, .NET projeler için geçerlidir. Yönetilen kod kural ayarları İlkesi gerektiriyor olarak kesin değildir. Bu hatayı düzeltmek için istemci ayarını aynı olması gerekir veya sunucu üzerindeki ilke daha katı.
 
- **Kod çözümleme etkin yapılandırmasına etkin değil. Yapılandırma {0} geçin ve iade etmeden önce proje {1} oluşturun.**
+ **Kod çözümleme etkin yapılandırmasına etkin değil. Geçiş için yapılandırma {0} ve projeyi {1} iade etmeden önce.**
 
  İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]etkin yapılandırma etkin Kod Analizi yok ancak etkinleştirilmiş en az bir kod analizi yok.
 
- **Proje {0} Özellikleri'nde yönetilen ikili dosyaları için Kod Analizi etkinleştirin ve iade etmeden önce yapı gerekir.**
+ **Projede yönetilen ikili dosyaları için Kod Analizi etkinleştirmelisiniz {0} özellikleri ve iade etmeden önce oluşturma.**
 
  Bu hata uygulandığı [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] .NET uygulamaları. Gerçekleştirilecek yönetilen kod çözümleme İlkesi gerektiriyor, ancak geçerli projede istemci üzerinde etkin değil.
 
- **Kod çözümleme proje {0} Özellikleri'nde etkinleştirmek ve iade etmeden önce yapı gerekir.**
+ **Kod çözümleme projesinde etkinleştirmelisiniz {0} özellikleri ve iade etmeden önce oluşturma.**
 
  Bu hata uygulanan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeleri ve Web projeleri. Gerçekleştirilecek yönetilen kod çözümleme İlkesi gerektiriyor, ancak geçerli projede istemci üzerinde etkin değil.
 
- **C/C++ Kod Analizi proje {0} özellikleri etkinleştirmek ve iade etmeden önce yapı gerekir.**
+ **C/C++ Kod Analizi projesinde etkinleştirmelisiniz {0} özellikleri ve iade etmeden önce oluşturma.**
 
  Bu hata, yönetilmeyen projeler için geçerlidir. Kod çözümleme İlkesi C/C++ için Kod Analizi gerektirir, ancak geçerli projede istemci üzerinde etkin değil.
 

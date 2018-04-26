@@ -1,7 +1,9 @@
 ---
-title: Eski iş akışı etkinlikleri | Microsoft Docs
+title: İş Akışı Tasarımcısı - eski iş akışı etkinlikleri
 ms.date: 01/18/2017
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, activities
 - activities
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ff7ac208d4b06ce454ef309d35400cb79f97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45c24c0be518e58ce87af11a38486818ca4a3ac7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="legacy-workflow-activities"></a>Eski iş akışı etkinlikleri
 
-[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] Varsayılan bir işlevsellik denetim akışı, koşullar, olay işleme, durum yönetimi ve iletişim için uygulamaları ve hizmetleri sağlamak etkinlikleri içerir. İş akışları tasarlarken, Windows iş akışı tasarımcısı tarafından sağlanan sistem tarafından sağlanan etkinlikler kullanabilir veya kendi özel etkinlikler oluşturabilirsiniz.
+Windows Workflow Foundation (WF) varsayılan bir işlevsellik denetim akışı, koşullar, olay işleme, durum yönetimi ve iletişim için uygulamaları ve hizmetleri sağlamak etkinlikleri içerir. İş akışları tasarlarken, Windows iş akışı tasarımcısı tarafından sağlanan sistem tarafından sağlanan etkinlikler kullanabilir veya kendi özel etkinlikler oluşturabilirsiniz.
 
- Aşağıdaki tabloda [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] framework out-of-box etkinlik kümesi. Birçok, ancak tüm, bu etkinliklerini erişilebilen etkinlik tasarımcıları tarafından temsil edilen **araç** , [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Bir etkinlik oluşturmak için kendi Tasarımcısından sürükleyin **araç** ve tasarım yüzeyine bırakın.
+Aşağıdaki tabloda, Windows Workflow Foundation framework out-of-box etkinlik kümesi listelenir. Birçok, ancak tüm, bu etkinliklerini erişilebilen etkinlik tasarımcıları tarafından temsil edilen **araç** iş akışı Tasarımcısı'nın. Bir etkinlik oluşturmak için kendi Tasarımcısından sürükleyin **araç** ve tasarım yüzeyine bırakın.
 
 |Etkinlik|Açıklama|
 |--------------|-----------------|
@@ -64,7 +66,7 @@ ms.lasthandoff: 04/16/2018
 |<xref:System.Workflow.Activities.WebServiceOutputActivity>|Bir iş akışı için yapılan bir Web hizmeti isteğine yanıt verir. Daha fazla bilgi için bkz: [kullanarak WebServiceOutputActivity etkinliğini](http://go.microsoft.com/fwlink?LinkID=65092).|
 |<xref:System.Workflow.Activities.WhileActivity>|Bir koşul yerine getirilene kadar döngü için iş akışınıza sağlar. Daha fazla bilgi için bkz: [WhileActivity etkinliğini kullanarak](http://go.microsoft.com/fwlink?LinkID=65091).|
 
- Özel etkinlikler oluşturma hakkında daha fazla bilgi için bkz: [geliştirme özel etkinlikler](http://go.microsoft.com/fwlink?LinkID=65023) ve [eski etkinlik Tasarımcısı'nı kullanarak](../workflow-designer/using-the-legacy-activity-designer.md).
+Özel etkinlikler oluşturma hakkında daha fazla bilgi için bkz: [geliştirme özel etkinlikler](http://go.microsoft.com/fwlink?LinkID=65023) ve [eski etkinlik Tasarımcısı'nı kullanarak](../workflow-designer/using-the-legacy-activity-designer.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

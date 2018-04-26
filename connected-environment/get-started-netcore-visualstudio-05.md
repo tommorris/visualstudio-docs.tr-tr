@@ -1,18 +1,19 @@
 ---
 title: .NET Core geliştirme ortamı Visual Studio - adım 5 - çağrısı ile bulutta Kubernetes kullanarak kapsayıcıları ile başka bir kapsayıcı oluşturun. | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Kapsayıcılar ve Azure üzerinde mikro ile hızlı Kubernetes geliştirme
 keywords: Docker, Kubernetes, Azure, AKS, Azure kapsayıcı hizmeti, kapsayıcıları
-manager: ghogen
-ms.openlocfilehash: 8b0a0c78496b8f57764383d737e2a1cebb2dd6b9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: ab3934e6f7f013dd21309dc8c98461983bdfe30a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core-and-visual-studio"></a>Bağlı ortam .NET Core ve Visual Studio ile çalışmaya başlama
 
@@ -30,7 +31,7 @@ Amacıyla, şimdi örnek kod bir GitHub depodan karşıdan yükleme süresi. Git
 1. Projeyi açın `mywebapi` içinde bir *ayrı Visual Studio penceresi*.
 1. Seçin **bağlı ortam AKS için** yazarken başlatma ayarları açılır alanından daha önce yaptığınız `webfrontend` projesi. Bu zaman yeni bir geliştirme ortamı oluşturmak yerine, aynı önceden oluşturulmuş seçin. Olarak daha önce alan varsayılan için bırakın `mainline` tıklatıp **Tamam**. Çıkış penceresinde "Bu yeni hizmet geliştirme ortamınızı ayarlama hata ayıklama, başlattığınızda interneti hızlandırmak için normal" Visual Studio başladığında karşılaşabilirsiniz
 1. F5'e basın ve hizmet oluşturmak ve dağıtmak bekleyin. Visual Studio durum çubuğu turuncu döndüğünde hazır olduğunu biliyor olmalısınız
-1. URL görüntülenen endpoint not edin **bağlı ortam AKS için** bölmesinde **çıkış** penceresinde http://localhost şöyle görünür:\<BağlantıNoktasıNumarası\>. Kapsayıcı yerel olarak çalışıyor, ancak gerçekte Azure bizim geliştirme ortamında çalışıyor gibi görünebilir.
+1. URL görüntülenen endpoint not edin **bağlı ortam AKS için** bölmesinde **çıkış** penceresinde, onu görünür aşağıdakine benzer http://localhost: \<BağlantıNoktasıNumarası\>. Kapsayıcı yerel olarak çalışıyor, ancak gerçekte Azure bizim geliştirme ortamında çalışıyor gibi görünebilir.
 1. Zaman `mywebapi` hazır, localhost adresine tarayıcınızı açın ve sona `/api/values` için varsayılan GET API çağrılacak URL'ye `ValuesController`. 
 1. Tüm adımları başarılı olursa, yanıt görüyor olmalısınız `mywebapi` şöyle hizmet.
 

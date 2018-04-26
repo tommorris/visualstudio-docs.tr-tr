@@ -13,14 +13,15 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed9bcb4521b5e9bdad839563aae1c566d20a5681
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8fbbf6a28d63e755929cc9d8a6c62ff7649b2f1c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>N katmanlı veri kümesine doğrulama ekleme
 N katmanlı çözümünü ayrılmış bir veri kümesine doğrulama ekleme temelde tek dosya dataset (veri kümesinde tek bir proje) için doğrulama ekleme ile aynıdır. Verileri doğrulama gerçekleştirmek için önerilen sırasında konumdur <xref:System.Data.DataTable.ColumnChanging> ve/veya <xref:System.Data.DataTable.RowChanging> veri tablosu olayları.

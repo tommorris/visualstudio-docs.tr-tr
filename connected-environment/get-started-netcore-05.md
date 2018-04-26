@@ -1,18 +1,19 @@
 ---
 title: Bir .NET Core geliştirme ortamı oluşturma - adım 5 - bulutta Kubernetes kullanarak kapsayıcıları çağrı başka bir kapsayıcı | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Kapsayıcılar ve Azure üzerinde mikro ile hızlı Kubernetes geliştirme
 keywords: Docker, Kubernetes, Azure, AKS, Azure kapsayıcı hizmeti, kapsayıcıları
-manager: ghogen
-ms.openlocfilehash: 15ca1db26bc57aafa704a57b4464b31a1ada8c92
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: 6ef3a79d0b79feae64adcaebe31daa48ba75ab75
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core"></a>.NET Core bağlı ortamıyla kullanmaya başlama
 
@@ -29,7 +30,7 @@ Amacıyla, şimdi örnek kod bir GitHub depodan karşıdan yükleme süresi. Git
 ## <a name="run-mywebapi"></a>Çalıştırma *mywebapi*
 1. Klasörü açın `mywebapi` içinde bir *ayrı VS Code pencere*.
 1. F5'e basın ve hizmet oluşturmak ve dağıtmak bekleyin. VS Code hata ayıklama çubuğu görüntülendiğinde hazır anlarsınız.
-1. Not uç nokta URL'sini http://localhost şöyle görünür:\<BağlantıNoktasıNumarası\>. **İpucu: VS Code durum çubuğu tıklanabilir bir URL görüntülenir.** Kapsayıcı yerel olarak çalışıyor, ancak gerçekte Azure bizim geliştirme ortamında çalışıyor gibi görünebilir. Localhost adresi çünkü nedeni `mywebapi` ortak uç nokta tanımlı değil ve yalnızca Kubernetes örneği içinde erişilebilir. Size kolaylık sağlamak için ve yerel makinenize özel hizmetinden etkileşimde kolaylaştırmak için bağlı ortam Azure'da çalışan kapsayıcısı geçici bir SSH tüneli oluşturur.
+1. Not uç nokta URL'sini şu şekilde görünür http://localhost: \<BağlantıNoktasıNumarası\>. **İpucu: VS Code durum çubuğu tıklanabilir bir URL görüntülenir.** Kapsayıcı yerel olarak çalışıyor, ancak gerçekte Azure bizim geliştirme ortamında çalışıyor gibi görünebilir. Localhost adresi çünkü nedeni `mywebapi` ortak uç nokta tanımlı değil ve yalnızca Kubernetes örneği içinde erişilebilir. Size kolaylık sağlamak için ve yerel makinenize özel hizmetinden etkileşimde kolaylaştırmak için bağlı ortam Azure'da çalışan kapsayıcısı geçici bir SSH tüneli oluşturur.
 1. Zaman `mywebapi` olan hazır, localhost adresine tarayıcınızı açın. Append `/api/values` için varsayılan GET API çağrılacak URL'ye `ValuesController`. 
 1. Tüm adımları başarılı olursa, yanıt görüyor olmalısınız `mywebapi` hizmet.
 

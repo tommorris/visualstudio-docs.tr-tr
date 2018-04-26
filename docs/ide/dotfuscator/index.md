@@ -1,9 +1,9 @@
 ---
-title: Dotfuscator Community Edition (CE) | Microsoft Docs
-ms.date: 2017-10-10
+title: Dotfuscator Community Edition (CE)
+ms.date: 10/10/2017
 ms.devlang: dotnet
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 keywords: Dotfuscator Dotfuscator CE, PreEmptive, PreEmptive tarafından çözümleri PreEmptive tarafından koruma, koruma, community edition, gizleme, .NET, ücretsiz, Visual Studio 2017
 helpviewer_keywords:
@@ -16,12 +16,13 @@ helpviewer_keywords:
 description: Visual Studio 2017 içinde bulunan boş Dotfuscator Community Edition ile .NET uygulamalarınızın nasıl Koruyabileceğiniz hakkında bilgi edinin.
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e8e7fb56580e3b0b5a9db8e46d9b98b7c157f9f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22243a8d837e584df64c9fabc28405951f481b26
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -34,8 +35,8 @@ Ek programlama veya kaynak kodu bile erişimine gerek kalmadan derlenmiş derlem
 ## <a name="why-protection-matters"></a>Koruma neden önemlidir?
 
 Önemlidir **fikri mülkiyet korumak** (IP).
-Uygulamanızın kodunu IP kabul edilebilir tasarım ve uygulama ayrıntıları içerir.
-Ancak, .NET Framework uygulamaları yerleşik [önemli meta verileri ve üst düzey Ara kodu içeren][assemblies], bunları çok ters mühendislik kolaylaşır, yalnızca birini birçok boş kullanarak otomatik Araçları.
+Uygulamanızın kodunu IP kabul edilebilir, tasarım ve uygulama ayrıntıları içerir.
+Ancak, .NET Framework uygulamaları yerleşik [önemli meta verileri ve üst düzey Ara kodu içeren][assemblies], bunları ters mühendislik kolaylaşır, yalnızca birini birçok boş kullanarak otomatik Araçları.
 Kesintiye ve durdurma ters mühendislik, yetkisiz IP açığa çıkmasını önlemek, aynı zamanda kodunuzu ticari sır içerdiğini gösterir.
 Dotfuscator yapabilirsiniz [belirsizleştirirseniz] [ obfuscation] .NET derlemeleriniz özgün uygulama davranışına koruyarak ters mühendislik azaltabilir.
 
@@ -70,42 +71,42 @@ Dotfuscator geliştirme hakkında daha fazla bilgi için bkz: [yükseltmeler say
 
 Visual Studio'dan Dotfuscator CE'ı kullanmaya başlamak için yazın `dotfuscator` içine **hızlı başlatma** (Ctrl + Q) arama çubuğu.
 
-* Dotfuscator CE zaten yüklediyseniz, bu getirir *menü* Dotfuscator CE kullanıcı arabirimini başlatmak için seçeneği. Ayrıntılar için bkz [tam Dotfuscator CE Kullanıcı Kılavuzu'na Başlarken sayfasında][get-started].
-* Dotfuscator CE henüz yüklü değilse, bu ilgili çıkarır *yükleme* seçeneği. Bkz: [yükleme sayfası] [ install] Ayrıntılar için.
+* Dotfuscator CE zaten yüklediyseniz, **hızlı başlatma** getirir *menü* Dotfuscator CE kullanıcı arabirimini başlatmak için seçeneği. Ayrıntılar için bkz [tam Dotfuscator CE Kullanıcı Kılavuzu'na Başlarken sayfasında][get-started].
+* Dotfuscator CE henüz yüklü değilse, **hızlı başlatma** ilgili getirir *yükleme* seçeneği. Bkz: [yükleme sayfası] [ install] Ayrıntılar için.
 
 Ayrıca alabilirsiniz **en son sürümünü** Dotfuscator CE'den, [preemptive.com Dotfuscator indirmeleri sayfasında][download].
 
 ## <a name="full-documentation"></a>Tam belgeleri
 
-Bu sayfa ve onun alt sayfaları Dotfuscator CE'in özellikleri, üst düzey bir genel bakış sağlayan yanı [aracı yüklemek için yönergeleri][install].
+Bu sayfayı ve alt sayfalarını Dotfuscator CE'in özellikleri, üst düzey bir genel bakış sağlayan yanı [aracı yüklemek için yönergeleri][install].
 
-Lütfen bakın [tam Dotfuscator CE kullanıcı Guide'a preemptive.com] [ full] dahil olmak üzere ayrıntılı kullanım yönergeleri için [Dotfuscator CE kullanıcı arabirimini kullanarak başlatmak nasıl] [get-started].
+Bkz: [tam Dotfuscator CE kullanıcı Guide'a preemptive.com] [ full] dahil olmak üzere ayrıntılı kullanım yönergeleri için [Dotfuscator CE kullanıcı arabirimini kullanarak başlatmak nasıl] [ get-started].
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-[assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
-[software-protection]: https://www.preemptive.com/software-protection
-[obfuscation]: https://www.preemptive.com/obfuscation
-[app-protection]: https://www.preemptive.com/application-protection
-[sdl-protection]: https://www.preemptive.com/solutions/SDL-App-Protection
-[net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
-[download]: https://www.preemptive.com/products/dotfuscator/downloads
+- [assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
+- [software-protection]: https://www.preemptive.com/software-protection
+- [obfuscation]: https://www.preemptive.com/obfuscation
+- [app-protection]: https://www.preemptive.com/application-protection
+- [sdl-protection]: https://www.preemptive.com/solutions/SDL-App-Protection
+- [net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
+- [download]: https://www.preemptive.com/products/dotfuscator/downloads
 
-[install]: install.md
-[capabilities]: capabilities.md
-[upgrades]: upgrades.md
+- [install]: install.md
+- [capabilities]: capabilities.md
+- [upgrades]: upgrades.md
 
-[get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
+- [get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
-[renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
+- [renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-[checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
-[tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
-[debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
-[shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
+- [checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
+- [tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
+- [debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
+- [shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
 
-[exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
+- [exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
+- [sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
+- [features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
-[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
+- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html

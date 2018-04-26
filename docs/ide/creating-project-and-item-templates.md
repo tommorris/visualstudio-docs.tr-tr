@@ -1,7 +1,7 @@
 ---
-title: Projeler ve dosyalar için Visual Studio şablonları | Microsoft Docs
-ms.custom: ''
+title: Projeler ve dosyalar için Visual Studio şablonları
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 900b750df391029a1bed15b2da003f94c085148a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e595392f92c99f6f73d2a9d999356641c14b096d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="project-and-item-templates"></a>Proje ve öğe şablonları
 
@@ -52,8 +52,8 @@ Başlangıç paketleri diğer topluluk üyeleriyle paylaşılabilir Gelişmiş �
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md)  
-[Nasıl yapılır: öğe şablonları oluşturma](../ide/how-to-create-item-templates.md)  
-[Şablon parametreleri](../ide/template-parameters.md)  
-[Şablonlarını özelleştirme](../ide/customizing-project-and-item-templates.md)  
-[Visual Studio şablonları NuGet paketleri](/nuget/visual-studio-extensibility/visual-studio-templates)
+- [Nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md)
+- [Nasıl yapılır: öğe şablonları oluşturma](../ide/how-to-create-item-templates.md)
+- [Şablon parametreleri](../ide/template-parameters.md)
+- [Şablonlarını özelleştirme](../ide/customizing-project-and-item-templates.md)
+- [Visual Studio şablonları NuGet paketleri](/nuget/visual-studio-extensibility/visual-studio-templates)

@@ -19,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dd9ae424ffbfab08ec7e8a405528188bb756f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e1a674e854aaf587aca28f096883839ebd82e1e8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında sözde değişkenler
 Sözde değişkenler olan bir değişken penceresinde belirli bilgileri görüntülemek için kullanılan terimler veya **QuickWatch** iletişim kutusu. Normal bir değişken girersiniz aynı şekilde bir pseudovariable girebilirsiniz. Sözde değişkenler değil değişkenleri, ancak ve değişken adlarıyla programınızdaki karşılık.  
@@ -49,7 +49,7 @@ $handles
 |`$` *RegisterName*<br /><br /> veya<br /><br /> `@` *RegisterName*|Kayıt içeriğini görüntüler *registername*.<br /><br /> Normalde, yalnızca kayıt adı girerek yazmaç içerikleri görüntüleyebilirsiniz. Yazmaç adı bir değişken adı overloads şu sözdizimini kullanmanız gereken yalnızca bir kez durumdur. Yazmaç adı geçerli kapsamdaki bir değişken adı ile aynı olduğunda, hata ayıklayıcı adı değişken adı olarak yorumlar. Ne zaman olan `$` *registername* veya `@` *registername* faydalı olur.|  
 |`$clk`|Saat döngüleri süreyi görüntüler.|  
 |`$user`|Uygulama çalıştıran hesabın hesap bilgileriyle yapısını görüntüler. Güvenlik nedenleriyle, parola bilgilerini görüntülenmez.|  
-|`$exceptionstack`|Geçerli Windows çalışma zamanı özel durum yığın izlemesi görüntüler. `$ exceptionstack` yalnızca UWP uygulamalarında çalışır. `$ exceptionstack` C++ ve özel durumlar için desteklenmiyor|  
+|`$exceptionstack`|Geçerli Windows çalışma zamanı özel durum yığın izlemesi görüntüler. `$ exceptionstack` yalnızca UWP uygulamalarında çalışır. `$ exceptionstack` C++ ve SEH özel durumlar için desteklenmiyor|  
 |`$ReturnValue`|.NET Framework yönteminin dönüş değeri görüntüler.|  
   
  C# ve Visual Basic bu tabloda gösterilen sözde değişkenler kullanabilirsiniz:  

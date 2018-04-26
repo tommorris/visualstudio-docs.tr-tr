@@ -1,9 +1,9 @@
 ---
-title: Dotfuscator Community Edition (CE) yükleme | Microsoft Docs
-ms.date: 2017-06-22
+title: Dotfuscator Community Edition (CE) yükleyin
+ms.date: 06/22/2017
 ms.devlang: dotnet
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 keywords: Dotfuscator Dotfuscator CE, PreEmptive, PreEmptive tarafından çözümleri PreEmptive tarafından koruma, koruma, community edition, gizleme, .NET, ücretsiz, Visual Studio 2017 yükleyin
 helpviewer_keywords:
@@ -21,12 +21,13 @@ helpviewer_keywords:
 description: Ücretsiz Dotfuscator Community Edition Visual Studio 2017 dahil yüklemeyi öğrenin.
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 871ec8c98bac4477ef95c85688484011027e2d20
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cfacf9f394e411cc89a6722aaf03ac74bc114f63
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE) yükleyin
 
@@ -75,9 +76,9 @@ Yükleme tamamlandıktan sonra Dotfuscator CE kullanmaya başlayabilirsiniz. Ayr
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-[2017-install]: https://www.visualstudio.com/downloads/#vs-2017
-[get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
+- [2017-install]: https://www.visualstudio.com/downloads/#vs-2017
+- [get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
-[download]: https://www.preemptive.com/products/dotfuscator/downloads
+- [download]: https://www.preemptive.com/products/dotfuscator/downloads
 
-[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_install.html
+- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_install.html

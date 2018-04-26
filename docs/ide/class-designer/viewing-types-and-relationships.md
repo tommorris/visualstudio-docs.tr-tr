@@ -1,9 +1,8 @@
 ---
-title: Türleri ve ilişkileri (Sınıf Tasarımcısı) görüntüleme | Microsoft Docs
-ms.custom: ''
+title: Türleri ve İlişkilendirmeleri Görüntüleme (Sınıf Tasarımcısı)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
@@ -18,22 +17,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd28f26fe9b5a91e2b7c2a7fc95c30151f9de0c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca553f4d7b0cf2704950967e5666981ee84eda67
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="viewing-types-and-relationships-class-designer"></a>Türleri ve İlişkilendirmeleri Görüntüleme (Sınıf Tasarımcısı)
+# <a name="view-types-and-relationships-class-designer"></a>Görünüm türleri ve ilişkileri (Sınıf Tasarımcısı)
 
-Sınıf Tasarımcısı türleri ayrıntılarını örneğin göstermek için sınıf diyagramları, bağlı üyeleri ve paylaştıkları ilişkileri kullanır. Bu varlıklar görselleştirme gerçekte dinamik koda görülmektedir. Bu tasarımcı türlerinde düzenleyin ve varlığın kaynak kodunda yansıtılan düzenlemeleriniz bkz anlamına gelir. Benzer şekilde, sınıf diyagramı varlıklar kodunda yaptığınız değişiklikler ile eşitlenmiş tutulur.
+**Sınıf Tasarımcısı** kullandığı sınıf diyagramları türleri ayrıntılarını örneğin göstermek için bağlı üyeleri ve paylaştıkları ilişkiler. Bu varlıklar görselleştirme gerçekte dinamik koda görülmektedir. Bu tasarımcı türlerinde düzenleyin ve varlığın kaynak kodunda yansıtılan düzenlemeleriniz bkz anlamına gelir. Benzer şekilde, sınıf diyagramı varlıklar kodunda yaptığınız değişiklikler ile eşitlenmiş tutulur.
 
 > [!NOTE]
 > Proje türü için yapı kadar projeniz sınıf diyagramında içeriyorsa ve projenize başka bir projesinde bulunan bir tür başvuruyorsa, sınıf diyagramı başvurulan tür göstermez. Benzer şekilde, bu varlık için projeyi yeniden kadar diyagram değişiklikleri Dış varlık kodu görüntülemez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfları ve türleri tasarlama](designing-classes-and-types.md)  
-[Sınıfları ve Türleri Yeniden Düzenleme](refactoring-classes-and-types.md)  
-[Nasıl yapılır: sınıf diyagramlarını özelleştirme](how-to-customize-class-diagrams.md)  
-[Sınıf Diyagramları ile Çalışma](working-with-class-diagrams.md)
+- [Sınıfları ve Türleri Tasarlama ve Görüntüleme (Sınıf Tasarımcısı)](designing-and-viewing-classes-and-types.md)
+- [Sınıfları ve Türleri Yeniden Düzenleme](refactoring-classes-and-types.md)
+- [Nasıl yapılır: sınıf diyagramlarını özelleştirme](how-to-customize-class-diagrams.md)
+- [Sınıf Diyagramları ile Çalışma](working-with-class-diagrams.md)

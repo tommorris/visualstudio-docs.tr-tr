@@ -1,6 +1,7 @@
 ---
 title: "CA1063: IDisposable'ı doğru uygulayın"
 ms.date: 02/12/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9205c20730681969550c3a2368e6ec889056648b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac3827dd8ed34a118bb3e4eaaed47bf7400cef90
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable'ı doğru uygulayın
 
@@ -60,21 +61,21 @@ Tüm IDisposable türleri Dispose kalıbını doğru uygulamalıdır.
 
 Kodunuzu inceleyebilir ve aşağıdaki çözümlerden hangisinin bu ihlali düzeltilecek belirleyebilirsiniz.
 
-- IDisposable {0} tarafından uygulanan ve temel sınıfın Dispose uygulama yerine geçersiz kılma arabirimleri listesinden kaldırın.
+- IDisposable tarafından uygulanan arabirimler listesinden kaldırmak {0} ve temel sınıfın Dispose uygulama geçersiz kılın.
 
-- Sonlandırıcıyı türünden {0} kaldırın (bool atma) Dispose geçersiz kılmak ve 'atma' yanlış olduğu bir kod yolunda sonlandırma mantığı yerleştirin.
+- Sonlandırıcıyı türünden kaldırmak {0}(bool atma) Dispose geçersiz kılabilir ve 'atma' yanlış olduğu bir kod yolunda sonlandırma mantığı yerleştirin.
 
-- {0} kaldırın (bool atma) Dispose geçersiz kılmak ve 'atma' doğru olduğu bir kod yolunda dispose mantığı yerleştirin.
+- Kaldırma {0}(bool atma) Dispose geçersiz kılabilir ve 'atma' doğru olduğu bir kod yolunda dispose mantığı yerleştirin.
 
-- Bu {0} ortak ve korumalı olarak bildirilmiş emin olun.
+- Emin {0} genel olarak bildirilen ve korumalı.
 
-- {0} 'Dispose' olarak yeniden adlandırın ve onu olarak ortak ve korumalı bildirildiğinden emin olun.
+- Yeniden Adlandır {0} 'Dispose' için ve onu olarak ortak ve korumalı bildirildiğinden emin olun.
 
-- Bu {0} korumalı olarak bildirilmiş emin, sanal ve korumasız hale getirir.
+- Olduğundan emin olun {0} korumalı olarak sanal bildirilen ve korumasız.
 
-- Dispose(true) çağırır sonra GC çağırır {0} değiştirin. Geçerli nesne örneği üzerinde SuppressFinalize ('this' veya 'Me' [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ve ardından döndürür.
+- Değiştirme {0} Dispose(true) çağırır böylece GC çağırır. Geçerli nesne örneği üzerinde SuppressFinalize ('this' veya 'Me' [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ve ardından döndürür.
 
-- Böylece Dispose(false) çağırır ve ardından döndürür {0} değiştirin.
+- Değiştirme {0} Dispose(false) çağırır ve ardından döndürür.
 
 - Bildirir ve IDisposable arabirimini uygulayan bir korumasız türü oluşturuyorsanız, IDisposable uygulanması bu bölümde daha önce açıklanan deseni izler emin olun.
 

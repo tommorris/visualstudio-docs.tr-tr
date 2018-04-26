@@ -1,6 +1,7 @@
 ---
 title: 'CA1013: Eşittir işlecini ekleme ve çıkarmayı aşırı yükleyerek aşırı yükleyin'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -19,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fd43cc3077c037b70eaa8107563bd8f40b6a096
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 11841248192bc9b726076641e1219f54ab526447
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Eşittir işlecini ekleme ve çıkarmayı aşırı yükleyerek aşırı yükleyin
 |||
@@ -75,8 +76,8 @@ return left.Equals(right);
 
  **Hatalı türü: {2,2} {2,2} eşit? Hayır**
 **iyi türü: {3,3} {3,3} eşit? Evet**
-**iyi türü: {3,3} == {3,3} misiniz?   Evet**
+**iyi türü: {3,3} {3,3} == misiniz?   Evet**
 **hatalı türü: {2,2} {9,9} eşit? Hayır**
-**iyi türü: {3,3} == {9,9} misiniz?   Yok**
+**iyi türü: {3,3} {9,9} == misiniz?   Yok**
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Eşitlik İşleçleri](/dotnet/standard/design-guidelines/equality-operators)

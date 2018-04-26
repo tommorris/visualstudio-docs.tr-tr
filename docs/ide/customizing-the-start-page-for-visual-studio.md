@@ -1,7 +1,7 @@
 ---
-title: Özel başlangıç sayfasını yükleyin veya Visual Studio başlangıç öğesi değiştirme | Microsoft Docs
-ms.custom: ''
+title: Özel başlangıç sayfasını yükleyin veya Visual Studio başlangıç öğesi değiştirme
 ms.date: 02/01/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9863fdfbfb73e49d0539ba1060f1e1c56888599c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5e32a311bcd60542df80518c791b1fbe413a7b2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Visual Studio için başlangıç sayfasını özelleştirme
 
@@ -52,4 +52,4 @@ Yapabilecekleriniz [kendi özel başlangıç sayfası oluşturma](../extensibili
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)
+- [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)

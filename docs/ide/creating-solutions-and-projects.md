@@ -1,7 +1,7 @@
 ---
-title: Visual Studio'da çözümler ve projeler oluşturma | Microsoft Docs
-ms.custom: ''
+title: Visual Studio'da çözümler ve projeler oluşturma
 ms.date: 02/06/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb984c1a6947438df663e228bb21bda4eea763c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d92cc8bcbc160dbc5cab10bffe30b08ba1cca7be
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-solutions-and-projects"></a>Çözümler ve projeler oluşturma
 
@@ -134,7 +134,7 @@ Geçici bir proje oluşturmak için ilk Git **Araçları** > **seçenekleri** > 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çözümler ve projeler](../ide/solutions-and-projects-in-visual-studio.md)  
-[Microsoft'un açık kaynak depoları github'da](https://github.com/Microsoft)  
-[Visual Studio Örnekleri](../ide/visual-studio-samples.md)  
-[Geliştirici kod örnekleri](https://code.msdn.microsoft.com/)
+- [Çözümler ve projeler](../ide/solutions-and-projects-in-visual-studio.md)
+- [Microsoft'un açık kaynak depoları github'da](https://github.com/Microsoft)
+- [Visual Studio Örnekleri](../ide/visual-studio-samples.md)
+- [Geliştirici kod örnekleri](https://code.msdn.microsoft.com/)

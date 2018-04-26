@@ -1,7 +1,7 @@
 ---
-title: Kod parçacıkları için en iyi uygulamalar | Microsoft Docs
-ms.custom: ''
+title: Kod Parçacıkları İçin En İyi Uygulamalar
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d11dcc87a4303937c226e5b7a4efebe8617f6f0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52845b2d8f08486f84422957ce8f38a95c1a4d31
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Kod parçacıkları için en iyi uygulamalar
 
@@ -70,6 +70,6 @@ IntelliSense kod parçacıkları Visual Studio tarafından yüklenen kendileri b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Basic IntelliSense kod parçacıkları](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[Uygulamalarının güvenliğini sağlama](../ide/securing-applications.md)  
-[Kod parçacıkları](../ide/code-snippets.md)
+- [Visual Basic IntelliSense kod parçacıkları](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [Uygulamalarının güvenliğini sağlama](../ide/securing-applications.md)
+- [Kod parçacıkları](../ide/code-snippets.md)

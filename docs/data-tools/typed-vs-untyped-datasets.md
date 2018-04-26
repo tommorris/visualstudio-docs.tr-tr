@@ -9,14 +9,15 @@ ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e5819a208a54a5a4235330216e46b5e17f1260fa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 32bbbe0aef325ee3866ec441404e30ec9f182b38
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="typed-vs-untyped-datasets"></a>Yazılmayan veri kümeleri yazılan
 Taban ilk türetilmiş bir veri kümesi türü belirtilmiş veri kümesi olan <xref:System.Data.DataSet> sınıfı ve dosyasındaki bilgileri kullanır **veri kümesi Tasarımcısı**, kesin türü belirtilmiş veri kümesi sınıfı, yeni, oluşturmak için bir .xsd dosyasında depolanır. (Tablolar, sütunlar ve benzeri) şema bilgileri oluşturulur ve bu yeni veri kümesi sınıfına birinci sınıf nesneler ve özelliklerinin bir küme olarak derlenmiş. Türü belirtilmiş veri kümesi temelden devralan çünkü <xref:System.Data.DataSet> sınıfı, belirlenmiş sınıf varsayar tüm işlevselliğini <xref:System.Data.DataSet> sınıfı ve bir örneği ele yöntemleriyle kullanılabilir bir <xref:System.Data.DataSet> sınıfı bir parametre olarak.

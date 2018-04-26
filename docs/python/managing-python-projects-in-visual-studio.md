@@ -1,6 +1,6 @@
 ---
 title: Python uygulama projeleri yönetme
-description: Visual Studio projelerinde amacını açıklayan, Python kodu için proje oluşturma ve yönetme gösterir ve Python için kullanılabilen farklı proje şablonları özetler.
+description: Visual Studio projelerinde amacı oluşturma ve Python projeleri için Python kodu ve kullanılabilir farklı proje şablonları yönetme.
 ms.date: 03/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7dcefe4a9d303c6d52fa88f478dc59c9c2cafe3d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f7425755f72929cbf2574d6420d9c2ec4c62dc20
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="python-projects"></a>Python projeleri
+# <a name="python-projects-in-visual-studio"></a>Visual Studio'da Python projeleri
 
 Python uygulamaları, genellikle yalnızca klasörleri ve dosyaları kullanılarak tanımlanır, ancak uygulamalar daha büyük hale ve belki de JavaScript web uygulamaları için otomatik olarak oluşturulan dosyaları içeren vb. gibi bu yapı karmaşık olabilir. Visual Studio projesi bu karışıklığı yönetmenize yardımcı olur. Proje (bir `.pyproj` dosyası) kaynak ve projenizi ile ilişkili içerik dosyalarını tanımlar, her dosya için yapı bilgileri içerir, kaynak denetimi sistemleriyle tümleştirmeyi bilgilerini korur ve uygulamanızı düzenlemenize yardımcı olur mantıksal bileşenlerine.
 

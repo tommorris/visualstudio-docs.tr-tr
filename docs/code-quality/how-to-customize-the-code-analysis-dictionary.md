@@ -1,6 +1,7 @@
 ---
 title: 'Nasıl yapılır: Kod Çözümleme Dizinini Özelleştirme'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 544343a701909957ff0c16a49beeaf081cf256b8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f1a0ecc19d5648d6ee9454a53c9b0a1ebcb5a2e1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Nasıl yapılır: Kod Çözümleme Dizinini Özelleştirme
 Kod çözümleme tanımlayıcıları kodunuzda yazımı, dilbilgisi çalışması ve diğer adlandırma kurallarına göre hataları denetlemek için yerleşik bir sözlük kullanır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yönergeleri. Eklemek, kaldırmak veya koşulları, kısaltmalar ve kısaltmalar yerleşik sözlüğüne değiştirmek için bir özel sözlük Xml dosyası oluşturabilirsiniz.

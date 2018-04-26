@@ -15,14 +15,15 @@ ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6fd36ace8949774c755a7a192e201b6d9011ff8b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ec2ff00c4d355b2683c888fcdb6a333bf15e1b99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>İzlenecek yol: bir işlemde veri kaydetme
 Bu kılavuzu kullanarak bir işlemde veri kaydetme gösterilmiştir <xref:System.Transactions> ad alanı. Bu kılavuzda bir Windows Forms uygulaması oluşturacaksınız. Northwind örnek veritabanında iki tablo için bir veri kümesi oluşturmak için veri kaynağı Yapılandırma Sihirbazı'nı kullanacaksınız. Veri bağlama denetimleri için Windows formu ve bir TransactionScope içinde veritabanını güncelleştirmek BindingNavigator'ın Kaydet düğmesi için kod değiştireceksiniz ekleyeceksiniz.

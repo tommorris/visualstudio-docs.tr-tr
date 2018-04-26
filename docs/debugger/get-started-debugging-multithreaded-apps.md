@@ -1,5 +1,6 @@
 ---
-title: Çok iş parçacıklı uygulamalarda hata ayıklama kullanmaya başlama | Microsoft Docs
+title: Birden çok iş parçacıklı uygulamalarda hata ayıklama öğrenin
+description: Paralel Yığınlar ve paralel Gözcü pencerelerini Visual Studio kullanarak hata ayıklama
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
 ms.technology: vs-ide-debug
@@ -18,13 +19,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 067f28cfbc90d26088b37eb40b730edca37533d2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bb178a0a048a3696fc2c1ec642127906c8b83424
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Visual Studio'da çok iş parçacıklı uygulamada hata ayıklama kullanmaya başlama
+# <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Visual Studio birden çok iş parçacıklı uygulamalarda hata ayıklama kullanmaya başlama
 Visual Studio çeşitli araçları ve birden çok iş parçacıklı uygulamalarda hata ayıklama yardımcı olması için kullanıcı arabirimi öğeleri sağlar. Bu öğretici iş parçacığı işaretçileri kullanmayı gösterir **Paralel Yığınlar** penceresinde **paralel Gözcü** penceresi, koşullu kesme noktaları ve filtre kesme noktaları. Bu öğretici yalnızca birkaç dakika sürer ancak tamamlanması, çok iş parçacıklı uygulamalarda hata ayıklama için özelliklerle alışmanızı.
 
 |         |         |

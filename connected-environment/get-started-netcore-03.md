@@ -1,18 +1,19 @@
 ---
 title: Bir .NET Core geliştirme ortamı oluşturma kapsayıcıları Kubernetes - adım 3 - bulutta kullanarak bir ASP.NET Core web uygulaması oluşturma | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Kapsayıcılar ve Azure üzerinde mikro ile hızlı Kubernetes geliştirme
 keywords: Docker, Kubernetes, Azure, AKS, Azure kapsayıcı hizmeti, kapsayıcıları
-manager: ghogen
-ms.openlocfilehash: f858a013e4b0c2ce1c30b8f26f2dc33eebf19c27
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: 72c7df0a82b91f7b4665b8b7e2cecdfc2eea26cf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core"></a>.NET Core bağlı ortamıyla kullanmaya başlama
 

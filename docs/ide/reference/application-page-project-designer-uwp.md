@@ -1,10 +1,11 @@
 ---
-title: UWP uygulamalar için uygulama özellik sayfası | Microsoft Docs
+title: UWP uygulamalar için uygulama özellik sayfası
 ms.date: 01/23/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
-- AppPackage.Properties.Application"
+- AppPackage.Properties.Application
 helpviewer_keywords:
 - Application page [UWP project]
 author: gewarren
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 691a4d2c367bb8f283c4381629f33529fa743c62
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a6d78c20f245f2088af8a51e2e30da3c025ae517
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="application-property-page-uwp-projects"></a>Uygulama özellik sayfası (UWP projeleri)
 
@@ -48,5 +49,5 @@ Visual Studio 2017 içinde hedefleme platform hakkında bilgi için bkz [Platfor
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İlk UWP uygulamanızı oluşturma](/windows/uwp/get-started/your-first-app)  
-[Bir UWP sürüm seçin](/windows/uwp/updates-and-versions/choose-a-uwp-version)
+- [İlk UWP uygulamanızı oluşturma](/windows/uwp/get-started/your-first-app)
+- [Bir UWP sürüm seçin](/windows/uwp/updates-and-versions/choose-a-uwp-version)

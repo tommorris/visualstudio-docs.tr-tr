@@ -1,6 +1,7 @@
 ---
 title: XAML Tasarımcısı'nda verilere bağlayın
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a94f3c4637ab76b8b0d00d1899de5c475dc8e7e4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 364e5db22342a0a870a38db71506b39a6f0080b6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>İzlenecek yol: XAML Tasarımcısı'nda veri bağlama
 
@@ -99,5 +100,5 @@ XAML Tasarımcısı'nda çalışma yüzeyi ve Özellikler penceresini kullanarak
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [XAML Tasarımcısı’nı kullanarak bir kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 - [Değer dönüştürücüsü iletişim kutusu ekleme](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

@@ -1,5 +1,6 @@
 ---
-title: Visual Studio hata ayıklayıcısı kullanarak yönetilen kod ile hata ayıklama | Microsoft Docs
+title: Yönetilen kodda hata ayıklama | Microsoft Docs
+description: C# veya Visual Basic, Visual Studio hata ayıklayıcısı kullanarak hata ayıklama
 ms.custom: mvc
 ms.date: 03/18/2018
 ms.technology: vs-ide-debug
@@ -12,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e209ef4385466be1009b19dde850751695344afe
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e895fe9844740fbb3fdd670ff53dfe0b72dbdfb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı kullanarak yönetilen kod ile hata ayıklama
+# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: Visual Studio hata ayıklayıcısı kullanarak yönetilen kod ile hata ayıklama
 
 Visual Studio hata ayıklayıcısı uygulamalarınızı hata ayıklama yardımcı olmak üzere pek çok güçlü özellikler sağlar. Bu konuda, temel özelliklerden bazıları öğrenmek için hızlı bir yoludur.
 

@@ -19,14 +19,15 @@ ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bed7096fc35f9dd1439a0b15afb9761ab56fbe3c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 31bee5d824b612ddaeb264fe2f944746cdda68fa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="hierarchical-update"></a>Hiyerarşik güncelleştirme
 *Hiyerarşik güncelleştirme* bilgi tutarlılığı kuralları korurken (kümesindeki iki veya daha fazla ilişkili tabloları ile) güncelleştirilmiş verileri bir veritabanına geri kaydetme işlemi başvuruyor. *Başvuru bütünlüğü* bir veritabanında ve ekleme, güncelleştirme ve ilgili kayıtları silme davranışını denetleyen kısıtlamalar tarafından sağlanan tutarlık kuralları başvuruyor. Örneğin, o müşteri için siparişleri oluşturulmasına izin vermeden önce bir müşteri kaydı oluşturulmasını zorlar başvuru bütünlüğü olur.  Veri kümelerindeki ilişkiler hakkında daha fazla bilgi için bkz: [kümelerindeki ilişkiler](../data-tools/relationships-in-datasets.md)

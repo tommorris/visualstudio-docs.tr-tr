@@ -1,18 +1,19 @@
 ---
 title: Bulutta - 4. adım - Debug Kubernetes kapsayıcısında bir Kubernetes kullanarak kapsayıcıları ile bir Node.js geliştirme ortamı oluşturun | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Kapsayıcılar ve Azure üzerinde mikro ile hızlı Kubernetes geliştirme
 keywords: Docker, Kubernetes, Azure, AKS, Azure kapsayıcı hizmeti, kapsayıcıları
-manager: ghogen
-ms.openlocfilehash: 8dca016f3a3feb2d1fb10a80695b82e531e48a74
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: 2d1ec5fe0436b394083a247faa4519505aa21ceb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-nodejs"></a>Node.js ile bağlı ortam kullanmaya başlama
 

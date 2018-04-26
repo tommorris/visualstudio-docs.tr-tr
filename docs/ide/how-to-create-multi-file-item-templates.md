@@ -1,9 +1,8 @@
 ---
-title: Visual Studio için çok dosyalı öğe şablonları oluşturma | Microsoft Docs
-ms.custom: ''
+title: Visual Studio için çok dosyalı öğe şablonları oluşturma
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
@@ -12,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc494f7fa3134984ccb2330e835332fb3e711c19
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ba36e666daf7940971dff587aa483d62f97b6a9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Nasıl yapılır: çok dosyalı öğe şablonları oluşturma
 
@@ -96,7 +95,7 @@ Aşağıdaki örnek, bir Windows Forms şablon gösterir. Bir öğe bu şablona 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)  
-[Nasıl yapılır: öğe şablonları oluşturma](../ide/how-to-create-item-templates.md)  
-[Şablon parametreleri](../ide/template-parameters.md)  
-[Nasıl yapılır: şablonda parametreleri ikame etme](../ide/how-to-substitute-parameters-in-a-template.md)
+- [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)
+- [Nasıl yapılır: öğe şablonları oluşturma](../ide/how-to-create-item-templates.md)
+- [Şablon parametreleri](../ide/template-parameters.md)
+- [Nasıl yapılır: şablonda parametreleri ikame etme](../ide/how-to-substitute-parameters-in-a-template.md)

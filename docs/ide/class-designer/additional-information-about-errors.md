@@ -1,10 +1,9 @@
 ---
-title: Sınıf Tasarımcısı hataları hakkında ek bilgi | Microsoft Docs
-ms.custom: ''
+title: Sınıf Tasarımcısı hataları
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 f1_keywords:
 - vs.classdesigner.CPlusPlusViewInDiagramNoTypeFound
 - vs.classdesigner.CPlusPlusNoTypeFound
@@ -31,22 +30,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cd6223786db06506c1fa4ac9b6bd3118eb5e3d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0af8686af556ca24cdbc9e0a51206f4f0728206
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="additional-information-about-class-designer-errors"></a>Sınıf Tasarımcısı Hataları Hakkında Ek Bilgiler
-Sınıf Tasarımcısı, kaynak dosyalarının konumunu böylece proje yapınızı değiştirme izlemez veya projedeki kaynak dosyalarını taşıma sınıfı Designer'ın türü (özellikle bir typedef, temel sınıfların veya ilişki türleri kaynak türü) kaybetmesine neden olabilir. Hata gibi alabilirsiniz **Sınıf Tasarımcısı bu tür görüntüleyemiyor**. Bunu yaparsanız, yeniden yeniden görüntülemek için sınıf diyagramı konumlandırılan veya değiştirilen kaynak kodunu sürükleyin.  
-  
-Aşağıdaki kaynakları diğer hataları ve Uyarıları ile Yardım bulabilirsiniz:  
-  
-[Visual C++ Kodu ile Çalışma](working-with-visual-cpp-code.md)  
-Sorun giderme C++ sınıf diyagramında görüntüleme hakkında bilgi içerir.  
-  
-[Visual Studio Sınıf Tasarımcısı Forumu](http://go.microsoft.com/fwlink/?LinkId=160754)  
-Sınıf Tasarımcısı hakkında sorular için bir forum sağlar.  
-  
+# <a name="additional-information-about-class-designer-errors"></a>Sınıf Tasarımcısı hataları hakkında ek bilgi
+
+**Sınıf Tasarımcısı** böylece proje yapınızı değiştirerek veya projedeki kaynak dosyalarını neden olabilecek taşıyarak, kaynak dosyalarının konumunu izlemez **Sınıf Tasarımcısı** türünü (özellikle kaynak türünü kaybetmesine için bir typedef, temel sınıfları ve ilişki türleri). Hata gibi alabilirsiniz **Sınıf Tasarımcısı bu tür görüntüleyemiyor**. Bunu yaparsanız, yeniden yeniden görüntülemek için sınıf diyagramı konumlandırılan veya değiştirilen kaynak kodunu sürükleyin.
+
+## <a name="resources"></a>Kaynaklar
+
+Aşağıdaki kaynakları diğer hataları ve Uyarıları ile Yardım bulabilirsiniz:
+
+- [Visual C++ kodu ile çalışma](working-with-visual-cpp-code.md) sorun giderme C++ sınıf diyagramında görüntüleme hakkında bilgi içerir.
+- [Visual Studio Sınıf Tasarımcısı Forumu](http://go.microsoft.com/fwlink/?LinkId=160754) hakkında sorular için bir forum sağlar **Sınıf Tasarımcısı**.
+
 ## <a name="see-also"></a>Ayrıca bkz.
-[Sınıfları ve Türleri Tasarlama ve Görüntüleme (Sınıf Tasarımcısı)](designing-and-viewing-classes-and-types.md)
+
+- [Tasarlama ve sınıfları ve türleri görüntüleme](designing-and-viewing-classes-and-types.md)

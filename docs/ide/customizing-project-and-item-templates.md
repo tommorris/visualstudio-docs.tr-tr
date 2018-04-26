@@ -1,9 +1,8 @@
 ---
-title: Visual Studio Proje ve öğe şablonlarını özelleştirme | Microsoft Docs
-ms.custom: ''
+title: Visual Studio Proje ve öğe şablonlarını özelleştirme
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
@@ -11,15 +10,17 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 04ab5e9648f95946208b71e3b3739630f594cb0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ccd0c34a593e23bd62a86c26639b220598b8dad
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="customizing-project-and-item-templates"></a>Proje ve öğe şablonlarını özelleştirme
+# <a name="customize-project-and-item-templates"></a>Proje ve öğe şablonlarını özelleştirme
 
 Proje ve öğe şablonları bile oluşturduktan sonra bunları gereksinimlerinizi karşılamak için daha fazla özelleştirebilirsiniz.
+
+## <a name="customizations"></a>Özelleştirmeleri
 
 Örneğin, aşağıdaki görevleri gerçekleştirebilirsiniz:
 
@@ -35,12 +36,12 @@ Proje ve öğe şablonları bile oluşturduktan sonra bunları gereksinimleriniz
 
    Daha fazla bilgi için bkz: [nasıl yapılır: sihirbazları proje şablonlarıyla (genişletilebilirlik) kullanma](../extensibility/how-to-use-wizards-with-project-templates.md).
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)  
-[Nasıl yapılır: şablonlarda sorun giderme](../ide/how-to-troubleshoot-templates.md)  
-[Nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md)  
-[Nasıl yapılır: öğe şablonları oluşturma](../ide/how-to-create-item-templates.md)  
-[Nasıl yapılır: başlangıç paketleri oluşturma](../ide/how-to-create-starter-kits.md)  
-[Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)  
-<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>
+- [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)
+- [Nasıl yapılır: şablonlarda sorun giderme](../ide/how-to-troubleshoot-templates.md)
+- [Nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md)
+- [Nasıl yapılır: öğe şablonları oluşturma](../ide/how-to-create-item-templates.md)
+- [Nasıl yapılır: başlangıç paketleri oluşturma](../ide/how-to-create-starter-kits.md)
+- [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)
+- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

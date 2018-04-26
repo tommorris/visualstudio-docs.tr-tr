@@ -1,18 +1,19 @@
 ---
 title: Sorun giderme | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: article
-ms.technology: vsce-kubernetes
+ms.topic: troubleshooting
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Kapsayıcılar ve Azure üzerinde mikro ile hızlı Kubernetes geliştirme
 keywords: Docker, Kubernetes, Azure, AKS, Azure kapsayıcı hizmeti, kapsayıcıları
-manager: ghogen
-ms.openlocfilehash: 0f35e31e3f3a109e65565592b56b6dc4177dd7c0
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: b41d228bcced6149c95b09b2445dd656ed9772d6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="troubleshooting-guide"></a>Sorun giderme kılavuzu
 
@@ -72,7 +73,7 @@ Hata raporlarını VS Code hata ayıklayıcı çalıştırma: `Configured debug 
 
 Bir örneğe bulabilirsiniz https://github.com/sgreenmsft/buildcontextsample
 
-## <a name="microsoftconnectedenvironmentregisteraction-authorization-error-when-creating-an-environment"></a>'Microsoft.ConnectedEnvironment/register/action' authorization error when creating an environment
+## <a name="microsoftconnectedenvironmentregisteraction-authorization-error-when-creating-an-environment"></a>Bir ortam oluştururken 'Microsoft.ConnectedEnvironment/register/action' Yetkilendirme hatası
 Bir ortam yönetirken aşağıdaki hatayı görebilirsiniz ve bir Azure aboneliğinin sahibi veya katkıda erişim yok çalışıyoruz.
 `The client '<User email/Id>' with object id '<Guid>' does not have authorization to perform action 'Microsoft.ConnectedEnvironment/register/action' over scope '/subscriptions/<Subscription Id>'.`
 

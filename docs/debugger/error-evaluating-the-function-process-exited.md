@@ -1,25 +1,25 @@
 ---
-title: 'Hata: Hedef işlem çıkıldı işlevi değerlendirilirken &#39;işlevi&#39; | Microsoft Docs'
+title: 'Hata: Hedef işlem şu kodla sonlandı &#39;kod&#39; işlevi değerlendirme sırasında &#39;işlevi&#39; | Microsoft Docs'
 ms.custom: ''
 ms.date: 4/06/2018
 ms.topic: troubleshooting
 f1_keywords:
-- vs.debug.error.process_exit_func_eval_abort
+- vs.debug.error.process_exit_during_func_eval
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ff03ef364c21e20151547effe8bfbf5935fe7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d5e9221ccf162180a89cc88b1ceebcf55be39eef
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="error-the-target-process-exited-while-evaluating-the-function-39function39"></a>Hata: Hedef işlem çıkıldı işlevi değerlendirilirken &#39;işlevi&#39;
+# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Hata: Hedef işlem şu kodla sonlandı &#39;kod&#39; işlevi değerlendirme sırasında &#39;işlevi&#39;
 
-İleti metni tam: hedef işlem çıkıldı 'function' işlevi hesaplanırken. Hedef işlem çıkış kodu için Çıktı Penceresi'ne bakın.
+İleti metni tam: hedef işlem 'function' işlevi hesaplanırken 'code' koduyla çıkıldı.
 
 .NET nesneleri durumunu incelemek kolaylaştırmak için hata ayıklayıcı ek kodu çalıştırmak için hata ayıklaması işlemi otomatik olarak zorlar (genellikle özelliği alıcı yöntemlere ve `ToString` işlevleri). Çoğu senaryoda, bu işlevlerin başarıyla tamamlamak veya hata ayıklayıcı tarafından yakalanan özel durumlar oluşturma. Ancak, bunlar çekirdek sınırları, kullanıcı ileti Pompalama gerektirmediği veya kurtarılamaz için özel durum yakalandı olamaz bazı durumlar vardır. Sonuç, özellik alıcısı veya kodu yürütür ToString yöntemi o da açıkça sonlandırır işlemi (örneğin, çağıran `ExitProcess()`) veya yakalanan olamaz işlenmeyen bir özel durum oluşturur (örneğin, `StackOverflowException`) sonlandıracak işlem ve son hata ayıklama oturumu hata ayıklaması. Bu hata iletisiyle karşılaşırsanız, bu durum oluştu.
  

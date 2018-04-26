@@ -12,14 +12,15 @@ ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1088a20181d9af5072d5335c63f3cb3ace47f4db
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a484388223b7dae62f165e13b2fc75368b0e642f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Basit veri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma
 Windows uygulamaları formlarda verileri görüntüleme, var olan denetimleri seçebilirsiniz **araç**, veya uygulamanızın standart denetimlerinde kullanılamıyor işlevsellik gerektiriyorsa özel denetimler yazabilirsiniz. Bu kılavuzda uygulayan bir denetimin nasıl oluşturulacağını gösterir <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Denetimleri uygulayan <xref:System.ComponentModel.DefaultBindingPropertyAttribute> veriye bağlı bir özellik içerebilir. Bu tür denetimler benzer bir <xref:System.Windows.Forms.TextBox> veya <xref:System.Windows.Forms.CheckBox>.

@@ -1,6 +1,7 @@
 ---
 title: Blend'de Kalem aracı değiştirici tuşları
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3021ef5e6b91058a33b19847738eb407e7f1c7dd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1d8a7becd13bf6e704319c0a960551376d70261a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend'de Kalem aracı değiştirici tuşları
 Aşağıdaki tabloda, kendisiyle oluştururken bir yolu değiştirmek için kullanabileceğiniz kısayolları listeler **kalem** aracı ![ ] (../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). Aynı zamanda **kalem** aracı eklemek veya var olan bir yol noktalarını kaldırmak için ya da iki mevcut yolları birleştirmek için.

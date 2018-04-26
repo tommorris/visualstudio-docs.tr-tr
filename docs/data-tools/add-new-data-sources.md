@@ -11,14 +11,15 @@ ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: efcc167ba42469aa8e32198161612db7521d22ba
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1c7df62a0801534f8a23f7b5cde984c75742406a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-new-data-sources"></a>Yeni veri kaynakları ekleyin
 Visual Studio'da .NET veri araçları bağlamında terimi *veri kaynağı* , bir veri deposuna bağlanmak ve .NET uygulama verileri kullanıma .NET nesneleri gösterir. Visual Studio tasarımcıları veritabanı nesnelerini sürükleyip yükleyen formlara veri bağlar Demirbaş kod oluşturmak için veri kaynağı çıktı tüketebileceği **veri kaynakları** penceresi. Bu türdeki veri kaynağının aşağıdakilerden biri olabilir:

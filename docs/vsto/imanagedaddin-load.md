@@ -43,7 +43,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 ## <a name="remarks"></a>Açıklamalar  
  VSTO eklenti yardımcı olmak için kullanılan bilgileri sağlayan bir dosya (genellikle, bir XML dosyası) bildirimidir. Örneğin, bir bildirim VSTO eklenti derlemesi ve giriş noktası sınıfını VSTO Eklenti yüklendiğinde örneği oluşturmak için konumunu belirtebilirsiniz.  
   
- *BstrManifestURL* parametre değeri içeriyor `Manifest` HKEY_CURRENT_USER\Software\Microsoft\Office altında girdisi\\*\<uygulama adı >*\Addins\\*\<eklenti kimliği >* VSTO eklenti için kayıt defteri anahtarı. Daha fazla bilgi için bkz: [Imanagedaddin arabirimi](../vsto/imanagedaddin-interface.md).  
+ *BstrManifestURL* parametre değeri içeriyor `Manifest` HKEY_CURRENT_USER\Software\Microsoft\Office altında girdisi\\*\<uygulama adı >* \Addins\\*\<eklenti kimliği >* VSTO eklenti için kayıt defteri anahtarı. Daha fazla bilgi için bkz: [Imanagedaddin arabirimi](../vsto/imanagedaddin-interface.md).  
   
  Uygulama [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) VSTO yüklenmekte eklenti için uygulama etki alanı ve güvenlik ilkesini yapılandırma gibi görevleri gerçekleştirmek için yöntem.  
   

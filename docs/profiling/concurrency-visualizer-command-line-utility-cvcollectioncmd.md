@@ -2,8 +2,7 @@
 title: Eşzamanlılık görselleştiricisi komut satırı yardımcı programı (CVCollectionCmd) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0bd4f6899a5d353e14664582c1f4bbdf698fb4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 606a6c021247a00b2244986d5f91ad19d6a167f4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık Görselleştiricisi Komut Satırı Yardımcı Programı (CVCollectionCmd)
 Eşzamanlılık görselleştiricisi komut satırı yardımcı programını (CVCollectionCmd.exe), böylece bunları için Visual Studio eşzamanlılık görselleştiricisi görebilirsiniz komut satırından izlemeleri toplamak için kullanabilirsiniz. Araçlar Visual Studio yüklü olmayan bilgisayarlarda kullanılabilir.  

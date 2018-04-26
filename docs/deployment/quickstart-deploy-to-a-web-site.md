@@ -2,8 +2,7 @@
 title: Bir Web sitesine - Visual Studio yayımlama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/22/2017
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b6bacc45d78d1d246f6a91d13549ccc96b276a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 176bb028d176ce789977149f9e0380bf1ca284fc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Visual Studio yayımlama Aracı'nı kullanarak bir web sitesi için bir web uygulaması veya .NET Core uygulama yayımlama
 
@@ -29,7 +28,7 @@ ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için ş
 
 1. Visual Studio'da, **Dosya > Yeni proje**.
 
-1. Altında **Visual C#** veya **Visual Basic**, seçin **Web**ve ardından Orta bölmede ya da **ASP.NET Web uygulaması (.NET Framework)**veya (C# yalnızca) **ASP.NET çekirdek Web uygulaması**ve ardından **Tamam**.
+1. Altında **Visual C#** veya **Visual Basic**, seçin **Web**ve ardından Orta bölmede ya da **ASP.NET Web uygulaması (.NET Framework)** veya (C# yalnızca) **ASP.NET çekirdek Web uygulaması**ve ardından **Tamam**.
 
 1. Seçin **MVC**, olduğundan emin olun **doğrulaması yok** seçilir ve ardından **Tamam**.
 
@@ -45,7 +44,7 @@ ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için ş
 
     ![Seçin yayımlama](../deployment/media/quickstart-publish-aspnet.png "seçin yayımlama")
 
-1. İçinde **Yayımla** bölmesinde seçin **IIS, FTP, vb**.
+1. İçinde **Yayımla** bölmesinde seçin **IIS, FTP, vb.**.
 
     ![IIS, FTP, vb.'ı seçin.](../deployment/media/quickstart-publish-iis-ftp.png "IIS seçin, FTP, vs.")
 

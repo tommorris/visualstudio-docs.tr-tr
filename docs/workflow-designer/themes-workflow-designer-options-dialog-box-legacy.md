@@ -1,7 +1,9 @@
 ---
-title: Temalar, iş akışı Tasarımcısı'de, Seçenekler iletişim kutusu (eski) | Microsoft Docs
+title: İş Akışı Tasarımcısı - temalar, iş akışı Tasarımcısı, Seçenekler iletişim kutusu (eski)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - VS.ToolsOptionsPages.WorkflowDesigner.Themes
 helpviewer_keywords:
@@ -13,18 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95bda5a08871dd89b3600dd48b54f14e92f6640a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a603f8b0e6e001e3eb52f2e9fb145e52a41f3dc9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>Temalar, iş akışı Tasarımcısı'de, Seçenekler iletişim kutusu (eski)
-Bu konuda açıklanmaktadır kullanma **temalar, iş akışı Tasarımcısı seçenekleri** eski Windows iş akışı Tasarımcısı'nda iletişim kutusu. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Bir tema arka plan ve ön plan renkleri, stiller, simgeler ve diğer görsel öğelere bir iş akışının tanımlar. Diğer iş akışları tarafından Temalar yeniden kullanmak üzere kaydedebilirsiniz. Varsayılan ve kullanılarak kaydedilmiş özel temalar seçebileceğiniz **temalar, iş akışı Tasarımcısı seçenekleri** iletişim kutusu. Bu iletişim kutusunu açmak için **özel tema seçin** üzerinde **iş akışı** menüsü. Veya, iş akışı tasarım yüzeyine sağ tıklatın ve **seçin özel tema**.
+Bu konuda açıklanmaktadır kullanma **temalar, iş akışı Tasarımcısı seçenekleri** eski Windows iş akışı Tasarımcısı'nda iletişim kutusu. .NET Framework sürüm 3.5 veya WinFX hedeflemek gerektiğinde eski iş akışı Tasarımcısı kullanın.
 
- Kullanıcı Arabirimi (UI) öğelerini aşağıdaki tabloda açıklanmaktadır **temalar, iş akışı Tasarımcısı seçenekleri** iletişim kutusu.
+Bir tema arka plan ve ön plan renkleri, stiller, simgeler ve diğer görsel öğelere bir iş akışının tanımlar. Diğer iş akışları tarafından Temalar yeniden kullanmak üzere kaydedebilirsiniz. Varsayılan ve kullanılarak kaydedilmiş özel temalar seçebileceğiniz **temalar, iş akışı Tasarımcısı seçenekleri** iletişim kutusu. Bu iletişim kutusunu açmak için **özel tema seçin** üzerinde **iş akışı** menüsü. Veya, iş akışı tasarım yüzeyine sağ tıklatın ve **seçin özel tema**.
+
+Kullanıcı Arabirimi (UI) öğelerini aşağıdaki tabloda açıklanmaktadır **temalar, iş akışı Tasarımcısı seçenekleri** iletişim kutusu.
 
 |Arabirim Öğesi|Açıklama|
 |----------------|-----------------|

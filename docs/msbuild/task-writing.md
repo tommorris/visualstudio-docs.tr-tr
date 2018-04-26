@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c08fcc8baa0e892678cc376056a35c0f09101f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 57917b3820bac6005faa7b31f8cdd6cffd4978b5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="task-writing"></a>Görev Yazma
 Görevler oluşturma işlemi sırasında çalışan bir kod sağlar. Görevler hedeflerini yer alır. Tipik görev kitaplığı ile birlikte gelir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], ve kendi görevler de oluşturabilirsiniz. Dahil edilen görevlerin Kitaplığı hakkında daha fazla bilgi için [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], bkz: [görev başvurusu](../msbuild/msbuild-task-reference.md).  
@@ -268,4 +268,3 @@ namespace SimpleTask2
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

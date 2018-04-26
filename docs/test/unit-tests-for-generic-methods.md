@@ -1,6 +1,7 @@
 ---
-title: Visual Studio'da genel yöntemler için birim testleri | Microsoft Docs
+title: Visual Studio'da genel yöntemler için birim testleri
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e953af66f3b03d3d2e370513f3ed7462fc1484ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4d752b66c65f10d46d57b69acc532d07ea8e2da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>Genel Metotlar için birim testleri
 
@@ -115,7 +116,8 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
->  Her zaman SizeOfLinkedListTest test çalışmaları, kendi TestHelper yöntemi iki kez çağrılır. Onay deyimi geçirmek test için her zaman true olarak değerlendirmeniz gerekir. Sınama başarısız olursa, çağrı belirtilen olup olmadığını, açık olmayabilecek `<int>` veya belirtilen çağrı `<char>` başarısız olmasına neden. Yanıt bulmak için çağrı yığınını incelemek veya test yönteminde kesme noktalarını ayarlayın ve ardından test çalıştırılırken hata ayıklama. Daha fazla bilgi için bkz: [nasıl yapılır: ASP.NET çözümü'nde bir Test çalıştırılırken hata ayıklama](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Her zaman SizeOfLinkedListTest test çalışmaları, kendi TestHelper yöntemi iki kez çağrılır. Onay deyimi geçirmek test için her zaman true olarak değerlendirmeniz gerekir. Sınama başarısız olursa, çağrı belirtilen olup olmadığını, açık olmayabilecek `<int>` veya belirtilen çağrı `<char>` başarısız olmasına neden. Yanıt bulmak için çağrı yığınını incelemek veya test yönteminde kesme noktalarını ayarlayın ve ardından test çalıştırılırken hata ayıklama. Daha fazla bilgi için bkz: [nasıl yapılır: ASP.NET çözümü'nde bir Test çalıştırılırken hata ayıklama](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+
 
 ###  <a name="TypeConstraintNotSatisfied"></a> Örnek 2: bir tür sınırlaması kullanma
  Bu örnek sağlanmıyorsa bir tür sınırlaması kullanan bir genel yöntem için birim testi gösterir. İlk bölüm kod altında test projesinin koddan gösterir. Tür sınırlaması vurgulanır.

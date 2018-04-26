@@ -1,7 +1,9 @@
 ---
-title: Kural Ayarla iletişim kutusu (eski) seçin | Microsoft Docs
+title: İş Akışı Tasarımcısı - seçin kural kümesi iletişim kutusu (eski)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetBrowserDialog.UI
 helpviewer_keywords:
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 376b76e93849e58ac2d26f5c9360dc7673f2a3f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b199f5cd0ee71d9b4a5ce0991e84660ee031fa59
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Select kural Ayarla iletişim kutusu (eski)
-Bu konuda açıklanmaktadır kullanma **seçin kural kümesi** eski Windows iş akışı Tasarımcısı'nda iletişim kutusu. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- **Seçin kural kümesi** iletişim kutusu ile birlikte kullanabileceğiniz bir kural kümesi seçmek amacıyla kullanılan bir [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) etkinlik. Nasıl erişileceği hakkında bilgi için **kural kümesi seçin** iletişim kutusu, bkz: [nasıl yapılır: bir PolicyActivity kural kümesi (eski) oluşturma](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+Bu konuda açıklanmaktadır kullanma **seçin kural kümesi** eski Windows iş akışı Tasarımcısı'nda iletişim kutusu. .NET Framework sürüm 3.5 veya WinFX hedeflemek gerektiğinde eski iş akışı Tasarımcısı kullanın.
 
- Kullanıcı Arabirimi (UI) öğelerini aşağıdaki tabloda açıklanmaktadır **seçin kural kümesi** iletişim kutusu.
+**Seçin kural kümesi** iletişim kutusu ile birlikte kullanabileceğiniz bir kural kümesi seçmek amacıyla kullanılan bir [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) etkinlik. Nasıl erişileceği hakkında bilgi için **kural kümesi seçin** iletişim kutusu, bkz: [nasıl yapılır: bir PolicyActivity kural kümesi (eski) oluşturma](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+
+Kullanıcı Arabirimi (UI) öğelerini aşağıdaki tabloda açıklanmaktadır **seçin kural kümesi** iletişim kutusu.
 
 |Arabirim Öğesi|Açıklama|
 |----------------|-----------------|
@@ -37,7 +40,7 @@ Bu konuda açıklanmaktadır kullanma **seçin kural kümesi** eski Windows iş 
  Oluşturma ve kural kümelerini düzenleme hakkında daha fazla bilgi için bkz: [kural kümesi Düzenleyici iletişim kutusu (eski)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!WARNING]
-> Eski kuralları Düzenleyicisi'ni [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek için kullanılan [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] çoklu sürüm desteği desteklemiyor.
+> .NET Framework sürüm 3.5 veya WinFX hedeflemek için kullanılan eski iş akışı Tasarımcısı'nın kurallar düzenleyicisinde çoklu sürüm desteği desteklemez.
 
  Koşullar hakkında daha fazla bilgi için bkz: [kullanan koşulları iş akışlarında](http://go.microsoft.com/fwlink?LinkID=65009).
 

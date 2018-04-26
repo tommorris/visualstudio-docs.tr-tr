@@ -1,7 +1,9 @@
 ---
-title: SendAndReceiveReply şablonu Tasarımcısı | Microsoft Docs
+title: İş Akışı Tasarımcısı - SendAndReceiveReply şablonu Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.SendAndReceiveReply.UI
 - System.ServiceModel.Activities.ReceiveReply.UI
@@ -11,18 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4edb5081c58772fc67bb24b4832e7068f1a0344d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4c6a4749ed138b22ac3d600befad01ef1776478e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply şablonu Tasarımcısı
 
 **SendAndReceiveReply** şablonu çifti oluşturmak için kullanılan önceden yapılandırılmış <xref:System.ServiceModel.Activities.Send> ve <xref:System.ServiceModel.Activities.ReceiveReply> içindeki etkinlikleri bir <xref:System.Activities.Statements.Sequence> istek/yanıt iletisi exchange bir parçası olarak bağıntılı etkinliği istemci üzerinde deseni.
 
 ## <a name="the-sendandreceivereply-template"></a>SendAndReceiveReply şablonu
- Ekleme **SendAndReceiveReply** şablonu oluşturma yanı sıra üç şey yapar <xref:System.ServiceModel.Activities.Send> ve <xref:System.ServiceModel.Activities.ReceiveReply> içindeki etkinlikleri bir <xref:System.Activities.Statements.Sequence> etkinlik:
+
+Ekleme **SendAndReceiveReply** şablonu oluşturma yanı sıra üç şey yapar <xref:System.ServiceModel.Activities.Send> ve <xref:System.ServiceModel.Activities.ReceiveReply> içindeki etkinlikleri bir <xref:System.Activities.Statements.Sequence> etkinlik:
 
 1.  Yapılandırır <xref:System.ServiceModel.Activities.Send.OperationName%2A>, <xref:System.ServiceModel.Activities.Send.ServiceContractName%2A> özelliklerini <xref:System.ServiceModel.Activities.Send> etkinlik.
 
@@ -31,16 +34,16 @@ ms.lasthandoff: 04/16/2018
 3.  Oluşturur bir <xref:System.ServiceModel.Activities.CorrelationHandle> bir değişken üst etkinlik olarak.
 
 ### <a name="using-the-sendandreceivereply-template-designer"></a>SendAndReceiveReply şablonu Tasarımcısı'nı kullanarak
- **SendAndReceiveReply** etkinlik Tasarımcısı bulunabilir **ileti** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç kutusu**  sekmesi [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
+ **SendAndReceiveReply** etkinlik Tasarımcısı bulunabilir **ileti** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç kutusu**  iş akışı Tasarımcısı sekmesinde (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
 
- **SendAndReceiveReply** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve oturum bırakılan [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzey yerde etkinlikleri genellikle yerleştirilir. Bu oluşturur bir <xref:System.ServiceModel.Activities.Send> ile yapılandırılmış etkinlik **Gönder** etkinlik Tasarımcısı ve bir ilişkili <xref:System.ServiceModel.Activities.ReceiveReply> ile yapılandırılabilir **ReceiveReplyForSend** Tasarımcısı.
+ **SendAndReceiveReply** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri genellikle yerleştirilir her yerde iş akışı Tasarımcısı yüzeyini açın. Bu oluşturur bir <xref:System.ServiceModel.Activities.Send> ile yapılandırılmış etkinlik **Gönder** etkinlik Tasarımcısı ve bir ilişkili <xref:System.ServiceModel.Activities.ReceiveReply> ile yapılandırılabilir **ReceiveReplyForSend** Tasarımcısı.
 
  Kullanma hakkında daha fazla bilgi için **Gönder** yapılandırmak için tasarımcı <xref:System.ServiceModel.Activities.Send> etkinliği bkz [Gönder](../workflow-designer/send-activity-designer.md) konu.
 
  Kullanma hakkında daha fazla bilgi için **ReceiveReplyForSend** yapılandırmak için tasarımcı <xref:System.ServiceModel.Activities.ReceiveReply> etkinlik, aşağıdaki bölüme bakın.
 
 ### <a name="properties-of-receivereply"></a>ReceiveReply özellikleri
- Aşağıdaki tabloda <xref:System.ServiceModel.Activities.ReceiveReply> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri özellikleri kılavuzunda düzenlenebilir ve bazı üzerinde düzenlenebilir [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]Tasarımcı yüzeyine.
+ Aşağıdaki tabloda <xref:System.ServiceModel.Activities.ReceiveReply> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri özellikleri kılavuzunda düzenlenebilir ve bazı iş akışı Designerdesigner yüzeyine düzenlenebilir.
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|

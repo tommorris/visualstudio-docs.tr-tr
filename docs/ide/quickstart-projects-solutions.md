@@ -1,7 +1,7 @@
 ---
-title: Projeler ve çözümler Visual Studio'da giriş | Microsoft Docs
-ms.custom: ''
+title: Projeler ve çözümler Visual Studio'da giriş
 ms.date: 12/11/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606b08608eea275a25a1a097ed75b7554a99f6a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Hızlı Başlangıç: Projeler ve çözümler
 
@@ -39,7 +39,7 @@ Bizim araştırması boş çözümünü oluşturarak başlayacağız. Visual Stu
 
    Visual Studio açılır ve büyük olasılıkla görürsünüz **başlangıç sayfası** pencerenin Gayrimenkul çoğunu sürüyor.
 
-1. Menü çubuğunda seçin **dosya** > **yeni** > **proje...** .
+1. Menü çubuğunda seçin **dosya** > **yeni** > **proje**.
 
    **Yeni proje** iletişim kutusu açılır.
 
@@ -53,13 +53,13 @@ Bizim araştırması boş çözümünü oluşturarak başlayacağız. Visual Stu
 
 Artık ilk Projemizin çözüme ekleyelim. Biz, boş bir proje ile başlatın ve ihtiyacımız öğeleri projeye ekleyin.
 
-1. Sağ tıklatın veya bağlam menüsünde **çözüm 'QuickSolution'** içinde **Çözüm Gezgini**, seçin **Ekle** > **yeni proje...** .
+1. Sağ tıklatın veya bağlam menüsünde **çözüm 'QuickSolution'** içinde **Çözüm Gezgini**, seçin **Ekle** > **yeni proje**.
 
    **Yeni Proje Ekle** iletişim kutusu açılır.
 
 1. Sol bölmede **Visual C#** ve **Windows Klasik Masaüstü**. Orta bölmede, ardından **boş proje (.NET Framework)**. Projeyi "QuickDate" olarak adlandırın ve ardından **Tamam** düğmesi.
 
-   Çözümde altındaki "QuickDate" adlı bir proje görünür **Çözüm Gezgini**. Şu anda tek dosyalı çağrılan içeren **App.config**.
+   Çözümde altındaki "QuickDate" adlı bir proje görünür **Çözüm Gezgini**. Şu anda tek dosyalı çağrılan içeren *App.config*.
 
    > [!NOTE]
    > Görmüyorsanız, **Visual C#** iletişim kutusunun sol bölmesinde yüklemeniz gerekir. **.NET masaüstü geliştirme** iş yükü. Bunu yapmak için kolay bir yol seçmektir **açık Visual Studio yükleyicisi** iletişim kutusunun sol alt köşedeki bağlantıyı. Sonra **Visual Studio yükleyicisi** başlatır, seçin **.NET masaüstü geliştirme** iş yükü ve ardından **Değiştir** düğmesi.
@@ -70,15 +70,15 @@ Artık ilk Projemizin çözüme ekleyelim. Biz, boş bir proje ile başlatın ve
 
 Boş proje sahibiz&mdash;bir kod dosyası ekleyelim.
 
-1. Sağ tıklatın veya bağlam menüsünde **QuickDate** içinde **Çözüm Gezgini**, seçin **Ekle** > **yeni öğe...** .
+1. Sağ tıklatın veya bağlam menüsünde **QuickDate** içinde **Çözüm Gezgini**, seçin **Ekle** > **yeni öğe**.
 
    **Yeni Öğe Ekle** iletişim kutusu açılır.
 
 1. Genişletme **Visual C# öğeleri**, ardından **kod**. Orta bölmede seçin **sınıfı**. "Takvim" sınıf adını ve ardından **Ekle** düğmesi.
 
-   "Calendar.cs" adlı bir dosya projeye eklenir. **.Cs** ucunda C# kod dosyaları verilen dosya uzantısıdır. Dosya visual proje hiyerarşisinde görünür **Çözüm Gezgini**, ve içeriğini Düzenleyicisi'nde açılır.
+   Adlı bir dosya *Calendar.cs* projeye eklenir. *.Cs* ucunda C# kod dosyaları verilen dosya uzantısıdır. Dosya visual proje hiyerarşisinde görünür **Çözüm Gezgini**, ve içeriğini Düzenleyicisi'nde açılır.
 
-1. Değiştir **Calendar.cs** aşağıdaki kod ile dosya.
+1. Değiştir *Calendar.cs* aşağıdaki kod ile dosya.
 
    ```csharp
    using System;
@@ -110,13 +110,13 @@ Birden çok proje ve genellikle şu projeler başvuru birbirini içeren çözüm
 
 Birim testi projesi bizim çözüme ekleyelim. Biz bir ek kod dosyası projeye eklemek zorunda kalmamak için bu süre bir proje şablondan başlayacağız.
 
-1. Sağ tıklatın veya bağlam menüsünde **çözüm 'QuickSolution'** içinde **Çözüm Gezgini**, seçin **Ekle** > **yeni proje...** .
+1. Sağ tıklatın veya bağlam menüsünde **çözüm 'QuickSolution'** içinde **Çözüm Gezgini**, seçin **Ekle** > **yeni proje**.
 
    **Yeni Proje Ekle** iletişim kutusu açılır.
 
 1. Sol bölmede **Visual Basic** ve **Test** kategorisi. Orta bölmede seçin **birim testi projesi (.NET Framework)**. Projeyi "QuickTest" olarak adlandırın ve ardından **Tamam** düğmesi.
 
-   İkinci bir proje eklenen **Çözüm Gezgini**ve adlı bir dosya **UnitTest1.vb** Düzenleyicisi'nde açar. **.vb** Visual Basic kodu dosyaları için belirtilen dosya uzantısı.
+   İkinci bir proje eklenen **Çözüm Gezgini**ve adlı bir dosya *UnitTest1.vb* Düzenleyicisi'nde açar. *.vb* Visual Basic kodu dosyaları için belirtilen dosya uzantısı.
 
    ![İki proje ile Çözüm Gezgini](media/quickstart-projects-solution-explorer.png)
 
@@ -124,7 +124,7 @@ Birim testi projesi bizim çözüme ekleyelim. Biz bir ek kod dosyası projeye e
 
 Yeni birim testi projesi bizim yönteminde test etmek için kullanılacak yapacağız **QuickDate** proje, bu nedenle bu projeyi bir başvuru eklemeniz gerekir. Bunun anlamı iki projeler derleme bağımlılıkları oluşturur **QuickDate** önce yerleşik **QuickTest** çözüm ne zaman oluşturulur.
 
-1. Seçin **başvuruları** düğümünde **QuickTest** proje ve sağ tıklatın veya bağlam menüsünü seçin **Başvuru Ekle...** .
+1. Seçin **başvuruları** düğümünde **QuickTest** proje ve sağ tıklatın veya bağlam menüsünü seçin **Başvuru Ekle**.
 
    ![Başvuru menüsü ekleme](media/quickstart-projects-add-reference.png)
 
@@ -136,7 +136,7 @@ Yeni birim testi projesi bizim yönteminde test etmek için kullanılacak yapaca
 
 ## <a name="add-test-code"></a>Sınama kodu ekleyin
 
-1. Visual Basic kod dosyasına test kodu şimdi ekleyeceğiz. Değiştir **UnitTest1.vb** aşağıdaki kod ile.
+1. Visual Basic kod dosyasına test kodu şimdi ekleyeceğiz. Değiştir *UnitTest1.vb* aşağıdaki kod ile.
 
    ```vb
    <TestClass()> Public Class UnitTest1
@@ -150,7 +150,7 @@ Yeni birim testi projesi bizim yönteminde test etmek için kullanılacak yapaca
 
    "Dalgalı" bazı kodu altında kırmızı görürsünüz. Biz test projesi oluşturarak bu hatayı düzeltmek bir [derlemeyi](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) için **QuickDate** projesi.
 
-1. Geri **QuickDate** proje, açık **Calendar.cs** zaten açık değilse, dosya ve aşağıdakileri ekleyin deyimiyle ve <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> test projesinin hatayı gidermek için özniteliği.
+1. Geri **QuickDate** proje, açık *Calendar.cs* zaten açık değilse, dosya ve aşağıdakileri ekleyin deyimiyle ve <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> test projesinin hatayı gidermek için özniteliği.
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -168,7 +168,7 @@ Dosyasındaki satır içeren C# kod <xref:System.Runtime.CompilerServices.Intern
 
 1. İçinde **Çözüm Gezgini**seçin **QuickTest** projesi. Sağ tıklatın veya bağlam menüsünden seçin **özellikleri**, veya yalnızca basın **Alt**+**Enter**.
 
-   Proje özellik sayfalarını açmak **uygulama** sekmesi. Dikkat derleme adını **QuickTest** projedir gerçekten "QuickTest". Bunu değiştirmek istiyorsanız, burada değişeceğinden budur. Test projesi derlerken, daha sonra sonuçta elde edilen yürütülebilir dosyanın adını gelen değişeceğinden **QuickTest.exe** , seçtiğiniz için.
+   Proje özellik sayfalarını açmak **uygulama** sekmesi. Dikkat derleme adını **QuickTest** projedir gerçekten "QuickTest". Bunu değiştirmek istiyorsanız, burada değişeceğinden budur. Test projesi derlerken, daha sonra sonuçta elde edilen yürütülebilir dosyanın adını gelen değişeceğinden *QuickTest.exe* , seçtiğiniz için.
 
    ![Proje Özellikleri](media/quickstart-projects-properties.png)
 
@@ -178,7 +178,7 @@ Dosyasındaki satır içeren C# kod <xref:System.Runtime.CompilerServices.Intern
 
 Birim testi çalıştığını denetlemek istiyorsanız seçin **Test** > **çalıştırmak** > **tüm testleri** menü çubuğundan. Bir pencere olarak adlandırılan **Test Gezgini** açar ve görmeniz gerekir, **TestGetCurrentDate** test geçer.
 
-Bu hızlı başlangıç Tamamlanıyor Tebrikler! Ardından, diğer quickstarts bazıları için Visual Studio keşfedin veya daha fazla bilgi edinmek isteyebilirsiniz [projeler ve çözümler oluşturma](../ide/creating-solutions-and-projects.md).
+Bu hızlı başlangıç Tamamlanıyor Tebrikler! Ardından, diğer Quickstarts bazıları için Visual Studio keşfedin veya hakkında daha fazla bilgi edinmek isteyebilirsiniz [projeler ve çözümler oluşturma](../ide/creating-solutions-and-projects.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

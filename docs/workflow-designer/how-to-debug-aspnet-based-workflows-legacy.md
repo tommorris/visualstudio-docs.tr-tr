@@ -1,7 +1,9 @@
 ---
-title: 'Nasıl yapılır: hata ayıklama ASP.NET tabanlı iş akışları (eski) | Microsoft Docs'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: hata ayıklama ASP.NET tabanlı iş akışları (eski)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - ASP.NET, debugging workflows
 - debugging workflows, ASP.NET workflows
@@ -13,18 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ed3f4f23ff02291df33b2676bdb980de191b281b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bf16a6a88c5d4cd063f1c32ca846031d8b2588d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Nasıl yapılır: hata ayıklama ASP.NET tabanlı iş akışları (eski)
-Bu konu, hata ayıklamak açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-tabanlı [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] ya da hedefleyen uygulamalar [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] eski Windows iş akışı Tasarımcısı'nda.
 
- ASP.NET başlatılan eski iş akışları veya iş akışının barındırılan işlemi ekleyerek Web hizmeti olarak yayımlanan eski iş akışları ayıklayabilirsiniz.
+Bu konu, .NET Framework sürüm 3.5 hedefleyen ya da eski Windows iş akışı Tasarımcısı'nda WinFX ASP.NET tabanlı Windows Workflow Foundation (WF) uygulamalarının hatalarını açıklar.
 
-### <a name="to-debug-an-aspnet-based-workflow"></a>ASP.NET tabanlı bir iş akışını hata ayıklamak için
+ASP.NET başlatılan eski iş akışları veya iş akışının barındırılan işlemi ekleyerek Web hizmeti olarak yayımlanan eski iş akışları ayıklayabilirsiniz.
+
+## <a name="to-debug-an-aspnet-based-workflow"></a>ASP.NET tabanlı bir iş akışını hata ayıklamak için
 
 1.  ASP.NET uygulaması için ayarlayarak hata ayıklamayı etkinleştir **debug = true** web.config dosyasında.
 

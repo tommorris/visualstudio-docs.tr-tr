@@ -1,6 +1,7 @@
 ---
-title: Visual C++ DLL UWP uygulamalar için Visual Studio'da test etme | Microsoft Docs
+title: Visual C++ DLL UWP uygulamalar için Visual Studio'da test etme
 ms.date: 02/15/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 56bd0acf242f0fac4ccb2d73063e8ee73d234a0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 717786fea5d0ae355af5b8ea4993932a95d01196
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL test etme
 
@@ -236,7 +237,8 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
      Her iki testleri geçirin.
 
 > [!TIP]
->  Kod, aynı anda testleri bir ekleyerek geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.
+> Kod, aynı anda testleri bir ekleyerek geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.
+
 
 ##  <a name="Debug_a_failing_test"></a> Başarısız test hata ayıklama
 

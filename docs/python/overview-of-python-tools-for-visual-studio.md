@@ -1,6 +1,6 @@
 ---
 title: Windows Visual Studio'da Python desteği'ne genel bakış
-description: Visual Studio, Windows üzerinde en iyi Python IDE kolaylaştırarak özellikleri özeti (Ayrıca Visual Studio, PTVS Python araçları olarak bilinir)
+description: Visual Studio'da Windows (PTVS Visual Studio için Python araçları olarak da bilinir) en iyi Python IDE kolaylaştırarak, Python özelliklerinin özeti.
 ms.date: 04/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31ffd868eeab4638344cfafc2723b6a60608f232
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7a23835ddeb143c723f4275ec337168dc783664b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="working-with-python-in-visual-studio-windows"></a>Python Visual Studio (Windows) ile çalışma
+# <a name="working-with-python-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python ile çalışma
 
 Python güvenilir, esnek, kolay öğrenmek için tüm işletim sistemlerinde kullanımına yönelik ücretsiz ve sağlam Geliştirici topluluğu ve pek çok ücretsiz kitaplıkları tarafından desteklenen popüler bir programlama dilidir. Python geliştirme, web uygulamaları, web Hizmetleri, Masaüstü uygulamaları, komut dosyası ve bilimsel hesaplama, dahil olmak üzere tüm yolla destekler ve birçok üniversiteler, bilimcilerine, rasgele geliştiriciler ve profesyonel geliştiricilere benzer tarafından kullanılır. Üzerinde dili hakkında daha fazla bilgiyi [python.org](https://www.python.org) ve [yeni başlayanlar için Python](https://www.python.org/about/gettingstarted/).
 

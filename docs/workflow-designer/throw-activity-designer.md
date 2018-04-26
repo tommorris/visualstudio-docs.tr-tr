@@ -1,7 +1,9 @@
 ---
-title: Etkinlik Tasarımcısı throw | Microsoft Docs
+title: İş Akışı Tasarımcısı - Throw etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Throw.UI
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
@@ -10,22 +12,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82080c7ebc03b863dcd1fbebe9eb9923ba4fae3c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02bb94ad17b78b1264129b8a5ba00a964edbd2f2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="throw-activity-designer"></a>Etkinlik Tasarımcısı throw
+
 **Throw** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.Throw> etkinlik.
 
 ## <a name="the-throw-activity"></a>Throw etkinliği
  <xref:System.Activities.Statements.Throw> Etkinlik bir özel durum oluşturur.
 
 ### <a name="using-the-throw-activity-designer"></a>Throw etkinlik Tasarımcısı'nı kullanarak
- **Throw** etkinlik Tasarımcısı bulunabilir **işleme hatası** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç**sol tarafındaki sekmesinde [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
+ **Throw** etkinlik Tasarımcısı bulunabilir **işleme hatası** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç**sekmesi iş akışı Tasarımcısı'nın sol tarafındaki (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
 
- **Throw** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve oturum bırakılan [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzey yerde etkinlikleri genellikle yerleştirilir, gibi olarak içinde bir <xref:System.Activities.Statements.Sequence>. Bu oluşturur bir <xref:System.Activities.Statements.Throw> varsayılan etkinlik **DisplayName** Throw biri. <xref:System.Activities.Activity.DisplayName%2A> Değeri üstbilgisinde düzenlenebilir **Throw** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu. <xref:System.Activities.Statements.Throw.Exception%2A> Özelliği ve özellik ızgarasının düzenlenmesi gerekir.
+ **Throw** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri genellikle yerleştirilir olduğunda, örneğin olarak içinde açın iş akışı Tasarımcısı yüzeyini bırakılan bir <xref:System.Activities.Statements.Sequence>. Bu oluşturur bir <xref:System.Activities.Statements.Throw> varsayılan etkinlik **DisplayName** Throw biri. <xref:System.Activities.Activity.DisplayName%2A> Değeri üstbilgisinde düzenlenebilir **Throw** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu. <xref:System.Activities.Statements.Throw.Exception%2A> Özelliği ve özellik ızgarasının düzenlenmesi gerekir.
 
 ### <a name="the-throw-properties"></a>Throw özellikleri
  Aşağıdaki tabloda <xref:System.Activities.Statements.Throw> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır.

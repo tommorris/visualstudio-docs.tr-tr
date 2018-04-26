@@ -1,9 +1,9 @@
 ---
-title: Visual Studio 2017 yenilikler | Microsoft Docs
+title: Visual Studio 2017 yenilikler
 ms.custom: ''
 ms.date: 12/04/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,13 +16,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c2ce39143bbc4be2e7dc2e077d93ee7a1fff52
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a523933dbc18d6fdc107415c6f7faefa9fc5135
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="what39s-new-in-visual-studio-2017"></a>Ne&#39;s Visual Studio 2017'deki yenilikler
+# <a name="what39s-new-in-visual-studio-2017"></a>Ne&#39;Visual Studio 2017 yenilikler
 #### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>İçin güncelleştirilmiş [15.6 sürüm](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 Visual Studio'nun önceki bir sürümden yükseltme mi arıyorsunuz? İşte ne Visual Studio 2017, sunabileceğiniz: benzersiz üretkenliği tüm geliştirme, herhangi bir uygulama ve herhangi bir platform için. Android, iOS, Windows, Linux, web ve bulut için uygulama geliştirmek için Visual Studio 2017 kullanın. Hızlı kod yazın, kolayca hata ayıklama ve tanılama yapın, sık sık test edin ve güvenle kullanıma sunun. Ayrıca, kendi uzantılarınızı oluşturarak Visual Studio’yu özelleştirebilir ve kapsamını genişletebilirsiniz. Sürüm denetimini kullanma, Çevik ve verimli bir şekilde bu sürüm ile işbirliği!
 
@@ -299,7 +299,7 @@ Biz Visual Studio geliştirmek, veya nasıl bir sorun bildirmek hakkında öneri
 ### <a name="track-your-issue-in-connect"></a>Sorununuzu Bağlan izleme  
  Visual Studio geri bildirim durumunu izlemek istediğiniz Git [Bağlan](http://connect.microsoft.com/) ve hata olmadığını bildirir. Bu rapor sonra Bağlan durumunu izlemek için geri dönebilirsiniz.  
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 * [Visual Studio 2017 sürüm notları](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Visual c++'ta yenilikler nelerdir?](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# ' ta yenilikler nelerdir?](/dotnet/csharp/whats-new)  

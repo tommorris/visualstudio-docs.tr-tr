@@ -1,7 +1,7 @@
 ---
-title: Test denetleyicileri ve Test aracılarını Visual Studio sorunlarını giderme | Microsoft Docs
+title: Test denetleyicileri ve Test aracılarını Visual Studio sorunlarını giderme
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -11,12 +11,13 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Test Denetleyicileri ve Yükleme Testlerindeki Test Aracılarına İlişkin Sorun Giderme Stratejileri
 
@@ -27,7 +28,8 @@ Bu makalede, test denetleyicileri ve test aracılarını Visual Studio ile çal�
  Bir yük testi çalıştırdığınızda, bir test aracısı bilgisayara bağlanmak ve performans sayaçlarını toplama çalıştığınızda hata alabilirsiniz. Uzak Kayıt Defteri hizmeti performans sayacı verilerini uzak bir bilgisayara sağlamak için sorumlu hizmetidir. Bazı işletim sistemlerinde, uzak kayıt defteri hizmeti otomatik olarak başlatılmaz. Bu sorunu gidermek için el ile uzak kayıt defteri hizmetini başlatın.
 
 > [!NOTE]
->  Uzak Kayıt Defteri hizmetine erişim **Denetim Masası.** Seçin **Yönetimsel Araçlar** ve ardından **Hizmetleri**.
+> Uzak Kayıt Defteri hizmetine erişim **Denetim Masası.** Seçin **Yönetimsel Araçlar** ve ardından **Hizmetleri**.
+
 
  Bu sorunun başka bir nedeni, performans sayaçlarını okumak için yeterli izinlere sahip değil ' dir. Yerel test çalıştırmalarında testi çalıştıran kullanıcı hesabı Power Users grubunun veya daha yüksek bir üyesi olmanız veya Performance Monitor Users grubunun bir üyesi olmanız gerekir. Uzaktan test denetleyicisi Power Users grubunun bir üyesi olarak çalıştırmak için yapılandırılmış veya sonrası, hesabı çalışır veya Performance Monitor Users grubunun bir üyesi olması için.
 
@@ -87,7 +89,8 @@ Bu makalede, test denetleyicileri ve test aracılarını Visual Studio ile çal�
  Birden fazla ağ bağdaştırıcısı olan bir bilgisayarda test denetleyicisi yükleyerek bu hataya neden.
 
 > [!NOTE]
->  Test aracıları başarıyla yüklemek ve test çalıştırma çalışana kadar bu sorunu karşılaşmamanız da mümkündür.
+> Test aracıları başarıyla yüklemek ve test çalıştırma çalışana kadar bu sorunu karşılaşmamanız da mümkündür.
+
 
  Bu hatayı düzeltmek için test denetleyicisi ağ bağdaştırıcılarından birine bağlamanız gerekir. Ayarlamak sahip `BindTo` özelliği test denetleyicisi ve test aracısı başvurmak için değiştirin test denetleyicisi tarafından IP adresi yerine ada göre. Aşağıdaki yordamlardaki adımları sağlanır.
 

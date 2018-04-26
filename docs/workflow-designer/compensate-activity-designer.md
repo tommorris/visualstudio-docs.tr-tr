@@ -1,7 +1,9 @@
 ---
-title: Etkinlik Tasarımcısı dengelemek | Microsoft Docs
+title: İş Akışı Tasarımcısı - dengelemek etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
@@ -10,13 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef289304338ea64a72c073711a287612d39bd1a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8278066a12df0d195770391d0b2f3144ba16487d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="compensate-activity-designer"></a>Etkinlik Tasarımcısı dengelemek
+
 **Compensate** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.Compensate> etkinlik.
 
 ## <a name="the-compensate-activity"></a>Etkinlik dengelemek
@@ -25,12 +28,12 @@ ms.lasthandoff: 04/16/2018
  <xref:System.Activities.Statements.CompensationToken> Tarafından belirtilen <xref:System.Activities.Statements.Compensate.Target%2A> açıkça onaylamak veya dengelemek için bir yol sağlayan bir <xref:System.Activities.Statements.CompensableActivity> sonra <xref:System.Activities.Statements.CompensableActivity.Body%2A> , <xref:System.Activities.Statements.CompensableActivity> başarıyla tamamlandı.
 
 ### <a name="using-the-compensate-activity-designer"></a>Kullanarak etkinlik Tasarımcısı dengelemek
- **Compensate** etkinlik Tasarımcısı bulunabilir **işlem** kategorisini **araç**, hangi tıklayarak erişildiğinde **araçkutusu** sol tarafındaki sekmesinde [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
+ **Compensate** etkinlik Tasarımcısı bulunabilir **işlem** kategorisini **araç**. Açmak için **araç**seçin **araç** sekmesi iş akışı Tasarımcısı'nın sol tarafındaki (Alternatif olarak, seçin **araç** gelen **Görünüm**menüsü veya CTRL + ALT + X.)
 
- **Compensate** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve oturum bırakılan [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzey yerde etkinlikleri genellikle yerleştirilir, gibi olarak içinde bir <xref:System.Activities.Statements.Sequence>. Bu oluşturur bir <xref:System.Activities.Statements.Compensate> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> Compensate biri. <xref:System.Activities.Activity.DisplayName%2A> Değeri üstbilgisinde düzenlenebilir **Compensate** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
+ **Compensate** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri yerleştirilir olduğunda, örneğin olarak içinde açın iş akışı Tasarımcısı yüzeyini bırakılan bir <xref:System.Activities.Statements.Sequence>. Etkinlik Tasarımcısı bırakarak oluşturur bir <xref:System.Activities.Statements.Compensate> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> Compensate biri. <xref:System.Activities.Activity.DisplayName%2A> Değeri üstbilgisinde düzenlenebilir **Compensate** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
 
 ### <a name="the-compensate-properties"></a>Özellikler dengelemek
- Aşağıdaki tabloda <xref:System.Activities.Statements.CancellationScope> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. <xref:System.Activities.Activity.DisplayName%2A> Özelliği, özellik kılavuzu veya üzerinde düzenlenebilir [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzeyini, ancak <xref:System.Activities.Statements.Compensate.Target%2A> özellik kılavuzunda özelliği düzenlenemiyor.
+ Aşağıdaki tabloda <xref:System.Activities.Statements.CancellationScope> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. <xref:System.Activities.Activity.DisplayName%2A> Özelliği, özellik kılavuzu veya iş akışı Tasarımcısı yüzeyinde düzenlenebilir. Düzen <xref:System.Activities.Statements.Compensate.Target%2A> özellik kılavuzunda özelliği.
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|

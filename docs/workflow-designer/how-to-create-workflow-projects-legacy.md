@@ -1,7 +1,9 @@
 ---
-title: 'Nasıl yapılır: iş akışı projeleri (eski) oluşturma | Microsoft Docs'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: iş akışı projeleri (eski) oluşturma'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -11,18 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca6fdbbd8a744c472c06fdefbdafce77679ec2c9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb5d58c6d450a5e68d804e33785ec76349bfb6d8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Nasıl yapılır: iş akışı projeleri (eski) oluşturma
-Oluşturmak için bu adımları bir [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] hedefleyen projede [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Bu yordam eski Windows iş akışı tasarımcısı tarafından sağlanan kullanır [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
 
-### <a name="to-create-a-workflow-project"></a>Bir iş akışı projesi oluşturmak için
+.NET Framework sürüm 3.5 veya WinFX hedefleyen bir Windows Workflow Foundation (WF) projesi oluşturmak için aşağıdaki adımları izleyin. Bu yordam, eski Windows iş akışı Tasarımcısı Visual Studio 2010 tarafından sağlanan kullanır.
 
-1.  Başlat [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)].
+## <a name="to-create-a-workflow-project"></a>Bir iş akışı projesi oluşturmak için
+
+1.  Visual Studio'yu başlatın.
 
 2.  Üzerinde **dosya** menüsündeki **yeni**ve ardından **proje**.
 
@@ -31,7 +34,7 @@ Oluşturmak için bu adımları bir [!INCLUDE[wf](../workflow-designer/includes/
 3.  Şunlardan birini seçin **.NET Framework 3.0** seçeneği veya **.NET Framework 3.5** aşağı açılan listeden en üstündeki seçeneğinde **yeni proje** eski Tasarımcısı erişmek için penceresi.
 
     > [!NOTE]
-    > Varsayılan seçenek [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] olan **.NET Framework 4**. Bu seçenek oluşturmak için kullanılan [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] hedefleyen uygulamalar [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] ve eski Tasarımcısı'nı kullanmaz.
+    > Visual Studio 2010 varsayılan seçenektir **.NET Framework 4**. Bu seçenek, hedef .NET Framework 4 Windows Workflow Foundation (WF) uygulamaları oluşturmak için kullanılır ve eski Tasarımcısı'nı kullanmaz.
 
 4.  İçinde **proje türleri** bölmesinde, Visual C# projeleri veya Visual Basic projeleri seçin ve ardından **iş akışı**.
 

@@ -1,6 +1,7 @@
 ---
-title: "İzlenecek yol: Oluşturmak ve çalıştırmak için birim testleri Visual Studio'da kodu yönetilen | Microsoft Docs"
+title: "Visual Studio'da yönetilen kod için birim testleri izlenecek yol: Oluşturma ve çalıştırma"
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +15,11 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: a34fded72a0d04f3920e0d7a76f9550993b520e7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b60317f46fc8676d51618e5c79545e752008072
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Oluşturmak ve yönetilen kod için birim testleri çalıştırma
 
@@ -45,10 +46,12 @@ Bu kılavuzda oluşturma, çalıştıran ve yönetilen kod ve Visual Studio Test
  [Kodunuzu geliştirmek için kullanım birim testleri](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)
 
 > [!NOTE]
->  Bu kılavuz, yönetilen kod için Microsoft birim test çerçevesi kullanır. Test Gezgini testleri için Test Gezgini bağdaştırıcılara sahip test çerçevelerini üçüncü taraf biriminden çalıştırabilirsiniz. Daha fazla bilgi için bkz: [üçüncü taraf birim test çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)
+> Bu kılavuz, yönetilen kod için Microsoft birim test çerçevesi kullanır. Test Gezgini testleri için Test Gezgini bağdaştırıcılara sahip test çerçevelerini üçüncü taraf biriminden çalıştırabilirsiniz. Daha fazla bilgi için bkz: [üçüncü taraf birim test çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)
+
 
 > [!NOTE]
->  Bir komut satırından testleri çalıştırma hakkında daha fazla bilgi için bkz: [izlenecek yol: komut satırı test yardımcı programını kullanarak](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).
+> Bir komut satırından testleri çalıştırma hakkında daha fazla bilgi için bkz: [izlenecek yol: komut satırı test yardımcı programını kullanarak](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).
+
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -111,7 +114,7 @@ public void Debit(double amount)
 
 1.  Üzerinde **dosya** menüsünde seçin **Ekle**ve ardından **yeni proje...** .
 
-2.  Yeni Proje iletişim kutusuna genişletin **yüklü**, genişletin **Visual C#**ve ardından **Test**.
+2.  Yeni Proje iletişim kutusuna genişletin **yüklü**, genişletin **Visual C#** ve ardından **Test**.
 
 3.  Şablonları listesinden seçin **birim testi projesi**.
 
@@ -234,7 +237,7 @@ using BankAccountNS;
 ##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Kodunuzu düzeltin ve testleri yeniden çalıştırın
  **Test sonuçlarını analiz etme**
 
- Test sonucu hatayı açıklayan bir ileti içerir. İçin `AreEquals` yöntemi, ileti görüntüler, ne bekleniyordu ((**beklenen\<*XXX*>**parametresi) ve ne gerçekte alındı ( **Gerçek\<*YYY* >** parametresi). Başlangıç bakiyenin dışında reddetmek için Bakiye şuydu, ancak bunun yerine mevzuatı tutarına göre artırılmıştır.
+ Test sonucu hatayı açıklayan bir ileti içerir. İçin `AreEquals` yöntemi, ileti görüntüler, ne bekleniyordu ((**beklenen\<*XXX*>** parametresi) ve ne gerçekte alındı ( **Gerçek\<*YYY* >** parametresi). Başlangıç bakiyenin dışında reddetmek için Bakiye şuydu, ancak bunun yerine mevzuatı tutarına göre artırılmıştır.
 
  ATM kod reexamination birim test hata bulma başarılı olduğunu gösterir. Mevzuatı miktarını çıkarılsın mı hesap bakiyesini eklenir.
 

@@ -1,6 +1,6 @@
 ---
 title: Python ortamları ve yorumlayıcılar yönetme
-description: Genel yönetmek için Visual Studio ve Python yorumlayıcılar yükleme, paketleri yükleme, arama yolları ayarlama ve ortamlar için Visual Studio Projeleri Yönetme özel ortamları ayarlama sanal ortamlar Python ortamları penceresini kullanma
+description: Genel, sanal yönetmek için Python ortamları penceresi ve Python yorumlayıcılar ve paketleri yükleme ve Visual Studio projelerine ortamları atama conda ortamları kullanın.
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 422503cf1e9332ce2b42674f7a6293e844401772
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f3a3fa14a2772171b2968514867d35ea4ad126f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-python-environments-in-visual-studio"></a>Visual Studio'da Python ortamları yönetme
+# <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Oluşturma ve Visual Studio Python ortamlarında yönetme
 
 Bir Python *ortam* conda ortamları ise, Python kodu çalıştırmak ve içeren genel, sanal bir bağlam. Bir ortam bir yorumlayıcı, bir kitaplık (genellikle Python standart kitaplığı) ve yüklü paketler kümesini oluşur. Bu bileşenlerin, birlikte hangi dil yapıları ve sözdizimi geçerli olduğunu belirlemek hangi işletim sistemi işlevselliği erişebilir ve hangi paketleri kullanabilirsiniz.
 

@@ -1,7 +1,9 @@
 ---
-title: 'Nasıl yapılır: bir iş akışı projesine (eski) yeni bir öğe ekleme | Microsoft Docs'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: bir iş akışı projesine (eski) yeni bir öğe ekleme'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflows, adding to workflow projects
 - workflows, adding new items
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1699b3f2d16bb481a7efb744eed58d395dbc8773
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d6e9607f4924057568849fd7eabd4567130dc2f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Nasıl yapılır: bir iş akışı projesine (eski) yeni bir öğe ekleme
-Eski Windows iş akışı tarafından sağlanan Tasarımcısı'nı kullanarak bir iş akışı projesi oluşturduktan sonra [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] ya da hedefleyen [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], ekleyebileceğiniz [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] öğeleri ve diğer tanıdık [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] öğelerinin, Proje.
 
- Aşağıdaki tabloda [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] bir iş akışı projesine eklemek öğeleri.
+Windows iş akışı Tasarımcısı .NET Framework sürüm 3.5 veya WinFX hedefleyen Visual Studio 2010 tarafından sağlanan eski kullanarak bir iş akışı projesi oluşturduktan sonra Windows Workflow Foundation (WF) öğeleri ve tanıdık diğer Visual Studio ekleyebilirsiniz projenizi öğeleri.
+
+Aşağıdaki tabloda, bir iş akışı projesine eklemek Windows Workflow Foundation öğeleri listeler.
 
 |Öğe|Açıklama|
 |----------|-----------------|
@@ -33,7 +36,7 @@ Eski Windows iş akışı tarafından sağlanan Tasarımcısı'nı kullanarak bi
 |Durum makinesi iş akışı (kod)|Durum makine içeren bir iş akışının iş akışı tanımı'nda bir tasarımcı dosya ve kullanıcı kodundan ayrı kod dosyasında.|
 |Durum makinesi iş akışıyla (kod ayrımı)|Durum makinesi iş akışı iş akışı biçimlendirmesi ve kullanıcı kodu ayrı kod dosyası olarak ifade edilen iş akışı tanımıyla.|
 
-### <a name="to-add-a-new-item-to-a-workflow-project"></a>Bir iş akışı projesine yeni öğe eklemek için
+## <a name="to-add-a-new-item-to-a-workflow-project"></a>Bir iş akışı projesine yeni öğe eklemek için
 
 1.  Üzerinde **proje** menüsünde tıklatın **Yeni Öğe Ekle**.
 

@@ -1,6 +1,6 @@
 ---
 title: Python desteğini yükleme
-description: İçin Visual Studio (PTVS) Visual Studio 2017, 2015, 2013, 2012 ve 2010 içinde Python Araçları'nı yükleme konusunda ayrıntılı yönergeler seçenekleri ve yükleme konumlarını dahil olmak üzere.
+description: Python araçları için Visual Studio (PTVS) Visual Studio 2017, 2015, 2013, 2012 ve seçenekleri ve yükleme konumlarını dahil olmak üzere 2010 içinde nasıl yüklenir.
 ms.date: 02/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a998a2a62915d1ce998e30202f4b4fd0838975a3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c93a0c4d8fd312c9b7b6367043fc35b183d022bb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="installing-python-support-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python desteğini yükleme
+# <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python desteği yükleme
 
 Visual Studio (Visual Studio ya da PTVS için Python araçları olarak da bilinir) için Python desteği yüklemek için Visual Studio sürümünüzle eşleşen bölümünde yer alan yönergeleri izleyin:
 

@@ -1,6 +1,7 @@
 ---
-title: Visual Studio'da Microsoft Fakes ile Test edilen kodu yalıtma | Microsoft Docs
+title: Visual Studio'da Microsoft Fakes ile Test edilen kodu yalıtma
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -11,11 +12,11 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: ed5e8844234f6dfde52408ecd4c814b725816eb7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af87fe6c71ceee98c54e2bd1dd6bae24bc58df97
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes ile Test Edilen Kodu Yalıtma
 
@@ -32,6 +33,10 @@ Fakes iki türde olabilir:
 **Gereksinimler**
 
 -   Visual Studio Enterprise
+-   Bir .NET Framework projesi
+
+> [!NOTE]
+> .NET standart projeleri desteklenmez.
 
 ## <a name="choosing-between-stub-and-shim-types"></a>Saptama ve dolgu türü arasında seçim yapma
 Genelde bu sınıfları aynı anda geliştirip güncelleştirdiğinizden bir Visual Studio projesini bileşen olarak kabul edebilirsiniz. Projenin çözümünüzdeki diğer projelere veya diğer derlemelere yaptığı çağrılar için saptama ve dolgu kullanmayı deneyebilirsiniz.

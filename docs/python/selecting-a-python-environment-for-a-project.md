@@ -1,6 +1,6 @@
 ---
-title: Bir proje için bir ortam seçme
-description: Visual Studio Çözüm Gezgini'nde, belirli bir Python yorumlayıcısı (ortamı) için her zaman kullanım verilen her proje için varsayılan ortam yoksayılıyor atayabilirsiniz. Ayrıca, oluşturabilir ve sanal ortamlarını yönetebilir.
+title: Python yorumlayıcı ve ortamınız için bir proje seçme
+description: Visual Studio projesi artı sanal ortamları oluşturma yönergeleri için kullanılacak Python ortamı atama.
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Bir Python yorumlayıcısı ve ortam kullanmak için bir proje ile seçme
+# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Proje için hangi Python ortamı atamak nasıl kullanılır
 
 Bir Python projesindeki tüm kod belirli bir ortam bağlamında çalışır. Visual Studio bu ortam hata ayıklama, içeri aktarma ve üye tamamlamalar, sözdizimi denetimi ve bir ortam gerektiren diğer görevler için de kullanır.
 

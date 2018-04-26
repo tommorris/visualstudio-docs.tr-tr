@@ -1,8 +1,9 @@
 ---
-title: Statik yardımcı sınıfları | Microsoft Intellitest Geliştirici Test aracı | Microsoft Docs
+title: Statik yardımcı sınıfları | Microsoft Intellitest Geliştirici Test aracı
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd414382889e02f209e9cd64155f9e9baad75534
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e83d964cf4c17542f8741a03963f317e234bca01
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="static-helper-classes"></a>Statik yardımcı sınıfları
 
@@ -32,8 +33,7 @@ Bazı sınıflar, bir alt düzey adresindeki Intellitest mantığı altyapısı 
 <a name="pexassume"></a>
 ## <a name="pexassume"></a>PexAssume
 
-Varsayımları gibi ifade etmek için kullanılan bir statik sınıf [önkoşulları](test-generation.md#precondition), [parametreli birim testleri](test-generation.md#parameterized-unit-testing).
-Bu sınıf yöntemlerini istenmeyen test girişleri filtrelemek için kullanılabilir.
+Varsayımları gibi ifade etmek için kullanılan bir statik sınıf [önkoşulları](test-generation.md#precondition), [parametreli birim testleri](test-generation.md#parameterized-unit-testing). Bu sınıf yöntemlerini istenmeyen test girişleri filtrelemek için kullanılabilir.
 
 Varsayılan koşul giriş, bazı test için barındırmıyorsa bir **PexAssumeFailedException** atılır. Bu, sessizce yok sayılacak test neden olur.
 
@@ -173,4 +173,4 @@ public static void AreElementsNotNull<T>(T[] value)
 
 ## <a name="got-feedback"></a>Geri bildirim var mı?
 
-Fikirlerinizi sonrası ve özellik istekleri  **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Fikirlerinizi sonrası ve özellik istekleri [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

@@ -1,24 +1,23 @@
 ---
-title: Visual Studio'da renk temasını ve yazı tipleri ayarlama | Microsoft Docs
-ms.custom: ''
+title: Renk temasını ve yazı tipleri Visual Studio'da ayarlayın
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7024213ca383ee5934df1d413501065b383f7981
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 56d40211b7d69d46bfbb24f6c1e0de8855809cda
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Hızlı Başlangıç: Visual Studio IDE ve düzenleyici kişiselleştirme
 
-Bu 5-10 dakika quickstart Biz Visual Studio renk temasını ve iki metin renkleri Metin Düzenleyicisi'nde özelleştirme.
+Bu 5-10 dakika quickstart Biz Visual Studio renk temasını ve iki metin renkleri özelleştirme **metin düzenleyici**.
 
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa.
 
@@ -35,13 +34,13 @@ Visual Studio 2017 için varsayılan renk temasını adlı **mavi**. Kendisine d
    ![VS koyu tema içinde](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> Yükleyerek önceden tanımlanmış ek temalar yükleyebilirsiniz **Visual Studio renkli tema Düzenleyicisi** gelen [Visual Studio Market'te](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Bu aracı yükledikten sonra ek renk temaları renk temasını aşağı açılan listede görüntülenir.
+> Yükleyerek önceden tanımlanmış ek temalar yükleyebilirsiniz **Visual Studio renkli tema Düzenleyicisi** gelen [Visual Studio Market'te](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Bu aracı yükledikten sonra ek renk temaları görünür **renk temasını** aşağı açılan liste.
 
 ## <a name="change-text-color"></a>Metin rengi değiştirme
 
 Şimdi biz bazı metin renkleri Düzenleyicisi özelleştirmek. İlk olarak, varsayılan renkleri görmek için bir XML dosyası açalım.
 
-1. Menü çubuğundan seçin **dosya** > **yeni** > **dosya...** .
+1. Menü çubuğundan seçin **dosya** > **yeni** > **dosya**.
 
 1. İçinde **yeni dosya** iletişim kutusunda **genel** kategorisi seçin **XML dosyası**ve ardından **açık**.
 
@@ -73,7 +72,7 @@ Visual Studio 2017 için varsayılan renk temasını adlı **mavi**. Kendisine d
    </Catalog>
    ```
 
-   Satır numaralarını Turkuaz mavi bir renk, ve xml öznitelikleri açık bir mavi renk olduğundan dikkat edin. Bu öğeler metin rengini değiştirmek olacak.
+   Satır numaralarını Turkuaz mavi bir renk, ve XML öznitelikleri açık bir mavi renk olduğundan dikkat edin. Bu öğeler metin rengini değiştirmek olacak.
 
    ![XML dosyası yazı tipi rengi](media/quickstart-personalize-xml-file.png)
 
@@ -103,5 +102,5 @@ Biz, Visual Studio renkleri özelleştirme yalnızca birkaç yolla incelediniz. 
 - [Hızlı Başlangıç: düzenleyicide kodlama](../ide/quickstart-editor.md)
 - [Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)
 - [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)
-- [Düzenleyiciyi Özelleştirme](../ide/customizing-the-editor.md)
+- [Düzenleyiciyi özelleştirme](../ide/customizing-the-editor.md)
 - [Visual Studio IDE’ye Genel Bakış](../ide/visual-studio-ide.md)

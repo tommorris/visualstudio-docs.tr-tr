@@ -1,7 +1,9 @@
 ---
-title: AddToCollection&lt;T&gt; etkinlik Tasarımcısı | Microsoft Docs
+title: İş Akışı Tasarımcısı - AddToCollection<T> etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
@@ -10,25 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c961c8ab893b1d8b4a2d519d8b9dce27fd6f93c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b32df48f79d60500cb23a40c5273ceeedfc9c56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt; etkinlik Tasarımcısı
+# <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > etkinlik Tasarımcısı
+
 **AddToCollection\<T >** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.AddToCollection%601> etkinlik.
 
-## <a name="the-addtocollectiont-activity"></a>AddToCollection < T\> etkinliği
- <xref:System.Activities.Statements.AddToCollection%601> Etkinlik bir öğe bir koleksiyona ekler.
+## <a name="the-addtocollectiont-activity"></a>AddToCollection\<T > etkinliği
+
+<xref:System.Activities.Statements.AddToCollection%601> Etkinlik bir öğe bir koleksiyona ekler.
 
 ### <a name="using-the-addtocollectiont-activity-designer"></a>AddToCollection kullanarak\<T > etkinlik Tasarımcısı
- **AddToCollection\<T >** etkinlik Tasarımcısı bulunabilir **koleksiyonu** kategorisini **araç**, hangi tıklayarakerişildiğinde **Araç kutusu** sekmesinde [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
 
- **AddToCollection\<T >** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve oturum bırakılan [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzey yerde etkinlikleri genellikle yerleştirilir, gibi olarak içinde bir <xref:System.Activities.Statements.Sequence>. Bu oluşturur bir <xref:System.Activities.Statements.AddToCollection%601> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> AddToCollection, < Int32\>. (Varsayılan olarak, *TypeArgument* olan **Int32**. Bu özellik kılavuzunda değiştirilebilir.) <xref:System.Activities.Activity.DisplayName%2A> Değeri üstbilgisinde düzenlenebilir **AddToCollection < T\>**  etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu. Diğer özellikler ve özellik ızgarasının düzenlenmesi gerekir.
+**AddToCollection\<T >** etkinlik Tasarımcısı bulunabilir **koleksiyonu** kategorisini **araç**, hangi tıklayarakerişildiğinde **Araç kutusu** sekmesi iş akışı Tasarımcısı'nın (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
 
-### <a name="the-addtocollectiont-properties"></a>AddToCollection < T\> özellikleri
- Aşağıdaki tabloda <xref:System.Activities.Statements.AddToCollection%601> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır.
+**AddToCollection\<T >** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri yerleştirilir olduğunda, böyle bir gibiiçindeişakışıTasarımcısıyüzeyiniaçın<xref:System.Activities.Statements.Sequence>. Bırakma **AddToCollection\<T >** etkinlik Tasarımcısı oluşturur bir <xref:System.Activities.Statements.AddToCollection%601> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> AddToCollection, < Int32\>. (Varsayılan olarak, *TypeArgument* olan **Int32**. TypeArgument özellik kılavuzunda değiştirilebilir.) <xref:System.Activities.Activity.DisplayName%2A> Değeri üstbilgisinde düzenlenebilir **AddToCollection < T\>**  etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu. Diğer özellikler ve özellik ızgarasının düzenlenmesi gerekir.
+
+### <a name="the-addtocollectiont-properties"></a>AddToCollection\<T > Özellikler
+
+Aşağıdaki tabloda <xref:System.Activities.Statements.AddToCollection%601> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır.
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|

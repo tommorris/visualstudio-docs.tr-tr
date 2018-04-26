@@ -1,6 +1,7 @@
 ---
-title: Kodlanmış UI testleri Visual Studio'da HTML5 denetimleri kullanma | Microsoft Docs
+title: Visual Studio'da kodlanmış UI testlerinde HTML5 denetimleri kullanma
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b440ce0a9f9cf935020ca7ddf0cf392a0d47ad54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 918a2087635b88e018234f4c5dddff5e1f5f45d5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Kodlanmış UI Testlerinde HTML5 Denetimleri Kullanma
 
@@ -23,10 +24,12 @@ Kodlanmış UI testleri bazı Internet Explorer 9 ve Internet Explorer 10 dahil 
 -   Visual Studio Enterprise
 
 > [!WARNING]
->  Internet Explorer 10 önce sürümlerde, Internet Explorer işlemi karşılaştırıldığında daha yüksek bir ayrıcalık düzeyinde kodlanmış UI testleri çalıştırmak mümkün. Kodlanmış UI testleri üzerinde Internet Explorer 10 çalıştırırken, kodlanmış UI testi ve Internet Explorer işlemi aynı ayrıcalık düzeyinde olması gerekir. Internet Explorer 10 daha güvenli Appcontaıner özellikleri nedeniyle budur.
+> Internet Explorer 10 önce sürümlerde, Internet Explorer işlemi karşılaştırıldığında daha yüksek bir ayrıcalık düzeyinde kodlanmış UI testleri çalıştırmak mümkün. Kodlanmış UI testleri üzerinde Internet Explorer 10 çalıştırırken, kodlanmış UI testi ve Internet Explorer işlemi aynı ayrıcalık düzeyinde olması gerekir. Internet Explorer 10 daha güvenli Appcontaıner özellikleri nedeniyle budur.
+
 
 > [!WARNING]
->  Internet Explorer 10'kodlanmış UI testi oluşturursanız, Internet Explorer 9 veya Internet Explorer 8 kullanarak çalışmayabilir. Internet Explorer 10 HTML5 denetimleri ses, Video, ProgressBar ve kaydırıcı gibi içerdiğinden budur. Bu HTML5 denetimleri, Internet Explorer 9 veya Internet Explorer 8 tarafından tanınmaz. Benzer şekilde, Internet Explorer 9 kullanarak kodlanmış UI testleri, Internet Explorer 8 tarafından tanınmayacak bazı HTML5 denetimleri de içerebilir.
+> Internet Explorer 10'kodlanmış UI testi oluşturursanız, Internet Explorer 9 veya Internet Explorer 8 kullanarak çalışmayabilir. Internet Explorer 10 HTML5 denetimleri ses, Video, ProgressBar ve kaydırıcı gibi içerdiğinden budur. Bu HTML5 denetimleri, Internet Explorer 9 veya Internet Explorer 8 tarafından tanınmaz. Benzer şekilde, Internet Explorer 9 kullanarak kodlanmış UI testleri, Internet Explorer 8 tarafından tanınmayacak bazı HTML5 denetimleri de içerebilir.
+
 
 ## <a name="supported-html5-controls"></a>Desteklenen HTML5 denetimleri
  Kodlanmış UI testleri kaydı, yürütme ve doğrulama aşağıdaki HTML5 denetimleri için destek içerir:
@@ -80,7 +83,8 @@ string Volume
  **Filtre özellikleri:** filtre özelliklerini `HtmlAudio` olan `Src`, `Class`, `ControlDefinition` ve `TagInstance`.
 
 > [!NOTE]
->  Arama ve Duraklat için geçen süreyi önemli olabilir. Belirtilen süre kadar kodlanmış UI Testi kayıttan yürütme sırasında bekleyecek `(TimeSpan)` ses duraklatma önce. Özel bazı koşullar tarafından Duraklat komutunu basarsa önce belirtilen süre geçtiyse, bir özel durum.
+> Arama ve Duraklat için geçen süreyi önemli olabilir. Belirtilen süre kadar kodlanmış UI Testi kayıttan yürütme sırasında bekleyecek `(TimeSpan)` ses duraklatma önce. Özel bazı koşullar tarafından Duraklat komutunu basarsa önce belirtilen süre geçtiyse, bir özel durum.
+
 
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Video denetimi
  **Video denetimi:** HTML5 videosunu denetim eylemleri doğru şekilde kaydedilir ve çalınma.
@@ -110,7 +114,8 @@ string VideoWidth
  **Filtre özellikleri:** filtre özelliklerini `HtmlVideo` olan `Src`, `Poster`, `Class`, `ControlDefinition` ve `TagInstance`.
 
 > [!NOTE]
->  Geri Sar veya-30s veya +30s etiketleri kullanarak video ileri sarma, bunu uygun zaman arama toplanacak.
+> Geri Sar veya-30s veya +30s etiketleri kullanarak video ileri sarma, bunu uygun zaman arama toplanacak.
+
 
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Kaydırıcı
  **Kaydırıcı denetimi:** HTML5 kaydırıcı denetimi eylemlerini doğru şekilde kaydedilir ve çalınma.

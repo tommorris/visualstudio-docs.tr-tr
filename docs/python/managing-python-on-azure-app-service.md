@@ -1,5 +1,5 @@
 ---
-title: Azure uygulama hizmeti Python yorumlayıcılar ve kitaplıkları yükleme
+title: Azure uygulama hizmeti Python yapılandırma
 description: Bir Python yorumlayıcısı ve kitaplıkları Azure App Service ve düzgün bir şekilde bu yorumlayıcı başvurmak için yapılandırma web uygulamalarını nasıl yüklenir.
 ms.date: 09/13/2017
 ms.prod: visual-studio-dev15
@@ -12,13 +12,13 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cd3be2ee5d62c687fab1c822e3469d9523624047
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e77c155565830827ff6c30e48aee89152e07a80e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-python-on-azure-app-service"></a>Azure App Service’te Python’u yönetme
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Azure App Service'te bir Python ortamı kurma
 
 [Azure uygulama hizmeti](https://azure.microsoft.com/services/app-service/) siteleri REST API'ları, kendi istemcileri veya olayı tarafından tetiklenen işlem tarafından kullanılan bir tarayıcı aracılığıyla erişilen oldukları olup, bir hizmet olarak platform sunumu web uygulamaları için. Uygulama hizmeti uygulamalarını uygulamak için Python kullanarak tam olarak destekler.
 

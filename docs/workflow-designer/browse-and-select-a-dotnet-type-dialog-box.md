@@ -1,7 +1,9 @@
 ---
-title: Gözat ve bir .NET türünü seç iletişim kutusu | Microsoft Docs
+title: İş Akışı Tasarımcısı - göz atın ve bir .NET türünü seç iletişim kutusu
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
@@ -11,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04aba24d3dffc96fb8e5288d74322258fa77ce19
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4d136c98acd2719abd07f8feb2f9def48ec6b2ec
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Gözat ve bir .NET türünü seç iletişim kutusu
 
@@ -34,7 +36,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Bir değer veya başvuru türündeki türü tarayıcıdan seçme
 
-#### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Bir değer veya başvuru türünde türü tarayıcıdan seçmek için
+### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Bir değer veya başvuru türünde türü tarayıcıdan seçmek için
 
 1.  İçinde **türü adı** kutusunda, kullanmak istediğiniz türünün adını girin.
 
@@ -44,7 +46,7 @@ ms.lasthandoff: 04/16/2018
 
     -   Yeterli sayıda karakter **türü adı** kutusunu kullanmak istiyorsanız ve ENTER tuşuna basın türü seçmek için tür benzersiz şekilde tanımlamak için
 
-#### <a name="to-select-a-generic-type-from-the-type-browser"></a>Genel bir tür türü tarayıcıdan seçmek için
+### <a name="to-select-a-generic-type-from-the-type-browser"></a>Genel bir tür türü tarayıcıdan seçmek için
 
 1.  İçinde **türü adı** kutusunda, kullanmak istediğiniz türü adını yazın.
 

@@ -1,6 +1,6 @@
 ---
-title: Python, 3. adım, etkileşimli REPL penceresi ile çalışma
-description: Python Python etkileşimli REPL penceresi kapsayan Visual Studio içinde çalışmak için bir çekirdek öğreticinin 3 adımı.
+title: Python Eğitmen ile adım 3, etkileşimli REPL pencere çalışma
+description: Adım 3 / Çekirdek kılavuz Python etkileşimli REPL penceresi kapsayan Visual Studio'da Python yeteneklerini.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0a0cbe766f1b31166185275989bfa0678ed50690
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3d5d0224c9f6d8d76f73c79feeaa363a6e0a954a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>3. adım: etkileşimli REPL penceresini kullanma
 

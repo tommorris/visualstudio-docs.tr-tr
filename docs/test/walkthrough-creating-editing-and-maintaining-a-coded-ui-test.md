@@ -1,6 +1,7 @@
 ---
-title: Visual Studio'da kodlanmış UI testi oluşturma | Microsoft Docs
+title: Visual Studio'da kodlanmış UI testi oluşturma
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1861915f50961bb3b07513d69d9799717694e1be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 835d8fbefa778147f2397eefad055cb96fb82c90
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>İzlenecek yol: Kodlanmış Bir UI Testi Oluşturmak Düzenlemek ve Sürdürmek
 
@@ -24,7 +25,7 @@ Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini
 
      **Yeni proje** iletişim kutusu görüntülenir.
 
-2.  İçinde **yüklü** bölmesini genişletin **Visual C#**ve ardından **Windows Masaüstü**.
+2.  İçinde **yüklü** bölmesini genişletin **Visual C#** ve ardından **Windows Masaüstü**.
 
 3.  Orta bölmede hedef framework aşağı açılan liste değerine ayarlandığını doğrulayın **.NET Framework 4.5**.
 
@@ -120,7 +121,7 @@ Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini
 
      **Yeni Proje Ekle** iletişim kutusu görüntülenir.
 
-4.  İçinde **yüklü** bölmesini genişletin **Visual C#**ve ardından **Test**.
+4.  İçinde **yüklü** bölmesini genişletin **Visual C#** ve ardından **Test**.
 
 5.  Orta bölmede seçin **kodlanmış UI Test projesi** şablonu.
 

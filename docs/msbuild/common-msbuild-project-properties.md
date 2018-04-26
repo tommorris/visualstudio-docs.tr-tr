@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3483a47946d51890708186a38fc05ae2576ed1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 61fa8f0f447bddcfb1c8e468ca6d88bbdf503f5c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild Proje Özellikleri
 Aşağıdaki tabloda sık Visual Studio Proje dosyasında tanımlanan özellikler kullanılan veya sağlayan MSBuild .targets dosyasında bulunur.  
@@ -69,9 +69,10 @@ Aşağıdaki tabloda sık Visual Studio Proje dosyasında tanımlanan özellikle
 |FileAlignment|, Çıktı dosyası bölümlerini hizalamak nereye bayt cinsinden belirtir. Geçerli değerler 512, 1024, 2048, 4096, 8192. Bu özellik eşdeğerdir `/filealignment` derleyici anahtar.|  
 |FrameworkPathOverride|Mscorlib.dll ve Microsoft.VisualBasic.dll içinde konumunu belirtir. Bu parametre eşdeğerdir `/sdkpath` vbc.exe derleyici anahtar.|  
 |GenerateDocumentation|(Yalnızca Visual Basic) Belge yapı tarafından oluşturulup oluşturulmayacağını belirten bir boolean parametresiyle. Varsa `true`, yapı belgeleri bilgisi oluşturur ve yürütülebilir dosya veya derleme görevi oluşturulan kitaplığı adı ile birlikte bir .xml dosyasına yerleştirir.|
-|IntermediateOutputPath|Türetilen gibi tam Ara çıkış yolu `BaseIntermediateOutputPath`yol belirtilmezse,. Örneğin, \obj\debug\\. Bu özellik kılınırsa sonra ayarlayarak `BaseIntermediateOutputPath` hiçbir etkisi olmaz.|  
+|IntermediateOutputPath|Türetilen gibi tam Ara çıkış yolu `BaseIntermediateOutputPath`yol belirtilmezse,. Örneğin, \obj\debug\\.|  
 |AnahtarKapsayıcıAdı|Güçlü ad anahtar kapsayıcısı adı.|  
 |KeyOriginatorFile|Güçlü ad anahtar dosyası adı.|  
+|MSBuildProjectExtensionsPath|Proje Uzantıları bulunduğu yolu belirtir. Varsayılan olarak, bu aynı değere sürer `BaseIntermediateOutputPath`.|  
 |ModuleAssemblyName|Derlenmiş modülü birleştirilir derlemesini adı. Özellik eşdeğerdir `/moduleassemblyname` derleyici anahtar.|  
 |NoLogo|Kapatılmasına derleyici logosu isteyip istemediğinizi gösteren bir Boole değeri. Bu özellik eşdeğerdir `/nologo` derleyici anahtar.|  
 |NoStdLib|Standart Kitaplığı (mscorlib.dll) başvuran önlemek gösterir bir Boole değeri. Varsayılan değer `false` şeklindedir.|  

@@ -1,7 +1,9 @@
 ---
-title: Visual Studio'da C++ kullanmaya başlama | Microsoft Docs
+title: Visual Studio'da C++ kullanmaya başlama
+description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
 author: corob-msft
@@ -11,11 +13,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec0ab12b1df5a36c81a394406610c16fe184f0d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 65cbfd23c1467988f720822cd68361f5acca23b9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio'da C++ kullanmaya başlama
 
@@ -152,8 +154,8 @@ Bu hızlı başlangıç Tamamlanıyor Tebrikler! Daha fazla örnek keşfetmek, b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Masaüstü geliştirmesi için Visual Studio IDE kullanma](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[İzlenecek yol: C# veya Visual Basic ile basit uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Visual Studio için üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md)  
-[Visual Studio Örnekleri](../ide/visual-studio-samples.md)  
-[Visual Studio ile Geliştirmeye Başlarken](../ide/get-started-developing-with-visual-studio.md)
+- [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanma](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
+- [İzlenecek yol: C# veya Visual Basic ile basit uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Visual Studio için üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md)
+- [Visual Studio Örnekleri](../ide/visual-studio-samples.md)
+- [Visual Studio ile Geliştirmeye Başlarken](../ide/get-started-developing-with-visual-studio.md)

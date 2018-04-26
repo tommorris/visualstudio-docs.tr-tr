@@ -1,19 +1,19 @@
 ---
-title: XML verileri ile çalışma | Microsoft Docs
-ms.custom: ''
+title: XML verileri ile çalışma
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e92bd40eba56c486c95be4d85e376f80beffccf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="working-with-xml-data"></a>XML verileri ile çalışma
 
@@ -45,28 +45,16 @@ XML şema Tasarımcısı XML Şeması Tanım Dili (XSD) şemalarda çalışmanı
 
 Visual Studio hata ayıklama XSLT stil sayfaları destekler. Hata ayıklayıcıyı kullanma, XSLT stil sayfasını, XSLT stil sayfasını adımla kodundan, kesme noktaları ayarlayın ve benzeri.
 
-## <a name="in-this-section"></a>Bu bölümde
-
-[XML Düzenleyicisi](../xml-tools/xml-editor.md)  
-XML Düzenleyicisi'ni tanıtır.
-
-[XML Şema Tasarımcısı](../xml-tools/xml-schema-designer.md)  
-XML şema Tasarımcısı ve çalışma anlatılmaktadır XML Şeması Tanım Dili (XSD) şemalarda.
-
 ## <a name="related-sections"></a>İlgili bölümler
 
-[XSLT Hatalarını Ayıklama](../xml-tools/debugging-xslt.md)  
-Visual Studio hata ayıklayıcısı kullanarak stil sayfaları hata ayıklamak nasıl açıklanır.
+[XSLT hata ayıklama](../xml-tools/debugging-xslt.md) stil sayfalarını kullanarak Visual Studio hata ayıklayıcısı hata ayıklama açıklanmaktadır.
 
-[XML standartları başvurusu](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
-XML, belge türü tanımı (DTD), XML Şeması Tanım Dili (XSD) ve XSLT dahil olmak üzere XML teknolojileri hakkında bilgi sağlar.
+[XML standartları başvurusu](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) XML, belge türü tanımı (DTD), XML Şeması Tanım Dili (XSD) ve XSLT dahil olmak üzere XML teknolojileri hakkında bilgi sağlar.
 
-[Visual Studio’da veri kümeleri oluşturma ve yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
-Veri kümeleri oluşturmak için bir açıklama tasarım zamanı araçlar sağlar.
+[Oluşturma ve Visual Studio'da veri kümelerini yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md) veri kümeleri oluşturmak için bir açıklama tasarım zamanı araçlar sağlar.
 
-[XML Web Hizmetleri yönetilen kod](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
-Oluşturma ve XML Web Hizmetleri dağıtma ve XML Web hizmetlerine erişmek nasıl anlatılmaktadır.
+[XML Web Hizmetleri yönetilen kod](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) nasıl oluşturulacağı ve XML Web Hizmetleri dağıtma ve XML Web hizmetlerine erişmek nasıl ele alınmaktadır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'daki XML Araçları](../xml-tools/xml-tools-in-visual-studio.md)
+- [Visual Studio'daki XML Araçları](../xml-tools/xml-tools-in-visual-studio.md)

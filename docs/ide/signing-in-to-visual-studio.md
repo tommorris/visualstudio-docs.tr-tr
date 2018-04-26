@@ -1,9 +1,9 @@
 ---
-title: Visual Studio'da oturum | Microsoft Docs
+title: Visual Studio'da oturum açın
 ms.custom: ''
 ms.date: 11/16/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33d59be1be9049d8abdaf4f43dac221569cb7b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio'da oturum açın
 
@@ -43,7 +43,7 @@ Beklentilerinizin ne ve sonra oturum açma yapabilirsiniz tam bir listesi aşağ
 
 Visual studio ilk kez başlattığınızda, oturum açma ve bazı temel kayıt bilgilerini sorulur. Bir Microsoft hesabı veya en iyi, temsil eden bir iş veya Okul hesabı seçmeniz gerekir. Bu hesapların yoksa, ücretsiz bir Microsoft hesabı oluşturabilirsiniz. Bkz: [nasıl ı kaydolmak için bir Microsoft hesabı?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
-Daha sonra, Visual Studio'da kullanmak istediğiniz kullanıcı arabirimi ayarlarını ve renk temasını seçin. Visual Studio bu ayarları hatırlıyor ve bunları imzalı tüm Visual Studio ortamlar arasında eşitler. Eşitlenen ayarlarının listesi için bkz: [eşitlenmiş ayarları](../ide/synchronized-settings-in-visual-studio.md). Açarsanız ayarları daha sonra değiştirebilirsiniz **Araçları**, **seçenekleri** Visual Studio menüsünde.
+Daha sonra, Visual Studio'da kullanmak istediğiniz kullanıcı arabirimi ayarlarını ve renk temasını seçin. Visual Studio bu ayarları hatırlıyor ve bunları imzalı tüm Visual Studio ortamlar arasında eşitler. Eşitlenen ayarlarının listesi için bkz: [ayarları senkronize](../ide/synchronized-settings-in-visual-studio.md). Açarsanız ayarları daha sonra değiştirebilirsiniz **Araçları** > **seçenekleri** Visual Studio menüsünde.
 
 Ayarları yaptıktan sonra Visual Studio başlatılır, oturumunuz açılır ve başlamaya hazır olursunuz. Oturum açtınız olup olmadığını doğrulamak için Visual Studio ortamı sağ üst köşesindeki adınızı arayın.
 
@@ -53,7 +53,7 @@ Oturumu sürece, otomatik olarak Visual Studio'ya başlatmanız ve değişiklikl
 
 ## <a name="to-change-your-profile-information"></a>Profil bilginizi değiştirmek için
 
-1. Git **dosya**, **hesap ayarlarını** ve **yönetmek Visual Studio profil** bağlantı.
+1. Git **dosya** > **hesap ayarlarını** ve **yönetmek Visual Studio profil** bağlantı.
 
 1. Tarayıcı penceresinde seçin **Düzenle profili** ve istediğiniz ayarları değiştirin.
 
@@ -61,9 +61,9 @@ Oturumu sürece, otomatik olarak Visual Studio'ya başlatmanız ve değişiklikl
 
 ## <a name="troubleshooting"></a>Sorun giderme
 
-Oturum açma sırasında herhangi bir sorunla karşılaşırsanız, lütfen bakın [hesapları destek sayfasında](https://www.visualstudio.com/subscriptions/support/) Yardım almak için.
+Oturum açma sırasında herhangi bir sorunla karşılaşırsanız, lütfen bakın [hesapları Destek](https://www.visualstudio.com/subscriptions/support/) Yardım almak için sayfa.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio’nun Kilidini Açma](../ide/how-to-unlock-visual-studio.md)  
-[Visual Studio IDE’ye Genel Bakış](../ide/visual-studio-ide.md)
+* [Visual Studio’nun Kilidini Açma](../ide/how-to-unlock-visual-studio.md)  
+* [Visual Studio IDE’ye Genel Bakış](../ide/visual-studio-ide.md)

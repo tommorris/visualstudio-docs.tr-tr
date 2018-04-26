@@ -1,6 +1,7 @@
 ---
-title: Visual Studio'da Test Gezgini ile geliştirme güdümlü test | Microsoft Docs
+title: Visual Studio'da Test Gezgini ile test güdümlü geliştirme
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b40ec7940e3c070bb1a29bd1753ed183bf67e22c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile güdümlü geliştirme test etme
 
@@ -37,7 +38,7 @@ Birçok artımlı geliştirme adımlarını düzgün çalışmasını kodunuzu t
 
     1.  Bir test projesi oluşturun.
 
-         İçinde **yeni proje** iletişim kutusunda, genişletin **Visual Basic**, **Visual C#**, veya **Visual C++**ve ardından **Test**.
+         İçinde **yeni proje** iletişim kutusunda, genişletin **Visual Basic**, **Visual C#**, veya **Visual C++** ve ardından **Test**.
 
          Seçin **birim testi projesi**.
 
@@ -60,10 +61,12 @@ Birçok artımlı geliştirme adımlarını düzgün çalışmasını kodunuzu t
  **Bir test hata ayıklamak için:** bir veya daha fazla testleri için kısayol menüsünü açın ve ardından **seçili Testlerde Hata Ayıkla**.
 
 > [!IMPORTANT]
->  Görüntülenen sonuçları için en son çalışır. Renkli sonuçları çubuğu yalnızca çalıştırdığınız testlerin sonuçlarını gösterir. Örneğin, birkaç testleri çalıştırmak ve bunların bazıları başarısız ve yalnızca başarılı testleri çalıştırın, ardından sonuçları çubuğu tüm yeşil gösterir.
+> Görüntülenen sonuçları için en son çalışır. Renkli sonuçları çubuğu yalnızca çalıştırdığınız testlerin sonuçlarını gösterir. Örneğin, birkaç testleri çalıştırmak ve bunların bazıları başarısız ve yalnızca başarılı testleri çalıştırın, ardından sonuçları çubuğu tüm yeşil gösterir.
+
 
 > [!NOTE]
->  Hiçbir test görünürse, kullanmakta olduğunuz test çerçevesi Test Gezgini bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için bkz: [Test Gezgini ile farklı Test çerçevelerini kullanarak](#frameworks).
+> Hiçbir test görünürse, kullanmakta olduğunuz test çerçevesi Test Gezgini bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için bkz: [Test Gezgini ile farklı Test çerçevelerini kullanarak](#frameworks).
+
 
 ##  <a name="walkthrough"></a> İzlenecek yol: Bir yöntem geliştirmek için birim testleri kullanma
  Bu kılavuz, C# Microsoft birim testi çerçevesini kullanarak test edilmiş bir yöntem geliştirmek gösterilmiştir. Bu diğer diller için ve diğer test çerçevelerini NUnit gibi kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için bkz: [farklı Test çerçevelerini kullanarak](#frameworks).

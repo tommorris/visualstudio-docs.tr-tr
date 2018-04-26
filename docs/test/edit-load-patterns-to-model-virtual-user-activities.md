@@ -1,5 +1,5 @@
 ---
-title: Yük desenleri Visual Studio'da Test yük | Microsoft Docs
+title: Yük desenleri Visual Studio'da Test yük
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,13 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a6d9054bb12290d29247c09263a3854f2ea0dad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Sanal kullanıcı etkinlikleri modellemek için yük desenlerini düzenleme
 
@@ -43,7 +44,8 @@ Yük düzeni, bir senaryo bileşenidir. Tanımlanmış yük düzenleriyle birlik
  Örneğin bir adım yük ile bir **ilk kullanıcı** sayısına, **maksimum kullanıcı sayısı** 100 **adım süresi (saniye)** 10 ve **adım kullanıcı sayısı** 1 / 1 artar 100 Kullanıcıya erişene kadar her 10 saniyede 1 ile başlayan bir kullanıcı yük düzeni oluşturur.
 
 > [!NOTE]
->  Toplam test süresi en fazla kullanıcı yükü kadar adım için gerekli olan zamandan daha kısa ise, test geçen süreden sonra durdurur ve en fazla kullanıcı sayısı hedefine ulaşmaz.
+> Toplam test süresi en fazla kullanıcı yükü kadar adım için gerekli olan zamandan daha kısa ise, test geçen süreden sonra durdurur ve en fazla kullanıcı sayısı hedefine ulaşmaz.
+
 
  Adım hedefini bir nokta sunucu ulaşana kadar yükünü artırmak için kullanabileceğiniz performans düşer önemli ölçüde burada. Yük arttıkça sunucu kaynakları tükendi sonunda çalıştırın. Adım yük Bu gerçekleştiğinde kullanıcı sayısını belirlemek için iyi bir yoludur. Adımlama yükü ile ayrıca yakından aracıların istenilen yükü oluşturabildiğinden emin olmak için aracı kaynakları izlemek vardır.
 
@@ -117,12 +119,14 @@ Yük düzeni, bir senaryo bileşenidir. Tanımlanmış yük düzenleriyle birlik
  Yük testi ile oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** test hedeflerinizi karşılayan düzeylere bir senaryoyla ilişkili yük düzeni özelliklerini değiştirmek için.
 
 > [!NOTE]
->  Yük testi senaryosu özellikleri ve açıklamalarının tam listesi için bkz: [yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md).
+> Yük testi senaryosu özellikleri ve açıklamalarının tam listesi için bkz: [yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md).
+
 
  Bir yük düzeni etkin bir yük testi ve yeni kullanıcılar eklendiği oranı sırasında sanal kullanıcıların sayısını belirtir. Kullanılabilir üç düzenden seçebilirsiniz: adım düzeni, sabit ve hedef tabanlı. Daha fazla bilgi için bkz: [numarası, sanal kullanıcıları bir yük testi senaryosunda yük desenlerle belirten](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
->  Bir yük testi eklentisi kullanarak yükleme özelliklerini program aracılığıyla da değiştirebilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: yük testi eklentisi oluşturma](../test/how-to-create-a-load-test-plug-in.md).
+> Bir yük testi eklentisi kullanarak yükleme özelliklerini program aracılığıyla da değiştirebilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: yük testi eklentisi oluşturma](../test/how-to-create-a-load-test-plug-in.md).
+
 
 ### <a name="to-change-the-load-pattern"></a>Yük Düzeni değiştirmek için
 

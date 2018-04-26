@@ -1,7 +1,9 @@
 ---
-title: TerminateWorkflow etkinlik Tasarımcısı | Microsoft Docs
+title: İş Akışı Tasarımcısı - TerminateWorkflow etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.TerminateWorkflow.UI
 ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
@@ -10,25 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 444ea597fd6c76c8312369afcbc497e640bace6f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5dfd7438a14f0bcbedcf5cdc5add78020604c355
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow etkinlik Tasarımcısı
+
 **TerminateWorkflow** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.TerminateWorkflow> etkinlik.
 
 ## <a name="the-terminateworkflow-activity"></a>TerminateWorkflow etkinliği
- <xref:System.Activities.Statements.TerminateWorkflow> Etkinlik bir iş akışının yürütülmesini sonlanır.
+
+<xref:System.Activities.Statements.TerminateWorkflow> Etkinlik bir iş akışının yürütülmesini sonlanır.
 
 ### <a name="using-the-terminateworkflow-activity-designer"></a>TerminateWorkflow etkinlik Tasarımcısı'nı kullanarak
- **TerminateWorkflow** etkinlik Tasarımcısı bulunabilir **çalışma zamanı** kategorisini **araç**, hangi tıklayarak erişildiğinde **araçkutusu** sekmesinde (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
 
- **TerminateWorkflow** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve oturum bırakılan [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzey yerde etkinlikleri genellikle yerleştirilir, gibi olarak içinde bir <xref:System.Activities.Statements.Sequence>. Bu oluşturur bir <xref:System.Activities.Statements.TerminateWorkflow> varsayılan etkinlik **DisplayName** TerminateWorkflow biri. <xref:System.Activities.Activity.DisplayName%2A> Üstbilgisinde düzenlenebilir **TerminateWorkflow** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
+**TerminateWorkflow** etkinlik Tasarımcısı bulunabilir **çalışma zamanı** kategorisini **araç**, hangi tıklayarak erişildiğinde **araçkutusu** sekmesinde (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
+
+**TerminateWorkflow** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri genellikle yerleştirilir olduğunda, örneğin olarak içinde açın iş akışı Tasarımcısı yüzeyini bırakılan bir <xref:System.Activities.Statements.Sequence>. Bu oluşturur bir <xref:System.Activities.Statements.TerminateWorkflow> varsayılan etkinlik **DisplayName** TerminateWorkflow biri. <xref:System.Activities.Activity.DisplayName%2A> Üstbilgisinde düzenlenebilir **TerminateWorkflow** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
 
 ### <a name="the-terminateworkflow-properties"></a>TerminateWorkflow özellikleri
- Aşağıdaki tabloda <xref:System.Activities.Statements.TerminateWorkflow> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri özellik kılavuzunda düzenlenebilir ve bunların bazıları üzerinde düzenlenebilir [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzeyini.
+
+Aşağıdaki tabloda <xref:System.Activities.Statements.TerminateWorkflow> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri özellik kılavuzunda düzenlenebilir ve bazı iş akışı Tasarımcısı yüzeyine düzenlenebilir.
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|

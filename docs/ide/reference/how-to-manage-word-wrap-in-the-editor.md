@@ -1,9 +1,8 @@
 ---
-title: 'Nasıl yapılır: düzenleyicide sözcük kaydırmayı yönetme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Düzenleyicide Sözcük Kaydırmayı Yönetme'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -15,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edd81a4c4168d7733b21ec84123e984e42b71063
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08fe7ac16eff2c7ebf398b0483034a324eb02d91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Nasıl Yapılır: Düzenleyicide Sözcük Kaydırmayı Yönetme
 
@@ -31,26 +30,26 @@ Ayarlayın ve temizleyin **sözcük kaydırma** seçeneği. Bu seçenek ayarland
 ## <a name="procedure"></a>Yordam
 
 ### <a name="to-set-word-wrap-preferences"></a>Sözcük kaydırma tercihlerini ayarlamak için
-  
-1.  Üzerinde **Araçları** menüsünde, select **seçenekleri**.  
-  
-2.  İçinde **metin düzenleyici** klasörünü seçin **genel** içinde seçenekleri **tüm diller** bu seçenek genel olarak ayarlamak için alt.  
-  
-     — veya —  
-  
-     Seçin **genel** alt programlama dili için Seçenekler.  
-  
-3.  Altında **ayarları**seçin veya temizleyin **sözcük kaydırma** seçeneği.  
-  
-     Zaman **sözcük kaydırma** seçeneği seçildiğinde, **Göster sözcük kaydırma için görsel karakterlerinin** seçeneği etkinleşir.  
-  
-4.  Seçin **Göster visual karakterlerin sözcük kaydırma için** burada uzun bir satır sarmalar ikinci bir satır başı oku göstergesi görüntülemek isterseniz seçeneği. Gösterge okları görüntülememek tercih ediyorsanız bu seçeneği temizleyin.  
-  
+
+1.  Üzerinde **Araçları** menüsünde, select **seçenekleri**.
+
+2.  İçinde **metin düzenleyici** klasörünü seçin **genel** içinde seçenekleri **tüm diller** bu seçenek genel olarak ayarlamak için alt.
+
+     — veya —
+
+     Seçin **genel** alt programlama dili için Seçenekler.
+
+3.  Altında **ayarları**seçin veya temizleyin **sözcük kaydırma** seçeneği.
+
+     Zaman **sözcük kaydırma** seçeneği seçildiğinde, **Göster sözcük kaydırma için görsel karakterlerinin** seçeneği etkinleşir.
+
+4.  Seçin **Göster visual karakterlerin sözcük kaydırma için** burada uzun bir satır sarmalar ikinci bir satır başı oku göstergesi görüntülemek isterseniz seçeneği. Gösterge okları görüntülememek tercih ediyorsanız bu seçeneği temizleyin.
+
     > [!NOTE]
-    >  Bu anımsatıcı okları kodunuzu eklenmez: yalnızca görüntüleme amacıyla oldukları.  
-  
+    >  Bu anımsatıcı okları kodunuzu eklenmez: yalnızca görüntüleme amacıyla oldukları.
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Düzenleyiciyi Özelleştirme](../../ide/customizing-the-editor.md)  
-[Metin Düzenleyici Seçenekleri iletişim Kutusu](../../ide/reference/text-editor-options-dialog-box.md)  
-[Kod yazma](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Düzenleyiciyi Özelleştirme](../../ide/customizing-the-editor.md)
+- [Metin Düzenleyici Seçenekleri iletişim Kutusu](../../ide/reference/text-editor-options-dialog-box.md)
+- [Kod yazma](../../ide/writing-code-in-the-code-and-text-editor.md)

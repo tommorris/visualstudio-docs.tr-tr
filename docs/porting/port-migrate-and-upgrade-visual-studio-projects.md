@@ -1,5 +1,6 @@
 ---
-title: Bağlantı noktası, geçirme ve Visual Studio projelerini yükseltme
+title: Bağlantı noktası, geçirme ve projelerini yükseltme
+description: Visual Studio ve ne zaman bir proje geçirmek gereken Visual Studio karar önceki sürümlerinde oluşturulan projeleri için Visual Studio 2017 desteği için bir başvuru.
 ms.date: 03/14/2018
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -18,13 +19,13 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c92365d3e77631dd2cbbce4079ac982d80ef14
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2e7112794d0b7104c10b7130a96c76d73de46b52
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Bağlantı noktası, geçirme ve Visual Studio projelerini yükseltme
+# <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 proje geçiş ve yükseltme başvurusu
 
 Her yeni sürümü Visual Studio, genellikle çoğu önceki tür projeleri, dosyaları ve diğer varlıklar destekler. Bunlarla çalışmak [her zaman sahip](../ide/solutions-and-projects-in-visual-studio.md), ve daha yeni özelliklere bağımlı yok olması koşuluyla, Visual Studio genellikle geriye doğru Visual Studio 2015, Visual Studio 2013 gibi önceki sürümleriyle uyumluluğunu korumak çalışır ve Visual Studio 2012. (Bkz [sürüm notları](https://www.visualstudio.com/vs/release-notes/) için hangi özelliklerin hangi sürümlerine özeldir.)
 

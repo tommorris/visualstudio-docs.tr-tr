@@ -1,5 +1,6 @@
 ---
-title: CPU kullanımı verilerini (C++) çözümleme | Microsoft Docs
+title: CPU kullanımı verilerini (C++) çözümleme
+description: Uygulama performansını CPU kullanımı Tanılama Aracı'nı kullanarak c++
 ms.custom: ''
 ms.date: 12/05/2017
 ms.technology: vs-ide-debug
@@ -14,13 +15,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52483a920d47b5728645ae195bc1837c7ccc565b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6d5b4d67e5b23e9d875f700f9f7e5171469952c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="analyze-cpu-usage-data-in-visual-studio-c"></a>CPU kullanım verileri, Visual Studio (C++) analiz etme
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Hızlı Başlangıç: Analiz CPU kullanım verilerini de Visual Studio (C++)
 
 Visual Studio, uygulamanızda performans sorunları analiz etmenize yardımcı olmak üzere pek çok güçlü özellikler sağlar. Bu konuda, temel özelliklerden bazıları öğrenmek için hızlı bir yoludur. Burada, yüksek CPU kullanımından kaynaklanan performans sorunlarını tanımlamak için aracı ele. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET, dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
 

@@ -1,6 +1,7 @@
 ---
-title: Test oluşturma | Microsoft Intellitest Geliştirici Test aracı | Microsoft Docs
+title: Test oluşturma | Microsoft Intellitest Geliştirici Test aracı
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +11,21 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 259ff0818cebde6d7c603428c6cdb88cd51ca293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="test-generation"></a>Test oluşturma
 
-Geleneksel birim testi bir test araya birkaç malzemeleri gerektirir:
+Geleneksel birim testi bir test birkaç şey oluşur:
+
+* A [yöntemi çağrısı sırası](test-generation.md#test-generators)
+* Bağımsız değişkenler ile yöntemleri çağırıldığı; bağımsız değişkenler [test girişleri](input-generation.md)
+* Bir dizi belirten tarafından test edilmiş uygulamanızı hedeflenen davranışını doğrulanması [onaylar](#assumptions-and-assertions)
+
+Bir örnek test yapısı aşağıdadır:
 
 ```
 [Test]
@@ -34,12 +41,6 @@ void MyTest() {
     Assert.AreEqual(a[0], 5);
 }
 ```
-
-Testi farklı yönlerini oluşur:
-
-* Bu düzeltmeler bir [yöntemi çağrısı sırası](test-generation.md#test-generators)
-* İle yöntemleri çağırıldığı bağımsız değişkenleri giderir; bağımsız değişkenler [test girişleri](input-generation.md)
-* Bir dizi belirterek test edilmiş uygulamanızı hedeflenen davranışını doğrular [onaylar](#assumptions-and-assertions)
 
 Intellitest ilgili bağımsız değişken değerleri için daha fazla genel belirleyebilir genellikle otomatik olarak [parametreli birim testleri](#parameterized-unit-testing), yöntem çağrılarını ve onaylar dizisi sağlar.
 
@@ -243,4 +244,4 @@ namespace MyTests
 
 ## <a name="got-feedback"></a>Geri bildirim var mı?
 
-Fikirlerinizi sonrası ve özellik istekleri  **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Fikirlerinizi sonrası ve özellik istekleri [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

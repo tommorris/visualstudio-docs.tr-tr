@@ -13,12 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b82495d3a79139490713bb0bff4804f6e9fc5452
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 357101a9430eb8d22aeab39179a0a4f70f0dc1bf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Araçları ve Araç Kutusunu Özelleştirme
 Kullanıcıların kendi model ekleme izin vermek istediğiniz öğeleri için araç kutusu öğelerini tanımlamanız gerekir. Araçlar iki tür vardır: öğesi araçları ve bağlantı araçları. Oluşturulan Tasarımcısı'nda kullanıcı şekiller diyagrama sürüklemek için bir öğe aracı seçebilirsiniz ve bağlantıları arasında şekiller çizmek için bir bağlantı aracı seçebilirsiniz. Genel olarak, kullanıcı etki alanı sınıfların örnekleri için modellerini Ekle öğesi araçları sağlar ve bunları etki alanı ilişkilerini örneklerini eklemek bağlantı araçları sağlayabilirsiniz.

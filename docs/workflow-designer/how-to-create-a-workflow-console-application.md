@@ -1,29 +1,32 @@
 ---
-title: 'Nasıl yapılır: bir iş akışı konsol uygulaması oluşturun | Microsoft Docs'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: bir iş akışı konsol uygulaması oluşturun'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 51a2eea7-921c-49f1-b358-68afc27f1ee9
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e97afc8dab747c308b3d4ff884810303b79ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6461a644bdedd3d391059cd8a3a17f887e77c6b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Nasıl yapılır: bir iş akışı konsol uygulaması oluşturun
-[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] Sistem veya İnsan işlemler yürütme iş akışları oluşturmanıza olanak sağlar. Windows iş akışı Tasarımcısı, bu iş akışları oluşturmak için tasarım yüzeyi sağlar. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] İçinden iş akışları oluşturmak için kullanılan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] veya tasarımcı yeniden barındırma diğer uygulamalara tümleştirilebilir.
 
- Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] içinde [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] bir konsol uygulamasında bir iş akışı oluşturmak için.
+Windows Workflow Foundation (WF), sistem veya İnsan işlemler yürütme iş akışları oluşturmanıza olanak sağlar. Windows iş akışı Tasarımcısı, bu iş akışları oluşturmak için tasarım yüzeyi sağlar. İş Akışı Tasarımcısı ' dan Visual Studio içinde iş akışları oluşturmak için kullanılabilir veya tasarımcı yeniden barındırma diğer uygulamalara tümleştirilebilir.
 
-### <a name="to-create-a-workflow-console-application"></a>Bir iş akışı konsol uygulaması oluşturmak için
+Bu konuda, bir konsol uygulamasında bir iş akışı oluşturmak için Visual Studio 2010'iş akışı Tasarımcısı kullanmayı açıklar.
 
-1.  Başlat [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+## <a name="to-create-a-workflow-console-application"></a>Bir iş akışı konsol uygulaması oluşturmak için
 
-2.  Üzerinde **dosya** menüsündeki **yeni**ve ardından **proje...** .
+1.  Visual Studio 2010'u başlatın.
+
+2.  Üzerinde **dosya** menüsündeki **yeni**ve ardından **proje**.
 
      **Yeni proje** iletişim kutusu açılır.
 
@@ -38,9 +41,9 @@ ms.lasthandoff: 04/16/2018
 7.  İçinde **çözüm** kutusunda, yeni bir çözüm için bir ad girin. Tıklatın **Tamam** uygulaması oluşturmak için.
 
     > [!NOTE]
-    > Varolan bir çözümü bir iş akışı konsol uygulama eklemek istiyorsanız, bu çözümde açmak [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından **Yeni proje...** açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklandığı gibi devam edin.
+    > Varolan bir çözümü bir iş akışı konsol uygulama eklemek istiyorsanız, bu çözüm Visual Studio 2010'da açın, çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından  **Yeni proje** açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklandığı gibi devam edin.
 
-8.  Proje şablonu bir iş akışı tanımı XAML'de oluşturur ve kaynak kodunda konsol uygulaması tanımıdır. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Açar ve oluşturduğunuz iş akışı için tuvale görüntüler.
+8.  Proje şablonu bir iş akışı tanımı XAML'de oluşturur ve kaynak kodunda konsol uygulaması tanımıdır. İş Akışı Tasarımcısı açılır ve oluşturduğunuz iş akışı için tuvale görüntüler.
 
 9. Bir iş akışı oluşturmak için etkinlikler veya diğer iş akışı öğeleri sürükleyin **araç** iş akışınızda tasarım yüzeyine.
 

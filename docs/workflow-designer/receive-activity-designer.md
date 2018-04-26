@@ -1,7 +1,9 @@
 ---
-title: Etkinlik Tasarımcısı alıyorsunuz | Microsoft Docs
+title: İş Akışı Tasarımcısı - alma etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
@@ -10,29 +12,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 900cf704dd29c78a1ddc8de7dce4940d8ba09fae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7573c126ce8e11143d3b39a637c44649d15acf95
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="receive-activity-designer"></a>Etkinlik Tasarımcısı alma
+
 **Alma** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.ServiceModel.Activities.Receive> etkinlik. A <xref:System.ServiceModel.Activities.Receive> etkinliktir yerleşik bir tür gibi olabilir bir ileti alır bir etkinlik <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> veya <xref:System.Xml.Linq.XElement>, veya bir uygulama tarafından tanımlanan veri sözleşmesi, ileti sözleşmesi veya seri hale getirilebilir XML sınıfı.
 
 ## <a name="the-receive-activity"></a>Etkinlik alma
- <xref:System.ServiceModel.Activities.Receive> Etkinlik, tek bir öğe alabilir veya birden çok öğe türüne bağlı olarak kullanılan içerik alırsınız. A <xref:System.ServiceModel.Activities.SendReply> etkinlik bağlanabilir bir <xref:System.ServiceModel.Activities.Receive> etkinlik bir istek/yanıt ileti değişim deseni hizmetinin bir parçası olarak bir ileti alır.
+
+<xref:System.ServiceModel.Activities.Receive> Etkinlik, tek bir öğe alabilir veya birden çok öğe türüne bağlı olarak kullanılan içerik alırsınız. A <xref:System.ServiceModel.Activities.SendReply> etkinlik bağlanabilir bir <xref:System.ServiceModel.Activities.Receive> etkinlik bir istek/yanıt ileti değişim deseni hizmetinin bir parçası olarak bir ileti alır.
 
 ### <a name="using-the-receive-activity-designer"></a>Kullanarak etkinlik Tasarımcısı alma
- **Alma** etkinlik Tasarımcısı bulunabilir **ileti** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç**sekmesi [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
+ **Alma** etkinlik Tasarımcısı bulunabilir **ileti** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç**iş akışı Tasarımcısı sekmesinde (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
 
- **Alma** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve oturum bırakılan [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzey yerde etkinlikleri genellikle yerleştirilir. Bu oluşturur bir <xref:System.ServiceModel.Activities.Receive> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> alma. <xref:System.Activities.Activity.DisplayName%2A> Üstbilgisinde düzenlenebilir **alma** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
+ **Alma** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri genellikle yerleştirilir her yerde iş akışı Tasarımcısı yüzeyini açın. Bu oluşturur bir <xref:System.ServiceModel.Activities.Receive> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> alma. <xref:System.Activities.Activity.DisplayName%2A> Üstbilgisinde düzenlenebilir **alma** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
 
  Oluşturmak için bir <xref:System.ServiceModel.Activities.SendReply> etkinlik ve seçili bağlamak <xref:System.ServiceModel.Activities.Receive> etkinliği sağ tıklatın **alma** etkinlik Tasarımcısı, tıklatın **oluşturma SendReply** bağlam menüsü öğesini ve **SendReplyToReceive** Tasarımcısı görünür aşağıda **alma** Tasarımcısı. <xref:System.ServiceModel.Activities.SendReply> Bir istek/yanıt ileti değişim deseni hizmetinin bir parçası olarak yanıt iletisini gönderir. bir etkinlik bir etkinliktir. İle yapılandırılabilir **SendReplyToReceive** Tasarımcısı.
 
  Alternatif olarak, **ReceiveAndSendReply** şablonu Tasarımcısı'nda **ileti** kategorisini **araç** önceden yapılandırılmış çiftioluşturmakiçinkullanılan<xref:System.ServiceModel.Activities.Receive>ve <xref:System.ServiceModel.Activities.SendReply> etkinlik. Kullanımı hakkında daha fazla bilgi için **ReceiveAndSendReply** ve **SendReplyToReceive** şablon bkz [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md) konu.
 
 ### <a name="the-receive-activity-properties"></a>Etkinlik özelliklerini alma
- Aşağıdaki tabloda <xref:System.ServiceModel.Activities.Receive> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri özellikleri ızgara veya üzerinde düzenlenebilir [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzeyini. Yalnızca gerekli bir özelliktir <xref:System.ServiceModel.Activities.Receive.OperationName%2A> özelliği.
+ Aşağıdaki tabloda <xref:System.ServiceModel.Activities.Receive> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri özellikleri ızgara veya iş akışı Tasarımcısı yüzeyinde düzenlenebilir. Yalnızca gerekli bir özelliktir <xref:System.ServiceModel.Activities.Receive.OperationName%2A> özelliği.
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|

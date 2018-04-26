@@ -1,7 +1,9 @@
 ---
-title: Akış Çizelgesi etkinlik Tasarımcısı | Microsoft Docs
+title: İş Akışı Tasarımcısı - akış çizelgesi etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Flowchart.UI
 - System.Activities.Statements.FlowStep.UI
@@ -12,27 +14,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f7db449f538f09a247bc3c67ee26f487a6c81eb0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 81af4a51da2bb15bafd17fc7ba98d676f7b0decc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="flowchart-activity-designer"></a>Akış Çizelgesi etkinlik Tasarımcısı
-<xref:System.Activities.Statements.Flowchart> Etkinlik tanımlayan ve karmaşık akış denetimleri yönetmek iş akışları oluşturmak için kullanılır. A <xref:System.Activities.Statements.Flowchart> kodda veya kullanarak yazılabilir [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Bu konuda belgeleri [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] karşılaşırsınız. Windows iş akışı Tasarımcısı iş akışı etkinlik Tasarımcısı Geliştiriciler iş akışları yazabilirsiniz doğal bir biçimde sağlar.
+
+<xref:System.Activities.Statements.Flowchart> Etkinlik tanımlayan ve karmaşık akış denetimleri yönetmek iş akışları oluşturmak için kullanılır. A <xref:System.Activities.Statements.Flowchart> kodda veya iş akışı Tasarımcısı kullanarak yazılabilir. Bu konuda, iş akışı Tasarımcısı deneyimi belgeler. Windows iş akışı Tasarımcısı iş akışı etkinlik Tasarımcısı Geliştiriciler iş akışları yazabilirsiniz doğal bir biçimde sağlar.
 
 ## <a name="the-flowchart-activity"></a>Akış etkinliği
- <xref:System.Activities.Statements.Flowchart> Benzersiz bir belirtir <xref:System.Activities.Statements.Flowchart.StartNode%2A> kullanır ve iş akışı başlatıldığında bir ağ bağlantılı yürütülen <xref:System.Activities.Statements.Flowchart.Nodes%2A> rasgele döngüler veya akışını iş akışı içinde başka bir yerde için verilen herhangi bir zamanda yönlendir.
+
+<xref:System.Activities.Statements.Flowchart> Benzersiz bir belirtir <xref:System.Activities.Statements.Flowchart.StartNode%2A> kullanır ve iş akışı başlatıldığında bir ağ bağlantılı yürütülen <xref:System.Activities.Statements.Flowchart.Nodes%2A> rasgele döngüler veya akışını iş akışı içinde başka bir yerde için verilen herhangi bir zamanda yönlendir.
 
 ### <a name="using-the-flowchart-activity-designer"></a>Akış Çizelgesi etkinlik Tasarımcısı'nı kullanarak
- **Akış çizelgesi** etkinlik Tasarımcısı bulunabilir **akış çizelgesi** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç**sekmesi [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
 
- **Akış çizelgesi** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve oturum bırakılan [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzey yerde etkinlik tasarımcıları normalde yerleştirilir, bir kök etkinlik veya alt olarak başka bir denetim akışı etkinliği. Varsa **akış çizelgesi** etkinlik Tasarımcısı boş bırakılan [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzey, oluşturduğu bir <xref:System.Activities.Statements.Flowchart> sunan varsayılan kendisini yürütme başlatır başlangıç düğümü olduğu bir genişletilmiş görünümünde etkinlik Yeşil Top temsil. Varsa **akış çizelgesi** etkinlik Tasarımcısı başka bir denetim akışı etkinliği bırakılan, çift tıklatarak genişletilebilir bir simge durumuna küçültülmüş görünümünde kendisi sunar **akış çizelgesi** etkinlik Tasarımcısı. Herhangi bir etkinlik **araç** doğrudan üzerine sürüklediğiniz **akış çizelgesi** diğer denetim akışı etkinlikleri de dahil olmak üzere etkinlik Tasarımcısı.
+**Akış çizelgesi** etkinlik Tasarımcısı bulunabilir **akış çizelgesi** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç**iş akışı Tasarımcısı sekmesinde (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
 
- Çeşitli etkinlik tasarımcıları üzerine sürükleyerek sonra [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] tuvale, <xref:System.Activities.Activity> bunlar temsil eden nesneler bağlantılı olması birlikte yürütme sırasını belirtmek için. Fare kare tanıtıcıları ve kaynak etkinliği tasarımcısına üzerine bir kaynak ve hedef etkinliğiyle arasında bir bağlantı oluşturmak için bunu her bir tarafta görünür. Kare tanıtıcıları birine tıklayın ve fareyle üzerine getirildiğinde, hedef etkinlik geçici benzer şekilde görünür tanıtıcıları birine fare düğmesini basılı tutarak sürükleyin. Fare düğmesini bırakın ve bir ok olarak kaynağı Tasarımcısı'ndan hedef Designer'a temsil edilen bu iki etkinlik arasında bir bağlantı oluşturulur.
+**Akış çizelgesi** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlik tasarımcıları normalde, bir kök etkinlik veya olarak yerleştirilir her yerde iş akışı Tasarımcısı yüzeyini açın başka bir denetim akışı etkinliği alt. Varsa **akış çizelgesi** etkinlik Tasarımcısı, boş bir iş akışı Tasarımcısı yüzeyine bırakıldı, oluşturduğu bir <xref:System.Activities.Statements.Flowchart> sunan varsayılan kendisini yürütme başlatır başlangıç düğümü olduğu bir genişletilmiş görünümünde etkinlik Yeşil Top temsil. Varsa **akış çizelgesi** etkinlik Tasarımcısı başka bir denetim akışı etkinliği bırakılan, çift tıklatarak genişletilebilir bir simge durumuna küçültülmüş görünümünde kendisi sunar **akış çizelgesi** etkinlik Tasarımcısı. Herhangi bir etkinlik **araç** doğrudan üzerine sürüklediğiniz **akış çizelgesi** diğer denetim akışı etkinlikleri de dahil olmak üzere etkinlik Tasarımcısı.
+
+Çeşitli etkinlik tasarımcıları, iş akışı Tasarımcısı tuvale sürüklemek sonra <xref:System.Activities.Activity> bunlar temsil eden nesneler bağlantılı olması birlikte yürütme sırasını belirtmek için. Fare kare tanıtıcıları ve kaynak etkinliği tasarımcısına üzerine bir kaynak ve hedef etkinliğiyle arasında bir bağlantı oluşturmak için bunu her bir tarafta görünür. Kare tanıtıcıları birine tıklayın ve fareyle üzerine getirildiğinde, hedef etkinlik geçici benzer şekilde görünür tanıtıcıları birine fare düğmesini basılı tutarak sürükleyin. Fare düğmesini bırakın ve bir ok olarak kaynağı Tasarımcısı'ndan hedef Designer'a temsil edilen bu iki etkinlik arasında bir bağlantı oluşturulur.
 
 ### <a name="flowchart-activity-properties"></a>Akış Çizelgesi etkinlik özellikleri
- Aşağıdaki tabloda <xref:System.Activities.Statements.Flowchart> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzu veya tasarımcı yüzeyine düzenlenebilir.
+
+Aşağıdaki tabloda <xref:System.Activities.Statements.Flowchart> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzu veya tasarımcı yüzeyine düzenlenebilir.
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|

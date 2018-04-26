@@ -1,7 +1,9 @@
 ---
-title: 'Nasıl yapılır: bildirim temelli Kural koşulu (eski) oluşturma | Microsoft Docs'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: bildirim temelli Kural koşulu (eski) oluşturma'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - declarative rule conditions
 - condition statements, declarative rule conditions
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8b1d1220f11d27ee193e3e82168f4c10558d86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43b359040256788db240274f43f706b41f01d021
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Nasıl yapılır: bildirim temelli Kural koşulu (eski) oluşturma
-Bu konu, eski Windows iş akışı Tasarımcısı'nı kullanarak bir kural koşulu hedefleyen bildirmek açıklar [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Bir koşul deyimi değerlendiren **True** veya **False**. Bir bildirim temelli Kural koşulu kullanılarak oluşturulan bir koşul deyimi olan [Kural Koşulu Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) ve iş akışı ile XML olarak depolanır. İş akışı durumu ve birden çok koşulları birleştirir Boolean cebiri karşılaştırmak koşulları içerebilir.
+Bu konu, .NET Framework sürüm 3.5 ya da WinFX hedefleyen eski Windows iş akışı Tasarımcısı'nı kullanarak bir kural koşulu bildirmek açıklar.
 
- Bildirim temelli kural koşulları, aşağıdaki Windows Workflow Foundation out-of-box etkinlikler kullanılır:
+Bir koşul deyimi değerlendiren **True** veya **False**. Bir bildirim temelli Kural koşulu kullanılarak oluşturulan bir koşul deyimi olan [Kural Koşulu Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) ve iş akışı ile XML olarak depolanır. İş akışı durumu ve birden çok koşulları birleştirir Boolean cebiri karşılaştırmak koşulları içerebilir.
+
+Bildirim temelli kural koşulları, aşağıdaki Windows Workflow Foundation out-of-box etkinlikler kullanılır:
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -37,7 +40,7 @@ Bu konu, eski Windows iş akışı Tasarımcısı'nı kullanarak bir kural koşu
 
 -   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
 
-### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Kural Koşulu Düzenleyicisi'ni kullanarak bir bildirim temelli Kural koşulu oluşturmak için
+## <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Kural Koşulu Düzenleyicisi'ni kullanarak bir bildirim temelli Kural koşulu oluşturmak için
 
 1.  Etkinliğin içinde **özellikleri** penceresinde tıklatın **koşul** özelliği veya **UntilCondition** etkinliğe bağlı olarak özellik.
 

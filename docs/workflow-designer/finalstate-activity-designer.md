@@ -1,27 +1,32 @@
 ---
-title: Son durum etkinlik Tasarımcısı | Microsoft Docs
+title: İş Akışı Tasarımcısı - son durum etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6360be9522fd8a3640780407cb5252da41515536
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d89e9f81bb7dc8237069a79784eadc0e5d375d6e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="finalstate-activity-designer"></a>Son durum etkinlik Tasarımcısı
+
 <xref:System.Activities.Core.Presentation.FinalState> Tasarımcısı oluşturmak için kullanılan bir <xref:System.Activities.Statements.State> durumu makine örneğini sonlandırır.
 
 ## <a name="using-the-finalstate-activity-designer"></a>Son durum etkinlik Tasarımcısı'nı kullanarak
- **Son durum** Tasarımcısı oluşturmak için kullanılan bir <xref:System.Activities.Statements.State> Durum makinesi sonlandırma durumunda olarak yapılandırılmış. A <xref:System.Activities.Statements.State> kullanılarak oluşturulan <xref:System.Activities.Core.Presentation.FinalState> etkinlik Tasarımcısı sahip kendi <xref:System.Activities.Statements.State.IsFinal%2A> özelliğini **true**, hiçbir <xref:System.Activities.Statements.State.Exit%2A> etkinliği ve ondan kaynaklanan hiçbir geçişler. Kullanılacak <xref:System.Activities.Core.Presentation.FinalState> etkinlik Tasarımcısı eklenecek bir <xref:System.Activities.Statements.State> Durum makinesi sonlandırma durumunda olarak önceden yapılandırılmış etkinlik sürükleyin **son durum** etkinlik Tasarımcısı'ndan **Durum makinesi**bölümünü **araç** ve iş akışı Tasarımcısı bırakın. <xref:System.Activities.Core.Presentation.FinalState> Etkinlik Tasarımcısı bırakılan üzerine bir <xref:System.Activities.Statements.StateMachine> ve geçişleri eklenen daha sonra; veya bir geçiş olarak oluşturulabilir <xref:System.Activities.Core.Presentation.FinalState> etkinlik Tasarımcısı bırakıldı. Geçişleri oluşturma hakkında daha fazla bilgi için bkz: [geçiş](../workflow-designer/transition-activity-designer.md).
+
+**Son durum** Tasarımcısı oluşturmak için kullanılan bir <xref:System.Activities.Statements.State> Durum makinesi sonlandırma durumunda olarak yapılandırılmış. A <xref:System.Activities.Statements.State> kullanılarak oluşturulan <xref:System.Activities.Core.Presentation.FinalState> etkinlik Tasarımcısı sahip kendi <xref:System.Activities.Statements.State.IsFinal%2A> özelliğini **true**, hiçbir <xref:System.Activities.Statements.State.Exit%2A> etkinliği ve ondan kaynaklanan hiçbir geçişler. Kullanılacak <xref:System.Activities.Core.Presentation.FinalState> etkinlik Tasarımcısı eklenecek bir <xref:System.Activities.Statements.State> Durum makinesi sonlandırma durumunda olarak önceden yapılandırılmış etkinlik sürükleyin **son durum** etkinlik Tasarımcısı'ndan **Durum makinesi**bölümünü **araç** ve iş akışı Tasarımcısı bırakın. <xref:System.Activities.Core.Presentation.FinalState> Etkinlik Tasarımcısı bırakılan üzerine bir <xref:System.Activities.Statements.StateMachine> ve geçişleri eklenen daha sonra; veya bir geçiş olarak oluşturulabilir <xref:System.Activities.Core.Presentation.FinalState> etkinlik Tasarımcısı bırakıldı. Geçişleri oluşturma hakkında daha fazla bilgi için bkz: [geçiş](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>İş Akışı Tasarımcısı'nda durum etkinlik özellikleri
- Aşağıdaki tabloda kullanılarak ayarlanabilir özellikleri gösterir <xref:System.Activities.Core.Presentation.FinalState> Tasarımcısı ve Tasarımcısı'nda nasıl kullanıldığını açıklar. Bu özelliklerden bazıları özellik kılavuzunda düzenlenebilir ve bazı Tasarımcı yüzeyine düzenlenebilir.
+
+Aşağıdaki tabloda kullanılarak ayarlanabilir özellikleri gösterir <xref:System.Activities.Core.Presentation.FinalState> Tasarımcısı ve Tasarımcısı'nda nasıl kullanıldığını açıklar. Bu özelliklerden bazıları özellik kılavuzunda düzenlenebilir ve bazı Tasarımcı yüzeyine düzenlenebilir.
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|

@@ -1,7 +1,9 @@
 ---
-title: Seç koşul iletişim kutusu (eski) | Microsoft Docs
+title: İş Akışı Tasarımcısı - Select koşul iletişim kutusu (eski)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
 helpviewer_keywords:
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5a48e423a012d9b69bc4d8f5ef990f3e937498
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 836cd63ecaa19be46617422d3cede2f04291992e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Koşul iletişim kutusu (eski) seçin
-Bu konuda açıklanmaktadır kullanma **seçin koşulu** eski Windows iş akışı Tasarımcısı'nda iletişim kutusu. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- **Seçin koşulu** iletişim kutusu, bir etkinliğin koşul özelliğine atanacak bir bildirim temelli Kural koşulu seçmek için kullanılır. Bu kural koşulları, aşağıdaki Windows Workflow Foundation out-of-box etkinliklerin özellikleri olarak sunulur:
+Bu konuda açıklanmaktadır kullanma **seçin koşulu** eski Windows iş akışı Tasarımcısı'nda iletişim kutusu. .NET Framework sürüm 3.5 veya WinFX hedeflemek gerektiğinde eski iş akışı Tasarımcısı kullanın.
+
+**Seçin koşulu** iletişim kutusu, bir etkinliğin koşul özelliğine atanacak bir bildirim temelli Kural koşulu seçmek için kullanılır. Bu kural koşulları, aşağıdaki Windows Workflow Foundation out-of-box etkinliklerin özellikleri olarak sunulur:
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -31,9 +34,9 @@ Bu konuda açıklanmaktadır kullanma **seçin koşulu** eski Windows iş akış
 
 -   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
 
- Nasıl erişileceği hakkında bilgi için **koşulu seçin** iletişim kutusu, bkz: [nasıl yapılır: bildirim temelli bir kural koşulu (eski) oluşturmak](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
+Nasıl erişileceği hakkında bilgi için **koşulu seçin** iletişim kutusu, bkz: [nasıl yapılır: bildirim temelli bir kural koşulu (eski) oluşturmak](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
 
- Kullanıcı Arabirimi (UI) öğelerini aşağıdaki tabloda açıklanmaktadır **seçin koşulu** iletişim kutusu.
+Kullanıcı Arabirimi (UI) öğelerini aşağıdaki tabloda açıklanmaktadır **seçin koşulu** iletişim kutusu.
 
 |Arabirim Öğesi|Açıklama|
 |----------------|-----------------|

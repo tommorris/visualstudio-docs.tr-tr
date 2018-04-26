@@ -1,7 +1,9 @@
 ---
-title: İş Akışı Tasarımcısı Kabuk özellikleri | Microsoft Docs
+title: İş Akışı Tasarımcısı Kabuk özellikleri
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf7d88b6436ba117b85c2ea6cc423520f9fd873
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4644d9bfa336b85b9ad124751db4f3fb0417475c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="workflow-designer-shell-features"></a>İş Akışı Tasarımcısı Kabuk özellikleri
 
@@ -27,7 +29,7 @@ Windows iş akışı Tasarımcısı üç ana UI alandan oluşur: Tasarımcı yü
  Genel İnceleme Haritası tüm alt ve tüm genişletilmiş bunların alt öğeleri de dahil olmak üzere geçerli içerik haritası kökündeki tüm etkinlik küçük bir sürümünü görüntüler. Bir Görünüm penceresi, bir dikdörtgen içinde Düzenleyicisi görüntülenmekte etkinlik kısmı vurgular turuncu bir kenarlık yoktur. Genel İnceleme Haritası etrafında dikdörtgen sürükleyerek, iş akışı Tasarımcısı'nı birlikte kayar ve düzenleyici görünümünü değiştirir.
 
 > [!NOTE]
-> [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Kullanıcı arabirimi sanallaştırılmış. Etkinlik tasarımcıları, yalnızca gerekli olduğunda işlenir. İş akışı bir kısmı hiçbir zaman Tasarımcı yüzeyine düzenlendi, söz konusu bölümü üzerinde genel bakış eşlemesi beyaz olarak görünür. Genel İnceleme Haritası tamamen kaydırma iş akışı çizer.
+> İş Akışı Tasarımcısı kullanıcı arabirimi sanallaştırılmış. Etkinlik tasarımcıları, yalnızca gerekli olduğunda işlenir. İş akışı bir kısmı hiçbir zaman Tasarımcı yüzeyine düzenlendi, söz konusu bölümü üzerinde genel bakış eşlemesi beyaz olarak görünür. Genel İnceleme Haritası tamamen kaydırma iş akışı çizer.
 
 ## <a name="copying-or-saving-workflows-as-images"></a>Kopyalama veya iş akışları görüntü olarak kaydetme
  İş akışları, bit eşlem biçiminde kopyaladığınız veya bitmap veya vektör biçiminde kaydedilmiş. Kopyalama veya görüntü kaydetme tüm alt öğelerini ve başka bir programa genişletilmiş kendi alt dahil olmak üzere geçerli içerik haritası kökündeki tüm etkinlik görünümünü dışa aktarmak için bir yol sağlar.
@@ -36,4 +38,4 @@ Windows iş akışı Tasarımcısı üç ana UI alandan oluşur: Tasarımcı yü
 
 ## <a name="fonts-and-colors"></a>Yazı tipleri ve renkler
 
-Kullanılan yazı tipleri [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] içinde [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] ortamı yazı tipi tarafından denetlenir. Görüntülenen renkleri [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] işletim sistemi tema için yüksek karşıtlık renk düzenini kullanıyorsanız değiştirin. Yeniden başlatmanız gerekir [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] değişikliklerin etkili olabilmesi için yazı tipi veya renk ayarlarını değiştirdikten sonra [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+Visual Studio 2010 içinde iş akışı Tasarımcısı'nda kullanılan yazı tiplerini ortamı yazı tipi tarafından denetlenir. İşletim sistemi tema için yüksek karşıtlık renk düzenini kullanıyorsanız, iş akışı Tasarımcısı'nda görüntülenen renklerini değiştirin. İş Akışı Tasarımcısı'nda değişikliklerin etkili olması bir yazı tipi veya renk ayarlarını değiştirdikten sonra Visual Studio 2010'u yeniden başlatmalısınız.

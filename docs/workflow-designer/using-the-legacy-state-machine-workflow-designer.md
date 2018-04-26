@@ -1,7 +1,9 @@
 ---
-title: Eski Durum makinesi iş akışı Tasarımcısı'nı kullanarak | Microsoft Docs
+title: Eski Durum makinesi iş akışı Tasarımcısı'nı kullanarak iş akışı Tasarımcısı-
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - StateFinalizationActivity activity
 - StateActivity activity
@@ -17,16 +19,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16178d2f83ef9cc45ef7007350e30d2b36d6993a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6ad09c2e999d9432b3c4e1062cb3031eb20ff56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Eski Durum makinesi iş akışı Tasarımcısı'nı kullanarak
-Oluştururken yeni bir durum makine iş akışı projesinde [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] ya da hedefleyen [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], ya da kullanmayı tercih edebileceğiniz **Durum makinesi iş akışı konsol uygulaması** veya  **Durum makinesi iş akışı Kitaplığı** eski proje şablonu. Bu durum makinenin proje şablonlarından birini seçerseniz, durumu makine Tasarımcısı eski iş akışı Tasarımcısı kullanıcı arabirimi olarak sunulur. Eski durum makine proje şablonları hakkında daha fazla bilgi için bkz [nasıl yapılır: oluşturma durumu makine iş akışı konsol uygulamaları (eski)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) ve [nasıl yapılır: bir Durum makinesi iş akışı kitaplığı (eski)oluşturun](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
- Bir Durum makinesi iş akışı durumları kümesinden oluşur. Durum, bir başlangıç durumu belirtilir. Her bir durumu, belirli bir dizi olayları alabilir. Olaya bağlı olarak, başka bir duruma geçiş yapılabilir. Durum makinesi iş akışı, bir son duruma sahip olabilir. Son durumuna geçiş yapıldığında, iş akışı tamamlanır.
+.NET Framework sürüm 3.5 veya WinFX hedefleyen Visual Studio 2010'da yeni bir Durum makinesi iş akışı projesi oluştururken ya da kullanmayı seçebilirsiniz **Durum makinesi iş akışı konsol uygulaması** veya  **Durum makinesi iş akışı Kitaplığı** eski proje şablonu. Bu durum makinenin proje şablonlarından birini seçerseniz, durumu makine Tasarımcısı eski iş akışı Tasarımcısı kullanıcı arabirimi olarak sunulur. Eski durum makine proje şablonları hakkında daha fazla bilgi için bkz [nasıl yapılır: oluşturma durumu makine iş akışı konsol uygulamaları (eski)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) ve [nasıl yapılır: bir Durum makinesi iş akışı kitaplığı (eski)oluşturun](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+
+Bir Durum makinesi iş akışı durumları kümesinden oluşur. Durum, bir başlangıç durumu belirtilir. Her bir durumu, belirli bir dizi olayları alabilir. Olaya bağlı olarak, başka bir duruma geçiş yapılabilir. Durum makinesi iş akışı, bir son duruma sahip olabilir. Son durumuna geçiş yapıldığında, iş akışı tamamlanır.
 
 ## <a name="state-machine-designer-views"></a>Durum makinesi Tasarımcı görünümleri
  Durum makinesi Tasarımcısı etkinlikleri serbestçe tasarım yüzeyine taşınabildiğinden, yani bir serbest Tasarımcı olur. İki görünüm durumu makine Tasarımcısı vardır: *durumu* Görünüm ve *olay denetimli* görünümü.

@@ -1,7 +1,9 @@
 ---
-title: Kural kümesi Düzenleyici iletişim kutusu (eski) | Microsoft Docs
+title: İş Akışı Tasarımcısı - kural kümesi Düzenleyici iletişim kutusu (eski)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
 helpviewer_keywords:
@@ -12,26 +14,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77bb10e5237b33c60b0cd309c2d3c6c634182bc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Kural kümesi Düzenleyici iletişim kutusu (eski)
-Bu konuda açıklanmaktadır kullanma **kural kümesi düzenleyici** eski Windows iş akışı Tasarımcısı'nda iletişim kutusu. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- **Kural kümesi düzenleyici** iletişim kutusu oluşturmak ve değiştirmek için kullanılan [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) kural .rules dosyasına serileştirilmiş ayarlar.
+Bu konuda açıklanmaktadır kullanma **kural kümesi düzenleyici** eski Windows iş akışı Tasarımcısı'nda iletişim kutusu. .NET Framework sürüm 3.5 veya WinFX hedeflemek gerektiğinde eski iş akışı Tasarımcısı kullanın.
+
+**Kural kümesi düzenleyici** iletişim kutusu oluşturmak ve değiştirmek için kullanılan [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) kural .rules dosyasına serileştirilmiş ayarlar.
 
 > [!NOTE]
 > .Rules dosyasıyla açmak istiyorsanız **kodlamalı XML Düzenleyicisi**, için iş akışı veya etkinlik ilişkili Tasarımcı penceresini kapatın.
 
- Nasıl erişileceği hakkında bilgi için **kural kümesi düzenleyici** iletişim kutusu, bkz: [nasıl yapılır: bir PolicyActivity kural kümesi (eski) oluşturma](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+Nasıl erişileceği hakkında bilgi için **kural kümesi düzenleyici** iletişim kutusu, bkz: [nasıl yapılır: bir PolicyActivity kural kümesi (eski) oluşturma](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
 > [!WARNING]
-> Eski kuralları Düzenleyicisi'ni [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek için kullanılan [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] çoklu sürüm desteği desteklemiyor.
+> .NET Framework sürüm 3.5 veya WinFX hedeflemek için kullanılan eski iş akışı Tasarımcısı'nın kurallar düzenleyicisinde çoklu sürüm desteği desteklemez.
 
- Kullanıcı Arabirimi (UI) öğelerini aşağıdaki tabloda açıklanmaktadır **kural kümesi düzenleyici** iletişim kutusu.
+Kullanıcı Arabirimi (UI) öğelerini aşağıdaki tabloda açıklanmaktadır **kural kümesi düzenleyici** iletişim kutusu.
 
 |Arabirim Öğesi|Açıklama|
 |----------------|-----------------|

@@ -1,6 +1,7 @@
 ---
-title: Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere Öykünücüler kullanma | Microsoft Docs
+title: Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere öykünücüler kullanma
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 994e13d7155dd5490d3f3f02865b14845bae498b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13f06279857897ba1562c157a7ffa1c76dd3c6c8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere öykünücüler kullanma
 Microsoft.SharePoint.Emulators paketi, Microsoft SharePoint 2010 uygulamaları için yalıtılmış birim testleri oluşturmak için yardımcı olacak bir dizi sağlar. Öykünücüler kullanma [dolgular](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) gelen [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) en sık kullanılan nesneleri ve yöntemleri SharePoint API taklit hafif bellek içi nesneler oluşturmak için yalıtım framework. Bir SharePoint yöntem değil benzetilmiş veya bir öykünücü varsayılan davranışını değiştirmek istediğiniz istediğiniz sonuçları sağlamak için Fakes dolgular oluşturabilirsiniz.
@@ -302,7 +303,8 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
  Varolan bir test yöntemi değiştirilmesini işte `GetAppointmentsForTodayReturnsOnlyTodaysAppointments`, Fakes temsilci uygular. Gerekli değişiklikleri açıklamaları çağrılır:
 
 > [!IMPORTANT]
->  Test açıkça dolgular throw Fakes oluşturma yöntemleri bir `ShimNotSupported` testi çalıştırdığınızda, özel durum `EmulationMode.Passthrough` bağlamı. Bu sorunu önlemek için ayarlamak için bir değişken kullanın `EmulationMode` değerini ve tüm Fakes kodda sarmalayın bir `if` değeri test deyimi.
+> Test açıkça dolgular throw Fakes oluşturma yöntemleri bir `ShimNotSupported` testi çalıştırdığınızda, özel durum `EmulationMode.Passthrough` bağlamı. Bu sorunu önlemek için ayarlamak için bir değişken kullanın `EmulationMode` değerini ve tüm Fakes kodda sarmalayın bir `if` değeri test deyimi.
+
 
 ```csharp
 // class level field to set emulation mode

@@ -1,6 +1,7 @@
 ---
-title: Visual Studio'da Intellitest ile kodunuz için birim testleri oluşturma | Microsoft Docs
+title: Visual Studio'da Intellitest ile kodunuz için birim testleri oluşturma
 ms.date: 2015-10-05
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6a6929db0b5100ed57ba6d7c3113ede5b7431aa4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af013fe81ca464f6433b35429e3bbf077f78e2f7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Intellitest ile kodunuz için birim testleri oluşturma
 Intellitest test verileri ve birim testleri dizisi oluşturmak için .NET kodunuzu araştırır. Koddaki her deyim için bir test giriş oluşturulan bu deyim yürütülecek. Servis talebi çözümleme kodda koşullu her dal için gerçekleştirilir. Örneğin, `if` deyimleri, onaylar ve özel durumlar oluşturan tüm işlemleri analiz edilir. Bu çözümleme yüksek kod kapsamı ile birim testleri oluşturmak, yöntemlerin her biri için parametreli birim testi için test verileri oluşturmak için kullanılır.

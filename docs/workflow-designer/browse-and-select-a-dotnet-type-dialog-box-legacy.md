@@ -1,7 +1,9 @@
 ---
-title: Gözat ve bir .NET türünü seç iletişim kutusu (eski) | Microsoft Docs
+title: İş Akışı Tasarımcısı - göz atın ve bir .NET türünü seç iletişim kutusu (eski)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.TypeBrowserDialog.UI
 helpviewer_keywords:
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a283caa664bb208613a695cb4afb8873caba3645
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23e311aa8e87fe799bc8ea22a22ffd8e789b3dcd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Gözat ve bir .NET türünü seç iletişim kutusu (eski)
-Bu konuda açıklanmaktadır kullanma **göz atın ve .NET türü seçin** eski Windows iş akışı Tasarımcısı'nda iletişim kutusu. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+
+Bu konuda açıklanmaktadır kullanma **göz atın ve .NET türü seçin** eski Windows iş akışı Tasarımcısı'nda iletişim kutusu. .NET Framework sürüm 3.5 veya WinFX hedeflemek gerektiğinde eski iş akışı Tasarımcısı kullanın.
 
  İçinde **özellikleri** bir .NET Framework türü başvurulan bütünleştirilmiş kodunda, bir üç nokta ele Özellikler'i seçin, pencere **[...]**  özelliğin metin kutusunun sonunda görüntülenir. Tıklatarak **[...]**  açılır **göz atın ve .NET türü seçim** iletişim kutusu. Bu iletişim kutusunda, başvurulan derlemeleri ağaç görünümünü türünden seçebilirsiniz. Örneğin, kullanırken etkinlik Tasarımcısı içinde **özellikleri** penceresinde tıklatın **temel sınıf** üç nokta **[...]**  başvurulan derlemelerin ağacından bir etkinlik için başka bir temel sınıf seçin.
 

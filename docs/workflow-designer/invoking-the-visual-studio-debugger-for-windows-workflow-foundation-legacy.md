@@ -1,7 +1,9 @@
 ---
-title: Visual Studio hata ayıklayıcısı Windows Workflow Foundation (eski) için çağırma | Microsoft Docs
+title: İş Akışı Tasarımcısı - Visual Studio hata ayıklayıcısı Windows Workflow Foundation (eski) için çağırma
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - stepping
 - Step Over command
@@ -19,23 +21,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e3563b175359e00a051138451292eb015958480
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a326f8b6dc482c2adfc2caba797c38094a99f8c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Visual Studio hata ayıklayıcısı Windows Workflow Foundation (eski) için çağırma
-Bu konuda açıklanmaktadır kullanma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata ayıklamak için hata ayıklayıcı [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] eski Windows iş akışı Tasarımcısı'nda uygulamalar. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Genellikle, diğer Visual Studio programlama dilinde yazılmış programları yalnızca hata ayıklama gibi eski iş akışları hata ayıklama. Başlatabilirsiniz [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] hata ayıklayıcı için Windows Workflow Foundation aşağıdaki yollarla:
+Bu konuda açıklanmaktadır nasıl eski Windows iş akışı Tasarımcısı'nda Windows Workflow Foundation (WF) uygulamalarında hata ayıklamak için Visual Studio hata ayıklayıcısı kullanın. .NET Framework sürüm 3.5 veya WinFX hedeflemek gerektiğinde eski iş akışı Tasarımcısı kullanın.
+
+Genellikle, diğer Visual Studio programlama dilinde yazılmış programları yalnızca hata ayıklama gibi eski iş akışları hata ayıklama. Visual Studio hata ayıklayıcısı için Windows Workflow Foundation aşağıdaki yollarla başlatabilirsiniz:
 
 -   Seçin **ekleme işlemi için** üzerinde **hata ayıklama** menüsünde kullanılabilir işlemleri çalışan bir iş akışı örneği seçin.
 
 -   Tuşuna **F5** iş akışı örneği çalıştırma başlatın ya da bir kesme noktası isabet sonra çalışmaya devam eder.
 
 ## <a name="stepping-through-code"></a>Kod atlama
- Hata ayıklayıcı Adımlama, en sık karşılaşılan hata ayıklama yordamlardan birini, kodu bir satır aynı anda yürütülmekte olduğu destekler. Kod atlama için üç komutlar şunlardır:
+
+Hata ayıklayıcı Adımlama, en sık karşılaşılan hata ayıklama yordamlardan birini, kodu bir satır aynı anda yürütülmekte olduğu destekler. Kod atlama için üç komutlar şunlardır:
 
 -   **Adım içinde**: kullanarak etkinliğini içine adım **F11**. Hata ayıklayıcı adımları tanımlanan işleyicisine. Hiçbir işleyici tanımlanmışsa, etkinlik adım veya diğer etkinlikler içeren bileşik etkinliklerle ilk yürütülen etkinliğe adım. Tasarımcısı'ndan kod işleyicileri Adımlama aşağıdaki etkinlikler için desteklenmiyor: **IfElseActivity**, **WhileActivity**, **ConditionedActivityGroup**, veya **ReplicatorActivity**. Bu etkinlikler ile ilişkili işleyicileri hata ayıklamak için kod açık kesme noktaları konulmalıdır.
 
@@ -51,7 +55,7 @@ Bu konuda açıklanmaktadır kullanma [!INCLUDE[vsprvs](../code-quality/includes
 
  Çözüm Gezgini'nde başlangıç projesi ayarlamak için proje adına sağ tıklayın ve seçin **başlangıç projesi olarak ayarla**. Ana yolu ayarlamak için **başlangıç dış program** özelliği, iş akışı projenin çift **özellikleri** düğümünü Çözüm Gezgini ve seçin **hata ayıklama** sekmesini tıklatın. Altında **eylemi Başlat**seçin **başlangıç dış program** ve istediğiniz hata ayıklamak için iş akışı barındırma .exe dosyasının yolunu girin.
 
- Ana bilgisayar uygulaması başlangıç projesi olarak ayarlanırsa, yalnızca Visual Studio hata ayıklayıcısı hata ayıklama için çağrılır; [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] Windows Workflow Foundation hata ayıklayıcı çağrılamaz. Visual Studio hata ayıklayıcısı kullanılırsa, yalnızca C# veya Visual Basic kodu kesme noktası isabet; İş Akışı Tasarımcısı'nda ayarlanmış kesme noktası isabet değil. Örneğin, üzerinde ayarlanmış bir kesme noktası bir <xref:System.Workflow.Activities.ParallelActivity> etkinlik Tasarımcısı'nda, isabet [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] Windows Workflow Foundation hata ayıklayıcı kullanılır, ancak değil kullandığınızda, Visual Studio hata ayıklayıcısı.
+ Ana bilgisayar uygulaması başlangıç projesi olarak ayarlanırsa, yalnızca Visual Studio hata ayıklayıcısı hata ayıklama için çağrılır; Visual Studio hata ayıklayıcısı için Windows Workflow Foundation çağrılır. Visual Studio hata ayıklayıcısı kullanılırsa, yalnızca C# veya Visual Basic kodu kesme noktası isabet; İş Akışı Tasarımcısı'nda ayarlanmış kesme noktası isabet değil. Örneğin, üzerinde ayarlanmış bir kesme noktası bir <xref:System.Workflow.Activities.ParallelActivity> etkinlik Tasarımcısı'nda Visual Studio hata ayıklayıcısı için Windows Workflow Foundation kullandıysanız, ancak Visual Studio hata ayıklayıcısı değil kullandığınızda ulaştı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

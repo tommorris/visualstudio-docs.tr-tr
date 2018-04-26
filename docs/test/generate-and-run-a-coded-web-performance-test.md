@@ -1,5 +1,5 @@
 ---
-title: Kodlanmış web performans testleri Visual Studio'da | Microsoft Docs
+title: Visual Studio'da kodlanmış web performans testleri
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,13 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: aa6f1e07bffc59030865018610c4367489d4ba9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97c7728cf784c3ef11bb72cdb7abc9b441cd68cd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Kodlanmış web performans testi oluşturma
 

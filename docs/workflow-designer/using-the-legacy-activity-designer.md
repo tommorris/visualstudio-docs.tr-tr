@@ -1,7 +1,9 @@
 ---
-title: Eski etkinlik Tasarımcısı'nı kullanarak | Microsoft Docs
+title: Eski etkinlik Tasarımcısı kullanarak iş akışı Tasarımcısı-
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - activities, configuring
 - custom activities
@@ -15,19 +17,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c69c2dfdd6fb81bcb6a544f27da0874a7dc99331
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fdf7ae585697db19293362a31c5751d44c7421c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-legacy-activity-designer"></a>Eski etkinlik Tasarımcısı'nı kullanarak
-Bu konu, eski Windows iş akışı Tasarımcısı'nda etkinlik Tasarımcısı kullanmayı açıklar. Hedeflerken eski designer'ı kullanın [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Etkinlik Tasarımcısı özel etkinliklerinizi oluşturmanıza olanak sağlar.
+Bu konu, eski Windows iş akışı Tasarımcısı'nda etkinlik Tasarımcısı kullanmayı açıklar. .NET Framework sürüm 3.5 veya WinFX hedefleme eski Tasarımcısı'nı kullanın.
+
+Etkinlik Tasarımcısı özel etkinliklerinizi oluşturmanıza olanak sağlar.
 
 ## <a name="creating-a-custom-activity"></a>Özel etkinlik oluşturma
- Etkinlik Tasarımcısı'nı kullanarak bir özel etkinlik oluşturmak için aşağıdaki adımları izleyin:
+
+Etkinlik Tasarımcısı'nı kullanarak bir özel etkinlik oluşturmak için aşağıdaki adımları izleyin:
 
 1.  Üzerinde **proje** menüsünde tıklatın **etkinlik Ekle**.
 
@@ -39,10 +43,11 @@ Bu konu, eski Windows iş akışı Tasarımcısı'nda etkinlik Tasarımcısı ku
 
 3.  Bir etkinlik adı yazın veya varsayılan adı bırakın ve ardından **Ekle**.
 
- Yeni bir proje türü oluşturarak özel etkinlikler kümesi oluşturabilirsiniz **iş akışı etkinlik kütüphanesini**. Bu proje türü hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir iş akışı etkinlik Kitaplığı'nı (eski) oluşturmanız](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
+Yeni bir proje türü oluşturarak özel etkinlikler kümesi oluşturabilirsiniz **iş akışı etkinlik kütüphanesini**. Bu proje türü hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir iş akışı etkinlik Kitaplığı'nı (eski) oluşturmanız](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
 
 ## <a name="configuring-an-activity"></a>Bir etkinliği yapılandırma
- Etkinlik Tasarımcısı etkin olsa da, aşağıdaki tabloda listelenen özellikleri yapılandırmak için özellik tarayıcısı kullanabilirsiniz.
+
+Etkinlik Tasarımcısı etkin olsa da, aşağıdaki tabloda listelenen özellikleri yapılandırmak için özellik tarayıcısı kullanabilirsiniz.
 
 |Özellik|Açıklamalar|
 |--------------|--------------|
@@ -52,7 +57,8 @@ Bu konu, eski Windows iş akışı Tasarımcısı'nda etkinlik Tasarımcısı ku
 |**Etkin**|Kümesine **True** Etkinlik yürütme ve doğrulama etkinleştirmek için varsayılan olarak. Kümesine **False** Etkinlik yürütme ve doğrulama devre dışı bırakmak için. Etkinlik yürütme ve doğrulama hakkında daha fazla bilgi için bkz: [geliştirme iş akışı etkinlikleri](http://go.microsoft.com/fwlink?LinkID=65024).|
 
 ## <a name="adding-child-activities"></a>Alt etkinlikler ekleme
- Alt etkinlikler araç kutusu'ndan tasarlarken etkinlik sürükleyebilirsiniz. Özellik tarayıcısı kullanarak her alt etkinliği sonra yapılandırabilirsiniz.
+
+Alt etkinlikler araç kutusu'ndan tasarlarken etkinlik sürükleyebilirsiniz. Özellik tarayıcısı kullanarak her alt etkinliği sonra yapılandırabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

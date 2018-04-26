@@ -1,7 +1,9 @@
 ---
-title: Visual Studio iş akışı Windows (eski) | Microsoft Docs
+title: İş Akışı Tasarımcısı - Visual Studio iş akışı Windows (eski)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, designer windows
 ms.assetid: 78526446-d165-4367-982c-b2cf269fa22b
@@ -10,20 +12,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 524b589e7da8da02b2fafcaed5b10f4b754d2b58
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39e2b66a7203cd4ac80d855b8752683e126a0b27
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio iş akışı Windows (eski)
-Eski [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] tarafından sağlanan [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] kullanılabilir hedef [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Eski Tasarımcısı bir iş akışı oluşturmak için kullanabileceğiniz bir görsel tasarımcı olur. Etkinlikten sürükleyebilirsiniz **araç** tasarım yüzey ve bunları orada yapılandırabilirsiniz. Farklı bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Düzenleyicisi penceresinde, diğer tarafından kullanılan ana penceresi alanı kaplayan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] düzenleyici pencereleri. İş akışının adı görüntülenir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] penceresinin başlık çubuğunu.
 
- Eski Tasarımcı windows çoğunu deneyimli için tanıdık [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kullanıcı. Aşağıdaki tabloda birincil windows açıklanmaktadır.
+İş Akışı Tasarımcısı sağlanan eski Visual Studio 2010 tarafından .NET Framework sürüm 3.5 veya WinFX hedeflemek için kullanılabilir. Eski Tasarımcısı bir iş akışı oluşturmak için kullanabileceğiniz bir görsel tasarımcı olur. Etkinlikten sürükleyebilirsiniz **araç** tasarım yüzey ve bunları orada yapılandırabilirsiniz. Visual Studio Düzenleyicisi penceresinde, diğer Visual Studio Düzenleyicisi windows tarafından kullanılan ana penceresi alanı kaplar. İş akışının adı Visual Studio penceresinin başlık çubuğunda görüntülenir.
+
+Eski Tasarımcı windows çoğunu deneyimli Visual Studio kullanıcıya bilgi sahibi olmanız gerekir. Aşağıdaki tabloda birincil windows açıklanmaktadır.
 
 |Pencere|Açıklama|
 |------------|-----------------|
-|Eski iş akışı tasarım yüzeyi|Hedefleyen bir iş akışı oluşturmak için kullanılan bir görsel tasarımcı yüzey [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Etkinlikler Sürükle etkinlik tasarımcıları tarafından görsel olarak oluşturma olanağı sağlar **araç** tasarım yüzeyine.|
+|Eski iş akışı tasarım yüzeyi|.NET Framework sürüm 3.5 veya WinFX hedefleyen bir iş akışı oluşturmak için kullanılan görsel tasarımcı yüzeyine. Etkinlikler Sürükle etkinlik tasarımcıları tarafından görsel olarak oluşturma olanağı sağlar **araç** tasarım yüzeyine.|
 |Araç Kutusu|Tasarım yüzeyine sürükleyin etkinlikleri grafik gösterimi sağlar.|
 |Özellikler|İş akışı etkinlik özellikleri yapılandırmak için kullanılır.|
 |Çözüm Gezgini|İş akışı projelerinde hiyerarşik ağaç görünümünde görüntüler ve projeleri yönetme Yardımı özelliklerine erişim sağlar.|

@@ -1,27 +1,30 @@
 ---
-title: 'Nasıl yapılır: bir Windows Communication Foundation sözleşmesi işlemi (eski) çağırma | Microsoft Docs'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: bir Windows Communication Foundation sözleşmesi işlemi (eski) çağırma'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: a9058345-708f-4fcf-8739-2a43e5285b7a
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c97b62f7ddfbe46ac5ede4aefba53e50020f3b65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b39d2132b29ec1f8fbfd8339bdb8f81e6f752a0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Nasıl yapılır: bir Windows Communication Foundation sözleşmesi işlemi (eski) çağırma
-Bu konu, çağrılacak açıklar bir [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] sözleşme hedefler eski Windows iş akışı Tasarımcısı kullanarak işlemini [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Sürükleme sonra bir **SendActivity** etkinlik araç kutusu'ndan iş akışı tasarım yüzeyine, var olan bir sözleşmeyi içeri aktarabilir ve hangi işlemi değerinden çağrılacak belirlemek **SendActivity** Etkinlik. Sizin ve işlemlerini aracılığıyla seçin [seçin işlem iletişim kutusu (eski)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+Bu konuda hedefleyen eski Windows iş akışı Tasarımcısı'nı kullanarak bir Windows Communication Foundation (WCF) sözleşme işlemini çağırmak .NET Framework sürüm 3.5 veya WinFX açıklar.
 
- Ayrıca, hizmetiniz ile bir yapılandırma dosyası kullanıyorsanız, belirtmeniz gerekecektir bir <xref:System.Workflow.Activities.ChannelToken>. <xref:System.Workflow.Activities.ChannelToken> Gönder etkinliği iş akışı hizmetine bağlanmak için kullanılacak olduğuna uç nokta yapılandırması tanımlar.
+Sürükleme sonra bir **SendActivity** araç etkinliğinden iş akışı tasarım yüzeyi için var olan bir sözleşmeyi içeri aktarın. Hangi işlemi, çağrılan belirlemek **SendActivity** etkinlik. Sözleşme ve işlemlerini aracılığıyla seçin [seçin işlem iletişim kutusu (eski)](../workflow-designer/choose-operation-dialog-box-legacy.md).
 
-### <a name="to-invoke-a-wcf-contract-operation-from-a-sendactivity-activity"></a>Bir WCF sözleşmesi işlemi SendActivity etkinliğinden çağırmak için
+Hizmetiniz ile bir yapılandırma dosyası kullanıyorsanız, ayrıca, belirtmek ihtiyacınız bir <xref:System.Workflow.Activities.ChannelToken>. <xref:System.Workflow.Activities.ChannelToken> Gönder etkinliği iş akışı hizmetine bağlanmak için kullanılacak olduğuna uç nokta yapılandırması tanımlar.
+
+## <a name="to-invoke-a-wcf-contract-operation-from-a-sendactivity-activity"></a>Bir WCF sözleşmesi işlemi SendActivity etkinliğinden çağırmak için
 
 1.  Çift **SendActivity** etkinlik Tasarımcısı'nda veya yanındaki üç nokta düğmesini tıklatın **ServiceOperationInfo** özelliğinde **özellikleri** bölmesi.
 
@@ -35,7 +38,7 @@ Bu konu, çağrılacak açıklar bir [!INCLUDE[indigo1](../workflow-designer/inc
 
 5.  Altında **kullanılabilir işlemleri**, önce çağırma istediğiniz işlemi seçin **Tamam**.
 
-### <a name="to-specify-a-channel-token"></a>Bir kanal belirteci belirtmek için
+## <a name="to-specify-a-channel-token"></a>Bir kanal belirteci belirtmek için
 
 1.  Seçin <xref:System.Workflow.Activities.SendActivity> etkinlik Tasarımcısı'nda.
 

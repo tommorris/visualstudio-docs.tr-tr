@@ -1,7 +1,9 @@
 ---
-title: 'Nasıl yapılır: bir PolicyActivity kural kümesi (eski) oluşturma | Microsoft Docs'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: bir PolicyActivity kural kümesi (eski) oluşturma'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - PolicyActivity activity, creating rule sets
 - Rule Set Editor dialog box
@@ -14,22 +16,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4911912aa46f5dc8a6aea9b9b20e87c1f83e576f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 57142fc21bc9db03a338f20a27e20b8af51b48cd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Nasıl yapılır: bir PolicyActivity kural kümesi (eski) oluşturma
 
-Bu konuda hedefleyen bir ilke etkinlik kural eski Windows iş akışı Tasarımcısı'nı kullanarak kümesi oluşturmayı açıklar [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+Bu konuda hedefleyen bir ilke etkinlik kural eski Windows iş akışı Tasarımcısı'nı kullanarak kümesini oluşturmak .NET Framework sürüm 3.5 veya WinFX açıklar.
 
  Sürüklenen sonra bir **İlkesi** etkinlik öğesinden **araç** mevcut bir kuralı seçin veya yeni bir kural için kümesini oluşturmak isteyeceksiniz iş akışı tasarım yüzeyine [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) etkinlik. Var olan bir kural kullanarak kümesi seçin [kural kümesi iletişim kutusunu (eski)](../workflow-designer/select-rule-set-dialog-box-legacy.md) ve kullanarak kural kümeleri oluşturma [kural kümesi Düzenleyici iletişim kutusu (eski)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!NOTE]
 > Açabilirsiniz [kural kümesi Düzenleyici iletişim kutusu (eski)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) çift tarafından doğrudan iletişim kutusu bir [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) iş akışı tasarım yüzeyine etkinliğini.
 
-### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Seçin veya bir kural oluşturmak için bir PolicyActivity etkinliği için ayarlandı
+## <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Seçin veya bir kural oluşturmak için bir PolicyActivity etkinliği için ayarlandı
 
 1.  Sağ [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)ve ardından **özellikleri** açmak için **özellikleri** penceresi.
 

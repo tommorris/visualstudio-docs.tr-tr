@@ -1,6 +1,6 @@
 ---
-title: Adım 4, hata ayıklama Python ile çalışma
-description: Hata ayıklayıcıda Python kodu çalıştırmak nasıl kapsayan Visual Studio içinde Python ile çalışmak için çekirdek öğreticinin 4 adımı.
+title: Python eğitmen, 4. adım, hata ayıklama ile çalışma
+description: Adım 4 çekirdek kılavuzun Visual Studio'da hata ayıklayıcısı'ndaki Python kodu çalıştırmak nasıl kapsayan, Python yeteneklerini.
 ms.date: 03/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c3241adb4afdc18a8ca9a6d4c75f0ee8c80be7b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d76ed2511ae5b8b51a08baf1e0c638c2e0fae73f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>4. adım: hata ayıklayıcıda kodu çalıştırma
 

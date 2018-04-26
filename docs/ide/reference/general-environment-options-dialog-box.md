@@ -1,10 +1,9 @@
 ---
-title: Genel, ortam, Seçenekler iletişim kutusu | Microsoft Docs
-ms.custom: ''
+title: Genel, Ortam, Seçenekler İletişim Kutusu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -28,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c427752fa1b89acb2fa55afc7acd8c4535686c37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f12249cc8d0e8bd8396e1e1ebbbfefeddbb22b60
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>Genel, Ortam, Seçenekler İletişim Kutusu
 
@@ -67,17 +66,27 @@ Yazılım hızlandırma yerine kullanılabilir durumdaysa donanım grafik hızla
 
 ## <a name="other"></a>Diğer
 
-**Pencere menüsünde gösterilen öğeler** Windows listesinde görünür windows sayısı özelleştirir **penceresi** menüsü. 1 ile 24 arasında bir sayı yazın. Varsayılan olarak, sayısı 10'dur.
+**Pencere menüsünde gösterilen öğeler**
 
-**Yakın zamanda gösterilen öğeleri listeler kullanılan** sayısı en son kullanılan projeleri ve görüntülenen dosyaları özelleştirir **dosya** menüsü. 1 ile 24 arasında bir sayı yazın. Varsayılan olarak, sayısı 10'dur. Bu, son kullanılan alma projeleri ve dosyaları için kolay bir yoludur.
+Windows listesinde görünür windows sayısı özelleştirir **penceresi** menüsü. 1 ile 24 arasında bir sayı yazın. Varsayılan olarak, sayısı 10'dur.
 
-**Durum çubuğunu göster** durum çubuğu görüntüler. Durum çubuğu IDE penceresinin alt kısmında bulunur ve devam eden işlemler ilerleme durumu hakkında bilgileri görüntüler.
+**Son kullanılan listelerinde gösterilen öğeler**
 
-**Kapat düğmesi etkin araç penceresi yalnızca etkiler** belirtir olduğunda **Kapat** düğmesine tıklandığında, kapalı ve tüm odağa sahip araç penceresi, yalnızca yerleşik kümesindeki aracı Windows. Varsayılan olarak, bu seçenek seçilidir.
+En son kullanılan projeleri ve görüntülenen dosyaları sayısı özelleştirir **dosya** menüsü. 1 ile 24 arasında bir sayı yazın. Varsayılan olarak, sayısı 10'dur. Bu, son kullanılan alma projeleri ve dosyaları için kolay bir yoludur.
 
-**Otomatik Gizle düğmesi etkin araç penceresi yalnızca etkiler** belirtir olduğunda **Otomatik Gizle** düğmesine tıklandığında, odağa sahip araç penceresi otomatik olarak ve değil gizli tüm yerleşik kümesindeki aracı windows. Bu seçenek varsayılan olarak seçili değildir.
+**Durum çubuğunu göster**
+
+Durum çubuğu görüntüler. Durum çubuğu IDE penceresinin alt kısmında bulunur ve devam eden işlemler ilerleme durumu hakkında bilgileri görüntüler.
+
+**Kapat düğmesi etkin araç penceresi yalnızca etkiler**
+
+Belirtir **Kapat** düğmesine tıklandığında, kapalı ve tüm odağa sahip araç penceresi, yalnızca yerleşik kümesindeki aracı Windows. Varsayılan olarak, bu seçenek seçilidir.
+
+**Yalnızca etkin araç penceresi otomatik gizle düğmesi etkiler**
+
+Belirtir **AutoHide** düğmesine tıklandığında, odağa sahip araç penceresi otomatik olarak ve değil gizli aracı windows yerleşik kümesindeki tüm. Bu seçenek varsayılan olarak seçili değildir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)
-[pencere düzenlerini özelleştirme](../../ide/customizing-window-layouts-in-visual-studio.md)
+- [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)
+- [Pencere düzenlerini özelleştirme](../../ide/customizing-window-layouts-in-visual-studio.md)

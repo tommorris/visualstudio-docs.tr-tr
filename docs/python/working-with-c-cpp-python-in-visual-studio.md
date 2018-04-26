@@ -1,6 +1,6 @@
 ---
 title: C++ ve Python ile çalışma
-description: Karışık mod hata ayıklama izlenecek yol da dahil olmak üzere Visual Studio kullanarak Python için C++ uzantısı oluşturma kılavuz.
+description: Karışık mod hata ayıklaması dahil olmak üzere Visual Studio kullanarak Python için C++ uzantısı oluşturma kılavuz.
 ms.date: 04/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2be78ab073d688e8882dcfdedceef6a6fc73bde3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c83a0bb7a8132b6daf0961f7f9d72f8b98782776
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 

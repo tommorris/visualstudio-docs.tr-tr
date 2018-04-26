@@ -1,7 +1,9 @@
 ---
-title: 'Nasıl yapılır: bir iş akışı etkinlik kitaplığı (eski) oluşturun | Microsoft Docs'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: bir iş akışı etkinlik kitaplığı (eski) oluşturun'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, activity library projects
 - workflow activity libraries
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18fa570f732f71336ce5a2f5e8e56d1185366afa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 432766e60ee1384db0f8cd5bad1f369e80ddd20a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>Nasıl yapılır: bir iş akışı etkinlik kitaplığı (eski) oluşturun
 
-Eski Windows iş akışı tarafından sağlanan Tasarımcısı'nı kullanarak bir iş akışı etkinlik kitaplığı projesi oluşturmak için bu adımları [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Eski kullanmak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ya da hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+Windows iş akışı Tasarımcısı sağlanan eski Visual Studio 2010 tarafından kullanarak bir iş akışı etkinlik kitaplığı proje oluşturmak için aşağıdaki adımları izleyin. .NET Framework sürüm 3.5 veya WinFX hedeflemek gerektiğinde eski iş akışı Tasarımcısı kullanın.
 
-### <a name="to-create-a-workflow-activity-library-project"></a>Bir iş akışı etkinlik kitaplığı projesi oluşturmak için
+## <a name="to-create-a-workflow-activity-library-project"></a>Bir iş akışı etkinlik kitaplığı projesi oluşturmak için
 
 1.  Visual Studio'yu başlatın.
 
@@ -33,7 +35,7 @@ Eski Windows iş akışı tarafından sağlanan Tasarımcısı'nı kullanarak bi
 3.  Şunlardan birini seçin **.NET Framework 3.0** seçeneği veya **.NET Framework 3.5** aşağı açılan listeden en üstündeki seçeneğinde **yeni proje** eski Tasarımcısı erişmek için penceresi.
 
     > [!NOTE]
-    > Varsayılan seçenek [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] olan **.NET Framework 4**. Bu seçenek oluşturmak için kullanılan [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] hedefleyen uygulamalar [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] ve eski Tasarımcısı'nı kullanmaz.
+    > Visual Studio 2010 varsayılan seçenektir **.NET Framework 4**. Bu seçenek, hedef .NET Framework 4 Windows Workflow Foundation (WF) uygulamaları oluşturmak için kullanılır ve eski Tasarımcısı'nı kullanmaz.
 
 4.  İçinde **proje türleri** bölmesinde, select Visual C# veya Visual Basic (altında **diğer diller**) ve ardından **iş akışı**.
 

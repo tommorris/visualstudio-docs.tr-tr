@@ -1,6 +1,7 @@
 ---
-title: "İzlenecek yol: Visual Studio'da bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanarak | Microsoft Docs"
+title: "İzlenecek yol: Visual Studio'da bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma"
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 569aa39e9c5c749ac4497e4e6e08a9d5b34c657f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fee742129d852ff3793b2a7dd367fc157367750
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek Yol: Bir Veri Kaynağı Tanımlamak için Yapılandırma Dosyası Kullanma
 
@@ -71,7 +72,8 @@ Bu kılavuzda tanımlanan bir veri kaynağı kullanımını gösterir bir *app.c
 ```
 
 > [!NOTE]
->  Derleme adı, kullanmakta olduğunuz Microsoft Visual Studio .NET Framework derleme eşleşmesi gerekir. Visual Studio .NET Framework 3.5 kullanıyorsanız sürüm için 9.0.0.0 ayarlayın. Visual Studio .NET Framework 2.0 kullanıyorsanız, sürüm 8.0.0.0 için ayarlayın.
+> Derleme adı, kullanmakta olduğunuz Microsoft Visual Studio .NET Framework derleme eşleşmesi gerekir. Visual Studio .NET Framework 3.5 kullanıyorsanız sürüm için 9.0.0.0 ayarlayın. Visual Studio .NET Framework 2.0 kullanıyorsanız, sürüm 8.0.0.0 için ayarlayın.
+
 
 ## <a name="define-connection-strings"></a>Bağlantı dizeleri tanımlayın
  Bağlantı dizeleri veri kaynaklarına erişim sağlayıcıya özgü bilgileri tanımlar. Bağlantı dizelerini yapılandırma dosyalarında tanımlanan bir uygulama arasında yeniden kullanılabilir veri sağlayıcısı bilgileri sağlar. Bu bölümde, özel yapılandırma bölümünde tanımlanan veri kaynakları tarafından kullanılan iki bağlantı dizeleri oluşturun.

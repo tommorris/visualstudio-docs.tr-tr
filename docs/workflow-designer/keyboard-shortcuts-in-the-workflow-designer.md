@@ -1,7 +1,9 @@
 ---
-title: Klavye kısayolları iş akışı Tasarımcısı'nda | Microsoft Docs
+title: İş Akışı Tasarımcısı - iş akışı Tasarımcısı'nda klavye kısayolları
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29d96eb6d738fbf23749bec601743002a451ad06
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>İş Akışı Tasarımcısı'nda klavye kısayolları
 
@@ -22,11 +24,11 @@ Windows iş akışı Tasarımcısı çekirdek işlevselliğini klavye kullanıla
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Klavyeyi kullanarak iş akışı Tasarımcısı gezinme
 
-İçinde [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], genel kısayolları ve hata ayıklama kısayolları uygulamak [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Ayrıca, bir dizi [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] belirli klavye kısayollarını oluşturuldu. İçinde [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], tüm klavye kısayollarını açmayla. Ancak, bir rehosted uygulamasında bu klavye kısayolları sabit kodlanmış değildir.
+Visual Studio 2010 içinde genel kısayolları ve hata ayıklama kısayolları iş akışı Tasarımcısı için geçerlidir. Ayrıca, iş akışı Tasarımcısı belirli klavye kısayollarını sayısı oluşturuldu. Visual Studio 2010'da, tüm klavye kısayollarını açmayla. Ancak, bir rehosted uygulamasında bu klavye kısayolları sabit kodlanmış değildir.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>İş Akışı Tasarımcısı klavye kısayolları
 
-Aşağıdaki tabloda özetlenmiştir atanmış varsayılan klavye kısayolları [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] komutları.
+İş Akışı Tasarımcısı komutları atanmış varsayılan klavye kısayolları aşağıdaki tabloda özetlenmiştir.
 
 |Kısayol|Amaç|
 |--------------|-------------|
@@ -46,7 +48,7 @@ Aşağıdaki tabloda özetlenmiştir atanmış varsayılan klavye kısayolları 
 
 ### <a name="flowchart"></a>Akış Çizelgesi
 
-Aşağıdaki liste bir akış çizelgesi oluşturmak için klavye tarafından kullanılan hareketlerini gösterir. Kalan olduğu gibi [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], etkinlikleri ile sağlanan genel araç kısayolları kullanılarak Tasarımcı yüzeyine eklenir [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+Aşağıdaki liste bir akış çizelgesi oluşturmak için klavye tarafından kullanılan hareketlerini gösterir. İş Akışı Tasarımcısı rest olduğu gibi etkinlikler Visual Studio 2010 ile sağlanan genel araç kısayolları kullanılarak Tasarımcı yüzeyine eklenir.
 
 - Bir etkinlik taşımak için etkinliği seçin ve onu yeniden konumlandırmak için ok tuşlarını kullanın.
 
@@ -74,7 +76,7 @@ Etkinlikler tarafından klavye bağlanma hakkında notlar:
 
 ### <a name="expression-editing"></a>İfade düzenleme
 
-Varsayılan olarak, varsayılan klavye kısayolları [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] metin düzenleme uygulamak ifade Düzenleyicisi'nde içinde [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], aşağıdaki kısıtlamalarla:
+Varsayılan olarak, Visual Basic metin düzenleme için varsayılan klavye kısayolları iş akışı Tasarımcısı'nda ifade Düzenleyicisi aşağıdaki kısıtlamalarla içinde geçerlidir:
 
 - Aşağıdaki komutlar için klavye kısayolları yeniden eşleme hiçbir etkisi olmaz. Klavye kısayolları yalnızca bir ifade düzenlerken bu komutlara erişmek için de kullanabilirsiniz.
 
@@ -85,4 +87,4 @@ Varsayılan olarak, varsayılan klavye kısayolları [!INCLUDE[vbprvb](../code-q
    - Geri alma
    - Yinele
 
-- İfade içindeki komutları düzenlemek için klavye kısayolları yeniden eşlemek için [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] içinde [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], kısayolları Düzenle [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] kapsam. Metin Düzenleyici kapsamda yapılan değişiklikleri otomatik olarak için geçerli olmayan [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Her iki yerde kısayolları yeniden eşlemek istiyorsanız, değişiklikleri iki kez uygulamanız gerekir (her kapsam için bir kez).
+- İş Akışı Tasarımcısı'nda Visual Studio 2010 içindeki ifade düzenleme komutları için klavye kısayolları yeniden eşlemek için iş akışı Tasarımcısı kapsamında kısayolları düzenleyin. Metin Düzenleyici kapsamda yapılan değişiklikleri otomatik olarak iş akışı Tasarımcısı için geçerli değildir. Her iki yerde kısayolları yeniden eşlemek istiyorsanız, değişiklikleri iki kez uygulamanız gerekir (her kapsam için bir kez).

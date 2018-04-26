@@ -1,5 +1,5 @@
 ---
-title: Visual Studio IntelliTrace verilerini | Microsoft Docs
+title: Visual Studio IntelliTrace verilerini
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e1f36aefaad2e43d8875c9c0164ac938b004999d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6b34993e011a8bf539b6ec2dd70beddf9c96caf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Nasıl yapılır: Hata Ayıklama Zorluklarını Çözmeye Yardımcı Olması için IntelliTrace Verilerini Toplama
 
@@ -71,7 +72,7 @@ Bu yordamdaki adımları gerçekleştirmeden önce Microsoft Test Yöneticisi'ni
 
 5.  Seçin **genel** sekmesi. Seçin **yalnızca IntelliTrace olayları** test ettiğinizde performansı üzerinde en az etkisi olan önemli tanılama olaylarını kaydetmek için.
 
-     **-**veya -
+     **-** veya -
 
      Seçin **IntelliTrace olayları ve arama bilgileri** tanılama olayları ve yöntemi kaydetmek için izleme düzeyini çağrı bilgileri gösterir. Testlerinizi çalıştırdığınızda bu düzeyde bir izlemenin performans üzerinde etkisi olabilir.
 

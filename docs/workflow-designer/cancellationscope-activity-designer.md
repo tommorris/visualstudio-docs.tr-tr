@@ -1,7 +1,9 @@
 ---
-title: CancellationScope etkinlik Tasarımcısı | Microsoft Docs
+title: İş Akışı Tasarımcısı - CancellationScope etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.CancellationScope.UI
 ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
@@ -10,31 +12,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3231d62d5c961e63fa2a72374d5a1adcf50288f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a0f9a40434821294384154ddcbbfebbd0a7885eb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope etkinlik Tasarımcısı
+
 **CancellationScope** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.CancellationScope> etkinlik.
 
 ## <a name="the-cancellationscope-activity"></a>CancellationScope etkinliği
  <xref:System.Activities.Statements.CancellationScope> Etkinlik yürütme ve iptal mantığı için bu etkinliği için etkinlik belirtmenize olanak verir.
 
 ### <a name="using-the-cancellationscope-activity-designer"></a>CancellationScope etkinlik Tasarımcısı'nı kullanarak
- **CancellationScope** etkinlik Tasarımcısı bulunabilir **işlem** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç kutusu**  sekmesinde [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
+ **CancellationScope** etkinlik Tasarımcısı bulunabilir **işlem** kategorisini **araç**. Açmak için **araç**seçin **araç** sekmesi iş akışı Tasarımcısı'nın. Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X tuşlarına basın.
 
- **CancellationScope** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve oturum bırakılan [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzey yerde etkinlikleri genellikle yerleştirilir, gibi olarak içinde bir <xref:System.Activities.Statements.Sequence>. Bu oluşturur bir <xref:System.Activities.Statements.CancellationScope> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> CancellationScope biri. <xref:System.Activities.Activity.DisplayName%2A> Değeri üstbilgisinde düzenlenebilir **CancellationScope** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
+ **CancellationScope** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri yerleştirilir olduğunda, örneğin olarak içinde açın iş akışı Tasarımcısı yüzeyini bırakılan bir <xref:System.Activities.Statements.Sequence>. Bırakma **CancellationScope** etkinlik Tasarımcısı oluşturur bir <xref:System.Activities.Statements.CancellationScope> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> CancellationScope biri. Düzen <xref:System.Activities.Activity.DisplayName%2A> üstbilgisi değeri **CancellationScope** etkinlik Tasarımcısı. İçinde de düzenleyebilirsiniz **DisplayName** ve özellik ızgarasının kutusu.
 
 ### <a name="the-cancellationscope-properties"></a>CancellationScope özellikleri
- Aşağıdaki tabloda <xref:System.Activities.Statements.CancellationScope> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. <xref:System.Activities.Activity.DisplayName%2A> Özelliği özellik kılavuzunda düzenlenebilir ancak diğer özellikler üzerinde düzenlenmesi gerekir [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzeyini.
+ Aşağıdaki tabloda <xref:System.Activities.Statements.CancellationScope> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. <xref:System.Activities.Activity.DisplayName%2A> Özelliği özellik kılavuzunda düzenlenebilir ancak diğer özellikler iş akışı Tasarımcısı yüzeyine düzenlenmesi gerekir.
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|İsteğe bağlı kolay adını <xref:System.Activities.Statements.CancellationScope> etkinlik. CancellationScope varsayılandır. Ancak <xref:System.Activities.Activity.DisplayName%2A> değeri kesinlikle gerekli değildir, kullanmak için en iyi bir uygulamadır.|
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|Doğru|Hangi iptalleri mantığı sağlanan etkinlik belirtir. Eklemek için <xref:System.Activities.Statements.CancellationScope.Body%2A> etkinlik, açılan bir etkinlikten **araç** içine **gövde** kutusuna **CancellationScope** ipucu metnini "açılan ile etkinlik Tasarımcısı Burada etkinliği".|
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|Doğru|İptal durumunda yürütüldüğünde etkinliğin belirtir. Eklemek için <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> etkinlik, açılan bir etkinlikten **araç** içine **CancellationHandler** kutusuna **CancellationScope** İpucu ile etkinlik Tasarımcısı "Buraya etkinliğini Drop" metin.|
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|Doğru|Hangi iptalleri mantığı sağlanan etkinlik belirtir. Eklemek için <xref:System.Activities.Statements.CancellationScope.Body%2A> etkinlik, açılan bir etkinlikten **araç** içine **gövde** kutusuna **CancellationScope** etkinlik Tasarımcısı. "Buraya etkinliğini Drop" İpucu metnini ekleyin.|
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|Doğru|İptal ise çalıştırılan etkinlik belirtir. Eklemek için <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> etkinlik, açılan bir etkinlikten **araç** içine **CancellationHandler** kutusuna **CancellationScope** etkinlik Tasarımcısı. "Buraya etkinliğini Drop" İpucu metnini ekleyin.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

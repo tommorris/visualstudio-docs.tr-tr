@@ -1,7 +1,9 @@
 ---
-title: İş Akışı Tasarımcısı'nda hata iletileri | Microsoft Docs
+title: İş Akışı Tasarımcısı'nda hata iletileri
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDErrorMessages.UI
 - System.Activities.Presentation.ErrorActivity.UI
@@ -12,17 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4deecb6617e85263abc5eaad11dd829abecb05d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c644922f240cd07c47e68e65432289c68bbe318
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="error-messages-in-workflow-designer"></a>İş Akışı Tasarımcısı'nda hata iletileri
+
 Bu konu Windows iş akışı Tasarımcısı ile çalışırken karşılaşılan hata iletileri türleri açıklanmaktadır.
 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Hangi iş akışı Tasarımcısı'nda hatalar ortaya durumları
- Hataları [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] aşağıdaki durumlarda oluşur:
+
+İş Akışı Tasarımcısı'nda hataları aşağıdaki durumlarda oluşur:
 
 1.  Bir ifadede bir hata var.
 
@@ -32,12 +36,12 @@ Bu konu Windows iş akışı Tasarımcısı ile çalışırken karşılaşılan 
 
 4.  İş akışını yüklemek başarısız olmasına neden XAML dosyasındaki hataları vardır.
 
- Geçersiz ifadeleri ve memnun doğrulama kısıtlamaları iş akışını oluşturmak başarısız olmasına neden olmaz. İş akışınızı oluşturma başarılı olur, ancak bir <xref:System.Activities.InvalidWorkflowException> çalışma zamanında atılır. XAML dosyada hatalar varsa derleme başarısız oluyor.
+Geçersiz ifadeleri ve memnun doğrulama kısıtlamaları iş akışını oluşturmak başarısız olmasına neden olmaz. İş akışınızı oluşturma başarılı olur, ancak bir <xref:System.Activities.InvalidWorkflowException> çalışma zamanında atılır. XAML dosyada hatalar varsa derleme başarısız oluyor.
 
- İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], bir iş akışı yüklendiğinde, hataları görüntülenen **hata listesi**. Hatanın kaynak etkinlik gitmek için hatayı çift tıklatın **hata listesi**.
+Bir iş akışı yüklendiğinde, Visual Studio içinde kendi hataları görüntülenen **hata listesi**. Hatanın kaynak etkinlik gitmek için hatayı çift tıklatın **hata listesi**.
 
 ### <a name="expression-errors"></a>İfade hataları
- Geçersiz bir ifade, kırmızı bir daire ifade yanındaki beyaz ünlem işaretiyle gösterilir. Bu simgenin üzerine gelerek veya onları hatanın kaynağını tanımlayan bir araç ipucu olarak görüntülenir. İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ifade kullanarak hatanın kaynağı altını çizer satırı görüntülemek için tıklatın. Çizgili metin görüntüler gelerek veya onları hatanın kaynağını tanımlayan bir araç ipucu.
+ Geçersiz bir ifade, kırmızı bir daire ifade yanındaki beyaz ünlem işaretiyle gösterilir. Bu simgenin üzerine gelerek veya onları hatanın kaynağını tanımlayan bir araç ipucu olarak görüntülenir. Visual Studio içinde ifade kullanarak hatanın kaynağı altını çizer satırı görüntülemek için tıklatın. Çizgili metin görüntüler gelerek veya onları hatanın kaynağını tanımlayan bir araç ipucu.
 
 ### <a name="activity-validation-errors"></a>Etkinlik doğrulama hataları
  Doğrulama kısıtlamaları etkinliğin memnun değil, kırmızı bir daire beyaz ünlem işaretiyle etkinliği sağ üst köşesinde görüntülenir. Bu simgenin üzerine gelerek veya onları hatanın kaynağını tanımlayan bir araç ipucu olarak görüntülenir.

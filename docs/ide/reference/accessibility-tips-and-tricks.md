@@ -1,9 +1,9 @@
 ---
-title: Erişilebilirlik ipuçları ve püf noktaları Visual Studio için | Microsoft Docs
-ms.custom: ''
+title: Erişilebilirlik ipuçları ve püf noktaları Visual Studio için
+description: İpuçları ve Visual Studio tümleşik geliştirme ortamı (IDE) kullanmak, herkes için daha erişilebilir hale gelmesine yardımcı olabilecek öneriler hakkında daha fazla engelli kişiler de dahil olmak üzere öğrenin.
 ms.date: 09/15/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,22 +13,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f378c3ac0cfc808094170c37792399812538bf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4ebcf8adb89a2e152f1f4dd1cd0e324d1b25a782
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Erişilebilirlik ipuçları ve püf noktaları Visual Studio için
+
 > [!TIP]
 > Son erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz: [Visual Studio 2017 sürüm 15.3 erişilebilirlik geliştirmeleri](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog postası.
 
 Visual Studio, ekran okuyucuların ve diğer yardımcı teknolojiler ile uyumlu erişilebilirlik özelliğine sahiptir. Bu konu yalnızca klavye görevleri gerçekleştirmek için kullanabilirsiniz ve görünürlüğünü artırmak için yüksek karşıtlıklı tema kullanma hakkında bilgi içeren ortak kısayol tuş birleşimleri listeler. De ek açıklamaları kodunuzu hakkında yararlı bilgiler ortaya çıkarmak için nasıl kullanılacağını gösterir ve ses ayarlama yapı ve kesme olayları Desteleri.
 
-## <a name="save-your-ide-settings"></a>IDE ayarlarınızı kaydedin  
- Pencere düzeninizi, klavye kısayol düzenini ve diğer tercihlerinizi kaydederek IDE deneyiminizi özelleştirebilirsiniz. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).  
+## <a name="save-your-ide-settings"></a>IDE ayarlarınızı kaydedin
+
+ Pencere düzeninizi, klavye kısayol düzenini ve diğer tercihlerinizi kaydederek IDE deneyiminizi özelleştirebilirsiniz. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="modify-your-ide-for-high-contrast-viewing"></a>Yüksek karşıtlıklı görüntülemek için IDE değiştirme
+
 Bazı çok kişi bazı renkler görmek daha zordur. Daha fazla Karşıtlık, kod olarak istiyor, ancak tipik "Yüksek Karşıtlık" temaları kullanmak istemediğiniz şimdi "Mavi (ek Karşıtlık)" tema sunuyoruz.
 
   ![Mavi fazladan karşıtlık teması ve mavi tema karşılaştırmak](media/blue-extra-contrast-theme.png "mavi fazladan karşıtlık teması mavi tema arasındaki farkı bakın")
@@ -40,32 +43,34 @@ Visual Studio düzenleyicisinde "vb. yer işaretleri, özellikleri ve bir satır
   ![Satır ek açıklamaları Göster komut kümesini kullanmak](media/show-line-annotations-command-set.png "satır ek açıklamaları Göster komut kümesi gösterilmektedir")
 
 ## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>Kısayol tuş birleşimleri kullanarak erişim araç çubukları
+
 Birçok aracı windows yapmak gibi Visual Studio IDE araç çubukları vardır. Aşağıdaki kısayol tuş birleşimleri bunları erişmenize yardımcı olur.
 
-|Özellik|Açıklama|Tuş bileşimini|  
-|-------------|-----------------|---------------------|  
-|IDE araç çubukları|Standart araç çubuğundaki ilk düğmesini seçin.|**ALT**, **CTRL** + **SEKMESİ**|  
+|Özellik|Açıklama|Tuş bileşimini|
+|-------------|-----------------|---------------------|
+|IDE araç çubukları|Standart araç çubuğundaki ilk düğmesini seçin.|**ALT**, **CTRL** + **SEKMESİ**|
 |Araç penceresi araç çubukları|Araç çubukları araç penceresinde odağı taşır. <br> <br> **Not:** bu çoğu aracı windows için ancak yalnızca odağı araç penceresinde olduğunda çalışır. Ayrıca, ALT tuşu önce SHIFT tuşunu seçmeniz gerekir. Takım Gezgini gibi bazı aracı Windows ALT anahtar seçilmeden önce bir süre için SHIFT tuşuna basılı gerekir.|**SHIFT** + **ALT**|
 |Araç Çubukları|Listedeki ilk öğe sonraki araç çubuğunu (araç çubuğu odağa sahip olduğunda) gidin.|**CTRL** + **SEKMESİ**|
 
-### <a name="other-useful-shortcut-key-combinations"></a>Diğer kullanışlı kısayol tuş birleşimleri  
+### <a name="other-useful-shortcut-key-combinations"></a>Diğer kullanışlı kısayol tuş birleşimleri
+
 Bazı diğer yararlı bir kısayol tuş bileşimlerini arasında şunlar yer alır.
 
-|Özellik|Açıklama|Tuş bileşimini|  
-|-------------|-----------------|---------------------|  
-|IDE|Yüksek Karşıtlık kapatabilirsiniz. <br> <br> **Not:** standart Windows kısayolu|**Sol ALT + sol üst karakter + yazdırma EKRANI**|  
-|İletişim kutusu|İletişim kutusunda onay kutusunu seçeneğinin işaretini kaldırın veya seçin. <br> <br> **Not:** standart Windows kısayolu|**BOŞLUK ÇUBUĞU**|  
+|Özellik|Açıklama|Tuş bileşimini|
+|-------------|-----------------|---------------------|
+|IDE|Yüksek Karşıtlık kapatabilirsiniz. <br> <br> **Not:** standart Windows kısayolu|**Sol ALT + sol üst karakter + yazdırma EKRANI**|
+|İletişim kutusu|İletişim kutusunda onay kutusunu seçeneğinin işaretini kaldırın veya seçin. <br> <br> **Not:** standart Windows kısayolu|**BOŞLUK ÇUBUĞU**|
 |Bağlam menüleri|Bir içerik (sağ tıklatma) menüsünü açın. <br> <br> **Not:** standart Windows kısayolu|**SHIFT** + **F10**|
 |Menüler|Kısayol tuşlarını kullanarak hızlı bir şekilde bir menü öğesine erişin. Seçin **ALT** menü komutu etkinleştirmek için altı çizili harfler arkasından anahtarı. Örneğin, Visual Studio Proje Aç iletişim kutusu görüntülemek için seçmeniz **ALT** + **F** + **O**  +  **P**.  <br><br> **Not:** standart Windows kısayolu|**ALT** + **[harfi]**|
-|Araç penceresi|Araç kutusu sekmeler arasında taşıyın.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **DOWNARROW**|  
-|Araç penceresi|Bir denetimi, bir form veya tasarımcıya Araç Kutusu'ndan ekleyin.|**GİRİN**|  
-|Klavye, ortam, Seçenekler iletişim kutusu|Girilen bir tuş bileşimini silme **basın kısayol tuşları** seçeneği.|**GERİ AL**|  
+|Araç penceresi|Araç kutusu sekmeler arasında taşıyın.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **DOWNARROW**|
+|Araç penceresi|Bir denetimi, bir form veya tasarımcıya Araç Kutusu'ndan ekleyin.|**GİRİN**|
+|Klavye, ortam, Seçenekler iletişim kutusu|Girilen bir tuş bileşimini silme **basın kısayol tuşları** seçeneği.|**GERİ AL**|
 
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir.  
-
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir.
 
 ## <a name="use-the-sound-applet-to-set-build-and-breakpoint-cues"></a>Ses uygulaması derleme ve kesme noktası yardımlar ayarlamak için kullanın
+
 Visual Studio program olaylarına ses atamak için Windows Ses uygulamasını kullanabilirsiniz. Özellikle, aşağıdaki program olaylarına ses atayabilirsiniz:
 
  * Kesme noktası isabet
@@ -92,10 +97,9 @@ Visual Studio program olaylarına ses atamak için Windows Ses uygulamasını ku
 
 4. **Tamam**'ı tıklatın.
 
+## <a name="see-also"></a>Ayrıca bkz.
 
-
-## <a name="see-also"></a>Ayrıca bkz.  
-* [Visual Studio'nun Erişilebilirlik Özellikleri](../../ide/reference/accessibility-features-of-visual-studio.md)
-  * [Nasıl Yapılır: Visual Studio'da Menüleri ve Araç Çubuklarını Özelleştirme](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [Visual Studio'nun erişilebilirlik özellikleri](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Nasıl yapılır: menüleri ve Visual Studio içinde araç çubuklarını özelleştirme](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md)
 * [Microsoft Erişilebilirlik](https://www.microsoft.com/Accessibility)

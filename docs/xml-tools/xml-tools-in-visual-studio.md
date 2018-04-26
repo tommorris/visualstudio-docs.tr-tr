@@ -1,9 +1,8 @@
 ---
-title: Visual Studio'daki XML araçları | Microsoft Docs
-ms.custom: ''
+title: Visual Studio'daki XML Araçları
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 f1_keywords:
 - vb.xmldesigner
@@ -35,11 +34,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f823a42d5a89dd22fd273a2971a3b323487a525b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 279a0a73f24b2916e21293c854692ab40f444b4c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio'daki XML Araçları
 
@@ -51,40 +50,24 @@ Visual Studio ve .NET Framework özelliklerinin çoğu özünde XML'dir. Aşağ�
 
 Daha fazla bilgi için bkz: <xref:System.Xml?displayProperty=fullName> belgeleri.
 
-## <a name="in-this-section"></a>Bu Bölümde
-
-[XML Verileriyle Çalışma](../xml-tools/working-with-xml-data.md)  
-XML veri Visual Studio'da işlenme içindeki rolü ele alınmıştır.
-
-[XSLT Hatalarını Ayıklama](../xml-tools/debugging-xslt.md)  
-XSLT hata ayıklamak için Visual Studio hata ayıklayıcısı kullanmayla ilgili konulara bağlantılar sağlar.
-
 ## <a name="reference"></a>Başvuru
 
-[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699)  
-Sunan [XML Düzenleyicisi](http://go.microsoft.com/fwlink/?LinkId=228249) ayrıştırma ağacı aracılığıyla [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) XML belgeleri için.
+[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) sunan [XML Düzenleyicisi](http://go.microsoft.com/fwlink/?LinkId=228249) ayrıştırma ağacı aracılığıyla [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) XML belgeleri için.
 
-[XML standartları başvurusu](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
-XML, belge türü tanımı (DTD), XML Şeması Tanım Dili (XSD) ve XSLT dahil olmak üzere XML teknolojileri hakkında bilgi sağlar.
+[XML standartları başvurusu](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) XML, belge türü tanımı (DTD), XML Şeması Tanım Dili (XSD) ve XSLT dahil olmak üzere XML teknolojileri hakkında bilgi sağlar.
 
-<xref:System.Xml?displayProperty=fullName>  
-Sınıfları ve oluşturan diğer öğeleri açıklar <xref:System.Xml> ad alanı ve her bir öğede daha ayrıntılı bilgi için bağlantılar sağlar.
+<xref:System.Xml?displayProperty=fullName> Sınıfları ve oluşturan diğer öğeleri açıklar <xref:System.Xml> ad alanı ve her bir öğede daha ayrıntılı bilgi için bağlantılar sağlar.
 
-<xref:System.Xml.Serialization?displayProperty=fullName>  
-Sınıfları ve oluşturan diğer öğeleri açıklar <xref:System.Xml.Serialization> ad alanı ve her öğe hakkında daha ayrıntılı bilgi için bağlantılar sağlar.
+<xref:System.Xml.Serialization?displayProperty=fullName> Sınıfları ve oluşturan diğer öğeleri açıklar <xref:System.Xml.Serialization> ad alanı ve her öğe hakkında daha ayrıntılı bilgi için bağlantılar sağlar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[XML Belge Nesne Modeli (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom)  
-Açıklar nasıl <xref:System.Xml.XmlDocument> ve onun ilişkili sınıfları W3C belge nesne modeli (Temel) Düzey 1 ve Düzey 2 ad alanı destek belirtimleri uymak.
+[XML belge nesne modeli (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom) Describes nasıl <xref:System.Xml.XmlDocument> ve onun ilişkili sınıfları W3C belge nesne modeli (Temel) Düzey 1 ve Düzey 2 ad alanı destek belirtimleri uymak.
 
 [XmlReader ve XmlWriter ile XML verileri işleme](https://msdn.microsoft.com/library/cc189001(v=vs.95).aspx)
 
-[XSLT Dönüşümleri](/dotnet/standard/data/xml/xslt-transformations)  
-Açıklar nasıl <xref:System.Xml.Xsl.XslCompiledTransform> sınıfı XSLT 1.0 öneri uygular.
+[XSLT dönüştürmeleri](/dotnet/standard/data/xml/xslt-transformations) Describes nasıl <xref:System.Xml.Xsl.XslCompiledTransform> sınıfı XSLT 1.0 öneri uygular.
 
-[XPath Veri Modelini Kullanarak XML Verilerini İşleme](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)  
-Açıklar nasıl <xref:System.Xml.XPath.XPathNavigator> sınıfı tarafından depolanan XML veri işlenebilecek bir <xref:System.Xml.XPath.XPathDocument> veya bir <xref:System.Xml.XmlDocument> nesnesi. <xref:System.Xml.XPath.XPathNavigator> Sınıfı XQuery 1.0 ve XPath 2.0 veri modelini temel alır ve gidin ve XML verileri düzenlemek için kullanılabilir.
+[XML verileri kullanarak XPath veri modeli işlemek](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) Describes nasıl <xref:System.Xml.XPath.XPathNavigator> sınıfı tarafından depolanan XML veri işlenebilecek bir <xref:System.Xml.XPath.XPathDocument> veya bir <xref:System.Xml.XmlDocument> nesnesi. <xref:System.Xml.XPath.XPathNavigator> Sınıfı XQuery 1.0 ve XPath 2.0 veri modelini temel alır ve gidin ve XML verileri düzenlemek için kullanılabilir.
 
-[XML Şema Nesne Modeli (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som)  
-XML şemaları sağlayarak düzenleme ve oluşturmak için kullanılan sınıflar açıklanmaktadır bir <xref:System.Xml.Schema.XmlSchema> yüklemek ve bir şema düzenlemek için sınıf.
+[XML Şeması nesne modeli (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som) sağlayarak XML şemaları, düzenleme ve oluşturmak için kullanılan sınıflar açıklayan bir <xref:System.Xml.Schema.XmlSchema> yüklemek ve bir şema düzenlemek için sınıf.

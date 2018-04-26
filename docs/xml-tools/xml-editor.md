@@ -1,74 +1,63 @@
 ---
-title: XML Düzenleyicisi | Microsoft Docs
-ms.custom: ''
+title: XML Düzenleyicisi
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c3729086a9e2038c2cfd15643f8d076947645cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba02c3ff7d87daeda71c872e67df25ad345c6989
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="xml-editor"></a>XML Düzenleyicisi
 
 XML Düzenleyicisi'ni üzerinde Visual Studio Metin Düzenleyicisi'ni temel alır ve XML diller için ek destek içerir. XML Düzenleyicisi'ni aşağıdaki özellikleri içerir:
-  
--   XML 1.0 sözdizimi denetimi.
-  
--   Siz yazarken şema doğrulaması.
-  
--   Kod parçacıkları şema oluşturulan dahil olmak üzere XML parçacıkları destekler.
-  
--   Belge türü tanımı (DTD) desteği.
-  
--   XML Şeması Tanım Dili (XSD) şeması için destek.
-  
--   Bir XML şeması bir XML örneği belgesinden oluşturuluyor.
-  
--   DTD ya da XML verileri azaltılmış (XDR) şema bir XML şemasına dönüştürülüyor.
-  
--   XSLT 1.0 sözdizimi denetimi.
-  
--   Anahat oluşturma, böylece öğeler genişletilmiş ve daraltılmış belge.
-  
--   İle tümleştirme [XML Şeması Explorer](../xml-tools/xml-schema-explorer.md). XML şemaları hiyerarşik bir görünümünü sağlar.
+
+- XML 1.0 sözdizimi denetimi.
+
+- Siz yazarken şema doğrulaması.
+
+- Kod parçacıkları şema oluşturulan dahil olmak üzere XML parçacıkları destekler.
+
+- Belge türü tanımı (DTD) desteği.
+
+- XML Şeması Tanım Dili (XSD) şeması için destek.
+
+- Bir XML şeması bir XML örneği belgesinden oluşturuluyor.
+
+- DTD ya da XML verileri azaltılmış (XDR) şema bir XML şemasına dönüştürülüyor.
+
+- XSLT 1.0 sözdizimi denetimi.
+
+- Anahat oluşturma, böylece öğeler genişletilmiş ve daraltılmış belge.
+
+- İle tümleştirme [XML Şeması Explorer](../xml-tools/xml-schema-explorer.md). XML şemaları hiyerarşik bir görünümünü sağlar.
 
 XML Düzenleyicisi'ni, .xml, .xsd, .xsl ve .config gibi bilinen dosya uzantıları için çağrılır. XML içerecek şekilde dosya görünüyorsa, ayrıca tüm bilinmeyen dosya uzantısına göre çağrılır. Kullanarak XML Düzenleyicisi ile herhangi bir dosyayı açabilirsiniz **birlikte Aç** seçeneği ve XML Düzenleyicisi'ni listeden seçerek.
 
-## <a name="in-this-section"></a>Bu Bölümde
+## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
-[XML Belgesi Doğrulama](../xml-tools/xml-document-validation.md)  
-Sözdizimi denetimi ve doğrulama özelliklerini açıklar.
+[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) , otomatik tamamlama öznitelik kümesi adları, şablon modları adları sağlar ve parametre adları için belirtilen bir mod ya da belirtilen bir adlandırılmış şablonu.
 
-[XML Düzenleyicisi IntelliSense özellikleri](../xml-tools/xml-editor-intellisense-features.md)  
-Düzenleyici IntelliSense işlevleri açıklanmaktadır.
+## <a name="xslt-profiler"></a>XSLT Profil Oluşturucu
 
-[XML Kod Parçacıkları](../xml-tools/xml-snippets.md)  
-XML parçacıkları özelliğinin nasıl kullanılacağı açıklanmaktadır.
+[XSLT profil oluşturucu](../xml-tools/walkthrough-xslt-profiler.md) yardımcı olan raporlar ölçmek, değerlendirmek ve performans ile ilgili sorunlar XSLT kodda hedef ayrıntılı XSLT performans oluşturur. XSLT profil oluşturucu XSL ve XSLT stil sayfası iyileştirmeler için yararlı ipuçları da içerir.
 
-[XSLT Stil Sayfalarını Düzenleme](../xml-tools/editing-xslt-style-sheets.md)  
-Düzenleme deneyimi XSLT açıklar.
+## <a name="xslt-hierarchy"></a>XSLT hiyerarşisi
 
-[Şema Önbelleği](../xml-tools/schema-cache.md)  
-XML Düzenleyicisi tarafından yüklenen şemalarını listeler.
+[XSLT hiyerarşi aracı](../xml-tools/walkthrough-using-xslt-hierarchy.md) kesme noktaları dahil stil sayfaları ve/veya yerleşik şablon kuralları eklemenize olanak sağlar.
 
-[XML Düzenleyicisi bileşenleri](../xml-tools/xml-editor-components.md)  
-XML Düzenleyicisi kullanıcı arabirimi bileşenlerini açıklar.
+## <a name="related-sections"></a>İlgili bölümler
 
-## <a name="related-sections"></a>İlgili Bölümler
-
-[Kod Düzenleyicisi'nde yazma](../ide/writing-code-in-the-code-and-text-editor.md)  
-Metin Düzenleyicisi hakkında bilgi sağlar.
-
-[XML standartları başvurusu](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
-XML, belge türü tanımı (DTD), XML Şeması Tanım Dili (XSD) ve XSLT dahil olmak üzere XML teknolojileri hakkında bilgi sağlar.
+- [Kod Düzenleyicisi'nde yazma](../ide/writing-code-in-the-code-and-text-editor.md) Metin Düzenleyicisi hakkında bilgi sağlar.
+- [XML standartları başvurusu](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) XML, belge türü tanımı (DTD), XML Şeması Tanım Dili (XSD) ve XSLT dahil olmak üzere XML teknolojileri hakkında bilgi sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'daki XML Araçları](../xml-tools/xml-tools-in-visual-studio.md)
+- [Visual Studio'daki XML Araçları](../xml-tools/xml-tools-in-visual-studio.md)

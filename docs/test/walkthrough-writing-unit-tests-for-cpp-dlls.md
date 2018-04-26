@@ -1,6 +1,7 @@
 ---
-title: "Nasıl yapılır: C++ DLL'ler için birim testleri yazma | Microsoft Docs"
+title: "Nasıl yapılır: C++ DLL'ler için birim testleri yazma"
 ms.date: 11/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e4ff7d931b614d6d3c243539efc42bf051878fb0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Nasıl yapılır: C++ DLL'ler için birim testleri yazma
 
@@ -293,7 +294,8 @@ Bu kılavuz, yerel C++ önce test yöntemi kullanarak DLL'den geliştirmek açı
      ![Tüm sınamaları geçmesi](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
 
 > [!TIP]
->  Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png "UTE_parallelicon küçük") iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
+> Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png "UTE_parallelicon küçük") iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
+
 
 ##  <a name="refactor"></a> Testleri değiştirmeden kodu yeniden düzenleyin
 

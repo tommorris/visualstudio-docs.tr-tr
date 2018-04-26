@@ -1,7 +1,9 @@
 ---
-title: Sıralı iş akışı görünümler (eski) | Microsoft Docs
+title: İş Akışı Tasarımcısı - sıralı iş akışı görünümler (eski)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflow views
 - sequential workflows, views
@@ -11,20 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b42ba9c1c9f7dbe2beb4a741501967e4968508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce1217ea629ae0301b72b444161d61db4fe448b1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sequential-workflow-views-legacy"></a>Sıralı iş akışı görünümler (eski)
-[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] bir eski Windows iş akışı kullanılabilecek Tasarımcısı sağlar hedef [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Grafik oluşturmak için bir yol sağlar [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] bilinen kullanan uygulamalar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kullanıcı arabirimi. [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] uygulamaları etkinlikler olarak adlandırılan iş akışı işlem adımlarından oluşur. Bir iş akışı oluşturmak için kendi ilgili etkinlik tasarımcıları gelen sürükleyerek tasarım yüzeyine etkinliklerini oluşturan **araç** tasarım yüzeyine.
+Visual Studio 2010 'un bir eski Windows iş akışı .NET Framework sürüm 3.5 veya WinFX hedeflemek için kullanılan Tasarımcısı sağlar.
 
- Olan bir sıralı iş akışı oluşturduğunuzda bir [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), iş akışının üç görünüm mevcuttur. Bu görünümlere erişilebilir **iş akışı** menü ve tasarım yüzeyine bağlam menüsünden.
+İş Akışı Tasarımcısı grafik tanıdık Visual Studio kullanıcı arabirimini kullanarak Windows Workflow Foundation (WF) uygulamaları oluşturmak için bir yol sağlar. Windows Workflow Foundation (WF) uygulamaları etkinlikler olarak adlandırılan iş akışı işlem adımlarından oluşur. Bir iş akışı oluşturmak için kendi ilgili etkinlik tasarımcıları gelen sürükleyerek tasarım yüzeyine etkinliklerini oluşturan **araç** tasarım yüzeyine.
 
- Aşağıdaki tabloda, ad ve açıklama her görünümün listeler.
+Olan bir sıralı iş akışı oluşturduğunuzda bir [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), iş akışının üç görünüm mevcuttur. Bu görünümlere erişilebilir **iş akışı** menü ve tasarım yüzeyine bağlam menüsünden.
+
+Aşağıdaki tabloda, ad ve açıklama her görünümün listeler.
 
 |Menü/sekmesi seçeneği|Açıklama|
 |----------------------|-----------------|

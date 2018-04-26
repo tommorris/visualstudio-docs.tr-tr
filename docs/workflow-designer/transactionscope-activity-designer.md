@@ -1,7 +1,9 @@
 ---
-title: TransactionScope etkinlik Tasarımcısı | Microsoft Docs
+title: İş Akışı Tasarımcısı - TransactionScope etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.TransactionScope.UI
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
@@ -10,25 +12,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d09d025c8fd312ffa28f7ea2b991b9f1bae91b1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67c8a5c610492f298d3f2ef6de35444c96f7310f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope etkinlik Tasarımcısı
+
 **TransactionScope** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.TransactionScope> etkinlik.
 
 ## <a name="the-transactionscope-activity"></a>TransactionScope etkinliği
  <xref:System.Activities.Statements.TransactionScope> Etkinliği kapsanan etkinlik tek bir işlemde yürütür. İşlem zaman tamamlar <xref:System.Activities.Statements.TransactionScope.Body%2A> etkinliği ve diğer tüm katılımcılar işlem başarıyla tamamlandı.
 
 ### <a name="using-the-transactionscope-activity-designer"></a>TransactionScope etkinlik Tasarımcısı'nı kullanarak
- **TransactionScope** etkinlik Tasarımcısı bulunabilir **işlem** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç kutusu**  sekmesinde [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
+ **TransactionScope** etkinlik Tasarımcısı bulunabilir **işlem** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç kutusu**  sekmesi iş akışı Tasarımcısı'nın (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
 
- **TransactionScope** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve oturum bırakılan [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzey yerde etkinlikleri genellikle yerleştirilir, gibi olarak içinde bir <xref:System.Activities.Statements.Sequence>. Bu oluşturur bir <xref:System.Activities.Statements.TransactionScope> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> TransactionScope biri. <xref:System.Activities.Activity.DisplayName%2A> Değeri üstbilgisinde düzenlenebilir **TransactionScope** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
+ **TransactionScope** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri genellikle yerleştirilir olduğunda, örneğin olarak içinde açın iş akışı Tasarımcısı yüzeyini bırakılan bir <xref:System.Activities.Statements.Sequence>. Bu oluşturur bir <xref:System.Activities.Statements.TransactionScope> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> TransactionScope biri. <xref:System.Activities.Activity.DisplayName%2A> Değeri üstbilgisinde düzenlenebilir **TransactionScope** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
 
 ### <a name="the-transactionscope-properties"></a>TransactionScope özellikleri
- Aşağıdaki tabloda <xref:System.Activities.Statements.TransactionScope> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. <xref:System.Activities.Activity.DisplayName%2A> Ve <xref:System.Activities.Statements.TransactionScope.Body%2A> özellikleri düzenlenebilir [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] yüzeyini. Ancak, diğer özellikler ve özellik ızgarasının düzenlenmesi gerekir.
+ Aşağıdaki tabloda <xref:System.Activities.Statements.TransactionScope> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. <xref:System.Activities.Activity.DisplayName%2A> Ve <xref:System.Activities.Statements.TransactionScope.Body%2A> özellikleri iş akışı Tasarımcısı yüzeyine düzenlenebilir. Ancak, diğer özellikler ve özellik ızgarasının düzenlenmesi gerekir.
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|

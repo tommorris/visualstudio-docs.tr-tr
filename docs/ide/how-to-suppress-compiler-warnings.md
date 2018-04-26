@@ -1,19 +1,19 @@
 ---
-title: Visual Studio'da projeler ve NuGet paketleri için Derleyici uyarılarını gizleme | Microsoft Docs
-ms.custom: ''
+title: Visual Studio'da projeler ve NuGet paketleri için Derleyici uyarılarını gizleme
 ms.date: 01/24/2018
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fc8d4412410c2687593661760dcf94512c972b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1e3a84dff28b174676ff6fe74bf5420863afcc83
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Nasıl yapılır: Derleyici uyarılarını gizleme
 
@@ -132,6 +132,6 @@ Bazı durumlarda, projenin tamamı için yerine tek bir NuGet paketi için NuGet
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzlenecek yol: bir uygulama oluşturma](../ide/walkthrough-building-an-application.md)  
-[Nasıl yapılır: görünümü, kaydetme ve derleme günlüğü dosyalarını yapılandırma](../ide/how-to-view-save-and-configure-build-log-files.md)  
-[Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)
+- [İzlenecek yol: bir uygulama oluşturma](../ide/walkthrough-building-an-application.md)
+- [Nasıl yapılır: görünümü, kaydetme ve derleme günlüğü dosyalarını yapılandırma](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)

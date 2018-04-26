@@ -1,25 +1,28 @@
 ---
-title: 'Nasıl yapılır: uygulama bir Windows Communication Foundation sözleşmesi işlemi (eski) | Microsoft Docs'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: uygulama bir Windows Communication Foundation sözleşmesi işlemi (eski)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71bf4e4e6f5abc1d2984362396f21f3c613de795
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b069d8ca8c1adb72e2869eb59644e8abeff14ae
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Nasıl yapılır: uygulama bir Windows Communication Foundation sözleşmesi işlemi (eski)
-Bu konuda nasıl uygulanacağını açıklar bir [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] sözleşme hedefler eski Windows iş akışı Tasarımcısı kullanarak işlemini [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] veya [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Sürükleme sonra bir **ReceiveActivity** araç etkinliğinden iş akışı tasarım yüzeyine ya da oluşturduğunuz yeni bir [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] sözleşme veya var olan bir sözleşmeyi alma ve işlemler uygulayın. Seçin ve/veya sizin oluşturup aracılığıyla işlemlerini [seçin işlem iletişim kutusu (eski)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+Bu konuda hedefleyen eski Windows iş akışı Tasarımcısı'nı kullanarak bir Windows Communication Foundation (WCF) sözleşme işlemi uygulamak .NET Framework sürüm 3.5 veya WinFX açıklar.
 
-### <a name="to-implement-a-wcf-contract-operation"></a>Bir WCF sözleşmesi işlemi uygulamak için
+Sürükleme sonra bir **ReceiveActivity** araç etkinliğinden iş akışı tasarım yüzeyine ya da oluşturduğunuz yeni bir [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] sözleşme veya var olan bir sözleşmeyi alma ve işlemler uygulayın. Seçin ve/veya sizin oluşturup aracılığıyla işlemlerini [seçin işlem iletişim kutusu (eski)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+
+## <a name="to-implement-a-wcf-contract-operation"></a>Bir WCF sözleşmesi işlemi uygulamak için
 
 1.  Çift **ReceiveActivity** etkinlik Tasarımcısı'nda veya yanındaki üç nokta düğmesini tıklatın **ServiceOperationInfo** özelliğinde **özellikleri** bölmesi.
 

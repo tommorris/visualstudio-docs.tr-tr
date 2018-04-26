@@ -1,8 +1,9 @@
 ---
-title: Keşif sınırları | Microsoft Intellitest Geliştirici Test aracı | Microsoft Docs
+title: Keşif sınırları | Microsoft Intellitest Geliştirici Test aracı
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f152f128fed04abee44ca8c57c89b9f1c2f12ae6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7952ccfb8a2574bca5f297da5e675f76e8725f83
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="exploration-bounds"></a>Keşif sınırları
 
@@ -57,7 +58,7 @@ Genellikle, bir zaman aşımı Intellitest bir çözüm yok. kısıtlama sistem 
 <a name="maxconstraintsolvermemory"></a>
 ## <a name="maxconstraintsolvermemory"></a>MaxConstraintSolverMemory
 
-Megabayt sayısı, [kısıtlaması Çözücü](input-generation.md#constraint-solver) ulaşmak yeni ve farklı yürütme yolu neden olacak girişleri hesaplamak vardır. Bu bir seçenektir, **PexSettingsAttributeBase** ve türetilmiş türler.
+Megabayt sayısı, [kısıtlaması Çözücü](input-generation.md#constraint-solver) ulaşmak yeni ve farklı yürütme yolu neden olacak girişleri hesaplamak vardır. Bu bir seçenektir, *PexSettingsAttributeBase** ve türetilmiş türler.
 
 Daha derin Intellitest Intellitest akış denetimi ve veri akış programının derlemeler kısıtlaması sistemleri hale daha karmaşık bir program yürütme yollarını araştırır. Kullanılabilir bellek bilgisayarınızı bağlı olarak, daha karmaşık kısıtlaması sistemleri üstesinden gelmek Intellitest izin vermek için bu değer ayarlayabilirsiniz.
 
@@ -121,13 +122,12 @@ void ParameterizedTest(int n)
 
 Bir test keşfi sırasında Intellitest deneyecek çalıştırmalarının TH emaximum sayısı.
 
-Döngüler veya özyineleme içeren herhangi bir kod yürütme yolları sonsuz sayıda olabilir ve bu nedenle Intellitest sırasında sınırlı olması gerekiyor motivasyon bağlı bu araştırması arkasında olan [giriş nesil](input-generation.md). 
+Döngüler veya özyineleme içeren herhangi bir kod yürütme yolları sonsuz sayıda olabilir ve bu nedenle Intellitest sırasında sınırlı olması gerekiyor motivasyon bağlı bu araştırması arkasında olan [giriş nesil](input-generation.md).
 
-İki ayar **MaxRuns** ve **MaxRunsWithUniquePaths** gibi ilgili: 
+İki ayar **MaxRuns** ve **MaxRunsWithUniquePaths** gibi ilgili:
 
 * Intellitest çağıracaktır parametreli test yöntemi kadar **MaxRuns** süreleri farklı bir test girişleri ile.
-* Yürütülen kod belirleyici ise, Intellitest farklı yürütme yolu her zaman alır. 
-  Ancak, bazı koşullarda yürütülen kod izleyin ve bu da, daha önce farklı girişle denetlendiği bir yürütme yolu. 
+* Yürütülen kod belirleyici ise, Intellitest farklı yürütme yolu her zaman alır. Ancak, bazı koşullarda yürütülen kod izleyin ve bu da, daha önce farklı girişle denetlendiği bir yürütme yolu.
 * Intellitest bulduğu kaç tane benzersiz yürütme yolları sayar; Bu sayı sınırlıdır **MaxRunsWithUniquePaths** seçeneği.
 
 <a name="maxrunswithoutnewtests"></a>
@@ -135,7 +135,7 @@ Döngüler veya özyineleme içeren herhangi bir kod yürütme yolları sonsuz s
 
 Üst sınırını gösterilmesini yeni bir test olmadan ardışık çalıştırır.
 
-Intellitest genellikle birçok ilginç test girişleri kısa bir süre içinde bulabilirsiniz, ancak bir süre sonra dosyayı daha yeni girişleri test ve daha fazla birim testleri yayma bulamaz. Bu yapılandırma seçeneği bağımlı Intellitest yeni bir test yayma olmadan gerçekleştirebilir ardışık girişimlerine yerleştirir. Erişildiğinde, araştırması durdurulur. 
+Intellitest genellikle birçok ilginç test girişleri kısa bir süre içinde bulabilirsiniz, ancak bir süre sonra dosyayı daha yeni girişleri test ve daha fazla birim testleri yayma bulamaz. Bu yapılandırma seçeneği bağımlı Intellitest yeni bir test yayma olmadan gerçekleştirebilir ardışık girişimlerine yerleştirir. Erişildiğinde, araştırması durdurulur.
 
 <a name="maxrunswithuniquepaths"></a>
 ## <a name="maxrunswithuniquepaths"></a>MaxRunsWithUniquePaths
@@ -147,8 +147,7 @@ Döngüler veya özyineleme içeren herhangi bir kod yürütme yolları sonsuz s
 İki ayar **MaxRuns** ve **MaxRunsWithUniquePaths** gibi ilgili: 
 
 * Intellitest çağıracaktır parametreli test yöntemi kadar **MaxRuns** süreleri farklı bir test girişleri ile.
-* Yürütülen kod belirleyici ise, Intellitest farklı yürütme yolu her zaman alır. 
-  Ancak, bazı koşullarda yürütülen kod izleyin ve bu da, daha önce farklı girişle denetlendiği bir yürütme yolu. 
+* Yürütülen kod belirleyici ise, Intellitest farklı yürütme yolu her zaman alır. Ancak, bazı koşullarda yürütülen kod izleyin ve bu da, daha önce farklı girişle denetlendiği bir yürütme yolu. 
 * Intellitest bulduğu kaç tane benzersiz yürütme yolları sayar; Bu sayı sınırlıdır **MaxRunsWithUniquePaths** seçeneği.
 
 <a name="maxexceptions"></a>
@@ -156,16 +155,14 @@ Döngüler veya özyineleme içeren herhangi bir kod yürütme yolları sonsuz s
 
 Keşif durdurulamaz önce karşılaşılabilir özel durumlar maksimum sayısı.
 
-Bağlı bu araştırması arkasında motivasyon çok sayıda hatayı içeren kodu incelenmesi önlemektir.
-Intellitest kod içinde çok fazla hata bulursa, araştırması durdurulur.
+Bağlı bu araştırması arkasında motivasyon çok sayıda hatayı içeren kodu incelenmesi önlemektir. Intellitest kod içinde çok fazla hata bulursa, araştırması durdurulur.
 
 <a name="testexcludepathboundsexceeded"></a>
 ## <a name="testexcludepathboundsexceeded"></a>TestExcludePathBoundsExceeded
 
 Yapılandırılmış yolu sınırları aşan yürütme yolları [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), ve [MaxConditions](#maxconditions) göz ardı edilir.
 
-Bağlı bu araştırması arkasında amacı ile (büyük olasılıkla) Sonlandırıcı olmayan testleri Dağıt etmektir. Intellitest gibi bağlı incelenmesi ulaştığında [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), veya [MaxConditions](#maxconditions), bunu kabul eder test Sonlandırıcı olmayan bir işlem olmaz ve bir yığın taşması daha sonra neden olmayacak olduğunu.
-Bu tür test çalışmaları diğer test çerçeveleri ile ilgili sorunlara neden olabilir ve bu özniteliği, büyük olasılıkla Sonlandırıcı olmayan işlemler için test durumları ya da bir yığın taşması neden olacak test çalışmaları yayma Intellitest önlemek için bir yol sağlar.
+Bağlı bu araştırması arkasında amacı ile (büyük olasılıkla) Sonlandırıcı olmayan testleri Dağıt etmektir. Intellitest gibi bağlı incelenmesi ulaştığında [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), veya [MaxConditions](#maxconditions), bunu kabul eder test Sonlandırıcı olmayan bir işlem olmaz ve bir yığın taşması daha sonra neden olmayacak olduğunu. Bu tür test çalışmaları diğer test çerçeveleri ile ilgili sorunlara neden olabilir ve bu özniteliği, büyük olasılıkla Sonlandırıcı olmayan işlemler için test durumları ya da bir yığın taşması neden olacak test çalışmaları yayma Intellitest önlemek için bir yol sağlar.
 
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
@@ -184,10 +181,10 @@ Geçerli bağlı olarak [TestEmissionFilter](#testemissionfilter) önce kapsanma
 
 **TestEmissionBranchHits** ayarı belirler Intellitest yalnızca bir dal hiç kapsamında dikkate almanız gereken varsa (**TestEmissionBranchHits = 1**), bir test, ya da iki kez (kapsamdaki **TestEmissionBranchHits = 2**) ve benzeri.
 
-**TestEmissionBranchHits = 1** Intellitest ulaşmak tüm dalları kapsayan çok küçük test paketi oluşturur. Özellikle, bu test paketindeki ayrıca tüm temel blokları ve bu sınıra deyimleri ele alınacaktır. 
+**TestEmissionBranchHits = 1** Intellitest ulaşmak tüm dalları kapsayan çok küçük test paketi oluşturur. Özellikle, bu test paketindeki ayrıca tüm temel blokları ve bu sınıra deyimleri ele alınacaktır.
 
 Bu seçenek için varsayılan değer **TestEmissionBranchHits = 2**, hangi de iyidir daha açıklayıcı bir test paketine oluşturur uygun gelecekteki regresyon hataları algılama için.
 
 ## <a name="got-feedback"></a>Geri bildirim var mı?
 
-Fikirlerinizi sonrası ve özellik istekleri  **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Fikirlerinizi sonrası ve özellik istekleri [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

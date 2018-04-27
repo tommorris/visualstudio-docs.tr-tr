@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 9da28d29dc431f2f6ec92a01c397244147042f12
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 04/27/2018
+---
 2. F5 isabet (veya türü `vsce up` Terminal penceresinde) hizmetini çalıştırmak için. Bunu otomatik olarak çalıştırılacak onu yeni seçilen bizim alanı `scott`. 
 1. Biz çalıştırarak doğrulayabilirsiniz `vsce list` yeniden. İlk olarak, bir örneğini göreceksiniz `mywebapi` şu anda çalışıyor `scott` alanı (çalışan sürüm `mainline` hala çalışıyor, ancak listede olmayan). İkincisi, erişim noktası için URL `webfrontend` metinle "tan-" öneki. Bu URL için benzersiz olan `scott` boşluk ve "Tan URL'ye" gönderilen istekleri Hizmetleri'nde ilk yol dener güveninin `scott` boşluk ve Hizmetleri için döner `mainline` alanı.
 

@@ -1,6 +1,6 @@
 ---
 title: Çalıştırılacak C++ Kurallarını Belirtmek için Kural Kümeleri Kullanma
-ms.date: 11/04/2016
+ms.date: 04/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,15 +9,19 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 571d54bb6bdf3673da8e40d6075c5b961d248fe5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ccb64fba6a646de0974c9de6e35beb98738b7300
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Çalıştırılacak C++ kurallarını belirtmek için kural kümeleri kullanma
 
-Visual Studio'da oluşturma ve özel bir değiştirme *kural kümesi* Kod Analizi ile ilişkilendirilmiş belirli proje gereksinimlerini karşılamak için. C++ özel bir kural oluşturmak için C/C++ projesi Visual Studio IDE içinde açık olması gerekir. Kural kümesi Düzenleyicisi'nde bir standart bir kural kümesi'ni açın ve ardından ekler veya belirli kuralları kaldırın ve isteğe bağlı olarak Kod Analizi kural ihlal ettiğini belirlediğinde gerçekleştirilen eylemleri değiştirebilirsiniz.
+Visual Studio'da oluşturma ve özel bir değiştirme *kural kümesi* Kod Analizi ile ilişkilendirilmiş belirli proje gereksinimlerini karşılamak için. Varsayılan kural kümeleri depolanmış `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
+
+**Visual Studio 2017 sürüm 15.7** Düzenleyici herhangi bir metin kullanarak özel kural kümeleri oluşturma ve bunları ne oluşturma sistemi kullanıyorsanız olsun komut satırı derlemeleri uygulayabilirsiniz. Daha fazla bilgi için bkz: [/ analyze: ruleset](/cpp/build/reference/analyze-code-quality).
+
+Visual Studio'da ayarlayın özel bir C++ kuralı oluşturmak için C/C++ projesi Visual Studio IDE içinde açık olması gerekir. Kural kümesi Düzenleyicisi'nde bir standart bir kural kümesi'ni açın ve ardından ekler veya belirli kuralları kaldırın ve isteğe bağlı olarak Kod Analizi kural ihlal ettiğini belirlediğinde gerçekleştirilen eylemleri değiştirebilirsiniz.
 
 Yeni özel bir kural oluşturmak için yeni bir dosya adı kullanarak kaydedin. Özel kural kümesi projeye otomatik olarak atanır.
 
@@ -72,3 +76,20 @@ Yeni özel bir kural oluşturmak için yeni bir dosya adı kullanarak kaydedin. 
 - Gösterme ve gizleme atanan kuralları arasında geçiş yapmak için **hiçbiri** eylemi seçin **Göster etkin olmayan kuralları**.
 
 - Eklemek veya varsayılan kural kümesi geçerli kural kümesinde Microsoft kaldırmak istediğiniz **ekleme veya kaldırma alt kural kümeleri**.
+
+## <a name="to-create-a-rule-set-in-a-text-editor"></a>Bir kural oluşturmak için bir metin düzenleyicisinde ayarlama
+
+Özel bir kural kümesini bir metin düzenleyicisi oluşturun, herhangi bir konumda depolayın bir `.ruleset` uzantısı ve ile uygulama [/ analyze: ruleset](/cpp/build/reference/analyze-code-quality) derleyici seçeneği.
+
+Aşağıdaki örnek, bir başlangıç noktası olarak kullanabileceğiniz dosyası temel bir kural kümesi gösterir:
+
+```xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C6001" Action="Warning" />
+    <Rule Id="C26494" Action="Warning" />
+  </Rules>
+</RuleSet>
+```

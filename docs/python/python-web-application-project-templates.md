@@ -1,7 +1,7 @@
 ---
 title: Python için Web Uygulama Şablonları
 description: Visual Studio şablonları Python yapılandırmaları hata ayıklama ve Azure App Service'te yayımlama da dahil olmak üzere Bottle, Flask ve Django çerçeveler kullanılarak yazılmış web uygulamaları için genel bakış.
-ms.date: 07/13/2017
+ms.date: 04/17/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,37 +11,77 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0abb3752972e90347de2f296c11c86d8335fbb9a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6d76bc7868c78b1def09376cb2382aa39cff1cda
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="python-web-application-project-templates"></a>Python web uygulaması proje şablonları
 
-Python Visual Studio Proje şablonları ve çeşitli çerçeveleri işlemek üzere yapılandırılmış bir hata ayıklama başlatıcısı aracılığıyla Bottle, Flask ve Django çerçeveleri geliştirme web projeleri destekler. Genel de kullanabilirsiniz **Web projesi** Piramit gibi diğer çerçeveler için şablon.
+Python Visual Studio Proje şablonları ve çeşitli çerçeveleri işlemek üzere yapılandırılmış bir hata ayıklama başlatıcısı aracılığıyla Bottle, Flask ve Django çerçeveleri geliştirme web projeleri destekler. Bu şablonlar dahil bir `requirements.txt` gerekli bağımlılıkları bildirmek için dosya. Bir proje bu şablonlardan birini oluştururken, Visual Studio bu paketleri yüklemenizi ister (bkz [proje gereksinimlerini yükleme](#installing-project-requirements) bu makalenin ilerisinde yer).
 
-Visual Studio çerçeveleri kendilerini içermez. Projeye sağ tıklayıp seçerek ayrı olarak çerçeveler komutunu yüklemelisiniz **Python > yükleme/yükseltme framework...** .
+Genel "Web projesi" Şablon Piramit gibi diğer çerçeveler için de kullanabilirsiniz. Bu durumda, hiçbir çerçeveleri şablonla yüklenir. Bunun yerine, proje için kullanmakta olduğunuz ortamına gerekli paketleri yüklemek (bkz [yönetme Python ortamları](managing-python-environments-in-visual-studio.md)).
 
-Çalıştırdığınızda, bir şablondan oluşturulan bir proje (üzerinden erişilen gibi **Dosya > Yeni > Proje...** ) rastgele seçili yerel bağlantı noktası ile bir web sunucusu başlatan, hata ayıklama sırasında varsayılan tarayıcınızı açar ve Microsoft Azure yayımlama doğrudan sağlar.
+## <a name="using-a-project-template"></a>Proje şablonunu kullanarak
 
-![Yeni web projesi şablonları](media/template-web-new-project.png)
+Kullanarak bir şablon bir proje oluşturmadan **dosya** > **yeni** > **proje**. Web projeleri için şablonlar görmek için seçin **Python** > **Web** iletişim kutusunun sol tarafında. Tercih ettiğiniz bir şablon seçin, adları sağlama proje ve çözüm için bir çözüm dizini ve Git deposu için seçenekleri ayarlayın ve seçin **Tamam**.
 
-Bottle, Flask ve Django şablonları her başlangıç sitesi bazı sayfaları ve statik dosyaları içerir. Bu kodu çalıştırmak ve (burada bazı ayarları gereken ortamından elde edilebilir) sunucusu yerel olarak hata ayıklama yeterli olduğundan ve Microsoft Azure'a dağıtmak için (burada bir [WSGI uygulama](http://www.python.org/dev/peps/pep-3333/) nesnenin sağlanması gerekiyor).
+![Web uygulamaları için yeni proje iletişim kutusu](media/projects-new-project-dialog-web.png)
+
+Daha önce belirtildiği genel "Web projesi" şablonu yalnızca boş bir Visual Studio projesi kod ve Python proje olması dışında hiçbir varsayımlar sağlar. "Azure bulut hizmeti" şablonu hakkında daha fazla bilgi için bkz: [Python için Azure bulut hizmeti projeleri](python-azure-cloud-service-project-template.md).python-azure-cloud-service-project-template.md
+
+Tüm Şablonları Bottle, Flask ve Django web çerçevesinde temel alır ve aşağıdaki bölümlerde açıklandığı gibi üç genel gruba ayrılır. Bu şablonlardan birini tarafından oluşturulan uygulamaları çalıştırmak ve uygulama yerel olarak hata ayıklama için yeterli kodunu içerir. Her biri de gerekli sağlar [WSGI uygulama nesnesini](http://www.python.org/dev/peps/pep-3333/) (python.org) için [Azure App Service'e dağıtma](publishing-python-web-applications-to-azure-from-visual-studio.md).
+
+### <a name="blank-group"></a>Boş grubu
+
+Bir proje ile daha fazla tüm "Boş (framework) Web projesi" şablonlar oluşturabilir veya daha az en az Demirbaş kod ve gerekli bağımlılıkları bildirilen bir `requirements.txt` dosyası.
+
+| Şablon | Açıklama |
+| --- | --- |
+| Boş Bottle Web projesi | En az bir uygulamada oluşturur `app.py` için bir giriş sayfası ile `/` ve `/hello/<name>` görüntülemektedir sayfa `<name>` çok kısa satır içi sayfa şablonu kullanarak. |
+| Boş Django Web projesi | Çekirdek Django sitesi yapısını ancak hiçbir Django uygulamaları ile Django projesi oluşturur. Daha fazla bilgi için bkz: [Django şablonları](python-django-web-application-project-template.md) ve [öğrenme Django adım 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
+| Boş Flask Web projesi | Bir tek "Hello World!" ile en az bir uygulama oluşturur için sayfa `/`. Bu uygulamanın ayrıntılı adımlarını izleyerek sonucunu benzer [hızlı başlangıç: ilk Python web uygulamanızı oluşturmak için Visual Studio](../ide/quickstart-python.md?context=visualstudio/python/default).
+
+### <a name="web-group"></a>Web grubu
+
+Tüm "(Framework) Web projesi" şablonları, seçilen framework bakılmaksızın aynı bir tasarım ile bir başlangıç web uygulaması oluşturun. Uygulama giriş, sahip bir gezinme çubuğu ve önyükleme kullanarak esnek tasarım birlikte hakkında ve iletişim sayfaları. Her uygulama sunucusu statik dosyaları (CSS, JavaScript ve yazı tipleri) için uygun şekilde yapılandırıldığından ve çerçevesi için uygun bir sayfa şablonu mekanizması kullanır.
+
+| Şablon | Açıklama |
+| --- | --- |
+| Bottle Web projesi | Yalnızca statik dosyalar içerdiği bir uygulama oluşturur `static` klasörü ve kodda aracılığıyla işlenmesini `app.py`. Tek tek sayfaları için yönlendirme içinde barındırılan `routes.py`ve `views` klasörü sayfası şablonları içerir.|
+| Django Web projesi | Django proje ve üç sayfaları, kimlik doğrulama desteği ve bir SQLite veritabanı (ancak hiçbir veri modelleri) ile Django uygulamasını oluşturur. Daha fazla bilgi için bkz: [Django şablonları](python-django-web-application-project-template.md) ve [öğrenme Django adım 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
+| Flask Web projesi | Yalnızca statik dosyalar içerdiği bir uygulama oluşturur `static` klasör. Kod `views.py` işler sayfası şablonlarını içinde yer alan Jinja altyapısını kullanarak yönlendirme `templates` klasör. `runserver.py` Dosyası başlangıç kodu sağlar. |
+| Flask/Jade Web projesi | "Flask Web projesi" şablonu ancak Jade şablon motoru kullanarak uygulamayı olarak oluşturur. |
+
+### <a name="polls-group"></a>Anketler grubu
+
+"Yoklamalar (framework) Web projesi" şablonları ilgili farklı yoklama soruları üzerinden kullanıcıların oy bir başlangıç web uygulaması oluşturun. Her uygulama anketler ve kullanıcı yanıtlarını yönetmek için bir veritabanını kullanmak için "Web" proje şablonlarını yapısı oluşturur. Uygun veri modelleri dahil uygulamalar ve sayfa ("/ çekirdek"), özel bir uygulama yoklamalar dan yükleyen bir `samples.json` dosyası.
+
+| Şablon | Açıklama |
+| --- | --- |
+| Anketler Bottle Web projesi | Bellek içi veritabanı, MongoDB veya kullanılarak yapılandırılan Azure Table Storage karşı çalıştırabilirsiniz bir uygulama oluşturur `REPOSITORY_NAME` ortam değişkeni. Veri modelleri ve veri deposu kodu bulunan `models` klasörünü ve `settings.py` dosyası, hangi veri deposu kullanıldığını belirlemek için kod içerir. |
+| Yoklamalar Django Web projesi | Django proje ve bir Django uygulamayla üç sayfaları ve bir SQLite veritabanı oluşturur. Kimliği doğrulanmış yönetici oluşturmak ve anketler yönetmek izin vermek için Django yönetim arabirimini özelleştirmeleri içerir. Daha fazla bilgi için bkz: [Django şablonları](python-django-web-application-project-template.md) ve [öğrenme Django adım 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
+| Anketler Flask Web projesi | Bellek içi veritabanı, MongoDB veya kullanılarak yapılandırılan Azure Table Storage karşı çalıştırabilirsiniz bir uygulama oluşturur `REPOSITORY_NAME` ortam değişkeni. Veri modelleri ve veri deposu kodu bulunan `models` klasörünü ve `settings.py` dosyası, hangi veri deposu kullanıldığını belirlemek için kod içerir. Uygulama için sayfa şablonları Jinja altyapısı kullanır. |
+| Anketler Flask/Jade Web projesi | "Yoklamalar Flask Web projesi" şablonu ancak Jade şablon motoru kullanarak uygulamayı olarak oluşturur. |
+
+## <a name="installing-project-requirements"></a>Proje gereksinimlerini yükleme
 
 Bir proje çerçeveye özel şablonu oluştururken, PIP kullanarak gerekli paketleri yüklemenize yardımcı olması için bir iletişim kutusu görüntülenir. Ayrıca kullanmanızı öneririz bir [sanal ortam](selecting-a-python-environment-for-a-project.md#using-virtual-environments) doğru bağımlılıkları dahil; böylece web projeleri için yayımladığınızda, web sitenizi:
 
 ![İletişim kutusu için bir proje şablonu paketleri gerekli](media/template-web-requirements-txt-wizard.png)
 
+Kaynak denetimi kullanıyorsanız, bu ortam yalnızca kullanılarak yeniden oluşturulması gibi genellikle sonra sanal ortam klasörü atlayın `requirements.txt`. Klasörü dışlamak için en iyi yolu ilk seçmektir **ı bunları kendim yükleyecek** isteminde yukarıda gösterilen, ardından otomatik tamamlama sanal ortamı oluşturmadan önce devre dışı bırakın. Ayrıntılar için bkz [öğrenme Django Öğreticisi - 1-2 ve 1-3 adımları](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
+
 Microsoft Azure App Service'e dağıtırken Python sürümünü seçin bir [site uzantısı](https://aka.ms/PythonOnAppService) ve paketleri el ile yükleyin. Ayrıca, Azure App Service yaptığından **değil** paketleri otomatik olarak yüklemek bir `requirements.txt` dosya Visual Studio'dan dağıtıldığında, yapılandırma ayrıntılarını izleyin [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
-Microsoft Azure bulut Hizmetleri *mu* Destek `requirements.txt` dosya. [Azure bulut hizmeti projeleri](python-azure-cloud-service-project-template.md) Ayrıntılar için.
+Microsoft Azure bulut Hizmetleri *mu* Destek `requirements.txt` dosya. Bkz: [Azure bulut hizmeti projeleri](python-azure-cloud-service-project-template.md) Ayrıntılar için.
 
 ## <a name="debugging"></a>Hata Ayıklama
 
-Hata ayıklama için bir web projesi başlatıldığında, Visual Studio web sunucusuna yerel olarak başlatır ve bu adresi ve bağlantı noktası için varsayılan tarayıcı açar. Ek seçenekleri belirtmek için projeye sağ tıklayın, seçin **özellikleri**seçip **Web Başlatıcısı** sekmesi:
+Hata ayıklama için bir web projesi başlatıldığında, Visual Studio rastgele bir bağlantı noktasında bir yerel web sunucusu başlatır ve bu adresi ve bağlantı noktası için varsayılan tarayıcı açar. Ek seçenekleri belirtmek için projeye sağ tıklayın, seçin **özellikleri**seçip **Web Başlatıcısı** sekmesi:
 
-  ![Genel web şablonu için Web Başlatıcısı özellikleri](media/template-web-launcher-properties.png)
+![Genel web şablonu için Web Başlatıcısı özellikleri](media/template-web-launcher-properties.png)
 
 İçinde **hata ayıklama** Grup:
 
@@ -87,84 +127,23 @@ Piramit uygulamalar, kullanarak şu anda en iyi oluşturulur `pcreate` komut sat
   - Bağımsız değişkenler: `Production.ini`
 
 - **Sunucu komutu hata ayıklama** Grup:
-    - Komut: `..\env\scripts\pserve-script.py` (komut)
-    - Bağımsız değişkenler: `Development.ini`
+  - Komut: `..\env\scripts\pserve-script.py` (komut)
+  - Bağımsız değişkenler: `Development.ini`
 
 > [!Tip]
-> Büyük olasılıkla yapılandırmanıza gerek **çalışma dizini** özelliği projenizin Piramit uygulamalar genellikle bir dizin düzeyinde kaynak ağacın üstüne derin olduğundan.
+> Büyük olasılıkla yapılandırmanıza gerek **çalışma dizini** özelliği projenizin Piramit uygulamalar genellikle proje kökü altındaki bir klasör olduğundan.
 
 ### <a name="other-configurations"></a>Diğer yapılandırmalar
 
 Paylaşma veya başka bir framework ayarlarını isteği istiyorsanız açmak istediğiniz başka bir framework ayarlarını varsa bir [GitHub sorunu](https://github.com/Microsoft/PTVS/issues).
 
-## <a name="publishing-to-azure-app-service"></a>Azure App Service’e yayımlama
+## <a name="convert-a-project-to-azure-cloud-service"></a>Azure bulut hizmeti için bir proje Dönüştür
 
-Azure uygulama hizmeti yayımlamak için birincil iki yolu vardır. İlk olarak, kaynak denetiminden dağıtım diğer diller için olduğu gibi aynı şekilde açıklandığı gibi kullanılabilir [Azure belgelerine](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/). Doğrudan Visual Studio'dan yayımlamak için projeye sağ tıklayın ve seçin **Yayımla**:
-
-![Komut bir projenin bağlam menüsünde Yayımla](media/template-web-publish-command.png)
-
-Komut seçerek, sihirbaz, bir web sitesi oluşturma konusunda size yardımcı olacaktır veya içeri aktarma yayımlama sonra Önizleme ayarları, dosyaları ve bir uzak sunucuya yayımlamayı değiştirilebilir.
-
-Uygulama hizmeti bir site oluşturduğunuzda, Python ve sitenizi bağımlı herhangi bir paket yüklemeniz gerekir. İlk sitenizi yayımlayın, ancak Python yapılandırmadığınız sürece çalışmaz.
-
-Uygulama hizmeti Python yüklemek için kullanmanızı öneririz [site uzantıları](http://www.siteextensions.net/packages?q=Tags%3A%22python%22) (siteextensions.net). Bu uzantılar kopyalarıdır [resmi sürümleri](https://www.python.org) en iyi duruma getirilmiş ve Azure App Service için paketlenmiş Python.
-
-Bir site uzantısı üzerinden dağıtılabilir [Azure portal](https://portal.azure.com/). Seçin **geliştirme araçları > uzantıları** uygulama hizmetiniz seçin dikey **Ekle**ve Python öğeleri bulmak için listede ilerleyin:
-
-![Azure portalında site uzantısı Ekle](media/template-web-site-extensions.png)
-
-JSON dağıtım şablonları kullanıyorsanız, site uzantısı, sitenizin bir kaynak olarak belirtebilirsiniz:
-
-```json
-{
-    "resources": [
-    {
-        "apiVersion": "2015-08-01",
-        "name": "[parameters('siteName')]",
-        "type": "Microsoft.Web/sites",
-        ...
-    },
-    "resources": [
-    {
-        "apiVersion": "2015-08-01",
-        "name": "python352x64",
-        "type": "siteextensions",
-        "properties": { },
-        "dependsOn": [
-            "[resourceId('Microsoft.Web/sites', parameters('siteName'))]"
-        ]
-    },
-    ...
-}
-```
-
-Son olarak, aracılığıyla oturum [geliştirme konsol](https://github.com/projectkudu/kudu/wiki/Kudu-console) ve oradan site uzantısı yükleyin.
-
-Şu anda, paketleri yüklemek için önerilen yöntem geliştirme konsol site uzantısı yükleyip PIP doğrudan Yürütülüyor sonra kullanmaktır. Python tam yolunu kullanarak önemli olduğu veya yanlış bir yürütme ve genelde sanal bir ortama kullanmaya gerek yoktur. Örneğin:
-
-```command
-c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
-
-c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
-```
-
-Azure App Service'e dağıtıldığında, siteniz Microsoft IIS çalıştırır. IIS ile çalışmak üzere sitenizi etkinleştirmek için en az bir eklemeniz `web.config` dosya. Kullanılabilir şablonlar bazı ortak dağıtım hedefleri için kullanılabilir projeye sağ tıklayıp seçerek **Ekle > Yeni öğe...**  (iletişim aşağıya bakın) ve bu yapılandırmalar diğer kullanımlar için kolayca değiştirilebilir. Bkz: [IIS yapılandırma başvurusu](https://www.iis.net/configreference) kullanılabilen yapılandırma ayarları hakkında bilgi için.
-
-![Azure öğe şablonları](media/template-web-azure-items.png)
-
-Kullanılabilir öğeler şunlardır:
-
-- Azure web.config (Fastcgı): ekler bir `web.config` zaman uygulamanızı sağlayan dosya bir [WSGI](https://wsgi.readthedocs.io/en/latest/) gelen bağlantıları işlemek için nesne.
-- Azure web.config (HttpPlatformHandler): ekler bir `web.config` olduğunda, uygulamanızın gelen bağlantılar için bir yuvada dinler dosyası.
-- Azure statik dosyaları web.config: olduğunda yukarıdaki birini `web.config` dosyaları, uygulamanız tarafından işlenen dışlamak için bir alt dizine dosyasına ekleyin.
-- Azure uzaktan hata ayıklama web.config: WebSockets üzerinden uzaktan hata ayıklama için gerekli dosyaları ekler.
-- Web rolü destek dosyalarını: Bulut hizmeti web rolleri için varsayılan dağıtım betikleri içerir.
-- Çalışan rolü destek dosyalarını: varsayılan dağıtım ve başlatma komut dosyaları için bulut hizmeti çalışan rolleri içerir.
-
-Hata ayıklama eklerseniz `web.config` şablonu projenizde veya Python uzaktan hata ayıklama kullanmak için plan için "Hata ayıklama" yapılandırmasında yayınlamanıza vermeniz gerekir. Bu ayar geçerli etkin çözüm yapılandırmasından ayrı ve her zaman "Yayın" varsayılan olarak Değiştirmek için açık **ayarları** sekmesinde ve kullanmak **yapılandırma** birleşik giriş kutusu Yayımlama Sihirbazı'nda (bkz [Azure belgelerine](https://azure.microsoft.com/develop/python/) oluşturma hakkında daha fazla bilgi için ve Azure Web uygulamaları dağıtmak için):
-
-![Yayımla yapılandırmasını değiştirme](media/template-web-publish-config.png)
-
-**Microsoft Azure bulut hizmeti projesine dönüştürme** komutu (aşağıdaki görüntü), çözümünüz için bir bulut hizmeti projesini ekler. Bu proje kullanılacak sanal makineler ve hizmetler için yapılandırma ve dağıtım ayarlarını içerir. Kullanım **Yayımla** bulut hizmetlerine; dağıtmak için bulut projesi komutunu **Yayımla** Python proje komutunda hala Web sitelerine dağıtır. Bkz: [Azure bulut hizmeti projeleri](python-azure-cloud-service-project-template.md) daha fazla ayrıntı için.
+**Microsoft Azure bulut hizmeti projesine dönüştürme** komutu (aşağıdaki görüntü), çözümünüz için bir bulut hizmeti projesini ekler. Bu proje kullanılacak sanal makineler ve hizmetler için yapılandırma ve dağıtım ayarlarını içerir. Kullanım **Yayımla** bulut hizmetlerine; dağıtmak için bulut projesi komutunu **Yayımla** Python proje komutunda hala Web sitelerine dağıtır. Daha fazla bilgi için bkz: [Azure bulut hizmeti projeleri](python-azure-cloud-service-project-template.md).
 
 ![Microsoft Azure bulut hizmeti projesi komutuna Dönüştür](media/template-web-convert-menu.png)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Python öğesi şablonları başvurusu](python-item-templates.md)
+- [Azure App Service’e yayımlama](publishing-python-web-applications-to-azure-from-visual-studio.md)

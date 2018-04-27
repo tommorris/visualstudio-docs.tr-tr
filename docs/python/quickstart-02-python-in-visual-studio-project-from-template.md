@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 39e4b718ab7563e086f6ca2e85c31bd53b3c371c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e352f8a0fffb3972f326edc767b799295b2c802e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da bir şablondan bir Python projesi oluşturma
 
@@ -59,7 +59,7 @@ Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installing-pytho
 
 **Yanıt**: yüklü Python yüküyle Visual Studio Proje şablonları olanları için de dahil olmak üzere çeşitli sağlar [Flask, Bottle ve Django web çerçeveleri](../python/python-web-application-project-templates.md), Azure bulut Hizmetleri, farklı makine öğrenme senaryolar ve Python uygulaması içeren varolan bir klasör yapısından bir proje oluşturmak için bir şablon bile. Bunlar üzerinden erişim **Dosya > Yeni > Proje...**  seçerek iletişim kutusu **Python** dil düğümünü ve alt düğümlerini.
 
-Visual Studio ayrıca dosya çeşitli sağlar veya *öğe şablonlarını* Python sınıfı, bir Python paket, Python birim testi, web.config dosyaları ve daha hızlı bir şekilde oluşturmak için. Açık bir Python projeniz varsa, öğe şablonları üzerinden erişim **Proje > Yeni Öğe Ekle...**  menü komutu.
+Visual Studio ayrıca dosya çeşitli sağlar veya *öğe şablonlarını* Python sınıfı, bir Python paket, Python birim testi, hızlı bir şekilde oluşturmak için `web.config` dosyaları ve daha fazlası. Açık bir Python projeniz varsa, öğe şablonları üzerinden erişim **Proje > Yeni Öğe Ekle** menü komutu. Bkz: [öğe şablonlarını](python-item-templates.md) başvuru.
 
 Şablonları kullanarak önemli zamandan tasarruf ne zaman bir proje başlangıç veya bir dosya oluşturmak ve aynı zamanda farklı uygulama türleri hakkında bilgi edinin ve yapıları kod için kullanışlı bir yoludur. Bunlar sunar ile tanımak için çeşitli şablonlardan projeler ve öğeler oluşturmak için birkaç dakika sürebilir yararlıdır.
 

@@ -9,11 +9,11 @@ description: Yöneticiler abonelere lisansları nasıl atayabilirsiniz öğrenin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 62336656e551a085c6c8753e6baea06730f49510
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4cce35d361e3a1f8af2c2268e2ef6cbd061710ea
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio abonelikleri Yönetici portalı'nı lisansları atama
 
@@ -30,10 +30,10 @@ Visual Studio abonelikler için kullanılabilir lisans varsa, abonelik faydalar�
 
 3.  Bilgileri form alanlarına yeni abone için girin. Kuruluşunuz Azure Active Directory kullanıyorsanız, bu alan arama sonuçlarından doğru kullanıcı seçebilmeniz için geçerli dizininizde kişiler bulmak için bir arama işlevini görür. Bu kişi seçtiğinizde, aşağıda gördüğünüz gibi kendi adı, e-posta oturum açma ve bildirim e-posta otomatik olarak doldurur. 
 
-    Kuruluşunuzun dışındaki oturum açmak için kullanılacak e-postaları almak için bir başka e-posta erişimi varsa, burada girme seçeneğiniz vardır. "Farklı e-posta için oturum açma daha iletişimi?" gösterir köprüyü seçin. 
+    Kuruluşunuz Azure Active Directory (Azure AD) kullanmıyor, ancak daha oturum açmak için kullanılacak e-postaları almak için bir başka e-posta varsa, burada girme seçeneğiniz vardır. "Farklı bir e-posta alıcı iletişimi için Ekle" etiketli köprüyü seçin. 
 
     **Erişim yüklemeler için:**  
-    İçine imzaladığınızda yazılım yüklemeleri için erişim sağlamak için bu abone istiyorsanız [Visual Studio abonelikleri Portal](https://my.visualstudio.com?wt.mc_id=o~msft~docs), indirmeler kutunun işaretli olduğundan emin olun. Bu kutunun işaretini kaldırdığınızdan seçerseniz, kullanıcı yazılım yüklemelerini erişebilir değil, ancak hala aboneliğine dahil tüm diğer avantajları erişebilir. 
+    İçine imzaladığınızda yazılım yüklemeleri için erişim sağlamak için bu abone istiyorsanız [Visual Studio abonelikleri Portal](https://my.visualstudio.com?wt.mc_id=o~msft~docs), etkin yüklemeleri geçiş bıraktığınızdan emin olun. Yüklemeleri devre dışı bırakmak seçerseniz, kullanıcı yazılım yüklemelerini erişemeyecektir ancak hala aboneliğine dahil tüm diğer avantajları erişebilir. 
     
     Tamamladığınızda bu abone için seçenekleri belirleyerek, tıklatın **Ekle**.
 
@@ -45,7 +45,7 @@ Visual Studio abonelikler için kullanılabilir lisans varsa, abonelik faydalar�
     ![Abonelik eklendi](_img\assign-license-add\add-subscriber-complete.png)
 
 ## <a name="bulk-assignments"></a>Toplu atamaları
-1.  Aynı anda birden çok abone eklemek için gidin **aboneleri** sekmesi. Üst Şeritte tıklatın **toplu ekleme**. 
+1.  Aynı anda birden çok abone eklemek için gidin **yönetmek aboneleri** sekmesi. Üst Şeritte tıklatın **toplu ekleme**. 
 
     ![Toplu ekleme](_img\assign-license-add\bulk-assign-add.png)
 
@@ -53,7 +53,7 @@ Visual Studio abonelikler için kullanılabilir lisans varsa, abonelik faydalar�
 
     ![Birden çok aboneye karşıya yükle](_img\assign-license-add\bulk-assign-upload.png)
 
-3.  Excel elektronik tabloda abonelikleri atamak istediğiniz kişiler bilgilerle alanları doldurun. Başvuru isteğe bağlı bir alandır. Şablonu herhangi bir kısmını yanlış doldurduktan, sorunu açıklayan bir hata iletisi görürsünüz. İşiniz bittiğinde sabit diskinizde dosyayı kaydedin.
+3.  Excel elektronik tabloda abonelikleri atamak istediğiniz kişiler bilgilerle alanları doldurun. Başvuru isteğe bağlı bir alandır. Şablonu herhangi bir kısmını yanlış doldurduktan, sorunu açıklayan bir hata iletisi görürsünüz. Dosyayı yerel olarak bir kez yapılır.
 **Kesintisiz bir karşıya yükleme sağlamaya yardımcı olmak için aşağıdaki en iyi yöntemleri inceleyin:**
     - Form alanlarını hiçbiri virgül içerdiğinden emin olun.
     - Alanları önce ve sonra kullanıcıların adları gibi form alanlarını kaldırın.

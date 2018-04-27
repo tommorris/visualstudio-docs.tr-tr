@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecda4cc1ab237bed9e377f977295e19c74893673
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Nasıl yapılır: Standart Kod Çözümleme İade İlkeleri Oluşturma veya Güncelleme
 
@@ -30,7 +30,7 @@ Kod çözümleme iade ilkeleri takım projesi ayarlarında belirlenir ve her tak
 
 - Yönetilen kod için iade ilkesi belirterek ayarladığınız bir *kural kümesi* , bir alt kümesini kod çözümleme kurallarını içerir.
 
-- C/C++ kodu için iade ilkesi tüm kod çözümleme kurallarını çalıştırmasını gerektirir. Takım projenizin kod projeler için belirli kurallar devre dışı bırakmak için ön işlemci yönergeleri ekleyebilirsiniz.
+- C/C++ kodu, Visual Studio 2017 15.6 ve önceki sürümü için iade ilkesi tüm kod çözümleme kurallarını çalıştırmasını gerektirir. Takım projenizin kod projeler için belirli kurallar devre dışı bırakmak için ön işlemci yönergeleri ekleyebilirsiniz. 15.7 ve daha sonra kullanabileceğiniz **/ analyze: ruleset** çalıştırmak için hangi kuralları belirtmek için. Daha fazla bilgi için bkz: [çalıştırılacak C++ kurallarını belirtmek için kural kümeleri kullanma](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
 Yönetilen kod için bir ilke belirttikten sonra takım üyeleri kod projeleri takım projesi ilke ayarları için kod çözümleme ayarlarını eşitleyebilirsiniz.
 

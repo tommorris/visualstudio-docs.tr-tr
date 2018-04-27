@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 576a8ffdd025667e811e96a712368de98bbe4cb4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="debugging-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -125,7 +125,7 @@ Bu noktada çağrı yığınına dahil olmak üzere program durumunu inceleyebil
 
 Her özel durum denetimleri için onay kutusunu olup olmadığını hata ayıklayıcı *her zaman* bu oluştuğunda keser. Daha sık için belirli bir durum bölün istediğinizde bu onay kutusunu işaretleyin.
 
-Varsayılan olarak, çoğu özel durumlar çıkarken bir özel durum işleyici kaynak kodunda bulunamıyor. Bu davranışı değiştirmek için bir özel durumla sağ tıklayın ve denetleyin veya işaretini **devam zaman işlenmemiş kullanıcı kodu**. Daha az sıklıkta için bir özel durum bölün istediğinizde bu kutusunu temizleyin.
+Varsayılan olarak, çoğu özel durumlar çıkarken bir özel durum işleyici kaynak kodunda bulunamıyor. Bu davranışı değiştirmek için bir özel durumla sağ tıklayın ve değiştirme **devam zaman işlenmemiş kullanıcı kodu** seçeneği. Daha az sıklıkta için bir özel durum bölün istediğinizde bu kutusunu temizleyin.
 
 Bu listede görünmeyen bir özel durum yapılandırmak için tıklatın **Ekle** düğmesi ekleyin. Adı, özel durumun tam adıyla eşleşmelidir.
 

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7a23835ddeb143c723f4275ec337168dc783664b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python ile çalışma
 
@@ -88,6 +88,7 @@ Proje ve öğe şablonları projeleri ve dosyaların farklı türleri ayarlama, 
 Daha fazla bilgi için:
 
 - Belgeler: [yönetme Python projeleri](managing-python-projects-in-visual-studio.md)
+- Belgeler: [öğe şablonları başvurusu](python-item-templates.md)
 - Belgeler: [Python proje şablonları](managing-python-projects-in-visual-studio.md#project-templates)
 - Belgeler: [C++ ve Python ile çalışma](working-with-c-cpp-python-in-visual-studio.md)
 - Genel Visual Studio özellik belgeleri: [proje ve öğe şablonları](../ide/creating-project-and-item-templates.md#visual-studio-templates)

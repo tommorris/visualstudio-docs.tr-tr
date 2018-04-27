@@ -5,8 +5,6 @@ ms.date: 01/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
-dev_langs:
-- R
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
@@ -14,15 +12,15 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d8b88e327af895d39335695b16b44bf17efdb18b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e5494283fdf759ddc664207d62d40f7f83993632
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Visual Studio'da linting R kodu
 
-Linting, olası hatalar, biçimlendirme sorunları ve diğer kod gürültü alacaklardır boşluk gibi ortaya çıkarmak üzere kod çözümleyen bir işlemdir. Linting nasıl tanımlayıcıları, takımları ve diğer ortak durumları içinde çok yararlı olduğu adlandırıldığı gibi belirli kodlama kurallarını teşvik yardımcı olur.
+Linting olası hatalar, biçimlendirme sorunları ve diğer kod gürültü alacaklardır boşluk gibi ortaya çıkarmak üzere kod analiz eder. Linting tanımlayıcıları nasıl adlandırıldığı gibi belirli kodlama kurallarını teşvik yardımcı olur. Bu tür kuralları ekipleri ve diğer ortak durumlar içinde yardımcı olur.
 
 R araçları için Visual Studio (RTVS) davranışını çeşitli seçenekleri bu makalede açıklanan aracılığıyla denetlenir R, yerleşik linting sağlar. Bu seçenekler bulunan **aracı > Seçenekler > Metin Düzenleyicisi > R > tüy**.
 
@@ -32,7 +30,7 @@ Siz yazarken etkinleştirildiğinde, linting Düzenleyicisi'nde uygulanır. Soru
 
 ![Linting R kodu örnekleri](media/linting-01.png)
 
-Genellikle bir proje veya dosya gereksinimlerine bağlı olarak linting seçeneklerini değiştirin. Örneğin, bir çevrimiçi indirmelere'nden örnek kodu kullanabilirsiniz `=` yerine `<-` Pascal durum tanımlayıcıları yanı sıra. Bu gibi durumlarda varsayılan linting seçenekleri bayrak çünkü kodun sık linting uyarıları gösterir. Bu kod, böylece, ile çalışma yalnızca her örneğinin düzeltilmesi zaman harcama yerine seçenekleri devre dışı bırakabilirsiniz yapılırken.
+Genellikle bir proje veya dosya gereksinimlerine bağlı olarak linting seçeneklerini değiştirin. Örneğin, bir çevrimiçi indirmelere'nden örnek kodu kullanabilirsiniz `=` yerine `<-` Pascal durum tanımlayıcıları yanı sıra. Bu gibi durumlarda varsayılan linting seçenekleri bayrak çünkü kodun sık linting uyarıları gösterir. Bu kodu ile çalışırken, daha sonra her örneğinin düzeltilmesi zaman harcama yerine seçenekleri devre dışı bırakabilirsiniz.
 
 ## <a name="assignment-group"></a>Atama grubu
 

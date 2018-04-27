@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 91f51f91008552e602991505f28ef4f076692f52
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 58e7f6cd46293573f17c344ffba943d99b55f830
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="azure-sdk-for-python"></a>Python için Azure SDK
 
@@ -49,7 +49,7 @@ Belge üzerinde bulunabilir [python.readthedocs.org için azure sdk](https://doc
 - [Hizmet veri yolu konuları/abonelikleri](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
 - [Hizmet Yönetimi](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
-Belgeler olmadan ortak API'ler için birim testleri içinde [SDK'ın GitHub deposunu](https://github.com/Azure/azure-sdk-for-python) iyi bilgi kaynağıdır:
+Belgeler olmadan ortak API'ler için birim testleri içinde [SDK GitHub deposunu](https://github.com/Azure/azure-sdk-for-python) iyi bilgi kaynağıdır:
 
 - [Birim testleri](https://github.com/Azure/azure-storage-python/tree/master/tests)
 - [Hizmet veri yolu birim testleri](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicebus/tests)

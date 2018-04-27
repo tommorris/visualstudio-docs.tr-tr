@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d37eedca42119fbe91080aa0c62a0f60b576790
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>5. adım: Python ortamınızda paketleri yükleniyor
 
@@ -66,7 +66,7 @@ Python Geliştirici topluluğu kendi projelere dahil edebilirsiniz yararlı pake
 
   ![Matplotlib örnek çıkış](media/environments-add-matplotlib3.png)
 
-## <a name="next-steps"></a>Sonraki adımlar
+## <a name="next-step"></a>Sonraki adım
 
 > [!div class="nextstepaction"]
 > [Git ile çalışma](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)

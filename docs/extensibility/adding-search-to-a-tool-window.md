@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4b89cbaa1afa4fd961baf139eeebcff19c8d48f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f3b5aa52968be5a2efcf88d7a31505d94f97aaec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="adding-search-to-a-tool-window"></a>Bir araç penceresi arama ekleme
 Oluşturduğunuzda ya da bir araç penceresi uzantı güncelleştirme başka bir yerde görünür aynı arama işlevini Visual Studio'da ekleyebilirsiniz. Bu işlevsellik, aşağıdaki özellikleri içerir:  
@@ -78,37 +78,6 @@ Oluşturduğunuzda ya da bir araç penceresi uzantı güncelleştirme başka bir
      İçinde **TestSearchControl** sınıfında, aşağıdaki kodu ekleyin.  
   
      Bu kod bir ortak ekler <xref:System.Windows.Controls.TextBox> adlı özellik **SearchResultsTextBox** ve adlı bir ortak dize özelliği **SearchContent**. Oluşturucu, metin kutusuna SearchResultsTextBox ayarlanır ve SearchContent dizeler yeni satır ile ayrılmış kümesi için başlatılır. Metin kutusunun içeriğini dizeler kümesi de başlatılır.  
-  
-    ```csharp  
-    public partial class TestSearchControl : UserControl  
-    {  
-        public TextBox SearchResultsTextBox { get; set; }  
-        public string SearchContent { get; set; }  
-  
-        public TestSearchControl()  
-        {  
-            InitializeComponent();  
-  
-            this.SearchResultsTextBox = resultsTextBox;  
-            this.SearchContent = BuildContent();  
-  
-            this.SearchResultsTextBox.Text = this.SearchContent;  
-        }  
-  
-        private string BuildContent()  
-        {  
-            StringBuilder sb = new StringBuilder();  
-            sb.AppendLine("1 go");  
-            sb.AppendLine("2 good");  
-            sb.AppendLine("3 Go");  
-            sb.AppendLine("4 Good");  
-            sb.AppendLine("5 goodbye");  
-            sb.AppendLine("6 Goodbye");  
-  
-            return sb.ToString();  
-        }  
-    }  
-    ```  
   
      [!code-csharp[ToolWindowSearch#1](../extensibility/codesnippet/CSharp/adding-search-to-a-tool-window_1.cs)]
      [!code-vb[ToolWindowSearch#1](../extensibility/codesnippet/VisualBasic/adding-search-to-a-tool-window_1.vb)]  
@@ -312,7 +281,7 @@ Oluşturduğunuzda ya da bir araç penceresi uzantı güncelleştirme başka bir
     System.Threading.Thread.Sleep(100);  
     ```  
   
-5.  Yeni ayarları debugb için başlangıç ve çözümü yeniden sınayın.  
+5.  Yeni ayarları test çözümü yeniden oluşturma ve hata ayıklama işlemi başlatılıyor.  
   
      İlerleme çubuğu arama penceresinde (olarak, arama metin kutusuna aşağıda mavi bir çizgi) her zaman bir arama yapmak görüntülenir.  
   
@@ -353,39 +322,11 @@ Oluşturduğunuzda ya da bir araç penceresi uzantı güncelleştirme başka bir
     }  
     ```  
   
-2.  İçinde `TestSearchTask` sınıfı, matchCase satırı açıklamadan kaldırmasına `OnStartSearch` yöntemi:  
+2.  İçinde `TestSearchTask` sınıfı, aşağıdaki açıklamadan çıkarın, satır `OnStartSearch` yöntemi:  
   
-    ```csharp  
-    private IVsEnumWindowSearchOptions m_optionsEnum;  
-    public override IVsEnumWindowSearchOptions SearchOptionsEnum  
-    {  
-        get  
-        {  
-            if (m_optionsEnum == null)  
-            {  
-                List<IVsWindowSearchOption> list = new List<IVsWindowSearchOption>();  
-  
-                list.Add(this.MatchCaseOption);  
-  
-                m_optionsEnum = new WindowSearchOptionEnumerator(list) as IVsEnumWindowSearchOptions;  
-            }  
-            return m_optionsEnum;  
-        }  
-    }  
-  
-    private WindowSearchBooleanOption m_matchCaseOption;  
-    public WindowSearchBooleanOption MatchCaseOption  
-    {  
-        get  
-         {  
-            if (m_matchCaseOption == null)  
-            {  
-                m_matchCaseOption = new WindowSearchBooleanOption("Match case", "Match case", false);  
-            }  
-            return m_matchCaseOption;  
-        }  
-    }  
-    ```  
+    ```csharp
+    matchCase = m_toolWindow.MatchCaseOption.Value;
+    ```
   
 3.  Seçenek test edin:  
   

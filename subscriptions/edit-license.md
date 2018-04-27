@@ -9,20 +9,18 @@ description: Yöneticiler abonelik atamaları düzenleme nasıl öğrenin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9ea5f6bc562ce520be08728facfb6099df95ca4c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Visual Studio abonelik atamalarını düzenlemek
 
-Bir abonelik Yöneticisi olarak kuruluşunuzdaki kişiler atanan abonelikleri değişiklik olanağına sahip.  Bu makalede yapabilir ve gerekli adımları sağlar değişiklik türleri açıklanmaktadır. 
+Bir abonelik Yöneticisi olarak kuruluşunuzdaki kişiler atanan aboneliklere değişiklik yapabilirsiniz.  Bu makalede değişiklik yapabilirsiniz ve gerekli adımları sağlar türleri açıklanmaktadır. 
 
 ## <a name="making-changes-to-subscriber-information"></a>Abone bilgisi değişiklikler
 Hataları düzeltin ya da bilgileri güncelleştirmek için bir abonenin bilgileri düzenleyebilirsiniz. 
-> [!NOTE]
-> Bir abonenin e-posta adresi düzenlemek tüm mevcut avantajları sıfırlanması neden olacak.
 
 Bir abonenin düzenlemek için fare üzerine geldiğinizde abonenin e-posta adresi yanında görüntülenen üç noktaya (...) seçin. Bir açılır listesinde görünür.  Seçin **Düzenle** abonenin ayrıntılarını değiştirmek için. Düzen penceresini açmak üzere Izgara abonenin satırda çift tıklayabilirsiniz.
 

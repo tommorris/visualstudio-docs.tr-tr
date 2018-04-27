@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d5d0224c9f6d8d76f73c79feeaa363a6e0a954a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>3. adım: etkileşimli REPL penceresini kullanma
 
@@ -89,7 +89,7 @@ Visual Studio *etkileşimli pencere* Python normal düzenleme-derleme-hata ayık
 
 1. Ne yalnızca yaptığınızı etkileşimli penceresinin hızlı REPL ortamı küçük bir kod parçasını ayrıntılarını çıkışı çalışmaya olduğu sonra uygun şekilde bu kodu projenizin kaynak dosyasına eklendi. Şimdi çalıştırdığınızda kodu yeniden Ctrl + F5'e (veya **hata ayıklama > hata ayıklama olmadan Başlat**), istediğinizi tam sonuçları görüntüleyin.
 
-## <a name="next-steps"></a>Sonraki adımlar
+## <a name="next-step"></a>Sonraki adım
 
 > [!div class="nextstepaction"]
 > [Hata ayıklayıcı çalışan kod](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f7425755f72929cbf2574d6420d9c2ec4c62dc20
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio'da Python projeleri
 
@@ -41,9 +41,9 @@ Visual Studio Python proje şablonları varolan bir klasör ağacında bir proje
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Dosya ekleme, bir başlatma dosyası atama ve ortamları ayarlama
 
-Uygulamanızı geliştirirken, genellikle farklı türdeki yeni dosyaları projeye eklemeniz gerekir. Bu tür dosyaları ekleyerek yapılır projeye sağ tıklayıp seçerek **Ekle > varolan öğeyi...** . bir dosya eklemek, Gözat ile veya **Ekle > Yeni öğe...** , öğe şablonları, çeşitli ile iletişim kurma getirir. Boş python dosyaları, python sınıfı, birim testi ve web uygulamaları için ilgili çeşitli dosya şablonları içerir. Hangi sürümü Visual Studio'nun kullanılabilir olduğunu öğrenmek için bir test projesi bu seçeneklerle keşfedebilirsiniz.
+Uygulamanızı geliştirirken, genellikle farklı türdeki yeni dosyaları projeye eklemeniz gerekir. Bu tür dosyaları ekleyerek yapılır projeye sağ tıklayıp seçerek **Ekle** > **varolan öğeyi** bir dosya eklemek, Gözat ile veya **Ekle**  >  **Yeni öğe**, öğe şablonları, çeşitli ile iletişim kurma getirir. Açıklandığı gibi [öğe şablonlarını](python-item-templates.md) başvuru, seçenekleri boş python dosyaları, python sınıfı, birim testi ve web uygulamaları için ilgili çeşitli dosyaları içerir. Hangi sürümü Visual Studio'nun kullanılabilir olduğunu öğrenmek için bir test projesi bu seçeneklerle keşfedebilirsiniz.
 
-Çözüm Gezgini'nde kalın gösterilen bir atanan başlangıç dosyasını her Python projenin vardır. Başlangıç dosyası hata ayıklama başlattığınızda çalıştırılan dosyasıdır (F5 veya **hata ayıklama > hata ayıklamayı Başlat**) veya etkileşimli pencerede projenizi çalıştırdığınızda (Shift + Alt + F5 veya **hata ayıklama > Python yürütme projesinde Etkileşimli**). Değiştirmek için yeni dosyasını sağ tıklatın ve seçin **başlangıç dosyası olarak ayarlamak**.
+Çözüm Gezgini'nde kalın gösterilen bir atanan başlangıç dosyasını her Python projenin vardır. Başlangıç dosyası hata ayıklama başlattığınızda çalıştırılan dosyasıdır (F5 veya **hata ayıklama** > **hata ayıklamayı Başlat**) veya etkileşimli pencerede projenizi çalıştırdığınızda (Shift + Alt + F5 veya  **Hata ayıklama** > **Python etkileşimli proje yürütülemiyor**). Değiştirmek için yeni dosyasını sağ tıklatın ve seçin **başlangıç dosyası olarak ayarlamak**.
 
 > [!Tip]
 > Seçilen başlangıç dosyası bir projeden kaldırmak ve yeni bir tane seçmezseniz, Visual Studio Proje çalıştırmayı denediğinizde ne Python aşağıdaki başlamak dosya bilemezsiniz. Bu durumda, Visual Studio 2017 15.6 ve sonraki sürümleri bir hata gösterir; önceki sürümlerinde, bir çıktı penceresi ya da çalışan Python yorumlayıcı ile açın. veya çıktı penceresini görünür ancak hemen kayboluyor bakın. Bu davranışların karşılaşırsanız, atanan başlangıç dosya olup olmadığını denetleyin.
@@ -58,7 +58,7 @@ Yeni bir proje her zaman varsayılan genel Python ortamı ile ilişkilidir. Proj
 
 ## <a name="project-templates"></a>Proje şablonları
 
-Visual Studio bir Python proje, sıfırdan veya var olan koddan ayarlamak için çeşitli yöntemler sağlar. Bir şablonu kullanmak için **Dosya > Yeni > Proje...**  menü komutu ya da çözüm Çözüm Gezgini seçip sağ **Ekle > Yeni proje...** , her ikisi de Getir **yeni proje** aşağıdaki iletişim. Python özel şablonları görmek için arama "Python" ya da seçin **yüklü > Python** düğümü:
+Visual Studio bir Python proje, sıfırdan veya var olan koddan ayarlamak için çeşitli yöntemler sağlar. Bir şablonu kullanmak için **dosya** > **yeni** > **proje** menü komutunu veya sağ çözüm Çözüm Gezgini'nde ve seçin **Ekle** > **yeni proje**, her ikisi de Getir **yeni proje** aşağıdaki iletişim. Python özel şablonları görmek için arama "Python" ya da seçin **yüklü** > **Python** düğümü:
 
 ![Python şablonlarla yeni proje iletişim kutusu](media/projects-new-project-dialog.png)
 
@@ -69,7 +69,7 @@ Aşağıdaki tabloda, Visual Studio (tüm şablonları tüm önceki sürümlerin
 | [Varolan Python koddan](#creating-a-project-from-existing-files) | Visual Studio projesi klasörü yapısı içinde varolan Python kodu oluşturur.  |
 | Python uygulama | Tek ve boş kaynak dosyası içeren yeni bir Python uygulaması için bir temel Proje yapısı. Varsayılan olarak, projeyi tarafından değiştirebileceğiniz varsayılan genel ortamının konsol yorumlayıcı çalışır [farklı bir ortam atama](selecting-a-python-environment-for-a-project.md). |
 | [Azure bulut hizmeti](python-azure-cloud-service-project-template.md) | Python içinde yazılmış bir Azure bulut hizmeti için bir proje. |
-| [Web projeleri](python-web-application-project-templates.md) | Proje Bottle, Django, Flask ve Flask/Jade dahil olmak üzere çeşitli çerçevesinde bağlı web sunucuları için. |
+| [Web projeleri](python-web-application-project-templates.md) | Proje Bottle, Django ve Flask dahil olmak üzere çeşitli çerçevesinde tabanlı web uygulamaları için. |
 | IronPython uygulama | Benzer şekilde kullanır ancak Python uygulama şablonu tarafından IronPython varsayılan etkinleştirme .NET birlikte çalışabilirlik ve karma mod .NET dilleri ile hata ayıklama. |
 | IronPython WPF uygulaması | Uygulamanın kullanıcı arabirimi için Windows Presentation Foundation XAML dosyalarla IronPython kullanarak proje yapısı. Visual Studio XAML kullanıcı Arabirimi Tasarımcısı sağlar, arka plan kodu Python içinde yazılmış ve bir konsol görüntülemeden uygulamayı çalıştırır. |
 | IronPython Silverlight Web sayfası | Silverlight kullanarak bir tarayıcıda çalışan IronPython projesi. Uygulamanın Python kodu web sayfasındaki komut dosyası olarak dahil edilir. Python kodunuzu DOM ile etkileşim kurabilen Silverlight içinde çalışan IronPython başlatır bazı JavaScript kodları aşağı Demirbaş komut dosyası etiketinin çeker |
@@ -80,7 +80,7 @@ Aşağıdaki tabloda, Visual Studio (tüm şablonları tüm önceki sürümlerin
 > [!Note]
 > Python yorumlanan dil olduğundan, Visual Studio'da Python projeleri tek başına yürütülebilir dosya gibi diğer derlenmiş dili projeler (C#, örneğin) üretmediği. Daha fazla bilgi için bkz: [sorular ve yanıtlar](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
 
-< a name = "Oluştur-proje--varolan-dosyaları"</a>
+<a name="create-project-from-existing-files"></a>
 
 ### <a name="creating-a-project-from-existing-files"></a>Var olan dosyalarından proje oluşturma
 

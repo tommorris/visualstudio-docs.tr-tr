@@ -9,18 +9,18 @@ description: Yöneticiler aşırı talep edilen abonelikleri nasıl çözebilirs
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 80420dd72416d5de1a96734ae532cfbad93f68d9
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9f80c335cbbdc56f4d26a73a9565ecb2a102aa6c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="handling-over-claimed-subscriptions"></a>İşleme 'aşırı talep edilen' abonelikleri
 
 Aboneler, daha fazla olması neden eklendikten sonra siparişleri bazen değiştirilir, şirketiniz tarafından sahip olunan lisansı sayısından abonelikleri atanmış. Bu gerçekleştiğinde, aboneler sekmesinde bir uyarı gösterir ve daha fazla bilgi sağlar. 
 
 > [!NOTE] 
-> Açık Lisans programlarında overclaimed senaryoları izin verilmiyor.
+> Açık Lisans programlarında overclaimed senaryoları izin verilmiyor.  Ayrıca, diğer programları bu bilgileri Portalı'nda farklı görüntülenebilir. 
 
  ![Aşırı talep edilen abonelikleri duyuru](_img\over-claimed\over-claimed-alert.png)
 

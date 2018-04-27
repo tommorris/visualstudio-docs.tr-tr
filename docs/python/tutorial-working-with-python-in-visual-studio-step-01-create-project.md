@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f6db6e33b100955c1819b037099f876b1da8014
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Visual Studio'da Python ile çalışma
 
@@ -31,9 +31,7 @@ Visual Studio Python için birinci sınıf dil desteği sağlar. Bu öğretici, 
 - [5. adım: paketleri yükleme ve Python ortamları yönetme](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [6. adım: Git ile çalışma](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-## <a name="prerequisites"></a>Önkoşullar
-
-- Visual Studio 2017 yüklü Python iş yükü ile. Bkz: [adım 0](tutorial-working-with-python-in-visual-studio-step-00-installation.md) yönergeler için.
+[!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
 ## <a name="step-1-create-a-new-python-project"></a>1. adım: yeni bir Python projesi oluşturma
 
@@ -69,7 +67,7 @@ Bu öğreticide tek ve boş kod dosyasını içeren basit bir proje ile başlar.
 
     Bir düğüm veya uygulanabilir komutların menüsüne erişmek için Çözüm Gezgininde öğenin sağ tıklayın. Örneğin, **yeniden adlandırma** komutu bir düğüm veya proje ve çözüm dahil olmak üzere öğe adını değiştirmenize olanak verir.
 
-## <a name="next-steps"></a>Sonraki adımlar
+## <a name="next-step"></a>Sonraki adım
 
 > [!div class="nextstepaction"]
 > [Yazma ve kodu çalıştırma](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)

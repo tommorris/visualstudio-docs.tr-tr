@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4e8d28bb96fa17a82d758f5708fd592128296e7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e28d306ede93cc4552e085e07e5ac5e977158386
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Azure App Service’e yayımlama
 
@@ -78,7 +78,7 @@ Azure App Service için Visual Studio 2017 kopyalarından sunucuya projenizdeki 
 
 1. Visual Studio'da **Çözüm Gezgini**, projeye sağ tıklayın ve seçin **Ekle > Yeni öğe...* . Görüntülenen iletişim kutusunda, "Azure web.config (Fast CGI)" şablonu ve select Tamam seçme. Bu oluşturur bir `web.config` proje kök dosyasında.
 
-1. Değiştirme `PythonHandler` girişi `web.config` böylece sunucuda Python yükleme yolunu eşleşir. Örneğin, Python 3.6.1 x64 giriş aşağıdaki gibi görünmelidir:
+1. Değiştirme `PythonHandler` girişi `web.config` böylece sunucuda Python yükleme yolu eşleşen (bkz [IIS yapılandırma başvurusu](https://www.iis.net/configreference) (IIS.NET) tam Ayrıntılar için). Örneğin, Python 3.6.1 x64 giriş aşağıdaki gibi görünmelidir:
 
     ```xml
     <system.webServer>
@@ -106,7 +106,7 @@ Azure App Service için Visual Studio 2017 kopyalarından sunucuya projenizdeki 
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django**: iki değişiklik için gereken `web.config` Django uygulamaları için. İlk olarak, değişiklik `WSGI_HANDLER` değeri `django.core.wsgi.get_wsgi_application()` (nesne `wsgi.py` dosyası):
+    - **Django**: iki değişiklik için gereken `web.config` Django projeleri için. İlk olarak, değişiklik `WSGI_HANDLER` değeri `django.core.wsgi.get_wsgi_application()` (nesne `wsgi.py` dosyası):
 
         ```xml
         <!-- Django apps only -->
@@ -119,7 +119,7 @@ Azure App Service için Visual Studio 2017 kopyalarından sunucuya projenizdeki 
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **Yalnızca Django uygulamaları**: projenizin adına eşleşen klasöründe açın `settings.py` ve site URL'si etki alanınıza ekleyin `ALLOWED_HOSTS` aşağıda gösterildiği gibi 'vspython test 02.azurewebsites .net', URL'SİYLE Elbette değiştirin:
+1. **Yalnızca Django uygulamaları**: içinde Django projenin `settings.py` dosya, site URL'si etki alanınıza ekleme `ALLOWED_HOSTS` aşağıda gösterildiği gibi 'vspython test 02.azurewebsites .net', URL'SİYLE Elbette değiştirin:
 
     ```python
     # Change the URL to your specific site
@@ -128,9 +128,13 @@ Azure App Service için Visual Studio 2017 kopyalarından sunucuya projenizdeki 
 
     Hata dizi sonuçlarında URL'nizi eklemek için hata "DisallowedHost / geçersiz HTTP_HOST başlığı: '\<site URL'si\>'. Eklemeniz gerekebilir '\<site URL'si\>' ALLOWED_HOSTS için. "
 
+    Dizi boşsa, Django 'localhost' otomatik olarak sağlar, ancak üretim URL'nizi ekleyerek bu yetenekleri kaldırır unutmayın. Bu nedenle, ayrı geliştirme ve üretim bakımını yapmak isteyebileceğiniz kopyalar için `settings.py`, ya da çalışma süresi değerleri denetlemek için ortam değişkenlerini kullanın.
+
 1. İçinde **Çözüm Gezgini**, projenizin aynı adlı klasörü genişletin, sağ `static` klasöründe seçin **Ekle > Yeni öğe...** , "Azure statik web.config dosyaları" şablonunu seçin ve Seç **Tamam**. Bu eylem başka oluşturur `web.config` içinde `static` bu klasör için işleme Python devre dışı bırakır klasör. Bu yapılandırma, varsayılan web sunucusu için Python uygulama kullanmak yerine statik dosyaları için istekleri gönderir.
 
 1. Visual Studio, projenizin sonra kaydedin **Çözüm Gezgini**, projeye sağ tıklayın ve seçin **Yayımla**.
+
+    ![Komut bir projenin bağlam menüsünde Yayımla](media/template-web-publish-command.png)
 
 1. İçinde **Yayımla** görünen sekmesini yayımlama hedefi seçin:
 
@@ -166,8 +170,8 @@ Azure App Service için Visual Studio 2017 kopyalarından sunucuya projenizdeki 
 
     e. Uygulama hizmeti yeni paketler yüklendikten sonra yeniden deneyin. Yeniden başlatma değiştirilirken gerekli değil `web.config`, uygulama hizmeti otomatik yaptığı gibi her yeniden `web.config` değişiklikler.
 
-    > [!Tip] 
-    > Uygulamanızın herhangi bir değişiklik yaparsanız `requirements.txt` dosya, artık bu dosyada listelenen paketleri yüklemek için yeniden Kudu konsol kullandığınızdan emin olun. 
+    > [!Tip]
+    > Uygulamanızın herhangi bir değişiklik yaparsanız `requirements.txt` dosya, artık bu dosyada listelenen paketleri yüklemek için yeniden Kudu konsol kullandığınızdan emin olun.
 
 1. Sunucu ortamı tam olarak yapılandırdıktan sonra tarayıcıda sayfayı yenileyin ve web uygulaması görünmelidir.
 
@@ -175,7 +179,7 @@ Azure App Service için Visual Studio 2017 kopyalarından sunucuya projenizdeki 
 
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>Uygulama hizmeti - Visual Studio 2015 için yayımlama
 
-> [!Note] 
+> [!Note]
 > Bu işlemin kısa bir video bulunabilir [Visual Studio Python eğitmen: bir Web sitesi oluşturmanın](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3m10s).
 
 1. İçinde **Çözüm Gezgini**, proje seçme sağ **Yayımla**.
@@ -195,7 +199,7 @@ Azure App Service için Visual Studio 2017 kopyalarından sunucuya projenizdeki 
 
 1. Seçin **sonraki >** ek ayarlarını gözden geçirmek için gerektiği gibi. Planlıyorsanız, [Python kodunuzu Azure üzerinde uzaktan hata ayıklama](debugging-remote-python-code-on-azure.md), ayarlamalısınız **yapılandırma** için **hata ayıklama**
 
-1. Seçin **yayımlama**. Uygulamanızın Azure'a dağıtıldığında, varsayılan tarayıcınız, bu sitede açılır. 
+1. Seçin **yayımlama**. Uygulamanızın Azure'a dağıtıldığında, varsayılan tarayıcınız, bu sitede açılır.
 
 Bu işlemin bir parçası olarak, Visual Studio ayrıca aşağıdaki adımları gerçekleştirir:
 

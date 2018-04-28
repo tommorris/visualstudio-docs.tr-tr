@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9669596eb49330235eca2c35dffe0f2cb1afb9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c1879b67558cb57fba7bc462e4c7df03fb5efc8
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="troubleshoot-broken-references"></a>Bozuk başvurularda sorun giderme
 
@@ -42,11 +42,11 @@ Bu sorunları çözümler aşağıda verilmiştir.
 
 ## <a name="reference-path-is-incorrect"></a>Başvuru yolu geçersiz
 
-Farklı bilgisayarlarda Paylaşılan projeleri, her bilgisayarda farklı bir dizinde bir bileşen bulunduğunda bazı başvuruları bulunmayabilir. Başvurular (örneğin, MyComponent) bileşeni dosyasının adı altında depolanır. Bir başvuru projeye eklendiğinde, bileşen dosya klasör konumunu (örneğin, C:\MyComponents\\) eklenir **ReferencePath** proje özelliği.
+Farklı bilgisayarlarda Paylaşılan projeleri, her bilgisayarda farklı bir dizinde bir bileşen bulunduğunda bazı başvuruları bulunmayabilir. Başvuruları bileşen dosya adı altında depolanır (örneğin, *MyComponent*). Bir başvuru projeye eklendiğinde, bileşen dosya klasör konumunu (örneğin, *C:\MyComponents*) eklenir **ReferencePath** proje özelliği.
 
-Proje açıldığında, başvuru yolundaki dizinlerde bakarak bu başvurulan bileşen dosyaları bulmaya çalışır. Proje D:\MyComponents gibi farklı bir dizinde bileşen depolayan bir bilgisayarda açık olduğunda\\, başvurusu bulunamıyor ve bir hata görev listesinde görünür.
+Proje açıldığında, başvuru yolundaki dizinlerde bakarak bu başvurulan bileşen dosyaları bulmaya çalışır. Proje bileşeni gibi farklı bir dizinde depolayan bir bilgisayarda açılırsa *D:\MyComponents*, başvurusu bulunamıyor ve bir hata görünür **görev listesi**.
 
-Bu sorunu gidermek için kırık referans silin ve ardından Başvuru Ekle iletişim kutusunu kullanarak değiştirin. Başka bir çözüm **başvuru yolu** projenin özellik sayfalarında madde ve klasörler listesinde doğru konuma işaret edecek şekilde değiştirin. **Başvuru yolu** özelliği, her bilgisayardaki her kullanıcı için kalıcıdır. Bu nedenle, başvuru yolun değiştirilmesi projenin diğer kullanıcıların etkilemez.
+Bu sorunu gidermek için kırık referans silin ve sonra onu kullanarak değiştirmek **Başvuru Ekle** iletişim kutusu. Başka bir çözüm **başvuru yolu** projenin özellik sayfalarında madde ve klasörler listesinde doğru konuma işaret edecek şekilde değiştirin. **Başvuru yolu** özelliği, her bilgisayardaki her kullanıcı için kalıcıdır. Bu nedenle, başvuru yolun değiştirilmesi projenin diğer kullanıcıların etkilemez.
 
 > [!TIP]
 > Proje Proje başvuruları bu sorunları gerekmez. Şunları yapabilirsiniz, bu nedenle, dosya referansları yerine kullanın.

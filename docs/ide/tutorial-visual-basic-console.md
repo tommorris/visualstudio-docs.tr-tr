@@ -13,15 +13,15 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2348872baee6bfd073611b9e11d42295babedc37
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-visual-basic-in-visual-studio"></a>Visual Basic Visual Studio ile çalışmaya başlama
+# <a name="get-started-with-visual-basic-in-visual-studio"></a>Visual Basic Visual Studio ile çalışmaya başlama
 
-Bu öğreticide için Visual Basic (VB), oluşturmak ve birkaç farklı konsol uygulamaları çalıştırmak için Visual Studio'yu kullanın ve bazı Visual Studio özelliklerini keşfedin [tümleşik geliştirme ortamı (IDE)](visual-studio-ide.md) bunu yaparken.
+Bu öğreticide için Visual Basic (VB), oluşturmak ve birkaç farklı konsol uygulamaları çalıştırmak için Visual Studio'yu kullanın ve bazı özellikleri keşfedin [Visual Studio tümleşik geliştirme ortamı (IDE)](visual-studio-ide.md) bunu yaparken.
 
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa.
 
@@ -55,7 +55,7 @@ Geliştirmeye başlamak hazır mısınız? Gidelim!
 
 1. Visual Studio 2017'ni açın.
 
-2. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .
+2. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje**.
 
 3. İçinde **yeni proje** iletişim kutusunun sol bölmesinde **Visual Basic**ve ardından **.NET Core**. Orta bölmede seçin **konsol uygulaması (.NET Core)**. Dosya adı *HelloWorld*.  
 
@@ -74,8 +74,7 @@ Görmüyorsanız, **konsol uygulaması (.NET Core)** proje şablonu, alabilirsin
    ![Visual Studio yükleyicisi .NET core platformlar arası geliştirme iş yükü](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Seçenek 2: araçlar menü çubuğu'nu kullanın
-
-1. İşyeri dışında iptal **yeni proje** iletişim kutusuna ve üst menü çubuğundan seçin **Araçları** > **alma araçları ve özelliklerinin...** .
+1. İşyeri dışında iptal **yeni proje** iletişim kutusuna ve üst menü çubuğundan seçin **Araçları** > **alma araçları ve özelliklerinin**.
 
 2. Visual Studio yükleyicisi başlatır. Seçin **.NET Core platformlar arası geliştirme** iş yükü ve ardından **Değiştir**.   
 
@@ -107,8 +106,7 @@ Görmüyorsanız, **konsol uygulaması (.NET Core)** proje şablonu, alabilirsin
 5. Konsol penceresini kapatmak için herhangi bir tuşa basın.
 
 ## <a name="create-a-calculate-this-application"></a>"Bu Hesapla" bir uygulama oluşturma
-
-1. Visual Studio 2017'ni açın ve ardından üst menü çubuğundan **dosya** > **yeni** > **proje...** .
+1. Visual Studio 2017'ni açın ve ardından üst menü çubuğundan **dosya** > **yeni** > **proje**.
 
 2. İçinde **yeni proje** iletişim kutusunun sol bölmesinde **Visual Basic**ve ardından **.NET Core**. Orta bölmede seçin **konsol uygulaması (.NET Core)**. Dosya adı *CalculateThis*.  
 

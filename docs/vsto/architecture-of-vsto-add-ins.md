@@ -2,8 +2,8 @@
 title: VSTO eklentileri mimarisi | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 94c8a9fa83cd4a37918c22ae0e38ab23c3ca94d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 88757888662ec4e50411864274a4a34b3a84a3a7
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO Eklentileri Mimarisi
   Visual Studio'da Office geliştirici araçları kullanılarak oluşturulan VSTO eklentileri kararlılık ve güvenlik sağlayan mimari özelliklere sahiptir ve bunları Microsoft Office ile yakından çalışmaya etkinleştirin. Bu konuda aşağıdaki VSTO eklentileri yönleri açıklanmaktadır:  

@@ -1,5 +1,5 @@
 ---
-title: '5. Adım: Etiket Başvuruları Ekleme'
+title: '5. adım: etiket başvuruları ekleme'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
@@ -11,28 +11,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d976817a60f0ca992f90aba5a060c7bd9ced998b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0b5e7fb38af9ac2bd00550dfa5ef5b29a967310d
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="step-5-add-label-references"></a>5. Adım: Etiket Başvuruları Ekleme
-Programın, oyuncunun seçtiği etiket kontrollerini izlemesi gerekir. Şu anda program oyuncunun seçtiği tüm etiketleri göstermektedir. Ancak bunun değişmesini sağlayacağız. İlk etiket seçildikten sonra program etiketin simgesini göstermelidir. İkinci etiket seçildikten sonra iki simgeyi de kısa bir süre göstermeli ve ardından iki simgeyi de tekrar gizlemelidir. Programınızı artık hangi etiket denetimi ilk seçilir ve kullanarak, ikinci seçilir izlemek *başvuru değişkenleri*.  
+# <a name="step-5-add-label-references"></a>5. adım: etiket başvuruları ekleme
+Program player seçer hangi etiket denetimleri izlemesi gerekir. Şu anda program oyuncunun seçtiği tüm etiketleri göstermektedir. Ancak bunun değişmesini sağlayacağız. İlk etiket seçildikten sonra program etiketin simgesini göstermelidir. İkinci etiket seçildikten sonra iki simgeyi de kısa bir süre göstermeli ve ardından iki simgeyi de tekrar gizlemelidir. Programınızı artık hangi etiket denetimi ilk seçilir ve kullanarak, ikinci seçilir izlemek *başvuru değişkenleri*.  
 
-### <a name="to-add-label-references"></a>Etiket başvuruları eklemek için  
+## <a name="to-add-label-references"></a>Etiket başvuruları eklemek için  
 
 1.  Aşağıdaki kodu kullanarak formunuza etiket başvuruları ekleyin.  
 
      [!code-vb[VbExpressTutorial4Step5#5](../ide/codesnippet/VisualBasic/step-5-add-label-references_1.vb)]
      [!code-csharp[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]  
-
-     Bu başvuru değişkenleri önceki nesneleri eklemek için kullandığınız deyimleri benzer (gibi `Timer` nesneleri `List` nesneleri ve `Random` nesneler) formunuza. Ancak, bu deyimleri olduğundan formda görünmesi iki ek etiket denetimleri neden hiçbir `new` iki deyimleri birini kullanılan anahtar sözcük. Olmadan `new` anahtar sözcüğü, hiçbir nesnesi oluşturulur. İşte bu nedenle `firstClicked` ve `secondClicked` başvuru değişkenler adlandırılır: Bunlar yalnızca izlenmesi (ya da bakın) `Label` nesneleri.  
-
+  
+     Bu başvuru değişkenleri önceki nesneleri eklemek için kullandığınız deyimleri benzer (gibi <xref:System.Windows.Forms.Timer> nesneleri <xref:System.Collections.Generic.List%601> nesneleri ve <xref:System.Random> nesneler) formunuza. Ancak, bu deyimleri olduğundan formda görünmesi iki ek etiket denetimleri neden hiçbir `new` iki deyimleri birini kullanılan anahtar sözcük. Olmadan `new` anahtar sözcüğü, hiçbir nesnesi oluşturulur. İşte bu nedenle `firstClicked` ve `secondClicked` başvuru değişkenler adlandırılır: Bunlar yalnızca izlenmesi (ya da bakın) etiket nesneleri.  
+  
      Bir değişken bir nesne izleyen değil, özel bir ayrılmış değerine ayarlanır: `null` Visual C# ve `Nothing` Visual Basic'te. Bu nedenle, program başladığında, her ikisi de `firstClicked` ve `secondClicked` ayarlanır `null` veya `Nothing`, değişkenleri herhangi bir şey izleyen olduğunu olmayan anlamına gelir.  
-
-2.  Yeni kullanmak için Click olay işleyicisi değiştirme `firstClicked` başvuru değişkeni. İşlemdeki son deyim kaldırmak `label_Click()` olay işleyicisi yöntemi (`clickedLabel.ForeColor = Color.Black;`) ve bunların yerine `if` izleyen deyimi. (Açıklama ve tüm eklediğinizden emin olun `if` deyimi.)  
-
+  
+2.  Değiştirme, <xref:System.Windows.Forms.Control.Click> yeni kullanmak için olay işleyicisini `firstClicked` başvuru değişkeni. İşlemdeki son deyim kaldırmak `label_Click()` olay işleyicisi yöntemi (`clickedLabel.ForeColor = Color.Black;`) ve bunların yerine `if` izleyen deyimi. (Açıklama ve tüm eklediğinizden emin olun `if` deyimi.)  
+  
      [!code-vb[VbExpressTutorial4Step5#6](../ide/codesnippet/VisualBasic/step-5-add-label-references_2.vb)]
      [!code-csharp[VbExpressTutorial4Step5#6](../ide/codesnippet/CSharp/step-5-add-label-references_2.cs)]  
 
@@ -41,12 +41,12 @@ Programın, oyuncunun seçtiği etiket kontrollerini izlemesi gerekir. Şu anda 
 4.  Bir sonraki etiket denetimini seçin ve hiçbir olay gerçekleşmediğine dikkat edin. Program zaten player seçtiyseniz, bunu ilk etiketi izleyen olan `firstClicked` eşit değil `null` Visual C# veya `Nothing` Visual Basic'te. Olduğunda, `if` deyimi denetimleri `firstClicked` eşit olup olmadığını belirlemek için `null` veya `Nothing`, öyle olmadığı ve ifadeler yürütmez bulduğu `if` deyimi. Bu nedenle, aşağıdaki resimde gösterildiği gibi, yalnızca seçilen ilk simgenin rengi siyah olur ve diğer simgeler görünmez.  
 
      ![Bir simge gösteren eşleme oyunu](../ide/media/express_tut4step5.png "Express_Tut4Step5")  
-Tek bir simgeyi gösteren eşleştirme oyunu  
-
+**Eşleme oyunu** gösteren bir simge  
+  
      Bu durum ekleyerek öğreticinin sonraki adımda düzeltme bir **Zamanlayıcı** denetim.  
 
-### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
-
+## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
+  
 -   Öğretici bir sonraki adıma dönmek için bkz: [6. adım: Zamanlayıcı ekleme](../ide/step-6-add-a-timer.md).  
-
--   Eğitmen önceki adıma dönmek için bkz: [4. adım: her etikete bir tıklatın olay işleyicisi ekleyin](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+  
+-   Eğitmen önceki adıma dönmek için bkz: [4. adım: her etikete Click olay işleyicisi ekleme](../ide/step-4-add-a-click-event-handler-to-each-label.md).

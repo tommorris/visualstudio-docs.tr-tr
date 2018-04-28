@@ -1,5 +1,5 @@
 ---
-title: 'Öğretici 3: eşleşen bir oyun oluşturma'
+title: 'Öğretici 3: eşleşen bir oluşturma oyun'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
@@ -11,16 +11,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd560c6a3675617741f35f40d1fe23a70b482349
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f1517f66882ab793efad194c7cf0a76076c4993
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="tutorial-3-create-a-matching-game"></a>Öğretici 3: eşleşen bir oyun oluşturma
+# <a name="tutorial-3-create-a-matching-game"></a>Öğretici 3: eşleşen bir oluşturma oyun
 Bu öğreticide, oyuncunun gizli simge çiftlerini eşleştirmesi gereken bir eşleştirme oyunu oluşturuyorsunuz. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:  
 
--   Deposunda simgeler gibi nesneleri bir `List` nesnesi.  
+-   Deposunda simgeler gibi nesneleri bir <xref:System.Collections.Generic.List%601> nesnesi.  
 
 -   Kullanım bir `foreach` döngü Visual C# veya `For Each` listesini öğelerinde yinelemek için Visual Basic'te döngü.  
 
@@ -35,6 +35,8 @@ Bu öğreticide, oyuncunun gizli simge çiftlerini eşleştirmesi gereken bir e�
  ![Bu öğreticide oluşturduğunuz oyun](../ide/media/express_finishedgame.png "Express_FinishedGame")  
 Bu öğreticide oluşturduğunuz oyun  
 
+## <a name="tutorial-links"></a>Eğitmen bağlantılar
+
  Tamamlanmış bir örnek sürümünü indirmek için bkz: [tam eşleşen oyun öğretici örnek](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
 
 > [!NOTE]
@@ -42,16 +44,16 @@ Bu öğreticide oluşturduğunuz oyun
 
  Bir yerde tıkanıp kalırsanız veya programlamayla ilgili sorularınız olursa, MSDN forumlarından birinde sorunuzu göndermeyi deneyin. Bkz: [Visual Basic Forumu](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) ve [Visual C# Forumu](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral). Ayrıca, yararlanabileceğiniz harika ve ücretsiz video öğrenme kaynakları vardır. Visual Basic'te programlama hakkında daha fazla bilgi için bkz: [Visual Basic temelleri: yeni başlayanlar için geliştirme](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Visual C# programlama hakkında daha fazla bilgi için bkz: [C# temelleri: yeni başlayanlar için geliştirme](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).  
 
-## <a name="related-topics"></a>İlgili Konular  
+## <a name="related-topics"></a>İlgili konular  
 
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[1. Adım: Proje Oluşturma ve Formunuza Tablo Ekleme](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Proje oluşturma ve ekleme başlamak bir `TableLayoutPanel` denetimleri tutmak üzere Denetim hizalı düzgün.|  
-|[2. Adım: Rasgele Nesne ve Simge Listesi Ekleme](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Ekleme bir `Random` nesne ve `List` simgeleri listesini oluşturmak için nesne.|  
-|[3. Adım: Her Etikete Rasgele Simge Atama](../ide/step-3-assign-a-random-icon-to-each-label.md)|Simgeler rastgele çok Ata `Label` denetimleri her oyun farklı olmasını sağlayın.|  
-|[4. Adım: Her Etikete Click Olay İşleyicisi Ekleme](../ide/step-4-add-a-click-event-handler-to-each-label.md)|Tıklanan etiketin rengini değiştiren bir Click olayı işleyicisi ekleyin.|  
-|[5. Adım: Etiket Başvuruları Ekleme](../ide/step-5-add-label-references.md)|Hangi etiketlere tıklandığını takip etmek için başvuru değişkenleri ekleyin.|  
-|[6. Adım: Zamanlayıcı Ekleme](../ide/step-6-add-a-timer.md)|Oyunda geçen süreyi takip etmek için forma bir zamanlayıcı ekleyin.|  
-|[7. Adım: Çiftleri Görünür Kılma](../ide/step-7-keep-pairs-visible.md)|Eşleşen bir çift seçilirse, simge çiftlerini görünür durumda tutun.|  
-|[8. Adım: Oyuncunun Kazandığını Doğrulamak için Yöntem Ekleme](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Ekleme bir `CheckForWinner()` oyuncunun kazandığını doğrulamak için yöntem.|  
-|[9. Adım: Diğer Özellikleri Deneme](../ide/step-9-try-other-features.md)|Simgeleri ve renkleri değiştirme, kılavuz ekleme ve ses ekleme gibi diğer özellikleri deneyin. Tahtayı büyütmeyi ve zamanlayıcıyı ayarlamayı deneyin.|
+|[1. adım: Proje oluşturma ve formunuza tablo ekleme](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Proje oluşturma ve ekleme başlamak bir `TableLayoutPanel` denetimleri tutmak üzere Denetim hizalı düzgün.|  
+|[2. adım: rasgele nesne ve simge listesi ekleme](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Ekleme bir `Random` nesne ve `List` simgeleri listesini oluşturmak için nesne.|  
+|[3. adım: her etikete rasgele simge atama](../ide/step-3-assign-a-random-icon-to-each-label.md)|Simgeler rastgele çok Ata `Label` denetimleri her oyun farklı olmasını sağlayın.|  
+|[4. adım: her etikete click olay işleyicisi ekleme](../ide/step-4-add-a-click-event-handler-to-each-label.md)|Ekleme bir `Click` tıklandığında etiketi rengini değiştirir olay işleyicisi.|  
+|[5. adım: etiket başvuruları ekleme](../ide/step-5-add-label-references.md)|Hangi etiketlere tıklandığını takip etmek için başvuru değişkenleri ekleyin.|  
+|[6. adım: Zamanlayıcı ekleme](../ide/step-6-add-a-timer.md)|Oyunda geçen süreyi takip etmek için forma bir zamanlayıcı ekleyin.|  
+|[7. adım: çiftleri görünür kılma](../ide/step-7-keep-pairs-visible.md)|Eşleşen bir çift seçilirse, simge çiftlerini görünür durumda tutun.|  
+|[8. adım: oyuncunun kazandığını doğrulamak için yöntem ekleme](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Ekleme bir `CheckForWinner()` oyuncunun kazandığını doğrulamak için yöntem.|  
+|[9. adım: diğer özellikleri deneme](../ide/step-9-try-other-features.md)|Simgeleri ve renkleri değiştirme, kılavuz ekleme ve ses ekleme gibi diğer özellikleri deneyin. Tahtayı büyütmeyi ve zamanlayıcıyı ayarlamayı deneyin.|

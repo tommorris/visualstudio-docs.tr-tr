@@ -2,8 +2,8 @@
 title: Office çözümleri oluşturma | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,11 +29,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b01a00cec5bc02d9605d41aa961b6ecd18196f1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 825e9bae6651848d161898ef9436fa27d9b60d90
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="building-office-solutions"></a>Office Çözümleri Oluşturma
   Genel olarak, derleme ve Office projelerinde hata ayıklama derleme ve diğer türleri Windows Forms gibi Visual Studio projelerinde hata ayıklama aynıdır. Bu bölümdeki konular, mevcut farkları açıklamaktadır. Uygulamaların nasıl yapılandırıldığı hakkında genel bilgi için bkz: [derleme ve Visual Studio'da derleme](/visualstudio/ide/compiling-and-building-in-visual-studio).  

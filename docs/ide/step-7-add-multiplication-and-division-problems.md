@@ -1,5 +1,5 @@
 ---
-title: '7. Adım: Çarpma ve Bölme Problemleri Ekleme'
+title: '7. adım: çarpma ve bölme sorunları ekleme'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
@@ -11,16 +11,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbeeca2e53addab923fa3f62c661543497ea1f35
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c3c89def201f0045d561b180bd3af521ba4c2de
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="step-7-add-multiplication-and-division-problems"></a>7. Adım: Çarpma ve Bölme Problemleri Ekleme
+# <a name="step-7-add-multiplication-and-division-problems"></a>7. adım: çarpma ve bölme sorunları ekleme
 Bu öğreticinin yedinci bölümünde çarpma ve bölme sorunları eklemek ancak bu değişiklik hakkında düşünmeden. Değerlerini depolama içerir ilk adım, göz önünde bulundurun.  
 
-### <a name="to-add-multiplication-and-division-problems"></a>Çarpma ve bölme sorunları eklemek için  
+## <a name="to-add-multiplication-and-division-problems"></a>Çarpma ve bölme sorunları eklemek için  
 
 1.  Dört fazla tamsayı değişken forma ekleyin.  
 
@@ -38,9 +38,9 @@ Bu öğreticinin yedinci bölümünde çarpma ve bölme sorunları eklemek ancak
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]  
 
      Çarpma oturum (×) kolayca giremezsiniz ve bölme klavyeyi kullanarak oturum açma (÷), böylece Visual C# ve Visual Basic bir yıldız işareti (*) çarpma ve bölme bir eğik çizgi işareti (/) kabul edin.  
-
-4.  Zamanlayıcı'nın onay olay işleyicisi son parçası süresi dolmadan zaman doğru yanıt olarak doldurur şekilde değiştirin.  
-
+  
+4.  Zamanlayıcı'nın son kısmını değiştirmek <xref:System.Windows.Forms.Timer.Tick> süresi dolmadan olduğunda, BT'nin doğru yanıt olarak dolduracak şekilde olay işleyicisi.  
+  
      [!code-vb[VbExpressTutorial3Step7#23](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_4.vb)]
      [!code-csharp[VbExpressTutorial3Step7#23](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_4.cs)]  
 
@@ -49,10 +49,10 @@ Bu öğreticinin yedinci bölümünde çarpma ve bölme sorunları eklemek ancak
      Test tutmayı aşağıda gösterildiği gibi test tamamlamak için dört sorunlara yanıt vermeniz gerekir.  
 
      ![Matematik testi dört sorunlarıyla](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
-Dört sorunlarıyla matematik testi  
-
-### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
-
+**Matematik testi** dört sorunlar  
+  
+## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
+  
 -   Öğretici bir sonraki adıma dönmek için bkz: [adım 8: testi özelleştirme](../ide/step-8-customize-the-quiz.md).  
-
+  
 -   Eğitmen önceki adıma dönmek için bkz: [6. adım: çıkarma problemi ekleme](../ide/step-6-add-a-subtraction-problem.md).

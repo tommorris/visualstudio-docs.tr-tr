@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa70cac665c5673416b62aed6aa6ae0a9ebd805
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 81eafb383be9f687bdc16bd8241e396849b8894a
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="talk-to-us"></a>Bizimle iletişime geçin
 Ürünlerimizi ve belgeleri geliştirmek için fikirlerinizi ilginizi çalışıyoruz. Biz her zaman kişisel yanıt veremez, ancak biz görüşlerinizi doğru kişi ya da takım aldığından emin olmak.  
@@ -35,7 +35,7 @@ Visual Studio yayım öncesi sürümü bir **bu ürünün oranı** çalıştırd
 ## <a name="i-want-to-contact-microsoft-support"></a>Microsoft Support istemeniz
 Visual Studio destek bilgileri için bkz: [destek yaşam döngüsü & Bakım](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs) sayfası.
 
-Diğer Microsoft ürünleri ve Hizmetleri için bkz: [Microsoft Support](http://go.microsoft.com/fwlink/?LinkID=99019) çevrimiçi Yardım.
+Diğer Microsoft ürünleri ve Hizmetleri için bkz: [Microsoft Destek](http://go.microsoft.com/fwlink/?LinkID=99019) çevrimiçi Yardım.
 
 > [!NOTE]
 > Amerika Birleşik Devletleri ve Kanada dışında destek seçenekleri değişebilir. Bölgesel kişiler listesi için bkz: [Microsoft Dünya çapında siteler](http://www.microsoft.com/worldwide/).
@@ -53,4 +53,4 @@ Sorular ve yanıtlar diğer geliştiricilere paylaşmak istiyorsanız kullanabil
 Lütfen kullanın **bu sayfayı yardımcı oldu?** sayfanın sonundaki geri bildirim düğmesini. Bu düğme bizim tüm belgeleri sayfalarında bulabilirsiniz. Alternatif olarak, size geri bildirim herhangi bir Visual Studio sayfasına ekleyebilirsiniz [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) kullanarak **belgelerine geribildirim vermek oturum** düğmesi, sayfanın sonundaki ayrıca.
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Visual Studio ile İlgili Sorun Bildirme](how-to-report-a-problem-with-visual-studio-2017.md)
+[Visual Studio ile ilgili bir sorun bildirme](how-to-report-a-problem-with-visual-studio-2017.md)

@@ -1,5 +1,5 @@
 ---
-title: C# ve Visual Studio'da ASP.NET Core ile çalışmaya başlama
+title: C# ve Visual Studio'da ASP.NET Core kullanmaya başlama
 ms.custom: ''
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
@@ -14,13 +14,13 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 80ca583b3cd773121cda7b0311fcf551472cb2d4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a896047ad8141bc7edf797066df9d309bf7eb72c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>C# ve Visual Studio'da ASP.NET ile çalışmaya başlama
+# <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>C# ve Visual Studio'da ASP.NET kullanmaya başlama
 Visual Studio kullanarak ASP.NET Core ile C# geliştirme için Bu öğreticide, bir C# ASP.NET Core web uygulaması oluşturma, kodu ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın.
 
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa.
@@ -42,7 +42,7 @@ Geliştirmeye başlamak hazır mısınız? Gidelim!
 
 1. Visual Studio 2017'ni açın.
 
-2. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .
+2. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje**.
 
 3. İçinde **yeni proje** iletişim kutusunun sol bölmesinde **Visual C#**, genişletin **Web**ve ardından **.NET Core**. Orta bölmede seçin **ASP.NET çekirdek Web uygulaması**, dosya adı *MyCoreApp*ve ardından **Tamam**.   
 
@@ -61,7 +61,7 @@ Görmüyorsanız, **ASP.NET çekirdek Web uygulaması** proje şablonu, alabilir
    ![Visual Studio yükleyicisi .NET core platformlar arası geliştirme iş yükü](../ide/media/asp-dot-net-web-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Seçenek 2: araçlar menü çubuğu'nu kullanın
-1. İşyeri dışında iptal **yeni proje** iletişim kutusuna ve üst menü çubuğundan seçin **Araçları** > **alma araçları ve özelliklerinin...** .
+1. İşyeri dışında iptal **yeni proje** iletişim kutusuna ve üst menü çubuğundan seçin **Araçları** > **alma araçları ve özelliklerinin**.
 
 2. Visual Studio yükleyicisi başlatır. Seçin **ASP.NET ve web geliştirme** iş yükü ve ardından **Değiştir**.   
 
@@ -86,15 +86,15 @@ MVC örüntüsü, test ve güncelleştirmek geleneksel tek yapılı uygulamalar 
 
     ![Visual Studio'da ASP.NET Çözüm Gezgini](../ide/media/csharp-aspnet-solution-explorer-mycoreapp.png)
 
-1. Açık **HomeController.cs** dosya **denetleyicileri** klasör.
+1. Açık *HomeController.cs* dosya **denetleyicileri** klasör.
 
       ![Visual Studio Çözüm Gezgini'nde HomeController.cs dosyasında](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
-2. Görünüm **HomeController.cs**
+2. Görünüm *HomeController.cs*
 
   ![Visual Studio kod penceresinde HomeController.cs](../ide/media/csharp-aspnet-home-controller-code.png)
 
-4. Projeyi de sahip bir **görünümleri** her denetleyiciye eşleme diğer klasörleri içeren klasörü (biri yanı sıra **paylaşılan** görünümler). Örneğin, görünüm CSHTML dosyası (HTML uzantı) için **/ev/hakkında** yolu adresindeki olacaktır **Views/Home/About.cshtml**. Bu dosyayı açın.
+4. Projeyi de sahip bir **görünümleri** her denetleyiciye eşleme diğer klasörleri içeren klasörü (biri yanı sıra **paylaşılan** görünümler). Örneğin, görünüm CSHTML dosyası (HTML uzantı) için */ev/hakkında* yolu adresindeki olacaktır *Views/Home/About.cshtml*. Bu dosyayı açın.
 
   ![Visual Studio'da Çözüm Gezgini'nde About.cshtml dosyası](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
@@ -103,13 +103,13 @@ MVC örüntüsü, test ve güncelleştirmek geleneksel tek yapılı uygulamalar 
   ![Visual Studio kod penceresinde About.cshtml](../ide/media/csharp-aspnet-about-cshtml-code.png)
 
  >[!NOTE]
- > Bunun hakkında daha fazla bilgi edinmek için [C# ve ASP.NET Razor sözdizimini kullanarak Başlarken](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c) sayfası.
+ > Bunun hakkında daha fazla bilgi edinmek için [C# ve ASP.NET Razor sözdizimini kullanarak kullanmaya başlama](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c) sayfası.
 
-6. Çözüm de içeren bir **wwwroot** web siteniz için kök klasör. Statik içerik, CSS, görüntüler ve JavaScript kitaplıklarını gibi doğrudan site dağıtıldığında olması istersiniz yollarında koyabilirsiniz.
+6. Çözüm de içeren bir *wwwroot* web siteniz için kök klasör. Statik içerik, CSS, görüntüler ve JavaScript kitaplıklarını gibi doğrudan site dağıtıldığında olması istersiniz yollarında koyabilirsiniz.
 
  ![Visual Studio'da Çözüm Gezgini'ndeki Wwwroot klasörüne](../ide/media/csharp-aspnet-solution-wwwroot.png)
 
-7. Proje, kendi paketleri ve çalışma zamanında uygulama yönetmek için hizmet yapılandırma dosyalarını, çeşitli vardır. Örneğin, varsayılan uygulama [yapılandırma](/aspnet/core/fundamentals/configuration) depolanan **appsettings.json**. Ancak, bazı/tüm ortam başına temelinde, bu ayarları gibi sağlayarak kılabilirsiniz bir **appsettings. Development.JSON** dosya **geliştirme** ortamı.
+7. Proje, kendi paketleri ve çalışma zamanında uygulama yönetmek için hizmet yapılandırma dosyalarını, çeşitli vardır. Örneğin, varsayılan uygulama [yapılandırma](/aspnet/core/fundamentals/configuration) depolanan *appsettings.json*. Ancak, bazı/tüm ortam başına temelinde, bu ayarları gibi sağlayarak kılabilirsiniz bir *appsettings. Development.JSON* dosya **geliştirme** ortamı.
 
  ![Visual Studio'da Çözüm Gezgini'nde yapılandırma dosyaları](../ide/media/csharp-aspnet-solution-explorer-config-files.png)
 
@@ -126,21 +126,21 @@ MVC örüntüsü, test ve güncelleştirmek geleneksel tek yapılı uygulamalar 
 
  ![Uygulamanız için tarayıcı penceresinde hakkında seçin](../ide/media/csharp-aspnet-browser-page.png)
 
- Bunun yanı sıra, HomeController.cs dosyasında ayarlanan metin hakkında sayfasını tarayıcıda oluşturur.
+ Başka şeylerin **hakkında** sayfasını tarayıcıda işler kümesinde metin *HomeController.cs* dosya.
 
    ![Hakkında sayfasında metin görüntüleme](../ide/media/csharp-aspnet-browser-page-about.png)
 
-1. Bir tarayıcı penceresi açın ve geri dönüş için Visual Studio tutun. Açık **Controllers/HomeController.cs** zaten açık değilse.
+1. Bir tarayıcı penceresi açın ve geri dönüş için Visual Studio tutun. Açık *Controllers/HomeController.cs* zaten açık değilse.
 
  ![Visual Studio'da Çözüm Gezgini'nden HomeController.cs dosyasını açın](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
 1. İlk satırında bir kesme noktası belirleyerek **hakkında** yöntemi. Bunu yapmak için kenar boşluğunda tıklatın veya satır ve tuşuna imleci ayarlamak **F9**.
 
-  Bu satırı bazı veri kümelerinin de **ViewData** CSHTML sayfanın işlenmeden koleksiyonu **Views/Home/About.cshtml**.
+  Bu satırı bazı veri kümelerinin de **ViewData** CSHTML sayfanın işlenmeden koleksiyonu *Views/Home/About.cshtml*.
 
  ![About.cshtml hakkında yönteminde ilk satırında bir kesme noktası ayarlayın.  ](../ide/media/csharp-aspnet-home-controller-code-set-breakpoint.png)
 
-1. Tarayıcıya dönün ve hakkında sayfayı yenileyin. Bu, Visual Studio'da kesme noktası tetikler.
+1. Tarayıcı ve yenileme için iade **hakkında** sayfası. Bu, Visual Studio'da kesme noktası tetikler.
 
 1. Visual Studio'da üzerinden fare **ViewData** üye onun verilerini görüntüleyebilirsiniz.
 
@@ -148,7 +148,7 @@ MVC örüntüsü, test ve güncelleştirmek geleneksel tek yapılı uygulamalar 
 
 1. Eklemek için kullanılan yöntemin aynısını kullanarak uygulama kesme noktası kaldırın.
 
-1. Açık **Views/Home/About.cshtml**.
+1. Açık *Views/Home/About.cshtml*.
 
  ![Çözüm Gezgini'nde About.cshtml seçin](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 

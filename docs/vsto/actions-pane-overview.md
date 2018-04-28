@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0fa20f8be093ae064daba731833709fd8f54f551
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 50f39b6fc292bba2081d8eb5c3bc87d6f9041b49
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="actions-pane-overview"></a>Eylemler Bölmesine Genel Bakış
-  Eylemler bölmesinde bir özelleştirilebilir olduğundan **belge eylemleri** belirli Microsoft Office Word belgesine veya Microsoft Office Excel çalışma kitabına eklenmiş görev bölmesi. Bu diğer yerleşik görev bölmeleri birlikte Office görev bölmesi içinde gibi barındırılan **XML kaynağı** Excel görev bölmesinde veya **stiller ve biçimlendirme** Word görev bölmesinde. Eylemler bölmesi kullanıcı arabirimini tasarlamak için Windows Forms veya WPF denetimleri kullanabilirsiniz.  
+  Eylemler bölmesinde bir özelleştirilebilir olduğundan **belge eylemleri** belirli Microsoft Office Word belgesine veya Microsoft Office Excel çalışma kitabına eklenmiş görev bölmesi. Eylemler bölmesinde diğer yerleşik görev bölmeleri birlikte Office görev bölmesi içinde gibi barındırılan **XML kaynağı** Excel görev bölmesinde veya **stiller ve biçimlendirme** Word görev bölmesinde. Eylemler bölmesi kullanıcı arabirimini tasarlamak için Windows Forms veya WPF denetimleri kullanabilirsiniz.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/27/2018
 > [!NOTE]  
 >  Eylemler bölmesinde özel görev bölmesinden farklılık gösterir. Özel görev bölmeleri belirli bir belge uygulama ile ilişkilendirilmiş. VSTO eklentileri bazı Microsoft Office uygulamaları için özel görev bölmeleri oluşturabilirsiniz. Daha fazla bilgi için bkz: [özel görev bölmeleri](../vsto/custom-task-panes.md).  
 
- ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl yapmak I: kullanım WPF denetimleri içinde bir Excel eylemler bölmesindeki?](http://go.microsoft.com/fwlink/?LinkId=132763).  
+ ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl yapmak I: kullanım WPF denetimleri içinde bir Excel eylemler bölmesindeki?](http://go.microsoft.com/fwlink/?LinkId=132763).
 
 ## <a name="displaying-the-actions-pane"></a>Eylemler bölmesini görüntüleme  
  Eylemler bölmesinde tarafından temsil edilen <xref:Microsoft.Office.Tools.ActionsPane> sınıfı. Belge düzeyi projesi oluşturduğunuzda, bu sınıfın örneğini kullanarak kodunuzu kullanılabilir `ActionsPane` alanını `ThisWorkbook` (Excel için) veya `ThisDocument` projenizdeki sınıfı (Word için). Eylemler bölmesinde görüntülemek için bir Windows Forms denetimi ekleyin <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> özelliği `ActionsPane` alan. Aşağıdaki kod örneğinde adlandırılmış bir denetim ekler `actions` Eylemler bölmesine.  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/27/2018
  Eylemler bölmesinde, açıkça bir denetim ekleyin hemen çalışma zamanında görünür olur. Eylemler bölmesinde görüntülendikten sonra dinamik olarak ekleme veya kullanıcının eylemlerine yanıt olarak denetimlerini kaldırma. Genellikle, Eylemler bölmesinde görüntülemek üzere kod eklemek `Startup` olay işleyicisi `ThisDocument` veya `ThisWorkbook` Eylemler bölmesinde görünür olmasını sağlamak kullanıcı ilk kez açtığında belge. Ancak, yalnızca bir kullanıcının eylemi belgedeki yanıtta eylemler bölmesini görüntülemek isteyebilirsiniz. Örneğin, kod ekleme olasılığınız `Click` belgesindeki bir denetim olayı.  
 
 ### <a name="adding-multiple-controls-to-the-actions-pane"></a>Eylemler bölmesine birden çok denetim ekleme  
- Eylemler bölmesine birden çok denetim ekliyorsanız, çoğu durumda, bir kullanıcı denetimi denetimlerinde grup ve kullanıcı denetimi Ekle <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> özelliği. Bu işlem aşağıdaki adımları içerir:  
+ Eylemler bölmesine birden çok denetim eklediğinizde, bir kullanıcı denetimi denetimlerinde grup ve kullanıcı denetimi Ekle gerekir <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> özelliği. Bu işlem aşağıdaki adımları içerir:  
 
 1.  Eylemler bölmesinde kullanıcı arabirimini (UI) ekleyerek oluşturun bir **Eylemler bölmesi denetimi** veya **kullanıcı denetimi** projenize öğesi. Bu öğelerin her ikisi özel bir Windows Forms içeren <xref:System.Windows.Forms.UserControl> sınıfı. **Eylemler bölmesi denetimi** ve **kullanıcı denetimi** öğeleri eşdeğer; tek fark, adıdır.  
 
@@ -79,12 +79,12 @@ ms.lasthandoff: 04/27/2018
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]  
 
 ### <a name="clearing-the-actions-pane-when-the-document-is-opened"></a>Eylemler bölmesinde belge temizleme açılmış  
- Eylemler bölmesinde görünür modundayken kullanıcının belgeyi kaydederse, Eylemler bölmesinde herhangi bir denetim içeren olup olmadığına bakılmaksızın her belge açıldığında eylemler bölmesinde görünür olur. Görüntülendiğinde denetlemek istiyorsanız, çağrı <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> yöntemi `ActionsPane` alanındaki `Startup` olay işleyicisi `ThisDocument` veya `ThisWorkbook` belge açıldığında eylemler bölmesinde görünür olmamasını sağlamak için.  
+ Eylemler bölmesinde görünür durumdayken bir kullanıcı belgeyi kaydettiğinde, Eylemler bölmesinde herhangi bir denetim içeren olup olmadığına bakılmaksızın her belge açıldığında eylemler bölmesinde görünür olur. Görüntülendiğinde denetlemek istiyorsanız, çağrı <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> yöntemi `ActionsPane` alanındaki `Startup` olay işleyicisi `ThisDocument` veya `ThisWorkbook` belge açıldığında eylemler bölmesinde görünür olmamasını sağlamak için.  
 
 ### <a name="determining-when-the-actions-pane-is-closed"></a>Eylemler bölmesinde belirleme kapalı  
  Eylemler bölmesinde kapatıldığında hiçbir olayı yok. Ancak <xref:Microsoft.Office.Tools.ActionsPane> sınıfına sahip bir <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> olayı, bu olay son kullanıcı eylemler bölmesini kapattığında oluşmaz. Eylemler bölmesindeki denetimlere çağırarak gizlidir bunun yerine, bu olay tetiklenir <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> yöntemi veya ayarlayarak <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> özelliğine **false**.  
 
- Son kullanıcı eylemler bölmesini kapatırsa, kullanıcı onu yeniden uygulamanın kullanıcı arabiriminde (UI) aşağıdaki yordamlardan birini gerçekleştirerek görüntüleyebilirsiniz.  
+ Kullanıcının eylemler bölmesini kapattığında, kullanıcı onu yeniden uygulamanın kullanıcı arabiriminde (UI) aşağıdaki yordamlardan birini gerçekleştirerek görüntüleyebilirsiniz.  
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Excel ve Word UI'ını kullanarak Eylemler bölmesinde görüntülemek için  
 
@@ -129,7 +129,7 @@ ms.lasthandoff: 04/27/2018
 ## <a name="resizing-the-actions-pane"></a>Eylemler bölmesinde yeniden boyutlandırma  
  Boyutunu doğrudan değiştiremezsiniz bir <xref:Microsoft.Office.Tools.ActionsPane> çünkü <xref:Microsoft.Office.Tools.ActionsPane> görev bölmesinde katıştırılır. Ancak, program aracılığıyla görev bölmesinde genişliğini ayarlayarak değiştirebilirsiniz <xref:Microsoft.Office.Core.CommandBar.Width%2A> özelliği <xref:Microsoft.Office.Core.CommandBar> görev bölmesini temsil eden. Yatay olarak yerleşik veya kayan olan görev bölmesinde yüksekliğini değiştirebilirsiniz.  
 
- Kullanıcı kendi ihtiyaçlarına göre uygun görev bölmesinin boyutunu gerekir çünkü programlı olarak görev bölmesini yeniden boyutlandırma genellikle önerilmez. Görev bölmesi genişliğini yeniden boyutlandırmak, bu görevi gerçekleştirmek için aşağıdaki kodu kullanabilirsiniz.  
+ Kullanıcı gereksinimlerine en uygun görev bölmesinin boyutunu gerekir çünkü programlı olarak görev bölmesini yeniden boyutlandırmak önerilmez. Görev bölmesi genişliğini yeniden boyutlandırmak, bu görevi gerçekleştirmek için aşağıdaki kodu kullanabilirsiniz.  
 
  [!code-csharp[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#102)]
  [!code-vb[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#102)]  
@@ -145,7 +145,7 @@ ms.lasthandoff: 04/27/2018
 > [!NOTE]  
 >  Son kullanıcıların herhangi bir zamanda görev bölmesinde konumunu elle değiştirebilirsiniz. Görev bölmesi programlı olarak belirttiğiniz konumda yerleşik kalacağından emin olmak için bir yolu yoktur. Ancak, yönlendirme değişikliklerini denetle ve Eylemler bölmesindeki denetimlere doğru yöne yığılma emin olun. Daha fazla bilgi için bkz: [nasıl yapılır: Eylemler bölmesindeki denetim düzenini yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md).  
 
- Ayarı <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> ve <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> özelliklerini <xref:Microsoft.Office.Tools.ActionsPane> konumunu değiştirmez çünkü <xref:Microsoft.Office.Tools.ActionsPane> görev bölmesinde katıştırılmış nesne.  
+ Ayarı <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> ve <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> özelliklerini <xref:Microsoft.Office.Tools.ActionsPane> konumuna çünkü değiştirmez <xref:Microsoft.Office.Tools.ActionsPane> görev bölmesinde katıştırılmış nesne.  
 
  Görev bölmesi sabitlenmemişse ayarlayabileceğiniz <xref:Microsoft.Office.Core.CommandBar.Top%2A> ve <xref:Microsoft.Office.Core.CommandBar.Left%2A> özelliklerini <xref:Microsoft.Office.Core.CommandBar> görev bölmesini temsil eden. Aşağıdaki kod bir kilitli görev bölmesi belgenin sol üst köşesindeki taşır.  
 

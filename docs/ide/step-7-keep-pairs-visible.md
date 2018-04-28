@@ -1,5 +1,5 @@
 ---
-title: '7. Adım: Çiftleri Görünür Kılma'
+title: '7. adım: çiftleri görünür kılma'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
@@ -11,24 +11,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0373a4d51c6da6685d3fc837b569607daa059854
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 956a5b1df35708f5bbe04539a9871272d168ff58
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="step-7-keep-pairs-visible"></a>7. Adım: Çiftleri Görünür Kılma
-Oyuncu yalnızca eşleşmeyen simge çiftlerini seçtiği sürece oyun düzgün çalışır. Ancak oyuncu eşleşen bir çift seçtiğinde ne olması gerektiğini bir düşünün. Süreölçer kapatarak simgeleri yerine yapma kayboluyor (kullanarak `Start()` yöntemi), böylece, artık kullanarak etiketleri izleyen oyun kendisini sıfırlamalıdır `firstClicked` ve `secondClicked` başvuru değişkenleri sıfırlamadan Seçilen iki etiket renklerini.  
+# <a name="step-7-keep-pairs-visible"></a>7. adım: çiftleri görünür kılma
+Oyuncu yalnızca eşleşmeyen simge çiftlerini seçtiği sürece oyun düzgün çalışır. Ancak oyuncu eşleşen bir çift seçtiğinde ne olması gerektiğini bir düşünün. Süreölçer kapatarak simgeleri yerine yapma kayboluyor (kullanarak <xref:System.Windows.Forms.Timer.Start> yöntemi), böylece, artık kullanarak etiketleri izleyen oyun kendisini sıfırlamalıdır `firstClicked` ve `secondClicked` başvuru değişkenleri sıfırlamadan Seçilen iki etiket renklerini.  
 
-### <a name="to-keep-pairs-visible"></a>Çiftleri görünür durumda tutmak için  
+## <a name="to-keep-pairs-visible"></a>Çiftleri görünür durumda tutmak için  
 
 1.  Aşağıdakileri ekleyin `if` ifadesine `label_Click()` yalnızca Zamanlayıcı başladığınız deyimi yukarıdaki kodu sona olay işleyicisi yöntemi. Kodu programa eklerken yakından inceleyin. Kodun nasıl çalıştığını bir düşünün.  
 
      [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]
      [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]  
-
-     İlk satırı `if` eklediğiniz deyimi player seçer ilk etiketi simgesinde İkinci etiketin simgesinde aynı olup denetler. Simgeler aynıysa, C# veya üç deyimleri içinde süslü ayraçlar arasında üç deyimleri programı yürütür `if` Visual Basic'de deyimini. İlk iki deyimleri sıfırlama `firstClicked` ve `secondClicked` böylece bunlar artık herhangi bir etiket izlemek değişkenleri başvuru. (Bu iki deyim, zamanlayıcının Tick olay işleyicisinden size tanıdık gelebilir.) Üçüncü deyimi bir `return` program yürütme olmadan yöntemi deyimlerinde kalanını atlayın söyler deyimi.  
-
+  
+     İlk satırı `if` eklediğiniz deyimi player seçer ilk etiketi simgesinde İkinci etiketin simgesinde aynı olup denetler. Simgeler aynıysa, C# veya üç deyimleri içinde süslü ayraçlar arasında üç deyimleri programı yürütür `if` Visual Basic'de deyimini. İlk iki deyimleri sıfırlama `firstClicked` ve `secondClicked` böylece bunlar artık herhangi bir etiket izlemek değişkenleri başvuru. (Bu Zamanlayıcı'nın iki ifadeden tanıyabilir <xref:System.Windows.Forms.Timer.Tick> olay işleyicisi.) Üçüncü deyimi bir `return` program yürütme olmadan yöntemi deyimlerinde kalanını atlayın söyler deyimi.  
+  
      Visual C# ile programlama, bazı kodları kullandığını tek bir eşittir işareti fark etmiş (`=`), diğer deyimler iki eşittir işareti kullanırken (`==`). Neden göz önünde bulundurun `=` bazı yerlerde kullanılır ancak `==` farklı konumlarda kullanılır.  
 
      Bu örnek, aradaki farkı gösteren güzel bir örnektir. Parantez içine arasında yer alan kodunu dikkatli bir göz atalım `if` deyimi.  
@@ -52,14 +52,14 @@ Oyuncu yalnızca eşleşmeyen simge çiftlerini seçtiği sürece oyun düzgün 
     ```  
 
      Bu deyimlerden birincisi iki simgenin aynı olup olmadığını denetler. Visual C# programı kullanır, iki değer karşılaştırıldığında çünkü `==` eşitlik işleci. İkinci ifade gerçekten değeri değişir (adlı *atama*), ayar `firstClicked` başvuru değişkeni eşit `null` sıfırlama. İşte bu nedenle kullandığı `=` atama işleci yerine. Visual C# kullanan `=` değerlerini ayarlamak için ve `==` bunları karşılaştırmak için. Visual Basic kullanan `=` değişkeni ataması ve karşılaştırma için.  
-
+  
 2.  Programı kaydedip çalıştırın ve sonra formdaki simgeleri seçmeye başlayın. Eşleşmeyen bir çift seçerseniz, zamanlayıcının Tick olayı tetiklenir ve iki simge de kaybolur. Eşleşen bir çift seçerseniz yeni `if` deyimini yürütür ve return deyiminin simgeler aşağıdaki resimde gösterildiği gibi görünür, kalır, böylece süreölçer başlatır kod atlamak yönteminin neden olur.  
-
+  
      ![Bu öğreticide oluşturduğunuz oyun](../ide/media/express_finishedgame.png "Express_FinishedGame")  
-Eşleştirme oyunu ve görünür simge çiftleri  
-
-### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
-
--   Öğretici bir sonraki adıma dönmek için bkz: [adım 8: doğrulayın olup olmadığını Player Won için bir yöntem ekleyin](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
-
+**Eşleme oyunu** görünür simgesi çiftleri ile  
+  
+## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
+  
+-   Öğretici bir sonraki adıma dönmek için bkz: [adım 8: oyuncunun kazandığını doğrulamak için yöntem ekleme](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
+  
 -   Eğitmen önceki adıma dönmek için bkz: [6. adım: Zamanlayıcı ekleme](../ide/step-6-add-a-timer.md).

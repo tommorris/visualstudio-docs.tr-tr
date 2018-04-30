@@ -2,15 +2,15 @@
 ## Abone Deneyimleri
 ### [Abone Portalı’nı Kullanma](using-the-subscriber-portal.md)
 #### [Perakende Abonelikleri Etkinleştirme](activate-store-subscriptions.md)
-#### [Oturum Açılıyor](signing-in.md)
+#### [Oturum Açma](signing-in.md)
 #### [Alternatif kimlikler](vs-alternate-identity.md)
 ##### [Diğer Adlar ile Oturum Açma](aliasing.md)
 #### [Aboneliklerinizi Yönetme](manage-vs-subscriptions.md)
-### [Yazılım İndirme](subscriber-downloads.md)
+### [Yazılımı İndirme](subscriber-downloads.md)
 #### [Kullanılabilir Yazılım İndirmelerinin Listesi](software-download-list.md)
 ### [Ürün Anahtarlarını Alma ve Yönetme](product-keys.md)
 ### Visual Studio Dev Essentials
-#### [Visual Studio Dev Essentials’a Katılma](join-dev-essentials.md)
+#### [Visual Dev Essentials’a Katılma](join-dev-essentials.md)
 #### [Visual Studio Dev Essentials’tan Çıkma](leave-vsde.md)
 ### [Abone Avantajları](subscriber-benefits.md)
 ## Abone Avantajlarını Kullanma

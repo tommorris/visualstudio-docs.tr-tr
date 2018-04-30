@@ -34,7 +34,7 @@
 #### [Açıklamanın Ne Zaman ve Nereye Uygulanacağını Belirtme](specifying-when-and-where-an-annotation-applies.md)
 #### [İç İşlevler](intrinsic-functions.md)
 #### [En İyi Yöntemler ve Örnekler (SAL)](best-practices-and-examples-sal.md)
-### [__analysis_assume Kullanarak Ek Kod Bilgileri Belirtme](how-to-specify-additional-code-information-by-using-analysis-assume.md)
+### [__Analysis_assume Kullanarak Ek Kod Bilgileri Belirtme](how-to-specify-additional-code-information-by-using-analysis-assume.md)
 ## [Kural Kümeleri](using-rule-sets-to-group-code-analysis-rules.md)
 ### [Yönetilen Kod İçin Kural Kümeleri](how-to-configure-code-analysis-for-a-managed-code-project.md)
 #### [Bir ASP.NET Web Uygulaması İçin Kod Analizini Yapılandırma](how-to-configure-code-analysis-for-an-aspnet-web-application.md)

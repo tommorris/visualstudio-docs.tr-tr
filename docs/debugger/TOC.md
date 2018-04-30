@@ -295,6 +295,7 @@
 #### [İşleme İliştirilemiyor](unable-to-attach-to-the-process.md)
 #### [Düzenle ve Devam Et Hata İletisi iletişim kutusu](edit-and-continue-error-message-dialog-box.md)
 #### [Hata: 'function' işlevinin değerlendirilmesi zaman aşımına uğradı ve güvenli bir şekilde iptal edilmesi gerekti](error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way.md)
+#### [Hata: Hedef işlem, 'function' işlevini değerlendirirken 'code' koduyla çıktı](error-evaluating-the-function-process-exited.md)
 #### [Hata: Uzak makinede SQL Server'a bağlanılamıyor](error-unable-to-connect-to-sql-server-on-remote-machine.md)
 #### [Hata: SQL Server hata ayıklama arabirimine erişilemiyor](error-unable-to-access-the-sql-server-debugging-interface.md)
 #### [Hata: SQL SSDEBUGPS'yi bulamıyor](error-sql-can-t-find-ssdebugps.md)

@@ -12,12 +12,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 79c13cc878ee97968b82f86e3ba01c7eecd10b0c
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
-ms.translationtype: HT
+ms.openlocfilehash: 9ce90746d89dd41c1f53d7150d83afaa2e2bad46
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Bağımlılık diyagramları: yönergeler
 Uygulama Mimarinizi yüksek bir düzeyde oluşturarak açıklamak *bağımlılık diyagramları* Visual Studio. Bir bağımlılık diyagramı kodunuzla doğrulayarak kodunuzu bu tasarım ile tutarlı kaldığından emin olun. Katman doğrulaması yapı işleminizin de ekleyebilirsiniz. Bkz: [kanal 9 Video: tasarım ve bağımlılık diyagramları kullanarak Mimarinizi geçerli](http://go.microsoft.com/fwlink/?LinkID=252073).

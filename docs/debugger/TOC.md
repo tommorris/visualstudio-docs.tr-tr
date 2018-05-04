@@ -9,6 +9,7 @@
 ## [Visual Studio kullanarak hata ayıklamayı öğrenin](getting-started-with-the-debugger.md)
 ## [Hata ayıklayıcıda Python kodu çalıştırma...](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Canlı bir Azure uygulamasında hata ayıklama](debug-live-azure-applications.md)
+## [Yönetilen ve yerel kodlarda hata ayıklama](how-to-debug-managed-and-native-code.md)
 ## [IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüleme](how-to-use-intellitrace-step-back.md)
 # Nasıl yapılır kılavuzları
 ## [Hata ayıklayıcısı ile kodda gezinme](navigating-through-code-with-the-debugger.md)

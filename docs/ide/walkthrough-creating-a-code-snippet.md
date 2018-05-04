@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek Yol: Kod Parçacığı Oluşturma'
+title: 'İzlenecek yol: bir kod parçacığı oluşturma'
 ms.date: 10/27/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b5d71994539f313a7a9296d7f753174139756f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6a9890be18e3d43f4c036da72bf2794801e5ec70
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="walkthrough-creating-a-code-snippet"></a>İzlenecek Yol: Kod Parçacığı Oluşturma
-Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapmanız gereken olan XML dosyası oluşturma, uygun öğeleri doldurun ve kodunuzu ekleyin. Kodunuzu başvuruları ve değiştirme parametreleri de ekleyebilirsiniz. Kod parçacıkları yöneticisinde İçe Aktar düğmesini kullanarak Visual Studio yüklemenizin kod parçacığını ekleyebilirsiniz (**Araçları**, **kod parçacıkları Yöneticisi...** ).
+# <a name="walkthrough-create-a-code-snippet"></a>İzlenecek yol: bir kod parçacığı oluşturma
+Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapmanız gereken olan XML dosyası oluşturma, uygun öğeleri doldurun ve kodunuzu ekleyin. Kodunuzu başvuruları ve değiştirme parametreleri de ekleyebilirsiniz. Kod parçacığını kullanarak Visual Studio yüklemenizin ekleyebilmeniz için **alma** düğmesini **kod parçacıkları Yöneticisi** (**Araçları**  >   **Kod parçacıkları Yöneticisi**).
 
 ## <a name="snippet-template"></a>Kod parçacığında şablonu
  Temel parçacığı şablon verilmiştir:
@@ -48,15 +48,15 @@ Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapman
 </CodeSnippets>
 ```
 
-### <a name="to-create-a-code-snippet"></a>Kod parçacığı oluşturmak için
+### <a name="create-a-code-snippet"></a>Kod parçacığı oluşturma
 
 1.  Visual Studio'da yeni bir XML dosyası oluşturun ve yukarıda gösterilen şablonu ekleyin.
 
-2.  Örneğin parçacığı başlığında doldurun "VB, başlık öğesinde hello World".
+2.  Örneğin parçacığı başlığında doldurun "Hello World VB", **başlık** öğesi.
 
-3.  Kod öğesinin dilleri özniteliği parçacığında dilinin doldurun. Bu örnekte, "VB" kullanın.
+3.  Parçacığında dilinin doldurun **diller** özniteliği **kod** öğesi. Bu örnekte, "VB" kullanın.
 
-4.  Bazı kodu örneğin CDATA bölümünde kod öğesinin içine ekleyin:
+4.  Bazı kodlar ekleyin **CDATA** içinde bölümünde **kod** öğesi, örneğin:
 
     ```xml
     <Code Language="VB">
@@ -64,11 +64,11 @@ Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapman
     </Code>
     ```
 
-5.  Kod parçacığını VBCodeSnippet.snippet kaydedin.
+5.  Kod parçacığını olarak Kaydet *VBCodeSnippet.snippet*.
 
-### <a name="to-add-a-code-snippet-to-visual-studio"></a>Kod parçacığı Visual Studio'ya eklemek için
+### <a name="add-a-code-snippet-to-visual-studio"></a>Visual Studio için bir kod parçacığını ekleyin
 
-1.  Kod parçacıkları Yöneticisi'ni kullanarak Visual Studio yüklemenizin kendi parçacıkları ekleyebilirsiniz. Kod parçacıkları Yöneticisi'ni açın (**Araçları**, **kod parçacıkları Yöneticisi...** ).
+1.  Kod parçacıkları Yöneticisi'ni kullanarak Visual Studio yüklemenizin kendi parçacıkları ekleyebilirsiniz. Açık **kod parçacıkları Yöneticisi** (**Araçları** > **kod parçacıkları Yöneticisi**).
 
 2.  Tıklatın **alma** düğmesi.
 
@@ -78,19 +78,19 @@ Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapman
 
 5.  Kod parçacığını aşağıdaki konuma kopyalanır:
 
-     %USERPROFILE%\Documents\Visual studio 2017\Code Snippets\Visual Basic\My kod parçacıkları
+     *%USERPROFILE%\Documents\Visual studio 2017\Code Snippets\Visual Basic\My kod parçacıkları*
 
-6.  Visual Basic projesinde açarak ve bir kod dosyasını açma, kod parçacığında sınayın. Dosya **parçacıkları**, **Ekle parçacığı** bağlam menüsünde **My kod parçacıkları**. Adlı bir parçacığı görmelisiniz **My Visual Basic kod parçacığını**. Çift tıklatın.
+6.  Visual Basic projesinde açarak ve bir kod dosyasını açma, kod parçacığında sınayın. Dosya **parçacıkları** > **Ekle parçacığı** bağlam menüsünde **My kod parçacıkları**. Adlı bir parçacığı görmelisiniz **My Visual Basic kod parçacığını**. Çift tıklatın.
 
     `Console.WriteLine("Hello, World!")` kod dosyasında eklenir.
 
-### <a name="adding-description-and-shortcut-fields"></a>Açıklama ve kısayol alanlarını ekleme
+### <a name="add-description-and-shortcut-fields"></a>Açıklama ve kısayol alanlarını ekleme
 
-1.  Açıklama alanlarını kod parçacıkları Yöneticisi'nde görüntülendiğinde, kod parçacığında hakkında daha fazla bilgi verin. Kullanıcılar, parçacığını eklemek için yazın bir etiket kısayoludur. Dosya %USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My kod Snippet\VBCodeSnippet.snippet açarak eklediğiniz parçacığı düzenleyin.
+1.  Açıklama alanlarını kod parçacıkları Yöneticisi'nde görüntülendiğinde, kod parçacığında hakkında daha fazla bilgi verin. Kullanıcılar, parçacığını eklemek için yazın bir etiket kısayoludur. Dosyasını açarak eklediğiniz parçacığı düzenleme *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My kod Snippet\VBCodeSnippet.snippet*.
 
-2.  Üstbilgi öğesi yazar ve açıklama öğeleri ekleyin ve bunları doldurun.
+2.  Ekleme **Yazar** ve **açıklama** öğelerine **üstbilgi** öğesi, bunları doldurun.
 
-3.  Üstbilgi öğesi aşağıdakine benzer görünmelidir:
+3.  **Üstbilgi** öğesi aşağıdakine benzer görünmelidir:
 
     ```xml
     <Header>
@@ -100,9 +100,9 @@ Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapman
     </Header>
     ```
 
-4.  Kod parçacıkları Yöneticisi'ni açın ve kod parçacığını seçin. Sağ bölmede açıklama ve Yazar alanları artık doldurulur görmeniz gerekir.
+4.  Açık **kod parçacıkları Yöneticisi** ve kod parçacığını seçin. Sağ bölmede, görmelisiniz **açıklama** ve **Yazar** alanları artık doldurulur.
 
-5.  Bir kısayol eklemek için bir kısayol öğesi yazarı yanında ve Description öğesi ekleyin:
+5.  Kısayol eklemek için Ekle bir **kısayol** yanında öğesi **Yazar** ve **açıklama** öğe:
 
     ```xml
     <Header>
@@ -119,13 +119,13 @@ Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapman
 
     Kod parçacığında kodu eklenir.
 
-### <a name="to-add-references-and-imports"></a>References ve Imports eklemek için
+### <a name="add-references-and-imports"></a>References ve Imports ekleme
 
-1.  References öğesi kullanarak bir projesine bir başvuru ekleyin ve içeri aktarmalar öğesini kullanarak bir içeri aktarmalar bildirimi ekleyin. (Bu C# ' de çalışır.) Örneğin, değiştirirseniz `Console.WriteLine` kod örneğinde `MessageBox.Show`, projeye System.Windows.Forms.dll derleme eklemeniz gerekebilir.
+1.  Kullanarak bir projesine bir başvuru ekleyebilirsiniz **başvuruları** öğesi ve bir içeri aktarmalar bildirimi kullanarak eklemek **içeri aktarmalar** öğesi. (Bu C# ' de çalışır.) Örneğin, değiştirirseniz `Console.WriteLine` kod örneğinde `MessageBox.Show`, eklemeniz gerekebilir *System.Windows.Forms.dll* projeye derleme.
 
 2.  Kod parçacığında açın.
 
-3.  References öğesi parçacığı öğesi altında ekleyin:
+3.  Ekleme **başvuruları** öğesinin altında **parçacığı** öğe:
 
     ```xml
     <References>
@@ -135,7 +135,7 @@ Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapman
     </References>
     ```
 
-4.  İçeri aktarmalar öğesinin parçacığı öğesi altında ekleyin:
+4.  Ekleme **içeri aktarmalar** öğesinin altında **parçacığı** öğe:
 
     ```xml
     <Imports>
@@ -145,7 +145,7 @@ Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapman
     </Imports>
     ```
 
-5.  CDATA bölümü aşağıdaki gibi değiştirin:
+5.  Değişiklik **CDATA** aşağıdaki bölüme:
 
     ```xml
     <![CDATA[MessageBox.Show("Hello, World!")]]>
@@ -155,21 +155,21 @@ Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapman
 
 7.  Visual Basic projesinde açın ve kod parçacığını ekleyin.
 
-8.  Imports deyimi kod dosyasının üst görürsünüz:
+8.  Göreceğiniz bir `Imports` kod dosyasının üst deyimi:
 
     ```vb
     Imports System.Windows.Forms
     ```
 
-9. Projenin özelliklerine bakın. Başvurular sekmesini System.Windows.Forms.dll bir başvuru içeriyor.
+9. Projenin özelliklerine bakın. **Başvuruları** sekmesi içerir başvuru *System.Windows.Forms.dll*.
 
-### <a name="adding-replacements"></a>Değişiklik ekleme
+### <a name="add-replacements"></a>Değişiklik ekleme
 
 1.  Örneğin bir değişkeni ekleyin ve bir geçerli projede değişkeni yerine kullanıcıya istediğiniz kullanıcı tarafından değiştirilmesi, kod parçacıkları bölümlerini isteyebilirsiniz. İki tür değişiklik sağlayabilir: değişmez değerler ve nesneler. Değişmez değerler (dize değişmez değerleri, değişken adları veya sayısal değerleri dize gösterimlerini), bazı türündeki dizelerdir. Tür bir dize dışında örneklerini nesneleridir. Bu yordamda değişmez değer değiştirme ve bir nesne değiştirme bildirme ve bu değişiklik başvurmak için kodu değiştirin.
 
 2.  Kod parçacığında açın.
 
-3.  Bu örnek, bir SQL bağlantı dizesi kullanır, bu nedenle uygun başvuruları eklemek için içeri aktarmalar ve başvurular öğelerini değiştirmeniz gerekir:
+3.  Değişiklik yapmanız Bu örnek bir SQL bağlantı dizesi kullanır, bu nedenle **içeri aktarmalar** ve **başvuruları** uygun başvuruları eklemek için öğeleri:
 
     ```xml
     <References>
@@ -190,7 +190,7 @@ Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapman
     </Imports>
     ```
 
-4.  Değişmez değer yerine yeni bir SQL bağlantı dizesi için bildirmek için kod parçacığında öğesi altında bildirimleri öğesi ekleyin ve içinde Kimliğini, araç ipucu ve değiştirme için varsayılan değer alt öğeleri olan bir değişmez değer öğesi ekleyin:
+4.  Değişmez değer yerine yeni bir SQL bağlantı dizesi için bildirmek için ekleyin bir **bildirimleri** öğesinin altında **parçacığı** öğesi ve bunu ekleyin bir **değişmez değer** olan öğesi alt kimliği, araç ipucu ve değiştirme için varsayılan değer:
 
     ```xml
     <Declarations>
@@ -202,7 +202,7 @@ Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapman
     </Declarations>
     ```
 
-5.  SQL bağlantısı için bir nesne değiştirme bildirmek için nesne öğe bildirimleri öğesinin içine ekleyin ve kimliği için alt öğeleri, nesne, araç ipucu ve varsayılan değer türü ekleyin. Sonuçta elde edilen bildirimleri öğesi aşağıdaki gibi görünmelidir:
+5.  SQL bağlantısı için bir nesne değiştirme bildirmek için ekleyin bir **nesne** öğesi içinde **bildirimleri** öğesi ve alt öğeleri kimliği, nesne, araç ipucu ve varsayılan tür ekleyin değer. Elde edilen **bildirimleri** öğesi aşağıdaki gibi görünmelidir:
 
     ```xml
     <Declarations>
@@ -252,4 +252,4 @@ Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapman
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Kod Parçacıkları Şema Başvurusu](../ide/code-snippets-schema-reference.md)
+- [Kod parçacıkları şema başvurusu](../ide/code-snippets-schema-reference.md)

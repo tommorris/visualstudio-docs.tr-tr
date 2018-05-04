@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dd4284e242f91525e14630375d5ea624968f60c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
-C++ için IntelliSense de tek başına dosyaları, C++ projesinin bir parçası olan dosyalar için kullanılabilir. Bir Android veya iOS bağlamında olduğunda bile platformlar arası projelerinde IntelliSense özelliklerinden bazıları .cpp ve .c dosyaları paylaşılan kod projesinde, kullanılabilir.
+C++ için IntelliSense de tek başına dosyaları, C++ projesinin bir parçası olan dosyalar için kullanılabilir. Platformlar arası projelerinde IntelliSense özelliklerinden bazıları kullanılabilir olan *.cpp* ve *.c* paylaşılan kod projesinde bir Android veya iOS bağlamında olduğunda bile dosya.
 
 ## <a name="intellisense-features-in-c"></a>C++'ta IntelliSense özellikleri
 
@@ -73,34 +73,34 @@ Burada, Android ve iOS için oluşturmak için yapılandırılmış bir OpenGLES
 
 Aşağıdakilere dikkat edin:
 
-- # 8 satırındaki else dalı gri çıkışı etkin olmayan bölge belirtmek için çünkü __ANDROID\_ \_ Android projesi için tanımlanmış.
+- `#else` Satır 8 dalda gri çıkışı etkin olmayan bölge belirtmek için çünkü `__ANDROID__` Android projesi için tanımlanmış.
 
-- Satırı 11 Tebrik değişkeni mor dalgalı sahip HELLO tanımlayıcısıyla başlatılır. Hiçbir tanımlayıcı HELLO şu anda etkin iOS projesinde tanımlanmış olmasıdır. Android projesi satır 11 derleme, ancak iOS olmaz. Bu, bir şeyin paylaşılan kod olduğundan şu anda etkin yapılandırmasında derler olsa da değiştirmeniz gerekir.
+- Satırı 11 Tebrik değişkeni tanımlayıcısıyla başlatılır `HELLO`, mor dalgalı sahiptir. Bunun nedeni, hiçbir tanımlayıcı `HELLO` şu anda etkin iOS projesinde tanımlanır. Android projesi satır 11 derleme, ancak iOS olmaz. Bu, bir şeyin paylaşılan kod olduğundan şu anda etkin yapılandırmasında derler olsa da değiştirmeniz gerekir.
 
-- Satırı 12 kırmızı dalgalı BYE tanımlayıcısı içeriyor; Bu tanımlayıcı şu anda seçili etkin projedeki tanımlı değil.
+- Çizgi 12 bulunan kırmızı dalgalı tanımlayıcısı `BYE`; bu tanımlayıcı şu anda seçili etkin projedeki tanımlı değil.
 
-Şimdi, etkin proje için iOS.StaticLibrary değiştirmek ve dalgalı çizgiler nasıl değiştiğini dikkat edin.
+Şimdi, etkin projeye değiştirmek **iOS.StaticLibrary** ve dalgalı çizgiler nasıl değiştiğini dikkat edin.
 
 ![iOS etkin projesi olarak seçilir. ] (../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
 
 Aşağıdakilere dikkat edin:
 
-- Satır 6 #ifdef şube etkin olmayan bölge belirtmek için çünkü gri __ANDROID\_ \_ iOS projesi için tanımlı değil.
+- `#ifdef` Satır 6 dalda gri çıkışı etkin olmayan bölge belirtmek için çünkü `__ANDROID__` iOS projesi için tanımlı değil.
 
-- Satırı 11 Tebrik değişkeni şimdi kırmızı dalgalı sahip HELLO tanımlayıcısıyla başlatılır. Hiçbir tanımlayıcı HELLO şu anda etkin iOS projesinde tanımlanmış olmasıdır.
+- Satırı 11 Tebrik değişkeni tanımlayıcısıyla başlatılır `HELLO`, şimdi kırmızı dalgalı sahiptir. Bunun nedeni, hiçbir tanımlayıcı `HELLO` şu anda etkin iOS projesinde tanımlanır.
 
-- Satırı 12 mor dalgalı BYE tanımlayıcısı içeriyor; Bu tanımlayıcı, şu anda etkin Android.NativeActivity projesinde tanımlanmadı.
+- Satır 12 sahip mor dalgalı tanımlayıcısı `BYE`; bu tanımlayıcı tanımlı değil şu anda etkin **Android.NativeActivity** projesi.
 
 ### <a name="intellisense-for-stand-alone-files"></a>Tek başına dosyaları için IntelliSense
 
-Herhangi bir projenin dışında tek bir dosyayı açtığınızda, IntelliSense hala alın. Etkinleştirmek veya belirli IntelliSense özelliklerini devre dışı **seçenekleri** iletişim kutusunda **metin düzenleyici** > **C/C++**  >  **Gelişmiş**. IntelliSense, projesinin bir parçası olmayan tek dosyaları için yapılandırmak için Ara **IntelliSense ve proje dışı dosyaları için gözatma** bölümü.
+Herhangi bir projenin dışında tek bir dosyayı açtığınızda, IntelliSense hala alın. Etkinleştirmek veya belirli IntelliSense özelliklerini devre dışı **seçenekleri** iletişim kutusunda **metin düzenleyici** > **C/C++**  >  **Gelişmiş**. IntelliSense, projesinin bir parçası olmayan tek dosyaları için yapılandırmak için Ara **IntelliSense ve proje olmayan dosyaları için gözatma** bölümü.
 
 ![Visual C&#43; &#43; tek dosya IntelliSense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 
-Varsayılan olarak, tek dosyalı IntelliSense yalnızca kullanan standart üstbilgi dosyaları bulmak için içeren dizinler. Ek dizinler eklemek için çözüm düğümde kısayol menüsünü açın ve dizininize eklemek **hata ayıklama kaynak kodu** listesinde, aşağıdaki çizimde gösterildiği gibi:
+Varsayılan olarak, tek dosyalı IntelliSense yalnızca kullanan standart üstbilgi dosyaları bulmak için içeren dizinler. Ek dizinler eklemek için kısayol menüsünü açmak **çözüm** düğümünü ve dizininize eklemek **hata ayıklama kaynak kodu** listesinde, aşağıdaki çizimde gösterildiği gibi:
 
 ![Bir yol için bir üstbilgi dosyası ekleme. ] (../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [IntelliSense Kullanma](../ide/using-intellisense.md)
+- [IntelliSense kullanma](../ide/using-intellisense.md)

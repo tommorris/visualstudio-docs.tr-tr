@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 39ec333cd7d3bebebe8baacd1c8a27f22e2b9cb4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="get-started-with-unit-testing"></a>Birim testi ile çalışmaya başlama
 
@@ -70,6 +70,9 @@ Birim testi ile yöntemi saplamalar oluşturabilirsiniz **birim testleri oluştu
 ## <a name="view-live-unit-test-results"></a>Dinamik birim test sonuçlarını görüntüleme
 
 Mstest'i, xUnit veya NUnit test çerçevesi Visual Studio 2017 veya üzeri kullanıyorsanız, birim testleri Canlı sonuçlarını görebilirsiniz.
+
+> [!NOTE]
+> Dinamik birim testi yalnızca Visual Studio 2017 Enterprise Edition'da kullanılabilir.
 
 1. Dinamik birim gelen testi Aç **Test** menüsü.
 

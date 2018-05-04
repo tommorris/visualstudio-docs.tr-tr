@@ -1,5 +1,5 @@
 ---
-title: Kullanıcı İzinleri ve Visual Studio
+title: Kullanıcı izinleri ve Visual Studio
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,13 +14,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96835e0f884494f4a6b94aa1a311b40e8a9d8ad9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 168fb9441080a9c8f61d703485b0274d91dc3189
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="user-permissions-and-visual-studio"></a>Kullanıcı İzinleri ve Visual Studio
+# <a name="user-permissions-and-visual-studio"></a>Kullanıcı izinleri ve Visual Studio
 
 Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıcı olarak çalıştırmanız gerekir.
 
@@ -32,26 +32,26 @@ Normal bir kullanıcı olarak Visual Studio IDE içinde hemen her şeyi yapabili
 |Alan|Görev|Daha fazla bilgi için|
 |----------|----------|--------------------------|
 |Yükleme|Visual Studio yükleyin.|[Visual Studio'yu yükleyin](../install/install-visual-studio.md)|
-||Yerel Yardım içeriğini yükleme, güncelleştirme veya kaldırma.|[Yerel İçeriği Yükleme ve Yönetme](../ide/install-and-manage-local-content.md)|
-|Uygulama türleri|SharePoint çözümleri geliştirme.|[SharePoint Çözümleri Geliştirmek için Gereksinimler](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|
+||Yerel Yardım içeriğini yükleme, güncelleştirme veya kaldırma.|[Yükleme ve yerel içeriği yönetme](../ide/install-and-manage-local-content.md)|
+|Uygulama türleri|SharePoint çözümleri geliştirme.|[SharePoint çözümleri geliştirmek için gereksinimler](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|
 ||Geliştirici lisansı alınırken [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Bir geliştirici lisansı alma](http://go.microsoft.com/fwlink/?LinkID=241313)|
 |Araç Kutusu|Klasik COM ekleme denetimleri için **araç**.|[Araç Kutusu](../ide/reference/toolbox.md)|
 |Eklentiler|IDE'de klasik COM kullanılarak yazılmış eklentileri yükleme ve kullanma.|[Eklentiler ve sihirbazları oluşturma](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|
-|Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanma.|[Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](/cpp/ide/understanding-custom-build-steps-and-build-events)|
-||C++ projeleri oluşturduğunuzda kayıt adımı ekleme.|[Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](/cpp/ide/understanding-custom-build-steps-and-build-events)|
-|Hata Ayıklama|Yükseltilmiş izinlerle çalışan uygulamalarda hata ayıklama.|[Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)|
-||ASP.NET web siteleri gibi farklı bir kullanıcı hesabı altında çalışan uygulamalarda hata ayıklama.|[ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)|
+|Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanma.|[Özel derleme adımları anlayın ve derleme olayları](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+||C++ projeleri oluşturduğunuzda kayıt adımı ekleme.|[Özel derleme adımları anlayın ve derleme olayları](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+|Hata Ayıklama|Yükseltilmiş izinlerle çalışan uygulamalarda hata ayıklama.|[Hata ayıklayıcısı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)|
+||ASP.NET web siteleri gibi farklı bir kullanıcı hesabı altında çalışan uygulamalarda hata ayıklama.|[ASP.NET ve AJAX uygulamalarda hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)|
 ||XAML Tarayıcı Uygulamaları (XBAP) için bölgede hata ayıklama.|[WPF Konağı (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||Microsoft Azure için bulut hizmeti projelerinde hata ayıklama için öykünücü kullanma.|[Bir bulut hizmeti Visual Studio'da hata ayıklama](http://go.microsoft.com/fwlink/?LinkId=266725)|
 ||Uzaktan hata ayıklama için bir güvenlik duvarı yapılandırma.|[Uzaktan hata ayıklama](../debugger/remote-debugging.md)|
 |Performans araçları|Uygulama profili oluşturma.|[Performans profili oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md)|
-|Dağıtım|Yerel bir bilgisayarda Internet Information Services'a (IIS) web uygulaması dağıtma.|[Visual Studio veya Visual Web Developer kullanılarak bir barındırma sağlayıcısına ASP.NET Web uygulaması dağıtma: bir Test ortamı olarak IIS dağıtma](http://go.microsoft.com/fwlink/?LinkId=266478)|
+|Dağıtım|Yerel bir bilgisayarda Internet Information Services'a (IIS) web uygulaması dağıtma.|[Visual Studio veya Visual Web Developer kullanılarak bir barındırma sağlayıcısına ASP.NET Web uygulaması dağıtma: bir test ortamı olarak IIS dağıtma](http://go.microsoft.com/fwlink/?LinkId=266478)|
 
-## <a name="running-visual-studio-as-an-administrator"></a>Visual Studio'yu Yönetici olarak çalıştırma
+## <a name="run-visual-studio-as-an-administrator"></a>Visual Studio bir yönetici olarak çalıştır
 
 IDE'yi her başlattığınızda Visual Studio'yu yönetim izinleri ile başlatabilir veya uygulama kısayolunu her zaman yönetim izinleriyle çalışacak şekilde değiştirebilirsiniz. Daha fazla bilgi için bkz. Windows Yardımı.
 
-### <a name="to-run-visual-studio-with-administrative-permissions"></a>Visual Studio Yönetici izinleriyle çalıştırmak için
+### <a name="run-visual-studio-with-administrative-permissions"></a>Visual Studio Yönetici izinleriyle çalıştırın
 
 Bu yönergeler, Windows 10 için içindir. Bunlar diğer Windows sürümleri için benzerdir.
 
@@ -63,5 +63,5 @@ Bu yönergeler, Windows 10 için içindir. Bunlar diğer Windows sürümleri iç
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio Projelerini Taşıma, Geçirme ve Yükseltme](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+- [Bağlantı noktası, geçirme ve Visual Studio projelerini yükseltme](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Visual Studio'yu yükleyin](../install/install-visual-studio.md)

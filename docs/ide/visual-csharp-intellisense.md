@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 353a5100337d295f7265fb376e363e2520e6c9e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -34,7 +34,7 @@ C# IntelliSense tamamlanma listeleri belirteçlerinden listesi üyeleri, tam sö
 
 - Dil anahtar sözcükleri
 
-- Uzantı Metotları
+- Genişletme yöntemleri
 
 Tamamlama C# ' de ilgisiz belirteçleri filtreleyip bağlamına dayalı bir belirteç önceden seçmek akıllı listesidir. Daha fazla bilgi için bkz: [filtrelenmiş tamamlanma listeleri](#filtered-completion-lists).
 
@@ -67,11 +67,11 @@ IntelliSense filtreleri kullanarak gereksiz üyeleri tamamlama listesinden kald�
 
 - **Nesne başlatıcıları**: yalnızca başlatılabilir üyeleri tamamlama listesinde görünecektir.
 
-- **Yeni anahtar sözcük**: yazdığınızda `new` ve ardından bir tamamlanma listesi görüntülenir Ara çubuğuna basın. Bir öğe listesinde, kodunuzu bağlamda göre otomatik olarak seçilir. Örneğin, öğeleri yöntemleri return deyimleri ve bildirimler için tamamlama listesindeki otomatik olarak seçilir.
+- **Yeni anahtar sözcük**: yazdığınızda `new` ve tuşuna basarak **alanı**, tamamlanma listesi görüntülenir. Bir öğe listesinde, kodunuzu bağlamda göre otomatik olarak seçilir. Örneğin, öğeleri yöntemleri return deyimleri ve bildirimler için tamamlama listesindeki otomatik olarak seçilir.
 
-- **enum anahtar sözcüğü**: eşittir işaretinden sonra enum atama için Ara çubuğuna basın, tamamlanma listesi görüntülenir. Bir öğe listesinde, kodunuzu bağlamda göre otomatik olarak seçilir. Örneğin, öğeleri otomatik tamamlama listesinde return anahtar sözcüğü yazdıktan sonra ve bir bildirimi yaptığınızda seçilir.
+- **enum anahtar sözcüğü**: bastığınızda **alanı** bir enum atama için eşittir işaretinden sonra tamamlanma listesi görüntülenir. Bir öğe listesinde, kodunuzu bağlamda göre otomatik olarak seçilir. Örneğin, öğeleri otomatik tamamlama listesinde return anahtar sözcüğü yazdıktan sonra ve bir bildirimi yaptığınızda seçilir.
 
-- **olarak ve is işleçlerini**: yazdığınız sonra Ara çubuğu tuşlarına basın, filtrelenmiş tamamlanma listesini otomatik olarak görüntülenen `as` veya `is` anahtar sözcüğü.
+- **olarak ve is işleçlerini**: bastığınızda filtrelenmiş tamamlanma listesini otomatik olarak görüntülenen **alanı** yazdığınız sonra `as` veya `is` anahtar sözcüğü.
 
 - **Olayları**: anahtar sözcüğü yazdığınızda `event`, tamamlanma listesi yalnızca temsilci türleri içerir.
 
@@ -83,15 +83,15 @@ IntelliSense hatırlıyor açılır pencerede yakın zamanda seçtiğiniz üyele
 
 ## <a name="override"></a>override
 
-Yazdığınızda [geçersiz kılma](/dotnet/csharp/language-reference/keywords/override) ve Ara çubuğu tuşlarına basın, IntelliSense bir açılır liste kutusunda kılabilirsiniz geçerli bir taban sınıf üyelerin tümünü görüntüler. Sonraki yöntemin dönüş türünü yazarak `override` yalnızca aynı türü döndüren yöntemler göstermek için IntelliSense ister. IntelliSense eşleşmeleri bulamazsa, tüm taban sınıfı üyeleri görüntülenir.
+Yazdığınızda [geçersiz kılma](/dotnet/csharp/language-reference/keywords/override) ve tuşuna basarak **alanı**, IntelliSense bir açılır liste kutusunda kılabilirsiniz geçerli bir taban sınıf üyelerin tümünü görüntüler. Sonraki yöntemin dönüş türünü yazarak `override` yalnızca aynı türü döndüren yöntemler göstermek için IntelliSense ister. IntelliSense eşleşmeleri bulamazsa, tüm taban sınıfı üyeleri görüntülenir.
 
-## <a name="automatic-code-generation"></a>Otomatik Kod Oluşturma
+## <a name="automatic-code-generation"></a>Otomatik kod oluşturma
 
 ### <a name="add-using"></a>using Ekle
 
 **Kullanarak ekleyin** IntelliSense işlemi otomatik olarak ekler gerekli `using` kod dosyanıza yönergesi. Bu özellik, odağınız yazmak yerine, başka bir kod kısmına odağınız shift gerek kodu tutmanızı sağlar.
 
-İşlemi kullanarak Ekle başlatmak için imleci çözümlenemeyen türü üzerinde bir başvuru getirin. Örneğin, ne zaman, bir konsol uygulaması oluşturun ve ardından ekleyin `XmlTextReader` gövdesi için `Main` yöntemi, kırmızı dalgalı görünür kod söz konusu satıra tür başvurusu çözümlenemiyor. Ardından Ekle hızlı eylemini kullanarak da çağırabilirsiniz. İmleç ilişkisiz türünde konumlandırıldığında hızlı eylem yalnızca görünür olur.
+Başlatmak için **kullanarak ekleyin** işlemi, bir tür imleç başvuru konumu çözümlenemiyor. Örneğin, ne zaman, bir konsol uygulaması oluşturun ve ardından ekleyin `XmlTextReader` gövdesi için `Main` yöntemi, kırmızı dalgalı görünür kod söz konusu satıra tür başvurusu çözümlenemiyor. Ardından çağırabileceği **kullanarak ekleyin** aracılığıyla **hızlı Eylemler**. **Hızlı Eylemler** imleç ilişkisiz türünde konumlandırıldığında görülebilir.
 
 ![Kullanarak, hızlı eylem genişletilmiş görüntüsü eklemek](../ide/media/addusing-quickaction.png "AddUsing QuickAction")
 
@@ -101,17 +101,17 @@ Ampul simgesine tıklayın ve ardından **System.Xml; kullanarak** kullanarak ot
 
 **Kaldır ve kullanımları sıralama** seçeneği sıralar ve kaldırır `using` ve `extern` kaynak kodunu davranışını değiştirmeden bildirimleri. Zaman içinde kaynak dosyaları bloated ve gereksiz ve düzensiz nedeniyle okunması zor hale gelebilir `using` yönergeleri. **Kaldır ve kullanımları sıralama** seçeneği sıkıştırır kaynak kodu kullanılmayan kaldırarak `using` yönergeleri ve sıralayarak okunabilirliğini artırır. Üzerinde **Düzenle** menüsünde seçin **IntelliSense**ve ardından **düzenlemek kullanımları**.
 
-### <a name="implement-interface"></a>Arabirimi Uygulama
+### <a name="implement-interface"></a>Arabirimi uygulama
 
-IntelliSense uygulamanıza yardımcı olmak için bir seçenek sunar bir [arabirimi](/dotnet/csharp/language-reference/keywords/interface) Kod düzenleyicisinde çalışırken. Normalde, bir arabirim düzgün bir şekilde uygulamak için bir yöntem bildirimi arabirimi her üyesi için sınıfınızda oluşturmanız gerekir. Sınıf bildiriminde bir arabirim adını yazdıktan sonra IntelliSense, kullanma, hızlı Eylemler ampul görüntülenir. Ampul açık veya örtülü adlandırma kullanarak arabirimi otomatik olarak uygulamak için seçeneği sunar. Açık adlandırma altında yöntem bildirimleri arabirimin adını taşıyan; örtük adlandırma altında yöntem bildirimleri ait oldukları arabirimi göstermiyor. Açık olarak adlandırılmış arabirim yöntemi yalnızca bir sınıf örneği üzerinden değil ve bir arabirim örneğinin aracılığıyla erişilebilir. Daha fazla bilgi için bkz: [açık arabirim uygulaması](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
+IntelliSense uygulamanıza yardımcı olmak için bir seçenek sunar bir [arabirimi](/dotnet/csharp/language-reference/keywords/interface) Kod düzenleyicisinde çalışırken. Normalde, bir arabirim düzgün bir şekilde uygulamak için bir yöntem bildirimi arabirimi her üyesi için sınıfınızda oluşturmanız gerekir. Bir sınıf bildiriminde bir arabirim adını yazdıktan sonra IntelliSense, kullanarak bir **hızlı Eylemler** ampul görüntülenir. Ampul açık veya örtülü adlandırma kullanarak arabirimi otomatik olarak uygulamak için seçeneği sunar. Açık adlandırma altında yöntem bildirimleri arabirimin adını taşıyan; örtük adlandırma altında yöntem bildirimleri ait oldukları arabirimi göstermiyor. Açık olarak adlandırılmış arabirim yöntemi yalnızca bir sınıf örneği üzerinden değil ve bir arabirim örneğinin aracılığıyla erişilebilir. Daha fazla bilgi için bkz: [açık arabirim uygulaması](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
 
 Arabirimi uygulama arabirimi karşılamak için gerekli en az sayıda yöntemi saplamalar oluşturur. Ardından bir taban sınıf arabirimi bölümlerini uyguluyorsa, bu saplamalar yeniden oluşturulmaz.
 
 ### <a name="implement-abstract-base-class"></a>Soyut taban sınıfı uygulama
 
-IntelliSense kod düzenleyicisinde çalışırken bir soyut taban sınıfı üyeleri otomatik olarak uygulamanıza yardımcı olmak için bir seçenek sağlar. Normalde, bir soyut üyelerini uygulama için temel sınıf türetilmiş sınıfında yeni bir yöntem tanımını her yöntemi için Özet temel sınıf oluşturma gerektirir. IntelliSense, sınıf bildiriminde Özet temel sınıf adını yazdıktan sonra kullanarak, hızlı Eylemler ampul görüntülenir. Ampul taban sınıf yöntemlerini otomatik olarak uygulamak için seçeneği sunar.
+IntelliSense kod düzenleyicisinde çalışırken bir soyut taban sınıfı üyeleri otomatik olarak uygulamanıza yardımcı olmak için bir seçenek sağlar. Normalde, bir soyut üyelerini uygulama için temel sınıf türetilmiş sınıfında yeni bir yöntem tanımını her yöntemi için Özet temel sınıf oluşturma gerektirir. Bir sınıf bildiriminde Özet temel sınıf adını yazdıktan sonra IntelliSense, kullanarak bir **hızlı Eylemler** ampul görüntülenir. Ampul taban sınıf yöntemlerini otomatik olarak uygulamak için seçeneği sunar.
 
-Uygulama Özet temel sınıf özelliği tarafından oluşturulan yöntemi saplamalar, MethodStub.snippet dosyasında tanımlanan kod parçacığını tarafından modellenir. Kod parçacıkları değiştirilebilir. Daha fazla bilgi için bkz: [izlenecek yol: kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md).
+Tarafından oluşturulan yöntemi saplamalar **uygulama Özet temel sınıf** özelliği dosyasında tanımlanan kod parçacığını tarafından modellenir *MethodStub.snippet*. Kod parçacıkları değiştirilebilir. Daha fazla bilgi için bkz: [izlenecek yol: kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Kullanımdan oluştur
 
@@ -119,9 +119,9 @@ Uygulama Özet temel sınıf özelliği tarafından oluşturulan yöntemi saplam
 
 Kırmızı dalgalı alt çizgi her tanımlanmamış tanımlayıcı altında görüntülenir. Tanımlayıcının fare işaretçisini, bir araç ipucunda bir hata iletisi görüntülenir. Uygun seçenekleri görüntülemek için aşağıdaki yordamlardan birini kullanabilirsiniz:
 
-- Tanımlanmamış tanımlayıcı'ı tıklatın. Hızlı Eylemler ampul tanımlayıcı altında görüntülenir. Ampul'ı tıklatın.
+- Tanımlanmamış tanımlayıcı'ı tıklatın. A **hızlı Eylemler** ampul tanımlayıcı altında görüntülenir. Ampul'ı tıklatın.
 
-- Tanımlanmamış tanımlayıcı tıklayın ve sonra basın **Ctrl** + **.** (Ctrl + dönemi).
+- Tanımlanmamış tanımlayıcı tıklayın ve sonra basın **Ctrl**+**.** (**Ctrl** + nokta).
 
 - Tanımlanmamış tanımlayıcı sağ tıklayın ve ardından **hızlı Eylemler ve yapan yeniden düzenlemeler**.
 
@@ -135,17 +135,17 @@ Görünen seçenekleri şunları içerebilir:
 
 - **Sınıf oluşturma**
 
-- **Yeni türü oluştur...**  (için bir sınıf, yapı, arabirim veya enum)
+- **Yeni türü** (için bir sınıf, yapı, arabirim veya enum)
 
 ## <a name="generate-event-handlers"></a>Olay işleyicileri oluşturma
 
 Kod Düzenleyicisi'nde IntelliSense olay alanlarına yöntemlerini (olay işleyicileri) bağlanmanıza yardımcı olabilir.
 
-Yazdığınızda `+=` işleci .cs dosyasında bir olay alan sonra IntelliSense sizden basın seçeneğine **sekmesini** anahtarı. Olay işleme yöntemi işaret eden temsilci yeni bir örneğini ekler.
+Yazdığınızda `+=` işleci bir olay alanında sonra bir *.cs* dosya, IntelliSense sizden basın seçeneğine **sekmesini** anahtarı. Olay işleme yöntemi işaret eden temsilci yeni bir örneğini ekler.
 
 ![Düğme otomatik kanca yukarı](../ide/media/vxautohookup.gif "vxAutoHookUp")
 
-Basarsanız **sekmesini**, IntelliSense otomatik olarak sizin için deyim tamamlandıktan ve olay işleyici başvurusu Kod Düzenleyicisi'nde seçili metin olarak görüntüler. Otomatik olay bağlantı tamamlamak için IntelliSense basın ister **sekmesini** olay işleyicisi için boş bir saplama yeniden oluşturmak için anahtar.
+Basarsanız **sekmesini**, IntelliSense otomatik olarak sizin için deyim tamamlandıktan ve olay işleyici başvurusu Kod düzenleyicisinde seçili metin olarak görüntüler. Otomatik olay bağlantı tamamlamak için IntelliSense basın ister **sekmesini** olay işleyicisi için boş bir saplama yeniden oluşturmak için anahtar.
 
 ![Olay işleyicisi oluşturmak](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
 
@@ -155,9 +155,9 @@ Basarsanız **sekmesini**, IntelliSense otomatik olarak sizin için deyim tamaml
 Basarsanız **sekmesini**, IntelliSense doğru imzalı bir yöntemini yerleştirir ve imleci, olay işleyicisi gövdesinde yerleştirir.
 
 > [!NOTE]
-> Kullanım **geriye Git** komutunu **Görünüm** menü (**Ctrl** + **-**) olayı geri dönmek için bağlantı açıklaması.
+> Kullanım **geriye Git** komutunu **Görünüm** menü (**Ctrl**+**-**) olayı geri dönmek için bağlantı açıklaması.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [IntelliSense Kullanma](../ide/using-intellisense.md)
+- [IntelliSense kullanma](../ide/using-intellisense.md)
 - [Visual Studio IDE](../ide/visual-studio-ide.md)

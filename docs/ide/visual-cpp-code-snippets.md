@@ -11,11 +11,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eca50a938312f6c463ff661c83fd90c9218b5ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb091701384d36ca5aa8154701d94cda5fb34a5b
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ kod parçacıkları
 
@@ -23,9 +23,9 @@ Visual Studio'da kod parçacıkları, yaygın olarak kullanılan kod C++ kodu do
 
 Kod parçacığı belirli bir konumda kodunuzda (ekleme) ekleyebilir veya bir kod parçacığı seçili bazı koduyla çevreleyen.
 
-## <a name="inserting-a-code-snippet"></a>Kod parçacığı ekleme
+## <a name="insert-a-code-snippet"></a>Kod parçacığı ekleme
 
-Kod parçacığı eklemek için (.cpp veya .h) C++ kod dosyasını açın ve herhangi bir yerde içindeki dosyanın aşağıdakilerden birini yapın:
+Kod parçacığı eklemek için bir C++ kod dosyasını açın (*.cpp* veya *.h*) içindeki dosyanın bir yere tıklayın ve aşağıdakilerden birini yapın:
 
 - Bağlam menüsü alma ve seçmek için sağ **parçacığı Ekle**
 
@@ -41,9 +41,9 @@ Kod parçacığı eklemek için (.cpp veya .h) C++ kod dosyasını açın ve her
 #endif // 0
 ```
 
-0 ile doğru koşul daha sonra değiştirebilirsiniz.
+Daha sonra değiştirebilirsiniz **0** doğru koşulu.
 
-## <a name="using-a-code-snippet-to-surround-selected-code"></a>Seçili kod surround için bir kod parçacığı kullanma
+## <a name="use-a-code-snippet-to-surround-selected-code"></a>Seçili kod surround için bir kod parçacığı kullanın
 
 Seçili kod surround için bir kod parçacığı kullanmak için bir satırı (veya birden çok satır) seçin ve aşağıdakilerden birini yapın:
 
@@ -51,7 +51,7 @@ Seçili kod surround için bir kod parçacığı kullanmak için bir satırı (v
 
 - Gelen **Düzenle** > **IntelliSense** menüsünde, select **Surround With**
 
-- Klavyeyi kullanarak tuşuna basın: **CTRL**+**K**+**S**
+- Klavyeyi kullanarak tuşuna basın: **Ctrl**+**K**+**S**
 
 Seçin **#if**. Şöyle bir şey görmeniz gerekir:
 
@@ -71,7 +71,7 @@ Giderek C++ kod parçacıkları tam listesini bulabilirsiniz **kod parçacıklar
 
 ## <a name="class-vs-classi"></a>Sınıf classi karşılaştırması
 
-**Sınıfı** parçacığı MyClass, burada tanımları oluşturucusu ve yıkıcı bulunur sınıf dışında bir yıkıcı ve uygun varsayılan oluşturucu ile adlı bir sınıf tanımını sağlar:
+**Sınıfı** parçacığı sağlar adlı bir sınıf tanımını `MyClass`, burada tanımları oluşturucusu ve yıkıcı bulunur sınıf dışında bir yıkıcı ve uygun varsayılan oluşturucu ile:
 
 ```cpp
 class MyClass
@@ -93,7 +93,7 @@ MyClass::~MyClass()
 }
 ```
 
-**Classi** kod parçacığını ayrıca MyClass adlı bir sınıf tanımını sağlar, ancak varsayılan oluşturucu ve yıkıcı sınıf tanımı içinde tanımlanmıştır:
+**Classi** kod parçacığını ayrıca adlı bir sınıf tanımını sağlar `MyClass`, ancak varsayılan oluşturucu ve yıkıcı sınıf tanımı içinde tanımlanır:
 
 ```cpp
 class MyClass
@@ -153,7 +153,7 @@ class SomeClass {
 };
 ```
 
-Yok Edicisi parçacığı eklerseniz, bir yıkıcı için SomeClass sağlar:
+Yok Edicisi parçacığı eklerseniz, yıkıcı için sağladığı `SomeClass`:
 
 ```cpp
 class SomeClass {

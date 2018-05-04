@@ -11,17 +11,17 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f3a3fa14a2772171b2968514867d35ea4ad126f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d66a61693497826117715be9a9f8b96ea0e4f7c3
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Oluşturma ve Visual Studio Python ortamlarında yönetme
 
 Bir Python *ortam* conda ortamları ise, Python kodu çalıştırmak ve içeren genel, sanal bir bağlam. Bir ortam bir yorumlayıcı, bir kitaplık (genellikle Python standart kitaplığı) ve yüklü paketler kümesini oluşur. Bu bileşenlerin, birlikte hangi dil yapıları ve sözdizimi geçerli olduğunu belirlemek hangi işletim sistemi işlevselliği erişebilir ve hangi paketleri kullanabilirsiniz.
 
-Windows, Visual Studio'da [Python ortamları](#managing-python-environments-in-visual-studio) , bu makalede açıklanan penceredir burada bu ortamlarını yönetebilir ve yeni projeler için varsayılan olarak seçin. Verilen herhangi bir projeye için Ayrıca belirli bir ortam seçin yerine, varsayılan kullanın.
+Windows, Visual Studio'da [Python ortamları penceresi](#the-python-environments-window) , bu makalede açıklanan penceredir burada bu ortamlarını yönetebilir ve yeni projeler için varsayılan olarak seçin. Verilen herhangi bir projeye için Ayrıca belirli bir ortam seçin yerine, varsayılan kullanın.
 
 **Not**: Visual Studio'da Python yeniyseniz, gerekli arka plan için aşağıdaki makalelere bakın:
 

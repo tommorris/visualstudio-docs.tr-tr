@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 786077e4d02a430e78fe91aa1c405307325331eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86522beb978dee5722a919c4fa0e3a9030d5f3ad
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE genel bakış
 
@@ -55,7 +55,7 @@ Bağlantılı Hizmetler gibi kullanarak, uygulamaları için Azure services yara
 
 Bizim modern world web sürücüler ve Visual Studio, uygulamalar için yazmanıza yardımcı olabilir. ASP.NET, Node.js, Python, JavaScript ve TypeScript kullanarak web uygulamaları oluşturabilirsiniz. Visual Studio web çerçeveleri Angular, jQuery, hızlı ve daha fazlası gibi bilir. ASP.NET Core ve .NET Core Windows, Mac ve Linux işletim sistemleri üzerinde çalıştırın. [ASP.NET Core](http://www.asp.net/core/overview) MVC, Webapı ve SignalR için önemli bir güncelleştirme ve Windows, Mac ve Linux üzerinde çalıştırır.  ASP.NET Core sıfırdan yukarı .NET yalın ve birleştirilebilir sizinle modern bulut tabanlı web uygulamaları ve hizmetleri oluşturmak için yığın sağlamak için tasarlanmıştır.
 
-Daha fazla bilgi için bkz: [Modern Web Tooling](https://www.visualstudio.com/vs/modern-web-tooling/).
+Daha fazla bilgi için bkz: [Modern web araçları](https://www.visualstudio.com/vs/modern-web-tooling/).
 
 ### <a name="build-cross-platform-apps-and-games"></a>Platformlar arası uygulamaları ve oyunları derleme
 
@@ -93,7 +93,7 @@ Visual Studio ilk kez başlattığınızda, isteğe bağlı olarak Microsoft hes
 
 Bir konu hakkında bilgi edinmek için bir iyi kullanılacağını yoludur! Şimdi daha yakından inceleyin ve yeni, basit bir program oluşturun.
 
-1. Visual Studio'yu açın. Menüsünde, **dosya** > **yeni** > **proje...** .
+1. Visual Studio'yu açın. Menüsünde, **dosya** > **yeni** > **proje**.
 
   ![Dosya > Yeni Proje menü çubuğunda](../ide/media/VSIDE_Tour_NewProject1.png)
 
@@ -181,7 +181,7 @@ Visual Studio üst düzey bir görsel özeti vermek için büyük olasılıkla k
 
 Bazı diğer ortak üretkenlik Visual Studio özellikleri şunlardır:
 
-- [Hızlı başlatma](../ide/reference/quick-launch-environment-options-dialog-box.md) arama kutusudur Visual Studio'da gerekenler hızla bulmak için kullanışlı bir yoludur. Ne olursa olsun, aradığınız adına girmeye hemen başlamak ve Visual Studio tam olarak gitmek istediğiniz yere ele sonuçları listeler. Hızlı Başlatma ayrıca herhangi bir iş yükü veya tek tek bileşen için Visual Studio Yükleyicisi'ni başlatın bağlantılarını gösterir.
+- [Hızlı başlatma](../ide/reference/quick-launch-environment-options-dialog-box.md) arama kutusudur Visual Studio'da gerekenler hızla bulmak için kullanışlı bir yoludur. Ne olursa olsun, aradığınız adına girmeye hemen başlamak ve Visual Studio tam olarak gitmek istediğiniz yere ele sonuçları listeler. **Hızlı başlatma** ayrıca herhangi bir iş yükü veya tek tek bileşen için Visual Studio Yükleyicisi'ni başlatın bağlantılarını gösterir.
 
   ![Hızlı Başlatma arama kutusu](../ide/media/VSIDE_Tour_QuickLaunch.png)
 
@@ -215,15 +215,15 @@ Bazı diğer ortak üretkenlik Visual Studio özellikleri şunlardır:
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Kaynak kodunuz yönetmek ve diğer kullanıcılarla işbirliği
 
-Git depoları GitHub dahil olmak üzere tüm sağlayıcı tarafından barındırılan kaynak kodunuzda yönetebilirsiniz. Veya [Visual Studio Team Services (VSTS)](/vsts/index) kod hataları yanında yönetebilir ve iş öğeleri tüm projeniz için. Bkz: [Git ve Team Services (VSTS) ile çalışmaya başlama](/vsts/git/gitquickstart?tabs=visual-studio) Git depoları Visual Studio Takım Gezgini'ni kullanarak yönetme hakkında daha fazla bilgi edinmek için. Visual Studio ayrıca diğer yerleşik kaynak denetimi özellikleri vardır. Bunları hakkında daha fazla bilgi için bkz: [Visual Studio 2017 (blog) yeni Git özellikleri](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
+Git depoları GitHub dahil olmak üzere tüm sağlayıcı tarafından barındırılan kaynak kodunuzda yönetebilirsiniz. Veya [Visual Studio Team Services (VSTS)](/vsts/index) kod hataları yanında yönetebilir ve iş öğeleri tüm projeniz için. Bkz: [Git ve Team Services (VSTS) kullanmaya başlama](/vsts/git/gitquickstart?tabs=visual-studio) Git depoları Visual Studio Takım Gezgini'ni kullanarak yönetme hakkında daha fazla bilgi edinmek için. Visual Studio ayrıca diğer yerleşik kaynak denetimi özellikleri vardır. Bunları hakkında daha fazla bilgi için bkz: [Visual Studio 2017 (blog)'deki yeni Git Özellikler](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
 
 Visual Studio Team Services yazılım projelerinin barındırma ve ekip işbirliği etkinleştirmek için bir bulut tabanlı bir hizmettir. VSTS Git ve Team Foundation kaynak denetimi sistemleri gibi Scrum, CMMI ve Çevik Geliştirme yöntemlerini destekler. Team Foundation sürüm denetimi (TFVC'yi) izlemek için bir tek, merkezi bir sunucu havuzu ve sürüm dosyalarını kullanır. Yerel değişiklikleri her zaman diğer geliştiricileri en son değişiklikleri nereden merkezi sunucu denetlenir.
 
 Team Foundation Server (TFS) için Visual Studio uygulama yaşam döngüsü yönetimi hub'ı ' dir. Tek bir çözüm kullanarak katılmayı geliştirme işlemine dahil edilen herkes sağlar. TFS, heterojen takımlar ve projeler, çok yönetmek için yararlıdır.
 
-Ağınızdaki bir Visual Studio Team Services hesabı veya Team Foundation Server varsa için Visual Studio Takım Gezgini penceresinde aracılığıyla bağlayın. Bu pencereden kodu ya da kaynak denetiminden kontrol, iş öğelerini yönetmek, derlemeleri ve erişim takım odaları ve çalışma alanları başlatma. Takım Gezgini'nden açabilirsiniz **hızlı başlatma** kutusunda veya ana menüden **görünüm, Takım Gezgini** veya **takım, bağlantılarını yönet**.
+Ağınızdaki bir Visual Studio Team Services hesabı veya Team Foundation Server varsa üzerinden bağlandığınız **Takım Gezgini** Visual Studio'daki. Bu pencereden kodu ya da kaynak denetiminden kontrol, iş öğelerini yönetmek, derlemeleri ve erişim takım odaları ve çalışma alanları başlatma. Açabilirsiniz **Takım Gezgini** gelen **hızlı başlatma** kutusunda veya ana menüden **Görünüm** > **Takım Gezgini** veya **Takım** > **bağlantılarını yönetme**.
 
-Aşağıdaki resimde VSTS içinde barındırılan bir çözüm için Takım Gezgini penceresi gösterir.
+Aşağıdaki resimde gösterildiği **Takım Gezgini** VSTS içinde barındırılan bir çözüm için penceresi.
 
 ![Visual Studio Takım Gezgini](../ide/media/vs2017_teamexplorer.png)
 
@@ -235,13 +235,13 @@ Bulut bugünün çevrimiçi dünya için kritik öneme sahiptir ve Visual Studio
 
 ![Bağlı hizmetler](../ide/media/VSIDE_Tour_Connected_Services.png)
 
-Üzerinde bir hizmet seçme **bağlantılı Hizmetler** bir bağlı Hizmetleri projenizi yapılandıran Sihirbazı başlatılır ve yüklemeleri başlamanıza yardım etmek için gerekli NuGet paketlerini çalışmaya karşı hizmet kodlama.
+Üzerinde bir hizmet seçme **bağlantılı Hizmetler** sayfasında başlatır bir **bağlantılı Hizmetler** projenizi yapılandırır ve başlamanıza yardım etmek için gerekli NuGet paketlerini indirir Sihirbazı'nı başlattığınızda karşı kodlama hizmet.
 
-Görüntüleyebilir ve Visual Studio kullanarak içinde bulut tabanlı Azure kaynaklarınızı yönetmek [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Cloud Explorer oturum açtığınız Azure aboneliği altında yönetilen tüm hesapları Azure kaynaklarını gösterir. Cloud Explorer seçerek alabileceğiniz **Azure geliştirme** Visual Studio yükleyicisi iş yükü.
+Görüntüleyebilir ve Visual Studio kullanarak içinde bulut tabanlı Azure kaynaklarınızı yönetmek [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Cloud Explorer oturum açtığınız Azure aboneliği altında yönetilen tüm hesapları Azure kaynaklarını gösterir. Alma **Cloud Explorer** seçerek **Azure geliştirme** Visual Studio yükleyicisi iş yükü.
 
 ![Bulut Gezgini](../ide/media/VSIDE_CloudExplorer.png)
 
-**Sunucu Gezgini** göz atın ve SQL Server örnekleri ve varlıkları yerel olarak, uzaktan ve Azure, Salesforce.com, Office 365 ve Web siteleri yönetmenize yardımcı olur. Ana menüde sunucu Gezgini'ni açmak için seçin **Görünüm** > **Sunucu Gezgini**. Bkz: [yeni bağlantılar eklemek](../data-tools/add-new-connections.md) Sunucu Gezgini kullanma hakkında daha fazla bilgi için.
+**Sunucu Gezgini** göz atın ve SQL Server örnekleri ve varlıkları yerel olarak, uzaktan ve Azure, Salesforce.com, Office 365 ve Web siteleri yönetmenize yardımcı olur. Açmak için **Sunucu Gezgini**, ana menüde seçin **Görünüm** > **Sunucu Gezgini**. Bkz: [yeni bağlantılar eklemek](../data-tools/add-new-connections.md) Sunucu Gezgini kullanma hakkında daha fazla bilgi için.
 
 [SQL Server veri Araçları (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) SQL Server, Azure SQL Database ve Azure SQL Data Warehouse güçlü bir geliştirme ortamı içindir. Yapı, hata ayıklama, korumanıza ve veritabanlarını yeniden düzenlemeniz sağlar. Bir veritabanı proje ile veya doğrudan ile bir bağlı veritabanı örneği veya kapalı-içi çalışabilir.
 
@@ -261,7 +261,7 @@ Visual Studio genişletme hakkında daha fazla bilgi için bkz: [genişletmek Vi
 
 ## <a name="learn-more-and-find-out-whats-new"></a>Daha fazla bilgi edinin ve yeni Bul
 
-Visual Studio önce hiç kullanmadıysanız bakmak [alma başlatıldı geliştirme ile Visual Studio](../ide/get-started-developing-with-visual-studio.md), veya kullanılabilir ücretsiz Visual Studio kurslara kullanıma [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Visual Studio 2017'deki yeni özelliklerin kullanıma istiyorsanız, bkz: [Visual Studio 2017'de](../ide/whats-new-in-visual-studio.md).
+Visual Studio önce hiç kullanmadıysanız bakmak [Visual Studio ile geliştirmeye başlamak](../ide/get-started-developing-with-visual-studio.md), veya kullanılabilir ücretsiz Visual Studio kurslara kullanıma [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Visual Studio 2017'deki yeni özelliklerin kullanıma istiyorsanız, bkz: [Visual Studio 2017 yenilikler](../ide/whats-new-in-visual-studio.md).
 
 Visual Studio IDE turu tamamladıktan Tebrikler! Bazı ana özellikleri hakkında yararlı bir şey öğrenilen umuyoruz.
 

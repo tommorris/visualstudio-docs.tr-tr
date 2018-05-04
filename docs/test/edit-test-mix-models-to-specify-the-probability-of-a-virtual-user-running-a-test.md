@@ -11,18 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d3f06eac67207209932073899ae0277f9a156b54
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 591bdaa84d143dc3b639990530a68246dc00385a
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="edit-text-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Bir Test çalıştıran sanal kullanıcı olasılığını belirtmek için test karışımı modellerini düzenleme
+# <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Bir Test çalıştıran sanal kullanıcı olasılığını belirtmek için Test karışımı modellerini düzenleme
 
 *Test karışımı modeli* bir yük testi senaryosunda belirli bir test çalıştıran sanal kullanıcı olasılığını belirtir. Bu, yük daha gerçekçi benzetimini sağlar. Tek bir iş akışı uygulamalarınız aracılığıyla sahip olmak yerine birkaç iş akışları, son kullanıcıların uygulamalarınızla nasıl etkileşim akışınız olduğu olabilir.
 
 ## <a name="test-mix-model-options"></a>Test karışımı modeli seçenekleri
- Yük testi senaryonuz için aşağıdaki test karışımı modeli seçeneklerinden birini belirtebilirsiniz:
+
+Yük testi senaryonuz için aşağıdaki test karışımı modeli seçeneklerinden birini belirtebilirsiniz:
 
 -   **Testleri toplam sayısına göre:** hangi Web performans veya birim testi sanal kullanıcı test yineleme başladığında çalıştırıldığında belirler. Yük testi sonunda, belirli bir testi çalıştırıldığı sayısı atanan test dağıtım ile eşleşir. Bu test karışımı modeli işlem yüzdeleri bir IIS günlüğü veya üretim verileri üzerinde test karışımı alma kullanın.
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da kod yapısını görüntüleme
+title: Visual Studio'da görünüm kod yapısı
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e0d6527227dfb638452337d1978bcbede29ef4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-the-structure-of-code"></a>Kod yapısını görüntüleme
 
@@ -56,11 +56,11 @@ Projenizi kaynak kodu denetimi için işaretliyse, her **sınıf görünümü** 
 
 ### <a name="class-view-toolbar"></a>Sınıf Görünümü araç çubuğu
 
-Sınıf Görünümü araç aşağıdaki komutları içerir.
+**Sınıf görünümü** araç aşağıdaki komutları içerir.
 
 |||
 |-|-|
-|**Yeni klasör**|Bir sanal klasör veya sık kullanılan öğeleri düzenleyebilirsiniz alt klasör oluşturur. Bunlar etkin çözüm (.suo) dosyasına kaydedilir. Yeniden adlandırma veya öğenin kodunuzda sildikten sonra sanal bir klasörde bir hata düğümü olarak görünebilir. Bu sorunu düzeltmek için hata düğümü silin. Bir öğeyi yeniden adlandırdıysanız, bu proje hiyerarşiden klasöre yeniden taşıyabilirsiniz.|
+|**Yeni klasör**|Bir sanal klasör veya sık kullanılan öğeleri düzenleyebilirsiniz alt klasör oluşturur. Etkin çözümde kaydedilir (*.suo*) dosyası. Yeniden adlandırma veya öğenin kodunuzda sildikten sonra sanal bir klasörde bir hata düğümü olarak görünebilir. Bu sorunu düzeltmek için hata düğümü silin. Bir öğeyi yeniden adlandırdıysanız, bu proje hiyerarşiden klasöre yeniden taşıyabilirsiniz.|
 |**Geri**|Daha önce seçilen öğeye gider.|
 |**İlet**|Sonraki seçilen öğeye gider.|
 |**Sınıf diyagramında görüntülemek** (yönetilen kod projeleri yalnızca)|Bir ad seçin veya yazın kullanılabilir duruma gelir **sınıf görünümü**. Bir ad alanı seçildiğinde, sınıf diyagramı içinde tüm türleri gösterilmektedir. Bir Türü seçildiğinde, sınıf diyagramı yalnızca o türünü gösterir.|
@@ -90,7 +90,7 @@ Kısayol menüsünde **sınıf görünümü** Seçili proje türüne bağlı ola
 |**Tanıma gitme**|Öğesinin tanımı veya kaynak kodundaki bulan **Nesne Tarayıcısı**, öğesi açık projeye tanımlı değil.|
 |**Tanımı Gözat**|Seçilen öğeyi görüntüler **Nesne Tarayıcısı**.|
 |**Tüm başvuruları Bul**|Seçili nesne öğesi bulur ve sonuçları görüntüler bir **Bul sonuçları** penceresi.|
-|**Filtre türü için** (yönetilen yalnızca kodu)|Yalnızca seçili türü veya ad alanı görüntüler. Filtre seçerek kaldırabilirsiniz **Temizle bulmak** (X) için İleri düğmesini **Bul** kutusu.|
+|**Filtre türü için** (yönetilen yalnızca kodu)|Yalnızca seçili türü veya ad alanı görüntüler. Filtre seçerek kaldırabilirsiniz **Temizle Bul** (**X**) düğmesine **Bul** kutusu.|
 |**Kopyala**|Öğenin tam adı kopyalar.|
 |**Alfabetik olarak sıralamak**|Alfabetik olarak türleri ve üyeleri adına göre listelenmiştir.|
 |**Üye türü göre sırala**|Türleri ve üyeleri türüne göre sırayla (sınıfları arabirimleri koyun, temsilciler arabirimleri koyun ve yöntemleri özellikleri koyun şekilde) listeler.|
@@ -130,11 +130,11 @@ Kısayol menüsünde **çağrı hiyerarşisi** penceresinde aşağıdaki komutla
 
 **Nesne Tarayıcısı** penceresi projelerinizde kodu açıklamalarını görüntüler.
 
-Pencerenin en üstünde açılan listeyi kullanarak görüntülemek istediğiniz bileşenleri filtreleyebilirsiniz. Özel bileşenler, yönetilen kod yürütülebilir dosyaları, kitaplık derlemeleri, tür kitaplıklarını ve .ocx dosya içerebilir. C++ özel bileşenleri eklemek mümkün değildir. Özel ayarlar, Visual Studio kullanıcı uygulama dizininde, % APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat kaydedilir.
+Pencerenin en üstünde açılan listeyi kullanarak görüntülemek istediğiniz bileşenleri filtreleyebilirsiniz. Özel bileşenler, yönetilen kod yürütülebilir dosyaları, kitaplık derlemeleri, tür kitaplıklarının içerebilir ve *.ocx* dosyaları. C++ özel bileşenleri eklemek mümkün değildir. Özel ayarlar, Visual Studio kullanıcı uygulama dizinine kaydedilir *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
 
 Sol bölmesinde **Nesne Tarayıcısı** derlemeler gösterir. İçerdikleri ad alanları görüntülemek için derlemeleri genişletin ve içerdikleri türleri görüntülenecek ad alanları'nı genişletin. Bir türünü seçtiğinizde, üyelerine (örneğin, özellikleri ve yöntemleri) sağ bölmede listelenir. Sağ alt kısmında seçili öğe hakkında ayrıntılı bilgiler görüntüler.
 
-Kullanarak belirli bir öğe için arama yapabilirsiniz **arama** pencerenin üstündeki kutusu. Aramalar büyük/küçük harfe duyarsızdır. Arama sonuçları, sol bölmede görüntülenir. Bir aramayı temizlemek için tercih **Aramayı Temizle** (X) için İleri düğmesini **arama** kutusu.
+Kullanarak belirli bir öğe için arama yapabilirsiniz **arama** pencerenin üstündeki kutusu. Aramalar büyük/küçük harfe duyarsızdır. Arama sonuçları, sol bölmede görüntülenir. Bir aramayı temizlemek için tercih **Aramayı Temizle** (**X**) düğmesine **arama** kutusu.
 
 **Nesne Tarayıcısı** yaptığınız seçimleri izini ve gidin seçimlerinizi arasında kullanarak **İleri** ve **geri** araç çubuğundaki düğmeler.
 
@@ -185,7 +185,7 @@ Kısayol menüsünde **Nesne Tarayıcısı** öğesi türüne bağlı olarak aş
 Bu pencere salt okunur olsa da, kesme noktaları veya yer işaretleri ayarlayabilirsiniz. Görüntülenen tanımını değiştirmeyi seçerek **tanımını Düzenle** kısayol menüsünde. Bu kod Düzenleyicisi'nde kaynak dosyasını açar ve tanımı başladığı satırına ekleme noktasını taşır.
 
 > [!NOTE]
-> Visual Studio 2015'ten başlayarak, kod tanımı penceresi yalnızca C++ kodu ile kullanılabilir.
+> Visual Studio 2015'ten başlayarak **kod tanımı** penceresi yalnızca C++ kodu ile kullanılabilir.
 
 ### <a name="code-definition-shortcut-menu"></a>Kod tanımı kısayol menüsü
 
@@ -193,8 +193,8 @@ Kısayol menüsünde **kod tanımı** penceresinde aşağıdakileri içerebilir:
 
 |||
 |-|-|
-|**Hızlı Eylemler ve yapan yeniden düzenlemeler...**||
-|**Yeniden Adlandır...**||
+|**Hızlı Eylemler ve yapan yeniden düzenlemeler**||
+|**Yeniden Adlandır**||
 |**Dosyaları Ekle Grafiği Oluştur**||
 |**Özet tanımı**||
 |**Tanıma gitme**|Tanımı (veya kısmi sınıflar için tanımları) bulur ve bunları görüntüler bir **Bul sonuçları** penceresi.|

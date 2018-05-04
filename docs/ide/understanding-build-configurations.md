@@ -1,5 +1,5 @@
 ---
-title: Derleme Yapılandırmalarını Anlama
+title: Derleme yapılandırmalarını anlama
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -27,26 +27,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf3523a017b30a837e0d6cf8805d399a424a9c6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cb699b02723e88454f26f4b897cfd7ba3ff46592
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-build-configurations"></a>Derleme yapılandırmalarını anlama
 
-Çözüm ve proje özelliklerini derlemeleri farklı türde kullanmak üzere farklı yapılandırmaları depolayabilirsiniz. Oluştur, seçin, değiştirmek veya bir yapılandırma silmek için kullanabileceğiniz **Configuration Manager**. Menü çubuğunda açmak için seçin **yapı**, **Configuration Manager**, yalnızca yazın veya **yapılandırma** içinde **hızlı başlatma** kutusu. Aynı zamanda **çözüm yapılandırmaları** listesini **standart** bir yapılandırma seçin veya açmak için araç **Configuration Manager**.
+Çözüm ve proje özelliklerini derlemeleri farklı türde kullanmak üzere farklı yapılandırmaları depolayabilirsiniz. Oluştur, seçin, değiştirmek veya bir yapılandırma silmek için kullanabileceğiniz **Configuration Manager**. Menü çubuğunda açmak için seçin **yapı** > **Configuration Manager**, yalnızca yazın veya **yapılandırma** içinde **hızlı başlatma**kutusu. Aynı zamanda **çözüm yapılandırmaları** listesini **standart** bir yapılandırma seçin veya açmak için araç **Configuration Manager**.
 
 > [!NOTE]
-> Çözüm yapılandırma ayarları araç çubuğunda bulunamıyor ve erişemiyor **Configuration Manager**, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] geliştirme ayarlarını uygulanabilir. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış yönetmek yapılandırmaları](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
+> Çözüm yapılandırma ayarları araç çubuğunda bulunamıyor ve erişemiyor **Configuration Manager**, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] geliştirme ayarlarını uygulanabilir. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış yapılandırmalarını yönetme](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
-Varsayılan olarak, hata ayıklama ve yayın yapılandırmaları kullanarak oluşturulan projeleri bulunmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] şablonları. Bir uygulama hata ayıklama hata ayıklama yapılandırmasını destekler ve sürüm yapılandırmasında dağıtılabilir uygulama sürümünü oluşturur. Daha fazla bilgi için bkz: [nasıl yapılır: ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Ayrıca, özel çözüm yapılandırmaları ve proje yapılandırmaları oluşturabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md).
+Varsayılan olarak, hata ayıklama ve yayın yapılandırmaları kullanarak oluşturulan projeleri bulunmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] şablonları. Bir uygulama hata ayıklama hata ayıklama yapılandırmasını destekler ve sürüm yapılandırmasında dağıtılabilir uygulama sürümünü oluşturur. Daha fazla bilgi için bkz: [nasıl yapılır: ayarlama hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md). Ayrıca, özel çözüm yapılandırmaları ve proje yapılandırmaları oluşturabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: oluşturma ve düzenleme yapılandırmaları](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Çözüm yapılandırmaları
 
 Bir çözüm yapılandırmasını nasıl Çözümdeki projeler oluşturulan ve dağıtılan belirtir. Çözüm yapılandırmasını değiştirmek veya yeni bir tane tanımlamak için **Configuration Manager**altında **etkin çözüm yapılandırması**, seçin **Düzenle** veya **yeni** .
 
-Her giriş **proje bağlamları** bir çözüm yapılandırması kutusunda çözümdeki bir proje ile temsil eder. Her birleşimi için **etkin çözüm yapılandırması** ve **etkin çözüm platformu**, her proje nasıl kullanıldığını ayarlayabilirsiniz. (Çözüm platformlar hakkında daha fazla bilgi için bkz: [yapı platformlarını anlama](../ide/understanding-build-platforms.md).)
+Her giriş **proje bağlamları** bir çözüm yapılandırması kutusunda çözümdeki bir proje ile temsil eder. Her birleşimi için **etkin çözüm yapılandırması** ve **etkin çözüm platformu**, her proje nasıl kullanıldığını ayarlayabilirsiniz. (Çözüm platformlar hakkında daha fazla bilgi için bkz: [anlayın yapı platformları](../ide/understanding-build-platforms.md).)
 
 > [!NOTE]
 > Ne zaman yeni bir çözüm yapılandırması tanımlamak ve seçmek **yeni proje yapılandırmaları oluşturma** onay kutusunu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otomatik olarak yeni yapılandırma tüm projeleri atar. Benzer şekilde, ne zaman, yeni bir çözüm platformu tanımlamak ve seçmek **yeni proje platformları oluşturma** onay kutusunu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otomatik olarak yeni platformu tüm projeleri atar. Ayrıca, yeni bir platformu hedefleyen bir projede eklerseniz, Visual Studio, platform çözümü platformlar listesine ekler ve tüm projeleri atar.
@@ -66,7 +66,7 @@ Etkin çözüm yapılandırma ayrıca IDE bağlamı sağlar. Örneğin, bir proj
 
  Proje bağımlılıkları yapılandırma bağımsız olmakla birlikte, yalnızca etkin çözüm yapılandırmasında belirtilen projeleri oluşturulacak.
 
-## <a name="how-visual-studio-assigns-project-configurations"></a>Visual Studio Proje yapılandırmaları atar nasıl
+## <a name="how-visual-studio-assigns-project-configurations"></a>Visual Studio Proje yapılandırmaları nasıl atar
  Yeni bir çözüm yapılandırmasını tanımlayın ve ayarları mevcut bir kopyalama, Visual Studio varsayılan proje yapılandırmaları atamak için aşağıdaki ölçütleri kullanır. Ölçüt gösterilen sırada değerlendirilir.
 
 1.  Bir proje yapılandırma adı varsa (*\<yapılandırma adı > \<platform adı >*) tam olarak eşleşir yeni bir çözüm yapılandırması, bu yapılandırma adı atanır. Yapılandırma adları büyük küçük harfe duyarlı değildir.
@@ -75,7 +75,7 @@ Etkin çözüm yapılandırma ayrıca IDE bağlamı sağlar. Örneğin, bir proj
 
 3.  Hala hiçbir eşleşme varsa, projede listelenen ilk yapılandırma atanır.
 
-## <a name="how-visual-studio-assigns-solution-configurations"></a>Visual Studio çözüm yapılandırmaları atar nasıl
+## <a name="how-visual-studio-assigns-solution-configurations"></a>Visual Studio çözüm yapılandırmaları nasıl atar
  Bir proje yapılandırma oluşturduğunuzda (içinde **Configuration Manager**, seçerek **yeni** açılır menüde **yapılandırma** sütunu, bu proje için) ve seçin **yeni çözüm yapılandırmaları oluşturma** onay kutusu, Visual Studio'nun desteklenen her platformda Projeyi derlemek benzer adlı çözüm yapılandırması arar. Bazı durumlarda, Visual Studio varolan çözüm yapılandırmaları yeniden adlandırır veya yenilerini tanımlar.
 
  Visual Studio çözüm yapılandırmaları atamak için aşağıdaki ölçütleri kullanır.
@@ -86,8 +86,8 @@ Etkin çözüm yapılandırma ayrıca IDE bağlamı sağlar. Örneğin, bir proj
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek yol: Uygulama Oluşturma](../ide/walkthrough-building-an-application.md)
-- [Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)
+- [İzlenecek yol: bir uygulama oluşturma](../ide/walkthrough-building-an-application.md)
+- [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)
 - [Çözümler ve projeler](../ide/solutions-and-projects-in-visual-studio.md)
-- [C/C++ Derleme Başvurusu](/cpp/build/reference/c-cpp-building-reference)
-- [Devenv Komut Satırı Anahtarları](../ide/reference/devenv-command-line-switches.md)
+- [C/C++ derleme başvurusu](/cpp/build/reference/c-cpp-building-reference)
+- [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md)

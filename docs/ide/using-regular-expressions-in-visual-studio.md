@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da Normal İfadeler Kullanma
+title: Visual Studio'da normal ifadeleri kullanma
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dae1c3d62fce5ba8b3991e41bade1d612b74647
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16a5647461c37502f2d7a91cfb71c8f96164f2b1
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="using-regular-expressions-in-visual-studio"></a>Visual Studio'da normal ifadeler kullanma
+# <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio'da normal ifadeleri kullanma
 
 Visual Studio kullanan [.NET Framework normal ifadeleri](/dotnet/standard/base-types/regular-expressions) metin bulma ve değiştirme için.
 
@@ -74,4 +74,4 @@ Bazı örnekler şunlardır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Metin Bulma ve Değiştirme](../ide/finding-and-replacing-text.md)
+- [Metin bulma ve değiştirme](../ide/finding-and-replacing-text.md)

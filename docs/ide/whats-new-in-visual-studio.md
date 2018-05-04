@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a523933dbc18d6fdc107415c6f7faefa9fc5135
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5cb7d3ce6ec3fd743d8f332b8df2148c7b29fe0f
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Ne&#39;Visual Studio 2017 yenilikler
 #### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>İçin güncelleştirilmiş [15.6 sürüm](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -68,20 +68,20 @@ Daha fazla bilgi için bkz: [Visual Studio 2017 sürüm 15.3 erişilebilirlik ge
 ### <a name="sign-in-across-multiple-accounts"></a>Birden çok hesaplarında oturum açın  
 Biz, Takım Gezgini, Azure Araçları, Microsoft Store yayımlama ve daha fazla arasında kullanıcı hesapları paylaşmanıza olanak tanır Visual Studio'da yeni bir kimlik hizmeti ekledik.
 
-Artık, çok oturum açmış durumda kalabilir. Visual Studio, her 12 saat içinde yeniden imzalamak için sormaz. Daha fazla bilgi için bkz: [daha az Visual Studio oturum açma komut istemlerini](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/) blog postası.
+Artık, çok oturum açmış durumda kalabilir. Visual Studio, her 12 saat içinde yeniden imzalamak için sormaz. Daha fazla bilgi için bkz: [daha az Visual Studio oturum açma ister](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/) blog postası.
 
 ### <a name="start-visual-studio-faster"></a>Visual Studio daha hızlı Başlat
 Yeni Visual Studio performans merkezi IDE başlatma süresini en iyi hale getirmenize yardımcı olabilir. Tüm uzantıları ve IDE başlangıç yavaşlatabilir aracı windows performans merkezi listeler. Uzantıları başlattığınızda veya aracı windows başlangıçta açık olup belirleyerek başlangıç performansını artırmak için kullanabilirsiniz.
 
 ### <a name="faster-on-demand-loading-of-extensions"></a>Uzantıların hızlı isteğe bağlı yükleme
-Visual Studio uzantılarını taşıma (ve üçüncü taraf uzantıları ile çok çalışma) isteğe bağlı yükleme böylece yerine IDE başlangıçta. Hangi uzantıları etkisi başlangıç, çözüm yük ve yazma performansını merak ediyor? Visual Studio performans Yönet -> Yardım bu bilgileri görebilirsiniz.
+Visual Studio uzantılarını taşıma (ve üçüncü taraf uzantıları ile çok çalışma) isteğe bağlı yükleme böylece yerine IDE başlangıçta. Hangi uzantıları etkisi başlangıç, çözüm yük ve yazma performansını merak ediyor? Bu bilgileri görebilirsiniz **yardımcı** > **yönetmek Visual Studio performans**.
 
   ![Visual Studio 2017 Seçenekleri iletişim kutusunda](../ide/media/vs2017ide-manage-vs-perf.png "Visual Studio Yardım iletişim kutusu - performans yönetimi")
 
 #### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>Uzantılarınızın gezici uzantıları Yöneticisi ile yönetme
 Visual Studio'da oturum açtığınızda sık kullandığınız uzantılarla her geliştirme ortamını ayarlama daha kolaydır. Yeni Dolaşım Uzantı Yöneticisi tüm sık kullandığınız uzantılarla bulutta eşitlenmiş bir liste oluşturarak izler.  
 
-Visual Studio'da uzantılarınızın listesini görmek için Araçlar > Uzantılar ve güncelleştirmeler ve uzantı dolaşımı Yöneticisi'ni tıklatın.
+Visual Studio'da uzantılarınızın listesini görmek için tıklatın **Araçları** > **uzantıları & güncelleştirmeleri**ve ardından **gezici Uzantı Yöneticisi**.
 
 ![Visual Studio 2017 - Uzantılar ve güncelleştirmeler iletişim](../ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017 - Araçlar > Uzantılar ve güncelleştirmeler iletişim")
 
@@ -106,13 +106,13 @@ Visual Studio Enterprise 2017 birim testi kodlama ederken birim test sonuçları
 
 Daha fazla bilgi için bkz: [Tanıtımı Canlı birim testi](../test/live-unit-testing-intro.md). Visual Studio Enterprise 2017 her sürümde eklenen yeni özellikler listesi için bkz: [birim testine Canlı yenilikler](../test/live-unit-testing-whats-new.md).
 
-#### <a name="setting-up-a-cicd-pipeline"></a>CI/CD ardışık düzen ayarlama
+#### <a name="set-up-a-cicd-pipeline"></a>CI/CD ardışık düzen ayarlayın
 #### <a name="automated-testing"></a>Otomatikleştirilmiş test
 Otomatikleştirilmiş testleri, DevOps ardışık önemli bir parçasıdır. Bu, tutarlı bir şekilde sağlar ve güvenilir bir şekilde test ve çözümünüzü kadar kısa oynatılmayacağını bırakın. CI/CD (sürekli tümleştirme ve kesintisiz teslim) akışlarının, işlem daha verimli hale yardımcı olabilir.
 
 Otomatikleştirilmiş testleri hakkında daha fazla bilgi için bkz: [DevOps otomatikleştirilmiş testler için CI/CD potansiyel](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) blog postası.
 
-Ve yenilikler hakkında daha fazla bilgi için [Visual Studio için sürekli teslim Araçları](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs uzantısı bkz [güvenle yapılıyor: yürütme zamanı kod kalitesini](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) blog gönderisi.
+Ve yenilikler hakkında daha fazla bilgi için [Visual Studio için kesintisiz teslim Araçları](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs uzantısı bkz [güvenle Yürüt: yürütme zamanı kod kalitesini](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) blog gönderisi.
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE geliştirmeleri
 #### <a name="use-new-refactorings"></a>Yeni yapan yeniden düzenlemeler kullanın
@@ -137,15 +137,15 @@ Visual Studio'da bir proje ile çalışırken, size ayarlayabilir ve hızlı bir
 #### <a name="experience-improved-navigation-controls"></a>Geliştirilmiş Gezinti denetimlerinin deneyimi
 Biz A'dan B büyük güvenle ve daha az karışıklıkları yardımcı olmak için gezinme deneyimi yenilenir.
 
-* **15.4 yeni**: **Tanıma Git (Ctrl + click veya F12)** &ndash; fare kullanıcınız tuşlarına basarak üyesi tanımına gitmek için daha kolay bir yolu **Ctrl** tıklayıp ardından üyesi . Tuşuna basarak **Ctrl** ve kod simgesinin getirildiğinde, altı çizili ve bir bağlantıya açın. Bkz: [Tanıma Git ve Peek tanımı](../ide/go-to-and-peek-definition.md) daha fazla bilgi için.  
+* **15.4 yeni**: **Tanıma Git** (**Ctrl**+**tıklatın** veya **F12**) &ndash; fare kullanıcılar üye tanımına tuşlarına basarak gitmek için daha kolay bir yolu olması **Ctrl** üye'ye tıklayın. Tuşuna basarak **Ctrl** ve kod simgesinin getirildiğinde, altı çizili ve bir bağlantıya açın. Bkz: [Tanıma Git ve Peek tanımı](../ide/go-to-and-peek-definition.md) daha fazla bilgi için.  
 
-* **İçin Git uygulaması (Ctrl + F12)** &ndash; çeşitli uygulamaları herhangi bir temel tür veya üye gidin.
+* **Uygulama Git** (**Ctrl**+**F12**) &ndash; çeşitli uygulamaları herhangi bir temel tür veya üye gidin.
 
-* **Git tümüne (Ctrl + T veya Ctrl +)** &ndash; herhangi dosya/tür/üye/simgesi bildirimi doğrudan gidin. Sonuç listesini filtrelemek veya sorgu sözdizimini (örneğin, "f searchTerm" dosyalar için.), "t searchTerm" türleri, vb. için kullanın.
+* **Tüm gidin** (**Ctrl**+**T** veya **Ctrl**+**,**) &ndash; gidin doğrudan herhangi dosya/tür/üye/simgesi bildirimine. Sonuç listesini filtrelemek veya sorgu sözdizimini (örneğin, "f searchTerm" dosyalar için.), "t searchTerm" türleri, vb. için kullanın.
 
  ![Tüm Git geliştirilmiş](../ide/media/vs2017ide-navigation-go-to.png "geliştirilmiş tüm Git özelliği örneği")
 
-* **(Shift + F12) yönelik tüm başvuruları Bul** &ndash; ile söz dizimi renklendirme, proje, tanım ve yol birleşimiyle tüm başvurusu Bul sonuçları gruplandırabilirsiniz. "Özgün sonuçlarınızı kaybetmeden başvuruları bulmak devam edebilmesi için bu da sonuçları kilitleyebilirsiniz".
+* **Tüm başvuruları Bul** (**Shift**+**F12**) &ndash; ile söz dizimi renklendirme, proje, tanımı, bir bileşimiyle tüm başvurusu Bul sonuçları gruplandırabilirsiniz ve yolu. "Özgün sonuçlarınızı kaybetmeden başvuruları bulmak devam edebilmesi için bu da sonuçları kilitleyebilirsiniz".
 
  ![Yeni tüm başvuruları Bul aracı](../ide/media/vs2017ide-find-all-references.png "yeni tüm başvuruları Bul aracı örneği")
 
@@ -160,9 +160,9 @@ C++ çekirdek yönergeleri C ++ 11 ve C++ özellikleri ve ekleme ve C++ kitaplı
 
 De, 250'den fazla düzeltilen artık ve derleyici ve araçlarını sorunlar bildirildiğinde, birçok müşteriler tarafından gönderilen [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect").
 
-Tüm Ayrıntılar için bkz: [Visual 2017'de Visual C++ için Yenilikler](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) sayfası.  
+Tüm Ayrıntılar için bkz: [Visual 2017'de Visual C++ yenilikleri](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) sayfası.  
 
-### <a name="debugging-and-diagnostics"></a>Hata Ayıklama ve Tanılama
+### <a name="debugging-and-diagnostics"></a>Hata ayıklama ve tanılama
 #### <a name="run-to-click"></a>' Yi tıklatın çalıştırın:
 Şimdi, daha kolay devam istediğiniz satıra durdurmak için kesme noktası ayarlama olmadan hata ayıklama sırasında atlayabilirsiniz. Hata ayıklayıcıda durduğunda, yalnızca kod satırı yanındaki görünür simgesine tıklayın. Kodunuzu çalıştırmak ve söz konusu satıra kod yolunda isabet sonraki açışınızda durdurun.
 
@@ -173,12 +173,12 @@ Yeni özel durum Yardımcısı, özel durum bilgileri bir bakışta görmenize y
 
 ![Visual Studio'da yeni özel durum Yardımcısı iletişim kutusu](../ide/media/vs2017ide-ExceptionHelper.png "yeni özel durum Yardımcısı iletişim kutusu")
 
-Daha fazla bilgi için bkz: [yeni özel durum Yardımcısı Visual Studio kullanarak](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) blog postası.
+Daha fazla bilgi için bkz: [Visual Studio'da yeni özel durum Yardımcısı kullanın](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) blog postası.
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Anlık görüntüler ve IntelliTrace adım geri:
 **15,5 yeni**: IntelliTrace geri-adım adım olay otomatik olarak her kesme ve hata ayıklayıcı, uygulamanızın bir anlık görüntü alır. Kaydedilmiş anlık görüntüler, önceki kesme noktaları veya adımları geri dönün ve geçmişte haliyle uygulamanın durumunu görüntülemek etkinleştirin. IntelliTrace adım arka önceki uygulama durumu görmek istediğiniz ancak hata ayıklamayı yeniden başlatın veya istenen uygulama durumu yeniden istemediğiniz durumlarda size zaman kazandırabilir.
 
-Gidin ve görüntülemek anlık görüntülerini kullanarak **adım geriye dönük** ve **İleri** hata ayıklama araç çubuğu düğmeleri. Bu düğmeleri görünür olayları gidin **olayları** sekmesinde **tanılama araçları** penceresi. İleri ve geri olaya otomatik olarak atlama geçmiş Seçili olayda hata ayıklamasını etkinleştirir.
+Gidin ve görüntülemek anlık görüntülerini kullanarak **adım geriye dönük** ve **İleri** içinde düğmeleri **hata ayıklama** araç. Bu düğmeleri görünür olayları gidin **olayları** sekmesinde **tanılama araçları** penceresi. İleri ve geri olaya otomatik olarak atlama geçmiş Seçili olayda hata ayıklamasını etkinleştirir.
 
 ![Visual Studio'da yeni özel durum Yardımcısı iletişim kutusu](../debugger/media/intellitrace-step-back-icons-description.png  "adım geri ve İleri düğmelerini")
 
@@ -233,12 +233,12 @@ UWP hakkında daha fazla bilgi için bkz: [Evrensel Windows Platformu (UWP) uygu
 Daha fazla bilgi için bkz: [Visual Studio ve Xamarin](../cross-platform/visual-studio-and-xamarin.md) sayfası.
 
 ### <a name="entitlements-editor"></a>Yetkilendirmeler Düzenleyicisi
-**15.3 yeni**: iOS geliştirme gereksinimleriniz için tek başına bir yetkilendirmeler Düzenleyicisi ekledik. Kolayca gözatılabilir kullanıcı dostu bir kullanıcı Arabirimi içerir. Başlatmak için entitlements.plist dosyasını çift tıklatın.
+**15.3 yeni**: iOS geliştirme gereksinimleriniz için tek başına bir yetkilendirmeler Düzenleyicisi ekledik. Kolayca gözatılabilir kullanıcı dostu bir kullanıcı Arabirimi içerir. Başlatmak için çift tıklayın, *entitlements.plist* dosya.
 
 ![Xamarin için yetkilendirme Düzenleyicisi](../ide/media/xamarin-entitlements-editor.png "Xamarin için yetkilendirme Düzenleyicisi")
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Xamarin için Visual Studio Araçları
-**15.4 yeni**: Xamarin Canlı geliştiricilerin sürekli olarak dağıtma, test ve hata ayıklama, iOS ve Android cihazlar üzerinde doğrudan uygulamalarını sağlar. Canlı Xamarin oynatıcı indirme sonra&mdash;App Store veya Google play'de kullanılabilir&mdash;Cihazınızı Visual Studio ile eşleştirin ve mobil uygulamaları derleme yolu devrim yapın. Bu işlev artık Visual Studio'da bulunan ve araçları giderek etkinleştirilebilir > Seçenekler > Xamarin > Diğer > Xamarin Canlı Player etkinleştirin.
+**15.4 yeni**: Xamarin Canlı geliştiricilerin sürekli olarak dağıtma, test ve hata ayıklama, iOS ve Android cihazlar üzerinde doğrudan uygulamalarını sağlar. Canlı Xamarin oynatıcı indirme sonra&mdash;App Store veya Google play'de kullanılabilir&mdash;Cihazınızı Visual Studio ile eşleştirin ve mobil uygulamaları derleme yolu devrim yapın. Bu işlevsellik artık Visual Studio’ya eklenmiştir ve **Araçlar** > **Seçenekler** > **Xamarin** > **Diğer** > **Xamarin Live Player’ı Etkinleştir** seçeneği kullanılarak etkinleştirilebilir.
 
 ![Animasyon Xamarin Canlı Player çifti, dağıtım ve canlı düzenleme modları](../ide/media/xamarinliveplayer.gif)
 
@@ -247,7 +247,7 @@ Daha fazla bilgi için bkz: [Visual Studio ve Xamarin](../cross-platform/visual-
 
   ![Visual Studio Uygulama Merkezi test ortamı](../ide/media/app-center-test-env.png)
 
-Daha fazla bilgi için bkz: [Introducing Uygulama Merkezi: derleme, Test, Dağıt ve bulut uygulamalarını izleme](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) blog postası.
+Daha fazla bilgi için bkz: [Introducing Uygulama Merkezi: oluşturma, sınama, dağıtmak ve uygulamaları bulutta izleme](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) blog gönderisi.
 
 ## <a name="cross-platform-development"></a>Platformlar arası geliştirme
 ### <a name="redgate-data-tools"></a>Redgate veri araçları
@@ -297,11 +297,11 @@ Biz Visual Studio geliştirmek, veya nasıl bir sorun bildirmek hakkında öneri
  Bazı durumlarda, bir ileti bir sorunla karşılaşıldı tam etkisini iletmek için yeterli değil. Bir yanıt vermemesine, kilitlenme veya başka bir performans sorunla karşılaşırsanız, kolayca yeniden oluşturma adımları ve destekleyici dosyaları paylaşabilir (ekran görüntüleri, izleme ve yığın gibi döküm dosyaları) kullanarak bizimle **bir sorun bildirmek** aracı. Bu aracın nasıl kullanılacağı hakkında daha fazla bilgi için bkz: [bir sorunu bildirmek nasıl](how-to-report-a-problem-with-visual-studio-2017.md) sayfası.  
 
 ### <a name="track-your-issue-in-connect"></a>Sorununuzu Bağlan izleme  
- Visual Studio geri bildirim durumunu izlemek istediğiniz Git [Bağlan](http://connect.microsoft.com/) ve hata olmadığını bildirir. Bu rapor sonra Bağlan durumunu izlemek için geri dönebilirsiniz.  
+ Visual Studio geri bildirim durumunu izlemek istediğiniz Git [Bağlan](http://connect.microsoft.com/) ve hata olmadığını bildirir. Bu rapor sonra dönebilirsiniz **Bağlan** durumunu izlemek için.  
 
 ## <a name="see-also"></a>Ayrıca bkz.
 * [Visual Studio 2017 sürüm notları](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Visual c++'ta yenilikler nelerdir?](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [C# ' ta yenilikler nelerdir?](/dotnet/csharp/whats-new)  
+* [C# Yenilikleri](/dotnet/csharp/whats-new)  
 * [Team Foundation Server için Yenilikler](https://www.visualstudio.com/docs/whats-new)
 * [Mac için Visual Studio yenilikleri](https://www.visualstudio.com/vs/visual-studio-mac/)

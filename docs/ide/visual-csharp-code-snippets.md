@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d96d547c3558c9c1e5ce4d11904a0c8cce048e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-code-snippets"></a>C# kod parçacıkları
 
@@ -26,7 +26,7 @@ Kod parçacıkları, kodunuza hızla ekleyebilirsiniz kodunun hazır parçacıkl
 
  Kod parçacığı İmleç konumuna Ekle veya şu anda seçili kodu geçici Çevrele kod parçacığı Ekle. Kod parçacığı ekleyici aracılığıyla çağrılır **kod parçacığını ekleyin** veya **Surround With** komutlarını **IntelliSense** menüsünde veya klavyekısayollarınıkullanma **CTRL**+**K**,**X** veya **Ctrl**+**K**,**S** sırasıyla.
 
- Kod parçacığı ekleyici tüm kullanılabilir kod parçacıkları kod parçacığını adını görüntüler. Kod parçacığı ekleyici kod parçacığını veya kod parçacığını ad parçasını adını yazabileceğiniz bir giriş iletişim kutusu da içerir. Kod parçacığı ekleyici bir kod parçacığını ad yakın eşleşmeyi vurgular. Tuşuna basarak **sekmesini** herhangi bir zamanda kod parçacığı ekleyici yok sayın ve şu anda seçili kod parçacığını ekleyin. Tuşuna basarak **Esc** veya Kod Düzenleyicisi'nde fareyi tıklatarak kapatmak kod parçacığı ekleyici bir kod parçacığı eklemeden.
+ **Kod parçacığı ekleyici** tüm kullanılabilir kod parçacıkları kod parçacığını adını görüntüler. Kod parçacığı ekleyici kod parçacığını veya kod parçacığını ad parçasını adını yazabileceğiniz bir giriş iletişim kutusu da içerir. Kod parçacığı ekleyici bir kod parçacığını ad yakın eşleşmeyi vurgular. Tuşuna basarak **sekmesini** herhangi bir zamanda kod parçacığı ekleyici yok sayın ve şu anda seçili kod parçacığını ekleyin. Tuşuna basarak **Esc** veya Kod düzenleyicisinde fareyi tıklatarak kapatmak kod parçacığı ekleyici bir kod parçacığı eklemeden.
 
 ## <a name="default-code-snippets"></a>Varsayılan kod parçacıkları
 
@@ -57,7 +57,7 @@ Varsayılan olarak aşağıdaki kod parçacıkları Visual Studio'da C# ' ta dah
 |iterator|Yineleyici oluşturur.|Bir sınıf veya yapı içinde.|
 |iterindex|İç içe geçmiş sınıf kullanarak bir "adlı" Yineleyici ve dizin oluşturucu çifti oluşturur.|Bir sınıf veya yapı içinde.|
 |lock|Oluşturur bir [kilit](/dotnet/csharp/language-reference/keywords/lock-statement) bloğu.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|
-|mbox|Çağrı oluşturur <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. System.Windows.Forms.dll'e bir başvuru eklemeniz gerekebilir.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|
+|mbox|Çağrı oluşturur <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Bir başvuru eklemeniz gerekebilir *System.Windows.Forms.dll*.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisini veya bir olay erişimci içinde.|
 |ad alanı|Oluşturur bir [ad alanı](/dotnet/csharp/language-reference/keywords/namespace) bildirimi.|(Genel ad alanı dahil) bir ad alanı içinde.|
 |prop|Oluşturur bir [otomatik uygulanan özellik](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) bildirimi.|Bir sınıf veya yapı içinde.|
 |propfull|Özellik bildirimi ile oluşturur `get` ve `set` erişimciler.|Bir sınıf veya yapı içinde.|
@@ -75,7 +75,7 @@ Varsayılan olarak aşağıdaki kod parçacıkları Visual Studio'da C# ' ta dah
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Kod Parçacığı İşlevleri](../ide/code-snippet-functions.md)
-- [Kod Parçacıkları](../ide/code-snippets.md)
-- [Şablon Parametreleri](../ide/template-parameters.md)
-- [Nasıl Yapılır: Şununla Çevrele Kod Parçacıklarını Kullanma](../ide/how-to-use-surround-with-code-snippets.md)
+- [Kod parçacığı işlevleri](../ide/code-snippet-functions.md)
+- [Kod parçacıkları](../ide/code-snippets.md)
+- [Şablon parametreleri](../ide/template-parameters.md)
+- [Nasıl yapılır: Çevrele kod parçacıklarını kullanma](../ide/how-to-use-surround-with-code-snippets.md)

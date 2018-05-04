@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da .NET Framework'ü hedefleme
+title: Hedef Visual Studio'da .NET Framework'ü
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e44ed988c15a77511d880f1877c1038579a360b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cba93b86d6ecebf249e11d18bd6e4b6b86e59fda
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio çoklu sürüm desteğine genel bakış
 
@@ -50,7 +50,7 @@ Framework'ü hedefleme aşağıdaki özellikleri içerir:
 
 - Özel denetimlerde filtreler **araç** hedeflenen bir sürümde kullanılamayan olanlar kaldırmak ve yalnızca göstermek için birden çok denetim kullanılabilir olduğunda en güncel kontrol eder.
 
-- Hedeflenen sürümde kullanılabilir olmayan dil özellikleri atlamak için IntelliSense filtreler.
+- Bu filtreler **IntelliSense** hedeflenen bir sürümde kullanılamayan dil özellikleri atlanacak.
 
 - Özelliklerinde filtreler **özellikleri** penceresi hedeflenen bir sürümde kullanılamayan olanlar atlayın.
 
@@ -61,7 +61,7 @@ Framework'ü hedefleme aşağıdaki özellikleri içerir:
 > [!NOTE]
 > Framework'ü hedefleme uygulamanız doğru bir şekilde çalışacağını garanti etmez. Hedeflenen sürüm karşı çalışacağından emin olmak için uygulamanızı test etmeniz gerekir. .NET Framework 2. 0 ' önceki framework sürümlerini hedefleyemez.
 
-## <a name="selecting-a-target-framework-version"></a>Bir hedef framework sürümü seçme
+## <a name="select-a-target-framework-version"></a>Bir hedef framework sürümü seçin
 
 Bir proje oluşturduğunuzda hedef .NET Framework sürümünü seçin **yeni proje** iletişim kutusu. Kullanılabilir çerçeveleri listesini seçili şablon türü için geçerli olan yüklü framework sürümlerini içerir. .NET Framework, .NET Core şablonlar, gerektirmeyen şablon türleri için **Framework** aşağı açılan liste gizlenir.
 
@@ -69,19 +69,19 @@ Bir proje oluşturduğunuzda hedef .NET Framework sürümünü seçin **yeni pro
 
 Varolan bir projede hedef değiştirebilirsiniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Proje Özellikleri iletişim kutusunda sürümü. Daha fazla bilgi için bkz: [nasıl yapılır: .NET Framework sürümü hedef](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-## <a name="resolving-system-and-user-assembly-references"></a>Sistem ve kullanıcı derleme başvurularını çözme
+## <a name="resolve-system-and-user-assembly-references"></a>Sistem ve kullanıcı derleme başvuruları çözümlenemedi
 
 .NET Framework sürümünü hedeflemek için önce uygun derleme başvurularını yüklemeniz gerekir. Üzerinde Geliştirici paketleri için .NET Framework'ün farklı sürümlerini indirebilirsiniz [.NET indirmeleri](https://www.microsoft.com/net/download/windows) sayfası.
 
-**Başvuru Ekle** iletişim kutusunda, hedef ilgilidir değil Sistem derlemeleri devre dışı bırakır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürüm böylece bunlar yanlışlıkla projeye eklenemez. (Sistem derlemeler içinde yer alan bir .dll dosyaları olan bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürümü.) Hedeflenen sürümden daha sonraki bir framework sürümüne ait başvuruları çözümlenmiyor ve bu tür bir referans olarak bağımlı denetimleri eklenemiyor. Böyle bir başvuru etkinleştirmek istiyorsanız, sıfırlama [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] hedef projesine bir başvuru içeriyor.  Daha fazla bilgi için bkz: [nasıl yapılır: .NET Framework sürümü hedef](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+**Başvuru Ekle** iletişim kutusunda, hedef ilgilidir değil Sistem derlemeleri devre dışı bırakır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürüm böylece bunlar yanlışlıkla projeye eklenemez. (Sistem derlemelerin *.dll* içinde yer alan dosyaları bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürümü.) Hedeflenen sürümden daha sonraki bir framework sürümüne ait başvuruları çözümlenmiyor ve bu tür bir referans olarak bağımlı denetimleri eklenemiyor. Böyle bir başvuru etkinleştirmek istiyorsanız, sıfırlama [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] hedef projesine bir başvuru içeriyor.  Daha fazla bilgi için bkz: [nasıl yapılır: .NET Framework sürümü hedef](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-Derleme başvurularını hakkında daha fazla bilgi için bkz: [tasarım zamanında derlemeleri çözme](../msbuild/resolving-assemblies-at-design-time.md).
+Derleme başvurularını hakkında daha fazla bilgi için bkz: [tasarım zamanında derlemeleri gidermek](../msbuild/resolving-assemblies-at-design-time.md).
 
-## <a name="enabling-linq"></a>LINQ etkinleştirme
+## <a name="enable-linq"></a>LINQ etkinleştir
 
-.NET Framework 3.5 veya sonrasını, System.Core başvuru ve bir proje düzeyi içeri aktarma (yalnızca Visual Basic'te) System.Linq için hedeflediğinizde eklendiğinde otomatik olarak. LINQ özellikleri kullanmak istiyorsanız, ayrıca Option Infer (Visual Basic'te yalnızca) açmanız gerekir. Bir önceki .NET Framework sürümü için hedef değiştirirseniz başvuru ve içe aktarma otomatik olarak kaldırılır. Daha fazla bilgi için bkz: [LINQ ile çalışma](/dotnet/csharp/tutorials/working-with-linq).
+.NET Framework 3.5 veya daha sonra bir başvuru hedeflediğinizde **System.Core** ve proje düzeyi alma için <xref:System.Linq> (Visual Basic'te yalnızca) otomatik olarak eklenir. LINQ özellikleri kullanmak istiyorsanız, ayrıca etkinleştirmelisiniz `Option Infer` üzerinde (yalnızca Visual Basic'te). Bir önceki .NET Framework sürümü için hedef değiştirirseniz başvuru ve içe aktarma otomatik olarak kaldırılır. Daha fazla bilgi için bkz: [iş LINQ ile](/dotnet/csharp/tutorials/working-with-linq).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Çoklu sürüm desteği (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Nasıl yapılır: hedef Framework ve Platform araç takımı (C++) değiştirme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Nasıl yapılır: hedef framework ve platform araç takımı (C++) değiştirme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

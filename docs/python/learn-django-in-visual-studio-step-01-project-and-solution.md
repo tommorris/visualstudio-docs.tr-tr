@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97f801d111f7fcb2aaeb207c3f3fcf1784a04f30
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: ecd256084862d05f3cf3248913c5f3a1b093fd1d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Öğreticisi 1. adım: Visual Studio Django web framework kullanmaya başlama
 
@@ -89,7 +89,7 @@ Seçtiğiniz çünkü **oluştur yeni Git deposu** içinde **yeni proje** ileti�
 
     ![Takım Gezgini penceresi gösteren Git deposu için kullanılabilir seçenekleri kaynak denetimi](media/django/step01-team-explorer.png)
 
-    Kendi projeleri için hangi hizmetin seçebilirsiniz. Bu öğretici GitHub, burada öğreticinin tamamlanmış örnek kodu korunur kullanımını göstermektedir [Microsoft/python-örnek-vs-öğrenin-django](https://github.com/Microsoft/python-sample-vs-learn-django) deposu.
+    Kendi projeleri için hangi hizmetin seçebilirsiniz. Bu öğretici GitHub, burada öğreticinin tamamlanmış örnek kodu korunur kullanımını göstermektedir [Microsoft/python-örnek-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django) deposu.
 
 1. Herhangi bir seçerken **Yayımla** denetimleri **Takım Gezgini** daha fazla bilgi için ister. Örneğin, Bu öğretici için örnek yayımlama sırasında depo ilk olarak, bu durumda oluşturulması gerekiyordu **anında uzak depoya** seçeneği deponun URL ile kullanıldı.
 
@@ -206,4 +206,4 @@ Bu noktada, temel Django proje uygulamalardan içermiyor. Sonraki adımda bir uy
 
 - Django proje kodunu: [ilk Django uygulamanız yazma, bölüm 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - Yönetim yardımcı programı: [django yönetim ve manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
-- Öğretici kaynak kodu github'da: [Microsoft/python-örnek-vs-öğrenin-django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Öğretici kaynak kodu github'da: [Microsoft/python-örnek-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

@@ -26,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeabb8953d76b38dfa612e701eaeeb872cb64c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16e0efd8393d6324321a505247a3dad171a81a57
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -52,6 +52,7 @@ Bu bilgileri oluşturmak için çeşitli kaynaklardan typeScript kullanır:
 - [TypeScript bildirimi dosyalarını temel IntelliSense](#TsDeclFiles)
 - [Tür tanımları otomatik alımını](#Auto)
 
+<a name="TypeInference"></a>
 ### <a name="intellisense-based-on-type-inference"></a>Tür çıkarımı dayalı IntelliSense
 
 JavaScript'te, çoğu zaman hiçbir açık tür bilgisi mevcut değil. Genellikle çevresindeki kodu bağlamı verilen bir türü bulmak oldukça kolaydır.
@@ -88,6 +89,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
+<a name="JsDoc"></a>
 ### <a name="intellisense-based-on-jsdoc"></a>JSDoc üzerinde temel IntelliSense
 
 Burada tür çıkarımı sağlamaz istenen türü bilgileri (veya belgeleri desteklemek için), tür bilgilerini sağlanmalı açıkça JSDoc ek açıklamaları.  Örneğin, belirli bir tür kısmen bildirilen nesne vermek için kullanabileceğiniz `@type` etiketi aşağıda gösterildiği gibi:
@@ -114,14 +116,16 @@ function Foo(param1) {
 
 Bkz: [JavaScript JSDoc desteği](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) şu anda desteklenen JsDoc ek açıklamaları.
 
+<a name="TsDeclFiles"></a>
 ### <a name="intellisense-based-on-typescript-declaration-files"></a>TypeScript bildirimi dosyalarını temel IntelliSense
 
 JavaScript ve TypeScript aynı dil hizmette şimdi tabanlı olduğundan, bunlar daha zengin bir biçimde etkileşemeyebilirsiniz. Bildirilen değerler için JavaScript IntelliSense gibi sağlanabilir bir *. d.ts* dosyası (bkz [TypeScript belgelerine](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), ve arabirimleri ve TypeScript içinde bildirilen sınıflar gibi türleri JsDoc açıklamaları türü olarak kullanmak için kullanılabilir.
 
 Aşağıda, bir TypeScript tanım dosyası (üzerinden bir arayüzü) gibi türü bilgileri sağlayan basit bir örneği aynı projede JavaScript dosyaya gösteriyoruz (kullanarak bir `JsDoc` etiketi).
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
+<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
 
+<a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>Tür tanımları otomatik alımını
 
 TypeScript dünyanın en popüler JavaScript kitaplıklarını tarafından açıklanan kendi API sahip *. d.ts* dosyaları ve bu tür tanımları için en yaygın depo açıktır [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).

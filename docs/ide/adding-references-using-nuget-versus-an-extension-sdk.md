@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49854e401bdefa4da776f888fff8cff6fdb0d136
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6956ebbd1220be17037b3c9a3d7bd3174872134d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Başvuru eklerken NuGet uzantı SDK ile kullanma
 
@@ -50,7 +50,7 @@ Aşağıdaki tabloda, bir SDK başvuruda bulunan özellikler NuGet başvuru öze
 |Mekanizması uygulama bildirimleri ile tümleşir.|Y|SDK geçmelidir [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)]-belirli kavramları SDK'ları bulunan ile paketleme ve F5'ın düzgün çalışması için [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)].|Y|NuGet içerik projenin bir parçası haline gelir. Herhangi bir F5 ayrıcalık gereklidir.|
 |Başvuru olmayan dosyaları mekanizması dağıtır (örneğin, test çerçevesi, testler alacağı dağıtmak [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] uygulamaları).|Y|Dosyaları düşüş *\redist* klasörü, dosyaları otomatik olarak dağıtılır.|Y||
 |Mekanizması platform SDK'ları Visual Studio IDE içinde otomatik olarak ekler.|Y|Bıraktığınız varsa [!INCLUDE[win8](../debugger/includes/win8_md.md)] SDK veya belirli bir düzende belirli bir konumda Windows Phone SDK'sı SDK ile Visual Studio özellikleri otomatik olarak tümleşiktir.|N||
-|Temiz Geliştirici makine düzeneğini destekler. (Diğer bir deyişle, herhangi bir yükleme gereklidir ve kaynak kodu denetimi basit alımı çalışır.)|N|Bir SDK aldığından, çözümünüz ve SDK ayrı olarak işaretlemeniz gerekir. MSBuild tekrarlanan SDK'ları iki kayıt defteri olmayan varsayılan konumlardan SDK'sındaki kontrol edebilirsiniz (Ayrıntılar için bkz [bir yazılım geliştirme seti oluşturma](../extensibility/creating-a-software-development-kit.md)). Alternatif olarak, özel bir konuma SDK'lar oluşuyorsa proje dosyasında aşağıdaki kodu belirtebilirsiniz:<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> Ardından SDK'ları bu konuma denetleyin.|Y|Çözüm denetleyebilir ve Visual Studio hemen tanır ve dosyalar üzerinde çalışır.|
+|Temiz Geliştirici makine düzeneğini destekler. (Diğer bir deyişle, herhangi bir yükleme gereklidir ve kaynak kodu denetimi basit alımı çalışır.)|N|Bir SDK aldığından, çözümünüz ve SDK ayrı olarak işaretlemeniz gerekir. MSBuild tekrarlanan SDK'ları iki kayıt defteri olmayan varsayılan konumlardan SDK'sındaki kontrol edebilirsiniz (Ayrıntılar için bkz [bir yazılım geliştirme seti oluşturma](../extensibility/creating-a-software-development-kit.md)). Alternatif olarak, özel bir konuma SDK'lar oluşuyorsa proje dosyasında aşağıdaki kodu belirtebilirsiniz:<br /><br />`<PropertyGroup>`<br />&nbsp;&nbsp;`<SDKReferenceDirectoryRoot>`<br />&nbsp;&nbsp;`C:\MySDKs`<br />&nbsp;&nbsp;`</SDKReferenceDirectoryRoot>`<br />`</PropertyGroup>`<br /><br /> Ardından SDK'ları bu konuma denetleyin.|Y|Çözüm denetleyebilir ve Visual Studio hemen tanır ve dosyalar üzerinde çalışır.|
 |Bir paketi yazarları varolan topluluğu büyük birleştirebilirsiniz.|Yok|Yeni bir topluluktur.|Y||
 |Bir paket tüketici varolan topluluğu büyük birleştirebilirsiniz.|Yok|Yeni bir topluluktur.|Y||
 |Bir (özel galerileri, depoları ve benzeri) iş ortakları ekosistemi birleştirebilirsiniz.|Yok|Visual Studio Market'te, Microsoft Download Center, kullanılabilir depoları içerir ve [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|Y||

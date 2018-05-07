@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168fb9441080a9c8f61d703485b0274d91dc3189
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 08b12e09348a28276d0c5d2f375b26e75c1ac3c5
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı izinleri ve Visual Studio
 
@@ -33,7 +33,7 @@ Normal bir kullanıcı olarak Visual Studio IDE içinde hemen her şeyi yapabili
 |----------|----------|--------------------------|
 |Yükleme|Visual Studio yükleyin.|[Visual Studio'yu yükleyin](../install/install-visual-studio.md)|
 ||Yerel Yardım içeriğini yükleme, güncelleştirme veya kaldırma.|[Yükleme ve yerel içeriği yönetme](../ide/install-and-manage-local-content.md)|
-|Uygulama türleri|SharePoint çözümleri geliştirme.|[SharePoint çözümleri geliştirmek için gereksinimler](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|
+|Uygulama türleri|SharePoint çözümleri geliştirme.|[SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|  
 ||Geliştirici lisansı alınırken [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Bir geliştirici lisansı alma](http://go.microsoft.com/fwlink/?LinkID=241313)|
 |Araç Kutusu|Klasik COM ekleme denetimleri için **araç**.|[Araç Kutusu](../ide/reference/toolbox.md)|
 |Eklentiler|IDE'de klasik COM kullanılarak yazılmış eklentileri yükleme ve kullanma.|[Eklentiler ve sihirbazları oluşturma](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|
@@ -46,6 +46,7 @@ Normal bir kullanıcı olarak Visual Studio IDE içinde hemen her şeyi yapabili
 ||Uzaktan hata ayıklama için bir güvenlik duvarı yapılandırma.|[Uzaktan hata ayıklama](../debugger/remote-debugging.md)|
 |Performans araçları|Uygulama profili oluşturma.|[Performans profili oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md)|
 |Dağıtım|Yerel bir bilgisayarda Internet Information Services'a (IIS) web uygulaması dağıtma.|[Visual Studio veya Visual Web Developer kullanılarak bir barındırma sağlayıcısına ASP.NET Web uygulaması dağıtma: bir test ortamı olarak IIS dağıtma](http://go.microsoft.com/fwlink/?LinkId=266478)|
+>>>>>>> 346075117af3d2bd1fddd9c3aca24516a39fa6a3
 
 ## <a name="run-visual-studio-as-an-administrator"></a>Visual Studio bir yönetici olarak çalıştır
 

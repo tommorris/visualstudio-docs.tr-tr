@@ -31,11 +31,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d62cc3aff0eb714f142502d30712c8cc289087cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce62e2d2723c38d933c9efc4c8d910ac418dcb4f
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Oluşturma ve yapılandırma türü üyeleri (Sınıf Tasarımcısı)
 Bu üyelerin bir sınıf türlerine Diyagram ve bu üyeler yapılandırma ekleyebilirsiniz **sınıfı ayrıntıları** penceresi:
@@ -57,8 +57,8 @@ Bu üyelerin bir sınıf türlerine Diyagram ve bu üyeler yapılandırma ekleye
 
 |Görev|İçeriği destekleme|
 |----------|------------------------|
-|**Kullanmaya başlama:** oluşturmak ve tür üyeleri yapılandırmadan önce açmalısınız **sınıfı ayrıntıları** penceresi.|-   [Sınıf ayrıntıları penceresini açma](creating-and-configuring-type-members.md#OpenClassDetails)<br />-   [Kullanım notları sınıf ayrıntıları](creating-and-configuring-type-members.md#ClassDetailsUsageNotes)<br />-   [Salt okunur bilgileri görüntüleme](creating-and-configuring-type-members.md#ReadOnlyInfo)<br />-   [Klavye ve Fare kısayolları sınıf diyagramında ve sınıf Ayrıntıları penceresi](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Oluşturma ve tür üyeleri değiştirme:** yeni üyeler oluşturmak, üyeleri değiştirmek ve kullanarak bir yönteme parametre ekleme **sınıfı ayrıntıları** penceresi.|-   [Üye oluşturma](creating-and-configuring-type-members.md#CreateMembers)<br />-   [Tür üyeleri değiştirme](creating-and-configuring-type-members.md#ModifyTypeMembers)<br />-   [Yönteme parametre ekleme](creating-and-configuring-type-members.md#AddMethodParams)|
+|**Kullanmaya başlama:** oluşturmak ve tür üyeleri yapılandırmadan önce açmalısınız **sınıfı ayrıntıları** penceresi.|-   [Sınıf Ayrıntıları penceresi açın](creating-and-configuring-type-members.md#open-the-class-details-window)<br />-   [Sınıf ayrıntıları kullanım notları](creating-and-configuring-type-members.md#class-details-usage-notes)<br />-   [Salt okunur bilgileri görüntüleme](creating-and-configuring-type-members.md#display-of-read-only-information)<br />-   [Sınıf diyagramında ve sınıf Ayrıntıları penceresinde klavye ve Fare kısayolları](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Oluşturma ve tür üyeleri değiştirme:** yeni üyeler oluşturmak, üyeleri değiştirmek ve kullanarak bir yönteme parametre ekleme **sınıfı ayrıntıları** penceresi.|-   [Üye oluşturma](creating-and-configuring-type-members.md#create-members)<br />-   [Tür üyeleri değiştirme](creating-and-configuring-type-members.md#modify-type-members)<br />-   [Yönteme parametre ekleme](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Sınıf Ayrıntıları penceresi açın
 Varsayılan olarak, **sınıfı ayrıntıları** yeni bir sınıf diyagramı açtığınızda penceresi otomatik olarak görüntülenir (bkz [nasıl yapılır: projelere sınıf diyagramları ekleme](how-to-add-class-diagrams-to-projects.md)). Ayrıca açabilirsiniz **sınıfı ayrıntıları** penceresi açık olarak, aşağıdaki yollarla.
@@ -157,7 +157,7 @@ Her üye satırı aşağıdaki öğeleri görüntüler:
 
 -   **\<üye ekleme >**
 
-     Son satırında **sınıfı ayrıntıları** penceresi metnini içeren  **\<Üye Ekle >** içinde **adı** hücre. Bu hücreye tıklarsanız yeni bir üye oluşturabilirsiniz. Daha fazla bilgi için bkz: [oluşturma üyeleri](creating-and-configuring-type-members.md#CreateMembers).
+     Son satırında **sınıfı ayrıntıları** penceresi metnini içeren  **\<Üye Ekle >** içinde **adı** hücre. Bu hücreye tıklarsanız yeni bir üye oluşturabilirsiniz. Daha fazla bilgi için bkz: [üyeleri oluşturmak](creating-and-configuring-type-members.md#create-members).
 
 -   **Özellikleri penceresinde üye özellikleri**
 
@@ -207,14 +207,14 @@ Parametre satırı aşağıdaki öğeleri içerir:
 
 -   **\<parametre ekleme >**
 
-     Üyenin son parametre satır metni içeren **<add parameter>** içinde **adı** hücre. Bu hücreye tıklanması yeni bir parametre oluşturmanıza izin verir. Daha fazla bilgi için bkz: [bir yönteme parametre eklemek için](creating-and-configuring-type-members.md#HowToAddParameterToMethod).
+     Üyenin son parametre satır metni içeren **<add parameter>** içinde **adı** hücre. Bu hücreye tıklanması yeni bir parametre oluşturmanıza izin verir. Daha fazla bilgi için bkz: [bir yönteme parametre eklemek için](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 **Özellikleri penceresinde parametresi özellikleri**
 
 Özellikler penceresi görüntülenen aynı parametre özellikleri görüntüler **sınıfı ayrıntıları** penceresi: **adı**, **türü**, **değiştiricisi** , **Özet**, yanı sıra **isteğe bağlı varsayılan** özelliği. Özelliğin bir konumda değiştirilmesi, özelliğin değerini global olarak güncelleştirir (değerinin diğer konumda görüntülenmesi de buna dahildir).
 
 > [!NOTE]
-> Bir parametre için bir temsilci eklemek için bkz [oluşturma üyeleri](creating-and-configuring-type-members.md#CreateMembers).
+> Bir parametre için bir temsilci eklemek için bkz [üyeleri oluşturmak](creating-and-configuring-type-members.md#create-members).
 
 
 > [!NOTE]
@@ -323,4 +323,4 @@ Sınıf Tasarımcısı kullanarak yerel C++ kodunu düzenleyemezsiniz veya **sı
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Türleri ve ilişkilendirmeleri görüntüleme](viewing-types-and-relationships.md)
-- [Clases ve türleri yeniden düzenleme](refactoring-classes-and-types.md)
+- [Sınıfları ve türleri yeniden düzenleme](refactoring-classes-and-types.md)

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97e0b1e58a1a3a490d97d49410f04b4b08eb844b
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Öğreticisi Adım 6: yoklamalar Django Web projesi şablonu kullanın
 
@@ -361,7 +361,7 @@ Gördüğünüz gibi `PollAdmin` sınıfı türer `django.contrib.admin.ModelAdm
 ## <a name="next-steps"></a>Sonraki adımlar
 
 > [!Note]
-> Visual Studio çözümünüzü kaynak denetimine Bu öğreticinin boyunca yürüten, başka bir yürütme yapmak için iyi bir zamandır sunulmuştur. Çözümünüzü öğretici kaynak kodu github'da eşleşmesi gerekir: [Microsoft/python-örnek-vs-öğrenin-django](https://github.com/Microsoft/python-sample-vs-learn-django).
+> Visual Studio çözümünüzü kaynak denetimine Bu öğreticinin boyunca yürüten, başka bir yürütme yapmak için iyi bir zamandır sunulmuştur. Çözümünüzü öğretici kaynak kodu github'da eşleşmesi gerekir: [Microsoft/python-örnek-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 Visual Studio'da "Boş Django Web projesi", "Django Web projesi" ve "Yoklamalar Django Web projesi" şablonları tamamen şimdi incelediniz. Tüm görünümler ve şablonlar kullanarak gibi Django öğrendiğinize ve yönlendirme, kimlik doğrulama ve veritabanı modelleri kullanarak denedikten. Artık tüm görünümler ve ihtiyacınız modelleri kendi web uygulaması oluşturmak mümkün olması gerekir.
 

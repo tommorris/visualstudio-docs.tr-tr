@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 153a297dea3b392031a07cdc1442070f9cdceba3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b003b3f965ab4f3857e2a532ae715d99533aa8e7
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="build-page-project-designer-c"></a>Derleme Sayfası, Proje Tasarımcısı (C#)
 Kullanım **yapı** sayfasında **Proje Tasarımcısı** projenin yapı yapılandırma özelliklerini belirtmek için. Bu sayfayı uygulandığı [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] yalnızca projeleri.
@@ -32,7 +32,7 @@ Erişim için **yapı** sayfası, proje düğümüne seçin (değil **çözüm**
 Aşağıdaki seçenekler yapılandırma ve görüntülemek veya değiştirmek için platform seçmenizi sağlar.
 
 > [!NOTE]
-> Basitleştirilmiş derleme yapılandırmalarını, proje sistemi sürümünü veya bir hata ayıklama geliştirmek belirler. Bu nedenle, bu seçenekleri görüntülenmiyor. Daha fazla bilgi için bkz: [nasıl yapılır: ayarlama hata ayıklama ve yayın yapılandırmaları](/debugger/how-to-set-debug-and-release-configurations.md).
+> Basitleştirilmiş derleme yapılandırmalarını, proje sistemi sürümünü veya bir hata ayıklama geliştirmek belirler. Bu nedenle, bu seçenekleri görüntülenmiyor. Daha fazla bilgi için bkz: [nasıl yapılır: ayarlama hata ayıklama ve yayın yapılandırmaları](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 **Yapılandırma** görüntülemek veya değiştirmek için hangi yapılandırma ayarlarını belirtir. Ayarları **etkin (hata ayıklama)** (varsayılan değer budur), **hata ayıklama**, **sürüm**, veya **tüm yapılandırmaları**.
 

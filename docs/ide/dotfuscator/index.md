@@ -18,11 +18,11 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 22243a8d837e584df64c9fabc28405951f481b26
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: a81d640e2ecebe46a20f7a3661584cb5c7423691
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 Masaüstü, mobil, sunucu ve güvenli ticari sırlar ve diğer fikri mülkiyet (IP), yardımcı olmak için embedded uygulamaları Ayıkla sağlamlaştırmak ve korumak için korsanlık ve sahtekarlığın azaltmak ve izinsiz ve yetkisiz hata ayıklama karşı koruma kullan.
 Ek programlama veya kaynak kodu bile erişimine gerek kalmadan derlenmiş derlemeleri Dotfuscator çalışır.
 
-![](media/header.svg)
+![PreEmptive tarafından koruması - Dotfuscator](media/header.svg)
 
 ## <a name="why-protection-matters"></a>Koruma neden önemlidir?
 

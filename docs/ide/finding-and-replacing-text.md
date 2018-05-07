@@ -33,15 +33,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8e0ec78153f7b6fdf0a9f673938a361619f2c2
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 7051b90dde45965b76e8a9e08b33b5326ff2848c
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="find-and-replace-text"></a>Metin bulma ve değiştirme
 
-Bul ve Visual Studio düzenleyicisinde metin kullanarak değiştirin [bulma ve değiştirme](#find-and-replace-control) veya [bulun ve değiştirin dosyalarında](#find-replace-in-files).
+Bul ve Visual Studio düzenleyicisinde metin kullanarak değiştirin [bulma ve değiştirme](#find-and-replace-control) veya [bulun ve değiştirin dosyalarında](#find-in-files-and-replace-in-files).
 
 > [!TIP]
 > Kod simgeleri değişkenleri ve yöntemleri gibi yeniden adlandırma, daha iyi *[düzenleme](../ide/reference/rename.md)* Bul ve Değiştir kullanımı çok bunları. Yeniden düzenleme Akıllı ve Bul ve Değiştir doğrudan tüm örneklerini değiştirir ancak kapsam anlar.

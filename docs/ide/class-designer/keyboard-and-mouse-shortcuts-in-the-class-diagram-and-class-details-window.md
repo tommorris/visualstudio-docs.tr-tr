@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a50f61debeb312f0da14e4d8aa848e50abc9cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0762287c47494b0dd0d3f4d444d7143c8688ec2b
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Klavye ve Fare kısayolları sınıf diyagramında ve sınıf Ayrıntıları penceresinde (Sınıf Tasarımcısı)
 
@@ -32,8 +32,8 @@ Sınıf diyagramları aşağıdaki fare eylemleri desteklenir:
 |Fare birleşimi|Bağlam|Açıklama|
 |-----------------------|-------------|-----------------|
 |Çift tıklatın|Şekil öğeleri|Kod Düzenleyicisi açılır.|
-||Lolipop Bağlayıcısı|Genişlet/Daralt Lolipop.|
-||Lolipop bağlayıcı etiketi|Çağırır **Göster arabirimi** komutu.|
+|Çift tıklatın|Lolipop Bağlayıcısı|Genişlet/Daralt Lolipop.|
+|Çift tıklatın|Lolipop bağlayıcı etiketi|Çağırır **Göster arabirimi** komutu.|
 |Fare tekerleği|Sınıf diyagramı|Dikey kaydırın.|
 |SHIFT + fare tekerleği|Sınıf diyagramı|Yatay kaydırma.|
 |CTRL + fare tekerleği|Sınıf diyagramı|Yakınlaştırma.|
@@ -60,12 +60,12 @@ Aşağıdaki klavye eylemleri sınıf diyagramlarını desteklenir:
 |Anahtar|Bağlam|Açıklama|
 |---------|-------------|-----------------|
 |Ok tuşları|İç tür şekilleri|Ağaç-style Gezinti bölmesinde şekli içeriği de (kaydırma şekli geçici desteklenir). Sol ve sağ anahtarları Genişlet/geçerli öğe Genişletilebilir ise Daralt ve üst öğeye gidin değilse (ayrıntılı davranışı için ağaç görünümü Gezinti bakın).|
-||Üst düzey şekiller|Şekilleri diyagramı taşıma.|
+|Ok tuşları|Üst düzey şekiller|Şekilleri diyagramı taşıma.|
 |SHIFT + ok tuşları|İç tür şekilleri|Yapı sürekli Seçimi şekil öğelerine üyeleri, iç içe geçmiş türler veya bölmeler gibi oluşan. Bu kısayolların çevresinde kaydırma desteklemez.|
 |GİRİŞ|İç tür şekilleri|Üst düzey şekil başlık gidin.|
-||Üst düzey şekiller|Diyagramda ilk şekli gidin.|
+|GİRİŞ|Üst düzey şekiller|Diyagramda ilk şekli gidin.|
 |END|İç tür şekilleri|Şekil içinde son görünür öğesine gidin.|
-||Üst düzey şekiller|Son şekil diyagramdan gidin.|
+|END|Üst düzey şekiller|Son şekil diyagramdan gidin.|
 |ÜST KARAKTER + HOME|İç türü şekli|Geçerli öğe ile başlayıp ile aynı şekilde en üst öğede şekil öğeleri seçer.|
 |SHIFT + END|İç türü şekli|Aynı üst karakter + HOME ancak yukarıdan aşağı yönü.|
 |ENTER|Tüm bağlamları|Aynı zamanda çift kullanılabilir olan şekil varsayılan eylemini çağırır. Çoğu durumda bu görünümü kodu, ancak bazı öğeler farklı tanımlayın (elma şekerleri, bölme üstbilgileri, Lolipop etiket).|
@@ -75,7 +75,7 @@ Aşağıdaki klavye eylemleri sınıf diyagramlarını desteklenir:
 |ALT + ÜST KARAKTER + L|Tür şekilleri içinde + tür şekilleri.|Varsa, seçili şekli Lolipop için gider.|
 |ALT + SHIFT + B|Tür şekilleri içinde + tür şekilleri.|Temel tür listesi türü şekil üzerinde gösterilen ve birden çok öğe varsa, bu listenin (daraltma/genişletme) genişletme durumunu değiştirir.|
 |DELETE|Tür ve açıklama şekilleri|Çağırır **diyagramdan Kaldır** komutu.|
-||Şey üzerinde.|Çağırır **koddan silme** komutu (üyeleri, parametreleri, ilişkileri, devralma, Lolipop etiket).|
+|DELETE|Şey üzerinde.|Çağırır **koddan silme** komutu (üyeleri, parametreleri, ilişkileri, devralma, Lolipop etiket).|
 |CTRL + SİL|Tüm bağlamları|Çağırır **koddan silme** seçimini komutu.|
 |TAB|Tüm bağlamları|Sonraki alt (kaydırma destekler) aynı üst içindeki gider.|
 |SHIFT+TAB|Tüm bağlamları|Önceki alt (kaydırma destekler) aynı üst içindeki gider.|

@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: bir gizlilik istemi göstermek için özel bir önyükleyici oluşturma | Microsoft Docs'
+title: 'İzlenecek yol: bir gizlilik İstemi ile özel bir önyükleyici oluşturma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -21,13 +21,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>İzlenecek yol: Bir Gizlilik İstemi Göstermek için Özel Bir Önyükleyici Oluşturma
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>İzlenecek yol: bir gizlilik İstemi ile özel bir önyükleyici oluşturma
 Derlemeleri yeni dosya sürümleri ve derleme sürümleri ile kullanılabilir olduğunda otomatik olarak güncelleştirmek için ClickOnce uygulamalarını yapılandırabilirsiniz. Müşterileriniz için bu davranışı kabul emin olmak için bunları bir gizlilik istemi görüntüleyebilirsiniz. Ardından, bunlar otomatik olarak güncelleştirmek için uygulama izni vermek seçebilirsiniz. Uygulama otomatik olarak güncelleştirmeye izin verilmiyorsa, yüklemez.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -37,7 +37,7 @@ Derlemeleri yeni dosya sürümleri ve derleme sürümleri ile kullanılabilir ol
   
 -   Visual Studio 2010.  
   
-## <a name="creating-an-update-consent-dialog-box"></a>Bir güncelleştirme onay iletişim kutusu oluşturma  
+## <a name="create-an-update-consent-dialog-box"></a>Bir güncelleştirme onay iletişim kutusu oluşturma  
  Bir gizlilik istemi görüntülemek için uygulama için otomatik güncelleştirmeler için kabul okuyucu soran bir uygulama oluşturun.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>Onay iletişim kutusu oluşturmak için  
@@ -136,7 +136,7 @@ Derlemeleri yeni dosya sürümleri ve derleme sürümleri ile kullanılabilir ol
   
 26. Üzerinde **yapı** menüsünde tıklatın **BuildSolution**.  
   
-## <a name="creating-the-custom-bootstrapper-package"></a>Özel önyükleyici paketi oluşturma  
+## <a name="create-the-custom-bootstrapper-package"></a>Özel önyükleyici paketi oluşturma  
  Son kullanıcılara gizlilik istemi göstermek için Güncelleştirme Onayı iletişim uygulaması için bir özel önyükleyici paketi oluşturabilir ve bir önkoşul olarak tüm ClickOnce uygulamalarını içerir.  
   
  Bu yordam aşağıdaki belgeler oluşturarak özel önyükleyici paketi oluşturma göstermektedir:  
@@ -228,7 +228,7 @@ Derlemeleri yeni dosya sürümleri ve derleme sürümleri ile kullanılabilir ol
   
 6.  Gerekirse, her yerel ayar için yazılım lisans koşulları için yeni package.xml bildirim dosyası ve yeni bir eula.rtf belgesi oluşturun. Örneğin, fr ve de yerel ayarlar için alt dizinler oluşturduysanız, ayrı.xml bildirim dosyaları ve yazılım lisans koşulları oluşturun ve bunları fr ve de alt dizinlere kaydedin.  
   
-## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Güncelleştirme Onayı uygulamasını bir önkoşul olarak ayarlama  
+## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Güncelleştirme Onayı uygulaması bir önkoşul olarak ayarlayın  
  Visual Studio'da Güncelleştirme Onayı uygulamasını bir önkoşul olarak ayarlayabilirsiniz.  
   
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Güncelleştirme Onayı uygulaması bir önkoşul olarak ayarlamak için  
@@ -246,7 +246,7 @@ Derlemeleri yeni dosya sürümleri ve derleme sürümleri ile kullanılabilir ol
   
 5.  **Tamam**'ı tıklatın.  
   
-## <a name="creating-and-testing-the-setup-program"></a>Oluşturma ve Kurulum programını test etme  
+## <a name="create-and-test-the-setup-program"></a>Oluşturma ve Kurulum programını sınama  
  Güncelleştirme Onayı uygulamasını bir önkoşul olarak ayarladıktan sonra uygulamanız için yükleyici ve önyükleyici oluşturabilirsiniz.  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Oluşturma ve Kurulum programını tıklamadan test kabul ediyorum  

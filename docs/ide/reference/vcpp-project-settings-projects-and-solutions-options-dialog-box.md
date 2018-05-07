@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17618aa39a5487ed90fc39f414b0f08233f48b2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 966b51c0522a65641edc2f602bb27849bfabfe77
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++ Proje Ayarları, Projeler ve Çözümler, Seçenekler İletişim Kutusu
 Bu iletişim kutusunu tanımlamanıza izin verir [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] yapı ve proje günlüğü, performans ve dosya türlerini desteklemek için ilgili ayarları.
@@ -71,10 +71,10 @@ Bu iletişim kutusunu tanımlamanıza izin verir [!INCLUDE[vcprvc](../../code-qu
 ## <a name="extensions-to-hide"></a>Gizleme için Uzantılar
   İçinde görüntülenmez dosyalarının dosya adı uzantılarını belirtir **Çözüm Gezgini** zaman **tüm dosyaları göster** etkinleştirilir.
 
- ## <a name="build-customization-search-path"></a>Özelleştirme arama yolu oluştur
+## <a name="build-customization-search-path"></a>Özelleştirme arama yolu oluştur
   Yardımcı .rules dosyaları içeren dizinler listesinde projeleriniz için derleme kuralları tanımlamak belirtir.
 
-# <a name="solution-explorer-mode"></a>Çözüm Gezgini modu
+## <a name="solution-explorer-mode"></a>Çözüm Gezgini modu
  **Projede yalnızca dosyaları göster**
 
   Yapılandırır **Çözüm Gezgini** yalnızca projedeki dosyaları görüntülemek için.

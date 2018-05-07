@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb3dfce4f4e1596e21853c1ef645bd4ef107186e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0850fed22caf4b34fcb74aa11eb63f9338b0d5e5
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="work-with-visual-c-code-class-designer"></a>Visual C++ kodu (Sınıf Tasarımcısı) ile çalışma
 
@@ -73,7 +73,7 @@ Sınıf diyagramında kodunda yaptığınız değişikliklerle güncelleştirmez
 
 -   #İmport yönergesi tarafından başvurulan bir kitaplık türü bulunur. Olası bir geçici çözüm el ile oluşturulan kodun (.tlh dosyası) için eklemektir bir # üstbilgi dosyasına include yönergesi.
 
--   Emin **Sınıf Tasarımcısı** girdiğiniz türünü destekler. Bkz: [C++ kod öğeleri için sınırlamalar](#limitations).
+-   Emin **Sınıf Tasarımcısı** girdiğiniz türünü destekler. Bkz: [C++ kod öğeleri için sınırlamalar](#limitations-for-c-code-elements).
 
 Hata türü çözümleme sorunu için bkz: büyük olasılıkla **kodu sınıf diyagramı'de bir veya daha fazla şekilleri bulunamadı '\<öğesi >'**. Bu hata iletisini kodunuzu hatadır gelmeyebilir. Yalnızca bu sınıf Tasarımcısı kodunuzu görüntüleyemedi belirtir. Aşağıdaki ölçütler deneyin:
 

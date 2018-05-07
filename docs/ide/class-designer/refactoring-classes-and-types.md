@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01a27861287bcc5fe419a9be1784177742cda815
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3104266e92bc05f82a4d97fb62fc20bc9e79c0eb
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Yeniden düzenleme sınıfları ve türleri (Sınıf Tasarımcısı)
 
@@ -40,8 +40,9 @@ Kodu yeniden düzenleyin, daha kolay anlamak, bakımını yapmak ve iç yapısı
 |----------|------------------------|
 |**Sınıfları yeniden düzenleme:** yeniden düzenleme işlemi bir sınıfı kısmi sınıflara bölme ya da bir Özet temel sınıf uygulamak için kullanabilirsiniz.|-   [Nasıl yapılır: bir sınıfı kısmi sınıflara bölme](how-to-split-a-class-into-partial-classes.md)|
 |**Arabirimleri ile çalışma:** Sınıf Tasarımcısı'nda, uygulayabilirsiniz arabirim sınıf diyagramında arabirim yöntemleri için kod sağlayan bir sınıf bağlanarak.|-   [Nasıl yapılır: bir arabirim](how-to-implement-an-interface.md)|
-|**Türleri, tür üyeleri ve parametreleri yeniden düzenleme:** Sınıf Tasarımcısı kullanarak yapabilir türleri yeniden adlandırmak, tür üyeleri geçersiz kılma veya bir türden diğerine taşıyabilirsiniz. Boş değer atanabilir türler de oluşturabilirsiniz.|-   [Yeniden adlandırma türleri ve tür üyeleri](refactoring-classes-and-types.md#RenamingTypesAndMembers)<br />-   [Tür üyeleri bir türden diğerine taşıma](refactoring-classes-and-types.md#MovingTypeMembers)<br />-   [Nasıl yapılır: boş değer atanabilir tür oluşturma](how-to-create-a-nullable-type.md)|
+|**Türleri, tür üyeleri ve parametreleri yeniden düzenleme:** Sınıf Tasarımcısı kullanarak yapabilir türleri yeniden adlandırmak, tür üyeleri geçersiz kılma veya bir türden diğerine taşıyabilirsiniz. Boş değer atanabilir türler de oluşturabilirsiniz.|-   [Yeniden Adlandır türleri ve tür üyeleri](refactoring-classes-and-types.md#rename)<br />-   [Tür üyeleri bir türden diğerine taşıma](refactoring-classes-and-types.md#move)<br />-   [Nasıl yapılır: boş değer atanabilir tür oluşturma](how-to-create-a-nullable-type.md)|
 
+<a name="rename"></a>
 ### <a name="rename-types-and-type-members"></a>Yeniden Adlandır türleri ve tür üyeleri
 
 Sınıf Tasarımcısı'nda bir tür veya üye türü sınıf diyagramında veya özellikleri penceresinde adlandırabilirsiniz. Sınıf Ayrıntıları penceresinde üyesi ancak bir tür adını değiştirebilirsiniz. Bir tür veya tür üyesi yeniden adlandırma, tüm windows ve burada eski adı görünen kodu konumları yayar.
@@ -77,6 +78,7 @@ Sınıf Tasarımcısı'nda bir tür veya üye türü sınıf diyagramında veya 
 
      Yeni bir ad, tüm windows ve burada eski adı görünen kodu konumları geçerli projedeki yayar.
 
+<a name="move"></a>
 ### <a name="move-type-members-from-one-type-to-another"></a>Tür üyeleri bir türden diğerine taşıma
 
 Kullanarak **Sınıf Tasarımcısı**, her ikisi de geçerli sınıf diyagramında görünür durumdaysa başka bir tür için bir tür üyesi bir türden diğerine taşıyabilirsiniz.

@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 1996edee476525ec73839fc22dd2fa39de03098a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a6642b03d5e49763cd18bccae8f88ff1f7c5bd4
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET EditorConfig kuralı ayarlarını kodlama
 
@@ -238,7 +238,7 @@ Aşağıdaki tabloda, kuralı adları, kuralları kimlikleri, geçerli programla
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan |
 | --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 ve IDE0014 | C# ve Visual Basic | TRUE: yok |
+| dotnet_style_predefined_type_for_locals_ parameters_members | IDE0012 ve IDE0014 | C# ve Visual Basic | TRUE: yok |
 | dotnet_style_predefined_type_for_member_access | IDE0013 ve IDE0015 | C# ve Visual Basic | TRUE: yok |
 
 **DotNet\_stili\_önceden tanımlanmış\_türü\_için\_Yereller\_parameters_members**
@@ -304,7 +304,7 @@ Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli programlama di
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürümü |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# ve Visual Basic | for_non_interface_members:none | 15.5 |
+| dotnet_style_require_ accessibility_modifiers | IDE0040 | C# ve Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | Genel, özel, korumalı, iç, statik extern, yeni, sanal, soyut ve korumalı, geçersiz kılma, salt okunur, güvenli olmayan, geçici, zaman uyumsuz: yok | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Kısmi, varsayılan, özel, korumalı, Public, arkadaş, NotOverridable, geçersiz kılınabilir, MustOverride, aşırı yüklemeleri, geçersiz kılmalar, MustInherit, NotInheritable, statik, paylaşılan, gölge, salt okunur, WriteOnly, boyutu, Const, WithEvents, genişletme, özel, daraltma Zaman uyumsuz: yok | 15.5 |
 
@@ -392,7 +392,7 @@ Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli programlama di
 | dotnet_style_collection_initializer | IDE0028 | C# ve Visual Basic | TRUE: önerisi | İlk sürüm |
 | dotnet_style_explicit_tuple_names | IDE0033 | C# ' ta 7.0 + ve Visual Basic 15 + | TRUE: önerisi | İlk sürüm |
 | dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# ' ta 7.1 + ve Visual Basic 15 + | TRUE: önerisi | 15,6 |
-| dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# ve Visual Basic | TRUE: önerisi | 15,6 |
+| dotnet_style_prefer_inferred_anonymous_ type_member_names | IDE0037 | C# ve Visual Basic | TRUE: önerisi | 15,6 |
 
 **DotNet\_stili\_object_initializer**
 
@@ -1497,7 +1497,7 @@ Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değerleri ve ilk
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_space_after_cast |  C# | false | 15.3  |
 | csharp_space_after_keywords_in_control_flow_statements |  C# | true | 15.3  |
-| csharp_space_between_method_declaration_parameter_list_parentheses |  C# | false | 15.3  |
+| csharp_space_between_method_declaration_parameter_ list_parentheses |  C# | false | 15.3  |
 | csharp_space_between_method_call_parameter_list_parentheses |  C# | false | 15.3  |
 | csharp_space_between_parentheses |  C# | false | 15.3  |
 

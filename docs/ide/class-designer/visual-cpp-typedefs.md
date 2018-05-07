@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0c854fabdc18337b806cd64733de1d0c88758c5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ce99a4e4c4899502bf1f63edf2dbc1ad0c93cd0
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Sınıf tasarımcısında Visual C++ typedefs
 
@@ -49,7 +49,7 @@ typedef class coord
 };
 ```
 
-Kullanma hakkında daha fazla bilgi için `typedef` yazın, bkz: [tür tanımları](/cpp/aliases-and-typedefs-cpp#typedefs).
+Kullanma hakkında daha fazla bilgi için `typedef` yazın, bkz: [tür tanımları](/cpp/cpp/aliases-and-typedefs-cpp#typedefs).
 
 Bir C++ typedef şekli typedef belirtilen türde şekli vardır. Örneğin, kaynak bildirirse `typedef class`, Şekil köşeleri ve etiket yuvarlanmış **sınıfı**. İçin `typedef struct`, Şekil kare köşeleri ve etiket sahip **yapısı**.
 
@@ -199,6 +199,8 @@ typedef
 
 MyIntVect ->
 
-## <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual C++ Kodu ile Çalışma](working-with-visual-cpp-code.md)
+- [Visual C++ Kodu ile Çalışma](working-with-visual-cpp-code.md)  
+- [Tür tanımları](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
+

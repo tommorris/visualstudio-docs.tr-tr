@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d989e3fea2d973999fba12aefd42f629bc6b3991
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6594b87ad313b7f452f579059af377e6128a887a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-window"></a>Komut Penceresi
 **Komutu** penceresi komutları veya diğer adlar doğrudan yürütmek için kullanılan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Hiçbir menüde menü komutları ve görünmez komutlar yürütebilir. Görüntülenecek **komutu** penceresinde, seçin **diğer pencereler** gelen **Görünüm** menü ve seçin **komut penceresi**.
@@ -30,13 +30,13 @@ ms.lasthandoff: 04/26/2018
 ## <a name="displaying-the-values-of-variables"></a>Değişkenlerin değerlerini görüntüleme
  Bir değişkenin değerini denetlemek için `varA`, kullanın [Yazdır komutu](../../ide/reference/print-command.md):
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  Soru işareti (?) için bir diğer ad olduğu `Debug.Print`, bu nedenle bu komut ayrıca yazılabilir:
 
-```
+```cmd
 >? varA
 ```
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="parameters-switches-and-values"></a>Parametreler, anahtarları ve değerleri
  Bazı [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] komutları komutları gerekli ve isteğe bağlı bağımsız değişkenler, anahtarları ve değerleri. Belirli kurallar gibi komutları ile ilgilenirken uygulanır. Aşağıdaki terimler açıklamak için zengin bir komutu örneğidir.
 
-```
+```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
@@ -102,7 +102,7 @@ Kısa biçimli anahtarları bir gruba birleştirilir ve bir değeri verildiğind
 ## <a name="escape-characters"></a>Çıkış karakterleri
  Aşağıdaki tam anlamıyla yerine bir denetim karakteri olarak yorumlanır hemen bir komut satırında bir şapka (^) karakteri karakter anlamına gelir. Bu anahtar adları dışında bir parametre veya anahtar değer düz tırnak işaretleri ("), boşluk, başında bir eğik çizgi, belirliyorsanız düzeltme işaretleri veya başka bir değişmez değer karakterler katıştırmak için kullanılabilir. Örneğin,
 
-```
+```cmd
 >Edit.Find ^^t /regex
 ```
 

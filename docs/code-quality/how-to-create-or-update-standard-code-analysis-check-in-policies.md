@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Standart Kod Çözümleme İade İlkeleri Oluşturma veya Güncelleme'
+title: Oluşturma veya güncelleştirme standart kod çözümleme iade ilkeleri
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 96fa2dd75c590e0841d7479e4e071154add04857
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Nasıl yapılır: Standart Kod Çözümleme İade İlkeleri Oluşturma veya Güncelleme
 
@@ -34,7 +34,7 @@ Kod çözümleme iade ilkeleri takım projesi ayarlarında belirlenir ve her tak
 
 Yönetilen kod için bir ilke belirttikten sonra takım üyeleri kod projeleri takım projesi ilke ayarları için kod çözümleme ayarlarını eşitleyebilirsiniz.
 
-### <a name="to-open-the-check-in-policy-editor"></a>İade İlkesi Düzenleyicisi'ni açmak için
+## <a name="to-open-the-check-in-policy-editor"></a>İade İlkesi Düzenleyicisi'ni açmak için
 
 1. Takım Gezgini'nde Takım Proje adına sağ tıklayın, fareyle **takım projesi ayarları**ve ardından **kaynak denetimi**.
 
@@ -46,28 +46,28 @@ Yönetilen kod için bir ilke belirttikten sonra takım üyeleri kod projeleri t
 
     - Varolan çift **Kod Analizi** öğesi **ilke türü** ilkeyi değiştirmek için liste.
 
-### <a name="to-set-policy-options"></a>İlke seçeneklerini ayarlamak için
+## <a name="to-set-policy-options"></a>İlke seçeneklerini ayarlamak için
 
 Seçin veya aşağıdaki seçenekleri temizleyin:
 
-    |Seçenek|Açıklama|
-    |------------|-----------------|
-    |**Yalnızca geçerli çözümün bir parçası olan dosyaları içerecek şekilde iade uygulayın.**|Kod çözümleme yalnızca çözüm ve proje yapılandırma dosyalarında belirtilen dosyaları çalıştırabilirsiniz. Bu ilke bir çözümün bir parçası olan tüm kod analiz edilir güvence altına alır.|
-    |**C/C++ Kod Analizi zorla (/ analyze)**|Tüm C veya C++ projeleri ile oluşturulması gerekir / analyze derleyici seçeneği Kod Analizi iade edilmeden önce çalıştırın.|
-    |**Yönetilen kod için Kod Analizi zorla**|Tüm yönetilen projeleri Kod Analizi çalıştırmak ve iade edilmeden önce yapı gerektirir.|
+|Seçenek|Açıklama|
+|------------|-----------------|
+|**Yalnızca geçerli çözümün bir parçası olan dosyaları içerecek şekilde iade uygulayın.**|Kod çözümleme yalnızca çözüm ve proje yapılandırma dosyalarında belirtilen dosyaları çalıştırabilirsiniz. Bu ilke bir çözümün bir parçası olan tüm kod analiz edilir güvence altına alır.|
+|**C/C++ Kod Analizi zorla (/ analyze)**|Tüm C veya C++ projeleri ile oluşturulması gerekir / analyze derleyici seçeneği Kod Analizi iade edilmeden önce çalıştırın.|
+|**Yönetilen kod için Kod Analizi zorla**|Tüm yönetilen projeleri Kod Analizi çalıştırmak ve iade edilmeden önce yapı gerektirir.|
 
-### <a name="to-specify-a-managed-rule-set"></a>Yönetilen kural kümesini belirtmek için
+## <a name="to-specify-a-managed-rule-set"></a>Yönetilen kural kümesini belirtmek için
 
-- Gelen **bu kural kümesini çalıştırmak** listesinde, aşağıdaki yöntemlerden birini kullanın:
+Gelen **bu kural kümesini çalıştırmak** listesinde, aşağıdaki yöntemlerden birini kullanın:
 
-    - Bir Microsoft standart bir kural kümesi seçin.
+- Bir Microsoft standart bir kural kümesi seçin.
 
-    - Özel bir kural kümesini seçmek için tıklatın  **\<... kaynak denetiminden kural kümesi seçin >** ve kural kaynak denetimi tarayıcıda kümesi sürüm denetim yolunu yazın. Sürüm denetimi yolu sözdizimi şöyledir:
+- Özel bir kural tıklayarak kümesini seçin  **\<... kaynak denetiminden kural kümesi seçin >**. Ardından, kural kaynak denetimi tarayıcıda kümesi sürüm denetim yolunu yazın. Sürüm denetimi yolu sözdizimi şöyledir:
 
-    - **$/** `TeamProjectName` **/** `VersionControlPath`
+   **$/** `TeamProjectName` **/** `VersionControlPath`
 
-    - Oluşturma ve iade özel ilke kuralı uygulama hakkında daha fazla bilgi için bkz: [yönetilen kod için uygulamaya özel iade ilkelerini](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
+Oluşturma ve iade özel ilke kuralı uygulama hakkında daha fazla bilgi için bkz: [yönetilen kod için uygulama özel iade ilkelerini](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod Çözümleme İade İlkeleri Oluşturma ve Kullanma](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Oluşturma ve kod çözümleme iade ilkelerini kullanma](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

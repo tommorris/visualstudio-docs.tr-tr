@@ -1,8 +1,8 @@
 ---
-title: IntelliTrace adım geri - Visual Studio kullanarak bir anlık görüntüyü görüntülemek | Microsoft Docs
+title: IntelliTrace adım geri kullanarak bir anlık görüntü görüntüleme
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
-ms.date: 12/06/2017
+ms.date: 05/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf930fce97b880703416481dabd4ee4eec1d0f7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68fec4e10d172f79908e57828c542a444d081b50
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Visual Studio IntelliTrace adım geri kullanarak görünüm anlık görüntüler
 
@@ -38,9 +38,20 @@ Bu öğreticide şunları yapacaksınız:
 
     ![IntelliTrace olayları ve anlık görüntüleri modunu etkinleştirme](../debugger/media/intellitrace-enable-snapshots.png "IntelliTrace olayları etkinleştirmek ve anlık görüntü modu")
 
+1. Özel durumları görüntüleme anlık görüntüleri için seçenekleri yapılandırmak istiyorsanız, seçin **IntelliTrace** > **Gelişmiş** gelen **seçenekleri** iletişim kutusu.
+
+    Bu seçenekler, Visual Studio 2017 Enterprise sürümü 15.7 başlayarak kullanılabilir.
+
+    ![Anlık görüntüler için davranışı özel durumları yapılandırın](../debugger/media/intellitrace-enable-snapshots-on-exceptions.png)
+
+    Olayları ve anlık görüntüleri etkinleştirdiğinizde, özel durumları anlık görüntüleri alma de varsayılan olarak etkindir. Özel durumlar anlık görüntü kaldırarak devre dışı bırakabilirsiniz **özel durum olaylarına anlık görüntüleri toplamak**. Bu özellik etkinleştirildiğinde, anlık görüntüleri işlenmeyen özel durumlar için alınır. İşlenmiş özel durumlar için anlık görüntüler, yalnızca özel durum oluşur ve bir daha önce oluşturulan özel durum yeniden throw değilse alınır. Aşağı açılan listeden bir değer seçerek, Maksimum sayıda anlık görüntü özel durumlar ayarlayabilirsiniz. Uygulamanız (örneğin, uygulamanızı bir kesme noktası isabet) Kesme moduna girer her zaman için en fazla geçerlidir.
+
+    > [!NOTE]
+    > Anlık görüntü yalnızca özel durum olayları için IntelliTrace kaydeden alınır. Hangi olayların IntelliTrace kayıtları seçerek belirtebilirsiniz **Araçları** > **seçenekleri** > **IntelliTrace olayları**.
+
 1. Projeniz, bir veya daha fazla kesme noktaları ayarlayın ve hata ayıklamayı Başlat (basın **F5**), ya da kodunuzu adımla hata ayıklamayı Başlat (**F10** veya **F11**).
 
-    IntelliTrace anlık görüntüsü uygulama işlemi her hata ayıklayıcısını adım ve kesme olayı alır. Bu olaylar kaydedilir **olayları** sekmesinde **tanılama araçları** diğer IntelliTrace olayları birlikte penceresi. Bu pencereyi açmak için **hata ayıklama** > **Windows** > **tanılama araçları Göster**.
+    IntelliTrace her bir hata ayıklayıcı adım, kesme olayı ve işlenmeyen özel durum olayı uygulamanın işleminin bir anlık görüntüsünü alır. Bu olaylar kaydedilir **olayları** sekmesinde **tanılama araçları** diğer IntelliTrace olayları birlikte penceresi. Bu pencereyi açmak için **hata ayıklama** > **Windows** > **tanılama araçları Göster**.
 
     Kamera simgesine anlık görüntüleri kullanılabilir olayları yanında görüntülenir. 
 

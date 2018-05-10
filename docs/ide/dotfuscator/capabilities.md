@@ -18,11 +18,11 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 39ec170858074cb7cb2bc4ab580cb2268164e0ad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a087af554ab62a77562dcdf449a18e807f9d17fe
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator özellikleri
 
@@ -52,7 +52,7 @@ Dotfuscator Ekle [koruma hata ayıklama davranışı] [ debug] bu obstruct için
 Kaynak kodunuz korumaya ek olarak, uygulamanızın tasarlandığı gibi kullanıldığından emin olmak önem taşır.
 Saldırganlar lisans ilkeleri (yani, yazılım korsanlığını), çalabilir veya uygulama tarafından işlenen hassas verileri işlemek için veya uygulamanın davranışını değiştirmek için aşmak için uygulamanızın çalabilir deneyebilirsiniz.
 
-Dotfuscator CE Ekle [uygulama doğrulama kodu] [ checks] dahil olmak üzere, derlemeler içine [koruma yetkisiz değiştirmeye karşı] [ tamper] ve [koruma hata ayıklama] [ debug] ölçümleri.
+Dotfuscator CE Ekle [uygulama doğrulama kodu] [ checks] dahil olmak üzere, derlemeler içine [koruma yetkisiz değiştirmeye karşı][tamper], [ Anti-debug][debug], ve [hologram root] [ root] ölçümleri.
 Geçersiz uygulama durumu algılandığında, doğrulama kodu olabilir [uygun bir şekilde çağrı uygulama kodu durum adresine bağlı][check-app].
 Veya kod yazmayı değil tercih ederseniz tanıtıcı geçersiz uygulamayı kullanır, Dotfuscator de Ekle [telemetri raporlama] [ check-telemetry] ve [yanıt] [ check-action] kaynak kodunuzu kendilerine herhangi bir değişiklik gerektirmeden davranışları.
 
@@ -72,28 +72,29 @@ Dotfuscator CE Ekle [özel durum izleme][exceptions], [oturum izleme][sessions],
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-- [assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
-- [uwp]: https://www.preemptive.com/blog/article/856-uwp-applications-in-dotfuscator-ce/91-dotfuscator-ce
-- [xamarin]: https://www.preemptive.com/obfuscating-xamarin-with-dotfuscator
+[assemblies]:  https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
+[uwp]:  https://www.preemptive.com/blog/article/856-uwp-applications-in-dotfuscator-ce/91-dotfuscator-ce
+[xamarin]:  https://www.preemptive.com/obfuscating-xamarin-with-dotfuscator
 
-- [upgrades]: upgrades.md
+[upgrades]:  upgrades.md
 
-- [obfuscation]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_overview.html
-- [renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
+[obfuscation]:  https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_overview.html
+[renaming]:  https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-- [analytics]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_overview.html
-- [endpoints]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_overview.html#endpoints
+[analytics]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_overview.html
+[endpoints]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_overview.html#endpoints
 
-- [checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
-- [check-app]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html#app-notification
-- [check-action]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html#action
+[checks]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
+[check-app]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html#app-notification
+[check-action]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html#action
 
-- [tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
-- [debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
-- [shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
-- [exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-- [sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-- [features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
-- [check-telemetry]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_checks.html
+[tamper]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
+[debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
+[root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
+[shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
+[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
+[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
+[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
+[check-telemetry]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_checks.html
 
-- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_capabilities.html
+[full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/intro_capabilities.html

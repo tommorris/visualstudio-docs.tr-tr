@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 839aeb7028608c60b2cd2f4170d37b06e3973f55
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 93a6627b96daefa48c9a72fd84726775fc449bde
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="sample-code-for-testing"></a>Test etmek için örnek kod
 
-Bu örnek kod bir sınıf içerir *BankAccont*, çeşitli yöntemlerle ile birim testleri test edilebilir.
+Bu örnek kod bir sınıf içerir *BankAccount*, çeşitli yöntemlerle ile birim testleri test edilebilir.
 
 Bu kod, aşağıdaki yönergelerde kullanılır:
 

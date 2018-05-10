@@ -1,16 +1,16 @@
 ---
 title: Mac için Visual Studio genişletme
-Description: Visual Studio for Mac's features and functionality can be extended with modules called extension packages. The first part of this guide creates a simple Visual Studio for Mac extension package to insert the date and time into a document. The second part of this guide introduces the fundamentals of the extension package system and some of the core APIs that form the foundation of Visual Studio for Mac.
+description: Mac'in özellikleri ve işlevselliği için Visual Studio uzantısı paketleri adlı modüllerle genişletilebilir. Bu kılavuzun ilk bölümü, bir basit bir belgeye tarih ve saat eklemek için Visual Studio'yu Mac uzantısı paketi oluşturur. Bu kılavuz ikinci bölümü uzantı paketini sistemi ile ilgili temel bilgileri ve çekirdek temelini Mac için Visual Studio API bazıları sunar
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 589663fff7caa46899fe8f4213f5d29fe2772611
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 4ba57dde546ff6827c6d0d137e907174c0699dbb
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac için Visual Studio genişletme
 

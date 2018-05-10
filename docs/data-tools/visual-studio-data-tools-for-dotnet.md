@@ -11,21 +11,23 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: d2db4210085e3dc16d9c4b9e00653312ae0d5a82
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b7fc572541e0c2f0f5aa04c6e676d1e2913ff9f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET için Visual Studio veri araçları
 
-Visual Studio ve .NET Framework birlikte kapsamlı API ve araç veritabanlarına bağlanma, veri bellekte modelleme ve kullanıcı arabiriminde verileri görüntüleme için desteği sağlar. Veri erişimi işlevselliği sağlamak .NET Framework sınıfları olarak da bilinir [ADO.NET](/dotnet/framework/data/adonet/index). Visual Studio'da tooling verilerin ADO.NET başlangıçta öncelikle ilişkisel veritabanları ve XML desteklemek üzere tasarlanmıştır. Bugünlerde, birçok NoSQL veritabanı satıcılarının ya da üçüncü tarafların ADO.NET sağlayıcıları sunar.
+Visual Studio ve .NET Framework birlikte kapsamlı API ve araç veritabanlarına bağlanma, veri bellekte modelleme ve kullanıcı arabiriminde verileri görüntüleme için desteği sağlar. Veri erişimi işlevselliği sağlamak .NET Framework sınıfları olarak da bilinir [ADO.NET](/dotnet/framework/data/adonet/index). Visual Studio'da tooling verilerin ADO.NET öncelikle ilişkisel veritabanları ve XML desteklemek için tasarlanmıştır. Bugünlerde, birçok NoSQL veritabanı satıcılarının ya da üçüncü tarafların ADO.NET sağlayıcıları sunar.
 
 [.NET core](/dotnet/core/) ADO.NET veri kümelerini ve ilgili türleri dışında destekler. .NET Core hedefleme ve bir nesne ilişkisel eşleme (ORM) katmanı gerektiren kullanın [Entity Framework Çekirdek](/ef/core/).
 
 Aşağıdaki diyagramda, Basitleştirilmiş bir görünümü temel mimari gösterilmektedir:
 
 ![ADO.NET mimarisi](../data-tools/media/raddata-ado-net-architecture-diagram.png)
+
+## <a name="typical-workflow"></a>Normal iş akışı
 
 Normal iş akışı şudur:
 
@@ -43,4 +45,4 @@ Normal iş akışı şudur:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)
+- [Visual Studio'da verilere erişim](../data-tools/accessing-data-in-visual-studio.md)

@@ -1,15 +1,15 @@
 ---
 title: Mac için Visual Studio Tanıtımı
-description: ''
+description: Bu makalede, Visual Studio'nun özellikleri Mac için tanıtılır.
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 4b4b8e9cb55e3a4cf2d81e7cf7234ea47ad06f0e
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 918c0532140369bfc6790be2306830b5f160ebdf
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Mac için Visual Studio Tanıtımı
 
@@ -72,7 +72,7 @@ Visual Studio tümleşik kendi Android SDK manager vardır.
 
 Android uygulamaları için Mac için Visual Studio ile Android çalışır kendi Tasarımcısı içeren `.axml` görsel olarak kullanıcı arabirimleri oluşturmak için dosyaları. Mac için Visual Studio bu dosyalar, Android Tasarımcısı'nda aşağıdaki görüntüde gösterildiği gibi açılır:
 
-![](media/intro-image31.png)
+![Android UI Tasarımcısı](media/intro-image31.png)
 
 Android Tasarımcısı hakkında daha fazla bilgi için bkz: [Tasarımcısı genel bakış](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview) belge.
 
@@ -80,7 +80,7 @@ Android Tasarımcısı hakkında daha fazla bilgi için bkz: [Tasarımcısı gen
 
 İOS Tasarımcısı Mac için Visual Studio ile tamamen tümleşiktir ve .xib ve iOS, tvOS ve WatchOS Uı'lar ve geçişler oluşturmak için film şeridi dosya görsel düzenleme sağlar. Tüm kullanıcı arabirimi, olayları işlemek için sezgisel bir yaklaşım kullanırken araç ve tasarım yüzeyi arasında sürükle ve bırak işlevi kullanılarak oluşturulabilir. Tasarımcı de destekler iOS [özel denetimler](https://developer.xamarin.com/guides/ios/user_interface/designer/ios_designable_controls_overview/) avantaj tasarım zamanı işleme ile.
 
-![](media/intro-image30.png)
+![iOS film şeridi Tasarımcısı](media/intro-image30.png)
 
 İOS Tasarımcısı kullanma hakkında daha fazla bilgi için bkz: [Tasarımcısı](https://developer.xamarin.com/guides/ios/user_interface/designer) belgeleri.
 
@@ -109,7 +109,7 @@ Xamarin profil oluşturucu profil oluşturma için üç Instruments kullanılabi
 
 Xamarin denetçisi bir etkileşimli C# Konsolu araçları ile kullanıcılara sağlar. Bu hata ayıklama veya tanılama Yardımı olarak dinamik uygulamalar, bir belge veya bir deney aracını olarak öğretme aracı olarak incelerken kullanılabilir.
 
-![](media/intro-inspector.png)
+![Xamarin Inspector](media/intro-inspector.png)
 
 Çeşitli platformlar (Android, iOS, Mac ve Windows) programlama yanı sıra, IDE hata ayıklama akışına tümleştirme hedefleyen bir zengin C# Konsolu sağlayan bir tek başına uygulaması oluşur.
 

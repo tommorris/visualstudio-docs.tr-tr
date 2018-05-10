@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2ec882bb2fdc9d0f3b74a0552c85a7b286617c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f713cd511225e03ec50c2cbe699c40bd704faa20
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="evaluate-statement-command"></a>Deyimi Değerlendir Komutu
 Değerlendirir ve belirli deyim görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cmd
 Debug.EvaluateStatement text
 ```
 
@@ -38,7 +38,7 @@ Debug.EvaluateStatement text
 
  İçinde **komutu** penceresinde, bir eşittir işareti (=) bir karşılaştırma işleci yorumlanır. Örneğin, bunu, değişkenlerin değerleri `a` ve `b` farklı, sonra komutu
 
-```
+```cmd
 >Debug.EvaluateStatement(a=b)
 ```
 
@@ -46,7 +46,7 @@ Debug.EvaluateStatement text
 
  İçinde **hemen** penceresinde, buna karşın bir eşittir işareti (=) atama işleci yorumlanır. Bu nedenle, örneğin, komutu
 
-```
+```cmd
 >Debug.EvaluateStatement(a=b)
 ```
 
@@ -54,7 +54,7 @@ Debug.EvaluateStatement text
 
 ## <a name="example"></a>Örnek
 
-```
+```cmd
 >Debug.EvaluateStatement(a+b)
 ```
 

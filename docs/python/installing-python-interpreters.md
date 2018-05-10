@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed5ac9e470b55281d1273bfe665be0813b37bf55
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="installing-python-interpreters"></a>Python yorumlayıcılar yükleme
 
@@ -27,7 +27,7 @@ Visual Studio yükleyicisi dışında aşağıdaki tabloda listelenen yorumlayı
 
 Visual Studio (tüm sürümler) otomatik olarak algılar her yüklü Python yorumlayıcı ve ortamına kayıt denetleyerek (aşağıdaki [CESARETLENDİRİCİ 514 - Python kayıt Windows kayıt defterinde](https://www.python.org/dev/peps/pep-0514/)).
 
-Visual Studio yüklü bir ortam algılamazsa bkz [el ile varolan bir ortama tanımlayan](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+Visual Studio yüklü bir ortam algılamazsa bkz [el ile varolan bir ortama tanımlamanız](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 Visual Studio gösteren tüm bilinen ortamlarda [Python ortamları penceresi](managing-python-environments-in-visual-studio.md)ve varolan yorumlayıcılar güncelleştirmeleri otomatik olarak algılar.
 
@@ -45,7 +45,7 @@ Yeni formlar algılama Python ortamları için sağlamak istediğiniz geliştiri
 
 Varolan bir yorumlayıcı dosya sistemi kullanılarak yeni bir konuma taşırsanız, Visual Studio değişikliği otomatik olarak algılamaz.
 
-- Yorumlayıcı konumunu ilk olarak belirttiyseniz, **Python ortamları** penceresinde, Düzen ortamı kullanarak **yapılandırma** yeni bir konum belirtmek için bu penceresindeki sekmesi. Bkz: [el ile varolan bir ortama tanımlayan](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+- Yorumlayıcı konumunu ilk olarak belirttiyseniz, **Python ortamları** penceresinde, Düzen ortamı kullanarak **yapılandırma** yeni bir konum belirtmek için bu penceresindeki sekmesi. Bkz: [el ile varolan bir ortama tanımlamanız](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 - Sonra bir yükleyici programı kullanarak yorumlayıcı yüklediyseniz, yeni konumdaki yorumlayıcı yeniden yüklemek için aşağıdaki adımları kullanın:
 

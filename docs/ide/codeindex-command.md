@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc0e4172d73544f3fe22764505bbabf182fc4ec6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="codeindex-command"></a>Codeındex komutu
 
@@ -33,7 +33,7 @@ Kullanılacak **Codeındex** komutu, bir üyesi olmanız gerekir **Team Foundati
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cmd
 TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /ignoreList:[ add | remove | removeAll | view ] ServerPath | /listLargeFiles [/fileCount:FileCount] [/minSize:MinSize] | /reindexAll | /destroyCodeIndex [/noPrompt] | /temporaryDataSizeLimit:[ view | <SizeInGBs> | disable ] | /indexHistoryPeriod:[ view | all | <NumberOfMonths> ] [/collectionName:CollectionName | /collectionId:CollectionId]
 ```
 
@@ -65,61 +65,61 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
  Dizin oluşturma durumu ve yapılandırma kodu görmek için:
 
-```
+```cmd
 TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Web Site"
 ```
 
  Tüm değişiklik kümelerini dizin oluşturma işlemi başlatmak için:
 
-```
+```cmd
 TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Web Site"
 ```
 
  Önceden oluşturulmuş değişiklik dizin oluşturmayı durdur ve yalnızca yeni değişiklik dizin oluşturma işlemi başlatmak için:
 
-```
+```cmd
 TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Web Site"
 ```
 
  10 KB'den büyük olan en fazla 50 dosyaları bulmak için:
 
-```
+```cmd
 TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Web Site"
 ```
 
  Belirli bir dosya dizine almasını hariç tutmak ve yoksayılan dosya listesine eklemek için:
 
-```
+```cmd
 TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Web Site/Catalog.cs" /collectionName:"Fabrikam Web Site"
 ```
 
  Dizinli değil tüm dosyaları görmek için:
 
-```
+```cmd
 TFSConfig CodeIndex /ignoreList:view
 ```
 
  Daha önce oluşturulmuş verilerini temizlemek ve dizin yeniden başlatmak için:
 
-```
+```cmd
 TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Web Site"
 ```
 
  Tüm değişiklik geçmişini kaydetmek için:
 
-```
+```cmd
 TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Web Site"
 ```
 
  CodeLens geçici veri boyutu sınırı kaldırın ve geçici veri boyutundan bağımsız olarak dizin oluşturmaya devam etmek için:
 
-```
+```cmd
 TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Web Site"
 ```
 
  Onay kodu diziniyle silmek için:
 
-```
+```cmd
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```
 

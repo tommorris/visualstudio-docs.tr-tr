@@ -1,46 +1,43 @@
 ---
 title: Visual Studio için Xamarin Studio üzerinden Mac yararları
-description: ''
-ms.topic: overview
+description: Bu makalede, Visual Studio Mac için Xamarin Studio sağlayan avantajları ve özellikler açıklanmaktadır
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
-ms.openlocfilehash: db4a328bceb79c1b99fdea95da89cc6cc7451523
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 63f8e0f03797f08383ad3a1ec2b9303a405ed236
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Visual Studio için Xamarin Studio üzerinden Mac yararları 
+ 
+Visual Studio Mac için Xamarin Studio Mac üzerinde tam özellikli bir IDE olarak değiştirilmiştir Web uygulamaları ve Hizmetleri, platformlar arası mobil ve Masaüstü uygulamaları ve oyunları geliştirmenize olanak tanıyan özellikler sağlar. Ayrıca, Azure'a yayımlama veya Azure işlevlerin oluşturulması anlamına olup Azure ile çok kolay tümleştirme kolaylaştırır. Her şeyin tam özellikli Kaynak Düzenleyici, güçlü bir hata ayıklayıcı, özelleştirilebilir bir çalışma alanı, git tümleştirmesi ve yerel olarak Mac için tasarlanmış zengin uzantı sistemi de dahil olmak üzere modern bir IDE gelen beklediğiniz sahip
 
-Visual Studio Mac için Xamarin Studio Mac üzerinde tam özellikli bir IDE olarak değiştirilmiştir Web uygulamaları ve Hizmetleri, platformlar arası mobil ve Masaüstü uygulamaları ve oyunları geliştirmenize olanak tanıyan özellikler sağlar. Ayrıca, Azure'a yayımlama veya Azure işlevlerin oluşturulması anlamına olup Azure ile çok kolay tümleştirme kolaylaştırır. Her şeyin tam özellikli Kaynak Düzenleyici, güçlü bir hata ayıklayıcı, özelleştirilebilir bir çalışma alanı, git tümleştirmesi ve yerel olarak Mac için tasarlanmış zengin uzantı sistemi de dahil olmak üzere modern bir IDE gelen beklediğiniz sahip 
+Diğer özellikler şunlardır:
 
-Diğer özellikler şunlardır: 
+* Roslyn tabanlı C# yeniden düzenleme, Çözümleyicileri ve kod düzeltmeleri IntelliSense,
+* NuGet tabanlı paket Yönetimi
+* Visual Studio uyumlu proje biçimi
+* MSBuild yapı altyapısı
+* Tümleşik birim testi
+* F # out-of--box desteği
 
-* Roslyn tabanlı C# yeniden düzenleme, Çözümleyicileri ve kod düzeltmeleri IntelliSense, 
-* NuGet tabanlı paket Yönetimi 
-* Visual Studio uyumlu proje biçimi 
-* MSBuild yapı altyapısı 
-* Tümleşik birim testi 
-* F # out-of--box desteği 
-
-Avantajları listelenen olarak işaretlenmiş bu kılavuzdaki **Önizleme** yalnızca kullanılabilir olan [alfa kanal](https://docs.microsoft.com/visualstudio/mac/update#Changing_the_Updater_channel). 
-
-## <a name="language-support"></a>Dil Desteği 
+## <a name="language-support"></a>Dil Desteği
 
 C# 7 kod Mac'inizde yazma yalnızca Visual Studio Mac için sunulan
 
-## <a name="net-core"></a>.NET Core  
+## <a name="net-core"></a>.NET Core
 
-[.NET Core](https://www.microsoft.com/net/core#macos), Windows, Linux ve Mac üzerinde çalıştırılan uygulamalar oluşturmaya yönelik bir platformdur. Mac için Visual Studio’da, .NET Core projelerini yükleme, oluşturma, çalıştırma ve bu projelerde hata ayıklama desteği bulunmaktadır. 
+[.NET Core](https://www.microsoft.com/net/core#macos), Windows, Linux ve Mac üzerinde çalıştırılan uygulamalar oluşturmaya yönelik bir platformdur. Mac için Visual Studio’da, .NET Core projelerini yükleme, oluşturma, çalıştırma ve bu projelerde hata ayıklama desteği bulunmaktadır.
 
 .NET core, Mac ve kutunun dışında works için Visual Studio ile yüklenir.
 
-.NET Core desteği şunları içerir: 
+.NET Core desteği şunları içerir:
 
-* C# ve F# IntelliSense. 
-* Konsol, kitaplık ve web uygulamaları için .NET Core proje şablonları. 
+* C# ve F# IntelliSense.
+* Konsol, kitaplık ve web uygulamaları için .NET Core proje şablonları.
 * Kesme noktaları, çağrı yığını ve izleme penceresi gibi özellikler de dahil olmak üzere tam hata ayıklama desteği. 
 * NuGet paket referanslarını ve MSBuild tabanlı geri yükleme. 
 * .NET Core SDK ile birlikte gelen Visual Studio Test platformu ile tümleşik birim testi çalıştırma ve hata ayıklama desteği sınar. 
@@ -94,11 +91,11 @@ Mac için Visual Studio ile ASP.NET Core web uygulamaları ve Hizmetleri Azure A
 
 ![Azure'a yayımlama](media/benefits-vsmac-over-xs-image1.png)
 
-### <a name="azure-functions-preview"></a>Azure işlevleri (**Önizleme**)
+### <a name="azure-functions"></a>Azure işlevleri
 
 Azure işlevleri kolayca kodu veya İşlevler, küçük parçalarını bulutta çalıştırmak için bir çözüm olur. Mac için Visual Studio code ve yerel olarak hata ayıklama, Azure işlevleri sağlar. Almak için Azure işlevleri bulut altında Ara yeni proje iletişim kutusuna başlatıldı. 
 
-### <a name="docker-support-preview"></a>Docker desteği (**Önizleme**)
+### <a name="docker-support"></a>Docker Desteği
 
 Şimdi, Docker kapsayıcılara ASP.NET Core uygulamaları yayımlamak ve bunları bir Azure uygulama hizmetinden çalıştırın. 
 
@@ -164,6 +161,4 @@ Xamarin platformlar arası özellikleri her zaman birinci sınıf özelliği Xam
 
 ### <a name="cross-platform"></a>Çoklu Platform 
 
-* [Xamarin Canlı Player](https://developer.xamarin.com/guides/cross-platform/live/) (**Önizleme**) 
-* [Xamarin IOT](https://developer.xamarin.com/guides/cross-platform/iot/) (**Önizleme**) 
- 
+* [Xamarin Live Player](https://developer.xamarin.com/guides/cross-platform/live/)

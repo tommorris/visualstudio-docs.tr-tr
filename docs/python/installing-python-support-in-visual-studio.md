@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c93a0c4d8fd312c9b7b6367043fc35b183d022bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f4af615091751f1076a5fe8659a8749fc41ca37
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python desteği yükleme
 
@@ -95,7 +95,7 @@ Yüklerken veya Visual Studio'da Python çalıştırırken sorunlarla karşıla�
 
     ![Visual Studio 2015 yükleyici PTVS seçeneği](media/installation-vs2015.png)
 
-1. Visual Studio Kurulumu tamamlandıktan sonra [tercih ettiğiniz bir Python yorumlayıcısı yüklemek](installing-python-interpreters.md). Yüklü yorumlayıcı ve Visual Studio zaten varsa değil otomatik olarak algılamak için bkz: [el ile varolan bir ortama tanımlayan](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+1. Visual Studio Kurulumu tamamlandıktan sonra [tercih ettiğiniz bir Python yorumlayıcısı yüklemek](installing-python-interpreters.md). Yüklü yorumlayıcı ve Visual Studio zaten varsa değil otomatik olarak algılamak için bkz: [el ile varolan bir ortama tanımlamanız](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 ve önceki sürümleri
 
@@ -105,7 +105,7 @@ Yüklerken veya Visual Studio'da Python çalıştırırken sorunlarla karşıla�
     - Visual Studio 2012: [PTVS 2.1 Visual Studio 2012 için](https://pytools.codeplex.com/downloads/get/920478)
     - Visual Studio 2010: [PTVS 2.1 Visual Studio 2010 için](https://pytools.codeplex.com/downloads/get/920479)
 
-1. [Tercih ettiğiniz bir Python yorumlayıcısı yüklemek](installing-python-interpreters.md). Yüklü yorumlayıcı ve Visual Studio zaten varsa değil otomatik olarak algılamak için bkz: [el ile varolan bir ortama tanımlayan](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+1. [Tercih ettiğiniz bir Python yorumlayıcısı yüklemek](installing-python-interpreters.md). Yüklü yorumlayıcı ve Visual Studio zaten varsa değil otomatik olarak algılamak için bkz: [el ile varolan bir ortama tanımlamanız](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 ## <a name="install-locations"></a>Konumları yükleyin
 

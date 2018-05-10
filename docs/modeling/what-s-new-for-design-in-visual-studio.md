@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2e36bbd95146f8a8b1095fefaa7882ff5f88d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c25d89ae3ab3d25e415b4407a46fc903b1c05266
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio tasarımındaki yenilikler
 
@@ -64,18 +64,13 @@ Daha fazla ayrıntı için bkz: [bu blog gönderisine](https://blogs.msdn.micros
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-<a name="VersionSupport"></a>
-## <a name="version-support-for-architecture-and-modeling-tools"></a>Mimari ve Modelleme Araçları sürüm desteği
+## <a name="a-nameversionsupport-version-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Mimari ve Modelleme Araçları sürüm desteği
 
-Visual Studio birkaç sürümlerinde kullanılabilir. Bunların tümü mimari ve Modelleme Araçları için destek sağlar. Aşağıdaki tabloda her aracı kullanılabilirliğini gösterir.
+Visual Studio 2015 birkaç sürümlerinde kullanılabilir. Bunların tümü mimari ve Modelleme Araçları için destek sağlar. Aşağıdaki tabloda her aracı kullanılabilirliğini gösterir.
 
 |**Özelliği**|**Enterprise**|**Professional**|**Topluluk**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Kod haritaları**|Evet|Bkz. Not (1)|-|-|
-|**Bağımlılık grafikleri**|Evet|Bkz. Not (2)|Bkz. Not (2)|-|
+|**Kod haritaları**|Evet|Yalnızca kod haritalarını okuma destekler, kod filtreleme, yeni genel düğümleri eklemek ve yeni bir yönlendirilmiş grafik seçimden oluşturma eşler.|-|-|
+|**Bağımlılık grafikleri**|Evet|Bağımlılık diyagramları okuma destekler.|Bağımlılık diyagramları okuma destekler.|-|
 |**Yönlendirilmiş Grafik** (DGML diyagramları)|Evet|Evet|Evet|-|
 |**Kodu Kopyala**|Evet|-|-|-|
-
-(1). Not: kod haritalarını okuma, kod haritalarını filtreleme, yeni genel düğüm ekleme ve yeni bir yönlendirilmiş grafik seçimden oluşturma yalnızca destekler.
-
-(2). Not: yalnızca destekler bağımlılık diyagramları okuma.

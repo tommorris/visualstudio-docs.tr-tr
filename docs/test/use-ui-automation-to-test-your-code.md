@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b97eb0c6ed496da29acb65ddc07b9f25f58b7d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 897ce97da798509253bf3f7d93a79735cc354965
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Kodunuzu Test Etmek için UI Otomasyonunu Kullanma
 
@@ -79,7 +79,7 @@ Hangi platformlar ve yapılandırmaları desteklenir kodlanmış UI testleri tar
     > [!WARNING]
     > Masaüstünde gerçekleştirilen tüm eylemler kaydedilir. Kayıt eklenmesini hassas verileri açabilir Eylemler gerçekleştiriyorsanız duraklatma.
 
-     **Eylemler silmek için** yanlışlıkla kaydettiğiniz, seçin **düzenleme eylemleri**.
+     **Eylemler silmek için** yanlışlıkla kaydettiğiniz, seçin **Düzenle adımları**.
 
      **Kodu oluşturmak için** , eylemlerinizi çoğaltmak, seçin **kodu oluştur** simgesi ve türü bir ad ve açıklama için kodlanmış UI test yöntemi.
 

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
-ms.translationtype: MT
+ms.openlocfilehash: 44d2e6c20173c075f1a3e5aac4881f12f5b46e1f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python ile çalışma
 
@@ -46,7 +46,7 @@ Daha fazla bilgi için:
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Zengin düzenleme, IntelliSense ve kod kavrama
 
-Visual Studio, birinci sınıf bir Python Düzenleyici, söz dizimi renklendirme, tüm kod ve kitaplıklarını arasında otomatik tamamlama biçimlendirme kodu da dahil olmak üzere, imza Yardım, yeniden düzenleme, türü ipuçları ve linting sağlar (linting aşağıda gösterilmiştir). Visual Studio sınıf görünümü gibi benzersiz özellikleri de sağlar, tanımı, tüm başvuruları Bul ve kod parçacıkları gidin. Doğrudan ile tümleştirme [etkileşimli pencere](#interactive-window) hızlı bir şekilde önceden bir dosyaya kaydedilir Python kodu geliştirmenize yardımcı olur.
+Visual Studio söz dizimi renklendirme, tüm kod ve kitaplıklarını arasında otomatik tamamlama kod biçimlendirme dahil birinci sınıf bir Python Düzenleyicisi sağlar, imza Yardım, yeniden düzenleme, (aşağıda gösterilen), linting ve ipuçlarını yazın. Visual Studio sınıf görünümü gibi benzersiz özellikleri de sağlar, tanımı, tüm başvuruları Bul ve kod parçacıkları gidin. Doğrudan ile tümleştirme [etkileşimli pencere](#interactive-window) hızlı bir şekilde önceden bir dosyaya kaydedilir Python kodu geliştirmenize yardımcı olur.
 
 ![Visual Studio'da Python kodu için kod tamamlamalar](media/code-editing-completions-simple.png)
 

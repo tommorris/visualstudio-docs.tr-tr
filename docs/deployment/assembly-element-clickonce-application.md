@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ac0f127dea4d668afe66c064b5e871d927f04e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1c72dd684092784c88b1ef6dd76d410ac9ff84d5
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;derleme&gt; öğesi (ClickOnce uygulaması)
 Uygulama bildirimi için üst düzey öğesi.  
@@ -70,6 +70,6 @@ Uygulama bildirimi için üst düzey öğesi.
   xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md)   
  [\<Assembly > öğesi](../deployment/assembly-element-clickonce-deployment.md)

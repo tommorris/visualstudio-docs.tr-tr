@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb238559cd59c03f134e781bc4beaf7ba7cb7893
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8084cdebf4cba1bf3bb79ac1fbf386837b977d97
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-new-item-command"></a>Yeni Öğe Ekle Komutu
 Geçerli çözüme bir .htm, .css, .txt veya çerçeve gibi yeni bir çözüm öğesi ekler ve açar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cmd
 File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
@@ -40,7 +40,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 
  Örneğin, yeni bir metin dosyası oluşturmak için / t: şunları girersiniz`templatename` bağımsız değişkeni.
 
-```
+```cmd
 /t:"General\Style Sheet"
 ```
 
@@ -50,14 +50,14 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 
  Örneğin, bir stil sayfası kaynak kod düzenleyicisinde açmak için aşağıdaki / e: için girersiniz`editorname` bağımsız değişkeni.
 
-```
+```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="example"></a>Örnek
  Bu örnek, geçerli çözüme yeni bir çözüm öğesi olan MyHTMLpg, ekler.
 
-```
+```cmd
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"
 ```
 

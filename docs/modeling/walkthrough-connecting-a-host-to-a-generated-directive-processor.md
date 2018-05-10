@@ -12,21 +12,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 994a1b0677930128d36c4a3218f0231879b7a43e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 4b7df8a53cafda94922cc7b296f0ff52868335f5
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>İzlenecek yol: Üretilen bir Yönerge İşlemcisine Ana Bilgisayar Bağlama
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>İzlenecek yol: bir oluşturulan bir yönerge işlemcisi konağına Bağla
+
 Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel konak örneklerde gösterildiği [izlenecek yol: özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md). Birden çok çıktı dosyaları oluşturma gibi işlevler eklemek için bu konak genişletebilirsiniz.
 
- Bu kılavuzda, böylece yönerge işlemcileri çağrı metin şablonları destekleyen özel ana bilgisayarınız genişletin. Bir etki alanına özgü dil tanımladığınızda, bunu oluşturan bir *yönerge işlemcisi* etki alanı modeli için. Yönerge işlemcisi derleme yazma ve şablonlarındaki yönergeleri almak için gereksinimini azaltır modeline erişim şablonları yazmak kullanıcılar için daha kolay hale getirir.
+Bu kılavuzda, böylece yönerge işlemcileri çağrı metin şablonları destekleyen özel ana bilgisayarınız genişletin. Bir etki alanına özgü dil tanımladığınızda, bunu oluşturan bir *yönerge işlemcisi* etki alanı modeli için. Yönerge işlemcisi derleme yazma ve şablonlarındaki yönergeleri almak için gereksinimini azaltır modeline erişim şablonları yazmak kullanıcılar için daha kolay hale getirir.
 
-> [!WARNING]
->  Bu kılavuzda derlemeler [izlenecek yol: özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md). Bu izlenecek yol ilk gerçekleştirin.
+> [!NOTE]
+> Bu kılavuzda derlemeler [izlenecek yol: özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md). Bu izlenecek yol ilk gerçekleştirin.
 
- Bu izlenecek yol aşağıdaki görevleri içerir:
+Bu izlenecek yol aşağıdaki görevleri içerir:
 
 -   Kullanarak [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] bir etki alanı modelini temel alan bir yönerge işlemcisi oluşturmak için.
 
@@ -35,7 +39,8 @@ Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel k
 -   Özel konak oluşturulan yönerge işlemcisi ile test etme.
 
 ## <a name="prerequisites"></a>Önkoşullar
- DSL tanımlamak için aşağıdaki bileşenler yüklü olmalıdır:
+
+DSL tanımlamak için aşağıdaki bileşenler yüklü olmalıdır:
 
 |||
 |-|-|
@@ -45,12 +50,11 @@ Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel k
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
- Ayrıca, oluşturduğunuz özel metin şablonu dönüştürme olmalıdır [izlenecek yol: özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+Ayrıca, oluşturduğunuz özel metin şablonu dönüştürme olmalıdır [izlenecek yol: özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
-## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>Bir yönerge işlemcisi oluşturmak için etki alanına özgü dil araçları kullanma
- Bu kılavuzda, bir etki alanına özgü dil DSLMinimalTest çözümü oluşturmak için etki alanına özgü dil Tasarımcısı Sihirbazı'nı kullanın.
+## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Bir yönerge işlemcisi oluşturmak için etki alanına özgü dil araçları kullanın
 
-#### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>Etki alanına özgü dil araçları kullanarak bir etki alanı modelini temel alan bir yönerge işlemcisi oluşturmak için
+Bu kılavuzda, bir etki alanına özgü dil DSLMinimalTest çözümü oluşturmak için etki alanına özgü dil Tasarımcısı Sihirbazı'nı kullanın.
 
 1.  Aşağıdaki özelliklere sahip bir etki alanına özgü dil çözümü oluşturun:
 
@@ -62,12 +66,12 @@ Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel k
 
     -   Şirket adı: Fabrikam
 
-     Bir etki alanına özgü dil çözümü oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).
+   Bir etki alanına özgü dil çözümü oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 2.  Üzerinde **yapı** menüsünde tıklatın **yapı çözümü**.
 
     > [!IMPORTANT]
-    >  Bu adım yönerge işlemcisi oluşturur ve için kayıt defterinde anahtar ekler.
+    > Bu adım yönerge işlemcisi oluşturur ve için kayıt defterinde anahtar ekler.
 
 3.  Üzerinde **hata ayıklama** menüsünde tıklatın **hata ayıklamayı Başlat**.
 
@@ -81,10 +85,9 @@ Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel k
 
 6.  Çözüm kaydedin ve ardından etki alanına özgü dil Tasarımcısı'nı kapatın.
 
-## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Özel metin şablonu yönerge işlemcisi konağa bağlanma
- Yönerge işlemcisi ve oluşturduğunuz özel metin şablonu konağı yönerge işlemcisi oluşturduktan sonra bağlandığınız [izlenecek yol: özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Bir yönerge işlemcisi bir özel metin şablonu ana bilgisayarına bağlanmak
 
-#### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>Oluşturulan yönerge işlemcisi bir özel metin şablonu ana bilgisayarına bağlanmak için
+Yönerge işlemcisi ve oluşturduğunuz özel metin şablonu konağı yönerge işlemcisi oluşturduktan sonra bağlandığınız [izlenecek yol: özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
 1.  CustomHost çözümü açın.
 
@@ -119,7 +122,7 @@ Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel k
 5.  Özelliği için kodu bulun `StandardAssemblyReferences`ve aşağıdaki kod ile değiştirin:
 
     > [!NOTE]
-    >  Bu adımda, ana bilgisayarınız destekleyecek oluşturulan yönerge işlemcisi tarafından gerekli derlemelerine başvurular ekleyin.
+    > Bu adımda, ana bilgisayarınız destekleyecek oluşturulan yönerge işlemcisi tarafından gerekli derlemelerine başvurular ekleyin.
 
     ```csharp
     //the host can provide standard assembly references
@@ -155,7 +158,7 @@ Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel k
 6.  İşlev için kodu bulun `ResolveDirectiveProcessor`ve aşağıdaki kod ile değiştirin:
 
     > [!IMPORTANT]
-    >  Bu kod, bağlanmak istediğiniz oluşturulan yönerge işlemcisi adını sabit kodlanmış başvurular içeriyor. Kolayca bu daha genel yaptığınız, kayıt defterinde listelenen tüm yönerge işlemcileri için görünüyor; bu durumda ve bir eşleşme bulmaya çalışır. Bu durumda, konak ile oluşturulan tüm yönerge işlemcisi çalışır.
+    > Bu kod, bağlanmak istediğiniz oluşturulan yönerge işlemcisi adını sabit kodlanmış başvurular içeriyor. Kolayca bu daha genel yaptığınız, kayıt defterinde listelenen tüm yönerge işlemcileri için görünüyor; bu durumda ve bir eşleşme bulmaya çalışır. Bu durumda, konak ile oluşturulan tüm yönerge işlemcisi çalışır.
 
     ```csharp
     //the engine calls this method based on the directives the user has
@@ -230,17 +233,18 @@ Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel k
 
 8.  Üzerinde **yapı** menüsünde tıklatın **yapı çözümü**.
 
-## <a name="testing-the-custom-host-with-the-directive-processor"></a>Özel konak yönerge işlemcisi ile test etme
- İlk özel metin şablonu konağı test etmek için oluşturulan yönerge işlemcisi çağıran bir metin şablonu yazma gerekir. Ardından, özel konak çalıştırın, kendisine metin şablonu adını geçirmek ve yönergesi doğru olarak işlendi doğrulayın.
+## <a name="test-the-custom-host-with-the-directive-processor"></a>Özel konak yönerge işlemcisi ile test
 
-#### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Özel ana bilgisayarı sınamak amacıyla metin şablonu oluşturmak için
+İlk özel metin şablonu konağı test etmek için oluşturulan yönerge işlemcisi çağıran bir metin şablonu yazma gerekir. Ardından, özel konak çalıştırın, kendisine metin şablonu adını geçirmek ve yönergesi doğru olarak işlendi doğrulayın.
+
+### <a name="create-a-text-template-to-test-the-custom-host"></a>Özel konak test etmek için bir metin şablonu oluşturma
 
 1.  Bir metin dosyası oluşturun ve adlandırın `TestTemplateWithDP.tt`. Dosyası oluşturmak için Not Defteri gibi herhangi bir metin düzenleyicisi kullanabilirsiniz.
 
 2.  Aşağıdakileri metin dosyasına ekleyin:
 
     > [!NOTE]
-    >  Metin şablonu programlama dili özel ana bilgisayar adıyla eşleşmesi gerekmez.
+    > Metin şablonu programlama dili özel ana bilgisayar adıyla eşleşmesi gerekmez.
 
     ```csharp
     Text Template Host Test
@@ -313,7 +317,7 @@ Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel k
 
 4.  Dosyayı kaydedin ve kapatın.
 
-#### <a name="to-test-the-custom-host"></a>Özel ana bilgisayarı sınamak için
+### <a name="test-the-custom-host"></a>Özel konak test
 
 1.  Bir komut istemi penceresi açın.
 
@@ -324,7 +328,7 @@ Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel k
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    >  Adres yazmak yerine, CustomHost.exe dosyasına gözatabilirsiniz içinde **Windows Explorer**ve ardından dosyayı komut istemi penceresine sürükleyin.
+    > Adres yazmak yerine, CustomHost.exe dosyasına gözatabilirsiniz içinde **Windows Explorer**ve ardından dosyayı komut istemi penceresine sürükleyin.
 
 3.  Bir boşluk yazın.
 
@@ -335,7 +339,7 @@ Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel k
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    >  Adres yazmak yerine, TestTemplateWithDP.txt dosyasına gözatabilirsiniz içinde **Windows Explorer**ve ardından dosyayı komut istemi penceresine sürükleyin.
+    > Adres yazmak yerine, TestTemplateWithDP.txt dosyasına gözatabilirsiniz içinde **Windows Explorer**ve ardından dosyayı komut istemi penceresine sürükleyin.
 
      Özel ana bilgisayar uygulamasını çalışır ve metin şablonu dönüştürme süreci başlatılır.
 
@@ -357,6 +361,6 @@ Metin şablonları işler kendi ana bilgisayar yazabilirsiniz. Temel bir özel k
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [İzlenecek yol: Özel Metin Şablonu Konağı Oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md)

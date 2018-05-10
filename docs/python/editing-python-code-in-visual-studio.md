@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97890a84b7b44af818c91f28b486be2d54567213
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: 173dc59190eb89517a4fb38f68299ae2e37064dd
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="editing-python-code"></a>Python kodu düzenleme
 
@@ -33,7 +33,7 @@ Visual Studio nesne tarayıcısı da kullanabilirsiniz (**Görünüm > Diğer Pe
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense sağlar [tamamlamalar](#completions), [imza Yardım](#signature-help), [hızlı bilgi](#quick-info), ve [kod renklendirme](#code-coloring).
+IntelliSense sağlar [tamamlamalar](#completions), [imza Yardım](#signature-help), [hızlı bilgi](#quick-info), ve [kod renklendirme](#code-coloring). Visual Studio 2017 15.7 ve sonraki sürümleri de destekler [yazın ipuçları](#type-hints).
 
 IntelliSense içinde performansı iyileştirmek için **Visual Studio 2017 sürüm 15,5** ve daha önce projenizdeki her Python ortamı için oluşturulan bir tamamlanma veritabanı bağlıdır. Veritabanları ekleyin, kaldırın veya güncelleştirme paketleri yenileme gerekebilir. Veritabanı durumu görüntülenir **Python ortamları** penceresinde (Çözüm Gezgini eşdüzey) **IntelliSense** sekmesinde (bkz [ortamları penceresi başvuru](python-environments-window-tab-reference.md#intellisense-tab)).
 
@@ -77,6 +77,46 @@ Yazma bir oluşturma öğesi başlatır ve olası dekoratörler gösterir. Bu ö
 
 > [!Tip]
 > Tamamlamalar davranışını yapılandırabilirsiniz **Araçlar > Seçenekler > Metin Düzenleyicisi > Python > Gelişmiş "**. Bunlar arasında **filtresi listesi, arama dizesi esas**: yazarken tamamlama önerileri filtrelerini uygular (varsayılan işaretli), ve **üye tamamlama görüntüler üyeleri kesişimi** yalnızca gösterir (varsayılan olarak işaretli değildir) tüm olası türleri tarafından desteklenen tamamlamalar. Bkz: [seçenekleri - tamamlama sonuçları](python-support-options-and-settings-in-visual-studio.md#completion-results).
+
+### <a name="type-hints"></a>Türü ipuçları
+
+*Visual Studio 2017 15.7 ve sonraki sürümleri.*
+
+"Tür ipuçları" Python içinde 3.5 + ([CESARETLENDİRİCİ 484](https://www.python.org/dev/peps/pep-0484/) (python.org) işlevleri için bir ek açıklamanın sözdizimi ve bağımsız değişken türleri belirtmek sınıfları dönüş değerleri ve sınıf öznitelikleri. İşlev çağrıları, bağımsız değişkenleri ve bu ek açıklamalarına sahip değişkenler geldiğinizde IntelliSense türü ipuçları görüntüler.
+
+Aşağıdaki örnekte `Vector` sınıfı olarak bildirilen `List[float]`ve `scale` işlevi, bağımsız değişkenleri ve dönüş değeri türü ipuçları içerir. Bu işlevi çağrısı üzerine gelerek veya onları türü ipuçları gösterir:
+
+![Bir işlev çağrısı türü ipuçları ortaya vurgulama](media/code-editing-type-hints1.png)
+
+Aşağıdaki örnekte, gördüğünüz nasıl özniteliklerini açıklama `Employee` sınıfı bir öznitelik için IntelliSense tamamlanma açılan görüntülenir:
+
+![IntelliSense tamamlanma gösteren türü ipuçları](media/code-editing-type-hints2.png)
+
+Hataları normal çalışma zamanına kadar görünmez olduğundan ayrıca türü ipuçları, projenizin boyunca doğrulamak yararlıdır. Bu amaç için Visual Studio Endüstri Standart MyPy aracı bağlam menü komutu ile tümleşir **Python > çalıştırmak Mypy** içinde **Çözüm Gezgini**:
+
+![Çözüm Gezgini'nde MyPy bağlam menüsü komutunu çalıştırın](media/code-editing-type-hints-run-mypy.png)
+
+Komut istemlerini çalıştıran mypy paketini yüklemek için gerekli. Visual Studio Proje her Python dosyasında türü ipuçları doğrulamak için mypy sonra çalıştırır. Hata almayana Visual Studio'da **hata listesi** penceresi. Penceresinde bir öğeyi seçerek, kodunuzda uygun satırı gider.
+
+Basit bir örnek olarak, aşağıdaki işlev tanımı belirtmek için bir tür ipucu içeren `input` bağımsız değişken türü ise `str`, tamsayı geçirmek bu işlevi çağrısında çalışır ancak:
+
+```python
+def commas_to_colons(input: str):
+    items = input.split(',')
+    items = [x.strip() for x in items]
+    return ':'.join(items)
+
+commas_to_colons(1)
+```
+
+Kullanarak **çalıştırmak Mypy** bu kodu komutunda aşağıdaki hata oluşturur:
+
+![Örnek türü ipuçları doğrulama mypy sonucu](media/code-editing-type-hints-validation-error.png)
+
+> [!Tip]
+> Python 3.5 önce sürümleri için Visual Studio aracılığıyla sağladığınız türü ipuçları da görüntüler *saplama dosyaları* (`.pyi`). Kodunuzda doğrudan türü ipuçları dahil etmek istemediğiniz her ya da bunları doğrudan kullanmayan bir kitaplık türü ipuçları oluşturmak istediğinizde saplama dosyalarını kullanabilirsiniz. Daha fazla bilgi için bkz: [Saplamalar oluşturmak için Python modülleri](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) mypy proje Wiki'deki.
+>
+> Şu anda, Visual Studio türü ipuçları açıklamaları desteklemez.
 
 ### <a name="signature-help"></a>İmza Yardım
 

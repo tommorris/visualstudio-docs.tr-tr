@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f27b11142880f71ed653371bd23ae01e51f50b3b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="immediate-window"></a>Komut Penceresi
 **Hemen** penceresi, hata ayıklama ve ifadeler değerlendirmek, deyimlerini yürütmek, değişken değerleri yazdırma ve benzeri için kullanılır. Hesaplanan veya hata ayıklama sırasında geliştirme dili tarafından yürütülen için ifadeler girin imkan tanır. Görüntülenecek **hemen** penceresinde, düzenlemek için bir proje açın ve ardından **Windows** gelen **hata ayıklama** menü ve seçin **hemen**, veya CTRL + ALT + g tuşlarına basın.
@@ -32,13 +32,13 @@ ms.lasthandoff: 04/26/2018
 ## <a name="displaying-the-values-of-variables"></a>Değişkenlerin değerlerini görüntüleme
  Bu pencere uygulama hata ayıklama sırasında özellikle yararlı olabilir. Örneğin, bir değişkenin değerini denetlemek için `varA`, kullanabileceğiniz [Yazdır komutu](../../ide/reference/print-command.md):
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  Soru işareti (?) için bir diğer ad olduğu `Debug.Print`, bu nedenle bu komut ayrıca yazılabilir:
 
-```
+```cmd
 >? varA
 ```
 
@@ -100,7 +100,7 @@ Tasarım zamanı ifade değerlendirmesi bir yürütme ortamı kurma başlangıç
 
  İçinde **hemen** penceresinde, bir eşittir işareti (=) atama işleci yorumlanır. Bu nedenle, örneğin, komutu
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 
@@ -108,7 +108,7 @@ Tasarım zamanı ifade değerlendirmesi bir yürütme ortamı kurma başlangıç
 
  İçinde **komutu** penceresinde, buna karşın bir eşittir işareti (=) bir karşılaştırma işleci yorumlanır. Atama işlemlerinde kullanamazsınız **komutu** penceresi. Örneğin, bunu, değişkenlerin değerleri `varA` ve `varB` farklı, sonra komutu
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 

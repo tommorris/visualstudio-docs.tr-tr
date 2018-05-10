@@ -14,21 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90434fd8deae2f5f71c150759fc836b9ed43077
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dffef39d735b95cff01ead7087aa8b6286e39004
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-implement-nested-projects"></a>Nasıl yapılır: iç içe Projeler uygulama
+
 Oluşturduğunuzda bir iç içe proje türü vardır uygulanmalı birkaç bir ek adımlar şunlardır. Ana proje çözümü kendi iç içe geçmiş (alt) projeler için sahip aynı yükümlülüklerinizin bazıları alır. Ana proje projelerin bir çözüme benzer bir kapsayıcıdır. Özellikle, iç içe geçmiş projeleri hiyerarşisi oluşturmak için ana proje ve çözüm tarafından oluşturulması gereken birkaç olay vardır. Bu olaylar iç içe geçmiş projeleri oluşturmak için aşağıdaki işlemi açıklanmıştır.
 
-### <a name="to-create-nested-projects"></a>İç içe proje oluşturmak için
+## <a name="create-nested-projects"></a>İç içe geçmiş projeleri oluşturma
 
 1.  Tümleşik geliştirme ortamı (IDE) çağırarak üst projenin proje dosyası ve başlangıç bilgileri yükler <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> arabirimi. Ana proje oluşturulur ve çözüme eklendi.
 
     > [!NOTE]
-    >  Bu noktada, çünkü alt projeleri oluşturulmadan önce üst proje oluşturulmalıdır iç içe proje oluşturmak ana proje için işlemde çok erken. Bu dizisi aşağıdaki ana proje ayarları alt projelere uygulayabilirsiniz ve alt projeleri, gerekirse üst projelerinden bilgileri elde edebilirsiniz. Üzerinde kaynak kodu denetimi (SCC) ve Çözüm Gezgini gibi istemcileri tarafından gerekli değilse bu sırasıdır.
+    > Bu noktada, çünkü alt projeleri oluşturulmadan önce üst proje oluşturulmalıdır iç içe proje oluşturmak ana proje için işlemde çok erken. Bu dizisi aşağıdaki ana proje ayarları alt projelere uygulayabilirsiniz ve alt projeleri, gerekirse üst projelerinden bilgileri elde edebilirsiniz. Üzerinde kaynak kodu denetimi (SCC) ve Çözüm Gezgini gibi istemcileri tarafından gerekli değilse bu sırasıdır.
 
      Ana proje beklemelisiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> kendi iç içe geçmiş (alt) proje veya projeleri oluşturmadan önce IDE tarafından çağrılacak yöntem.
 
@@ -57,7 +58,7 @@ Oluşturduğunuzda bir iç içe proje türü vardır uygulanmalı birkaç bir ek
      Zaten yoksa üst projesini iç içe geçmiş her proje için bir GUID çağırarak oluşturur `CoCreateGuid`.
 
     > [!NOTE]
-    >  `CoCreateGuid` bir GUID oluşturulacak olduğunda bir COM API adı verilir. Daha fazla bilgi için bkz: `CoCreateGuid` ve GUID'lerini MSDN Kitaplığı'nda.
+    > `CoCreateGuid` bir GUID oluşturulacak olduğunda bir COM API adı verilir. Daha fazla bilgi için bkz: `CoCreateGuid` ve GUID'lerini MSDN Kitaplığı'nda.
 
      Ana proje bu GUID IDE içinde açılmış bir sonraki başlatılışında alınması için kendi proje dosyasında depolar. 4. adım, arama için ilgili daha fazla bilgi için bkz: `AddVirtualProjectEX` almak için `guidProjectID` alt projesi için.
 
@@ -66,7 +67,7 @@ Oluşturduğunuzda bir iç içe proje türü vardır uygulanmalı birkaç bir ek
      Üst ve alt projeleri program aracılığıyla örneği olduğundan iç içe proje özelliklerini bu noktada ayarlayabilirsiniz.
 
     > [!NOTE]
-    >  Yalnızca bağlam bilgilerini iç içe geçmiş projesinden aldığınız yapın, ancak, ana proje her bağlam için bu öğeyi olup olmadığını kontrol ederek sorabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Bu şekilde, tek tek iç içe geçmiş projeler için fazladan dinamik Yardım öznitelikler ve özel menü seçenekleri ekleyebilirsiniz.
+    > Yalnızca bağlam bilgilerini iç içe geçmiş projesinden aldığınız yapın, ancak, ana proje her bağlam için bu öğeyi olup olmadığını kontrol ederek sorabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Bu şekilde, tek tek iç içe geçmiş projeler için fazladan dinamik Yardım öznitelikler ve özel menü seçenekleri ekleyebilirsiniz.
 
 10. Hiyerarşi çağrısıyla Çözüm Gezgini'nde görüntülemek için yerleşik <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> yöntemi.
 
@@ -78,17 +79,14 @@ Oluşturduğunuzda bir iç içe proje türü vardır uygulanmalı birkaç bir ek
 
      Ne zaman bir iç içe proje kapatıldığında kullanıcı çözümü veya özel Proje kendisi, başka bir yöntem üzerinde `IVsParentProject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>, olarak adlandırılır. Ana proje çağrılarını sarmalar <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> yöntemiyle <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> iç içe geçmiş projeleri kapalı dinleyicileri çözüm olayları bildirmek için yöntemleri.
 
- Aşağıdaki konular, iç içe geçmiş projeleri uyguladığınızda dikkate alınması gereken birkaç diğer kavramları Dağıt:
+Aşağıdaki konular, iç içe geçmiş projeleri uyguladığınızda dikkate alınması gereken birkaç diğer kavramları Dağıt:
 
- [İç İçe Projeleri Kaldırma ve Yeniden Yükleme Konusunda Dikkat Edilmesi Gerekenler](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [İç İçe Projeleri Kaldırma ve Yeniden Yükleme Konusunda Dikkat Edilmesi Gerekenler](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [İç içe Projeler için Sihirbaz Desteği](../../extensibility/internals/wizard-support-for-nested-projects.md)
+- [İç içe Projeler için Komut İşlemesi Uygulama](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
+- [İç içe Projeler için AddItem İletişim Kutusunu Filtreleme](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
- [İç içe Projeler için Sihirbaz Desteği](../../extensibility/internals/wizard-support-for-nested-projects.md)
-
- [İç içe Projeler için Komut İşlemesi Uygulama](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
-
- [İç içe Projeler için AddItem İletişim Kutusunu Filtreleme](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
-
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yeni Öğe Ekleme İletişim Kutularına Öğe Ekleme](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Proje ve Öğe Şablonlarını Kaydetme](../../extensibility/internals/registering-project-and-item-templates.md)

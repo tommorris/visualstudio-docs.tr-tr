@@ -12,15 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b36162c14b07e90368b30e34137ea8e7da03d91a
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5280dd0bffab2fb7c9797502e9d94e0589800c39
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="features-of-the-code-editor"></a>Kod Düzenleyicisi özellikleri
 
-Visual Studio düzenleyicisinde yazma ve kod ve metin yönetmek kolaylaştıran birçok özellik sağlar. Genişletebilir ve farklı kod bloklarını anahat oluşturma kullanarak daraltabilirsiniz. IntelliSense, kullanarak kodu hakkında daha fazla bilgiyi **Nesne Tarayıcısı**ve çağrı hiyerarşisi. Kod gibi özellikleri kullanarak bulabileceğiniz **gitmek için**, **Tanıma Git**, ve **tüm başvuruları Bul**. Kod parçacıkları ile kod bloklarını ekleyebilir ve kod gibi özellikleri kullanarak oluşturabileceğiniz **kullanımından Oluştur**. Visual Studio düzenleyicisinde önce hiç kullanmadıysanız bkz [kodunuzu düzenleyin](https://www.visualstudio.com/features/ide-vs) hızlı bir genel bakış için.
+Visual Studio düzenleyicisinde yazma ve kod ve metin yönetmek kolaylaştıran birçok özellik sağlar. Genişletebilir ve farklı kod bloklarını anahat oluşturma kullanarak daraltabilirsiniz. IntelliSense, kullanarak kodu hakkında daha fazla bilgiyi **Nesne Tarayıcısı**ve çağrı hiyerarşisi. Kod gibi özellikleri kullanarak bulabileceğiniz **gitmek için**, **Tanıma Git**, ve **tüm başvuruları Bul**. Kod parçacıkları ile kod bloklarını ekleyebilir ve kod gibi özellikleri kullanarak oluşturabileceğiniz **kullanımından Oluştur**. Visual Studio düzenleyicisinde önce hiç kullanmadıysanız bkz [kodunuzu düzenleyin](https://www.visualstudio.com/vs/features/ide/) hızlı bir genel bakış için.
 
 Kodunuzu çeşitli farklı şekillerde görüntüleyebilirsiniz. Varsayılan olarak, **Çözüm Gezgini** dosyaları tarafından düzenlenen kodunuzu gösterir. Tıklatabilirsiniz **sınıf görünümü** sekmesini kodunuzu görüntülemek için pencerenin altındaki sınıfları tarafından düzenlenir.
 

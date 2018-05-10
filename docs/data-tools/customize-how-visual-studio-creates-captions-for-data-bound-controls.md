@@ -15,13 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f6c2dffe793928532d36b539ba73914ecf0c24dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio'nun verilere bağlı denetimler için resim yazıları nasıl oluşturduğunu özelleştirme
+
 Öğelerden sürüklediğinizde [veri kaynakları penceresi](add-new-data-sources.md) bir tasarımcı bir ayrıcalık oyuna gelir: resim yazısı etiketleri içindeki sütun adlarının yeniden biçimlendirilen daha okunabilir bir dizeye iki veya daha fazla sözcükler olarak bulunan birlikte art arda eklenmiş. İçinde bu etiketler oluşturulur, ayarlayarak şekilde özelleştirebilirsiniz **SmartCaptionExpression**, **SmartCaptionReplacement**, ve **SmartCaptionSuffix** değerler **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data tasarımcıları** kayıt defteri anahtarı.
 
 > [!NOTE]
@@ -48,15 +49,15 @@ Aşağıdaki tabloda, bu kayıt defteri değerlerini iç varsayılan ayarların�
 > [!CAUTION]
 > Kayıt Defteri Düzenleyicisi'nde hiçbir şey yaparken çok dikkatli olmanız gerekir. Düzenlemeye başlamadan önce kayıt defterini yedekleyin. Kayıt Defteri Düzenleyicisi'ni yanlış kullanırsanız, işletim sisteminizi yeniden yüklemenizi gerektirebilecek önemli sorunlara neden olabilir. Microsoft Kayıt Defteri Düzenleyicisi'ni kullanarak neden sorunları çözmek için garanti etmez. Kayıt Defteri Düzenleyicisi'ni kullanım riski size aittir.
 >
->  Aşağıdaki Bilgi Bankası makalesi yedekleme, düzenleme ve kayıt defterini geri yüklemek için yönergeleri içerir: [Microsoft Windows kayıt defterinin açıklaması](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> Aşağıdaki Bilgi Bankası makalesi yedekleme, düzenleme ve kayıt defterini geri yüklemek için yönergeleri içerir: [Microsoft Windows kayıt defterinin açıklaması](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
-### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Veri kaynakları penceresinden akıllı açıklamalı alt yazı davranışını değiştirmek için
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Veri kaynakları penceresinden akıllı açıklamalı alt yazı davranışını değiştirmek
 
 1.  Bir komut penceresi açın **Başlat** ve ardından **çalıştırmak**.
 
 2.  Tür `regedit` içinde **çalıştırmak** iletişim kutusu ve tıklatın **Tamam**.
 
-3.  Genişletme **HKEY_CURRENT_USER**, **yazılım*, **Microsoft**, **Visual Studio** düğümü.
+3.  Genişletme **HKEY_CURRENT_USER**, **yazılım**, **Microsoft**, **Visual Studio** düğümü.
 
 7.  Sağ **15.0** düğümü ve yeni bir **anahtar** adlı `Data Designers`.
 
@@ -80,7 +81,7 @@ Aşağıdaki tabloda, bu kayıt defteri değerlerini iç varsayılan ayarların�
 
     Sonraki öğelerinden sürükleyin **veri kaynakları** penceresinin başlık etiketleri oluşturulur sağlanan yeni kayıt defteri değerleri kullanarak.
 
-### <a name="to-turn-off-the-smart-captioning-feature"></a>Akıllı açıklamalı alt yazı özelliği devre dışı bırakmak için
+## <a name="turn-off-the-smart-captioning-feature"></a>Akıllı resim yazısı özelliğini kapatma
 
 1.  Bir komut penceresi açın **Başlat** ve ardından **çalıştırmak**.
 

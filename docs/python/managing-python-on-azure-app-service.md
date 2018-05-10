@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e77c155565830827ff6c30e48aee89152e07a80e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a71ea2210bfc6c56a235f194354c3279c8e7370
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Azure App Service'te bir Python ortamı kurma
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Python sürümü aracılığıyla Azure Kaynak Yöneticisi'ni seçme
 
-Bir uygulama hizmeti bir Azure Resource Manager şablonu ile dağıtıyorsanız, site uzantısı bir kaynak olarak ekleyin. Uzantı türü olan iç içe geçmiş bir kaynak olarak görünür `siteextensions` ve adından [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
+Bir uygulama hizmeti bir Azure Resource Manager şablonu ile dağıtıyorsanız, site uzantısı bir kaynak olarak ekleyin. Özellikle, uzantı iç içe geçmiş bir kaynak olarak görünür (bir `resources` altında nesne `resources`) türüyle `siteextensions` ve adından [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
 
 Örneğin, bir başvuru ekledikten sonra `python361x64` (şablonunuzu aşağıdaki gibi görünecektir Python 3.6.1 x 64), (atlanmış bazı özellikleri):
 

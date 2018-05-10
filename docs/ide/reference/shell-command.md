@@ -20,18 +20,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 632c37ea2ee8afc0a8d3b45e0d3e208de6b76f9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04ec2719b57f387633a7244d7089be963d3ba87c
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="shell-command"></a>Kabuk Komutu
 İçinden yürütülebilir programları başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cmd
 Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
@@ -66,13 +66,13 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 > Varsa `path` bağımsız değişkeni, dosya adının yanı sıra dizin yolu sağlayan, tüm yol değişmez değer tırnak içine aldığınızdan ("" "), aşağıdaki gibi:
 
 
-```
+```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
  Her kümesi üç çift tırnak ("" ") tarafından yorumlanan `Shell` işlemci tek tırnak karakteri olarak. Bu nedenle, önceki örnekte aşağıdaki yol dizesini gerçekten geçirmeden `Shell` komutu:
 
-```
+```cmd
 "C:\Program Files\SomeFile.exe"
 ```
 
@@ -83,7 +83,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 ## <a name="example"></a>Örnek
  Aşağıdaki komut dosyasını kopyalamak için xcopy.exe kullanır `MyText.txt` içine `Text` klasör. İkisi de xcopy.exe çıktısı görüntülenir **komut penceresi** ve **çıkış** penceresi.
 
-```
+```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 

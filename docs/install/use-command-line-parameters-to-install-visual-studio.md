@@ -2,7 +2,7 @@
 title: Visual Studio'yu yüklemek için komut satırı parametreleri kullanma
 description: Komut satırı parametreleri denetlemek veya Visual Studio yüklemenizi özelleştirmek için nasıl kullanılacağını öğrenin.
 ms.custom: ''
-ms.date: 01/17/2018
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 566e662c55589424f04e93d0dd182faed8a4b757
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
-ms.translationtype: MT
+ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017 yüklemek için komut satırı parametreleri kullanın
 
@@ -101,6 +101,10 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 | `--nocache` | **15.2, isteğe bağlı olarak yeni**: varsa, paketleri kaldıktan sonra yüklü ya da onarılması silinir. Bunlar, yalnızca gerekli ve yeniden kullandıktan sonra silinen yeniden yüklenir. Bu, sonraki yükler, onarır veya değişiklikler için kullanılacak genel ilkesini geçersiz kılar. Varsayılan İlke önbellek paketler içindir. Bu kaldırma komutu için göz ardı edilir. Nasıl okumak için [devre dışı bırakmak veya paket önbellek taşıma](disable-or-move-the-package-cache.md) daha fazla bilgi için. |
 | `--noUpdateInstaller` | **15.2, isteğe bağlı olarak yeni**: varsa, yükleyici sessiz belirtildiğinde kendini güncelleştirmesini engeller. Yükleyici komut başarısız ve yükleyici güncelleştirme gerekli olduğunda noUpdateInstaller ile sessiz belirtilmişse sıfır olmayan çıkış kodu döndürür. |
 | `--noWeb` | **15.3, isteğe bağlı olarak yeni**: Kurulum şimdi Internet'ten yükleme herhangi bir içerik indirir.  Yüklenmekte olan tüm içeriği çevrimdışı bir düzende kullanılabilir olması gerekir.  Düzen içeriği eksik kurulum başarısız olur.  Daha fazla bilgi için bkz: [bir ağ yüklemesinden dağıtma](create-a-network-installation-of-visual-studio.md). |
+| `--path <name>=<path>` | **15.7, isteğe bağlı olarak yeni**: yükleme için özel yükleme yolları belirtmek için kullanılır. Yol adları paylaşılan, önbellek ve yükleme desteklenmiyor. |
+| `--path cache=<path>` | **15.7, isteğe bağlı olarak yeni**: yükleme dosyalarını indirmek için belirttiğiniz konuma kullanır. Bu konum yalnızca Visual Studio yüklenmiş ilk defa ayarlayabilirsiniz. Örnek: `--path cache="C:\VS\cache"` |
+| `--path shared=<path>` | **15.7, isteğe bağlı olarak yeni**: yan yana Visual Studio yüklemeleri için paylaşılan dosyaları içerir. Diğerlerinin bu ayarı geçersiz ve başka bir sürücüye yükleme sırasında bu diskte bir konum için bazı araç ve SDK yükleyin. Örnek: `--path shared="C:\VS\shared"` |
+| `--path install=<path>` | **15.7, isteğe bağlı olarak yeni**: eşdeğer `–-installPath`. Özellikle, `--installPath "C:\VS"` ve `--path install="C:\VS"` eşdeğerdir. Bunlar yalnızca biri aynı anda kullanılabilir. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>İş yükü kimlikleri ve bileşen listesi
 

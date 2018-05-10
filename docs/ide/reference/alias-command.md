@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e72c848ff9a0234040e60391be8baa05e23791a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41bddec00866f7c10140abc40c5ff12c623310d3
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="alias-command"></a>Diğer Ad Komutu
 Tam komut, tam komut ve bağımsız değişkenler için yeni bir diğer ad veya başka bir diğer ad oluşturur.
@@ -33,7 +33,7 @@ Tam komut, tam komut ve bağımsız değişkenler için yeni bir diğer ad veya 
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cmd
 Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
@@ -57,19 +57,19 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ## <a name="examples"></a>Örnekler
  Bu örnek, yeni bir ad oluşturur `upper`, tam komut Edit.MakeUpperCase.
 
-```
+```cmd
 >Tools.Alias upper Edit.MakeUpperCase
 ```
 
  Bu örnek, diğer siler `upper`.
 
-```
+```cmd
 >Tools.alias /delete upper
 ```
 
  Bu örnekte, tüm geçerli diğer adlar ve tanımları listesini görüntüler.
 
-```
+```cmd
 >Tools.Alias
 ```
 

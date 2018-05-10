@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3d0a9f8f730808cd8179599669342b530f921a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8f8a310832f0691b4bc4056baddeb1fbbad78f8
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>İzlenecek yol: bir kısayol tuşu Düzenleyicisi uzantısı ile kullanma
 Kısayol tuşları Düzenleyicisi uzantısı'nda yanıt verebilir. Aşağıdaki örneklerde, bir kısayol tuşunu kullanarak bir görünüm adornment bir metin görünümüne eklemek gösterilmiştir. Bu kılavuz Görünüm penceresi adornment Düzenleyicisi şablona dayalı ve kullanarak adornment eklemenize olanak sağlayan + karakter.  
@@ -46,8 +46,21 @@ Kısayol tuşları Düzenleyicisi uzantısı'nda yanıt verebilir. Aşağıdaki 
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
 ```  
+
+KeyBindingTestTextViewCreationListener.cs sınıf dosyasında AdornmentLayer adını değiştirmek **KeyBindingTest** için **PurpleCornerBox**:
   
-## <a name="defining-the-command-filter"></a>Komut filtresi tanımlama  
+    ```csharp  
+    [Export(typeof(AdornmentLayerDefinition))]  
+    [Name("PurpleCornerBox")]  
+    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
+    public AdornmentLayerDefinition editorAdornmentLayer;  
+    ```  
+
+## <a name="handling-typechar-command"></a>TYPECHAR komutu işleme
+Visual Studio 2017 sürümü bir düzenleyici uzantısını komutları işlemek için tek yolu uygulama 15,6 önce bir <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> komutu filtresini tabanlı. Visual Studio 2017 sürüm 15,6 Düzenleyicisi komut işleyicileri dayalı modern basitleştirilmiş bir yaklaşım sunmuştur. Sonraki iki bölümde hem eski ve modern bir yaklaşım kullanarak bir komut nasıl ele alınacağını göstermektedir.
+
+## <a name="defining-the-command-filter-prior-to-visual-studio-2017-version-156"></a>(Önce Visual Studio 2017 sürüm 15,6) komutu filtresini tanımlama
+
  Komut filtresi uygulamasıdır <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, hangi işleme komutu adornment oluşturarak.  
   
 1.  Bir sınıf dosyası ekleyin ve adını `KeyBindingCommandFilter`.  
@@ -90,7 +103,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 6.  Uygulama `QueryStatus()` yöntemini aşağıdaki şekilde.  
   
-    ```vb  
+    ```csharp  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
     {  
         return m_nextTarget.QueryStatus(ref pguidCmdGroup, cCmds, prgCmds, pCmdText);  
@@ -121,7 +134,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-## <a name="adding-the-command-filter"></a>Komut filtresi ekleme  
+## <a name="adding-the-command-filter-prior-to-visual-studio-2017-version-156"></a>(Önce Visual Studio 2017 sürüm 15,6) komut filtresi ekleme
  Adornment sağlayıcısı komut filtresi metni görünümüne eklemeniz gerekir. Bu örnekte, sağlayıcı uygulayan <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> metin görünüm oluşturma olayları dinleyecek şekilde. Bu adornment sağlayıcısı ayrıca adornment Z-sıralamasını tanımlar adornment katmanı dışa aktarır.  
   
 1.  Aşağıdaki KeyBindingTestTextViewCreationListener dosyasına ekleyin using deyimleri:  
@@ -139,16 +152,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  Adornment katman tanımı'nda AdornmentLayer adını değiştirmek **KeyBindingTest** için **PurpleCornerBox**.  
-  
-    ```csharp  
-    [Export(typeof(AdornmentLayerDefinition))]  
-    [Name("PurpleCornerBox")]  
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
-    public AdornmentLayerDefinition editorAdornmentLayer;  
-    ```  
-  
-3.  Metin görünümü bağdaştırıcısı almak için içeri aktarmanız gerekir <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
+2.  Metin görünümü bağdaştırıcısı almak için içeri aktarmanız gerekir <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -156,7 +160,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4.  Değişiklik <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> olan ekler için yöntemi `KeyBindingCommandFilter`.  
+3.  Değişiklik <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> olan ekler için yöntemi `KeyBindingCommandFilter`.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -165,7 +169,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5.  `AddCommandFilter` İşleyicisi metin görünümü bağdaştırıcısı alır ve komut filtre ekler.  
+4.  `AddCommandFilter` İşleyicisi metin görünümü bağdaştırıcısı alır ve komut filtre ekler.  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -188,11 +192,90 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
         }  
     }  
     ```  
+
+## <a name="implement-a-command-handler-starting-in-visual-studio-2017-version-156"></a>(Visual Studio 2017 sürüm 15,6 başlayarak) bir komut işleyici uygulama
+
+İlk olarak, en son Düzenleyicisi API başvuru için projenin Nuget başvurularını güncelleştirme:
+
+1. Sağ tıklatın ve proje **Nuget paketlerini Yönet**.
+
+2. İçinde **Nuget Paket Yöneticisi**seçin **güncelleştirmeleri** sekmesine **tüm paketleri seçmek** onay kutusunu ve ardından **güncelleştirme**.
+
+Bir komut işleyici uygulamasıdır <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, hangi işleme komutu adornment oluşturarak.  
   
+1.  Bir sınıf dosyası ekleyin ve adını `KeyBindingCommandHandler`.  
+  
+2.  Aşağıdaki using deyimlerini.  
+  
+    ```csharp  
+    using Microsoft.VisualStudio.Commanding;
+    using Microsoft.VisualStudio.Text.Editor;
+    using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
+    using Microsoft.VisualStudio.Utilities;
+    using System.ComponentModel.Composition;   
+    ```  
+  
+3.  KeyBindingCommandHandler adlı sınıf alması gerektiğini `ICommandHandler<TypeCharCommandArgs>`ve olarak dışarı aktarma <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+  
+    ```csharp  
+    [Export(typeof(ICommandHandler))]
+    [ContentType("text")]
+    [Name("KeyBindingTest")]
+    internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
+    ```  
+  
+4.  Komut işleyici görünen adını ekleyin:  
+  
+    ```csharp  
+    public string DisplayName => "KeyBindingTest";
+    ```  
+    
+5.  Uygulama `GetCommandState()` yöntemini aşağıdaki şekilde. Bu komut işleyici çekirdek Düzenleyici TYPECHAR komutu işlemesi nedeniyle çekirdek Düzenleyici komutuna etkinleştirme devredebilirsiniz.
+  
+    ```csharp  
+    public CommandState GetCommandState(TypeCharCommandArgs args)
+    {
+        return CommandState.Unspecified;
+    } 
+    ```  
+  
+6.  Uygulama `ExecuteCommand()` onun mor kutusunu görünümüne ekler şekilde yöntemi bir + karakter türü. 
+  
+    ```csharp  
+    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
+    {
+        if (args.TypedChar == '+')
+        {
+            bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
+                "KeyBindingTextAdorned", out bool adorned) && adorned;
+            if (!alreadyAdorned)
+            {
+                new PurpleCornerBox((IWpfTextView)args.TextView);
+                args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
+            }
+        }
+
+        return false;
+    }
+    ```  
+ 7. Adornment katman tanımı KeyBindingTestTextViewCreationListener.cs dosyasından KeyBindingCommandHandler.cs kopyalayın ve sonra KeyBindingTestTextViewCreationListener.cs dosyasını silin:
+ 
+    ```csharp  
+    /// <summary>
+    /// Defines the adornment layer for the adornment. This layer is ordered
+    /// after the selection layer in the Z-order.
+    /// </summary>
+    [Export(typeof(AdornmentLayerDefinition))]
+    [Name("PurpleCornerBox")]
+    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
+    private AdornmentLayerDefinition editorAdornmentLayer;    
+    ```  
+
 ## <a name="making-the-adornment-appear-on-every-line"></a>Adornment yapmadan her satırda görünür  
- Her karakteri özgün adornment görünen bir metin dosyasındaki ' bir'. Biz adornment yanıt '+' karakter olarak eklemek için kodu değişti, yalnızca satırda adornment ekler burada '+' yazılır. Böylece adornment kez daha görünür adornment kodunu değiştirmek her 'bir'.  
+
+Her karakteri özgün adornment görünen bir metin dosyasındaki ' bir'. Biz adornment yanıt '+' karakter olarak eklemek için kodu değişti, yalnızca satırda adornment ekler burada '+' yazılır. Böylece adornment kez daha görünür adornment kodunu değiştirmek her 'bir'.  
   
- KeyBindingTest.cs dosyasında 'bir' karakteri tasarlamanız görünümdeki tüm satırları yinelemek için CreateVisuals() yöntemini değiştirin.  
+KeyBindingTest.cs dosyasında 'bir' karakteri tasarlamanız görünümdeki tüm satırları yinelemek için CreateVisuals() yöntemini değiştirin.  
   
 ```csharp  
 private void CreateVisuals(ITextViewLine line)  

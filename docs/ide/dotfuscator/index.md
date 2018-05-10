@@ -18,11 +18,11 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a81d640e2ecebe46a20f7a3661584cb5c7423691
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
-ms.translationtype: HT
+ms.openlocfilehash: c34eec9f8eab1f870344ec6995bfcbd8fea8739c
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -42,7 +42,7 @@ Dotfuscator yapabilirsiniz [belirsizleştirirseniz] [ obfuscation] .NET derlemel
 
 Ayrıca önemlidir **uygulamanızı bütünlüğünü korumak**.
 Ters mühendislik ek olarak, uygulamanızın korsanlığını, çalışma zamanında uygulamanın davranışı değiştirmek veya verileri işlemek kötü aktörleri deneyebilir.
-Dotfuscator yeteneği uygulamanızla Ekle [algılamak, rapor ve yetkisiz kullanım yanıt][checks]izinsiz ve üçüncü taraf hata ayıklama dahil olmak üzere.
+Dotfuscator yeteneği uygulamanızla Ekle [algılamak, rapor ve yetkisiz kullanım yanıt][checks]oynama, üçüncü taraf hata ayıklama ve kökü belirtilmiş cihazlar dahil olmak üzere.
 
 PreEmptive tarafından çözümleri Dotfuscator güvenli yazılım geliştirme yaşam döngüsü nasıl uyduğu hakkında daha fazla bilgi için bkz: [SDL uygulama koruması sayfası][sdl-protection].
 
@@ -57,6 +57,7 @@ Dotfuscator CE sunan bir dizi [yazılım koruma ve sağlamlaştırma] [ software
 * *[Yeniden adlandırma] [ renaming]*  ters mühendislik derlenmiş derlemelerin daha zor hale tanımlayıcıların.
 * *[Koruma yetkisiz değiştirmeye karşı] [ tamper]*  üzerinde oynanmış uygulamaların yürütülmesini algılamak için olay uyarıları iletmek ve değiştirilen oturumlarını sonlandırın.
 * *[Anti-debug] [ debug]*  çalışan bir uygulama bir hata ayıklayıcı eki algılamak için olay uyarıları iletmek ve hata ayıklaması oturumlarını sonlandırın.
+* *[Hologram root] [ root]*  uygulama kökü belirtilmiş bir Android cihazında çalışıp çalışmadığını Algıla ve bu cihazlarda oturum sonlandırılacak.
 * *[Uygulamanın sona erme davranışları] [ shelflife]*  "son yaşam" tarih kodlamak, uygulamaları kendi sona erme tarihinden sonra yürütülür ve süresi dolan uygulama oturumları sonlandırma uyarıları aktarmak.
 * *[Özel Durum İzleme] [ exceptions]*  uygulama içinde gerçekleşen işlenmeyen özel durumları izlemek için.
 * *[Oturum] [ sessions] ve [özelliği] [ features] kullanımı izleme* uygulamaları atanmış olması belirlemek için yürütülen, bu hangi sürümleri uygulamalar ve bu uygulamaların hangi özelliklerin kullanılır.
@@ -84,29 +85,30 @@ Bkz: [tam Dotfuscator CE kullanıcı Guide'a preemptive.com] [ full] dahil olmak
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-- [assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
-- [software-protection]: https://www.preemptive.com/software-protection
-- [obfuscation]: https://www.preemptive.com/obfuscation
-- [app-protection]: https://www.preemptive.com/application-protection
-- [sdl-protection]: https://www.preemptive.com/solutions/SDL-App-Protection
-- [net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
-- [download]: https://www.preemptive.com/products/dotfuscator/downloads
+[assemblies]:  https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
+[software-protection]:  https://www.preemptive.com/software-protection
+[obfuscation]:  https://www.preemptive.com/obfuscation
+[app-protection]:  https://www.preemptive.com/application-protection
+[sdl-protection]:  https://www.preemptive.com/solutions/SDL-App-Protection
+[net-obfuscator]:  https://www.preemptive.com/products/dotfuscator/overview
+[download]:  https://www.preemptive.com/products/dotfuscator/downloads
 
-- [install]: install.md
-- [capabilities]: capabilities.md
-- [upgrades]: upgrades.md
+[install]:  install.md
+[capabilities]:  capabilities.md
+[upgrades]:  upgrades.md
 
-- [get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
+[get-started]:  https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
-- [renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
+[renaming]:  https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-- [checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
-- [tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
-- [debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
-- [shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
+[checks]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
+[tamper]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
+[debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
+[root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
+[shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
 
-- [exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-- [sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-- [features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
+[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
+[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
+[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
-- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
+[full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/index.html

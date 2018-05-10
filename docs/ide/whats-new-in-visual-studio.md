@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2017 yenilikler
 ms.custom: ''
-ms.date: 12/04/2017
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cb7d3ce6ec3fd743d8f332b8df2148c7b29fe0f
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5ae8a0424f822b4b84aed01badc5bc625aacdde8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Ne&#39;Visual Studio 2017 yenilikler
-#### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>İçin güncelleştirilmiş [15.6 sürüm](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
+#### <a name="updated-for-the-157-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>İçin güncelleştirilmiş [15.7 Sürüm](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 Visual Studio'nun önceki bir sürümden yükseltme mi arıyorsunuz? İşte ne Visual Studio 2017, sunabileceğiniz: benzersiz üretkenliği tüm geliştirme, herhangi bir uygulama ve herhangi bir platform için. Android, iOS, Windows, Linux, web ve bulut için uygulama geliştirmek için Visual Studio 2017 kullanın. Hızlı kod yazın, kolayca hata ayıklama ve tanılama yapın, sık sık test edin ve güvenle kullanıma sunun. Ayrıca, kendi uzantılarınızı oluşturarak Visual Studio’yu özelleştirebilir ve kapsamını genişletebilirsiniz. Sürüm denetimini kullanma, Çevik ve verimli bir şekilde bu sürüm ile işbirliği!
 
 Bizim önceki sürümünden bu yana, Visual Studio 2015 yapmış olduğunuz değişiklikleri, üst düzey bir özeti aşağıda verilmiştir:
@@ -55,7 +55,11 @@ Burada'nın bazı en önemli geliştirmeler ve Visual Studio 2017'teki yeni öze
 
  ![Visual Studio 2017 Kurulum iletişim](../install/media/install-visual-studio-enterprise.png "Visual Studio 2017 Kurulum Ekranı")
 
-İş yükleri kullanmak yerine kendi bileşenlerinizi seçmek istediğiniz? Seçin **bileşenleri tek tek** yükleyici sekmesinden. Ayrıca Windows dil seçeneği değiştirmek zorunda kalmadan dil paketlerini yüklemek istediğiniz? Seçin **dil paketlerini** yükleyici sekmesinde.  
+Ve yüklemenizi çok ince ayar yapmak için seçenekler var:
+
+* İş yükleri kullanmak yerine kendi bileşenlerinizi seçmek istediğiniz? Seçin **bileşenleri tek tek** yükleyici sekmesinden.
+* Ayrıca Windows dil seçeneği değiştirmek zorunda kalmadan dil paketlerini yüklemek istediğiniz? Seçin **dil paketlerini** yükleyici sekmesinde.
+* **15.7 yeni**: Burada Visual Studio yükler konumu değiştirmek istediğiniz? Seçin **yükleme seçenekleri** yükleyici sekmesinde.
 
 Adım adım adım yönergeler de dahil olmak üzere yeni kurulum deneyimi hakkında daha fazla bilgi için bkz: [Visual Studio yükleme](../install/install-visual-studio.md) sayfası.
 
@@ -288,7 +292,7 @@ Daha fazla bilgi için bkz: [Unity için Visual Studio Araçları](../cross-plat
 Daha fazla bilgi için bkz: [AI için Visual Studio Araçları](../ai/about-ai-tools.md) sayfası.
 
 
-## <a name="talk-to-us"></a>Bizimle iletişime geçin  
+## <a name="contact-us"></a>Bizimle bağlantı kurun  
  Neden geri bildirim için Visual Studio team gönderilsin mi? Biz müşteri geri bildirimi ciddiye çünkü. Ne yapmak çoğunu sürücüleri.  
 
 Biz Visual Studio geliştirmek, veya nasıl bir sorun bildirmek hakkında öneride bulunmak istiyorsanız, lütfen bkz [konuşun bize](../ide/talk-to-us.md) sayfası.  

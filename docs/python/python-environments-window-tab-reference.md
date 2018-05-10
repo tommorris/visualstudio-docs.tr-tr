@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7017ba7e91acc36b72c229cdf77ee7b604f6a920
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: 96c177b48e594c7cec9f5dd026782f0d9541eb2b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python ortamları penceresinde Sekme Başvurusu
 
@@ -36,7 +36,7 @@ Temel bilgileri ve komutlar için ortamı sağlar:
 
 | Komut | Açıklama |
 | --- | --- |
-| Bu ortam yeni projelere yönelik varsayılan yap | Visual Studio'nun IntelliSense veritabanı yüklenirken kısaca vermemesine neden olabilir etkin ortamını ayarlar. Birçok paketleriyle ortamlar için artık vermeyen olabilir. |
+| Bu ortam yeni projelere yönelik varsayılan yap | Visual Studio neden olabilecek etkin ortam ayarlar (2017 sürüm 15,5 ve önceki sürümlerde) IntelliSense veritabanı yüklenirken kısaca vermemesine için. Birçok paketleriyle ortamlar için artık vermeyen olabilir. |
 | Dağıtıcı Web sitesini ziyaret edin | Python dağıtımı tarafından sağlanan URL'yi bir tarayıcı açar. Python 3.x, örneğin, python.org için gider. |
 | Açık etkileşimli penceresi | Açılır [etkileşimli (REPL) pencere](python-interactive-repl-in-visual-studio.md) Visual Studio içinde bu ortam için herhangi bir uygulama [başlatma komut dosyaları (aşağıya bakın)](#startup-scripts). |
 | Etkileşimli betikleri keşfedin | Bkz: [başlatma komut dosyaları](#startup-scripts). |
@@ -75,7 +75,7 @@ Mevcut ise, aşağıdaki tabloda açıklandığı gibi ayrıntıları içerir. B
 
 *Ayrıca "PIP" önceki sürümlerde etiketli.*
 
-Ayrıca aramak ve yenilerini (bağımlılıkları dahil) yüklemek sağlayarak ortamda yüklü paketleri yönetir.
+Ayrıca aramak ve yenilerini (bağımlılıkları dahil) yüklemek sağlayarak PIP kullanarak ortamda yüklü paketleri yönetir. Visual Studio 2017 15.7 ve sonraki sürümleri, içinde bir **paketleri (Conda)** seçeneği görüntülenir, bunun yerine conda Paket Yöneticisi'ni kullanır. (Bu seçeneği görmüyorsanız, seçeneğini belirleyerek **Araçları** > **seçenekleri** > **Python** > **Experimental**   >  **Conda Paket Yöneticisi'ni kullanın (PIP) yerine kullanılabilir olduğunda** ve Visual Studio'yu yeniden başlatın.)
 
 Yüklü olan paketleri (yukarı ok) güncelleştirin ve (bir daire içinde X) kaldırmak için denetimleri ile paket görüntülenir:
 
@@ -105,7 +105,8 @@ IntelliSense tamamlanma veritabanı geçerli durumunu gösterir:
 
 ![Python ortamları IntelliSense sekmesi](media/environments-intellisense-tab.png)
 
-İçinde **Visual Studio 2017 sürüm 15,5** ve önceki sürümleri, bu kitaplık için derlendiği veritabanı IntelliSense tamamlamalar bağlıdır. Bir kitaplık yüklendiğinde, ancak biraz zaman alabilir ve kod yazmaya başladığınızda tam olmayabilir veritabanınızı oluşturmaya arka planda gerçekleştirilir. **Visual Studio 2017 sürüm 15,6** ve daha sonra etkinleştirmek özellikle seçmediğiniz sürece, veritabanı üzerinde dayanmayan tamamlamalar sağlamak için daha hızlı bir yöntem kullanır.
+- İçinde **Visual Studio 2017 sürüm 15,5** ve önceki sürümleri, bu kitaplık için derlendiği veritabanı IntelliSense tamamlamalar bağlıdır. Bir kitaplık yüklendiğinde, ancak biraz zaman alabilir ve kod yazmaya başladığınızda tam olmayabilir veritabanınızı oluşturmaya arka planda gerçekleştirilir.
+- **Visual Studio 2017 sürüm 15,6** ve daha sonra veritabanı üzerinde varsayılan olarak dayanmayan tamamlamalar sağlamak için daha hızlı bir yöntem kullanır. Bu nedenle sekmesini etiketlenir **IntelliSense [veritabanı devre dışı]**. Veritabanı seçeneğini temizleyerek etkinleştirebilirsiniz **Araçları** > **seçenekleri** > **Python**  >   **Deneysel** > **yeni stil IntelliSense kullanan ortamlar için**.
 
 Visual Studio yeni bir ortam algılar (veya bir ekledikten sonra), kitaplık kaynak dosyaları çözümleyerek Veritabanını derlemek otomatik olarak başlar. Bu işlem herhangi bir yere bir saat veya yüklenenler bağlı olarak daha fazla bilgi için bir dakika sürebilir. (Anaconda, örneğin, birçok kitaplıkları ile gelir ve veritabanını derlemek için biraz zaman alır.) Tamamlandıktan sonra size IntelliSense ayrıntılı ve veritabanını yeniden yenileme gerekmez (ile **yenileme DB** düğmesi) daha fazla kitaplık yükleyene kadar.
 

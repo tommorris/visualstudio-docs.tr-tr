@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d042ddd88ce4711d16ce963dbf7326c84097f52
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c151c371346287ce27814d11540d7227bc058c86
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Erişilebilir uygulamalar tasarlama için kaynaklar
 
@@ -50,7 +50,7 @@ Erişilebilir Windows uygulamaları ve Web siteleri geliştirmek için ipuçlar�
 
 ### <a name="third-party-resources"></a>Üçüncü taraf kaynakları
 
--   **World Wide Web Konsorsiyumu (W3C) erişilebilirlik girişimi Web** bu Web sitesi erişilebilir Web sitesi geliştirme için yönergeler ve teknikler sağlar. Daha fazla bilgi için bkz. [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).
+-   **World Wide Web Konsorsiyumu (W3C) erişilebilirlik girişimi Web** bu Web sitesi erişilebilir Web sitesi geliştirme için yönergeler ve teknikler sağlar. Daha fazla bilgi için bkz. [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

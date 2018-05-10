@@ -1,20 +1,22 @@
 ---
+title: Yazma ve kod yönetme
+description: Kod Düzenleyicisi'ni ve diğer araçları Visual Studio'da yazma, gidin, yönetin ve kodunuzu iyileştirmek için nasıl kullanılacağını öğrenin.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
-title: Yazma ve Visual Studio kullanarak kod yönetme | Microsoft Docs
-description: Kod Düzenleyicisi'ni ve diğer araçları Visual Studio'da yazma, gidin, yönetin ve kodunuzu iyileştirmek için nasıl kullanılacağını öğrenin.
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
+f1_keywords:
+- vs.newproject
 ms.workload:
 - multiple
-ms.openlocfilehash: 413e5170310f3b80b5ea6ad032a113fd2d6de482
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
-ms.translationtype: HT
+ms.openlocfilehash: f9e010f82df5f9153fc5052606b82bf97bdb7cf0
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Yazma ve Visual Studio kullanarak kod yönetme
 
@@ -147,7 +149,7 @@ Visual Studio'da ilk uygulamanızı oluşturma.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>C# ve Visual Studio'da ASP.NET kullanmaya başlama</h3>
+                        <h3>C# ve Visual Studio'da ASP.NET Core kullanmaya başlama</h3>
                     </div>
                 </div>
             </div>
@@ -155,7 +157,7 @@ Visual Studio'da ilk uygulamanızı oluşturma.
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/quickstart-cpp">
+        <a href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -165,7 +167,7 @@ Visual Studio'da ilk uygulamanızı oluşturma.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio'da C++ kullanmaya başlama</h3>
+                        <h3>Visual Studio'da C++ konsol uygulaması oluşturma</h3>
                     </div>
                 </div>
             </div>
@@ -238,6 +240,60 @@ Visual Studio'da ilk uygulamanızı oluşturma.
                     </div>
                     <div class="cardText">
                         <h3>Visual Studio için R araçları ile çalışmaya başlama</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-uwp-csharp">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Windows.svg" alt="Create a UWP app with C#" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Bir UWP uygulaması C# ' ta oluşturma</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/dotnet/core/tutorials/with-visual-studio">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_NETcore.svg" alt="Create a .NET Core app in C#" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Bir .NET Core konsol uygulaması C# ' ta oluşturma</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/azure/app-service/app-service-web-get-started-dotnet-framework?view=azure-dotnet">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Create an Azure web app" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Visual Studio'da bir Azure web uygulaması oluşturma</h3>
                     </div>
                 </div>
             </div>

@@ -62,7 +62,7 @@
 ## [Visual Studio’da Node.js](nodejs/tutorial-nodejs.md)
 ## [Visual Studio’da C#](ide/tutorial-csharp-aspnet-core.md)
 ## [Visual Studio’da Visual Basic](ide/tutorial-visual-basic-console.md)
-## [Visual Studio’da hata ayıklama](ide/getting-started-with-debugging-in-visual-studio.md)
+## [Visual Studio’da hata ayıklama](debugger/getting-started-with-the-debugger.md?context=visualstudio/default)
 # Nasıl yapılır kılavuzları
 ## [Geliştirme](ide/index-writing-code.md)
 ### [Visual Studio IDE’de Gezinme](ide/how-to-move-around-in-the-visual-studio-ide.md)
@@ -185,6 +185,7 @@
 #### [CodeLens ile kod değişikliklerini ve diğer geçmişi bulma](ide/find-code-changes-and-other-history-with-codelens.md)
 ##### [CodeIndex Komutu](ide/codeindex-command.md)
 #### [Diğer diller için düzenleyici desteği](ide/adding-visual-studio-editor-support-for-other-languages.md)
+### [Kodunuzu geliştirme](ide/find-and-fix-code-errors.md)
 ### [Platformlar Arası Mobil Geliştirme](cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 ### [Office ve SharePoint Geliştirme](vsto/office-and-sharepoint-development-in-visual-studio.md)
 ### [XML ve XSLT Dosyaları ile Çalışma](xml-tools/xml-tools-in-visual-studio.md)

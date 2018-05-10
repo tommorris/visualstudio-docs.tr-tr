@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cf241ec0a9ff849b52761a241e84a15d287bb88
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2ef4f0c5c6bd5be2820e1f666529fc43fac59763
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="print-command"></a>Yazdır Komutu
 Bir ifadeyi değerlendirir veya belirtilen metin görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cmd
 Debug.Print text
 ```
 
@@ -39,13 +39,13 @@ Debug.Print text
 ## <a name="remarks"></a>Açıklamalar
  Bu komut için bir diğer ad olarak soru işareti (?) kullanabilirsiniz. Bu nedenle, örneğin, komutu
 
-```
+```cmd
 >Debug.Print expA
 ```
 
  Ayrıca yazılabilir
 
-```
+```cmd
 >? expA
 ```
 
@@ -53,7 +53,7 @@ Debug.Print text
 
 ## <a name="example"></a>Örnek
 
-```
+```cmd
 >Debug.Print varA
 ```
 

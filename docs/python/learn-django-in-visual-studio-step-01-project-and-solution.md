@@ -1,7 +1,7 @@
 ---
 title: Öğretici - Visual Studio, 1. adım Django öğrenin
 description: Visual Studio projeleri bağlamında Django temel bir kılavuz, Django geliştirme için Visual Studio destek gösteren sağlar.
-ms.date: 04/25/2018
+ms.date: 05/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ecd256084862d05f3cf3248913c5f3a1b093fd1d
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
-ms.translationtype: MT
+ms.openlocfilehash: 389bd7a3dedfcc400e9cf3d56d26723a5fc9aa7e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Öğreticisi 1. adım: Visual Studio Django web framework kullanmaya başlama
 
@@ -33,7 +33,9 @@ Bu öğreticide, bilgi nasıl yapılır:
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Visual Studio 2017 yüklü Python iş yükü ile. Yönergeler için bkz: [yükleme Python desteği Visual Studio'da](installing-python-support-in-visual-studio.md).
+- Visual Studio 2017 aşağıdaki seçeneklere sahip:
+  - **Python geliştirme** iş yükü (**iş yükü** yükleyici sekmesinde). Yönergeler için bkz: [yükleme Python desteği Visual Studio'da](installing-python-support-in-visual-studio.md).
+  - **Windows için Git** ve **Visual Studio için GitHub uzantısı** üzerinde **bileşenleri tek tek** altında sekmesinde **kod Araçları**.
 
 Ayrıntılar ne (özellikle farklı Django framework'ün önceki sürümleriyle) bu öğreticideki açıklanan alanından farklı olabilir ancak Django proje şablonları da Visual Studio için Python Araçları'nın tüm eski sürümlerini dahil edilir.
 

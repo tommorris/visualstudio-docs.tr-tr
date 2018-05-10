@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3856987971f74c8caa7210fa2284812f802c2b9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: adf65277f4ec7566464f737bf8b4ab5913043bcc
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # F1 Yardımı
 
@@ -37,4 +37,4 @@ Bir anahtar sözcüğü veya API adı F1 Yardımı arıyorsanız, imleç içinde
 
 ## F1 iyileştirmemize yardımcı olun
 
-Lütfen F1 Yardımı deneyimi, basıldığında ne aradığınız hakkında geri bildirim bırakarak iyileştirmemize yardımcı olun **F1**. Örneğin, hangi simge veya pencere üzerinde imlecinizi neydi? Kullanım **belgelerine geri bildirim verin** düğmeye. Teşekkür ederiz!
+Lütfen F1 Yardımı deneyimi geliştirmemize yardımcı olun. Bir ürün Yardımı sorununu tıklayarak oturum **ürün geri bildirim verin** düğmeye. Ne zaman bastığınız konusunda yardım için aramaya benzer dahil **F1**, örneğin, hangi simgesi veya imleci tarihi penceresi. Teşekkür ederiz!

@@ -9,6 +9,7 @@
 ### [Visual Studio’nun çevrimdışı yüklemesini oluşturma](install/create-an-offline-installation-of-visual-studio.md)
 ### [Çevrimdışı yükleme için gerekli sertifikaları yükleme](install/install-certificates-for-visual-studio-offline.md)
 ### [Düşük bant genişliğine sahip veya güvenilir olmayan ağ ortamlarında yükleme](install/install-vs-inconsistent-quality-network.md)
+## [Yükleme konumlarını değiştirme](install/change-installation-locations.md)
 ## [Yükleme sorunlarını giderme](install/troubleshooting-installation-issues.md)
 ## [Visual Studio’yu güncelleştirme](install/update-visual-studio.md)
 ## [Visual Studio’yu değiştirme](install/modify-visual-studio.md)

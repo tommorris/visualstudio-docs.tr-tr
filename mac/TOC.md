@@ -3,6 +3,7 @@
 # [IDE Turu](ide-tour.md)
 
 # [Yükleme](installation.md)
+## [Önizleme Yükleme](install-preview.md)
 ## [Güncelleştir](update.md)
 ## [Kaldır](uninstall.md)
 
@@ -30,6 +31,7 @@
 ## [Kod Parçacıkları](snippets.md)
 ## [Blok Seçimi](block-selection.md)
 ## [Düzenleyici Temaları](editor-themes.md)
+## [EditorConfig](editorconfig.md)
 ## [Ortak Klavye Kısayolları](keyboard-shortcuts.md)
 
 # [Hata Ayıklama](debugging.md)
@@ -43,6 +45,7 @@
 ### [Yapılandırmaları oluşturma ve düzenleme](create-and-edit-configurations.md)
 
 # [Sürüm Denetimi](version-control.md)
+## [TF Sürüm Denetimi](tf-version-control.md)
 ## [Git Deposu Ayarlama](set-up-git-repository.md)
 ## [Git ile çalışma](working-with-git.md)
 ## [Subversion Deposu Ayarlama](set-up-subversion-repository.md)
@@ -50,7 +53,11 @@
 
 # [İş yükleri](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
+### [Razor](razor.md)
+### [Javascript](javascript.md)
 ## [Azure](azure-workload.md)
+### [Azure İşlevleri’ne Giriş](azure-functions.md)
+### [Öğretici: Azure İşlevleri](azure-functions-lab.md)
 ### [Bağlı Hizmetler](connected-services.md)
 ## [Unity Oyun Geliştirme](unity-tools.md)
 ### [Kurulum](setup-vsmac-tools-unity.md)

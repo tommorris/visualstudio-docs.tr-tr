@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1aa969b3c40f4b653b45bbb0da0e5ad3d56bb5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bdb4f28fc367b309a015a3faa8f749e2512db879
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Nasıl yapılır: üye gösterimi ile ilişkilendirme gösterimi (Sınıf Tasarımcısı) arasındaki Değiştir
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Nasıl yapılır: üye gösterimi ile ilişkilendirme gösterimi sınıf tasarımcısında değiştirme
 
 İçinde **Sınıf Tasarımcısı**, sınıf diyagramı temsil eden iki türden üye gösterimi ilişkilendirme gösterimi ve tersi yönde arasında bir ilişki ilişki şekilde değiştirebilirsiniz. İlişkilendirme satırları genellikle görüntülenen üyeleri türleri nasıl ilişkilendirildiğini yararlı görsel öğe sağlar.
 
@@ -41,9 +41,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="to-change-association-notation-to-member-notation"></a>Üye gösterimi ilişkilendirme gösterimi değiştirmek için
 
--   Sınıf diyagramında ilişkilendirme satırın sağ tıklatın ve seçin **Göster özelliği olarak** veya **Göster alanı olarak** uygun şekilde.
-
-     İlişkilendirme çizgisi kaybolur, ve özellik türü şeklini diyagramda içinde uygun bölme görüntüler.
+Sınıf diyagramında ilişkilendirme satırın sağ tıklatın ve seçin **Göster özelliği olarak** veya **Göster alanı olarak** uygun şekilde. İlişkilendirme çizgisi kaybolur, ve özellik türü şeklini diyagramda içinde uygun bölme görüntüler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,15 +1,15 @@
 ---
-title: Yeni projeler ve çözümler Visual Studio Mac için oluşturma
+title: Yeni projeler ve çözümler oluşturma
 description: Bu makalede Visual Studio'da projeler ve çözümler Mac için oluşturma
 author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 327d0a51efd312c1a2b2909c90ff7668a1083529
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: 948d5d5bba49571d4b4a73d4ba47a77b377d8b11
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="creating-new-projects-and-solutions"></a>Yeni projeler ve çözümler oluşturma
 
@@ -33,7 +33,7 @@ Bu yöntem yeni projeler ekleme, Xamarin kod paylaşımını özelliklerinden ya
 
 Visual Studio giriş sayfası, üzerinde çalıştığınız son projelerinin listesini görüntüler:
 
- ![](media/create-new-projects-recent.png)
+ ![Hoş Geldiniz sayfasında son çözümleri bölümü](media/create-new-projects-recent.png)
 
 Filtre kutusunu kullanarak bu listeyi filtreleyebilir veya öğeyi listeden kaldırın. 
  

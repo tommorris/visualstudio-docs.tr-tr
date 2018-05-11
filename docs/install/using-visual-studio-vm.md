@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c87d482c2bc7ad174f7074091767fb6127bf70
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: b4ee86cf7a42182cde4d015dfa10c7102563c9a6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a id="top"> </a> Azure üzerinde Visual Studio görüntüleri
 
@@ -33,9 +33,9 @@ Görüntüleri en son ana sürüm, Visual Studio 2017 ve Visual Studio 2015 içi
 
 | Yayın sürümü                                              | Sürümler                     |     Ürün sürümü:     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: En son (sürüm 15,6)                    |    Kuruluş, topluluk     |      Sürüm 15.6.4     |
-| Visual Studio 2017: En son Önizleme (sürüm 15.7, Preview 3) |    Kuruluş, topluluk     |      Sürüm 15.7.0     |
-|         Visual Studio 2017: RTW                              |    Kuruluş, topluluk     |      Sürüm 15.0.10    |
+| Visual Studio 2017: En son (sürüm 15.7)                    |    Kuruluş, topluluk     |      Sürüm 15.7.0     |
+| Visual Studio 2017: En son Önizleme (sürüm 15,8, Preview 1) |    Kuruluş, topluluk     |      Sürüm 15.8.1     |
+|         Visual Studio 2017: RTW                              |    Kuruluş, topluluk     |      Sürüm 15.0.13    |
 |   Visual Studio 2015: En son (güncelleştirme 3)                      |    Kuruluş, topluluk     |  Sürüm 14.0.25431.01  |
 |         Visual Studio 2015: RTW                              |             Yok.             | (Bakım için süresi) |
 

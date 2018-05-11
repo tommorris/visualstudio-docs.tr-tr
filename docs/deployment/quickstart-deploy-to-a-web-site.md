@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 176bb028d176ce789977149f9e0380bf1ca284fc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Visual Studio yayımlama Aracı'nı kullanarak bir web sitesi için bir web uygulaması veya .NET Core uygulama yayımlama
 
@@ -24,13 +24,19 @@ Kullanabileceğiniz **Yayımla** ASP.NET uygulamaları bir Web sitesine yayımla
 
 ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için şu adımları uygulayın. Node.js için adımları desteklenmektedir, ancak kullanıcı arabirimi farklıdır.
 
+## <a name="prerequisites"></a>Önkoşullar
+
+* Visual Studio 2017 yüklü olması gerekir ve **ASP.NET** ve **.NET Framework** geliştirme iş yükü. .NET Core uygulaması için etmeniz **.NET Core** iş yükü.
+
+    Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
+
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma 
 
 1. Visual Studio'da, **Dosya > Yeni proje**.
 
 1. Altında **Visual C#** veya **Visual Basic**, seçin **Web**ve ardından Orta bölmede ya da **ASP.NET Web uygulaması (.NET Framework)** veya (C# yalnızca) **ASP.NET çekirdek Web uygulaması**ve ardından **Tamam**.
 
-1. Seçin **MVC**, olduğundan emin olun **doğrulaması yok** seçilir ve ardından **Tamam**.
+1. Seçin **MVC** (veya tercih **Web uygulaması (Model-View-Controller)** .NET Core için), olduğundan emin olun **doğrulaması yok** seçilir ve ardından **Tamam** .
 
 1. Gibi bir ad yazın **mywebapp şeklindedir** tıklatıp **Tamam**.
 
@@ -44,7 +50,9 @@ ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için ş
 
     ![Seçin yayımlama](../deployment/media/quickstart-publish-aspnet.png "seçin yayımlama")
 
-1. İçinde **Yayımla** bölmesinde seçin **IIS, FTP, vb.**.
+1. Tüm yayımlama profillerini daha önce yapılandırdıysanız **Yayımla** bölmesinde görünür. Tıklatın **yeni profil oluşturmak**.
+
+1. İçinde **yayımlama hedefi çekme** iletişim kutusunda, seçin **IIS, FTP, vb**.
 
     ![IIS, FTP, vb.'ı seçin.](../deployment/media/quickstart-publish-iis-ftp.png "IIS seçin, FTP, vs.")
 
@@ -56,7 +64,7 @@ ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için ş
 
 1. İçinde **yayımlama yöntemi** alanında, aşağıdaki gibi bir yöntem seçin **Web dağıtımı** veya **FTP**.
 
-    Gördüğünüz ayarları sonraki yayımlama yönteminize karşılık gelir.
+    Gördüğünüz ayarları sonraki yayımlama yönteminize karşılık gelir. Web dağıtımı IIS sunucuları için Web uygulamaları ve Web siteleri dağıtımını basitleştirir ve sunucu üzerindeki bir uygulama olarak yüklenmesi gerekir. Kullanım [Web Platformu yükleyicisi](https://www.microsoft.com/web/downloads/platform.aspx) yükleyin.
 
 1. Yayımlama yöntemi için gereken ayarları yapılandırın ve tıklatın **bağlantıyı doğrula**.
 
@@ -74,4 +82,7 @@ ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için ş
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [IIS’ye ASP.NET dağıtma](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+Bu hızlı başlangıç Visual Studio yayımlama profili oluşturmak için nasıl kullanılacağı hakkında bilgi edindiniz. Ayrıca bir yayımlamayı yapılandırabilirsiniz alarak profili yayımlama ayarları.
+
+> [!div class="nextstepaction"]
+> [İçeri aktarma ayarları yayımlama ve IIS dağıtma](tutorial-import-publish-settings-iis.md)

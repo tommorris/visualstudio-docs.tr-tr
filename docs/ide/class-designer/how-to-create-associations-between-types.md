@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c8d1b484570f39c95bad9d07a94ef6d6b3027b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0b27530abeec1c01b5537fd91bfbe3e0e10448af
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-create-associations-between-types-class-designer"></a>Nasıl yapılır: türleri (Sınıf Tasarımcısı) arasındaki ilişkilendirmeleri oluşturma
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda türleri arasındaki ilişkilendirmeleri oluşturma
 
 İlişkilendirme satırları **Sınıf Tasarımcısı** sınıf diyagramında nasıl ilişkilendirildiğini gösterir. İlişkilendirme çizgisi, projenizdeki başka bir sınıfın özellik veya alan türü olan bir sınıfı temsil eder. İlişkilendirme çizgileri genellikle, projenizdeki sınıflar arasında en önemli ilişkileri göstermek için kullanılır.
 
@@ -35,25 +35,25 @@ Tüm alanları ve özellikleri ilişkilendirmeler halinde görüntüleyebilirsin
 
 ## <a name="to-define-an-association-line-in-the-class-diagram"></a>Sınıf Diyagramı'nda bir ilişkilendirme çizgisi tanımlamak için
 
-1.  Araç kutusu altında **Sınıf Tasarımcısı**seçin **ilişkilendirme**.
+1. Araç kutusu altında **Sınıf Tasarımcısı**seçin **ilişkilendirme**.
 
-2.  İlişkilendirme ile bağlamak istediğiniz iki şekil arasına bir çizgi çizin.
+2. İlişkilendirme ile bağlamak istediğiniz iki şekil arasına bir çizgi çizin.
 
      İlk sınıfta yeni bir özellik oluşturulur. Bu özellik varsayılan ada sahip bir ilişkilendirme çizgisi görüntüler (şekildeki bir bölme içinde özellik olarak değil). Türü ise, ilişkilendirme çizgisinin işaret ettiği şekildir.
 
 ## <a name="to-change-the-name-of-an-association"></a>İlişkilendirmenin adını değiştirmek için
 
--   Diyagram yüzeyinde ilişkilendirme çizgisinin etiketine tıklayın ve etiketi düzenleyin.
+Diyagram yüzeyinde ilişkilendirme çizgisinin etiketine tıklayın ve etiketi düzenleyin.
 
- \- veya -
+Alternatif olarak, aşağıdaki adımları izleyin:
 
-1.  İlişkilendirme olarak gösterilen özelliği içeren şekle tıklayın.
+1. Bir ilişki gösterilen özelliği içeren şekli seçin.
 
-     Şekil odağı alır ve üyeleri Sınıf Ayrıntıları penceresinde ve Özellikler penceresinde görüntülenir.
+   Odağı şeklini alır ve üyeleri görüntülemek **sınıfı ayrıntıları** ve **özellikleri** windows.
 
-2.  Sınıf Ayrıntıları penceresinde ya da Özellikler penceresinde bu özelliğe ilişkin ad alanını düzenleyin ve Enter tuşuna basın.
+2. Her ikisinde **sınıfı ayrıntıları** veya **özellikleri** penceresinde, bu özellik ve ENTER tuşuna basın ad alanını düzenleyin **Enter**.
 
-     Adı güncellenir **sınıfı ayrıntıları** İlişkilendirme satırında, özellikleri penceresinde ve kod penceresi.
+   Adı güncellenir **sınıfı ayrıntıları** İlişkilendirmedeki penceresi satır **özellikleri** penceresinde ve kod.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f44279baea33333c21bfadfd9fec21a2045aea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-inheritance-between-types-class-designer"></a>Nasıl yapılır: türler (Sınıf Tasarımcısı) arasında devralmayı görüntüleme
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda türler arasında devralmayı görüntüleme
 
 Bir taban türü, türetilmiş bir sınıf diyagramında türlerinde arasındaki varsa devralma ilişkisi bulabilirsiniz **Sınıf Tasarımcısı**. Zamanlama, iki tür arasında yoksa bir devralma ilişkisi oluşturmak için bkz [nasıl yapılır: türler arasında devralmayı oluşturma](how-to-create-inheritance-between-types.md).
 

@@ -9,11 +9,11 @@ description: Visual Studio aboneliğinize dahil avantajları hakkında bilgi edi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio aboneliğinize dahil avantajları
 
@@ -40,5 +40,8 @@ Sorularınız veya teknik yardım gerekiyor durumunda bir Visual Studio abone ol
 - Topluluk üyelerinden öncelik desteği forumlarda Yardım.  Topluluk üyeleri sorunuzu yanıtlayamazsa, Microsoft'un uzmanlar bir yanıt sağlar. 
 - Azure hakkında sorularınız mı var?  Azure Community ve Azure danışma sohbet hizmetlerini denetleyin.  
 
-Aboneliğinize dahil avantajları hakkında daha fazla bilgi için fiyatlandırma sayfası Visual Studio denetleyin.  Hangi abonelikleri bunları özelliği de dahil olmak üzere belirli yararları hakkında bilgi sağlanmıştır **kullanarak abone Avantajlarınızı** aşağıdaki konuya. 
+> [!NOTE] 
+> Aboneliğiniz için yazılım yüklemeleri erişimle ortaya çıkabilir.  Hangi yüklemeleri, aboneliğinizle dahil olmak üzere indirme hakkında daha fazla bilgi için ziyaret [ https://my.visualstudio.com/downloads ](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
+
+Aboneliğinize dahil avantajları hakkında daha fazla bilgi için kullanıma [fiyatlandırma sayfası Visual Studio](https://www.visualstudio.com/vs/pricing/).  Hangi abonelikleri bunları özelliği de dahil olmak üzere belirli yararları hakkında bilgi sağlanmıştır **kullanarak abone Avantajlarınızı** aşağıdaki konuya. 
 

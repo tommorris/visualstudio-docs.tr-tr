@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 389bd7a3dedfcc400e9cf3d56d26723a5fc9aa7e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Öğreticisi 1. adım: Visual Studio Django web framework kullanmaya başlama
 
@@ -62,7 +62,7 @@ Komut satırından Django ile çalışırken, genellikle bir proje çalıştıra
     - **Çözüm**: Bu denetimin varsayılan "yeni çözüm oluştur" seçeneğine ayarlı bırakın.
     - **Çözüm adı**: "LearningDjango", birden çok proje için bir kapsayıcı olarak Bu öğreticide çözüm için uygun olduğu ayarlayın.
     - **Çözüm için dizin oluşturma**: bırakın (varsayılan) ayarlayın.
-    - **Yeni bir Git deposu oluşturursunuz**: Visual Studio çözümü oluşturduğunda, yerel bir Git deposu oluşturur, böylece (temizleyin varsayılan olarak etkindir) bu seçeneği belirleyin.
+    - **Yeni bir Git deposu oluşturursunuz**: Visual Studio çözümü oluşturduğunda, yerel bir Git deposu oluşturur, böylece (temizleyin varsayılan olarak etkindir) bu seçeneği belirleyin. Bu seçeneği görmüyorsanız, Visual Studio 2017 yükleyiciyi çalıştırın ve Windows için Git ve GitHub uzantısı Visual Studio için eklemek **bileşenleri tek tek** altında sekmesinde **kod Araçları**.
 
 1. Bir süre sonra "Bu proje gerektiren dış paketler" belirten bir iletişim kutusuyla ister Visual Studio (aşağıda gösterilen). Şablonun içerdiği için bu iletişim kutusu görünür bir `requirements.txt` en son Django 1.x paketini başvuran dosya. (Seçin **gerekli paketleri Göster** tam bağımlılıkları görmek için.)
 

@@ -9,11 +9,11 @@ description: Visual Studio aboneliğinizde yer alan Pluralsight eğitim aboneli�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e3c640bff98f0ff8453ef1df62f594639b69c243
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b4782c1da48b21fffcb0ebc5abc05b56a8116ae0
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde Pluralsight eğitim avantajları
 
@@ -82,7 +82,7 @@ Aşağıdaki tabloda, her Visual Studio abonelik türü için hangi Pluralsight 
 | Visual Studio Enterprise (NFR<sup>1</sup> ) | Program                                       | Yok                                  |Yok|
 <sup>1</sup>*içerir: değil satışı (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve Hizmetleri geliştirici, MCT yazılım ve hizmet için Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı Ağ (MPN) FTE, düşünün.*
 
-<sup>2</sup>*Pluralsight abonelik sona erme üç çalışma alanları birinde 50 seçili Pluralsight kursları erişim 12 ay almak uygun olabilir.  Pluralsight avantajı kişiye bağlı yalnızca tek kullanımı içindir.  Abone avantajı tüketir sonra sıfırlamaz. Aşağıdaki sık sorulan sorular daha fazla ayrıntı için bkz.*
+<sup>2</sup>*Pluralsight avantajdır yalnızca tek kullanım için tek tek bağlanır.    Abone avantajı tüketir sonra sıfırlamaz. Aşağıdaki sık sorulan sorular daha fazla ayrıntı için bkz.  Pluralsight abonelik sona erme üç çalışma alanları birinde 50 seçili Pluralsight kursları erişim 12 ay almak uygun olabilir.*
 
 Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
 

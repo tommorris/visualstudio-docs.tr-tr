@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: e999c9c68a534611aa1db6e571594d11fc20201e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 16f14d1acb31612d2997937b9aa34f918b6376d6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="customizing-the-build-system"></a>Derleme Sistemi özelleştirme
 
@@ -28,17 +28,17 @@ MSBuild tanımlayan bir proje dosyası adlı bir XML dosyası kullanır *öğele
 
 Proje adına sağ tıklayıp seçerek MSBuild dosyasını bulun **Finder ortaya**. Tüm dosya ve klasörler, projenize ilgili Bulucu pencere görüntüler dahil olmak üzere `.csproj` aşağıdaki görüntüde gösterildiği gibi dosya:
 
-![](media/customizing-build-system-image1.png)
+![Bulucu csproj konumda](media/customizing-build-system-image1.png)
 
 Görüntülenecek `.csproj` Mac için Visual Studio'da yeni bir sekmede, proje adına sağ tıklayın ve göz **Araçlar > Düzenle dosya**:
 
-![](media/customizing-build-system-image2.png)
+![Kaynak düzenleyicisinde csproj açma](media/customizing-build-system-image2.png)
 
 ### <a name="composition-of-the-msbuild-file"></a>MSBuild dosyası oluşturma
 
 Zorunlu bir kök tüm MSBuild dosyalarını içerecek `Project` öğesi, şu şekilde:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 </Project>
@@ -46,7 +46,7 @@ Zorunlu bir kök tüm MSBuild dosyalarını içerecek `Project` öğesi, şu şe
 
 Genellikle, projenin de alacak bir `.targets` dosyası. Bu dosya işleme ve çeşitli dosyaları derleme anlatmaktadır kuralları çoğunu içerir. Alma işlemi genellikle alt görünür, `proj` dosya ve C# projeleri için şöyle bir şey bakın:
 
-```
+```xml
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 ```
 
@@ -64,7 +64,7 @@ Bunlar bir PropertyGroup kullanarak ayarlayın ve herhangi bir sayıda özellikl
 
 Örneğin, basit bir konsol uygulaması PropertyGroup aşağıdaki XML gibi görünebilir:
 
-```
+```xml
 <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -86,7 +86,7 @@ Bunlar bir PropertyGroup kullanarak ayarlayın ve herhangi bir sayıda özellikl
 
 Örneğin, aşağıdaki kod parçacığını başlatma ekranlar iOS oluşturur. Başlatma ekranlar yapı türüne sahip `BundleResource`, görüntü yolu olarak spec ile:
 
-```
+```xml
  <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
     <BundleResource Include="Resources\Default%402x.png" />
@@ -96,7 +96,7 @@ Bunlar bir PropertyGroup kullanarak ayarlayın ve herhangi bir sayıda özellikl
     <BundleResource Include="Resources\Default-Landscape%402x.png" />
   </ItemGroup>
  ```
- 
+
  Kümeleri kullanarak ifadeler başvurulabilen öğesi `@()` sözdizimi. Örneğin, `@(BundleResource)` BundleResource öğelerin tümünü anlamına gelir BundleResource öğesi kümesi olarak değerlendirilir. Bu türde öğe varsa, herhangi bir hata boş olur.
 
 ## <a name="resources-for-learning-msbuild"></a>MSBuild öğrenme için kaynaklar
@@ -105,5 +105,3 @@ MSBuild hakkında daha ayrıntılı bilgi edinmek için aşağıdaki kaynaklara 
 
 * [MSDN - genel bakış](https://msdn.microsoft.com/library/dd393574.aspx)
 * [MSDN - kavramları](https://msdn.microsoft.com/library/dd637714.aspx)
-
-

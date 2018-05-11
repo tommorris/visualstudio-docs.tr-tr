@@ -9,11 +9,11 @@ description: Visual Studio aboneliğinizde yer alan teknik destek avantajı etki
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ef77e784ccaad30413ad81716b55df8e2de45fea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c04132540477bcd94880cdb55b71493cbb1a347
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde teknik destek avantajı etkinleştirme
 
@@ -75,6 +75,20 @@ Azure ile ilgili sorunlar için Visual Studio abonelik teknik destek avantajın�
 3.  "Destek altında" "Bağlantı destek sözleşmesi"'i tıklatın.
 4.  Sağla "Erişim Kimliği" ve "Sözleşme kimliği" #1 sağlanan girin.
 Bu adımları tamamladıktan sonra Visual Studio abonelik teklifi ile ilişkili destek planı seçmek mümkün olur.  (Planın adı "MSDN" içerebilir.)
+
+## <a name="eligibility"></a>Uygunluk
+| Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standart, yıllık bulut)   | Toplu Lisans, Azure, perakende, seçili NFR<sup>1</sup> | 4 olaylar       |  Evet|
+| Visual Studio Professional (standart, yıllık bulut) | Toplu Lisans, Azure, perakende, seçili NFR<sup>2</sup>                                        | 2 olaylar                                                          |Evet         |
+| Visual Studio Test uzmanı (standart)                         | Toplu Lisans, perakende                                              | 2 olaylar                                             |  Evet         |
+| MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | 2 olaylar                                               | Evet         |
+| Visual Studio Dev Essentials | Yok  | Yok |Yok|
+| Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
+
+<sup>1</sup>*içerir: Premium düşünün.   Dışlar: Değil satışı için (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve Hizmetleri geliştirici, BizSpark, standart, Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD), MCT yazılım ve Hizmetleri düşünün.*
+
+<sup>2</sup>*içerir: standart düşünün.* 
 
  
 

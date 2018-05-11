@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29faeafb56c5c077602a3dbcba5ecbb6bb2ab118
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 234f89f2d0a28c0836ee06df4c49c3ab60f102ce
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-bootstrapper-packages"></a>Önyükleyici paketleri oluşturma
-Kurulum programı algılar ve Windows Installer (.msi) dosyaları ve yürütülebilir programları gibi yeniden dağıtılabilir bileşenleri yüklemek için yapılandırılmış bir genel yükleyicidir. Yükleyici bir önyükleyici de denir. Bir dizi bileşen yüklemesini yönetmek için meta veriler belirtin XML bildirimlerine ile programlanmış.  Her yeniden dağıtılabilir bileşeni ya da önkoşul, bir önyükleyici paketidir. Önyükleyici paketi, dizinler ve önkoşul nasıl yükleneceğini açıklayan bildirim dosyaları içeren dosyaları grubudur. 
+Kurulum programı algılar ve Windows Installer (.msi) dosyaları ve yürütülebilir programları gibi yeniden dağıtılabilir bileşenleri yüklemek için yapılandırılmış bir genel yükleyicidir. Yükleyici bir önyükleyici de denir. Bir dizi bileşen yüklemesini yönetmek için meta veriler belirtin XML bildirimlerine ile programlanmış.  Her yeniden dağıtılabilir bileşeni veya önkoşul, görünür **Önkoşullar** iletişim kutusu için ClickOnce önyükleyici paketi olur. Önyükleyici paketi, dizinler ve önkoşul nasıl yükleneceğini açıklayan bildirim dosyaları içeren dosyaları grubudur. 
   
 Önyükleyici ilk Önkoşullar zaten yüklü olup olmadığını algılar. İlk Önkoşullar yüklü değilse, önyükleyici lisans sözleşmelerini gösterir. İkinci olarak, son kullanıcı lisans sözleşmelerini kabul ettikten sonra yükleme önkoşulları başlar. Aksi takdirde, tüm Önkoşullar algılanmazsa, önyükleyici yalnızca uygulama yükleyici başlatır.  
   

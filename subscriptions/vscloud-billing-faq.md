@@ -9,11 +9,11 @@ description: Abonelikler için faturalama soruları.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 284b448c6c5eade7e85793c2d21196b83de9fdc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e77cebba49447dcab4d30979753357a64075b1f2
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>SSS faturalama visual Studio bulut abonelikleri
 Emin olun [bulut aboneliği avantajları karşılaştırın ve fiyatlandırma](https://www.visualstudio.com/vs/pricing/) abonelikle Bulut ve standart Visual Studio abonelikleri arasındaki karşılaştırmaları abone Avantajlarınızı ayrıntıları her Visual Studio yararları anlamak için ve daha fazlası.
@@ -103,3 +103,9 @@ A: satıcınızla bulut çözümü sağlayıcısı (CSP) programına katılması
 * [Visual Studio Professional yıllık](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)
 * [Aylık Visual Studio Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
 * [Visual Studio Enterprise yıllık](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual)
+
+## <a name="related-resources"></a>İlgili kaynaklar
+
+* [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com/)
+* [Visual Studio abonelik desteği](https://www.visualstudio.com/vs/support/)
+* [Visual Studio bulut aboneliği CSP'ler için satın alma](vscloud-csp.md)

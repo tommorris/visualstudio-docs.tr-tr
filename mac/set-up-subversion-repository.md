@@ -1,27 +1,39 @@
 ---
 title: Bir alt sürüme deposu ayarlama
-description: Git ve alt sürüme Mac için Visual Studio kullanarak
+description: Alt sürüme Mac için Visual Studio kullanarak
 author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: f21106ea020118eb1facef9f7ac64a080015d621
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: e5f395511ad3b2b3cc4568a4d701ca5dbcc02736
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="setting-up-a-subversion-repository"></a>Bir alt sürüme deposu ayarlama
 
-Alt sürüme merkezi sürüm denetim sistemidir. Bu, tüm dosyaları ve kullanıcıların herhangi bir dosyayı herhangi bir sürümü denetleyebilirsiniz düzeltmelerini içeren tek bir sunucu olduğu anlamına gelir. Dosyalar bir uzak alt sürüme depodan kullanıma, kullanıcı bir anlık görüntü depo zamandaki o noktada alır.
+Alt sürüme olan bir merkezi _sürüm denetimi sistemi_, tüm dosyaları ve düzeltmelerini içeren tek bir sunucu olduğu anlamına gelir, hangi kullanıcıların herhangi bir dosyayı herhangi bir sürümü kontrol edebilirsiniz. Dosyalar bir uzak alt sürüme depodan kullanıma, kullanıcı bir anlık görüntü depo zamandaki o noktada alır.
 
-Doğru svn paketleri içerirler gibi alt sürüme kullanmaya başlamadan önce Xcode komut satırı araçları yüklü olması gerekir. SVN aşağıdaki komutla terminale yüklü olduğunu denetleyebilirsiniz:
+Sürüm denetimi için alt sürüme kullanmak için makinenizde yüklenmelidir. Alt sürüme ise denetlemek için makinenize yüklü, Terminal içinde aşağıdaki komutu kullanın:
 
-`svn h`
+```bash
+svn --version
+```
+
+Bu komut, sürüm numarasını döndürür.
+
+Alt sürüme zaten yüklü değilse, bunu almak için kolay yükleyerek yoludur _Xcode komut satırı araçları_. Xcode komut satırı araçları ve alt sürüme yüklemek için aşağıdaki komutu kullanın.
+
+```bash
+xcode-select --install
+```
+
+Alt sürüme makinenizde yüklendikten sonra projenizin SVN içinde yayımlamak için aşağıdaki adımları kullanın.
 
 1. Bir ücretsiz SVN deposu oluşturun. Bu örnek için [Assembla](https://app.assembla.com/) kullanıldı. Oluşturduktan sonra bir URL sağlanacaktır, hangi depoya bağlanmak için kullanılacak: 
 
-    ![SVN URL'si edinin ve kopyalama](media/version-control-subversion1-sml.png)
+    ![SVN URL'sini Kopyala](media/version-control-subversion1-sml.png)
 
 2. Visual Studio için Mac projesi oluşturun veya açın.
 
@@ -29,17 +41,17 @@ Doğru svn paketleri içerirler gibi alt sürüme kullanmaya başlamadan önce X
 
     ![Proje Yayımlama Başlat](media/version-control-subversion2.png)
 
-4. İçinde **depo Bağlan** sekmesine **alt sürüme** üst açılır.
+4. İçinde **depo Bağlan** sekmesine **alt sürüme** en yukarıdan aşağı açılır.
 
-5. Adım 1'den URL'sini girin. Bu, varsayılan olarak diğer alanları doldurmanız gerekir: 
+5. Adım 1'den URL'sini girin. Girilen URL sonra diğer alanları varsayılan olarak doldurulur: 
 
     ![Depo seçin ve iletişim ayrıntılarını girin](media/version-control-subversion3.png)
 
 7. Tıklatın **Tamam** ve tuşlarına basarak onaylayın **Yayımla**.
 
-7. Depo oluşturun site için kimlik bilgilerinizi girmeniz istenebilir. Bunlar, aşağıda gösterildiği gibi girin:
+7. İstenirse, kimlik bilgilerinizi site deposu oluşturmak için aşağıda gösterildiği gibi girin:
 
-    ![](media/version-control-subversion5.png)
+    ![Alt sürüme deposu için kimlik bilgilerini girme](media/version-control-subversion5.png)
 
 8.  Kullanılabilir tüm sürüm denetim komutlarının artık sürüm denetimi menüde görünür olması gerekir.
 

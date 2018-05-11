@@ -1,5 +1,5 @@
 ---
-title: Sınıfları ve Türleri Yeniden Düzenleme (Sınıf Tasarımcısı)
+title: Yeniden adlandırın ve sınıfları ve türleri Sınıf Tasarımcısı'nda taşıma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -21,13 +21,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3104266e92bc05f82a4d97fb62fc20bc9e79c0eb
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ee534ca3c8b2a1cef441005586bc58601fb15ed7
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="refactoring-classes-and-types-class-designer"></a>Yeniden düzenleme sınıfları ve türleri (Sınıf Tasarımcısı)
+# <a name="refactor-classes-and-types-in-class-designer"></a>Sınıfları ve türleri Sınıf Tasarımcısı'nda yeniden Düzenle
 
 Kodu yeniden düzenleyin, daha kolay anlamak, bakımını yapmak ve iç yapısını ve nesnelerine şeklini değiştirerek daha verimli şekilde tasarlandığından, dış davranışını değil. Sınıf Tasarımcısı ve yapmanız gereken iş azaltmak için sınıf Ayrıntıları penceresi ve C#, Visual Basic ya da C++ kodu Visual Studio projenizi yeniden olduğunda hataları Tanıtımı ihtimalini kullanın.
 
@@ -40,52 +40,50 @@ Kodu yeniden düzenleyin, daha kolay anlamak, bakımını yapmak ve iç yapısı
 |----------|------------------------|
 |**Sınıfları yeniden düzenleme:** yeniden düzenleme işlemi bir sınıfı kısmi sınıflara bölme ya da bir Özet temel sınıf uygulamak için kullanabilirsiniz.|-   [Nasıl yapılır: bir sınıfı kısmi sınıflara bölme](how-to-split-a-class-into-partial-classes.md)|
 |**Arabirimleri ile çalışma:** Sınıf Tasarımcısı'nda, uygulayabilirsiniz arabirim sınıf diyagramında arabirim yöntemleri için kod sağlayan bir sınıf bağlanarak.|-   [Nasıl yapılır: bir arabirim](how-to-implement-an-interface.md)|
-|**Türleri, tür üyeleri ve parametreleri yeniden düzenleme:** Sınıf Tasarımcısı kullanarak yapabilir türleri yeniden adlandırmak, tür üyeleri geçersiz kılma veya bir türden diğerine taşıyabilirsiniz. Boş değer atanabilir türler de oluşturabilirsiniz.|-   [Yeniden Adlandır türleri ve tür üyeleri](refactoring-classes-and-types.md#rename)<br />-   [Tür üyeleri bir türden diğerine taşıma](refactoring-classes-and-types.md#move)<br />-   [Nasıl yapılır: boş değer atanabilir tür oluşturma](how-to-create-a-nullable-type.md)|
+|**Türleri, tür üyeleri ve parametreleri yeniden düzenleme:** Sınıf Tasarımcısı kullanarak yapabilir türleri yeniden adlandırmak, tür üyeleri geçersiz kılma veya bir türden diğerine taşıyabilirsiniz. Boş değer atanabilir türler de oluşturabilirsiniz.|-   [Yeniden Adlandır türleri ve tür üyeleri](#rename-types-and-type-members)<br />-   [Tür üyeleri bir türden diğerine taşıma](#move-type-members-from-one-type-to-another)<br />-   [Nasıl yapılır: boş değer atanabilir tür oluşturma](how-to-create-a-nullable-type.md)|
 
-<a name="rename"></a>
-### <a name="rename-types-and-type-members"></a>Yeniden Adlandır türleri ve tür üyeleri
+## <a name="rename-types-and-type-members"></a>Yeniden Adlandır türleri ve tür üyeleri
 
-Sınıf Tasarımcısı'nda bir tür veya üye türü sınıf diyagramında veya özellikleri penceresinde adlandırabilirsiniz. Sınıf Ayrıntıları penceresinde üyesi ancak bir tür adını değiştirebilirsiniz. Bir tür veya tür üyesi yeniden adlandırma, tüm windows ve burada eski adı görünen kodu konumları yayar.
+Sınıf Tasarımcısı'nda, bir tür veya sınıf diyagramında ya da buna bir türünün bir üyesi adlandırabilirsiniz **özellikleri** penceresi. İçinde **sınıfı ayrıntıları** penceresinde üyesi ancak bir tür adını değiştirebilirsiniz. Bir tür veya tür üyesi yeniden adlandırma, tüm windows ve burada eski adı görünen kodu konumları yayar.
 
-#### <a name="to-rename-a-name-in-the-class-designer"></a>Sınıf Tasarımcısı'nda bir ad yeniden adlandırmak için
+### <a name="rename-in-the-class-designer"></a>Sınıf Tasarımcısı'nda yeniden adlandırın
 
-1.  Sınıf diyagramında tür veya üye seçin ve adına tıklayın.
+1. Sınıf diyagramında tür veya üye seçin ve adını seçin.
 
      Üyenin adını düzenlenebilir olur.
 
-2.  Tür veya üye türü için yeni adı yazın
+2. Tür veya üye türü için yeni adı yazın
 
-#### <a name="to-rename-a-name-in-the-class-details-window"></a>Sınıf Ayrıntıları penceresinde bir adı yeniden adlandırmak için
+### <a name="rename-in-the-class-details-window"></a>Sınıf Ayrıntıları penceresinde yeniden adlandırma
 
-1.  Sınıf ayrıntıları penceresini görüntülemek için türü veya tür üyesi sağ tıklayın ve ardından **sınıfı ayrıntıları**.
+1. Görüntülenecek **sınıfı ayrıntıları** penceresinde, tür veya tür üyesi sağ tıklatın ve seçin **sınıfı ayrıntıları**.
 
-     Sınıf Ayrıntıları penceresi görünür.
+     **Sınıfı ayrıntıları** penceresi görüntülenir.
 
-2.  İçinde **adı** sütun türü üyesinin adını değiştirme
+2. İçinde **adı** sütun türü üyesinin adını değiştirme
 
-3.  Odağı hücreden taşımak için basın **ENTER** anahtar veya uzakta hücreyi tıklatın.
+3. Odağı hücreden taşımak için basın **Enter** anahtar veya uzakta hücreyi tıklatın.
 
     > [!NOTE]
-    > Sınıf Ayrıntıları penceresinde üyesi ancak bir tür adını değiştirebilirsiniz.
+    > İçinde **sınıfı ayrıntıları** penceresinde üyesi ancak bir tür adını değiştirebilirsiniz.
 
-#### <a name="to-rename-a-name-in-the-properties-window"></a>Bir ad Özellikleri penceresinde yeniden adlandırmak için
+### <a name="rename-in-the-properties-window"></a>Özellikler penceresinde yeniden adlandırma
 
-1.  Sınıf diyagramında veya sınıf Ayrıntıları penceresi, tür veya üye sağ tıklayın ve ardından **özellikleri**.
+1. Sınıf diyagramında veya **sınıfı ayrıntıları** penceresinde, tür veya üye sağ tıklayın ve ardından **özellikleri**.
 
-     Özellikler penceresi görüntülenir ve türü veya türü üyesinin özelliklerini görüntüler.
+     **Özellikleri** penceresi görüntülenir ve türü veya türü üyesinin özelliklerini görüntüler.
 
-2.  İçinde **adı** özelliği, türü adını değiştirin veya üye yazın.
+2. İçinde **adı** özelliği, türü adını değiştirin veya üye yazın.
 
      Yeni bir ad, tüm windows ve burada eski adı görünen kodu konumları geçerli projedeki yayar.
 
-<a name="move"></a>
-### <a name="move-type-members-from-one-type-to-another"></a>Tür üyeleri bir türden diğerine taşıma
+## <a name="move-type-members-from-one-type-to-another"></a>Tür üyeleri bir türden diğerine taşıma
 
-Kullanarak **Sınıf Tasarımcısı**, her ikisi de geçerli sınıf diyagramında görünür durumdaysa başka bir tür için bir tür üyesi bir türden diğerine taşıyabilirsiniz.
+Kullanarak **Sınıf Tasarımcısı**, bir tür üyesi başka bir türüne bir türden diğerine taşıyabilirsiniz. Her iki tür geçerli sınıf diyagramında görünür olması gerekir.
 
-1.  Tasarım yüzeyine görünür olan bir tür, başka bir türüne taşıyın ve ardından istediğiniz üye sağ **Kes**.
+1. Tasarım yüzeyine görünür olan bir tür, başka bir türüne taşıyın ve ardından istediğiniz üye sağ **Kes**.
 
-2.  Hedef türünü sağ tıklatın ve ardından **Yapıştır**.
+2. Hedef türü sağ tıklatıp **Yapıştır**.
 
      Özellik kaynak türünden kaldırılır ve hedef tipinde görüntülenir.
 

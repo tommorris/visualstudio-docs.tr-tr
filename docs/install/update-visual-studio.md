@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c0a53ca3a5b7eb292a2b2bdd1e95b9319205bcf3
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Visual Studio 2017 en son sürüme güncelleştir
 
@@ -54,7 +54,7 @@ Bir güncelleştirme olduğunda, Visual Studio'da karşılık gelen bir bildirim
      Güncelleştirme devam eder. Tamamlandığında, daha sonra Visual Studio yeniden başlatır.
 
      > [!NOTE]
-     > Visual Studio'yu Yönetici modunda çalıştırın, Visual Studio Güncelleştirme tamamlandıktan sonra el ile yeniden başlatmalısınız.    
+     > Visual Studio'yu Yönetici modunda çalıştırdığınızda, Visual Studio Güncelleştirme tamamlandıktan sonra el ile yeniden başlatmalısınız.
 
 ### <a name="use-the-ide"></a>IDE kullanın
 
@@ -71,7 +71,7 @@ Bir güncelleştirme için denetleyin ve sonra Visual Studio menü çubuğundan 
    Güncelleştirme, güncelleştirme başarıyla tamamlandıktan sonra yeniden başlatmaları önceki bölümde, ardından Visual Studio içinde açıklandığı gibi devam eder.
 
    > [!NOTE]
-   > Visual Studio'yu Yönetici modunda çalıştırın, Visual Studio Güncelleştirme tamamlandıktan sonra el ile yeniden başlatmalısınız.  
+   > Visual Studio'yu Yönetici modunda çalıştırdığınızda, Visual Studio Güncelleştirme tamamlandıktan sonra el ile yeniden başlatmalısınız.
 
 ### <a name="use-the-visual-studio-installer"></a>Visual Studio yükleyicisi kullanın
 

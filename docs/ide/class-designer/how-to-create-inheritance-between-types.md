@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f89a15b0ec734e29e27fe652ee7e71b791db50
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e8151020294f4fd5574a1de886509c5b11f0a326
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-create-inheritance-between-types-class-designer"></a>Nasıl yapılır: devralma türleri (Sınıf Tasarımcısı) arasındaki oluştur
+# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda türler arasında devralmayı oluşturma
 
 Sınıf diyagramı kullanarak iki tür arasında bir devralma ilişkisi oluşturmak için **Sınıf Tasarımcısı**, kendi türetilmiş türü veya türleri ile temel türü bağlanın. İki sınıf arasında bir sınıf ve bir arabirim arasında veya iki arabirimler arasında bir devralma ilişkisi olabilir.
 

@@ -21,8 +21,8 @@ helpviewer_keywords:
 - errors, class diagrams
 - errors, Class Designer
 - error messages, Class Designer
-- Class Designer [Visual Studio], errors
 - error messages, class diagrams
+- Class Designer [Visual Studio], errors
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 author: gewarren
@@ -30,15 +30,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0af8686af556ca24cdbc9e0a51206f4f0728206
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 014497d0b32df61412820468a8f3f7e0b177c14f
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="additional-information-about-class-designer-errors"></a>Sınıf Tasarımcısı hataları hakkında ek bilgi
+# <a name="class-designer-errors"></a>Sınıf Tasarımcısı hataları
 
-**Sınıf Tasarımcısı** böylece proje yapınızı değiştirerek veya projedeki kaynak dosyalarını neden olabilecek taşıyarak, kaynak dosyalarının konumunu izlemez **Sınıf Tasarımcısı** türünü (özellikle kaynak türünü kaybetmesine için bir typedef, temel sınıfları ve ilişki türleri). Hata gibi alabilirsiniz **Sınıf Tasarımcısı bu tür görüntüleyemiyor**. Bunu yaparsanız, yeniden yeniden görüntülemek için sınıf diyagramı konumlandırılan veya değiştirilen kaynak kodunu sürükleyin.
+**Sınıf Tasarımcısı** böylece proje yapınızı değiştirerek veya projedeki kaynak dosyalarını neden olabilecek taşıyarak, kaynak dosyalarının konumunu izlemez **Sınıf Tasarımcısı** türü kaybetmesine, örneğin, ortak şekli bir typedef, temel sınıfları ve ilişki türleri kaynak türünü değiştirin. Hata gibi alabilirsiniz **Sınıf Tasarımcısı bu tür görüntüleyemiyor**. Hatayı gidermek için yeniden görüntülemek için sınıf diyagramı konumlandırılan veya değiştirilen kaynak kodunu sürükleyin.
 
 ## <a name="resources"></a>Kaynaklar
 
@@ -49,4 +49,4 @@ Aşağıdaki kaynakları diğer hataları ve Uyarıları ile Yardım bulabilirsi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Tasarlama ve sınıfları ve türleri görüntüleme](designing-and-viewing-classes-and-types.md)
+- [Tasarım ve görünüm sınıfları ve türleri](designing-and-viewing-classes-and-types.md)

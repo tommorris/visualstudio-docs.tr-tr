@@ -13,11 +13,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0460e61fea7e617e497a46c55f8af811ba2e24fe
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: eef4f8b66da517e471a25bb36e777f6cc343b0a3
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>Visual Studio 2017 yükleme konumlarda değiştirme
 
@@ -32,21 +32,21 @@ ms.lasthandoff: 05/07/2018
   > [!IMPORTANT]
   > Yüklemeyi duraklatmak ve daha sonra devam, Visual Studio kaldığı yerden seçer. Diğer bir deyişle, hangi yüklenmesini ve yüklü kalır ve önceki sayısını başlamıyor yükleme ilerleme durumunu uygular.
 
-2. İçinde **Visual Studio** bölümünde, varsayılanı kabul edin. Bu, çekirdek ürüne yükler ve Visual Studio'nun bu sürümü için belirli dosyaları içerir.
+2. İçinde **Visual Studio IDE** bölümünde, varsayılanı kabul edin. Bu, çekirdek ürüne yükler ve Visual Studio'nun bu sürümü için belirli dosyaları içerir.
 
  > [!IMPORTANT]
  > Sistem sürücünüz neden öneririz, sistem sürücüsünde varsayılan konumu kabul katı hal sürücüsü (SSD), burada ın ise: Visual Studio ile geliştirirken, okuma ve disk g/ç etkinliğini artıran çok sayıda dosya, için yazma.  Hızlı sürücünüzü yükü işlemek üzere seçmek en iyisidir.
 
 2. İçinde **İndirebilmeleri** bölümünde, indirme önbellek tutun ve ardından işaretleyin veya işaretini kaldırın isteyip istemediğinize karar **Koru indirme önbellek** uygun şekilde. <br><br>Karşıdan yükleme önbelleğine tutma karar verirseniz konum yalnızca geçici olarak kullanılır. De, bu eylem etkilemez ya da önceki yüklemelerden dosyaları silin. (Tüm yükleme paketleri temizlemek için önceki yüklemelerini ayrı olarak değiştirmeniz gerekir.)
 
-3. İçinde **İndirebilmeleri** bölümünde, yükleme dosyalarını ve bildirimleri depolamak istediğiniz sürücüyü belirtin. <br><br>Örneğin, **C++ ile masaüstü geliştirme** iş yükü, geçici olarak gerekli boyutudur 1.58 GB yüklemesi tamamlandıktan hemen sonra serbest sistem sürücüsünde.
+3. İçinde **İndirebilmeleri** bölümünde, yükleme dosyalarını ve bildirimleri depolamak istediğiniz sürücüyü belirtin. <br><br>"Masaüstü geliştirme C++ ile" iş yükü seçerseniz, örneğin, geçici olarak gereken boyut 1.58 yüklemesi tamamlandıktan hemen sonra serbest sistem sürücüsünde GB'dir.
 
  > [!NOTE]
  > Dosyaları geçici bir klasöre sistem sürücüsündeki ilk indirilir ve Visual Studio doğrular ve ardından bunları indirme önbellek klasörüne taşır daha sonra silinir. Başka bir sürücüye yükleme önbelleğiniz devam etmeyi seçerseniz, Visual Studio hala sistem sürücüsündeki yükleme önbelleğin boyutunu eşdeğer olan disk alanı gerekiyor.
  > [!IMPORTANT]
  > Konumun ilk yüklemenizle birlikte ayarlanır ve yükleyici UI daha sonra değiştirilemez. Bunun yerine, şunları yapmalısınız [komut satırı parametrelerini kullanmak](use-command-line-parameters-to-install-visual-studio.md) indirme önbellek taşımak için
 
-4. İçinde **paylaşılan bileşenleri, SDK'lar ve Araçlar** bölümünde, yan yana Visual Studio yüklemeleri tarafından paylaşılan dosyaları depolamak istediğiniz sürücüyü belirtin. SDK'lar ve Visual Studio yükleyicisi olanak sağlayan araçlar da bu dizinde depolanan yükleme konumunu değiştirin.
+4. İçinde **paylaşılan bileşenleri, araçları ve SDK'ları** bölümünde, yan yana Visual Studio yüklemeleri tarafından paylaşılan dosyaları depolamak istediğiniz sürücüyü belirtin. SDK'lar ve Visual Studio yükleyicisi olanak sağlayan araçlar da bu dizinde depolanan yükleme konumunu değiştirin.
 
  > [!NOTE]
  > Bazı araçlar vardır ve burada olabilir farklı kuralları vardır SDK'ları yüklenir. Başka bir konum seçin olsa bile bu araçlar ve SDK'ları hala sistem sürücünüzde yüklenir.)

@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: dd3fa975070656f54a48452a50e51c172d51c785
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5c172ff3ec3033b50815efdb0b4ee293853ab1e
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Visual Studio kullanarak Azure App Service için ASP.NET veya ASP.NET Core uygulama yayımlama
 
@@ -24,13 +24,19 @@ Kullanabileceğiniz **Yayımla** Azure App Service ASP.NET, ASP.NET Core, Python
 
 Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
+## <a name="prerequisites"></a>Önkoşullar
+
+* Visual Studio 2017 yüklü olması gerekir ve **ASP.NET** ve **.NET Framework** geliştirme iş yükü. .NET Core uygulaması için etmeniz **.NET Core** iş yükü.
+
+    Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
+
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma 
 
 1. Visual Studio'da, **Dosya > Yeni proje**.
 
 1. Altında **Visual C#** veya **Visual Basic**, seçin **Web**ve ardından Orta bölmede ya da **ASP.NET Web uygulaması (.NET Framework)** veya (C# yalnızca) **ASP.NET çekirdek Web uygulaması**ve ardından **Tamam**.
 
-1. Seçin **MVC**, olduğundan emin olun **doğrulaması yok** seçilir ve ardından **Tamam**.
+1. Seçin **MVC** (veya tercih **Web uygulaması (Model-View-Controller)** .NET Core için), olduğundan emin olun **doğrulaması yok** seçilir ve ardından **Tamam** .
 
 1. Gibi bir ad yazın **mywebapp şeklindedir** tıklatıp **Tamam**.
 
@@ -44,7 +50,9 @@ Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](http
 
     ![Seçin yayımlama](../deployment/media/quickstart-publish-aspnet.png "seçin yayımlama")
 
-1. İçinde **Yayımla** bölmesinde seçin **Microsoft Azure App Service**.
+1. Tüm yayımlama profillerini daha önce yapılandırdıysanız **Yayımla** bölmesinde görünür. Tıklatın **yeni profil oluşturmak**.
+
+1. İçinde **yayımlama hedefi çekme** iletişim kutusunda, seçin **uygulama hizmeti**.
 
     ![Azure uygulama hizmeti seçin](../deployment/media/quickstart-publish-azure.png "Azure uygulama hizmeti seçin")
 
@@ -70,5 +78,7 @@ Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](http
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Bir ASP.NET Core uygulamayı Azure'a dağıtma](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
-- [Git ile Azure’a sürekli ASP.NET Core dağıtımı](/aspnet/core/publishing/azure-continuous-deployment)
+Bu hızlı başlangıç Azure'a dağıtımı için bir yayımlama profili oluşturmak için Visual Studio kullanmayı öğrendiniz. Ayrıca bir yayımlamayı yapılandırabilirsiniz alarak profili Azure App Service ayarlarını yayımlayın.
+
+> [!div class="nextstepaction"]
+> [İçeri aktarma ayarları yayımlama ve Azure'a dağıtma](tutorial-import-publish-settings-azure.md)

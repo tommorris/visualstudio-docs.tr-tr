@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f47ac4ff9eee0a3e5cc1d339f5e5def1d6e3b175
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f1ecd96b8541145cfd5d36686f7ceaf04e7544b1
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Hızlı Başlangıç: İlk Visual Studio'daki dağıtımı bakın
 
@@ -38,7 +38,7 @@ Adım adım yönergeler için bkz.
 
 ### <a name="deploy-to-local-folder"></a>Yerel bir klasöre dağıtma
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, ve **.NET Core**: yerel bir klasöre dağıtmak için yayımlama Aracı'nı kullanın. Kullanılabilir seçenekler, uygulama türüne bağlıdır. Çözüm Gezgini'nde, projenize sağ tıklayın ve seçin **Yayımla**ve ardından **klasörü**. Daha fazla bilgi için bkz: [bir yerel klasöre dağıtma](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, ve **.NET Core**: yerel bir klasöre dağıtmak için yayımlama Aracı'nı kullanın. Kullanılabilir seçenekler, uygulama türüne bağlıdır. Çözüm Gezgini'nde, projenize sağ tıklayın ve seçin **Yayımla**. (Daha önce tüm yayımlama profillerini yapılandırdıysanız, ardından'ı tıklatmalısınız **yeni profil oluşturmak**.) Ardından, seçin **klasörü**. Daha fazla bilgi için bkz: [bir yerel klasöre dağıtma](quickstart-deploy-to-local-folder.md).
 
     ![Seçin yayımlama](../deployment/media/quickstart-publish.png)
 
@@ -48,9 +48,11 @@ Adım adım yönergeler için bkz.
 
 - **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, ve **.NET Core**: Yayımla aracı dağıtmak için kullanabileceğiniz bir FTP veya Web dağıtımı kullanarak Web sitesi. Daha fazla bilgi için bkz: [bir web sitesine dağıtma](quickstart-deploy-to-a-web-site.md).
 
-    Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Yayımla**. Yayımla aracında istediğiniz ve yapılandırma adımlarını izleyin seçeneğini belirleyin.
+    Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Yayımla**. (Daha önce tüm yayımlama profillerini yapılandırdıysanız, ardından'ı tıklatmalısınız **yeni profil oluşturmak**.) Yayımla aracında istediğiniz ve yapılandırma adımlarını izleyin seçeneğini belirleyin.
 
     ![IIS, FTP, vb. seçin.](../deployment/media/quickstart-publish-iis-ftp.png)
+
+    Visual Studio'da yayımlama profilini içeri aktarma hakkında daha fazla bilgi için bkz: [yayımlama ayarlarını içeri aktarma ve IIS dağıtma](../deployment/tutorial-import-publish-settings-iis.md).
 
     Ayrıca, ASP.NET uygulamaları ve Hizmetleri, çeşitli diğer yollarla dağıtabilirsiniz. Daha fazla bilgi için bkz: [dağıtma ASP.NET web uygulamaları ve Hizmetleri](http://www.asp.net/aspnet/overview/deployment).
 
@@ -60,18 +62,16 @@ Adım adım yönergeler için bkz.
 
 ### <a name="publish-to-azure"></a>Azure'a yayımlama
 
-- **ASP.NET, ASP.NET Core, Python, Node.js ve .NET Core** web uygulamaları: Azure uygulama hizmeti veya bir Azure sanal makine için hızlı bir şekilde uygulamaları dağıtmak için yayımlama aracını kullanabilirsiniz. Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Yayımla**. Yayımla iletişim kutusunda seçin **Microsoft Azure App Service** veya **Microsoft Azure sanal makineleri**ve yapılandırma adımlarını izleyin.
+- **ASP.NET, ASP.NET Core, Python, Node.js ve .NET Core** web uygulamaları: Azure uygulama hizmeti veya bir Azure sanal makine için hızlı bir şekilde uygulamaları dağıtmak için yayımlama aracını kullanabilirsiniz. Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Yayımla**. (Daha önce tüm yayımlama profillerini yapılandırdıysanız, ardından'ı tıklatmalısınız **yeni profil oluşturmak**.) Yayımla iletişim kutusunda seçin **Microsoft Azure App Service** veya **Microsoft Azure sanal makineleri**ve yapılandırma adımlarını izleyin.
 
     ![Azure uygulama hizmeti seçin](../deployment/media/quickstart-publish-azure.png "Azure uygulama hizmeti seçin")
 
-    Bir Azure sanal makinesine yayımlamak için sağa kaydırın ve seçin **Microsoft Azure sanal makineleri**.
+    Bir yayımlama profili Visual Studio için Azure App hizmetinden içe aktarma hakkında daha fazla bilgi için bkz: [yayımlama ayarlarını içeri aktarma ve Azure'a dağıtmak](../deployment/tutorial-import-publish-settings-azure.md).
 
     Hızlı bir giriş için bkz [Azure Yayımla](quickstart-deploy-to-azure.md). Ayrıca bkz [ASP.NET Core uygulama için Azure yayımlama](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Git kullanarak dağıtım için bkz: [ASP.NET Core Azure Git ile sürekli dağıtımını](/aspnet/core/publishing/azure-continuous-deployment).
 
     > [!NOTE]
     > Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
-
-- Diğer **Azure Hizmetleri**: belirli bkz [Azure hizmeti](/azure/#pivot=products) Visual Studio tarafından desteklenen farklı dağıtım seçenekleri için belgeleri.
 
 ### <a name="publish-to-microsoft-store"></a>Microsoft Mağazası'na yayımlamak
 

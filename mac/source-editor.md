@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: c617ed1bae10569291b88d038e8d875ca966ad43
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: 8660ee0de90813e95a221c3b4ea3a50528b4307a
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="source-editor"></a>Kaynak Düzenleyici
 
@@ -24,7 +24,6 @@ Bu makalede, Kaynak Düzenleyici önemli özelliklerinden bazıları tanıtır v
 Görüntüleme ve verimli bir şekilde kodunuzda taşıma geliştirme iş akışı ayrılmaz bir parçasıdır. Tam olarak nasıl görüntülemek ve geliştiricilerin - ve genellikle projeler arasında değişen bir kişisel karar kod korumak karar.
 
 Mac için Visual Studio erişilebilir ve olabildiğince kullanışlı olarak platformlar arası geliştirmeyi kolaylaştıran birçok güçlü özellikler sunar. Aşağıdaki bölümlerde vurgular bazıları açıklanmaktadır.
-
 
 ## <a name="code-folding"></a>Kod Katlama
 
@@ -62,25 +61,20 @@ Sekmeler, boşluk ve satır sonları göstermek için seçeneği de mevcuttur:
 
  ![Görüntülenen boşluk](media/source-editor-image22.png)
 
-
 ## <a name="ruler"></a>Cetvel
 
 Sütun cetvel satır uzunluklarını özellikle satır uzunluğu yönergeleri içeren bir ekipte çalışırken belirlemede yararlıdır. Sütun cetvel açmak veya kapatmak için giderek açılabilir **Visual Studio > tercihleri... > Metin Düzenleyicisi > işaretçileri ve bunlara Cetveller** ve seçme (ya da seçimini) **Sütun Göster cetvel**de gösterildiği gibi Aşağıdaki görüntüde:
 
- ![](media/source-editor-image5.png)
+ !["Vurgulanmış Göster sütun cetvel" ile Tercihler iletişim kutusu](media/source-editor-image5.png)
 
  Bu, kaynak düzenleyicisinde dikey açık gri satırı olarak görüntüler.
-
 
 ## <a name="highlight-identifier-references"></a>Tanımlayıcı başvuruları vurgulayın
 
 "Seçeneğinin etkinleştirilmiş Vurgu tanımlayıcı başvuruları", kaynak kodunda herhangi bir simge seçin ve Kaynak Düzenleyici o dosyadaki tüm diğer başvurular için görsel bir kılavuz sağlar. Bu seçeneği etkinleştirmek için şu adrese gidin **Visual Studio > tercihleri... > Metin Düzenleyicisi > işaretçileri ve bunlara Cetveller** seçip _vurgulayın tanımlayıcı başvuruları_aşağıdaki görüntüde gösterildiği gibi:
 
-![](media/source-editor-image6.png)
+!["Vurgulanmış Vurgu tanımlayıcı başvuruları" Tercihler iletişim kutusu](media/source-editor-image6.png)
 
 Vurgulama renk de bir atanan veya başvurulan belirten için yararlıdır. Bir şey atanırsa, kırmızıyla vurgulanır. başvurulduğunda, mavi renkte vurgulanmıştır:
 
-![](media/source-editor-image7.png)
-
-
-
+![higlight örnek gösteren rengi](media/source-editor-image7.png)

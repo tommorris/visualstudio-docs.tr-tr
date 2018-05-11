@@ -15,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ce99a4e4c4899502bf1f63edf2dbc1ad0c93cd0
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 6eb831422df42a246a5d5c23ccdd480bce47a0e6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Sınıf tasarımcısında Visual C++ typedefs
 
-TypeDef deyimleri yöneltme bir ad ve temel alınan türü arasında bir veya daha fazla katmanı oluşturun. **Sınıf Tasarımcısı** anahtar sözcüğüyle bildirilen C++ typedef türlerini destekler `typedef`, örneğin:
+[TypeDef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) deyimleri yöneltme bir ad ve temel alınan türü arasında bir veya daha fazla katmanı oluşturun. **Sınıf Tasarımcısı** anahtar sözcüğüyle bildirilen C++ typedef türlerini destekler `typedef`, örneğin:
 
 ```cpp
 typedef class coord
@@ -38,7 +38,38 @@ Ardından bu tür bir örneği bildirmek için de kullanabilirsiniz:
 
 `COORD OriginPoint;`
 
-Bir ad olmadan bir typedef bildirebilir rağmen **Sınıf Tasarımcısı** belirttiğiniz etiket adını kullanmaz; sınıf görünümü oluşturur adını kullanacaksınız. Örneğin, aşağıdaki bildirimi geçerlidir, ancak görünür **sınıf görünümü** ve **Sınıf Tasarımcısı** adlı bir nesne olarak **__unnamed**:
+## <a name="class-and-struct-shapes"></a>Sınıf ve yapı şekiller
+
+İçinde **Sınıf Tasarımcısı**, Şekil typedef belirtilen türde bir C++ typedef sahiptir. Kaynak bildirirse `typedef class`, Şekil köşeleri ve etiket yuvarlanmış **sınıfı**. İçin `typedef struct`, Şekil kare köşeleri ve etiket sahip **yapısı**.
+
+Sınıfları ve yapıları bunların içinde bildirilen iç içe geçmiş tür tanımları sahip olabilir. İçinde **Sınıf Tasarımcısı**, sınıf ve yapısı şekiller olarak içe şekillerin iç içe geçmiş typedef bildirimleri gösterebilir.
+
+TypeDef şekilleri Destek **Göster ilişkilendirmesi olarak** ve **Göster koleksiyon ilişkilendirmesini** bağlam menüsünde komutları.
+
+### <a name="class-typedef-example"></a>Sınıf typedef örneği
+
+```cpp
+class B {};
+typedef B MyB;
+```
+
+![Sınıf tasarımcısında C++ sınıfı typedef](media/cpp-class-typedef.png)
+
+### <a name="struct-typedef-example"></a>Yapı typedef örneği
+
+```cpp
+typedef struct mystructtag
+{
+    int   i;
+    double f;
+} mystruct;
+```
+
+![Sınıf tasarımcısında C++ yapısı typedef](media/cpp-struct-typedef.png)
+
+## <a name="unnamed-typedefs"></a>Adlandırılmamış tür tanımları
+
+Bir ad olmadan bir typedef bildirebilir rağmen **Sınıf Tasarımcısı** belirttiğiniz etiket adını kullanmaz. **Sınıf Tasarımcısı** adını kullanır, **sınıf görünümü** oluşturur. Örneğin, aşağıdaki bildirimi geçerlidir, ancak görünür **sınıf görünümü** ve **Sınıf Tasarımcısı** adlı bir nesne olarak **__unnamed**:
 
 ```cpp
 typedef class coord
@@ -49,158 +80,10 @@ typedef class coord
 };
 ```
 
-Kullanma hakkında daha fazla bilgi için `typedef` yazın, bkz: [tür tanımları](/cpp/cpp/aliases-and-typedefs-cpp#typedefs).
+> [!NOTE]
+> **Sınıf Tasarımcısı** kaynak türü, bir işlev işaretçisi olan tür tanımları görüntülenmez.
 
-Bir C++ typedef şekli typedef belirtilen türde şekli vardır. Örneğin, kaynak bildirirse `typedef class`, Şekil köşeleri ve etiket yuvarlanmış **sınıfı**. İçin `typedef struct`, Şekil kare köşeleri ve etiket sahip **yapısı**.
+## <a name="see-also"></a>Ayrıca bkz.
 
-Sınıfları ve yapıları bunların içinde bildirilen iç içe geçmiş tür tanımları olabilir; Bu nedenle, sınıf ve yapısı şekilleri iç içe geçmiş typedef bildirimleri iç içe geçmiş şekil olarak gösterebilir.
-
-TypeDef şekilleri Destek **Göster ilişkilendirmesi olarak** ve **Göster koleksiyon ilişkilendirmesini** bağlam menüsünde komutları.
-
-Bazı örnekler typdef türleri verilmiştir **Sınıf Tasarımcısı** destekler:
-
-`typedef type name`
-
-*ad* : *türü*
-
-typedef
-
-Tür bağlanma ilişkisi çizgi çizer *adı*, mümkün olduğunda.
-
-`typedef void (*func)(int)`
-
-`func: void (*)(int)`
-
-typedef
-
-İşlev işaretçileri TypeDef. Hiçbir ilişki çizgi çizilir.
-
-**Sınıf Tasarımcısı** kendi kaynak türü bir işlev işaretçisi ise bir typedef görüntülemez.
-
-```cpp
-typedef int MyInt;
-class A {
-   MyInt I;
-};
-```
-
-`MyInt: int`
-
-typedef
-
-`A`
-
-örneği
-
-Kaynak türü şekle hedef türü şekle işaret eden bir ilişki çizgi çizer.
-
-`Class B {};`
-
-`typedef B MyB;`
-
-`B`
-
-örneği
-
-`MyB : B`
-
-typedef
-
-Typedef şekli sağ tıklayarak ve tıklatarak **Göster ilişkilendirme** typedef veya sınıf görüntüler ve bir **diğer adını** (bir ilişkilendirme satırına benzer) iki şekil birleştirme satır.
-
-`typedef B MyB;`
-
-`typedef MyB A;`
-
-`MyBar : Bar`
-
-typedef
-
-Yukarıdaki ile aynı.
-
-```cpp
-Class B {};
-typedef B MyB;
-
-class A {
-   MyB B;
-};
-```
-
-`B`
-
-örneği
-
-`MyB : B`
-
-typedef
-
-`A`
-
-örneği
-
-`MyB` bir iç içe geçmiş typedef şekli olur.
-
-`#include <vector>`
-
-`...`
-
-`using namespace std;`
-
-`...`
-
-`typedef vector<int> MyIntVect;`
-
-`vector<T>`sınıfı
-
-`MyIntVect : vector<int>`
-
-typedef
-
-`class B {};`
-
-`typedef B MyB;`
-
-`class A : MyB {};`
-
-`MyB : B`
-
-typedef
-
-B -&GT;
-
-`B`
-
-`A`
-
-örneği
-
-MyB ->
-
-**Sınıf Tasarımcısı** bir bağlam menüsü komutu kullanarak bu tür bir ilişki görüntüleme desteklemiyor.
-
-`#include <vector>`
-
-`Typedef MyIntVect std::vector<int>;`
-
-`Class MyVect : MyIntVect {};`
-
-`std::vector<T>`
-
-örneği
-
-`MyIntVect : std::vector<int>`
-
-typedef
-
-`MyVect`
-
-örneği
-
-MyIntVect ->
-
-### <a name="see-also"></a>Ayrıca bkz.
-
-- [Visual C++ Kodu ile Çalışma](working-with-visual-cpp-code.md)  
+- [Visual C++ kodu ile çalışma](working-with-visual-cpp-code.md)
 - [Tür tanımları](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
-

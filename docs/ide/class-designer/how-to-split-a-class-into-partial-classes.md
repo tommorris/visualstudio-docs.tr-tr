@@ -11,15 +11,18 @@ ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0aa5b844b3743ab80c11971caa26340effe671
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: da7a14d781f4af79d6d1d68141c3d5de1c08d304
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Nasıl yapılır: bir sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda kısmi sınıflar bir sınıf bölün
 
 Kullanabileceğiniz `partial` anahtar sözcüğü (`Partial` Visual Basic'te) bir sınıf veya yapı birkaç bildirimler arasında bildirimi bölmek için. İstediğiniz sayıda kısmi bildirimleri kullanabilirsiniz.
 
@@ -36,30 +39,11 @@ Aşağıdaki örnekler sınıfının tanımını bölme `Employee` iki bildiriml
 > [!NOTE]
 > Visual Basic, Visual Studio ayırmak için kısmi sınıf tanımları kullanır — kullanıcı tarafından yazılan koddan oluşturulan kodda. Kod ayrık kaynak dosyalarıyla ayrılır. Örneğin, **Windows Form Tasarımcısı** denetimleri için kısmi sınıflar gibi tanımlar `Form`. Bu denetimler oluşturulan kodda değiştirmemeniz gerekir.
 
-
 Visual Basic'te kısmi türler hakkında daha fazla bilgi için bkz: [kısmi](/dotnet/visual-basic/language-reference/modifiers/partial).
 
-## <a name="visual-basic-example"></a>Visual Basic örnek
+## <a name="example"></a>Örnek
 
-Visual Basic'te bir sınıf tanımı bölmek için kullanın `Partial` aşağıdaki örnekte gösterildiği gibi anahtar.
-
-```vb
-' First part of class definition.
-Partial Public Class Employee
-    Public Sub CalculateWorkHours()
-    End Sub
-End Class
-
-' Second part of class definition.
-Partial Public Class Employee
-    Public Sub CalculateTaxes()
-    End Sub
-End Class
-```
-
-## <a name="c-example"></a>C# örnek
-
-Bir sınıf tanımı C# bölmek için kullanın `partial` aşağıdaki örnekte gösterildiği gibi anahtar.
+Bir sınıf tanımı bölmek için kullanın `partial` anahtar sözcüğü (`Partial` Visual Basic'te), aşağıdaki örnekte gösterildiği gibi:
 
 ```csharp
 // First part of class definition.
@@ -79,9 +63,23 @@ public partial class Employee
 }
 ```
 
+```vb
+' First part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateWorkHours()
+    End Sub
+End Class
+
+' Second part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateTaxes()
+    End Sub
+End Class
+```
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Parçalı Sınıflar ve Yöntemler](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
-- [partial (Tür)](/dotnet/csharp/language-reference/keywords/partial-type)
+- [Kısmi sınıflar ve yöntemler](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
+- [partial (tür) (C# Başvurusu)](/dotnet/csharp/language-reference/keywords/partial-type)
 - [partial (yöntem) (C# Başvurusu)](/dotnet/csharp/language-reference/keywords/partial-method)
-- [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)
+- [Kısmi (Visual Basic)](/dotnet/visual-basic/language-reference/modifiers/partial)

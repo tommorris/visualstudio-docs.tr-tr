@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: fc8e657f6fb67884bd12de3f8e65c78077fa9b2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Visual Studio 2017 Azure'da IIS'de ASP.NET çekirdeğinde uzaktan hata ayıklama
 
@@ -83,18 +83,19 @@ Hızlı bir şekilde Visual Studio'dan yayımlamak ve IIS tamamen sağlanan bir 
 
 Bir Azure VM için Windows Server oluşturabilir ve ardından yükleyin ve IIS ve diğer gerekli yazılımı bileşenleri yapılandırabilirsiniz. Bu, bir Azure App Service'e dağıtma değerinden daha uzun sürer ve bu öğreticinin geri kalan adımları izleyin gerektirir.
 
-İlk olarak, açıklanan tüm adımları [yükleme ve çalıştırma IIS](/azure/virtual-machines/virtual-machines-windows-hero-role).
+İlk olarak, açıklanan tüm adımları [yükleme ve çalıştırma IIS](/azure/virtual-machines/windows/quick-create-portal).
 
 Ayrıca ağ güvenlik Grubu'na 80 numaralı bağlantı noktasını açtığınızda, bağlantı noktası 4022 için uzaktan hata ayıklayıcı açın. Böylece, daha sonra açmak zorunda kalmazsınız.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Windows Server'da tarayıcı güvenlik ayarlarını güncelleştirme
 
-Tarayıcı güvenlik ayarlarınızı bağlı olarak, bu öğreticide anlatılan yazılım kolayca indirebilirsiniz şekilde tarayıcınıza aşağıdaki Güvenilen siteler eklemek için zamandan tasarruf. Bu sitelere erişimi gerekebilir:
+Tarayıcınızın güvenlik ayarlarını bağlı olarak, bu, daha hızlı bir şekilde Bu öğreticide anlatılan yazılım indirebilmesi için tarayıcınızı aşağıdaki Güvenilen siteler eklemek için zamandan tasarruf. Bu sitelere erişimi gerekebilir:
 
 - Microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- IIS.NET
 
 Internet Explorer kullanıyorsanız, Güvenilen siteler giderek ekleyebileceğiniz **Internet Seçenekleri > Güvenlik > Güvenilen siteler > siteleri**. Bu adımlar, tarayıcılar için farklıdır. (Uzaktan hata ayıklayıcı daha eski bir sürümü my.visualstudio.com karşıdan yüklemeniz gerekiyorsa, bazı ek Güvenilen siteler oturum açmak için gereklidir.)
 

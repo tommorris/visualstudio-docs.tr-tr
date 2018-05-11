@@ -1,7 +1,7 @@
 ---
 title: Yerel bir klasöre - Visual Studio dağıtma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/22/2017
+ms.date: 05/08/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 024d191628e413f07cd510595eac5c7d9fca085b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3b54a8fa30ef5eafcc5ebce5c81cc7b80be6fb6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Bir web uygulaması veya .NET Core uygulama Visual Studio yayımlama aracını kullanarak yerel bir klasöre dağıtma
 
@@ -24,11 +24,17 @@ Kullanabileceğiniz **Yayımla** yerel bir klasöre uygulamanızı yayımlamak i
 
 ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için şu adımları uygulayın. Node.js için adımları desteklenmektedir, ancak kullanıcı arabirimi farklıdır.
 
+## <a name="prerequisites"></a>Önkoşullar
+
+* Visual Studio 2017 yüklü olması gerekir ve **.NET Framework** ve **.NET Core** yüklü geliştirme iş yükü.
+
+    Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
+
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma 
 
 1. Visual Studio'da, **Dosya > Yeni proje**.
 
-1. Altında **Visual C#** veya **Visual Basic**, seçin **.NET Core**ve ardından Orta bölmede **konsol uygulaması (.NET Core)**.
+1. Altında **Visual C#** veya **Visual Basic**, seçin **.NET Core**ve ardından, Orta bölmede **konsol uygulaması (.NET Core)**.
 
 1. Gibi bir ad yazın **MyLocalApp** tıklatıp **Tamam**.
 
@@ -40,7 +46,9 @@ ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için ş
 
     ![Seçin yayımlama](../deployment/media/quickstart-publish.png "seçin yayımlama")
 
-1. İçinde **Yayımla** bölmesinde seçin **klasörü**.
+1. Tüm yayımlama profillerini daha önce yapılandırdıysanız **Yayımla** bölmesinde görünür. Tıklatın **yeni profil oluşturmak**.
+
+1. İçinde **yayımlama hedefi çekme** iletişim kutusunda, seçin **klasörü**.
 
     ![Klasörü seçin](../deployment/media/quickstart-publish-folder.png "klasörü seçin")
 

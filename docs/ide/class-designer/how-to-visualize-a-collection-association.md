@@ -17,13 +17,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472eef35c781c027c39b99326e097db7ca249c29
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24dc8b21fbdacb5da2795b215cd8503b08cf3449
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-visualize-a-collection-association-class-designer"></a>Nasıl yapılır: Koleksiyon ilişkilendirmesini (Sınıf Tasarımcısı) Görselleştirme
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda koleksiyon ilişkilendirmesini Görselleştirme
 
 Özellikler ve diğer türleri koleksiyonlarıdır alanları sınıf diyagramında koleksiyon ilişkilendirmesini görüntülenebilir. Bir alan veya özellik bağlama alanın türüne sahip olan sınıfı bir satırı olarak görüntüler, bir normal ilişkisi koleksiyon ilişkilendirmesini bağlama toplanan türüne sahip olan sınıfı bir satır olarak görüntülenir.
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  Sınıfı, alan veya özellik sağ tıklatın ve seçin **Göster koleksiyon ilişkilendirmesini**.
 
-     Özellik veya alan toplanan türü bağlama ilişkilendirme çizgisi olarak gösterilir.
+Özellik veya alan toplanan türü bağlama ilişkilendirme çizgisi olarak gösterilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc5180d770575ae92c65b4124d928da5a518799
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>Nasıl yapılır: Varolan türleri (Sınıf Tasarımcısı) görüntüleme
+# <a name="how-to-view-existing-types-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda varolan türleri görüntüleme
 
 Mevcut bir türle ve üyelerini görmek için bir sınıf diyagramı şeklini ekleyin.
 
@@ -36,13 +36,13 @@ Sınıf diyagramları yeni türlerinde tasarlamak için bkz: [nasıl yapılır: 
 
 2.  Projesi ile **Çözüm Gezgini**, kaynak kodu dosyasının sınıf diyagramına sürükleyin.
 
-    > [!WARNING]
+    > [!NOTE]
     > Çözümünüzün birden çok uygulama arasında kod paylaşan proje varsa, bir sınıf diyagramı dosyaları veya kod yalnızca bu kaynaklardan sürükleyebilirsiniz:
     >
-    > -   Diyagramı içeren uygulama projesi
-    > -   Uygulama projesi tarafından alınan paylaşılan bir proje
-    > -   Başvurulan bir proje
-    > -   Bir derleme
+    > - Diyagramı içeren uygulama projesi
+    > - Uygulama projesi tarafından alınan paylaşılan bir proje
+    > - Başvurulan bir proje
+    > - Bir derleme
 
     Kaynak kodu dosyasında tanımlı türleri temsil eden şekiller, diyagram üzerinde dosyayı sürüklediğiniz konumda görünür.
 
@@ -60,9 +60,7 @@ Bir türü diyagram üzerinde ilk kez görüntülediğinizde, bu türe ait şeki
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Sınıf diyagramında proje içeriğini görüntülemek için
 
-- İçinde **Çözüm Gezgini** veya **sınıf görünümü**, projeye sağ tıklayın ve seçin **Görünüm**, ardından **görünüm sınıfı diyagramı**.
-
-     Otomatik olarak doldurulan bir Sınıf Diyagramı oluşturulur.
+İçinde **Çözüm Gezgini** veya **sınıf görünümü**, projeye sağ tıklayın ve seçin **Görünüm**, ardından **görünüm sınıfı diyagramı**. Otomatik olarak doldurulan bir Sınıf Diyagramı oluşturulur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

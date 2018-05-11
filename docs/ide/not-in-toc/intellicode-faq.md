@@ -7,11 +7,11 @@ ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: a077aae7104d1e8b96fdebffd70355a05daa19f4
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: bc58c1581ec074c7fe4c23db6d75485b6158e180
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # Visual Studio IntelliCode SSS
 
@@ -40,6 +40,13 @@ Geliştiricilerin [Deneysel uzantısını indirin](https://go.microsoft.com/fwli
 
 IntelliCode ile bir geliştirici üyeleri basit alfabetik listesi sunma yerine kullanmak için en olası API düzeltmek tamamlanma listesi önerir. Geliştiricinin geçerli kod bağlamını kullanır ve desenler 2000 yüksek kaliteli üzerinde bağlı olarak, açık kaynaklı projeleri Github'da her dinamik bu listeyi sağlamak için 100'den yıldız ile. Sonuçları olasılıkla ve en uygun API çağrıları tahmin bir model oluşturur.
 
+## S: IntelliCode tamamlama önerileri ne kadar iyi misiniz?
+
+Biz IntelliCode'nın önerileri dahili Microsoft'taki süre için kullanmakta olduğunuz ve öneriler yararlı inanıyoruz. Sonuç olarak, yine de kanıtı nasıl kullanışlı bu önerileri için kodu olarak olduğunuz olacaktır. Biz Visual Studio vermenizi memnuniyet duyarız [IntelliCode uzantısı](https://go.microsoft.com/fwlink/?linkid=872707) deneyin. Bize nasıl sizin için çalıştığı bilmeniz ve bize Geri bildiriminizi gönderin. Biz de bizim önerileri çekme tabanlı modelimizi eğiteceğiz ve model geliştikçe uzantısı güncelleştirme yapacaksınız.
+
+> [!NOTE]
+> Kullanıcı tanımlı kodunuzu hiçbiri toplanır. Soru bakın [gizlilik](#privacy).
+
 ## Q. IntelliCode geleceği nedir?
 
 Biz çok çeşitli yolları AI ve diğer gelişmiş teknikler kullanılarak Geliştirici üretkenliği artırmak için araştırırken. Yapı 2018 biz burada düşünüyoruz AI geliştiricilere yardımcı olmak ancak vardır çok fazla sayıda senaryolardan bazıları erken bir görünümünü gösterdi daha fazla! Biz gösterilen, bunu oturum Haberler ve güncelleştirmeleri için deneme geliştiricilerden öğrenme ilginizi ki [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
@@ -56,7 +63,7 @@ IntelliCode'nın AI destekli IntelliSense şu anda, ilk deneysel önizlemede de�
 
 Bir C# kod temeli üzerinde Visual Studio 2017 içinde derleme 2018 adresindeki deneyimi gösterildi. Ancak, IntelliCode daha fazla diller ve araçları Visual Studio ailesindeki gelecekte genişletmeye umuyoruz.
 
-## S: ne hakkında gizlilik? Buluta kodumu gönderiyor? Hangi müşteri verilerini Microsoft'a gönderilir?
+## <a name="privacy"/> S: ne hakkında gizlilik? Buluta kodumu gönderiyor? Hangi müşteri verilerini Microsoft'a gönderilir?
 
 Geliştiriciler Visual Studio IntelliCode Deneysel Önizleme uzantı olarak bugün deneyimi için davet. Uzantı amacı, geliştiricilerin IntelliCode'nin özelliklerini sınamak ve ürün ekibine geribildirim sağlamak için etkinleştirmektir.
 

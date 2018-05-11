@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017 yüklemek için komut satırı parametreleri kullanın
 
@@ -60,7 +60,7 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 | `--installPath <dir>` | Yükleme dizini için görev örneği. Yükleme için bu komuttur **isteğe bağlı** ve örnek yükleneceği. Diğer komutlar için budur **gerekli** ve önceden yüklenmiş örneği yüklendiği. |
 | `--addProductLang <language-locale>` | **İsteğe bağlı**: bir yükleme sırasında veya değiştirme işlemi, bu ürünü yüklü UI dil paketlerini belirler. Birden çok dil paketlerini eklemek için komut satırında birden çok kez yer alabilir. Yoksa, yükleme makine yerel ayar kullanır. Daha fazla bilgi için bkz: [dil yerel ayarları listesi](#list-of-language-locales) bu sayfadaki bölümü.|
 | `--removeProductLang <language-locale>` | **İsteğe bağlı**: bir yükleme sırasında veya değiştirme işlemi, bu ürün kaldırılacak UI dil paketlerini belirler. Birden çok dil paketlerini eklemek için komut satırında birden çok kez yer alabilir. Daha fazla bilgi için bkz: [dil yerel ayarları listesi](#list-of-language-locales) bu sayfadaki bölümü.|
-| `--add <one or more workload or component IDs>` | **İsteğe bağlı**: bir veya daha fazla iş yükü ya da bileşen kimlikleri ekleyin. Yapı gerekli bileşenlerini, önerilen veya isteğe bağlı bileşenlerini değil yüklenir. Genel olarak kullanarak ek bileşenleri denetleyebilirsiniz `--includeRecommended` ve/veya `--includeOptional`. Geçirmiş denetimi için ekleyebilirsiniz `;includeRecommended` veya `;includeOptional` kimliği (örneğin, `--add Workload1;includeRecommended` veya `--add Workload2;includeRecommended;includeOptional`). Daha fazla bilgi için bizim [iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası. Bu seçenek gerektiği gibi yineleyebilirsiniz.|
+| `--add <one or more workload or component IDs>` | **İsteğe bağlı**: bir veya daha fazla iş yükü ya da bileşen kimlikleri ekleyin. Yapı gerekli bileşenlerini, önerilen veya isteğe bağlı bileşenlerini değil yüklenir. Genel olarak kullanarak ek bileşenleri denetleyebilirsiniz `--includeRecommended` ve/veya `--includeOptional`. Geçirmiş denetimi için ekleyebilirsiniz `;includeRecommended` veya `;includeOptional` kimliği (örneğin, `--add Workload1;includeRecommended` veya `--add Workload2;includeRecommended;includeOptional`). Daha fazla bilgi için bkz: [iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası. Bu seçenek gerektiği gibi yineleyebilirsiniz.|
 | `--remove <one or more workload or component IDs>` | **İsteğe bağlı**: bir veya daha fazla iş yükü veya kaldırmak için Bileşen kimlikleri. Daha fazla bilgi için bizim [iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası. Bu seçenek gerektiği gibi yineleyebilirsiniz.|
 | `--in <path>` | **İsteğe bağlı**: URI veya bir yanıt dosyasının yolu.  |
 | `--all` | **İsteğe bağlı**: tüm iş yükleri ve bir ürün için bileşenleri yüklemeyi. |
@@ -80,12 +80,12 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 | ----------------------- | --------------- |
 | `--layout <dir>` | Önbellek yükleme çevrimdışı oluşturmak için bir dizini belirtir. Daha fazla bilgi için bkz: [Visual Studio ağ tabanlı yüklemesini oluşturma](create-a-network-installation-of-visual-studio.md).|
 | `--lang <one or more language-locales>` | **İsteğe bağlı**: ile kullanılan `--layout` hazırlamak için bir çevrimdışı yükleme önbellek belirtilen güncelleştirmelerin ile kaynak paketleriyle. Daha fazla bilgi için bkz: [dil yerel ayarları listesi](#list-of-language-locales) bu sayfadaki bölümü.|
-| `--add <one or more workload or component IDs>` | **İsteğe bağlı**: bir veya daha fazla iş yükü ya da bileşen kimlikleri ekleyin. Yapı gerekli bileşenlerini, önerilen veya isteğe bağlı bileşenlerini değil yüklenir. Genel olarak kullanarak ek bileşenleri denetleyebilirsiniz `--includeRecommended` ve/veya `--includeOptional`. Geçirmiş denetimi için ekleyebilirsiniz `;includeRecommended` veya `;includeOptional` kimliği (örneğin, `--add Workload1;includeRecommended` veya `--add Workload2;includeOptional`). Daha fazla bilgi için bizim [iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası. <br/>**Not**: varsa `--add` olan kullanıldığında, yalnızca belirtilen iş yükleri ve bileşenleri ve bunların bağımlılıklarını karşıdan yüklenir. Varsa `--add` belirtilmezse, tüm iş yükleri ve bileşenleri düzene indirilir.|
+| `--add <one or more workload or component IDs>` | **İsteğe bağlı**: bir veya daha fazla iş yükü ya da bileşen kimlikleri ekleyin. Yapı gerekli bileşenlerini, önerilen veya isteğe bağlı bileşenlerini değil yüklenir. Genel olarak kullanarak ek bileşenleri denetleyebilirsiniz `--includeRecommended` ve/veya `--includeOptional`. Geçirmiş denetimi için ekleyebilirsiniz `;includeRecommended` veya `;includeOptional` kimliği (örneğin, `--add Workload1;includeRecommended` veya `--add Workload2;includeOptional`). Daha fazla bilgi için bkz: [iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası. <br/>**Not**: varsa `--add` olan kullanıldığında, yalnızca belirtilen iş yükleri ve bileşenleri ve bunların bağımlılıklarını karşıdan yüklenir. Varsa `--add` belirtilmezse, tüm iş yükleri ve bileşenleri düzene indirilir.|
 | `--includeRecommended` | **İsteğe bağlı**: yüklü olan tüm iş yükleri için önerilen bileşenleri, ancak isteğe bağlı bileşenlerini içerir. İş yükleri belirtilen biriyle `--allWorkloads` veya `--add`. |
 | `--includeOptional` | **İsteğe bağlı**: önerilen içeren *ve* düzende tüm iş yükleri için isteğe bağlı bileşenler. İş yükleri ile belirtilen `--add`.  |
 | `--keepLayoutVersion` | **15.3, isteğe bağlı olarak yeni**: düzeni sürümünü güncelleştirmeden düzene değişiklikleri uygulayın. |
-| `--verify` | **15.3, isteğe bağlı olarak yeni**: bir düzen içeriğini doğrulayın.  Eksik veya bozuk dosyalar listelenir. |
-| `--fix` | **15.3, isteğe bağlı olarak yeni**: bir düzen içeriğini doğrulayın.  Herhangi bir dosya bozuk veya eksik olması bulunursa, yeniden yüklenen.  Bir düzen düzeltmek için Internet erişimi gerekir. |
+| `--verify` | **15.3, isteğe bağlı olarak yeni**: bir düzen içeriğini doğrulayın. Eksik veya bozuk dosyalar listelenir. |
+| `--fix` | **15.3, isteğe bağlı olarak yeni**: bir düzen içeriğini doğrulayın.  Herhangi bir dosya bozuk veya eksik olması bulunursa, redownloaded. Bir düzen düzeltmek için Internet erişimi gerekir. |
 | `--clean <one or more paths to catalogs>` | **15.3, isteğe bağlı olarak yeni**: yeni bir sürüme güncelleştirilip güncelleştirilmediğini düzeninden bileşenleri eski sürümlerini kaldırır. |
 
 | **Gelişmiş yükleme seçenekleri** | **Açıklama** |
@@ -103,7 +103,7 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 | `--noWeb` | **15.3, isteğe bağlı olarak yeni**: Kurulum şimdi Internet'ten yükleme herhangi bir içerik indirir.  Yüklenmekte olan tüm içeriği çevrimdışı bir düzende kullanılabilir olması gerekir.  Düzen içeriği eksik kurulum başarısız olur.  Daha fazla bilgi için bkz: [bir ağ yüklemesinden dağıtma](create-a-network-installation-of-visual-studio.md). |
 | `--path <name>=<path>` | **15.7, isteğe bağlı olarak yeni**: yükleme için özel yükleme yolları belirtmek için kullanılır. Yol adları paylaşılan, önbellek ve yükleme desteklenmiyor. |
 | `--path cache=<path>` | **15.7, isteğe bağlı olarak yeni**: yükleme dosyalarını indirmek için belirttiğiniz konuma kullanır. Bu konum yalnızca Visual Studio yüklenmiş ilk defa ayarlayabilirsiniz. Örnek: `--path cache="C:\VS\cache"` |
-| `--path shared=<path>` | **15.7, isteğe bağlı olarak yeni**: yan yana Visual Studio yüklemeleri için paylaşılan dosyaları içerir. Diğerlerinin bu ayarı geçersiz ve başka bir sürücüye yükleme sırasında bu diskte bir konum için bazı araç ve SDK yükleyin. Örnek: `--path shared="C:\VS\shared"` |
+| `--path shared=<path>` | **15.7, isteğe bağlı olarak yeni**: yan yana Visual Studio yüklemeleri için paylaşılan dosyaları içerir. Diğerlerinin bu ayarı geçersiz ve başka bir sürücüye yükleme sırasında bu diskte bir konum için bazı araç ve SDK yükleyin. Örnek: `--path shared="C:\VS\shared"` <br><br>Önemli: Bu yalnızca bir kez ve Visual Studio yüklenmiş ilk kez ayarlanabilir. |
 | `--path install=<path>` | **15.7, isteğe bağlı olarak yeni**: eşdeğer `–-installPath`. Özellikle, `--installPath "C:\VS"` ve `--path install="C:\VS"` eşdeğerdir. Bunlar yalnızca biri aynı anda kullanılabilir. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>İş yükü kimlikleri ve bileşen listesi
@@ -114,20 +114,20 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 
 | **Dil yerel ayar** | **Dil** |
 | ----------------------- | --------------- |
-| cs-CZ | Çekçe |
-| de-DE | Almanca |
-| en-US | İngilizce |
-| es-ES | İspanyolca |
-| fr-FR | Fransızca |
-| it-IT | İtalyanca |
-| ja-JP | Japonca |
-| ko-KR | Kore Dili |
-| pl-PL | Lehçe |
-| pt-BR | Portekizce - Brezilya |
-| ru-RU | Rusça |
-| tr-TR | Türkçe |
-| zh-CN | Çince - Basitleştirilmiş |
-| zh-TW | Geleneksel Çince- |
+| Cs-cz | Çekçe |
+| De-de | Almanca |
+| en-us | İngilizce |
+| ES-es | İspanyolca |
+| FR-fr | Fransızca |
+| İt-IT | İtalyanca |
+| Ja-jp | Japonca |
+| Ko-kr | Kore Dili |
+| PL-pl | Lehçe |
+| PT-br | Portekizce - Brezilya |
+| RU-ru | Rusça |
+| Tr-tr | Türkçe |
+| Zh-cn | Çince - Basitleştirilmiş |
+| Zh-tw | Geleneksel Çince- |
 
 ## <a name="error-codes"></a>Hata kodları
 

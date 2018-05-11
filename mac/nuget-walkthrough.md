@@ -1,15 +1,15 @@
 ---
-title: İzlenecek yol - NuGet paketini projenize dahil
+title: NuGet paketini projenize dahil
 description: Bu belge, bir Xamarin projesinde bir NuGet paketi ekleme kapsar. Bulma ve bir paket indirilirken, yanı sıra aracılığıyla IDE tümleştirme özelliklerine giriş anlatılmaktadır.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 05762df8b06a69647c6c7a628db54ac499248374
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: f251080351f1e448d250798c4f9a758114a6e5ab
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>NuGet paketini projenize dahil
 
@@ -26,8 +26,6 @@ NuGet paket işlevselliğini göstermek için biz öncelikle yeni bir uygulama o
 İlk olarak, adlandırılmış bir proje oluşturun `HelloNuget` aşağıda gösterildiği gibi. Bu örnek iOS tek görünüm uygulaması şablonu gösterir, ancak herhangi bir desteklenen proje türü çalışır:
 
 ![Yeni iOS projesi oluşturma](media/nuget-walkthrough-NewProject.png)
-
-<a name="Adding_a_Package" class="injected"></a>
 
 ## <a name="adding-a-package"></a>Bir paketi ekleme
 
@@ -50,9 +48,9 @@ Belirli bir paket örneğin bulmak için arama kutusunu sağ üst köşedeki kul
 
 Paketi İndirildikten sonra projenize eklenir. Çözüm aşağıdaki gibi değişir:
 
-*   **Başvuruları** düğümü NuGet paketinin parçası olan tüm derlemelerin bir listesini içerir.
-*   **Paketleri** düğümü yüklediğiniz her NuGet paketi görüntüler. Güncelleştirmek veya bir paket bu listeden kaldırın.
-*   A **packages.config** dosyası projeye eklenir. Bu XML dosyası tarafından IDE izlemek için hangi paketi sürümleri bu projede başvurulan kullanılır. Bu dosyayı el ile düzenleyebilirsiniz olmamalıdır, ancak sürüm denetimindeki tutmanız gerekir. Project.json dosyası yerine packages.config dosyasında kullanılabileceğini unutmayın. Geçişli geri yükleme destekleyen NuGet 3 ile sunulan yeni bir paket dosyası biçimi project.json dosyasıdır. Project.json hakkında daha ayrıntılı bilgi bulunabilir [NuGet belgelerine](http://docs.microsoft.com/NuGet/Schema/Project-Json). Project.json dosyasına el ile eklenmesi gerekir ve projeyi kapalı ve Mac için project.json dosyasına Visual Studio'da kullanılmadan önce yeniden açıldı
+* **Başvuruları** düğümü NuGet paketinin parçası olan tüm derlemelerin bir listesini içerir.
+* **Paketleri** düğümü yüklediğiniz her NuGet paketi görüntüler. Güncelleştirmek veya bir paket bu listeden kaldırın.
+* A **packages.config** dosyası projeye eklenir. Bu XML dosyası tarafından IDE izlemek için hangi paketi sürümleri bu projede başvurulan kullanılır. Bu dosyayı el ile düzenleyebilirsiniz olmamalıdır, ancak sürüm denetimindeki tutmanız gerekir. Project.json dosyası yerine packages.config dosyasında kullanılabileceğini unutmayın. Geçişli geri yükleme destekleyen NuGet 3 ile sunulan yeni bir paket dosyası biçimi project.json dosyasıdır. Project.json hakkında daha ayrıntılı bilgi bulunabilir [NuGet belgelerine](http://docs.microsoft.com/NuGet/Schema/Project-Json). Project.json dosyasına el ile eklenmesi gerekir ve projeyi kapalı ve Mac için project.json dosyasına Visual Studio'da kullanılmadan önce yeniden açıldı
 
 ## <a name="using-nuget-packages"></a>NuGet paketlerini kullanma
 
@@ -60,8 +58,9 @@ Tüm proje başvurusuyla gibi NuGet paketi eklendi ve proje başvuruları günce
 
 Gerekli eklemeyi `using` yönergelerini dosyanızın en üstüne:
 
-
-    using Newtownsoft.json;
+```csharp
+using Newtownsoft.json;
+```
 
 Çoğu NuGet Nuget kaynağı Benioku ya da proje sayfa bağlantısı gibi ek bilgileri sağlayın. Bu bağlantı normalde paket blurb paketleri Ekle sayfasında bulabilirsiniz:
 

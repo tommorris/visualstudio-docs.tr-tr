@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 129f1453b32052fb50a049f413d05bf562e6d4b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ed2a6112d59e5d433201a417d8d85fd6683b36d
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-customize-class-diagrams-class-designer"></a>Nasıl yapılır: sınıf diyagramlarını (Sınıf Tasarımcısı) özelleştirme
+# <a name="how-to-customize-class-diagrams"></a>Nasıl yapılır: sınıf diyagramlarını özelleştirme
 
 Sınıf diyagramlarının bilgileri görüntüleme biçimini değiştirebilirsiniz. Tüm diyagramı veya tasarım yüzeyinde tek tek türleri özelleştirebilirsiniz.
 
@@ -34,9 +34,9 @@ Sınıf diyagramlarının bilgileri görüntüleme biçimini değiştirebilirsin
 
 ## <a name="zoom-in-and-out-of-the-class-diagram"></a>Sınıf diyagramını yakınlaştırma ve uzaklaştırma
 
-1.  Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
+1. Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
 
-2.  Üzerinde **Sınıf Tasarımcısı** araç tıklatın **Yakınlaştır** veya **Uzaklaştır** Tasarımcı yüzeyine yakınlaştırma düzeyini değiştirmek için düğmesi.
+2. Üzerinde **Sınıf Tasarımcısı** araç tıklatın **Yakınlaştır** veya **Uzaklaştır** Tasarımcı yüzeyine yakınlaştırma düzeyini değiştirmek için düğmesi.
 
      veya
 
@@ -47,82 +47,82 @@ Sınıf diyagramlarının bilgileri görüntüleme biçimini değiştirebilirsin
 
 ## <a name="customize-grouping-and-sorting-of-type-members"></a>Tür üyelerinin gruplandırmasını ve sıralamasını özelleştirme
 
-1.  Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
+1. Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
 
-2.  Tasarım yüzeyine boş bir alana sağ tıklayın ve fareyle **Grup üyeleri**.
+2. Tasarım yüzeyine boş bir alana sağ tıklayın ve fareyle **Grup üyeleri**.
 
-3.  Kullanılabilir seçeneklerden birini belirtin:
+3. Kullanılabilir seçeneklerden birini belirtin:
 
-    1.  **Grup türü tarafından** tek tek tür üyeleri özellikleri, yöntemleri, olayları ve alanları gruplandırılmış liste halinde ayırır. Tek tek gruplar varlıklar tanımına göre değişir: Örneğin, bir sınıf için henüz hiç tanımlı olay yoksa, bu sınıf olaylar grubunu görüntülemez.
+    - **Grup türü tarafından** tek tek tür üyeleri özellikleri, yöntemleri, olayları ve alanları gruplandırılmış liste halinde ayırır. Tek tek gruplar varlıklar tanımına göre değişir: Örneğin, bir sınıf için henüz hiç tanımlı olay yoksa, bu sınıf olaylar grubunu görüntülemez.
 
-    2.  **Erişim grupla** tek tek tür üyeleri gruplandırılmış listesine göre üyenin üzerinde ayırır erişim değiştiricileri. Örneğin, Genel ve Özel.
+    - **Erişim grupla** tek tek tür üyeleri gruplandırılmış listesine göre üyenin üzerinde ayırır erişim değiştiricileri. Örneğin, Genel ve Özel.
 
-    3.  **Alfabetik olarak sıralamak** öğeleri, bir varlığın tek alfabetik listesi olarak oluşturan gösterir. Liste artan düzende sıralanır.
+    - **Alfabetik olarak sıralamak** öğeleri, bir varlığın tek alfabetik listesi olarak oluşturan gösterir. Liste artan düzende sıralanır.
 
 ## <a name="hide-compartments-on-a-type"></a>Türe göre bölmeleri gizleme
 
-1.  Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
+1. Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
 
-2.  Özelleştirmek istediğiniz türündeki üye kategori sağ tıklayın (örneğin, seçin **yöntemleri** bir sınıf düğümünde.
+2. Özelleştirmek istediğiniz türündeki üye kategori sağ tıklayın (örneğin, seçin **yöntemleri** bir sınıf düğümünde.
 
-3.  Tıklatın **Gizle bölme**.
+3. Tıklatın **Gizle bölme**.
 
      Seçili bölme tür kapsayıcısından kaybolur.
 
 ## <a name="hide-individual-members-on-a-type"></a>Türe göre tek tek üyeleri gizleme
 
-1.  Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
+1. Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
 
-2.  Gizlemek istediğiniz türde üyeye sağ tıklayın.
+2. Gizlemek istediğiniz türde üyeye sağ tıklayın.
 
-3.  Tıklatın **Gizle**.
+3. Tıklatın **Gizle**.
 
      Seçili üye tür kapsayıcısından kaybolur.
 
 ## <a name="show-hidden-compartments-and-members-on-a-type"></a>Türe göre gizli bölmeleri ve üyeleri gösterme
 
-1.  Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
+1. Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
 
-2.  Gizli bölmeyi içeren türün adına sağ tıklayın.
+2. Gizli bölmeyi içeren türün adına sağ tıklayın.
 
-3.  Tıklatın **tüm üyeleri Göster**.
+3. Tıklatın **tüm üyeleri Göster**.
 
      Tüm gizli bölmeler ve üyeler tür kapsayıcısında görünür.
 
 ## <a name="hide-relationships"></a>İlişkileri gizleme
 
-1.  Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
+1. Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
 
-2.  Gizlemek istediğiniz ilişkilendirme veya devralma çizgisine sağ tıklayın.
+2. Gizlemek istediğiniz ilişkilendirme veya devralma çizgisine sağ tıklayın.
 
-3.  Tıklatın **Gizle** ilişkilendirme satırları ve tıklatın **devralma satırı gizlemek** devralma satırlar için.
+3. Tıklatın **Gizle** ilişkilendirme satırları ve tıklatın **devralma satırı gizlemek** devralma satırlar için.
 
-4.  Tıklatın **tüm üyeleri Göster**.
+4. Tıklatın **tüm üyeleri Göster**.
 
      Tüm gizli bölmeler ve üyeler tür kapsayıcısında görünür.
 
 ## <a name="show-hidden-relationships"></a>Gizli ilişkileri gösterme
 
-1.  Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
+1. Açın ve bir sınıf diyagramı dosyasında seçin **Sınıf Tasarımcısı**.
 
-2.  Gizli ilişkilendirmeyi veya devralmayı içeren türün adına sağ tıklayın.
+2. Gizli ilişkilendirmeyi veya devralmayı içeren türün adına sağ tıklayın.
 
  Tıklatın **tüm üyeleri Göster** ilişkilendirme satırları ve tıklatın **Göster temel sınıf** veya **türetilmiş sınıfları Göster** devralma satırlar için.
 
 ## <a name="remove-a-shape-from-a-class-diagram"></a>Sınıf diyagramından şekil kaldırma
 Türün temelini oluşturan koda etkisi olmaksızın, bir tür şeklini sınıf diyagramından kaldırabilirsiniz. Tür şekillerinin bir sınıf diyagramından kaldırılması yalnızca o diyagramı etkiler: Türü tanımlayan temel kod ve türü görüntüleyen diğer diyagramlar bundan etkilenmez.
 
-1.  Sınıf diyagramında, diyagramdan kaldırmak istediğiniz tür şeklini seçin.
+1. Sınıf diyagramında, diyagramdan kaldırmak istediğiniz tür şeklini seçin.
 
-2.  Üzerinde **Düzenle** menüsünde seçin **diyagramdan Kaldır**.
+2. Üzerinde **Düzenle** menüsünde seçin **diyagramdan Kaldır**.
 
      Tür şekli ve varsa bu şekle bağlı ilişkilendirme ya da devralma çizgileri bundan böyle diyagramda görünmez.
 
 ## <a name="delete-a-type-shape-and-its-underlying-code"></a>Bir tür şeklini ve temelini oluşturan kodu silme
 
-1.  Tasarım yüzeyinde şekle sağ tıklayın.
+1. Tasarım yüzeyinde şekle sağ tıklayın.
 
-2.  Seçin **Sil kod** ve bağlam menüsünden.
+2. Seçin **Sil kod** ve bağlam menüsünden.
 
      Şekil diyagramdan kaldırılır ve temelini oluşturan kod projeden silinir.
 

@@ -14,17 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe5f6e5e285ef6d5551ac94a9eb7b0b8df132b7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c18fa28d52115d2666e2098a56a78658bebdc8f
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Nasıl yapılır: sınıf diyagramlarını görüntü (Sınıf Tasarımcısı) dışarı aktarma
+# <a name="how-to-export-class-diagrams-as-images"></a>Nasıl yapılır: sınıf diyagramlarını görüntü olarak dışarı aktarma
 
 Bir proje koddan oluşturulan bir sınıf diyagramı dışarı aktarmak için bir resim olarak Diyagramı kaydedin. UML sınıf diyagramları yerine dışarı aktarmak istiyorsanız, bkz: [diyagramlarını görüntü dışarı aktarma](../../modeling/export-diagrams-as-images.md).
 
-1.  Sınıf diyagramı (.cd) dosyanızı açın.
+## <a name="export-a-diagram"></a>Bir diyagram dışarı aktarma
+
+1.  Sınıf diyagramı açın (*.cd*) dosyası.
 
 2.  Gelen **sınıf diyagramı** menüsünden veya diyagramı yüzey kısayol menüsünden seçin **görüntü olarak dışarı aktarma diyagramı**.
 
@@ -34,9 +36,9 @@ Bir proje koddan oluşturulan bir sınıf diyagramı dışarı aktarmak için bi
 
 5.  Seçin **verme** dışarı bitirmek için.
 
-     Diğer belgelerden bağlantılı dışarı aktarılan görüntüleri otomatik olarak güncelleştirmek için Visual Studio şemada yeniden dışarı aktarın.
+Diğer belgelerden bağlantılı dışarı aktarılan görüntüleri otomatik olarak güncelleştirmek için Visual Studio şemada yeniden dışarı aktarın.
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Nasıl yapılır: sınıf diyagramlarını yazdırma](how-to-print-class-diagrams.md)
 - [Sınıf Diyagramları ile Çalışma](working-with-class-diagrams.md)

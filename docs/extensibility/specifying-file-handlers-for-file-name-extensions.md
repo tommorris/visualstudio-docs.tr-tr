@@ -49,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |.Extension|ProductName. extension.versionMajor.versionMinor|  
   
- Belirli dosya uzantısı sürümlü ProgID değeri olarak HKEY_CLASSES_ROOT ekleyerek açabilmelisiniz farklı uygulamaları kaydedebilir\\*\<uzantısı >*\OpenWithProgids anahtarı. Bu kayıt defteri anahtarı dosya uzantısı ile ilişkili diğer ProgID listesini içerir. Listelenen ProgID ile ilişkili uygulamaları görünür **birlikte Aç *** ürün adı* alt. İkisi de aynı uygulama belirtilirse `OpenWithList` ve `OpenWithProgids` anahtarları, işletim sistemi çoğaltmaların birleştirir.  
+ Belirli dosya uzantısı sürümlü ProgID değeri olarak HKEY_CLASSES_ROOT ekleyerek açabilmelisiniz farklı uygulamaları kaydedebilir\\*\<uzantısı >* \OpenWithProgids anahtarı. Bu kayıt defteri anahtarı dosya uzantısı ile ilişkili diğer ProgID listesini içerir. Listelenen ProgID ile ilişkili uygulamaları görünür **birlikte Aç *** ürün adı* alt. İkisi de aynı uygulama belirtilirse `OpenWithList` ve `OpenWithProgids` anahtarları, işletim sistemi çoğaltmaların birleştirir.  
   
 > [!NOTE]
 >  `OpenWithProgids` Anahtarı yalnızca Windows XP'de desteklenir. Bu anahtar diğer işletim sistemlerinin yoksay çünkü dosya işleyicileri için yalnızca kayıt olarak kullanmayın. Windows XP'de daha iyi bir kullanıcı deneyimi sağlamak için bu anahtarı kullanın.  

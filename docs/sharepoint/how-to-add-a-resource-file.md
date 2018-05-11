@@ -40,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  İçinde **kaynak ekleme** iletişim kutusunda, İngilizce (ABD) gibi kaynak dosyası için bir kültür seçin.  
   
-     Bu adım, çözümünüzün biçimde, kaynak genel kaynak dosyası ekler * x***.*** kültür ***.** resx gibi Resource1.en US.resx.  
+     Bu adım, çözümünüzün biçimde, kaynak genel kaynak dosyası ekler * x ***.*** kültür ***.** resx gibi Resource1.en US.resx.  
   
 5.  Zaman **Kaynak Düzenleyici** açılır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], kaynak kaynak dosyasına ekleyin.  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  İçinde **Çözüm Gezgini**, bir özelliği adı için kısayol menüsünü açın **özellikleri** düğümünü ve ardından **özelliği kaynak ekleme**.  
   
-     Bu adım, biçiminde özellik kaynak dosyası ekler * ResourceFileName***.*** kültür ***.** resx gibi Feature1.en US.resx.  
+     Bu adım, biçiminde özellik kaynak dosyası ekler * ResourceFileName ***.*** kültür ***.** resx gibi Feature1.en US.resx.  
   
 3.  Zaman **Kaynak Düzenleyici** açılır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], kaynak kaynak dosyasına ekleyin.  
   

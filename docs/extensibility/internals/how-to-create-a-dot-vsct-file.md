@@ -63,7 +63,7 @@ Varolan komut tablo .ctc kaynak dosyadan bir XML tabanlı .vsct dosyası oluştu
   
 1.  Perl dil bir kopyasını edinin.  
   
-2.  Genellikle bulunan Perl komut dosyasını ConvertCTCToVSCT.pl, bir kopyasını edinin  *\<Visual Studio SDK yükleme yolu >*\VisualStudioIntegration\Tools\bin klasör.  
+2.  Genellikle bulunan Perl komut dosyasını ConvertCTCToVSCT.pl, bir kopyasını edinin  *\<Visual Studio SDK yükleme yolu >* \VisualStudioIntegration\Tools\bin klasör.  
   
 3.  Dönüştürmek istediğiniz .ctc kaynak dosyasının bir kopyasını edinin.  
   
@@ -98,7 +98,7 @@ Varolan bir ikili .cto dosyasından bir XML tabanlı .vsct dosyası oluşturabil
   
 3.  Visual Studio komut isteminde .cto ve .ctsym dosyalarını içeren dizine gidin.  
   
-4.  Tür **vsct.exe** *ctofilename *** .cto** * vsctfilename***.vsct -S***symfilename ***.ctsym**.  
+4.  Tür **vsct.exe** *ctofilename *** .cto** * vsctfilename ***.vsct -S***symfilename ***.ctsym**.  
   
      `ctofilename` .cto dosyasının adıdır `vsctfilename` oluşturmak istediğiniz vsct dosyasının adıdır ve `symfilename` .ctsym dosyasının adıdır.  
   

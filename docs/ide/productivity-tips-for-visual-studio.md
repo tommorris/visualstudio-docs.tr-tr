@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34206b9c41802063cb1d29fd3bc5f8984a5581ca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio için üretkenlik ipuçları
 
@@ -37,7 +37,7 @@ Kod, aşağıdaki özellikleri kullanarak daha hızlı bir şekilde yazın.
 
      Menü çubuğunda, kod parçacığında eklemek için seçin **Düzenle** > **IntelliSense** > **Ekle parçacığı** veya **Surround With**, veya bir dosyada kısayol menüsünü açın ve seçin **parçacığı** > **Ekle parçacığı** veya **Surround With**. Daha fazla bilgi için bkz: [kod parçacıkları](../ide/code-snippets.md).
 
-- **Kod hataları satır içi düzeltme**. Hızlı Eylemler kolayca düzenleme olanak tanır, oluşturmak veya aksi halde tek bir eylemle kodunu değiştirin. Ampul simgesini kullanarak bu eylemleri uygulanabilir ![küçük ampul simge](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall"), basarak veya **Alt** +  **Girin** veya **Ctrl**+**.** İmleci kod uygun satırında olduğunda. Bkz: [hızlı Eylemler](quick-actions.md) daha fazla bilgi için.
+- **Kod hataları satır içi düzeltme**. Hızlı Eylemler kolayca düzenleme olanak tanır, oluşturmak veya aksi halde tek bir eylemle kodunu değiştirin. Bu eylemler tornavida kullanılarak uygulanabilir ![tornavida simgesi](media/screwdriver-icon.png) veya ampul ![ampul simgesi](media/light-bulb-icon.png) simgeleri basarak veya **Alt** +  **Girin** veya **Ctrl**+**.** İmleci kod uygun satırında olduğunda. Bkz: [hızlı Eylemler](quick-actions.md) daha fazla bilgi için.
 
 - **Gösterme ve code öğesi tanımını Düzenle**. Hızlı bir şekilde göstermek ve üye, değişken veya bir yerel gibi bir kod öğesi tanımlandığı modülü düzenleyin.
 

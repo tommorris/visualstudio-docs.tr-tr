@@ -1,5 +1,5 @@
 ---
-title: Hızlı Eylemler
+title: Hızlı Eylemler, ampuller ve tornavidalar
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 43198f5722de1bd983991df8ff19b17fcaea9e83
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quick-actions"></a>Hızlı Eylemler
 
@@ -29,21 +29,27 @@ Hızlı eylemler için kullanılabilir:
 - bir yeniden düzenleme uygulamak (örneğin, [satır içi geçici bir değişken](../ide/reference/inline-temporary-variable.md))
 - kod oluşturma (örneğin, [yerel bir değişken tanıtmak](../ide/reference/introduce-local-variable.md))
 
-Ampul simgesini kullanarak hızlı Eylemler uygulanabilir ![küçük ampul simge](media/vs2015_lightbulbsmall.png), basarak veya **Ctrl**+**.** imlecinizi bir eylem kullanılabilir kod satırında olduğunda. Bir kırmızı dalgalı ve Visual Studio ise ampul sorunu gidermeye yönelik bir öneri sahip görürsünüz. Örneği için kırmızı dalgalı tarafından belirtilen bir hata varsa, düzeltmeleri bu hata için kullanılabilir durumda olduğunda bir ampul görünür.
+Ampul kullanarak hızlı Eylemler uygulanabilir ![ampul simgesi](media/light-bulb-icon.png) veya tornavida ![tornavida simgesi](media/screwdriver-icon.png) simgeleri basarak veya **Ctrl** + **.** imlecinizi bir eylem kullanılabilir kod satırında olduğunda. Bir hata ampul görürsünüz ![hata ampul simgesi](media/error-light-bulb-icon.png) belirten bir hata bir kırmızı dalgalı yoktur ve Visual Studio olan bir düzeltme bu hata için kullanılabilir.
 
 Herhangi bir dil için üçüncü tarafların özel tanılama ve öneriler, örneğin bir SDK'ın bir parçası olarak sağlayabilir ve bu kurallara göre Visual Studio ampuller hafif.
 
-## <a name="to-see-a-light-bulb"></a>Bir ampul görmek için
+## <a name="icons"></a>Simgeler
 
-1. Çoğu durumda, bir hata içeren satırları şapka taşıdığınızda, fare bir hata noktasında veya düzenleyicinin sol kenar boşluğunda geldiğinizde ampuller kendiliğinden görünür. Kırmızı dalgalı gördüğünüzde, bunun üzerine ampul görüntülenecek gelebilirsiniz. Ayrıca, herhangi bir yere satırda sorunun nerede oluştuğunu gitmek için klavye ve fare kullandığınızda görüntülemek bir ampul neden olabilir.
+Hızlı bir eylem kullanılabilir olduğunda görüntülenen simgesini kullanılabilir düzeltme veya yeniden düzenleme türünün bir gösterge sağlar. *Tornavida* ![tornavida simgesi](media/screwdriver-icon.png) gösterir. Bu simgeyi yalnızca kodunu değiştirmek kullanılabilir eylemler vardır, ancak bunları mutlaka kullanmamalısınız. *Sarı ampul* ![ampul simgesi](media/light-bulb-icon.png) simgesi gösterir kullanılabilir eylemler, *gereken* yapmak kodunuzu geliştirmek için. *Hata ampul* ![hata ampul simgesi](media/error-light-bulb-icon.png) simgesi gösterir, kodunuzda hata düzeltmeleri bir eylem yoktur.
 
-1. Tuşuna **Ctrl**+**.** Ampul çağırma ve olası listesine doğrudan gitmek için bir satır üzerinde herhangi bir yere giderir.
+## <a name="to-see-a-light-bulb-or-screwdriver"></a>Ampul veya tornavida görmek için
+
+- Bir düzeltme varsa, fare bir hata konumda geldiğinizde ampuller kendiliğinden görünür.
 
    ![Ampul fare bekleyerek ile](../ide/media/vs2015_lightbulb_hover.png)
 
+- Hızlı bir eylem kullanılabilir kod satırına şapka taşıdığınızda ampuller ve tornavidalar düzenleyicinin sol kenar boşluğunda görünür.
+
+- Tuşuna **Ctrl**+**.** kullanılabilir hızlı Eylemler ve yapan yeniden düzenlemeler listesini görmek için herhangi bir satıra.
+
 ## <a name="to-see-potential-fixes"></a>Olası düzeltmeleri görmek için
 
-Aşağı oka tıklayın veya **olası düzeltmeleri göster** ampul için uygulayabileceğiniz hızlı eylemlerin bir listesini görüntülemek için bağlantı.
+Her iki yanındaki aşağı oka ampul seçin veya **olası düzeltmeleri göster** kullanılabilir hızlı eylemlerin bir listesini görüntülemek için bağlantı.
 
 ![Genişletilmiş ampul](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

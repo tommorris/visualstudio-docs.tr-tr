@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d84688198ff9d21a03923bf510676c7f620e4d12
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8271d28c21bc26c96c1481a114b2f5a322b148b4
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="waitstart"></a>WaitStart
 WaitStart seçeneği yalnızca profil oluşturucu başlatıldı başlatıldığında ya da belirtilen sayıda saniye geçtikten sonra dönmek VSPerfCmd.exe başlatma alt komutunun neden olur. Varsayılan olarak, başlangıç komut hemen döndürür. Başlangıç alt komut profil oluşturucu başlatılırken olmadan döndürürse, bir hata döndürülür. Saniye sayısını belirtilmezse, başlatma komutunun sonsuza kadar bekler.  
@@ -23,7 +23,7 @@ WaitStart seçeneği yalnızca profil oluşturucu başlatıldı başlatıldığ�
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]  
 ```  
   
@@ -42,7 +42,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]
 ## <a name="example"></a>Örnek  
  Bu toplu iş dosyası örneği başlatma komutunun başlatmak profil oluşturucu 5 saniye bekler.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WaitStart:5  
 if not %errorlevel% 0 goto :error_tag  
 VSPerfCmd.exe /Launch:TestApp.exe  

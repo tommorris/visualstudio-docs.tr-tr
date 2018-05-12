@@ -5,16 +5,16 @@ ms.date: 03/23/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: dantogno
-ms.author: v-davian
+author: TerryGLee
+ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4d7f965cd2a0cd34ea3cb889f25809d32bee2270
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 Unity için Visual Studio Araçları günlük değiştirin.
@@ -84,7 +84,7 @@ Unity için Visual Studio Araçları günlük değiştirin.
 -   **Tümleştirme:**
 
     -   Yalnızca (azaltma ile) dış değişiklik projelerde yeniden yükleyin.
- 
+
 ## <a name="3601"></a>3.6.0.1
  Yayımlanan 2018-01-24
 
@@ -93,9 +93,9 @@ Unity için Visual Studio Araçları günlük değiştirin.
 -   **Tümleştirme:**
 
     -   Mdb hata ayıklama simgesi dönüştürme sabit otomatik pdb.
-    
+
     -   Dizi boyutu değiştirilmeye çalışılırken denetçisi etkileyen EditorPrefs.GetBool sabit dolaylı çağrısı.
- 
+
 ## <a name="3600"></a>3.6.0.0'dan
  Yayımlanan 2018-01-10
 
@@ -112,7 +112,7 @@ Unity için Visual Studio Araçları günlük değiştirin.
 -   **Hata Ayıklayıcı:**
 
     -   Yeni Unity çalışma zamanı DebuggerHidden/DebuggerStepThrough özniteliklerle desteği eklendi.
-    
+
 -   **Sihirbazlar:**
 
     -   'Son' sürümü için sihirbazları tanıtır.
@@ -126,7 +126,7 @@ Unity için Visual Studio Araçları günlük değiştirin.
 -   **Hata Ayıklayıcı:**
 
     -   Kesme olayları işleme içinde bir yarış sabit.
-    
+
 -   **Sihirbazlar:**
 
     -   Yöntem eklemeden önce roslyn bağlamını yenileyin.

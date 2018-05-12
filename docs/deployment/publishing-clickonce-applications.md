@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5f0c04a23844664b5bbfa67a6e83809c250b8a9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c7c6e79f251120b9396d523112c717957817ad5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publishing-clickonce-applications"></a>ClickOnce Uygulamalarını Yayımlama
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ilk kez uygulama yayımlama özellikleri Yayımlama Sihirbazı'nı kullanarak ayarlayabilirsiniz. Yalnızca birkaç özellikleri Sihirbazı'nda bulunur; diğer tüm özellikleri varsayılan değerlerine ayarlanır.  
@@ -95,7 +95,7 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
 |[İzlenecek yol: ClickOnce Dağıtım API'si ile İsteğe Bağlı Derlemeleri İndirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Yalnızca ilk uygulama tarafından kullanıldığında, bunların uygulama derlemeleri karşıdan açıklanmaktadır.|  
 |[İzlenecek yol: ClickOnce Dağıtım API'si ile Uydu Derlemelerini İndirme](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Uydu derlemelerini isteğe bağlı olarak işaretler ve bir istemci makine bilgisayarın geçerli kültür ayarları için ihtiyaç duyduğu derlemeyi yüklemek açıklar.|  
 |[İzlenecek yol: ClickOnce Uygulamasını El ile Dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework yardımcı programlarını ClickOnce uygulamanızı dağıtmak için nasıl kullanılacağını açıklar.|  
-|[İzlenecek yol: Yeniden İmzalama Gerektirmeyen ve Marka Bilgisini Koruyan bir ClickOnce Uygulamasını El ile Dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)|.NET Framework yardımcı programlarını bildirimleri yeniden imzalamadan ClickOnce uygulamanızı dağıtmak için nasıl kullanılacağını açıklar.|  
+|[İzlenecek yol: Yeniden İmzalama Gerektirmeyen ve Marka Bilgisini Koruyan bir ClickOnce Uygulamasını El ile Dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|.NET Framework yardımcı programlarını bildirimleri yeniden imzalamadan ClickOnce uygulamanızı dağıtmak için nasıl kullanılacağını açıklar.|  
 |[Nasıl Yapılır: Projeleri Hedef Platformlar İçin Yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)|Bir 64-bit işlemci için değiştirerek nasıl yayımlayacağınızı açıklar **hedef CPU** veya **Platform hedefi** projenizdeki özelliği.|  
 |[İzlenecek yol: Bir ClickOnce uygulamasını birden çok .NET Framework sürümleri üzerinde çalıştırmak için etkinleştirme](http://msdn.microsoft.com/en-us/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Yüklemek ve NET Framework birden fazla sürümünü çalıştırmak bir ClickOnce uygulamasını etkinleştirecek açıklanmaktadır.|  
 |[İzlenecek Yol: ClickOnce Uygulaması için Özel bir Yükleyici Oluşturma](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Bir ClickOnce uygulamasını yüklemek için özel bir yükleyici oluşturma açıklanmaktadır.|  

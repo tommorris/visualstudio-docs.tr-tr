@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0f0275e7123db9febaeaf05f231053818665df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cbd7e03ef5e8272d3decee9b6f7a344f5f659e67
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
-PROFILE_CURRENTID NameProfile, StartProfile, StopProfile, SuspendProfile ve ResumeProfile işlevleri için bir çağrı iş parçacığı kimliği veya işlem kimliği için sahte belirteci döndürür. Geçerli iş parçacığının veya işlem yerine özellikle belirtilen bir çalışmaya işlevi neden kullanın.  
+PROFILE_CURRENTID sözde belirteci iş parçacığı kimliği veya NameProfile, StartProfile, StopProfile, SuspendProfile ve ResumeProfile işlevleri çağrıda işlem kimliği döndürür. Geçerli iş parçacığının veya işlem yerine özellikle belirtilen bir çalışmaya işlevi neden kullanın.  
   
 ## <a name="example"></a>Örnek  
  PROFILE_CURRENTID VSPerf.h tanımlanır:  
   
-```  
+```cpp  
 static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;  
 ```  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek PROFILE_CURRENTID gösterilmektedir. Bu örnek, geçerli iş parçacığının çağrıda tanımlayan bir parametre olarak PROFILE_CURRENTID kullanır. [StartProfile](../profiling/startprofile.md) işlevi.  
   
-```  
+```cpp  
 void ExerciseProfileCurrentID()  
 {  
     // Declare ProfileOperationResult enumeration   

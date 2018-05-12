@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fcc9f6ec4143a757139a9e013f1a1f4dbe666e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak Azure App Service'e bir uygulama yayımlama Visual Studio'da yayımlama ayarları
 
 Kullanabileceğiniz **Yayımla** aracı almak için uygulamanızı dağıtma ve yayımlama ayarları. Bu makalede, kullandığımız Azure uygulama hizmeti için yayınlama ayarlarını ancak kullanabilirsiniz içe aktarmak için benzer adımları yayımlama ayarlarını [IIS](../deployment/tutorial-import-publish-settings-iis.md). Bir yayımlama ayarları profili dağıtımı için Visual Studio her yüklemesi hizmetini el ile yapılandırma daha hızlı olabilir, bazı senaryolarda kullanın.
 
-Visual Studio'da ASP.NET, ASP.NET Core ve .NET Core uygulamaları için aşağıdaki adımları uygulayın. Adımları Visual Studio 2017 sürüm 15,6 karşılık gelir.
+Visual Studio'da ASP.NET, ASP.NET Core ve .NET Core uygulamaları için aşağıdaki adımları uygulayın. Ayrıca içeri aktarabilirsiniz için yayınlama ayarlarını [Python](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio) uygulamalar. Adımları Visual Studio 2017 sürüm 15,6 karşılık gelir.
 
 Bu öğreticide şunları yapacaksınız:
 
@@ -30,10 +30,10 @@ Bu öğreticide şunları yapacaksınız:
 > * Yayımlama ayarları dosyasını Visual Studio'ya içeri aktarma
 > * Uygulama Azure App Service'e dağıtma
 
-Yayımlama ayarları dosyası (*.publishsettings) bir yayımlama profili farklı (*.pubxml) Visual Studio'da oluşturuldu. Yayımlama ayarları dosyası Azure App Service tarafından oluşturulur ve ardından Visual Studio'ya aktarılabilir.
+Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili farklı (*\*.pubxml*) Visual Studio'da oluşturuldu. Yayımlama ayarları dosyası Azure App Service tarafından oluşturulur ve ardından Visual Studio'ya aktarılabilir.
 
 > [!NOTE]
-> Yalnızca bir Visual Studio yayımlama profilini kopyalamak gerekiyorsa (\*.pubxml dosyası) bir yüklemesinden Visual Studio diğerine, yayımlama profili bulabilirsiniz  *\<profilename\>.pubxml*, içinde  *\\< projectname\>\Properties\PublishProfiles* yönetilen proje türleri için klasör. Web siteleri için kısmına bakın *\App_Data* klasör. Yayımlama profillerini MSBuild XML dosyalarıdır.
+> Yalnızca bir Visual Studio yayımlama profilini kopyalamak gerekiyorsa (*\*.pubxml* dosyası) bir yüklemesinden Visual Studio diğerine, yayımlama profili bulabilirsiniz  *\<profilename\>.pubxml*,  *\\< projectname\>\Properties\PublishProfiles* yönetilen proje türleri için klasör. Web siteleri için kısmına bakın *\App_Data* klasör. Yayımlama profillerini MSBuild XML dosyalarıdır.
 
 ## <a name="prerequisites"></a>Önkoşullar
 

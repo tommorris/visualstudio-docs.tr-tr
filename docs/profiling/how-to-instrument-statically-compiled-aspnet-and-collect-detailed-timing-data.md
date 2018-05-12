@@ -11,10 +11,10 @@ manager: douge
 ms.workload:
 - aspnet
 ms.openlocfilehash: d72dd60f5857d66b4ef632e215d7d57d4593eaca
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Nasıl yapılır: Profil Oluşturucu ile Komut Satırını Kullanarak Statik Olarak Derlenmiş bir ASP.NET Web Uygulamasını İzleme ve Ayrıntılı Zamanlama Verileri Toplama
 Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları komut satırı araçları bir önceden derlenmiş işaretlemesini [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web bileşeni veya Web sitesi ve ayrıntılı zamanlama verileri toplama.  

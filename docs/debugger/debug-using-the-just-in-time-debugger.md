@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6abdd96f740d36b4f6806b16e6cdd9ba946cb95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 17dc34cd030bf2eab430872a191424fb657d6cd0
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual Studio'da Just-In-Time hata ayıklayıcısı ile hata ayıklama
 Bir özel durum ya da kilitlenme dış Visual Studio çalıştıran bir uygulamada oluştuğunda tam zamanı hata ayıklama Visual Studio otomatik olarak başlatır. Bu, Visual Studio çalışmadığı zaman uygulamanızı test etmek ve bir sorun ortaya çıktığında Visual Studio ile hata ayıklama başlamak sağlar.
@@ -178,4 +178,4 @@ static void Main(string[] args)
  [Hata ayıklama güvenliği](../debugger/debugger-security.md)   
  [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)   
  [Yalnızca hata ayıklama, zaman içinde Seçenekler iletişim kutusu](../debugger/just-in-time-debugging-options-dialog-box.md)   
- [Güvenlik Uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+ [Güvenlik Uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

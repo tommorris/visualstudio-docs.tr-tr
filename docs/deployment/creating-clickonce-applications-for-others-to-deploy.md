@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f7cf3b6069c80337213283eddd12bdd54e4b7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cd6808ac38a67146e53438e5b8f6dc0e07fd0bc5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Başkalarının Dağıtması için ClickOnce Uygulamaları Oluşturma
 Uygulamaları dağıtmak ClickOnce Dağıtımları oluşturmakta olduğunuz tüm geliştiriciler planlayın. Bunların çoğu, yalnızca ClickOnce kullanarak kendi uygulama paketini ve ardından dosyaları kapalı büyük bir kuruluşa gibi bir müşteriye el. Müşteri, bir alt ağı üzerinde uygulamayı barındırmak için sorumlu olur. Bu konuda bazı sürümlerinde .NET Framework sürüm 3.5 önce bu tür dağıtımlarda devralınmış sorunları ele alınmıştır. Ardından, .NET Framework 3. 5'yeni "bildirimi güven için kullan" özelliğini kullanarak tarafından sağlanan yeni bir çözüm açıklanır. Son olarak, .NET Framework'ün daha eski sürümleri hala kullanan müşteriler için ClickOnce dağıtımları oluşturmak için önerilen stratejileri ile sonlanır.  
@@ -57,7 +57,7 @@ Uygulamaları dağıtmak ClickOnce Dağıtımları oluşturmakta olduğunuz tüm
   
  Kendinden imzalı bir sertifika için dağıtım bildirimini kullanarak birkaç avantaj sunar. Müşterinin elde etmek veya kendi Authenticode sertifikası oluşturma gereksinimini tarafından `<useManifestForTrust>` geliştiricinin uygulama üzerinde kendi marka kimliğini korumasına izin verirken, müşteri dağıtımı basitleştirir. Sonuç daha güvenli ve benzersiz uygulama kimliklerine sahip imzalanmış dağıtımlar kümesidir. Bu, aynı uygulamanın birden fazla müşteriye dağıtma oluşabilecek olası çakışmaları ortadan kaldırır.  
   
- ClickOnce dağıtımı ile oluşturma hakkında adım adım bilgiler için `<useManifestForTrust>` etkin, [izlenecek yol: ClickOnce uygulaması bu mu değil gerektiren Re-Signing'el ile dağıtma ve bu korur markalama bilgileri](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ ClickOnce dağıtımı ile oluşturma hakkında adım adım bilgiler için `<useManifestForTrust>` etkin, [izlenecek yol: ClickOnce uygulaması bu mu değil gerektiren Re-Signing'el ile dağıtma ve bu korur markalama bilgileri](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Çalışma zamanında güven Works için nasıl uygulama bildirimi  
  Çalışma zamanında uygulama bildirimi için güven kullanarak nasıl çalıştığını daha iyi anlamak için aşağıdaki örneği göz önünde bulundurun. .NET Framework 3.5 hedefleyen bir ClickOnce uygulaması, Microsoft tarafından oluşturulur. Uygulama bildirimini kullanır `<useManifestForTrust>` öğesi ve Microsoft tarafından imzalanır. Adventure Works, kendinden imzalı bir sertifika kullanarak dağıtım bildirimi imzalar. Adventure Works istemciler Microsoft tarafından imzalanmış herhangi bir uygulamaya güvenmesi için yapılandırılır.  
@@ -99,6 +99,6 @@ Uygulamaları dağıtmak ClickOnce Dağıtımları oluşturmakta olduğunuz tüm
  Bu yöntemin dezavantajı .NET Framework SDK Araçları yüklemek ve bir geliştirici veya bunları kullanmayı becerikli olan sistem yöneticisi müşteri gerektirmesidir. Bazı müşteriler kendi bölümü çok az kayıpla veya hiç teknik çaba gerektiren bir çözüm talep edebilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Test etmek için ClickOnce uygulamaları dağıtma ve üretim sunucuları teslim etmeden](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
+ [Test etmek için ClickOnce uygulamaları dağıtma ve üretim sunucuları teslim etmeden](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)   
  [İzlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [İzlenecek yol: Yeniden İmzalama Gerektirmeyen ve Marka Bilgisini Koruyan bir ClickOnce Uygulamasını El ile Dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+ [İzlenecek yol: Yeniden İmzalama Gerektirmeyen ve Marka Bilgisini Koruyan bir ClickOnce Uygulamasını El ile Dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

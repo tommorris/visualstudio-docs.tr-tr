@@ -11,10 +11,10 @@ manager: douge
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3743c763f48a8faaafc83d6034bf16bc2fc80a1f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Nasıl yapılır: Bağımsız bir .NET Framework Bileşenini İzleme ve Komut Satırını Kullanarak Profil Oluşturucu ile Bellek Verileri Toplama
 Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir .exe veya .dll dosyası gibi tek başına bir uygulama, .NET Framework bileşenini izleme için profil oluşturma araçları komut satırı araçları dosya ve Profil Oluşturucu kullanarak bellek bilgiler toplayabilir.  

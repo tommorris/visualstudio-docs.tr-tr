@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0013b9f7ae004b709a1651af0e32e36dd45f909c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 08025ed5d5e3806e04501c46a96e1df5f85b31fb
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>ClickOnce Güncelleştirme Stratejisini Seçme
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] otomatik uygulama güncelleştirmeleri sağlayabilir. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması düzenli aralıklarla uygulama güncelleştirmeleri kullanılabilir olup olmadığını görmek için dağıtım bildirim dosyasını okur. Kullanılabilir olması durumunda uygulamanın yeni sürümü indirilir ve çalıştırılır. Verimlilik için, sadece değişen dosyalar indirilir.  
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/19/2018
 >  Uygulama güncelleştirmeleri, ağ bağlantısı gerektirir. Ağ bağlantısı mevcut değilse, uygulama güncelleştirme stratejisi ne olursa olsun güncelleştirmeleri denetlemeden çalışacaktır.  
   
 > [!NOTE]
->  .NET Framework 2.0 ve .NET Framework 3.0, herhangi bir uygulamanız güncelleştirmeler için önce veya sonra başlangıç ya da kullanarak denetlediğinde <xref:System.Deployment.Application> API'leri, ayarlamalısınız `deploymentProvider` dağıtım bildiriminde. `deploymentProvider` Öğesi karşılık gelen Visual Studio **güncelleştirme konumunu** alanını **güncelleştirmeleri** iletişim kutusunun **Yayımla** sekmesi. .NET Framework 3.5'te bu kural yumuşatılmıştır. Daha fazla bilgi için bkz: [dağıtma ClickOnce uygulamaları için sınama ve üretim sunucuları Resigning olmadan](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+>  .NET Framework 2.0 ve .NET Framework 3.0, herhangi bir uygulamanız güncelleştirmeler için önce veya sonra başlangıç ya da kullanarak denetlediğinde <xref:System.Deployment.Application> API'leri, ayarlamalısınız `deploymentProvider` dağıtım bildiriminde. `deploymentProvider` Öğesi karşılık gelen Visual Studio **güncelleştirme konumunu** alanını **güncelleştirmeleri** iletişim kutusunun **Yayımla** sekmesi. .NET Framework 3.5'te bu kural yumuşatılmıştır. Daha fazla bilgi için bkz: [dağıtma ClickOnce uygulamaları için sınama ve üretim sunucuları Resigning olmadan](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Uygulama Başlangıcından Sonra Güncelleştirmeleri Denetleme  
  Bu stratejiyi kullanarak, uygulama çalışırken, arka planda dağıtım dosyası bildiriminin yerini belirleyip okumayı deneyecektir. Bir güncelleştirme erişilebilirse, kullanıcının uygulamayı sonraki çalıştırmasında, kullanıcı güncelleştirmeyi indirmek ve kurmak için uyarılacaktır.  

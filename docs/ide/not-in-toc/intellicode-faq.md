@@ -7,11 +7,11 @@ ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: bc58c1581ec074c7fe4c23db6d75485b6158e180
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d351d94a6f7891481e5f04ce9be1d5502603104d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # Visual Studio IntelliCode SSS
 
@@ -59,9 +59,13 @@ Hiçbir duyuru sahibiz şu anda fiyatlandırma ilgili.
 
 IntelliCode'nın AI destekli IntelliSense şu anda, ilk deneysel önizlemede değil. Deneysel uzantısı güncelleştirmeye devam ve ek özellikler gelecekte ekleyeceğiz. Son sürümü için herhangi bir zamanlaması sahip olduğumuz ancak biz en iyi olası deneyimleri sağlayan böylece biz geliştiriciler görüşleri Hoş Geldiniz. Oturum Haberler ve güncelleştirmeleri için [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
 
-## Q. Bu deneyim, yalnızca Visual Studio'da var mı?
+## Q. Bu deneyim, yalnızca Visual Studio ve C# için kullanılabilir?
 
 Bir C# kod temeli üzerinde Visual Studio 2017 içinde derleme 2018 adresindeki deneyimi gösterildi. Ancak, IntelliCode daha fazla diller ve araçları Visual Studio ailesindeki gelecekte genişletmeye umuyoruz.
+
+## Q. Bu deneyim yalnızca İngilizce olarak kullanılabilir mi?
+
+IntelliCode bir önizleme bugün uzantısıdır ve ne kadar faydalı bu özelliklerin geniş kümesi müşteriler için olduğunu anlamak istekli duyuyoruz. IntelliCode Önizleme dışında alırken kesinlikle olarak size hangi yerel ya da ilk ve nasıl paketlenmiştir, desteklemek için dil bildirimlerinizi temel alarak ele alacağız. 
 
 ## <a name="privacy"/> S: ne hakkında gizlilik? Buluta kodumu gönderiyor? Hangi müşteri verilerini Microsoft'a gönderilir?
 

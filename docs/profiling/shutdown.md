@@ -10,28 +10,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a9c79b132dcd3358c697f9b08466af306aeed21
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8c835894d18ca1aea33f26f234a4df914114089c
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="shutdown"></a>Kapat
-**Kapatma** seçeneği bekler bitiş veya ayırmak için işlem şu anda herhangi bir profili ve ardından profil oluşturucu kapatır ve profil oluşturma veri dosyası kapatır. **Kapatma** seçeneği profil çalıştırmak, son komut olması gerekir.  
+**Kapatma** seçeneği bekler bitiş veya ayırmak için işlem şu anda herhangi bir profili ve ardından profil oluşturucu devre dışı bırakır ve profil oluşturma veri dosyası kapatır. **Kapatma** seçeneği profil çalıştırmak, son komut olması gerekir.  
   
- Bir zaman aşımı parametresi belirtilmezse, **kapatma** seçeneği sonsuza kadar bekler. Zaman aşımı parametresi belirtilirse, seçeneği belirtilen sayıda saniye geçtikten sonra Profil Oluşturucu kapatma veya veri dosyası kapatmadan döndürür.  
+ Bir zaman aşımı parametresi belirtilmezse, **kapatma** süresiz olarak seçeneği bekler. Zaman aşımı parametresi belirtilirse, seçenek devre dışı profil oluşturucu kapatma veya veri dosyası kapatmadan belirtilen sayıda saniye geçtikten sonra döndürür.  
   
  **Kapatma** seçeneği, komut satırında belirtilen tek seçenek olmalıdır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cmd  
 VSPerfCmd.exe /Shutdown[:Timeout]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  `Timeout`  
- -   (İsteğe bağlı) Belirtilmişse, seçeneği belirtilen sayıda saniye geçtikten sonra Profil Oluşturucu kapatma veya profil oluşturma veri dosyası kapatmadan döndürür.  
+ -   (İsteğe bağlı) Belirtilmişse, seçenek devre dışı profil oluşturucu kapatma veya profil oluşturma veri dosyası kapatmadan belirtilen sayıda saniye geçtikten sonra döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSPerfCmd](../profiling/vsperfcmd.md)   

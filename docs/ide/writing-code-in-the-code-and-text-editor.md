@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5280dd0bffab2fb7c9797502e9d94e0589800c39
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 854cfe64b446660e1327ffb511ebb577735dbd4b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="features-of-the-code-editor"></a>Kod Düzenleyicisi özellikleri
 
@@ -33,7 +33,7 @@ Farklı Visual Studio dilleri farklı özellik kümesi sunar ve bazı durumlarda
 |||
 |-|-|
 |Sözdizimi renklendirmesi|Kod ve biçimlendirme dosyaların bazı sözdizimi öğeleri, bunları ayırt etmek için farklı renkte görünür. Örneğin, anahtar sözcükler (gibi `using` C# ve `Imports` Visual Basic'te) bir renk ancak türleri (gibi `Console` ve `Uri`) başka bir renk şunlardır. Dize değişmez değerleri ve açıklamaları gibi diğer söz dizimi öğeleri de renklendirilmiştir. C++ renk türleri, numaralandırmalar ve diğer belirteçleri arasında makrolar arasında ayırt etmek için kullanır.<br /><br /> Her tür için varsayılan renk görebilir ve herhangi bir özel sözdizimi öğe rengini değiştirmek [yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), hangi açabileceğiniz **Araçları** menüsü.|
-|Hata ve uyarı işaretleri|Kodu ekleyin ve çözümünüzü gibi (a) farklı renkli dalgalı çizgiler (dalgalı çizgiler da bilinir) veya (b) kodunuzda görünmesini ampuller görebilirsiniz. Sözdizimi hataları kırmızı dalgalı çizgiler belirtmek, mavi derleyici hataları gösterir, uyarıları yeşil gösterir ve başka tür hataları mor gösterir. [Ampuller](../ide/perform-quick-actions-with-light-bulbs.md) sorunlara yönelik düzeltmelerin önermek ve düzeltmeyi uygulamak kolaylaştırır.<br /><br /> Her hata ve uyarı dalgalı varsayılan rengini görebilirsiniz **Araçları** > **seçenekleri** > **ortam**  >   **Yazı tipleri ve renkler** iletişim kutusu. Ara **sözdizimi hatası**, **derleyici hatası**, **uyarı**, ve **diğer hata**.|
+|Hata ve uyarı işaretleri|Kodu ekleyin ve çözümünüzü gibi (a) farklı renkli dalgalı çizgiler (dalgalı çizgiler da bilinir) veya (b) kodunuzda görünmesini ampuller görebilirsiniz. Sözdizimi hataları kırmızı dalgalı çizgiler belirtmek, mavi derleyici hataları gösterir, uyarıları yeşil gösterir ve başka tür hataları mor gösterir. [Hızlı Eylemler](../ide/quick-actions.md) sorunlara yönelik düzeltmelerin önermek ve düzeltmeyi uygulamak kolaylaştırır.<br /><br /> Her hata ve uyarı dalgalı varsayılan rengini görebilirsiniz **Araçları** > **seçenekleri** > **ortam**  >   **Yazı tipleri ve renkler** iletişim kutusu. Ara **sözdizimi hatası**, **derleyici hatası**, **uyarı**, ve **diğer hata**.|
 |Ayraç eşleştirme|Ekleme noktasını, açık bir kod dosyası ayraç yerleştirildiğinde, onu ve kapanış ayracı vurgulanır. Bu özellik eksik veya yanlış yerleştirilmiş köşeli parantez anında geri bildirim sağlar. Açmak veya kapatmak ile eşleşen ayraç kapatabilirsiniz **otomatik sınırlayıcı vurgulama** ayarı (**Araçları** > **seçenekleri**  >   **Metin düzenleyici**). Vurgu rengi değiştirebilirsiniz **yazı tiplerini ve renkleri** ayarı (**Araçları** > **seçenekleri** > **ortam**). Ara **ayracı (Vurgu) eşleşen** veya **ayracı (dikdörtgen) eşleşen**.|
 |Yapı Görselleştirici|Noktalı çizgiler eşleşen ayraç kod dosyaları açma ve kapama parantezi çiftleri görmeyi kolaylaştırır bağlayın. Bu kodda bulmanıza yardımcı olabilir, daha hızlı codebase. Bu satırları açmak veya kapatmak ile kapatabilirsiniz **Göster yapısı yönergeleri** içinde **görüntü** bölümünü **Araçları** > **seçenekleri**  >  **Metin düzenleyici** > **genel** sayfası.|
 |Satır numaraları|Satır numaraları kod penceresinin sol kenar boşluğunda görüntülenebilir. Varsayılan olarak görüntülenmez. Bu seçenek de açabilirsiniz **tüm diller metin düzenleyici** ayarları (**Araçları** > **seçenekleri** > **Metin Düzenleyicisi**  >  **Tüm diller**). Bu diller için ayarlarını değiştirerek tek tek programlama dilleri için satır numaralarını görüntüleyebilirsiniz (**Araçları** > **seçenekleri** > **metin düzenleyicisi**   >   **\<dil >**). Satır numaraları yazdırmak, seçmelisiniz **satır numaralarını dahil** içinde **yazdırma** iletişim kutusu.|

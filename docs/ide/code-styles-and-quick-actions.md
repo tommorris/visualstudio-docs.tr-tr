@@ -12,25 +12,27 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 45039ddc9d00fa32e236a69bfb3afffe70ea2368
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6dd046fa8a01cde7abdc33484da3ff8227eda966
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="code-style-preferences"></a>Kod stili tercihleri
 
-Kod stili Tercihler ayarlanabilir, C# ve Visual Basic projeleri için açarak **seçenekleri** iletişim kutusundan **Araçları** menüsü. Seçin **metin düzenleyici** > **C#** veya **temel** > **kod stili**  >   **Genel**. Bu pencerede seçenekleri yerel makineye geçerlidir. Listedeki her bir öğe seçildiğinde, tercih önizlemesini aşağıda gösterildiği gibi gösterilir.
+Kod stili Tercihler ayarlanabilir, C# ve Visual Basic projeleri için açarak **seçenekleri** iletişim kutusundan **Araçları** menüsü. Seçin **metin düzenleyici** > **C#** veya **temel** > **kod stili**  >   **Genel**. Bu pencerede seçenekleri yerel makineye geçerlidir.
+
+Listedeki her bir öğe seçildiğinde tercih önizlemesini gösterir:
 
 ![Kod stili seçenekleri](media/code-style-quick-actions-dialog.png)
 
 ## <a name="preference-and-severity"></a>Tercih ve önem derecesi
 
-Her öğe için ayarladığınız **tercih** ve **önem** değerlerini her satırda açılır listeleri kullanarak. Önem derecesi ayarlanabilir **hiçbiri**, **öneri**, **uyarı**, veya **hata**. Etkinleştirmek istiyorsanız, [hızlı Eylemler](../ide/quick-actions.md) emin olmak için bir kod stili, **önem** ayar için bir şeyler dışında **hiçbiri**. Hızlı Eylemler ampul simgesini ![küçük ampul simge](media/vs2015_lightbulbsmall.png) görünmez tercih edilmeyen bir stili kullanılır ve otomatik olarak tercih edilen stili için kodu yeniden yazmanız için bir seçenek hızlı Eylemler listesinde seçebilirsiniz.
+Her öğe için ayarladığınız **tercih** ve **önem** değerlerini aşağı açılan listeler her satırda kullanarak. Önem derecesi ayarlanabilir **hiçbiri**, **öneri**, **uyarı**, veya **hata**. Etkinleştirmek istiyorsanız, [hızlı Eylemler](../ide/quick-actions.md) emin olmak için bir kod stili, **önem** ayar için bir şeyler dışında **hiçbiri**. Hızlı Eylemler ampul simgesini ![küçük ampul simge](media/vs2015_lightbulbsmall.png) apspear tercih edilmeyen bir stili kullanıldığında ve otomatik olarak tercih edilen stili için kodu yeniden yazmanız için bir seçenek hızlı Eylemler listesinde seçebilirsiniz.
 
-## <a name="editorconfig"></a>EditorConfig
+## <a name="editorconfig-files"></a>EditorConfig dosyaları
 
-.NET ile de yönetilebilir için stil ayarlarını kod bir [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) dosya. Bu durumda, EditorConfig dosyasındaki ayarları seçili seçenekler önceliklidir **seçenekleri** iletişim kutusu. Bir EditorConfig dosyası zorlamak ve tüm bağlantıların ya da proje kodlama stili yapılandırmak için kullanabilirsiniz.
+.NET ile de yönetilebilir için stil ayarlarını kod bir [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) dosya. EditorConfig dosyasındaki ayarları önceliklidir seçili Seçenekler **seçenekleri** iletişim kutusu. Bir EditorConfig dosyası zorlamak ve tüm bağlantıların ya da proje kodlama stili yapılandırmak için kullanabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

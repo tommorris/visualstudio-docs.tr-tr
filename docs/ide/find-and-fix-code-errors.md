@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa3d2412bfeabcaa3a66be7470367fcaaf0bfbc
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="make-code-work-in-visual-studio"></a>Visual Studio'da iş kodu olun
 
@@ -91,17 +91,15 @@ Tüm yeni veya güncelleştirilmiş uyarılar görüntülenir **hata listesi** I
 
 ## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Kodu yeniden düzenleyin veya için ampuller kullanın
 
-[Ampuller](../ide/quick-actions.md) görece olarak daha yeni bir özellik sağlayan Visual Studio için yeniden düzenlemeniz olan kodu satır içi. Sık kullanılan uyarılar düzeltmek için kolay bir yol oldukları hızlı ve etkili şekilde C#, C++ ve Visual Basic kodu. Bunları erişmek için bir uyarı dalgalı sağ tıklatın ve seçin **hızlı Eylemler**, veya basın **Ctrl**+**.** imlecinizi renkli dalgalı içeren satırda olduğunda. Olası düzeltmeler veya bu kod satırına uygulayabilirsiniz yapan yeniden düzenlemeler listesini görürsünüz.
+[Hızlı Eylemler](../ide/quick-actions.md), ampul veya tornavida simgesi kullanılabilir let kodu satır içi yeniden düzenleyin. Sık kullanılan uyarılar düzeltmek için kolay bir yol oldukları hızlı ve etkili şekilde C#, C++ ve Visual Basic kodu. Bunları erişmek için bir uyarı dalgalı sağ tıklatın ve seçin **hızlı Eylemler ve yapan yeniden düzenlemeler**. Veya imlecinizi renkli dalgalı satırıyla açık olduğunda, basın **Ctrl**+**.** Ampul veya veya tornavida simgesi kenar boşluğunda seçin. Olası düzeltmeler veya bu kod satırına uygulayabilirsiniz yapan yeniden düzenlemeler listesini görürsünüz.
 
 ![Visual Studio ampul Önizleme](../ide/media/quick-actions-options.png)
 
-Ampuller, düzenleme, düzeltmek veya kodunuzu iyileştirmek için bir fırsat kodu çözümleyiciler belirlemek her yerde kullanılabilir. Herhangi bir kod satırında, bağlam menüsünü açmak için sağ tıklayıp **hızlı Eylemler** (veya yeniden, verimliliği tercih ederseniz, basın **Ctrl**+**.**). Yeniden düzenleme veya geliştirme seçenekleri varsa, bunlar görüntülenir. Aksi takdirde, ileti **hiçbir hızlı seçenekleri kullanılabilir burada** IDE sol alt köşesinde görüntülenir.
+Hızlı Eylemler, düzenleme, düzeltmek veya kodunuzu iyileştirmek için bir fırsat kodu çözümleyiciler belirlemek her yerde kullanılabilir. Herhangi bir kod satırında, bağlam menüsünü açmak için sağ tıklayıp **hızlı Eylemler ve yapan yeniden düzenlemeler**. Yeniden düzenleme veya geliştirme seçenekleri varsa, bunlar görüntülenir. Aksi takdirde, ileti **hiçbir hızlı Eylemler kullanılabilir burada** IDE sol alt köşesinde görüntülenir.
 
-![Visual Studio alanı ampul 'seçeneği' metni](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
+![Hızlı Eylemler kullanılabilir metin yok](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Deneyim, hızlı bir şekilde ok tuşlarını kullanabilirsiniz ve **Ctrl**+**.** fırsatları yeniden düzenleme hızlı seçeneklerini denetleme ve kodunuzu Temizleme için!
-
-Ampuller hakkında daha fazla bilgi için okuma [hızlı Eylemler](../ide/quick-actions.md).
+Deneyim, hızlı bir şekilde ok tuşlarını kullanabilirsiniz ve **Ctrl**+**.** Denetlenecek kodunuzu kolay fırsatları yeniden düzenleme ve temiz yukarı!
 
 ## <a name="debug-your-running-code"></a>Çalışan kodda hata ayıklama
 

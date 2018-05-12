@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 70de979f1af431b85bc9fb2f07feec93486624ee
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="common-quick-actions"></a>Genel Hızlı eylemleri
 
@@ -24,9 +24,13 @@ Bu konudaki bölümlerden bazı yaygın listesinde **hızlı Eylemler** hem C# v
 
 ## <a name="actions-that-fix-errors"></a>Hataları düzeltin Eylemler
 
+Bu bölümdeki hızlı Eylemler derlemeyi başarısız olmasına neden olabilecek kodda hataları düzeltin. Hızlı Eylemler kod satırında bir hatayı düzeltmek kullanılabilir hale geldiğinde simgesi kenar boşluğunda görüntülenir veya altında kırmızı dalgalı ampul bulunan kırmızı bir 'x' olduğu.
+
+![Hızlı Eylemler hata simgesi ve menüsü](media/error-light-bulb-with-code.png)
+
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Doğru yazılmış simge veya anahtar sözcüğü
 
-Bir tür ya da anahtar sözcük Visual Studio yanlışlıkla yazıyorsanız, hızlı Bu eylem otomatik olarak onu sizin için düzeltebilirsiniz. Bu öğeleri ampul menüde görürsünüz **"değişiklik '*yanlış yazılmış word*'to'*düzeltmek word*'**.  Örneğin:
+Bir tür ya da anahtar sözcük Visual Studio yanlışlıkla yazıyorsanız, hızlı Bu eylem otomatik olarak onu sizin için düzeltir. Bu öğeleri ampul menüde görürsünüz **"değişiklik '*yanlış yazılmış word*'to'*düzeltmek word*'**.  Örneğin:
 
 ```csharp
 // Before
@@ -94,44 +98,6 @@ private void MyMethod()
 |  Hata Kimliği | Geçerli diller |  Desteklenen sürüm |
 | ------- | -------------------- | ----------------  |
 | CS8300, BC37284  | C# ve Visual Basic | Visual Studio 2017 sürüm 15.3 |
-
-### <a name="make-method-synchronous"></a>Zaman uyumlu hale yöntemi
-
-Kullanırken `async` veya `Async` olmasından anahtar sözcüğü bir yöntemi, bu yöntem içinde herhangi bir yerde beklenen `await` veya `Await` anahtar sözcüğü de kullanılır.  Bu durum böyle değilse, ancak, hızlı bir eylem, görünür yöntemi zaman uyumlu kaldırarak olmanızı sağlayacak `async` veya `Async` anahtar sözcüğü ve dönüş türü değiştirme. Kullanım **yöntemi zaman uyumlu hale getirin** hızlı Eylemler menüsünden seçeneği.
-
-```csharp
-// Before
-async Task<int> MyAsyncMethod()
-{
-    return 3;
-}
-
-// Make method synchronous
-
-// After
-int MyAsyncMethod()
-{
-    return 3;
-}
-```
-
-```vb
-' Before
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return 3
-End Function
-
-' Make method synchronous
-
-' After
-Function MyAsyncMethod() As Integer
-    Return 3
-End Function
-```
-
-|  Hata Kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
-| CS1998, BC42356 | C# ve Visual Basic | Visual Studio 2015 Güncelleştirme 2 |
 
 ### <a name="make-method-asynchronous"></a>Zaman uyumsuz hale yöntemi
 
@@ -953,6 +919,44 @@ Console.WriteLine($"{x} {y}");
 | Tanılama kimliği | Geçerli diller | Desteklenen sürüm |
 | ------- | -------------------- | ----------------  |
 | IDE0042 | C# ' TA 7.0 + | Visual Studio 2017 v. 15.5 |
+
+### <a name="make-method-synchronous"></a>Zaman uyumlu hale yöntemi
+
+Kullanırken `async` veya `Async` olmasından anahtar sözcüğü bir yöntemi, bu yöntem içinde herhangi bir yerde beklenen `await` veya `Await` anahtar sözcüğü de kullanılır.  Bu durum böyle değilse, ancak, hızlı bir eylem, görünür yöntemi zaman uyumlu kaldırarak olmanızı sağlayacak `async` veya `Async` anahtar sözcüğü ve dönüş türü değiştirme. Kullanım **yöntemi zaman uyumlu hale getirin** hızlı Eylemler menüsünden seçeneği.
+
+```csharp
+// Before
+async Task<int> MyAsyncMethod()
+{
+    return 3;
+}
+
+// Make method synchronous
+
+// After
+int MyAsyncMethod()
+{
+    return 3;
+}
+```
+
+```vb
+' Before
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return 3
+End Function
+
+' Make method synchronous
+
+' After
+Function MyAsyncMethod() As Integer
+    Return 3
+End Function
+```
+
+|  Hata Kimliği | Geçerli diller |  Desteklenen sürüm |
+| ------- | -------------------- | ----------------  |
+| CS1998, BC42356 | C# ve Visual Basic | Visual Studio 2015 Güncelleştirme 2 |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

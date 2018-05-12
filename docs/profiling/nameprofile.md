@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0b717882e943a37857bbdadf3d318f94b4900dc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f7f3b6ddfd52863585e26a1972f00e55515996d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` İşlevi belirtilen işlem veya iş parçacığı bir dize atar.  
@@ -26,7 +26,7 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(  
                                    LPCTSTR pszName,   
                                    PROFILE_CONTROL_LEVEL Level,  
@@ -44,7 +44,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
 -   Bir alanı pszName dize verilerini içerir  
   
--   PszName dize verilerini şu karakterlerden birini içeriyor:,. ' ~! @# $% ^ & * () = [] {}&#124;\\? / <>  
+-   PszName dize verilerini şu karakterlerden birini içeriyor:,. ' ~! @# $% ^ & * () = []{}&#124;\\? / <>  
   
  `Level`  
   
@@ -98,7 +98,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod NameProfile işlev çağrısı gösterir. Örnek Win32 dize makroların kullanılması ve kod çağrıları ANSI işlevi etkin olup olmadığını belirlemek ANSI derleyici ayarları varsayar.  
   
-```  
+```cpp  
 void ExerciseNameProfile()  
 {  
     // Variables used to print output.  

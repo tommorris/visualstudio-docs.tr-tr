@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db8ca68453cff105f2bbefcd384b8afa9efea9d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b023349454f71835e13e7cc891b8be92b90c153f
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak IIS uygulama yayımlama Visual Studio'da yayımlama ayarları
 
@@ -31,7 +31,7 @@ Bu öğreticide şunları yapacaksınız:
 > * Yayımlama ayarları dosyasını Visual Studio'ya içeri aktarma
 > * IIS uygulama dağıtma
 
-Yayımlama ayarları dosyası (\*.publishsettings) bir yayımlama profili farklı (\*.pubxml) Visual Studio'da oluşturuldu. Yayımlama ayarları dosyası IIS veya Azure uygulama hizmeti tarafından oluşturulan veya el ile oluşturulabilir ve ardından Visual Studio'ya aktarılabilir.
+Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili farklı (*\*.pubxml*) Visual Studio'da oluşturuldu. Yayımlama ayarları dosyası IIS veya Azure uygulama hizmeti tarafından oluşturulan veya el ile oluşturulabilir ve ardından Visual Studio'ya aktarılabilir.
 
 > [!NOTE]
 > Yalnızca bir Visual Studio yayımlama profilini kopyalamak gerekiyorsa (\*.pubxml dosyası) bir yüklemesinden Visual Studio diğerine, yayımlama profili bulabilirsiniz  *\<profilename\>.pubxml*, içinde  *\\< projectname\>\Properties\PublishProfiles* yönetilen proje türleri için klasör. Web siteleri için kısmına bakın *\App_Data* klasör. Yayımlama profillerini MSBuild XML dosyalarıdır.
@@ -44,7 +44,7 @@ Yayımlama ayarları dosyası (\*.publishsettings) bir yayımlama profili farkl�
 
     Bu makaledeki adımlarda Visual Studio 2017 üzerinde temel alır
 
-* IIS yayımlama ayarları dosyası oluşturmak için doğru yapılandırılmış IIS 8.0 Web sunucusu rolü ve her iki ASP.NET 4.5 ile Windows Server 2012 çalıştıran başka bir bilgisayara veya ASP.NET Core yüklü olmalıdır. ASP.NET Core için bkz: [IIS yayımlama](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* IIS yayımlama ayarları dosyası oluşturmak için doğru yapılandırılmış IIS 8.0 Web sunucusu rolü Windows Server 2012 çalıştıran bir bilgisayar ve ASP.NET 4.5 veya ASP.NET Core yüklenmiş olmalıdır. ASP.NET Core için bkz: [IIS yayımlama](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Visual Studio'da yeni bir ASP.NET projesi oluşturma
 

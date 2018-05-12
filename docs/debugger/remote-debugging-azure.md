@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c95a91ecd057bfec7af5e9b932d4326cdcab9270
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Visual Studio 2017 Azure'da IIS'de ASP.NET çekirdeğinde uzaktan hata ayıklama
 
@@ -110,11 +110,17 @@ Yazılım yüklediğinizde, çeşitli web sitesi komut dosyaları ve kaynakları
 
 3. Sistemi yeniden başlatın (veya yürütme **net stop edildi /y** arkasından **net start w3svc** sistem yolu değişiklik seçmek için bir komut isteminden).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(İsteğe bağlı) Yükleme Web barındırma sunucuları Windows Server için 3.6 dağıtımı
+
+Bazı senaryolarda, daha hızlı olabilir yayımlama ayarlarını İçeri Aktar Visual Studio'da dağıtım seçenekleri el ile yapılandırmak yerine. Almayı tercih ederseniz, yayımlama ayarları yayımlama profili Visual Studio'da yapılandırmak yerine, bkz: [alma yayınlama ayarları ve IIS dağıtmak](../deployment/tutorial-import-publish-settings-iis.md). Aksi takdirde, bu konudaki kalır ve okuma devam edin. Aktarma makaleyi tamamlamak yayınlama ayarları ve uygulama başarıyla dağıtmak sonra bu konuya dönün ve bölümünde başlatmak [uzak araçları indirme](#BKMK_msvsmon).
+
 ### <a name="BKMK_install_webdeploy"></a> (İsteğe bağlı) Windows Server'da 3.6 yükleme Web dağıtımı
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ### <a name="BKMK_deploy_asp_net"></a> Windows Server bilgisayarında ASP.NET Web sitesi yapılandırması
+
+İçeri aktarmakta olduğunuz yayımlama ayarları, bu bölümü atlayabilirsiniz.
 
 1. Açık **Internet Information Services (IIS) Yöneticisi'ni** ve Git **siteleri**.
 

@@ -10,11 +10,11 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a8602915827c442fa2fc4cbddf4db2a25ef21749
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d813226dfa79a65da85a2b17e54306d12a4ed09
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Xamarin Visual Studio kullanarak yerel kullanıcı Arabirimi ile uygulamalar oluşturma
 
@@ -69,7 +69,7 @@ Visual Studio .NET standart bir kitaplık paylaşımı yerel UI uygulamaları ol
 
     Tamam'ı tıklattıktan sonra **WeatherApp** çözüm oluşur adlı tek bir projenin **WeatherApp**. 
 
-2.  Hedef iOS istiyorsanız, bir iOS projesi çözüme ekleyin. Çözüm adı sağ **Çözüm Gezgini** seçip **Ekle** ve **yeni proje**.  İçinde **yeni proje** iletişim kutusunda, sol seçin **Visual C#**ve ardından **iOS** ve **Evrensel**. (Yoksa, olabilir Xamarin yükleyin veya Visual Studio 2017 özelliğini etkinleştirmek için bkz: [Kurulum ve yükleme](../cross-platform/setup-and-install.md).) Şablonları listesinde seçin **Single View uygulaması (iOS)**. Bu ad **WeatherApp.iOS**.
+2.  Hedef iOS istiyorsanız, bir iOS projesi çözüme ekleyin. Çözüm adı sağ **Çözüm Gezgini** seçip **Ekle** ve **yeni proje**.  İçinde **yeni proje** iletişim kutusunda, sol seçin **Visual C#** ve ardından **iOS** ve **Evrensel**. (Yoksa, olabilir Xamarin yükleyin veya Visual Studio 2017 özelliğini etkinleştirmek için bkz: [Kurulum ve yükleme](../cross-platform/setup-and-install.md).) Şablonları listesinde seçin **Single View uygulaması (iOS)**. Bu ad **WeatherApp.iOS**.
 
 3.  Android hedeflemek istiyorsanız, bir Android projesi çözüme ekleyin. İçinde **yeni proje** iletişim kutusunda, sol seçin **Visual C#** ve **Android**. Şablonu listeden seçin **boş uygulama (Android)**. Bu ad **WeatherApp.Android**. 
 
@@ -95,7 +95,7 @@ Visual Studio .NET standart bir kitaplık paylaşımı yerel UI uygulamaları ol
   
     -   **Yükle**'ye tıklatın.  
   
-7.  Yineleme adım bulmak ve yüklemek için 7 **Microsoft.CSharp** .NET standart proje paketinde. C# kullanmak bu kitaplığı gereklidir `dynamic` .NET standart Kitaplığı'nda veri türü.
+7.  Yineleme adım bulmak ve yüklemek için 6 **Microsoft.CSharp** .NET standart proje paketinde. C# kullanmak bu kitaplığı gereklidir `dynamic` .NET standart Kitaplığı'nda veri türü.
   
 8.  Çözümünüzü derlemek ve hiçbir derleme hataları olduğunu doğrulayın.  
   

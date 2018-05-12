@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4aa07333385951ba2ffd2f1bcf86aa5e8442982
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 352feacc59a129d24575408776e9ec075b1294ac
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="events-vsperfcmd"></a>Olaylar (VSPerfCmd)
 VSPerfCmd.exe **olayları** seçeneği olay Windows için izleme (ETW) günlüğe kaydedilmesini denetler. ETW verilerini Profil Oluşturucu veri dosyasından ayrı bir .etl dosyasına kaydedilir. Verileri kullanarak bir rapor görüntülenebilir [VSPerfReport](../profiling/vsperfreport.md) /summary:etw komutu.  
@@ -23,7 +23,7 @@ VSPerfCmd.exe **olayları** seçeneği olay Windows için izleme (ETW) günlüğ
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cmd  
 VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]  
 ```  
   
@@ -79,7 +79,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 > [!NOTE]
 >  CLR ETW olayları etkin olduğunda, ek başlangıç verileri de izleme görünümü raporda toplanır. Raporda görünmesini başlangıç olayları dışlamak için aşağıdaki komutu kullanın:  
   
-```  
+```cmd  
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5  
 ```  
   

@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ade15b950e5fc6ab0dd277a26640a7ecb7825e62
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: fec5b041a6fb0f16c35d0f9f16a8171c5e95224b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Uzaktan hata ayıklama Uzak IIS bilgisayarda ASP.NET
 IIS'ye dağıtılan bir ASP.NET uygulaması hata ayıklamak için yükleme ve uygulamanızı dağıtıldığı bilgisayarda Uzak araçları çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.
@@ -74,11 +74,17 @@ IIS üzerinde ASP.NET yüklemek için daha ayrıntılı bilgi isterseniz bkz [II
 
 2. Sistemi yeniden başlatın (veya yürütme **net stop edildi /y** arkasından **net start w3svc** sistem yolu değişiklik seçmek için bir komut isteminden).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(İsteğe bağlı) Yükleme Web barındırma sunucuları Windows Server için 3.6 dağıtımı
+
+Bazı senaryolarda, daha hızlı olabilir yayımlama ayarlarını İçeri Aktar Visual Studio'da dağıtım seçenekleri el ile yapılandırmak yerine. Almayı tercih ederseniz, yayımlama ayarları yayımlama profili Visual Studio'da yapılandırmak yerine, bkz: [alma yayınlama ayarları ve IIS dağıtmak](../deployment/tutorial-import-publish-settings-iis.md). Aksi takdirde, bu konudaki kalır ve okuma devam edin. Aktarma makaleyi tamamlamak yayınlama ayarları ve uygulama başarıyla dağıtmak sonra bu konuya dönün ve bölümünde başlatmak [uzak araçları indirme](#BKMK_msvsmon).
+
 ## <a name="BKMK_install_webdeploy"></a> (İsteğe bağlı) Windows Server'da 3.6 yükleme Web dağıtımı
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ## <a name="BKMK_deploy_asp_net"></a> Windows Server bilgisayarında ASP.NET Web sitesi yapılandırması
+
+İçeri aktarmakta olduğunuz yayımlama ayarları, bu bölümü atlayabilirsiniz.
 
 1. Windows Gezgini'ni açın ve yeni bir klasör oluşturun **C:\Publish**, ASP.NET projesi daha sonra dağıtacağı.
 

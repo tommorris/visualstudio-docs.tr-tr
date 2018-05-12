@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a872745208b1f97065cc073920273dd90f4fa60
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 523140a4ffdc8e1eae07e3ae7dcffee5709067a2
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="pf"></a>PF
 VSPerfCmd.exe **PF** seçeneği sayfa hataları örneklenen profil olayını ayarlar ve bir örnekleme aralığı 10 varsayılan sayfa hatalarının sayısı isteğe bağlı olarak değişir.  
   
 > [!NOTE]
->  PF 64 bit sistemlerinde kullanılamaz.  
+>  **PF** 64-bit sistemlerinde kullanılamaz.  
   
- **Not PF** 64-bit bilgisayarlarda desteklenmiyor. **PF** de içeren bir komut satırında yalnızca kullanılabilir **başlatma** veya **Attach** seçeneği.  
+**PF** de içeren bir komut satırında yalnızca kullanılabilir **başlatma** veya **Attach** seçeneği.  
   
  Varsayılan olarak, örnekleme olay durdurulamaz harici işlemci saat döngüsü için ayarlanır ve örnekleme aralığı 10,000,000 için ayarlanır. **Zamanlayıcı**, **PF**, **Sys**, ve **sayaç** seçenekleri örnek olay ve örnekleme aralığı ayarlamanıza olanak sağlar. **GC** seçeneği her ayırma ve atık toplama olay .NET bellek verileri toplar. Bir komut satırında bu seçenekler yalnızca biri belirtilebilir.  
   
@@ -30,7 +30,7 @@ VSPerfCmd.exe **PF** seçeneği sayfa hataları örneklenen profil olayını aya
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cmd  
 VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]  
 ```  
   
@@ -65,7 +65,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="example"></a>Örnek  
  Bu örnek, sayfa hataları için profil oluşturma örnek olayı ayarlayabilirsiniz ve örnekleme aralığı 20 sayfa hataları gösterilmektedir.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /PF:20  
 ```  

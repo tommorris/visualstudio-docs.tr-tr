@@ -9,11 +9,11 @@ description: Bulun ve Visual Studio aboneliğinizde yer alan Microsoft ürünler
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 28239e7588e99573d709db08255c38142c907098
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Abone kullanarak Visual Studio Aboneliklerde indirir
 Abone Avantajlarınızı bir parçası olarak, çeşitli yazılım yüklemelerini erişebilirsiniz.  
@@ -24,7 +24,7 @@ Genel olarak, yazılım geliştirme projeleri için uygun olan tüm ticari ve t�
 
 Neden belirli ürünleri abonelere kullanılamayabilir birkaç nedeni vardır:
 
-- **Ürün abonelik düzeyinde ya da program dahil edilmez.** [Daha fazla bilgi edinin](https://www.visualstudio.com/vs/pricing/) yazılım ve aboneliğinizle kullanılabilir yararları hakkında veya [tam listesini yükle](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx_) abonelik düzeyinde göre ürünler. Gibi bazı programlar [Microsoft iş ortağı ağı](https://partner.microsoft.com/), Visual Studio abonelikleri faydaları bir parçası olarak sağlayın.  Bu abonelik satın alınan Visual Studio Aboneliklerde bulunan tüm ürünleri dahil etmeyin. Bu programlar abonelere bu programlar için destek ekiplerini ürün indirme kullanılabilirliği hakkında sorular iletmelidir.
+- **Ürün abonelik düzeyinde ya da program dahil edilmez.** [Daha fazla bilgi edinin](https://www.visualstudio.com/vs/pricing/) yazılım ve aboneliğinizle kullanılabilir yararları hakkında veya [tam listesini yükle](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx) abonelik düzeyinde göre ürünler. Gibi bazı programlar [Microsoft iş ortağı ağı](https://partner.microsoft.com/), Visual Studio abonelikleri faydaları bir parçası olarak sağlayın.  Bu abonelik satın alınan Visual Studio Aboneliklerde bulunan tüm ürünleri dahil etmeyin. Bu programlar abonelere bu programlar için destek ekiplerini ürün indirme kullanılabilirliği hakkında sorular iletmelidir.
 - **Ürün Aboneliklerde dahil edilmez.** Bazı Microsoft ürünleri özel lisans koşulları, teknik kısıtlamalar ya da Geliştirici ilgi nedeniyle abonelikleri dahil değildir. Bir ürün aboneliğe eklenmiş önermek istiyorsanız, Visual Studio için lütfen e-posta gönderin [Müşteri Hizmetleri Merkezi](https://www.visualstudio.com/subscriptions/support/).
 - **Ürün genel olarak kullanılabilir.** Bazı araçlar, SDK'ları, DDKs ve hizmet paketleri genel olarak kullanılabilir [Microsoft Download Center](https://www.microsoft.com/download). Bu tür bir ürünler indirme yayımlanmayabilir.
 - **Ürün henüz yayımlamadı.**  Birçok (beta) sürümleri yayın öncesi ve yayın adayları indirme kullanılabilir. Ancak, tüm Beta eklenebilir; Örneğin, bazı Beta özel kayıt ya da uygunluğunu gerektirir. Açık teknik beta programlar hakkında daha fazla bilgi için lütfen ziyaret [Microsoft Connect](http://connect.microsoft.com/).

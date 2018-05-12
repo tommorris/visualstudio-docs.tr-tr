@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 941597abd21d62501546860cf9cc8adc8fc6de2d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>İzlenecek yol: Örnekleme Yöntemini Kullanarak Komut Satırı Profili Oluşturma
 
@@ -54,13 +54,13 @@ Bu kılavuzda, şu adımları izler:
 
 4. Uygun ortam değişkenlerini ayarlamak için aşağıdaki komutu yazın:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleon
     ```
 
 5. Profil Oluşturucu denetleyen komut satırı aracıdır VSPerfCmd.exe çalıştırarak başla Aşağıdaki komut uygulama ve profil oluşturucu örnekleme modunda başlatır:
 
-    ```
+    ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
@@ -76,13 +76,13 @@ Bu kılavuzda, şu adımları izler:
 
 9. Profil Oluşturucu kapatın. Şu komutu yazın:
 
-    ```
+    ```cmd
     VSPerfCmd /shutdown
     ```
 
 10. Ortam değişkenleri sıfırlamak için aşağıdaki komutu kullanın:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleoff
     ```
 
@@ -94,7 +94,7 @@ Bu kılavuzda, şu adımları izler:
 
     - VSPerfReport.exe komut satırı aracını kullanarak bir virgülle ayrılmış değer (.csv) dosyası oluşturun. Dışında kullanmak için raporlar üretmek için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE aşağıdaki komutu kullanın:
 
-        ```
+        ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 

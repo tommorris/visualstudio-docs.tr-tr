@@ -14,6 +14,8 @@
 ### [Komut Satırından ClickOnce Uygulamalarını Derleme](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
 ### [Azure’a ASP.NET Core uygulaması yayımlama](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [Yayımlama ayarlarını içeri aktarma ve Azure’a dağıtma](tutorial-import-publish-settings-azure.md)
+### [Yayımlama ayarlarını içeri aktarma ve IIS’ye dağıtma](tutorial-import-publish-settings-iis.md)
 ### [Git ile Azure’a sürekli ASP.NET Core dağıtımı](/aspnet/core/publishing/azure-continuous-deployment)
 ### [IIS’ye ASP.NET dağıtma](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
 ## Yerel

@@ -381,7 +381,7 @@
 ##### [Microsoft Office bu bilgisayarda yüklü değil](microsoft-office-is-not-installed-on-this-computer.md)
 ##### [Bu projeyi oluşturmak için kullanılan çalışma kitabı tasarımcının yükleyemeyeceği ActiveX denetimleri içeriyor](the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load.md)
 ##### [.ofs dosyasındaki bir veya daha fazla özellik seçilen ileti sınıfı için geçerli değil](one-or-more-properties-in-the-dot-ofs-file-are-not-valid-for-the-message-class-selected.md)
-##### [Microsoft Office Sistemi projesi için Visual Studio Araçlarını açmak veya oluşturmak için Microsoft Office Visual Basic Uygulama projesi erişimini açıklıkla etkinleştirmelisiniz.](you-must-explicitly-enable-access-to-the-microsoft-office-visual-basic-for-applications-project-system-before-you-can-create-or-open-a-----for-the-microsoft-office-system-project.md)
+##### [Microsoft Office Sistemi projesi için Visual Studio Araçları oluşturmak veya açmak için VBA erişimini etkinleştirme](enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-office-system-project.md)
 ### [Yönetilen Başvuru (Visual Studio'da Office Geliştirme)](managed-reference-office-development-in-visual-studio.md)
 ### [Yönetilmeyen API Başvuru (Visual Studio'da Office Geliştirme)](unmanaged-api-reference-office-development-in-visual-studio.md)
 #### [EnsureVSTOComponent İşlevi](ensurevstocomponent-function.md)

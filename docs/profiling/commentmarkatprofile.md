@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4484e5fdee3158b61e7d1ae6d33966141e2a6a5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 63bd01f6ad180c85e48c51925de094df94aaa335
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` Yöntemi .vsp dosyasında bir zaman damgası değeri, sayısal işareti ve bir açıklama dizesi ekler. Zaman damgası değeri dış olayları eşitlemek için kullanılır. CommentMarkAtProfile işlevi içeriyor iş parçacığı için profil oluşturma, işareti ve eklenecek açıklama için açık olması gerekir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (  
                                    __int64 dnTimestamp,  
                                    long lMarker,  
@@ -77,7 +77,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod CommentMarkAtProfile genel işlev çağrısının kullanımını gösterir. Örnek Win32 dize makroların kullanılması ve kod çağrıları ANSI işlevi etkin olup olmadığını belirlemek ANSI derleyici ayarları varsayar.  
   
-```  
+```cpp  
 void ExerciseCommentMarkAtProfile(void)  
 {  
     // Declare and initalize variables to pass to   

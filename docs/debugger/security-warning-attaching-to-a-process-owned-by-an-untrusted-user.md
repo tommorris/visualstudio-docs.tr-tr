@@ -18,10 +18,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 68d88e01dde07789467272db830cae45ca5d60c4
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process"></a>Güvenlik Uyarısı: güvenilmeyen bir kullanıcıya ait bir işlem ekleme tehlikeli olabilir. Aşağıdaki bilgiler şüpheli görünüyorsa veya emin değilseniz, bu işlem için eklemeyin
 Kısmen güvenilen kod içeren veya hemen ekleme oluşmadan önce güvenilmeyen bir kullanıcıya ait olan bir işlem eklediğinizde bu uyarı iletişim kutusu görüntülenir. Kötü amaçlı kod içeren güvenilmeyen bir işlem hata ayıklama yapmadan bilgisayar zarar olasılığı vardır. İşlem güvenmeyecekleri nedeniniz sonra tıklamanız **iptal** hata ayıklama önlemek için.  

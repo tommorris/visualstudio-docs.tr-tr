@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4e2324a58b319eee4d2e9b180350a2c8c66778
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 8430e81cc0f4c15bdcb9d7ed3accaa041afa8d8e
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Ne&#39;Visual Studio 2017 yenilikler
 
@@ -181,7 +181,7 @@ Yeni verimlilik özellikleri hakkında daha fazla bilgi için bkz: [Visual Studi
 
 C++ çekirdek yönergeleri C ++ 11 ve C++ özellikleri ve ekleme ve C++ kitaplıkları işlevindeki güncelleştirmek için gelişmiş destek ekleyerek derleyici güncelleştirme Visual Studio ile dağıtma gibi çeşitli iyileştirmeler Visual Studio'da görürsünüz. Biz de C++ IDE, yükleme iş yükleri ve daha fazlasını performansı geliştirildi.
 
-De, 250'den fazla düzeltilen artık ve derleyici ve araçlarını sorunlar bildirildiğinde, birçok müşteriler tarafından gönderilen [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect").
+De, 250'den fazla düzeltilen artık ve derleyici ve araçlarını sorunlar bildirildiğinde, birçok müşteriler tarafından gönderilen [Geliştirici topluluğu c++](https://developercommunity.visualstudio.com/spaces/62/index.html "Geliştirici topluluğu c++").
 
 Tüm Ayrıntılar için bkz: [Visual 2017'de Visual C++ yenilikleri](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) sayfası.
 

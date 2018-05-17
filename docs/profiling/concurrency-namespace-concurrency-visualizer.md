@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7a262317cde29540d109a78f49f4bfd8192de5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 362c8e87c104dbed859421e21b43d309a6eab8b4
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Eşzamanlılık Ad Alanı (Eşzamanlılık Görselleştiricisi)
 `Concurrency` Ad alanı sınıflar sağlar ve size işlevleri erişim eşzamanlılık çalışma zamanı C++ için eşzamanlı bir programlama çerçevesi. Daha fazla bilgi için bkz: [eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 namespace Concurrency;  
 ```  
   

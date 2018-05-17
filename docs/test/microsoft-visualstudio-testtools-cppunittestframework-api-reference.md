@@ -19,9 +19,9 @@ ms.lasthandoff: 04/26/2018
 
 Bu konu genel üyeleri listeler `Microsoft::VisualStudio::CppUnitTestFramework` ad alanı. Microsoft yerel birim testi Framework temel alınarak C++ birim testleri yazmak için bu API'leri kullanın. Var olan bir [kullanım örnek](#example) konunun sonunda.
 
- Üstbilgi dosyaları bulunan *VisualStudio2012 [x 86] InstallFolder *** \VC\UnitTest\include** klasör.
+ Üstbilgi dosyaları bulunan *VisualStudio2012 [x 86] InstallFolder***\VC\UnitTest\include** klasör.
 
- LIB dosyalar bulunur *VisualStudio2012 [x 86] InstallFolder *** \VC\UnitTest\lib** klasör.
+ LIB dosyalar bulunur *VisualStudio2012 [x 86] InstallFolder***\VC\UnitTest\lib** klasör.
 
 Üstbilgi ve lib yolları otomatik olarak yerel bir Test projesinin içinde yapılandırılır.
 

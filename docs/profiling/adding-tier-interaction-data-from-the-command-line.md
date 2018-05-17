@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35c99b9e75be50d00e560e9c8899420685f7f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Komut satırından katman etkileşim verileri ekleme
 
@@ -54,20 +54,20 @@ Aşağıdaki örnekte, izleme metodunu kullanarak bir Windows Masaüstü uygulam
 
 2. .NET profili oluşturma ve ipucu ortam değişkenleri başlatır. Aşağıdaki komutları yazın:
 
-    ```
+    ```cmd
     vsperfclrenv /traceon
     vsperfclrenv /interactionon
     ```
 
 3. Profil Oluşturucu başlatın. Şu komutu yazın:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp 
     ```
 
 4. Uygulama ile VSPerfCmd başlatın. Şu komutu yazın:
 
-    ```
+    ```cmd
     vsperfcmd /launch:DesktopApp.exe
     ```
 
@@ -75,7 +75,7 @@ Aşağıdaki örnekte, izleme metodunu kullanarak bir Windows Masaüstü uygulam
 
 6. İpucu ortam değişkenleri temizleyin. Şu komutu yazın:
 
-    ```
+    ```cmd
     vsperfclrenv /off
     ```
 
@@ -97,13 +97,13 @@ Aşağıdaki örnekte, bir Windows hizmeti izleme metodunu kullanarak profili ve
 
 3. Ortam değişkenleri profil .NET başlatır. Şu komutu yazın:
 
-    ```
+    ```cmd
     vsperfclrenv /globaltraceon
     ```
 
 4. İpucu ortam değişkenleri başlatır. Aşağıdaki komutu yazın
 
-    ```
+    ```cmd
     vsperfclrenv /globalinteractionon
     ```
 
@@ -113,7 +113,7 @@ Aşağıdaki örnekte, bir Windows hizmeti izleme metodunu kullanarak profili ve
 
 7. Profil Oluşturucu başlatın. Şu komutu yazın:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -121,7 +121,7 @@ Aşağıdaki örnekte, bir Windows hizmeti izleme metodunu kullanarak profili ve
 
 9. Hizmete profil oluşturucu ekleme. Şu komutu yazın:
 
-    ```
+    ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -133,7 +133,7 @@ Aşağıdaki örnekte, bir Windows hizmeti izleme metodunu kullanarak profili ve
 
 12. .NET ve ortam değişkenleri profil ipucu temizleyin. Şu komutu yazın:
 
-    ```
+    ```cmd
     vsperfclrenv /globaloff
     ```
 
@@ -151,7 +151,7 @@ VSPerfASPNETCmd komut satırı aracı kolayca profiline sağlar [!INCLUDE[vsteca
 
 Katman etkileşimli profil oluşturma verilerini VSPerfASPNETCmd kullanılarak toplanan eklemek için Ekle **/İpucu** komut satırı seçeneği. Örneğin, katman etkileşim verileri toplamak için aşağıdaki komut satırını kullanın bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması izleme metodunu kullanarak:
 
-```
+```cmd
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 

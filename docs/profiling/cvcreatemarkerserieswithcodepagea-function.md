@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf258dbca695fe3f1516d977e02a21058377e02
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f79c85714ca27846c77529859789cc4465eb3ac
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA İşlevi
 Belirtilen sağlayıcı ve belirtilen kod sayfası için işaret serisi oluşturur. Bu işlev, açıkça işaret API ANSI işlevleri tarafından yazılan metin kod sayfası belirlemek için kullanılabilir. İzleme yakalanan ve daha sonra farklı yerel ayarlara/dilleri ile farklı makinelerde analiz durumda kod sayfası ayarı yararlı olabilir. Varsayılan olarak GetACP() işlevi tarafından döndürülen kod sayfası kullanılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```C  
 HRESULT CvCreateMarkerSeriesWithCodePageA(  
    _In_ PCV_PROVIDER pProvider,  
    _In_ LPCSTR pSeriesName,  

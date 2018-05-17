@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606a6c021247a00b2244986d5f91ad19d6a167f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 47bd3081256ee3354b9e8fc03050570938fd7499
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık Görselleştiricisi Komut Satırı Yardımcı Programı (CVCollectionCmd)
 Eşzamanlılık görselleştiricisi komut satırı yardımcı programını (CVCollectionCmd.exe), böylece bunları için Visual Studio eşzamanlılık görselleştiricisi görebilirsiniz komut satırından izlemeleri toplamak için kullanabilirsiniz. Araçlar Visual Studio yüklü olmayan bilgisayarlarda kullanılabilir.  
@@ -30,7 +30,7 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programını (CVCo
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Bir izleme CVCollectionCmd ile Topla  
  Uygulama CVCollectionCmd ile başlatarak veya eklemeyi izleme toplayabilir. Aşağıdaki komut başvurusu seçeneklerinizi için bkz. Örneğin  
   
-```  
+```cmd  
 <Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data  
 ```  
   

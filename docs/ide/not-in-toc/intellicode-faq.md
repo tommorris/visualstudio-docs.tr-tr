@@ -7,11 +7,11 @@ ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: d351d94a6f7891481e5f04ce9be1d5502603104d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: df5ce60e9d7a05d8cc7c9ebbe173dd30a0a0edf4
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/14/2018
 ---
 # Visual Studio IntelliCode SSS
 
@@ -62,6 +62,10 @@ IntelliCode'nın AI destekli IntelliSense şu anda, ilk deneysel önizlemede de�
 ## Q. Bu deneyim, yalnızca Visual Studio ve C# için kullanılabilir?
 
 Bir C# kod temeli üzerinde Visual Studio 2017 içinde derleme 2018 adresindeki deneyimi gösterildi. Ancak, IntelliCode daha fazla diller ve araçları Visual Studio ailesindeki gelecekte genişletmeye umuyoruz.
+
+## Q. Bu uzantı çalıştırmak hangi sürümü Visual Studio'nun gerekiyor mu?
+
+Visual Studio 2017 sürüm 15.7 Önizleme 5 ve üzerinde Visual Studio IntelliCode uzantısıdır (tüm SKU). "Bu uzantı üzerinde şu anda yüklü ürünler yüklenebilir değil." ile uzantısı durur yüklemesi yüklü gerekli en düşük sürüm yoksa.
 
 ## Q. Bu deneyim yalnızca İngilizce olarak kullanılabilir mi?
 

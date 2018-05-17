@@ -26,18 +26,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e069b13f3ceda00383bda8d0c33d74059e785f0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 48f8d5ac3b53650398f707f67f1d5806b72bce58
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan İşlevi
 Yeni bir aralık başlangıcını işaretler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```C  
 HRESULT CvEnterSpanW(  
     _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
     _Out_ PCV_SPAN* ppSpan,   
@@ -119,7 +119,7 @@ HRESULT CvEnterSpanExVA(
  İleti biçimi dizesi. NULL olamaz.  
   
  `ppSpan`  
- Sonuçta elde edilen aralık nesnesi tutacak değişkeninin adresi. Adres boş olamaz, değişkeni herhangi bir değer olabilir.  
+ Sonuçta elde edilen aralık nesnesi tutacak değişkeni adresidir. Adres boş olamaz, değişkeni herhangi bir değer olabilir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  İletiyi başarıyla yazıldığında S_OK. Hata kodu vardı herhangi bir hata durumunda. Hata koşulu denetlemek için başarılı/başarısız makroları kullanın.  

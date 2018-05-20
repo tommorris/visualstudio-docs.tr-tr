@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Office çözümlerini imzalama | Microsoft Docs'
+title: 'Nasıl yapılır: Office çözümlerini imzalama'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,25 +17,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 31b5e1fc3c78aecf518af0941a4a2dd0ab7e57c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d5fa4a837de66a39502e2c9e2d8466f3998acc4d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-sign-office-solutions"></a>Nasıl Yapılır: Office Çözümlerini İmzalama
+# <a name="how-to-sign-office-solutions"></a>Nasıl yapılır: Office çözümlerini imzalama
   Bir çözümü imzalarsanız, kanıt olarak sertifika kullanarak çözümlerine güven verebilirsiniz. Birden çok çözümleri için aynı sertifikayı kullanabilirsiniz ve tüm çözümler hiçbir ek güvenlik ilkesi güncelleştirmeleriyle güvenilen olacaktır.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Kullanabilmek için önce uygulama manuel olarak düzenlemeniz ve bildirim oluşturma ve düzenleme aracı (mage.exe ve mageui.exe) kullanarak dağıtım bildirimleri, bildirimlerini yeniden imzalamanız gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: yeniden imzalama uygulama ve dağıtım bildirimlerini](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
+ Uygulamayı manuel olarak düzenlemeniz ve dağıtım bildirimlerini bildirim oluşturma ve düzenleme Aracı'nı kullanarak (*mage.exe* ve *mageui.exe*), kullanılmadan önce bildirimlerini yeniden imzalamanız gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: yeniden, uygulama ve dağıtım bildirimlerini imzalama](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
   
-## <a name="signing-by-using-a-certificate"></a>Bir sertifika kullanarak imzalama  
+## <a name="sign-by-using-a-certificate"></a>Bir sertifika kullanarak oturum açın  
  Bir sertifika benzersiz bir anahtar ve çözüm yayımcı kimliğini içeren bir dosyadır. Bir sertifika yetkilisinden sertifika satın alın veya kendi sertifikanızı oluşturabilir ve bunu oturum bir sertifika yetkilisi sağlayabilirsiniz.  
   
  Visual Studio hata ayıklamayı etkinleştirmek için geçici bir sertifika ile Office çözümlerini imzalar. Dağıtılan çözümlerinde durum kanıt olarak geçici sertifika kullanmamalısınız.  
   
-#### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Bir sertifika kullanarak Office çözümü imzalamak için  
+### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Bir sertifika kullanarak Office çözümü imzalamak için  
   
 1.  Üzerinde **proje** menüsünde tıklatın * SolutionName ***özellikleri**.  
   
@@ -47,8 +47,8 @@ ms.lasthandoff: 04/16/2018
   
 5.  Doğru sertifikayı kullanılmakta olduğunu doğrulamak için tıklatın **daha fazla ayrıntı** sertifika bilgilerini görüntülemek için.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Office çözümleri güvenli](../vsto/securing-office-solutions.md)   
  [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md)   
  [İmzalama Sayfası, Proje Tasarımcısı](/visualstudio/ide/reference/signing-page-project-designer)  
   

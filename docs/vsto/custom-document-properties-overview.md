@@ -1,5 +1,5 @@
 ---
-title: Özel belge özelliklerine genel bakış | Microsoft Docs
+title: Özel belge özelliklerine genel bakış
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5ca93d7a761ca8757f0e43ab88cb6586c203160
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b85dfe077f73a26eadf173197de2ca514ff44679
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="custom-document-properties-overview"></a>Özel Belge Özelliklerine Genel Bakış
+# <a name="custom-document-properties-overview"></a>Özel belge özelliklerine genel bakış
 
-Belge düzeyi projesi derlerken, Visual Studio projesindeki belgeye iki özel özellikleri ekler: \_AssemblyLocation ve \_AssemblyName. Bir belgeyi bir kullanıcı oturum açtığında, Microsoft Office uygulama için bu özel belge özellikleri denetler. Belgede varsa, uygulamayı yükleyen [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], özelleştirme başlatır. Daha fazla bilgi için bkz: [Visual Studio'da Office çözümleri mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+Belge düzeyi projesi derlerken, Visual Studio projesindeki belgeye iki özel özellikleri ekler: \_AssemblyLocation ve \_AssemblyName. Bir belgeyi bir kullanıcı oturum açtığında, Microsoft Office uygulama için bu özel belge özellikleri denetler. Belgede varsa, uygulamayı yükleyen [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], özelleştirme başlatır. Daha fazla bilgi için bkz: [mimarisi Office çözümlerini Visual Studio'da](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -54,8 +54,8 @@ Bu özellik özelleştirme için dağıtım bildirimi hakkında ayrıntılar sa�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da Office çözümleri mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-[belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md)
-[Office çözümlerinde uygulama ve dağıtım bildirimleri ](../vsto/application-and-deployment-manifests-in-office-solutions.md) 
- [Nasıl yapılır: ClickOnce kullanarak Office çözümü yayımlama](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-[nasıl yapılır: oluşturma ve özel belge özelliklerini değiştirme](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Visual Studio'da Office çözümleri mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [Belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md)
+- [Office çözümlerinde uygulama ve dağıtım bildirimleri](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Nasıl yapılır: ClickOnce kullanarak Office çözümü yayımlama](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Nasıl yapılır: oluşturma ve özel belge özelliklerini değiştirme](../vsto/how-to-create-and-modify-custom-document-properties.md)

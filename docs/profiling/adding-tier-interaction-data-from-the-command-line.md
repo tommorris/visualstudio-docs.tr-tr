@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
-ms.translationtype: HT
+ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="adding-tier-interaction-data-from-the-command-line"></a>Komut satırından katman etkileşim verileri ekleme
+# <a name="add-tier-interaction-data-from-the-command-line"></a>Komut satırından katman etkileşim verileri ekleme
 
 Katman etkileşim profil sağlar, zaman uyumlu yürütme sürelerinin hakkında ek bilgi [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] , bir veya daha fazla veritabanı ile iletişim kuran çok katmanlı uygulamaları işlevlerini çağırır.
 
@@ -30,7 +30,7 @@ Masaüstü uygulamaları Windows 8 ve Windows Server 2012 uygulamalar katman etk
 
 Katman etkileşim profil, herhangi bir sürümünü Visual Studio kullanarak toplanabilir. Ancak, katman etkileşimli profil oluşturma verilerini, yalnızca Visual Studio kuruluş içinde görüntülenebilir.
 
-**Uzak makinede ipucu verileri toplama**
+**Uzak makinede ipucu verilerini topla**
 
 Uzak makinede katman etkileşim verileri toplamak için kopyalamanız gerekir **vs_profiler_***\<Platform >***_***\<dil >***.exe** dosyası gelen *%VSInstallDir%***\Team Araçlar\Performans Tools\Setups** klasör Visual Studio'nun makine uzak bilgisayara ve yükleyin. Profil oluşturma araçları kullanamazsınız [uzaktan hata ayıklama](../debugger/remote-debugging.md) paketini indirin.
 
@@ -38,17 +38,17 @@ Uzak makinede katman etkileşim verileri toplamak için kopyalamanız gerekir **
 
 Katman etkileşim verileri yalnızca Visual Studio Enterprise görüntülenebilir. Dosya tabanlı katman etkileşimli raporlar aracılığıyla [VSPerfReport](../profiling/vsperfreport.md) kullanılabilir değil.
 
-## <a name="adding-tier-interaction-data-with-vsperfcmd"></a>VSPerfCmd ile Katman etkileşim verileri ekleme
+## <a name="add-tier-interaction-data-with-vsperfcmd"></a>VSPerfCmd ile Katman etkileşim verileri ekleme
 
 VSPerfASPNETCmd komut satırı aracı, tam işlevsellik profil oluşturma araçları kullanılabilir erişim sağlar. Katman etkileşimli profil oluşturma verilerini VSPerfCmd kullanılarak toplanan eklemek için kullanmanız gerekir **VSPerfCLREnv** katman etkileşim verileri sağlayan ayarlamak ve ortam değişkenleri kaldırmak için yardımcı programı. Belirttiğiniz seçenekleri ve veri toplamak için gerekli yordamlarda profil uygulama türüne bağlıdır.
 
-## <a name="profiling-stand-alone-applications"></a>Bağımsız uygulamaların profilini oluşturma
+## <a name="profile-stand-alone-applications"></a>Bağımsız uygulamalar profili
 
 Zaman uyumlu yapan bir Windows masaüstü uygulaması gibi başka bir işlem tarafından çalıştırılmaz bir uygulama katman etkileşim verileri eklemek için [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] çağrıları SQLServer veritabanına kullanır **VSPerfClrEnv /InteractionOn** ortam değişkenlerini ayarlama seçeneği ve **VSPerfClrEnv /InteractionOff** bunları kaldırmak için seçeneği.
 
 Aşağıdaki örnekte, izleme metodunu kullanarak bir Windows Masaüstü uygulama profili ve katman etkileşim verileri toplanır.
 
-### <a name="profiling-a-windows-desktop-application-example"></a>Windows masaüstü uygulaması örnek profil oluşturma
+### <a name="profile-a-windows-desktop-application-example"></a>Windows masaüstü uygulaması örnek profil
 
 1. Yönetici ayrıcalıklarıyla bir komut istemi penceresi açın. Tıklatın **Başlat**, işaret **tüm programlar**, üzerine gelin ve ardından **Donatılar**. Sağ **komut istemi**ve ardından **yönetici olarak çalıştır**.
 
@@ -79,9 +79,9 @@ Aşağıdaki örnekte, izleme metodunu kullanarak bir Windows Masaüstü uygulam
     vsperfclrenv /off
     ```
 
-Daha fazla bilgi için bkz: [profil tek başına uygulamaları](../profiling/command-line-profiling-of-stand-alone-applications.md).
+Daha fazla bilgi için bkz: [bağımsız uygulamaların profilini oluşturma](../profiling/command-line-profiling-of-stand-alone-applications.md).
 
-## <a name="profiling-services"></a>Profil oluşturma hizmetleri
+## <a name="profile-services"></a>Profil Hizmetleri
 
 Dahil olmak üzere profil hizmetlerine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulamaları, **VSPerfClrEnv /GlobalInteractionOn** ortam değişkenlerini ayarlama seçeneği ve **VSPerfClrEnv /GlobalInteractionOff** bunları kaldırmak için seçeneği.
 
@@ -89,7 +89,7 @@ Ne zaman, profil oluşturma gibi hizmetler [!INCLUDE[vstecasp](../code-quality/i
 
 Aşağıdaki örnekte, bir Windows hizmeti izleme metodunu kullanarak profili ve katman etkileşim verileri toplanır.
 
-### <a name="profiling-a-windows-service-example"></a>Bir Windows Hizmeti örnek profil oluşturma
+### <a name="profile-a-windows-service-example"></a>Profil bir Windows hizmeti örneği
 
 1. Gerekirse, hizmetini yükleyin.
 
@@ -101,7 +101,7 @@ Aşağıdaki örnekte, bir Windows hizmeti izleme metodunu kullanarak profili ve
     vsperfclrenv /globaltraceon
     ```
 
-4. İpucu ortam değişkenleri başlatır. Aşağıdaki komutu yazın
+4. İpucu ortam değişkenleri başlatır. Şu komutu yazın:
 
     ```cmd
     vsperfclrenv /globalinteractionon
@@ -145,7 +145,7 @@ Daha fazla bilgi için aşağıdaki konulardan birine bakın:
 
 [Profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md)
 
-## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd ile Katman etkileşim verileri ekleme
+## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd ile Katman etkileşim verileri ekleme
 
 VSPerfASPNETCmd komut satırı aracı kolayca profiline sağlar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları. İle karşılaştırılan **VSPerfCmd** komut satırı aracı seçenekleri azaltılmış, ortam değişkenleri ayarlanması gerekir ve bilgisayar yeniden başlatıldığı gerekli değildir. VSPerfASPNETCmd bu özelliklerini katman etkileşim verileri toplama olağanüstü kolay hale getirir.
 

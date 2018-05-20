@@ -1,5 +1,5 @@
 ---
-title: InfoPath için Şerit özelleştirme | Microsoft Docs
+title: InfoPath için Şerit özelleştirme
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a3e5121285f66059a898ce64fc4107903f371485
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82238cc29504b3ad2b757e94efa89a3c521bca90
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="customizing-a-ribbon-for-infopath"></a>InfoPath İçin Şerit Özelleştirme
+# <a name="customize-a-ribbon-for-infopath"></a>InfoPath için Şerit özelleştirme
   Microsoft Office InfoPath Şeritte özelleştirdiğinizde, özel Şerit uygulamada nerede görüneceğini dikkate almanız gerekir. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] Şerit InfoPath uygulama windows aşağıdaki üç tür görüntüleyebilirsiniz:  
   
 -   Tasarım modunda açılan bir form şablon görünen Windows.  
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
  Şerit görünmesini istediğiniz her pencerenin Şerit türünü belirtmeniz gerekir.  
   
-## <a name="specifying-the-ribbon-type-in-the-ribbon-designer"></a>Şerit Tasarımcısı'nda Şerit türünü belirleme  
+## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>Şerit Tasarımcısı'nda Şerit türünü belirtin  
  Kullanıyorsanız **Şerit (Görsel Tasarımcı)** öğesi, tıklatın **RibbonType** Şeritte özelliği **özellikleri** penceresinde ve ardından Şeritteki ID birini seçin Aşağıdaki tabloda açıklanmaktadır.  
   
 |Şerit Kimliği|Şerit Projeyi çalıştırdığınızda görüntüleneceği penceresi|  
@@ -51,9 +51,9 @@ ms.lasthandoff: 04/16/2018
 |**Microsoft.InfoPath.Editor**|Bir form şablonunu temel alan bir form görüntüleyen pencereler.|  
 |**Microsoft.InfoPath.PrintPreview**|Baskı önizleme penceresi.|  
   
- Bir projeye birden çok Şerit ekleyebilirsiniz. Birden çok Şerit bir Şerit Kimliğini paylaşıyorsanız, içinde yöntemini geçersiz kılma `ThisAddin` sınıfı projenizin çalışma zamanında görüntülemek üzere hangi Şerit belirtin. Daha fazla bilgi için bkz: [Şerite Genel Bakış](../vsto/ribbon-overview.md).  
+ Bir projeye birden çok Şerit ekleyebilirsiniz. Birden çok Şerit bir Şerit Kimliğini paylaşıyorsanız, geçersiz kılma `CreateRibbonExtensibilityObject` yönteminde `ThisAddin` sınıfı projenizin çalışma zamanında görüntülemek üzere hangi Şerit belirtin. Daha fazla bilgi için bkz: [Şerite Genel Bakış](../vsto/ribbon-overview.md).  
   
-## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Şerit XML kullanarak Şerit türünü belirleme  
+## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Şerit XML kullanarak Şerit türünü belirtin  
  Kullanıyorsanız **Şerit (XML)** öğesi, değerini denetleyin *ribbonID* parametresinde <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> yöntemi ve return uygun Şerit.  
   
  <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> Yöntemi Şerit kod dosyasında Visual Studio tarafından otomatik olarak oluşturulur. *RibbonID* parametredir açıyor InfoPath penceresini türünü tanımlayan bir dize.  
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Şerit çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
  [Şerit Tasarımcısı](../vsto/ribbon-designer.md)   

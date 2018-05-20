@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 16c7405cfe889808f27dbb274f7f685e949889dd
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="creating-sharepoint-features"></a>SharePoint Özellikleri Oluşturma
   Daha kolay dağıtım için ilgili SharePoint Proje öğeleri gruplandırmak için bir SharePoint özelliğini kullanabilirsiniz. Özellikleri oluşturma kapsamlarını ayarlayın ve diğer özellikleri SharePoint özelliği Designer kullanarak bağımlılıklar olarak işaretleyin. Tasarımcı aynı zamanda her bir özelliğin tanımlayan bir XML dosyasıdır bir bildirim oluşturur.  
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
-|Başlık|İsteğe bağlı. Özelliğin varsayılan başlık kümesine *SolutionName ** FeatureName*.|  
+|Başlık|İsteğe bağlı. Özelliğin varsayılan başlık kümesine *SolutionName* *FeatureName*.|  
 |Açıklama|İsteğe bağlı. SharePoint özelliğinin açıklaması.|  
 |Kapsam|Gerekli. Bir özellik kullanarak oluşturduysanız **Çözüm Gezgini**, kapsam Web'e varsayılan olarak ayarlanır.<br /><br /> -Grup: tüm sunucu grubu için özelliği etkinleştirin.<br /><br /> -Site: site koleksiyonundaki tüm web siteleri için özelliği etkinleştirin.<br /><br /> -Web: belirli bir web sitesi için özelliği etkinleştirin.<br /><br /> -WebApplication: bir web uygulamasındaki tüm web siteleri için özelliği etkinleştirin.|  
 |Çözüm öğeleri|Özelliği için eklenen tüm SharePoint öğeleri.|  

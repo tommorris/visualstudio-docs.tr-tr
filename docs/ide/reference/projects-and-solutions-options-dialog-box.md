@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606af4d08ffaec87c46c394f55ffe4e37b2a940d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 631b9fc17345d5d0c00d36e42a9d3b1db633c114
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projeler ve Çözümler, Seçenekler İletişim Kutusu
 Ayarlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] davranışı ilgili projeler ve çözümler. Bu seçenekler erişmek için seçin **Araçlar > Seçenekler** genişletin **projeler ve çözümler**, tıklatıp **genel**.
@@ -70,6 +70,12 @@ Seçili olduğunda, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
 **Yeni bir konuma dosyaları taşınmadan önce sor**
 
 Seçili olduğunda, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Çözüm Gezgini'nde eylemler tarafından dosya konumlarının değişmesi önce bir onaylama ileti kutusu görüntüler.
+
+**Çözüm yükleme (Visual Studio 2017 sürüm 15,8 önizleme 2 ve üstü) belgelerde yeniden açın**
+ 
+Çözüm yüklenmesi sırasında önceki oturumda açık olan belgeleri otomatik olarak yeniden açın. Çözüm yüklendiğinde seçildiğinde, bu çözüm kapatıldığı önceki saat açık belgeleri otomatik olarak açılır.
+
+Belirli türde bir dosya ya da tasarımcıları açmayı çözüm yük gecikmeye yol açabilir. Çözümün önceki bağlamı geri yüklemek istemiyorsanız, çözüm yük performansı artırmak için bu seçeneği temizleyin.
 
 ## <a name="locations-tab-options"></a>Konumları sekmesi seçenekleri
 

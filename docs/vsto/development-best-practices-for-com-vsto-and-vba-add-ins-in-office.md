@@ -1,5 +1,5 @@
 ---
-title: En iyi geliştirme eklentilerinde Office COM, VSTO ve VBA yöntemler | Microsoft Docs
+title: COM, VSTO ve VBA eklentilerinde Office için en iyi uygulamaları geliştirme
 ms.custom: ''
 ms.date: 07/25/2017
 ms.technology:
@@ -14,13 +14,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 020faeb330348049dcf12431fadfa6ab099d1584
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>COM, VSTO ve VBA eklentilerinde Office için en iyi uygulamaları geliştirme
+# <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>COM, VSTO ve VBA eklentilerinde Office için en iyi uygulamaları geliştirme
   COM, VSTO veya VBA eklentiler için Office geliştiriyorsanız, bu makalede açıklanan geliştirme en iyi uygulamaları izleyin.   Bu, olmanıza yardımcı olur:
 
 -  Eklentilerinizi farklı sürümleri ve Office dağıtımlar arasında uyumluluk.
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
  Office eklentisini yükleme işlemi sırasında yüklenip yüklenmediğini belirle eklentinizi sahip öneririz yok. Office yüklü değilse, eklenti yükleyebilir ve kullanıcı Office yüklendikten sonra erişebilir. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Katıştırılmış birlikte çalışma türlerini (NoPIA) kullanın  
-Çözümünüzü daha sonra .NET 4.0 kullanır veya kullanıyorsanız katıştırılmış birlikte çalışma türleri (NoPIA) yerine Office birincil birlikte çalışma derlemeleri (PIA bağlı olarak) yeniden dağıtılabilir. Türü katıştırma kullanarak çözümünüzü yükleme boyutunu azaltır ve ileriye dönük uyumluluk sağlar. Office 2010 yeniden dağıtılabilir PIA birlikte gelen Office son sürümünü oluştu. Daha fazla bilgi için bkz: [izlenecek yol: Microsoft Office derlemelerinden tür bilgilerini katıştırma](https://msdn.microsoft.com/en-us/library/ee317478.aspx) ve [tür Eşdeğerliği ve katıştırılmış birlikte çalışma türlerini](/windows/uwp/porting/desktop-to-uwp-root).
+Çözümünüzü daha sonra .NET 4.0 kullanır veya kullanıyorsanız katıştırılmış birlikte çalışma türleri (NoPIA) yerine Office birincil birlikte çalışma derlemeleri (PIA bağlı olarak) yeniden dağıtılabilir. Türü katıştırma kullanarak çözümünüzü yükleme boyutunu azaltır ve ileriye dönük uyumluluk sağlar. Office 2010 yeniden dağıtılabilir PIA birlikte gelen Office son sürümünü oluştu. Daha fazla bilgi için bkz: [izlenecek yol: Microsoft Office derlemelerinden tür bilgilerini katıştırma](https://msdn.microsoft.com/en-us/library/ee317478.aspx) ve [tür eşdeğerliği ve katıştırılmış birlikte çalışma türlerini](/windows/uwp/porting/desktop-to-uwp-root).
 
 Çözümünüzü .NET önceki bir sürümünü kullanıyorsa, .NET 4.0 veya sonraki sürümü kullanmak için çözümünüzün güncelleştirmenizi öneririz. .NET 4.0 veya sonraki sürümü kullanarak, daha yeni sürümlerinde Windows çalışma zamanı Önkoşullar azaltır.
   
@@ -43,7 +43,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>32 bit ve 64 bit Office kullanımı etkinleştir   
 Yalnızca belirli verileri için kullanılabilir kitaplıkları çözümünüzü bağlıdır sürece varsayılan derleme hedefiniz hem 32 bit (x86) hem de 64 bit (x64) desteklemelidir. Office'in 64 bit sürümü özellikle büyük veri ortamlarda benimseme artmaktadır. Destek 32-bit ve 64-bit, Office'in 32 bit ve 64-bit sürümleri arasında geçiş için kullanıcılarınızın kolaylaştırır.
 
-VBA kodu yazarken kullanmak için 64-bit güvenli deyimleri bildirme ve değişkenleri uygun olarak Dönüştür. Ayrıca, belgeler için her bit kodu sağlayarak Office 32 bit veya 64 bit sürümlerini çalıştıran kullanıcılar arasında paylaşılabilen emin olun. Daha fazla bilgi için bkz: [uygulamalarına genel bakış için 64-Bit Visual Basic](https://msdn.microsoft.com/en-us/library/office/gg264421.aspx).
+VBA kodu yazarken kullanmak için 64-bit güvenli deyimleri bildirme ve değişkenleri uygun olarak Dönüştür. Ayrıca, belgeler için her bit kodu sağlayarak Office 32 bit veya 64 bit sürümlerini çalıştıran kullanıcılar arasında paylaşılabilen emin olun. Daha fazla bilgi için bkz: [uygulamalarına genel bakış için 64-bit Visual Basic](https://msdn.microsoft.com/en-us/library/office/gg264421.aspx).
 
 ## <a name="support-restricted-environments"></a>Kısıtlı ortamları desteği   
 Çözümünüzü kullanıcı hesabı yükseltme veya yönetici ayrıcalıkları gerektirmemelidir. Buna ek olarak, çözümü ayarlama veya değiştirme bağlı olmaması gerekir:

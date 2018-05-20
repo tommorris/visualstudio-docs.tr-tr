@@ -1,5 +1,5 @@
 ---
-title: IManagedAddin::Load | Microsoft Docs
+title: IManagedAddin::Load
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -14,23 +14,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 545560c5f02437925c2f93e9c6dc3113e1cddd0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5f8e94ebcd0aec8e17cac8d651017ed1565d2ec
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   Yönetilen bir VSTO Eklenti yüklendiğinde çağrılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```c++
 HRESULT Load([in] BSTR bstrManifestURL,   
              [in] IDispatch *pdispApplication);  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
@@ -43,11 +43,11 @@ HRESULT Load([in] BSTR bstrManifestURL,
 ## <a name="remarks"></a>Açıklamalar  
  VSTO eklenti yardımcı olmak için kullanılan bilgileri sağlayan bir dosya (genellikle, bir XML dosyası) bildirimidir. Örneğin, bir bildirim VSTO eklenti derlemesi ve giriş noktası sınıfını VSTO Eklenti yüklendiğinde örneği oluşturmak için konumunu belirtebilirsiniz.  
   
- *BstrManifestURL* parametre değeri içeriyor `Manifest` HKEY_CURRENT_USER\Software\Microsoft\Office altında girdisi\\*\<uygulama adı >* \Addins\\*\<eklenti kimliği >* VSTO eklenti için kayıt defteri anahtarı. Daha fazla bilgi için bkz: [Imanagedaddin arabirimi](../vsto/imanagedaddin-interface.md).  
+ *BstrManifestURL* parametre değeri içeriyor `Manifest` altında girdisi **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<uygulama adı >_ \Addins\\_\<eklenti kimliği >_**  VSTO eklenti için kayıt defteri anahtarı. Daha fazla bilgi için bkz: [Imanagedaddin arabirimi](../vsto/imanagedaddin-interface.md).  
   
  Uygulama [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) VSTO yüklenmekte eklenti için uygulama etki alanı ve güvenlik ilkesini yapılandırma gibi görevleri gerçekleştirmek için yöntem.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Imanagedaddin arabirimi](../vsto/imanagedaddin-interface.md)   
  [IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)  
   

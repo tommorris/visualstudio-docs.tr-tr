@@ -1,5 +1,5 @@
 ---
-title: Belge düzeyi özelleştirmelerinde verileri önbelleğe | Microsoft Docs
+title: Belge düzeyi özelleştirmelerinde önbelleğe alınan veriler
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0919e046f9e50578df46853c6db9f60cea2f71e3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd93d985b72f945e7a1c70199d6ff3aacf5f0229
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="cached-data-in-document-level-customizations"></a>Belge Düzeyi Özelleştirmelerdeki Önbelleğe Alınmış Veriler
+# <a name="cached-data-in-document-level-customizations"></a>Belge düzeyi özelleştirmelerinde önbelleğe alınan veriler
   Office belgelerindeki görünümünden veri ayırmak için belge düzeyi özelleştirmeleri birincil amacı olan. Veri sayılar ve metin dahil olmak üzere belgede depolanan bilgileri gösterir. Görünüm kullanıcı arabirimi hem de Microsoft Office Word ve Microsoft Office Excel nesne modeline anlamına gelir.  
   
  Visual Studio ayıran verileri belge düzeyi özelleştirmelerinde görünümünden olarak katıştırılmış veri sağlayarak bir *veri adası*, olarak da bilinir *veri önbelleği*. Okuma ya da doğrudan Word veya Excel başlatmadan verileri değiştirebilir. Bu, Microsoft Office yüklü olmayan bir sunucu üzerinde belgeleri verilerde değişiklik yapmanız durumunda faydalı olur. Word ve Excel istemci ortamlarda kullanılmak için tasarlanmıştır; bir sunucu üzerinde çalıştırılmak üzere tasarlanmamıştır.  
@@ -36,15 +36,15 @@ ms.lasthandoff: 04/16/2018
   
  Belge düzeyi özelleştirmeleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) ve [belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md).  
   
-## <a name="understanding-the-cached-data-programming-model"></a>Önbelleğe alınan veriler programlama modelini anlama  
- Veri adası çözümünüzdeki belirli gereksinimleri karşılayan herhangi bir nesne içerebilir. Bu nesneler dahil <xref:System.Data.DataSet> nesneleri <xref:System.Data.DataTable> nesneleri ve sıralanabilen herhangi bir nesne <xref:System.Xml.Serialization.XmlSerializer> sınıfı. Daha fazla bilgi için bkz: [veri önbelleğe alma](../vsto/caching-data.md).  
+## <a name="understand-the-cached-data-programming-model"></a>Önbelleğe alınan veriler programlama modelini anlama  
+ Veri adası çözümünüzdeki belirli gereksinimleri karşılayan herhangi bir nesne içerebilir. Bu nesneler dahil <xref:System.Data.DataSet> nesneleri <xref:System.Data.DataTable> nesneleri ve sıralanabilen herhangi bir nesne <xref:System.Xml.Serialization.XmlSerializer> sınıfı. Daha fazla bilgi için bkz: [veriyi önbelleğe](../vsto/caching-data.md).  
   
  Görünüm için önbelleğe alınan verileri sağlamak için Windows Forms denetimlerini bağlayabilirsiniz ve *konak denetimlerini* veri adası nesnelerine belgesinde. Veri bağlama veri adası verilere bağlı denetimler arasındaki bu ikisini eşitler. Doğrulama kodu denetimlerin bağımsızdır verileri de ekleyebilirsiniz. Daha fazla bilgi için bkz: [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- Konak denetimleri Excel ve Word nesne modellerindeki yerel nesneleri sürümleri genişletilmiştir. Yerel nesnelerden farklı olarak, ana bilgisayar denetimleri yönetilen veri nesnelerine doğrudan bağlı olabilir. Daha fazla bilgi için bkz: [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md) ve [Office belgeleri genel bakış Windows Forms denetimleri](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+ Konak denetimleri Excel ve Word nesne modellerindeki yerel nesneleri sürümleri genişletilmiştir. Yerel nesnelerden farklı olarak, ana bilgisayar denetimleri yönetilen veri nesnelerine doğrudan bağlı olabilir. Daha fazla bilgi için bkz: [konak öğelerini ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md) ve [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
-## <a name="accessing-cached-data-on-the-server"></a>Sunucuda önbelleğe alınan verilere erişme  
- Bir belgedeki önbelleğe alınan verilere erişmek için kullanabileceğiniz <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı. Bu sınıf, bir parçasıdır [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], ve bir sunucuda çalışan Excel veya Word'den olmadan kullanılabilir. Kullanıcı belge sonra önbelleğe alınmış verileri değiştirme, veriye bağlı olan herhangi bir denetim değişiklikleri otomatik olarak eşitlenir ve kullanıcının güncelleştirilmiş verilerle sunulan açtığında. Daha fazla bilgi için bkz: [sunucudaki belgelerde verilere erişme](../vsto/accessing-data-in-documents-on-the-server.md).  
+## <a name="access-cached-data-on-the-server"></a>Sunucu üzerindeki erişim önbelleğe alınmış veriler  
+ Bir belgedeki önbelleğe alınan verilere erişmek için kullanabileceğiniz <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı. Bu sınıf, bir parçasıdır [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], ve bir sunucuda çalışan Excel veya Word'den olmadan kullanılabilir. Kullanıcı belge sonra önbelleğe alınmış verileri değiştirme, veriye bağlı olan herhangi bir denetim değişiklikleri otomatik olarak eşitlenir ve kullanıcının güncelleştirilmiş verilerle sunulan açtığında. Daha fazla bilgi için bkz: [sunucudaki belgelerde verilere erişim](../vsto/accessing-data-in-documents-on-the-server.md).  
   
  Excel ve Word yalnızca istemcide görüntülemek için bu sunucudaki veri yazmak için gerekli değildir. Excel ve Word bile sunucuya yüklenmesi gerekmez. Bu, geliştirilmiş ölçeklenebilirlik ve veri Adaları içeren belgeleri hızlı, toplu işleme gerçekleştirmenize olanak sağlar.  
   
@@ -59,11 +59,11 @@ ms.lasthandoff: 04/16/2018
 ||Veri önbelleği|Özel XML bölümleri|  
 |-|----------------|----------------------|  
 |Office uygulamaları bunları kullanabilir miyim?|Aşağıdaki uygulamalar için belge düzeyi özelleştirmeleri:<br /><br /> -Excel<br />-Word|Aşağıdaki uygulamalar için belge düzeyi ve uygulama düzeyi çözümleri:<br /><br /> -Excel<br />-PowerPoint<br />-Word|  
-|Hangi veri türlerini, depolayabilir miyim?|Herhangi ortak bir nesne özelleştirme derlemenizde belirli gereksinimleri karşılıyor. Daha fazla bilgi için bkz: [veri önbelleğe alma](../vsto/caching-data.md).|Tüm XML verileri.|  
+|Hangi veri türlerini, depolayabilir miyim?|Herhangi ortak bir nesne özelleştirme derlemenizde belirli gereksinimleri karşılıyor. Daha fazla bilgi için bkz: [veriyi önbelleğe](../vsto/caching-data.md).|Tüm XML verileri.|  
 |Microsoft Office uygulamaları başlatmadan veri erişebilir mi?|Kullanarak Evet, <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı tarafından sağlanan [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|Sınıfları kullanarak Evet, <xref:System.IO.Packaging> ad alanı, veya açık XML biçimi SDK'sını kullanarak.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)   
- [Visual Studio'da Office Çözümleri Mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
+ [Visual Studio'da Office çözümleri mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
   
   

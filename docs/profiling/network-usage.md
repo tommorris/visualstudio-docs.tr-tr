@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a41e41b4448bcec34a24464f4f62e85d0765436d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP uygulamalarında ağ kullanımını çözümleme
 Visual Studio **ağ** Tanılama aracı kullanılarak yapılan ağ işlemleri hakkındaki verileri toplar [Windows.Web.Http API](/uwp/api/windows.web.http). Verileri çözümleme, erişim ve kimlik doğrulama sorunları, yanlış önbellek kullanımı ve görüntü gibi sorunları gidermek ve performans indirme yardımcı olabilir.  
@@ -24,12 +24,12 @@ Visual Studio **ağ** Tanılama aracı kullanılarak yapılan ağ işlemleri hak
 > [!NOTE]
 >  Ağ aracı daha eksiksiz bir açıklaması için bkz: [Tanıtımı Visual Studio'nun Ağ aracı](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx).  
   
-## <a name="collecting-network-tool-data"></a>Ağ aracı verileri toplama  
+## <a name="collect-network-tool-data"></a>Ağ aracı verilerini topla  
  Çalışması gerektiğini **ağ** Visual Studio bilgisayarda açık bir Visual Studio projesi aracıyla.  
   
 1.  Projesini Visual Studio'da açın.  
   
-2.  Menüsünde **hata ayıklama / Performans Profil Oluşturucu...** . Seçin **ağ**ve ardından **Başlat**.  
+2.  Menüsünde **hata ayıklama / Performans Profil Oluşturucu**. Seçin **ağ**ve ardından **Başlat**.  
   
 3.  Ağ aracı, uygulamanızın HTTP trafiği toplamaya başlar.  
   
@@ -41,7 +41,7 @@ Visual Studio **ağ** Tanılama aracı kullanılarak yapılan ağ işlemleri hak
   
  ![Ağ penceresi](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
-## <a name="analyzing-data"></a>Veri çözümleme  
+## <a name="analyze-data"></a>Verileri analiz etme  
  Uygulamanızı çalışırken ya da bile uygulama, Özet görünümünde görüntülenen ağ işlemlerden birini seçerek kapatıldıktan sonra yakalanan HTTP trafiği analiz edebilirsiniz.  
   
  **Ağ** Özet görünümü, uygulamanızın Çalıştır her ağ işlemi için verileri gösterir. Sıralamak için sütun başlığını seçin veya görüntülemek için içerik türlerini seçin **içerik türü** filtre görünümü.  
@@ -63,11 +63,11 @@ Visual Studio **ağ** Tanılama aracı kullanılarak yapılan ağ işlemleri hak
  Ağ **Özet** çubuğunu gösterir ne kadar verinin aktarıldığı, belirli bir anda, görüntülenen ağ işlemlerinin sayısı sürdü bunları ve kaç tane hataları (istekleriyle 4xx veya 5xx yanıtlarını) indirmek için ne kadar süre görünür.  
   
 ### <a name="analysis-tips"></a>Analiz ipuçları  
- Bu aracı vurgular çalıştırırken, yararlı olabilecek belirli alanları ağ analiz ilgili:  
+ Bu araç, ağ ile ilgili analiz çalıştırırken, yararlı olabilecek belirli alanları vurgular:  
   
 1.  Önbellekten tam olarak sunulan istekleri olarak gösterilir **(önbelleğinden)** içinde **alınan** sütun. Bu önbellek etkili bir şekilde kullanıcı bant genişliğinden tasarruf için kullanmanıza veya yanıtlarını yanlışlıkla önbelleğe alma ve uygulamanızın güncel olmayan verileri ile son kullanıcı sağlama belirlemenize yardımcı olabilir.  
   
-2.  Hata yanıtları (4xx veya 5xx) görüntülenir, **sonuçları** kırmızı bir duruma sahip sütun kod ve Özet çubuğunda da vurgulanmıştır. Bu, birçok olası istekleri arasında kolay nokta hataları, uygulamanızda kolaylaştırır.  
+2.  Hata yanıtları (4xx veya 5xx) görüntülenir **sonuçları** sütun kırmızı bir duruma sahip code ve Özet çubuğunda da vurgulanmıştır. Bu, birçok olası istekleri arasında kolay nokta hataları, uygulamanızda kolaylaştırır.  
   
 3.  Yanıt oldukça yazdırma düğme (içinde gövde sekmesi) JSON, XML, HTML, CSS, JavaScript ve TypeScript yanıt yüklerini içeriğin okunabilirliğini artırarak ayrıştırma yardımcı olabilir.  
   
@@ -76,4 +76,4 @@ Visual Studio **ağ** Tanılama aracı kullanılarak yapılan ağ işlemleri hak
  [Visual Studio Günlüğü: Giriş Visual Studio'nun ağ denetleyici](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Kanal 9 Video: VS tanılama araçları - yeni ağ profil oluşturucu](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Visual Studio'da profil oluşturma](../profiling/index.md)  
- [Özellik turu profil oluşturma](../profiling/profiling-feature-tour.md)
+ [Profil oluşturma özelliği turu](../profiling/profiling-feature-tour.md)

@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96fee1d5174115d95718fd9468b2b5770275ae99
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 8e011dfd56adeaa832a1925e20e246fb66ce7979
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Visual Studio 2017 yükleme için komut satırı parametresi örnekleri
 
@@ -110,7 +110,7 @@ Her örnekte `vs_enterprise.exe`, `vs_professional.exe` ve `vs_community.exe` in
 
 ## <a name="using---path"></a>Kullanarak--yolu
 
-Bu komut satırı parametrelerinin olan **15.7 yeni**. Bunlar hakkında daha fazla bilgi için bkz: [Visual Studio'yu yüklemek için komut satırı parametrelerini kullanmak](use-command-line-parameters-to-install-visual-studio.md) sayfası.
+Bu komut satırı parametreleri **15.7 yeni**. Bunlar hakkında daha fazla bilgi için bkz: [Visual Studio'yu yüklemek için komut satırı parametrelerini kullanmak](use-command-line-parameters-to-install-visual-studio.md) sayfası.
 
 * Yükleme, önbellek ve paylaşılan yollarını kullanarak:
 

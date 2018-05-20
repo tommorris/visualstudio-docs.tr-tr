@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: CheckBox denetimlerini kullanarak belge biçimlendirmesini değiştirme | Microsoft Docs'
+title: 'İzlenecek yol: CheckBox denetimlerini kullanarak belge biçimlendirmesini değiştirme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecbb0036fc74cf5d0d27ea61283ec5b733dca1a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 459253c6a84add4fcca68565d5bf082dc0931f22
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>İzlenecek Yol: CheckBox Denetimlerini Kullanarak Belge Biçimlendirmesini Değiştirme
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>İzlenecek yol: CheckBox denetimlerini kullanarak belge biçimlendirmesini değiştirme
   Bu kılavuzda Windows Forms denetimleri Microsoft Office Word için belge düzeyi özelleştirmelerinde metin biçimlendirmesini değiştirmek için nasıl kullanılacağını gösterir.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -47,21 +47,21 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] veya [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Projeyi Oluşturma  
+## <a name="create-the-project"></a>Projeyi oluşturma  
  İlk adım bir Word belgesi proje oluşturmaktır.  
   
-#### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
+### <a name="create-a-new-project"></a>Yeni bir proje oluşturma  
   
 1.  Adlı bir Word belgesi proje oluşturun **My Word biçimlendirme**. Sihirbazı'nda seçin **bir yeni belge oluşturun**.  
   
-     Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio tasarımcıda yeni Word belgesini açar ve ekler **My Word biçimlendirme** için proje **Çözüm Gezgini**.  
   
-## <a name="adding-text-and-controls-to-the-word-document"></a>Word belgesine metin ve denetimler ekleme  
+## <a name="add-text-and-controls-to-the-word-document"></a>Word belgesine metin ve denetimler ekleme  
  Bu kılavuzda üç onay kutusunu ve bazı metin ekleme bir <xref:Microsoft.Office.Tools.Word.Bookmark> Word belgesine denetim. Onay kutularını seçenekleri, kullanıcıya metni biçimlendirme için sunar.  
   
-#### <a name="to-add-three-check-boxes"></a>Üç onay kutusunu eklemek için  
+### <a name="add-three-check-boxes"></a>Üç onay kutusu ekleme  
   
 1.  Belge Visual Studio Tasarımcısı'nda açık olduğunu doğrulayın.  
   
@@ -92,7 +92,7 @@ ms.lasthandoff: 04/16/2018
     |**Ad**|**applyUnderlineFont**|  
     |**Metin**|**Alt çizgi**|  
   
-#### <a name="to-add-text-and-a-bookmark-control"></a>Metin ve bir yer işareti denetimi ekleme  
+### <a name="add-text-and-a-bookmark-control"></a>Metin ve bir yer işareti denetimi ekleme  
   
 1.  Ekleme noktasını onay kutusu denetimleri altına getirin ve aşağıdaki metni yazın:  
   
@@ -110,10 +110,10 @@ ms.lasthandoff: 04/16/2018
   
  Ardından, bir onay kutusu işaretli ya da temizlenmiş metni biçimlendirmek için kod yazma.  
   
-## <a name="formatting-the-text-when-a-check-box-is-checked-or-cleared"></a>Biçimlendirme metin bir onay kutusu işaretli temizlenmiş mi  
+## <a name="format-the-text-when-a-check-box-is-checked-or-cleared"></a>Bir onay kutusu işaretli veya temizlenmiş metin biçimi  
  Kullanıcı bir biçimlendirme seçeneğini seçtiğinde, belgedeki metin biçimi değiştirin.  
   
-#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>Bir onay kutusu seçildiğinde biçimlendirmeyi değiştirmek için seçili  
+### <a name="change-formatting-when-a-check-box-is-selected"></a>Bir onay kutusu seçildiğinde biçimlendirmeyi değiştirme  
   
 1.  Sağ `ThisDocument` içinde **Çözüm Gezgini**ve ardından **görünümü kodu** kısayol menüsünde.  
   
@@ -140,30 +140,29 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
-## <a name="testing-the-application"></a>Uygulamayı Test Etme  
+## <a name="test-the-application"></a>Uygulamayı test etme  
  Artık seçtiğinizde veya onay kutusunu temizleyin, metni doğru biçimlendirildiğinden emin olmak için belgenizi test edebilirsiniz.  
   
-#### <a name="to-test-your-document"></a>Belgenizi test etmek için  
+### <a name="test-your-document"></a>Belgenizi test edin  
   
-1.  Projenizi çalıştırmak için F5 tuşuna basın.  
+1.  Tuşuna **F5** projeyi çalıştırın.  
   
 2.  Bir onay kutusunun işaretini kaldırın veya seçin.  
   
 3.  Metni doğru şekilde biçimlendirildiğini doğrulayın.  
   
-## <a name="next-steps"></a>Sonraki Adımlar  
+## <a name="next-steps"></a>Sonraki adımlar  
  Bu kılavuzda onay kutularını kullanarak ve program aracılığıyla metin Word belgelerini biçimlendirmesini değiştirme temellerini gösterir. Sonradan gelebilecek bazı görevler şunlardır:  
   
 -   Metin kutusunu doldurmak için bir düğmesini kullanın. Daha fazla bilgi için bkz: [izlenecek yol: bir belgeyi bir düğme kullanarak metin kutusunda metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Grafik türlerini seçmek için radyo düğmelerini kullanarak. Daha fazla bilgi için bkz: [izlenecek yol: belge kullanarak radyo düğmeleri grafik güncelleme](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Grafik türlerini seçmek için radyo düğmelerini kullanarak. Daha fazla bilgi için bkz: [izlenecek yol: radyo düğmelerini kullanarak belgede grafik güncelleştirme](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
--  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Word kullanımında izlenecek yollar](../vsto/walkthroughs-using-word.md)   
+
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Word'ü kullanarak izlenecek yollar](../vsto/walkthroughs-using-word.md)   
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
- [Office Belgelerindeki Windows Forms Denetimleri Sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Office belgelerindeki Windows Forms denetimleri sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

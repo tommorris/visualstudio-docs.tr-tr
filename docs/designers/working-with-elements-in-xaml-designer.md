@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3a3b45d8714c72e588f64cd5c1830cc97b9f136e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>XAML Tasarımcısı'nda öğeleri ile çalışma
 Öğeleri ekleyebilirsiniz — denetimleri, düzenleri ve şekiller — uygulamanıza kod ya da XAML Tasarımcısı kullanarak XAML'de. Bu konu Visual Studio veya Visual Studio için Blend'de XAML Tasarımcısı'nda öğeleri ile nasıl çalışılacağını açıklar.
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 
         -   **Geri Gönder** öğesi bu süreç boyunca tüm sırasını geri göndermek için.
 
-     Değişiklik **bölmenin** özelliğinde **düzeni** Özellikleri penceresinde bölümü. Öğeleri, çakışan için **bölmenin** özelliği önceliklidir Belge Anahattı penceresinde gösterilen öğelerin sırasını. Düşük olan bir öğeyi **bölmenin** değerinin göründüğü önde öğeleri çakıştığında.
+     Değişiklik **bölmenin** özelliğinde **düzeni** Özellikleri penceresinde bölümü. Öğeleri, çakışan için **bölmenin** özelliği önceliklidir Belge Anahattı penceresinde gösterilen öğelerin sırasını. Daha yüksek olan bir öğeyi **bölmenin** değerinin göründüğü önde öğeleri çakıştığında.
 
 ## <a name="changing-the-alignment-of-an-element"></a>Bir öğenin değiştirme
  Dayama çizgileri için öğeleri sürükleyerek veya menü komutlarını kullanarak çalışma yüzeyi öğelerinde hizalanmasını sağlayabilirsiniz.
@@ -74,7 +74,7 @@ ms.lasthandoff: 04/26/2018
 
      Kenarları hizalanır, bir *hizalama sınır* hizalama göstermek için görünür. Kırmızı kesikli çizgi hizalama sınırıdır. Hizalama sınırları yalnızca görünür **dayama çizgileri için tutturma** etkinleştirilir. Hizalama sınır gösteren yüzeyinin çizim için bkz: [XAML Tasarımcısını kullanarak bir kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="changing-the-an-elements-margins"></a>Değiştirme bir öğenin kenar boşlukları
+## <a name="changing-an-elements-margins"></a>Bir öğenin kenar boşluklarını değiştirme
  XAML Tasarımcısı'nda kenar boşluklarını öğenin yüzeyinde geçici boş alan miktarını belirler. Örneğin, bir öğenin dış kenarları ve sınırlarının arasındaki boşluk miktarı kenar boşluklarını belirtin bir `Grid` öğeyi içeren paneli. Kenar boşlukları bulunan öğeler arasında boşluk miktarını da belirtmeniz bir `StackPanel`.
 
 #### <a name="to-change-an-elements-margins-in-the-properties-window"></a>Bir öğenin kenar boşluklarını Özellikleri penceresinde değiştirmek için

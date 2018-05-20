@@ -1,5 +1,5 @@
 ---
-title: "&lt;appAddin&gt; öğesi (Visual Studio'da Office Geliştirme) | Microsoft Docs"
+title: "&lt;appAddin&gt; öğesi (Visual Studio'da Office Geliştirme)"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85fda0db34bf104032e82d5725ff4d3d7aa772cb
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 0defe437e0778ee9d3c134148a3ca7e4b4cd2ef9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; öğesi (Visual Studio'da Office Geliştirme)
-  `appAddin` Öğesinin `vstov4` ad alanı VSTO eklentileri için özelleştirme özgü bilgileri depolar.  
+  **AppAddin** öğesinin `vstov4` ad alanı VSTO eklentileri için özelleştirme özgü bilgileri depolar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```xml 
 <appAddin  
   application  
   loadBehavior  
@@ -38,35 +38,35 @@ ms.lasthandoff: 04/27/2018
 ```  
   
 ## <a name="elements-and-attributes"></a>Öğeleri ve öznitelikleri  
- `appAddin` Öğesi gereklidir ve yer `vstov4` ad alanı. Yalnızca bir tane `appAddin` uygulama bildiriminde tanımlanan öğe.  
+ **AppAddin** öğesi gereklidir ve yer `vstov4` ad alanı. Yalnızca bir tane **appAddin** uygulama bildiriminde tanımlanan öğe.  
   
- `appAddin` Öğesi aşağıdaki özniteliklere sahiptir.  
+ **AppAddin** öğesi aşağıdaki özniteliklere sahiptir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|`application`|Gerekli. Microsoft Office uygulamasının tanımlar. Değer şunlardan biri olabilir: Excel, InfoPath, Outlook, PowerPoint, proje, Visio veya Word.|  
-|`loadBehavior`|İsteğe bağlı. Varsayılan olarak, `loadBehavior` bu değeri ayarlamak etkinleştirilir. Hata ayıklama için VSTO eklentisi iki değerine ayarlayarak devre dışı bırakılabilir. LoadBehavior değerleri adlı tabloyu daha fazla bilgi için bkz: [VSTO eklentileri için kayıt defteri girişleri](../vsto/registry-entries-for-vsto-add-ins.md).|  
-|`keyName`|Gerekli. Bu değer uygulama tarafından VSTO eklenti yüklemek için kullanılan kayıt defteri anahtarı adını olur. Daha fazla bilgi için bkz: [VSTO eklentileri için kayıt defteri girişleri](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**Uygulama**|Gerekli. Microsoft Office uygulamasının tanımlar. Değer şunlardan biri olabilir: Excel, InfoPath, Outlook, PowerPoint, proje, Visio veya Word.|  
+|**LoadBehavior**|İsteğe bağlı. Varsayılan olarak, **loadBehavior** bu değeri ayarlamak etkinleştirilir. Hata ayıklama için VSTO eklentisi iki değerine ayarlayarak devre dışı bırakılabilir. LoadBehavior değerleri adlı tabloyu daha fazla bilgi için bkz: [VSTO eklentileri için kayıt defteri girişleri](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**anahtar adı**|Gerekli. Bu değer uygulama tarafından VSTO eklenti yüklemek için kullanılan kayıt defteri anahtarı adını olur. Daha fazla bilgi için bkz: [VSTO eklentileri için kayıt defteri girişleri](../vsto/registry-entries-for-vsto-add-ins.md).|  
   
- `appAddin` Öğe aşağıdaki alt öğeleri vardır.  
+ **AppAddin** öğe aşağıdaki alt öğeleri vardır.  
   
 ### <a name="friendlyname"></a>FriendlyName  
- İsteğe bağlı. `friendlyName` Öğesi içinde açıklanan [ &#60;friendlyName&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ İsteğe bağlı. **FriendlyName** öğesi içinde açıklanan [ &#60;friendlyName&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
 ### <a name="description"></a>açıklama  
- İsteğe bağlı. `description` Öğesi içinde açıklanan [ &#60;açıklama&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
+ İsteğe bağlı. **Açıklama** öğesi içinde açıklanan [ &#60;açıklama&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
   
 ### <a name="formregions"></a>formRegions  
- Yalnızca Outlook VSTO form bölgeleri içeren eklentileri için gereklidir. `formRegions` Öğesi içinde açıklanan [ &#60;formRegions&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
+ Yalnızca Outlook VSTO form bölgeleri içeren eklentileri için gereklidir. **FormRegions** öğesi içinde açıklanan [ &#60;formRegions&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
   
-## <a name="vsto-add-in-example"></a>VSTO eklentileri örneği  
+## <a name="vsto-add-in-example"></a>VSTO eklenti örneği  
   
 ### <a name="description"></a>Açıklama  
- Aşağıdaki kod örneği gösterilmektedir `appAddin` kullanılarak dağıtılan bir Outlook çözümü öğelerinde [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Bu kod örneği sağlanan daha büyük bir örneğin parçasıdır [uygulama bildirimleri Office çözümleri için](../vsto/application-manifests-for-office-solutions.md).  
+ Aşağıdaki kod örneği gösterilmektedir **appAddin** kullanılarak dağıtılan bir Outlook çözümü öğelerinde [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Bu kod örneği sağlanan daha büyük bir örneğin parçasıdır [uygulama bildirimleri Office çözümleri için](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstov4:appAddIn   
   application="Outlook"   
   loadBehavior="3"   
@@ -89,9 +89,9 @@ ms.lasthandoff: 04/27/2018
 </vstov4:appAddIn>  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md)   
  [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
   
   

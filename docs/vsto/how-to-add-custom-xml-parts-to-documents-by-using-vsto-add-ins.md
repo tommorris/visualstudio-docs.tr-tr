@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: VSTO eklentilerini kullanarak belgelere özel XML bölümleri ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: VSTO eklentileri kullanarak belgelere özel XML bölümleri ekleme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d06918a9b1d2bf1bec3f39d3e58352665d07e5c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d652f0890b32197bb13a3f73221f9ee2a92bcfc8
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Nasıl Yapılır: VSTO Eklentilerini Kullanarak Belgelere Özel XML Bölümleri Ekleme
+# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Nasıl yapılır: VSTO eklentileri kullanarak belgelere özel XML bölümleri ekleme
   Bir VSTO eklenti özel bir XML parçasına oluşturarak belgelerin aşağıdaki türlerden XML veri depolayabilirsiniz:  
   
 -   Microsoft Office Excel çalışma kitabı.  
@@ -80,11 +80,11 @@ ms.lasthandoff: 04/16/2018
   
 3.  Projenizdeki başka koddan yöntemi çağırın. Örneğin, bir sunu kullanıcı oturum açtığında özel XML parçaları oluşturmak için yöntemi için bir olay işleyicisi çağırmanıza <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen> olay.  
   
-## <a name="robust-programming"></a>Güçlü Programlama  
+## <a name="robust-programming"></a>Güçlü programlama  
  Kolaylık olması için bu örnek bir yerel değişken yöntemi olarak tanımlanan bir XML dizesini kullanır. Genellikle, bir dosya veya veritabanı gibi bir dış kaynaktan XML edinmeniz gerekir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Özel XML bölümlerine genel bakış](../vsto/custom-xml-parts-overview.md)   
- [Nasıl Yapılır: Belge Düzeyi Özelleştirmelerine Özel XML Bölümleri Ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
+ [Nasıl yapılır: belge düzeyi özelleştirmelerine özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
   

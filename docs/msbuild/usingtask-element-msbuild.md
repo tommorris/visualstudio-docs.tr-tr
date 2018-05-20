@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95e09639e9236b64f9c18c9bd90e6850ee13d86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 486ca90ac2a8a4b3b289b0896e2cd81239502558
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask Öğesi (MSBuild)
 Başvuru görev eşleyen bir [görev](../msbuild/task-element-msbuild.md) görev uygulamasını içeren derlemenin öğesi.  
@@ -68,10 +68,10 @@ Başvuru görev eşleyen bir [görev](../msbuild/task-element-msbuild.md) görev
 |[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesinin bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
 
 ## <a name="remarks"></a>Açıklamalar  
- Ortam değişkenleri, komut satırı özellikleri ve proje düzeyi özellikleri de herhangi bir yere başvurulabilir `UsingTask` açıkça veya alınan proje dosyası aracılığıyla proje dosyasında görünürse öğesi. Daha fazla bilgi için bkz: [görevleri](../msbuild/msbuild-tasks.md).  
+ Ortam değişkenleri, komut satırı özelliklerini, proje düzeyi özellikleri ve proje düzeyi öğeleri başvuruda bulunabilir içinde `UsingTask` öğeleri ya da doğrudan veya içeri aktarılan projesinde aracılığıyla dosya proje dosyasında bulunur. Daha fazla bilgi için bkz: [görevleri](../msbuild/msbuild-tasks.md).  
 
 > [!NOTE]
->  Proje düzeyi özellikleri varsa hiçbir anlamı `UsingTask` öğesi genel olarak MSBuild altyapısı ile kayıtlı .tasks dosyaları birinden geliyor. Proje düzeyi özellikleri MSBuild için genel değil.  
+>  Proje düzeyi özellikleri ve öğeleri varsa hiçbir anlamı `UsingTask` öğesi genel olarak MSBuild altyapısı ile kayıtlı .tasks dosyaları birinden geliyor. Proje düzeyi değerleri MSBuild için genel değildir.  
 
  MSBuild 4. 0'da, görevler kullanma .overridetask dosyalarından yüklenebilir.  
 

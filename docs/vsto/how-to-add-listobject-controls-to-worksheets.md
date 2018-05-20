@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,18 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 55d3a26f0fbf02556071dfc16d08357519b5cff9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3ab95f3929b556f6ece0d3b44ee12bad6f21a361
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-add-listobject-controls-to-worksheets"></a>Nasıl yapılır: Çalışma Sayfalarına ListObject Denetimleri Ekleme
+# <a name="how-to-add-listobject-controls-to-worksheets"></a>Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme
   Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.ListObject> Microsoft Office Excel çalışma zamanında ve belge düzeyi projelerine çalışma zamanında denetimler.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Ayrıca ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.ListObject> VSTO eklentisi projelerine çalışma zamanında denetimler.  
+ Ayrıca ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.ListObject> denetimlerini çalışma zamanında VSTO eklentisi projelerine.  
   
  Bu konuda aşağıdaki görevler açıklanmaktadır:  
   
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Belge düzeyi projesindeki çalışma zamanında ListObject denetimleri ekleme](#runtimedoclevel)  
   
--   [VSTO eklenti projesindeki çalışma zamanında ListObject denetimleri ekleme](#runtimeaddin)  
+-   [Çalışma zamanında VSTO eklenti projesindeki ListObject denetimleri ekleme](#runtimeaddin)  
   
  Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Excel.ListObject> denetimleri bkz [ListObject denetimi](../vsto/listobject-control.md).  
   
@@ -78,8 +78,8 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]  
   
-##  <a name="runtimeaddin"></a> Bir VSTO eklenti projesindeki çalıştırma zamanında ListObject denetimleri ekleme  
- Ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Excel.ListObject> VSTO eklenti projesindeki herhangi bir açık çalışma sayfasına program aracılığıyla denetimine. Dinamik olarak oluşturulmuş liste nesneleri çalışma sayfasında sürdürülmez zaman çalışma kaydedildiğinde ve sonra kapatıldığında konak kontrolü olarak. Daha fazla bilgi için bkz: [genişletme Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+##  <a name="runtimeaddin"></a> Çalışma zamanında VSTO eklenti projesindeki ListObject denetimleri ekleme  
+ Ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Excel.ListObject> VSTO eklenti projesindeki herhangi bir açık çalışma sayfasına program aracılığıyla denetimine. Dinamik olarak oluşturulmuş liste nesneleri çalışma sayfasında sürdürülmez zaman çalışma kaydedildiğinde ve sonra kapatıldığında konak kontrolü olarak. Daha fazla bilgi için bkz: [genişletmek Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>ListObject denetimi bir çalışma sayfasına programlı olarak eklemek için  
   
@@ -88,14 +88,14 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Genişletme Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO eklentileri](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   
  [ListObject denetimi](../vsto/listobject-control.md)   
- [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirme](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Nasıl yapılır: ListObject denetimlerinin boyutunu değiştirme](../vsto/how-to-resize-listobject-controls.md)   
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Konak Denetimlerinin ve Konak Öğelerinin Programlama Sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

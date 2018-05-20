@@ -9,11 +9,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f29251a7b8f5e38e5b74a6aabd17ae0ccfec7651
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 20c483b40cf1cc45b730ea67bf01ea452c42af1e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-memory-usage"></a>Bellek kullanımını çözümleme
 Hata ayıklayıcı tümleşik kullanmak **bellek kullanımı** bellek sızıntıları ve verimli bellek kullanımı bulmak için tanı aracı. Uygulamanız bir veya daha fazla bellek kullanımı araç sağlar *anlık görüntüleri* , yönetilen ve yerel bellek yığını. .NET, yerel ya da karma mod (.NET ve yerel) uygulamaları anlık görüntüleri toplayabilirsiniz.  
@@ -32,8 +32,8 @@ Ayrıntılı yönergeler için bkz: [bellek kullanımını çözümleme](../prof
 
  [Hata ayıklama sırasında CPU ve bellek çözümleme](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   
- [Visual C++ Blog: Visual C++ 2015'te bellek profili oluşturma](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
+ [Visual C++ blog: Visual C++ 2015'te bellek profili oluşturma](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
  [Visual Studio'da profil oluşturma](../profiling/index.md)  
- [Özellik turu profil oluşturma](../profiling/profiling-feature-tour.md)
+ [Profil oluşturma özelliği turu](../profiling/profiling-feature-tour.md)

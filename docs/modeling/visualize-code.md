@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 027a73343683b7953e70b597a8f9a222b56eb01f
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 5db66307ef9c0099e152e46c0aac761519881cd3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="visualize-code"></a>Kodu görselleştirme
 
@@ -37,22 +37,14 @@ Visual Studio hangi sürümlerinin her özelliğini desteklemek için bkz [mimar
 
 |||
 |-|-|
-|**Kod ve ilişkileri anlama:**<br /><br /> Özel kod parçalarını arasındaki ilişkileri eşleyin.<br /><br /> İlişkileri kodunuzda çözümün tamamı için genel bir bakış konusuna bakın.<br /><br /> **Not**: Visual Studio'nun bu sürümünde terimi *kod Haritası* yerine kullanılan *bağımlılık grafiğinin*.|- [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br />- [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [Kod Haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [Hata ayıklarken çağrı yığınında yöntemler eşleştirme](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**Kod ve ilişkileri anlama:**<br /><br /> Özel kod parçalarını arasındaki ilişkileri eşleyin.<br /><br /> İlişkileri kodunuzda çözümün tamamı için genel bir bakış konusuna bakın.|- [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br />- [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [Kod Haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [Hata ayıklarken çağrı yığınında yöntemler eşleştirme](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**Sınıf yapıları anlama:**<br /><br /> Bir projedeki sınıfların yapısını koddan sınıf diyagramları oluşturarak görselleştirin.|[Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
 |**Bu tasarım karşı kodu doğrulamak ve üst düzey sistem tasarımı açıklanmıştır:**<br /><br /> Üst düzey sistem tasarımı ve hedeflenen bağımlılıklarını bağımlılık diyagramları oluşturarak açıklanmaktadır. Koddaki bağımlılıklara tasarım ile tutarlı kalmasını emin olmak için bu tasarıma karşı kodu doğrulayın.|- [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md)<br />- [Bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)<br />- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|
 
-## <a name="external-resources"></a>Dış Kaynaklar
-
-|**Kategori**|**Bağlantılar**|
-|------------------|---------------|
-|**Forumları**|- [Visual Studio Görselleştirme ve Modelleme Araçları](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Görselleştirme ve modelleme SDK (DSL araçları)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Bloglar**|[Visual Studio ALM + Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Teknik makaleler ve günlükleri**|[MSDN mimarisi Forumu](http://go.microsoft.com/fwlink/?LinkId=201343)|
-
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
-- [Çözümleme ve mimarinin modelini oluşturma](../modeling/analyze-and-model-your-architecture.md)
+- [Çözümleme ve Mimarinizi modelleme](../modeling/analyze-and-model-your-architecture.md)
 - [Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)
 - [Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)
 

@@ -11,13 +11,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61d4506f4b9ee68e7920fa4bbb4c463d00cceb73
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5268e6821714dc6850541c319dba450bcc04490b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="setting-general-performance-session-options"></a>Genel Performans Oturumunu Ayarlama Seçenekleri
+# <a name="set-general-performance-session-options"></a>Genel Performans oturumunu seçeneklerini ayarlama
 
 Koleksiyon yöntemini ve Visual Studio Profil Araçları performans oturumu için profil oluşturma veri adlandırma kuralları ayarlayabilirsiniz **genel** performans oturumu için Özellikler iletişim kutusunun sayfası. Bu iletişim kutusu açmak için **performans Gezgini**, performans oturumu sağ tıklatın ve ardından **özellikleri**.
 
@@ -35,13 +35,14 @@ Altındaki seçeneklerden birini seçerek temel toplama yöntemi ayarlayın **ko
 
 |||
 |-|-|
-|**.NET nesne ayırma bilgilerini toplamak**. Varsayılan olarak, veri sayısını ve boyutunu tahsis edilen nesnelerin içerir. Seçin veya etkinleştirmek veya .NET bellek verileri toplama devre dışı bırakmak için bu onay kutusunu temizleyin.<br /><br /> **Ayrıca .NET nesne ömrü bilgileri toplamak**. Bellek nesneleri geri kazanmak için kullanılan atık toplama nesli hakkındaki verileri eklemek için bu onay kutusunu seçin.|- [.NET bellek ayırma ve yaşam süresi verilerini toplama](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)|
+|**.NET nesne ayırma bilgilerini toplamak**. Varsayılan olarak, veri sayısını ve boyutunu tahsis edilen nesnelerin içerir. Seçin veya etkinleştirmek veya .NET bellek verileri toplama devre dışı bırakmak için bu onay kutusunu temizleyin. |- [.NET bellek ayırma ve yaşam süresi verilerini toplama](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)|
+|**Ayrıca .NET nesne ömrü bilgileri toplamak**. Bellek nesneleri geri kazanmak için kullanılan atık toplama nesli hakkındaki verileri eklemek için bu onay kutusunu seçin.|- [.NET bellek ayırma ve yaşam süresi verilerini toplama](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  |
 
  Burada, duraklatma, sürdürme ve profil oluşturmayı durdurmak, bir uygulamaya profil başladığında bir profil oluşturma oturumu sayfası görüntülenir.
 
  ![Profil oluşturma oturumu sayfa](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
-## <a name="setting-profiling-data-file-options"></a>Profil oluşturma veri dosyası seçeneklerini ayarlama
+## <a name="set-profiling-data-file-options"></a>Profil oluşturma veri dosyası seçeneklerini ayarlama
 
 |||
 |-|-|

@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0452d590395198528788cb433f6ccf9b4a4396b7
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
-ms.translationtype: HT
+ms.openlocfilehash: f286ffcac3ded3d547052d011436d64c3ec058df
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="args"></a>Bağımsız Değişkenler
 VSPerfCmd.exe **Args** seçeneği belirtir hedef uygulama için geçirilen bağımsız değişken listesini **başlatma** alt komutu.  
@@ -43,8 +43,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Args:"123, 'Hello World'"  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Bağımsız uygulamaların profilini oluşturma](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET Web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [ASP.NET web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md)

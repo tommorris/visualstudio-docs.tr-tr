@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee85f9946e16b0ecaafa196e1b197304ccde3bd9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d1461e90ebbd32483eb6d8e2925e1e226faf5ea4
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU örnekleme için Başlangıç Kılavuzu
 Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözümlemek için kullanabilirsiniz. Bu yordam nasıl kullanılacağını gösterir **örnekleme** veri.
@@ -32,10 +32,10 @@ Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözü
   
  Belirtilen aralıklarda **örnekleme** yöntemi uygulamanızda yürütülen işlevler hakkında bilgi toplar. Bir çalıştırmak, profil oluşturma işlemini tamamladıktan sonra **özeti** profil, görünüm verileri en etkin işlevi çağrısı ağacında gösterir adlı **etkin yolunuzda**, burada uygulamadaki işlerin çoğunu gerçekleştirilmedi. Görünümü de ayrı ayrı çoğu iş gerçekleştirdiğiniz işlevleri listeler ve örnekleme oturum belirli kesimlerinde odaklanmak için kullanabileceğiniz bir zaman çizelgesi grafik sağlar.  
   
- Varsa **örnekleme** ihtiyacınız veri vermez size yardımcı olabilecek bilgiler farklı türde diğer profil oluşturma araçları koleksiyon yöntemleri sağlar. Bu diğer yöntemler hakkında daha fazla bilgi için bkz: [nasıl yapılır: Koleksiyon yöntemleri seçin](../profiling/how-to-choose-collection-methods.md).  
+ Varsa **örnekleme** ihtiyacınız veri vermez size yardımcı olabilecek bilgiler farklı türde diğer profil oluşturma araçları koleksiyon yöntemleri sağlar. Bu diğer yöntemler hakkında daha fazla bilgi için bkz: [nasıl yapılır: Koleksiyon yöntemleri seçme](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Windows işlevlerini çağıran kodu profil, en güncel .pdb dosyaları sahip olduğunuzdan emin olun. Bu dosyalar olmadan rapor görünümlerini şifreli ve anlaşılması zor Windows işlev adlarını listeler. İhtiyacınız olan dosyalara sahip olduğunuzdan emin olmak nasıl hakkında daha fazla bilgi için bkz: [nasıl yapılır: başvuru pencereleri sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
+>  Windows işlevlerini çağıran kodu profil, en güncel .pdb dosyaları sahip olduğunuzdan emin olun. Bu dosyalar olmadan rapor görünümlerini şifreli ve anlaşılması zor Windows işlev adlarını listeler. İhtiyacınız olan dosyalara sahip olduğunuzdan emin olmak nasıl hakkında daha fazla bilgi için bkz: [nasıl yapılır: başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ##  <a name="Step1"></a> Oluşturma ve Performans oturumunu çalıştırma  
  Analiz etmek için gereken verileri almak için öncelikle bir performans oturumu oluşturmanız ve oturum çalıştırın. **Performans Sihirbazı** her ikisini de yapmanızı sağlar.  
@@ -68,7 +68,7 @@ Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözü
   
  Verilerinizi inceleyerek incelemeye başlamak öneririz **etkin yolunuzda** sonra en fazla çalışmayı yapan ve son olarak göre odaklanan diğer işlevleri kullanarak işlevlerin listesi **Özet zaman çizelgesi** . Profil oluşturma önerileri ve Uyarılar ile de görüntüleyebilirsiniz **hata listesi** penceresi.  
   
- Örnekleme yöntemi, gereksinim duyduğunuz bilgileri sağlamayabilir olduğunu unutmayın. Örneğin, yalnızca uygulamanın kullanıcı modunda kod çalıştırırken örnekleri toplanır. Bu nedenle, girdi ve çıktı işlemleri gibi bazı işlevleri örnekleme tarafından sayılmaz. Profil oluşturma araçları, önemli verilerin odaklanmaya etkinleştirebilirsiniz birkaç koleksiyon yöntemleri sağlar. Diğer yöntemler hakkında daha fazla bilgi için bkz: [nasıl yapılır: Koleksiyon yöntemleri seçin](../profiling/how-to-choose-collection-methods.md).  
+ Örnekleme yöntemi, gereksinim duyduğunuz bilgileri sağlamayabilir olduğunu unutmayın. Örneğin, yalnızca uygulamanın kullanıcı modunda kod çalıştırırken örnekleri toplanır. Bu nedenle, girdi ve çıktı işlemleri gibi bazı işlevleri örnekleme tarafından sayılmaz. Profil oluşturma araçları, önemli verilerin odaklanmaya etkinleştirebilirsiniz birkaç koleksiyon yöntemleri sağlar. Diğer yöntemler hakkında daha fazla bilgi için bkz: [nasıl yapılır: Koleksiyon yöntemleri seçme](../profiling/how-to-choose-collection-methods.md).  
   
  Şekil numaralı her alanda bir yordamda adım ile ilgilidir.  
   
@@ -123,9 +123,9 @@ Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözü
   
      Karşılaştırma sonuçlarını görüntüleyen yeni bir rapor penceresi açılır. Karşılaştırma Görünümü kullanma hakkında daha fazla bilgi için bkz: [nasıl yapılır: performans veri dosyalarını karşılaştırma](../profiling/how-to-compare-performance-data-files.md).
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Performans Gezgini](../profiling/performance-explorer.md)   
  [Başlarken](../profiling/getting-started-with-performance-tools.md)   
  [Genel Bakışlar](../profiling/overviews-performance-tools.md)  
  [Visual Studio'da profil oluşturma](../profiling/index.md)  
- [Özellik turu profil oluşturma](../profiling/profiling-feature-tour.md)
+ [Profil oluşturma özelliği turu](../profiling/profiling-feature-tour.md)

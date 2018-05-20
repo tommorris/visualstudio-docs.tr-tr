@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2a6642b03d5e49763cd18bccae8f88ff1f7c5bd4
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: a61f2cd0e961aaa726f9a56cf75c4efb0ed77ae9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET EditorConfig kuralı ayarlarını kodlama
 
@@ -84,7 +84,7 @@ Aşağıdaki liste, izin verilen dil kuralı kuralları gösterir:
         - DotNet\_stili\_coalesce_expression
         - DotNet\_stili\_null_propagation
 - C# kod stili ayarları
-    - [Örtük ve açık türleri](#var)
+    - [Örtük ve açık türleri](#implicit-and-explicit-types)
         - CSharp\_stili\_var\_için\_yerleşik\_in_types
         - CSharp\_stili\_var\_zaman\_türü\_is_apparent
         - CSharp\_stili\_var_elsewhere
@@ -592,7 +592,7 @@ dotnet_style_null_propagation = true:suggestion
 
 Bu bölümdeki stil kurallarını yalnızca C# için geçerlidir.
 
-#### <a name="var"></a>Örtük ve açık türleri
+#### <a name="implicit-and-explicit-types"></a>Örtük ve açık türleri
 
 Bu bölümdeki stil kurallarını (kimlikleri IDE0007 ve IDE0008 kural) kullanımını ilgilendiren [var](/dotnet/csharp/language-reference/keywords/var) anahtar sözcüğü bir açık tür Değişken bildiriminde karşılaştırması. Bu kural türü görünen olduğunda yerleşik türleri ve diğer yerlerde için ayrı olarak uygulanabilir.
 

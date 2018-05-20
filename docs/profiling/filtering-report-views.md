@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c613e4b200df0153827fb10013416211a2eb2062
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a85d5cd2fc1a6b86b209cad7de08f60f01fd0c9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="filtering-report-views"></a>Rapor Görünümlerini Filtreleme
+# <a name="filter-report-views"></a>Rapor görünümlerini filtreleme
 Profil oluşturma veri dosyalarıyla performans raporu görünümlerde görüntülenmesi ve verilen rapor dosyaları için profil oluşturma verileri sınırlamak için için filtreler uygulayabilirsiniz. Belirli işlemleri ve iş parçacıklarını verileri sınırlayabilir ve zaman damgası değerlerini arasındaki verileri için bir rapor sınırlayabilirsiniz. Dosya filtreleri Kaydet ve kaydedilmiş filtre içeri aktararak Bu filtre farklı bir profil oluşturma veri dosyası oluşturun.  
   
  Özet görünümü grafik bir zaman çizelgesi kullanarak da zaman diliminin rapor sınırlandırabilirsiniz. Bkz: [nasıl yapılır: Özet zaman çizelgesinden rapor görünümlerini filtreleme](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
@@ -42,7 +42,6 @@ Profil oluşturma veri dosyalarıyla performans raporu görünümlerde görünt�
     |**işleci**|Alan ve değer arasında yan tümcesinde istediğiniz ilişkiyi belirten işleci seçin.<br /><br /> = Eşittir<br /><br /> <> Eşit değildir<br /><br /> < Küçüktür<br /><br /> > Büyüktür<br /><br /> < = küçüktür veya eşittir<br /><br /> > = büyüktür veya eşittir|  
     |**Değer**|Aranacak bir değer girin veya seçin. Bazı alanları alan için kullanılabilir değerleri listeler.|  
   
-3.  
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Profil Oluşturucusu rapor filtresi işaretleri rapor görünümünden oluşturmak için  
   
@@ -92,5 +91,5 @@ Profil oluşturma veri dosyalarıyla performans raporu görünümlerde görünt�
   
 2.  Kaydetmek için filtre (.vspf) dosya konumu ve dosya adını belirtin.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Rapor görünümlerini özelleştirme performans araçları](../profiling/customizing-performance-tools-report-views.md)

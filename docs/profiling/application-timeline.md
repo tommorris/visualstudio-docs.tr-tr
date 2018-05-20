@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d1b8a01671ed37d8e83ca97218a3666cad40c60b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Kaynak tüketimini ve kullanıcı Arabirimi iş parçacığı etkinliği (XAML) çözümler.
-Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek için Profil Oluşturucu ile ilgili performans sorunları XAML uygulamaları. Bu araç, uygulamaları kaynak tüketimini ayrıntılı bir görünümünü sağlayarak XAML uygulamalarının performansını artırmaya yardımcı olur. UI çerçeveler (düzeni ve işleme) hazırlama, ağ ve disk isteklere hizmet uygulamanızı ve uygulama başlatma, sayfa yükleme ve Windows yeniden boyutlandırma gibi senaryolarda zamanın analiz edebilirsiniz.  
+Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek için Profil Oluşturucu ile ilgili performans sorunları XAML uygulamaları. Bu araç, uygulamaları kaynak tüketimini ayrıntılı bir görünümünü sağlayarak XAML uygulamalarının performansını artırmaya yardımcı olur. UI çerçeveler (düzeni ve işleme) hazırlama, ağ ve disk isteklere hizmet uygulamanızı ve uygulama başlatma, sayfa yükleme gibi senaryolarda zamanın çözümleyebilir ve Windows yeniden boyutlandırın.  
   
- **Uygulama zaman çizelgesi** ile başlar araçları biri **hata ayıklama / Performans Profil Oluşturucu...**  komutu.  
+ **Uygulama zaman çizelgesi** ile başlar araçları biri **hata ayıklama** > **Performans Profil Oluşturucu** komutu.  
   
  Bu araç değiştirir **XAML UI yanıtlama hızı** Visual Studio 2013 için tanılama araç takımı parçası olan aracı.  
   
@@ -36,7 +36,7 @@ Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek
 > [!NOTE]
 >  Toplamak ve CPU kullanım verilerini ve enerji Tüketim verileri ile birlikte çözümlemek **ApplicationTimeline** veri. Bkz: [ile veya olmadan hata ayıklayıcı Profil Araçları çalıştıran](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Uygulama zaman çizelgesi verileri toplama  
+##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Uygulama zaman çizelgesi verilerini topla  
  Yerel makinenize, bağlı bir aygıt, Visual Studio simulator veya Öykünücüler veya uzak bir aygıt, uygulamanızın yanıtlama hızı profil. Bkz: [ile veya olmadan hata ayıklayıcı Profil Araçları çalıştıran](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 > [!TIP]
@@ -46,7 +46,7 @@ Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek
   
 1.  XAML uygulamanızı açın.  
   
-2.  Tıklatın **hata ayıklama / Performans Profil Oluşturucu...** . Profil Araçları .diagsession penceresinde bir listesini görürsünüz.  
+2.  Tıklatın **hata ayıklama / Performans Profil Oluşturucu**. Profil Araçları .diagsession penceresinde bir listesini görürsünüz.  
   
 3.  Seçin **uygulama zaman çizelgesi** ve ardından **Başlat** pencerenin altındaki.  
   
@@ -96,7 +96,7 @@ Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek
 |||  
 |-|-|  
 |**Ayrıştırma**|Ayrıştırma XAML dosyaları ve oluşturma nesneleri için harcanan süre.<br /><br /> Genişleyen bir **ayrıştırma** düğümünde **zaman çizelgesi ayrıntıları** sonucunda kök olay Ayrıştırılan tüm XAML dosyaları bağımlılık zinciri görüntüler. Bu, gereksiz dosya ayrıştırma ve nesne oluşturma performans hassas senaryolarda tanımlamak ve bunları en iyi duruma getirmek olanak tanır.|  
-|**Düzen**|Büyük uygulamalarda, aynı anda ekranda öğeleri binlerce gösterilebilir. Bu bir düşük UI kare hızı ve buna bağlı olarak zayıf uygulama yanıt hızını neden olabilir. Düzen olay doğru şekilde her öğe (Düzenle, ölçü, ApplyTemplate, ArrangeOverride ve ArrangeOverride harcanan zaman) düzenlemeyi maliyetini belirler ve bölüm düzeni geçişinde sürdü görsel ağaçlar oluşturur. Bu görselleştirmenin mantıksal ağaçları hangisinin ayıklama gerektiğini ya da diğer erteleme mekanizmaları düzeni geçişi en iyi duruma getirme değerlendirmek için kullanabilirsiniz.|  
+|**Düzen**|Büyük uygulamalarda, aynı anda ekranda öğeleri binlerce gösterilebilir. Bu bir düşük UI kare hızı ve buna bağlı olarak zayıf uygulama yanıt hızını neden olabilir. Düzen olay doğru şekilde her öğe (Düzenle, ölçü, ApplyTemplate, ArrangeOverride ve ArrangeOverride harcanan zaman) düzenlemeyi maliyetini belirler ve bölüm düzeni geçişinde sürdü görsel ağaçlar oluşturur. Bu görselleştirme, mantıksal ağaçları ayıklanacağını ya da diğer erteleme mekanizmaları düzeni geçişi en iyi duruma getirme değerlendirmek için hangisinin belirlemek için kullanabilirsiniz.|  
 |**İşleme**|Çizim XAML öğeleri ekranda geçirilen süre.|  
 |**T / 0**|Harcanan zamanı yerel diskten veya üzerinden erişilen ağ kaynaklarına veri alma [Microsoft Windows Internet (WinINet) API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Uygulama kodu**|Ayrıştırma veya düzenine ilgili olmayan uygulama (kullanıcı) kod çalıştırırken için harcanan süre.|  
@@ -115,7 +115,7 @@ Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek
 |![Filtre zaman çizelgesi ayrıntıları listesi](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Seçili kategorileri ve olayları uzunluğunu listeyi filtreler.|  
 |![Zaman Çizelgesi ayrıntıları bilgileri özelleştirin](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Ek açıklamalar olayları belirtmenize olanak sağlar.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [WPF ekibi blogu: Yeni kullanıcı Arabirimi Performans Analizi aracını WPF uygulamaları için](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
  [C++, C# ve Visual Basic kullanarak UWP uygulamaları için performansı en iyi yöntemler](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [WPF Uygulama Performansını İyileştirme](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  

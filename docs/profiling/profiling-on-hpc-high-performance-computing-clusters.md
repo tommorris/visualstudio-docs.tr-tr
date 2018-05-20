@@ -21,15 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4542289e0d9dceeeadf972db714148d4e1bec4d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="profiling-on-hpc-high-performance-computing-clusters"></a>HPC (Yüksek Performanslı Hesaplama) Kümelerinde Profil Oluşturma
+# <a name="profile-on-hpc-high-performance-computing-clusters"></a>HPC (yüksek performanslı hesaplama) profili kümeleri
 
-Profil oluşturma Visual Studio Araçları örnekleme yöntemini kullanarak işlem Microsoft Windows HPC küme düğümlerinde profil. HPC hakkında daha fazla bilgi için bkz: [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) Microsoft Web sitesinde.
+Profil oluşturma Visual Studio Araçları örnekleme yöntemini kullanarak işlem Microsoft Windows HPC küme düğümlerinde profil. HPC hakkında daha fazla bilgi için bkz: [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) Microsoft Web sitesinde.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -57,7 +57,7 @@ Bir HPC işlem düğümünde profil için aşağıdakileri yapmanız gerekir:
 |*%FxPath%*|Yolu [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] yükleyici. Visual Studio yükleme medyasında yoludur: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|
 |*%ProfilerPath%*|Profil oluşturma araçları yükleyici tek başına sürümü yolu. Visual Studio yükleme medyasında yoludur: tek başına Profiler\x64\vs_profiler.exe|
 
-## <a name="profiling-on-an-hpc-compute-node"></a>Bir HPC işlem düğümünde profil oluşturma
+## <a name="profile-on-an-hpc-compute-node"></a>Bir HPC işlem düğümünde profil
 
 Profil oluşturma oturumu HPC küme ve hedef bilgileri belirtmek için HPC performans Sihirbazı'nı kullanarak yapılandırın. Performans oturumu özellik sayfalarında ek seçenekler belirleyebilirsiniz. Profil oluşturma araçları otomatik olarak gerekli hedef ikili dosyaları dağıtma ve profil oluşturucu ve HPC uygulama başlatma.
 
@@ -105,7 +105,7 @@ Profil oluşturma oturumu HPC küme ve hedef bilgileri belirtmek için HPC perfo
 
 10. **Son**'a tıklayın.
 
-## <a name="setting-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Performans oturumu özellik sayfalarını kullanarak HPC profil özelliklerini ayarlama
+## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Performans oturumu özellik sayfalarını kullanarak özellikleri profil HPC Kümesi
 
 HPC profili oluşturma Sihirbazı'nı performans oturum özellikleri sayfasının HPC başlatma özellikleri sayfasında üzerinde ayarladığınız performans oturum özellikleri değiştirebilirsiniz. HPC Gelişmiş Özellikler sayfasındaki ek seçenekleri ayarlayın.
 

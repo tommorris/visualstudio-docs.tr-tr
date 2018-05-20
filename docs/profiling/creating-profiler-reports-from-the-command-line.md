@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c7bde83ce810f8260e61eacddf1a086953a63a4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d925e2c20a304239c8b510bf9ecc1fba123c4dfa
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="creating-profiler-reports-from-the-command-line"></a>Komut Satırından Profil Oluşturma Raporları Oluşturma
+# <a name="create-profiler-reports-from-the-command-line"></a>Komut satırından profil oluşturucu raporları oluşturma
 **VSPerfReport** komut satırı aracı, veri (.vsp) dosyaları profil .xml veya virgülle ayrılmış değer (.csv) raporlar oluşturmanıza olanak sağlar. VSPerfReport rapor türleri arabirim için tablo tabanlı görünümlerini karşılayabilmesi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Yalnızca kodunuzun göstermek için ve profil oluşturma veri dosyası yalnızca bir parçasını göstermek için raporu filtreleyebilirsiniz. Daha fazla bilgi için bkz: [VSPerfReport](../profiling/vsperfreport.md).  
   
  Profil oluşturma veri dosyaları daha kolay .vsp dosyaları sembolleri katıştırma tarafından ve daha küçük ve açmak daha hızlı (.vsps) dosyalarını önceden çözümlenen raporu oluşturarak paylaşmak de yapabilirsiniz.  
   
-## <a name="common-tasks"></a>Ortak Görevler  
+## <a name="common-tasks"></a>Ortak görevler
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  

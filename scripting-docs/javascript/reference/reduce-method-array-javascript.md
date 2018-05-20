@@ -1,12 +1,13 @@
 ---
-title: "reduce yöntemi (dizi) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: reduce yöntemi (dizi) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - arrays [JavaScript], reduce method
 - reduce method [JavaScript]
 ms.assetid: 48d069e0-e083-494f-86d5-d459d2377dc5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76279f66f8e3180fdebd73b83eb31c7368cefc75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d99f92d90885f26b19392b476ee64ae17bd40aed
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="reduce-method-array-javascript"></a>reduce Yöntemi (Dizi) (JavaScript)
 Bir dizinin tüm öğeleri için belirtilen geri çağırma işlevini çağırır. Geri çağrı işlevinin dönüş değeri biriken sonuçtur ve geri çağrı işlevine yapılan sonraki çağrıda bir bağımsız değişken olarak sağlanır.  
@@ -58,7 +59,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="remarks"></a>Açıklamalar  
  Varsa bir `initialValue` sağlanan `reduce` yöntem çağrılarını `callbackfn` işlev mevcut dizin artan dizideki her öğe için bir kez. Varsa bir `initialValue` sağlanmadı, `reduce` yöntem çağrılarını `callbackfn` ikinci öğesi ile başlayan her öğenin işlevi.  
   
- Geri çağırma işlevinin dönüş değeri olarak sağlanan `previousValue` sonraki çağrı geri çağırma işlevi bağımsız değişken. Son çağrı geri çağırma işlevi için dönüş değerini dönüş değeri `reduce` yöntemi.  
+ Geri çağırma işlevinin dönüş değeri olarak sağlanan `accumulator` sonraki çağrı geri çağırma işlevi bağımsız değişken. Son çağrı geri çağırma işlevi için dönüş değerini dönüş değeri `reduce` yöntemi.  
   
  Geri çağırma işlevi, dizinin eksik öğeleri için çağrılmaz.  
   
@@ -68,7 +69,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="callback-function-syntax"></a>Geri Çağırma İşlevi Sözdizimi  
  Geri çağırma işlevinin sözdizimi aşağıdaki gibidir:  
   
- `function callbackfn(previousValue, currentValue, currentIndex, array1)`  
+ `function callbackfn(accumulator, currentValue, currentIndex, array1)`  
   
  En fazla dört parametre kullanarak geri çağırma işlevi bildirebilirsiniz.  
   
@@ -76,7 +77,7 @@ array1.reduce(callbackfn[, initialValue])
   
 |Geri çağırma bağımsız değişkeni|Tanım|  
 |-----------------------|----------------|  
-|`previousValue`|Geri çağırma işlevi önceki çağrısı değeri. Varsa bir `initialValue` için sağlanan `reduce` yöntemi, `previousValue` olan `initialValue` işlevi çağrıldığında ilk kez.|  
+|`accumulator`|Geri çağırma işlevi önceki çağrısı değeri. Varsa bir `initialValue` için sağlanan `reduce` yöntemi, `accumulator` olan `initialValue` işlevi çağrıldığında ilk kez.|  
 |`currentValue`|Geçerli dizi öğesinin değeri.|  
 |`currentIndex`|Geçerli dizi öğesi sayısal dizini.|  
 |`array1`|Öğeyi içeren dizi nesnesi.|  
@@ -86,13 +87,13 @@ array1.reduce(callbackfn[, initialValue])
   
  Varsa bir `initialValue` azaltın yöntemi sağlanır:  
   
--   `previousValue` Bağımsız değişkeni `initialValue`.  
+-   `accumulator` Bağımsız değişkeni `initialValue`.  
   
 -   `currentValue` Bağımsız değişkeni, ilk öğe dizisinde değerdir.  
   
  Varsa bir `initialValue` sağlanmaz:  
   
--   `previousValue` Bağımsız değişkeni, ilk öğe dizisinde değerdir.  
+-   `accumulator` Bağımsız değişkeni, ilk öğe dizisinde değerdir.  
   
 -   `currentValue` Bağımsız değişkeni, ikinci öğesi dizisinde değerdir.  
   
@@ -109,12 +110,12 @@ array1.reduce(callbackfn[, initialValue])
 |Öğe diziden silindi.|Hayır, o öğe henüz geri çağırma işlevine aktarılmadıysa.|  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek değerlerle ayıran bir dizeye dizi değerlerini sıralar "::". İlk değer sağlandığından `reduce` yöntemi, geri çağırma işlevi ilk çağrıda sahip "abc" olarak `previousValue` bağımsız değişkeni ve "def" olarak `currentValue` bağımsız değişkeni.  
+ Aşağıdaki örnek değerlerle ayıran bir dizeye dizi değerlerini sıralar "::". İlk değer sağlandığından `reduce` yöntemi, geri çağırma işlevi ilk çağrıda sahip "abc" olarak `accumulator` bağımsız değişkeni ve "def" olarak `currentValue` bağımsız değişkeni.  
   
 ```JavaScript  
 // Define the callback function.  
-function appendCurrent (previousValue, currentValue) {  
-    return previousValue + "::" + currentValue;  
+function appendCurrent (accumulator, currentValue) {  
+    return accumulator + "::" + currentValue;  
     }  
   
 // Create an array.  
@@ -136,8 +137,8 @@ document.write(result);
   
 ```JavaScript  
 // Define the callback function.  
-function addRounded (previousValue, currentValue) {  
-    return previousValue + Math.round(currentValue);  
+function addRounded (accumulator, currentValue) {  
+    return accumulator + Math.round(currentValue);  
     }  
   
 // Create an array.  
@@ -154,10 +155,10 @@ document.write (result);
  Aşağıdaki örnek, bir dizi değerler ekler. `currentIndex` Ve `array1` parametreleri, geri çağırma işlevi kullanılır.  
   
 ```JavaScript  
-function addDigitValue(previousValue, currentDigit, currentIndex, array) {  
+function addDigitValue(accumulator, currentDigit, currentIndex, array) {  
     var exponent = (array.length - 1) - currentIndex;  
     var digitValue = currentDigit * Math.pow(10, exponent);  
-    return previousValue + digitValue;  
+    return accumulator + digitValue;  
     }  
   
 var digits = [4, 1, 2, 5];  
@@ -173,17 +174,17 @@ document.write (result);
  Aşağıdaki örnek, 1 ile 10 başka bir dizide arasında olan değerleri içeren bir dizi alır. Sağlanan ilk değer `reduce` boş bir dizi bir yöntemdir.  
   
 ```JavaScript  
-function Process(previousArray, currentValue) {  
+function Process(accumulatedArray, currentValue) {  
     // If currentValue is between 1 and 10,   
     // append currentValue to the array.  
     var nextArray;  
     if (currentValue >= 1 && currentValue <= 10)  
-        nextArray = previousArray.concat(currentValue);  
+        nextArray = accumulatedArray.concat(currentValue);  
     else  
-        nextArray = previousArray;  
+        nextArray = accumulatedArray;  
   
     // If this is not the last call by the reduce method,  
-    // the returned array is previousArray on the next call.  
+    // the returned array is accumulatedArray on the next call.  
     // If this is the last call by the reduce method, the  
     // returned array is the return value of the reduce method.  
     return nextArray;  
@@ -206,4 +207,4 @@ document.write("result array=" + resultArray);
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [reduceRight yöntemi (dizi)](../../javascript/reference/reduceright-method-array-javascript.md)
+ [reduceRight Metodu (Dizi)](../../javascript/reference/reduceright-method-array-javascript.md)

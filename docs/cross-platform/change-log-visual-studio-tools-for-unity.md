@@ -1,7 +1,7 @@
 ---
 title: Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları) | Microsoft Docs
 ms.custom: ''
-ms.date: 03/23/2018
+ms.date: 05/07/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,14 +10,52 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 80fdd724d9d5bca57e0d8dab44ac4a0bef7238f2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 Unity için Visual Studio Araçları günlük değiştirin.
+
+## <a name="3701"></a>3.7.0.1
+ Yayımlanan 2018-05-07
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Yükleyici:**
+
+    -   Deneysel kullanırken sabit bağımlılık sorun oluşturur.
+
+## <a name="3700"></a>3.7.0.0
+ Yayımlanan 2018-05-07
+
+### <a name="new-features"></a>Yeni Özellikler
+
+-   **Hata ayıklama:**
+
+    -   Düzenlenmiş (birden çok oynatıcıları/Düzenleyicisi aynı Visual Studio oturumu ile hata ayıklama) hata ayıklama için destek eklendi.
+    
+    -   Hata ayıklama Android USB player desteği eklendi.
+    
+    -   UWP/IL2CPP player hata ayıklama desteği eklendi.
+
+-   **Değerlendirme:**
+
+    -   Onaltılık tanımlayıcıları desteği eklendi.
+    
+    -   Geliştirilmiş Gözcü penceresi değerlendirme deneyimi.
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Tümleştirme:**
+
+    -   Özel durum ayarlarına sabit kullanımı.
+
+-   **Proje oluşturma:**
+
+    -   Paket Yöneticisi derleme biriminden kuşaktan dışlayın.
 
 ## <a name="3605"></a>3.6.0.5
  Yayımlanan 2018-03-13
@@ -26,7 +64,7 @@ Unity için Visual Studio Araçları günlük değiştirin.
 
 -   **Proje oluşturma:**
 
-    -   Yeni Proje Oluşturma Aracı'nda Unity 2018.1 desteği eklendi
+    -   Yeni Proje Oluşturma Aracı'nda Unity 2018.1 desteği eklendi.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 

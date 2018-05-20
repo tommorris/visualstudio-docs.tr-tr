@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>SharePoint Çözümleri Geliştirme
   Birkaç SharePoint proje türü şablonları kullanılabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint siteleri ve site öğeleri oluşturmak için. Kullanılabilir proje türleri listesi için bkz: [SharePoint Proje ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md). Bir SharePoint Proje özelliklerini ve bir açıklama öğelerin aşağıda verilmiştir.  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
  Bir özelliği bir SharePoint projesine eklendiğinde görünür **Çözüm Gezgini** varsayılan bir düğüm olarak özellik adını*x*.feature, burada *x* benzersiz bir sayıdır. Bir özelliğin SharePoint sunucusuna dağıtıldıktan sonra bir SharePoint Yöneticisi, SharePoint sitesini kullanıcılar için kullanılabilir duruma etkinleştirebilirsiniz.  
   
 #### <a name="package-node"></a>Paket düğümü  
- **Paket** düğümü SharePoint proje için dağıtım mekanizması olarak görev yapar tek bir dosya içerir. Olarak bilinen bu dosyayı bir *çözüm ** paket*, değil. CAB tabanlı bir. WSP uzantısı. Bir çözüm paketi özellikleri, site tanımları ve SharePoint sitelerine Uygula ve etkinleştir veya tek tek devre dışı bırakan derlemeler kümesini içeren dağıtılabilir, yeniden kullanılabilir bir dosyadır. **Paket** düğüm ayrıca her zaman Package.wspdef, adlı bir dosyayı içeren bir [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] paket tanımı dosyası. Bir paket SharePoint çalıştıran sunucuya dağıtıldıktan sonra SharePoint Yöneticisi yükleyin ve onun özelliklerini etkinleştirin.  
+ **Paket** düğümü SharePoint proje için dağıtım mekanizması olarak görev yapar tek bir dosya içerir. Olarak bilinen bu dosyayı bir *çözüm paketi*, değil. CAB tabanlı bir. WSP uzantısı. Bir çözüm paketi özellikleri, site tanımları ve SharePoint sitelerine Uygula ve etkinleştir veya tek tek devre dışı bırakan derlemeler kümesini içeren dağıtılabilir, yeniden kullanılabilir bir dosyadır. **Paket** düğüm ayrıca her zaman Package.wspdef, adlı bir dosyayı içeren bir [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] paket tanımı dosyası. Bir paket SharePoint çalıştıran sunucuya dağıtıldıktan sonra SharePoint Yöneticisi yükleyin ve onun özelliklerini etkinleştirin.  
   
  Görüntülemek veya paket düğümünde çift tıklatarak veya kısayol menüsünü açarak ve ardından paket tasarımcısını paketin içeriğini değiştirme **açık**. Daha fazla bilgi için bkz: [SharePoint çözüm paketleri oluşturma](../sharepoint/creating-sharepoint-solution-packages.md).  
   

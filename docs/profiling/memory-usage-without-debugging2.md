@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b51d2be6e2ec45b55b04c906a9db71843c98f427
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı olmadan bellek kullanımını çözümleme
 Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ayıklama olmadan aracı  
@@ -35,7 +35,7 @@ Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ay
   
 1.  Bir C# Evrensel Windows projesi Visual Studio'da açın.  
   
-2.  Menü çubuğunda seçin **hata ayıklama / Performans Profil Oluşturucu...** .  
+2.  Menü çubuğunda seçin **hata ayıklama** > **Performans Profil Oluşturucu**.  
   
 3.  Seçin **bellek kullanımı** ve ardından **Başlat** altındaki sayfasının düğmesini.  
   
@@ -199,9 +199,9 @@ Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ay
 |**Boyut (bayt)**|Bir örnek boyutu örneğinde yer alan nesneler hariç birincil anlık görüntüdeki nesnenin boyutu.<br /><br /> Bir türü örneğinde yer alan nesneler boyutunu hariç türünün birincil anlık görüntüdeki örneklerini toplam boyutu.|  
 |**Kapsayıcı boyutu (bayt)**|İçindeki nesneler yer alan nesneleri boyutunu dahil olmak üzere birincil anlık görüntüyü nesneleri boyutu.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [JavaScript belleği](../profiling/javascript-memory.md)  
  [Visual Studio'da profil oluşturma](../profiling/index.md)  
- [Özellik turu profil oluşturma](../profiling/profiling-feature-tour.md)  
+ [Profil oluşturma özelliği turu](../profiling/profiling-feature-tour.md)  
  [C++, C# ve Visual Basic kullanarak UWP uygulamaları için performansı en iyi yöntemler](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Visual Studio'da yeni bellek kullanımı aracıyla bellek sorunlarını tanılama](http://go.microsoft.com/fwlink/p/?LinkId=394706)

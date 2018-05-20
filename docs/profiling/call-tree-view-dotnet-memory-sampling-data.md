@@ -12,21 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c50e27ef43acc62c1dcf13403ce510064c986541
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: 3bba583c110188b45a11c51ee4780a3d8ad861d1
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Çağrı ağacı görünümü - .NET bellek örnekleme verileri
 Çağrı ağacı görünümü profili uygulamada geçiş işlevi yürütme yollarını görüntüler. Ağaç kök uygulama veya bileşenin giriş noktasıdır. Her işlevi düğümü adlı tüm işlevleri ve bu işlev çağrıları hakkında .NET bellek ayırma verileri listeler.  
   
  Çağrı ağacı görünümü çağrısı ağacında üst işlevi tarafından çağrılan işlev örnekleri için değerler. Yüzde değerleri, toplam sayısı veya boyutu çalıştırmak profil ayırmalarının işlevi örneği değerini karşılaştırarak hesaplanır.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Yürütme etkin yolunuzda vurgulama  
+## <a name="highlight-the-execution-hot-path"></a>Yürütme etkin yolunu Vurgula  
  Çağrı ağacı görünümü genişletin ve işlem veya en büyük oluşturulan işlevi ya da çoğu bellek nesneleri yürütme yolu vurgulayın. En etkin yol görüntülemek için işlem veya işlevi sağ tıklayın ve ardından **genişletin etkin yolunuzda**.  
   
-## <a name="setting-the-call-tree-root-node"></a>Çağrı ağacı kök düğümü ayarlama  
+## <a name="set-the-call-tree-root-node"></a>Çağrı ağacı kök düğümü ayarlayın  
  Profil oluşturma Çalıştır her işlem, bir kök düğümü olarak görüntülenir. Çağrı ağacı görünümü başlangıç düğümünün farklı bir düğüme ayarlamak için seçin ve başlangıç düğümü olarak ayarlamak istediğiniz düğümünü sağ tıklatın **ayarlamak kök**.  
   
  Kök düğüm kümesi olduğunda, Seçili düğümün alt ağacı dışında görünümünden diğer tüm girişleri kaldırın. Kök düğüm görüntülemekte olduğunuz düğüme geri sıfırlayabilirsiniz; Çağrı ağacı Görünümü penceresinde sağ tıklayın ve **sıfırlama kök**.  
@@ -54,4 +54,4 @@ ms.lasthandoff: 04/19/2018
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çağrı ağacı görünümü - izleme](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Çağrı ağacı görünümü](../profiling/call-tree-view-sampling-data.md)   
- [Çağrı Ağacı Görünümü](../profiling/call-tree-view-instrumentation-data.md)
+ [Çağrı ağacı görünümü](../profiling/call-tree-view-instrumentation-data.md)

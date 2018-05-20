@@ -1,5 +1,5 @@
 ---
-title: "&lt;Özelleştirmeleri&gt; öğesi (Visual Studio'da Office Geliştirme) | Microsoft Docs"
+title: "&lt;Özelleştirmeleri&gt; öğesi (Visual Studio'da Office Geliştirme)"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7174f4f04914a120454d9977516e7c2443cbadda
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef7aa93494ef2b2a33ab4533e217bd37ccd07420
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;Özelleştirmeleri&gt; öğesi (Visual Studio'da Office Geliştirme)
   `customizations` Öğesinin `vstov4` ad alanı, yüklenmesi ve her Office çözümü yükleme ile ilgili tüm bilgileri içerir.  
   
 ## <a name="syntax-for-document-level-customizations"></a>Belge düzeyi özelleştirmeleri için sözdizimi  
   
-```  
+```xml
 <customizations>  
   <customization  
     id  
@@ -41,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax-for-vsto-add-ins"></a>VSTO eklentileri için sözdizimi  
   
-```  
+```xml
 <customizations>  
   <customization  
     id  
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
   
  `customizations` Öğesinin alt öğesi yok.  
   
-### <a name="customization"></a>özelleştirme  
+### <a name="customization"></a>Özelleştirme  
  Gerekli. `customization` Öğesinde `vstov4` ad alanı tanımlanmış [ &#60;özelleştirme&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="example-of-a-document-level-customization"></a>Belge düzeyi özelleştirme örneği  
@@ -76,7 +76,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml
 <vstov4:customizations   
   xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
   <vstov4:customization>  
@@ -93,7 +93,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml
 <vstov4:customizations   
   xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
   <vstov4:customization>  
@@ -121,9 +121,9 @@ ms.lasthandoff: 04/16/2018
 </vstov4:customizations>  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md)   
  [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
   
   

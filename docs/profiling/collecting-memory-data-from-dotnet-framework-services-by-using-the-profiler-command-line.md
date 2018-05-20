@@ -10,26 +10,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b03973767088951d62620cfb5846dda6fa7a5f82
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 4e94932749523cea906cd60442971b93160b6c13
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırını Kullanarak .NET Framework Hizmetlerinden Bellek Verileri Toplama
+# <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Profil oluşturucu komut satırını kullanarak .NET Framework hizmetlerinden bellek verileri toplama
 Bu bölümde yordamlar ve bellek ayırma ve nesne yaşam süresi verilerini toplamak için seçenekleri açıklar bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] komut satırından örnekleme yöntemini kullanarak hizmet.  
   
-## <a name="common-tasks"></a>Ortak Görevler  
+## <a name="common-tasks"></a>Ortak görevler
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
 |**Bir .NET hizmetine profil oluşturucu ekleme**|-   [Nasıl yapılır: bellek verileri toplamak için bir .NET hizmetine profil oluşturucu ekleme](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Bir .NET hizmetini izleme ve .NET bellek verileri toplama**|-   [Nasıl yapılır: NET Framework uygulamasını hizmet ve bellek verileri toplama](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Bir .NET hizmetini izleme ve .NET bellek verileri toplama**|-   [Nasıl yapılır: .NET Framework hizmetini izleme ve bellek verileri toplama](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
 |**Katman etkileşim verileri ekleme**|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
-## <a name="related-tasks"></a>İlgili görevleri  
+## <a name="related-tasks"></a>İlişkili görevler
   
-### <a name="profiling-services"></a>Hizmet Profili Oluşturma  
+### <a name="profile-services"></a>Profil Hizmetleri  
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
@@ -37,15 +37,15 @@ Bu bölümde yordamlar ve bellek ayırma ve nesne yaşam süresi verilerini topl
 |**İzleme metodunu kullanarak profil**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|  
 |**Kaynak çakışması ve iş parçacığı etkinliği profil**|-   [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
-### <a name="profiling-net-framework-memory-data"></a>.NET Framework bellek verileri profil oluşturma  
+### <a name="profile-net-framework-memory-data"></a>.NET Framework bellek verileri profil  
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
 |**Profil tek başına (istemci) uygulamaları**|-   [.NET Framework bellek verileri toplama](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
 |**ASP.NET Web uygulamalarında profil**|-   [Bellek verileri toplama](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
   
-### <a name="analyzing-net-memory-data-views-and-reports"></a>.NET bellek verileri analiz etme, görünümler ve raporlar  
+### <a name="analyze-net-memory-data-views-and-reports"></a>.NET bellek verisi görünümleri ve raporları analiz eder.  
  [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)  
   
 ## <a name="reference"></a>Başvuru  
- [Komut satırı profil araçları başvurusu](../profiling/command-line-profiling-tools-reference.md)
+ [Komut satırı profil oluşturma araçları başvurusu](../profiling/command-line-profiling-tools-reference.md)

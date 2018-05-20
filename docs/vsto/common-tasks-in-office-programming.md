@@ -1,5 +1,5 @@
 ---
-title: Office programlarındaki ortak görevler | Microsoft Docs
+title: Office programlarındaki ortak görevler
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 32e24833e77ffd6f178a70c5548e9bc1277b06b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c095b6792b2cde9596e1d955a1ddffbc568c801
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="common-tasks-in-office-programming"></a>Office Programlarındaki Ortak Görevler
+# <a name="common-tasks-in-office-programming"></a>Office programlarındaki ortak görevler
   Bu konu, aşağıdaki kategorisinden Visual Studio kullanarak Office çözümleri programlama hakkında genel soruların yanıtları bulmanıza yardımcı olmak için tasarlanmıştır.  
   
 -   [Kurulum ve genel görevler](#projects).  
@@ -46,43 +46,43 @@ ms.lasthandoff: 04/16/2018
   
 -   [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
--   [Nasıl yapılır: Office çözümlerini yükseltme](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e).  
+-   [Nasıl yapılır: yükseltme Office çözümleri](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e).  
   
--   [Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme](../vsto/how-to-install-office-primary-interop-assemblies.md).  
+-   [Nasıl yapılır: yükleme Office birincil birlikte çalışma derlemeleri](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
--   [Nasıl yapılır: birincil birlikte çalışma derlemeleriyle Office uygulamalarını](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+-   [Nasıl yapılır: birincil birlikte çalışma derlemeleriyle hedef Office uygulamaları](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 -   [Nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
--   [Nasıl yapılır: kod çalıştırmadan Office çözümlerini açma](../vsto/how-to-open-office-solutions-without-running-code.md).  
+-   [Nasıl yapılır: kod çalıştırmadan açma Office çözümleri](../vsto/how-to-open-office-solutions-without-running-code.md).  
   
 -   [Nasıl yapılır: Office çözümü için yapılandırma bilgilerini ayarlama](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md).  
   
 -   [Nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
--   [Nasıl yapılır: eklenti kullanıcı arayüzü hatalarını gösterme](../vsto/how-to-show-add-in-user-interface-errors.md).  
+-   [Nasıl yapılır: kullanıcı arayüzü hatalarını gösterme eklenti](../vsto/how-to-show-add-in-user-interface-errors.md).  
   
 ##  <a name="ui"></a> Kullanıcı arabirimi özelleştirme görevleri  
   
 ### <a name="controls-on-documents-and-worksheets"></a>Belgeler ve çalışma sayfası üzerinde denetimleri  
   
--   [Nasıl yapılır: Windows Forms denetimleri Office belgelerine ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+-   [Nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
 -   [Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
   
 -   [Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
--   [Nasıl yapılır: Windows Forms denetimleri Office belgelerine ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+-   [Nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
--   [Nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md).  
+-   [Nasıl yapılır: içerik ekleme Word belgelerini denetimlere](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 -   [Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
 ### <a name="task-panes-in-document-level-customizations"></a>Belge düzeyi özelleştirmelerinde görev bölmeleri  
   
--   [Nasıl yapılır: Word belgelerini ve Excel çalışma kitaplarına Eylemler bölmesi ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+-   [Nasıl yapılır: Word belgelerine Eylemler bölmesi ekleme veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
   
-### <a name="task-panes-in-vsto-add-ins"></a>VSTO eklentilerinde görev bölmeleri  
+### <a name="task-panes-in-vsto-add-ins"></a>VSTO eklentileri görev bölmeleri  
   
 -   [Nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
@@ -98,11 +98,11 @@ ms.lasthandoff: 04/16/2018
   
 -   [Nasıl yapılır: Şerit XML Şerit Tasarımcısından Şerit Dışarı](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
   
-### <a name="outlook-form-regions"></a>Outlook Form bölgeleri  
+### <a name="outlook-form-regions"></a>Outlook form bölgeleri  
   
--   [Nasıl yapılır: Outlook eklenti projesine Form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+-   [Nasıl yapılır: bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
--   [Nasıl yapılır: Outlook Form bölgesini görüntülemesini engelleme](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).  
+-   [Nasıl yapılır: Outlook form bölgesini görüntülemesini engelleme](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).  
   
 ### <a name="custom-menus"></a>Özel menüler  
   
@@ -154,17 +154,17 @@ ms.lasthandoff: 04/16/2018
   
 -   [Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme](../vsto/how-to-programmatically-insert-text-into-word-documents.md).  
   
--   [Nasıl yapılır: program aracılığıyla tanımlamak ve belgelerde aralıkları seçmek](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
+-   [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
   
--   [Nasıl yapılır: program aracılığıyla sıfırlama Word belgelerinde aralıkları](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md).  
+-   [Nasıl yapılır: Word belgelerinde aralıkları'program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md).  
   
--   [Nasıl yapılır: belgelerde metni program aracılığıyla biçimlendirme](../vsto/how-to-programmatically-format-text-in-documents.md).  
+-   [Nasıl yapılır: program aracılığıyla, belgelerdeki metni Biçimlendir](../vsto/how-to-programmatically-format-text-in-documents.md).  
   
 -   [Nasıl yapılır: Word belgelerine XMLNode denetimleri ekleme](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
   
--   [Nasıl yapılır: program aracılığıyla, yer işareti metnini güncelleştirme](../vsto/how-to-programmatically-update-bookmark-text.md).  
+-   [Nasıl yapılır: yer işareti metnini program aracılığıyla güncelleştirme](../vsto/how-to-programmatically-update-bookmark-text.md).  
   
--   [Nasıl yapılır: program aracılığıyla arama ve değiştirme belgelerdeki metni](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md).  
+-   [Nasıl yapılır: program aracılığıyla arama ve belgelerdeki metni değiştirme](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md).  
   
 -   [Nasıl yapılır: program aracılığıyla belgeleri yazdırma](../vsto/how-to-programmatically-print-documents.md).  
   
@@ -194,7 +194,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="cached-data-in-document-level-solutions"></a>Belge düzeyi çözümlerde önbelleğe alınan veriler  
   
--   [Nasıl yapılır: veri kullanımı için çevrimdışı veya sunucuda önbelleğe](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   [Nasıl yapılır: çevrimdışı veya sunucuda kullanmak için verileri önbelleğe](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   [Nasıl yapılır: program aracılığıyla bir veri kaynağı Office belgesinden önbelleğe](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
@@ -204,13 +204,13 @@ ms.lasthandoff: 04/16/2018
   
 -   [Nasıl yapılır: belge düzeyi özelleştirmelerine özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md).  
   
--   [Nasıl yapılır: VSTO eklentilerini kullanarak belgelere özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
+-   [Nasıl yapılır: VSTO eklentileri kullanarak belgelere özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
   
 ##  <a name="server"></a> Sunucu tarafı belge yönetim görevleri  
   
--   [Nasıl yapılır: belgelerden yönetilen kod uzantılarını kaldırma](../vsto/how-to-remove-managed-code-extensions-from-documents.md).  
+-   [Nasıl yapılır: belgelerden kaldırma yönetilen kod uzantıları](../vsto/how-to-remove-managed-code-extensions-from-documents.md).  
   
--   [Nasıl yapılır: belgelere yönetilen kod uzantıları ekleme](../vsto/how-to-attach-managed-code-extensions-to-documents.md).  
+-   [Nasıl yapılır: ekleme yönetilen kod uzantıları belgelere](../vsto/how-to-attach-managed-code-extensions-to-documents.md).  
   
 ##  <a name="security"></a> Güvenlik görevleri  
   
@@ -228,12 +228,12 @@ ms.lasthandoff: 04/16/2018
   
 -   [Nasıl yapılır: IIS Office çözümleri geliştirme için hazırla](http://msdn.microsoft.com/en-us/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
   
--   [Nasıl yapılır: Dağıtılmış Office çözümlerini güncelleme](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
+-   [Nasıl yapılır: güncelleştirme dağıtılan Office çözümleri](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
   
 -   [Nasıl yapılır: Office çözümü yükleme konumunu değiştirmek](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Başlarken &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office uygulaması ve proje türüne göre kullanılabilir özellikler](../vsto/features-available-by-office-application-and-project-type.md)   
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)  
   

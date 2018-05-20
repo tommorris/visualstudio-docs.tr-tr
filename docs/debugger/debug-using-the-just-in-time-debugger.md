@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17dc34cd030bf2eab430872a191424fb657d6cd0
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 4f01dddf18e93c657d2c69e30a9b4698f4dda796
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual Studio'da Just-In-Time hata ayıklayıcısı ile hata ayıklama
 Bir özel durum ya da kilitlenme dış Visual Studio çalıştıran bir uygulamada oluştuğunda tam zamanı hata ayıklama Visual Studio otomatik olarak başlatır. Bu, Visual Studio çalışmadığı zaman uygulamanızı test etmek ve bir sorun ortaya çıktığında Visual Studio ile hata ayıklama başlamak sağlar.
@@ -58,7 +58,7 @@ Visual Studio artık bilgisayarınızda yüklü olsa bile tam zamanı hata ayık
   
     -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger  
   
-    -   HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\DbgManagedDebugger  
+    -   HKEY_LOCAL_MACHINE\Software\Microsoft\\. NETFramework\DbgManagedDebugger  
 
     ![JIT kayıt defteri anahtarı](../debugger/media/dbg-jit-registry.png "JIT kayıt defteri anahtarı") 
   

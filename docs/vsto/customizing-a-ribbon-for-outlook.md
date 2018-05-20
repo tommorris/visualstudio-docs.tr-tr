@@ -1,5 +1,5 @@
 ---
-title: Outlook için Şerit özelleştirme | Microsoft Docs
+title: Outlook için Şerit özelleştirme
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,30 +19,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c160b22a10a837e64df2ad00a07381c3d8240c3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef1c72d5c24c70a539b909e8d338a235ceb52a49
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="customizing-a-ribbon-for-outlook"></a>Outlook İçin Şerit Özelleştirme
+# <a name="customize-a-ribbon-for-outlook"></a>Outlook için Şerit özelleştirme
   Microsoft Office Outlook Şeritte özelleştirdiğinizde, özel Şerit uygulamada nerede görüneceğini dikkate almanız gerekir. Outlook ana uygulama kullanıcı arabirimi (UI) ve kullanıcıların e-posta iletileri oluşturmak gibi belirli görevleri gerçekleştirdiğinizde, açık windows Şerit görüntüler. Bu uygulama windows denetçiler adlandırılır.  
   
- ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [I: kullanma Şerit Tasarımcısı Outlook Şeritte özelleştirmek için?](http://go.microsoft.com/fwlink/?LinkID=130312).  
+ ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl I: Outlook Şeritte özelleştirmek için Şerit Tasarımcısı musunuz?](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="adding-a-custom-ribbon-to-the-main-application-ui"></a>Özel Şerit ana uygulama kullanıcı Arabirimi ekleme  
+## <a name="add-a-custom-ribbon-to-the-main-application-ui"></a>Özel Şerit ana uygulama kullanıcı Arabirimi ekleme  
  Ana uygulama kullanıcı Arabirimi Outlook'ta Gezgin olarak adlandırılır. Kullanıyorsanız **Şerit (Görsel Tasarımcı)** Gezgini'ne tıklayarak bir Şerit öğesi, ekleyebilirsiniz **RibbonType** Şeritte özelliğinin **özellikleri** penceresi ardından seçerek **Microsoft.Outlook.Explorer**.  
   
-## <a name="assigning-a-ribbon-to-an-inspector"></a>Şerit bir denetleyici atama  
+## <a name="assign-a-ribbon-to-an-inspector"></a>Bir denetleyici Şerit atayın  
  İleti sınıfı denetleyici için karşılık gelen Şerit türü belirterek özelleştirmek istediğiniz denetçisi tanımlayın.  
   
  Kullanıyorsanız **Şerit (Görsel Tasarımcı)** öğesi, tıklatın **RibbonType** Şeritte özelliğinin **özellikleri** penceresinde ve ardından bir veya daha fazla Şerit kimlikleri değerlerin listesi.  
   
- Bir projeye birden çok Şerit ekleyebilirsiniz. Birden çok Şerit bir Şerit Kimliğini paylaşıyorsa içinde yöntemini geçersiz kılma `ThisAddin` sınıfı projenizin hangi çalışma zamanında görüntülemek için Şerit belirtin. Daha fazla bilgi için bkz: [Şerite Genel Bakış](../vsto/ribbon-overview.md). Şerit türleri hakkında daha fazla bilgi için teknik makalesine bakın [Outlook 2007 Şerit özelleştirme](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
+ Bir projeye birden çok Şerit ekleyebilirsiniz. Birden çok Şerit bir Şerit Kimliğini paylaşıyorsa, geçersiz kılma `CreateRibbonExtensibilityObject` yönteminde `ThisAddin` sınıfı projenizin hangi çalışma zamanında görüntülemek için Şerit belirtin. Daha fazla bilgi için bkz: [Şerite Genel Bakış](../vsto/ribbon-overview.md). Şerit türleri hakkında daha fazla bilgi için teknik makalesine bakın [Outlook 2007 Şerit özelleştirme](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
   
-## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Şerit XML kullanarak Şerit türünü belirleme  
+## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Şerit XML kullanarak Şerit türünü belirtin  
  Kullanıyorsanız **Şerit (XML)** öğesi, değerini denetleyin *ribbonID* parametresinde <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> yöntemi ve return uygun Şerit.  
   
  <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> Yöntemi Şerit kod dosyasında Visual Studio tarafından otomatik olarak oluşturulur. *RibbonID* parametredir Gezgin'i ya da belirli bir denetleyici türünü tanımlayan bir dize. Olası değerlerini tam listesi için *ribbonID* parametresi, teknik makalesine bakın [Outlook 2007 Şerit özelleştirme](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
@@ -52,7 +52,7 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)]
  [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Şerit çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
  [Şerit Tasarımcısı](../vsto/ribbon-designer.md)   

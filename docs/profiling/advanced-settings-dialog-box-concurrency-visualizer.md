@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0cde5d1ddd5dabfd42a6a7d31284736e24fa302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Gelişmiş Ayarlar İletişim Kutusu (Eşzamanlılık Görselleştiricisi)
+# <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Gelişmiş Ayarlar iletişim kutusu (eşzamanlılık görselleştiricisi)
 Kullanarak **Gelişmiş ayarları** iletişim kutusu Eş zamanlılık Görselleştirici izlemeleri nasıl toplanır denetleyebilirsiniz.  İletişim kutusu sembolleri, sadece kendi kodumu, arabelleğe alma, filtreleme, CLR olayları, işaretçileri, sağlayıcıları ve dosyaları için sekme bulunur.  
   
 ## <a name="symbols"></a>Simgeleri  
@@ -65,7 +65,7 @@ Kullanarak **Gelişmiş ayarları** iletişim kutusu Eş zamanlılık Görselle�
   
  Önem düzeyi listenin bir önem veya belirtilen değerden küçüktür ETW düzey olayları filtrelemek için kullanabilirsiniz.  
   
-### <a name="configuring-an-existing-provider"></a>Mevcut bir sağlayıcısı yapılandırma  
+### <a name="configure-an-existing-provider"></a>Varolan bir sağlayıcı yapılandırın  
  Varolan bir sağlayıcı ile ilişkili ayarları düzenlemek için listeden seçin ve ardından **düzenleme sağlayıcısı** düğmesi.  Ad, GUID ve filtreleme ayarlarını değiştirebilirsiniz.  
   
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Eşzamanlılık görselleştiricisi raporları işaret verileri filtreleme  
@@ -84,6 +84,6 @@ Kullanarak **Gelişmiş ayarları** iletişim kutusu Eş zamanlılık Görselle�
   
  İki ETL dosya Ham izleme verilerini depolamak ve işlenen verilerin iki eşzamanlılık görselleştiricisi dosyaları depolamak.  Bir izleme işlendikten sonra ham ETL dosyaları genellikle kullanılmaz.  Seçme **silmek olay izleme günlüğü (ETL) dosyaları çözümleme sonrasında** onay kutusu, diskte depolanan izleme veri miktarını azaltır.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Yalnızca kendi kodum](../profiling/just-my-code-threads-view.md)   
  [Eşzamanlılık Görselleştiricisi İşaretleyicileri](../profiling/concurrency-visualizer-markers.md)

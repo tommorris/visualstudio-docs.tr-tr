@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ace9e405b52873d08c578c2af8e7005249e7d58c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="inside-the-editor"></a>İçinde Düzenleyicisi
 Metin görünümü ve kullanıcı arabirimi düzenleyici metin modeli ayrı tutmak için tasarlanmış farklı alt sistemleri sayısının Düzenleyicisi oluşur.  
@@ -59,7 +59,7 @@ Metin görünümü ve kullanıcı arabirimi düzenleyici metin modeli ayrı tutm
   
  Metin model alt sistemi, kullanıcı arabirimi (UI) kavramlarını ücretsizdir. Örneğin, metin biçimlendirme veya metin düzenini sorumlu değildir ve metni ile ilişkili visual adornments olanağıyla sahiptir.  
   
- Metin model alt sisteminin genel tür yalnızca .NET Framework temel sınıf kitaplığını ve Yönetilen Genişletilebilirlik Çerçevesi (MEF) bağlı Microsoft.VisualStudio.Text.Data.dll ve Microsoft.VisualStudio.CoreUtilitiy.dll, yer alır.  
+ Metin model alt sisteminin genel tür yalnızca .NET Framework temel sınıf kitaplığını ve Yönetilen Genişletilebilirlik Çerçevesi (MEF) bağlı Microsoft.VisualStudio.Text.Data.dll ve Microsoft.VisualStudio.CoreUtility.dll, yer alır.  
   
 ### <a name="text-view-subsystem"></a>Metin görünümü alt sistemi  
  Metin görünümü alt sistemi, biçimlendirme ve metin görüntüleme sorumludur. Bu alt sistemi türlerinde olup türleri Windows Presentation Foundation (WPF) kullanan bağlı olarak iki katmanlara ayrılır. En önemli türleri <xref:Microsoft.VisualStudio.Text.Editor.ITextView> ve <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, görüntülenecek metin satırlarını kümesini ve ayrıca düzeltme işareti, seçim ve WPF kullanıcı Arabirimi öğeleri kullanarak metin eklemek için tesis denetim. Bu alt sistemi, metnin kenar boşluklarını görüntüleme alanı de sağlar. Bu kenar boşluklarını genişletilebilir ve farklı türde içerik ve görsel efektler içerebilir. Satır numarası görüntüler ve kaydırma çubukları kenar boşluklarını örnekleridir.  

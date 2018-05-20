@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 267d0a55ae648c68ed4228b3ad4a206bad1f5148
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 70ecd6517878800a6ad43221556c367137a64a71
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-cpu-usage"></a>CPU kullanımı analiz
 Uygulamanızda performans sorunları araştırmak gerektiğinde başlatmak için uygun bir yerdir nasıl CPU kullandığı anlamaktır. **CPU kullanımı** aracı gösterir, CPU Visual C++, Visual C# yürütme süresi yeri harcıyorsa / Visual Basic ve JavaScript kodu. Visual Studio 2015 güncelleştirme 1'de başlayarak, hata ayıklayıcı ayrılmadan CPU kullanımı işlevi başına dökümünü görebilirsiniz. Hata ayıklama sırasında CPU açma ve kapatma profil açın ve yürütme, örneğin bir kesme noktasında durdurulduğunda sonuçları görüntüleyin.  
@@ -40,7 +40,7 @@ Burada, toplamak ve yayın derlemeleri ile CPU kullanımını analiz etme göste
   
     -   Windows Phone uygulamaları için doğrudan veri toplamayı **aygıt** en doğru verileri sağlar.  
   
-2.  Üzerinde **hata ayıklama** menüsünde seçin **Performans Profil Oluşturucu...** .  
+2.  Üzerinde **hata ayıklama** menüsünde seçin **Performans Profil Oluşturucu**.  
   
 3.  Seçin **CPU kullanımı** ve ardından **Başlat**.  
   

@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7208f687ea38475603b8bfcae7e9ee55ab3ae58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="running-profiling-tools-with-or-without-the-debugger"></a>Profil Araçları ile veya hata ayıklayıcı olmadan çalıştırma
+# <a name="run-profiling-tools-with-or-without-the-debugger"></a>Profil Araçları ile veya olmadan hata ayıklayıcı çalıştırın
 Visual Studio şimdi sunar performans seçimine araçları, bazıları (örneğin, **CPU kullanımı** ve **bellek kullanımı**) ile veya hata ayıklayıcı olmadan çalıştırılabilir. Hata ayıklayıcı olmayan performans araçları araçları hata ayıklayıcı tümleşik hata ayıklama yapılandırmaları üzerinde çalıştırmak için tasarlanmış olsa da yayın yapılandırmalarında çalıştırmak üzere tasarlanmıştır.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Aracı ile veya olmadan hata ayıklayıcısı çalıştırabilir?  
@@ -39,9 +39,9 @@ Visual Studio şimdi sunar performans seçimine araçları, bazıları (örneği
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Hata ayıklama sırasında profil oluşturma verileri toplama  
  Aşağıdaki bölümde, yerel olarak hata ayıklama ile ilgilidir. Bir aygıt veya uzaktan, sonraki bölümlerde hata ayıklama hata ayıklama hakkında öğrenebilirsiniz.  
   
-1.  Açık hata ayıklamak için istediğiniz projeyi ardından **hata ayıklama / hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).  
+1.  Açık hata ayıklamak için istediğiniz projeyi ardından **hata ayıklama** > **hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).  
   
-2.  **Tanılama araçları** penceresi görünür otomatik olarak, bunu devre dışı bırakmış sürece. Pencereyi yeniden getirmek için tıklatın **hata ayıklama / Windows / Tanılama Araçları Göster**.  
+2.  **Tanılama araçları** penceresi görünür otomatik olarak, bunu devre dışı bırakmış sürece. Pencereyi yeniden getirmek için tıklatın **hata ayıklama** > **Windows** > **tanılama araçları Göster**.  
   
 3.  Verileri toplamak istediğiniz senaryolar çalıştırın.  
   
@@ -51,11 +51,11 @@ Visual Studio şimdi sunar performans seçimine araçları, bazıları (örneği
   
      ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools Update1")  
   
-4.  Görmek isteyip istemediğinizi seçebilirsiniz **bellek kullanımı** veya **CPU kullanımı** (veya her ikisi de) ile **seçtiğiniz Araçları** araç çubuğunda ayarlama. Visual Studio Enterprise çalıştırıyorsanız, etkinleştirme veya IntelliTrace içinde devre dışı **Araçlar / Seçenekler / IntelliTrace**.  
+4.  Görmek isteyip istemediğinizi seçebilirsiniz **bellek kullanımı** veya **CPU kullanımı** (veya her ikisi de) ile **seçtiğiniz Araçları** araç çubuğunda ayarlama. Visual Studio Enterprise çalıştırıyorsanız, etkinleştirme veya IntelliTrace içinde devre dışı **Araçları** > **seçenekleri** > **IntelliTrace**.  
   
 5.  Hata ayıklamayı durdurun Tanılama oturumu sona erer.  
   
- Visual Studio 2015 güncelleştirme 1, **tanılama araçları** penceresi kolaylaştırır ilgilendiğiniz olayları odaklanmak için.   Olay adları artık kategori öneklerle gösterilir (**hareketi**, **Program çıktısı**, **kesme noktası**, **dosyası** vb.) hızlı şekilde Belirtilen kategori listesi tarama veya hakkında önemli değil kategorileri atlayabilirsiniz.  
+ Visual Studio 2015 güncelleştirme 1, **tanılama araçları** penceresi kolaylaştırır ilgilendiğiniz olayları odaklanmak için.   Olay adları artık kategori öneklerle gösterilir (**hareketi**, **Program çıktısı**, **kesme noktası**, **dosya**, vs.) hızlı şekilde Belirtilen kategori listesi tarama veya hakkında önemli değil kategorileri atlayabilirsiniz.  
   
  Her yerden olay listesi belirli bir dizeyi bulabilmesi için pencereyi bir arama kutusu artık sahiptir. Örneğin, aşağıdaki grafikte dize için bir arama sonuçlarını "dört olayları eşleşen Yükle" gösterir:  
   
@@ -72,7 +72,7 @@ Visual Studio şimdi sunar performans seçimine araçları, bazıları (örneği
   
 1.  Projesini Visual Studio'da açın.  
   
-2.  Üzerinde **hata ayıklama** menüsünde seçin **Performans Profil Oluşturucu...** (Kısayol tuşu: Alt + F2).  
+2.  Üzerinde **hata ayıklama** menüsünde seçin **Performans Profil Oluşturucu** (kısayol tuşu: **Alt**+**F2**).  
   
 3.  Tanılama başlatma sayfasında oturumunda çalıştırmak için bir veya daha fazla Araçlar'ı seçin. Proje türü, işletim sistemi ve programlama dili için geçerli olan araçları görüntülenir. Bir tanılama aracı seçtiğinizde, aynı tanılama oturumunda çalıştırılamaz araçları seçimlerini devre dışı bırakılır. Bir C# UWP uygulaması için yaptığınız seçimlere nasıl görünebileceği aşağıda verilmiştir:  
   
@@ -106,7 +106,7 @@ Visual Studio şimdi sunar performans seçimine araçları, bazıları (örneği
 |![5. adım](../profiling/media/procguid_6.png "ProcGuid_6")|Verilerinizin birden çok araç bilgileri içerdiğinde, aracı ayrıntıları sekme altında toplanır.|  
 |![Adım 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Bir aracı bir veya daha fazla ayrıntı görünümleri olabilir. Görünümü zaman çizelgesi seçili bölgeye göre filtrelenir.|  
   
-## <a name="setting-the-analysis-target-to-another-device"></a>Başka bir cihaza analiz hedefini ayarlama  
+## <a name="set-the-analysis-target-to-another-device"></a>Başka bir cihaza çözümleme hedef ayarlayın  
  Visual Studio projeden uygulamanızı başlayarak yanı sıra tanılama oturumları alternatif hedeflerde de çalıştırabilirsiniz. Örneğin, uygulamanızın Windows uygulama Mağazası'ndan yüklenmiş sürümünü performans sorunlarını tanılamanıza isteyebilirsiniz.  
   
  ![Tanılama araçları çözümleme hedef seçin](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  

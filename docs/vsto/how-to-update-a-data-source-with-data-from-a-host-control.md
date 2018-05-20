@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: konak kontrolü verileriyle veri kaynağını güncelleme | Microsoft Docs'
+title: 'Nasıl yapılır: konak kontrolü verileriyle veri kaynağını güncelleme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,31 +18,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6113979ee4a9081c089610dce4edfcd1f75347ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5603b1661a1b329692508eb43a629919f2f5d14e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Nasıl Yapılır: Konak Kontrolü Verileriyle Veri Kaynağını Güncelleme
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Nasıl yapılır: konak kontrolü verileriyle veri kaynağını güncelleme
   Konak kontrolü bir veri kaynağına bağlama ve veri kaynağı denetimi verilerde yapılan değişikliklerle güncelleştirin. Bu işlemde iki ana adım vardır:  
   
 1.  Bellek içi veri kaynağı denetiminde değiştirilen verileri ile güncelleştirin. Genellikle, bellek içi veri kaynağı olan bir <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, ya da başka bir veri nesnesi.  
   
 2.  Veritabanı bellek içi veri kaynağında değiştirilen verileri ile güncelleştirin. Bu, yalnızca veri kaynağı bir SQL Server veya Microsoft Office Access veritabanı gibi bir arka uç veritabanı bağlıysa geçerlidir.  
   
- Konak denetimleri ve veri bağlama hakkında daha fazla bilgi için bkz: [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md) ve [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).  
+ Konak denetimleri ve veri bağlama hakkında daha fazla bilgi için bkz: [konak öğelerini ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md) ve [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
-## <a name="updating-the-in-memory-data-source"></a>Bellek içi veri kaynağını güncelleme  
+## <a name="update-the-in-memory-data-source"></a>Bellek içi veri kaynağını güncelleme  
  Varsayılan olarak, basit veri bağlama (örneğin, bir Word belgesi içerik denetimlerinde veya adlandırılmış aralık denetimi bir Excel çalışma sayfası üzerinde) etkinleştirmek ana bilgisayar denetimleri bellek içi veri kaynağına veri değişikliklerini kaydetmeyin. Diğer bir deyişle, son kullanıcının bir konak kontrolü değerinde değiştirir ve denetimden gider, yeni değer denetiminde veri kaynağına otomatik olarak kaydedilmez.  
   
  Veri kaynağı için verileri kaydetmek için çalışma zamanında belirli bir olaya yanıt olarak veri kaynağını güncelleştirir kod yazabilirsiniz veya denetimdeki değeri değiştiğinde veri kaynağını otomatik olarak güncelleştirmek için denetimi yapılandırabilirsiniz.  
   
  Kaydet gerekmez <xref:Microsoft.Office.Tools.Excel.ListObject> bellek içi veri kaynağına değiştirir. Bağladığınızda bir <xref:Microsoft.Office.Tools.Excel.ListObject> veri denetimine <xref:Microsoft.Office.Tools.Excel.ListObject> denetim otomatik olarak değişiklikleri kaydeder bellek içi veri kaynağına ek kod gerek kalmadan.  
   
-#### <a name="to-update-the-in-memory-data-source-at-run-time"></a>Çalışma zamanında bellek içi veri kaynağını güncelleştirmek için  
+### <a name="to-update-the-in-memory-data-source-at-runtime"></a>Çalışma zamanında bellek içi veri kaynağını güncelleştirmek için  
   
 -   Çağrı <xref:System.Windows.Forms.Binding.WriteValue%2A> yöntemi <xref:System.Windows.Forms.Binding> denetimi veri kaynağına bağlar nesnesi.  
   
@@ -51,10 +51,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreDataExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreDataExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#1)]  
   
-### <a name="automatically-updating-the-in-memory-data-source"></a>Otomatik olarak bellek içi veri kaynağını güncelleme  
+### <a name="automatically-update-the-in-memory-data-source"></a>Bellek içi veri kaynağını otomatik olarak güncelleştir  
  Bellek içi veri kaynağını otomatik olarak güncelleştirilebilir bir denetimi de yapılandırabilirsiniz. Belge düzeyi projede kodu veya tasarımcıyı kullanarak bunu yapabilirsiniz. Bir VSTO eklenti projesinde kodu kullanmanız gerekir.  
   
-##### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Kod kullanarak bellek içi veri kaynağını otomatik olarak güncelleştirmek üzere bir denetim ayarlamak için  
+#### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Kod kullanarak bellek içi veri kaynağını otomatik olarak güncelleştirmek üzere bir denetim ayarlamak için  
   
 1.  Modunu kullanmak <xref:System.Windows.Forms.Binding> denetimi veri kaynağına bağlar nesnesi. Veri kaynağını güncelleştirmek için iki seçenek vardır:  
   
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]  
   
-##### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>Bellek içi veri kaynağı Tasarımcısı'nı kullanarak otomatik olarak güncelleştirmek üzere bir denetim ayarlamak için  
+#### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>Bellek içi veri kaynağı Tasarımcısı'nı kullanarak otomatik olarak güncelleştirmek üzere bir denetim ayarlamak için  
   
 1.  Visual Studio'da Word belgesi veya Excel çalışma kitabı tasarımcısında açın.  
   
@@ -91,10 +91,10 @@ ms.lasthandoff: 04/16/2018
   
 6.  Kapat **biçimlendirme ve Gelişmiş bağlama** iletişim kutusu.  
   
-## <a name="updating-the-database"></a>Veritabanını güncelleştirme  
+## <a name="update-the-database"></a>Veritabanını güncelleştirme  
  Bellek içi veri kaynağı bir veritabanı ile ilişkili ise, veri kaynağına yapılan değişikliklerle veritabanı güncelleştirmeniz gerekir. Bir veritabanı güncelleştirme hakkında daha fazla bilgi için bkz: [verileri veritabanına kaydetmek](../data-tools/save-data-back-to-the-database.md) ve [TableAdapter kullanarak veri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md) .  
   
-#### <a name="to-update-the-database"></a>Veritabanını güncellemek için  
+### <a name="to-update-the-database"></a>Veritabanını güncellemek için  
   
 1.  Çağrı <xref:System.Windows.Forms.BindingSource.EndEdit%2A> yöntemi <xref:System.Windows.Forms.BindingSource> denetimi için.  
   
@@ -114,7 +114,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Veritabanına veri kaydetme](../data-tools/save-data-back-to-the-database.md)    
  [TableAdapter kullanarak veri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md)    
@@ -122,6 +122,6 @@ ms.lasthandoff: 04/16/2018
  [Nasıl yapılır: çalışma sayfalarını veritabanı verileriyle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [Nasıl yapılır: belgeleri nesne verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-objects.md)   
  [Nasıl yapılır: belgeleri veritabanı verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [Nasıl Yapılır: Belgeleri Hizmet Verileriyle Doldurma](../vsto/how-to-populate-documents-with-data-from-services.md)  
+ [Nasıl yapılır: belgeleri hizmet verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
   

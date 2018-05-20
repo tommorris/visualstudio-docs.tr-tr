@@ -12,11 +12,11 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5374001e63f83f13e0956314e9af88808d624dae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 272048215e6ac386e5724e2054f639ccdb608e63
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>İOS kullanılarak derleme ve Yapılandırma Araçları'nı yükleme
 Platformlar arası Mobil Geliştirme için Visual C++ düzenlemek, hata ayıklama ve iOS simülatörü'nü veya bir iOS aygıtı iOS kodu dağıtmak için kullanabilirsiniz, ancak lisans kısıtlamaları nedeniyle kodu gerekir oluşturulur ve Uzaktan Mac'te çalışan Derleme ve Visual Studio kullanarak iOS uygulamaları çalıştırmak için ayarlamak ve uzak aracısını yapılandırmak gereken [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), Mac üzerinde Uzak Aracı tanıtıcıları Visual Studio'dan istekleri oluşturmak ve Mac veya Mac Simulator'da iOS bağlı iOS cihazında uygulamayı çalıştırır  
@@ -69,6 +69,8 @@ Platformlar arası Mobil Geliştirme için Visual C++ düzenlemek, hata ayıklam
   
 -   [Node.js](http://nodejs.org/)  
   
+     En son uzun süreli destek (LTS) sürümünü yüklemek Mac üzerinde Node.js 8.x Diğer en son sürüm sürümleri vcremote içinde kullanılan bazı modüller desteklemiyor olabilir ve vcremote yüklemesinin başarısız olmasına neden olabilir unutmayın.  
+  
 -   Npm güncelleştirilmiş bir sürümü  
   
      Node.js ile birlikte gelen npm sürümü vcremote yüklemek için güncel olmayabilir. Npm güncelleştirmek için Terminal Mac uygulamasını açın ve aşağıdaki komutu girin:  
@@ -88,7 +90,7 @@ Platformlar arası Mobil Geliştirme için Visual C++ düzenlemek, hata ayıklam
   
      Genel yükleme (**-g**) anahtar önerilir ancak gerekli değildir.  
   
-     Yükleme sırasında vcremote yüklü olduğundan ve Mac üzerinde Geliştirici modu etkinleştirildi [Homebrew](http://brew.sh/) ve iki npm paket, vcremote-lib ve vcremote-yardımcı programları da yüklenir.  
+     Yükleme sırasında vcremote yüklü olduğundan ve Mac üzerinde Geliştirici modu etkinleştirildi [Homebrew](http://brew.sh/) ve iki npm paket, vcremote-lib ve vcremote-yardımcı programları da yüklenir. Yükleme tamamlandığında, atlanan isteğe bağlı bağımlılıkları ilgili tüm uyarılar yoksaymak güvenlidir.  
   
     > [!NOTE]
     >  Homebrew yüklemek için sudo (Yönetici) erişimi olmalıdır. Sudo olmadan vcremote yüklemeniz gerekiyorsa, Homebrew usr/yerel konumda el ile yükleyin ve kendi bin klasörü yolunu ekleyin. Daha fazla bilgi için bkz: [Homebrew belgelerine](https://github.com/Homebrew/homebrew/wiki/Installation). Geliştirici modu el ile etkinleştirmek için Terminal uygulamada şu komutu girin: `DevToolsSecurity -enable`  

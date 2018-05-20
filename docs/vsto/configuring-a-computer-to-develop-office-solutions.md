@@ -1,5 +1,5 @@
 ---
-title: Office çözümleri geliştirmek için bilgisayarı yapılandırma | Microsoft Docs
+title: Office çözümleri geliştirmek için bilgisayarı yapılandırma
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,13 +15,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59c00639ce839962c06cacf3c036a5cd8f74b508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 58458b51115834b5b94e858676ee8039d5894c70
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="configuring-a-computer-to-develop-office-solutions"></a>Office Çözümleri Geliştirmek İçin Bilgisayarı Yapılandırma
+# <a name="configure-a-computer-to-develop-office-solutions"></a>Office çözümleri geliştirmek için bilgisayarı yapılandırma
 
 VSTO eklentileri ve Microsoft Office için özelleştirmeler oluşturmak için Visual Studio, .NET Framework ve Microsoft Office desteklenen bir sürümünü yükleyin.
 
@@ -49,10 +49,10 @@ Visual Studio, .NET Framework ve Microsoft Office desteklenen bir sürümünü y
 
 Sorun yaşamaya devam ederseniz, bkz: [Office çözümlerindeki hatalar için ek destek](../vsto/additional-support-for-errors-in-office-solutions.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Başlarken &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-[Nasıl Yapılır: Office Çözümleri Geliştirmek İçin Bilgisayarı Yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[Nasıl Yapılır: Office Çalışma Zamanı Yeniden Dağıtılabilir için Visual Studio Araçları Yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[Nasıl Yapılır: Office Birincil Birlikte Çalışma Derlemelerini Yükleme](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-[Office Uygulaması ve Proje Türüne Göre Kullanılabilir Özellikler](../vsto/features-available-by-office-application-and-project-type.md)
+[Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+[Nasıl yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
+[Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio araçlarını yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
+[Nasıl yapılır: yükleme Office birincil birlikte çalışma derlemeleri](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+[Office uygulaması ve proje türüne göre kullanılabilir özellikler](../vsto/features-available-by-office-application-and-project-type.md)

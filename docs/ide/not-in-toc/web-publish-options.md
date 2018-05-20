@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c0a5c24f664d337df3d85f24078d7ed410c137
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0fd980aa7da59c98348c4dede5aee9835863d522
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # Benim için en uygun Yayımlama seçenekleri nelerdir?
 
@@ -98,7 +98,7 @@ Visual Studio'da farklı ayarlarla profillerini yönetmek olası hale getirerek,
 
 ### Özel dağıtım seçmek ne zaman
 
-- Bulut hizmetleri sağlama URL'ler erişilen Azure dışında üzerinde kullanıyorsunuz.
+- Bulut Hizmetleri sağlayıcısında URL'ler erişilen Azure dışında kullanıyorsunuz.
 - Visual Studio içinde kullanın ya da Azure hesaplarınızı doğrudan bağlı olanlar dışındaki kimlik bilgilerini kullanarak dağıtmak istediğiniz.
 - Dağıttığınız her zaman hedef dosyaları silmek istiyor.
 

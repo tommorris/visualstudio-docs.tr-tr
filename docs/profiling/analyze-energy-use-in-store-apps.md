@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0efe4fe685a0a75438cb68590722ea6748a15f23
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 8e7bd65e67af3a76eaf026e79c1153489b9d26a8
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP uygulamalarında enerji kullanımını çözümleme
 Visual Studio **enerji tüketimi** profil oluşturucu UWP uygulamaları kendi pille saat bölümünü veya tümünü Çalıştır düşük güç tablet cihazlarda güç ve enerji tüketimi analiz etmenize yardımcı olur. Enerjisini pilden alan bir aygıtta çok fazla enerji kullanan bir uygulama, çok fazla müşteri memnuniyetsizliğine neden olabilir ve sonunda müşteriler uygulamayı kaldırmaya da karar verebilir. Enerji kullanımını en iyi duruma getirme, uygulamanızın benimseme artırmak ve müşteriler tarafından kullanın.  
@@ -152,6 +152,6 @@ if (performance && performance.mark) {
   
 -   **JavaScript işlevi zamanlama** ve **CPU kullanımı** araçları verimsiz işlevleri tarafından nedeni CPU yükünü azaltmanıza yardımcı olabilir. Bkz: [CPU kullanımı analiz](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
  [Visual Studio'da profil oluşturma](../profiling/index.md)  
  [Özellik turu profil oluşturma](../profiling/profiling-feature-tour.md)

@@ -14,13 +14,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 860449ea4bd4d8aa3ea6c36ab7ff3572c2679488
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d2b1c83a2954ca06385904f3a5e046f1c9ca50b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="blocking-time-profile-report"></a>Engelleme Zamanı Profil Raporu
+# <a name="blocking-time-profile-report"></a>Engelleme zamanı Profil raporu
 Profil raporları engelleme zaman veri toplama için engelleme her kategori (örneğin "G/ç" veya "Eşitleme") belirli çağrı yığınları sağlar. Önalım rapor önalım örnek sayısı ile birlikte geçerli işlem etkisiz işlemleri listeler. Engelleme Profil raporu oluşturmak için aracı engelleme API çağrıları toplar ve çağrı yığınları ağacına birikir. Bu raporlarda gösterilen verileri geçerli zaman aralığı, gizli iş parçacıkları ve uygulanabilir aşağıdaki iki filtre olarak değişir:  
   
 -   Sadece kendi kodumu seçili ise, bir düzey altındaki kullanıcı kodu artı kullanıcı kodu sahip yığın çerçeveleri sunulur.  
@@ -34,12 +34,12 @@ Profil raporları engelleme zaman veri toplama için engelleme her kategori (ör
   
 |Sütun adı|Açıklama|  
 |-----------------|-----------------|  
-|Ad|İşlev adı her düzeyi için çağrı yığını.|  
-|Örnekler|Görünür zaman aralığı için engelleme çağrının örneği sayısı.|  
-|Kapsayıcı engelleme süresi|Bu çağrı yığını ağacı düzey için toplanan tüm yığınları için harcanan süre engelleme toplam. Bu işlev için özel engelleme süresi ve tüm alt düğümleri için özel engelleme süresi toplamı (bunlar dahil) sayıdır.|  
-|Özel engelleme süresi|Bu sırasında harcanan toplam engelleme süresini çağrı yığını en düşük düzeyde işlevdir. Yüksek bir özel engelleme süresine sahip bir benzersiz çağrı yığını girişi işlevi ilgi olabilir.|  
-|API/Wait kategorisi|Yalnızca en düşük düzeyde çağrı yığını işlevler için gösterilir. Engelleme çağrısı imza tanınan burada engelleme API adı sağlanır. İmza tanınmıyorsa çekirdek tarafından bildirilen bilgiler sağlanır.|  
-|Ayrıntılar|İşlev tam adı. Kullanılabilir olduğunda bu satır sayısını içerir.|  
+|**Ad**|İşlev adı her düzeyi için çağrı yığını.|  
+|**Örnekler**|Görünür zaman aralığı için engelleme çağrının örneği sayısı.|  
+|**Kapsayıcı engelleme süresi**|Bu çağrı yığını ağacı düzey için toplanan tüm yığınları için harcanan süre engelleme toplam. Bu işlev için özel engelleme süresi ve tüm alt düğümleri için özel engelleme süresi toplamı (bunlar dahil) sayıdır.|  
+|**Özel engelleme süresi**|Bu sırasında harcanan toplam engelleme süresini çağrı yığını en düşük düzeyde işlevdir. Yüksek bir özel engelleme süresine sahip bir benzersiz çağrı yığını girişi işlevi ilgi olabilir.|  
+|**API/Wait kategorisi**|Yalnızca en düşük düzeyde çağrı yığını işlevler için gösterilir. Engelleme çağrısı imza tanınan burada engelleme API adı sağlanır. İmza tanınmıyorsa çekirdek tarafından bildirilen bilgiler sağlanır.|  
+|**Ayrıntıları**|İşlev tam adı. Kullanılabilir olduğunda bu satır sayısını içerir.|  
   
 ### <a name="synchronization"></a>Eşitleme  
  Eşitleme rapor eşitleme ve her çağrı yığını sürelerinin engelleme toplama engelleme kesimleri sorumlu olan çağrıları gösterir. Daha fazla bilgi için bkz: [eşitleme zamanı](../profiling/synchronization-time.md)  
@@ -50,7 +50,7 @@ Profil raporları engelleme zaman veri toplama için engelleme her kategori (ör
 ### <a name="io"></a>G/Ç  
  G/ç rapor g/ç ve her çağrı yığını sürelerinin engelleme toplama engelleme kesimleri sorumlu olan çağrıları gösterir. Daha fazla bilgi için bkz: [g/ç zamanı (iş parçacıkları görünümü)](../profiling/i-o-time-threads-view.md).  
   
-### <a name="memory-management"></a>Bellek Yönetimi  
+### <a name="memory-management"></a>Bellek yönetimi  
  Bellek yönetimi raporu bellek yönetimi işlemleri ve her çağrı yığını sürelerinin engelleme toplama engelleme kesimleri sorumlu olan çağrıları gösterilir. Daha fazla bilgi için bkz: [bellek yönetimi zamanı](../profiling/memory-management-time.md).  
   
 ### <a name="preemption"></a>Önalım  
@@ -59,5 +59,5 @@ Profil raporları engelleme zaman veri toplama için engelleme her kategori (ör
 ### <a name="ui-processing"></a>UI işleme  
  Rapor UI işleme UI işleme blokları ve her çağrı yığını sürelerinin engelleme toplama engelleme kesimleri engellemek için sorumlu çağrıları gösterilir. Daha fazla bilgi için bkz: [UI işleme zamanı](../profiling/ui-processing-time.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)

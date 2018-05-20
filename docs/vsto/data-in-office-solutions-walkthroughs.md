@@ -1,5 +1,5 @@
 ---
-title: Office çözümleri izlenecek veri | Microsoft Docs
+title: Office çözümleri izlenecek verileri
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,58 +16,58 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a30280c2e47a5beac99c52eefb61fcbc7fbbdea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a8c63a98d47a3846ea6482624aa71cd0a7378f1a
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="data-in-office-solutions-walkthroughs"></a>Office Çözümlerindeki Verilerde İzlenecek Yol
+# <a name="data-in-office-solutions-walkthroughs"></a>Office çözümleri izlenecek verileri
   Aşağıdaki izlenecek Microsoft Office Word ve Microsoft Office Excel için belge düzeyi özelleştirmeleri ve VSTO eklentileri verilerle çalışmak nasıl ekleyebileceğiniz gösterilmektedir.  
   
-## <a name="binding-controls-to-data"></a>Denetimlere veri bağlama  
- [İzlenecek Yol: Belge Düzeyi Projede Basit Veri Bağlama](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
+## <a name="bind-controls-to-data"></a>Verilere denetimler bağlama  
+ [İzlenecek yol: Belge düzeyi projede basit veri bağlama](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
  Bir SQL Server veritabanına bir tek veri alanına bağlamak nasıl gösteren bir <xref:Microsoft.Office.Tools.Excel.NamedRange> Excel için belge düzeyi özelleştirmelerinde.  
   
- [İzlenecek Yol: Belge Düzeyi Projede Karmaşık Veri Bağlama](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
+ [İzlenecek yol: Belge düzeyi projede karmaşık veri bağlama](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
  SQL Server veritabanındaki bir tablo bağlamak gösterilmiştir bir <xref:Microsoft.Office.Tools.Excel.ListObject> Excel için belge düzeyi özelleştirmelerinde.  
   
- [İzlenecek Yol: VSTO eklenti Projesinde Basit Veri Bağlama](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
+ [İzlenecek yol: VSTO eklenti projesindeki basit veri bağlama](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
  Bir SQL Server veritabanına bir tek veri alanına bağlamak nasıl gösteren bir <xref:Microsoft.Office.Tools.Word.RichTextContentControl> Word için VSTO ek bileşeni içinde.  
   
- [İzlenecek Yol: VSTO eklenti Projesinde Karmaşık Veri Bağlama](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
+ [İzlenecek yol: VSTO eklenti projesindeki karmaşık veri bağlama](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
  SQL Server veritabanındaki bir tablo bağlamak gösterilmiştir bir <xref:Microsoft.Office.Tools.Excel.ListObject> Excel için VSTO ek bileşeni içinde.  
   
- [İzlenecek Yol: Excel Eylemler Bölmesindeki Denetimlere Veri Bağlama](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
+ [İzlenecek yol: Excel eylemler bölmesindeki denetimlere veri bağlama](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
  Excel Eylemler bölmesinde bir veri kaynağına bağlı denetimlerin nasıl ekleneceğini gösterir.  
   
- [İzlenecek Yol: Word Eylemler Bölmesindeki Denetimlere Veri Bağlama](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
+ [İzlenecek yol: Word eylemler bölmesindeki denetimlere veri bağlama](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
  Eylemler bölmesindeki denetimlere veri bağlama gösterir. Denetimler, SQL Server veritabanındaki tablolar arasındaki ana/ayrıntı ilişkisi gösterir.  
   
- [İzlenecek Yol: İçerik Denetimlerini Özel XML Bölümlerine Bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
+ [İzlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
  İçerik denetimleri bir Word belgesinde belgede depolanan XML verilerini nasıl bağlanacağını gösterir.  
   
-## <a name="caching-data-in-document-level-solutions"></a>Belge düzeyi çözümlerde verileri önbelleğe alma  
- [İzlenecek Yol: Önbellekteki Veri Kümesini Kullanarak Ana Öğe-Ayrıntı İlişkisi Oluşturma](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+## <a name="cache-data-in-document-level-solutions"></a>Belge düzeyi çözümleri veriyi önbelleğe alma  
+ [İzlenecek yol: önbellekteki veri kümesini kullanarak ana ayrıntı ilişkisi oluşturma](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
  Çalışma sayfasında bir ana öğe/ayrıntı ilişkisi oluşturma ve çözüm çevrimdışı kullanılabilmesi için verileri önbelleğe gösterir.  
   
- [İzlenecek Yol: Sunucudaki Çalışma Kitabına Veri Ekleme](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  
+ [İzlenecek yol: sunucudaki çalışma kitabına veri ekleme](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  
  Microsoft Office Excel çalışma kitabında Excel'i başlatmadan önbelleğe alınmış bir veri kümesine veri eklemeye gösterilmiştir.  
   
- [İzlenecek Yol: Sunucudaki Çalışma Kitabından Önbelleğe Alınmış Verileri Alma](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md)  
+ [İzlenecek yol: sunucudaki çalışma kitabından önbelleğe alınmış verileri alma](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md)  
  Microsoft Office Excel çalışma kitabında Excel'i başlatmadan önbelleğe alınmış bir veri kümesinden veri almayı gösterir.  
   
- [İzlenecek Yol: Sunucudaki Çalışma Kitabında Bulunan Önbelleğe Alınmış Verileri Değiştirme](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
+ [İzlenecek yol: sunucudaki çalışma kitabında önbelleğe alınmış verileri değiştirme](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
  Microsoft Office Excel çalışma kitabında Excel'i başlatmadan önbelleğe alınmış bir veri kümesinin nasıl değiştirileceği gösterilmektedir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Word kullanımında izlenecek yollar](../vsto/walkthroughs-using-word.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Word'ü kullanarak izlenecek yollar](../vsto/walkthroughs-using-word.md)   
  [Excel kullanarak izlenecek yollar](../vsto/walkthroughs-using-excel.md)   
  [Office kullanıcı Arabirimi özelleştirmesinde izlenecek yollar](../vsto/office-ui-customization-walkthroughs.md)   
- [Güvenlik ve Dağıtmada İzlenecek yollar](../vsto/security-and-deployment-walkthroughs.md)   
+ [Güvenlik ve dağıtım izlenecek yollar](../vsto/security-and-deployment-walkthroughs.md)   
  [Office geliştirme örnekleri](../vsto/office-development-samples.md)   
- [Başlarken &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office programlarındaki ortak görevler](../vsto/common-tasks-in-office-programming.md)   
- [Office Çözümleri Tasarlama ve Oluşturma](../vsto/designing-and-creating-office-solutions.md)  
+ [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)  
   
   

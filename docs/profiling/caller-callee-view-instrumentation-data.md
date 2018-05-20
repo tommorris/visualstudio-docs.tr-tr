@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8048d7dfd54627394705b2ca9e2ba9949f2bca1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: 68025cf21ecd65edc8aea398f4968e64e8813e3e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Arayan/Aranan görünümü - izleme verileri
 Arayan/Aranan görünümü çağrısı ağacında seçilen işlevi ve üst ve alt işlevleri profil bilgilerini görüntüler. Arayan/Aranan görünümü üç kılavuzları içerir.  
@@ -92,6 +92,6 @@ Arayan/Aranan görünümü çağrısı ağacında seçilen işlevi ve üst ve al
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
- [Arayan / Aranan görünümü - örnekleme verileri](../profiling/caller-callee-view-sampling-data.md)   
+ [Arayan/Aranan görünümü - örnekleme verileri](../profiling/caller-callee-view-sampling-data.md)   
  [Arayan/Aranan görünümü - .NET bellek örnekleme verileri](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [Arayan/Aranan görünümü - NET bellek izleme verileri](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+ [Arayan/Aranan görünümü - .NET bellek izleme verileri](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

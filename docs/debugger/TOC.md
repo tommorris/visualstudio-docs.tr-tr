@@ -81,7 +81,6 @@
 ##### [Nasıl yapılır: Karışık modda hata ayıklama](how-to-debug-in-mixed-mode.md)
 #### [Hata ayıklama hazırlığı: Konsol projeleri](debugging-preparation-console-projects.md)
 #### [Nasıl yapılır: Visual Studio çözümünün parçası olmayan yürütülebilir öğede hata ayıklama](how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)
-#### [Nasıl yapılır: Kod Merkezi Birincil Kaynağı ile hata ayıklama](how-to-debug-with-code-center-premium-source.md)
 #### [Hata ayıklama ve barındırma işlemi](debugging-and-the-hosting-process.md)
 #### [Nasıl yapılır: Hata ayıklama için .NET Framework sürümü belirtme](how-to-specify-a-dotnet-framework-version-for-debugging.md)
 ### [Verilerin özel görünümlerini oluşturma](viewing-data-in-the-debugger.md)

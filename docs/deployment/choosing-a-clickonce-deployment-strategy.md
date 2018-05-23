@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0bc8d7f2f6fb1515b8946d0fad9338733c5138
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b811f194e0496030e1f46d1448736fb21f9579b3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>ClickOnce Dağıtım Stratejisini Seçme
 Dağıtımı için üç farklı strateji vardır bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] öncelikle dağıtmakta olduğunuz uygulama türüne bağlıdır seçtiğiniz strateji; uygulama. Üç dağıtım stratejisi aşağıdaki gibidir:  
@@ -46,15 +46,6 @@ Dağıtımı için üç farklı strateji vardır bir [!INCLUDE[ndptecclick](../d
   
  Bu, varsayılan dağıtım stratejisidir.  
   
-## <a name="install-from-a-cd"></a>CD'den yükle  
- Bu stratejiyi kullandığınızda, uygulamanız CD-ROM veya DVD gibi çıkarılabilir ortamla dağıtılır. Önceki seçenek uygulamayı yüklemek kullanıcı seçer, yüklenmiş ve başlatılmış ve öğeleri eklenir, olduğu gibi **Başlat** menü ve **Program Ekle veya Kaldır** içinde **denetim Panel**.  
-  
- Bu strateji en iyi, devamlı ağ bağlantısı olmayan veya bant genişliği düşük bağlantısı olan kullanıcılara dağıtılacak uygulamalar için çalışır. Uygulama çıkarılabilir ortamdan yüklendiğinden yükleme için ağ bağlantısı gerekmez, ancak ağ bağlantısını yine de uygulama güncelleştirmeleri için gereklidir.  
-  
- Bu dağıtım stratejisini etkinleştirmek için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tıklatın **gelen bir CD-ROM veya DVD-ROM'UNDAN** üzerinde **nasıl yükleneceğini** Yayımlama Sihirbazı sayfası.  
-  
- Bu dağıtım stratejisini el ile etkinleştirmek için değiştirme **deploymentProvider** dağıtım bildiriminde etiketi. (Visual Studio'da bu özellik olarak sunulan **yükleme URL'si** üzerinde **Yayımla** sayfası Proje Tasarımcısı'nın. İçinde Bu Mage.exe **Başlat konumu**.)  
-  
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>Uygulamayı Web'den veya Ağ Paylaşımı'ndan başlat  
  Uygulamanın bir Web uygulaması gibi davranması dışında, bu strateji birinci stratejiye benzer. Kullanıcı Web sayfası üzerinde bir bağlantıyı tıkladığında (veya dosya paylaşımında bir simgeye çift tıklarsa) uygulama başlatılır. Kullanıcılar uygulamayı kapattığınızda, artık yerel bilgisayarlarında kullanılamıyor; hiçbir şey eklenen **Başlat** menüsü veya **Program Ekle veya Kaldır** içinde **Denetim Masası**.  
   
@@ -66,6 +57,15 @@ Dağıtımı için üç farklı strateji vardır bir [!INCLUDE[ndptecclick](../d
  Bu dağıtım stratejisini etkinleştirmek için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tıklatın **uygulama yüklemeyen** üzerinde **yükleme veya Web'den çalıştırmak** Yayımlama Sihirbazı sayfası.  
   
  Bu dağıtım stratejisini el ile etkinleştirmek için değiştirme **yükleme** dağıtım bildiriminde etiketi. (Değerini olabilir **true** veya **false**. İçinde Mage.exe, kullanım **yalnızca çevrimiçi** seçeneğini **uygulama türü** listesi.)  
+
+## <a name="install-from-a-cd"></a>CD'den yükle  
+ Bu stratejiyi kullandığınızda, uygulamanız CD-ROM veya DVD gibi çıkarılabilir ortamla dağıtılır. Önceki seçenek uygulamayı yüklemek kullanıcı seçer, yüklenmiş ve başlatılmış ve öğeleri eklenir, olduğu gibi **Başlat** menü ve **Program Ekle veya Kaldır** içinde **denetim Panel**.  
+  
+ Bu strateji en iyi, devamlı ağ bağlantısı olmayan veya bant genişliği düşük bağlantısı olan kullanıcılara dağıtılacak uygulamalar için çalışır. Uygulama çıkarılabilir ortamdan yüklendiğinden yükleme için ağ bağlantısı gerekmez, ancak ağ bağlantısını yine de uygulama güncelleştirmeleri için gereklidir.  
+  
+ Bu dağıtım stratejisini etkinleştirmek için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tıklatın **gelen bir CD-ROM veya DVD-ROM'UNDAN** üzerinde **nasıl yükleneceğini** Yayımlama Sihirbazı sayfası.  
+  
+ Bu dağıtım stratejisini el ile etkinleştirmek için değiştirme **deploymentProvider** dağıtım bildiriminde etiketi. (Visual Studio'da bu özellik olarak sunulan **yükleme URL'si** üzerinde **Yayımla** sayfası Proje Tasarımcısı'nın. İçinde Bu Mage.exe **Başlat konumu**.)  
   
 ## <a name="web-browser-support"></a>Web Tarayıcısı Desteği  
  .NET Framework 3.5 kullanan uygulamalar herhangi bir tarayıcı kullanarak yüklenebilir.  

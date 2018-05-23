@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Otomatik değişkenler değişkenleri ve Visual Studio Yereller Windows inceleyin.
 **Otomobiller** penceresi (hata ayıklama, **CTRL + ALT + V, A**, veya **hata ayıklama > Windows > otomobiller**) ve **Yereller** (hata ayıklama penceresi **CTRL + ALT + V, L**, veya **hata ayıklama > Windows > Yereller**) hata ayıklarken değişken değerleri görmek istediğinizde oldukça faydalıdır. **Yereller** penceresi, işlev veya şu anda yürütülmekte olan yöntem genellikle olan yerel kapsamda tanımlanan değişkenler görüntüler. **Otomobiller** penceresi geçerli satırında (hata ayıklayıcı durduğu koyun) kullanılan değişkenler görüntüler. Tam olarak hangi değişkenleri Bu pencerede görüntüler farklı dillerde farklıdır. Bkz: [değişkenleri otomobiller penceresinde görüntülenecek?](#bkmk_whatvariables) aşağıda.  
@@ -28,7 +28,7 @@ ms.lasthandoff: 04/18/2018
 Temel hata ayıklama hakkında daha fazla bilgiye ihtiyacınız varsa bkz [hata ayıklayıcısı ile çalışmaya başlama](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Otomatik değişkenler ve yerel Windows nesneleri bakarak  
-Diziler ve nesneleri otomatik değişkenler ve Yereller pencerelerinde ağaç denetimleri görüntülenir. Alanları ve özellikleri göstermek için Görünümü genişletmek için değişken adının solundaki oka tıklayın. Bir örneği burada verilmiştir bir [FILESTREAM](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) nesnesinde **Yereller** penceresi:  
+Diziler ve nesneleri otomatik değişkenler ve Yereller pencerelerinde ağaç denetimleri görüntülenir. Alanları ve özellikleri göstermek için Görünümü genişletmek için değişken adının solundaki oka tıklayın. Bir örneği burada verilmiştir bir [FILESTREAM](/dotnet/api/system.io.filestream) nesnesinde **Yereller** penceresi:  
   
 ![Yerel öğeler&#45;FILESTREAM](../debugger/media/locals-filestream.png "Yereller FILESTREAM")  
   

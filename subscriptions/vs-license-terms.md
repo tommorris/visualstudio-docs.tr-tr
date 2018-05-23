@@ -9,11 +9,11 @@ description: Visual Studio abonelikleri lisans koşulları.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6bb1e074b395d37547f33cd523f973fe9e79dba
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 **AŞAĞIDAKİ VISUAL STUDIO ABONELİKLER İÇİN MICROSOFT YAZILIMI LİSANS KOŞULLARI:**
 
@@ -128,7 +128,7 @@ BU LİSANS KOŞULLARINA UYMANIZ DURUMUNDA, ALMAK İÇİN HER LİSANS AŞAĞIDA H
     (bazen "çoğullama" veya "havuz oluşturma" adlandırılır), gereken herhangi bir türde lisans sayısını azaltmaz.
 
 
-8. **ZORUNLU ETKİNLEŞTİRME.** Etkinleştirme yazılım kullanımını belirli bir aygıt ile ilişkilendirir. Etkinleştirme sırasında yazılım, Microsoft yazılım ve cihaz hakkında bilgi gönderir. Bu bilgiler yazılımın sürümü, dil ve ürün anahtarı, cihaz ve cihaz donanım yapılandırmasından türetilen bilgileri Internet Protokolü adresini içerir. Daha fazla bilgi için [microsoft.com/piracy/activation.mspx. [ (http://microsoft.com/piracy/activation.mspx)] Yazılımı kullanarak, bu bilgilerin iletimine. Etkinleştirmeden önce yükleme işlemi sırasında yüklü olan yazılım sürümünü kullanmak üzere hakkına sahip. **Etkin olduğu sürece yazılım yükleme işlemi belirtilen süre sonra kullanım haklarınızı sınırlıdır.** Bu lisanssız kullanılmasını önlemek için yapılır. Bunu etkinleştirmezseniz yazılımı bu saatten sonra kullanmaya devam etmek mümkün olmaz. Cihazın Internet'e bağlı değilse yazılım etkinleştirme için Microsoft'a otomatik olarak bağlanabilir. Ayrıca yazılımı Internet veya telefon tarafından el ile etkinleştirebilirsiniz. Bunu yaparsanız, Internet ve telefon hizmeti ücretleri uygulanabilir. Bilgisayar bileşenlerinizi veya yazılım bazı değişiklikler yazılımı yeniden etkinleştirmenizi gerektirebilir. **Yazılım, bunu yapana kadar etkinleştirmek için anımsatır.**
+8. **ZORUNLU ETKİNLEŞTİRME.** Etkinleştirme yazılım kullanımını belirli bir aygıt ile ilişkilendirir. Etkinleştirme sırasında yazılım yazılım ve cihaz hakkında bilgileri Microsoft'a gönderir. Bu bilgiler, sürüm, dil ve ürün anahtarı yazılım, cihaz ve cihaz donanım yapılandırmasından türetilen bilgileri Internet Protokolü adresini içerir. Daha fazla bilgi için bkz: [Microsoft Ürün etkinleştirme](https://www.microsoft.com/en-us/piracy/mpa.aspx). Yazılımı kullanarak, bu bilgilerin iletimine. Etkinleştirmeden önce yükleme işlemi sırasında yüklü olan yazılım sürümünü kullanmak üzere hakkına sahip. **Etkin olduğu sürece yazılım yükleme işlemi belirtilen süre sonra kullanım haklarınızı sınırlıdır.** Bu lisanssız kullanılmasını önlemek için yapılır. Bunu etkinleştirmezseniz yazılımı bu saatten sonra kullanmaya devam etmek mümkün olmaz. Cihazın Internet'e bağlı değilse yazılım etkinleştirme için Microsoft'a otomatik olarak bağlanabilir. Ayrıca yazılımı Internet veya telefon tarafından el ile etkinleştirebilirsiniz. Bunu yaparsanız, Internet ve telefon hizmeti ücretleri uygulanabilir. Bilgisayar bileşenlerinizi veya yazılım bazı değişiklikler yazılımı yeniden etkinleştirmenizi gerektirebilir. **Yazılım, bunu yapana kadar etkinleştirmek için anımsatır.**
 
 9. **DOĞRULAMA.**
 

@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ecd96b8541145cfd5d36686f7ceaf04e7544b1
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0136fb8f7b1075d2eadeaed10ab26026395b9671
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Hızlı Başlangıç: İlk Visual Studio'daki dağıtımı bakın
 
@@ -86,6 +86,8 @@ Visual Studio'dan dağıtım Microsoft Store için uygulama paketleri oluşturab
     ![Masaüstü köprüsü](../deployment/media/feature-tour-desktop-bridge.png)
 
 ### <a name="create-an-installer-package-windows-client"></a>Bir yükleyici paketi (Windows istemcisi) oluşturun.
+
+Bir masaüstü uygulamasının karmaşık bir kurulum daha gerektirip gerektirmediğini [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) sağlayabilir bir yükleyici paketi, bir kurulum projesi ya da özel bir önyükleyici oluşturabilirsiniz.
 
 - Bir MSI tabanlı WiX yükleyici kullanılarak oluşturulabilir [WiX Toolset Visual Studio 2017 uzantısı](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
 

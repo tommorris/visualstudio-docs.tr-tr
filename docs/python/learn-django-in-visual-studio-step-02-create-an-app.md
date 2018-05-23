@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4050694685302eb527b33d8810bc7f92974bc305
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Öğreticisi 2. adım: görünümlerle bir Django uygulaması oluşturma ve sayfa şablonları
 
@@ -206,7 +206,7 @@ Aşağıdaki adımlarda, sayfa şablonlarının kullanımı gösterilmektedir:
         )
     ```
 
-    İlk bağımsız değişken `render`, gördüğünüz gibi uygulamanın içinde şablon dosyası için göreli yol üzerinden izlenen istek nesnesi `templates` klasör. Destekler, görünüm için bir şablon dosyası uygunsa olarak adlandırılır. Üçüncü bağımsız değişkeni `render` şablon başvurduğu değişkenleri sözlüğü ise. Nesneler sözlükte içerebilir, şablon bir değişkende durumda başvurabilirsiniz `{{ object.property }}`.
+    İlk bağımsız değişken `render`, gördüğünüz gibi uygulamanın içinde şablon dosyası için göreli yol üzerinden izlenen istek nesnesi `templates` klasör. Bir şablon dosyası destekliyorsa, görünüm için uygunsa olarak adlandırılır. Üçüncü bağımsız değişkeni `render` şablon başvurduğu değişkenleri sözlüğü ise. Nesneler sözlükte içerebilir, şablon bir değişkende durumda başvurabilirsiniz `{{ object.property }}`.
 
 1. Projeyi çalıştırın ve çıktıyı inceleyin. 2-2, şablon çalıştığını gösteren görülen bu adıma benzer bir ileti görürsünüz.
 

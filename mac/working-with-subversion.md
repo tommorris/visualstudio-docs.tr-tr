@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 1c03c4fac50c34cb96583a1fc8c16a403b7bbe1b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 9514db72dd72e616f45670ffdf8c0b468bfb81cc
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="working-with-subversion"></a>Alt sürüme ile çalışma
 
@@ -29,7 +29,7 @@ Aşağıdaki resimde, Visual Studio tarafından Mac için sürüm denetimi menü
 
 Uzak bir alt sürüme depo kullanmaya başlamadan önce depoyu yerel makinenize bu dizine çalışan bir kopyasını oluşturmak için göz atın.
 
-Kullanma hakkında bilgi almak için **Checkout** Mac için Visual Studio'da özelliği, adımları [bir alt sürüme depoyu ayarı](~/set-up-subversion-repository.md) bölümü.
+Kullanma hakkında bilgi almak için **Checkout** Mac için Visual Studio'da özelliği, adımları [bir alt sürüme depoyu ayarı](set-up-subversion-repository.md) bölümü.
 
 ## <a name="update-solution"></a>Güncelleştirme çözümü
 

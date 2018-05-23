@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56ad565dfffd454eeca465aa4097c077fdc0a65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName Öğesi (Visual Studio Şablonları)
 Belirtir olup olmadığını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje sistemi, şablon için bir varsayılan ad oluşturacağını **Yeni Öğe Ekle** veya **yeni proje** iletişim kutusu.  
@@ -59,7 +59,7 @@ Belirtir olup olmadığını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_m
   
  Varsa `ProvideDefaultName` öğesi `false`, **adı** kutularını **Yeni Öğe Ekle** ve **yeni proje** iletişim kutuları içeren değeri `<Enter_name>`.  
   
- Kullanım [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) projenin varsayılan adı belirtin veya öğesi için öğe **Yeni Öğe Ekle** ve **yeni proje** iletişim kutuları.  
+ Kullanım [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) projenin varsayılan adı belirtin veya öğesi için öğe **Yeni Öğe Ekle** ve **yeni proje** iletişim kutuları. Zaman değeri `ProvideDefaultName` öğesi `true`, Java'daki `DefaultName` öğesi projeleri için şablonun adı, diğer bir deyişle, değerinden iletişim kutusuyla doldurur [adı](../extensibility/name-element-visual-studio-templates.md) öğesi.
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek kod `ProvideDefaultName` öğesine `false`.  

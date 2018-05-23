@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c506e12fc8e6637e2b53852587e6a37c57cbf5ce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b97e2d6b9ca269a86c3b66ffbcc4bb441051f29
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Nasıl yapılır: tam zamanında hata ayıklayıcı için yanıt
 
@@ -25,7 +25,7 @@ Zaman içinde sadece gördüğünüzde almalıdır Eylemler hata ayıklayıcı i
 
 #### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Düzeltin veya (Visual Studio kullanıcılar) hata ayıklama istiyorsanız
 
-- Sahip olmanız gerekir [Visual Studio yüklüyse](https://www.microsoft.com/en-us/download/details.aspx?id=48146) hata hakkında ayrıntılı bilgi görüntülemek ve hata ayıklamak deneyin. Daha fazla bilgi için bkz: [Just-In-Time hata ayıklayıcısı ile hata ayıklama](../debugger/debug-using-the-just-in-time-debugger.md). Hatayı çözün ve uygulama düzeltme, hatayı gidermek için uygulama sahibine başvurun.
+- Sahip olmanız gerekir [Visual Studio yüklüyse](http://www.visualstudio.com) hata hakkında ayrıntılı bilgi görüntülemek ve hata ayıklamak deneyin. Daha fazla bilgi için bkz: [Just-In-Time hata ayıklayıcısı ile hata ayıklama](../debugger/debug-using-the-just-in-time-debugger.md). Hatayı çözün ve uygulama düzeltme, hatayı gidermek için uygulama sahibine başvurun.
 
 #### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Just-In-Time hata ayıklayıcı iletişim kutusunun görüntülenmesini engellemek istiyorsanız
 

@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7df107cbf6170e603978358d49df167596208a4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2cf84975f96ca2d1935da7f750f5c120d72eb112
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft İzleme Aracısı’nı kullanma
-Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoint 2010 veya 2013 uygulamaları hataları, performans sorunlarını ya da diğer sorunlar için yerel olarak izleyebilirsiniz **Microsoft İzleme Aracısı**. Tanılama olaylarını aracıdan bir IntelliTrace günlük (.iTrace) dosyasına kaydedebilirsiniz. Ardından tüm Visual Studio tanılama araçları ile sorunları hata ayıklamak için Visual Studio Enterprise'ı (ancak Professional veya topluluk sürümleri) oturum açabilirsiniz. Aracısı'nı çalıştırarak IntelliTrace Tanılama verilerini ve yöntem verilerini de toplayabilirsiniz **izleme** modu. Microsoft Monitoring Agent ile tümleştirilebilir [Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) ve [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). Yüklendiğinde Microsoft Monitoring Agent hedef sistemin ortam değiştirmez.  
+Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoint 2010 veya 2013 uygulamaları hataları, performans sorunlarını ya da diğer sorunlar için yerel olarak izleyebilirsiniz **Microsoft İzleme Aracısı**. Tanılama olaylarını aracıdan bir IntelliTrace günlük (.iTrace) dosyasına kaydedebilirsiniz. Ardından tüm Visual Studio tanılama araçları ile sorunları hata ayıklamak için Visual Studio Enterprise'ı (ancak Professional veya topluluk sürümleri) oturum açabilirsiniz. Aracısı'nı çalıştırarak IntelliTrace Tanılama verilerini ve yöntem verilerini de toplayabilirsiniz **izleme** modu. Microsoft Monitoring Agent ile tümleştirilebilir [Application Insights](/azure/application-insights/) ve [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). Yüklendiğinde Microsoft Monitoring Agent hedef sistemin ortam değiştirmez.  
   
 > [!NOTE]
 >  Hedef ortam kullanarak değiştirmeden Uzak makinelerde web, SharePoint, WPF ve Windows Form uygulamaları için IntelliTrace Tanılama ve yöntemi verileri toplayabilir **IntelliTrace tek başına toplayıcıyı**. Tek başına toplayıcıyı Microsoft Monitoring Agent çalışır durumda daha büyük bir performans etkisi olur **İzleyici** modu. Bkz: [IntelliTrace tek başına toplayıcıyı kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md).  

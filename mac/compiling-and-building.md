@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 28127fec86f839110ff53de3e6d7d2466adc3489
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 29c6baaa4da4eae4a2302ec3916a156b59a49272
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Derleme ve Mac için Visual Studio'da derleme
 
@@ -21,7 +21,7 @@ Mac sağlar oluşturmak ve çalıştırmak için Visual Studio kullanarak hemen 
 
 Tüm projeler ve çözümler IDE içinde oluşturulan varsayılan bir yapı yapılandırma derlemeleri bağlamının tanımlayan sahip olur. Bu yapılandırmalar düzenlenip düzenlenemeyeceğini veya kendi oluşturabilirsiniz. Otomatik olarak oluşturmak veya bu yapılandırmalar ardından projenizi oluşturmak için MSBuild tarafından kullanılan proje dosyasını güncelleştirir.  
 
-Projeler ve çözümler IDE'de oluşturma hakkında daha fazla bilgi için bkz: [yapı ve projeler ve çözümler Temizleme](~/building-and-cleaning-projects-and-solutions.md) Kılavuzu.
+Projeler ve çözümler IDE'de oluşturma hakkında daha fazla bilgi için bkz: [yapı ve projeler ve çözümler Temizleme](building-and-cleaning-projects-and-solutions.md) Kılavuzu.
 
 Mac için Visual Studio, aşağıdakileri yapmak için de kullanılabilir:
 

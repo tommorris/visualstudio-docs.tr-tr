@@ -5,11 +5,11 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 5f910d58f5972c3df27a4efd950d893c8de35f4b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: b8384c3595627e288e2ef05cf9135242d37e6d36
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Mac araçları Unity için Visual Studio
 
@@ -43,7 +43,7 @@ Mac araçları Unity için Visual Studio destekleyen tüm [hata ayıklama](using
 
 ### <a name="powerful-refactoring-and-context-actions"></a>Güçlü yeniden düzenleme ve içerik Eylemler
 
-Daha fazla kullanılabilir kod hızlı menülerle yazabilir ve klavye kısayolları [yeniden adlandırma, yeniden düzenleme ve içerik eylemlerini](/visualstudio/mac/refactoring).
+Daha fazla kullanılabilir kod hızlı menülerle yazabilir ve klavye kısayolları [yeniden adlandırma, yeniden düzenleme ve içerik eylemlerini](refactoring.md).
 
 ### <a name="browse-and-add-new-files"></a>Gözat ve yeni dosyalar ekleyin
 
@@ -51,15 +51,15 @@ Unity projeleri göz atın ve [klasörler, komut dosyaları veya gölgelendirici
 
 ### <a name="use-familiar-key-bindings"></a>Tanıdık anahtar bağlamaları kullanın
 
-Bildiğiniz anahtar bağlama kullanarak verimliliği artırın. Mac için Visual Studio sağlar tanıdık [anahtar bağlamaları](/visualstudio/mac/customizing-the-ide) Windows, ReSharper, Visual Studio Code ve Xcode Visual Studio gibi birçok popüler IDE için.
+Bildiğiniz anahtar bağlama kullanarak verimliliği artırın. Mac için Visual Studio sağlar tanıdık [anahtar bağlamaları](customizing-the-ide.md) Windows, ReSharper, Visual Studio Code ve Xcode Visual Studio gibi birçok popüler IDE için.
 
 ### <a name="customize-the-visual-theme"></a>Görsel Tema özelleştirme
 
-Siz görebilirsiniz dahil olan bir rest vermek [koyu tema](/visualstudio/mac/customizing-the-ide).
+Siz görebilirsiniz dahil olan bir rest vermek [koyu tema](customizing-the-ide.md).
 
 ## <a name="tips-for-unity-developers-getting-started-with-visual-studio-for-mac"></a>Mac için Visual Studio ile çalışmaya başlama Unity geliştiriciler için ipuçları
 
 Bu bağlantılar yalnızca Mac için Visual Studio ile başlayan Unity geliştiriciler için kullanışlı özellikler açıklanmıştır:
 
-* [IDE özelleştirme](/visualstudio/mac/customizing-the-ide) – öğrenin nasıl [görsel temasını değiştirin](/visualstudio/mac/customizing-the-ide#dark-theme) veya geçiş daha fazla alıştıkları [anahtar bağlama](/visualstudio/mac/customizing-the-ide#key-bindings) düzeni.
-* [Kaynak Düzenleyici](/visualstudio/mac/source-editor) – nasıl Mac için Visual Studio dahil olmak üzere daha hızlı ve daha kolay bir şekilde daha iyi kod yazma ortak yapabilirsiniz öğrenin [klavye kısayolları](/visualstudio/mac/keyboard-shortcuts).
+* [IDE özelleştirme](customizing-the-ide.md) – öğrenin nasıl [görsel temasını değiştirin](customizing-the-ide.md#dark-theme) veya geçiş daha fazla alıştıkları [anahtar bağlama](customizing-the-ide.md#key-bindings) düzeni.
+* [Kaynak Düzenleyici](source-editor.md) – nasıl Mac için Visual Studio dahil olmak üzere daha hızlı ve daha kolay bir şekilde daha iyi kod yazma ortak yapabilirsiniz öğrenin [klavye kısayolları](keyboard-shortcuts.md).

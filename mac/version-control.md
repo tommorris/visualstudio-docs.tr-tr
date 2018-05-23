@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: c26cb512f0beb0dcfd47801d7a619ec78eb3cd32
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b09e776b1cf6726cd13ca8810ed528be12dd969a
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="version-control"></a>Sürüm denetimi
 
@@ -27,7 +27,7 @@ Git takımlar aynı belgelerde aynı anda çalışmasına izin veren bir dağıt
 
 Mac için Visual Studio hem Git hem de alt sürüme sürüm denetim sistemleri için destek sağlar. Aşağıdaki makaleleri gözden geçirme, yürütme ve değişiklikleri gönderilmesi gibi basit işlevler yanı sıra Mac için Visual Studio aracılığıyla Git ve alt sürüme depoları ayarlama keşfedin.
 
-* [Git Deposu Ayarlama](~/set-up-git-repository.md) 
-* [Git ile çalışma](~/working-with-git.md)
-* [Subversion Deposu Ayarlama](~/set-up-subversion-repository.md)
-* [Subversion ile çalışma](~/working-with-subversion.md)
+* [Git Deposu Ayarlama](set-up-git-repository.md) 
+* [Git ile çalışma](working-with-git.md)
+* [Subversion Deposu Ayarlama](set-up-subversion-repository.md)
+* [Subversion ile çalışma](working-with-subversion.md)

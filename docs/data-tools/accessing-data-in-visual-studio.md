@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da veri erişimi
+title: Veri erişimi ve araçları
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,19 +16,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b43463dc35fa3f9703162817f6a8d63f44a87b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fbfd4227a2a4acfd8e21703cc29ff13ec36bd986
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="accessing-data-in-visual-studio"></a>Visual Studio'da veri erişimi
+# <a name="access-data-in-visual-studio"></a>Visual Studio'da verilere erişim
 
 Visual Studio'da verilere neredeyse tüm veritabanı ürünü veya hizmetinde herhangi bir biçimde, herhangi bir yerden bağlanma uygulamalar oluşturabilirsiniz — yerel makinede, yerel alan ağı veya genel, özel ve karma bulut.
 
 JavaScript, Python, PHP, Ruby ya da C++ uygulamaları için başka bir şey kitaplıkları edinme ve kod yazma yaptığınız gibi verilere bağlanın. .NET uygulamaları için Visual Studio veri kaynaklarını keşfetmek, depolamak ve bellek verileri işlemek ve verileri kullanıcı arabirimine bağlamak için nesne modeli oluşturmak için kullanabileceğiniz araçlar sağlar. Microsoft Azure SDK'ları .NET, Java, Node.js, PHP, Python, Ruby ve mobil uygulamaları ve Visual Studio Araçları Azure depolama birimine bağlamak için sağlar.
 
-Aşağıdaki listeler, Visual Studio'dan kullanılabilir birçok veritabanı ve depolama sistemlerini birkaçı gösterir. [Microsoft Azure](https://azure.microsoft.com/) teklifleri olan tüm sağlama ve yönetim temel alınan veri deposu içeren veri hizmetleri.  [Visual Studio için Azure Araçları](https://www.visualstudio.com/features/azure-tools-vs.aspx) doğrudan Visual Studio'dan Azure veri depoları ile çalışmanıza olanak sağlayan isteğe bağlı bir bileşenidir. Burada listelenen diğer NoSQL ve SQL veritabanı ürünler çoğunu, yerel makinede, yerel bir ağda veya Microsoft Azure'da bir sanal makine üzerinde barındırılabilir. Bu senaryoda, veritabanının kendisi yönetmekten sorumlu.
+Aşağıdaki listeler, Visual Studio'dan kullanılabilir birçok veritabanı ve depolama sistemlerini birkaçı gösterir. [Microsoft Azure](https://azure.microsoft.com/) teklifleri olan tüm sağlama ve yönetim temel alınan veri deposu içeren veri hizmetleri. **Azure geliştirme** iş yükü [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) doğrudan Visual Studio'dan Azure veri depoları ile çalışmanıza olanak tanır.
+
+![Azure geliştirme iş yükü](media/azure-development-workload.png)
+
+Burada listelenen diğer NoSQL ve SQL veritabanı ürünler çoğunu, yerel makinede, yerel bir ağda veya Microsoft Azure'da bir sanal makine üzerinde barındırılabilir. Bir Microsoft Azure sanal makine veritabanında barındırıyorsanız, veritabanının kendisi yönetmekten sorumlu.
 
 **Microsoft Azure**
 
@@ -68,7 +72,7 @@ ve daha fazlası...
 
 .NET Core dahil olmak üzere tüm .NET veri erişimi ADO.NET, veri kaynağı, hem ilişkisel hem de ilişkisel olmayan herhangi bir tür erişmek için bir arabirim tanımlayan sınıflar kümesini temel alır. Visual Studio çeşitli araçlar vardır ve veritabanları için bağlanmanıza yardımcı olması için ADO.NET çalışmak tasarımcıları verileri işlemek ve kullanıcıya verileri görüntülemektedir. Bu bölümdeki belgelere bu araçların nasıl kullanılacağını açıklar. Ayrıca, doğrudan ADO.NET komut nesneleri karşı programlama yapabilirsiniz. ADO.NET API'larını doğrudan çağırmak hakkında daha fazla bilgi için bkz: [ADO.NET](/dotnet/framework/data/adonet/index).
 
-Özellikle ASP.NET ile ilgili veri erişimi belgelerine bakın [verilerle çalışma](http://www.asp.net/web-forms/overview/presenting-and-managing-data) ASP.NET sitesinde. ASP.NET MVC ile Entity Framework kullanarak, bir öğretici için bkz: [Entity Framework 6 kod MVC 5 kullanarak ilk ile çalışmaya başlama](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+ASP.NET ile ilgili veri erişimi belgeler için bkz: [verilerle çalışma](http://www.asp.net/web-forms/overview/presenting-and-managing-data) ASP.NET sitesinde. ASP.NET MVC ile Entity Framework kullanarak, bir öğretici için bkz: [Entity Framework 6 kod MVC 5 kullanarak ilk ile çalışmaya başlama](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
 C# veya Visual Basic Evrensel Windows Platformu (UWP) uygulamaları, Azure Storage ve diğer Azure hizmetlerine erişmek için .NET için Microsoft Azure SDK'sını kullanabilirsiniz. Windows.Web.HttpClient sınıfı herhangi bir RESTful hizmeti ile iletişim sağlar. Daha fazla bilgi için bkz: [Windows.Web.Http kullanarak bir HTTP sunucusuna bağlanmak nasıl](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 

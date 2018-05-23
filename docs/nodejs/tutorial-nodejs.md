@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 259524aa8f4bb20097f5f5504c890ee7f4cc3b78
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da bir Node.js ve hızlı uygulama oluşturma
 Node.js ve Express kullanarak Visual Studio geliştirme için bu öğreticideki basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
@@ -32,7 +32,7 @@ Bu öğreticide, bilgi nasıl yapılır:
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio yüklüyse ve Node.js geliştirme iş yükü olması gerekir.
+* Visual Studio yüklü 2017 ve Node.js geliştirme iş yükü olması gerekir.
 
     Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
 
@@ -95,6 +95,8 @@ Bu öğreticide, bilgi nasıl yapılır:
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
+    Önceki kod dinamik olarak bir başlık ve Hoş Geldiniz iletisi içeren bir HTML sayfası oluşturmak için biçimlendirme ekler. Sayfa ayrıca her bir düğmesine bastığınızda, değişiklikleri görüntüyü görüntülemek için kod içerir.
+
 1. Yollar klasöründe açın *index.js*.
 
 1. Çağırmadan önce aşağıdaki kodu ekleyin `router.get`:
@@ -110,6 +112,8 @@ Bu öğreticide, bilgi nasıl yapılır:
     }
     ````
 
+    Bu kod size dinamik olarak üretilen HTML sayfasına geçer bir veri nesnesi oluşturur.
+
 1. Değiştir `router.get` işlev çağrısı ile aşağıdaki kodu:
 
     ```js
@@ -117,14 +121,16 @@ Bu öğreticide, bilgi nasıl yapılır:
         res.render('index', { title: 'Express', "data" });
     });
     ```
+    
+    Önceki kod Express yönlendirici nesnesini kullanarak geçerli sayfa ayarlar ve sayfaya başlık ve veri nesnesi geçirme sayfasını işler.
 
-    Kodu içeren satırda bir hata var. `res.render`. Uygulamayı çalıştırmadan önce sorunu gidermek gerekir. Biz, sonraki bölümde hatayı düzeltin.
+    Visual Studio birkaç özelliklerini göstermek için size bir hata kodu içeren satırında yer `res.render`. Uygulamayı çalıştırmadan önce hatayı düzeltmek gerekir. Biz, sonraki bölümde hatayı düzeltin.
 
 ## <a name="use-intellisense"></a>IntelliSense kullanma
 
 1. İçinde *index.js*, kodu içeren satırı gidin `res.render`.
 
-1. Sonra `data` dize, yazın `: get` ve IntelliSense gösterir, `getData` işlevi. Seçin `getData`.
+1. İmlecinizi sonra yerleştirin `data` dize, yazın `: get` ve IntelliSense gösterir, `getData` işlevi. Seçin `getData`.
 
     ![IntelliSense kullanma](../nodejs/media/tutorial-nodejs-intellisense.png)
 

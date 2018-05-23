@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: db49b08f5a56a1a60e8f9c44d0e5b7630143b472
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Kurulum ve Mac için Visual Studio yükleme
 
@@ -58,7 +58,7 @@ Visual Studio iOS ile çalışmak için şu gerekir:
       - Tam olarak platformlar arası Xamarin uygulamaları – seçin **Android**, **iOS**, ve **macOS** platformlar.
   * **.NET core uygulamaları** – Select **.NET Core** platform.
   * **ASP.NET Core Web uygulamaları** – Select **.NET Core** platform.
-  * **Platformlar arası Unity oyununuzu geliştirme** – hiçbir ek platformlar Mac için Visual Studio yüklenmesi gerekmez Başvurmak [Unity kurulum kılavuzunu](~/setup-vsmac-tools-unity.md) Unity uzantısı yükleme hakkında daha fazla bilgi.
+  * **Platformlar arası Unity oyununuzu geliştirme** – hiçbir ek platformlar Mac için Visual Studio yüklenmesi gerekmez Başvurmak [Unity kurulum kılavuzunu](setup-vsmac-tools-unity.md) Unity uzantısı yükleme hakkında daha fazla bilgi.
 
   Bu yükleme ekranında, sürüm ve tek tek her bileşen boyutunu görüntüler. (Android için) bu bileşen için bağımlılıkları listesini görüntülemek için (.NET Core) yüklemeleri ek paketler Bkz her bileşene tıklayın veya (iOS ve macOS) gerekli ek uygulamaları görüntüleyin:
 
@@ -112,4 +112,4 @@ Mac için Visual Studio yükleme, uygulamalarınız için kod yazma başlatmanı
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET core uygulamaları, ASP.NET Core web uygulamaları, Unity oyun geliştirme
 
-Diğer iş yükleri için başvurmak [iş yükleri](~/workloads.md) sayfası.
+Diğer iş yükleri için başvurmak [iş yükleri](workloads.md) sayfası.

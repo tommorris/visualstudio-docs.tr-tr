@@ -29,11 +29,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 314a559e4370f254af9473ec38c77d11287c575a
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: aecf458254d45b3c52c9f3971a72cb24ad13ef43
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı ile Çalıştırma İşlemleri İliştirme
 Yerel veya uzak bilgisayarda çalışan bir işlemi için Visual Studio hata ayıklayıcısı ekleyebilirsiniz. İşlemin çalıştığı sonra tıklayın **hata ayıklama > ekleme işlemi için** (veya basın **CTRL + ALT + P**) açmak için **ekleme işlemi için** iletişim kutusu.
@@ -124,7 +124,7 @@ Birden çok programlar ayıkladığınız ancak herhangi bir anda yalnızca bir 
   
 Güvenilmeyen kullanıcı hesabı tarafından sahip olunan bir işlem ekleme çalışırsanız, bir güvenlik uyarısı iletişim kutusu onay görünür. Daha fazla bilgi için bkz: [güvenlik uyarısı: güvenilmeyen bir kullanıcıya ait bir işlem ekleme tehlikeli olabilir. Aşağıdaki bilgiler şüpheli görünüyorsa veya emin değilseniz, bu işlem için eklemeyin](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
   
-Bazı durumlarda, bir Uzak Masaüstü'nü (Terminal Hizmetleri) oturumunda ayıklarken **kullanılabilir işlemler** listesi tüm kullanılabilir işlemleri görüntülemez. Visual Studio sınırlı kullanıcı hesabı olan bir kullanıcı olarak çalıştırıyorsanız, **kullanılabilir işlemler** listesi, hizmetleri ve w3wp.exe dahil olmak üzere diğer sunucu işlemleri için kullanılan 0, oturumda çalışan işlemleri gösterilmez. Çalıştırarak sorunu çözebilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yönetici hesabı altında ya da çalıştırarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Terminal Hizmetleri oturumunda yerine sunucu konsolundan. Bu geçici çözümler hiçbiri olası üçüncü seçenek çalıştırarak işleme iliştirilemiyor ise, `vsjitdebugger.exe -p` *ProcessId* Windows komut satırından. Tlist.exe kullanarak işlem kimliği belirleyebilirsiniz. Tlist.exe elde etmek için karşıdan yükleyip Windows hata ayıklama araçları için kullanılabilir [WDK ve WinDbg yüklemeleri](http://go.microsoft.com/fwlink/?LinkId=168279).
+Bazı durumlarda, bir Uzak Masaüstü'nü (Terminal Hizmetleri) oturumunda ayıklarken **kullanılabilir işlemler** listesi tüm kullanılabilir işlemleri görüntülemez. Visual Studio sınırlı kullanıcı hesabı olan bir kullanıcı olarak çalıştırıyorsanız, **kullanılabilir işlemler** listesi, hizmetleri ve w3wp.exe dahil olmak üzere diğer sunucu işlemleri için kullanılan 0, oturumda çalışan işlemleri gösterilmez. Çalıştırarak sorunu çözebilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yönetici hesabı altında ya da çalıştırarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Terminal Hizmetleri oturumunda yerine sunucu konsolundan. Bu geçici çözümler hiçbiri olası üçüncü seçenek çalıştırarak işleme iliştirilemiyor ise, `vsjitdebugger.exe -p` *ProcessId* Windows komut satırından. Tlist.exe kullanarak işlem kimliği belirleyebilirsiniz. Tlist.exe elde etmek için karşıdan yükleyip Windows hata ayıklama araçları için kullanılabilir [WDK ve WinDbg yüklemeleri](/windows-hardware/drivers/download-the-wdk).
 
 ## <a name="BKMK_Scenarios"></a> Hata ayıklama senaryoları
 

@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bf9e3d470c18651d769b94805ea4a17bbf531884
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9958711ea64daee9876d3b16330685786b6d5825
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Öğretici: Visual Studio'da bir Node.js ve tepki uygulaması oluşturma
 Visual Studio kolayca bir Node.js projesi oluşturun ve IntelliSense ve Node.js destekleyen diğer yerleşik özellikleri yararlanan sağlar. Bu öğreticide Visual Studio için Visual Studio şablonundan bir Node.js web uygulaması projesi oluşturun. Ardından, tepki kullanarak basit bir uygulama oluşturun.
@@ -32,7 +32,7 @@ Bu öğreticide, bilgi nasıl yapılır:
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio yüklüyse ve Node.js geliştirme iş yükü olması gerekir.
+* Visual Studio yüklü 2017 ve Node.js geliştirme iş yükü olması gerekir.
 
     Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
 

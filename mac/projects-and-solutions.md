@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: edc9b341a64d22876f52906f2ee92c33a22d420c
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 6e99103ee16b56712f8ec979fd8591a20c2feb3c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="projects-and-solutions"></a>Projeler ve Çözümler
 
@@ -17,8 +17,8 @@ Mac için Visual Studio sağlayan bir _çözüm paneli_ tüm açık çözümü a
 
 ## <a name="using-projects-and-solutions"></a>Projeler ve çözümler kullanma
 
-Yeni bir proje veya çözüm oluşturmak için bkz [yeni projeler ve çözümler oluşturma](~/create-new-projects.md) makalesi.
+Yeni bir proje veya çözüm oluşturmak için bkz [yeni projeler ve çözümler oluşturma](create-new-projects.md) makalesi.
 
 ## <a name="project-and-solution-options"></a>Proje ve çözüm seçenekleri
 
-Projeler ve çözümler özelliklerini proje/çözüm adına çift tıklatarak ya da sağ tıklayarak ve göz yönetebilirsiniz **seçenekleri**. Bu seçenekler hakkında daha fazla bilgi sağlanan [çözümleri yönetmek ve proje özelliklerini](~/managing-solutions-and-project-properties.md) makalesi.
+Projeler ve çözümler özelliklerini proje/çözüm adına çift tıklatarak ya da sağ tıklayarak ve göz yönetebilirsiniz **seçenekleri**. Bu seçenekler hakkında daha fazla bilgi sağlanan [çözümleri yönetmek ve proje özelliklerini](managing-solutions-and-project-properties.md) makalesi.

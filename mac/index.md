@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 918c0532140369bfc6790be2306830b5f160ebdf
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 54f178a35d95819b13b1d477c3415fd02b8298f5
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Mac için Visual Studio Tanıtımı
 
@@ -27,7 +27,7 @@ Bu makalede, Mac, platformlar arası uygulamalar oluşturmak için güçlü bir 
 
 ## <a name="installation"></a>Yükleme
 
-Adımları [yükleme](~/installation.md) indirmek ve Mac için Visual Studio Yükleme Kılavuzu
+Adımları [yükleme](installation.md) indirmek ve Mac için Visual Studio Yükleme Kılavuzu
 
 ## <a name="language-support"></a>Dil desteği
 
@@ -117,8 +117,8 @@ Daha fazla bilgi için bkz: [Xamarin denetçisi](https://developer.xamarin.com/g
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-* **Turu alma** - Mac için Visual Studio'da bulunan önemli özelliklerin çoğunu özetini almak için Visual Studio Mac için bkz [IDE Turu](~/ide-tour.md).
-* **Ayarlanan** - indirin ve Visual Studio yükleme, bkz: hakkında bilgi almak için [yükleme](~/installation.md) Kılavuzu.
+* **Turu alma** - Mac için Visual Studio'da bulunan önemli özelliklerin çoğunu özetini almak için Visual Studio Mac için bkz [IDE Turu](ide-tour.md).
+* **Ayarlanan** - indirin ve Visual Studio yükleme, bkz: hakkında bilgi almak için [yükleme](installation.md) Kılavuzu.
 * **Xamarin öğreticileri** - Xamarin Git nasıl kod Xamarin ile geliştirme hakkında daha fazla bilgi için [Geliştirici Merkezi](https://developer.xamarin.com).
 * **Videolar** - Mac için diğer özellikler ve Visual Studio yönlerini hakkında daha fazla bilgi için üzerinde videosuna göz atın [Xamarin University](https://university.xamarin.com) Web sitesi.
 * **Uygulamalı Labs** - Mac için Visual Studio'da bulunan çeşitli iş yükleri ile çalışmaya başlamak için kullanıma [uygulamalı labs](https://github.com/Microsoft/vs4mac-labs).

@@ -10,11 +10,11 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 608eebc113c9df7a8978299cc69907e28d81a16f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e25f75d0a1cd5e1b9989172a76d8cf8139957e2c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Visual Studio'da Xamarin.Forms ile uygulama oluşturma temellerini öğrenin
 
@@ -22,7 +22,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
 
 Genellikle bu ortak kodu için bir paylaşılan proje yerine .NET standart kitaplığı kullanmak daha iyidir. .NET standart kitaplığı, tüm hedef platformlarda çalışabilir bu .NET API'lerini içerir.  
 
-Burada, oluşturacağınız uygulama verilmiştir. (Yazmak için soldan) iOS ve Android telefonlar ve Windows 10 Evrensel Windows Platformu (UWP) üzerinde çalıştığı:
+Burada, oluşturacağınız uygulama verilmiştir. İOS ve Android telefonlar ve Windows 10 Evrensel Windows Platformu (UWP) (soldan sağa) çalıştığı:
   
 [![İOS, Android ve UWP hava durumu uygulaması örneği](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")](../cross-platform/media/crossplat-xamarin-formsguide-1-Large.png#lightbox)
   

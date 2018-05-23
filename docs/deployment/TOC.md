@@ -8,26 +8,26 @@
 ## [Azure’a dağıtma](quickstart-deploy-to-azure.md)
 # Öğreticiler
 ## .NET
-### [Yayımla aracı ile .NET Core Uygulaması dağıtma](/dotnet/core/deploying/deploy-with-vs)
-### [Bir masaüstü uygulamasını Microsoft Store için paketleme (Masaüstü Köprüsü)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
+### [Yayımla aracı ile .NET Core Uygulaması dağıtma](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Bir masaüstü uygulamasını Microsoft Store için paketleme (Masaüstü Köprüsü)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [ClickOnce kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 ### [Komut Satırından ClickOnce Uygulamalarını Derleme](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
-### [Azure’a ASP.NET Core uygulaması yayımlama](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [Azure’a ASP.NET Core uygulaması yayımlama](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [Yayımlama ayarlarını içeri aktarma ve Azure’a dağıtma](tutorial-import-publish-settings-azure.md)
 ### [Yayımlama ayarlarını içeri aktarma ve IIS’ye dağıtma](tutorial-import-publish-settings-iis.md)
-### [Git ile Azure’a sürekli ASP.NET Core dağıtımı](/aspnet/core/publishing/azure-continuous-deployment)
-### [IIS’ye ASP.NET dağıtma](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+### [Git ile Azure’a sürekli ASP.NET Core dağıtımı](/aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [IIS’ye ASP.NET dağıtma](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Yerel
-### [Visual C++ üzerinde Dağıtım](/cpp/ide/deployment-in-visual-cpp)
-### [Bir masaüstü uygulamasını Microsoft Store için paketleme (Masaüstü Köprüsü)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
-### [ClickOnce kullanarak yerel uygulama dağıtma](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
+### [Visual C++ üzerinde Dağıtım...](/cpp/ide/deployment-in-visual-cpp)
+### [Bir masaüstü uygulamasını Microsoft Store için paketleme (Masaüstü Köprüsü)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [ClickOnce kullanarak yerel uygulama dağıtma...](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
 ## UWP
-### [Visual Studio kullanarak UWP uygulaması paketleme](/windows/uwp/packaging/packaging-uwp-apps)
+### [Visual Studio kullanarak UWP uygulaması paketleme](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Node.js
-### [Web Dağıtımı kullanarak Azure Web Sitesine yayımlama](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
+### [Web Dağıtımı kullanarak Azure Web Sitesine yayımlama](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Python
-### [Azure App Service’e yayımlama](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
+### [Azure App Service’e yayımlama](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 # Nasıl yapılır kılavuzları
 ## [ClickOnce Güvenliği ve Dağıtımı](clickonce-security-and-deployment.md)
 ### [ClickOnce Dağıtım Stratejisini Seçme](choosing-a-clickonce-deployment-strategy.md)

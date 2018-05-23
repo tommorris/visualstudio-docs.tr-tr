@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 82f7de8649e36c03f1ae1004c01c93dd7580b3a1
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Öğreticisi 1. adım: Visual Studio Django web framework kullanmaya başlama
 
@@ -116,7 +116,7 @@ Yanıt: Evet. Otomatik Tamamlama devre dışı bırakmak için Git **ayarları**
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>1-3. adım: sanal ortam oluşturmak ve kaynak denetiminden çıkarma
 
-Projeniz için kaynak denetimi yapılandırdıktan, proje gerektiren gerekli Django paketlerini sanal ortamı oluşturabilirsiniz. Daha sonra **Takım Gezgini** kaynak denetiminden ortam klasörü dışlamak için.
+Projeniz için kaynak denetimi yapılandırdıktan, proje için gerekli Django paketlerini içeren sanal ortam oluşturabilirsiniz. Daha sonra **Takım Gezgini** kaynak denetiminden ortam klasörü dışlamak için.
 
 1. İçinde **Çözüm Gezgini**, sağ **Python ortamları** düğümü ve select **sanal ortam Ekle**.
 

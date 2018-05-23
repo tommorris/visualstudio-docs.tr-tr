@@ -1,7 +1,7 @@
 ---
 title: Python ortamları penceresi başvurusu
 description: Visual Studio'da Python ortamları penceresinde görünür sekmelerin her birinde ayrıntıları.
-ms.date: 05/07/2018
+ms.date: 05/22/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ba46e41c8d6cd4feec4adc04f1470eed7744242
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: eaf64d0d7bde7b63359ba341a693a51051da6fc3
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python ortamları penceresinde Sekme Başvurusu
 
@@ -75,7 +75,7 @@ Mevcut ise, aşağıdaki tabloda açıklandığı gibi ayrıntıları içerir. B
 
 *Ayrıca "PIP" önceki sürümlerde etiketli.*
 
-Ayrıca aramak ve yenilerini (bağımlılıkları dahil) yüklemek sağlayarak PIP kullanarak ortamda yüklü paketleri yönetir. Visual Studio 2017 15.7 ve sonraki sürümleri, içinde bir **paketleri (Conda)** seçeneği görüntülenir, bunun yerine conda Paket Yöneticisi'ni kullanır. (Bu seçeneği görmüyorsanız, seçeneğini belirleyerek **Araçları** > **seçenekleri** > **Python** > **Experimental**   >  **Conda Paket Yöneticisi'ni kullanın (PIP) yerine kullanılabilir olduğunda** ve Visual Studio'yu yeniden başlatın.)
+Ayrıca aramak ve yenilerini (bağımlılıkları dahil) yüklemek sağlayarak PIP kullanarak ortamda yüklü paketleri yönetir. Visual Studio 2017 15.7 ve sonraki sürümleri, içinde bir **paketleri (Conda)** sekmesi görüntülenir, bunun yerine conda Paket Yöneticisi'ni kullanır. (Bu seçeneği görmüyorsanız, seçeneğini belirleyerek **Araçları** > **seçenekleri** > **Python** > **Experimental**   >  **Conda Paket Yöneticisi'ni kullanın (PIP) yerine kullanılabilir olduğunda** ve Visual Studio'yu yeniden başlatın.)
 
 Yüklü olan paketleri (yukarı ok) güncelleştirin ve (bir daire içinde X) kaldırmak için denetimleri ile paket görüntülenir:
 
@@ -85,7 +85,13 @@ Bir arama terimi Pypı yüklü paketleri yanı sıra yüklü olan paketlerin lis
 
 ![Bir arama "num" Python ortamları Paketleri sekmesi](media/environments-pip-tab.png)
 
-Tüm doğrudan da girebilirsiniz `pip install` bayrakları gibi dahil arama kutusuna komutu `--user` veya `--no-deps`.
+Yukarıdaki resimde gördüğünüz gibi arama sonuçlarının arama terimiyle eşleşen paketleri sayısını gösterir; ilk listesinde, ancak çalıştırılacak komutu giriştir `pip install <name>` doğrudan. Üzerinde iseniz **paketleri (Conda)** sekmesinde, bunun yerine bkz `conda install <name>`:
+
+![Bir conda gösteren Conda paketleri sekmesinde komutu yükleyin](media/environments-conda-tab-install.png)
+
+Her iki durumda da bağımsız değişkenler arama kutusuna paketin adı sonra ekleyerek yüklemeyi özelleştirebilirsiniz. Bağımsız değişkenler eklediğinizde gösterir arama sonuçlarının `pip install` veya `conda install` arama kutusuna içeriğine göre ardından:
+
+![PIP ve conda yükleme komutları bağımsız değişkenleri kullanma](media/environments-pip-tab-arguments.png)
 
 Bir paket yükleme ortamı içindeki alt klasörleri oluşturur `Lib` klasör dosya sisteminde. Varsa, örneğin, Python 3.6 yüklü `c:\Python36`, içinde yüklü paketlerini `c:\Python36\Lib`; yüklü Anaconda3 varsa `c:\Program Files\Anaconda3` paketleri yüklenmiş sonra `c:\Program Files\Anaconda3\Lib`.
 

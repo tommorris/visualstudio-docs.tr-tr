@@ -23,11 +23,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eef7953a767e08febcb3e8dc42ad4f55e73889c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08daee9f9b8a7bdfbe71b4787eaaaeb3baa178d9
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>SharePoint İş Akışı Çözümleri Oluşturma
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bir SharePoint Web sitesinde liste öğelerini ve belgeleri yaşam döngüsünü yönetme özel iş akışları oluşturmanıza yardımcı olacak araçlar sağlar. Sağlanan öğeler bir tasarımcı, etkinlik denetimleri kümesini ve gerekli derleme başvurularını içerir. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ayrıca içerir **SharePoint Özelleştirme Sihirbazı'nı**, oluşturma ve iş akışlarını yapılandırma yardımcı olacak.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="workflows-in-sharepoint"></a>SharePoint iş akışları  
  Bir iş akışı bir SharePoint kitaplığı veya listeye ekleyin, bir iş sürecini kitaplığı veya listedeki tüm öğelerde uygulayın. Bir iş akışı sistem veya kullanıcıların düzenlenmesi ve ardından gözden öğesi gönderme gibi her öğede gerçekleştirmesi gereken eylemleri açıklar. Olarak bilinen bu eylemleri *etkinlikleri*, iş akışının yapı taşlarıdır.  
   
- SharePoint iş akışları oluşturabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve bunları bir SharePoint Web sitesine dağıtabilirsiniz. Bir iş akışı için SharePoint dağıtıldıktan sonra bir kitaplık veya liste ile ilişkilendirin. Bunu daha sonra otomatik olarak bir işlem tarafından veya el ile bir kullanıcı tarafından başlatılabilir. İş akışı işlemi hakkında daha fazla bilgi için bkz: [işlemlerini yönetmek için iş akışlarını kullanma](http://go.microsoft.com/fwlink/?LinkId=79757).  
+ SharePoint iş akışları oluşturabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve bunları bir SharePoint Web sitesine dağıtabilirsiniz. Bir iş akışı için SharePoint dağıtıldıktan sonra bir kitaplık veya liste ile ilişkilendirin. Bunu daha sonra otomatik olarak bir işlem tarafından veya el ile bir kullanıcı tarafından başlatılabilir. İş akışı işlemi hakkında daha fazla bilgi için bkz: [Visual Studio kullanarak geliştirme SharePoint iş akışlarını](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).  
   
 ## <a name="creating-custom-sharepoint-workflows"></a>Özel SharePoint iş akışlarını oluşturma  
  Size iki SharePoint iş akışı projeleri kullanılabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **sıralı iş akışı** ve **Durum makinesi iş akışı**.  

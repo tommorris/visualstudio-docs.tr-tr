@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>SharePoint Çözümlerinde Hata Ayıklama
   SharePoint çözümlerini kullanarak ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı. Hata ayıklama, başlattığınızda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proje dosyalarını SharePoint sunucusuna dağıtır ve sonra SharePoint sitesine örneği Web tarayıcısında açar. Aşağıdaki bölümlerde, SharePoint uygulamalarında hata ayıklama açıklanmaktadır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -128,11 +128,11 @@ ms.lasthandoff: 04/16/2018
  İş akışı projelerinde hata ayıklama işlemi yaparken [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (türüne bağlı olarak kendi) iş akışı şablonu bir kitaplık veya bir listesine ekler. İş akışı şablonu sonra el ile veya eklemek veya bir öğe tarafından da başlatabilirsiniz. Daha sonra kullanabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] iş akışı hata ayıklamak için.  
   
 > [!NOTE]  
->  Diğer derlemelerine başvurular eklerseniz, emin olun, bu derlemeleri genel derleme önbelleğinde yüklü ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Aksi takdirde, iş akışı çözümü başarısız olur. Derlemeleri yükleme hakkında daha fazla bilgi için bkz: [el ile bir iş akışı bir belge veya öğe başlatmak](http://go.microsoft.com/fwlink/?LinkID=79938).  
+>  Diğer derlemelerine başvurular eklerseniz, emin olun, bu derlemeleri genel derleme önbelleğinde yüklü ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Aksi takdirde, iş akışı çözümü başarısız olur. Derlemeleri yükleme hakkında daha fazla bilgi için bkz: [el ile bir iş akışı bir belge veya öğe başlatmak](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  Ancak, dağıtım işlemi, iş akışı başlatılmaz. İş akışı SharePoint Web sitesinden başlatmanız gerekir. İş akışı Ayrıca, Microsoft Office Word 2010 gibi bir istemci uygulaması kullanarak ya da ayrı sunucu tarafı kodu kullanarak da başlatabilirsiniz. Belirtilen yaklaşımlardan birini kullanın **SharePoint Özelleştirme Sihirbazı'nı**.  
   
- İş akışını el ile başlatılabilir belirtilmişse, örneğin, kitaplık veya liste öğesi doğrudan iş akışı'nı başlatın. Bir iş akışı el ile başlatma hakkında daha fazla bilgi için bkz: [el ile bir belge öğesi üzerinde bir iş akışı başlatmalarını](http://go.microsoft.com/fwlink/?LinkID=79938).  
+ İş akışını el ile başlatılabilir belirtilmişse, örneğin, kitaplık veya liste öğesi doğrudan iş akışı'nı başlatın. Bir iş akışı el ile başlatma hakkında daha fazla bilgi için bkz: [el ile bir belge öğesi üzerinde bir iş akışı başlatmalarını](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
 ##  <a name="FeatureEvents"></a> Hata ayıklama özellik Olay alıcıları  
  Varsayılan olarak çalıştırdığınızda, bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint uygulaması özelliklerini otomatik olarak sizin için SharePoint sunucusu üzerine etkinleştirilir. Özellik Olay alıcıları, hata ayıklama işlemi yaparken bir özellik tarafından etkinleştirildiğinde ancak, bu sorunlara neden olur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], hata ayıklayıcı farklı bir işlemde çalıştırır. Başka bir deyişle, kesme noktaları gibi bazı hata ayıklama işlevleri düzgün çalışmaz.  
